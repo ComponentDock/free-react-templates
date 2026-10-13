@@ -51,100 +51,102 @@ Extracted from the live preview CSS (`style.css`) on 2026-08-25:
 
 10. **Footer** — Light blue-gray `#F1FBFF` background. Four columns: Logo, Quick Links, Programs, Resources, Newsletter (with email input + submit button). Bottom bar with copyright.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: TopBar renders announcement and countdown
+### Feature: Edusphere template behaviour
 
-- GIVEN the page loads
-- THEN the top bar displays promotional text
-- AND a countdown timer shows Days, Hours, Minutes, Seconds
-- AND a "Learn More" CTA button is visible
+#### Scenario: TopBar renders announcement and countdown
 
-### Scenario: Navbar displays correctly
+- **GIVEN** the page loads
+- **THEN** the top bar displays promotional text
+- **AND** a countdown timer shows Days, Hours, Minutes, Seconds
+- **AND** a "Learn More" CTA button is visible
 
-- GIVEN the page loads
-- THEN the navbar shows the logo on the left
-- AND navigation links: Home, About, Programs, Blog, Contact are present
-- AND a phone number and social icons are on the right
-- AND the navbar becomes sticky on scroll
+#### Scenario: Navbar displays correctly
 
-### Scenario: Hero section renders
+- **GIVEN** the page loads
+- **THEN** the navbar shows the logo on the left
+- **AND** navigation links: Home, About, Programs, Blog, Contact are present
+- **AND** a phone number and social icons are on the right
+- **AND** the navbar becomes sticky on scroll
 
-- GIVEN the page loads
-- THEN the hero displays a background image with dark overlay
-- AND an uppercase label "EDUCATION & SCHOOL" is shown
-- AND the headline "SHOWCASE COURSES, EVENTS AND MORE!" is visible
-- AND a "Get Started Now" button is present
+#### Scenario: Hero section renders
 
-### Scenario: About section renders
+- **GIVEN** the page loads
+- **THEN** the hero displays a background image with dark overlay
+- **AND** an uppercase label "EDUCATION & SCHOOL" is shown
+- **AND** the headline "SHOWCASE COURSES, EVENTS AND MORE!" is visible
+- **AND** a "Get Started Now" button is present
 
-- GIVEN the page loads
-- WHEN scrolling to the about section
-- THEN a warm cream background is displayed
-- AND a two-column layout shows an image on the left and text on the right
-- AND the heading "A comprehensive teaching approach" is visible
-- AND a "Learn More" button is present
+#### Scenario: About section renders
 
-### Scenario: Programs section renders two program cards
+- **GIVEN** the page loads
+- **WHEN** scrolling to the about section
+- **THEN** a warm cream background is displayed
+- **AND** a two-column layout shows an image on the left and text on the right
+- **AND** the heading "A comprehensive teaching approach" is visible
+- **AND** a "Learn More" button is present
 
-- GIVEN the page loads
-- WHEN scrolling to the programs section
-- THEN the section title "Programs we Offer" is displayed
-- AND two program cards are shown side by side
-- AND each card has an image, title, description, and "Learn More" link
+#### Scenario: Programs section renders two program cards
 
-### Scenario: Essential Resources section renders
+- **GIVEN** the page loads
+- **WHEN** scrolling to the programs section
+- **THEN** the section title "Programs we Offer" is displayed
+- **AND** two program cards are shown side by side
+- **AND** each card has an image, title, description, and "Learn More" link
 
-- GIVEN the page loads
-- WHEN scrolling to the resources section
-- THEN the section title "Essential resources" is displayed
-- AND three resource items are shown (First year students, Tuition & fees, International students)
-- AND each item has a title, description, and arrow icon
+#### Scenario: Essential Resources section renders
 
-### Scenario: Top Stories section renders
+- **GIVEN** the page loads
+- **WHEN** scrolling to the resources section
+- **THEN** the section title "Essential resources" is displayed
+- **AND** three resource items are shown (First year students, Tuition & fees, International students)
+- **AND** each item has a title, description, and arrow icon
 
-- GIVEN the page loads
-- WHEN scrolling to the top stories section
-- THEN the section title "Top Stories" is displayed
-- AND a "More Stories" link is present
-- AND three story cards are shown in a grid
+#### Scenario: Top Stories section renders
 
-### Scenario: Partners section renders logo carousel
+- **GIVEN** the page loads
+- **WHEN** scrolling to the top stories section
+- **THEN** the section title "Top Stories" is displayed
+- **AND** a "More Stories" link is present
+- **AND** three story cards are shown in a grid
 
-- GIVEN the page loads
-- WHEN scrolling to the partners section
-- THEN the section title "Our Partners" is displayed
-- AND partner logos are shown in a carousel/grid
+#### Scenario: Partners section renders logo carousel
 
-### Scenario: Trusted/Stats section renders
+- **GIVEN** the page loads
+- **WHEN** scrolling to the partners section
+- **THEN** the section title "Our Partners" is displayed
+- **AND** partner logos are shown in a carousel/grid
 
-- GIVEN the page loads
-- WHEN scrolling to the trusted section
-- THEN a dark background section is displayed
-- AND the heading "TRUSTED BY OVER 6000+ STUDENTS" is visible
-- AND a "Join Now" button is present
+#### Scenario: Trusted/Stats section renders
 
-### Scenario: Footer renders correctly
+- **GIVEN** the page loads
+- **WHEN** scrolling to the trusted section
+- **THEN** a dark background section is displayed
+- **AND** the heading "TRUSTED BY OVER 6000+ STUDENTS" is visible
+- **AND** a "Join Now" button is present
 
-- GIVEN the page loads
-- WHEN scrolling to the footer
-- THEN the footer shows the logo
-- AND Quick Links, Programs, Resources, and Newsletter columns are present
-- AND a copyright line with Component Dock link is displayed
+#### Scenario: Footer renders correctly
 
-### Scenario: Mobile responsive layout
+- **GIVEN** the page loads
+- **WHEN** scrolling to the footer
+- **THEN** the footer shows the logo
+- **AND** Quick Links, Programs, Resources, and Newsletter columns are present
+- **AND** a copyright line with Component Dock link is displayed
 
-- GIVEN the page loads on a mobile viewport
-- THEN the navbar collapses to a hamburger menu
-- AND sections stack vertically
-- AND the countdown timer adjusts for small screens
+#### Scenario: Mobile responsive layout
 
-### Scenario: Accessibility basics
+- **GIVEN** the page loads on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the countdown timer adjusts for small screens
 
-- GIVEN the page loads
-- THEN all images have alt text
-- AND interactive elements are keyboard-focusable
-- AND heading hierarchy is correct (h1 > h2 > h3)
+#### Scenario: Accessibility basics
+
+- **GIVEN** the page loads
+- **THEN** all images have alt text
+- **AND** interactive elements are keyboard-focusable
+- **AND** heading hierarchy is correct (h1 > h2 > h3)
 
 ## Verification Checklist
 

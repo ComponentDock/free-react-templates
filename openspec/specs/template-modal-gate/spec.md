@@ -37,96 +37,89 @@ The template shows a full-viewport centered layout with a light background. In t
 
 The overall aesthetic is clean, dark-overlay-modal-on-light-page, with Roboto typography and Bootstrap-inspired button styling.
 
-## Gherkin requirements
+## Requirements
 
 ### Background: page structure
 
-```gherkin
-Scenario: Page loads with centered content
-  Given the user visits the ModalGate page
-  Then a full-viewport centered layout is displayed
-  And the heading "Modal #2" is visible
-  And a "Launch modal" button is visible
-```
+#### Scenario: Page loads with centered content
+
+- **GIVEN** the user visits the ModalGate page
+- **THEN** a full-viewport centered layout is displayed
+- **AND** the heading "Modal #2" is visible
+- **AND** a "Launch modal" button is visible
 
 ### Modal trigger
 
-```gherkin
-Scenario: Opening the modal
-  Given the user is on the ModalGate page
-  When the user clicks the "Launch modal" button
-  Then a modal dialog appears centered on the screen
-  And the modal has a background image with a dark overlay
-  And the modal content is readable in white text
-```
+#### Scenario: Opening the modal
+
+- **GIVEN** the user is on the ModalGate page
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a modal dialog appears centered on the screen
+- **AND** the modal has a background image with a dark overlay
+- **AND** the modal content is readable in white text
 
 ### Modal header
 
-```gherkin
-Scenario: Modal header displays correctly
-  Given the modal is open
-  Then a logo icon is displayed on the left
-  And the heading "Exclusive Offer" is centered in the header
-  And a close button (X) is displayed on the right
-  And the header is separated from the body by a thin white bottom border
-```
+#### Scenario: Modal header displays correctly
+
+- **GIVEN** the modal is open
+- **THEN** a logo icon is displayed on the left
+- **AND** the heading "Exclusive Offer" is centered in the header
+- **AND** a close button (X) is displayed on the right
+- **AND** the header is separated from the body by a thin white bottom border
 
 ### Modal body content
 
-```gherkin
-Scenario: Modal body shows subscription form
-  Given the modal is open
-  Then the heading "Get a free Ebook" is displayed
-  And a descriptive paragraph is shown below the heading
-  And an email input field with placeholder "Enter your email address" is visible
-  And a "Subscribe" button is displayed next to the input
-```
+#### Scenario: Modal body shows subscription form
+
+- **GIVEN** the modal is open
+- **THEN** the heading "Get a free Ebook" is displayed
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** an email input field with placeholder "Enter your email address" is visible
+- **AND** a "Subscribe" button is displayed next to the input
 
 ### Email subscription form
 
-```gherkin
-Scenario: Email subscription form layout
-  Given the modal is open
-  Then the email input and Subscribe button are displayed inline (horizontal)
-  And the form is centered within the modal
-```
+#### Scenario: Email subscription form layout
+
+- **GIVEN** the modal is open
+- **THEN** the email input and Subscribe button are displayed inline (horizontal)
+- **AND** the form is centered within the modal
 
 ### Dismiss actions
 
-```gherkin
-Scenario: Closing the modal via close button
-  Given the modal is open
-  When the user clicks the close button (X)
-  Then the modal closes
-  And the page returns to the initial state
+#### Scenario: Closing the modal via close button
 
-Scenario: Closing the modal via "Maybe later" link
-  Given the modal is open
-  When the user clicks the "Maybe later" link
-  Then the modal closes
-  And the page returns to the initial state
-```
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes
+- **AND** the page returns to the initial state
+
+#### Scenario: Closing the modal via "Maybe later" link
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "Maybe later" link
+- **THEN** the modal closes
+- **AND** the page returns to the initial state
 
 ### Modal overlay
 
-```gherkin
-Scenario: Modal has dark overlay background
-  Given the modal is open
-  Then the modal body has a background image
-  And a dark semi-transparent overlay covers the background
-  And the overlay color is approximately rgba(0,0,0,0.5)
-```
+#### Scenario: Modal has dark overlay background
+
+- **GIVEN** the modal is open
+- **THEN** the modal body has a background image
+- **AND** a dark semi-transparent overlay covers the background
+- **AND** the overlay color is approximately rgba(0,0,0,0.5)
 
 ### Responsive behavior
 
-```gherkin
-Scenario: Modal is responsive on mobile
-  Given the user views the page on a mobile device
-  When the modal is open
-  Then the modal content stacks vertically
-  And the email input and subscribe button stack vertically
-  And all text remains readable
-```
+#### Scenario: Modal is responsive on mobile
+
+- **GIVEN** the user views the page on a mobile device
+- **WHEN** the modal is open
+- **THEN** the modal content stacks vertically
+- **AND** the email input and subscribe button stack vertically
+- **AND** all text remains readable
 
 ## Verification checklist
 

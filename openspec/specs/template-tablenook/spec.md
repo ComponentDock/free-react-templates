@@ -90,137 +90,154 @@ This is a **split-screen** wizard — the viewport is divided into two halves:
 
 The application SHALL render a full-viewport split-screen layout with an image panel on the left and a form panel on the right.
 
-**Scenario: Desktop layout**
-- Given the user loads the page on a desktop viewport
-- When the page renders
-- Then the left panel shows a full-height food/restaurant image (58.88% width)
-- And the right panel shows a dark charcoal (#333) form area (41.12% width)
-- And the form panel has a box-shadow
+#### Scenario: Desktop layout
 
-**Scenario: Mobile layout**
-- Given the user loads the page on a mobile viewport (< 768px)
-- When the page renders
-- Then the image panel stacks above the form panel (full width each)
+- **GIVEN** the user loads the page on a desktop viewport
+- **WHEN** the page renders
+- **THEN** the left panel shows a full-height food/restaurant image (58.88% width)
+- **AND** the right panel shows a dark charcoal (#333) form area (41.12% width)
+- **AND** the form panel has a box-shadow
+
+#### Scenario: Mobile layout
+
+- **GIVEN** the user loads the page on a mobile viewport (< 768px)
+- **WHEN** the page renders
+- **THEN** the image panel stacks above the form panel (full width each)
 
 ### Requirement: Step 1 — Book a Table
 
 Step 1 SHALL display a booking form with People count, Date, and Time fields.
 
-**Scenario: Step 1 renders correctly**
-- Given the user is on step 1
-- When the form renders
-- Then the heading says "Book a Table" (uppercase, white, bold)
-- And a gold script tagline "~ Check out our place ~" is visible
-- And a "People" field is visible (dropdown: 1-5)
-- And a "Date" field is visible (datepicker)
-- And a "Time" field is visible (two selects: hour + am/pm)
+#### Scenario: Step 1 renders correctly
 
-**Scenario: User selects people count**
-- Given the user is on step 1
-- When the user opens the People dropdown
-- Then options 1 through 5 are available
-- And selecting an option updates the display
+- **GIVEN** the user is on step 1
+- **WHEN** the form renders
+- **THEN** the heading says "Book a Table" (uppercase, white, bold)
+- **AND** a gold script tagline "~ Check out our place ~" is visible
+- **AND** a "People" field is visible (dropdown: 1-5)
+- **AND** a "Date" field is visible (datepicker)
+- **AND** a "Time" field is visible (two selects: hour + am/pm)
 
-**Scenario: User picks a date**
-- Given the user is on step 1
-- When the user clicks the Date field
-- Then a datepicker calendar appears
-- And selecting a date populates the field
+#### Scenario: User selects people count
 
-**Scenario: User picks a time**
-- Given the user is on step 1
-- When the user selects an hour and am/pm
-- Then the time is set
+- **GIVEN** the user is on step 1
+- **WHEN** the user opens the People dropdown
+- **THEN** options 1 through 5 are available
+- **AND** selecting an option updates the display
 
-**Scenario: Advancing to step 2**
-- Given the user is on step 1
-- When the user clicks "Next"
-- Then the form advances to step 2
-- And the image changes to `form-wizard-2.jpg`
+#### Scenario: User picks a date
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks the Date field
+- **THEN** a datepicker calendar appears
+- **AND** selecting a date populates the field
+
+#### Scenario: User picks a time
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user selects an hour and am/pm
+- **THEN** the time is set
+
+#### Scenario: Advancing to step 2
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "Next"
+- **THEN** the form advances to step 2
+- **AND** the image changes to `form-wizard-2.jpg`
 
 ### Requirement: Step 2 — Contact Details
 
 Step 2 SHALL display contact fields: Name, Phone, and Email.
 
-**Scenario: Step 2 renders correctly**
-- Given the user is on step 2
-- When the form renders
-- Then the heading says "Contact Details" (uppercase, white, bold)
-- And a "Name" input is visible (placeholder "Name")
-- And a "Phone" input is visible (placeholder "My phone")
-- And an "Email" input is visible (placeholder "Your Email")
+#### Scenario: Step 2 renders correctly
 
-**Scenario: User fills contact details**
-- Given the user is on step 2
-- When the user enters name, phone, and email
-- And clicks "Next"
-- Then the form advances to step 3
+- **GIVEN** the user is on step 2
+- **WHEN** the form renders
+- **THEN** the heading says "Contact Details" (uppercase, white, bold)
+- **AND** a "Name" input is visible (placeholder "Name")
+- **AND** a "Phone" input is visible (placeholder "My phone")
+- **AND** an "Email" input is visible (placeholder "Your Email")
 
-**Scenario: Navigating back to step 1**
-- Given the user is on step 2
-- When the user clicks "Previous"
-- Then the form returns to step 1
+#### Scenario: User fills contact details
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user enters name, phone, and email
+- **AND** clicks "Next"
+- **THEN** the form advances to step 3
+
+#### Scenario: Navigating back to step 1
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Previous"
+- **THEN** the form returns to step 1
 
 ### Requirement: Step 3 — Confirmation
 
 Step 3 SHALL display a confirmation message with a gold checkmark.
 
-**Scenario: Step 3 renders correctly**
-- Given the user is on step 3
-- When the form renders
-- Then a gold circle (#cdaa7c) with a checkmark icon is visible
-- And the text "Your table is ready" is displayed (uppercase, white, bold)
-- And a gold script tagline "~ Happy friends with a say ~" is visible
-- And the "Next" button is hidden (final step)
+#### Scenario: Step 3 renders correctly
 
-**Scenario: Navigating back to step 2**
-- Given the user is on step 3
-- When the user clicks "Previous"
-- Then the form returns to step 2
+- **GIVEN** the user is on step 3
+- **WHEN** the form renders
+- **THEN** a gold circle (#cdaa7c) with a checkmark icon is visible
+- **AND** the text "Your table is ready" is displayed (uppercase, white, bold)
+- **AND** a gold script tagline "~ Happy friends with a say ~" is visible
+- **AND** the "Next" button is hidden (final step)
+
+#### Scenario: Navigating back to step 2
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks "Previous"
+- **THEN** the form returns to step 2
 
 ### Requirement: Step navigation
 
 The wizard SHALL support forward/backward navigation via buttons and step indicator.
 
-**Scenario: Forward navigation**
-- Given the user is on any step before step 3
-- When the user clicks "Next"
-- Then the form advances to the next step
-- And the step indicator updates
+#### Scenario: Forward navigation
 
-**Scenario: Backward navigation**
-- Given the user is on any step after step 1
-- When the user clicks "Previous"
-- Then the form returns to the previous step
+- **GIVEN** the user is on any step before step 3
+- **WHEN** the user clicks "Next"
+- **THEN** the form advances to the next step
+- **AND** the step indicator updates
 
-**Scenario: Step indicator updates**
-- Given the user navigates between steps
-- When the step changes
-- Then the step number in the bottom-right updates (1, 2, or 3)
+#### Scenario: Backward navigation
+
+- **GIVEN** the user is on any step after step 1
+- **WHEN** the user clicks "Previous"
+- **THEN** the form returns to the previous step
+
+#### Scenario: Step indicator updates
+
+- **GIVEN** the user navigates between steps
+- **WHEN** the step changes
+- **THEN** the step number in the bottom-right updates (1, 2, or 3)
 
 ### Requirement: Visual fidelity to reference
 
 The template SHALL match the visual design of the ColorLib Wizard 7 reference.
 
-**Scenario: Design tokens match**
-- Given the template is rendered
-- When comparing to the reference
-- Then the color palette matches: dark charcoal form (#333), warm gold accents (#cdaa7c), white headings, gray labels (#ccc)
-- And the form inputs have bottom-border-only styling (2px solid #666)
-- And the font is Raleway (or system sans-serif fallback) with Satisfy for script text
-- And the form panel has a box-shadow
-- And buttons are transparent with gray border, turning gold on hover
+#### Scenario: Design tokens match
+
+- **GIVEN** the template is rendered
+- **WHEN** comparing to the reference
+- **THEN** the color palette matches: dark charcoal form (#333), warm gold accents (#cdaa7c), white headings, gray labels (#ccc)
+- **AND** the form inputs have bottom-border-only styling (2px solid #666)
+- **AND** the font is Raleway (or system sans-serif fallback) with Satisfy for script text
+- **AND** the form panel has a box-shadow
+- **AND** buttons are transparent with gray border, turning gold on hover
 
 ### Requirement: Responsive layout
 
 The wizard SHALL be responsive on mobile devices.
 
-**Scenario: Mobile layout**
-- Given the user loads the page on a mobile viewport (< 768px)
-- When the page renders
-- Then the split-screen stacks vertically (image on top, form below)
-- And the form panel takes full width
-- And navigation buttons remain accessible
+#### Scenario: Mobile layout
+
+- **GIVEN** the user loads the page on a mobile viewport (< 768px)
+- **WHEN** the page renders
+- **THEN** the split-screen stacks vertically (image on top, form below)
+- **AND** the form panel takes full width
+- **AND** navigation buttons remain accessible
 
 ## Verification Checklist
 

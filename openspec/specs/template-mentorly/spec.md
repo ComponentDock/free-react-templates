@@ -44,75 +44,86 @@ Recreation of the ColorLib "Coach" template as a React 19 + Vite + Tailwind 4 + 
 9. **Contact** — Three-column info (Address, Phone, Email Address). Below: newsletter subscription form with email input + "Send" button.
 10. **Footer** — Dark `#333333` background. Three columns: About Us text, Quick Links (nav anchors), Follow Us (social icons) + Subscribe Newsletter (email input + button). Copyright line.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Mentorly — Life Coaching Template
 
-  Scenario: Navbar renders with all navigation links
-    Given the page loads
-    Then the navbar displays links: Home, About, Our Training, Testimonials, Gallery, Blog, Contact
-    And the logo text "Mentorly" is visible
-    And on mobile a hamburger menu toggle is visible
+#### Scenario: Navbar renders with all navigation links
 
-  Scenario: Hero section displays correctly
-    Given the page loads
-    Then the hero section has a yellow (#ffdd40) background
-    And the hero heading is displayed in large bold text
-    And a "Contact us" call-to-action button is visible
-    And the hero occupies at least 80vh height
+- **GIVEN** the page loads
+- **THEN** the navbar displays links: Home, About, Our Training, Testimonials, Gallery, Blog, Contact
+- **AND** the logo text "Mentorly" is visible
+- **AND** on mobile a hamburger menu toggle is visible
 
-  Scenario: About section shows founder info
-    Given the user scrolls to the About section
-    Then a founder heading is visible
-    And three bio paragraphs are displayed
-    And an "Upcoming Speaking Gigs" list shows at least 4 events
-    And 4 team member cards are displayed with names and descriptions
+#### Scenario: Hero section displays correctly
 
-  Scenario: Training section shows training programs
-    Given the user scrolls to the Training section
-    Then the section has a light gray background
-    And 6 training cards are displayed in a 2-column (mobile) / 3-column (desktop) grid
-    And each card has an image, heading, and description
+- **GIVEN** the page loads
+- **THEN** the hero section has a yellow (#ffdd40) background
+- **AND** the hero heading is displayed in large bold text
+- **AND** a "Contact us" call-to-action button is visible
+- **AND** the hero occupies at least 80vh height
 
-  Scenario: Services section shows service offerings
-    Given the user scrolls to the Services section
-    Then 6 service cards are displayed in a grid
-    And each card has a heading and description
+#### Scenario: About section shows founder info
 
-  Scenario: Gallery section displays images in grid
-    Given the user scrolls to the Gallery section
-    Then at least 12 gallery images are displayed
-    And images are arranged in a responsive grid (2→3→4 columns)
-    And images have rounded corners (border-radius 7px)
-    And images have hover opacity transition
+- **GIVEN** the user scrolls to the About section
+- **THEN** a founder heading is visible
+- **AND** three bio paragraphs are displayed
+- **AND** an "Upcoming Speaking Gigs" list shows at least 4 events
+- **AND** 4 team member cards are displayed with names and descriptions
 
-  Scenario: Testimonials section shows customer quotes
-    Given the user scrolls to the Testimonials section
-    Then at least 3 testimonial quotes are displayed
-    And each quote shows the author name
+#### Scenario: Training section shows training programs
 
-  Scenario: Blog section shows recent posts
-    Given the user scrolls to the Blog section
-    Then 4 blog post cards are displayed
-    And each card has an image, date, title, excerpt, and "Read More" link
+- **GIVEN** the user scrolls to the Training section
+- **THEN** the section has a light gray background
+- **AND** 6 training cards are displayed in a 2-column (mobile) / 3-column (desktop) grid
+- **AND** each card has an image, heading, and description
 
-  Scenario: Contact section has info and newsletter form
-    Given the user scrolls to the Contact section
-    Then address, phone, and email information are displayed
-    And a newsletter subscription form with email input and submit button is present
+#### Scenario: Services section shows service offerings
 
-  Scenario: Footer renders with all sections
-    Given the user scrolls to the Footer
-    Then the footer has a dark (#333333) background
-    And "About Us", "Quick Links", and "Follow Us" columns are present
-    And a newsletter subscription form is present
-    And a copyright line with Component Dock link is displayed
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service cards are displayed in a grid
+- **AND** each card has a heading and description
 
-  Scenario: Responsive layout adapts to mobile
-    Given the page is viewed on a 375px viewport
-    Then the navbar collapses to a hamburger menu
-    And multi-column grids collapse to single or two columns
-    And the hero heading font size reduces to 2rem
+#### Scenario: Gallery section displays images in grid
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** at least 12 gallery images are displayed
+- **AND** images are arranged in a responsive grid (2→3→4 columns)
+- **AND** images have rounded corners (border-radius 7px)
+- **AND** images have hover opacity transition
+
+#### Scenario: Testimonials section shows customer quotes
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** at least 3 testimonial quotes are displayed
+- **AND** each quote shows the author name
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 4 blog post cards are displayed
+- **AND** each card has an image, date, title, excerpt, and "Read More" link
+
+#### Scenario: Contact section has info and newsletter form
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** address, phone, and email information are displayed
+- **AND** a newsletter subscription form with email input and submit button is present
+
+#### Scenario: Footer renders with all sections
+
+- **GIVEN** the user scrolls to the Footer
+- **THEN** the footer has a dark (#333333) background
+- **AND** "About Us", "Quick Links", and "Follow Us" columns are present
+- **AND** a newsletter subscription form is present
+- **AND** a copyright line with Component Dock link is displayed
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the page is viewed on a 375px viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** multi-column grids collapse to single or two columns
+- **AND** the hero heading font size reduces to 2rem
 
 ## Verification Checklist
 

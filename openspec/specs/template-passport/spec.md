@@ -99,65 +99,75 @@ Extracted from live preview (`css/style.css`) and Google Fonts reference.
 - Social icons: Twitter, Facebook, Instagram, LinkedIn
 - Component Dock attribution link required (per conventions)
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Passport Travel Agency Template
 
 #### Scenario: Navbar renders with all navigation links
-Given the user loads the Passport page
-Then the navbar displays brand text "Passport"
-And the navbar contains links: Home, Destinations, Discount, About, Blog, Contact
-And the Destinations link has a dropdown with destination options
-And social media icons are visible in the navbar
+
+- **GIVEN** the user loads the Passport page
+- **THEN** the navbar displays brand text "Passport"
+- **AND** the navbar contains links: Home, Destinations, Discount, About, Blog, Contact
+- **AND** the Destinations link has a dropdown with destination options
+- **AND** social media icons are visible in the navbar
 
 #### Scenario: Hero slider displays travel imagery
-Given the user loads the Passport page
-Then a full-width hero section is visible
-And the hero contains a headline and descriptive text
-And the hero has a call-to-action button
+
+- **GIVEN** the user loads the Passport page
+- **THEN** a full-width hero section is visible
+- **AND** the hero contains a headline and descriptive text
+- **AND** the hero has a call-to-action button
 
 #### Scenario: Featured destinations carousel shows travel cards
-Given the user scrolls to the featured destinations section
-Then a carousel of destination cards is displayed
-And each card shows an image and a title
-And the carousel navigation arrows allow cycling through items
+
+- **GIVEN** the user scrolls to the featured destinations section
+- **THEN** a carousel of destination cards is displayed
+- **AND** each card shows an image and a title
+- **AND** the carousel navigation arrows allow cycling through items
 
 #### Scenario: Services grid shows three service items
-Given the user scrolls to the services section
-Then three service cards are displayed in a row
-And each card has an icon, a title, and a "Learn More" link
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** three service cards are displayed in a row
+- **AND** each card has an icon, a title, and a "Learn More" link
 
 #### Scenario: Testimonials carousel shows traveler quotes
-Given the user scrolls to the testimonials section
-Then testimonial quotes with author names are displayed
-And the carousel allows cycling through testimonials
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** testimonial quotes with author names are displayed
+- **AND** the carousel allows cycling through testimonials
 
 #### Scenario: Destinations gallery shows six destination cards
-Given the user scrolls to the destinations gallery
-Then six destination cards are displayed in a 3x2 grid
-And each card shows a destination image and location name
+
+- **GIVEN** the user scrolls to the destinations gallery
+- **THEN** six destination cards are displayed in a 3x2 grid
+- **AND** each card shows a destination image and location name
 
 #### Scenario: Services detail section shows six service items
-Given the user scrolls to the services detail section
-Then six service cards are displayed in a 3x2 grid
-And each card has an icon, title, and link
+
+- **GIVEN** the user scrolls to the services detail section
+- **THEN** six service cards are displayed in a 3x2 grid
+- **AND** each card has an icon, title, and link
 
 #### Scenario: Blog section shows article previews
-Given the user scrolls to the blog section
-Then three blog post cards are displayed
-And each card shows an image, author, date, title, and excerpt
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** three blog post cards are displayed
+- **AND** each card shows an image, author, date, title, and excerpt
 
 #### Scenario: Newsletter CTA accepts email subscription
-Given the user scrolls to the newsletter section
-Then an email input field and subscribe button are visible
-And the section has a dark overlay background
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** an email input field and subscribe button are visible
+- **AND** the section has a dark overlay background
 
 #### Scenario: Footer contains brand info and links
-Given the user scrolls to the footer
-Then the footer displays brand information
-And navigation links are listed
-And a newsletter subscription form is present
-And a Component Dock attribution link is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer displays brand information
+- **AND** navigation links are listed
+- **AND** a newsletter subscription form is present
+- **AND** a Component Dock attribution link is present
 
 ## Verification checklist
 

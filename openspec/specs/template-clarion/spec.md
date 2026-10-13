@@ -35,117 +35,99 @@ Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).
 7. **Contact** — green overlay background image, centered heading "Send Us Message", form with name + email inputs, message textarea, "Send Message" button (white background variant).
 8. **Footer** — white background, 4-column layout: Top Product links, Navigation links, Compare links, Quick About (text + phone + email + social icons). Copyright bar at bottom.
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Navbar renders with logo and navigation links
+### Feature: Clarion template behaviour
 
-```gherkin
-Given the user visits the Clarion page
-Then a navigation bar is visible at the top
-And a logo image is displayed on the left
-And links "Home", "Generic", "Elements" are shown
-And a hamburger menu icon is present for mobile
-```
+#### Scenario: Navbar renders with logo and navigation links
 
-### Scenario: Hero section displays correctly
+- **GIVEN** the user visits the Clarion page
+- **THEN** a navigation bar is visible at the top
+- **AND** a logo image is displayed on the left
+- **AND** links "Home", "Generic", "Elements" are shown
+- **AND** a hamburger menu icon is present for mobile
 
-```gherkin
-Given the user visits the Clarion page
-Then a full-height hero section is displayed
-And a hero image is shown on the left side
-And a heading reads "Behind Every Success There is a Cactus"
-And the word "Success" appears in bold black
-And the word "Cactus" appears in green (#6cbb23)
-And a "Get Started" CTA button is visible with a right arrow icon
-```
+#### Scenario: Hero section displays correctly
 
-### Scenario: Video promo section renders
+- **GIVEN** the user visits the Clarion page
+- **THEN** a full-height hero section is displayed
+- **AND** a hero image is shown on the left side
+- **AND** a heading reads "Behind Every Success There is a Cactus"
+- **AND** the word "Success" appears in bold black
+- **AND** the word "Cactus" appears in green (#6cbb23)
+- **AND** a "Get Started" CTA button is visible with a right arrow icon
 
-```gherkin
-Given the user visits the Clarion page
-When the user scrolls to the video section
-Then a dark background with green overlay is shown
-And a play button icon is centered
-And a heading "Being unique is the preference" is displayed
-And subtext reads "Youtube video will appear in popover"
-```
+#### Scenario: Video promo section renders
 
-### Scenario: About section renders with text and image
+- **GIVEN** the user visits the Clarion page
+- **WHEN** the user scrolls to the video section
+- **THEN** a dark background with green overlay is shown
+- **AND** a play button icon is centered
+- **AND** a heading "Being unique is the preference" is displayed
+- **AND** subtext reads "Youtube video will appear in popover"
 
-```gherkin
-Given the user visits the Clarion page
-When the user scrolls to the about section
-Then a two-column layout is displayed
-And the left column contains heading "Brief Information About CellOn"
-And a paragraph description is shown
-And a "View More" outlined green button is present
-And the right column shows an about image
-```
+#### Scenario: About section renders with text and image
 
-### Scenario: Features section displays cards
+- **GIVEN** the user visits the Clarion page
+- **WHEN** the user scrolls to the about section
+- **THEN** a two-column layout is displayed
+- **AND** the left column contains heading "Brief Information About CellOn"
+- **AND** a paragraph description is shown
+- **AND** a "View More" outlined green button is present
+- **AND** the right column shows an about image
 
-```gherkin
-Given the user visits the Clarion page
-When the user scrolls to the features section
-Then a green-overlay background is displayed
-And 7 feature cards are shown in a grid layout
-And each card has an icon on a light green background
-And each card has a heading and description
-```
+#### Scenario: Features section displays cards
 
-### Scenario: Stats counters display numbers
+- **GIVEN** the user visits the Clarion page
+- **WHEN** the user scrolls to the features section
+- **THEN** a green-overlay background is displayed
+- **AND** 7 feature cards are shown in a grid layout
+- **AND** each card has an icon on a light green background
+- **AND** each card has a heading and description
 
-```gherkin
-Given the user visits the Clarion page
-When the user scrolls to the stats section
-Then 4 stat items are shown: Projects Completed (5962), New Projects (2394), Tickets Submitted (1439), Cup of Coffee (933)
-And the counter numbers are displayed in green (#6cbb23)
-```
+#### Scenario: Stats counters display numbers
 
-### Scenario: FAQ section renders questions
+- **GIVEN** the user visits the Clarion page
+- **WHEN** the user scrolls to the stats section
+- **THEN** 4 stat items are shown: Projects Completed (5962), New Projects (2394), Tickets Submitted (1439), Cup of Coffee (933)
+- **AND** the counter numbers are displayed in green (#6cbb23)
 
-```gherkin
-Given the user visits the Clarion page
-When the user scrolls to the FAQ section
-Then 3 FAQ items are displayed
-And questions include "Are your Templates responsive?", "Does it have all the plugin as mentioned?", "Can i use the these theme for my client?"
-And each question can be toggled to show/hide the answer
-```
+#### Scenario: FAQ section renders questions
 
-### Scenario: Contact form renders and validates
+- **GIVEN** the user visits the Clarion page
+- **WHEN** the user scrolls to the FAQ section
+- **THEN** 3 FAQ items are displayed
+- **AND** questions include "Are your Templates responsive?", "Does it have all the plugin as mentioned?", "Can i use the these theme for my client?"
+- **AND** each question can be toggled to show/hide the answer
 
-```gherkin
-Given the user visits the Clarion page
-When the user scrolls to the contact section
-Then a green-overlay background is displayed
-And a heading "Send Us Message" is shown
-And input fields for name and email are present
-And a textarea for message is present
-And a "Send Message" button is displayed
-And submitting empty fields shows validation errors
-```
+#### Scenario: Contact form renders and validates
 
-### Scenario: Footer renders with columns and social links
+- **GIVEN** the user visits the Clarion page
+- **WHEN** the user scrolls to the contact section
+- **THEN** a green-overlay background is displayed
+- **AND** a heading "Send Us Message" is shown
+- **AND** input fields for name and email are present
+- **AND** a textarea for message is present
+- **AND** a "Send Message" button is displayed
+- **AND** submitting empty fields shows validation errors
 
-```gherkin
-Given the user visits the Clarion page
-When the user scrolls to the footer
-Then a 4-column footer layout is displayed
-And columns are: Top Product, Navigation, Compare, Quick About
-And social icons (Facebook, Twitter, Dribbble, Behance) are visible
-And a copyright bar is shown at the bottom
-And the copyright bar links to Component Dock
-```
+#### Scenario: Footer renders with columns and social links
 
-### Scenario: Responsive behavior
+- **GIVEN** the user visits the Clarion page
+- **WHEN** the user scrolls to the footer
+- **THEN** a 4-column footer layout is displayed
+- **AND** columns are: Top Product, Navigation, Compare, Quick About
+- **AND** social icons (Facebook, Twitter, Dribbble, Behance) are visible
+- **AND** a copyright bar is shown at the bottom
+- **AND** the copyright bar links to Component Dock
 
-```gherkin
-Given the user visits the Clarion page on a mobile viewport
-Then the hamburger menu is visible and nav links are hidden
-And the hero section stacks vertically
-And the features grid collapses to fewer columns
-And the footer columns stack vertically
-```
+#### Scenario: Responsive behavior
+
+- **GIVEN** the user visits the Clarion page on a mobile viewport
+- **THEN** the hamburger menu is visible and nav links are hidden
+- **AND** the hero section stacks vertically
+- **AND** the features grid collapses to fewer columns
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

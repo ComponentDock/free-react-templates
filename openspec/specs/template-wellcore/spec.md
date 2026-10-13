@@ -60,239 +60,248 @@ Extracted from the ColorLib preview CSS (`css/style.css`):
 - Testimonial section with client photos and quotes
 - Dark footer with light text
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Hero Section
 
-```gherkin
 Feature: Hero slider
-  Scenario: Displays full-viewport slider with 3 slides
-    Given I am on the Wellcore page
-    Then I should see a full-height hero slider
-    And slide 1 should show "Welcome to Wellcore" heading
-    And slide 1 should show "Get in shape faster, live your happy life" subheading
-    And slide 2 should show "A Fresh approach to healthy life" heading
-    And slide 3 should show "Welcome Wellcore" heading
-    And each slide should have a dark overlay background
-    And navigation dots/arrows should be visible
 
-  Scenario: Hero auto-advances slides
-    Given I am on the Wellcore page
-    When I wait for the auto-slide interval
-    Then the active slide should advance to the next slide
-```
+#### Scenario: Displays full-viewport slider with 3 slides
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a full-height hero slider
+- **AND** slide 1 should show "Welcome to Wellcore" heading
+- **AND** slide 1 should show "Get in shape faster, live your happy life" subheading
+- **AND** slide 2 should show "A Fresh approach to healthy life" heading
+- **AND** slide 3 should show "Welcome Wellcore" heading
+- **AND** each slide should have a dark overlay background
+- **AND** navigation dots/arrows should be visible
+
+#### Scenario: Hero auto-advances slides
+
+- **GIVEN** I am on the Wellcore page
+- **WHEN** I wait for the auto-slide interval
+- **THEN** the active slide should advance to the next slide
 
 ### Navigation
 
-```gherkin
 Feature: Sticky navigation bar
-  Scenario: Displays all navigation links
-    Given I am on the Wellcore page
-    Then I should see a navigation bar with links:
-      | Home |
-      | About |
-      | Coach |
-      | Pricing |
-      | Services |
-      | Stories |
-      | Blog |
-      | Contact |
 
-  Scenario: Navigation becomes sticky on scroll
-    Given I am on the Wellcore page
-    When I scroll down past the hero
-    Then the navigation bar should become sticky at the top
-    And the background should become solid (not transparent)
+#### Scenario: Displays all navigation links
 
-  Scenario: Smooth scroll to section on nav click
-    Given I am on the Wellcore page
-    When I click the "About" navigation link
-    Then the page should scroll smoothly to the About section
-```
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a navigation bar with links:
+| Home |
+| About |
+| Coach |
+| Pricing |
+| Services |
+| Stories |
+| Blog |
+| Contact |
+
+#### Scenario: Navigation becomes sticky on scroll
+
+- **GIVEN** I am on the Wellcore page
+- **WHEN** I scroll down past the hero
+- **THEN** the navigation bar should become sticky at the top
+- **AND** the background should become solid (not transparent)
+
+#### Scenario: Smooth scroll to section on nav click
+
+- **GIVEN** I am on the Wellcore page
+- **WHEN** I click the "About" navigation link
+- **THEN** the page should scroll smoothly to the About section
 
 ### Services Section
 
-```gherkin
 Feature: Services cards
-  Scenario: Displays three service cards
-    Given I am on the Wellcore page
-    Then I should see 3 service cards with headings:
-      | Exercise Program |
-      | Nutrition Plans |
-      | Diet Program |
-    And each card should have an icon and description text
-    And cards should be displayed in a horizontal row
 
-  Scenario: Service cards have hover effect
-    Given I am on the Wellcore page
-    When I hover over a service card
-    Then the card should show a visual hover effect
-```
+#### Scenario: Displays three service cards
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see 3 service cards with headings:
+| Exercise Program |
+| Nutrition Plans |
+| Diet Program |
+- **AND** each card should have an icon and description text
+- **AND** cards should be displayed in a horizontal row
+
+#### Scenario: Service cards have hover effect
+
+- **GIVEN** I am on the Wellcore page
+- **WHEN** I hover over a service card
+- **THEN** the card should show a visual hover effect
 
 ### About Section
 
-```gherkin
 Feature: About section with quote
-  Scenario: Displays about content with image
-    Given I am on the Wellcore page
-    Then I should see the About section
-    And it should contain the heading "Hello! Health Care is a natural way of improving your health"
-    And it should show a testimonial quote from "Cythia Hunter"
-    And there should be an image on the left side
 
-  Scenario: About section has call-to-action button
-    Given I am on the Wellcore page
-    Then the About section should have a "Learn More" button
-```
+#### Scenario: Displays about content with image
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see the About section
+- **AND** it should contain the heading "Hello! Health Care is a natural way of improving your health"
+- **AND** it should show a testimonial quote from "Cythia Hunter"
+- **AND** there should be an image on the left side
+
+#### Scenario: About section has call-to-action button
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** the About section should have a "Learn More" button
 
 ### Services Grid
 
-```gherkin
 Feature: Services grid
-  Scenario: Displays three service items
-    Given I am on the Wellcore page
-    Then I should see 3 service grid items:
-      | Healthcare Services |
-      | Free Consultation |
-      | Find A Health Expert |
-    And each item should have an icon, heading, and description
-```
+
+#### Scenario: Displays three service items
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see 3 service grid items:
+| Healthcare Services |
+| Free Consultation |
+| Find A Health Expert |
+- **AND** each item should have an icon, heading, and description
 
 ### Testimonials
 
-```gherkin
 Feature: Client testimonials carousel
-  Scenario: Displays testimonial slider
-    Given I am on the Wellcore page
-    Then I should see a testimonials section with heading "Happy Clients & Feedbacks"
-    And testimonials should be displayed in a carousel
-    And each testimonial should have a client name and quote
 
-  Scenario: Testimonials carousel is navigable
-    Given I am on the Wellcore page
-    When I click the next arrow on the testimonials carousel
-    Then the next testimonial should be displayed
-```
+#### Scenario: Displays testimonial slider
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a testimonials section with heading "Happy Clients & Feedbacks"
+- **AND** testimonials should be displayed in a carousel
+- **AND** each testimonial should have a client name and quote
+
+#### Scenario: Testimonials carousel is navigable
+
+- **GIVEN** I am on the Wellcore page
+- **WHEN** I click the next arrow on the testimonials carousel
+- **THEN** the next testimonial should be displayed
 
 ### How It Works
 
-```gherkin
 Feature: How It Works steps
-  Scenario: Displays four process steps
-    Given I am on the Wellcore page
-    Then I should see a "How it works?" section
-    And there should be 4 steps with headings:
-      | Follow the program |
-      | Work for result |
-      | Eat healthy food |
-      | Enjoy your life |
-    And each step should have a numbered icon/badge
-    And step badges should use the green accent color (#a3cb4c)
 
-  Scenario: Steps display in horizontal layout
-    Given I am on the Wellcore page
-    Then the 4 steps should be displayed in a horizontal row
-```
+#### Scenario: Displays four process steps
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a "How it works?" section
+- **AND** there should be 4 steps with headings:
+| Follow the program |
+| Work for result |
+| Eat healthy food |
+| Enjoy your life |
+- **AND** each step should have a numbered icon/badge
+- **AND** step badges should use the green accent color (#a3cb4c)
+
+#### Scenario: Steps display in horizontal layout
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** the 4 steps should be displayed in a horizontal row
 
 ### Success Stories
 
-```gherkin
 Feature: Success stories carousel
-  Scenario: Displays success stories
-    Given I am on the Wellcore page
-    Then I should see a "Successfull Stories" section
-    And stories should be displayed in a carousel format
-```
+
+#### Scenario: Displays success stories
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a "Successfull Stories" section
+- **AND** stories should be displayed in a carousel format
 
 ### CTA Banner
 
-```gherkin
 Feature: Call-to-action banner
-  Scenario: Displays consultation offer
-    Given I am on the Wellcore page
-    Then I should see a CTA section
-    And it should show "We Provide Free Health Care Consultation" heading
-    And it should have a dark overlay background
-    And there should be a call-to-action button
-```
+
+#### Scenario: Displays consultation offer
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a CTA section
+- **AND** it should show "We Provide Free Health Care Consultation" heading
+- **AND** it should have a dark overlay background
+- **AND** there should be a call-to-action button
 
 ### How It Works (Numbered)
 
-```gherkin
 Feature: Numbered How It Works
-  Scenario: Displays four numbered steps
-    Given I am on the Wellcore page
-    Then I should see a "How it works" section with 4 numbered steps
-    And steps should have green circle badges with numbers
-    And step headings should be:
-      | Follow the program |
-      | Work for result |
-      | Eat healthy Food |
-      | Enjoy your life |
-```
+
+#### Scenario: Displays four numbered steps
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a "How it works" section with 4 numbered steps
+- **AND** steps should have green circle badges with numbers
+- **AND** step headings should be:
+| Follow the program |
+| Work for result |
+| Eat healthy Food |
+| Enjoy your life |
 
 ### Pricing Section
 
-```gherkin
 Feature: Pricing plans
-  Scenario: Displays four pricing tiers
-    Given I am on the Wellcore page
-    Then I should see a "Choose Your Perfect Plans" section
-    And there should be 4 pricing cards:
-      | Plan | Price |
-      | Starter | $49 |
-      | Standard | $79 |
-      | Premium | $109 |
-      | Platinum | $159 |
-    And each plan should have feature list items
-    And each plan should have a "Get Started" button
 
-  Scenario: Pricing cards have consistent layout
-    Given I am on the Wellcore page
-    Then each pricing card should display the plan name, price, and features
-    And the cards should be in a horizontal row
-```
+#### Scenario: Displays four pricing tiers
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a "Choose Your Perfect Plans" section
+- **AND** there should be 4 pricing cards:
+| Plan | Price |
+| Starter | $49 |
+| Standard | $79 |
+| Premium | $109 |
+| Platinum | $159 |
+- **AND** each plan should have feature list items
+- **AND** each plan should have a "Get Started" button
+
+#### Scenario: Pricing cards have consistent layout
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** each pricing card should display the plan name, price, and features
+- **AND** the cards should be in a horizontal row
 
 ### Blog Section
 
-```gherkin
 Feature: Blog posts
-  Scenario: Displays recent blog posts
-    Given I am on the Wellcore page
-    Then I should see a "Latest news from our blog" section
-    And there should be 3 blog post cards
-    And each card should have an image, date, title, and excerpt
-```
+
+#### Scenario: Displays recent blog posts
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a "Latest news from our blog" section
+- **AND** there should be 3 blog post cards
+- **AND** each card should have an image, date, title, and excerpt
 
 ### Newsletter Section
 
-```gherkin
 Feature: Newsletter subscription
-  Scenario: Displays newsletter signup
-    Given I am on the Wellcore page
-    Then I should see a newsletter subscription section
-    And it should have a text input for email
-    And it should have a "Subscribe" button
-```
+
+#### Scenario: Displays newsletter signup
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a newsletter subscription section
+- **AND** it should have a text input for email
+- **AND** it should have a "Subscribe" button
 
 ### Footer
 
-```gherkin
 Feature: Site footer
-  Scenario: Displays footer with link columns
-    Given I am on the Wellcore page
-    Then I should see a footer with 4 columns:
-      | Services |
-      | About |
-      | Resources |
-      | Social |
-    And each column should have relevant links
-    And the footer should link to https://www.componentdock.com/
 
-  Scenario: Footer has copyright text
-    Given I am on the Wellcore page
-    Then the footer should display copyright information
-```
+#### Scenario: Displays footer with link columns
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** I should see a footer with 4 columns:
+| Services |
+| About |
+| Resources |
+| Social |
+- **AND** each column should have relevant links
+- **AND** the footer should link to https://www.componentdock.com/
+
+#### Scenario: Footer has copyright text
+
+- **GIVEN** I am on the Wellcore page
+- **THEN** the footer should display copyright information
 
 ## Verification Checklist
 

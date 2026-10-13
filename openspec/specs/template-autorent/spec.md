@@ -54,91 +54,84 @@ Recreation of ColorLib "Carrentals" template as a React 19 + Vite + Tailwind 4 +
 8. **CTA Banner** — Full-width primary bg (`#0779e4`), heading "What are you waiting for?", subtitle, "Rent a car now" white button
 9. **Footer** — Dark bg, 4 columns: About Us (social icons), Quick Links, Resources, Support + copyright + Component Dock attribution
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders correctly
-```gherkin
-Given the user visits the AutoRent landing page
-Then the navbar is visible with the "AutoRent" logo on the left
-And the navbar has a white background
-And the navbar is sticky at the top of the viewport
-```
+### Feature: AutoRent template behaviour
 
-### Scenario: Hero section displays booking form
-```gherkin
-Given the user sees the hero section
-Then a full-viewport-height hero with a background image is displayed
-And the heading "Rent a car is within your finger tips." is visible
-And a car type selector dropdown is shown with options
-When the user selects a car type from the dropdown
-Then the selection is updated without page reload
-```
+#### Scenario: Navbar renders correctly
 
-### Scenario: How It Works section shows 3 steps
-```gherkin
-Given the user scrolls to the "How It Works" section
-Then the heading "How it works?" and subtitle "Easy steps to get you started" are displayed
-And 3 steps are shown in a horizontal row
-And step 1 is "Select a car" with number 01
-And step 2 is "Fill up form" with number 02
-And step 3 is "Payment" with number 03
-And each step has a blue number circle, title, and description text
-```
+- **GIVEN** the user visits the AutoRent landing page
+- **THEN** the navbar is visible with the "AutoRent" logo on the left
+- **AND** the navbar has a white background
+- **AND** the navbar is sticky at the top of the viewport
 
-### Scenario: Promo section displays with video play button
-```gherkin
-Given the user scrolls to the promo section
-Then a heading "You can easily avail our promo for renting a car." is displayed
-And a descriptive paragraph is shown below the heading
-And a "Meet them now" primary button is visible
-And a video play button overlay is shown on a promotional image
-```
+#### Scenario: Hero section displays booking form
 
-### Scenario: Car Listings section shows 6 car cards
-```gherkin
-Given the user scrolls to the car listings section
-Then the heading "Car Listings" is displayed with a subtitle
-And 6 car listing cards are rendered
-And each card shows a car image, car name, price "$389.00/day"
-And each card shows 3 features: Luggage, Doors, Passenger with values
-And each card has a description paragraph and a "Rent Now" button
-And the section has a light gray background
-```
+- **GIVEN** the user sees the hero section
+- **THEN** a full-viewport-height hero with a background image is displayed
+- **AND** the heading "Rent a car is within your finger tips." is visible
+- **AND** a car type selector dropdown is shown with options
+- **WHEN** the user selects a car type from the dropdown
+- **THEN** the selection is updated without page reload
 
-### Scenario: Features section displays 6 feature cards
-```gherkin
-Given the user scrolls to the features section
-Then the heading "Features" is displayed with a subtitle
-And 6 feature cards are shown in a 3-column grid
-And each card has a circular blue icon, title, description, and "Learn more" link
-```
+#### Scenario: How It Works section shows 3 steps
 
-### Scenario: Testimonials section shows 3 cards
-```gherkin
-Given the user scrolls to the testimonials section
-Then the heading "Testimonials" is displayed with a subtitle
-And 3 testimonial cards are shown
-And each card shows a quote, author name, and role
-And the section has a light background
-```
+- **GIVEN** the user scrolls to the "How It Works" section
+- **THEN** the heading "How it works?" and subtitle "Easy steps to get you started" are displayed
+- **AND** 3 steps are shown in a horizontal row
+- **AND** step 1 is "Select a car" with number 01
+- **AND** step 2 is "Fill up form" with number 02
+- **AND** step 3 is "Payment" with number 03
+- **AND** each step has a blue number circle, title, and description text
 
-### Scenario: CTA banner encourages action
-```gherkin
-Given the user scrolls to the call-to-action section
-Then a full-width section with blue background is displayed
-And the heading "What are you waiting for?" is shown
-And a subtitle paragraph is displayed
-And a "Rent a car now" white button is visible
-```
+#### Scenario: Promo section displays with video play button
 
-### Scenario: Footer renders with columns and attribution
-```gherkin
-Given the user scrolls to the footer
-Then a 4-column footer layout is displayed
-And social media icons (Facebook, Instagram, Twitter, LinkedIn) are shown
-And Quick Links, Resources, and Support sections are present
-And the footer contains a link to "Component Dock" (https://www.componentdock.com/)
-```
+- **GIVEN** the user scrolls to the promo section
+- **THEN** a heading "You can easily avail our promo for renting a car." is displayed
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** a "Meet them now" primary button is visible
+- **AND** a video play button overlay is shown on a promotional image
+
+#### Scenario: Car Listings section shows 6 car cards
+
+- **GIVEN** the user scrolls to the car listings section
+- **THEN** the heading "Car Listings" is displayed with a subtitle
+- **AND** 6 car listing cards are rendered
+- **AND** each card shows a car image, car name, price "$389.00/day"
+- **AND** each card shows 3 features: Luggage, Doors, Passenger with values
+- **AND** each card has a description paragraph and a "Rent Now" button
+- **AND** the section has a light gray background
+
+#### Scenario: Features section displays 6 feature cards
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** the heading "Features" is displayed with a subtitle
+- **AND** 6 feature cards are shown in a 3-column grid
+- **AND** each card has a circular blue icon, title, description, and "Learn more" link
+
+#### Scenario: Testimonials section shows 3 cards
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the heading "Testimonials" is displayed with a subtitle
+- **AND** 3 testimonial cards are shown
+- **AND** each card shows a quote, author name, and role
+- **AND** the section has a light background
+
+#### Scenario: CTA banner encourages action
+
+- **GIVEN** the user scrolls to the call-to-action section
+- **THEN** a full-width section with blue background is displayed
+- **AND** the heading "What are you waiting for?" is shown
+- **AND** a subtitle paragraph is displayed
+- **AND** a "Rent a car now" white button is visible
+
+#### Scenario: Footer renders with columns and attribution
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a 4-column footer layout is displayed
+- **AND** social media icons (Facebook, Instagram, Twitter, LinkedIn) are shown
+- **AND** Quick Links, Resources, and Support sections are present
+- **AND** the footer contains a link to "Component Dock" (https://www.componentdock.com/)
 
 ## Verification Checklist
 

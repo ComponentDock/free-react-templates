@@ -80,123 +80,105 @@ highlights.
    image + "Follow Me" heading + social icons (Facebook, Twitter,
    Dribbble, Behance) + copyright line. Footer links to Component Dock.
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Header renders with transparent overlay on hero
+### Feature: Stephen template behaviour
 
-```gherkin
-Given the user visits the page
-When the header renders
-Then it is transparent and overlays the hero banner
-And it contains a logo and navigation links
-And the navigation links include Home, About, Portfolio, Pages, Blog, Contact
-And dropdown menus have a golden-yellow (#ffd200) background
-```
+#### Scenario: Header renders with transparent overlay on hero
 
-### Scenario: Hero banner displays carousel with three slides
+- **GIVEN** the user visits the page
+- **WHEN** the header renders
+- **THEN** it is transparent and overlays the hero banner
+- **AND** it contains a logo and navigation links
+- **AND** the navigation links include Home, About, Portfolio, Pages, Blog, Contact
+- **AND** dropdown menus have a golden-yellow (#ffd200) background
 
-```gherkin
-Given the user visits the page
-When the hero banner renders
-Then it shows a full-viewport carousel with 3 slides
-And each slide has a background image
-And each slide displays a name heading and "Personal portfolio Website" subtitle
-And each slide has a red "Hire Me" pill button
-And the carousel auto-rotates between slides
-```
+#### Scenario: Hero banner displays carousel with three slides
 
-### Scenario: Portfolio grid displays filterable projects
+- **GIVEN** the user visits the page
+- **WHEN** the hero banner renders
+- **THEN** it shows a full-viewport carousel with 3 slides
+- **AND** each slide has a background image
+- **AND** each slide displays a name heading and "Personal portfolio Website" subtitle
+- **AND** each slide has a red "Hire Me" pill button
+- **AND** the carousel auto-rotates between slides
 
-```gherkin
-Given the user visits the page
-When the portfolio section renders
-Then it shows "Latest Works" heading with red underline accent
-And it shows 4 filter tabs: All Categories, Branding, Creative Work, Web Design
-And the "All Categories" tab is active by default
-And 8 project items display in a masonry grid layout
-And each project item shows an image with a hover overlay
-And the hover overlay displays the project title and "Client Project" label
-```
+#### Scenario: Portfolio grid displays filterable projects
 
-### Scenario: Portfolio filter tabs filter projects
+- **GIVEN** the user visits the page
+- **WHEN** the portfolio section renders
+- **THEN** it shows "Latest Works" heading with red underline accent
+- **AND** it shows 4 filter tabs: All Categories, Branding, Creative Work, Web Design
+- **AND** the "All Categories" tab is active by default
+- **AND** 8 project items display in a masonry grid layout
+- **AND** each project item shows an image with a hover overlay
+- **AND** the hover overlay displays the project title and "Client Project" label
 
-```gherkin
-Given the portfolio section is displayed
-When the user clicks the "Branding" filter tab
-Then only projects tagged as "brand" are visible
-And the "Branding" tab becomes active
-When the user clicks the "All Categories" filter tab
-Then all 8 project items are visible again
-```
+#### Scenario: Portfolio filter tabs filter projects
 
-### Scenario: About section displays with gray background
+- **GIVEN** the portfolio section is displayed
+- **WHEN** the user clicks the "Branding" filter tab
+- **THEN** only projects tagged as "brand" are visible
+- **AND** the "Branding" tab becomes active
+- **WHEN** the user clicks the "All Categories" filter tab
+- **THEN** all 8 project items are visible again
 
-```gherkin
-Given the user visits the page
-When the about section renders
-Then it has a light gray (#f9f9ff) background
-And it shows an illustration image on the left
-And it shows an "about myselt" heading on the right (preserving original text)
-And it shows descriptive paragraphs
-And it shows a "More Info" pill button
-```
+#### Scenario: About section displays with gray background
 
-### Scenario: Testimonials carousel displays with brand logos
+- **GIVEN** the user visits the page
+- **WHEN** the about section renders
+- **THEN** it has a light gray (#f9f9ff) background
+- **AND** it shows an illustration image on the left
+- **AND** it shows an "about myselt" heading on the right (preserving original text)
+- **AND** it shows descriptive paragraphs
+- **AND** it shows a "More Info" pill button
 
-```gherkin
-Given the user visits the page
-When the testimonials section renders
-Then it has a background photo
-And it shows a carousel of testimonial cards
-And each testimonial has a quote icon, author name, 5-star rating, and quote text
-And the right column shows a white card with brand logos
-And the brand logo card is hidden on mobile viewports
-```
+#### Scenario: Testimonials carousel displays with brand logos
 
-### Scenario: Newsletter signup form renders with pill shape
+- **GIVEN** the user visits the page
+- **WHEN** the testimonials section renders
+- **THEN** it has a background photo
+- **AND** it shows a carousel of testimonial cards
+- **AND** each testimonial has a quote icon, author name, 5-star rating, and quote text
+- **AND** the right column shows a white card with brand logos
+- **AND** the brand logo card is hidden on mobile viewports
 
-```gherkin
-Given the user visits the page
-When the newsletter section renders
-Then it has a background photo
-And the heading "Join Our Newsletter" is white
-And the description text is white
-And the form has a white pill-shaped input (border-radius: 50px)
-And the "Subscribe" button is styled as a generic button
-```
+#### Scenario: Newsletter signup form renders with pill shape
 
-### Scenario: Footer displays with golden-yellow background
+- **GIVEN** the user visits the page
+- **WHEN** the newsletter section renders
+- **THEN** it has a background photo
+- **AND** the heading "Join Our Newsletter" is white
+- **AND** the description text is white
+- **AND** the form has a white pill-shaped input (border-radius: 50px)
+- **AND** the "Subscribe" button is styled as a generic button
 
-```gherkin
-Given the user visits the page
-When the footer renders
-Then it has a golden-yellow (#ffd200) background
-And it shows a logo image
-And it shows a "Follow Me" heading
-And it shows social icon links (Facebook, Twitter, Dribbble, Behance)
-And it shows a copyright line
-And the footer contains a "Component Dock" link
-```
+#### Scenario: Footer displays with golden-yellow background
 
-### Scenario: Sticky header activates on scroll
+- **GIVEN** the user visits the page
+- **WHEN** the footer renders
+- **THEN** it has a golden-yellow (#ffd200) background
+- **AND** it shows a logo image
+- **AND** it shows a "Follow Me" heading
+- **AND** it shows social icon links (Facebook, Twitter, Dribbble, Behance)
+- **AND** it shows a copyright line
+- **AND** the footer contains a "Component Dock" link
 
-```gherkin
-Given the user has scrolled past the hero banner
-When the sticky header activates
-Then the nav background becomes golden-yellow (#ffd200)
-And a box-shadow appears
-And the nav height adjusts to 70px
-```
+#### Scenario: Sticky header activates on scroll
 
-### Scenario: Primary button hover states
+- **GIVEN** the user has scrolled past the hero banner
+- **WHEN** the sticky header activates
+- **THEN** the nav background becomes golden-yellow (#ffd200)
+- **AND** a box-shadow appears
+- **AND** the nav height adjusts to 70px
 
-```gherkin
-Given a primary button is displayed
-When the user hovers over it
-Then the background changes to #e45447 (red)
-And the text color changes to white
-And the border becomes transparent
-```
+#### Scenario: Primary button hover states
+
+- **GIVEN** a primary button is displayed
+- **WHEN** the user hovers over it
+- **THEN** the background changes to #e45447 (red)
+- **AND** the text color changes to white
+- **AND** the border becomes transparent
 
 ## Verification checklist
 

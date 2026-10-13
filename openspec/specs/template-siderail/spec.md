@@ -93,9 +93,11 @@ and ColorLib page analysis. See Design Reference section.)
    - Body text: Two paragraphs of text — standard paragraph styling with
      relaxed line-height (1.8).
 
-## Gherkin requirements
+## Requirements
 
-### Requirement: Fixed Sidebar Navigation
+### Feature: Fixed Sidebar Navigation
+
+#### Scenario: Fixed Sidebar Navigation
 
 - The system SHALL render a fixed left sidebar occupying ~270px width and full
   viewport height.
@@ -113,14 +115,18 @@ and ColorLib page analysis. See Design Reference section.)
   https://www.componentdock.com/ ("Component Dock"), replacing any ColorLib
   attribution.
 
-### Requirement: Main Content Area
+### Feature: Main Content Area
+
+#### Scenario: Main Content Area
 
 - The system SHALL render a main content area to the right of the sidebar.
 - The main content area SHALL have a white (`#ffffff`) background.
 - The content area SHALL display a large bold heading at the top.
 - Below the heading, the content area SHALL display body text paragraphs.
 
-### Requirement: Hamburger Toggle
+### Feature: Hamburger Toggle
+
+#### Scenario: Hamburger Toggle
 
 - A hamburger toggle button SHALL be positioned at the top-right of the
   sidebar/content boundary.
@@ -128,7 +134,9 @@ and ColorLib page analysis. See Design Reference section.)
   icon.
 - On mobile viewports, the hamburger button SHALL toggle sidebar visibility.
 
-### Requirement: Responsive Behavior
+### Feature: Responsive Behavior
+
+#### Scenario: Responsive Behavior
 
 - On viewports below the sidebar breakpoint (e.g. < 768px), the sidebar SHALL
   collapse or become toggleable.
@@ -136,14 +144,18 @@ and ColorLib page analysis. See Design Reference section.)
   sidebar.
 - The sidebar SHALL slide in from the left when toggled on mobile.
 
-### Requirement: Footer Attribution
+### Feature: Footer Attribution
+
+#### Scenario: Footer Attribution
 
 - The sidebar footer SHALL link to https://www.componentdock.com/ with branded
   text "More templates at Component Dock" or similar.
 - No ColorLib references SHALL appear in any app source files, comments, or
   data.
 
-### Requirement: Newsletter Form
+### Feature: Newsletter Form
+
+#### Scenario: Newsletter Form
 
 - The newsletter section SHALL display a heading "Subscribe for newsletter".
 - The newsletter section SHALL contain an email input field with placeholder

@@ -50,169 +50,161 @@ Extracted from `css/style.css` on the live preview:
 | Overlap card shadow | `0 15px 30px 0 rgba(0,0,0,0.1)`       | `.templateux-overlap .block-icon-1`        |
 | Blog thumbnail      | 500px height, bg-cover, black overlay  | `.block-thumbnail-1`                       |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
 
-  Scenario: Desktop navbar displays over hero
-    Given the viewport is ≥ 768px wide
-    When the page loads
-    Then the navbar is transparent and positioned absolute over the hero
-    And the logo text is "Hrforge"
-    And nav links are "Home", "About", "Services" (with dropdown), "Blog", "Contact"
-    And all nav link text is white, uppercase, 13px, letter-spacing 0.1em
+#### Scenario: Desktop navbar displays over hero
 
-  Scenario: Mobile navbar has solid blue background
-    Given the viewport is < 768px wide
-    When the page loads
-    Then the navbar has a #0389FF background
-    And a hamburger toggle button is visible
-    And clicking the hamburger toggles the mobile menu
+- **GIVEN** the viewport is ≥ 768px wide
+- **WHEN** the page loads
+- **THEN** the navbar is transparent and positioned absolute over the hero
+- **AND** the logo text is "Hrforge"
+- **AND** nav links are "Home", "About", "Services" (with dropdown), "Blog", "Contact"
+- **AND** all nav link text is white, uppercase, 13px, letter-spacing 0.1em
 
-  Scenario: Services dropdown appears on hover/click
-    Given the viewport is ≥ 992px wide
-    When the user hovers over "Services"
-    Then a dropdown appears with "HR Consulting", "Leadership Training", "HR Management" links
-    And sub-menus are available under "HR Management" ("Operational Management", "Corporate Program")
-```
+#### Scenario: Mobile navbar has solid blue background
+
+- **GIVEN** the viewport is < 768px wide
+- **WHEN** the page loads
+- **THEN** the navbar has a #0389FF background
+- **AND** a hamburger toggle button is visible
+- **AND** clicking the hamburger toggles the mobile menu
+
+#### Scenario: Services dropdown appears on hover/click
+
+- **GIVEN** the viewport is ≥ 992px wide
+- **WHEN** the user hovers over "Services"
+- **THEN** a dropdown appears with "HR Consulting", "Leadership Training", "HR Management" links
+- **AND** sub-menus are available under "HR Management" ("Operational Management", "Corporate Program")
 
 ### Hero / Cover
 
-```gherkin
 Feature: Hero Section
 
-  Scenario: Full-width hero with background image and overlay
-    Given the page loads
-    Then a full-width hero section is displayed with a background image
-    And a dark overlay (30% opacity) covers the image
-    And the heading reads "We Are Your Partners in Human Resource"
-    And a lead paragraph is displayed below the heading
-    And a "Get Started" primary button is visible
-    And a "Learn More" text link is displayed next to the button
-    And all text is white
-    And the hero minimum height is 800px
-```
+#### Scenario: Full-width hero with background image and overlay
+
+- **GIVEN** the page loads
+- **THEN** a full-width hero section is displayed with a background image
+- **AND** a dark overlay (30% opacity) covers the image
+- **AND** the heading reads "We Are Your Partners in Human Resource"
+- **AND** a lead paragraph is displayed below the heading
+- **AND** a "Get Started" primary button is visible
+- **AND** a "Learn More" text link is displayed next to the button
+- **AND** all text is white
+- **AND** the hero minimum height is 800px
 
 ### Overlap Features
 
-```gherkin
 Feature: Overlap Feature Cards
 
-  Scenario: Three feature cards overlap the hero bottom
-    Given the hero section is rendered
-    When the user scrolls down slightly
-    Then three feature cards are visible overlapping the hero
-    And each card has an icon, a title, a description paragraph, and a "Learn More" link
-    And the cards are "Corporate Collaboration", "Strategic Partners", "Infinite Posibilities"
-    And the cards have a white background with box-shadow 0 15px 30px 0 rgba(0,0,0,0.1)
-    And cards are stacked vertically on mobile, side-by-side on desktop (3 columns)
-```
+#### Scenario: Three feature cards overlap the hero bottom
+
+- **GIVEN** the hero section is rendered
+- **WHEN** the user scrolls down slightly
+- **THEN** three feature cards are visible overlapping the hero
+- **AND** each card has an icon, a title, a description paragraph, and a "Learn More" link
+- **AND** the cards are "Corporate Collaboration", "Strategic Partners", "Infinite Posibilities"
+- **AND** the cards have a white background with box-shadow 0 15px 30px 0 rgba(0,0,0,0.1)
+- **AND** cards are stacked vertically on mobile, side-by-side on desktop (3 columns)
 
 ### Our Agency + Why Us (Two-Column)
 
-```gherkin
 Feature: Agency and FAQ Section
 
-  Scenario: Two-column layout with carousel and accordion
-    Given the user scrolls to the Agency section
-    Then the left column shows an "Our Agency" heading with an image carousel (3 slides)
-    And the right column shows a "Why Us?" heading with 4 accordion items
-    And accordion items are: "Provident alias", "Debitis ad similique tempore",
-      "Lorem ipsum dolor sit amet", "Modi natus suscipit"
-    And clicking an accordion item expands its body text
-    And only one accordion item is expanded at a time
-    And the active accordion heading is colored #0389FF
-```
+#### Scenario: Two-column layout with carousel and accordion
+
+- **GIVEN** the user scrolls to the Agency section
+- **THEN** the left column shows an "Our Agency" heading with an image carousel (3 slides)
+- **AND** the right column shows a "Why Us?" heading with 4 accordion items
+- **AND** accordion items are: "Provident alias", "Debitis ad similique tempore",
+"Lorem ipsum dolor sit amet", "Modi natus suscipit"
+- **AND** clicking an accordion item expands its body text
+- **AND** only one accordion item is expanded at a time
+- **AND** the active accordion heading is colored #0389FF
 
 ### Counter Section
 
-```gherkin
 Feature: Counter Stats
 
-  Scenario: Three animated counters on a light background
-    Given the user scrolls to the counter section
-    Then a #f8f9fa light background is displayed
-    And three counters are shown: "Number of Clients" (99399),
-      "Number of Personnel" (199), "Years Of Experience" (24)
-    And counter numbers are displayed in #0389FF at 50px
-    And labels are uppercase with reduced opacity
-    And numbers animate from 0 to their target on scroll into view
-```
+#### Scenario: Three animated counters on a light background
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a #f8f9fa light background is displayed
+- **AND** three counters are shown: "Number of Clients" (99399),
+"Number of Personnel" (199), "Years Of Experience" (24)
+- **AND** counter numbers are displayed in #0389FF at 50px
+- **AND** labels are uppercase with reduced opacity
+- **AND** numbers animate from 0 to their target on scroll into view
 
 ### Leadership / Team
 
-```gherkin
 Feature: Leadership Team
 
-  Scenario: Three team member cards with hover reveal
-    Given the user scrolls to the team section
-    Then three staff cards are displayed in a 3-column grid
-    And each card has a background image
-    And each card shows name, title, and a bio paragraph on hover
-    And cards have a default height of 400px
-    And the card expands on hover to reveal the full bio text
-    And the section heading is "The Leadership"
-```
+#### Scenario: Three team member cards with hover reveal
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** three staff cards are displayed in a 3-column grid
+- **AND** each card has a background image
+- **AND** each card shows name, title, and a bio paragraph on hover
+- **AND** cards have a default height of 400px
+- **AND** the card expands on hover to reveal the full bio text
+- **AND** the section heading is "The Leadership"
 
 ### Testimonials
 
-```gherkin
 Feature: Happy Customers Testimonials
 
-  Scenario: Testimonial carousel
-    Given the user scrolls to the testimonials section
-    Then the heading reads "Happy Customers"
-    And a quote mark character is displayed above the carousel
-    And three testimonial slides are available, each with a blockquote and cite
-    And quotes are centered, 18px, black text, line-height 2
-```
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the heading reads "Happy Customers"
+- **AND** a quote mark character is displayed above the carousel
+- **AND** three testimonial slides are available, each with a blockquote and cite
+- **AND** quotes are centered, 18px, black text, line-height 2
 
 ### Services Grid
 
-```gherkin
 Feature: Our Services
 
-  Scenario: Six service cards in a 3x2 grid
-    Given the user scrolls to the services section
-    Then a #f8f9fa light background is displayed
-    And the heading reads "Our Services"
-    And six service cards are shown in a 3-column grid (2 rows)
-    And each card has an icon, a title, and a description
-    And a "More Features" button with black background is centered below the grid
-```
+#### Scenario: Six service cards in a 3x2 grid
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a #f8f9fa light background is displayed
+- **AND** the heading reads "Our Services"
+- **AND** six service cards are shown in a 3-column grid (2 rows)
+- **AND** each card has an icon, a title, and a description
+- **AND** a "More Features" button with black background is centered below the grid
 
 ### Blog Thumbnails
 
-```gherkin
 Feature: Blog Thumbnails
 
-  Scenario: Four blog posts in asymmetric grid
-    Given the user scrolls to the blog section
-    Then the heading reads "Our Blog" with a subtitle paragraph
-    And four blog thumbnail cards are displayed in 2 rows
-    And the first row has 1/3 + 2/3 width split
-    And the second row has 2/3 + 1/3 width split (reversed)
-    And each card has a background image, a title, and post metadata (date + author)
-    And hovering reveals the card content with a dark overlay
-    And each card is 500px tall
-```
+#### Scenario: Four blog posts in asymmetric grid
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading reads "Our Blog" with a subtitle paragraph
+- **AND** four blog thumbnail cards are displayed in 2 rows
+- **AND** the first row has 1/3 + 2/3 width split
+- **AND** the second row has 2/3 + 1/3 width split (reversed)
+- **AND** each card has a background image, a title, and post metadata (date + author)
+- **AND** hovering reveals the card content with a dark overlay
+- **AND** each card is 500px tall
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Multi-column footer with about, links, and social
-    Given the user scrolls to the footer
-    Then a #f8f9fa light background footer is displayed
-    And the left column shows "About" heading with a description paragraph
-    And three link columns are shown: "Learn More", "Support", "About Us"
-    And a "Connect With Us" column shows social media icons
-    And the footer links to "Component Dock" (https://www.componentdock.com/)
-```
+#### Scenario: Multi-column footer with about, links, and social
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a #f8f9fa light background footer is displayed
+- **AND** the left column shows "About" heading with a description paragraph
+- **AND** three link columns are shown: "Learn More", "Support", "About Us"
+- **AND** a "Connect With Us" column shows social media icons
+- **AND** the footer links to "Component Dock" (https://www.componentdock.com/)
 
 ## Verification checklist
 

@@ -62,116 +62,126 @@ Recreation of ColorLib **Login Form V11** as a React 19 + Vite + Tailwind 4 + Ty
    - Google social button (right half, Google icon)
    - "Not a member? Sign up now" footer link
 
-## Gherkin requirements
+## Requirements
 
 ### Background
-```gherkin
-Given the user navigates to the logindash page
-Then the page displays a full-viewport gradient background (blue to pink)
-And the gradient is overlaid with a decorative image
-```
+
+#### Scenario: Background
+
+- **GIVEN** the user navigates to the logindash page
+- **THEN** the page displays a full-viewport gradient background (blue to pink)
+- **AND** the gradient is overlaid with a decorative image
 
 ### Form card
-```gherkin
-Given the page is loaded
-Then a white card (450px wide, border-radius 3px) is centered on the page
-And the card contains all login form elements
-```
+
+#### Scenario: Form card
+
+- **GIVEN** the page is loaded
+- **THEN** a white card (450px wide, border-radius 3px) is centered on the page
+- **AND** the card contains all login form elements
 
 ### Title
-```gherkin
-Given the form card is visible
-Then the title "LOGIN" is displayed at the top of the form
-And the title uses Raleway Black font at 30px, uppercase
-And the title text color is #333333
-```
+
+#### Scenario: Title
+
+- **GIVEN** the form card is visible
+- **THEN** the title "LOGIN" is displayed at the top of the form
+- **AND** the title uses Raleway Black font at 30px, uppercase
+- **AND** the title text color is #333333
 
 ### Email input
-```gherkin
-Given the form is displayed
-Then the email input has a left-aligned envelope icon
-And the placeholder text is "Email"
-And the input background is #e6e6e6
-And the input height is 62px with border-radius 3px
-When the user focuses the email input
-Then a pink glow animation appears around the input
-And the icon color changes to #d33f8d
-```
+
+#### Scenario: Email input
+
+- **GIVEN** the form is displayed
+- **THEN** the email input has a left-aligned envelope icon
+- **AND** the placeholder text is "Email"
+- **AND** the input background is #e6e6e6
+- **AND** the input height is 62px with border-radius 3px
+- **WHEN** the user focuses the email input
+- **THEN** a pink glow animation appears around the input
+- **AND** the icon color changes to #d33f8d
 
 ### Password input
-```gherkin
-Given the form is displayed
-Then the password input has a left-aligned lock icon
-And the placeholder text is "Password"
-And the input background is #e6e6e6
-And the input height is 62px with border-radius 3px
-When the user focuses the password input
-Then a pink glow animation appears around the input
-And the icon color changes to #d33f8d
-```
+
+#### Scenario: Password input
+
+- **GIVEN** the form is displayed
+- **THEN** the password input has a left-aligned lock icon
+- **AND** the placeholder text is "Password"
+- **AND** the input background is #e6e6e6
+- **AND** the input height is 62px with border-radius 3px
+- **WHEN** the user focuses the password input
+- **THEN** a pink glow animation appears around the input
+- **AND** the icon color changes to #d33f8d
 
 ### Remember me checkbox
-```gherkin
-Given the form is displayed
-Then a "Remember me" checkbox is shown below the password field
-And the checkbox has a custom pink border (#d33f8d) when unchecked
-When the checkbox is checked
-Then the checkmark appears in pink (#d33f8d)
-```
+
+#### Scenario: Remember me checkbox
+
+- **GIVEN** the form is displayed
+- **THEN** a "Remember me" checkbox is shown below the password field
+- **AND** the checkbox has a custom pink border (#d33f8d) when unchecked
+- **WHEN** the checkbox is checked
+- **THEN** the checkmark appears in pink (#d33f8d)
 
 ### Login button
-```gherkin
-Given the form is displayed
-Then the "LOGIN" button spans the full width of the form card
-And the button text is uppercase, Raleway Bold, 16px, white
-And the button background is #d33f8d
-And the button height is 62px with border-radius 3px
-When the user hovers the login button
-Then the button background changes to #333333
-```
+
+#### Scenario: Login button
+
+- **GIVEN** the form is displayed
+- **THEN** the "LOGIN" button spans the full width of the form card
+- **AND** the button text is uppercase, Raleway Bold, 16px, white
+- **AND** the button background is #d33f8d
+- **AND** the button height is 62px with border-radius 3px
+- **WHEN** the user hovers the login button
+- **THEN** the button background changes to #333333
 
 ### Social login section
-```gherkin
-Given the form is displayed
-Then "Or login with" text appears below the login button
-And a Facebook button appears on the left half (50% width)
-And a Google button appears on the right half (50% width)
-And both buttons are 40px height with border-radius 3px
-And both buttons have a 1px solid #e6e6e6 border
-And the Facebook button text/icon color is #3b5998
-And the Google button text color is #555555
-When the user hovers either social button
-Then the border color changes to #d33f8d
-```
+
+#### Scenario: Social login section
+
+- **GIVEN** the form is displayed
+- **THEN** "Or login with" text appears below the login button
+- **AND** a Facebook button appears on the left half (50% width)
+- **AND** a Google button appears on the right half (50% width)
+- **AND** both buttons are 40px height with border-radius 3px
+- **AND** both buttons have a 1px solid #e6e6e6 border
+- **AND** the Facebook button text/icon color is #3b5998
+- **AND** the Google button text color is #555555
+- **WHEN** the user hovers either social button
+- **THEN** the border color changes to #d33f8d
 
 ### Sign up link
-```gherkin
-Given the form is displayed
-Then "Not a member?" text appears at the bottom of the form
-And "Sign up now" link is displayed next to it
-And the link has a bottom border (#999999)
-When the user hovers the "Sign up now" link
-Then the border color changes to #d33f8d
-```
+
+#### Scenario: Sign up link
+
+- **GIVEN** the form is displayed
+- **THEN** "Not a member?" text appears at the bottom of the form
+- **AND** "Sign up now" link is displayed next to it
+- **AND** the link has a bottom border (#999999)
+- **WHEN** the user hovers the "Sign up now" link
+- **THEN** the border color changes to #d33f8d
 
 ### Validation
-```gherkin
-Given the user submits the form with an invalid email
-Then a validation tooltip appears near the email input
-And the tooltip has a red (#c80000) border
-And the tooltip text says "Valid email is required: ex@abc.xyz"
 
-Given the user submits the form without a password
-Then a validation tooltip appears near the password input
-And the tooltip text says "Password is required"
-```
+#### Scenario: Validation
+
+- **GIVEN** the user submits the form with an invalid email
+- **THEN** a validation tooltip appears near the email input
+- **AND** the tooltip has a red (#c80000) border
+- **AND** the tooltip text says "Valid email is required: ex@abc.xyz"
+- **GIVEN** the user submits the form without a password
+- **THEN** a validation tooltip appears near the password input
+- **AND** the tooltip text says "Password is required"
 
 ### Responsive behavior
-```gherkin
-Given the viewport width is less than 480px
-Then the form card adjusts width to fit within 15px padding on each side
-And all elements remain centered and accessible
-```
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the viewport width is less than 480px
+- **THEN** the form card adjusts width to fit within 15px padding on each side
+- **AND** all elements remain centered and accessible
 
 ## Verification checklist
 

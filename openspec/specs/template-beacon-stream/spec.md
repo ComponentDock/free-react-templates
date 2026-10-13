@@ -22,39 +22,47 @@
   - Border Radius: `rounded-xl` (12px) for cards, `rounded-full` for navigation buttons/pills.
   - Shadows: `shadow-lg`, `shadow-md` for carousel cards and floating controls.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Hero Header & Overview
 
+#### Scenario: Hero Header & Overview
+
 - The page must feature a clean header displaying the carousel showcase title, subtitle, and theme navigation.
 - Scenario: User loads Beacon Stream and views header info
-  - Given the user navigates to the Beacon Stream showcase
-  - When the page renders
-  - Then the header displays "Beacon Stream" with an intuitive subtitle and quick navigation links.
+- **GIVEN** the user navigates to the Beacon Stream showcase
+- **WHEN** the page renders
+- **THEN** the header displays "Beacon Stream" with an intuitive subtitle and quick navigation links
 
 ### Requirement 2: Interactive Card Carousel
 
+#### Scenario: Interactive Card Carousel
+
 - The template must display a responsive, smooth-scrolling card carousel featuring rich media, titles, descriptions, and action links.
 - Scenario: User interacts with the carousel navigation
-  - Given the carousel is displayed with multiple slide cards
-  - When the user clicks the "Next" or "Previous" navigation buttons (or drags/swipes)
-  - Then the active slide updates smoothly with transition effects and highlights the corresponding pagination dot.
+- **GIVEN** the carousel is displayed with multiple slide cards
+- **WHEN** the user clicks the "Next" or "Previous" navigation buttons (or drags/swipes)
+- **THEN** the active slide updates smoothly with transition effects and highlights the corresponding pagination dot
 
 ### Requirement 3: Detailed Slide Cards & CTAs
 
+#### Scenario: Detailed Slide Cards & CTAs
+
 - Each slide card must contain high-quality preview imagery, category tags, headline text, metadata (author/date), and a call-to-action button.
 - Scenario: User clicks a slide action button
-  - Given a slide card is visible in the active viewport
-  - When the user clicks the "Explore" or "View Details" button
-  - Then an interactive modal or feedback toast triggers displaying full item details.
+- **GIVEN** a slide card is visible in the active viewport
+- **WHEN** the user clicks the "Explore" or "View Details" button
+- **THEN** an interactive modal or feedback toast triggers displaying full item details
 
 ### Requirement 4: Footer with Component Dock Link
 
+#### Scenario: Footer with Component Dock Link
+
 - The footer must contain copyright notice, social links, and a mandatory link to `https://www.componentdock.com/`.
 - Scenario: User views the page footer
-  - Given the user scrolls to the bottom of the page
-  - When the footer renders
-  - Then it displays copyright information and a prominent link to Component Dock (`https://www.componentdock.com/`).
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it displays copyright information and a prominent link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

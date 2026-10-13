@@ -75,64 +75,75 @@ Extracted from `https://preview.colorlib.com/theme/plataforma/css/style.css`:
 10. **Newsletter** — Parallax bg. "Subscribe to our Newsletter" heading, description, email input + subscribe button.
 11. **Footer** — Dark bg. Logo "Plataforma.", description, social icons, Useful Links column, Privacy column, "Have a Questions?" column with address/phone/email.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Tribune template behaviour
+
 Feature: Tribune conference landing page
 
-  Background:
-    Given the app is loaded at the root URL
+Background:
+- **GIVEN** the app is loaded at the root URL
 
-  Scenario: Navbar renders all navigation links
-    Then I should see a "Tribune" brand link
-    And I should see "Home", "About", "Speakers", "Schedule", "Blog", "Contact" links
-    And I should see a "Buy ticket" link
+#### Scenario: Navbar renders all navigation links
 
-  Scenario: Hero section displays event info and registration form
-    Then I should see a "Business Leaders" heading
-    And I should see a "Conference" subtitle
-    And I should see a registration form with name, email fields
-    And I should see a countdown timer
+- **THEN** I should see a "Tribune" brand link
+- **AND** I should see "Home", "About", "Speakers", "Schedule", "Blog", "Contact" links
+- **AND** I should see a "Buy ticket" link
 
-  Scenario: Services strip shows 4 service categories
-    Then I should see a blue services section
-    And I should see "Venue", "Transport", "Hotel", "Restaurant" headings
+#### Scenario: Hero section displays event info and registration form
 
-  Scenario: About section renders content
-    Then I should see a "What is all about us?" heading
-    And I should see descriptive paragraphs
-    And I should see a "Join now" button
+- **THEN** I should see a "Business Leaders" heading
+- **AND** I should see a "Conference" subtitle
+- **AND** I should see a registration form with name, email fields
+- **AND** I should see a countdown timer
 
-  Scenario: Schedule section has tabbed days
-    Then I should see a "Conference Schedule" heading
-    And I should see tab buttons for "First Day", "Second Day", "Third Day"
-    And clicking a tab should show that day's sessions
+#### Scenario: Services strip shows 4 service categories
 
-  Scenario: Gallery section shows images
-    Then I should see a "Conference Gallery" heading
-    And I should see 4 gallery image links
+- **THEN** I should see a blue services section
+- **AND** I should see "Venue", "Transport", "Hotel", "Restaurant" headings
 
-  Scenario: Testimonials section renders
-    Then I should see a "Happy Clients" heading
+#### Scenario: About section renders content
 
-  Scenario: Pricing section shows ticket tiers
-    Then I should see a "Conference Ticket Pricing" heading
-    And I should see "Personal", "Small Team", "Family Pack" cards
-    And each card should have a "Buy Ticket" button
+- **THEN** I should see a "What is all about us?" heading
+- **AND** I should see descriptive paragraphs
+- **AND** I should see a "Join now" button
 
-  Scenario: Speakers section shows speaker cards
-    Then I should see a "Conference Speakers" heading
-    And I should see 4 speaker cards with names and social links
+#### Scenario: Schedule section has tabbed days
 
-  Scenario: Newsletter section accepts email signup
-    Then I should see a "Subscribe to our Newsletter" heading
-    And I should see an email input and subscribe button
+- **THEN** I should see a "Conference Schedule" heading
+- **AND** I should see tab buttons for "First Day", "Second Day", "Third Day"
+- **AND** clicking a tab should show that day's sessions
 
-  Scenario: Footer contains navigation and branding
-    Then I should see footer navigation links
-    And I should see social media icons
-    And I should see a link to componentdock.com
-```
+#### Scenario: Gallery section shows images
+
+- **THEN** I should see a "Conference Gallery" heading
+- **AND** I should see 4 gallery image links
+
+#### Scenario: Testimonials section renders
+
+- **THEN** I should see a "Happy Clients" heading
+
+#### Scenario: Pricing section shows ticket tiers
+
+- **THEN** I should see a "Conference Ticket Pricing" heading
+- **AND** I should see "Personal", "Small Team", "Family Pack" cards
+- **AND** each card should have a "Buy Ticket" button
+
+#### Scenario: Speakers section shows speaker cards
+
+- **THEN** I should see a "Conference Speakers" heading
+- **AND** I should see 4 speaker cards with names and social links
+
+#### Scenario: Newsletter section accepts email signup
+
+- **THEN** I should see a "Subscribe to our Newsletter" heading
+- **AND** I should see an email input and subscribe button
+
+#### Scenario: Footer contains navigation and branding
+
+- **THEN** I should see footer navigation links
+- **AND** I should see social media icons
+- **AND** I should see a link to componentdock.com
 
 ## Verification Checklist
 

@@ -57,85 +57,97 @@ The Caviar template is a dark, moody, premium restaurant landing page:
 7. **Reservation** — Split layout: form area (left, ~50%) with date, time, persons, name, message inputs + "Reserve Your Desk" button; image area (right, ~50%+)
 8. **Footer** — Dark (#333) bg, centered brand name, copyright text with heart icon
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: FineDine Restaurant Template
 
 #### Scenario: Header renders with navigation links
-- GIVEN the user visits the FineDine page
-- THEN the header displays the brand name "FineDine"
-- AND navigation links are present: Home, About Us, Menu, Awards, Testimonials, Reservation, Contact
-- AND a search icon is visible in the navigation
+
+- **GIVEN** the user visits the FineDine page
+- **THEN** the header displays the brand name "FineDine"
+- **AND** navigation links are present: Home, About Us, Menu, Awards, Testimonials, Reservation, Contact
+- **AND** a search icon is visible in the navigation
 
 #### Scenario: Header becomes sticky on scroll
-- GIVEN the user scrolls down past the hero section
-- THEN the header background transitions to a semi-transparent dark overlay
-- AND navigation text remains white/visible
+
+- **GIVEN** the user scrolls down past the hero section
+- **THEN** the header background transitions to a semi-transparent dark overlay
+- **AND** navigation text remains white/visible
 
 #### Scenario: Hero section displays with carousel
-- GIVEN the hero section is visible
-- THEN a full-width background image is displayed with a dark overlay
-- AND a heading and descriptive paragraph are shown in white text
-- AND a "Reservation" CTA button is present
-- AND circular thumbnail navigation controls are visible
+
+- **GIVEN** the hero section is visible
+- **THEN** a full-width background image is displayed with a dark overlay
+- **AND** a heading and descriptive paragraph are shown in white text
+- **AND** a "Reservation" CTA button is present
+- **AND** circular thumbnail navigation controls are visible
 
 #### Scenario: Hero CTA button has correct styling
-- GIVEN the hero CTA button is rendered
-- THEN the button has a white background with a thin gray border
-- AND no border-radius (sharp corners)
-- AND a small red circle element is present inside the button
-- AND on hover the text color changes to red (#ff0000)
+
+- **GIVEN** the hero CTA button is rendered
+- **THEN** the button has a white background with a thin gray border
+- **AND** no border-radius (sharp corners)
+- **AND** a small red circle element is present inside the button
+- **AND** on hover the text color changes to red (#ff0000)
 
 #### Scenario: About Us section displays two content blocks
-- GIVEN the About Us section is visible
-- THEN the first block shows an image on the left and text on the right
-- AND the text block has a "restaurant style" sublabel and descriptive paragraph
-- AND the second block shows text on the left and an image on the right
-- AND the second text block has a "our chef" sublabel
+
+- **GIVEN** the About Us section is visible
+- **THEN** the first block shows an image on the left and text on the right
+- **AND** the text block has a "restaurant style" sublabel and descriptive paragraph
+- **AND** the second block shows text on the left and an image on the right
+- **AND** the second text block has a "our chef" sublabel
 
 #### Scenario: Dish Menu section displays a grid of dishes
-- GIVEN the Menu section is visible
-- THEN a "Special" heading is displayed centered
-- AND a "View The Menu" button is present
-- AND a 3-column grid of dish cards is shown
-- AND each dish card has an image, dish name, and price in red
+
+- **GIVEN** the Menu section is visible
+- **THEN** a "Special" heading is displayed centered
+- **AND** a "View The Menu" button is present
+- **AND** a 3-column grid of dish cards is shown
+- **AND** each dish card has an image, dish name, and price in red
 
 #### Scenario: Awards section displays badge images
-- GIVEN the Awards section is visible
-- THEN an "Awards" heading is displayed
-- AND a horizontal row of award badge images is shown
+
+- **GIVEN** the Awards section is visible
+- **THEN** an "Awards" heading is displayed
+- **AND** a horizontal row of award badge images is shown
 
 #### Scenario: Testimonials carousel functions correctly
-- GIVEN the Testimonials section is visible
-- THEN a "Testimonials" heading is displayed centered
-- AND testimonial cards are shown in a carousel/slider
-- AND each card has a circular avatar image, reviewer name, subtitle, and quote text
+
+- **GIVEN** the Testimonials section is visible
+- **THEN** a "Testimonials" heading is displayed centered
+- **AND** testimonial cards are shown in a carousel/slider
+- **AND** each card has a circular avatar image, reviewer name, subtitle, and quote text
 
 #### Scenario: Reservation form is functional
-- GIVEN the Reservation section is visible
-- THEN a form is displayed with inputs for: date, time, persons count, last name, and message
-- AND a "Reserve Your Desk" button is present
-- AND form inputs have bottom-border-only styling (no top/side borders)
-- AND on focus the input text becomes darker
+
+- **GIVEN** the Reservation section is visible
+- **THEN** a form is displayed with inputs for: date, time, persons count, last name, and message
+- **AND** a "Reserve Your Desk" button is present
+- **AND** form inputs have bottom-border-only styling (no top/side borders)
+- **AND** on focus the input text becomes darker
 
 #### Scenario: Reservation section has split layout
-- GIVEN the Reservation section is visible
-- THEN the form occupies approximately the left half of the section
-- AND a food image occupies approximately the right half
+
+- **GIVEN** the Reservation section is visible
+- **THEN** the form occupies approximately the left half of the section
+- **AND** a food image occupies approximately the right half
 
 #### Scenario: Footer displays correctly
-- GIVEN the page footer is visible
-- THEN the background color is dark (#333333)
-- AND the brand name "FineDine" is centered
-- AND a copyright notice is displayed with a heart icon
-- AND a link to Component Dock is present
+
+- **GIVEN** the page footer is visible
+- **THEN** the background color is dark (#333333)
+- **AND** the brand name "FineDine" is centered
+- **AND** a copyright notice is displayed with a heart icon
+- **AND** a link to Component Dock is present
 
 #### Scenario: Responsive layout adapts to mobile
-- GIVEN the user views the page on a mobile viewport
-- THEN the navigation collapses into a hamburger menu
-- AND the About Us blocks stack vertically
-- AND the dish menu grid becomes single-column
-- AND the reservation section stacks vertically (form above image)
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the navigation collapses into a hamburger menu
+- **AND** the About Us blocks stack vertically
+- **AND** the dish menu grid becomes single-column
+- **AND** the reservation section stacks vertically (form above image)
 
 ## Verification Checklist
 

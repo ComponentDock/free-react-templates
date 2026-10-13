@@ -91,7 +91,7 @@ Extracted from the preview stylesheet (`css/style.css`):
 | `--input-bg` | `rgba(0,0,0,0.05)` | Input field background |
 | `--submit-width` | `130px` | Submit button width |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: PopSlide Newsletter Modal
 
@@ -99,68 +99,78 @@ Extracted from the preview stylesheet (`css/style.css`):
   I want to subscribe to a newsletter via a modal popup,
   So that I can receive updates.
 
-  Scenario: Page loads with launch button visible
-    Given the page has loaded
-    When I view the page
-    Then I see a heading "Newsletter Modal"
-    And I see a "Subscribe Now" button
+#### Scenario: Page loads with launch button visible
 
-  Scenario: Modal opens on button click
-    Given the page has loaded
-    When I click the "Subscribe Now" button
-    Then a modal dialog appears centered on the screen
-    And the modal has a gradient header (purple to blue)
-    And the modal has a circular email icon
-    And the modal has a "Newsletter" heading
-    And the modal has a "Subscribe to our newsletter" subheading
-    And the modal has an email input field
-    And the modal has a "Subscribe" submit button
+- **GIVEN** the page has loaded
+- **WHEN** I view the page
+- **THEN** I see a heading "Newsletter Modal"
+- **AND** I see a "Subscribe Now" button
 
-  Scenario: Modal closes on close button click
-    Given the modal is open
-    When I click the close button
-    Then the modal disappears
+#### Scenario: Modal opens on button click
 
-  Scenario: Modal closes on overlay click
-    Given the modal is open
-    When I click outside the modal dialog
-    Then the modal disappears
+- **GIVEN** the page has loaded
+- **WHEN** I click the "Subscribe Now" button
+- **THEN** a modal dialog appears centered on the screen
+- **AND** the modal has a gradient header (purple to blue)
+- **AND** the modal has a circular email icon
+- **AND** the modal has a "Newsletter" heading
+- **AND** the modal has a "Subscribe to our newsletter" subheading
+- **AND** the modal has an email input field
+- **AND** the modal has a "Subscribe" submit button
 
-  Scenario: Modal closes on Escape key
-    Given the modal is open
-    When I press the Escape key
-    Then the modal disappears
+#### Scenario: Modal closes on close button click
 
-  Scenario: Email input accepts text
-    Given the modal is open
-    When I type "user@example.com" in the email input
-    Then the input shows "user@example.com"
+- **GIVEN** the modal is open
+- **WHEN** I click the close button
+- **THEN** the modal disappears
 
-  Scenario: Subscribe form submission
-    Given the modal is open
-    And I have entered a valid email address
-    When I click the "Subscribe" button
-    Then the form submits (prevent default)
+#### Scenario: Modal closes on overlay click
 
-  Scenario: Responsive layout on mobile
-    Given the viewport is 375px wide
-    When I view the page
-    Then the launch button is centered
-    And the modal is full-width with padding
+- **GIVEN** the modal is open
+- **WHEN** I click outside the modal dialog
+- **THEN** the modal disappears
 
-  Scenario: Modal header gradient visual
-    Given the modal is open
-    When I inspect the modal header
-    Then I see a purple-to-blue gradient overlay
-    And the gradient is at 30% opacity
-    And the header height is approximately 230px
+#### Scenario: Modal closes on Escape key
 
-  Scenario: Body overlaps header
-    Given the modal is open
-    When I inspect the modal body
-    Then the body overlaps the header with negative top margin
-    And the body has a white background
-    And the body has rounded corners at the top
+- **GIVEN** the modal is open
+- **WHEN** I press the Escape key
+- **THEN** the modal disappears
+
+#### Scenario: Email input accepts text
+
+- **GIVEN** the modal is open
+- **WHEN** I type "user@example.com" in the email input
+- **THEN** the input shows "user@example.com"
+
+#### Scenario: Subscribe form submission
+
+- **GIVEN** the modal is open
+- **AND** I have entered a valid email address
+- **WHEN** I click the "Subscribe" button
+- **THEN** the form submits (prevent default)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport is 375px wide
+- **WHEN** I view the page
+- **THEN** the launch button is centered
+- **AND** the modal is full-width with padding
+
+#### Scenario: Modal header gradient visual
+
+- **GIVEN** the modal is open
+- **WHEN** I inspect the modal header
+- **THEN** I see a purple-to-blue gradient overlay
+- **AND** the gradient is at 30% opacity
+- **AND** the header height is approximately 230px
+
+#### Scenario: Body overlaps header
+
+- **GIVEN** the modal is open
+- **WHEN** I inspect the modal body
+- **THEN** the body overlaps the header with negative top margin
+- **AND** the body has a white background
+- **AND** the body has rounded corners at the top
 
 ## Verification checklist
 

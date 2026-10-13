@@ -49,145 +49,158 @@ Order extracted from `https://preview.colorlib.com/theme/theriver/`:
 8. **Blog** — Horizontal blog post slider (3 slides), each with background image, date link, and post title link overlay
 9. **Footer** — Dark background (`#0f0e24`), centered logo "The River / since 1945", 4-column row: Address (3-line list), Reservations (phone/fax/email), Newsletter (email input + subscribe button), Certificates (2 images); copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Seascape Header
-  Scenario: Logo renders with white border
-    Given the page loads
-    Then the logo "Seascape" is displayed inside a white-bordered box
 
-  Scenario: Navigation links are visible
-    Given the page loads
-    Then the nav shows: Home, About us, Rooms, Blog, Contact
+#### Scenario: Logo renders with white border
 
-  Scenario: Book Online button is visible
-    Given the page loads
-    Then a "Book Online" button with coral background is displayed in the header
+- **GIVEN** the page loads
+- **THEN** the logo "Seascape" is displayed inside a white-bordered box
 
-  Scenario: Phone number widget is visible
-    Given the page loads
-    Then a phone icon and number are displayed next to the Book Online button
+#### Scenario: Navigation links are visible
 
-  Scenario: Header becomes opaque on scroll
-    Given the user scrolls down
-    Then the header background transitions from transparent to a dark semi-transparent overlay
-```
+- **GIVEN** the page loads
+- **THEN** the nav shows: Home, About us, Rooms, Blog, Contact
+
+#### Scenario: Book Online button is visible
+
+- **GIVEN** the page loads
+- **THEN** a "Book Online" button with coral background is displayed in the header
+
+#### Scenario: Phone number widget is visible
+
+- **GIVEN** the page loads
+- **THEN** a phone icon and number are displayed next to the Book Online button
+
+#### Scenario: Header becomes opaque on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the header background transitions from transparent to a dark semi-transparent overlay
 
 ### Hero / Home Slider
 
-```gherkin
 Feature: Seascape Hero
-  Scenario: Hero displays headline
-    Given the hero section is visible
-    Then the headline "A Luxury Stay" is centered over the background image
 
-  Scenario: Booking form has correct inputs
-    Given the hero section is visible
-    Then inputs for "Check in", "Check out", "Children", and "Room" are present
+#### Scenario: Hero displays headline
 
-  Scenario: Book Now button exists
-    Given the hero section is visible
-    Then a "Book Now" button is displayed with coral background
+- **GIVEN** the hero section is visible
+- **THEN** the headline "A Luxury Stay" is centered over the background image
 
-  Scenario: Slide dots are numbered
-    Given the hero slider is visible
-    Then numbered dots "01.", "02.", "03." are shown at the bottom left
-```
+#### Scenario: Booking form has correct inputs
+
+- **GIVEN** the hero section is visible
+- **THEN** inputs for "Check in", "Check out", "Children", and "Room" are present
+
+#### Scenario: Book Now button exists
+
+- **GIVEN** the hero section is visible
+- **THEN** a "Book Now" button is displayed with coral background
+
+#### Scenario: Slide dots are numbered
+
+- **GIVEN** the hero slider is visible
+- **THEN** numbered dots "01.", "02.", "03." are shown at the bottom left
 
 ### Features
 
-```gherkin
 Feature: Seascape Features
-  Scenario: Three feature cards are shown
-    Given the features section is visible
-    Then 3 icon boxes are displayed in a row
-    And each has an SVG icon, a heading, and a description paragraph
 
-  Scenario: Feature titles match design
-    Given the features section is visible
-    Then the titles are "Fabulous Resort", "Infinity Pool", "Luxury Rooms"
-```
+#### Scenario: Three feature cards are shown
+
+- **GIVEN** the features section is visible
+- **THEN** 3 icon boxes are displayed in a row
+- **AND** each has an SVG icon, a heading, and a description paragraph
+
+#### Scenario: Feature titles match design
+
+- **GIVEN** the features section is visible
+- **THEN** the titles are "Fabulous Resort", "Infinity Pool", "Luxury Rooms"
 
 ### Gallery
 
-```gherkin
 Feature: Seascape Gallery
-  Scenario: Gallery displays image slides
-    Given the gallery section is visible
-    Then at least 4 image slides are rendered in a horizontal carousel
-    And each slide is a full-width background image
-```
+
+#### Scenario: Gallery displays image slides
+
+- **GIVEN** the gallery section is visible
+- **THEN** at least 4 image slides are rendered in a horizontal carousel
+- **AND** each slide is a full-width background image
 
 ### About
 
-```gherkin
 Feature: Seascape About
-  Scenario: About section has text and images
-    Given the about section is visible
-    Then a heading and paragraph are on the left
-    And 3 inline images are on the right
 
-  Scenario: About heading content
-    Given the about section is visible
-    Then the heading contains "10 years of excellence"
-```
+#### Scenario: About section has text and images
+
+- **GIVEN** the about section is visible
+- **THEN** a heading and paragraph are on the left
+- **AND** 3 inline images are on the right
+
+#### Scenario: About heading content
+
+- **GIVEN** the about section is visible
+- **THEN** the heading contains "10 years of excellence"
 
 ### Testimonials
 
-```gherkin
 Feature: Seascape Testimonials
-  Scenario: Testimonials show on parallax background
-    Given the testimonials section is visible
-    Then a parallax background image with dark overlay is displayed
 
-  Scenario: Testimonial cards have ratings and authors
-    Given the testimonials slider is visible
-    Then each slide shows star ratings, a title, review text, a user avatar, and author name with location
-```
+#### Scenario: Testimonials show on parallax background
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a parallax background image with dark overlay is displayed
+
+#### Scenario: Testimonial cards have ratings and authors
+
+- **GIVEN** the testimonials slider is visible
+- **THEN** each slide shows star ratings, a title, review text, a user avatar, and author name with location
 
 ### Booking
 
-```gherkin
 Feature: Seascape Booking
-  Scenario: Booking section shows room cards
-    Given the booking section is visible
-    Then 3 room cards are displayed: Family Room, Deluxe Room, Single Room
-    And each card has a background image, price badge ($120/Night), and a link
 
-  Scenario: Booking section has heading
-    Given the booking section is visible
-    Then the heading "Book a room" is displayed
-```
+#### Scenario: Booking section shows room cards
+
+- **GIVEN** the booking section is visible
+- **THEN** 3 room cards are displayed: Family Room, Deluxe Room, Single Room
+- **AND** each card has a background image, price badge ($120/Night), and a link
+
+#### Scenario: Booking section has heading
+
+- **GIVEN** the booking section is visible
+- **THEN** the heading "Book a room" is displayed
 
 ### Blog
 
-```gherkin
 Feature: Seascape Blog
-  Scenario: Blog slider shows posts
-    Given the blog section is visible
-    Then at least 3 blog slides are shown with background images, dates, and post titles
-```
+
+#### Scenario: Blog slider shows posts
+
+- **GIVEN** the blog section is visible
+- **THEN** at least 3 blog slides are shown with background images, dates, and post titles
 
 ### Footer
 
-```gherkin
 Feature: Seascape Footer
-  Scenario: Footer has logo and 4 columns
-    Given the footer is visible
-    Then a centered logo/name is displayed
-    And 4 columns are shown: Address, Reservations, Newsletter, Certificates
 
-  Scenario: Newsletter form has email input and button
-    Given the footer newsletter column is visible
-    Then an email input and "Subscribe" button are present
+#### Scenario: Footer has logo and 4 columns
 
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then a link to "https://www.componentdock.com/" is present
-```
+- **GIVEN** the footer is visible
+- **THEN** a centered logo/name is displayed
+- **AND** 4 columns are shown: Address, Reservations, Newsletter, Certificates
+
+#### Scenario: Newsletter form has email input and button
+
+- **GIVEN** the footer newsletter column is visible
+- **THEN** an email input and "Subscribe" button are present
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to "https://www.componentdock.com/" is present
 
 ## Verification Checklist
 

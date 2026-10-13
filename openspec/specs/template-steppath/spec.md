@@ -38,177 +38,188 @@ pixel sampling. The palette is warm and earthy: beige/tan backgrounds with
 teal accents and golden/amber CTAs. This differs from typical modern
 flat UI — the warm tones give it an organic, approachable feel.
 
-## Gherkin requirements
+## Requirements
 
 ### Wizard container
 
-```gherkin
 Feature: Wizard container
 
-  Scenario: Wizard card centered on page
-    Given the page has loaded
-    Then the wizard card is centered horizontally and vertically on the page
+#### Scenario: Wizard card centered on page
 
-  Scenario: Wizard has warm beige background
-    Given the page has loaded
-    Then the page background is warm beige (#e6d2b4)
+- **GIVEN** the page has loaded
+- **THEN** the wizard card is centered horizontally and vertically on the page
 
-  Scenario: Wizard card has rounded corners and shadow
-    Given the page has loaded
-    Then the wizard card has rounded corners (~8px) and a subtle drop shadow
-```
+#### Scenario: Wizard has warm beige background
+
+- **GIVEN** the page has loaded
+- **THEN** the page background is warm beige (#e6d2b4)
+
+#### Scenario: Wizard card has rounded corners and shadow
+
+- **GIVEN** the page has loaded
+- **THEN** the wizard card has rounded corners (~8px) and a subtle drop shadow
 
 ### Step indicator / progress
 
-```gherkin
 Feature: Step progress indicator
 
-  Scenario: Four-step progress bar displayed
-    Given the wizard is loaded
-    Then a progress indicator with 4 steps is displayed at the top of the wizard
+#### Scenario: Four-step progress bar displayed
 
-  Scenario: Step 1 is active on load
-    Given the wizard is loaded
-    Then Step 1 is visually highlighted as the active step
-    And Steps 2, 3, and 4 appear as inactive/pending
+- **GIVEN** the wizard is loaded
+- **THEN** a progress indicator with 4 steps is displayed at the top of the wizard
 
-  Scenario: Completed steps marked
-    Given the user has completed Step 1 and moved to Step 2
-    Then Step 1 is marked as completed (checkmark or filled)
-    And Step 2 is highlighted as the active step
+#### Scenario: Step 1 is active on load
 
-  Scenario: Progress bar updates on navigation
-    Given the user navigates forward
-    Then the progress bar fills proportionally (25%, 50%, 75%, 100%)
-```
+- **GIVEN** the wizard is loaded
+- **THEN** Step 1 is visually highlighted as the active step
+- **AND** Steps 2, 3, and 4 appear as inactive/pending
+
+#### Scenario: Completed steps marked
+
+- **GIVEN** the user has completed Step 1 and moved to Step 2
+- **THEN** Step 1 is marked as completed (checkmark or filled)
+- **AND** Step 2 is highlighted as the active step
+
+#### Scenario: Progress bar updates on navigation
+
+- **GIVEN** the user navigates forward
+- **THEN** the progress bar fills proportionally (25%, 50%, 75%, 100%)
 
 ### Step 1: Personal information
 
-```gherkin
 Feature: Step 1 — Personal information
 
-  Scenario: Step 1 form fields
-    Given the wizard is on Step 1
-    Then fields for Full Name, Email, and Phone Number are displayed
+#### Scenario: Step 1 form fields
 
-  Scenario: Step 1 validation
-    Given the wizard is on Step 1
-    When the user clicks "Next" without filling required fields
-    Then validation errors are displayed for empty required fields
+- **GIVEN** the wizard is on Step 1
+- **THEN** fields for Full Name, Email, and Phone Number are displayed
 
-  Scenario: Step 1 valid submission
-    Given the wizard is on Step 1
-    When the user fills in valid personal information and clicks "Next"
-    Then the wizard transitions to Step 2
-```
+#### Scenario: Step 1 validation
+
+- **GIVEN** the wizard is on Step 1
+- **WHEN** the user clicks "Next" without filling required fields
+- **THEN** validation errors are displayed for empty required fields
+
+#### Scenario: Step 1 valid submission
+
+- **GIVEN** the wizard is on Step 1
+- **WHEN** the user fills in valid personal information and clicks "Next"
+- **THEN** the wizard transitions to Step 2
 
 ### Step 2: Address details
 
-```gherkin
 Feature: Step 2 — Address details
 
-  Scenario: Step 2 form fields
-    Given the wizard is on Step 2
-    Then fields for Street Address, City, State, and Zip Code are displayed
+#### Scenario: Step 2 form fields
 
-  Scenario: Step 2 validation
-    Given the wizard is on Step 2
-    When the user clicks "Next" without filling required fields
-    Then validation errors are displayed
+- **GIVEN** the wizard is on Step 2
+- **THEN** fields for Street Address, City, State, and Zip Code are displayed
 
-  Scenario: Step 2 navigation
-    Given the wizard is on Step 2
-    When the user clicks "Back"
-    Then the wizard returns to Step 1 with previous data preserved
+#### Scenario: Step 2 validation
 
-  Scenario: Step 2 valid submission
-    Given the wizard is on Step 2
-    When the user fills in valid address and clicks "Next"
-    Then the wizard transitions to Step 3
-```
+- **GIVEN** the wizard is on Step 2
+- **WHEN** the user clicks "Next" without filling required fields
+- **THEN** validation errors are displayed
+
+#### Scenario: Step 2 navigation
+
+- **GIVEN** the wizard is on Step 2
+- **WHEN** the user clicks "Back"
+- **THEN** the wizard returns to Step 1 with previous data preserved
+
+#### Scenario: Step 2 valid submission
+
+- **GIVEN** the wizard is on Step 2
+- **WHEN** the user fills in valid address and clicks "Next"
+- **THEN** the wizard transitions to Step 3
 
 ### Step 3: Payment information
 
-```gherkin
 Feature: Step 3 — Payment information
 
-  Scenario: Step 3 form fields
-    Given the wizard is on Step 3
-    Then fields for Card Number, Expiry Date, and CVV are displayed
+#### Scenario: Step 3 form fields
 
-  Scenario: Step 3 validation
-    Given the wizard is on Step 3
-    When the user clicks "Next" without filling required fields
-    Then validation errors are displayed
+- **GIVEN** the wizard is on Step 3
+- **THEN** fields for Card Number, Expiry Date, and CVV are displayed
 
-  Scenario: Step 3 valid submission
-    Given the wizard is on Step 3
-    When the user fills in valid payment info and clicks "Next"
-    Then the wizard transitions to Step 4
-```
+#### Scenario: Step 3 validation
+
+- **GIVEN** the wizard is on Step 3
+- **WHEN** the user clicks "Next" without filling required fields
+- **THEN** validation errors are displayed
+
+#### Scenario: Step 3 valid submission
+
+- **GIVEN** the wizard is on Step 3
+- **WHEN** the user fills in valid payment info and clicks "Next"
+- **THEN** the wizard transitions to Step 4
 
 ### Step 4: Confirmation / Review
 
-```gherkin
 Feature: Step 4 — Order confirmation
 
-  Scenario: Step 4 review
-    Given the wizard is on Step 4
-    Then a summary of all entered information is displayed (personal, address, payment)
+#### Scenario: Step 4 review
 
-  Scenario: Step 4 submit
-    Given the wizard is on Step 4
-    When the user clicks "Submit" or "Place Order"
-    Then a success confirmation message is displayed
+- **GIVEN** the wizard is on Step 4
+- **THEN** a summary of all entered information is displayed (personal, address, payment)
 
-  Scenario: Step 4 edit
-    Given the wizard is on Step 4
-    When the user clicks "Edit" next to a section
-    Then the wizard navigates back to the corresponding step
-```
+#### Scenario: Step 4 submit
+
+- **GIVEN** the wizard is on Step 4
+- **WHEN** the user clicks "Submit" or "Place Order"
+- **THEN** a success confirmation message is displayed
+
+#### Scenario: Step 4 edit
+
+- **GIVEN** the wizard is on Step 4
+- **WHEN** the user clicks "Edit" next to a section
+- **THEN** the wizard navigates back to the corresponding step
 
 ### Navigation buttons
 
-```gherkin
 Feature: Navigation buttons
 
-  Scenario: Back button on steps 2-4
-    Given the wizard is on Step 2, 3, or 4
-    Then a "Back" button is displayed to navigate to the previous step
+#### Scenario: Back button on steps 2-4
 
-  Scenario: Back button hidden on Step 1
-    Given the wizard is on Step 1
-    Then the "Back" button is not displayed
+- **GIVEN** the wizard is on Step 2, 3, or 4
+- **THEN** a "Back" button is displayed to navigate to the previous step
 
-  Scenario: Next button on steps 1-3
-    Given the wizard is on Step 1, 2, or 3
-    Then a "Next" button is displayed to proceed to the next step
+#### Scenario: Back button hidden on Step 1
 
-  Scenario: Submit button on Step 4
-    Given the wizard is on Step 4
-    Then a "Submit" or "Place Order" button is displayed instead of "Next"
+- **GIVEN** the wizard is on Step 1
+- **THEN** the "Back" button is not displayed
 
-  Scenario: Button styling
-    Given any navigation button is displayed
-    Then the button has a golden/amber (#d2be64) background with dark text
-    And the button has slightly rounded corners (~4px)
-```
+#### Scenario: Next button on steps 1-3
+
+- **GIVEN** the wizard is on Step 1, 2, or 3
+- **THEN** a "Next" button is displayed to proceed to the next step
+
+#### Scenario: Submit button on Step 4
+
+- **GIVEN** the wizard is on Step 4
+- **THEN** a "Submit" or "Place Order" button is displayed instead of "Next"
+
+#### Scenario: Button styling
+
+- **GIVEN** any navigation button is displayed
+- **THEN** the button has a golden/amber (#d2be64) background with dark text
+- **AND** the button has slightly rounded corners (~4px)
 
 ### Responsive behavior
 
-```gherkin
 Feature: Responsive wizard
 
-  Scenario: Mobile layout
-    Given the viewport width is less than 640px
-    Then the wizard card fills the full viewport width with padding
-    And form fields stack vertically
-    And the step indicator adapts to smaller width
+#### Scenario: Mobile layout
 
-  Scenario: Desktop layout
-    Given the viewport width is 640px or greater
-    Then the wizard card has a fixed max-width (~600px) and is centered
-```
+- **GIVEN** the viewport width is less than 640px
+- **THEN** the wizard card fills the full viewport width with padding
+- **AND** form fields stack vertically
+- **AND** the step indicator adapts to smaller width
+
+#### Scenario: Desktop layout
+
+- **GIVEN** the viewport width is 640px or greater
+- **THEN** the wizard card has a fixed max-width (~600px) and is centered
 
 ## Verification checklist
 

@@ -13,7 +13,7 @@
 - **Backgrounds**: Main background `#ffffff`, section background split/left half `#f8f9fa`.
 - **UI Elements**: Carousel cards with bottom margin, clean image wrappers (`img-fluid`), distinct pagination dots (15px width x 3px height rectangles).
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Carousel Showcase
 
@@ -21,23 +21,23 @@ As a visitor, I want to browse products and items in an interactive carousel so 
 
 #### Scenario: View Page Header and Section
 
-- Given the user visits the CarouselFlow application
-- When the page loads
-- Then the header displays "Carousel #2"
-- And the section displays the title "Our Products"
+- **GIVEN** the user visits the CarouselFlow application
+- **WHEN** the page loads
+- **THEN** the header displays "Carousel #2"
+- **AND** the section displays the title "Our Products"
 
 #### Scenario: Interact with Carousel Items
 
-- Given the product carousel contains 6 default items with images and titles
-- When the user views or navigates through the carousel items
-- Then each item displays an image (`img-fluid`) and a bold title (e.g., "Consectetur Adipisicing Elit")
-- And pagination indicators are visible at the bottom of the carousel
+- **GIVEN** the product carousel contains 6 default items with images and titles
+- **WHEN** the user views or navigates through the carousel items
+- **THEN** each item displays an image (`img-fluid`) and a bold title (e.g., "Consectetur Adipisicing Elit")
+- **AND** pagination indicators are visible at the bottom of the carousel
 
 #### Scenario: Footer Attribution
 
-- Given the user scrolls to the bottom of the page
-- When the footer is rendered
-- Then it includes a link to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it includes a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

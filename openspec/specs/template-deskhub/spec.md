@@ -60,71 +60,80 @@ as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 8. **Newsletter / Subscribe** — "Subscribe our newsletter to get updates" + email input + subscribe button
 9. **Footer** — Dark bg (`#222`), logo + nav links + copyright, "Made with Component Dock"
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: DeskHub template behaviour
+
 Feature: DeskHub — Coworking landing page
-  As a coworking space visitor
-  I want a professional landing page
-  So that I can explore spaces and learn about the service
+As a coworking space visitor
+I want a professional landing page
+So that I can explore spaces and learn about the service
 
-  Background:
-    Given the page is loaded at "/" 
+Background:
+- **GIVEN** the page is loaded at "/"
 
-  Scenario: Navbar renders correctly
-    Then the navbar is visible and sticky on scroll
-    And it contains the "DeskHub" logo
-    And navigation links: Home, Spaces, About, Blog, Contact are visible
-    And clicking "Spaces" scrolls to the spaces section
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero slider displays
-    Then a full-width image slider is visible
-    And the heading "Amazing workspace you will love" is displayed
-    And the subtext mentions discovering spaces
-    And an "Explore Our Spaces" CTA button is visible
-    And a star rating badge shows "4.8"
-    And the slider transitions between slides automatically
+- **THEN** the navbar is visible and sticky on scroll
+- **AND** it contains the "DeskHub" logo
+- **AND** navigation links: Home, Spaces, About, Blog, Contact are visible
+- **AND** clicking "Spaces" scrolls to the spaces section
 
-  Scenario: About section renders
-    Then the heading "Premium quality spaces for agency and personal" is displayed
-    And a description paragraph is present
-    And a "Learn More" link is visible
-    And an image is displayed on the right side
+#### Scenario: Hero slider displays
 
-  Scenario: Spaces gallery renders 4 cards
-    Then 4 space cards are displayed
-    And each card has an image, title, and price
-    And the price on each card is "$500"
-    And an "Explore More Spaces" button is below the cards
+- **THEN** a full-width image slider is visible
+- **AND** the heading "Amazing workspace you will love" is displayed
+- **AND** the subtext mentions discovering spaces
+- **AND** an "Explore Our Spaces" CTA button is visible
+- **AND** a star rating badge shows "4.8"
+- **AND** the slider transitions between slides automatically
 
-  Scenario: Features section shows 4 items
-    Then the heading "Make the customer the hero of your story" is displayed
-    And 4 feature items are displayed
-    And feature titles are: "Money saver", "A locker and key", "Active Listening", "Space for events"
-    And each feature has an icon and description text
+#### Scenario: About section renders
 
-  Scenario: Video section plays on click
-    Then a video section with play button is visible
-    And clicking the play button opens a video modal/popup
+- **THEN** the heading "Premium quality spaces for agency and personal" is displayed
+- **AND** a description paragraph is present
+- **AND** a "Learn More" link is visible
+- **AND** an image is displayed on the right side
 
-  Scenario: Blog section shows 3 posts
-    Then the heading "Company Insights" is displayed
-    And 3 blog post cards are rendered
-    And each card shows an image, title, date, and excerpt
+#### Scenario: Spaces gallery renders 4 cards
 
-  Scenario: Newsletter subscription works
-    Then the heading "Subscribe our newsletter to get updates" is displayed
-    And an email input field is present
-    And a "Subscribe" button is present
-    And submitting with a valid email shows confirmation
-    And submitting with an invalid email shows an error
+- **THEN** 4 space cards are displayed
+- **AND** each card has an image, title, and price
+- **AND** the price on each card is "$500"
+- **AND** an "Explore More Spaces" button is below the cards
 
-  Scenario: Footer renders correctly
-    Then the footer has a dark background
-    And it contains navigation links
-    And the copyright notice is displayed
-    And a "Made with Component Dock" link to componentdock.com is present
-```
+#### Scenario: Features section shows 4 items
+
+- **THEN** the heading "Make the customer the hero of your story" is displayed
+- **AND** 4 feature items are displayed
+- **AND** feature titles are: "Money saver", "A locker and key", "Active Listening", "Space for events"
+- **AND** each feature has an icon and description text
+
+#### Scenario: Video section plays on click
+
+- **THEN** a video section with play button is visible
+- **AND** clicking the play button opens a video modal/popup
+
+#### Scenario: Blog section shows 3 posts
+
+- **THEN** the heading "Company Insights" is displayed
+- **AND** 3 blog post cards are rendered
+- **AND** each card shows an image, title, date, and excerpt
+
+#### Scenario: Newsletter subscription works
+
+- **THEN** the heading "Subscribe our newsletter to get updates" is displayed
+- **AND** an email input field is present
+- **AND** a "Subscribe" button is present
+- **AND** submitting with a valid email shows confirmation
+- **AND** submitting with an invalid email shows an error
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer has a dark background
+- **AND** it contains navigation links
+- **AND** the copyright notice is displayed
+- **AND** a "Made with Component Dock" link to componentdock.com is present
 
 ## Verification Checklist
 

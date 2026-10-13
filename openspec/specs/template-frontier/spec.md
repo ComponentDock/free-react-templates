@@ -44,112 +44,139 @@ Extracted from the live preview CSS (`css/style.css`):
 | Button padding      | `13px 30px` | Standard button size                         |
 | Section padding     | `120px 0`   | `.section_padding` class                     |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Frontier — Travel / Hotel Booking Template
 
   Background:
-    Given the Frontier template is served at its deploy URL
-    And the browser viewport is 1280x800
+- **GIVEN** the Frontier template is served at its deploy URL
+- **AND** the browser viewport is 1280x800
 
-  # --- Top Bar ---
-  Scenario: Top bar displays contact info and social icons
-    Given I scroll to the very top of the page
-    Then I see a top bar with phone number "4156, New garden, New York, USA"
-    And I see social media icon links (Facebook, Twitter, Instagram, Google+)
+**--- Top Bar ---**
 
-  # --- Navbar ---
-  Scenario: Navbar shows logo and navigation links
-    Given I am at the top of the page
-    Then I see the "Frontier" logo text on the left
-    And I see navigation links: "Home", "About", "Pages", "Blog", "Contact"
-    And the "Pages" and "Blog" links have dropdown menus
+#### Scenario: Top bar displays contact info and social icons
 
-  Scenario: Navbar becomes sticky on scroll
-    Given I scroll down past the hero banner
-    Then the navbar sticks to the top of the viewport
-    And it has a white background
+- **GIVEN** I scroll to the very top of the page
+- **THEN** I see a top bar with phone number "4156, New garden, New York, USA"
+- **AND** I see social media icon links (Facebook, Twitter, Instagram, Google+)
 
-  # --- Hero Banner ---
-  Scenario: Hero banner displays headline and CTA
-    Given I view the hero section
-    Then I see a full-width banner with a background image
-    And I see the headline "Frontier"
-    And I see the subtitle "Let's start your journey with us, your dream will come true"
-    And I see a "Discover Now" call-to-action button in orange (#fe5c24)
+**--- Navbar ---**
 
-  # --- Booking Form ---
-  Scenario: Booking form bar overlays the hero
-    Given I view the booking section
-    Then I see a white card overlapping the hero banner
-    And it contains two tabs: "Booking" and "Restaurant"
-    And the Booking tab is active by default
-    And I see form fields: "Choose place" (dropdown), "Check in date" (date picker), "Person" (dropdown)
-    And I see a "Book Now" submit button in blue (#2493e0)
+#### Scenario: Navbar shows logo and navigation links
 
-  Scenario: Restaurant tab shows alternate form
-    Given I click the "Restaurant" tab
-    Then the restaurant form becomes visible
-    And the booking form is hidden
+- **GIVEN** I am at the top of the page
+- **THEN** I see the "Frontier" logo text on the left
+- **AND** I see navigation links: "Home", "About", "Pages", "Blog", "Contact"
+- **AND** the "Pages" and "Blog" links have dropdown menus
 
-  # --- Top Places ---
-  Scenario: Top Places section shows destination cards
-    Given I scroll to the "Top Places to visit" section
-    Then I see a heading "Top Places to visit"
-    And I see 4 destination cards in a grid layout
-    And each card has an image, an overlay with destination name on hover
-    And the card destinations are: "Saintmartine Iceland", "Maldeve - Asia", and 2 others
+#### Scenario: Navbar becomes sticky on scroll
 
-  Scenario: Destination cards have hover overlay effect
-    Given I hover over a destination card
-    Then a navy (#0c3e72) overlay appears with the destination name
+- **GIVEN** I scroll down past the hero banner
+- **THEN** the navbar sticks to the top of the viewport
+- **AND** it has a white background
 
-  # --- Upcoming Event ---
-  Scenario: Event section displays travel packages
-    Given I scroll to the "Upcoming Event" section
-    Then I see a heading "Upcoming Event"
-    And I see 3 event cards each showing: destination name, date, cost, organizer, rating
+**--- Hero Banner ---**
 
-  # --- Hotel & Restaurants ---
-  Scenario: Hotel section shows accommodation listings
-    Given I scroll to the "Top Hotel & Restaurants" section
-    Then I see a heading "Top Hotel & Restaurants"
-    And I see a descriptive paragraph
-    And I see 3 hotel cards with images and names (e.g. "Hotel Polonia")
+#### Scenario: Hero banner displays headline and CTA
 
-  # --- Client Reviews ---
-  Scenario: Testimonial slider displays reviews
-    Given I scroll to the "What they said" section
-    Then I see a heading "What they said"
-    And I see testimonial quotes with author names
-    And the testimonials can be navigated (slider/carousel)
+- **GIVEN** I view the hero section
+- **THEN** I see a full-width banner with a background image
+- **AND** I see the headline "Frontier"
+- **AND** I see the subtitle "Let's start your journey with us, your dream will come true"
+- **AND** I see a "Discover Now" call-to-action button in orange (#fe5c24)
 
-  # --- Best Services ---
-  Scenario: Services section shows 4 service cards
-    Given I scroll to the "We offered best services" section
-    Then I see a heading "We offered best services"
-    And I see 4 service cards: "Transportation", "Guidance", "Accommodation", "Discover World"
-    And each card has an icon, title, and short description
+**--- Booking Form ---**
 
-  # --- Footer ---
-  Scenario: Footer has three columns
-    Given I scroll to the footer
-    Then I see a "Discover Destination" column with city links
-    And I see a "Subscribe Newsletter" column with an email input and submit button
-    And I see a "Contact Us" column with address, phone, and email
-    And I see a copyright line referencing the current year
-    And the footer links to "https://www.componentdock.com/" branded as "Component Dock"
+#### Scenario: Booking form bar overlays the hero
 
-  # --- Responsive ---
-  Scenario: Mobile layout stacks sections vertically
-    Given I resize the browser to 375px width
-    Then the navbar collapses into a hamburger menu
-    And the booking form stacks fields vertically
-    And the destination grid becomes single-column
-    And the footer columns stack vertically
+- **GIVEN** I view the booking section
+- **THEN** I see a white card overlapping the hero banner
+- **AND** it contains two tabs: "Booking" and "Restaurant"
+- **AND** the Booking tab is active by default
+- **AND** I see form fields: "Choose place" (dropdown), "Check in date" (date picker), "Person" (dropdown)
+- **AND** I see a "Book Now" submit button in blue (#2493e0)
 
-  # --- Accessibility ---
-  Scenario: All interactive elements are keyboard accessible
-    Given I navigate the page using only the Tab key
-    Then I can reach all navigation links, form fields, buttons, and slider controls
-    And focus indicators are visible on each focused element
+#### Scenario: Restaurant tab shows alternate form
+
+- **GIVEN** I click the "Restaurant" tab
+- **THEN** the restaurant form becomes visible
+- **AND** the booking form is hidden
+
+**--- Top Places ---**
+
+#### Scenario: Top Places section shows destination cards
+
+- **GIVEN** I scroll to the "Top Places to visit" section
+- **THEN** I see a heading "Top Places to visit"
+- **AND** I see 4 destination cards in a grid layout
+- **AND** each card has an image, an overlay with destination name on hover
+- **AND** the card destinations are: "Saintmartine Iceland", "Maldeve - Asia", and 2 others
+
+#### Scenario: Destination cards have hover overlay effect
+
+- **GIVEN** I hover over a destination card
+- **THEN** a navy (#0c3e72) overlay appears with the destination name
+
+**--- Upcoming Event ---**
+
+#### Scenario: Event section displays travel packages
+
+- **GIVEN** I scroll to the "Upcoming Event" section
+- **THEN** I see a heading "Upcoming Event"
+- **AND** I see 3 event cards each showing: destination name, date, cost, organizer, rating
+
+**--- Hotel & Restaurants ---**
+
+#### Scenario: Hotel section shows accommodation listings
+
+- **GIVEN** I scroll to the "Top Hotel & Restaurants" section
+- **THEN** I see a heading "Top Hotel & Restaurants"
+- **AND** I see a descriptive paragraph
+- **AND** I see 3 hotel cards with images and names (e.g. "Hotel Polonia")
+
+**--- Client Reviews ---**
+
+#### Scenario: Testimonial slider displays reviews
+
+- **GIVEN** I scroll to the "What they said" section
+- **THEN** I see a heading "What they said"
+- **AND** I see testimonial quotes with author names
+- **AND** the testimonials can be navigated (slider/carousel)
+
+**--- Best Services ---**
+
+#### Scenario: Services section shows 4 service cards
+
+- **GIVEN** I scroll to the "We offered best services" section
+- **THEN** I see a heading "We offered best services"
+- **AND** I see 4 service cards: "Transportation", "Guidance", "Accommodation", "Discover World"
+- **AND** each card has an icon, title, and short description
+
+**--- Footer ---**
+
+#### Scenario: Footer has three columns
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a "Discover Destination" column with city links
+- **AND** I see a "Subscribe Newsletter" column with an email input and submit button
+- **AND** I see a "Contact Us" column with address, phone, and email
+- **AND** I see a copyright line referencing the current year
+- **AND** the footer links to "https://www.componentdock.com/" branded as "Component Dock"
+
+**--- Responsive ---**
+
+#### Scenario: Mobile layout stacks sections vertically
+
+- **GIVEN** I resize the browser to 375px width
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the booking form stacks fields vertically
+- **AND** the destination grid becomes single-column
+- **AND** the footer columns stack vertically
+
+**--- Accessibility ---**
+
+#### Scenario: All interactive elements are keyboard accessible
+
+- **GIVEN** I navigate the page using only the Tab key
+- **THEN** I can reach all navigation links, form fields, buttons, and slider controls
+- **AND** focus indicators are visible on each focused element

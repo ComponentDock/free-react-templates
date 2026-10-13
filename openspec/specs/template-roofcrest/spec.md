@@ -40,94 +40,107 @@ Extracted from the preview's `css/style.css`:
 8. **Blog Section** — 3-column blog entries: background image, author avatar + name + date, title
 9. **Footer** — 5-column: Logo + description + social links, Services list, Business Hours, Contact info, Newsletter subscribe
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-Scenario: Logo and navigation display
-  Given the user is on any page
-  Then a roof icon and "Roofcrest" logo are visible
-  And navigation links "Home", "About", "Services", "Project", "Blog", "Contact" are visible
+#### Scenario: Logo and navigation display
 
-Scenario: Mobile hamburger menu
-  Given the viewport is mobile width (< 768px)
-  Then a hamburger menu icon is visible
-  And clicking it opens a slide-in mobile menu
+- **GIVEN** the user is on any page
+- **THEN** a roof icon and "Roofcrest" logo are visible
+- **AND** navigation links "Home", "About", "Services", "Project", "Blog", "Contact" are visible
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is mobile width (< 768px)
+- **THEN** a hamburger menu icon is visible
+- **AND** clicking it opens a slide-in mobile menu
 
 ### Feature: Hero Slider
 
-Scenario: Hero slider displays
-  Given the user lands on the page
-  Then a full-viewport-height hero slider with parallax backgrounds is shown
-  And the heading "We care about your home" is displayed
-  And two buttons appear: "Get a quote" and "Learn more"
+#### Scenario: Hero slider displays
 
-Scenario: Hero auto-slides
-  Given the hero slider is loaded
-  Then slides advance automatically at regular intervals
+- **GIVEN** the user lands on the page
+- **THEN** a full-viewport-height hero slider with parallax backgrounds is shown
+- **AND** the heading "We care about your home" is displayed
+- **AND** two buttons appear: "Get a quote" and "Learn more"
+
+#### Scenario: Hero auto-slides
+
+- **GIVEN** the hero slider is loaded
+- **THEN** slides advance automatically at regular intervals
 
 ### Feature: About & Quote
 
-Scenario: About section displays
-  Given the user scrolls past the hero
-  Then "We help more than 45 years installing your roof" heading is shown
-  And a paragraph about the company is visible
-  And tabbed content with "Our Mission", "Our Vision", "Our Value" is displayed
+#### Scenario: About section displays
 
-Scenario: Quote form displays
-  Given the about section is visible
-  Then a "Get a Quote" form is shown on the right
-  And fields for Service (select), Name, Date, Time, Message are visible
-  And a submit button is present
+- **GIVEN** the user scrolls past the hero
+- **THEN** "We help more than 45 years installing your roof" heading is shown
+- **AND** a paragraph about the company is visible
+- **AND** tabbed content with "Our Mission", "Our Vision", "Our Value" is displayed
+
+#### Scenario: Quote form displays
+
+- **GIVEN** the about section is visible
+- **THEN** a "Get a Quote" form is shown on the right
+- **AND** fields for Service (select), Name, Date, Time, Message are visible
+- **AND** a submit button is present
 
 ### Feature: Counter Section
 
-Scenario: Stats display
-  Given the user scrolls to the counter section
-  Then a golden background (#d9ba2b) section with 4 stats is shown
-  And "45 Years of Experience", "8500 Projects Completed", "2342 Happy Clients", "30 Business Partners" are displayed
+#### Scenario: Stats display
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a golden background (#d9ba2b) section with 4 stats is shown
+- **AND** "45 Years of Experience", "8500 Projects Completed", "2342 Happy Clients", "30 Business Partners" are displayed
 
 ### Feature: Services
 
-Scenario: Tabbed services display
-  Given the user scrolls to the services section
-  Then "Our Best Services" heading is shown
-  And a vertical tab navigation with 6 services is visible (Skylights, Waterproofing, Industrial Roofing, Residential Roofing, Gutter Cleaning, Commercial Roofing)
-  And clicking each tab shows title, paragraphs, and a checklist
+#### Scenario: Tabbed services display
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** "Our Best Services" heading is shown
+- **AND** a vertical tab navigation with 6 services is visible (Skylights, Waterproofing, Industrial Roofing, Residential Roofing, Gutter Cleaning, Commercial Roofing)
+- **AND** clicking each tab shows title, paragraphs, and a checklist
 
 ### Feature: Projects
 
-Scenario: Project grid displays
-  Given the user scrolls to the projects section
-  Then "Done Projects" heading is shown
-  And 4 project images are displayed in a row
-  And each has a hover overlay with expand icon, title, and category
+#### Scenario: Project grid displays
+
+- **GIVEN** the user scrolls to the projects section
+- **THEN** "Done Projects" heading is shown
+- **AND** 4 project images are displayed in a row
+- **AND** each has a hover overlay with expand icon, title, and category
 
 ### Feature: Testimonials
 
-Scenario: Testimonial carousel displays
-  Given the user scrolls to testimonials
-  Then "Testimonial" heading is shown
-  And a carousel of testimonials appears
-  And each has a user avatar, quote icon, paragraph, author name, and position
+#### Scenario: Testimonial carousel displays
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** "Testimonial" heading is shown
+- **AND** a carousel of testimonials appears
+- **AND** each has a user avatar, quote icon, paragraph, author name, and position
 
 ### Feature: Blog
 
-Scenario: Three blog entries display
-  Given the user scrolls to the blog section
-  Then 3 blog cards appear in a row
-  And each has a background image, author info (avatar + name + date), and title
+#### Scenario: Three blog entries display
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog cards appear in a row
+- **AND** each has a background image, author info (avatar + name + date), and title
 
 ### Feature: Footer
 
-Scenario: Footer layout
-  Given the user scrolls to the footer
-  Then 5 columns are shown: Logo + description, Services list, Business Hours, Contact info, Newsletter
-  And social media links (Twitter, Facebook, Instagram) are visible
+#### Scenario: Footer layout
 
-Scenario: Footer links to Component Dock
-  Given the footer is visible
-  Then a link to https://www.componentdock.com/ is present with text "Component Dock"
+- **GIVEN** the user scrolls to the footer
+- **THEN** 5 columns are shown: Logo + description, Services list, Business Hours, Contact info, Newsletter
+- **AND** social media links (Twitter, Facebook, Instagram) are visible
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
 ## Verification Checklist
 

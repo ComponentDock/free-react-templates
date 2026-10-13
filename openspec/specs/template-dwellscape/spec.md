@@ -36,115 +36,95 @@ Extracted from `style.css` served by the preview page.
 | Card border-radius | 5px | Property thumbs, blog thumbs, category cards |
 | Footer overlay | `bg-overlay bg-overlay-2` | Dark image overlay with opacity |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Hero section renders full-width map embed
+### Feature: Dwellscape template behaviour
 
-```
-Given the user visits Dwellscape
-When the hero section loads
-Then a full-width area is displayed with a dark overlay map background
-And a headline overlay or prominent visual element is visible
-```
+#### Scenario: Hero section renders full-width map embed
 
-### Scenario: Search form has filter dropdowns and search button
+- **GIVEN** the user visits Dwellscape
+- **WHEN** the hero section loads
+- **THEN** a full-width area is displayed with a dark overlay map background
+- **AND** a headline overlay or prominent visual element is visible
 
-```
-Given the user sees the search form below the hero
-When the form area renders
-Then there are dropdown selects for Location, Property Type, City, Bedrooms, Bathrooms
-And a price range slider is shown
-And a size range slider is shown
-And a "Search" button with brand green background (#92c800) is displayed
-```
+#### Scenario: Search form has filter dropdowns and search button
 
-### Scenario: Property listing section shows 6 cards in 3-column grid
+- **GIVEN** the user sees the search form below the hero
+- **WHEN** the form area renders
+- **THEN** there are dropdown selects for Location, Property Type, City, Bedrooms, Bathrooms
+- **AND** a price range slider is shown
+- **AND** a size range slider is shown
+- **AND** a "Search" button with brand green background (#92c800) is displayed
 
-```
-Given the user scrolls to the property listings section
-When the section heading reads "Top New In NewYork"
-Then 6 property cards are displayed in a 3-column responsive grid
-And each card has an image thumbnail, address title, seller info, and property details (sqft, garage, baths)
-And each card shows a price badge area at the bottom
-And on hover the price area turns brand green (#92c800) with white text
-```
+#### Scenario: Property listing section shows 6 cards in 3-column grid
 
-### Scenario: Why Choose Us section displays 3 feature cards
+- **GIVEN** the user scrolls to the property listings section
+- **WHEN** the section heading reads "Top New In NewYork"
+- **THEN** 6 property cards are displayed in a 3-column responsive grid
+- **AND** each card has an image thumbnail, address title, seller info, and property details (sqft, garage, baths)
+- **AND** each card shows a price badge area at the bottom
+- **AND** on hover the price area turns brand green (#92c800) with white text
 
-```
-Given the user scrolls past the property listings
-When the "Why Choose Us?" section renders on a light gray (#f5f8fa) background
-Then 3 feature cards are displayed in a row
-And each card has an icon, a title (h5), and descriptive text
-And the feature titles are "Find Your Home", "Transportation support", "Save Your Money"
-```
+#### Scenario: Why Choose Us section displays 3 feature cards
 
-### Scenario: Categories by Property section shows 3 category cards
+- **GIVEN** the user scrolls past the property listings
+- **WHEN** the "Why Choose Us?" section renders on a light gray (#f5f8fa) background
+- **THEN** 3 feature cards are displayed in a row
+- **AND** each card has an icon, a title (h5), and descriptive text
+- **AND** the feature titles are "Find Your Home", "Transportation support", "Save Your Money"
 
-```
-Given the user scrolls to the categories section
-When the "Categories By Property" heading renders
-Then 3 category cards are displayed with background images and gradient overlay
-And each card shows a category name and "25 Properties" link
-```
+#### Scenario: Categories by Property section shows 3 category cards
 
-### Scenario: Call to Action section with parallax background
+- **GIVEN** the user scrolls to the categories section
+- **WHEN** the "Categories By Property" heading renders
+- **THEN** 3 category cards are displayed with background images and gradient overlay
+- **AND** each card shows a category name and "25 Properties" link
 
-```
-Given the user scrolls to the CTA section
-When the section renders with a parallax background image and dark overlay
-Then a headline "Download app & join now!" is displayed in white
-And supporting text is shown below
-And a CTA button (outline style, brand green border) is displayed
-```
+#### Scenario: Call to Action section with parallax background
 
-### Scenario: Latest News blog section shows 3 post cards
+- **GIVEN** the user scrolls to the CTA section
+- **WHEN** the section renders with a parallax background image and dark overlay
+- **THEN** a headline "Download app & join now!" is displayed in white
+- **AND** supporting text is shown below
+- **AND** a CTA button (outline style, brand green border) is displayed
 
-```
-Given the user scrolls to the blog section
-When the "Latest News" heading renders
-Then 3 blog post cards are displayed in a 3-column grid
-And each card has a thumbnail image, a title link, and post meta (author, date, comments)
-And post titles turn brand green (#92c800) on hover
-```
+#### Scenario: Latest News blog section shows 3 post cards
 
-### Scenario: Partner logos carousel
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the "Latest News" heading renders
+- **THEN** 3 blog post cards are displayed in a 3-column grid
+- **AND** each card has a thumbnail image, a title link, and post meta (author, date, comments)
+- **AND** post titles turn brand green (#92c800) on hover
 
-```
-Given the user scrolls to the partner section
-When the partner area renders
-Then a horizontal carousel of 5 partner logo images is displayed
-And logos are clickable links
-```
+#### Scenario: Partner logos carousel
 
-### Scenario: Footer with dark overlay background
+- **GIVEN** the user scrolls to the partner section
+- **WHEN** the partner area renders
+- **THEN** a horizontal carousel of 5 partner logo images is displayed
+- **AND** logos are clickable links
 
-```
-Given the user scrolls to the footer
-When the footer renders with a dark background image and overlay
-Then 4 widget columns are displayed: Logo + about, Get Info (contact), Property Cities, Newsletter
-And a newsletter form with email input and submit button is shown
-And a bottom footer menu bar is displayed
-And the footer links to Component Dock (https://www.componentdock.com/)
-```
+#### Scenario: Footer with dark overlay background
 
-### Scenario: Top header bar with contact info and social links
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders with a dark background image and overlay
+- **THEN** 4 widget columns are displayed: Logo + about, Get Info (contact), Property Cities, Newsletter
+- **AND** a newsletter form with email input and submit button is shown
+- **AND** a bottom footer menu bar is displayed
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
 
-```
-Given the user visits the page
-When the top header bar renders
-Then email "info.colorlib@gmail.com" and phone "(12) 345 6789" are displayed
-And social icons for Facebook, Twitter, LinkedIn, Instagram are shown
-```
+#### Scenario: Top header bar with contact info and social links
 
-### Scenario: Main navigation with logo and menu
+- **GIVEN** the user visits the page
+- **WHEN** the top header bar renders
+- **THEN** email "info.colorlib@gmail.com" and phone "(12) 345 6789" are displayed
+- **AND** social icons for Facebook, Twitter, LinkedIn, Instagram are shown
 
-```
-Given the user sees the main header
-When the navigation renders
-Then a logo image and a horizontal menu with "Home" and "Pages" (with dropdown) are shown
-And a "Contact Us" button with brand green styling appears at the right
-```
+#### Scenario: Main navigation with logo and menu
+
+- **GIVEN** the user sees the main header
+- **WHEN** the navigation renders
+- **THEN** a logo image and a horizontal menu with "Home" and "Pages" (with dropdown) are shown
+- **AND** a "Contact Us" button with brand green styling appears at the right
 
 ## Verification Checklist
 

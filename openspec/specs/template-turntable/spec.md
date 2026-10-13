@@ -218,7 +218,7 @@ labels, and ARIA attributes.
 - **AND** images SHALL have descriptive alt text
 - **AND** the subscribe form SHALL have a labeled email input
 
-### Requirement: Footer — Component Dock credit
+### Feature: Footer — Component Dock credit
 
 #### Scenario: Attribution
 

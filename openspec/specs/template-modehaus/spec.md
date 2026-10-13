@@ -25,108 +25,121 @@ New name: `modehaus` (German for "fashion house")
 - **Blog cards:** image thumbnail, date (with calendar icon), title, "Read More" link
 - **Footer:** dark background (`#111111`), 4-column layout: About/Logo, Quick Links, Contact, Newsletter
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
 
-Scenario: Top bar with promo text and utility links
-  Given the user loads the page
-  Then a top bar shows "Free shipping, 30-day return or refund guarantee."
-  And utility links include "SIGN IN", "FAQS", and a currency selector ("USD")
+#### Scenario: Top bar with promo text and utility links
 
-Scenario: Main header with logo, nav, and icons
-  Given the user loads the page
-  Then the logo "Modehaus" is displayed on the left
-  And navigation links include "Home", "Shop", "Pages", "Blog", "Contacts"
-  And search, wishlist, and cart icons are on the right
-  And the cart shows "$0.00"
+- **GIVEN** the user loads the page
+- **THEN** a top bar shows "Free shipping, 30-day return or refund guarantee."
+- **AND** utility links include "SIGN IN", "FAQS", and a currency selector ("USD")
+
+#### Scenario: Main header with logo, nav, and icons
+
+- **GIVEN** the user loads the page
+- **THEN** the logo "Modehaus" is displayed on the left
+- **AND** navigation links include "Home", "Shop", "Pages", "Blog", "Contacts"
+- **AND** search, wishlist, and cart icons are on the right
+- **AND** the cart shows "$0.00"
 
 ### Hero
 
-Scenario: Hero carousel with collection banner
-  Given the user views the hero section
-  Then a full-width carousel slides through fashion images
-  And each slide shows a headline (e.g. "Fall – Winter Collections 2030")
-  And a subtitle text describing the brand
-  And a "Shop now →" button (black, pill-shaped)
-  And social media icons (Facebook, Twitter, Pinterest, Instagram) below
-  And left/right navigation arrows are visible
+#### Scenario: Hero carousel with collection banner
 
-Scenario: Hero has multiple slides
-  Given the user views the hero section
-  Then at least 2 slides are available
-  And navigation arrows cycle between slides
+- **GIVEN** the user views the hero section
+- **THEN** a full-width carousel slides through fashion images
+- **AND** each slide shows a headline (e.g. "Fall – Winter Collections 2030")
+- **AND** a subtitle text describing the brand
+- **AND** a "Shop now →" button (black, pill-shaped)
+- **AND** social media icons (Facebook, Twitter, Pinterest, Instagram) below
+- **AND** left/right navigation arrows are visible
+
+#### Scenario: Hero has multiple slides
+
+- **GIVEN** the user views the hero section
+- **THEN** at least 2 slides are available
+- **AND** navigation arrows cycle between slides
 
 ### Banner
 
-Scenario: Three-column product banners
-  Given the user scrolls to the banner section
-  Then 3 banner cards are displayed in a row
-  And each banner has a product image and text overlay
-  And each banner has a "Shop now" link
-  And the middle banner is styled differently (offset or larger)
+#### Scenario: Three-column product banners
+
+- **GIVEN** the user scrolls to the banner section
+- **THEN** 3 banner cards are displayed in a row
+- **AND** each banner has a product image and text overlay
+- **AND** each banner has a "Shop now" link
+- **AND** the middle banner is styled differently (offset or larger)
 
 ### Product
 
-Scenario: Product filter tabs
-  Given the user views the product section
-  Then filter tabs show "Best Sellers", "New Arrivals", "Hot Sales"
-  And "Best Sellers" is active by default
+#### Scenario: Product filter tabs
 
-Scenario: Product grid display
-  Given the user views the product section
-  Then 8 product cards are displayed in a 4-column grid
-  And each card shows an image, product name, and price
-  And hovering reveals color swatch options
-  And a "New" label badge appears on new-arrival products
+- **GIVEN** the user views the product section
+- **THEN** filter tabs show "Best Sellers", "New Arrivals", "Hot Sales"
+- **AND** "Best Sellers" is active by default
 
-Scenario: Product filter interaction
-  When the user clicks "New Arrivals"
-  Then only new-arrival products are shown
-  When the user clicks "Hot Sales"
-  Then only hot-sale products are shown
-  When the user clicks "Best Sellers"
-  Then all products are shown again
+#### Scenario: Product grid display
+
+- **GIVEN** the user views the product section
+- **THEN** 8 product cards are displayed in a 4-column grid
+- **AND** each card shows an image, product name, and price
+- **AND** hovering reveals color swatch options
+- **AND** a "New" label badge appears on new-arrival products
+
+#### Scenario: Product filter interaction
+
+- **WHEN** the user clicks "New Arrivals"
+- **THEN** only new-arrival products are shown
+- **WHEN** the user clicks "Hot Sales"
+- **THEN** only hot-sale products are shown
+- **WHEN** the user clicks "Best Sellers"
+- **THEN** all products are shown again
 
 ### Categories
 
-Scenario: Categories / deal section
-  Given the user views the categories section
-  Then a section with warm-grey background (`#f3f2ee`) is shown
-  And a large heading "Clothing Collections 2030" is displayed
-  And a "Shop now" link is present
-  And a countdown timer (days/hours/minutes/seconds) is displayed
-  And a product image is shown alongside the text
+#### Scenario: Categories / deal section
+
+- **GIVEN** the user views the categories section
+- **THEN** a section with warm-grey background (`#f3f2ee`) is shown
+- **AND** a large heading "Clothing Collections 2030" is displayed
+- **AND** a "Shop now" link is present
+- **AND** a countdown timer (days/hours/minutes/seconds) is displayed
+- **AND** a product image is shown alongside the text
 
 ### Instagram
 
-Scenario: Instagram photo grid
-  Given the user views the instagram section
-  Then 5 equal-width images are displayed in a row
-  And an Instagram icon overlays each image on hover
+#### Scenario: Instagram photo grid
+
+- **GIVEN** the user views the instagram section
+- **THEN** 5 equal-width images are displayed in a row
+- **AND** an Instagram icon overlays each image on hover
 
 ### Blog
 
-Scenario: Latest blog posts
-  Given the user views the blog section
-  Then a section title reads "Latest News" (red subtitle) / "Fashion New Trends" (h2)
-  And 3 blog cards are displayed in a 3-column grid
-  And each card shows a thumbnail image, publication date, title, and "Read More" link
+#### Scenario: Latest blog posts
+
+- **GIVEN** the user views the blog section
+- **THEN** a section title reads "Latest News" (red subtitle) / "Fashion New Trends" (h2)
+- **AND** 3 blog cards are displayed in a 3-column grid
+- **AND** each card shows a thumbnail image, publication date, title, and "Read More" link
 
 ### Footer
 
-Scenario: Footer layout
-  Given the user views the footer
-  Then 4 columns are displayed:
+#### Scenario: Footer layout
+
+- **GIVEN** the user views the footer
+- **THEN** 4 columns are displayed:
     | Column 1        | Column 2                         | Column 3      | Column 4         |
     | About + logo    | Quick Links (Clothing, Shoes…)  | Contact info  | Newsletter signup |
-  And a "Made with Component Dock" link is present
-  And the background is dark (`#111111`)
+- **AND** a "Made with Component Dock" link is present
+- **AND** the background is dark (`#111111`)
 
-Scenario: Newsletter signup in footer
-  Given the user views the footer newsletter column
-  Then a text input for email is shown
-  And a "Subscribe" button is present
+#### Scenario: Newsletter signup in footer
+
+- **GIVEN** the user views the footer newsletter column
+- **THEN** a text input for email is shown
+- **AND** a "Subscribe" button is present
 
 ## Verification checklist
 

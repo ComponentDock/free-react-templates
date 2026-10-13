@@ -53,100 +53,123 @@ Recreation of the ColorLib "Spring" church template as a single-page React 19 + 
 | Blog | `bg-light` |
 | Footer | Dark (#343a40 / ftco-bg-dark) |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-Scenario: Navbar renders with brand and navigation links
-  Given the page loads
-  Then the navbar displays brand "Gloria" on a dark background
-  And social icons (Twitter, Facebook, Instagram) are shown
-  And navigation links include: Home, About, Ministries, Sermons, Events, Blog, Contact
-  And the navbar is sticky/fixed on scroll
 
-Scenario: Mobile hamburger menu toggles navigation
-  Given the viewport width is less than 992px
-  When the user clicks the hamburger toggle
-  Then the navigation links are revealed
+#### Scenario: Navbar renders with brand and navigation links
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays brand "Gloria" on a dark background
+- **AND** social icons (Twitter, Facebook, Instagram) are shown
+- **AND** navigation links include: Home, About, Ministries, Sermons, Events, Blog, Contact
+- **AND** the navbar is sticky/fixed on scroll
+
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** the viewport width is less than 992px
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the navigation links are revealed
 
 ### Hero Section
-Scenario: Hero displays headline and CTAs
-  Given the hero section renders
-  Then a full-width background image is displayed with a dark overlay
-  And the heading reads "Helping Grow Your Faith"
-  And a subheading is shown below the heading
-  And two CTA buttons appear: "New here!" (primary tan) and "Live Stream" (white)
+
+#### Scenario: Hero displays headline and CTAs
+
+- **GIVEN** the hero section renders
+- **THEN** a full-width background image is displayed with a dark overlay
+- **AND** the heading reads "Helping Grow Your Faith"
+- **AND** a subheading is shown below the heading
+- **AND** two CTA buttons appear: "New here!" (primary tan) and "Live Stream" (white)
 
 ### Upcoming Events Intro
-Scenario: Events intro shows countdown and event details
-  Given the upcoming events intro section renders
-  Then a background image with dark overlay is shown
-  And a heading displays "Upcoming Events"
-  And an event quote/pastor name is shown
-  And a countdown timer is displayed (days, hours, minutes, seconds)
-  And a "Join our event" CTA button appears
+
+#### Scenario: Events intro shows countdown and event details
+
+- **GIVEN** the upcoming events intro section renders
+- **THEN** a background image with dark overlay is shown
+- **AND** a heading displays "Upcoming Events"
+- **AND** an event quote/pastor name is shown
+- **AND** a countdown timer is displayed (days, hours, minutes, seconds)
+- **AND** a "Join our event" CTA button appears
 
 ### Daily Verse
-Scenario: Daily verse section displays scripture
-  Given the daily verse section renders
-  Then it displays on a light background
-  And a Bible icon is shown
-  And a scripture quote is displayed
-  And the attribution (book/chapter:verse) is shown
+
+#### Scenario: Daily verse section displays scripture
+
+- **GIVEN** the daily verse section renders
+- **THEN** it displays on a light background
+- **AND** a Bible icon is shown
+- **AND** a scripture quote is displayed
+- **AND** the attribution (book/chapter:verse) is shown
 
 ### Church Services
-Scenario: Services section shows 6 service items in two columns
-  Given the church services section renders
-  Then a heading "Church Services" is displayed
-  And 6 service items are shown in a 2-column layout (3 per column)
-  And left column items have icon on right: Daily Prayers, Church Community, Teaching
-  And right column items have icon on left: Helpers, Wedding, Events
-  And each item has an icon, title, and description
+
+#### Scenario: Services section shows 6 service items in two columns
+
+- **GIVEN** the church services section renders
+- **THEN** a heading "Church Services" is displayed
+- **AND** 6 service items are shown in a 2-column layout (3 per column)
+- **AND** left column items have icon on right: Daily Prayers, Church Community, Teaching
+- **AND** right column items have icon on left: Helpers, Wedding, Events
+- **AND** each item has an icon, title, and description
 
 ### Sermon for Today
-Scenario: Sermon section shows featured sermon with video
-  Given the sermon section renders on a light background
-  Then a heading "Sermon for Today" with subheading is displayed
-  And a split layout shows: left image, right text content
-  And the sermon title, speaker, categories, and date are shown
-  And "Watch Sermons" (primary tan) and "Download Sermons" (black) buttons appear
+
+#### Scenario: Sermon section shows featured sermon with video
+
+- **GIVEN** the sermon section renders on a light background
+- **THEN** a heading "Sermon for Today" with subheading is displayed
+- **AND** a split layout shows: left image, right text content
+- **AND** the sermon title, speaker, categories, and date are shown
+- **AND** "Watch Sermons" (primary tan) and "Download Sermons" (black) buttons appear
 
 ### About / Counter Section
-Scenario: About section shows church info and stats
-  Given the about section renders
-  Then the left side shows two stacked images (Sunday Services, Announcement)
-  And the right side shows heading "About" with description text
-  And 4 stat counters are displayed: Members (70,000), Pastors (1,000), Donation (100,000), Churches (100)
-  And each counter has an icon, number, and label
+
+#### Scenario: About section shows church info and stats
+
+- **GIVEN** the about section renders
+- **THEN** the left side shows two stacked images (Sunday Services, Announcement)
+- **AND** the right side shows heading "About" with description text
+- **AND** 4 stat counters are displayed: Members (70,000), Pastors (1,000), Donation (100,000), Churches (100)
+- **AND** each counter has an icon, number, and label
 
 ### Testimony Section
-Scenario: Testimony carousel shows member quotes
-  Given the testimony section renders
-  Then a full-width background image with dark overlay is shown
-  And a heading "Inspirational Testimony" is displayed
-  And a carousel of testimonies is shown
-  And each testimony has: avatar image, quote, member name, and position
+
+#### Scenario: Testimony carousel shows member quotes
+
+- **GIVEN** the testimony section renders
+- **THEN** a full-width background image with dark overlay is shown
+- **AND** a heading "Inspirational Testimony" is displayed
+- **AND** a carousel of testimonies is shown
+- **AND** each testimony has: avatar image, quote, member name, and position
 
 ### Upcoming Events Detail
-Scenario: Events detail section shows event listings and sidebar
-  Given the events detail section renders
-  Then a heading "Upcoming Events" with subheading is displayed
-  And 2 event cards are shown with image + text side by side
-  And each event has: title, date/time, location, address, and "Read more" button
-  And a sidebar shows "Recent Sermons" with: featured sermon card + 2 recent sermon list items
+
+#### Scenario: Events detail section shows event listings and sidebar
+
+- **GIVEN** the events detail section renders
+- **THEN** a heading "Upcoming Events" with subheading is displayed
+- **AND** 2 event cards are shown with image + text side by side
+- **AND** each event has: title, date/time, location, address, and "Read more" button
+- **AND** a sidebar shows "Recent Sermons" with: featured sermon card + 2 recent sermon list items
 
 ### Blog Section
-Scenario: Blog section shows recent posts
-  Given the blog section renders on a light background
-  Then a heading "Recent Blog" is displayed
-  And 3 blog cards are shown in a row
-  And each card has: cover image, date overlay (day/month/year), title, and excerpt
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the blog section renders on a light background
+- **THEN** a heading "Recent Blog" is displayed
+- **AND** 3 blog cards are shown in a row
+- **AND** each card has: cover image, date overlay (day/month/year), title, and excerpt
 
 ### Footer
-Scenario: Footer displays church info and links
-  Given the footer renders with dark background
-  Then 4 columns are shown: Church name + description + social links, About links, Connect links, Service Hours
-  And social icons (Twitter, Facebook, Instagram) are in the first column
-  And the footer links to Component Dock
+
+#### Scenario: Footer displays church info and links
+
+- **GIVEN** the footer renders with dark background
+- **THEN** 4 columns are shown: Church name + description + social links, About links, Connect links, Service Hours
+- **AND** social icons (Twitter, Facebook, Instagram) are in the first column
+- **AND** the footer links to Component Dock
 
 ## Verification checklist
 

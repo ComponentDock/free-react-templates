@@ -48,150 +48,156 @@ Extracted from the live preview's `styles/main_styles.css`:
 9. **Testimonials** — Carousel of testimonial cards: quote text, author avatar, author name + role.
 10. **Footer** — Parallax background, centered logo, three-column layout (useful links, hotel address, contact info), copyright bar with "Made with Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: CoralBay Navbar
 
-  Scenario: Desktop navbar renders all nav links
-    Given the page is loaded on a desktop viewport
-    Then I should see a navbar with links "Home", "About", "Rooms", "News", "Contact"
-    And I should see social media icons for Pinterest, Facebook, Twitter, Dribbble, Behance
-    And I should see a "Book Your Room Now" call-to-action
+#### Scenario: Desktop navbar renders all nav links
 
-  Scenario: Mobile hamburger toggle
-    Given the page is loaded on a mobile viewport
-    Then the nav links should be hidden
-    When I click the hamburger icon
-    Then the mobile menu overlay should appear with all nav links
-```
+- **GIVEN** the page is loaded on a desktop viewport
+- **THEN** I should see a navbar with links "Home", "About", "Rooms", "News", "Contact"
+- **AND** I should see social media icons for Pinterest, Facebook, Twitter, Dribbble, Behance
+- **AND** I should see a "Book Your Room Now" call-to-action
+
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** the page is loaded on a mobile viewport
+- **THEN** the nav links should be hidden
+- **WHEN** I click the hamburger icon
+- **THEN** the mobile menu overlay should appear with all nav links
 
 ### Hero
-```gherkin
+
 Feature: CoralBay Hero
 
-  Scenario: Hero displays heading and CTA
-    Given the page is loaded
-    Then I should see the heading "Book Your Stay"
-    And I should see a paragraph of descriptive text
-    And I should see a "book now" button
+#### Scenario: Hero displays heading and CTA
 
-  Scenario: Hero has parallax background
-    Given the page is loaded
-    Then the hero section should have a background image
-```
+- **GIVEN** the page is loaded
+- **THEN** I should see the heading "Book Your Stay"
+- **AND** I should see a paragraph of descriptive text
+- **AND** I should see a "book now" button
+
+#### Scenario: Hero has parallax background
+
+- **GIVEN** the page is loaded
+- **THEN** the hero section should have a background image
 
 ### Booking Form
-```gherkin
+
 Feature: CoralBay Booking Form
 
-  Scenario: Booking form renders all fields
-    Given the page is loaded
-    Then I should see a check-in date input
-    And I should see a check-out date input
-    And I should see a rooms selector
-    And I should see a "book now" submit button
+#### Scenario: Booking form renders all fields
 
-  Scenario: Booking form fields are interactive
-    Given the page is loaded
-    When I click the check-in input
-    Then a date picker should appear
-```
+- **GIVEN** the page is loaded
+- **THEN** I should see a check-in date input
+- **AND** I should see a check-out date input
+- **AND** I should see a rooms selector
+- **AND** I should see a "book now" submit button
+
+#### Scenario: Booking form fields are interactive
+
+- **GIVEN** the page is loaded
+- **WHEN** I click the check-in input
+- **THEN** a date picker should appear
 
 ### Intro
-```gherkin
+
 Feature: CoralBay Intro
 
-  Scenario: Intro section displays heading and description
-    Given the page is loaded
-    Then I should see the heading "Amazing Hotel in front of the Sea"
-    And I should see a descriptive paragraph below it
-```
+#### Scenario: Intro section displays heading and description
+
+- **GIVEN** the page is loaded
+- **THEN** I should see the heading "Amazing Hotel in front of the Sea"
+- **AND** I should see a descriptive paragraph below it
 
 ### Gallery Slider
-```gherkin
+
 Feature: CoralBay Gallery
 
-  Scenario: Gallery renders image carousel
-    Given the page is loaded
-    Then I should see a carousel of at least 4 gallery images
+#### Scenario: Gallery renders image carousel
 
-  Scenario: Gallery hover shows overlay
-    Given the page is loaded
-    When I hover over a gallery image
-    Then a dark overlay should appear with a venue name and arrow icon
-```
+- **GIVEN** the page is loaded
+- **THEN** I should see a carousel of at least 4 gallery images
+
+#### Scenario: Gallery hover shows overlay
+
+- **GIVEN** the page is loaded
+- **WHEN** I hover over a gallery image
+- **THEN** a dark overlay should appear with a venue name and arrow icon
 
 ### Rooms Right
-```gherkin
+
 Feature: CoralBay Rooms Right
 
-  Scenario: Rooms Right section renders
-    Given the page is loaded
-    Then I should see the heading "Luxury Double Suite"
-    And I should see an image slider of room photos
-    And I should see an amenities list with icon + text items
-    And I should see the price "$129/Night"
-    And I should see a "book now" button
-```
+#### Scenario: Rooms Right section renders
+
+- **GIVEN** the page is loaded
+- **THEN** I should see the heading "Luxury Double Suite"
+- **AND** I should see an image slider of room photos
+- **AND** I should see an amenities list with icon + text items
+- **AND** I should see the price "$129/Night"
+- **AND** I should see a "book now" button
 
 ### Rooms Left
-```gherkin
+
 Feature: CoralBay Rooms Left
 
-  Scenario: Rooms Left section renders
-    Given the page is loaded
-    Then I should see the heading "Luxury Single Room"
-    And I should see an amenities list with icon + text items
-    And I should see the price "$89/Night"
-    And I should see a "book now" button
-    And I should see an image slider of room photos on the right
-```
+#### Scenario: Rooms Left section renders
+
+- **GIVEN** the page is loaded
+- **THEN** I should see the heading "Luxury Single Room"
+- **AND** I should see an amenities list with icon + text items
+- **AND** I should see the price "$89/Night"
+- **AND** I should see a "book now" button
+- **AND** I should see an image slider of room photos on the right
 
 ### Discover
-```gherkin
+
 Feature: CoralBay Discover
 
-  Scenario: Discover section displays heading and content
-    Given the page is loaded
-    Then I should see the heading "Discover CoralBay"
-    And I should see a descriptive paragraph
-    And I should see a highlighted stat number
-    And I should see a "discover" button
+#### Scenario: Discover section displays heading and content
 
-  Scenario: Discover experience cards render
-    Given the page is loaded
-    Then I should see experience cards for "Weddings", "Parties", "Relax"
-    And each card should have a background image with dark overlay
-```
+- **GIVEN** the page is loaded
+- **THEN** I should see the heading "Discover CoralBay"
+- **AND** I should see a descriptive paragraph
+- **AND** I should see a highlighted stat number
+- **AND** I should see a "discover" button
+
+#### Scenario: Discover experience cards render
+
+- **GIVEN** the page is loaded
+- **THEN** I should see experience cards for "Weddings", "Parties", "Relax"
+- **AND** each card should have a background image with dark overlay
 
 ### Testimonials
-```gherkin
+
 Feature: CoralBay Testimonials
 
-  Scenario: Testimonials carousel renders
-    Given the page is loaded
-    Then I should see a carousel of testimonial cards
-    And each card should show a quote, author avatar, author name and role
-```
+#### Scenario: Testimonials carousel renders
+
+- **GIVEN** the page is loaded
+- **THEN** I should see a carousel of testimonial cards
+- **AND** each card should show a quote, author avatar, author name and role
 
 ### Footer
-```gherkin
+
 Feature: CoralBay Footer
 
-  Scenario: Footer renders all columns
-    Given the page is loaded
-    Then I should see a three-column footer layout
-    And column 1 should show useful links
-    And column 2 should show hotel address
-    And column 3 should show contact info (phone, email)
-    And I should see a copyright bar with "Made with Component Dock" link
+#### Scenario: Footer renders all columns
 
-  Scenario: Footer has parallax background
-    Given the page is loaded
-    Then the footer should have a parallax background image
-```
+- **GIVEN** the page is loaded
+- **THEN** I should see a three-column footer layout
+- **AND** column 1 should show useful links
+- **AND** column 2 should show hotel address
+- **AND** column 3 should show contact info (phone, email)
+- **AND** I should see a copyright bar with "Made with Component Dock" link
+
+#### Scenario: Footer has parallax background
+
+- **GIVEN** the page is loaded
+- **THEN** the footer should have a parallax background image
 
 ## Verification checklist
 

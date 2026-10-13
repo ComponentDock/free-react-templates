@@ -59,68 +59,56 @@ Recreation of ColorLib Multi-Select 17 — a Bootstrap-based multi-select dropdo
    - Dropdown menu with scrollable list
 4. **No footer** (component-only demo page)
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with correct heading
+### Feature: SelectCap template behaviour
 
-```gherkin
-Given the user loads the SelectCap page
-Then the heading "Multi-Select #7 (Limit to 7 selection)" is visible
-And the heading is centered on the page
-```
+#### Scenario: Page renders with correct heading
 
-### Scenario: Dropdown opens and shows all state options
+- **GIVEN** the user loads the SelectCap page
+- **THEN** the heading "Multi-Select #7 (Limit to 7 selection)" is visible
+- **AND** the heading is centered on the page
 
-```gherkin
-Given the user loads the SelectCap page
-When the user clicks the select dropdown
-Then 50 US state options are displayed
-And each option has a checkbox-style indicator
-```
+#### Scenario: Dropdown opens and shows all state options
 
-### Scenario: Single selection works
+- **GIVEN** the user loads the SelectCap page
+- **WHEN** the user clicks the select dropdown
+- **THEN** 50 US state options are displayed
+- **AND** each option has a checkbox-style indicator
 
-```gherkin
-Given the dropdown is open
-When the user clicks "Alabama"
-Then "Alabama" becomes selected
-And the checkbox indicator turns green (#8cba51)
-```
+#### Scenario: Single selection works
 
-### Scenario: Multi-selection up to limit
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "Alabama"
+- **THEN** "Alabama" becomes selected
+- **AND** the checkbox indicator turns green (#8cba51)
 
-```gherkin
-Given the dropdown is open
-When the user selects 7 different states
-Then all 7 states show as selected with green indicators
-And the selection count is 7
-```
+#### Scenario: Multi-selection up to limit
 
-### Scenario: Max selection limit enforced
+- **GIVEN** the dropdown is open
+- **WHEN** the user selects 7 different states
+- **THEN** all 7 states show as selected with green indicators
+- **AND** the selection count is 7
 
-```gherkin
-Given the user has selected 7 states
-When the user tries to select an 8th state
-Then the 8th state cannot be selected
-And only 7 states remain selected
-```
+#### Scenario: Max selection limit enforced
 
-### Scenario: Deselecting an item
+- **GIVEN** the user has selected 7 states
+- **WHEN** the user tries to select an 8th state
+- **THEN** the 8th state cannot be selected
+- **AND** only 7 states remain selected
 
-```gherkin
-Given the user has selected 3 states
-When the user clicks a selected state
-Then that state becomes deselected
-And the selection count decreases by 1
-```
+#### Scenario: Deselecting an item
 
-### Scenario: Responsive layout
+- **GIVEN** the user has selected 3 states
+- **WHEN** the user clicks a selected state
+- **THEN** that state becomes deselected
+- **AND** the selection count decreases by 1
 
-```gherkin
-Given the user loads the page on a mobile viewport
-Then the select component remains centered
-And the dropdown adjusts to fit the viewport width
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user loads the page on a mobile viewport
+- **THEN** the select component remains centered
+- **AND** the dropdown adjusts to fit the viewport width
 
 ## Verification checklist
 

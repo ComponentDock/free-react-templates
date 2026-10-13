@@ -46,80 +46,93 @@ Extracted from the live preview stylesheet (`assets/css/style.css`):
 10. **Blog** — 2-column blog cards with image, date overlay, title, excerpt, "Read More" link.
 11. **Footer** — Dark bg, 4-column: logo + phone/email, Our Support links, Quick Links, Newsletter signup form. Bottom bar: copyright + social icons (Twitter, Facebook, Globe, Instagram).
 
-## Gherkin Requirements
+## Requirements
 
-### Background: Lexcounsel law firm template loads correctly
+### Feature: Lexcounsel template behaviour
 
-### Scenario: Header renders with navigation and phone CTA
-- Given a user visits the page
-- Then the header displays with a logo
-- And the navigation menu shows Home, About, Services, Cases, Blog, Contact
-- And a phone number button is visible in the header
+**Background: Lexcounsel law firm template loads correctly**
 
-### Scenario: Hero section displays with CTA
-- Given a user views the hero section
-- Then the section shows a "Committed to success" label
-- And a heading "Dont Feel Helpless We Fight for Justice" is displayed
-- And a paragraph description is visible
-- And a "Learn About Us" button is present
+#### Scenario: Header renders with navigation and phone CTA
 
-### Scenario: Practice areas section shows 3 practice types
-- Given a user scrolls to the practice areas
-- Then 3 practice area cards are visible
-- And each card has an icon, title, description, and "Read More" link
+- **GIVEN** a user visits the page
+- **THEN** the header displays with a logo
+- **AND** the navigation menu shows Home, About, Services, Cases, Blog, Contact
+- **AND** a phone number button is visible in the header
+
+#### Scenario: Hero section displays with CTA
+
+- **GIVEN** a user views the hero section
+- **THEN** the section shows a "Committed to success" label
+- **AND** a heading "Dont Feel Helpless We Fight for Justice" is displayed
+- **AND** a paragraph description is visible
+- **AND** a "Learn About Us" button is present
+
+#### Scenario: Practice areas section shows 3 practice types
+
+- **GIVEN** a user scrolls to the practice areas
+- **THEN** 3 practice area cards are visible
+- **AND** each card has an icon, title, description, and "Read More" link
 - The practice types are Health Law, Insurance Law, and Vehicle Accident
 
-### Scenario: About section shows split layout
-- Given a user views the about section
-- Then a heading "We are commited for better service" is displayed
-- And descriptive paragraphs are shown
-- And a "Learn About Us" button is present
+#### Scenario: About section shows split layout
 
-### Scenario: Contact form renders all fields
-- Given a user scrolls to the contact form
-- Then the heading "World's Leading Law Consultency Agency!" is visible
-- And a Name input field is present
-- And a Phone input field is present
-- And a Practice Area select dropdown is present
-- And an Email input field is present
-- And a Message textarea is present
-- And a Submit Now button is present
+- **GIVEN** a user views the about section
+- **THEN** a heading "We are commited for better service" is displayed
+- **AND** descriptive paragraphs are shown
+- **AND** a "Learn About Us" button is present
 
-### Scenario: Recent work section has tabbed navigation
-- Given a user views the services section
-- Then 3 tabs are visible: Accident Law, Health Law, Insurance Law
-- And clicking a tab shows relevant service cards
-- And each card has an image and caption
+#### Scenario: Contact form renders all fields
 
-### Scenario: CTA banner displays call to action
-- Given a user scrolls to the CTA banner
-- Then "Are you Searching For a First-Class Consultant?" heading is displayed
-- And a "Contact Now" button is present
+- **GIVEN** a user scrolls to the contact form
+- **THEN** the heading "World's Leading Law Consultency Agency!" is visible
+- **AND** a Name input field is present
+- **AND** a Phone input field is present
+- **AND** a Practice Area select dropdown is present
+- **AND** an Email input field is present
+- **AND** a Message textarea is present
+- **AND** a Submit Now button is present
 
-### Scenario: Team section shows 3 members
-- Given a user views the team section
-- Then 3 team member cards are visible
-- And each card shows a photo, name, and role
+#### Scenario: Recent work section has tabbed navigation
+
+- **GIVEN** a user views the services section
+- **THEN** 3 tabs are visible: Accident Law, Health Law, Insurance Law
+- **AND** clicking a tab shows relevant service cards
+- **AND** each card has an image and caption
+
+#### Scenario: CTA banner displays call to action
+
+- **GIVEN** a user scrolls to the CTA banner
+- **THEN** "Are you Searching For a First-Class Consultant?" heading is displayed
+- **AND** a "Contact Now" button is present
+
+#### Scenario: Team section shows 3 members
+
+- **GIVEN** a user views the team section
+- **THEN** 3 team member cards are visible
+- **AND** each card shows a photo, name, and role
 - The team includes Ethan Welch, Trevor Stanley, and Allen Guzman
 
-### Scenario: Testimonial carousel works
-- Given a user views the testimonial section
-- Then a testimonial quote is displayed
-- And the testimonial founder image and name are shown
+#### Scenario: Testimonial carousel works
 
-### Scenario: Blog section shows 2 posts
-- Given a user views the blog section
-- Then 2 blog post cards are visible
-- And each card has an image, date, title, excerpt, and "Read More" link
+- **GIVEN** a user views the testimonial section
+- **THEN** a testimonial quote is displayed
+- **AND** the testimonial founder image and name are shown
 
-### Scenario: Footer has 4-column layout
-- Given a user scrolls to the footer
-- Then the footer shows logo, phone, and email
-- And "Our Support" links column is present
-- And "Quick Links" column is present
-- And newsletter signup form with email input and Send button is present
-- And a copyright line with social icons (Twitter, Facebook, Instagram) is visible
-- And the copyright links to Component Dock
+#### Scenario: Blog section shows 2 posts
+
+- **GIVEN** a user views the blog section
+- **THEN** 2 blog post cards are visible
+- **AND** each card has an image, date, title, excerpt, and "Read More" link
+
+#### Scenario: Footer has 4-column layout
+
+- **GIVEN** a user scrolls to the footer
+- **THEN** the footer shows logo, phone, and email
+- **AND** "Our Support" links column is present
+- **AND** "Quick Links" column is present
+- **AND** newsletter signup form with email input and Send button is present
+- **AND** a copyright line with social icons (Twitter, Facebook, Instagram) is visible
+- **AND** the copyright links to Component Dock
 
 ## Verification Checklist
 

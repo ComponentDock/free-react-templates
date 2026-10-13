@@ -34,62 +34,69 @@ Recreation of ColorLib **Luigis** — a pizza/pasta restaurant landing page.
 5. **Our Menu** — Tab-filtered menu (ALL / PIZZA / PASTA / SALADS / DESERTS). Grid of menu items, each with: small product image, item name, price, short description. "SEE TODAYS MENU" CTA button at bottom.
 6. **Footer** — Dark background. Address, phone, email in columns. Copyright line with "Made with Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Cantina Restaurant Landing Template
 
   Background:
-    Given the Cantina template is loaded in a browser
-    And the viewport is 1440px wide
+- **GIVEN** the Cantina template is loaded in a browser
+- **AND** the viewport is 1440px wide
 
-  Scenario: Navbar displays logo and navigation links
-    Then the navbar shows the "Cantina" logo text
-    And the navbar shows a phone number CTA
-    And the navbar contains links: Home, About Us, Services, News, Contact
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Hero section displays restaurant headline
-    Given the hero section is visible
-    Then the hero shows the subtitle "BEST IN TOWN"
-    And the hero shows the heading "Pizza & Pasta"
-    And the hero shows a "SEE TODAYS MENU" button
-    And the hero has a full-width background image
+- **THEN** the navbar shows the "Cantina" logo text
+- **AND** the navbar shows a phone number CTA
+- **AND** the navbar contains links: Home, About Us, Services, News, Contact
 
-  Scenario: Our Story section shows two-column layout
-    Given the Our Story section is visible
-    Then the heading reads "Our Story"
-    And there are two text paragraphs in the left column
-    And the right column shows a food/restaurant image
-    And decorative side panels are visible on large screens
+#### Scenario: Hero section displays restaurant headline
 
-  Scenario: Best Sellers section displays product cards on dark background
-    Given the Best Sellers section is visible
-    Then the section heading reads "Best Sellers"
-    And the background is dark with a food image
-    And there are 8 product cards in a 4-column grid
-    And each card shows a circular product image
-    And each card shows a ribbon label (OFFER, SPECIALITY, or PLUS SIZE)
-    And each card shows the product name and price
-    And each card has an "Order Now" border button
+- **GIVEN** the hero section is visible
+- **THEN** the hero shows the subtitle "BEST IN TOWN"
+- **AND** the hero shows the heading "Pizza & Pasta"
+- **AND** the hero shows a "SEE TODAYS MENU" button
+- **AND** the hero has a full-width background image
 
-  Scenario: Our Menu section has tab-filtered menu items
-    Given the Our Menu section is visible
-    Then the heading reads "Our Menu"
-    And there are tabs: ALL, PIZZA, PASTA, SALADS, DESERTS
-    And the ALL tab is active by default
-    And menu items show an image, name, price, and description
-    And clicking a tab filters the visible items
+#### Scenario: Our Story section shows two-column layout
 
-  Scenario: Footer shows contact information
-    Given the footer is visible
-    Then it shows an address
-    And it shows a phone number
-    And it shows an email address
-    And it shows a copyright line
-    And it links to https://www.componentdock.com/
+- **GIVEN** the Our Story section is visible
+- **THEN** the heading reads "Our Story"
+- **AND** there are two text paragraphs in the left column
+- **AND** the right column shows a food/restaurant image
+- **AND** decorative side panels are visible on large screens
 
-  Scenario: Responsive layout adapts to mobile
-    Given the viewport is 375px wide
-    Then the navbar collapses to a hamburger menu
-    And the hero text is stacked vertically
-    And product cards are single-column
-    And menu items are stacked vertically
+#### Scenario: Best Sellers section displays product cards on dark background
+
+- **GIVEN** the Best Sellers section is visible
+- **THEN** the section heading reads "Best Sellers"
+- **AND** the background is dark with a food image
+- **AND** there are 8 product cards in a 4-column grid
+- **AND** each card shows a circular product image
+- **AND** each card shows a ribbon label (OFFER, SPECIALITY, or PLUS SIZE)
+- **AND** each card shows the product name and price
+- **AND** each card has an "Order Now" border button
+
+#### Scenario: Our Menu section has tab-filtered menu items
+
+- **GIVEN** the Our Menu section is visible
+- **THEN** the heading reads "Our Menu"
+- **AND** there are tabs: ALL, PIZZA, PASTA, SALADS, DESERTS
+- **AND** the ALL tab is active by default
+- **AND** menu items show an image, name, price, and description
+- **AND** clicking a tab filters the visible items
+
+#### Scenario: Footer shows contact information
+
+- **GIVEN** the footer is visible
+- **THEN** it shows an address
+- **AND** it shows a phone number
+- **AND** it shows an email address
+- **AND** it shows a copyright line
+- **AND** it links to https://www.componentdock.com/
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero text is stacked vertically
+- **AND** product cards are single-column
+- **AND** menu items are stacked vertically

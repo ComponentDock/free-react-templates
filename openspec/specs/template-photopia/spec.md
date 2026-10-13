@@ -62,56 +62,56 @@ Extracted from `css/style.css` and preview HTML on 2026-08-24.
    - Each card: grayscale image with hover color reveal + centered overlay (category heading + "More Photos" button)
 3. **Footer** — simple centered copyright line with heart icon and Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Photopia Photography Portfolio
 
 #### Scenario: Header navigation renders correctly
 
-- **Given** the page loads
-- **When** I view the header
-- **Then** I see the logo "Photopia" in white
-- **And** navigation links: Home, Gallery, Services, About, Contact
-- **And** social media icons (Facebook, Twitter, Instagram, YouTube)
-- **And** a mobile hamburger menu toggle on small screens
+- **GIVEN** the page loads
+- **WHEN** I view the header
+- **THEN** I see the logo "Photopia" in white
+- **AND** navigation links: Home, Gallery, Services, About, Contact
+- **AND** social media icons (Facebook, Twitter, Instagram, YouTube)
+- **AND** a mobile hamburger menu toggle on small screens
 
 #### Scenario: Gallery grid displays photo categories
 
-- **Given** the page loads
-- **When** I view the gallery section
-- **Then** I see a 3-column grid of photo category cards
-- **And** each card has a grayscale image that becomes color on hover
-- **And** each card has a centered overlay with category name and "More Photos" button
-- **And** the categories include: Nature, Portrait, People, Architecture, Animals, Sports, Travel
+- **GIVEN** the page loads
+- **WHEN** I view the gallery section
+- **THEN** I see a 3-column grid of photo category cards
+- **AND** each card has a grayscale image that becomes color on hover
+- **AND** each card has a centered overlay with category name and "More Photos" button
+- **AND** the categories include: Nature, Portrait, People, Architecture, Animals, Sports, Travel
 
 #### Scenario: Image hover effect works
 
-- **Given** the gallery is visible
-- **When** I hover over a photo card
-- **Then** the image transitions from grayscale to color
-- **And** the image scales up slightly (1.01x)
-- **And** a dark overlay appears with the category heading and button
+- **GIVEN** the gallery is visible
+- **WHEN** I hover over a photo card
+- **THEN** the image transitions from grayscale to color
+- **AND** the image scales up slightly (1.01x)
+- **AND** a dark overlay appears with the category heading and button
 
 #### Scenario: Gallery button links work
 
-- **Given** the gallery is visible
-- **When** I click "More Photos" on a category card
-- **Then** I navigate to the single gallery page (placeholder)
+- **GIVEN** the gallery is visible
+- **WHEN** I click "More Photos" on a category card
+- **THEN** I navigate to the single gallery page (placeholder)
 
 #### Scenario: Footer displays correctly
 
-- **Given** the page loads
-- **When** I scroll to the footer
-- **Then** I see a centered copyright line
-- **And** the footer links to https://www.componentdock.com/
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** I see a centered copyright line
+- **AND** the footer links to https://www.componentdock.com/
 
 #### Scenario: Mobile menu works
 
-- **Given** the viewport is mobile width
-- **When** I tap the hamburger menu icon
-- **Then** a mobile navigation menu slides in
-- **And** I can navigate to any page from the mobile menu
-- **And** I can close the mobile menu with the close button
+- **GIVEN** the viewport is mobile width
+- **WHEN** I tap the hamburger menu icon
+- **THEN** a mobile navigation menu slides in
+- **AND** I can navigate to any page from the mobile menu
+- **AND** I can close the mobile menu with the close button
 
 ## Verification Checklist
 

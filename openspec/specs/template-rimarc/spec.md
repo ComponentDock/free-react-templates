@@ -30,75 +30,91 @@ Recreation of the ColorLib "Thebasketball" template as a React 19 + Vite + Tailw
 
 Dark-themed basketball/sports site. Hero with large background imagery and countdown timer. Red (#e02529) is the dominant accent color against near-black backgrounds. Oswald gives a strong, sporty heading style. Sections use alternating dark shades (#100303 vs #111111). The overall feel is energetic and bold — a sports arena aesthetic.
 
-## Gherkin requirements
+## Requirements
 
 ### R1 — Navbar
-**Scenario: Top navigation is visible and functional**
-- Given the user is on the homepage
-- Then a fixed/sticky top navigation bar is visible
-- And the nav contains the site logo/brand name
-- And the nav contains links to all sections (Home, Team, Statistics, Latest Videos, Shop, Contact)
-- And a "Book tickets" CTA button is visible in the nav
+
+#### Scenario: Top navigation is visible and functional
+
+- **GIVEN** the user is on the homepage
+- **THEN** a fixed/sticky top navigation bar is visible
+- **AND** the nav contains the site logo/brand name
+- **AND** the nav contains links to all sections (Home, Team, Statistics, Latest Videos, Shop, Contact)
+- **AND** a "Book tickets" CTA button is visible in the nav
 
 ### R2 — Hero Section
-**Scenario: Hero displays headline, countdown, and CTA**
-- Given the user is on the homepage
-- Then a full-width hero section is displayed with a background image
-- And the headline "National leagues 2020 season begins" is shown
-- And a countdown timer is displayed (days, hours, minutes, seconds)
-- And a "Book tickets" primary button (red #e02529, no border-radius) is visible
-- And the hero supports a carousel/slider for multiple slides
+
+#### Scenario: Hero displays headline, countdown, and CTA
+
+- **GIVEN** the user is on the homepage
+- **THEN** a full-width hero section is displayed with a background image
+- **AND** the headline "National leagues 2020 season begins" is shown
+- **AND** a countdown timer is displayed (days, hours, minutes, seconds)
+- **AND** a "Book tickets" primary button (red #e02529, no border-radius) is visible
+- **AND** the hero supports a carousel/slider for multiple slides
 
 ### R3 — Latest Match
-**Scenario: Latest match shows two teams and result**
-- Given the user is on the homepage
-- Then a "Latest results" section is displayed
-- And today's basketball match is shown with two teams
-- And each team has a name and logo image
-- And the match score/status is visible
+
+#### Scenario: Latest match shows two teams and result
+
+- **GIVEN** the user is on the homepage
+- **THEN** a "Latest results" section is displayed
+- **AND** today's basketball match is shown with two teams
+- **AND** each team has a name and logo image
+- **AND** the match score/status is visible
 
 ### R4 — Team Section
-**Scenario: Team roster shows player cards**
-- Given the user is on the homepage
-- Then a "Team" section is displayed
-- And player cards are shown in a grid (2 columns)
-- And each player card has a photo background, name, and position/title
-- And each card has a "View portfolio" outlined button (#e02529 border)
-- And at least 4 players are displayed
+
+#### Scenario: Team roster shows player cards
+
+- **GIVEN** the user is on the homepage
+- **THEN** a "Team" section is displayed
+- **AND** player cards are shown in a grid (2 columns)
+- **AND** each player card has a photo background, name, and position/title
+- **AND** each card has a "View portfolio" outlined button (#e02529 border)
+- **AND** at least 4 players are displayed
 
 ### R5 — Statistics Section
-**Scenario: Player statistics tabs and slider**
-- Given the user is on the homepage
-- Then a "Player statistics" section is displayed
-- And tabbed navigation allows switching between stat categories
-- And a carousel/slider shows player stat cards
-- And each card shows player name and point total (e.g. "95.5 point")
-- And a league table is also viewable
+
+#### Scenario: Player statistics tabs and slider
+
+- **GIVEN** the user is on the homepage
+- **THEN** a "Player statistics" section is displayed
+- **AND** tabbed navigation allows switching between stat categories
+- **AND** a carousel/slider shows player stat cards
+- **AND** each card shows player name and point total (e.g. "95.5 point")
+- **AND** a league table is also viewable
 
 ### R6 — Latest Videos Section
-**Scenario: Video carousel displays basketball content**
-- Given the user is on the homepage
-- Then a "Latest Videos" section is displayed
-- And a carousel of video thumbnails is shown
-- And each video item has a thumbnail, play icon overlay, and title
-- And at least 4 videos are in the carousel
+
+#### Scenario: Video carousel displays basketball content
+
+- **GIVEN** the user is on the homepage
+- **THEN** a "Latest Videos" section is displayed
+- **AND** a carousel of video thumbnails is shown
+- **AND** each video item has a thumbnail, play icon overlay, and title
+- **AND** at least 4 videos are in the carousel
 
 ### R7 — Product/Shop Section
-**Scenario: Product grid with add-to-cart**
-- Given the user is on the homepage
-- Then a product/shop section is displayed
-- And product items are shown in a grid (4 columns on desktop)
-- And each product has an image, name, and price
-- And each product has an "Add to cart" button
-- And the products are displayed in tabbed groups (multiple carousels)
+
+#### Scenario: Product grid with add-to-cart
+
+- **GIVEN** the user is on the homepage
+- **THEN** a product/shop section is displayed
+- **AND** product items are shown in a grid (4 columns on desktop)
+- **AND** each product has an image, name, and price
+- **AND** each product has an "Add to cart" button
+- **AND** the products are displayed in tabbed groups (multiple carousels)
 
 ### R8 — Footer
-**Scenario: Footer contains widgets and copyright**
-- Given the user scrolls to the bottom
-- Then a dark footer is displayed
-- And footer widgets show About text, recent posts, and contact info
-- And a copyright notice is shown
-- And a link to Component Dock (https://www.componentdock.com/) is present
+
+#### Scenario: Footer contains widgets and copyright
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a dark footer is displayed
+- **AND** footer widgets show About text, recent posts, and contact info
+- **AND** a copyright notice is shown
+- **AND** a link to Component Dock (https://www.componentdock.com/) is present
 
 ## Verification checklist
 

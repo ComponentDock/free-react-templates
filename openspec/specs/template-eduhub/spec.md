@@ -38,51 +38,67 @@ Recreation of ColorLib's **OneSchool** template as a React 19 + Vite + Tailwind 
 10. **Why Choose Us** — 6 reason cards (Top Professionals, Expand Knowledge, etc.)
 11. **Footer** — White bg, Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: EduHub template behaviour
+
 Feature: EduHub Navigation
-  Scenario: Navbar shows logo and links
-    Given the user visits the EduHub homepage
-    Then the navbar shows "EduHub" logo
-    And links: Home, Courses, Programs, Teachers, Contact Us
+
+#### Scenario: Navbar shows logo and links
+
+- **GIVEN** the user visits the EduHub homepage
+- **THEN** the navbar shows "EduHub" logo
+- **AND** links: Home, Courses, Programs, Teachers, Contact Us
 
 Feature: EduHub Hero
-  Scenario: Hero displays headline and CTA
-    Given the user visits the homepage
-    Then "Learn From The Expert" heading is shown
-    And an "Admission Now" button is visible
+
+#### Scenario: Hero displays headline and CTA
+
+- **GIVEN** the user visits the homepage
+- **THEN** "Learn From The Expert" heading is shown
+- **AND** an "Admission Now" button is visible
 
 Feature: EduHub Courses
-  Scenario: Course carousel displayed
-    Given the user scrolls to courses
-    Then 6 course cards are shown with prev/next navigation
+
+#### Scenario: Course carousel displayed
+
+- **GIVEN** the user scrolls to courses
+- **THEN** 6 course cards are shown with prev/next navigation
 
 Feature: EduHub Programs
-  Scenario: Programs section shown
-    Given the user scrolls to programs
-    Then "Our Programs" heading is visible
+
+#### Scenario: Programs section shown
+
+- **GIVEN** the user scrolls to programs
+- **THEN** "Our Programs" heading is visible
 
 Feature: EduHub Stats
-  Scenario: Education stats displayed
-    Given the user scrolls to stats
-    Then "We Are Excellent In Education" heading and stats are shown
+
+#### Scenario: Education stats displayed
+
+- **GIVEN** the user scrolls to stats
+- **THEN** "We Are Excellent In Education" heading and stats are shown
 
 Feature: EduHub Teachers
-  Scenario: Teacher profiles shown
-    Given the user scrolls to teachers
-    Then 4 teacher profiles with names and circular avatars appear
+
+#### Scenario: Teacher profiles shown
+
+- **GIVEN** the user scrolls to teachers
+- **THEN** 4 teacher profiles with names and circular avatars appear
 
 Feature: EduHub Why Choose Us
-  Scenario: Reasons displayed
-    Given the user scrolls to why choose us
-    Then 6 reason cards with icons and text are shown
+
+#### Scenario: Reasons displayed
+
+- **GIVEN** the user scrolls to why choose us
+- **THEN** 6 reason cards with icons and text are shown
 
 Feature: EduHub Footer
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" branded "Component Dock" exists
-```
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" branded "Component Dock" exists
 
 ## Verification checklist
 

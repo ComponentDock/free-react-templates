@@ -104,97 +104,109 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Dark background
 - Copyright text + "Made with ❤ by Component Dock" (replace Colorlib)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Gustoso template behaviour
+
 Feature: Gustoso — Restaurant / Fine Dining Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "Gustoso"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "Gustoso"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo with cutlery icon and "Gustoso" text is visible
-    And on desktop a hamburger menu icon is visible
-    And on mobile viewports the hamburger menu toggles a full-screen overlay
-    And the overlay contains a search input and navigation links
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero slider displays with food imagery
-    Given the hero section is in the viewport
-    Then a full-width slider with background food images is visible
-    And the heading "Special & Fresh Food" is displayed in serif font
-    And a cutlery icon is shown above the heading
-    And a "Book a table" orange button is visible
-    And dot pagination indicators are present
-    And a mouse scroll icon is at the bottom
+- **GIVEN** the user is on any viewport
+- **THEN** the logo with cutlery icon and "Gustoso" text is visible
+- **AND** on desktop a hamburger menu icon is visible
+- **AND** on mobile viewports the hamburger menu toggles a full-screen overlay
+- **AND** the overlay contains a search input and navigation links
 
-  Scenario: Hero slider advances slides
-    Given the hero slider is showing slide 1
-    When the user clicks the next dot indicator
-    Then slide 2 is displayed with heading "Exquisite Dishes From Chef"
+#### Scenario: Hero slider displays with food imagery
 
-  Scenario: Info bar shows contact details
-    Given the info bar is scrolled into view
-    Then 4 columns are visible: Address, Opening Time, Phone, Email
-    And each column has an icon above the label
-    And the background is dark purple
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width slider with background food images is visible
+- **AND** the heading "Special & Fresh Food" is displayed in serif font
+- **AND** a cutlery icon is shown above the heading
+- **AND** a "Book a table" orange button is visible
+- **AND** dot pagination indicators are present
+- **AND** a mouse scroll icon is at the bottom
 
-  Scenario: About section displays correctly
-    Given the about section is scrolled into view
-    Then the heading "Welcome to Gustoso" is visible
-    And a description paragraph is shown
-    And an image with a play button overlay is present
-    And 3 specialty cards are displayed below
+#### Scenario: Hero slider advances slides
 
-  Scenario: Video CTA section renders
-    Given the video CTA section is scrolled into view
-    Then a background image with dark overlay is visible
-    And the heading "Foods you love to taste" is displayed
-    And a "Watch Video" outline button is visible
+- **GIVEN** the hero slider is showing slide 1
+- **WHEN** the user clicks the next dot indicator
+- **THEN** slide 2 is displayed with heading "Exquisite Dishes From Chef"
 
-  Scenario: Specialties section shows 3 items
-    Given the specialties section is scrolled into view
-    Then the heading "Our Delicious Specialties" is visible
-    And 3 specialty cards with images and titles are displayed
+#### Scenario: Info bar shows contact details
 
-  Scenario: Testimonials carousel works
-    Given the testimonials section is scrolled into view
-    Then the heading "Our Customer Says" is visible
-    And at least one blockquote with text and author name is shown
-    And carousel navigation is present
+- **GIVEN** the info bar is scrolled into view
+- **THEN** 4 columns are visible: Address, Opening Time, Phone, Email
+- **AND** each column has an icon above the label
+- **AND** the background is dark purple
 
-  Scenario: Menu section filters by category
-    Given the menu section is scrolled into view
-    Then the heading "Lutong Bahay Menu" is visible
-    And tab buttons "Main", "Desserts", "Drinks" are visible
-    When the user clicks the "Desserts" tab
-    Then dessert menu items are displayed
-    And each item shows a food image, name, price, and category tags
+#### Scenario: About section displays correctly
 
-  Scenario: Reservation form renders correctly
-    Given the reservation section is scrolled into view
-    Then the heading "Make A Reservation" is visible
-    And form fields Fullname, Email, Phone, Date, Time, Person are present
-    And a "Book a table" submit button is visible
+- **GIVEN** the about section is scrolled into view
+- **THEN** the heading "Welcome to Gustoso" is visible
+- **AND** a description paragraph is shown
+- **AND** an image with a play button overlay is present
+- **AND** 3 specialty cards are displayed below
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then the "Gustoso" brand heading is visible
-    And social media icon links are present (Facebook, Twitter, Google+, Dribbble)
-    And 3 latest blog posts with thumbnails are shown
-    And 4 Instagram image thumbnails are shown
-    And a newsletter signup with email input and "Subscribe" button is present
-    And a link to "https://www.componentdock.com/" is present
+#### Scenario: Video CTA section renders
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And info bar columns stack vertically
-    And specialty/menu columns stack vertically
-    And the reservation form remains usable
-```
+- **GIVEN** the video CTA section is scrolled into view
+- **THEN** a background image with dark overlay is visible
+- **AND** the heading "Foods you love to taste" is displayed
+- **AND** a "Watch Video" outline button is visible
+
+#### Scenario: Specialties section shows 3 items
+
+- **GIVEN** the specialties section is scrolled into view
+- **THEN** the heading "Our Delicious Specialties" is visible
+- **AND** 3 specialty cards with images and titles are displayed
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the testimonials section is scrolled into view
+- **THEN** the heading "Our Customer Says" is visible
+- **AND** at least one blockquote with text and author name is shown
+- **AND** carousel navigation is present
+
+#### Scenario: Menu section filters by category
+
+- **GIVEN** the menu section is scrolled into view
+- **THEN** the heading "Lutong Bahay Menu" is visible
+- **AND** tab buttons "Main", "Desserts", "Drinks" are visible
+- **WHEN** the user clicks the "Desserts" tab
+- **THEN** dessert menu items are displayed
+- **AND** each item shows a food image, name, price, and category tags
+
+#### Scenario: Reservation form renders correctly
+
+- **GIVEN** the reservation section is scrolled into view
+- **THEN** the heading "Make A Reservation" is visible
+- **AND** form fields Fullname, Email, Phone, Date, Time, Person are present
+- **AND** a "Book a table" submit button is visible
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** the "Gustoso" brand heading is visible
+- **AND** social media icon links are present (Facebook, Twitter, Google+, Dribbble)
+- **AND** 3 latest blog posts with thumbnails are shown
+- **AND** 4 Instagram image thumbnails are shown
+- **AND** a newsletter signup with email input and "Subscribe" button is present
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** info bar columns stack vertically
+- **AND** specialty/menu columns stack vertically
+- **AND** the reservation form remains usable
 
 ## Verification Checklist
 

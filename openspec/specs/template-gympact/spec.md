@@ -44,122 +44,123 @@ Extracted from `https://preview.colorlib.com/theme/gym/css/main.css`:
 | Primary button | `border-radius: 25px`, `line-height: 42px`, `padding: 0 30px 0 60px`, `background: #f6214b`, `color: #fff` | All CTA buttons |
 | Button hover | `color: #f6214b`, `border: 1px solid #f6214b`, `background: #fff` | All CTA button hover states |
 
-## Gherkin Scenarios
+## Requirements
 
 ### Header
-```gherkin
-Scenario: Header displays top bar with tagline, logo, and phone
-  Given the user visits the page
-  Then the header shows a left tagline "We believe we helps people for happier lives"
-  And the center shows a logo image
-  And the right side shows phone number "+880 123 12 658 439"
 
-Scenario: Navigation menu shows all section links
-  Given the user visits the page
-  Then the nav menu has links: Home, We Offer, Top Course, Schedule, Trainer, Plan
-  And clicking each link scrolls to the corresponding section
-```
+#### Scenario: Header displays top bar with tagline, logo, and phone
+
+- **GIVEN** the user visits the page
+- **THEN** the header shows a left tagline "We believe we helps people for happier lives"
+- **AND** the center shows a logo image
+- **AND** the right side shows phone number "+880 123 12 658 439"
+
+#### Scenario: Navigation menu shows all section links
+
+- **GIVEN** the user visits the page
+- **THEN** the nav menu has links: Home, We Offer, Top Course, Schedule, Trainer, Plan
+- **AND** clicking each link scrolls to the corresponding section
 
 ### Banner / Hero
-```gherkin
-Scenario: Hero banner shows headline and subtitle
-  Given the user visits the page
-  Then a full-width hero section is visible with a dark overlay background
-  And the headline reads "Real Fitness Depends on Exercise" in uppercase
-  And the subtitle reads "Shape your body well."
-```
+
+#### Scenario: Hero banner shows headline and subtitle
+
+- **GIVEN** the user visits the page
+- **THEN** a full-width hero section is visible with a dark overlay background
+- **AND** the headline reads "Real Fitness Depends on Exercise" in uppercase
+- **AND** the subtitle reads "Shape your body well."
 
 ### Offer Section
-```gherkin
-Scenario: Offer section displays three cards
-  Given the user scrolls to the offer section
-  Then the title reads "We care about what we offer"
-  And three cards are displayed: "Regular Exercise", "Training on the go", "Body Building Packages"
-  And each card has an icon/image and a paragraph description
-```
+
+#### Scenario: Offer section displays three cards
+
+- **GIVEN** the user scrolls to the offer section
+- **THEN** the title reads "We care about what we offer"
+- **AND** three cards are displayed: "Regular Exercise", "Training on the go", "Body Building Packages"
+- **AND** each card has an icon/image and a paragraph description
 
 ### BMI Calculator
-```gherkin
-Scenario: BMI calculator section renders inputs and button
-  Given the user scrolls to the BMI section
-  Then the section has a red (#f6214b) background
-  And the title reads "Calculate Your Body Mass Index"
-  And there are two text inputs: height (inches) and weight (lbs)
-  And a "Calculate Your BMI" button is visible
-```
+
+#### Scenario: BMI calculator section renders inputs and button
+
+- **GIVEN** the user scrolls to the BMI section
+- **THEN** the section has a red (#f6214b) background
+- **AND** the title reads "Calculate Your Body Mass Index"
+- **AND** there are two text inputs: height (inches) and weight (lbs)
+- **AND** a "Calculate Your BMI" button is visible
 
 ### Top Courses
-```gherkin
-Scenario: Top courses section displays three course cards
-  Given the user scrolls to the courses section
-  Then the title reads "Top Courses That are open for Students"
-  And three course cards are displayed with thumbnails
-  And each card shows a "Course Available" badge
-  And each card shows a course name and price (e.g. "Running Classes $275")
-```
+
+#### Scenario: Top courses section displays three course cards
+
+- **GIVEN** the user scrolls to the courses section
+- **THEN** the title reads "Top Courses That are open for Students"
+- **AND** three course cards are displayed with thumbnails
+- **AND** each card shows a "Course Available" badge
+- **AND** each card shows a course name and price (e.g. "Running Classes $275")
 
 ### Features
-```gherkin
-Scenario: Features section shows 2x2 image-text grid on dark background
-  Given the user scrolls to the features section
-  Then the section has a dark (#222) background
-  And there are two rows, each with an image and a text block
-  And each text block has a subtitle "Basic & Common Repairs" and title "Basic Revolutions"
-```
+
+#### Scenario: Features section shows 2x2 image-text grid on dark background
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** the section has a dark (#222) background
+- **AND** there are two rows, each with an image and a text block
+- **AND** each text block has a subtitle "Basic & Common Repairs" and title "Basic Revolutions"
 
 ### Schedule
-```gherkin
-Scenario: Schedule section shows a weekly timetable
-  Given the user scrolls to the schedule section
-  Then the title reads "Schedule your Fitness Process"
-  And a table is displayed with columns: Course Name, Mon, Tue, Wed, Thu, Fri
-  And rows include "Fitness Aero" and "Senior Fitness" with time slots
-```
+
+#### Scenario: Schedule section shows a weekly timetable
+
+- **GIVEN** the user scrolls to the schedule section
+- **THEN** the title reads "Schedule your Fitness Process"
+- **AND** a table is displayed with columns: Course Name, Mon, Tue, Wed, Thu, Fri
+- **AND** rows include "Fitness Aero" and "Senior Fitness" with time slots
 
 ### Team / Trainers
-```gherkin
-Scenario: Team section shows four trainer cards
-  Given the user scrolls to the trainers section
-  Then the title reads "Our Experienced Trainers"
-  And four trainer cards are displayed with photos
-  And each card has a name and role (e.g. "Ethel Davis", "Managing Director (Sales)")
-  And hovering a card reveals social icons (Facebook, Twitter, LinkedIn)
-```
+
+#### Scenario: Team section shows four trainer cards
+
+- **GIVEN** the user scrolls to the trainers section
+- **THEN** the title reads "Our Experienced Trainers"
+- **AND** four trainer cards are displayed with photos
+- **AND** each card has a name and role (e.g. "Ethel Davis", "Managing Director (Sales)")
+- **AND** hovering a card reveals social icons (Facebook, Twitter, LinkedIn)
 
 ### Pricing
-```gherkin
-Scenario: Pricing section shows three plan cards
-  Given the user scrolls to the pricing section
-  Then the title reads "Choose the Perfect Plan for you"
-  And three cards are displayed: Standard (£199), Business (£399), Ultimate (£499)
-  And each card lists features and has a "Purchase Plan" button
-```
+
+#### Scenario: Pricing section shows three plan cards
+
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** the title reads "Choose the Perfect Plan for you"
+- **AND** three cards are displayed: Standard (£199), Business (£399), Ultimate (£499)
+- **AND** each card lists features and has a "Purchase Plan" button
 
 ### Brand Logos
-```gherkin
-Scenario: Brand section shows partner logos
-  Given the user scrolls to the brand section
-  Then five partner logos are displayed in a horizontal row
-```
+
+#### Scenario: Brand section shows partner logos
+
+- **GIVEN** the user scrolls to the brand section
+- **THEN** five partner logos are displayed in a horizontal row
 
 ### Call to Action
-```gherkin
-Scenario: CTA section has dark overlay and member button
-  Given the user scrolls to the CTA section
-  Then the section has a dark overlay background image
-  And the headline reads "Huge Transaction in last Week"
-  And a "Become a Member" button is displayed
-```
+
+#### Scenario: CTA section has dark overlay and member button
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the section has a dark overlay background image
+- **AND** the headline reads "Huge Transaction in last Week"
+- **AND** a "Become a Member" button is displayed
 
 ### Footer
-```gherkin
-Scenario: Footer has three columns and bottom bar
-  Given the user scrolls to the footer
-  Then the footer shows "About Us", "Contact Us", and "Newsletter" columns
-  And the newsletter column has an email input and submit arrow button
-  And the bottom bar has copyright text and social icons (Facebook, Twitter, Dribbble, Behance)
-  And the footer links to https://www.componentdock.com/
-```
+
+#### Scenario: Footer has three columns and bottom bar
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer shows "About Us", "Contact Us", and "Newsletter" columns
+- **AND** the newsletter column has an email input and submit arrow button
+- **AND** the bottom bar has copyright text and social icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification Checklist
 

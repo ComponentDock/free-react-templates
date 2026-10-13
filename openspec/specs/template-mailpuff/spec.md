@@ -131,74 +131,68 @@ Extracted from the preview's `css/style.css` (custom styles, after Bootstrap
 | Modal body | `#fff` (white, inherits from modal-content) |
 | Skew cuts | `#fff` (white, creates angular transition) |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page loads with centered launch button
-```gherkin
-Given the user visits the Mailpuff page
-Then the page title "Mailpuff" is visible
-And a "Launch Mailpuff" button is displayed centered on the page
-And the page background is white
-```
+### Feature: Mailpuff template behaviour
 
-### Scenario: Launch button opens the confirmation modal
-```gherkin
-Given the user is on the Mailpuff page
-When the user clicks the "Launch Mailpuff" button
-Then a modal dialog appears centered in the viewport
-And the modal has a gradient header (purple to orange)
-And the modal displays the email confirmation content
-And the page background behind the modal is dimmed
-```
+#### Scenario: Page loads with centered launch button
 
-### Scenario: Modal displays email confirmation content
-```gherkin
-Given the modal is open
-Then a circular email icon is visible in the modal
-And the heading "You've Got Mail!" is displayed
-And the subtext "We sent confirmation link to:" is shown
-And the email address "johndoe@gmail.com" is displayed prominently
-```
+- **GIVEN** the user visits the Mailpuff page
+- **THEN** the page title "Mailpuff" is visible
+- **AND** a "Launch Mailpuff" button is displayed centered on the page
+- **AND** the page background is white
 
-### Scenario: Modal close button dismisses the modal
-```gherkin
-Given the modal is open
-When the user clicks the close (×) button in the top-right corner
-Then the modal closes and is no longer visible
-And the page returns to its initial state with the launch button
-```
+#### Scenario: Launch button opens the confirmation modal
 
-### Scenario: Modal has gradient header with angular skew
-```gherkin
-Given the modal is open
-Then the modal header displays a purple-to-orange gradient background
-And the bottom of the header has angular white skew cuts on both sides
-And the modal body overlaps the header slightly (negative margin)
-```
+- **GIVEN** the user is on the Mailpuff page
+- **WHEN** the user clicks the "Launch Mailpuff" button
+- **THEN** a modal dialog appears centered in the viewport
+- **AND** the modal has a gradient header (purple to orange)
+- **AND** the modal displays the email confirmation content
+- **AND** the page background behind the modal is dimmed
 
-### Scenario: Modal has proper shadow and no border
-```gherkin
-Given the modal is open
-Then the modal card has a drop shadow
-And the modal card has no visible border
-And the modal content is white with no padding on the header
-```
+#### Scenario: Modal displays email confirmation content
 
-### Scenario: Accessibility — modal can be closed with keyboard
-```gherkin
-Given the modal is open
-When the user presses the Escape key
-Then the modal closes
-```
+- **GIVEN** the modal is open
+- **THEN** a circular email icon is visible in the modal
+- **AND** the heading "You've Got Mail!" is displayed
+- **AND** the subtext "We sent confirmation link to:" is shown
+- **AND** the email address "johndoe@gmail.com" is displayed prominently
 
-### Scenario: Responsive — modal adapts to viewport
-```gherkin
-Given the user views the page on a mobile device
-When the user opens the modal
-Then the modal fills the available width (max 600px)
-And the modal content remains readable
-And the launch button remains centered on the page
-```
+#### Scenario: Modal close button dismisses the modal
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close (×) button in the top-right corner
+- **THEN** the modal closes and is no longer visible
+- **AND** the page returns to its initial state with the launch button
+
+#### Scenario: Modal has gradient header with angular skew
+
+- **GIVEN** the modal is open
+- **THEN** the modal header displays a purple-to-orange gradient background
+- **AND** the bottom of the header has angular white skew cuts on both sides
+- **AND** the modal body overlaps the header slightly (negative margin)
+
+#### Scenario: Modal has proper shadow and no border
+
+- **GIVEN** the modal is open
+- **THEN** the modal card has a drop shadow
+- **AND** the modal card has no visible border
+- **AND** the modal content is white with no padding on the header
+
+#### Scenario: Accessibility — modal can be closed with keyboard
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
+
+#### Scenario: Responsive — modal adapts to viewport
+
+- **GIVEN** the user views the page on a mobile device
+- **WHEN** the user opens the modal
+- **THEN** the modal fills the available width (max 600px)
+- **AND** the modal content remains readable
+- **AND** the launch button remains centered on the page
 
 ## Verification checklist
 

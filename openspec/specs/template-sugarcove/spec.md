@@ -36,7 +36,7 @@
 - **Hero Height**: `min-height: 820px`
 - **Box Shadow (sticky nav)**: `0 10px 15px rgba(25, 25, 25, 0.1)`
 
-## Gherkin Requirements
+## Requirements
 
 ### Requirement: Sticky navigation header
 

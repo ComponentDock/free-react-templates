@@ -38,86 +38,98 @@ Extracted from the preview's `css/style.css`:
 7. **Choose Us** — "Why choose us?" heading + 3 feature items: Highly Professional Staff, Using Latest Mechanical System, Certified Material in a Timely. Each: icon bg shape + title + paragraph
 8. **Footer** — 2-column: left = logo + description + contact info (address, phone, email); right = embedded Google Map. Copyright line + social links (Facebook, Twitter, Instagram, YouTube)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header
 
-Scenario: Logo and navigation display
-  Given the user is on any page
-  Then the logo image is visible in the header
-  And navigation links "Home", "About", "Services", "Blog", "Contact" are visible
+#### Scenario: Logo and navigation display
 
-Scenario: Mobile hamburger menu
-  Given the viewport is mobile width (< 768px)
-  Then a hamburger menu icon is visible
-  And clicking it opens a slide-in mobile menu
+- **GIVEN** the user is on any page
+- **THEN** the logo image is visible in the header
+- **AND** navigation links "Home", "About", "Services", "Blog", "Contact" are visible
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is mobile width (< 768px)
+- **THEN** a hamburger menu icon is visible
+- **AND** clicking it opens a slide-in mobile menu
 
 ### Feature: Hero Slider
 
-Scenario: Hero slider displays
-  Given the user lands on the page
-  Then a hero slider with 2 slides is shown
-  And the heading "New construction remodeling, additions" is displayed
-  And a "Contact us" pill-shaped button is visible
+#### Scenario: Hero slider displays
 
-Scenario: Hero auto-slides
-  Given the hero slider is loaded
-  Then slides advance automatically at regular intervals
+- **GIVEN** the user lands on the page
+- **THEN** a hero slider with 2 slides is shown
+- **AND** the heading "New construction remodeling, additions" is displayed
+- **AND** a "Contact us" pill-shaped button is visible
+
+#### Scenario: Hero auto-slides
+
+- **GIVEN** the hero slider is loaded
+- **THEN** slides advance automatically at regular intervals
 
 ### Feature: About Section
 
-Scenario: About content displays
-  Given the user scrolls past the hero
-  Then "About woodworking" label and "30 years of woodworking experience" heading are shown
-  And a descriptive paragraph is visible
-  And 3 images are displayed on the left
+#### Scenario: About content displays
 
-Scenario: Counter stats display
-  Given the about section is visible
-  Then 3 counter stats are shown: "1800+ Projects", "1200+ Clients", "150+ Awards"
+- **GIVEN** the user scrolls past the hero
+- **THEN** "About woodworking" label and "30 years of woodworking experience" heading are shown
+- **AND** a descriptive paragraph is visible
+- **AND** 3 images are displayed on the left
+
+#### Scenario: Counter stats display
+
+- **GIVEN** the about section is visible
+- **THEN** 3 counter stats are shown: "1800+ Projects", "1200+ Clients", "150+ Awards"
 
 ### Feature: Services
 
-Scenario: Service cards display
-  Given the user scrolls to the services section
-  Then 4 service cards appear in a carousel
-  And each has a background image and title overlay
-  And services are: Design Solutions, Exterior Design, Moldings & Trim, Office Furniture
+#### Scenario: Service cards display
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 4 service cards appear in a carousel
+- **AND** each has a background image and title overlay
+- **AND** services are: Design Solutions, Exterior Design, Moldings & Trim, Office Furniture
 
 ### Feature: Testimonials
 
-Scenario: Testimonial slider displays
-  Given the user scrolls to testimonials
-  Then a testimonial slider shows quote icon, paragraph, author name + location
-  And 5-star rating is displayed for each testimonial
+#### Scenario: Testimonial slider displays
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** a testimonial slider shows quote icon, paragraph, author name + location
+- **AND** 5-star rating is displayed for each testimonial
 
 ### Feature: Portfolio
 
-Scenario: Portfolio grid displays
-  Given the user scrolls to the portfolio section
-  Then 3 project images are displayed in a row
-  And each has a text overlay with project title and location
+#### Scenario: Portfolio grid displays
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** 3 project images are displayed in a row
+- **AND** each has a text overlay with project title and location
 
 ### Feature: Choose Us
 
-Scenario: Why choose us section displays
-  Given the user scrolls to the choose us section
-  Then "Why choose us?" heading is shown
-  And "High quality is the standard" subheading is displayed
-  And 3 feature items appear: "Highly professional staff", "Using latest mechanical system", "Certified material in a timely"
-  And a "Contact us" border button is present
+#### Scenario: Why choose us section displays
+
+- **GIVEN** the user scrolls to the choose us section
+- **THEN** "Why choose us?" heading is shown
+- **AND** "High quality is the standard" subheading is displayed
+- **AND** 3 feature items appear: "Highly professional staff", "Using latest mechanical system", "Certified material in a timely"
+- **AND** a "Contact us" border button is present
 
 ### Feature: Footer
 
-Scenario: Footer layout
-  Given the user scrolls to the footer
-  Then logo, description, and contact info (address, phone, email) are shown
-  And a Google Map embed is visible
-  And copyright line with social links (Facebook, Twitter, Instagram, YouTube) is at the bottom
+#### Scenario: Footer layout
 
-Scenario: Footer links to Component Dock
-  Given the footer is visible
-  Then a link to https://www.componentdock.com/ is present with text "Component Dock"
+- **GIVEN** the user scrolls to the footer
+- **THEN** logo, description, and contact info (address, phone, email) are shown
+- **AND** a Google Map embed is visible
+- **AND** copyright line with social links (Facebook, Twitter, Instagram, YouTube) is at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
 ## Verification Checklist
 

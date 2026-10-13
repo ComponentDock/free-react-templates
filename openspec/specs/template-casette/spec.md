@@ -60,194 +60,195 @@ Recreation of ColorLib **CA App Landing** template.
 - Single-page scroll layout with anchor navigation
 - Footer: standard dark footer with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
 ### Hero Section
 
-```gherkin
 Feature: Hero Section
-  As a visitor, I see the app landing hero so I understand the product value.
+As a visitor, I see the app landing hero so I understand the product value.
 
-  Scenario: Hero displays gradient background
-    Given I am on the page
-    Then the hero section has a purple-to-indigo gradient background
+#### Scenario: Hero displays gradient background
 
-  Scenario: Hero displays headline and subtext
-    Given I am on the page
-    Then the hero shows a large heading "<app name>"
-    And the hero shows a subtitle describing the app value proposition
+- **GIVEN** I am on the page
+- **THEN** the hero section has a purple-to-indigo gradient background
 
-  Scenario: Hero has email input and CTA button
-    Given I am on the page
-    Then the hero has an email input field with placeholder text
-    And the hero has a "Get Started" CTA button in pink/coral color
+#### Scenario: Hero displays headline and subtext
 
-  Scenario: Hero shows phone mockup
-    Given I am on the page
-    Then the hero displays a phone mockup image on the right side
+- **GIVEN** I am on the page
+- **THEN** the hero shows a large heading "<app name>"
+- **AND** the hero shows a subtitle describing the app value proposition
 
-  Scenario: Hero has wavy bottom separator
-    Given I am on the page
-    Then the hero bottom edge has a wavy SVG separator transitioning to white
-```
+#### Scenario: Hero has email input and CTA button
+
+- **GIVEN** I am on the page
+- **THEN** the hero has an email input field with placeholder text
+- **AND** the hero has a "Get Started" CTA button in pink/coral color
+
+#### Scenario: Hero shows phone mockup
+
+- **GIVEN** I am on the page
+- **THEN** the hero displays a phone mockup image on the right side
+
+#### Scenario: Hero has wavy bottom separator
+
+- **GIVEN** I am on the page
+- **THEN** the hero bottom edge has a wavy SVG separator transitioning to white
 
 ### Navbar
 
-```gherkin
 Feature: Navigation Bar
-  As a visitor, I see a navigation bar to move between sections.
+As a visitor, I see a navigation bar to move between sections.
 
-  Scenario: Navbar displays logo
-    Given I am on the page
-    Then the navbar shows a logo text on the left
+#### Scenario: Navbar displays logo
 
-  Scenario: Navbar displays navigation links
-    Given I am on the page
-    Then the navbar shows links for Home, About, Features, Screenshot, Pricing, Testimonials, Team, Contact
+- **GIVEN** I am on the page
+- **THEN** the navbar shows a logo text on the left
 
-  Scenario: Navbar has CTA button
-    Given I am on the page
-    Then the navbar shows a "Sign Up Free" outlined button on the right
+#### Scenario: Navbar displays navigation links
 
-  Scenario: Navbar is transparent over hero
-    Given I am on the page
-    Then the navbar background is transparent and overlays the hero gradient
-```
+- **GIVEN** I am on the page
+- **THEN** the navbar shows links for Home, About, Features, Screenshot, Pricing, Testimonials, Team, Contact
+
+#### Scenario: Navbar has CTA button
+
+- **GIVEN** I am on the page
+- **THEN** the navbar shows a "Sign Up Free" outlined button on the right
+
+#### Scenario: Navbar is transparent over hero
+
+- **GIVEN** I am on the page
+- **THEN** the navbar background is transparent and overlays the hero gradient
 
 ### Features Section
 
-```gherkin
 Feature: Features Section
-  As a visitor, I see the features section to understand why the app is special.
+As a visitor, I see the features section to understand why the app is special.
 
-  Scenario: Features section heading
-    Given I scroll to the features section
-    Then I see a heading "Why Is It Special"
-    And the heading has a purple underline accent
+#### Scenario: Features section heading
 
-  Scenario: Features display three cards
-    Given I scroll to the features section
-    Then there are 3 feature cards displayed in a row
-    And each card has an icon, a title, and a description
+- **GIVEN** I scroll to the features section
+- **THEN** I see a heading "Why Is It Special"
+- **AND** the heading has a purple underline accent
 
-  Scenario: Feature card structure
-    Given I look at a feature card
-    Then the card has a purple icon at the top
-    And the card has a bold title below the icon
-    And the card has descriptive body text below the title
-    And the card has rounded corners and light background
-```
+#### Scenario: Features display three cards
+
+- **GIVEN** I scroll to the features section
+- **THEN** there are 3 feature cards displayed in a row
+- **AND** each card has an icon, a title, and a description
+
+#### Scenario: Feature card structure
+
+- **GIVEN** I look at a feature card
+- **THEN** the card has a purple icon at the top
+- **AND** the card has a bold title below the icon
+- **AND** the card has descriptive body text below the title
+- **AND** the card has rounded corners and light background
 
 ### About Section
 
-```gherkin
 Feature: About Section
-  As a visitor, I see an about section with app details.
+As a visitor, I see an about section with app details.
 
-  Scenario: About section displays content
-    Given I scroll to the about section
-    Then I see a heading describing the app
-    And I see descriptive text about the app capabilities
-    And I see supporting imagery or mockup
-```
+#### Scenario: About section displays content
+
+- **GIVEN** I scroll to the about section
+- **THEN** I see a heading describing the app
+- **AND** I see descriptive text about the app capabilities
+- **AND** I see supporting imagery or mockup
 
 ### Screenshot Section
 
-```gherkin
 Feature: Screenshot Section
-  As a visitor, I see app screenshots to preview the interface.
+As a visitor, I see app screenshots to preview the interface.
 
-  Scenario: Screenshot section displays
-    Given I scroll to the screenshot section
-    Then I see app screenshot images
-    And the section has a heading label
-```
+#### Scenario: Screenshot section displays
+
+- **GIVEN** I scroll to the screenshot section
+- **THEN** I see app screenshot images
+- **AND** the section has a heading label
 
 ### Pricing Section
 
-```gherkin
 Feature: Pricing Section
-  As a visitor, I see pricing options.
+As a visitor, I see pricing options.
 
-  Scenario: Pricing section displays plans
-    Given I scroll to the pricing section
-    Then I see pricing plan cards with prices and features
-    And each plan has a call-to-action button
-```
+#### Scenario: Pricing section displays plans
+
+- **GIVEN** I scroll to the pricing section
+- **THEN** I see pricing plan cards with prices and features
+- **AND** each plan has a call-to-action button
 
 ### Testimonials Section
 
-```gherkin
 Feature: Testimonials Section
-  As a visitor, I see user testimonials.
+As a visitor, I see user testimonials.
 
-  Scenario: Testimonials display
-    Given I scroll to the testimonials section
-    Then I see testimonial cards with user quotes
-    And each card shows the user name and role
-```
+#### Scenario: Testimonials display
+
+- **GIVEN** I scroll to the testimonials section
+- **THEN** I see testimonial cards with user quotes
+- **AND** each card shows the user name and role
 
 ### Team Section
 
-```gherkin
 Feature: Team Section
-  As a visitor, I see the team behind the app.
+As a visitor, I see the team behind the app.
 
-  Scenario: Team section displays team members
-    Given I scroll to the team section
-    Then I see team member cards with photos, names, and roles
-    And each card has social media links
-```
+#### Scenario: Team section displays team members
+
+- **GIVEN** I scroll to the team section
+- **THEN** I see team member cards with photos, names, and roles
+- **AND** each card has social media links
 
 ### Contact Section
 
-```gherkin
 Feature: Contact Section
-  As a visitor, I see a contact form.
+As a visitor, I see a contact form.
 
-  Scenario: Contact form displays
-    Given I scroll to the contact section
-    Then I see a contact form with name, email, subject, and message fields
-    And the form has a submit button
-```
+#### Scenario: Contact form displays
+
+- **GIVEN** I scroll to the contact section
+- **THEN** I see a contact form with name, email, subject, and message fields
+- **AND** the form has a submit button
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  As a visitor, I see a footer with links and attribution.
+As a visitor, I see a footer with links and attribution.
 
-  Scenario: Footer displays Component Dock link
-    Given I scroll to the footer
-    Then the footer contains a link to https://www.componentdock.com/
-    And the footer is branded "Component Dock"
+#### Scenario: Footer displays Component Dock link
 
-  Scenario: Footer layout
-    Given I scroll to the footer
-    Then the footer has a dark background
-    And the footer contains copyright text and navigation links
-```
+- **GIVEN** I scroll to the footer
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the footer is branded "Component Dock"
+
+#### Scenario: Footer layout
+
+- **GIVEN** I scroll to the footer
+- **THEN** the footer has a dark background
+- **AND** the footer contains copyright text and navigation links
 
 ### Responsive Design
 
-```gherkin
 Feature: Responsive Design
-  As a mobile visitor, the template adapts to my screen.
+As a mobile visitor, the template adapts to my screen.
 
-  Scenario: Navbar collapses on mobile
-    Given I view the page on a mobile viewport
-    Then the navbar shows a hamburger menu icon
-    And the navigation links are hidden
+#### Scenario: Navbar collapses on mobile
 
-  Scenario: Hero stacks on mobile
-    Given I view the page on a mobile viewport
-    Then the hero content stacks vertically
-    And the phone mockup is hidden or repositioned
+- **GIVEN** I view the page on a mobile viewport
+- **THEN** the navbar shows a hamburger menu icon
+- **AND** the navigation links are hidden
 
-  Scenario: Feature cards stack on mobile
-    Given I view the page on a mobile viewport
-    Then the feature cards stack in a single column
-```
+#### Scenario: Hero stacks on mobile
+
+- **GIVEN** I view the page on a mobile viewport
+- **THEN** the hero content stacks vertically
+- **AND** the phone mockup is hidden or repositioned
+
+#### Scenario: Feature cards stack on mobile
+
+- **GIVEN** I view the page on a mobile viewport
+- **THEN** the feature cards stack in a single column
 
 ## Verification checklist
 

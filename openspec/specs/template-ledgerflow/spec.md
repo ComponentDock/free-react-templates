@@ -72,87 +72,95 @@ All sections use a centered max-width container.
 7. **Footer** — Company info, navigation links, contact details, copyright
    text with "Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Top Contact Bar
 
-Scenario: Contact information is displayed above navigation
-  Given the page is loaded
-  When the top bar is visible
-  Then it shows a phone icon with text "Have a question?" and a phone number
-  And it shows an envelope icon with an email address
-  And the text is in slate gray (#64748b), ~12–13px
-  And the bar has a white background with tight vertical padding (~8px)
+#### Scenario: Contact information is displayed above navigation
+
+- **GIVEN** the page is loaded
+- **WHEN** the top bar is visible
+- **THEN** it shows a phone icon with text "Have a question?" and a phone number
+- **AND** it shows an envelope icon with an email address
+- **AND** the text is in slate gray (#64748b), ~12–13px
+- **AND** the bar has a white background with tight vertical padding (~8px)
 
 ### Feature: Navigation Bar
 
-Scenario: Desktop navigation shows logo, links, and social icons
-  Given the page is loaded on desktop (≥1024px)
-  When the navigation bar is visible
-  Then the left side shows a circular royal blue icon with "$" and brand text
-  And the center shows nav links: Home, About, Services, Blog, Contact
-  And the right side shows 3 social icons (Facebook, Twitter, LinkedIn) as white icons on blue circles
-  And nav links are dark navy (#1e293b), ~14px, regular weight
-  And the bar has white background with ~20px horizontal gap between links
+#### Scenario: Desktop navigation shows logo, links, and social icons
 
-Scenario: Navigation is responsive on mobile
-  Given the page is loaded on mobile (<768px)
-  When the viewport is narrow
-  Then the nav links are hidden behind a hamburger toggle
-  And tapping the toggle reveals a mobile menu overlay
-  And tapping a nav link closes the menu and scrolls to the section
+- **GIVEN** the page is loaded on desktop (≥1024px)
+- **WHEN** the navigation bar is visible
+- **THEN** the left side shows a circular royal blue icon with "$" and brand text
+- **AND** the center shows nav links: Home, About, Services, Blog, Contact
+- **AND** the right side shows 3 social icons (Facebook, Twitter, LinkedIn) as white icons on blue circles
+- **AND** nav links are dark navy (#1e293b), ~14px, regular weight
+- **AND** the bar has white background with ~20px horizontal gap between links
+
+#### Scenario: Navigation is responsive on mobile
+
+- **GIVEN** the page is loaded on mobile (<768px)
+- **WHEN** the viewport is narrow
+- **THEN** the nav links are hidden behind a hamburger toggle
+- **AND** tapping the toggle reveals a mobile menu overlay
+- **AND** tapping a nav link closes the menu and scrolls to the section
 
 ### Feature: Hero Section
 
-Scenario: Hero displays full-width banner with CTA
-  Given the hero section is visible
-  When the page loads
-  Then a full-width background photo is displayed (business professional with financial documents)
-  And a semi-transparent dark overlay covers the image
-  And centered text shows heading "Book Keeping Consulting Agency" in white (~44px, bold, with drop shadow)
-  And a subheading paragraph appears below in white (~16px)
-  And a "GET STARTED" button appears with royal blue (#2563eb) background, white text, uppercase, rounded corners
+#### Scenario: Hero displays full-width banner with CTA
+
+- **GIVEN** the hero section is visible
+- **WHEN** the page loads
+- **THEN** a full-width background photo is displayed (business professional with financial documents)
+- **AND** a semi-transparent dark overlay covers the image
+- **AND** centered text shows heading "Book Keeping Consulting Agency" in white (~44px, bold, with drop shadow)
+- **AND** a subheading paragraph appears below in white (~16px)
+- **AND** a "GET STARTED" button appears with royal blue (#2563eb) background, white text, uppercase, rounded corners
 
 ### Feature: About Us Section
 
-Scenario: About section shows company description with two-column layout
-  Given the About Us section scrolls into view
-  When it becomes visible
-  Then it displays an image on the left column (financial/business imagery)
-  And the right column shows "ABOUT US" as a small uppercase label in light blue-gray (#94a3b8)
-  And a heading "Mindful Planning of Monetary Spending and Saving" (~30px, dark navy, bold)
-  And a thin blue (#60a5fa) horizontal divider line (~60px wide)
-  And a body text paragraph in slate gray
-  And a two-column list of items, each with a blue right-arrow icon
-  And the section has ~60–80px vertical padding
+#### Scenario: About section shows company description with two-column layout
+
+- **GIVEN** the About Us section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** it displays an image on the left column (financial/business imagery)
+- **AND** the right column shows "ABOUT US" as a small uppercase label in light blue-gray (#94a3b8)
+- **AND** a heading "Mindful Planning of Monetary Spending and Saving" (~30px, dark navy, bold)
+- **AND** a thin blue (#60a5fa) horizontal divider line (~60px wide)
+- **AND** a body text paragraph in slate gray
+- **AND** a two-column list of items, each with a blue right-arrow icon
+- **AND** the section has ~60–80px vertical padding
 
 ### Feature: Services Section
 
-Scenario: Services are displayed in a grid layout
-  Given the services section scrolls into view
-  When it becomes visible
-  Then a section heading appears
-  And service cards are displayed in a responsive grid
-  And each card contains an icon, title, and description
-  And the section uses the centered max-width container
+#### Scenario: Services are displayed in a grid layout
+
+- **GIVEN** the services section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** a section heading appears
+- **AND** service cards are displayed in a responsive grid
+- **AND** each card contains an icon, title, and description
+- **AND** the section uses the centered max-width container
 
 ### Feature: Newsletter / CTA Section
 
-Scenario: Newsletter signup collects email addresses
-  Given the newsletter section scrolls into view
-  When it becomes visible
-  Then a heading invites users to subscribe
-  And an email input field is displayed
-  And a submit button is shown in royal blue
+#### Scenario: Newsletter signup collects email addresses
+
+- **GIVEN** the newsletter section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** a heading invites users to subscribe
+- **AND** an email input field is displayed
+- **AND** a submit button is shown in royal blue
 
 ### Feature: Footer
 
-Scenario: Footer displays company info and Component Dock link
-  Given the footer is visible
-  When the page is scrolled to the bottom
-  Then it shows company information and navigation links
-  And it includes a link to "https://www.componentdock.com/" (Component Dock)
-  And it has a copyright notice
+#### Scenario: Footer displays company info and Component Dock link
+
+- **GIVEN** the footer is visible
+- **WHEN** the page is scrolled to the bottom
+- **THEN** it shows company information and navigation links
+- **AND** it includes a link to "https://www.componentdock.com/" (Component Dock)
+- **AND** it has a copyright notice
 
 ## Verification checklist
 

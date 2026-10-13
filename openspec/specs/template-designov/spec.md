@@ -40,139 +40,136 @@ ColorLib's **Calvin** template.
 9. **Blog ("Latest News")** — Horizontal slider of blog post cards: image + category badge + date/author + title link.
 10. **Footer** — Two-part: (a) "Want to Work" CTA band with logo + paragraph + social icons + "Let's Talk" + "Download CV" buttons; (b) bottom bar with copyright + nav links.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the page is loaded
-  Then the navbar is visible at the top
-  And a logo is displayed on the left
-  And navigation links "Home", "Work", "Service", "Blog", "Contact" are shown
-  And a "Let's Talk" button is displayed
+#### Scenario: Navbar displays logo and navigation links
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls down the page
-  Then the navbar remains fixed at the top of the viewport
-```
+- **GIVEN** the page is loaded
+- **THEN** the navbar is visible at the top
+- **AND** a logo is displayed on the left
+- **AND** navigation links "Home", "Work", "Service", "Blog", "Contact" are shown
+- **AND** a "Let's Talk" button is displayed
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar remains fixed at the top of the viewport
 
 ### Hero
 
-```gherkin
-Scenario: Hero section displays headline and illustration
-  Given the page is loaded
-  Then a hero section is visible
-  And a large headline with name and role is displayed
-  And a subtitle text is shown below the headline
-  And a person illustration image is shown
+#### Scenario: Hero section displays headline and illustration
 
-Scenario: Hero section is full viewport height
-  Given the page is loaded
-  Then the hero section fills at least the visible viewport height
-```
+- **GIVEN** the page is loaded
+- **THEN** a hero section is visible
+- **AND** a large headline with name and role is displayed
+- **AND** a subtitle text is shown below the headline
+- **AND** a person illustration image is shown
+
+#### Scenario: Hero section is full viewport height
+
+- **GIVEN** the page is loaded
+- **THEN** the hero section fills at least the visible viewport height
 
 ### About Info Bar
 
-```gherkin
-Scenario: About info bar shows contact details
-  Given the page is loaded
-  Then a horizontal info bar is displayed below the hero
-  And it shows "Design For" with specialization
-  And it shows a phone number
-  And it shows an email address
-```
+#### Scenario: About info bar shows contact details
+
+- **GIVEN** the page is loaded
+- **THEN** a horizontal info bar is displayed below the hero
+- **AND** it shows "Design For" with specialization
+- **AND** it shows a phone number
+- **AND** it shows an email address
 
 ### Services
 
-```gherkin
-Scenario: Services section shows four service cards in a 2x2 grid
-  Given the page is loaded
-  Then a services section with heading "My Experties" is visible
-  And exactly 4 service cards are displayed in a 2-column layout
-  And each card has an icon, title, description, and link
+#### Scenario: Services section shows four service cards in a 2x2 grid
 
-Scenario: Services section has a light background
-  Given the services section is rendered
-  Then the section background is light grey (#f7f7f7 or similar)
-```
+- **GIVEN** the page is loaded
+- **THEN** a services section with heading "My Experties" is visible
+- **AND** exactly 4 service cards are displayed in a 2-column layout
+- **AND** each card has an icon, title, description, and link
+
+#### Scenario: Services section has a light background
+
+- **GIVEN** the services section is rendered
+- **THEN** the section background is light grey (#f7f7f7 or similar)
 
 ### Gallery
 
-```gherkin
-Scenario: Gallery shows portfolio images in a grid
-  Given the page is loaded
-  Then a gallery section with heading "My Works" is visible
-  And 4 portfolio images are displayed in a 2-column grid
-  And each image shows a hover overlay with a category label
+#### Scenario: Gallery shows portfolio images in a grid
 
-Scenario: Gallery has a "More Work" button
-  Given the gallery section is rendered
-  Then a "More Work" pill-shaped button is displayed centered below the grid
-```
+- **GIVEN** the page is loaded
+- **THEN** a gallery section with heading "My Works" is visible
+- **AND** 4 portfolio images are displayed in a 2-column grid
+- **AND** each image shows a hover overlay with a category label
+
+#### Scenario: Gallery has a "More Work" button
+
+- **GIVEN** the gallery section is rendered
+- **THEN** a "More Work" pill-shaped button is displayed centered below the grid
 
 ### About Me
 
-```gherkin
-Scenario: About Me section shows text and skill bars
-  Given the page is loaded
-  Then an "About Me" section is visible
-  And a paragraph of text is displayed on the left
-  And 3 animated progress bars are displayed on the right
-  And progress bar labels include "User Interface Design", "User Experience", "Illustration"
+#### Scenario: About Me section shows text and skill bars
 
-Scenario: Progress bars show percentage values
-  Given the About Me section is rendered
-  Then each progress bar has a visible percentage label
-```
+- **GIVEN** the page is loaded
+- **THEN** an "About Me" section is visible
+- **AND** a paragraph of text is displayed on the left
+- **AND** 3 animated progress bars are displayed on the right
+- **AND** progress bar labels include "User Interface Design", "User Experience", "Illustration"
+
+#### Scenario: Progress bars show percentage values
+
+- **GIVEN** the About Me section is rendered
+- **THEN** each progress bar has a visible percentage label
 
 ### Brand Logos
 
-```gherkin
-Scenario: Brand logos carousel displays placeholder logos
-  Given the page is loaded
-  Then a brand logos section is visible
-  And at least 5 placeholder partner logos are shown in a horizontal scroll
-```
+#### Scenario: Brand logos carousel displays placeholder logos
+
+- **GIVEN** the page is loaded
+- **THEN** a brand logos section is visible
+- **AND** at least 5 placeholder partner logos are shown in a horizontal scroll
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonial section displays a quote with author
-  Given the page is loaded
-  Then a testimonial section is visible
-  And a quote text is displayed centered
-  And an avatar image, author name, and role are shown below the quote
+#### Scenario: Testimonial section displays a quote with author
 
-Scenario: Testimonial section has a centered layout
-  Given the testimonial section is rendered
-  Then the content is centered within the container
-```
+- **GIVEN** the page is loaded
+- **THEN** a testimonial section is visible
+- **AND** a quote text is displayed centered
+- **AND** an avatar image, author name, and role are shown below the quote
+
+#### Scenario: Testimonial section has a centered layout
+
+- **GIVEN** the testimonial section is rendered
+- **THEN** the content is centered within the container
 
 ### Blog
 
-```gherkin
-Scenario: Blog section shows latest news cards
-  Given the page is loaded
-  Then a blog section with heading "Latest News" is visible
-  And at least 3 blog post cards are displayed in a horizontal slider
-  And each card has an image, category badge, date/author line, and title link
-```
+#### Scenario: Blog section shows latest news cards
+
+- **GIVEN** the page is loaded
+- **THEN** a blog section with heading "Latest News" is visible
+- **AND** at least 3 blog post cards are displayed in a horizontal slider
+- **AND** each card has an image, category badge, date/author line, and title link
 
 ### Footer
 
-```gherkin
-Scenario: Footer has CTA band and bottom bar
-  Given the page is loaded
-  Then a footer is displayed
-  And a "Want to Work" CTA section shows logo, paragraph, social icons, and two buttons ("Let's Talk" and "Download CV")
-  And a bottom bar shows copyright text and navigation links
+#### Scenario: Footer has CTA band and bottom bar
 
-Scenario: Footer links to Component Dock
-  Given the footer is rendered
-  Then a link to "https://www.componentdock.com/" is present
-  And the link text references "Component Dock"
-```
+- **GIVEN** the page is loaded
+- **THEN** a footer is displayed
+- **AND** a "Want to Work" CTA section shows logo, paragraph, social icons, and two buttons ("Let's Talk" and "Download CV")
+- **AND** a bottom bar shows copyright text and navigation links
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is rendered
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text references "Component Dock"
 
 ## Verification Checklist
 

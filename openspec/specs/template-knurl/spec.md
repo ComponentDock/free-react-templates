@@ -53,12 +53,16 @@ minimal footer.
   Colors, Full width button
 - **AND** a footer SHALL render at the bottom linking Component Dock
 
-### Requirement: Button size variants
+### Feature: Button size variants
+
+#### Scenario: Button size variants
 
 The system SHALL render the Sizes block with three blue "Button" buttons at
 small, medium, and large sizes.
 
-### Requirement: Button color palette
+### Feature: Button color palette
+
+#### Scenario: Button color palette
 
 The system SHALL render the Button Colors block with all 18 solid color
 buttons.

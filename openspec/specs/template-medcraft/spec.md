@@ -56,77 +56,87 @@ Extracted from the live preview CSS (`style.css`) and screenshot analysis:
    - Useful Links (Home, About us, Departments, Contact, FAQ, Testimonials)
    - Footer links to `https://www.componentdock.com/` ("Component Dock")
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: MedCraft template behaviour
+
 Feature: MedCraft — Medical Template
 
-  Scenario: Navbar renders with correct links and emergency CTA
-    Given the page loads
-    Then the navbar displays the MedCraft logo
-    And navigation links are visible: Home, About us, Services, News, Contact
-    And an emergency phone button is displayed with a gradient background
-    And the navbar is sticky on scroll
+#### Scenario: Navbar renders with correct links and emergency CTA
 
-  Scenario: Hero slider displays with pagination
-    Given the page loads
-    Then a hero slider shows "The Best Medical Services" heading
-    And a descriptive paragraph is visible below the heading
-    And a "Read More" gradient button is displayed
-    And numbered pagination (01, 02, 03) is visible on the left
-    And the hero section has a background image with overlay
+- **GIVEN** the page loads
+- **THEN** the navbar displays the MedCraft logo
+- **AND** navigation links are visible: Home, About us, Services, News, Contact
+- **AND** an emergency phone button is displayed with a gradient background
+- **AND** the navbar is sticky on scroll
 
-  Scenario: Homepage info boxes render correctly
-    Given the page loads
-    Then three info boxes are displayed in a row
-    And the Opening Hours box shows a weekday schedule
-    And the Emergency box shows a gradient phone button
-    And the Make an Appointment box shows a form with dropdowns and inputs
+#### Scenario: Hero slider displays with pagination
 
-  Scenario: Departments section shows 9 department cards
-    Given the page loads
-    Then the "Our Departments" heading is visible
-    And 9 department cards are displayed in a 3-column grid
-    And each card shows a department name, icon, and description
+- **GIVEN** the page loads
+- **THEN** a hero slider shows "The Best Medical Services" heading
+- **AND** a descriptive paragraph is visible below the heading
+- **AND** a "Read More" gradient button is displayed
+- **AND** numbered pagination (01, 02, 03) is visible on the left
+- **AND** the hero section has a background image with overlay
 
-  Scenario: Testimonials slider renders patient quotes
-    Given the page loads
-    Then the "Pacient's Testimonials" heading is visible
-    And testimonial cards show a quote, author name, and affiliation
-    And an avatar image is displayed for each testimonial
+#### Scenario: Homepage info boxes render correctly
 
-  Scenario: News section shows 3 blog post cards
-    Given the page loads
-    Then the "The News" heading is visible
-    And 3 blog post cards are displayed with thumbnails
-    And each card shows date, author, comment count, title, and excerpt
+- **GIVEN** the page loads
+- **THEN** three info boxes are displayed in a row
+- **AND** the Opening Hours box shows a weekday schedule
+- **AND** the Emergency box shows a gradient phone button
+- **AND** the Make an Appointment box shows a form with dropdowns and inputs
 
-  Scenario: Subscribe banner with email form
-    Given the page loads
-    Then a "Subscribe to our newsletter" heading is visible
-    And an email input field is present
-    And a "Subscribe" gradient button is displayed
+#### Scenario: Departments section shows 9 department cards
 
-  Scenario: Footer renders three columns
-    Given the page loads
-    Then the footer shows an About section with logo and copyright
-    And a Contact section with address, phone, and email
-    And a Useful Links section with navigation links
-    And a link to Component Dock is present
+- **GIVEN** the page loads
+- **THEN** the "Our Departments" heading is visible
+- **AND** 9 department cards are displayed in a 3-column grid
+- **AND** each card shows a department name, icon, and description
 
-  Scenario: Brand gradient buttons are consistently styled
-    Given any button with class "gradient-bg"
-    Then it has a linear gradient from #32c8fa to #587de4
-    And it has white text
-    And it has a border-radius of 20px
+#### Scenario: Testimonials slider renders patient quotes
 
-  Scenario: Color palette matches medical theme
-    Given the page loads
-    Then the primary color #18a3eb is used for links and active states
-    And the font family is Raleway throughout
-    And headings use color #262626
-    And body text uses color #404040
-```
+- **GIVEN** the page loads
+- **THEN** the "Pacient's Testimonials" heading is visible
+- **AND** testimonial cards show a quote, author name, and affiliation
+- **AND** an avatar image is displayed for each testimonial
+
+#### Scenario: News section shows 3 blog post cards
+
+- **GIVEN** the page loads
+- **THEN** the "The News" heading is visible
+- **AND** 3 blog post cards are displayed with thumbnails
+- **AND** each card shows date, author, comment count, title, and excerpt
+
+#### Scenario: Subscribe banner with email form
+
+- **GIVEN** the page loads
+- **THEN** a "Subscribe to our newsletter" heading is visible
+- **AND** an email input field is present
+- **AND** a "Subscribe" gradient button is displayed
+
+#### Scenario: Footer renders three columns
+
+- **GIVEN** the page loads
+- **THEN** the footer shows an About section with logo and copyright
+- **AND** a Contact section with address, phone, and email
+- **AND** a Useful Links section with navigation links
+- **AND** a link to Component Dock is present
+
+#### Scenario: Brand gradient buttons are consistently styled
+
+- **GIVEN** any button with class "gradient-bg"
+- **THEN** it has a linear gradient from #32c8fa to #587de4
+- **AND** it has white text
+- **AND** it has a border-radius of 20px
+
+#### Scenario: Color palette matches medical theme
+
+- **GIVEN** the page loads
+- **THEN** the primary color #18a3eb is used for links and active states
+- **AND** the font family is Raleway throughout
+- **AND** headings use color #262626
+- **AND** body text uses color #404040
 
 ## Verification checklist
 

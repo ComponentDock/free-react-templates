@@ -15,7 +15,7 @@ Stack: React 19, Tailwind CSS 4, TypeScript, Lucide Icons.
 - Typography: Inter (`font-sans`)
 - Radii: Rounded-lg (`0.5rem`), Pill (`9999px`), Sharp (`0px`)
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: ClickForge UI Showcase
 
@@ -25,39 +25,39 @@ So that I can copy or inspect production-ready Tailwind/React buttons.
 
 #### Scenario: Hero and Quick Filter
 
-- Given the user lands on ClickForge
-- When the page loads
-- Then the hero displays the title "ClickForge Component Library", subtitle, and category filter tabs (All, Solid, Outline, Gradients, Interactive).
+- **GIVEN** the user lands on ClickForge
+- **WHEN** the page loads
+- **THEN** the hero displays the title "ClickForge Component Library", subtitle, and category filter tabs (All, Solid, Outline, Gradients, Interactive)
 
 #### Scenario: Solid Buttons Section
 
-- Given the user views the Solid Buttons section
-- When examining the buttons
-- Then primary, secondary, success, danger, warning, and dark buttons are rendered with hover and active states.
+- **GIVEN** the user views the Solid Buttons section
+- **WHEN** examining the buttons
+- **THEN** primary, secondary, success, danger, warning, and dark buttons are rendered with hover and active states
 
 #### Scenario: Outline and Ghost Buttons
 
-- Given the user views the Outline & Ghost section
-- When examining the buttons
-- Then border-only buttons and transparent hover background buttons are displayed.
+- **GIVEN** the user views the Outline & Ghost section
+- **WHEN** examining the buttons
+- **THEN** border-only buttons and transparent hover background buttons are displayed
 
 #### Scenario: Gradient and Glow Buttons
 
-- Given the user views the Gradient & Glow section
-- When examining the buttons
-- Then vibrant gradient buttons with subtle drop shadows/glows are rendered.
+- **GIVEN** the user views the Gradient & Glow section
+- **WHEN** examining the buttons
+- **THEN** vibrant gradient buttons with subtle drop shadows/glows are rendered
 
 #### Scenario: Interactive State Buttons
 
-- Given the user views the Interactive States section
-- When the user clicks a loading button
-- Then it transitions to a loading spinner state and then to a success checkmark state.
+- **GIVEN** the user views the Interactive States section
+- **WHEN** the user clicks a loading button
+- **THEN** it transitions to a loading spinner state and then to a success checkmark state
 
 #### Scenario: Footer Attribution
 
-- Given the user scrolls to the bottom of the page
-- When viewing the footer
-- Then it displays copyright and a link to Component Dock (`https://www.componentdock.com/`).
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** viewing the footer
+- **THEN** it displays copyright and a link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

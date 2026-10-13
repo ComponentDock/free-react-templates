@@ -84,83 +84,96 @@ A professional publishing/book company template with:
 9. **Blog** — "Recent Blog" with blog post cards
 10. **Footer** — dark background, 4 columns (Extra Links, Legal, Company, Have a Questions?), copyright
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Printcraft template behaviour
+
 Feature: Printcraft - Publishing Company Website Template
 
-  Background:
-    Given the Printcraft template is loaded
-    And the page is rendered in a browser
+Background:
+- **GIVEN** the Printcraft template is loaded
+- **AND** the page is rendered in a browser
 
-  Scenario: Page loads with correct structure
-    Then I should see a navigation bar at the top
-    And I should see a hero section below the navbar
-    And I should see sections in the order: hero, about, counter, releases, testimonials, pricing, contact, blog, footer
+#### Scenario: Page loads with correct structure
 
-  Scenario: Navigation bar displays correctly
-    Then I should see the brand name "Printcraft" in the navbar
-    And I should see navigation links: Home, About, Coming Soon, Top Seller, Books, Author, Blog, Contact
-    And I should see a search form in the navigation bar
-    And the navbar should have a dark background
+- **THEN** I should see a navigation bar at the top
+- **AND** I should see a hero section below the navbar
+- **AND** I should see sections in the order: hero, about, counter, releases, testimonials, pricing, contact, blog, footer
 
-  Scenario: Hero section displays with heading and CTAs
-    Then I should see a large heading about books/publishing
-    And I should see a primary button labeled "View All Books"
-    And I should see an outline button labeled "Explore Now"
-    And the hero should display a background image with dark overlay
+#### Scenario: Navigation bar displays correctly
 
-  Scenario: About section shows company description
-    Then I should see a section heading "Publishing Company Created By Authors"
-    And I should see descriptive paragraphs about the company
-    And the section should have a white background
+- **THEN** I should see the brand name "Printcraft" in the navbar
+- **AND** I should see navigation links: Home, About, Coming Soon, Top Seller, Books, Author, Blog, Contact
+- **AND** I should see a search form in the navigation bar
+- **AND** the navbar should have a dark background
 
-  Scenario: Counter/stats section shows animated numbers
-    Then I should see 4 stat blocks with animated counting numbers
-    And the numbers should represent: books, authors, awards, readers
-    And the section should have a light background with teal accent overlay
+#### Scenario: Hero section displays with heading and CTAs
 
-  Scenario: New Release section displays book cards
-    Then I should see a heading "New Release"
-    And I should see book card items with cover images and titles
+- **THEN** I should see a large heading about books/publishing
+- **AND** I should see a primary button labeled "View All Books"
+- **AND** I should see an outline button labeled "Explore Now"
+- **AND** the hero should display a background image with dark overlay
 
-  Scenario: Testimonials section shows client quotes
-    Then I should see a heading about client testimonials
-    And I should see testimonial cards with quote text and author name
-    And testimonial cards should have a warm white background
+#### Scenario: About section shows company description
 
-  Scenario: Pricing section shows plans
-    Then I should see a heading "Affordable Packages"
-    And I should see pricing cards with prices
-    And each card should have a "Get Started" button
+- **THEN** I should see a section heading "Publishing Company Created By Authors"
+- **AND** I should see descriptive paragraphs about the company
+- **AND** the section should have a white background
 
-  Scenario: Contact section shows form
-    Then I should see a heading about getting in touch
-    And I should see a contact form section
-    And the section should have a background image with overlay
+#### Scenario: Counter/stats section shows animated numbers
 
-  Scenario: Blog section shows recent posts
-    Then I should see a heading "Recent Blog"
-    And I should see blog post cards with titles and images
+- **THEN** I should see 4 stat blocks with animated counting numbers
+- **AND** the numbers should represent: books, authors, awards, readers
+- **AND** the section should have a light background with teal accent overlay
 
-  Scenario: Footer displays correctly
-    Then I should see a dark footer
-    And I should see columns for: Extra Links, Legal, Company, Have a Questions
-    And I should see a "Made with Component Dock" link
-    And the footer should link to https://www.componentdock.com/
+#### Scenario: New Release section displays book cards
 
-  Scenario: Responsive behavior
-    When the viewport is less than 992px wide
-    Then the navbar should collapse into a hamburger menu
-    And sections should stack vertically
+- **THEN** I should see a heading "New Release"
+- **AND** I should see book card items with cover images and titles
 
-  Scenario: Color scheme matches design tokens
-    Then primary buttons should use color #007bff
-    And the navbar background should be #1a1a1a
-    And body text should use color #212529
-    And headings should use the "Lora" serif font
-    And body text should use the "Roboto" sans-serif font
-```
+#### Scenario: Testimonials section shows client quotes
+
+- **THEN** I should see a heading about client testimonials
+- **AND** I should see testimonial cards with quote text and author name
+- **AND** testimonial cards should have a warm white background
+
+#### Scenario: Pricing section shows plans
+
+- **THEN** I should see a heading "Affordable Packages"
+- **AND** I should see pricing cards with prices
+- **AND** each card should have a "Get Started" button
+
+#### Scenario: Contact section shows form
+
+- **THEN** I should see a heading about getting in touch
+- **AND** I should see a contact form section
+- **AND** the section should have a background image with overlay
+
+#### Scenario: Blog section shows recent posts
+
+- **THEN** I should see a heading "Recent Blog"
+- **AND** I should see blog post cards with titles and images
+
+#### Scenario: Footer displays correctly
+
+- **THEN** I should see a dark footer
+- **AND** I should see columns for: Extra Links, Legal, Company, Have a Questions
+- **AND** I should see a "Made with Component Dock" link
+- **AND** the footer should link to https://www.componentdock.com/
+
+#### Scenario: Responsive behavior
+
+- **WHEN** the viewport is less than 992px wide
+- **THEN** the navbar should collapse into a hamburger menu
+- **AND** sections should stack vertically
+
+#### Scenario: Color scheme matches design tokens
+
+- **THEN** primary buttons should use color #007bff
+- **AND** the navbar background should be #1a1a1a
+- **AND** body text should use color #212529
+- **AND** headings should use the "Lora" serif font
+- **AND** body text should use the "Roboto" sans-serif font
 
 ## Verification Checklist
 

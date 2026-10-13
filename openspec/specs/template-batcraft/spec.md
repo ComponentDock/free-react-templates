@@ -84,109 +84,124 @@ Fetched 2026-09-10. Structure extracted from rendered HTML:
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Hero Section
 
-**Scenario: Hero displays a full-height carousel with 3 slides**
-- Given the user is on the home page
-- When the hero section loads
-- Then a carousel with 3 slides should be visible
-- And each slide should show a large background image on the left (75% width) and a text panel on the right (25% width)
+#### Scenario: Hero displays a full-height carousel with 3 slides
 
-**Scenario: Each slide displays numbered indicators, a tag, headline, and CTA**
-- Given the hero carousel is visible
-- When a slide is active
-- Then it should show a large decorative number (e.g. "01/03") in the text panel
-- And a tag label (uppercase, small text)
-- And a headline in Playfair Display serif font
-- And a paragraph description
-- And a "View Galleries" outline button link
+- **GIVEN** the user is on the home page
+- **WHEN** the hero section loads
+- **THEN** a carousel with 3 slides should be visible
+- **AND** each slide should show a large background image on the left (75% width) and a text panel on the right (25% width)
 
-**Scenario: User can navigate between hero slides**
-- Given the hero carousel is visible
-- When the user clicks the next/previous arrow
-- Then the carousel should transition to the next/previous slide
+#### Scenario: Each slide displays numbered indicators, a tag, headline, and CTA
+
+- **GIVEN** the hero carousel is visible
+- **WHEN** a slide is active
+- **THEN** it should show a large decorative number (e.g. "01/03") in the text panel
+- **AND** a tag label (uppercase, small text)
+- **AND** a headline in Playfair Display serif font
+- **AND** a paragraph description
+- **AND** a "View Galleries" outline button link
+
+#### Scenario: User can navigate between hero slides
+
+- **GIVEN** the hero carousel is visible
+- **WHEN** the user clicks the next/previous arrow
+- **THEN** the carousel should transition to the next/previous slide
 
 ### Feature: Navigation
 
-**Scenario: Navigation bar displays logo and hamburger toggle**
-- Given the user is on any page
-- Then a header bar should show the brand name "Batcraft" as the logo
-- And a hamburger menu icon should be visible on the right
+#### Scenario: Navigation bar displays logo and hamburger toggle
 
-**Scenario: Clicking hamburger opens full-screen slide-out nav**
-- Given the header is visible
-- When the user clicks the hamburger icon
-- Then a full-screen overlay should slide in from the left
-- And it should contain a search input, menu links (Home, Work, Blog, About, Contact), and a gallery thumbnail strip
+- **GIVEN** the user is on any page
+- **THEN** a header bar should show the brand name "Batcraft" as the logo
+- **AND** a hamburger menu icon should be visible on the right
 
-**Scenario: Clicking a nav link navigates to that section/page**
-- Given the slide-out navigation is open
-- When the user clicks a menu link
-- Then the navigation should close
-- And the user should be scrolled to or navigated to the target section
+#### Scenario: Clicking hamburger opens full-screen slide-out nav
+
+- **GIVEN** the header is visible
+- **WHEN** the user clicks the hamburger icon
+- **THEN** a full-screen overlay should slide in from the left
+- **AND** it should contain a search input, menu links (Home, Work, Blog, About, Contact), and a gallery thumbnail strip
+
+#### Scenario: Clicking a nav link navigates to that section/page
+
+- **GIVEN** the slide-out navigation is open
+- **WHEN** the user clicks a menu link
+- **THEN** the navigation should close
+- **AND** the user should be scrolled to or navigated to the target section
 
 ### Feature: About Section
 
-**Scenario: About section displays 50/50 split layout**
-- Given the user scrolls to the about section
-- Then a left half should display an image
-- And a right half should display text content
+#### Scenario: About section displays 50/50 split layout
 
-**Scenario: About text contains title, heading, description, and checklist**
-- Given the about section text panel is visible
-- Then it should show a small uppercase label ("About Me" or similar)
-- And a large heading in serif font
-- And a descriptive paragraph
-- And a list of items with checkmark icons
+- **GIVEN** the user scrolls to the about section
+- **THEN** a left half should display an image
+- **AND** a right half should display text content
+
+#### Scenario: About text contains title, heading, description, and checklist
+
+- **GIVEN** the about section text panel is visible
+- **THEN** it should show a small uppercase label ("About Me" or similar)
+- **AND** a large heading in serif font
+- **AND** a descriptive paragraph
+- **AND** a list of items with checkmark icons
 
 ### Feature: Work/Portfolio Entries
 
-**Scenario: Portfolio entries alternate image and text sides**
-- Given the user scrolls to the work section
-- Then portfolio entries should be displayed
-- And entries should alternate between image-left/text-right and image-right/text-left
+#### Scenario: Portfolio entries alternate image and text sides
 
-**Scenario: Each portfolio entry shows heading and view button**
-- Given a portfolio entry is visible
-- Then it should display a heading with the project name
-- And a "View Gallery" outline button link
+- **GIVEN** the user scrolls to the work section
+- **THEN** portfolio entries should be displayed
+- **AND** entries should alternate between image-left/text-right and image-right/text-left
+
+#### Scenario: Each portfolio entry shows heading and view button
+
+- **GIVEN** a portfolio entry is visible
+- **THEN** it should display a heading with the project name
+- **AND** a "View Gallery" outline button link
 
 ### Feature: Blog Section
 
-**Scenario: Blog articles display image with hover effects**
-- Given the user scrolls to the blog section
-- Then article cards should display a thumbnail image
-- And on hover, the image should zoom slightly with a dark overlay fading in
-- And a "Read" label should slide in from the right (rotated -90deg)
+#### Scenario: Blog articles display image with hover effects
 
-**Scenario: Blog articles show floating date badge**
-- Given a blog article card is visible
-- Then a floating date badge should overlap the top-left of the image
-- And the badge should have a light peach (#FFE9E3) background
-- And on hover the badge background should change to white
+- **GIVEN** the user scrolls to the blog section
+- **THEN** article cards should display a thumbnail image
+- **AND** on hover, the image should zoom slightly with a dark overlay fading in
+- **AND** a "Read" label should slide in from the right (rotated -90deg)
 
-**Scenario: Blog articles display heading and description**
-- Given a blog article card is visible
-- Then it should show a heading link and a description paragraph below the image
+#### Scenario: Blog articles show floating date badge
+
+- **GIVEN** a blog article card is visible
+- **THEN** a floating date badge should overlap the top-left of the image
+- **AND** the badge should have a light peach (#FFE9E3) background
+- **AND** on hover the badge background should change to white
+
+#### Scenario: Blog articles display heading and description
+
+- **GIVEN** a blog article card is visible
+- **THEN** it should show a heading link and a description paragraph below the image
 
 ### Feature: Subscribe/Newsletter Section
 
-**Scenario: Subscribe section shows heading and email form**
-- Given the user scrolls to the subscribe section
-- Then a heading and description paragraph should be visible
-- And an email input field with underline border should be present
-- And a full-width black submit button should be below the input
+#### Scenario: Subscribe section shows heading and email form
+
+- **GIVEN** the user scrolls to the subscribe section
+- **THEN** a heading and description paragraph should be visible
+- **AND** an email input field with underline border should be present
+- **AND** a full-width black submit button should be below the input
 
 ### Feature: Footer
 
-**Scenario: Footer displays multi-column layout**
-- Given the user scrolls to the footer
-- Then multiple columns should be visible with section headings (uppercase, 18px)
-- And social media icons should be displayed in brand yellow (#F9CE00)
-- And a copyright line should be present
-- And the footer must link to Component Dock ("More templates at Component Dock")
+#### Scenario: Footer displays multi-column layout
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** multiple columns should be visible with section headings (uppercase, 18px)
+- **AND** social media icons should be displayed in brand yellow (#F9CE00)
+- **AND** a copyright line should be present
+- **AND** the footer must link to Component Dock ("More templates at Component Dock")
 
 ---
 

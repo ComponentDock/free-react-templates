@@ -62,122 +62,151 @@ Recreation of ColorLib's **Create** template.
 - Border-bottom on some sections for visual separation
 - AOS fade animations on scroll
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Bar
-Scenario: Top bar shows contact info and social icons
-  Given the user visits the homepage
-  When the top bar renders
-  Then a phone number and email are displayed
-  And social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
-  And the top bar has a dark background (#000)
+
+#### Scenario: Top bar shows contact info and social icons
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the top bar renders
+- **THEN** a phone number and email are displayed
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
+- **AND** the top bar has a dark background (#000)
 
 ### Navbar
-Scenario: Sticky navbar with logo and navigation links
-  Given the user visits the homepage
-  When the navbar renders
-  Then the logo "Forgehaus." is displayed with a teal accent dot
-  And navigation links include Home, Work, Services, About, Blog, Contact
-  And the About link has a dropdown with "Specialties" and "Our Team"
-  And the navbar is sticky and white
 
-Scenario: Mobile hamburger menu
-  Given the user is on a mobile viewport
-  When the user taps the hamburger icon
-  Then the mobile menu opens with all navigation links
+#### Scenario: Sticky navbar with logo and navigation links
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the navbar renders
+- **THEN** the logo "Forgehaus." is displayed with a teal accent dot
+- **AND** navigation links include Home, Work, Services, About, Blog, Contact
+- **AND** the About link has a dropdown with "Specialties" and "Our Team"
+- **AND** the navbar is sticky and white
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile menu opens with all navigation links
 
 ### Hero
-Scenario: Hero with animated text and CTA
-  Given the user visits the homepage
-  When the hero section loads
-  Then a full-width background image with dark overlay is displayed
-  And animated typed text cycles through agency services
-  And a "Watch Video" button is visible
+
+#### Scenario: Hero with animated text and CTA
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the hero section loads
+- **THEN** a full-width background image with dark overlay is displayed
+- **AND** animated typed text cycles through agency services
+- **AND** a "Watch Video" button is visible
 
 ### Features (Innovate/Create/Scale)
-Scenario: Three-column feature cards
-  Given the user scrolls to the features section
-  When the section renders
-  Then three feature cards are displayed in a row
-  And each card has a number-behind element (01, 02, 03)
-  And each card has a teal title and bullet list
+
+#### Scenario: Three-column feature cards
+
+- **GIVEN** the user scrolls to the features section
+- **WHEN** the section renders
+- **THEN** three feature cards are displayed in a row
+- **AND** each card has a number-behind element (01, 02, 03)
+- **AND** each card has a teal title and bullet list
 
 ### Portfolio (Our Works)
-Scenario: Portfolio gallery grid
-  Given the user scrolls to the works section
-  When the section renders
-  Then six portfolio items are displayed in a 3-column grid
-  And each item shows an image with hover overlay
-  And the overlay shows a title and category
+
+#### Scenario: Portfolio gallery grid
+
+- **GIVEN** the user scrolls to the works section
+- **WHEN** the section renders
+- **THEN** six portfolio items are displayed in a 3-column grid
+- **AND** each item shows an image with hover overlay
+- **AND** the overlay shows a title and category
 
 ### About Dark Section
-Scenario: Dark about section with feature items
-  Given the user scrolls to the about section
-  When the section renders
-  Then a full-width dark background is displayed
-  And an image appears on the left
-  And four feature items with icons appear (Strategy, Web Development, Art Direction, Copywriting)
-  And each item has a "Read More" link
+
+#### Scenario: Dark about section with feature items
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section renders
+- **THEN** a full-width dark background is displayed
+- **AND** an image appears on the left
+- **AND** four feature items with icons appear (Strategy, Web Development, Art Direction, Copywriting)
+- **AND** each item has a "Read More" link
 
 ### Testimonials
-Scenario: Testimonial carousel
-  Given the user scrolls to the testimonials section
-  When the section renders
-  Then a carousel of testimonials is displayed
-  And each testimonial has a quote, person photo, and name
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the section renders
+- **THEN** a carousel of testimonials is displayed
+- **AND** each testimonial has a quote, person photo, and name
 
 ### Services
-Scenario: Services grid
-  Given the user scrolls to the services section
-  When the section renders
-  Then six service items are displayed in a 3-column grid
-  And each item has an icon, title, description, and "Learn More" link
+
+#### Scenario: Services grid
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the section renders
+- **THEN** six service items are displayed in a 3-column grid
+- **AND** each item has an icon, title, description, and "Learn More" link
 
 ### About Us
-Scenario: About us section with specialties
-  Given the user scrolls to the about-us section
-  When the section renders
-  Then a heading "About Us" and paragraph text appear
-  And an image is shown on the right
-  And two specialty items with icons are displayed (Web & Mobile Specialties, Intuitive Thinkers)
+
+#### Scenario: About us section with specialties
+
+- **GIVEN** the user scrolls to the about-us section
+- **WHEN** the section renders
+- **THEN** a heading "About Us" and paragraph text appear
+- **AND** an image is shown on the right
+- **AND** two specialty items with icons are displayed (Web & Mobile Specialties, Intuitive Thinkers)
 
 ### Team
-Scenario: Team members section
-  Given the user scrolls to the team section
-  When the section renders
-  Then three team member cards are displayed
-  And each card has a circular photo, name, role, bio, and social icons
+
+#### Scenario: Team members section
+
+- **GIVEN** the user scrolls to the team section
+- **WHEN** the section renders
+- **THEN** three team member cards are displayed
+- **AND** each card has a circular photo, name, role, bio, and social icons
 
 ### Blog
-Scenario: Blog post previews
-  Given the user scrolls to the blog section
-  When the section renders
-  Then three blog post cards are displayed in a 3-column grid
-  And each card has an image, title, meta (author, date, category), excerpt, and "Continue Reading" link
+
+#### Scenario: Blog post previews
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the section renders
+- **THEN** three blog post cards are displayed in a 3-column grid
+- **AND** each card has an image, title, meta (author, date, category), excerpt, and "Continue Reading" link
 
 ### Contact
-Scenario: Contact form and info
-  Given the user scrolls to the contact section
-  When the section renders
-  Then a contact form with first name, last name, email, subject, message fields appears
-  And a "Send Message" button is present
-  And address, phone, and email info cards appear on the right
-  And the section has a light background
+
+#### Scenario: Contact form and info
+
+- **GIVEN** the user scrolls to the contact section
+- **WHEN** the section renders
+- **THEN** a contact form with first name, last name, email, subject, message fields appears
+- **AND** a "Send Message" button is present
+- **AND** address, phone, and email info cards appear on the right
+- **AND** the section has a light background
 
 ### CTA Banner
-Scenario: Call to action banner
-  Given the user scrolls to the CTA section
-  When the section renders
-  Then a full-width teal (#32dbc6) banner is displayed
-  And the text "Let's Get Started" is shown in white
+
+#### Scenario: Call to action banner
+
+- **GIVEN** the user scrolls to the CTA section
+- **WHEN** the section renders
+- **THEN** a full-width teal (#32dbc6) banner is displayed
+- **AND** the text "Let's Get Started" is shown in white
 
 ### Footer
-Scenario: Footer with links and newsletter
-  Given the user visits the page
-  When the footer renders
-  Then a dark background (#333333) footer is displayed
-  And it contains About Us text, Features links, Follow Us social icons, and a newsletter subscribe form
-  And the copyright line includes a link to Component Dock (https://www.componentdock.com/)
+
+#### Scenario: Footer with links and newsletter
+
+- **GIVEN** the user visits the page
+- **WHEN** the footer renders
+- **THEN** a dark background (#333333) footer is displayed
+- **AND** it contains About Us text, Features links, Follow Us social icons, and a newsletter subscribe form
+- **AND** the copyright line includes a link to Component Dock (https://www.componentdock.com/)
 
 ## Verification Checklist
 

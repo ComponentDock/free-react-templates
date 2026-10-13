@@ -92,120 +92,117 @@ Extracted from source CSS (`css/style.css`):
    2e. **Subject** — full-width dropdown (Choose option / Subject 1 / Subject 2 / Subject 3)
    2f. **Submit button** — "Submit" (blue, 5px radius, left-aligned)
 
-## Gherkin scenarios
+## Requirements
 
 ### Background: page layout
 
-```gherkin
 Feature: RegVista registration form
 
-  Background:
-    Given the page has a full-viewport gradient background (pink #FC2C77 to purple #6C4079)
-    And a centered white card is displayed with rounded corners and drop shadow
+Background:
+- **GIVEN** the page has a full-viewport gradient background (pink #FC2C77 to purple #6C4079)
+- **AND** a centered white card is displayed with rounded corners and drop shadow
 
-  Scenario: card renders with correct styling
-    When the form loads
-    Then the card has a white background
-    And the card has border-radius 10px
-    And the card has a drop shadow (0px 8px 20px rgba(0,0,0,0.15))
-    And the card max-width is 680px
-    And the card body has padding 57px 65px
-```
+#### Scenario: card renders with correct styling
+
+- **WHEN** the form loads
+- **THEN** the card has a white background
+- **AND** the card has border-radius 10px
+- **AND** the card has a drop shadow (0px 8px 20px rgba(0,0,0,0.15))
+- **AND** the card max-width is 680px
+- **AND** the card body has padding 57px 65px
 
 ### Title and form fields
 
-```gherkin
-  Scenario: form title renders correctly
-    When the form loads
-    Then the heading reads "Registration Form"
-    And the heading is colored #525252
-    And the heading font-size is 24px
-    And the heading font-weight is 400
+#### Scenario: form title renders correctly
 
-  Scenario: first and last name fields render side by side
-    When the form loads
-    Then a "first name" labeled input is visible
-    And a "last name" labeled input is visible
-    And both inputs are in a two-column row layout
+- **WHEN** the form loads
+- **THEN** the heading reads "Registration Form"
+- **AND** the heading is colored #525252
+- **AND** the heading font-size is 24px
+- **AND** the heading font-weight is 400
 
-  Scenario: birthday and gender fields render side by side
-    When the form loads
-    Then a "Birthday" date input is visible with a calendar icon on the right
-    And a "Gender" radio group is visible with options: Male, Female
-    And Male is selected by default
+#### Scenario: first and last name fields render side by side
 
-  Scenario: email and phone fields render side by side
-    When the form loads
-    Then an "Email" labeled input is visible
-    And a "Phone Number" labeled input is visible
-    And both inputs are in a two-column row layout
-```
+- **WHEN** the form loads
+- **THEN** a "first name" labeled input is visible
+- **AND** a "last name" labeled input is visible
+- **AND** both inputs are in a two-column row layout
+
+#### Scenario: birthday and gender fields render side by side
+
+- **WHEN** the form loads
+- **THEN** a "Birthday" date input is visible with a calendar icon on the right
+- **AND** a "Gender" radio group is visible with options: Male, Female
+- **AND** Male is selected by default
+
+#### Scenario: email and phone fields render side by side
+
+- **WHEN** the form loads
+- **THEN** an "Email" labeled input is visible
+- **AND** a "Phone Number" labeled input is visible
+- **AND** both inputs are in a two-column row layout
 
 ### Input styling
 
-```gherkin
-  Scenario: inputs have light gray background with inset shadow
-    Given the form is visible
-    Then each text input has a #FAFAFA background
-    And each text input has an inset box-shadow (0px 1px 3px rgba(0,0,0,0.08))
-    And each text input has border-radius 5px
-    And each text input has padding 0 20px
-    And each text input has line-height 50px
-    And each text input text color is #666
-    And each input label is colored #555 with font-size 16px and text-transform capitalize
-```
+#### Scenario: inputs have light gray background with inset shadow
+
+- **GIVEN** the form is visible
+- **THEN** each text input has a #FAFAFA background
+- **AND** each text input has an inset box-shadow (0px 1px 3px rgba(0,0,0,0.08))
+- **AND** each text input has border-radius 5px
+- **AND** each text input has padding 0 20px
+- **AND** each text input has line-height 50px
+- **AND** each text input text color is #666
+- **AND** each input label is colored #555 with font-size 16px and text-transform capitalize
 
 ### Subject dropdown
 
-```gherkin
-  Scenario: subject dropdown renders with options
-    When the form loads
-    Then a "Subject" labeled dropdown is visible
-    And the dropdown shows "Choose option" as the default selected text
-    And the dropdown options include: Subject 1, Subject 2, Subject 3
-    And the dropdown has the same light gray background and inset shadow as text inputs
-    And a gray (#999) chevron-down arrow is displayed on the right
-```
+#### Scenario: subject dropdown renders with options
+
+- **WHEN** the form loads
+- **THEN** a "Subject" labeled dropdown is visible
+- **AND** the dropdown shows "Choose option" as the default selected text
+- **AND** the dropdown options include: Subject 1, Subject 2, Subject 3
+- **AND** the dropdown has the same light gray background and inset shadow as text inputs
+- **AND** a gray (#999) chevron-down arrow is displayed on the right
 
 ### Radio buttons
 
-```gherkin
-  Scenario: gender radio buttons render correctly
-    Given the form is visible
-    Then two radio buttons are displayed: Male and Female
-    And each radio button has a 20px circular gray (#E55E5E5) checkmark
-    And Male is checked by default (green #57B846 inner dot visible)
-    And Female is unchecked (no green dot)
-    And radio text color is #666
-    And Male radio has 45px margin-right from Female
-```
+#### Scenario: gender radio buttons render correctly
+
+- **GIVEN** the form is visible
+- **THEN** two radio buttons are displayed: Male and Female
+- **AND** each radio button has a 20px circular gray (#E55E5E5) checkmark
+- **AND** Male is checked by default (green #57B846 inner dot visible)
+- **AND** Female is unchecked (no green dot)
+- **AND** radio text color is #666
+- **AND** Male radio has 45px margin-right from Female
 
 ### Submit button
 
-```gherkin
-  Scenario: submit button renders with blue styling
-    When the form loads
-    Then a "Submit" button is visible below the subject dropdown
-    And the button has a blue background (#4272D7)
-    And the button text is white
-    And the button has border-radius 5px
-    And the button has padding 0 50px and line-height 50px
-    And the button font-size is 18px
+#### Scenario: submit button renders with blue styling
 
-  Scenario: submit button hover state
-    When I hover over the "Submit" button
-    Then the button background changes to #3868CD
-```
+- **WHEN** the form loads
+- **THEN** a "Submit" button is visible below the subject dropdown
+- **AND** the button has a blue background (#4272D7)
+- **AND** the button text is white
+- **AND** the button has border-radius 5px
+- **AND** the button has padding 0 50px and line-height 50px
+- **AND** the button font-size is 18px
+
+#### Scenario: submit button hover state
+
+- **WHEN** I hover over the "Submit" button
+- **THEN** the button background changes to #3868CD
 
 ### Responsive behavior
 
-```gherkin
-  Scenario: columns stack on mobile
-    Given the viewport is 767px or narrower
-    When the form loads
-    Then all column pairs stack vertically (100% width each)
-    And the card body padding reduces to 50px 40px
-```
+#### Scenario: columns stack on mobile
+
+- **GIVEN** the viewport is 767px or narrower
+- **WHEN** the form loads
+- **THEN** all column pairs stack vertically (100% width each)
+- **AND** the card body padding reduces to 50px 40px
 
 ## Verification checklist
 

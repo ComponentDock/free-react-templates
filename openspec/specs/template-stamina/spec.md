@@ -44,90 +44,104 @@ Extracted from the live preview CSS (`style.css`) and inline styles.
 11. **Counter** — dark parallax bg, animated number counters (staff count, service count, client count, happy clients)
 12. **Footer** — dark, 3-column widget layout: about text + social icons, quick links, recent blog sidebar, contact info
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Stamina Template Rendering
 
-Scenario: TopBar displays contact info
-  Given the page loads
-  Then the top bar shows a phone number, email address, and open hours
-  And the top bar has a black background with white text
+#### Scenario: TopBar displays contact info
 
-Scenario: Navbar is sticky and changes on scroll
-  Given the page loads
-  When the user scrolls past the hero
-  Then the navbar becomes solid dark background
-  And the logo reads "Stamina" with decorative side bars
-  And navigation links include Home, About, Programs, Trainers, Pricing, Blog, Contact
+- **GIVEN** the page loads
+- **THEN** the top bar shows a phone number, email address, and open hours
+- **AND** the top bar has a black background with white text
 
-Scenario: Hero slider shows full-screen slides
-  Given the page loads
-  Then the hero section displays a carousel with at least 2 slides
-  And each slide has a full-height background image with dark overlay
-  And each slide has a large heading, subheading, and CTA button
-  And CTA buttons have pill shape (border-radius 30px) with white border
+#### Scenario: Navbar is sticky and changes on scroll
 
-Scenario: About section shows gym info and counters
-  Given the user scrolls to the About section
-  Then there is a heading "Welcome to Stamina Crossfit Gym"
-  And an image/video area on the left
-  And animated counters show Equipment count, open hours, food supply, stories
+- **GIVEN** the page loads
+- **WHEN** the user scrolls past the hero
+- **THEN** the navbar becomes solid dark background
+- **AND** the logo reads "Stamina" with decorative side bars
+- **AND** navigation links include Home, About, Programs, Trainers, Pricing, Blog, Contact
 
-Scenario: Features grid displays goals
-  Given the user scrolls to the Features section
-  Then 5 feature items are displayed in a grid
-  And each has an icon, title, and brief description
+#### Scenario: Hero slider shows full-screen slides
 
-Scenario: Programs carousel shows training types
-  Given the user scrolls to Programs
-  Then a carousel displays 6 program cards
-  And each card has an icon and label (Muscle Sculpt, Fat Burn, Cycling, Pilates & Stretching, Boxing, and one more)
+- **GIVEN** the page loads
+- **THEN** the hero section displays a carousel with at least 2 slides
+- **AND** each slide has a full-height background image with dark overlay
+- **AND** each slide has a large heading, subheading, and CTA button
+- **AND** CTA buttons have pill shape (border-radius 30px) with white border
 
-Scenario: Pricing cards show membership plans
-  Given the user scrolls to Pricing
-  Then 3 pricing cards are displayed
-  And each card has a plan name, price, feature list, and CTA button
-  And the middle/featured card is visually highlighted
+#### Scenario: About section shows gym info and counters
 
-Scenario: Testimonials carousel
-  Given the user scrolls to Testimonials
-  Then a carousel displays testimonial quotes
-  And each testimonial has an avatar image, quote text, and pagination dots
+- **GIVEN** the user scrolls to the About section
+- **THEN** there is a heading "Welcome to Stamina Crossfit Gym"
+- **AND** an image/video area on the left
+- **AND** animated counters show Equipment count, open hours, food supply, stories
 
-Scenario: Contact form in appointment section
-  Given the user scrolls to the Contact section
-  Then a form is displayed with fields: name, email, subject, message
-  And a submit button is present
-  And the section has a parallax background image
+#### Scenario: Features grid displays goals
 
-Scenario: Blog section shows recent posts
-  Given the user scrolls to Blog
-  Then 3 blog cards are displayed in a row
-  And each card has an image, date tag, title, and excerpt text
+- **GIVEN** the user scrolls to the Features section
+- **THEN** 5 feature items are displayed in a grid
+- **AND** each has an icon, title, and brief description
 
-Scenario: Counter bar shows animated stats
-  Given the user scrolls to the Counter section
-  Then 4 animated counters are displayed on a dark parallax background
-  And counters show: staff count, service hours, clients served, happy clients
+#### Scenario: Programs carousel shows training types
 
-Scenario: Footer layout
-  Given the user scrolls to the footer
-  Then the footer has 3 widget columns
-  And column 1 has about text and social icons
-  And column 2 has quick links
-  And column 3 has contact info
-  And the footer links to Component Dock
+- **GIVEN** the user scrolls to Programs
+- **THEN** a carousel displays 6 program cards
+- **AND** each card has an icon and label (Muscle Sculpt, Fat Burn, Cycling, Pilates & Stretching, Boxing, and one more)
 
-Scenario: Responsive design
-  Given the page loads on a mobile viewport
-  Then the navbar collapses to a hamburger menu
-  And columns stack vertically
-  And the hero text remains centered and readable
+#### Scenario: Pricing cards show membership plans
 
-Scenario: Footer links to Component Dock
-  Given the user scrolls to the footer
-  Then there is a link to https://www.componentdock.com/
-  And the link text includes "Component Dock"
+- **GIVEN** the user scrolls to Pricing
+- **THEN** 3 pricing cards are displayed
+- **AND** each card has a plan name, price, feature list, and CTA button
+- **AND** the middle/featured card is visually highlighted
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the user scrolls to Testimonials
+- **THEN** a carousel displays testimonial quotes
+- **AND** each testimonial has an avatar image, quote text, and pagination dots
+
+#### Scenario: Contact form in appointment section
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a form is displayed with fields: name, email, subject, message
+- **AND** a submit button is present
+- **AND** the section has a parallax background image
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to Blog
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card has an image, date tag, title, and excerpt text
+
+#### Scenario: Counter bar shows animated stats
+
+- **GIVEN** the user scrolls to the Counter section
+- **THEN** 4 animated counters are displayed on a dark parallax background
+- **AND** counters show: staff count, service hours, clients served, happy clients
+
+#### Scenario: Footer layout
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has 3 widget columns
+- **AND** column 1 has about text and social icons
+- **AND** column 2 has quick links
+- **AND** column 3 has contact info
+- **AND** the footer links to Component Dock
+
+#### Scenario: Responsive design
+
+- **GIVEN** the page loads on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** columns stack vertically
+- **AND** the hero text remains centered and readable
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** there is a link to https://www.componentdock.com/
+- **AND** the link text includes "Component Dock"
 
 ## Verification Checklist
 

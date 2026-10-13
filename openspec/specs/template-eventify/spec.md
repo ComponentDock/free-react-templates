@@ -55,111 +55,137 @@ Order extracted from `https://preview.colorlib.com/theme/evento/`:
 11. **Footer** — 3 columns: logo + description + social icons, Instagram image grid (6 images), newsletter subscribe form (email input + "SUBSCRIBE" pill button).
 12. **Copyright footer** — Attribution line + bottom nav links.
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: Eventify template behaviour
+
 Feature: Eventify — Conference Event Landing Page
 
-  Background:
-    Given the user visits the Eventify homepage
+Background:
+- **GIVEN** the user visits the Eventify homepage
 
-  # --- Navbar ---
-  Scenario: Navbar displays navigation links
-    Then the navbar contains links for "Home", "Speakers", "Events", "News", "Contact"
-    And the navbar is fixed at the top of the viewport
-    And a search icon is visible in the navbar
+**--- Navbar ---**
 
-  Scenario: Navbar brand logo is visible
-    Then the navbar displays a logo on the left side
+#### Scenario: Navbar displays navigation links
 
-  # --- Hero Slider ---
-  Scenario: Hero slider shows conference headline
-    Given the hero section is visible
-    Then a heading "Prepare yourself for the" is displayed
-    And a large text "conference" is displayed
-    And a date line is shown below the heading
-    And a "Buy Tickets Now" button is visible
+- **THEN** the navbar contains links for "Home", "Speakers", "Events", "News", "Contact"
+- **AND** the navbar is fixed at the top of the viewport
+- **AND** a search icon is visible in the navbar
 
-  Scenario: Hero slider has dot navigation
-    Given the hero section is visible
-    Then 3 dot indicators are displayed
-    And the first dot is active by default
+#### Scenario: Navbar brand logo is visible
 
-  # --- Event Info ---
-  Scenario: Event info shows four key details
-    Given the event info section is visible
-    Then 4 icon boxes are displayed in a row
-    And the icon boxes show "DATE", "LOCATION", "SPEAKERS", "TIKETS"
-    And each icon box has a descriptive detail line
+- **THEN** the navbar displays a logo on the left side
 
-  # --- Countdown ---
-  Scenario: Countdown section displays timer
-    Given the countdown section is visible
-    Then a heading "Counter until the big event" is shown
-    And a countdown timer is displayed with days, hours, minutes, seconds
+**--- Hero Slider ---**
 
-  # --- About the event ---
-  Scenario: About section shows description and features
-    Given the about section is visible
-    Then a heading "About the event" is shown
-    And two columns of descriptive text are displayed
-    And 4 feature icon boxes are shown in a row
-    And each feature box has an icon, title, description, and "read more" link
+#### Scenario: Hero slider shows conference headline
 
-  # --- Speakers ---
-  Scenario: Speakers section displays speaker grid
-    Given the speakers section is visible
-    Then a heading "our speakers" is shown
-    And 8 speaker cards are displayed in a 4-column grid
-    And each speaker card shows a photo, name, and position
+- **GIVEN** the hero section is visible
+- **THEN** a heading "Prepare yourself for the" is displayed
+- **AND** a large text "conference" is displayed
+- **AND** a date line is shown below the heading
+- **AND** a "Buy Tickets Now" button is visible
 
-  Scenario: Speaker card reveals info on hover
-    Given a speaker card is visible
-    When the user hovers over the speaker card
-    Then an info overlay appears with the speaker's name and position
+#### Scenario: Hero slider has dot navigation
 
-  # --- Pricing ---
-  Scenario: Pricing table shows three tiers
-    Given the pricing section is visible
-    Then a heading "Pricing table" is shown
-    And 3 pricing cards are displayed
-    And the cards show "Early Bird" ($65), "Start up" ($85), "Corporate" ($95)
-    And one card has a "recommended" highlight badge
-    And each card lists feature items and a "Purchase" button
+- **GIVEN** the hero section is visible
+- **THEN** 3 dot indicators are displayed
+- **AND** the first dot is active by default
 
-  # --- Event Calendar ---
-  Scenario: Calendar shows upcoming events
-    Given the event calendar section is visible
-    Then a heading "next events calendar" is shown
-    And a table displays 3 event rows
-    And each row shows an image, date, event details, "Read More" button, and "buy now" link
+**--- Event Info ---**
 
-  # --- Partners ---
-  Scenario: Partners section displays brand logos
-    Given the partners section is visible
-    Then a heading "our partners" is shown
-    And a carousel of brand logos is displayed on a gray background
+#### Scenario: Event info shows four key details
 
-  # --- Get Tickets CTA ---
-  Scenario: Get tickets section has CTA
-    Given the get tickets section is visible
-    Then a heading "GEt your tikets" is shown
-    And descriptive text is displayed
-    And a "buy now" pill button is visible
+- **GIVEN** the event info section is visible
+- **THEN** 4 icon boxes are displayed in a row
+- **AND** the icon boxes show "DATE", "LOCATION", "SPEAKERS", "TIKETS"
+- **AND** each icon box has a descriptive detail line
 
-  # --- Footer ---
-  Scenario: Footer has three columns
-    Given the footer is visible
-    Then a logo column with social icons is shown
-    And an Instagram grid with 6 images is shown
-    And a newsletter subscribe form with email input and "SUBSCRIBE" button is shown
+**--- Countdown ---**
 
-  Scenario: Footer copyright contains attribution
-    Given the copyright footer is visible
-    Then a copyright line with "Made with ❤" attribution is displayed
-    And bottom navigation links for Home, Speakers, Events, News, Contact are shown
-    And a link to "https://www.componentdock.com/" is present (branded "Component Dock")
-```
+#### Scenario: Countdown section displays timer
+
+- **GIVEN** the countdown section is visible
+- **THEN** a heading "Counter until the big event" is shown
+- **AND** a countdown timer is displayed with days, hours, minutes, seconds
+
+**--- About the event ---**
+
+#### Scenario: About section shows description and features
+
+- **GIVEN** the about section is visible
+- **THEN** a heading "About the event" is shown
+- **AND** two columns of descriptive text are displayed
+- **AND** 4 feature icon boxes are shown in a row
+- **AND** each feature box has an icon, title, description, and "read more" link
+
+**--- Speakers ---**
+
+#### Scenario: Speakers section displays speaker grid
+
+- **GIVEN** the speakers section is visible
+- **THEN** a heading "our speakers" is shown
+- **AND** 8 speaker cards are displayed in a 4-column grid
+- **AND** each speaker card shows a photo, name, and position
+
+#### Scenario: Speaker card reveals info on hover
+
+- **GIVEN** a speaker card is visible
+- **WHEN** the user hovers over the speaker card
+- **THEN** an info overlay appears with the speaker's name and position
+
+**--- Pricing ---**
+
+#### Scenario: Pricing table shows three tiers
+
+- **GIVEN** the pricing section is visible
+- **THEN** a heading "Pricing table" is shown
+- **AND** 3 pricing cards are displayed
+- **AND** the cards show "Early Bird" ($65), "Start up" ($85), "Corporate" ($95)
+- **AND** one card has a "recommended" highlight badge
+- **AND** each card lists feature items and a "Purchase" button
+
+**--- Event Calendar ---**
+
+#### Scenario: Calendar shows upcoming events
+
+- **GIVEN** the event calendar section is visible
+- **THEN** a heading "next events calendar" is shown
+- **AND** a table displays 3 event rows
+- **AND** each row shows an image, date, event details, "Read More" button, and "buy now" link
+
+**--- Partners ---**
+
+#### Scenario: Partners section displays brand logos
+
+- **GIVEN** the partners section is visible
+- **THEN** a heading "our partners" is shown
+- **AND** a carousel of brand logos is displayed on a gray background
+
+**--- Get Tickets CTA ---**
+
+#### Scenario: Get tickets section has CTA
+
+- **GIVEN** the get tickets section is visible
+- **THEN** a heading "GEt your tikets" is shown
+- **AND** descriptive text is displayed
+- **AND** a "buy now" pill button is visible
+
+**--- Footer ---**
+
+#### Scenario: Footer has three columns
+
+- **GIVEN** the footer is visible
+- **THEN** a logo column with social icons is shown
+- **AND** an Instagram grid with 6 images is shown
+- **AND** a newsletter subscribe form with email input and "SUBSCRIBE" button is shown
+
+#### Scenario: Footer copyright contains attribution
+
+- **GIVEN** the copyright footer is visible
+- **THEN** a copyright line with "Made with ❤" attribution is displayed
+- **AND** bottom navigation links for Home, Speakers, Events, News, Contact are shown
+- **AND** a link to "https://www.componentdock.com/" is present (branded "Component Dock")
 
 ## Verification checklist
 

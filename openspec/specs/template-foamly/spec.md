@@ -79,76 +79,87 @@ dark-footer with social links.
    links (Facebook, Pinterest, Twitter), contact info, opening hours, navigation
    links, and copyright.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Foamly — Car Wash & Detailing Landing Page
 
-  Scenario: Navbar displays logo, nav links, and contact CTA
-    Given the user visits the Foamly landing page
-    Then the navbar shows a logo with "Car Wash" branding
-    And nav links include Home, About, Services, Blog, Contact
-    And a phone number CTA button is visible on the right
+#### Scenario: Navbar displays logo, nav links, and contact CTA
 
-  Scenario: Hero section shows headline and CTA
-    Given the user views the hero section
-    Then a headline "Car Wash & Detailing" is displayed in white text
-    And a subtitle paragraph is shown below the headline
-    And a "Our Services" CTA button with gradient blue styling is visible
+- **GIVEN** the user visits the Foamly landing page
+- **THEN** the navbar shows a logo with "Car Wash" branding
+- **AND** nav links include Home, About, Services, Blog, Contact
+- **AND** a phone number CTA button is visible on the right
 
-  Scenario: About section displays service info
-    Given the user scrolls to the about section
-    Then a heading "We offer best services to our customer" is shown
-    And a descriptive paragraph is displayed
-    And an "About Us" CTA button is visible
+#### Scenario: Hero section shows headline and CTA
 
-  Scenario: Pricing cards show three service tiers
-    Given the user views the pricing section
-    Then three pricing cards are displayed in a row
-    And card 1 shows "Car Wash" at "$50.00"
-    And card 2 shows "Detailing" at "$100.00"
-    And card 3 shows "Wash & Detailing" at "$200.00"
-    And each card has a "Get Started" button
+- **GIVEN** the user views the hero section
+- **THEN** a headline "Car Wash & Detailing" is displayed in white text
+- **AND** a subtitle paragraph is shown below the headline
+- **AND** a "Our Services" CTA button with gradient blue styling is visible
 
-  Scenario: Testimonials carousel displays quotes
-    Given the user views the testimonials section
-    Then testimonial slides are shown in a carousel
-    And each slide shows a circular founder image
-    And each slide has a name, role, and quote text
+#### Scenario: About section displays service info
 
-  Scenario: Why Us section shows features
-    Given the user views the why-us section
-    Then 4 feature items are displayed
-    And each feature has an icon, title, and description
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading "We offer best services to our customer" is shown
+- **AND** a descriptive paragraph is displayed
+- **AND** an "About Us" CTA button is visible
 
-  Scenario: Video CTA section prompts engagement
-    Given the user scrolls to the video CTA section
-    Then a background image section is displayed
-    And a centered play button icon is visible
-    And heading text "Your car will look as your new one" is shown
+#### Scenario: Pricing cards show three service tiers
 
-  Scenario: Contact section shows business info
-    Given the user views the contact section
-    Then phone number "(80) 783 367-3904" is displayed
-    And email "contact@carwash.com" is shown
-    And opening hours are listed (Mon-Fri, Sat, Sun)
+- **GIVEN** the user views the pricing section
+- **THEN** three pricing cards are displayed in a row
+- **AND** card 1 shows "Car Wash" at "$50.00"
+- **AND** card 2 shows "Detailing" at "$100.00"
+- **AND** card 3 shows "Wash & Detailing" at "$200.00"
+- **AND** each card has a "Get Started" button
 
-  Scenario: Footer displays branding and links
-    Given the user scrolls to the footer
-    Then the footer has a dark navy background
-    And it shows the logo, about text, and social links
-    And a "Component Dock" attribution link is present
-    And a copyright notice is shown
+#### Scenario: Testimonials carousel displays quotes
 
-  Scenario: Navbar is sticky on scroll
-    Given the user scrolls down the page
-    Then the navbar sticks to the top of the viewport
-    And it remains visible while scrolling
+- **GIVEN** the user views the testimonials section
+- **THEN** testimonial slides are shown in a carousel
+- **AND** each slide shows a circular founder image
+- **AND** each slide has a name, role, and quote text
 
-  Scenario: All CTA buttons have consistent gradient styling
-    Given any CTA button is rendered
-    Then it has a blue gradient background (#0d43b6 to #0f66f8)
-    And it has pill-shaped border-radius (30px)
-    And text is white and uppercase
+#### Scenario: Why Us section shows features
+
+- **GIVEN** the user views the why-us section
+- **THEN** 4 feature items are displayed
+- **AND** each feature has an icon, title, and description
+
+#### Scenario: Video CTA section prompts engagement
+
+- **GIVEN** the user scrolls to the video CTA section
+- **THEN** a background image section is displayed
+- **AND** a centered play button icon is visible
+- **AND** heading text "Your car will look as your new one" is shown
+
+#### Scenario: Contact section shows business info
+
+- **GIVEN** the user views the contact section
+- **THEN** phone number "(80) 783 367-3904" is displayed
+- **AND** email "contact@carwash.com" is shown
+- **AND** opening hours are listed (Mon-Fri, Sat, Sun)
+
+#### Scenario: Footer displays branding and links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark navy background
+- **AND** it shows the logo, about text, and social links
+- **AND** a "Component Dock" attribution link is present
+- **AND** a copyright notice is shown
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar sticks to the top of the viewport
+- **AND** it remains visible while scrolling
+
+#### Scenario: All CTA buttons have consistent gradient styling
+
+- **GIVEN** any CTA button is rendered
+- **THEN** it has a blue gradient background (#0d43b6 to #0f66f8)
+- **AND** it has pill-shaped border-radius (30px)
+- **AND** text is white and uppercase
 
 ## Verification checklist
 

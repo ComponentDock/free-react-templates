@@ -43,99 +43,111 @@ Recreation of ColorLib "Farmland" as a React 19 + Vite + Tailwind 4 + TypeScript
 10. **Blog/Recent Posts** — "Recent Post" heading on light gray bg (#f8f9fa). 3 blog cards: each with featured image, category tag, date, title, excerpt text. Cards in a row.
 11. **Footer** — Dark background with 4 columns: Brand ("Grange" in cursive + description), Quick Links, Services, Newsletter subscribe form. Social media icons. Copyright bar at bottom. "Made with Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Grange Template — Agriculture Landing Page
 
 #### Scenario: Navbar renders correctly
-- **Given** the user loads the page
-- **When** the navbar is visible
-- **Then** it displays the "Grange" logo in cursive font
-- **And** it shows navigation links: Home, About, Services, Projects, Blog, Contact
-- **And** it shows social media icons (Twitter, Facebook, Instagram)
-- **And** on mobile it shows a hamburger menu toggle
+
+- **GIVEN** the user loads the page
+- **WHEN** the navbar is visible
+- **THEN** it displays the "Grange" logo in cursive font
+- **AND** it shows navigation links: Home, About, Services, Projects, Blog, Contact
+- **AND** it shows social media icons (Twitter, Facebook, Instagram)
+- **AND** on mobile it shows a hamburger menu toggle
 
 #### Scenario: Hero slider displays slides
-- **Given** the user loads the page
-- **When** the hero section is visible
-- **Then** it shows a full-height background image with dark overlay
-- **And** it displays a cursive heading "Agriculture is the Most Healthful"
-- **And** it shows a subheading and description paragraph
-- **And** it displays two CTA buttons: "Our Services" and "Our Projects"
-- **And** the slider advances to the second slide after a timeout
+
+- **GIVEN** the user loads the page
+- **WHEN** the hero section is visible
+- **THEN** it shows a full-height background image with dark overlay
+- **AND** it displays a cursive heading "Agriculture is the Most Healthful"
+- **AND** it shows a subheading and description paragraph
+- **AND** it displays two CTA buttons: "Our Services" and "Our Projects"
+- **AND** the slider advances to the second slide after a timeout
 
 #### Scenario: Services section shows 4 service cards
-- **Given** the user scrolls to the services section
-- **When** the services section is visible
-- **Then** it displays 4 cards: Fresh Vegetables, Agricultural Products, Organic Products, Dairy Products
-- **And** each card has an icon, title, and description
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the services section is visible
+- **THEN** it displays 4 cards: Fresh Vegetables, Agricultural Products, Organic Products, Dairy Products
+- **AND** each card has an icon, title, and description
 
 #### Scenario: About section displays company info
-- **Given** the user scrolls to the about section
-- **When** the about section is visible
-- **Then** it shows a heading "We're Leader In Agricultural Market"
-- **And** it displays two images on the left side
-- **And** it shows two feature items with icons on the right
-- **And** it has a "Learn More" button
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the about section is visible
+- **THEN** it shows a heading "We're Leader In Agricultural Market"
+- **AND** it displays two images on the left side
+- **AND** it shows two feature items with icons on the right
+- **AND** it has a "Learn More" button
 
 #### Scenario: Counter section shows animated stats
-- **Given** the user scrolls to the counter section
-- **When** the counter section enters the viewport
-- **Then** it displays a background image with overlay
-- **And** it shows animated number counters that count up on scroll
+
+- **GIVEN** the user scrolls to the counter section
+- **WHEN** the counter section enters the viewport
+- **THEN** it displays a background image with overlay
+- **AND** it shows animated number counters that count up on scroll
 
 #### Scenario: Projects grid shows 4 portfolio items
-- **Given** the user scrolls to the projects section
-- **When** the projects section is visible
-- **Then** it shows a heading "Explore Projects"
-- **And** it displays 4 project cards in a grid
-- **And** each card has a background image and title overlay
+
+- **GIVEN** the user scrolls to the projects section
+- **WHEN** the projects section is visible
+- **THEN** it shows a heading "Explore Projects"
+- **AND** it displays 4 project cards in a grid
+- **AND** each card has a background image and title overlay
 
 #### Scenario: Video CTA section renders
-- **Given** the user scrolls to the video section
-- **When** the video section is visible
-- **Then** it shows a full-width background image with overlay
-- **And** it displays a heading "Watch Modern Agricultural Farming"
-- **And** it shows a play button icon centered on the image
+
+- **GIVEN** the user scrolls to the video section
+- **WHEN** the video section is visible
+- **THEN** it shows a full-width background image with overlay
+- **AND** it displays a heading "Watch Modern Agricultural Farming"
+- **AND** it shows a play button icon centered on the image
 
 #### Scenario: Testimonials carousel works
-- **Given** the user scrolls to the testimonials section
-- **When** the testimonials section is visible
-- **Then** it shows a heading "What Our Customers Say"
-- **And** it displays a carousel with customer quotes
-- **And** each slide shows a user avatar, quote text, and name
+
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the testimonials section is visible
+- **THEN** it shows a heading "What Our Customers Say"
+- **AND** it displays a carousel with customer quotes
+- **AND** each slide shows a user avatar, quote text, and name
 
 #### Scenario: FAQ + Contact form is functional
-- **Given** the user scrolls to the FAQ/contact section
-- **When** the section is visible
-- **Then** it shows a contact form on the left with fields: name, email, subject, message
-- **And** it shows an FAQ accordion on the right
-- **And** clicking an FAQ item expands/collapses the answer
+
+- **GIVEN** the user scrolls to the FAQ/contact section
+- **WHEN** the section is visible
+- **THEN** it shows a contact form on the left with fields: name, email, subject, message
+- **AND** it shows an FAQ accordion on the right
+- **AND** clicking an FAQ item expands/collapses the answer
 
 #### Scenario: Blog section shows recent posts
-- **Given** the user scrolls to the blog section
-- **When** the blog section is visible
-- **Then** it shows a heading "Recent Post" on a light gray background
-- **And** it displays 3 blog cards with image, category, date, title, and excerpt
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the blog section is visible
+- **THEN** it shows a heading "Recent Post" on a light gray background
+- **AND** it displays 3 blog cards with image, category, date, title, and excerpt
 
 #### Scenario: Footer displays correctly
-- **Given** the user scrolls to the footer
-- **When** the footer is visible
-- **Then** it shows the "Grange" logo in cursive font
-- **And** it displays 4 columns: brand info, quick links, services, newsletter
-- **And** it has a newsletter subscribe input + button
-- **And** it shows social media icons
-- **And** it displays a copyright bar with "Made with Component Dock" link
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** it shows the "Grange" logo in cursive font
+- **AND** it displays 4 columns: brand info, quick links, services, newsletter
+- **AND** it has a newsletter subscribe input + button
+- **AND** it shows social media icons
+- **AND** it displays a copyright bar with "Made with Component Dock" link
 
 #### Scenario: Page is responsive
-- **Given** the user views the page on a mobile device (viewport < 768px)
-- **When** the page loads
-- **Then** the navbar collapses into a hamburger menu
-- **And** the hero text is readable and not clipped
-- **And** service cards stack vertically
-- **And** the projects grid stacks into 1-2 columns
-- **And** the FAQ/contact section stacks vertically
-- **And** footer columns stack vertically
+
+- **GIVEN** the user views the page on a mobile device (viewport < 768px)
+- **WHEN** the page loads
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the hero text is readable and not clipped
+- **AND** service cards stack vertically
+- **AND** the projects grid stacks into 1-2 columns
+- **AND** the FAQ/contact section stacks vertically
+- **AND** footer columns stack vertically
 
 ## Verification checklist
 

@@ -75,68 +75,78 @@ Recreation of ColorLib "Bbs" — a small company / creative agency website templ
 8. **Subscription area** — centered headline "Subscribe Newsletter", email input + "Get Started" pill button
 9. **Footer** — dark background, nav links (Home / Generic / Elements), social icons (Facebook, Twitter, Dribbble, Behance), copyright
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Boardroom template behaviour
+
 Feature: Boardroom Template
 
-  Background:
-    Given the Boardroom template is loaded
+Background:
+- **GIVEN** the Boardroom template is loaded
 
-  Scenario: Header displays logo and navigation
-    Then a logo is visible in the top-left
-    And navigation links are visible: Home, Generic, Elements
-    And a hamburger menu icon is present
+#### Scenario: Header displays logo and navigation
 
-  Scenario: Hero banner renders correctly
-    Then the headline "we're Creative" is centered and uppercase
-    And a "Get Started" pill button is below the headline
-    And the banner area has a background image
+- **THEN** a logo is visible in the top-left
+- **AND** navigation links are visible: Home, Generic, Elements
+- **AND** a hamburger menu icon is present
 
-  Scenario: Featured section shows four feature cards
-    Then 4 feature cards are displayed in a 2-column grid
-    And each card has an icon, title, and description paragraph
+#### Scenario: Hero banner renders correctly
 
-  Scenario: About section has tabs
-    Then the title "About Our Company" is visible
-    And an image is displayed beside the title
-    And two tabs are available: "History" and "Mission & Vision"
-    When the "Mission & Vision" tab is clicked
-    Then the Mission & Vision content is displayed
-    When the "History" tab is clicked
-    Then the History content is displayed
+- **THEN** the headline "we're Creative" is centered and uppercase
+- **AND** a "Get Started" pill button is below the headline
+- **AND** the banner area has a background image
 
-  Scenario: Video section displays with purple overlay
-    Then the video area has a purple gradient overlay
-    And a heading "New Features that open the door of future" is centered
-    And a play button is visible
+#### Scenario: Featured section shows four feature cards
 
-  Scenario: Blog section shows three blog cards
-    Then 3 blog cards are displayed in a 3-column grid
-    And each card has an image, title, and short description
+- **THEN** 4 feature cards are displayed in a 2-column grid
+- **AND** each card has an icon, title, and description paragraph
 
-  Scenario: Story section has purple background
-    Then the story area has a solid purple background
-    And white text reads "Crafting Our Experiences"
-    And a descriptive paragraph is below the heading
+#### Scenario: About section has tabs
 
-  Scenario: Newsletter subscription form
-    Then a "Subscribe Newsletter" heading is visible
-    And an email input field with placeholder "Email address" is present
-    And a "Get Started" pill button submits the form
+- **THEN** the title "About Our Company" is visible
+- **AND** an image is displayed beside the title
+- **AND** two tabs are available: "History" and "Mission & Vision"
+- **WHEN** the "Mission & Vision" tab is clicked
+- **THEN** the Mission & Vision content is displayed
+- **WHEN** the "History" tab is clicked
+- **THEN** the History content is displayed
 
-  Scenario: Footer links and social icons
-    Then the footer has navigation links
-    And social media icons are displayed (Facebook, Twitter, Dribbble, Behance)
-    And a copyright line is present
-    And the footer links to https://www.componentdock.com/
+#### Scenario: Video section displays with purple overlay
 
-  Scenario: Responsive layout
-    When the viewport is below 768px
-    Then the feature grid stacks to a single column
-    And the blog grid stacks to a single column
-    And the hamburger menu is functional
-```
+- **THEN** the video area has a purple gradient overlay
+- **AND** a heading "New Features that open the door of future" is centered
+- **AND** a play button is visible
+
+#### Scenario: Blog section shows three blog cards
+
+- **THEN** 3 blog cards are displayed in a 3-column grid
+- **AND** each card has an image, title, and short description
+
+#### Scenario: Story section has purple background
+
+- **THEN** the story area has a solid purple background
+- **AND** white text reads "Crafting Our Experiences"
+- **AND** a descriptive paragraph is below the heading
+
+#### Scenario: Newsletter subscription form
+
+- **THEN** a "Subscribe Newsletter" heading is visible
+- **AND** an email input field with placeholder "Email address" is present
+- **AND** a "Get Started" pill button submits the form
+
+#### Scenario: Footer links and social icons
+
+- **THEN** the footer has navigation links
+- **AND** social media icons are displayed (Facebook, Twitter, Dribbble, Behance)
+- **AND** a copyright line is present
+- **AND** the footer links to https://www.componentdock.com/
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport is below 768px
+- **THEN** the feature grid stacks to a single column
+- **AND** the blog grid stacks to a single column
+- **AND** the hamburger menu is functional
 
 ## Verification checklist
 

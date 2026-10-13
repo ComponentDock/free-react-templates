@@ -41,156 +41,154 @@ Recreation of the ColorLib **PageOne** template as a modern React SPA.
 10. **Contact** (#contact-section) — 3 quick-contact items (address, phone, email) with circular icon badges; embedded map
 11. **Footer** (bg #f8f9fa) — 3-column: About (logo + description), Pages (Blog, About, Contact), Resources (Blog, Home); bottom bar with copyright + Component Dock link
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Sticky navigation bar
 
-  Scenario: Desktop nav displays all links
-    Given the user is on a desktop viewport
-    When the page loads
-    Then the navbar shows logo "PageDraft." on the left
-    And links "Home", "Services", "Process", "Clients", "About", "Contact" are visible
+#### Scenario: Desktop nav displays all links
 
-  Scenario: Navbar becomes sticky on scroll
-    Given the user scrolls past the hero
-    Then the navbar sticks to the top with white background and subtle shadow
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar shows logo "PageDraft." on the left
+- **AND** links "Home", "Services", "Process", "Clients", "About", "Contact" are visible
 
-  Scenario: Mobile hamburger opens slide-in menu
-    Given the user is on a mobile viewport
-    When the hamburger icon is tapped
-    Then a slide-in mobile menu appears with all nav links
+#### Scenario: Navbar becomes sticky on scroll
 
-  Scenario: Mobile menu closes on link tap
-    Given the mobile menu is open
-    When a nav link is tapped
-    Then the menu closes and the page scrolls to the section
-```
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar sticks to the top with white background and subtle shadow
+
+#### Scenario: Mobile hamburger opens slide-in menu
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the hamburger icon is tapped
+- **THEN** a slide-in mobile menu appears with all nav links
+
+#### Scenario: Mobile menu closes on link tap
+
+- **GIVEN** the mobile menu is open
+- **WHEN** a nav link is tapped
+- **THEN** the menu closes and the page scrolls to the section
 
 ### Hero
 
-```gherkin
 Feature: Hero section
 
-  Scenario: Hero displays heading and CTA
-    Given the user views the page
-    Then a large heading "We are a web agency based in Los Angeles, CA" is displayed
-    And a CTA button is visible below the heading
+#### Scenario: Hero displays heading and CTA
 
-  Scenario: Service category pills are shown
-    Given the user views the hero
-    Then 6 service-category links are displayed: Technology, Marketing, Product & Design, Strategic Consulting, Business Synergies, Fundraising
+- **GIVEN** the user views the page
+- **THEN** a large heading "We are a web agency based in Los Angeles, CA" is displayed
+- **AND** a CTA button is visible below the heading
 
-  Scenario: Hero heading is responsive
-    Given the user is on a mobile viewport
-    Then the heading font size reduces to ~50px
-```
+#### Scenario: Service category pills are shown
+
+- **GIVEN** the user views the hero
+- **THEN** 6 service-category links are displayed: Technology, Marketing, Product & Design, Strategic Consulting, Business Synergies, Fundraising
+
+#### Scenario: Hero heading is responsive
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** the heading font size reduces to ~50px
 
 ### Service Categories
 
-```gherkin
 Feature: Service category cards below hero
 
-  Scenario: Category cards display with descriptions
-    Given the user scrolls below the hero
-    Then category cards with short descriptions are visible in a row layout
-```
+#### Scenario: Category cards display with descriptions
+
+- **GIVEN** the user scrolls below the hero
+- **THEN** category cards with short descriptions are visible in a row layout
 
 ### Services
 
-```gherkin
 Feature: Services section
 
-  Scenario: Services heading and intro are displayed
-    Given the user scrolls to the services section
-    Then heading "Services" and an intro paragraph are visible
+#### Scenario: Services heading and intro are displayed
 
-  Scenario: Four service cards are shown in a grid
-    Given the user views the services section
-    Then 4 service cards are displayed: Graphic Design, Web Development, Branding, Iconography
-    And each card has an icon, title, and description paragraph
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** heading "Services" and an intro paragraph are visible
+
+#### Scenario: Four service cards are shown in a grid
+
+- **GIVEN** the user views the services section
+- **THEN** 4 service cards are displayed: Graphic Design, Web Development, Branding, Iconography
+- **AND** each card has an icon, title, and description paragraph
 
 ### Process
 
-```gherkin
 Feature: Process section
 
-  Scenario: Six process steps are displayed
-    Given the user scrolls to the process section
-    Then heading "Our Process" and intro paragraph are visible
-    And 6 numbered steps are shown: 01 Information Gathering, 02 Planning, 03 Design, 04 Development, 05 Testing and Delivery, 06 Maintenance
-    And each step has a pink number badge, title, and description
-```
+#### Scenario: Six process steps are displayed
+
+- **GIVEN** the user scrolls to the process section
+- **THEN** heading "Our Process" and intro paragraph are visible
+- **AND** 6 numbered steps are shown: 01 Information Gathering, 02 Planning, 03 Design, 04 Development, 05 Testing and Delivery, 06 Maintenance
+- **AND** each step has a pink number badge, title, and description
 
 ### Clients
 
-```gherkin
 Feature: Clients testimonials section
 
-  Scenario: Client testimonials on dark background
-    Given the user scrolls to the clients section
-    Then the section has a dark background (#1d1d1d)
-    And 5 client testimonials are displayed: Goldline, Foxhub, Ideaa, Nirastate, Treva
-    And each testimonial shows client name, quote, and avatar
-```
+#### Scenario: Client testimonials on dark background
+
+- **GIVEN** the user scrolls to the clients section
+- **THEN** the section has a dark background (#1d1d1d)
+- **AND** 5 client testimonials are displayed: Goldline, Foxhub, Ideaa, Nirastate, Treva
+- **AND** each testimonial shows client name, quote, and avatar
 
 ### Features
 
-```gherkin
 Feature: Features section
 
-  Scenario: Features grid on light background
-    Given the user scrolls to the features section
-    Then heading "Features" and intro paragraph are visible
-    And 6 feature cards are displayed: Illustration, 24/7 Support, Easy to Use, Web Development, Intuitive, Documentation
-    And each card has an icon, title, and description
-```
+#### Scenario: Features grid on light background
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** heading "Features" and intro paragraph are visible
+- **AND** 6 feature cards are displayed: Illustration, 24/7 Support, Easy to Use, Web Development, Intuitive, Documentation
+- **AND** each card has an icon, title, and description
 
 ### About
 
-```gherkin
 Feature: About section
 
-  Scenario: Office description with image
-    Given the user scrolls to the about section
-    Then "Our Office" heading and 3 paragraphs of description are shown
-    And an office photo is displayed alongside the text
+#### Scenario: Office description with image
 
-  Scenario: Team member cards
-    Given the user views the about section
-    Then "Our Team" heading is visible
-    And 4 team member cards are displayed with circular photos, names, roles, and descriptions
-```
+- **GIVEN** the user scrolls to the about section
+- **THEN** "Our Office" heading and 3 paragraphs of description are shown
+- **AND** an office photo is displayed alongside the text
+
+#### Scenario: Team member cards
+
+- **GIVEN** the user views the about section
+- **THEN** "Our Team" heading is visible
+- **AND** 4 team member cards are displayed with circular photos, names, roles, and descriptions
 
 ### Contact
 
-```gherkin
 Feature: Contact section
 
-  Scenario: Quick contact items
-    Given the user scrolls to the contact section
-    Then 3 contact items are displayed: address, phone, email
-    And each has a circular icon badge with brand-pink border
-```
+#### Scenario: Quick contact items
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** 3 contact items are displayed: address, phone, email
+- **AND** each has a circular icon badge with brand-pink border
 
 ### Footer
 
-```gherkin
 Feature: Site footer
 
-  Scenario: Footer layout
-    Given the user scrolls to the footer
-    Then the footer has a light gray background (#f8f9fa)
-    And 3 columns are shown: About (logo + description), Pages (Blog, About, Contact), Resources (Blog, Home)
-    And a bottom bar contains copyright text and a link to https://www.componentdock.com/
+#### Scenario: Footer layout
 
-  Scenario: Footer links navigate correctly
-    Given the user clicks a footer page link
-    Then the browser navigates to the corresponding section or page
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a light gray background (#f8f9fa)
+- **AND** 3 columns are shown: About (logo + description), Pages (Blog, About, Contact), Resources (Blog, Home)
+- **AND** a bottom bar contains copyright text and a link to https://www.componentdock.com/
+
+#### Scenario: Footer links navigate correctly
+
+- **GIVEN** the user clicks a footer page link
+- **THEN** the browser navigates to the corresponding section or page
 
 ## Verification checklist
 

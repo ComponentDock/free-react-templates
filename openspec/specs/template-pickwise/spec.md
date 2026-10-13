@@ -60,99 +60,81 @@ The template shows:
 4. Selected items appear as **golden-yellow chips/badges** inside the input field with black text
 5. Each chip has a small **remove "×" button** (black text)
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with centered heading
+### Feature: Pickwise template behaviour
 
-```gherkin
-Given the user visits the Pickwise page
-Then a heading "Multiselect #09" is visible
-And the heading is centered horizontally
-And the heading text is white
-```
+#### Scenario: Page renders with centered heading
 
-### Scenario: Multiselect dropdown renders with options
+- **GIVEN** the user visits the Pickwise page
+- **THEN** a heading "Multiselect #09" is visible
+- **AND** the heading is centered horizontally
+- **AND** the heading text is white
 
-```gherkin
-Given the user visits the Pickwise page
-Then a multiselect dropdown is visible
-And the dropdown contains 13 options: Option1 through Option13
-And the dropdown has a dark background
-And the dropdown displays placeholder text
-```
+#### Scenario: Multiselect dropdown renders with options
 
-### Scenario: Opening the dropdown shows the option list
+- **GIVEN** the user visits the Pickwise page
+- **THEN** a multiselect dropdown is visible
+- **AND** the dropdown contains 13 options: Option1 through Option13
+- **AND** the dropdown has a dark background
+- **AND** the dropdown displays placeholder text
 
-```gherkin
-Given the user visits the Pickwise page
-When the user clicks the multiselect dropdown
-Then a dropdown panel opens below the input
-And the dropdown panel has a black background
-And the dropdown panel has rounded corners
-And the dropdown panel has a box shadow
-```
+#### Scenario: Opening the dropdown shows the option list
 
-### Scenario: Selecting an option adds a chip
+- **GIVEN** the user visits the Pickwise page
+- **WHEN** the user clicks the multiselect dropdown
+- **THEN** a dropdown panel opens below the input
+- **AND** the dropdown panel has a black background
+- **AND** the dropdown panel has rounded corners
+- **AND** the dropdown panel has a box shadow
 
-```gherkin
-Given the user visits the Pickwise page
-When the user clicks the multiselect dropdown
-And the user clicks "Option1"
-Then "Option1" appears as a golden-yellow chip in the input
-And the chip has black text
-And the chip has a remove button
-```
+#### Scenario: Selecting an option adds a chip
 
-### Scenario: Deselecting an option removes the chip
+- **GIVEN** the user visits the Pickwise page
+- **WHEN** the user clicks the multiselect dropdown
+- **AND** the user clicks "Option1"
+- **THEN** "Option1" appears as a golden-yellow chip in the input
+- **AND** the chip has black text
+- **AND** the chip has a remove button
 
-```gherkin
-Given "Option1" is selected in the multiselect
-When the user clicks the remove button on the "Option1" chip
-Then the "Option1" chip is removed from the input
-And "Option1" is no longer selected
-```
+#### Scenario: Deselecting an option removes the chip
 
-### Scenario: Multiple options can be selected
+- **GIVEN** "Option1" is selected in the multiselect
+- **WHEN** the user clicks the remove button on the "Option1" chip
+- **THEN** the "Option1" chip is removed from the input
+- **AND** "Option1" is no longer selected
 
-```gherkin
-Given the user visits the Pickwise page
-When the user selects "Option1" and "Option3"
-Then both "Option1" and "Option3" appear as chips
-And both chips are golden-yellow
-```
+#### Scenario: Multiple options can be selected
 
-### Scenario: Checkbox indicators update on selection
+- **GIVEN** the user visits the Pickwise page
+- **WHEN** the user selects "Option1" and "Option3"
+- **THEN** both "Option1" and "Option3" appear as chips
+- **AND** both chips are golden-yellow
 
-```gherkin
-Given the dropdown is open
-Then each option shows an empty checkbox indicator
-When the user selects "Option2"
-Then the checkbox for "Option2" shows a golden-yellow filled state with a checkmark
-```
+#### Scenario: Checkbox indicators update on selection
 
-### Scenario: Hover state on dropdown options
+- **GIVEN** the dropdown is open
+- **THEN** each option shows an empty checkbox indicator
+- **WHEN** the user selects "Option2"
+- **THEN** the checkbox for "Option2" shows a golden-yellow filled state with a checkmark
 
-```gherkin
-Given the dropdown is open
-When the user hovers over an unselected option
-Then the option row shows a subtle white overlay background
-```
+#### Scenario: Hover state on dropdown options
 
-### Scenario: Focus state on the multiselect
+- **GIVEN** the dropdown is open
+- **WHEN** the user hovers over an unselected option
+- **THEN** the option row shows a subtle white overlay background
 
-```gherkin
-Given the user visits the Pickwise page
-When the user focuses the multiselect input
-Then the input shows a subtle border
-```
+#### Scenario: Focus state on the multiselect
 
-### Scenario: Responsive layout
+- **GIVEN** the user visits the Pickwise page
+- **WHEN** the user focuses the multiselect input
+- **THEN** the input shows a subtle border
 
-```gherkin
-Given the user visits the Pickwise page on a mobile viewport
-Then the heading and dropdown remain centered
-And the dropdown width adapts to the container
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user visits the Pickwise page on a mobile viewport
+- **THEN** the heading and dropdown remain centered
+- **AND** the dropdown width adapts to the container
 
 ## Verification checklist
 

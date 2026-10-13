@@ -74,13 +74,13 @@ gradient section backgrounds (departments area), and rounded UI elements
 - Border: `#dde4ea`
 - Near-black: `#262626`
 
-## Section-by-section requirements
+## Requirements
 
 ### Requirement: Navbar
 
 The page SHALL display a fixed-top transparent navbar with logo on the left,
 navigation links (Home, About us, Services, News, Contact) in the center-right,
-and a gradient emergency call button with phone icon.
+- **AND** a gradient emergency call button with phone icon
 
 #### Scenario: Navbar renders on page load
 
@@ -137,7 +137,7 @@ The page SHALL display three side-by-side info boxes below the hero:
 3. Make an Appointment form (department/doctor selects, name, phone, submit)
 
 All boxes SHALL have `border-radius: 20px`, `border: 2px solid #dde4ea`,
-and floating title labels that break the top border.
+- **AND** floating title labels that break the top border
 
 #### Scenario: Opening hours displays schedule
 

@@ -61,154 +61,140 @@ Extracted from the live preview CSS (`css/style.css`) and screenshot analysis:
 - Section titles: centered, uppercase, bold, with short paragraph below
 - Layout: Bootstrap-like 12-column grid (3-col about, 3-col services, 3-col portfolio, 3-col pricing, 3-col blog)
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Sticky header with logo and one-page navigation
-  Given I visit the Peakpoint page
-  Then I see a sticky header with the logo "Peakpoint" on the left
-  And the nav links are: HOME, ABOUT, SERVICES, PORTFOLIO, TEAM, SKILLS, CLIENTS, PRICING, BLOG, CONTACT
-  And each nav link scrolls to its corresponding section
-```
+#### Scenario: Sticky header with logo and one-page navigation
+
+- **GIVEN** I visit the Peakpoint page
+- **THEN** I see a sticky header with the logo "Peakpoint" on the left
+- **AND** the nav links are: HOME, ABOUT, SERVICES, PORTFOLIO, TEAM, SKILLS, CLIENTS, PRICING, BLOG, CONTACT
+- **AND** each nav link scrolls to its corresponding section
 
 ### Hero Section
 
-```gherkin
-Scenario: Full-screen hero slider with CTA
-  Given I visit the Peakpoint page
-  Then I see a full-width hero section with a background image
-  And the heading says "HELLO WE'RE PEAKPOINT"
-  And the subtitle reads "SUB HEAD, MOTTO OR MISSION SUBTITLE"
-  And there is a CTA button "SEE OUR PROJECTS" with outlined style
-  And navigation arrows are visible for carousel control
-```
+#### Scenario: Full-screen hero slider with CTA
+
+- **GIVEN** I visit the Peakpoint page
+- **THEN** I see a full-width hero section with a background image
+- **AND** the heading says "HELLO WE'RE PEAKPOINT"
+- **AND** the subtitle reads "SUB HEAD, MOTTO OR MISSION SUBTITLE"
+- **AND** there is a CTA button "SEE OUR PROJECTS" with outlined style
+- **AND** navigation arrows are visible for carousel control
 
 ### About Section
 
-```gherkin
-Scenario: About section with 4 service cards
-  Given I scroll to the About section
-  Then I see the heading "ABOUT OUR PEAKPOINT"
-  And there is a centered paragraph description
-  And there are 4 circular-bordered icon cards in a row
-  And the cards are: Web Development, Photography, Digital Media, Online Marketing
-  And each card has a description and "More Details" link
-```
+#### Scenario: About section with 4 service cards
+
+- **GIVEN** I scroll to the About section
+- **THEN** I see the heading "ABOUT OUR PEAKPOINT"
+- **AND** there is a centered paragraph description
+- **AND** there are 4 circular-bordered icon cards in a row
+- **AND** the cards are: Web Development, Photography, Digital Media, Online Marketing
+- **AND** each card has a description and "More Details" link
 
 ### Services Section
 
-```gherkin
-Scenario: Services section with 6 items in a 3-column grid
-  Given I scroll to the Services section
-  Then I see the heading "SERVICES WE PROVIDE"
-  And there are 6 service items in a 3-column layout
-  And each item has an icon, heading, and description
-  And the items are: Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
-```
+#### Scenario: Services section with 6 items in a 3-column grid
+
+- **GIVEN** I scroll to the Services section
+- **THEN** I see the heading "SERVICES WE PROVIDE"
+- **AND** there are 6 service items in a 3-column layout
+- **AND** each item has an icon, heading, and description
+- **AND** the items are: Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
 
 ### Portfolio Section
 
-```gherkin
-Scenario: Portfolio with filter bar and gallery grid
-  Given I scroll to the Portfolio section
-  Then I see the heading "OUR AWESOME PROJECTS"
-  And there is a filter bar with categories: All, Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
-  And there are 9 portfolio items in a grid
-  And each item shows an image with hover overlay containing title and category tags
-```
+#### Scenario: Portfolio with filter bar and gallery grid
+
+- **GIVEN** I scroll to the Portfolio section
+- **THEN** I see the heading "OUR AWESOME PROJECTS"
+- **AND** there is a filter bar with categories: All, Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
+- **AND** there are 9 portfolio items in a grid
+- **AND** each item shows an image with hover overlay containing title and category tags
 
 ### Parallax Banner
 
-```gherkin
-Scenario: Mid-page parallax call-to-action
-  Given I scroll past the Portfolio section
-  Then I see a dark parallax background banner
-  And the text says "We Create Creative & Best Unique Design" with red ampersand
-  And there is a "Let's Work Together" button
-```
+#### Scenario: Mid-page parallax call-to-action
+
+- **GIVEN** I scroll past the Portfolio section
+- **THEN** I see a dark parallax background banner
+- **AND** the text says "We Create Creative & Best Unique Design" with red ampersand
+- **AND** there is a "Let's Work Together" button
 
 ### Team Section
 
-```gherkin
-Scenario: Team members with image hover overlay
-  Given I scroll to the Team section
-  Then I see the heading "Meet our Team"
-  And there are 3 team member cards
-  And each card has a photo, name, role, and social icons (Facebook, Twitter, Pinterest, LinkedIn)
-  And hovering reveals a description overlay
-```
+#### Scenario: Team members with image hover overlay
+
+- **GIVEN** I scroll to the Team section
+- **THEN** I see the heading "Meet our Team"
+- **AND** there are 3 team member cards
+- **AND** each card has a photo, name, role, and social icons (Facebook, Twitter, Pinterest, LinkedIn)
+- **AND** hovering reveals a description overlay
 
 ### Skills Section
 
-```gherkin
-Scenario: Skills progress bars beside image
-  Given I scroll to the Skills section
-  Then I see a 2-column layout: image on left, progress bars on right
-  And there are 5 skill bars: Web Development (89%), Online Marketing (58%), Digital Media (49%), Photography (76%), Creative Design (64%)
-```
+#### Scenario: Skills progress bars beside image
+
+- **GIVEN** I scroll to the Skills section
+- **THEN** I see a 2-column layout: image on left, progress bars on right
+- **AND** there are 5 skill bars: Web Development (89%), Online Marketing (58%), Digital Media (49%), Photography (76%), Creative Design (64%)
 
 ### Clients Section
 
-```gherkin
-Scenario: Client testimonials slider
-  Given I scroll to the Clients section
-  Then I see the heading "OUR HAPPY CLIENTS"
-  And there are 3 testimonial items in a slider
-  And each item has an avatar, quote text, and client name
-```
+#### Scenario: Client testimonials slider
+
+- **GIVEN** I scroll to the Clients section
+- **THEN** I see the heading "OUR HAPPY CLIENTS"
+- **AND** there are 3 testimonial items in a slider
+- **AND** each item has an avatar, quote text, and client name
 
 ### Pricing Section
 
-```gherkin
-Scenario: Pricing tables in 3 columns
-  Given I scroll to the Pricing section
-  Then I see 3 pricing cards: Basic ($9.99), Advanced ($39.99), PREMIUM ($59.99)
-  And each card lists features: Keywords, Social Accounts, Analytics Campaigns, Email Accounts, 24/7 Support
-  And each card has a "BUY IT NOW" button with red background
-```
+#### Scenario: Pricing tables in 3 columns
+
+- **GIVEN** I scroll to the Pricing section
+- **THEN** I see 3 pricing cards: Basic ($9.99), Advanced ($39.99), PREMIUM ($59.99)
+- **AND** each card lists features: Keywords, Social Accounts, Analytics Campaigns, Email Accounts, 24/7 Support
+- **AND** each card has a "BUY IT NOW" button with red background
 
 ### Blog Section
 
-```gherkin
-Scenario: Blog cards in 3 columns
-  Given I scroll to the Blog section
-  Then I see the heading "OUR LATEST Blog"
-  And there are 3 blog post cards
-  And each card has an image, title, author, date, excerpt, and "Read More" link
-```
+#### Scenario: Blog cards in 3 columns
+
+- **GIVEN** I scroll to the Blog section
+- **THEN** I see the heading "OUR LATEST Blog"
+- **AND** there are 3 blog post cards
+- **AND** each card has an image, title, author, date, excerpt, and "Read More" link
 
 ### Partners Section
 
-```gherkin
-Scenario: Partner logo carousel
-  Given I scroll to the Partners section
-  Then I see a horizontal carousel of partner logos
-  And there are at least 5 partner logos
-```
+#### Scenario: Partner logo carousel
+
+- **GIVEN** I scroll to the Partners section
+- **THEN** I see a horizontal carousel of partner logos
+- **AND** there are at least 5 partner logos
 
 ### Contact Section
 
-```gherkin
-Scenario: Contact info + map + form
-  Given I scroll to the Contact section
-  Then I see "Contact Info" on the left with address, phone, and email in circular red icons
-  And I see "Our Location" on the right with a map placeholder
-  And below is a "Send Message" form with fields: First Name, Last Name, Email, Subject, Message
-  And the form has a "Send Message" submit button with red background
-```
+#### Scenario: Contact info + map + form
+
+- **GIVEN** I scroll to the Contact section
+- **THEN** I see "Contact Info" on the left with address, phone, and email in circular red icons
+- **AND** I see "Our Location" on the right with a map placeholder
+- **AND** below is a "Send Message" form with fields: First Name, Last Name, Email, Subject, Message
+- **AND** the form has a "Send Message" submit button with red background
 
 ### Footer
 
-```gherkin
-Scenario: Footer with social icons
-  Given I scroll to the footer
-  Then I see the logo centered
-  And social icon links: Facebook, Twitter, Pinterest, LinkedIn, Skype, Flickr, Dribbble, RSS
-  And the copyright text includes a "Made with ❤" line
-  And the footer links to https://www.componentdock.com/ ("Component Dock")
-```
+#### Scenario: Footer with social icons
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see the logo centered
+- **AND** social icon links: Facebook, Twitter, Pinterest, LinkedIn, Skype, Flickr, Dribbble, RSS
+- **AND** the copyright text includes a "Made with ❤" line
+- **AND** the footer links to https://www.componentdock.com/ ("Component Dock")
 
 ## Verification Checklist
 

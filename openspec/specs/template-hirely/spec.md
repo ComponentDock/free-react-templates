@@ -39,109 +39,113 @@ Extracted from the live preview's `css/custom-bs.css` and `css/style.css`:
 7. **CTA Banner** — Full-width background image with dark overlay. Left: heading "Looking For A Job?" + subtext. Right: "Sign Up" warning/yellow button.
 8. **Footer** — Dark background (`#242424`). 4 columns: Search Trending (link list), Company (link list), Support (link list), Contact Us (social icons: Facebook, Twitter, Instagram, LinkedIn). Copyright line with heart icon + Colorlib attribution.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Desktop navbar displays logo and navigation links
-  Given the viewport is wider than 1200px
-  When the page loads
-  Then the navbar shows the logo "Hirely" on the left
-  And the navigation links (Home, Job Listings, About, Services, Blog) are centered
-  And a "Contact Us" button is visible on the right
 
-Scenario: Mobile navbar shows hamburger menu
-  Given the viewport is narrower than 768px
-  When the page loads
-  Then the navigation links are hidden
-  And a hamburger menu icon is visible
-```
+#### Scenario: Desktop navbar displays logo and navigation links
+
+- **GIVEN** the viewport is wider than 1200px
+- **WHEN** the page loads
+- **THEN** the navbar shows the logo "Hirely" on the left
+- **AND** the navigation links (Home, Job Listings, About, Services, Blog) are centered
+- **AND** a "Contact Us" button is visible on the right
+
+#### Scenario: Mobile navbar shows hamburger menu
+
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** the page loads
+- **THEN** the navigation links are hidden
+- **AND** a hamburger menu icon is visible
 
 ### Hero Section
-```gherkin
-Scenario: Hero displays search form
-  Given the user is on the homepage
-  When the hero section loads
-  Then a headline "Find Your Dream Job" is displayed
-  And a search form with 4 fields is shown: job title input, location dropdown, job type dropdown, search button
 
-Scenario: Hero has background image with overlay
-  Given the user is on the homepage
-  When the hero section renders
-  Then a background image is visible
-  And a dark overlay covers the image
-```
+#### Scenario: Hero displays search form
+
+- **GIVEN** the user is on the homepage
+- **WHEN** the hero section loads
+- **THEN** a headline "Find Your Dream Job" is displayed
+- **AND** a search form with 4 fields is shown: job title input, location dropdown, job type dropdown, search button
+
+#### Scenario: Hero has background image with overlay
+
+- **GIVEN** the user is on the homepage
+- **WHEN** the hero section renders
+- **THEN** a background image is visible
+- **AND** a dark overlay covers the image
 
 ### Statistics Section
-```gherkin
-Scenario: Statistics section shows counter cards
-  Given the user scrolls to the statistics section
-  When the section is visible
-  Then 4 counter items are displayed: Candidates, Jobs Posted, Jobs Filled, Companies
-  And each counter shows a number with animation
-```
+
+#### Scenario: Statistics section shows counter cards
+
+- **GIVEN** the user scrolls to the statistics section
+- **WHEN** the section is visible
+- **THEN** 4 counter items are displayed: Candidates, Jobs Posted, Jobs Filled, Companies
+- **AND** each counter shows a number with animation
 
 ### Job Listings
-```gherkin
-Scenario: Job listings display cards
-  Given the user scrolls to the job listings section
-  When the listings load
-  Then a heading "Featured Jobs" is shown
-  And at least 6 job cards are displayed
-  And each job card shows: image, job type badge, title, publisher, location, salary range
 
-Scenario: Job badges use correct colors
-  Given a job card has type "Freelancer"
-  Then the badge is blue (primary color)
-  Given a job card has type "Full-time"
-  Then the badge is yellow (warning color)
-  Given a job card has type "Part-time"
-  Then the badge is green (success color)
+#### Scenario: Job listings display cards
 
-Scenario: Pagination is shown below listings
-  Given the user views the job listings
-  When scrolling to the bottom of the section
-  Then Previous and Next links are visible
-  And numbered page links (1-4) are shown
-```
+- **GIVEN** the user scrolls to the job listings section
+- **WHEN** the listings load
+- **THEN** a heading "Featured Jobs" is shown
+- **AND** at least 6 job cards are displayed
+- **AND** each job card shows: image, job type badge, title, publisher, location, salary range
+
+#### Scenario: Job badges use correct colors
+
+- **GIVEN** a job card has type "Freelancer"
+- **THEN** the badge is blue (primary color)
+- **GIVEN** a job card has type "Full-time"
+- **THEN** the badge is yellow (warning color)
+- **GIVEN** a job card has type "Part-time"
+- **THEN** the badge is green (success color)
+
+#### Scenario: Pagination is shown below listings
+
+- **GIVEN** the user views the job listings
+- **WHEN** scrolling to the bottom of the section
+- **THEN** Previous and Next links are visible
+- **AND** numbered page links (1-4) are shown
 
 ### Company Logos
-```gherkin
-Scenario: Company logos section displays partner logos
-  Given the user scrolls to the company logos section
-  When the section loads
-  Then a heading "Our Candidates Work In Company" is shown
-  And 4 partner logo placeholders are displayed in a grid
-```
+
+#### Scenario: Company logos section displays partner logos
+
+- **GIVEN** the user scrolls to the company logos section
+- **WHEN** the section loads
+- **THEN** a heading "Our Candidates Work In Company" is shown
+- **AND** 4 partner logo placeholders are displayed in a grid
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials carousel shows quotes
-  Given the user scrolls to the testimonials section
-  When the carousel loads
-  Then a testimonial with a person photo, quote text, and citation name is displayed
-  And carousel navigation (dots or arrows) allows switching between testimonials
-```
+
+#### Scenario: Testimonials carousel shows quotes
+
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the carousel loads
+- **THEN** a testimonial with a person photo, quote text, and citation name is displayed
+- **AND** carousel navigation (dots or arrows) allows switching between testimonials
 
 ### CTA Banner
-```gherkin
-Scenario: CTA banner displays job sign-up prompt
-  Given the user scrolls to the CTA banner
-  When the section is visible
-  Then a heading "Looking For A Job?" is displayed
-  And a "Sign Up" button with warning (yellow) styling is shown
-  And the background image has a dark overlay
-```
+
+#### Scenario: CTA banner displays job sign-up prompt
+
+- **GIVEN** the user scrolls to the CTA banner
+- **WHEN** the section is visible
+- **THEN** a heading "Looking For A Job?" is displayed
+- **AND** a "Sign Up" button with warning (yellow) styling is shown
+- **AND** the background image has a dark overlay
 
 ### Footer
-```gherkin
-Scenario: Footer shows link columns and social icons
-  Given the user scrolls to the footer
-  When the footer renders
-  Then 4 link columns are visible: Search Trending, Company, Support, Contact Us
-  And social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
-  And a copyright line with Component Dock attribution is present
-```
+
+#### Scenario: Footer shows link columns and social icons
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** 4 link columns are visible: Search Trending, Company, Support, Contact Us
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
+- **AND** a copyright line with Component Dock attribution is present
 
 ## Verification Checklist
 

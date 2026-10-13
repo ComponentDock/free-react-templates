@@ -32,66 +32,77 @@ background with blue gradient overlay.
 | Font family          | "Poppins", sans-serif                                  |
 | Overall aesthetic    | Clean, modern, centered card-less layout — the form is not inside a card/panel; fields float directly on the gradient background |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: LoginVista — Full-screen login with avatar
 
 #### Scenario: Page loads with avatar and user name
-  Given the user navigates to the LoginVista page
-  Then a circular avatar image is displayed centered at the top
-  And a user name "John Doe" is displayed in white below the avatar
+
+- **GIVEN** the user navigates to the LoginVista page
+- **THEN** a circular avatar image is displayed centered at the top
+- **AND** a user name "John Doe" is displayed in white below the avatar
 
 #### Scenario: Username field
-  Given the user sees the login form
-  Then a "Username" input field is present with a person icon on the left
-  And the input has a white background with rounded pill corners
+
+- **GIVEN** the user sees the login form
+- **THEN** a "Username" input field is present with a person icon on the left
+- **AND** the input has a white background with rounded pill corners
 
 #### Scenario: Password field
-  Given the user sees the login form
-  Then a "Password" input field is present with a lock icon on the left
-  And the input has a white background with rounded pill corners
-  And the input type is "password"
+
+- **GIVEN** the user sees the login form
+- **THEN** a "Password" input field is present with a lock icon on the left
+- **AND** the input has a white background with rounded pill corners
+- **AND** the input type is "password"
 
 #### Scenario: Login button
-  Given the user sees the login form
-  Then a full-width "Login" button is displayed with dark charcoal background and white text
-  And the button has large rounded pill corners matching the input fields
+
+- **GIVEN** the user sees the login form
+- **THEN** a full-width "Login" button is displayed with dark charcoal background and white text
+- **AND** the button has large rounded pill corners matching the input fields
 
 #### Scenario: Forgot password link
-  Given the user sees the login form
-  Then a "Forgot Username / Password?" link is displayed below the login button
-  And the link is styled in blue/teal color
+
+- **GIVEN** the user sees the login form
+- **THEN** a "Forgot Username / Password?" link is displayed below the login button
+- **AND** the link is styled in blue/teal color
 
 #### Scenario: Create new account link
-  Given the user sees the login form
-  Then a "Create new account" link with a right-arrow icon is displayed at the bottom
-  And the link is styled in blue/teal color
+
+- **GIVEN** the user sees the login form
+- **THEN** a "Create new account" link with a right-arrow icon is displayed at the bottom
+- **AND** the link is styled in blue/teal color
 
 #### Scenario: Background design
-  Given the user navigates to the LoginVista page
-  Then the background displays a city skyline image with a blue-to-teal gradient overlay
-  And the gradient transitions from darker blue at top to lighter teal at bottom
+
+- **GIVEN** the user navigates to the LoginVista page
+- **THEN** the background displays a city skyline image with a blue-to-teal gradient overlay
+- **AND** the gradient transitions from darker blue at top to lighter teal at bottom
 
 #### Scenario: Form layout
-  Given the user views the page on a desktop viewport
-  Then all form elements are vertically centered on the page
-  And the form width is approximately 400px max
-  And the form is horizontally centered
+
+- **GIVEN** the user views the page on a desktop viewport
+- **THEN** all form elements are vertically centered on the page
+- **AND** the form width is approximately 400px max
+- **AND** the form is horizontally centered
 
 #### Scenario: Responsive layout
-  Given the user views the page on a mobile viewport (375px width)
-  Then all form elements remain vertically centered
-  And the form fields stretch to fill available horizontal space with padding
-  And the font sizes and spacing remain readable
+
+- **GIVEN** the user views the page on a mobile viewport (375px width)
+- **THEN** all form elements remain vertically centered
+- **AND** the form fields stretch to fill available horizontal space with padding
+- **AND** the font sizes and spacing remain readable
 
 #### Scenario: Accessibility
-  Given the user navigates to the LoginVista page
-  Then the username input has an accessible label
-  And the password input has an accessible label
-  And the login button is focusable and has visible focus ring
-  And the avatar image has alt text
+
+- **GIVEN** the user navigates to the LoginVista page
+- **THEN** the username input has an accessible label
+- **AND** the password input has an accessible label
+- **AND** the login button is focusable and has visible focus ring
+- **AND** the avatar image has alt text
 
 #### Scenario: Component Dock footer link
-  Given the user scrolls to the bottom of the page
-  Then a footer link to "https://www.componentdock.com/" is present
-  And the link text says "Component Dock"
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer link to "https://www.componentdock.com/" is present
+- **AND** the link text says "Component Dock"

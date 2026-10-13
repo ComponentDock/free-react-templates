@@ -35,129 +35,138 @@ Extracted from the live preview CSS (`css/style.css`) and inline styles:
 | Episode card overlay | Dark gradient | Image bg with text overlay at bottom |
 | Site button | `#6763fd` bg | Subscribe button in footer form |
 
-## Gherkin requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Header / Navbar
-  Scenario: Display navigation and branding
-    Given the user visits the page
-    Then a header is visible with the brand logo "Podvault"
-    And it has nav links: Home, About, Episodes, Pages (dropdown), Contact
-    And it has a search icon on the right
-    And it has social icons (Facebook, Twitter, Pinterest, Instagram, Dribbble) on the right
 
-  Scenario: Sticky header on scroll
-    Given the user scrolls down the page
-    Then the header remains fixed at the top
+#### Scenario: Display navigation and branding
 
-  Scenario: Mobile hamburger menu
-    Given the user is on a viewport < 992px wide
-    Then a hamburger icon is visible
-    And the nav links are hidden in an offcanvas menu
-```
+- **GIVEN** the user visits the page
+- **THEN** a header is visible with the brand logo "Podvault"
+- **AND** it has nav links: Home, About, Episodes, Pages (dropdown), Contact
+- **AND** it has a search icon on the right
+- **AND** it has social icons (Facebook, Twitter, Pinterest, Instagram, Dribbble) on the right
+
+#### Scenario: Sticky header on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the header remains fixed at the top
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user is on a viewport < 992px wide
+- **THEN** a hamburger icon is visible
+- **AND** the nav links are hidden in an offcanvas menu
 
 ### Hero
 
-```gherkin
 Feature: Hero Section
-  Scenario: Display featured episode
-    Given the user visits the page
-    Then a hero section is visible with a dark background image
-    And it shows a featured episode date "10 Dec 2019"
-    And it shows a headline "Ep 05: Astronomy Binoculars A Great"
-    And it has two CTA buttons: "Subscribe with iTunes" (primary) and "Subscribe with RSS" (white)
 
-  Scenario: Podcast preview on right side
-    Given the user views the hero
-    Then the right half shows a circular podcast preview image
-    And a play button overlay is visible on the preview
+#### Scenario: Display featured episode
 
-  Scenario: Audio player track bar
-    Given the user views the hero
-    Then a translucent indigo track bar is visible below the hero content
-    And it shows a circular album art thumbnail
-    And it shows the track title "Understanding Operating" and artist "Kyle Hawkins"
-    And it has a play/pause button, progress bar, volume controls, share and download links
-```
+- **GIVEN** the user visits the page
+- **THEN** a hero section is visible with a dark background image
+- **AND** it shows a featured episode date "10 Dec 2019"
+- **AND** it shows a headline "Ep 05: Astronomy Binoculars A Great"
+- **AND** it has two CTA buttons: "Subscribe with iTunes" (primary) and "Subscribe with RSS" (white)
+
+#### Scenario: Podcast preview on right side
+
+- **GIVEN** the user views the hero
+- **THEN** the right half shows a circular podcast preview image
+- **AND** a play button overlay is visible on the preview
+
+#### Scenario: Audio player track bar
+
+- **GIVEN** the user views the hero
+- **THEN** a translucent indigo track bar is visible below the hero content
+- **AND** it shows a circular album art thumbnail
+- **AND** it shows the track title "Understanding Operating" and artist "Kyle Hawkins"
+- **AND** it has a play/pause button, progress bar, volume controls, share and download links
 
 ### Podcast (Live & Upcoming)
 
-```gherkin
 Feature: Podcast List Section
-  Scenario: Section heading and filter tabs
-    Given the user scrolls to the podcast section
-    Then the heading "Live & Upcoming" is visible
-    And filter tabs are shown: All, Entrepreneurship, Media, Tech, Tutorials
-    And "All" is the active/default filter
 
-  Scenario: Podcast item display
-    Given the user views a podcast item
-    Then it shows a thumbnail image on the left
-    And it shows a heart/favorite icon
-    And it shows metadata: date, author, tags
-    And it shows a title and description paragraph
-    And it has an embedded audio player with play button, progress bar, volume, share, download
+#### Scenario: Section heading and filter tabs
 
-  Scenario: Filter interaction
-    Given the user clicks the "Tech" filter tab
-    Then only tech-category podcast items are displayed
-    And "Tech" becomes the active tab
-```
+- **GIVEN** the user scrolls to the podcast section
+- **THEN** the heading "Live & Upcoming" is visible
+- **AND** filter tabs are shown: All, Entrepreneurship, Media, Tech, Tutorials
+- **AND** "All" is the active/default filter
+
+#### Scenario: Podcast item display
+
+- **GIVEN** the user views a podcast item
+- **THEN** it shows a thumbnail image on the left
+- **AND** it shows a heart/favorite icon
+- **AND** it shows metadata: date, author, tags
+- **AND** it shows a title and description paragraph
+- **AND** it has an embedded audio player with play button, progress bar, volume, share, download
+
+#### Scenario: Filter interaction
+
+- **GIVEN** the user clicks the "Tech" filter tab
+- **THEN** only tech-category podcast items are displayed
+- **AND** "Tech" becomes the active tab
 
 ### Call to Action
 
-```gherkin
 Feature: Call to Action Section
-  Scenario: Display donation CTA
-    Given the user scrolls to the CTA section
-    Then a dark background image is shown
-    And the heading "Support The Show" is visible in white
-    And a subtitle "Enjoy listening to our podcast? Consider making a donation!" is shown
-    And a "Make a Donation" primary button is displayed
-```
+
+#### Scenario: Display donation CTA
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a dark background image is shown
+- **AND** the heading "Support The Show" is visible in white
+- **AND** a subtitle "Enjoy listening to our podcast? Consider making a donation!" is shown
+- **AND** a "Make a Donation" primary button is displayed
 
 ### Episodes (Latest Episodes)
 
-```gherkin
 Feature: Latest Episodes Grid
-  Scenario: Section heading
-    Given the user scrolls to the episodes section
-    Then the heading "Latest Episodes" is visible
 
-  Scenario: Episode card display
-    Given the user views an episode card
-    Then it shows a background image with dark overlay
-    And it shows tags (e.g. "Music, Radio") in the top-left
-    And it shows duration (e.g. "40 mins") in the top-right
-    And it has a play button overlay in the center
-    And it shows the episode title at the bottom
-    And it shows the date at the bottom
+#### Scenario: Section heading
 
-  Scenario: Episode grid layout
-    Given the user views the episodes section
-    Then 6 episode cards are displayed in a 3-column grid (3 rows × 2 columns on md)
-    And cards have rounded corners (20px radius)
-```
+- **GIVEN** the user scrolls to the episodes section
+- **THEN** the heading "Latest Episodes" is visible
+
+#### Scenario: Episode card display
+
+- **GIVEN** the user views an episode card
+- **THEN** it shows a background image with dark overlay
+- **AND** it shows tags (e.g. "Music, Radio") in the top-left
+- **AND** it shows duration (e.g. "40 mins") in the top-right
+- **AND** it has a play button overlay in the center
+- **AND** it shows the episode title at the bottom
+- **AND** it shows the date at the bottom
+
+#### Scenario: Episode grid layout
+
+- **GIVEN** the user views the episodes section
+- **THEN** 6 episode cards are displayed in a 3-column grid (3 rows × 2 columns on md)
+- **AND** cards have rounded corners (20px radius)
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Newsletter subscriber box
-    Given the user views the footer
-    Then a purple (#6763fd) newsletter subscriber box is visible
-    And it shows "Sign up for our newsletter!" heading
-    And it shows an email input field
-    And it has a "Subscribe" button
 
-  Scenario: Footer bottom
-    Given the user views the footer bottom
-    Then the brand logo is shown
-    And a copyright line is displayed with Component Dock credit
-    And social media icons are shown (Facebook, Twitter, Pinterest, Instagram, YouTube)
-```
+#### Scenario: Newsletter subscriber box
+
+- **GIVEN** the user views the footer
+- **THEN** a purple (#6763fd) newsletter subscriber box is visible
+- **AND** it shows "Sign up for our newsletter!" heading
+- **AND** it shows an email input field
+- **AND** it has a "Subscribe" button
+
+#### Scenario: Footer bottom
+
+- **GIVEN** the user views the footer bottom
+- **THEN** the brand logo is shown
+- **AND** a copyright line is displayed with Component Dock credit
+- **AND** social media icons are shown (Facebook, Twitter, Pinterest, Instagram, YouTube)
 
 ## Verification checklist
 

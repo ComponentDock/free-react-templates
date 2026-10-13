@@ -41,7 +41,7 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Calendar Toolbar
 
@@ -51,30 +51,30 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 
 #### Scenario: Toolbar renders with month title and navigation
 
-- Given the calendar is mounted
-- When the component renders
-- Then the toolbar shows the current month name and year (e.g. "February 2020") on the left
-- And a "today" button on the right
-- And "prev" (chevron-left) and "next" (chevron-right) buttons next to "today"
+- **GIVEN** the calendar is mounted
+- **WHEN** the component renders
+- **THEN** the toolbar shows the current month name and year (e.g. "February 2020") on the left
+- **AND** a "today" button on the right
+- **AND** "prev" (chevron-left) and "next" (chevron-right) buttons next to "today"
 
 #### Scenario: Clicking "today" navigates to current month
 
-- Given the calendar shows February 2020
-- When the user clicks the "today" button
-- Then the calendar navigates to the current month/year
-- And the month title updates accordingly
+- **GIVEN** the calendar shows February 2020
+- **WHEN** the user clicks the "today" button
+- **THEN** the calendar navigates to the current month/year
+- **AND** the month title updates accordingly
 
 #### Scenario: Clicking "prev" goes to previous month
 
-- Given the calendar shows February 2020
-- When the user clicks the prev button
-- Then the calendar shows January 2020
+- **GIVEN** the calendar shows February 2020
+- **WHEN** the user clicks the prev button
+- **THEN** the calendar shows January 2020
 
 #### Scenario: Clicking "next" goes to next month
 
-- Given the calendar shows February 2020
-- When the user clicks the next button
-- Then the calendar shows March 2020
+- **GIVEN** the calendar shows February 2020
+- **WHEN** the user clicks the next button
+- **THEN** the calendar shows March 2020
 
 ---
 
@@ -86,29 +86,29 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 
 #### Scenario: Grid shows 7 columns (Sun–Sat) with day headers
 
-- Given the calendar renders
-- Then the header row shows "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" in order
-- And each header has the design token day header bg/text colors
+- **GIVEN** the calendar renders
+- **THEN** the header row shows "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" in order
+- **AND** each header has the design token day header bg/text colors
 
 #### Scenario: Current month dates render in dark text
 
-- Given February 2020 is displayed
-- Then dates 1 through 29 render with `color: #212529`
+- **GIVEN** February 2020 is displayed
+- **THEN** dates 1 through 29 render with `color: #212529`
 
 #### Scenario: Other-month dates render in muted text
 
-- Given February 2020 is displayed
-- Then dates 26–31 (Jan) and 1–7 (Mar) render with `color: #adb5bd`
-- And their cells have `bg: #f8f9fa`
+- **GIVEN** February 2020 is displayed
+- **THEN** dates 26–31 (Jan) and 1–7 (Mar) render with `color: #adb5bd`
+- **AND** their cells have `bg: #f8f9fa`
 
 #### Scenario: Today's date is highlighted
 
-- Given today falls within the displayed month
-- Then that cell has `bg: #fff3cd` (pale yellow highlight)
+- **GIVEN** today falls within the displayed month
+- **THEN** that cell has `bg: #fff3cd` (pale yellow highlight)
 
 #### Scenario: Grid has 6 week rows (fixed height)
 
-- Then exactly 6 `.fc-row` elements render, each ~106px tall
+- **THEN** exactly 6 `.fc-row` elements render, each ~106px tall
 
 ---
 
@@ -120,39 +120,39 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 
 #### Scenario: All-day event spans full cell width
 
-- Given an all-day event on Feb 1 ("All Day Event")
-- Then a pill with `bg: #e74c3c`, white text, radius 4px renders in the Feb 1 cell
-- And the pill spans the full cell width (minus small padding)
+- **GIVEN** an all-day event on Feb 1 ("All Day Event")
+- **THEN** a pill with `bg: #e74c3c`, white text, radius 4px renders in the Feb 1 cell
+- **AND** the pill spans the full cell width (minus small padding)
 
 #### Scenario: Multi-day event spans consecutive cells
 
-- Given "Long Event" spans Feb 7–8
-- Then a single pill renders across both Feb 7 and Feb 8 cells
+- **GIVEN** "Long Event" spans Feb 7–8
+- **THEN** a single pill renders across both Feb 7 and Feb 8 cells
 - With the same brand styling
 
 #### Scenario: Timed events show time + title
 
-- Given "7a Birthday Party" on Feb 13
-- Then the pill shows "7a" (time) and "Birthday Party" (title)
-- And uses the same brand styling
+- **GIVEN** "7a Birthday Party" on Feb 13
+- **THEN** the pill shows "7a" (time) and "Birthday Party" (title)
+- **AND** uses the same brand styling
 
 #### Scenario: Repeating event shows on multiple separate days
 
-- Given "4p Repeating Event" on Feb 9 and Feb 16
-- Then separate pills render on each date
+- **GIVEN** "4p Repeating Event" on Feb 9 and Feb 16
+- **THEN** separate pills render on each date
 - Each with time "4p" and title "Repeating Event"
 
 #### Scenario: Overflow indicator shows when events exceed cell capacity
 
-- Given Feb 12 has 6+ events ("Conference", "Meeting", "Lunch", "Meeting", "Happy Hour", "Dinner", etc.)
-- Then the cell shows the first few pills + a "+5 more" link (`.fc-more`)
-- And clicking "+5 more" opens a popover/list of all events for that day
+- **GIVEN** Feb 12 has 6+ events ("Conference", "Meeting", "Lunch", "Meeting", "Happy Hour", "Dinner", etc.)
+- **THEN** the cell shows the first few pills + a "+5 more" link (`.fc-more`)
+- **AND** clicking "+5 more" opens a popover/list of all events for that day
 
 #### Scenario: Event with external link ("Click for Google")
 
-- Given "Click for Google" on Feb 28
-- Then the pill renders as a link (`<a>`) with `href` to Google Calendar
-- And clicking it navigates externally (target="_blank")
+- **GIVEN** "Click for Google" on Feb 28
+- **THEN** the pill renders as a link (`<a>`) with `href` to Google Calendar
+- **AND** clicking it navigates externally (target="_blank")
 
 ---
 
@@ -164,13 +164,13 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 
 #### Scenario: Toolbar stacks on mobile
 
-- Given viewport width < 640px
-- Then the toolbar stacks: month title on its own row, buttons below
+- **GIVEN** viewport width < 640px
+- **THEN** the toolbar stacks: month title on its own row, buttons below
 
 #### Scenario: Grid scrolls horizontally on very narrow screens
 
-- Given viewport width < 480px
-- Then the grid gains horizontal scroll (or switches to list view — implementation choice)
+- **GIVEN** viewport width < 480px
+- **THEN** the grid gains horizontal scroll (or switches to list view — implementation choice)
 
 ---
 
@@ -182,23 +182,23 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 
 #### Scenario: Prev/Next buttons have aria-label
 
-- Then prev button has `aria-label="prev"` (or "previous month")
-- And next button has `aria-label="next"` (or "next month")
+- **THEN** prev button has `aria-label="prev"` (or "previous month")
+- **AND** next button has `aria-label="next"` (or "next month")
 
 #### Scenario: Today button has accessible name
 
-- Then today button has accessible text "today"
+- **THEN** today button has accessible text "today"
 
 #### Scenario: Grid is a proper table with headers
 
-- Then the day headers are `<th scope="col">`
-- And each date cell is a `<td>` with `data-date` attribute
+- **THEN** the day headers are `<th scope="col">`
+- **AND** each date cell is a `<td>` with `data-date` attribute
 
 #### Scenario: Keyboard navigation works
 
-- Given focus is on the calendar
-- Then arrow keys move between days
-- And Enter/Space activates events
+- **GIVEN** focus is on the calendar
+- **THEN** arrow keys move between days
+- **AND** Enter/Space activates events
 
 ---
 

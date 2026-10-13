@@ -41,168 +41,170 @@ Recreation of the ColorLib **Agenda** template — a bold, purple-gradient event
 - Newsletter: parallax background, centered heading, inline form with name/email inputs and gradient submit button.
 - Footer: dark indigo `#08011e` background, centered logo, nav links, social icons, copyright attribution.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Hero section renders slider with countdown
+### Feature: Gathering template behaviour
 
-```gherkin
+#### Scenario: Hero section renders slider with countdown
+
 Feature: Hero slider with countdown
 
-  Scenario: Displays countdown timer with days/hours/minutes/seconds
-    Given the hero section is mounted
-    Then four countdown units are visible
-    And each unit displays a numeric value and a label (Days, Hours, Minutes, Seconds)
+#### Scenario: Displays countdown timer with days/hours/minutes/seconds
 
-  Scenario: CTA button triggers navigation or modal
-    Given the hero slider is visible
-    When the user clicks the "Order here" button
-    Then a navigation action or modal is triggered
+- **GIVEN** the hero section is mounted
+- **THEN** four countdown units are visible
+- **AND** each unit displays a numeric value and a label (Days, Hours, Minutes, Seconds)
 
-  Scenario: Slider advances via arrows or pagination
-    Given the hero slider is showing slide 1
-    When the user clicks the next arrow
-    Then the second slide becomes visible
-```
+#### Scenario: CTA button triggers navigation or modal
 
-### Scenario: Info section layout
+- **GIVEN** the hero slider is visible
+- **WHEN** the user clicks the "Order here" button
+- **THEN** a navigation action or modal is triggered
 
-```gherkin
+#### Scenario: Slider advances via arrows or pagination
+
+- **GIVEN** the hero slider is showing slide 1
+- **WHEN** the user clicks the next arrow
+- **THEN** the second slide becomes visible
+
+#### Scenario: Info section layout
+
 Feature: About / info section
 
-  Scenario: Displays heading, description, and two CTA buttons
-    Given the info section is mounted
-    Then a logo image is visible on the left
-    And an "entry-title" heading is visible
-    And a paragraph description is shown
-    And two buttons are rendered: "Read More" (gradient) and "Register Now" (dark)
-```
+#### Scenario: Displays heading, description, and two CTA buttons
 
-### Scenario: Featured events grid
+- **GIVEN** the info section is mounted
+- **THEN** a logo image is visible on the left
+- **AND** an "entry-title" heading is visible
+- **AND** a paragraph description is shown
+- **AND** two buttons are rendered: "Read More" (gradient) and "Register Now" (dark)
 
-```gherkin
+#### Scenario: Featured events grid
+
 Feature: Featured events masonry grid
 
-  Scenario: Renders event cards with image, title, and date
-    Given the featured events section is mounted
-    Then multiple event cards are visible
-    And each card has an image, an uppercase title badge, and a date label
+#### Scenario: Renders event cards with image, title, and date
 
-  Scenario: Responsive layout adapts to screen width
-    Given the viewport is desktop (>=992px)
-    Then cards use absolute positioning for a masonry-like grid
-    And a min-height container wraps all cards
-```
+- **GIVEN** the featured events section is mounted
+- **THEN** multiple event cards are visible
+- **AND** each card has an image, an uppercase title badge, and a date label
 
-### Scenario: Next events cards
+#### Scenario: Responsive layout adapts to screen width
 
-```gherkin
+- **GIVEN** the viewport is desktop (>=992px)
+- **THEN** cards use absolute positioning for a masonry-like grid
+- **AND** a min-height container wraps all cards
+
+#### Scenario: Next events cards
+
 Feature: Next events section
 
-  Scenario: Displays event cards in 3-column grid
-    Given the next events section is mounted
-    Then three event cards are visible
+#### Scenario: Displays event cards in 3-column grid
 
-  Scenario: Each card shows image, rating badge, title, date, description, and ticket link
-    Given an event card is visible
-    Then a circular rating badge is shown in the top-left corner (purple, white text)
-    And an image, heading, date (with purple accent), description paragraph, and "Buy Tickets" link are present
+- **GIVEN** the next events section is mounted
+- **THEN** three event cards are visible
 
-  Scenario: Buy Tickets link has hover effect
-    Given the user hovers over the "Buy Tickets" link
-    Then the link color and border change to the primary purple
-```
+#### Scenario: Each card shows image, rating badge, title, date, description, and ticket link
 
-### Scenario: Regional events slider
+- **GIVEN** an event card is visible
+- **THEN** a circular rating badge is shown in the top-left corner (purple, white text)
+- **AND** an image, heading, date (with purple accent), description paragraph, and "Buy Tickets" link are present
 
-```gherkin
+#### Scenario: Buy Tickets link has hover effect
+
+- **GIVEN** the user hovers over the "Buy Tickets" link
+- **THEN** the link color and border change to the primary purple
+
+#### Scenario: Regional events slider
+
 Feature: Regional events with location selector
 
-  Scenario: Location dropdown filters events
-    Given the regional events section is mounted
-    When the user selects a different location from the dropdown
-    Then the slider shows events for the selected location
+#### Scenario: Location dropdown filters events
 
-  Scenario: Event cards show overlay on hover
-    Given the slider is visible
-    When the user hovers over an event slide
-    Then a semi-transparent purple overlay with a "+" icon appears
-```
+- **GIVEN** the regional events section is mounted
+- **WHEN** the user selects a different location from the dropdown
+- **THEN** the slider shows events for the selected location
 
-### Scenario: Partners logo row
+#### Scenario: Event cards show overlay on hover
 
-```gherkin
+- **GIVEN** the slider is visible
+- **WHEN** the user hovers over an event slide
+- **THEN** a semi-transparent purple overlay with a "+" icon appears
+
+#### Scenario: Partners logo row
+
 Feature: Partners section
 
-  Scenario: Displays partner logos in a row
-    Given the partners section is mounted
-    Then multiple partner logo images are visible
-    And logos are spaced evenly in a flex row
-```
+#### Scenario: Displays partner logos in a row
 
-### Scenario: Newsletter subscribe form
+- **GIVEN** the partners section is mounted
+- **THEN** multiple partner logo images are visible
+- **AND** logos are spaced evenly in a flex row
 
-```gherkin
+#### Scenario: Newsletter subscribe form
+
 Feature: Newsletter subscribe
 
-  Scenario: Form has name, email, and submit button
-    Given the newsletter section is mounted
-    Then a text input for "Name" is visible
-    And an email input for "Your e-mail" is visible
-    And a "Subscribe" button with gradient background is visible
+#### Scenario: Form has name, email, and submit button
 
-  Scenario: Submit triggers form action
-    Given the user fills in name and email
-    When the user clicks "Subscribe"
-    Then the form submission is triggered
-```
+- **GIVEN** the newsletter section is mounted
+- **THEN** a text input for "Name" is visible
+- **AND** an email input for "Your e-mail" is visible
+- **AND** a "Subscribe" button with gradient background is visible
 
-### Scenario: Footer
+#### Scenario: Submit triggers form action
 
-```gherkin
+- **GIVEN** the user fills in name and email
+- **WHEN** the user clicks "Subscribe"
+- **THEN** the form submission is triggered
+
+#### Scenario: Footer
+
 Feature: Footer
 
-  Scenario: Displays logo, nav links, social icons, and copyright
-    Given the footer is mounted
-    Then a logo image is shown
-    And navigation links (Home, About us, Events, News, Contact) are visible
-    And social media icon links (Pinterest, LinkedIn, Instagram, Facebook, Twitter) are present
-    And a copyright line with "Component Dock" attribution is shown
+#### Scenario: Displays logo, nav links, social icons, and copyright
 
-  Scenario: Footer links point to Component Dock
-    Given the footer is visible
-    Then the attribution link points to https://www.componentdock.com/
-```
+- **GIVEN** the footer is mounted
+- **THEN** a logo image is shown
+- **AND** navigation links (Home, About us, Events, News, Contact) are visible
+- **AND** social media icon links (Pinterest, LinkedIn, Instagram, Facebook, Twitter) are present
+- **AND** a copyright line with "Component Dock" attribution is shown
 
-### Scenario: Navigation bar
+#### Scenario: Footer links point to Component Dock
 
-```gherkin
+- **GIVEN** the footer is visible
+- **THEN** the attribution link points to https://www.componentdock.com/
+
+#### Scenario: Navigation bar
+
 Feature: Navbar
 
-  Scenario: Desktop nav shows inline links and Buy Tickets button
-    Given the viewport is desktop (>=992px)
-    Then the navigation is displayed inline
-    And a "Buy Tickets" pill button is visible in the header bar
+#### Scenario: Desktop nav shows inline links and Buy Tickets button
 
-  Scenario: Mobile nav uses hamburger menu with slide-in drawer
-    Given the viewport is mobile (<992px)
-    When the user taps the hamburger icon
-    Then a purple slide-in navigation drawer opens from the left
-    And nav links are displayed vertically
-```
+- **GIVEN** the viewport is desktop (>=992px)
+- **THEN** the navigation is displayed inline
+- **AND** a "Buy Tickets" pill button is visible in the header bar
 
-### Scenario: Accessibility
+#### Scenario: Mobile nav uses hamburger menu with slide-in drawer
 
-```gherkin
+- **GIVEN** the viewport is mobile (<992px)
+- **WHEN** the user taps the hamburger icon
+- **THEN** a purple slide-in navigation drawer opens from the left
+- **AND** nav links are displayed vertically
+
+#### Scenario: Accessibility
+
 Feature: Accessibility
 
-  Scenario: All interactive elements are keyboard-focusable
-    Given the page is loaded
-    Then buttons, links, and form inputs are focusable via keyboard
+#### Scenario: All interactive elements are keyboard-focusable
 
-  Scenario: Images have alt text
-    Given the page is loaded
-    Then all img elements have alt attributes
-```
+- **GIVEN** the page is loaded
+- **THEN** buttons, links, and form inputs are focusable via keyboard
+
+#### Scenario: Images have alt text
+
+- **GIVEN** the page is loaded
+- **THEN** all img elements have alt attributes
 
 ## Verification checklist
 

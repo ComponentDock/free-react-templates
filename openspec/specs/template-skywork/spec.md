@@ -89,106 +89,108 @@ split contact form (image + form), and a dark footer with social icons.
 - 2x2 grid within service-right (col-lg-6 col-md-6 col-sm-6)
 - Max-width container for content sections
 
-## Gherkin requirements
+## Requirements
 
-### Background
+### Feature: Skywork template behaviour
 
-Given the Skywork app is deployed at its preview URL
-And the template uses Vite + React 19 + Tailwind CSS 4 + TypeScript
+**Background**
 
-### Scenario: Header displays logo and navigation
+- **GIVEN** the Skywork app is deployed at its preview URL
+- **AND** the template uses Vite + React 19 + Tailwind CSS 4 + TypeScript
 
-Given a user loads the page
-Then a transparent header should overlay the hero banner
-And the header should contain a logo on the left
-And the header should contain a hamburger menu icon on the right
-And the navigation should include Home, Generic, and Elements links
+#### Scenario: Header displays logo and navigation
 
-### Scenario: Hero banner displays fullscreen with branding
+- **GIVEN** a user loads the page
+- **THEN** a transparent header should overlay the hero banner
+- **AND** the header should contain a logo on the left
+- **AND** the header should contain a hamburger menu icon on the right
+- **AND** the navigation should include Home, Generic, and Elements links
 
-Given a user loads the page
-Then a full-screen banner section should be visible
-And the banner should have a blue-toned gradient background
-And the text "INTRODUCING" should appear in uppercase white
-And the brand name "Skywork" should appear as large bold white text centered below
-And the text should have a subtle text shadow
+#### Scenario: Hero banner displays fullscreen with branding
 
-### Scenario: Feature section shows three numbered items
+- **GIVEN** a user loads the page
+- **THEN** a full-screen banner section should be visible
+- **AND** the banner should have a blue-toned gradient background
+- **AND** the text "INTRODUCING" should appear in uppercase white
+- **AND** the brand name "Skywork" should appear as large bold white text centered below
+- **AND** the text should have a subtle text shadow
 
-Given a user scrolls past the banner
-Then a white feature section should display
-And three feature cards should be visible in a row
-And each card should show a large gradient-colored number (01, 02, 03)
-And each card should have an uppercase title
-And each card should have descriptive paragraph text
+#### Scenario: Feature section shows three numbered items
 
-### Scenario: Video section displays video thumbnail with text
+- **GIVEN** a user scrolls past the banner
+- **THEN** a white feature section should display
+- **AND** three feature cards should be visible in a row
+- **AND** each card should show a large gradient-colored number (01, 02, 03)
+- **AND** each card should have an uppercase title
+- **AND** each card should have descriptive paragraph text
 
-Given a user scrolls to the video section
-Then a video thumbnail area should be visible with a dark overlay
-And a centered play button should overlay the video thumbnail
-And below the video, a heading "Great Modern Design / Build with usability in mind" should appear
-And a descriptive paragraph should follow the heading
-And the words "Modern Design" and "usability" should be visually highlighted (bold)
+#### Scenario: Video section displays video thumbnail with text
 
-### Scenario: Service section shows split layout with four services
+- **GIVEN** a user scrolls to the video section
+- **THEN** a video thumbnail area should be visible with a dark overlay
+- **AND** a centered play button should overlay the video thumbnail
+- **AND** below the video, a heading "Great Modern Design / Build with usability in mind" should appear
+- **AND** a descriptive paragraph should follow the heading
+- **AND** the words "Modern Design" and "usability" should be visually highlighted (bold)
 
-Given a user scrolls to the services section
-Then the left half should have a black background
-And the left half should show "Services We Offered" heading in white
-And the left half should have a descriptive paragraph
-And the right half should have a white background
-And the right half should display four service cards in a 2x2 grid
-And each service card should have an icon, title, and description
-And each service card should have a light border
+#### Scenario: Service section shows split layout with four services
 
-### Scenario: Latest works section shows image carousel
+- **GIVEN** a user scrolls to the services section
+- **THEN** the left half should have a black background
+- **AND** the left half should show "Services We Offered" heading in white
+- **AND** the left half should have a descriptive paragraph
+- **AND** the right half should have a white background
+- **AND** the right half should display four service cards in a 2x2 grid
+- **AND** each service card should have an icon, title, and description
+- **AND** each service card should have a light border
 
-Given a user scrolls to the latest works section
-Then a heading "Some Of our Latest Works" should be visible
-And an image carousel should display portfolio images
-And the active image should be fully opaque
-And inactive images should be semi-transparent
-And carousel navigation arrows should be visible on hover
+#### Scenario: Latest works section shows image carousel
 
-### Scenario: Newsletter section accepts email subscription
+- **GIVEN** a user scrolls to the latest works section
+- **THEN** a heading "Some Of our Latest Works" should be visible
+- **AND** an image carousel should display portfolio images
+- **AND** the active image should be fully opaque
+- **AND** inactive images should be semi-transparent
+- **AND** carousel navigation arrows should be visible on hover
 
-Given a user scrolls to the newsletter section
-Then a heading "Subscribe for our Newsletter" should be visible
-And a subtext "We won't send any kind of spam" should appear below
-And an email input field should be visible with rounded styling
-And a "Get Started" button should be visible
-And the button should use the gradient primary style
+#### Scenario: Newsletter section accepts email subscription
 
-### Scenario: Contact section displays split layout
+- **GIVEN** a user scrolls to the newsletter section
+- **THEN** a heading "Subscribe for our Newsletter" should be visible
+- **AND** a subtext "We won't send any kind of spam" should appear below
+- **AND** an email input field should be visible with rounded styling
+- **AND** a "Get Started" button should be visible
+- **AND** the button should use the gradient primary style
 
-Given a user scrolls to the contact section
-Then the left side should display a contact image
-And the right side should display a form card
-And the form should have Name, Email, and Message fields
-And a "Send Message" button should be visible
-And the form card should have a white background with padding
+#### Scenario: Contact section displays split layout
 
-### Scenario: Footer shows copyright and social links
+- **GIVEN** a user scrolls to the contact section
+- **THEN** the left side should display a contact image
+- **AND** the right side should display a form card
+- **AND** the form should have Name, Email, and Message fields
+- **AND** a "Send Message" button should be visible
+- **AND** the form card should have a white background with padding
 
-Given a user scrolls to the bottom
-Then a black footer should be visible
-And it should show a copyright notice
-And social media icons (Facebook, Twitter, Dribbble, Behance) should be visible
-And social icon buttons should have dark circle backgrounds
-And hovering a social icon should show a gradient effect
-And the footer should link to https://www.componentdock.com/
+#### Scenario: Footer shows copyright and social links
 
-### Scenario: Responsive behavior
+- **GIVEN** a user scrolls to the bottom
+- **THEN** a black footer should be visible
+- **AND** it should show a copyright notice
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) should be visible
+- **AND** social icon buttons should have dark circle backgrounds
+- **AND** hovering a social icon should show a gradient effect
+- **AND** the footer should link to https://www.componentdock.com/
 
-Given a user views the page on a mobile device
-Then the banner text should scale down appropriately
-And the hamburger menu should be visible
-And the navigation should collapse
-And feature cards should stack vertically
-And service cards should stack vertically
-And the contact form should stack below the image
-And the newsletter input and button should stack vertically
+#### Scenario: Responsive behavior
+
+- **GIVEN** a user views the page on a mobile device
+- **THEN** the banner text should scale down appropriately
+- **AND** the hamburger menu should be visible
+- **AND** the navigation should collapse
+- **AND** feature cards should stack vertically
+- **AND** service cards should stack vertically
+- **AND** the contact form should stack below the image
+- **AND** the newsletter input and button should stack vertically
 
 ## Verification checklist
 

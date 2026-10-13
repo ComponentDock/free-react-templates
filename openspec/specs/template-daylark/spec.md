@@ -15,26 +15,36 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - **Buttons & UI Elements**: Rounded-xl containers, smooth hover transitions, subtle shadows (`shadow-sm`, `shadow-md`), pill-shaped badge filters.
 - **Section Backgrounds**: Clean white and light slate alternating with card containers.
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Header & Navigation
+
+#### Scenario: Header & Navigation
 
 - The app shall render a top navigation bar with brand title ("Daylark"), date indicator, view switcher (Month / Week / Day / List), and quick action button ("+ New Event").
 
 ### Requirement 2: Interactive Calendar Grid
+
+#### Scenario: Interactive Calendar Grid
 
 - The app shall display a fully interactive monthly/weekly calendar grid showing days of the current month, highlighted current date, and scheduled events with category color badges.
 - Users can click on any day cell to view events or create a new event.
 
 ### Requirement 3: Event Management Panel
 
+#### Scenario: Event Management Panel
+
 - A sidebar or modal showing upcoming events for the selected date, with details (title, time, location, attendees, description) and ability to add/edit/delete events.
 
 ### Requirement 4: Mini Calendar & Filters
 
+#### Scenario: Mini Calendar & Filters
+
 - A sidebar widget featuring a mini month picker and category filters (Work, Personal, Meetings, Reminders).
 
 ### Requirement 5: Footer
+
+#### Scenario: Footer
 
 - A clean footer with copyright and mandatory link to `https://www.componentdock.com/` ("Component Dock").
 

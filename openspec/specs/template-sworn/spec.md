@@ -318,7 +318,7 @@ The system SHALL expose accessible semantics throughout.
 - **AND** all interactive elements SHALL have visible focus-visible rings
 - **AND** images SHALL have meaningful alt text
 
-### Requirement: Footer
+### Feature: Footer
 
 The system SHALL include the required Component Dock attribution footer.
 

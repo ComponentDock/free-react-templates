@@ -63,63 +63,53 @@ Recreation of ColorLib Education Wordpress Themes — a university/education web
 5. **Apply for Admission** — Two-column: left = instructor/professor photo, right = dark navy bg section with "Apply for Admission" heading (white), green accent text "Fall 2019 applications are now open", description paragraph
 6. **(Likely below fold — inferred from typical university templates):** Campus facilities/gallery, Events/News, Testimonials, Course listings, Faculty/Staff, Footer with university info + Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Top bar displays contact info and utility links
+### Feature: EduHaven template behaviour
 
-```
-Given the user navigates to the EduHaven homepage
-Then the top bar shows email "contact@KUTheme.edu" and phone "+1-3435-2356-222"
-And utility links "Alumni", "Calendar", "Portal" are visible on the right
-And a green "Support KU" button is present
-```
+#### Scenario: Top bar displays contact info and utility links
 
-### Scenario: Navigation has correct links
+- **GIVEN** the user navigates to the EduHaven homepage
+- **THEN** the top bar shows email "contact@KUTheme.edu" and phone "+1-3435-2356-222"
+- **AND** utility links "Alumni", "Calendar", "Portal" are visible on the right
+- **AND** a green "Support KU" button is present
 
-```
-Given the user views the navbar
-Then the university logo (crest icon + "EduHaven") is visible on the left
-And nav links for Home, Pages, Academics, Admissions, Courses, Athletics, University Life are present
-And a search icon is visible on the far right
-```
+#### Scenario: Navigation has correct links
 
-### Scenario: Hero section renders correctly
+- **GIVEN** the user views the navbar
+- **THEN** the university logo (crest icon + "EduHaven") is visible on the left
+- **AND** nav links for Home, Pages, Academics, Admissions, Courses, Athletics, University Life are present
+- **AND** a search icon is visible on the far right
 
-```
-Given the user views the hero section
-Then a full-width background image is displayed with a dark overlay
-And the subtitle "The Best University Of The State" is visible in white
-And the main heading "EduHaven University" is visible in large white serif text
-And a "Take A Tour" button is visible
-```
+#### Scenario: Hero section renders correctly
 
-### Scenario: Feature icons row shows four items
+- **GIVEN** the user views the hero section
+- **THEN** a full-width background image is displayed with a dark overlay
+- **AND** the subtitle "The Best University Of The State" is visible in white
+- **AND** the main heading "EduHaven University" is visible in large white serif text
+- **AND** a "Take A Tour" button is visible
 
-```
-Given the user scrolls below the hero
-Then four feature items are displayed in a row: University Life, Graduation, Athletics, Social
-And each item shows an icon, title, and subtitle
-```
+#### Scenario: Feature icons row shows four items
 
-### Scenario: Admission section displays correctly
+- **GIVEN** the user scrolls below the hero
+- **THEN** four feature items are displayed in a row: University Life, Graduation, Athletics, Social
+- **AND** each item shows an icon, title, and subtitle
 
-```
-Given the user scrolls to the admission section
-Then a two-column layout is visible
-And the left column shows a professor/instructor photo
-And the right column has a dark navy background with "Apply for Admission" heading
-And green accent text "applications are now open" is visible
-And a description paragraph is present
-```
+#### Scenario: Admission section displays correctly
 
-### Scenario: Footer contains Component Dock link
+- **GIVEN** the user scrolls to the admission section
+- **THEN** a two-column layout is visible
+- **AND** the left column shows a professor/instructor photo
+- **AND** the right column has a dark navy background with "Apply for Admission" heading
+- **AND** green accent text "applications are now open" is visible
+- **AND** a description paragraph is present
 
-```
-Given the user scrolls to the footer
-Then the footer has relevant university information
-And a link to https://www.componentdock.com/ is present
-And social media links are visible
-```
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has relevant university information
+- **AND** a link to https://www.componentdock.com/ is present
+- **AND** social media links are visible
 
 ## Verification checklist
 

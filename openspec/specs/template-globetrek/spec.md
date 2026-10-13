@@ -30,7 +30,7 @@ multi-column footer with newsletter signup.
 | button-primary-text| `#ffffff`                  | White on coral                              |
 | button-outline     | border `2px` on `#ef6c57`  | Outline variant, transparent fill           |
 
-## Section structure & Gherkin scenarios
+## Requirements
 
 ### 1. Navbar
 
@@ -39,23 +39,24 @@ multi-column footer with newsletter signup.
   social icons right (TripAdvisor, Twitter, Facebook, Instagram).
 - Hamburger toggle on mobile with slide-out menu.
 
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the user is on the homepage
-  Then the navbar shows "GlobeTrek" as the logo text
-  And navigation links include "Home", "Destinations", "Discount", "About", "Blog", "Contact"
-  And social media icons are visible on the right
+#### Scenario: Navbar displays logo and navigation links
 
-Scenario: Destinations link has a dropdown
-  Given the user is on the homepage
-  When the user hovers over "Destinations"
-  Then a dropdown appears with destination items (Japan, Europe, China, France)
+- **GIVEN** the user is on the homepage
+- **THEN** the navbar shows "GlobeTrek" as the logo text
+- **AND** navigation links include "Home", "Destinations", "Discount", "About", "Blog", "Contact"
+- **AND** social media icons are visible on the right
 
-Scenario: Navbar collapses to hamburger on mobile
-  Given the user views the page on a mobile viewport
-  Then the navbar shows a hamburger menu icon
-  And clicking it opens a slide-out mobile menu
-```
+#### Scenario: Destinations link has a dropdown
+
+- **GIVEN** the user is on the homepage
+- **WHEN** the user hovers over "Destinations"
+- **THEN** a dropdown appears with destination items (Japan, Europe, China, France)
+
+#### Scenario: Navbar collapses to hamburger on mobile
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the navbar shows a hamburger menu icon
+- **AND** clicking it opens a slide-out mobile menu
 
 ### 2. Hero Slider
 
@@ -67,21 +68,21 @@ Scenario: Navbar collapses to hamburger on mobile
 - Slide 2: "Discover Amazing Place" + "With Our Greatest Experiences"
   + "Explore More" button.
 
-```gherkin
-Scenario: Hero slider shows the first slide
-  Given the user loads the homepage
-  Then a full-width hero image is displayed with a dark overlay
-  And the headline reads "Experience Nature"
-  And a subtext reads "Discover the best tour in your life"
-  And a "Discover More" button is visible
+#### Scenario: Hero slider shows the first slide
 
-Scenario: Hero slider transitions to second slide
-  Given the user is on the homepage
-  When 5 seconds elapse
-  Then the slider transitions to the second slide
-  And the headline reads "Discover Amazing Place"
-  And a "Explore More" button is visible
-```
+- **GIVEN** the user loads the homepage
+- **THEN** a full-width hero image is displayed with a dark overlay
+- **AND** the headline reads "Experience Nature"
+- **AND** a subtext reads "Discover the best tour in your life"
+- **AND** a "Discover More" button is visible
+
+#### Scenario: Hero slider transitions to second slide
+
+- **GIVEN** the user is on the homepage
+- **WHEN** 5 seconds elapse
+- **THEN** the slider transitions to the second slide
+- **AND** the headline reads "Discover Amazing Place"
+- **AND** a "Explore More" button is visible
 
 ### 3. Feature Cards (overlap-section)
 
@@ -91,19 +92,19 @@ Scenario: Hero slider transitions to second slide
   2. "Explore Asian Mountains" — description text
   3. "Safe Trip With Airasia" — description text
 
-```gherkin
-Scenario: Feature cards are displayed after the hero
-  Given the user is on the homepage
-  Then three feature cards are shown in a row
-  And the first card heading is "Write Down Your Experience"
-  And the second card heading is "Explore Asian Mountains"
-  And the third card heading is "Safe Trip With Airasia"
+#### Scenario: Feature cards are displayed after the hero
 
-Scenario: Feature cards have overlapping style
-  Given the user is on the homepage
-  Then each feature card has a white background
-  And the cards visually overlap the hero section
-```
+- **GIVEN** the user is on the homepage
+- **THEN** three feature cards are shown in a row
+- **AND** the first card heading is "Write Down Your Experience"
+- **AND** the second card heading is "Explore Asian Mountains"
+- **AND** the third card heading is "Safe Trip With Airasia"
+
+#### Scenario: Feature cards have overlapping style
+
+- **GIVEN** the user is on the homepage
+- **THEN** each feature card has a white background
+- **AND** the cards visually overlap the hero section
 
 ### 4. Services Quick (icon rows)
 
@@ -112,13 +113,12 @@ Scenario: Feature cards have overlapping style
   2. Cruises
   3. Tour Packages
 
-```gherkin
-Scenario: Services quick section shows three items
-  Given the user scrolls to the services quick section
-  Then three service items are displayed in a row
-  And each item has an icon, heading, and description
-  And the items are "Air Ticketing", "Cruises", "Tour Packages"
-```
+#### Scenario: Services quick section shows three items
+
+- **GIVEN** the user scrolls to the services quick section
+- **THEN** three service items are displayed in a row
+- **AND** each item has an icon, heading, and description
+- **AND** the items are "Air Ticketing", "Cruises", "Tour Packages"
 
 ### 5. Testimonials Carousel
 
@@ -127,19 +127,19 @@ Scenario: Services quick section shows three items
   quote text + author name + "Traveler" link.
   - James Martin, Clair Augustin, James Martin (3 testimonials)
 
-```gherkin
-Scenario: Testimonials section displays carousel
-  Given the user scrolls to the testimonials section
-  Then a centered heading "Testimonials" is displayed
-  And a carousel shows testimonial slides
-  And each slide has an image on the left and a white card on the right
-  And each card contains a quote, author name, and "Traveler" label
+#### Scenario: Testimonials section displays carousel
 
-Scenario: Testimonials carousel auto-advances
-  Given the user is viewing the testimonials section
-  When 5 seconds elapse
-  Then the carousel advances to the next testimonial
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a centered heading "Testimonials" is displayed
+- **AND** a carousel shows testimonial slides
+- **AND** each slide has an image on the left and a white card on the right
+- **AND** each card contains a quote, author name, and "Traveler" label
+
+#### Scenario: Testimonials carousel auto-advances
+
+- **GIVEN** the user is viewing the testimonials section
+- **WHEN** 5 seconds elapse
+- **THEN** the carousel advances to the next testimonial
 
 ### 6. Our Destinations
 
@@ -152,24 +152,24 @@ Scenario: Testimonials carousel auto-advances
   5. Elizabeth Tower, London
   6. Opera House, Australia
 
-```gherkin
-Scenario: Destinations grid shows six destinations
-  Given the user scrolls to the destinations section
-  Then a heading "Our Destinations" is displayed
-  And six destination cards are shown in a 3-column grid
-  And each card has a background image with an overlay and a heading
+#### Scenario: Destinations grid shows six destinations
 
-Scenario: Destination card content
-  Given the destinations grid is visible
-  Then the destinations listed are:
-    | destination        |
-    | Santorini, Greece  |
-    | Rome, Italy        |
-    | Mount Fuji, Japan  |
-    | Camels, Dubai      |
-    | Elizabeth Tower, London |
-    | Opera House, Australia  |
-```
+- **GIVEN** the user scrolls to the destinations section
+- **THEN** a heading "Our Destinations" is displayed
+- **AND** six destination cards are shown in a 3-column grid
+- **AND** each card has a background image with an overlay and a heading
+
+#### Scenario: Destination card content
+
+- **GIVEN** the destinations grid is visible
+- **THEN** the destinations listed are:
+| destination        |
+| Santorini, Greece  |
+| Rome, Italy        |
+| Mount Fuji, Japan  |
+| Camels, Dubai      |
+| Elizabeth Tower, London |
+| Opera House, Australia  |
 
 ### 7. CTA Banner (Experience Our Outstanding Services)
 
@@ -177,13 +177,12 @@ Scenario: Destination card content
   Background image with parallax. Heading:
   "Experience Our Outstanding Services". Subtext + CTA button.
 
-```gherkin
-Scenario: CTA banner section is displayed
-  Given the user scrolls past the destinations
-  Then a full-width dark overlay banner is shown
-  And the heading reads "Experience Our Outstanding Services"
-  And a call-to-action button is visible below the heading
-```
+#### Scenario: CTA banner section is displayed
+
+- **GIVEN** the user scrolls past the destinations
+- **THEN** a full-width dark overlay banner is shown
+- **AND** the heading reads "Experience Our Outstanding Services"
+- **AND** a call-to-action button is visible below the heading
 
 ### 8. Services Detail (6 items)
 
@@ -196,30 +195,29 @@ Scenario: CTA banner section is displayed
   5. Sea Explorations
   6. Ski Experiences
 
-```gherkin
-Scenario: Services detail shows six items
-  Given the user scrolls to the services detail section
-  Then a heading "Our Services" is displayed
-  And six service items are shown in a grid
-  And the items are "Air Ticketing", "Cruises", "Tour Packages",
-    "Hotel Accommodations", "Sea Explorations", "Ski Experiences"
+#### Scenario: Services detail shows six items
 
-Scenario: Each service item has an icon
-  Given the services detail section is visible
-  Then each item displays a circular icon and descriptive text
-```
+- **GIVEN** the user scrolls to the services detail section
+- **THEN** a heading "Our Services" is displayed
+- **AND** six service items are shown in a grid
+- **AND** the items are "Air Ticketing", "Cruises", "Tour Packages",
+"Hotel Accommodations", "Sea Explorations", "Ski Experiences"
+
+#### Scenario: Each service item has an icon
+
+- **GIVEN** the services detail section is visible
+- **THEN** each item displays a circular icon and descriptive text
 
 ### 9. Blog Preview
 
 - `bg-light` background section. Shows a blog post preview card
   with image + excerpt + metadata.
 
-```gherkin
-Scenario: Blog preview section exists
-  Given the user scrolls to the blog section
-  Then a blog post preview card is displayed
-  And it contains an image, title, and excerpt text
-```
+#### Scenario: Blog preview section exists
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a blog post preview card is displayed
+- **AND** it contains an image, title, and excerpt text
 
 ### 10. Footer
 
@@ -229,19 +227,19 @@ Scenario: Blog preview section exists
   3. "Subscribe Newsletter" — email input + submit button
 - Bottom bar: copyright + social icons + Component Dock link.
 
-```gherkin
-Scenario: Footer displays three columns
-  Given the user scrolls to the footer
-  Then the footer has a dark background
-  And column 1 shows "About GlobeTrek" heading with description text
-  And column 2 shows "Navigations" with link lists
-  And column 3 shows "Subscribe Newsletter" with email input and button
+#### Scenario: Footer displays three columns
 
-Scenario: Footer includes Component Dock link
-  Given the user is on the page
-  Then the footer contains a link to "https://www.componentdock.com/"
-  And the link text reads "Component Dock"
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** column 1 shows "About GlobeTrek" heading with description text
+- **AND** column 2 shows "Navigations" with link lists
+- **AND** column 3 shows "Subscribe Newsletter" with email input and button
+
+#### Scenario: Footer includes Component Dock link
+
+- **GIVEN** the user is on the page
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the link text reads "Component Dock"
 
 ## Verification checklist
 

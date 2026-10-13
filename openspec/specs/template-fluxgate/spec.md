@@ -39,97 +39,111 @@
 | Step connector active | `2px solid #4f46e5` | Line between completed steps |
 | Transitions | Smooth fade/slide between steps | Elegant transitions between sections |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: FluxGate — Multi-Step Form Wizard
 
 #### Scenario: Page loads with step 1 active
-  Given the user opens the FluxGate page
-  Then the "Account Setup" step should be visible and active
-  And the "Personal Details" and "Payment Information" steps should be visible but inactive
-  And the first step should display form fields for account setup
+
+- **GIVEN** the user opens the FluxGate page
+- **THEN** the "Account Setup" step should be visible and active
+- **AND** the "Personal Details" and "Payment Information" steps should be visible but inactive
+- **AND** the first step should display form fields for account setup
 
 #### Scenario: Account Setup step fields
-  Given the user is on step 1 "Account Setup"
-  Then the form should contain an "Email" text input
-  And the form should contain a "Password" input
-  And the form should contain a "Confirm Password" input
-  And a "Next" button should be visible
+
+- **GIVEN** the user is on step 1 "Account Setup"
+- **THEN** the form should contain an "Email" text input
+- **AND** the form should contain a "Password" input
+- **AND** the form should contain a "Confirm Password" input
+- **AND** a "Next" button should be visible
 
 #### Scenario: Navigate to step 2
-  Given the user is on step 1 with valid account information
-  When the user clicks the "Next" button
-  Then the "Personal Details" step should become active
-  And the "Account Setup" step should show as completed with a checkmark
-  And the form should display fields for personal information
+
+- **GIVEN** the user is on step 1 with valid account information
+- **WHEN** the user clicks the "Next" button
+- **THEN** the "Personal Details" step should become active
+- **AND** the "Account Setup" step should show as completed with a checkmark
+- **AND** the form should display fields for personal information
 
 #### Scenario: Personal Details step fields
-  Given the user is on step 2 "Personal Details"
-  Then the form should contain a "First Name" text input
-  And the form should contain a "Last Name" text input
-  And the form should contain a "Phone Number" input
-  And the form should contain a "Address" textarea
-  And "Back" and "Next" buttons should be visible
+
+- **GIVEN** the user is on step 2 "Personal Details"
+- **THEN** the form should contain a "First Name" text input
+- **AND** the form should contain a "Last Name" text input
+- **AND** the form should contain a "Phone Number" input
+- **AND** the form should contain a "Address" textarea
+- **AND** "Back" and "Next" buttons should be visible
 
 #### Scenario: Navigate back to step 1
-  Given the user is on step 2
-  When the user clicks the "Back" button
-  Then the "Account Setup" step should become active again
-  And the previously entered account information should be preserved
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks the "Back" button
+- **THEN** the "Account Setup" step should become active again
+- **AND** the previously entered account information should be preserved
 
 #### Scenario: Navigate to step 3
-  Given the user is on step 2 with valid personal information
-  When the user clicks the "Next" button
-  Then the "Payment Information" step should become active
-  And the "Account Setup" and "Personal Details" steps should show as completed
+
+- **GIVEN** the user is on step 2 with valid personal information
+- **WHEN** the user clicks the "Next" button
+- **THEN** the "Payment Information" step should become active
+- **AND** the "Account Setup" and "Personal Details" steps should show as completed
 
 #### Scenario: Payment Information step fields
-  Given the user is on step 3 "Payment Information"
-  Then the form should contain a "Card Holder Name" text input
-  And the form should contain a "Card Number" input
-  And the form should contain an "Expiry Date" input
-  And the form should contain a "CVC" input
-  And "Back" and "Submit" buttons should be visible
+
+- **GIVEN** the user is on step 3 "Payment Information"
+- **THEN** the form should contain a "Card Holder Name" text input
+- **AND** the form should contain a "Card Number" input
+- **AND** the form should contain an "Expiry Date" input
+- **AND** the form should contain a "CVC" input
+- **AND** "Back" and "Submit" buttons should be visible
 
 #### Scenario: Form validation prevents advancing on invalid input
-  Given the user is on any step
-  When the user clicks "Next" with invalid or empty required fields
-  Then inline validation error messages should be displayed
-  And the form should not advance to the next step
+
+- **GIVEN** the user is on any step
+- **WHEN** the user clicks "Next" with invalid or empty required fields
+- **THEN** inline validation error messages should be displayed
+- **AND** the form should not advance to the next step
 
 #### Scenario: Email format validation
-  Given the user is on step 1
-  When the user enters an invalid email format
-  Then an email format validation error should be displayed
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user enters an invalid email format
+- **THEN** an email format validation error should be displayed
 
 #### Scenario: Password mismatch validation
-  Given the user is on step 1
-  When the user enters different passwords in password and confirm password fields
-  Then a "passwords do not match" error should be displayed
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user enters different passwords in password and confirm password fields
+- **THEN** a "passwords do not match" error should be displayed
 
 #### Scenario: Successful submission completes the wizard
-  Given the user has completed all steps with valid data
-  When the user clicks "Submit" on step 3
-  Then a success screen should be displayed with a "Complete!" header
-  And a "Registration Complete" message should be shown
+
+- **GIVEN** the user has completed all steps with valid data
+- **WHEN** the user clicks "Submit" on step 3
+- **THEN** a success screen should be displayed with a "Complete!" header
+- **AND** a "Registration Complete" message should be shown
 
 #### Scenario: Reset wizard
-  Given the user is on the success screen
-  When the user clicks "Start Over"
-  Then the wizard should reset to step 1 with all fields cleared
+
+- **GIVEN** the user is on the success screen
+- **WHEN** the user clicks "Start Over"
+- **THEN** the wizard should reset to step 1 with all fields cleared
 
 #### Scenario: Step indicator progress
-  Given the user is navigating through the wizard
-  When the user advances to a new step
-  Then completed steps should display a checkmark icon
-  And the current step should be highlighted with the accent color
-  And future steps should remain in the inactive state
+
+- **GIVEN** the user is navigating through the wizard
+- **WHEN** the user advances to a new step
+- **THEN** completed steps should display a checkmark icon
+- **AND** the current step should be highlighted with the accent color
+- **AND** future steps should remain in the inactive state
 
 #### Scenario: Responsive layout
-  Given the user views the wizard on a mobile device
-  Then the wizard should stack vertically
-  And all form fields should be full-width
-  And the step indicator should adapt to the smaller screen
+
+- **GIVEN** the user views the wizard on a mobile device
+- **THEN** the wizard should stack vertically
+- **AND** all form fields should be full-width
+- **AND** the step indicator should adapt to the smaller screen
 
 ## Verification Checklist
 

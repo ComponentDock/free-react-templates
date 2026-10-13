@@ -41,121 +41,128 @@ Extracted from the live preview CSS (`css/main.css`):
 7. **Testimonials** — Carousel of testimonial items: quote icon, author name "Fanny Spencer", 5-star rating, testimonial text. Below: row of avatar thumbnails with gradient overlay (acts as carousel nav dots).
 8. **Footer** — Dark navy (#283367) background. 5 columns: Top Products, Quick Links, Features, Resources, Newsletter (email input + arrow button). Footer bottom: copyright + social icons (Facebook, Twitter, Dribbble, Behance). Replace Colorlib attribution with "Made with Component Dock" + link to https://www.componentdock.com/.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
-```
-Scenario: Logo and nav links are visible
-  Given the page loads
-  Then a logo image is displayed on the left
-  And nav links "Home", "About", "Courses", "Pages", "Blog", "Contact" are visible
-  And "Pages" and "Blog" have dropdown sub-menus
 
-Scenario: Navbar is fixed on scroll
-  Given the user scrolls down
-  Then the navbar remains sticky at the top of the viewport
-```
+#### Scenario: Logo and nav links are visible
+
+- **GIVEN** the page loads
+- **THEN** a logo image is displayed on the left
+- **AND** nav links "Home", "About", "Courses", "Pages", "Blog", "Contact" are visible
+- **AND** "Pages" and "Blog" have dropdown sub-menus
+
+#### Scenario: Navbar is fixed on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar remains sticky at the top of the viewport
 
 ### Feature: Hero Banner
-```
-Scenario: Hero section displays with background and search
-  Given the page loads
-  Then a fullscreen hero section is visible
-  And the heading reads "We Rank the Best Courses on the Web"
-  And a search input with placeholder "Search Courses" is visible
-  And a "Search" button is visible next to the input
 
-Scenario: Course tags are shown below search
-  Given the hero section is visible
-  Then transparent pill-shaped tags are displayed for "Ruby on Rails", "Python", "Marketing", and other courses
-  And hovering a tag fills it with white background
+#### Scenario: Hero section displays with background and search
 
-Scenario: Search form is interactive
-  Given the hero section is visible
-  When the user types in the search input
-  Then the text appears in the input field
-  When the user clicks "Search"
-  Then the form submits (default behavior)
-```
+- **GIVEN** the page loads
+- **THEN** a fullscreen hero section is visible
+- **AND** the heading reads "We Rank the Best Courses on the Web"
+- **AND** a search input with placeholder "Search Courses" is visible
+- **AND** a "Search" button is visible next to the input
+
+#### Scenario: Course tags are shown below search
+
+- **GIVEN** the hero section is visible
+- **THEN** transparent pill-shaped tags are displayed for "Ruby on Rails", "Python", "Marketing", and other courses
+- **AND** hovering a tag fills it with white background
+
+#### Scenario: Search form is interactive
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user types in the search input
+- **THEN** the text appears in the input field
+- **WHEN** the user clicks "Search"
+- **THEN** the form submits (default behavior)
 
 ### Feature: About Section
-```
-Scenario: About section displays image and text
-  Given the user scrolls to the about section
-  Then an image is displayed on the left column
-  And the heading reads "Over 2500 Courses from 5 Platform"
-  And a descriptive paragraph is visible
-  And an "Explore Courses" button with gradient background is displayed
-```
+
+#### Scenario: About section displays image and text
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** an image is displayed on the left column
+- **AND** the heading reads "Over 2500 Courses from 5 Platform"
+- **AND** a descriptive paragraph is visible
+- **AND** an "Explore Courses" button with gradient background is displayed
 
 ### Feature: Courses Section
-```
-Scenario: Courses section displays category list
-  Given the user scrolls to the courses section
-  Then a heading "This is Why We have Solid Idea" is visible on the left
-  And a "Explore Courses" button with white style is displayed
-  And a 2-column list of course categories is shown on the right
-  And each category has a book icon and label
 
-Scenario: Course category items have hover effect
-  Given the courses list is visible
-  When the user hovers over a category item
-  Then the item background changes to the brand gradient
-```
+#### Scenario: Courses section displays category list
+
+- **GIVEN** the user scrolls to the courses section
+- **THEN** a heading "This is Why We have Solid Idea" is visible on the left
+- **AND** a "Explore Courses" button with white style is displayed
+- **AND** a 2-column list of course categories is shown on the right
+- **AND** each category has a book icon and label
+
+#### Scenario: Course category items have hover effect
+
+- **GIVEN** the courses list is visible
+- **WHEN** the user hovers over a category item
+- **THEN** the item background changes to the brand gradient
 
 ### Feature: Features Section
-```
-Scenario: Features section shows 6 feature cards in a grid
-  Given the user scrolls to the features section
-  Then a centered heading "Features That Make Us Hero" is displayed
-  And a paragraph description is shown below the heading
-  And 6 feature cards are displayed in a 3-column grid
-  And each card has an icon, title, and description paragraph
 
-Scenario: Feature cards have light blue background
-  Given the features section is visible
-  Then each feature card has a #f1f9ff background
-```
+#### Scenario: Features section shows 6 feature cards in a grid
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** a centered heading "Features That Make Us Hero" is displayed
+- **AND** a paragraph description is shown below the heading
+- **AND** 6 feature cards are displayed in a 3-column grid
+- **AND** each card has an icon, title, and description paragraph
+
+#### Scenario: Feature cards have light blue background
+
+- **GIVEN** the features section is visible
+- **THEN** each feature card has a #f1f9ff background
 
 ### Feature: Faculty Section
-```
-Scenario: Faculty section shows 4 faculty members
-  Given the user scrolls to the faculty section
-  Then a centered heading "Faculty Members" is displayed
-  And 4 faculty cards are shown in a row
-  And each card has a circular avatar image
-  And each card displays a name, designation, bio, and social icons (Facebook, Twitter, LinkedIn)
-```
+
+#### Scenario: Faculty section shows 4 faculty members
+
+- **GIVEN** the user scrolls to the faculty section
+- **THEN** a centered heading "Faculty Members" is displayed
+- **AND** 4 faculty cards are shown in a row
+- **AND** each card has a circular avatar image
+- **AND** each card displays a name, designation, bio, and social icons (Facebook, Twitter, LinkedIn)
 
 ### Feature: Testimonials Section
-```
-Scenario: Testimonials carousel displays with avatars
-  Given the user scrolls to the testimonials section
-  Then a carousel of testimonial items is visible
-  And each item has a quote icon, author name, 5-star rating, and testimonial text
-  And a row of avatar thumbnails is shown below as carousel navigation
 
-Scenario: Avatar thumbnails act as carousel controls
-  Given the testimonials section is visible
-  When the user clicks an avatar thumbnail
-  Then the corresponding testimonial is displayed
-  And the active avatar has a gradient overlay with higher opacity
-```
+#### Scenario: Testimonials carousel displays with avatars
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonial items is visible
+- **AND** each item has a quote icon, author name, 5-star rating, and testimonial text
+- **AND** a row of avatar thumbnails is shown below as carousel navigation
+
+#### Scenario: Avatar thumbnails act as carousel controls
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the user clicks an avatar thumbnail
+- **THEN** the corresponding testimonial is displayed
+- **AND** the active avatar has a gradient overlay with higher opacity
 
 ### Feature: Footer
-```
-Scenario: Footer displays columns and newsletter
-  Given the user scrolls to the footer
-  Then a dark navy (#283367) background is visible
-  And 4 link columns are displayed: "Top Products", "Quick Links", "Features", "Resources"
-  And a Newsletter column shows an email input with placeholder "Your Email Address" and an arrow submit button
 
-Scenario: Footer bottom shows copyright and social links
-  Given the footer is visible
-  Then a copyright line is displayed in the footer bottom
-  And social icons (Facebook, Twitter, Dribbble, Behance) are visible
-  And the footer links to Component Dock (https://www.componentdock.com/)
-```
+#### Scenario: Footer displays columns and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark navy (#283367) background is visible
+- **AND** 4 link columns are displayed: "Top Products", "Quick Links", "Features", "Resources"
+- **AND** a Newsletter column shows an email input with placeholder "Your Email Address" and an arrow submit button
+
+#### Scenario: Footer bottom shows copyright and social links
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright line is displayed in the footer bottom
+- **AND** social icons (Facebook, Twitter, Dribbble, Behance) are visible
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
 
 ## Verification Checklist
 

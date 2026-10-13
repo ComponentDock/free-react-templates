@@ -72,82 +72,95 @@ This is a **sidebar layout** — the author panel sits fixed on the left with na
 - "Made with ♥" text
 - Mobile: offcanvas menu triggered by hamburger
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Ledgerman Template
 
 #### Scenario: Hero Section
-- **Given** a visitor loads the page
-- **Then** the hero section displays a full-height background image with overlay
-- **And** the heading shows "Hi! I'm [Name]" with a subtitle
-- **And** call-to-action buttons are visible
+
+- **GIVEN** a visitor loads the page
+- **THEN** the hero section displays a full-height background image with overlay
+- **AND** the heading shows "Hi! I'm [Name]" with a subtitle
+- **AND** call-to-action buttons are visible
 
 #### Scenario: Sidebar Navigation
-- **Given** a visitor is on desktop
-- **Then** a fixed sidebar is visible on the left
-- **And** the sidebar contains the author photo, name, and navigation links
-- **And** clicking a nav link scrolls to the corresponding section
+
+- **GIVEN** a visitor is on desktop
+- **THEN** a fixed sidebar is visible on the left
+- **AND** the sidebar contains the author photo, name, and navigation links
+- **AND** clicking a nav link scrolls to the corresponding section
 
 #### Scenario: Mobile Navigation
-- **Given** a visitor is on mobile
-- **Then** a hamburger menu button is visible
-- **And** clicking it opens an offcanvas sidebar
-- **And** the offcanvas contains the author photo, nav links, and close button
+
+- **GIVEN** a visitor is on mobile
+- **THEN** a hamburger menu button is visible
+- **AND** clicking it opens an offcanvas sidebar
+- **AND** the offcanvas contains the author photo, nav links, and close button
 
 #### Scenario: About Section
-- **Given** a visitor scrolls to the About section
-- **Then** the heading "Who Am I?" is displayed
-- **And** an author photo is shown
-- **And** bio text is displayed
+
+- **GIVEN** a visitor scrolls to the About section
+- **THEN** the heading "Who Am I?" is displayed
+- **AND** an author photo is shown
+- **AND** bio text is displayed
 
 #### Scenario: Services Section
-- **Given** a visitor scrolls to the Services section
-- **Then** 6 service cards are displayed in a 2-column grid
-- **And** each card has an icon, title, and description
+
+- **GIVEN** a visitor scrolls to the Services section
+- **THEN** 6 service cards are displayed in a 2-column grid
+- **AND** each card has an icon, title, and description
 
 #### Scenario: Skills Section
-- **Given** a visitor scrolls to the Skills section
-- **Then** skill bars are displayed with labels and percentage widths
-- **And** each bar shows the skill name and proficiency level
+
+- **GIVEN** a visitor scrolls to the Skills section
+- **THEN** skill bars are displayed with labels and percentage widths
+- **AND** each bar shows the skill name and proficiency level
 
 #### Scenario: Education Section
-- **Given** a visitor scrolls to the Education section
-- **Then** education entries are listed in timeline format
-- **And** each entry has a date range and description
+
+- **GIVEN** a visitor scrolls to the Education section
+- **THEN** education entries are listed in timeline format
+- **AND** each entry has a date range and description
 
 #### Scenario: Experience Section
-- **Given** a visitor scrolls to the Experience section
-- **Then** work experience entries are listed in timeline format
-- **And** each entry has a date range and description
+
+- **GIVEN** a visitor scrolls to the Experience section
+- **THEN** work experience entries are listed in timeline format
+- **AND** each entry has a date range and description
 
 #### Scenario: Work/Portfolio Section
-- **Given** a visitor scrolls to the Work section
-- **Then** a filterable gallery of work items is displayed
-- **And** filter buttons (All, Graphic Design, Web Design, Software, Apps) are present
-- **And** each work item shows an image with hover overlay and icons
-- **And** a "Load More" button is visible
+
+- **GIVEN** a visitor scrolls to the Work section
+- **THEN** a filterable gallery of work items is displayed
+- **AND** filter buttons (All, Graphic Design, Web Design, Software, Apps) are present
+- **AND** each work item shows an image with hover overlay and icons
+- **AND** a "Load More" button is visible
 
 #### Scenario: Blog Section
-- **Given** a visitor scrolls to the Blog section
-- **Then** blog post cards are displayed
-- **And** each card has a featured image, title, and excerpt
+
+- **GIVEN** a visitor scrolls to the Blog section
+- **THEN** blog post cards are displayed
+- **AND** each card has a featured image, title, and excerpt
 
 #### Scenario: Contact Section
-- **Given** a visitor scrolls to the Contact section
-- **Then** a contact form is displayed with Name, Email, Subject, and Message fields
-- **And** a submit button is present
+
+- **GIVEN** a visitor scrolls to the Contact section
+- **THEN** a contact form is displayed with Name, Email, Subject, and Message fields
+- **AND** a submit button is present
 
 #### Scenario: Dark Mode Toggle
-- **Given** a visitor clicks the dark mode toggle
-- **Then** the theme switches to dark mode
-- **And** all section backgrounds and text colors update accordingly
+
+- **GIVEN** a visitor clicks the dark mode toggle
+- **THEN** the theme switches to dark mode
+- **AND** all section backgrounds and text colors update accordingly
 
 #### Scenario: Footer
-- **Given** a visitor reaches the bottom of the page
-- **Then** the footer shows copyright text
-- **And** social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
-- **And** a "Made with ♥" attribution is displayed
-- **And** a link to Component Dock is present
+
+- **GIVEN** a visitor reaches the bottom of the page
+- **THEN** the footer shows copyright text
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
+- **AND** a "Made with ♥" attribution is displayed
+- **AND** a link to Component Dock is present
 
 ## Verification Checklist
 

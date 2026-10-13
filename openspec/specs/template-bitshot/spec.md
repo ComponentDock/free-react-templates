@@ -4,6 +4,12 @@
 > Preview: https://preview.colorlib.com/theme/bitmap/
 > Category: Photography (49)
 
+## Purpose
+
+Bitshot is a photography portfolio landing page with a filterable gallery, testimonial carousel, services grid and an Instagram strip.
+
+It recreates the ColorLib **Bitmap** design (https://colorlib.com/wp/template/bitmap/, preview: https://preview.colorlib.com/theme/bitmap/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (extracted from preview CSS)
 
 | Token          | Value                                              |
@@ -40,89 +46,114 @@
 6. **Instagram** — 6-column row of Instagram images (full-width row, no gaps). Centered "Follow us on instagram" button above.
 7. **Footer** — Dark navy (#04091e) background, three columns: About Me (text + copyright with heart icon), Newsletter (email input + submit button), Follow Me (social icons: Facebook, Twitter, Dribbble, Behance).
 
-## Scenarios (Gherkin)
+## Requirements
 
 ### Navbar
 
-- **Scenario: Brand logo renders**
-  - Given the page loads
-  - Then the navbar displays the logo image
-- **Scenario: Navigation links render**
-  - Given the page loads
-  - Then the navbar displays links: Home, Gallery, Services, About, Blog (dropdown), Contact
-- **Scenario: Mobile nav toggle**
-  - Given the viewport is narrow
-  - When the user clicks the hamburger icon
-  - Then the navigation menu expands/collapses
+#### Scenario: Brand logo renders
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays the logo image
+
+#### Scenario: Navigation links render
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays links: Home, Gallery, Services, About, Blog (dropdown), Contact
+
+#### Scenario: Mobile nav toggle
+
+- **GIVEN** the viewport is narrow
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the navigation menu expands/collapses
 
 ### Hero
 
-- **Scenario: Hero content renders**
-  - Given the page loads
-  - Then the hero section displays heading "Bitmap Photography"
-  - And the hero section displays a subtitle paragraph
-  - And the hero section displays an "Explore Gallery" CTA button
-- **Scenario: Hero has parallax background**
-  - Given the page loads
-  - Then the hero section has a background image with parallax effect
+#### Scenario: Hero content renders
+
+- **GIVEN** the page loads
+- **THEN** the hero section displays heading "Bitmap Photography"
+- **AND** the hero section displays a subtitle paragraph
+- **AND** the hero section displays an "Explore Gallery" CTA button
+
+#### Scenario: Hero has parallax background
+
+- **GIVEN** the page loads
+- **THEN** the hero section has a background image with parallax effect
 
 ### Gallery
 
-- **Scenario: Filter tabs render**
-  - Given the page loads
-  - Then the gallery filter bar displays: All, Approved, Unapproved, Unviewed
-  - And "All" is the active filter
-- **Scenario: Gallery items render**
-  - Given the page loads
-  - Then the gallery displays 12 image items in a 4-column grid
-- **Scenario: Gallery hover overlay**
-  - Given the page loads
-  - When the user hovers over a gallery item
-  - Then an overlay appears with the item title and an expand icon
-- **Scenario: Filter items by category**
-  - Given the gallery displays items with different category classes
-  - When the user clicks a filter tab
-  - Then only items matching that category are visible
+#### Scenario: Filter tabs render
+
+- **GIVEN** the page loads
+- **THEN** the gallery filter bar displays: All, Approved, Unapproved, Unviewed
+- **AND** "All" is the active filter
+
+#### Scenario: Gallery items render
+
+- **GIVEN** the page loads
+- **THEN** the gallery displays 12 image items in a 4-column grid
+
+#### Scenario: Gallery hover overlay
+
+- **GIVEN** the page loads
+- **WHEN** the user hovers over a gallery item
+- **THEN** an overlay appears with the item title and an expand icon
+
+#### Scenario: Filter items by category
+
+- **GIVEN** the gallery displays items with different category classes
+- **WHEN** the user clicks a filter tab
+- **THEN** only items matching that category are visible
 
 ### Testimonials
 
-- **Scenario: Testimonials section renders**
-  - Given the page loads
-  - Then the testimonials section has a yellow background
-  - And the testimonials section displays "Client's Feedback" heading
-- **Scenario: Testimonial carousel displays**
-  - Given the page loads
-  - Then the testimonials section displays a testimonial with avatar, quote, name, and role
+#### Scenario: Testimonials section renders
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section has a yellow background
+- **AND** the testimonials section displays "Client's Feedback" heading
+
+#### Scenario: Testimonial carousel displays
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section displays a testimonial with avatar, quote, name, and role
 
 ### Services
 
-- **Scenario: Services section renders**
-  - Given the page loads
-  - Then the services section displays heading "Why we are the best"
-  - And the services section displays 6 service cards in a 3-column grid
-- **Scenario: Service card hover**
-  - Given the page loads
-  - When the user hovers over a service card
-  - Then the card background changes to yellow
+#### Scenario: Services section renders
+
+- **GIVEN** the page loads
+- **THEN** the services section displays heading "Why we are the best"
+- **AND** the services section displays 6 service cards in a 3-column grid
+
+#### Scenario: Service card hover
+
+- **GIVEN** the page loads
+- **WHEN** the user hovers over a service card
+- **THEN** the card background changes to yellow
 
 ### Instagram
 
-- **Scenario: Instagram section renders**
-  - Given the page loads
-  - Then the Instagram section displays a "Follow us on instagram" button
-  - And the Instagram section displays 6 images in a row
+#### Scenario: Instagram section renders
+
+- **GIVEN** the page loads
+- **THEN** the Instagram section displays a "Follow us on instagram" button
+- **AND** the Instagram section displays 6 images in a row
 
 ### Footer
 
-- **Scenario: Footer renders**
-  - Given the page loads
-  - Then the footer has a dark navy background
-  - And the footer displays "About Me" section
-  - And the footer displays a Newsletter section with email input
-  - And the footer displays social icons (Facebook, Twitter, Dribbble, Behance)
-- **Scenario: Newsletter form**
-  - Given the page loads
-  - Then the newsletter form has an email input field and a submit button
+#### Scenario: Footer renders
+
+- **GIVEN** the page loads
+- **THEN** the footer has a dark navy background
+- **AND** the footer displays "About Me" section
+- **AND** the footer displays a Newsletter section with email input
+- **AND** the footer displays social icons (Facebook, Twitter, Dribbble, Behance)
+
+#### Scenario: Newsletter form
+
+- **GIVEN** the page loads
+- **THEN** the newsletter form has an email input field and a submit button
 
 ## Verification checklist
 

@@ -10,10 +10,14 @@ Schedura is a bootstrap calendar component page. It recreates the ColorLib **Cal
 
 ### R1. Navbar & Header
 
+#### Scenario: R1. Navbar & Header
+
 - Feature a clean header with title "Schedura — Date Range Picker" and subtitle.
 - Include a top navigation bar with branding and links.
 
 ### R2. Date Range Picker Form
+
+#### Scenario: R2. Date Range Picker Form
 
 - Centered card layout with two columns for "From" (Start Date) and "To" (End Date).
 - Interactive date pickers allowing users to select start and end dates.
@@ -22,6 +26,8 @@ Schedura is a bootstrap calendar component page. It recreates the ColorLib **Cal
 - Highlight today's date and selected date range.
 
 ### R3. Component Dock Footer
+
+#### Scenario: R3. Component Dock Footer
 
 - Every template's footer MUST link `https://www.componentdock.com/` ("Component Dock") with a message like "More templates at Component Dock" or "Made with Component Dock".
 

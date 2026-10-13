@@ -59,84 +59,84 @@ New name: `triumph` (apps/triumph, @free-react-templates/triumph)
    icons. Copyright bar at bottom. Footer MUST link
    https://www.componentdock.com/.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Triumph Template
 
 #### Scenario: Header renders with navigation and CTA
 
-Given the page is loaded
-Then the header displays a logo
-And navigation links: Home, About, Services, Portfolio, Blog, Contact
-And a phone number link
-And a "Get Free Consultant" button
-When the user scrolls down
-Then the header becomes sticky with a shadow
+- **GIVEN** the page is loaded
+- **THEN** the header displays a logo
+- **AND** navigation links: Home, About, Services, Portfolio, Blog, Contact
+- **AND** a phone number link
+- **AND** a "Get Free Consultant" button
+- **WHEN** the user scrolls down
+- **THEN** the header becomes sticky with a shadow
 
 #### Scenario: Hero section displays correctly
 
-Given the page is loaded
-Then a hero section is visible with a dark background image
-And a headline "Get the help you need, every step of the way"
-And a subtext description
-And a "Get Started" CTA button
-And a decorative image on the right side
+- **GIVEN** the page is loaded
+- **THEN** a hero section is visible with a dark background image
+- **AND** a headline "Get the help you need, every step of the way"
+- **AND** a subtext description
+- **AND** a "Get Started" CTA button
+- **AND** a decorative image on the right side
 
 #### Scenario: Client testimonials section shows three cards
 
-Given the page is loaded
-Then the testimonials section displays three columns
-And each card has a heading, description text, and an icon
+- **GIVEN** the page is loaded
+- **THEN** the testimonials section displays three columns
+- **AND** each card has a heading, description text, and an icon
 
 #### Scenario: Emergency / About section with image background
 
-Given the page is loaded
-Then a section with an image background is visible
-And it contains a CTA button
+- **GIVEN** the page is loaded
+- **THEN** a section with an image background is visible
+- **AND** it contains a CTA button
 
 #### Scenario: Services area on gray background
 
-Given the page is loaded
-Then the services section has a light gray (#F8FAFC) background
-And displays "Improved Digital Experience" heading
-And shows two service cards with icons and "Learn More" links
+- **GIVEN** the page is loaded
+- **THEN** the services section has a light gray (#F8FAFC) background
+- **AND** displays "Improved Digital Experience" heading
+- **AND** shows two service cards with icons and "Learn More" links
 
 #### Scenario: Testimonial quote section
 
-Given the page is loaded
-Then a testimonial section shows a quote
-And the author name and title are displayed
-And an avatar image is shown
+- **GIVEN** the page is loaded
+- **THEN** a testimonial section shows a quote
+- **AND** the author name and title are displayed
+- **AND** an avatar image is shown
 
 #### Scenario: Portfolio / Handpicked section
 
-Given the page is loaded
-Then a portfolio section displays project cards in a grid
-And each card has an image, title, description, and "View Project" link
+- **GIVEN** the page is loaded
+- **THEN** a portfolio section displays project cards in a grid
+- **AND** each card has an image, title, description, and "View Project" link
 
 #### Scenario: Support / Services list section
 
-Given the page is loaded
-Then a services list section displays category items
-And contact information (email, address, phone) is shown
-And a CTA button is present
+- **GIVEN** the page is loaded
+- **THEN** a services list section displays category items
+- **AND** contact information (email, address, phone) is shown
+- **AND** a CTA button is present
 
 #### Scenario: Footer renders with all columns
 
-Given the page is loaded
-Then the footer has a dark gradient background
-And displays logo, quick links, services, and newsletter columns
-And social media icon links are present
-And a copyright bar with "Component Dock" link is at the bottom
+- **GIVEN** the page is loaded
+- **THEN** the footer has a dark gradient background
+- **AND** displays logo, quick links, services, and newsletter columns
+- **AND** social media icon links are present
+- **AND** a copyright bar with "Component Dock" link is at the bottom
 
 #### Scenario: Responsive layout on mobile
 
-Given the viewport width is less than 768px
-Then the navigation collapses into a hamburger menu
-And the hero text scales down appropriately
-And the three-column testimonial stacks vertically
-And the portfolio grid becomes single-column
-And the footer columns stack vertically
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the navigation collapses into a hamburger menu
+- **AND** the hero text scales down appropriately
+- **AND** the three-column testimonial stacks vertically
+- **AND** the portfolio grid becomes single-column
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

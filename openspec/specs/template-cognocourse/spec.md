@@ -58,116 +58,132 @@ The original is a Bootstrap 4 single-page education landing with:
 8. **JoinCTA** — "Join Our Platform Today" heading + subtitle + centered orange "register now" button
 9. **Footer** — 4-column: About (logo + text + social icons + copyright), Quick Menu links, Useful Links, Contact Us (address + phone + email). Dark bg `#2c2b31`.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Cognocourse — Online Course Platform Landing Page
 
 #### Scenario: Page loads with all sections rendered
-- Given the user navigates to the Cognocourse page
-- Then the page title is "Cognocourse"
-- And the navbar is visible with logo "learn"
-- And the nav contains links: Home, About Us, Courses, News, Contact
-- And the hero slider section is visible
-- And the featured course section is visible
-- And the courses section is visible
-- And the milestones section is visible
-- And the grouped sections (events, news, FAQ) are visible
-- And the video section is visible
-- And the join CTA section is visible
-- And the footer is visible
+
+- **GIVEN** the user navigates to the Cognocourse page
+- **THEN** the page title is "Cognocourse"
+- **AND** the navbar is visible with logo "learn"
+- **AND** the nav contains links: Home, About Us, Courses, News, Contact
+- **AND** the hero slider section is visible
+- **AND** the featured course section is visible
+- **AND** the courses section is visible
+- **AND** the milestones section is visible
+- **AND** the grouped sections (events, news, FAQ) are visible
+- **AND** the video section is visible
+- **AND** the join CTA section is visible
+- **AND** the footer is visible
 
 #### Scenario: Navbar displays contact information
-- Given the user views the top bar
-- Then the phone number is displayed
-- And the email address is displayed
-- And "Register" and "Login" links are visible
+
+- **GIVEN** the user views the top bar
+- **THEN** the phone number is displayed
+- **AND** the email address is displayed
+- **AND** "Register" and "Login" links are visible
 
 #### Scenario: Navbar search toggle
-- Given the user clicks the search icon in the nav
-- Then a search panel slides open with a text input and search button
-- When the user clicks the search icon again
-- Then the search panel closes
+
+- **GIVEN** the user clicks the search icon in the nav
+- **THEN** a search panel slides open with a text input and search button
+- **WHEN** the user clicks the search icon again
+- **THEN** the search panel closes
 
 #### Scenario: Hero slider displays content
-- Given the hero slider is visible
-- Then the heading reads "Complete Online Courses"
-- And a descriptive subtitle paragraph is shown
-- And two CTA buttons are visible: "learn more" and "see all courses"
-- And both buttons have an orange background with arrow icons
+
+- **GIVEN** the hero slider is visible
+- **THEN** the heading reads "Complete Online Courses"
+- **AND** a descriptive subtitle paragraph is shown
+- **AND** two CTA buttons are visible: "learn more" and "see all courses"
+- **AND** both buttons have an orange background with arrow icons
 
 #### Scenario: Featured course shows details
-- Given the featured course section is visible
-- Then a "Featured" tag badge is displayed
-- And the price shows "$35"
-- And the course title is "Online Literature Course"
-- And an author name and avatar are shown
-- And a sales count is displayed
+
+- **GIVEN** the featured course section is visible
+- **THEN** a "Featured" tag badge is displayed
+- **AND** the price shows "$35"
+- **AND** the course title is "Online Literature Course"
+- **AND** an author name and avatar are shown
+- **AND** a sales count is displayed
 
 #### Scenario: Courses section search form
-- Given the courses section is visible
-- Then a search form with "Course" and "Level" input fields is shown
-- And an orange "search course" button is present
+
+- **GIVEN** the courses section is visible
+- **THEN** a search form with "Course" and "Level" input fields is shown
+- **AND** an orange "search course" button is present
 
 #### Scenario: Courses carousel shows cards
-- Given the courses section is visible
-- Then at least 3 course cards are displayed
-- And each card has an image, tag, price, title, description, author, and sales count
+
+- **GIVEN** the courses section is visible
+- **THEN** at least 3 course cards are displayed
+- **AND** each card has an image, tag, price, title, description, author, and sales count
 
 #### Scenario: Milestones section displays stats
-- Given the milestones section is visible
-- Then 4 stat items are shown
-- And each stat has an icon, a counter number, and a label
-- And the labels are: "Online Courses", "Students", "Teachers", "Countries"
-- And the background is a parallax image
+
+- **GIVEN** the milestones section is visible
+- **THEN** 4 stat items are shown
+- **AND** each stat has an icon, a counter number, and a label
+- **AND** the labels are: "Online Courses", "Students", "Teachers", "Countries"
+- **AND** the background is a parallax image
 
 #### Scenario: Why Choose Us accordions work
-- Given the "Why Choose Us?" section is visible
-- Then 4 accordion items are displayed
-- When the user clicks an accordion header
-- Then the accordion expands to show its content paragraph
-- And clicking the same header again collapses it
+
+- **GIVEN** the "Why Choose Us?" section is visible
+- **THEN** 4 accordion items are displayed
+- **WHEN** the user clicks an accordion header
+- **THEN** the accordion expands to show its content paragraph
+- **AND** clicking the same header again collapses it
 
 #### Scenario: Upcoming Events list
-- Given the "Upcoming Events" section is visible
-- Then at least 4 events are listed
-- And each event has a date badge (day + month) and a title with location
+
+- **GIVEN** the "Upcoming Events" section is visible
+- **THEN** at least 4 events are listed
+- **AND** each event has a date badge (day + month) and a title with location
 
 #### Scenario: Latest News posts
-- Given the "Latest News" section is visible
-- Then at least 3 news posts are shown
-- And each post has a thumbnail image, date, title, and author name
+
+- **GIVEN** the "Latest News" section is visible
+- **THEN** at least 3 news posts are shown
+- **AND** each post has a thumbnail image, date, title, and author name
 
 #### Scenario: Video section renders
-- Given the video section is visible
-- Then a video player element is present
-- And it has a poster image
+
+- **GIVEN** the video section is visible
+- **THEN** a video player element is present
+- **AND** it has a poster image
 
 #### Scenario: Join CTA section
-- Given the join section is visible
-- Then the heading reads "Join Our Platform Today"
-- And a subtitle paragraph is shown
-- And an orange "register now" button with arrow icon is centered below
+
+- **GIVEN** the join section is visible
+- **THEN** the heading reads "Join Our Platform Today"
+- **AND** a subtitle paragraph is shown
+- **AND** an orange "register now" button with arrow icon is centered below
 
 #### Scenario: Footer layout
-- Given the footer is visible
-- Then 4 columns are displayed: About, Quick Menu, Useful Links, Contact Us
-- And the About column has the logo, description text, and social icons
-- And the Contact Us column shows address, phone, and email
-- And the copyright text is present
-- And a "Component Dock" link is included (per project requirements)
+
+- **GIVEN** the footer is visible
+- **THEN** 4 columns are displayed: About, Quick Menu, Useful Links, Contact Us
+- **AND** the About column has the logo, description text, and social icons
+- **AND** the Contact Us column shows address, phone, and email
+- **AND** the copyright text is present
+- **AND** a "Component Dock" link is included (per project requirements)
 
 #### Scenario: Footer Component Dock link
-- Given the user views the footer
-- Then a link to "https://www.componentdock.com/" is present
-- And the link text references "Component Dock"
+
+- **GIVEN** the user views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text references "Component Dock"
 
 #### Scenario: Responsive layout
-- Given the user views the page on a mobile viewport (< 768px)
-- Then the hamburger menu icon is visible
-- And the nav items are hidden behind the hamburger toggle
-- And the 3-column sections stack vertically
-- And course cards stack vertically
-- And footer columns stack vertically
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **THEN** the hamburger menu icon is visible
+- **AND** the nav items are hidden behind the hamburger toggle
+- **AND** the 3-column sections stack vertically
+- **AND** course cards stack vertically
+- **AND** footer columns stack vertically
 
 ## Verification Checklist
 

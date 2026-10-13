@@ -52,109 +52,111 @@ App folder `apps/lotusflow`, package `@free-react-templates/lotusflow`.
 - **Footer:** Dark background (`#202A44`), light text, multi-column layout
   with links, newsletter form, social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Section: Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Navbar renders with logo and navigation links
-    Given the user visits the LotusFlow homepage
-    Then the navbar displays the "LotusFlow" logo text on the left
-    And the navbar contains navigation links: Home, About, Classes, Pricing, Testimonials, Contact
-    And the navbar is sticky (sticks to top on scroll)
 
-  Scenario: Navbar links scroll to sections
-    Given the user is on the LotusFlow homepage
-    When the user clicks "About" in the navbar
-    Then the page scrolls smoothly to the About section
-```
+#### Scenario: Navbar renders with logo and navigation links
+
+- **GIVEN** the user visits the LotusFlow homepage
+- **THEN** the navbar displays the "LotusFlow" logo text on the left
+- **AND** the navbar contains navigation links: Home, About, Classes, Pricing, Testimonials, Contact
+- **AND** the navbar is sticky (sticks to top on scroll)
+
+#### Scenario: Navbar links scroll to sections
+
+- **GIVEN** the user is on the LotusFlow homepage
+- **WHEN** the user clicks "About" in the navbar
+- **THEN** the page scrolls smoothly to the About section
 
 ### Section: Hero
 
-```gherkin
 Feature: Hero
-  Scenario: Hero section displays with background and CTA
-    Given the user visits the LotusFlow homepage
-    Then the hero section displays a full-width background image
-    And the hero contains the headline "Find Your Inner Peace"
-    And the hero contains a subheadline about yoga practice
-    And the hero contains a "Start Your Journey" call-to-action button
-```
+
+#### Scenario: Hero section displays with background and CTA
+
+- **GIVEN** the user visits the LotusFlow homepage
+- **THEN** the hero section displays a full-width background image
+- **AND** the hero contains the headline "Find Your Inner Peace"
+- **AND** the hero contains a subheadline about yoga practice
+- **AND** the hero contains a "Start Your Journey" call-to-action button
 
 ### Section: About
 
-```gherkin
 Feature: About
-  Scenario: About section displays studio information
-    Given the user scrolls to the About section
-    Then the section displays the heading "About Our Studio"
-    And the section contains a description of the yoga studio
-    And the section displays a studio image alongside the text
-```
+
+#### Scenario: About section displays studio information
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** the section displays the heading "About Our Studio"
+- **AND** the section contains a description of the yoga studio
+- **AND** the section displays a studio image alongside the text
 
 ### Section: Classes
 
-```gherkin
 Feature: Classes
-  Scenario: Classes section displays available yoga classes
-    Given the user scrolls to the Classes section
-    Then the section displays the heading "Our Classes"
-    And the section shows at least 3 class cards
-    And each class card displays a class name, description, and image
-```
+
+#### Scenario: Classes section displays available yoga classes
+
+- **GIVEN** the user scrolls to the Classes section
+- **THEN** the section displays the heading "Our Classes"
+- **AND** the section shows at least 3 class cards
+- **AND** each class card displays a class name, description, and image
 
 ### Section: Pricing
 
-```gherkin
 Feature: Pricing
-  Scenario: Pricing section displays plans
-    Given the user scrolls to the Pricing section
-    Then the section displays the heading "Pricing Plans"
-    And the section shows 3 pricing columns (e.g., Basic, Standard, Premium)
-    And each pricing column shows a plan name, price, feature list, and CTA button
-    And the middle column is visually highlighted
 
-  Scenario: Pricing plans show features
-    Given the user views the pricing section
-    Then each plan lists at least 4 features with checkmark icons
-```
+#### Scenario: Pricing section displays plans
+
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** the section displays the heading "Pricing Plans"
+- **AND** the section shows 3 pricing columns (e.g., Basic, Standard, Premium)
+- **AND** each pricing column shows a plan name, price, feature list, and CTA button
+- **AND** the middle column is visually highlighted
+
+#### Scenario: Pricing plans show features
+
+- **GIVEN** the user views the pricing section
+- **THEN** each plan lists at least 4 features with checkmark icons
 
 ### Section: Testimonials
 
-```gherkin
 Feature: Testimonials
-  Scenario: Testimonials section displays client quotes
-    Given the user scrolls to the Testimonials section
-    Then the section displays the heading "What Our Students Say"
-    And the section shows testimonial cards with a quote, author name, and role
-    And testimonials are displayed in a carousel/slider format
-```
+
+#### Scenario: Testimonials section displays client quotes
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the section displays the heading "What Our Students Say"
+- **AND** the section shows testimonial cards with a quote, author name, and role
+- **AND** testimonials are displayed in a carousel/slider format
 
 ### Section: Contact
 
-```gherkin
 Feature: Contact
-  Scenario: Contact section displays form and map
-    Given the user scrolls to the Contact section
-    Then the section displays the heading "Get In Touch"
-    And the section contains a contact form with fields: Name, Email, Subject, Message
-    And the section displays a Google Maps embed or placeholder
-    And the form has a "Send Message" submit button
-```
+
+#### Scenario: Contact section displays form and map
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** the section displays the heading "Get In Touch"
+- **AND** the section contains a contact form with fields: Name, Email, Subject, Message
+- **AND** the section displays a Google Maps embed or placeholder
+- **AND** the form has a "Send Message" submit button
 
 ### Section: Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer renders with links and branding
-    Given the user scrolls to the footer
-    Then the footer displays the "LotusFlow" logo
-    And the footer contains navigation links
-    And the footer contains social media icon links
-    And the footer links to https://www.componentdock.com/
-    And the footer shows a copyright notice
-```
+
+#### Scenario: Footer renders with links and branding
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer displays the "LotusFlow" logo
+- **AND** the footer contains navigation links
+- **AND** the footer contains social media icon links
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** the footer shows a copyright notice
 
 ## Verification checklist
 

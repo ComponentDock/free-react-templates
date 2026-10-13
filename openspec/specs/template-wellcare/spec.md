@@ -58,147 +58,134 @@ Extracted from `https://preview.colorlib.com/theme/medicare/css/style.css` + DOM
 12. **Testimonials** — "What our patients says" heading + Owl Carousel of patient testimonials (avatar, name, quote, 5-star rating)
 13. **Footer** — Dark background, 4 columns: Brand description, Navigation links, Our Services links, Make an Appointment form (name, email, message, submit) + copyright line
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page loads with correct structure
-```gherkin
-Given the user visits the WellCare homepage
-Then the page title contains "WellCare"
-And a navbar with logo "WellCare" is visible
-And a hero section with image slider is displayed
-And 4 intro feature cards are shown below the hero
-```
+### Feature: WellCare template behaviour
 
-### Scenario: Navbar displays brand and navigation
-```gherkin
-Given the navbar is visible
-Then the logo shows "Well" in blue and "Care" in green with a stethoscope icon
-And navigation links include Home, Doctors, Services, Departments, Blog, Contact
-And a green pill "Make an Appointment" CTA button is visible
-And phone numbers "111-222-333" and "99-222-333" are displayed
-And the address "88 Route West 21th Street, Suite 721 New York NY 10016" is shown
-```
+#### Scenario: Page loads with correct structure
 
-### Scenario: Hero slider displays slides
-```gherkin
-Given the hero section is visible
-Then a doctor's name "Dr. Beatrice Prior" is displayed prominently
-And a subtitle reads "Dr. Prior's Plastic Surgery Clinic Welcomes You!"
-And a description text is shown
-And a green "Make an Appointment" pill button is present
-And slide navigation dots are visible at the bottom
-```
+- **GIVEN** the user visits the WellCare homepage
+- **THEN** the page title contains "WellCare"
+- **AND** a navbar with logo "WellCare" is visible
+- **AND** a hero section with image slider is displayed
+- **AND** 4 intro feature cards are shown below the hero
 
-### Scenario: Intro feature cards show services
-```gherkin
-Given the intro cards section is visible
-Then 4 cards are displayed in a row
-And each card has an icon, title, description text, and "Read more" link
-And the cards show: Medical Counseling, Qualified Doctors, Rehabilitation Center, Emergency Services
-```
+#### Scenario: Navbar displays brand and navigation
 
-### Scenario: About section has accordion
-```gherkin
-Given the about section is visible
-Then an image is displayed on the left
-And a heading "About WellCare" is shown
-And 3 accordion panels exist: "Why choose us?", "What we do?", "Offer Services"
-And clicking a panel header expands or collapses its content
-And the first panel is expanded by default
-```
+- **GIVEN** the navbar is visible
+- **THEN** the logo shows "Well" in blue and "Care" in green with a stethoscope icon
+- **AND** navigation links include Home, Doctors, Services, Departments, Blog, Contact
+- **AND** a green pill "Make an Appointment" CTA button is visible
+- **AND** phone numbers "111-222-333" and "99-222-333" are displayed
+- **AND** the address "88 Route West 21th Street, Suite 721 New York NY 10016" is shown
 
-### Scenario: Appointment CTA section
-```gherkin
-Given the appointment CTA section is visible
-Then a heading "Make an appointment" is displayed
-And a green outlined pill button "Book an Appointment" with a calendar icon is shown
-```
+#### Scenario: Hero slider displays slides
 
-### Scenario: Services grid displays 6 items
-```gherkin
-Given the services section is visible
-Then a heading "Our Services" is shown
-And 6 service items are displayed in a 2x3 grid
-And each item has an icon, title, and description
-And the services are: Qualified Doctors, Medical Counseling, Emergency Services, Blood Bank, Operation Theater, Free Medicine
-```
+- **GIVEN** the hero section is visible
+- **THEN** a doctor's name "Dr. Beatrice Prior" is displayed prominently
+- **AND** a subtitle reads "Dr. Prior's Plastic Surgery Clinic Welcomes You!"
+- **AND** a description text is shown
+- **AND** a green "Make an Appointment" pill button is present
+- **AND** slide navigation dots are visible at the bottom
 
-### Scenario: Choose Us split section
-```gherkin
-Given the Choose Us section is visible
-Then a parallax background image is shown on the left half
-And a heading "What Makes Us Best?" is displayed on the right
-And 4 feature items are shown in a 2x2 grid
-And the features are: Qualified Doctors, Free Consultation, Online Enrollment, Modern Facilities
-```
+#### Scenario: Intro feature cards show services
 
-### Scenario: Doctors section
-```gherkin
-Given the doctors section is visible
-Then a heading "Well Experienced Doctors" is shown
-And 4 doctor cards are displayed in a row
-And each card has a photo, name, specialty, and social media icons (Facebook, Twitter, LinkedIn, Instagram)
-And the doctors are: Dr. Beatrice Prior (Dental Hygienist), Dr. Edward Dughlas (Orthopedic Surgeon), Dr. Peter Parker (Health Care), Dr. Liza Thomas (Patient Services Manager)
-```
+- **GIVEN** the intro cards section is visible
+- **THEN** 4 cards are displayed in a row
+- **AND** each card has an icon, title, description text, and "Read more" link
+- **AND** the cards show: Medical Counseling, Qualified Doctors, Rehabilitation Center, Emergency Services
 
-### Scenario: Counter section with animated stats
-```gherkin
-Given the counter section is visible
-Then 4 statistics are displayed in a row
-And each stat has an icon, a number, and a label
-And the stats are: Satisfied Customer (3297), Hospitals (378), Qualified Doctor (400), Departments (30)
-And the numbers animate from 0 to their target value on scroll
-```
+#### Scenario: About section has accordion
 
-### Scenario: Blog section shows 3 posts
-```gherkin
-Given the blog section is visible
-Then a heading "Recent blog" is shown
-And 3 blog cards are displayed in a row
-And each card has a background image with date overlay, title, excerpt, and "Read more" link
-```
+- **GIVEN** the about section is visible
+- **THEN** an image is displayed on the left
+- **AND** a heading "About WellCare" is shown
+- **AND** 3 accordion panels exist: "Why choose us?", "What we do?", "Offer Services"
+- **AND** clicking a panel header expands or collapses its content
+- **AND** the first panel is expanded by default
 
-### Scenario: Register CTA with countdown
-```gherkin
-Given the register CTA section is visible
-Then a heading "We offer Free Consultation" is shown
-And a subheading "By Dr. Beatrice Prior" is displayed
-And a countdown timer with days, hours, minutes, seconds is present
-And text "Limited offer, Hurry Up!" is shown
-And a green "Book an Appointment" button with calendar icon is present
-```
+#### Scenario: Appointment CTA section
 
-### Scenario: Testimonials carousel
-```gherkin
-Given the testimonials section is visible
-Then a heading "What our patients says" is shown
-And a carousel of testimonial items is displayed
-And each testimonial has a circular avatar image, name, quoted text, and 5-star rating
-And at least 3 testimonials are present
-```
+- **GIVEN** the appointment CTA section is visible
+- **THEN** a heading "Make an appointment" is displayed
+- **AND** a green outlined pill button "Book an Appointment" with a calendar icon is shown
 
-### Scenario: Footer with contact form
-```gherkin
-Given the footer is visible
-Then 4 columns are displayed
-And column 1 has the brand description
-And column 2 has navigation links: Department, Blog, Contact, Terms, Shop
-And column 3 has service links: Heart Surgery, Surgical Treatment, General Treatment, Medical Treatment, Help Desk
-And column 4 has a contact form with Name, Email, Message fields and a "Send Message" button
-And a copyright line is shown at the bottom
-And a link to "Component Dock" (https://www.componentdock.com/) replaces the Colorlib attribution
-```
+#### Scenario: Services grid displays 6 items
 
-### Scenario: Responsive layout
-```gherkin
-Given the user views the page on a mobile viewport (< 768px)
-Then the navbar collapses to a hamburger menu
-And the intro cards stack to 2-column layout
-And the services grid stacks to single column
-And the doctor cards stack to 2-column layout
-And the counter items stack to 2-column layout
-And the footer columns stack vertically
-```
+- **GIVEN** the services section is visible
+- **THEN** a heading "Our Services" is shown
+- **AND** 6 service items are displayed in a 2x3 grid
+- **AND** each item has an icon, title, and description
+- **AND** the services are: Qualified Doctors, Medical Counseling, Emergency Services, Blood Bank, Operation Theater, Free Medicine
+
+#### Scenario: Choose Us split section
+
+- **GIVEN** the Choose Us section is visible
+- **THEN** a parallax background image is shown on the left half
+- **AND** a heading "What Makes Us Best?" is displayed on the right
+- **AND** 4 feature items are shown in a 2x2 grid
+- **AND** the features are: Qualified Doctors, Free Consultation, Online Enrollment, Modern Facilities
+
+#### Scenario: Doctors section
+
+- **GIVEN** the doctors section is visible
+- **THEN** a heading "Well Experienced Doctors" is shown
+- **AND** 4 doctor cards are displayed in a row
+- **AND** each card has a photo, name, specialty, and social media icons (Facebook, Twitter, LinkedIn, Instagram)
+- **AND** the doctors are: Dr. Beatrice Prior (Dental Hygienist), Dr. Edward Dughlas (Orthopedic Surgeon), Dr. Peter Parker (Health Care), Dr. Liza Thomas (Patient Services Manager)
+
+#### Scenario: Counter section with animated stats
+
+- **GIVEN** the counter section is visible
+- **THEN** 4 statistics are displayed in a row
+- **AND** each stat has an icon, a number, and a label
+- **AND** the stats are: Satisfied Customer (3297), Hospitals (378), Qualified Doctor (400), Departments (30)
+- **AND** the numbers animate from 0 to their target value on scroll
+
+#### Scenario: Blog section shows 3 posts
+
+- **GIVEN** the blog section is visible
+- **THEN** a heading "Recent blog" is shown
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card has a background image with date overlay, title, excerpt, and "Read more" link
+
+#### Scenario: Register CTA with countdown
+
+- **GIVEN** the register CTA section is visible
+- **THEN** a heading "We offer Free Consultation" is shown
+- **AND** a subheading "By Dr. Beatrice Prior" is displayed
+- **AND** a countdown timer with days, hours, minutes, seconds is present
+- **AND** text "Limited offer, Hurry Up!" is shown
+- **AND** a green "Book an Appointment" button with calendar icon is present
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a heading "What our patients says" is shown
+- **AND** a carousel of testimonial items is displayed
+- **AND** each testimonial has a circular avatar image, name, quoted text, and 5-star rating
+- **AND** at least 3 testimonials are present
+
+#### Scenario: Footer with contact form
+
+- **GIVEN** the footer is visible
+- **THEN** 4 columns are displayed
+- **AND** column 1 has the brand description
+- **AND** column 2 has navigation links: Department, Blog, Contact, Terms, Shop
+- **AND** column 3 has service links: Heart Surgery, Surgical Treatment, General Treatment, Medical Treatment, Help Desk
+- **AND** column 4 has a contact form with Name, Email, Message fields and a "Send Message" button
+- **AND** a copyright line is shown at the bottom
+- **AND** a link to "Component Dock" (https://www.componentdock.com/) replaces the Colorlib attribution
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the intro cards stack to 2-column layout
+- **AND** the services grid stacks to single column
+- **AND** the doctor cards stack to 2-column layout
+- **AND** the counter items stack to 2-column layout
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

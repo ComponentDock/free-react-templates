@@ -14,7 +14,11 @@ Recreation of ColorLib **Unioncorp** (`https://colorlib.com/wp/template/unioncor
 - **Button Shapes**: Rounded corners (`rounded-lg` / `rounded-md`), solid blue fill with white text, smooth hover states.
 - **Aesthetic**: Professional corporate finance & consultation platform, featuring hero carousel/banner, comprehensive services grid, stats counter, client testimonials, leadership team, and blog showcase.
 
-## Section Structure & Requirements
+## Requirements
+
+### Feature: Unioncorp template behaviour
+
+#### Scenario: Unioncorp
 
 1. **Navbar**: Top bar with contact info (phone, email, social links) and main navigation menu (Home, About, Services, Work, Pricing, Blog, Contact, Get Started CTA).
 2. **Hero Section**: Full-screen banner with background image, dark navy overlay, headline ("Build Your Financial Plan With Our Specialists"), subtext, and action buttons ("Get Started", "Learn More").

@@ -134,160 +134,163 @@ The template is a single-page layout with these sections in order:
    Features, Resources, Newsletter with email input + subscribe button),
    copyright line + social icons row.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header/Navbar
 
-```gherkin
-Scenario: Transparent navbar overlays hero
-  Given the user is at the top of the page
-  Then the navbar background should be transparent
-  And the nav links should be white text
+#### Scenario: Transparent navbar overlays hero
 
-Scenario: Navbar becomes fixed on scroll
-  Given the user scrolls down past the hero
-  Then the navbar should become fixed at the top
-  And the background should change to indigo #412fb3
-  And the navbar should have a box shadow
+- **GIVEN** the user is at the top of the page
+- **THEN** the navbar background should be transparent
+- **AND** the nav links should be white text
 
-Scenario: Navigation links include Home, Feature, Price, Pages, Contact
-  Given the navbar is visible
-  Then there should be 5 navigation links
-  And "Home" should be active by default
-  And "Pages" should be a dropdown with Blog and Blog Details sub-items
+#### Scenario: Navbar becomes fixed on scroll
 
-Scenario: Sign up button appears in the navbar right area
-  Given the navbar is visible
-  Then a "Sign up" button should be visible on the right side
-```
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar should become fixed at the top
+- **AND** the background should change to indigo #412fb3
+- **AND** the navbar should have a box shadow
+
+#### Scenario: Navigation links include Home, Feature, Price, Pages, Contact
+
+- **GIVEN** the navbar is visible
+- **THEN** there should be 5 navigation links
+- **AND** "Home" should be active by default
+- **AND** "Pages" should be a dropdown with Blog and Blog Details sub-items
+
+#### Scenario: Sign up button appears in the navbar right area
+
+- **GIVEN** the navbar is visible
+- **THEN** a "Sign up" button should be visible on the right side
 
 ### Feature: Hero Banner
 
-```gherkin
-Scenario: Hero displays split layout with headline and CTA
-  Given the hero banner is visible
-  Then the background should be dark indigo #22195b
-  And a headline "Advanced software made simple" should be visible in white
-  And a descriptive paragraph should be visible in white
-  And a "Get Started" button should be visible
+#### Scenario: Hero displays split layout with headline and CTA
 
-Scenario: Hero image displays on the left side
-  Given the screen is desktop width (≥992px)
-  Then the hero illustration should be visible on the left column
-  And the text content should be on the right column
-```
+- **GIVEN** the hero banner is visible
+- **THEN** the background should be dark indigo #22195b
+- **AND** a headline "Advanced software made simple" should be visible in white
+- **AND** a descriptive paragraph should be visible in white
+- **AND** a "Get Started" button should be visible
+
+#### Scenario: Hero image displays on the left side
+
+- **GIVEN** the screen is desktop width (≥992px)
+- **THEN** the hero illustration should be visible on the left column
+- **AND** the text content should be on the right column
 
 ### Feature: Awesome Soft Feature Section
 
-```gherkin
-Scenario: Three feature cards are displayed
-  Given the feature section is in view
-  Then there should be 3 feature cards in a row
-  And each card should have an icon, title, and subtitle
-  And the cards should have a #faf9ff background
+#### Scenario: Three feature cards are displayed
 
-Scenario: Feature cards respond to hover
-  Given the user hovers over a feature card
-  Then the card background should change to white
-  And a subtle purple shadow should appear
-```
+- **GIVEN** the feature section is in view
+- **THEN** there should be 3 feature cards in a row
+- **AND** each card should have an icon, title, and subtitle
+- **AND** the cards should have a #faf9ff background
+
+#### Scenario: Feature cards respond to hover
+
+- **GIVEN** the user hovers over a feature card
+- **THEN** the card background should change to white
+- **AND** a subtle purple shadow should appear
 
 ### Feature: About Section
 
-```gherkin
-Scenario: About section shows content and image side by side
-  Given the about section is in view
-  Then the background should be #faf9ff (magnolia)
-  And a heading "Leading the Digital Entertainment Revolution" should be visible
-  And a paragraph and "Know More" button should be on the left
-  And an illustration image should be on the right
-```
+#### Scenario: About section shows content and image side by side
+
+- **GIVEN** the about section is in view
+- **THEN** the background should be #faf9ff (magnolia)
+- **AND** a heading "Leading the Digital Entertainment Revolution" should be visible
+- **AND** a paragraph and "Know More" button should be on the left
+- **AND** an illustration image should be on the right
 
 ### Feature: Features We Offer Section
 
-```gherkin
-Scenario: Four offer cards in a 2x2 grid
-  Given the offer section is in view
-  Then there should be 4 offer cards
-  And they should be arranged in a 2-column by 2-row grid
-  And each card should have an icon, title, and description
-  And the cards should have a #faf9ff background with no border radius
+#### Scenario: Four offer cards in a 2x2 grid
 
-Scenario: Offer cards respond to hover
-  Given the user hovers over an offer card
-  Then the card should gain a purple-tinted shadow
-```
+- **GIVEN** the offer section is in view
+- **THEN** there should be 4 offer cards
+- **AND** they should be arranged in a 2-column by 2-row grid
+- **AND** each card should have an icon, title, and description
+- **AND** the cards should have a #faf9ff background with no border radius
+
+#### Scenario: Offer cards respond to hover
+
+- **GIVEN** the user hovers over an offer card
+- **THEN** the card should gain a purple-tinted shadow
 
 ### Feature: Pricing Section
 
-```gherkin
-Scenario: Three pricing tiers displayed
-  Given the pricing section is in view
-  Then there should be 3 pricing cards
-  And each card should show a tier name, description, and price
-  And each card should have a feature list with check and close icons
-  And each card should have a "Buy Now" button
+#### Scenario: Three pricing tiers displayed
 
-Scenario: Pricing cards have straight edges
-  Given a pricing card is rendered
-  Then the card border radius should be approximately 3px (nearly square)
-  And the background should be #faf9ff
+- **GIVEN** the pricing section is in view
+- **THEN** there should be 3 pricing cards
+- **AND** each card should show a tier name, description, and price
+- **AND** each card should have a feature list with check and close icons
+- **AND** each card should have a "Buy Now" button
 
-Scenario: Hovering a pricing card fills the CTA button
-  Given the user hovers over a pricing card
-  Then the card should gain a purple shadow
-  And the "Buy Now" button should change to solid #21146a with white text
-```
+#### Scenario: Pricing cards have straight edges
+
+- **GIVEN** a pricing card is rendered
+- **THEN** the card border radius should be approximately 3px (nearly square)
+- **AND** the background should be #faf9ff
+
+#### Scenario: Hovering a pricing card fills the CTA button
+
+- **GIVEN** the user hovers over a pricing card
+- **THEN** the card should gain a purple shadow
+- **AND** the "Buy Now" button should change to solid #21146a with white text
 
 ### Feature: Testimonials Section
 
-```gherkin
-Scenario: Testimonials displayed as carousel items
-  Given the testimonials section is in view
-  Then the background should be #faf9ff
-  And testimonial items should show a circular avatar, name, role, and quote
-  And the avatar should be 120x120px and overlap the card from above
+#### Scenario: Testimonials displayed as carousel items
 
-Scenario: Testimonials are centered with italic quote text
-  Given a testimonial item is rendered
-  Then the content should be centered
-  And the quote text should be italicized
-```
+- **GIVEN** the testimonials section is in view
+- **THEN** the background should be #faf9ff
+- **AND** testimonial items should show a circular avatar, name, role, and quote
+- **AND** the avatar should be 120x120px and overlap the card from above
+
+#### Scenario: Testimonials are centered with italic quote text
+
+- **GIVEN** a testimonial item is rendered
+- **THEN** the content should be centered
+- **AND** the quote text should be italicized
 
 ### Feature: Client Logos Section
 
-```gherkin
-Scenario: Client logos are displayed in grayscale
-  Given the client logos section is in view
-  Then 5 client logo images should be displayed
-  And they should be rendered at 20% opacity with grayscale filter
+#### Scenario: Client logos are displayed in grayscale
 
-Scenario: Client logos reveal on hover
-  Given the user hovers over a client logo
-  Then the logo should transition to full opacity
-  And the grayscale filter should be removed
-```
+- **GIVEN** the client logos section is in view
+- **THEN** 5 client logo images should be displayed
+- **AND** they should be rendered at 20% opacity with grayscale filter
+
+#### Scenario: Client logos reveal on hover
+
+- **GIVEN** the user hovers over a client logo
+- **THEN** the logo should transition to full opacity
+- **AND** the grayscale filter should be removed
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has five content columns
-  Given the footer is visible
-  Then the background should be #0e1424 (dark navy)
-  And there should be columns for Top Products, Quick Links, Features, Resources, and Newsletter
-  And each non-Newsletter column should have 4 link items
+#### Scenario: Footer has five content columns
 
-Scenario: Newsletter column has email input and subscribe button
-  Given the Newsletter column is visible
-  Then an email input field should be visible
-  And a "subscribe" button should be next to the input
+- **GIVEN** the footer is visible
+- **THEN** the background should be #0e1424 (dark navy)
+- **AND** there should be columns for Top Products, Quick Links, Features, Resources, and Newsletter
+- **AND** each non-Newsletter column should have 4 link items
 
-Scenario: Footer bottom has copyright and social icons
-  Given the footer bottom is visible
-  Then a copyright line should be visible
-  And social icon links (Facebook, Twitter, Dribbble, Behance) should be visible
-  And the footer MUST link https://www.componentdock.com/
-```
+#### Scenario: Newsletter column has email input and subscribe button
+
+- **GIVEN** the Newsletter column is visible
+- **THEN** an email input field should be visible
+- **AND** a "subscribe" button should be next to the input
+
+#### Scenario: Footer bottom has copyright and social icons
+
+- **GIVEN** the footer bottom is visible
+- **THEN** a copyright line should be visible
+- **AND** social icon links (Facebook, Twitter, Dribbble, Behance) should be visible
+- **AND** the footer MUST link https://www.componentdock.com/
 
 ## Verification Checklist
 

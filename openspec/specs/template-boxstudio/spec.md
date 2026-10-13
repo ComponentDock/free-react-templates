@@ -117,65 +117,75 @@ Montserrat headings, Roboto body, warm photography throughout.
 11. **Footer** — Dark background. Copyright: "© 2018 All rights reserved. |
     Boxus Template by [author]". Links to social icons.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Boxstudio creative agency template
 
-Scenario: Navbar displays and sticks on scroll
-Given the user loads the page
-When the user scrolls down
-Then the navbar remains fixed at the top of the viewport
-And all nav links (Home, Services, Portfolio, About, News, Video, Skills, Contact) are visible
+#### Scenario: Navbar displays and sticks on scroll
 
-Scenario: Hero section shows headline and CTA
-Given the user is on the homepage
-Then the hero displays the headline "We Craft Awesome Web And Graphic Design Solutions"
-And a "Contact" CTA button is visible
-And the background image is visible with a dark overlay
+- **GIVEN** the user loads the page
+- **WHEN** the user scrolls down
+- **THEN** the navbar remains fixed at the top of the viewport
+- **AND** all nav links (Home, Services, Portfolio, About, News, Video, Skills, Contact) are visible
 
-Scenario: Services section shows all 8 service cards
-Given the user scrolls to the Services section
-Then 8 service cards are displayed: Branding, Mobile Apps, Web, Graphic, Services, PSD, HTML, PHP
-And each card has a title and description text
+#### Scenario: Hero section shows headline and CTA
 
-Scenario: Portfolio grid loads with items
-Given the user scrolls to the Portfolio section
-Then portfolio items are displayed in a grid layout
-And each item shows a thumbnail image, category label, and title
-And a "LOAD MORE" button is visible
+- **GIVEN** the user is on the homepage
+- **THEN** the hero displays the headline "We Craft Awesome Web And Graphic Design Solutions"
+- **AND** a "Contact" CTA button is visible
+- **AND** the background image is visible with a dark overlay
 
-Scenario: About timeline shows career history
-Given the user scrolls to the About section
-Then a vertical timeline is displayed with year markers from 2001 to 2016
-And each timeline entry has a year range and company/studio name
+#### Scenario: Services section shows all 8 service cards
 
-Scenario: Team section shows member cards
-Given the user scrolls to the Team section
-Then 3 team member cards are displayed
-And each card has a circular photo, name, and role
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 8 service cards are displayed: Branding, Mobile Apps, Web, Graphic, Services, PSD, HTML, PHP
+- **AND** each card has a title and description text
 
-Scenario: Skills progress bars animate
-Given the user scrolls to the Skills section
-Then 4 progress bars are visible: HTML, CSS, PSD, DESIGN
-And HTML shows 81%, CSS shows 93%, PSD shows 72%, DESIGN shows 99%
+#### Scenario: Portfolio grid loads with items
 
-Scenario: Contact form renders with all fields
-Given the user scrolls to the Contact section
-Then the form displays Name, Email, Subject, and Message fields
-And a Submit button is visible
+- **GIVEN** the user scrolls to the Portfolio section
+- **THEN** portfolio items are displayed in a grid layout
+- **AND** each item shows a thumbnail image, category label, and title
+- **AND** a "LOAD MORE" button is visible
 
-Scenario: Footer displays copyright
-Given the user scrolls to the bottom
-Then the footer shows a copyright notice
-And a link to Component Dock is present
+#### Scenario: About timeline shows career history
 
-Scenario: Mobile responsive layout
-Given the user views the page on a 375px wide viewport
-Then the navbar collapses to a hamburger menu
-And sections stack vertically in single column
-And service cards stack vertically
-And team cards stack vertically
-And the contact form is full-width
+- **GIVEN** the user scrolls to the About section
+- **THEN** a vertical timeline is displayed with year markers from 2001 to 2016
+- **AND** each timeline entry has a year range and company/studio name
+
+#### Scenario: Team section shows member cards
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** 3 team member cards are displayed
+- **AND** each card has a circular photo, name, and role
+
+#### Scenario: Skills progress bars animate
+
+- **GIVEN** the user scrolls to the Skills section
+- **THEN** 4 progress bars are visible: HTML, CSS, PSD, DESIGN
+- **AND** HTML shows 81%, CSS shows 93%, PSD shows 72%, DESIGN shows 99%
+
+#### Scenario: Contact form renders with all fields
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** the form displays Name, Email, Subject, and Message fields
+- **AND** a Submit button is visible
+
+#### Scenario: Footer displays copyright
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** the footer shows a copyright notice
+- **AND** a link to Component Dock is present
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically in single column
+- **AND** service cards stack vertically
+- **AND** team cards stack vertically
+- **AND** the contact form is full-width
 
 ## Verification checklist
 

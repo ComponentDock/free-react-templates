@@ -11,28 +11,31 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - **Layout / Containers**: Centered vertical stack (`padding: 7rem 0`), single-column card/form layout (`max-w-md`), clean input styling with soft border and clear focus states.
 - **Footer**: Includes required Component Dock attribution link (`https://www.componentdock.com/`).
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Centered Date Picker Interface
 
-- **Scenario**: User opens the app
-  - **Given** the app is loaded in the browser
-  - **When** the page renders
-  - **Then** a centered header ("Calvoy - Date Picker") and a date input field with placeholder "Pick A Date" are displayed.
+#### Scenario: User opens the app
+
+- **GIVEN** the app is loaded in the browser
+- **WHEN** the page renders
+- **THEN** a centered header ("Calvoy - Date Picker") and a date input field with placeholder "Pick A Date" are displayed
 
 ### Requirement 2: Interactive Date Selection Modal / Dropdown
 
-- **Scenario**: User clicks the date input field
-  - **Given** the user is viewing the date input form
-  - **When** they click or focus on the "Pick A Date" input
-  - **Then** an interactive calendar picker popup/dropdown appears allowing month navigation and date selection.
+#### Scenario: User clicks the date input field
+
+- **GIVEN** the user is viewing the date input form
+- **WHEN** they click or focus on the "Pick A Date" input
+- **THEN** an interactive calendar picker popup/dropdown appears allowing month navigation and date selection
 
 ### Requirement 3: Component Dock Footer Attribution
 
-- **Scenario**: User scrolls to the bottom of the page
-  - **Given** the application view
-  - **When** the footer is rendered
-  - **Then** it displays a copyright notice and a link to `https://www.componentdock.com/`.
+#### Scenario: User scrolls to the bottom of the page
+
+- **GIVEN** the application view
+- **WHEN** the footer is rendered
+- **THEN** it displays a copyright notice and a link to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

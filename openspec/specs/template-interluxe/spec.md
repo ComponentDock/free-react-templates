@@ -74,92 +74,74 @@ The template is a **single-page interior design website** with these sections:
 
 7. **Footer** (Component Dock attribution required)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Sidebar navigation renders
+### Feature: Interluxe template behaviour
 
-```gherkin
-Given I am on the Interluxe page
-Then I should see a sidebar with the logo "Interluxe"
-And I should see navigation links: Home, Project, About, Services, Blog, Contact
-And the sidebar should have a dark background (#2C2C2C)
-```
+#### Scenario: Sidebar navigation renders
 
-### Scenario: Hero slider displays
+- **GIVEN** I am on the Interluxe page
+- **THEN** I should see a sidebar with the logo "Interluxe"
+- **AND** I should see navigation links: Home, Project, About, Services, Blog, Contact
+- **AND** the sidebar should have a dark background (#2C2C2C)
 
-```gherkin
-Given I am on the Interluxe page
-Then I should see a full-width hero slider with background images
-And each slide should have a heading and a "View Project" button
-And the slider should auto-advance between slides
-```
+#### Scenario: Hero slider displays
 
-### Scenario: About section renders
+- **GIVEN** I am on the Interluxe page
+- **THEN** I should see a full-width hero slider with background images
+- **AND** each slide should have a heading and a "View Project" button
+- **AND** the slider should auto-advance between slides
 
-```gherkin
-Given I am on the Interluxe page
-Then I should see a "Welcome" meta label
-And I should see a "Who we are" heading
-And I should see 3 feature boxes: "We are passionate", "Honest Dependable", "Always Improving"
-```
+#### Scenario: About section renders
 
-### Scenario: Services section renders
+- **GIVEN** I am on the Interluxe page
+- **THEN** I should see a "Welcome" meta label
+- **AND** I should see a "Who we are" heading
+- **AND** I should see 3 feature boxes: "We are passionate", "Honest Dependable", "Always Improving"
 
-```gherkin
-Given I am on the Interluxe page
-Then I should see a "What I do?" meta label
-And I should see a "Here are some of my expertise" heading
-And I should see service items with icons and descriptions
-```
+#### Scenario: Services section renders
 
-### Scenario: Blog section renders
+- **GIVEN** I am on the Interluxe page
+- **THEN** I should see a "What I do?" meta label
+- **AND** I should see a "Here are some of my expertise" heading
+- **AND** I should see service items with icons and descriptions
 
-```gherkin
-Given I am on the Interluxe page
-Then I should see a "Blog" meta label
-And I should see blog cards with images, dates, and titles
-```
+#### Scenario: Blog section renders
 
-### Scenario: Contact section renders
+- **GIVEN** I am on the Interluxe page
+- **THEN** I should see a "Blog" meta label
+- **AND** I should see blog cards with images, dates, and titles
 
-```gherkin
-Given I am on the Interluxe page
-Then I should see a "Contact" meta label
-And I should see a contact form with name, email, subject, and message fields
-```
+#### Scenario: Contact section renders
 
-### Scenario: Design tokens match
+- **GIVEN** I am on the Interluxe page
+- **THEN** I should see a "Contact" meta label
+- **AND** I should see a contact form with name, email, subject, and message fields
 
-```gherkin
-Given I am on the Interluxe page
-Then the primary accent color should be #FFC300
-And the font family should include "Quicksand"
-And the sidebar background should be #2C2C2C
-```
+#### Scenario: Design tokens match
 
-### Scenario: Mobile responsive
+- **GIVEN** I am on the Interluxe page
+- **THEN** the primary accent color should be #FFC300
+- **AND** the font family should include "Quicksand"
+- **AND** the sidebar background should be #2C2C2C
 
-```gherkin
-Given I am on the Interluxe page on a mobile device
-Then the sidebar should collapse to a toggle button
-And the content should be full-width
-```
+#### Scenario: Mobile responsive
 
-### Scenario: Accessibility
+- **GIVEN** I am on the Interluxe page on a mobile device
+- **THEN** the sidebar should collapse to a toggle button
+- **AND** the content should be full-width
 
-```gherkin
-Given I am on the Interluxe page
-Then all sections should have proper headings
-And the contact form should have associated labels
-And navigation should be keyboard accessible
-```
+#### Scenario: Accessibility
 
-### Scenario: Footer links to Component Dock
+- **GIVEN** I am on the Interluxe page
+- **THEN** all sections should have proper headings
+- **AND** the contact form should have associated labels
+- **AND** navigation should be keyboard accessible
 
-```gherkin
-Given I am on the Interluxe page
-Then the footer should contain a link to https://www.componentdock.com/
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I am on the Interluxe page
+- **THEN** the footer should contain a link to https://www.componentdock.com/
 
 ## Verification checklist
 

@@ -52,89 +52,80 @@ Extracted from the live demo CSS (`css/style.css`) at
 - Submit button: `#2c6ed5` background, white text, `5px` radius, `50px` line-height, `0 30px` horizontal padding, bold 15px, `text-transform: capitalize`.
 - Responsive: at `<768px`, form rows stack vertically, padding reduces to `30px`.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with dark background and centered card
-```
-Given the user opens the Regcove page
-Then the page background should be dark (#1a1a1a)
-And a centered white card should be visible with max-width 900px
-```
+### Feature: Regcove template behaviour
 
-### Scenario: Heading displays above the card
-```
-Given the user views the page
-Then a heading "Apply for job" should appear above the card
-And the heading should be white, bold, and left-aligned
-```
+#### Scenario: Page renders with dark background and centered card
 
-### Scenario: Full Name field
-```
-Given the user views the form
-Then a "Full name" label should appear on the left
-And a text input should appear on the right
-And the input should accept plain text
-```
+- **GIVEN** the user opens the Regcove page
+- **THEN** the page background should be dark (#1a1a1a)
+- **AND** a centered white card should be visible with max-width 900px
 
-### Scenario: Email Address field
-```
-Given the user views the form
-Then an "Email address" label should appear on the left
-And an email input should appear on the right
-And the placeholder should show "example@email.com"
-```
+#### Scenario: Heading displays above the card
 
-### Scenario: Message field
-```
-Given the user views the form
-Then a "Message" label should appear on the left
-And a textarea should appear on the right
-And the placeholder should show "Message sent to the employer"
-And the textarea should have a minimum height of 120px
-```
+- **GIVEN** the user views the page
+- **THEN** a heading "Apply for job" should appear above the card
+- **AND** the heading should be white, bold, and left-aligned
 
-### Scenario: Upload CV field
-```
-Given the user views the form
-Then an "Upload CV" label should appear on the left
-And a styled file upload button labeled "Choose file" should appear
-And helper text "Upload your CV/Resume or any other relevant file. Max file size 50 MB" should be shown below the button
-```
+#### Scenario: Full Name field
 
-### Scenario: Submit button
-```
-Given the user views the form footer
-Then a "Send Application" button should be visible
-And the button should have a blue (#2c6ed5) background
-And the button should have rounded corners (5px radius)
-```
+- **GIVEN** the user views the form
+- **THEN** a "Full name" label should appear on the left
+- **AND** a text input should appear on the right
+- **AND** the input should accept plain text
 
-### Scenario: Form row separator lines
-```
-Given the user views the form
-Then each form row should be separated by a bottom border (#e5e5e5)
-```
+#### Scenario: Email Address field
 
-### Scenario: Input focus effect
-```
-Given the user clicks on an input field
-Then the input should show a subtle box shadow
-And the input should lift slightly (translateY -3px)
-```
+- **GIVEN** the user views the form
+- **THEN** an "Email address" label should appear on the left
+- **AND** an email input should appear on the right
+- **AND** the placeholder should show "example@email.com"
 
-### Scenario: Responsive layout
-```
-Given the user views the page on a mobile viewport (< 768px)
-Then form rows should stack vertically
-And padding should reduce to 30px
-```
+#### Scenario: Message field
 
-### Scenario: Footer links to Component Dock
-```
-Given the user views the page
-Then the footer should contain a link to https://www.componentdock.com/
-And the link text should mention "Component Dock"
-```
+- **GIVEN** the user views the form
+- **THEN** a "Message" label should appear on the left
+- **AND** a textarea should appear on the right
+- **AND** the placeholder should show "Message sent to the employer"
+- **AND** the textarea should have a minimum height of 120px
+
+#### Scenario: Upload CV field
+
+- **GIVEN** the user views the form
+- **THEN** an "Upload CV" label should appear on the left
+- **AND** a styled file upload button labeled "Choose file" should appear
+- **AND** helper text "Upload your CV/Resume or any other relevant file. Max file size 50 MB" should be shown below the button
+
+#### Scenario: Submit button
+
+- **GIVEN** the user views the form footer
+- **THEN** a "Send Application" button should be visible
+- **AND** the button should have a blue (#2c6ed5) background
+- **AND** the button should have rounded corners (5px radius)
+
+#### Scenario: Form row separator lines
+
+- **GIVEN** the user views the form
+- **THEN** each form row should be separated by a bottom border (#e5e5e5)
+
+#### Scenario: Input focus effect
+
+- **GIVEN** the user clicks on an input field
+- **THEN** the input should show a subtle box shadow
+- **AND** the input should lift slightly (translateY -3px)
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **THEN** form rows should stack vertically
+- **AND** padding should reduce to 30px
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user views the page
+- **THEN** the footer should contain a link to https://www.componentdock.com/
+- **AND** the link text should mention "Component Dock"
 
 ## Verification Checklist
 

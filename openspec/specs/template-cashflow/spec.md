@@ -124,77 +124,88 @@ The screenshot shows a macOS browser frame mockup containing the template:
 
     Copyright bar at bottom. Footer links to Component Dock.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Cashflow Template — Bookkeeping Consulting Agency
 
 #### Scenario: Utility bar renders contact information
-  Given the user loads the Cashflow homepage
-  Then a thin utility bar should display at the top
-  And it should show a phone number, email address, and question icon
-  And it should be hidden on viewports smaller than lg breakpoint
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** a thin utility bar should display at the top
+- **AND** it should show a phone number, email address, and question icon
+- **AND** it should be hidden on viewports smaller than lg breakpoint
 
 #### Scenario: Navbar renders with logo, links, and social icons
-  Given the user loads the Cashflow homepage
-  Then the navbar should display the Cashflow logo on the left
-  And navigation links should include Home, About, Services, Blog, Contact
-  And Services should have a dropdown with Investment Bonds, Investment Management, Financial Funds
-  And circular social icons (Facebook, Twitter, LinkedIn) should appear on the right
-  And the navbar should become sticky on scroll
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** the navbar should display the Cashflow logo on the left
+- **AND** navigation links should include Home, About, Services, Blog, Contact
+- **AND** Services should have a dropdown with Investment Bonds, Investment Management, Financial Funds
+- **AND** circular social icons (Facebook, Twitter, LinkedIn) should appear on the right
+- **AND** the navbar should become sticky on scroll
 
 #### Scenario: Hero carousel displays slides with CTA
-  Given the user loads the Cashflow homepage
-  Then a full-width hero carousel should render
-  And each slide should show a background image with dark overlay
-  And each slide should have a centered white headline, subtitle, and blue CTA button
-  And slides should auto-rotate
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** a full-width hero carousel should render
+- **AND** each slide should show a background image with dark overlay
+- **AND** each slide should have a centered white headline, subtitle, and blue CTA button
+- **AND** slides should auto-rotate
 
 #### Scenario: About Us section shows two-column layout
-  Given the user loads the Cashflow homepage
-  Then the About Us section should show an image on the left column
-  And the right column should have an "About Us" caption
-  And a heading with a blue underline decoration
-  And body text and two-column bullet list with arrow icons
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** the About Us section should show an image on the left column
+- **AND** the right column should have an "About Us" caption
+- **AND** a heading with a blue underline decoration
+- **AND** body text and two-column bullet list with arrow icons
 
 #### Scenario: Stats counters display four metrics
-  Given the user loads the Cashflow homepage
-  Then four stat counters should render in a single row
-  And each counter should show a large number and a label below
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** four stat counters should render in a single row
+- **AND** each counter should show a large number and a label below
 
 #### Scenario: Services grid shows six feature cards
-  Given the user loads the Cashflow homepage
-  Then a "What We Do" section heading should display with caption
-  And six service cards should render in a 3×2 grid
-  And each card should have a circular blue icon, title, description, and "Learn More" button
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** a "What We Do" section heading should display with caption
+- **AND** six service cards should render in a 3×2 grid
+- **AND** each card should have a circular blue icon, title, description, and "Learn More" button
 
 #### Scenario: Parallax CTA banner renders
-  Given the user loads the Cashflow homepage
-  Then a full-width parallax banner should display
-  And it should have a background image with dark overlay
-  And a centered white headline + subtitle + blue CTA button
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** a full-width parallax banner should display
+- **AND** it should have a background image with dark overlay
+- **AND** a centered white headline + subtitle + blue CTA button
 
 #### Scenario: Testimonials carousel renders
-  Given the user loads the Cashflow homepage
-  Then a testimonials section should display with dark photo background
-  And a carousel of testimonial cards should render
-  And each card should have a circular person photo, name, role, and quote
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** a testimonials section should display with dark photo background
+- **AND** a carousel of testimonial cards should render
+- **AND** each card should have a circular person photo, name, role, and quote
 
 #### Scenario: News section shows three blog cards
-  Given the user loads the Cashflow homepage
-  Then three news cards should render in a row
-  And each card should have a thumbnail image with date badge overlay
-  And a title, author byline, and excerpt paragraph
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** three news cards should render in a row
+- **AND** each card should have a thumbnail image with date badge overlay
+- **AND** a title, author byline, and excerpt paragraph
 
 #### Scenario: Newsletter subscribe form renders
-  Given the user loads the Cashflow homepage
-  Then a newsletter section should display with background photo + overlay
-  And an inline form with email input and "Send" button should render
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** a newsletter section should display with background photo + overlay
+- **AND** an inline form with email input and "Send" button should render
 
 #### Scenario: Footer renders four-column layout
-  Given the user loads the Cashflow homepage
-  Then the footer should have a dark background
-  And four columns: logo+description, Solutions, Services, Contact
-  And a copyright bar at the bottom linking Component Dock
+
+- **GIVEN** the user loads the Cashflow homepage
+- **THEN** the footer should have a dark background
+- **AND** four columns: logo+description, Solutions, Services, Contact
+- **AND** a copyright bar at the bottom linking Component Dock
 
 ## Verification checklist
 

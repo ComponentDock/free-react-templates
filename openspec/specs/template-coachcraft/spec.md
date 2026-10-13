@@ -46,122 +46,117 @@ pricing plans, contact form, and Google Maps integration.
 10. **Contact Form + Google Maps** — (inferred from ColorLib description: "integrated contact form and Google Maps") Contact section with form fields and embedded map.
 11. **Footer** — Dark background. Footer links, social media icons, copyright. "Component Dock" attribution link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Top Bar
 
-```gherkin
-Scenario: Top bar displays contact info and social links
-  Given the user loads the page
-  Then the top bar is visible with a dark background
-  And a phone number is displayed on the left side
-  And social media icons are displayed on the right side
-  And the top bar text is white
-```
+#### Scenario: Top bar displays contact info and social links
+
+- **GIVEN** the user loads the page
+- **THEN** the top bar is visible with a dark background
+- **AND** a phone number is displayed on the left side
+- **AND** social media icons are displayed on the right side
+- **AND** the top bar text is white
 
 ### Feature: Navigation
 
-```gherkin
-Scenario: Navigation displays logo and links
-  Given the user loads the page
-  Then the navigation bar is visible with a white background
-  And the logo text "coachcraft" is displayed on the left
-  And navigation links are visible: "home", "about", "services", "stories", "blog", "contact"
-  And a search icon is visible on the right
+#### Scenario: Navigation displays logo and links
 
-Scenario: Active navigation link is highlighted
-  Given the user is on the homepage
-  Then the "home" nav link has an olive green background highlight
+- **GIVEN** the user loads the page
+- **THEN** the navigation bar is visible with a white background
+- **AND** the logo text "coachcraft" is displayed on the left
+- **AND** navigation links are visible: "home", "about", "services", "stories", "blog", "contact"
+- **AND** a search icon is visible on the right
 
-Scenario: Mobile hamburger menu
-  Given the viewport is narrow (mobile)
-  Then the navigation collapses into a hamburger menu
-  When the user taps the hamburger icon
-  Then a mobile menu opens showing all navigation links
-```
+#### Scenario: Active navigation link is highlighted
+
+- **GIVEN** the user is on the homepage
+- **THEN** the "home" nav link has an olive green background highlight
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is narrow (mobile)
+- **THEN** the navigation collapses into a hamburger menu
+- **WHEN** the user taps the hamburger icon
+- **THEN** a mobile menu opens showing all navigation links
 
 ### Feature: Hero Slider
 
-```gherkin
-Scenario: Hero displays heading and CTA
-  Given the user is on the homepage
-  Then the hero section shows a background image with dark overlay
-  And the subtitle "IMPROVING THE WORLD" is displayed in olive green uppercase
-  And the heading "Restart your career to be successful" is displayed in white
-  And a "CONNECT WITH US" button is visible with white outlined style
+#### Scenario: Hero displays heading and CTA
 
-Scenario: Hero has carousel navigation
-  Given the hero slider is visible
-  Then carousel dots are displayed at the bottom
-  And clicking a dot changes the hero slide
-```
+- **GIVEN** the user is on the homepage
+- **THEN** the hero section shows a background image with dark overlay
+- **AND** the subtitle "IMPROVING THE WORLD" is displayed in olive green uppercase
+- **AND** the heading "Restart your career to be successful" is displayed in white
+- **AND** a "CONNECT WITH US" button is visible with white outlined style
+
+#### Scenario: Hero has carousel navigation
+
+- **GIVEN** the hero slider is visible
+- **THEN** carousel dots are displayed at the bottom
+- **AND** clicking a dot changes the hero slide
 
 ### Feature: Info Bar
 
-```gherkin
-Scenario: Info bar displays contact details and appointment CTA
-  Given the user scrolls past the hero
-  Then the info bar is visible
-  And a phone number section shows an icon and phone number
-  And an opening hours section shows an icon and schedule
-  And a "MAKE AN APPOINTMENT" button is visible with olive green background
-```
+#### Scenario: Info bar displays contact details and appointment CTA
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the info bar is visible
+- **AND** a phone number section shows an icon and phone number
+- **AND** an opening hours section shows an icon and schedule
+- **AND** a "MAKE AN APPOINTMENT" button is visible with olive green background
 
 ### Feature: Services Section
 
-```gherkin
-Scenario: Services section displays heading and cards
-  Given the user scrolls to the services section
-  Then the heading "We can help you in different situations" is visible
-  And the subtitle "WE OFFER SERVICES" is displayed in olive green
-  And four service cards are displayed in a row
+#### Scenario: Services section displays heading and cards
 
-Scenario: Each service card has icon, title, and description
-  Given the services section is visible
-  Then each card has a teal circular icon background
-  And each card has a title (Career & Business, Mental & Physical Care, People & Relationships, Life coaching)
-  And each card has a description paragraph
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading "We can help you in different situations" is visible
+- **AND** the subtitle "WE OFFER SERVICES" is displayed in olive green
+- **AND** four service cards are displayed in a row
+
+#### Scenario: Each service card has icon, title, and description
+
+- **GIVEN** the services section is visible
+- **THEN** each card has a teal circular icon background
+- **AND** each card has a title (Career & Business, Mental & Physical Care, People & Relationships, Life coaching)
+- **AND** each card has a description paragraph
 
 ### Feature: Statistics Section
 
-```gherkin
-Scenario: Statistics display animated counters
-  Given the user scrolls to the statistics section
-  Then counter numbers animate from zero to their target values
-  And each counter has a label underneath
-```
+#### Scenario: Statistics display animated counters
+
+- **GIVEN** the user scrolls to the statistics section
+- **THEN** counter numbers animate from zero to their target values
+- **AND** each counter has a label underneath
 
 ### Feature: Pricing Plans
 
-```gherkin
-Scenario: Pricing section displays plan cards
-  Given the user scrolls to the pricing section
-  Then pricing plan cards are displayed
-  And each card shows a plan name, price, and feature list
-  And one plan is highlighted as recommended
-```
+#### Scenario: Pricing section displays plan cards
+
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** pricing plan cards are displayed
+- **AND** each card shows a plan name, price, and feature list
+- **AND** one plan is highlighted as recommended
 
 ### Feature: Contact Form
 
-```gherkin
-Scenario: Contact section displays form and map
-  Given the user scrolls to the contact section
-  Then a contact form is visible with input fields (name, email, subject, message)
-  And a submit button is visible
-  And a Google Maps embed is visible nearby
-```
+#### Scenario: Contact section displays form and map
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a contact form is visible with input fields (name, email, subject, message)
+- **AND** a submit button is visible
+- **AND** a Google Maps embed is visible nearby
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer displays branding and links
-  Given the user scrolls to the bottom
-  Then the footer has a dark background
-  And social media icons are displayed
-  And a "Component Dock" attribution link is visible
-  And copyright information is displayed
-```
+#### Scenario: Footer displays branding and links
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** the footer has a dark background
+- **AND** social media icons are displayed
+- **AND** a "Component Dock" attribution link is visible
+- **AND** copyright information is displayed
 
 ## Verification checklist
 

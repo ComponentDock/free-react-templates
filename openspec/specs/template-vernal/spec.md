@@ -150,27 +150,30 @@ Extracted from `css/style.css` (2,990 lines) and the rendered preview.
 ### Requirement: Navigation bar
 
 The template renders a dark sticky navbar with brand text, social icons,
-and navigation links.
+- **AND** navigation links
 
 #### Scenario: Desktop navbar
-Given the viewport is wider than 768px
-When the page loads
-Then the navbar displays with dark background
-And the brand text shows "Vernal Church" (renamed from "Spring Church")
-And social icons (twitter, facebook, instagram) appear in the top right
-And 7 navigation links appear: Home, About, Ministries, Sermons, Events, Blog, Contact
+
+- **GIVEN** the viewport is wider than 768px
+- **WHEN** the page loads
+- **THEN** the navbar displays with dark background
+- **AND** the brand text shows "Vernal Church" (renamed from "Spring Church")
+- **AND** social icons (twitter, facebook, instagram) appear in the top right
+- **AND** 7 navigation links appear: Home, About, Ministries, Sermons, Events, Blog, Contact
 
 #### Scenario: Mobile navbar
-Given the viewport is 768px or narrower
-When the page loads
-Then the navbar shows a hamburger menu toggle button
-And the nav links are hidden until the toggle is activated
-And the social icons remain visible
+
+- **GIVEN** the viewport is 768px or narrower
+- **WHEN** the page loads
+- **THEN** the navbar shows a hamburger menu toggle button
+- **AND** the nav links are hidden until the toggle is activated
+- **AND** the social icons remain visible
 
 #### Scenario: Navbar scroll behavior
-When the user scrolls past the hero section
-Then the navbar gains a scrolled state with a solid background
-And the brand text becomes visible on a light background
+
+- **WHEN** the user scrolls past the hero section
+- **THEN** the navbar gains a scrolled state with a solid background
+- **AND** the brand text becomes visible on a light background
 
 ### Requirement: Hero section
 
@@ -178,59 +181,66 @@ A full-viewport parallax hero with overlay, headline, subheading, two CTA
 buttons, and a scroll indicator.
 
 #### Scenario: Hero content
-When the hero section renders
-Then a background image fills the viewport with a dark overlay
-And a centered white h1 reads "Helping Grow Your Faith"
-And a subheading reads "Submit your presence to the creator of the universe"
-And two buttons appear: "New here!" (primary tan) and "Live Stream" (white with play icon)
-And a mouse scroll indicator appears at the bottom center
+
+- **WHEN** the hero section renders
+- **THEN** a background image fills the viewport with a dark overlay
+- **AND** a centered white h1 reads "Helping Grow Your Faith"
+- **AND** a subheading reads "Submit your presence to the creator of the universe"
+- **AND** two buttons appear: "New here!" (primary tan) and "Live Stream" (white with play icon)
+- **AND** a mouse scroll indicator appears at the bottom center
 
 #### Scenario: Hero parallax
-When the user scrolls the page
-Then the hero background image moves at a slower rate (parallax effect)
+
+- **WHEN** the user scrolls the page
+- **THEN** the hero background image moves at a slower rate (parallax effect)
 
 ### Requirement: Events countdown strip
 
 A parallax strip showing the next upcoming event with a countdown timer.
 
 #### Scenario: Events strip content
-When the events strip renders
-Then a parallax background image is displayed with a dark overlay
-And a calendar icon appears with "Upcoming Events" heading
-And a sermon/speaker title is shown
-And a countdown timer displays days, hours, minutes, and seconds
-And a "Join our event" button appears (primary tan)
+
+- **WHEN** the events strip renders
+- **THEN** a parallax background image is displayed with a dark overlay
+- **AND** a calendar icon appears with "Upcoming Events" heading
+- **AND** a sermon/speaker title is shown
+- **AND** a countdown timer displays days, hours, minutes, and seconds
+- **AND** a "Join our event" button appears (primary tan)
 
 #### Scenario: Countdown updates
-Given the countdown timer is displayed
-When time passes
-Then the timer values decrease in real time (seconds decrement every second)
+
+- **GIVEN** the countdown timer is displayed
+- **WHEN** time passes
+- **THEN** the timer values decrease in real time (seconds decrement every second)
 
 ### Requirement: Daily Bible verse
 
 A centered Bible verse quotation on a light background.
 
 #### Scenario: Verse display
-When the daily verse section renders
-Then the section has a light background (`#f8f9fa`)
-And a bible icon appears above the verse
-And the verse text is quoted: John 3:16 KJV
-And the attribution shows the book, chapter, verse, and translation
+
+- **WHEN** the daily verse section renders
+- **THEN** the section has a light background (`#f8f9fa`)
+- **AND** a bible icon appears above the verse
+- **AND** the verse text is quoted: John 3:16 KJV
+- **AND** the attribution shows the book, chapter, verse, and translation
 
 ### Requirement: Church services grid
 
 A 2-column grid of 6 service items, each with a circular icon, title,
-and description.
+- **AND** description
 
 #### Scenario: Services layout
-When the services section renders
-Then 6 service items display in a 2-column grid
-And the items are: Daily Prayers, Church Community, Teaching, Helpers, Wedding, Events
-And each item has a circular icon on one side and title + description on the other
-And the left column items have icons on the right (order-lg-last)
-And the right column items have icons on the left
+
+- **WHEN** the services section renders
+- **THEN** 6 service items display in a 2-column grid
+- **AND** the items are: Daily Prayers, Church Community, Teaching, Helpers, Wedding, Events
+- **AND** each item has a circular icon on one side and title + description on the other
+- **AND** the left column items have icons on the right (order-lg-last)
+- **AND** the right column items have icons on the left
 
 #### Scenario: Service icons
+
 Each service item uses a distinct lucide icon:
 - Daily Prayers → Heart (or HandsPraying)
 - Church Community → Church
@@ -242,19 +252,21 @@ Each service item uses a distinct lucide icon:
 ### Requirement: Featured sermon
 
 A split-layout section showcasing the latest sermon with image, metadata,
-and action buttons.
+- **AND** action buttons
 
 #### Scenario: Sermon display
-When the sermon section renders
-Then a heading reads "Sermon for Today"
-And a subheading reads "Experience God's Presence"
-And a left panel shows a sermon image
-And a right panel shows the sermon title, speaker name, categories, and date
-And two action buttons appear: "Watch Sermons" (play icon) and "Download Sermons" (download icon)
+
+- **WHEN** the sermon section renders
+- **THEN** a heading reads "Sermon for Today"
+- **AND** a subheading reads "Experience God's Presence"
+- **AND** a left panel shows a sermon image
+- **AND** a right panel shows the sermon title, speaker name, categories, and date
+- **AND** two action buttons appear: "Watch Sermons" (play icon) and "Download Sermons" (download icon)
 
 #### Scenario: Watch button opens video
-When the user clicks "Watch Sermons"
-Then a modal or overlay opens with the sermon video
+
+- **WHEN** the user clicks "Watch Sermons"
+- **THEN** a modal or overlay opens with the sermon video
 
 ### Requirement: About / Counter section
 
@@ -262,12 +274,14 @@ A 2-column section with stacked image panels on the left and church
 stats on the right.
 
 #### Scenario: About layout
-When the counter section renders
-Then the left column shows 2 stacked image panels with text overlays ("Sunday Services", "Announcement")
-And the right column shows "About Vernal Church" heading and description
-And 4 stat counter cards appear in a 2x2 grid
+
+- **WHEN** the counter section renders
+- **THEN** the left column shows 2 stacked image panels with text overlays ("Sunday Services", "Announcement")
+- **AND** the right column shows "About Vernal Church" heading and description
+- **AND** 4 stat counter cards appear in a 2x2 grid
 
 #### Scenario: Counter values
+
 The 4 stat counters display:
 - Members: 70,000
 - Pastors: 1,000
@@ -275,24 +289,27 @@ The 4 stat counters display:
 - Churches: 100
 
 #### Scenario: Counter animation
-When the counter section scrolls into view
-Then the numbers animate from 0 to their target values
+
+- **WHEN** the counter section scrolls into view
+- **THEN** the numbers animate from 0 to their target values
 
 ### Requirement: Testimony carousel
 
 A parallax section with a carousel of member testimonies.
 
 #### Scenario: Testimony carousel
-When the testimony section renders
-Then a parallax background image is displayed with a dark overlay
-And an "Inspirational Testimony" heading appears in white
-And a carousel displays testimony items
-And each testimony has a circular avatar, a quote icon, quoted text, name, and position
+
+- **WHEN** the testimony section renders
+- **THEN** a parallax background image is displayed with a dark overlay
+- **AND** an "Inspirational Testimony" heading appears in white
+- **AND** a carousel displays testimony items
+- **AND** each testimony has a circular avatar, a quote icon, quoted text, name, and position
 
 #### Scenario: Carousel navigation
-When the carousel is displayed
-Then it auto-plays through testimony items
-And users can navigate with previous/next controls
+
+- **WHEN** the carousel is displayed
+- **THEN** it auto-plays through testimony items
+- **AND** users can navigate with previous/next controls
 
 ### Requirement: Events list + Sermons sidebar
 
@@ -300,24 +317,27 @@ A split layout with upcoming events on the left and recent sermons sidebar
 on the right.
 
 #### Scenario: Events list
-When the events + sermons section renders
-Then 2 event cards display on the left (8-column width)
-And each event card has an image, title, date/time, location, and "Read more" button
+
+- **WHEN** the events + sermons section renders
+- **THEN** 2 event cards display on the left (8-column width)
+- **AND** each event card has an image, title, date/time, location, and "Read more" button
 
 #### Scenario: Sermons sidebar
-And a right sidebar (4-column width) shows "Recent Sermons" heading
-And a featured sermon card displays with image, title, metadata, and watch/download buttons
-And 2 mini sermon rows display below with play icons and durations
+
+- **AND** a right sidebar (4-column width) shows "Recent Sermons" heading
+- **AND** a featured sermon card displays with image, title, metadata, and watch/download buttons
+- **AND** 2 mini sermon rows display below with play icons and durations
 
 ### Requirement: Blog section
 
 A 3-column grid of blog post cards with date overlays.
 
 #### Scenario: Blog grid
-When the blog section renders
-Then 3 blog cards display in equal columns
-And each card has a background image with a date overlay (day, month, year)
-And each card has a title and excerpt text below
+
+- **WHEN** the blog section renders
+- **THEN** 3 blog cards display in equal columns
+- **AND** each card has a background image with a date overlay (day, month, year)
+- **AND** each card has a title and excerpt text below
 
 ### Requirement: Gallery + Map
 
@@ -325,56 +345,63 @@ A 2-column section with a photo gallery grid on the left and a Google Map
 on the right.
 
 #### Scenario: Gallery grid
-When the gallery section renders
-Then a 2x2 grid of photos appears on the left half
-And each photo shows an instagram icon on hover
-And clicking a photo opens a lightbox/popup
+
+- **WHEN** the gallery section renders
+- **THEN** a 2x2 grid of photos appears on the left half
+- **AND** each photo shows an instagram icon on hover
+- **AND** clicking a photo opens a lightbox/popup
 
 #### Scenario: Map display
-And a Google Map (or placeholder) renders on the right half
-And the map fills the full height of the gallery column
+
+- **AND** a Google Map (or placeholder) renders on the right half
+- **AND** the map fills the full height of the gallery column
 
 ### Requirement: Newsletter section
 
 A parallax newsletter subscription section with email input.
 
 #### Scenario: Newsletter form
-When the newsletter section renders
-Then a dark overlay parallax section appears
-And a "Newsletter" heading displays
-And a description text appears
-And an email input field and "Subscribe" button are shown in a form
+
+- **WHEN** the newsletter section renders
+- **THEN** a dark overlay parallax section appears
+- **AND** a "Newsletter" heading displays
+- **AND** a description text appears
+- **AND** an email input field and "Subscribe" button are shown in a form
 
 ### Requirement: Footer
 
 A dark 4-column footer with brand info, link columns, and service hours.
 
 #### Scenario: Footer layout
-When the footer renders
-Then a dark background section appears
-And column 1 shows: brand name "Vernal Church", description, social icons (twitter, facebook, instagram)
-And column 2 shows "About" links: Staff, Beliefs, History, Mission, Wedding & Funerals, Jobs & Internship, Fellowships
-And column 3 shows "Connect" links: Home Groups, Recovery Groups, Memberships, Children & Students, Volunteer, Counseling, Assistance
-And column 4 shows "Service Hours" with Saturday Prayer Meeting and Sunday Service times
+
+- **WHEN** the footer renders
+- **THEN** a dark background section appears
+- **AND** column 1 shows: brand name "Vernal Church", description, social icons (twitter, facebook, instagram)
+- **AND** column 2 shows "About" links: Staff, Beliefs, History, Mission, Wedding & Funerals, Jobs & Internship, Fellowships
+- **AND** column 3 shows "Connect" links: Home Groups, Recovery Groups, Memberships, Children & Students, Volunteer, Counseling, Assistance
+- **AND** column 4 shows "Service Hours" with Saturday Prayer Meeting and Sunday Service times
 
 #### Scenario: Footer Component Dock credit
-Then the footer bottom line shows a Component Dock credit linking to
+
+- **THEN** the footer bottom line shows a Component Dock credit linking to
 https://www.componentdock.com/
 
-### Requirement: Accessibility and semantics
+### Feature: Accessibility and semantics
 
 #### Scenario: Semantic landmarks
-When the page renders
-Then the navbar uses `<nav>` with `aria-label`
-And the hero section uses a heading hierarchy (h1 for main title)
-And interactive elements have appropriate roles and labels
-And images have descriptive alt text (or aria-hidden for decorative)
+
+- **WHEN** the page renders
+- **THEN** the navbar uses `<nav>` with `aria-label`
+- **AND** the hero section uses a heading hierarchy (h1 for main title)
+- **AND** interactive elements have appropriate roles and labels
+- **AND** images have descriptive alt text (or aria-hidden for decorative)
 
 #### Scenario: Keyboard navigation
-When the user navigates with keyboard
-Then all interactive elements are reachable via Tab
-And focus-visible rings appear on focused elements
-And the mobile menu toggle is keyboard accessible
+
+- **WHEN** the user navigates with keyboard
+- **THEN** all interactive elements are reachable via Tab
+- **AND** focus-visible rings appear on focused elements
+- **AND** the mobile menu toggle is keyboard accessible
 
 ## Verification checklist
 

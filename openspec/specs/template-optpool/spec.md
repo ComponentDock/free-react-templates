@@ -45,90 +45,74 @@ The preview screenshot (1200×972) shows a centered, minimal single-section page
 - Dropdown pops below with a stronger shadow (`0 15px 30px`)
 - Overall aesthetic: clean, modern, neutral gray palette with colored tag chips
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Page renders with heading and select container
+### Feature: OptPool template behaviour
 
-```gherkin
-Given the user visits the OptPool page
-When the page loads
-Then a heading "Multi-Select #9" is visible
-And a multi-select dropdown container is rendered
-And the page background is light gray (#efefef)
-```
+#### Scenario: Page renders with heading and select container
 
-### Scenario: Select dropdown displays placeholder
+- **GIVEN** the user visits the OptPool page
+- **WHEN** the page loads
+- **THEN** a heading "Multi-Select #9" is visible
+- **AND** a multi-select dropdown container is rendered
+- **AND** the page background is light gray (#efefef)
 
-```gherkin
-Given the user visits the OptPool page
-When the page loads
-Then the select input shows the placeholder text "Select Categories"
-And the input has a soft box-shadow
-```
+#### Scenario: Select dropdown displays placeholder
 
-### Scenario: Select contains predefined categories
+- **GIVEN** the user visits the OptPool page
+- **WHEN** the page loads
+- **THEN** the select input shows the placeholder text "Select Categories"
+- **AND** the input has a soft box-shadow
 
-```gherkin
-Given the user visits the OptPool page
-When the page loads
-Then the select contains the options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
-```
+#### Scenario: Select contains predefined categories
 
-### Scenario: User can select multiple options
+- **GIVEN** the user visits the OptPool page
+- **WHEN** the page loads
+- **THEN** the select contains the options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
 
-```gherkin
-Given the user visits the OptPool page
-When the user clicks the select input
-And the user selects "Design"
-Then "Design" appears as a tag chip
-When the user selects "CSS3"
-Then "CSS3" appears as a tag chip
-And both "Design" and "CSS3" are selected
-```
+#### Scenario: User can select multiple options
 
-### Scenario: User can deselect an option via chip close button
+- **GIVEN** the user visits the OptPool page
+- **WHEN** the user clicks the select input
+- **AND** the user selects "Design"
+- **THEN** "Design" appears as a tag chip
+- **WHEN** the user selects "CSS3"
+- **THEN** "CSS3" appears as a tag chip
+- **AND** both "Design" and "CSS3" are selected
 
-```gherkin
-Given the user has selected "Design" and "CSS3"
-When the user clicks the close button on the "Design" chip
-Then "Design" is removed from the selected chips
-And "CSS3" remains selected
-```
+#### Scenario: User can deselect an option via chip close button
 
-### Scenario: Dropdown opens and closes on interaction
+- **GIVEN** the user has selected "Design" and "CSS3"
+- **WHEN** the user clicks the close button on the "Design" chip
+- **THEN** "Design" is removed from the selected chips
+- **AND** "CSS3" remains selected
 
-```gherkin
-Given the user visits the OptPool page
-When the user clicks the select input
-Then a dropdown list opens below the input
-When the user clicks outside the dropdown
-Then the dropdown closes
-```
+#### Scenario: Dropdown opens and closes on interaction
 
-### Scenario: Dropdown shadow matches design token
+- **GIVEN** the user visits the OptPool page
+- **WHEN** the user clicks the select input
+- **THEN** a dropdown list opens below the input
+- **WHEN** the user clicks outside the dropdown
+- **THEN** the dropdown closes
 
-```gherkin
-Given the dropdown is open
-Then the dropdown has a box-shadow of 0 15px 30px 0 rgba(0,0,0,0.2)
-And the dropdown has border-radius 4px
-```
+#### Scenario: Dropdown shadow matches design token
 
-### Scenario: Tag chips have correct visual styling
+- **GIVEN** the dropdown is open
+- **THEN** the dropdown has a box-shadow of 0 15px 30px 0 rgba(0,0,0,0.2)
+- **AND** the dropdown has border-radius 4px
 
-```gherkin
-Given the user has selected one or more options
-Then each selected option displays as a rounded chip
-And each chip has border-radius 4px
-And chips have a soft background color (olive, green, or blue variant)
-```
+#### Scenario: Tag chips have correct visual styling
 
-### Scenario: Responsive layout
+- **GIVEN** the user has selected one or more options
+- **THEN** each selected option displays as a rounded chip
+- **AND** each chip has border-radius 4px
+- **AND** chips have a soft background color (olive, green, or blue variant)
 
-```gherkin
-Given the user visits the OptPool page on a mobile device
-Then the select container adjusts to full width
-And the heading remains centered
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user visits the OptPool page on a mobile device
+- **THEN** the select container adjusts to full width
+- **AND** the heading remains centered
 
 ## Verification checklist
 

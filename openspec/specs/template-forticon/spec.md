@@ -46,110 +46,121 @@ Recreation of the ColorLib **Complex** template
 9. **Newsletter** — dark overlay background, "Subscribe Newsletter" heading, email input + subscribe button
 10. **Footer** — dark bg (#25282a): contact info strip (address, email/website, phone), 3-column widget area (About, Follow Us social links, Our Company list), copyright with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Forticon — Construction Company Template
 
-```gherkin
 Feature: Forticon Template
-  As a visitor to Forticon
-  I want a complete construction company homepage
-  So that I can learn about services, view projects, and contact the team
+As a visitor to Forticon
+I want a complete construction company homepage
+So that I can learn about services, view projects, and contact the team
 
-  # ── Navbar ────────────────────────────────────────
+**── Navbar ────────────────────────────────────────**
 
-  Scenario: Navbar displays logo and navigation links
-    Given I am on the Forticon homepage
-    Then I see the logo "forticon" in the navbar
-    And I see navigation links: Commercial, Apartment, House, Building, Services, Blog, About, Contact
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Navbar becomes sticky on scroll
-    Given I scroll down the Forticon page
-    Then the navbar remains fixed at the top of the viewport
+- **GIVEN** I am on the Forticon homepage
+- **THEN** I see the logo "forticon" in the navbar
+- **AND** I see navigation links: Commercial, Apartment, House, Building, Services, Blog, About, Contact
 
-  # ── Hero Slider ───────────────────────────────────
+#### Scenario: Navbar becomes sticky on scroll
 
-  Scenario: Hero slider displays with gradient overlay
-    Given I am on the Forticon homepage
-    Then I see a full-width hero slider with background images
-    And I see a dark overlay with cyan-purple gradient
-    And I see centered heading text (h1 + h2) on each slide
-    And I see a "Get Started" CTA button with uppercase text
+- **GIVEN** I scroll down the Forticon page
+- **THEN** the navbar remains fixed at the top of the viewport
 
-  Scenario: Hero slider auto-rotates through slides
-    Given I am on the Forticon homepage
-    Then the slider displays 3 slides with different background images and headings
+**── Hero Slider ───────────────────────────────────**
 
-  # ── Intro Tabs ────────────────────────────────────
+#### Scenario: Hero slider displays with gradient overlay
 
-  Scenario: Service tabs display correctly
-    Given I scroll to the Intro Tabs section
-    Then I see 4 tabs: Planning & Design, General Constructing, Construction Management, Building Modeling
-    And the active tab shows a service image on the left and description with bullet points on the right
+- **GIVEN** I am on the Forticon homepage
+- **THEN** I see a full-width hero slider with background images
+- **AND** I see a dark overlay with cyan-purple gradient
+- **AND** I see centered heading text (h1 + h2) on each slide
+- **AND** I see a "Get Started" CTA button with uppercase text
 
-  Scenario: Clicking a tab switches content
-    Given I click the "General Constructing" tab
-    Then the content switches to show the General Constructing image and description
+#### Scenario: Hero slider auto-rotates through slides
 
-  # ── Services Grid ─────────────────────────────────
+- **GIVEN** I am on the Forticon homepage
+- **THEN** the slider displays 3 slides with different background images and headings
 
-  Scenario: Services grid displays
-    Given I scroll to the Services section
-    Then I see 4 service cards in a grid
-    And each card has an icon, title (h3), and description text
-    And the services are: General Constructing, Interior Design, Building Modeling, Construction Management
+**── Intro Tabs ────────────────────────────────────**
 
-  # ── Counter ───────────────────────────────────────
+#### Scenario: Service tabs display correctly
 
-  Scenario: Counter section displays with stats
-    Given I scroll to the Counter section
-    Then I see a parallax background image with dark overlay
-    And I see 4 counters: Projects (1539), Employees (3653), Constructors (1450), Partners (391)
-    And each counter has an icon and label
+- **GIVEN** I scroll to the Intro Tabs section
+- **THEN** I see 4 tabs: Planning & Design, General Constructing, Construction Management, Building Modeling
+- **AND** the active tab shows a service image on the left and description with bullet points on the right
 
-  # ── Projects ──────────────────────────────────────
+#### Scenario: Clicking a tab switches content
 
-  Scenario: Projects grid displays
-    Given I scroll to the Projects section
-    Then I see the heading "Our Projects"
-    And I see 3 project cards in a row
-    And each card has a background image with a hover search icon overlay
-    And each card has a title and category tags
+- **GIVEN** I click the "General Constructing" tab
+- **THEN** the content switches to show the General Constructing image and description
 
-  # ── Team ──────────────────────────────────────────
+**── Services Grid ─────────────────────────────────**
 
-  Scenario: Team section displays
-    Given I scroll to the Team section
-    Then I see the heading "Our Team"
-    And I see 3 team member cards
-    And each card has a background image with name and role overlay
+#### Scenario: Services grid displays
 
-  # ── Testimonials ──────────────────────────────────
+- **GIVEN** I scroll to the Services section
+- **THEN** I see 4 service cards in a grid
+- **AND** each card has an icon, title (h3), and description text
+- **AND** the services are: General Constructing, Interior Design, Building Modeling, Construction Management
 
-  Scenario: Testimonials carousel displays
-    Given I scroll to the Testimonials section
-    Then I see the heading "Client Says:"
-    And I see a testimonial carousel with slides
-    And each slide shows an avatar, quote text, and client name
+**── Counter ───────────────────────────────────────**
 
-  # ── Newsletter ────────────────────────────────────
+#### Scenario: Counter section displays with stats
 
-  Scenario: Newsletter subscription section displays
-    Given I scroll to the Newsletter section
-    Then I see the heading "Subscribe Newsletter"
-    And I see an email input field
-    And I see a subscribe button
+- **GIVEN** I scroll to the Counter section
+- **THEN** I see a parallax background image with dark overlay
+- **AND** I see 4 counters: Projects (1539), Employees (3653), Constructors (1450), Partners (391)
+- **AND** each counter has an icon and label
 
-  # ── Footer ────────────────────────────────────────
+**── Projects ──────────────────────────────────────**
 
-  Scenario: Footer displays contact info and widgets
-    Given I scroll to the footer
-    Then I see contact information (address, email, phone)
-    And I see 3 widget columns: About, Follow Us, Our Company
-    And I see social media icons
-    And I see a copyright notice
-    And I see a link to "Component Dock" (https://www.componentdock.com/)
-```
+#### Scenario: Projects grid displays
+
+- **GIVEN** I scroll to the Projects section
+- **THEN** I see the heading "Our Projects"
+- **AND** I see 3 project cards in a row
+- **AND** each card has a background image with a hover search icon overlay
+- **AND** each card has a title and category tags
+
+**── Team ──────────────────────────────────────────**
+
+#### Scenario: Team section displays
+
+- **GIVEN** I scroll to the Team section
+- **THEN** I see the heading "Our Team"
+- **AND** I see 3 team member cards
+- **AND** each card has a background image with name and role overlay
+
+**── Testimonials ──────────────────────────────────**
+
+#### Scenario: Testimonials carousel displays
+
+- **GIVEN** I scroll to the Testimonials section
+- **THEN** I see the heading "Client Says:"
+- **AND** I see a testimonial carousel with slides
+- **AND** each slide shows an avatar, quote text, and client name
+
+**── Newsletter ────────────────────────────────────**
+
+#### Scenario: Newsletter subscription section displays
+
+- **GIVEN** I scroll to the Newsletter section
+- **THEN** I see the heading "Subscribe Newsletter"
+- **AND** I see an email input field
+- **AND** I see a subscribe button
+
+**── Footer ────────────────────────────────────────**
+
+#### Scenario: Footer displays contact info and widgets
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see contact information (address, email, phone)
+- **AND** I see 3 widget columns: About, Follow Us, Our Company
+- **AND** I see social media icons
+- **AND** I see a copyright notice
+- **AND** I see a link to "Component Dock" (https://www.componentdock.com/)
 
 ## Verification Checklist
 

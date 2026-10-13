@@ -64,81 +64,93 @@ Us with social icons.
 9. Faq — accordion with 4 expandable Q&A items
 10. Footer — 3-col: About Us + Newsletter + Follow Us (social icons)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar displays with navigation links
-  **Given** the page loads
-  **When** the user views the header
-  **Then** a logo is displayed on the left
-  **And** navigation links are visible: Home, About, Service, Unique Feature, Review, Faq
-  **And** the navbar becomes sticky on scroll
+### Feature: TimeCraft template behaviour
 
-### Scenario: Hero banner renders
-  **Given** the page loads
-  **When** the user views the hero section
-  **Then** a full-width background image is displayed
-  **And** a subtitle "Now you can feel the Heat" is shown in uppercase
-  **And** a headline "Smart New Future" is displayed in large white text
-  **And** a "Buy Now" gradient pill button is visible
+#### Scenario: Navbar displays with navigation links
 
-### Scenario: Video section renders
-  **Given** the page loads
-  **When** the user scrolls to the video section
-  **Then** a two-column layout is displayed
-  **And** the left column shows a subtitle, headline "We've made a life that will change you", description text, and a "Get Started now" CTA
-  **And** the right column shows a play button with a dark overlay
+- **GIVEN** the page loads
+- **WHEN** the user views the header
+- **THEN** a logo is displayed on the left
+- **AND** navigation links are visible: Home, About, Service, Unique Feature, Review, Faq
+- **AND** the navbar becomes sticky on scroll
 
-### Scenario: Top features section renders
-  **Given** the page loads
-  **When** the user views the top features section
-  **Then** a centered smartwatch image is displayed
-  **And** 4 feature items flank the image (2 left, 2 right)
-  **And** each feature has an icon, title, and description text
+#### Scenario: Hero banner renders
 
-### Scenario: About section renders
-  **Given** the page loads
-  **When** the user views the about section
-  **Then** a two-column full-width layout is shown
-  **And** the left side displays an image
-  **And** the right side shows a headline "Globally Connected by Large Network", description, and a "get details" CTA button
+- **GIVEN** the page loads
+- **WHEN** the user views the hero section
+- **THEN** a full-width background image is displayed
+- **AND** a subtitle "Now you can feel the Heat" is shown in uppercase
+- **AND** a headline "Smart New Future" is displayed in large white text
+- **AND** a "Buy Now" gradient pill button is visible
 
-### Scenario: Features grid renders
-  **Given** the page loads
-  **When** the user views the features section
-  **Then** a heading "Some Features that Made us Unique" is displayed
-  **And** 6 feature cards are shown in a 3-column grid
-  **And** each card has an icon, title, and description
-  **And** the features are: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
+#### Scenario: Video section renders
 
-### Scenario: Products section renders on dark background
-  **Given** the page loads
-  **When** the user views the products section
-  **Then** a dark background (#04091e) section is displayed
-  **And** 4 product cards are shown in a 4-column grid
-  **And** each card has: product image, product name, price in blue, and a "Pre Order" button
-  **And** hovering a card changes its button style
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the video section
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows a subtitle, headline "We've made a life that will change you", description text, and a "Get Started now" CTA
+- **AND** the right column shows a play button with a dark overlay
 
-### Scenario: Reviews section renders
-  **Given** the page loads
-  **When** the user views the reviews section
-  **Then** 6 review cards are displayed in a 3-column grid
-  **And** each card shows: reviewer name, review text, and a star rating (out of 5)
-  **And** checked stars are filled, unchecked stars are outlined
+#### Scenario: Top features section renders
 
-### Scenario: FAQ accordion works
-  **Given** the page loads
-  **When** the user views the FAQ section
-  **Then** 4 FAQ items are displayed in an accordion
-  **And** clicking a question expands its answer
-  **And** only one answer is expanded at a time (accordion behavior)
+- **GIVEN** the page loads
+- **WHEN** the user views the top features section
+- **THEN** a centered smartwatch image is displayed
+- **AND** 4 feature items flank the image (2 left, 2 right)
+- **AND** each feature has an icon, title, and description text
 
-### Scenario: Footer renders with all elements
-  **Given** the page loads
-  **When** the user scrolls to the footer
-  **Then** an "About Us" column with description text is shown
-  **And** a "Newsletter" column with email input and submit button is shown
-  **And** a "Follow Us" column with social media icons (Facebook, Twitter, Dribbble, Behance) is shown
-  **And** a "Component Dock" attribution link replaces the Colorlib credit
+#### Scenario: About section renders
+
+- **GIVEN** the page loads
+- **WHEN** the user views the about section
+- **THEN** a two-column full-width layout is shown
+- **AND** the left side displays an image
+- **AND** the right side shows a headline "Globally Connected by Large Network", description, and a "get details" CTA button
+
+#### Scenario: Features grid renders
+
+- **GIVEN** the page loads
+- **WHEN** the user views the features section
+- **THEN** a heading "Some Features that Made us Unique" is displayed
+- **AND** 6 feature cards are shown in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the features are: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
+
+#### Scenario: Products section renders on dark background
+
+- **GIVEN** the page loads
+- **WHEN** the user views the products section
+- **THEN** a dark background (#04091e) section is displayed
+- **AND** 4 product cards are shown in a 4-column grid
+- **AND** each card has: product image, product name, price in blue, and a "Pre Order" button
+- **AND** hovering a card changes its button style
+
+#### Scenario: Reviews section renders
+
+- **GIVEN** the page loads
+- **WHEN** the user views the reviews section
+- **THEN** 6 review cards are displayed in a 3-column grid
+- **AND** each card shows: reviewer name, review text, and a star rating (out of 5)
+- **AND** checked stars are filled, unchecked stars are outlined
+
+#### Scenario: FAQ accordion works
+
+- **GIVEN** the page loads
+- **WHEN** the user views the FAQ section
+- **THEN** 4 FAQ items are displayed in an accordion
+- **AND** clicking a question expands its answer
+- **AND** only one answer is expanded at a time (accordion behavior)
+
+#### Scenario: Footer renders with all elements
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the footer
+- **THEN** an "About Us" column with description text is shown
+- **AND** a "Newsletter" column with email input and submit button is shown
+- **AND** a "Follow Us" column with social media icons (Facebook, Twitter, Dribbble, Behance) is shown
+- **AND** a "Component Dock" attribution link replaces the Colorlib credit
 
 ## Verification checklist
 

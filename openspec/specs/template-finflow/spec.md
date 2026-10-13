@@ -71,132 +71,164 @@ Section backgrounds alternate between white and light grey (`#f8f9fa`).
     Quick Links (Terms, Policy, About Us, Services, Testimonials, Contact Us),
     Subscribe form (email input). Copyright bar at bottom.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Finflow template behaviour
+
 Feature: Finflow — Finance/Banking Template
 
-  Background:
-    Given the template is loaded at the root URL
-    And the viewport is 1280x800
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **AND** the viewport is 1280x800
 
-  # ── Navbar ──────────────────────────────────────────────
-  Scenario: Sticky navbar displays logo and navigation links
-    Then the navbar should contain the logo text "Finances"
-    And the navbar should have nav links: "Home", "About Us", "Blog", "Contact"
-    And the navbar should display social icons for Facebook, Twitter, LinkedIn
-    And the navbar should be sticky on scroll
+**── Navbar ──────────────────────────────────────────────**
 
-  Scenario: Mobile hamburger menu toggles navigation
-    Given the viewport is 375x812
-    When I click the hamburger menu icon
-    Then the mobile menu should be visible
-    When I click the close icon
-    Then the mobile menu should be hidden
+#### Scenario: Sticky navbar displays logo and navigation links
 
-  # ── Hero ────────────────────────────────────────────────
-  Scenario: Hero carousel displays banking slides
-    Then the hero should display a carousel with 3 slides
-    And slide 1 should show heading "Banking Solutions"
-    And slide 2 should show heading "Financing Solutions"
-    And slide 3 should show heading "Savings Accounts"
-    And each slide should have a "Get In Touch" button
+- **THEN** the navbar should contain the logo text "Finances"
+- **AND** the navbar should have nav links: "Home", "About Us", "Blog", "Contact"
+- **AND** the navbar should display social icons for Facebook, Twitter, LinkedIn
+- **AND** the navbar should be sticky on scroll
 
-  Scenario: Hero has dark overlay on background images
-    Then each hero slide should have a dark overlay background
-    And the overlay color should be approximately rgba(0,0,0,0.7)
+#### Scenario: Mobile hamburger menu toggles navigation
 
-  # ── Team ────────────────────────────────────────────────
-  Scenario: Team section displays three team members
-    Then the team section should show heading "Meet Team"
-    And there should be 3 team member cards
-    And each card should display a circular avatar
-    And each card should show a name and social links
+- **GIVEN** the viewport is 375x812
+- **WHEN** I click the hamburger menu icon
+- **THEN** the mobile menu should be visible
+- **WHEN** I click the close icon
+- **THEN** the mobile menu should be hidden
 
-  # ── Gallery ─────────────────────────────────────────────
-  Scenario: Gallery section displays photo grid
-    Then the gallery section should show heading "Gallery"
-    And it should display a grid of photos
+**── Hero ────────────────────────────────────────────────**
 
-  # ── Services ────────────────────────────────────────────
-  Scenario: Services section displays four service items
-    Then the services section should show heading "Our Services"
-    And it should display 4 service items on a light background
-    And each service item should have an icon, title, and description
-    And the service titles should include "Business Consulting" and "Credit Card"
+#### Scenario: Hero carousel displays banking slides
 
-  # ── Testimonials ────────────────────────────────────────
-  Scenario: Testimonials section displays customer reviews
-    Then the testimonials section should show heading "Happy Customers"
-    And it should display testimonial cards with quotes and author info
+- **THEN** the hero should display a carousel with 3 slides
+- **AND** slide 1 should show heading "Banking Solutions"
+- **AND** slide 2 should show heading "Financing Solutions"
+- **AND** slide 3 should show heading "Savings Accounts"
+- **AND** each slide should have a "Get In Touch" button
 
-  # ── Pricing ─────────────────────────────────────────────
-  Scenario: Pricing section displays three plan cards
-    Then the pricing section should show heading "Pricing"
-    And it should be on a light background
-    And there should be 3 pricing cards: "Basic", "Premium", "Professional"
-    And Basic should show "$47 / year"
-    And Premium should show "$200 / year" and be highlighted as popular
-    And Professional should show "$500 / year"
-    And each card should have a feature list and a "Buy Now" button
+#### Scenario: Hero has dark overlay on background images
 
-  Scenario: Pricing feature lists show included and excluded items
-    Then Basic plan should show 2 included features and 3 excluded features
-    And Premium plan should show 4 included features and 1 excluded feature
-    And Professional plan should show all 5 features as included
+- **THEN** each hero slide should have a dark overlay background
+- **AND** the overlay color should be approximately rgba(0,0,0,0.7)
 
-  # ── About ───────────────────────────────────────────────
-  Scenario: About section displays financial problem-solving content
-    Then the about section should show heading "About Us"
-    And it should display sub-heading "We Solve Your Financial Problem"
-    And it should list feature items: "Money Savings", "Online Shoppings", "Credit / Debit Cards"
+**── Team ────────────────────────────────────────────────**
 
-  # ── Blog ────────────────────────────────────────────────
-  Scenario: Blog section displays three blog post cards
-    Then the blog section should show heading "Our Blog"
-    And there should be 3 blog post cards
-    And each card should have an image, category, date, title, and excerpt
+#### Scenario: Team section displays three team members
 
-  # ── FAQ ─────────────────────────────────────────────────
-  Scenario: FAQ section displays expandable questions
-    Then the FAQ section should show heading "Frequently Ask Questions"
-    And it should be on a light background
-    And it should display expandable question items
+- **THEN** the team section should show heading "Meet Team"
+- **AND** there should be 3 team member cards
+- **AND** each card should display a circular avatar
+- **AND** each card should show a name and social links
 
-  # ── Contact ─────────────────────────────────────────────
-  Scenario: Contact section displays form and office info
-    Then the contact section should show heading "Contact Us"
-    And it should be on a light background
-    And it should display a form with fields: First Name, Last Name, Subject, Email, Message
-    And it should display a "Send Message" button
-    And it should show office address and contact information
+**── Gallery ─────────────────────────────────────────────**
 
-  # ── Footer ──────────────────────────────────────────────
-  Scenario: Footer displays brand info, links, and subscribe form
-    Then the footer should have a dark background
-    And it should display the brand name and description
-    And it should show Quick Links: "Terms", "Policy", "About Us", "Services", "Testimonials", "Contact Us"
-    And it should display an email subscribe input
-    And it should contain a copyright line linking to Component Dock
+#### Scenario: Gallery section displays photo grid
 
-  # ── Cross-cutting ───────────────────────────────────────
-  Scenario: All sections use Open Sans font
-    Then all text should use "Open Sans" as the primary font family
+- **THEN** the gallery section should show heading "Gallery"
+- **AND** it should display a grid of photos
 
-  Scenario: Buttons are pill-shaped with 30px border-radius
-    Then all primary buttons should have border-radius of approximately 30px
+**── Services ────────────────────────────────────────────**
 
-  Scenario: Alternating section backgrounds
-    Then team section should have white background
-    And services section should have light grey background
-    And pricing section should have light grey background
-    And contact section should have light grey background
-    And footer should have dark grey background
+#### Scenario: Services section displays four service items
 
-  Scenario: No ColorLib references in app code
-    Then no source file should contain "colorlib" or "preview.colorlib.com"
-    And the footer should link to "https://www.componentdock.com/"
-```
+- **THEN** the services section should show heading "Our Services"
+- **AND** it should display 4 service items on a light background
+- **AND** each service item should have an icon, title, and description
+- **AND** the service titles should include "Business Consulting" and "Credit Card"
+
+**── Testimonials ────────────────────────────────────────**
+
+#### Scenario: Testimonials section displays customer reviews
+
+- **THEN** the testimonials section should show heading "Happy Customers"
+- **AND** it should display testimonial cards with quotes and author info
+
+**── Pricing ─────────────────────────────────────────────**
+
+#### Scenario: Pricing section displays three plan cards
+
+- **THEN** the pricing section should show heading "Pricing"
+- **AND** it should be on a light background
+- **AND** there should be 3 pricing cards: "Basic", "Premium", "Professional"
+- **AND** Basic should show "$47 / year"
+- **AND** Premium should show "$200 / year" and be highlighted as popular
+- **AND** Professional should show "$500 / year"
+- **AND** each card should have a feature list and a "Buy Now" button
+
+#### Scenario: Pricing feature lists show included and excluded items
+
+- **THEN** Basic plan should show 2 included features and 3 excluded features
+- **AND** Premium plan should show 4 included features and 1 excluded feature
+- **AND** Professional plan should show all 5 features as included
+
+**── About ───────────────────────────────────────────────**
+
+#### Scenario: About section displays financial problem-solving content
+
+- **THEN** the about section should show heading "About Us"
+- **AND** it should display sub-heading "We Solve Your Financial Problem"
+- **AND** it should list feature items: "Money Savings", "Online Shoppings", "Credit / Debit Cards"
+
+**── Blog ────────────────────────────────────────────────**
+
+#### Scenario: Blog section displays three blog post cards
+
+- **THEN** the blog section should show heading "Our Blog"
+- **AND** there should be 3 blog post cards
+- **AND** each card should have an image, category, date, title, and excerpt
+
+**── FAQ ─────────────────────────────────────────────────**
+
+#### Scenario: FAQ section displays expandable questions
+
+- **THEN** the FAQ section should show heading "Frequently Ask Questions"
+- **AND** it should be on a light background
+- **AND** it should display expandable question items
+
+**── Contact ─────────────────────────────────────────────**
+
+#### Scenario: Contact section displays form and office info
+
+- **THEN** the contact section should show heading "Contact Us"
+- **AND** it should be on a light background
+- **AND** it should display a form with fields: First Name, Last Name, Subject, Email, Message
+- **AND** it should display a "Send Message" button
+- **AND** it should show office address and contact information
+
+**── Footer ──────────────────────────────────────────────**
+
+#### Scenario: Footer displays brand info, links, and subscribe form
+
+- **THEN** the footer should have a dark background
+- **AND** it should display the brand name and description
+- **AND** it should show Quick Links: "Terms", "Policy", "About Us", "Services", "Testimonials", "Contact Us"
+- **AND** it should display an email subscribe input
+- **AND** it should contain a copyright line linking to Component Dock
+
+**── Cross-cutting ───────────────────────────────────────**
+
+#### Scenario: All sections use Open Sans font
+
+- **THEN** all text should use "Open Sans" as the primary font family
+
+#### Scenario: Buttons are pill-shaped with 30px border-radius
+
+- **THEN** all primary buttons should have border-radius of approximately 30px
+
+#### Scenario: Alternating section backgrounds
+
+- **THEN** team section should have white background
+- **AND** services section should have light grey background
+- **AND** pricing section should have light grey background
+- **AND** contact section should have light grey background
+- **AND** footer should have dark grey background
+
+#### Scenario: No ColorLib references in app code
+
+- **THEN** no source file should contain "colorlib" or "preview.colorlib.com"
+- **AND** the footer should link to "https://www.componentdock.com/"
 
 ## Verification Checklist
 

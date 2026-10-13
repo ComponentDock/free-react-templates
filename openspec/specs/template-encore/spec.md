@@ -42,164 +42,161 @@ Recreation of the ColorLib **Music** template as a single-page React app.
 | Newsletter | White #ffffff |
 | Footer | White #ffffff |
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Header navigation
 
-  Scenario: Header displays logo and navigation
-    Given the user loads the page
-    Then the header contains the logo text "encore"
-    And the header navigation shows links: Home, Artists, Download Music, News, Contact
-    And the header background is dark purple (#3b125d)
-    And the header is centered with flex layout
+#### Scenario: Header displays logo and navigation
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is narrow (mobile)
-    When the user taps the hamburger icon
-    Then a full-screen menu overlay appears with all navigation links
-    And the overlay has a dark purple background
-    And the overlay has a close button (X icon)
-```
+- **GIVEN** the user loads the page
+- **THEN** the header contains the logo text "encore"
+- **AND** the header navigation shows links: Home, Artists, Download Music, News, Contact
+- **AND** the header background is dark purple (#3b125d)
+- **AND** the header is centered with flex layout
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is narrow (mobile)
+- **WHEN** the user taps the hamburger icon
+- **THEN** a full-screen menu overlay appears with all navigation links
+- **AND** the overlay has a dark purple background
+- **AND** the overlay has a close button (X icon)
 
 ### Home Hero
 
-```gherkin
 Feature: Home hero section
 
-  Scenario: Hero displays fullscreen slider
-    Given the user loads the page
-    Then a fullscreen hero slider is visible
-    And each slide shows a background image
-    And the heading reads "your music." with "music." as an accent span
-    And a ticket form is displayed below the heading
+#### Scenario: Hero displays fullscreen slider
 
-  Scenario: Ticket form functionality
-    Given the hero section is visible
-    Then the ticket form has an Event dropdown selector
-    And the ticket form has a text input for "Tickets"
-    And the ticket form has a "get your tickets" button
-    And the button has a green gradient background on hover
+- **GIVEN** the user loads the page
+- **THEN** a fullscreen hero slider is visible
+- **AND** each slide shows a background image
+- **AND** the heading reads "your music." with "music." as an accent span
+- **AND** a ticket form is displayed below the heading
 
-  Scenario: Slider navigation
-    Given the hero slider is active
-    Then slider navigation arrows are visible
-    And the user can navigate between slides
-```
+#### Scenario: Ticket form functionality
+
+- **GIVEN** the hero section is visible
+- **THEN** the ticket form has an Event dropdown selector
+- **AND** the ticket form has a text input for "Tickets"
+- **AND** the ticket form has a "get your tickets" button
+- **AND** the button has a green gradient background on hover
+
+#### Scenario: Slider navigation
+
+- **GIVEN** the hero slider is active
+- **THEN** slider navigation arrows are visible
+- **AND** the user can navigate between slides
 
 ### Song / Music Player
 
-```gherkin
 Feature: Music player section
 
-  Scenario: Player displays with parallax background
-    Given the user scrolls to the song section
-    Then a parallax background image is visible
-    And the music player widget is displayed
-    And the player shows a song image (square with white border)
-    And the player shows song title and artist info
-    And the player has play/pause, previous, and next controls
+#### Scenario: Player displays with parallax background
 
-  Scenario: Player controls are interactive
-    Given the music player is visible
-    Then play/pause button toggles playback state
-    And a progress bar shows current playback position
-    And volume controls include a mute button and volume slider
-```
+- **GIVEN** the user scrolls to the song section
+- **THEN** a parallax background image is visible
+- **AND** the music player widget is displayed
+- **AND** the player shows a song image (square with white border)
+- **AND** the player shows song title and artist info
+- **AND** the player has play/pause, previous, and next controls
+
+#### Scenario: Player controls are interactive
+
+- **GIVEN** the music player is visible
+- **THEN** play/pause button toggles playback state
+- **AND** a progress bar shows current playback position
+- **AND** volume controls include a mute button and volume slider
 
 ### Tours
 
-```gherkin
 Feature: Tour dates section
 
-  Scenario: Tour list displays on white background
-    Given the user scrolls to the tours section
-    Then the section has a white background
-    And a "Tour Dates" section title is displayed
-    And multiple tour date entries are listed
-    And each tour entry shows date, venue, and location
-    And each entry has a "add" link to add the event
+#### Scenario: Tour list displays on white background
 
-  Scenario: Tour link hover effect
-    Given a tour entry is displayed
-    When the user hovers over the "add" link
-    Then the link color transitions to green (#2ac275)
-```
+- **GIVEN** the user scrolls to the tours section
+- **THEN** the section has a white background
+- **AND** a "Tour Dates" section title is displayed
+- **AND** multiple tour date entries are listed
+- **AND** each tour entry shows date, venue, and location
+- **AND** each entry has a "add" link to add the event
+
+#### Scenario: Tour link hover effect
+
+- **GIVEN** a tour entry is displayed
+- **WHEN** the user hovers over the "add" link
+- **THEN** the link color transitions to green (#2ac275)
 
 ### App Download
 
-```gherkin
 Feature: App download section
 
-  Scenario: App section on light gray background
-    Given the user scrolls to the app section
-    Then the section has a light gray background (#eef2f6)
-    And an app screenshot image is displayed
-    And app description text is shown
-    And the section promotes downloading the companion app
-```
+#### Scenario: App section on light gray background
+
+- **GIVEN** the user scrolls to the app section
+- **THEN** the section has a light gray background (#eef2f6)
+- **AND** an app screenshot image is displayed
+- **AND** app description text is shown
+- **AND** the section promotes downloading the companion app
 
 ### Featured Artists
 
-```gherkin
 Feature: Featured artists section
 
-  Scenario: Featured list on white background
-    Given the user scrolls to the featured section
-    Then the section has a white background
-    And a "Featured" section title is displayed
-    And a list of featured artists/tracks is shown
-    And each entry has play functionality
-    And artist names are displayed with track info
-```
+#### Scenario: Featured list on white background
+
+- **GIVEN** the user scrolls to the featured section
+- **THEN** the section has a white background
+- **AND** a "Featured" section title is displayed
+- **AND** a list of featured artists/tracks is shown
+- **AND** each entry has play functionality
+- **AND** artist names are displayed with track info
 
 ### News / Blog
 
-```gherkin
 Feature: News section
 
-  Scenario: News posts on dark purple background
-    Given the user scrolls to the news section
-    Then the section has a dark purple background (#3b125d)
-    And a "News" section title is displayed in white
-    And three news post cards are shown in a grid
-    And each card has a date badge (green circle)
-    And each card has a post title, text excerpt, and image
-    And post titles link to full articles
+#### Scenario: News posts on dark purple background
 
-  Scenario: News card layout
-    Given news posts are displayed
-    Then some cards show image on top with content below
-    And some cards show image on the side with content beside it
-```
+- **GIVEN** the user scrolls to the news section
+- **THEN** the section has a dark purple background (#3b125d)
+- **AND** a "News" section title is displayed in white
+- **AND** three news post cards are shown in a grid
+- **AND** each card has a date badge (green circle)
+- **AND** each card has a post title, text excerpt, and image
+- **AND** post titles link to full articles
+
+#### Scenario: News card layout
+
+- **GIVEN** news posts are displayed
+- **THEN** some cards show image on top with content below
+- **AND** some cards show image on the side with content beside it
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter subscription
 
-  Scenario: Newsletter form on white background
-    Given the user scrolls to the newsletter section
-    Then the section has a white background
-    And a "Newsletter" title and description text are shown
-    And an email input field is displayed with rounded border (22px radius)
-    And a "subscribe" button is shown with green background
-    And the button has a gradient hover effect
-```
+#### Scenario: Newsletter form on white background
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** the section has a white background
+- **AND** a "Newsletter" title and description text are shown
+- **AND** an email input field is displayed with rounded border (22px radius)
+- **AND** a "subscribe" button is shown with green background
+- **AND** the button has a gradient hover effect
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer with logo and social links
-    Given the user scrolls to the footer
-    Then the footer contains the logo text "encore"
-    And social media icon links are displayed (Facebook, Instagram, Spotify, Twitter)
-    And a "Component Dock" attribution link is present
-```
+#### Scenario: Footer with logo and social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer contains the logo text "encore"
+- **AND** social media icon links are displayed (Facebook, Instagram, Spotify, Twitter)
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification Checklist
 

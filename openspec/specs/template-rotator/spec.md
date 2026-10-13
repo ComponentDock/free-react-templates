@@ -20,7 +20,7 @@
   - Button Shapes: rounded-lg with smooth shadow and hover transition
   - Layout Structure: Header navigation, Hero banner with featured carousel items, grid-based card showcase, interactive testimonial/carousel slider section, newsletter signup, footer linking Component Dock.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Carousel 16 Showcase & Interactive Rotator
 
@@ -28,26 +28,26 @@ As a visitor exploring template designs, I want to view a responsive carousel an
 
 #### Scenario: Display Hero Carousel Section
 
-- **Given** the user visits the Rotator landing page
-- **When** the hero section loads
-- **Then** a prominent featured carousel banner is displayed with navigation controls (prev/next arrows, pagination dots) and call-to-action buttons.
+- **GIVEN** the user visits the Rotator landing page
+- **WHEN** the hero section loads
+- **THEN** a prominent featured carousel banner is displayed with navigation controls (prev/next arrows, pagination dots) and call-to-action buttons
 
 #### Scenario: Interactive Slide Navigation
 
-- **Given** the user is viewing the carousel slides
-- **When** they click the next/previous navigation controls
-- **Then** the active slide smoothly transitions and updates the displayed headline, description, and preview image.
+- **GIVEN** the user is viewing the carousel slides
+- **WHEN** they click the next/previous navigation controls
+- **THEN** the active slide smoothly transitions and updates the displayed headline, description, and preview image
 
 #### Scenario: Feature Card Grid
 
-- **Given** the user scrolls down past the hero carousel
-- **When** the feature cards section appears
-- **Then** a responsive multi-column grid displays categorized highlight cards with icons, titles, and descriptions.
+- **GIVEN** the user scrolls down past the hero carousel
+- **WHEN** the feature cards section appears
+- **THEN** a responsive multi-column grid displays categorized highlight cards with icons, titles, and descriptions
 
 #### Scenario: Footer Attribution
 
-- **Given** the user reaches the bottom of the page
-- **Then** the footer displays copyright information and a link to `https://www.componentdock.com/`.
+- **GIVEN** the user reaches the bottom of the page
+- **THEN** the footer displays copyright information and a link to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

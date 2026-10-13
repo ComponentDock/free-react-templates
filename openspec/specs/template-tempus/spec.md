@@ -20,75 +20,83 @@ Recreation of ColorLib Calendar 03 (`https://colorlib.com/wp/template/calendar-0
   - Button Radius: Rounded-lg (`0.5rem`)
   - Spacing Rhythm: Standard Tailwind spacing (`space-y-6`, `gap-6`)
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Header & Navigation
 
 As a user visiting Tempus, I want clear navigation to access calendar views, events, categories, and account actions.
 
-- **Scenario: Desktop navigation renders links and action button**
-  - Given the user views the header
-  - Then the logo "Tempus" is displayed
-  - And navigation links ("Calendar", "Events", "Categories", "Pricing") are visible
-  - And a "Sign In" button is present
+#### Scenario: Desktop navigation renders links and action button
 
-- **Scenario: Mobile hamburger menu toggles navigation drawer**
-  - Given the user is on a mobile device
-  - When they click the hamburger toggle
-  - Then the mobile navigation drawer opens with all menu items
+- **GIVEN** the user views the header
+- **THEN** the logo "Tempus" is displayed
+- **AND** navigation links ("Calendar", "Events", "Categories", "Pricing") are visible
+- **AND** a "Sign In" button is present
+
+#### Scenario: Mobile hamburger menu toggles navigation drawer
+
+- **GIVEN** the user is on a mobile device
+- **WHEN** they click the hamburger toggle
+- **THEN** the mobile navigation drawer opens with all menu items
 
 ### Feature: Hero Section
 
 As a user, I want a welcoming hero section with quick calendar search and date filtering.
 
-- **Scenario: Hero banner displays title and search controls**
-  - Given the user views the hero section
-  - Then the headline "Manage Your Schedule Seamlessly" is displayed
-  - And a quick search input with date picker filter is rendered
+#### Scenario: Hero banner displays title and search controls
+
+- **GIVEN** the user views the hero section
+- **THEN** the headline "Manage Your Schedule Seamlessly" is displayed
+- **AND** a quick search input with date picker filter is rendered
 
 ### Feature: Monthly Calendar Grid View
 
 As a user, I want an interactive monthly calendar view to inspect days and scheduled events.
 
-- **Scenario: Calendar grid renders days of the week and date cells**
-  - Given the user views the calendar grid section
-  - Then days of the week (Sun to Sat) are displayed as column headers
-  - And calendar day cells show date numbers with event badges where applicable
-  - When the user clicks a day cell
-  - Then event details for that day are highlighted
+#### Scenario: Calendar grid renders days of the week and date cells
+
+- **GIVEN** the user views the calendar grid section
+- **THEN** days of the week (Sun to Sat) are displayed as column headers
+- **AND** calendar day cells show date numbers with event badges where applicable
+- **WHEN** the user clicks a day cell
+- **THEN** event details for that day are highlighted
 
 ### Feature: Upcoming Events List
 
 As a user, I want to see upcoming events with time, location, and RSVP options.
 
-- **Scenario: Upcoming events cards display event meta**
-  - Given the user views the upcoming events section
-  - Then event cards show time, title, location, and an "RSVP" / "Details" button
+#### Scenario: Upcoming events cards display event meta
+
+- **GIVEN** the user views the upcoming events section
+- **THEN** event cards show time, title, location, and an "RSVP" / "Details" button
 
 ### Feature: Event Categories
 
 As a user, I want to browse event categories to filter schedules.
 
-- **Scenario: Category cards render with icons and item counts**
-  - Given the user views the event categories section
-  - Then category cards (Work, Conference, Social, Personal) display icons and item counts
+#### Scenario: Category cards render with icons and item counts
+
+- **GIVEN** the user views the event categories section
+- **THEN** category cards (Work, Conference, Social, Personal) display icons and item counts
 
 ### Feature: Newsletter Subscription
 
 As a user, I want to subscribe to event updates and reminders.
 
-- **Scenario: Newsletter form submits email address**
-  - Given the user enters a valid email in the newsletter input
-  - When they click "Subscribe"
-  - Then a success confirmation message is displayed
+#### Scenario: Newsletter form submits email address
+
+- **GIVEN** the user enters a valid email in the newsletter input
+- **WHEN** they click "Subscribe"
+- **THEN** a success confirmation message is displayed
 
 ### Feature: Footer
 
 As a user, I want standard footer links and Component Dock attribution.
 
-- **Scenario: Footer displays brand info and required attribution**
-  - Given the user scrolls to the footer
-  - Then copyright info, navigation links, and "More templates at Component Dock" linking `https://www.componentdock.com/` are visible
+#### Scenario: Footer displays brand info and required attribution
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** copyright info, navigation links, and "More templates at Component Dock" linking `https://www.componentdock.com/` are visible
 
 ## Verification Checklist
 

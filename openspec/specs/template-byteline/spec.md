@@ -109,110 +109,125 @@ Extracted from the live preview CSS (`assets/css/style.css`) at https://preview.
 - Footer bottom: Copyright bar with terms/privacy links
 - Footer MUST link `https://www.componentdock.com/`
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Byteline template behaviour
+
 Feature: Byteline — News / Magazine Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "Byteline"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "Byteline"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Header top bar renders correctly
-    Given the user is on a desktop viewport (width >= 768px)
-    Then a black top bar with weather info and date is visible
-    And social media icons (Twitter, Instagram, Pinterest) are shown on the right
+#### Scenario: Header top bar renders correctly
 
-  Scenario: Header mid shows logo and banner
-    Given the user is on a desktop viewport
-    Then the site logo is visible on the left
-    And a header banner image is visible on the right
+- **GIVEN** the user is on a desktop viewport (width >= 768px)
+- **THEN** a black top bar with weather info and date is visible
+- **AND** social media icons (Twitter, Instagram, Pinterest) are shown on the right
 
-  Scenario: Sticky navigation works
-    Given the user scrolls down past the header
-    Then the navigation bar sticks to the top of the viewport
-    And the sticky logo and nav links remain visible
-    And a search icon is visible on the right
+#### Scenario: Header mid shows logo and banner
 
-  Scenario: Navigation links are present
-    Given the nav bar is visible
-    Then navigation links "Home", "Category", "About", "Latest News", "Contact" are shown
-    And a "Pages" dropdown with submenu items is present
+- **GIVEN** the user is on a desktop viewport
+- **THEN** the site logo is visible on the left
+- **AND** a header banner image is visible on the right
 
-  Scenario: Trending area shows breaking news
-    Given the trending section is in the viewport
-    Then the heading "Trending now" is visible
-    And an animated ticker with scrolling headlines is displayed
-    And a large featured image card with category badge and headline is shown
-    And 3 smaller news cards are displayed below the featured card
-    And 5 sidebar thumbnail cards are displayed on the right
+#### Scenario: Sticky navigation works
 
-  Scenario: Weekly Top News carousel renders
-    Given the weekly news section is scrolled into view
-    Then the heading "Weekly Top News" is visible
-    And at least 4 news cards are visible in a horizontal carousel
-    And each card has an image, category badge, and headline
+- **GIVEN** the user scrolls down past the header
+- **THEN** the navigation bar sticks to the top of the viewport
+- **AND** the sticky logo and nav links remain visible
+- **AND** a search icon is visible on the right
 
-  Scenario: What's New tabs work
-    Given the What's New section is scrolled into view
-    Then the heading "Whats New" is visible
-    And tabs "All", "Lifestyle", "Travel", "Fashion", "Sports", "Technology" are shown
-    And the "All" tab is active by default
-    When the user clicks the "Lifestyle" tab
-    Then the "Lifestyle" tab becomes active
-    And 4 news cards are displayed in a 2x2 grid
+#### Scenario: Navigation links are present
 
-  Scenario: Follow Us sidebar shows social counters
-    Given the What's New section is scrolled into view
-    Then the "Follow Us" heading is visible in the right sidebar
-    And 4 social platform rows (Facebook, Twitter, Instagram, YouTube) are shown
-    And each row displays a follower count
+- **GIVEN** the nav bar is visible
+- **THEN** navigation links "Home", "Category", "About", "Latest News", "Contact" are shown
+- **AND** a "Pages" dropdown with submenu items is present
 
-  Scenario: Weekly News 2 section renders on gray background
-    Given the weekly2 news section is scrolled into view
-    Then the section has a gray background
-    And at least 5 news cards are visible in a horizontal carousel
+#### Scenario: Trending area shows breaking news
 
-  Scenario: Video / YouTube section renders
-    Given the video section is scrolled into view
-    Then a video carousel with playable video thumbnails is visible
-    And a "Politics" category badge with headline and description is shown
-    And a grid of small video thumbnail cards is displayed
+- **GIVEN** the trending section is in the viewport
+- **THEN** the heading "Trending now" is visible
+- **AND** an animated ticker with scrolling headlines is displayed
+- **AND** a large featured image card with category badge and headline is shown
+- **AND** 3 smaller news cards are displayed below the featured card
+- **AND** 5 sidebar thumbnail cards are displayed on the right
 
-  Scenario: Recent Articles carousel renders
-    Given the recent articles section is scrolled into view
-    Then the heading "Recent Articles" is visible
-    And at least 4 article cards are visible in a horizontal carousel
-    And each card has an image, category badge, and headline
+#### Scenario: Weekly Top News carousel renders
 
-  Scenario: Pagination renders
-    Given the pagination section is in the viewport
-    Then numbered page links (01, 02, 03) are visible
-    And previous/next arrow buttons are present
-    And page 01 is highlighted as active
+- **GIVEN** the weekly news section is scrolled into view
+- **THEN** the heading "Weekly Top News" is visible
+- **AND** at least 4 news cards are visible in a horizontal carousel
+- **AND** each card has an image, category badge, and headline
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then the site logo and description paragraph are shown
-    And a newsletter signup form with email input and submit button is visible
-    And an Instagram feed grid with 6 thumbnail images is shown
-    And social icon links (Twitter, Instagram, Pinterest) are visible
-    And a copyright notice with terms/privacy links is displayed
-    And a link to "https://www.componentdock.com/" is present
+#### Scenario: What's New tabs work
 
-  Scenario: Responsive layout adapts on mobile
-    Given the user is on a mobile viewport (width < 768px)
-    Then the header top bar and mid section are hidden
-    And the navigation collapses to a hamburger menu
-    And trending, weekly, and article cards stack vertically
-    And the footer columns stack vertically
+- **GIVEN** the What's New section is scrolled into view
+- **THEN** the heading "Whats New" is visible
+- **AND** tabs "All", "Lifestyle", "Travel", "Fashion", "Sports", "Technology" are shown
+- **AND** the "All" tab is active by default
+- **WHEN** the user clicks the "Lifestyle" tab
+- **THEN** the "Lifestyle" tab becomes active
+- **AND** 4 news cards are displayed in a 2x2 grid
 
-  Scenario: Category badges use correct color tints
-    Given any news card with a category badge is visible
-    Then the badge background matches its category color tint
-    And the badge text is readable with sufficient contrast
-```
+#### Scenario: Follow Us sidebar shows social counters
+
+- **GIVEN** the What's New section is scrolled into view
+- **THEN** the "Follow Us" heading is visible in the right sidebar
+- **AND** 4 social platform rows (Facebook, Twitter, Instagram, YouTube) are shown
+- **AND** each row displays a follower count
+
+#### Scenario: Weekly News 2 section renders on gray background
+
+- **GIVEN** the weekly2 news section is scrolled into view
+- **THEN** the section has a gray background
+- **AND** at least 5 news cards are visible in a horizontal carousel
+
+#### Scenario: Video / YouTube section renders
+
+- **GIVEN** the video section is scrolled into view
+- **THEN** a video carousel with playable video thumbnails is visible
+- **AND** a "Politics" category badge with headline and description is shown
+- **AND** a grid of small video thumbnail cards is displayed
+
+#### Scenario: Recent Articles carousel renders
+
+- **GIVEN** the recent articles section is scrolled into view
+- **THEN** the heading "Recent Articles" is visible
+- **AND** at least 4 article cards are visible in a horizontal carousel
+- **AND** each card has an image, category badge, and headline
+
+#### Scenario: Pagination renders
+
+- **GIVEN** the pagination section is in the viewport
+- **THEN** numbered page links (01, 02, 03) are visible
+- **AND** previous/next arrow buttons are present
+- **AND** page 01 is highlighted as active
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** the site logo and description paragraph are shown
+- **AND** a newsletter signup form with email input and submit button is visible
+- **AND** an Instagram feed grid with 6 thumbnail images is shown
+- **AND** social icon links (Twitter, Instagram, Pinterest) are visible
+- **AND** a copyright notice with terms/privacy links is displayed
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts on mobile
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the header top bar and mid section are hidden
+- **AND** the navigation collapses to a hamburger menu
+- **AND** trending, weekly, and article cards stack vertically
+- **AND** the footer columns stack vertically
+
+#### Scenario: Category badges use correct color tints
+
+- **GIVEN** any news card with a category badge is visible
+- **THEN** the badge background matches its category color tint
+- **AND** the badge text is readable with sufficient contrast
 
 ## Verification Checklist
 

@@ -53,111 +53,127 @@ Extracted from the live preview CSS (`css/style.css`) and inline styles.
 | CTA Banner       | Primary (`bg-primary` / `#007bff`)       |
 | Footer           | White (`#fff`)                            |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header Navigation
 
-  Scenario: Logo display
-    Given the page loads
-    Then the navbar shows "CarRental" as a bold logo link
+#### Scenario: Logo display
 
-  Scenario: Navigation links
-    Given the page loads
-    Then the navbar contains links: Home, Listing, Testimonials, Blog, About, Contact
-    And "Home" is marked as the active link
+- **GIVEN** the page loads
+- **THEN** the navbar shows "CarRental" as a bold logo link
 
-  Scenario: Mobile menu toggle
-    Given the viewport is narrow (< 992px)
-    When the user clicks the hamburger menu icon
-    Then the mobile navigation menu opens
-    When the user clicks the close icon
-    Then the mobile navigation menu closes
+#### Scenario: Navigation links
+
+- **GIVEN** the page loads
+- **THEN** the navbar contains links: Home, Listing, Testimonials, Blog, About, Contact
+- **AND** "Home" is marked as the active link
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** the viewport is narrow (< 992px)
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** the mobile navigation menu opens
+- **WHEN** the user clicks the close icon
+- **THEN** the mobile navigation menu closes
 
 ### Feature: Hero Section with Search Form
 
-  Scenario: Hero background and heading
-    Given the page loads
-    Then the hero section displays a full-viewport background image
-    And the heading reads "Rent a car is within your finger tips."
+#### Scenario: Hero background and heading
 
-  Scenario: Search form fields
-    Given the hero search form is visible
-    Then the form contains a "Select Type" dropdown
-    And a "Pick up" date input
-    And a "Drop off" date input
-    And a "Search Now" submit button
+- **GIVEN** the page loads
+- **THEN** the hero section displays a full-viewport background image
+- **AND** the heading reads "Rent a car is within your finger tips."
 
-  Scenario: Search form submission
-    Given the user selects a car type, pick up date, and drop off date
-    When the user clicks "Search Now"
-    Then the form is submitted (placeholder behavior)
+#### Scenario: Search form fields
+
+- **GIVEN** the hero search form is visible
+- **THEN** the form contains a "Select Type" dropdown
+- **AND** a "Pick up" date input
+- **AND** a "Drop off" date input
+- **AND** a "Search Now" submit button
+
+#### Scenario: Search form submission
+
+- **GIVEN** the user selects a car type, pick up date, and drop off date
+- **WHEN** the user clicks "Search Now"
+- **THEN** the form is submitted (placeholder behavior)
 
 ### Feature: How It Works
 
-  Scenario: Steps display
-    Given the user scrolls to the "How it works?" section
-    Then 3 steps are shown in a row: "Select a car", "Fill up form", "Payment"
-    And each step has a numbered indicator (01., 02., 03.) in brand blue
+#### Scenario: Steps display
 
-  Scenario: Video play link
-    Given the how-it-works section is visible
-    Then a "Video how it works" play button is displayed below the steps
+- **GIVEN** the user scrolls to the "How it works?" section
+- **THEN** 3 steps are shown in a row: "Select a car", "Fill up form", "Payment"
+- **AND** each step has a numbered indicator (01., 02., 03.) in brand blue
+
+#### Scenario: Video play link
+
+- **GIVEN** the how-it-works section is visible
+- **THEN** a "Video how it works" play button is displayed below the steps
 
 ### Feature: Promo / Feature Split Section
 
-  Scenario: Promo layout
-    Given the user scrolls to the promo section
-    Then a large feature image is shown on the right
-    And a heading "You can easily avail our promo for renting a car." on the left
-    And a "Meet them now" primary button is below the text
+#### Scenario: Promo layout
+
+- **GIVEN** the user scrolls to the promo section
+- **THEN** a large feature image is shown on the right
+- **AND** a heading "You can easily avail our promo for renting a car." on the left
+- **AND** a "Meet them now" primary button is below the text
 
 ### Feature: Car Listings
 
-  Scenario: Listing cards grid
-    Given the user scrolls to the Car Listings section (light background)
-    Then 6 car listing cards are displayed in a 3-column grid
-    And each card shows a car image, name, and daily price (e.g. "$389.00/day")
+#### Scenario: Listing cards grid
 
-  Scenario: Car card details
-    Given a car listing card is rendered
-    Then it shows feature specs: Luggage, Doors, Passenger counts
-    And a "Rent Now" primary button is at the bottom
+- **GIVEN** the user scrolls to the Car Listings section (light background)
+- **THEN** 6 car listing cards are displayed in a 3-column grid
+- **AND** each card shows a car image, name, and daily price (e.g. "$389.00/day")
+
+#### Scenario: Car card details
+
+- **GIVEN** a car listing card is rendered
+- **THEN** it shows feature specs: Luggage, Doors, Passenger counts
+- **AND** a "Rent Now" primary button is at the bottom
 
 ### Feature: Features Grid
 
-  Scenario: Feature cards
-    Given the user scrolls to the Features section
-    Then 6 service/feature cards are displayed in a 3-column x 2-row grid
-    And each card has an icon, a title, a description, and a "Learn more" link
-    And cards have hover shadow effect
+#### Scenario: Feature cards
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** 6 service/feature cards are displayed in a 3-column x 2-row grid
+- **AND** each card has an icon, a title, a description, and a "Learn more" link
+- **AND** cards have hover shadow effect
 
 ### Feature: Testimonials
 
-  Scenario: Testimonial cards
-    Given the user scrolls to the Testimonials section (light background)
-    Then 3 testimonial cards are displayed in a 3-column grid
-    And each card shows a blockquote with review text
-    And an author avatar (circular), name, and role below the quote
+#### Scenario: Testimonial cards
+
+- **GIVEN** the user scrolls to the Testimonials section (light background)
+- **THEN** 3 testimonial cards are displayed in a 3-column grid
+- **AND** each card shows a blockquote with review text
+- **AND** an author avatar (circular), name, and role below the quote
 
 ### Feature: CTA Banner
 
-  Scenario: Call to action
-    Given the user scrolls to the CTA section (blue background)
-    Then the heading reads "What are you waiting for?"
-    And a subtext is shown below
-    And a "Rent a car now" white button is displayed on the right
+#### Scenario: Call to action
+
+- **GIVEN** the user scrolls to the CTA section (blue background)
+- **THEN** the heading reads "What are you waiting for?"
+- **AND** a subtext is shown below
+- **AND** a "Rent a car now" white button is displayed on the right
 
 ### Feature: Footer
 
-  Scenario: Footer columns
-    Given the page footer is visible
-    Then it contains 5 columns: About Us (with social icons), Quick Links, Resources, Support, Company
-    And a copyright line is shown at the bottom
-    And the copyright links to Component Dock (replaces original Colorlib attribution)
+#### Scenario: Footer columns
 
-  Scenario: Footer social icons
-    Given the About Us column is visible
-    Then social icons for Facebook, Instagram, Twitter, and LinkedIn are displayed
+- **GIVEN** the page footer is visible
+- **THEN** it contains 5 columns: About Us (with social icons), Quick Links, Resources, Support, Company
+- **AND** a copyright line is shown at the bottom
+- **AND** the copyright links to Component Dock (replaces original Colorlib attribution)
+
+#### Scenario: Footer social icons
+
+- **GIVEN** the About Us column is visible
+- **THEN** social icons for Facebook, Instagram, Twitter, and LinkedIn are displayed
 
 ## Verification Checklist
 

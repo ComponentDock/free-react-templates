@@ -67,73 +67,84 @@ Two-column split layout:
 └──────────────────────────────────────────────────┘
 ```
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Student Registration Form
 
 #### Scenario: Page renders with two-column layout
-  - **Given** the user loads the page
-  - **Then** the body background is dark charcoal (#282828)
-  - **And** a white container is centered with max-width 1400px
-  - **And** the layout is two columns: image (left, 50%) and form (right, 50%)
+
+- **GIVEN** the user loads the page
+- **THEN** the body background is dark charcoal (#282828)
+- **AND** a white container is centered with max-width 1400px
+- **AND** the layout is two columns: image (left, 50%) and form (right, 50%)
 
 #### Scenario: Hero image displays correctly
-  - **Given** the user loads the page
-  - **Then** a placeholder image (students with tablet) fills the left column
-  - **And** the image is responsive (scales with container)
+
+- **GIVEN** the user loads the page
+- **THEN** a placeholder image (students with tablet) fills the left column
+- **AND** the image is responsive (scales with container)
 
 #### Scenario: Form heading displays
-  - **Given** the user loads the page
-  - **Then** the heading "STUDENT REGISTRATION FORM" is displayed
-  - **And** it uses Montserrat font, weight 700, 20px, uppercase, color #222
+
+- **GIVEN** the user loads the page
+- **THEN** the heading "STUDENT REGISTRATION FORM" is displayed
+- **AND** it uses Montserrat font, weight 700, 20px, uppercase, color #222
 
 #### Scenario: Name and Father Name fields are side by side
-  - **Given** the user loads the page
-  - **Then** the Name and Father Name inputs are in a two-column row
-  - **And** each field has a bold Montserrat label ("Name :", "Father Name :")
-  - **And** inputs have 1px #ebebeb border, Montserrat 13px font
+
+- **GIVEN** the user loads the page
+- **THEN** the Name and Father Name inputs are in a two-column row
+- **AND** each field has a bold Montserrat label ("Name :", "Father Name :")
+- **AND** inputs have 1px #ebebeb border, Montserrat 13px font
 
 #### Scenario: Address field spans full width
-  - **Given** the user loads the page
-  - **Then** the Address input spans the full form width
+
+- **GIVEN** the user loads the page
+- **THEN** the Address input spans the full form width
 
 #### Scenario: Gender radio buttons
-  - **Given** the user loads the page
-  - **Then** "Gender :" label is displayed with Male and Female radio options
-  - **And** Male is checked by default
-  - **And** the selected radio shows an orange (#ff6801) filled circle
+
+- **GIVEN** the user loads the page
+- **THEN** "Gender :" label is displayed with Male and Female radio options
+- **AND** Male is checked by default
+- **AND** the selected radio shows an orange (#ff6801) filled circle
 
 #### Scenario: State and City dropdowns are side by side
-  - **Given** the user loads the page
-  - **Then** State and City select dropdowns are in a two-column row
-  - **And** each has a chevron-down icon on the right side
+
+- **GIVEN** the user loads the page
+- **THEN** State and City select dropdowns are in a two-column row
+- **AND** each has a chevron-down icon on the right side
 
 #### Scenario: DOB, Pincode, Course, and Email fields
-  - **Given** the user loads the page
-  - **Then** DOB and Pincode are text inputs spanning full width
-  - **And** Course is a full-width select dropdown with chevron icon
-  - **And** Email ID is a full-width email input
+
+- **GIVEN** the user loads the page
+- **THEN** DOB and Pincode are text inputs spanning full width
+- **AND** Course is a full-width select dropdown with chevron icon
+- **AND** Email ID is a full-width email input
 
 #### Scenario: Submit and Reset buttons
-  - **Given** the user loads the page
-  - **Then** a "Submit Form" button is displayed with #ff6801 background, white text
-  - **And** a "Reset All" button is displayed with #f8f8f8 background, #999 text
-  - **And** both buttons are 140px wide, 40px tall, square corners
-  - **And** buttons are right-aligned at the bottom of the form
-  - **And** on hover, Submit turns #cd5300 and Reset turns #ff6801 with white text
+
+- **GIVEN** the user loads the page
+- **THEN** a "Submit Form" button is displayed with #ff6801 background, white text
+- **AND** a "Reset All" button is displayed with #f8f8f8 background, #999 text
+- **AND** both buttons are 140px wide, 40px tall, square corners
+- **AND** buttons are right-aligned at the bottom of the form
+- **AND** on hover, Submit turns #cd5300 and Reset turns #ff6801 with white text
 
 #### Scenario: Input focus state
-  - **Given** the user focuses on any input or select
-  - **Then** the border changes to #ff6801 (orange accent)
+
+- **GIVEN** the user focuses on any input or select
+- **THEN** the border changes to #ff6801 (orange accent)
 
 #### Scenario: Responsive behavior
-  - **Given** the viewport width is ≤992px
-  - **Then** the two columns stack vertically (image on top, form below)
-  - **And** the container uses full width minus 40px padding
-  - **Given** the viewport width is ≤575px
-  - **Then** Name/Father Name and State/City rows stack into single columns
-  - **Given** the viewport width is ≤480px
-  - **Then** buttons span full width and stack vertically
+
+- **GIVEN** the viewport width is ≤992px
+- **THEN** the two columns stack vertically (image on top, form below)
+- **AND** the container uses full width minus 40px padding
+- **GIVEN** the viewport width is ≤575px
+- **THEN** Name/Father Name and State/City rows stack into single columns
+- **GIVEN** the viewport width is ≤480px
+- **THEN** buttons span full width and stack vertically
 
 ## Verification checklist
 

@@ -56,114 +56,141 @@ Extracted from `preview.colorlib.com/theme/grunt/css/style.css` and preview DOM.
 9. **Contact** — "Get In Touch" label + "Contact Us" heading. Contact form with fields: name, email, subject, message + "Send Message" submit button. Form inputs have `#f6f6f6` background.
 10. **Footer** — Dark (`#333333`) background. 3 columns: About text, Navigation links (Home, What We Do, About Us, Team), Newsletter signup (email input + Subscribe button). Bottom: copyright line "All rights reserved".
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: ArtForge template behaviour
+
 Feature: ArtForge Creative Agency Template
-  As a visitor to the ArtForge website
-  I want to browse a professional creative agency site
-  So that I can learn about the agency's services, team, and portfolio
+As a visitor to the ArtForge website
+I want to browse a professional creative agency site
+So that I can learn about the agency's services, team, and portfolio
 
-  Background:
-    Given the user is on the ArtForge homepage
+Background:
+- **GIVEN** the user is on the ArtForge homepage
 
-  # --- Navbar ---
-  Scenario: Navbar displays on load
-    Then the navbar is visible at the top of the page
-    And the logo text "ArtForge" is displayed
-    And navigation links "Home", "What We Do", "About Us", "Portfolio", "Gallery", "Contact" are present
+**--- Navbar ---**
 
-  Scenario: Navbar becomes sticky on scroll
-    When the user scrolls down past the hero section
-    Then the navbar remains fixed at the top
-    And the navbar background changes to a light gray
+#### Scenario: Navbar displays on load
 
-  Scenario: Mobile hamburger menu opens
-    Given the viewport width is less than 768px
-    When the user taps the hamburger menu icon
-    Then a mobile navigation drawer slides open
-    And all navigation links are listed vertically
+- **THEN** the navbar is visible at the top of the page
+- **AND** the logo text "ArtForge" is displayed
+- **AND** navigation links "Home", "What We Do", "About Us", "Portfolio", "Gallery", "Contact" are present
 
-  # --- Hero Slider ---
-  Scenario: Hero slider displays with background images
-    Then a fullscreen hero section is visible
-    And the heading "ArtForge" is displayed in large bold text
-    And a subtitle paragraph is displayed below the heading
-    And a "Start a project" CTA button is visible
+#### Scenario: Navbar becomes sticky on scroll
 
-  Scenario: Hero slider auto-advances
-    Then the hero slider cycles through 3 slides automatically
-    And carousel navigation dots are visible
+- **WHEN** the user scrolls down past the hero section
+- **THEN** the navbar remains fixed at the top
+- **AND** the navbar background changes to a light gray
 
-  Scenario: CTA button navigates to contact
-    When the user clicks "Start a project"
-    Then the page scrolls to the contact section
+#### Scenario: Mobile hamburger menu opens
 
-  # --- Services ---
-  Scenario: Services section displays 6 service cards
-    When the user scrolls to the "What We Do" section
-    Then 6 service cards are displayed in a 3-column grid
-    And each card has an icon, title, description, and "Learn more" link
-    And the service titles are "Design", "Development", "eCommerce", "Mobile Apps", "CopyWriting", "Search Engine Optimization"
+- **GIVEN** the viewport width is less than 768px
+- **WHEN** the user taps the hamburger menu icon
+- **THEN** a mobile navigation drawer slides open
+- **AND** all navigation links are listed vertically
 
-  # --- About ---
-  Scenario: About section shows description and skills
-    When the user scrolls to the "About us" section
-    Then a heading "About us" is displayed
-    And descriptive text about the agency is shown
-    And a "Watch the video" button is visible
-    And skill progress bars are displayed for Design, Development, eCommerce, Mobile Apps, Copywriting, and SEO
+**--- Hero Slider ---**
 
-  # --- Team ---
-  Scenario: Team section displays member profiles
-    When the user scrolls to the "Meet The Team" section
-    Then 2 team member cards are displayed
-    And each card shows a photo, name, role, and bio
-    And social follow links are present for each team member
+#### Scenario: Hero slider displays with background images
 
-  # --- Portfolio ---
-  Scenario: Portfolio gallery displays project items
-    When the user scrolls to the portfolio section
-    Then at least 3 project items are displayed in a grid
-    And each item has a title and "Visit website" link
-    And hover effects reveal overlay information
+- **THEN** a fullscreen hero section is visible
+- **AND** the heading "ArtForge" is displayed in large bold text
+- **AND** a subtitle paragraph is displayed below the heading
+- **AND** a "Start a project" CTA button is visible
 
-  # --- Testimonials ---
-  Scenario: Testimonials slider displays client quotes
-    When the user scrolls to the "Our Client Sayings" section
-    Then client testimonials are displayed in a carousel
-    And each testimonial shows a quote and client attribution
+#### Scenario: Hero slider auto-advances
 
-  # --- Studio Gallery ---
-  Scenario: Studio gallery displays photo grid
-    When the user scrolls to the "Studio Gallery" section
-    Then a masonry-style photo grid is displayed
-    And at least 6 images are shown
+- **THEN** the hero slider cycles through 3 slides automatically
+- **AND** carousel navigation dots are visible
 
-  # --- Contact ---
-  Scenario: Contact form renders all fields
-    When the user scrolls to the "Contact Us" section
-    Then a form with name, email, subject, and message fields is displayed
-    And a "Send Message" submit button is present
+#### Scenario: CTA button navigates to contact
 
-  Scenario: Contact form validates required fields
-    When the user clicks "Send Message" without filling any fields
-    Then validation errors appear for required fields
+- **WHEN** the user clicks "Start a project"
+- **THEN** the page scrolls to the contact section
 
-  # --- Footer ---
-  Scenario: Footer displays with navigation and newsletter
-    Then a dark footer section is visible
-    And the footer contains about text, navigation links, and a newsletter signup
-    And a copyright notice is displayed
-    And the footer links to https://www.componentdock.com/
+**--- Services ---**
 
-  # --- Responsive ---
-  Scenario: Layout adapts to mobile viewport
-    Given the viewport width is 375px
-    Then the service grid stacks to a single column
-    And the team cards stack vertically
-    And the contact form is full-width
-```
+#### Scenario: Services section displays 6 service cards
+
+- **WHEN** the user scrolls to the "What We Do" section
+- **THEN** 6 service cards are displayed in a 3-column grid
+- **AND** each card has an icon, title, description, and "Learn more" link
+- **AND** the service titles are "Design", "Development", "eCommerce", "Mobile Apps", "CopyWriting", "Search Engine Optimization"
+
+**--- About ---**
+
+#### Scenario: About section shows description and skills
+
+- **WHEN** the user scrolls to the "About us" section
+- **THEN** a heading "About us" is displayed
+- **AND** descriptive text about the agency is shown
+- **AND** a "Watch the video" button is visible
+- **AND** skill progress bars are displayed for Design, Development, eCommerce, Mobile Apps, Copywriting, and SEO
+
+**--- Team ---**
+
+#### Scenario: Team section displays member profiles
+
+- **WHEN** the user scrolls to the "Meet The Team" section
+- **THEN** 2 team member cards are displayed
+- **AND** each card shows a photo, name, role, and bio
+- **AND** social follow links are present for each team member
+
+**--- Portfolio ---**
+
+#### Scenario: Portfolio gallery displays project items
+
+- **WHEN** the user scrolls to the portfolio section
+- **THEN** at least 3 project items are displayed in a grid
+- **AND** each item has a title and "Visit website" link
+- **AND** hover effects reveal overlay information
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials slider displays client quotes
+
+- **WHEN** the user scrolls to the "Our Client Sayings" section
+- **THEN** client testimonials are displayed in a carousel
+- **AND** each testimonial shows a quote and client attribution
+
+**--- Studio Gallery ---**
+
+#### Scenario: Studio gallery displays photo grid
+
+- **WHEN** the user scrolls to the "Studio Gallery" section
+- **THEN** a masonry-style photo grid is displayed
+- **AND** at least 6 images are shown
+
+**--- Contact ---**
+
+#### Scenario: Contact form renders all fields
+
+- **WHEN** the user scrolls to the "Contact Us" section
+- **THEN** a form with name, email, subject, and message fields is displayed
+- **AND** a "Send Message" submit button is present
+
+#### Scenario: Contact form validates required fields
+
+- **WHEN** the user clicks "Send Message" without filling any fields
+- **THEN** validation errors appear for required fields
+
+**--- Footer ---**
+
+#### Scenario: Footer displays with navigation and newsletter
+
+- **THEN** a dark footer section is visible
+- **AND** the footer contains about text, navigation links, and a newsletter signup
+- **AND** a copyright notice is displayed
+- **AND** the footer links to https://www.componentdock.com/
+
+**--- Responsive ---**
+
+#### Scenario: Layout adapts to mobile viewport
+
+- **GIVEN** the viewport width is 375px
+- **THEN** the service grid stacks to a single column
+- **AND** the team cards stack vertically
+- **AND** the contact form is full-width
 
 ## Verification Checklist
 

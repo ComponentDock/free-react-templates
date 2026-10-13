@@ -49,71 +49,83 @@ Extracted from the live preview stylesheet (`css/style.css`):
 9. **Contact** — "Get in Touch!" heading, brief text, "Contact me!" CTA button.
 10. **Footer** — Dark footer with copyright notice, attribution text, social links.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with overlay style
-- Given the user is on the landing page
-- Then a transparent/overlay navbar is visible with the logo "WorkCraft"
-- And navigation links: Home, Work, About, Services, Blog, Contact
-- When the viewport is below lg breakpoint
-- Then a hamburger toggle appears
-- And clicking it expands/collapses the nav menu
+### Feature: WorkCraft template behaviour
 
-### Scenario: Hero slider displays and cycles
-- Given the user views the top of the page
-- Then a full-width hero slider is visible
-- And slide 1 shows heading "Strategic Design for Brands"
-- And a "Learn More" pill CTA button is displayed
-- When 5 seconds pass (or user swipes)
-- Then the slider transitions to the next slide
-- And slide 2 shows "Creators of Brands Template"
-- And slide 3 shows "Design & develop functional sites"
+#### Scenario: Navbar renders with overlay style
 
-### Scenario: About section introduces the persona
-- Given the user scrolls to the About section
-- Then a "Welcome & Introduce" heading is displayed
-- And an intro paragraph introduces the persona
-- And a "Why choose me?" sub-section is present with explanatory text
+- **GIVEN** the user is on the landing page
+- **THEN** a transparent/overlay navbar is visible with the logo "WorkCraft"
+- **AND** navigation links: Home, Work, About, Services, Blog, Contact
+- **WHEN** the viewport is below lg breakpoint
+- **THEN** a hamburger toggle appears
+- **AND** clicking it expands/collapses the nav menu
 
-### Scenario: What I Do section displays service overview
-- Given the user scrolls to the "What I do?" section
-- Then a heading and descriptive text are shown
-- And 2-3 key service points are listed
+#### Scenario: Hero slider displays and cycles
 
-### Scenario: Expertise grid shows 6 items
-- Given the user scrolls to the expertise section
-- Then 6 expertise items are displayed in a grid
-- And each item shows: an icon, title (Branding, Web Design, SEO, Web Development, UI, Help & Support), and a description
+- **GIVEN** the user views the top of the page
+- **THEN** a full-width hero slider is visible
+- **AND** slide 1 shows heading "Strategic Design for Brands"
+- **AND** a "Learn More" pill CTA button is displayed
+- **WHEN** 5 seconds pass (or user swipes)
+- **THEN** the slider transitions to the next slide
+- **AND** slide 2 shows "Creators of Brands Template"
+- **AND** slide 3 shows "Design & develop functional sites"
 
-### Scenario: Portfolio shows 6 work items
-- Given the user scrolls to the "Recent Work" section
-- Then 6 project thumbnails are displayed in a grid
-- And each thumbnail shows an image with category labels
-- When the user hovers over a thumbnail
-- Then an overlay with project details appears
+#### Scenario: About section introduces the persona
 
-### Scenario: Blog section shows 3 posts
-- Given the user scrolls to the "Recent Blog" section
-- Then 3 blog post cards are displayed
-- And each card shows: image, date, category, comment count, title, excerpt, "Read More" link
+- **GIVEN** the user scrolls to the About section
+- **THEN** a "Welcome & Introduce" heading is displayed
+- **AND** an intro paragraph introduces the persona
+- **AND** a "Why choose me?" sub-section is present with explanatory text
 
-### Scenario: Contact section has CTA
-- Given the user scrolls to the contact section
-- Then a "Get in Touch!" heading is visible
-- And a "Contact me!" CTA button is displayed
+#### Scenario: What I Do section displays service overview
 
-### Scenario: Footer contains required links
-- Given the user scrolls to the footer
-- Then a dark footer section is visible
-- And copyright text is displayed
-- And a "Made with Component Dock" link pointing to `https://www.componentdock.com/` is present
+- **GIVEN** the user scrolls to the "What I do?" section
+- **THEN** a heading and descriptive text are shown
+- **AND** 2-3 key service points are listed
 
-### Scenario: Responsive layout
-- Given the user views the page on a mobile device (width < 768px)
-- Then sections stack vertically
-- And the navbar collapses to a hamburger menu
-- And the portfolio grid becomes 1-2 columns
-- And blog cards stack vertically
+#### Scenario: Expertise grid shows 6 items
+
+- **GIVEN** the user scrolls to the expertise section
+- **THEN** 6 expertise items are displayed in a grid
+- **AND** each item shows: an icon, title (Branding, Web Design, SEO, Web Development, UI, Help & Support), and a description
+
+#### Scenario: Portfolio shows 6 work items
+
+- **GIVEN** the user scrolls to the "Recent Work" section
+- **THEN** 6 project thumbnails are displayed in a grid
+- **AND** each thumbnail shows an image with category labels
+- **WHEN** the user hovers over a thumbnail
+- **THEN** an overlay with project details appears
+
+#### Scenario: Blog section shows 3 posts
+
+- **GIVEN** the user scrolls to the "Recent Blog" section
+- **THEN** 3 blog post cards are displayed
+- **AND** each card shows: image, date, category, comment count, title, excerpt, "Read More" link
+
+#### Scenario: Contact section has CTA
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a "Get in Touch!" heading is visible
+- **AND** a "Contact me!" CTA button is displayed
+
+#### Scenario: Footer contains required links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark footer section is visible
+- **AND** copyright text is displayed
+- **AND** a "Made with Component Dock" link pointing to `https://www.componentdock.com/` is present
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device (width < 768px)
+- **THEN** sections stack vertically
+- **AND** the navbar collapses to a hamburger menu
+- **AND** the portfolio grid becomes 1-2 columns
+- **AND** blog cards stack vertically
 
 ## Verification Checklist
 

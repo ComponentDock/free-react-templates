@@ -59,116 +59,106 @@ button. The blog section shows 3 cards with images and titles. A newsletter
 subscribe form sits above a dark footer with columns for logo, links, social
 icons, and copyright.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Header / Navigation
 
-```gherkin
-Scenario: Sticky header with logo and navigation links
-  Given the user loads the HealBase page
-  Then a sticky header is visible with the logo "HealBase" on the left
-  And navigation links "Home", "About", "Services", "Blog", "Contact" are on the right
-  And the header has a white background
-```
+#### Scenario: Sticky header with logo and navigation links
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a sticky header is visible with the logo "HealBase" on the left
+- **AND** navigation links "Home", "About", "Services", "Blog", "Contact" are on the right
+- **AND** the header has a white background
 
 ### Hero / Slider
 
-```gherkin
-Scenario: Hero section with headline and CTA
-  Given the user loads the HealBase page
-  Then a full-width hero section is visible with a background image
-  And the headline "Health is wealth keep it healthy" is displayed
-  And a CTA button is visible below the headline
-  And the hero text is white on a dark overlay
-```
+#### Scenario: Hero section with headline and CTA
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a full-width hero section is visible with a background image
+- **AND** the headline "Health is wealth keep it healthy" is displayed
+- **AND** a CTA button is visible below the headline
+- **AND** the hero text is white on a dark overlay
 
 ### About Section
 
-```gherkin
-Scenario: About section with image and text
-  Given the user loads the HealBase page
-  Then an about section is visible with a heading "Create a healthy life you love!"
-  And a descriptive paragraph is shown below the heading
-  And a large image is displayed alongside the text
-  And the section has a light background
-```
+#### Scenario: About section with image and text
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** an about section is visible with a heading "Create a healthy life you love!"
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** a large image is displayed alongside the text
+- **AND** the section has a light background
 
 ### CTA Banner
 
-```gherkin
-Scenario: Full-width CTA banner
-  Given the user loads the HealBase page
-  Then a full-width CTA banner is visible
-  And the banner displays "Happy mind healthy life"
-  And the banner has a dark background with a background image
-```
+#### Scenario: Full-width CTA banner
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a full-width CTA banner is visible
+- **AND** the banner displays "Happy mind healthy life"
+- **AND** the banner has a dark background with a background image
 
 ### Services Section
 
-```gherkin
-Scenario: Services cards with icons
-  Given the user loads the HealBase page
-  Then a services section is visible with a heading
-  And 3 service cards are displayed in a grid
-  And each card has an icon, a title "Physical Activity", and a description
-  And each card has a "+" button
-  And hovering a card changes its background to green
-```
+#### Scenario: Services cards with icons
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a services section is visible with a heading
+- **AND** 3 service cards are displayed in a grid
+- **AND** each card has an icon, a title "Physical Activity", and a description
+- **AND** each card has a "+" button
+- **AND** hovering a card changes its background to green
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel
-  Given the user loads the HealBase page
-  Then a testimonials section is visible
-  And testimonial slides contain a quote, author name, and role
-  And navigation dots are present below the testimonials
-  And the testimonials auto-rotate or respond to dot clicks
-```
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a testimonials section is visible
+- **AND** testimonial slides contain a quote, author name, and role
+- **AND** navigation dots are present below the testimonials
+- **AND** the testimonials auto-rotate or respond to dot clicks
 
 ### Video Area
 
-```gherkin
-Scenario: Video section with play button
-  Given the user loads the HealBase page
-  Then a video area is visible with a background image
-  And a centered play button icon is displayed
-  And the section has adequate height (at least 300px)
-```
+#### Scenario: Video section with play button
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a video area is visible with a background image
+- **AND** a centered play button icon is displayed
+- **AND** the section has adequate height (at least 300px)
 
 ### Blog Section
 
-```gherkin
-Scenario: Blog cards with images and titles
-  Given the user loads the HealBase page
-  Then a blog section is visible with the heading "Latest Blog"
-  And 3 blog cards are displayed in a row
-  And each card has an image, a title, and a description paragraph
-  And the titles are "Your daily meal plan", "Food is a great source of medicine", "Everyday diet plan"
-```
+#### Scenario: Blog cards with images and titles
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a blog section is visible with the heading "Latest Blog"
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card has an image, a title, and a description paragraph
+- **AND** the titles are "Your daily meal plan", "Food is a great source of medicine", "Everyday diet plan"
 
 ### Newsletter Section
 
-```gherkin
-Scenario: Newsletter subscribe form
-  Given the user loads the HealBase page
-  Then a newsletter section is visible
-  And the heading reads "100% satisfaction guaranteed."
-  And an email input field and submit button are present
-  And the section has a dark background
-```
+#### Scenario: Newsletter subscribe form
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a newsletter section is visible
+- **AND** the heading reads "100% satisfaction guaranteed."
+- **AND** an email input field and submit button are present
+- **AND** the section has a dark background
 
 ### Footer
 
-```gherkin
-Scenario: Footer with columns and links
-  Given the user loads the HealBase page
-  Then a footer is visible with a dark background
-  And the footer contains a logo section, link columns, and social icons
-  And social icons include Facebook, Twitter, and Pinterest
-  And a copyright line is at the bottom
-  And the footer links to https://www.componentdock.com/ (branded "Component Dock")
-```
+#### Scenario: Footer with columns and links
+
+- **GIVEN** the user loads the HealBase page
+- **THEN** a footer is visible with a dark background
+- **AND** the footer contains a logo section, link columns, and social icons
+- **AND** social icons include Facebook, Twitter, and Pinterest
+- **AND** a copyright line is at the bottom
+- **AND** the footer links to https://www.componentdock.com/ (branded "Component Dock")
 
 ## Verification Checklist
 

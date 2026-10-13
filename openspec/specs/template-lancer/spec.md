@@ -45,97 +45,111 @@ Recreation of ColorLib's **Ronin** template as a React 19 + Vite + Tailwind 4 + 
 7. **Blog** — Heading "Latest Posts from Blog" + subtitle. 3 blog post cards in a row. Each: featured image + date/author link + title + excerpt paragraph.
 8. **Footer** — Three columns: About Me (text), Newsletter (email input + submit arrow button), Follow Me (social icons: Facebook, Twitter, Dribbble, Behance). Bottom copyright line.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-Scenario: Desktop navigation renders all links
-  Given the user views the page at viewport width >= 992px
-  When the navbar loads
-  Then it displays the logo on the left
-  And it shows links: Home, About, Services, Pages, Blog, Contact
+#### Scenario: Desktop navigation renders all links
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls down past the hero
-  Then the navbar remains fixed at the top of the viewport
+- **GIVEN** the user views the page at viewport width >= 992px
+- **WHEN** the navbar loads
+- **THEN** it displays the logo on the left
+- **AND** it shows links: Home, About, Services, Pages, Blog, Contact
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar remains fixed at the top of the viewport
 
 ### Feature: Hero Banner
 
-Scenario: Hero section displays headline and CTA
-  Given the user views the hero section
-  Then a subtitle "This is me" is visible
-  And a headline "Lancer" (or similar portfolio name) is visible
-  And a paragraph description is visible
-  And a gradient CTA button "Discover Now" is visible
+#### Scenario: Hero section displays headline and CTA
 
-Scenario: Hero has a split layout with portrait
-  Given the user views the hero section
-  Then a left column contains the portrait image
-  And a right column contains the text content
+- **GIVEN** the user views the hero section
+- **THEN** a subtitle "This is me" is visible
+- **AND** a headline "Lancer" (or similar portfolio name) is visible
+- **AND** a paragraph description is visible
+- **AND** a gradient CTA button "Discover Now" is visible
+
+#### Scenario: Hero has a split layout with portrait
+
+- **GIVEN** the user views the hero section
+- **THEN** a left column contains the portrait image
+- **AND** a right column contains the text content
 
 ### Feature: About / Welcome
 
-Scenario: About section shows stats and skills
-  Given the user scrolls to the About section
-  Then a heading "About Myself" is visible
-  And 3 stat counters are displayed (e.g., Total Donation, Total Projects, Total Volunteers)
-  And a "Tools Expertness" progress bar area shows at least 5 skills
+#### Scenario: About section shows stats and skills
 
-Scenario: Stats have icons
-  Given the user views the stat counters
-  Then each stat has an icon above the number
+- **GIVEN** the user scrolls to the About section
+- **THEN** a heading "About Myself" is visible
+- **AND** 3 stat counters are displayed (e.g., Total Donation, Total Projects, Total Volunteers)
+- **AND** a "Tools Expertness" progress bar area shows at least 5 skills
+
+#### Scenario: Stats have icons
+
+- **GIVEN** the user views the stat counters
+- **THEN** each stat has an icon above the number
 
 ### Feature: Features / Offerings
 
-Scenario: Feature cards display offerings
-  Given the user scrolls to the Features section
-  Then a heading "offerings to my clients" is visible
-  And at least 6 feature cards are displayed in a grid
-  And each card has an icon, title, and description
+#### Scenario: Feature cards display offerings
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** a heading "offerings to my clients" is visible
+- **AND** at least 6 feature cards are displayed in a grid
+- **AND** each card has an icon, title, and description
 
 ### Feature: Projects / Portfolio
 
-Scenario: Projects section with filter tabs
-  Given the user scrolls to the Projects section
-  Then a heading "Our Recent Completed Projects" is visible
-  And filter tabs are displayed: All Categories, Branding, Creative Work, Web Design
+#### Scenario: Projects section with filter tabs
 
-Scenario: Project cards display images and titles
-  Given the user views the project grid
-  Then at least 6 project cards are visible
-  And each card has an image and a title overlay
+- **GIVEN** the user scrolls to the Projects section
+- **THEN** a heading "Our Recent Completed Projects" is visible
+- **AND** filter tabs are displayed: All Categories, Branding, Creative Work, Web Design
 
-Scenario: Filter tabs filter projects
-  Given the user clicks the "Branding" filter tab
-  Then only projects tagged as "Branding" are visible
+#### Scenario: Project cards display images and titles
+
+- **GIVEN** the user views the project grid
+- **THEN** at least 6 project cards are visible
+- **AND** each card has an image and a title overlay
+
+#### Scenario: Filter tabs filter projects
+
+- **GIVEN** the user clicks the "Branding" filter tab
+- **THEN** only projects tagged as "Branding" are visible
 
 ### Feature: Testimonials
 
-Scenario: Testimonials carousel displays quotes
-  Given the user scrolls to the Testimonials section
-  Then a heading "Testimonials" is visible
-  And at least 3 testimonial cards are available in the carousel
-  And each card shows a quote, author name, and star rating
+#### Scenario: Testimonials carousel displays quotes
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a heading "Testimonials" is visible
+- **AND** at least 3 testimonial cards are available in the carousel
+- **AND** each card shows a quote, author name, and star rating
 
 ### Feature: Blog
 
-Scenario: Blog section shows recent posts
-  Given the user scrolls to the Blog section
-  Then a heading "Latest Posts from Blog" is visible
-  And 3 blog post cards are displayed
-  And each card has a featured image, date/author, title, and excerpt
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a heading "Latest Posts from Blog" is visible
+- **AND** 3 blog post cards are displayed
+- **AND** each card has a featured image, date/author, title, and excerpt
 
 ### Feature: Footer
 
-Scenario: Footer has three columns
-  Given the user scrolls to the footer
-  Then an "About Me" column with description text is visible
-  And a "Newsletter" column with email input and submit button is visible
-  And a "Follow Me" column with social media icons is visible
+#### Scenario: Footer has three columns
 
-Scenario: Footer links to Component Dock
-  Given the user views the footer
-  Then a link to "https://www.componentdock.com/" is present (branded "Component Dock")
+- **GIVEN** the user scrolls to the footer
+- **THEN** an "About Me" column with description text is visible
+- **AND** a "Newsletter" column with email input and submit button is visible
+- **AND** a "Follow Me" column with social media icons is visible
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present (branded "Component Dock")
 
 ## Verification checklist
 

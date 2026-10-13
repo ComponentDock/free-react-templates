@@ -59,134 +59,155 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 10. **Latest News** — section title; 2 news cards: dark blue bg; image with orange date badge; title + author info + "Read More" link.
 11. **Footer** — dark background; 4 columns: logo + description, quick links, recent posts, contact info + newsletter form; bottom bar with copyright + "Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-Scenario: Transparent header renders over hero
-  Given the page loads
-  Then the header is transparent and positioned over the hero section
-  And the nav links "Home", "About", "Projects", "Services", "Blog", "Pages", "Contact" are visible
-  And a "CONTACT NOW" button is visible in the header
+#### Scenario: Transparent header renders over hero
 
-Scenario: Top info bar shows contact details
-  Given the page loads
-  Then a top bar shows a phone number, email address, and business hours
-  And social media icons are visible in the top bar
+- **GIVEN** the page loads
+- **THEN** the header is transparent and positioned over the hero section
+- **AND** the nav links "Home", "About", "Projects", "Services", "Blog", "Pages", "Contact" are visible
+- **AND** a "CONTACT NOW" button is visible in the header
 
-Scenario: Nav link hover highlights orange
-  Given the user hovers over a nav link
-  Then the link color changes to the brand orange (#ff5f13)
+#### Scenario: Top info bar shows contact details
+
+- **GIVEN** the page loads
+- **THEN** a top bar shows a phone number, email address, and business hours
+- **AND** social media icons are visible in the top bar
+
+#### Scenario: Nav link hover highlights orange
+
+- **GIVEN** the user hovers over a nav link
+- **THEN** the link color changes to the brand orange (#ff5f13)
 
 ### Feature: Hero Slider
 
-Scenario: Hero displays full-viewport image with overlay
-  Given the page loads
-  Then the hero section occupies the full viewport height
-  And a dark overlay is applied over the background image
+#### Scenario: Hero displays full-viewport image with overlay
 
-Scenario: Hero shows headline and CTA
-  Given the hero slider is visible
-  Then a large uppercase heading is displayed
-  And an orange CTA button is visible below the heading
+- **GIVEN** the page loads
+- **THEN** the hero section occupies the full viewport height
+- **AND** a dark overlay is applied over the background image
 
-Scenario: Hero slides transition
-  Given there are multiple slides
-  Then the slider auto-advances between slides
+#### Scenario: Hero shows headline and CTA
+
+- **GIVEN** the hero slider is visible
+- **THEN** a large uppercase heading is displayed
+- **AND** an orange CTA button is visible below the heading
+
+#### Scenario: Hero slides transition
+
+- **GIVEN** there are multiple slides
+- **THEN** the slider auto-advances between slides
 
 ### Feature: Services
 
-Scenario: Services section shows 3 service cards
-  Given the user scrolls to the services section
-  Then 3 service cards are displayed in a row
-  And each card has an image on top and a caption below
-  And each card has a "Read More" arrow link
+#### Scenario: Services section shows 3 service cards
 
-Scenario: Service card hover effect
-  Given the user hovers over a service card
-  Then the image scales up slightly
-  And the arrow icon background turns orange
+- **GIVEN** the user scrolls to the services section
+- **THEN** 3 service cards are displayed in a row
+- **AND** each card has an image on top and a caption below
+- **AND** each card has a "Read More" arrow link
+
+#### Scenario: Service card hover effect
+
+- **GIVEN** the user hovers over a service card
+- **THEN** the image scales up slightly
+- **AND** the arrow icon background turns orange
 
 ### Feature: About / Support Company
 
-Scenario: About section shows description and image
-  Given the user scrolls to the about section
-  Then a left column shows a heading, paragraph text, and a "Read More" button
-  And a right column shows an image with an overlay caption card
+#### Scenario: About section shows description and image
 
-Scenario: About overlay caption
-  Given the about image is visible
-  Then an overlay card at the bottom shows "1994 Since" text on a dark blue background
+- **GIVEN** the user scrolls to the about section
+- **THEN** a left column shows a heading, paragraph text, and a "Read More" button
+- **AND** a right column shows an image with an overlay caption card
+
+#### Scenario: About overlay caption
+
+- **GIVEN** the about image is visible
+- **THEN** an overlay card at the bottom shows "1994 Since" text on a dark blue background
 
 ### Feature: Projects Gallery
 
-Scenario: Projects section shows filterable grid
-  Given the user scrolls to the projects section
-  Then a tab filter bar is displayed centered
-  And a grid of project cards is shown (3 columns)
+#### Scenario: Projects section shows filterable grid
 
-Scenario: Project card hover
-  Given the user hovers over a project card
-  Then the caption bar background turns dark blue
-  And the text turns white
-  And an orange plus icon appears
+- **GIVEN** the user scrolls to the projects section
+- **THEN** a tab filter bar is displayed centered
+- **AND** a grid of project cards is shown (3 columns)
+
+#### Scenario: Project card hover
+
+- **GIVEN** the user hovers over a project card
+- **THEN** the caption bar background turns dark blue
+- **AND** the text turns white
+- **AND** an orange plus icon appears
 
 ### Feature: Contact CTA
 
-Scenario: Contact CTA section renders
-  Given the user scrolls to the contact CTA
-  Then a full-width dark background section is visible
-  And a heading "Let's talk with us" is displayed
-  And contact details (phone, email) are shown
-  And an orange CTA button is present
+#### Scenario: Contact CTA section renders
+
+- **GIVEN** the user scrolls to the contact CTA
+- **THEN** a full-width dark background section is visible
+- **AND** a heading "Let's talk with us" is displayed
+- **AND** contact details (phone, email) are shown
+- **AND** an orange CTA button is present
 
 ### Feature: Counter
 
-Scenario: Counter section shows statistics
-  Given the user scrolls to the counter section
-  Then 3 counter items are displayed: Projects, Machinery/Tools, Happy Clients
-  And each shows a large number
+#### Scenario: Counter section shows statistics
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 3 counter items are displayed: Projects, Machinery/Tools, Happy Clients
+- **AND** each shows a large number
 
 ### Feature: Team
 
-Scenario: Team section shows 3 members
-  Given the user scrolls to the team section
-  Then 3 team member cards are displayed in a row
-  And each card shows a photo, role, and name
+#### Scenario: Team section shows 3 members
 
-Scenario: Team card hover
-  Given the user hovers over a team card
-  Then the photo scales up slightly
+- **GIVEN** the user scrolls to the team section
+- **THEN** 3 team member cards are displayed in a row
+- **AND** each card shows a photo, role, and name
+
+#### Scenario: Team card hover
+
+- **GIVEN** the user hovers over a team card
+- **THEN** the photo scales up slightly
 
 ### Feature: Testimonials
 
-Scenario: Testimonials section shows slider
-  Given the user scrolls to the testimonials section
-  Then a testimonial slider is displayed
-  And each slide shows a quote and founder info (name + role)
+#### Scenario: Testimonials section shows slider
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial slider is displayed
+- **AND** each slide shows a quote and founder info (name + role)
 
 ### Feature: Latest News
 
-Scenario: News section shows 2 news cards
-  Given the user scrolls to the news section
-  Then 2 news cards are displayed
-  And each card has a dark blue background
-  And each card shows an image with an orange date badge, a title, author info, and a "Read More" link
+#### Scenario: News section shows 2 news cards
+
+- **GIVEN** the user scrolls to the news section
+- **THEN** 2 news cards are displayed
+- **AND** each card has a dark blue background
+- **AND** each card shows an image with an orange date badge, a title, author info, and a "Read More" link
 
 ### Feature: Footer
 
-Scenario: Footer renders with 4 columns
-  Given the user scrolls to the footer
-  Then the footer has a dark background
-  And 4 columns are visible: logo + description, quick links, recent posts, contact info + newsletter
+#### Scenario: Footer renders with 4 columns
 
-Scenario: Footer includes Component Dock link
-  Given the footer is visible
-  Then a "Component Dock" link pointing to https://www.componentdock.com/ is present in the footer
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** 4 columns are visible: logo + description, quick links, recent posts, contact info + newsletter
 
-Scenario: Footer copyright bar
-  Given the footer is visible
-  Then a copyright bar is shown at the bottom
+#### Scenario: Footer includes Component Dock link
+
+- **GIVEN** the footer is visible
+- **THEN** a "Component Dock" link pointing to https://www.componentdock.com/ is present in the footer
+
+#### Scenario: Footer copyright bar
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright bar is shown at the bottom
 
 ## Verification checklist
 

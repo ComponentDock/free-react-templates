@@ -73,66 +73,76 @@ assets copied).
   icon card grid; footer = three-column layout with departments list and
   hours; all images picsum-seeded.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Healwave — Healthcare Landing Page
 
-  Scenario: Hero section displays with headline and CTAs
-    Given the user loads the Healwave page
-    Then a hero section is visible with heading "Bringing health to life for the whole family"
-    And two call-to-action buttons are present ("Discover More" and "About us")
+#### Scenario: Hero section displays with headline and CTAs
 
-  Scenario: Welcome section displays two-column layout
-    Given the user scrolls to the welcome section
-    Then a heading "Welcome To Modern Clinic" is visible
-    And an image appears on the left side
-    And descriptive text appears on the right side
-    And a "Learn more" button is present
+- **GIVEN** the user loads the Healwave page
+- **THEN** a hero section is visible with heading "Bringing health to life for the whole family"
+- **AND** two call-to-action buttons are present ("Discover More" and "About us")
 
-  Scenario: Departments section renders tabbed navigation
-    Given the user scrolls to the departments section
-    Then a heading "Departments" is visible
-    And tab buttons are shown: Dentistry, Cardiology, ENT Specialists, Astrology, Neuroanatomy, Blood Screening
-    When the user clicks a tab
-    Then the corresponding department content panel is displayed
-    And each panel contains a description and "Make An Appointment" button
+#### Scenario: Welcome section displays two-column layout
 
-  Scenario: Doctors section displays doctor cards
-    Given the user scrolls to the doctors section
-    Then a heading "Our Doctors" is visible
-    And doctor cards are displayed with name and specialty
-    And social media icon links appear on each card
+- **GIVEN** the user scrolls to the welcome section
+- **THEN** a heading "Welcome To Modern Clinic" is visible
+- **AND** an image appears on the left side
+- **AND** descriptive text appears on the right side
+- **AND** a "Learn more" button is present
 
-  Scenario: Book appointment CTA section is visible
-    Given the user scrolls to the book appointment section
-    Then a heading "Book an Appointment" is visible
-    And a contact phone number is displayed
+#### Scenario: Departments section renders tabbed navigation
 
-  Scenario: Quality features section shows feature cards
-    Given the user scrolls to the quality features section
-    Then four feature cards are displayed: Quality Health, Health Consultation, Find Health, Search Doctor
-    And each card has an icon, title, and description
+- **GIVEN** the user scrolls to the departments section
+- **THEN** a heading "Departments" is visible
+- **AND** tab buttons are shown: Dentistry, Cardiology, ENT Specialists, Astrology, Neuroanatomy, Blood Screening
+- **WHEN** the user clicks a tab
+- **THEN** the corresponding department content panel is displayed
+- **AND** each panel contains a description and "Make An Appointment" button
 
-  Scenario: Footer displays three-column layout
-    Given the user scrolls to the footer
-    Then the footer has a dark navy background
-    And column 1 shows logo, address text, and social media links
-    And column 2 shows "Our Departments" with a list of department links
-    And column 3 shows "We're Available" with operating hours
+#### Scenario: Doctors section displays doctor cards
 
-  Scenario: Navigation bar is present and functional
-    Given the user views the top of the page
-    Then a navigation bar is visible with the site logo
-    And menu links are present: Home, About, Blog, Pages, Contact
-    And a "Book Appointment" button is in the navigation bar
+- **GIVEN** the user scrolls to the doctors section
+- **THEN** a heading "Our Doctors" is visible
+- **AND** doctor cards are displayed with name and specialty
+- **AND** social media icon links appear on each card
 
-  Scenario: Dark mode toggle works
-    Given the user clicks the dark mode toggle
-    Then the page theme switches to dark mode
-    And all sections remain readable with appropriate contrast
+#### Scenario: Book appointment CTA section is visible
 
-  Scenario: Responsive layout adapts to mobile
-    Given the user views the page on a mobile viewport
-    Then the navigation collapses to a hamburger menu
-    And sections stack vertically
-    And the departments tabs are still navigable
+- **GIVEN** the user scrolls to the book appointment section
+- **THEN** a heading "Book an Appointment" is visible
+- **AND** a contact phone number is displayed
+
+#### Scenario: Quality features section shows feature cards
+
+- **GIVEN** the user scrolls to the quality features section
+- **THEN** four feature cards are displayed: Quality Health, Health Consultation, Find Health, Search Doctor
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Footer displays three-column layout
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark navy background
+- **AND** column 1 shows logo, address text, and social media links
+- **AND** column 2 shows "Our Departments" with a list of department links
+- **AND** column 3 shows "We're Available" with operating hours
+
+#### Scenario: Navigation bar is present and functional
+
+- **GIVEN** the user views the top of the page
+- **THEN** a navigation bar is visible with the site logo
+- **AND** menu links are present: Home, About, Blog, Pages, Contact
+- **AND** a "Book Appointment" button is in the navigation bar
+
+#### Scenario: Dark mode toggle works
+
+- **GIVEN** the user clicks the dark mode toggle
+- **THEN** the page theme switches to dark mode
+- **AND** all sections remain readable with appropriate contrast
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the departments tabs are still navigable

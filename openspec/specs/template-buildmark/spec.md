@@ -91,240 +91,231 @@ Order from the live preview HTML (single page):
 
 15. **Footer** — Dark background (#090909). 4-column layout: About company (logo + description + social icons), Quick Links (6 service links), Twitter Feed (2 tweets), Contact Us (email, phone, address). Bottom copyright bar with Colorlib attribution.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Top Header Bar renders correctly
+### Feature: BuildMark template behaviour
 
-```gherkin
+#### Scenario: Top Header Bar renders correctly
+
 Feature: Top Header Bar
-  As a visitor, I want to see contact info and social links so I can reach the company.
+As a visitor, I want to see contact info and social links so I can reach the company.
 
-  Scenario: Top header displays contact information
-    Given I am on the BuildMark homepage
-    Then I see a dark navy top header bar
-    And it displays a phone number
-    And it displays an email address
-    And it displays office hours
-    And it shows social media icons on the right side
+#### Scenario: Top header displays contact information
 
-  Scenario: Top header social icons are interactive
-    Given I am on the BuildMark homepage
-    When I hover over a social icon in the top header
-    Then the icon highlights in the brand yellow color
-```
+- **GIVEN** I am on the BuildMark homepage
+- **THEN** I see a dark navy top header bar
+- **AND** it displays a phone number
+- **AND** it displays an email address
+- **AND** it displays office hours
+- **AND** it shows social media icons on the right side
 
-### Scenario: Navbar renders correctly
+#### Scenario: Top header social icons are interactive
 
-```gherkin
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I hover over a social icon in the top header
+- **THEN** the icon highlights in the brand yellow color
+
+#### Scenario: Navbar renders correctly
+
 Feature: Navigation Bar
-  As a visitor, I want to navigate the site through a clear menu.
+As a visitor, I want to navigate the site through a clear menu.
 
-  Scenario: Navbar displays all navigation links
-    Given I am on the BuildMark homepage
-    Then I see a white navigation bar with the logo
-    And I see links for Home, About Us, Services, Gallery, Blog, and Contact
-    And I see a search icon
+#### Scenario: Navbar displays all navigation links
 
-  Scenario: Navbar is responsive
-    Given I am on the BuildMark homepage
-    When I resize the viewport to mobile width
-    Then the navigation collapses into a hamburger menu
-    And I can expand the menu by tapping the hamburger icon
-```
+- **GIVEN** I am on the BuildMark homepage
+- **THEN** I see a white navigation bar with the logo
+- **AND** I see links for Home, About Us, Services, Gallery, Blog, and Contact
+- **AND** I see a search icon
 
-### Scenario: Hero Slider renders correctly
+#### Scenario: Navbar is responsive
 
-```gherkin
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I resize the viewport to mobile width
+- **THEN** the navigation collapses into a hamburger menu
+- **AND** I can expand the menu by tapping the hamburger icon
+
+#### Scenario: Hero Slider renders correctly
+
 Feature: Hero Slider
-  As a visitor, I want to see a compelling hero section with a call to action.
+As a visitor, I want to see a compelling hero section with a call to action.
 
-  Scenario: Hero slider displays slides with text overlay
-    Given I am on the BuildMark homepage
-    Then I see a full-width hero slider
-    And it displays a welcome headline
-    And it displays a descriptive paragraph
-    And it shows a "Read More" call-to-action button
+#### Scenario: Hero slider displays slides with text overlay
 
-  Scenario: Hero slider transitions between slides
-    Given I am on the BuildMark homepage
-    When I wait for the slider to auto-advance
-    Then the slide transitions smoothly to the next slide
-```
+- **GIVEN** I am on the BuildMark homepage
+- **THEN** I see a full-width hero slider
+- **AND** it displays a welcome headline
+- **AND** it displays a descriptive paragraph
+- **AND** it shows a "Read More" call-to-action button
 
-### Scenario: Professional Builder Strip renders correctly
+#### Scenario: Hero slider transitions between slides
 
-```gherkin
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I wait for the slider to auto-advance
+- **THEN** the slide transitions smoothly to the next slide
+
+#### Scenario: Professional Builder Strip renders correctly
+
 Feature: Professional Builder Strip
-  As a visitor, I want to see key value propositions at a glance.
+As a visitor, I want to see key value propositions at a glance.
 
-  Scenario: Builder strip shows 4 feature items
-    Given I am on the BuildMark homepage
-    Then I see a 4-column row of feature items
-    And each item has an icon, title, and short description
-    And the items are: Professional Builder, We Deliver Quality, Always On Time, We Are Passionate
-```
+#### Scenario: Builder strip shows 4 feature items
 
-### Scenario: About Us section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **THEN** I see a 4-column row of feature items
+- **AND** each item has an icon, title, and short description
+- **AND** the items are: Professional Builder, We Deliver Quality, Always On Time, We Are Passionate
 
-```gherkin
+#### Scenario: About Us section renders correctly
+
 Feature: About Us
-  As a visitor, I want to learn about the company.
+As a visitor, I want to learn about the company.
 
-  Scenario: About section displays company info
-    Given I am on the BuildMark homepage
-    When I scroll to the About Us section
-    Then I see the section title "ABOUT US"
-    And I see a "WHO WE ARE" sub-heading
-    And I see a descriptive paragraph
-    And I see a "Contact Now" call-to-action button
-    And I see a team/client image on the right
-```
+#### Scenario: About section displays company info
 
-### Scenario: What We Offer section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the About Us section
+- **THEN** I see the section title "ABOUT US"
+- **AND** I see a "WHO WE ARE" sub-heading
+- **AND** I see a descriptive paragraph
+- **AND** I see a "Contact Now" call-to-action button
+- **AND** I see a team/client image on the right
 
-```gherkin
+#### Scenario: What We Offer section renders correctly
+
 Feature: What We Offer
-  As a visitor, I want to understand the services offered.
+As a visitor, I want to understand the services offered.
 
-  Scenario: Offerings display 3 service cards
-    Given I am on the BuildMark homepage
-    When I scroll to the What We Offer section
-    Then I see 3 service cards in a row
-    And each card has an image, icon, title, and description
-    And the services are: Building Construction, Project Planning, House Renovation
-```
+#### Scenario: Offerings display 3 service cards
 
-### Scenario: Our Features section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the What We Offer section
+- **THEN** I see 3 service cards in a row
+- **AND** each card has an image, icon, title, and description
+- **AND** the services are: Building Construction, Project Planning, House Renovation
 
-```gherkin
+#### Scenario: Our Features section renders correctly
+
 Feature: Our Features
-  As a visitor, I want to see why this company stands out.
+As a visitor, I want to see why this company stands out.
 
-  Scenario: Features section shows why choose us
-    Given I am on the BuildMark homepage
-    When I scroll to the Our Features section
-    Then I see a feature image on the left
-    And I see "WHY CHOOSE US" heading on the right
-    And I see 3 feature items with icons: 30+ Years of Experience, Qualified Experts, Best Customer Services
-```
+#### Scenario: Features section shows why choose us
 
-### Scenario: Portfolio Gallery renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Our Features section
+- **THEN** I see a feature image on the left
+- **AND** I see "WHY CHOOSE US" heading on the right
+- **AND** I see 3 feature items with icons: 30+ Years of Experience, Qualified Experts, Best Customer Services
 
-```gherkin
+#### Scenario: Portfolio Gallery renders correctly
+
 Feature: Portfolio Gallery
-  As a visitor, I want to browse the company's work through a filterable gallery.
+As a visitor, I want to browse the company's work through a filterable gallery.
 
-  Scenario: Gallery displays filterable items
-    Given I am on the BuildMark homepage
-    When I scroll to the Our Services portfolio section
-    Then I see filter tabs: All, Architecture, Building, Construction, Design, Painting
-    And I see 6 gallery items in a grid
-    And hovering over an item shows a dark overlay with link/search icons
+#### Scenario: Gallery displays filterable items
 
-  Scenario: Gallery filters work
-    Given I am on the BuildMark homepage
-    When I click the "Architecture" filter tab
-    Then only architecture-related gallery items are visible
-    And the "All" tab shows all items again when clicked
-```
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Our Services portfolio section
+- **THEN** I see filter tabs: All, Architecture, Building, Construction, Design, Painting
+- **AND** I see 6 gallery items in a grid
+- **AND** hovering over an item shows a dark overlay with link/search icons
 
-### Scenario: Team section renders correctly
+#### Scenario: Gallery filters work
 
-```gherkin
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I click the "Architecture" filter tab
+- **THEN** only architecture-related gallery items are visible
+- **AND** the "All" tab shows all items again when clicked
+
+#### Scenario: Team section renders correctly
+
 Feature: Team Section
-  As a visitor, I want to meet the team members.
+As a visitor, I want to meet the team members.
 
-  Scenario: Team section displays 4 members
-    Given I am on the BuildMark homepage
-    When I scroll to the Our Team section
-    Then I see 4 team member cards
-    And each card has a photo, name, and role
-    And hovering over a card reveals social media icons
-```
+#### Scenario: Team section displays 4 members
 
-### Scenario: Achievements section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Our Team section
+- **THEN** I see 4 team member cards
+- **AND** each card has a photo, name, and role
+- **AND** hovering over a card reveals social media icons
 
-```gherkin
+#### Scenario: Achievements section renders correctly
+
 Feature: Achievements Section
-  As a visitor, I want to see the company's track record.
+As a visitor, I want to see the company's track record.
 
-  Scenario: Achievements show counter stats
-    Given I am on the BuildMark homepage
-    When I scroll to the Achievements section
-    Then I see a parallax background with dark overlay
-    And I see 4 counter stats: 800 Projects, 230 Renovations, 1390 Workers, 125 Awards
-    And the numbers animate when scrolled into view
-```
+#### Scenario: Achievements show counter stats
 
-### Scenario: Testimonials section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Achievements section
+- **THEN** I see a parallax background with dark overlay
+- **AND** I see 4 counter stats: 800 Projects, 230 Renovations, 1390 Workers, 125 Awards
+- **AND** the numbers animate when scrolled into view
 
-```gherkin
+#### Scenario: Testimonials section renders correctly
+
 Feature: Testimonials
-  As a visitor, I want to read testimonials from past clients.
+As a visitor, I want to read testimonials from past clients.
 
-  Scenario: Testimonials carousel displays cards
-    Given I am on the BuildMark homepage
-    When I scroll to the Testimonials section
-    Then I see a carousel of testimonial cards
-    And each card has an avatar, name, role, and quoted text
-    And the carousel auto-rotates through testimonials
-```
+#### Scenario: Testimonials carousel displays cards
 
-### Scenario: Featured Works section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Testimonials section
+- **THEN** I see a carousel of testimonial cards
+- **AND** each card has an avatar, name, role, and quoted text
+- **AND** the carousel auto-rotates through testimonials
 
-```gherkin
+#### Scenario: Featured Works section renders correctly
+
 Feature: Featured Works
-  As a visitor, I want to see highlighted projects.
+As a visitor, I want to see highlighted projects.
 
-  Scenario: Featured works gallery renders
-    Given I am on the BuildMark homepage
-    When I scroll to the Featured Works section
-    Then I see a parallax background section
-    And I see 8 project cards in a 2x4 grid
-    And hovering over a card shows a dark overlay with project name and "VIEW PROJECT" link
-```
+#### Scenario: Featured works gallery renders
 
-### Scenario: Blog section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Featured Works section
+- **THEN** I see a parallax background section
+- **AND** I see 8 project cards in a 2x4 grid
+- **AND** hovering over a card shows a dark overlay with project name and "VIEW PROJECT" link
 
-```gherkin
+#### Scenario: Blog section renders correctly
+
 Feature: Latest Blog
-  As a visitor, I want to read recent blog posts.
+As a visitor, I want to read recent blog posts.
 
-  Scenario: Blog section displays 3 posts
-    Given I am on the BuildMark homepage
-    When I scroll to the Latest Blog section
-    Then I see 3 blog post cards
-    And each card has a featured image, heading, author, date, excerpt, and "Read More" link
-```
+#### Scenario: Blog section displays 3 posts
 
-### Scenario: Partners and CTA section renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Latest Blog section
+- **THEN** I see 3 blog post cards
+- **AND** each card has a featured image, heading, author, date, excerpt, and "Read More" link
 
-```gherkin
+#### Scenario: Partners and CTA section renders correctly
+
 Feature: Partners & CTA
-  As a visitor, I want to see partner logos and a booking CTA.
+As a visitor, I want to see partner logos and a booking CTA.
 
-  Scenario: Partners section shows logos and CTA
-    Given I am on the BuildMark homepage
-    When I scroll to the Partners section
-    Then I see a carousel of partner/client logos
-    And I see a yellow "Book Now" call-to-action strip below
-```
+#### Scenario: Partners section shows logos and CTA
 
-### Scenario: Footer renders correctly
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the Partners section
+- **THEN** I see a carousel of partner/client logos
+- **AND** I see a yellow "Book Now" call-to-action strip below
 
-```gherkin
+#### Scenario: Footer renders correctly
+
 Feature: Footer
-  As a visitor, I want comprehensive footer with links and contact info.
+As a visitor, I want comprehensive footer with links and contact info.
 
-  Scenario: Footer displays all sections
-    Given I am on the BuildMark homepage
-    When I scroll to the footer
-    Then I see 4 columns: About, Quick Links, Twitter Feed, Contact Us
-    And the About column has logo, description, and social icons
-    And the Quick Links column has 6 service links
-    And the Contact column shows email, phone, and address
-    And I see a copyright bar at the bottom with a link to Component Dock
-```
+#### Scenario: Footer displays all sections
+
+- **GIVEN** I am on the BuildMark homepage
+- **WHEN** I scroll to the footer
+- **THEN** I see 4 columns: About, Quick Links, Twitter Feed, Contact Us
+- **AND** the About column has logo, description, and social icons
+- **AND** the Quick Links column has 6 service links
+- **AND** the Contact column shows email, phone, and address
+- **AND** I see a copyright bar at the bottom with a link to Component Dock
 
 ## Verification Checklist
 

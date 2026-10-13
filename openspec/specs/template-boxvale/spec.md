@@ -39,149 +39,143 @@ Recreation of ColorLib's **Boxus** — a creative digital agency one-page templa
 | Border radius | 0 (sharp edges) | Clean rectangular buttons and cards |
 | Buttons | Green `#32DB8A` with white text | Rounded rectangular, no border-radius |
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
 
-  Scenario: Sticky navigation bar
-    Given the user loads the page
-    Then a sticky navigation bar is visible at the top
-    And it contains links for Home, Services, Portfolio, About, News, Video, Skills, Contact
-    And clicking each link scrolls smoothly to the corresponding section
+#### Scenario: Sticky navigation bar
 
-  Scenario: Mobile hamburger menu
-    Given the user resizes viewport below 768px
-    Then a hamburger menu icon appears
-    And clicking it toggles the mobile menu open/closed
-```
+- **GIVEN** the user loads the page
+- **THEN** a sticky navigation bar is visible at the top
+- **AND** it contains links for Home, Services, Portfolio, About, News, Video, Skills, Contact
+- **AND** clicking each link scrolls smoothly to the corresponding section
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user resizes viewport below 768px
+- **THEN** a hamburger menu icon appears
+- **AND** clicking it toggles the mobile menu open/closed
 
 ### Hero
 
-```gherkin
 Feature: Hero Section
 
-  Scenario: Display hero content
-    Given the user is on the home page
-    Then a large headline "We Craft Awesome Web And Graphic Design Solutions" is visible
-    And a subtitle text is displayed below the headline
-    And the section background is deep indigo (#221C5A)
-```
+#### Scenario: Display hero content
+
+- **GIVEN** the user is on the home page
+- **THEN** a large headline "We Craft Awesome Web And Graphic Design Solutions" is visible
+- **AND** a subtitle text is displayed below the headline
+- **AND** the section background is deep indigo (#221C5A)
 
 ### Services
 
-```gherkin
 Feature: Services Section
 
-  Scenario: Display services grid
-    Given the user scrolls to the Services section
-    Then section number "01" is displayed
-    And the section title "Services" is visible
-    And at least 4 service cards are shown
-    And each card has an icon, a title, and a description
+#### Scenario: Display services grid
 
-  Scenario: Service items have accent styling
-    Given the user views a service card
-    Then the service title is green (#32DB8A)
-    And the icon is displayed above the title
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** section number "01" is displayed
+- **AND** the section title "Services" is visible
+- **AND** at least 4 service cards are shown
+- **AND** each card has an icon, a title, and a description
+
+#### Scenario: Service items have accent styling
+
+- **GIVEN** the user views a service card
+- **THEN** the service title is green (#32DB8A)
+- **AND** the icon is displayed above the title
 
 ### Portfolio
 
-```gherkin
 Feature: Portfolio Section
 
-  Scenario: Display portfolio grid
-    Given the user scrolls to the Portfolio section
-    Then a grid of portfolio thumbnails is visible
-    And each item shows a category label and title on hover
-    And the grid uses a masonry/column layout
+#### Scenario: Display portfolio grid
 
-  Scenario: Portfolio hover interaction
-    Given the user hovers over a portfolio item
-    Then an overlay appears with the project title and category
-    And the overlay has a colored background matching the brand palette
-```
+- **GIVEN** the user scrolls to the Portfolio section
+- **THEN** a grid of portfolio thumbnails is visible
+- **AND** each item shows a category label and title on hover
+- **AND** the grid uses a masonry/column layout
+
+#### Scenario: Portfolio hover interaction
+
+- **GIVEN** the user hovers over a portfolio item
+- **THEN** an overlay appears with the project title and category
+- **AND** the overlay has a colored background matching the brand palette
 
 ### About
 
-```gherkin
 Feature: About Section
 
-  Scenario: Display team carousel
-    Given the user scrolls to the About section
-    Then section number is displayed
-    And the title "About" is visible
-    And a team member image carousel is shown
-    And navigation arrows allow cycling through team members
-```
+#### Scenario: Display team carousel
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** section number is displayed
+- **AND** the title "About" is visible
+- **AND** a team member image carousel is shown
+- **AND** navigation arrows allow cycling through team members
 
 ### News
 
-```gherkin
 Feature: News Section
 
-  Scenario: Display news cards
-    Given the user scrolls to the News section
-    Then blog post cards are displayed with title, date, and excerpt
-    And a text slider navigation allows scrolling through news items
-```
+#### Scenario: Display news cards
+
+- **GIVEN** the user scrolls to the News section
+- **THEN** blog post cards are displayed with title, date, and excerpt
+- **AND** a text slider navigation allows scrolling through news items
 
 ### Video
 
-```gherkin
 Feature: Video Section
 
-  Scenario: Display fullscreen video area
-    Given the user scrolls to the Video section
-    Then a full-width dark section with a video background or poster image is shown
-    And a play button overlay is centered on the section
-```
+#### Scenario: Display fullscreen video area
+
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a full-width dark section with a video background or poster image is shown
+- **AND** a play button overlay is centered on the section
 
 ### Skills
 
-```gherkin
 Feature: Skills Section
 
-  Scenario: Display skill progress bars
-    Given the user scrolls to the Skills section
-    Then section number "06" is displayed
-    And at least 4 skill bars are shown (e.g. Branding, Web Design, HTML/CSS, Graphic Design)
-    And each bar shows a percentage and animates on scroll into view
-    And the filled portion uses green (#32DB8A)
-```
+#### Scenario: Display skill progress bars
+
+- **GIVEN** the user scrolls to the Skills section
+- **THEN** section number "06" is displayed
+- **AND** at least 4 skill bars are shown (e.g. Branding, Web Design, HTML/CSS, Graphic Design)
+- **AND** each bar shows a percentage and animates on scroll into view
+- **AND** the filled portion uses green (#32DB8A)
 
 ### Contact
 
-```gherkin
 Feature: Contact Section
 
-  Scenario: Display contact form
-    Given the user scrolls to the Contact section
-    Then section number "07" is displayed
-    And a form with Name, Email, Subject, and Message fields is shown
-    And a Submit button is visible with green (#32DB8A) background
+#### Scenario: Display contact form
 
-  Scenario: Form validation
-    Given the user clicks Submit with empty required fields
-    Then validation error messages appear for each empty field
-    And the form does not submit
-```
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** section number "07" is displayed
+- **AND** a form with Name, Email, Subject, and Message fields is shown
+- **AND** a Submit button is visible with green (#32DB8A) background
+
+#### Scenario: Form validation
+
+- **GIVEN** the user clicks Submit with empty required fields
+- **THEN** validation error messages appear for each empty field
+- **AND** the form does not submit
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Display footer content
-    Given the user scrolls to the bottom of the page
-    Then a copyright line is displayed
-    And social media icon links are shown
-    And a link to Component Dock (https://www.componentdock.com/) is present
-    And the footer background is deep indigo (#221C5A)
-```
+#### Scenario: Display footer content
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a copyright line is displayed
+- **AND** social media icon links are shown
+- **AND** a link to Component Dock (https://www.componentdock.com/) is present
+- **AND** the footer background is deep indigo (#221C5A)
 
 ## Verification checklist
 

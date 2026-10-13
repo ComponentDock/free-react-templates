@@ -55,149 +55,154 @@ Banking/finance corporate template with:
 13. **Contact** — Left: address, phone, email; Right: contact form (First Name, Last Name, Email, Subject, Message, Submit)
 14. **Footer** — Dark bg (#343a40), 4 columns: About Us text, Quick Links, Follow Us (social icons), Subscribe Newsletter (email input); Copyright bar at bottom
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
-```gherkin
-Scenario: Desktop navbar displays all navigation links
-  Given the user is on a desktop viewport
-  When the page loads
-  Then the navbar is visible with links: Home, About, Team, Pricing, FAQ, Gallery, Services, Testimonials, Blog, Contact
 
-Scenario: Mobile hamburger menu toggles
-  Given the user is on a mobile viewport
-  When the hamburger icon is clicked
-  Then the mobile menu slides open
-  And all navigation links are visible
-```
+#### Scenario: Desktop navbar displays all navigation links
+
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar is visible with links: Home, About, Team, Pricing, FAQ, Gallery, Services, Testimonials, Blog, Contact
+
+#### Scenario: Mobile hamburger menu toggles
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the hamburger icon is clicked
+- **THEN** the mobile menu slides open
+- **AND** all navigation links are visible
 
 ### Feature: Hero Carousel
-```gherkin
-Scenario: Hero displays first slide
-  Given the page loads
-  When the hero section renders
-  Then slide "Banking Solutions" is visible
-  And a "Learn More" CTA button is displayed
 
-Scenario: Hero auto-advances slides
-  Given the hero section is visible
-  When 5 seconds elapse
-  Then the carousel advances to the next slide
+#### Scenario: Hero displays first slide
 
-Scenario: Hero has dark overlay on background image
-  Given the hero section renders
-  Then a dark semi-transparent overlay covers the background
-  And the text is white and legible
-```
+- **GIVEN** the page loads
+- **WHEN** the hero section renders
+- **THEN** slide "Banking Solutions" is visible
+- **AND** a "Learn More" CTA button is displayed
+
+#### Scenario: Hero auto-advances slides
+
+- **GIVEN** the hero section is visible
+- **WHEN** 5 seconds elapse
+- **THEN** the carousel advances to the next slide
+
+#### Scenario: Hero has dark overlay on background image
+
+- **GIVEN** the hero section renders
+- **THEN** a dark semi-transparent overlay covers the background
+- **AND** the text is white and legible
 
 ### Feature: Features Section
-```gherkin
-Scenario: Three feature cards display
-  Given the features section is visible
-  Then there are 3 feature cards in a row
-  And each card has an icon, heading, and description text
-```
+
+#### Scenario: Three feature cards display
+
+- **GIVEN** the features section is visible
+- **THEN** there are 3 feature cards in a row
+- **AND** each card has an icon, heading, and description text
 
 ### Feature: About Us / CTA
-```gherkin
-Scenario: About section shows heading and form
-  Given the about section is visible
-  Then the heading "We Solve Your Financial Problem" is displayed
-  And an email subscription form is present on the right
-```
+
+#### Scenario: About section shows heading and form
+
+- **GIVEN** the about section is visible
+- **THEN** the heading "We Solve Your Financial Problem" is displayed
+- **AND** an email subscription form is present on the right
 
 ### Feature: Team Section
-```gherkin
-Scenario: Team members display in grid
-  Given the team section is visible
-  Then 4 team member cards are shown
-  And each card has a photo, name, role, and social icon links
-```
+
+#### Scenario: Team members display in grid
+
+- **GIVEN** the team section is visible
+- **THEN** 4 team member cards are shown
+- **AND** each card has a photo, name, role, and social icon links
 
 ### Feature: Gallery
-```gherkin
-Scenario: Gallery shows filterable portfolio
-  Given the gallery section is visible
-  Then filter buttons are displayed (All, Web, Brand, Design)
-  And a grid of portfolio images is shown
-  And clicking a filter button shows only matching items
-```
+
+#### Scenario: Gallery shows filterable portfolio
+
+- **GIVEN** the gallery section is visible
+- **THEN** filter buttons are displayed (All, Web, Brand, Design)
+- **AND** a grid of portfolio images is shown
+- **AND** clicking a filter button shows only matching items
 
 ### Feature: How It Works
-```gherkin
-Scenario: Three process steps display
-  Given the how-it-works section is visible
-  Then 3 numbered steps are shown
-  And each step has a number, title, description, and "Learn More" link
-```
+
+#### Scenario: Three process steps display
+
+- **GIVEN** the how-it-works section is visible
+- **THEN** 3 numbered steps are shown
+- **AND** each step has a number, title, description, and "Learn More" link
 
 ### Feature: Services Section
-```gherkin
-Scenario: Six services display in grid
-  Given the services section is visible
-  Then 6 service cards are shown in a 3-column grid
-  And each card has an icon, title, description, and "Learn More" link
-```
+
+#### Scenario: Six services display in grid
+
+- **GIVEN** the services section is visible
+- **THEN** 6 service cards are shown in a 3-column grid
+- **AND** each card has an icon, title, description, and "Learn More" link
 
 ### Feature: Testimonials
-```gherkin
-Scenario: Testimonials carousel shows customer quotes
-  Given the testimonials section is visible
-  Then a carousel of customer testimonials is displayed
-  And each testimonial has a quote, avatar, name, and role
-```
+
+#### Scenario: Testimonials carousel shows customer quotes
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a carousel of customer testimonials is displayed
+- **AND** each testimonial has a quote, avatar, name, and role
 
 ### Feature: Pricing
-```gherkin
-Scenario: Three pricing tiers display
-  Given the pricing section is visible
-  Then 3 pricing cards are shown: Basic ($47/yr), Premium ($200/yr), Professional ($750/yr)
-  And each card has a features list and "Buy Now" button
-  And the Premium card is visually highlighted as popular
-```
+
+#### Scenario: Three pricing tiers display
+
+- **GIVEN** the pricing section is visible
+- **THEN** 3 pricing cards are shown: Basic ($47/yr), Premium ($200/yr), Professional ($750/yr)
+- **AND** each card has a features list and "Buy Now" button
+- **AND** the Premium card is visually highlighted as popular
 
 ### Feature: FAQ
-```gherkin
-Scenario: FAQ accordion is functional
-  Given the FAQ section is visible
-  When a question is clicked
-  Then the answer expands below the question
-  And clicking again collapses the answer
-```
+
+#### Scenario: FAQ accordion is functional
+
+- **GIVEN** the FAQ section is visible
+- **WHEN** a question is clicked
+- **THEN** the answer expands below the question
+- **AND** clicking again collapses the answer
 
 ### Feature: Blog
-```gherkin
-Scenario: Blog posts display as cards
-  Given the blog section is visible
-  Then 3 blog post cards are shown
-  And each card has an image, title, author, date, excerpt, and "Continue Reading" link
-```
+
+#### Scenario: Blog posts display as cards
+
+- **GIVEN** the blog section is visible
+- **THEN** 3 blog post cards are shown
+- **AND** each card has an image, title, author, date, excerpt, and "Continue Reading" link
 
 ### Feature: Contact
-```gherkin
-Scenario: Contact form collects user input
-  Given the contact section is visible
-  Then a form with First Name, Last Name, Email, Subject, and Message fields is displayed
-  And a Submit button is present
 
-Scenario: Contact info displays address details
-  Given the contact section is visible
-  Then the address, phone number, and email are displayed
-```
+#### Scenario: Contact form collects user input
+
+- **GIVEN** the contact section is visible
+- **THEN** a form with First Name, Last Name, Email, Subject, and Message fields is displayed
+- **AND** a Submit button is present
+
+#### Scenario: Contact info displays address details
+
+- **GIVEN** the contact section is visible
+- **THEN** the address, phone number, and email are displayed
 
 ### Feature: Footer
-```gherkin
-Scenario: Footer displays 4-column layout
-  Given the footer is visible
-  Then 4 columns are shown: About Us, Quick Links, Follow Us, Subscribe Newsletter
-  And a copyright bar is at the bottom
-  And a link to componentdock.com is present
 
-Scenario: Footer newsletter form works
-  Given the footer is visible
-  When an email is entered and Subscribe is clicked
-  Then the form submits without errors
-```
+#### Scenario: Footer displays 4-column layout
+
+- **GIVEN** the footer is visible
+- **THEN** 4 columns are shown: About Us, Quick Links, Follow Us, Subscribe Newsletter
+- **AND** a copyright bar is at the bottom
+- **AND** a link to componentdock.com is present
+
+#### Scenario: Footer newsletter form works
+
+- **GIVEN** the footer is visible
+- **WHEN** an email is entered and Subscribe is clicked
+- **THEN** the form submits without errors
 
 ## Verification checklist
 

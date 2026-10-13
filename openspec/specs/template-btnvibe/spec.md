@@ -10,28 +10,42 @@ Btnvibe is a bootstrap button component page. It recreates the ColorLib **Bootst
 
 ### Requirement 1: Navigation Bar
 
+#### Scenario: Navigation Bar
+
 - Navbar with brand logo ("BtnVibe"), navigation links (Showcase, Outline, Shapes, Sizes, Icons, Playground), and dark mode toggle.
 
 ### Requirement 2: Hero Section
+
+#### Scenario: Hero Section
 
 - Engaging header presenting BtnVibe as a modern bootstrap button showcase with quick action buttons.
 
 ### Requirement 3: Solid Buttons Section
 
+#### Scenario: Solid Buttons Section
+
 - Showcase of solid-colored button variants across standard intents.
 
 ### Requirement 4: Outline & Ghost Buttons Section
+
+#### Scenario: Outline & Ghost Buttons Section
 
 - Showcase of transparent/outline button variants.
 
 ### Requirement 5: Shape & Size Variants
 
+#### Scenario: Shape & Size Variants
+
 - Rounded, pill, square, small, medium, large, and disabled state variations.
 
 ### Requirement 6: Interactive Playground
 
+#### Scenario: Interactive Playground
+
 - Live playground where users can customize button properties and copy snippet code.
 
 ### Requirement 7: Component Dock Footer
+
+#### Scenario: Component Dock Footer
 
 - Footer linking to https://www.componentdock.com/ ("Made with Component Dock").

@@ -44,68 +44,90 @@ Recreation of ColorLib's **Genius** template as a React 19 + Vite + Tailwind 4 +
 13. **Newsletter Parallax** — "Subscribe to our Newsletter" on parallax background
 14. **Footer** — "Genius University" branding, columns, Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: BrightHaven template behaviour
+
 Feature: BrightHaven Navigation
-  Scenario: Navbar displays correctly
-    Given the user visits the BrightHaven homepage
-    Then the navbar shows "BrightHaven" logo
-    And links: Home, About, Courses, Teacher, Blog, Events, Contact
-    And an "Apply Now" CTA button is visible
+
+#### Scenario: Navbar displays correctly
+
+- **GIVEN** the user visits the BrightHaven homepage
+- **THEN** the navbar shows "BrightHaven" logo
+- **AND** links: Home, About, Courses, Teacher, Blog, Events, Contact
+- **AND** an "Apply Now" CTA button is visible
 
 Feature: BrightHaven Hero
-  Scenario: Hero shows headline and CTAs
-    Given the user visits the homepage
-    Then a heading about education is displayed
-    And "Apply Now" and "View Courses" buttons are visible
+
+#### Scenario: Hero shows headline and CTAs
+
+- **GIVEN** the user visits the homepage
+- **THEN** a heading about education is displayed
+- **AND** "Apply Now" and "View Courses" buttons are visible
 
 Feature: BrightHaven Search
-  Scenario: Course search bar works
-    Given the user scrolls to the search section
-    Then a search input with "I want to study" label is visible
+
+#### Scenario: Course search bar works
+
+- **GIVEN** the user scrolls to the search section
+- **THEN** a search input with "I want to study" label is visible
 
 Feature: BrightHaven Counters
-  Scenario: Four stat counters shown
-    Given the user scrolls to the counters
-    Then 4 counters with numbers and labels appear on light bg
+
+#### Scenario: Four stat counters shown
+
+- **GIVEN** the user scrolls to the counters
+- **THEN** 4 counters with numbers and labels appear on light bg
 
 Feature: BrightHaven Testimonials
-  Scenario: Student testimonials carousel
-    Given the user scrolls to testimonials
-    Then a carousel with student quotes and avatars is displayed
+
+#### Scenario: Student testimonials carousel
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** a carousel with student quotes and avatars is displayed
 
 Feature: BrightHaven Advisors
-  Scenario: Advisor profiles shown
-    Given the user scrolls to advisors
-    Then instructor profiles with circular avatars and names appear
+
+#### Scenario: Advisor profiles shown
+
+- **GIVEN** the user scrolls to advisors
+- **THEN** instructor profiles with circular avatars and names appear
 
 Feature: BrightHaven Free Trial
-  Scenario: Free trial CTA section
-    Given the user scrolls to the trial section
-    Then "Try our free trial course" heading and "Join now!" button are visible
+
+#### Scenario: Free trial CTA section
+
+- **GIVEN** the user scrolls to the trial section
+- **THEN** "Try our free trial course" heading and "Join now!" button are visible
 
 Feature: BrightHaven Courses
-  Scenario: Course cards displayed
-    Given the user scrolls to courses
-    Then 3 course cards are shown with titles and "Enroll now!" links
-    And a "View All Courses" link exists
+
+#### Scenario: Course cards displayed
+
+- **GIVEN** the user scrolls to courses
+- **THEN** 3 course cards are shown with titles and "Enroll now!" links
+- **AND** a "View All Courses" link exists
 
 Feature: BrightHaven Blog
-  Scenario: Blog posts shown
-    Given the user scrolls to blog
-    Then 3 blog post cards with dates and titles are displayed
+
+#### Scenario: Blog posts shown
+
+- **GIVEN** the user scrolls to blog
+- **THEN** 3 blog post cards with dates and titles are displayed
 
 Feature: BrightHaven Newsletter
-  Scenario: Newsletter signup on parallax bg
-    Given the user scrolls to newsletter
-    Then "Subscribe to our Newsletter" heading is visible with email input
+
+#### Scenario: Newsletter signup on parallax bg
+
+- **GIVEN** the user scrolls to newsletter
+- **THEN** "Subscribe to our Newsletter" heading is visible with email input
 
 Feature: BrightHaven Footer
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" branded "Component Dock" exists
-```
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" branded "Component Dock" exists
 
 ## Verification checklist
 

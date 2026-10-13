@@ -63,97 +63,112 @@ research.
 11. **Footer** — dark `#161619` bg, logo + subtitle, 3-column layout
     (Quick Links, Support, Contact info), social media icons, copyright bar
 
-## Gherkin requirements
+## Requirements
 
-### Background
-  Given the app is loaded at the root URL
-  Then the page renders without errors
-  And all sections are present in the correct order
+### Feature: SacredGate template behaviour
 
-### Scenario: Top bar renders with countdown and donation CTA
-  Given the user views the page
-  Then a black top bar is visible at the top
-  And a countdown timer shows days, hours, minutes, seconds
-  And a red "Send Donations" button is on the right side of the top bar
+**Background**
+- **GIVEN** the app is loaded at the root URL
+- **THEN** the page renders without errors
+- **AND** all sections are present in the correct order
 
-### Scenario: Header renders with navigation
-  Given the user views the page
-  Then a white header is visible below the top bar
-  And a logo with the text "Church" (Bilbo serif font) is displayed
-  And navigation links for Home, Ministries, Sermons, Blog, Contact are present
-  And a search icon is visible in the header
-  And a hamburger menu icon is visible for mobile
+#### Scenario: Top bar renders with countdown and donation CTA
 
-### Scenario: Hero slider displays slides
-  Given the user views the page
-  Then a full-width carousel/slider is visible
-  And the current slide displays the heading "God is all around us"
-  And each slide has a CTA button
-  And the slider supports auto-rotation between slides
+- **GIVEN** the user views the page
+- **THEN** a black top bar is visible at the top
+- **AND** a countdown timer shows days, hours, minutes, seconds
+- **AND** a red "Send Donations" button is on the right side of the top bar
 
-### Scenario: Intro section displays welcome content
-  Given the user scrolls to the intro section
-  Then a "Welcome to Our Church" heading is visible
-  And descriptive text about the church is present
-  And an image is displayed alongside the text (two-column layout)
+#### Scenario: Header renders with navigation
 
-### Scenario: Services section shows ministry activities
-  Given the user scrolls to the services section
-  Then a parallax background image is visible behind the content
-  And the heading "Our Church main activities" is displayed in white
-  And 5 service items are shown with circular icons, titles, and descriptions
+- **GIVEN** the user views the page
+- **THEN** a white header is visible below the top bar
+- **AND** a logo with the text "Church" (Bilbo serif font) is displayed
+- **AND** navigation links for Home, Ministries, Sermons, Blog, Contact are present
+- **AND** a search icon is visible in the header
+- **AND** a hamburger menu icon is visible for mobile
 
-### Scenario: Causes section displays church causes
-  Given the user scrolls to the causes section
-  Then a white background section is visible
-  And the heading "Our Church's Causes" is displayed
-  And cause cards are shown with images, titles, and descriptions
-  And the causes are displayed in a slider/carousel format
+#### Scenario: Hero slider displays slides
 
-### Scenario: Quote section displays a quote
-  Given the user scrolls to the quote section
-  Then a parallax background image is visible
-  And the heading "Quote of the day" is displayed in white
-  And a large quote text is shown with character and source attribution
+- **GIVEN** the user views the page
+- **THEN** a full-width carousel/slider is visible
+- **AND** the current slide displays the heading "God is all around us"
+- **AND** each slide has a CTA button
+- **AND** the slider supports auto-rotation between slides
 
-### Scenario: Sermon section shows recent sermons
-  Given the user scrolls to the sermon section
-  Then a light gray (#f0f4f8) background section is visible
-  And the heading "Today's Sermon" is displayed
-  And sermon cards show images, titles, dates, and play buttons
+#### Scenario: Intro section displays welcome content
 
-### Scenario: Newsletter section has signup form
-  Given the user scrolls to the newsletter section
-  Then a red (#eb4141) background section is visible
-  And a newsletter signup form with email input is displayed
-  And a submit button is present
+- **GIVEN** the user scrolls to the intro section
+- **THEN** a "Welcome to Our Church" heading is visible
+- **AND** descriptive text about the church is present
+- **AND** an image is displayed alongside the text (two-column layout)
 
-### Scenario: News section shows blog posts
-  Given the user scrolls to the news section
-  Then a white background section is visible
-  And the heading "Latest News" is displayed
-  And blog post cards show images, date badges, titles, excerpts, and "Read More" links
+#### Scenario: Services section shows ministry activities
 
-### Scenario: Footer displays site information
-  Given the user views the footer
-  Then a dark (#161619) background footer is visible
-  And the logo with "Church" text (Bilbo serif) is displayed
-  And three columns of links (Quick Links, Support, Contact) are present
-  And social media icons are displayed
-  And a copyright bar is at the bottom
-  And a link to Component Dock is present
+- **GIVEN** the user scrolls to the services section
+- **THEN** a parallax background image is visible behind the content
+- **AND** the heading "Our Church main activities" is displayed in white
+- **AND** 5 service items are shown with circular icons, titles, and descriptions
 
-### Scenario: Responsive layout on mobile
-  Given the user resizes the viewport to 375px width
-  Then the hamburger menu icon is visible
-  And the navigation collapses into a mobile menu
-  And all sections stack vertically
-  And text remains readable
+#### Scenario: Causes section displays church causes
 
-### Scenario: Navigation links scroll to sections
-  Given the user clicks a navigation link (e.g., "Ministries")
-  Then the page scrolls to the corresponding section
-  And the scroll animation is smooth
+- **GIVEN** the user scrolls to the causes section
+- **THEN** a white background section is visible
+- **AND** the heading "Our Church's Causes" is displayed
+- **AND** cause cards are shown with images, titles, and descriptions
+- **AND** the causes are displayed in a slider/carousel format
+
+#### Scenario: Quote section displays a quote
+
+- **GIVEN** the user scrolls to the quote section
+- **THEN** a parallax background image is visible
+- **AND** the heading "Quote of the day" is displayed in white
+- **AND** a large quote text is shown with character and source attribution
+
+#### Scenario: Sermon section shows recent sermons
+
+- **GIVEN** the user scrolls to the sermon section
+- **THEN** a light gray (#f0f4f8) background section is visible
+- **AND** the heading "Today's Sermon" is displayed
+- **AND** sermon cards show images, titles, dates, and play buttons
+
+#### Scenario: Newsletter section has signup form
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** a red (#eb4141) background section is visible
+- **AND** a newsletter signup form with email input is displayed
+- **AND** a submit button is present
+
+#### Scenario: News section shows blog posts
+
+- **GIVEN** the user scrolls to the news section
+- **THEN** a white background section is visible
+- **AND** the heading "Latest News" is displayed
+- **AND** blog post cards show images, date badges, titles, excerpts, and "Read More" links
+
+#### Scenario: Footer displays site information
+
+- **GIVEN** the user views the footer
+- **THEN** a dark (#161619) background footer is visible
+- **AND** the logo with "Church" text (Bilbo serif) is displayed
+- **AND** three columns of links (Quick Links, Support, Contact) are present
+- **AND** social media icons are displayed
+- **AND** a copyright bar is at the bottom
+- **AND** a link to Component Dock is present
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user resizes the viewport to 375px width
+- **THEN** the hamburger menu icon is visible
+- **AND** the navigation collapses into a mobile menu
+- **AND** all sections stack vertically
+- **AND** text remains readable
+
+#### Scenario: Navigation links scroll to sections
+
+- **GIVEN** the user clicks a navigation link (e.g., "Ministries")
+- **THEN** the page scrolls to the corresponding section
+- **AND** the scroll animation is smooth
 
 ## Verification checklist
 

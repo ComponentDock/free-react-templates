@@ -54,98 +54,110 @@ typographic hierarchy.
 7. **Contact** — parallax bg image, dark overlay, centered "Get In Touch" heading, form: name, email, subject (3 cols), message textarea, "Send" button
 8. **Footer** — logo + copyright left, nav links right (Home, Albums, Events, News, Contact)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Melodia — Music Landing Page Recreation
 
 #### Scenario: Navbar renders correctly
-- GIVEN the user loads the page
-- THEN a navbar is visible with a logo on the left
-- AND nav links are present: Home, Albums, Events, News, Contact
-- AND a "Login / Register" link and a cart icon with quantity badge are visible on the right
-- AND the navbar background is transparent when at the top of the page
+
+- **GIVEN** the user loads the page
+- **THEN** a navbar is visible with a logo on the left
+- **AND** nav links are present: Home, Albums, Events, News, Contact
+- **AND** a "Login / Register" link and a cart icon with quantity badge are visible on the right
+- **AND** the navbar background is transparent when at the top of the page
 
 #### Scenario: Navbar becomes sticky on scroll
-- GIVEN the user scrolls past the hero area
-- THEN the navbar becomes fixed at the top with a black background
-- AND a subtle box shadow appears
+
+- **GIVEN** the user scrolls past the hero area
+- **THEN** the navbar becomes fixed at the top with a black background
+- **AND** a subtle box shadow appears
 
 #### Scenario: Hero section displays with carousel
-- GIVEN the user loads the page
-- THEN a full-width hero area is visible
-- AND a background image is displayed
-- AND a subtitle "Latest album" is shown
-- AND an album title (h2) is displayed
-- AND a "Discover" button is visible below the title
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero area is visible
+- **AND** a background image is displayed
+- **AND** a subtitle "Latest album" is shown
+- **AND** an album title (h2) is displayed
+- **AND** a "Discover" button is visible below the title
 
 #### Scenario: Hero carousel navigates between slides
-- GIVEN the hero carousel is displayed
-- WHEN the user waits for auto-advance or clicks navigation dots
-- THEN a different slide with a new background image and title appears
-- AND the transition is smooth
+
+- **GIVEN** the hero carousel is displayed
+- **WHEN** the user waits for auto-advance or clicks navigation dots
+- **THEN** a different slide with a new background image and title appears
+- **AND** the transition is smooth
 
 #### Scenario: Latest Albums section shows album carousel
-- GIVEN the user scrolls to the Latest Albums section
-- THEN a section heading "Latest Albums" is displayed with subtitle "See what's new"
-- AND a paragraph description is shown below the heading
-- AND a carousel of album covers is displayed
-- AND each album shows an artist name and song title overlay
+
+- **GIVEN** the user scrolls to the Latest Albums section
+- **THEN** a section heading "Latest Albums" is displayed with subtitle "See what's new"
+- **AND** a paragraph description is shown below the heading
+- **AND** a carousel of album covers is displayed
+- **AND** each album shows an artist name and song title overlay
 
 #### Scenario: Buy What's New section displays album grid
-- GIVEN the user scrolls to the Buy What's New section
-- THEN a section heading "Buy What's New" is displayed
-- AND a grid of album cards is shown on a light gray (#f5f9fa) background
-- AND each card has a thumbnail image
-- AND each card shows a price tag
-- AND each card has a play icon overlay
-- AND each card shows the artist name and album title
+
+- **GIVEN** the user scrolls to the Buy What's New section
+- **THEN** a section heading "Buy What's New" is displayed
+- **AND** a grid of album cards is shown on a light gray (#f5f9fa) background
+- **AND** each card has a thumbnail image
+- **AND** each card shows a price tag
+- **AND** each card has a play icon overlay
+- **AND** each card shows the artist name and album title
 
 #### Scenario: Featured Artist section with audio player
-- GIVEN the user scrolls to the Featured Artist section
-- THEN a parallax background image with dark overlay is displayed
-- AND a section heading is shown
-- AND an artist image appears on the left column
-- AND descriptive text appears on the right
-- AND an audio player with a song name ("01. Main Hit Song") is displayed
+
+- **GIVEN** the user scrolls to the Featured Artist section
+- **THEN** a parallax background image with dark overlay is displayed
+- **AND** a section heading is shown
+- **AND** an artist image appears on the left column
+- **AND** descriptive text appears on the right
+- **AND** an audio player with a song name ("01. Main Hit Song") is displayed
 
 #### Scenario: Miscellaneous section displays three columns
-- GIVEN the user scrolls to the Miscellaneous section
-- THEN three columns are displayed side by side
-- AND the first column shows "This Week's Top" with a list of 6 artists
-- AND the second column shows "New Hits" with 6 tracks each having an audio player
-- AND the third column shows "Popular Artists" with 7 artist entries
-- AND each entry has a thumbnail image and name/song text
+
+- **GIVEN** the user scrolls to the Miscellaneous section
+- **THEN** three columns are displayed side by side
+- **AND** the first column shows "This Week's Top" with a list of 6 artists
+- **AND** the second column shows "New Hits" with 6 tracks each having an audio player
+- **AND** the third column shows "Popular Artists" with 7 artist entries
+- **AND** each entry has a thumbnail image and name/song text
 
 #### Scenario: Contact form section
-- GIVEN the user scrolls to the Contact section
-- THEN a parallax background with dark overlay is displayed
-- AND a "Get In Touch" heading is shown
-- AND a form with fields for Name, Email, Subject, and Message is displayed
-- AND a "Send" button is visible at the bottom of the form
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a parallax background with dark overlay is displayed
+- **AND** a "Get In Touch" heading is shown
+- **AND** a form with fields for Name, Email, Subject, and Message is displayed
+- **AND** a "Send" button is visible at the bottom of the form
 
 #### Scenario: Footer displays correctly
-- GIVEN the user scrolls to the footer
-- THEN a logo is displayed on the left
-- AND copyright text is shown
-- AND navigation links (Home, Albums, Events, News, Contact) are on the right
-- AND a "Made with Component Dock" attribution link to https://www.componentdock.com/ is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a logo is displayed on the left
+- **AND** copyright text is shown
+- **AND** navigation links (Home, Albums, Events, News, Contact) are on the right
+- **AND** a "Made with Component Dock" attribution link to https://www.componentdock.com/ is present
 
 #### Scenario: Responsive layout
-- GIVEN the user views the page on a mobile device (viewport < 768px)
-- THEN the navbar collapses to a hamburger menu
-- AND the hero content is centered and scaled down
-- AND the album grid stacks vertically
-- AND the miscellaneous three-column layout stacks vertically
-- AND the contact form fields stack vertically
+
+- **GIVEN** the user views the page on a mobile device (viewport < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero content is centered and scaled down
+- **AND** the album grid stacks vertically
+- **AND** the miscellaneous three-column layout stacks vertically
+- **AND** the contact form fields stack vertically
 
 #### Scenario: Color scheme and typography
-- GIVEN the user views the page
-- THEN the font family is "Archivo Narrow" (Google Fonts)
-- AND primary color is black (#000000)
-- AND body text color is #5f5f5f
-- AND buttons have square corners (border-radius: 0)
-- AND buttons invert colors on hover (white text on black background)
-- AND section headings are uppercase with wide letter-spacing
+
+- **GIVEN** the user views the page
+- **THEN** the font family is "Archivo Narrow" (Google Fonts)
+- **AND** primary color is black (#000000)
+- **AND** body text color is #5f5f5f
+- **AND** buttons have square corners (border-radius: 0)
+- **AND** buttons invert colors on hover (white text on black background)
+- **AND** section headings are uppercase with wide letter-spacing
 
 ## Verification Checklist
 

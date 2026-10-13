@@ -113,90 +113,105 @@ structure 1:1 with matching layout, colors, typography, and content types
     description, quick links, services, contact info + newsletter signup.
     Bottom bar with copyright.
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: Havenkey template behaviour
+
 Feature: Havenkey — Real Estate Agency Landing Page
 
-  Background:
-    Given the Havenkey app is running
-    And all routes resolve without error
+Background:
+- **GIVEN** the Havenkey app is running
+- **AND** all routes resolve without error
 
-  Scenario: Page loads and displays the top info bar
-    Then the top info bar should show a phone number
-    And the top info bar should show a location address
-    And the top info bar should show social media links
+#### Scenario: Page loads and displays the top info bar
 
-  Scenario: Navbar renders with correct links
-    Then the navbar should display the brand name "Havenkey"
-    And the navbar should have links for Home, About, Properties, Agents, Blog, Contact
-    And there should be a "Submit A Property" CTA button
+- **THEN** the top info bar should show a phone number
+- **AND** the top info bar should show a location address
+- **AND** the top info bar should show social media links
 
-  Scenario: Hero slider displays slides
-    Then the hero section should be visible
-    And there should be a headline and description text
-    And there should be a "Learn More" CTA button
-    And there should be navigation dots or arrows for slide switching
+#### Scenario: Navbar renders with correct links
 
-  Scenario: Property search form renders all filter fields
-    Then there should be Buy/Rent tab toggles
-    And there should be a Keyword input field
-    And there should be a Property Type select field
-    And there should be a Location input field
-    And there should be a Price Limit select field
-    And there should be a Search submit button
+- **THEN** the navbar should display the brand name "Havenkey"
+- **AND** the navbar should have links for Home, About, Properties, Agents, Blog, Contact
+- **AND** there should be a "Submit A Property" CTA button
 
-  Scenario: Categories section shows property types
-    Then the categories section should display 4 category cards
-    And each category card should have an image and a label
-    And the labels should be Land, Residential, Commercial, Industrial
+#### Scenario: Hero slider displays slides
 
-  Scenario: Featured properties section renders property cards
-    Then the featured properties section should be visible
-    And there should be property cards with images
-    And each property card should show a title and price
+- **THEN** the hero section should be visible
+- **AND** there should be a headline and description text
+- **AND** there should be a "Learn More" CTA button
+- **AND** there should be navigation dots or arrows for slide switching
 
-  Scenario: Video section renders
-    Then the video section should display a background image
-    And there should be a play button overlay
+#### Scenario: Property search form renders all filter fields
 
-  Scenario: About section shows company info
-    Then the about section should have a two-column layout
-    And there should be a company description heading
-    And there should be an image alongside the text
+- **THEN** there should be Buy/Rent tab toggles
+- **AND** there should be a Keyword input field
+- **AND** there should be a Property Type select field
+- **AND** there should be a Location input field
+- **AND** there should be a Price Limit select field
+- **AND** there should be a Search submit button
 
-  Scenario: CTA strip renders
-    Then the CTA strip should display a headline
-    And there should be a "Get in touch" button
+#### Scenario: Categories section shows property types
 
-  Scenario: Testimonials section shows client reviews
-    Then the testimonials section should be visible
-    And there should be at least one testimonial with a client name and quote
+- **THEN** the categories section should display 4 category cards
+- **AND** each category card should have an image and a label
+- **AND** the labels should be Land, Residential, Commercial, Industrial
 
-  Scenario: Agents section shows agent cards
-    Then the agents section should display agent cards
-    And each agent card should have a photo, name, and role
+#### Scenario: Featured properties section renders property cards
 
-  Scenario: Blog section shows recent posts
-    Then the blog section should display blog cards
-    And each blog card should have an image, title, and excerpt
+- **THEN** the featured properties section should be visible
+- **AND** there should be property cards with images
+- **AND** each property card should show a title and price
 
-  Scenario: Gallery strip renders images
-    Then the gallery section should display multiple images in a row
+#### Scenario: Video section renders
 
-  Scenario: Footer renders with correct columns
-    Then the footer should be visible
-    And the footer should contain brand description, quick links, services, and contact info
-    And the footer should include a newsletter signup form
-    And the footer bottom should show a copyright notice
-    And the footer should link to https://www.componentdock.com/
+- **THEN** the video section should display a background image
+- **AND** there should be a play button overlay
 
-  Scenario: Mobile responsive layout
-    When the viewport is 375px wide
-    Then the navbar should collapse into a hamburger menu
-    And all sections should be vertically stacked
-    And text should remain readable
-```
+#### Scenario: About section shows company info
+
+- **THEN** the about section should have a two-column layout
+- **AND** there should be a company description heading
+- **AND** there should be an image alongside the text
+
+#### Scenario: CTA strip renders
+
+- **THEN** the CTA strip should display a headline
+- **AND** there should be a "Get in touch" button
+
+#### Scenario: Testimonials section shows client reviews
+
+- **THEN** the testimonials section should be visible
+- **AND** there should be at least one testimonial with a client name and quote
+
+#### Scenario: Agents section shows agent cards
+
+- **THEN** the agents section should display agent cards
+- **AND** each agent card should have a photo, name, and role
+
+#### Scenario: Blog section shows recent posts
+
+- **THEN** the blog section should display blog cards
+- **AND** each blog card should have an image, title, and excerpt
+
+#### Scenario: Gallery strip renders images
+
+- **THEN** the gallery section should display multiple images in a row
+
+#### Scenario: Footer renders with correct columns
+
+- **THEN** the footer should be visible
+- **AND** the footer should contain brand description, quick links, services, and contact info
+- **AND** the footer should include a newsletter signup form
+- **AND** the footer bottom should show a copyright notice
+- **AND** the footer should link to https://www.componentdock.com/
+
+#### Scenario: Mobile responsive layout
+
+- **WHEN** the viewport is 375px wide
+- **THEN** the navbar should collapse into a hamburger menu
+- **AND** all sections should be vertically stacked
+- **AND** text should remain readable
 
 ## Verification checklist
 

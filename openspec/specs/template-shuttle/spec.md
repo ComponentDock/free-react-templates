@@ -109,7 +109,7 @@ Source slug + preview URL recorded below.
 | Section padding   | `7em 0`                                  | `.ftco-section` vertical rhythm                                            |
 | Icon font         | Font Awesome 4.7.0 (`\f00c` checkmark)  | Active checkbox icon → replace with lucide-react or SVG                    |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Shuttle — Multiselect Dropdown Component
 
@@ -118,75 +118,87 @@ Source slug + preview URL recorded below.
   so that I can understand how a multi-select form component looks and behaves.
 
   Background:
-    Given the page is loaded at the Shuttle root URL
-    And the browser supports modern JavaScript (ES2020+)
+- **GIVEN** the page is loaded at the Shuttle root URL
+- **AND** the browser supports modern JavaScript (ES2020+)
 
-  Scenario: Page renders the heading
-    Then a heading "Multiselect #01" should be visible
-    And the heading should use the Lato font family
-    And the heading should be centered horizontally
+#### Scenario: Page renders the heading
 
-  Scenario: Page renders the label
-    Then a label "Select Language:" should be visible
-    And the label should be positioned to the left of the dropdown
-    And the label should have gray text color
+- **THEN** a heading "Multiselect #01" should be visible
+- **AND** the heading should use the Lato font family
+- **AND** the heading should be centered horizontally
 
-  Scenario: Dropdown trigger button is visible
-    Then a dropdown trigger button should be visible
-    And the button should display placeholder text or selected count
-    And the button should have a white background
-    And the button should have a subtle box-shadow
+#### Scenario: Page renders the label
 
-  Scenario: Dropdown opens on click
-    When I click the dropdown trigger button
-    Then a dropdown menu should appear
-    And the dropdown should contain 6 options
-    And the options should be: PHP, JavaScript, Java, SQL, jQuery, .Net
+- **THEN** a label "Select Language:" should be visible
+- **AND** the label should be positioned to the left of the dropdown
+- **AND** the label should have gray text color
 
-  Scenario: Options have custom checkboxes
-    When I click the dropdown trigger button
-    Then each option should display a custom checkbox
-    And unchecked checkboxes should have a 2px gray border
-    And unchecked checkboxes should have a 4px border-radius
+#### Scenario: Dropdown trigger button is visible
 
-  Scenario: Selecting an option checks its checkbox
-    When I click the dropdown trigger button
-    And I click the "PHP" option
-    Then the "PHP" checkbox should be checked
-    And the checked checkbox should have a green background (#52de97)
-    And the checked checkbox should display a checkmark icon
+- **THEN** a dropdown trigger button should be visible
+- **AND** the button should display placeholder text or selected count
+- **AND** the button should have a white background
+- **AND** the button should have a subtle box-shadow
 
-  Scenario: Multiple options can be selected
-    When I click the dropdown trigger button
-    And I click the "PHP" option
-    And I click the "JavaScript" option
-    Then both "PHP" and "JavaScript" should be checked
-    And the button text should reflect the number of selected items
+#### Scenario: Dropdown opens on click
 
-  Scenario: Deselecting an option unchecks it
-    Given I have selected "PHP"
-    When I click the dropdown trigger button
-    And I click the "PHP" option again
-    Then the "PHP" checkbox should be unchecked
-    And the unchecked checkbox should have a transparent background
+- **WHEN** I click the dropdown trigger button
+- **THEN** a dropdown menu should appear
+- **AND** the dropdown should contain 6 options
+- **AND** the options should be: PHP, JavaScript, Java, SQL, jQuery, .Net
 
-  Scenario: Dropdown closes when clicking outside
-    Given the dropdown is open
-    When I click outside the dropdown area
-    Then the dropdown menu should close
+#### Scenario: Options have custom checkboxes
 
-  Scenario: Responsive layout on mobile
-    Given the viewport width is 375px
-    Then the label and dropdown should stack vertically
-    And the dropdown should take full width
+- **WHEN** I click the dropdown trigger button
+- **THEN** each option should display a custom checkbox
+- **AND** unchecked checkboxes should have a 2px gray border
+- **AND** unchecked checkboxes should have a 4px border-radius
 
-  Scenario: Section background color
-    Then the page background should be #f8f9fd
-    And the section should have vertical padding of approximately 7em
+#### Scenario: Selecting an option checks its checkbox
 
-  Scenario: Footer links to Component Dock
-    Then a link to "https://www.componentdock.com/" should be present
-    And the link text should contain "Component Dock"
+- **WHEN** I click the dropdown trigger button
+- **AND** I click the "PHP" option
+- **THEN** the "PHP" checkbox should be checked
+- **AND** the checked checkbox should have a green background (#52de97)
+- **AND** the checked checkbox should display a checkmark icon
+
+#### Scenario: Multiple options can be selected
+
+- **WHEN** I click the dropdown trigger button
+- **AND** I click the "PHP" option
+- **AND** I click the "JavaScript" option
+- **THEN** both "PHP" and "JavaScript" should be checked
+- **AND** the button text should reflect the number of selected items
+
+#### Scenario: Deselecting an option unchecks it
+
+- **GIVEN** I have selected "PHP"
+- **WHEN** I click the dropdown trigger button
+- **AND** I click the "PHP" option again
+- **THEN** the "PHP" checkbox should be unchecked
+- **AND** the unchecked checkbox should have a transparent background
+
+#### Scenario: Dropdown closes when clicking outside
+
+- **GIVEN** the dropdown is open
+- **WHEN** I click outside the dropdown area
+- **THEN** the dropdown menu should close
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport width is 375px
+- **THEN** the label and dropdown should stack vertically
+- **AND** the dropdown should take full width
+
+#### Scenario: Section background color
+
+- **THEN** the page background should be #f8f9fd
+- **AND** the section should have vertical padding of approximately 7em
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** a link to "https://www.componentdock.com/" should be present
+- **AND** the link text should contain "Component Dock"
 
 ## Verification checklist
 

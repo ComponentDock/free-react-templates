@@ -85,43 +85,48 @@ Extracted from the ColorLib page CSS and screenshot analysis:
 - Social icons
 - "Made with Component Dock" attribution link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: JobSpring template behaviour
+
 Feature: JobSpring landing page
 
-  Scenario: Navbar displays correctly
-    Given the user visits the landing page
-    Then the navbar is sticky at the top
-    And the logo shows "JobSpring" with a search icon
-    And nav links "Home", "Browse Job", "Pages", "Blog", "Contact" are visible
-    And a green "Post a Job" button is visible on the right
+#### Scenario: Navbar displays correctly
 
-  Scenario: Hero section renders
-    Given the user visits the landing page
-    Then a blue hero section is displayed
-    And the headline "Find your Dream Job" is visible
-    And the job count "4536+ Jobs listed" is visible
-    And a green "Upload Your Resume" button is visible
+- **GIVEN** the user visits the landing page
+- **THEN** the navbar is sticky at the top
+- **AND** the logo shows "JobSpring" with a search icon
+- **AND** nav links "Home", "Browse Job", "Pages", "Blog", "Contact" are visible
+- **AND** a green "Post a Job" button is visible on the right
 
-  Scenario: Job search form works
-    Given the user visits the landing page
-    Then a search bar with keyword input is visible
-    And a Location dropdown is visible
-    And a Category dropdown is visible
-    And a green "Find Job" button is visible
-    And popular search tags are displayed below
+#### Scenario: Hero section renders
 
-  Scenario: Popular categories grid renders
-    Given the user scrolls to the categories section
-    Then 8 category cards are displayed in a grid
-    And each card shows a category name and job count badge
+- **GIVEN** the user visits the landing page
+- **THEN** a blue hero section is displayed
+- **AND** the headline "Find your Dream Job" is visible
+- **AND** the job count "4536+ Jobs listed" is visible
+- **AND** a green "Upload Your Resume" button is visible
 
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a "Component Dock" link is present
-    And the link points to "https://www.componentdock.com/"
-```
+#### Scenario: Job search form works
+
+- **GIVEN** the user visits the landing page
+- **THEN** a search bar with keyword input is visible
+- **AND** a Location dropdown is visible
+- **AND** a Category dropdown is visible
+- **AND** a green "Find Job" button is visible
+- **AND** popular search tags are displayed below
+
+#### Scenario: Popular categories grid renders
+
+- **GIVEN** the user scrolls to the categories section
+- **THEN** 8 category cards are displayed in a grid
+- **AND** each card shows a category name and job count badge
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a "Component Dock" link is present
+- **AND** the link points to "https://www.componentdock.com/"
 
 ## Verification checklist
 

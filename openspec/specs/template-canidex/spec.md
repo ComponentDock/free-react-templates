@@ -88,7 +88,9 @@ parsed for section structure and design tokens.)
     icons (Facebook, Twitter, Dribbble, Behance). Footer MUST link
     `https://www.componentdock.com/`.
 
-## Gherkin requirements
+## Requirements
+
+### Feature: Canidex template behaviour
 
 Feature: Canidex Restaurant Landing Page
   As a visitor to a restaurant website
@@ -96,96 +98,123 @@ Feature: Canidex Restaurant Landing Page
   So that I can decide to visit and make a reservation
 
   Background:
-    Given the user opens the Canidex homepage
+- **GIVEN** the user opens the Canidex homepage
 
-  # --- Navbar ---
-  Scenario: Navbar displays all navigation links
-    Then the navbar contains links: Home, About, Menu, Chefs, Blog, Contact
-    And the navbar contains a "book a table" button
+**--- Navbar ---**
 
-  Scenario: Navbar is sticky on scroll
-    When the user scrolls down past the hero
-    Then the navbar remains fixed at the top of the viewport
+#### Scenario: Navbar displays all navigation links
 
-  # --- Hero ---
-  Scenario: Hero displays headline and CTAs
-    Then the hero shows the tagline "Expensive but the best"
-    And the hero shows heading "Deliciousness jumping into the mouth"
-    And the hero shows a "Reservation" link
-    And the hero shows a "Watch our story" video link
+- **THEN** the navbar contains links: Home, About, Menu, Chefs, Blog, Contact
+- **AND** the navbar contains a "book a table" button
 
-  # --- Exclusive Dishes ---
-  Scenario: Exclusive Dishes section renders food items
-    Then the exclusive dishes section shows heading "Our Exclusive Items"
-    And there are 3 food item cards visible
-    And each card has an image, title, description, and "Read More" link
+#### Scenario: Navbar is sticky on scroll
 
-  # --- About ---
-  Scenario: About section shows restaurant history
-    Then the about section shows heading "Where The Food's As Good As The Root Beer."
-    And the about section shows an image alongside the text
-    And the about section has a "Read More" link
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar remains fixed at the top of the viewport
 
-  # --- Video CTA ---
-  Scenario: Video CTA section shows play button
-    Then the video section shows heading "Expect The Best"
-    And there is a play button linking to a video
+**--- Hero ---**
 
-  # --- Food Menu ---
-  Scenario: Food menu has tabbed navigation
-    Then the food menu section shows heading "Delicious Food Menu"
-    And there are 5 tabs: Special, Breakfast, Lunch, Dinner, Snacks
-    And the Special tab is active by default
+#### Scenario: Hero displays headline and CTAs
 
-  Scenario: Food menu displays items with prices
-    When the user views the Special tab
-    Then there are 6 food items visible
-    And each item shows a name, description, and price
+- **THEN** the hero shows the tagline "Expensive but the best"
+- **AND** the hero shows heading "Deliciousness jumping into the mouth"
+- **AND** the hero shows a "Reservation" link
+- **AND** the hero shows a "Watch our story" video link
 
-  Scenario: Food menu tabs switch content
-    When the user clicks the "Breakfast" tab
-    Then the Breakfast tab content is displayed
-    And the Special tab content is hidden
+**--- Exclusive Dishes ---**
 
-  # --- Reservation Form ---
-  Scenario: Reservation form displays all fields
-    Then the reservation section shows heading "Book A Table"
-    And the form has fields: Name, Email, Persons, Phone, Date, Time, Note
-    And the form has a "Book A Table" submit button
+#### Scenario: Exclusive Dishes section renders food items
 
-  Scenario: Reservation form validates required fields
-    When the user submits the reservation form without filling fields
-    Then the form shows validation errors for required fields
+- **THEN** the exclusive dishes section shows heading "Our Exclusive Items"
+- **AND** there are 3 food item cards visible
+- **AND** each card has an image, title, description, and "Read More" link
 
-  # --- Testimonials ---
-  Scenario: Testimonials carousel shows reviews
-    Then the testimonials section shows heading "Customers Feedback"
-    And there are 3 testimonial slides
-    And each slide shows a client image, quote, and name
+**--- About ---**
 
-  # --- Blog ---
-  Scenario: Blog section shows recent posts
-    Then the blog section shows heading "Latest From Blog"
-    And there are 3 blog post cards
-    And each card has an image, date, category, title, and "Read More" link
+#### Scenario: About section shows restaurant history
 
-  # --- Footer ---
-  Scenario: Footer displays columns and copyright
-    Then the footer shows 4 columns: About Us, Important Links, Contact, Newsletter
-    And the footer shows a copyright line
-    And the footer links to https://www.componentdock.com/
-    And the footer shows social media icon links
+- **THEN** the about section shows heading "Where The Food's As Good As The Root Beer."
+- **AND** the about section shows an image alongside the text
+- **AND** the about section has a "Read More" link
 
-  # --- Responsive ---
-  Scenario: Mobile view collapses navbar
-    When the viewport width is less than 992px
-    Then the navbar collapses to a hamburger menu
-    And the "book a table" button is hidden on mobile
+**--- Video CTA ---**
 
-  Scenario: Mobile view stacks grid columns
-    When the viewport width is less than 576px
-    Then food item cards stack vertically
-    And blog post cards stack vertically
+#### Scenario: Video CTA section shows play button
+
+- **THEN** the video section shows heading "Expect The Best"
+- **AND** there is a play button linking to a video
+
+**--- Food Menu ---**
+
+#### Scenario: Food menu has tabbed navigation
+
+- **THEN** the food menu section shows heading "Delicious Food Menu"
+- **AND** there are 5 tabs: Special, Breakfast, Lunch, Dinner, Snacks
+- **AND** the Special tab is active by default
+
+#### Scenario: Food menu displays items with prices
+
+- **WHEN** the user views the Special tab
+- **THEN** there are 6 food items visible
+- **AND** each item shows a name, description, and price
+
+#### Scenario: Food menu tabs switch content
+
+- **WHEN** the user clicks the "Breakfast" tab
+- **THEN** the Breakfast tab content is displayed
+- **AND** the Special tab content is hidden
+
+**--- Reservation Form ---**
+
+#### Scenario: Reservation form displays all fields
+
+- **THEN** the reservation section shows heading "Book A Table"
+- **AND** the form has fields: Name, Email, Persons, Phone, Date, Time, Note
+- **AND** the form has a "Book A Table" submit button
+
+#### Scenario: Reservation form validates required fields
+
+- **WHEN** the user submits the reservation form without filling fields
+- **THEN** the form shows validation errors for required fields
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials carousel shows reviews
+
+- **THEN** the testimonials section shows heading "Customers Feedback"
+- **AND** there are 3 testimonial slides
+- **AND** each slide shows a client image, quote, and name
+
+**--- Blog ---**
+
+#### Scenario: Blog section shows recent posts
+
+- **THEN** the blog section shows heading "Latest From Blog"
+- **AND** there are 3 blog post cards
+- **AND** each card has an image, date, category, title, and "Read More" link
+
+**--- Footer ---**
+
+#### Scenario: Footer displays columns and copyright
+
+- **THEN** the footer shows 4 columns: About Us, Important Links, Contact, Newsletter
+- **AND** the footer shows a copyright line
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** the footer shows social media icon links
+
+**--- Responsive ---**
+
+#### Scenario: Mobile view collapses navbar
+
+- **WHEN** the viewport width is less than 992px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the "book a table" button is hidden on mobile
+
+#### Scenario: Mobile view stacks grid columns
+
+- **WHEN** the viewport width is less than 576px
+- **THEN** food item cards stack vertically
+- **AND** blog post cards stack vertically
 
 ## Verification checklist
 

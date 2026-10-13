@@ -46,49 +46,53 @@ Commute is a login form template with a hero image, login form and footer. It re
 2. **Login Form** — "Sign In" heading, subtitle, username input, password input, remember me + forgot password, Log In button, "— or —" divider, social buttons
 3. **Footer** — Component Dock attribution link
 
-## Scenarios
+## Requirements
 
 ### Gherkin
 
-```gherkin
 Feature: Commute Login Form
 
-  Scenario: Render login form
-    Given the page loads
-    Then I see "Sign In" heading
-    And I see a subtitle with placeholder text
-    And I see a Username input
-    And I see a Password input
+#### Scenario: Render login form
 
-  Scenario: Remember me checkbox
-    Given the page loads
-    Then the "Remember me" checkbox is unchecked
-    When I click the "Remember me" checkbox
-    Then the checkbox is checked
+- **GIVEN** the page loads
+- **THEN** I see "Sign In" heading
+- **AND** I see a subtitle with placeholder text
+- **AND** I see a Username input
+- **AND** I see a Password input
 
-  Scenario: Forgot Password link
-    Given the page loads
-    When I click "Forgot Password"
-    Then I navigate to #forgot
+#### Scenario: Remember me checkbox
 
-  Scenario: Social login buttons
-    Given the page loads
-    Then I see "Login with Facebook" button
-    And I see "Login with Twitter" button
-    And I see "Login with Google" button
+- **GIVEN** the page loads
+- **THEN** the "Remember me" checkbox is unchecked
+- **WHEN** I click the "Remember me" checkbox
+- **THEN** the checkbox is checked
 
-  Scenario: Form submission
-    Given the page loads
-    When I fill in username "testuser"
-    And I fill in password "secret123"
-    And I click "Log In"
-    Then the form submits without error
+#### Scenario: Forgot Password link
 
-  Scenario: Footer
-    Given the page loads
-    Then I see "More templates at Component Dock" link
-    And the link opens in a new tab
-```
+- **GIVEN** the page loads
+- **WHEN** I click "Forgot Password"
+- **THEN** I navigate to #forgot
+
+#### Scenario: Social login buttons
+
+- **GIVEN** the page loads
+- **THEN** I see "Login with Facebook" button
+- **AND** I see "Login with Twitter" button
+- **AND** I see "Login with Google" button
+
+#### Scenario: Form submission
+
+- **GIVEN** the page loads
+- **WHEN** I fill in username "testuser"
+- **AND** I fill in password "secret123"
+- **AND** I click "Log In"
+- **THEN** the form submits without error
+
+#### Scenario: Footer
+
+- **GIVEN** the page loads
+- **THEN** I see "More templates at Component Dock" link
+- **AND** the link opens in a new tab
 
 ## Verification
 

@@ -17,16 +17,22 @@ Recreation of ColorLib Accordion 16 (`https://colorlib.com/wp/template/accordion
 
 ### Requirement 1: Header Section
 
+#### Scenario: Header Section
+
 - Display a prominent centered heading "Bootstrap Accordion #6" (or adapted branded heading).
 - Clean light background aesthetic.
 
 ### Requirement 2: Accordion Items
+
+#### Scenario: Accordion Items
 
 - Stacked pill-shaped accordion items with `rounded-[40px]` and smooth expansion transitions.
 - Each item has a clickable header button with an icon indicator (`+` when collapsed, `-` in green `#72c02c` when expanded).
 - Active/expanded item highlights the title text in green `#72c02c`.
 
 ### Requirement 3: Component Dock Footer
+
+#### Scenario: Component Dock Footer
 
 - Every template footer MUST link `https://www.componentdock.com/` ("Component Dock").
 

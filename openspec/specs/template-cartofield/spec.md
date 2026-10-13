@@ -48,56 +48,51 @@ Full-viewport layout with map background:
      - Message textarea: placeholder "How Can We Help?"
      - Submit button: "SEND MESSAGE" — blue background, white text, rounded
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with map background
-```
-Given a user visits the Cartofield template
-Then the page displays a full-viewport map background
-And the background has a blue-gray tint
-```
+### Feature: Cartofield template behaviour
 
-### Scenario: Contact card is centered
-```
-Given the page has loaded
-Then a white card is centered on the page
-And the card has a subtle shadow
-```
+#### Scenario: Page renders with map background
 
-### Scenario: Contact form heading
-```
-Given the card is visible
-Then the heading "Send Us A Message" is displayed at the top of the card
-```
+- **GIVEN** a user visits the Cartofield template
+- **THEN** the page displays a full-viewport map background
+- **AND** the background has a blue-gray tint
 
-### Scenario: Email field with icon
-```
-Given the form is visible
-Then there is an email input with an envelope icon on the left
-And the placeholder reads "Your Email Address"
-```
+#### Scenario: Contact card is centered
 
-### Scenario: Message textarea
-```
-Given the form is visible
-Then there is a textarea
-And the placeholder reads "How Can We Help?"
-```
+- **GIVEN** the page has loaded
+- **THEN** a white card is centered on the page
+- **AND** the card has a subtle shadow
 
-### Scenario: Submit button
-```
-Given the form is visible
-Then there is a submit button labeled "SEND MESSAGE"
-And the button has a blue background (#4a7ec5)
-And the button text is white
-```
+#### Scenario: Contact form heading
 
-### Scenario: Responsive behavior
-```
-Given a user views on mobile (viewport < 768px)
-Then the card takes full width with padding
-And the form fields remain usable and properly spaced
-```
+- **GIVEN** the card is visible
+- **THEN** the heading "Send Us A Message" is displayed at the top of the card
+
+#### Scenario: Email field with icon
+
+- **GIVEN** the form is visible
+- **THEN** there is an email input with an envelope icon on the left
+- **AND** the placeholder reads "Your Email Address"
+
+#### Scenario: Message textarea
+
+- **GIVEN** the form is visible
+- **THEN** there is a textarea
+- **AND** the placeholder reads "How Can We Help?"
+
+#### Scenario: Submit button
+
+- **GIVEN** the form is visible
+- **THEN** there is a submit button labeled "SEND MESSAGE"
+- **AND** the button has a blue background (#4a7ec5)
+- **AND** the button text is white
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** a user views on mobile (viewport < 768px)
+- **THEN** the card takes full width with padding
+- **AND** the form fields remain usable and properly spaced
 
 ## Verification checklist
 

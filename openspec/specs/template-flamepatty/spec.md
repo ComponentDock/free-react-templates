@@ -47,100 +47,114 @@ Extracted from the preview CSS (`style.css`) on 2026-09-28.
 - **Instagram Grid:** 4 equal-width images in a row. Each has an overlay on hover with an Instagram icon.
 - **Footer:** Dark navy background. 3-column layout: 2 location blocks (address, email, phone) + newsletter signup form (input + "Sign Up" button). Social links row below. Copyright line at bottom with "Component Dock" branding replacing Colorlib credit.
 
-## Gherkin Requirements
+## Requirements
 
 ### Hero Section
 
-Scenario: Hero carousel displays on page load
-  Given the user is on the Flamepatty homepage
-  Then a full-width hero carousel is visible
-  And the carousel shows a "Big Deal" badge
-  And the heading reads "Flamepatty Bachelor" (or equivalent)
-  And the carousel auto-plays between slides
+#### Scenario: Hero carousel displays on page load
 
-Scenario: Hero carousel navigation
-  Given the hero carousel is visible
-  When the user clicks the next/prev arrow
-  Then the carousel advances/goes back one slide
+- **GIVEN** the user is on the Flamepatty homepage
+- **THEN** a full-width hero carousel is visible
+- **AND** the carousel shows a "Big Deal" badge
+- **AND** the heading reads "Flamepatty Bachelor" (or equivalent)
+- **AND** the carousel auto-plays between slides
+
+#### Scenario: Hero carousel navigation
+
+- **GIVEN** the hero carousel is visible
+- **WHEN** the user clicks the next/prev arrow
+- **THEN** the carousel advances/goes back one slide
 
 ### Best Burgers Menu Section
 
-Scenario: Menu grid displays burger items
-  Given the user scrolls to the menu section
-  Then 8 burger items are displayed in a 2-column grid
-  And each item shows a burger image, name, description, and price
+#### Scenario: Menu grid displays burger items
 
-Scenario: More Items button
-  Given the menu section is visible
-  When the user clicks "More Items"
-  Then a menu page or section is navigated to
+- **GIVEN** the user scrolls to the menu section
+- **THEN** 8 burger items are displayed in a 2-column grid
+- **AND** each item shows a burger image, name, description, and price
+
+#### Scenario: More Items button
+
+- **GIVEN** the menu section is visible
+- **WHEN** the user clicks "More Items"
+- **THEN** a menu page or section is navigated to
 
 ### Featured Burgers Section
 
-Scenario: Featured burgers display with overlay
-  Given the user scrolls to the featured section
-  Then 2 featured burger cards are displayed side by side
-  And each card has a dark overlay with price, name, description, and "Order Now" button
+#### Scenario: Featured burgers display with overlay
 
-Scenario: Order Now button
-  Given a featured burger card is visible
-  When the user clicks "Order Now"
-  Then a navigation or action is triggered
+- **GIVEN** the user scrolls to the featured section
+- **THEN** 2 featured burger cards are displayed side by side
+- **AND** each card has a dark overlay with price, name, description, and "Order Now" button
+
+#### Scenario: Order Now button
+
+- **GIVEN** a featured burger card is visible
+- **WHEN** the user clicks "Order Now"
+- **THEN** a navigation or action is triggered
 
 ### About Us Section
 
-Scenario: About section displays correctly
-  Given the user scrolls to the About section
-  Then 2 overlapping images are displayed on the left
-  And the right side shows an "About Us" label, heading, paragraph, and signature
+#### Scenario: About section displays correctly
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** 2 overlapping images are displayed on the left
+- **AND** the right side shows an "About Us" label, heading, paragraph, and signature
 
 ### Video Area
 
-Scenario: Video play button
-  Given the user scrolls to the video section
-  Then a play button is visible in a dark image background
-  And the heading and subtitle text are displayed
+#### Scenario: Video play button
 
-Scenario: Video popup on play click
-  Given the video play button is visible
-  When the user clicks the play button
-  Then a YouTube video popup opens
+- **GIVEN** the user scrolls to the video section
+- **THEN** a play button is visible in a dark image background
+- **AND** the heading and subtitle text are displayed
+
+#### Scenario: Video popup on play click
+
+- **GIVEN** the video play button is visible
+- **WHEN** the user clicks the play button
+- **THEN** a YouTube video popup opens
 
 ### Testimonials Section
 
-Scenario: Testimonial carousel displays
-  Given the user scrolls to the testimonials section
-  Then a carousel of customer testimonials is displayed
-  And each testimonial shows a quote, avatar, name, and star rating
+#### Scenario: Testimonial carousel displays
 
-Scenario: Testimonial carousel navigation
-  Given the testimonial carousel is visible
-  When the user clicks next/prev
-  Then the carousel advances/goes back
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of customer testimonials is displayed
+- **AND** each testimonial shows a quote, avatar, name, and star rating
+
+#### Scenario: Testimonial carousel navigation
+
+- **GIVEN** the testimonial carousel is visible
+- **WHEN** the user clicks next/prev
+- **THEN** the carousel advances/goes back
 
 ### Instagram Grid Section
 
-Scenario: Instagram grid displays images
-  Given the user scrolls to the Instagram section
-  Then 4 images are displayed in a row
-  And each image shows an Instagram icon overlay on hover
+#### Scenario: Instagram grid displays images
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** 4 images are displayed in a row
+- **AND** each image shows an Instagram icon overlay on hover
 
 ### Footer
 
-Scenario: Footer displays contact info and newsletter
-  Given the user scrolls to the footer
-  Then 2 location blocks are displayed with addresses and phone numbers
-  And a newsletter signup form with input and "Sign Up" button is shown
-  And social media links are displayed
-  And the copyright line includes "Component Dock" branding
+#### Scenario: Footer displays contact info and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 2 location blocks are displayed with addresses and phone numbers
+- **AND** a newsletter signup form with input and "Sign Up" button is shown
+- **AND** social media links are displayed
+- **AND** the copyright line includes "Component Dock" branding
 
 ### Responsive Design
 
-Scenario: Mobile layout
-  Given the user views the page on a mobile viewport (< 768px)
-  Then the navigation collapses to a hamburger menu
-  And the grid layouts stack to single column
-  And the hero text is centered and readable
+#### Scenario: Mobile layout
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** the grid layouts stack to single column
+- **AND** the hero text is centered and readable
 
 ## Verification Checklist
 

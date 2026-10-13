@@ -73,151 +73,168 @@ reveal, a dark showcase section with sticky content, testimonial, and blog grid.
    Instagram, LinkedIn). Bottom bar with copyright + Colorlib attribution →
    replaced with Component Dock.
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Logo is displayed centered
-    Given the page loads
-    Then the navbar shows a centered logo text
 
-  Scenario: Navigation links are split left and right
-    Given the page loads on desktop viewport
-    Then left nav links "Home", "Technology", "Careers" are visible
-    And right nav links "About", "Blog", "Contact" are visible
+#### Scenario: Logo is displayed centered
 
-  Scenario: Navbar becomes sticky on scroll
-    Given the page loads
-    When the user scrolls down past the hero
-    Then the navbar has a white background with shadow
+- **GIVEN** the page loads
+- **THEN** the navbar shows a centered logo text
 
-  Scenario: Mobile hamburger menu toggles
-    Given the page loads on mobile viewport
-    When the user clicks the hamburger menu icon
-    Then a slide-in mobile menu appears from the right
-```
+#### Scenario: Navigation links are split left and right
+
+- **GIVEN** the page loads on desktop viewport
+- **THEN** left nav links "Home", "Technology", "Careers" are visible
+- **AND** right nav links "About", "Blog", "Contact" are visible
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar has a white background with shadow
+
+#### Scenario: Mobile hamburger menu toggles
+
+- **GIVEN** the page loads on mobile viewport
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** a slide-in mobile menu appears from the right
 
 ### Hero / Cover
 
-```gherkin
 Feature: Hero / Cover
-  Scenario: Hero headline is displayed
-    Given the page loads
-    Then the hero section shows the heading "We can make it together"
 
-  Scenario: Hero has a dark overlay
-    Given the page loads
-    Then the hero section has a semi-transparent dark overlay on its background image
+#### Scenario: Hero headline is displayed
 
-  Scenario: Hero is full viewport height
-    Given the page loads
-    Then the hero section occupies the full viewport height
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows the heading "We can make it together"
+
+#### Scenario: Hero has a dark overlay
+
+- **GIVEN** the page loads
+- **THEN** the hero section has a semi-transparent dark overlay on its background image
+
+#### Scenario: Hero is full viewport height
+
+- **GIVEN** the page loads
+- **THEN** the hero section occupies the full viewport height
 
 ### What We Do
 
-```gherkin
 Feature: What We Do
-  Scenario: Section header is visible
-    Given the page loads
-    Then the "What We Do" section shows the label "What We do" in brand color
 
-  Scenario: Three feature cards are displayed
-    Given the page loads
-    Then 3 feature cards are visible in the "What We Do" section
+#### Scenario: Section header is visible
 
-  Scenario: Feature cards have hover overlay
-    Given the page loads
-    When the user hovers over a feature card
-    Then a white overlay appears with the card title, description, and "Learn More" link
-```
+- **GIVEN** the page loads
+- **THEN** the "What We Do" section shows the label "What We do" in brand color
+
+#### Scenario: Three feature cards are displayed
+
+- **GIVEN** the page loads
+- **THEN** 3 feature cards are visible in the "What We Do" section
+
+#### Scenario: Feature cards have hover overlay
+
+- **GIVEN** the page loads
+- **WHEN** the user hovers over a feature card
+- **THEN** a white overlay appears with the card title, description, and "Learn More" link
 
 ### Our Features (Dark Showcase)
 
-```gherkin
 Feature: Our Features Dark Showcase
-  Scenario: Dark section is visible
-    Given the page loads
-    Then a dark-background section with heading "Our Features" is visible
 
-  Scenario: Two feature rows are displayed
-    Given the page loads
-    Then 2 feature rows are visible with a large image and sticky sidebar content
+#### Scenario: Dark section is visible
 
-  Scenario: Each feature row has a numbered caption
-    Given the page loads
-    Then each feature row shows a coral numbered caption (01., 02.)
-```
+- **GIVEN** the page loads
+- **THEN** a dark-background section with heading "Our Features" is visible
+
+#### Scenario: Two feature rows are displayed
+
+- **GIVEN** the page loads
+- **THEN** 2 feature rows are visible with a large image and sticky sidebar content
+
+#### Scenario: Each feature row has a numbered caption
+
+- **GIVEN** the page loads
+- **THEN** each feature row shows a coral numbered caption (01., 02.)
 
 ### Design for the Future
 
-```gherkin
 Feature: Design for the Future
-  Scenario: Section header is visible
-    Given the page loads
-    Then the section shows the label "Design for the future" in brand color
 
-  Scenario: Four feature items are displayed in a 2x2 grid
-    Given the page loads
-    Then 4 feature items are visible with green check icons, titles, and descriptions
-```
+#### Scenario: Section header is visible
+
+- **GIVEN** the page loads
+- **THEN** the section shows the label "Design for the future" in brand color
+
+#### Scenario: Four feature items are displayed in a 2x2 grid
+
+- **GIVEN** the page loads
+- **THEN** 4 feature items are visible with green check icons, titles, and descriptions
 
 ### Testimonial
 
-```gherkin
 Feature: Testimonial
-  Scenario: Testimonial blockquote is displayed
-    Given the page loads
-    Then a centered blockquote with a coral quote icon is visible
 
-  Scenario: Testimonial shows author info
-    Given the page loads
-    Then the testimonial shows an author name and title
-```
+#### Scenario: Testimonial blockquote is displayed
+
+- **GIVEN** the page loads
+- **THEN** a centered blockquote with a coral quote icon is visible
+
+#### Scenario: Testimonial shows author info
+
+- **GIVEN** the page loads
+- **THEN** the testimonial shows an author name and title
 
 ### Blog / Latest Posts
 
-```gherkin
 Feature: Blog Posts
-  Scenario: Four post cards are displayed
-    Given the page loads
-    Then 4 blog post cards are visible in a grid
 
-  Scenario: Each post card has image, date, title, and link
-    Given the page loads
-    Then each post card shows a thumbnail image, date meta, title, and "Read More" link
+#### Scenario: Four post cards are displayed
 
-  Scenario: Blog section has light background
-    Given the page loads
-    Then the blog section has a light gray background
-```
+- **GIVEN** the page loads
+- **THEN** 4 blog post cards are visible in a grid
+
+#### Scenario: Each post card has image, date, title, and link
+
+- **GIVEN** the page loads
+- **THEN** each post card shows a thumbnail image, date meta, title, and "Read More" link
+
+#### Scenario: Blog section has light background
+
+- **GIVEN** the page loads
+- **THEN** the blog section has a light gray background
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer has dark background
-    Given the page loads
-    Then the footer has a black background
 
-  Scenario: Footer has About Us and Features columns
-    Given the page loads
-    Then the footer shows an "About Us" text block and a "Features" links list
+#### Scenario: Footer has dark background
 
-  Scenario: Footer has newsletter subscription form
-    Given the page loads
-    Then a newsletter subscription form with email input and subscribe button is visible
+- **GIVEN** the page loads
+- **THEN** the footer has a black background
 
-  Scenario: Footer has social icons
-    Given the page loads
-    Then social media icon links (Facebook, Twitter, Instagram, LinkedIn) are visible
+#### Scenario: Footer has About Us and Features columns
 
-  Scenario: Footer has Component Dock attribution
-    Given the page loads
-    Then the footer bottom bar shows a link to "https://www.componentdock.com/" branded as "Component Dock"
-```
+- **GIVEN** the page loads
+- **THEN** the footer shows an "About Us" text block and a "Features" links list
+
+#### Scenario: Footer has newsletter subscription form
+
+- **GIVEN** the page loads
+- **THEN** a newsletter subscription form with email input and subscribe button is visible
+
+#### Scenario: Footer has social icons
+
+- **GIVEN** the page loads
+- **THEN** social media icon links (Facebook, Twitter, Instagram, LinkedIn) are visible
+
+#### Scenario: Footer has Component Dock attribution
+
+- **GIVEN** the page loads
+- **THEN** the footer bottom bar shows a link to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification Checklist
 

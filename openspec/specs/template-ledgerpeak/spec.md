@@ -55,77 +55,88 @@ Extracted from live preview CSS (`css/style.css`) at `preview.colorlib.com/theme
 | Newsletter/Subscribe | Background image with navy overlay (`#183661` at 0.7 opacity), email input + send button |
 | Footer | Dark navy bg (`#183661`), 4-column: logo+desc, Solutions, Services, Contact |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: LedgerPeak — Bookkeeping / Financial Consulting Website Template
 
 #### Scenario: Top utility bar displays contact information
-- **Given** the user loads the LedgerPeak homepage
-- **Then** a utility bar at the top shows "Have a question?", a phone number, and an email address
-- **And** the bar has a light gray background (`bg-light`)
+
+- **GIVEN** the user loads the LedgerPeak homepage
+- **THEN** a utility bar at the top shows "Have a question?", a phone number, and an email address
+- **AND** the bar has a light gray background (`bg-light`)
 
 #### Scenario: Navbar displays brand, navigation, and social links
-- **Given** the user loads the LedgerPeak homepage
-- **Then** the navbar shows the LedgerPeak logo on the left
-- **And** navigation links include: Home, About, Services (with dropdown), Blog, Contact
-- **And** three circular social icons (Facebook, Twitter, LinkedIn) appear on the right in brand blue
+
+- **GIVEN** the user loads the LedgerPeak homepage
+- **THEN** the navbar shows the LedgerPeak logo on the left
+- **AND** navigation links include: Home, About, Services (with dropdown), Blog, Contact
+- **AND** three circular social icons (Facebook, Twitter, LinkedIn) appear on the right in brand blue
 
 #### Scenario: Hero section displays headline and CTA
-- **Given** the user views the hero section
-- **Then** a background image fills the viewport with a dark overlay
-- **And** a headline "Book Keeping Consulting Agency" appears centered in white
-- **And** a subtitle paragraph appears below the headline
-- **And** a "Get Started" button appears below the subtitle in brand blue
+
+- **GIVEN** the user views the hero section
+- **THEN** a background image fills the viewport with a dark overlay
+- **AND** a headline "Book Keeping Consulting Agency" appears centered in white
+- **AND** a subtitle paragraph appears below the headline
+- **AND** a "Get Started" button appears below the subtitle in brand blue
 
 #### Scenario: About Us section shows image and feature lists
-- **Given** the user scrolls past the hero
-- **Then** an "About Us" caption appears in uppercase blue
-- **And** a heading "Mindful Planning of Monetary Spending and Saving" appears with a blue underline
-- **And** a body paragraph describes the service
-- **And** two columns of bullet lists with blue arrow markers appear
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** an "About Us" caption appears in uppercase blue
+- **AND** a heading "Mindful Planning of Monetary Spending and Saving" appears with a blue underline
+- **AND** a body paragraph describes the service
+- **AND** two columns of bullet lists with blue arrow markers appear
 
 #### Scenario: Numbers section displays key statistics
-- **Given** the user views the statistics row
-- **Then** four statistics appear in a row: Number of Clients (32,594), Years of Experience (25), Employees (1,029), Cup of Coffees (10,200)
-- **And** each stat shows a large bold number with a label below
+
+- **GIVEN** the user views the statistics row
+- **THEN** four statistics appear in a row: Number of Clients (32,594), Years of Experience (25), Employees (1,029), Cup of Coffees (10,200)
+- **AND** each stat shows a large bold number with a label below
 
 #### Scenario: Services section displays six service cards
-- **Given** the user scrolls to the services section
-- **Then** a "Our Services" caption and "What We Do" heading appear centered
-- **And** six service cards appear in a 3×2 grid
-- **And** each card has a circular icon wrapper with a blue background and white SVG icon
-- **And** each card has a title, description paragraph, and "Learn More" button
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a "Our Services" caption and "What We Do" heading appear centered
+- **AND** six service cards appear in a 3×2 grid
+- **AND** each card has a circular icon wrapper with a blue background and white SVG icon
+- **AND** each card has a title, description paragraph, and "Learn More" button
 
 #### Scenario: CTA banner with background image
-- **Given** the user scrolls past the services section
-- **Then** a full-width banner with a background image appears
-- **And** a headline "We Are Here To Help Grow Your Business" appears centered
-- **And** a "Get Started" button appears below
+
+- **GIVEN** the user scrolls past the services section
+- **THEN** a full-width banner with a background image appears
+- **AND** a headline "We Are Here To Help Grow Your Business" appears centered
+- **AND** a "Get Started" button appears below
 
 #### Scenario: Testimonials carousel
-- **Given** the user views the testimonials section
-- **Then** a "Testimonials" caption and "Happy Clients" heading appear centered in white
-- **And** testimonial cards display in a carousel with person image, name, role, and quote
-- **And** the section has a dark overlay on the background image
+
+- **GIVEN** the user views the testimonials section
+- **THEN** a "Testimonials" caption and "Happy Clients" heading appear centered in white
+- **AND** testimonial cards display in a carousel with person image, name, role, and quote
+- **AND** the section has a dark overlay on the background image
 
 #### Scenario: News / Latest Updates section
-- **Given** the user scrolls to the news section
-- **Then** a "News" caption and "Latest News & Updates" heading appear
-- **And** three blog post cards appear in a row
-- **And** each card has an image thumbnail with a date badge overlay, title, author byline, and excerpt text
+
+- **GIVEN** the user scrolls to the news section
+- **THEN** a "News" caption and "Latest News & Updates" heading appear
+- **AND** three blog post cards appear in a row
+- **AND** each card has an image thumbnail with a date badge overlay, title, author byline, and excerpt text
 
 #### Scenario: Newsletter subscription section
-- **Given** the user scrolls to the subscription section
-- **Then** a "Subscribe to us!" heading and description appear on the left
-- **And** an email input field and "Send" button appear on the right
-- **And** the section has a background image with a dark navy overlay
+
+- **GIVEN** the user scrolls to the subscription section
+- **THEN** a "Subscribe to us!" heading and description appear on the left
+- **AND** an email input field and "Send" button appear on the right
+- **AND** the section has a background image with a dark navy overlay
 
 #### Scenario: Footer displays brand and navigation
-- **Given** the user scrolls to the footer
-- **Then** the footer has a dark navy background (`#183661`)
-- **And** four columns appear: logo + description, Solutions links, Services links, Contact links
-- **And** a copyright line appears at the bottom center
-- **And** the footer links to Component Dock (replacing Colorlib attribution)
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark navy background (`#183661`)
+- **AND** four columns appear: logo + description, Solutions links, Services links, Contact links
+- **AND** a copyright line appears at the bottom center
+- **AND** the footer links to Component Dock (replacing Colorlib attribution)
 
 ## Verification Checklist
 

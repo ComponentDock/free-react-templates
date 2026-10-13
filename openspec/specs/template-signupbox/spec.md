@@ -76,83 +76,85 @@ Extracted from `css/style.css` (lines 8220–8380) and preview HTML:
      - **"Sign Up"** submit button — pill-shaped, `#3e64ff` background, white text
      - **"I'm already a member"** link — underlined, muted color
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Page loads with launch button
+### Feature: SignupBox template behaviour
 
-- Given the user visits the template page
-- When the page finishes loading
-- Then a centered "Launch" button is visible on a white background
-- And the heading text is displayed above the button
+#### Scenario: Page loads with launch button
 
-### Scenario: Modal opens on button click
+- **GIVEN** the user visits the template page
+- **WHEN** the page finishes loading
+- **THEN** a centered "Launch" button is visible on a white background
+- **AND** the heading text is displayed above the button
 
-- Given the page is loaded
-- When the user clicks the "Launch" button
-- Then a centered modal overlay appears
-- And the modal contains a signup form
+#### Scenario: Modal opens on button click
 
-### Scenario: Modal displays heading
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch" button
+- **THEN** a centered modal overlay appears
+- **AND** the modal contains a signup form
 
-- Given the modal is open
-- Then a "Create Your Account" heading is visible at the top
-- And the heading is centered
+#### Scenario: Modal displays heading
 
-### Scenario: Modal displays social login icons
+- **GIVEN** the modal is open
+- **THEN** a "Create Your Account" heading is visible at the top
+- **AND** the heading is centered
 
-- Given the modal is open
-- Then three social icons are displayed (Twitter, Facebook, Instagram)
-- And each icon is a 50x50px white circle with a subtle border
-- And the icons are centered horizontally
+#### Scenario: Modal displays social login icons
 
-### Scenario: Signup form has all fields
+- **GIVEN** the modal is open
+- **THEN** three social icons are displayed (Twitter, Facebook, Instagram)
+- **AND** each icon is a 50x50px white circle with a subtle border
+- **AND** the icons are centered horizontally
 
-- Given the modal is open
-- Then a "Full Name" text input is visible with placeholder "John Doe"
-- And an "Email Address" text input is visible with placeholder "johndoe@gmail.com"
-- And a "Password" password input is visible with placeholder "Password"
-- And a "Sign Up" submit button is visible
+#### Scenario: Signup form has all fields
 
-### Scenario: Sign Up button styling
+- **GIVEN** the modal is open
+- **THEN** a "Full Name" text input is visible with placeholder "John Doe"
+- **AND** an "Email Address" text input is visible with placeholder "johndoe@gmail.com"
+- **AND** a "Password" password input is visible with placeholder "Password"
+- **AND** a "Sign Up" submit button is visible
 
-- Given the modal is open
-- Then the "Sign Up" button has a `#3e64ff` background
-- And the button text is white
-- And the button has a pill shape (border-radius 40px)
-- And the button spans the full width of the form
+#### Scenario: Sign Up button styling
 
-### Scenario: Already a member link
+- **GIVEN** the modal is open
+- **THEN** the "Sign Up" button has a `#3e64ff` background
+- **AND** the button text is white
+- **AND** the button has a pill shape (border-radius 40px)
+- **AND** the button spans the full width of the form
 
-- Given the modal is open
-- Then an "I'm already a member" link is visible below the form
-- And the link is underlined and muted colored
+#### Scenario: Already a member link
 
-### Scenario: Modal closes on close button click
+- **GIVEN** the modal is open
+- **THEN** an "I'm already a member" link is visible below the form
+- **AND** the link is underlined and muted colored
 
-- Given the modal is open
-- When the user clicks the close button (x icon)
-- Then the modal overlay disappears
-- And the page content is visible again
+#### Scenario: Modal closes on close button click
 
-### Scenario: Modal closes on backdrop click
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (x icon)
+- **THEN** the modal overlay disappears
+- **AND** the page content is visible again
 
-- Given the modal is open
-- When the user clicks outside the modal (on the backdrop)
-- Then the modal overlay disappears
+#### Scenario: Modal closes on backdrop click
 
-### Scenario: Form inputs have focus state
+- **GIVEN** the modal is open
+- **WHEN** the user clicks outside the modal (on the backdrop)
+- **THEN** the modal overlay disappears
 
-- Given the modal is open
-- When the user clicks on an input field
-- Then the input border changes to `#3e64ff`
-- And no box shadow is applied
+#### Scenario: Form inputs have focus state
 
-### Scenario: Modal is responsive
+- **GIVEN** the modal is open
+- **WHEN** the user clicks on an input field
+- **THEN** the input border changes to `#3e64ff`
+- **AND** no box shadow is applied
 
-- Given the user is on a mobile viewport (width < 768px)
-- When the modal opens
-- Then the modal content stacks vertically
-- And all form fields remain accessible
+#### Scenario: Modal is responsive
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **WHEN** the modal opens
+- **THEN** the modal content stacks vertically
+- **AND** all form fields remain accessible
 
 ## Verification Checklist
 

@@ -49,88 +49,111 @@ Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript (strict)
 10. **Contact Widget** — background image, two office locations (New York, New Jersey) + large phone number CTA
 11. **Footer** — about column (logo + text), services links, social links, open hours, copyright bar with terms/privacy/community links
 
-## Gherkin Scenarios
+## Requirements
 
 ### Header
-Scenario: Header displays contact info and navigation
-  Given the page loads
-  Then the top bar shows address, phone number, and email
-  And the navbar shows logo, nav links (Home, About, Services, Blog, Pages, Contact)
-  And a search icon is visible
-  And a mobile hamburger menu is available on small screens
+
+#### Scenario: Header displays contact info and navigation
+
+- **GIVEN** the page loads
+- **THEN** the top bar shows address, phone number, and email
+- **AND** the navbar shows logo, nav links (Home, About, Services, Blog, Pages, Contact)
+- **AND** a search icon is visible
+- **AND** a mobile hamburger menu is available on small screens
 
 ### Hero
-Scenario: Hero section shows headline and loan form
-  Given the user views the hero section
-  Then the headline "Find The Best Monthly Payment" is displayed
-  And two CTA buttons are visible ("Get Start", "How It Work")
-  And a loan application form is displayed with fields: amount, duration, repayment, name, phone
-  And the form has a submit button "Get Your Loan Now!"
 
-Scenario: Loan form accepts input
-  Given the loan form is visible
-  When the user fills in all required fields
-  And clicks "Get Your Loan Now!"
-  Then the form submits without error
+#### Scenario: Hero section shows headline and loan form
+
+- **GIVEN** the user views the hero section
+- **THEN** the headline "Find The Best Monthly Payment" is displayed
+- **AND** two CTA buttons are visible ("Get Start", "How It Work")
+- **AND** a loan application form is displayed with fields: amount, duration, repayment, name, phone
+- **AND** the form has a submit button "Get Your Loan Now!"
+
+#### Scenario: Loan form accepts input
+
+- **GIVEN** the loan form is visible
+- **WHEN** the user fills in all required fields
+- **AND** clicks "Get Your Loan Now!"
+- **THEN** the form submits without error
 
 ### Home About
-Scenario: About section displays trust message
-  Given the user scrolls to the about section
-  Then the section title "Thousands Of Customers Trust Our Company" is visible
-  And descriptive paragraph text is shown
-  And supporting images are displayed
+
+#### Scenario: About section displays trust message
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the section title "Thousands Of Customers Trust Our Company" is visible
+- **AND** descriptive paragraph text is shown
+- **AND** supporting images are displayed
 
 ### Loan Services
-Scenario: Loan services section shows 5 service cards
-  Given the user scrolls to loan services
-  Then 5 service cards are displayed
-  And each card has a background image and title
-  And cards are: Business Loan, Fast Loan, Online Loan, Cash Loan, Car Loan
+
+#### Scenario: Loan services section shows 5 service cards
+
+- **GIVEN** the user scrolls to loan services
+- **THEN** 5 service cards are displayed
+- **AND** each card has a background image and title
+- **AND** cards are: Business Loan, Fast Loan, Online Loan, Cash Loan, Car Loan
 
 ### Choose
-Scenario: Why choose us section shows 6 features
-  Given the user scrolls to the choose section
-  Then 6 feature items are displayed
-  And each item has an icon, title, and description
+
+#### Scenario: Why choose us section shows 6 features
+
+- **GIVEN** the user scrolls to the choose section
+- **THEN** 6 feature items are displayed
+- **AND** each item has an icon, title, and description
 
 ### Testimonials
-Scenario: Testimonials carousel shows reviews
-  Given the user scrolls to testimonials
-  Then a carousel of 4 testimonials is displayed
-  And each testimonial shows an avatar, name, and quote
-  And the carousel has navigation dots or arrows
+
+#### Scenario: Testimonials carousel shows reviews
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** a carousel of 4 testimonials is displayed
+- **AND** each testimonial shows an avatar, name, and quote
+- **AND** the carousel has navigation dots or arrows
 
 ### Counter
-Scenario: Counter section shows statistics
-  Given the user scrolls to counter section
-  Then 4 statistics are displayed
-  And values are: 2100 (Successful Loan Approval), 99% (Customer Satisfaction), 90+ (Office Partners), 70+ (Award Certificate)
+
+#### Scenario: Counter section shows statistics
+
+- **GIVEN** the user scrolls to counter section
+- **THEN** 4 statistics are displayed
+- **AND** values are: 2100 (Successful Loan Approval), 99% (Customer Satisfaction), 90+ (Office Partners), 70+ (Award Certificate)
 
 ### Call / Contact Form
-Scenario: Call back form is functional
-  Given the user scrolls to the call section
-  Then the title "Request A Call Back" is visible
-  And a form with name, email, phone, and service select is shown
-  And a "Submit" button is displayed
-  When the user fills all fields and submits
-  Then the form submits without error
+
+#### Scenario: Call back form is functional
+
+- **GIVEN** the user scrolls to the call section
+- **THEN** the title "Request A Call Back" is visible
+- **AND** a form with name, email, phone, and service select is shown
+- **AND** a "Submit" button is displayed
+- **WHEN** the user fills all fields and submits
+- **THEN** the form submits without error
 
 ### Latest Blog
-Scenario: Blog section shows 3 posts
-  Given the user scrolls to the blog section
-  Then 3 blog cards are displayed
-  And each card has a title, excerpt, author avatar, author name, and date
-  And a "View More" button is shown below
+
+#### Scenario: Blog section shows 3 posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog cards are displayed
+- **AND** each card has a title, excerpt, author avatar, author name, and date
+- **AND** a "View More" button is shown below
 
 ### Contact Widget
-Scenario: Contact widget shows office info
-  Given the user scrolls to contact widget
-  Then two office locations are displayed (New York, New Jersey)
-  And a large phone number CTA is shown
+
+#### Scenario: Contact widget shows office info
+
+- **GIVEN** the user scrolls to contact widget
+- **THEN** two office locations are displayed (New York, New Jersey)
+- **AND** a large phone number CTA is shown
 
 ### Footer
-Scenario: Footer displays site info
-  Given the user scrolls to the footer
-  Then the footer shows about text, services links, social links, and open hours
-  And a copyright bar with terms, privacy, and community links is displayed
-  And a link to https://www.componentdock.com/ is present
+
+#### Scenario: Footer displays site info
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer shows about text, services links, social links, and open hours
+- **AND** a copyright bar with terms, privacy, and community links is displayed
+- **AND** a link to https://www.componentdock.com/ is present

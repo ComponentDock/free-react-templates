@@ -50,15 +50,16 @@ body with yellow (#ffdd00) accents on buttons and links, and a deep blue
 The overall aesthetic is minimal with strong contrast between the light
 content area and dark footer.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: DevMark — Personal Developer Portfolio
 
 #### Scenario: Page loads with correct structure
-- Given the user visits the DevMark homepage
-- Then a sticky top navigation bar is visible with logo "D."
-- And a hamburger menu toggle is present on mobile
-- And the page contains the following sections in order:
+
+- **GIVEN** the user visits the DevMark homepage
+- **THEN** a sticky top navigation bar is visible with logo "D."
+- **AND** a hamburger menu toggle is present on mobile
+- **AND** the page contains the following sections in order:
   1. Hero (carousel)
   2. Services ("What I Do")
   3. Work/Case Studies
@@ -66,82 +67,90 @@ content area and dark footer.
   5. Footer
 
 #### Scenario: Navigation
-- Given the navigation bar is visible
-- When the user clicks the hamburger icon (mobile)
-- Then a full-screen overlay menu appears with links:
+
+- **GIVEN** the navigation bar is visible
+- **WHEN** the user clicks the hamburger icon (mobile)
+- **THEN** a full-screen overlay menu appears with links:
   Home, About, Services, Work, Blog, Contact
-- And clicking a link closes the menu
+- **AND** clicking a link closes the menu
 
 #### Scenario: Hero carousel
-- Given the hero section is visible
-- Then a carousel displays slides with:
+
+- **GIVEN** the hero section is visible
+- **THEN** a carousel displays slides with:
   - A full-height background image (3/4 width)
   - A narrow right panel (1/4 width) with:
     - Headline text (e.g. "I'm a developer from Berlin.")
     - CTA button "Hire me now →" in uppercase with letter-spacing
-- And social media links (Twitter, Facebook, Instagram, Dribbble)
+- **AND** social media links (Twitter, Facebook, Instagram, Dribbble)
   appear vertically on the left edge
-- And carousel auto-advances or supports dot navigation
+- **AND** carousel auto-advances or supports dot navigation
 
 #### Scenario: Services section
-- Given the services section is visible
-- Then a centered heading reads "What I Do" with subheading
+
+- **GIVEN** the services section is visible
+- **THEN** a centered heading reads "What I Do" with subheading
   "Strategy, design and a bit of magic"
-- And three service cards display in a row:
+- **AND** three service cards display in a row:
   - Explore (magnifying glass icon): Design Sprints, Product Strategy, UX Strategy
   - Create (layers icon): Information, UX/UI Design, Branding
   - Learn (lightbulb icon): Prototyping, User Testing, UI Testing
-- And each card has a circle icon, title, and list of sub-services
+- **AND** each card has a circle icon, title, and list of sub-services
 
 #### Scenario: Work/Case studies section
-- Given the work section is visible (white background)
-- Then a centered heading reads "Work" with subheading
+
+- **GIVEN** the work section is visible (white background)
+- **THEN** a centered heading reads "Work" with subheading
   "Happy spending my time to this projects"
-- And a carousel displays case study cards:
+- **AND** a carousel displays case study cards:
   - Each card has a large image (50% width)
   - A text panel (50% width) with:
     - Tag pills (e.g. "UI/UX, Art Direction")
     - Project title as link
     - Description paragraph
     - "See details" button (yellow bg)
-- And at least 3 case studies are shown
+- **AND** at least 3 case studies are shown
 
 #### Scenario: Newsletter/Subscribe section
-- Given the subscribe section is visible
-- Then an overlay background is present
-- And a paragraph of introductory text appears
-- And a "Read my resume here" link with document icon
-- And a heading "Subscribe Newsletter"
-- And subheading "Subscribe our newsletter and get latest update"
-- And an email input field with placeholder "Enter your email"
-- And a "Subscribe Now" button (yellow bg, black text)
+
+- **GIVEN** the subscribe section is visible
+- **THEN** an overlay background is present
+- **AND** a paragraph of introductory text appears
+- **AND** a "Read my resume here" link with document icon
+- **AND** a heading "Subscribe Newsletter"
+- **AND** subheading "Subscribe our newsletter and get latest update"
+- **AND** an email input field with placeholder "Enter your email"
+- **AND** a "Subscribe Now" button (yellow bg, black text)
 
 #### Scenario: Footer
-- Given the footer is visible
-- Then it has a blue (#002bdc) background
-- And a left column shows "Lets Talk" heading with description
-  and a yellow "Tell us about your project" button
-- And a right column shows contact info:
+
+- **GIVEN** the footer is visible
+- **THEN** it has a blue (#002bdc) background
+- **AND** a left column shows "Lets Talk" heading with description
+- **AND** a yellow "Tell us about your project" button
+- **AND** a right column shows contact info:
   Email, Phone, Address
-- And social icons (Facebook, Twitter, Dribbble) with yellow icon color
-- And a copyright line with "Component Dock" link
+- **AND** social icons (Facebook, Twitter, Dribbble) with yellow icon color
+- **AND** a copyright line with "Component Dock" link
   (replacing original Colorlib attribution)
 
 #### Scenario: Responsive behavior
-- Given the user is on a mobile device (< 768px)
-- Then the hero carousel stacks vertically
-- And the services grid becomes single-column
-- And the work carousel shows one card at a time
-- And the footer columns stack vertically
-- And section padding reduces from 8em to 5em
+
+- **GIVEN** the user is on a mobile device (< 768px)
+- **THEN** the hero carousel stacks vertically
+- **AND** the services grid becomes single-column
+- **AND** the work carousel shows one card at a time
+- **AND** the footer columns stack vertically
+- **AND** section padding reduces from 8em to 5em
 
 #### Scenario: Accessibility
-- Given any user visits the page
-- Then navigation uses semantic `<nav>` element
-- And the hamburger button has an accessible label
-- And all images have descriptive alt text
-- And interactive elements have visible focus states
-- And the newsletter form has a proper `<label>` or `aria-label`
+
+- **GIVEN** any user visits the page
+- **THEN** navigation uses semantic `<nav>` element
+- **AND** the hamburger button has an accessible label
+- **AND** all images have descriptive alt text
+- **AND** interactive elements have visible focus states
+- **AND** the newsletter form has a proper `<label>` or `aria-label`
 
 ## Verification checklist
 

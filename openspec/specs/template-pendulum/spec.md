@@ -58,129 +58,143 @@ the ColorLib source slug (`watch`), and collides with nothing in `apps/`,
 - **Selection color:** `#235ee7` bg, white text
 - **Video overlay:** dark semi-transparent overlay
 
-## Gherkin requirements
+## Requirements
 
-### Requirement: Page composition
+### Feature: Page composition
 
-**Scenario: Full page renders all sections**
-- Given the user visits the Pendulum page
-- Then the page shall display sections in order: Navbar, Hero, Video/About, Features, Home About, Services, Products, Reviews, FAQ, Footer
-- And the font family shall be Poppins
-- And all section headings shall be dark (#222222) on light backgrounds
+#### Scenario: Full page renders all sections
 
-### Requirement: Navbar
+- **GIVEN** the user visits the Pendulum page
+- **THEN** the page shall display sections in order: Navbar, Hero, Video/About, Features, Home About, Services, Products, Reviews, FAQ, Footer
+- **AND** the font family shall be Poppins
+- **AND** all section headings shall be dark (#222222) on light backgrounds
 
-**Scenario: Navbar displays logo and navigation**
-- Given the page loads
-- Then a sticky navbar shall be visible at the top
-- And the navbar shall show "Pendulum" as the logo text
-- And navigation links shall include: Home, About, Features, Products, Reviews, FAQ
-- And clicking a nav link shall scroll to the corresponding section
+### Feature: Navbar
 
-**Scenario: Navbar is responsive**
-- Given the viewport is mobile width (< 768px)
-- Then the nav links shall collapse into a hamburger menu
-- And tapping the hamburger shall reveal the navigation links
+#### Scenario: Navbar displays logo and navigation
 
-### Requirement: Hero/Banner
+- **GIVEN** the page loads
+- **THEN** a sticky navbar shall be visible at the top
+- **AND** the navbar shall show "Pendulum" as the logo text
+- **AND** navigation links shall include: Home, About, Features, Products, Reviews, FAQ
+- **AND** clicking a nav link shall scroll to the corresponding section
 
-**Scenario: Hero displays headline and CTA**
-- Given the user views the hero section
-- Then a background image shall be displayed (dark, watch-themed)
-- And the headline "Smart New Future" shall appear
-- And a subtitle "Now you can feel the Heat" shall appear above the headline
-- And a "Buy Now" CTA button shall be visible with gradient blue-to-cyan bg and pill shape (border-radius 25px)
+#### Scenario: Navbar is responsive
 
-**Scenario: Hero is full-height**
-- Given the user views on desktop
-- Then the hero section shall fill the viewport height
+- **GIVEN** the viewport is mobile width (< 768px)
+- **THEN** the nav links shall collapse into a hamburger menu
+- **AND** tapping the hamburger shall reveal the navigation links
 
-### Requirement: Video/About split
+### Feature: Hero/Banner
 
-**Scenario: About section shows video and text**
-- Given the user scrolls to the About section
-- Then a split layout shall appear (text left, video right on desktop)
-- And the left side shall have heading "Brand new app to blow your mind"
-- And a description paragraph shall be present
-- And a "Get Started now" CTA button shall be visible
-- And the right side shall show a video play button overlay
+#### Scenario: Hero displays headline and CTA
 
-### Requirement: Features grid
+- **GIVEN** the user views the hero section
+- **THEN** a background image shall be displayed (dark, watch-themed)
+- **AND** the headline "Smart New Future" shall appear
+- **AND** a subtitle "Now you can feel the Heat" shall appear above the headline
+- **AND** a "Buy Now" CTA button shall be visible with gradient blue-to-cyan bg and pill shape (border-radius 25px)
 
-**Scenario: Features section displays cards around product image**
-- Given the user scrolls to the Features section
-- Then the section background shall be light lavender (#f9f9ff)
-- And a heading "Top Courses That are open for Students" shall appear
-- And 4 feature cards shall be displayed (2 left, 2 right of a central image)
-- And each card shall have an icon, title, and description
-- And a central product image shall be displayed between the card columns
+#### Scenario: Hero is full-height
 
-### Requirement: Home About section
+- **GIVEN** the user views on desktop
+- **THEN** the hero section shall fill the viewport height
 
-**Scenario: Home About shows split layout**
-- Given the user scrolls to the Home About section
-- Then a split layout shall appear (image left, text right)
-- And the text side shall have heading "We've made a life that will change you"
-- And a description paragraph shall be present
-- And a "Get Started now" CTA button shall be visible
+### Feature: Video/About split
 
-### Requirement: Services
+#### Scenario: About section shows video and text
 
-**Scenario: Services displays 6 service cards**
-- Given the user scrolls to the Services section
-- Then a heading "Some Features that Made us Unique" shall appear
-- And 6 service cards shall be displayed in a 3×2 grid
-- And each card shall have a lavender background (#f9f9ff), rounded corners (10px), icon, title, and description
-- And the 6 services shall be: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
-- And hovering a card shall show a blue shadow (`rgba(35,94,231,0.2)`)
+- **GIVEN** the user scrolls to the About section
+- **THEN** a split layout shall appear (text left, video right on desktop)
+- **AND** the left side shall have heading "Brand new app to blow your mind"
+- **AND** a description paragraph shall be present
+- **AND** a "Get Started now" CTA button shall be visible
+- **AND** the right side shall show a video play button overlay
 
-### Requirement: Products/Unique Features
+### Feature: Features grid
 
-**Scenario: Products section displays on dark background**
-- Given the user scrolls to the Products section
-- Then the section background shall be dark navy (#04091e)
-- And a heading "Some Features that Made us Unique" shall appear in white
-- And 4 product cards shall be displayed in a row
-- And each card shall have an image, product name, price (£399), and "Pre Order" button
-- And the "Pre Order" button shall have gradient blue-to-cyan background and white text
+#### Scenario: Features section displays cards around product image
 
-### Requirement: Reviews
+- **GIVEN** the user scrolls to the Features section
+- **THEN** the section background shall be light lavender (#f9f9ff)
+- **AND** a heading "Top Courses That are open for Students" shall appear
+- **AND** 4 feature cards shall be displayed (2 left, 2 right of a central image)
+- **AND** each card shall have an icon, title, and description
+- **AND** a central product image shall be displayed between the card columns
 
-**Scenario: Reviews displays reviewer cards**
-- Given the user scrolls to the Reviews section
-- Then 3 reviewer cards shall be displayed
-- And each card shall have a name, review text, and star rating
-- And star ratings shall use filled/unfilled star icons
+### Feature: Home About section
 
-### Requirement: FAQ accordion
+#### Scenario: Home About shows split layout
 
-**Scenario: FAQ displays expandable items**
-- Given the user scrolls to the FAQ section
-- Then 4 FAQ items shall be displayed in an accordion
-- And each item shall have a question header and collapsible answer body
-- And clicking a question shall toggle the answer visibility
-- And only one answer shall be expanded at a time
-- And the accordion headers shall have gradient blue-to-cyan background
+- **GIVEN** the user scrolls to the Home About section
+- **THEN** a split layout shall appear (image left, text right)
+- **AND** the text side shall have heading "We've made a life that will change you"
+- **AND** a description paragraph shall be present
+- **AND** a "Get Started now" CTA button shall be visible
 
-### Requirement: Footer
+### Feature: Services
 
-**Scenario: Footer displays with newsletter and social**
-- Given the user views the footer
-- Then the footer background shall be dark navy (#04091e)
-- And an "About Us" column with description text shall be present
-- And a "Newsletter" column with email input and submit button shall be present
-- And a "Follow Us" column with social icons (Facebook, Twitter, Dribbble, Behance) shall be present
-- And the footer shall include a "Component Dock" link pointing to https://www.componentdock.com/
+#### Scenario: Services displays 6 service cards
 
-### Requirement: Responsive design
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a heading "Some Features that Made us Unique" shall appear
+- **AND** 6 service cards shall be displayed in a 3×2 grid
+- **AND** each card shall have a lavender background (#f9f9ff), rounded corners (10px), icon, title, and description
+- **AND** the 6 services shall be: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
+- **AND** hovering a card shall show a blue shadow (`rgba(35,94,231,0.2)`)
 
-**Scenario: Layout adapts to mobile**
-- Given the viewport is mobile width (< 768px)
-- Then all multi-column layouts shall stack to single column
-- And the navbar shall collapse to a hamburger menu
-- And product cards shall display in a single column
-- And service cards shall display in a single column
-- And the hero shall remain full-width with readable text
+### Feature: Products/Unique Features
+
+#### Scenario: Products section displays on dark background
+
+- **GIVEN** the user scrolls to the Products section
+- **THEN** the section background shall be dark navy (#04091e)
+- **AND** a heading "Some Features that Made us Unique" shall appear in white
+- **AND** 4 product cards shall be displayed in a row
+- **AND** each card shall have an image, product name, price (£399), and "Pre Order" button
+- **AND** the "Pre Order" button shall have gradient blue-to-cyan background and white text
+
+### Feature: Reviews
+
+#### Scenario: Reviews displays reviewer cards
+
+- **GIVEN** the user scrolls to the Reviews section
+- **THEN** 3 reviewer cards shall be displayed
+- **AND** each card shall have a name, review text, and star rating
+- **AND** star ratings shall use filled/unfilled star icons
+
+### Feature: FAQ accordion
+
+#### Scenario: FAQ displays expandable items
+
+- **GIVEN** the user scrolls to the FAQ section
+- **THEN** 4 FAQ items shall be displayed in an accordion
+- **AND** each item shall have a question header and collapsible answer body
+- **AND** clicking a question shall toggle the answer visibility
+- **AND** only one answer shall be expanded at a time
+- **AND** the accordion headers shall have gradient blue-to-cyan background
+
+### Feature: Footer
+
+#### Scenario: Footer displays with newsletter and social
+
+- **GIVEN** the user views the footer
+- **THEN** the footer background shall be dark navy (#04091e)
+- **AND** an "About Us" column with description text shall be present
+- **AND** a "Newsletter" column with email input and submit button shall be present
+- **AND** a "Follow Us" column with social icons (Facebook, Twitter, Dribbble, Behance) shall be present
+- **AND** the footer shall include a "Component Dock" link pointing to https://www.componentdock.com/
+
+### Feature: Responsive design
+
+#### Scenario: Layout adapts to mobile
+
+- **GIVEN** the viewport is mobile width (< 768px)
+- **THEN** all multi-column layouts shall stack to single column
+- **AND** the navbar shall collapse to a hamburger menu
+- **AND** product cards shall display in a single column
+- **AND** service cards shall display in a single column
+- **AND** the hero shall remain full-width with readable text
 
 ## Verification checklist
 

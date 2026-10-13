@@ -34,46 +34,40 @@ Recreation of ColorLib **Search 14** (hotel/booking search form widget).
    - GUESTS input (number/stepper, default "2 Guests", +/- buttons)
    - Search button (gold background, dark text)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: SearchFormBar renders all fields
+### Feature: Lodgewise template behaviour
 
-```
-Given I visit the Lodgewise page
-Then I should see a "GOING TO" text input with placeholder "Destination, hotel name"
-And I should see a "CHECK-IN" date input
-And I should see a "CHECK-OUT" date input
-And I should see a "GUESTS" field showing "2 Guests"
-And I should see a "Search" button
-```
+#### Scenario: SearchFormBar renders all fields
 
-### Scenario: Guest count increments and decrements
+- **GIVEN** I visit the Lodgewise page
+- **THEN** I should see a "GOING TO" text input with placeholder "Destination, hotel name"
+- **AND** I should see a "CHECK-IN" date input
+- **AND** I should see a "CHECK-OUT" date input
+- **AND** I should see a "GUESTS" field showing "2 Guests"
+- **AND** I should see a "Search" button
 
-```
-Given I visit the Lodgewise page
-And the guest count is "2 Guests"
-When I click the "+" button on the guests field
-Then the guest count should show "3 Guests"
-When I click the "-" button on the guests field
-Then the guest count should show "2 Guests"
-```
+#### Scenario: Guest count increments and decrements
 
-### Scenario: Guest count cannot go below 1
+- **GIVEN** I visit the Lodgewise page
+- **AND** the guest count is "2 Guests"
+- **WHEN** I click the "+" button on the guests field
+- **THEN** the guest count should show "3 Guests"
+- **WHEN** I click the "-" button on the guests field
+- **THEN** the guest count should show "2 Guests"
 
-```
-Given I visit the Lodgewise page
-And the guest count is "1 Guest"
-When I click the "-" button on the guests field
-Then the guest count should still show "1 Guest"
-```
+#### Scenario: Guest count cannot go below 1
 
-### Scenario: Search button is clickable
+- **GIVEN** I visit the Lodgewise page
+- **AND** the guest count is "1 Guest"
+- **WHEN** I click the "-" button on the guests field
+- **THEN** the guest count should still show "1 Guest"
 
-```
-Given I visit the Lodgewise page
-When I click the "Search" button
-Then a search action should be triggered (submit or handler call)
-```
+#### Scenario: Search button is clickable
+
+- **GIVEN** I visit the Lodgewise page
+- **WHEN** I click the "Search" button
+- **THEN** a search action should be triggered (submit or handler call)
 
 ## Verification checklist
 

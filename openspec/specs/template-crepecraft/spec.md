@@ -42,64 +42,73 @@ Extracted from live preview CSS (`css/main.css`):
 8. **Newsletter Subscription** — Centered section title, email input (pill-shaped, `#f9f9ff` bg) + "Get Started" button inline
 9. **Footer Widget Area** — 3-column contact info (Address, Email, Phone) with icon boxes on gradient background, copyright line, social icons (Facebook, Twitter, Dribbble, Behance)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: CrapeCraft Template
 
 #### Scenario: Header renders logo and navigation
-- Given the page loads
-- Then the header displays a logo on the left
-- And navigation links "Home", "Generic", "Elements" are visible on the right
-- And a hamburger menu icon is present for mobile
+
+- **GIVEN** the page loads
+- **THEN** the header displays a logo on the left
+- **AND** navigation links "Home", "Generic", "Elements" are visible on the right
+- **AND** a hamburger menu icon is present for mobile
 
 #### Scenario: Hero banner displays gradient overlay with CTA
-- Given the page loads
-- Then a full-width hero section is visible
-- And the hero has a gradient background from teal (#49e3ce) to purple (#9920ed)
-- And white uppercase heading text is displayed
-- And a white subtitle paragraph is visible below the heading
-- And a "Get Started" button with arrow icon is rendered
+
+- **GIVEN** the page loads
+- **THEN** a full-width hero section is visible
+- **AND** the hero has a gradient background from teal (#49e3ce) to purple (#9920ed)
+- **AND** white uppercase heading text is displayed
+- **AND** a white subtitle paragraph is visible below the heading
+- **AND** a "Get Started" button with arrow icon is rendered
 
 #### Scenario: Features section shows 6 feature cards
-- Given the page loads
-- Then a "Featured Area" section is visible
-- And 6 feature cards are rendered in a 3-column grid
-- And each feature card has a gradient icon, uppercase title, and description paragraph
+
+- **GIVEN** the page loads
+- **THEN** a "Featured Area" section is visible
+- **AND** 6 feature cards are rendered in a 3-column grid
+- **AND** each feature card has a gradient icon, uppercase title, and description paragraph
 
 #### Scenario: Our Story section renders split layout
-- Given the page loads
-- Then an "Our Untold Story" section is visible
-- And the left side shows the section title on a gradient background
-- And the right side shows a content box with heading, paragraph, and CTA button
+
+- **GIVEN** the page loads
+- **THEN** an "Our Untold Story" section is visible
+- **AND** the left side shows the section title on a gradient background
+- **AND** the right side shows a content box with heading, paragraph, and CTA button
 
 #### Scenario: Amazing Works shows portfolio carousel
-- Given the page loads
-- Then an "Our Amazing Works" section is visible
-- And portfolio items are displayed in a horizontal carousel
-- And each item has an image thumbnail, uppercase heading, and description text
+
+- **GIVEN** the page loads
+- **THEN** an "Our Amazing Works" section is visible
+- **AND** portfolio items are displayed in a horizontal carousel
+- **AND** each item has an image thumbnail, uppercase heading, and description text
 
 #### Scenario: Our Story 2 renders mirrored layout
-- Given the page loads
-- Then a second story section is visible
-- And the layout is mirrored from the first story section (title on right, content on left)
+
+- **GIVEN** the page loads
+- **THEN** a second story section is visible
+- **AND** the layout is mirrored from the first story section (title on right, content on left)
 
 #### Scenario: Brand logos section displays partner logos
-- Given the page loads
-- Then a brand logos row is visible
-- And 5 partner logo images are displayed
+
+- **GIVEN** the page loads
+- **THEN** a brand logos row is visible
+- **AND** 5 partner logo images are displayed
 
 #### Scenario: Newsletter subscription form renders correctly
-- Given the page loads
-- Then a "Subscribe for our Newsletter" section is visible
-- And an email input field with pill-shaped styling is rendered
-- And a "Get Started" button is positioned inside/next to the input
+
+- **GIVEN** the page loads
+- **THEN** a "Subscribe for our Newsletter" section is visible
+- **AND** an email input field with pill-shaped styling is rendered
+- **AND** a "Get Started" button is positioned inside/next to the input
 
 #### Scenario: Footer widget shows contact information
-- Given the page loads
-- Then a footer widget area with gradient background is visible
-- And 3 contact columns (Address, Email, Phone) with icon boxes are rendered
-- And a copyright line with "Component Dock" link is present
-- And social media icons (Facebook, Twitter, Dribbble, Behance) are displayed
+
+- **GIVEN** the page loads
+- **THEN** a footer widget area with gradient background is visible
+- **AND** 3 contact columns (Address, Email, Phone) with icon boxes are rendered
+- **AND** a copyright line with "Component Dock" link is present
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are displayed
 
 ## Verification Checklist
 

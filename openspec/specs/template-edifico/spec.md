@@ -57,96 +57,109 @@ Reproduced in exact order from the preview DOM:
 11. **Contact CTA** — dark overlay bg, "Are you looking for Construction and Industrial Experts?" + "Contact Us" button
 12. **Footer** — logo + download brochure section, 4-column: About (address, phone, email, social links), Popular Searches, Useful Links, Subscribe (email form + text), copyright with "Made with Component Dock"
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Edifico — Construction Company Landing Page
 
 #### Scenario: Header top bar
-- **Given** the user loads the page
-- **Then** a dark top bar is visible with "Opening Hour: (10.00-07.00)" on the left
-- **And** a "Get a Quote" orange button is on the right
+
+- **GIVEN** the user loads the page
+- **THEN** a dark top bar is visible with "Opening Hour: (10.00-07.00)" on the left
+- **AND** a "Get a Quote" orange button is on the right
 
 #### Scenario: Address bar with logo and contact info
-- **Given** the user loads the page
-- **Then** the logo is displayed on the left
-- **And** address info ("20/D, Kings road, Green lane") with icon is shown
-- **And** call us info ("+10 673 567 367") with icon is shown
+
+- **GIVEN** the user loads the page
+- **THEN** the logo is displayed on the left
+- **AND** address info ("20/D, Kings road, Green lane") with icon is shown
+- **AND** call us info ("+10 673 567 367") with icon is shown
 
 #### Scenario: Sticky navbar navigation
-- **Given** the user loads the page
-- **Then** a white sticky navbar is displayed
-- **And** nav links include: Home, About, Services, Pages, Blog, Contact
-- **And** Pages and Blog have dropdown submenus
-- **And** a search icon triggers a modal search overlay
+
+- **GIVEN** the user loads the page
+- **THEN** a white sticky navbar is displayed
+- **AND** nav links include: Home, About, Services, Pages, Blog, Contact
+- **AND** Pages and Blog have dropdown submenus
+- **AND** a search icon triggers a modal search overlay
 
 #### Scenario: Hero carousel
-- **Given** the user loads the page
-- **Then** a full-width hero carousel with 3 slides is displayed
-- **And** each slide has a dark gradient overlay
-- **And** centered heading "We Build Your Home Secure and Safe" is visible
-- **And** a "Our Services" CTA button is below the heading
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero carousel with 3 slides is displayed
+- **AND** each slide has a dark gradient overlay
+- **AND** centered heading "We Build Your Home Secure and Safe" is visible
+- **AND** a "Our Services" CTA button is below the heading
 
 #### Scenario: Features section
-- **Given** the user scrolls to the features section
-- **Then** 3 feature cards are displayed in a row
-- **And** each has an orange icon, heading, and description
-- **And** the features are: Creative Plan & Design, Talented Peoples, Modern Tools
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** 3 feature cards are displayed in a row
+- **AND** each has an orange icon, heading, and description
+- **AND** the features are: Creative Plan & Design, Talented Peoples, Modern Tools
 
 #### Scenario: About section
-- **Given** the user scrolls to the about section
-- **Then** a bordered split layout is displayed
-- **And** the left side shows a construction worker image with decorative pattern
-- **And** the right side shows "We Serve all of your Construction Services" heading
-- **And** paragraphs of description text are present
-- **And** an "About Us" button is visible
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a bordered split layout is displayed
+- **AND** the left side shows a construction worker image with decorative pattern
+- **AND** the right side shows "We Serve all of your Construction Services" heading
+- **AND** paragraphs of description text are present
+- **AND** an "About Us" button is visible
 
 #### Scenario: Services carousel
-- **Given** the user scrolls to the services section
-- **Then** "Our Services" heading is displayed centered
-- **And** a carousel of service cards is shown
-- **And** each card has an image, title, description, and "More" link
-- **And** services include: Maintenance & Repair, Building Construction, Bridge & Road Construction
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** "Our Services" heading is displayed centered
+- **AND** a carousel of service cards is shown
+- **AND** each card has an image, title, description, and "More" link
+- **AND** services include: Maintenance & Repair, Building Construction, Bridge & Road Construction
 
 #### Scenario: Gallery with filters
-- **Given** the user scrolls to the gallery section
-- **Then** a heading "Take a look Some of our awesome projects" is visible
-- **And** filter buttons are shown: All, Architecture, Buildings, Bridges
-- **And** 8 project images are displayed in a grid
-- **And** each image has a hover overlay with title and arrow icon
-- **And** a "More Projects" link button is below the gallery
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a heading "Take a look Some of our awesome projects" is visible
+- **AND** filter buttons are shown: All, Architecture, Buildings, Bridges
+- **AND** 8 project images are displayed in a grid
+- **AND** each image has a hover overlay with title and arrow icon
+- **AND** a "More Projects" link button is below the gallery
 
 #### Scenario: Why Choose Us section
-- **Given** the user scrolls to the Why Choose Us section
-- **Then** a dark/gradient background section is displayed
-- **And** "Why Choose Us?" heading is visible
-- **And** descriptive text and a video play button are present
+
+- **GIVEN** the user scrolls to the Why Choose Us section
+- **THEN** a dark/gradient background section is displayed
+- **AND** "Why Choose Us?" heading is visible
+- **AND** descriptive text and a video play button are present
 
 #### Scenario: Testimonials carousel
-- **Given** the user scrolls to the testimonials section
-- **Then** "Testimonials" heading is displayed centered
-- **And** a carousel of testimonial cards is shown
-- **And** each card has a circular avatar, name, "Client" label, and quote text
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** "Testimonials" heading is displayed centered
+- **AND** a carousel of testimonial cards is shown
+- **AND** each card has a circular avatar, name, "Client" label, and quote text
 
 #### Scenario: Contact CTA
-- **Given** the user scrolls to the contact CTA section
-- **Then** a dark overlay background is displayed
-- **And** "Are you looking for Construction and Industrial Experts?" text is visible
-- **And** a "Contact Us" orange button is present
+
+- **GIVEN** the user scrolls to the contact CTA section
+- **THEN** a dark overlay background is displayed
+- **AND** "Are you looking for Construction and Industrial Experts?" text is visible
+- **AND** a "Contact Us" orange button is present
 
 #### Scenario: Footer
-- **Given** the user scrolls to the footer
-- **Then** a dark background footer is displayed
-- **And** it contains: logo + download brochure, About info with address/phone/email, social links, Popular Searches links, Useful Links, Subscribe email form
-- **And** a copyright line with "Made with Component Dock" link is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is displayed
+- **AND** it contains: logo + download brochure, About info with address/phone/email, social links, Popular Searches links, Useful Links, Subscribe email form
+- **AND** a copyright line with "Made with Component Dock" link is present
 
 #### Scenario: Responsive behavior
-- **Given** the user is on a mobile viewport (< 768px)
-- **Then** the header top bar is hidden
-- **And** the address bar collapses to mobile logo
-- **And** the navbar becomes a mobile hamburger menu
-- **And** features stack vertically
-- **And** the about section stacks image above text
-- **And** the footer columns stack vertically
+
+- **GIVEN** the user is on a mobile viewport (< 768px)
+- **THEN** the header top bar is hidden
+- **AND** the address bar collapses to mobile logo
+- **AND** the navbar becomes a mobile hamburger menu
+- **AND** features stack vertically
+- **AND** the about section stacks image above text
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

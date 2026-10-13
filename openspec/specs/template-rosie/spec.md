@@ -77,75 +77,90 @@ two-column split:
 +---------------------------------------------------------------+
 ```
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with pink background
-- **Given** the user navigates to the Rosie page
-- **Then** the full-viewport background is soft pink (#f5cac3 approx)
-- **And** a centered white card is visible
+### Feature: Rosie template behaviour
 
-### Scenario: Card displays two-column split layout
-- **Given** the page has loaded
-- **Then** the left side of the card shows decorative images
-- **And** the right side shows the sign-up form
+#### Scenario: Page renders with pink background
 
-### Scenario: Heading text
-- **Given** the page has loaded
-- **Then** the text "Sign Up" is displayed in an elegant serif font
-- **And** the heading color is coral pink (#e88e8e)
+- **GIVEN** the user navigates to the Rosie page
+- **THEN** the full-viewport background is soft pink (#f5cac3 approx)
+- **AND** a centered white card is visible
 
-### Scenario: Three input fields rendered
-- **Given** the page has loaded
-- **Then** a NAME input field is visible with a pink dot prefix
-- **And** an E-MAIL input field is visible with a pink dot prefix
-- **And** a PASSWORD input field is visible with a pink dot prefix
+#### Scenario: Card displays two-column split layout
 
-### Scenario: Input field styling
-- **Given** any input field is visible
-- **Then** the input has a light gray background (#f5f5f5)
-- **And** the input has pill-shaped rounded corners (~25px radius)
-- **And** the placeholder text is uppercase gray (#999)
+- **GIVEN** the page has loaded
+- **THEN** the left side of the card shows decorative images
+- **AND** the right side shows the sign-up form
 
-### Scenario: Input focus interaction
-- **Given** the user clicks on an input field
-- **Then** the field receives focus (browser default or focus ring)
+#### Scenario: Heading text
 
-### Scenario: Terms and conditions checkbox
-- **Given** the page has loaded
-- **Then** a checkbox is visible below the password field
-- **And** the label reads "I agree all statement in Terms & Conditions"
-- **And** "Terms & Conditions" is a coral pink link
+- **GIVEN** the page has loaded
+- **THEN** the text "Sign Up" is displayed in an elegant serif font
+- **AND** the heading color is coral pink (#e88e8e)
 
-### Scenario: Sign Up button rendered
-- **Given** the page has loaded
-- **Then** a "SIGN UP" button is visible
-- **And** the button has a coral pink background (#e88e8e)
-- **And** the button text is white
-- **And** the button has pill-shaped rounded corners
+#### Scenario: Three input fields rendered
 
-### Scenario: Login link
-- **Given** the page has loaded
-- **Then** text "Already Have account? Login" is visible next to the button
-- **And** "Login" is a coral pink link
+- **GIVEN** the page has loaded
+- **THEN** a NAME input field is visible with a pink dot prefix
+- **AND** an E-MAIL input field is visible with a pink dot prefix
+- **AND** a PASSWORD input field is visible with a pink dot prefix
 
-### Scenario: Decorative image collage on left
-- **Given** the page has loaded
-- **Then** the left column displays overlapping decorative images
-- **And** pink square frame overlays are visible among the images
+#### Scenario: Input field styling
 
-### Scenario: Responsive layout
-- **Given** the user views the page on a mobile device (< 768px)
-- **Then** the card stacks vertically (image above form)
-- **And** the form remains centered and usable
+- **GIVEN** any input field is visible
+- **THEN** the input has a light gray background (#f5f5f5)
+- **AND** the input has pill-shaped rounded corners (~25px radius)
+- **AND** the placeholder text is uppercase gray (#999)
 
-### Scenario: Form validation — empty fields
-- **Given** the user clicks "SIGN UP" without filling any fields
-- **Then** the form does not submit (browser native validation)
+#### Scenario: Input focus interaction
 
-### Scenario: Component Dock footer
-- **Given** the page has loaded
-- **Then** a footer link to "https://www.componentdock.com/" is present
-- **And** the link text references "Component Dock"
+- **GIVEN** the user clicks on an input field
+- **THEN** the field receives focus (browser default or focus ring)
+
+#### Scenario: Terms and conditions checkbox
+
+- **GIVEN** the page has loaded
+- **THEN** a checkbox is visible below the password field
+- **AND** the label reads "I agree all statement in Terms & Conditions"
+- **AND** "Terms & Conditions" is a coral pink link
+
+#### Scenario: Sign Up button rendered
+
+- **GIVEN** the page has loaded
+- **THEN** a "SIGN UP" button is visible
+- **AND** the button has a coral pink background (#e88e8e)
+- **AND** the button text is white
+- **AND** the button has pill-shaped rounded corners
+
+#### Scenario: Login link
+
+- **GIVEN** the page has loaded
+- **THEN** text "Already Have account? Login" is visible next to the button
+- **AND** "Login" is a coral pink link
+
+#### Scenario: Decorative image collage on left
+
+- **GIVEN** the page has loaded
+- **THEN** the left column displays overlapping decorative images
+- **AND** pink square frame overlays are visible among the images
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device (< 768px)
+- **THEN** the card stacks vertically (image above form)
+- **AND** the form remains centered and usable
+
+#### Scenario: Form validation — empty fields
+
+- **GIVEN** the user clicks "SIGN UP" without filling any fields
+- **THEN** the form does not submit (browser native validation)
+
+#### Scenario: Component Dock footer
+
+- **GIVEN** the page has loaded
+- **THEN** a footer link to "https://www.componentdock.com/" is present
+- **AND** the link text references "Component Dock"
 
 ## Verification Checklist
 

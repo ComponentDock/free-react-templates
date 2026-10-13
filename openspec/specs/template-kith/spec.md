@@ -83,154 +83,151 @@ Extracted from the ColorLib preview stylesheet (`css/core-style.css`):
    (heading + email input + Subscribe button). Bottom: divider line, social
    icons (Pinterest, Facebook, Twitter, LinkedIn).
 
-## Gherkin requirements
+## Requirements
 
 ### Top Header
 
-```gherkin
 Feature: Top header area
 
-  Scenario: Header renders with logo and cart
-    Given the page loads
-    Then the top header displays the brand logo
-    And a shopping bag icon shows item count "2" and total "$20"
-    And a hamburger menu icon is visible
+#### Scenario: Header renders with logo and cart
 
-  Scenario: Cart dropdown shows items
-    Given the user clicks the cart icon
-    Then a dropdown shows 2 cart items with thumbnails and prices
-    And a "Total: $20.00" line is displayed
-    And "Cart" and "Checkout" buttons are visible
-```
+- **GIVEN** the page loads
+- **THEN** the top header displays the brand logo
+- **AND** a shopping bag icon shows item count "2" and total "$20"
+- **AND** a hamburger menu icon is visible
+
+#### Scenario: Cart dropdown shows items
+
+- **GIVEN** the user clicks the cart icon
+- **THEN** a dropdown shows 2 cart items with thumbnails and prices
+- **AND** a "Total: $20.00" line is displayed
+- **AND** "Cart" and "Checkout" buttons are visible
 
 ### Main Navigation
 
-```gherkin
 Feature: Main navigation
 
-  Scenario: Navigation renders with all links
-    Given the page loads
-    Then the main nav shows "Home", "Pages", "Dresses", "Shoes", "Contact"
-    And "Shoes" has a "hot" badge
-    And social share icons (Pinterest, Facebook, Twitter, LinkedIn) are visible
-    And a helpline phone number is displayed
+#### Scenario: Navigation renders with all links
 
-  Scenario: Pages dropdown opens
-    Given the user hovers over "Pages"
-    Then a dropdown shows "Home", "Shop", "Product Details", "Cart", "Checkout"
-```
+- **GIVEN** the page loads
+- **THEN** the main nav shows "Home", "Pages", "Dresses", "Shoes", "Contact"
+- **AND** "Shoes" has a "hot" badge
+- **AND** social share icons (Pinterest, Facebook, Twitter, LinkedIn) are visible
+- **AND** a helpline phone number is displayed
+
+#### Scenario: Pages dropdown opens
+
+- **GIVEN** the user hovers over "Pages"
+- **THEN** a dropdown shows "Home", "Shop", "Product Details", "Cart", "Checkout"
 
 ### Top Discount Area
 
-```gherkin
 Feature: Discount banner strip
 
-  Scenario: Three discount banners render
-    Given the page loads
-    Then three discount columns are displayed in a row
-    And column 1 shows "Free Shipping & Returns" with "BUY NOW"
-    And column 2 shows "20% Discount for all dresses" with pink background
-    And column 3 shows "20% Discount for students" with dark background
-```
+#### Scenario: Three discount banners render
+
+- **GIVEN** the page loads
+- **THEN** three discount columns are displayed in a row
+- **AND** column 1 shows "Free Shipping & Returns" with "BUY NOW"
+- **AND** column 2 shows "20% Discount for all dresses" with pink background
+- **AND** column 3 shows "20% Discount for students" with dark background
 
 ### Hero Carousel
 
-```gherkin
 Feature: Welcome slides carousel
 
-  Scenario: Hero carousel renders with slides
-    Given the page loads
-    Then a full-width image carousel is displayed
-    And the first slide shows "Fashion Trends" heading
-    And a "Shop Now" button is visible
-    And carousel navigation dots are present
+#### Scenario: Hero carousel renders with slides
 
-  Scenario: Carousel advances automatically
-    Given the hero carousel is displayed
-    When 5 seconds pass
-    Then the carousel advances to the next slide
-    And "Summer Collection" heading is shown
-```
+- **GIVEN** the page loads
+- **THEN** a full-width image carousel is displayed
+- **AND** the first slide shows "Fashion Trends" heading
+- **AND** a "Shop Now" button is visible
+- **AND** carousel navigation dots are present
+
+#### Scenario: Carousel advances automatically
+
+- **GIVEN** the hero carousel is displayed
+- **WHEN** 5 seconds pass
+- **THEN** the carousel advances to the next slide
+- **AND** "Summer Collection" heading is shown
 
 ### Category Area
 
-```gherkin
 Feature: Top category cards
 
-  Scenario: Two category cards render
-    Given the page loads
-    Then two side-by-side category cards are displayed
-    And card 1 shows "On Accessories" with "Sale 30%" and "SHOP NOW"
-    And card 2 shows "Designer bags" with "SHOP NOW"
-```
+#### Scenario: Two category cards render
+
+- **GIVEN** the page loads
+- **THEN** two side-by-side category cards are displayed
+- **AND** card 1 shows "On Accessories" with "Sale 30%" and "SHOP NOW"
+- **AND** card 2 shows "Designer bags" with "SHOP NOW"
 
 ### New Arrivals
 
-```gherkin
 Feature: Product grid with filters
 
-  Scenario: Product grid renders with filter tabs
-    Given the page loads
-    Then "New Arrivals" heading is displayed
-    And filter tabs show "ALL", "WOMAN", "MAN", "ACCESSORIES", "SHOES", "KIDS"
-    And 6 product cards are displayed in a 3-column grid
-    And each card shows a product image, price, name, and "ADD TO CART" button
+#### Scenario: Product grid renders with filter tabs
 
-  Scenario: Filter tabs filter products
-    Given the product grid is displayed
-    When the user clicks "WOMAN"
-    Then only products tagged "women" are visible
-    And other products are hidden
+- **GIVEN** the page loads
+- **THEN** "New Arrivals" heading is displayed
+- **AND** filter tabs show "ALL", "WOMAN", "MAN", "ACCESSORIES", "SHOES", "KIDS"
+- **AND** 6 product cards are displayed in a 3-column grid
+- **AND** each card shows a product image, price, name, and "ADD TO CART" button
 
-  Scenario: Quick view opens modal
-    Given the product grid is displayed
-    When the user hovers a product and clicks the quick-view icon
-    Then a modal opens showing product image, title, rating, price, and description
-```
+#### Scenario: Filter tabs filter products
+
+- **GIVEN** the product grid is displayed
+- **WHEN** the user clicks "WOMAN"
+- **THEN** only products tagged "women" are visible
+- **AND** other products are hidden
+
+#### Scenario: Quick view opens modal
+
+- **GIVEN** the product grid is displayed
+- **WHEN** the user hovers a product and clicks the quick-view icon
+- **THEN** a modal opens showing product image, title, rating, price, and description
 
 ### Offer Area
 
-```gherkin
 Feature: Featured offer section
 
-  Scenario: Offer section renders with pricing
-    Given the page loads
-    Then a full-width background image section is displayed
-    And "White t-shirt" heading with "Hot" badge is shown
-    And strikethrough price "$25.90" and sale price "$15.90" are displayed
-    And a "Shop Now" CTA button is visible
-```
+#### Scenario: Offer section renders with pricing
+
+- **GIVEN** the page loads
+- **THEN** a full-width background image section is displayed
+- **AND** "White t-shirt" heading with "Hot" badge is shown
+- **AND** strikethrough price "$25.90" and sale price "$15.90" are displayed
+- **AND** a "Shop Now" CTA button is visible
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials carousel
 
-  Scenario: Testimonials render in carousel
-    Given the page loads
-    Then "Testimonials" heading is displayed
-    And a carousel shows testimonial cards
-    And each card has a quote mark, text, author photo, name, and location
-```
+#### Scenario: Testimonials render in carousel
+
+- **GIVEN** the page loads
+- **THEN** "Testimonials" heading is displayed
+- **AND** a carousel shows testimonial cards
+- **AND** each card has a quote mark, text, author photo, name, and location
 
 ### Footer
 
-```gherkin
 Feature: Page footer
 
-  Scenario: Footer renders with all sections
-    Given the page loads
-    Then the footer shows the brand logo and copyright text
-    And quick links (About, Blog, Faq, Returns, Contact) are displayed
-    And account links (My Account, Shipping, Policies, Affiliates) are displayed
-    And a newsletter subscription form with email input and "Subscribe" button is shown
-    And social icons (Pinterest, Facebook, Twitter, LinkedIn) are at the bottom
+#### Scenario: Footer renders with all sections
 
-  Scenario: Newsletter form has styled input
-    Given the footer is visible
-    Then the email input has italic placeholder text
-    And the Subscribe button has pink background
-```
+- **GIVEN** the page loads
+- **THEN** the footer shows the brand logo and copyright text
+- **AND** quick links (About, Blog, Faq, Returns, Contact) are displayed
+- **AND** account links (My Account, Shipping, Policies, Affiliates) are displayed
+- **AND** a newsletter subscription form with email input and "Subscribe" button is shown
+- **AND** social icons (Pinterest, Facebook, Twitter, LinkedIn) are at the bottom
+
+#### Scenario: Newsletter form has styled input
+
+- **GIVEN** the footer is visible
+- **THEN** the email input has italic placeholder text
+- **AND** the Subscribe button has pink background
 
 ## Verification checklist
 

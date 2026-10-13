@@ -82,68 +82,76 @@ The template is a **4-step wizard form** — not a scrolling landing page. Each 
      - I agree with cancellation and refund policy
    - Forward/backward navigation buttons
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Hexcraft Booking Wizard
 
-Scenario: Page loads with Step 1 visible
-Given the user opens the Hexcraft booking page
-Then the "Choose Date" step is visible
-And the step indicator highlights "Choose Date" in gold
-And the background image is displayed
+#### Scenario: Page loads with Step 1 visible
 
-Scenario: User fills Step 1 and advances
-Given the user is on Step 1
-When the user selects a check-in date
-And the user selects a check-out date
-And the user selects a duration
-And the user selects a room count
-And the user clicks "Book now"
-Then Step 2 "Choose Room" becomes visible
-And the step indicator highlights "Choose Room"
+- **GIVEN** the user opens the Hexcraft booking page
+- **THEN** the "Choose Date" step is visible
+- **AND** the step indicator highlights "Choose Date" in gold
+- **AND** the background image is displayed
 
-Scenario: User navigates backward from Step 2
-Given the user is on Step 2
-When the user clicks the backward button
-Then Step 1 "Choose Date" becomes visible
+#### Scenario: User fills Step 1 and advances
 
-Scenario: User fills Step 2 room details
-Given the user is on Step 2
-When the user selects adult count for Room 1
-And the user selects children count for Room 1
-And the user clicks forward
-Then Step 3 "Make a Reservation" becomes visible
+- **GIVEN** the user is on Step 1
+- **WHEN** the user selects a check-in date
+- **AND** the user selects a check-out date
+- **AND** the user selects a duration
+- **AND** the user selects a room count
+- **AND** the user clicks "Book now"
+- **THEN** Step 2 "Choose Room" becomes visible
+- **AND** the step indicator highlights "Choose Room"
 
-Scenario: User fills reservation details
-Given the user is on Step 3
-When the user enters first name "John"
-And the user enters last name "Doe"
-And the user enters email "john@example.com"
-And the user enters phone "+1234567890"
-And the user enters address "123 Main St"
-And the user enters city "New York"
-And the user enters country "USA"
-And the user enters zip "10001"
-And the user checks the terms checkbox
-And the user clicks forward
-Then Step 4 "Confirmation" becomes visible
+#### Scenario: User navigates backward from Step 2
 
-Scenario: User confirms booking
-Given the user is on Step 4
-And the boarding summary shows the selected details
-When the user clicks forward on the confirmation step
-Then the booking is submitted
+- **GIVEN** the user is on Step 2
+- **WHEN** the user clicks the backward button
+- **THEN** Step 1 "Choose Date" becomes visible
 
-Scenario: Step indicator updates on navigation
-Given the user is on Step 1
-When the user advances to Step 2
-Then Step 1 indicator shows completed
-And Step 2 indicator shows active (gold)
+#### Scenario: User fills Step 2 room details
 
-Scenario: Responsive layout on mobile
-Given the user opens the page on a mobile viewport (width < 768px)
-Then the wizard stacks vertically (image on top, form below)
-And the step sidebar moves above the form content
+- **GIVEN** the user is on Step 2
+- **WHEN** the user selects adult count for Room 1
+- **AND** the user selects children count for Room 1
+- **AND** the user clicks forward
+- **THEN** Step 3 "Make a Reservation" becomes visible
+
+#### Scenario: User fills reservation details
+
+- **GIVEN** the user is on Step 3
+- **WHEN** the user enters first name "John"
+- **AND** the user enters last name "Doe"
+- **AND** the user enters email "john@example.com"
+- **AND** the user enters phone "+1234567890"
+- **AND** the user enters address "123 Main St"
+- **AND** the user enters city "New York"
+- **AND** the user enters country "USA"
+- **AND** the user enters zip "10001"
+- **AND** the user checks the terms checkbox
+- **AND** the user clicks forward
+- **THEN** Step 4 "Confirmation" becomes visible
+
+#### Scenario: User confirms booking
+
+- **GIVEN** the user is on Step 4
+- **AND** the boarding summary shows the selected details
+- **WHEN** the user clicks forward on the confirmation step
+- **THEN** the booking is submitted
+
+#### Scenario: Step indicator updates on navigation
+
+- **GIVEN** the user is on Step 1
+- **WHEN** the user advances to Step 2
+- **THEN** Step 1 indicator shows completed
+- **AND** Step 2 indicator shows active (gold)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a mobile viewport (width < 768px)
+- **THEN** the wizard stacks vertically (image on top, form below)
+- **AND** the step sidebar moves above the form content
 
 ## Verification Checklist
 

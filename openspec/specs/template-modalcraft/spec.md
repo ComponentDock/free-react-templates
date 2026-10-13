@@ -40,68 +40,78 @@ paragraphs of body text. The modal has a subtle deep shadow, sharp corners, and
 generous horizontal padding. The overall aesthetic is clean, minimal, and
 functional — no decorative elements, just typography and interaction.
 
-## Gherkin Requirements
+## Requirements
 
-### Background
-Given the page loads with a centered layout
-When the viewport is displayed
-Then the content is vertically and horizontally centered
-And the page title "Modal #1" is visible
-And a "Launch modal" button is displayed below the title
+### Feature: ModalCraft template behaviour
 
-### Scenario: Modal opens on button click
-Given the page is loaded
-When the user clicks the "Launch modal" button
-Then a modal dialog appears centered in the viewport
-And the modal displays a title "Modal title"
-And the modal displays body text content
-And a close button (X) is visible in the modal header
+**Background**
+- **GIVEN** the page loads with a centered layout
+- **WHEN** the viewport is displayed
+- **THEN** the content is vertically and horizontally centered
+- **AND** the page title "Modal #1" is visible
+- **AND** a "Launch modal" button is displayed below the title
 
-### Scenario: Modal closes on close button click
-Given the modal is open
-When the user clicks the close button (X)
-Then the modal closes with a fade-out animation
-And the page content is visible again
+#### Scenario: Modal opens on button click
 
-### Scenario: Modal closes on backdrop click
-Given the modal is open
-When the user clicks the dark backdrop area outside the modal
-Then the modal closes
-And the page content is visible again
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a modal dialog appears centered in the viewport
+- **AND** the modal displays a title "Modal title"
+- **AND** the modal displays body text content
+- **AND** a close button (X) is visible in the modal header
 
-### Scenario: Modal closes on Escape key
-Given the modal is open
-When the user presses the Escape key
-Then the modal closes
-And the page content is visible again
+#### Scenario: Modal closes on close button click
 
-### Scenario: Accessibility - modal focus trap
-Given the modal is open
-When the user presses Tab repeatedly
-Then focus stays trapped within the modal
-And focus cycles through the close button and modal content
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes with a fade-out animation
+- **AND** the page content is visible again
 
-### Scenario: Accessibility - aria attributes
-Given the modal is rendered
-Then the modal container has `role="dialog"`
-And the modal has `aria-labelledby` pointing to the title
-And the modal has `aria-hidden="true"` when closed
-And the close button has `aria-label="Close"`
+#### Scenario: Modal closes on backdrop click
 
-### Scenario: Responsive layout
-Given the page is viewed on a mobile viewport (375px width)
-Then the content remains centered
-And the modal scales appropriately within the viewport
-And the button remains clickable
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the dark backdrop area outside the modal
+- **THEN** the modal closes
+- **AND** the page content is visible again
 
-### Scenario: Design token verification
-Given the page is rendered
-Then the body font-family is Roboto
-And the paragraph text color is #b3b3b3
-And the button has sharp corners (no border-radius)
-And the button has a blue shadow effect
-And the modal has a white background with sharp corners
-And the modal has a deep box-shadow
+#### Scenario: Modal closes on Escape key
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+#### Scenario: Accessibility - modal focus trap
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Tab repeatedly
+- **THEN** focus stays trapped within the modal
+- **AND** focus cycles through the close button and modal content
+
+#### Scenario: Accessibility - aria attributes
+
+- **GIVEN** the modal is rendered
+- **THEN** the modal container has `role="dialog"`
+- **AND** the modal has `aria-labelledby` pointing to the title
+- **AND** the modal has `aria-hidden="true"` when closed
+- **AND** the close button has `aria-label="Close"`
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the page is viewed on a mobile viewport (375px width)
+- **THEN** the content remains centered
+- **AND** the modal scales appropriately within the viewport
+- **AND** the button remains clickable
+
+#### Scenario: Design token verification
+
+- **GIVEN** the page is rendered
+- **THEN** the body font-family is Roboto
+- **AND** the paragraph text color is #b3b3b3
+- **AND** the button has sharp corners (no border-radius)
+- **AND** the button has a blue shadow effect
+- **AND** the modal has a white background with sharp corners
+- **AND** the modal has a deep box-shadow
 
 ## Verification Checklist
 

@@ -33,7 +33,7 @@ Recreation of **ColorLib Contact Form V2** — a single-page, full-screen contac
 | btn-padding        | `12px 32px`                    | Generous horizontal padding                              |
 | overlay-opacity    | `0.65`                         | Gradient overlay on background image                     |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: MailKite Contact Form
 
@@ -42,98 +42,109 @@ Recreation of **ColorLib Contact Form V2** — a single-page, full-screen contac
   So that I can reach out to the site owner.
 
   Background:
-    Given the page loads with a full-screen mountain photograph background
-    And a pink-to-coral gradient overlay covers the background
+- **GIVEN** the page loads with a full-screen mountain photograph background
+- **AND** a pink-to-coral gradient overlay covers the background
 
-  Scenario: Page renders correctly
-    Given I am on the MailKite page
-    Then I see a centered white card on screen
-    And the card has rounded corners
-    And the card has a subtle drop shadow
-    And the card is approximately 400px wide
+#### Scenario: Page renders correctly
 
-  Scenario: Heading is displayed
-    Given I am on the MailKite page
-    Then the card displays "Contact Us" as the heading
-    And the heading is bold and centered
-    And the heading uses dark text color
+- **GIVEN** I am on the MailKite page
+- **THEN** I see a centered white card on screen
+- **AND** the card has rounded corners
+- **AND** the card has a subtle drop shadow
+- **AND** the card is approximately 400px wide
 
-  Scenario: Form fields are rendered
-    Given I am on the MailKite page
-    Then I see a NAME text input field
-    And the NAME field has a placeholder showing a sample name
-    And I see an EMAIL input field
-    And I see a MESSAGE textarea field
-    And all fields use an underline-only border style
-    And field labels are small, uppercase, and light gray
+#### Scenario: Heading is displayed
 
-  Scenario: Field focus highlighting
-    Given I am on the MailKite page
-    When I click into the NAME field
-    Then the field's bottom border changes to the brand pink color
-    When I click into the EMAIL field
-    Then the field's bottom border changes to the brand pink color
-    When I click into the MESSAGE field
-    Then the field's bottom border changes to the brand pink color
+- **GIVEN** I am on the MailKite page
+- **THEN** the card displays "Contact Us" as the heading
+- **AND** the heading is bold and centered
+- **AND** the heading uses dark text color
 
-  Scenario: Submit button renders
-    Given I am on the MailKite page
-    Then I see a "Send Your Message" button
-    And the button has a pink-to-coral gradient background
-    And the button text is white
-    And the button is centered below the form fields
+#### Scenario: Form fields are rendered
 
-  Scenario: Form validation — empty name
-    Given I am on the MailKite page
-    When I leave the NAME field empty
-    And I fill in the EMAIL field with "test@example.com"
-    And I fill in the MESSAGE field with "Hello"
-    And I click the "Send Your Message" button
-    Then the form does not submit
-    And an error indicator appears on the NAME field
+- **GIVEN** I am on the MailKite page
+- **THEN** I see a NAME text input field
+- **AND** the NAME field has a placeholder showing a sample name
+- **AND** I see an EMAIL input field
+- **AND** I see a MESSAGE textarea field
+- **AND** all fields use an underline-only border style
+- **AND** field labels are small, uppercase, and light gray
 
-  Scenario: Form validation — empty email
-    Given I am on the MailKite page
-    When I fill in the NAME field with "Jane Doe"
-    And I leave the EMAIL field empty
-    And I fill in the MESSAGE field with "Hello"
-    And I click the "Send Your Message" button
-    Then the form does not submit
-    And an error indicator appears on the EMAIL field
+#### Scenario: Field focus highlighting
 
-  Scenario: Form validation — invalid email
-    Given I am on the MailKite page
-    When I fill in the NAME field with "Jane Doe"
-    And I fill in the EMAIL field with "not-an-email"
-    And I fill in the MESSAGE field with "Hello"
-    And I click the "Send Your Message" button
-    Then the form does not submit
-    And an error indicator appears on the EMAIL field
+- **GIVEN** I am on the MailKite page
+- **WHEN** I click into the NAME field
+- **THEN** the field's bottom border changes to the brand pink color
+- **WHEN** I click into the EMAIL field
+- **THEN** the field's bottom border changes to the brand pink color
+- **WHEN** I click into the MESSAGE field
+- **THEN** the field's bottom border changes to the brand pink color
 
-  Scenario: Form validation — empty message
-    Given I am on the MailKite page
-    When I fill in the NAME field with "Jane Doe"
-    And I fill in the EMAIL field with "test@example.com"
-    And I leave the MESSAGE field empty
-    And I click the "Send Your Message" button
-    Then the form does not submit
-    And an error indicator appears on the MESSAGE field
+#### Scenario: Submit button renders
 
-  Scenario: Successful form submission
-    Given I am on the MailKite page
-    When I fill in the NAME field with "Jane Doe"
-    And I fill in the EMAIL field with "jane@example.com"
-    And I fill in the MESSAGE field with "I'd like to discuss a project."
-    And I click the "Send Your Message" button
-    Then the form submits successfully
-    And a success message is displayed
-    And the form fields are cleared
+- **GIVEN** I am on the MailKite page
+- **THEN** I see a "Send Your Message" button
+- **AND** the button has a pink-to-coral gradient background
+- **AND** the button text is white
+- **AND** the button is centered below the form fields
 
-  Scenario: Responsive layout — mobile
-    Given I am on the MailKite page with a viewport width of 375px
-    Then the card fills most of the screen width with padding
-    And the heading, fields, and button remain visible and usable
-    And the background image and gradient overlay still cover the viewport
+#### Scenario: Form validation — empty name
+
+- **GIVEN** I am on the MailKite page
+- **WHEN** I leave the NAME field empty
+- **AND** I fill in the EMAIL field with "test@example.com"
+- **AND** I fill in the MESSAGE field with "Hello"
+- **AND** I click the "Send Your Message" button
+- **THEN** the form does not submit
+- **AND** an error indicator appears on the NAME field
+
+#### Scenario: Form validation — empty email
+
+- **GIVEN** I am on the MailKite page
+- **WHEN** I fill in the NAME field with "Jane Doe"
+- **AND** I leave the EMAIL field empty
+- **AND** I fill in the MESSAGE field with "Hello"
+- **AND** I click the "Send Your Message" button
+- **THEN** the form does not submit
+- **AND** an error indicator appears on the EMAIL field
+
+#### Scenario: Form validation — invalid email
+
+- **GIVEN** I am on the MailKite page
+- **WHEN** I fill in the NAME field with "Jane Doe"
+- **AND** I fill in the EMAIL field with "not-an-email"
+- **AND** I fill in the MESSAGE field with "Hello"
+- **AND** I click the "Send Your Message" button
+- **THEN** the form does not submit
+- **AND** an error indicator appears on the EMAIL field
+
+#### Scenario: Form validation — empty message
+
+- **GIVEN** I am on the MailKite page
+- **WHEN** I fill in the NAME field with "Jane Doe"
+- **AND** I fill in the EMAIL field with "test@example.com"
+- **AND** I leave the MESSAGE field empty
+- **AND** I click the "Send Your Message" button
+- **THEN** the form does not submit
+- **AND** an error indicator appears on the MESSAGE field
+
+#### Scenario: Successful form submission
+
+- **GIVEN** I am on the MailKite page
+- **WHEN** I fill in the NAME field with "Jane Doe"
+- **AND** I fill in the EMAIL field with "jane@example.com"
+- **AND** I fill in the MESSAGE field with "I'd like to discuss a project."
+- **AND** I click the "Send Your Message" button
+- **THEN** the form submits successfully
+- **AND** a success message is displayed
+- **AND** the form fields are cleared
+
+#### Scenario: Responsive layout — mobile
+
+- **GIVEN** I am on the MailKite page with a viewport width of 375px
+- **THEN** the card fills most of the screen width with padding
+- **AND** the heading, fields, and button remain visible and usable
+- **AND** the background image and gradient overlay still cover the viewport
 
 ## Verification Checklist
 

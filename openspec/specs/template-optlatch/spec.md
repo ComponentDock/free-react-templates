@@ -61,107 +61,87 @@ form element demo centered on a light background.
 | 3   | Dropdown button | Clickable trigger showing label + selected count + chevron icon |
 | 4   | Dropdown panel  | Search input + scrollable checkbox list (togglable)             |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with dropdown in default state
+### Feature: Optlatch template behaviour
 
-```
-Given the user loads the page
-Then the heading "States Multi-Select" is visible
-And the dropdown button shows "States" and "(Any)"
-And the dropdown list is not visible
-```
+#### Scenario: Page renders with dropdown in default state
 
-### Scenario: Dropdown opens on button click
+- **GIVEN** the user loads the page
+- **THEN** the heading "States Multi-Select" is visible
+- **AND** the dropdown button shows "States" and "(Any)"
+- **AND** the dropdown list is not visible
 
-```
-Given the user loads the page
-When the user clicks the dropdown button
-Then the dropdown list becomes visible
-And the search input with placeholder "Search states" is displayed
-And the list of states with checkboxes is displayed
-```
+#### Scenario: Dropdown opens on button click
 
-### Scenario: Dropdown closes on second click
+- **GIVEN** the user loads the page
+- **WHEN** the user clicks the dropdown button
+- **THEN** the dropdown list becomes visible
+- **AND** the search input with placeholder "Search states" is displayed
+- **AND** the list of states with checkboxes is displayed
 
-```
-Given the dropdown list is open
-When the user clicks the dropdown button
-Then the dropdown list is hidden
-```
+#### Scenario: Dropdown closes on second click
 
-### Scenario: Search filters states
+- **GIVEN** the dropdown list is open
+- **WHEN** the user clicks the dropdown button
+- **THEN** the dropdown list is hidden
 
-```
-Given the dropdown list is open
-When the user types "Cal" in the search input
-Then only states containing "Cal" are visible in the list
-And states not matching "Cal" are hidden
-```
+#### Scenario: Search filters states
 
-### Scenario: Search with no results shows empty state
+- **GIVEN** the dropdown list is open
+- **WHEN** the user types "Cal" in the search input
+- **THEN** only states containing "Cal" are visible in the list
+- **AND** states not matching "Cal" are hidden
 
-```
-Given the dropdown list is open
-When the user types "xyz" in the search input
-Then no states are visible in the list
-```
+#### Scenario: Search with no results shows empty state
 
-### Scenario: Checkbox selection updates count
+- **GIVEN** the dropdown list is open
+- **WHEN** the user types "xyz" in the search input
+- **THEN** no states are visible in the list
 
-```
-Given the dropdown list is open
-When the user checks the "Alabama" checkbox
-Then the quantity text changes from "(Any)" to "(1)"
-And the checkbox for "Alabama" shows a coral-red checked state
-```
+#### Scenario: Checkbox selection updates count
 
-### Scenario: Multiple selections update count
+- **GIVEN** the dropdown list is open
+- **WHEN** the user checks the "Alabama" checkbox
+- **THEN** the quantity text changes from "(Any)" to "(1)"
+- **AND** the checkbox for "Alabama" shows a coral-red checked state
 
-```
-Given the dropdown list is open
-When the user checks "Alabama" and "Alaska"
-Then the quantity text shows "(2)"
-```
+#### Scenario: Multiple selections update count
 
-### Scenario: Deselecting updates count
+- **GIVEN** the dropdown list is open
+- **WHEN** the user checks "Alabama" and "Alaska"
+- **THEN** the quantity text shows "(2)"
 
-```
-Given the user has selected "Alabama" and "Alaska"
-When the user unchecks "Alabama"
-Then the quantity text shows "(1)"
-```
+#### Scenario: Deselecting updates count
 
-### Scenario: Search clears when dropdown closes
+- **GIVEN** the user has selected "Alabama" and "Alaska"
+- **WHEN** the user unchecks "Alabama"
+- **THEN** the quantity text shows "(1)"
 
-```
-Given the dropdown list is open and the user typed "Cal" in search
-When the user clicks the dropdown button to close
-And the user clicks the dropdown button to reopen
-Then the search input is empty
-And all states are visible again
-```
+#### Scenario: Search clears when dropdown closes
 
-### Scenario: Keyboard accessibility
+- **GIVEN** the dropdown list is open and the user typed "Cal" in search
+- **WHEN** the user clicks the dropdown button to close
+- **AND** the user clicks the dropdown button to reopen
+- **THEN** the search input is empty
+- **AND** all states are visible again
 
-```
-Given the dropdown list is open
-When the user presses Tab to navigate through checkboxes
-Then focus moves through each checkbox in order
-And the focused checkbox has a visible focus indicator
-```
+#### Scenario: Keyboard accessibility
 
-### Scenario: Visual styling matches reference
+- **GIVEN** the dropdown list is open
+- **WHEN** the user presses Tab to navigate through checkboxes
+- **THEN** focus moves through each checkbox in order
+- **AND** the focused checkbox has a visible focus indicator
 
-```
-Given the page loads
-Then the background color is #f8f9fd
-And the dropdown container has a white background
-And the dropdown container has a 5px border-radius
-And the dropdown container has a subtle box shadow
-And the brand accent color is #ff5959 (coral red)
-And the font family is Lato, sans-serif
-```
+#### Scenario: Visual styling matches reference
+
+- **GIVEN** the page loads
+- **THEN** the background color is #f8f9fd
+- **AND** the dropdown container has a white background
+- **AND** the dropdown container has a 5px border-radius
+- **AND** the dropdown container has a subtle box shadow
+- **AND** the brand accent color is #ff5959 (coral red)
+- **AND** the font family is Lato, sans-serif
 
 ## Verification Checklist
 

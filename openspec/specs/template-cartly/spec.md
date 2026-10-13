@@ -40,7 +40,11 @@ featured products, offer banner, new products, blog, newsletter, and footer.
 9. **Newsletter** — subscribe form with email input + send button
 10. **Footer** — 4 columns (About, Useful Links, Products, Follow Us), social icons, copyright with Component Dock link
 
-## Scenarios
+## Requirements
+
+### Feature: Cartly template behaviour
+
+#### Scenario: Cartly
 
 - [x] All sections render with correct headings
 - [x] Navigation toggles mobile menu

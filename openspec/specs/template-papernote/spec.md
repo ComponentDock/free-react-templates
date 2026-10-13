@@ -93,81 +93,92 @@ columns. It targets a news/media publication site.
    "FAQ" (links), "+More" (links). Bottom footer bar with copyright and
    "Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Papernote — News/Magazine Template
 
   Background:
-    Given the user navigates to the Papernote template page
-    Then the page loads with a dark top header bar at the top
+- **GIVEN** the user navigates to the Papernote template page
+- **THEN** the page loads with a dark top header bar at the top
 
-  Scenario: Top header displays logo and search
-    When the top header is visible
-    Then the logo "Papernote" is displayed on the left in white text
-    And "Login" and "Register" links are visible on the right
-    And a search bar with a red search button is displayed
+#### Scenario: Top header displays logo and search
 
-  Scenario: Navigation bar shows mega menu categories
-    When the navigation bar is visible
-    Then navigation links are displayed including "Home", "Pages", "Mega Menu"
-    And "Politics", "Breaking News", "Business", "Technology" links are shown
-    And "Health", "Travel", "Sports", "Contact" links are shown
+- **WHEN** the top header is visible
+- **THEN** the logo "Papernote" is displayed on the left in white text
+- **AND** "Login" and "Register" links are visible on the right
+- **AND** a search bar with a red search button is displayed
 
-  Scenario: Hero section shows breaking news tickers
-    When the hero section is visible
-    Then a "Breaking News" red badge with a headline is displayed
-    And an "International" red badge with a headline is displayed
-    And an ad banner placeholder is shown on the right
+#### Scenario: Navigation bar shows mega menu categories
 
-  Scenario: Featured post area shows main article and side posts
-    When the featured post area is visible
-    Then a large featured post with hero image is displayed on the left
-    And the featured post has a red "FINANCE" category label
-    And the featured post has a large headline and author byline
-    And 4-5 smaller post cards with thumbnails are shown on the right
-    And each side post shows a category label, headline, and timestamp
+- **WHEN** the navigation bar is visible
+- **THEN** navigation links are displayed including "Home", "Pages", "Mega Menu"
+- **AND** "Politics", "Breaking News", "Business", "Technology" links are shown
+- **AND** "Health", "Travel", "Sports", "Contact" links are shown
 
-  Scenario: Popular news section shows trending articles
-    When the user scrolls to the popular news section
-    Then the heading "Popular News" is displayed
-    And 4 popular post items are shown in a grid
-    And each item has a thumbnail, title, and post meta
+#### Scenario: Hero section shows breaking news tickers
 
-  Scenario: Newsletter widget collects email subscriptions
-    When the newsletter widget is visible
-    Then the heading "Newsletter" is displayed
-    And an email input field is shown
-    And a subscribe button is visible
+- **WHEN** the hero section is visible
+- **THEN** a "Breaking News" red badge with a headline is displayed
+- **AND** an "International" red badge with a headline is displayed
+- **AND** an ad banner placeholder is shown on the right
 
-  Scenario: Info widget shows most popular ranking
-    When the info widget is visible
-    Then the heading "Info" is displayed
-    And "4 Most Popular News" is shown
-    And 4 ranked items with numbers 1-4 are listed
+#### Scenario: Featured post area shows main article and side posts
 
-  Scenario: Video section shows video posts with dark overlay
-    When the user scrolls to the video section
-    Then a dark overlay background with background image is displayed
-    And 3 video post cards with play button overlays are shown
-    And the section has white text on dark background
+- **WHEN** the featured post area is visible
+- **THEN** a large featured post with hero image is displayed on the left
+- **AND** the featured post has a red "FINANCE" category label
+- **AND** the featured post has a large headline and author byline
+- **AND** 4-5 smaller post cards with thumbnails are shown on the right
+- **AND** each side post shows a category label, headline, and timestamp
 
-  Scenario: Editor's pick shows curated articles
-    When the user scrolls to the editor's pick section
-    Then the heading "Editor's Pick" is displayed
-    And 6 post cards are shown in a 2x3 grid on the left
-    And each card has a thumbnail, category tag, headline, and meta
-    And a "World News" sidebar with 5 items is shown on the right
+#### Scenario: Popular news section shows trending articles
 
-  Scenario: Footer ad banner is displayed
-    When the user scrolls to the footer ad area
-    Then a full-width ad banner placeholder is shown
+- **WHEN** the user scrolls to the popular news section
+- **THEN** the heading "Popular News" is displayed
+- **AND** 4 popular post items are shown in a grid
+- **AND** each item has a thumbnail, title, and post meta
 
-  Scenario: Footer shows site info and navigation
-    When the footer is visible
-    Then the logo "Papernote" is displayed
-    And four widget columns ("Politics", "Featured", "FAQ", "+More") are shown
-    And each column contains relevant navigation links
-    And a copyright notice with "Component Dock" link is displayed
+#### Scenario: Newsletter widget collects email subscriptions
+
+- **WHEN** the newsletter widget is visible
+- **THEN** the heading "Newsletter" is displayed
+- **AND** an email input field is shown
+- **AND** a subscribe button is visible
+
+#### Scenario: Info widget shows most popular ranking
+
+- **WHEN** the info widget is visible
+- **THEN** the heading "Info" is displayed
+- **AND** "4 Most Popular News" is shown
+- **AND** 4 ranked items with numbers 1-4 are listed
+
+#### Scenario: Video section shows video posts with dark overlay
+
+- **WHEN** the user scrolls to the video section
+- **THEN** a dark overlay background with background image is displayed
+- **AND** 3 video post cards with play button overlays are shown
+- **AND** the section has white text on dark background
+
+#### Scenario: Editor's pick shows curated articles
+
+- **WHEN** the user scrolls to the editor's pick section
+- **THEN** the heading "Editor's Pick" is displayed
+- **AND** 6 post cards are shown in a 2x3 grid on the left
+- **AND** each card has a thumbnail, category tag, headline, and meta
+- **AND** a "World News" sidebar with 5 items is shown on the right
+
+#### Scenario: Footer ad banner is displayed
+
+- **WHEN** the user scrolls to the footer ad area
+- **THEN** a full-width ad banner placeholder is shown
+
+#### Scenario: Footer shows site info and navigation
+
+- **WHEN** the footer is visible
+- **THEN** the logo "Papernote" is displayed
+- **AND** four widget columns ("Politics", "Featured", "FAQ", "+More") are shown
+- **AND** each column contains relevant navigation links
+- **AND** a copyright notice with "Component Dock" link is displayed
 
 ## Verification checklist
 

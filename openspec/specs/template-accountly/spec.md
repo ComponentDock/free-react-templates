@@ -64,97 +64,116 @@ The template presents a **professional, corporate bookkeeping agency** aesthetic
    menu, testimonials, contact form, blog sections — sections 5–8 below are
    inferred from standard ColorLib business template patterns.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Accountly — Bookkeeping Agency Website
 
-```gherkin
 Feature: Accountly bookkeeping agency template
-  As a visitor to the Accountly website
-  I want a professional bookkeeping agency landing page
-  So that I can learn about the services and get in touch
+As a visitor to the Accountly website
+I want a professional bookkeeping agency landing page
+So that I can learn about the services and get in touch
 
-  Background:
-    Given the page is loaded at the root URL
-    And the viewport is 1280x720
+Background:
+- **GIVEN** the page is loaded at the root URL
+- **AND** the viewport is 1280x720
 
-  # --- Top Bar ---
-  Scenario: Top utility bar displays contact information
-    Then I should see a utility bar at the top of the page
-    And the utility bar should contain a phone number
-    And the utility bar should contain an email address
-    And the utility bar should have a light gray background
+**--- Top Bar ---**
 
-  # --- Navigation ---
-  Scenario: Navigation bar is visible and contains expected links
-    Then I should see a navigation bar
-    And the navigation bar should contain a logo with brand name
-    And the navigation bar should have links for "Home", "About", "Services", "Blog", "Contact"
-    And the navigation bar should have social media icon buttons (Facebook, Twitter, LinkedIn)
+#### Scenario: Top utility bar displays contact information
 
-  Scenario: Navigation bar is sticky on scroll
-    When I scroll down 200 pixels
-    Then the navigation bar should remain fixed at the top of the viewport
+- **THEN** I should see a utility bar at the top of the page
+- **AND** the utility bar should contain a phone number
+- **AND** the utility bar should contain an email address
+- **AND** the utility bar should have a light gray background
 
-  # --- Hero ---
-  Scenario: Hero section displays with background image and CTA
-    Then I should see a hero section with a background image
-    And the hero section should display a primary heading
-    And the hero section should display a subheading text
-    And the hero section should have a "GET STARTED" call-to-action button
-    And the CTA button should have navy blue background and white text
-    And the CTA button should have sharp corners (no border-radius)
+**--- Navigation ---**
 
-  # --- About Us ---
-  Scenario: About Us section has two-column layout
-    Then I should see an "About Us" section
-    And the About Us section should display an "ABOUT US" subheading in uppercase
-    And the About Us section should have a main heading with a blue divider line
-    And the About Us section should have a descriptive paragraph
-    And the About Us section should have a two-column bullet list with arrow icons
-    And the About Us section should have an image on the left side
+#### Scenario: Navigation bar is visible and contains expected links
 
-  # --- Services ---
-  Scenario: Services section displays service cards
-    Then I should see a "Services" section
-    And the Services section should display at least 3 service items
-    And each service item should have an icon, title, and description
-    And the Services section should have a white background
+- **THEN** I should see a navigation bar
+- **AND** the navigation bar should contain a logo with brand name
+- **AND** the navigation bar should have links for "Home", "About", "Services", "Blog", "Contact"
+- **AND** the navigation bar should have social media icon buttons (Facebook, Twitter, LinkedIn)
 
-  # --- Stats / Numbers ---
-  Scenario: Statistics section shows key metrics
-    Then I should see a statistics section
-    And the statistics section should display at least 3 numbered counters
-    And each counter should have a label underneath
+#### Scenario: Navigation bar is sticky on scroll
 
-  # --- Testimonials ---
-  Scenario: Testimonials section displays client quotes
-    Then I should see a "Testimonials" section
-    And the Testimonials section should display at least 2 testimonial items
-    And each testimonial should have a quote, client name, and role
-    And the Testimonials section should have a contrasting background (dark or blue)
+- **WHEN** I scroll down 200 pixels
+- **THEN** the navigation bar should remain fixed at the top of the viewport
 
-  # --- Newsletter / CTA ---
-  Scenario: Newsletter section invites email signup
-    Then I should see a newsletter or CTA section
-    And the section should have an email input field
-    And the section should have a submit button
-    And the section should have a brand-colored background
+**--- Hero ---**
 
-  # --- Footer ---
-  Scenario: Footer contains navigation and brand link
-    Then I should see a footer
-    And the footer should contain navigation links
-    And the footer should link to "https://www.componentdock.com/"
-    And the footer should display "Component Dock" text
+#### Scenario: Hero section displays with background image and CTA
 
-  # --- Responsive ---
-  Scenario: Template is responsive on mobile viewport
-    Given the viewport is 375x667
-    Then the navigation should collapse into a hamburger menu
-    And all sections should be readable without horizontal scroll
-    And the hero heading should wrap properly
-```
+- **THEN** I should see a hero section with a background image
+- **AND** the hero section should display a primary heading
+- **AND** the hero section should display a subheading text
+- **AND** the hero section should have a "GET STARTED" call-to-action button
+- **AND** the CTA button should have navy blue background and white text
+- **AND** the CTA button should have sharp corners (no border-radius)
+
+**--- About Us ---**
+
+#### Scenario: About Us section has two-column layout
+
+- **THEN** I should see an "About Us" section
+- **AND** the About Us section should display an "ABOUT US" subheading in uppercase
+- **AND** the About Us section should have a main heading with a blue divider line
+- **AND** the About Us section should have a descriptive paragraph
+- **AND** the About Us section should have a two-column bullet list with arrow icons
+- **AND** the About Us section should have an image on the left side
+
+**--- Services ---**
+
+#### Scenario: Services section displays service cards
+
+- **THEN** I should see a "Services" section
+- **AND** the Services section should display at least 3 service items
+- **AND** each service item should have an icon, title, and description
+- **AND** the Services section should have a white background
+
+**--- Stats / Numbers ---**
+
+#### Scenario: Statistics section shows key metrics
+
+- **THEN** I should see a statistics section
+- **AND** the statistics section should display at least 3 numbered counters
+- **AND** each counter should have a label underneath
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section displays client quotes
+
+- **THEN** I should see a "Testimonials" section
+- **AND** the Testimonials section should display at least 2 testimonial items
+- **AND** each testimonial should have a quote, client name, and role
+- **AND** the Testimonials section should have a contrasting background (dark or blue)
+
+**--- Newsletter / CTA ---**
+
+#### Scenario: Newsletter section invites email signup
+
+- **THEN** I should see a newsletter or CTA section
+- **AND** the section should have an email input field
+- **AND** the section should have a submit button
+- **AND** the section should have a brand-colored background
+
+**--- Footer ---**
+
+#### Scenario: Footer contains navigation and brand link
+
+- **THEN** I should see a footer
+- **AND** the footer should contain navigation links
+- **AND** the footer should link to "https://www.componentdock.com/"
+- **AND** the footer should display "Component Dock" text
+
+**--- Responsive ---**
+
+#### Scenario: Template is responsive on mobile viewport
+
+- **GIVEN** the viewport is 375x667
+- **THEN** the navigation should collapse into a hamburger menu
+- **AND** all sections should be readable without horizontal scroll
+- **AND** the hero heading should wrap properly
 
 ## Verification checklist
 

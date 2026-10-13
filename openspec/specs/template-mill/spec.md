@@ -43,7 +43,7 @@ Extracted from `css/style.css` on the live preview:
 }
 ```
 
-## Section order and Gherkin scenarios
+## Requirements
 
 ### 1. Navbar
 
@@ -51,23 +51,24 @@ Dark background (`#343a40`), brand text "Mill" (white), responsive collapse.
 Links: Home, About, Projects, Services (dropdown → Architectural Design, Interior, Building), Blog, Contact.
 Mobile: hamburger toggle with collapse menu.
 
-```gherkin
-Scenario: Desktop navbar renders all links
-  Given the viewport is wider than 992px
-  When the page loads
-  Then the navbar displays brand "Mill" and links Home, About, Projects, Services, Blog, Contact
+#### Scenario: Desktop navbar renders all links
 
-Scenario: Services dropdown opens on hover/click
-  Given the viewport is wider than 992px
-  When the user hovers or clicks "Services"
-  Then a dropdown appears with Architectural Design, Interior, Building
+- **GIVEN** the viewport is wider than 992px
+- **WHEN** the page loads
+- **THEN** the navbar displays brand "Mill" and links Home, About, Projects, Services, Blog, Contact
 
-Scenario: Mobile navbar shows hamburger toggle
-  Given the viewport is narrower than 992px
-  When the page loads
-  Then the navbar shows a hamburger button
-  And the nav links are hidden until the toggle is clicked
-```
+#### Scenario: Services dropdown opens on hover/click
+
+- **GIVEN** the viewport is wider than 992px
+- **WHEN** the user hovers or clicks "Services"
+- **THEN** a dropdown appears with Architectural Design, Interior, Building
+
+#### Scenario: Mobile navbar shows hamburger toggle
+
+- **GIVEN** the viewport is narrower than 992px
+- **WHEN** the page loads
+- **THEN** the navbar shows a hamburger button
+- **AND** the nav links are hidden until the toggle is clicked
 
 ### 2. Hero Slider
 
@@ -76,18 +77,18 @@ Play button (fancy box video link placeholder).
 Two slides: "We Are Industrial Company" / "Create, Enhance and Sustain".
 Subtext placeholder underneath each heading.
 
-```gherkin
-Scenario: Hero slider displays first slide
-  Given the page loads
-  Then the hero section shows a full-width background image
-  And the heading reads "We Are Industrial Company"
-  And a play button icon is visible
+#### Scenario: Hero slider displays first slide
 
-Scenario: Hero slider auto-advances
-  Given the page loads
-  When 5 seconds pass
-  Then the second slide is visible with heading "Create, Enhance and Sustain"
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows a full-width background image
+- **AND** the heading reads "We Are Industrial Company"
+- **AND** a play button icon is visible
+
+#### Scenario: Hero slider auto-advances
+
+- **GIVEN** the page loads
+- **WHEN** 5 seconds pass
+- **THEN** the second slide is visible with heading "Create, Enhance and Sustain"
 
 ### 3. Features / Services (3-column)
 
@@ -98,12 +99,11 @@ Light background (`#f8f9fa`). Three centered cards in a row:
 
 Each card: icon → heading → short paragraph.
 
-```gherkin
-Scenario: Three service cards render
-  Given the features section is in the viewport
-  Then three cards are visible: Automotive Parts, Maintenance Services, Green Energy
-  And each card has an orange icon above its heading
-```
+#### Scenario: Three service cards render
+
+- **GIVEN** the features section is in the viewport
+- **THEN** three cards are visible: Automotive Parts, Maintenance Services, Green Energy
+- **AND** each card has an orange icon above its heading
 
 ### 4. About / Engineering (image + 4 features)
 
@@ -112,12 +112,11 @@ Layout: image on left, 2 feature blocks stacked on center + 2 on right.
 Features: Green Energy, Precision Mechanics, Construction Machines, Reliable and Stable.
 Each feature: orange icon → heading → short text.
 
-```gherkin
-Scenario: About section shows heading and features
-  Given the about section is in the viewport
-  Then the heading reads "We Are Reliable Engineering In House"
-  And 4 feature items are displayed with orange icons
-```
+#### Scenario: About section shows heading and features
+
+- **GIVEN** the about section is in the viewport
+- **THEN** the heading reads "We Are Reliable Engineering In House"
+- **AND** 4 feature items are displayed with orange icons
 
 ### 5. About Alternate (image + text block)
 
@@ -125,12 +124,11 @@ Image on right, text block on left.
 Heading: "Create, Enhance and Sustain".
 Paragraph + "Read More" link with arrow icon.
 
-```gherkin
-Scenario: About alternate section renders with read more
-  Given the about alternate section is in the viewport
-  Then a heading "Create, Enhance and Sustain" is visible
-  And a "Read More" link with arrow is present
-```
+#### Scenario: About alternate section renders with read more
+
+- **GIVEN** the about alternate section is in the viewport
+- **THEN** a heading "Create, Enhance and Sustain" is visible
+- **AND** a "Read More" link with arrow is present
 
 ### 6. Projects Grid
 
@@ -139,12 +137,11 @@ Subtext paragraph.
 6 project thumbnail cards in a 3-column grid (no gutters).
 Each card: full-bleed image with overlay (project title + plus icon) on hover.
 
-```gherkin
-Scenario: Projects grid renders 6 items
-  Given the projects section is in the viewport
-  Then 6 project cards are visible in a 3-column grid
-  And each card shows a title and a plus icon overlay on hover
-```
+#### Scenario: Projects grid renders 6 items
+
+- **GIVEN** the projects section is in the viewport
+- **THEN** 6 project cards are visible in a 3-column grid
+- **AND** each card shows a title and a plus icon overlay on hover
 
 ### 7. Testimonials (carousel)
 
@@ -152,12 +149,11 @@ Light background. Heading: "Happy Clients".
 Owl-carousel style horizontal slider of testimonial cards.
 Each card: avatar image + name + meta label + blockquote text.
 
-```gherkin
-Scenario: Testimonials carousel renders cards
-  Given the testimonials section is in the viewport
-  Then at least 3 testimonial cards are visible
-  And each card has an avatar, name, and blockquote
-```
+#### Scenario: Testimonials carousel renders cards
+
+- **GIVEN** the testimonials section is in the viewport
+- **THEN** at least 3 testimonial cards are visible
+- **AND** each card has an avatar, name, and blockquote
 
 ### 8. Blog Posts
 
@@ -165,12 +161,11 @@ Heading: "Blog Posts" + subtext.
 4 blog post items in 2 columns.
 Each: thumbnail image on left + date + title + "Read More" link on right.
 
-```gherkin
-Scenario: Blog section renders 4 posts
-  Given the blog section is in the viewport
-  Then 4 blog post items are displayed in 2 columns
-  And each post has a date, title, and Read More link
-```
+#### Scenario: Blog section renders 4 posts
+
+- **GIVEN** the blog section is in the viewport
+- **THEN** 4 blog post items are displayed in 2 columns
+- **AND** each post has a date, title, and Read More link
 
 ### 9. CTA Banner
 
@@ -179,13 +174,12 @@ Heading: "Create, Enhance and Sustain".
 Description paragraph.
 Button: "Download This Template" (white outline, rounded).
 
-```gherkin
-Scenario: CTA banner renders with orange background
-  Given the CTA section is in the viewport
-  Then the background is orange (#fd5f00)
-  And the heading text is white
-  And a white outline button is visible
-```
+#### Scenario: CTA banner renders with orange background
+
+- **GIVEN** the CTA section is in the viewport
+- **THEN** the background is orange (#fd5f00)
+- **AND** the heading text is white
+- **AND** a white outline button is visible
 
 ### 10. Footer
 
@@ -196,18 +190,18 @@ Dark background. 4-column layout:
 - Col 4: (empty in original)
 Bottom: Copyright line with heart icon.
 
-```gherkin
-Scenario: Footer renders all columns
-  Given the footer is in the viewport
-  Then "About Us" section with social icons is visible
-  And "Contact Info" with address, phone, email is visible
-  And "Quick Links" with 4 links is visible
-  And a copyright line with heart icon is visible
+#### Scenario: Footer renders all columns
 
-Scenario: Footer links to Component Dock
-  Given the footer renders
-  Then the copyright area links to https://www.componentdock.com/
-```
+- **GIVEN** the footer is in the viewport
+- **THEN** "About Us" section with social icons is visible
+- **AND** "Contact Info" with address, phone, email is visible
+- **AND** "Quick Links" with 4 links is visible
+- **AND** a copyright line with heart icon is visible
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer renders
+- **THEN** the copyright area links to https://www.componentdock.com/
 
 ## Replication reference notes
 

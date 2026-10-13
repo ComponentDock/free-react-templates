@@ -44,109 +44,127 @@ Recreation of the ColorLib **Salvation** church website template as a React 19 +
 - **Footer:** Dark bg (#1a1a1a), four columns: brand + description, Latest News links, Quick Links, Contact form. Links use accent red (#ce0f3d).
 - **Donate Modal:** Bootstrap modal with form.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Flockwell Church Template
 
 #### Scenario: Top bar displays location and social links
-  Given the user loads the page
-  Then a top bar is visible with a location address and social media icon links (Facebook, Twitter, Instagram, Dribbble)
+
+- **GIVEN** the user loads the page
+- **THEN** a top bar is visible with a location address and social media icon links (Facebook, Twitter, Instagram, Dribbble)
 
 #### Scenario: Navbar navigation
-  Given the user loads the page
-  Then a dark navbar is visible with the brand "Flockwell"
-  And nav links are present: Home, About, Ministries, Sermons, Events, Blog, Contact
-  And a "Donate" CTA button is present
+
+- **GIVEN** the user loads the page
+- **THEN** a dark navbar is visible with the brand "Flockwell"
+- **AND** nav links are present: Home, About, Ministries, Sermons, Events, Blog, Contact
+- **AND** a "Donate" CTA button is present
 
 #### Scenario: Hero section
-  Given the user loads the page
-  Then a full-viewport hero section is visible with a background image and dark overlay
-  And a heading "Transforming Lives" is displayed
-  And a large heading "Total Surrender to God" is displayed
-  And a description paragraph is displayed
-  And a "Become A Volunteer" button is displayed
+
+- **GIVEN** the user loads the page
+- **THEN** a full-viewport hero section is visible with a background image and dark overlay
+- **AND** a heading "Transforming Lives" is displayed
+- **AND** a large heading "Total Surrender to God" is displayed
+- **AND** a description paragraph is displayed
+- **AND** a "Become A Volunteer" button is displayed
 
 #### Scenario: About section
-  Given the user scrolls to the about section
-  Then a heading "Welcome to Flockwell Church" is displayed
-  And a subheading "Perfect Church For Imperfect People" is displayed
-  And a descriptive paragraph is shown
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading "Welcome to Flockwell Church" is displayed
+- **AND** a subheading "Perfect Church For Imperfect People" is displayed
+- **AND** a descriptive paragraph is shown
 
 #### Scenario: Feature cards
-  Given the user scrolls to the features section
-  Then three feature cards are displayed: Worship, Connect, God's Love
-  And each card has an icon, title, and description text
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** three feature cards are displayed: Worship, Connect, God's Love
+- **AND** each card has an icon, title, and description text
 
 #### Scenario: Quote section
-  Given the user scrolls to the quote section
-  Then an inspirational quote is displayed centered on the page
+
+- **GIVEN** the user scrolls to the quote section
+- **THEN** an inspirational quote is displayed centered on the page
 
 #### Scenario: Call-to-action section
-  Given the user scrolls to the CTA section
-  Then a heading "Connect, Grow and Serve with Us" is displayed
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a heading "Connect, Grow and Serve with Us" is displayed
 
 #### Scenario: Mission banner
-  Given the user scrolls to the mission section
-  Then a dark-background banner is displayed
-  And white text "We're on a mission to help all your problems" is shown
-  And a donate CTA button is present
+
+- **GIVEN** the user scrolls to the mission section
+- **THEN** a dark-background banner is displayed
+- **AND** white text "We're on a mission to help all your problems" is shown
+- **AND** a donate CTA button is present
 
 #### Scenario: Counter stats section
-  Given the user scrolls to the counter section
-  Then a blue primary-background section is visible
-  And numeric stat counters are displayed
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a blue primary-background section is visible
+- **AND** numeric stat counters are displayed
 
 #### Scenario: Sermons section
-  Given the user scrolls to the sermons section
-  Then a heading "Watch and Listen to our Sermons" is displayed
-  And sermon cards are displayed in alternating image+text rows
-  And each sermon card has an image, title, metadata, and description
+
+- **GIVEN** the user scrolls to the sermons section
+- **THEN** a heading "Watch and Listen to our Sermons" is displayed
+- **AND** sermon cards are displayed in alternating image+text rows
+- **AND** each sermon card has an image, title, metadata, and description
 
 #### Scenario: Testimony section
-  Given the user scrolls to the testimony section
-  Then a dark-background section is displayed
-  And a heading "Transform Lives" is shown
-  And testimonial content is displayed
+
+- **GIVEN** the user scrolls to the testimony section
+- **THEN** a dark-background section is displayed
+- **AND** a heading "Transform Lives" is shown
+- **AND** testimonial content is displayed
 
 #### Scenario: Blog section
-  Given the user scrolls to the blog section
-  Then a heading "Latest news from our blog" is displayed
-  And three blog entry cards are shown in a grid
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a heading "Latest news from our blog" is displayed
+- **AND** three blog entry cards are shown in a grid
 
 #### Scenario: Events section
-  Given the user scrolls to the events section
-  Then a heading "Latest Events" is displayed
-  And event cards are shown with images and text panels
+
+- **GIVEN** the user scrolls to the events section
+- **THEN** a heading "Latest Events" is displayed
+- **AND** event cards are shown with images and text panels
 
 #### Scenario: Gallery section
-  Given the user scrolls to the gallery section
-  Then a heading "Galleries" is displayed
-  And a grid of gallery images is shown with hover overlays
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a heading "Galleries" is displayed
+- **AND** a grid of gallery images is shown with hover overlays
 
 #### Scenario: Footer
-  Given the user scrolls to the footer
-  Then a dark-background footer is displayed
-  And the brand "Flockwell" heading is shown
-  And columns for Latest News, Quick Links, and contact info are present
-  And footer links use accent red color
-  And a "Made with Component Dock" attribution link is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark-background footer is displayed
+- **AND** the brand "Flockwell" heading is shown
+- **AND** columns for Latest News, Quick Links, and contact info are present
+- **AND** footer links use accent red color
+- **AND** a "Made with Component Dock" attribution link is present
 
 #### Scenario: Donate modal
-  Given the user clicks the "Donate" button in the navbar
-  Then a Bootstrap modal opens with the title "Make a Difference Today"
-  And a donation form is displayed inside the modal
+
+- **GIVEN** the user clicks the "Donate" button in the navbar
+- **THEN** a Bootstrap modal opens with the title "Make a Difference Today"
+- **AND** a donation form is displayed inside the modal
 
 #### Scenario: Responsive design
-  Given the user views the page on a mobile viewport
-  Then the navbar collapses into a hamburger menu
-  And all sections stack vertically
-  And the hero text remains readable
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** all sections stack vertically
+- **AND** the hero text remains readable
 
 #### Scenario: Accessibility
-  Given the user loads the page
-  Then all images have alt text
-  And all interactive elements are keyboard-focusable
-  And ARIA labels are present on icon-only links
+
+- **GIVEN** the user loads the page
+- **THEN** all images have alt text
+- **AND** all interactive elements are keyboard-focusable
+- **AND** ARIA labels are present on icon-only links
 
 ## Verification checklist
 

@@ -37,127 +37,125 @@ Recreation of the ColorLib "Edusite" education template as a React 19 + Vite + T
 7. **Contact CTA** — full-width parallax background with gradient overlay; centered heading "Contact Us" + lead paragraph + pill "Contact Us Now" CTA button.
 8. **Footer** — dark background (#374050); top row: logo (left) + nav links (right); bottom row: copyright text (left) + social media icon circles (right: Facebook, Twitter, Google+, Instagram, YouTube, LinkedIn).
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Desktop navbar renders all links
-  Given the page loads on a desktop viewport
-  Then the navbar displays the logo
-  And the navbar shows links: Home, About, Courses, Blog, Contact
+#### Scenario: Desktop navbar renders all links
 
-Scenario: Navbar is transparent over hero
-  Given the hero section is in view
-  Then the navbar background is transparent
+- **GIVEN** the page loads on a desktop viewport
+- **THEN** the navbar displays the logo
+- **AND** the navbar shows links: Home, About, Courses, Blog, Contact
 
-Scenario: Mobile hamburger toggle
-  Given the page loads on a mobile viewport
-  Then a hamburger toggle button is visible
-  When the user taps the toggle
-  Then the mobile nav menu expands
-```
+#### Scenario: Navbar is transparent over hero
+
+- **GIVEN** the hero section is in view
+- **THEN** the navbar background is transparent
+
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** the page loads on a mobile viewport
+- **THEN** a hamburger toggle button is visible
+- **WHEN** the user taps the toggle
+- **THEN** the mobile nav menu expands
 
 ### Feature: Hero Section
 
-```gherkin
-Scenario: Hero displays heading and CTA
-  Given the hero section is visible
-  Then the heading reads "Edusite Free Online Training Courses" (or equivalent)
-  And a lead paragraph is displayed below the heading
-  And a pill-shaped "Get Started!" button is visible
+#### Scenario: Hero displays heading and CTA
 
-Scenario: Hero has parallax background with overlay
-  Given the hero section is visible
-  Then a background image is displayed with a gradient overlay (dark-to-light)
-```
+- **GIVEN** the hero section is visible
+- **THEN** the heading reads "Edusite Free Online Training Courses" (or equivalent)
+- **AND** a lead paragraph is displayed below the heading
+- **AND** a pill-shaped "Get Started!" button is visible
+
+#### Scenario: Hero has parallax background with overlay
+
+- **GIVEN** the hero section is visible
+- **THEN** a background image is displayed with a gradient overlay (dark-to-light)
 
 ### Feature: About Section
 
-```gherkin
-Scenario: About section shows 3 features
-  Given the about section is visible
-  Then 3 feature items are displayed: Online Courses, Expert Teachers, Community
-  And each feature has an icon, title, and description paragraph
+#### Scenario: About section shows 3 features
 
-Scenario: About section has image on the right
-  Given the about section is visible
-  Then a decorative image is displayed in the right column
-```
+- **GIVEN** the about section is visible
+- **THEN** 3 feature items are displayed: Online Courses, Expert Teachers, Community
+- **AND** each feature has an icon, title, and description paragraph
+
+#### Scenario: About section has image on the right
+
+- **GIVEN** the about section is visible
+- **THEN** a decorative image is displayed in the right column
 
 ### Feature: Courses Section
 
-```gherkin
-Scenario: Courses grid shows 8 course cards
-  Given the courses section is visible
-  Then 8 course cards are displayed in a 4-column grid
-  And each card shows: image thumbnail, title, category label, price badge
+#### Scenario: Courses grid shows 8 course cards
 
-Scenario: Course price badge variants
-  Given a course card is rendered
-  Then the price badge shows "Free" or "Premium"
-  And "Free" badges use the primary accent color
+- **GIVEN** the courses section is visible
+- **THEN** 8 course cards are displayed in a 4-column grid
+- **AND** each card shows: image thumbnail, title, category label, price badge
 
-Scenario: More Courses button
-  Given the courses section is visible
-  Then a centered "More Courses" button is displayed below the grid
-```
+#### Scenario: Course price badge variants
+
+- **GIVEN** a course card is rendered
+- **THEN** the price badge shows "Free" or "Premium"
+- **AND** "Free" badges use the primary accent color
+
+#### Scenario: More Courses button
+
+- **GIVEN** the courses section is visible
+- **THEN** a centered "More Courses" button is displayed below the grid
 
 ### Feature: Call to Action Section
 
-```gherkin
-Scenario: CTA section displays heading and button
-  Given the CTA section is visible
-  Then a heading and lead paragraph are displayed
-  And a pill-shaped "Get Started!" button is visible
-  And the section has a parallax background with gradient overlay
-```
+#### Scenario: CTA section displays heading and button
+
+- **GIVEN** the CTA section is visible
+- **THEN** a heading and lead paragraph are displayed
+- **AND** a pill-shaped "Get Started!" button is visible
+- **AND** the section has a parallax background with gradient overlay
 
 ### Feature: Why Us Section
 
-```gherkin
-Scenario: Why Us shows 3 feature cards
-  Given the Why Us section is visible
-  Then 3 feature items are displayed in a 3-column grid
-  And each feature has an icon, title, and description
-```
+#### Scenario: Why Us shows 3 feature cards
+
+- **GIVEN** the Why Us section is visible
+- **THEN** 3 feature items are displayed in a 3-column grid
+- **AND** each feature has an icon, title, and description
 
 ### Feature: Contact CTA Section
 
-```gherkin
-Scenario: Contact CTA displays centered content
-  Given the Contact CTA section is visible
-  Then "Contact Us" heading is displayed centered
-  And a lead paragraph is shown
-  And a pill-shaped "Contact Us Now" button is visible
-  And the section has a parallax background with gradient overlay
-```
+#### Scenario: Contact CTA displays centered content
+
+- **GIVEN** the Contact CTA section is visible
+- **THEN** "Contact Us" heading is displayed centered
+- **AND** a lead paragraph is shown
+- **AND** a pill-shaped "Contact Us Now" button is visible
+- **AND** the section has a parallax background with gradient overlay
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer displays logo and nav
-  Given the footer is visible
-  Then the logo is displayed on the left
-  And nav links (Home, About, Courses, Blog, Contact) are on the right
+#### Scenario: Footer displays logo and nav
 
-Scenario: Footer has social icons and copyright
-  Given the footer is visible
-  Then social media icon circles are displayed (Facebook, Twitter, Instagram, YouTube, LinkedIn)
-  And a copyright notice is shown
-  And the footer links to https://www.componentdock.com/ ("Component Dock")
-```
+- **GIVEN** the footer is visible
+- **THEN** the logo is displayed on the left
+- **AND** nav links (Home, About, Courses, Blog, Contact) are on the right
+
+#### Scenario: Footer has social icons and copyright
+
+- **GIVEN** the footer is visible
+- **THEN** social media icon circles are displayed (Facebook, Twitter, Instagram, YouTube, LinkedIn)
+- **AND** a copyright notice is shown
+- **AND** the footer links to https://www.componentdock.com/ ("Component Dock")
 
 ### Feature: Responsive Design
 
-```gherkin
-Scenario: Mobile layout stacks columns
-  Given the page loads on a mobile viewport (< 768px)
-  Then the navbar collapses to a hamburger menu
-  And the about section stacks the features above the image
-  And the courses grid becomes 1-column
-  And the Why Us features stack vertically
-```
+#### Scenario: Mobile layout stacks columns
+
+- **GIVEN** the page loads on a mobile viewport (< 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the about section stacks the features above the image
+- **AND** the courses grid becomes 1-column
+- **AND** the Why Us features stack vertically
 
 ## Verification Checklist
 

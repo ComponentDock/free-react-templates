@@ -64,149 +64,144 @@ Extracted from the live preview's `css/style.css`:
 10. **Footer** — dark background, 4 columns: brand + description, Explore
     links, Company links, Contact info (address, phone, email)
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Taskfly Navbar
 
-  Scenario: Renders all navigation links
-    Given the page is loaded
-    Then the navbar displays brand text "Taskfly"
-    And navigation links "Home", "About", "Services", "How It Works", "Pricing", "Blog", "Contact" are visible
+#### Scenario: Renders all navigation links
 
-  Scenario: CTA button is present
-    Given the page is loaded
-    Then a "Request Our Assistant" button is visible in the navbar
-```
+- **GIVEN** the page is loaded
+- **THEN** the navbar displays brand text "Taskfly"
+- **AND** navigation links "Home", "About", "Services", "How It Works", "Pricing", "Blog", "Contact" are visible
+
+#### Scenario: CTA button is present
+
+- **GIVEN** the page is loaded
+- **THEN** a "Request Our Assistant" button is visible in the navbar
 
 ### Hero
 
-```gherkin
 Feature: Taskfly Hero
 
-  Scenario: Displays headline and scroll indicator
-    Given the page is loaded
-    Then the hero section shows "Save Your Precious Time & Outsource Daily Tasks"
-    And a scroll-down mouse indicator is visible
+#### Scenario: Displays headline and scroll indicator
 
-  Scenario: Hero has dark overlay on background image
-    Given the page is loaded
-    Then the hero background is a dark overlay over a placeholder image
-```
+- **GIVEN** the page is loaded
+- **THEN** the hero section shows "Save Your Precious Time & Outsource Daily Tasks"
+- **AND** a scroll-down mouse indicator is visible
+
+#### Scenario: Hero has dark overlay on background image
+
+- **GIVEN** the page is loaded
+- **THEN** the hero background is a dark overlay over a placeholder image
 
 ### About / Why Choose Us
 
-```gherkin
 Feature: Taskfly About Section
 
-  Scenario: Shows section heading and reasons
-    Given the page is loaded
-    Then the about section heading reads "Top Reason Why We Need to Get Virtual Assistant"
-    And four reason items are displayed with icons and descriptions
+#### Scenario: Shows section heading and reasons
 
-  Scenario: Split layout with image and text
-    Given the page is loaded
-    Then the about section shows a placeholder image on one side
-    And text content on the other side
-```
+- **GIVEN** the page is loaded
+- **THEN** the about section heading reads "Top Reason Why We Need to Get Virtual Assistant"
+- **AND** four reason items are displayed with icons and descriptions
+
+#### Scenario: Split layout with image and text
+
+- **GIVEN** the page is loaded
+- **THEN** the about section shows a placeholder image on one side
+- **AND** text content on the other side
 
 ### Services Grid
 
-```gherkin
 Feature: Taskfly Services
 
-  Scenario: Displays all 8 service cards
-    Given the page is loaded
-    Then the services section heading reads "Our Services & Offers"
-    And 8 service cards are visible in a 2-column grid
-    And each card has an icon, title, and "Get Started" button
+#### Scenario: Displays all 8 service cards
 
-  Scenario: Service card content matches source
-    Given the page is loaded
-    Then service cards include "Family Task", "Online Research", "Management Task",
-      "Project Management", "Writing Editing", "Multilingual Services",
-      "Customer Service", "Executive Admin"
-```
+- **GIVEN** the page is loaded
+- **THEN** the services section heading reads "Our Services & Offers"
+- **AND** 8 service cards are visible in a 2-column grid
+- **AND** each card has an icon, title, and "Get Started" button
+
+#### Scenario: Service card content matches source
+
+- **GIVEN** the page is loaded
+- **THEN** service cards include "Family Task", "Online Research", "Management Task",
+"Project Management", "Writing Editing", "Multilingual Services",
+"Customer Service", "Executive Admin"
 
 ### Comparison Section
 
-```gherkin
 Feature: Taskfly Comparison
 
-  Scenario: Shows employee comparison with progress bars
-    Given the page is loaded
-    Then the heading reads "Get Your Own Highly Skilled Virtual Assistant"
-    And two progress bars are displayed side by side
-    And "Regular Office Employee" label is shown
-    And "Virtual Assistant Employee" label is shown
-```
+#### Scenario: Shows employee comparison with progress bars
+
+- **GIVEN** the page is loaded
+- **THEN** the heading reads "Get Your Own Highly Skilled Virtual Assistant"
+- **AND** two progress bars are displayed side by side
+- **AND** "Regular Office Employee" label is shown
+- **AND** "Virtual Assistant Employee" label is shown
 
 ### How It Works
 
-```gherkin
 Feature: Taskfly How It Works
 
-  Scenario: Shows 4-step process
-    Given the page is loaded
-    Then the heading reads "How It Works"
-    And four steps are displayed: "Handling The Task", "Creating To-Do List",
-      "Schedule A Meeting", "Affordable Packages"
-    And each step has an icon above its title
-```
+#### Scenario: Shows 4-step process
+
+- **GIVEN** the page is loaded
+- **THEN** the heading reads "How It Works"
+- **AND** four steps are displayed: "Handling The Task", "Creating To-Do List",
+"Schedule A Meeting", "Affordable Packages"
+- **AND** each step has an icon above its title
 
 ### Testimonials
 
-```gherkin
 Feature: Taskfly Testimonials
 
-  Scenario: Displays testimonial section with background image
-    Given the page is loaded
-    Then a testimonials section with a parallax background image is visible
-    And at least one testimonial quote is displayed
-```
+#### Scenario: Displays testimonial section with background image
+
+- **GIVEN** the page is loaded
+- **THEN** a testimonials section with a parallax background image is visible
+- **AND** at least one testimonial quote is displayed
 
 ### Blog
 
-```gherkin
 Feature: Taskfly Blog
 
-  Scenario: Shows recent blog posts
-    Given the page is loaded
-    Then the heading reads "Recent Blog"
-    And 3 blog post cards are visible in a row
-    And each card shows a thumbnail image, date, author, and title
-```
+#### Scenario: Shows recent blog posts
+
+- **GIVEN** the page is loaded
+- **THEN** the heading reads "Recent Blog"
+- **AND** 3 blog post cards are visible in a row
+- **AND** each card shows a thumbnail image, date, author, and title
 
 ### Contact Form
 
-```gherkin
 Feature: Taskfly Contact
 
-  Scenario: Displays contact form with all fields
-    Given the page is loaded
-    Then the heading reads "Send a Message & Get in touch!"
-    And a form with fields "Name", "Email", "Subject", "Message" is visible
-    And a "Send Message" submit button is present
+#### Scenario: Displays contact form with all fields
 
-  Scenario: Form validates required fields
-    Given the contact form is displayed
-    When the user clicks "Send Message" without filling fields
-    Then validation errors appear for required fields
-```
+- **GIVEN** the page is loaded
+- **THEN** the heading reads "Send a Message & Get in touch!"
+- **AND** a form with fields "Name", "Email", "Subject", "Message" is visible
+- **AND** a "Send Message" submit button is present
+
+#### Scenario: Form validates required fields
+
+- **GIVEN** the contact form is displayed
+- **WHEN** the user clicks "Send Message" without filling fields
+- **THEN** validation errors appear for required fields
 
 ### Footer
 
-```gherkin
 Feature: Taskfly Footer
 
-  Scenario: Displays footer with links and contact info
-    Given the page is loaded
-    Then the footer shows 4 columns: brand, Explore, Company, Contact
-    And the Contact column shows address and phone number
-    And a "Made with Component Dock" link pointing to componentdock.com is present
-```
+#### Scenario: Displays footer with links and contact info
+
+- **GIVEN** the page is loaded
+- **THEN** the footer shows 4 columns: brand, Explore, Company, Contact
+- **AND** the Contact column shows address and phone number
+- **AND** a "Made with Component Dock" link pointing to componentdock.com is present
 
 ## Verification checklist
 

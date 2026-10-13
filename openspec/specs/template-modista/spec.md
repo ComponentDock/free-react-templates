@@ -123,117 +123,108 @@ Extracted from `https://preview.colorlib.com/theme/persuit/css/style.css`
 - Border radius on product images: `0px` (square corners throughout)
 - Border radius on badges: `3px` (Sale/New/Discount)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header utility bar renders with contact info and social links
-```
-Given the user visits the Modista homepage
-When the header utility bar renders
-Then it shows a centered logo
-And it shows phone number "+84 987 654 321"
-And it shows email "support@yourdomain.com"
-And it shows social icon links (Facebook, Twitter, Pinterest, Instagram, YouTube)
-And it shows user account and cart icons
-```
+### Feature: Modista template behaviour
 
-### Scenario: Main navigation renders with dropdown menus
-```
-Given the user visits the Modista homepage
-When the main navigation renders
-Then it shows "Home", "Pages", "Shop", "Blog", "Lookbook", "Contact" links
-And the Home link has a dropdown with variant options
-And the nav is responsive with a mobile hamburger toggle
-```
+#### Scenario: Header utility bar renders with contact info and social links
 
-### Scenario: Hero slider displays with auto-advance
-```
-Given the user visits the Modista homepage
-When the hero slider loads
-Then it shows a full-width background image
-And it shows the text "Best Summer Collection"
-And it shows a "read more" CTA button with red background
-And the slider auto-advances between slides every ~5 seconds
-And dot indicators allow manual slide selection
-```
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the header utility bar renders
+- **THEN** it shows a centered logo
+- **AND** it shows phone number "+84 987 654 321"
+- **AND** it shows email "support@yourdomain.com"
+- **AND** it shows social icon links (Facebook, Twitter, Pinterest, Instagram, YouTube)
+- **AND** it shows user account and cart icons
 
-### Scenario: Feature ad banners show with hover overlays
-```
-Given the user visits the Modista homepage
-When the feature ad banners render
-Then three images are displayed in a 5/4/3 column layout
-And the first banner shows a "Sale" badge
-And the second banner shows a "10% off" badge
-And hovering a banner reveals a heading and "Shop Now" link
-```
+#### Scenario: Main navigation renders with dropdown menus
 
-### Scenario: Latest products carousel shows product cards
-```
-Given the user visits the Modista homepage
-When the latest products section renders
-Then it shows a heading "Our Latest Product"
-And it displays product cards in a scrollable carousel
-And each card has an image, name, and price
-And each card shows "Add To Cart" and wishlist/compare icon buttons
-And sale items show original price with strikethrough and discounted price
-```
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the main navigation renders
+- **THEN** it shows "Home", "Pages", "Shop", "Blog", "Lookbook", "Contact" links
+- **AND** the Home link has a dropdown with variant options
+- **AND** the nav is responsive with a mobile hamburger toggle
 
-### Scenario: Large promotional banners display with hover
-```
-Given the user visits the Modista homepage
-When the promotional banners render
-Then two large images are shown side by side
-And each has a hover overlay with "Best Summer Collection" heading
-And each has a "Shop Now" link with arrow icon
-```
+#### Scenario: Hero slider displays with auto-advance
 
-### Scenario: Category listing shows product categories
-```
-Given the user visits the Modista homepage
-When the category listing renders
-Then three category columns are shown: Men, Women, Accessories
-And each column lists subcategory links (Down Jackets, Hoodies, Suits, Jeans, Casual Pants, Sunglass)
-And each column has a category image on the right
-```
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the hero slider loads
+- **THEN** it shows a full-width background image
+- **AND** it shows the text "Best Summer Collection"
+- **AND** it shows a "read more" CTA button with red background
+- **AND** the slider auto-advances between slides every ~5 seconds
+- **AND** dot indicators allow manual slide selection
 
-### Scenario: Featured products with filter tabs
-```
-Given the user visits the Modista homepage
-When the featured products section renders
-Then a left sidebar shows 4 featured products with thumbnails, names, and prices
-And the main area shows filter tabs: Men's, Woman, Shoes, Bags
-And clicking a tab filters the product carousel accordingly
-And products show badge labels (Sale, New, -10%)
-```
+#### Scenario: Feature ad banners show with hover overlays
 
-### Scenario: Blog section shows three blog cards
-```
-Given the user visits the Modista homepage
-When the blog section renders
-Then it shows a heading "From The Blog"
-And three blog cards are displayed in a row
-And each card has an image, category tag "fashion", excerpt, and date
-```
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the feature ad banners render
+- **THEN** three images are displayed in a 5/4/3 column layout
+- **AND** the first banner shows a "Sale" badge
+- **AND** the second banner shows a "10% off" badge
+- **AND** hovering a banner reveals a heading and "Shop Now" link
 
-### Scenario: Footer renders five columns with links
-```
-Given the user visits the Modista homepage
-When the footer renders
-Then it shows five columns: About, Information, Customer Service, Extras, My Account
-And the About column has a logo, description, and social icon links
-And each link column has 4-5 navigation links
-And a copyright bar at the bottom reads "Component Dock"
-And the footer has a dark (#0b1033) background
-```
+#### Scenario: Latest products carousel shows product cards
 
-### Scenario: Page is responsive
-```
-Given the user visits the Modista homepage on a mobile viewport
-When the layout reflows
-Then the navigation collapses to a hamburger menu
-And product carousels become horizontally scrollable
-And multi-column grids stack to single column
-And the footer columns stack vertically
-```
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the latest products section renders
+- **THEN** it shows a heading "Our Latest Product"
+- **AND** it displays product cards in a scrollable carousel
+- **AND** each card has an image, name, and price
+- **AND** each card shows "Add To Cart" and wishlist/compare icon buttons
+- **AND** sale items show original price with strikethrough and discounted price
+
+#### Scenario: Large promotional banners display with hover
+
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the promotional banners render
+- **THEN** two large images are shown side by side
+- **AND** each has a hover overlay with "Best Summer Collection" heading
+- **AND** each has a "Shop Now" link with arrow icon
+
+#### Scenario: Category listing shows product categories
+
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the category listing renders
+- **THEN** three category columns are shown: Men, Women, Accessories
+- **AND** each column lists subcategory links (Down Jackets, Hoodies, Suits, Jeans, Casual Pants, Sunglass)
+- **AND** each column has a category image on the right
+
+#### Scenario: Featured products with filter tabs
+
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the featured products section renders
+- **THEN** a left sidebar shows 4 featured products with thumbnails, names, and prices
+- **AND** the main area shows filter tabs: Men's, Woman, Shoes, Bags
+- **AND** clicking a tab filters the product carousel accordingly
+- **AND** products show badge labels (Sale, New, -10%)
+
+#### Scenario: Blog section shows three blog cards
+
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the blog section renders
+- **THEN** it shows a heading "From The Blog"
+- **AND** three blog cards are displayed in a row
+- **AND** each card has an image, category tag "fashion", excerpt, and date
+
+#### Scenario: Footer renders five columns with links
+
+- **GIVEN** the user visits the Modista homepage
+- **WHEN** the footer renders
+- **THEN** it shows five columns: About, Information, Customer Service, Extras, My Account
+- **AND** the About column has a logo, description, and social icon links
+- **AND** each link column has 4-5 navigation links
+- **AND** a copyright bar at the bottom reads "Component Dock"
+- **AND** the footer has a dark (#0b1033) background
+
+#### Scenario: Page is responsive
+
+- **GIVEN** the user visits the Modista homepage on a mobile viewport
+- **WHEN** the layout reflows
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** product carousels become horizontally scrollable
+- **AND** multi-column grids stack to single column
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

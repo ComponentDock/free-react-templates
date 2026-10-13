@@ -133,92 +133,106 @@ gradient (#a1c4fd to #c2e9fb) brand accent, and fully-rounded pill buttons.
 | Pricing card bg    | `#ffffff`, border-radius `5px`                                 |
 | Pricing active     | `.price-box.active` highlight class                            |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Timeless — Corporate Business Landing Page
 
-  Scenario: Navbar renders with correct links
-    Given the user visits the Timeless page
-    Then a fixed navigation bar is visible
-    And the nav contains links: Home, Services, Portfolio, Team, Price, Blog, Contact
-    And the nav has a search toggle and language selector
+#### Scenario: Navbar renders with correct links
 
-  Scenario: Hero section displays with overlay and CTA
-    Given the user visits the Timeless page
-    Then a full-viewport hero section is displayed
-    And the hero has a dark overlay background
-    And a headline "We Are Provide Creative Business" is visible
-    And a "Contact Now" pill button is displayed with blue gradient
+- **GIVEN** the user visits the Timeless page
+- **THEN** a fixed navigation bar is visible
+- **AND** the nav contains links: Home, Services, Portfolio, Team, Price, Blog, Contact
+- **AND** the nav has a search toggle and language selector
 
-  Scenario: About section shows text and device mockups
-    Given the user scrolls to the About section
-    Then the heading "We Offer Quick & Powerful Business Solution" is visible
-    And a "Learn More" pill button is displayed
-    And a device mockup image is shown on the right
+#### Scenario: Hero section displays with overlay and CTA
 
-  Scenario: Video and Why Choose Us section
-    Given the user scrolls to the Why Choose Us section
-    Then a video thumbnail with play button is visible on the left
-    And "Why Choose Us?" heading is displayed
-    And 3 experience stat rows are shown
+- **GIVEN** the user visits the Timeless page
+- **THEN** a full-viewport hero section is displayed
+- **AND** the hero has a dark overlay background
+- **AND** a headline "We Are Provide Creative Business" is visible
+- **AND** a "Contact Now" pill button is displayed with blue gradient
 
-  Scenario: Services grid shows 6 feature boxes
-    Given the user scrolls to the Services section
-    Then 6 feature boxes are displayed in a 3×2 grid
-    And each box has an icon, heading, description, and "Read More" link
-    And the headings are: Unique Design, Clean Layout, Well Responsive, Pro Developing, Well Documented, Quick Marketing
+#### Scenario: About section shows text and device mockups
 
-  Scenario: Skills section shows circular charts
-    Given the user scrolls to the Skills section
-    Then 6 circular percentage charts are visible
-    And the skill labels are: WebDesign (95%), Coding (85%), Developing (90%), Java Script (95%), Apps Design (85%), Graphics Script (90%)
+- **GIVEN** the user scrolls to the About section
+- **THEN** the heading "We Offer Quick & Powerful Business Solution" is visible
+- **AND** a "Learn More" pill button is displayed
+- **AND** a device mockup image is shown on the right
 
-  Scenario: Portfolio filter works
-    Given the user scrolls to the Portfolio section
-    Then filter tabs are visible: All, Graphics, UI/UX, Web Design, Coding, Developing, Photography
-    And 8 portfolio cards are displayed in a 4×2 grid
-    And clicking a filter tab shows only matching cards
+#### Scenario: Video and Why Choose Us section
 
-  Scenario: Team section shows 4 members
-    Given the user scrolls to the Team section
-    Then 4 team member cards are displayed
-    And each card has a photo, name, role, skill bars, and social links
+- **GIVEN** the user scrolls to the Why Choose Us section
+- **THEN** a video thumbnail with play button is visible on the left
+- **AND** "Why Choose Us?" heading is displayed
+- **AND** 3 experience stat rows are shown
 
-  Scenario: Pricing table toggles monthly/yearly
-    Given the user scrolls to the Pricing section
-    Then Monthly and Yearly tabs are displayed
-    And 4 pricing cards are shown: Basic ($10), Premium ($50), Business ($80), Ultimate ($100)
-    And the Premium card is highlighted as active
-    And switching tabs updates the prices
+#### Scenario: Services grid shows 6 feature boxes
 
-  Scenario: Blog section shows 3 entries
-    Given the user scrolls to the Blog section
-    Then 1 featured blog card and 2 smaller blog cards are displayed
-    And each card has a title and excerpt
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 feature boxes are displayed in a 3×2 grid
+- **AND** each box has an icon, heading, description, and "Read More" link
+- **AND** the headings are: Unique Design, Clean Layout, Well Responsive, Pro Developing, Well Documented, Quick Marketing
 
-  Scenario: Counter/stats section
-    Given the user scrolls to the Counter section
-    Then 4 stat boxes are displayed
-    And each has an icon, title, and animated count number
-    And the stats are: Project Complete (1172), Happy Clients (1000), Total Clients (1200), Wining Award (1172)
+#### Scenario: Skills section shows circular charts
 
-  Scenario: Contact form renders correctly
-    Given the user scrolls to the Contact section
-    Then a contact form is visible with fields: Full Name, Phone Number, Email, Subject, Message
-    And a "Send Now" button is displayed
-    And contact info (address, phone, email) is shown on the right
+- **GIVEN** the user scrolls to the Skills section
+- **THEN** 6 circular percentage charts are visible
+- **AND** the skill labels are: WebDesign (95%), Coding (85%), Developing (90%), Java Script (95%), Apps Design (85%), Graphics Script (90%)
 
-  Scenario: Footer has 5 columns
-    Given the user scrolls to the Footer
-    Then 5 footer columns are displayed: brand, News, Company, Resources, Solutions
-    And a copyright bar is at the bottom
-    And the footer links to Component Dock
+#### Scenario: Portfolio filter works
 
-  Scenario: All buttons are pill-shaped with 3D shadow
-    Given any button is rendered on the page
-    Then the button has border-radius 100px (pill shape)
-    And a 3D layered box-shadow effect is applied
-    And on hover the button lifts up (translateY -4px)
+- **GIVEN** the user scrolls to the Portfolio section
+- **THEN** filter tabs are visible: All, Graphics, UI/UX, Web Design, Coding, Developing, Photography
+- **AND** 8 portfolio cards are displayed in a 4×2 grid
+- **AND** clicking a filter tab shows only matching cards
+
+#### Scenario: Team section shows 4 members
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** 4 team member cards are displayed
+- **AND** each card has a photo, name, role, skill bars, and social links
+
+#### Scenario: Pricing table toggles monthly/yearly
+
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** Monthly and Yearly tabs are displayed
+- **AND** 4 pricing cards are shown: Basic ($10), Premium ($50), Business ($80), Ultimate ($100)
+- **AND** the Premium card is highlighted as active
+- **AND** switching tabs updates the prices
+
+#### Scenario: Blog section shows 3 entries
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 1 featured blog card and 2 smaller blog cards are displayed
+- **AND** each card has a title and excerpt
+
+#### Scenario: Counter/stats section
+
+- **GIVEN** the user scrolls to the Counter section
+- **THEN** 4 stat boxes are displayed
+- **AND** each has an icon, title, and animated count number
+- **AND** the stats are: Project Complete (1172), Happy Clients (1000), Total Clients (1200), Wining Award (1172)
+
+#### Scenario: Contact form renders correctly
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a contact form is visible with fields: Full Name, Phone Number, Email, Subject, Message
+- **AND** a "Send Now" button is displayed
+- **AND** contact info (address, phone, email) is shown on the right
+
+#### Scenario: Footer has 5 columns
+
+- **GIVEN** the user scrolls to the Footer
+- **THEN** 5 footer columns are displayed: brand, News, Company, Resources, Solutions
+- **AND** a copyright bar is at the bottom
+- **AND** the footer links to Component Dock
+
+#### Scenario: All buttons are pill-shaped with 3D shadow
+
+- **GIVEN** any button is rendered on the page
+- **THEN** the button has border-radius 100px (pill shape)
+- **AND** a 3D layered box-shadow effect is applied
+- **AND** on hover the button lifts up (translateY -4px)
 
 ## Verification checklist
 

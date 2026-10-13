@@ -31,52 +31,76 @@ Velox is a personal/freelancer portfolio template with a navbar, hero, welcome a
 7. **Blog** — Centered title "Latest Posts from Blog", 3-column grid of blog cards with image, date/author, title, excerpt.
 8. **Footer** — 3 columns: About Me (text + copyright), Newsletter (email input + submit), Follow Me (social icons: Facebook, Twitter, Dribbble, Behance). Bottom: "Made with Component Dock" linking https://www.componentdock.com/.
 
-## Scenarios
+## Requirements
 
 ### G1: Renders all sections
 
-Given the page loads, when I scroll from top to bottom, then I see Navbar, Hero, About, Features, Projects, Testimonials, Blog, and Footer — in that order.
+#### Scenario: G1: Renders all sections
+
+- **GIVEN** the page loads, when I scroll from top to bottom, then I see Navbar, Hero, About, Features, Projects, Testimonials, Blog, and Footer — in that order
 
 ### G2: Navbar links
 
-Given the page loads, when I inspect the navbar, then I see links for Home, About, Services, Portfolio, Blog, Contact.
+#### Scenario: G2: Navbar links
+
+- **GIVEN** the page loads, when I inspect the navbar, then I see links for Home, About, Services, Portfolio, Blog, Contact
 
 ### G3: Hero content
 
-Given the page loads, when I read the hero section, then I see the subtitle "This is me", heading "Travor James", a description paragraph, and a "Discover Now" button.
+#### Scenario: G3: Hero content
+
+- **GIVEN** the page loads, when I read the hero section, then I see the subtitle "This is me", heading "Travor James", a description paragraph, and a "Discover Now" button
 
 ### G4: About stats
 
-Given the page loads, when I inspect the About section, then I see three stat items: "$2.5M Total Donation", "1465 Total Projects", "3965 Total Volunteers".
+#### Scenario: G4: About stats
+
+- **GIVEN** the page loads, when I inspect the About section, then I see three stat items: "$2.5M Total Donation", "1465 Total Projects", "3965 Total Volunteers"
 
 ### G5: Skill bars
 
-Given the page loads, when I inspect the About section, then I see 5 skill bars with labels and percentage values.
+#### Scenario: G5: Skill bars
+
+- **GIVEN** the page loads, when I inspect the About section, then I see 5 skill bars with labels and percentage values
 
 ### G6: Feature cards
 
-Given the page loads, when I inspect the Features section, then I see 6 service cards (Architecture, Interior Design, Concept Design — each appearing twice).
+#### Scenario: G6: Feature cards
+
+- **GIVEN** the page loads, when I inspect the Features section, then I see 6 service cards (Architecture, Interior Design, Concept Design — each appearing twice)
 
 ### G7: Project filter tabs
 
-Given the page loads, when I inspect the Projects section, then I see filter tabs: All, Branding, Creative Work, Web Design.
+#### Scenario: G7: Project filter tabs
+
+- **GIVEN** the page loads, when I inspect the Projects section, then I see filter tabs: All, Branding, Creative Work, Web Design
 
 ### G8: Project grid
 
-Given the page loads, when I inspect the Projects section, then I see 6 project cards with images and titles.
+#### Scenario: G8: Project grid
+
+- **GIVEN** the page loads, when I inspect the Projects section, then I see 6 project cards with images and titles
 
 ### G9: Testimonials
 
-Given the page loads, when I inspect the Testimonials section, then I see testimonial cards with text, author names, and star ratings.
+#### Scenario: G9: Testimonials
+
+- **GIVEN** the page loads, when I inspect the Testimonials section, then I see testimonial cards with text, author names, and star ratings
 
 ### G10: Blog posts
 
-Given the page loads, when I inspect the Blog section, then I see 3 blog cards with images, dates, titles, and excerpts.
+#### Scenario: G10: Blog posts
+
+- **GIVEN** the page loads, when I inspect the Blog section, then I see 3 blog cards with images, dates, titles, and excerpts
 
 ### G11: Footer links
 
-Given the page loads, when I inspect the Footer, then I see a "Made with Component Dock" link pointing to https://www.componentdock.com/.
+#### Scenario: G11: Footer links
+
+- **GIVEN** the page loads, when I inspect the Footer, then I see a "Made with Component Dock" link pointing to https://www.componentdock.com/
 
 ### G12: Responsive layout
 
-Given the viewport is mobile (375px), when I view each section, then content stacks vertically and remains readable.
+#### Scenario: G12: Responsive layout
+
+- **GIVEN** the viewport is mobile (375px), when I view each section, then content stacks vertically and remains readable

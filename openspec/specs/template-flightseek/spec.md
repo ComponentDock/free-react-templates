@@ -75,185 +75,204 @@ using +/- quantity controls, and an "Add room" link at the bottom.
 On mobile (<767px), the card takes full width, columns stack vertically, and
 padding adjusts.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Section: Background
 
-```gherkin
 Feature: Background
-  Scenario: Full-viewport background image
-    Given the page loads
-    Then a full-viewport section is displayed
-    And the section has a background image covering the entire viewport
 
-  Scenario: Responsive background
-    Given the page is viewed on a mobile device
-    Then the background image scales to cover the viewport
-    And the section maintains full viewport height
-```
+#### Scenario: Full-viewport background image
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport section is displayed
+- **AND** the section has a background image covering the entire viewport
+
+#### Scenario: Responsive background
+
+- **GIVEN** the page is viewed on a mobile device
+- **THEN** the background image scales to cover the viewport
+- **AND** the section maintains full viewport height
 
 ### Section: Search card
 
-```gherkin
 Feature: Search card
-  Scenario: Card rendered
-    Given the page loads
-    Then a search card is displayed centered on the page
-    And the card has a purple-to-blue gradient background (#3d2161 to #004d91)
-    And the card has 0.9 opacity
-    And the card has border-radius of 10px
-    And the card has padding of 60px 55px on desktop
 
-  Scenario: Card max-width
-    Given the page loads
-    Then the card has a maximum width of 900px
-    And the card is horizontally centered
+#### Scenario: Card rendered
 
-  Scenario: Card responsive
-    Given the page is viewed on a screen narrower than 768px
-    Then the card takes full width
-    And the card padding reduces to 40px 30px
-```
+- **GIVEN** the page loads
+- **THEN** a search card is displayed centered on the page
+- **AND** the card has a purple-to-blue gradient background (#3d2161 to #004d91)
+- **AND** the card has 0.9 opacity
+- **AND** the card has border-radius of 10px
+- **AND** the card has padding of 60px 55px on desktop
+
+#### Scenario: Card max-width
+
+- **GIVEN** the page loads
+- **THEN** the card has a maximum width of 900px
+- **AND** the card is horizontally centered
+
+#### Scenario: Card responsive
+
+- **GIVEN** the page is viewed on a screen narrower than 768px
+- **THEN** the card takes full width
+- **AND** the card padding reduces to 40px 30px
 
 ### Section: Form fields — From / To
 
-```gherkin
 Feature: From/To fields
-  Scenario: From field rendered
-    Given the page loads
-    Then a "from" text input is displayed
-    And the from input has placeholder "City, Region or Airport"
-    And the from input has a white label "From" above it
 
-  Scenario: To field rendered
-    Given the page loads
-    Then a "to" text input is displayed
-    And the to input has placeholder "City, Region or Airport"
-    And the to input has a white label "To" above it
+#### Scenario: From field rendered
 
-  Scenario: From/To side by side
-    Given the page is viewed on desktop
-    Then the from and to fields are displayed side by side in a 2-column layout
+- **GIVEN** the page loads
+- **THEN** a "from" text input is displayed
+- **AND** the from input has placeholder "City, Region or Airport"
+- **AND** the from input has a white label "From" above it
 
-  Scenario: Typing in From field
-    Given the page loads
-    When the user types "New York" into the from input
-    Then the from input value is "New York"
+#### Scenario: To field rendered
 
-  Scenario: Typing in To field
-    Given the page loads
-    When the user types "London" into the to input
-    Then the to input value is "London"
-```
+- **GIVEN** the page loads
+- **THEN** a "to" text input is displayed
+- **AND** the to input has placeholder "City, Region or Airport"
+- **AND** the to input has a white label "To" above it
+
+#### Scenario: From/To side by side
+
+- **GIVEN** the page is viewed on desktop
+- **THEN** the from and to fields are displayed side by side in a 2-column layout
+
+#### Scenario: Typing in From field
+
+- **GIVEN** the page loads
+- **WHEN** the user types "New York" into the from input
+- **THEN** the from input value is "New York"
+
+#### Scenario: Typing in To field
+
+- **GIVEN** the page loads
+- **WHEN** the user types "London" into the to input
+- **THEN** the to input value is "London"
 
 ### Section: Form fields — Depart / Return
 
-```gherkin
 Feature: Depart/Return fields
-  Scenario: Depart date field rendered
-    Given the page loads
-    Then a "Depart" date picker is displayed
-    And the depart field has a white label "Depart" above it
 
-  Scenario: Return date field rendered
-    Given the page loads
-    Then a "Return" date picker is displayed
-    And the return field has a white label "Return" above it
+#### Scenario: Depart date field rendered
 
-  Scenario: Depart/Return side by side
-    Given the page is viewed on desktop
-    Then the depart and return fields are displayed side by side in a 2-column layout
+- **GIVEN** the page loads
+- **THEN** a "Depart" date picker is displayed
+- **AND** the depart field has a white label "Depart" above it
 
-  Scenario: Selecting depart date
-    Given the page loads
-    When the user selects "2026-12-15" as the depart date
-    Then the depart date field shows "2026-12-15"
+#### Scenario: Return date field rendered
 
-  Scenario: Selecting return date
-    Given the page loads
-    When the user selects "2026-12-22" as the return date
-    Then the return date field shows "2026-12-22"
-```
+- **GIVEN** the page loads
+- **THEN** a "Return" date picker is displayed
+- **AND** the return field has a white label "Return" above it
+
+#### Scenario: Depart/Return side by side
+
+- **GIVEN** the page is viewed on desktop
+- **THEN** the depart and return fields are displayed side by side in a 2-column layout
+
+#### Scenario: Selecting depart date
+
+- **GIVEN** the page loads
+- **WHEN** the user selects "2026-12-15" as the depart date
+- **THEN** the depart date field shows "2026-12-15"
+
+#### Scenario: Selecting return date
+
+- **GIVEN** the page loads
+- **WHEN** the user selects "2026-12-22" as the return date
+- **THEN** the return date field shows "2026-12-22"
 
 ### Section: Passengers selector
 
-```gherkin
 Feature: Passengers selector
-  Scenario: Passengers field rendered
-    Given the page loads
-    Then a "Passengers" field is displayed
-    And the passengers field shows "1 Adult, 0 Children, 1 Room" by default
-    And the passengers field has a white label "Passengers" above it
-    And a plus icon is visible next to the passengers field
 
-  Scenario: Opening passengers dropdown
-    Given the page loads
-    When the user clicks the passengers field or plus icon
-    Then a dropdown appears showing "Room 1" with Adults and Children counters
+#### Scenario: Passengers field rendered
 
-  Scenario: Increasing adults count
-    Given the passengers dropdown is open
-    When the user clicks the "+" button next to Adults
-    Then the adults count increases by 1
-    And the passengers field text updates to reflect the new count
+- **GIVEN** the page loads
+- **THEN** a "Passengers" field is displayed
+- **AND** the passengers field shows "1 Adult, 0 Children, 1 Room" by default
+- **AND** the passengers field has a white label "Passengers" above it
+- **AND** a plus icon is visible next to the passengers field
 
-  Scenario: Decreasing adults count
-    Given the passengers dropdown is open
-    And the adults count is 2
-    When the user clicks the "-" button next to Adults
-    Then the adults count decreases by 1
+#### Scenario: Opening passengers dropdown
 
-  Scenario: Increasing children count
-    Given the passengers dropdown is open
-    When the user clicks the "+" button next to Children
-    Then the children count increases by 1
+- **GIVEN** the page loads
+- **WHEN** the user clicks the passengers field or plus icon
+- **THEN** a dropdown appears showing "Room 1" with Adults and Children counters
 
-  Scenario: Add room link
-    Given the passengers dropdown is open
-    Then an "Add room" link is visible at the bottom of the dropdown
-    And the "Add room" link is separated by a subtle border
-```
+#### Scenario: Increasing adults count
+
+- **GIVEN** the passengers dropdown is open
+- **WHEN** the user clicks the "+" button next to Adults
+- **THEN** the adults count increases by 1
+- **AND** the passengers field text updates to reflect the new count
+
+#### Scenario: Decreasing adults count
+
+- **GIVEN** the passengers dropdown is open
+- **AND** the adults count is 2
+- **WHEN** the user clicks the "-" button next to Adults
+- **THEN** the adults count decreases by 1
+
+#### Scenario: Increasing children count
+
+- **GIVEN** the passengers dropdown is open
+- **WHEN** the user clicks the "+" button next to Children
+- **THEN** the children count increases by 1
+
+#### Scenario: Add room link
+
+- **GIVEN** the passengers dropdown is open
+- **THEN** an "Add room" link is visible at the bottom of the dropdown
+- **AND** the "Add room" link is separated by a subtle border
 
 ### Section: Search button
 
-```gherkin
 Feature: Search button
-  Scenario: Search button rendered
-    Given the page loads
-    Then a coral-red "search" button is displayed
-    And the button has white uppercase text
-    And the button has border-radius of 10px
-    And the button takes full width of its column
 
-  Scenario: Search button hover
-    Given the search button is visible
-    When the user hovers over the search button
-    Then the button background darkens to #eb3746
+#### Scenario: Search button rendered
 
-  Scenario: Clicking search with all fields filled
-    Given the from field has "New York"
-    And the to field has "London"
-    And the depart date is "2026-12-15"
-    And the return date is "2026-12-22"
-    When the user clicks the search button
-    Then the search action is triggered with the entered values
-```
+- **GIVEN** the page loads
+- **THEN** a coral-red "search" button is displayed
+- **AND** the button has white uppercase text
+- **AND** the button has border-radius of 10px
+- **AND** the button takes full width of its column
+
+#### Scenario: Search button hover
+
+- **GIVEN** the search button is visible
+- **WHEN** the user hovers over the search button
+- **THEN** the button background darkens to #eb3746
+
+#### Scenario: Clicking search with all fields filled
+
+- **GIVEN** the from field has "New York"
+- **AND** the to field has "London"
+- **AND** the depart date is "2026-12-15"
+- **AND** the return date is "2026-12-22"
+- **WHEN** the user clicks the search button
+- **THEN** the search action is triggered with the entered values
 
 ### Section: Responsive behavior
 
-```gherkin
 Feature: Responsive behavior
-  Scenario: Mobile layout
-    Given the page is viewed on a screen narrower than 768px
-    Then all form fields stack vertically (single column)
-    And the search button takes full width
-    And the card padding adjusts to 40px 30px
 
-  Scenario: Tablet layout
-    Given the page is viewed on a screen between 768px and 1024px
-    Then the form fields remain in 2-column layout
-    And the card width adapts to the viewport
-```
+#### Scenario: Mobile layout
+
+- **GIVEN** the page is viewed on a screen narrower than 768px
+- **THEN** all form fields stack vertically (single column)
+- **AND** the search button takes full width
+- **AND** the card padding adjusts to 40px 30px
+
+#### Scenario: Tablet layout
+
+- **GIVEN** the page is viewed on a screen between 768px and 1024px
+- **THEN** the form fields remain in 2-column layout
+- **AND** the card width adapts to the viewport
 
 ## Verification checklist
 

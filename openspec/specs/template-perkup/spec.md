@@ -27,36 +27,46 @@ Recreation of ColorLib **Unbrew** (`https://colorlib.com/wp/template/unbrew/`), 
 11. **Newsletter**: Call-to-action subscription banner ("Newsletter - Stay tune and get the latest update").
 12. **Footer**: Multi-column footer with about blurb, navigation links, recent posts, contact info, and mandatory Component Dock attribution linking `https://www.componentdock.com/`.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Navbar Navigation
 
+#### Scenario: Navbar Navigation
+
 - Scenario: User clicks navigation links to jump to sections
-  - Given the user is on the Perkup landing page
-  - When they click "Services" in the navbar
-  - Then the viewport smoothly scrolls to the Services section
+- **GIVEN** the user is on the Perkup landing page
+- **WHEN** they click "Services" in the navbar
+- **THEN** the viewport smoothly scrolls to the Services section
 
 ### Feature: Hero Call to Action
 
+#### Scenario: Hero Call to Action
+
 - Scenario: User views hero section and clicks CTA
-  - Given the hero section is displayed with headline and action buttons
-  - When the user clicks "Get Started"
-  - Then an action or modal triggers appropriately
+- **GIVEN** the hero section is displayed with headline and action buttons
+- **WHEN** the user clicks "Get Started"
+- **THEN** an action or modal triggers appropriately
 
 ### Feature: Services Showcase
 
+#### Scenario: Services Showcase
+
 - Scenario: User views service offerings
-  - Given the Services section is rendered
-  - Then all 6 service cards are displayed with icons and descriptions
+- **GIVEN** the Services section is rendered
+- **THEN** all 6 service cards are displayed with icons and descriptions
 
 ### Feature: Pricing Selection
 
+#### Scenario: Pricing Selection
+
 - Scenario: User reviews pricing tiers
-  - Given the Pricing section is loaded
-  - Then pricing tiers with features and CTA buttons are visible
+- **GIVEN** the Pricing section is loaded
+- **THEN** pricing tiers with features and CTA buttons are visible
 
 ### Feature: Component Dock Footer Attribution
 
+#### Scenario: Component Dock Footer Attribution
+
 - Scenario: Footer contains required branding
-  - Given the page is scrolled to the bottom
-  - Then the footer displays a link to `https://www.componentdock.com/` as "Component Dock"
+- **GIVEN** the page is scrolled to the bottom
+- **THEN** the footer displays a link to `https://www.componentdock.com/` as "Component Dock"

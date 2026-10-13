@@ -39,109 +39,107 @@ Recreation of ColorLib's **Jobsco** template as a React 19 + Vite + Tailwind 4 +
 6. **Testimonials** — White background, centered testimonial slider, each card: quote icon, quote text, avatar image, name, role, dot navigation, decorative T-shape
 7. **Footer** — Gray background, 3 columns: logo + description + social icons (Instagram, Facebook, Twitter), Useful links list, Subscribe newsletter (email input + "Subscribe" button), copyright with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
 ### Header/Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation
-  Given the user visits the page
-  Then the navbar shows a logo
-  And it has links: Home, Browse Job, Page, Contact
-  And a "Post A Job" button is visible
-  And a "Log In" button is visible
+#### Scenario: Navbar displays brand and navigation
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls past the hero
-  Then the navbar remains fixed at the top
+- **GIVEN** the user visits the page
+- **THEN** the navbar shows a logo
+- **AND** it has links: Home, Browse Job, Page, Contact
+- **AND** a "Post A Job" button is visible
+- **AND** a "Log In" button is visible
 
-Scenario: Mobile hamburger menu
-  Given the viewport is under 1024px wide
-  Then the nav links are hidden
-  And a hamburger/mobile menu icon is visible
-  When the user taps the hamburger
-  Then the mobile menu slides open
-```
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar remains fixed at the top
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is under 1024px wide
+- **THEN** the nav links are hidden
+- **AND** a hamburger/mobile menu icon is visible
+- **WHEN** the user taps the hamburger
+- **THEN** the mobile menu slides open
 
 ### Hero section
 
-```gherkin
-Scenario: Hero displays headline and CTAs
-  Given the user visits the page
-  Then a headline "Find Your Next Dream Job" is visible
-  And a subtitle "Easiest way to find a perfect job" is visible
-  And two CTA buttons are present: "Looking For a Job?" and "Find Talent"
-  And a hero illustration image is displayed on the right
+#### Scenario: Hero displays headline and CTAs
 
-Scenario: Hero has decorative elements
-  Given the user views the hero section
-  Then a large "jobs" watermark text is visible in the background
-  And decorative shape images are present
-```
+- **GIVEN** the user visits the page
+- **THEN** a headline "Find Your Next Dream Job" is visible
+- **AND** a subtitle "Easiest way to find a perfect job" is visible
+- **AND** two CTA buttons are present: "Looking For a Job?" and "Find Talent"
+- **AND** a hero illustration image is displayed on the right
+
+#### Scenario: Hero has decorative elements
+
+- **GIVEN** the user views the hero section
+- **THEN** a large "jobs" watermark text is visible in the background
+- **AND** decorative shape images are present
 
 ### Top Jobs section
 
-```gherkin
-Scenario: Top jobs slider displays job categories
-  Given the user scrolls to the top jobs section
-  Then a "1000+" badge is visible
-  And a heading "Browse From Our Top Jobs" is displayed
-  And a horizontal slider shows at least 6 job category cards
-  And each card has: an icon, title, description, and "Apply Now" button
+#### Scenario: Top jobs slider displays job categories
 
-Scenario: Some job cards have Remote sticker
-  Given the top jobs slider is displayed
-  Then some cards show a "Remote" sticker badge
+- **GIVEN** the user scrolls to the top jobs section
+- **THEN** a "1000+" badge is visible
+- **AND** a heading "Browse From Our Top Jobs" is displayed
+- **AND** a horizontal slider shows at least 6 job category cards
+- **AND** each card has: an icon, title, description, and "Apply Now" button
 
-Scenario: Slider is scrollable
-  Given the user is on the top jobs section
-  When the user scrolls/swipes horizontally
-  Then additional job cards become visible
-```
+#### Scenario: Some job cards have Remote sticker
+
+- **GIVEN** the top jobs slider is displayed
+- **THEN** some cards show a "Remote" sticker badge
+
+#### Scenario: Slider is scrollable
+
+- **GIVEN** the user is on the top jobs section
+- **WHEN** the user scrolls/swipes horizontally
+- **THEN** additional job cards become visible
 
 ### About section
 
-```gherkin
-Scenario: About section displays
-  Given the user scrolls to the about section
-  Then a heading "We Build Lasting Relationships Between Candidates & Businesses" is visible
-  And two description paragraphs are shown
-  And a "Find Talent" button is present
-  And an illustration image is displayed on the left
-  And a "Talents" watermark text is in the background
-```
+#### Scenario: About section displays
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading "We Build Lasting Relationships Between Candidates & Businesses" is visible
+- **AND** two description paragraphs are shown
+- **AND** a "Find Talent" button is present
+- **AND** an illustration image is displayed on the left
+- **AND** a "Talents" watermark text is in the background
 
 ### Job Categories section
 
-```gherkin
-Scenario: Categories grid displays
-  Given the user scrolls to the categories section
-  Then a heading "Browse From Top Categories" is visible
-  And 6 category cards are displayed in a 3x2 grid
-  And each card has: icon, title, description, and "Browse Job" button
-  And the categories are: Design & creatives, Finance, Marketing, Health/Medical, Corporate, Copywriting
-```
+#### Scenario: Categories grid displays
+
+- **GIVEN** the user scrolls to the categories section
+- **THEN** a heading "Browse From Top Categories" is visible
+- **AND** 6 category cards are displayed in a 3x2 grid
+- **AND** each card has: icon, title, description, and "Browse Job" button
+- **AND** the categories are: Design & creatives, Finance, Marketing, Health/Medical, Corporate, Copywriting
 
 ### Testimonials section
 
-```gherkin
-Scenario: Testimonial slider
-  Given the user scrolls to the testimonials section
-  Then a testimonial card is visible with: quote icon, quote text, avatar, name, and role
-  And dot navigation allows switching between testimonials
-  And a decorative T-shape image is present
-```
+#### Scenario: Testimonial slider
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial card is visible with: quote icon, quote text, avatar, name, and role
+- **AND** dot navigation allows switching between testimonials
+- **AND** a decorative T-shape image is present
 
 ### Footer
 
-```gherkin
-Scenario: Footer content
-  Given the user scrolls to the bottom
-  Then the footer shows three columns: brand info, Useful links, Subscribe newsletter
-  And social media icons are present (Instagram, Facebook, Twitter)
-  And a newsletter subscription form with email input and "Subscribe" button is visible
-  And a copyright line links to https://www.componentdock.com/
-```
+#### Scenario: Footer content
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** the footer shows three columns: brand info, Useful links, Subscribe newsletter
+- **AND** social media icons are present (Instagram, Facebook, Twitter)
+- **AND** a newsletter subscription form with email input and "Subscribe" button is visible
+- **AND** a copyright line links to https://www.componentdock.com/
 
 ## Verification checklist
 

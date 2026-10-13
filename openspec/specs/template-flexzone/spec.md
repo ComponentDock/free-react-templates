@@ -68,74 +68,68 @@ Recreation of ColorLib **Fitnezz** template.
 | Section padding | `30px–80px` vertical | Between sections |
 | Border radius (cards) | `4px` | Subtle rounded corners on some elements |
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Navbar renders with logo and navigation
-```
-Given the user visits the FlexZone homepage
-Then the navbar is visible with a dark background
-And the logo "FlexZone" is displayed on the left
-And navigation links are present: Home, About, News, Contact
-And a "Become a member" link is displayed
-```
+### Feature: FlexZone template behaviour
 
-### Scenario: Hero slider displays gym headline
-```
-Given the user visits the FlexZone homepage
-Then the hero slider is visible full-width
-And the headline reads "Health is wealth"
-And a "Get Started" button is displayed
-And the slider transitions between at least 2 slides
-```
+#### Scenario: Navbar renders with logo and navigation
 
-### Scenario: Featured classes section displays class cards
-```
-Given the user scrolls to the Featured Classes section
-Then the heading "Featured Classes" is visible
-And 4 class cards are displayed in a carousel
-And each card shows a class image, title, and "Join from $15" button
-```
+- **GIVEN** the user visits the FlexZone homepage
+- **THEN** the navbar is visible with a dark background
+- **AND** the logo "FlexZone" is displayed on the left
+- **AND** navigation links are present: Home, About, News, Contact
+- **AND** a "Become a member" link is displayed
 
-### Scenario: Schedule section displays class schedule
-```
-Given the user scrolls to the Our Schedule section
-Then the heading "Our Schedule" is visible
-And 4 schedule items are displayed in a 2-column layout
-And each item shows a class name, description, time, and date
-```
+#### Scenario: Hero slider displays gym headline
 
-### Scenario: Expert trainers section displays trainer cards
-```
-Given the user scrolls to the Expert Trainers section
-Then the heading "Expert Trainers" is visible
-And 3 trainer cards are displayed in a row
-And each card shows a photo, name, and role "Gym Trainer"
-```
+- **GIVEN** the user visits the FlexZone homepage
+- **THEN** the hero slider is visible full-width
+- **AND** the headline reads "Health is wealth"
+- **AND** a "Get Started" button is displayed
+- **AND** the slider transitions between at least 2 slides
 
-### Scenario: Testimonial section displays client quotes
-```
-Given the user scrolls to the Testimonial section
-Then the heading "Testimonial" is visible
-And 3 testimonial cards are displayed in a row
-And each card shows a quote, author photo, name, and role
-```
+#### Scenario: Featured classes section displays class cards
 
-### Scenario: Blog section displays recent posts
-```
-Given the user scrolls to the Blog section
-Then the heading "Blog" is visible
-And 2 blog post cards are displayed
-And each card shows an image, title, date, excerpt, and "Read More" button
-```
+- **GIVEN** the user scrolls to the Featured Classes section
+- **THEN** the heading "Featured Classes" is visible
+- **AND** 4 class cards are displayed in a carousel
+- **AND** each card shows a class image, title, and "Join from $15" button
 
-### Scenario: Footer displays site information
-```
-Given the user scrolls to the footer
-Then the footer has a dark background (#262626)
-And it contains 3 columns: About Us, Contact Info, Quick Links
-And social media icons are displayed (Twitter, Facebook, LinkedIn, Instagram)
-And a "Made with Component Dock" attribution link is present
-```
+#### Scenario: Schedule section displays class schedule
+
+- **GIVEN** the user scrolls to the Our Schedule section
+- **THEN** the heading "Our Schedule" is visible
+- **AND** 4 schedule items are displayed in a 2-column layout
+- **AND** each item shows a class name, description, time, and date
+
+#### Scenario: Expert trainers section displays trainer cards
+
+- **GIVEN** the user scrolls to the Expert Trainers section
+- **THEN** the heading "Expert Trainers" is visible
+- **AND** 3 trainer cards are displayed in a row
+- **AND** each card shows a photo, name, and role "Gym Trainer"
+
+#### Scenario: Testimonial section displays client quotes
+
+- **GIVEN** the user scrolls to the Testimonial section
+- **THEN** the heading "Testimonial" is visible
+- **AND** 3 testimonial cards are displayed in a row
+- **AND** each card shows a quote, author photo, name, and role
+
+#### Scenario: Blog section displays recent posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** the heading "Blog" is visible
+- **AND** 2 blog post cards are displayed
+- **AND** each card shows an image, title, date, excerpt, and "Read More" button
+
+#### Scenario: Footer displays site information
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background (#262626)
+- **AND** it contains 3 columns: About Us, Contact Info, Quick Links
+- **AND** social media icons are displayed (Twitter, Facebook, LinkedIn, Instagram)
+- **AND** a "Made with Component Dock" attribution link is present
 
 ## Verification checklist
 

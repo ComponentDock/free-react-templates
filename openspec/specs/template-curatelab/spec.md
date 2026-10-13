@@ -70,70 +70,82 @@ Recreation of the ColorLib "Reopen" template as a React 19 + Vite + Tailwind CSS
 - Links to `https://www.componentdock.com/`
 - Footer links color: `#7e7e7e`, hover: `#f277ae`
 
-## Gherkin Requirements
+## Requirements
 
-### Background
-  Given the app is loaded at the root URL
-  And the viewport is desktop-sized (1200px+)
+### Feature: CurateLab template behaviour
 
-### Scenario: Navbar renders with logo and hamburger
-  Given the page is loaded
-  Then the navbar should display a centered logo image
-  And a hamburger toggle with three bars should be visible top-right
+**Background**
+- **GIVEN** the app is loaded at the root URL
+- **AND** the viewport is desktop-sized (1200px+)
 
-### Scenario: Hamburger toggle opens menu overlay
-  Given the page is loaded
-  When the user clicks the hamburger toggle
-  Then a full-screen menu overlay should appear
-  And it should list links: Home, About, Story, Blog, Contact, More
-  And the hamburger bars should animate into an X shape
+#### Scenario: Navbar renders with logo and hamburger
 
-### Scenario: Menu overlay closes on toggle or link click
-  Given the menu overlay is open
-  When the user clicks the toggle or a menu link
-  Then the menu overlay should close
-  And the toggle should animate back to three bars
+- **GIVEN** the page is loaded
+- **THEN** the navbar should display a centered logo image
+- **AND** a hamburger toggle with three bars should be visible top-right
 
-### Scenario: Hero section displays headline and subtitle
-  Given the page is loaded
-  Then the hero section should show the headline "Handpicked design resources crafted with much ❤ and care for every detail"
-  And the subtitle "free downloads only on fridays" should be visible below
+#### Scenario: Hamburger toggle opens menu overlay
 
-### Scenario: Portfolio grid renders items
-  Given the page is loaded
-  Then a portfolio grid should display 9 items
-  And each item should show an image
-  And one item should span 2/3 width (the Foster item)
-  And the remaining items should span 1/3 width
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** a full-screen menu overlay should appear
+- **AND** it should list links: Home, About, Story, Blog, Contact, More
+- **AND** the hamburger bars should animate into an X shape
 
-### Scenario: Portfolio item hover overlay
-  Given the page is loaded
-  When the user hovers over a portfolio item
-  Then a white overlay should appear over the image
-  And it should display the item title (e.g. "SMARTPHONE")
-  And it should display the item category (e.g. "GALLERY")
+#### Scenario: Menu overlay closes on toggle or link click
 
-### Scenario: Load more button renders
-  Given the page is loaded
-  Then a centered load-more arrow image should be visible below the grid
-  And it should have a hover scale animation (scale 0.9)
+- **GIVEN** the menu overlay is open
+- **WHEN** the user clicks the toggle or a menu link
+- **THEN** the menu overlay should close
+- **AND** the toggle should animate back to three bars
 
-### Scenario: Footer renders with copyright and social icons
-  Given the page is loaded
-  Then the footer should show a copyright line with the current year
-  And it should include social icons: Twitter, Behance, Dribbble, Facebook, RSS
-  And the footer should link to Component Dock
+#### Scenario: Hero section displays headline and subtitle
 
-### Scenario: Page has correct background treatment
-  Given the page is loaded
-  Then the outer page background should be light gray (#ECECEC)
-  And the body wrapper should have a white (#FFFFFF) background
-  And there should be a 30px margin around the wrapper
+- **GIVEN** the page is loaded
+- **THEN** the hero section should show the headline "Handpicked design resources crafted with much ❤ and care for every detail"
+- **AND** the subtitle "free downloads only on fridays" should be visible below
 
-### Scenario: Responsive grid collapses
-  Given the viewport is below 768px
-  Then all grid items should display full-width
-  And the portfolio overlay text should use smaller font (14px)
+#### Scenario: Portfolio grid renders items
+
+- **GIVEN** the page is loaded
+- **THEN** a portfolio grid should display 9 items
+- **AND** each item should show an image
+- **AND** one item should span 2/3 width (the Foster item)
+- **AND** the remaining items should span 1/3 width
+
+#### Scenario: Portfolio item hover overlay
+
+- **GIVEN** the page is loaded
+- **WHEN** the user hovers over a portfolio item
+- **THEN** a white overlay should appear over the image
+- **AND** it should display the item title (e.g. "SMARTPHONE")
+- **AND** it should display the item category (e.g. "GALLERY")
+
+#### Scenario: Load more button renders
+
+- **GIVEN** the page is loaded
+- **THEN** a centered load-more arrow image should be visible below the grid
+- **AND** it should have a hover scale animation (scale 0.9)
+
+#### Scenario: Footer renders with copyright and social icons
+
+- **GIVEN** the page is loaded
+- **THEN** the footer should show a copyright line with the current year
+- **AND** it should include social icons: Twitter, Behance, Dribbble, Facebook, RSS
+- **AND** the footer should link to Component Dock
+
+#### Scenario: Page has correct background treatment
+
+- **GIVEN** the page is loaded
+- **THEN** the outer page background should be light gray (#ECECEC)
+- **AND** the body wrapper should have a white (#FFFFFF) background
+- **AND** there should be a 30px margin around the wrapper
+
+#### Scenario: Responsive grid collapses
+
+- **GIVEN** the viewport is below 768px
+- **THEN** all grid items should display full-width
+- **AND** the portfolio overlay text should use smaller font (14px)
 
 ## Verification Checklist
 

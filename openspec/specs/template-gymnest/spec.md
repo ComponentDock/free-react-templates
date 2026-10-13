@@ -52,90 +52,100 @@ Extracted from `styles/main_styles.css` on the live preview:
 8. **Blog** — Parallax background with dark overlay, subtitle "welcome to sportfit", title "The Blog", "View all blog posts" link. 3 blog post cards: image, title (linked), date (linked), paragraph, "Read More" link.
 9. **Footer** — Dark background, centered logo, nav links (same as header), newsletter form (pill-shaped input + "go" button), copyright bar (replace with Component Dock link), decorative footer image.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: GymNest — Gym/Fitness Landing Page
 
 #### Scenario: Header renders with logo, nav, and phone
-- **Given** the user visits the GymNest page
-- **When** the page loads
-- **Then** a dark header displays with the logo icon and "Gym" + "Nest" text
-- **And** navigation links for "Home", "About us", "Classes & Services", "Blog", "Contact" are visible
-- **And** a phone number is displayed on the right
-- **And** a custom hamburger bar with "menu" text is visible
+
+- **GIVEN** the user visits the GymNest page
+- **WHEN** the page loads
+- **THEN** a dark header displays with the logo icon and "Gym" + "Nest" text
+- **AND** navigation links for "Home", "About us", "Classes & Services", "Blog", "Contact" are visible
+- **AND** a phone number is displayed on the right
+- **AND** a custom hamburger bar with "menu" text is visible
 
 #### Scenario: Hero section displays with video link and CTA
-- **Given** the user is on the home page
-- **When** the hero section renders
-- **Then** a full-width background image is shown with a dark overlay
-- **And** a video play button with "See Workout Video" text is visible
-- **And** the headline "Get fit with us" is displayed
-- **And** the subtitle "Pilates, Yoga, Fitness, Spinning & many more" is shown
-- **And** an outlined "Join Now" button is visible
+
+- **GIVEN** the user is on the home page
+- **WHEN** the hero section renders
+- **THEN** a full-width background image is shown with a dark overlay
+- **AND** a video play button with "See Workout Video" text is visible
+- **AND** the headline "Get fit with us" is displayed
+- **AND** the subtitle "Pilates, Yoga, Fitness, Spinning & many more" is shown
+- **AND** an outlined "Join Now" button is visible
 
 #### Scenario: Feature boxes show three highlights
-- **Given** the user scrolls to the boxes section
-- **When** the boxes section renders
-- **Then** three feature boxes are displayed in a row
-- **And** each box shows an icon, title, description, and "+" link
-- **And** the titles are "Pilates with trainer", "Swimming Pool", and "Healthy diet plan"
+
+- **GIVEN** the user scrolls to the boxes section
+- **WHEN** the boxes section renders
+- **THEN** three feature boxes are displayed in a row
+- **AND** each box shows an icon, title, description, and "+" link
+- **AND** the titles are "Pilates with trainer", "Swimming Pool", and "Healthy diet plan"
 
 #### Scenario: About section displays gym info
-- **Given** the user scrolls to the about section
-- **When** the about section renders
-- **Then** a subtitle "welcome to sportfit" and title "About Sportfit" are shown
-- **And** a highlighted quote text is displayed
-- **And** a description paragraph is visible
-- **And** a "Join Now" button is present
-- **And** an image is shown on the right side
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the about section renders
+- **THEN** a subtitle "welcome to sportfit" and title "About Sportfit" are shown
+- **AND** a highlighted quote text is displayed
+- **AND** a description paragraph is visible
+- **AND** a "Join Now" button is present
+- **AND** an image is shown on the right side
 
 #### Scenario: Testimonials section shows client reviews
-- **Given** the user scrolls to the testimonials section
-- **When** the testimonials section renders
-- **Then** a parallax background image is displayed
-- **And** subtitle "welcome to sportfit" and title "Testimonials" are shown
-- **And** four testimonial cards are displayed (two per column)
-- **And** each card shows a circular avatar, client name, "client" label, paragraph, and star rating
-- **And** a centered "Join Now" button is visible at the bottom
+
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the testimonials section renders
+- **THEN** a parallax background image is displayed
+- **AND** subtitle "welcome to sportfit" and title "Testimonials" are shown
+- **AND** four testimonial cards are displayed (two per column)
+- **AND** each card shows a circular avatar, client name, "client" label, paragraph, and star rating
+- **AND** a centered "Join Now" button is visible at the bottom
 
 #### Scenario: Gallery slider shows gym images
-- **Given** the user scrolls to the gallery section
-- **When** the gallery section renders
-- **Then** a carousel of gym images is displayed
-- **And** navigation dots or arrows are available to browse images
+
+- **GIVEN** the user scrolls to the gallery section
+- **WHEN** the gallery section renders
+- **THEN** a carousel of gym images is displayed
+- **AND** navigation dots or arrows are available to browse images
 
 #### Scenario: Services section lists course offerings
-- **Given** the user scrolls to the services section
-- **When** the services section renders
-- **Then** subtitle "welcome to sportfit" and title "Our Courses" are shown
-- **And** six course cards are displayed in a 3×2 grid
-- **And** each card shows an icon, title, and description
-- **And** the courses are: "Weight Loss Class", "Yoga Classes", "Spinning Class", "Private Fit Class", "Nutrition Classes", "Pilates Class"
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the services section renders
+- **THEN** subtitle "welcome to sportfit" and title "Our Courses" are shown
+- **AND** six course cards are displayed in a 3×2 grid
+- **AND** each card shows an icon, title, and description
+- **AND** the courses are: "Weight Loss Class", "Yoga Classes", "Spinning Class", "Private Fit Class", "Nutrition Classes", "Pilates Class"
 
 #### Scenario: Blog section shows recent posts
-- **Given** the user scrolls to the blog section
-- **When** the blog section renders
-- **Then** a parallax background with dark overlay is displayed
-- **And** subtitle "welcome to sportfit" and title "The Blog" are shown
-- **And** a "View all blog posts" link is visible
-- **And** three blog post cards are displayed
-- **And** each card shows an image, title, date, description, and "Read More" link
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the blog section renders
+- **THEN** a parallax background with dark overlay is displayed
+- **AND** subtitle "welcome to sportfit" and title "The Blog" are shown
+- **AND** a "View all blog posts" link is visible
+- **AND** three blog post cards are displayed
+- **AND** each card shows an image, title, date, description, and "Read More" link
 
 #### Scenario: Footer renders with newsletter and nav
-- **Given** the user scrolls to the footer
-- **When** the footer renders
-- **Then** a dark background footer displays with the centered logo
-- **And** navigation links are present (Home, About us, Classes & Services, Blog, Contact)
-- **And** a newsletter form with pill-shaped input and "go" button is visible
-- **And** a copyright line is shown (replaced with Component Dock link)
-- **And** a decorative footer image is displayed
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** a dark background footer displays with the centered logo
+- **AND** navigation links are present (Home, About us, Classes & Services, Blog, Contact)
+- **AND** a newsletter form with pill-shaped input and "go" button is visible
+- **AND** a copyright line is shown (replaced with Component Dock link)
+- **AND** a decorative footer image is displayed
 
 #### Scenario: Hamburger menu opens on mobile
-- **Given** the user is on a mobile viewport
-- **When** the hamburger menu button is clicked
-- **Then** a full-screen dark overlay menu slides in
-- **And** all navigation links are displayed vertically centered
-- **And** the phone number is shown at the bottom of the menu
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the hamburger menu button is clicked
+- **THEN** a full-screen dark overlay menu slides in
+- **AND** all navigation links are displayed vertically centered
+- **AND** the phone number is shown at the bottom of the menu
 
 ## Verification Checklist
 

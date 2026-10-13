@@ -113,100 +113,112 @@ Extracted from the live preview CSS (`css/main.css`):
 
 ### Gherkin: Hero Banner
 
-Scenario: Full-width banner with overlay and price display
-  Given the page loads
-  When the hero banner is visible
-  Then it shows a full-width background image with a dark overlay
-  And a large white heading displays the current price (e.g. "$12,356")
-  And a subtitle paragraph is shown below the heading
-  And a "Buy Bitcoin" CTA button is visible with square corners
+#### Scenario: Full-width banner with overlay and price display
 
-Scenario: Navbar fixed position with scroll effect
-  Given the page loads
-  When the user scrolls down
-  Then the navbar background changes to semi-transparent dark
-  And navigation links (Home, Convert, Feature, Price, Blog) are visible
+- **GIVEN** the page loads
+- **WHEN** the hero banner is visible
+- **THEN** it shows a full-width background image with a dark overlay
+- **AND** a large white heading displays the current price (e.g. "$12,356")
+- **AND** a subtitle paragraph is shown below the heading
+- **AND** a "Buy Bitcoin" CTA button is visible with square corners
+
+#### Scenario: Navbar fixed position with scroll effect
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls down
+- **THEN** the navbar background changes to semi-transparent dark
+- **AND** navigation links (Home, Convert, Feature, Price, Blog) are visible
 
 ### Gherkin: Currency Converter
 
-Scenario: Converter section overlapping hero
-  Given the hero banner is displayed
-  When the converter section renders
-  Then it overlaps the banner by negative margin
-  And it has a yellow-to-orange gradient background
-  And it shows a heading "The Currency Converter"
-  And it has form inputs with transparent background and white text
+#### Scenario: Converter section overlapping hero
+
+- **GIVEN** the hero banner is displayed
+- **WHEN** the converter section renders
+- **THEN** it overlaps the banner by negative margin
+- **AND** it has a yellow-to-orange gradient background
+- **AND** it shows a heading "The Currency Converter"
+- **AND** it has form inputs with transparent background and white text
 
 ### Gherkin: Services
 
-Scenario: Three service feature cards
-  Given the services section is visible
-  Then three cards are displayed in a row
-  And each card has an icon, heading, and description paragraph
-  And cards are centered with equal spacing
+#### Scenario: Three service feature cards
+
+- **GIVEN** the services section is visible
+- **THEN** three cards are displayed in a row
+- **AND** each card has an icon, heading, and description paragraph
+- **AND** cards are centered with equal spacing
 
 ### Gherkin: About Us
 
-Scenario: Dark about section with carousel
-  Given the about section is visible
-  Then it has a dark (#222) background
-  And a left column shows an image carousel with arrow navigation
-  And a right column shows a white heading and white body text
+#### Scenario: Dark about section with carousel
+
+- **GIVEN** the about section is visible
+- **THEN** it has a dark (#222) background
+- **AND** a left column shows an image carousel with arrow navigation
+- **AND** a right column shows a white heading and white body text
 
 ### Gherkin: Features
 
-Scenario: Four feature cards
-  Given the features section is visible
-  Then four feature cards are displayed
-  And each has a colored icon, heading, and description
-  And hovering a card turns its heading orange
+#### Scenario: Four feature cards
+
+- **GIVEN** the features section is visible
+- **THEN** four feature cards are displayed
+- **AND** each has a colored icon, heading, and description
+- **AND** hovering a card turns its heading orange
 
 ### Gherkin: Stats
 
-Scenario: Stats area with chart
-  Given the stats section is visible
-  Then it has a light (#f9f9ff) background
-  And it shows a "Ups and Downs of Bitcoin (Realtime)" heading
-  And a CTA button with gradient border is present
+#### Scenario: Stats area with chart
+
+- **GIVEN** the stats section is visible
+- **THEN** it has a light (#f9f9ff) background
+- **AND** it shows a "Ups and Downs of Bitcoin (Realtime)" heading
+- **AND** a CTA button with gradient border is present
 
 ### Gherkin: Call to Action
 
-Scenario: Gradient CTA section
-  Given the CTA section is visible
-  Then it has the yellow-to-orange gradient background
-  And it shows "Huge Transaction in last Week" heading
-  And a white "Buy Bitcoin Now!" button is displayed
+#### Scenario: Gradient CTA section
+
+- **GIVEN** the CTA section is visible
+- **THEN** it has the yellow-to-orange gradient background
+- **AND** it shows "Huge Transaction in last Week" heading
+- **AND** a white "Buy Bitcoin Now!" button is displayed
 
 ### Gherkin: Pricing
 
-Scenario: Three pricing cards
-  Given the pricing section is visible
-  Then three cards are shown (Ripple, Ethereum, Bitcoin)
-  And each has a light header, coin name, description, price, and button
-  And hovering a card changes the button to gold color
+#### Scenario: Three pricing cards
 
-Scenario: Pricing card hover effect
-  Given the pricing cards are displayed
-  When the user hovers over a card
-  Then the button background changes to gold (#ca9814)
+- **GIVEN** the pricing section is visible
+- **THEN** three cards are shown (Ripple, Ethereum, Bitcoin)
+- **AND** each has a light header, coin name, description, price, and button
+- **AND** hovering a card changes the button to gold color
+
+#### Scenario: Pricing card hover effect
+
+- **GIVEN** the pricing cards are displayed
+- **WHEN** the user hovers over a card
+- **THEN** the button background changes to gold (#ca9814)
 
 ### Gherkin: Blog
 
-Scenario: Three blog post cards
-  Given the blog section is visible
-  Then three blog cards are displayed
-  And each has an image, heading, excerpt, and author info
-  And hovering a card turns the heading orange
+#### Scenario: Three blog post cards
+
+- **GIVEN** the blog section is visible
+- **THEN** three blog cards are displayed
+- **AND** each has an image, heading, excerpt, and author info
+- **AND** hovering a card turns the heading orange
 
 ### Gherkin: Footer
 
-Scenario: Dark footer with newsletter
-  Given the footer is visible
-  Then it has a dark navy (#04091e) background
-  And it contains four columns: About, Newsletter, Products, Social
-  And the newsletter has rounded input fields and a gradient submit button
-  And social icons are in dark (#111111) square buttons
-  And the footer links to https://www.componentdock.com/
+#### Scenario: Dark footer with newsletter
+
+- **GIVEN** the footer is visible
+- **THEN** it has a dark navy (#04091e) background
+- **AND** it contains four columns: About, Newsletter, Products, Social
+- **AND** the newsletter has rounded input fields and a gradient submit button
+- **AND** social icons are in dark (#111111) square buttons
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification Checklist
 

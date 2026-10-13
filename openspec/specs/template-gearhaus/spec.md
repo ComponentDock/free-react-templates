@@ -42,94 +42,104 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 8. **Latest News** ("Latest News") — 3 blog cards in a 3-column grid. Each: image with author/date overlay + title + excerpt
 9. **Footer** — Dark background with image overlay. Top row: 3 info cards (Booking/Phone/Location with icons). Middle: 4 columns (About + logo + CTA, Quick Links, News items, Address + social icons). Bottom: copyright + social links
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Gearhaus template behaviour
+
 Feature: Gearhaus — Automotive Service Website Template
 
-  Background:
-    Given the user navigates to the Gearhaus template
-    Then the page loads without errors
-    And all sections are rendered in order
+Background:
+- **GIVEN** the user navigates to the Gearhaus template
+- **THEN** the page loads without errors
+- **AND** all sections are rendered in order
 
-  Scenario: Header renders with utility bar and navigation
-    Given the page is loaded
-    Then the header shows a dark utility bar with phone number, hours, map link, and social icons
-    And the main nav bar shows the Gearhaus logo on the left
-    And the nav links include Home, Services, Shop, Pages, Blog
-    And search and cart icons appear on the right
-    And a mobile hamburger menu is present for narrow viewports
+#### Scenario: Header renders with utility bar and navigation
 
-  Scenario: Hero section displays with background image and CTA
-    Given the page is loaded
-    Then the hero section shows a full-width background image with dark overlay
-    And the heading displays "Welcome To" followed by the garage name
-    And a body paragraph is present below the heading
-    And a "Our Services" primary CTA button is visible
-    And the button uses the brand color #5F67FF
+- **GIVEN** the page is loaded
+- **THEN** the header shows a dark utility bar with phone number, hours, map link, and social icons
+- **AND** the main nav bar shows the Gearhaus logo on the left
+- **AND** the nav links include Home, Services, Shop, Pages, Blog
+- **AND** search and cart icons appear on the right
+- **AND** a mobile hamburger menu is present for narrow viewports
 
-  Scenario: Services section shows 4 service cards
-    Given the page is loaded
-    When the user scrolls to the Services section
-    Then the section title reads "What We Do?"
-    And 4 service cards are displayed in a 2-column grid
-    And each text card shows an icon, title, and description
-    And each image card shows an automotive service photo
+#### Scenario: Hero section displays with background image and CTA
 
-  Scenario: Choose Us section shows split layout
-    Given the page is loaded
-    When the user scrolls to the Choose Us section
-    Then an image occupies the left portion
-    And a text panel on the right shows a section title
-    And a bulleted list of features is displayed
-    And a "Our Services" CTA button is present
+- **GIVEN** the page is loaded
+- **THEN** the hero section shows a full-width background image with dark overlay
+- **AND** the heading displays "Welcome To" followed by the garage name
+- **AND** a body paragraph is present below the heading
+- **AND** a "Our Services" primary CTA button is visible
+- **AND** the button uses the brand color #5F67FF
 
-  Scenario: Products section shows 4 product cards
-    Given the page is loaded
-    When the user scrolls to the Products section
-    Then the section title reads "Our Products"
-    And 4 product cards are displayed in a 4-column grid
-    And each card shows an image, product name, price, and "Add To Cart" link
-    And hover icons (heart, eye, exchange) appear on image hover
+#### Scenario: Services section shows 4 service cards
 
-  Scenario: Testimonial slider renders with quotes
-    Given the page is loaded
-    When the user scrolls to the Testimonial section
-    Then at least one testimonial quote is visible
-    And a quotation mark icon is displayed above the quote
-    And dot pagination indicators are present
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Services section
+- **THEN** the section title reads "What We Do?"
+- **AND** 4 service cards are displayed in a 2-column grid
+- **AND** each text card shows an icon, title, and description
+- **AND** each image card shows an automotive service photo
 
-  Scenario: Counter section displays stats on dark background
-    Given the page is loaded
-    When the user scrolls to the Counter section
-    Then the section has a dark background
-    And stat counters are displayed with large numbers
-    And the numbers use the brand color #5F67FF
-    And each stat has an icon and label
+#### Scenario: Choose Us section shows split layout
 
-  Scenario: Latest News section shows 3 blog cards
-    Given the page is loaded
-    When the user scrolls to the Latest News section
-    Then 3 blog post cards are displayed in a 3-column grid
-    And each card shows an image, title, excerpt, and author/date
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Choose Us section
+- **THEN** an image occupies the left portion
+- **AND** a text panel on the right shows a section title
+- **AND** a bulleted list of features is displayed
+- **AND** a "Our Services" CTA button is present
 
-  Scenario: Footer renders with contact info and links
-    Given the page is loaded
-    When the user scrolls to the footer
-    Then the footer shows a dark background with image overlay
-    And a top row displays 3 info cards (Booking, Phone, Location) with icons
-    And columns show About, Quick Links, News, and Address sections
-    And the footer links to https://www.componentdock.com/
-    And a copyright line is displayed
+#### Scenario: Products section shows 4 product cards
 
-  Scenario: Responsive behavior
-    Given the page is loaded on a narrow viewport
-    Then the hamburger menu is visible
-    And the nav links are hidden
-    And the services grid stacks to single column
-    And the products grid stacks to 2 columns
-    And the footer columns stack vertically
-```
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Products section
+- **THEN** the section title reads "Our Products"
+- **AND** 4 product cards are displayed in a 4-column grid
+- **AND** each card shows an image, product name, price, and "Add To Cart" link
+- **AND** hover icons (heart, eye, exchange) appear on image hover
+
+#### Scenario: Testimonial slider renders with quotes
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Testimonial section
+- **THEN** at least one testimonial quote is visible
+- **AND** a quotation mark icon is displayed above the quote
+- **AND** dot pagination indicators are present
+
+#### Scenario: Counter section displays stats on dark background
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Counter section
+- **THEN** the section has a dark background
+- **AND** stat counters are displayed with large numbers
+- **AND** the numbers use the brand color #5F67FF
+- **AND** each stat has an icon and label
+
+#### Scenario: Latest News section shows 3 blog cards
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Latest News section
+- **THEN** 3 blog post cards are displayed in a 3-column grid
+- **AND** each card shows an image, title, excerpt, and author/date
+
+#### Scenario: Footer renders with contact info and links
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the footer
+- **THEN** the footer shows a dark background with image overlay
+- **AND** a top row displays 3 info cards (Booking, Phone, Location) with icons
+- **AND** columns show About, Quick Links, News, and Address sections
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** a copyright line is displayed
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the page is loaded on a narrow viewport
+- **THEN** the hamburger menu is visible
+- **AND** the nav links are hidden
+- **AND** the services grid stacks to single column
+- **AND** the products grid stacks to 2 columns
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

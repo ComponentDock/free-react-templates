@@ -126,84 +126,96 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Footer headings: uppercase, letter-spacing, white, bottom border (40px white line)
 - Copyright bar: centered, "Made with ❤ by Colorlib" → replace with "Made with ❤ by Component Dock" + link to https://www.componentdock.com/
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Lodging Real Estate Template
 
 #### Scenario: Top bar shows contact info and social links
-- Given the page is loaded
-- Then the top bar shows phone number and email on the left
-- And social icons (Facebook, Twitter, LinkedIn) on the right
-- And the top bar has a white background with a bottom border
+
+- **GIVEN** the page is loaded
+- **THEN** the top bar shows phone number and email on the left
+- **AND** social icons (Facebook, Twitter, LinkedIn) on the right
+- **AND** the top bar has a white background with a bottom border
 
 #### Scenario: Navigation has dropdown menus
-- Given the page is loaded
-- When I hover over "Properties" in the nav
-- Then a dropdown appears with "Buy", "Rent", "Lease", and a nested "Menu" submenu
-- And the dropdown has a brand accent (#f89d13) top border
+
+- **GIVEN** the page is loaded
+- **WHEN** I hover over "Properties" in the nav
+- **THEN** a dropdown appears with "Buy", "Rent", "Lease", and a nested "Menu" submenu
+- **AND** the dropdown has a brand accent (#f89d13) top border
 
 #### Scenario: Hero slider displays property details
-- Given the page is loaded
-- Then a hero slider with background images is displayed
-- And each slide shows a white info box with address, location, price, and "More Details" link
-- And the price is displayed in green
+
+- **GIVEN** the page is loaded
+- **THEN** a hero slider with background images is displayed
+- **AND** each slide shows a white info box with address, location, price, and "More Details" link
+- **AND** the price is displayed in green
 
 #### Scenario: Search form has filter selects
-- Given the page is loaded
-- When I scroll to the search form
-- Then 6 select dropdowns are displayed (Lot Area, Property Status, Location, Lot Area, Bedrooms, Bathrooms)
-- And a price range slider is present
-- And a "Search" button is displayed
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the search form
+- **THEN** 6 select dropdowns are displayed (Lot Area, Property Status, Location, Lot Area, Bedrooms, Bathrooms)
+- **AND** a price range slider is present
+- **AND** a "Search" button is displayed
 
 #### Scenario: Features section shows 3 items
-- Given the page is loaded
-- When I scroll to the features section
-- Then 3 feature cards are displayed: "Wide Range of Properties", "Rent or Sale", "Property Location"
-- And each has an icon and description
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the features section
+- **THEN** 3 feature cards are displayed: "Wide Range of Properties", "Rent or Sale", "Property Location"
+- **AND** each has an icon and description
 
 #### Scenario: Properties section shows 6 property cards
-- Given the page is loaded
-- When I scroll to the properties section
-- Then 6 property cards are displayed in a 3-column grid
-- And each card shows an image, price, title, location, and area/beds/baths/garages info
-- And pagination numbers are shown below
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the properties section
+- **THEN** 6 property cards are displayed in a 3-column grid
+- **AND** each card shows an image, price, title, location, and area/beds/baths/garages info
+- **AND** pagination numbers are shown below
 
 #### Scenario: Services section shows 6 service cards
-- Given the page is loaded
-- When I scroll to the services section
-- Then 6 bordered service cards are displayed in a 3×2 grid
-- And each card shows an icon, heading, and "Learn More" link
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the services section
+- **THEN** 6 bordered service cards are displayed in a 3×2 grid
+- **AND** each card shows an icon, heading, and "Learn More" link
 
 #### Scenario: Blog section shows 3 post cards
-- Given the page is loaded
-- When I scroll to the blog section
-- Then 3 blog post cards are displayed
-- And each card shows an image, date, title, and excerpt
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the blog section
+- **THEN** 3 blog post cards are displayed
+- **AND** each card shows an image, date, title, and excerpt
 
 #### Scenario: Agents section shows agent profiles
-- Given the page is loaded
-- When I scroll to the agents section
-- Then agent cards are displayed in a carousel
-- And each agent shows a circular photo, name, role, bio, and social links
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the agents section
+- **THEN** agent cards are displayed in a carousel
+- **AND** each agent shows a circular photo, name, role, bio, and social links
 
 #### Scenario: CTA banner invites action
-- Given the page is loaded
-- When I scroll to the CTA banner
-- Then a brand-colored (#f89d13) banner is displayed
-- And it contains the heading "Wide Range of Properties Just For You"
-- And a "See Properties" outline button is displayed
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the CTA banner
+- **THEN** a brand-colored (#f89d13) banner is displayed
+- **AND** it contains the heading "Wide Range of Properties Just For You"
+- **AND** a "See Properties" outline button is displayed
 
 #### Scenario: Footer shows navigation and social links
-- Given the page is loaded
-- When I scroll to the footer
-- Then the footer has a dark background with 3 columns: About, Navigations, Follow Us
-- And footer headings have an uppercase style with a white bottom border line
-- And the copyright text links to Component Dock
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the footer
+- **THEN** the footer has a dark background with 3 columns: About, Navigations, Follow Us
+- **AND** footer headings have an uppercase style with a white bottom border line
+- **AND** the copyright text links to Component Dock
 
 #### Scenario: Footer links to Component Dock
-- Given the page is loaded
-- When I look at the footer copyright
-- Then it contains a link to https://www.componentdock.com/ labeled "Component Dock"
+
+- **GIVEN** the page is loaded
+- **WHEN** I look at the footer copyright
+- **THEN** it contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
 ## Verification Checklist
 

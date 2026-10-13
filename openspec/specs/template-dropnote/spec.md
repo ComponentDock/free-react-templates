@@ -28,76 +28,78 @@ overlay containing the message form.
 | Button border-radius | ~4px | Screenshot — rectangular with slight rounding |
 | Map background | Full-viewport Google Maps embed (NYC metro area in screenshot) | Screenshot |
 
-## Gherkin requirements
+## Requirements
 
-### Background
+### Feature: DropNote template behaviour
 
-- Given the page is loaded
-- Then the viewport is filled with an interactive map background
-- And a centered white card is visible over the map
+**Background**
 
-### Scenario: Page renders the contact form card
+- **GIVEN** the page is loaded
+- **THEN** the viewport is filled with an interactive map background
+- **AND** a centered white card is visible over the map
 
-- Given the user visits the page
-- When the page finishes loading
-- Then a white card is centered on the viewport
-- And the card has a subtle drop shadow
-- And the card is overlaid on top of a full-viewport map
+#### Scenario: Page renders the contact form card
 
-### Scenario: Card displays heading
+- **GIVEN** the user visits the page
+- **WHEN** the page finishes loading
+- **THEN** a white card is centered on the viewport
+- **AND** the card has a subtle drop shadow
+- **AND** the card is overlaid on top of a full-viewport map
 
-- Given the contact form card is visible
-- When the user reads the card
-- Then the heading "Send Us A Message" is displayed
-- And the heading is in a dark color and large font size
+#### Scenario: Card displays heading
 
-### Scenario: Email input field
+- **GIVEN** the contact form card is visible
+- **WHEN** the user reads the card
+- **THEN** the heading "Send Us A Message" is displayed
+- **AND** the heading is in a dark color and large font size
 
-- Given the contact form card is visible
-- When the user looks at the email input
-- Then there is an email input field with placeholder "Your Email Address"
-- And the input has an envelope/email icon on the left
-- And the input has a light gray border
+#### Scenario: Email input field
 
-### Scenario: Message textarea
+- **GIVEN** the contact form card is visible
+- **WHEN** the user looks at the email input
+- **THEN** there is an email input field with placeholder "Your Email Address"
+- **AND** the input has an envelope/email icon on the left
+- **AND** the input has a light gray border
 
-- Given the contact form card is visible
-- When the user looks at the message field
-- Then there is a textarea with placeholder "How Can We Help?"
-- And the textarea has a light gray border
-- And the textarea is taller than the email input (multi-line)
+#### Scenario: Message textarea
 
-### Scenario: Send message button
+- **GIVEN** the contact form card is visible
+- **WHEN** the user looks at the message field
+- **THEN** there is a textarea with placeholder "How Can We Help?"
+- **AND** the textarea has a light gray border
+- **AND** the textarea is taller than the email input (multi-line)
 
-- Given the contact form card is visible
-- When the user sees the submit button
-- Then there is a blue "SEND MESSAGE" button
-- And the button text is uppercase and white
-- And the button spans a portion of the card width (not full-width)
+#### Scenario: Send message button
 
-### Scenario: Map background fills viewport
+- **GIVEN** the contact form card is visible
+- **WHEN** the user sees the submit button
+- **THEN** there is a blue "SEND MESSAGE" button
+- **AND** the button text is uppercase and white
+- **AND** the button spans a portion of the card width (not full-width)
 
-- Given the user visits the page
-- When the page loads
-- Then a map occupies the full viewport behind the card
-- And the map is interactive (zoomable, pannable)
+#### Scenario: Map background fills viewport
 
-### Scenario: Responsive layout
+- **GIVEN** the user visits the page
+- **WHEN** the page loads
+- **THEN** a map occupies the full viewport behind the card
+- **AND** the map is interactive (zoomable, pannable)
 
-- Given the user visits the page on a mobile device
-- When the page loads
-- Then the card is centered and responsive
-- And the form fields stack vertically
-- And the map still fills the viewport behind
+#### Scenario: Responsive layout
 
-### Scenario: Form submission
+- **GIVEN** the user visits the page on a mobile device
+- **WHEN** the page loads
+- **THEN** the card is centered and responsive
+- **AND** the form fields stack vertically
+- **AND** the map still fills the viewport behind
 
-- Given the contact form card is visible
-- When the user fills in the email and message
-- And clicks "SEND MESSAGE"
-- Then the form validates the email field
-- And the form validates that the message is not empty
-- And the form prevents submission if validation fails
+#### Scenario: Form submission
+
+- **GIVEN** the contact form card is visible
+- **WHEN** the user fills in the email and message
+- **AND** clicks "SEND MESSAGE"
+- **THEN** the form validates the email field
+- **AND** the form validates that the message is not empty
+- **AND** the form prevents submission if validation fails
 
 ## Verification checklist
 

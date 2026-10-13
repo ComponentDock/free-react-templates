@@ -59,160 +59,175 @@
 10. **Blog Section** — Section label "INSIGHT AND TRENDS ARTICLES", heading "Lawyers news from around the world selected by us.", 2 blog cards with image, date, title, excerpt, "Read More" link.
 11. **Footer** — Dark background, 4-column: logo + description + phone/email, "Our Support" links, "Quick Link" links, "Newslatter" email subscribe form. Bottom bar: copyright + social icons.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Navbar & Navigation
 
+#### Scenario: Navbar & Navigation
+
 - Scenario: User views the top navigation bar
-  - Given the user loads LexBloom
-  - Then they see the LexBloom logo on the left
-  - And navigation links for Home, About, Services, Case Studies, Blog, Contact
-  - And a phone number button "01654.066.456" on the right
-  - And the navbar is sticky on scroll with a subtle shadow
-
+- **GIVEN** the user loads LexBloom
+- **THEN** they see the LexBloom logo on the left
+- **AND** navigation links for Home, About, Services, Case Studies, Blog, Contact
+- **AND** a phone number button "01654.066.456" on the right
+- **AND** the navbar is sticky on scroll with a subtle shadow
 - Scenario: User clicks a navigation link
-  - Given the user is on the homepage
-  - When they click a nav link
-  - Then the page scrolls to the corresponding section
-
+- **GIVEN** the user is on the homepage
+- **WHEN** they click a nav link
+- **THEN** the page scrolls to the corresponding section
 - Scenario: User hovers over Blog nav link
-  - Given the user is on the homepage
-  - When they hover over the Blog link
-  - Then a dropdown submenu appears with Blog, Blog Details, Element, Case Details
+- **GIVEN** the user is on the homepage
+- **WHEN** they hover over the Blog link
+- **THEN** a dropdown submenu appears with Blog, Blog Details, Element, Case Details
 
 ### Feature: Hero Slider
 
-- Scenario: User views the hero slider
-  - Given the user loads LexBloom
-  - Then they see a full-width hero slider with parallax background images
-  - And the text "COMMITTED TO SUCCESS" with a blue left-line accent
-  - And the headline "Dont Feel Helpless We Fight for Justice"
-  - And body text describing the legal service
-  - And a "Learn About Us" button in dark navy
+#### Scenario: Hero Slider
 
+- Scenario: User views the hero slider
+- **GIVEN** the user loads LexBloom
+- **THEN** they see a full-width hero slider with parallax background images
+- **AND** the text "COMMITTED TO SUCCESS" with a blue left-line accent
+- **AND** the headline "Dont Feel Helpless We Fight for Justice"
+- **AND** body text describing the legal service
+- **AND** a "Learn About Us" button in dark navy
 - Scenario: User interacts with slider navigation
-  - Given the hero slider is visible
-  - When the user clicks the next/prev arrow
-  - Then the slider transitions to the next/previous slide with the same layout
+- **GIVEN** the hero slider is visible
+- **WHEN** the user clicks the next/prev arrow
+- **THEN** the slider transitions to the next/previous slide with the same layout
 
 ### Feature: Practice Areas (3 Cards)
 
-- Scenario: User views the practice areas section
-  - Given the user scrolls to the practice areas
-  - Then they see the section label "OUR PRACTICING AREA"
-  - And the heading "Area Of Practice That Can Help You To Win"
-  - And 3 bordered cards in a row with icons (Health Law, Insurance Law, Vehicle Accident)
-  - And each card has a title, description, and "Read More >" link
+#### Scenario: Practice Areas (3 Cards)
 
+- Scenario: User views the practice areas section
+- **GIVEN** the user scrolls to the practice areas
+- **THEN** they see the section label "OUR PRACTICING AREA"
+- **AND** the heading "Area Of Practice That Can Help You To Win"
+- **AND** 3 bordered cards in a row with icons (Health Law, Insurance Law, Vehicle Accident)
+- **AND** each card has a title, description, and "Read More >" link
 - Scenario: User clicks a practice area card
-  - Given the practice areas section is visible
-  - When the user clicks a card title or "Read More" link
-  - Then they navigate to the services page (or placeholder)
+- **GIVEN** the practice areas section is visible
+- **WHEN** the user clicks a card title or "Read More" link
+- **THEN** they navigate to the services page (or placeholder)
 
 ### Feature: About Section
 
+#### Scenario: About Section
+
 - Scenario: User views the about section
-  - Given the user scrolls to the about section
-  - Then they see a split layout with an image on the left
-  - And section label "ABOUT OUR LAW AGENCY" on the right
-  - And heading "We are commited for better service"
-  - And two paragraphs of description
-  - And a "Learn About Us" button
+- **GIVEN** the user scrolls to the about section
+- **THEN** they see a split layout with an image on the left
+- **AND** section label "ABOUT OUR LAW AGENCY" on the right
+- **AND** heading "We are commited for better service"
+- **AND** two paragraphs of description
+- **AND** a "Learn About Us" button
 
 ### Feature: Contact Form
 
+#### Scenario: Contact Form
+
 - Scenario: User views the contact form
-  - Given the user scrolls to the contact form section
-  - Then they see a dark pattern background
-  - And section label "FILL UP TO GET A QOTE"
-  - And heading "World's Leading Law Consultency Agency!"
-  - And form fields for Name, Phone, Service (dropdown), Email, Message
-  - And a "Submit Now" submit button
-
+- **GIVEN** the user scrolls to the contact form section
+- **THEN** they see a dark pattern background
+- **AND** section label "FILL UP TO GET A QOTE"
+- **AND** heading "World's Leading Law Consultency Agency!"
+- **AND** form fields for Name, Phone, Service (dropdown), Email, Message
+- **AND** a "Submit Now" submit button
 - Scenario: User submits the contact form
-  - Given the user fills in all required fields
-  - When they click "Submit Now"
-  - Then the form validates and shows a success or error message
-
+- **GIVEN** the user fills in all required fields
+- **WHEN** they click "Submit Now"
+- **THEN** the form validates and shows a success or error message
 - Scenario: User submits the contact form with empty required fields
-  - Given the user leaves required fields empty
-  - When they click "Submit Now"
-  - Then the form shows validation errors for missing fields
+- **GIVEN** the user leaves required fields empty
+- **WHEN** they click "Submit Now"
+- **THEN** the form shows validation errors for missing fields
 
 ### Feature: Case Studies / Services (Tabbed)
 
-- Scenario: User views the case studies section
-  - Given the user scrolls to the case studies section
-  - Then they see section label "OUR RECENT WORK"
-  - And heading "Reliable, Effective & Wining Law For Customers"
-  - And tabbed navigation with tabs: Accident Law, Health Law, Insurance Law
-  - And a 2x2 grid of image cards with captions under the active tab
+#### Scenario: Case Studies / Services (Tabbed)
 
+- Scenario: User views the case studies section
+- **GIVEN** the user scrolls to the case studies section
+- **THEN** they see section label "OUR RECENT WORK"
+- **AND** heading "Reliable, Effective & Wining Law For Customers"
+- **AND** tabbed navigation with tabs: Accident Law, Health Law, Insurance Law
+- **AND** a 2x2 grid of image cards with captions under the active tab
 - Scenario: User switches between tabs
-  - Given the case studies section is visible
-  - When the user clicks a different tab
-  - Then the content grid updates to show cards for that tab
+- **GIVEN** the case studies section is visible
+- **WHEN** the user clicks a different tab
+- **THEN** the content grid updates to show cards for that tab
 
 ### Feature: CTA Banner
 
+#### Scenario: CTA Banner
+
 - Scenario: User views the CTA banner
-  - Given the user scrolls to the CTA banner
-  - Then they see a full-width dark section
-  - And heading "Are you Searching For a First-Class Consultant?"
-  - And a "Contact Now" button (black/dark style)
+- **GIVEN** the user scrolls to the CTA banner
+- **THEN** they see a full-width dark section
+- **AND** heading "Are you Searching For a First-Class Consultant?"
+- **AND** a "Contact Now" button (black/dark style)
 
 ### Feature: Team Section
 
+#### Scenario: Team Section
+
 - Scenario: User views the team section
-  - Given the user scrolls to the team section
-  - Then they see section label "OUR LAWYERS"
-  - And heading "Meet Our Dedicated Team Members."
-  - And 3 team member cards with photo, name, and role
-  - And members are: Ethan Welch (Chief Lawyer), Trevor Stanley (Junior Lawyer), Allen Guzman (Senior Lawyer)
+- **GIVEN** the user scrolls to the team section
+- **THEN** they see section label "OUR LAWYERS"
+- **AND** heading "Meet Our Dedicated Team Members."
+- **AND** 3 team member cards with photo, name, and role
+- **AND** members are: Ethan Welch (Chief Lawyer), Trevor Stanley (Junior Lawyer), Allen Guzman (Senior Lawyer)
 
 ### Feature: Testimonials
 
-- Scenario: User views the testimonials section
-  - Given the user scrolls to the testimonials
-  - Then they see a dark background section
-  - And a carousel with testimonial slides
-  - And each slide shows a quotation mark icon, quote text, founder photo, name, and role
+#### Scenario: Testimonials
 
+- Scenario: User views the testimonials section
+- **GIVEN** the user scrolls to the testimonials
+- **THEN** they see a dark background section
+- **AND** a carousel with testimonial slides
+- **AND** each slide shows a quotation mark icon, quote text, founder photo, name, and role
 - Scenario: User interacts with testimonial carousel
-  - Given the testimonials carousel is visible
-  - When the carousel auto-plays or user navigates
-  - Then the slides transition smoothly
+- **GIVEN** the testimonials carousel is visible
+- **WHEN** the carousel auto-plays or user navigates
+- **THEN** the slides transition smoothly
 
 ### Feature: Blog Section
 
+#### Scenario: Blog Section
+
 - Scenario: User views the blog section
-  - Given the user scrolls to the blog section
-  - Then they see section label "INSIGHT AND TRENDS ARTICLES"
-  - And heading "Lawyers news from around the world selected by us."
-  - And 2 blog cards with image, date, title, excerpt, and "Read More" link
+- **GIVEN** the user scrolls to the blog section
+- **THEN** they see section label "INSIGHT AND TRENDS ARTICLES"
+- **AND** heading "Lawyers news from around the world selected by us."
+- **AND** 2 blog cards with image, date, title, excerpt, and "Read More" link
 
 ### Feature: Footer
 
-- Scenario: User views the footer
-  - Given the user scrolls to the footer
-  - Then they see a dark background with 4 columns
-  - And logo + description + phone/email in the first column
-  - And "Our Support" links in the second column
-  - And "Quick Link" links in the third column
-  - And "Newslatter" email subscribe form in the fourth column
-  - And a bottom bar with copyright text and social icons
+#### Scenario: Footer
 
+- Scenario: User views the footer
+- **GIVEN** the user scrolls to the footer
+- **THEN** they see a dark background with 4 columns
+- **AND** logo + description + phone/email in the first column
+- **AND** "Our Support" links in the second column
+- **AND** "Quick Link" links in the third column
+- **AND** "Newslatter" email subscribe form in the fourth column
+- **AND** a bottom bar with copyright text and social icons
 - Scenario: User subscribes to the newsletter
-  - Given the footer is visible
-  - When the user enters an email and clicks Send
-  - Then the newsletter form submits
+- **GIVEN** the footer is visible
+- **WHEN** the user enters an email and clicks Send
+- **THEN** the newsletter form submits
 
 ### Feature: Scroll-to-Top
 
+#### Scenario: Scroll-to-Top
+
 - Scenario: User clicks scroll-to-top button
-  - Given the user has scrolled down the page
-  - When they click the circular blue scroll-to-top button
-  - Then the page scrolls back to the top
+- **GIVEN** the user has scrolled down the page
+- **WHEN** they click the circular blue scroll-to-top button
+- **THEN** the page scrolls back to the top
 
 ## Verification Checklist
 

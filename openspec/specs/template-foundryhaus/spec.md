@@ -42,108 +42,134 @@ Recreation of ColorLib "Staging" template as a React 19 + Vite + Tailwind 4 + Ty
 - **Blog/Latest:** 3-column cards with shadow, image top, text below (category span + h4 title + "Read more" link). "View All" button aligned right.
 - **Footer:** Image background, dark overlay. Top row: "Ready To Work With Us?" heading + newsletter form (input + #dfa667 submit button). Below: 4-column layout (about/logo/address/social, Company links, Services links, etc.).
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: FoundryHaus template behaviour
+
 Feature: FoundryHaus — Architecture/Design Studio Template
 
-  Background:
-    Given the user opens the FoundryHaus homepage
+Background:
+- **GIVEN** the user opens the FoundryHaus homepage
 
-  # --- Header ---
-  Scenario: Header displays logo, navigation, and contact widget
-    Then a logo is visible in the header left
-    And the navigation contains "Home", "Projects", "About", "Blog", "Contact"
-    And a phone contact widget is visible on the right
-    And the header overlays the hero section (absolute positioning)
+**--- Header ---**
 
-  Scenario: Mobile hamburger menu opens off-canvas panel
-    Given the viewport is mobile width
-    When the user clicks the hamburger icon
-    Then an off-canvas menu slides in from the right
-    And it contains the logo, navigation links, and phone number
+#### Scenario: Header displays logo, navigation, and contact widget
 
-  # --- Hero ---
-  Scenario: Hero section shows a full-width image slider
-    Then a full-width hero image is displayed
-    And a heading "Quality is not only our standard." is visible
-    And a "See Project" primary button is present
-    And a "Discover more" secondary link is present
-    And social media icon links (Facebook, Twitter, Instagram, LinkedIn) are shown
+- **THEN** a logo is visible in the header left
+- **AND** the navigation contains "Home", "Projects", "About", "Blog", "Contact"
+- **AND** a phone contact widget is visible on the right
+- **AND** the header overlays the hero section (absolute positioning)
 
-  # --- About ---
-  Scenario: About section displays text and image side by side
-    Then a section label "who are we" is visible
-    And a heading "We propose and discuss design rules" is shown
-    And two paragraphs describe the company
-    And a "Learn More" button is present
-    And an about image is displayed on the right column
+#### Scenario: Mobile hamburger menu opens off-canvas panel
 
-  # --- Projects ---
-  Scenario: Projects section shows a slider of project cards
-    Then a section label "Our works" is visible
-    And a heading "Latest projects" is shown
-    And at least 4 project cards are visible in a horizontal slider
-    And each card shows a category label and project title on hover
+- **GIVEN** the viewport is mobile width
+- **WHEN** the user clicks the hamburger icon
+- **THEN** an off-canvas menu slides in from the right
+- **AND** it contains the logo, navigation links, and phone number
 
-  # --- Services ---
-  Scenario: Services section displays 4 service items
-    Then a section label "Our specialization" is visible
-    And a heading "What we do" is shown
-    And 4 service cards are displayed in a grid
-    And each card has an icon, title, and description paragraph
+**--- Hero ---**
 
-  Scenario: Counter stats appear below services
-    Then 4 counter items are shown: "85 Projects Completed", "127 Happy Clients", "36 Awards Received", "74 Cups Of Coffee"
-    And the counters are on a distinct background area
+#### Scenario: Hero section shows a full-width image slider
 
-  # --- Testimonials ---
-  Scenario: Testimonials section shows a carousel of quotes
-    Then a section label "Testimonials" is visible
-    And a heading "What your clients say" is shown
-    And at least 3 testimonial quote items exist in a carousel
-    And below: a client avatar carousel with circular photos, names, and titles
+- **THEN** a full-width hero image is displayed
+- **AND** a heading "Quality is not only our standard." is visible
+- **AND** a "See Project" primary button is present
+- **AND** a "Discover more" secondary link is present
+- **AND** social media icon links (Facebook, Twitter, Instagram, LinkedIn) are shown
 
-  # --- Logo Carousel ---
-  Scenario: Logo carousel shows partner logos
-    Then a row of partner/client logos is displayed in a carousel
-    And the logos appear in a muted/grayscale style
+**--- About ---**
 
-  # --- Team ---
-  Scenario: Team section shows 3 team member cards
-    Then a section label "Our Team" is visible
-    And a heading "Meet our team" is shown
-    And 3 team cards are displayed, each with a background photo, name, role, bio, and social links
-    And a "View All" button is present
+#### Scenario: About section displays text and image side by side
 
-  # --- Call to Action ---
-  Scenario: CTA section has a background image with centered text
-    Then a section label "Why choose us?" is visible
-    And a heading about delivering outstanding results is shown
-    And a "Contact Us" primary button is present
+- **THEN** a section label "who are we" is visible
+- **AND** a heading "We propose and discuss design rules" is shown
+- **AND** two paragraphs describe the company
+- **AND** a "Learn More" button is present
+- **AND** an about image is displayed on the right column
 
-  # --- Blog ---
-  Scenario: Blog section shows 3 latest posts
-    Then a section label "Latest News" is visible
-    And a heading "From our blog" is shown
-    And 3 blog cards are displayed with an image, category, title, and "Read more" link
-    And a "View All" button is aligned to the right
+**--- Projects ---**
 
-  # --- Footer ---
-  Scenario: Footer has newsletter form and link columns
-    Then a heading "Ready To Work With Us?" is visible
-    And a newsletter form with email input and submit button is present
-    And 4 columns of footer content are shown: about/address, Company links, Services links, additional links
-    And social media icon links are present
-    And a "Component Dock" attribution link is in the footer
+#### Scenario: Projects section shows a slider of project cards
 
-  # --- Accessibility ---
-  Scenario: All interactive elements are keyboard accessible
-    Given the user navigates with keyboard only
-    When they press Tab through the page
-    Then all navigation links, buttons, and form inputs receive visible focus
-    And aria-labels are present on icon-only buttons
-```
+- **THEN** a section label "Our works" is visible
+- **AND** a heading "Latest projects" is shown
+- **AND** at least 4 project cards are visible in a horizontal slider
+- **AND** each card shows a category label and project title on hover
+
+**--- Services ---**
+
+#### Scenario: Services section displays 4 service items
+
+- **THEN** a section label "Our specialization" is visible
+- **AND** a heading "What we do" is shown
+- **AND** 4 service cards are displayed in a grid
+- **AND** each card has an icon, title, and description paragraph
+
+#### Scenario: Counter stats appear below services
+
+- **THEN** 4 counter items are shown: "85 Projects Completed", "127 Happy Clients", "36 Awards Received", "74 Cups Of Coffee"
+- **AND** the counters are on a distinct background area
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section shows a carousel of quotes
+
+- **THEN** a section label "Testimonials" is visible
+- **AND** a heading "What your clients say" is shown
+- **AND** at least 3 testimonial quote items exist in a carousel
+- **AND** below: a client avatar carousel with circular photos, names, and titles
+
+**--- Logo Carousel ---**
+
+#### Scenario: Logo carousel shows partner logos
+
+- **THEN** a row of partner/client logos is displayed in a carousel
+- **AND** the logos appear in a muted/grayscale style
+
+**--- Team ---**
+
+#### Scenario: Team section shows 3 team member cards
+
+- **THEN** a section label "Our Team" is visible
+- **AND** a heading "Meet our team" is shown
+- **AND** 3 team cards are displayed, each with a background photo, name, role, bio, and social links
+- **AND** a "View All" button is present
+
+**--- Call to Action ---**
+
+#### Scenario: CTA section has a background image with centered text
+
+- **THEN** a section label "Why choose us?" is visible
+- **AND** a heading about delivering outstanding results is shown
+- **AND** a "Contact Us" primary button is present
+
+**--- Blog ---**
+
+#### Scenario: Blog section shows 3 latest posts
+
+- **THEN** a section label "Latest News" is visible
+- **AND** a heading "From our blog" is shown
+- **AND** 3 blog cards are displayed with an image, category, title, and "Read more" link
+- **AND** a "View All" button is aligned to the right
+
+**--- Footer ---**
+
+#### Scenario: Footer has newsletter form and link columns
+
+- **THEN** a heading "Ready To Work With Us?" is visible
+- **AND** a newsletter form with email input and submit button is present
+- **AND** 4 columns of footer content are shown: about/address, Company links, Services links, additional links
+- **AND** social media icon links are present
+- **AND** a "Component Dock" attribution link is in the footer
+
+**--- Accessibility ---**
+
+#### Scenario: All interactive elements are keyboard accessible
+
+- **GIVEN** the user navigates with keyboard only
+- **WHEN** they press Tab through the page
+- **THEN** all navigation links, buttons, and form inputs receive visible focus
+- **AND** aria-labels are present on icon-only buttons
 
 ## Verification checklist
 

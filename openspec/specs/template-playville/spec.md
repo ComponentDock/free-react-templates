@@ -43,133 +43,136 @@ Recreation of the ColorLib **Kiddos** template as a single-page React app.
 12. **GallerySection** — image grid with hover zoom icon overlay
 13. **Footer** — dark bg (#232323), 5 widget columns (About/logo, Categories, Recent Posts, Newsletter subscribe, Contact info), social icons, bottom copyright
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: TopInfoBar
-```gherkin
-Scenario: Contact info bar renders
-  Given the page loads
-  Then I see an address, email, and phone number in a horizontal bar
-  And the bar has a blue (primary) background
-```
+
+#### Scenario: Contact info bar renders
+
+- **GIVEN** the page loads
+- **THEN** I see an address, email, and phone number in a horizontal bar
+- **AND** the bar has a blue (primary) background
 
 ### Feature: Navbar
-```gherkin
-Scenario: Navigation links present
-  Given the page loads
-  Then I see a navbar with brand "Playville"
-  And nav links: Home, About, Teacher, Courses, Pricing, Blog, Contact
 
-Scenario: Navbar becomes sticky on scroll
-  Given I scroll past the hero
-  Then the navbar background changes to white
-  And the navbar sticks to the top of the viewport
-```
+#### Scenario: Navigation links present
+
+- **GIVEN** the page loads
+- **THEN** I see a navbar with brand "Playville"
+- **AND** nav links: Home, About, Teacher, Courses, Pricing, Blog, Contact
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** I scroll past the hero
+- **THEN** the navbar background changes to white
+- **AND** the navbar sticks to the top of the viewport
 
 ### Feature: HeroSlider
-```gherkin
-Scenario: Hero slider shows slides
-  Given the page loads
-  Then I see a full-width hero section with a background image
-  And a centered headline and a CTA button
 
-Scenario: Slides auto-advance
-  Given the hero slider is visible
-  When 5 seconds pass
-  Then the slider transitions to the next slide
-```
+#### Scenario: Hero slider shows slides
+
+- **GIVEN** the page loads
+- **THEN** I see a full-width hero section with a background image
+- **AND** a centered headline and a CTA button
+
+#### Scenario: Slides auto-advance
+
+- **GIVEN** the hero slider is visible
+- **WHEN** 5 seconds pass
+- **THEN** the slider transitions to the next slide
 
 ### Feature: ServicesStrip
-```gherkin
-Scenario: Four service columns render
-  Given the page loads
-  Then I see 4 service columns in a row
-  And each column has a circular icon, heading, and description
-  And each column has a different background color
-```
+
+#### Scenario: Four service columns render
+
+- **GIVEN** the page loads
+- **THEN** I see 4 service columns in a row
+- **AND** each column has a circular icon, heading, and description
+- **AND** each column has a different background color
 
 ### Feature: WelcomeAbout
-```gherkin
-Scenario: Welcome section renders
-  Given the page loads
-  Then I see a "Welcome to Playville" heading
-  And a "Read More" button
-  And a "What We Offer" section with 4 feature items in a 2-column grid
-```
+
+#### Scenario: Welcome section renders
+
+- **GIVEN** the page loads
+- **THEN** I see a "Welcome to Playville" heading
+- **AND** a "Read More" button
+- **AND** a "What We Offer" section with 4 feature items in a 2-column grid
 
 ### Feature: IntroBanner
-```gherkin
-Scenario: Intro parallax banner renders
-  Given the page loads
-  Then I see a full-width parallax section with overlay
-  And a heading and description text
-```
+
+#### Scenario: Intro parallax banner renders
+
+- **GIVEN** the page loads
+- **THEN** I see a full-width parallax section with overlay
+- **AND** a heading and description text
 
 ### Feature: StaffSection
-```gherkin
-Scenario: Staff cards render
-  Given the page loads
-  Then I see a "Our Teacher" heading
-  And teacher cards with image, name, and position
-  And hovering a card reveals social media icons
 
-Scenario: Staff hover effect
-  Given a staff card is visible
-  When I hover over it
-  Then the social icons overlay appears
-  And the card image shifts slightly
-```
+#### Scenario: Staff cards render
+
+- **GIVEN** the page loads
+- **THEN** I see a "Our Teacher" heading
+- **AND** teacher cards with image, name, and position
+- **AND** hovering a card reveals social media icons
+
+#### Scenario: Staff hover effect
+
+- **GIVEN** a staff card is visible
+- **WHEN** I hover over it
+- **THEN** the social icons overlay appears
+- **AND** the card image shifts slightly
 
 ### Feature: CounterSection
-```gherkin
-Scenario: Stats counters render
-  Given the page loads
-  Then I see 4 stat items with a large number and label
-  And each number animates on scroll into view
-```
+
+#### Scenario: Stats counters render
+
+- **GIVEN** the page loads
+- **THEN** I see 4 stat items with a large number and label
+- **AND** each number animates on scroll into view
 
 ### Feature: Testimonials
-```gherkin
-Scenario: Testimonials carousel renders
-  Given the page loads
-  Then I see a testimonials section on light background
-  And testimonial cards with user image, quote, name, and position
-  And the carousel auto-advances
-```
+
+#### Scenario: Testimonials carousel renders
+
+- **GIVEN** the page loads
+- **THEN** I see a testimonials section on light background
+- **AND** testimonial cards with user image, quote, name, and position
+- **AND** the carousel auto-advances
 
 ### Feature: AppointmentForm
-```gherkin
-Scenario: Appointment form renders
-  Given the page loads
-  Then I see a "Make an Appointment" heading
-  And form fields: name, email, date, time, message
-  And a submit button
-```
+
+#### Scenario: Appointment form renders
+
+- **GIVEN** the page loads
+- **THEN** I see a "Make an Appointment" heading
+- **AND** form fields: name, email, date, time, message
+- **AND** a submit button
 
 ### Feature: BlogSection
-```gherkin
-Scenario: Blog entries render
-  Given the page loads
-  Then I see a "Latest News" heading
-  And blog entry cards with date badge, image, title, and meta info
-```
+
+#### Scenario: Blog entries render
+
+- **GIVEN** the page loads
+- **THEN** I see a "Latest News" heading
+- **AND** blog entry cards with date badge, image, title, and meta info
 
 ### Feature: GallerySection
-```gherkin
-Scenario: Gallery grid renders
-  Given the page loads
-  Then I see an image gallery grid
-  And hovering an image shows a zoom icon overlay
-```
+
+#### Scenario: Gallery grid renders
+
+- **GIVEN** the page loads
+- **THEN** I see an image gallery grid
+- **AND** hovering an image shows a zoom icon overlay
 
 ### Feature: Footer
-```gherkin
-Scenario: Footer renders
-  Given the page loads
-  Then I see a dark footer with 5 widget columns
-  And a "Component Dock" attribution link
-  And social media icon links
-```
+
+#### Scenario: Footer renders
+
+- **GIVEN** the page loads
+- **THEN** I see a dark footer with 5 widget columns
+- **AND** a "Component Dock" attribution link
+- **AND** social media icon links
 
 ## Verification checklist
 

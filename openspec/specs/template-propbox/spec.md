@@ -49,202 +49,201 @@ Extracted from the ColorLib preview screenshot and page HTML/CSS:
 | 11  | Newsletter                    | Dark navy bg                      | Subscribe form with email input + CTA button                     |
 | 12  | Footer                        | Dark navy (`#1B2A4A`)             | Company info, nav links, social icons, copyright                 |
 
-## Gherkin scenarios
+## Requirements
 
 ### Top bar
 
-```gherkin
 Feature: Top information bar
 
-  Scenario: Displays contact information
-    Given the top bar is rendered
-    Then a welcome message is visible
-    And an email address is shown with an icon
-    And a phone number is shown with an icon
-    And social media icons are displayed (LinkedIn, Facebook, Google+)
+#### Scenario: Displays contact information
 
-  Scenario: Top bar has dark navy background
-    Given the top bar is rendered
-    Then the background color is dark navy (#1B2A4A)
-    And text is white or light colored
-```
+- **GIVEN** the top bar is rendered
+- **THEN** a welcome message is visible
+- **AND** an email address is shown with an icon
+- **AND** a phone number is shown with an icon
+- **AND** social media icons are displayed (LinkedIn, Facebook, Google+)
+
+#### Scenario: Top bar has dark navy background
+
+- **GIVEN** the top bar is rendered
+- **THEN** the background color is dark navy (#1B2A4A)
+- **AND** text is white or light colored
 
 ### Navbar
 
-```gherkin
 Feature: Navigation bar
 
-  Scenario: Logo and navigation links are visible
-    Given the navbar is rendered
-    Then the logo text "Real Estate." is displayed on the left
-    And navigation links are visible: Home, Pages, Property, Blog, Contact
-    And a search icon is shown
-    And an "Add Property" button is visible
+#### Scenario: Logo and navigation links are visible
 
-  Scenario: Add Property button is orange
-    Given the navbar is rendered
-    Then the "Add Property" button has an orange background (#F77F00)
-    And the button text is white
-    And the button has rounded corners
+- **GIVEN** the navbar is rendered
+- **THEN** the logo text "Real Estate." is displayed on the left
+- **AND** navigation links are visible: Home, Pages, Property, Blog, Contact
+- **AND** a search icon is shown
+- **AND** an "Add Property" button is visible
 
-  Scenario: Navigation is sticky on scroll
-    Given the user scrolls down the page
-    Then the navbar remains fixed at the top of the viewport
-```
+#### Scenario: Add Property button is orange
+
+- **GIVEN** the navbar is rendered
+- **THEN** the "Add Property" button has an orange background (#F77F00)
+- **AND** the button text is white
+- **AND** the button has rounded corners
+
+#### Scenario: Navigation is sticky on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar remains fixed at the top of the viewport
 
 ### Hero section
 
-```gherkin
 Feature: Hero section with property search
 
-  Scenario: Hero displays heading and subtitle
-    Given the hero section is loaded
-    Then a large heading "Find Your Best Property" is visible in white
-    And a subtitle text is displayed below the heading
+#### Scenario: Hero displays heading and subtitle
 
-  Scenario: Hero has background image with dark overlay
-    Given the hero section is loaded
-    Then a full-width background image of a house is shown
-    And a dark navy overlay is applied over the image
+- **GIVEN** the hero section is loaded
+- **THEN** a large heading "Find Your Best Property" is visible in white
+- **AND** a subtitle text is displayed below the heading
 
-  Scenario: Search form with filter dropdowns
-    Given the hero section is loaded
-    Then a search form is visible with fields:
-      | Field         | Type     |
-      | Location      | Dropdown |
-      | Property type | Dropdown |
-      | Price ($)     | Slider   |
-      | Bed Room      | Dropdown |
-      | Bath Room     | Dropdown |
-    And an orange search button is shown at the end of the form
-```
+#### Scenario: Hero has background image with dark overlay
+
+- **GIVEN** the hero section is loaded
+- **THEN** a full-width background image of a house is shown
+- **AND** a dark navy overlay is applied over the image
+
+#### Scenario: Search form with filter dropdowns
+
+- **GIVEN** the hero section is loaded
+- **THEN** a search form is visible with fields:
+| Field         | Type     |
+| Location      | Dropdown |
+| Property type | Dropdown |
+| Price ($)     | Slider   |
+| Bed Room      | Dropdown |
+| Bath Room     | Dropdown |
+- **AND** an orange search button is shown at the end of the form
 
 ### Featured properties
 
-```gherkin
 Feature: Featured property listings
 
-  Scenario: Property cards are displayed in a grid
-    Given the featured properties section is loaded
-    Then property cards are shown in a responsive grid
-    And each card has a property image
-    And each card shows the price
-    And each card shows the address/location
-    And each card shows bed, bath, and area counts
+#### Scenario: Property cards are displayed in a grid
 
-  Scenario: Property cards have hover effect
-    Given a property card is displayed
-    When the user hovers over the card
-    Then a subtle hover effect is applied (shadow or scale)
-```
+- **GIVEN** the featured properties section is loaded
+- **THEN** property cards are shown in a responsive grid
+- **AND** each card has a property image
+- **AND** each card shows the price
+- **AND** each card shows the address/location
+- **AND** each card shows bed, bath, and area counts
+
+#### Scenario: Property cards have hover effect
+
+- **GIVEN** a property card is displayed
+- **WHEN** the user hovers over the card
+- **THEN** a subtle hover effect is applied (shadow or scale)
 
 ### About section
 
-```gherkin
 Feature: About / company section
 
-  Scenario: Company information is displayed
-    Given the about section is loaded
-    Then a section heading is visible
-    And descriptive text about the company is shown
-    And an image or illustration accompanies the text
+#### Scenario: Company information is displayed
 
-  Scenario: Alternating background
-    Given the about section is loaded
-    Then the section has a light gray background (#F8F9FA)
-```
+- **GIVEN** the about section is loaded
+- **THEN** a section heading is visible
+- **AND** descriptive text about the company is shown
+- **AND** an image or illustration accompanies the text
+
+#### Scenario: Alternating background
+
+- **GIVEN** the about section is loaded
+- **THEN** the section has a light gray background (#F8F9FA)
 
 ### Categories
 
-```gherkin
 Feature: Property categories
 
-  Scenario: Category cards are shown
-    Given the categories section is loaded
-    Then category cards are displayed with icons
-    And each card shows the category name and property count
-    And categories include types like House, Apartment, Villa, Office
-```
+#### Scenario: Category cards are shown
+
+- **GIVEN** the categories section is loaded
+- **THEN** category cards are displayed with icons
+- **AND** each card shows the category name and property count
+- **AND** categories include types like House, Apartment, Villa, Office
 
 ### Testimonials
 
-```gherkin
 Feature: Client testimonials
 
-  Scenario: Testimonial slider is displayed
-    Given the testimonials section is loaded
-    Then testimonial cards are shown in a slider/carousel
-    And each card has a client photo
-    And each card shows the client name and role
-    And each card has testimonial text
+#### Scenario: Testimonial slider is displayed
 
-  Scenario: Slider supports navigation
-    Given the testimonials slider is loaded
-    Then navigation arrows or dots are visible
-    And clicking arrows advances to the next/previous testimonial
-```
+- **GIVEN** the testimonials section is loaded
+- **THEN** testimonial cards are shown in a slider/carousel
+- **AND** each card has a client photo
+- **AND** each card shows the client name and role
+- **AND** each card has testimonial text
+
+#### Scenario: Slider supports navigation
+
+- **GIVEN** the testimonials slider is loaded
+- **THEN** navigation arrows or dots are visible
+- **AND** clicking arrows advances to the next/previous testimonial
 
 ### Team / agents
 
-```gherkin
 Feature: Agent team section
 
-  Scenario: Agent cards are displayed
-    Given the team section is loaded
-    Then agent cards are shown in a grid
-    And each card has an agent photo
-    And each card shows the agent name and role
-    And social media links are shown on each card
-```
+#### Scenario: Agent cards are displayed
+
+- **GIVEN** the team section is loaded
+- **THEN** agent cards are shown in a grid
+- **AND** each card has an agent photo
+- **AND** each card shows the agent name and role
+- **AND** social media links are shown on each card
 
 ### Blog
 
-```gherkin
 Feature: Blog / news section
 
-  Scenario: Blog post cards are displayed
-    Given the blog section is loaded
-    Then blog post cards are shown in a grid
-    And each card has a post image
-    And each card shows the publication date
-    And each card shows the post title and excerpt
-    And a "Read More" link is shown on each card
-```
+#### Scenario: Blog post cards are displayed
+
+- **GIVEN** the blog section is loaded
+- **THEN** blog post cards are shown in a grid
+- **AND** each card has a post image
+- **AND** each card shows the publication date
+- **AND** each card shows the post title and excerpt
+- **AND** a "Read More" link is shown on each card
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter subscription
 
-  Scenario: Newsletter form is visible
-    Given the newsletter section is loaded
-    Then a heading invites users to subscribe
-    And an email input field is shown
-    And a subscription button is displayed
+#### Scenario: Newsletter form is visible
 
-  Scenario: Newsletter has dark background
-    Given the newsletter section is loaded
-    Then the background is dark navy (#1B2A4A)
-    And text and form elements are light/white
-```
+- **GIVEN** the newsletter section is loaded
+- **THEN** a heading invites users to subscribe
+- **AND** an email input field is shown
+- **AND** a subscription button is displayed
+
+#### Scenario: Newsletter has dark background
+
+- **GIVEN** the newsletter section is loaded
+- **THEN** the background is dark navy (#1B2A4A)
+- **AND** text and form elements are light/white
 
 ### Footer
 
-```gherkin
 Feature: Site footer
 
-  Scenario: Footer displays company info and links
-    Given the footer is rendered
-    Then company information is shown
-    And navigation links are organized in columns
-    And social media icons are displayed
-    And a copyright notice is shown at the bottom
+#### Scenario: Footer displays company info and links
 
-  Scenario: Footer links to Component Dock
-    Given the footer is rendered
-    Then a link to "https://www.componentdock.com/" is present
-    And it is branded as "Component Dock"
-```
+- **GIVEN** the footer is rendered
+- **THEN** company information is shown
+- **AND** navigation links are organized in columns
+- **AND** social media icons are displayed
+- **AND** a copyright notice is shown at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is rendered
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** it is branded as "Component Dock"
 
 ## Verification checklist
 

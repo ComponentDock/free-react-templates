@@ -65,90 +65,103 @@ Extracted from screenshot analysis (preview CSS unavailable — 404):
 3. **Step 2** — Additional profile fields (address, bio, etc.)
 4. **Step 3** — Review / confirmation / profile picture upload
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Multi-step user profile wizard
 
   Background:
-    Given the user navigates to the Registease page
-    And a full-page background image is displayed
-    And a centered white card with drop shadow is visible
+- **GIVEN** the user navigates to the Registease page
+- **AND** a full-page background image is displayed
+- **AND** a centered white card with drop shadow is visible
 
-  Scenario: Initial page load shows Step 1
-    Given the wizard has loaded
-    Then the header reads "USER PROFILE"
-    And the step indicator shows "1 / 3"
-    And 6 form fields are visible in a 2-column grid
-    And a "NEXT" button is visible at the bottom-right
+#### Scenario: Initial page load shows Step 1
 
-  Scenario: Step 1 form fields have correct labels and icons
-    Then the "Full Name" field has a person icon
-    And the "Education Level" field has a pencil icon
-    And the "Email ID" field has an envelope icon
-    And the "Phone Number" field has a phone icon
-    And the "Specialization" field has a graduation cap icon
-    And the "Date of Birth" field has a calendar icon
+- **GIVEN** the wizard has loaded
+- **THEN** the header reads "USER PROFILE"
+- **AND** the step indicator shows "1 / 3"
+- **AND** 6 form fields are visible in a 2-column grid
+- **AND** a "NEXT" button is visible at the bottom-right
 
-  Scenario: Instructional text displayed on Step 1
-    Given the wizard is on Step 1
-    Then italic instruction text is visible below the fields
-    And the text reads "You must fill all fields, to be able to continue"
+#### Scenario: Step 1 form fields have correct labels and icons
 
-  Scenario: Advance to Step 2
-    Given the user fills all Step 1 fields
-    When the user clicks the "NEXT" button
-    Then the step indicator updates to "2 / 3"
-    And new form fields for Step 2 are displayed
-    And a "PREV" button appears alongside "NEXT"
+- **THEN** the "Full Name" field has a person icon
+- **AND** the "Education Level" field has a pencil icon
+- **AND** the "Email ID" field has an envelope icon
+- **AND** the "Phone Number" field has a phone icon
+- **AND** the "Specialization" field has a graduation cap icon
+- **AND** the "Date of Birth" field has a calendar icon
 
-  Scenario: Navigate back to Step 1
-    Given the wizard is on Step 2
-    When the user clicks the "PREV" button
-    Then the step indicator returns to "1 / 3"
-    And the Step 1 form fields are displayed with previous values preserved
+#### Scenario: Instructional text displayed on Step 1
 
-  Scenario: Advance to Step 3
-    Given the wizard is on Step 2
-    And all Step 2 fields are filled
-    When the user clicks the "NEXT" button
-    Then the step indicator shows "3 / 3"
-    And a review or confirmation section is displayed
-    And a "SUBMIT" button replaces "NEXT"
+- **GIVEN** the wizard is on Step 1
+- **THEN** italic instruction text is visible below the fields
+- **AND** the text reads "You must fill all fields, to be able to continue"
 
-  Scenario: Submit completes the wizard
-    Given the wizard is on Step 3
-    When the user clicks the "SUBMIT" button
-    Then a success confirmation is displayed
+#### Scenario: Advance to Step 2
 
-  Scenario: Validation prevents advancing with empty fields
-    Given the wizard is on Step 1
-    And some required fields are empty
-    When the user clicks the "NEXT" button
-    Then the wizard remains on Step 1
-    And validation error messages appear on empty required fields
+- **GIVEN** the user fills all Step 1 fields
+- **WHEN** the user clicks the "NEXT" button
+- **THEN** the step indicator updates to "2 / 3"
+- **AND** new form fields for Step 2 are displayed
+- **AND** a "PREV" button appears alongside "NEXT"
 
-  Scenario: Step indicator is clickable for direct navigation
-    Given the wizard is on Step 2
-    When the user clicks step indicator "1"
-    Then the wizard navigates to Step 1
+#### Scenario: Navigate back to Step 1
 
-  Scenario: Form fields have appropriate input types
-    Then "Email ID" accepts email format
-    And "Phone Number" accepts phone format
-    And "Date of Birth" uses a date picker
+- **GIVEN** the wizard is on Step 2
+- **WHEN** the user clicks the "PREV" button
+- **THEN** the step indicator returns to "1 / 3"
+- **AND** the Step 1 form fields are displayed with previous values preserved
 
-  Scenario: Responsive layout on mobile
-    Given the viewport width is less than 768px
-    Then the form fields stack into a single column
-    And the card fits within the viewport with padding
+#### Scenario: Advance to Step 3
 
-  Scenario: Background image fallback
-    Given the background image fails to load
-    Then a solid gradient background is displayed
+- **GIVEN** the wizard is on Step 2
+- **AND** all Step 2 fields are filled
+- **WHEN** the user clicks the "NEXT" button
+- **THEN** the step indicator shows "3 / 3"
+- **AND** a review or confirmation section is displayed
+- **AND** a "SUBMIT" button replaces "NEXT"
 
-  Scenario: Component Dock footer link
-    Then the footer contains a link to "https://www.componentdock.com/"
-    And the link text includes "Component Dock"
+#### Scenario: Submit completes the wizard
+
+- **GIVEN** the wizard is on Step 3
+- **WHEN** the user clicks the "SUBMIT" button
+- **THEN** a success confirmation is displayed
+
+#### Scenario: Validation prevents advancing with empty fields
+
+- **GIVEN** the wizard is on Step 1
+- **AND** some required fields are empty
+- **WHEN** the user clicks the "NEXT" button
+- **THEN** the wizard remains on Step 1
+- **AND** validation error messages appear on empty required fields
+
+#### Scenario: Step indicator is clickable for direct navigation
+
+- **GIVEN** the wizard is on Step 2
+- **WHEN** the user clicks step indicator "1"
+- **THEN** the wizard navigates to Step 1
+
+#### Scenario: Form fields have appropriate input types
+
+- **THEN** "Email ID" accepts email format
+- **AND** "Phone Number" accepts phone format
+- **AND** "Date of Birth" uses a date picker
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the form fields stack into a single column
+- **AND** the card fits within the viewport with padding
+
+#### Scenario: Background image fallback
+
+- **GIVEN** the background image fails to load
+- **THEN** a solid gradient background is displayed
+
+#### Scenario: Component Dock footer link
+
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the link text includes "Component Dock"
 
 ## Verification checklist
 

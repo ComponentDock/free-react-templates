@@ -99,90 +99,112 @@ Buttons are rounded pills (border-radius 25px gradient CTA, 30px outlined).
       orange CTA button + "Download CV" outlined button.
     - **Footer bottom**: copyright bar (left), footer nav links (right).
 
-## Gherkin requirements
+## Requirements
 
 ### Header
-- **Scenario: Navbar renders all navigation links**
-  Given I am on the Charcoal homepage
-  Then I should see navigation links for Home, Work, Service, Blog, and Contact
-  And I should see a "Let's Talk" outlined button
 
-- **Scenario: Header is transparent and sticky on scroll**
-  Given I am on the Charcoal homepage
-  When I scroll down the page
-  Then the header should remain fixed at the top
-  And the header background should be transparent initially
+#### Scenario: Navbar renders all navigation links
+
+- **GIVEN** I am on the Charcoal homepage
+- **THEN** I should see navigation links for Home, Work, Service, Blog, and Contact
+- **AND** I should see a "Let's Talk" outlined button
+
+#### Scenario: Header is transparent and sticky on scroll
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll down the page
+- **THEN** the header should remain fixed at the top
+- **AND** the header background should be transparent initially
 
 ### Hero
-- **Scenario: Hero displays headline and employee image**
-  Given I am on the Charcoal homepage
-  Then I should see a hero headline with designer name and title
-  And I should see an employee/portrait illustration
+
+#### Scenario: Hero displays headline and employee image
+
+- **GIVEN** I am on the Charcoal homepage
+- **THEN** I should see a hero headline with designer name and title
+- **AND** I should see an employee/portrait illustration
 
 ### About Info Bar
-- **Scenario: About info bar shows contact details**
-  Given I am on the Charcoal homepage
-  Then I should see a "Design For" block with "Web & Mobile"
-  And I should see a phone number
-  And I should see an email address with an icon
+
+#### Scenario: About info bar shows contact details
+
+- **GIVEN** I am on the Charcoal homepage
+- **THEN** I should see a "Design For" block with "Web & Mobile"
+- **AND** I should see a phone number
+- **AND** I should see an email address with an icon
 
 ### Services
-- **Scenario: Services section displays 4 expertise cards**
-  Given I am on the Charcoal homepage
-  When I scroll to the Services section
-  Then I should see the heading "My Expertise"
-  And I should see 4 service cards in a 2×2 grid
-  And each card should have an icon, title, description, and link
+
+#### Scenario: Services section displays 4 expertise cards
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll to the Services section
+- **THEN** I should see the heading "My Expertise"
+- **AND** I should see 4 service cards in a 2×2 grid
+- **AND** each card should have an icon, title, description, and link
 
 ### Gallery
-- **Scenario: Gallery shows 4 portfolio items**
-  Given I am on the Charcoal homepage
-  When I scroll to the Gallery section
-  Then I should see the heading "My Works"
-  And I should see 4 gallery images in a 2-column layout
-  And I should see a "More Work" button
 
-- **Scenario: Gallery items show overlay on hover**
-  Given I hover over a gallery image
-  Then I should see a dark overlay with the project name
+#### Scenario: Gallery shows 4 portfolio items
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll to the Gallery section
+- **THEN** I should see the heading "My Works"
+- **AND** I should see 4 gallery images in a 2-column layout
+- **AND** I should see a "More Work" button
+
+#### Scenario: Gallery items show overlay on hover
+
+- **GIVEN** I hover over a gallery image
+- **THEN** I should see a dark overlay with the project name
 
 ### About Me
-- **Scenario: About Me shows text and skill bars**
-  Given I am on the Charcoal homepage
-  When I scroll to the About Me section
-  Then I should see the heading "About Me"
-  And I should see description text
-  And I should see 3 skill bars with labels and percentage values
+
+#### Scenario: About Me shows text and skill bars
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll to the About Me section
+- **THEN** I should see the heading "About Me"
+- **AND** I should see description text
+- **AND** I should see 3 skill bars with labels and percentage values
 
 ### Brand Carousel
-- **Scenario: Brand logos are displayed in a carousel**
-  Given I am on the Charcoal homepage
-  When I scroll to the brand section
-  Then I should see a horizontal row of brand logos
+
+#### Scenario: Brand logos are displayed in a carousel
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll to the brand section
+- **THEN** I should see a horizontal row of brand logos
 
 ### Testimonials
-- **Scenario: Testimonials carousel shows quotes**
-  Given I am on the Charcoal homepage
-  When I scroll to the Testimonials section
-  Then I should see the heading "Client Testimonial"
-  And I should see at least one testimonial with a quote, photo, name, and role
+
+#### Scenario: Testimonials carousel shows quotes
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll to the Testimonials section
+- **THEN** I should see the heading "Client Testimonial"
+- **AND** I should see at least one testimonial with a quote, photo, name, and role
 
 ### Blog
-- **Scenario: Blog section shows latest news cards**
-  Given I am on the Charcoal homepage
-  When I scroll to the Blog section
-  Then I should see the heading "Latest News"
-  And I should see at least 2 blog cards with images, category tags, dates, and titles
+
+#### Scenario: Blog section shows latest news cards
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll to the Blog section
+- **THEN** I should see the heading "Latest News"
+- **AND** I should see at least 2 blog cards with images, category tags, dates, and titles
 
 ### Footer
-- **Scenario: Footer displays CTA and copyright**
-  Given I am on the Charcoal homepage
-  When I scroll to the footer
-  Then I should see a "Let's Talk" CTA button and a "Download CV" button
-  And I should see social media icon links
-  And I should see a copyright line
-  And I should see footer navigation links
-  And the footer should link to Component Dock (https://www.componentdock.com/)
+
+#### Scenario: Footer displays CTA and copyright
+
+- **GIVEN** I am on the Charcoal homepage
+- **WHEN** I scroll to the footer
+- **THEN** I should see a "Let's Talk" CTA button and a "Download CV" button
+- **AND** I should see social media icon links
+- **AND** I should see a copyright line
+- **AND** I should see footer navigation links
+- **AND** the footer should link to Component Dock (https://www.componentdock.com/)
 
 ## Verification checklist
 

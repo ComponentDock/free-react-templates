@@ -29,86 +29,97 @@ Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registrat
 | Form card border-radius | `~10-12px` | Rounded corners |
 | Input border-radius | Full pill/rounded (`~20px`) | Rounded inputs |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-Step Onboarding Wizard
 
 #### Scenario: Page Load and Background
-  Given the user loads the wizard page
-  When the page renders
-  Then a full-page pastel gradient background is displayed (blue-to-pink)
-  And large semi-transparent italic bold text overlays the background reading "TELL US ABOUT YOURSELF"
-  And a centered form card with rounded corners is shown
-  And the macOS-style browser window chrome bar is at the top
+
+- **GIVEN** the user loads the wizard page
+- **WHEN** the page renders
+- **THEN** a full-page pastel gradient background is displayed (blue-to-pink)
+- **AND** large semi-transparent italic bold text overlays the background reading "TELL US ABOUT YOURSELF"
+- **AND** a centered form card with rounded corners is shown
+- **AND** the macOS-style browser window chrome bar is at the top
 
 #### Scenario: Step 1 - Profile Setup
-  Given the user is on step 1 of the wizard
-  When step 1 is displayed
-  Then an avatar upload area is shown on the left side of the card
-  And the text "CHOOSE PICTURE" with a camera icon is visible below the avatar
-  And form fields are displayed on the right: First Name, Last Name, Team Name, Email, Create a Password
-  And each input has a small circular accent dot to its left
-  And inputs are pill-shaped with uppercase placeholder text
-  And a "CONTINUE →" button is shown at the bottom left of the card
-  And the first pagination dot is active (solid dark), remaining dots are light/outline
+
+- **GIVEN** the user is on step 1 of the wizard
+- **WHEN** step 1 is displayed
+- **THEN** an avatar upload area is shown on the left side of the card
+- **AND** the text "CHOOSE PICTURE" with a camera icon is visible below the avatar
+- **AND** form fields are displayed on the right: First Name, Last Name, Team Name, Email, Create a Password
+- **AND** each input has a small circular accent dot to its left
+- **AND** inputs are pill-shaped with uppercase placeholder text
+- **AND** a "CONTINUE →" button is shown at the bottom left of the card
+- **AND** the first pagination dot is active (solid dark), remaining dots are light/outline
 
 #### Scenario: Avatar Upload Interaction
-  Given the user is on step 1
-  When the user clicks "CHOOSE PICTURE"
-  Then a file picker dialog opens for image selection
-  And the selected image replaces the default avatar placeholder
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "CHOOSE PICTURE"
+- **THEN** a file picker dialog opens for image selection
+- **AND** the selected image replaces the default avatar placeholder
 
 #### Scenario: Step 1 Form Validation
-  Given the user is on step 1
-  When the user clicks "CONTINUE →" without filling required fields
-  Then validation errors appear for the missing required fields (First Name, Last Name, Email, Password)
-  And the wizard does not advance to step 2
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "CONTINUE →" without filling required fields
+- **THEN** validation errors appear for the missing required fields (First Name, Last Name, Email, Password)
+- **AND** the wizard does not advance to step 2
 
 #### Scenario: Step 1 to Step 2 Navigation
-  Given the user has filled all required fields on step 1
-  When the user clicks "CONTINUE →"
-  Then step 2 content is displayed
-  And the pagination updates: step 1 dot becomes light/outline, step 2 dot becomes active/solid
-  And the form card smoothly transitions to show step 2 fields
+
+- **GIVEN** the user has filled all required fields on step 1
+- **WHEN** the user clicks "CONTINUE →"
+- **THEN** step 2 content is displayed
+- **AND** the pagination updates: step 1 dot becomes light/outline, step 2 dot becomes active/solid
+- **AND** the form card smoothly transitions to show step 2 fields
 
 #### Scenario: Step 2 Content
-  Given step 2 is displayed
-  When the wizard shows step 2
-  Then appropriate profile/team configuration fields are shown
-  And a back/previous action is available to return to step 1
+
+- **GIVEN** step 2 is displayed
+- **WHEN** the wizard shows step 2
+- **THEN** appropriate profile/team configuration fields are shown
+- **AND** a back/previous action is available to return to step 1
 
 #### Scenario: Step 2 to Step 3 Navigation
-  Given the user has completed step 2
-  When the user clicks the continue action
-  Then step 3 content is displayed
-  And the pagination updates: step 2 dot becomes light/outline, step 3 dot becomes active/solid
+
+- **GIVEN** the user has completed step 2
+- **WHEN** the user clicks the continue action
+- **THEN** step 3 content is displayed
+- **AND** the pagination updates: step 2 dot becomes light/outline, step 3 dot becomes active/solid
 
 #### Scenario: Step 3 Completion
-  Given step 3 is displayed
-  When the user completes all required fields on step 3
-  Then a final submission or confirmation action is available
-  And the wizard can be completed
+
+- **GIVEN** step 3 is displayed
+- **WHEN** the user completes all required fields on step 3
+- **THEN** a final submission or confirmation action is available
+- **AND** the wizard can be completed
 
 #### Scenario: Pagination Navigation
-  Given the wizard has multiple steps
-  When the user views the pagination dots below the card
-  Then the current step dot is solid dark gray
-  And future step dots are light gray outlines
-  And completed step dots reflect completion state
+
+- **GIVEN** the wizard has multiple steps
+- **WHEN** the user views the pagination dots below the card
+- **THEN** the current step dot is solid dark gray
+- **AND** future step dots are light gray outlines
+- **AND** completed step dots reflect completion state
 
 #### Scenario: Responsive Layout
-  Given the user views the wizard on a mobile device
-  When the viewport is narrow
-  Then the form card stacks vertically (avatar above fields)
-  And the macOS window chrome is hidden or simplified
-  And inputs and buttons remain tappable (minimum 44px touch targets)
+
+- **GIVEN** the user views the wizard on a mobile device
+- **WHEN** the viewport is narrow
+- **THEN** the form card stacks vertically (avatar above fields)
+- **AND** the macOS window chrome is hidden or simplified
+- **AND** inputs and buttons remain tappable (minimum 44px touch targets)
 
 #### Scenario: Keyboard Accessibility
-  Given the wizard is displayed
-  When the user navigates with keyboard
-  Then all form fields are focusable with visible focus rings
-  And the tab order follows logical field sequence
-  And the "CONTINUE" button is reachable via Tab/Enter
+
+- **GIVEN** the wizard is displayed
+- **WHEN** the user navigates with keyboard
+- **THEN** all form fields are focusable with visible focus rings
+- **AND** the tab order follows logical field sequence
+- **AND** the "CONTINUE" button is reachable via Tab/Enter
 
 ## Verification Checklist
 

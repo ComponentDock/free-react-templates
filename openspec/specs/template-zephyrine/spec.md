@@ -60,70 +60,80 @@ Extracted from the live preview CSS (`css/main.css`).
 9. **Footer** — Dark overlay (`rgba(0,0,0,0.25)`), flex layout:
    - Logo left, copyright center, social icons right (Facebook, Twitter, Dribbble)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Zephyrine template behaviour
+
 Feature: Zephyrine creative agency template
 
-  Scenario: Page loads with correct layout
-    Given I visit the Zephyrine page
-    Then I should see a boxed layout centered on the page
-    And the body should have a dark textured background
+#### Scenario: Page loads with correct layout
 
-  Scenario: Header displays logo and navigation
-    Given I visit the Zephyrine page
-    Then I should see a logo in the header
-    And I should see navigation links for Home, Generic, and Elements
-    And I should see a hamburger menu button
+- **GIVEN** I visit the Zephyrine page
+- **THEN** I should see a boxed layout centered on the page
+- **AND** the body should have a dark textured background
 
-  Scenario: Hero banner shows gradient with headline and CTA
-    Given I visit the Zephyrine page
-    Then I should see a gradient banner (pink to orange)
-    And I should see the subtitle "Re-imagining the way"
-    And I should see the headline "We grow money, Guaranteed"
-    And I should see a "Get Started" button with arrow icon
+#### Scenario: Header displays logo and navigation
 
-  Scenario: Featured area shows three feature cards
-    Given I visit the Zephyrine page
-    When I scroll to the featured area
-    Then I should see three feature cards
-    And each card should have an icon, title, and description
+- **GIVEN** I visit the Zephyrine page
+- **THEN** I should see a logo in the header
+- **AND** I should see navigation links for Home, Generic, and Elements
+- **AND** I should see a hamburger menu button
 
-  Scenario: Service area shows eight service cards in grid
-    Given I visit the Zephyrine page
-    When I scroll to the service area
-    Then I should see eight service cards in a 4-column grid
-    And each card should have an image thumbnail and overlay on hover
+#### Scenario: Hero banner shows gradient with headline and CTA
 
-  Scenario: Amazing works carousel displays portfolio items
-    Given I visit the Zephyrine page
-    When I scroll to the amazing works area
-    Then I should see a carousel of portfolio items
-    And each item should have an image and caption
+- **GIVEN** I visit the Zephyrine page
+- **THEN** I should see a gradient banner (pink to orange)
+- **AND** I should see the subtitle "Re-imagining the way"
+- **AND** I should see the headline "We grow money, Guaranteed"
+- **AND** I should see a "Get Started" button with arrow icon
 
-  Scenario: Story area shows narrative with CTA
-    Given I visit the Zephyrine page
-    When I scroll to the story area
-    Then I should see "Our Untold Story" heading
-    And I should see a paragraph and "Get Started" CTA button
+#### Scenario: Featured area shows three feature cards
 
-  Scenario: Subscription area shows newsletter form
-    Given I visit the Zephyrine page
-    When I scroll to the subscription area
-    Then I should see "Subscribe for our Newsletter" heading
-    And I should see an email input and submit button
+- **GIVEN** I visit the Zephyrine page
+- **WHEN** I scroll to the featured area
+- **THEN** I should see three feature cards
+- **AND** each card should have an icon, title, and description
 
-  Scenario: Footer widgets show contact information
-    Given I visit the Zephyrine page
-    When I scroll to the footer widget area
-    Then I should see three contact widgets (Address, Email, Phone)
-    And each widget should have an icon and description
+#### Scenario: Service area shows eight service cards in grid
 
-  Scenario: Footer shows copyright and social links
-    Given I visit the Zephyrine page
-    Then I should see a footer with logo, copyright text, and social icons
-    And the footer should link to Component Dock
-```
+- **GIVEN** I visit the Zephyrine page
+- **WHEN** I scroll to the service area
+- **THEN** I should see eight service cards in a 4-column grid
+- **AND** each card should have an image thumbnail and overlay on hover
+
+#### Scenario: Amazing works carousel displays portfolio items
+
+- **GIVEN** I visit the Zephyrine page
+- **WHEN** I scroll to the amazing works area
+- **THEN** I should see a carousel of portfolio items
+- **AND** each item should have an image and caption
+
+#### Scenario: Story area shows narrative with CTA
+
+- **GIVEN** I visit the Zephyrine page
+- **WHEN** I scroll to the story area
+- **THEN** I should see "Our Untold Story" heading
+- **AND** I should see a paragraph and "Get Started" CTA button
+
+#### Scenario: Subscription area shows newsletter form
+
+- **GIVEN** I visit the Zephyrine page
+- **WHEN** I scroll to the subscription area
+- **THEN** I should see "Subscribe for our Newsletter" heading
+- **AND** I should see an email input and submit button
+
+#### Scenario: Footer widgets show contact information
+
+- **GIVEN** I visit the Zephyrine page
+- **WHEN** I scroll to the footer widget area
+- **THEN** I should see three contact widgets (Address, Email, Phone)
+- **AND** each widget should have an icon and description
+
+#### Scenario: Footer shows copyright and social links
+
+- **GIVEN** I visit the Zephyrine page
+- **THEN** I should see a footer with logo, copyright text, and social icons
+- **AND** the footer should link to Component Dock
 
 ## Verification Checklist
 

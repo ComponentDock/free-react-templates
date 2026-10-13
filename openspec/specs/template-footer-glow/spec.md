@@ -42,70 +42,84 @@ Extracted from the live preview CSS (`css/style.css`):
 - All text is white/light gray on the dark background; links are muted white.
 - No images — pure CSS + Ionicons icon font.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: FooterGlow Template
 
-```gherkin
 Feature: FooterGlow — dark footer with newsletter subscription and multi-column links
-  As a visitor
-  I want a styled footer with newsletter signup and organized links
-  So that I can subscribe and navigate the site
+As a visitor
+I want a styled footer with newsletter signup and organized links
+So that I can subscribe and navigate the site
 
-  Background:
-    Given the FooterGlow page is loaded
+Background:
+- **GIVEN** the FooterGlow page is loaded
 
-  Scenario: Page heading is displayed
-    Then a heading "Footer #06" is visible centered on the page
+#### Scenario: Page heading is displayed
 
-  Scenario: Newsletter subheading text
-    Then the text "Subscribe to our" is displayed in the newsletter section
+- **THEN** a heading "Footer #06" is visible centered on the page
 
-  Scenario: Newsletter heading text
-    Then the text "Newsletter" is displayed as a section heading
+#### Scenario: Newsletter subheading text
 
-  Scenario: Newsletter form input is present
-    Then an email input with placeholder "Enter email address" is visible
+- **THEN** the text "Subscribe to our" is displayed in the newsletter section
 
-  Scenario: Newsletter submit button
-    Then a "Submit" button is visible inside the newsletter form
+#### Scenario: Newsletter heading text
 
-  Scenario: Newsletter form has pill shape
-    Then the newsletter form wrapper has rounded corners (pill shape)
+- **THEN** the text "Newsletter" is displayed as a section heading
 
-  Scenario: Footer link columns exist
-    Then three link columns are displayed: "Information", "Application", "API"
+#### Scenario: Newsletter form input is present
 
-  Scenario: Information column has links
-    Then the "Information" column contains links: "Our Company", "Data", "Pricing", "Contact Us", "Support"
+- **THEN** an email input with placeholder "Enter email address" is visible
 
-  Scenario: Application column has links
-    Then the "Application" column contains links: "Download", "Bike Provider", "How to Used"
+#### Scenario: Newsletter submit button
 
-  Scenario: API column has links
-    Then the "API" column contains links: "Documentation", "Credential", "Developer info"
+- **THEN** a "Submit" button is visible inside the newsletter form
 
-  Scenario: Link items have icons
-    Then each link in the columns has a checkmark circle icon
+#### Scenario: Newsletter form has pill shape
 
-  Scenario: Footer logo and copyright
-    Then a logo link "Colorlib" is displayed in the right column
-    And a copyright notice with dynamic year is displayed
+- **THEN** the newsletter form wrapper has rounded corners (pill shape)
 
-  Scenario: Footer links point to Component Dock
-    Then the footer contains a link to "https://www.componentdock.com/"
+#### Scenario: Footer link columns exist
 
-  Scenario: Dark background
-    Then the footer section has a dark purple-gray background
+- **THEN** three link columns are displayed: "Information", "Application", "API"
 
-  Scenario: Radial glow effect
-    Then the footer section has a subtle radial gradient glow overlay
+#### Scenario: Information column has links
 
-  Scenario: Responsive layout
-    When the viewport is mobile
-    Then the newsletter columns stack vertically
-    And the link columns stack vertically
-```
+- **THEN** the "Information" column contains links: "Our Company", "Data", "Pricing", "Contact Us", "Support"
+
+#### Scenario: Application column has links
+
+- **THEN** the "Application" column contains links: "Download", "Bike Provider", "How to Used"
+
+#### Scenario: API column has links
+
+- **THEN** the "API" column contains links: "Documentation", "Credential", "Developer info"
+
+#### Scenario: Link items have icons
+
+- **THEN** each link in the columns has a checkmark circle icon
+
+#### Scenario: Footer logo and copyright
+
+- **THEN** a logo link "Colorlib" is displayed in the right column
+- **AND** a copyright notice with dynamic year is displayed
+
+#### Scenario: Footer links point to Component Dock
+
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+
+#### Scenario: Dark background
+
+- **THEN** the footer section has a dark purple-gray background
+
+#### Scenario: Radial glow effect
+
+- **THEN** the footer section has a subtle radial gradient glow overlay
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport is mobile
+- **THEN** the newsletter columns stack vertically
+- **AND** the link columns stack vertically
 
 ## Verification checklist
 

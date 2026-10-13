@@ -83,66 +83,105 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 13. **Contact** — centered subtitle "Get In Touch" + heading "Contact Us"; full-width form with Full Name, Email, Message fields + "Send Message" button
 14. **Footer** — dark bg (#333333), 3-column: About Us text + Navigation links; Recent News (3 items with thumbnails); Subscribe Newsletter + Follow Us social icons; copyright bar
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
+
 - **Scenario: Logo and navigation render** — Given the page loads, Then the logo "Archvault" is visible, And nav links (Home, About, Projects, News, Services, Contact) are visible
 - **Scenario: Navbar is sticky** — Given the user scrolls down, Then the navbar sticks to the top of the viewport
 - **Scenario: Mobile hamburger menu** — Given the viewport is below lg, Then a hamburger icon is visible, And clicking it toggles the mobile menu
 
 ### Hero
+
+#### Scenario: Hero
+
 - **Scenario: Hero renders** — Given the page loads, Then a full-width hero image is displayed with dark overlay
 - **Scenario: Hero heading visible** — Given the hero renders, Then "INTERIOR DESIGN" heading is centered and uppercase
 - **Scenario: Play button** — Given the hero renders, Then a play icon button is centered above the heading
 
 ### Features Strip
+
+#### Scenario: Features Strip
+
 - **Scenario: Three features display** — Given the features section renders, Then three feature cards are shown (Innovative Structure, Architectural, Interior Design)
 - **Scenario: Each feature has icon and text** — Given a feature card renders, Then an icon and title and description paragraph are visible
 
 ### About Us
+
+#### Scenario: About Us
+
 - **Scenario: About section renders** — Given the about section renders, Then a large image is on the left and text content on the right
 - **Scenario: Checklist items** — Given the about section renders, Then 4 checklist items are visible
 - **Scenario: CTA button** — Given the about section renders, Then a "Read More About Us" button is visible
 
 ### Our Team
+
+#### Scenario: Our Team
+
 - **Scenario: Team grid renders** — Given the team section renders, Then 6 team member cards are displayed in a 3-column grid
 - **Scenario: Team member info** — Given a team card renders, Then a photo, name, role, social icons, and description are visible
 - **Scenario: Social overlay on hover** — Given the user hovers a team card, Then social icons overlay the image
 
 ### Pricing
+
+#### Scenario: Pricing
+
 - **Scenario: Three pricing plans** — Given the pricing section renders, Then Starter ($30), Professional ($72), and Enterprise ($130) cards are displayed
 - **Scenario: Pricing feature list** — Given a pricing card renders, Then a list of features with checkmarks and strikethrough for unavailable is shown
 - **Scenario: Buy Now button** — Given a pricing card renders, Then a "Buy Now" button is visible
 
 ### FAQ
+
+#### Scenario: FAQ
+
 - **Scenario: FAQ accordion renders** — Given the FAQ section renders, Then 5 accordion items are displayed
 - **Scenario: Accordion toggle** — Given a FAQ item is collapsed, When the user clicks the question, Then the answer expands
 - **Scenario: Accordion collapse** — Given a FAQ item is expanded, When the user clicks the question, Then the answer collapses
 
 ### Testimonials
+
+#### Scenario: Testimonials
+
 - **Scenario: Testimonials carousel renders** — Given the testimonials section renders, Then a carousel with testimonial slides is visible
 - **Scenario: Testimonial content** — Given a testimonial slide renders, Then an image, name, role, and quote are displayed
 
 ### Projects
+
+#### Scenario: Projects
+
 - **Scenario: Project gallery renders** — Given the projects section renders, Then 6 project cards are displayed in a 3-column grid
 - **Scenario: Project card content** — Given a project card renders, Then an image, project name, and category label are visible
 - **Scenario: Lightbox link** — Given a project card renders, Then the image links to a lightbox/gallery view
 
 ### Blog/News
+
+#### Scenario: Blog/News
+
 - **Scenario: Blog posts render** — Given the news section renders, Then 3 blog post cards are displayed
 - **Scenario: Post card content** — Given a post card renders, Then an image, date, and title are visible
 - **Scenario: View All Posts button** — Given the news section renders, Then a "View All Posts" button is visible
 
 ### Services
+
+#### Scenario: Services
+
 - **Scenario: Services grid renders** — Given the services section renders, Then 6 service cards are displayed in a 3-column grid
 - **Scenario: Service card content** — Given a service card renders, Then an icon, title, and description are visible
 
 ### Contact
+
+#### Scenario: Contact
+
 - **Scenario: Contact form renders** — Given the contact section renders, Then a form with Full Name, Email, and Message fields is visible
 - **Scenario: Submit button** — Given the contact form renders, Then a "Send Message" button is visible
 - **Scenario: Form validation** — Given the user submits with empty fields, Then validation errors are shown
 
 ### Footer
+
+#### Scenario: Footer
+
 - **Scenario: Footer renders** — Given the footer renders, Then About Us text, Navigation links, Recent News items, Newsletter form, and social icons are visible
 - **Scenario: Newsletter input** — Given the footer renders, Then an email input + Send button are visible
 - **Scenario: Component Dock link** — Given the footer renders, Then a link to componentdock.com is present

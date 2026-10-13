@@ -42,66 +42,72 @@ The template is a single-page, full-viewport search form with two visual section
    - **Advanced Search Panel** — label + 6 dropdown selects in 2 rows of 3
    - **Action Buttons** — Search (green) + Delete (text-only)
 
-## Gherkin Scenarios
+## Requirements
 
 ### Background
-```
-Given the page loads
-Then the viewport is filled with a solid cyan/blue background (#00b5e9)
-And a white card is centered vertically and horizontally
-And the card has a subtle box-shadow
-```
+
+#### Scenario: Background
+
+- **GIVEN** the page loads
+- **THEN** the viewport is filled with a solid cyan/blue background (#00b5e9)
+- **AND** a white card is centered vertically and horizontally
+- **AND** the card has a subtle box-shadow
 
 ### Main Search Bar
-```
-Given the card is displayed
-Then a magnifying glass icon appears on the left side of the input
-And the input has placeholder text "Search..."
-And the input is 70px tall with white background
-And a result count badge shows "108 results" on the right side
-And the number "108" is displayed in green (#57b846)
-And the text "results" is displayed in dark gray (#555)
-```
+
+#### Scenario: Main Search Bar
+
+- **GIVEN** the card is displayed
+- **THEN** a magnifying glass icon appears on the left side of the input
+- **AND** the input has placeholder text "Search..."
+- **AND** the input is 70px tall with white background
+- **AND** a result count badge shows "108 results" on the right side
+- **AND** the number "108" is displayed in green (#57b846)
+- **AND** the text "results" is displayed in dark gray (#555)
 
 ### Advanced Search Panel
-```
-Given the main search bar is visible
-Then a label "Advanced Search" appears below the search bar
-And 6 custom dropdown selects are arranged in 2 rows of 3
-And Row 1 contains: ACCESSORIES, COLOR, SIZE
-And Row 2 contains: SALE, TIME, TYPE
-And each dropdown has an underline-style border (2px solid #ccc)
-And each dropdown has a custom chevron icon on the right
-And the dropdowns use transparent background with white text
-```
+
+#### Scenario: Advanced Search Panel
+
+- **GIVEN** the main search bar is visible
+- **THEN** a label "Advanced Search" appears below the search bar
+- **AND** 6 custom dropdown selects are arranged in 2 rows of 3
+- **AND** Row 1 contains: ACCESSORIES, COLOR, SIZE
+- **AND** Row 2 contains: SALE, TIME, TYPE
+- **AND** each dropdown has an underline-style border (2px solid #ccc)
+- **AND** each dropdown has a custom chevron icon on the right
+- **AND** the dropdowns use transparent background with white text
 
 ### Dropdown Interaction
-```
-Given a dropdown is clicked
-Then the dropdown opens with a list of options
-And the chevron icon flips upward
-And the border color changes to a lighter gray (#b7b7b7)
-```
+
+#### Scenario: Dropdown Interaction
+
+- **GIVEN** a dropdown is clicked
+- **THEN** the dropdown opens with a list of options
+- **AND** the chevron icon flips upward
+- **AND** the border color changes to a lighter gray (#b7b7b7)
 
 ### Action Buttons
-```
-Given the advanced search panel is displayed
-Then a green "Search" button is shown on the left
-And the button has white text on green (#57b846) background
-And the button has a 3px border-radius
-And hovering the button darkens it to #4ea63f
-And a "Delete" text button appears to the right of Search
-And the Delete button has no background and dark gray text (#555)
-And hovering the Delete button turns text black (#000)
-```
+
+#### Scenario: Action Buttons
+
+- **GIVEN** the advanced search panel is displayed
+- **THEN** a green "Search" button is shown on the left
+- **AND** the button has white text on green (#57b846) background
+- **AND** the button has a 3px border-radius
+- **AND** hovering the button darkens it to #4ea63f
+- **AND** a "Delete" text button appears to the right of Search
+- **AND** the Delete button has no background and dark gray text (#555)
+- **AND** hovering the Delete button turns text black (#000)
 
 ### Responsive Behavior
-```
-Given the viewport width is less than 768px
-Then the search input padding adjusts for smaller icon
-And the dropdown rows stack vertically (single column)
-And each dropdown takes full width
-```
+
+#### Scenario: Responsive Behavior
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the search input padding adjusts for smaller icon
+- **AND** the dropdown rows stack vertically (single column)
+- **AND** each dropdown takes full width
 
 ## Verification Checklist
 

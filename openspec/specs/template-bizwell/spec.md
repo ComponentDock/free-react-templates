@@ -52,100 +52,114 @@ Extracted from live preview CSS (`css/style.css`):
 13. **Contact** — 2-column top: left = "Contact Info" with address/phone/email icons (circular); right = map placeholder; below = "Send Message" form (first name, last name, email, subject, textarea, submit button)
 14. **Footer** — dark bg (#1e1e1e); centered logo + social icons (Facebook, Twitter, Pinterest, Google+, LinkedIn) + copyright line
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Bizwell business template
 
-```gherkin
-Scenario: Header displays logo and navigation
-  Given the user visits the Bizwell page
-  Then the header shows the logo on the left
-  And the navigation menu shows links for Home, About, Services, Portfolio, Team, Skill, Clients, Pricing, Blog, Contact
-  And clicking a nav link scrolls to the corresponding section
+#### Scenario: Header displays logo and navigation
 
-Scenario: Hero banner shows slides with CTAs
-  Given the user visits the Bizwell page
-  Then the hero banner is visible with a heading, subtext, and "See Our Projects" button
-  And the banner background is a full-width image
+- **GIVEN** the user visits the Bizwell page
+- **THEN** the header shows the logo on the left
+- **AND** the navigation menu shows links for Home, About, Services, Portfolio, Team, Skill, Clients, Pricing, Blog, Contact
+- **AND** clicking a nav link scrolls to the corresponding section
 
-Scenario: About section shows 4 service icons
-  Given the user scrolls to the About section
-  Then 4 service items are displayed in a row
-  And each item has a circular icon, title, description, and "More Details" link
-  And the items are Web Development, Photography, Digital Media, Online Marketing
+#### Scenario: Hero banner shows slides with CTAs
 
-Scenario: Services section shows 6 items on dark background
-  Given the user scrolls to the Services section
-  Then the section has a dark background
-  And 6 service cards are displayed in a 3x2 grid
-  And each card has an icon, heading, and description
+- **GIVEN** the user visits the Bizwell page
+- **THEN** the hero banner is visible with a heading, subtext, and "See Our Projects" button
+- **AND** the banner background is a full-width image
 
-Scenario: Projects section has filterable gallery
-  Given the user scrolls to the Projects section
-  Then a filter tab bar is shown with categories: All, Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
-  And 6 project images are displayed in a grid
-  And hovering a project image shows an overlay with title and category tags
+#### Scenario: About section shows 4 service icons
 
-Scenario: Page middle banner has parallax effect
-  Given the user scrolls past the Projects section
-  Then a full-width banner with a dark overlay is displayed
-  And it contains a heading and a CTA button
+- **GIVEN** the user scrolls to the About section
+- **THEN** 4 service items are displayed in a row
+- **AND** each item has a circular icon, title, description, and "More Details" link
+- **AND** the items are Web Development, Photography, Digital Media, Online Marketing
 
-Scenario: Team section shows 3 members
-  Given the user scrolls to the Team section
-  Then 3 team member cards are displayed in a row
-  And each card has a photo, name, and role
-  And hovering reveals social links
+#### Scenario: Services section shows 6 items on dark background
 
-Scenario: Skills section shows progress bars
-  Given the user scrolls to the Skills section
-  Then a 2-column layout is displayed: image on left, progress bars on right
-  And 5 skill bars are shown: Web Development, Online Marketing, Digital Media, Photography, Creative Design
-  And each bar shows a percentage label
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the section has a dark background
+- **AND** 6 service cards are displayed in a 3x2 grid
+- **AND** each card has an icon, heading, and description
 
-Scenario: Clients section shows testimonials
-  Given the user scrolls to the Clients section
-  Then a testimonial slider displays client photos, quotes, and names
+#### Scenario: Projects section has filterable gallery
 
-Scenario: Pricing section shows 3 plans
-  Given the user scrolls to the Pricing section
-  Then 3 pricing cards are displayed: Basic, Advanced, Premium
-  And each card shows a price, feature list, and "BUY IT NOW" button
-  And each price badge uses a distinct color (gold, blue, teal)
+- **GIVEN** the user scrolls to the Projects section
+- **THEN** a filter tab bar is shown with categories: All, Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
+- **AND** 6 project images are displayed in a grid
+- **AND** hovering a project image shows an overlay with title and category tags
 
-Scenario: Blog section shows 3 posts
-  Given the user scrolls to the Blog section
-  Then 3 blog cards are displayed in a row
-  And each card has an image, title, author/date, excerpt, and "Read More" link
+#### Scenario: Page middle banner has parallax effect
 
-Scenario: Partners section shows logo carousel
-  Given the user scrolls to the Partners section
-  Then a light background section with scrolling partner logos is displayed
+- **GIVEN** the user scrolls past the Projects section
+- **THEN** a full-width banner with a dark overlay is displayed
+- **AND** it contains a heading and a CTA button
 
-Scenario: Contact section has info and form
-  Given the user scrolls to the Contact section
-  Then a 2-column layout shows contact info (address, phone, email with circular icons) on the left
-  And a map placeholder on the right
-  And a "Send Message" form below with first name, last name, email, subject, message textarea, and submit button
+#### Scenario: Team section shows 3 members
 
-Scenario: Footer shows logo and social links
-  Given the user scrolls to the footer
-  Then the footer has a dark background
-  And it shows the logo, social icon links, and copyright text
-  And it links to https://www.componentdock.com/
+- **GIVEN** the user scrolls to the Team section
+- **THEN** 3 team member cards are displayed in a row
+- **AND** each card has a photo, name, and role
+- **AND** hovering reveals social links
 
-Scenario: Navigation is responsive
-  Given the user views the page on a mobile viewport
-  Then the navigation collapses into a hamburger menu
-  And tapping the menu expands the nav links
+#### Scenario: Skills section shows progress bars
 
-Scenario: Sections use consistent design tokens
-  Given any section of the page
-  Then headings use Raleway font, uppercase, bold
-  And accent elements use the brand color #d73e4d
-  And buttons are square (no border-radius) with uppercase text
-  And circular icon elements have 50% border-radius with a 2px border
-```
+- **GIVEN** the user scrolls to the Skills section
+- **THEN** a 2-column layout is displayed: image on left, progress bars on right
+- **AND** 5 skill bars are shown: Web Development, Online Marketing, Digital Media, Photography, Creative Design
+- **AND** each bar shows a percentage label
+
+#### Scenario: Clients section shows testimonials
+
+- **GIVEN** the user scrolls to the Clients section
+- **THEN** a testimonial slider displays client photos, quotes, and names
+
+#### Scenario: Pricing section shows 3 plans
+
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** 3 pricing cards are displayed: Basic, Advanced, Premium
+- **AND** each card shows a price, feature list, and "BUY IT NOW" button
+- **AND** each price badge uses a distinct color (gold, blue, teal)
+
+#### Scenario: Blog section shows 3 posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card has an image, title, author/date, excerpt, and "Read More" link
+
+#### Scenario: Partners section shows logo carousel
+
+- **GIVEN** the user scrolls to the Partners section
+- **THEN** a light background section with scrolling partner logos is displayed
+
+#### Scenario: Contact section has info and form
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a 2-column layout shows contact info (address, phone, email with circular icons) on the left
+- **AND** a map placeholder on the right
+- **AND** a "Send Message" form below with first name, last name, email, subject, message textarea, and submit button
+
+#### Scenario: Footer shows logo and social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** it shows the logo, social icon links, and copyright text
+- **AND** it links to https://www.componentdock.com/
+
+#### Scenario: Navigation is responsive
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the navigation collapses into a hamburger menu
+- **AND** tapping the menu expands the nav links
+
+#### Scenario: Sections use consistent design tokens
+
+- **GIVEN** any section of the page
+- **THEN** headings use Raleway font, uppercase, bold
+- **AND** accent elements use the brand color #d73e4d
+- **AND** buttons are square (no border-radius) with uppercase text
+- **AND** circular icon elements have 50% border-radius with a 2px border
 
 ## Verification checklist
 

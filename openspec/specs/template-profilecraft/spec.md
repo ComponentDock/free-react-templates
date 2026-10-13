@@ -46,83 +46,94 @@ for creative professionals and freelancers.
 | Section padding            | `140px 0`                                                          | `.section_gap`                                |
 | Transitions                | `all 0.4s ease 0s`                                                 | Smooth hover transitions                      |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: ProfileCraft — Personal Portfolio Landing Page
 
-Scenario: Page loads with hero banner
-Given the user opens the ProfileCraft page
-Then the navigation bar should be visible with logo and menu items
-And the hero section should show "Hey There!" greeting
-And the hero should display "I am [Name]" as the main heading
-And a subtitle like "Creative art director & designer" should be visible
-And social media icons (Twitter, Skype, Instagram, Dribbble, Vimeo) should be present
-And a "See My Work" CTA button should be visible
+#### Scenario: Page loads with hero banner
 
-Scenario: Navigation menu items
-Given the page is loaded
-Then the navigation should contain links for "Home", "About", "Portfolio", "Pages" (dropdown), "Blog" (dropdown), "Contact"
-And clicking a nav link should scroll to the corresponding section
+- **GIVEN** the user opens the ProfileCraft page
+- **THEN** the navigation bar should be visible with logo and menu items
+- **AND** the hero section should show "Hey There!" greeting
+- **AND** the hero should display "I am [Name]" as the main heading
+- **AND** a subtitle like "Creative art director & designer" should be visible
+- **AND** social media icons (Twitter, Skype, Instagram, Dribbble, Vimeo) should be present
+- **AND** a "See My Work" CTA button should be visible
 
-Scenario: Statistics section with counters
-Given the user scrolls to the statistics section
-Then 3 stat items should be visible
-And the stats should show "15k+ Happy Customer", "12k+ Ticket Solved", "9/10 Average Rating"
-And the counter numbers should have a gradient text effect (blue-to-pink)
+#### Scenario: Navigation menu items
 
-Scenario: About section with image and text
-Given the user scrolls to the about section
-Then an "About me" label should be visible
-And a "Creative Art Director And Designer" heading should be displayed
-And a descriptive paragraph should be below the heading
-And a "Download CV" button should be visible
-And an about image should be displayed on the left side
+- **GIVEN** the page is loaded
+- **THEN** the navigation should contain links for "Home", "About", "Portfolio", "Pages" (dropdown), "Blog" (dropdown), "Contact"
+- **AND** clicking a nav link should scroll to the corresponding section
 
-Scenario: Services section with 3 cards
-Given the user scrolls to the services section
-Then a "Our Service" label should be visible
-And a "What Service We Offer For You" heading should be displayed
-And 3 service cards should be displayed
-And the cards should be titled "Web Development", "UX/UI Design", "WP Developing"
-And each card should have an icon, title, description, and "Learn More" link
-And hovering a card should change its background to purple (#5f30ff)
+#### Scenario: Statistics section with counters
 
-Scenario: Testimonial section with slider
-Given the user scrolls to the testimonial section
-Then a "Our Testimonial" label should be visible
-And a "Honourable Client Says About Me" heading should be displayed
-And a testimonial slider should show client photos, quotes, names, roles, and star ratings
-And the star rating should show 4 active stars and 1 inactive star
+- **GIVEN** the user scrolls to the statistics section
+- **THEN** 3 stat items should be visible
+- **AND** the stats should show "15k+ Happy Customer", "12k+ Ticket Solved", "9/10 Average Rating"
+- **AND** the counter numbers should have a gradient text effect (blue-to-pink)
 
-Scenario: Portfolio grid with filter
-Given the user scrolls to the portfolio section
-Then filter tabs should be visible for portfolio categories
-And portfolio items should be displayed in a grid
-And hovering a portfolio item should show a blue overlay with title and description
+#### Scenario: About section with image and text
 
-Scenario: Blog section with posts
-Given the user scrolls to the blog section
-Then blog post cards should be displayed
-And each card should have a thumbnail image, date badge, title, and excerpt
-And the date badge should have a blue background
+- **GIVEN** the user scrolls to the about section
+- **THEN** an "About me" label should be visible
+- **AND** a "Creative Art Director And Designer" heading should be displayed
+- **AND** a descriptive paragraph should be below the heading
+- **AND** a "Download CV" button should be visible
+- **AND** an about image should be displayed on the left side
 
-Scenario: Footer with social links
-Given the user scrolls to the footer
-Then the footer should have a dark background (#021017)
-And it should contain social media icon links in circular buttons
-And hovering social icons should show a gradient background
-And a "Component Dock" link should be present (per conventions)
+#### Scenario: Services section with 3 cards
 
-Scenario: Responsive layout on mobile
-Given the user opens the page on a viewport width less than 768px
-Then the navigation should collapse to a hamburger menu
-And all sections should stack vertically
-And the hero image should be hidden on mobile
-And service cards should stack vertically
+- **GIVEN** the user scrolls to the services section
+- **THEN** a "Our Service" label should be visible
+- **AND** a "What Service We Offer For You" heading should be displayed
+- **AND** 3 service cards should be displayed
+- **AND** the cards should be titled "Web Development", "UX/UI Design", "WP Developing"
+- **AND** each card should have an icon, title, description, and "Learn More" link
+- **AND** hovering a card should change its background to purple (#5f30ff)
 
-Scenario: Smooth scroll navigation
-Given the user clicks a navigation menu item
-Then the page should smoothly scroll to the target section
+#### Scenario: Testimonial section with slider
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** a "Our Testimonial" label should be visible
+- **AND** a "Honourable Client Says About Me" heading should be displayed
+- **AND** a testimonial slider should show client photos, quotes, names, roles, and star ratings
+- **AND** the star rating should show 4 active stars and 1 inactive star
+
+#### Scenario: Portfolio grid with filter
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** filter tabs should be visible for portfolio categories
+- **AND** portfolio items should be displayed in a grid
+- **AND** hovering a portfolio item should show a blue overlay with title and description
+
+#### Scenario: Blog section with posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** blog post cards should be displayed
+- **AND** each card should have a thumbnail image, date badge, title, and excerpt
+- **AND** the date badge should have a blue background
+
+#### Scenario: Footer with social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer should have a dark background (#021017)
+- **AND** it should contain social media icon links in circular buttons
+- **AND** hovering social icons should show a gradient background
+- **AND** a "Component Dock" link should be present (per conventions)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a viewport width less than 768px
+- **THEN** the navigation should collapse to a hamburger menu
+- **AND** all sections should stack vertically
+- **AND** the hero image should be hidden on mobile
+- **AND** service cards should stack vertically
+
+#### Scenario: Smooth scroll navigation
+
+- **GIVEN** the user clicks a navigation menu item
+- **THEN** the page should smoothly scroll to the target section
 
 ## Verification checklist
 

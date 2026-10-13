@@ -51,148 +51,164 @@ Recreation of ColorLib **Consula** as a React 19 + Vite + Tailwind 4 + TypeScrip
 9. **Contact** — 2-column: contact form (First Name, Last Name, Email, Subject, Message) + contact info (Address, Phone, Email)
 10. **Footer** — dark bg, 4 columns (About, Quick Links, Follow Us, Subscribe Newsletter) + copyright
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Consortium template behaviour
+
 Feature: Consortium — Business Consulting Template
 
-  Background:
-    Given the user visits "consortium.free.componentdock.com"
-    Then the page loads within 3 seconds
+Background:
+- **GIVEN** the user visits "consortium.free.componentdock.com"
+- **THEN** the page loads within 3 seconds
 
-  # ── TopBar ──────────────────────────────────────────────────
+**── TopBar ──────────────────────────────────────────────────**
 
-  Scenario: TopBar renders social links and contact info
-    Given the TopBar is visible at the top of the page
-    Then there are social media icons (Facebook, Twitter, Instagram, LinkedIn)
-    And a phone number is displayed
-    And an email address is displayed
-    And the TopBar has a light gray background (#f8f9fa)
+#### Scenario: TopBar renders social links and contact info
 
-  # ── Navbar ──────────────────────────────────────────────────
+- **GIVEN** the TopBar is visible at the top of the page
+- **THEN** there are social media icons (Facebook, Twitter, Instagram, LinkedIn)
+- **AND** a phone number is displayed
+- **AND** an email address is displayed
+- **AND** the TopBar has a light gray background (#f8f9fa)
 
-  Scenario: Navbar displays logo and navigation
-    Given the Navbar is visible below the TopBar
-    Then the logo text "Consortium" is displayed
-    And navigation links include "About", "Services", "Testimonials", "Contact"
-    And the Navbar has a white background
-    And the Navbar becomes sticky on scroll
+**── Navbar ──────────────────────────────────────────────────**
 
-  Scenario: Navbar links scroll to sections
-    When the user clicks "About" in the navbar
-    Then the page scrolls to the About section
-    When the user clicks "Services" in the navbar
-    Then the page scrolls to the Services section
+#### Scenario: Navbar displays logo and navigation
 
-  # ── Hero ────────────────────────────────────────────────────
+- **GIVEN** the Navbar is visible below the TopBar
+- **THEN** the logo text "Consortium" is displayed
+- **AND** navigation links include "About", "Services", "Testimonials", "Contact"
+- **AND** the Navbar has a white background
+- **AND** the Navbar becomes sticky on scroll
 
-  Scenario: Hero section displays headline and CTA
-    Given the Hero section is visible
-    Then a headline "We Are The Best Consulting Agency" is displayed
-    And a subtitle paragraph is displayed below the headline
-    And a "Get Started" button is visible with pill shape (border-radius: 30px)
-    And the button has teal-green background (#46ddb0)
-    And a "50 years of experience" counter element is visible
-    And the section has a background image
+#### Scenario: Navbar links scroll to sections
 
-  Scenario: Hero CTA button hover changes colors
-    Given the "Get Started" button is visible
-    When the user hovers over the button
-    Then the button background becomes white
-    And the button text becomes teal-green (#46ddb0)
+- **WHEN** the user clicks "About" in the navbar
+- **THEN** the page scrolls to the About section
+- **WHEN** the user clicks "Services" in the navbar
+- **THEN** the page scrolls to the Services section
 
-  # ── About ───────────────────────────────────────────────────
+**── Hero ────────────────────────────────────────────────────**
 
-  Scenario: About section displays company info
-    Given the About section is visible
-    Then the section title reads "About Us"
-    And a "Welcome To Consula" heading is displayed
-    And body text describes the consulting agency
-    And a "Learn More" pill button is visible
+#### Scenario: Hero section displays headline and CTA
 
-  # ── Team ────────────────────────────────────────────────────
+- **GIVEN** the Hero section is visible
+- **THEN** a headline "We Are The Best Consulting Agency" is displayed
+- **AND** a subtitle paragraph is displayed below the headline
+- **AND** a "Get Started" button is visible with pill shape (border-radius: 30px)
+- **AND** the button has teal-green background (#46ddb0)
+- **AND** a "50 years of experience" counter element is visible
+- **AND** the section has a background image
 
-  Scenario: Team section displays member cards
-    Given the Team section is visible
-    Then the section title reads "Our Team"
-    And there are exactly 3 team member cards
-    And each card displays a photo, name, role, and bio text
-    And team members include "John Rooster" (Co-Founder, President),
-      "Tom Sharp" (Co-Founder, COO), and "Winston Hodson"
+#### Scenario: Hero CTA button hover changes colors
 
-  # ── Services ────────────────────────────────────────────────
+- **GIVEN** the "Get Started" button is visible
+- **WHEN** the user hovers over the button
+- **THEN** the button background becomes white
+- **AND** the button text becomes teal-green (#46ddb0)
 
-  Scenario: Services section displays steps
-    Given the Services section is visible
-    Then the section title reads "How It Works"
-    And there are 3 numbered service steps
-    And each step has an icon, title, and description text
+**── About ───────────────────────────────────────────────────**
 
-  # ── Testimonials ────────────────────────────────────────────
+#### Scenario: About section displays company info
 
-  Scenario: Testimonials section displays quotes
-    Given the Testimonials section is visible
-    Then the section title reads "Testimonials"
-    And testimonial cards display a quote, person name, and role
-    And multiple testimonials are available for carousel navigation
+- **GIVEN** the About section is visible
+- **THEN** the section title reads "About Us"
+- **AND** a "Welcome To Consula" heading is displayed
+- **AND** body text describes the consulting agency
+- **AND** a "Learn More" pill button is visible
 
-  # ── Blog ────────────────────────────────────────────────────
+**── Team ────────────────────────────────────────────────────**
 
-  Scenario: Blog section displays post cards
-    Given the Blog section is visible
-    Then there are blog post cards in a grid
-    And each card has a featured image, category tag, title, and excerpt
-    And each card has a "Continue Reading" link
+#### Scenario: Team section displays member cards
 
-  # ── Contact ─────────────────────────────────────────────────
+- **GIVEN** the Team section is visible
+- **THEN** the section title reads "Our Team"
+- **AND** there are exactly 3 team member cards
+- **AND** each card displays a photo, name, role, and bio text
+- **AND** team members include "John Rooster" (Co-Founder, President),
+"Tom Sharp" (Co-Founder, COO), and "Winston Hodson"
 
-  Scenario: Contact form renders all fields
-    Given the Contact section is visible
-    Then a "Contact Form" heading is displayed
-    And the form contains fields: First Name, Last Name, Email, Subject, Message
-    And a submit button labeled "Let's Get Started" is visible
+**── Services ────────────────────────────────────────────────**
 
-  Scenario: Contact form validates required fields
-    Given the Contact form is visible
-    When the user submits the form without filling any fields
-    Then validation errors appear for required fields
+#### Scenario: Services section displays steps
 
-  Scenario: Contact info displays correctly
-    Given the Contact section is visible
-    Then an Address is displayed ("203 Fake St. Mountain View, San Francisco, California, USA")
-    And a Phone number is displayed
-    And an Email address is displayed
+- **GIVEN** the Services section is visible
+- **THEN** the section title reads "How It Works"
+- **AND** there are 3 numbered service steps
+- **AND** each step has an icon, title, and description text
 
-  # ── Footer ──────────────────────────────────────────────────
+**── Testimonials ────────────────────────────────────────────**
 
-  Scenario: Footer renders with correct columns
-    Given the Footer is visible
-    Then it has a dark background (#333333)
-    And it contains columns: "About Us", "Quick Links", "Follow Us", "Subscribe Newsletter"
-    And "Quick Links" includes links to About, Services, Testimonials, Contact
-    And a copyright line is displayed
-    And the footer links to "https://www.componentdock.com/" branded as "Component Dock"
+#### Scenario: Testimonials section displays quotes
 
-  # ── Responsive ──────────────────────────────────────────────
+- **GIVEN** the Testimonials section is visible
+- **THEN** the section title reads "Testimonials"
+- **AND** testimonial cards display a quote, person name, and role
+- **AND** multiple testimonials are available for carousel navigation
 
-  Scenario: Mobile responsive layout
-    Given the user views the page on a 375px wide viewport
-    Then the navbar collapses into a hamburger menu
-    And team cards stack vertically
-    And blog cards stack vertically
-    And the contact form and info stack vertically
-    And the footer columns stack vertically
+**── Blog ────────────────────────────────────────────────────**
 
-  # ── Accessibility ───────────────────────────────────────────
+#### Scenario: Blog section displays post cards
 
-  Scenario: Page meets accessibility standards
-    Given the page is loaded
-    Then all images have descriptive alt text
-    And all form inputs have associated labels
-    And the page has a logical heading hierarchy (h1 → h2 → h3)
-    And interactive elements are keyboard-focusable
-    And color contrast meets WCAG AA standards for text on backgrounds
-```
+- **GIVEN** the Blog section is visible
+- **THEN** there are blog post cards in a grid
+- **AND** each card has a featured image, category tag, title, and excerpt
+- **AND** each card has a "Continue Reading" link
+
+**── Contact ─────────────────────────────────────────────────**
+
+#### Scenario: Contact form renders all fields
+
+- **GIVEN** the Contact section is visible
+- **THEN** a "Contact Form" heading is displayed
+- **AND** the form contains fields: First Name, Last Name, Email, Subject, Message
+- **AND** a submit button labeled "Let's Get Started" is visible
+
+#### Scenario: Contact form validates required fields
+
+- **GIVEN** the Contact form is visible
+- **WHEN** the user submits the form without filling any fields
+- **THEN** validation errors appear for required fields
+
+#### Scenario: Contact info displays correctly
+
+- **GIVEN** the Contact section is visible
+- **THEN** an Address is displayed ("203 Fake St. Mountain View, San Francisco, California, USA")
+- **AND** a Phone number is displayed
+- **AND** an Email address is displayed
+
+**── Footer ──────────────────────────────────────────────────**
+
+#### Scenario: Footer renders with correct columns
+
+- **GIVEN** the Footer is visible
+- **THEN** it has a dark background (#333333)
+- **AND** it contains columns: "About Us", "Quick Links", "Follow Us", "Subscribe Newsletter"
+- **AND** "Quick Links" includes links to About, Services, Testimonials, Contact
+- **AND** a copyright line is displayed
+- **AND** the footer links to "https://www.componentdock.com/" branded as "Component Dock"
+
+**── Responsive ──────────────────────────────────────────────**
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** team cards stack vertically
+- **AND** blog cards stack vertically
+- **AND** the contact form and info stack vertically
+- **AND** the footer columns stack vertically
+
+**── Accessibility ───────────────────────────────────────────**
+
+#### Scenario: Page meets accessibility standards
+
+- **GIVEN** the page is loaded
+- **THEN** all images have descriptive alt text
+- **AND** all form inputs have associated labels
+- **AND** the page has a logical heading hierarchy (h1 → h2 → h3)
+- **AND** interactive elements are keyboard-focusable
+- **AND** color contrast meets WCAG AA standards for text on backgrounds
 
 ## Verification Checklist
 

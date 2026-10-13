@@ -36,87 +36,87 @@ Extracted from the live preview stylesheet (`style.css`):
 | Primary btn shadow | `0px 7px 21px 0px rgba(0,0,0,0.12)` | Subtle lift shadow |
 | Border btn | `border: 1px solid #007AFF`, no fill, `color: #007AFF` | `.borders-btn` |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Sudsly — Car Wash Service Website
 
 #### Scenario: Navbar renders with logo, navigation links, and phone CTA
 
-- Given the user loads the page
-- Then a sticky navbar is visible with a logo on the left
-- And navigation links "Home", "About", "Services", "Blog", "Contact" are present
-- And a phone number CTA button ("10 (87) 256-2903") appears on the right
+- **GIVEN** the user loads the page
+- **THEN** a sticky navbar is visible with a logo on the left
+- **AND** navigation links "Home", "About", "Services", "Blog", "Contact" are present
+- **AND** a phone number CTA button ("10 (87) 256-2903") appears on the right
 
 #### Scenario: Hero section displays headline with animated text
 
-- Given the user loads the page
-- Then a full-width hero section is visible with a background image
-- And the heading "Car Wash" is displayed in large white text (Poppins, 124px)
-- And the text "& Detailing" appears with a stroke/clip animation effect
-- And a subtitle paragraph is shown below
-- And an "Our Services" pill button (gradient blue, rounded) is visible
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero section is visible with a background image
+- **AND** the heading "Car Wash" is displayed in large white text (Poppins, 124px)
+- **AND** the text "& Detailing" appears with a stroke/clip animation effect
+- **AND** a subtitle paragraph is shown below
+- **AND** an "Our Services" pill button (gradient blue, rounded) is visible
 
 #### Scenario: Equipment/About section shows offset white card on light blue background
 
-- Given the user scrolls past the hero
-- Then a light blue (`#EEF6FF`) section is visible
-- And a white card is offset to the right half of the layout
-- And the card contains the heading "We have the latest equipment"
-- And a paragraph describing the service is shown
-- And an "About Us" border button (blue outline, no fill) is present
+- **GIVEN** the user scrolls past the hero
+- **THEN** a light blue (`#EEF6FF`) section is visible
+- **AND** a white card is offset to the right half of the layout
+- **AND** the card contains the heading "We have the latest equipment"
+- **AND** a paragraph describing the service is shown
+- **AND** an "About Us" border button (blue outline, no fill) is present
 
 #### Scenario: Pricing section shows three service tier cards
 
-- Given the user scrolls to the pricing area
-- Then the heading "We offer best services to our customer" is centered
-- And three pricing cards are displayed in a row (Car Wash $50, Detailing $100, Wash & Detailing $200)
-- And each card has an icon, title, "Starting at" label, price in purple, feature list, and "Get Started" border button
-- And cards have white background with light gray border and padding
+- **GIVEN** the user scrolls to the pricing area
+- **THEN** the heading "We offer best services to our customer" is centered
+- **AND** three pricing cards are displayed in a row (Car Wash $50, Detailing $100, Wash & Detailing $200)
+- **AND** each card has an icon, title, "Starting at" label, price in purple, feature list, and "Get Started" border button
+- **AND** cards have white background with light gray border and padding
 
 #### Scenario: Testimonial section shows carousel on blue gradient background
 
-- Given the user scrolls past pricing
-- Then a testimonial section with blue gradient background is visible
-- And a quote block with opening quote icon is displayed
-- And a founder avatar, name ("Robart Brown"), and role text are shown
-- And a decorative image appears on the right side
+- **GIVEN** the user scrolls past pricing
+- **THEN** a testimonial section with blue gradient background is visible
+- **AND** a quote block with opening quote icon is displayed
+- **AND** a founder avatar, name ("Robart Brown"), and role text are shown
+- **AND** a decorative image appears on the right side
 
 #### Scenario: Services/Categories section displays four feature cards
 
-- Given the user scrolls to the categories area
-- Then the heading "Why take our services?" is shown with green accent span
-- And four service cards are displayed in a 4-column grid
-- And each card has an SVG icon, title (e.g. "Car wash 100% without detergents"), and description paragraph
+- **GIVEN** the user scrolls to the categories area
+- **THEN** the heading "Why take our services?" is shown with green accent span
+- **AND** four service cards are displayed in a 4-column grid
+- **AND** each card has an SVG icon, title (e.g. "Car wash 100% without detergents"), and description paragraph
 
 #### Scenario: Video CTA section with play button
 
-- Given the user scrolls past services
-- Then a dark background section with a background image is visible
-- And a circular green play button with ripple animation is centered
-- And the heading "Your car will look as your new one" is displayed
-- And a description paragraph is shown below the heading
+- **GIVEN** the user scrolls past services
+- **THEN** a dark background section with a background image is visible
+- **AND** a circular green play button with ripple animation is centered
+- **AND** the heading "Your car will look as your new one" is displayed
+- **AND** a description paragraph is shown below the heading
 
 #### Scenario: Map/Location section
 
-- Given the user scrolls past the video area
-- Then two map images are displayed side by side filling the width
+- **GIVEN** the user scrolls past the video area
+- **THEN** two map images are displayed side by side filling the width
 
 #### Scenario: Footer with contact info, hours, navigation, and social links
 
-- Given the user reaches the bottom of the page
-- Then a dark footer is visible with background image overlay
-- And column 1 contains logo, description, phone number (styled large in blue), and email
-- And column 2 contains opening hours (Mon-Fri, Sat, Sun)
-- And column 3 contains navigation links (Home, About, Services, Blog, Contact)
-- And column 4 contains social icons (Twitter, Facebook, Pinterest)
-- And a footer-bottom bar shows copyright text
-- And the footer links to `https://www.componentdock.com/` branded as "Component Dock"
+- **GIVEN** the user reaches the bottom of the page
+- **THEN** a dark footer is visible with background image overlay
+- **AND** column 1 contains logo, description, phone number (styled large in blue), and email
+- **AND** column 2 contains opening hours (Mon-Fri, Sat, Sun)
+- **AND** column 3 contains navigation links (Home, About, Services, Blog, Contact)
+- **AND** column 4 contains social icons (Twitter, Facebook, Pinterest)
+- **AND** a footer-bottom bar shows copyright text
+- **AND** the footer links to `https://www.componentdock.com/` branded as "Component Dock"
 
 #### Scenario: Scroll-to-top button
 
-- Given the user scrolls down the page
-- Then a circular blue (`#007AFF`) scroll-to-top button appears in the bottom-right corner
-- And clicking it smoothly scrolls to the top of the page
+- **GIVEN** the user scrolls down the page
+- **THEN** a circular blue (`#007AFF`) scroll-to-top button appears in the bottom-right corner
+- **AND** clicking it smoothly scrolls to the top of the page
 
 ## Verification Checklist
 

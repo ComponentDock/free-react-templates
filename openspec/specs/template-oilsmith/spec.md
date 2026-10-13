@@ -42,150 +42,188 @@ Extracted from the live preview CSS (`style.css`) and rendered HTML:
 - Projects gallery: grid of completed work images with overlay text
 - Footer: dark (#252525) background, 4-column layout (logo + description, services links, contact info, business hours)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: OilSmith Template
 
-```gherkin
 Feature: OilSmith - Auto Repair Service Website
-  As a visitor to OilSmith
-  I want to see a professional auto repair service website
-  So that I can learn about services, book appointments, and contact the shop
+As a visitor to OilSmith
+I want to see a professional auto repair service website
+So that I can learn about services, book appointments, and contact the shop
 
-  Background:
-    Given the user navigates to the OilSmith homepage
+Background:
+- **GIVEN** the user navigates to the OilSmith homepage
 
-  # --- Navbar ---
-  Scenario: Navbar displays correctly
-    Then the navbar is visible at the top of the page
-    And the brand name "OilSmith" is displayed
-    And the navigation links include "Home", "About", "Services", "Projects", "Blog", and "Contact"
-    And the navbar has a white background with dark text
+**--- Navbar ---**
 
-  Scenario: Navbar brand has amber accent
-    Then the brand name period "." is displayed in amber (#f79f24)
+#### Scenario: Navbar displays correctly
 
-  Scenario: Navbar link hover shows amber underline
-    When the user hovers over a navigation link
-    Then an amber (#f79f24) underline appears below the link
+- **THEN** the navbar is visible at the top of the page
+- **AND** the brand name "OilSmith" is displayed
+- **AND** the navigation links include "Home", "About", "Services", "Projects", "Blog", and "Contact"
+- **AND** the navbar has a white background with dark text
 
-  # --- Hero Slider ---
-  Scenario: Hero slider displays with overlay
-    Then a hero slider is visible below the navbar
-    And the hero has a dark overlay (black at 0.4 opacity)
-    And the hero text is white
+#### Scenario: Navbar brand has amber accent
 
-  Scenario: Hero slide 1 shows repair headline
-    Then slide 1 displays "We are best car repair services" as the subtitle
-    And slide 1 displays "Make your car last longer" as the main heading
-    And slide 1 has a "Book an appointment" button
+- **THEN** the brand name period "." is displayed in amber (#f79f24)
 
-  Scenario: Hero slide 2 shows alternate content
-    Then slide 2 displays "We care about your car" as the subtitle
-    And slide 2 displays "It's time to come to repair your car" as the main heading
-    And slide 2 has a "Book an appointment" button
+#### Scenario: Navbar link hover shows amber underline
 
-  Scenario: Hero heading accent word is amber
-    Then the accent words in hero headings are displayed in amber (#f79f24)
+- **WHEN** the user hovers over a navigation link
+- **THEN** an amber (#f79f24) underline appears below the link
 
-  # --- Intro CTA Banner ---
-  Scenario: Intro CTA banner displays correctly
-    Then an intro CTA banner is visible below the hero
-    And it displays a wrench icon on the left
-    And it displays "Are you ready? Let's repair it now!" as heading text
-    And it has a "Book an Appointment" button with amber background
+**--- Hero Slider ---**
 
-  Scenario: Intro CTA button is clickable
-    When the user clicks "Book an Appointment"
-    Then the user is navigated to the appointment section
+#### Scenario: Hero slider displays with overlay
 
-  # --- Services Section ---
-  Scenario: Services section displays 6 services in 3 columns
-    Then a "Our car services" heading is visible
-    And the subheading reads "We offer Services"
-    And 6 service cards are displayed in a 3-column grid
+- **THEN** a hero slider is visible below the navbar
+- **AND** the hero has a dark overlay (black at 0.4 opacity)
+- **AND** the hero text is white
 
-  Scenario: Service cards show icon, title, description, and link
-    Then each service card has an icon, a heading, a description paragraph, and a "Read more" link
+#### Scenario: Hero slide 1 shows repair headline
 
-  Scenario: Services include Oil Change, Tire Change, Batteries, Engine Repair, Tow Truck
-    Then the services include "Oil change", "Tire Change", "Batteries", "Engine Repair", and "Tow Truck"
+- **THEN** slide 1 displays "We are best car repair services" as the subtitle
+- **AND** slide 1 displays "Make your car last longer" as the main heading
+- **AND** slide 1 has a "Book an appointment" button
 
-  # --- About Section ---
-  Scenario: About section displays on light background
-    Then the about section has a light gray (#f8f9fd) background
-    And it displays "Welcome to OilSmith" as a heading
-    And it displays "We help more than 45 years serving customer car" as a tagline
+#### Scenario: Hero slide 2 shows alternate content
 
-  Scenario: About section has feature checklist
-    Then a checklist of features is displayed with checkmark icons
+- **THEN** slide 2 displays "We care about your car" as the subtitle
+- **AND** slide 2 displays "It's time to come to repair your car" as the main heading
+- **AND** slide 2 has a "Book an appointment" button
 
-  # --- Stats Counter ---
-  Scenario: Counter section displays 4 statistics
-    Then 4 statistics are displayed on a dark (#202020) background
-    And the statistics are "Years of Experience", "Projects Completed", "Happy Customers", and "Awards Winning"
+#### Scenario: Hero heading accent word is amber
 
-  Scenario: Counter numbers are animated in amber
-    Then the counter numbers are displayed in amber (#f79f24)
-    And the counter labels are uppercase and light-colored
+- **THEN** the accent words in hero headings are displayed in amber (#f79f24)
 
-  # --- Appointment Form ---
-  Scenario: Appointment section has split layout
-    Then the appointment section has a left half with an image
-    And a right half with amber (#f79f24) overlay background
-    And a "Free Consultation" heading is visible
+**--- Intro CTA Banner ---**
 
-  Scenario: Appointment form has service selector
-    Then a "Select services" dropdown is displayed
-    And the options include "Change Oil", "Engine Repair", "Battery Replace", "Change Tire", and "Tow Truck"
+#### Scenario: Intro CTA banner displays correctly
 
-  Scenario: Appointment form has contact fields
-    Then the form includes name, email, date, time, phone number, and message fields
+- **THEN** an intro CTA banner is visible below the hero
+- **AND** it displays a wrench icon on the left
+- **AND** it displays "Are you ready? Let's repair it now!" as heading text
+- **AND** it has a "Book an Appointment" button with amber background
 
-  # --- Testimonials ---
-  Scenario: Testimonials section displays on light background
-    Then the testimonials section has a light (#f8f9fd) background
-    And it displays "Happy Clients & Feedbacks" as heading
-    And the subheading reads "Testimonies"
+#### Scenario: Intro CTA button is clickable
 
-  Scenario: Testimonials carousel shows client feedback
-    Then client testimonials are displayed with user images, names, positions, and quotes
-    And the carousel has previous/next navigation arrows
+- **WHEN** the user clicks "Book an Appointment"
+- **THEN** the user is navigated to the appointment section
 
-  # --- Blog Section ---
-  Scenario: Blog section displays 3 blog cards
-    Then a "Latest news from our blog" heading is visible
-    And 3 blog cards are displayed in a grid
-    And each card has an image, author name, date, and article title
+**--- Services Section ---**
 
-  # --- Pricing Section ---
-  Scenario: Pricing section shows 3 pricing cards
-    Then a "Pricing" heading is visible
-    And 3 pricing cards are displayed: "First PMS" ($78.98), "Engine Diagnostics" ($83.75), and "Tow Truck" ($85.00)
-    And each card has a description, feature checkmarks, and a "Get Started" button
+#### Scenario: Services section displays 6 services in 3 columns
 
-  # --- Projects Gallery ---
-  Scenario: Projects section displays completed work
-    Then a "Done Projects" heading is visible
-    And completed project images are shown in a grid with overlay labels
+- **THEN** a "Our car services" heading is visible
+- **AND** the subheading reads "We offer Services"
+- **AND** 6 service cards are displayed in a 3-column grid
 
-  # --- Footer ---
-  Scenario: Footer displays on dark background
-    Then the footer has a dark (#252525) background
-    And the footer brand name is white with an amber period
-    And social media links (Twitter, Facebook, Instagram) are displayed
+#### Scenario: Service cards show icon, title, description, and link
 
-  Scenario: Footer shows contact information
-    Then the footer displays the address, phone number, and email
-    And the footer shows business hours (Monday-Friday, Saturday, Sunday closures)
+- **THEN** each service card has an icon, a heading, a description paragraph, and a "Read more" link
 
-  Scenario: Footer has Component Dock link
-    Then the footer contains a link to "https://www.componentdock.com/"
-    And the link text includes "Component Dock"
+#### Scenario: Services include Oil Change, Tire Change, Batteries, Engine Repair, Tow Truck
 
-  Scenario: Footer services list
-    Then the footer lists services: Oil Change, Batteries, Tow Truck, Tire Change, Engine Repair
-```
+- **THEN** the services include "Oil change", "Tire Change", "Batteries", "Engine Repair", and "Tow Truck"
+
+**--- About Section ---**
+
+#### Scenario: About section displays on light background
+
+- **THEN** the about section has a light gray (#f8f9fd) background
+- **AND** it displays "Welcome to OilSmith" as a heading
+- **AND** it displays "We help more than 45 years serving customer car" as a tagline
+
+#### Scenario: About section has feature checklist
+
+- **THEN** a checklist of features is displayed with checkmark icons
+
+**--- Stats Counter ---**
+
+#### Scenario: Counter section displays 4 statistics
+
+- **THEN** 4 statistics are displayed on a dark (#202020) background
+- **AND** the statistics are "Years of Experience", "Projects Completed", "Happy Customers", and "Awards Winning"
+
+#### Scenario: Counter numbers are animated in amber
+
+- **THEN** the counter numbers are displayed in amber (#f79f24)
+- **AND** the counter labels are uppercase and light-colored
+
+**--- Appointment Form ---**
+
+#### Scenario: Appointment section has split layout
+
+- **THEN** the appointment section has a left half with an image
+- **AND** a right half with amber (#f79f24) overlay background
+- **AND** a "Free Consultation" heading is visible
+
+#### Scenario: Appointment form has service selector
+
+- **THEN** a "Select services" dropdown is displayed
+- **AND** the options include "Change Oil", "Engine Repair", "Battery Replace", "Change Tire", and "Tow Truck"
+
+#### Scenario: Appointment form has contact fields
+
+- **THEN** the form includes name, email, date, time, phone number, and message fields
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section displays on light background
+
+- **THEN** the testimonials section has a light (#f8f9fd) background
+- **AND** it displays "Happy Clients & Feedbacks" as heading
+- **AND** the subheading reads "Testimonies"
+
+#### Scenario: Testimonials carousel shows client feedback
+
+- **THEN** client testimonials are displayed with user images, names, positions, and quotes
+- **AND** the carousel has previous/next navigation arrows
+
+**--- Blog Section ---**
+
+#### Scenario: Blog section displays 3 blog cards
+
+- **THEN** a "Latest news from our blog" heading is visible
+- **AND** 3 blog cards are displayed in a grid
+- **AND** each card has an image, author name, date, and article title
+
+**--- Pricing Section ---**
+
+#### Scenario: Pricing section shows 3 pricing cards
+
+- **THEN** a "Pricing" heading is visible
+- **AND** 3 pricing cards are displayed: "First PMS" ($78.98), "Engine Diagnostics" ($83.75), and "Tow Truck" ($85.00)
+- **AND** each card has a description, feature checkmarks, and a "Get Started" button
+
+**--- Projects Gallery ---**
+
+#### Scenario: Projects section displays completed work
+
+- **THEN** a "Done Projects" heading is visible
+- **AND** completed project images are shown in a grid with overlay labels
+
+**--- Footer ---**
+
+#### Scenario: Footer displays on dark background
+
+- **THEN** the footer has a dark (#252525) background
+- **AND** the footer brand name is white with an amber period
+- **AND** social media links (Twitter, Facebook, Instagram) are displayed
+
+#### Scenario: Footer shows contact information
+
+- **THEN** the footer displays the address, phone number, and email
+- **AND** the footer shows business hours (Monday-Friday, Saturday, Sunday closures)
+
+#### Scenario: Footer has Component Dock link
+
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the link text includes "Component Dock"
+
+#### Scenario: Footer services list
+
+- **THEN** the footer lists services: Oil Change, Batteries, Tow Truck, Tire Change, Engine Repair
 
 ## Verification Checklist
 

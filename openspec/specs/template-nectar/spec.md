@@ -53,181 +53,181 @@ stats, testimonials carousel, blog cards, and a dark footer.
 
 ## Requirements
 
-### Requirement: TopBar
+### Feature: TopBar
 
-```gherkin
 #### Scenario: TopBar displays contact information
-  Given the user loads the page
-  Then the top bar shows an email address
-  And a phone number
-  And a "Request A Quote" button
+
+- **GIVEN** the user loads the page
+- **THEN** the top bar shows an email address
+- **AND** a phone number
+- **AND** a "Request A Quote" button
 
 #### Scenario: TopBar is responsive
-  Given the viewport is narrow (mobile)
-  Then the top bar stacks vertically
-  And all contact items remain visible
-```
 
-### Requirement: Navbar
+- **GIVEN** the viewport is narrow (mobile)
+- **THEN** the top bar stacks vertically
+- **AND** all contact items remain visible
 
-```gherkin
+### Feature: Navbar
+
 #### Scenario: Navbar shows logo and navigation links
-  Given the user loads the page
-  Then the navbar shows the logo text "Nectar."
-  And the navigation links are visible: "Home", "About", "Project", "Blog", "Contact"
-  And a search input is visible on the right
+
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows the logo text "Nectar."
+- **AND** the navigation links are visible: "Home", "About", "Project", "Blog", "Contact"
+- **AND** a search input is visible on the right
 
 #### Scenario: Mobile hamburger menu
-  Given the viewport is narrow (mobile)
-  When the user taps the hamburger toggle
-  Then the navigation links expand/collapse
-```
 
-### Requirement: Hero Slider
+- **GIVEN** the viewport is narrow (mobile)
+- **WHEN** the user taps the hamburger toggle
+- **THEN** the navigation links expand/collapse
 
-```gherkin
+### Feature: Hero Slider
+
 #### Scenario: Hero displays headline and CTA
-  Given the user is on the homepage
-  Then the hero section shows a headline with accent text
-  And a subheading paragraph
-  And a "Request A Quote" button
+
+- **GIVEN** the user is on the homepage
+- **THEN** the hero section shows a headline with accent text
+- **AND** a subheading paragraph
+- **AND** a "Request A Quote" button
 
 #### Scenario: Hero has multiple slides
-  Given the hero slider is visible
-  Then at least 2 slides are present
-  And each slide has a background image with overlay
-  And navigation dots or arrows allow slide switching
-```
 
-### Requirement: Quote and About
+- **GIVEN** the hero slider is visible
+- **THEN** at least 2 slides are present
+- **AND** each slide has a background image with overlay
+- **AND** navigation dots or arrows allow slide switching
 
-```gherkin
+### Feature: Quote and About
+
 #### Scenario: Request A Quote form is displayed
-  Given the user scrolls to the quote section
-  Then a form with fields is visible: First Name, Last Name, Service (select), Phone, Message
-  And a submit button labeled "Appointment" is present
+
+- **GIVEN** the user scrolls to the quote section
+- **THEN** a form with fields is visible: First Name, Last Name, Service (select), Phone, Message
+- **AND** a submit button labeled "Appointment" is present
 
 #### Scenario: About section shows company description
-  Given the user scrolls to the about section
-  Then a heading "We Are Highly Recommendable Construction Firm" is visible
-  And a paragraph of description text is shown
-  And a "Read More" button is visible
-```
 
-### Requirement: Services
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading "We Are Highly Recommendable Construction Firm" is visible
+- **AND** a paragraph of description text is shown
+- **AND** a "Read More" button is visible
 
-```gherkin
+### Feature: Services
+
 #### Scenario: Services section shows service items
-  Given the user scrolls to the services section
-  Then a heading "Experience Great Services" is visible
-  And 3 service cards are displayed
-  And each card has an icon, title, and description
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a heading "Experience Great Services" is visible
+- **AND** 3 service cards are displayed
+- **AND** each card has an icon, title, and description
 
 #### Scenario: Each service card has social links
-  Given a service card is rendered
-  Then social media icons are visible (twitter, facebook, google-plus, instagram)
-```
 
-### Requirement: CTABanner
+- **GIVEN** a service card is rendered
+- **THEN** social media icons are visible (twitter, facebook, google-plus, instagram)
 
-```gherkin
+### Feature: CTABanner
+
 #### Scenario: CTA banner displays with parallax
-  Given the user scrolls to the CTA banner
-  Then a full-width section with a background image is visible
-  And the background image has a parallax effect
-```
 
-### Requirement: Team Members
+- **GIVEN** the user scrolls to the CTA banner
+- **THEN** a full-width section with a background image is visible
+- **AND** the background image has a parallax effect
 
-```gherkin
+### Feature: Team Members
+
 #### Scenario: Team section displays member cards
-  Given the user scrolls to the team section
-  Then 4 team member cards are visible
-  And each card has an avatar image, name, and role
-  And each card has social media icon links
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** 4 team member cards are visible
+- **AND** each card has an avatar image, name, and role
+- **AND** each card has social media icon links
 
 #### Scenario: Team member cards are responsive
-  Given the viewport is narrow (mobile)
-  Then team member cards stack vertically
-```
 
-### Requirement: Project Gallery
+- **GIVEN** the viewport is narrow (mobile)
+- **THEN** team member cards stack vertically
 
-```gherkin
+### Feature: Project Gallery
+
 #### Scenario: Project gallery shows project images
-  Given the user scrolls to the project gallery
-  Then a heading is visible
-  And 3 project image cards are displayed in a grid
+
+- **GIVEN** the user scrolls to the project gallery
+- **THEN** a heading is visible
+- **AND** 3 project image cards are displayed in a grid
 
 #### Scenario: Project card hover effect
-  Given the user hovers over a project card
-  Then a yellow overlay fades in
-  And the project name slides up from the bottom
-  And a circular zoom icon appears
-```
 
-### Requirement: Counter Stats
+- **GIVEN** the user hovers over a project card
+- **THEN** a yellow overlay fades in
+- **AND** the project name slides up from the bottom
+- **AND** a circular zoom icon appears
 
-```gherkin
+### Feature: Counter Stats
+
 #### Scenario: Counter section shows statistics
-  Given the user scrolls to the counter section
-  Then 4 stat blocks are visible
-  And each block shows a number and label
-  And the numbers are: 30 (Years Experienced), 1500 (Project Successful), 100 (Professional Expert), 300 (Happy Customers)
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 4 stat blocks are visible
+- **AND** each block shows a number and label
+- **AND** the numbers are: 30 (Years Experienced), 1500 (Project Successful), 100 (Professional Expert), 300 (Happy Customers)
 
 #### Scenario: Counter numbers animate on scroll
-  Given the counter section enters the viewport
-  Then the numbers animate from 0 to their target values
-```
 
-### Requirement: Services and Testimonials
+- **GIVEN** the counter section enters the viewport
+- **THEN** the numbers animate from 0 to their target values
 
-```gherkin
+### Feature: Services and Testimonials
+
 #### Scenario: Testimonials carousel displays reviews
-  Given the user scrolls to the testimonials section
-  Then a heading "Satisfied Customer" is visible
-  And testimonial cards are displayed in a carousel
-  And each card has a quote icon, review text, name, and role
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a heading "Satisfied Customer" is visible
+- **AND** testimonial cards are displayed in a carousel
+- **AND** each card has a quote icon, review text, name, and role
 
 #### Scenario: Services flow list is displayed
-  Given the user views the left column
-  Then 3 service items are listed vertically
-  And each has an icon, title, and short description
-```
 
-### Requirement: Blog
+- **GIVEN** the user views the left column
+- **THEN** 3 service items are listed vertically
+- **AND** each has an icon, title, and short description
 
-```gherkin
+### Feature: Blog
+
 #### Scenario: Blog section shows recent posts
-  Given the user scrolls to the blog section
-  Then a heading "Recent Blog" is visible
-  And 3 blog cards are displayed
-  And each card has an image with a date badge overlay
-  And each card has a title, excerpt, "Read More" button, author, and comment count
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a heading "Recent Blog" is visible
+- **AND** 3 blog cards are displayed
+- **AND** each card has an image with a date badge overlay
+- **AND** each card has a title, excerpt, "Read More" button, author, and comment count
 
 #### Scenario: Blog date badge shows formatted date
-  Given a blog card is rendered
-  Then the date badge displays the day, month, and year
-  And the badge has a yellow background
-```
 
-### Requirement: Footer
+- **GIVEN** a blog card is rendered
+- **THEN** the date badge displays the day, month, and year
+- **AND** the badge has a yellow background
 
-```gherkin
+### Feature: Footer
+
 #### Scenario: Footer displays four columns
-  Given the user scrolls to the footer
-  Then 4 columns are visible: brand + social, services list, recent blog, newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are visible: brand + social, services list, recent blog, newsletter
 
 #### Scenario: Newsletter form in footer
-  Given the footer newsletter form is visible
-  Then an email input with placeholder "Enter email address" is shown
-  And a "Subscribe" button is present
+
+- **GIVEN** the footer newsletter form is visible
+- **THEN** an email input with placeholder "Enter email address" is shown
+- **AND** a "Subscribe" button is present
 
 #### Scenario: Footer copyright line
-  Given the footer is visible
-  Then a copyright line is shown at the bottom
-  And the footer links to Component Dock (https://www.componentdock.com/)
-```
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright line is shown at the bottom
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
 
 ## Verification checklist
 

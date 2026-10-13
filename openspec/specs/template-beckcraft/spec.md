@@ -50,82 +50,84 @@ Extracted from `css/style.css` at preview.colorlib.com/theme/beckham/:
 6. **Counter** — Statistics section with animated counters.
 7. **Footer** — Contact info, copyright, "Made with Component Dock" branding.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Sticky navbar with navigation links
-  Given the page loads
-  Then a sticky navbar is visible at the top
-  And it contains the logo "BeckCraft"
-  And it shows nav links for Home, About, Services, Portfolio, Contact
 
-Scenario: Navbar remains visible on scroll
-  Given the user scrolls down
-  Then the navbar stays fixed at the top of the viewport
-```
+#### Scenario: Sticky navbar with navigation links
+
+- **GIVEN** the page loads
+- **THEN** a sticky navbar is visible at the top
+- **AND** it contains the logo "BeckCraft"
+- **AND** it shows nav links for Home, About, Services, Portfolio, Contact
+
+#### Scenario: Navbar remains visible on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar stays fixed at the top of the viewport
 
 ### Hero Slider
-```gherkin
-Scenario: Hero carousel displays slides
-  Given the page loads
-  Then a full-width hero carousel is visible
-  And slide 1 shows "Hello! I'm Beckham Muff" greeting
-  And each slide shows "A Web Designer" title
-  And each slide has a dark overlay on the background image
 
-Scenario: Hero carousel auto-plays
-  Given the hero is visible
-  When 5 seconds pass
-  Then the carousel advances to the next slide automatically
-```
+#### Scenario: Hero carousel displays slides
+
+- **GIVEN** the page loads
+- **THEN** a full-width hero carousel is visible
+- **AND** slide 1 shows "Hello! I'm Beckham Muff" greeting
+- **AND** each slide shows "A Web Designer" title
+- **AND** each slide has a dark overlay on the background image
+
+#### Scenario: Hero carousel auto-plays
+
+- **GIVEN** the hero is visible
+- **WHEN** 5 seconds pass
+- **THEN** the carousel advances to the next slide automatically
 
 ### About
-```gherkin
-Scenario: About section displays with contact info
-  Given the about section scrolls into view
-  Then the heading reads "About"
-  And "Hi! I'm Beckham Muff" subheading is visible
-  And a description paragraph is shown
-  And "Checkout my resume" and "Contact me here!" CTAs are visible
-  And contact info (email, phone) is displayed
-```
+
+#### Scenario: About section displays with contact info
+
+- **GIVEN** the about section scrolls into view
+- **THEN** the heading reads "About"
+- **AND** "Hi! I'm Beckham Muff" subheading is visible
+- **AND** a description paragraph is shown
+- **AND** "Checkout my resume" and "Contact me here!" CTAs are visible
+- **AND** contact info (email, phone) is displayed
 
 ### Services
-```gherkin
-Scenario: Services section shows 8 service items
-  Given the services section is in view
-  Then the heading reads "My services"
-  And 8 service items are displayed in a grid
-  And the services include: UI/UX Design, Mobile App Design, Responsive Design, Product Strategy, Design Sprints, UX Strategy, HTML/CSS, Prototyping
-```
+
+#### Scenario: Services section shows 8 service items
+
+- **GIVEN** the services section is in view
+- **THEN** the heading reads "My services"
+- **AND** 8 service items are displayed in a grid
+- **AND** the services include: UI/UX Design, Mobile App Design, Responsive Design, Product Strategy, Design Sprints, UX Strategy, HTML/CSS, Prototyping
 
 ### Portfolio
-```gherkin
-Scenario: Portfolio section shows 3 work items
-  Given the portfolio section is in view
-  Then the heading reads "Portfolio"
-  And 3 portfolio items are displayed
-  And each item has an image, title, and description
-  And the items are: Illustration, Web Design, UI/UX Design
-```
+
+#### Scenario: Portfolio section shows 3 work items
+
+- **GIVEN** the portfolio section is in view
+- **THEN** the heading reads "Portfolio"
+- **AND** 3 portfolio items are displayed
+- **AND** each item has an image, title, and description
+- **AND** the items are: Illustration, Web Design, UI/UX Design
 
 ### Counter
-```gherkin
-Scenario: Counter section displays statistics
-  Given the counter section scrolls into view
-  Then statistics are shown
-  And the counters animate on scroll
-```
+
+#### Scenario: Counter section displays statistics
+
+- **GIVEN** the counter section scrolls into view
+- **THEN** statistics are shown
+- **AND** the counters animate on scroll
 
 ### Footer
-```gherkin
-Scenario: Footer displays contact info and copyright
-  Given the footer is visible
-  Then contact information is shown
-  And a copyright notice is displayed
-  And "Made with Component Dock" branding is present
-```
+
+#### Scenario: Footer displays contact info and copyright
+
+- **GIVEN** the footer is visible
+- **THEN** contact information is shown
+- **AND** a copyright notice is displayed
+- **AND** "Made with Component Dock" branding is present
 
 ## Verification Checklist
 

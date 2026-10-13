@@ -29,63 +29,71 @@ Extracted from the screenshot and ColorLib template page CSS:
 | Sidebar position   | Right                                                              |
 | Chevron icon       | Dropdown arrow on category items                                   |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Panelview — Sidebar Navigation Template
 
   Background:
-    Given the user opens Panelview in a browser
-    Then the page displays a two-column layout with main content on the left and sidebar on the right
+- **GIVEN** the user opens Panelview in a browser
+- **THEN** the page displays a two-column layout with main content on the left and sidebar on the right
 
-  Scenario: Page title and heading
-    Given the page is loaded
-    Then the main content area displays a heading "Sidebar #08" (or paraphrase)
-    And the heading is large, bold, and near-black
+#### Scenario: Page title and heading
 
-  Scenario: Main content paragraphs
-    Given the page is loaded
-    Then the main content area contains two paragraphs of body text
-    And the text is dark gray and uses a system sans-serif font
+- **GIVEN** the page is loaded
+- **THEN** the main content area displays a heading "Sidebar #08" (or paraphrase)
+- **AND** the heading is large, bold, and near-black
 
-  Scenario: Categories section in sidebar
-    Given the page is loaded
-    When the user looks at the sidebar
-    Then a "Categories" heading is visible
-    And four category items are listed: "Mens Shoes", "Mens Shoes", "Accessories", "Clothes"
-    And each category item has a dropdown chevron on the right
-    And each category item is separated by a light gray horizontal divider
+#### Scenario: Main content paragraphs
 
-  Scenario: Category item hover
-    Given the Categories section is visible
-    When the user hovers over a category item
-    Then the item shows a subtle hover state (background or text color change)
+- **GIVEN** the page is loaded
+- **THEN** the main content area contains two paragraphs of body text
+- **AND** the text is dark gray and uses a system sans-serif font
 
-  Scenario: Tag Cloud section in sidebar
-    Given the page is loaded
-    When the user looks below Categories
-    Then a "Tag Cloud" heading is visible
-    And eight tags are displayed: "DISH", "MENU", "FOOD", "SWEET", "TASTY", "DELICIOUS", "DESSERTS", "DRINKS"
-    And each tag has a light gray background with small rounded corners
-    And tag text is uppercase and medium gray
+#### Scenario: Categories section in sidebar
 
-  Scenario: Newsletter section in sidebar
-    Given the page is loaded
-    When the user looks below Tag Cloud
-    Then a "Newsletter" heading is visible
-    And an email input field with placeholder "Enter Email Address" is displayed
-    And the input has a clean border style matching the overall design
+- **GIVEN** the page is loaded
+- **WHEN** the user looks at the sidebar
+- **THEN** a "Categories" heading is visible
+- **AND** four category items are listed: "Mens Shoes", "Mens Shoes", "Accessories", "Clothes"
+- **AND** each category item has a dropdown chevron on the right
+- **AND** each category item is separated by a light gray horizontal divider
 
-  Scenario: Responsive layout
-    Given the user is on a mobile viewport (< 768px)
-    When the page is loaded
-    Then the sidebar stacks below the main content
-    And all sections remain accessible and readable
+#### Scenario: Category item hover
 
-  Scenario: Footer with Component Dock link
-    Given the page is loaded
-    When the user scrolls to the bottom
-    Then a footer is visible with a link to https://www.componentdock.com/
-    And the link text includes "Component Dock"
+- **GIVEN** the Categories section is visible
+- **WHEN** the user hovers over a category item
+- **THEN** the item shows a subtle hover state (background or text color change)
+
+#### Scenario: Tag Cloud section in sidebar
+
+- **GIVEN** the page is loaded
+- **WHEN** the user looks below Categories
+- **THEN** a "Tag Cloud" heading is visible
+- **AND** eight tags are displayed: "DISH", "MENU", "FOOD", "SWEET", "TASTY", "DELICIOUS", "DESSERTS", "DRINKS"
+- **AND** each tag has a light gray background with small rounded corners
+- **AND** tag text is uppercase and medium gray
+
+#### Scenario: Newsletter section in sidebar
+
+- **GIVEN** the page is loaded
+- **WHEN** the user looks below Tag Cloud
+- **THEN** a "Newsletter" heading is visible
+- **AND** an email input field with placeholder "Enter Email Address" is displayed
+- **AND** the input has a clean border style matching the overall design
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user is on a mobile viewport (< 768px)
+- **WHEN** the page is loaded
+- **THEN** the sidebar stacks below the main content
+- **AND** all sections remain accessible and readable
+
+#### Scenario: Footer with Component Dock link
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the bottom
+- **THEN** a footer is visible with a link to https://www.componentdock.com/
+- **AND** the link text includes "Component Dock"
 
 ## Verification checklist
 

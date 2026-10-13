@@ -59,135 +59,111 @@ testimonials, team, contact form, info banner, and a 4-column footer.
 13. **Footer** — White background, 4 columns: logo + contact info (email, phone, address) + social icons; Services links (Marketing & SEO, Startup, Finance solution, Food, Travel); Useful Links (About, Blog, Contact, Appointment); Newsletter (email input + Subscribe button + description text).
 14. **Copyright Bar** — "Copyright © [year] All rights reserved | Made with ♥ by Component Dock" (replacing original Colorlib attribution).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Top bar displays contact info
+### Feature: Consultflow template behaviour
 
-```
-Given the Consultflow page loads
-Then the top bar shows "Welcome to Conbusi consulting service" text
-And the email "info@docmed.com" is visible
-And the phone number "1601-609 6780" is visible
-And social icons for LinkedIn, Facebook, and Google+ are shown
-And the top bar is hidden on mobile viewports
-```
+#### Scenario: Top bar displays contact info
 
-### Scenario: Navbar renders navigation links and CTA
+- **GIVEN** the Consultflow page loads
+- **THEN** the top bar shows "Welcome to Conbusi consulting service" text
+- **AND** the email "info@docmed.com" is visible
+- **AND** the phone number "1601-609 6780" is visible
+- **AND** social icons for LinkedIn, Facebook, and Google+ are shown
+- **AND** the top bar is hidden on mobile viewports
 
-```
-Given the Consultflow page loads
-Then the navbar displays: Home, Pages (with dropdown), Services, Case Study, Blog (with dropdown), Contact
-And the Pages dropdown contains: Case Details, About, Elements
-And the Blog dropdown contains: Blog, Single Blog
-And a "Get a Quote" button is visible in the navbar
-And the navbar is sticky on scroll
-```
+#### Scenario: Navbar renders navigation links and CTA
 
-### Scenario: Hero slider displays headline and CTA
+- **GIVEN** the Consultflow page loads
+- **THEN** the navbar displays: Home, Pages (with dropdown), Services, Case Study, Blog (with dropdown), Contact
+- **AND** the Pages dropdown contains: Case Details, About, Elements
+- **AND** the Blog dropdown contains: Blog, Single Blog
+- **AND** a "Get a Quote" button is visible in the navbar
+- **AND** the navbar is sticky on scroll
 
-```
-Given the Consultflow page loads
-Then the hero slider shows the headline "Big Opportunity for your Business"
-And a blue gradient pill button labeled "Our Services" is visible
-And the hero section has a background image with dark overlay
-And the slider contains at least 2 slides
-```
+#### Scenario: Hero slider displays headline and CTA
 
-### Scenario: Services section shows 6 service cards
+- **GIVEN** the Consultflow page loads
+- **THEN** the hero slider shows the headline "Big Opportunity for your Business"
+- **AND** a blue gradient pill button labeled "Our Services" is visible
+- **AND** the hero section has a background image with dark overlay
+- **AND** the slider contains at least 2 slides
 
-```
-Given the Consultflow page loads
-Then the services section displays "What we Do?" heading
-And 6 service cards are shown in a 3-column layout
-And each card has an icon, a title, a description, and a "Learn More" link
-And the service titles are: Marketing & SEO Agency, Startup Agency, Corporate Business, Finance Solution, Food & Restaurant, Travel Agency
-```
+#### Scenario: Services section shows 6 service cards
 
-### Scenario: About section displays consulting info
+- **GIVEN** the Consultflow page loads
+- **THEN** the services section displays "What we Do?" heading
+- **AND** 6 service cards are shown in a 3-column layout
+- **AND** each card has an icon, a title, a description, and a "Learn More" link
+- **AND** the service titles are: Marketing & SEO Agency, Startup Agency, Corporate Business, Finance Solution, Food & Restaurant, Travel Agency
 
-```
-Given the Consultflow page loads
-Then the about section shows "Why our Consulting?" heading
-And a paragraph description is visible
-And an "About Us" blue gradient pill button is displayed
-And an image appears on the right side of the section
-```
+#### Scenario: About section displays consulting info
 
-### Scenario: Counter section displays animated stats
+- **GIVEN** the Consultflow page loads
+- **THEN** the about section shows "Why our Consulting?" heading
+- **AND** a paragraph description is visible
+- **AND** an "About Us" blue gradient pill button is displayed
+- **AND** an image appears on the right side of the section
 
-```
-Given the Consultflow page loads
-Then the counter section has a dark overlay background
-And 4 stats are displayed: 200+ Team Members, 97% Business Success, 5628 Happy Client, 5637 Business Done
-And each stat has an icon above the number
-```
+#### Scenario: Counter section displays animated stats
 
-### Scenario: Case study carousel shows 4 items
+- **GIVEN** the Consultflow page loads
+- **THEN** the counter section has a dark overlay background
+- **AND** 4 stats are displayed: 200+ Team Members, 97% Business Success, 5628 Happy Client, 5637 Business Done
+- **AND** each stat has an icon above the number
 
-```
-Given the Consultflow page loads
-Then the case study section displays "Case Study" heading
-And 4 case study cards are shown in a carousel
-And each card has an image, a category label, and a title
-And a "More Cases" outline button is visible below the carousel
-```
+#### Scenario: Case study carousel shows 4 items
 
-### Scenario: FAQ accordion has 3 items
+- **GIVEN** the Consultflow page loads
+- **THEN** the case study section displays "Case Study" heading
+- **AND** 4 case study cards are shown in a carousel
+- **AND** each card has an image, a category label, and a title
+- **AND** a "More Cases" outline button is visible below the carousel
 
-```
-Given the Consultflow page loads
-Then the FAQ section shows "Frequently ask" heading
-And 3 accordion items are displayed
-And clicking an accordion header toggles the answer visibility
-```
+#### Scenario: FAQ accordion has 3 items
 
-### Scenario: Testimonials carousel shows review slides
+- **GIVEN** the Consultflow page loads
+- **THEN** the FAQ section shows "Frequently ask" heading
+- **AND** 3 accordion items are displayed
+- **AND** clicking an accordion header toggles the answer visibility
 
-```
-Given the Consultflow page loads
-Then the testimonial section has a dark overlay background
-And testimonial slides contain a quote icon, review text, author name, and author role
-And the carousel contains at least 3 slides
-```
+#### Scenario: Testimonials carousel shows review slides
 
-### Scenario: Team section displays 3 members
+- **GIVEN** the Consultflow page loads
+- **THEN** the testimonial section has a dark overlay background
+- **AND** testimonial slides contain a quote icon, review text, author name, and author role
+- **AND** the carousel contains at least 3 slides
 
-```
-Given the Consultflow page loads
-Then the team section shows "Expert Team" heading
-And 3 team member cards are displayed
-And each card has a photo, name, role, and social media links (Facebook, Twitter, Instagram)
-```
+#### Scenario: Team section displays 3 members
 
-### Scenario: Contact form captures user input
+- **GIVEN** the Consultflow page loads
+- **THEN** the team section shows "Expert Team" heading
+- **AND** 3 team member cards are displayed
+- **AND** each card has a photo, name, role, and social media links (Facebook, Twitter, Instagram)
 
-```
-Given the Consultflow page loads
-Then a "Get Free Quote" form is visible with inputs: Your Name, Email, Message
-And a blue gradient "Send" button is displayed
-And a contact image appears beside the form
-```
+#### Scenario: Contact form captures user input
 
-### Scenario: Info banner displays phone CTA
+- **GIVEN** the Consultflow page loads
+- **THEN** a "Get Free Quote" form is visible with inputs: Your Name, Email, Message
+- **AND** a blue gradient "Send" button is displayed
+- **AND** a contact image appears beside the form
 
-```
-Given the Consultflow page loads
-Then the info banner shows "For Any Information Call Us" heading
-And a blue gradient pill button with phone number "+10 673 763 6786" is visible
-And the section has a dark overlay background
-```
+#### Scenario: Info banner displays phone CTA
 
-### Scenario: Footer renders 4 columns
+- **GIVEN** the Consultflow page loads
+- **THEN** the info banner shows "For Any Information Call Us" heading
+- **AND** a blue gradient pill button with phone number "+10 673 763 6786" is visible
+- **AND** the section has a dark overlay background
 
-```
-Given the Consultflow page loads
-Then the footer displays 4 columns
-And column 1 has logo, contact info, and social links
-And column 2 has Services links
-And column 3 has Useful Links
-And column 4 has a newsletter form with email input and Subscribe button
-And a copyright bar is shown with "Component Dock" attribution
-```
+#### Scenario: Footer renders 4 columns
+
+- **GIVEN** the Consultflow page loads
+- **THEN** the footer displays 4 columns
+- **AND** column 1 has logo, contact info, and social links
+- **AND** column 2 has Services links
+- **AND** column 3 has Useful Links
+- **AND** column 4 has a newsletter form with email input and Subscribe button
+- **AND** a copyright bar is shown with "Component Dock" attribution
 
 ## Verification Checklist
 

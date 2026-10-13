@@ -50,62 +50,57 @@ Full-viewport section (`.s004`):
    c. **Search icon button** — absolutely positioned inside the bar, dark magnifying glass SVG
 3. **Suggestion tags** — row of white pill-shaped tags below the search bar: "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with background image
-```
-Given the user opens the SearchHub page
-Then the viewport is filled with a background image
-And the background is centered and covers the full viewport
-```
+### Feature: SearchHub template behaviour
 
-### Scenario: Heading is displayed
-```
-Given the user opens the SearchHub page
-Then the heading "WHAT ARE YOU LOOKING FOR?" is visible
-And the heading is white, bold (weight 800), and centered
-And the heading font size is 36px
-```
+#### Scenario: Page renders with background image
 
-### Scenario: Search bar renders as pill shape
-```
-Given the user opens the SearchHub page
-Then a white search bar is centered below the heading
-And the search bar has fully rounded corners (border-radius 34px)
-And the search bar has a minimum height of 70px
-```
+- **GIVEN** the user opens the SearchHub page
+- **THEN** the viewport is filled with a background image
+- **AND** the background is centered and covers the full viewport
 
-### Scenario: Text input accepts search query
-```
-Given the user opens the SearchHub page
-Then a text input with placeholder "Type to search..." is visible inside the search bar
-When the user types "shoes" into the input
-Then the input value is "shoes"
-```
+#### Scenario: Heading is displayed
 
-### Scenario: Search icon button is interactive
-```
-Given the user opens the SearchHub page
-Then a magnifying glass icon is visible on the right side of the search bar
-And the icon fill color is #333333
-When the user hovers over the search icon
-Then the icon fill color changes to #000000
-```
+- **GIVEN** the user opens the SearchHub page
+- **THEN** the heading "WHAT ARE YOU LOOKING FOR?" is visible
+- **AND** the heading is white, bold (weight 800), and centered
+- **AND** the heading font size is 36px
 
-### Scenario: Suggestion tags are displayed
-```
-Given the user opens the SearchHub page
-Then 5 suggestion tags are visible below the search bar
-And the tags read: "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
-And the tags are white with rounded corners (border-radius 16px)
-```
+#### Scenario: Search bar renders as pill shape
 
-### Scenario: Responsive layout on mobile
-```
-Given the user opens the SearchHub page on a viewport narrower than 768px
-Then the search bar and heading remain centered
-And the search bar adapts to the smaller width
-```
+- **GIVEN** the user opens the SearchHub page
+- **THEN** a white search bar is centered below the heading
+- **AND** the search bar has fully rounded corners (border-radius 34px)
+- **AND** the search bar has a minimum height of 70px
+
+#### Scenario: Text input accepts search query
+
+- **GIVEN** the user opens the SearchHub page
+- **THEN** a text input with placeholder "Type to search..." is visible inside the search bar
+- **WHEN** the user types "shoes" into the input
+- **THEN** the input value is "shoes"
+
+#### Scenario: Search icon button is interactive
+
+- **GIVEN** the user opens the SearchHub page
+- **THEN** a magnifying glass icon is visible on the right side of the search bar
+- **AND** the icon fill color is #333333
+- **WHEN** the user hovers over the search icon
+- **THEN** the icon fill color changes to #000000
+
+#### Scenario: Suggestion tags are displayed
+
+- **GIVEN** the user opens the SearchHub page
+- **THEN** 5 suggestion tags are visible below the search bar
+- **AND** the tags read: "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
+- **AND** the tags are white with rounded corners (border-radius 16px)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the SearchHub page on a viewport narrower than 768px
+- **THEN** the search bar and heading remain centered
+- **AND** the search bar adapts to the smaller width
 
 ## Verification Checklist
 

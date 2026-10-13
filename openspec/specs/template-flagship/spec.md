@@ -78,50 +78,55 @@ Extracted from the live preview CSS (`css/style.css`) and screenshot analysis:
 
 ### Gherkin Scenarios
 
-```gherkin
 Feature: Flagship Template — Fashion E-Commerce
 
-  Background:
-    Given the user visits the Flagship homepage
+Background:
+- **GIVEN** the user visits the Flagship homepage
 
-  Scenario: Navbar displays correctly
-    Then the logo "Flagship" is visible
-    And navigation links "Collection", "Shop", "Catalogs", "Contact" are visible
-    And a search icon, wishlist icon, and cart icon with badge are displayed
-    And clicking the search icon opens a search overlay
+#### Scenario: Navbar displays correctly
 
-  Scenario: Hero section displays featured product
-    Then the heading "Madewell" is displayed
-    And the subtitle "Summer Collection" is shown
-    And the price "$1,499" with strikethrough "$1,999" is visible
-    And two "Shop Now" buttons are displayed (outline and solid)
+- **THEN** the logo "Flagship" is visible
+- **AND** navigation links "Collection", "Shop", "Catalogs", "Contact" are visible
+- **AND** a search icon, wishlist icon, and cart icon with badge are displayed
+- **AND** clicking the search icon opens a search overlay
 
-  Scenario: Product grid shows 6 products
-    Then 6 product cards are displayed in a 3-column grid
-    And each product card shows an image, title, collection name, and price
-    And products marked "Sale" display an amber sale badge
+#### Scenario: Hero section displays featured product
 
-  Scenario: Promo banners alternate layout
-    Then two promotional banners are displayed
-    And each banner shows a model image alongside heading text and a "Shop Now" button
+- **THEN** the heading "Madewell" is displayed
+- **AND** the subtitle "Summer Collection" is shown
+- **AND** the price "$1,499" with strikethrough "$1,999" is visible
+- **AND** two "Shop Now" buttons are displayed (outline and solid)
 
-  Scenario: Collections carousel is interactive
-    Then a "Collections" heading is displayed
-    And a horizontal product carousel is shown below it
-    And the carousel is scrollable horizontally
+#### Scenario: Product grid shows 6 products
 
-  Scenario: Footer has 4 columns
-    Then the footer has an "About Us" section with subscribe form
-    And "Quick Links" are organized in 3 sub-columns
-    And "Contact Info" shows address, phone, and email
-    And the copyright bar links to Component Dock
+- **THEN** 6 product cards are displayed in a 3-column grid
+- **AND** each product card shows an image, title, collection name, and price
+- **AND** products marked "Sale" display an amber sale badge
 
-  Scenario: Mobile responsive
-    When the viewport is below 992px
-    Then the navbar collapses to a hamburger menu
-    And the product grid stacks to 2 columns
-    And the hero section stacks vertically
-```
+#### Scenario: Promo banners alternate layout
+
+- **THEN** two promotional banners are displayed
+- **AND** each banner shows a model image alongside heading text and a "Shop Now" button
+
+#### Scenario: Collections carousel is interactive
+
+- **THEN** a "Collections" heading is displayed
+- **AND** a horizontal product carousel is shown below it
+- **AND** the carousel is scrollable horizontally
+
+#### Scenario: Footer has 4 columns
+
+- **THEN** the footer has an "About Us" section with subscribe form
+- **AND** "Quick Links" are organized in 3 sub-columns
+- **AND** "Contact Info" shows address, phone, and email
+- **AND** the copyright bar links to Component Dock
+
+#### Scenario: Mobile responsive
+
+- **WHEN** the viewport is below 992px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the product grid stacks to 2 columns
+- **AND** the hero section stacks vertically
 
 ## Verification Checklist
 

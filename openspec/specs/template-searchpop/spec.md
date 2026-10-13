@@ -48,80 +48,91 @@ Extracted from `css/style.css` of the ColorLib download.
 | **Clear X SVG** | fill `#ccc`, 22x22, hover `#333` | `.clear svg` |
 | **Clear transition** | `opacity .2s ease-out` (hidden by default, shown on text) | `.clear` |
 
-## Gherkin Requirements
+## Requirements
 
 ### R1: Page Layout
 
-**Scenario: Full-viewport centered showcase**
-- Given a user visits the Searchpop page
-- Then a light blue (#d8f4fe) full-viewport background is displayed
-- And two search inputs are vertically centered on the page
-- And each input row has 80px spacing between them
-- And the form is constrained to 570px max-width
+#### Scenario: Full-viewport centered showcase
+
+- **GIVEN** a user visits the Searchpop page
+- **THEN** a light blue (#d8f4fe) full-viewport background is displayed
+- **AND** two search inputs are vertically centered on the page
+- **AND** each input row has 80px spacing between them
+- **AND** the form is constrained to 570px max-width
 
 ### R2: Round Search Input (Input 1)
 
-**Scenario: Collapsed state (default)**
-- Given the page loads
-- Then Input 1 is a 60x60px circle with a white background
-- And a magnifying glass icon (#ccc, 34x34) is displayed on the left
-- And no text is visible
+#### Scenario: Collapsed state (default)
 
-**Scenario: Expanding on focus/click**
-- Given Input 1 is in collapsed state
-- When the user clicks or focuses Input 1
-- Then Input 1 animates to full width (100% of form)
-- And a text cursor appears with left padding of 60px
-- And the transition takes 0.2 seconds ease-in
+- **GIVEN** the page loads
+- **THEN** Input 1 is a 60x60px circle with a white background
+- **AND** a magnifying glass icon (#ccc, 34x34) is displayed on the left
+- **AND** no text is visible
 
-**Scenario: Clear button**
-- Given Input 1 is expanded and has text entered
-- Then a clear (X) button appears at the right end (60x60 area)
-- And the X icon is #ccc colored, 22x22
-- When the user hovers the clear button
-- Then the X icon color changes to #333
-- When the user clicks the clear button
-- Then the input text is cleared
-- And the clear button fades out (opacity transition 0.2s)
+#### Scenario: Expanding on focus/click
 
-**Scenario: Collapsing on blur**
-- Given Input 1 is expanded and the user clicks outside the input area
-- Then Input 1 collapses back to 60x60px circle
+- **GIVEN** Input 1 is in collapsed state
+- **WHEN** the user clicks or focuses Input 1
+- **THEN** Input 1 animates to full width (100% of form)
+- **AND** a text cursor appears with left padding of 60px
+- **AND** the transition takes 0.2 seconds ease-in
+
+#### Scenario: Clear button
+
+- **GIVEN** Input 1 is expanded and has text entered
+- **THEN** a clear (X) button appears at the right end (60x60 area)
+- **AND** the X icon is #ccc colored, 22x22
+- **WHEN** the user hovers the clear button
+- **THEN** the X icon color changes to #333
+- **WHEN** the user clicks the clear button
+- **THEN** the input text is cleared
+- **AND** the clear button fades out (opacity transition 0.2s)
+
+#### Scenario: Collapsing on blur
+
+- **GIVEN** Input 1 is expanded and the user clicks outside the input area
+- **THEN** Input 1 collapses back to 60x60px circle
 
 ### R3: Square Search Input (Input 2)
 
-**Scenario: Collapsed state (default)**
-- Given the page loads
-- Then Input 2 is a 60x60px square with a white background and 3px border-radius
-- And a magnifying glass icon (#ccc, 34x34) is displayed on the right
-- And placeholder text is #666 colored
+#### Scenario: Collapsed state (default)
 
-**Scenario: Expanding on focus/click**
-- Given Input 2 is in collapsed state
-- When the user clicks or focuses Input 2
-- Then Input 2 animates to full width (100% of form)
-- And the transition takes 0.3 seconds
-- And the search icon remains positioned on the right
+- **GIVEN** the page loads
+- **THEN** Input 2 is a 60x60px square with a white background and 3px border-radius
+- **AND** a magnifying glass icon (#ccc, 34x34) is displayed on the right
+- **AND** placeholder text is #666 colored
 
-**Scenario: Collapsing on blur**
-- Given Input 2 is expanded and the user clicks outside
-- Then Input 2 collapses back to 60x60px square
+#### Scenario: Expanding on focus/click
+
+- **GIVEN** Input 2 is in collapsed state
+- **WHEN** the user clicks or focuses Input 2
+- **THEN** Input 2 animates to full width (100% of form)
+- **AND** the transition takes 0.3 seconds
+- **AND** the search icon remains positioned on the right
+
+#### Scenario: Collapsing on blur
+
+- **GIVEN** Input 2 is expanded and the user clicks outside
+- **THEN** Input 2 collapses back to 60x60px square
 
 ### R4: Visual Fidelity
 
-**Scenario: Typography**
-- Given the page renders
-- Then body uses Poppins font (300 and 400 weights)
-- And input text is 18px
-- And placeholder text uses lighter weight (300) on Input 1, default on Input 2
+#### Scenario: Typography
 
-**Scenario: Background color**
-- Given the page renders
-- Then the full page background is #d8f4fe (light blue)
+- **GIVEN** the page renders
+- **THEN** body uses Poppins font (300 and 400 weights)
+- **AND** input text is 18px
+- **AND** placeholder text uses lighter weight (300) on Input 1, default on Input 2
 
-**Scenario: Footer branding**
-- Given the page renders
-- Then a footer section links to https://www.componentdock.com/ branded as "Component Dock"
+#### Scenario: Background color
+
+- **GIVEN** the page renders
+- **THEN** the full page background is #d8f4fe (light blue)
+
+#### Scenario: Footer branding
+
+- **GIVEN** the page renders
+- **THEN** a footer section links to https://www.componentdock.com/ branded as "Component Dock"
 
 ## Verification Checklist
 

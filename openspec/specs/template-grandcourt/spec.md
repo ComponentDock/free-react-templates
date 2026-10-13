@@ -50,195 +50,213 @@ Use `https://picsum.photos/seed/grandcourt-<n>/<w>/<h>` for deterministic placeh
 10. **Newsletter** — Full-width background image with dark overlay, centered: 5-star row, heading "Sign Up for a Newsletter", sub-text, email input + "Subscribe" button (blue).
 11. **Footer** — Dark purple-gray (#302939) background, 4-column layout: (1) Brand name + description + social icons, (2) Quick Links (Accommodation, Dining & Bar, Restaurants, Beach & Resorts), (3) Recent Blog Posts list, (4) Contact Information (address, phone, email, website). Bottom: copyright line with heart icon + Colorlib credit + "Demo Images: Unsplash" note. **Must replace with Component Dock credit + link to https://www.componentdock.com/**
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: TopBar renders site info and social links
+### Feature: GrandCourt template behaviour
 
-```gherkin
+#### Scenario: TopBar renders site info and social links
+
 Feature: GrandCourt TopBar
-  Scenario: TopBar displays contact information and social links
-    Given the page loads
-    Then the TopBar shows the site URL on the left
-    And the TopBar shows the phone number on the right
-    And the TopBar shows 4 social icon links (Twitter, Facebook, LinkedIn, Dribbble)
-```
 
-### Scenario: Navbar renders with logo and navigation links
+#### Scenario: TopBar displays contact information and social links
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the TopBar shows the site URL on the left
+- **AND** the TopBar shows the phone number on the right
+- **AND** the TopBar shows 4 social icon links (Twitter, Facebook, LinkedIn, Dribbble)
+
+#### Scenario: Navbar renders with logo and navigation links
+
 Feature: GrandCourt Navbar
-  Scenario: Navbar displays logo and navigation
-    Given the page loads
-    Then the navbar shows "GrandCourt" logo text in Playfair Display font
-    And the navbar shows 7 navigation links: Home, Rooms, Dining & Bar, Amenities, Blog, About, Contact
-    And the Home link is visually active
-  Scenario: Navbar becomes sticky on scroll
-    Given the user scrolls past the TopBar
-    Then the navbar should stick to the top of the viewport
-```
 
-### Scenario: HeroSlider displays carousel with CTA buttons
+#### Scenario: Navbar displays logo and navigation
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the navbar shows "GrandCourt" logo text in Playfair Display font
+- **AND** the navbar shows 7 navigation links: Home, Rooms, Dining & Bar, Amenities, Blog, About, Contact
+- **AND** the Home link is visually active
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the TopBar
+- **THEN** the navbar should stick to the top of the viewport
+
+#### Scenario: HeroSlider displays carousel with CTA buttons
+
 Feature: GrandCourt HeroSlider
-  Scenario: Hero slider shows slides with text and buttons
-    Given the page loads
-    Then the hero slider displays a full-width background image
-    And the slider shows a dark overlay on the image
-    And the slider shows an h2 sub-heading in Poppins font
-    And the slider shows an h1 heading in Playfair Display font
-    And the slider shows a "View Detail" button with blue (#4586FF) background
-    And the slider shows a "Know More" button with outlined style
-  Scenario: Hero slider navigation dots
-    Given the page loads
-    Then the slider shows 4 navigation dots below the buttons
-    And clicking a dot navigates to the corresponding slide
-```
 
-### Scenario: ReservationBar renders booking form
+#### Scenario: Hero slider shows slides with text and buttons
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the hero slider displays a full-width background image
+- **AND** the slider shows a dark overlay on the image
+- **AND** the slider shows an h2 sub-heading in Poppins font
+- **AND** the slider shows an h1 heading in Playfair Display font
+- **AND** the slider shows a "View Detail" button with blue (#4586FF) background
+- **AND** the slider shows a "Know More" button with outlined style
+
+#### Scenario: Hero slider navigation dots
+
+- **GIVEN** the page loads
+- **THEN** the slider shows 4 navigation dots below the buttons
+- **AND** clicking a dot navigates to the corresponding slide
+
+#### Scenario: ReservationBar renders booking form
+
 Feature: GrandCourt ReservationBar
-  Scenario: Reservation bar shows date pickers and guest selectors
-    Given the page loads
-    Then the reservation bar displays with dark (#302939) background
-    And it shows a "Check-in" date picker field
-    And it shows a "Check-out" date picker field
-    And it shows an "Adults" dropdown with options 1-5+
-    And it shows a "Children" dropdown with options 1-5+
-    And it shows a blue "Search" button
-```
 
-### Scenario: Services section displays 4 service cards
+#### Scenario: Reservation bar shows date pickers and guest selectors
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the reservation bar displays with dark (#302939) background
+- **AND** it shows a "Check-in" date picker field
+- **AND** it shows a "Check-out" date picker field
+- **AND** it shows an "Adults" dropdown with options 1-5+
+- **AND** it shows a "Children" dropdown with options 1-5+
+- **AND** it shows a blue "Search" button
+
+#### Scenario: Services section displays 4 service cards
+
 Feature: GrandCourt Services
-  Scenario: Services section shows 4 service items
-    Given the page loads
-    Then the Services section shows 4 cards in a row
-    And each card has a circular icon container with a blue icon
-    And each card has a heading: "24/7 Front Desk", "Spa Suites", "Transfer Services", "Restaurant & Bar"
-    And each card has a description paragraph below the heading
-```
 
-### Scenario: RoomsAndSuites section displays room carousel
+#### Scenario: Services section shows 4 service items
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the Services section shows 4 cards in a row
+- **AND** each card has a circular icon container with a blue icon
+- **AND** each card has a heading: "24/7 Front Desk", "Spa Suites", "Transfer Services", "Restaurant & Bar"
+- **AND** each card has a description paragraph below the heading
+
+#### Scenario: RoomsAndSuites section displays room carousel
+
 Feature: GrandCourt RoomsAndSuites
-  Scenario: Rooms section shows heading with star icons
-    Given the page loads
-    Then the Rooms section shows a centered heading "Rooms & Suites"
-    And the heading has 5 gold (#F7AF1D) star icons above it
-    And the section has a light grey (#f7f7f7) background
-  Scenario: Rooms section shows carousel of room cards
-    Given the page loads
-    Then the carousel shows at least 6 room cards
-    And each room card shows an image
-    And each room card shows star rating icons
-    And each room card shows the room name (e.g., "Suite", "Double Room")
-    And each room card shows a price with currency symbol and "/ per night"
-    And each room card shows a list of amenities with checkmark icons
-    And each room card shows a "Book now!" button
-  Scenario: Rooms section shows "View all rooms" link
-    Given the page loads
-    Then there is a "View all rooms" link with an arrow icon at the bottom
-```
 
-### Scenario: DiningAndBar section displays tabbed menu
+#### Scenario: Rooms section shows heading with star icons
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the Rooms section shows a centered heading "Rooms & Suites"
+- **AND** the heading has 5 gold (#F7AF1D) star icons above it
+- **AND** the section has a light grey (#f7f7f7) background
+
+#### Scenario: Rooms section shows carousel of room cards
+
+- **GIVEN** the page loads
+- **THEN** the carousel shows at least 6 room cards
+- **AND** each room card shows an image
+- **AND** each room card shows star rating icons
+- **AND** each room card shows the room name (e.g., "Suite", "Double Room")
+- **AND** each room card shows a price with currency symbol and "/ per night"
+- **AND** each room card shows a list of amenities with checkmark icons
+- **AND** each room card shows a "Book now!" button
+
+#### Scenario: Rooms section shows "View all rooms" link
+
+- **GIVEN** the page loads
+- **THEN** there is a "View all rooms" link with an arrow icon at the bottom
+
+#### Scenario: DiningAndBar section displays tabbed menu
+
 Feature: GrandCourt DiningAndBar
-  Scenario: Dining section shows tabbed menu
-    Given the page loads
-    Then the Dining section shows a centered heading "Dining & Bar"
-    And the section shows 3 tabs: "Mains", "Desserts", "Drinks"
-    And the "Mains" tab is active by default
-  Scenario: Each tab shows 4 food items
-    Given the "Mains" tab is active
-    Then 4 food items are displayed in a list
-    And each food item shows a thumbnail image
-    And each food item shows a price (e.g., "$25.99")
-    And each food item shows a dish name
-    And each food item shows a category description
-  Scenario: Tab switching works
-    Given the user clicks the "Desserts" tab
-    Then the Desserts tab becomes active
-    And the food items update to show dessert dishes
-```
 
-### Scenario: Blog section displays posts with featured video
+#### Scenario: Dining section shows tabbed menu
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the Dining section shows a centered heading "Dining & Bar"
+- **AND** the section shows 3 tabs: "Mains", "Desserts", "Drinks"
+- **AND** the "Mains" tab is active by default
+
+#### Scenario: Each tab shows 4 food items
+
+- **GIVEN** the "Mains" tab is active
+- **THEN** 4 food items are displayed in a list
+- **AND** each food item shows a thumbnail image
+- **AND** each food item shows a price (e.g., "$25.99")
+- **AND** each food item shows a dish name
+- **AND** each food item shows a category description
+
+#### Scenario: Tab switching works
+
+- **GIVEN** the user clicks the "Desserts" tab
+- **THEN** the Desserts tab becomes active
+- **AND** the food items update to show dessert dishes
+
+#### Scenario: Blog section displays posts with featured video
+
 Feature: GrandCourt Blog
-  Scenario: Blog section shows layout with video and posts
-    Given the page loads
-    Then the Blog section shows a centered heading "Recent Blog"
-    And the left side shows a featured video/image with a play button overlay
-    And the right side shows 3 blog post entries
-    And each blog post shows a thumbnail image
-    And each blog post shows a date (e.g., "January 14, 2018")
-    And each blog post shows a title
-    And each blog post shows a category tag (e.g., "Activities")
-  Scenario: Blog section shows "View all" link
-    Given the page loads
-    Then there is a "View all blog post" link with an arrow icon
-```
 
-### Scenario: Testimonials section displays guest reviews
+#### Scenario: Blog section shows layout with video and posts
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the Blog section shows a centered heading "Recent Blog"
+- **AND** the left side shows a featured video/image with a play button overlay
+- **AND** the right side shows 3 blog post entries
+- **AND** each blog post shows a thumbnail image
+- **AND** each blog post shows a date (e.g., "January 14, 2018")
+- **AND** each blog post shows a title
+- **AND** each blog post shows a category tag (e.g., "Activities")
+
+#### Scenario: Blog section shows "View all" link
+
+- **GIVEN** the page loads
+- **THEN** there is a "View all blog post" link with an arrow icon
+
+#### Scenario: Testimonials section displays guest reviews
+
 Feature: GrandCourt Testimonials
-  Scenario: Testimonials section shows 3 guest reviews
-    Given the page loads
-    Then the Testimonials section shows a centered heading "Our Satisfied Guests says"
-    And the heading has 3 gold star icons above it
-    And the section has a light grey background
-    And 3 testimonial cards are displayed in a row
-    And each card shows a circular user avatar image
-    And each card shows the user's name
-    And each card shows "Satisfied Customer" subtitle
-    And each card shows a blockquote with testimonial text
-```
 
-### Scenario: Newsletter section displays signup form
+#### Scenario: Testimonials section shows 3 guest reviews
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the Testimonials section shows a centered heading "Our Satisfied Guests says"
+- **AND** the heading has 3 gold star icons above it
+- **AND** the section has a light grey background
+- **AND** 3 testimonial cards are displayed in a row
+- **AND** each card shows a circular user avatar image
+- **AND** each card shows the user's name
+- **AND** each card shows "Satisfied Customer" subtitle
+- **AND** each card shows a blockquote with testimonial text
+
+#### Scenario: Newsletter section displays signup form
+
 Feature: GrandCourt Newsletter
-  Scenario: Newsletter section shows email signup
-    Given the page loads
-    Then the Newsletter section shows a full-width background image with dark overlay
-    And it shows a centered heading "Sign Up for a Newsletter"
-    And it shows sub-text "Get A 50% Discounts in every Rooms, Book now!"
-    And it shows an email input field
-    And it shows a blue "Subscribe" button
-```
 
-### Scenario: Footer displays 4-column layout
+#### Scenario: Newsletter section shows email signup
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the Newsletter section shows a full-width background image with dark overlay
+- **AND** it shows a centered heading "Sign Up for a Newsletter"
+- **AND** it shows sub-text "Get A 50% Discounts in every Rooms, Book now!"
+- **AND** it shows an email input field
+- **AND** it shows a blue "Subscribe" button
+
+#### Scenario: Footer displays 4-column layout
+
 Feature: GrandCourt Footer
-  Scenario: Footer shows brand info, links, and contact
-    Given the page loads
-    Then the Footer has a dark (#302939) background
-    And column 1 shows "GrandCourt" brand name + description + social icons
-    And column 2 shows Quick Links: Accommodation, Dining & Bar, Restaurants, Beach & Resorts
-    And column 3 shows Recent Blog Posts list
-    And column 4 shows Contact Information (address, phone, email, website)
-  Scenario: Footer shows copyright and Component Dock credit
-    Given the page loads
-    Then the Footer bottom shows a copyright line
-    And the Footer links to https://www.componentdock.com/ ("Component Dock")
-```
 
-### Scenario: Go-to-top button
+#### Scenario: Footer shows brand info, links, and contact
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** the Footer has a dark (#302939) background
+- **AND** column 1 shows "GrandCourt" brand name + description + social icons
+- **AND** column 2 shows Quick Links: Accommodation, Dining & Bar, Restaurants, Beach & Resorts
+- **AND** column 3 shows Recent Blog Posts list
+- **AND** column 4 shows Contact Information (address, phone, email, website)
+
+#### Scenario: Footer shows copyright and Component Dock credit
+
+- **GIVEN** the page loads
+- **THEN** the Footer bottom shows a copyright line
+- **AND** the Footer links to https://www.componentdock.com/ ("Component Dock")
+
+#### Scenario: Go-to-top button
+
 Feature: GrandCourt GoToTop
-  Scenario: Scroll-to-top button appears on scroll
-    Given the user scrolls down past the hero
-    Then a go-to-top button should appear
-    And clicking it should scroll the page back to the top
-```
+
+#### Scenario: Scroll-to-top button appears on scroll
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** a go-to-top button should appear
+- **AND** clicking it should scroll the page back to the top
 
 ## Verification checklist
 

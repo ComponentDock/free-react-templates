@@ -55,162 +55,156 @@ news, pricing plans, and a footer.
 | Pricing          | White                               |
 | Footer           | Dark (#2b2b2b)                      |
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Fixed top navigation bar
-  Given the page loads
-  Then a fixed navbar is visible at the top
-  And it contains the brand name "Nurture"
-  And it has navigation links: Home, About, Courses, Pricing, News, Contact
-  And on mobile (< 768px) a hamburger toggles the menu
+#### Scenario: Fixed top navigation bar
 
-Scenario: Navbar links scroll to sections
-  Given the navbar is visible
-  When the user clicks "About"
-  Then the page scrolls smoothly to the About section
-```
+- **GIVEN** the page loads
+- **THEN** a fixed navbar is visible at the top
+- **AND** it contains the brand name "Nurture"
+- **AND** it has navigation links: Home, About, Courses, Pricing, News, Contact
+- **AND** on mobile (< 768px) a hamburger toggles the menu
+
+#### Scenario: Navbar links scroll to sections
+
+- **GIVEN** the navbar is visible
+- **WHEN** the user clicks "About"
+- **THEN** the page scrolls smoothly to the About section
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero with headline and CTA
-  Given the page loads
-  Then the hero section spans the full viewport height
-  And it displays a background image with a dark overlay
-  And a heading reads "Learning Center for Your Kids"
-  And there is an "Enroll Now" primary button
+#### Scenario: Hero with headline and CTA
 
-Scenario: Hero icon cards
-  Given the hero is visible
-  Then 3 icon cards are shown below the heading:
-    | icon  | label |
-    | book  | Learn |
-    | play  | Play  |
-    | food  | Meal  |
-```
+- **GIVEN** the page loads
+- **THEN** the hero section spans the full viewport height
+- **AND** it displays a background image with a dark overlay
+- **AND** a heading reads "Learning Center for Your Kids"
+- **AND** there is an "Enroll Now" primary button
+
+#### Scenario: Hero icon cards
+
+- **GIVEN** the hero is visible
+- **THEN** 3 icon cards are shown below the heading:
+| icon  | label |
+| book  | Learn |
+| play  | Play  |
+| food  | Meal  |
 
 ### Features / What We Offer
 
-```gherkin
-Scenario: Six class type cards
-  Given the features section is in view
-  Then the heading reads "What We Offer"
-  And 6 class cards are displayed in a 3x2 grid:
-    | title          | icon type |
-    | Music Class    | music     |
-    | Math Class     | calculator |
-    | English Class  | book      |
-    | Reading for Kids | book-open |
-    | History Class  | clock     |
-    | Active Class   | activity  |
-  And each card has an icon, title, and short description
-```
+#### Scenario: Six class type cards
+
+- **GIVEN** the features section is in view
+- **THEN** the heading reads "What We Offer"
+- **AND** 6 class cards are displayed in a 3x2 grid:
+| title          | icon type |
+| Music Class    | music     |
+| Math Class     | calculator |
+| English Class  | book      |
+| Reading for Kids | book-open |
+| History Class  | clock     |
+| Active Class   | activity  |
+- **AND** each card has an icon, title, and short description
 
 ### Education CTA Section
 
-```gherkin
-Scenario: Parallax CTA banner
-  Given the CTA section is in view
-  Then it displays "Education for Tomorrow's Leaders"
-  And has a "Learn More" button
-  And the section has a parallax background image
-```
+#### Scenario: Parallax CTA banner
+
+- **GIVEN** the CTA section is in view
+- **THEN** it displays "Education for Tomorrow's Leaders"
+- **AND** has a "Learn More" button
+- **AND** the section has a parallax background image
 
 ### About Us Section
 
-```gherkin
-Scenario: About section with image and text
-  Given the about section is in view
-  Then the heading reads "About Us"
-  And there is descriptive text about the learning center
-  And there is an image alongside the text
-  And a "Learn More" link or button is present
-```
+#### Scenario: About section with image and text
+
+- **GIVEN** the about section is in view
+- **THEN** the heading reads "About Us"
+- **AND** there is descriptive text about the learning center
+- **AND** there is an image alongside the text
+- **AND** a "Learn More" link or button is present
 
 ### School News Section
 
-```gherkin
-Scenario: News cards grid
-  Given the news section is in view
-  Then the heading reads "School News"
-  And 3 news post cards are displayed
-  And each card has an image, date, title, and excerpt
-```
+#### Scenario: News cards grid
+
+- **GIVEN** the news section is in view
+- **THEN** the heading reads "School News"
+- **AND** 3 news post cards are displayed
+- **AND** each card has an image, date, title, and excerpt
 
 ### Enroll CTA Section
 
-```gherkin
-Scenario: Enrollment call-to-action
-  Given the enroll section is in view
-  Then it displays "Enroll Your Kids This Summer to get 30% off"
-  And has a "Get Started" button
-  And the section has a parallax background image
-```
+#### Scenario: Enrollment call-to-action
+
+- **GIVEN** the enroll section is in view
+- **THEN** it displays "Enroll Your Kids This Summer to get 30% off"
+- **AND** has a "Get Started" button
+- **AND** the section has a parallax background image
 
 ### Pricing Section
 
-```gherkin
-Scenario: Three pricing plans
-  Given the pricing section is in view
-  Then the heading reads "Pricing"
-  And 3 pricing cards are displayed:
-    | plan    | features |
-    | Infant  | basic    |
-    | Toddler | standard |
-    | Lad     | premium  |
-  And each card has a plan name, price, feature list, and a "Get Started" button
-```
+#### Scenario: Three pricing plans
+
+- **GIVEN** the pricing section is in view
+- **THEN** the heading reads "Pricing"
+- **AND** 3 pricing cards are displayed:
+| plan    | features |
+| Infant  | basic    |
+| Toddler | standard |
+| Lad     | premium  |
+- **AND** each card has a plan name, price, feature list, and a "Get Started" button
 
 ### Footer
 
-```gherkin
-Scenario: Footer layout
-  Given the footer is visible
-  Then it has a dark background
-  And it contains brand info, contact details, and quick links
-  And a copyright line at the bottom
-  And a link to https://www.componentdock.com/ ("Component Dock")
+#### Scenario: Footer layout
 
-Scenario: Newsletter subscription
-  Given the footer newsletter form is visible
-  When the user enters an email and clicks Subscribe
-  Then the form accepts input (frontend only)
-```
+- **GIVEN** the footer is visible
+- **THEN** it has a dark background
+- **AND** it contains brand info, contact details, and quick links
+- **AND** a copyright line at the bottom
+- **AND** a link to https://www.componentdock.com/ ("Component Dock")
+
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the footer newsletter form is visible
+- **WHEN** the user enters an email and clicks Subscribe
+- **THEN** the form accepts input (frontend only)
 
 ### Accessibility
 
-```gherkin
-Scenario: Keyboard navigation
-  Given the page loads
-  Then all interactive elements are keyboard-focusable
-  And focus-visible rings appear on buttons and links
-  And skip-to-content link is present
+#### Scenario: Keyboard navigation
 
-Scenario: Screen reader support
-  Given the page loads
-  Then all images have descriptive alt text
-  And form inputs have associated labels
-  And heading hierarchy is sequential (h1 > h2 > h3)
-```
+- **GIVEN** the page loads
+- **THEN** all interactive elements are keyboard-focusable
+- **AND** focus-visible rings appear on buttons and links
+- **AND** skip-to-content link is present
+
+#### Scenario: Screen reader support
+
+- **GIVEN** the page loads
+- **THEN** all images have descriptive alt text
+- **AND** form inputs have associated labels
+- **AND** heading hierarchy is sequential (h1 > h2 > h3)
 
 ### Responsive Design
 
-```gherkin
-Scenario: Mobile layout
-  Given the viewport is 375px wide
-  Then the navbar collapses to a hamburger menu
-  And the hero text is readable (not overflowing)
-  And feature cards stack vertically
-  And pricing cards stack vertically
-  And the footer columns stack vertically
+#### Scenario: Mobile layout
 
-Scenario: Tablet layout
-  Given the viewport is 768px wide
-  Then the layout adapts with 2-column grids where appropriate
-```
+- **GIVEN** the viewport is 375px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero text is readable (not overflowing)
+- **AND** feature cards stack vertically
+- **AND** pricing cards stack vertically
+- **AND** the footer columns stack vertically
+
+#### Scenario: Tablet layout
+
+- **GIVEN** the viewport is 768px wide
+- **THEN** the layout adapts with 2-column grids where appropriate
 
 ## Verification Checklist
 

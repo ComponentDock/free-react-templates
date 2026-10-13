@@ -45,119 +45,145 @@ The template has a dark automotive/garage aesthetic. The hero uses a full-width 
 8. **Latest News** — "Latest News" section title + 3 blog cards: background image with date overlay, article title, excerpt, "Continue Reading" link
 9. **Footer** — Top row: 3 contact/action cards (Appointment, Phone, Hours); then multi-column bottom: About text, Useful Links, Recent News, Instagram-style gallery; bottom bar with copyright + Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Gearbox Template
 
-```gherkin
 Feature: Gearbox automotive services template
-  As a visitor to the Gearbox website
-  I want to see a professional automotive services page
-  So that I can learn about services, products, and contact the business
+As a visitor to the Gearbox website
+I want to see a professional automotive services page
+So that I can learn about services, products, and contact the business
 
-  Background:
-    Given the page is loaded at "/" 
+Background:
+- **GIVEN** the page is loaded at "/"
 
-  # --- Header ---
-  Scenario: Header top bar displays contact info
-    Then the header top bar shows phone number "(+123) 4567-7890-123"
-    And the header top bar shows hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
-    And social media icons (Facebook, Twitter, Vimeo, Pinterest) are visible
+**--- Header ---**
 
-  Scenario: Main navigation bar
-    Then the logo is displayed on the left
-    And navigation links include "Home", "Services", "Shop", "Pages", "Blog"
-    And search and cart icons are on the right
+#### Scenario: Header top bar displays contact info
 
-  Scenario: Mobile menu toggle
-    When I click the hamburger menu button
-    Then the offcanvas mobile menu slides open
-    And navigation links are visible inside the mobile menu
+- **THEN** the header top bar shows phone number "(+123) 4567-7890-123"
+- **AND** the header top bar shows hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
+- **AND** social media icons (Facebook, Twitter, Vimeo, Pinterest) are visible
 
-  # --- Hero ---
-  Scenario: Hero section renders
-    Then the hero displays a full-width background image
-    And a "Welcome To" subtitle is shown above the main heading
-    And the main heading reads "Gearbox Garage"
-    And a descriptive paragraph is shown below the heading
-    And a "Our Services" CTA button is displayed
+#### Scenario: Main navigation bar
 
-  Scenario: Hero CTA navigates
-    When I click the "Our Services" button
-    Then the page scrolls to the services section
+- **THEN** the logo is displayed on the left
+- **AND** navigation links include "Home", "Services", "Shop", "Pages", "Blog"
+- **AND** search and cart icons are on the right
 
-  # --- Services ---
-  Scenario: Services section displays 4 service cards
-    Then the "What We Do?" section title is visible
-    And 4 service cards are rendered in alternating image/text layout
-    And each card has an icon, title, and short description
+#### Scenario: Mobile menu toggle
 
-  Scenario: Service cards show correct content
-    Then service card 1 shows "Engine Overhaul"
-    And service card 2 shows "Power Steering"
-    And service card 3 shows "Oil Change"
-    And service card 4 shows "Upgrades Car"
+- **WHEN** I click the hamburger menu button
+- **THEN** the offcanvas mobile menu slides open
+- **AND** navigation links are visible inside the mobile menu
 
-  # --- Choose Us ---
-  Scenario: Choose Us section displays
-    Then a background image is shown on the left half
-    And "20 Years Experience" heading is on the right
-    And 4 checklist items with checkmark icons are displayed
-    And an "About Us" CTA button is shown
+**--- Hero ---**
 
-  # --- Products ---
-  Scenario: Products section displays 4 product cards
-    Then the "Our Products" section title is visible
-    And 4 product cards are rendered in a grid
-    And each card shows a product image, name, and price
+#### Scenario: Hero section renders
 
-  Scenario: Product cards have hover actions
-    Then each product card has heart, eye, and exchange hover icons
-    And each card has an "Add To Cart" link
+- **THEN** the hero displays a full-width background image
+- **AND** a "Welcome To" subtitle is shown above the main heading
+- **AND** the main heading reads "Gearbox Garage"
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** a "Our Services" CTA button is displayed
 
-  # --- Testimonial ---
-  Scenario: Testimonial carousel renders
-    Then a testimonial slider is displayed
-    And it contains at least 3 testimonial quotes
-    And carousel navigation dots are shown
+#### Scenario: Hero CTA navigates
 
-  Scenario: Testimonial carousel navigates
-    When I click a navigation dot
-    Then the carousel transitions to the corresponding slide
+- **WHEN** I click the "Our Services" button
+- **THEN** the page scrolls to the services section
 
-  # --- Counter ---
-  Scenario: Statistics section displays
-    Then the "About Our Statistics" title is visible over a background image
-    And 4 stat items are shown: "All Project", "Project Completed", "Customers Action", "Awards Winner"
-    And each stat shows an icon, number, and label
+**--- Services ---**
 
-  # --- Latest News ---
-  Scenario: News section displays 3 blog cards
-    Then the "Latest News" section title is visible
-    And 3 blog cards are rendered in a grid
-    And each card has a background image, date, title, excerpt, and "Continue Reading" link
+#### Scenario: Services section displays 4 service cards
 
-  # --- Footer ---
-  Scenario: Footer top row shows contact cards
-    Then 3 footer top cards are displayed: Appointment, Phone, Hours
-    And each card has an icon and heading text
+- **THEN** the "What We Do?" section title is visible
+- **AND** 4 service cards are rendered in alternating image/text layout
+- **AND** each card has an icon, title, and short description
 
-  Scenario: Footer bottom columns
-    Then the footer shows About, Useful Links, Recent News, and gallery columns
-    And a copyright line is at the very bottom
+#### Scenario: Service cards show correct content
 
-  Scenario: Footer links to Component Dock
-    Then the footer contains a link to "https://www.componentdock.com/"
-    And the link text references "Component Dock"
+- **THEN** service card 1 shows "Engine Overhaul"
+- **AND** service card 2 shows "Power Steering"
+- **AND** service card 3 shows "Oil Change"
+- **AND** service card 4 shows "Upgrades Car"
 
-  # --- Responsive ---
-  Scenario: Mobile responsiveness
-    Given the viewport width is 375px
-    Then the navigation collapses to a hamburger menu
-    And service cards stack vertically
-    And product cards display in a 2-column grid
-    And the footer columns stack vertically
-```
+**--- Choose Us ---**
+
+#### Scenario: Choose Us section displays
+
+- **THEN** a background image is shown on the left half
+- **AND** "20 Years Experience" heading is on the right
+- **AND** 4 checklist items with checkmark icons are displayed
+- **AND** an "About Us" CTA button is shown
+
+**--- Products ---**
+
+#### Scenario: Products section displays 4 product cards
+
+- **THEN** the "Our Products" section title is visible
+- **AND** 4 product cards are rendered in a grid
+- **AND** each card shows a product image, name, and price
+
+#### Scenario: Product cards have hover actions
+
+- **THEN** each product card has heart, eye, and exchange hover icons
+- **AND** each card has an "Add To Cart" link
+
+**--- Testimonial ---**
+
+#### Scenario: Testimonial carousel renders
+
+- **THEN** a testimonial slider is displayed
+- **AND** it contains at least 3 testimonial quotes
+- **AND** carousel navigation dots are shown
+
+#### Scenario: Testimonial carousel navigates
+
+- **WHEN** I click a navigation dot
+- **THEN** the carousel transitions to the corresponding slide
+
+**--- Counter ---**
+
+#### Scenario: Statistics section displays
+
+- **THEN** the "About Our Statistics" title is visible over a background image
+- **AND** 4 stat items are shown: "All Project", "Project Completed", "Customers Action", "Awards Winner"
+- **AND** each stat shows an icon, number, and label
+
+**--- Latest News ---**
+
+#### Scenario: News section displays 3 blog cards
+
+- **THEN** the "Latest News" section title is visible
+- **AND** 3 blog cards are rendered in a grid
+- **AND** each card has a background image, date, title, excerpt, and "Continue Reading" link
+
+**--- Footer ---**
+
+#### Scenario: Footer top row shows contact cards
+
+- **THEN** 3 footer top cards are displayed: Appointment, Phone, Hours
+- **AND** each card has an icon and heading text
+
+#### Scenario: Footer bottom columns
+
+- **THEN** the footer shows About, Useful Links, Recent News, and gallery columns
+- **AND** a copyright line is at the very bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the link text references "Component Dock"
+
+**--- Responsive ---**
+
+#### Scenario: Mobile responsiveness
+
+- **GIVEN** the viewport width is 375px
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** service cards stack vertically
+- **AND** product cards display in a 2-column grid
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

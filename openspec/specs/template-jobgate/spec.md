@@ -47,111 +47,133 @@ Recreation of the ColorLib **Comport** template as a React 19 + Vite + Tailwind 
 10. **Download CTA** — Split: left = heading + paragraph + App Store / Play Store download buttons (white bg, `5px` radius, orange icon + text, hover = orange bg), right = phone/device image.
 11. **Footer** — Dark navy bg (`#04091e`). 3 columns: Top Products (link list), Newsletter (email input + subscribe), Instagram feed (8 small images grid). Bottom copyright bar with social icons (Facebook, Twitter, Dribbble, Behance) — icons in white circles, hover = orange bg.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: JobGate Landing Page
 
-```gherkin
 Feature: JobGate — job portal landing page
-  As a job seeker visiting JobGate
-  I want to browse jobs and categories
-  So I can find and apply for positions
+As a job seeker visiting JobGate
+I want to browse jobs and categories
+So I can find and apply for positions
 
-  Background:
-    Given the JobGate landing page is loaded
+Background:
+- **GIVEN** the JobGate landing page is loaded
 
-  # --- Navbar ---
-  Scenario: Navbar displays logo and navigation links
-    Then the navbar shows the logo on the left
-    And navigation links include "Home", "About", "Category", "Blog", "Contact"
-    And a "log in" link and a "sign up" button are visible
+**--- Navbar ---**
 
-  Scenario: Navbar submenus appear on hover/click
-    When the user hovers over "Blog"
-    Then a submenu shows "Blog Home" and "Blog Details"
-    When the user hovers over "Pages"
-    Then a submenu shows "Job Search", "Job Single", "Pricing Plan", "Elements"
+#### Scenario: Navbar displays logo and navigation links
 
-  # --- Banner ---
-  Scenario: Banner displays headline and CTA
-    Then the banner shows a split layout with image on left and text on right
-    And the headline contains "find your dream" and "job" (highlighted in brand orange)
-    And a paragraph of descriptive text is visible
-    And an "explore now" secondary link with arrow is shown
+- **THEN** the navbar shows the logo on the left
+- **AND** navigation links include "Home", "About", "Category", "Blog", "Contact"
+- **AND** a "log in" link and a "sign up" button are visible
 
-  # --- Search Bar ---
-  Scenario: Search bar provides job filtering
-    Then the search bar is styled with the brand orange background
-    And it contains a "Category" dropdown select
-    And it contains a "Location" dropdown select
-    And it contains a keyword text input
-    And a "find job" button is displayed
+#### Scenario: Navbar submenus appear on hover/click
 
-  # --- Feature Cards ---
-  Scenario: Feature cards show job categories
-    Then 3 feature cards are displayed in equal columns
-    And each card has a title (e.g. "UX/UI Designer")
-    And each card has a short description paragraph
-    And each card has an "explore now" secondary link
-    And cards have light gray background that transitions to white on hover with shadow
+- **WHEN** the user hovers over "Blog"
+- **THEN** a submenu shows "Blog Home" and "Blog Details"
+- **WHEN** the user hovers over "Pages"
+- **THEN** a submenu shows "Job Search", "Job Single", "Pricing Plan", "Elements"
 
-  # --- Category Grid ---
-  Scenario: Category grid shows 8 job categories
-    Then 8 category cards are displayed in a 4×2 grid
-    And each card shows a category icon, category name, and "250 open job" count
-    And cards have a light gray background with subtle border
-    And on hover the background becomes white and shadow appears
+**--- Banner ---**
 
-  # --- Job Listings ---
-  Scenario: Job listings display with tab navigation
-    Then a tab bar shows "Recent", "Full Time", "Part Time", "Intern"
-    And the "Recent" tab is active by default
-    And each tab panel shows at least one job listing card
-    And each job card shows: job title, location, field, deadline with icons
-    And each job card has a company logo image and a job type badge
-    And an "apply" button is shown per job
-    And a "more job post" CTA button appears at the bottom
+#### Scenario: Banner displays headline and CTA
 
-  Scenario: Tab switching changes visible jobs
-    When the user clicks the "Full Time" tab
-    Then the full-time job listings are shown
-    When the user clicks the "Part Time" tab
-    Then the part-time job listings are shown
+- **THEN** the banner shows a split layout with image on left and text on right
+- **AND** the headline contains "find your dream" and "job" (highlighted in brand orange)
+- **AND** a paragraph of descriptive text is visible
+- **AND** an "explore now" secondary link with arrow is shown
 
-  # --- Newsletter ---
-  Scenario: Newsletter section collects email subscriptions
-    Then a newsletter section with dark overlay on background image is shown
-    And the heading reads "Get job information daily"
-    And an email input and "subscribe now" button are displayed
+**--- Search Bar ---**
 
-  # --- Testimonials ---
-  Scenario: Employee testimonials display in a carousel
-    Then a "Happy employee" heading is shown
-    And at least 2 testimonial slides are present
-    And each slide shows an employee photo, name, company, and a quote
-    And on hover the employee photo shows an orange overlay with name and company
+#### Scenario: Search bar provides job filtering
 
-  # --- News / Blog ---
-  Scenario: Latest news cards are displayed
-    Then 3 news cards are shown in a 3-column grid
-    And each card has a background image, date, category tag, and article title
-    And images have rounded corners (5px radius)
+- **THEN** the search bar is styled with the brand orange background
+- **AND** it contains a "Category" dropdown select
+- **AND** it contains a "Location" dropdown select
+- **AND** it contains a keyword text input
+- **AND** a "find job" button is displayed
 
-  # --- Download CTA ---
-  Scenario: Download section promotes the mobile app
-    Then a split layout shows text on left and device image on right
-    And the heading mentions downloading the app
-    And App Store and Play Store download buttons are shown
-    And download buttons have white bg with orange icon, hover = orange bg
+**--- Feature Cards ---**
 
-  # --- Footer ---
-  Scenario: Footer displays links, newsletter, and social icons
-    Then the footer has a dark navy background
-    And it shows 3 columns: "Top Products" links, "Newsletter" form, "Instagram Feed" grid
-    And a copyright bar with social icons (Facebook, Twitter, Dribbble, Behance)
-    And social icon circles are white, turning orange on hover
-    And a "Component Dock" link is present in the footer
-```
+#### Scenario: Feature cards show job categories
+
+- **THEN** 3 feature cards are displayed in equal columns
+- **AND** each card has a title (e.g. "UX/UI Designer")
+- **AND** each card has a short description paragraph
+- **AND** each card has an "explore now" secondary link
+- **AND** cards have light gray background that transitions to white on hover with shadow
+
+**--- Category Grid ---**
+
+#### Scenario: Category grid shows 8 job categories
+
+- **THEN** 8 category cards are displayed in a 4×2 grid
+- **AND** each card shows a category icon, category name, and "250 open job" count
+- **AND** cards have a light gray background with subtle border
+- **AND** on hover the background becomes white and shadow appears
+
+**--- Job Listings ---**
+
+#### Scenario: Job listings display with tab navigation
+
+- **THEN** a tab bar shows "Recent", "Full Time", "Part Time", "Intern"
+- **AND** the "Recent" tab is active by default
+- **AND** each tab panel shows at least one job listing card
+- **AND** each job card shows: job title, location, field, deadline with icons
+- **AND** each job card has a company logo image and a job type badge
+- **AND** an "apply" button is shown per job
+- **AND** a "more job post" CTA button appears at the bottom
+
+#### Scenario: Tab switching changes visible jobs
+
+- **WHEN** the user clicks the "Full Time" tab
+- **THEN** the full-time job listings are shown
+- **WHEN** the user clicks the "Part Time" tab
+- **THEN** the part-time job listings are shown
+
+**--- Newsletter ---**
+
+#### Scenario: Newsletter section collects email subscriptions
+
+- **THEN** a newsletter section with dark overlay on background image is shown
+- **AND** the heading reads "Get job information daily"
+- **AND** an email input and "subscribe now" button are displayed
+
+**--- Testimonials ---**
+
+#### Scenario: Employee testimonials display in a carousel
+
+- **THEN** a "Happy employee" heading is shown
+- **AND** at least 2 testimonial slides are present
+- **AND** each slide shows an employee photo, name, company, and a quote
+- **AND** on hover the employee photo shows an orange overlay with name and company
+
+**--- News / Blog ---**
+
+#### Scenario: Latest news cards are displayed
+
+- **THEN** 3 news cards are shown in a 3-column grid
+- **AND** each card has a background image, date, category tag, and article title
+- **AND** images have rounded corners (5px radius)
+
+**--- Download CTA ---**
+
+#### Scenario: Download section promotes the mobile app
+
+- **THEN** a split layout shows text on left and device image on right
+- **AND** the heading mentions downloading the app
+- **AND** App Store and Play Store download buttons are shown
+- **AND** download buttons have white bg with orange icon, hover = orange bg
+
+**--- Footer ---**
+
+#### Scenario: Footer displays links, newsletter, and social icons
+
+- **THEN** the footer has a dark navy background
+- **AND** it shows 3 columns: "Top Products" links, "Newsletter" form, "Instagram Feed" grid
+- **AND** a copyright bar with social icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** social icon circles are white, turning orange on hover
+- **AND** a "Component Dock" link is present in the footer
 
 ## Verification checklist
 

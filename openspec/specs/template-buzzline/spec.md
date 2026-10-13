@@ -51,118 +51,143 @@ Recreation of the ColorLib "Callcenter" template as a React 19 + Vite + Tailwind
 11. **Contact** — Heading "If you need, Just drop us a line", form with name, email, subject, message fields + "Send Message" CTA button
 12. **Footer** — Dark bg (`#222`): 4 columns (About Us, Contact Us with phone numbers, Newsletter with email input, Social icons), copyright bar with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-- Scenario: Navbar displays logo and navigation
-  - Given the page loads
-  - Then a fixed white navbar is visible at the top
-  - And the logo shows a blue icon with the text "Buzzline"
-  - And navigation links include Home, Feature, We Offer, About, Contact
+#### Scenario: Navbar
 
+- Scenario: Navbar displays logo and navigation
+- **GIVEN** the page loads
+- **THEN** a fixed white navbar is visible at the top
+- **AND** the logo shows a blue icon with the text "Buzzline"
+- **AND** navigation links include Home, Feature, We Offer, About, Contact
 - Scenario: Navbar has scroll shadow effect
-  - Given the page loads
-  - When the user scrolls down
-  - Then the navbar gains a box-shadow effect
+- **GIVEN** the page loads
+- **WHEN** the user scrolls down
+- **THEN** the navbar gains a box-shadow effect
 
 ### Feature: Hero Banner
 
+#### Scenario: Hero Banner
+
 - Scenario: Hero displays headline and CTA
-  - Given the user is on the home section
-  - Then a full-screen hero with background image and dark overlay is displayed
-  - And the subtitle "DISCOVER THE COLORFUL WORLD" is shown in uppercase letters
-  - And the headline "Efficiency Booster" is displayed in large bold text
-  - And a "Discover Now" pill-shaped gradient CTA button is present
+- **GIVEN** the user is on the home section
+- **THEN** a full-screen hero with background image and dark overlay is displayed
+- **AND** the subtitle "DISCOVER THE COLORFUL WORLD" is shown in uppercase letters
+- **AND** the headline "Efficiency Booster" is displayed in large bold text
+- **AND** a "Discover Now" pill-shaped gradient CTA button is present
 
 ### Feature: Features Section
 
+#### Scenario: Features Section
+
 - Scenario: Three feature cards display
-  - Given the user scrolls to the features section
-  - Then three feature columns are shown: Online Support, 24/7 Round the Clock, Handling All Issues
-  - And each feature has a colored line-art icon, title, and description text
+- **GIVEN** the user scrolls to the features section
+- **THEN** three feature columns are shown: Online Support, 24/7 Round the Clock, Handling All Issues
+- **AND** each feature has a colored line-art icon, title, and description text
 
 ### Feature: Testimonials Section
 
+#### Scenario: Testimonials Section
+
 - Scenario: Testimonials carousel displays
-  - Given the user scrolls to the testimonials section
-  - Then a section with gradient overlay bg is displayed
-  - And the heading "Why Choose Us Your Fitness Builder" is shown
-  - And a carousel of testimonial cards is present
-  - And each card shows a user photo, quote text, author name, and role
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a section with gradient overlay bg is displayed
+- **AND** the heading "Why Choose Us Your Fitness Builder" is shown
+- **AND** a carousel of testimonial cards is present
+- **AND** each card shows a user photo, quote text, author name, and role
 
 ### Feature: Offered Services Section
 
+#### Scenario: Offered Services Section
+
 - Scenario: Offered services grid and description display
-  - Given the user scrolls to the offered services section
-  - Then the heading "Our Offered Services" is shown
-  - And 6 icon boxes are displayed in a 3×2 grid on the left
-  - And "Content Synchronization" text with description and "View Details" CTA is on the right
+- **GIVEN** the user scrolls to the offered services section
+- **THEN** the heading "Our Offered Services" is shown
+- **AND** 6 icon boxes are displayed in a 3×2 grid on the left
+- **AND** "Content Synchronization" text with description and "View Details" CTA is on the right
 
 ### Feature: Facts/Stats Section
 
+#### Scenario: Facts/Stats Section
+
 - Scenario: Counter statistics display
-  - Given the user scrolls to the facts section
-  - Then 5 stat counters are shown in a row
-  - And each counter has a number (rendered with gradient text) and a label
-  - And the stats include: Projects Completed, Really Happy Clients, Total Tasks Completed, Cups of Coffee Taken, In House Professionals
+- **GIVEN** the user scrolls to the facts section
+- **THEN** 5 stat counters are shown in a row
+- **AND** each counter has a number (rendered with gradient text) and a label
+- **AND** the stats include: Projects Completed, Really Happy Clients, Total Tasks Completed, Cups of Coffee Taken, In House Professionals
 
 ### Feature: Services Section
 
+#### Scenario: Services Section
+
 - Scenario: Six service cards display on dark background
-  - Given the user scrolls to the services section
-  - Then a dark background section with overlay is displayed
-  - And the heading "Some Awesomeness that should share" is shown
-  - And 6 service cards are displayed: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
-  - And each card has a Linearicons icon, title, and description
+- **GIVEN** the user scrolls to the services section
+- **THEN** a dark background section with overlay is displayed
+- **AND** the heading "Some Awesomeness that should share" is shown
+- **AND** 6 service cards are displayed: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
+- **AND** each card has a Linearicons icon, title, and description
 
 ### Feature: Info/About Section
 
+#### Scenario: Info/About Section
+
 - Scenario: About info section with image and text
-  - Given the user scrolls to the info section
-  - Then a split layout is displayed: image left, text right
-  - And the heading "Responsible Customer Support" is shown
-  - And a "Learn More" CTA button with arrow icon is present
+- **GIVEN** the user scrolls to the info section
+- **THEN** a split layout is displayed: image left, text right
+- **AND** the heading "Responsible Customer Support" is shown
+- **AND** a "Learn More" CTA button with arrow icon is present
 
 ### Feature: About/Video Section
 
+#### Scenario: About/Video Section
+
 - Scenario: About section with video background
-  - Given the user scrolls to the about section
-  - Then a split layout is displayed: text left, video bg right
-  - And the heading about interior/architecture is shown
-  - And a play button overlay is present on the video area
-  - And a "See Details" CTA button is present
+- **GIVEN** the user scrolls to the about section
+- **THEN** a split layout is displayed: text left, video bg right
+- **AND** the heading about interior/architecture is shown
+- **AND** a play button overlay is present on the video area
+- **AND** a "See Details" CTA button is present
 
 ### Feature: Brand Logos Section
 
+#### Scenario: Brand Logos Section
+
 - Scenario: Client logos display in grayscale
-  - Given the user scrolls to the brand section
-  - Then 5 partner/client logos are shown in a row
-  - And logos are displayed in grayscale by default
-  - And logos colorize on hover
+- **GIVEN** the user scrolls to the brand section
+- **THEN** 5 partner/client logos are shown in a row
+- **AND** logos are displayed in grayscale by default
+- **AND** logos colorize on hover
 
 ### Feature: Contact Section
 
+#### Scenario: Contact Section
+
 - Scenario: Contact form displays
-  - Given the user scrolls to the contact section
-  - Then the heading "If you need, Just drop us a line" is shown
-  - And a form with name, email, subject, and message fields is displayed
-  - And a "Send Message" CTA button is present
+- **GIVEN** the user scrolls to the contact section
+- **THEN** the heading "If you need, Just drop us a line" is shown
+- **AND** a form with name, email, subject, and message fields is displayed
+- **AND** a "Send Message" CTA button is present
 
 ### Feature: Footer
 
+#### Scenario: Footer
+
 - Scenario: Footer with columns and newsletter
-  - Given the user scrolls to the footer
-  - Then a dark background (`#222`) footer is displayed
-  - And four columns show: About Us, Contact Us (with phone numbers), Newsletter (with email input), Social icons
-  - And a copyright bar with Component Dock link is present
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background (`#222`) footer is displayed
+- **AND** four columns show: About Us, Contact Us (with phone numbers), Newsletter (with email input), Social icons
+- **AND** a copyright bar with Component Dock link is present
 
 ### Feature: Responsiveness
 
+#### Scenario: Responsiveness
+
 - Scenario: Mobile navigation toggle
-  - Given the viewport is under 768px
-  - Then a hamburger menu toggle is visible
-  - And clicking it opens a slide-in mobile nav with dark background
+- **GIVEN** the viewport is under 768px
+- **THEN** a hamburger menu toggle is visible
+- **AND** clicking it opens a slide-in mobile nav with dark background
 
 ## Verification checklist
 

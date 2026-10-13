@@ -42,66 +42,75 @@ Recreation of ColorLib's **Faith 2** template — a church landing page with eve
 3. **Hero Slider** — Full-width image carousel (multiple slides), dark overlay, date badge ("July 2018" in brown), subtitle ("Let God guide your path"), large heading ("Children Camp"), description paragraph, slide indicators bottom-right, left/right arrow navigation, "Sunday Worship: 10:30 AM" info box top-right.
 4. **(Below fold — to be confirmed from full page)** Expected sections for church template: About/Welcome, Ministries grid, Upcoming Events, Sermons/Featured message, Pastors/Team, Gallery/Photos, Contact/Visit info, Footer.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Litany template behaviour
+
 Feature: Litany church landing page
 
-  Background:
-    Given the user is on the Litany homepage
+Background:
+- **GIVEN** the user is on the Litany homepage
 
-  Scenario: Top event countdown bar displays
-    Then a dark bar is visible at the top of the page
-    And the text "Next Big Event:" is displayed
-    And countdown numbers for days, hours, minutes, and seconds are shown
-    And the countdown numbers are styled in golden/brown color
+#### Scenario: Top event countdown bar displays
 
-  Scenario: Header navigation renders correctly
-    Then the logo with cross icon and "Faith" text is visible in the top-left
-    And navigation links "Home", "Ministries", "Sermons", "Contact" are visible
-    And a search icon is visible
-    And a "Send Donations" button with brown background is visible
-    And the header has a white background
+- **THEN** a dark bar is visible at the top of the page
+- **AND** the text "Next Big Event:" is displayed
+- **AND** countdown numbers for days, hours, minutes, and seconds are shown
+- **AND** the countdown numbers are styled in golden/brown color
 
-  Scenario: Hero slider renders with content
-    Then a full-width hero image is displayed with a dark overlay
-    And a date badge with brown background is visible (e.g. "July 2018")
-    And a subtitle text is visible above the heading
-    And a large bold heading is visible (e.g. "Children Camp")
-    And a description paragraph is visible below the heading
-    And slide indicators ("01. 02. 03.") are visible at bottom-right
-    And left/right arrow navigation controls are visible
+#### Scenario: Header navigation renders correctly
 
-  Scenario: Hero info box displays worship time
-    Then a semi-transparent info box is visible in the top-right of the hero
-    And it contains text like "Sunday Worship: 10:30 AM"
+- **THEN** the logo with cross icon and "Faith" text is visible in the top-left
+- **AND** navigation links "Home", "Ministries", "Sermons", "Contact" are visible
+- **AND** a search icon is visible
+- **AND** a "Send Donations" button with brown background is visible
+- **AND** the header has a white background
 
-  Scenario: Navigation links are interactive
-    When the user hovers over a navigation link
-    Then the link color changes to brown/accent
+#### Scenario: Hero slider renders with content
 
-  Scenario: Hero slides advance
-    When the user clicks the right arrow
-    Then the next slide is displayed with a different image and heading
-    And the slide indicators update to highlight the current slide
+- **THEN** a full-width hero image is displayed with a dark overlay
+- **AND** a date badge with brown background is visible (e.g. "July 2018")
+- **AND** a subtitle text is visible above the heading
+- **AND** a large bold heading is visible (e.g. "Children Camp")
+- **AND** a description paragraph is visible below the heading
+- **AND** slide indicators ("01. 02. 03.") are visible at bottom-right
+- **AND** left/right arrow navigation controls are visible
 
-  Scenario: Mobile responsiveness
-    When the viewport is narrower than 768px
-    Then the navigation collapses to a hamburger menu
-    And the hero text size decreases
-    And the countdown bar text wraps appropriately
-    And sections stack vertically
+#### Scenario: Hero info box displays worship time
 
-  Scenario: Footer renders correctly
-    Then the footer displays church information
-    And social media icons are visible
-    And a "Component Dock" attribution link is present
+- **THEN** a semi-transparent info box is visible in the top-right of the hero
+- **AND** it contains text like "Sunday Worship: 10:30 AM"
 
-  Scenario: All interactive elements are accessible
-    Then all buttons have visible focus indicators
-    And all images have descriptive alt text
-    And navigation links are keyboard-focusable
-```
+#### Scenario: Navigation links are interactive
+
+- **WHEN** the user hovers over a navigation link
+- **THEN** the link color changes to brown/accent
+
+#### Scenario: Hero slides advance
+
+- **WHEN** the user clicks the right arrow
+- **THEN** the next slide is displayed with a different image and heading
+- **AND** the slide indicators update to highlight the current slide
+
+#### Scenario: Mobile responsiveness
+
+- **WHEN** the viewport is narrower than 768px
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** the hero text size decreases
+- **AND** the countdown bar text wraps appropriately
+- **AND** sections stack vertically
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer displays church information
+- **AND** social media icons are visible
+- **AND** a "Component Dock" attribution link is present
+
+#### Scenario: All interactive elements are accessible
+
+- **THEN** all buttons have visible focus indicators
+- **AND** all images have descriptive alt text
+- **AND** navigation links are keyboard-focusable
 
 ## Verification checklist
 

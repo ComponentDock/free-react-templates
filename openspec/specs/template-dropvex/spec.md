@@ -79,49 +79,59 @@ left and an arrow icon (`ion-ios-arrow-round-forward`) on the right.
 - Dropdown items have subtle bottom borders and fill blue on hover.
 - Font is Roboto (weights 400, 500, 700).
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page loads with centered heading
-  Given the user visits the DropVex page
-  Then a heading "Dropdown Navbar" is visible centered on the page
+### Feature: DropVex template behaviour
 
-### Scenario: Navbar bar visible with brand and hamburger
-  Given the user visits the DropVex page
-  Then a full-width blue navigation bar is visible in the center
-  And the brand name "Splash" is displayed in white uppercase text on the left
-  And a hamburger menu icon button is displayed on the right of the bar
+#### Scenario: Page loads with centered heading
 
-### Scenario: Dropdown opens on hamburger click
-  Given the user visits the DropVex page
-  When the user clicks the hamburger menu button
-  Then a dropdown menu appears below the navigation bar
-  And the dropdown contains items: Home, About, Services, Blog, Contact
+- **GIVEN** the user visits the DropVex page
+- **THEN** a heading "Dropdown Navbar" is visible centered on the page
 
-### Scenario: Dropdown items show arrow icons
-  Given the dropdown menu is open
-  Then each item has label text on the left
-  And each item has a right-arrow icon on the right
+#### Scenario: Navbar bar visible with brand and hamburger
 
-### Scenario: Dropdown closes on outside click
-  Given the dropdown menu is open
-  When the user clicks outside the dropdown
-  Then the dropdown menu closes
+- **GIVEN** the user visits the DropVex page
+- **THEN** a full-width blue navigation bar is visible in the center
+- **AND** the brand name "Splash" is displayed in white uppercase text on the left
+- **AND** a hamburger menu icon button is displayed on the right of the bar
 
-### Scenario: Dropdown item hover styling
-  Given the dropdown menu is open
-  When the user hovers over a dropdown item
-  Then the item background changes to the brand blue color
-  And the item text changes to white
+#### Scenario: Dropdown opens on hamburger click
 
-### Scenario: Brand name styling
-  Given the user visits the DropVex page
-  Then the brand name is styled in uppercase white text
-  And the brand name links to the homepage
+- **GIVEN** the user visits the DropVex page
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** a dropdown menu appears below the navigation bar
+- **AND** the dropdown contains items: Home, About, Services, Blog, Contact
 
-### Scenario: Responsive behavior
-  Given the user views on a mobile device
-  Then the navigation bar adjusts to full width
-  And the dropdown menu displays at minimum width of 15rem
+#### Scenario: Dropdown items show arrow icons
+
+- **GIVEN** the dropdown menu is open
+- **THEN** each item has label text on the left
+- **AND** each item has a right-arrow icon on the right
+
+#### Scenario: Dropdown closes on outside click
+
+- **GIVEN** the dropdown menu is open
+- **WHEN** the user clicks outside the dropdown
+- **THEN** the dropdown menu closes
+
+#### Scenario: Dropdown item hover styling
+
+- **GIVEN** the dropdown menu is open
+- **WHEN** the user hovers over a dropdown item
+- **THEN** the item background changes to the brand blue color
+- **AND** the item text changes to white
+
+#### Scenario: Brand name styling
+
+- **GIVEN** the user visits the DropVex page
+- **THEN** the brand name is styled in uppercase white text
+- **AND** the brand name links to the homepage
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the user views on a mobile device
+- **THEN** the navigation bar adjusts to full width
+- **AND** the dropdown menu displays at minimum width of 15rem
 
 ## Verification checklist
 

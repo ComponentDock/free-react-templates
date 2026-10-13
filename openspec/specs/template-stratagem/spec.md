@@ -105,120 +105,138 @@ React 19 + Tailwind CSS 4 + TypeScript.
 | Header top bar border | 1px solid rgba(255,255,255,0.2)                               |
 | Social icon color     | `#A8A7A0`                                                     |
 
-## Gherkin requirements
+## Requirements
 
 ### Header / Navbar
 
-Scenario: Navbar renders with logo and navigation links
-  Given the page loads
-  Then the navbar displays logo and links: Home, Pages, Services,
+#### Scenario: Navbar renders with logo and navigation links
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays logo and links: Home, Pages, Services,
     Case Study, Blog, Contact
-  And a "Get a Quote" CTA button is visible
+- **AND** a "Get a Quote" CTA button is visible
 
-Scenario: Navbar top bar shows contact info
-  Given the page loads on desktop
-  Then a top bar shows welcome text, email, phone, and social icons
+#### Scenario: Navbar top bar shows contact info
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls down
-  Then the navbar sticks to the top with white background
+- **GIVEN** the page loads on desktop
+- **THEN** a top bar shows welcome text, email, phone, and social icons
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar sticks to the top with white background
 
 ### Hero
 
-Scenario: Hero displays a carousel with headline and CTA
-  Given the page loads
-  Then a full-width slider shows "Big Opportunity for your Business"
-  And a "Our Services" pill button is displayed
-  And a dark navy overlay covers the background image
+#### Scenario: Hero displays a carousel with headline and CTA
+
+- **GIVEN** the page loads
+- **THEN** a full-width slider shows "Big Opportunity for your Business"
+- **AND** a "Our Services" pill button is displayed
+- **AND** a dark navy overlay covers the background image
 
 ### Services
 
-Scenario: Services section shows 6 service cards
-  Given the page loads
-  Then 6 service cards are displayed in a 3×2 grid
-  And each card has an icon, title, description, and "Learn More" link
+#### Scenario: Services section shows 6 service cards
+
+- **GIVEN** the page loads
+- **THEN** 6 service cards are displayed in a 3×2 grid
+- **AND** each card has an icon, title, description, and "Learn More" link
 
 ### About
 
-Scenario: About section shows text and illustration
-  Given the page loads
-  Then a "Why our Consulting?" heading is displayed with description text
-  And an "About Us" pill button is shown
-  And an illustration image appears on the right
+#### Scenario: About section shows text and illustration
+
+- **GIVEN** the page loads
+- **THEN** a "Why our Consulting?" heading is displayed with description text
+- **AND** an "About Us" pill button is shown
+- **AND** an illustration image appears on the right
 
 ### Counters
 
-Scenario: Counter section displays 4 stats
-  Given the page loads
-  Then 4 counters are visible: Team Members, Business Success,
-    Happy Client, Business Done
-  And each counter has an SVG icon and white number
+#### Scenario: Counter section displays 4 stats
 
-Scenario: Counters animate on scroll
-  Given the user scrolls to the counter section
-  Then the numbers animate from 0 to their target values
+- **GIVEN** the page loads
+- **THEN** 4 counters are visible: Team Members, Business Success,
+    Happy Client, Business Done
+- **AND** each counter has an SVG icon and white number
+
+#### Scenario: Counters animate on scroll
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** the numbers animate from 0 to their target values
 
 ### Case Study
 
-Scenario: Case study section shows a carousel of cards
-  Given the page loads
-  Then a carousel with 4 case study cards is displayed
-  And each card shows an image, category tag, and title
-  And a "More Cases" outline button is visible
+#### Scenario: Case study section shows a carousel of cards
+
+- **GIVEN** the page loads
+- **THEN** a carousel with 4 case study cards is displayed
+- **AND** each card shows an image, category tag, and title
+- **AND** a "More Cases" outline button is visible
 
 ### FAQ Accordion
 
-Scenario: FAQ section shows an image and accordion
-  Given the page loads
-  Then a "Frequently ask" heading is displayed with an illustration
-  And 3 accordion items are shown
+#### Scenario: FAQ section shows an image and accordion
 
-Scenario: Accordion item expands on click
-  Given the user clicks an accordion button
-  Then the panel content expands and becomes visible
+- **GIVEN** the page loads
+- **THEN** a "Frequently ask" heading is displayed with an illustration
+- **AND** 3 accordion items are shown
+
+#### Scenario: Accordion item expands on click
+
+- **GIVEN** the user clicks an accordion button
+- **THEN** the panel content expands and becomes visible
 
 ### Testimonials
 
-Scenario: Testimonials carousel shows client quotes
-  Given the page loads
-  Then a carousel with testimonial slides is displayed
-  And each slide shows a quote icon, quote text, avatar, name, and role
+#### Scenario: Testimonials carousel shows client quotes
+
+- **GIVEN** the page loads
+- **THEN** a carousel with testimonial slides is displayed
+- **AND** each slide shows a quote icon, quote text, avatar, name, and role
 
 ### Team
 
-Scenario: Team section shows 3 team member cards
-  Given the page loads
-  Then 3 team member cards are displayed
-  And each card shows an image, name, role, and social links
+#### Scenario: Team section shows 3 team member cards
+
+- **GIVEN** the page loads
+- **THEN** 3 team member cards are displayed
+- **AND** each card shows an image, name, role, and social links
 
 ### Contact Form
 
-Scenario: Contact form renders with inputs and button
-  Given the page loads
-  Then a "Get Free Quote" form is shown with name, email, message fields
-  And a "Send" pill button is displayed
+#### Scenario: Contact form renders with inputs and button
 
-Scenario: Contact form validates inputs
-  Given the user clicks "Send" without entering data
-  Then the form prevents submission
+- **GIVEN** the page loads
+- **THEN** a "Get Free Quote" form is shown with name, email, message fields
+- **AND** a "Send" pill button is displayed
+
+#### Scenario: Contact form validates inputs
+
+- **GIVEN** the user clicks "Send" without entering data
+- **THEN** the form prevents submission
 
 ### Info CTA
 
-Scenario: Info CTA section shows phone number
-  Given the page loads
-  Then "For Any Information Call Us" heading is displayed
-  And a phone number pill button is shown
+#### Scenario: Info CTA section shows phone number
+
+- **GIVEN** the page loads
+- **THEN** "For Any Information Call Us" heading is displayed
+- **AND** a phone number pill button is shown
 
 ### Footer
 
-Scenario: Footer renders 4-column layout
-  Given the page loads
-  Then 4 footer columns are displayed: About, Services, Useful Links,
+#### Scenario: Footer renders 4-column layout
+
+- **GIVEN** the page loads
+- **THEN** 4 footer columns are displayed: About, Services, Useful Links,
     Subscribe
 
-Scenario: Footer copyright bar is visible
-  Given the page loads
-  Then a copyright bar with "Component Dock" link is displayed
+#### Scenario: Footer copyright bar is visible
+
+- **GIVEN** the page loads
+- **THEN** a copyright bar with "Component Dock" link is displayed
 
 ## Verification checklist
 

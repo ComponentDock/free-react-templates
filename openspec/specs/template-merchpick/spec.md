@@ -53,124 +53,141 @@ Recreation of ColorLib "Product" template.
 6. **Popular Items Carousel** — Heading "Popular Items" with prev/next navigation, owl-carousel of product cards (same items as grid)
 7. **Footer** — 4-column layout: Help links, About links, Shop links, Newsletter signup form; copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
-```gherkin
-Scenario: Sticky navbar is visible and fixed at top
-  Given I visit the Merchpick homepage
-  Then the navbar should be sticky at the top of the viewport
 
-Scenario: Logo displays "Merchpick" with teal period
-  Given I visit the Merchpick homepage
-  Then the logo text should show "Merchpick" with a teal-colored period
+#### Scenario: Sticky navbar is visible and fixed at top
 
-Scenario: Navigation links are present
-  Given I visit the Merchpick homepage
-  Then I should see navigation links: "New", "Men", "Women", "Accessories", "Jewelry", "About", "Contact"
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the navbar should be sticky at the top of the viewport
 
-Scenario: Cart icon shows item count
-  Given I visit the Merchpick homepage
-  Then the cart icon should display a badge with the number "2"
-```
+#### Scenario: Logo displays "Merchpick" with teal period
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the logo text should show "Merchpick" with a teal-colored period
+
+#### Scenario: Navigation links are present
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see navigation links: "New", "Men", "Women", "Accessories", "Jewelry", "About", "Contact"
+
+#### Scenario: Cart icon shows item count
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the cart icon should display a badge with the number "2"
 
 ### Feature: Hero Slider
-```gherkin
-Scenario: Hero slider displays full-width background images
-  Given I visit the Merchpick homepage
-  Then the hero section should display a full-width background image
 
-Scenario: Hero heading is centered with white text
-  Given I visit the Merchpick homepage
-  Then the hero heading should be centered with white text
+#### Scenario: Hero slider displays full-width background images
 
-Scenario: Hero CTA button exists
-  Given I visit the Merchpick homepage
-  Then I should see an "Explore now" button in the hero section
-```
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the hero section should display a full-width background image
+
+#### Scenario: Hero heading is centered with white text
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the hero heading should be centered with white text
+
+#### Scenario: Hero CTA button exists
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see an "Explore now" button in the hero section
 
 ### Feature: Features Strip
-```gherkin
-Scenario: Three feature items displayed in a row
-  Given I visit the Merchpick homepage
-  Then I should see three feature items: "Worldwide Delivery", "Secure Payments", "Simple Returns"
 
-Scenario: Each feature has an icon
-  Given I visit the Merchpick homepage
-  Then each feature item should have a visible icon
+#### Scenario: Three feature items displayed in a row
 
-Scenario: Features strip has light gray background
-  Given I visit the Merchpick homepage
-  Then the features section should have a light gray background
-```
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see three feature items: "Worldwide Delivery", "Secure Payments", "Simple Returns"
+
+#### Scenario: Each feature has an icon
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** each feature item should have a visible icon
+
+#### Scenario: Features strip has light gray background
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the features section should have a light gray background
 
 ### Feature: Product Grid
-```gherkin
-Scenario: Product grid displays 6 items in 3 columns
-  Given I visit the Merchpick homepage
-  Then I should see 6 product cards arranged in a 3-column grid
 
-Scenario: Product cards show image, title, and price
-  Given I visit the Merchpick homepage
-  Then each product card should display an image, title, and price
+#### Scenario: Product grid displays 6 items in 3 columns
 
-Scenario: Product cards with badges show "New" or "Sale"
-  Given I visit the Merchpick homepage
-  Then product cards with badges should show either "New" or "Sale" text
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see 6 product cards arranged in a 3-column grid
 
-Scenario: Sale items show original price with strikethrough
-  Given I visit the Merchpick homepage
-  Then sale product cards should show the original price with strikethrough followed by the sale price
-```
+#### Scenario: Product cards show image, title, and price
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** each product card should display an image, title, and price
+
+#### Scenario: Product cards with badges show "New" or "Sale"
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** product cards with badges should show either "New" or "Sale" text
+
+#### Scenario: Sale items show original price with strikethrough
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** sale product cards should show the original price with strikethrough followed by the sale price
 
 ### Feature: Weekly Deal Banner
-```gherkin
-Scenario: Deal banner displays with background image
-  Given I visit the Merchpick homepage
-  Then the deal banner should have a background image
 
-Scenario: Deal banner shows discount text
-  Given I visit the Merchpick homepage
-  Then I should see "Limited Offers 20% OFF" subtitle text
+#### Scenario: Deal banner displays with background image
 
-Scenario: Deal banner shows "Shop Now" CTA
-  Given I visit the Merchpick homepage
-  Then I should see a "Shop Now" button in the deal banner
-```
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the deal banner should have a background image
+
+#### Scenario: Deal banner shows discount text
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see "Limited Offers 20% OFF" subtitle text
+
+#### Scenario: Deal banner shows "Shop Now" CTA
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see a "Shop Now" button in the deal banner
 
 ### Feature: Popular Items Carousel
-```gherkin
-Scenario: Popular Items carousel displays with navigation
-  Given I visit the Merchpick homepage
-  Then I should see a "Popular Items" heading with prev/next navigation arrows
 
-Scenario: Carousel shows product cards
-  Given I visit the Merchpick homepage
-  Then the carousel should display multiple product cards
+#### Scenario: Popular Items carousel displays with navigation
 
-Scenario: Carousel navigation arrows are clickable
-  Given I visit the Merchpick homepage
-  Then the prev and next arrows should be visible and clickable
-```
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see a "Popular Items" heading with prev/next navigation arrows
+
+#### Scenario: Carousel shows product cards
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the carousel should display multiple product cards
+
+#### Scenario: Carousel navigation arrows are clickable
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the prev and next arrows should be visible and clickable
 
 ### Feature: Footer
-```gherkin
-Scenario: Footer displays four content columns
-  Given I visit the Merchpick homepage
-  Then the footer should contain four sections: "Help", "About", "Shop", and newsletter signup
 
-Scenario: Footer has newsletter signup form
-  Given I visit the Merchpick homepage
-  Then I should see an email input field and a "Subscribe" button in the footer
+#### Scenario: Footer displays four content columns
 
-Scenario: Footer shows copyright text
-  Given I visit the Merchpick homepage
-  Then the footer should display a copyright notice with the current year
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the footer should contain four sections: "Help", "About", "Shop", and newsletter signup
 
-Scenario: Footer links to Component Dock
-  Given I visit the Merchpick homepage
-  Then the footer should contain a link to https://www.componentdock.com/
-```
+#### Scenario: Footer has newsletter signup form
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** I should see an email input field and a "Subscribe" button in the footer
+
+#### Scenario: Footer shows copyright text
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the footer should display a copyright notice with the current year
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Merchpick homepage
+- **THEN** the footer should contain a link to https://www.componentdock.com/
 
 ## Verification Checklist
 

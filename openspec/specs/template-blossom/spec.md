@@ -69,84 +69,102 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 | Category card height  | 440px                              | `.categories__item`                                |
 | Instagram item height | 372px                              | `.instagram__post__item`                           |
 
-## Gherkin requirements
+## Requirements
 
 ### Hero Section
-Scenario: Hero slider displays floral imagery with headline and CTA
-  Given the user is on the homepage
-  Then a full-width hero section is visible with a background image
-  And a subtitle "Fresh Flower & Gift Shop" is displayed
-  And a heading "Making beautiful flowers a part of your life." is displayed
-  And a pink pill button "Shop now" is displayed
-  And slider navigation dots are visible at the bottom
+
+#### Scenario: Hero slider displays floral imagery with headline and CTA
+
+- **GIVEN** the user is on the homepage
+- **THEN** a full-width hero section is visible with a background image
+- **AND** a subtitle "Fresh Flower & Gift Shop" is displayed
+- **AND** a heading "Making beautiful flowers a part of your life." is displayed
+- **AND** a pink pill button "Shop now" is displayed
+- **AND** slider navigation dots are visible at the bottom
 
 ### Benefits Bar
-Scenario: Four benefit items are displayed in a row
-  Given the user is on the homepage
-  Then 4 benefit items are displayed in a horizontal row
-  And each benefit item has an icon, a title, and a short description
-  And the titles are "100% Freshness", "Made by artist", "Own courier", "100% Freshness"
+
+#### Scenario: Four benefit items are displayed in a row
+
+- **GIVEN** the user is on the homepage
+- **THEN** 4 benefit items are displayed in a horizontal row
+- **AND** each benefit item has an icon, a title, and a short description
+- **AND** the titles are "100% Freshness", "Made by artist", "Own courier", "100% Freshness"
 
 ### Categories Section
-Scenario: Four category cards with overlay text on cover images
-  Given the user is on the homepage
-  Then 4 category cards are displayed in a 4-column grid
-  And each card has a background image with overlay text
-  And the categories are "Fresh Flower", "Succulent plants", "Cactus plants", "Funiture tree"
-  And each category shows an item count
+
+#### Scenario: Four category cards with overlay text on cover images
+
+- **GIVEN** the user is on the homepage
+- **THEN** 4 category cards are displayed in a 4-column grid
+- **AND** each card has a background image with overlay text
+- **AND** the categories are "Fresh Flower", "Succulent plants", "Cactus plants", "Funiture tree"
+- **AND** each category shows an item count
 
 ### About Section
-Scenario: Two-column about section with video and feature text
-  Given the user is on the homepage
-  Then a section title "About us" with subtitle "We provide all kinds of fresh flower services" is displayed
-  And a paragraph about the florist business is shown
-  And a video thumbnail with a play button is displayed
-  And a feature text block with heading "Dried flowers are having a renaissance" is shown
-  And a pink "Contact us" button is displayed
+
+#### Scenario: Two-column about section with video and feature text
+
+- **GIVEN** the user is on the homepage
+- **THEN** a section title "About us" with subtitle "We provide all kinds of fresh flower services" is displayed
+- **AND** a paragraph about the florist business is shown
+- **AND** a video thumbnail with a play button is displayed
+- **AND** a feature text block with heading "Dried flowers are having a renaissance" is shown
+- **AND** a pink "Contact us" button is displayed
 
 ### New Arrivals / Product Grid
-Scenario: Filterable product grid with 10 items
-  Given the user is on the homepage
-  Then a section title "New Arrivals" with subtitle "Our flower" is displayed
-  And filter controls show: All, Bouquet, Flower box, Flower shelf, Basket of flower, Gift combos
-  And 10 product cards are displayed in a grid
-  And each product card has an image, product name, price, and "Add to cart" link
-  And some cards show labels: "New", "Sale", or "Out Of Stock"
-  And hovering a card reveals icon buttons (search, cart, heart) and hides the price
+
+#### Scenario: Filterable product grid with 10 items
+
+- **GIVEN** the user is on the homepage
+- **THEN** a section title "New Arrivals" with subtitle "Our flower" is displayed
+- **AND** filter controls show: All, Bouquet, Flower box, Flower shelf, Basket of flower, Gift combos
+- **AND** 10 product cards are displayed in a grid
+- **AND** each product card has an image, product name, price, and "Add to cart" link
+- **AND** some cards show labels: "New", "Sale", or "Out Of Stock"
+- **AND** hovering a card reveals icon buttons (search, cart, heart) and hides the price
 
 ### Latest Posts / Blog Section
-Scenario: Three blog post cards with labels
-  Given the user is on the homepage
-  Then a section title "Florist tricks" with subtitle "Latest posts" is displayed
-  And a "View all posts" border button is displayed
-  And 3 blog cards are shown in a 3-column grid
-  And each blog card has a cover image, a label pill, a title, excerpt, and date
-  And the labels are "Trend news", "Tips & Idea", "DIY & Crafts"
+
+#### Scenario: Three blog post cards with labels
+
+- **GIVEN** the user is on the homepage
+- **THEN** a section title "Florist tricks" with subtitle "Latest posts" is displayed
+- **AND** a "View all posts" border button is displayed
+- **AND** 3 blog cards are shown in a 3-column grid
+- **AND** each blog card has a cover image, a label pill, a title, excerpt, and date
+- **AND** the labels are "Trend news", "Tips & Idea", "DIY & Crafts"
 
 ### Testimonial Section
-Scenario: Testimonial carousel with quote and author
-  Given the user is on the homepage
-  Then a testimonial section with a lavender (#f7f5fa) background is displayed
-  And a quote mark image is shown
-  And a testimonial quote in serif italic font is displayed
-  And the author name "Alejandro Houston" and role "Businessman" are shown
-  And carousel navigation buttons (prev/next) are visible
+
+#### Scenario: Testimonial carousel with quote and author
+
+- **GIVEN** the user is on the homepage
+- **THEN** a testimonial section with a lavender (#f7f5fa) background is displayed
+- **AND** a quote mark image is shown
+- **AND** a testimonial quote in serif italic font is displayed
+- **AND** the author name "Alejandro Houston" and role "Businessman" are shown
+- **AND** carousel navigation buttons (prev/next) are visible
 
 ### Instagram Section
-Scenario: Five-column Instagram photo strip with hover overlay
-  Given the user is on the homepage
-  Then 5 Instagram photo items are displayed in a horizontal row
-  And each item has a background image
-  And hovering an item shows a white overlay with a pink Instagram icon and "Follow us @blossom" text
+
+#### Scenario: Five-column Instagram photo strip with hover overlay
+
+- **GIVEN** the user is on the homepage
+- **THEN** 5 Instagram photo items are displayed in a horizontal row
+- **AND** each item has a background image
+- **AND** hovering an item shows a white overlay with a pink Instagram icon and "Follow us @blossom" text
 
 ### Footer
-Scenario: Multi-column footer with newsletter and social links
-  Given the user is on the homepage
-  Then a footer is displayed with the logo and a short description
-  And social media icon links (Facebook, Twitter, Instagram, LinkedIn) are shown
-  And a 4-column widget area shows: Company links, Account links, Newsletter form, Contact info
-  And the newsletter form has an email input and a "Subscribe" button
-  And the copyright bar shows "All rights reserved" with a link to "Component Dock"
+
+#### Scenario: Multi-column footer with newsletter and social links
+
+- **GIVEN** the user is on the homepage
+- **THEN** a footer is displayed with the logo and a short description
+- **AND** social media icon links (Facebook, Twitter, Instagram, LinkedIn) are shown
+- **AND** a 4-column widget area shows: Company links, Account links, Newsletter form, Contact info
+- **AND** the newsletter form has an email input and a "Subscribe" button
+- **AND** the copyright bar shows "All rights reserved" with a link to "Component Dock"
 
 ## Verification checklist
 

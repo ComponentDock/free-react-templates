@@ -73,111 +73,93 @@ patterns.
 6. **Step 4 — Password Confirmation:** Password input to confirm password,
    plus final submit button
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Page renders with wizard card centered
+### Feature: Formpath template behaviour
 
-```gherkin
-Given the user visits the Formpath page
-Then a white card should be centered on the page
-And the card should have rounded corners and a subtle shadow
-And the page background should be clean and light
-```
+#### Scenario: Page renders with wizard card centered
 
-### Scenario: Step indicator shows four steps
+- **GIVEN** the user visits the Formpath page
+- **THEN** a white card should be centered on the page
+- **AND** the card should have rounded corners and a subtle shadow
+- **AND** the page background should be clean and light
 
-```gherkin
-Given the user visits the Formpath page
-Then a step indicator should display four numbered circles
-And step 1 should be highlighted as active (blue)
-And steps 2, 3, 4 should be inactive (gray)
-And connecting lines should link the circles horizontally
-```
+#### Scenario: Step indicator shows four steps
 
-### Scenario: Step 1 — Username input
+- **GIVEN** the user visits the Formpath page
+- **THEN** a step indicator should display four numbered circles
+- **AND** step 1 should be highlighted as active (blue)
+- **AND** steps 2, 3, 4 should be inactive (gray)
+- **AND** connecting lines should link the circles horizontally
 
-```gherkin
-Given the user is on step 1 (Username)
-Then a text input labeled "Username" should be visible
-And a "Next" button should be visible
-And no "Back" button should be visible
-When the user clicks "Next" without entering a username
-Then a validation error should appear
-```
+#### Scenario: Step 1 — Username input
 
-### Scenario: Navigate from step 1 to step 2
+- **GIVEN** the user is on step 1 (Username)
+- **THEN** a text input labeled "Username" should be visible
+- **AND** a "Next" button should be visible
+- **AND** no "Back" button should be visible
+- **WHEN** the user clicks "Next" without entering a username
+- **THEN** a validation error should appear
 
-```gherkin
-Given the user is on step 1 (Username)
-And the user types "johndoe" into the username field
-When the user clicks "Next"
-Then step 2 (Email) should become active
-And step 1 should show as completed (green)
-And the email input should be visible
-And a "Back" button should now be visible
-```
+#### Scenario: Navigate from step 1 to step 2
 
-### Scenario: Step 2 — Email input
+- **GIVEN** the user is on step 1 (Username)
+- **AND** the user types "johndoe" into the username field
+- **WHEN** the user clicks "Next"
+- **THEN** step 2 (Email) should become active
+- **AND** step 1 should show as completed (green)
+- **AND** the email input should be visible
+- **AND** a "Back" button should now be visible
 
-```gherkin
-Given the user is on step 2 (Email)
-Then an email input labeled "Email" should be visible
-And "Back" and "Next" buttons should be visible
-When the user clicks "Next" without entering an email
-Then a validation error should appear
-When the user enters a valid email and clicks "Next"
-Then step 3 (Password) should become active
-```
+#### Scenario: Step 2 — Email input
 
-### Scenario: Step 3 — Password input
+- **GIVEN** the user is on step 2 (Email)
+- **THEN** an email input labeled "Email" should be visible
+- **AND** "Back" and "Next" buttons should be visible
+- **WHEN** the user clicks "Next" without entering an email
+- **THEN** a validation error should appear
+- **WHEN** the user enters a valid email and clicks "Next"
+- **THEN** step 3 (Password) should become active
 
-```gherkin
-Given the user is on step 3 (Password)
-Then a password input labeled "Password" should be visible
-And "Back" and "Next" buttons should be visible
-When the user enters a password and clicks "Next"
-Then step 4 (Confirm Password) should become active
-```
+#### Scenario: Step 3 — Password input
 
-### Scenario: Step 4 — Confirm Password and submit
+- **GIVEN** the user is on step 3 (Password)
+- **THEN** a password input labeled "Password" should be visible
+- **AND** "Back" and "Next" buttons should be visible
+- **WHEN** the user enters a password and clicks "Next"
+- **THEN** step 4 (Confirm Password) should become active
 
-```gherkin
-Given the user is on step 4 (Confirm Password)
-Then a password input labeled "Confirm Password" should be visible
-And "Back" and "Submit" buttons should be visible
-When the user enters a matching password and clicks "Submit"
-Then a success message should appear
-And all four steps should show as completed (green)
-```
+#### Scenario: Step 4 — Confirm Password and submit
 
-### Scenario: Back navigation
+- **GIVEN** the user is on step 4 (Confirm Password)
+- **THEN** a password input labeled "Confirm Password" should be visible
+- **AND** "Back" and "Submit" buttons should be visible
+- **WHEN** the user enters a matching password and clicks "Submit"
+- **THEN** a success message should appear
+- **AND** all four steps should show as completed (green)
 
-```gherkin
-Given the user is on step 3 (Password)
-When the user clicks "Back"
-Then step 2 (Email) should become active again
-And the previously entered email should still be populated
-And step 3 should revert to inactive
-```
+#### Scenario: Back navigation
 
-### Scenario: Step indicator updates on navigation
+- **GIVEN** the user is on step 3 (Password)
+- **WHEN** the user clicks "Back"
+- **THEN** step 2 (Email) should become active again
+- **AND** the previously entered email should still be populated
+- **AND** step 3 should revert to inactive
 
-```gherkin
-Given the user advances from step 1 to step 3
-Then step 1 indicator should be green (completed)
-Then step 2 indicator should be green (completed)
-Then step 3 indicator should be blue (active)
-Then step 4 indicator should be gray (inactive)
-```
+#### Scenario: Step indicator updates on navigation
 
-### Scenario: Responsive layout
+- **GIVEN** the user advances from step 1 to step 3
+- **THEN** step 1 indicator should be green (completed)
+- **THEN** step 2 indicator should be green (completed)
+- **THEN** step 3 indicator should be blue (active)
+- **THEN** step 4 indicator should be gray (inactive)
 
-```gherkin
-Given the user views the page on a mobile viewport (width < 640px)
-Then the wizard card should still be centered
-And the step indicator should remain visible
-And inputs and buttons should be full-width within the card
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile viewport (width < 640px)
+- **THEN** the wizard card should still be centered
+- **AND** the step indicator should remain visible
+- **AND** inputs and buttons should be full-width within the card
 
 ## Verification Checklist
 

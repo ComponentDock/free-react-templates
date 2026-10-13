@@ -48,77 +48,85 @@ Compared to V01 (option-picker), this variant emphasizes:
 - Bootstrap 4 default border-radius (0.25rem / 4px)
 - Possibly no search/filter — just a pure dropdown
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Minimalist Multiselect Dropdown
 
-```gherkin
 Feature: ChoiceStack minimalist multiselect
-  As a developer embedding a form component
-  I want a minimalist multiselect dropdown
-  So that I can add multi-selection to forms with zero visual clutter
+As a developer embedding a form component
+I want a minimalist multiselect dropdown
+So that I can add multi-selection to forms with zero visual clutter
 
-  Background:
-    Given the ChoiceStack component is rendered
-    And the component has a list of options
+Background:
+- **GIVEN** the ChoiceStack component is rendered
+- **AND** the component has a list of options
 
-  Scenario: Collapsed state
-    When the page loads
-    Then a single-line input/trigger is visible
-    And the dropdown list is hidden
-    And a dropdown arrow indicator is shown
+#### Scenario: Collapsed state
 
-  Scenario: Opening the dropdown
-    When I click the dropdown trigger
-    Then the options list appears below
-    And the trigger shows focus styling (blue border)
+- **WHEN** the page loads
+- **THEN** a single-line input/trigger is visible
+- **AND** the dropdown list is hidden
+- **AND** a dropdown arrow indicator is shown
 
-  Scenario: Selecting one option
-    Given the dropdown is open
-    When I click an option
-    Then the option gets a checkmark indicator
-    And the selected count or label updates in the trigger
+#### Scenario: Opening the dropdown
 
-  Scenario: Multi-selection
-    Given the dropdown is open
-    When I select "Option A"
-    And I select "Option B"
-    Then both options show checkmarks
-    And the trigger shows "2 selected" or similar count
+- **WHEN** I click the dropdown trigger
+- **THEN** the options list appears below
+- **AND** the trigger shows focus styling (blue border)
 
-  Scenario: Deselecting by re-clicking
-    Given option "Option A" is selected
-    When I click "Option A" again
-    Then the checkmark is removed
-    And the selected count decreases
+#### Scenario: Selecting one option
 
-  Scenario: Closing on outside click
-    Given the dropdown is open
-    When I click outside the component
-    Then the dropdown list closes
-    And selections are preserved
+- **GIVEN** the dropdown is open
+- **WHEN** I click an option
+- **THEN** the option gets a checkmark indicator
+- **AND** the selected count or label updates in the trigger
 
-  Scenario: Escape key closes dropdown
-    Given the dropdown is open
-    When I press Escape
-    Then the dropdown closes
+#### Scenario: Multi-selection
 
-  Scenario: Disabled state
-    Given the component is disabled
-    When I click the trigger
-    Then nothing happens
-    And the component appears muted
+- **GIVEN** the dropdown is open
+- **WHEN** I select "Option A"
+- **AND** I select "Option B"
+- **THEN** both options show checkmarks
+- **AND** the trigger shows "2 selected" or similar count
 
-  Scenario: Responsive width
-    Given the viewport is 480px wide
-    Then the dropdown spans full container width
+#### Scenario: Deselecting by re-clicking
 
-  Scenario: Accessibility
-    Then the trigger has role="combobox"
-    And the list has role="listbox"
-    And options have role="option"
-    And aria-multiselectable="true" is set on the list
-```
+- **GIVEN** option "Option A" is selected
+- **WHEN** I click "Option A" again
+- **THEN** the checkmark is removed
+- **AND** the selected count decreases
+
+#### Scenario: Closing on outside click
+
+- **GIVEN** the dropdown is open
+- **WHEN** I click outside the component
+- **THEN** the dropdown list closes
+- **AND** selections are preserved
+
+#### Scenario: Escape key closes dropdown
+
+- **GIVEN** the dropdown is open
+- **WHEN** I press Escape
+- **THEN** the dropdown closes
+
+#### Scenario: Disabled state
+
+- **GIVEN** the component is disabled
+- **WHEN** I click the trigger
+- **THEN** nothing happens
+- **AND** the component appears muted
+
+#### Scenario: Responsive width
+
+- **GIVEN** the viewport is 480px wide
+- **THEN** the dropdown spans full container width
+
+#### Scenario: Accessibility
+
+- **THEN** the trigger has role="combobox"
+- **AND** the list has role="listbox"
+- **AND** options have role="option"
+- **AND** aria-multiselectable="true" is set on the list
 
 ## Verification Checklist
 

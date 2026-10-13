@@ -68,46 +68,56 @@ A centered single-column signup form in a white card with pill-shaped CTA, socia
 - **"Sign In" link** next to checkbox (instead of full terms text with links)
 - **Centered layout** (form-block centered in container)
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with correct heading
-  Given the user navigates to the signup page
-  Then the heading "Sign Up" is visible
+### Feature: SignupPulse template behaviour
 
-### Scenario: Form displays all four fields
-  Given the user views the form
-  Then a "Name" text input is present
-  And an "Email" text input is present
-  And a "Password" password input is present
-  And a "Re-type Password" password input is present
+#### Scenario: Page renders with correct heading
 
-### Scenario: Terms checkbox defaults to checked
-  Given the user views the form
-  Then the terms checkbox is checked by default
-  And the caption reads "Agree our Terms and Conditions"
+- **GIVEN** the user navigates to the signup page
+- **THEN** the heading "Sign Up" is visible
 
-### Scenario: Sign In link is visible
-  Given the user views the form
-  Then a "Sign In" link is displayed next to the checkbox
+#### Scenario: Form displays all four fields
 
-### Scenario: Register button is pill-shaped and teal
-  Given the user views the form
-  Then the "Register" button spans the full card width
-  And the "Register" button has a pill shape (border-radius: 30px)
-  And the "Register" button has a teal (#38d39f) background
+- **GIVEN** the user views the form
+- **THEN** a "Name" text input is present
+- **AND** an "Email" text input is present
+- **AND** a "Password" password input is present
+- **AND** a "Re-type Password" password input is present
 
-### Scenario: Social login buttons are visible
-  Given the user views the form
-  Then three social login buttons are displayed (Facebook, Twitter, Google)
-  And they are centered horizontally
+#### Scenario: Terms checkbox defaults to checked
 
-### Scenario: Form card has shadow
-  Given the user views the form
-  Then the form card has a subtle drop shadow
+- **GIVEN** the user views the form
+- **THEN** the terms checkbox is checked by default
+- **AND** the caption reads "Agree our Terms and Conditions"
 
-### Scenario: Mobile responsive layout
-  Given the user views the page on a mobile viewport
-  Then the card padding is reduced to 30px
+#### Scenario: Sign In link is visible
+
+- **GIVEN** the user views the form
+- **THEN** a "Sign In" link is displayed next to the checkbox
+
+#### Scenario: Register button is pill-shaped and teal
+
+- **GIVEN** the user views the form
+- **THEN** the "Register" button spans the full card width
+- **AND** the "Register" button has a pill shape (border-radius: 30px)
+- **AND** the "Register" button has a teal (#38d39f) background
+
+#### Scenario: Social login buttons are visible
+
+- **GIVEN** the user views the form
+- **THEN** three social login buttons are displayed (Facebook, Twitter, Google)
+- **AND** they are centered horizontally
+
+#### Scenario: Form card has shadow
+
+- **GIVEN** the user views the form
+- **THEN** the form card has a subtle drop shadow
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the card padding is reduced to 30px
 
 ## Verification checklist
 

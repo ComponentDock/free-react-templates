@@ -30,197 +30,193 @@ Recreation of ColorLib's **Roberto** — a hotel & resort website template.
 | Section padding     | `100px 0`                     | Standard section rhythm                 |
 | Overlay images      | bg-img + bg-overlay classes   | Dark semi-transparent overlay on images |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header displays navigation and contact info
+### Feature: Palazzo template behaviour
 
-```gherkin
+#### Scenario: Header displays navigation and contact info
+
 Feature: Header
 
-  Scenario: Top header shows contact details and social links
-    Given I visit the Palazzo homepage
-    Then I see a phone number "(123) 456-789-1230"
-    And I see an email "info.colorlib@gmail.com"
-    And I see social icons for Facebook, Twitter, TripAdvisor, Instagram
+#### Scenario: Top header shows contact details and social links
 
-  Scenario: Main navigation shows menu items
-    Given I visit the Palazzo homepage
-    Then I see navigation links: Home, Rooms, About Us, Pages, News, Contact
-    And I see a "Book Now" button in the navigation
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a phone number "(123) 456-789-1230"
+- **AND** I see an email "info.colorlib@gmail.com"
+- **AND** I see social icons for Facebook, Twitter, TripAdvisor, Instagram
 
-  Scenario: Mobile hamburger menu toggles navigation
-    Given I visit the Palazzo homepage on a mobile viewport
-    When I click the hamburger menu icon
-    Then the navigation menu becomes visible
-    And the hamburger icon changes to a close icon
-```
+#### Scenario: Main navigation shows menu items
 
-### Scenario: Hero section shows rotating slides
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see navigation links: Home, Rooms, About Us, Pages, News, Contact
+- **AND** I see a "Book Now" button in the navigation
 
-```gherkin
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** I visit the Palazzo homepage on a mobile viewport
+- **WHEN** I click the hamburger menu icon
+- **THEN** the navigation menu becomes visible
+- **AND** the hamburger icon changes to a close icon
+
+#### Scenario: Hero section shows rotating slides
+
 Feature: Hero / Welcome Area
 
-  Scenario: Hero displays a carousel of welcome slides
-    Given I visit the Palazzo homepage
-    Then I see a full-width hero section with a background image
-    And I see the text "Hotel & Resort" as a subtitle
-    And I see "Welcome To Palazzo" as the main heading
-    And I see a "Discover Now" button with transparent border
+#### Scenario: Hero displays a carousel of welcome slides
 
-  Scenario: Hero slides auto-rotate
-    Given I visit the Palazzo homepage
-    When I wait for the carousel interval
-    Then the hero slide transitions to the next slide
-```
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a full-width hero section with a background image
+- **AND** I see the text "Hotel & Resort" as a subtitle
+- **AND** I see "Welcome To Palazzo" as the main heading
+- **AND** I see a "Discover Now" button with transparent border
 
-### Scenario: Hotel search form
+#### Scenario: Hero slides auto-rotate
 
-```gherkin
+- **GIVEN** I visit the Palazzo homepage
+- **WHEN** I wait for the carousel interval
+- **THEN** the hero slide transitions to the next slide
+
+#### Scenario: Hotel search form
+
 Feature: Hotel Search Form
 
-  Scenario: Search form displays date and guest fields
-    Given I visit the Palazzo homepage
-    Then I see a "Check In" date input
-    And I see a "Check Out" date input
-    And I see a "Room" select dropdown
-    And I see an "Adult" select dropdown
-    And I see a "Children" select dropdown
-    And I see a "Check Availability" button
+#### Scenario: Search form displays date and guest fields
 
-  Scenario: Form fields are interactive
-    Given I visit the Palazzo homepage
-    When I select a check-in date
-    Then the check-in field updates to show the selected date
-```
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a "Check In" date input
+- **AND** I see a "Check Out" date input
+- **AND** I see a "Room" select dropdown
+- **AND** I see an "Adult" select dropdown
+- **AND** I see a "Children" select dropdown
+- **AND** I see a "Check Availability" button
 
-### Scenario: About Us section
+#### Scenario: Form fields are interactive
 
-```gherkin
+- **GIVEN** I visit the Palazzo homepage
+- **WHEN** I select a check-in date
+- **THEN** the check-in field updates to show the selected date
+
+#### Scenario: About Us section
+
 Feature: About Us
 
-  Scenario: About section shows hotel description with images
-    Given I visit the Palazzo homepage
-    Then I see an "About Us" section heading
-    And I see "Welcome to Palazzo Hotel Luxury" as the title
-    And I see a description paragraph about the hotel group
-    And I see a manager name "Michen Taylor"
-    And I see a signature image
-    And I see a 2x2 image grid on the right side
-```
+#### Scenario: About section shows hotel description with images
 
-### Scenario: Services section
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see an "About Us" section heading
+- **AND** I see "Welcome to Palazzo Hotel Luxury" as the title
+- **AND** I see a description paragraph about the hotel group
+- **AND** I see a manager name "Michen Taylor"
+- **AND** I see a signature image
+- **AND** I see a 2x2 image grid on the right side
 
-```gherkin
+#### Scenario: Services section
+
 Feature: Services
 
-  Scenario: Services display five amenity cards in a row
-    Given I visit the Palazzo homepage
-    Then I see a services section with 5 items
-    And the services are: Transportation, Travel Service, Spa Relaxation, Restaurant, Bar & Drink
-    And each service has an icon image and label
-```
+#### Scenario: Services display five amenity cards in a row
 
-### Scenario: Rooms carousel
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a services section with 5 items
+- **AND** the services are: Transportation, Travel Service, Spa Relaxation, Restaurant, Bar & Drink
+- **AND** each service has an icon image and label
 
-```gherkin
+#### Scenario: Rooms carousel
+
 Feature: Rooms
 
-  Scenario: Rooms section shows a carousel of room cards
-    Given I visit the Palazzo homepage
-    Then I see a rooms section with a carousel
-    And each room slide shows a background image on the left
-    And each room slide shows a room name, price per day, and feature list
-    And each room has features: Size, Capacity, Bed, Services
-    And each room has a "View Details" button
+#### Scenario: Rooms section shows a carousel of room cards
 
-  Scenario: Room carousel navigates between rooms
-    Given I visit the Palazzo homepage
-    When I click the next arrow in the rooms carousel
-    Then the next room slide becomes active
-```
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a rooms section with a carousel
+- **AND** each room slide shows a background image on the left
+- **AND** each room slide shows a room name, price per day, and feature list
+- **AND** each room has features: Size, Capacity, Bed, Services
+- **AND** each room has a "View Details" button
 
-### Scenario: Testimonials section
+#### Scenario: Room carousel navigates between rooms
 
-```gherkin
+- **GIVEN** I visit the Palazzo homepage
+- **WHEN** I click the next arrow in the rooms carousel
+- **THEN** the next room slide becomes active
+
+#### Scenario: Testimonials section
+
 Feature: Testimonials
 
-  Scenario: Testimonials show guest reviews with ratings
-    Given I visit the Palazzo homepage
-    Then I see a "Testimonials" section heading
-    And I see "Our Guests Love Us" as the title
-    And I see an image carousel on the left
-    And I see testimonial quotes with 5-star ratings on the right
-    And each testimonial shows a name and role
-```
+#### Scenario: Testimonials show guest reviews with ratings
 
-### Scenario: Projects/Gallery carousel
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a "Testimonials" section heading
+- **AND** I see "Our Guests Love Us" as the title
+- **AND** I see an image carousel on the left
+- **AND** I see testimonial quotes with 5-star ratings on the right
+- **AND** each testimonial shows a name and role
 
-```gherkin
+#### Scenario: Projects/Gallery carousel
+
 Feature: Projects Gallery
 
-  Scenario: Projects section shows image slides with hover effects
-    Given I visit the Palazzo homepage
-    Then I see a projects/gallery carousel
-    And each slide shows a full-width background image
-    And each slide has a category label and title overlay
-    And hovering reveals a description and "Discover Now" button
-```
+#### Scenario: Projects section shows image slides with hover effects
 
-### Scenario: Blog/News section
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a projects/gallery carousel
+- **AND** each slide shows a full-width background image
+- **AND** each slide has a category label and title overlay
+- **AND** hovering reveals a description and "Discover Now" button
 
-```gherkin
+#### Scenario: Blog/News section
+
 Feature: Blog
 
-  Scenario: Blog section shows three post cards
-    Given I visit the Palazzo homepage
-    Then I see a "Latest News" section heading
-    And I see 3 blog post cards in a row
-    And each card shows a thumbnail image, date, category tag, title, excerpt, and an arrow button
-```
+#### Scenario: Blog section shows three post cards
 
-### Scenario: Call to Action section
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a "Latest News" section heading
+- **AND** I see 3 blog post cards in a row
+- **AND** each card shows a thumbnail image, date, category tag, title, excerpt, and an arrow button
 
-```gherkin
+#### Scenario: Call to Action section
+
 Feature: Call to Action
 
-  Scenario: CTA section shows contact prompt with background image
-    Given I visit the Palazzo homepage
-    Then I see a CTA section with a background image and dark overlay
-    And I see "Contact us now!" as the heading
-    And I see a phone number for booking
-    And I see a "Contact Now" button
-```
+#### Scenario: CTA section shows contact prompt with background image
 
-### Scenario: Partners section
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a CTA section with a background image and dark overlay
+- **AND** I see "Contact us now!" as the heading
+- **AND** I see a phone number for booking
+- **AND** I see a "Contact Now" button
 
-```gherkin
+#### Scenario: Partners section
+
 Feature: Partners
 
-  Scenario: Partners section shows logos in a row
-    Given I visit the Palazzo homepage
-    Then I see a partners section with 5 partner logo images
-    And the logos are evenly spaced in a horizontal row
-```
+#### Scenario: Partners section shows logos in a row
 
-### Scenario: Footer
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a partners section with 5 partner logo images
+- **AND** the logos are evenly spaced in a horizontal row
 
-```gherkin
+#### Scenario: Footer
+
 Feature: Footer
 
-  Scenario: Footer shows contact info, blog links, nav links, and newsletter
-    Given I visit the Palazzo homepage
-    Then I see a footer with 4 columns
-    And the first column has a logo, phone, email, and address
-    And the second column has "Our Blog" with 2 recent posts
-    And the third column has "Links" with About Us, Our Room, Career, FAQs
-    And the fourth column has "Subscribe Newsletter" with an email input and submit button
+#### Scenario: Footer shows contact info, blog links, nav links, and newsletter
 
-  Scenario: Footer copyright and social links
-    Given I visit the Palazzo homepage
-    Then I see a copyright notice in the footer
-    And I see social icons (Facebook, Twitter, Instagram, LinkedIn) in the footer
-    And the footer links to https://www.componentdock.com/
-```
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a footer with 4 columns
+- **AND** the first column has a logo, phone, email, and address
+- **AND** the second column has "Our Blog" with 2 recent posts
+- **AND** the third column has "Links" with About Us, Our Room, Career, FAQs
+- **AND** the fourth column has "Subscribe Newsletter" with an email input and submit button
+
+#### Scenario: Footer copyright and social links
+
+- **GIVEN** I visit the Palazzo homepage
+- **THEN** I see a copyright notice in the footer
+- **AND** I see social icons (Facebook, Twitter, Instagram, LinkedIn) in the footer
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification checklist
 

@@ -106,192 +106,185 @@ rectangular (border-radius: 0), brand yellow background.
 | Social icon radius | `50%` (circular) | Social media icon links |
 | Section padding | ~80px vertical | Consistent rhythm across sections |
 
-## Gherkin requirements
+## Requirements
 
 ### Hero section
 
-```gherkin
-Scenario: Hero slider displays with overlay text
-  Given the user is on the TopForge page
-  Then a full-width hero slider should be visible
-  And the slider should contain construction imagery with dark overlay
-  And the slider should display "Welcome to our" as a subheading
-  And the slider should display a bold ALL-CAPS heading
-  And a "Read More" CTA button should be visible
+#### Scenario: Hero slider displays with overlay text
 
-Scenario: Hero slider advances slides
-  Given the hero slider is displayed
-  When the user waits for the auto-advance interval
-  Then the slider should transition to the next slide
-```
+- **GIVEN** the user is on the TopForge page
+- **THEN** a full-width hero slider should be visible
+- **AND** the slider should contain construction imagery with dark overlay
+- **AND** the slider should display "Welcome to our" as a subheading
+- **AND** the slider should display a bold ALL-CAPS heading
+- **AND** a "Read More" CTA button should be visible
+
+#### Scenario: Hero slider advances slides
+
+- **GIVEN** the hero slider is displayed
+- **WHEN** the user waits for the auto-advance interval
+- **THEN** the slider should transition to the next slide
 
 ### Professional Builder section
 
-```gherkin
-Scenario: Four feature columns are displayed
-  Given the user scrolls to the professional builder section
-  Then 4 feature columns should be visible
-  And each column should contain an icon, heading, and paragraph
-  And the headings should be "Professional Builder", "We Deliver Quality", "Always On Time", and "We Are Pasionate"
-```
+#### Scenario: Four feature columns are displayed
+
+- **GIVEN** the user scrolls to the professional builder section
+- **THEN** 4 feature columns should be visible
+- **AND** each column should contain an icon, heading, and paragraph
+- **AND** the headings should be "Professional Builder", "We Deliver Quality", "Always On Time", and "We Are Pasionate"
 
 ### About Us section
 
-```gherkin
-Scenario: About Us section displays correctly
-  Given the user scrolls to the About Us section
-  Then a "WHO WE ARE" heading should be visible
-  And a paragraph of text should be displayed
-  And a "Contact Now" button should be visible
-  And a construction image should be visible in the right column
-```
+#### Scenario: About Us section displays correctly
+
+- **GIVEN** the user scrolls to the About Us section
+- **THEN** a "WHO WE ARE" heading should be visible
+- **AND** a paragraph of text should be displayed
+- **AND** a "Contact Now" button should be visible
+- **AND** a construction image should be visible in the right column
 
 ### What We Offer section
 
-```gherkin
-Scenario: Three service cards are displayed
-  Given the user scrolls to the What We Offer section
-  Then 3 service cards should be visible
-  And each card should have an image, icon, title, and description
-  And the titles should be "Building Construction", "Project Planning", and "House Renovation"
-```
+#### Scenario: Three service cards are displayed
+
+- **GIVEN** the user scrolls to the What We Offer section
+- **THEN** 3 service cards should be visible
+- **AND** each card should have an image, icon, title, and description
+- **AND** the titles should be "Building Construction", "Project Planning", and "House Renovation"
 
 ### Our Features section
 
-```gherkin
-Scenario: Features section shows image and checklist
-  Given the user scrolls to the Our Features section
-  Then a "WHY CHOOSE US" heading should be visible
-  And 3 feature items should be displayed
-  And each item should have an icon, bold title, and description paragraph
-  And a construction professional image should be visible in the left column
-```
+#### Scenario: Features section shows image and checklist
+
+- **GIVEN** the user scrolls to the Our Features section
+- **THEN** a "WHY CHOOSE US" heading should be visible
+- **AND** 3 feature items should be displayed
+- **AND** each item should have an icon, bold title, and description paragraph
+- **AND** a construction professional image should be visible in the left column
 
 ### Our Services section
 
-```gherkin
-Scenario: Portfolio filter tabs are functional
-  Given the user scrolls to the Our Services section
-  Then 6 filter tabs should be visible: All, Architecture, Building, Construction, Design, Painting
-  And 8 gallery items should be displayed
-  When the user clicks a filter tab
-  Then only matching gallery items should be visible
+#### Scenario: Portfolio filter tabs are functional
 
-Scenario: Gallery items show hover overlay
-  Given the gallery items are displayed
-  When the user hovers over a gallery item
-  Then a dark overlay should appear with project name and action icons
-```
+- **GIVEN** the user scrolls to the Our Services section
+- **THEN** 6 filter tabs should be visible: All, Architecture, Building, Construction, Design, Painting
+- **AND** 8 gallery items should be displayed
+- **WHEN** the user clicks a filter tab
+- **THEN** only matching gallery items should be visible
+
+#### Scenario: Gallery items show hover overlay
+
+- **GIVEN** the gallery items are displayed
+- **WHEN** the user hovers over a gallery item
+- **THEN** a dark overlay should appear with project name and action icons
 
 ### Our Team section
 
-```gherkin
-Scenario: Team members are displayed in a grid
-  Given the user scrolls to the Our Team section
-  Then 4 team member cards should be visible
-  And each card should show a portrait image, name, and role
-  When the user hovers over a team card
-  Then social media icons (Facebook, Twitter, LinkedIn) should become visible
-```
+#### Scenario: Team members are displayed in a grid
+
+- **GIVEN** the user scrolls to the Our Team section
+- **THEN** 4 team member cards should be visible
+- **AND** each card should show a portrait image, name, and role
+- **WHEN** the user hovers over a team card
+- **THEN** social media icons (Facebook, Twitter, LinkedIn) should become visible
 
 ### Achievements section
 
-```gherkin
-Scenario: Counter section displays stats
-  Given the user scrolls to the Achievements section
-  Then 4 stat counters should be visible
-  And the counters should show: 800 Projects Completed, 230 House Renovations, 1390 Workers Employed, 125 Awards Won
-  And each counter should have an icon above the number
+#### Scenario: Counter section displays stats
 
-Scenario: Counters animate on scroll
-  Given the counter section is off-screen
-  When the user scrolls the counter section into view
-  Then the numbers should animate from 0 to their target values
-```
+- **GIVEN** the user scrolls to the Achievements section
+- **THEN** 4 stat counters should be visible
+- **AND** the counters should show: 800 Projects Completed, 230 House Renovations, 1390 Workers Employed, 125 Awards Won
+- **AND** each counter should have an icon above the number
+
+#### Scenario: Counters animate on scroll
+
+- **GIVEN** the counter section is off-screen
+- **WHEN** the user scrolls the counter section into view
+- **THEN** the numbers should animate from 0 to their target values
 
 ### Testimonials section
 
-```gherkin
-Scenario: Testimonial carousel displays
-  Given the user scrolls to the Testimonials section
-  Then a testimonial carousel should be visible
-  And each testimonial should show an avatar, name, role, and quote text
-  And decorative quote marks should surround the quote text
+#### Scenario: Testimonial carousel displays
 
-Scenario: Testimonials auto-rotate
-  Given the testimonial carousel is displayed
-  When the user waits for the auto-advance interval
-  Then the carousel should transition to the next testimonial
-```
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a testimonial carousel should be visible
+- **AND** each testimonial should show an avatar, name, role, and quote text
+- **AND** decorative quote marks should surround the quote text
+
+#### Scenario: Testimonials auto-rotate
+
+- **GIVEN** the testimonial carousel is displayed
+- **WHEN** the user waits for the auto-advance interval
+- **THEN** the carousel should transition to the next testimonial
 
 ### Featured Works section
 
-```gherkin
-Scenario: Featured works gallery displays
-  Given the user scrolls to the Featured Works section
-  Then 8 gallery items should be visible in a full-width grid
-  And each item should show a construction image
-  When the user hovers over a gallery item
-  Then a dark overlay should appear with project name and "VIEW PROJECT" link
-```
+#### Scenario: Featured works gallery displays
+
+- **GIVEN** the user scrolls to the Featured Works section
+- **THEN** 8 gallery items should be visible in a full-width grid
+- **AND** each item should show a construction image
+- **WHEN** the user hovers over a gallery item
+- **THEN** a dark overlay should appear with project name and "VIEW PROJECT" link
 
 ### Latest Blog section
 
-```gherkin
-Scenario: Blog posts are displayed
-  Given the user scrolls to the Latest Blog section
-  Then 3 blog cards should be visible
-  And each card should have a featured image, heading link, author, date, and excerpt
-  And each excerpt should end with a "Read More" link
-```
+#### Scenario: Blog posts are displayed
+
+- **GIVEN** the user scrolls to the Latest Blog section
+- **THEN** 3 blog cards should be visible
+- **AND** each card should have a featured image, heading link, author, date, and excerpt
+- **AND** each excerpt should end with a "Read More" link
 
 ### Partners + Booking CTA
 
-```gherkin
-Scenario: Partners logos are displayed
-  Given the user scrolls to the Partners section
-  Then 5 partner logos should be visible in a carousel
-  And a yellow booking strip should appear below
-  And the strip should display "Booking now" text and a "book now" button
-```
+#### Scenario: Partners logos are displayed
+
+- **GIVEN** the user scrolls to the Partners section
+- **THEN** 5 partner logos should be visible in a carousel
+- **AND** a yellow booking strip should appear below
+- **AND** the strip should display "Booking now" text and a "book now" button
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays all columns
-  Given the user scrolls to the footer
-  Then an "ABOUT OUR COMPANY" column should be visible with logo and social icons
-  And a "Quick Links" column should be visible with 3+ links
-  And a "Recent Posts" column should be visible with 3 items
-  And a "Newsletter" column should be visible with a signup form
-  And a "Made with Component Dock" link should be present
+#### Scenario: Footer displays all columns
 
-Scenario: Footer social icons are clickable
-  Given the footer is displayed
-  When the user clicks a social icon
-  Then the icon should be interactive (not a dead link)
+- **GIVEN** the user scrolls to the footer
+- **THEN** an "ABOUT OUR COMPANY" column should be visible with logo and social icons
+- **AND** a "Quick Links" column should be visible with 3+ links
+- **AND** a "Recent Posts" column should be visible with 3 items
+- **AND** a "Newsletter" column should be visible with a signup form
+- **AND** a "Made with Component Dock" link should be present
 
-Scenario: Newsletter form validates email
-  Given the newsletter form is displayed
-  When the user submits with an invalid email
-  Then an error state should be shown
-  When the user submits with a valid email
-  Then the form should accept the submission
-```
+#### Scenario: Footer social icons are clickable
+
+- **GIVEN** the footer is displayed
+- **WHEN** the user clicks a social icon
+- **THEN** the icon should be interactive (not a dead link)
+
+#### Scenario: Newsletter form validates email
+
+- **GIVEN** the newsletter form is displayed
+- **WHEN** the user submits with an invalid email
+- **THEN** an error state should be shown
+- **WHEN** the user submits with a valid email
+- **THEN** the form should accept the submission
 
 ### Responsive behavior
 
-```gherkin
-Scenario: Navigation collapses on mobile
-  Given the user is on a mobile viewport
-  Then the navigation should collapse into a hamburger menu
-  And clicking the hamburger should toggle the menu
+#### Scenario: Navigation collapses on mobile
 
-Scenario: Sections stack vertically on mobile
-  Given the user is on a mobile viewport
-  Then multi-column sections should stack into single columns
-  And the hero slider should remain full-width
-```
+- **GIVEN** the user is on a mobile viewport
+- **THEN** the navigation should collapse into a hamburger menu
+- **AND** clicking the hamburger should toggle the menu
+
+#### Scenario: Sections stack vertically on mobile
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** multi-column sections should stack into single columns
+- **AND** the hero slider should remain full-width
 
 ## Verification checklist
 

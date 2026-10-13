@@ -57,66 +57,66 @@ Sections extracted from `https://preview.colorlib.com/theme/bato/` (top to botto
 - Playfair Display serif font for the logo gives a premium/editorial feel.
 - Karla sans-serif for body text — clean and readable.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Snapview — Photography Template
 
 #### Scenario: Header renders with logo and hamburger toggle
 
-Given the page loads
-Then a header is displayed at the top
-And the header contains the logo "Snapview"
-And a hamburger menu toggle icon is visible
-And the logo uses Playfair Display font with wide letter-spacing
+- **GIVEN** the page loads
+- **THEN** a header is displayed at the top
+- **AND** the header contains the logo "Snapview"
+- **AND** a hamburger menu toggle icon is visible
+- **AND** the logo uses Playfair Display font with wide letter-spacing
 
 #### Scenario: Side navigation panel opens and closes
 
-Given the user clicks the hamburger toggle
-Then the side navigation panel slides open from the left
-And the panel displays a search input field
-And navigation links are shown: Home, Work, Blog, About, Contact
-And a gallery thumbnail grid with 4 images is displayed
-When the user clicks the toggle again
-Then the side navigation panel closes
+- **GIVEN** the user clicks the hamburger toggle
+- **THEN** the side navigation panel slides open from the left
+- **AND** the panel displays a search input field
+- **AND** navigation links are shown: Home, Work, Blog, About, Contact
+- **AND** a gallery thumbnail grid with 4 images is displayed
+- **WHEN** the user clicks the toggle again
+- **THEN** the side navigation panel closes
 
 #### Scenario: Hero carousel displays three slides
 
-Given the page loads
-Then a full-height hero carousel is visible
-And the first slide shows the tag "Welcome"
-And the first slide shows the headline "Photography is on it's way."
-And a description paragraph is displayed
-And a "View Galleries" CTA button with arrow icon is shown
-And the slide number "01/03" is displayed
+- **GIVEN** the page loads
+- **THEN** a full-height hero carousel is visible
+- **AND** the first slide shows the tag "Welcome"
+- **AND** the first slide shows the headline "Photography is on it's way."
+- **AND** a description paragraph is displayed
+- **AND** a "View Galleries" CTA button with arrow icon is shown
+- **AND** the slide number "01/03" is displayed
 
 #### Scenario: Hero carousel slides have distinct content
 
-Given the hero carousel is visible
-Then slide 2 shows the tag "Photography" and headline "Capture interesting things."
-And slide 3 shows the tag "Discover" and headline "Discover New Things"
-And each slide has a unique background image
-And each slide shows its corresponding slide number
+- **GIVEN** the hero carousel is visible
+- **THEN** slide 2 shows the tag "Photography" and headline "Capture interesting things."
+- **AND** slide 3 shows the tag "Discover" and headline "Discover New Things"
+- **AND** each slide has a unique background image
+- **AND** each slide shows its corresponding slide number
 
 #### Scenario: Hero carousel navigates between slides
 
-Given the hero carousel is visible
-When the user navigates to the next slide
-Then the next slide transitions into view
-And the slide number updates accordingly
+- **GIVEN** the hero carousel is visible
+- **WHEN** the user navigates to the next slide
+- **THEN** the next slide transitions into view
+- **AND** the slide number updates accordingly
 
 #### Scenario: View Galleries CTA links to gallery page
 
-Given the hero section is visible
-When the user clicks "View Galleries"
-Then the user is navigated to the gallery/work page
+- **GIVEN** the hero section is visible
+- **WHEN** the user clicks "View Galleries"
+- **THEN** the user is navigated to the gallery/work page
 
 #### Scenario: Responsive design adapts to mobile
 
-Given the page is viewed on a mobile viewport
-Then the side navigation collapses into a hamburger toggle
-And the hero text panel becomes full-width below the image
-And slide numbers are hidden on small screens
-And all content remains readable and accessible
+- **GIVEN** the page is viewed on a mobile viewport
+- **THEN** the side navigation collapses into a hamburger toggle
+- **AND** the hero text panel becomes full-width below the image
+- **AND** slide numbers are hidden on small screens
+- **AND** all content remains readable and accessible
 
 ## Verification checklist
 

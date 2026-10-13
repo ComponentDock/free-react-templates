@@ -44,97 +44,110 @@ beyond shared `packages/ui` (Button, ButtonLink, cn).
 - Newsletter CTA with parallax background
 - Dark footer with 4-column layout
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Netcraft — Creative Studio Agency Landing Page
 
   Background:
-    Given the user visits Netcraft at its deployed URL
-    Then the page loads without errors
-    And the document title contains "Netcraft"
+- **GIVEN** the user visits Netcraft at its deployed URL
+- **THEN** the page loads without errors
+- **AND** the document title contains "Netcraft"
 
-  Scenario: Top bar displays contact info and social links
-    Given the top bar is visible
-    Then it shows a phone number link
-    And it shows an email link
-    And it shows social media icon links (Facebook, Twitter, Instagram, Dribbble)
+#### Scenario: Top bar displays contact info and social links
 
-  Scenario: Navbar shows brand and navigation
-    Given the navbar is visible
-    Then it displays the brand name "Netcraft"
-    And it shows navigation links: Home, About, Services, Portfolio, Blog, Contact
-    And it has a mobile hamburger toggle on small screens
+- **GIVEN** the top bar is visible
+- **THEN** it shows a phone number link
+- **AND** it shows an email link
+- **AND** it shows social media icon links (Facebook, Twitter, Instagram, Dribbble)
 
-  Scenario: Hero section displays slider with CTA
-    Given the hero section is visible
-    Then it shows at least one slide with a headline, subheading, and description
-    And it has two CTA buttons (primary + white/outline)
-    And it has a video play button overlay
-    And it has a dark overlay on the background image
+#### Scenario: Navbar shows brand and navigation
 
-  Scenario: Services section shows 4 service cards
-    Given the services section is visible
-    Then it displays 4 service cards
-    And each card has an icon, a heading, and a description paragraph
-    And each card has a circular arrow button
-    And the section has a light background
+- **GIVEN** the navbar is visible
+- **THEN** it displays the brand name "Netcraft"
+- **AND** it shows navigation links: Home, About, Services, Portfolio, Blog, Contact
+- **AND** it has a mobile hamburger toggle on small screens
 
-  Scenario: About section shows company info
-    Given the about section is visible
-    Then it shows a left column with a background image and a year counter overlay
-    And it shows a right column with subheading, heading, and description
-    And it shows two feature items: "Expert Team" and "Solution For Business"
-    And each feature has an icon and label
+#### Scenario: Hero section displays slider with CTA
 
-  Scenario: Counter/stats section shows animated numbers
-    Given the counter section is visible
-    Then it shows 4 stat items with icons and numbers
-    And the stats are: "Project Completed" (4800), "Our Staff" (1000), "Services Provide" (350), "Happy Customers" (7650)
-    And the section has a dark parallax background image
+- **GIVEN** the hero section is visible
+- **THEN** it shows at least one slide with a headline, subheading, and description
+- **AND** it has two CTA buttons (primary + white/outline)
+- **AND** it has a video play button overlay
+- **AND** it has a dark overlay on the background image
 
-  Scenario: Portfolio section shows project grid
-    Given the portfolio section is visible
-    Then it shows a heading "Recent Portfolio" and subheading "Our Exceptional Quality Work"
-    And it displays 6 project cards in a 3-column grid
-    And each card has a background image, category label, title, and link arrow
+#### Scenario: Services section shows 4 service cards
 
-  Scenario: FAQ section with accordion
-    Given the FAQ section is visible
-    Then it shows a left column with an image and two feature items
-    And it shows a right column with an accordion of FAQ questions
-    And at least 2 FAQ items are present
-    And clicking a question header expands/collapses its answer
+- **GIVEN** the services section is visible
+- **THEN** it displays 4 service cards
+- **AND** each card has an icon, a heading, and a description paragraph
+- **AND** each card has a circular arrow button
+- **AND** the section has a light background
 
-  Scenario: Testimonial carousel
-    Given the testimonial section is visible
-    Then it displays testimonial cards with avatar image, quote text, name, and role
-    And the testimonials cycle in a carousel/slider
+#### Scenario: About section shows company info
 
-  Scenario: Blog section shows recent entries
-    Given the blog section is visible
-    Then it shows 3 blog entry cards
-    And each card has a date badge, image, title, and description
+- **GIVEN** the about section is visible
+- **THEN** it shows a left column with a background image and a year counter overlay
+- **AND** it shows a right column with subheading, heading, and description
+- **AND** it shows two feature items: "Expert Team" and "Solution For Business"
+- **AND** each feature has an icon and label
 
-  Scenario: Newsletter subscription
-    Given the newsletter section is visible
-    Then it shows a heading "Subscribe to our Newsletter"
-    And it has an email input field
-    And it has a "Subscribe" submit button
-    And the section has a parallax background image
+#### Scenario: Counter/stats section shows animated numbers
 
-  Scenario: Footer layout
-    Given the footer is visible
-    Then it shows a brand name "Netcraft"
-    And it has a description paragraph
-    And it shows social media icon links
-    And it links to "https://www.componentdock.com/" (Component Dock)
+- **GIVEN** the counter section is visible
+- **THEN** it shows 4 stat items with icons and numbers
+- **AND** the stats are: "Project Completed" (4800), "Our Staff" (1000), "Services Provide" (350), "Happy Customers" (7650)
+- **AND** the section has a dark parallax background image
 
-  Scenario: Responsive mobile layout
-    Given the viewport width is less than 768px
-    Then the navbar collapses to a hamburger menu
-    And the hero text and buttons stack vertically
-    And the service cards stack vertically
-    And the portfolio grid becomes single-column
+#### Scenario: Portfolio section shows project grid
+
+- **GIVEN** the portfolio section is visible
+- **THEN** it shows a heading "Recent Portfolio" and subheading "Our Exceptional Quality Work"
+- **AND** it displays 6 project cards in a 3-column grid
+- **AND** each card has a background image, category label, title, and link arrow
+
+#### Scenario: FAQ section with accordion
+
+- **GIVEN** the FAQ section is visible
+- **THEN** it shows a left column with an image and two feature items
+- **AND** it shows a right column with an accordion of FAQ questions
+- **AND** at least 2 FAQ items are present
+- **AND** clicking a question header expands/collapses its answer
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the testimonial section is visible
+- **THEN** it displays testimonial cards with avatar image, quote text, name, and role
+- **AND** the testimonials cycle in a carousel/slider
+
+#### Scenario: Blog section shows recent entries
+
+- **GIVEN** the blog section is visible
+- **THEN** it shows 3 blog entry cards
+- **AND** each card has a date badge, image, title, and description
+
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the newsletter section is visible
+- **THEN** it shows a heading "Subscribe to our Newsletter"
+- **AND** it has an email input field
+- **AND** it has a "Subscribe" submit button
+- **AND** the section has a parallax background image
+
+#### Scenario: Footer layout
+
+- **GIVEN** the footer is visible
+- **THEN** it shows a brand name "Netcraft"
+- **AND** it has a description paragraph
+- **AND** it shows social media icon links
+- **AND** it links to "https://www.componentdock.com/" (Component Dock)
+
+#### Scenario: Responsive mobile layout
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero text and buttons stack vertically
+- **AND** the service cards stack vertically
+- **AND** the portfolio grid becomes single-column
 
 ## Verification Checklist
 

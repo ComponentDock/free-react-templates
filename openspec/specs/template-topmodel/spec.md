@@ -43,126 +43,127 @@ Extracted from the live preview stylesheet (`style.css`):
 7. **Blog / Latest News** — blog post cards grid
 8. **Footer** — 4-column layout: About text, quick links, contact info (+01-3-8888-6868, 40 Baria Street 133/2 NewYork City), newsletter signup; bottom bar with social links and copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header Navigation
 
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the page loads
-  Then the logo "TopModel." is visible
-  And navigation links "Home", "Models", "Blog", "Contact" are visible
-  And a search icon is present in the navbar
+#### Scenario: Navbar displays logo and navigation links
 
-Scenario: Navbar becomes opaque on scroll
-  Given the page loads
-  When the user scrolls past the hero section
-  Then the navbar background changes from transparent to white
-```
+- **GIVEN** the page loads
+- **THEN** the logo "TopModel." is visible
+- **AND** navigation links "Home", "Models", "Blog", "Contact" are visible
+- **AND** a search icon is present in the navbar
+
+#### Scenario: Navbar becomes opaque on scroll
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls past the hero section
+- **THEN** the navbar background changes from transparent to white
 
 ### Feature: Hero Carousel
 
-```gherkin
-Scenario: Hero displays model information
-  Given the hero carousel is visible
-  Then a model name is displayed in large text
-  And a subtitle "Star Model 2019" is shown below the name
-  And a "Model Details →" link is visible
-  And social media links (Facebook, Twitter, Instagram, YouTube) are shown
+#### Scenario: Hero displays model information
 
-Scenario: Hero carousel advances automatically
-  Given the hero carousel is visible
-  When 5 seconds pass without interaction
-  Then the carousel transitions to the next slide
+- **GIVEN** the hero carousel is visible
+- **THEN** a model name is displayed in large text
+- **AND** a subtitle "Star Model 2019" is shown below the name
+- **AND** a "Model Details →" link is visible
+- **AND** social media links (Facebook, Twitter, Instagram, YouTube) are shown
 
-Scenario: Hero carousel responds to navigation
-  Given the hero carousel is visible
-  When the user clicks the next arrow
-  Then the carousel advances to the next model slide
-```
+#### Scenario: Hero carousel advances automatically
+
+- **GIVEN** the hero carousel is visible
+- **WHEN** 5 seconds pass without interaction
+- **THEN** the carousel transitions to the next slide
+
+#### Scenario: Hero carousel responds to navigation
+
+- **GIVEN** the hero carousel is visible
+- **WHEN** the user clicks the next arrow
+- **THEN** the carousel advances to the next model slide
 
 ### Feature: About Us Section
 
-```gherkin
-Scenario: About section displays experience heading
-  Given the about section is in the viewport
-  Then a heading about "20+ Years Practical Experience" is visible
+#### Scenario: About section displays experience heading
 
-Scenario: About section displays service categories
-  Given the about section is in the viewport
-  Then 4 service items are shown: Fashion Shows, Special Events, Commercial Photo, Model School
-```
+- **GIVEN** the about section is in the viewport
+- **THEN** a heading about "20+ Years Practical Experience" is visible
+
+#### Scenario: About section displays service categories
+
+- **GIVEN** the about section is in the viewport
+- **THEN** 4 service items are shown: Fashion Shows, Special Events, Commercial Photo, Model School
 
 ### Feature: Model Portfolio Section
 
-```gherkin
-Scenario: Portfolio section has filterable tabs
-  Given the models section is in the viewport
-  Then tabs for "All Models", "Model", "Actors", "Singers" are visible
+#### Scenario: Portfolio section has filterable tabs
 
-Scenario: Clicking a tab filters model cards
-  Given the models section is in the viewport
-  When the user clicks the "Actors" tab
-  Then only actor model cards are displayed
+- **GIVEN** the models section is in the viewport
+- **THEN** tabs for "All Models", "Model", "Actors", "Singers" are visible
 
-Scenario: Model cards display correctly
-  Given the models section is in the viewport
-  Then each model card shows a circular thumbnail image
-  And a name and role label below the image
-```
+#### Scenario: Clicking a tab filters model cards
+
+- **GIVEN** the models section is in the viewport
+- **WHEN** the user clicks the "Actors" tab
+- **THEN** only actor model cards are displayed
+
+#### Scenario: Model cards display correctly
+
+- **GIVEN** the models section is in the viewport
+- **THEN** each model card shows a circular thumbnail image
+- **AND** a name and role label below the image
 
 ### Feature: Client Testimonials
 
-```gherkin
-Scenario: Testimonials display client quotes
-  Given the testimonials section is in the viewport
-  Then a client quote is displayed with quotation marks
-  And a star rating is shown
-  And the client name is displayed below the quote
+#### Scenario: Testimonials display client quotes
 
-Scenario: Testimonials carousel navigates
-  Given the testimonials section is in the viewport
-  When the user clicks a dot indicator
-  Then the carousel transitions to the selected testimonial
-```
+- **GIVEN** the testimonials section is in the viewport
+- **THEN** a client quote is displayed with quotation marks
+- **AND** a star rating is shown
+- **AND** the client name is displayed below the quote
+
+#### Scenario: Testimonials carousel navigates
+
+- **GIVEN** the testimonials section is in the viewport
+- **WHEN** the user clicks a dot indicator
+- **THEN** the carousel transitions to the selected testimonial
 
 ### Feature: Call to Action
 
-```gherkin
-Scenario: CTA section displays model recruitment message
-  Given the CTA section is in the viewport
-  Then the heading "Do You Want To Be A Model?" is visible
-  And a "Contact Us" button with pink variant styling is shown
+#### Scenario: CTA section displays model recruitment message
 
-Scenario: CTA button is interactive
-  Given the CTA section is in the viewport
-  When the user hovers over the "Contact Us" button
-  Then the button background transitions to pink with white text
-```
+- **GIVEN** the CTA section is in the viewport
+- **THEN** the heading "Do You Want To Be A Model?" is visible
+- **AND** a "Contact Us" button with pink variant styling is shown
+
+#### Scenario: CTA button is interactive
+
+- **GIVEN** the CTA section is in the viewport
+- **WHEN** the user hovers over the "Contact Us" button
+- **THEN** the button background transitions to pink with white text
 
 ### Feature: Blog Section
 
-```gherkin
-Scenario: Blog section displays recent posts
-  Given the blog section is in the viewport
-  Then a "Latest News" heading is visible
-  And blog post cards are displayed in a grid layout
-```
+#### Scenario: Blog section displays recent posts
+
+- **GIVEN** the blog section is in the viewport
+- **THEN** a "Latest News" heading is visible
+- **AND** blog post cards are displayed in a grid layout
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer displays site information
-  Given the footer is in the viewport
-  Then an "About" column with company description is visible
-  And a "Quick Links" column is visible
-  And a "Contact" column with phone number and address is visible
+#### Scenario: Footer displays site information
 
-Scenario: Footer links to Component Dock
-  Given the footer is in the viewport
-  Then a link to "https://www.componentdock.com/" is present
-  And the link text mentions "Component Dock"
-```
+- **GIVEN** the footer is in the viewport
+- **THEN** an "About" column with company description is visible
+- **AND** a "Quick Links" column is visible
+- **AND** a "Contact" column with phone number and address is visible
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is in the viewport
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"
 
 ## Verification Checklist
 

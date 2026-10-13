@@ -58,62 +58,72 @@ Recreation of ColorLib **Gym2** — a bold, dark-themed fitness/gym website temp
 9. **Big Offer** — parallax/image bg, "A Big Offer for..." heading, "Join Now" CTA
 10. **Footer** — dark bg, 3-column: logo + address + socials, nav links, newsletter form
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: GymNova template behaviour
+
 Feature: GymNova — Fitness & Gym Website Template
-  As a gym business owner
-  I want a bold, dark-themed fitness website
-  So that I can attract new members
+As a gym business owner
+I want a bold, dark-themed fitness website
+So that I can attract new members
 
-  Background:
-    Given the user visits the GymNova homepage
+Background:
+- **GIVEN** the user visits the GymNova homepage
 
-  Scenario: Navbar displays all navigation links
-    Then the navbar shows links for "Home", "About", "Pricing", "Gallery", "Contact"
-    And a "Join Us" call-to-action button is visible
+#### Scenario: Navbar displays all navigation links
 
-  Scenario: Hero section displays carousel
-    Then a full-width hero carousel is visible
-    And the carousel shows "Body Shape" and "Strength" slides
-    And each slide has an overlay gradient
+- **THEN** the navbar shows links for "Home", "About", "Pricing", "Gallery", "Contact"
+- **AND** a "Join Us" call-to-action button is visible
 
-  Scenario: Category section shows two categories
-    Then a "For Girl" category card is visible
-    And a "For Boys" category card is visible
-    And each has a "Join Now" button
+#### Scenario: Hero section displays carousel
 
-  Scenario: Features section shows 4 feature cards
-    Then 4 feature cards are displayed
-    And each card has an icon and description
-    And the features include "Weightlifting", "Specific Muscles", "Flex Your Muscles", "Cardio Exercises"
+- **THEN** a full-width hero carousel is visible
+- **AND** the carousel shows "Body Shape" and "Strength" slides
+- **AND** each slide has an overlay gradient
 
-  Scenario: Offer banner displays promotion
-    Then an offer banner shows "50% Off"
-    And a "Join Now" button is present
+#### Scenario: Category section shows two categories
 
-  Scenario: Pricing section shows 3 plans
-    Then 3 pricing plans are displayed
-    And the plans are "Beginner", "Expert", "Pro"
-    And each plan has a price and feature list
+- **THEN** a "For Girl" category card is visible
+- **AND** a "For Boys" category card is visible
+- **AND** each has a "Join Now" button
 
-  Scenario: Gallery section shows image grid
-    Then a gallery of 6 images is displayed
-    And images have hover zoom effects
+#### Scenario: Features section shows 4 feature cards
 
-  Scenario: Team section shows trainers
-    Then a team section with trainer cards is displayed
-    And each trainer has a name and social links
+- **THEN** 4 feature cards are displayed
+- **AND** each card has an icon and description
+- **AND** the features include "Weightlifting", "Specific Muscles", "Flex Your Muscles", "Cardio Exercises"
 
-  Scenario: Big offer banner is visible
-    Then a large offer banner is displayed
-    And it has a "Join Now" button
+#### Scenario: Offer banner displays promotion
 
-  Scenario: Footer has contact and newsletter
-    Then the footer shows address and contact info
-    And a newsletter subscription form is present
-    And a "Component Dock" link is in the footer
-```
+- **THEN** an offer banner shows "50% Off"
+- **AND** a "Join Now" button is present
+
+#### Scenario: Pricing section shows 3 plans
+
+- **THEN** 3 pricing plans are displayed
+- **AND** the plans are "Beginner", "Expert", "Pro"
+- **AND** each plan has a price and feature list
+
+#### Scenario: Gallery section shows image grid
+
+- **THEN** a gallery of 6 images is displayed
+- **AND** images have hover zoom effects
+
+#### Scenario: Team section shows trainers
+
+- **THEN** a team section with trainer cards is displayed
+- **AND** each trainer has a name and social links
+
+#### Scenario: Big offer banner is visible
+
+- **THEN** a large offer banner is displayed
+- **AND** it has a "Join Now" button
+
+#### Scenario: Footer has contact and newsletter
+
+- **THEN** the footer shows address and contact info
+- **AND** a newsletter subscription form is present
+- **AND** a "Component Dock" link is in the footer
 
 ## Verification Checklist
 

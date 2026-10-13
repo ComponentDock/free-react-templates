@@ -21,54 +21,63 @@
   - Buttons: Rounded (`border-radius: 10px` / `bo-rad-10`, pill, or sharp overlays on image cards with hover zoom effects)
   - Section spacing: generous vertical padding (`p-t-115 p-b-120`)
 
-## Gherkin requirements and scenarios
+## Requirements
 
 ### Feature: Tavola Restaurant Landing Page
 
-Scenario: User views the hero slider
-Given the user opens the Tavola homepage
-When the hero section renders with its background slider images
-Then the user sees welcome headings ("Welcome to Tavola Place") and a "Look Menu" CTA button
+#### Scenario: User views the hero slider
 
-Scenario: User reads about the Italian restaurant story
-Given the user scrolls to the Welcome / Our Story section
-When the section renders with a side-by-side layout (story text on left, image on right)
-Then the user reads about Italian restaurant heritage and clicks "Our Story" link
+- **GIVEN** the user opens the Tavola homepage
+- **WHEN** the hero section renders with its background slider images
+- **THEN** the user sees welcome headings ("Welcome to Tavola Place") and a "Look Menu" CTA button
 
-Scenario: User explores the menu categories
-Given the user scrolls to the Our Menu section
-When the grid of menu items (Lunch, Dinner, Happy Hour, etc.) appears with image backgrounds and hover zoom
-Then the user can click category buttons to filter or view items
+#### Scenario: User reads about the Italian restaurant story
 
-Scenario: User checks upcoming events
-Given the user scrolls to the Upcoming Events slider section
-When event slides display date badges and event descriptions
-Then the user can browse scheduled wine and tasting nights
+- **GIVEN** the user scrolls to the Welcome / Our Story section
+- **WHEN** the section renders with a side-by-side layout (story text on left, image on right)
+- **THEN** the user reads about Italian restaurant heritage and clicks "Our Story" link
 
-Scenario: User books a table
-Given the user scrolls to the Reservation section
-When the booking form appears with date, time, name, phone, and person count fields
-Then the user can fill out the form and submit a table reservation
+#### Scenario: User explores the menu categories
 
-Scenario: User views customer reviews
-Given the user scrolls to the Customer Review carousel
-When the review slider shows customer testimonials, avatars, and star ratings
-Then the user can read feedback from patrons
+- **GIVEN** the user scrolls to the Our Menu section
+- **WHEN** the grid of menu items (Lunch, Dinner, Happy Hour, etc.) appears with image backgrounds and hover zoom
+- **THEN** the user can click category buttons to filter or view items
 
-Scenario: User watches promotional video
-Given the user scrolls to the Video parallax section
-When the play button modal trigger is clicked
-Then a video modal opens showcasing restaurant highlights
+#### Scenario: User checks upcoming events
 
-Scenario: User reads the latest blog posts
-Given the user scrolls to the The Blog section
-When recent blog cards render with publication dates and titles
-Then the user can read articles about wine and culinary tips
+- **GIVEN** the user scrolls to the Upcoming Events slider section
+- **WHEN** event slides display date badges and event descriptions
+- **THEN** the user can browse scheduled wine and tasting nights
 
-Scenario: User views footer contact and hours
-Given the user scrolls to the footer
-When the footer displays contact address, opening times, gallery preview, and Component Dock attribution link
-Then the user sees complete business hours and contact info
+#### Scenario: User books a table
+
+- **GIVEN** the user scrolls to the Reservation section
+- **WHEN** the booking form appears with date, time, name, phone, and person count fields
+- **THEN** the user can fill out the form and submit a table reservation
+
+#### Scenario: User views customer reviews
+
+- **GIVEN** the user scrolls to the Customer Review carousel
+- **WHEN** the review slider shows customer testimonials, avatars, and star ratings
+- **THEN** the user can read feedback from patrons
+
+#### Scenario: User watches promotional video
+
+- **GIVEN** the user scrolls to the Video parallax section
+- **WHEN** the play button modal trigger is clicked
+- **THEN** a video modal opens showcasing restaurant highlights
+
+#### Scenario: User reads the latest blog posts
+
+- **GIVEN** the user scrolls to the The Blog section
+- **WHEN** recent blog cards render with publication dates and titles
+- **THEN** the user can read articles about wine and culinary tips
+
+#### Scenario: User views footer contact and hours
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer displays contact address, opening times, gallery preview, and Component Dock attribution link
+- **THEN** the user sees complete business hours and contact info
 
 ## Verification checklist
 

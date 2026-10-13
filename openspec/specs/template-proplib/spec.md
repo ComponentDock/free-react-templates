@@ -62,50 +62,56 @@ Extracted from screenshot (preview was unreachable — 404):
 5. **Footer**
    - Component Dock attribution link
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Proplib template behaviour
+
 Feature: Proplib real estate homepage
 
-  Background:
-    Given the user visits the Proplib homepage
+Background:
+- **GIVEN** the user visits the Proplib homepage
 
-  Scenario: Header displays navigation
-    Then the logo "M." is visible
-    And navigation links "Home", "Service", "Property", "Contact" are present
-    And a phone number is displayed
-    And "Sell / Rent Property" and "Login / Register" links are visible
+#### Scenario: Header displays navigation
 
-  Scenario: Hero section renders
-    Then a full-width background image is displayed
-    And the heading "WE'RE REAL ESTATE KING" is visible
-    And the heading text is white and centered
+- **THEN** the logo "M." is visible
+- **AND** navigation links "Home", "Service", "Property", "Contact" are present
+- **AND** a phone number is displayed
+- **AND** "Sell / Rent Property" and "Login / Register" links are visible
 
-  Scenario: Search form is functional
-    Then a "Search Properties For" title is displayed
-    And "Sell" and "Rent" toggle tabs are visible
-    And four dropdown selects are present (location, property type, bedrooms)
-    And a price range slider is present
-    And an area range slider is present
-    And a "Search Properties" button is visible
-    When the user clicks "Search Properties"
-    Then the form submits without error
+#### Scenario: Hero section renders
 
-  Scenario: Sell/Rent toggle switches active state
-    Given the "Sell" tab is active
-    When the user clicks "Rent"
-    Then the "Rent" tab becomes active
-    And the "Sell" tab becomes inactive
+- **THEN** a full-width background image is displayed
+- **AND** the heading "WE'RE REAL ESTATE KING" is visible
+- **AND** the heading text is white and centered
 
-  Scenario: Features section displays three cards
-    Then three feature cards are visible
-    And each card has an icon, title, and description
-    And the cards are "Expert Technicians", "Professional Service", "Great Support"
+#### Scenario: Search form is functional
 
-  Scenario: Footer contains Component Dock link
-    Then a "Component Dock" link is present in the footer
-    And the link points to "https://www.componentdock.com/"
-```
+- **THEN** a "Search Properties For" title is displayed
+- **AND** "Sell" and "Rent" toggle tabs are visible
+- **AND** four dropdown selects are present (location, property type, bedrooms)
+- **AND** a price range slider is present
+- **AND** an area range slider is present
+- **AND** a "Search Properties" button is visible
+- **WHEN** the user clicks "Search Properties"
+- **THEN** the form submits without error
+
+#### Scenario: Sell/Rent toggle switches active state
+
+- **GIVEN** the "Sell" tab is active
+- **WHEN** the user clicks "Rent"
+- **THEN** the "Rent" tab becomes active
+- **AND** the "Sell" tab becomes inactive
+
+#### Scenario: Features section displays three cards
+
+- **THEN** three feature cards are visible
+- **AND** each card has an icon, title, and description
+- **AND** the cards are "Expert Technicians", "Professional Service", "Great Support"
+
+#### Scenario: Footer contains Component Dock link
+
+- **THEN** a "Component Dock" link is present in the footer
+- **AND** the link points to "https://www.componentdock.com/"
 
 ## Verification checklist
 

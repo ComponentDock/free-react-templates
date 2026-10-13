@@ -42,139 +42,145 @@ Recreation of the ColorLib "Services" template as a React 19 + Vite + Tailwind 4
 - Footer: light bg, 4 columns (About blurb, Services links, Resources links, Templates links + social icons)
 - Sticky navbar with logo left, nav links right; scrolls smoothly to sections
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Sticky navigation bar
 
-  Scenario: Renders logo and navigation links
-    Given the page loads
-    Then a sticky navbar is visible at the top
-    And the logo text reads "Servecraft"
-    And navigation links include "Home", "About", "Services", "Projects", "Blog", "Contact"
+#### Scenario: Renders logo and navigation links
 
-  Scenario: Navbar becomes sticky on scroll
-    Given the user scrolls past the hero section
-    Then the navbar remains fixed at the top of the viewport
+- **GIVEN** the page loads
+- **THEN** a sticky navbar is visible at the top
+- **AND** the logo text reads "Servecraft"
+- **AND** navigation links include "Home", "About", "Services", "Projects", "Blog", "Contact"
 
-  Scenario: Mobile hamburger menu
-    Given the viewport width is less than 992px
-    Then a hamburger menu icon is visible
-    And clicking it opens the mobile navigation drawer
-```
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero section
+- **THEN** the navbar remains fixed at the top of the viewport
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport width is less than 992px
+- **THEN** a hamburger menu icon is visible
+- **AND** clicking it opens the mobile navigation drawer
 
 ### Hero
-```gherkin
+
 Feature: Hero section
 
-  Scenario: Displays hero content
-    Given the hero section is in view
-    Then a heading reads "We Are Digital Services"
-    And a subtext paragraph is visible below the heading
-    And a CTA button reads "Our Services"
-    And the section has a background image with a dark overlay
+#### Scenario: Displays hero content
 
-  Scenario: CTA scrolls to services
-    Given the user clicks the "Our Services" button
-    Then the page scrolls smoothly to the Services section
-```
+- **GIVEN** the hero section is in view
+- **THEN** a heading reads "We Are Digital Services"
+- **AND** a subtext paragraph is visible below the heading
+- **AND** a CTA button reads "Our Services"
+- **AND** the section has a background image with a dark overlay
+
+#### Scenario: CTA scrolls to services
+
+- **GIVEN** the user clicks the "Our Services" button
+- **THEN** the page scrolls smoothly to the Services section
 
 ### About
-```gherkin
+
 Feature: About Us section
 
-  Scenario: Displays about content
-    Given the About section is in view
-    Then a section heading reads "About Us"
-    And three columns are visible: left text, center image, right text
-```
+#### Scenario: Displays about content
+
+- **GIVEN** the About section is in view
+- **THEN** a section heading reads "About Us"
+- **AND** three columns are visible: left text, center image, right text
 
 ### Services
-```gherkin
+
 Feature: Services section
 
-  Scenario: Displays six service cards
-    Given the Services section is in view
-    Then a centered heading reads "Services"
-    And six service cards are displayed in a 2-column grid
-    And each card has a circular icon, a heading, and a description
-    And the service headings are: "Content Marketing", "Social Media Marketing", "Brand & Logo Design", "Social Media Advertising", "Search Engine Marketing", "Web Design / Development"
-```
+#### Scenario: Displays six service cards
+
+- **GIVEN** the Services section is in view
+- **THEN** a centered heading reads "Services"
+- **AND** six service cards are displayed in a 2-column grid
+- **AND** each card has a circular icon, a heading, and a description
+- **AND** the service headings are: "Content Marketing", "Social Media Marketing", "Brand & Logo Design", "Social Media Advertising", "Search Engine Marketing", "Web Design / Development"
 
 ### Projects
-```gherkin
+
 Feature: Projects gallery
 
-  Scenario: Filter buttons visible
-    Given the Projects section is in view
-    Then a centered heading reads "Projects"
-    And filter buttons display: "All", "Web", "Design", "Brand"
-    And "All" is active by default
+#### Scenario: Filter buttons visible
 
-  Scenario: Gallery grid with hover overlay
-    Given the filter is set to "All"
-    Then nine project images are displayed in a 3-column grid
-    And hovering over an image shows a search-icon overlay
+- **GIVEN** the Projects section is in view
+- **THEN** a centered heading reads "Projects"
+- **AND** filter buttons display: "All", "Web", "Design", "Brand"
+- **AND** "All" is active by default
 
-  Scenario: Filtering by category
-    Given the user clicks the "Web" filter button
-    Then only images tagged "web" are displayed
-    And the "Web" button becomes active
-```
+#### Scenario: Gallery grid with hover overlay
+
+- **GIVEN** the filter is set to "All"
+- **THEN** nine project images are displayed in a 3-column grid
+- **AND** hovering over an image shows a search-icon overlay
+
+#### Scenario: Filtering by category
+
+- **GIVEN** the user clicks the "Web" filter button
+- **THEN** only images tagged "web" are displayed
+- **AND** the "Web" button becomes active
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials carousel
 
-  Scenario: Displays testimonials on green background
-    Given the Testimonials section is in view
-    Then the section background is lime-green (#C2E54F)
-    And a heading reads "What Client Are Sayings"
-    And a carousel shows testimonial slides
-    And each slide contains a blockquote with a quote and an attribution (name, title)
-    And carousel navigation dots are visible
-```
+#### Scenario: Displays testimonials on green background
+
+- **GIVEN** the Testimonials section is in view
+- **THEN** the section background is lime-green (#C2E54F)
+- **AND** a heading reads "What Client Are Sayings"
+- **AND** a carousel shows testimonial slides
+- **AND** each slide contains a blockquote with a quote and an attribution (name, title)
+- **AND** carousel navigation dots are visible
 
 ### Blog
-```gherkin
+
 Feature: Blog section
 
-  Scenario: Displays blog cards
-    Given the Blog section is in view
-    Then a section heading reads "Blog"
-    And three blog entry cards are displayed in a 3-column grid
-    And each card has an image, a title, a date, and a "Read More" link
-```
+#### Scenario: Displays blog cards
+
+- **GIVEN** the Blog section is in view
+- **THEN** a section heading reads "Blog"
+- **AND** three blog entry cards are displayed in a 3-column grid
+- **AND** each card has an image, a title, a date, and a "Read More" link
 
 ### Contact
-```gherkin
+
 Feature: Contact section
 
-  Scenario: Form fields present
-    Given the Contact section is in view
-    Then a heading reads "Contact Form"
-    And the form has fields: First name, Full name, Email address, Subject, Message
-    And a "Send Message" submit button is visible
+#### Scenario: Form fields present
 
-  Scenario: Location information
-    Given the Contact section is in view
-    Then two location blocks are visible: "London" and "New York"
-    And each location shows Address, Phone, and Email details
-```
+- **GIVEN** the Contact section is in view
+- **THEN** a heading reads "Contact Form"
+- **AND** the form has fields: First name, Full name, Email address, Subject, Message
+- **AND** a "Send Message" submit button is visible
+
+#### Scenario: Location information
+
+- **GIVEN** the Contact section is in view
+- **THEN** two location blocks are visible: "London" and "New York"
+- **AND** each location shows Address, Phone, and Email details
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Footer layout
-    Given the footer is in view
-    Then the footer has a light background
-    And four columns are visible: About blurb, Services links, Resources links, Templates links
-    And social media icons are displayed (Twitter, Facebook, Instagram, Dribbble, LinkedIn)
-    And a copyright line is present
-    And a link to Component Dock is present
-```
+#### Scenario: Footer layout
+
+- **GIVEN** the footer is in view
+- **THEN** the footer has a light background
+- **AND** four columns are visible: About blurb, Services links, Resources links, Templates links
+- **AND** social media icons are displayed (Twitter, Facebook, Instagram, Dribbble, LinkedIn)
+- **AND** a copyright line is present
+- **AND** a link to Component Dock is present
 
 ## Verification checklist
 

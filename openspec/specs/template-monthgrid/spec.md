@@ -18,7 +18,7 @@ A clean, modern two-month interactive calendar template featuring dual-month sid
 - **Layout**: Responsive two-month grid layout with previous/next month navigation buttons, day cells with hover effects, and event indicator dots.
 - **Footer**: Required Component Dock attribution (`https://www.componentdock.com/`).
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Two-Month Calendar View
 
@@ -26,15 +26,15 @@ As a user, I want to view two consecutive months side by side so I can easily pl
 
 #### Scenario: Initial Load
 
-- **Given** the user opens the MonthGrid application
-- **When** the page loads
-- **Then** two months are displayed side by side (e.g., current month and the following month) with clear grid headers for days of the week (Sun-Sat).
+- **GIVEN** the user opens the MonthGrid application
+- **WHEN** the page loads
+- **THEN** two months are displayed side by side (e.g., current month and the following month) with clear grid headers for days of the week (Sun-Sat)
 
 #### Scenario: Month Navigation
 
-- **Given** the user is viewing the calendar
-- **When** the user clicks the previous or next month navigation buttons
-- **Then** the calendar updates both month views accordingly.
+- **GIVEN** the user is viewing the calendar
+- **WHEN** the user clicks the previous or next month navigation buttons
+- **THEN** the calendar updates both month views accordingly
 
 ### Feature: Event Management & Day Details
 
@@ -42,9 +42,9 @@ As a user, I want to click on a day cell to view or add events.
 
 #### Scenario: Selecting a Date
 
-- **Given** the user is viewing the calendar grid
-- **When** the user clicks on a specific day cell
-- **Then** a detail panel or modal opens showing scheduled events for that date and an option to add a new event.
+- **GIVEN** the user is viewing the calendar grid
+- **WHEN** the user clicks on a specific day cell
+- **THEN** a detail panel or modal opens showing scheduled events for that date and an option to add a new event
 
 ## Verification Checklist
 

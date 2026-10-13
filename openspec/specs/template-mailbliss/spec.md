@@ -61,83 +61,94 @@ Recreation of ColorLib "Modal 08" — an email confirmation notification modal w
 | Email `@` symbol weight | `300` (light) | `.modal-content .modal-body h3 span` |
 | Subheading font-size | `18px` | `.modal-content .modal-body h4` |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: MailBliss — Email Confirmation Notification Modal
 
 #### Scenario: Page renders with heading and launch button
-- **Given** the user navigates to the MailBliss page
-- **When** the page loads
-- **Then** the heading "MailBliss" (or equivalent) is visible
-- **And** a "Launch Modal" button is visible below the heading
-- **And** the page background is white (#fff)
-- **And** the content is centered vertically on the page
+
+- **GIVEN** the user navigates to the MailBliss page
+- **WHEN** the page loads
+- **THEN** the heading "MailBliss" (or equivalent) is visible
+- **AND** a "Launch Modal" button is visible below the heading
+- **AND** the page background is white (#fff)
+- **AND** the content is centered vertically on the page
 
 #### Scenario: Modal opens on launch button click
-- **Given** the user is on the MailBliss page
-- **When** the user clicks the "Launch Modal" button
-- **Then** a centered modal appears with a fade-in animation
-- **And** the modal has a gradient header (purple #915eff to orange #ff8e59 at 45deg)
-- **And** the modal header has a skewed/angled bottom edge (V-shape from pseudo-elements)
-- **And** a close button (X) is visible in the top-right corner
-- **And** the background behind the modal is dimmed (backdrop)
+
+- **GIVEN** the user is on the MailBliss page
+- **WHEN** the user clicks the "Launch Modal" button
+- **THEN** a centered modal appears with a fade-in animation
+- **AND** the modal has a gradient header (purple #915eff to orange #ff8e59 at 45deg)
+- **AND** the modal header has a skewed/angled bottom edge (V-shape from pseudo-elements)
+- **AND** a close button (X) is visible in the top-right corner
+- **AND** the background behind the modal is dimmed (backdrop)
 
 #### Scenario: Modal displays confirmation message
-- **Given** the modal is open
-- **When** the user inspects the modal body
-- **Then** a heading "You've Got Mail!" is visible (white text, overlapping the gradient)
-- **And** a circular email icon (200x200px) is visible in the gradient area
-- **And** the text "We sent confirmation link to:" is visible (18px)
-- **And** the email "johndoe@gmail.com" is displayed (22px, bold, @ in light weight)
+
+- **GIVEN** the modal is open
+- **WHEN** the user inspects the modal body
+- **THEN** a heading "You've Got Mail!" is visible (white text, overlapping the gradient)
+- **AND** a circular email icon (200x200px) is visible in the gradient area
+- **AND** the text "We sent confirmation link to:" is visible (18px)
+- **AND** the email "johndoe@gmail.com" is displayed (22px, bold, @ in light weight)
 
 #### Scenario: Modal header gradient is correctly rendered
-- **Given** the modal is open
-- **When** the user views the modal header
-- **Then** the background is a linear-gradient from #915eff (bottom-left) to #ff8e59 (top-right)
-- **And** the gradient angle is 45deg
-- **And** the header height is approximately 230px
+
+- **GIVEN** the modal is open
+- **WHEN** the user views the modal header
+- **THEN** the background is a linear-gradient from #915eff (bottom-left) to #ff8e59 (top-right)
+- **AND** the gradient angle is 45deg
+- **AND** the header height is approximately 230px
 
 #### Scenario: Skewed angle effect on header
-- **Given** the modal is open
-- **When** the user views the bottom edge of the modal header
-- **Then** there is a V-shaped skewed effect created by two pseudo-elements
-- **And** the left pseudo-element has skewY(10deg)
-- **And** the right pseudo-element has skewY(-10deg)
-- **And** both pseudo-elements are 60px tall with white background
+
+- **GIVEN** the modal is open
+- **WHEN** the user views the bottom edge of the modal header
+- **THEN** there is a V-shaped skewed effect created by two pseudo-elements
+- **AND** the left pseudo-element has skewY(10deg)
+- **AND** the right pseudo-element has skewY(-10deg)
+- **AND** both pseudo-elements are 60px tall with white background
 
 #### Scenario: Modal body overlaps header
-- **Given** the modal is open
-- **When** the user views the transition between header and body
-- **Then** the modal body overlaps the header by approximately 180px (negative margin-top)
-- **And** the email icon appears to sit in the gradient area
+
+- **GIVEN** the modal is open
+- **WHEN** the user views the transition between header and body
+- **THEN** the modal body overlaps the header by approximately 180px (negative margin-top)
+- **AND** the email icon appears to sit in the gradient area
 
 #### Scenario: Modal closes on close button click
-- **Given** the modal is open
-- **When** the user clicks the close button (X)
-- **Then** the modal fades out and closes
-- **And** the background overlay disappears
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal fades out and closes
+- **AND** the background overlay disappears
 
 #### Scenario: Modal closes on backdrop click
-- **Given** the modal is open
-- **When** the user clicks outside the modal (on the backdrop)
-- **Then** the modal closes
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks outside the modal (on the backdrop)
+- **THEN** the modal closes
 
 #### Scenario: Modal is keyboard accessible
-- **Given** the modal is open
-- **When** the user presses the Escape key
-- **Then** the modal closes
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
 
 #### Scenario: Responsive layout
-- **Given** the user views the page on a mobile device (width < 768px)
-- **When** the page renders
-- **Then** the content remains centered and readable
-- **And** the modal is properly sized and scrollable if needed
+
+- **GIVEN** the user views the page on a mobile device (width < 768px)
+- **WHEN** the page renders
+- **THEN** the content remains centered and readable
+- **AND** the modal is properly sized and scrollable if needed
 
 #### Scenario: Accessibility basics
-- **Given** the modal is rendered in the DOM
-- **When** a screen reader inspects the modal
-- **Then** the modal has `role="dialog"` and `aria-labelledby` pointing to the heading
-- **And** the close button has `aria-label="Close"`
+
+- **GIVEN** the modal is rendered in the DOM
+- **WHEN** a screen reader inspects the modal
+- **THEN** the modal has `role="dialog"` and `aria-labelledby` pointing to the heading
+- **AND** the close button has `aria-label="Close"`
 
 ## Verification Checklist
 

@@ -15,7 +15,7 @@
 - Font Family: Inter / Sans-serif (`ui-sans-serif, system-ui, sans-serif`)
 - Radii: Rounded-xl (`0.75rem`) for cards, rounded-lg for buttons and day cells.
 
-## Requirements & Scenarios
+## Requirements
 
 ### Feature: Vertical Calendar Widget
 
@@ -23,24 +23,24 @@ As a user, I want to view a vertical calendar layout showing month navigation, d
 
 #### Scenario: Initial Render
 
-- Given the Calendry application is loaded
-- When the user views the main interface
-- Then it displays the current month and year header with navigation controls (prev/next month)
-- And renders a vertical list/grid of calendar days with weekday headers (Sun-Sat)
-- And highlights today's date and any active selected date
+- **GIVEN** the Calendry application is loaded
+- **WHEN** the user views the main interface
+- **THEN** it displays the current month and year header with navigation controls (prev/next month)
+- **AND** renders a vertical list/grid of calendar days with weekday headers (Sun-Sat)
+- **AND** highlights today's date and any active selected date
 
 #### Scenario: Date Selection and Event Details
 
-- Given the calendar is displayed
-- When the user clicks on a specific date cell (e.g., 15th)
-- Then that date becomes selected with a distinct highlight
-- And the sidebar or detail panel displays events scheduled for that date or an option to add an event
+- **GIVEN** the calendar is displayed
+- **WHEN** the user clicks on a specific date cell (e.g., 15th)
+- **THEN** that date becomes selected with a distinct highlight
+- **AND** the sidebar or detail panel displays events scheduled for that date or an option to add an event
 
 #### Scenario: Month Navigation
 
-- Given the calendar is displaying a specific month
-- When the user clicks the "Next Month" or "Previous Month" button
-- Then the calendar updates to show the correct days for the target month with accurate starting weekday alignment
+- **GIVEN** the calendar is displaying a specific month
+- **WHEN** the user clicks the "Next Month" or "Previous Month" button
+- **THEN** the calendar updates to show the correct days for the target month with accurate starting weekday alignment
 
 ## Verification Checklist
 

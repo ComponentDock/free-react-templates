@@ -70,134 +70,140 @@ The Pharma preview shows:
 7. **Promo Banners 2** — Dark background with background image, 2 large banner cards: "MedVault Products" and "Rated by Experts"; each with background image, heading, description; hover lifts card up
 8. **Footer** — 3-column: About Us text, Quick Links (Supplements, Vitamins, Diet & Nutrition, Tea & Coffee), Contact Info (address, phone, email); bottom copyright bar with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Renders brand and navigation links
-    Given the page loads
-    Then a light/white sticky navbar is visible with brand "MedVault"
-    And navigation links "Home", "Store", "About", "Contact" are displayed
-    And a search icon and shopping bag icon with count badge are shown
 
-  Scenario: Dropdown menu
-    Given the user hovers over or clicks the dropdown trigger
-    Then a dropdown menu with categories appears: Supplements, Vitamins, Diet & Nutrition, Tea & Coffee
+#### Scenario: Renders brand and navigation links
 
-  Scenario: Mobile menu toggle
-    Given the viewport is 992px wide or less
-    When the user clicks the hamburger menu button
-    Then the navigation menu expands/collapses
-```
+- **GIVEN** the page loads
+- **THEN** a light/white sticky navbar is visible with brand "MedVault"
+- **AND** navigation links "Home", "Store", "About", "Contact" are displayed
+- **AND** a search icon and shopping bag icon with count badge are shown
+
+#### Scenario: Dropdown menu
+
+- **GIVEN** the user hovers over or clicks the dropdown trigger
+- **THEN** a dropdown menu with categories appears: Supplements, Vitamins, Diet & Nutrition, Tea & Coffee
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** the viewport is 992px wide or less
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** the navigation menu expands/collapses
 
 ### Hero Cover
 
-```gherkin
 Feature: Hero Cover
-  Scenario: Displays hero content
-    Given the hero cover is visible
-    Then a background image is displayed at full viewport height
-    And a subtitle "Effective Medicine, New Medicine Everyday" is shown
-    And a heading "Welcome To MedVault" is displayed
-    And a pill-shaped "Shop Now" CTA button is present
-```
+
+#### Scenario: Displays hero content
+
+- **GIVEN** the hero cover is visible
+- **THEN** a background image is displayed at full viewport height
+- **AND** a subtitle "Effective Medicine, New Medicine Everyday" is shown
+- **AND** a heading "Welcome To MedVault" is displayed
+- **AND** a pill-shaped "Shop Now" CTA button is present
 
 ### Promo Banners
 
-```gherkin
 Feature: Promo Banners Row
-  Scenario: Displays three promotional banners
-    Given the promo banners section is visible
-    Then 3 banner cards are displayed in a row overlapping the hero by -150px
-    And the first banner is green (#74d12b) with "Free Shipping"
-    And the second banner is white with "Season Sale 50% Off"
-    And the third banner is yellow/warning with "Buy A Gift Card"
-    And each banner has an italic heading and descriptive text
 
-  Scenario: Banner overlap layout
-    Given the banners are displayed on desktop
-    Then the banners overlap the hero section above by 150px margin-top
-```
+#### Scenario: Displays three promotional banners
+
+- **GIVEN** the promo banners section is visible
+- **THEN** 3 banner cards are displayed in a row overlapping the hero by -150px
+- **AND** the first banner is green (#74d12b) with "Free Shipping"
+- **AND** the second banner is white with "Season Sale 50% Off"
+- **AND** the third banner is yellow/warning with "Buy A Gift Card"
+- **AND** each banner has an italic heading and descriptive text
+
+#### Scenario: Banner overlap layout
+
+- **GIVEN** the banners are displayed on desktop
+- **THEN** the banners overlap the hero section above by 150px margin-top
 
 ### Popular Products
 
-```gherkin
 Feature: Popular Products
-  Scenario: Displays product grid
-    Given the popular products section is visible
-    Then a section heading "Popular Products" with cyan underline is shown
-    And 6 product cards are displayed in a 3-column grid
-    And each card shows a product image, name, and price
-    And some cards have an orange "Sale" tag with strikethrough original price
-    And a "View All Products" pill-shaped button is at the bottom
 
-  Scenario: Sale tag styling
-    Given a product is on sale
-    Then an orange (#e86b00) tag with "Sale" text is displayed
-    And the original price is shown with strikethrough
-    And the sale price is displayed after a dash
-```
+#### Scenario: Displays product grid
+
+- **GIVEN** the popular products section is visible
+- **THEN** a section heading "Popular Products" with cyan underline is shown
+- **AND** 6 product cards are displayed in a 3-column grid
+- **AND** each card shows a product image, name, and price
+- **AND** some cards have an orange "Sale" tag with strikethrough original price
+- **AND** a "View All Products" pill-shaped button is at the bottom
+
+#### Scenario: Sale tag styling
+
+- **GIVEN** a product is on sale
+- **THEN** an orange (#e86b00) tag with "Sale" text is displayed
+- **AND** the original price is shown with strikethrough
+- **AND** the sale price is displayed after a dash
 
 ### New Products
 
-```gherkin
 Feature: New Products
-  Scenario: Displays product carousel
-    Given the new products section is visible
-    Then a section heading "New Products" is shown
-    And the section has a light gray background
-    And a carousel displays product cards with images, names, and prices
-```
+
+#### Scenario: Displays product carousel
+
+- **GIVEN** the new products section is visible
+- **THEN** a section heading "New Products" is shown
+- **AND** the section has a light gray background
+- **AND** a carousel displays product cards with images, names, and prices
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials
-  Scenario: Displays testimonial carousel
-    Given the testimonials section is visible
-    Then a section heading "Testimonials" is shown
-    And a carousel displays testimonial cards
-    And each card has a circular avatar image
-    And a blockquote with serif (Crimson Text) font contains the testimonial text
-    And the author name is shown with an em-dash prefix
-```
+
+#### Scenario: Displays testimonial carousel
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a section heading "Testimonials" is shown
+- **AND** a carousel displays testimonial cards
+- **AND** each card has a circular avatar image
+- **AND** a blockquote with serif (Crimson Text) font contains the testimonial text
+- **AND** the author name is shown with an em-dash prefix
 
 ### Promo Banners 2
 
-```gherkin
 Feature: Promo Banners 2
-  Scenario: Displays two promotional banners
-    Given the second promo banners section is visible
-    Then a dark background section with a background image is displayed
-    And 2 large banner cards are shown side by side
-    And each card has a background image, heading, and description
-    And the first card is titled "MedVault Products"
-    And the second card is titled "Rated by Experts"
 
-  Scenario: Hover lift effect
-    Given a promo banner is hovered
-    Then the card lifts up (translateY(-10px)) and gains a shadow
-```
+#### Scenario: Displays two promotional banners
+
+- **GIVEN** the second promo banners section is visible
+- **THEN** a dark background section with a background image is displayed
+- **AND** 2 large banner cards are shown side by side
+- **AND** each card has a background image, heading, and description
+- **AND** the first card is titled "MedVault Products"
+- **AND** the second card is titled "Rated by Experts"
+
+#### Scenario: Hover lift effect
+
+- **GIVEN** a promo banner is hovered
+- **THEN** the card lifts up (translateY(-10px)) and gains a shadow
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Renders footer with about, links, and contact
-    Given the footer is visible
-    Then a 3-column footer is displayed
-    And the first column has "About Us" heading with description text
-    And the second column has "Quick Links" with category links
-    And the third column has "Contact Info" with address, phone, and email
-    And all footer links are muted (#5c626e) with cyan (#51eaea) hover color
 
-  Scenario: Copyright bar with Component Dock link
-    Given the footer bottom bar is visible
-    Then a copyright notice is shown
-    And a link to "https://www.componentdock.com/" is present (branded "Component Dock")
-```
+#### Scenario: Renders footer with about, links, and contact
+
+- **GIVEN** the footer is visible
+- **THEN** a 3-column footer is displayed
+- **AND** the first column has "About Us" heading with description text
+- **AND** the second column has "Quick Links" with category links
+- **AND** the third column has "Contact Info" with address, phone, and email
+- **AND** all footer links are muted (#5c626e) with cyan (#51eaea) hover color
+
+#### Scenario: Copyright bar with Component Dock link
+
+- **GIVEN** the footer bottom bar is visible
+- **THEN** a copyright notice is shown
+- **AND** a link to "https://www.componentdock.com/" is present (branded "Component Dock")
 
 ## Verification Checklist
 

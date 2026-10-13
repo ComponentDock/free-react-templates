@@ -48,9 +48,11 @@ The page renders:
   - Surface cards: Pure white (`#ffffff`) with subtle borders (`#e2e8f0`)
   - Typography: Sans-serif (Inter system font)
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Vertical Day Sidebar
+
+#### Scenario: Vertical Day Sidebar
 
 - As a user, I want to see the currently selected day highlighted in a prominent vertical sidebar panel.
 - Scenario: Initial load shows today's date in the vertical panel (Day name, large number, month, year).
@@ -58,11 +60,15 @@ The page renders:
 
 ### Requirement 2: Monthly Calendar Grid & Navigation
 
+#### Scenario: Monthly Calendar Grid & Navigation
+
 - As a user, I want to navigate between months and view dates in a grid.
 - Scenario: Clicking next/previous month chevrons changes the displayed month and year.
 - Scenario: Days of the week header (Sun Mon Tue Wed Thu Fri Sat) aligns correctly with dates.
 
 ### Requirement 3: Component Dock Footer
+
+#### Scenario: Component Dock Footer
 
 - As a user, I want to see the Component Dock attribution footer.
 - Scenario: Footer renders at the bottom linking to `https://www.componentdock.com/`.

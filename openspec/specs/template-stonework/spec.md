@@ -160,143 +160,144 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 - Copyright text with "Component Dock" link
 - Social icons row (Facebook, Twitter, Instagram, LinkedIn)
 
-## Gherkin Requirements
+## Requirements
 
 ### Sidebar
 
-```gherkin
-Scenario: Sidebar displays on desktop
-  Given the viewport is wider than 1200px
-  When the page loads
-  Then a fixed left sidebar is visible
-  And the sidebar occupies 20% of the viewport width
-  And the sidebar background is dark charcoal (#2C2C2C)
+#### Scenario: Sidebar displays on desktop
 
-Scenario: Sidebar navigation links
-  Given the sidebar is visible
-  When I look at the navigation
-  Then I see links: Home, Projects, About, Services, Blog, Contact
-  And the active link has gold (#FFC300) text and underline
+- **GIVEN** the viewport is wider than 1200px
+- **WHEN** the page loads
+- **THEN** a fixed left sidebar is visible
+- **AND** the sidebar occupies 20% of the viewport width
+- **AND** the sidebar background is dark charcoal (#2C2C2C)
 
-Scenario: Sidebar mobile toggle
-  Given the viewport is narrower than 768px
-  When I tap the hamburger icon
-  Then the sidebar slides in from the left
-  And the main content shifts to full width
-```
+#### Scenario: Sidebar navigation links
+
+- **GIVEN** the sidebar is visible
+- **WHEN** I look at the navigation
+- **THEN** I see links: Home, Projects, About, Services, Blog, Contact
+- **AND** the active link has gold (#FFC300) text and underline
+
+#### Scenario: Sidebar mobile toggle
+
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** I tap the hamburger icon
+- **THEN** the sidebar slides in from the left
+- **AND** the main content shifts to full width
 
 ### Hero Slider
 
-```gherkin
-Scenario: Hero slider displays with background images
-  Given the page loads
-  When the hero section renders
-  Then a full-width slider shows with background images
-  And each slide has a dark overlay
-  And a gold text panel appears in the bottom-right corner
+#### Scenario: Hero slider displays with background images
 
-Scenario: Hero text panel content
-  Given the hero slider is visible
-  When I read the text panel
-  Then I see a heading like "An Inspiring Built Space"
-  And a CTA button labeled "View Project"
+- **GIVEN** the page loads
+- **WHEN** the hero section renders
+- **THEN** a full-width slider shows with background images
+- **AND** each slide has a dark overlay
+- **AND** a gold text panel appears in the bottom-right corner
 
-Scenario: Hero CTA button style
-  Given the hero text panel is visible
-  When I look at the CTA button
-  Then it has a white background with black text
-  And on hover it becomes transparent with a black border
-```
+#### Scenario: Hero text panel content
+
+- **GIVEN** the hero slider is visible
+- **WHEN** I read the text panel
+- **THEN** I see a heading like "An Inspiring Built Space"
+- **AND** a CTA button labeled "View Project"
+
+#### Scenario: Hero CTA button style
+
+- **GIVEN** the hero text panel is visible
+- **WHEN** I look at the CTA button
+- **THEN** it has a white background with black text
+- **AND** on hover it becomes transparent with a black border
 
 ### About Section
 
-```gherkin
-Scenario: About section layout
-  Given the page loads
-  When I scroll to the About section
-  Then I see a 2-column layout
-  And the left column has a background image
-  And the right column has "Who We Are" heading with gold underline
+#### Scenario: About section layout
 
-Scenario: About feature boxes
-  Given the About section is visible
-  When I look at the feature boxes
-  Then I see 3 boxes: "We Are Passionate", "Honest & Dependable", "Always Improving"
-  And each box has a checkmark icon
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the About section
+- **THEN** I see a 2-column layout
+- **AND** the left column has a background image
+- **AND** the right column has "Who We Are" heading with gold underline
+
+#### Scenario: About feature boxes
+
+- **GIVEN** the About section is visible
+- **WHEN** I look at the feature boxes
+- **THEN** I see 3 boxes: "We Are Passionate", "Honest & Dependable", "Always Improving"
+- **AND** each box has a checkmark icon
 
 ### Services Section
 
-```gherkin
-Scenario: Services section expert items
-  Given the page loads
-  When I scroll to the Services section
-  Then I see 4 expert items on the left with icons and descriptions
-  And items are: General Contracting, Pre-Construction Design, Building & Modeling, Construction Management
+#### Scenario: Services section expert items
 
-Scenario: Services image cards
-  Given the Services section is visible
-  When I look at the right column
-  Then I see 5 image service cards in a 2-column grid
-  And cards are: Design & Build, House Remodeling, Construction Management, Painting & Tiling, Kitchen Remodeling
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Services section
+- **THEN** I see 4 expert items on the left with icons and descriptions
+- **AND** items are: General Contracting, Pre-Construction Design, Building & Modeling, Construction Management
+
+#### Scenario: Services image cards
+
+- **GIVEN** the Services section is visible
+- **WHEN** I look at the right column
+- **THEN** I see 5 image service cards in a 2-column grid
+- **AND** cards are: Design & Build, House Remodeling, Construction Management, Painting & Tiling, Kitchen Remodeling
 
 ### Counter Stats
 
-```gherkin
-Scenario: Counter section displays stats
-  Given the page loads
-  When I scroll to the counter section
-  Then I see 4 stats: Projects (1539), Employees (3653), Constructors (5987), Partners (3999)
-  And each stat has a white circle icon with gold (#FFC300) icon inside
-  And the section has a background image with dark overlay
+#### Scenario: Counter section displays stats
 
-Scenario: Counter animation
-  Given the counter section is visible
-  When the counters come into view
-  Then each number animates from 0 to its target value
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the counter section
+- **THEN** I see 4 stats: Projects (1539), Employees (3653), Constructors (5987), Partners (3999)
+- **AND** each stat has a white circle icon with gold (#FFC300) icon inside
+- **AND** the section has a background image with dark overlay
+
+#### Scenario: Counter animation
+
+- **GIVEN** the counter section is visible
+- **WHEN** the counters come into view
+- **THEN** each number animates from 0 to its target value
 
 ### Work/Portfolio
 
-```gherkin
-Scenario: Portfolio grid layout
-  Given the page loads
-  When I scroll to the Work section
-  Then I see 6 project cards in a mixed grid
-  And 2 cards span col-6 (large) and 4 cards span col-3 (small)
+#### Scenario: Portfolio grid layout
 
-Scenario: Portfolio card hover
-  Given a portfolio card is visible
-  When I hover over a card
-  Then I see the project title, category tag, and social stats (share, views, likes)
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Work section
+- **THEN** I see 6 project cards in a mixed grid
+- **AND** 2 cards span col-6 (large) and 4 cards span col-3 (small)
+
+#### Scenario: Portfolio card hover
+
+- **GIVEN** a portfolio card is visible
+- **WHEN** I hover over a card
+- **THEN** I see the project title, category tag, and social stats (share, views, likes)
 
 ### Blog Section
 
-```gherkin
-Scenario: Blog cards layout
-  Given the page loads
-  When I scroll to the Blog section
-  Then I see 3 blog cards in a 3-column grid
-  And each card has an image, date/category/comments meta, title, and excerpt
+#### Scenario: Blog cards layout
 
-Scenario: Blog card content
-  Given the blog section is visible
-  When I read the cards
-  Then I see: "Renovating National Gallery", "Wordpress for a Beginner", "Make Website From Scratch"
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Blog section
+- **THEN** I see 3 blog cards in a 3-column grid
+- **AND** each card has an image, date/category/comments meta, title, and excerpt
+
+#### Scenario: Blog card content
+
+- **GIVEN** the blog section is visible
+- **WHEN** I read the cards
+- **THEN** I see: "Renovating National Gallery", "Wordpress for a Beginner", "Make Website From Scratch"
 
 ### Contact CTA
 
-```gherkin
-Scenario: Contact CTA section
-  Given the page loads
-  When I scroll to the bottom
-  Then I see "Get in Touch!" heading
-  And a description paragraph
-  And a "Contact me!" button with border-radius 30px
-```
+#### Scenario: Contact CTA section
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the bottom
+- **THEN** I see "Get in Touch!" heading
+- **AND** a description paragraph
+- **AND** a "Contact me!" button with border-radius 30px
 
 ## Verification Checklist
 

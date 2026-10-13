@@ -82,78 +82,88 @@ Extracted from the live preview CSS (`main.css`) at
 | banner-height          | 600px                      | Hero banner section            |
 | container              | Bootstrap-like `.container`| Content centers                |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: BizNode — Small Company / Creative Agency Website
 
-  Scenario: Page loads with header and navigation
-    Given the user visits the BizNode homepage
-    Then a header is visible with a logo on the left
-    And navigation links "Home", "Generic", "Elements" are present
-    And a hamburger menu icon is visible (mobile toggle)
+#### Scenario: Page loads with header and navigation
 
-  Scenario: Hero banner displays correctly
-    Given the user visits the BizNode homepage
-    Then a hero banner section is displayed
-    And the heading reads "we're Creative" (stacked, uppercase)
-    And a "Get Started" button with pill shape is centered below the heading
-    And the banner background shows a purple circular pattern
+- **GIVEN** the user visits the BizNode homepage
+- **THEN** a header is visible with a logo on the left
+- **AND** navigation links "Home", "Generic", "Elements" are present
+- **AND** a hamburger menu icon is visible (mobile toggle)
 
-  Scenario: Featured area shows four feature blocks
-    Given the user scrolls to the featured area
-    Then four feature blocks are displayed in a 2-column grid
-    And each block has an icon, a heading, and a description paragraph
-    And the feature headings are "Unlimited Colors", "Smart Security",
+#### Scenario: Hero banner displays correctly
+
+- **GIVEN** the user visits the BizNode homepage
+- **THEN** a hero banner section is displayed
+- **AND** the heading reads "we're Creative" (stacked, uppercase)
+- **AND** a "Get Started" button with pill shape is centered below the heading
+- **AND** the banner background shows a purple circular pattern
+
+#### Scenario: Featured area shows four feature blocks
+
+- **GIVEN** the user scrolls to the featured area
+- **THEN** four feature blocks are displayed in a 2-column grid
+- **AND** each block has an icon, a heading, and a description paragraph
+- **AND** the feature headings are "Unlimited Colors", "Smart Security",
          "Endless Support", and a fourth feature
-    And the section has a white background
+- **AND** the section has a white background
 
-  Scenario: Video area displays with background and overlay
-    Given the user scrolls to the video area
-    Then a full-width background image is displayed
-    And a dark semi-transparent overlay covers the background
-    And a heading "Liquid Crystals" and description text are centered
-    And the section is visually distinct from adjacent sections
+#### Scenario: Video area displays with background and overlay
 
-  Scenario: Blog area shows three blog cards
-    Given the user scrolls to the blog area
-    Then three blog cards are displayed side by side (3-column layout)
-    And each card has an image thumbnail at the top
-    And each card has a centered heading and description below
-    And the card headings are "Ultimate pet lover", "Upcoming role model",
-         and "Colors of Life"
+- **GIVEN** the user scrolls to the video area
+- **THEN** a full-width background image is displayed
+- **AND** a dark semi-transparent overlay covers the background
+- **AND** a heading "Liquid Crystals" and description text are centered
+- **AND** the section is visually distinct from adjacent sections
 
-  Scenario: Story area has dark background with white text
-    Given the user scrolls to the story area
-    Then a dark/colored background section is displayed
-    And the heading "Crafting Our Experiences" is shown in white
-    And a white paragraph of body text is below the heading
+#### Scenario: Blog area shows three blog cards
 
-  Scenario: Subscription area accepts email signup
-    Given the user scrolls to the subscription area
-    Then a heading "Subscribe Newsletter" is centered
-    And an email input field with placeholder "Email address" is shown
-    And a "Get Started" gradient button is next to the input
-    And the button has a pill shape (border-radius 20px)
+- **GIVEN** the user scrolls to the blog area
+- **THEN** three blog cards are displayed side by side (3-column layout)
+- **AND** each card has an image thumbnail at the top
+- **AND** each card has a centered heading and description below
+- **AND** the card headings are "Ultimate pet lover", "Upcoming role model",
+- **AND** "Colors of Life"
 
-  Scenario: Footer shows navigation and social links
-    Given the user scrolls to the footer
-    Then footer navigation links "Home", "Generic", "Elements" are present
-    And social media icons (Facebook, Twitter, Dribbble, Behance) are displayed
-    And a copyright line is shown at the bottom
-    And the copyright links to Component Dock
+#### Scenario: Story area has dark background with white text
 
-  Scenario: Primary button gradient renders correctly
-    Given the user hovers over the "Get Started" button
-    Then the button background transitions from gradient to white
-    And the text color transitions to dark (#222222)
-    And the transition is smooth
+- **GIVEN** the user scrolls to the story area
+- **THEN** a dark/colored background section is displayed
+- **AND** the heading "Crafting Our Experiences" is shown in white
+- **AND** a white paragraph of body text is below the heading
 
-  Scenario: Responsive layout adapts to mobile
-    Given the user resizes the browser to mobile width (< 768px)
-    Then the wrapper width expands to 97%
-    And the hamburger menu becomes interactive
-    And feature blocks stack vertically (single column)
-    And blog cards stack vertically (single column)
+#### Scenario: Subscription area accepts email signup
+
+- **GIVEN** the user scrolls to the subscription area
+- **THEN** a heading "Subscribe Newsletter" is centered
+- **AND** an email input field with placeholder "Email address" is shown
+- **AND** a "Get Started" gradient button is next to the input
+- **AND** the button has a pill shape (border-radius 20px)
+
+#### Scenario: Footer shows navigation and social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** footer navigation links "Home", "Generic", "Elements" are present
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are displayed
+- **AND** a copyright line is shown at the bottom
+- **AND** the copyright links to Component Dock
+
+#### Scenario: Primary button gradient renders correctly
+
+- **GIVEN** the user hovers over the "Get Started" button
+- **THEN** the button background transitions from gradient to white
+- **AND** the text color transitions to dark (#222222)
+- **AND** the transition is smooth
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the user resizes the browser to mobile width (< 768px)
+- **THEN** the wrapper width expands to 97%
+- **AND** the hamburger menu becomes interactive
+- **AND** feature blocks stack vertically (single column)
+- **AND** blog cards stack vertically (single column)
 
 ## Verification checklist
 

@@ -103,84 +103,97 @@ copied).
   - Spacing: Bootstrap `.ftco-section` ~3em vertical padding;
     `.ftco-no-pt`/`.ftco-no-pb` for tight sections.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Redeemer Church Template
 
-  Scenario: Navbar displays all navigation links
-    Given the user loads the page
-    Then the navbar shows links: Home, About, Ministries, Sermons, Events, Blog, Contact
-    And a "Donate" CTA button is visible
+#### Scenario: Navbar displays all navigation links
 
-  Scenario: Hero slider shows two slides
-    Given the user loads the page
-    Then the hero section displays a full-viewport slider
-    And slide 1 shows "Transforming Lives" heading and "Total Surrender to God" subheading
-    And slide 2 shows "Welcome to Salvation Church" heading and "Perfect Church For Imperfect People" subheading
-    And each slide has a "Become A Volunteer" or equivalent CTA button
-    And navigation arrows are visible
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows links: Home, About, Ministries, Sermons, Events, Blog, Contact
+- **AND** a "Donate" CTA button is visible
 
-  Scenario: Services section shows three cards
-    Given the user scrolls to the services section
-    Then 3 service cards are displayed: Worship, Connect, God's Love
-    And each card has an icon, title, and description
+#### Scenario: Hero slider shows two slides
 
-  Scenario: Ministries section displays on light background
-    Given the user scrolls to the ministries section
-    Then the section has a light grey background
-    And the heading reads "Connect, Grow and Serve with Us"
-    And a CTA button is present
+- **GIVEN** the user loads the page
+- **THEN** the hero section displays a full-viewport slider
+- **AND** slide 1 shows "Transforming Lives" heading and "Total Surrender to God" subheading
+- **AND** slide 2 shows "Welcome to Salvation Church" heading and "Perfect Church For Imperfect People" subheading
+- **AND** each slide has a "Become A Volunteer" or equivalent CTA button
+- **AND** navigation arrows are visible
 
-  Scenario: Counter section shows stats on blue background
-    Given the user scrolls to the counter section
-    Then the section has a blue (#007bff) background
-    And 4 stat counters are displayed with numbers and labels
-    And the heading reads "We're on a mission to help all your problems"
+#### Scenario: Services section shows three cards
 
-  Scenario: Sermons section shows sermon cards
-    Given the user scrolls to the sermons section
-    Then the heading reads "Watch and Listen to our Sermons"
-    And sermon cards are displayed with thumbnails, titles, descriptions
-    And each card has a play button and a "Watch Later" outline button
+- **GIVEN** the user scrolls to the services section
+- **THEN** 3 service cards are displayed: Worship, Connect, God's Love
+- **AND** each card has an icon, title, and description
 
-  Scenario: Testimony section displays
-    Given the user scrolls to the testimony section
-    Then the heading reads "Transform Lives"
-    And testimonial content is displayed
+#### Scenario: Ministries section displays on light background
 
-  Scenario: Blog section shows latest posts
-    Given the user scrolls to the blog section
-    Then the heading reads "Latest news from our blog"
-    And blog entry cards are displayed with images, titles, and excerpts
+- **GIVEN** the user scrolls to the ministries section
+- **THEN** the section has a light grey background
+- **AND** the heading reads "Connect, Grow and Serve with Us"
+- **AND** a CTA button is present
 
-  Scenario: Events section shows upcoming events
-    Given the user scrolls to the events section
-    Then the heading reads "Latest Events"
-    And event listings are displayed with dates, titles, and descriptions
+#### Scenario: Counter section shows stats on blue background
 
-  Scenario: Gallery section shows photo grid
-    Given the user scrolls to the gallery section
-    Then the heading reads "Galleries"
-    And a photo grid with lightbox links is displayed
+- **GIVEN** the user scrolls to the counter section
+- **THEN** the section has a blue (#007bff) background
+- **AND** 4 stat counters are displayed with numbers and labels
+- **AND** the heading reads "We're on a mission to help all your problems"
 
-  Scenario: Footer displays with four columns
-    Given the user scrolls to the footer
-    Then the footer has a dark background (#1a1a1a)
-    And 4 columns are shown: brand info, Latest News, Quick Links, Have a Questions?
-    And social media icons are displayed
-    And a Component Dock link is present in the footer
+#### Scenario: Sermons section shows sermon cards
 
-  Scenario: Mobile responsive layout
-    Given the user views the page on a mobile viewport
-    Then the navbar collapses to a hamburger menu
-    And sections stack vertically
-    And the hero slider remains full-viewport
+- **GIVEN** the user scrolls to the sermons section
+- **THEN** the heading reads "Watch and Listen to our Sermons"
+- **AND** sermon cards are displayed with thumbnails, titles, descriptions
+- **AND** each card has a play button and a "Watch Later" outline button
 
-  Scenario: Donate modal opens
-    Given the user clicks the "Donate" CTA in the navbar
-    Then a donation modal opens with the heading "Make a Difference Today"
-    And donation amount options are displayed
-    And a submit button is present
+#### Scenario: Testimony section displays
+
+- **GIVEN** the user scrolls to the testimony section
+- **THEN** the heading reads "Transform Lives"
+- **AND** testimonial content is displayed
+
+#### Scenario: Blog section shows latest posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading reads "Latest news from our blog"
+- **AND** blog entry cards are displayed with images, titles, and excerpts
+
+#### Scenario: Events section shows upcoming events
+
+- **GIVEN** the user scrolls to the events section
+- **THEN** the heading reads "Latest Events"
+- **AND** event listings are displayed with dates, titles, and descriptions
+
+#### Scenario: Gallery section shows photo grid
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** the heading reads "Galleries"
+- **AND** a photo grid with lightbox links is displayed
+
+#### Scenario: Footer displays with four columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background (#1a1a1a)
+- **AND** 4 columns are shown: brand info, Latest News, Quick Links, Have a Questions?
+- **AND** social media icons are displayed
+- **AND** a Component Dock link is present in the footer
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the hero slider remains full-viewport
+
+#### Scenario: Donate modal opens
+
+- **GIVEN** the user clicks the "Donate" CTA in the navbar
+- **THEN** a donation modal opens with the heading "Make a Difference Today"
+- **AND** donation amount options are displayed
+- **AND** a submit button is present
 
 ## Verification checklist
 

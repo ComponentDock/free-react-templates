@@ -27,3 +27,104 @@ Recreation of ColorLib [Accounting](https://colorlib.com/wp/template/accounting/
 9. **Newsletter / Consultation CTA Banner:** Full-width secondary background banner with consultation prompt and email subscribe form.
 10. **Pricing / Packages Section:** 4 pricing tiers (Personal, Business, Ultimate, Premium) with feature checklists and "Get Started" buttons.
 11. **Footer:** Multi-column footer with About us, Services, Discover, Resources links, social icons, consultation form on the right, and copyright linking `https://www.componentdock.com/` ("Component Dock").
+
+## Requirements
+
+### Feature: Top Bar & Navbar
+
+Top bar with contact phone and email, social media links. Sticky navbar with brand logo ("Ledger"), navigation links (Home, About, Services, Case Study, Blog, Contact), search form, and mobile menu toggle.
+
+#### Scenario: Top Bar & Navbar renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Top Bar & Navbar band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Hero Carousel
+
+Slider with professional background imagery, dark overlay, bold headings ("We Help You Businesses Innovate and Grow", "Expert Financial Advice"), and CTA buttons ("Connect with us").
+
+#### Scenario: Hero Carousel renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Hero Carousel band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: About / Key Services Section
+
+Welcome subheading ("Welcome to Accounting"), video/image showcase on the left, and 4 key services on the right with custom icons (Market Analysis, Accounting Advisor, General Consultancy, Structured Assessment).
+
+#### Scenario: About / Key Services Section renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the About / Key Services Section band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Services Grid
+
+4-column feature grid covering Accounting, Tax & Compliance, Financial Services, and Growth & Funding Access.
+
+#### Scenario: Services Grid renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Services Grid band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Counter Statistics Section
+
+4 key metrics displayed with large numbers (50 Years Experience, 8500 Cases Completed, 20 Awards Won, 50 Expert Consultants).
+
+#### Scenario: Counter Statistics Section renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Counter Statistics Section band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Testimonials / Happy Clients
+
+Carousel / cards of client feedback and reviews.
+
+#### Scenario: Testimonials / Happy Clients renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Testimonials / Happy Clients band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: FAQs Section
+
+Accordion with frequently asked questions.
+
+#### Scenario: FAQs Section renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the FAQs Section band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Blog / News Section
+
+3-column blog cards with dates, author, comment count, and headings.
+
+#### Scenario: Blog / News Section renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Blog / News Section band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Newsletter / Consultation CTA Banner
+
+Full-width secondary background banner with consultation prompt and email subscribe form.
+
+#### Scenario: Newsletter / Consultation CTA Banner renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Newsletter / Consultation CTA Banner band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Pricing / Packages Section
+
+4 pricing tiers (Personal, Business, Ultimate, Premium) with feature checklists and "Get Started" buttons.
+
+#### Scenario: Pricing / Packages Section renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Pricing / Packages Section band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Footer
+
+Multi-column footer with About us, Services, Discover, Resources links, social icons, consultation form on the right, and copyright linking `https://www.componentdock.com/` ("Component Dock").
+
+#### Scenario: Footer renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Footer band SHALL be present at its documented position with the structure, copy and tokens named above

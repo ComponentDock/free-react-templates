@@ -49,80 +49,93 @@ Recreation of the ColorLib **Videograph** template — a dark, cinematic video p
 8. **CTA/Call-to-action** — Full-width background image, headline "Fresh Ideas, Fresh Moments Giving Wings to your Stories.", subtitle "INC5000, Best places to work 2031", CTA button "Start your stories"
 9. **Footer** — 3 rows: top (logo + social icons: Facebook, X/Twitter, Dribbble, Instagram, YouTube), option (4 columns: About us with text + Read more, Who we are links, Our work links, Newsletter signup), bottom (copyright)
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Header displays navigation
-- **Given** the page loads
-- **When** the header renders
-- **Then** a logo appears on the left
-- **And** nav links "Home", "About", "Portfolio", "Services", "Pages" are visible
-- **And** social icons appear on the right side
+### Feature: ReelStudio template behaviour
 
-### Scenario: Hero slider renders
-- **Given** the page loads
-- **When** the hero section renders
-- **Then** a full-width background image is visible
-- **And** subtitle text "For website and video editing" is displayed
-- **And** heading "Videographer's Portfolio" is displayed
-- **And** a "See more about us" CTA button is visible
+#### Scenario: Header displays navigation
 
-### Scenario: Services section displays 4 service cards
-- **Given** the page loads
-- **When** the services section scrolls into view
-- **Then** section title "What We do?" is displayed with cyan underline
-- **And** 4 service cards are shown: Motion graphics, Scriptwriting and editing, Video distribution, Video hosting
-- **And** each card has an icon, title, and description
+- **GIVEN** the page loads
+- **WHEN** the header renders
+- **THEN** a logo appears on the left
+- **AND** nav links "Home", "About", "Portfolio", "Services", "Pages" are visible
+- **AND** social icons appear on the right side
 
-### Scenario: Work gallery displays portfolio items
-- **Given** the page loads
-- **When** the work section renders
-- **Then** a grid of portfolio images is displayed
-- **And** images have a hover overlay effect
+#### Scenario: Hero slider renders
 
-### Scenario: Counter section shows statistics
-- **Given** the page loads
-- **When** the counter section scrolls into view
-- **Then** "230" is displayed with label "Completed Projects"
-- **And** "1068" is displayed with label "Happy Clients"
-- **And** "230" is displayed with label "Perspective Clients"
+- **GIVEN** the page loads
+- **WHEN** the hero section renders
+- **THEN** a full-width background image is visible
+- **AND** subtitle text "For website and video editing" is displayed
+- **AND** heading "Videographer's Portfolio" is displayed
+- **AND** a "See more about us" CTA button is visible
 
-### Scenario: Team section displays members
-- **Given** the page loads
-- **When** the team section scrolls into view
-- **Then** section title "OUR Team" is displayed
-- **And** 4 team member cards are shown
-- **And** each card has a photo, name, role ("Videographer"), and social icon links
+#### Scenario: Services section displays 4 service cards
 
-### Scenario: Blog section displays latest posts
-- **Given** the page loads
-- **When** the latest section renders
-- **Then** section title "Blog Update" is displayed
-- **And** 3 blog cards are shown with thumbnail, title, excerpt, and "Read more" link
+- **GIVEN** the page loads
+- **WHEN** the services section scrolls into view
+- **THEN** section title "What We do?" is displayed with cyan underline
+- **AND** 4 service cards are shown: Motion graphics, Scriptwriting and editing, Video distribution, Video hosting
+- **AND** each card has an icon, title, and description
 
-### Scenario: CTA section renders
-- **Given** the page loads
-- **When** the call-to-action section scrolls into view
-- **Then** headline "Fresh Ideas, Fresh Moments Giving Wings to your Stories." is displayed
-- **And** subtitle "INC5000, Best places to work 2031" is visible
-- **And** a "Start your stories" CTA button is visible
+#### Scenario: Work gallery displays portfolio items
 
-### Scenario: Footer renders
-- **Given** the page loads
-- **When** the footer renders
-- **Then** logo and social icons (Facebook, X, Dribbble, Instagram, YouTube) appear
-- **And** "About us" column with description and "Read more" link is visible
-- **And** "Who we are", "Our work", "Newsletter" columns are visible
-- **And** copyright text and "Component Dock" link are present
+- **GIVEN** the page loads
+- **WHEN** the work section renders
+- **THEN** a grid of portfolio images is displayed
+- **AND** images have a hover overlay effect
 
-### Scenario: Accessibility — skip link
-- **Given** the page loads
-- **When** the user presses Tab
-- **Then** a "Skip to main content" link appears
+#### Scenario: Counter section shows statistics
 
-### Scenario: Button hover animation
-- **Given** the page is loaded
-- **When** a user hovers over a primary CTA button
-- **Then** a cyan border animation plays (left→top→right→bottom)
+- **GIVEN** the page loads
+- **WHEN** the counter section scrolls into view
+- **THEN** "230" is displayed with label "Completed Projects"
+- **AND** "1068" is displayed with label "Happy Clients"
+- **AND** "230" is displayed with label "Perspective Clients"
+
+#### Scenario: Team section displays members
+
+- **GIVEN** the page loads
+- **WHEN** the team section scrolls into view
+- **THEN** section title "OUR Team" is displayed
+- **AND** 4 team member cards are shown
+- **AND** each card has a photo, name, role ("Videographer"), and social icon links
+
+#### Scenario: Blog section displays latest posts
+
+- **GIVEN** the page loads
+- **WHEN** the latest section renders
+- **THEN** section title "Blog Update" is displayed
+- **AND** 3 blog cards are shown with thumbnail, title, excerpt, and "Read more" link
+
+#### Scenario: CTA section renders
+
+- **GIVEN** the page loads
+- **WHEN** the call-to-action section scrolls into view
+- **THEN** headline "Fresh Ideas, Fresh Moments Giving Wings to your Stories." is displayed
+- **AND** subtitle "INC5000, Best places to work 2031" is visible
+- **AND** a "Start your stories" CTA button is visible
+
+#### Scenario: Footer renders
+
+- **GIVEN** the page loads
+- **WHEN** the footer renders
+- **THEN** logo and social icons (Facebook, X, Dribbble, Instagram, YouTube) appear
+- **AND** "About us" column with description and "Read more" link is visible
+- **AND** "Who we are", "Our work", "Newsletter" columns are visible
+- **AND** copyright text and "Component Dock" link are present
+
+#### Scenario: Accessibility — skip link
+
+- **GIVEN** the page loads
+- **WHEN** the user presses Tab
+- **THEN** a "Skip to main content" link appears
+
+#### Scenario: Button hover animation
+
+- **GIVEN** the page is loaded
+- **WHEN** a user hovers over a primary CTA button
+- **THEN** a cyan border animation plays (left→top→right→bottom)
 
 ## Verification Checklist
 

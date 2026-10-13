@@ -101,88 +101,99 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
   - Column 4: "Contact" — address, phone numbers, email
 - Copyright bar at bottom with "Made with Component Dock" link
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Forkbite template behaviour
+
 Feature: Forkbite — Restaurant Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "Forkbite"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "Forkbite"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo "Forkbite." with orange dot is visible
-    And navigation links "Home", "Menu", "Events", "Gallery", "About", "Contact" are available
-    And a "Book a table" CTA button is visible in the navbar
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays with overlay
-    Given the hero section is in the viewport
-    Then a full-width background image with dark overlay is visible
-    And the heading "Treat Yourself" is displayed
-    And the caption "Enjoy Your Healthy Delicious Meal" is shown
-    And an "Explore now" CTA button with orange pill shape is visible
-    And a scroll-down indicator is present
-    And social media icons (WhatsApp, Instagram, Facebook, Twitter) are on the left
+- **GIVEN** the user is on any viewport
+- **THEN** the logo "Forkbite." with orange dot is visible
+- **AND** navigation links "Home", "Menu", "Events", "Gallery", "About", "Contact" are available
+- **AND** a "Book a table" CTA button is visible in the navbar
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: Popular Foods section shows tabbed carousel
-    Given the foods section is scrolled into view
-    Then 4 category tabs (Breakfast, Lunch, Dinner, Drinks) are visible
-    And the Breakfast tab is active by default
-    And a carousel shows 4 dish cards in a 2×2 grid
-    And each dish has an image, name, and price
+#### Scenario: Hero section displays with overlay
 
-  Scenario: Food category switching works
-    Given the foods section is visible with Breakfast active
-    When the user clicks the "Lunch" tab
-    Then the carousel advances to the Lunch slide
-    And the slide counter shows "2/4"
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width background image with dark overlay is visible
+- **AND** the heading "Treat Yourself" is displayed
+- **AND** the caption "Enjoy Your Healthy Delicious Meal" is shown
+- **AND** an "Explore now" CTA button with orange pill shape is visible
+- **AND** a scroll-down indicator is present
+- **AND** social media icons (WhatsApp, Instagram, Facebook, Twitter) are on the left
 
-  Scenario: Desserts section shows 4 items
-    Given the desserts section is scrolled into view
-    Then the heading "Popular Desserts" is visible
-    And 4 dessert cards are displayed in a row
-    And each card has an image, name (e.g. "Cherry Muffin"), and price
+#### Scenario: Popular Foods section shows tabbed carousel
 
-  Scenario: Testimonials and Gallery section renders
-    Given the testimonials section is scrolled into view
-    Then the heading "Satisfied Customers" is visible
-    And at least one testimonial with author photo, name, title, and quote is shown
-    And a photo gallery grid with 4 images is displayed on the right
-    And a "More Galleries" button is visible
+- **GIVEN** the foods section is scrolled into view
+- **THEN** 4 category tabs (Breakfast, Lunch, Dinner, Drinks) are visible
+- **AND** the Breakfast tab is active by default
+- **AND** a carousel shows 4 dish cards in a 2×2 grid
+- **AND** each dish has an image, name, and price
 
-  Scenario: Events section renders
-    Given the events section is scrolled into view
-    Then the heading "Enjoy Our Events" is visible
-    And at least one event card with image, price, title, description, and checklist is shown
+#### Scenario: Food category switching works
 
-  Scenario: Book a Table CTA section renders
-    Given the book-a-table section is scrolled into view
-    Then the heading "Book A Table Now" is visible
-    And a "Book a table" CTA button is displayed
+- **GIVEN** the foods section is visible with Breakfast active
+- **WHEN** the user clicks the "Lunch" tab
+- **THEN** the carousel advances to the Lunch slide
+- **AND** the slide counter shows "2/4"
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then the heading "About Forkbite." is shown
-    And social media icon links (Instagram, Twitter, Facebook, LinkedIn, Pinterest, Dribbble) are visible
-    And "Projects" and "Services" link lists are displayed
-    And contact information (address, phone, email) is shown
-    And a link to "https://www.componentdock.com/" is present
+#### Scenario: Desserts section shows 4 items
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to an off-canvas hamburger menu
-    And multi-column grids stack vertically
-    And the food carousel adapts to single-column
-    And the footer columns stack vertically
+- **GIVEN** the desserts section is scrolled into view
+- **THEN** the heading "Popular Desserts" is visible
+- **AND** 4 dessert cards are displayed in a row
+- **AND** each card has an image, name (e.g. "Cherry Muffin"), and price
 
-  Scenario: Parallax effects on background sections
-    Given the testimonials/gallery and book-a-table sections exist
-    Then each has a fixed parallax background image
-    And a warm-toned overlay ensures text readability
-```
+#### Scenario: Testimonials and Gallery section renders
+
+- **GIVEN** the testimonials section is scrolled into view
+- **THEN** the heading "Satisfied Customers" is visible
+- **AND** at least one testimonial with author photo, name, title, and quote is shown
+- **AND** a photo gallery grid with 4 images is displayed on the right
+- **AND** a "More Galleries" button is visible
+
+#### Scenario: Events section renders
+
+- **GIVEN** the events section is scrolled into view
+- **THEN** the heading "Enjoy Our Events" is visible
+- **AND** at least one event card with image, price, title, description, and checklist is shown
+
+#### Scenario: Book a Table CTA section renders
+
+- **GIVEN** the book-a-table section is scrolled into view
+- **THEN** the heading "Book A Table Now" is visible
+- **AND** a "Book a table" CTA button is displayed
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** the heading "About Forkbite." is shown
+- **AND** social media icon links (Instagram, Twitter, Facebook, LinkedIn, Pinterest, Dribbble) are visible
+- **AND** "Projects" and "Services" link lists are displayed
+- **AND** contact information (address, phone, email) is shown
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to an off-canvas hamburger menu
+- **AND** multi-column grids stack vertically
+- **AND** the food carousel adapts to single-column
+- **AND** the footer columns stack vertically
+
+#### Scenario: Parallax effects on background sections
+
+- **GIVEN** the testimonials/gallery and book-a-table sections exist
+- **THEN** each has a fixed parallax background image
+- **AND** a warm-toned overlay ensures text readability
 
 ## Verification Checklist
 

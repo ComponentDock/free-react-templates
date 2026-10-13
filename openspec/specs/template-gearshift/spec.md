@@ -53,76 +53,88 @@ Recreation of ColorLib **Autoroad** — a car rental website template.
 9. **Blog** — 3-column blog cards: bg image, meta (date, author, comment count), heading link, excerpt
 10. **Footer** — dark bg (`#000`), 4 columns: About (description + social icons), Information links, Customer Support links, Contact info (address, phone, email), copyright line
 
-## Gherkin scenarios
+## Requirements
 
 ### Feature: Gearshift — Car Rental Template
 
 #### Scenario: Navbar renders all navigation links
-  Given the user loads the Gearshift homepage
-  Then the navbar displays the brand "Gearshift"
-  And navigation links "Home", "About", "Pricing", "Our Fleet", "Blog", "Contact" are visible
+
+- **GIVEN** the user loads the Gearshift homepage
+- **THEN** the navbar displays the brand "Gearshift"
+- **AND** navigation links "Home", "About", "Pricing", "Our Fleet", "Blog", "Contact" are visible
 
 #### Scenario: Hero section displays booking form
-  Given the user loads the homepage
-  Then the hero section shows the headline about renting a car
-  And a booking form with pick-up location, drop-off location, dates, and time fields is visible
-  And the "Search Vehicle" button is rendered in brand orange
+
+- **GIVEN** the user loads the homepage
+- **THEN** the hero section shows the headline about renting a car
+- **AND** a booking form with pick-up location, drop-off location, dates, and time fields is visible
+- **AND** the "Search Vehicle" button is rendered in brand orange
 
 #### Scenario: Search filter bar shows dropdown filters
-  Given the user scrolls to the search filter section
-  Then dropdowns for Model, Brand, Year, and Price Limit are visible
-  And a "Search" button is displayed with brand orange background
+
+- **GIVEN** the user scrolls to the search filter section
+- **THEN** dropdowns for Model, Brand, Year, and Price Limit are visible
+- **AND** a "Search" button is displayed with brand orange background
 
 #### Scenario: Services section displays four service cards
-  Given the user scrolls to the services section
-  Then 4 service cards are rendered: 24/7 Support, Locations, Reservation, Rental Cars
-  And each card has an icon, title, and short description
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 4 service cards are rendered: 24/7 Support, Locations, Reservation, Rental Cars
+- **AND** each card has an icon, title, and short description
 
 #### Scenario: Fleet section displays car cards in grid
-  Given the user scrolls to the car fleet section
-  Then car cards are displayed in a 4-column grid
-  And each card shows a car image, price with "From" and "/Day" labels, car name, and brand
-  And each card has "Book now" and "Details" buttons
+
+- **GIVEN** the user scrolls to the car fleet section
+- **THEN** car cards are displayed in a 4-column grid
+- **AND** each card shows a car image, price with "From" and "/Day" labels, car name, and brand
+- **AND** each card has "Book now" and "Details" buttons
 
 #### Scenario: How It Works section shows workflow steps
-  Given the user scrolls to the workflow section
-  Then 4 steps are displayed: Pick Destination, Select Term, Choose A Car, Enjoy The Ride
-  And each step has an icon, heading, and description text
-  And the section has a parallax background image with dark overlay
+
+- **GIVEN** the user scrolls to the workflow section
+- **THEN** 4 steps are displayed: Pick Destination, Select Term, Choose A Car, Enjoy The Ride
+- **AND** each step has an icon, heading, and description text
+- **AND** the section has a parallax background image with dark overlay
 
 #### Scenario: Testimonials carousel renders customer reviews
-  Given the user scrolls to the testimonials section
-  Then a carousel of testimonials is displayed
-  And each testimonial shows a circular user photo, quote, name, and position
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonials is displayed
+- **AND** each testimonial shows a circular user photo, quote, name, and position
 
 #### Scenario: About section shows split layout with CTA
-  Given the user scrolls to the about section
-  Then a split layout with image on left and text on right is displayed
-  And the heading "Choose A Perfect Car" is shown
-  And a "Search Vehicle" CTA button is present in brand orange
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a split layout with image on left and text on right is displayed
+- **AND** the heading "Choose A Perfect Car" is shown
+- **AND** a "Search Vehicle" CTA button is present in brand orange
 
 #### Scenario: Blog section displays three blog cards
-  Given the user scrolls to the blog section
-  Then 3 blog cards are displayed in a 3-column layout
-  And each card shows an image, meta info (date, author, comments), heading, and excerpt
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog cards are displayed in a 3-column layout
+- **AND** each card shows an image, meta info (date, author, comments), heading, and excerpt
 
 #### Scenario: Footer displays four columns with links
-  Given the user scrolls to the footer
-  Then the footer has a dark background
-  And 4 columns are visible: About (with social icons), Information links, Customer Support links, Contact info
-  And the copyright line includes a link to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** 4 columns are visible: About (with social icons), Information links, Customer Support links, Contact info
+- **AND** the copyright line includes a link to Component Dock
 
 #### Scenario: Brand color is applied consistently
-  Given any interactive element (buttons, icons, links)
-  Then the brand orange `#fc983c` is used for primary CTA buttons
-  And hover states transition from filled to outlined with orange text/border
+
+- **GIVEN** any interactive element (buttons, icons, links)
+- **THEN** the brand orange `#fc983c` is used for primary CTA buttons
+- **AND** hover states transition from filled to outlined with orange text/border
 
 #### Scenario: Responsive layout collapses to single column
-  Given the user views on a mobile viewport
-  Then the navbar collapses to a hamburger menu
-  And car cards stack vertically
-  And the hero booking form stacks below the headline
-  And the about section stacks image above text
+
+- **GIVEN** the user views on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** car cards stack vertically
+- **AND** the hero booking form stacks below the headline
+- **AND** the about section stacks image above text
 
 ## Verification checklist
 

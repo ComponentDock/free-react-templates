@@ -56,87 +56,98 @@ Extracted from `https://preview.colorlib.com/theme/onedu/assets/css/style.css`:
 9. **Footer** — Dark footer with 4 columns: logo + description + social icons, Subjects links, Community links, Company links, newsletter subscribe form
 10. **Footer Bottom** — Copyright line
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Pedagogy — Education Landing Page
 
-Scenario: Navbar renders with logo, search, navigation, and sign-in
-Given the page loads
-Then a sticky header is visible at the top
-And the logo is displayed on the left
-And a pill-shaped search input is present with placeholder "Search courses.."
-And nav links "Home", "Browse Courses", "About", "Blog", "Contact" are visible
-And a cart icon with badge is visible
-And a "Sign In" button is visible
+#### Scenario: Navbar renders with logo, search, navigation, and sign-in
 
-Scenario: Hero section displays headline and search
-Given the page loads
-Then the hero section shows a background image
-And the heading "Learn new skills online with top educators" is visible
-And subtext "Learn 100% online with world-class universities and industry experts" is visible
-And a search form with an orange search button is visible
+- **GIVEN** the page loads
+- **THEN** a sticky header is visible at the top
+- **AND** the logo is displayed on the left
+- **AND** a pill-shaped search input is present with placeholder "Search courses.."
+- **AND** nav links "Home", "Browse Courses", "About", "Blog", "Contact" are visible
+- **AND** a cart icon with badge is visible
+- **AND** a "Sign In" button is visible
 
-Scenario: About section shows course description
-Given the page loads
-Then the about section has a light blue background (#EFFDFF)
-And an image is displayed on the left
-And the heading "The world's largest selection of online courses" is visible
-And a description paragraph is displayed
-And a "Browse Courses" CTA button is visible
+#### Scenario: Hero section displays headline and search
 
-Scenario: Popular courses carousel displays course cards
-Given the page loads
-Then the "Students are viewing" section is visible
-And at least 4 course cards are rendered
-And each card shows a course image with a price badge
-And each card shows a course title and author name
-And each card shows a 5-star rating with review count
+- **GIVEN** the page loads
+- **THEN** the hero section shows a background image
+- **AND** the heading "Learn new skills online with top educators" is visible
+- **AND** subtext "Learn 100% online with world-class universities and industry experts" is visible
+- **AND** a search form with an orange search button is visible
 
-Scenario: Featured courses section displays course cards
-Given the page loads
-Then the "The world's largest selection of courses" section is visible
-And a subtitle "Choose from 130,000 online video courses..." is visible
-And course cards are rendered in a carousel
+#### Scenario: About section shows course description
 
-Scenario: Become an Instructor section displays features
-Given the page loads
-Then the "Become an Instructor" section is visible
-And at least 3 feature items with checkmark icons are displayed
-And a "Become a Instructor" CTA button is visible
-And a "Watch Video" link with play icon is visible
+- **GIVEN** the page loads
+- **THEN** the about section has a light blue background (#EFFDFF)
+- **AND** an image is displayed on the left
+- **AND** the heading "The world's largest selection of online courses" is visible
+- **AND** a description paragraph is displayed
+- **AND** a "Browse Courses" CTA button is visible
 
-Scenario: Testimonials section shows student feedback
-Given the page loads
-Then the "Student says about us" heading is visible
-And at least 2 testimonial slides are present
-And each slide shows a student avatar, quote text, name, and role
+#### Scenario: Popular courses carousel displays course cards
 
-Scenario: Categories grid shows course categories
-Given the page loads
-Then the "Explore top categories" heading is visible
-And at least 4 category cards are displayed
-And each card shows an image, category title, and "View Courses" link
+- **GIVEN** the page loads
+- **THEN** the "Students are viewing" section is visible
+- **AND** at least 4 course cards are rendered
+- **AND** each card shows a course image with a price badge
+- **AND** each card shows a course title and author name
+- **AND** each card shows a 5-star rating with review count
 
-Scenario: Footer renders with columns and newsletter
-Given the page loads
-Then the footer is visible with a dark background
-And a logo and description are shown in the first column
-And social media icons (Twitter, Facebook, Pinterest) are visible
-And "Subjects", "Community", "Company" link columns are displayed
-And a newsletter subscribe form with email input and "Subscribe" button is present
-And a footer bottom copyright line is visible
+#### Scenario: Featured courses section displays course cards
 
-Scenario: Footer links to Component Dock
-Given the page loads
-Then the footer contains a link to https://www.componentdock.com/
-And the link text references "Component Dock"
+- **GIVEN** the page loads
+- **THEN** the "The world's largest selection of courses" section is visible
+- **AND** a subtitle "Choose from 130,000 online video courses..." is visible
+- **AND** course cards are rendered in a carousel
 
-Scenario: Responsive layout adapts to mobile
-Given the page is viewed on a viewport width of 375px
-Then the navbar collapses to a hamburger menu
-And the hero section stacks vertically
-And course cards stack in a single column
-And the footer columns stack vertically
+#### Scenario: Become an Instructor section displays features
+
+- **GIVEN** the page loads
+- **THEN** the "Become an Instructor" section is visible
+- **AND** at least 3 feature items with checkmark icons are displayed
+- **AND** a "Become a Instructor" CTA button is visible
+- **AND** a "Watch Video" link with play icon is visible
+
+#### Scenario: Testimonials section shows student feedback
+
+- **GIVEN** the page loads
+- **THEN** the "Student says about us" heading is visible
+- **AND** at least 2 testimonial slides are present
+- **AND** each slide shows a student avatar, quote text, name, and role
+
+#### Scenario: Categories grid shows course categories
+
+- **GIVEN** the page loads
+- **THEN** the "Explore top categories" heading is visible
+- **AND** at least 4 category cards are displayed
+- **AND** each card shows an image, category title, and "View Courses" link
+
+#### Scenario: Footer renders with columns and newsletter
+
+- **GIVEN** the page loads
+- **THEN** the footer is visible with a dark background
+- **AND** a logo and description are shown in the first column
+- **AND** social media icons (Twitter, Facebook, Pinterest) are visible
+- **AND** "Subjects", "Community", "Company" link columns are displayed
+- **AND** a newsletter subscribe form with email input and "Subscribe" button is present
+- **AND** a footer bottom copyright line is visible
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references "Component Dock"
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the page is viewed on a viewport width of 375px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero section stacks vertically
+- **AND** course cards stack in a single column
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

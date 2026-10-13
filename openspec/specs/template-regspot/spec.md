@@ -58,65 +58,75 @@ The template presents **two registration form cards** stacked vertically:
 - Same form fields and button
 - Different illustration: person at desk with flowers
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Regspot template behaviour
+
 Feature: Regspot registration form
 
-  Background:
-    Given the user navigates to the Regspot template page
-    And the page has a light gray (#f5f5f5) background
+Background:
+- **GIVEN** the user navigates to the Regspot template page
+- **AND** the page has a light gray (#f5f5f5) background
 
-  Scenario: Card A renders with correct layout
-    Then a white card is displayed centered on the page
-    And the card contains a "Sign up" heading
-    And the form fields are on the left side of the card
-    And an illustration is on the right side of the card
+#### Scenario: Card A renders with correct layout
 
-  Scenario: Card A displays all form fields with icons
-    Then there is a text input with a person icon and placeholder "Your Name"
-    And there is a text input with an envelope icon and placeholder "Your Email"
-    And there is a password input with a lock icon and placeholder "Password"
-    And there is a password input with a lock icon and placeholder "Repeat your password"
+- **THEN** a white card is displayed centered on the page
+- **AND** the card contains a "Sign up" heading
+- **AND** the form fields are on the left side of the card
+- **AND** an illustration is on the right side of the card
 
-  Scenario: Card A shows terms checkbox
-    Then there is a checkbox with label "I agree all statements in Terms of service"
-    And "Terms of service" is rendered as an underlined link
+#### Scenario: Card A displays all form fields with icons
 
-  Scenario: Card A has register button and login link
-    Then there is a blue "Register" button left-aligned below the form
-    And there is an "I am already member" link right-aligned below the form
+- **THEN** there is a text input with a person icon and placeholder "Your Name"
+- **AND** there is a text input with an envelope icon and placeholder "Your Email"
+- **AND** there is a password input with a lock icon and placeholder "Password"
+- **AND** there is a password input with a lock icon and placeholder "Repeat your password"
 
-  Scenario: Card A register button is clickable
-    When the user clicks the "Register" button
-    Then the form submission is triggered
+#### Scenario: Card A shows terms checkbox
 
-  Scenario: Card B renders with reversed layout
-    Then a second white card is displayed below Card A
-    And the card contains a "Sign up" heading
-    And an illustration is on the left side of the card
-    And the form fields are on the right side of the card
+- **THEN** there is a checkbox with label "I agree all statements in Terms of service"
+- **AND** "Terms of service" is rendered as an underlined link
 
-  Scenario: Card B displays all form fields with icons
-    Then Card B has a text input with a person icon and placeholder "Your Name"
-    And Card B has a text input with an envelope icon and placeholder "Your Email"
-    And Card B has a password input with a lock icon and placeholder "Password"
-    And Card B has a password input with a lock icon and placeholder "Repeat your password"
+#### Scenario: Card A has register button and login link
 
-  Scenario: Card B has register button and login link
-    Then Card B has a blue "Register" button
-    And Card B has an "I am already member" link
+- **THEN** there is a blue "Register" button left-aligned below the form
+- **AND** there is an "I am already member" link right-aligned below the form
 
-  Scenario: Responsive layout
-    When the viewport is less than 768px wide
-    Then both cards stack to single-column layout
-    And form fields and illustrations are full-width
+#### Scenario: Card A register button is clickable
 
-  Scenario: Accessibility
-    Then all form inputs have associated labels
-    And the page is navigable by keyboard
-    And the heading hierarchy is correct (h1 > h2)
-```
+- **WHEN** the user clicks the "Register" button
+- **THEN** the form submission is triggered
+
+#### Scenario: Card B renders with reversed layout
+
+- **THEN** a second white card is displayed below Card A
+- **AND** the card contains a "Sign up" heading
+- **AND** an illustration is on the left side of the card
+- **AND** the form fields are on the right side of the card
+
+#### Scenario: Card B displays all form fields with icons
+
+- **THEN** Card B has a text input with a person icon and placeholder "Your Name"
+- **AND** Card B has a text input with an envelope icon and placeholder "Your Email"
+- **AND** Card B has a password input with a lock icon and placeholder "Password"
+- **AND** Card B has a password input with a lock icon and placeholder "Repeat your password"
+
+#### Scenario: Card B has register button and login link
+
+- **THEN** Card B has a blue "Register" button
+- **AND** Card B has an "I am already member" link
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport is less than 768px wide
+- **THEN** both cards stack to single-column layout
+- **AND** form fields and illustrations are full-width
+
+#### Scenario: Accessibility
+
+- **THEN** all form inputs have associated labels
+- **AND** the page is navigable by keyboard
+- **AND** the heading hierarchy is correct (h1 > h2)
 
 ## Verification checklist
 

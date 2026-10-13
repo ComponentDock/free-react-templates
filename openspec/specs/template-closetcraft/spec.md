@@ -32,83 +32,80 @@ Recreation of the ColorLib **Shionhouse** template as a React 19 + Vite + Tailwi
 4. **Collection** — "collection houses our first-ever" heading, background image with dark overlay, description text, "Shop Now" button.
 5. **Footer** — Logo, about text, quick links, contact info, social icons (Pinterest, Twitter, Facebook), copyright with Component Dock link.
 
-## Gherkin scenarios
+## Requirements
 
 ### Nav
 
-```gherkin
 Feature: ClosetCraft Navigation
 
-  Scenario: Nav displays logo and links
-    Given the user is on the ClosetCraft page
-    Then the logo is visible
-    And navigation links are visible: Home, Shop, Pages, About, Blog, Contact
-    And search and cart icons are on the right
-    And the header is sticky on scroll
+#### Scenario: Nav displays logo and links
 
-  Scenario: Mobile menu opens offcanvas
-    Given the user is on a mobile viewport
-    When the hamburger menu is clicked
-    Then an offcanvas menu slides in with navigation links
-```
+- **GIVEN** the user is on the ClosetCraft page
+- **THEN** the logo is visible
+- **AND** navigation links are visible: Home, Shop, Pages, About, Blog, Contact
+- **AND** search and cart icons are on the right
+- **AND** the header is sticky on scroll
+
+#### Scenario: Mobile menu opens offcanvas
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the hamburger menu is clicked
+- **THEN** an offcanvas menu slides in with navigation links
 
 ### Hero
 
-```gherkin
 Feature: ClosetCraft Hero
 
-  Scenario: Hero carousel displays slides
-    Given the user is on the ClosetCraft page
-    Then a full-width hero carousel is visible with 3 slides
-    And each slide has a dark overlay on background image
-    And each slide shows the heading "fashion changing always" in white serif font
-    And each slide contains a "Shop Now" purple button
-```
+#### Scenario: Hero carousel displays slides
+
+- **GIVEN** the user is on the ClosetCraft page
+- **THEN** a full-width hero carousel is visible with 3 slides
+- **AND** each slide has a dark overlay on background image
+- **AND** each slide shows the heading "fashion changing always" in white serif font
+- **AND** each slide contains a "Shop Now" purple button
 
 ### PopularItems
 
-```gherkin
 Feature: ClosetCraft Popular Items
 
-  Scenario: New arrival section displays products
-    Given the user scrolls to the popular items section
-    Then a "new arrival" section title is displayed
-    And 4 product cards are shown in a row
-    And each card has an image with hover overlay
-    And each card shows a product title and price
-```
+#### Scenario: New arrival section displays products
+
+- **GIVEN** the user scrolls to the popular items section
+- **THEN** a "new arrival" section title is displayed
+- **AND** 4 product cards are shown in a row
+- **AND** each card has an image with hover overlay
+- **AND** each card shows a product title and price
 
 ### Collection
 
-```gherkin
 Feature: ClosetCraft Collection
 
-  Scenario: Collection section renders
-    Given the user scrolls to the collection section
-    Then a "collection houses our first-ever" heading is displayed
-    And a background image with dark overlay is shown
-    And description text is present
-    And a "Shop Now" purple button is available
-```
+#### Scenario: Collection section renders
+
+- **GIVEN** the user scrolls to the collection section
+- **THEN** a "collection houses our first-ever" heading is displayed
+- **AND** a background image with dark overlay is shown
+- **AND** description text is present
+- **AND** a "Shop Now" purple button is available
 
 ### Footer
 
-```gherkin
 Feature: ClosetCraft Footer
 
-  Scenario: Footer displays widgets
-    Given the user scrolls to the footer
-    Then the footer has a logo and about text
-    And quick links are displayed
-    And contact info is shown
-    And social icons (Pinterest, Twitter, Facebook) are present
-    And a copyright bar is at the bottom
+#### Scenario: Footer displays widgets
 
-  Scenario: Footer links to Component Dock
-    Given the footer is rendered
-    Then the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
-    And no ColorLib references appear in the app code
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a logo and about text
+- **AND** quick links are displayed
+- **AND** contact info is shown
+- **AND** social icons (Pinterest, Twitter, Facebook) are present
+- **AND** a copyright bar is at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is rendered
+- **THEN** the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
+- **AND** no ColorLib references appear in the app code
 
 ## Verification checklist
 

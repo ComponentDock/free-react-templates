@@ -46,63 +46,69 @@ Recreation of ColorLib **Bootstrap Sidebar 02** template as a React 19 + Vite + 
    - Heading: "Sidebar #02" — large, bold, dark text.
    - Body text: Two paragraphs of lorem ipsum text — standard paragraph styling with relaxed line-height.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Sidecraft Sidebar Template
 
-```gherkin
 Feature: Sidecraft — Sidebar Navigation Website Template
-  As a user visiting the Sidecraft website
-  I want to see a clean sidebar-based layout
-  So that I can navigate the site via a persistent sidebar with newsletter signup
+As a user visiting the Sidecraft website
+I want to see a clean sidebar-based layout
+So that I can navigate the site via a persistent sidebar with newsletter signup
 
-  Scenario: Sidebar displays logo and navigation
-    Given I am on the Sidecraft homepage
-    Then I see a fixed left sidebar with purple background
-    And I see the logo "Splash" at the top of the sidebar
-    And I see navigation links: Home, About, Pages, Portfolio, Contact
-    And Home and Pages have dropdown arrows indicating submenus
-    And all sidebar text is white
+#### Scenario: Sidebar displays logo and navigation
 
-  Scenario: Sidebar shows newsletter subscription
-    Given I am on the Sidecraft homepage
-    Then I see a "Subscribe for newsletter" section in the sidebar
-    And I see an email input field with placeholder "Enter Email Address"
-    And the input has a white background with rounded corners
+- **GIVEN** I am on the Sidecraft homepage
+- **THEN** I see a fixed left sidebar with purple background
+- **AND** I see the logo "Splash" at the top of the sidebar
+- **AND** I see navigation links: Home, About, Pages, Portfolio, Contact
+- **AND** Home and Pages have dropdown arrows indicating submenus
+- **AND** all sidebar text is white
 
-  Scenario: Sidebar displays copyright at bottom
-    Given I am on the Sidecraft homepage
-    Then I see copyright text at the bottom of the sidebar
-    And the copyright text is white and small
+#### Scenario: Sidebar shows newsletter subscription
 
-  Scenario: Main content shows page heading and body text
-    Given I am on the Sidecraft homepage
-    Then I see the heading "Sidebar #02" in the main content area
-    And I see paragraphs of body text below the heading
-    And the content area has a light gray background
+- **GIVEN** I am on the Sidecraft homepage
+- **THEN** I see a "Subscribe for newsletter" section in the sidebar
+- **AND** I see an email input field with placeholder "Enter Email Address"
+- **AND** the input has a white background with rounded corners
 
-  Scenario: Hamburger toggle is visible
-    Given I am on the Sidecraft homepage
-    Then I see a purple circular hamburger button at the sidebar boundary
-    And on mobile it toggles sidebar visibility
+#### Scenario: Sidebar displays copyright at bottom
 
-  Scenario: Sidebar navigation supports dropdowns
-    Given I click the "Home" link in the sidebar
-    Then a dropdown submenu appears below it
-    Given I click the "Pages" link in the sidebar
-    Then a dropdown submenu appears below it
+- **GIVEN** I am on the Sidecraft homepage
+- **THEN** I see copyright text at the bottom of the sidebar
+- **AND** the copyright text is white and small
 
-  Scenario: Newsletter form accepts email
-    Given I am on the Sidecraft homepage
-    When I enter an email address in the newsletter input
-    And I submit the form
-    Then the form processes the subscription
+#### Scenario: Main content shows page heading and body text
 
-  Scenario: Responsive layout adapts to mobile
-    Given I view the site on a mobile viewport
-    Then the sidebar collapses and is toggled by the hamburger button
-    And the main content fills the full width
-```
+- **GIVEN** I am on the Sidecraft homepage
+- **THEN** I see the heading "Sidebar #02" in the main content area
+- **AND** I see paragraphs of body text below the heading
+- **AND** the content area has a light gray background
+
+#### Scenario: Hamburger toggle is visible
+
+- **GIVEN** I am on the Sidecraft homepage
+- **THEN** I see a purple circular hamburger button at the sidebar boundary
+- **AND** on mobile it toggles sidebar visibility
+
+#### Scenario: Sidebar navigation supports dropdowns
+
+- **GIVEN** I click the "Home" link in the sidebar
+- **THEN** a dropdown submenu appears below it
+- **GIVEN** I click the "Pages" link in the sidebar
+- **THEN** a dropdown submenu appears below it
+
+#### Scenario: Newsletter form accepts email
+
+- **GIVEN** I am on the Sidecraft homepage
+- **WHEN** I enter an email address in the newsletter input
+- **AND** I submit the form
+- **THEN** the form processes the subscription
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** I view the site on a mobile viewport
+- **THEN** the sidebar collapses and is toggled by the hamburger button
+- **AND** the main content fills the full width
 
 ## Verification checklist
 

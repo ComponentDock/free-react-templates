@@ -87,125 +87,105 @@ Extracted from the live preview CSS (`css/style.css` at
 | `--color-focus`    | `#000`    | Input focus border           |
 | `--color-link`     | `#007bff` | Default link blue            |
 
-## Gherkin Requirements
+## Requirements
 
-### Background
+### Feature: SeekLume template behaviour
+
+**Background**
 
 The page consists of a sticky navbar at the top and a content area below.
 The search overlay is hidden by default and activated via the search icon.
 
-### Scenario: Navbar renders with brand and navigation links
+#### Scenario: Navbar renders with brand and navigation links
 
-```gherkin
-Given the page is loaded
-When I look at the navbar
-Then I should see a "Brand" heading on the left
-And I should see "Home", "About", "Contact" links on the right
-And I should see a search icon (magnifying glass) in the navbar
-```
+- **GIVEN** the page is loaded
+- **WHEN** I look at the navbar
+- **THEN** I should see a "Brand" heading on the left
+- **AND** I should see "Home", "About", "Contact" links on the right
+- **AND** I should see a search icon (magnifying glass) in the navbar
 
-### Scenario: Navbar is sticky with shadow
+#### Scenario: Navbar is sticky with shadow
 
-```gherkin
-Given the page is loaded
-When I scroll down
-Then the navbar should remain fixed at the top
-And the navbar should have a bottom border (#dae0e5)
-And the navbar should have a subtle box-shadow
-```
+- **GIVEN** the page is loaded
+- **WHEN** I scroll down
+- **THEN** the navbar should remain fixed at the top
+- **AND** the navbar should have a bottom border (#dae0e5)
+- **AND** the navbar should have a subtle box-shadow
 
-### Scenario: Content area shows instruction text
+#### Scenario: Content area shows instruction text
 
-```gherkin
-Given the page is loaded
-When the search overlay is not active
-Then I should see a centered paragraph
-And the paragraph should say "Please click the search icon toggle button top right"
-```
+- **GIVEN** the page is loaded
+- **WHEN** the search overlay is not active
+- **THEN** I should see a centered paragraph
+- **AND** the paragraph should say "Please click the search icon toggle button top right"
 
-### Scenario: Clicking search icon opens full-screen overlay
+#### Scenario: Clicking search icon opens full-screen overlay
 
-```gherkin
-Given the page is loaded
-When I click the search icon in the navbar
-Then a full-screen white overlay should appear
-And the overlay should cover the entire viewport
-And I should see "PRESS [ESC] TO CLOSE" text at the top center
-And I should see a close (X) button in the top-right corner
-And I should see a search input with placeholder "Type here to search"
-And the search input should be focused automatically
-```
+- **GIVEN** the page is loaded
+- **WHEN** I click the search icon in the navbar
+- **THEN** a full-screen white overlay should appear
+- **AND** the overlay should cover the entire viewport
+- **AND** I should see "PRESS [ESC] TO CLOSE" text at the top center
+- **AND** I should see a close (X) button in the top-right corner
+- **AND** I should see a search input with placeholder "Type here to search"
+- **AND** the search input should be focused automatically
 
-### Scenario: Overlay has correct styling
+#### Scenario: Overlay has correct styling
 
-```gherkin
-Given the search overlay is open
-When I inspect the overlay
-Then the background should be solid white (#ffffff)
-And the overlay should fill the full viewport height and width
-And the overlay z-index should be above the navbar
-And the "PRESS [ESC] TO CLOSE" text should be uppercase, 11px, letter-spacing 0.1rem
-And the close button should be positioned at top-right (20px, 20px)
-```
+- **GIVEN** the search overlay is open
+- **WHEN** I inspect the overlay
+- **THEN** the background should be solid white (#ffffff)
+- **AND** the overlay should fill the full viewport height and width
+- **AND** the overlay z-index should be above the navbar
+- **AND** the "PRESS [ESC] TO CLOSE" text should be uppercase, 11px, letter-spacing 0.1rem
+- **AND** the close button should be positioned at top-right (20px, 20px)
 
-### Scenario: Search input has underline-only styling
+#### Scenario: Search input has underline-only styling
 
-```gherkin
-Given the search overlay is open
-When I look at the search input
-Then it should have no visible border except a 1px bottom border (#ccc)
-And it should have no border-radius (sharp corners)
-And it should be 57px tall
-And the placeholder text should be "Type here to search"
-And the placeholder color should be #6c757d
-```
+- **GIVEN** the search overlay is open
+- **WHEN** I look at the search input
+- **THEN** it should have no visible border except a 1px bottom border (#ccc)
+- **AND** it should have no border-radius (sharp corners)
+- **AND** it should be 57px tall
+- **AND** the placeholder text should be "Type here to search"
+- **AND** the placeholder color should be #6c757d
 
-### Scenario: Search input focus changes border color
+#### Scenario: Search input focus changes border color
 
-```gherkin
-Given the search overlay is open
-When I click into the search input
-Then the bottom border should change from #ccc to #000
-And there should be no box-shadow on focus
-```
+- **GIVEN** the search overlay is open
+- **WHEN** I click into the search input
+- **THEN** the bottom border should change from #ccc to #000
+- **AND** there should be no box-shadow on focus
 
-### Scenario: ESC key closes the overlay
+#### Scenario: ESC key closes the overlay
 
-```gherkin
-Given the search overlay is open
-When I press the Escape key
-Then the overlay should fade out and become hidden
-And the navbar should be visible again
-And the page content should be accessible
-```
+- **GIVEN** the search overlay is open
+- **WHEN** I press the Escape key
+- **THEN** the overlay should fade out and become hidden
+- **AND** the navbar should be visible again
+- **AND** the page content should be accessible
 
-### Scenario: Close button closes the overlay
+#### Scenario: Close button closes the overlay
 
-```gherkin
-Given the search overlay is open
-When I click the X close button
-Then the overlay should fade out and become hidden
-And the navbar should be visible again
-```
+- **GIVEN** the search overlay is open
+- **WHEN** I click the X close button
+- **THEN** the overlay should fade out and become hidden
+- **AND** the navbar should be visible again
 
-### Scenario: Overlay has smooth transition
+#### Scenario: Overlay has smooth transition
 
-```gherkin
-Given the page is loaded
-When I click the search icon to open the overlay
-Then the overlay should transition with 0.3s ease
-And when I close it, the overlay should transition with 0.3s ease
-```
+- **GIVEN** the page is loaded
+- **WHEN** I click the search icon to open the overlay
+- **THEN** the overlay should transition with 0.3s ease
+- **AND** when I close it, the overlay should transition with 0.3s ease
 
-### Scenario: Responsive behavior on mobile
+#### Scenario: Responsive behavior on mobile
 
-```gherkin
-Given the page is loaded on a mobile viewport (< 768px)
-When I look at the navbar
-Then the "Brand" heading should be centered
-And the nav links should still be visible
-And the search overlay should still fill the full viewport
-```
+- **GIVEN** the page is loaded on a mobile viewport (< 768px)
+- **WHEN** I look at the navbar
+- **THEN** the "Brand" heading should be centered
+- **AND** the nav links should still be visible
+- **AND** the search overlay should still fill the full viewport
 
 ## Verification Checklist
 

@@ -42,96 +42,109 @@ businesses.
 | Transitions                    | `all 0.3s ease 0s`                                | Consistent hover transitions                              |
 | Icons                          | Linearicons (`lnr-*`)                             | Used in service features section                          |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: CoinPulse — Cryptocurrency Landing Page
 
-Scenario: Page loads with hero banner
-Given the user opens the CoinPulse page
-Then the navigation bar should be visible at the top with logo and menu items
-And the hero section should display "Currently Purchase Rate" headline
-And the hero should show a Bitcoin price value (e.g. "$12,356")
-And a "Buy Bitcoin" CTA button should be visible in the hero
+#### Scenario: Page loads with hero banner
 
-Scenario: Navigation menu items
-Given the page is loaded
-Then the navigation should contain links for "Home", "Convert", "Feature", "Price", "Blog"
-And the "Home" link should be the active/current item
-And clicking a nav link should scroll to the corresponding section
+- **GIVEN** the user opens the CoinPulse page
+- **THEN** the navigation bar should be visible at the top with logo and menu items
+- **AND** the hero section should display "Currently Purchase Rate" headline
+- **AND** the hero should show a Bitcoin price value (e.g. "$12,356")
+- **AND** a "Buy Bitcoin" CTA button should be visible in the hero
 
-Scenario: Currency converter section
-Given the user scrolls to the converter section
-Then a "The Currency Converter" heading should be visible
-And there should be 4 input fields for currency conversion
-And a "Calculate" action button should be visible
-And the section should have a gradient orange background
+#### Scenario: Navigation menu items
 
-Scenario: Services section with three cards
-Given the user scrolls to the simple services section
-Then 3 service cards should be visible in a row
-And the cards should be titled "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
-And each card should have an icon/image, title, and description text
+- **GIVEN** the page is loaded
+- **THEN** the navigation should contain links for "Home", "Convert", "Feature", "Price", "Blog"
+- **AND** the "Home" link should be the active/current item
+- **AND** clicking a nav link should scroll to the corresponding section
 
-Scenario: About section with split layout
-Given the user scrolls to the about section
-Then the left side should show an image carousel or slider
-And the right side should show "Exchange Bitcoin is not that tough Anymore" heading
-And a descriptive paragraph should be below the heading
-And the section should have a dark background (#222)
+#### Scenario: Currency converter section
 
-Scenario: Feature services grid
-Given the user scrolls to the feature/services section
-Then a "Why choose us during purchase bitcoin" heading should be visible
-And 6 service items should be displayed in a 3-column grid
-And each item should have a Linearicons icon, title, and description
-And the items should be: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
+- **GIVEN** the user scrolls to the converter section
+- **THEN** a "The Currency Converter" heading should be visible
+- **AND** there should be 4 input fields for currency conversion
+- **AND** a "Calculate" action button should be visible
+- **AND** the section should have a gradient orange background
 
-Scenario: Bitcoin stats section
-Given the user scrolls to the stats section
-Then a chart image should be visible on the left side
-And "Ups and Downs of Bitcoin (Realtime)" heading should be on the right
-And a "View Details" CTA button should be visible
-And the section should have a light background (#f9f9ff)
+#### Scenario: Services section with three cards
 
-Scenario: Call-to-action banner
-Given the user scrolls to the call-to-action section
-Then a "Huge Transaction in last Week" heading should be visible
-And a "Buy Bitcoin Now!" button should be visible
-And the section should have a gradient orange background
+- **GIVEN** the user scrolls to the simple services section
+- **THEN** 3 service cards should be visible in a row
+- **AND** the cards should be titled "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
+- **AND** each card should have an icon/image, title, and description text
 
-Scenario: Pricing section with three cards
-Given the user scrolls to the pricing section
-Then a "Purchase whatever you want" heading should be visible
-And 3 pricing cards should be displayed for Ripple, Ethereum, Bitcoin
-And each card should show a price ($7999, $9999, $5999)
-And each card should have a "Get Started" button
-And the featured/active card should have an orange gradient background on hover
+#### Scenario: About section with split layout
 
-Scenario: Blog section with three posts
-Given the user scrolls to the blog section
-Then a "Latest Posts from our Blog" heading should be visible
-And 3 blog post cards should be displayed
-And each card should have a thumbnail image, title, excerpt, and author info
-And the author info should show name and date
+- **GIVEN** the user scrolls to the about section
+- **THEN** the left side should show an image carousel or slider
+- **AND** the right side should show "Exchange Bitcoin is not that tough Anymore" heading
+- **AND** a descriptive paragraph should be below the heading
+- **AND** the section should have a dark background (#222)
 
-Scenario: Footer with links and social icons
-Given the user scrolls to the footer
-Then the footer should have a dark background (#04091e)
-And it should contain widget columns with navigation links
-And it should have social media icon links
-And a "Component Dock" link should be present (per conventions)
+#### Scenario: Feature services grid
 
-Scenario: Responsive layout on mobile
-Given the user opens the page on a viewport width less than 768px
-Then the navigation should collapse to a hamburger menu
-And all sections should stack vertically
-And pricing cards should stack vertically
-And service grids should adapt to single-column layout
+- **GIVEN** the user scrolls to the feature/services section
+- **THEN** a "Why choose us during purchase bitcoin" heading should be visible
+- **AND** 6 service items should be displayed in a 3-column grid
+- **AND** each item should have a Linearicons icon, title, and description
+- **AND** the items should be: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
 
-Scenario: Smooth scroll navigation
-Given the user clicks a navigation menu item
-Then the page should smoothly scroll to the target section
-And the clicked nav item should become active/highlighted
+#### Scenario: Bitcoin stats section
+
+- **GIVEN** the user scrolls to the stats section
+- **THEN** a chart image should be visible on the left side
+- **AND** "Ups and Downs of Bitcoin (Realtime)" heading should be on the right
+- **AND** a "View Details" CTA button should be visible
+- **AND** the section should have a light background (#f9f9ff)
+
+#### Scenario: Call-to-action banner
+
+- **GIVEN** the user scrolls to the call-to-action section
+- **THEN** a "Huge Transaction in last Week" heading should be visible
+- **AND** a "Buy Bitcoin Now!" button should be visible
+- **AND** the section should have a gradient orange background
+
+#### Scenario: Pricing section with three cards
+
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** a "Purchase whatever you want" heading should be visible
+- **AND** 3 pricing cards should be displayed for Ripple, Ethereum, Bitcoin
+- **AND** each card should show a price ($7999, $9999, $5999)
+- **AND** each card should have a "Get Started" button
+- **AND** the featured/active card should have an orange gradient background on hover
+
+#### Scenario: Blog section with three posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a "Latest Posts from our Blog" heading should be visible
+- **AND** 3 blog post cards should be displayed
+- **AND** each card should have a thumbnail image, title, excerpt, and author info
+- **AND** the author info should show name and date
+
+#### Scenario: Footer with links and social icons
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer should have a dark background (#04091e)
+- **AND** it should contain widget columns with navigation links
+- **AND** it should have social media icon links
+- **AND** a "Component Dock" link should be present (per conventions)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a viewport width less than 768px
+- **THEN** the navigation should collapse to a hamburger menu
+- **AND** all sections should stack vertically
+- **AND** pricing cards should stack vertically
+- **AND** service grids should adapt to single-column layout
+
+#### Scenario: Smooth scroll navigation
+
+- **GIVEN** the user clicks a navigation menu item
+- **THEN** the page should smoothly scroll to the target section
+- **AND** the clicked nav item should become active/highlighted
 
 ## Verification checklist
 

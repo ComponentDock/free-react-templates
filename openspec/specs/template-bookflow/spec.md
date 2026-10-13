@@ -31,7 +31,7 @@ Recreation of ColorLib "Colorlib Wizard 26" — a 3-step meeting-room booking wi
 | Button border-radius         | `5px`                               | Action buttons                            |
 | Date select border-radius    | `5px`                               | `.form-row-date select`                   |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-Step Meeting Room Booking Wizard
 

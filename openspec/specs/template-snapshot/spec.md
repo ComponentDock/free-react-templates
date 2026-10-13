@@ -67,87 +67,87 @@ The Credo template is a clean, warm photographer portfolio:
 8. **Contact** — Golden (#fab95b) bg, centered "Say Hello" heading in white, form (first name, full name, email, subject, textarea, "Send Message" dark button)
 9. **Footer** — Light gray bg, 4-column layout: Snapshot info + address, Services links, Resources links, Quick Links + Follow Me social icons (Twitter, Facebook, Instagram, Dribbble, LinkedIn), copyright with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Snapshot Photographer Portfolio
 
 #### Scenario: Navbar renders with navigation links
 
-- GIVEN the user visits the Snapshot page
-- THEN the header displays the brand name "Snapshot"
-- AND navigation links are present: Home, About, Services, Photography, Blog, Contact
-- AND the navbar is sticky (fixed to top on scroll)
-- AND a hamburger menu icon is visible for mobile viewports
+- **GIVEN** the user visits the Snapshot page
+- **THEN** the header displays the brand name "Snapshot"
+- **AND** navigation links are present: Home, About, Services, Photography, Blog, Contact
+- **AND** the navbar is sticky (fixed to top on scroll)
+- **AND** a hamburger menu icon is visible for mobile viewports
 
 #### Scenario: Hero displays full-viewport cover with portrait
 
-- GIVEN the hero section is visible
-- THEN a full-viewport background image is displayed with an overlay
-- AND centered white text shows the photographer's name and role "Photographer | Speaker"
-- AND a descriptive paragraph is shown below the subtitle
-- AND a "Contact Me" CTA button with golden (#fab95b) background and pill shape (border-radius 30px) is present
-- AND a portrait/face image is positioned at the center-right of the section
+- **GIVEN** the hero section is visible
+- **THEN** a full-viewport background image is displayed with an overlay
+- **AND** centered white text shows the photographer's name and role "Photographer | Speaker"
+- **AND** a descriptive paragraph is shown below the subtitle
+- **AND** a "Contact Me" CTA button with golden (#fab95b) background and pill shape (border-radius 30px) is present
+- **AND** a portrait/face image is positioned at the center-right of the section
 
 #### Scenario: Services section shows 4 service items
 
-- GIVEN the services section is visible
-- THEN a centered "Services" heading with golden underline is displayed
-- AND 4 service items are shown in a 2-column grid
-- AND each service item has a golden circle icon, heading, and description
-- AND the services include: Wedding, Events, Conferences, Culture
-- AND the section background is light gray (#f8f9fa)
+- **GIVEN** the services section is visible
+- **THEN** a centered "Services" heading with golden underline is displayed
+- **AND** 4 service items are shown in a 2-column grid
+- **AND** each service item has a golden circle icon, heading, and description
+- **AND** the services include: Wedding, Events, Conferences, Culture
+- **AND** the section background is light gray (#f8f9fa)
 
 #### Scenario: About Me section displays skill progress bars
 
-- GIVEN the about section is visible
-- THEN a heading "About Me" is displayed
-- AND an image appears on the left side with paragraphs below
-- AND 4 progress bars appear on the right side with golden (#fab95b) fill
-- AND the progress bars show: Photographer (89%), Wedding (75%), Events (94%), Conferences (94%)
-- AND skill labels are displayed above each progress bar
+- **GIVEN** the about section is visible
+- **THEN** a heading "About Me" is displayed
+- **AND** an image appears on the left side with paragraphs below
+- **AND** 4 progress bars appear on the right side with golden (#fab95b) fill
+- **AND** the progress bars show: Photographer (89%), Wedding (75%), Events (94%), Conferences (94%)
+- **AND** skill labels are displayed above each progress bar
 
 #### Scenario: Photography gallery shows masonry grid
 
-- GIVEN the photography section is visible
-- THEN a centered "My Photography" heading is displayed
-- AND a 3-column masonry grid of 12 images is shown
-- AND each image shows a search icon overlay on hover
-- AND clicking an image opens it in a lightbox/fancybox view
+- **GIVEN** the photography section is visible
+- **THEN** a centered "My Photography" heading is displayed
+- **AND** a 3-column masonry grid of 12 images is shown
+- **AND** each image shows a search icon overlay on hover
+- **AND** clicking an image opens it in a lightbox/fancybox view
 
 #### Scenario: Testimonials carousel displays client quotes
 
-- GIVEN the testimonials section is visible
-- THEN a golden (#fab95b) background section is displayed
-- AND a centered "What Client Are Saying" heading in white is shown
-- AND a carousel of 3 blockquotes is present
-- AND each blockquote has quote text and a citation with author name
-- AND authors include Graig Smith, Carl Spencer, and Ryan Peters
+- **GIVEN** the testimonials section is visible
+- **THEN** a golden (#fab95b) background section is displayed
+- **AND** a centered "What Client Are Saying" heading in white is shown
+- **AND** a carousel of 3 blockquotes is present
+- **AND** each blockquote has quote text and a citation with author name
+- **AND** authors include Graig Smith, Carl Spencer, and Ryan Peters
 
 #### Scenario: Blog section shows 3 blog cards
 
-- GIVEN the blog section is visible
-- THEN a centered "Blog Posts" heading is displayed on light gray background
-- AND 3 blog cards are shown in a 3-column grid
-- AND each card has an image, white card body with title, date, excerpt, and "Read More" link
-- AND all cards share the same placeholder content
+- **GIVEN** the blog section is visible
+- **THEN** a centered "Blog Posts" heading is displayed on light gray background
+- **AND** 3 blog cards are shown in a 3-column grid
+- **AND** each card has an image, white card body with title, date, excerpt, and "Read More" link
+- **AND** all cards share the same placeholder content
 
 #### Scenario: Contact form collects user message
 
-- GIVEN the contact section is visible
-- THEN a golden (#fab95b) background section is displayed
-- AND a centered "Say Hello" heading in white is shown
-- AND a form with first name, full name, email, subject, and message fields is present
-- AND all inputs have pill-shaped borders (border-radius 30px) and transparent background
-- AND a "Send Message" button with dark (#343a40) background is present
+- **GIVEN** the contact section is visible
+- **THEN** a golden (#fab95b) background section is displayed
+- **AND** a centered "Say Hello" heading in white is shown
+- **AND** a form with first name, full name, email, subject, and message fields is present
+- **AND** all inputs have pill-shaped borders (border-radius 30px) and transparent background
+- **AND** a "Send Message" button with dark (#343a40) background is present
 
 #### Scenario: Footer shows four-column layout
 
-- GIVEN the footer is visible
-- THEN a light gray background footer is displayed
-- AND the first column shows the brand name "Snapshot" with description and address
-- AND three link columns are present: Services, Resources, Quick Links
-- AND social media icons (Twitter, Facebook, Instagram, Dribbble, LinkedIn) are shown
-- AND a copyright line with "Component Dock" link is displayed
+- **GIVEN** the footer is visible
+- **THEN** a light gray background footer is displayed
+- **AND** the first column shows the brand name "Snapshot" with description and address
+- **AND** three link columns are present: Services, Resources, Quick Links
+- **AND** social media icons (Twitter, Facebook, Instagram, Dribbble, LinkedIn) are shown
+- **AND** a copyright line with "Component Dock" link is displayed
 
 ## Verification Checklist
 

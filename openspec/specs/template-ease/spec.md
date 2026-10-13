@@ -35,90 +35,101 @@ Dark, elegant hotel booking template with:
 - Light gray testimonial and gallery sections
 - Footer with dark background, multiple columns (logo, services, quick links, contact)
 
-## Gherkin requirements
+## Requirements
 
 ### Hero Section
 
-Scenario: Full-viewport hero with booking form
-Given the user visits the home page
-Then a full-viewport hero section is displayed with a dark overlay background
-And the heading reads "Most Relaxing Place"
-And a booking form is visible with Check-In, Check-Out, Rooms, and Guests fields
-And a "Book Now" submit button is present
+#### Scenario: Full-viewport hero with booking form
+
+- **GIVEN** the user visits the home page
+- **THEN** a full-viewport hero section is displayed with a dark overlay background
+- **AND** the heading reads "Most Relaxing Place"
+- **AND** a booking form is visible with Check-In, Check-Out, Rooms, and Guests fields
+- **AND** a "Book Now" submit button is present
 
 ### About Section
 
-Scenario: Hotel description with service icons
-Given the user scrolls past the hero
-Then an about section displays the heading "Unwind A Hotel Booking Agency"
-And a descriptive paragraph is shown
-And a "Learn More" link is visible
+#### Scenario: Hotel description with service icons
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** an about section displays the heading "Unwind A Hotel Booking Agency"
+- **AND** a descriptive paragraph is shown
+- **AND** a "Learn More" link is visible
 
 ### Services Section
 
-Scenario: Six service cards in a grid
-Given the user views the services area
-Then six service cards are displayed: Free Wifi, Easy Booking, Restaurant, Swimming Pool, Beauty & Health, Help & Support
-And each card has a gold (#c5a880) icon, heading, and description
-And cards have a white background with subtle shadow on hover
+#### Scenario: Six service cards in a grid
+
+- **GIVEN** the user views the services area
+- **THEN** six service cards are displayed: Free Wifi, Easy Booking, Restaurant, Swimming Pool, Beauty & Health, Help & Support
+- **AND** each card has a gold (#c5a880) icon, heading, and description
+- **AND** cards have a white background with subtle shadow on hover
 
 ### Call to Action / Intro Section
 
-Scenario: Parallax banner with vacation heading
-Given the user scrolls to the intro section
-Then a full-width parallax image section is shown
-And the heading reads "Find the Best Hotel in Your Next Vacation"
-And a CTA button is present
+#### Scenario: Parallax banner with vacation heading
+
+- **GIVEN** the user scrolls to the intro section
+- **THEN** a full-width parallax image section is shown
+- **AND** the heading reads "Find the Best Hotel in Your Next Vacation"
+- **AND** a CTA button is present
 
 ### Featured Rooms Section
 
-Scenario: Room cards with pricing
-Given the user views the featured rooms
-Then the heading reads "Featured Rooms"
-And room cards are displayed with images, names, and pricing
-And a "Take A Tour" button links to more details
+#### Scenario: Room cards with pricing
+
+- **GIVEN** the user views the featured rooms
+- **THEN** the heading reads "Featured Rooms"
+- **AND** room cards are displayed with images, names, and pricing
+- **AND** a "Take A Tour" button links to more details
 
 ### Restaurant & Bar Section
 
-Scenario: Restaurant showcase
-Given the user scrolls to the restaurant area
-Then the heading reads "Restaurant & Bar"
-And a descriptive paragraph is shown
-And food/drink imagery is displayed
+#### Scenario: Restaurant showcase
+
+- **GIVEN** the user scrolls to the restaurant area
+- **THEN** the heading reads "Restaurant & Bar"
+- **AND** a descriptive paragraph is shown
+- **AND** food/drink imagery is displayed
 
 ### Video Section
 
-Scenario: Dark parallax video background
-Given the user reaches the video section
-Then a dark overlay section with background image is displayed
-And the section has a 600px height with parallax effect
+#### Scenario: Dark parallax video background
+
+- **GIVEN** the user reaches the video section
+- **THEN** a dark overlay section with background image is displayed
+- **AND** the section has a 600px height with parallax effect
 
 ### Testimonials Section
 
-Scenario: Guest testimonials
-Given the user views the testimonials
-Then the heading reads "Happy Guests"
-And testimonial cards are displayed with guest names and quotes
-And the section has a light gray (#f8f9fa) background
+#### Scenario: Guest testimonials
+
+- **GIVEN** the user views the testimonials
+- **THEN** the heading reads "Happy Guests"
+- **AND** testimonial cards are displayed with guest names and quotes
+- **AND** the section has a light gray (#f8f9fa) background
 
 ### Counter Section
 
-Scenario: Statistics display
-Given the user reaches the counter section
-Then numerical counters are displayed (e.g., number of rooms, guests, staff)
-And counters animate on scroll into view
+#### Scenario: Statistics display
+
+- **GIVEN** the user reaches the counter section
+- **THEN** numerical counters are displayed (e.g., number of rooms, guests, staff)
+- **AND** counters animate on scroll into view
 
 ### Gallery Section
 
-Scenario: Photo gallery grid
-Given the user views the gallery
-Then a grid of hotel photos is displayed
-And images are responsive with consistent spacing
+#### Scenario: Photo gallery grid
+
+- **GIVEN** the user views the gallery
+- **THEN** a grid of hotel photos is displayed
+- **AND** images are responsive with consistent spacing
 
 ### Footer
 
-Scenario: Multi-column footer
-Given the user reaches the page bottom
-Then a dark footer is displayed with the brand name "Ease Hotel Booking"
-And columns include: Services, Quick Links, and Have a Questions? (contact form)
-And the footer links to https://www.componentdock.com/
+#### Scenario: Multi-column footer
+
+- **GIVEN** the user reaches the page bottom
+- **THEN** a dark footer is displayed with the brand name "Ease Hotel Booking"
+- **AND** columns include: Services, Quick Links, and Have a Questions? (contact form)
+- **AND** the footer links to https://www.componentdock.com/

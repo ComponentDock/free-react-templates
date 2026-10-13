@@ -92,93 +92,85 @@ Tailwind CSS 4 + TypeScript.
 - Background image removed, body height auto
 - Navigation stacks vertically, right-aligned
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Wizard renders Step 1 on load
-```gherkin
-Given the user opens the RuneForm page
-Then the wizard shows "USER PROFILE" as the step title
-And the step indicator shows "1 / 3"
-And 6 form fields are visible in a 2-column grid
-And "NEXT" button is visible
-```
+### Feature: RuneForm template behaviour
 
-### Scenario: Navigate to Step 2
-```gherkin
-Given the user is on Step 1
-When the user fills all 6 fields on Step 1
-And clicks "NEXT"
-Then the wizard transitions to Step 2
-And the title changes to "RESIDENTIAL ADDRESS"
-And the step indicator shows "2 / 3"
-```
+#### Scenario: Wizard renders Step 1 on load
 
-### Scenario: Navigate back to Step 1 from Step 2
-```gherkin
-Given the user is on Step 2
-When the user clicks "PREVIOUS"
-Then the wizard returns to Step 1
-And the previously entered data is preserved
-```
+- **GIVEN** the user opens the RuneForm page
+- **THEN** the wizard shows "USER PROFILE" as the step title
+- **AND** the step indicator shows "1 / 3"
+- **AND** 6 form fields are visible in a 2-column grid
+- **AND** "NEXT" button is visible
 
-### Scenario: Navigate to Step 3 (category selection)
-```gherkin
-Given the user is on Step 2
-When the user fills all 6 fields on Step 2
-And clicks "NEXT"
-Then the wizard shows Step 3
-And the title changes to "WHAT ARE YOU DOING?"
-And 6 category cards are displayed in a 3-column grid
-```
+#### Scenario: Navigate to Step 2
 
-### Scenario: Select a category
-```gherkin
-Given the user is on Step 3
-When the user clicks on "Programming"
-Then the Programming card heading turns blue (#3377c0)
-And other cards remain gray (#b3b3b3)
-```
+- **GIVEN** the user is on Step 1
+- **WHEN** the user fills all 6 fields on Step 1
+- **AND** clicks "NEXT"
+- **THEN** the wizard transitions to Step 2
+- **AND** the title changes to "RESIDENTIAL ADDRESS"
+- **AND** the step indicator shows "2 / 3"
 
-### Scenario: Validation prevents advancing
-```gherkin
-Given the user is on Step 1
-And some fields are empty
-When the user clicks "NEXT"
-Then the user cannot advance to Step 2
-And a validation message is shown: "You must fill all fields to continue"
-```
+#### Scenario: Navigate back to Step 1 from Step 2
 
-### Scenario: Step indicator updates correctly
-```gherkin
-Given the user navigates forward through all 3 steps
-Then the step indicator shows "1 / 3" on Step 1
-And "2 / 3" on Step 2
-And "3 / 3" on Step 3
-```
+- **GIVEN** the user is on Step 2
+- **WHEN** the user clicks "PREVIOUS"
+- **THEN** the wizard returns to Step 1
+- **AND** the previously entered data is preserved
 
-### Scenario: Responsive layout on mobile
-```gherkin
-Given the user opens the page on a viewport ≤767px wide
-Then form fields stack into a single column
-And category grid shows 2 columns
-And navigation buttons stack vertically
-```
+#### Scenario: Navigate to Step 3 (category selection)
 
-### Scenario: Select dropdown on Country field
-```gherkin
-Given the user is on Step 2
-When the user clicks the Country dropdown
-Then options for "United States", "United Kingdom", "Viet Nam" are shown
-And a chevron-down icon is visible on the right side of the dropdown
-```
+- **GIVEN** the user is on Step 2
+- **WHEN** the user fills all 6 fields on Step 2
+- **AND** clicks "NEXT"
+- **THEN** the wizard shows Step 3
+- **AND** the title changes to "WHAT ARE YOU DOING?"
+- **AND** 6 category cards are displayed in a 3-column grid
 
-### Scenario: Date picker on Date of Birth field
-```gherkin
-Given the user is on Step 1
-When the user clicks the Date of Birth field
-Then a date picker appears
-And the user can select a date
-```
+#### Scenario: Select a category
+
+- **GIVEN** the user is on Step 3
+- **WHEN** the user clicks on "Programming"
+- **THEN** the Programming card heading turns blue (#3377c0)
+- **AND** other cards remain gray (#b3b3b3)
+
+#### Scenario: Validation prevents advancing
+
+- **GIVEN** the user is on Step 1
+- **AND** some fields are empty
+- **WHEN** the user clicks "NEXT"
+- **THEN** the user cannot advance to Step 2
+- **AND** a validation message is shown: "You must fill all fields to continue"
+
+#### Scenario: Step indicator updates correctly
+
+- **GIVEN** the user navigates forward through all 3 steps
+- **THEN** the step indicator shows "1 / 3" on Step 1
+- **AND** "2 / 3" on Step 2
+- **AND** "3 / 3" on Step 3
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a viewport ≤767px wide
+- **THEN** form fields stack into a single column
+- **AND** category grid shows 2 columns
+- **AND** navigation buttons stack vertically
+
+#### Scenario: Select dropdown on Country field
+
+- **GIVEN** the user is on Step 2
+- **WHEN** the user clicks the Country dropdown
+- **THEN** options for "United States", "United Kingdom", "Viet Nam" are shown
+- **AND** a chevron-down icon is visible on the right side of the dropdown
+
+#### Scenario: Date picker on Date of Birth field
+
+- **GIVEN** the user is on Step 1
+- **WHEN** the user clicks the Date of Birth field
+- **THEN** a date picker appears
+- **AND** the user can select a date
 
 ## Verification Checklist
 

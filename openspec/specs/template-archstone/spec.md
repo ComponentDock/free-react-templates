@@ -126,109 +126,125 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
    - Description paragraph
    - "Contact me!" yellow CTA button
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Sidebar Navigation
 
-  Scenario: Sidebar displays logo and navigation links
-    Given the page loads
-    Then the sidebar should display the logo "Archstone"
-    And the sidebar should show navigation links: Home, Project, About, Services, Blog, Contact
+#### Scenario: Sidebar displays logo and navigation links
 
-  Scenario: Active nav link is highlighted
-    Given the page loads on the home view
-    Then the "Home" link should be visually highlighted with the brand yellow color
+- **GIVEN** the page loads
+- **THEN** the sidebar should display the logo "Archstone"
+- **AND** the sidebar should show navigation links: Home, Project, About, Services, Blog, Contact
 
-  Scenario: Sidebar is collapsible on mobile
-    Given the viewport is less than 768px wide
-    Then the sidebar should be hidden by default
-    And a hamburger toggle button should be visible
-    When the user clicks the hamburger toggle
-    Then the sidebar should slide in from the left
+#### Scenario: Active nav link is highlighted
+
+- **GIVEN** the page loads on the home view
+- **THEN** the "Home" link should be visually highlighted with the brand yellow color
+
+#### Scenario: Sidebar is collapsible on mobile
+
+- **GIVEN** the viewport is less than 768px wide
+- **THEN** the sidebar should be hidden by default
+- **AND** a hamburger toggle button should be visible
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the sidebar should slide in from the left
 
 ### Feature: Hero Slider
 
-  Scenario: Hero displays a full-screen background image slider
-    Given the page loads
-    Then the hero section should display a full-width background image
-    And the image should have a dark overlay
-    And centered text should be visible on top of the overlay
+#### Scenario: Hero displays a full-screen background image slider
 
-  Scenario: Hero text has yellow badge styling
-    Given the hero section is visible
-    Then the heading text container should have a yellow (#FFC300) background
-    And the heading text should be white
+- **GIVEN** the page loads
+- **THEN** the hero section should display a full-width background image
+- **AND** the image should have a dark overlay
+- **AND** centered text should be visible on top of the overlay
 
-  Scenario: Hero has a call-to-action button
-    Given the hero section is visible
-    Then a "View Project" button should be displayed
-    And the button should be styled with yellow background and white text
+#### Scenario: Hero text has yellow badge styling
+
+- **GIVEN** the hero section is visible
+- **THEN** the heading text container should have a yellow (#FFC300) background
+- **AND** the heading text should be white
+
+#### Scenario: Hero has a call-to-action button
+
+- **GIVEN** the hero section is visible
+- **THEN** a "View Project" button should be displayed
+- **AND** the button should be styled with yellow background and white text
 
 ### Feature: About Section
 
-  Scenario: About section displays who-we-are content
-    Given the user scrolls to the About section
-    Then a "Who we are" heading should be visible
-    And two paragraphs of descriptive text should be shown
-    And a background image should be displayed on the left
+#### Scenario: About section displays who-we-are content
 
-  Scenario: About section shows value propositions
-    Given the About section is visible
-    Then 3 value cards should be displayed in a row
-    And the first card should read "We are passionate"
-    And the second card should read "Honest Dependable"
-    And the third card should read "Always Improving"
+- **GIVEN** the user scrolls to the About section
+- **THEN** a "Who we are" heading should be visible
+- **AND** two paragraphs of descriptive text should be shown
+- **AND** a background image should be displayed on the left
+
+#### Scenario: About section shows value propositions
+
+- **GIVEN** the About section is visible
+- **THEN** 3 value cards should be displayed in a row
+- **AND** the first card should read "We are passionate"
+- **AND** the second card should read "Honest Dependable"
+- **AND** the third card should read "Always Improving"
 
 ### Feature: Services Section
 
-  Scenario: Services displays expertise features
-    Given the user scrolls to the Services section
-    Then a "Here are some of my expertise" heading should be visible
-    And 4 icon features should be listed: General Constructing, Pre-Construction Design, Building & Modeling, Construction Management
+#### Scenario: Services displays expertise features
 
-  Scenario: Services displays image service cards
-    Given the Services section is visible
-    Then 5 image service cards should be displayed in a grid
-    And each card should have a background image and a title overlay
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a "Here are some of my expertise" heading should be visible
+- **AND** 4 icon features should be listed: General Constructing, Pre-Construction Design, Building & Modeling, Construction Management
+
+#### Scenario: Services displays image service cards
+
+- **GIVEN** the Services section is visible
+- **THEN** 5 image service cards should be displayed in a grid
+- **AND** each card should have a background image and a title overlay
 
 ### Feature: Counters Section
 
-  Scenario: Counters display animated statistics
-    Given the user scrolls to the Counters section
-    Then 4 statistics should be visible: Projects, Employees, Constructor, Partners
-    And each statistic should have a circular icon above it
-    And each statistic should show an animated count-up number
+#### Scenario: Counters display animated statistics
 
-  Scenario: Counters section has a parallax background
-    Given the Counters section is visible
-    Then a full-width background image should be displayed
-    And a dark overlay should be applied over the image
+- **GIVEN** the user scrolls to the Counters section
+- **THEN** 4 statistics should be visible: Projects, Employees, Constructor, Partners
+- **AND** each statistic should have a circular icon above it
+- **AND** each statistic should show an animated count-up number
+
+#### Scenario: Counters section has a parallax background
+
+- **GIVEN** the Counters section is visible
+- **THEN** a full-width background image should be displayed
+- **AND** a dark overlay should be applied over the image
 
 ### Feature: Recent Work (Portfolio)
 
-  Scenario: Portfolio displays project grid
-    Given the user scrolls to the Recent Work section
-    Then 6 portfolio items should be displayed in a masonry-style grid
-    And each item should show a background image, title, and category
+#### Scenario: Portfolio displays project grid
 
-  Scenario: Portfolio items show overlay on hover
-    Given a portfolio item is hovered
-    Then an overlay should appear with the project title, category, and social icons (share, view count, like count)
+- **GIVEN** the user scrolls to the Recent Work section
+- **THEN** 6 portfolio items should be displayed in a masonry-style grid
+- **AND** each item should show a background image, title, and category
+
+#### Scenario: Portfolio items show overlay on hover
+
+- **GIVEN** a portfolio item is hovered
+- **THEN** an overlay should appear with the project title, category, and social icons (share, view count, like count)
 
 ### Feature: Blog Section
 
-  Scenario: Blog displays recent entries
-    Given the user scrolls to the Blog section
-    Then 3 blog entries should be displayed in a row
-    And each entry should show an image, date, category, comment count, title, and description
+#### Scenario: Blog displays recent entries
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 3 blog entries should be displayed in a row
+- **AND** each entry should show an image, date, category, comment count, title, and description
 
 ### Feature: Contact Section
 
-  Scenario: Contact section shows CTA
-    Given the user scrolls to the Contact section
-    Then a "Get in Touch!" heading should be visible
-    And a description paragraph should be shown
-    And a "Contact me!" yellow CTA button should be displayed
+#### Scenario: Contact section shows CTA
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a "Get in Touch!" heading should be visible
+- **AND** a description paragraph should be shown
+- **AND** a "Contact me!" yellow CTA button should be displayed
 
 ## Verification Checklist
 

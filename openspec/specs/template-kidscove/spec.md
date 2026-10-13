@@ -39,54 +39,70 @@ Recreation of ColorLib's **Kindergarten** template as a React 19 + Vite + Tailwi
 7. **Testimonials** — Testimonial carousel with quotes and avatars, on dark bg
 8. **Footer** — Quick Links, About Us columns, social icons, Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: KidsCove template behaviour
+
 Feature: KidsCove Navigation
-  Scenario: Navbar shows logo and links
-    Given the user visits the KidsCove homepage
-    Then the navbar shows "KidsCove" logo
-    And links: Home, Class, About, Blog, Elements, Contact
-    And an "Enroll Now" CTA button is visible
+
+#### Scenario: Navbar shows logo and links
+
+- **GIVEN** the user visits the KidsCove homepage
+- **THEN** the navbar shows "KidsCove" logo
+- **AND** links: Home, Class, About, Blog, Elements, Contact
+- **AND** an "Enroll Now" CTA button is visible
 
 Feature: KidsCove Hero
-  Scenario: Hero slider displays headline
-    Given the user visits the homepage
-    Then a slider with "Quality Learning" heading is shown
-    And an "Explore Classes" button is visible
+
+#### Scenario: Hero slider displays headline
+
+- **GIVEN** the user visits the homepage
+- **THEN** a slider with "Quality Learning" heading is shown
+- **AND** an "Explore Classes" button is visible
 
 Feature: KidsCove About
-  Scenario: About section shows features
-    Given the user scrolls to the about section
-    Then "Welcome to our KidsCove" heading is displayed
-    And 3 feature items are shown with icons
+
+#### Scenario: About section shows features
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** "Welcome to our KidsCove" heading is displayed
+- **AND** 3 feature items are shown with icons
 
 Feature: KidsCove Classes
-  Scenario: Classes offered displayed
-    Given the user scrolls to classes
-    Then 4 class cards are shown on dark background
-    And a "More Classes" link exists
+
+#### Scenario: Classes offered displayed
+
+- **GIVEN** the user scrolls to classes
+- **THEN** 4 class cards are shown on dark background
+- **AND** a "More Classes" link exists
 
 Feature: KidsCove Drawing Event
-  Scenario: Drawing event section
-    Given the user scrolls to the event section
-    Then "Drawing Event" heading and "View Event" link are visible
+
+#### Scenario: Drawing event section
+
+- **GIVEN** the user scrolls to the event section
+- **THEN** "Drawing Event" heading and "View Event" link are visible
 
 Feature: KidsCove Teachers
-  Scenario: Teacher profiles shown
-    Given the user scrolls to teachers
-    Then instructor profiles with circular avatars and names appear
+
+#### Scenario: Teacher profiles shown
+
+- **GIVEN** the user scrolls to teachers
+- **THEN** instructor profiles with circular avatars and names appear
 
 Feature: KidsCove Testimonials
-  Scenario: Testimonial carousel works
-    Given the user scrolls to testimonials
-    Then a carousel with quotes and avatars is displayed
+
+#### Scenario: Testimonial carousel works
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** a carousel with quotes and avatars is displayed
 
 Feature: KidsCove Footer
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" branded "Component Dock" exists
-```
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" branded "Component Dock" exists
 
 ## Verification checklist
 

@@ -54,67 +54,75 @@ Extracted from the live preview CSS (`style.css`) at https://preview.colorlib.co
 3. Two-column text section ("The Story" / "Dreamers" with "More…" CTA)
 4. Footer (copyright + logo + social links)
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Daybeam Portfolio Template
 
   Background:
-    Given the user visits the Daybeam portfolio page
-    Then the page loads with a light gray (#E2E0E0) background
+- **GIVEN** the user visits the Daybeam portfolio page
+- **THEN** the page loads with a light gray (#E2E0E0) background
 
-  Scenario: Header renders with logo and navigation
-    Given the page is loaded
-    Then the header displays a logo image on the left
-    And the navigation menu shows links: Home, About, Portfolio, Blog, Contact
-    And a search toggle icon is visible on the right side of the nav
-    And the nav items use Montserrat font with color #a1a1a1
+#### Scenario: Header renders with logo and navigation
 
-  Scenario: Search toggle opens search overlay
-    Given the header is visible
-    When the user clicks the search toggle icon
-    Then a search input field appears with placeholder "Search ..."
-    And the search overlay has background #E2E0E0
+- **GIVEN** the page is loaded
+- **THEN** the header displays a logo image on the left
+- **AND** the navigation menu shows links: Home, About, Portfolio, Blog, Contact
+- **AND** a search toggle icon is visible on the right side of the nav
+- **AND** the nav items use Montserrat font with color #a1a1a1
 
-  Scenario: Portfolio filter buttons render
-    Given the portfolio section is visible
-    Then filter buttons are displayed: All, Post, Image, Video, Extern
-    And the "All" button is active by default with brand color #FD3137
-    And inactive buttons have color #191919
-    And a thin separator border (#e2dfd9) appears between filter buttons
+#### Scenario: Search toggle opens search overlay
 
-  Scenario: Portfolio grid displays items
-    Given the filter buttons are visible
-    Then a 3-column masonry grid displays portfolio items
-    And each item shows an image placeholder with a text overlay (e.g. "CLOCK", "BAG")
-    And the overlay text uses brand color #FD3137
-    And the portfolio section has background #FAF6F6
+- **GIVEN** the header is visible
+- **WHEN** the user clicks the search toggle icon
+- **THEN** a search input field appears with placeholder "Search ..."
+- **AND** the search overlay has background #E2E0E0
 
-  Scenario: Filter buttons filter portfolio items
-    Given the portfolio grid shows all items
-    When the user clicks "Post" filter button
-    Then only post-type items are visible
-    And the "Post" button becomes active (brand color #FD3137)
-    And the "All" button returns to inactive state
+#### Scenario: Portfolio filter buttons render
 
-  Scenario: Two-column text section renders
-    Given the portfolio grid is visible
-    Then a two-column layout appears below the grid
-    And the left column shows "The Story" heading with paragraph text
-    And the right column shows "Dreamers" heading with paragraph text
-    And the right column contains a "More…" button/link
+- **GIVEN** the portfolio section is visible
+- **THEN** filter buttons are displayed: All, Post, Image, Video, Extern
+- **AND** the "All" button is active by default with brand color #FD3137
+- **AND** inactive buttons have color #191919
+- **AND** a thin separator border (#e2dfd9) appears between filter buttons
 
-  Scenario: Footer renders with three sections
-    Given the page is scrolled to the bottom
-    Then the footer displays copyright text on the left
-    And a logo image is centered in the footer
-    And social links (Twitter, Linkedin, Dribbble, Instagram) appear on the right
-    And the footer links to Component Dock (https://www.componentdock.com/)
+#### Scenario: Portfolio grid displays items
 
-  Scenario: Responsive layout adapts to mobile
-    Given the user views the page on a 375px wide viewport
-    Then the navigation menu collapses into a hamburger menu
-    And the portfolio grid switches to a single-column layout
-    And the two-column text section stacks vertically
+- **GIVEN** the filter buttons are visible
+- **THEN** a 3-column masonry grid displays portfolio items
+- **AND** each item shows an image placeholder with a text overlay (e.g. "CLOCK", "BAG")
+- **AND** the overlay text uses brand color #FD3137
+- **AND** the portfolio section has background #FAF6F6
+
+#### Scenario: Filter buttons filter portfolio items
+
+- **GIVEN** the portfolio grid shows all items
+- **WHEN** the user clicks "Post" filter button
+- **THEN** only post-type items are visible
+- **AND** the "Post" button becomes active (brand color #FD3137)
+- **AND** the "All" button returns to inactive state
+
+#### Scenario: Two-column text section renders
+
+- **GIVEN** the portfolio grid is visible
+- **THEN** a two-column layout appears below the grid
+- **AND** the left column shows "The Story" heading with paragraph text
+- **AND** the right column shows "Dreamers" heading with paragraph text
+- **AND** the right column contains a "More…" button/link
+
+#### Scenario: Footer renders with three sections
+
+- **GIVEN** the page is scrolled to the bottom
+- **THEN** the footer displays copyright text on the left
+- **AND** a logo image is centered in the footer
+- **AND** social links (Twitter, Linkedin, Dribbble, Instagram) appear on the right
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** the navigation menu collapses into a hamburger menu
+- **AND** the portfolio grid switches to a single-column layout
+- **AND** the two-column text section stacks vertically
 
 ## Verification checklist
 

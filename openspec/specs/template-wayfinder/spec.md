@@ -59,85 +59,94 @@ Recreation of ColorLib "Colorlib Wizard 22" — a multi-step travel booking form
 | Confirmation value font-size | `18px` | `.inner .table-responsive tbody td` |
 | Confirmation value font-weight | `700` | `.inner .table-responsive tbody td` |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-Step Travel Booking Wizard (Split Layout)
 
 #### Scenario: Page Load — Split Panel Layout
-  Given the wizard page is loaded
-  Then a white card is centered on a full-page background image
-  And the card has a left image panel (66.61% width) and a right form panel
-  And the form panel displays heading "Form Wizard" (36px, weight 800, #333)
-  And subtitle "Nostrud exercitation commodo consequat." (16px, weight 600, #666)
-  And the step indicator shows 3 numbered circles (1, 2, 3) connected by lines
+
+- **GIVEN** the wizard page is loaded
+- **THEN** a white card is centered on a full-page background image
+- **AND** the card has a left image panel (66.61% width) and a right form panel
+- **AND** the form panel displays heading "Form Wizard" (36px, weight 800, #333)
+- **AND** subtitle "Nostrud exercitation commodo consequat." (16px, weight 600, #666)
+- **AND** the step indicator shows 3 numbered circles (1, 2, 3) connected by lines
 
 #### Scenario: Step 1 — Personal Information
-  Given the wizard form is loaded
-  When step 1 is displayed
-  Then the step 1 circle is highlighted blue (#56a3f2)
-  And the following fields are displayed:
+
+- **GIVEN** the wizard form is loaded
+- **WHEN** step 1 is displayed
+- **THEN** the step 1 circle is highlighted blue (#56a3f2)
+- **AND** the following fields are displayed:
     - First Name (text input, placeholder "First Name")
     - Last Name (text input, placeholder "Last Name")
     - Phone Number (text input, placeholder "Phone Number")
     - Email (email input, placeholder "Email")
-  And First Name and Last Name are side-by-side (50% each)
-  And Phone Number and Email are side-by-side (50% each)
-  And a blue "Next" button (160px × 50px, #56a3f2) is displayed
+- **AND** First Name and Last Name are side-by-side (50% each)
+- **AND** Phone Number and Email are side-by-side (50% each)
+- **AND** a blue "Next" button (160px × 50px, #56a3f2) is displayed
 
 #### Scenario: Step 1 to Step 2 Navigation
-  Given the user has filled the personal information fields
-  When the user clicks "Next"
-  Then step 2 is displayed
-  And the step indicator shows step 1 as done (blue), step 2 as active (blue)
-  And a "Previous" button appears (or the previous button becomes visible)
+
+- **GIVEN** the user has filled the personal information fields
+- **WHEN** the user clicks "Next"
+- **THEN** step 2 is displayed
+- **AND** the step indicator shows step 1 as done (blue), step 2 as active (blue)
+- **AND** a "Previous" button appears (or the previous button becomes visible)
 
 #### Scenario: Step 2 — Travel Details
-  Given step 2 is displayed
-  Then the following fields are displayed:
+
+- **GIVEN** step 2 is displayed
+- **THEN** the following fields are displayed:
     - Location (select dropdown, full width, options: United States, United Kingdom, Viet Nam)
     - Date (text input with datepicker, placeholder "15 / Jan / 2018")
     - Time (select dropdown, options: "7:00am - 18:00pm", "9:00am - 21:00pm", "10:00am - 22:00pm", "12:00am - 24:00pm")
-  And Location is full-width
-  And Date and Time are side-by-side
+- **AND** Location is full-width
+- **AND** Date and Time are side-by-side
 
 #### Scenario: Step 2 Navigation Back
-  Given the user is on step 2
-  When the user clicks "Previous"
-  Then step 1 is displayed again with previously entered values preserved
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Previous"
+- **THEN** step 1 is displayed again with previously entered values preserved
 
 #### Scenario: Step 2 to Step 3 Navigation
-  Given the user is on step 2
-  When the user clicks "Next"
-  Then step 3 (confirmation) is displayed
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Next"
+- **THEN** step 3 (confirmation) is displayed
 
 #### Scenario: Step 3 — Confirmation Summary
-  Given step 3 is displayed
-  Then a summary table is shown with border (#e5e5e5) and rounded corners (5px)
-  And the table displays the following rows:
+
+- **GIVEN** step 3 is displayed
+- **THEN** a summary table is shown with border (#e5e5e5) and rounded corners (5px)
+- **AND** the table displays the following rows:
     - Full Name: <first name> <last name>
     - Phone: <phone number>
     - Email: <email>
     - Travel Location: <selected location>
     - Date: <selected date>
     - Time: <selected time>
-  And table labels (th) are in gray (#666, 15px, weight 600)
-  And table values (td) are in dark (#333, 18px, weight 700)
-  And rows have spacing (padding-bottom: 18px)
+- **AND** table labels (th) are in gray (#666, 15px, weight 600)
+- **AND** table values (td) are in dark (#333, 18px, weight 700)
+- **AND** rows have spacing (padding-bottom: 18px)
 
 #### Scenario: Progress Indicator
-  Given the wizard form is loaded
-  Then a horizontal step bar is displayed above the form
-  And three step circles are shown (1, 2, 3)
-  And circles are 45px, connected by 30px gray lines (#e5e5e5, 2px height)
-  And the current step circle is blue (#56a3f2)
-  And completed step circles also show blue background
+
+- **GIVEN** the wizard form is loaded
+- **THEN** a horizontal step bar is displayed above the form
+- **AND** three step circles are shown (1, 2, 3)
+- **AND** circles are 45px, connected by 30px gray lines (#e5e5e5, 2px height)
+- **AND** the current step circle is blue (#56a3f2)
+- **AND** completed step circles also show blue background
 
 #### Scenario: Responsive Layout
-  Given the user resizes the browser to mobile width (< 575px)
-  Then the image panel is hidden (display: none)
-  And the form panel takes full width
-  And form fields stack vertically
-  And the card remains centered
+
+- **GIVEN** the user resizes the browser to mobile width (< 575px)
+- **THEN** the image panel is hidden (display: none)
+- **AND** the form panel takes full width
+- **AND** form fields stack vertically
+- **AND** the card remains centered
 
 ## Verification Checklist
 

@@ -65,69 +65,59 @@ Crinkle is a bootstrap accordion component page with an accordion and footer. It
    - Panel 3: "How to link your paypal and bank account?"
 3. **Footer** — Component Dock attribution link
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Initial render shows first panel expanded
+### Feature: Template Spec: Crinkle template behaviour
 
-```
-Given the Crinkle page loads
-When the page renders
-Then the first accordion panel is expanded
-And the second and third panels are collapsed
-And the first panel's header shows brand green text
-And the first panel's header shows the up-chevron icon
-And the second and third panels' headers show grey text
-And the second and third panels' headers show the down-chevron icon
-```
+#### Scenario: Initial render shows first panel expanded
 
-### Scenario: Clicking a collapsed panel expands it and collapses the active one
+- **GIVEN** the Crinkle page loads
+- **WHEN** the page renders
+- **THEN** the first accordion panel is expanded
+- **AND** the second and third panels are collapsed
+- **AND** the first panel's header shows brand green text
+- **AND** the first panel's header shows the up-chevron icon
+- **AND** the second and third panels' headers show grey text
+- **AND** the second and third panels' headers show the down-chevron icon
 
-```
-Given the first panel is expanded
-When the user clicks the second panel's header
-Then the second panel becomes expanded
-And the first panel becomes collapsed
-And the second panel's header shows brand green text and up-chevron
-And the first panel's header shows grey text and down-chevron
-```
+#### Scenario: Clicking a collapsed panel expands it and collapses the active one
 
-### Scenario: Clicking an expanded panel collapses it
+- **GIVEN** the first panel is expanded
+- **WHEN** the user clicks the second panel's header
+- **THEN** the second panel becomes expanded
+- **AND** the first panel becomes collapsed
+- **AND** the second panel's header shows brand green text and up-chevron
+- **AND** the first panel's header shows grey text and down-chevron
 
-```
-Given the first panel is expanded
-When the user clicks the first panel's header
-Then the first panel becomes collapsed
-And no panel is expanded
-And the first panel's header shows grey text and down-chevron
-```
+#### Scenario: Clicking an expanded panel collapses it
 
-### Scenario: Keyboard navigation works
+- **GIVEN** the first panel is expanded
+- **WHEN** the user clicks the first panel's header
+- **THEN** the first panel becomes collapsed
+- **AND** no panel is expanded
+- **AND** the first panel's header shows grey text and down-chevron
 
-```
-Given focus is on the first panel's header
-When the user presses Enter
-Then the first panel toggles (expands if collapsed, collapses if expanded)
-And focus remains on the header
-```
+#### Scenario: Keyboard navigation works
 
-### Scenario: Footer links to Component Dock
+- **GIVEN** focus is on the first panel's header
+- **WHEN** the user presses Enter
+- **THEN** the first panel toggles (expands if collapsed, collapses if expanded)
+- **AND** focus remains on the header
 
-```
-Given the page renders
-When the user scrolls to the footer
-Then a "More templates at Component Dock" link is visible
-And the link href is "https://www.componentdock.com/"
-```
+#### Scenario: Footer links to Component Dock
 
-### Scenario: Semantic accessibility
+- **GIVEN** the page renders
+- **WHEN** the user scrolls to the footer
+- **THEN** a "More templates at Component Dock" link is visible
+- **AND** the link href is "https://www.componentdock.com/"
 
-```
-Given the page renders
-Then each panel header is a <button> with aria-expanded and aria-controls
-Then each panel body is a <div role="region"> with aria-labelledby pointing to its header
-Then icons have aria-hidden="true"
-Then the accordion container has no redundant wrapper
-```
+#### Scenario: Semantic accessibility
+
+- **GIVEN** the page renders
+- **THEN** each panel header is a <button> with aria-expanded and aria-controls
+- **THEN** each panel body is a <div role="region"> with aria-labelledby pointing to its header
+- **THEN** icons have aria-hidden="true"
+- **THEN** the accordion container has no redundant wrapper
 
 ## Implementation Notes
 

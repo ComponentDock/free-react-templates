@@ -54,93 +54,77 @@ background (#efefef) instead of white. Form inputs use subtle shadows instead
 of visible borders. Includes a date-of birth split input (3 fields) and a
 country dropdown (not present in Modal 15).
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Modal opens when launch button is clicked
+### Feature: Registrack template behaviour
 
-```gherkin
-Given the user sees the launch button on the page
-When the user clicks the "Launch modal" button
-Then a modal overlay appears
-And the modal is centered on screen
-And the modal has a split-screen layout (image left, form right)
-```
+#### Scenario: Modal opens when launch button is clicked
 
-### Scenario: Modal displays correct form fields
+- **GIVEN** the user sees the launch button on the page
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a modal overlay appears
+- **AND** the modal is centered on screen
+- **AND** the modal has a split-screen layout (image left, form right)
 
-```gherkin
-Given the modal is open
-Then there is a heading "Registration form"
-And there is a paragraph description text
-And there is a "Country" dropdown select
-And there is a "Full Name" text input field
-And there is an "Email Address" email input field
-And there is a "Date of Birth" section with MM, DD, and YYYY input fields
-And there is a "Sign up" submit button
-```
+#### Scenario: Modal displays correct form fields
 
-### Scenario: Country dropdown is populated
+- **GIVEN** the modal is open
+- **THEN** there is a heading "Registration form"
+- **AND** there is a paragraph description text
+- **AND** there is a "Country" dropdown select
+- **AND** there is a "Full Name" text input field
+- **AND** there is an "Email Address" email input field
+- **AND** there is a "Date of Birth" section with MM, DD, and YYYY input fields
+- **AND** there is a "Sign up" submit button
 
-```gherkin
-Given the modal is open
-When the user opens the Country dropdown
-Then there is a list of countries starting with Afghanistan
-And the list includes at least 100 countries
-```
+#### Scenario: Country dropdown is populated
 
-### Scenario: Date of Birth fields are split
+- **GIVEN** the modal is open
+- **WHEN** the user opens the Country dropdown
+- **THEN** there is a list of countries starting with Afghanistan
+- **AND** the list includes at least 100 countries
 
-```gherkin
-Given the modal is open
-Then the Date of Birth section has three separate input fields
-And the first field has placeholder "MM"
-And the second field has placeholder "DD"
-And the third field has placeholder "YYYY"
-```
+#### Scenario: Date of Birth fields are split
 
-### Scenario: Modal closes on backdrop click
+- **GIVEN** the modal is open
+- **THEN** the Date of Birth section has three separate input fields
+- **AND** the first field has placeholder "MM"
+- **AND** the second field has placeholder "DD"
+- **AND** the third field has placeholder "YYYY"
 
-```gherkin
-Given the modal is open
-When the user clicks the dark backdrop area outside the modal
-Then the modal closes
-And the page returns to the launch button view
-```
+#### Scenario: Modal closes on backdrop click
 
-### Scenario: Modal closes on close button click
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the dark backdrop area outside the modal
+- **THEN** the modal closes
+- **AND** the page returns to the launch button view
 
-```gherkin
-Given the modal is open
-When the user clicks the close button (X) in the modal
-Then the modal closes
-```
+#### Scenario: Modal closes on close button click
 
-### Scenario: Modal is responsive on mobile
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X) in the modal
+- **THEN** the modal closes
 
-```gherkin
-Given the modal is open on a mobile viewport
-Then the split-screen layout stacks vertically (image on top, form below)
-And all form fields remain usable
-And the date of birth fields stack vertically
-And the submit button is full-width
-```
+#### Scenario: Modal is responsive on mobile
 
-### Scenario: Form validation
+- **GIVEN** the modal is open on a mobile viewport
+- **THEN** the split-screen layout stacks vertically (image on top, form below)
+- **AND** all form fields remain usable
+- **AND** the date of birth fields stack vertically
+- **AND** the submit button is full-width
 
-```gherkin
-Given the modal is open
-When the user clicks "Sign up" with empty fields
-Then required field validation messages appear
-And the form does not submit
-```
+#### Scenario: Form validation
 
-### Scenario: Privacy policy link is present
+- **GIVEN** the modal is open
+- **WHEN** the user clicks "Sign up" with empty fields
+- **THEN** required field validation messages appear
+- **AND** the form does not submit
 
-```gherkin
-Given the modal is open
-Then there is a note "By signing up you will agree to our Privacy Policy"
-And "Privacy Policy" is a clickable link
-```
+#### Scenario: Privacy policy link is present
+
+- **GIVEN** the modal is open
+- **THEN** there is a note "By signing up you will agree to our Privacy Policy"
+- **AND** "Privacy Policy" is a clickable link
 
 ## Verification checklist
 

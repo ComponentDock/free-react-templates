@@ -51,85 +51,101 @@ buttons provide visual color accents against the neutral gray background.
 - **Error validation**: `border: 1px solid #c80000`, `border-radius: 14px`, `color: #c80000`, `font-size: 13px`.
 - **Box model reset**: `* { margin: 0; padding: 0; box-sizing: border-box; }`
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Full-viewport background renders
-Given the user navigates to LoginLens
-Then the page body should display a light gray (#e6e6e6) background
-And the background should cover the full viewport height
+### Feature: LoginLens template behaviour
 
-### Scenario: Login heading is visible
-Given the user navigates to LoginLens
-Then a heading "Login" should be visible
-And the heading should be centered on the page
+#### Scenario: Full-viewport background renders
 
-### Scenario: Facebook social login button renders
-Given the user navigates to LoginLens
-Then a button labeled "Login with Facebook" should be visible
-And the button should display a Facebook icon
-And the button should have a blue (#3b5998) background
-And the button should be pill-shaped (rounded corners)
+- **GIVEN** the user navigates to LoginLens
+- **THEN** the page body should display a light gray (#e6e6e6) background
+- **AND** the background should cover the full viewport height
 
-### Scenario: Twitter social login button renders
-Given the user navigates to LoginLens
-Then a button labeled "Login with Twitter" should be visible
-And the button should display a Twitter icon
-And the button should have a light blue (#1da1f2) background
-And the button should be pill-shaped (rounded corners)
+#### Scenario: Login heading is visible
 
-### Scenario: Social buttons hover to dark
-Given the user hovers over a social login button
-Then the button background should change to a dark color (#333333)
+- **GIVEN** the user navigates to LoginLens
+- **THEN** a heading "Login" should be visible
+- **AND** the heading should be centered on the page
 
-### Scenario: Email input renders
-Given the user navigates to LoginLens
-Then an input field with placeholder "Email" should be visible
-And the input should accept text input
-And the input should be pill-shaped with white background
+#### Scenario: Facebook social login button renders
 
-### Scenario: Password input renders
-Given the user navigates to LoginLens
-Then a password input with placeholder "Password" should be visible
-And the input should mask typed characters
+- **GIVEN** the user navigates to LoginLens
+- **THEN** a button labeled "Login with Facebook" should be visible
+- **AND** the button should display a Facebook icon
+- **AND** the button should have a blue (#3b5998) background
+- **AND** the button should be pill-shaped (rounded corners)
 
-### Scenario: Show/hide password toggle renders
-Given the user navigates to LoginLens
-Then a show/hide password toggle icon should be visible in the password field
-And clicking the toggle should reveal the password text
-And clicking the toggle again should hide the password text
+#### Scenario: Twitter social login button renders
 
-### Scenario: Login submit button renders and is clickable
-Given the user navigates to LoginLens
-Then a button labeled "Login" should be visible
-And the button should be pill-shaped
-And the button should be clickable
+- **GIVEN** the user navigates to LoginLens
+- **THEN** a button labeled "Login with Twitter" should be visible
+- **AND** the button should display a Twitter icon
+- **AND** the button should have a light blue (#1da1f2) background
+- **AND** the button should be pill-shaped (rounded corners)
 
-### Scenario: "Login with email" separator renders
-Given the user navigates to LoginLens
-Then a text "Login with email" should be visible between social buttons and form inputs
-And the text should be centered
+#### Scenario: Social buttons hover to dark
 
-### Scenario: Sign up link renders
-Given the user navigates to LoginLens
-Then text "Don't have an account?" should be visible
-And a link labeled "Sign up now" should be visible below it
-And clicking the link should be non-navigating (href="#")
+- **GIVEN** the user hovers over a social login button
+- **THEN** the button background should change to a dark color (#333333)
 
-### Scenario: Responsive layout on mobile
-Given the user resizes the viewport to 375px width
-Then the form should shrink to fit the viewport width
-And all inputs, buttons, and links should remain usable
+#### Scenario: Email input renders
 
-### Scenario: Accessibility - semantic elements
-Given the user navigates to LoginLens
-Then the form should use semantic HTML elements
-And the inputs should have associated labels or placeholders
-And the button should have an accessible name
+- **GIVEN** the user navigates to LoginLens
+- **THEN** an input field with placeholder "Email" should be visible
+- **AND** the input should accept text input
+- **AND** the input should be pill-shaped with white background
 
-### Scenario: Footer links to Component Dock
-Given the user navigates to LoginLens
-Then the footer should contain a link to "https://www.componentdock.com/"
-And the link text should reference "Component Dock"
+#### Scenario: Password input renders
+
+- **GIVEN** the user navigates to LoginLens
+- **THEN** a password input with placeholder "Password" should be visible
+- **AND** the input should mask typed characters
+
+#### Scenario: Show/hide password toggle renders
+
+- **GIVEN** the user navigates to LoginLens
+- **THEN** a show/hide password toggle icon should be visible in the password field
+- **AND** clicking the toggle should reveal the password text
+- **AND** clicking the toggle again should hide the password text
+
+#### Scenario: Login submit button renders and is clickable
+
+- **GIVEN** the user navigates to LoginLens
+- **THEN** a button labeled "Login" should be visible
+- **AND** the button should be pill-shaped
+- **AND** the button should be clickable
+
+#### Scenario: "Login with email" separator renders
+
+- **GIVEN** the user navigates to LoginLens
+- **THEN** a text "Login with email" should be visible between social buttons and form inputs
+- **AND** the text should be centered
+
+#### Scenario: Sign up link renders
+
+- **GIVEN** the user navigates to LoginLens
+- **THEN** text "Don't have an account?" should be visible
+- **AND** a link labeled "Sign up now" should be visible below it
+- **AND** clicking the link should be non-navigating (href="#")
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user resizes the viewport to 375px width
+- **THEN** the form should shrink to fit the viewport width
+- **AND** all inputs, buttons, and links should remain usable
+
+#### Scenario: Accessibility - semantic elements
+
+- **GIVEN** the user navigates to LoginLens
+- **THEN** the form should use semantic HTML elements
+- **AND** the inputs should have associated labels or placeholders
+- **AND** the button should have an accessible name
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user navigates to LoginLens
+- **THEN** the footer should contain a link to "https://www.componentdock.com/"
+- **AND** the link text should reference "Component Dock"
 
 ## Verification checklist
 

@@ -62,106 +62,96 @@ Preview image: https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-
 - Dark footer matching navbar
 - Modern conference/event aesthetic with countdown timer prominent in hero
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar renders correctly
-```
-Given the user loads the page
-Then the navbar displays brand "Rostrum"
-And nav links include Home, About, Speakers, Schedule, Blog, Contact
-And a "Buy Ticket" CTA button is visible
-And the navbar has a dark background
-```
+### Feature: Rostrum template behaviour
 
-### Scenario: Hero section displays event details
-```
-Given the user loads the page
-Then a full-height hero section is visible with a background image
-And a headline "Developer Conference 2019" is displayed
-And the event date "December 21-24, 2019. Paris, Italy" is shown
-And a countdown timer shows days, hours, minutes, seconds
-```
+#### Scenario: Navbar renders correctly
 
-### Scenario: Services section shows 4 service cards
-```
-Given the user scrolls to the services section
-Then 4 service items are displayed in a row
-And each service has an icon, heading, and description
-And the services are Venue, Transport, Hotel, Restaurant
-And the section has a light background
-```
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays brand "Rostrum"
+- **AND** nav links include Home, About, Speakers, Schedule, Blog, Contact
+- **AND** a "Buy Ticket" CTA button is visible
+- **AND** the navbar has a dark background
 
-### Scenario: Fun Facts counter section
-```
-Given the user scrolls to the counter section
-Then a split layout shows an image on the left
-And 4 stat cards are displayed: Speakers (30), Sponsor (200), Total Seats (2500), Topics (40)
-And each stat card has an icon, number, and label
-```
+#### Scenario: Hero section displays event details
 
-### Scenario: Speakers carousel
-```
-Given the user scrolls to the speakers section
-Then a centered heading "Our Speakers" is visible
-And speaker cards are displayed in a carousel
-And each speaker card shows a photo, name, role, and social icons
-```
+- **GIVEN** the user loads the page
+- **THEN** a full-height hero section is visible with a background image
+- **AND** a headline "Developer Conference 2019" is displayed
+- **AND** the event date "December 21-24, 2019. Paris, Italy" is shown
+- **AND** a countdown timer shows days, hours, minutes, seconds
 
-### Scenario: Schedule section with day tabs
-```
-Given the user scrolls to the schedule section
-Then a centered heading "Event Schedule" is visible
-And day tabs (Day 01 through Day 04) are displayed
-And clicking a day tab shows sessions for that day
-And each session shows a speaker photo, time, title, description, and speaker info
-```
+#### Scenario: Services section shows 4 service cards
 
-### Scenario: Testimonials carousel
-```
-Given the user scrolls to the testimonials section
-Then a heading "Happy Clients" is displayed
-And testimonial cards appear in a carousel
-And each card shows an avatar, quote icon, testimonial text, name, and role
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** 4 service items are displayed in a row
+- **AND** each service has an icon, heading, and description
+- **AND** the services are Venue, Transport, Hotel, Restaurant
+- **AND** the section has a light background
 
-### Scenario: Pricing section
-```
-Given the user scrolls to the pricing section
-Then a heading "Our Ticket Pricing" is displayed
-And 3 pricing cards are shown: Personal ($85), Small Team ($200), Family Pack ($499)
-And each card lists features and has a "Buy Ticket" button
-```
+#### Scenario: Fun Facts counter section
 
-### Scenario: Blog section
-```
-Given the user scrolls to the blog section
-Then a heading "Recent Blog" is displayed
-And 3 blog cards are shown with date overlay, title, and excerpt
-```
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a split layout shows an image on the left
+- **AND** 4 stat cards are displayed: Speakers (30), Sponsor (200), Total Seats (2500), Topics (40)
+- **AND** each stat card has an icon, number, and label
 
-### Scenario: Newsletter subscription
-```
-Given the user scrolls to the newsletter section
-Then a parallax background is visible
-And a heading "Subscribe to our Newsletter" is shown
-And an email input and subscribe button are displayed
-```
+#### Scenario: Speakers carousel
 
-### Scenario: Gallery section
-```
-Given the user scrolls to the gallery section
-Then 4 gallery images are displayed in a grid
-And hovering over an image shows an Instagram icon overlay
-```
+- **GIVEN** the user scrolls to the speakers section
+- **THEN** a centered heading "Our Speakers" is visible
+- **AND** speaker cards are displayed in a carousel
+- **AND** each speaker card shows a photo, name, role, and social icons
 
-### Scenario: Footer
-```
-Given the user scrolls to the footer
-Then a dark background footer is displayed
-And 4 columns are shown: brand description + social links, Useful Links, Privacy links, contact info
-And a copyright line is present
-And the footer links to https://www.componentdock.com/
-```
+#### Scenario: Schedule section with day tabs
+
+- **GIVEN** the user scrolls to the schedule section
+- **THEN** a centered heading "Event Schedule" is visible
+- **AND** day tabs (Day 01 through Day 04) are displayed
+- **AND** clicking a day tab shows sessions for that day
+- **AND** each session shows a speaker photo, time, title, description, and speaker info
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a heading "Happy Clients" is displayed
+- **AND** testimonial cards appear in a carousel
+- **AND** each card shows an avatar, quote icon, testimonial text, name, and role
+
+#### Scenario: Pricing section
+
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** a heading "Our Ticket Pricing" is displayed
+- **AND** 3 pricing cards are shown: Personal ($85), Small Team ($200), Family Pack ($499)
+- **AND** each card lists features and has a "Buy Ticket" button
+
+#### Scenario: Blog section
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a heading "Recent Blog" is displayed
+- **AND** 3 blog cards are shown with date overlay, title, and excerpt
+
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** a parallax background is visible
+- **AND** a heading "Subscribe to our Newsletter" is shown
+- **AND** an email input and subscribe button are displayed
+
+#### Scenario: Gallery section
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** 4 gallery images are displayed in a grid
+- **AND** hovering over an image shows an Instagram icon overlay
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is displayed
+- **AND** 4 columns are shown: brand description + social links, Useful Links, Privacy links, contact info
+- **AND** a copyright line is present
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification checklist
 

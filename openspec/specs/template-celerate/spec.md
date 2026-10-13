@@ -64,87 +64,87 @@ The CellOn template is a bright, clean tech/consulting landing page:
 7. **Contact Area** — Background image with green overlay, centered heading "Send Us Message", form with name input, email input, textarea, "Send Message" button (white bg, green text)
 8. **Footer** — White bg, 4-column grid: Top Product links, Navigation links, Compare links, Quick About text + contact info + social icons (Facebook, Twitter, Dribbble, Behance); bottom bar with copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Celerate Tech/Consulting Landing Page
 
 #### Scenario: Header renders with navigation links
 
-- GIVEN the user visits the Celerate page
-- THEN the header displays the brand name "Celerate"
-- AND navigation links are present: Home, About, Features, FAQ, Contact
-- AND a hamburger menu icon is visible for mobile
+- **GIVEN** the user visits the Celerate page
+- **THEN** the header displays the brand name "Celerate"
+- **AND** navigation links are present: Home, About, Features, FAQ, Contact
+- **AND** a hamburger menu icon is visible for mobile
 
 #### Scenario: Banner/Hero displays split layout
 
-- GIVEN the banner section is visible
-- THEN an illustration image appears on the left half
-- AND a heading with green accent text appears on the right half
-- AND a "Get Started" CTA button with green background and circle border-radius is present
-- AND the text reads "Behind Every" with "Success" accented in green
+- **GIVEN** the banner section is visible
+- **THEN** an illustration image appears on the left half
+- **AND** a heading with green accent text appears on the right half
+- **AND** a "Get Started" CTA button with green background and circle border-radius is present
+- **AND** the text reads "Behind Every" with "Success" accented in green
 
 #### Scenario: Video area shows with green overlay
 
-- GIVEN the video section is visible
-- THEN a background image is displayed with a semi-transparent green overlay
-- AND a play button icon is centered in the section
-- AND a heading "Being unique is the preference" is displayed in white
-- AND a subtext "YouTube video will appear in popover" is shown in white
+- **GIVEN** the video section is visible
+- **THEN** a background image is displayed with a semi-transparent green overlay
+- **AND** a play button icon is centered in the section
+- **AND** a heading "Being unique is the preference" is displayed in white
+- **AND** a subtext "YouTube video will appear in popover" is shown in white
 
 #### Scenario: About section displays two-column layout
 
-- GIVEN the about section is visible
-- THEN a heading "Brief Information About" with "Celerate" accent is displayed on the left
-- AND a descriptive paragraph is shown below the heading
-- AND a "View More" button with green border is present
-- AND an illustration image appears on the right side
+- **GIVEN** the about section is visible
+- **THEN** a heading "Brief Information About" with "Celerate" accent is displayed on the left
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** a "View More" button with green border is present
+- **AND** an illustration image appears on the right side
 
 #### Scenario: Features section shows grid of feature cards
 
-- GIVEN the features section is visible
-- THEN 7 feature cards are displayed in a responsive grid
-- AND each card has a white background with padding
-- AND each card contains a green Linearicon icon at the top
-- AND each card has an uppercase heading and description paragraph
-- AND the section background uses an image with green semi-transparent overlay
+- **GIVEN** the features section is visible
+- **THEN** 7 feature cards are displayed in a responsive grid
+- **AND** each card has a white background with padding
+- **AND** each card contains a green Linearicon icon at the top
+- **AND** each card has an uppercase heading and description paragraph
+- **AND** the section background uses an image with green semi-transparent overlay
 
 #### Scenario: Stats counter displays 4 metrics
 
-- GIVEN the stats counter section is visible
-- THEN 4 counter items are displayed in a left-aligned column
-- AND each counter shows a large green number and a label below
-- AND the metrics include: Projects Completed, New Projects, Tickets Submitted, Cup of Coffee
+- **GIVEN** the stats counter section is visible
+- **THEN** 4 counter items are displayed in a left-aligned column
+- **AND** each counter shows a large green number and a label below
+- **AND** the metrics include: Projects Completed, New Projects, Tickets Submitted, Cup of Coffee
 
 #### Scenario: FAQ section shows 3 questions
 
-- GIVEN the FAQ section is visible
-- THEN 3 FAQ items are displayed in the right column
-- AND each FAQ item has an uppercase question heading and answer paragraph
-- AND questions include: responsive templates, plugins, client usage
+- **GIVEN** the FAQ section is visible
+- **THEN** 3 FAQ items are displayed in the right column
+- **AND** each FAQ item has an uppercase question heading and answer paragraph
+- **AND** questions include: responsive templates, plugins, client usage
 
 #### Scenario: Contact form collects user message
 
-- GIVEN the contact section is visible
-- THEN a green overlay background with centered heading "Send Us Message" is displayed
-- AND a name input field is present with placeholder "Enter your name"
-- AND an email input field is present with placeholder "Enter email address"
-- AND a message textarea is present
-- AND a "Send Message" button with white background and green text is present
+- **GIVEN** the contact section is visible
+- **THEN** a green overlay background with centered heading "Send Us Message" is displayed
+- **AND** a name input field is present with placeholder "Enter your name"
+- **AND** an email input field is present with placeholder "Enter email address"
+- **AND** a message textarea is present
+- **AND** a "Send Message" button with white background and green text is present
 
 #### Scenario: Footer shows four-column layout with social links
 
-- GIVEN the footer is visible
-- THEN four columns of links are displayed: Top Product, Navigation, Compare, Quick About
-- AND social media icons (Facebook, Twitter, Dribbble, Behance) are present
-- AND a copyright line with "Component Dock" link is shown at the bottom
-- AND the footer has a white background
+- **GIVEN** the footer is visible
+- **THEN** four columns of links are displayed: Top Product, Navigation, Compare, Quick About
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are present
+- **AND** a copyright line with "Component Dock" link is shown at the bottom
+- **AND** the footer has a white background
 
 #### Scenario: Page wrapper has shadow card effect
 
-- GIVEN the page is loaded
-- THEN the content is wrapped in a container with a 50px margin and box shadow
-- AND the outer body background is light gray (#f6f6fc)
-- AND the wrapper has rounded shadow appearance
+- **GIVEN** the page is loaded
+- **THEN** the content is wrapped in a container with a 50px margin and box shadow
+- **AND** the outer body background is light gray (#f6f6fc)
+- **AND** the wrapper has rounded shadow appearance
 
 ## Verification Checklist
 

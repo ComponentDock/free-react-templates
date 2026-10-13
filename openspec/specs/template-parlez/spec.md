@@ -46,73 +46,84 @@ Extracted from the live preview stylesheet (`styles/main_styles.css`).
 8. **Blog** — split layout: left = "From Our Blog" title + description + 6-category grid (travel, languages, cultures, fashion, cooking, hobbies with images), right = featured blog post (image, category, title, excerpt, "Read More" link)
 9. **Footer** — 4-column: newsletter subscribe (logo + email + arrow button), About Us links, Help & Support links, Privacy & Terms links; copyright bar with phone + social icons
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Header renders with navigation
-- **Given** the page loads
-- **When** the header is visible
-- **Then** the logo text "Parlez" is displayed
-- **And** the nav links are: Home, Courses, Instructors, Events, Blog, Contact
-- **And** a search input with placeholder "Type for Search" is present
-- **And** social icons (Facebook, Instagram, Twitter) are in the top bar
+### Feature: Parlez template behaviour
 
-### Scenario: Hero section displays headline and CTA
-- **Given** the page loads
-- **When** the hero section is visible
-- **Then** the heading reads "Learn Languages Easily"
-- **And** a "get started" button is displayed
-- **And** the background is a full-width image (placeholder via picsum)
+#### Scenario: Header renders with navigation
 
-### Scenario: Language slider shows language flags
-- **Given** the page loads
-- **When** the language slider section is visible
-- **Then** at least 9 language items are displayed (Ukrainian, Japanese, Lithuanian, Swedish, English, Italian, Chinese, French, German)
-- **And** each item shows a flag image and language name
-- **And** prev/next navigation arrows are present
+- **GIVEN** the page loads
+- **WHEN** the header is visible
+- **THEN** the logo text "Parlez" is displayed
+- **AND** the nav links are: Home, Courses, Instructors, Events, Blog, Contact
+- **AND** a search input with placeholder "Type for Search" is present
+- **AND** social icons (Facebook, Instagram, Twitter) are in the top bar
 
-### Scenario: Courses section shows 3 course cards
-- **Given** the page loads
-- **When** the courses section is visible
-- **Then** the heading reads "Popular Online Courses"
-- **And** 3 course cards are displayed in a 3-column grid
-- **And** each card shows an image, title, instructor name, language, description text, student count, rating, and price/free badge
+#### Scenario: Hero section displays headline and CTA
 
-### Scenario: Instructors section shows 3 tutor cards
-- **Given** the page loads
-- **When** the instructors section is visible
-- **Then** the heading reads "The Best Tutors in Town"
-- **And** 3 instructor cards are displayed in a 3-column grid
-- **And** each card shows a circular image, name, title, bio text, and social icons (Facebook, Instagram, Twitter)
+- **GIVEN** the page loads
+- **WHEN** the hero section is visible
+- **THEN** the heading reads "Learn Languages Easily"
+- **AND** a "get started" button is displayed
+- **AND** the background is a full-width image (placeholder via picsum)
 
-### Scenario: Register section has form and countdown
-- **Given** the page loads
-- **When** the register section is visible
-- **Then** a registration form with fields: Name, Email, Phone, Site is displayed
-- **And** a "get it now" submit button is present
-- **And** a countdown timer shows days, hours, minutes, seconds
-- **And** the timer title reads "Register Now"
+#### Scenario: Language slider shows language flags
 
-### Scenario: Events section shows 3 event cards
-- **Given** the page loads
-- **When** the events section is visible
-- **Then** the heading reads "Upcoming Events"
-- **And** 3 event cards are displayed in a 3-column grid
-- **And** each card shows an image, a date badge (day + month), event title, and a "Free" tag
+- **GIVEN** the page loads
+- **WHEN** the language slider section is visible
+- **THEN** at least 9 language items are displayed (Ukrainian, Japanese, Lithuanian, Swedish, English, Italian, Chinese, French, German)
+- **AND** each item shows a flag image and language name
+- **AND** prev/next navigation arrows are present
 
-### Scenario: Blog section has categories and featured post
-- **Given** the page loads
-- **When** the blog section is visible
-- **Then** a "From Our Blog" heading is displayed on the left
-- **And** 6 blog category cards are shown (travel, languages, cultures, fashion, cooking, hobbies)
-- **And** a featured blog post on the right shows an image, category label, title, excerpt, and "Read More" link
+#### Scenario: Courses section shows 3 course cards
 
-### Scenario: Footer has 4 columns and copyright bar
-- **Given** the page loads
-- **When** the footer is visible
-- **Then** a newsletter subscribe section with logo and email input is displayed
-- **And** "About Us", "Help & Support", "Privacy & Terms" link columns are present
-- **And** a copyright bar shows phone number and social icons
-- **And** the footer links to https://www.componentdock.com/ (Component Dock)
+- **GIVEN** the page loads
+- **WHEN** the courses section is visible
+- **THEN** the heading reads "Popular Online Courses"
+- **AND** 3 course cards are displayed in a 3-column grid
+- **AND** each card shows an image, title, instructor name, language, description text, student count, rating, and price/free badge
+
+#### Scenario: Instructors section shows 3 tutor cards
+
+- **GIVEN** the page loads
+- **WHEN** the instructors section is visible
+- **THEN** the heading reads "The Best Tutors in Town"
+- **AND** 3 instructor cards are displayed in a 3-column grid
+- **AND** each card shows a circular image, name, title, bio text, and social icons (Facebook, Instagram, Twitter)
+
+#### Scenario: Register section has form and countdown
+
+- **GIVEN** the page loads
+- **WHEN** the register section is visible
+- **THEN** a registration form with fields: Name, Email, Phone, Site is displayed
+- **AND** a "get it now" submit button is present
+- **AND** a countdown timer shows days, hours, minutes, seconds
+- **AND** the timer title reads "Register Now"
+
+#### Scenario: Events section shows 3 event cards
+
+- **GIVEN** the page loads
+- **WHEN** the events section is visible
+- **THEN** the heading reads "Upcoming Events"
+- **AND** 3 event cards are displayed in a 3-column grid
+- **AND** each card shows an image, a date badge (day + month), event title, and a "Free" tag
+
+#### Scenario: Blog section has categories and featured post
+
+- **GIVEN** the page loads
+- **WHEN** the blog section is visible
+- **THEN** a "From Our Blog" heading is displayed on the left
+- **AND** 6 blog category cards are shown (travel, languages, cultures, fashion, cooking, hobbies)
+- **AND** a featured blog post on the right shows an image, category label, title, excerpt, and "Read More" link
+
+#### Scenario: Footer has 4 columns and copyright bar
+
+- **GIVEN** the page loads
+- **WHEN** the footer is visible
+- **THEN** a newsletter subscribe section with logo and email input is displayed
+- **AND** "About Us", "Help & Support", "Privacy & Terms" link columns are present
+- **AND** a copyright bar shows phone number and social icons
+- **AND** the footer links to https://www.componentdock.com/ (Component Dock)
 
 ## Verification Checklist
 

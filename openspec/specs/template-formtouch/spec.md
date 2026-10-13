@@ -54,144 +54,149 @@ with a Google Maps background, centered white card, and clean input layout.
 3. **Focus animation** — on input focus, a red (#ff4b5a) border scales in from 1.1×/1.3× to 1× with 0.4s transition
 4. **Validation alerts** — on invalid submit, error message appears inside input area (red #c80000 text, white bg, 1px #c80000 border, 2px radius); tooltip-style with right alignment
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Full-screen Map Background
 
-```gherkin
-Scenario: Page displays a full-viewport map background
-  Given the user loads the page
-  Then a map background fills the entire viewport
-  And a semi-transparent gray overlay covers the map
+#### Scenario: Page displays a full-viewport map background
 
-Scenario: Map is replaced with a static placeholder
-  Given the user loads the page
-  Then a static map-like background image is shown
-  And the overlay tint is approximately rgba(173,173,173,0.4)
-```
+- **GIVEN** the user loads the page
+- **THEN** a map background fills the entire viewport
+- **AND** a semi-transparent gray overlay covers the map
+
+#### Scenario: Map is replaced with a static placeholder
+
+- **GIVEN** the user loads the page
+- **THEN** a static map-like background image is shown
+- **AND** the overlay tint is approximately rgba(173,173,173,0.4)
 
 ### Feature: Contact Form Card
 
-```gherkin
-Scenario: Form card is centered on the page
-  Given the user loads the page
-  Then a white card is centered horizontally and vertically
-  And the card has a subtle box shadow
+#### Scenario: Form card is centered on the page
 
-Scenario: Mail icon appears at top of card
-  Given the form card is visible
-  Then a circular icon (100px diameter) is positioned at the top of the card
-  And the icon overlaps above the card border by approximately 55px
-  And the icon contains an envelope/mail symbol
+- **GIVEN** the user loads the page
+- **THEN** a white card is centered horizontally and vertically
+- **AND** the card has a subtle box shadow
 
-Scenario: Form title is displayed
-  Given the form card is visible
-  Then the title "Drop Us A Message" is centered at the top of the card
-  And the title is 30px font size in dark gray (#333333)
-```
+#### Scenario: Mail icon appears at top of card
+
+- **GIVEN** the form card is visible
+- **THEN** a circular icon (100px diameter) is positioned at the top of the card
+- **AND** the icon overlaps above the card border by approximately 55px
+- **AND** the icon contains an envelope/mail symbol
+
+#### Scenario: Form title is displayed
+
+- **GIVEN** the form card is visible
+- **THEN** the title "Drop Us A Message" is centered at the top of the card
+- **AND** the title is 30px font size in dark gray (#333333)
 
 ### Feature: Form Input Fields
 
-```gherkin
-Scenario: Name and Email fields are side by side
-  Given the form card is visible on desktop
-  Then the Name input and Email Address input appear in a two-column row
-  And each input is 60px tall with 20px placeholder text
+#### Scenario: Name and Email fields are side by side
 
-Scenario: Message textarea is full width
-  Given the form card is visible
-  Then the "Write Us A Message" textarea spans the full card width
-  And the textarea has a minimum height of 199px
+- **GIVEN** the form card is visible on desktop
+- **THEN** the Name input and Email Address input appear in a two-column row
+- **AND** each input is 60px tall with 20px placeholder text
 
-Scenario: Fields stack on mobile
-  Given the viewport width is less than 768px
-  When the form inputs are displayed
-  Then Name and Email fields each span full width (stacked vertically)
+#### Scenario: Message textarea is full width
 
-Scenario: Input fields have correct border style
-  Given any input field is visible
-  Then it has a 1px solid #dbdbdb border
-  And the border radius is 2px
-```
+- **GIVEN** the form card is visible
+- **THEN** the "Write Us A Message" textarea spans the full card width
+- **AND** the textarea has a minimum height of 199px
+
+#### Scenario: Fields stack on mobile
+
+- **GIVEN** the viewport width is less than 768px
+- **WHEN** the form inputs are displayed
+- **THEN** Name and Email fields each span full width (stacked vertically)
+
+#### Scenario: Input fields have correct border style
+
+- **GIVEN** any input field is visible
+- **THEN** it has a 1px solid #dbdbdb border
+- **AND** the border radius is 2px
 
 ### Feature: Focus Animation
 
-```gherkin
-Scenario: Input focus shows red border animation
-  Given the Name input is visible
-  When the user clicks into the Name input
-  Then a coral red (#ff4b5a) border appears around the input
-  And the border animates from scaled (1.1× width, 1.3× height) to normal
-  And the animation duration is 0.4 seconds
+#### Scenario: Input focus shows red border animation
 
-Scenario: Focus border disappears on blur
-  Given the Name input has focus
-  When the user clicks outside the input
-  Then the coral red focus border fades out
-```
+- **GIVEN** the Name input is visible
+- **WHEN** the user clicks into the Name input
+- **THEN** a coral red (#ff4b5a) border appears around the input
+- **AND** the border animates from scaled (1.1× width, 1.3× height) to normal
+- **AND** the animation duration is 0.4 seconds
+
+#### Scenario: Focus border disappears on blur
+
+- **GIVEN** the Name input has focus
+- **WHEN** the user clicks outside the input
+- **THEN** the coral red focus border fades out
 
 ### Feature: Send Button
 
-```gherkin
-Scenario: Send button is coral red and right-aligned
-  Given the form card is visible
-  Then a "Send" button appears at the bottom right of the form
-  And the button background is coral red (#ff4b5a)
-  And the button text is white, 18px font
-  And the button height is 50px with 2px border radius
+#### Scenario: Send button is coral red and right-aligned
 
-Scenario: Send button hover changes color
-  Given the Send button is visible
-  When the user hovers over the Send button
-  Then the button background changes to dark gray (#333333)
-  And the transition takes 0.4 seconds
-```
+- **GIVEN** the form card is visible
+- **THEN** a "Send" button appears at the bottom right of the form
+- **AND** the button background is coral red (#ff4b5a)
+- **AND** the button text is white, 18px font
+- **AND** the button height is 50px with 2px border radius
+
+#### Scenario: Send button hover changes color
+
+- **GIVEN** the Send button is visible
+- **WHEN** the user hovers over the Send button
+- **THEN** the button background changes to dark gray (#333333)
+- **AND** the transition takes 0.4 seconds
 
 ### Feature: Form Validation
 
-```gherkin
-Scenario: Empty name triggers validation error
-  Given the form is displayed
-  And the Name input is empty
-  When the user clicks "Send"
-  Then a validation error message appears near the Name input
-  And the error text is dark red (#c80000)
-  And the error has a white background with red border
+#### Scenario: Empty name triggers validation error
 
-Scenario: Invalid email triggers validation error
-  Given the form is displayed
-  And the Email input contains "notanemail"
-  When the user clicks "Send"
-  Then a validation error message appears near the Email input
-  And the error message indicates a valid email is required
+- **GIVEN** the form is displayed
+- **AND** the Name input is empty
+- **WHEN** the user clicks "Send"
+- **THEN** a validation error message appears near the Name input
+- **AND** the error text is dark red (#c80000)
+- **AND** the error has a white background with red border
 
-Scenario: Empty message triggers validation error
-  Given the form is displayed
-  And the Message textarea is empty
-  When the user clicks "Send"
-  Then a validation error message appears near the Message textarea
+#### Scenario: Invalid email triggers validation error
 
-Scenario: All fields valid enables submission
-  Given the form is displayed
-  And the Name input contains "John Doe"
-  And the Email input contains "john@example.com"
-  And the Message textarea contains "Hello!"
-  When the user clicks "Send"
-  Then no validation errors are shown
-  And the form attempts submission
-```
+- **GIVEN** the form is displayed
+- **AND** the Email input contains "notanemail"
+- **WHEN** the user clicks "Send"
+- **THEN** a validation error message appears near the Email input
+- **AND** the error message indicates a valid email is required
+
+#### Scenario: Empty message triggers validation error
+
+- **GIVEN** the form is displayed
+- **AND** the Message textarea is empty
+- **WHEN** the user clicks "Send"
+- **THEN** a validation error message appears near the Message textarea
+
+#### Scenario: All fields valid enables submission
+
+- **GIVEN** the form is displayed
+- **AND** the Name input contains "John Doe"
+- **AND** the Email input contains "john@example.com"
+- **AND** the Message textarea contains "Hello!"
+- **WHEN** the user clicks "Send"
+- **THEN** no validation errors are shown
+- **AND** the form attempts submission
 
 ### Feature: Responsive Design
 
-```gherkin
-Scenario: Card padding adjusts on small screens
-  Given the viewport width is less than 576px
-  Then the form card padding reduces to approximately 15px horizontal
+#### Scenario: Card padding adjusts on small screens
 
-Scenario: Form remains centered on all viewports
-  Given any viewport size
-  Then the form card is centered both horizontally and vertically
-```
+- **GIVEN** the viewport width is less than 576px
+- **THEN** the form card padding reduces to approximately 15px horizontal
+
+#### Scenario: Form remains centered on all viewports
+
+- **GIVEN** any viewport size
+- **THEN** the form card is centered both horizontally and vertically
 
 ## Verification checklist
 

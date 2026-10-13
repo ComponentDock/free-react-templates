@@ -45,47 +45,49 @@ The original template is a **single page** with two visible elements:
 There is NO navbar, hero, features, gallery, newsletter, or footer in the
 original — it is a standalone date-picker demo page.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page loads with heading
+### Feature: DatePix template behaviour
 
-- **Given** the user navigates to the DatePix page
-- **Then** a heading "Calendar Date Picker" (or similar) is visible
-- **And** the heading is centered on the page
+#### Scenario: Page loads with heading
 
-### Scenario: Date picker input renders
+- **GIVEN** the user navigates to the DatePix page
+- **THEN** a heading "Calendar Date Picker" (or similar) is visible
+- **AND** the heading is centered on the page
 
-- **Given** the page has loaded
-- **Then** a date/time input field is visible below the heading
-- **And** the input has a pill shape (large border-radius)
-- **And** the input has a soft drop shadow
-- **And** the input placeholder reads "MM/DD/YYYY hh:mm:ss" (or similar)
+#### Scenario: Date picker input renders
 
-### Scenario: Input accepts date/time text
+- **GIVEN** the page has loaded
+- **THEN** a date/time input field is visible below the heading
+- **AND** the input has a pill shape (large border-radius)
+- **AND** the input has a soft drop shadow
+- **AND** the input placeholder reads "MM/DD/YYYY hh:mm:ss" (or similar)
 
-- **Given** the date picker input is visible
-- **When** the user types a date string into the input
-- **Then** the input value updates to reflect the typed text
+#### Scenario: Input accepts date/time text
 
-### Scenario: Input focus styling
+- **GIVEN** the date picker input is visible
+- **WHEN** the user types a date string into the input
+- **THEN** the input value updates to reflect the typed text
 
-- **Given** the date picker input is visible
-- **When** the user focuses the input
-- **Then** the shadow deepens slightly (focus state)
+#### Scenario: Input focus styling
 
-### Scenario: Responsive layout
+- **GIVEN** the date picker input is visible
+- **WHEN** the user focuses the input
+- **THEN** the shadow deepens slightly (focus state)
 
-- **Given** the user is on a mobile viewport (≤ 576px)
-- **Then** the heading and input remain centered
-- **And** the input scales to fit its container width
+#### Scenario: Responsive layout
 
-### Scenario: Page background and typography
+- **GIVEN** the user is on a mobile viewport (≤ 576px)
+- **THEN** the heading and input remain centered
+- **AND** the input scales to fit its container width
 
-- **Given** the page has loaded
-- **Then** the background color is #f8f9fd (light blue-gray)
-- **And** the font family is Lato (or system fallback)
-- **And** the body text color is gray
-- **And** the heading text is black and not bold
+#### Scenario: Page background and typography
+
+- **GIVEN** the page has loaded
+- **THEN** the background color is #f8f9fd (light blue-gray)
+- **AND** the font family is Lato (or system fallback)
+- **AND** the body text color is gray
+- **AND** the heading text is black and not bold
 
 ## Verification checklist
 

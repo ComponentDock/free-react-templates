@@ -66,100 +66,113 @@ Recreation of ColorLib "Karma" — a clean, white e-commerce fashion/shoe shop t
 
 ### Gherkin Scenarios
 
-```gherkin
 Feature: Loomwell — E-commerce Fashion Template
 
-  Background:
-    Given the user navigates to the Loomwell app
+Background:
+- **GIVEN** the user navigates to the Loomwell app
 
-  Scenario: Header renders with logo and navigation
-    Then the logo is visible in the header
-    And navigation links "Home", "Shop", "Blog", "Pages", "Contact" are present
-    And "Shop" has a dropdown with sub-links
-    And "Blog" has a dropdown with sub-links
-    And "Pages" has a dropdown with sub-links
-    And a cart icon is visible
-    And a search toggle icon is visible
+#### Scenario: Header renders with logo and navigation
 
-  Scenario: Header is responsive with hamburger menu
-    When the viewport is 768px or narrower
-    Then the hamburger menu icon is visible
-    And the desktop nav menu is hidden
-    When the user clicks the hamburger icon
-    Then the mobile navigation menu opens
+- **THEN** the logo is visible in the header
+- **AND** navigation links "Home", "Shop", "Blog", "Pages", "Contact" are present
+- **AND** "Shop" has a dropdown with sub-links
+- **AND** "Blog" has a dropdown with sub-links
+- **AND** "Pages" has a dropdown with sub-links
+- **AND** a cart icon is visible
+- **AND** a search toggle icon is visible
 
-  Scenario: Search bar expands on toggle
-    When the user clicks the search icon
-    Then an expandable search input appears with a gradient background
-    And the search input is focused
+#### Scenario: Header is responsive with hamburger menu
 
-  Scenario: Banner hero slider displays correctly
-    Then a full-width hero background image is visible
-    And the heading "Nike New Collection!" is displayed
-    And a description paragraph is visible
-    And an "Add to Bag" CTA is visible with circular button and uppercase text
-    And the banner supports carousel navigation between slides
+- **WHEN** the viewport is 768px or narrower
+- **THEN** the hamburger menu icon is visible
+- **AND** the desktop nav menu is hidden
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the mobile navigation menu opens
 
-  Scenario: Features row displays four feature cards
-    Then 4 feature cards are rendered in a horizontal row
-    And each card has an icon, heading, and description
-    And the cards are contained in a shadow box
-    And headings are "Free Delivery", "Return Policy", "24/7 Support", "Secure Payment"
+#### Scenario: Search bar expands on toggle
 
-  Scenario: Category grid shows product categories
-    Then a grid of category cards is displayed
-    And each card has an image with a dark overlay and title text
-    And the layout is asymmetric: 2x2 grid on left + 1 tall card on right
+- **WHEN** the user clicks the search icon
+- **THEN** an expandable search input appears with a gradient background
+- **AND** the search input is focused
 
-  Scenario: Latest Products section shows product carousel
-    Then the heading "Latest Products" is displayed
-    And multiple product cards are rendered in a grid
-    And each product card has an image, title, current price, and original price with strikethrough
-    And each card has action icons: add to bag, wishlist, compare, view more
+#### Scenario: Banner hero slider displays correctly
 
-  Scenario: Product action icons appear on hover
-    Given a product card is displayed
-    When the user hovers over the product card
-    Then the action icons row (add to bag, wishlist, compare, view more) becomes visible
+- **THEN** a full-width hero background image is visible
+- **AND** the heading "Nike New Collection!" is displayed
+- **AND** a description paragraph is visible
+- **AND** an "Add to Bag" CTA is visible with circular button and uppercase text
+- **AND** the banner supports carousel navigation between slides
 
-  Scenario: Coming Products section shows product carousel
-    Then the heading "Coming Products" is displayed
-    And product cards are rendered with the same layout as Latest Products
+#### Scenario: Features row displays four feature cards
 
-  Scenario: Exclusive deal section has countdown and product
-    Then the heading "Exclusive Hot Deal Ends Soon!" is displayed
-    And a countdown timer with Days, Hours, Mins, Secs is visible
-    And a "Shop Now" pill button is visible
-    And a product carousel with exclusive product is shown on the right
-    And the section has a light gray background
+- **THEN** 4 feature cards are rendered in a horizontal row
+- **AND** each card has an icon, heading, and description
+- **AND** the cards are contained in a shadow box
+- **AND** headings are "Free Delivery", "Return Policy", "24/7 Support", "Secure Payment"
 
-  Scenario: Brand logos strip renders correctly
-    Then 5 brand logo images are displayed in a horizontal row
-    And each logo is wrapped in an anchor tag
+#### Scenario: Category grid shows product categories
 
-  Scenario: Deals of the Week section shows related products
-    Then the heading "Deals of the Week" is displayed
-    And multiple related product items are shown with thumbnail, title, and price
-    And a sidebar category image is displayed on the right
+- **THEN** a grid of category cards is displayed
+- **AND** each card has an image with a dark overlay and title text
+- **AND** the layout is asymmetric: 2x2 grid on left + 1 tall card on right
 
-  Scenario: Footer contains widgets and copyright
-    Then an "About Us" widget with description is present
-    And a "Newsletter" signup form with email input is present
-    And an "Instagram Feed" widget with thumbnail grid is present
-    And a "Follow Us" widget with social icons is present
-    And copyright text is displayed at the bottom
-    And the footer links to componentdock.com
+#### Scenario: Latest Products section shows product carousel
 
-  Scenario: Footer has dark background theme
-    Then the footer background is dark charcoal (#222222)
-    And footer headings are white
-    And footer body text is gray
+- **THEN** the heading "Latest Products" is displayed
+- **AND** multiple product cards are rendered in a grid
+- **AND** each product card has an image, title, current price, and original price with strikethrough
+- **AND** each card has action icons: add to bag, wishlist, compare, view more
 
-  Scenario: Primary buttons use gold-to-orange gradient
-    Then CTA buttons have a gold-to-orange gradient background
-    And buttons have pill shape (border-radius: 50px)
-    And button hover triggers a skewed sweep animation
-```
+#### Scenario: Product action icons appear on hover
+
+- **GIVEN** a product card is displayed
+- **WHEN** the user hovers over the product card
+- **THEN** the action icons row (add to bag, wishlist, compare, view more) becomes visible
+
+#### Scenario: Coming Products section shows product carousel
+
+- **THEN** the heading "Coming Products" is displayed
+- **AND** product cards are rendered with the same layout as Latest Products
+
+#### Scenario: Exclusive deal section has countdown and product
+
+- **THEN** the heading "Exclusive Hot Deal Ends Soon!" is displayed
+- **AND** a countdown timer with Days, Hours, Mins, Secs is visible
+- **AND** a "Shop Now" pill button is visible
+- **AND** a product carousel with exclusive product is shown on the right
+- **AND** the section has a light gray background
+
+#### Scenario: Brand logos strip renders correctly
+
+- **THEN** 5 brand logo images are displayed in a horizontal row
+- **AND** each logo is wrapped in an anchor tag
+
+#### Scenario: Deals of the Week section shows related products
+
+- **THEN** the heading "Deals of the Week" is displayed
+- **AND** multiple related product items are shown with thumbnail, title, and price
+- **AND** a sidebar category image is displayed on the right
+
+#### Scenario: Footer contains widgets and copyright
+
+- **THEN** an "About Us" widget with description is present
+- **AND** a "Newsletter" signup form with email input is present
+- **AND** an "Instagram Feed" widget with thumbnail grid is present
+- **AND** a "Follow Us" widget with social icons is present
+- **AND** copyright text is displayed at the bottom
+- **AND** the footer links to componentdock.com
+
+#### Scenario: Footer has dark background theme
+
+- **THEN** the footer background is dark charcoal (#222222)
+- **AND** footer headings are white
+- **AND** footer body text is gray
+
+#### Scenario: Primary buttons use gold-to-orange gradient
+
+- **THEN** CTA buttons have a gold-to-orange gradient background
+- **AND** buttons have pill shape (border-radius: 50px)
+- **AND** button hover triggers a skewed sweep animation
 
 ## Verification Checklist
 

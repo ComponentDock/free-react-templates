@@ -109,41 +109,41 @@ gray, headings are black #000.
 
 ## Requirements
 
-### Requirement: Page shell
+### Feature: Page shell
 
 #### Scenario: Clean white centered layout
 
-Given the user visits the QuizCraft page
-Then a white (#fff) background fills the viewport
-And a single section with vertical padding (7em 0) is centered
-And there is NO navbar, NO hero section, NO footer, NO newsletter
+- **GIVEN** the user visits the QuizCraft page
+- **THEN** a white (#fff) background fills the viewport
+- **AND** a single section with vertical padding (7em 0) is centered
+- **AND** there is NO navbar, NO hero section, NO footer, NO newsletter
 
 #### Scenario: Responsive centered column
 
-Given the viewport is desktop (≥992px)
-Then the heading occupies a col-md-6 centered row
-And the dropdown occupies a col-lg-4 col-md-6 centered row
+- **GIVEN** the viewport is desktop (≥992px)
+- **THEN** the heading occupies a col-md-6 centered row
+- **AND** the dropdown occupies a col-lg-4 col-md-6 centered row
 
-Given the viewport is mobile (<768px)
-Then the dropdown stretches to full width
+- **GIVEN** the viewport is mobile (<768px)
+- **THEN** the dropdown stretches to full width
 
-### Requirement: Section heading
+### Feature: Section heading
 
 #### Scenario: Centered heading text
 
-Given the page is loaded
-Then a centered h2 with class "heading-section" displays "Multiselect #07"
-And the heading is 28px Lato 400 weight, color #000
-And there is 3rem (mb-5) bottom margin below the heading row
+- **GIVEN** the page is loaded
+- **THEN** a centered h2 with class "heading-section" displays "Multiselect #07"
+- **AND** the heading is 28px Lato 400 weight, color #000
+- **AND** there is 3rem (mb-5) bottom margin below the heading row
 
-### Requirement: Multiselect dropdown
+### Feature: Multiselect dropdown
 
 #### Scenario: Dropdown renders with topic options
 
-Given the page is loaded
-Then a multiselect dropdown field is visible in the center column
-And the dropdown label reads "Select Topics"
-And the dropdown contains 10 options:
+- **GIVEN** the page is loaded
+- **THEN** a multiselect dropdown field is visible in the center column
+- **AND** the dropdown label reads "Select Topics"
+- **AND** the dropdown contains 10 options:
   | value | label        |
   | 1     | Family       |
   | 2     | Family Law   |
@@ -158,86 +158,86 @@ And the dropdown contains 10 options:
 
 #### Scenario: Dropdown opens on click
 
-Given the dropdown is closed
-When the user clicks the dropdown field
-Then a dropdown menu appears below the field
-And the menu has a solid #e8647c background
-And the menu items have white (#fff) text
-And each menu item has a 1px #ef90a2 top border separator
-And each menu item has a FontAwesome circle-radio icon (\f192) on the left
-And hovering a menu item changes its background to white and text to #e8647c
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the dropdown field
+- **THEN** a dropdown menu appears below the field
+- **AND** the menu has a solid #e8647c background
+- **AND** the menu items have white (#fff) text
+- **AND** each menu item has a 1px #ef90a2 top border separator
+- **AND** each menu item has a FontAwesome circle-radio icon (\f192) on the left
+- **AND** hovering a menu item changes its background to white and text to #e8647c
 
 #### Scenario: Multiple selection with chip labels
 
-Given the dropdown menu is open
-When the user clicks "Family"
-Then a label chip appears in the dropdown field with text "Family"
-And the chip has background #e8647c and white text
-And a × delete icon is visible on the chip
-When the user clicks "Work"
-Then a second chip "Work" appears next to the first
+- **GIVEN** the dropdown menu is open
+- **WHEN** the user clicks "Family"
+- **THEN** a label chip appears in the dropdown field with text "Family"
+- **AND** the chip has background #e8647c and white text
+- **AND** a × delete icon is visible on the chip
+- **WHEN** the user clicks "Work"
+- **THEN** a second chip "Work" appears next to the first
 
 #### Scenario: Remove selection via chip delete
 
-Given "Family" and "Work" are selected (chips visible)
-When the user clicks the × on the "Family" chip
-Then the "Family" chip is removed from the field
-And the "Work" chip remains visible
-And the dropdown field still shows remaining selections
+- **GIVEN** "Family" and "Work" are selected (chips visible)
+- **WHEN** the user clicks the × on the "Family" chip
+- **THEN** the "Family" chip is removed from the field
+- **AND** the "Work" chip remains visible
+- **AND** the dropdown field still shows remaining selections
 
 #### Scenario: Dropdown border styling
 
-Given the dropdown is inactive
-Then the dropdown border is #e6e6e6 (default)
+- **GIVEN** the dropdown is inactive
+- **THEN** the dropdown border is #e6e6e6 (default)
 
-When the user hovers the dropdown
-Then the border transitions to #e8647c
+- **WHEN** the user hovers the dropdown
+- **THEN** the border transitions to #e8647c
 
-When the dropdown is open (active)
-Then the border is #e8647c
-And the border-radius is 4px
-And a subtle box-shadow appears
+- **WHEN** the dropdown is open (active)
+- **THEN** the border is #e8647c
+- **AND** the border-radius is 4px
+- **AND** a subtle box-shadow appears
 
-### Requirement: Typography and colors
+### Feature: Typography and colors
 
 #### Scenario: Lato font family
 
-Given the page is loaded
-Then all text uses the Lato font family
-And body text is 16px, line-height 1.8, color gray
-And headings are Lato 400 weight, color #000
+- **GIVEN** the page is loaded
+- **THEN** all text uses the Lato font family
+- **AND** body text is 16px, line-height 1.8, color gray
+- **AND** headings are Lato 400 weight, color #000
 
 #### Scenario: Link color
 
-Given the page contains any anchor elements
-Then links use color #e8647c
-And link hover transitions with 0.3s ease
+- **GIVEN** the page contains any anchor elements
+- **THEN** links use color #e8647c
+- **AND** link hover transitions with 0.3s ease
 
-### Requirement: Accessibility
+### Feature: Accessibility
 
 #### Scenario: Semantic HTML structure
 
-Given the page is loaded
-Then the main content is inside a <section> element
-And the dropdown uses a <label> element for "Select Topics"
-And the <select> element has the `multiple` attribute
+- **GIVEN** the page is loaded
+- **THEN** the main content is inside a <section> element
+- **AND** the dropdown uses a <label> element for "Select Topics"
+- **AND** the <select> element has the `multiple` attribute
 
 #### Scenario: Keyboard interaction
 
-Given the dropdown is focused
-When the user presses Enter or Space
-Then the dropdown menu opens
-And arrow keys navigate menu items
-And Enter selects the focused item
-And Escape closes the menu
+- **GIVEN** the dropdown is focused
+- **WHEN** the user presses Enter or Space
+- **THEN** the dropdown menu opens
+- **AND** arrow keys navigate menu items
+- **AND** Enter selects the focused item
+- **AND** Escape closes the menu
 
-### Requirement: Footer attribution
+### Feature: Footer attribution
 
 #### Scenario: Component Dock link in footer
 
-Given the page is loaded
-Then a footer area contains a link to https://www.componentdock.com/
-And the link text mentions "Component Dock"
+- **GIVEN** the page is loaded
+- **THEN** a footer area contains a link to https://www.componentdock.com/
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

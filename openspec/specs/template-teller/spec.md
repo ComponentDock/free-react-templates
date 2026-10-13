@@ -59,139 +59,175 @@ Captured from live preview CSS (`css/style.css`) + inline `@font-face` rules.
 15. **Contact Us** — 3-column contact info (address, phone, email with orange icons). Full-width contact form: First Name, Last Name, Email, Subject, Message, "Send Message" button. Form on white background.
 16. **Footer** — dark (#343a40) background. 3-column row: About Us paragraph, Quick Links list, Follow Us social icons. Subscribe newsletter: email input + Send button. Copyright bar with attribution.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Teller template behaviour
+
 Feature: Teller banking template
 
-  Background:
-    Given the app is served at "teller.free.componentdock.com"
-    And the page loads with Tailwind 4 + React 19
+Background:
+- **GIVEN** the app is served at "teller.free.componentdock.com"
+- **AND** the page loads with Tailwind 4 + React 19
 
-  # --- Navbar ---
-  Scenario: Sticky navbar displays logo and navigation
-    Then the navbar shows "Teller" logo with an orange dot separator
-    And navigation links include "Home", "About Us", "Blog", "Contact"
-    And social icons for Facebook, Twitter, LinkedIn are visible
-    And the navbar is sticky on scroll
+**--- Navbar ---**
 
-  Scenario: About dropdown opens on hover/click
-    When the user hovers or clicks "About Us"
-    Then a dropdown appears with "Team", "Pricing", "FAQ", "Gallery", "Services", "Testimonials"
+#### Scenario: Sticky navbar displays logo and navigation
 
-  # --- Hero ---
-  Scenario: Hero carousel cycles through slides
-    Given the hero section is visible
-    Then a headline "Banking Solutions" appears with a description paragraph
-    And after a delay the headline changes to "Financing Solutions"
-    And the hero fills the full viewport height
+- **THEN** the navbar shows "Teller" logo with an orange dot separator
+- **AND** navigation links include "Home", "About Us", "Blog", "Contact"
+- **AND** social icons for Facebook, Twitter, LinkedIn are visible
+- **AND** the navbar is sticky on scroll
 
-  Scenario: Hero scroll indicator is clickable
-    Given the hero section is visible
-    Then a scroll-down mouse icon is present
-    And clicking it scrolls to the next section
+#### Scenario: About dropdown opens on hover/click
 
-  # --- Features ---
-  Scenario: Three feature cards are displayed
-    Then 3 feature cards are shown in a row
-    And each card has an icon, a title, and a short description
-    And the titles are "Money Savings", "Online Shoppings", "Credit / Debit Cards"
+- **WHEN** the user hovers or clicks "About Us"
+- **THEN** a dropdown appears with "Team", "Pricing", "FAQ", "Gallery", "Services", "Testimonials"
 
-  # --- Amortization/Intro ---
-  Scenario: Amortization section shows checklist and email form
-    Then a heading "Amortization Computation" is displayed
-    And a green-checkmark list shows 3 items
-    And an email input and "Submit Email" pill button are present
+**--- Hero ---**
 
-  # --- About Us ---
-  Scenario: About Us section shows heading and description
-    Then the heading "About Us" is displayed
-    And a lead paragraph is shown
-    And an image with circular background decoration is present
-    And the text "We Solve Your Financial Problem" is visible with two paragraphs
+#### Scenario: Hero carousel cycles through slides
 
-  # --- Team ---
-  Scenario: Team grid shows 8 members
-    Then the heading "Meet Team" is displayed
-    And 8 team member cards are shown
-    And each card shows a photo, name, and position
-    And hovering reveals social media icon links
+- **GIVEN** the hero section is visible
+- **THEN** a headline "Banking Solutions" appears with a description paragraph
+- **AND** after a delay the headline changes to "Financing Solutions"
+- **AND** the hero fills the full viewport height
 
-  # --- Gallery ---
-  Scenario: Gallery displays filterable images
-    Then the heading "Gallery" is displayed
-    And filter buttons "All", "Events", "Party", "Holidays" are shown
-    And at least 8 gallery images are displayed in a grid
-    And clicking a filter button shows only matching images
+#### Scenario: Hero scroll indicator is clickable
 
-  # --- How It Works ---
-  Scenario: How It Works shows 3-step carousel
-    Then the heading "How It Works" is displayed
-    And a left image carousel and right text carousel are synced
-    And the 3 steps are "Online Applications", "Get an approval", "Card delivery"
-    And each step has a paragraph and "Learn More" button
+- **GIVEN** the hero section is visible
+- **THEN** a scroll-down mouse icon is present
+- **AND** clicking it scrolls to the next section
 
-  # --- Services ---
-  Scenario: Six service cards are shown on light background
-    Then the heading "Our Services" is displayed
-    And the section has a light gray background
-    And 6 service cards are shown in a 3-column grid
-    And each has an icon, title, description, and "Learn More" link
+**--- Features ---**
 
-  # --- Testimonials ---
-  Scenario: Testimonial carousel shows customer quotes
-    Then the heading "Happy Customers" is displayed
-    And 4 testimonial slides are available
-    And each shows a blockquote, circular customer photo, and name
+#### Scenario: Three feature cards are displayed
 
-  # --- Pricing ---
-  Scenario: Three pricing tiers are displayed
-    Then the heading "Pricing" is displayed
-    And the section has a light gray background
-    And "Basic" is priced at "$47 / year" with 2 active + 3 disabled features
-    And "Premium" is priced at "$200 / year" with 4 active + 1 disabled features and an elevated shadow
-    And "Professional" is priced at "$750 / year" with 5 active features
-    And each tier has a "Buy Now" button
+- **THEN** 3 feature cards are shown in a row
+- **AND** each card has an icon, a title, and a short description
+- **AND** the titles are "Money Savings", "Online Shoppings", "Credit / Debit Cards"
 
-  # --- FAQ ---
-  Scenario: FAQ section shows 8 questions in 2 columns
-    Then the heading "Frequently Ask Questions" is displayed
-    And 8 FAQ items are shown in a 2-column layout
-    And each has a bold heading and answer paragraph
+**--- Amortization/Intro ---**
 
-  # --- About Features ---
-  Scenario: About features shows image and two feature items
-    Then an image with circular background is displayed
-    And "Bank Loan" and "Banking Consultation" features are shown
-    And each has an icon, heading, paragraph, and "Learn More" link
+#### Scenario: Amortization section shows checklist and email form
 
-  # --- Blog ---
-  Scenario: Blog section shows 3 post cards
-    Then the heading "Our Blog" is displayed
-    And 3 blog cards are shown in a 3-column grid
-    And each has a featured image, title, author/date/category meta, excerpt, and "Continue Reading..." link
+- **THEN** a heading "Amortization Computation" is displayed
+- **AND** a green-checkmark list shows 3 items
+- **AND** an email input and "Submit Email" pill button are present
 
-  # --- Contact ---
-  Scenario: Contact form and info are displayed
-    Then the heading "Contact Us" is displayed
-    And 3 contact info items (address, phone, email) with orange icons are shown
-    And a form with fields: First Name, Last Name, Email, Subject, Message is displayed
-    And a "Send Message" orange pill button submits the form
-    And the form has a white background
+**--- About Us ---**
 
-  # --- Footer ---
-  Scenario: Footer has 3-column layout with newsletter
-    Then the footer has a dark gray background (#343a40)
-    And "About Us" paragraph, "Quick Links" list, and "Follow Us" social icons are shown
-    And a newsletter subscribe section with email input and "Send" button is present
-    And a copyright line with "Made with Component Dock" link to componentdock.com is shown
+#### Scenario: About Us section shows heading and description
 
-  # --- Accessibility ---
-  Scenario: Semantic HTML and ARIA labels
-    Then the page uses semantic elements: <header>, <nav>, <main>, <section>, <footer>
-    And form inputs have associated <label> elements
-    And interactive elements are keyboard-accessible
-```
+- **THEN** the heading "About Us" is displayed
+- **AND** a lead paragraph is shown
+- **AND** an image with circular background decoration is present
+- **AND** the text "We Solve Your Financial Problem" is visible with two paragraphs
+
+**--- Team ---**
+
+#### Scenario: Team grid shows 8 members
+
+- **THEN** the heading "Meet Team" is displayed
+- **AND** 8 team member cards are shown
+- **AND** each card shows a photo, name, and position
+- **AND** hovering reveals social media icon links
+
+**--- Gallery ---**
+
+#### Scenario: Gallery displays filterable images
+
+- **THEN** the heading "Gallery" is displayed
+- **AND** filter buttons "All", "Events", "Party", "Holidays" are shown
+- **AND** at least 8 gallery images are displayed in a grid
+- **AND** clicking a filter button shows only matching images
+
+**--- How It Works ---**
+
+#### Scenario: How It Works shows 3-step carousel
+
+- **THEN** the heading "How It Works" is displayed
+- **AND** a left image carousel and right text carousel are synced
+- **AND** the 3 steps are "Online Applications", "Get an approval", "Card delivery"
+- **AND** each step has a paragraph and "Learn More" button
+
+**--- Services ---**
+
+#### Scenario: Six service cards are shown on light background
+
+- **THEN** the heading "Our Services" is displayed
+- **AND** the section has a light gray background
+- **AND** 6 service cards are shown in a 3-column grid
+- **AND** each has an icon, title, description, and "Learn More" link
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonial carousel shows customer quotes
+
+- **THEN** the heading "Happy Customers" is displayed
+- **AND** 4 testimonial slides are available
+- **AND** each shows a blockquote, circular customer photo, and name
+
+**--- Pricing ---**
+
+#### Scenario: Three pricing tiers are displayed
+
+- **THEN** the heading "Pricing" is displayed
+- **AND** the section has a light gray background
+- **AND** "Basic" is priced at "$47 / year" with 2 active + 3 disabled features
+- **AND** "Premium" is priced at "$200 / year" with 4 active + 1 disabled features and an elevated shadow
+- **AND** "Professional" is priced at "$750 / year" with 5 active features
+- **AND** each tier has a "Buy Now" button
+
+**--- FAQ ---**
+
+#### Scenario: FAQ section shows 8 questions in 2 columns
+
+- **THEN** the heading "Frequently Ask Questions" is displayed
+- **AND** 8 FAQ items are shown in a 2-column layout
+- **AND** each has a bold heading and answer paragraph
+
+**--- About Features ---**
+
+#### Scenario: About features shows image and two feature items
+
+- **THEN** an image with circular background is displayed
+- **AND** "Bank Loan" and "Banking Consultation" features are shown
+- **AND** each has an icon, heading, paragraph, and "Learn More" link
+
+**--- Blog ---**
+
+#### Scenario: Blog section shows 3 post cards
+
+- **THEN** the heading "Our Blog" is displayed
+- **AND** 3 blog cards are shown in a 3-column grid
+- **AND** each has a featured image, title, author/date/category meta, excerpt, and "Continue Reading..." link
+
+**--- Contact ---**
+
+#### Scenario: Contact form and info are displayed
+
+- **THEN** the heading "Contact Us" is displayed
+- **AND** 3 contact info items (address, phone, email) with orange icons are shown
+- **AND** a form with fields: First Name, Last Name, Email, Subject, Message is displayed
+- **AND** a "Send Message" orange pill button submits the form
+- **AND** the form has a white background
+
+**--- Footer ---**
+
+#### Scenario: Footer has 3-column layout with newsletter
+
+- **THEN** the footer has a dark gray background (#343a40)
+- **AND** "About Us" paragraph, "Quick Links" list, and "Follow Us" social icons are shown
+- **AND** a newsletter subscribe section with email input and "Send" button is present
+- **AND** a copyright line with "Made with Component Dock" link to componentdock.com is shown
+
+**--- Accessibility ---**
+
+#### Scenario: Semantic HTML and ARIA labels
+
+- **THEN** the page uses semantic elements: <header>, <nav>, <main>, <section>, <footer>
+- **AND** form inputs have associated <label> elements
+- **AND** interactive elements are keyboard-accessible
 
 ## Verification Checklist
 

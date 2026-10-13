@@ -81,13 +81,14 @@ The ColorLib source name "Satner" is FORBIDDEN as the app name.
 8. **Newsletter** — full-width bg, centered white text heading, description, email input + submit button. Background image replaced with gradient or solid dark.
 9. **Footer** — centered logo, "Follow Me" heading, social icons row, copyright line with Component Dock link. Light lavender background.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Satinflow Portfolio Template
 
-  Scenario: Page renders all sections in correct order
-    Given the user navigates to the Satinflow homepage
-    Then the following sections are visible in order:
+#### Scenario: Page renders all sections in correct order
+
+- **GIVEN** the user navigates to the Satinflow homepage
+- **THEN** the following sections are visible in order:
       | section      |
       | Navbar       |
       | Hero         |
@@ -99,92 +100,106 @@ The ColorLib source name "Satner" is FORBIDDEN as the app name.
       | Newsletter   |
       | Footer       |
 
-  Scenario: Navbar displays correct links
-    Given the user is on the Satinflow homepage
-    Then the navbar contains links for "Home", "About", "Services", "Portfolio", "Contact"
-    And the navbar logo is visible on the left
+#### Scenario: Navbar displays correct links
 
-  Scenario: Hero section displays greeting and CTAs
-    Given the user views the hero section
-    Then a greeting text "Hello" is displayed
-    And a name heading is displayed
-    And a role/title subtitle is displayed
-    And two call-to-action buttons are visible: "Hire Me" and "Get CV"
+- **GIVEN** the user is on the Satinflow homepage
+- **THEN** the navbar contains links for "Home", "About", "Services", "Portfolio", "Contact"
+- **AND** the navbar logo is visible on the left
 
-  Scenario: Hero section layout on desktop
-    Given the user views the hero section on a desktop viewport
-    Then the text content occupies the left portion
-    And a portrait illustration occupies the right portion
+#### Scenario: Hero section displays greeting and CTAs
 
-  Scenario: Hero section layout on mobile
-    Given the user views the hero section on a mobile viewport
-    Then the portrait illustration is hidden
-    And the text content is full-width
+- **GIVEN** the user views the hero section
+- **THEN** a greeting text "Hello" is displayed
+- **AND** a name heading is displayed
+- **AND** a role/title subtitle is displayed
+- **AND** two call-to-action buttons are visible: "Hire Me" and "Get CV"
 
-  Scenario: About section displays introduction
-    Given the user views the about section
-    Then an introduction image is displayed on the left
-    And a heading "Let's Introduce about myself" is displayed on the right
-    And descriptive paragraphs are visible
-    And a "Download CV" button is displayed
+#### Scenario: Hero section layout on desktop
 
-  Scenario: Brand logos section displays partner logos
-    Given the user views the brand logos section
-    Then 9 logo boxes are displayed in a 3-column grid
-    And each logo box has a light border
-    And hovering a logo box highlights the border with the brand purple color
+- **GIVEN** the user views the hero section on a desktop viewport
+- **THEN** the text content occupies the left portion
+- **AND** a portrait illustration occupies the right portion
 
-  Scenario: Services section displays 4 feature cards
-    Given the user views the services section
-    Then 4 feature cards are displayed in a row
-    And each card has an icon, a title, and a description
-    And hovering a card applies a purple-tinted shadow and white background
+#### Scenario: Hero section layout on mobile
 
-  Scenario: Portfolio section displays filterable grid
-    Given the user views the portfolio section
-    Then filter tabs are displayed: "All", "Popular", "Latest", "Following"
-    And a 3-column grid of portfolio items is visible
-    And each item has an image with an overlay
-    And hovering an item reveals a centered icon
+- **GIVEN** the user views the hero section on a mobile viewport
+- **THEN** the portrait illustration is hidden
+- **AND** the text content is full-width
 
-  Scenario: Testimonials section displays carousel
-    Given the user views the testimonials section
-    Then a carousel of testimonial cards is displayed
-    And each card has a client photo on the left and text on the right
-    And the carousel auto-slides between testimonials
+#### Scenario: About section displays introduction
 
-  Scenario: Newsletter section displays subscription form
-    Given the user views the newsletter section
-    Then a heading "Get Update From Anywhere" is displayed
-    And an email input field is visible
-    And a "Get Started" submit button is visible
+- **GIVEN** the user views the about section
+- **THEN** an introduction image is displayed on the left
+- **AND** a heading "Let's Introduce about myself" is displayed on the right
+- **AND** descriptive paragraphs are visible
+- **AND** a "Download CV" button is displayed
 
-  Scenario: Footer displays social links and copyright
-    Given the user views the footer
-    Then the logo is centered at the top
-    And a "Follow Me" heading is displayed
-    And social icons for Facebook, Twitter, Dribbble, and Behance are visible
-    And a copyright line with a link to "Component Dock" is displayed
+#### Scenario: Brand logos section displays partner logos
 
-  Scenario: Brand gradient is applied to primary buttons
-    Given the user views any primary button
-    Then the button background uses a blue-to-purple gradient
-    And the button has a 5px border radius
-    And the button text is uppercase and white
+- **GIVEN** the user views the brand logos section
+- **THEN** 9 logo boxes are displayed in a 3-column grid
+- **AND** each logo box has a light border
+- **AND** hovering a logo box highlights the border with the brand purple color
 
-  Scenario: Responsive breakpoints
-    Given the user resizes the viewport to tablet width
-    Then section padding reduces from 200px to 80px
-    And the services grid stacks to 2 columns
-    And the portfolio grid stacks to 2 columns
+#### Scenario: Services section displays 4 feature cards
 
-  Scenario: Responsive breakpoints mobile
-    Given the user resizes the viewport to mobile width
-    Then the navbar collapses to a hamburger menu
-    And the hero portrait is hidden
-    And the services grid stacks to 1 column
-    And the portfolio grid stacks to 1 column
-    And the newsletter input width reduces
+- **GIVEN** the user views the services section
+- **THEN** 4 feature cards are displayed in a row
+- **AND** each card has an icon, a title, and a description
+- **AND** hovering a card applies a purple-tinted shadow and white background
+
+#### Scenario: Portfolio section displays filterable grid
+
+- **GIVEN** the user views the portfolio section
+- **THEN** filter tabs are displayed: "All", "Popular", "Latest", "Following"
+- **AND** a 3-column grid of portfolio items is visible
+- **AND** each item has an image with an overlay
+- **AND** hovering an item reveals a centered icon
+
+#### Scenario: Testimonials section displays carousel
+
+- **GIVEN** the user views the testimonials section
+- **THEN** a carousel of testimonial cards is displayed
+- **AND** each card has a client photo on the left and text on the right
+- **AND** the carousel auto-slides between testimonials
+
+#### Scenario: Newsletter section displays subscription form
+
+- **GIVEN** the user views the newsletter section
+- **THEN** a heading "Get Update From Anywhere" is displayed
+- **AND** an email input field is visible
+- **AND** a "Get Started" submit button is visible
+
+#### Scenario: Footer displays social links and copyright
+
+- **GIVEN** the user views the footer
+- **THEN** the logo is centered at the top
+- **AND** a "Follow Me" heading is displayed
+- **AND** social icons for Facebook, Twitter, Dribbble, and Behance are visible
+- **AND** a copyright line with a link to "Component Dock" is displayed
+
+#### Scenario: Brand gradient is applied to primary buttons
+
+- **GIVEN** the user views any primary button
+- **THEN** the button background uses a blue-to-purple gradient
+- **AND** the button has a 5px border radius
+- **AND** the button text is uppercase and white
+
+#### Scenario: Responsive breakpoints
+
+- **GIVEN** the user resizes the viewport to tablet width
+- **THEN** section padding reduces from 200px to 80px
+- **AND** the services grid stacks to 2 columns
+- **AND** the portfolio grid stacks to 2 columns
+
+#### Scenario: Responsive breakpoints mobile
+
+- **GIVEN** the user resizes the viewport to mobile width
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero portrait is hidden
+- **AND** the services grid stacks to 1 column
+- **AND** the portfolio grid stacks to 1 column
+- **AND** the newsletter input width reduces
 
 ## Verification Checklist
 

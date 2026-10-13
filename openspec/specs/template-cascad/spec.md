@@ -91,72 +91,83 @@ The TEMPLATES.md preview image shows the same layout: centered section heading
 Font appears to be Roboto. No background images or gradients — solid white
 dropdown, solid pink trigger, light gray page background.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Cascad cart dropdown
 
-**Scenario: Renders the section heading**
-  Given the component is mounted
-  Then a heading "Cart Dropdown" is visible
-  And the heading is centered
+#### Scenario: Renders the section heading
 
-**Scenario: Shows cart item count**
-  Given the component is mounted
-  Then the trigger bar displays "Cart" with an item count in brackets
+- **GIVEN** the component is mounted
+- **THEN** a heading "Cart Dropdown" is visible
+- **AND** the heading is centered
 
-**Scenario: Trigger bar is styled correctly**
-  Given the component is mounted
-  Then the trigger bar has a pink background
-  And the trigger bar has white text
-  And the trigger bar has rounded corners (4px radius)
+#### Scenario: Shows cart item count
 
-**Scenario: Cart icon button is styled correctly**
-  Given the component is mounted
-  Then the cart icon button has a darker red background
-  And the cart icon button is square (60×60 px)
-  And the cart icon button is vertically aligned with the trigger bar
+- **GIVEN** the component is mounted
+- **THEN** the trigger bar displays "Cart" with an item count in brackets
 
-**Scenario: Dropdown opens on cart icon click**
-  Given the component is mounted
-  When the user clicks the cart icon button
-  Then the dropdown menu becomes visible
-  And the dropdown menu appears below the trigger bar
-  And the dropdown menu has a white background with soft shadow
+#### Scenario: Trigger bar is styled correctly
 
-**Scenario: Dropdown shows product items**
-  Given the dropdown is open
-  Then 3 product items are visible
-  And each product item shows a thumbnail image
-  And each product item shows a product name
-  And each product item shows a price
-  And each product item shows a quantity
+- **GIVEN** the component is mounted
+- **THEN** the trigger bar has a pink background
+- **AND** the trigger bar has white text
+- **AND** the trigger bar has rounded corners (4px radius)
 
-**Scenario: Dropdown shows View All link**
-  Given the dropdown is open
-  Then a "View All" link is visible at the bottom
-  And the "View All" link is centered
-  And the "View All" link has a forward arrow icon
+#### Scenario: Cart icon button is styled correctly
 
-**Scenario: Dropdown closes on outside click**
-  Given the dropdown is open
-  When the user clicks outside the dropdown
-  Then the dropdown menu is not visible
+- **GIVEN** the component is mounted
+- **THEN** the cart icon button has a darker red background
+- **AND** the cart icon button is square (60×60 px)
+- **AND** the cart icon button is vertically aligned with the trigger bar
 
-**Scenario: Dropdown closes on item click**
-  Given the dropdown is open
-  When the user clicks a product item
-  Then the dropdown menu is not visible
+#### Scenario: Dropdown opens on cart icon click
 
-**Scenario: Responsive layout on mobile**
-  Given the viewport width is less than 768px
-  Then the trigger bar is still visible
-  And the dropdown menu adjusts to a narrower width
+- **GIVEN** the component is mounted
+- **WHEN** the user clicks the cart icon button
+- **THEN** the dropdown menu becomes visible
+- **AND** the dropdown menu appears below the trigger bar
+- **AND** the dropdown menu has a white background with soft shadow
 
-**Scenario: Accessibility - keyboard navigation**
-  Given the component is mounted
-  When the user presses Tab to focus the cart icon
-  And the user presses Enter
-  Then the dropdown menu becomes visible
+#### Scenario: Dropdown shows product items
+
+- **GIVEN** the dropdown is open
+- **THEN** 3 product items are visible
+- **AND** each product item shows a thumbnail image
+- **AND** each product item shows a product name
+- **AND** each product item shows a price
+- **AND** each product item shows a quantity
+
+#### Scenario: Dropdown shows View All link
+
+- **GIVEN** the dropdown is open
+- **THEN** a "View All" link is visible at the bottom
+- **AND** the "View All" link is centered
+- **AND** the "View All" link has a forward arrow icon
+
+#### Scenario: Dropdown closes on outside click
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown
+- **THEN** the dropdown menu is not visible
+
+#### Scenario: Dropdown closes on item click
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks a product item
+- **THEN** the dropdown menu is not visible
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the trigger bar is still visible
+- **AND** the dropdown menu adjusts to a narrower width
+
+#### Scenario: Accessibility - keyboard navigation
+
+- **GIVEN** the component is mounted
+- **WHEN** the user presses Tab to focus the cart icon
+- **AND** the user presses Enter
+- **THEN** the dropdown menu becomes visible
 
 ## Verification checklist
 

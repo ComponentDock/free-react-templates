@@ -12,7 +12,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React.
 - **Button Shapes**: Rounded-lg (`border-radius: 0.5rem`), subtle shadow, hover elevation with transition.
 - **Section Backgrounds**: Alternating clean white and slate-50 sections with structured grid and accordion card containers.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Accordion Navigation & Interactive FAQ Sections
 
@@ -20,20 +20,20 @@ As a site visitor, I want to explore collapsible accordion panels, category tabs
 
 #### Scenario: Expanding and collapsing accordion items
 
-- Given the user is on the Accordion Ten template home page
-- When the user clicks on an accordion header
-- Then the corresponding accordion content panel expands smoothly, displaying detailed text and icons
-- And clicking the header again collapses the content panel
+- **GIVEN** the user is on the Accordion Ten template home page
+- **WHEN** the user clicks on an accordion header
+- **THEN** the corresponding accordion content panel expands smoothly, displaying detailed text and icons
+- **AND** clicking the header again collapses the content panel
 
 #### Scenario: Filtering accordion content by category tabs
 
-- Given the user views the interactive accordion filter section
-- When the user clicks on a category tab (e.g., "General", "Billing", "Security", "Support")
-- Then the displayed accordion items update to show only the relevant items for that category
+- **GIVEN** the user views the interactive accordion filter section
+- **WHEN** the user clicks on a category tab (e.g., "General", "Billing", "Security", "Support")
+- **THEN** the displayed accordion items update to show only the relevant items for that category
 
 #### Scenario: Submitting a support inquiry form
 
-- Given the user scrolls to the contact/inquiry section at the bottom
-- When the user fills in name, email, and message fields and clicks submit
-- Then a success confirmation message is displayed
-- And the input fields are reset
+- **GIVEN** the user scrolls to the contact/inquiry section at the bottom
+- **WHEN** the user fills in name, email, and message fields and clicks submit
+- **THEN** a success confirmation message is displayed
+- **AND** the input fields are reset

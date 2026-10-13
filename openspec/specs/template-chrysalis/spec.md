@@ -35,41 +35,50 @@ Extracted from the live preview stylesheet (`assets/css/main.css`):
 
 ## Requirements
 
-### Scenario: Sidebar navigation
+### Feature: Chrysalis template behaviour
+
+#### Scenario: Sidebar navigation
+
 - **GIVEN** the page loads
 - **WHEN** the viewport is desktop (>1024px)
 - **THEN** a fixed left sidebar is visible with logo at top, vertical navigation menu, filter menu, social icons, and copyright
 
-### Scenario: Sidebar logo
+#### Scenario: Sidebar logo
+
 - **GIVEN** the sidebar is visible
 - **WHEN** the user views the sidebar
 - **THEN** the logo is centered at the top with white text on the dark background
 
-### Scenario: Vertical navigation
+#### Scenario: Vertical navigation
+
 - **GIVEN** the sidebar is visible
 - **WHEN** the user views the nav menu
 - **THEN** six navigation links are displayed vertically: Home, About Us, Services, Portfolio, Blog, Contact
 - **AND** the active link has a gold accent (#99896e) left border or underline indicator
 
-### Scenario: Filter menu
+#### Scenario: Filter menu
+
 - **GIVEN** the sidebar is visible
 - **WHEN** the user views the filter section below the nav
 - **THEN** filter options are displayed: All, Branding, Design, Photography, Architecture
 - **AND** the "All" filter is active by default with a gold accent indicator
 
-### Scenario: Filter portfolio by category
+#### Scenario: Filter portfolio by category
+
 - **GIVEN** the portfolio grid is displayed
 - **WHEN** the user clicks a filter category (e.g. "Branding")
 - **THEN** only portfolio items matching that category are shown
 - **AND** items animate into position
 
-### Scenario: Masonry portfolio grid
+#### Scenario: Masonry portfolio grid
+
 - **GIVEN** the content area is visible
 - **WHEN** "All" is selected
 - **THEN** a 4-column masonry grid displays portfolio items with varied heights
 - **AND** items span 1, 2, or 3 columns based on their aspect ratio
 
-### Scenario: Portfolio item hover
+#### Scenario: Portfolio item hover
+
 - **GIVEN** a portfolio item is displayed in the grid
 - **WHEN** the user hovers over an item
 - **THEN** a translucent dark overlay appears covering the item image
@@ -77,34 +86,39 @@ Extracted from the live preview stylesheet (`assets/css/main.css`):
 - **AND** "project name" text appears below the icon
 - **AND** the transition is smooth (0.4s ease-in-out)
 
-### Scenario: Portfolio lightbox
+#### Scenario: Portfolio lightbox
+
 - **GIVEN** a portfolio item is hovered
 - **WHEN** the user clicks the item
 - **THEN** the full-size image opens in a lightbox modal
 - **AND** the background is dimmed
 - **AND** the image can be closed by clicking outside or pressing Escape
 
-### Scenario: Social icons
+#### Scenario: Social icons
+
 - **GIVEN** the sidebar is visible
 - **WHEN** the user scrolls to the bottom of the sidebar
 - **THEN** four social media icons are displayed: Pinterest, Facebook, Twitter, Dribbble
 - **AND** icons are gold-colored (#99896e)
 - **AND** icons change color on hover
 
-### Scenario: Copyright footer
+#### Scenario: Copyright footer
+
 - **GIVEN** the sidebar is visible
 - **WHEN** the user views the bottom of the sidebar
 - **THEN** copyright text is displayed in gold (#99896e), small font (12px)
 - **AND** the text references "Component Dock" as the template source
 
-### Scenario: Mobile responsive
+#### Scenario: Mobile responsive
+
 - **GIVEN** the viewport is ≤768px
 - **WHEN** the page loads
 - **THEN** the sidebar is hidden
 - **AND** a floating pill-shaped menu button (border-radius: 50px) appears in the bottom-right corner
 - **AND** clicking the button toggles an overlay sidebar
 
-### Scenario: Page loader
+#### Scenario: Page loader
+
 - **GIVEN** the page is loading
 - **WHEN** the DOM is not yet ready
 - **THEN** a full-screen loader with a spinning border circle (gold #99896e) is shown on #f7f7f7 background

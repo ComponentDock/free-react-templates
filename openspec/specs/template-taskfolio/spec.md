@@ -51,188 +51,202 @@ Extracted from the live preview CSS (`css/style.css`):
 7. **Get in Touch (CTA)** — Full-width section with light gray background (#fafafa): heading "Get in Touch!", lead paragraph, "Contact me!" pill button (coral)
 8. **Footer** (inside sidebar) — Social media icon links (Facebook, Twitter, Instagram, LinkedIn), copyright text
 
-## Gherkin Requirements
+## Requirements
 
 ### Sidebar
-```gherkin
+
 Feature: Taskfolio Sidebar
 
-  Scenario: Sidebar displays logo and navigation
-    Given the page loads
-    Then a fixed sidebar is visible on the left
-    And the sidebar contains the logo text "Taskfolio"
-    And the sidebar has navigation links: Home, Work, About, Services, Blog, Contact
+#### Scenario: Sidebar displays logo and navigation
 
-  Scenario: Sidebar navigation highlights active link
-    Given the user is on the Home section
-    Then the "Home" link is visually highlighted (bold/black)
-    And other links are styled with muted color
+- **GIVEN** the page loads
+- **THEN** a fixed sidebar is visible on the left
+- **AND** the sidebar contains the logo text "Taskfolio"
+- **AND** the sidebar has navigation links: Home, Work, About, Services, Blog, Contact
 
-  Scenario: Sidebar shows social icons and copyright
-    Given the page loads
-    Then the sidebar footer shows social media icons (Facebook, Twitter, Instagram, LinkedIn)
-    And a copyright notice is visible
+#### Scenario: Sidebar navigation highlights active link
 
-  Scenario: Sidebar is responsive
-    Given the viewport is ≤768px wide
-    Then the sidebar slides off-screen and a toggle button appears
-    When the user taps the toggle
-    Then the sidebar slides in from the left
-```
+- **GIVEN** the user is on the Home section
+- **THEN** the "Home" link is visually highlighted (bold/black)
+- **AND** other links are styled with muted color
+
+#### Scenario: Sidebar shows social icons and copyright
+
+- **GIVEN** the page loads
+- **THEN** the sidebar footer shows social media icons (Facebook, Twitter, Instagram, LinkedIn)
+- **AND** a copyright notice is visible
+
+#### Scenario: Sidebar is responsive
+
+- **GIVEN** the viewport is ≤768px wide
+- **THEN** the sidebar slides off-screen and a toggle button appears
+- **WHEN** the user taps the toggle
+- **THEN** the sidebar slides in from the left
 
 ### Hero
-```gherkin
+
 Feature: Taskfolio Hero Slider
 
-  Scenario: Hero displays rotating background images
-    Given the page loads
-    Then the hero section shows a full-width background image
-    And a white box overlay contains a heading and subtitle
-    And a "Learn More" button is visible
+#### Scenario: Hero displays rotating background images
 
-  Scenario: Hero slides rotate automatically
-    Given the page has loaded for 5 seconds
-    Then the hero transitions to the next slide
-    And the text content updates accordingly
+- **GIVEN** the page loads
+- **THEN** the hero section shows a full-width background image
+- **AND** a white box overlay contains a heading and subtitle
+- **AND** a "Learn More" button is visible
 
-  Scenario: Hero text overlay contains heading and CTA
-    Given the hero is visible
-    Then the heading reads "Strategic Design for Brands" (or similar)
-    And the subtitle is visible below
-    And the "Learn More" button is outlined (transparent background, black border)
-```
+#### Scenario: Hero slides rotate automatically
+
+- **GIVEN** the page has loaded for 5 seconds
+- **THEN** the hero transitions to the next slide
+- **AND** the text content updates accordingly
+
+#### Scenario: Hero text overlay contains heading and CTA
+
+- **GIVEN** the hero is visible
+- **THEN** the heading reads "Strategic Design for Brands" (or similar)
+- **AND** the subtitle is visible below
+- **AND** the "Learn More" button is outlined (transparent background, black border)
 
 ### About
-```gherkin
+
 Feature: Taskfolio About Section
 
-  Scenario: About section shows images and intro text
-    Given the user scrolls to the About section
-    Then two overlapping images are displayed on the left
-    And a heading "Welcome & Introduce" is shown
-    And the name "Hola! my name is Louie Jie!" appears
-    And an introductory paragraph is present
+#### Scenario: About section shows images and intro text
 
-  Scenario: About section has expandable accordion
-    Given the About section is visible
-    Then three accordion items are shown: "Why choose me?", "What I do?", "My Specialties"
-    When the user clicks "Why choose me?"
-    Then the panel expands to reveal content
-    When the user clicks "What I do?"
-    Then the previous panel collapses and this one expands
+- **GIVEN** the user scrolls to the About section
+- **THEN** two overlapping images are displayed on the left
+- **AND** a heading "Welcome & Introduce" is shown
+- **AND** the name "Hola! my name is Louie Jie!" appears
+- **AND** an introductory paragraph is present
 
-  Scenario: Accordion defaults to first item open
-    Given the About section loads
-    Then the "Why choose me?" panel is expanded by default
-    And the other two panels are collapsed
-```
+#### Scenario: About section has expandable accordion
+
+- **GIVEN** the About section is visible
+- **THEN** three accordion items are shown: "Why choose me?", "What I do?", "My Specialties"
+- **WHEN** the user clicks "Why choose me?"
+- **THEN** the panel expands to reveal content
+- **WHEN** the user clicks "What I do?"
+- **THEN** the previous panel collapses and this one expands
+
+#### Scenario: Accordion defaults to first item open
+
+- **GIVEN** the About section loads
+- **THEN** the "Why choose me?" panel is expanded by default
+- **AND** the other two panels are collapsed
 
 ### Services
-```gherkin
+
 Feature: Taskfolio Services Section
 
-  Scenario: Services section displays 6 expertise cards
-    Given the user scrolls to the Services section
-    Then a section label "What I do?" is shown
-    And a heading "Here are some of my expertise" appears
-    And 6 service cards are displayed in a 2-column grid
-    And each card has an icon, title, and description
+#### Scenario: Services section displays 6 expertise cards
 
-  Scenario: Services cards have correct content
-    Given the Services section is visible
-    Then card 1 shows "Branding" with icon
-    And card 2 shows "Web Design" with icon
-    And card 3 shows "Search engine optimization" with icon
-    And card 4 shows "Web Development" with icon
-    And card 5 shows "User Interface" with icon
-    And card 6 shows "Help & Support" with icon
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a section label "What I do?" is shown
+- **AND** a heading "Here are some of my expertise" appears
+- **AND** 6 service cards are displayed in a 2-column grid
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Services cards have correct content
+
+- **GIVEN** the Services section is visible
+- **THEN** card 1 shows "Branding" with icon
+- **AND** card 2 shows "Web Design" with icon
+- **AND** card 3 shows "Search engine optimization" with icon
+- **AND** card 4 shows "Web Development" with icon
+- **AND** card 5 shows "User Interface" with icon
+- **AND** card 6 shows "Help & Support" with icon
 
 ### Portfolio/Work
-```gherkin
+
 Feature: Taskfolio Portfolio Grid
 
-  Scenario: Portfolio section shows 6 project cards
-    Given the user scrolls to the Work section
-    Then a section label "My Work" is shown
-    And a heading "Recent Work" appears
-    And 6 project cards are displayed in a 2-column grid
+#### Scenario: Portfolio section shows 6 project cards
 
-  Scenario: Project card displays on hover
-    Given a project card is visible
-    Then the card shows a background image
-    When the user hovers over the card
-    Then an overlay appears with the project title, tags, and stats (share, views, likes)
+- **GIVEN** the user scrolls to the Work section
+- **THEN** a section label "My Work" is shown
+- **AND** a heading "Recent Work" appears
+- **AND** 6 project cards are displayed in a 2-column grid
 
-  Scenario: Project cards have correct content
-    Given the Portfolio section is visible
-    Then card 1 shows "Work 01" with tags "Branding, Ilustration"
-    And card 2 shows "Work 02" with tags "Logo, Web, Branding"
-    And card 3 shows "Work 03" with tags "Illustration, Logo"
-    And card 4 shows "Work 04" with tags "Web, Logo, Branding"
-    And card 5 shows "Work 05" with tags "Illustration, Logo"
-    And card 6 shows "Work 06" with tags "Web, Logo, Branding"
-```
+#### Scenario: Project card displays on hover
+
+- **GIVEN** a project card is visible
+- **THEN** the card shows a background image
+- **WHEN** the user hovers over the card
+- **THEN** an overlay appears with the project title, tags, and stats (share, views, likes)
+
+#### Scenario: Project cards have correct content
+
+- **GIVEN** the Portfolio section is visible
+- **THEN** card 1 shows "Work 01" with tags "Branding, Ilustration"
+- **AND** card 2 shows "Work 02" with tags "Logo, Web, Branding"
+- **AND** card 3 shows "Work 03" with tags "Illustration, Logo"
+- **AND** card 4 shows "Work 04" with tags "Web, Logo, Branding"
+- **AND** card 5 shows "Work 05" with tags "Illustration, Logo"
+- **AND** card 6 shows "Work 06" with tags "Web, Logo, Branding"
 
 ### Blog
-```gherkin
+
 Feature: Taskfolio Blog Section
 
-  Scenario: Blog section shows 3 entries
-    Given the user scrolls to the Blog section
-    Then a section label "Read" is shown
-    And a heading "Recent Blog" appears
-    And 3 blog entries are displayed in a 3-column grid
+#### Scenario: Blog section shows 3 entries
 
-  Scenario: Blog entry displays correctly
-    Given a blog entry is visible
-    Then it shows a thumbnail image
-    And meta information (date, category, comment count)
-    And a title link
-    And an excerpt paragraph
-    And a "Read More" link with arrow icon
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a section label "Read" is shown
+- **AND** a heading "Recent Blog" appears
+- **AND** 3 blog entries are displayed in a 3-column grid
 
-  Scenario: Blog entries have correct content
-    Given the Blog section is visible
-    Then entry 1 title is "18 Awesome sites" in category "Web Design"
-    And entry 2 title is "Wordpress for a Beginner" in category "Web Design"
-    And entry 3 title is "Make website from scratch" in category "Inspiration"
-```
+#### Scenario: Blog entry displays correctly
+
+- **GIVEN** a blog entry is visible
+- **THEN** it shows a thumbnail image
+- **AND** meta information (date, category, comment count)
+- **AND** a title link
+- **AND** an excerpt paragraph
+- **AND** a "Read More" link with arrow icon
+
+#### Scenario: Blog entries have correct content
+
+- **GIVEN** the Blog section is visible
+- **THEN** entry 1 title is "18 Awesome sites" in category "Web Design"
+- **AND** entry 2 title is "Wordpress for a Beginner" in category "Web Design"
+- **AND** entry 3 title is "Make website from scratch" in category "Inspiration"
 
 ### Get in Touch (CTA)
-```gherkin
+
 Feature: Taskfolio Contact CTA
 
-  Scenario: CTA section displays contact prompt
-    Given the user scrolls to the CTA section
-    Then the heading "Get in Touch!" is visible
-    And a lead paragraph is displayed
-    And a "Contact me!" button is shown in coral pill style
+#### Scenario: CTA section displays contact prompt
 
-  Scenario: CTA button is styled as pill
-    Given the CTA section is visible
-    Then the button has rounded corners (border-radius: 30px)
-    And the button background is #F75940
-    And the button text is white
-```
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the heading "Get in Touch!" is visible
+- **AND** a lead paragraph is displayed
+- **AND** a "Contact me!" button is shown in coral pill style
+
+#### Scenario: CTA button is styled as pill
+
+- **GIVEN** the CTA section is visible
+- **THEN** the button has rounded corners (border-radius: 30px)
+- **AND** the button background is #F75940
+- **AND** the button text is white
 
 ### Responsive
-```gherkin
+
 Feature: Taskfolio Responsive Design
 
-  Scenario: Layout adapts on tablet
-    Given the viewport is ≤1200px wide
-    Then the sidebar width increases to 30%
-    And the main content width decreases to 70%
+#### Scenario: Layout adapts on tablet
 
-  Scenario: Layout adapts on mobile
-    Given the viewport is ≤768px wide
-    Then the sidebar becomes a slide-out drawer (270px)
-    And the main content takes full width
-    And the hero heading font reduces to 28px
-    And service cards stack in a single column
-    And blog entries stack in a single column
-```
+- **GIVEN** the viewport is ≤1200px wide
+- **THEN** the sidebar width increases to 30%
+- **AND** the main content width decreases to 70%
+
+#### Scenario: Layout adapts on mobile
+
+- **GIVEN** the viewport is ≤768px wide
+- **THEN** the sidebar becomes a slide-out drawer (270px)
+- **AND** the main content takes full width
+- **AND** the hero heading font reduces to 28px
+- **AND** service cards stack in a single column
+- **AND** blog entries stack in a single column
 
 ## Verification Checklist
 

@@ -23,7 +23,7 @@ Recreation of ColorLib **Colorlib Wizard 26** (`https://colorlib.com/wp/template
   3. **Interactive Step Form**: Active step fields with live validation, next/previous buttons, and summary view.
   4. **Footer**: Clean footer with copyright and mandatory Component Dock attribution (`https://www.componentdock.com/`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Multi-Step Booking Wizard
 
@@ -31,23 +31,23 @@ As a user visiting Arcanum, I want to step through a multi-step booking form so 
 
 #### Scenario: User navigates through wizard steps
 
-- Given the user is on step 1 of the Arcanum booking wizard
-- When the user fills out required personal information and clicks "Next"
-- Then the wizard advances to step 2 (Preferences & Booking Details)
-- And the step indicator updates to reflect the current progress.
+- **GIVEN** the user is on step 1 of the Arcanum booking wizard
+- **WHEN** the user fills out required personal information and clicks "Next"
+- **THEN** the wizard advances to step 2 (Preferences & Booking Details)
+- **AND** the step indicator updates to reflect the current progress
 
 #### Scenario: User validates inputs before proceeding
 
-- Given the user is on any step with required fields
-- When the user clicks "Next" with empty required fields
-- Then validation errors are displayed for each missing field
-- And the wizard prevents advancing to the next step.
+- **GIVEN** the user is on any step with required fields
+- **WHEN** the user clicks "Next" with empty required fields
+- **THEN** validation errors are displayed for each missing field
+- **AND** the wizard prevents advancing to the next step
 
 #### Scenario: User completes final confirmation
 
-- Given the user has reached the final step of the wizard
-- When the user clicks "Confirm Booking"
-- Then a success confirmation screen is displayed with booking details summary.
+- **GIVEN** the user has reached the final step of the wizard
+- **WHEN** the user clicks "Confirm Booking"
+- **THEN** a success confirmation screen is displayed with booking details summary
 
 ## Verification Checklist
 

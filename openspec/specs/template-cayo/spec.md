@@ -133,19 +133,27 @@ The restaurant section SHALL display a tabbed interface with Main Dish, Drinks, 
 - **THEN** drink menu items are displayed
 - **AND** Main Dish items are hidden
 
-### Requirement: Counter section displays statistics
+### Feature: Counter section displays statistics
+
+#### Scenario: Counter section displays statistics
 
 The counter section SHALL display 4 statistics with parallax background: 50 Hotel Branches, 20000 Happy Guests, 100 Rooms, 100 Destinations.
 
-### Requirement: About section with video preview
+### Feature: About section with video preview
+
+#### Scenario: About section with video preview
 
 The about section SHALL display a video preview image with play button, heading "Watch Our Video", description text, and social media links.
 
-### Requirement: Testimonials carousel
+### Feature: Testimonials carousel
+
+#### Scenario: Testimonials carousel
 
 The testimonials section SHALL display a carousel of guest reviews with avatars, star ratings, quotes, and navigation arrows.
 
-### Requirement: Blog section displays recent posts
+### Feature: Blog section displays recent posts
+
+#### Scenario: Blog section displays recent posts
 
 The blog section SHALL display 3 blog post cards with images, dates, authors, comment counts, and excerpts.
 

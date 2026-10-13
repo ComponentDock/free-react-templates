@@ -80,156 +80,176 @@ in app code — provenance lives in this spec, TEMPLATES.md, and the PR.
 
 ## Requirements
 
-### Requirement: Header — white bar with logo + nav + hamburger
+### Feature: Header — white bar with logo + nav + hamburger
 
 #### Scenario: Header content
-- GIVEN the page loads
-- WHEN the header is rendered
-- THEN it displays a logo (image or text) on the left
-- AND navigation links: Home, Generic, Elements
-- AND a hamburger menu icon on the right for mobile
+
+- **GIVEN** the page loads
+- **WHEN** the header is rendered
+- **THEN** it displays a logo (image or text) on the left
+- **AND** navigation links: Home, Generic, Elements
+- **AND** a hamburger menu icon on the right for mobile
 
 #### Scenario: Mobile menu
-- GIVEN the viewport is below 768px
-- WHEN the page is rendered
-- THEN the nav links are hidden and a hamburger icon appears
-- AND clicking the hamburger toggles a dropdown with all nav links
 
-### Requirement: Hero banner — full-width darkened photo with centered red heading
+- **GIVEN** the viewport is below 768px
+- **WHEN** the page is rendered
+- **THEN** the nav links are hidden and a hamburger icon appears
+- **AND** clicking the hamburger toggles a dropdown with all nav links
+
+### Feature: Hero banner — full-width darkened photo with centered red heading
 
 #### Scenario: Hero content
-- GIVEN the hero section is rendered
-- WHEN viewed
-- THEN it displays heading "Crafting Best Experience" in brand red
-- AND a white subtitle "Art and Crafting / Acting and Philosophy"
+
+- **GIVEN** the hero section is rendered
+- **WHEN** viewed
+- **THEN** it displays heading "Crafting Best Experience" in brand red
+- **AND** a white subtitle "Art and Crafting / Acting and Philosophy"
 
 #### Scenario: Hero styling
-- GIVEN the hero section is rendered
-- WHEN viewed
-- THEN it has a darkened background photo (cover, centered) with 75% black overlay
-- AND h1 is 60px Poppins 600 in `#f5204b` (red), responsive to 40px on mobile
-- AND the section is full-screen height
 
-### Requirement: Experience section — photo thumbs + descriptive text
+- **GIVEN** the hero section is rendered
+- **WHEN** viewed
+- **THEN** it has a darkened background photo (cover, centered) with 75% black overlay
+- **AND** h1 is 60px Poppins 600 in `#f5204b` (red), responsive to 40px on mobile
+- **AND** the section is full-screen height
+
+### Feature: Experience section — photo thumbs + descriptive text
 
 #### Scenario: Experience content
-- GIVEN the experience section is rendered
-- WHEN viewed
-- THEN it displays heading "From the root of experience We dig out the best talent"
-- AND a subtitle paragraph
-- AND a description paragraph
-- AND a "View Details" button
+
+- **GIVEN** the experience section is rendered
+- **WHEN** viewed
+- **THEN** it displays heading "From the root of experience We dig out the best talent"
+- **AND** a subtitle paragraph
+- **AND** a description paragraph
+- **AND** a "View Details" button
 
 #### Scenario: Experience layout
-- GIVEN the experience section is rendered
-- WHEN viewed on desktop
-- THEN it uses a 3+3+6 column layout (2 photo thumbs on left, text on right)
-- AND photo thumbs have min-height 400px with cover background
 
-### Requirement: Carousel section — dark bg with white card carousel
+- **GIVEN** the experience section is rendered
+- **WHEN** viewed on desktop
+- **THEN** it uses a 3+3+6 column layout (2 photo thumbs on left, text on right)
+- **AND** photo thumbs have min-height 400px with cover background
+
+### Feature: Carousel section — dark bg with white card carousel
 
 #### Scenario: Carousel content
-- GIVEN the carousel section is rendered
-- WHEN viewed
-- THEN it displays a white card with heading (in brand red) and paragraph
-- AND prev/next arrow buttons for navigation
-- AND 3 carousel items that cycle on arrow click
+
+- **GIVEN** the carousel section is rendered
+- **WHEN** viewed
+- **THEN** it displays a white card with heading (in brand red) and paragraph
+- **AND** prev/next arrow buttons for navigation
+- **AND** 3 carousel items that cycle on arrow click
 
 #### Scenario: Carousel styling
-- GIVEN the carousel section is rendered
-- WHEN viewed
-- THEN it has a darkened background photo with 25% black overlay
-- AND the white card is positioned on the right half of the viewport
-- AND prev/next buttons are 40px squares, white bg, turning red on hover
 
-### Requirement: Services section — 4 centered icon cards
+- **GIVEN** the carousel section is rendered
+- **WHEN** viewed
+- **THEN** it has a darkened background photo with 25% black overlay
+- **AND** the white card is positioned on the right half of the viewport
+- **AND** prev/next buttons are 40px squares, white bg, turning red on hover
+
+### Feature: Services section — 4 centered icon cards
 
 #### Scenario: Services content
-- GIVEN the services section is rendered
-- WHEN viewed
-- THEN it displays 4 service cards, each with a square icon, title, and description
-- AND icons are in brand red color
+
+- **GIVEN** the services section is rendered
+- **WHEN** viewed
+- **THEN** it displays 4 service cards, each with a square icon, title, and description
+- **AND** icons are in brand red color
 
 #### Scenario: Services layout
-- GIVEN the services section is rendered
-- WHEN viewed
-- THEN background is `#f9faff` (light)
-- AND icon containers are 130px white squares with 3px border-radius
-- AND cards are centered in a 4-column grid
 
-### Requirement: Video section — red-tinted overlay with video thumbnail + text
+- **GIVEN** the services section is rendered
+- **WHEN** viewed
+- **THEN** background is `#f9faff` (light)
+- **AND** icon containers are 130px white squares with 3px border-radius
+- **AND** cards are centered in a 4-column grid
+
+### Feature: Video section — red-tinted overlay with video thumbnail + text
 
 #### Scenario: Video content
-- GIVEN the video section is rendered
-- WHEN viewed
-- THEN it displays heading "From the root of experience We dig out the best talent" in white
-- AND a description paragraph in white
-- AND a video thumbnail with a centered play button on the left
+
+- **GIVEN** the video section is rendered
+- **WHEN** viewed
+- **THEN** it displays heading "From the root of experience We dig out the best talent" in white
+- **AND** a description paragraph in white
+- **AND** a video thumbnail with a centered play button on the left
 
 #### Scenario: Video styling
-- GIVEN the video section is rendered
-- WHEN viewed
-- THEN the section has a red-tinted overlay (`rgba(245,32,75,0.75)`)
-- AND the video thumbnail has a dark overlay (`rgba(0,0,0,0.75)`) with box-shadow
-- AND text content is on the right side
 
-### Requirement: Services-2 section — 3 horizontal icon+text cards
+- **GIVEN** the video section is rendered
+- **WHEN** viewed
+- **THEN** the section has a red-tinted overlay (`rgba(245,32,75,0.75)`)
+- **AND** the video thumbnail has a dark overlay (`rgba(0,0,0,0.75)`) with box-shadow
+- **AND** text content is on the right side
+
+### Feature: Services-2 section — 3 horizontal icon+text cards
 
 #### Scenario: Services-2 content
-- GIVEN the services-2 section is rendered
-- WHEN viewed
-- THEN it displays 3 service cards, each with a square icon, title, and description
-- AND cards are laid out horizontally (icon left, text right)
+
+- **GIVEN** the services-2 section is rendered
+- **WHEN** viewed
+- **THEN** it displays 3 service cards, each with a square icon, title, and description
+- **AND** cards are laid out horizontally (icon left, text right)
 
 #### Scenario: Services-2 layout
-- GIVEN the services-2 section is rendered
-- WHEN viewed
-- THEN icon containers are 90px squares with `#f9faff` background
-- AND text is left-aligned with 20px left margin
 
-### Requirement: Contact section — address blocks + dark contact form
+- **GIVEN** the services-2 section is rendered
+- **WHEN** viewed
+- **THEN** icon containers are 90px squares with `#f9faff` background
+- **AND** text is left-aligned with 20px left margin
+
+### Feature: Contact section — address blocks + dark contact form
 
 #### Scenario: Contact content
-- GIVEN the contact section is rendered
-- WHEN viewed
-- THEN it displays 3 address blocks: Address, Email Address, Phone Number
-- AND a contact form with name input, email input, textarea, and "Send Message" button
+
+- **GIVEN** the contact section is rendered
+- **WHEN** viewed
+- **THEN** it displays 3 address blocks: Address, Email Address, Phone Number
+- **AND** a contact form with name input, email input, textarea, and "Send Message" button
 
 #### Scenario: Contact address hover
-- GIVEN an address block is rendered
-- WHEN the user hovers over it
-- THEN the icon square turns brand red
-- AND the icon color turns white
+
+- **GIVEN** an address block is rendered
+- **WHEN** the user hovers over it
+- **THEN** the icon square turns brand red
+- **AND** the icon color turns white
 
 #### Scenario: Contact form styling
-- GIVEN the contact form is rendered
-- WHEN viewed
-- THEN it has a dark `#222` background with 40px/30px padding
-- AND inputs have transparent backgrounds with subtle border
-- AND the submit button is white with red text (`.primary-btn white-bg`)
 
-### Requirement: Footer — 3-column widgets + copyright bar
+- **GIVEN** the contact form is rendered
+- **WHEN** viewed
+- **THEN** it has a dark `#222` background with 40px/30px padding
+- **AND** inputs have transparent backgrounds with subtle border
+- **AND** the submit button is white with red text (`.primary-btn white-bg`)
+
+### Feature: Footer — 3-column widgets + copyright bar
 
 #### Scenario: Footer content
-- GIVEN the footer is rendered
-- WHEN viewed
-- THEN it has 3 columns: About Agency (4 links), Newsletter (email form), Instafeed (8 images in a 4×2 grid)
-- AND a copyright bar with social icons
+
+- **GIVEN** the footer is rendered
+- **WHEN** viewed
+- **THEN** it has 3 columns: About Agency (4 links), Newsletter (email form), Instafeed (8 images in a 4×2 grid)
+- **AND** a copyright bar with social icons
 
 #### Scenario: Footer credit
-- GIVEN the footer copyright bar is rendered
-- WHEN viewed
-- THEN it displays "Copyright © <year> All rights reserved" with a heart icon
-- AND a credit link to https://www.componentdock.com/ ("Component Dock")
+
+- **GIVEN** the footer copyright bar is rendered
+- **WHEN** viewed
+- **THEN** it displays "Copyright © <year> All rights reserved" with a heart icon
+- **AND** a credit link to https://www.componentdock.com/ ("Component Dock")
 
 #### Scenario: Footer styling
-- GIVEN the footer is rendered
-- WHEN viewed
-- THEN background is dark `#222222`
-- AND all widget headings are white, uppercase, 500 weight
-- AND footer links are white, hover to `#f5204b`
-- AND social icon squares are 30px, `#111` bg, white icons, hover `#f5204b`
-- AND the newsletter input has `border-radius: 25px` (pill shape)
+
+- **GIVEN** the footer is rendered
+- **WHEN** viewed
+- **THEN** background is dark `#222222`
+- **AND** all widget headings are white, uppercase, 500 weight
+- **AND** footer links are white, hover to `#f5204b`
+- **AND** social icon squares are 30px, `#111` bg, white icons, hover `#f5204b`
+- **AND** the newsletter input has `border-radius: 25px` (pill shape)
 
 ## Verification checklist
 

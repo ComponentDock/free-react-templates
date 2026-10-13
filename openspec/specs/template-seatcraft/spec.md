@@ -23,97 +23,109 @@ Recreation of ColorLib "Colorlib Wizard 7" — a multi-step restaurant table boo
 | Step indicator text | `#FFFFFF` (white, small) | Progress marker |
 | Food image backdrop | Dark/moody editorial photography | Hero imagery |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Restaurant Table Booking Wizard
 
 #### Scenario: Page Load and Layout
-  Given the user loads the booking page
-  When the page renders
-  Then a centered booking widget is displayed on a white background
-  And a high-end food photograph occupies the left/center area
-  And a dark charcoal form panel overlaps the image on the right
-  And the overall aesthetic is luxury minimalist fine-dining
+
+- **GIVEN** the user loads the booking page
+- **WHEN** the page renders
+- **THEN** a centered booking widget is displayed on a white background
+- **AND** a high-end food photograph occupies the left/center area
+- **AND** a dark charcoal form panel overlaps the image on the right
+- **AND** the overall aesthetic is luxury minimalist fine-dining
 
 #### Scenario: Step 1 — Guest & Time Details
-  Given the user is on step 1 of the wizard
-  When step 1 is displayed
-  Then the title "BOOK A TABLE" is shown at the top of the form panel in white bold uppercase
-  And a decorative subtitle "~ Check out our place ~" is shown in warm gold script font
-  And the "People" selector is displayed (dropdown, default value "1")
-  And the "Date" field is displayed (showing current/selected date in format "14 MAR 2021")
-  And the "Time" field shows dual dropdowns for start/end time (e.g. "9 AM" — "7 PM")
-  And a "NEXT" ghost button is shown at the bottom (white border, white text, transparent fill)
-  And a step indicator "1/3" is displayed at the bottom right
+
+- **GIVEN** the user is on step 1 of the wizard
+- **WHEN** step 1 is displayed
+- **THEN** the title "BOOK A TABLE" is shown at the top of the form panel in white bold uppercase
+- **AND** a decorative subtitle "~ Check out our place ~" is shown in warm gold script font
+- **AND** the "People" selector is displayed (dropdown, default value "1")
+- **AND** the "Date" field is displayed (showing current/selected date in format "14 MAR 2021")
+- **AND** the "Time" field shows dual dropdowns for start/end time (e.g. "9 AM" — "7 PM")
+- **AND** a "NEXT" ghost button is shown at the bottom (white border, white text, transparent fill)
+- **AND** a step indicator "1/3" is displayed at the bottom right
 
 #### Scenario: Guest Count Selection
-  Given the user is on step 1
-  When the user clicks the "People" dropdown
-  Then a list of guest count options is presented
-  And the user can select a number of guests (1–10+)
-  And the selected value updates in the People field
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks the "People" dropdown
+- **THEN** a list of guest count options is presented
+- **AND** the user can select a number of guests (1–10+)
+- **AND** the selected value updates in the People field
 
 #### Scenario: Date Selection
-  Given the user is on step 1
-  When the user interacts with the Date field
-  Then a date picker or dropdown allows selecting a reservation date
-  And the selected date is displayed in the field (e.g. "14 MAR 2021")
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user interacts with the Date field
+- **THEN** a date picker or dropdown allows selecting a reservation date
+- **AND** the selected date is displayed in the field (e.g. "14 MAR 2021")
 
 #### Scenario: Time Range Selection
-  Given the user is on step 1
-  When the user interacts with the Time field
-  Then dual time dropdowns allow selecting a start and end time
-  And the selected time range is displayed (e.g. "9 AM" — "7 PM")
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user interacts with the Time field
+- **THEN** dual time dropdowns allow selecting a start and end time
+- **AND** the selected time range is displayed (e.g. "9 AM" — "7 PM")
 
 #### Scenario: Step 1 to Step 2 Navigation
-  Given the user has filled the guest, date, and time fields on step 1
-  When the user clicks "NEXT"
-  Then step 2 content is displayed
-  And the step indicator updates to "2/3"
-  And the form panel transitions smoothly to show step 2 fields
+
+- **GIVEN** the user has filled the guest, date, and time fields on step 1
+- **WHEN** the user clicks "NEXT"
+- **THEN** step 2 content is displayed
+- **AND** the step indicator updates to "2/3"
+- **AND** the form panel transitions smoothly to show step 2 fields
 
 #### Scenario: Step 2 Content
-  Given step 2 is displayed
-  When the wizard shows step 2
-  Then a contact information section is shown (name, email, phone)
-  And a back/previous action is available to return to step 1
-  And the "NEXT" button advances to step 3
+
+- **GIVEN** step 2 is displayed
+- **WHEN** the wizard shows step 2
+- **THEN** a contact information section is shown (name, email, phone)
+- **AND** a back/previous action is available to return to step 1
+- **AND** the "NEXT" button advances to step 3
 
 #### Scenario: Step 3 Confirmation
-  Given step 3 is displayed
-  When the wizard shows step 3
-  Then a booking summary/review is displayed (guest count, date, time, contact info)
-  And a "CONFIRM" or "BOOK NOW" button is shown
-  And clicking it shows a success confirmation
+
+- **GIVEN** step 3 is displayed
+- **WHEN** the wizard shows step 3
+- **THEN** a booking summary/review is displayed (guest count, date, time, contact info)
+- **AND** a "CONFIRM" or "BOOK NOW" button is shown
+- **AND** clicking it shows a success confirmation
 
 #### Scenario: Step Indicator Updates
-  Given the wizard has multiple steps
-  When the user navigates between steps
-  Then the step indicator text updates (1/3, 2/3, 3/3)
-  And the current step content is visible while other steps are hidden
+
+- **GIVEN** the wizard has multiple steps
+- **WHEN** the user navigates between steps
+- **THEN** the step indicator text updates (1/3, 2/3, 3/3)
+- **AND** the current step content is visible while other steps are hidden
 
 #### Scenario: Step Navigation Back
-  Given the user is on step 2 or 3
-  When the user clicks a back action
-  Then the wizard returns to the previous step
-  And previously entered data is preserved
-  And the step indicator updates accordingly
+
+- **GIVEN** the user is on step 2 or 3
+- **WHEN** the user clicks a back action
+- **THEN** the wizard returns to the previous step
+- **AND** previously entered data is preserved
+- **AND** the step indicator updates accordingly
 
 #### Scenario: Responsive Layout
-  Given the user views the wizard on a mobile device
-  When the viewport is narrow
-  Then the form panel stacks vertically above or below the food image
-  And the overlap effect is simplified or removed
-  And form elements remain tappable (minimum 44px touch targets)
-  And the "NEXT" button spans full width
+
+- **GIVEN** the user views the wizard on a mobile device
+- **WHEN** the viewport is narrow
+- **THEN** the form panel stacks vertically above or below the food image
+- **AND** the overlap effect is simplified or removed
+- **AND** form elements remain tappable (minimum 44px touch targets)
+- **AND** the "NEXT" button spans full width
 
 #### Scenario: Keyboard Accessibility
-  Given the wizard is displayed
-  When the user navigates with keyboard
-  Then all form fields are focusable with visible focus rings
-  And the tab order follows logical field sequence
-  And dropdowns and buttons are operable via Enter/Space
-  And the step indicator is announced for screen readers
+
+- **GIVEN** the wizard is displayed
+- **WHEN** the user navigates with keyboard
+- **THEN** all form fields are focusable with visible focus rings
+- **AND** the tab order follows logical field sequence
+- **AND** dropdowns and buttons are operable via Enter/Space
+- **AND** the step indicator is announced for screen readers
 
 ## Verification Checklist
 

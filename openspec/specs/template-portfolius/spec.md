@@ -53,219 +53,219 @@ Extracted from the live preview stylesheet (`css/style.css`) and screenshot anal
 - Footer: 4-column layout (about, links, services, contact info) + social icons (Twitter, Facebook, Instagram), dark bg.
 - Copyright bar at very bottom.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar renders with brand and navigation links
-  Given the page loads
-  Then a dark navbar is visible at the top
-  And the brand text "Portfolio" (renamed from "Clyde") is displayed on the left
-  And navigation links are visible: Home, About, Skills, Services, Projects, Blog, Contact
-  And the navbar becomes solid on scroll
+#### Scenario: Navbar renders with brand and navigation links
 
-Scenario: Navbar brand links to top of page
-  Given the user scrolls down
-  When the user clicks the brand text
-  Then the page scrolls to the top
-```
+- **GIVEN** the page loads
+- **THEN** a dark navbar is visible at the top
+- **AND** the brand text "Portfolio" (renamed from "Clyde") is displayed on the left
+- **AND** navigation links are visible: Home, About, Skills, Services, Projects, Blog, Contact
+- **AND** the navbar becomes solid on scroll
+
+#### Scenario: Navbar brand links to top of page
+
+- **GIVEN** the user scrolls down
+- **WHEN** the user clicks the brand text
+- **THEN** the page scrolls to the top
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero displays headline and CTAs
-  Given the page loads
-  Then a hero section is visible with a background portrait image on the right
-  And a subtitle text "We Design & Build Brands" is shown
-  And a headline "Hi, I am Portfolius This is my favorite work." is displayed
-  And two CTA buttons are visible: "Hire me" (solid) and "Download CV" (outline)
+#### Scenario: Hero displays headline and CTAs
 
-Scenario: Hero CTA buttons are interactive
-  Given the hero section is visible
-  When the user clicks "Hire me"
-  Then the page scrolls to the contact section
-  When the user clicks "Download CV"
-  Then a download action is triggered
-```
+- **GIVEN** the page loads
+- **THEN** a hero section is visible with a background portrait image on the right
+- **AND** a subtitle text "We Design & Build Brands" is shown
+- **AND** a headline "Hi, I am Portfolius This is my favorite work." is displayed
+- **AND** two CTA buttons are visible: "Hire me" (solid) and "Download CV" (outline)
+
+#### Scenario: Hero CTA buttons are interactive
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user clicks "Hire me"
+- **THEN** the page scrolls to the contact section
+- **WHEN** the user clicks "Download CV"
+- **THEN** a download action is triggered
 
 ### Stats Counter
 
-```gherkin
-Scenario: Stats counter displays 4 metrics
-  Given the page loads
-  Then a stats bar section is visible on a light gray background
-  And 4 stat items are displayed in a row:
-    | Icon       | Number | Label            |
-    | Suitcase   | 750    | Project Complete |
-    | Loyalty    | 568    | Happy Clients    |
-    | Coffee     | 478    | Cups of Coffee   |
-    | Calendar   | 780    | Years Experienced|
+#### Scenario: Stats counter displays 4 metrics
 
-Scenario: Stats animate on scroll into view
-  Given the stats section is below the viewport
-  When the user scrolls to the stats section
-  Then the numbers count up from 0 to their target values
-```
+- **GIVEN** the page loads
+- **THEN** a stats bar section is visible on a light gray background
+- **AND** 4 stat items are displayed in a row:
+| Icon       | Number | Label            |
+| Suitcase   | 750    | Project Complete |
+| Loyalty    | 568    | Happy Clients    |
+| Coffee     | 478    | Cups of Coffee   |
+| Calendar   | 780    | Years Experienced|
+
+#### Scenario: Stats animate on scroll into view
+
+- **GIVEN** the stats section is below the viewport
+- **WHEN** the user scrolls to the stats section
+- **THEN** the numbers count up from 0 to their target values
 
 ### About Section
 
-```gherkin
-Scenario: About section displays personal info
-  Given the page loads
-  Then an "About Me" section is visible
-  And a portrait image is displayed on the left
-  And personal info is listed on the right:
-    | Field         | Value                          |
-    | Name          | Portfolius Creative            |
-    | Date of birth | January 01, 1990               |
-    | Address       | San Francisco CA 97987 USA     |
-    | Zip code      | 1000                           |
-    | Email         | hello@portfolius.dev           |
-    | Phone         | +1-2234-5678-9-0               |
+#### Scenario: About section displays personal info
 
-Scenario: About section shows interests
-  Given the about section is visible
-  Then an interests row is displayed with icons:
-    | Interest | Icon     |
-    | Music    | Headphones |
-    | Travel   | Suitcases  |
-    | Movie    | Video      |
-    | Sports   | Football   |
-```
+- **GIVEN** the page loads
+- **THEN** an "About Me" section is visible
+- **AND** a portrait image is displayed on the left
+- **AND** personal info is listed on the right:
+| Field         | Value                          |
+| Name          | Portfolius Creative            |
+| Date of birth | January 01, 1990               |
+| Address       | San Francisco CA 97987 USA     |
+| Zip code      | 1000                           |
+| Email         | hello@portfolius.dev           |
+| Phone         | +1-2234-5678-9-0               |
+
+#### Scenario: About section shows interests
+
+- **GIVEN** the about section is visible
+- **THEN** an interests row is displayed with icons:
+| Interest | Icon     |
+| Music    | Headphones |
+| Travel   | Suitcases  |
+| Movie    | Video      |
+| Sports   | Football   |
 
 ### Skills Section
 
-```gherkin
-Scenario: Skills section displays progress circles
-  Given the page loads
-  Then a "My Skills" section is visible on a light gray background
-  And 3 skill cards are displayed in a row:
-    | Skill  | Percentage |
-    | CSS    | 95%        |
-    | HTML   | 98%        |
-    | jQuery | 68%        |
+#### Scenario: Skills section displays progress circles
 
-Scenario: Each skill card shows weekly and monthly comparison
-  Given the skills section is visible
-  Then each skill card has "Last week" and "Last month" sub-metrics
-```
+- **GIVEN** the page loads
+- **THEN** a "My Skills" section is visible on a light gray background
+- **AND** 3 skill cards are displayed in a row:
+| Skill  | Percentage |
+| CSS    | 95%        |
+| HTML   | 98%        |
+| jQuery | 68%        |
+
+#### Scenario: Each skill card shows weekly and monthly comparison
+
+- **GIVEN** the skills section is visible
+- **THEN** each skill card has "Last week" and "Last month" sub-metrics
 
 ### Services Section
 
-```gherkin
-Scenario: Services section displays 8 service cards
-  Given the page loads
-  Then a services section is visible
-  And 8 service cards are displayed in 2 rows of 4:
-    | Service          |
-    | Web Design       |
-    | Web Application  |
-    | Web Development  |
-    | Banner Design    |
-    | Branding         |
-    | (4 more services)|
+#### Scenario: Services section displays 8 service cards
 
-Scenario: Each service card has icon, title, and description
-  Given the services section is visible
-  Then each service card shows an olive circular icon, a title, and a short description
-```
+- **GIVEN** the page loads
+- **THEN** a services section is visible
+- **AND** 8 service cards are displayed in 2 rows of 4:
+| Service          |
+| Web Design       |
+| Web Application  |
+| Web Development  |
+| Banner Design    |
+| Branding         |
+| (4 more services)|
+
+#### Scenario: Each service card has icon, title, and description
+
+- **GIVEN** the services section is visible
+- **THEN** each service card shows an olive circular icon, a title, and a short description
 
 ### Hire Me Section
 
-```gherkin
-Scenario: Hire me banner is displayed
-  Given the page loads
-  Then a full-width olive green (#b1b493) banner is visible
-  And the text "Have a project on your mind." is displayed in white
-  And a portrait image is shown on the right side
-  And a "Contact me" white button is visible
+#### Scenario: Hire me banner is displayed
 
-Scenario: Contact me button scrolls to contact
-  Given the hire-me section is visible
-  When the user clicks "Contact me"
-  Then the page scrolls to the contact section
-```
+- **GIVEN** the page loads
+- **THEN** a full-width olive green (#b1b493) banner is visible
+- **AND** the text "Have a project on your mind." is displayed in white
+- **AND** a portrait image is shown on the right side
+- **AND** a "Contact me" white button is visible
+
+#### Scenario: Contact me button scrolls to contact
+
+- **GIVEN** the hire-me section is visible
+- **WHEN** the user clicks "Contact me"
+- **THEN** the page scrolls to the contact section
 
 ### Projects Section
 
-```gherkin
-Scenario: Projects grid displays 8 project images
-  Given the page loads
-  Then a "Our Projects" section is visible
-  And 8 project images are displayed in a 4-column grid
-  And each project has a dark overlay with title and category on hover
+#### Scenario: Projects grid displays 8 project images
 
-Scenario: Projects respond to hover
-  Given the projects section is visible
-  When the user hovers over a project card
-  Then a dark overlay appears with project title and "Web Design" category label
-```
+- **GIVEN** the page loads
+- **THEN** a "Our Projects" section is visible
+- **AND** 8 project images are displayed in a 4-column grid
+- **AND** each project has a dark overlay with title and category on hover
+
+#### Scenario: Projects respond to hover
+
+- **GIVEN** the projects section is visible
+- **WHEN** the user hovers over a project card
+- **THEN** a dark overlay appears with project title and "Web Design" category label
 
 ### Testimonials Section
 
-```gherkin
-Scenario: Testimonials carousel displays quotes
-  Given the page loads
-  Then an olive green (#b1b493) testimonials section is visible
-  And a carousel of testimonial cards is displayed
-  And each card shows a quote, avatar image, name, and position
+#### Scenario: Testimonials carousel displays quotes
 
-Scenario: Testimonials carousel auto-scrolls
-  Given the testimonials section is visible
-  Then the carousel advances to the next testimonial automatically
-```
+- **GIVEN** the page loads
+- **THEN** an olive green (#b1b493) testimonials section is visible
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows a quote, avatar image, name, and position
+
+#### Scenario: Testimonials carousel auto-scrolls
+
+- **GIVEN** the testimonials section is visible
+- **THEN** the carousel advances to the next testimonial automatically
 
 ### Blog Section
 
-```gherkin
-Scenario: Blog section displays 3 blog cards
-  Given the page loads
-  Then a "Our Blog" section is visible on a light gray background
-  And 3 blog cards are displayed in a row
-  And each card shows an image, date, author, comment count, title, and excerpt
+#### Scenario: Blog section displays 3 blog cards
 
-Scenario: Blog cards are interactive
-  Given the blog section is visible
-  When the user clicks a blog card title
-  Then the card link is followed
-```
+- **GIVEN** the page loads
+- **THEN** a "Our Blog" section is visible on a light gray background
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card shows an image, date, author, comment count, title, and excerpt
+
+#### Scenario: Blog cards are interactive
+
+- **GIVEN** the blog section is visible
+- **WHEN** the user clicks a blog card title
+- **THEN** the card link is followed
 
 ### Contact Section
 
-```gherkin
-Scenario: Contact section shows form and info
-  Given the page loads
-  Then a "Have a Project?" section is visible
-  And a contact form with fields: Name, Email, Subject, Message is displayed
-  And a "Send Message" button is visible
-  And contact info is shown on the right:
-    | Type    | Value                                       |
-    | Address | 198 West 21th Street, Suite 721 New York   |
-    | Phone   | +1235 2355 98                               |
-    | Email   | info@yoursite.com                           |
-    | Website | yoursite.com                                |
+#### Scenario: Contact section shows form and info
 
-Scenario: Contact form validates inputs
-  Given the contact form is visible
-  When the user submits the form with empty fields
-  Then validation errors are shown
-```
+- **GIVEN** the page loads
+- **THEN** a "Have a Project?" section is visible
+- **AND** a contact form with fields: Name, Email, Subject, Message is displayed
+- **AND** a "Send Message" button is visible
+- **AND** contact info is shown on the right:
+| Type    | Value                                       |
+| Address | 198 West 21th Street, Suite 721 New York   |
+| Phone   | +1235 2355 98                               |
+| Email   | info@yoursite.com                           |
+| Website | yoursite.com                                |
+
+#### Scenario: Contact form validates inputs
+
+- **GIVEN** the contact form is visible
+- **WHEN** the user submits the form with empty fields
+- **THEN** validation errors are shown
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays 4 columns
-  Given the page loads
-  Then a dark footer is visible
-  And the footer contains 4 columns: About, Links, Services, Contact Info
-  And social media icons (Twitter, Facebook, Instagram) are displayed
-  And a copyright bar is shown at the bottom
+#### Scenario: Footer displays 4 columns
 
-Scenario: Footer contains Component Dock link
-  Given the footer is visible
-  Then a "Component Dock" link pointing to https://www.componentdock.com/ is present
-```
+- **GIVEN** the page loads
+- **THEN** a dark footer is visible
+- **AND** the footer contains 4 columns: About, Links, Services, Contact Info
+- **AND** social media icons (Twitter, Facebook, Instagram) are displayed
+- **AND** a copyright bar is shown at the bottom
+
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** the footer is visible
+- **THEN** a "Component Dock" link pointing to https://www.componentdock.com/ is present
 
 ## Section order (implementation sequence)
 

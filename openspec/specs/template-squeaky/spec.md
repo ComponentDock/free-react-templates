@@ -74,167 +74,174 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 10. **Blog** — 3 blog post cards with image, date, author, comment count, title
 11. **Footer** — Logo + description, social links (Twitter/Facebook/Instagram), Recent Posts with thumbnails, contact info (phone, email, address); "Made with Component Dock"
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Renders navigation links
-    Given the page loads
-    Then a navigation bar is visible
-    And it contains links: Home, About, Pricing, Services, Blog, Contact
-    And a "Request A Quote" button is present
 
-  Scenario: Responsive collapse
-    Given the viewport is mobile width
-    Then the nav collapses into a hamburger menu
-    And tapping the hamburger reveals the nav links
-```
+#### Scenario: Renders navigation links
+
+- **GIVEN** the page loads
+- **THEN** a navigation bar is visible
+- **AND** it contains links: Home, About, Pricing, Services, Blog, Contact
+- **AND** a "Request A Quote" button is present
+
+#### Scenario: Responsive collapse
+
+- **GIVEN** the viewport is mobile width
+- **THEN** the nav collapses into a hamburger menu
+- **AND** tapping the hamburger reveals the nav links
 
 ### Hero
 
-```gherkin
 Feature: Hero Section
-  Scenario: Displays headline and CTA
-    Given the page loads
-    Then the hero shows a subheading "Professional Cleaning"
-    And an h1 "A Clean Home is A Happy Home"
-    And descriptive paragraph text
-    And CTA button(s) visible
 
-  Scenario: Full-height background
-    Given the page loads
-    Then the hero section spans the full viewport height
-    And a background image is displayed with a dark overlay
-```
+#### Scenario: Displays headline and CTA
+
+- **GIVEN** the page loads
+- **THEN** the hero shows a subheading "Professional Cleaning"
+- **AND** an h1 "A Clean Home is A Happy Home"
+- **AND** descriptive paragraph text
+- **AND** CTA button(s) visible
+
+#### Scenario: Full-height background
+
+- **GIVEN** the page loads
+- **THEN** the hero section spans the full viewport height
+- **AND** a background image is displayed with a dark overlay
 
 ### About + Appointment Form
 
-```gherkin
 Feature: About and Appointment Form
-  Scenario: Split layout renders correctly
-    Given the page loads
-    Then the about section shows a split layout
-    And the left side contains a booking form
-    And the right side shows company description text
 
-  Scenario: Booking form fields
-    Given the about section is visible
-    Then the form has fields: First Name, Last Name, Service Select, Phone, Date, Time
-    And a "Submit Details" button is present
+#### Scenario: Split layout renders correctly
 
-  Scenario: Feature highlights
-    Given the about section is visible
-    Then 4 feature items are displayed: Highly Trained Staff, Best Equipments, 100% Warranty, Fast & Effective Service
-    And each feature has an icon and description text
-```
+- **GIVEN** the page loads
+- **THEN** the about section shows a split layout
+- **AND** the left side contains a booking form
+- **AND** the right side shows company description text
+
+#### Scenario: Booking form fields
+
+- **GIVEN** the about section is visible
+- **THEN** the form has fields: First Name, Last Name, Service Select, Phone, Date, Time
+- **AND** a "Submit Details" button is present
+
+#### Scenario: Feature highlights
+
+- **GIVEN** the about section is visible
+- **THEN** 4 feature items are displayed: Highly Trained Staff, Best Equipments, 100% Warranty, Fast & Effective Service
+- **AND** each feature has an icon and description text
 
 ### Counter Stats
 
-```gherkin
 Feature: Counter Stats
-  Scenario: Displays animated stats
-    Given the page loads
-    Then the counter section shows 4 stat blocks
-    And each stat has a number and label
-    And the numbers animate on scroll into view
-```
+
+#### Scenario: Displays animated stats
+
+- **GIVEN** the page loads
+- **THEN** the counter section shows 4 stat blocks
+- **AND** each stat has a number and label
+- **AND** the numbers animate on scroll into view
 
 ### Services Grid
 
-```gherkin
 Feature: Services Grid
-  Scenario: Displays 6 service cards in a grid
-    Given the page loads
-    Then 6 service cards are displayed in a 3-column grid
-    And each card has a background image, title, starting price, and arrow button
-    And the service types are: Residential, Commercial, Construction, Windows, Carpet, Furniture
 
-  Scenario: Service card hover
-    Given a service card is visible
-    When the user hovers over it
-    Then the card lifts slightly with a shadow transition
-```
+#### Scenario: Displays 6 service cards in a grid
+
+- **GIVEN** the page loads
+- **THEN** 6 service cards are displayed in a 3-column grid
+- **AND** each card has a background image, title, starting price, and arrow button
+- **AND** the service types are: Residential, Commercial, Construction, Windows, Carpet, Furniture
+
+#### Scenario: Service card hover
+
+- **GIVEN** a service card is visible
+- **WHEN** the user hovers over it
+- **THEN** the card lifts slightly with a shadow transition
 
 ### 3-Step Process
 
-```gherkin
 Feature: 3-Step Process
-  Scenario: Displays 3 numbered steps
-    Given the page loads
-    Then a "How it Works" section is visible with blue background
-    And 3 steps are displayed: "Pick a suitable plan", "Set your schedule", "Get things done"
-    And each step has a numbered circle icon and description text
-```
+
+#### Scenario: Displays 3 numbered steps
+
+- **GIVEN** the page loads
+- **THEN** a "How it Works" section is visible with blue background
+- **AND** 3 steps are displayed: "Pick a suitable plan", "Set your schedule", "Get things done"
+- **AND** each step has a numbered circle icon and description text
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials
-  Scenario: Carousel of testimonials
-    Given the page loads
-    Then a testimonials section is visible on light background
-    And testimonial cards show customer avatar, name, location, and quote
-    And the testimonials cycle via carousel navigation
 
-  Scenario: Carousel navigation
-    Given the testimonial carousel is visible
-    When the user clicks next/prev
-    Then the displayed testimonial changes
-```
+#### Scenario: Carousel of testimonials
+
+- **GIVEN** the page loads
+- **THEN** a testimonials section is visible on light background
+- **AND** testimonial cards show customer avatar, name, location, and quote
+- **AND** the testimonials cycle via carousel navigation
+
+#### Scenario: Carousel navigation
+
+- **GIVEN** the testimonial carousel is visible
+- **WHEN** the user clicks next/prev
+- **THEN** the displayed testimonial changes
 
 ### Pricing
 
-```gherkin
 Feature: Pricing
-  Scenario: Displays 4 pricing tiers
-    Given the page loads
-    Then 4 pricing cards are visible: Basic, Standard, Premium, Ultimate
-    And each card has a blue header with tier name
-    And each card shows a yellow price with "/ session" suffix
-    And each card lists features with checkmarks
-    And a "Sign Up" button is present on each card
 
-  Scenario: Premium card is highlighted
-    Given the pricing section is visible
-    Then the Premium card has an "active" visual treatment
-```
+#### Scenario: Displays 4 pricing tiers
+
+- **GIVEN** the page loads
+- **THEN** 4 pricing cards are visible: Basic, Standard, Premium, Ultimate
+- **AND** each card has a blue header with tier name
+- **AND** each card shows a yellow price with "/ session" suffix
+- **AND** each card lists features with checkmarks
+- **AND** a "Sign Up" button is present on each card
+
+#### Scenario: Premium card is highlighted
+
+- **GIVEN** the pricing section is visible
+- **THEN** the Premium card has an "active" visual treatment
 
 ### CTA Section
 
-```gherkin
 Feature: Call to Action
-  Scenario: Displays CTA with contact options
-    Given the page loads
-    Then a CTA section is visible with blue overlay
-    And it shows "Need to clean your house? Just hire us!"
-    And phone number and email buttons are present
-```
+
+#### Scenario: Displays CTA with contact options
+
+- **GIVEN** the page loads
+- **THEN** a CTA section is visible with blue overlay
+- **AND** it shows "Need to clean your house? Just hire us!"
+- **AND** phone number and email buttons are present
 
 ### Blog
 
-```gherkin
 Feature: Blog Section
-  Scenario: Displays recent blog posts
-    Given the page loads
-    Then 3 blog post cards are visible
-    And each card has an image, date, author, comment count, and title
-```
+
+#### Scenario: Displays recent blog posts
+
+- **GIVEN** the page loads
+- **THEN** 3 blog post cards are visible
+- **AND** each card has an image, date, author, comment count, and title
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Displays footer content
-    Given the page loads
-    Then a footer is visible with blue overlay background
-    And it contains the logo and description text
-    And social media links (Twitter, Facebook, Instagram) are present
-    And recent posts with thumbnails are shown
-    And contact information (phone, email, address) is displayed
-    And a "Made with Component Dock" link is present
-```
+
+#### Scenario: Displays footer content
+
+- **GIVEN** the page loads
+- **THEN** a footer is visible with blue overlay background
+- **AND** it contains the logo and description text
+- **AND** social media links (Twitter, Facebook, Instagram) are present
+- **AND** recent posts with thumbnails are shown
+- **AND** contact information (phone, email, address) is displayed
+- **AND** a "Made with Component Dock" link is present
 
 ## Verification Checklist
 

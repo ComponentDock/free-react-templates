@@ -21,70 +21,84 @@ Recreation of ColorLib "Convention" template.
 - Buttons: rounded 0.25rem, blue bg, white text, hover darken
 - Navbar: dark bg (#232429), white text, transparent on scroll
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Top bar displays contact info and CTA
-Given the page loads
-Then a top bar shows phone number and email
-And social media icons (Facebook, Twitter, Instagram, Dribbble) appear
-And a "Buy Ticket" button is visible
+### Feature: Assembly template behaviour
 
-### Scenario: Navbar navigation
-Given the page loads
-Then a dark navbar displays "Assembly" as brand
-And nav links: Home, About, Pricing, Schedule, Speakers, Blog, Contact
-And the navbar is responsive with a hamburger toggle
+#### Scenario: Top bar displays contact info and CTA
 
-### Scenario: Hero section with countdown
-Given the page loads
-Then a full-width hero with background image and dark overlay appears
-And heading reads "Biggest Developer Conference 2021"
-And location and date are shown below the heading
-And a countdown timer displays days, hours, minutes, seconds
+- **GIVEN** the page loads
+- **THEN** a top bar shows phone number and email
+- **AND** social media icons (Facebook, Twitter, Instagram, Dribbble) appear
+- **AND** a "Buy Ticket" button is visible
 
-### Scenario: About section
-Given the hero section is visible
-Then an about section shows an image on the left
-And "Welcome to Convention" subheading with description text on the right
-And a "Year Established" stat badge with calendar icon
+#### Scenario: Navbar navigation
 
-### Scenario: Counter stats
-Given the about section is visible
-Then a parallax counter section shows 4 stat blocks
-And stats include: Places (301), Events (102), Photos (1050), Speakers (61)
-And each stat has an icon and animated number
+- **GIVEN** the page loads
+- **THEN** a dark navbar displays "Assembly" as brand
+- **AND** nav links: Home, About, Pricing, Schedule, Speakers, Blog, Contact
+- **AND** the navbar is responsive with a hamburger toggle
 
-### Scenario: Schedule section with day tabs
-Given the counter section is visible
-Then a schedule section with light background appears
-And 4 day tabs (Day 01-04) control visible content
-And each day shows 3 session cards with speaker image, time, title, description, speaker name and position
+#### Scenario: Hero section with countdown
 
-### Scenario: Speakers section
-Given the schedule section is visible
-Then a speakers section with purple overlay header appears
-And 5 speaker cards show staff image, name, position, and social icons on hover
+- **GIVEN** the page loads
+- **THEN** a full-width hero with background image and dark overlay appears
+- **AND** heading reads "Biggest Developer Conference 2021"
+- **AND** location and date are shown below the heading
+- **AND** a countdown timer displays days, hours, minutes, seconds
 
-### Scenario: Gallery section
-Given the speakers section is visible
-Then an 8-image gallery grid (4x2) displays event photos
-And clicking an image opens a lightbox popup
+#### Scenario: About section
 
-### Scenario: Testimonials carousel
-Given the gallery section is visible
-Then a testimonials section with light background appears
-And a carousel shows quote text, star rating, user image, name, and position
+- **GIVEN** the hero section is visible
+- **THEN** an about section shows an image on the left
+- **AND** "Welcome to Convention" subheading with description text on the right
+- **AND** a "Year Established" stat badge with calendar icon
 
-### Scenario: Blog section
-Given the testimonials section is visible
-Then 3 blog cards show featured image, date, author, comment count, title, and excerpt
+#### Scenario: Counter stats
 
-### Scenario: Registration CTA
-Given the blog section is visible
-Then a CTA section with background image displays "Book Your Tickets Now"
-And a registration form with First Name, Last Name, Phone, Price select, and Register Now button
+- **GIVEN** the about section is visible
+- **THEN** a parallax counter section shows 4 stat blocks
+- **AND** stats include: Places (301), Events (102), Photos (1050), Speakers (61)
+- **AND** each stat has an icon and animated number
 
-### Scenario: Footer
-Given the registration section is visible
-Then a footer shows 5 columns: logo+social, Explore links, Info links, Buy Ticket CTA, Contact info
-And a black copyright bar at the bottom replaces Colorlib attribution with Component Dock link
+#### Scenario: Schedule section with day tabs
+
+- **GIVEN** the counter section is visible
+- **THEN** a schedule section with light background appears
+- **AND** 4 day tabs (Day 01-04) control visible content
+- **AND** each day shows 3 session cards with speaker image, time, title, description, speaker name and position
+
+#### Scenario: Speakers section
+
+- **GIVEN** the schedule section is visible
+- **THEN** a speakers section with purple overlay header appears
+- **AND** 5 speaker cards show staff image, name, position, and social icons on hover
+
+#### Scenario: Gallery section
+
+- **GIVEN** the speakers section is visible
+- **THEN** an 8-image gallery grid (4x2) displays event photos
+- **AND** clicking an image opens a lightbox popup
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the gallery section is visible
+- **THEN** a testimonials section with light background appears
+- **AND** a carousel shows quote text, star rating, user image, name, and position
+
+#### Scenario: Blog section
+
+- **GIVEN** the testimonials section is visible
+- **THEN** 3 blog cards show featured image, date, author, comment count, title, and excerpt
+
+#### Scenario: Registration CTA
+
+- **GIVEN** the blog section is visible
+- **THEN** a CTA section with background image displays "Book Your Tickets Now"
+- **AND** a registration form with First Name, Last Name, Phone, Price select, and Register Now button
+
+#### Scenario: Footer
+
+- **GIVEN** the registration section is visible
+- **THEN** a footer shows 5 columns: logo+social, Explore links, Info links, Buy Ticket CTA, Contact info
+- **AND** a black copyright bar at the bottom replaces Colorlib attribution with Component Dock link

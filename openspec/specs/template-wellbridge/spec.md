@@ -45,128 +45,124 @@ Recreation of ColorLib **CareMed** — a medical / healthcare center website tem
 - CTA section is full-width parallax with centered white text and green button.
 - Footer has 3 columns: about/logo, links, recent news; social icons in copyright bar.
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Wellbridge Header
 
-  Scenario: Top bar displays contact info and emergency number
-    Given the page is loaded
-    Then the top bar shows "FAQ", "Request an Appointment" links
-    And the emergency phone "+563 47558 623" is visible in a red highlight
+#### Scenario: Top bar displays contact info and emergency number
 
-  Scenario: Navigation links are present
-    Given the page is loaded
-    Then the nav contains links: "Home", "About us", "Services", "News", "Contact"
+- **GIVEN** the page is loaded
+- **THEN** the top bar shows "FAQ", "Request an Appointment" links
+- **AND** the emergency phone "+563 47558 623" is visible in a red highlight
 
-  Scenario: Logo displays brand name with accent
-    Given the page is loaded
-    Then the logo shows "Well" followed by "bridge" in green accent
-    And a green "+" box appears beside the logo
-    And the subtitle "Health Care Center" is below the logo
-```
+#### Scenario: Navigation links are present
+
+- **GIVEN** the page is loaded
+- **THEN** the nav contains links: "Home", "About us", "Services", "News", "Contact"
+
+#### Scenario: Logo displays brand name with accent
+
+- **GIVEN** the page is loaded
+- **THEN** the logo shows "Well" followed by "bridge" in green accent
+- **AND** a green "+" box appears beside the logo
+- **AND** the subtitle "Health Care Center" is below the logo
 
 ### Hero Slider
 
-```gherkin
 Feature: Wellbridge Hero Slider
 
-  Scenario: Hero displays headline and CTA
-    Given the page is loaded
-    Then the hero headline reads "Medicine made with care"
-    And a "read more" button is visible below the headline
-    And descriptive paragraph text is shown
+#### Scenario: Hero displays headline and CTA
 
-  Scenario: Slider has multiple slides
-    Given the page is loaded
-    Then there are 3 slides with background images
-    And a green progress bar animates at the bottom
-```
+- **GIVEN** the page is loaded
+- **THEN** the hero headline reads "Medicine made with care"
+- **AND** a "read more" button is visible below the headline
+- **AND** descriptive paragraph text is shown
+
+#### Scenario: Slider has multiple slides
+
+- **GIVEN** the page is loaded
+- **THEN** there are 3 slides with background images
+- **AND** a green progress bar animates at the bottom
 
 ### Info Boxes
 
-```gherkin
 Feature: Wellbridge Info Boxes
 
-  Scenario: Three info boxes are displayed below hero
-    Given the page is loaded
-    Then "Working Hours" box shows Mon–Fri 8.00–19.00, Sat 9.30–17.00, Sun 9.30–15.00
-    And "Appointments" box shows appointment text
-    And "Emergency Cases" box shows phone "+56 273 45678 235"
-    And all boxes have navy background with green bottom border
-```
+#### Scenario: Three info boxes are displayed below hero
+
+- **GIVEN** the page is loaded
+- **THEN** "Working Hours" box shows Mon–Fri 8.00–19.00, Sat 9.30–17.00, Sun 9.30–15.00
+- **AND** "Appointments" box shows appointment text
+- **AND** "Emergency Cases" box shows phone "+56 273 45678 235"
+- **AND** all boxes have navy background with green bottom border
 
 ### About Section
 
-```gherkin
 Feature: Wellbridge About Section
 
-  Scenario: About section shows text and image
-    Given the page is loaded
-    Then the section title reads "A great medical team to help your needs"
-    And descriptive paragraph text is shown on the left
-    And a "read more" button is present
-    And an image/illustration is on the right
-```
+#### Scenario: About section shows text and image
+
+- **GIVEN** the page is loaded
+- **THEN** the section title reads "A great medical team to help your needs"
+- **AND** descriptive paragraph text is shown on the left
+- **AND** a "read more" button is present
+- **AND** an image/illustration is on the right
 
 ### Departments Section
 
-```gherkin
 Feature: Wellbridge Departments Section
 
-  Scenario: Departments displayed on parallax background
-    Given the page is loaded
-    Then the section title reads "Our Medical Departments"
-    And 4 department cards are shown: "plastic surgery", "gastroenterology", "dentistry"
-    And each card has an image, title, and doctor name subtitle
-    And the 4th card has descriptive text with a "read more" button
-```
+#### Scenario: Departments displayed on parallax background
+
+- **GIVEN** the page is loaded
+- **THEN** the section title reads "Our Medical Departments"
+- **AND** 4 department cards are shown: "plastic surgery", "gastroenterology", "dentistry"
+- **AND** each card has an image, title, and doctor name subtitle
+- **AND** the 4th card has descriptive text with a "read more" button
 
 ### Services Section
 
-```gherkin
 Feature: Wellbridge Services Section
 
-  Scenario: Services grid displays 6 services
-    Given the page is loaded
-    Then the section title reads "Our Featured Services"
-    And 6 service cards are shown in a 3×2 grid
-    And services are: "Free Checkups", "Screening Exams", "RMI Services", "Dentistry", "Neonatology", "Biochemistry"
-    And each card has an icon, title, and description text
-```
+#### Scenario: Services grid displays 6 services
+
+- **GIVEN** the page is loaded
+- **THEN** the section title reads "Our Featured Services"
+- **AND** 6 service cards are shown in a 3×2 grid
+- **AND** services are: "Free Checkups", "Screening Exams", "RMI Services", "Dentistry", "Neonatology", "Biochemistry"
+- **AND** each card has an icon, title, and description text
 
 ### CTA Section
 
-```gherkin
 Feature: Wellbridge Call-to-Action
 
-  Scenario: CTA section with parallax background
-    Given the page is loaded
-    Then the CTA heading reads "Need a personal health plan?"
-    And descriptive text is shown below the heading
-    And a "request a plan" button is present with green hover effect
-```
+#### Scenario: CTA section with parallax background
+
+- **GIVEN** the page is loaded
+- **THEN** the CTA heading reads "Need a personal health plan?"
+- **AND** descriptive text is shown below the heading
+- **AND** a "request a plan" button is present with green hover effect
 
 ### Footer
 
-```gherkin
 Feature: Wellbridge Footer
 
-  Scenario: Footer has three columns
-    Given the page is loaded
-    Then the footer shows logo with "Health Care Center" subtitle
-    And contact info: phone, email, address
-    And a "Useful Links" column with navigation links
-    And a "Recent News" column with dated news items
+#### Scenario: Footer has three columns
 
-  Scenario: Copyright bar with social links
-    Given the page is loaded
-    Then a copyright line is shown at the bottom
-    And social media icons are displayed (Pinterest, Facebook, Twitter, Dribbble, Behance, LinkedIn)
-    And a "Component Dock" attribution link is present
-```
+- **GIVEN** the page is loaded
+- **THEN** the footer shows logo with "Health Care Center" subtitle
+- **AND** contact info: phone, email, address
+- **AND** a "Useful Links" column with navigation links
+- **AND** a "Recent News" column with dated news items
+
+#### Scenario: Copyright bar with social links
+
+- **GIVEN** the page is loaded
+- **THEN** a copyright line is shown at the bottom
+- **AND** social media icons are displayed (Pinterest, Facebook, Twitter, Dribbble, Behance, LinkedIn)
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification Checklist
 

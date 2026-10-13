@@ -46,73 +46,82 @@ Extracted from the live preview's `css/style.css`:
 10. **Reservation** — parallax background with dark overlay; H2 "Make A Reservation"; 2-column form: Fullname, Email, Phone, Date (with calendar icon), Time (dropdown), Number of Guests, Submit button (full width, square corners)
 11. **Footer** — dark (`#303030`) background; 4 columns: Brand + description + social icons (FB, Twitter, Google+, Dribbble in orange), Latest Blog (3 entries with thumbnail + date + title), Instagram (2x2 image grid), Newsletter (email input + subscribe button); copyright bar with attribution + demo image credits
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: MealMuse Restaurant Template
 
-```gherkin
-Scenario: Navbar displays logo and navigation
-  Given the user visits the page
-  Then the navbar shows the MealMuse logo with cutlery icon
-  And navigation links include Home, Menu, Specialties, Reservation, Blog, About, Contact
+#### Scenario: Navbar displays logo and navigation
 
-Scenario: Hero slider rotates through slides
-  Given the hero section is visible
-  Then 4 slides rotate automatically
-  And each slide has a headline, subtitle, and "Book a table" CTA button
-  And a mouse scroll indicator is visible at the bottom
+- **GIVEN** the user visits the page
+- **THEN** the navbar shows the MealMuse logo with cutlery icon
+- **AND** navigation links include Home, Menu, Specialties, Reservation, Blog, About, Contact
 
-Scenario: Info bar shows restaurant details
-  Given the info bar is below the hero
-  Then it displays 4 columns: Address, Opening Time, Phone, Email
-  And each column has an icon, heading, and detail text on dark background
+#### Scenario: Hero slider rotates through slides
 
-Scenario: About section shows welcome message and images
-  Given the about section is visible
-  Then it displays "Welcome to MealMuse" label
-  And an H2 heading about food
-  And a paragraph description
-  And two food images in a 2-column grid
+- **GIVEN** the hero section is visible
+- **THEN** 4 slides rotate automatically
+- **AND** each slide has a headline, subtitle, and "Book a table" CTA button
+- **AND** a mouse scroll indicator is visible at the bottom
 
-Scenario: Featured dishes grid shows dish cards
-  Given the featured dishes section is visible
-  Then 3 dish cards are displayed in a grid
-  And each card shows a food image and dish name
+#### Scenario: Info bar shows restaurant details
 
-Scenario: Parallax video CTA section
-  Given the video CTA section is visible
-  Then it shows a parallax background with dark overlay
-  And a white content box with H2, description, and "Watch Video" outline button
+- **GIVEN** the info bar is below the hero
+- **THEN** it displays 4 columns: Address, Opening Time, Phone, Email
+- **AND** each column has an icon, heading, and detail text on dark background
 
-Scenario: Testimonials carousel
-  Given the testimonials section is visible
-  Then customer quotes display in a carousel
-  And each quote shows text and author name
-  And the section has a parallax background with dark overlay
+#### Scenario: About section shows welcome message and images
 
-Scenario: Tabbed menu section
-  Given the menu section is visible
-  Then tabs for Main, Desserts, and Drinks are displayed
-  And clicking a tab shows the corresponding menu items
-  And each item shows an image, price, name, and category
+- **GIVEN** the about section is visible
+- **THEN** it displays "Welcome to MealMuse" label
+- **AND** an H2 heading about food
+- **AND** a paragraph description
+- **AND** two food images in a 2-column grid
 
-Scenario: Reservation form
-  Given the reservation section is visible
-  Then the form shows fields for Fullname, Email, Phone, Date, Time, and Guests
-  And the submit button spans full width with square corners
+#### Scenario: Featured dishes grid shows dish cards
 
-Scenario: Footer layout
-  Given the footer is visible
-  Then it shows 4 columns: brand info, blog entries, Instagram grid, and newsletter
-  And social icons are displayed in orange
-  And a copyright line is present at the bottom
+- **GIVEN** the featured dishes section is visible
+- **THEN** 3 dish cards are displayed in a grid
+- **AND** each card shows a food image and dish name
 
-Scenario: Responsive mobile layout
-  Given the user views on mobile viewport
-  Then the navbar collapses to a hamburger menu
-  And sections stack vertically
-  And the hero text remains centered and readable
-```
+#### Scenario: Parallax video CTA section
+
+- **GIVEN** the video CTA section is visible
+- **THEN** it shows a parallax background with dark overlay
+- **AND** a white content box with H2, description, and "Watch Video" outline button
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the testimonials section is visible
+- **THEN** customer quotes display in a carousel
+- **AND** each quote shows text and author name
+- **AND** the section has a parallax background with dark overlay
+
+#### Scenario: Tabbed menu section
+
+- **GIVEN** the menu section is visible
+- **THEN** tabs for Main, Desserts, and Drinks are displayed
+- **AND** clicking a tab shows the corresponding menu items
+- **AND** each item shows an image, price, name, and category
+
+#### Scenario: Reservation form
+
+- **GIVEN** the reservation section is visible
+- **THEN** the form shows fields for Fullname, Email, Phone, Date, Time, and Guests
+- **AND** the submit button spans full width with square corners
+
+#### Scenario: Footer layout
+
+- **GIVEN** the footer is visible
+- **THEN** it shows 4 columns: brand info, blog entries, Instagram grid, and newsletter
+- **AND** social icons are displayed in orange
+- **AND** a copyright line is present at the bottom
+
+#### Scenario: Responsive mobile layout
+
+- **GIVEN** the user views on mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the hero text remains centered and readable
 
 ## Verification Checklist
 

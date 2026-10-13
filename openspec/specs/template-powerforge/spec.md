@@ -56,76 +56,86 @@ classes, a class schedule, testimonials, trainer profiles, and a 4-column footer
 9. **Footer** — dark bg, 4 columns: About (logo + text), Quick Menu (links),
    Contact Info (address, phone, email), Social Icons.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: PowerForge fitness template
 
 #### Scenario: Navbar renders and is sticky
-Given the page loads
-When the user views the navigation bar
-Then the navbar is visible at the top with logo and navigation links
-And the navbar remains sticky on scroll
+
+- **GIVEN** the page loads
+- **WHEN** the user views the navigation bar
+- **THEN** the navbar is visible at the top with logo and navigation links
+- **AND** the navbar remains sticky on scroll
 
 #### Scenario: Hero slider displays slides
-Given the page loads
-When the hero section is visible
-Then at least 2 slides are rendered
-And each slide has a dark overlay, heading text, and a CTA button
-And the slides auto-rotate or support manual navigation
+
+- **GIVEN** the page loads
+- **WHEN** the hero section is visible
+- **THEN** at least 2 slides are rendered
+- **AND** each slide has a dark overlay, heading text, and a CTA button
+- **AND** the slides auto-rotate or support manual navigation
 
 #### Scenario: About section renders
-Given the page loads
-When the user scrolls to the about section
-Then a heading "All About Us" (or equivalent) is displayed
-And a descriptive paragraph is shown
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the about section
+- **THEN** a heading "All About Us" (or equivalent) is displayed
+- **AND** a descriptive paragraph is shown
 
 #### Scenario: Featured Classes section renders
-Given the page loads
-When the user scrolls to the featured classes section
-Then a heading "Featured Class" is displayed
-And 4 class cards are shown in a grid
-And each card has an image and a short description
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the featured classes section
+- **THEN** a heading "Featured Class" is displayed
+- **AND** 4 class cards are shown in a grid
+- **AND** each card has an image and a short description
 
 #### Scenario: Class Detail blocks render
-Given the page loads
-When the user scrolls through class detail blocks
-Then 4 blocks are rendered (Yoga, Weight Lifting, Boxing, Running)
-And each block has an icon, heading, description, and image
-And blocks alternate image placement (left/right)
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls through class detail blocks
+- **THEN** 4 blocks are rendered (Yoga, Weight Lifting, Boxing, Running)
+- **AND** each block has an icon, heading, description, and image
+- **AND** blocks alternate image placement (left/right)
 
 #### Scenario: Schedule section renders
-Given the page loads
-When the user scrolls to the schedule section
-Then a heading "Schedule" is displayed
-And a weekly schedule grid shows time slots and class names
-And the section has a dark overlay background
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the schedule section
+- **THEN** a heading "Schedule" is displayed
+- **AND** a weekly schedule grid shows time slots and class names
+- **AND** the section has a dark overlay background
 
 #### Scenario: Testimonials section renders
-Given the page loads
-When the user scrolls to the testimonials section
-Then a heading "Testimonials" is displayed
-And at least 3 testimonial cards are shown
-And each card has a quote, name, role, and avatar
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** a heading "Testimonials" is displayed
+- **AND** at least 3 testimonial cards are shown
+- **AND** each card has a quote, name, role, and avatar
 
 #### Scenario: Trainers section renders
-Given the page loads
-When the user scrolls to the trainers section
-Then a heading "Experts Trainer" is displayed
-And at least 4 trainer cards are shown in a grid
-And each card shows name and specialty on hover
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the trainers section
+- **THEN** a heading "Experts Trainer" is displayed
+- **AND** at least 4 trainer cards are shown in a grid
+- **AND** each card shows name and specialty on hover
 
 #### Scenario: Footer renders
-Given the page loads
-When the user scrolls to the footer
-Then 4 columns are displayed: About, Quick Menu, Contact Info, Social Icons
-And the footer links to https://www.componentdock.com/
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the footer
+- **THEN** 4 columns are displayed: About, Quick Menu, Contact Info, Social Icons
+- **AND** the footer links to https://www.componentdock.com/
 
 #### Scenario: Mobile responsiveness
-Given the page loads on a mobile viewport (≤768px)
-When the user views the page
-Then the navbar collapses to a hamburger menu
-And sections stack vertically
-And the schedule grid scrolls horizontally if needed
+
+- **GIVEN** the page loads on a mobile viewport (≤768px)
+- **WHEN** the user views the page
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the schedule grid scrolls horizontally if needed
 
 ## Verification checklist
 

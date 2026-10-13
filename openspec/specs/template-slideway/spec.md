@@ -18,55 +18,67 @@ Recreation of ColorLib **Carousel 07** (`https://colorlib.com/wp/template/carous
 - **Button Shapes**: Rounded-lg (`rounded-lg`), smooth transitions, subtle shadows.
 - **Section Layouts**: Hero header with interactive carousel slider, featured slides/cards section, testimonial/feature highlights with dot navigation, statistics counter, call-to-action banner, and professional footer linking Component Dock.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### 1. Navigation Header
 
 - **Requirement**: The header must contain a brand logo, navigation links (Home, Features, Showcases, Testimonials, Contact), and a CTA action button.
-- **Scenario**: User views the navigation bar
-  - Given the app is loaded
-  - When the user looks at the top header
-  - Then they see the brand logo and navigation links
+
+#### Scenario: User views the navigation bar
+
+- **GIVEN** the app is loaded
+- **WHEN** the user looks at the top header
+- **THEN** they see the brand logo and navigation links
 
 ### 2. Hero Carousel Section
 
 - **Requirement**: The hero section features a dynamic carousel with title, subtitle, CTA buttons, and slide navigation controls (previous/next buttons and dot indicators).
-- **Scenario**: User interacts with the hero carousel
-  - Given the hero section is displayed with slide 1 active
-  - When the user clicks the next arrow or a pagination dot
-  - Then the carousel smoothly transitions to slide 2 with updated headline and image
+
+#### Scenario: User interacts with the hero carousel
+
+- **GIVEN** the hero section is displayed with slide 1 active
+- **WHEN** the user clicks the next arrow or a pagination dot
+- **THEN** the carousel smoothly transitions to slide 2 with updated headline and image
 
 ### 3. Features Grid
 
 - **Requirement**: A section highlighting key features with icons, titles, and descriptions in a responsive grid.
-- **Scenario**: User browses the features
-  - Given the user scrolls down to the features section
-  - When they view the feature cards
-  - Then each card displays an icon, title, and descriptive text
+
+#### Scenario: User browses the features
+
+- **GIVEN** the user scrolls down to the features section
+- **WHEN** they view the feature cards
+- **THEN** each card displays an icon, title, and descriptive text
 
 ### 4. Interactive Showcase & Slides
 
 - **Requirement**: A dedicated showcase slider section displaying cards with imagery and descriptions.
-- **Scenario**: User navigates the showcase carousel
-  - Given the showcase slider is visible
-  - When the user interacts with slide controls
-  - Then the items scroll correctly into view
+
+#### Scenario: User navigates the showcase carousel
+
+- **GIVEN** the showcase slider is visible
+- **WHEN** the user interacts with slide controls
+- **THEN** the items scroll correctly into view
 
 ### 5. Statistics Counter & Testimonials
 
 - **Requirement**: Sections displaying key metrics and customer/user testimonials.
-- **Scenario**: User reads testimonials
-  - Given the user views the testimonial section
-  - When they switch between testimonial slides
-  - Then the respective review text and author details appear
+
+#### Scenario: User reads testimonials
+
+- **GIVEN** the user views the testimonial section
+- **WHEN** they switch between testimonial slides
+- **THEN** the respective review text and author details appear
 
 ### 6. Call to Action & Footer
 
 - **Requirement**: A conversion CTA banner and a professional footer linking `https://www.componentdock.com/`.
-- **Scenario**: User reaches the footer
-  - Given the user scrolls to the bottom of the page
-  - When they inspect the footer
-  - Then they see copyright info and a branded link to Component Dock
+
+#### Scenario: User reaches the footer
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** they inspect the footer
+- **THEN** they see copyright info and a branded link to Component Dock
 
 ## Verification Checklist
 

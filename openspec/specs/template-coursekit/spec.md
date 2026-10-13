@@ -47,143 +47,142 @@ services grid, testimonials slider, events list, newsletter, and footer.
 8. **Events** — Section title "Upcoming Events". 3 event items, each: date box (day number + month, gold border), event content (name link, location, paragraph), event image. Alternating image-left/image-right layout
 9. **Footer** — Dark `#1a1a1a` background. Newsletter section at top (title "Subscribe to newsletter", email input + gold "Subscribe" button, bottom border). 4-column footer content: About (logo + paragraph), Menu links, Useful Links, Contact (address, phone, email with icons). Copyright bar at bottom + social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Header Navigation
 
-```gherkin
-Scenario: Header displays logo and navigation
-  Given the user loads the page
-  Then the header shows the logo text "coursekit"
-  And the navigation links are visible: "home", "about us", "courses", "elements", "news", "contact"
-  And a phone number is displayed in the header side area
+#### Scenario: Header displays logo and navigation
 
-Scenario: Mobile hamburger menu opens overlay
-  Given the viewport is narrow (mobile)
-  When the user taps the hamburger icon
-  Then a menu overlay opens with navigation links and social icons
-  And closing the overlay returns to the normal view
-```
+- **GIVEN** the user loads the page
+- **THEN** the header shows the logo text "coursekit"
+- **AND** the navigation links are visible: "home", "about us", "courses", "elements", "news", "contact"
+- **AND** a phone number is displayed in the header side area
+
+#### Scenario: Mobile hamburger menu opens overlay
+
+- **GIVEN** the viewport is narrow (mobile)
+- **WHEN** the user taps the hamburger icon
+- **THEN** a menu overlay opens with navigation links and social icons
+- **AND** closing the overlay returns to the normal view
 
 ### Feature: Hero Slider
 
-```gherkin
-Scenario: Hero displays heading
-  Given the user is on the homepage
-  Then the hero section shows a headline containing "Education"
-  And the word "Education" is visually accented (colored/highlighted)
+#### Scenario: Hero displays heading
 
-Scenario: Hero slider supports arrow navigation
-  Given the hero slider is visible
-  When the user clicks the right arrow
-  Then the next slide is shown
-  When the user clicks the left arrow
-  Then the previous slide is shown
-```
+- **GIVEN** the user is on the homepage
+- **THEN** the hero section shows a headline containing "Education"
+- **AND** the word "Education" is visually accented (colored/highlighted)
+
+#### Scenario: Hero slider supports arrow navigation
+
+- **GIVEN** the hero slider is visible
+- **WHEN** the user clicks the right arrow
+- **THEN** the next slide is shown
+- **WHEN** the user clicks the left arrow
+- **THEN** the previous slide is shown
 
 ### Feature: Hero Boxes
 
-```gherkin
-Scenario: Hero boxes display three items
-  Given the hero section is visible
-  Then three hero boxes are displayed below the slider
-  And the boxes are "Online Courses", "Our Library", "Our Teachers"
-  And each box has an SVG icon and a "view more" link
+#### Scenario: Hero boxes display three items
 
-Scenario: Hero boxes change color on hover
-  Given a hero box is visible
-  When the user hovers over a hero box
-  Then the background changes from dark (#1a1a1a) to gold (#ffb606)
-```
+- **GIVEN** the hero section is visible
+- **THEN** three hero boxes are displayed below the slider
+- **AND** the boxes are "Online Courses", "Our Library", "Our Teachers"
+- **AND** each box has an SVG icon and a "view more" link
+
+#### Scenario: Hero boxes change color on hover
+
+- **GIVEN** a hero box is visible
+- **WHEN** the user hovers over a hero box
+- **THEN** the background changes from dark (#1a1a1a) to gold (#ffb606)
 
 ### Feature: Popular Courses
 
-```gherkin
-Scenario: Popular courses section shows 3 course cards
-  Given the user scrolls to the popular courses section
-  Then the section title reads "Popular Courses"
-  And three course cards are displayed in a row
-  And each card has an image, title, description, author info, and price
+#### Scenario: Popular courses section shows 3 course cards
 
-Scenario: Course card displays price badge
-  Given a course card is visible
-  Then a price badge (e.g. "$29") is shown in the card footer area
-```
+- **GIVEN** the user scrolls to the popular courses section
+- **THEN** the section title reads "Popular Courses"
+- **AND** three course cards are displayed in a row
+- **AND** each card has an image, title, description, author info, and price
+
+#### Scenario: Course card displays price badge
+
+- **GIVEN** a course card is visible
+- **THEN** a price badge (e.g. "$29") is shown in the card footer area
 
 ### Feature: Register + Search
 
-```gherkin
-Scenario: Register section displays CTA on gold background
-  Given the user scrolls to the register section
-  Then the left half has a gold (#ffb606) background
-  And the title reads "Register now and get a discount 50% discount until 1 January"
-  And a dark "register now" button is centered below
+#### Scenario: Register section displays CTA on gold background
 
-Scenario: Search section displays course search form
-  Given the user scrolls to the search section
-  Then the right half shows a background image
-  And the title reads "Search for your course"
-  And a form with inputs for "Course Name", "Category", "Degree" is shown
-  And a "search course" submit button is visible
-```
+- **GIVEN** the user scrolls to the register section
+- **THEN** the left half has a gold (#ffb606) background
+- **AND** the title reads "Register now and get a discount 50% discount until 1 January"
+- **AND** a dark "register now" button is centered below
+
+#### Scenario: Search section displays course search form
+
+- **GIVEN** the user scrolls to the search section
+- **THEN** the right half shows a background image
+- **AND** the title reads "Search for your course"
+- **AND** a form with inputs for "Course Name", "Category", "Degree" is shown
+- **AND** a "search course" submit button is visible
 
 ### Feature: Services
 
-```gherkin
-Scenario: Services section displays 6 items
-  Given the user scrolls to the services section
-  Then the section title reads "Our Services"
-  And six service items are shown in a 3-column grid
-  And the headings are: "Online Courses", "Indoor Courses", "Amazing Library", "Exceptional Professors", "Top Programs", "Graduate Diploma"
-  And each item has an SVG icon, heading, and paragraph
-```
+#### Scenario: Services section displays 6 items
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** the section title reads "Our Services"
+- **AND** six service items are shown in a 3-column grid
+- **AND** the headings are: "Online Courses", "Indoor Courses", "Amazing Library", "Exceptional Professors", "Top Programs", "Graduate Diploma"
+- **AND** each item has an SVG icon, heading, and paragraph
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials section displays on dark background
-  Given the user scrolls to the testimonials section
-  Then the background is dark (#1a1a1a) with a parallax image
-  And the section title reads "What our students say" in white
+#### Scenario: Testimonials section displays on dark background
 
-Scenario: Testimonials slider shows review cards
-  Given the testimonials slider is visible
-  Then testimonial cards show a quote mark, paragraph, user avatar, name, and title
-  And left/right navigation arrows are available
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the background is dark (#1a1a1a) with a parallax image
+- **AND** the section title reads "What our students say" in white
+
+#### Scenario: Testimonials slider shows review cards
+
+- **GIVEN** the testimonials slider is visible
+- **THEN** testimonial cards show a quote mark, paragraph, user avatar, name, and title
+- **AND** left/right navigation arrows are available
 
 ### Feature: Events
 
-```gherkin
-Scenario: Events section shows upcoming events
-  Given the user scrolls to the events section
-  Then the section title reads "Upcoming Events"
-  And three event items are displayed
-  And each event has a date box (day + month with gold border), event name, location, description, and image
+#### Scenario: Events section shows upcoming events
 
-Scenario: Event date box has gold border
-  Given an event item is visible
-  Then the date box is 131×131px with a 2px solid gold (#ffb606) border
-```
+- **GIVEN** the user scrolls to the events section
+- **THEN** the section title reads "Upcoming Events"
+- **AND** three event items are displayed
+- **AND** each event has a date box (day + month with gold border), event name, location, description, and image
+
+#### Scenario: Event date box has gold border
+
+- **GIVEN** an event item is visible
+- **THEN** the date box is 131×131px with a 2px solid gold (#ffb606) border
 
 ### Feature: Newsletter + Footer
 
-```gherkin
-Scenario: Newsletter section accepts email subscription
-  Given the user scrolls to the newsletter section
-  Then the title reads "Subscribe to newsletter"
-  And an email input field is shown
-  And a gold "Subscribe" button is visible
+#### Scenario: Newsletter section accepts email subscription
 
-Scenario: Footer displays content columns
-  Given the user scrolls to the footer
-  Then a dark (#1a1a1a) footer is displayed
-  And four columns are shown: About, Menu, Useful Links, Contact
-  And the About column has a logo and paragraph text
-  And the Contact column has address, phone, and email with icons
-  And a copyright bar with social icons is at the bottom
-  And a "Component Dock" attribution link is present
-```
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** the title reads "Subscribe to newsletter"
+- **AND** an email input field is shown
+- **AND** a gold "Subscribe" button is visible
+
+#### Scenario: Footer displays content columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark (#1a1a1a) footer is displayed
+- **AND** four columns are shown: About, Menu, Useful Links, Contact
+- **AND** the About column has a logo and paragraph text
+- **AND** the Contact column has address, phone, and email with icons
+- **AND** a copyright bar with social icons is at the bottom
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification checklist
 

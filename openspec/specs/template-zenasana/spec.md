@@ -82,71 +82,82 @@ Use Google Fonts `<link>` for both families.
 | Location         | White                                         |
 | Footer           | Image + `rgba(0,0,0,0.8)` overlay             |
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Zenasana template behaviour
+
 Feature: Zenasana yoga studio website
 
-  Background:
-    Given the user loads the Zenasana page
+Background:
+- **GIVEN** the user loads the Zenasana page
 
-  Scenario: Navbar displays logo and navigation
-    Then a white sticky navbar is visible
-    And the logo "Zenasana" is shown on the left
-    And navigation links appear on the right: Home, Yoga Classes, Events, About Studio, Contact
-    And "Yoga Classes" has a dropdown with sub-items
+#### Scenario: Navbar displays logo and navigation
 
-  Scenario: Hero carousel displays
-    Then a full-width hero carousel shows background images
-    And each slide has a dark overlay
-    And each slide shows a teal uppercase caption and white heading
-    And navigation arrows appear on hover
+- **THEN** a white sticky navbar is visible
+- **AND** the logo "Zenasana" is shown on the left
+- **AND** navigation links appear on the right: Home, Yoga Classes, Events, About Studio, Contact
+- **AND** "Yoga Classes" has a dropdown with sub-items
 
-  Scenario: Welcome section
-    Then a split section shows an image on the left and text on the right
-    And the heading "Welcome To Zenasana" uses Playfair Display font
-    And a teal caption "Hello there!" appears above the paragraph
-    And a teal pill CTA button reads "See The Yoga Pricing"
+#### Scenario: Hero carousel displays
 
-  Scenario: Programs section
-    Then a 3-column grid shows 6 yoga program cards
-    And each card has an image and a heading link
-    And the section has a light background
+- **THEN** a full-width hero carousel shows background images
+- **AND** each slide has a dark overlay
+- **AND** each slide shows a teal uppercase caption and white heading
+- **AND** navigation arrows appear on hover
 
-  Scenario: Pricing section shows 4 cards
-    Then 4 pricing cards are displayed in a row
-    And each card has a dashed border
-    And the first card has a teal overlay on an image background
-    And each card shows a title, price, feature list, and CTA button
-    And the featured card CTA is white outline
+#### Scenario: Welcome section
 
-  Scenario: Features section
-    Then 4 feature items are shown: Peace of Mind, Mindfulness, Meditation, Yoga Carpet
-    And each has an icon, heading, and description text
+- **THEN** a split section shows an image on the left and text on the right
+- **AND** the heading "Welcome To Zenasana" uses Playfair Display font
+- **AND** a teal caption "Hello there!" appears above the paragraph
+- **AND** a teal pill CTA button reads "See The Yoga Pricing"
 
-  Scenario: Gallery section displays images
-    Then a grid of gallery images is shown
-    And images have hover effects
+#### Scenario: Programs section
 
-  Scenario: Events section
-    Then a list of upcoming events is displayed
-    And each event shows an image, heading, and date
+- **THEN** a 3-column grid shows 6 yoga program cards
+- **AND** each card has an image and a heading link
+- **AND** the section has a light background
 
-  Scenario: Testimonials carousel
-    Then a testimonial carousel shows 4 reviews
-    And each review has an avatar, name, and quote
+#### Scenario: Pricing section shows 4 cards
 
-  Scenario: Footer
-    Then a dark footer with background image is displayed
-    And the footer has columns: About, Quick Links, Social, Newsletter
-    And footer links point to Component Dock
-    And a copyright notice is shown
+- **THEN** 4 pricing cards are displayed in a row
+- **AND** each card has a dashed border
+- **AND** the first card has a teal overlay on an image background
+- **AND** each card shows a title, price, feature list, and CTA button
+- **AND** the featured card CTA is white outline
 
-  Scenario: Responsive behavior
-    When the viewport is below 960px
-    Then the navbar collapses to a hamburger menu
-    And multi-column grids stack to single column
-```
+#### Scenario: Features section
+
+- **THEN** 4 feature items are shown: Peace of Mind, Mindfulness, Meditation, Yoga Carpet
+- **AND** each has an icon, heading, and description text
+
+#### Scenario: Gallery section displays images
+
+- **THEN** a grid of gallery images is shown
+- **AND** images have hover effects
+
+#### Scenario: Events section
+
+- **THEN** a list of upcoming events is displayed
+- **AND** each event shows an image, heading, and date
+
+#### Scenario: Testimonials carousel
+
+- **THEN** a testimonial carousel shows 4 reviews
+- **AND** each review has an avatar, name, and quote
+
+#### Scenario: Footer
+
+- **THEN** a dark footer with background image is displayed
+- **AND** the footer has columns: About, Quick Links, Social, Newsletter
+- **AND** footer links point to Component Dock
+- **AND** a copyright notice is shown
+
+#### Scenario: Responsive behavior
+
+- **WHEN** the viewport is below 960px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** multi-column grids stack to single column
 
 ## Verification checklist
 

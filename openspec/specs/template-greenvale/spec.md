@@ -45,90 +45,116 @@ Recreation of ColorLib's **Ecoverde** real estate template as a React 19 + Vite 
 9. **Blog** — "Recent Blog" heading. 4-column blog cards: image, date, author, comment count, title.
 10. **Footer** — 5-column layout: brand + social icons, Community links, About Us links, Company links, Contact info (address, phone, email). Copyright bar below.
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: GreenVale template behaviour
+
 Feature: GreenVale Real Estate Template
 
-  Background:
-    Given the GreenVale app is loaded at "/"
+Background:
+- **GIVEN** the GreenVale app is loaded at "/"
 
-  # Navbar
-  Scenario: Transparent navbar with logo and navigation
-    Then I should see a navbar with logo text "GreenVale"
-    And I should see navigation links: "Home", "About", "Agent", "Services", "Properties", "Blog", "Contact"
-    And the navbar should be transparent over the hero
+**Navbar**
 
-  Scenario: Navbar becomes fixed on scroll
-    When I scroll down past the hero
-    Then the navbar should become fixed with white background and shadow
+#### Scenario: Transparent navbar with logo and navigation
 
-  # Hero
-  Scenario: Hero displays headline, description, and CTA
-    Then I should see the heading "Find Perfect House From Your Area."
-    And I should see a description paragraph
-    And I should see a "View all properties" button with green styling
+- **THEN** I should see a navbar with logo text "GreenVale"
+- **AND** I should see navigation links: "Home", "About", "Agent", "Services", "Properties", "Blog", "Contact"
+- **AND** the navbar should be transparent over the hero
 
-  Scenario: Hero has dark overlay on background image
-    Then the hero section should have a background image with dark overlay
+#### Scenario: Navbar becomes fixed on scroll
 
-  # Search Form
-  Scenario: Search form shows 5 filter fields
-    Then I should see a "Keyword" text input
-    And I should see a "Property Type" select dropdown
-    And I should see a "Location" text input
-    And I should see a "Price Limit" select dropdown
-    And I should see a green "Search" submit button
+- **WHEN** I scroll down past the hero
+- **THEN** the navbar should become fixed with white background and shadow
 
-  Scenario: Search form card overlaps hero
-    Then the search form card should have a dark background and rounded corners
+**Hero**
 
-  # Services Strip
-  Scenario: Services strip shows 4 service cards on green background
-    Given I scroll to the services section
-    Then I should see 4 service items with icons, titles, and descriptions
-    And the section background should be green (#24A148)
+#### Scenario: Hero displays headline, description, and CTA
 
-  # Featured Properties
-  Scenario: Featured Properties carousel shows property cards
-    Given I scroll to the "Featured Properties" section
-    Then I should see property cards with image, Sale/Rent badge, price, bed/bath/sqft icons, title, location, and agent info
+- **THEN** I should see the heading "Find Perfect House From Your Area."
+- **AND** I should see a description paragraph
+- **AND** I should see a "View all properties" button with green styling
 
-  # Cities
-  Scenario: Cities section shows 3 city cards
-    Given I scroll to the "Properties for this Cities" section
-    Then I should see 3 city cards: Miami (24 Properties), Chicago (20 Properties), Illinois (15 Properties)
+#### Scenario: Hero has dark overlay on background image
 
-  # How It Works
-  Scenario: How It Works shows 4 numbered steps
-    Given I scroll to the "How it works" section
-    Then I should see 4 steps numbered 01 through 04 with titles and descriptions
+- **THEN** the hero section should have a background image with dark overlay
 
-  # Agents
-  Scenario: Agents section shows 4 agent profiles
-    Given I scroll to the agents section
-    Then I should see 4 agent cards with photo, name, and listing count
+**Search Form**
 
-  # Blog
-  Scenario: Blog section shows 4 recent posts
-    Given I scroll to the "Recent Blog" section
-    Then I should see 4 blog cards with image, date, author, comment count, and title
+#### Scenario: Search form shows 5 filter fields
 
-  # Footer
-  Scenario: Footer shows brand, navigation columns, and contact info
-    Then I should see a footer with brand name, Community links, About Us links, Company links, and contact details
-    And the footer should link to "https://www.componentdock.com/" labeled "Component Dock"
+- **THEN** I should see a "Keyword" text input
+- **AND** I should see a "Property Type" select dropdown
+- **AND** I should see a "Location" text input
+- **AND** I should see a "Price Limit" select dropdown
+- **AND** I should see a green "Search" submit button
 
-  # Responsive
-  Scenario: Mobile hamburger menu
-    Given I resize the viewport to 375px width
-    Then I should see a hamburger menu button
-    And the navbar background should be black
+#### Scenario: Search form card overlaps hero
 
-  Scenario: Search form stacks on mobile
-    Given I resize the viewport to 375px width
-    Then the search form fields should stack vertically
-```
+- **THEN** the search form card should have a dark background and rounded corners
+
+**Services Strip**
+
+#### Scenario: Services strip shows 4 service cards on green background
+
+- **GIVEN** I scroll to the services section
+- **THEN** I should see 4 service items with icons, titles, and descriptions
+- **AND** the section background should be green (#24A148)
+
+**Featured Properties**
+
+#### Scenario: Featured Properties carousel shows property cards
+
+- **GIVEN** I scroll to the "Featured Properties" section
+- **THEN** I should see property cards with image, Sale/Rent badge, price, bed/bath/sqft icons, title, location, and agent info
+
+**Cities**
+
+#### Scenario: Cities section shows 3 city cards
+
+- **GIVEN** I scroll to the "Properties for this Cities" section
+- **THEN** I should see 3 city cards: Miami (24 Properties), Chicago (20 Properties), Illinois (15 Properties)
+
+**How It Works**
+
+#### Scenario: How It Works shows 4 numbered steps
+
+- **GIVEN** I scroll to the "How it works" section
+- **THEN** I should see 4 steps numbered 01 through 04 with titles and descriptions
+
+**Agents**
+
+#### Scenario: Agents section shows 4 agent profiles
+
+- **GIVEN** I scroll to the agents section
+- **THEN** I should see 4 agent cards with photo, name, and listing count
+
+**Blog**
+
+#### Scenario: Blog section shows 4 recent posts
+
+- **GIVEN** I scroll to the "Recent Blog" section
+- **THEN** I should see 4 blog cards with image, date, author, comment count, and title
+
+**Footer**
+
+#### Scenario: Footer shows brand, navigation columns, and contact info
+
+- **THEN** I should see a footer with brand name, Community links, About Us links, Company links, and contact details
+- **AND** the footer should link to "https://www.componentdock.com/" labeled "Component Dock"
+
+**Responsive**
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** I resize the viewport to 375px width
+- **THEN** I should see a hamburger menu button
+- **AND** the navbar background should be black
+
+#### Scenario: Search form stacks on mobile
+
+- **GIVEN** I resize the viewport to 375px width
+- **THEN** the search form fields should stack vertically
 
 ## Verification checklist
 

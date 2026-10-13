@@ -54,100 +54,92 @@ Extracted from the live preview CSS (`styles/main_colors.css`, `styles/main_styl
 8. **Newsletter** — white background, split: left has section title + description, right has email input + "Subscribe" button
 9. **Footer** — white background, 3-column: logo + copyright, nav menu + description, contact info (address, phone, email)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header navigation
-```
-Given the user is on the page
-When the header is visible
-Then it shows a logo with "hotel" subtitle and hotel name and 5 gold stars
-And it displays nav links: Home, About us, Rooms, News, Contact
-And a "Book Your Stay" CTA button is present
-And the active nav link is visually distinguished
-```
+### Feature: Vespera template behaviour
 
-### Scenario: Hero slider
-```
-Given the user views the hero section
-Then a full-width background image slider is displayed
-And centered overlay text shows "luxury resort" subtitle
-And a headline and "Book Your Stay" button are visible
-And numbered dots (01, 02, 03) allow slide navigation
-And the slider auto-advances or responds to dot clicks
-```
+#### Scenario: Header navigation
 
-### Scenario: Search bar
-```
-Given the user scrolls to the search bar
-Then a dark purple horizontal strip appears
-And it contains three dropdown selects: Arrival Date, Departure Date, Rooms
-And a "Request a Quote" button is on the right
-```
+- **GIVEN** the user is on the page
+- **WHEN** the header is visible
+- **THEN** it shows a logo with "hotel" subtitle and hotel name and 5 gold stars
+- **AND** it displays nav links: Home, About us, Rooms, News, Contact
+- **AND** a "Book Your Stay" CTA button is present
+- **AND** the active nav link is visually distinguished
 
-### Scenario: Intro section
-```
-Given the user views the intro section
-Then a split layout appears with text on the left and images on the right
-And the left column shows "luxury resort" subtitle and "Relax in our Hotel" heading
-And a description paragraph and "View Rooms" link are present
-And a "Book Your Stay" button is visible
-And the right column displays 3 hotel images in a collage layout
-```
+#### Scenario: Hero slider
 
-### Scenario: Big Room feature
-```
-Given the user views the big room section
-Then a full-width split layout appears
-And the left side shows a room image slider with prev/next navigation
-And the right side shows "luxury resort" subtitle and "Rooms with private swimming pool" heading
-And a description text is present
-And a 5-star testimonial with author avatar and name is displayed
-```
+- **GIVEN** the user views the hero section
+- **THEN** a full-width background image slider is displayed
+- **AND** centered overlay text shows "luxury resort" subtitle
+- **AND** a headline and "Book Your Stay" button are visible
+- **AND** numbered dots (01, 02, 03) allow slide navigation
+- **AND** the slider auto-advances or responds to dot clicks
 
-### Scenario: Room cards
-```
-Given the user views the rooms section
-Then 3 room cards are displayed in a 3-column grid
-And each card shows a room image, price, room type, title, and description
-And each card has a "Book Now" button
-```
+#### Scenario: Search bar
 
-### Scenario: Gallery
-```
-Given the user views the gallery section
-Then a horizontal image slider is displayed on a dark background
-And each image shows a "+" overlay on hover
-And prev/next navigation arrows are available
-```
+- **GIVEN** the user scrolls to the search bar
+- **THEN** a dark purple horizontal strip appears
+- **AND** it contains three dropdown selects: Arrival Date, Departure Date, Rooms
+- **AND** a "Request a Quote" button is on the right
 
-### Scenario: Newsletter
-```
-Given the user views the newsletter section
-Then a split layout appears on white background
-And the left side shows "Our Newsletter" heading and description
-And the right side shows an email input with placeholder "Your e-mail"
-And a "Subscribe" button is present
-```
+#### Scenario: Intro section
 
-### Scenario: Footer
-```
-Given the user views the footer
-Then a 3-column layout appears on white background
-And the left column shows the hotel logo with stars and copyright
-And the middle column shows nav links and a description
-And the right column shows contact info: address, phone, email
-And a link to Component Dock is present (replacing Colorlib attribution)
-```
+- **GIVEN** the user views the intro section
+- **THEN** a split layout appears with text on the left and images on the right
+- **AND** the left column shows "luxury resort" subtitle and "Relax in our Hotel" heading
+- **AND** a description paragraph and "View Rooms" link are present
+- **AND** a "Book Your Stay" button is visible
+- **AND** the right column displays 3 hotel images in a collage layout
 
-### Scenario: Responsive behavior
-```
-Given the user views on mobile
-Then the hamburger menu icon appears
-And the search bar stacks vertically
-And room cards stack in a single column
-And the gallery becomes swipeable
-And the footer columns stack vertically
-```
+#### Scenario: Big Room feature
+
+- **GIVEN** the user views the big room section
+- **THEN** a full-width split layout appears
+- **AND** the left side shows a room image slider with prev/next navigation
+- **AND** the right side shows "luxury resort" subtitle and "Rooms with private swimming pool" heading
+- **AND** a description text is present
+- **AND** a 5-star testimonial with author avatar and name is displayed
+
+#### Scenario: Room cards
+
+- **GIVEN** the user views the rooms section
+- **THEN** 3 room cards are displayed in a 3-column grid
+- **AND** each card shows a room image, price, room type, title, and description
+- **AND** each card has a "Book Now" button
+
+#### Scenario: Gallery
+
+- **GIVEN** the user views the gallery section
+- **THEN** a horizontal image slider is displayed on a dark background
+- **AND** each image shows a "+" overlay on hover
+- **AND** prev/next navigation arrows are available
+
+#### Scenario: Newsletter
+
+- **GIVEN** the user views the newsletter section
+- **THEN** a split layout appears on white background
+- **AND** the left side shows "Our Newsletter" heading and description
+- **AND** the right side shows an email input with placeholder "Your e-mail"
+- **AND** a "Subscribe" button is present
+
+#### Scenario: Footer
+
+- **GIVEN** the user views the footer
+- **THEN** a 3-column layout appears on white background
+- **AND** the left column shows the hotel logo with stars and copyright
+- **AND** the middle column shows nav links and a description
+- **AND** the right column shows contact info: address, phone, email
+- **AND** a link to Component Dock is present (replacing Colorlib attribution)
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the user views on mobile
+- **THEN** the hamburger menu icon appears
+- **AND** the search bar stacks vertically
+- **AND** room cards stack in a single column
+- **AND** the gallery becomes swipeable
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

@@ -127,7 +127,7 @@ recorded below.
       2. Footer menu (About, Features, Contact)
       3. Social icons + copyright (Component Dock link)
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Header with animated headline
 
@@ -140,7 +140,7 @@ animated typing headline that cycles through creative resource keywords.
 - **THEN** a header SHALL display with width matching the content area
   (max-width 1170px, centered)
 - **AND** the header SHALL contain a logo image on the left (inline-block)
-  and a headline text block on the right (inline-block, 30px left padding)
+- **AND** a headline text block on the right (inline-block, 30px left padding)
 
 #### Scenario: Animated headline
 
@@ -232,7 +232,7 @@ cards with mixed-width items.
   - A clickable image area with the main image
   - An alternate hover image (initially hidden, opacity 0)
   - An info overlay (initially hidden) showing view count (eye icon)
-    and download count (arrow icon) in white text
+- **AND** download count (arrow icon) in white text
   - A white content area (25px padding) with:
     - Category label (uppercase, 13px, letter-spacing 3px, #a5a5a5)
     - Post title (20px, weight 400, #222222)

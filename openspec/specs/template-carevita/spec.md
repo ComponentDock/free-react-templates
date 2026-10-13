@@ -34,141 +34,147 @@ Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
 8. **Footer** — dark background with 4 columns (About + logo, Useful Links, Our Services, Recent News)
 9. **Copyright** — near-black `#020523` background with Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Top bar shows contact info
-  Given the user loads the page
-  Then a top bar displays "FAQ", "Request an Appointment", and emergency phone number
+#### Scenario: Top bar shows contact info
 
-Scenario: Sticky navigation
-  Given the user scrolls down
-  Then the navigation bar remains visible (sticky)
-  And the nav contains links: Home, About us, Services, News, Contact
+- **GIVEN** the user loads the page
+- **THEN** a top bar displays "FAQ", "Request an Appointment", and emergency phone number
 
-Scenario: Logo and CTA
-  Given the user views the navbar
-  Then a logo ("CareVita") is displayed on the left
-  And a "Request an Appointment" button appears in the nav area
-```
+#### Scenario: Sticky navigation
+
+- **GIVEN** the user scrolls down
+- **THEN** the navigation bar remains visible (sticky)
+- **AND** the nav contains links: Home, About us, Services, News, Contact
+
+#### Scenario: Logo and CTA
+
+- **GIVEN** the user views the navbar
+- **THEN** a logo ("CareVita") is displayed on the left
+- **AND** a "Request an Appointment" button appears in the nav area
 
 ### Hero / Slider
 
-```gherkin
-Scenario: Hero displays headline
-  Given the user loads the page
-  Then the hero section shows "Medicine made with care" as the main heading
+#### Scenario: Hero displays headline
 
-Scenario: Hero has background image
-  Given the user loads the page
-  Then the hero section has a dark overlay with a background image
+- **GIVEN** the user loads the page
+- **THEN** the hero section shows "Medicine made with care" as the main heading
 
-Scenario: Hero CTA button
-  Given the user views the hero
-  Then a "read more" button is visible
+#### Scenario: Hero has background image
 
-Scenario: Hero is a carousel
-  Given the user views the hero
-  Then 3 slide items are present (same content, carousel behavior)
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero section has a dark overlay with a background image
+
+#### Scenario: Hero CTA button
+
+- **GIVEN** the user views the hero
+- **THEN** a "read more" button is visible
+
+#### Scenario: Hero is a carousel
+
+- **GIVEN** the user views the hero
+- **THEN** 3 slide items are present (same content, carousel behavior)
 
 ### Three Info Boxes
 
-```gherkin
-Scenario: Three info boxes rendered
-  Given the user loads the page
-  Then 3 overlapping info boxes are displayed over the hero area
+#### Scenario: Three info boxes rendered
 
-Scenario: Box content
-  Given the user views the info boxes
-  Then one box shows "Working Hours" with schedule details
-  And one box shows "Appointments" with descriptive text
-  And one box shows "Emergency Cases" with a phone number
+- **GIVEN** the user loads the page
+- **THEN** 3 overlapping info boxes are displayed over the hero area
 
-Scenario: Box hover effect
-  Given the user hovers over an info box
-  Then a drop shadow appears (box-shadow: 0 15px 49px)
-```
+#### Scenario: Box content
+
+- **GIVEN** the user views the info boxes
+- **THEN** one box shows "Working Hours" with schedule details
+- **AND** one box shows "Appointments" with descriptive text
+- **AND** one box shows "Emergency Cases" with a phone number
+
+#### Scenario: Box hover effect
+
+- **GIVEN** the user hovers over an info box
+- **THEN** a drop shadow appears (box-shadow: 0 15px 49px)
 
 ### About
 
-```gherkin
-Scenario: About section renders
-  Given the user scrolls to the about section
-  Then the heading reads "A great medical team to help your needs"
-  And a descriptive paragraph is displayed
-  And two images appear in the layout
-```
+#### Scenario: About section renders
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading reads "A great medical team to help your needs"
+- **AND** a descriptive paragraph is displayed
+- **AND** two images appear in the layout
 
 ### Departments
 
-```gherkin
-Scenario: Departments section background
-  Given the user scrolls to the departments section
-  Then a parallax background image is visible
+#### Scenario: Departments section background
 
-Scenario: Department cards
-  Given the user views the departments
-  Then 3 department cards are shown
-  And each card has a circular photo, doctor name, and specialty
-  And specialties include Plastic Surgery, Gastroenterology, and Dentistry
+- **GIVEN** the user scrolls to the departments section
+- **THEN** a parallax background image is visible
 
-Scenario: Read more link
-  Given the user views the departments
-  Then a "read more" link is present
-```
+#### Scenario: Department cards
+
+- **GIVEN** the user views the departments
+- **THEN** 3 department cards are shown
+- **AND** each card has a circular photo, doctor name, and specialty
+- **AND** specialties include Plastic Surgery, Gastroenterology, and Dentistry
+
+#### Scenario: Read more link
+
+- **GIVEN** the user views the departments
+- **THEN** a "read more" link is present
 
 ### Services
 
-```gherkin
-Scenario: Services section background
-  Given the user scrolls to the services section
-  Then the section has a light gray (#f5f7fa) background
+#### Scenario: Services section background
 
-Scenario: Service cards
-  Given the user views the services
-  Then 6 service cards are displayed in a grid
-  And each card has an icon, title, and description
-  And titles include "Free Checkups", "Screening Exams", "RMI Services", "Dentistry"
+- **GIVEN** the user scrolls to the services section
+- **THEN** the section has a light gray (#f5f7fa) background
 
-Scenario: Service hover
-  Given the user hovers over a service card
-  Then the card background changes to indigo (#283290)
-  And the text color changes to white
-```
+#### Scenario: Service cards
+
+- **GIVEN** the user views the services
+- **THEN** 6 service cards are displayed in a grid
+- **AND** each card has an icon, title, and description
+- **AND** titles include "Free Checkups", "Screening Exams", "RMI Services", "Dentistry"
+
+#### Scenario: Service hover
+
+- **GIVEN** the user hovers over a service card
+- **THEN** the card background changes to indigo (#283290)
+- **AND** the text color changes to white
 
 ### CTA
 
-```gherkin
-Scenario: CTA section
-  Given the user scrolls to the CTA section
-  Then the heading reads "Need a personal health plan?"
-  And a "request a plan" button is visible
-  And a parallax background image is displayed
-```
+#### Scenario: CTA section
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the heading reads "Need a personal health plan?"
+- **AND** a "request a plan" button is visible
+- **AND** a parallax background image is displayed
 
 ### Footer
 
-```gherkin
-Scenario: Footer columns
-  Given the user scrolls to the footer
-  Then 4 columns are displayed: About, Useful Links, Our Services, Recent News
+#### Scenario: Footer columns
 
-Scenario: Footer about
-  Given the user views the footer
-  Then the logo, address, phone, and email are shown
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are displayed: About, Useful Links, Our Services, Recent News
 
-Scenario: Footer links
-  Given the user views the footer
-  Then Useful Links contains: Testimonials, FAQ, Apply for a Job, Terms & Conditions, Our Partners
+#### Scenario: Footer about
 
-Scenario: Copyright
-  Given the user views the copyright bar
-  Then a Component Dock link is present ("Made with Component Dock" or similar)
-  And the copyright bar has a near-black background
-```
+- **GIVEN** the user views the footer
+- **THEN** the logo, address, phone, and email are shown
+
+#### Scenario: Footer links
+
+- **GIVEN** the user views the footer
+- **THEN** Useful Links contains: Testimonials, FAQ, Apply for a Job, Terms & Conditions, Our Partners
+
+#### Scenario: Copyright
+
+- **GIVEN** the user views the copyright bar
+- **THEN** a Component Dock link is present ("Made with Component Dock" or similar)
+- **AND** the copyright bar has a near-black background
 
 ## Verification checklist
 

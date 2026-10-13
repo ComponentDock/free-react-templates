@@ -101,86 +101,98 @@ Extracted from the live preview DOM and `css/style.css` (1,058 lines):
 
 7. **Footer** — Three-column layout: Office address, Get in Touch (email + social icons), Social links (social media icons). Light background, clean typography.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Brisk Photography Portfolio Template
 
 #### Scenario: Navbar renders with logo and hamburger toggle
-  Given the page loads
-  Then the navbar displays "Brisk" logo text (uppercase, Playfair Display)
-  And a hamburger toggle button is visible on the right
-  And clicking the hamburger opens a sidebar panel (360px width, white bg)
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays "Brisk" logo text (uppercase, Playfair Display)
+- **AND** a hamburger toggle button is visible on the right
+- **AND** clicking the hamburger opens a sidebar panel (360px width, white bg)
 
 #### Scenario: Sidebar navigation panel
-  Given the hamburger is clicked
-  Then the sidebar panel slides in from the right
-  And it contains a search input with golden yellow submit button
-  And navigation links: Home, Work, Blog, About, Contact
-  And four gallery thumbnail images in a 2x2 grid
-  And clicking outside or the toggle closes the panel
+
+- **GIVEN** the hamburger is clicked
+- **THEN** the sidebar panel slides in from the right
+- **AND** it contains a search input with golden yellow submit button
+- **AND** navigation links: Home, Work, Blog, About, Contact
+- **AND** four gallery thumbnail images in a 2x2 grid
+- **AND** clicking outside or the toggle closes the panel
 
 #### Scenario: Hero carousel displays 3 slides
-  Given the hero section is visible
-  Then 3 carousel slides are rendered
-  And each slide shows a full-height background image on the left (75%)
-  And a text panel on the right (25%) with slide number, tag, headline, description, and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** 3 carousel slides are rendered
+- **AND** each slide shows a full-height background image on the left (75%)
+- **AND** a text panel on the right (25%) with slide number, tag, headline, description, and CTA
 
 #### Scenario: Hero slide content
-  Given slide 1 is active
-  Then the slide number shows "01/03"
-  And the tag reads "Welcome"
-  And the headline reads "Photography is on it's way."
-  And a "View Galleries" button with black border is visible
+
+- **GIVEN** slide 1 is active
+- **THEN** the slide number shows "01/03"
+- **AND** the tag reads "Welcome"
+- **AND** the headline reads "Photography is on it's way."
+- **AND** a "View Galleries" button with black border is visible
 
 #### Scenario: Hero carousel navigation
-  Given the hero carousel is displayed
-  Then previous/next arrows are available at the bottom
-  And clicking next advances to the next slide
-  And the slide number updates accordingly
+
+- **GIVEN** the hero carousel is displayed
+- **THEN** previous/next arrows are available at the bottom
+- **AND** clicking next advances to the next slide
+- **AND** the slide number updates accordingly
 
 #### Scenario: About section layout
-  Given the About section scrolls into view
-  Then a two-column layout displays (50/50 split)
-  And the left column shows an image
-  And the right column shows three content blocks: "About Us", "My Story", "Career"
-  And each block has a tag label, Playfair Display heading, and description
+
+- **GIVEN** the About section scrolls into view
+- **THEN** a two-column layout displays (50/50 split)
+- **AND** the left column shows an image
+- **AND** the right column shows three content blocks: "About Us", "My Story", "Career"
+- **AND** each block has a tag label, Playfair Display heading, and description
 
 #### Scenario: Works section displays portfolio entries
-  Given the Works section is visible
-  Then work entries display in a flex layout (55% image / 45% text)
-  And each entry has a headline link and description text
-  And entries animate on scroll
+
+- **GIVEN** the Works section is visible
+- **THEN** work entries display in a flex layout (55% image / 45% text)
+- **AND** each entry has a headline link and description text
+- **AND** entries animate on scroll
 
 #### Scenario: Blog section displays posts
-  Given the Blog section is visible
-  Then blog entries display with background images
-  And each entry shows a tag label, date, and headline link
+
+- **GIVEN** the Blog section is visible
+- **THEN** blog entries display with background images
+- **AND** each entry shows a tag label, date, and headline link
 
 #### Scenario: Subscribe newsletter section
-  Given the Subscribe section is visible
-  Then the heading reads "Subscribe Newsletter"
-  And an email input field is present
-  And a "Subscribe Now" button with golden yellow background is visible
+
+- **GIVEN** the Subscribe section is visible
+- **THEN** the heading reads "Subscribe Newsletter"
+- **AND** an email input field is present
+- **AND** a "Subscribe Now" button with golden yellow background is visible
 
 #### Scenario: Footer renders contact information
-  Given the Footer is visible
-  Then three columns display: Office, Get in Touch, Social
-  And the Office column shows an address
-  And the Get in Touch column shows an email link
-  And the Social column shows social media icon links
-  And a Component Dock link is present in the footer
+
+- **GIVEN** the Footer is visible
+- **THEN** three columns display: Office, Get in Touch, Social
+- **AND** the Office column shows an address
+- **AND** the Get in Touch column shows an email link
+- **AND** the Social column shows social media icon links
+- **AND** a Component Dock link is present in the footer
 
 #### Scenario: Responsive design
-  Given the viewport is below 768px
-  Then the navbar hamburger is visible
-  And hero text panel stacks below the image
-  And about columns stack vertically
-  And work entries stack vertically
-  And footer columns stack vertically
+
+- **GIVEN** the viewport is below 768px
+- **THEN** the navbar hamburger is visible
+- **AND** hero text panel stacks below the image
+- **AND** about columns stack vertically
+- **AND** work entries stack vertically
+- **AND** footer columns stack vertically
 
 #### Scenario: No ColorLib references in app code
-  Given the apps/brisk directory is searched
-  Then no file contains "colorlib" or "ColorLib" or "preview.colorlib.com"
+
+- **GIVEN** the apps/brisk directory is searched
+- **THEN** no file contains "colorlib" or "ColorLib" or "preview.colorlib.com"
 
 ## Verification checklist
 

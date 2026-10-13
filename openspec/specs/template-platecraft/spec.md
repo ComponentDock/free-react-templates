@@ -50,89 +50,104 @@ Tests: Vitest + Testing Library, 100% line/function/branch/statement coverage.
 | 13 | Map                      | `.map-wrap`              | N/A             | Embedded Google Map. |
 | 14 | Footer                   | `.ftco-footer`           | Dark (#121212)  | 3-column: (1) About text + Read More button, (2) Lunch & Dinner service hours, (3) Social icons + Newsletter email form. Bottom: copyright line. |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Hero section renders correctly
-- **Given** the user loads the page
-- **When** the hero section is visible
-- **Then** a full-viewport background image is displayed
-- **And** a centered heading "Welcome to Platecraft" in Playfair Display serif font is shown
-- **And** a "Reserve A Table" button with white outline border is displayed
-- **And** clicking the button scrolls to the reservation section
+### Feature: Platecraft template behaviour
 
-### Scenario: Side navigation scrolls to sections
-- **Given** the page is loaded
-- **When** the user clicks a nav link (Home, About, Menu, Reservation, Contact)
-- **Then** the page smooth-scrolls to the corresponding section
+#### Scenario: Hero section renders correctly
 
-### Scenario: Side navigation becomes fixed on scroll
-- **Given** the user scrolls past the hero
-- **When** the page is scrolled down
-- **Then** the header/logo bar becomes sticky with a white background
-- **And** the logo remains visible and clickable
+- **GIVEN** the user loads the page
+- **WHEN** the hero section is visible
+- **THEN** a full-viewport background image is displayed
+- **AND** a centered heading "Welcome to Platecraft" in Playfair Display serif font is shown
+- **AND** a "Reserve A Table" button with white outline border is displayed
+- **AND** clicking the button scrolls to the reservation section
 
-### Scenario: Food showcase grid displays items
-- **Given** the user views the "Find your best food" section
-- **When** the section is visible
-- **Then** 3 food items are displayed in a staggered image-text layout
-- **And** each item shows a category label in coral uppercase text
-- **And** each item shows a dish name, description, and "Learn More" link
+#### Scenario: Side navigation scrolls to sections
 
-### Scenario: About section displays restaurant description
-- **Given** the user scrolls to the "The Restaurant" section
-- **When** the section is visible
-- **Then** a heading "The Restaurant" and descriptive paragraphs are displayed
-- **And** the text is centered in a max-width container
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks a nav link (Home, About, Menu, Reservation, Contact)
+- **THEN** the page smooth-scrolls to the corresponding section
 
-### Scenario: Chef profiles are displayed
-- **Given** the user scrolls to "Meet The Chefs"
-- **When** the section is visible
-- **Then** 2 chef cards are shown side by side (6-col each)
-- **And** each card shows a portrait photo, name, title, bio, and social icons
+#### Scenario: Side navigation becomes fixed on scroll
 
-### Scenario: Menu tabs switch content
-- **Given** the user is on the Menu section
-- **When** the "Breakfast" tab is active
-- **Then** 4 breakfast menu items are displayed (image, name, description, price)
-- **When** the user clicks "Brunch" tab
-- **Then** 4 brunch menu items replace the breakfast items
-- **When** the user clicks "Dinner" tab
-- **Then** 4 dinner menu items replace the brunch items
+- **GIVEN** the user scrolls past the hero
+- **WHEN** the page is scrolled down
+- **THEN** the header/logo bar becomes sticky with a white background
+- **AND** the logo remains visible and clickable
 
-### Scenario: Services section shows feature cards
-- **Given** the user scrolls to "Other Services"
-- **When** the section is visible
-- **Then** 6 service cards are displayed in a 3×2 grid
-- **And** each card has a circular icon, title, and description
+#### Scenario: Food showcase grid displays items
 
-### Scenario: Reservation form accepts input
-- **Given** the user scrolls to the Reservation section
-- **When** the user fills in Name, Email, Phone, selects Persons, Date, and Time
-- **And** clicks "Reserve Now"
-- **Then** the form validates required fields before submission
+- **GIVEN** the user views the "Find your best food" section
+- **WHEN** the section is visible
+- **THEN** 3 food items are displayed in a staggered image-text layout
+- **AND** each item shows a category label in coral uppercase text
+- **AND** each item shows a dish name, description, and "Learn More" link
 
-### Scenario: Customer reviews carousel cycles
-- **Given** the user scrolls to "Customer Reviews"
-- **When** the carousel is visible
-- **Then** a testimonial quote with author photo, name, and title is displayed
-- **And** the user can navigate between 4 testimonial slides
+#### Scenario: About section displays restaurant description
 
-### Scenario: Contact form accepts input
-- **Given** the user scrolls to "Get In Touch"
-- **When** the user fills in Name, Email, Phone, and Message
-- **And** clicks "Send Message"
-- **Then** the form validates required fields before submission
+- **GIVEN** the user scrolls to the "The Restaurant" section
+- **WHEN** the section is visible
+- **THEN** a heading "The Restaurant" and descriptive paragraphs are displayed
+- **AND** the text is centered in a max-width container
 
-### Scenario: Footer displays restaurant info
-- **Given** the user scrolls to the footer
-- **When** the footer is visible
-- **Then** it shows 3 columns: About text with Read More button, service hours, social links + newsletter form
-- **And** a copyright line with Component Dock attribution is displayed
+#### Scenario: Chef profiles are displayed
 
-### Scenario: Map embed loads
-- **Given** the user scrolls to the map section
-- **When** the section is visible
-- **Then** a Google Maps embed is displayed
+- **GIVEN** the user scrolls to "Meet The Chefs"
+- **WHEN** the section is visible
+- **THEN** 2 chef cards are shown side by side (6-col each)
+- **AND** each card shows a portrait photo, name, title, bio, and social icons
+
+#### Scenario: Menu tabs switch content
+
+- **GIVEN** the user is on the Menu section
+- **WHEN** the "Breakfast" tab is active
+- **THEN** 4 breakfast menu items are displayed (image, name, description, price)
+- **WHEN** the user clicks "Brunch" tab
+- **THEN** 4 brunch menu items replace the breakfast items
+- **WHEN** the user clicks "Dinner" tab
+- **THEN** 4 dinner menu items replace the brunch items
+
+#### Scenario: Services section shows feature cards
+
+- **GIVEN** the user scrolls to "Other Services"
+- **WHEN** the section is visible
+- **THEN** 6 service cards are displayed in a 3×2 grid
+- **AND** each card has a circular icon, title, and description
+
+#### Scenario: Reservation form accepts input
+
+- **GIVEN** the user scrolls to the Reservation section
+- **WHEN** the user fills in Name, Email, Phone, selects Persons, Date, and Time
+- **AND** clicks "Reserve Now"
+- **THEN** the form validates required fields before submission
+
+#### Scenario: Customer reviews carousel cycles
+
+- **GIVEN** the user scrolls to "Customer Reviews"
+- **WHEN** the carousel is visible
+- **THEN** a testimonial quote with author photo, name, and title is displayed
+- **AND** the user can navigate between 4 testimonial slides
+
+#### Scenario: Contact form accepts input
+
+- **GIVEN** the user scrolls to "Get In Touch"
+- **WHEN** the user fills in Name, Email, Phone, and Message
+- **AND** clicks "Send Message"
+- **THEN** the form validates required fields before submission
+
+#### Scenario: Footer displays restaurant info
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** it shows 3 columns: About text with Read More button, service hours, social links + newsletter form
+- **AND** a copyright line with Component Dock attribution is displayed
+
+#### Scenario: Map embed loads
+
+- **GIVEN** the user scrolls to the map section
+- **WHEN** the section is visible
+- **THEN** a Google Maps embed is displayed
 
 ## Verification Checklist
 

@@ -48,152 +48,153 @@ Recreation of ColorLib **Buri** — a single-page restaurant landing template.
 7. **Contact** — Contact information section. Address: "240, Kings street, New York city USA". Hours: "Mon - Fri (9.00-19.00) Sat - Sun (9.00-19.00)". Phone: "+880 367 251 167". Email: "barires@contact.com". Map or location display.
 8. **Footer** — Quick links (About, Menu, Reservation, Breakfast, Lunch, Dinner). Newsletter subscription form ("Subscribe newsletter to get all updates about discount and offers"). Copyright: "All rights reserved | This template is made with by Colorlib" (replaced with Component Dock attribution).
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navigation Bar
 
-  Scenario: Desktop navbar displays all section links
-    Given the user is on a desktop viewport
-    When the page loads
-    Then the navbar shows the logo and links for Home, About, Menu, Blog, Elements, Contact
+#### Scenario: Desktop navbar displays all section links
 
-  Scenario: Navbar becomes sticky on scroll
-    Given the user scrolls past the hero section
-    When the scroll position exceeds the navbar height
-    Then the navbar should be fixed at the top of the viewport
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar shows the logo and links for Home, About, Menu, Blog, Elements, Contact
 
-  Scenario: Mobile hamburger menu toggles navigation
-    Given the user is on a mobile viewport
-    When the user taps the hamburger icon
-    Then the navigation menu should expand or collapse
-```
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero section
+- **WHEN** the scroll position exceeds the navbar height
+- **THEN** the navbar should be fixed at the top of the viewport
+
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu should expand or collapse
 
 ### Hero/Banner
 
-```gherkin
 Feature: Hero Banner
 
-  Scenario: Hero section displays heading and CTA
-    Given the user views the page
-    When the hero section loads
-    Then the heading "Expensive but the best" is visible
-    And the subtext "Modern restaurant in center of the city" is visible
-    And the "book a table" CTA button is visible
+#### Scenario: Hero section displays heading and CTA
 
-  Scenario: Hero has a full-width food background image
-    Given the user views the page
-    When the hero section loads
-    Then a full-width background image with a dark overlay is displayed
-```
+- **GIVEN** the user views the page
+- **WHEN** the hero section loads
+- **THEN** the heading "Expensive but the best" is visible
+- **AND** the subtext "Modern restaurant in center of the city" is visible
+- **AND** the "book a table" CTA button is visible
+
+#### Scenario: Hero has a full-width food background image
+
+- **GIVEN** the user views the page
+- **WHEN** the hero section loads
+- **THEN** a full-width background image with a dark overlay is displayed
 
 ### About
 
-```gherkin
 Feature: About Section
 
-  Scenario: About section displays heading and description
-    Given the user scrolls to the about section
-    When the section loads
-    Then the heading "Delicious food provider since 1990" is visible
-    And a description paragraph is displayed
-    And a "Learn More" button is visible
+#### Scenario: About section displays heading and description
 
-  Scenario: About section has two-column layout on desktop
-    Given the user is on a desktop viewport
-    When the about section loads
-    Then text content appears on one side and an image on the other
-```
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section loads
+- **THEN** the heading "Delicious food provider since 1990" is visible
+- **AND** a description paragraph is displayed
+- **AND** a "Learn More" button is visible
+
+#### Scenario: About section has two-column layout on desktop
+
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the about section loads
+- **THEN** text content appears on one side and an image on the other
 
 ### Food Menu
 
-```gherkin
 Feature: Food Menu Section
 
-  Scenario: Menu section displays all menu items
-    Given the user scrolls to the menu section
-    When the section loads
-    Then 6 menu items are displayed in a grid
-    And each item shows a food image, name, description, and price
+#### Scenario: Menu section displays all menu items
 
-  Scenario: Menu items display correct data
-    Given the menu section is visible
-    When the user views each menu item
-    Then the dish names are: Pork Sandwich, Roasted Marrow, Summer Cooking, Easter Delight, Tiener Schnitze, Chicken Roast
-    And each item shows a price starting with "From $40.00"
+- **GIVEN** the user scrolls to the menu section
+- **WHEN** the section loads
+- **THEN** 6 menu items are displayed in a grid
+- **AND** each item shows a food image, name, description, and price
 
-  Scenario: Menu section has category filter tabs
-    Given the menu section is visible
-    When the user views the filter tabs
-    Then category filter options are displayed at the top of the menu grid
-```
+#### Scenario: Menu items display correct data
+
+- **GIVEN** the menu section is visible
+- **WHEN** the user views each menu item
+- **THEN** the dish names are: Pork Sandwich, Roasted Marrow, Summer Cooking, Easter Delight, Tiener Schnitze, Chicken Roast
+- **AND** each item shows a price starting with "From $40.00"
+
+#### Scenario: Menu section has category filter tabs
+
+- **GIVEN** the menu section is visible
+- **WHEN** the user views the filter tabs
+- **THEN** category filter options are displayed at the top of the menu grid
 
 ### Video/Intro
 
-```gherkin
 Feature: Video Introduction Section
 
-  Scenario: Video section displays with play button
-    Given the user scrolls to the video section
-    When the section loads
-    Then a full-width background image with a dark overlay is displayed
-    And a play button icon is visible in the center
+#### Scenario: Video section displays with play button
 
-  Scenario: Play button triggers video modal or external link
-    Given the video section is visible
-    When the user clicks the play button
-    Then a video modal or external video link opens
-```
+- **GIVEN** the user scrolls to the video section
+- **WHEN** the section loads
+- **THEN** a full-width background image with a dark overlay is displayed
+- **AND** a play button icon is visible in the center
+
+#### Scenario: Play button triggers video modal or external link
+
+- **GIVEN** the video section is visible
+- **WHEN** the user clicks the play button
+- **THEN** a video modal or external video link opens
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials Section
 
-  Scenario: Testimonials section displays review cards
-    Given the user scrolls to the testimonials section
-    When the section loads
-    Then the heading "What they said" is visible
-    And review cards with testimonial text and author names are displayed
+#### Scenario: Testimonials section displays review cards
 
-  Scenario: Testimonials carousel rotates through reviews
-    Given the testimonials section is visible
-    When the carousel advances
-    Then different review cards are shown with author attribution
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the section loads
+- **THEN** the heading "What they said" is visible
+- **AND** review cards with testimonial text and author names are displayed
+
+#### Scenario: Testimonials carousel rotates through reviews
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the carousel advances
+- **THEN** different review cards are shown with author attribution
 
 ### Contact
 
-```gherkin
 Feature: Contact Section
 
-  Scenario: Contact section displays business information
-    Given the user scrolls to the contact section
-    When the section loads
-    Then the address "240, Kings street, New York city USA" is visible
-    And business hours "Mon - Fri (9.00-19.00) Sat - Sun (9.00-19.00)" are visible
-    And phone number "+880 367 251 167" is visible
-    And email "barires@contact.com" is visible
-```
+#### Scenario: Contact section displays business information
+
+- **GIVEN** the user scrolls to the contact section
+- **WHEN** the section loads
+- **THEN** the address "240, Kings street, New York city USA" is visible
+- **AND** business hours "Mon - Fri (9.00-19.00) Sat - Sun (9.00-19.00)" are visible
+- **AND** phone number "+880 367 251 167" is visible
+- **AND** email "barires@contact.com" is visible
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer displays links and newsletter subscription
-    Given the user scrolls to the footer
-    When the footer loads
-    Then quick links for About, Menu, Reservation, Blog, Breakfast, Lunch, Dinner are visible
-    And a newsletter subscription form is visible with an email input and subscribe button
+#### Scenario: Footer displays links and newsletter subscription
 
-  Scenario: Footer has Component Dock attribution
-    Given the footer is visible
-    When the user views the copyright line
-    Then the text includes a link to https://www.componentdock.com/
-```
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer loads
+- **THEN** quick links for About, Menu, Reservation, Blog, Breakfast, Lunch, Dinner are visible
+- **AND** a newsletter subscription form is visible with an email input and subscribe button
+
+#### Scenario: Footer has Component Dock attribution
+
+- **GIVEN** the footer is visible
+- **WHEN** the user views the copyright line
+- **THEN** the text includes a link to https://www.componentdock.com/
 
 ## Verification Checklist
 

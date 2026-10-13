@@ -79,106 +79,90 @@ matching layout, colors, typography, and content types (no ColorLib assets copie
 | Education line       | `2px` solid `#ccc` vertical line                                    |
 | Timeline dot (exp)   | `10px` circle, `2px` solid `#fff` border                            |
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Header contact bar renders correctly
+### Feature: CVCraft template behaviour
 
-```gherkin
-Given the user visits the CVCraft page
-Then a header bar is visible at the top with an orange background
-And the header contains 3 contact info columns: address, phone, email
-And each contact column has an icon and text
-And a "Download CV" button is visible on the right side of the header
-When the user hovers over the "Download CV" button
-Then the button moves up slightly (translateY effect)
-```
+#### Scenario: Header contact bar renders correctly
 
-### Scenario: Intro hero section displays profile info
+- **GIVEN** the user visits the CVCraft page
+- **THEN** a header bar is visible at the top with an orange background
+- **AND** the header contains 3 contact info columns: address, phone, email
+- **AND** each contact column has an icon and text
+- **AND** a "Download CV" button is visible on the right side of the header
+- **WHEN** the user hovers over the "Download CV" button
+- **THEN** the button moves up slightly (translateY effect)
 
-```gherkin
-Given the user visits the CVCraft page
-Then the intro section shows a full-width background image with dark overlay
-And a circular profile photo is displayed (centered, overlapping the hero)
-And the person's name is shown in bold below the photo
-And the person's title is shown in orange below the name
-And an information list shows email, age, address, and phone
-And social media icon buttons are displayed (Pinterest, LinkedIn, Instagram, Facebook, Twitter)
-When the user hovers over a social icon
-Then the icon background transitions from purple to orange
-```
+#### Scenario: Intro hero section displays profile info
 
-### Scenario: Portfolio section with filter tabs
+- **GIVEN** the user visits the CVCraft page
+- **THEN** the intro section shows a full-width background image with dark overlay
+- **AND** a circular profile photo is displayed (centered, overlapping the hero)
+- **AND** the person's name is shown in bold below the photo
+- **AND** the person's title is shown in orange below the name
+- **AND** an information list shows email, age, address, and phone
+- **AND** social media icon buttons are displayed (Pinterest, LinkedIn, Instagram, Facebook, Twitter)
+- **WHEN** the user hovers over a social icon
+- **THEN** the icon background transitions from purple to orange
 
-```gherkin
-Given the user visits the CVCraft page
-Then the portfolio section displays a "Portfolio" heading with "MY WORK" subtitle
-And filter tabs are visible: ALL (active/orange) and category options
-And a grid of portfolio images is displayed in 3 columns
-When the user clicks a filter tab
-Then only portfolio items matching that category are shown
-And the active filter tab text turns orange
-```
+#### Scenario: Portfolio section with filter tabs
 
-### Scenario: About section with skill progress bars
+- **GIVEN** the user visits the CVCraft page
+- **THEN** the portfolio section displays a "Portfolio" heading with "MY WORK" subtitle
+- **AND** filter tabs are visible: ALL (active/orange) and category options
+- **AND** a grid of portfolio images is displayed in 3 columns
+- **WHEN** the user clicks a filter tab
+- **THEN** only portfolio items matching that category are shown
+- **AND** the active filter tab text turns orange
 
-```gherkin
-Given the user visits the CVCraft page
-Then the "About me" section displays with "PROFESSIONAL PATH" subtitle
-And a paragraph of professional bio text is shown
-And 4 radial progress bars are displayed in a row
-And each progress bar shows a skill name and percentage
-When the progress bars animate
-Then they fill to their respective percentages (97%, 78%, 67%, 97%)
-```
+#### Scenario: About section with skill progress bars
 
-### Scenario: Experience section with timeline
+- **GIVEN** the user visits the CVCraft page
+- **THEN** the "About me" section displays with "PROFESSIONAL PATH" subtitle
+- **AND** a paragraph of professional bio text is shown
+- **AND** 4 radial progress bars are displayed in a row
+- **AND** each progress bar shows a skill name and percentage
+- **WHEN** the progress bars animate
+- **THEN** they fill to their respective percentages (97%, 78%, 67%, 97%)
 
-```gherkin
-Given the user visits the CVCraft page
-Then the experience section has a dark purple background (#28023D)
-And white text is used throughout the section
-And the heading "Work Experience" with "PREVIOUS JOBS" subtitle is shown
-And 2 job entries are displayed with title, company (orange), date range, description, and bullet points
-And a vertical timeline with white circle dots is visible on the left
-```
+#### Scenario: Experience section with timeline
 
-### Scenario: Education section with timeline
+- **GIVEN** the user visits the CVCraft page
+- **THEN** the experience section has a dark purple background (#28023D)
+- **AND** white text is used throughout the section
+- **AND** the heading "Work Experience" with "PREVIOUS JOBS" subtitle is shown
+- **AND** 2 job entries are displayed with title, company (orange), date range, description, and bullet points
+- **AND** a vertical timeline with white circle dots is visible on the left
 
-```gherkin
-Given the user visits the CVCraft page
-Then the education section shows "Education" heading with "ACADEMIC CAREER" subtitle
-And 3 education entries are displayed with degree, institution (orange), date, and description
-And a vertical timeline with orange dots and glow rings is visible on the left
-```
+#### Scenario: Education section with timeline
 
-### Scenario: Counter stats section
+- **GIVEN** the user visits the CVCraft page
+- **THEN** the education section shows "Education" heading with "ACADEMIC CAREER" subtitle
+- **AND** 3 education entries are displayed with degree, institution (orange), date, and description
+- **AND** a vertical timeline with orange dots and glow rings is visible on the left
 
-```gherkin
-Given the user visits the CVCraft page
-Then the counter section displays over a background image with dark overlay
-And 4 statistics are shown in a row: Coder Degrees (3), Project Completed (25), Satisfied Clients (311), Finished Projects (732)
-And each stat shows a large number and a small label below
-```
+#### Scenario: Counter stats section
 
-### Scenario: Footer
+- **GIVEN** the user visits the CVCraft page
+- **THEN** the counter section displays over a background image with dark overlay
+- **AND** 4 statistics are shown in a row: Coder Degrees (3), Project Completed (25), Satisfied Clients (311), Finished Projects (732)
+- **AND** each stat shows a large number and a small label below
 
-```gherkin
-Given the user visits the CVCraft page
-Then the footer has a dark purple (#28023D) background
-And centered copyright text is displayed
-And a link to ComponentDock is present ("Made with Component Dock")
-```
+#### Scenario: Footer
 
-### Scenario: Responsive layout
+- **GIVEN** the user visits the CVCraft page
+- **THEN** the footer has a dark purple (#28023D) background
+- **AND** centered copyright text is displayed
+- **AND** a link to ComponentDock is present ("Made with Component Dock")
 
-```gherkin
-Given the user views the page on a mobile device (max-width 767px)
-Then the header stacks contact columns vertically
-And the intro section adjusts padding for the taller profile image
-And the portfolio grid shows 1-2 columns instead of 3
-And the about/education/experience sections stack their heading and content vertically
-And the counter section centers the stats and shows 2 columns
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device (max-width 767px)
+- **THEN** the header stacks contact columns vertically
+- **AND** the intro section adjusts padding for the taller profile image
+- **AND** the portfolio grid shows 1-2 columns instead of 3
+- **AND** the about/education/experience sections stack their heading and content vertically
+- **AND** the counter section centers the stats and shows 2 columns
 
 ## Verification checklist
 

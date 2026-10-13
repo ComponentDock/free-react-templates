@@ -68,164 +68,182 @@ Extracted from the live preview's CSS (`css/style.css`):
 10. **Contact** — "Contact Me" heading + description. 4 info boxes (Address, Contact Number, Email, Website) with green circular icons (bg-light cards). Below: 2-column — form (name, email, subject, message + "Send Message" button) on right + map placeholder on left.
 11. **Footer** — Black background, 4 columns: About + social links (Twitter, Facebook, Instagram), Links nav, Services list, "Have a Questions?" with contact info. Copyright line at bottom.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-Scenario: Navbar renders all navigation links
-  Given the page loads
-  When I look at the navbar
-  Then I see the brand "Wordcraft."
-  And I see navigation links: Home, About, Chapter, Reviews, My Books, Author, Contact
-  And the navbar is transparent initially
+#### Scenario: Navbar renders all navigation links
 
-Scenario: Navbar becomes fixed on scroll
-  Given the page loads
-  When I scroll down past the hero
-  Then the navbar becomes fixed with a white background and shadow
-  And the brand color changes to black
+- **GIVEN** the page loads
+- **WHEN** I look at the navbar
+- **THEN** I see the brand "Wordcraft."
+- **AND** I see navigation links: Home, About, Chapter, Reviews, My Books, Author, Contact
+- **AND** the navbar is transparent initially
 
-Scenario: Active nav link shows green underline
-  Given the page loads
-  When I click a nav link
-  Then the link shows a green (#17b978) underline animation
+#### Scenario: Navbar becomes fixed on scroll
+
+- **GIVEN** the page loads
+- **WHEN** I scroll down past the hero
+- **THEN** the navbar becomes fixed with a white background and shadow
+- **AND** the brand color changes to black
+
+#### Scenario: Active nav link shows green underline
+
+- **GIVEN** the page loads
+- **WHEN** I click a nav link
+- **THEN** the link shows a green (#17b978) underline animation
 
 ### Feature: Hero Section
 
-Scenario: Hero renders with split layout
-  Given the page loads
-  When I view the hero section
-  Then I see a subheading "Best Seller Book Of The Week" in green uppercase
-  And I see a large heading with book title
-  And I see a description paragraph
-  And I see a "Buy Now" CTA button with pill shape
-  And I see an illustration on the right side
+#### Scenario: Hero renders with split layout
 
-Scenario: Hero button is pill-shaped
-  Given the page loads
-  When I look at the hero CTA button
-  Then it has a border-radius of 40px
-  And it has a green background (#17b978)
-  And it has white text
-  And it has a box-shadow
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** I see a subheading "Best Seller Book Of The Week" in green uppercase
+- **AND** I see a large heading with book title
+- **AND** I see a description paragraph
+- **AND** I see a "Buy Now" CTA button with pill shape
+- **AND** I see an illustration on the right side
+
+#### Scenario: Hero button is pill-shaped
+
+- **GIVEN** the page loads
+- **WHEN** I look at the hero CTA button
+- **THEN** it has a border-radius of 40px
+- **AND** it has a green background (#17b978)
+- **AND** it has white text
+- **AND** it has a box-shadow
 
 ### Feature: Partner Logos
 
-Scenario: Partner logos strip renders
-  Given the page loads
-  When I view the partner section
-  Then I see 5 partner logos in a horizontal row
-  And each logo is a placeholder image
+#### Scenario: Partner logos strip renders
+
+- **GIVEN** the page loads
+- **WHEN** I view the partner section
+- **THEN** I see 5 partner logos in a horizontal row
+- **AND** each logo is a placeholder image
 
 ### Feature: About The Book
 
-Scenario: About section renders with 2-column layout
-  Given the page loads
-  When I view the About section
-  Then I see a background image on the left column
-  And I see "About The Book" heading on the right
-  And I see 3 sub-sections: Award achievements, Read On Any Devices, Very High Resolution
-  And each sub-section has a bold sub-heading and description paragraph
+#### Scenario: About section renders with 2-column layout
+
+- **GIVEN** the page loads
+- **WHEN** I view the About section
+- **THEN** I see a background image on the left column
+- **AND** I see "About The Book" heading on the right
+- **AND** I see 3 sub-sections: Award achievements, Read On Any Devices, Very High Resolution
+- **AND** each sub-section has a bold sub-heading and description paragraph
 
 ### Feature: Counter Section
 
-Scenario: Counter section displays 4 stats
-  Given the page loads
-  When I view the counter section
-  Then I see 4 stat cards in a row
-  And each card shows a number and label
-  And the cards have a light background (#f5f4fb)
-  And the numbers are large and bold in dark navy (#263b5e)
+#### Scenario: Counter section displays 4 stats
+
+- **GIVEN** the page loads
+- **WHEN** I view the counter section
+- **THEN** I see 4 stat cards in a row
+- **AND** each card shows a number and label
+- **AND** the cards have a light background (#f5f4fb)
+- **AND** the numbers are large and bold in dark navy (#263b5e)
 
 ### Feature: Chapter / Book Contents
 
-Scenario: Chapter section renders sidebar + content
-  Given the page loads
-  When I view the chapter section
-  Then I see "What's Inside The Book" heading centered
-  And I see a left sidebar with 8 navigation links
-  And I see content cards on the right with headings and paragraphs
-  And the sidebar navigation is sticky while scrolling
+#### Scenario: Chapter section renders sidebar + content
 
-Scenario: Chapter sidebar links highlight on scroll
-  Given the page loads
-  When I scroll through chapter content
-  Then the current chapter link in the sidebar gets a green underline
-  And the sidebar stays fixed in position
+- **GIVEN** the page loads
+- **WHEN** I view the chapter section
+- **THEN** I see "What's Inside The Book" heading centered
+- **AND** I see a left sidebar with 8 navigation links
+- **AND** I see content cards on the right with headings and paragraphs
+- **AND** the sidebar navigation is sticky while scrolling
+
+#### Scenario: Chapter sidebar links highlight on scroll
+
+- **GIVEN** the page loads
+- **WHEN** I scroll through chapter content
+- **THEN** the current chapter link in the sidebar gets a green underline
+- **AND** the sidebar stays fixed in position
 
 ### Feature: Testimonials
 
-Scenario: Testimonials render with green overlay background
-  Given the page loads
-  When I view the testimonials section
-  Then I see a green overlay (#17b978 at 0.8 opacity) over a background image
-  And I see "Testimonial" subheading in white
-  And I see "Kinds Words From Customers" heading in white
-  And I see a carousel of testimony cards
+#### Scenario: Testimonials render with green overlay background
 
-Scenario: Testimonial cards have correct styling
-  Given the page loads
-  When I view a testimony card
-  Then it has a white background
-  And it has a green quote icon circle at the top
-  And it shows a user image, name, and position
-  And the card has a box-shadow
+- **GIVEN** the page loads
+- **WHEN** I view the testimonials section
+- **THEN** I see a green overlay (#17b978 at 0.8 opacity) over a background image
+- **AND** I see "Testimonial" subheading in white
+- **AND** I see "Kinds Words From Customers" heading in white
+- **AND** I see a carousel of testimony cards
+
+#### Scenario: Testimonial cards have correct styling
+
+- **GIVEN** the page loads
+- **WHEN** I view a testimony card
+- **THEN** it has a white background
+- **AND** it has a green quote icon circle at the top
+- **AND** it shows a user image, name, and position
+- **AND** the card has a box-shadow
 
 ### Feature: My Other Books
 
-Scenario: Books grid renders 8 book covers
-  Given the page loads
-  When I view the projects section
-  Then I see "Projects" subheading and "My Other Books" heading
-  And I see a 4-column grid of 8 book cover images
-  And each cover has a hover overlay with title and genre
+#### Scenario: Books grid renders 8 book covers
+
+- **GIVEN** the page loads
+- **WHEN** I view the projects section
+- **THEN** I see "Projects" subheading and "My Other Books" heading
+- **AND** I see a 4-column grid of 8 book cover images
+- **AND** each cover has a hover overlay with title and genre
 
 ### Feature: About The Author
 
-Scenario: Author section renders with 2-column layout
-  Given the page loads
-  When I view the author section
-  Then I see the author photo on the left
-  And I see "Know More About The Author" subheading
-  And I see the author name as a heading
-  And I see a bio paragraph
-  And I see an info list with Name, DOB, Address, Zip, Email, Phone
-  And I see a "View All Books" CTA button
-  And the right column has a light background (#f5f4fb)
+#### Scenario: Author section renders with 2-column layout
+
+- **GIVEN** the page loads
+- **WHEN** I view the author section
+- **THEN** I see the author photo on the left
+- **AND** I see "Know More About The Author" subheading
+- **AND** I see the author name as a heading
+- **AND** I see a bio paragraph
+- **AND** I see an info list with Name, DOB, Address, Zip, Email, Phone
+- **AND** I see a "View All Books" CTA button
+- **AND** the right column has a light background (#f5f4fb)
 
 ### Feature: Contact Section
 
-Scenario: Contact info boxes render
-  Given the page loads
-  When I view the contact section
-  Then I see "Contact Me" heading
-  And I see 4 info boxes in a row: Address, Contact Number, Email, Website
-  And each box has a green circular icon (100px, #17b978)
-  And each box has a light background (#f5f4fb)
+#### Scenario: Contact info boxes render
 
-Scenario: Contact form renders
-  Given the page loads
-  When I view the contact form
-  Then I see fields: Your Name, Your Email, Subject, Message (textarea)
-  And I see a "Send Message" button with pill shape
-  And the form has a light background
+- **GIVEN** the page loads
+- **WHEN** I view the contact section
+- **THEN** I see "Contact Me" heading
+- **AND** I see 4 info boxes in a row: Address, Contact Number, Email, Website
+- **AND** each box has a green circular icon (100px, #17b978)
+- **AND** each box has a light background (#f5f4fb)
+
+#### Scenario: Contact form renders
+
+- **GIVEN** the page loads
+- **WHEN** I view the contact form
+- **THEN** I see fields: Your Name, Your Email, Subject, Message (textarea)
+- **AND** I see a "Send Message" button with pill shape
+- **AND** the form has a light background
 
 ### Feature: Footer
 
-Scenario: Footer renders with 4 columns
-  Given the page loads
-  When I view the footer
-  Then I see a black background (#000000)
-  And I see 4 columns: About, Links, Services, "Have a Questions?"
-  And I see social media icons (Twitter, Facebook, Instagram)
-  And I see a copyright line at the bottom
-  And the copyright line links to "Component Dock" (https://www.componentdock.com/)
+#### Scenario: Footer renders with 4 columns
 
-Scenario: Footer replaces Colorlib attribution
-  Given the page loads
-  When I view the footer copyright
-  Then it says "Component Dock" instead of "Colorlib"
-  And it links to https://www.componentdock.com/
+- **GIVEN** the page loads
+- **WHEN** I view the footer
+- **THEN** I see a black background (#000000)
+- **AND** I see 4 columns: About, Links, Services, "Have a Questions?"
+- **AND** I see social media icons (Twitter, Facebook, Instagram)
+- **AND** I see a copyright line at the bottom
+- **AND** the copyright line links to "Component Dock" (https://www.componentdock.com/)
+
+#### Scenario: Footer replaces Colorlib attribution
+
+- **GIVEN** the page loads
+- **WHEN** I view the footer copyright
+- **THEN** it says "Component Dock" instead of "Colorlib"
+- **AND** it links to https://www.componentdock.com/
 
 ## Verification Checklist
 

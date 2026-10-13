@@ -61,181 +61,178 @@ Recreation of the ColorLib "Portech" template as a React 19 + Vite + Tailwind 4 
 14. **Footer** — Dark background. 3-column layout: brand description + newsletter signup, "Explore" nav links + service links, "Have a Questions?" contact info (address, phone, email).
 15. **FooterBottom** — Very dark bar. Copyright text with heart icon + "Component Dock" link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
 
-  Scenario: Renders brand and navigation links
-    Given the page loads
-    Then the navbar displays brand text "Techwise"
-    And the navbar contains links: Home, About, Services, Portfolio, Blog, Contact
+#### Scenario: Renders brand and navigation links
 
-  Scenario: Navbar is sticky on scroll
-    Given the page loads
-    When the user scrolls down past the hero
-    Then the navbar remains fixed at the top of the viewport
+- **GIVEN** the page loads
+- **THEN** the navbar displays brand text "Techwise"
+- **AND** the navbar contains links: Home, About, Services, Portfolio, Blog, Contact
 
-  Scenario: Mobile hamburger menu
-    Given the viewport width is less than 768px
-    When the user taps the hamburger menu button
-    Then the navigation links are displayed in a dropdown
-```
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar remains fixed at the top of the viewport
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport width is less than 768px
+- **WHEN** the user taps the hamburger menu button
+- **THEN** the navigation links are displayed in a dropdown
 
 ### Hero
 
-```gherkin
 Feature: Hero Section
 
-  Scenario: Displays hero content with CTA buttons
-    Given the page loads
-    Then the hero section shows a heading "We Create Website the Way You Want with Techwise"
-    And the hero shows a subtext paragraph
-    And the hero shows two CTA buttons: "Learn More" and "View Portfolio"
+#### Scenario: Displays hero content with CTA buttons
 
-  Scenario: Hero has background image with overlay
-    Given the page loads
-    Then the hero section has a background image with a dark overlay
+- **GIVEN** the page loads
+- **THEN** the hero section shows a heading "We Create Website the Way You Want with Techwise"
+- **AND** the hero shows a subtext paragraph
+- **AND** the hero shows two CTA buttons: "Learn More" and "View Portfolio"
 
-  Scenario: Hero shows video play icon
-    Given the page loads
-    Then the hero section displays a play button icon on the left side
-```
+#### Scenario: Hero has background image with overlay
+
+- **GIVEN** the page loads
+- **THEN** the hero section has a background image with a dark overlay
+
+#### Scenario: Hero shows video play icon
+
+- **GIVEN** the page loads
+- **THEN** the hero section displays a play button icon on the left side
 
 ### Services
 
-```gherkin
 Feature: Services Section
 
-  Scenario: Displays service cards
-    Given the page loads
-    Then the services section shows heading "We Provide Effective for Business Solutions"
-    And the services section displays 4 service cards: UX/UI Design, Development, Branding, Search Optimization
+#### Scenario: Displays service cards
 
-  Scenario: Each service card has icon and description
-    Given the page loads
-    Then each service card has an icon, a heading, and a description paragraph
-```
+- **GIVEN** the page loads
+- **THEN** the services section shows heading "We Provide Effective for Business Solutions"
+- **AND** the services section displays 4 service cards: UX/UI Design, Development, Branding, Search Optimization
+
+#### Scenario: Each service card has icon and description
+
+- **GIVEN** the page loads
+- **THEN** each service card has an icon, a heading, and a description paragraph
 
 ### About
 
-```gherkin
 Feature: About Section
 
-  Scenario: Displays about content
-    Given the page loads
-    Then the about section shows heading "We Are Techwise Creative Studio Agency"
-    And the about section has a description paragraph
-    And the about section has an image on the left
+#### Scenario: Displays about content
 
-  Scenario: Shows stats and CTA
-    Given the page loads
-    Then the about section displays stat badges (Expert Team, Solution For Business)
-    And the about section has a "Get in touch with us" CTA link
-```
+- **GIVEN** the page loads
+- **THEN** the about section shows heading "We Are Techwise Creative Studio Agency"
+- **AND** the about section has a description paragraph
+- **AND** the about section has an image on the left
+
+#### Scenario: Shows stats and CTA
+
+- **GIVEN** the page loads
+- **THEN** the about section displays stat badges (Expert Team, Solution For Business)
+- **AND** the about section has a "Get in touch with us" CTA link
 
 ### Team
 
-```gherkin
 Feature: Team Section
 
-  Scenario: Displays team member cards
-    Given the page loads
-    Then the team section shows heading "Our Team"
-    And the team section displays team member cards with photo, name, role, and social links
+#### Scenario: Displays team member cards
 
-  Scenario: Shows "View All Staff" button
-    Given the page loads
-    Then the team section displays a "View All Staff" button
-```
+- **GIVEN** the page loads
+- **THEN** the team section shows heading "Our Team"
+- **AND** the team section displays team member cards with photo, name, role, and social links
+
+#### Scenario: Shows "View All Staff" button
+
+- **GIVEN** the page loads
+- **THEN** the team section displays a "View All Staff" button
 
 ### Counter
 
-```gherkin
 Feature: Counter Section
 
-  Scenario: Displays animated counter stats
-    Given the page loads
-    Then the counter section shows stats with animated numbers
-    And the counter section has a dark parallax background image
-```
+#### Scenario: Displays animated counter stats
+
+- **GIVEN** the page loads
+- **THEN** the counter section shows stats with animated numbers
+- **AND** the counter section has a dark parallax background image
 
 ### Portfolio
 
-```gherkin
 Feature: Portfolio Section
 
-  Scenario: Displays portfolio grid
-    Given the page loads
-    Then the portfolio section shows heading "Our Exceptional Quality Work"
-    And the portfolio section displays an image grid with hover effects
-```
+#### Scenario: Displays portfolio grid
+
+- **GIVEN** the page loads
+- **THEN** the portfolio section shows heading "Our Exceptional Quality Work"
+- **AND** the portfolio section displays an image grid with hover effects
 
 ### FAQ
 
-```gherkin
 Feature: FAQ Section
 
-  Scenario: Displays FAQ accordion
-    Given the page loads
-    Then the FAQ section shows heading "Frequently Ask Question"
-    And the FAQ section displays 4 accordion items with questions and answers
+#### Scenario: Displays FAQ accordion
 
-  Scenario: FAQ items expand on click
-    Given the page loads
-    When the user clicks on a FAQ question
-    Then the corresponding answer is revealed
-```
+- **GIVEN** the page loads
+- **THEN** the FAQ section shows heading "Frequently Ask Question"
+- **AND** the FAQ section displays 4 accordion items with questions and answers
+
+#### Scenario: FAQ items expand on click
+
+- **GIVEN** the page loads
+- **WHEN** the user clicks on a FAQ question
+- **THEN** the corresponding answer is revealed
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials Section
 
-  Scenario: Displays testimonial carousel
-    Given the page loads
-    Then the testimonials section shows heading "What Are Clients Says"
-    And the testimonials section displays carousel cards with star ratings, quotes, author name and role
-```
+#### Scenario: Displays testimonial carousel
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section shows heading "What Are Clients Says"
+- **AND** the testimonials section displays carousel cards with star ratings, quotes, author name and role
 
 ### Blog
 
-```gherkin
 Feature: Blog Section
 
-  Scenario: Displays blog post cards
-    Given the page loads
-    Then the blog section shows heading "Recent Post"
-    And the blog section displays 3 post cards with date, author, comment count, title, excerpt, and "Read more" link
-```
+#### Scenario: Displays blog post cards
+
+- **GIVEN** the page loads
+- **THEN** the blog section shows heading "Recent Post"
+- **AND** the blog section displays 3 post cards with date, author, comment count, title, excerpt, and "Read more" link
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter Section
 
-  Scenario: Displays newsletter signup
-    Given the page loads
-    Then the newsletter section shows heading "Subscribe to our Newsletter"
-    And the newsletter section has an email input field and a subscribe button
-```
+#### Scenario: Displays newsletter signup
+
+- **GIVEN** the page loads
+- **THEN** the newsletter section shows heading "Subscribe to our Newsletter"
+- **AND** the newsletter section has an email input field and a subscribe button
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Displays footer content
-    Given the page loads
-    Then the footer shows 3-column layout with brand info, navigation links, and contact details
-    And the footer displays address, phone number, and email
+#### Scenario: Displays footer content
 
-  Scenario: Footer bottom has Component Dock link
-    Given the page loads
-    Then the footer bottom bar shows copyright text with a link to Component Dock
-```
+- **GIVEN** the page loads
+- **THEN** the footer shows 3-column layout with brand info, navigation links, and contact details
+- **AND** the footer displays address, phone number, and email
+
+#### Scenario: Footer bottom has Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** the footer bottom bar shows copyright text with a link to Component Dock
 
 ## Verification Checklist
 

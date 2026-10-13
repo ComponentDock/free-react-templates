@@ -13,22 +13,30 @@
 - Button Shapes: Rounded-md / rounded-full for carousel control arrows
 - Section Backgrounds: Light slate `#f8fafc`, dark hero `#0f172a`, pure white `#ffffff` cards
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Hero Carousel Section
+
+#### Scenario: Hero Carousel Section
 
 - The template must display a prominent interactive image carousel with slide navigation (prev/next buttons and pagination dots).
 - Each slide features a high-impact background image (via picsum), bold headline, descriptive subtitle, and call-to-action button.
 
 ### Requirement 2: Featured Collections / Grid
 
+#### Scenario: Featured Collections / Grid
+
 - A structured grid section displaying featured items, categories, or portfolio cards with hover zoom effects and descriptions.
 
 ### Requirement 3: Interactive Carousel Slider
 
+#### Scenario: Interactive Carousel Slider
+
 - Secondary card carousel showcasing testimonials, products, or featured media items with smooth slide transitions.
 
 ### Requirement 4: Footer Component
+
+#### Scenario: Footer Component
 
 - Professional footer featuring brand info, quick navigation links, newsletter signup, and mandatory Component Dock attribution (`https://www.componentdock.com/`).
 

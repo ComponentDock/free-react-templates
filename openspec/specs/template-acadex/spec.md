@@ -91,95 +91,108 @@ teacher profiles, testimonials, and a contact form.
     links + email subscribe form (input + button). Bottom copyright bar
     with border-top.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Acadex — Online Courses Education Template
 
   Background:
-    Given the user navigates to the Acadex template page
-    Then the page loads with a sticky navbar at the top
+- **GIVEN** the user navigates to the Acadex template page
+- **THEN** the page loads with a sticky navbar at the top
 
-  Scenario: Navbar displays logo and navigation links
-    When the navbar is visible
-    Then the logo "Acadex" is displayed on the left
-    And the navigation links "Home", "Courses", "Programs", "Teachers" are shown
-    And a "Contact Us" CTA button is visible on the right
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Navbar becomes sticky on scroll
-    When the user scrolls down past the hero
-    Then the navbar sticks to the top of the viewport
+- **WHEN** the navbar is visible
+- **THEN** the logo "Acadex" is displayed on the left
+- **AND** the navigation links "Home", "Courses", "Programs", "Teachers" are shown
+- **AND** a "Contact Us" CTA button is visible on the right
 
-  Scenario: Hero section shows headline and signup form
-    When the hero section is visible
-    Then the heading "Learn From The Expert" is displayed
-    And a subtext paragraph is shown below the heading
-    And an "Admission Now" button is visible
-    And a signup form card appears on the right with email and password fields
+#### Scenario: Navbar becomes sticky on scroll
 
-  Scenario: Hero signup form has three inputs
-    When the signup form is visible
-    Then an email input is displayed
-    And a password input is displayed
-    And a "Re-type Password" input is displayed
-    And a "Sign up" submit button is visible
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar sticks to the top of the viewport
 
-  Scenario: Courses section shows heading
-    When the user scrolls to the courses section
-    Then the heading "Courses" is displayed
+#### Scenario: Hero section shows headline and signup form
 
-  Scenario: Course cards display in a carousel
-    When the courses carousel is visible
-    Then 6 course cards are displayed
-    And each card shows a course image
-    And each card shows a price (e.g. "$20", "$99")
-    And each card shows lesson meta ("4 Lessons / 12 week")
-    And each card shows a course title and description
-    And each card shows student count and comment count
-    And Prev/Next navigation buttons are available
+- **WHEN** the hero section is visible
+- **THEN** the heading "Learn From The Expert" is displayed
+- **AND** a subtext paragraph is shown below the heading
+- **AND** an "Admission Now" button is visible
+- **AND** a signup form card appears on the right with email and password fields
 
-  Scenario: Programs section shows three feature rows
-    When the user scrolls to the programs section
-    Then the heading "Our Programs" is displayed
-    And three alternating illustration+text rows are shown
-    And each row contains a heading, description text, and two stat items
+#### Scenario: Hero signup form has three inputs
 
-  Scenario: Teachers section shows teacher grid
-    When the user scrolls to the teachers section
-    Then the heading "Our Teachers" is displayed
-    And 3 teacher cards are shown in a grid
-    And each card shows a circular photo, name, position, and bio
+- **WHEN** the signup form is visible
+- **THEN** an email input is displayed
+- **AND** a password input is displayed
+- **AND** a "Re-type Password" input is displayed
+- **AND** a "Sign up" submit button is visible
 
-  Scenario: Testimonial section shows quote with overlay
-    When the user scrolls to the testimonial section
-    Then a background image with dark overlay is shown
-    And a circular avatar photo is displayed
-    And a person's name is shown
-    And a blockquote with testimonial text is displayed
+#### Scenario: Courses section shows heading
 
-  Scenario: Why Choose Us section shows feature list
-    When the user scrolls to the Why Choose Us section
-    Then the heading "Why Choose Us" is displayed
-    And a white card with 6 icon+text feature items is shown
-    And a decorative person illustration is displayed
+- **WHEN** the user scrolls to the courses section
+- **THEN** the heading "Courses" is displayed
 
-  Scenario: Contact form collects messages
-    When the user scrolls to the contact section
-    Then a "Message Us" heading is displayed
-    And a contact form with First name, Last name, Subject, Email fields is shown
-    And a Message textarea is displayed
-    And a "Send Message" purple pill button is visible
+#### Scenario: Course cards display in a carousel
 
-  Scenario: Footer shows about, links, and subscribe
-    When the footer is visible
-    Then an "About Acadex" section with description text is displayed
-    And navigation links (Home, Courses, Programs, Teachers) are shown
-    And an email subscribe form with input and button is displayed
-    And a copyright notice with "Component Dock" link is shown
+- **WHEN** the courses carousel is visible
+- **THEN** 6 course cards are displayed
+- **AND** each card shows a course image
+- **AND** each card shows a price (e.g. "$20", "$99")
+- **AND** each card shows lesson meta ("4 Lessons / 12 week")
+- **AND** each card shows a course title and description
+- **AND** each card shows student count and comment count
+- **AND** Prev/Next navigation buttons are available
 
-  Scenario: AOS scroll animations trigger on sections
-    When the user scrolls down the page
-    Then elements with `data-aos="fade-up"` animate into view
-    And sections transition smoothly as they enter the viewport
+#### Scenario: Programs section shows three feature rows
+
+- **WHEN** the user scrolls to the programs section
+- **THEN** the heading "Our Programs" is displayed
+- **AND** three alternating illustration+text rows are shown
+- **AND** each row contains a heading, description text, and two stat items
+
+#### Scenario: Teachers section shows teacher grid
+
+- **WHEN** the user scrolls to the teachers section
+- **THEN** the heading "Our Teachers" is displayed
+- **AND** 3 teacher cards are shown in a grid
+- **AND** each card shows a circular photo, name, position, and bio
+
+#### Scenario: Testimonial section shows quote with overlay
+
+- **WHEN** the user scrolls to the testimonial section
+- **THEN** a background image with dark overlay is shown
+- **AND** a circular avatar photo is displayed
+- **AND** a person's name is shown
+- **AND** a blockquote with testimonial text is displayed
+
+#### Scenario: Why Choose Us section shows feature list
+
+- **WHEN** the user scrolls to the Why Choose Us section
+- **THEN** the heading "Why Choose Us" is displayed
+- **AND** a white card with 6 icon+text feature items is shown
+- **AND** a decorative person illustration is displayed
+
+#### Scenario: Contact form collects messages
+
+- **WHEN** the user scrolls to the contact section
+- **THEN** a "Message Us" heading is displayed
+- **AND** a contact form with First name, Last name, Subject, Email fields is shown
+- **AND** a Message textarea is displayed
+- **AND** a "Send Message" purple pill button is visible
+
+#### Scenario: Footer shows about, links, and subscribe
+
+- **WHEN** the footer is visible
+- **THEN** an "About Acadex" section with description text is displayed
+- **AND** navigation links (Home, Courses, Programs, Teachers) are shown
+- **AND** an email subscribe form with input and button is displayed
+- **AND** a copyright notice with "Component Dock" link is shown
+
+#### Scenario: AOS scroll animations trigger on sections
+
+- **WHEN** the user scrolls down the page
+- **THEN** elements with `data-aos="fade-up"` animate into view
+- **AND** sections transition smoothly as they enter the viewport
 
 ## Verification checklist
 

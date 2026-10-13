@@ -76,97 +76,107 @@ Recreation of ColorLib "Ilene Berg" as a React 19 + Vite + Tailwind CSS 4 + Type
 | Service Card Height | `260px` top + `260px` bottom |
 | Banner Height | `100vh` (fullscreen), mobile `600px` |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Wideshot Creative Agency Template
 
 #### Scenario: Header renders with logo and navigation
-- **Given** the user loads the page
-- **When** the header area is visible
-- **Then** the logo is displayed on the left
-- **And** navigation links (Home, Generic, Elements) are visible on the right
-- **And** a hamburger menu icon is present
+
+- **GIVEN** the user loads the page
+- **WHEN** the header area is visible
+- **THEN** the logo is displayed on the left
+- **AND** navigation links (Home, Generic, Elements) are visible on the right
+- **AND** a hamburger menu icon is present
 
 #### Scenario: Hero banner displays fullscreen with overlay
-- **Given** the user loads the page
-- **When** the banner section is visible
-- **Then** it occupies the full viewport height
-- **And** a semi-transparent purple overlay is applied over the background image
-- **And** a white heading "No Need to find, This is the place on web" is centered
-- **And** a subtitle paragraph is displayed below the heading
-- **And** a "Get Started" CTA button with arrow icon is shown
+
+- **GIVEN** the user loads the page
+- **WHEN** the banner section is visible
+- **THEN** it occupies the full viewport height
+- **AND** a semi-transparent purple overlay is applied over the background image
+- **AND** a white heading "No Need to find, This is the place on web" is centered
+- **AND** a subtitle paragraph is displayed below the heading
+- **AND** a "Get Started" CTA button with arrow icon is shown
 
 #### Scenario: History section has tabbed content
-- **Given** the user scrolls to the history section
-- **When** the section is visible
-- **Then** a "Glorious History" title is centered
-- **And** a thumbnail image appears on the left (col-4)
-- **And** three tabs appear: History, Mission, Vision
-- **And** the History tab is active by default showing content
-- **And** clicking Mission tab switches to mission content
-- **And** clicking Vision tab switches to vision content
+
+- **GIVEN** the user scrolls to the history section
+- **WHEN** the section is visible
+- **THEN** a "Glorious History" title is centered
+- **AND** a thumbnail image appears on the left (col-4)
+- **AND** three tabs appear: History, Mission, Vision
+- **AND** the History tab is active by default showing content
+- **AND** clicking Mission tab switches to mission content
+- **AND** clicking Vision tab switches to vision content
 
 #### Scenario: Services section shows 4 service cards on pink background
-- **Given** the user scrolls to the services section
-- **When** the section is visible
-- **Then** the background is pink (#f3487f)
-- **And** four service cards are displayed in a row (col-md-3 each)
-- **And** each card has an icon on top, title, and description
-- **And** the services are: Software, Wordpress, Front End, UX Design
-- **And** alternating cards have top/bottom layout (flip order)
-- **And** hovering a card flips the layout with color transition
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the section is visible
+- **THEN** the background is pink (#f3487f)
+- **AND** four service cards are displayed in a row (col-md-3 each)
+- **AND** each card has an icon on top, title, and description
+- **AND** the services are: Software, Wordpress, Front End, UX Design
+- **AND** alternating cards have top/bottom layout (flip order)
+- **AND** hovering a card flips the layout with color transition
 
 #### Scenario: Experience section shows images with text
-- **Given** the user scrolls to the experience section
-- **When** the section is visible
-- **Then** "Beautiful Experiences" title is centered
-- **And** two thumbnail images appear on the left (col-3 each)
-- **And** a "Vector Illustration" text block with heading, subheading, description, and "View Details" button appears on the right (col-6)
+
+- **GIVEN** the user scrolls to the experience section
+- **WHEN** the section is visible
+- **THEN** "Beautiful Experiences" title is centered
+- **AND** two thumbnail images appear on the left (col-3 each)
+- **AND** a "Vector Illustration" text block with heading, subheading, description, and "View Details" button appears on the right (col-6)
 
 #### Scenario: Projects carousel displays on teal background
-- **Given** the user scrolls to the projects section
-- **When** the section is visible
-- **Then** the background is teal (#5dd1e3)
-- **And** "Some Projects" title is white and centered
-- **And** a carousel shows project items
-- **And** each item has a large image (col-8) and text content (col-4)
-- **And** each item shows a title and description paragraph
+
+- **GIVEN** the user scrolls to the projects section
+- **WHEN** the section is visible
+- **THEN** the background is teal (#5dd1e3)
+- **AND** "Some Projects" title is white and centered
+- **AND** a carousel shows project items
+- **AND** each item has a large image (col-8) and text content (col-4)
+- **AND** each item shows a title and description paragraph
 
 #### Scenario: Contact form accepts user input
-- **Given** the user scrolls to the contact section
-- **When** the section is visible
-- **Then** "Keep in Touch" title is centered
-- **And** a name input field is displayed
-- **And** an email input field is displayed
-- **And** a message textarea is displayed
-- **And** a "Send Message" button with white background is shown
-- **And** form fields are required
+
+- **GIVEN** the user scrolls to the contact section
+- **WHEN** the section is visible
+- **THEN** "Keep in Touch" title is centered
+- **AND** a name input field is displayed
+- **AND** an email input field is displayed
+- **AND** a message textarea is displayed
+- **AND** a "Send Message" button with white background is shown
+- **AND** form fields are required
 
 #### Scenario: Newsletter subscription section on yellow background
-- **Given** the user scrolls to the newsletter section
-- **When** the section is visible
-- **Then** the background is yellow (#f9c400)
-- **And** "Together, Let's Make this happen" title is white and centered
-- **And** an email input field is displayed
-- **And** a "Get Started" button with white background is shown
+
+- **GIVEN** the user scrolls to the newsletter section
+- **WHEN** the section is visible
+- **THEN** the background is yellow (#f9c400)
+- **AND** "Together, Let's Make this happen" title is white and centered
+- **AND** an email input field is displayed
+- **AND** a "Get Started" button with white background is shown
 
 #### Scenario: Footer displays with 4-column layout
-- **Given** the user scrolls to the footer
-- **When** the footer is visible
-- **Then** the background is dark blue-gray (#4e5375)
-- **And** four columns are displayed: About Agency, two Navigation Links columns, Instafeed
-- **And** footer links are white with purple hover
-- **And** an Instafeed grid shows 8 thumbnail images (2x4)
-- **And** a bottom bar has copyright text with heart icon and social links (Facebook, Twitter, Dribbble, Behance)
-- **And** the footer links to https://www.componentdock.com/
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** the background is dark blue-gray (#4e5375)
+- **AND** four columns are displayed: About Agency, two Navigation Links columns, Instafeed
+- **AND** footer links are white with purple hover
+- **AND** an Instafeed grid shows 8 thumbnail images (2x4)
+- **AND** a bottom bar has copyright text with heart icon and social links (Facebook, Twitter, Dribbble, Behance)
+- **AND** the footer links to https://www.componentdock.com/
 
 #### Scenario: Responsive behavior on mobile
-- **Given** the user views the page on a mobile device (≤767px)
-- **When** the page loads
-- **Then** the banner height is set to 600px
-- **And** the service cards stack vertically
-- **And** the project carousel items stack vertically
-- **And** the footer columns stack vertically
+
+- **GIVEN** the user views the page on a mobile device (≤767px)
+- **WHEN** the page loads
+- **THEN** the banner height is set to 600px
+- **AND** the service cards stack vertically
+- **AND** the project carousel items stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

@@ -71,161 +71,180 @@ Extracted from the live preview CSS (`css/style.css`):
 13. **Blog** — 3 blog post cards with images, dates, authors, comments
 14. **Footer** — logo, recent posts, explore links, contact info, copyright bar
 
-## Gherkin Requirements
+## Requirements
 
 ### TopBar
-```gherkin
-Feature: TopBar section
-  Scenario: Displays contact info and social links
-    Given the user loads the page
-    Then a yellow top bar is visible with email, phone, and hours
-    And social media icon links are present (Twitter, Facebook, Instagram)
 
-  Scenario: Hidden on mobile
-    Given the viewport is below 768px
-    Then the top bar is not visible
-```
+Feature: TopBar section
+
+#### Scenario: Displays contact info and social links
+
+- **GIVEN** the user loads the page
+- **THEN** a yellow top bar is visible with email, phone, and hours
+- **AND** social media icon links are present (Twitter, Facebook, Instagram)
+
+#### Scenario: Hidden on mobile
+
+- **GIVEN** the viewport is below 768px
+- **THEN** the top bar is not visible
 
 ### Navbar
-```gherkin
+
 Feature: Navbar
-  Scenario: Desktop navigation
-    Given the user loads the page on desktop
-    Then the navbar is transparent and overlays the hero
-    And the brand shows "Sudswell" with a cleaning icon
-    And nav links are: Home, About, Pricing, Services, Blog, Contact
-    And a "Request A Quote" button is visible
 
-  Scenario: Scrolled state
-    Given the user scrolls down past the hero
-    Then the navbar gains a white background with shadow
-    And nav link text turns dark
+#### Scenario: Desktop navigation
 
-  Scenario: Mobile hamburger
-    Given the viewport is below 992px
-    Then a hamburger menu toggle is visible
-    And clicking it reveals the nav links vertically
-```
+- **GIVEN** the user loads the page on desktop
+- **THEN** the navbar is transparent and overlays the hero
+- **AND** the brand shows "Sudswell" with a cleaning icon
+- **AND** nav links are: Home, About, Pricing, Services, Blog, Contact
+- **AND** a "Request A Quote" button is visible
+
+#### Scenario: Scrolled state
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar gains a white background with shadow
+- **AND** nav link text turns dark
+
+#### Scenario: Mobile hamburger
+
+- **GIVEN** the viewport is below 992px
+- **THEN** a hamburger menu toggle is visible
+- **AND** clicking it reveals the nav links vertically
 
 ### Hero
-```gherkin
+
 Feature: Hero section
-  Scenario: Full-height hero with CTA
-    Given the user loads the page
-    Then a full-height hero section is visible with a background image
-    And the heading reads "A Clean Home is A Happy Home"
-    And a "Request A Quote" CTA button is present
-```
+
+#### Scenario: Full-height hero with CTA
+
+- **GIVEN** the user loads the page
+- **THEN** a full-height hero section is visible with a background image
+- **AND** the heading reads "A Clean Home is A Happy Home"
+- **AND** a "Request A Quote" CTA button is present
 
 ### AppointmentForm
-```gherkin
-Feature: Appointment booking form
-  Scenario: Form fields are present
-    Given the user scrolls to the appointment section
-    Then a "Book A Service" form is visible
-    And fields include: First Name, Last Name, Service dropdown, Phone, Date, Time
-    And a "Submit Details" button is present
 
-  Scenario: Service dropdown options
-    Given the form is visible
-    Then the service dropdown includes: Residential, Commercial, Construction, Windows, Carpet, Furniture, Other
-```
+Feature: Appointment booking form
+
+#### Scenario: Form fields are present
+
+- **GIVEN** the user scrolls to the appointment section
+- **THEN** a "Book A Service" form is visible
+- **AND** fields include: First Name, Last Name, Service dropdown, Phone, Date, Time
+- **AND** a "Submit Details" button is present
+
+#### Scenario: Service dropdown options
+
+- **GIVEN** the form is visible
+- **THEN** the service dropdown includes: Residential, Commercial, Construction, Windows, Carpet, Furniture, Other
 
 ### WhyChooseUs
-```gherkin
+
 Feature: Why Choose Us
-  Scenario: Four feature cards
-    Given the user scrolls to the features section
-    Then 4 feature cards are displayed in a row
-    And each card has an icon, title, and description
-```
+
+#### Scenario: Four feature cards
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** 4 feature cards are displayed in a row
+- **AND** each card has an icon, title, and description
 
 ### Counter
-```gherkin
+
 Feature: Counter statistics
-  Scenario: Stats are displayed
-    Given the user scrolls to the counter section
-    Then 4 stats are shown: Projects (4800), Employees (14000), Clients (200), Awards (71650)
-    And each stat has an icon and a number with label
-```
+
+#### Scenario: Stats are displayed
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 4 stats are shown: Projects (4800), Employees (14000), Clients (200), Awards (71650)
+- **AND** each stat has an icon and a number with label
 
 ### IndustriesWeServe
-```gherkin
+
 Feature: Industries We Serve
-  Scenario: Industry checklist
-    Given the user scrolls to the industries section
-    Then an image is shown on the left
-    And a checklist of 8 industries is shown on the right
-```
+
+#### Scenario: Industry checklist
+
+- **GIVEN** the user scrolls to the industries section
+- **THEN** an image is shown on the left
+- **AND** a checklist of 8 industries is shown on the right
 
 ### OurServices
-```gherkin
+
 Feature: Our Services
-  Scenario: Six service cards
-    Given the user scrolls to the services section
-    Then 6 service cards are displayed in a 3-column grid
-    And each card has an image, title, price, and hover arrow button
-```
+
+#### Scenario: Six service cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 6 service cards are displayed in a 3-column grid
+- **AND** each card has an image, title, price, and hover arrow button
 
 ### HowItWorks
-```gherkin
+
 Feature: How It Works
-  Scenario: Three-step process
-    Given the user scrolls to the how-it-works section
-    Then 3 steps are shown on a dark background image
-    And each step has a numbered icon and description
-```
+
+#### Scenario: Three-step process
+
+- **GIVEN** the user scrolls to the how-it-works section
+- **THEN** 3 steps are shown on a dark background image
+- **AND** each step has a numbered icon and description
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials
-  Scenario: Carousel of testimonials
-    Given the user scrolls to the testimonials section
-    Then a carousel of testimonial cards is displayed
-    And each card has an avatar, name, location, and quote
-```
+
+#### Scenario: Carousel of testimonials
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonial cards is displayed
+- **AND** each card has an avatar, name, location, and quote
 
 ### Pricing
-```gherkin
+
 Feature: Pricing
-  Scenario: Four pricing plans
-    Given the user scrolls to the pricing section
-    Then 4 plans are displayed: Basic ($29), Standard ($59), Premium ($79), Ultimate ($89.50)
-    And each plan has a feature list and a "Sign Up" button
-    And the Premium plan is highlighted as active
-```
+
+#### Scenario: Four pricing plans
+
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** 4 plans are displayed: Basic ($29), Standard ($59), Premium ($79), Ultimate ($89.50)
+- **AND** each plan has a feature list and a "Sign Up" button
+- **AND** the Premium plan is highlighted as active
 
 ### CTA
-```gherkin
+
 Feature: CTA banner
-  Scenario: Contact call-to-action
-    Given the user scrolls to the CTA section
-    Then a heading "Need to clean your house? Just hire us!" is visible
-    And two buttons are present: phone number and email
-```
+
+#### Scenario: Contact call-to-action
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a heading "Need to clean your house? Just hire us!" is visible
+- **AND** two buttons are present: phone number and email
 
 ### Blog
-```gherkin
+
 Feature: Blog posts
-  Scenario: Three blog entries
-    Given the user scrolls to the blog section
-    Then 3 blog post cards are displayed
-    And each card has an image, date, author, comment count, title, and excerpt
-```
+
+#### Scenario: Three blog entries
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed
+- **AND** each card has an image, date, author, comment count, title, and excerpt
 
 ### Footer
-```gherkin
-Feature: Footer
-  Scenario: Multi-column footer
-    Given the user scrolls to the footer
-    Then the footer shows: logo + description, recent posts, explore links, and contact info
-    And social media icons are present
-    And a copyright bar is at the bottom
 
-  Scenario: Component Dock link
-    Given the footer is rendered
-    Then a link to https://www.componentdock.com/ is present
-```
+Feature: Footer
+
+#### Scenario: Multi-column footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer shows: logo + description, recent posts, explore links, and contact info
+- **AND** social media icons are present
+- **AND** a copyright bar is at the bottom
+
+#### Scenario: Component Dock link
+
+- **GIVEN** the footer is rendered
+- **THEN** a link to https://www.componentdock.com/ is present
 
 ## Verification Checklist
 

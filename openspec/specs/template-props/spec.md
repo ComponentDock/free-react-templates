@@ -26,47 +26,59 @@ New app name: `props`. Domain category: Real Estate / Property listings.
 9. **Agent Recruitment CTA Banner**: "Be a part of our growing real state agents" with apply button.
 10. **Footer**: 4-column footer containing Contact info, Sources links, Links, social icons, and branded footer link to Component Dock (`https://www.componentdock.com/`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Navbar
 
+#### Scenario: Navbar
+
 - Scenario: Displays brand and navigation links
-  - Given the user visits the home page
-  - Then they should see the brand title "Props"
-  - And navigation items for Home, Properties, Services, About, and Contact Us
+- **GIVEN** the user visits the home page
+- **THEN** they should see the brand title "Props"
+- **AND** navigation items for Home, Properties, Services, About, and Contact Us
 
 ### Feature: Hero Search
 
+#### Scenario: Hero Search
+
 - Scenario: Allows searching properties by ZIP code or city
-  - Given the user is on the hero banner
-  - When they enter a ZIP code or city into the search input
-  - And click the Search button
-  - Then a search notification or filtered state should appear
+- **GIVEN** the user is on the hero banner
+- **WHEN** they enter a ZIP code or city into the search input
+- **AND** click the Search button
+- **THEN** a search notification or filtered state should appear
 
 ### Feature: Popular Properties
 
+#### Scenario: Popular Properties
+
 - Scenario: Displays popular properties carousel/grid with details
-  - Given the user scrolls to the Popular Properties section
-  - Then they should see property cards with images, pricing, bedrooms, bathrooms, and details
-  - And pagination controls to browse through properties
+- **GIVEN** the user scrolls to the Popular Properties section
+- **THEN** they should see property cards with images, pricing, bedrooms, bathrooms, and details
+- **AND** pagination controls to browse through properties
 
 ### Feature: Stats Counter
 
+#### Scenario: Stats Counter
+
 - Scenario: Displays key real estate agency statistics
-  - Given the user scrolls to the stats section
-  - Then they should see statistics for Buy Properties, Sell Properties, All Properties, and Agents
+- **GIVEN** the user scrolls to the stats section
+- **THEN** they should see statistics for Buy Properties, Sell Properties, All Properties, and Agents
 
 ### Feature: Our Agents
 
+#### Scenario: Our Agents
+
 - Scenario: Displays real estate agent profiles with social links
-  - Given the user scrolls to the Our Agents section
-  - Then they should see agent cards for James Doe, Jean Smith, and Alicia Huston with their bios and social icons
+- **GIVEN** the user scrolls to the Our Agents section
+- **THEN** they should see agent cards for James Doe, Jean Smith, and Alicia Huston with their bios and social icons
 
 ### Feature: Footer Attribution
 
+#### Scenario: Footer Attribution
+
 - Scenario: Displays branded footer link to Component Dock
-  - Given the user scrolls to the footer
-  - Then they should see copyright information and a link to Component Dock (`https://www.componentdock.com/`)
+- **GIVEN** the user scrolls to the footer
+- **THEN** they should see copyright information and a link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

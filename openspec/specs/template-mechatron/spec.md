@@ -96,109 +96,122 @@ https://preview.colorlib.com/theme/robotics/css/main.css:
 8. **Blog** — Section heading centered. 2-column layout: blog thumbnail image (10px radius), tags, post title, excerpt, date. Tags have gradient background on hover.
 9. **Footer** — Parallax background. 3 columns: links list, newsletter form (email input + subscribe button), Instagram feed (8 images). Bottom bar: copyright text + social icons (Facebook, Twitter, Dribbble, Behance).
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Mechatron Template Rendering
 
 #### Scenario: Navbar displays with all navigation links
-  Given the page loads
-  When I view the header
-  Then I should see a logo image on the left
-  And I should see navigation links: Home, About, Services, Products, Blog, Contact
-  And the "Blog" link should have a dropdown submenu
-  And the navbar should be visible at the top of the page
+
+- **GIVEN** the page loads
+- **WHEN** I view the header
+- **THEN** I should see a logo image on the left
+- **AND** I should see navigation links: Home, About, Services, Products, Blog, Contact
+- **AND** the "Blog" link should have a dropdown submenu
+- **AND** the navbar should be visible at the top of the page
 
 #### Scenario: Hero banner displays with headline and CTA
-  Given the page loads
-  When I view the banner section
-  Then I should see a full-width hero area with a background image
-  And I should see a multi-line headline text on the left side
-  And I should see a subtitle below the headline
-  And I should see a "View Details" call-to-action button
-  And I should see an illustration image on the right side
+
+- **GIVEN** the page loads
+- **WHEN** I view the banner section
+- **THEN** I should see a full-width hero area with a background image
+- **AND** I should see a multi-line headline text on the left side
+- **AND** I should see a subtitle below the headline
+- **AND** I should see a "View Details" call-to-action button
+- **AND** I should see an illustration image on the right side
 
 #### Scenario: Products section shows 4 product cards
-  Given the page loads
-  When I scroll to the products section
-  Then I should see a centered section heading
-  And I should see 4 product cards in a row
-  And each card should have a product image on a white background
-  And each card should have a product name, description text, and a button
-  And each card should have a subtle purple-tinted box shadow
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the products section
+- **THEN** I should see a centered section heading
+- **AND** I should see 4 product cards in a row
+- **AND** each card should have a product image on a white background
+- **AND** each card should have a product name, description text, and a button
+- **AND** each card should have a subtle purple-tinted box shadow
 
 #### Scenario: Product card hover interaction
-  Given the products section is visible
-  When I hover over a product card
-  Then the card should show a hover effect (cursor pointer)
+
+- **GIVEN** the products section is visible
+- **WHEN** I hover over a product card
+- **THEN** the card should show a hover effect (cursor pointer)
 
 #### Scenario: Home About section displays split layout
-  Given the page loads
-  When I scroll to the about section
-  Then I should see a large image on the left half
-  And I should see a heading, subtext, paragraph, and button on the right half
-  And the button should read "Get Details"
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the about section
+- **THEN** I should see a large image on the left half
+- **AND** I should see a heading, subtext, paragraph, and button on the right half
+- **AND** the button should read "Get Details"
 
 #### Scenario: About Video section shows video poster and play button
-  Given the page loads
-  When I scroll to the about-video section
-  Then I should see text content on the left (heading, subtitle, paragraph, button)
-  And I should see a video poster image on the right with a gradient overlay
-  And there should be a centered play button over the video poster
-  And the play button should link to a video URL
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the about-video section
+- **THEN** I should see text content on the left (heading, subtitle, paragraph, button)
+- **AND** I should see a video poster image on the right with a gradient overlay
+- **AND** there should be a centered play button over the video poster
+- **AND** the play button should link to a video URL
 
 #### Scenario: Features section displays 6 feature cards on parallax background
-  Given the page loads
-  When I scroll to the features section
-  Then I should see a parallax background image
-  And I should see a centered section heading in white text
-  And I should see 6 feature cards in a 3-column grid
-  And each card should have an icon, a title, and a description
-  And each card should be white with rounded corners (10px)
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the features section
+- **THEN** I should see a parallax background image
+- **AND** I should see a centered section heading in white text
+- **AND** I should see 6 feature cards in a 3-column grid
+- **AND** each card should have an icon, a title, and a description
+- **AND** each card should be white with rounded corners (10px)
 
 #### Scenario: Feature card hover highlights icon and title
-  Given the features section is visible
-  When I hover over a feature card
-  Then the icon and title should change to the brand color `#8a90ff`
+
+- **GIVEN** the features section is visible
+- **WHEN** I hover over a feature card
+- **THEN** the icon and title should change to the brand color `#8a90ff`
 
 #### Scenario: Brand logos row displays with grayscale filter
-  Given the page loads
-  When I scroll to the brand logos section
-  Then I should see 5 logo images in a horizontal row
-  And each logo should have a grayscale filter applied
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the brand logos section
+- **THEN** I should see 5 logo images in a horizontal row
+- **AND** each logo should have a grayscale filter applied
 
 #### Scenario: Blog section shows 2 blog posts
-  Given the page loads
-  When I scroll to the blog section
-  Then I should see a centered section heading
-  And I should see 2 blog post cards side by side
-  And each card should have a thumbnail image with 10px radius
-  And each card should have tag badges, a title, an excerpt, and a date
-  And tag badges should have a gradient background on hover
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the blog section
+- **THEN** I should see a centered section heading
+- **AND** I should see 2 blog post cards side by side
+- **AND** each card should have a thumbnail image with 10px radius
+- **AND** each card should have tag badges, a title, an excerpt, and a date
+- **AND** tag badges should have a gradient background on hover
 
 #### Scenario: Footer displays with newsletter, links, and social icons
-  Given the page loads
-  When I scroll to the footer
-  Then I should see a parallax background image
-  And I should see 3 columns: links list, newsletter form, Instagram feed
-  And the newsletter form should have an email input and a "Subscribe" button
-  And there should be a copyright line at the bottom
-  And there should be social media icons (Facebook, Twitter, Dribbble, Behance)
-  And the footer should link to Component Dock
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** I should see a parallax background image
+- **AND** I should see 3 columns: links list, newsletter form, Instagram feed
+- **AND** the newsletter form should have an email input and a "Subscribe" button
+- **AND** there should be a copyright line at the bottom
+- **AND** there should be social media icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** the footer should link to Component Dock
 
 #### Scenario: Newsletter subscribe button styled as primary
-  Given the footer newsletter form is visible
-  When I view the subscribe button
-  Then it should have a gradient background matching the primary button style
-  And it should have a pill shape (border-radius 25px)
+
+- **GIVEN** the footer newsletter form is visible
+- **WHEN** I view the subscribe button
+- **THEN** it should have a gradient background matching the primary button style
+- **AND** it should have a pill shape (border-radius 25px)
 
 #### Scenario: Mobile responsive layout
-  Given the page loads on a mobile viewport (≤768px)
-  When I view the page
-  Then the navbar should collapse or adapt to mobile
-  And product cards should stack vertically
-  And feature cards should stack vertically
-  And the hero section should stack text above image
-  And the about/video sections should stack vertically
+
+- **GIVEN** the page loads on a mobile viewport (≤768px)
+- **WHEN** I view the page
+- **THEN** the navbar should collapse or adapt to mobile
+- **AND** product cards should stack vertically
+- **AND** feature cards should stack vertically
+- **AND** the hero section should stack text above image
+- **AND** the about/video sections should stack vertically
 
 ## Verification Checklist
 

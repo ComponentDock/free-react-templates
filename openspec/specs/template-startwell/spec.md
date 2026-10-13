@@ -23,35 +23,43 @@ Recreation of ColorLib Startright (`https://colorlib.com/wp/template/startright/
 7. **Features Grid**: 6 distinct feature cards with icons (Easy to use, Fast and Secure, Robust and Intuitive, etc.).
 8. **Footer**: 4 columns (Help, About, Support, Subscribe newsletter form) and copyright attribution linking to `https://www.componentdock.com/`.
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Navigation
 
+#### Scenario: Navigation
+
 - Scenario: User views header
-  - Given the user loads the application
-  - When the header renders
-  - Then it displays the "Startwell." brand name, navigation links, and mobile menu trigger.
+- **GIVEN** the user loads the application
+- **WHEN** the header renders
+- **THEN** it displays the "Startwell." brand name, navigation links, and mobile menu trigger
 
 ### Requirement 2: Hero Section
 
+#### Scenario: Hero Section
+
 - Scenario: User views hero
-  - Given the user is on the landing page
-  - When the hero section is visible
-  - Then it displays the main headline "A big business starts small", a call-to-action button, and a hero visual.
+- **GIVEN** the user is on the landing page
+- **WHEN** the hero section is visible
+- **THEN** it displays the main headline "A big business starts small", a call-to-action button, and a hero visual
 
 ### Requirement 3: Features & Stats
 
+#### Scenario: Features & Stats
+
 - Scenario: User explores features and statistics
-  - Given the user scrolls down the page
-  - When they reach the stats and features sections
-  - Then key numerical counters and 6 feature cards with icons are displayed.
+- **GIVEN** the user scrolls down the page
+- **WHEN** they reach the stats and features sections
+- **THEN** key numerical counters and 6 feature cards with icons are displayed
 
 ### Requirement 4: Footer Attribution & Newsletter
 
+#### Scenario: Footer Attribution & Newsletter
+
 - Scenario: User reaches page bottom
-  - Given the user scrolls to the footer
-  - When the footer renders
-  - Then it includes navigation links, a newsletter subscription form, and a link to Component Dock (`https://www.componentdock.com/`).
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** it includes navigation links, a newsletter subscription form, and a link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

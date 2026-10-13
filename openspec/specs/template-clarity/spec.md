@@ -70,50 +70,68 @@ Extracted from the live preview CSS (`css/style.css`) and screenshot analysis:
 
 10. **Footer** — Dark bg (#333). Three columns: About text, Quick Links (nav anchors), Follow Us (social icons) + Subscribe Newsletter form. Bottom bar with copyright + "Made with Component Dock" link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-- Given the page is loaded, Then the navbar is visible and sticky
-- Given the navbar is visible, Then it shows "Clarity." logo and navigation links
-- Given the user clicks a nav link, Then the page scrolls to the corresponding section
+#### Scenario: Navbar
+
+- **GIVEN** the page is loaded, Then the navbar is visible and sticky
+- **GIVEN** the navbar is visible, Then it shows "Clarity." logo and navigation links
+- **GIVEN** the user clicks a nav link, Then the page scrolls to the corresponding section
 
 ### Hero
 
-- Given the hero section is visible, Then it displays "I'm Professional" with typed word animation
-- Given the hero section is visible, Then the "Contact Me" button scrolls to the contact section
+#### Scenario: Hero
+
+- **GIVEN** the hero section is visible, Then it displays "I'm Professional" with typed word animation
+- **GIVEN** the hero section is visible, Then the "Contact Me" button scrolls to the contact section
 
 ### About
 
-- Given the about section is visible, Then it shows "Welcome To My Website" heading
-- Given the about section is visible, Then it shows 2 feature cards with icons
+#### Scenario: About
+
+- **GIVEN** the about section is visible, Then it shows "Welcome To My Website" heading
+- **GIVEN** the about section is visible, Then it shows 2 feature cards with icons
 
 ### Training
 
-- Given the training section is visible, Then it shows "Life Coach Training" heading
-- Given the training section is visible, Then it shows 3 training cards with images
+#### Scenario: Training
+
+- **GIVEN** the training section is visible, Then it shows "Life Coach Training" heading
+- **GIVEN** the training section is visible, Then it shows 3 training cards with images
 
 ### Testimonials
 
-- Given the testimonials section is visible, Then it shows "Happy Customers" heading
-- Given the testimonials section is visible, Then it shows testimonial cards with quotes and avatars
+#### Scenario: Testimonials
+
+- **GIVEN** the testimonials section is visible, Then it shows "Happy Customers" heading
+- **GIVEN** the testimonials section is visible, Then it shows testimonial cards with quotes and avatars
 
 ### Services
 
-- Given the services section is visible, Then it shows "Our Services" heading on primary background
-- Given the services section is visible, Then it shows 6 service cards
+#### Scenario: Services
+
+- **GIVEN** the services section is visible, Then it shows "Our Services" heading on primary background
+- **GIVEN** the services section is visible, Then it shows 6 service cards
 
 ### Blog
 
-- Given the blog section is visible, Then it shows "Our Blog" heading
-- Given the blog section is visible, Then it shows 4 blog entries with images
+#### Scenario: Blog
+
+- **GIVEN** the blog section is visible, Then it shows "Our Blog" heading
+- **GIVEN** the blog section is visible, Then it shows 4 blog entries with images
 
 ### Contact
 
-- Given the contact section is visible, Then it shows a contact form with name, email, and message fields
-- Given the user fills in the form, Then validation runs on submit
+#### Scenario: Contact
+
+- **GIVEN** the contact section is visible, Then it shows a contact form with name, email, and message fields
+- **GIVEN** the user fills in the form, Then validation runs on submit
 
 ### Footer
 
-- Given the footer is visible, Then it shows "About Clarity" text
-- Given the footer is visible, Then it links to https://www.componentdock.com/
+#### Scenario: Footer
+
+- **GIVEN** the footer is visible, Then it shows "About Clarity" text
+- **GIVEN** the footer is visible, Then it links to https://www.componentdock.com/

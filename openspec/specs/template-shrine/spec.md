@@ -87,95 +87,118 @@ Extracted from the screenshot (preview CSS unavailable — 404). Tokens are visu
 - **Newsletter** — Email signup form, coral/red background
 - **Footer** — Multi-column: logo, quick links, contact info, social links, Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Shrine template behaviour
+
 Feature: Shrine — Religious / Church Template
 
-  Background:
-    Given the user opens "https://shrine.free.componentdock.com"
-    And the page has fully loaded
+Background:
+- **GIVEN** the user opens "https://shrine.free.componentdock.com"
+- **AND** the page has fully loaded
 
-  # --- Countdown Top Bar ---
-  Scenario: Countdown top bar displays event timer
-    Then the top bar should display a countdown with labels "DAYS", "HOURS", "MINUTES", "SECONDS"
-    And the countdown numbers should update every second
-    And a "Read More" link should be visible
+**--- Countdown Top Bar ---**
 
-  # --- Navbar ---
-  Scenario: Navbar shows logo, navigation, and donate button
-    Then the navbar should contain the logo with text "WORDPRESS CHURCH THEME" or "SHRINE"
-    And navigation links should include "About", "Ministries", "Sermons", "Events", "Gallery"
-    And a "Donate" button should be visible
+#### Scenario: Countdown top bar displays event timer
 
-  Scenario: Navbar is sticky on scroll
-    When the user scrolls down past the hero
-    Then the navbar should remain fixed at the top of the viewport
+- **THEN** the top bar should display a countdown with labels "DAYS", "HOURS", "MINUTES", "SECONDS"
+- **AND** the countdown numbers should update every second
+- **AND** a "Read More" link should be visible
 
-  Scenario: Navbar mobile hamburger menu
-    When the viewport width is less than 768px
-    Then a hamburger menu icon should be visible
-    And clicking it should open a slide-in navigation overlay
+**--- Navbar ---**
 
-  # --- Hero Slider ---
-  Scenario: Hero displays heading and CTA
-    Then the hero should display the heading "Church WordPress Themes" or "Shrine"
-    And a subtitle about religious websites should be visible
-    And a "Join us" CTA button should be visible
+#### Scenario: Navbar shows logo, navigation, and donate button
 
-  Scenario: Hero has background image with overlay
-    Then the hero should have a full-width background image
-    And a dark overlay should ensure white text is readable
+- **THEN** the navbar should contain the logo with text "WORDPRESS CHURCH THEME" or "SHRINE"
+- **AND** navigation links should include "About", "Ministries", "Sermons", "Events", "Gallery"
+- **AND** a "Donate" button should be visible
 
-  Scenario: Hero slider navigation arrows
-    Then left and right arrow controls should be visible on the hero
-    And clicking an arrow should transition to the next/previous slide
+#### Scenario: Navbar is sticky on scroll
 
-  # --- Latest Sermon ---
-  Scenario: Latest sermon section displays speaker and message
-    Then a circular avatar image of the speaker should be visible
-    And a sermon title heading should be displayed
-    And speaker name, date, and category should be shown
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar should remain fixed at the top of the viewport
 
-  Scenario: Sermon media icons
-    Then four circular media-type icons should be visible (video, audio, document, link)
-    And each icon should have a hover state
+#### Scenario: Navbar mobile hamburger menu
 
-  # --- Content Sections ---
-  Scenario: About section is present
-    Then a section describing the church or ministry should be visible
-    And it should contain an image and text in a two-column layout
+- **WHEN** the viewport width is less than 768px
+- **THEN** a hamburger menu icon should be visible
+- **AND** clicking it should open a slide-in navigation overlay
 
-  Scenario: Ministries grid
-    Then a grid of ministry/service cards should be displayed
-    And each card should have an icon, title, and short description
+**--- Hero Slider ---**
 
-  Scenario: Events list
-    Then upcoming events should be listed with date and title
-    And each event should have a link to more details
+#### Scenario: Hero displays heading and CTA
 
-  Scenario: Gallery section
-    Then a photo grid or carousel should display community/church images
-    And images should use placeholder URLs (picsum.photos)
+- **THEN** the hero should display the heading "Church WordPress Themes" or "Shrine"
+- **AND** a subtitle about religious websites should be visible
+- **AND** a "Join us" CTA button should be visible
 
-  Scenario: Newsletter signup
-    Then an email input field should be visible
-    And a submit button should be present
-    And the section should have a distinct background color
+#### Scenario: Hero has background image with overlay
 
-  # --- Footer ---
-  Scenario: Footer displays site links and branding
-    Then a footer should be visible with navigation links
-    And the footer should contain a link to "https://www.componentdock.com/"
-    And the Component Dock link should open in a new tab
+- **THEN** the hero should have a full-width background image
+- **AND** a dark overlay should ensure white text is readable
 
-  # --- Responsive ---
-  Scenario: Template is responsive on mobile
-    When the viewport width is less than 640px
-    Then all sections should stack vertically
-    And the navbar should show a hamburger menu
-    And the hero text should be readable on small screens
-```
+#### Scenario: Hero slider navigation arrows
+
+- **THEN** left and right arrow controls should be visible on the hero
+- **AND** clicking an arrow should transition to the next/previous slide
+
+**--- Latest Sermon ---**
+
+#### Scenario: Latest sermon section displays speaker and message
+
+- **THEN** a circular avatar image of the speaker should be visible
+- **AND** a sermon title heading should be displayed
+- **AND** speaker name, date, and category should be shown
+
+#### Scenario: Sermon media icons
+
+- **THEN** four circular media-type icons should be visible (video, audio, document, link)
+- **AND** each icon should have a hover state
+
+**--- Content Sections ---**
+
+#### Scenario: About section is present
+
+- **THEN** a section describing the church or ministry should be visible
+- **AND** it should contain an image and text in a two-column layout
+
+#### Scenario: Ministries grid
+
+- **THEN** a grid of ministry/service cards should be displayed
+- **AND** each card should have an icon, title, and short description
+
+#### Scenario: Events list
+
+- **THEN** upcoming events should be listed with date and title
+- **AND** each event should have a link to more details
+
+#### Scenario: Gallery section
+
+- **THEN** a photo grid or carousel should display community/church images
+- **AND** images should use placeholder URLs (picsum.photos)
+
+#### Scenario: Newsletter signup
+
+- **THEN** an email input field should be visible
+- **AND** a submit button should be present
+- **AND** the section should have a distinct background color
+
+**--- Footer ---**
+
+#### Scenario: Footer displays site links and branding
+
+- **THEN** a footer should be visible with navigation links
+- **AND** the footer should contain a link to "https://www.componentdock.com/"
+- **AND** the Component Dock link should open in a new tab
+
+**--- Responsive ---**
+
+#### Scenario: Template is responsive on mobile
+
+- **WHEN** the viewport width is less than 640px
+- **THEN** all sections should stack vertically
+- **AND** the navbar should show a hamburger menu
+- **AND** the hero text should be readable on small screens
 
 ## Verification Checklist
 

@@ -40,105 +40,121 @@ Extracted from the preview's `styles/main_styles.css`:
 8. **Blog** — full-width carousel of blog posts with background images, date badge, and title overlay
 9. **Footer** — dark background (#0f0e24), centered logo + "since 1945", 4-column row: Our Address | Reservations | Newsletter (email input + Subscribe button) | Certificates (2 badge images), copyright line
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header
 
-Scenario: Logo and navigation display
-Given the user is on any page
-Then the logo "Riverbend" is visible in the header
-And navigation links "Home", "About us", "Rooms", "Blog", "Contact" are visible
+#### Scenario: Logo and navigation display
 
-Scenario: Book Online button
-Given the user sees the header
-Then a "Book Online" button with peach background is displayed
+- **GIVEN** the user is on any page
+- **THEN** the logo "Riverbend" is visible in the header
+- **AND** navigation links "Home", "About us", "Rooms", "Blog", "Contact" are visible
 
-Scenario: Mobile hamburger menu
-Given the viewport is mobile width (< 768px)
-Then the hamburger menu icon is visible
-And clicking it opens a slide-in mobile menu with all nav links
+#### Scenario: Book Online button
+
+- **GIVEN** the user sees the header
+- **THEN** a "Book Online" button with peach background is displayed
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is mobile width (< 768px)
+- **THEN** the hamburger menu icon is visible
+- **AND** clicking it opens a slide-in mobile menu with all nav links
 
 ### Feature: Hero Section
 
-Scenario: Hero slider displays
-Given the user lands on the page
-Then a full-viewport-height hero slider is displayed
-And the heading "A Luxury Stay" is centered over the slider
+#### Scenario: Hero slider displays
 
-Scenario: Booking form in hero
-Given the hero section is visible
-Then a booking form with inputs for Check in, Check out, Children, and Room is displayed
-And a "SEARCH" button is visible
+- **GIVEN** the user lands on the page
+- **THEN** a full-viewport-height hero slider is displayed
+- **AND** the heading "A Luxury Stay" is centered over the slider
 
-Scenario: Hero auto-slides
-Given the hero slider is loaded
-Then slides advance automatically at regular intervals
-And navigation dots are clickable to jump to slides
+#### Scenario: Booking form in hero
+
+- **GIVEN** the hero section is visible
+- **THEN** a booking form with inputs for Check in, Check out, Children, and Room is displayed
+- **AND** a "SEARCH" button is visible
+
+#### Scenario: Hero auto-slides
+
+- **GIVEN** the hero slider is loaded
+- **THEN** slides advance automatically at regular intervals
+- **AND** navigation dots are clickable to jump to slides
 
 ### Feature: Features Section
 
-Scenario: Three feature icons display
-Given the user scrolls past the hero
-Then three icon boxes appear in a row
-And each has an icon, title ("Fabulous Resort", "Infinity Pool", "Relaxing Spa"), and description paragraph
+#### Scenario: Three feature icons display
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** three icon boxes appear in a row
+- **AND** each has an icon, title ("Fabulous Resort", "Infinity Pool", "Relaxing Spa"), and description paragraph
 
 ### Feature: Gallery Section
 
-Scenario: Gallery carousel displays
-Given the user scrolls to the gallery
-Then a horizontal carousel of property images is displayed
-And images respond to hover with an overlay effect
+#### Scenario: Gallery carousel displays
+
+- **GIVEN** the user scrolls to the gallery
+- **THEN** a horizontal carousel of property images is displayed
+- **AND** images respond to hover with an overlay effect
 
 ### Feature: About Section
 
-Scenario: About content displays
-Given the user scrolls to the about section
-Then a title "Riverbend / 10 years of excellence" is shown
-And a descriptive paragraph is visible
-And three property images are displayed in a row on the right
+#### Scenario: About content displays
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a title "Riverbend / 10 years of excellence" is shown
+- **AND** a descriptive paragraph is visible
+- **AND** three property images are displayed in a row on the right
 
 ### Feature: Testimonials Section
 
-Scenario: Testimonial slider displays
-Given the user scrolls to the testimonials
-Then a parallax background is visible
-And testimonial slides show star ratings (5 stars), a title, text, user avatar, and author name with location
+#### Scenario: Testimonial slider displays
 
-Scenario: Testimonials rotate
-Given the testimonials section is loaded
-Then slides rotate automatically
-And navigation dots are available
+- **GIVEN** the user scrolls to the testimonials
+- **THEN** a parallax background is visible
+- **AND** testimonial slides show star ratings (5 stars), a title, text, user avatar, and author name with location
+
+#### Scenario: Testimonials rotate
+
+- **GIVEN** the testimonials section is loaded
+- **THEN** slides rotate automatically
+- **AND** navigation dots are available
 
 ### Feature: Book a Room Section
 
-Scenario: Room cards display
-Given the user scrolls to the booking section
-Then a "Book a room" heading and paragraph are shown
-And three room cards are displayed (Family Room, Deluxe Room, Single Room)
-And each card shows a background image, price ("$120/Night"), and a link
+#### Scenario: Room cards display
+
+- **GIVEN** the user scrolls to the booking section
+- **THEN** a "Book a room" heading and paragraph are shown
+- **AND** three room cards are displayed (Family Room, Deluxe Room, Single Room)
+- **AND** each card shows a background image, price ("$120/Night"), and a link
 
 ### Feature: Blog Section
 
-Scenario: Blog carousel displays
-Given the user scrolls to the blog section
-Then a full-width carousel of blog posts is shown
-And each post has a background image, date, and title
+#### Scenario: Blog carousel displays
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a full-width carousel of blog posts is shown
+- **AND** each post has a background image, date, and title
 
 ### Feature: Footer
 
-Scenario: Footer layout
-Given the user scrolls to the footer
-Then the logo, "since 1945" text are centered at the top
-And four columns are shown: Our Address, Reservations, Newsletter, Certificates
+#### Scenario: Footer layout
 
-Scenario: Newsletter form
-Given the footer is visible
-Then an email input with placeholder "Your email address" is displayed
-And a "Subscribe" button is present
+- **GIVEN** the user scrolls to the footer
+- **THEN** the logo, "since 1945" text are centered at the top
+- **AND** four columns are shown: Our Address, Reservations, Newsletter, Certificates
 
-Scenario: Footer links
-Given the footer is visible
-Then a link to https://www.componentdock.com/ is present with text "Component Dock"
+#### Scenario: Newsletter form
+
+- **GIVEN** the footer is visible
+- **THEN** an email input with placeholder "Your email address" is displayed
+- **AND** a "Subscribe" button is present
+
+#### Scenario: Footer links
+
+- **GIVEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
 ## Verification Checklist
 

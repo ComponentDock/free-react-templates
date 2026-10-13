@@ -45,162 +45,159 @@ Extracted from live preview CSS (`css/style.css`):
 11. **Contact** — `bg-light`, heading "Get In Touch", contact form (first name, last name, email, subject, message textarea, submit button).
 12. **Footer** — dark BG (`#25262a`), 3-column layout: left (About Us + Newsletter signup), middle (Quick Links), right (Follow Us social icons + sidebar image + paragraph). Copyright line at bottom. Footer MUST link `https://www.componentdock.com/` (replaces Colorlib credit).
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar renders all navigation links
-  Given the page loads
-  Then the navbar contains links: Home, About, Our Training, Services, Blog, Contact
-  And the logo reads "GuideLight" with a primary-colored dot
+#### Scenario: Navbar renders all navigation links
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls down
-  Then the navbar remains fixed at the top of the viewport
-```
+- **GIVEN** the page loads
+- **THEN** the navbar contains links: Home, About, Our Training, Services, Blog, Contact
+- **AND** the logo reads "GuideLight" with a primary-colored dot
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar remains fixed at the top of the viewport
 
 ### Feature: Hero Section
 
-```gherkin
-Scenario: Hero displays heading and CTA
-  Given the page loads
-  Then the hero section shows "Professional Life Coaching"
-  And a "Get Started" button is visible
+#### Scenario: Hero displays heading and CTA
 
-Scenario: Hero has background image overlay
-  Given the page loads
-  Then the hero section has a dark overlay over a background image
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows "Professional Life Coaching"
+- **AND** a "Get Started" button is visible
+
+#### Scenario: Hero has background image overlay
+
+- **GIVEN** the page loads
+- **THEN** the hero section has a dark overlay over a background image
 
 ### Feature: Special Offers
 
-```gherkin
-Scenario: Special offers section renders on primary background
-  Given the page loads
-  Then the special offers section has a blue (#3a4971) background
-  And it displays "Special Offers" as the heading
-  And two offer cards are visible with icon, title, and description
+#### Scenario: Special offers section renders on primary background
 
-Scenario: Offer cards have read more links
-  Given the special offers section is visible
-  Then each offer card has a "Read more" link
-```
+- **GIVEN** the page loads
+- **THEN** the special offers section has a blue (#3a4971) background
+- **AND** it displays "Special Offers" as the heading
+- **AND** two offer cards are visible with icon, title, and description
+
+#### Scenario: Offer cards have read more links
+
+- **GIVEN** the special offers section is visible
+- **THEN** each offer card has a "Read more" link
 
 ### Feature: About Section
 
-```gherkin
-Scenario: About section shows welcome text and image
-  Given the page loads
-  Then the about section shows "Welcome to GuideLight"
-  And a lead paragraph and body text are visible
-  And an image is displayed on the right side
-  And a signature image appears below the text
-```
+#### Scenario: About section shows welcome text and image
+
+- **GIVEN** the page loads
+- **THEN** the about section shows "Welcome to GuideLight"
+- **AND** a lead paragraph and body text are visible
+- **AND** an image is displayed on the right side
+- **AND** a signature image appears below the text
 
 ### Feature: Training Section
 
-```gherkin
-Scenario: Training section renders 6 training items
-  Given the page loads
-  Then the training section heading reads "Our Training"
-  And 6 training items are displayed in a 2-column grid
-  And each item has a thumbnail image, title, category, and description
+#### Scenario: Training section renders 6 training items
 
-Scenario: Training items have linked titles
-  Given the training section is visible
-  Then each training item title is a clickable link
-```
+- **GIVEN** the page loads
+- **THEN** the training section heading reads "Our Training"
+- **AND** 6 training items are displayed in a 2-column grid
+- **AND** each item has a thumbnail image, title, category, and description
+
+#### Scenario: Training items have linked titles
+
+- **GIVEN** the training section is visible
+- **THEN** each training item title is a clickable link
 
 ### Feature: Team Section
 
-```gherkin
-Scenario: Team section shows 4 team members
-  Given the page loads
-  Then the team section heading reads "Meet Team"
-  And 4 team member cards are displayed in a row
-  And each card shows a photo, name, and position
+#### Scenario: Team section shows 4 team members
 
-Scenario: Team cards have social overlays
-  Given the team section is visible
-  Then each team card shows social media icons on hover
-```
+- **GIVEN** the page loads
+- **THEN** the team section heading reads "Meet Team"
+- **AND** 4 team member cards are displayed in a row
+- **AND** each card shows a photo, name, and position
+
+#### Scenario: Team cards have social overlays
+
+- **GIVEN** the team section is visible
+- **THEN** each team card shows social media icons on hover
 
 ### Feature: Carousel Section
 
-```gherkin
-Scenario: Carousel displays images with navigation
-  Given the page loads
-  Then an image carousel is visible with prev/next controls
-  And the carousel cycles through at least 3 images
+#### Scenario: Carousel displays images with navigation
 
-Scenario: Carousel has paired text slides
-  Given the carousel section is visible
-  Then text slides accompany each image with a heading, description, and "Learn More" button
-```
+- **GIVEN** the page loads
+- **THEN** an image carousel is visible with prev/next controls
+- **AND** the carousel cycles through at least 3 images
+
+#### Scenario: Carousel has paired text slides
+
+- **GIVEN** the carousel section is visible
+- **THEN** text slides accompany each image with a heading, description, and "Learn More" button
 
 ### Feature: Services Section
 
-```gherkin
-Scenario: Services section renders 3 service cards
-  Given the page loads
-  Then the services section heading reads "Services"
-  And 3 service cards are displayed in a row
-  And each card has an icon, title, and description
-```
+#### Scenario: Services section renders 3 service cards
+
+- **GIVEN** the page loads
+- **THEN** the services section heading reads "Services"
+- **AND** 3 service cards are displayed in a row
+- **AND** each card has an icon, title, and description
 
 ### Feature: Testimonials Section
 
-```gherkin
-Scenario: Testimonials carousel renders quotes
-  Given the page loads
-  Then the testimonials section heading reads "Testimonials"
-  And at least 4 testimonial slides are available
-  And each slide shows a blockquote, avatar image, and person name
-```
+#### Scenario: Testimonials carousel renders quotes
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section heading reads "Testimonials"
+- **AND** at least 4 testimonial slides are available
+- **AND** each slide shows a blockquote, avatar image, and person name
 
 ### Feature: Blog Section
 
-```gherkin
-Scenario: Blog section renders 3 post cards
-  Given the page loads
-  Then the blog section heading reads "Our Blog"
-  And 3 blog post cards are displayed in a row
-  And each card shows an image, category tag, title, excerpt, and "Read more" link
-```
+#### Scenario: Blog section renders 3 post cards
+
+- **GIVEN** the page loads
+- **THEN** the blog section heading reads "Our Blog"
+- **AND** 3 blog post cards are displayed in a row
+- **AND** each card shows an image, category tag, title, excerpt, and "Read more" link
 
 ### Feature: Contact Section
 
-```gherkin
-Scenario: Contact form renders all fields
-  Given the page loads
-  Then the contact section heading reads "Get In Touch"
-  And the form contains fields: first name, last name, email, subject, message
-  And a submit button is visible
+#### Scenario: Contact form renders all fields
 
-Scenario: Contact form validates required fields
-  Given the user clicks submit with empty required fields
-  Then validation errors appear for first name, last name, email, subject, and message
-```
+- **GIVEN** the page loads
+- **THEN** the contact section heading reads "Get In Touch"
+- **AND** the form contains fields: first name, last name, email, subject, message
+- **AND** a submit button is visible
+
+#### Scenario: Contact form validates required fields
+
+- **GIVEN** the user clicks submit with empty required fields
+- **THEN** validation errors appear for first name, last name, email, subject, and message
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer renders three columns
-  Given the page loads
-  Then the footer has three columns: About + Newsletter, Quick Links, Follow Us
-  And a newsletter email input and Send button are visible
-  And social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
+#### Scenario: Footer renders three columns
 
-Scenario: Footer links to Component Dock
-  Given the footer is visible
-  Then the footer contains a link to https://www.componentdock.com/
-  And the Colorlib attribution is removed
+- **GIVEN** the page loads
+- **THEN** the footer has three columns: About + Newsletter, Quick Links, Follow Us
+- **AND** a newsletter email input and Send button are visible
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
 
-Scenario: Footer has dark background
-  Given the page loads
-  Then the footer background is dark (#25262a)
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the Colorlib attribution is removed
+
+#### Scenario: Footer has dark background
+
+- **GIVEN** the page loads
+- **THEN** the footer background is dark (#25262a)
 
 ## Verification Checklist
 

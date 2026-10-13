@@ -51,82 +51,83 @@ shows ivy/vines on a white wall with a window). Use
 Key difference from Form 05: olive green button instead of gold, no social
 links section, no three-column contact info row — simpler layout.
 
-## Gherkin requirements
+## Requirements
 
 ### Page layout
 
-```gherkin
-Scenario: Page renders a centered two-column card
-  Given I visit the Formspot page
-  Then I see a centered card with two columns on a light gray background
-  And the page title "Contact Form #08" is displayed above the card
+#### Scenario: Page renders a centered two-column card
 
-Scenario: Left column is white and contains the form
-  Given I visit the Formspot page
-  Then the left column has a white background
-  And it contains a "Get in touch with us" heading
+- **GIVEN** I visit the Formspot page
+- **THEN** I see a centered card with two columns on a light gray background
+- **AND** the page title "Contact Form #08" is displayed above the card
 
-Scenario: Right column displays an image
-  Given I visit the Formspot page
-  Then the right column displays a placeholder image
-  And the image fills the full height of the card
-```
+#### Scenario: Left column is white and contains the form
+
+- **GIVEN** I visit the Formspot page
+- **THEN** the left column has a white background
+- **AND** it contains a "Get in touch with us" heading
+
+#### Scenario: Right column displays an image
+
+- **GIVEN** I visit the Formspot page
+- **THEN** the right column displays a placeholder image
+- **AND** the image fills the full height of the card
 
 ### Contact form
 
-```gherkin
-Scenario: Form displays all fields
-  Given I visit the Formspot page
-  Then I see a Full Name input field
-  And I see an Email Address input field
-  And I see a Subject input field
-  And I see a Message textarea
-  And I see a Send Message button
+#### Scenario: Form displays all fields
 
-Scenario: Full Name and Email Address are side by side
-  Given I visit the Formspot page
-  Then the Full Name and Email Address inputs are in the same row
+- **GIVEN** I visit the Formspot page
+- **THEN** I see a Full Name input field
+- **AND** I see an Email Address input field
+- **AND** I see a Subject input field
+- **AND** I see a Message textarea
+- **AND** I see a Send Message button
 
-Scenario: Inputs have bordered box style
-  Given I visit the Formspot page
-  Then all form inputs have a full border (box style)
-  And the input borders are light gray
+#### Scenario: Full Name and Email Address are side by side
 
-Scenario: Field labels are uppercase
-  Given I visit the Formspot page
-  Then all form field labels are displayed in uppercase
+- **GIVEN** I visit the Formspot page
+- **THEN** the Full Name and Email Address inputs are in the same row
 
-Scenario: Send Message button is styled
-  Given I visit the Formspot page
-  Then the Send Message button has an olive green background and white text
-```
+#### Scenario: Inputs have bordered box style
+
+- **GIVEN** I visit the Formspot page
+- **THEN** all form inputs have a full border (box style)
+- **AND** the input borders are light gray
+
+#### Scenario: Field labels are uppercase
+
+- **GIVEN** I visit the Formspot page
+- **THEN** all form field labels are displayed in uppercase
+
+#### Scenario: Send Message button is styled
+
+- **GIVEN** I visit the Formspot page
+- **THEN** the Send Message button has an olive green background and white text
 
 ### Image panel
 
-```gherkin
-Scenario: Right column displays an image
-  Given I visit the Formspot page
-  Then the right column of the card displays a placeholder image
-  And the image fills the full height of the card
-```
+#### Scenario: Right column displays an image
+
+- **GIVEN** I visit the Formspot page
+- **THEN** the right column of the card displays a placeholder image
+- **AND** the image fills the full height of the card
 
 ### Responsive behavior
 
-```gherkin
-Scenario: Columns stack on mobile
-  Given I visit the Formspot page on a mobile viewport
-  Then the two columns stack vertically
-  And the form appears above the image
-```
+#### Scenario: Columns stack on mobile
+
+- **GIVEN** I visit the Formspot page on a mobile viewport
+- **THEN** the two columns stack vertically
+- **AND** the form appears above the image
 
 ### Footer
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formspot page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Formspot page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references Component Dock
 
 ## Verification checklist
 

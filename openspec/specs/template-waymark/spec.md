@@ -55,204 +55,221 @@ Extracted from `css/style.css` on the live preview.
 
 10. **Footer** (`colorlib-footer`) — Dark navy `#2C2E3E` background. 5 columns: Agency info + social icons, "Book Now" links, "Hotels" links, "Blog Post" links, "Contact Information". Bottom bar with copyright and "Component Dock" attribution link.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Navigation bar
 
-  Scenario: Logo and nav links render
-    Given the page loads
-    Then the navbar displays the "Waymark" logo
-    And nav links include: Home, Tours, Destination, Cruises, Hotels, Services, Blog, About, Contact
+#### Scenario: Logo and nav links render
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is below 768px
-    When the user taps the hamburger icon
-    Then a mobile menu slides open with all nav links
+- **GIVEN** the page loads
+- **THEN** the navbar displays the "Waymark" logo
+- **AND** nav links include: Home, Tours, Destination, Cruises, Hotels, Services, Blog, About, Contact
 
-  Scenario: Navbar is fixed on scroll
-    Given the user scrolls down
-    Then the navbar remains fixed at the top of the viewport
-```
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is below 768px
+- **WHEN** the user taps the hamburger icon
+- **THEN** a mobile menu slides open with all nav links
+
+#### Scenario: Navbar is fixed on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar remains fixed at the top of the viewport
 
 ### Hero Slider
-```gherkin
+
 Feature: Hero image slider
 
-  Scenario: Slides display content
-    Given the hero slider renders
-    Then 4 slides are present
-    And each slide shows a subtitle, title, and CTA button
+#### Scenario: Slides display content
 
-  Scenario: Auto-rotation
-    Given the slider is visible
-    When 5 seconds elapse
-    Then the slider advances to the next slide
+- **GIVEN** the hero slider renders
+- **THEN** 4 slides are present
+- **AND** each slide shows a subtitle, title, and CTA button
 
-  Scenario: Manual navigation
-    Given the slider is visible
-    When the user clicks the next arrow
-    Then the slider advances to the next slide
-```
+#### Scenario: Auto-rotation
+
+- **GIVEN** the slider is visible
+- **WHEN** 5 seconds elapse
+- **THEN** the slider advances to the next slide
+
+#### Scenario: Manual navigation
+
+- **GIVEN** the slider is visible
+- **WHEN** the user clicks the next arrow
+- **THEN** the slider advances to the next slide
 
 ### Reservation Search
-```gherkin
+
 Feature: Travel search form
 
-  Scenario: Tab navigation
-    Given the reservation section renders
-    Then tabs for Flight, Hotel, Car Rent, and Cruises are visible
-    When the user clicks the "Hotel" tab
-    Then the Hotel search form becomes active
-    And the Flight form is hidden
+#### Scenario: Tab navigation
 
-  Scenario: Flight search fields
-    Given the Flight tab is active
-    Then fields for Where, Check-in, Check-out, and Guest count are visible
-    And a "Book Now" button is present
+- **GIVEN** the reservation section renders
+- **THEN** tabs for Flight, Hotel, Car Rent, and Cruises are visible
+- **WHEN** the user clicks the "Hotel" tab
+- **THEN** the Hotel search form becomes active
+- **AND** the Flight form is hidden
 
-  Scenario: Hotel search fields
-    Given the Hotel tab is active
-    Then fields for Where, Check-in, Check-out, and Guest count are visible
-    And a "Book Now" button is present
+#### Scenario: Flight search fields
 
-  Scenario: Car Rent search fields
-    Given the Car Rent tab is active
-    Then fields for Where, Start Date, and Return Date are visible
+- **GIVEN** the Flight tab is active
+- **THEN** fields for Where, Check-in, Check-out, and Guest count are visible
+- **AND** a "Book Now" button is present
 
-  Scenario: Cruises search fields
-    Given the Cruises tab is active
-    Then fields for Where, Start Date, and category selection are visible
-    And categories include: Suite, Super Deluxe, Balcony, Economy, Luxury
-```
+#### Scenario: Hotel search fields
+
+- **GIVEN** the Hotel tab is active
+- **THEN** fields for Where, Check-in, Check-out, and Guest count are visible
+- **AND** a "Book Now" button is present
+
+#### Scenario: Car Rent search fields
+
+- **GIVEN** the Car Rent tab is active
+- **THEN** fields for Where, Start Date, and Return Date are visible
+
+#### Scenario: Cruises search fields
+
+- **GIVEN** the Cruises tab is active
+- **THEN** fields for Where, Start Date, and category selection are visible
+- **AND** categories include: Suite, Super Deluxe, Balcony, Economy, Luxury
 
 ### Services
-```gherkin
+
 Feature: Services section
 
-  Scenario: Four service cards render
-    Given the services section is visible
-    Then 4 service cards are displayed
-    And cards show: "Amazing Travel", "Our Cruises", "Book Your Trip", "Nice Support"
-    And each card has an icon, title, and description paragraph
+#### Scenario: Four service cards render
 
-  Scenario: Section heading
-    Given the services section is visible
-    Then the subtitle reads "Explore our most travel agency"
-    And the title reads "Our Travel Agency"
-```
+- **GIVEN** the services section is visible
+- **THEN** 4 service cards are displayed
+- **AND** cards show: "Amazing Travel", "Our Cruises", "Book Your Trip", "Nice Support"
+- **AND** each card has an icon, title, and description paragraph
+
+#### Scenario: Section heading
+
+- **GIVEN** the services section is visible
+- **THEN** the subtitle reads "Explore our most travel agency"
+- **AND** the title reads "Our Travel Agency"
 
 ### Blog
-```gherkin
+
 Feature: Blog section
 
-  Scenario: Three blog entries render
-    Given the blog section is visible
-    Then 3 blog entries are displayed
-    And each entry shows an image, date, category, title, and excerpt
+#### Scenario: Three blog entries render
 
-  Scenario: Section heading
-    Given the blog section is visible
-    Then the title reads "Recent Blog"
-```
+- **GIVEN** the blog section is visible
+- **THEN** 3 blog entries are displayed
+- **AND** each entry shows an image, date, category, title, and excerpt
+
+#### Scenario: Section heading
+
+- **GIVEN** the blog section is visible
+- **THEN** the title reads "Recent Blog"
 
 ### Intro / Sale Banner
-```gherkin
+
 Feature: Sale banner
 
-  Scenario: Parallax banner displays
-    Given the intro section is visible
-    Then a full-width parallax image with dark overlay is shown
-    And "45% Off Sale" text is displayed
-    And "Just hurry up limited offer!" subtitle is shown
-    And "Book Now" and "Read more" buttons are present
+#### Scenario: Parallax banner displays
 
-  Scenario: Title and description
-    Given the intro section is visible
-    Then the title reads "Experience the Best Trip Ever"
-```
+- **GIVEN** the intro section is visible
+- **THEN** a full-width parallax image with dark overlay is shown
+- **AND** "45% Off Sale" text is displayed
+- **AND** "Just hurry up limited offer!" subtitle is shown
+- **AND** "Book Now" and "Read more" buttons are present
+
+#### Scenario: Title and description
+
+- **GIVEN** the intro section is visible
+- **THEN** the title reads "Experience the Best Trip Ever"
 
 ### Hotels
-```gherkin
+
 Feature: Hotels section
 
-  Scenario: Four hotel cards render
-    Given the hotels section is visible
-    Then 4 hotel cards are displayed
-    And each card shows: image, price ($120/night), review count, hotel name, location
+#### Scenario: Four hotel cards render
 
-  Scenario: Section heading
-    Given the hotels section is visible
-    Then the title reads "Recommended Hotels"
-```
+- **GIVEN** the hotels section is visible
+- **THEN** 4 hotel cards are displayed
+- **AND** each card shows: image, price ($120/night), review count, hotel name, location
+
+#### Scenario: Section heading
+
+- **GIVEN** the hotels section is visible
+- **THEN** the title reads "Recommended Hotels"
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials carousel
 
-  Scenario: Three testimonials render
-    Given the testimonials section is visible
-    Then a carousel with 3 testimonials is displayed
-    And each testimonial has a quote, author name, and location
+#### Scenario: Three testimonials render
 
-  Scenario: Carousel navigation
-    Given the testimonials carousel is visible
-    When the user clicks the next indicator
-    Then the next testimonial slides into view
+- **GIVEN** the testimonials section is visible
+- **THEN** a carousel with 3 testimonials is displayed
+- **AND** each testimonial has a quote, author name, and location
 
-  Scenario: Section heading
-    Given the testimonials section is visible
-    Then the title reads "Our Satisfied Guests says"
-```
+#### Scenario: Carousel navigation
+
+- **GIVEN** the testimonials carousel is visible
+- **WHEN** the user clicks the next indicator
+- **THEN** the next testimonial slides into view
+
+#### Scenario: Section heading
+
+- **GIVEN** the testimonials section is visible
+- **THEN** the title reads "Our Satisfied Guests says"
 
 ### Newsletter Subscribe
-```gherkin
+
 Feature: Newsletter subscription
 
-  Scenario: Subscribe form renders
-    Given the subscribe section is visible
-    Then a parallax image with dark overlay is shown
-    And an email input field is present
-    And a "Subscribe" button is present
+#### Scenario: Subscribe form renders
 
-  Scenario: Section heading
-    Given the subscribe section is visible
-    Then the title reads "Sign Up for a Newsletter"
-    And the subtitle reads "Sign up for our mailing list to get latest updates and offers."
-```
+- **GIVEN** the subscribe section is visible
+- **THEN** a parallax image with dark overlay is shown
+- **AND** an email input field is present
+- **AND** a "Subscribe" button is present
+
+#### Scenario: Section heading
+
+- **GIVEN** the subscribe section is visible
+- **THEN** the title reads "Sign Up for a Newsletter"
+- **AND** the subtitle reads "Sign up for our mailing list to get latest updates and offers."
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Five-column layout
-    Given the footer is visible
-    Then 5 columns are displayed
-    And columns contain: Agency info, Book Now links, Hotels links, Blog Post links, Contact Information
+#### Scenario: Five-column layout
 
-  Scenario: Component Dock attribution
-    Given the footer is visible
-    Then a link to "https://www.componentdock.com/" is present
-    And the link text mentions "Component Dock"
-```
+- **GIVEN** the footer is visible
+- **THEN** 5 columns are displayed
+- **AND** columns contain: Agency info, Book Now links, Hotels links, Blog Post links, Contact Information
+
+#### Scenario: Component Dock attribution
+
+- **GIVEN** the footer is visible
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"
 
 ### Responsive
-```gherkin
+
 Feature: Responsive design
 
-  Scenario: Mobile layout
-    Given the viewport is 375px wide
-    Then the navbar collapses to a hamburger menu
-    And service cards stack vertically
-    And hotel cards stack vertically
-    And blog entries stack vertically
-    And footer columns stack vertically
+#### Scenario: Mobile layout
 
-  Scenario: Tablet layout
-    Given the viewport is 768px wide
-    Then the layout adapts to 2-column grids where applicable
-```
+- **GIVEN** the viewport is 375px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** service cards stack vertically
+- **AND** hotel cards stack vertically
+- **AND** blog entries stack vertically
+- **AND** footer columns stack vertically
+
+#### Scenario: Tablet layout
+
+- **GIVEN** the viewport is 768px wide
+- **THEN** the layout adapts to 2-column grids where applicable
 
 ## Verification checklist
 

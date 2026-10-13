@@ -42,9 +42,11 @@ Designed for business consultancies, digital agencies, financial services, and p
 
 ---
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Navigation & Header
+
+#### Scenario: Navigation & Header
 
 - Transparent header over the hero with logo, navigation links (Home, About, Services, Portfolio, Blog with submenu, Contact), phone number display, and "Get Free Consultant" CTA button. Becomes sticky with dark gradient background on scroll.
 - Scenarios:
@@ -54,6 +56,8 @@ Designed for business consultancies, digital agencies, financial services, and p
 
 ### Requirement 2: Hero Section
 
+#### Scenario: Hero Section
+
 - Full-width hero with background image on the left, hero shape image on the right. Headline "Get the help you need, every step of the way", subtitle "Design better websites and spend less with Essentials.", and "Get Started" CTA button.
 - Scenarios:
   - Scenario: User views hero with headline and CTA.
@@ -61,11 +65,15 @@ Designed for business consultancies, digital agencies, financial services, and p
 
 ### Requirement 3: Client Highlights
 
+#### Scenario: Client Highlights
+
 - Three-column card grid with client images and descriptions: "Happier customers", "Faster growth", "Connected workflow". Each card has an image and short description text.
 - Scenarios:
   - Scenario: User views the three client benefit cards.
 
 ### Requirement 4: About / Project Section (Accordion FAQ)
+
+#### Scenario: About / Project Section (Accordion FAQ)
 
 - Section title "Flexible support to suit your business needs" with description paragraph. Left side: image. Right side: accordion with 4 expandable items (FAQ-style). First item collapsed, second expanded by default.
 - Scenarios:
@@ -74,6 +82,8 @@ Designed for business consultancies, digital agencies, financial services, and p
 
 ### Requirement 5: Services Area
 
+#### Scenario: Services Area
+
 - Gray background section with title "Improved Digital Experience" and description. Two service cards with SVG icons, titles "Design & Development", bullet lists, and "Learn More" links. Right side: services banner image.
 - Scenarios:
   - Scenario: User views the services section with cards.
@@ -81,11 +91,15 @@ Designed for business consultancies, digital agencies, financial services, and p
 
 ### Requirement 6: Emergency / Testimonial
 
+#### Scenario: Emergency / Testimonial
+
 - Full-width parallax background image section with a quote card: quote text from "Barb Dwyer, CEO of Victor". Dark overlay on background.
 - Scenarios:
   - Scenario: User reads the testimonial quote.
 
 ### Requirement 7: Featured Projects
+
+#### Scenario: Featured Projects
 
 - Title "Handpicked by Victor" with description. Carousel/slider of project cards, each with a split layout: image on left, logo + heading + description + "View Project" link on right.
 - Scenarios:
@@ -94,16 +108,19 @@ Designed for business consultancies, digital agencies, financial services, and p
 
 ### Requirement 8: Support Company / About
 
+#### Scenario: Support Company / About
+
 - Title "Professional who works to help with your business." with description paragraph and "Get Started" CTA button. Right side: illustration/image.
 - Scenarios:
   - Scenario: User reads the support section and clicks CTA.
 
 ### Requirement 9: Footer
 
+#### Scenario: Footer
+
 - Dark gradient background (`#454e6d` → `#232f55`). Columns: logo + description + social links (Facebook, Instagram, LinkedIn, YouTube), Services links, Navigation links, Contact info (email, address, phone). Copyright bar at bottom with mandatory link to `https://www.componentdock.com/` ("Component Dock").
 - Scenarios:
   - Scenario: User checks footer links and finds Component Dock attribution.
-
 ---
 
 ## Verification Checklist

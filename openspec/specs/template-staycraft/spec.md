@@ -44,150 +44,155 @@ Extracted from the live preview stylesheet (`css/style.css` + `css/bootstrap.css
 9. **CTA Banner** — `border-top` section. Two-column: left text ("Make Yourself Comfortable in Any of Our Fully Air-conditioned Rooms"), right "Reserve Now" pill button (orange, large padding).
 10. **Footer** — Dark background. 4-column layout: two link columns, contact info (address/phone/email with orange icons), newsletter signup form. Bottom row: copyright left, social icons right (TripAdvisor, Facebook, Twitter).
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Logo displays correctly
-    Given the page loads
-    Then the logo "Staycraft" is visible in the top-left
-    And the logo uses Playfair Display font in white
 
-  Scenario: Hamburger menu toggles on mobile
-    Given the viewport is mobile-width
-    When the user clicks the hamburger icon
-    Then a full-screen navigation overlay appears
-    And navigation links are displayed in large Playfair Display text
-    When the user clicks the close button or a link
-    Then the overlay closes
-```
+#### Scenario: Logo displays correctly
+
+- **GIVEN** the page loads
+- **THEN** the logo "Staycraft" is visible in the top-left
+- **AND** the logo uses Playfair Display font in white
+
+#### Scenario: Hamburger menu toggles on mobile
+
+- **GIVEN** the viewport is mobile-width
+- **WHEN** the user clicks the hamburger icon
+- **THEN** a full-screen navigation overlay appears
+- **AND** navigation links are displayed in large Playfair Display text
+- **WHEN** the user clicks the close button or a link
+- **THEN** the overlay closes
 
 ### Hero
 
-```gherkin
 Feature: Hero section
-  Scenario: Hero renders with heading and scroll icon
-    Given the page loads
-    Then a full-viewport hero image is displayed
-    And a dark semi-transparent overlay covers the image
-    And the heading "Enjoy A Luxury Experience" is centered in white
-    And a mouse scroll-down icon is visible at the bottom center
 
-  Scenario: Scroll icon links to availability section
-    Given the hero section is visible
-    When the user clicks the scroll-down mouse icon
-    Then the page scrolls smoothly to the check availability section
-```
+#### Scenario: Hero renders with heading and scroll icon
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero image is displayed
+- **AND** a dark semi-transparent overlay covers the image
+- **AND** the heading "Enjoy A Luxury Experience" is centered in white
+- **AND** a mouse scroll-down icon is visible at the bottom center
+
+#### Scenario: Scroll icon links to availability section
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user clicks the scroll-down mouse icon
+- **THEN** the page scrolls smoothly to the check availability section
 
 ### Check Availability
 
-```gherkin
 Feature: Check Availability form
-  Scenario: Form displays all fields
-    Given the check availability section is visible
-    Then a "Check Availability" heading is shown
-    And form fields are displayed: Check In, Check Out, Adults, Children
-    And an orange "Check Availability" pill button is shown
 
-  Scenario: Form fields are interactive
-    Given the check availability section is visible
-    When the user selects a check-in date
-    Then the check-in field updates with the selected date
-    When the user selects a number of adults
-    Then the adults field updates with the selection
-```
+#### Scenario: Form displays all fields
+
+- **GIVEN** the check availability section is visible
+- **THEN** a "Check Availability" heading is shown
+- **AND** form fields are displayed: Check In, Check Out, Adults, Children
+- **AND** an orange "Check Availability" pill button is shown
+
+#### Scenario: Form fields are interactive
+
+- **GIVEN** the check availability section is visible
+- **WHEN** the user selects a check-in date
+- **THEN** the check-in field updates with the selected date
+- **WHEN** the user selects a number of adults
+- **THEN** the adults field updates with the selection
 
 ### Welcome / About
 
-```gherkin
 Feature: Welcome section
-  Scenario: Welcome section displays with image and text
-    Given the page loads
-    Then a welcome section is visible with a hotel image on one side
-    And a heading "Welcome to Staycraft." is shown (italic "to")
-    And a lead paragraph and description text are visible
-    And a "Read More" pill button and a "See video" link are shown
-```
+
+#### Scenario: Welcome section displays with image and text
+
+- **GIVEN** the page loads
+- **THEN** a welcome section is visible with a hotel image on one side
+- **AND** a heading "Welcome to Staycraft." is shown (italic "to")
+- **AND** a lead paragraph and description text are visible
+- **AND** a "Read More" pill button and a "See video" link are shown
 
 ### Great Offers
 
-```gherkin
 Feature: Great Offers section
-  Scenario: Room cards display with pricing
-    Given the great offers section is visible
-    Then two room cards are displayed side by side
-    And each card shows an image, price ($199/$299 per night), room title, description
-    And each card has a "Book Now" pill button
 
-  Scenario: View All Rooms button is visible
-    Given the great offers section is visible
-    Then a centered "View All Rooms" pill button is shown below the cards
-```
+#### Scenario: Room cards display with pricing
+
+- **GIVEN** the great offers section is visible
+- **THEN** two room cards are displayed side by side
+- **AND** each card shows an image, price ($199/$299 per night), room title, description
+- **AND** each card has a "Book Now" pill button
+
+#### Scenario: View All Rooms button is visible
+
+- **GIVEN** the great offers section is visible
+- **THEN** a centered "View All Rooms" pill button is shown below the cards
 
 ### Gallery
 
-```gherkin
 Feature: Gallery slider
-  Scenario: Gallery displays images in a carousel
-    Given the gallery section is visible
-    Then a "See The Gallery" heading is shown
-    And a carousel displays multiple hotel images
-    And a "View More Photos" link is visible below the carousel
-```
+
+#### Scenario: Gallery displays images in a carousel
+
+- **GIVEN** the gallery section is visible
+- **THEN** a "See The Gallery" heading is shown
+- **AND** a carousel displays multiple hotel images
+- **AND** a "View More Photos" link is visible below the carousel
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials
-  Scenario: Testimonials display with author info
-    Given the testimonial section is visible
-    Then a "Testimonial" heading is shown
-    And testimonial cards display circular author photos
-    And each card shows a quoted text and author name in italic
-    And carousel navigation dots are visible
-```
+
+#### Scenario: Testimonials display with author info
+
+- **GIVEN** the testimonial section is visible
+- **THEN** a "Testimonial" heading is shown
+- **AND** testimonial cards display circular author photos
+- **AND** each card shows a quoted text and author name in italic
+- **AND** carousel navigation dots are visible
 
 ### Events / Blog
 
-```gherkin
 Feature: Events section
-  Scenario: Blog cards display in a grid
-    Given the events section is visible
-    Then an "Events" heading is shown
-    And three blog cards are displayed in a row
-    And each card shows an image, date, and title
-```
+
+#### Scenario: Blog cards display in a grid
+
+- **GIVEN** the events section is visible
+- **THEN** an "Events" heading is shown
+- **AND** three blog cards are displayed in a row
+- **AND** each card shows an image, date, and title
 
 ### CTA Banner
 
-```gherkin
 Feature: CTA banner
-  Scenario: Reserve Now call to action
-    Given the CTA banner section is visible
-    Then text reads "Make Yourself Comfortable in Any of Our Fully Air-conditioned Rooms"
-    And an orange "Reserve Now" pill button is displayed on the right
-```
+
+#### Scenario: Reserve Now call to action
+
+- **GIVEN** the CTA banner section is visible
+- **THEN** text reads "Make Yourself Comfortable in Any of Our Fully Air-conditioned Rooms"
+- **AND** an orange "Reserve Now" pill button is displayed on the right
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer displays links and contact info
-    Given the footer is visible
-    Then four columns are shown: two link lists, contact info, and newsletter signup
-    And contact info includes address, phone, and email with orange icons
-    And a newsletter email input and submit button are shown
-    And a copyright line is displayed
-    And social icons (TripAdvisor, Facebook, Twitter) are shown
-    And a "Component Dock" attribution link is present
 
-  Scenario: Footer links are functional
-    Given the footer is visible
-    When the user clicks a navigation link
-    Then the page scrolls to or navigates to the target section
-```
+#### Scenario: Footer displays links and contact info
+
+- **GIVEN** the footer is visible
+- **THEN** four columns are shown: two link lists, contact info, and newsletter signup
+- **AND** contact info includes address, phone, and email with orange icons
+- **AND** a newsletter email input and submit button are shown
+- **AND** a copyright line is displayed
+- **AND** social icons (TripAdvisor, Facebook, Twitter) are shown
+- **AND** a "Component Dock" attribution link is present
+
+#### Scenario: Footer links are functional
+
+- **GIVEN** the footer is visible
+- **WHEN** the user clicks a navigation link
+- **THEN** the page scrolls to or navigates to the target section
 
 ## Verification checklist
 

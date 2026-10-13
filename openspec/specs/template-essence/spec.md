@@ -140,92 +140,102 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - Mobile responsive: navbar collapses, hero hides left image, grid adapts
 - Subscribe form: rounded input + pill button, centered in container
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Essence template behaviour
+
 Feature: Essence - Ecommerce Shop Homepage Template
 
-  Scenario: Header navbar renders with brand and navigation
-    Given the page loads
-    Then the navbar displays the brand logo "Essence"
-    And navigation links are visible: Home, Shop, Blog, Pages, Contact
-    And Shop, Blog, and Pages links show dropdown submenus on hover
-    And a search icon, shopping cart icon with badge, and "Buy Now" button
-      are displayed on the right
-    And the navbar has a subtle shadow
+#### Scenario: Header navbar renders with brand and navigation
 
-  Scenario: Hero banner displays promotional content
-    Given the page loads
-    Then a hero banner with light blue-gray (#F1F6F7) background is shown
-    And a blue (#384aeb) vertical stripe appears on the left side
-    And a product image is displayed on the left (hidden on mobile)
-    And "Shop is fun" subtitle and "Browse Our Premium Product" heading
-      are shown on the right
-    And a "Browse Now" pill button (#384aeb) is displayed
+- **GIVEN** the page loads
+- **THEN** the navbar displays the brand logo "Essence"
+- **AND** navigation links are visible: Home, Shop, Blog, Pages, Contact
+- **AND** Shop, Blog, and Pages links show dropdown submenus on hover
+- **AND** a search icon, shopping cart icon with badge, and "Buy Now" button
+are displayed on the right
+- **AND** the navbar has a subtle shadow
 
-  Scenario: Hero carousel shows product slides with hover overlays
-    Given the hero banner is visible
-    Then a carousel of 3 product slides is displayed below the hero
-    And each slide shows a full-width product image
-    And hovering a slide reveals an overlay with product name and category
-    And the overlay slides up from the bottom with a blue (#384aeb) background
+#### Scenario: Hero banner displays promotional content
 
-  Scenario: Trending products grid displays eight product cards
-    Given the carousel is visible
-    Then a "Trending Product" section heading with blue accent underline is shown
-    And an 8-card grid (4 columns) of products is displayed
-    And each card shows a product image, category, title, and price
-    And hovering a card reveals action buttons (search, cart, heart)
-    And action buttons have #8894ff background, changing to #384aeb on hover
+- **GIVEN** the page loads
+- **THEN** a hero banner with light blue-gray (#F1F6F7) background is shown
+- **AND** a blue (#384aeb) vertical stripe appears on the left side
+- **AND** a product image is displayed on the left (hidden on mobile)
+- **AND** "Shop is fun" subtitle and "Browse Our Premium Product" heading
+are shown on the right
+- **AND** a "Browse Now" pill button (#384aeb) is displayed
 
-  Scenario: Offer parallax section displays promotional content
-    Given the trending products section is visible
-    Then a full-width parallax section with background image is shown
-    And "Up To 50% Off" heading (Oswald font, large) is displayed
-    And "Winter Sale" subheading and description text are shown
-    And a "Shop Now" pill button is displayed
+#### Scenario: Hero carousel shows product slides with hover overlays
 
-  Scenario: Best sellers carousel displays product cards
-    Given the offer section is visible
-    Then a "Best Sellers" section with blue accent underline is shown
-    And an Owl Carousel of 8 product cards is displayed
-    And each card uses the same structure as trending product cards
+- **GIVEN** the hero banner is visible
+- **THEN** a carousel of 3 product slides is displayed below the hero
+- **AND** each slide shows a full-width product image
+- **AND** hovering a slide reveals an overlay with product name and category
+- **AND** the overlay slides up from the bottom with a blue (#384aeb) background
 
-  Scenario: Blog news section displays three blog cards
-    Given the best sellers section is visible
-    Then a "Latest News" section with blue accent underline is shown
-    And 3 blog cards are displayed in a row
-    And each card shows an image, author ("By Admin"), comment count,
-      title, excerpt, and "Read More →" link
-    And hovering a blog card highlights the title and link in #384aeb
+#### Scenario: Trending products grid displays eight product cards
 
-  Scenario: Newsletter subscribe section displays subscription form
-    Given the blog section is visible
-    Then a centered subscribe card with white background and subtle blue
-      shadow is shown
-    And "Get Update From Anywhere" heading is displayed
-    And an email input field with rounded border is present
-    And a "Subscribe Now" pill button is displayed
+- **GIVEN** the carousel is visible
+- **THEN** a "Trending Product" section heading with blue accent underline is shown
+- **AND** an 8-card grid (4 columns) of products is displayed
+- **AND** each card shows a product image, category, title, and price
+- **AND** hovering a card reveals action buttons (search, cart, heart)
+- **AND** action buttons have #8894ff background, changing to #384aeb on hover
 
-  Scenario: Footer displays four-column content in dark navy
-    Given the subscribe section is visible
-    Then a dark navy (#002347) footer is displayed
-    And four columns are shown: Our Mission, Quick Links, Gallery, Contact Us
-    And footer widget titles have blue (#384aeb) icon badges
-    And gallery shows 6 thumbnail images in a flex grid
-    And contact info shows address, phone, and email with FontAwesome icons
-    And the footer bottom shows copyright with Component Dock link
+#### Scenario: Offer parallax section displays promotional content
 
-  Scenario: All sections match the original ColorLib Aroma design
-    Given the page loads with all sections
-    Then the section order matches: Header, Hero Banner, Hero Carousel,
-      Trending Products, Offer Parallax, Best Sellers, Blog News,
-      Newsletter Subscribe, Footer
-    And the brand color #384aeb is used for buttons, accents, and highlights
-    And buttons have pill shape (border-radius: 30px)
-    And headings use Oswald font, body uses Roboto font
-    And the footer uses dark navy (#002347) background
-```
+- **GIVEN** the trending products section is visible
+- **THEN** a full-width parallax section with background image is shown
+- **AND** "Up To 50% Off" heading (Oswald font, large) is displayed
+- **AND** "Winter Sale" subheading and description text are shown
+- **AND** a "Shop Now" pill button is displayed
+
+#### Scenario: Best sellers carousel displays product cards
+
+- **GIVEN** the offer section is visible
+- **THEN** a "Best Sellers" section with blue accent underline is shown
+- **AND** an Owl Carousel of 8 product cards is displayed
+- **AND** each card uses the same structure as trending product cards
+
+#### Scenario: Blog news section displays three blog cards
+
+- **GIVEN** the best sellers section is visible
+- **THEN** a "Latest News" section with blue accent underline is shown
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card shows an image, author ("By Admin"), comment count,
+title, excerpt, and "Read More →" link
+- **AND** hovering a blog card highlights the title and link in #384aeb
+
+#### Scenario: Newsletter subscribe section displays subscription form
+
+- **GIVEN** the blog section is visible
+- **THEN** a centered subscribe card with white background and subtle blue
+shadow is shown
+- **AND** "Get Update From Anywhere" heading is displayed
+- **AND** an email input field with rounded border is present
+- **AND** a "Subscribe Now" pill button is displayed
+
+#### Scenario: Footer displays four-column content in dark navy
+
+- **GIVEN** the subscribe section is visible
+- **THEN** a dark navy (#002347) footer is displayed
+- **AND** four columns are shown: Our Mission, Quick Links, Gallery, Contact Us
+- **AND** footer widget titles have blue (#384aeb) icon badges
+- **AND** gallery shows 6 thumbnail images in a flex grid
+- **AND** contact info shows address, phone, and email with FontAwesome icons
+- **AND** the footer bottom shows copyright with Component Dock link
+
+#### Scenario: All sections match the original ColorLib Aroma design
+
+- **GIVEN** the page loads with all sections
+- **THEN** the section order matches: Header, Hero Banner, Hero Carousel,
+Trending Products, Offer Parallax, Best Sellers, Blog News,
+Newsletter Subscribe, Footer
+- **AND** the brand color #384aeb is used for buttons, accents, and highlights
+- **AND** buttons have pill shape (border-radius: 30px)
+- **AND** headings use Oswald font, body uses Roboto font
+- **AND** the footer uses dark navy (#002347) background
 
 ## Verification checklist
 

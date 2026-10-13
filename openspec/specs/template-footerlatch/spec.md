@@ -37,78 +37,96 @@ The preview page shows a centered heading "Footer #09" above a full-width footer
 
 Below the 4 columns: a `border-top` separator row with copyright text on the left and a "made with ♥ by Colorlib.com" attribution on the right.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: FooterLatch template behaviour
+
 Feature: FooterLatch — Bootstrap Footer 19 Recreation
 
-  Background:
-    Given the FooterLatch template is rendered
-    And the page uses Poppins font family
+Background:
+- **GIVEN** the FooterLatch template is rendered
+- **AND** the page uses Poppins font family
 
-  # ── About Column ──────────────────────────────────────
-  Scenario: About column heading with icon badge
-    Then I see a heading "About"
-    And the heading has a circular icon badge (40×40, hot pink border + icon)
+**── About Column ──────────────────────────────────────**
 
-  Scenario: About column contact info
-    Then I see an address line with a pin icon
-    And I see a phone number with a call icon
-    And I see an email address with a send icon
+#### Scenario: About column heading with icon badge
 
-  Scenario: Newsletter subscription form
-    Then I see a text input with placeholder "Enter email address"
-    And the input has a light pink border (#fe8ce3)
-    And I see a square submit button with a send icon
-    And the submit button is hot pink (#fe8ce3) with white text
+- **THEN** I see a heading "About"
+- **AND** the heading has a circular icon badge (40×40, hot pink border + icon)
 
-  # ── Latest News Column ────────────────────────────────
-  Scenario: Latest News heading with icon
-    Then I see a heading "Latest News"
-    And the heading has a circular icon badge
+#### Scenario: About column contact info
 
-  Scenario: Blog post cards
-    Then I see 2 blog post cards
-    And each card has a thumbnail image
-    And each card has a title link
-    And each card shows date, author, and comment count
+- **THEN** I see an address line with a pin icon
+- **AND** I see a phone number with a call icon
+- **AND** I see an email address with a send icon
 
-  # ── Information Column ────────────────────────────────
-  Scenario: Information heading with icon
-    Then I see a heading "Information"
-    And the heading has a circular icon badge
+#### Scenario: Newsletter subscription form
 
-  Scenario: Navigation links
-    Then I see links for "About", "Products", "Blog", "Contact", "Help & Support"
-    And each link is a vertical list item
+- **THEN** I see a text input with placeholder "Enter email address"
+- **AND** the input has a light pink border (#fe8ce3)
+- **AND** I see a square submit button with a send icon
+- **AND** the submit button is hot pink (#fe8ce3) with white text
 
-  # ── Instagram Column ──────────────────────────────────
-  Scenario: Instagram heading with icon
-    Then I see a heading "Instagram"
-    And the heading has a circular icon badge with the Instagram logo
+**── Latest News Column ────────────────────────────────**
 
-  Scenario: Instagram photo grid
-    Then I see a 2×3 grid of square Instagram photo thumbnails
-    And each thumbnail links to "#"
+#### Scenario: Latest News heading with icon
 
-  # ── Footer Bottom Bar ─────────────────────────────────
-  Scenario: Copyright and attribution row
-    Then I see a separator border-top line
-    And I see copyright text on the left
-    And I see attribution text "made with ♥ by Component Dock" on the right
+- **THEN** I see a heading "Latest News"
+- **AND** the heading has a circular icon badge
 
-  # ── Overall Layout ────────────────────────────────────
-  Scenario: Footer layout structure
-    Then the footer has a deep purple gradient background (#2a1a5e → #5126a7)
-    And the content is arranged in a 4-column responsive grid
-    And columns stack on mobile viewports
+#### Scenario: Blog post cards
 
-  Scenario: Brand color usage
-    Then the brand accent color is #fe59d7 (hot pink)
-    And links use the brand accent color
-    And heading icon badges use the brand accent color
-    And the subscribe button uses a lighter variant #fe8ce3
-```
+- **THEN** I see 2 blog post cards
+- **AND** each card has a thumbnail image
+- **AND** each card has a title link
+- **AND** each card shows date, author, and comment count
+
+**── Information Column ────────────────────────────────**
+
+#### Scenario: Information heading with icon
+
+- **THEN** I see a heading "Information"
+- **AND** the heading has a circular icon badge
+
+#### Scenario: Navigation links
+
+- **THEN** I see links for "About", "Products", "Blog", "Contact", "Help & Support"
+- **AND** each link is a vertical list item
+
+**── Instagram Column ──────────────────────────────────**
+
+#### Scenario: Instagram heading with icon
+
+- **THEN** I see a heading "Instagram"
+- **AND** the heading has a circular icon badge with the Instagram logo
+
+#### Scenario: Instagram photo grid
+
+- **THEN** I see a 2×3 grid of square Instagram photo thumbnails
+- **AND** each thumbnail links to "#"
+
+**── Footer Bottom Bar ─────────────────────────────────**
+
+#### Scenario: Copyright and attribution row
+
+- **THEN** I see a separator border-top line
+- **AND** I see copyright text on the left
+- **AND** I see attribution text "made with ♥ by Component Dock" on the right
+
+**── Overall Layout ────────────────────────────────────**
+
+#### Scenario: Footer layout structure
+
+- **THEN** the footer has a deep purple gradient background (#2a1a5e → #5126a7)
+- **AND** the content is arranged in a 4-column responsive grid
+- **AND** columns stack on mobile viewports
+
+#### Scenario: Brand color usage
+
+- **THEN** the brand accent color is #fe59d7 (hot pink)
+- **AND** links use the brand accent color
+- **AND** heading icon badges use the brand accent color
+- **AND** the subscribe button uses a lighter variant #fe8ce3
 
 ## Verification Checklist
 

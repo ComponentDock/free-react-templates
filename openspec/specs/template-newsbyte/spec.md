@@ -53,54 +53,62 @@ Extracted from the live preview at `https://preview.colorlib.com/theme/magnews/`
 8. **Featured Posts section** — large featured article cards in grid layout
 9. **Footer** — dark `#07090C` background, four-column layout: About widget, Gallery widget, Social widget, Tweets widget; copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: NewsByte Template
 
 #### Scenario: Top Header Bar renders correctly
-  Given the user visits the NewsByte homepage
-  Then a dark top header bar is visible with navigation links (About Us, Contact, Advertisement, Privacy, Login)
-  And social media icons are displayed on the right side
-  And a search bar is centered in the header
+
+- **GIVEN** the user visits the NewsByte homepage
+- **THEN** a dark top header bar is visible with navigation links (About Us, Contact, Advertisement, Privacy, Login)
+- **AND** social media icons are displayed on the right side
+- **AND** a search bar is centered in the header
 
 #### Scenario: Logo and Ad Area render correctly
-  Given the top header bar is visible
-  Then the logo "NEWSBYTE" is displayed on the left with a "24H" badge
-  And an ad space placeholder is displayed on the right
+
+- **GIVEN** the top header bar is visible
+- **THEN** the logo "NEWSBYTE" is displayed on the left with a "24H" badge
+- **AND** an ad space placeholder is displayed on the right
 
 #### Scenario: Main Navigation Bar renders correctly
-  Given the user visits the NewsByte homepage
-  Then a dark navigation bar is visible below the logo area
-  And category links are displayed: Home, News, Sport, Lifestyle, Fashion, Music, Business
-  And the active link has a red (`#EF233C`) background
-  And a search icon is visible on the right
+
+- **GIVEN** the user visits the NewsByte homepage
+- **THEN** a dark navigation bar is visible below the logo area
+- **AND** category links are displayed: Home, News, Sport, Lifestyle, Fashion, Music, Business
+- **AND** the active link has a red (`#EF233C`) background
+- **AND** a search icon is visible on the right
 
 #### Scenario: Hero Carousel displays featured articles
-  Given the user visits the NewsByte homepage
-  Then a carousel with two large side-by-side featured article cards is visible
-  And each card has a full-bleed image with dark overlay
-  And each card shows a red "NEWS" category badge
-  And each card shows a white headline and date + comment count
+
+- **GIVEN** the user visits the NewsByte homepage
+- **THEN** a carousel with two large side-by-side featured article cards is visible
+- **AND** each card has a full-bleed image with dark overlay
+- **AND** each card shows a red "NEWS" category badge
+- **AND** each card shows a white headline and date + comment count
 
 #### Scenario: Trending Posts section displays thumbnails
-  Given the hero carousel is visible
-  Then a "Trending Posts" section is displayed below
-  And 4 article thumbnails are shown in a row
-  And each thumbnail has an image and a title below
+
+- **GIVEN** the hero carousel is visible
+- **THEN** a "Trending Posts" section is displayed below
+- **AND** 4 article thumbnails are shown in a row
+- **AND** each thumbnail has an image and a title below
 
 #### Scenario: Tabbed Content section allows switching tabs
-  Given the user scrolls to the tabbed content section
-  Then the "News" tab is active by default with article thumbnails
-  And clicking "Sport" switches to show sport articles
+
+- **GIVEN** the user scrolls to the tabbed content section
+- **THEN** the "News" tab is active by default with article thumbnails
+- **AND** clicking "Sport" switches to show sport articles
 
 #### Scenario: Sidebar Subscribe widget accepts email
-  Given the user sees the sidebar
-  Then an email input field and subscribe button are visible in the newsletter widget
+
+- **GIVEN** the user sees the sidebar
+- **THEN** an email input field and subscribe button are visible in the newsletter widget
 
 #### Scenario: Footer renders with four columns
-  Given the user scrolls to the bottom
-  Then a dark footer is visible with four columns: About, Gallery, Social, Tweets
-  And a copyright bar is at the very bottom with Component Dock attribution
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a dark footer is visible with four columns: About, Gallery, Social, Tweets
+- **AND** a copyright bar is at the very bottom with Component Dock attribution
 
 ## Verification Checklist
 

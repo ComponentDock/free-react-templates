@@ -58,99 +58,90 @@ contrasts a dark navy footer/CTA/hero with white content sections.
 10. **Contact** — Dark navy background with map placeholder + contact form (Name, Email, Subject inputs, Message textarea, "Send Message" submit button).
 11. **Footer** — Dark navy bg. Three columns: About Us (text), Newsletter (email input), Follow Us (social icons). Copyright bar at bottom.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with correct links and scroll behavior
-```gherkin
-Given the page loads
-Then the navbar displays links: Home, Services, Features, Testimonial, Contact
-And the navbar is fixed at the top
-When the user scrolls down
-Then the navbar background transitions to dark
-```
+### Feature: Drainwell template behaviour
 
-### Scenario: Hero banner displays with CTA
-```gherkin
-Given the page loads
-Then the hero section shows a fullscreen banner with dark overlay
-And the heading reads "We're your plumber"
-And a CTA pill button is visible
-```
+#### Scenario: Navbar renders with correct links and scroll behavior
 
-### Scenario: Quote section shows split layout
-```gherkin
-Given the page loads
-Then the quote section has two columns
-And the left column shows a heading with highlighted words
-And the right column shows descriptive paragraph text
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays links: Home, Services, Features, Testimonial, Contact
+- **AND** the navbar is fixed at the top
+- **WHEN** the user scrolls down
+- **THEN** the navbar background transitions to dark
 
-### Scenario: Services section displays 3 service cards
-```gherkin
-Given the page loads
-Then 3 service cards are visible
-And each card has a hexagon icon, title, and description
-When the user hovers a hexagon icon
-Then it fills with the brand color and turns white
-```
+#### Scenario: Hero banner displays with CTA
 
-### Scenario: Features section shows image + cards
-```gherkin
-Given the page loads
-Then the features section has a split layout
-And the left side shows an image
-And the right side shows 4 feature cards
-When the user hovers a feature card
-Then a subtle shadow appears
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows a fullscreen banner with dark overlay
+- **AND** the heading reads "We're your plumber"
+- **AND** a CTA pill button is visible
 
-### Scenario: Counter section displays stats
-```gherkin
-Given the page loads
-Then 4 stat cards are visible with numbers and labels
-And each card has rounded corners and a red-tinted shadow
-```
+#### Scenario: Quote section shows split layout
 
-### Scenario: Video section shows play button
-```gherkin
-Given the page loads
-Then the video section shows a dark overlay on a background image
-And a play button icon is centered
-And a "Watch Video" link is visible
-```
+- **GIVEN** the page loads
+- **THEN** the quote section has two columns
+- **AND** the left column shows a heading with highlighted words
+- **AND** the right column shows descriptive paragraph text
 
-### Scenario: CTA section renders
-```gherkin
-Given the page loads
-Then the CTA section has a dark navy background
-And white text heading and paragraph are visible
-And a white pill CTA button is displayed
-```
+#### Scenario: Services section displays 3 service cards
 
-### Scenario: Testimonials carousel works
-```gherkin
-Given the page loads
-Then testimonial cards are visible in a carousel
-And each card shows quote text, author name, and role
-And carousel navigation dots are present
-```
+- **GIVEN** the page loads
+- **THEN** 3 service cards are visible
+- **AND** each card has a hexagon icon, title, and description
+- **WHEN** the user hovers a hexagon icon
+- **THEN** it fills with the brand color and turns white
 
-### Scenario: Contact form renders and validates
-```gherkin
-Given the page loads
-Then the contact section shows a form with Name, Email, Subject, Message fields
-And a "Send Message" button
-When the user submits an empty form
-Then form validation prevents submission
-```
+#### Scenario: Features section shows image + cards
 
-### Scenario: Footer renders with newsletter and social links
-```gherkin
-Given the page loads
-Then the footer shows About Us text, Newsletter signup, and social icons
-And the footer links to https://www.componentdock.com/
-And a copyright notice is displayed
-```
+- **GIVEN** the page loads
+- **THEN** the features section has a split layout
+- **AND** the left side shows an image
+- **AND** the right side shows 4 feature cards
+- **WHEN** the user hovers a feature card
+- **THEN** a subtle shadow appears
+
+#### Scenario: Counter section displays stats
+
+- **GIVEN** the page loads
+- **THEN** 4 stat cards are visible with numbers and labels
+- **AND** each card has rounded corners and a red-tinted shadow
+
+#### Scenario: Video section shows play button
+
+- **GIVEN** the page loads
+- **THEN** the video section shows a dark overlay on a background image
+- **AND** a play button icon is centered
+- **AND** a "Watch Video" link is visible
+
+#### Scenario: CTA section renders
+
+- **GIVEN** the page loads
+- **THEN** the CTA section has a dark navy background
+- **AND** white text heading and paragraph are visible
+- **AND** a white pill CTA button is displayed
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the page loads
+- **THEN** testimonial cards are visible in a carousel
+- **AND** each card shows quote text, author name, and role
+- **AND** carousel navigation dots are present
+
+#### Scenario: Contact form renders and validates
+
+- **GIVEN** the page loads
+- **THEN** the contact section shows a form with Name, Email, Subject, Message fields
+- **AND** a "Send Message" button
+- **WHEN** the user submits an empty form
+- **THEN** form validation prevents submission
+
+#### Scenario: Footer renders with newsletter and social links
+
+- **GIVEN** the page loads
+- **THEN** the footer shows About Us text, Newsletter signup, and social icons
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** a copyright notice is displayed
 
 ## Verification Checklist
 

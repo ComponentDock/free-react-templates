@@ -29,78 +29,94 @@ Recreation of ColorLib **Ronin** — a personal portfolio / creative agency temp
 | **Button radius (round)** | `45px`                                        | Subscribe/newsletter buttons                                |
 | **Nav text**              | `12px uppercase, 500 weight, Roboto`          | Navbar links                                                |
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
+#### Scenario: Navbar
+
 - Scenario: Transparent header with logo and nav links
-  - Given the page loads
-  - Then a transparent navbar is displayed at the top
-  - And it contains links: Home, About, Services, Pages (dropdown), Blog (dropdown), Contact
-  - And nav text is uppercase, 12px, Roboto, dark on light background
+- **GIVEN** the page loads
+- **THEN** a transparent navbar is displayed at the top
+- **AND** it contains links: Home, About, Services, Pages (dropdown), Blog (dropdown), Contact
+- **AND** nav text is uppercase, 12px, Roboto, dark on light background
 
 ### Hero / Banner
 
+#### Scenario: Hero / Banner
+
 - Scenario: Split hero with image and CTA
-  - Given the page loads
-  - Then a split hero is displayed with image on left and text on right
-  - And the heading says "This is me" with name "Travor James"
-  - And a "Discover Now" CTA button is shown with gradient background (#8490ff → #62bdfc)
-  - And the banner has a background image
+- **GIVEN** the page loads
+- **THEN** a split hero is displayed with image on left and text on right
+- **AND** the heading says "This is me" with name "Travor James"
+- **AND** a "Discover Now" CTA button is shown with gradient background (#8490ff → #62bdfc)
+- **AND** the banner has a background image
 
 ### Welcome / About
 
+#### Scenario: Welcome / About
+
 - Scenario: About section with bio, stats, and skill bars
-  - Given the page scrolls to the welcome section
-  - Then "About Myself" heading is displayed
-  - And a bio paragraph is shown
-  - And three stats counters are displayed (e.g. $2.5M, 1465, 3965)
-  - And a "Tools Expertness" subsection shows skill progress bars
-  - And skill bars include: After Effects (85%), Photoshop (90%), Illustrator (70%), Sublime (95%), Sketch (75%)
+- **GIVEN** the page scrolls to the welcome section
+- **THEN** "About Myself" heading is displayed
+- **AND** a bio paragraph is shown
+- **AND** three stats counters are displayed (e.g. $2.5M, 1465, 3965)
+- **AND** a "Tools Expertness" subsection shows skill progress bars
+- **AND** skill bars include: After Effects (85%), Photoshop (90%), Illustrator (70%), Sublime (95%), Sketch (75%)
 
 ### Features / Services
 
+#### Scenario: Features / Services
+
 - Scenario: 6 service cards in a 3-column grid
-  - Given the page scrolls to the features section
-  - Then "offerings to my clients" heading is displayed
-  - And 6 feature items are shown in a 3×2 grid
-  - And each card has an icon, title, and description
-  - And titles include: Architecture, Interior Design, Concept Design (repeated)
+- **GIVEN** the page scrolls to the features section
+- **THEN** "offerings to my clients" heading is displayed
+- **AND** 6 feature items are shown in a 3×2 grid
+- **AND** each card has an icon, title, and description
+- **AND** titles include: Architecture, Interior Design, Concept Design (repeated)
 
 ### Projects / Portfolio
 
+#### Scenario: Projects / Portfolio
+
 - Scenario: Portfolio grid with project images
-  - Given the page scrolls to the projects section
-  - Then "Our Recent Completed Projects" heading is displayed
-  - And 6 project cards are shown
-  - And each card has a project image and title (e.g. "3D Helmet Design")
-  - And project images have hover overlay effects
+- **GIVEN** the page scrolls to the projects section
+- **THEN** "Our Recent Completed Projects" heading is displayed
+- **AND** 6 project cards are shown
+- **AND** each card has a project image and title (e.g. "3D Helmet Design")
+- **AND** project images have hover overlay effects
 
 ### Testimonials
 
+#### Scenario: Testimonials
+
 - Scenario: Testimonial carousel with star ratings
-  - Given the page scrolls to the testimonials section
-  - Then "Testimonials" heading is displayed
-  - And a carousel of 3 testimonials is shown
-  - And each testimonial has a quote, author name ("Fanny Spencer"), and 4.5 star rating
+- **GIVEN** the page scrolls to the testimonials section
+- **THEN** "Testimonials" heading is displayed
+- **AND** a carousel of 3 testimonials is shown
+- **AND** each testimonial has a quote, author name ("Fanny Spencer"), and 4.5 star rating
 
 ### Blog
 
+#### Scenario: Blog
+
 - Scenario: Latest blog posts grid
-  - Given the page scrolls to the blog section
-  - Then "Latest Posts from Blog" heading is displayed
-  - And 3 blog post cards are shown
-  - And each card has an image, title, date, and read-more link
+- **GIVEN** the page scrolls to the blog section
+- **THEN** "Latest Posts from Blog" heading is displayed
+- **AND** 3 blog post cards are shown
+- **AND** each card has an image, title, date, and read-more link
 
 ### Footer
 
+#### Scenario: Footer
+
 - Scenario: Dark footer with about, newsletter, and social links
-  - Given the page scrolls to the footer
-  - Then a dark navy (#04091e) footer is displayed
-  - And it contains an "About Me" column with description
-  - And a "Newsletter" column with email input and subscribe button
-  - And a "Follow Me" column with social icons (Facebook, Twitter, Dribbble, Behance)
-  - And a copyright line linking to Component Dock
+- **GIVEN** the page scrolls to the footer
+- **THEN** a dark navy (#04091e) footer is displayed
+- **AND** it contains an "About Me" column with description
+- **AND** a "Newsletter" column with email input and subscribe button
+- **AND** a "Follow Me" column with social icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** a copyright line linking to Component Dock
 
 ## Verification Checklist
 

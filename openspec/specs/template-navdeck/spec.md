@@ -48,95 +48,99 @@ Two-column layout:
    - Each card: title text (bold, dark), thumbnail image, date (gray, small)
    - Cards have consistent vertical spacing
 
-## Gherkin Requirements
+## Requirements
 
 ### Sidebar Profile Section
 
-```gherkin
 Feature: Sidebar Profile
-  As a visitor, I see a profile sidebar so I can navigate the social feed.
+As a visitor, I see a profile sidebar so I can navigate the social feed.
 
-  Scenario: Sidebar displays avatar
-    Given the page loads
-    Then a circular avatar image is visible in the sidebar
-    And the avatar is approximately 80px in diameter
+#### Scenario: Sidebar displays avatar
 
-  Scenario: Sidebar displays user name
-    Given the page loads
-    Then the user name is displayed below the avatar in bold text
+- **GIVEN** the page loads
+- **THEN** a circular avatar image is visible in the sidebar
+- **AND** the avatar is approximately 80px in diameter
 
-  Scenario: Sidebar displays user location
-    Given the page loads
-    Then the user location is displayed below the name in small gray text
+#### Scenario: Sidebar displays user name
 
-  Scenario: Sidebar displays stats
-    Given the page loads
-    Then three stats are shown: Posts, Followers, Following
-    And each stat has a bold number and a gray label below it
-```
+- **GIVEN** the page loads
+- **THEN** the user name is displayed below the avatar in bold text
+
+#### Scenario: Sidebar displays user location
+
+- **GIVEN** the page loads
+- **THEN** the user location is displayed below the name in small gray text
+
+#### Scenario: Sidebar displays stats
+
+- **GIVEN** the page loads
+- **THEN** three stats are shown: Posts, Followers, Following
+- **AND** each stat has a bold number and a gray label below it
 
 ### Sidebar Navigation
 
-```gherkin
 Feature: Sidebar Navigation
-  As a visitor, I can navigate between sections using the sidebar menu.
+As a visitor, I can navigate between sections using the sidebar menu.
 
-  Scenario: Navigation items are displayed
-    Given the page loads
-    Then the sidebar shows navigation items: Feed, Explore, Notifications, Direct, Stats, Sign out
-    And each item has an icon to the left of its label
+#### Scenario: Navigation items are displayed
 
-  Scenario: Active item has accent indicator
-    Given the Feed item is the active section
-    Then the Feed item has a 3px amber left border
-    And the Feed item text is bold/dark
+- **GIVEN** the page loads
+- **THEN** the sidebar shows navigation items: Feed, Explore, Notifications, Direct, Stats, Sign out
+- **AND** each item has an icon to the left of its label
 
-  Scenario: Clicking a nav item changes active state
-    Given I click the "Explore" navigation item
-    Then the Explore item becomes active with the amber left border
-    And the Feed item loses its active indicator
-```
+#### Scenario: Active item has accent indicator
+
+- **GIVEN** the Feed item is the active section
+- **THEN** the Feed item has a 3px amber left border
+- **AND** the Feed item text is bold/dark
+
+#### Scenario: Clicking a nav item changes active state
+
+- **GIVEN** I click the "Explore" navigation item
+- **THEN** the Explore item becomes active with the amber left border
+- **AND** the Feed item loses its active indicator
 
 ### Main Content Feed
 
-```gherkin
 Feature: Content Feed Grid
-  As a visitor, I see a grid of posts in the main content area.
+As a visitor, I see a grid of posts in the main content area.
 
-  Scenario: Posts display in 2-column grid
-    Given the page loads
-    Then posts are arranged in a 2-column grid layout
-    And each post card has a title, thumbnail, and date
+#### Scenario: Posts display in 2-column grid
 
-  Scenario: Post cards have consistent styling
-    Given the page loads
-    Then each post card has a white background
-    And each post card shows a bold title
-    And each post card shows a date in gray text
-    And each post card shows a thumbnail image
+- **GIVEN** the page loads
+- **THEN** posts are arranged in a 2-column grid layout
+- **AND** each post card has a title, thumbnail, and date
 
-  Scenario: Close button is visible
-    Given the page loads
-    Then a close/X button is visible in the top-left of the main content area
-```
+#### Scenario: Post cards have consistent styling
+
+- **GIVEN** the page loads
+- **THEN** each post card has a white background
+- **AND** each post card shows a bold title
+- **AND** each post card shows a date in gray text
+- **AND** each post card shows a thumbnail image
+
+#### Scenario: Close button is visible
+
+- **GIVEN** the page loads
+- **THEN** a close/X button is visible in the top-left of the main content area
 
 ### Responsive Behavior
 
-```gherkin
 Feature: Responsive Layout
-  As a mobile visitor, the layout adapts to smaller screens.
+As a mobile visitor, the layout adapts to smaller screens.
 
-  Scenario: Sidebar collapses on mobile
-    Given the viewport is less than 768px wide
-    Then the sidebar is hidden or collapsed
-    And a hamburger menu button is visible
+#### Scenario: Sidebar collapses on mobile
 
-  Scenario: Sidebar opens on hamburger click
-    Given the sidebar is collapsed
-    And I click the hamburger menu button
-    Then the sidebar slides in from the left
-    And the main content is partially visible or overlaid
-```
+- **GIVEN** the viewport is less than 768px wide
+- **THEN** the sidebar is hidden or collapsed
+- **AND** a hamburger menu button is visible
+
+#### Scenario: Sidebar opens on hamburger click
+
+- **GIVEN** the sidebar is collapsed
+- **AND** I click the hamburger menu button
+- **THEN** the sidebar slides in from the left
+- **AND** the main content is partially visible or overlaid
 
 ## Verification Checklist
 

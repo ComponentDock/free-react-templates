@@ -44,55 +44,63 @@ themed — suitable for music festivals, nightlife, or creative events.
 (1200x972 AVIF converted to PNG, analyzed visually). Exact hex values are
 approximate — implementer should match visual appearance closely.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: RegNoir Event Registration Form
 
-  Scenario: Page renders with split-screen card layout
-    Given the user navigates to the RegNoir page
-    Then a purple/lavender gradient full-page background is visible
-    And a centered card is displayed
-    And the card is split into a left image section and a right form section
+#### Scenario: Page renders with split-screen card layout
 
-  Scenario: Left side displays a dramatic photograph
-    Given the page has loaded
-    Then the left half of the card displays a photograph
-    And the photograph fills the entire left half of the card
+- **GIVEN** the user navigates to the RegNoir page
+- **THEN** a purple/lavender gradient full-page background is visible
+- **AND** a centered card is displayed
+- **AND** the card is split into a left image section and a right form section
 
-  Scenario: Registration form heading is visible
-    Given the page has loaded
-    Then the heading "Registration Info" is visible on the dark form panel
-    And the heading is white and styled with a serif/display font
+#### Scenario: Left side displays a dramatic photograph
 
-  Scenario: Form fields are present and functional
-    Given the page has loaded
-    Then a "Name" text input is visible
-    And a "Birthdate" date picker input is visible
-    And a "Gender" dropdown select is visible
-    And an "Email" text input is visible
-    And a "Phone" text input is visible
-    And all inputs have underline-style borders (bottom border only)
+- **GIVEN** the page has loaded
+- **THEN** the left half of the card displays a photograph
+- **AND** the photograph fills the entire left half of the card
 
-  Scenario: Submit button is visible and styled
-    Given the page has loaded
-    Then a "Submit" button is visible
-    And the button has a green/olive background (~#7cb342)
-    And the button has a pill shape (high border-radius)
-    And the button text is white
+#### Scenario: Registration form heading is visible
 
-  Scenario: Submit button triggers form submission
-    Given the user fills in all form fields
-    When the user clicks the "Submit" button
-    Then the form submission is triggered
+- **GIVEN** the page has loaded
+- **THEN** the heading "Registration Info" is visible on the dark form panel
+- **AND** the heading is white and styled with a serif/display font
 
-  Scenario: Responsive layout
-    Given the user views the page on a mobile device (viewport < 768px)
-    Then the card stacks vertically (image above form)
-    And all form fields remain accessible
+#### Scenario: Form fields are present and functional
 
-  Scenario: Footer section
-    Given the page has loaded
-    Then a Component Dock credit link is present
+- **GIVEN** the page has loaded
+- **THEN** a "Name" text input is visible
+- **AND** a "Birthdate" date picker input is visible
+- **AND** a "Gender" dropdown select is visible
+- **AND** an "Email" text input is visible
+- **AND** a "Phone" text input is visible
+- **AND** all inputs have underline-style borders (bottom border only)
+
+#### Scenario: Submit button is visible and styled
+
+- **GIVEN** the page has loaded
+- **THEN** a "Submit" button is visible
+- **AND** the button has a green/olive background (~#7cb342)
+- **AND** the button has a pill shape (high border-radius)
+- **AND** the button text is white
+
+#### Scenario: Submit button triggers form submission
+
+- **GIVEN** the user fills in all form fields
+- **WHEN** the user clicks the "Submit" button
+- **THEN** the form submission is triggered
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device (viewport < 768px)
+- **THEN** the card stacks vertically (image above form)
+- **AND** all form fields remain accessible
+
+#### Scenario: Footer section
+
+- **GIVEN** the page has loaded
+- **THEN** a Component Dock credit link is present
 
 ## Verification checklist
 

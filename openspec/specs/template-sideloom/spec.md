@@ -66,95 +66,96 @@ left; a hamburger toggle sits on the right edge.
    - Minimal — no explicit footer in original design
    - React recreation: add Component Dock attribution link
 
-## Gherkin scenarios
+## Requirements
 
 ### Sidebar visibility
 
-```gherkin
-Scenario: Sidebar is visible on page load
-  Given the user opens the page
-  Then the sidebar is visible on the left side
-  And the sidebar displays a circular blue logo
-  And the sidebar displays 4 navigation links
-  And the sidebar displays a "Featured Users" heading
-  And the sidebar displays 8 user entries with avatars and names
+#### Scenario: Sidebar is visible on page load
 
-Scenario: Sidebar slides out of view when closed
-  Given the sidebar is open
-  When the user clicks the hamburger toggle
-  Then the sidebar slides left out of view
-  And the main content area expands to full width
-```
+- **GIVEN** the user opens the page
+- **THEN** the sidebar is visible on the left side
+- **AND** the sidebar displays a circular blue logo
+- **AND** the sidebar displays 4 navigation links
+- **AND** the sidebar displays a "Featured Users" heading
+- **AND** the sidebar displays 8 user entries with avatars and names
+
+#### Scenario: Sidebar slides out of view when closed
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the sidebar slides left out of view
+- **AND** the main content area expands to full width
 
 ### Navigation
 
-```gherkin
-Scenario: Active navigation link has indicator bar
-  Given the sidebar is open
-  Then the "Home" link has a blue left indicator bar
-  And the "Home" link text is black
-  And the other nav links have gray text
+#### Scenario: Active navigation link has indicator bar
 
-Scenario: Hovering a nav link shows indicator
-  Given the sidebar is open
-  When the user hovers over "Videos"
-  Then the "Videos" link text turns black
-  And a blue indicator bar appears on the left
+- **GIVEN** the sidebar is open
+- **THEN** the "Home" link has a blue left indicator bar
+- **AND** the "Home" link text is black
+- **AND** the other nav links have gray text
 
-Scenario: Clicking a nav link activates it
-  Given the sidebar is open
-  When the user clicks "Store"
-  Then the "Store" link becomes active with blue indicator
-  And the "Home" link loses its active state
-```
+#### Scenario: Hovering a nav link shows indicator
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user hovers over "Videos"
+- **THEN** the "Videos" link text turns black
+- **AND** a blue indicator bar appears on the left
+
+#### Scenario: Clicking a nav link activates it
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks "Store"
+- **THEN** the "Store" link becomes active with blue indicator
+- **AND** the "Home" link loses its active state
 
 ### Featured Users
 
-```gherkin
-Scenario: Featured Users list displays correctly
-  Given the sidebar is open
-  Then there are exactly 8 user entries
-  And each entry has a 45px circular avatar
-  And each entry displays the user's name
+#### Scenario: Featured Users list displays correctly
 
-Scenario: Featured users are clickable
-  Given the sidebar is open
-  When the user clicks on a featured user entry
-  Then the entry receives focus
-```
+- **GIVEN** the sidebar is open
+- **THEN** there are exactly 8 user entries
+- **AND** each entry has a 45px circular avatar
+- **AND** each entry displays the user's name
+
+#### Scenario: Featured users are clickable
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks on a featured user entry
+- **THEN** the entry receives focus
 
 ### Main content
 
-```gherkin
-Scenario: Blog post grid displays in 2 columns
-  Given the user opens the page
-  Then there are 8 blog post cards visible
-  And they are arranged in a 2-column grid
-  And each card has a thumbnail image on the left
-  And each card has a title and a date on the right
+#### Scenario: Blog post grid displays in 2 columns
 
-Scenario: Blog post cards have consistent layout
-  Given the blog post grid is visible
-  Then each thumbnail is 80px wide
-  And each title is displayed in 18px font
-  And each date is displayed in 15px gray text
-```
+- **GIVEN** the user opens the page
+- **THEN** there are 8 blog post cards visible
+- **AND** they are arranged in a 2-column grid
+- **AND** each card has a thumbnail image on the left
+- **AND** each card has a title and a date on the right
+
+#### Scenario: Blog post cards have consistent layout
+
+- **GIVEN** the blog post grid is visible
+- **THEN** each thumbnail is 80px wide
+- **AND** each title is displayed in 18px font
+- **AND** each date is displayed in 15px gray text
 
 ### Hamburger toggle
 
-```gherkin
-Scenario: Hamburger icon toggles sidebar
-  Given the sidebar is open
-  When the user clicks the hamburger icon
-  Then the icon animates to an X shape
-  And the sidebar slides out of view
+#### Scenario: Hamburger icon toggles sidebar
 
-Scenario: X icon closes back to hamburger
-  Given the sidebar is closed and showing X icon
-  When the user clicks the X icon
-  Then the icon animates back to hamburger
-  And the sidebar slides back into view
-```
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the icon animates to an X shape
+- **AND** the sidebar slides out of view
+
+#### Scenario: X icon closes back to hamburger
+
+- **GIVEN** the sidebar is closed and showing X icon
+- **WHEN** the user clicks the X icon
+- **THEN** the icon animates back to hamburger
+- **AND** the sidebar slides back into view
 
 ## Verification checklist
 

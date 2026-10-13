@@ -88,82 +88,68 @@ and preview URL are recorded below.
   - Search input height: 32px, font-size 14px
   - Tag close button: positioned top 9px, right 8px
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with centered heading and select widget
+### Feature: Pickbag template behaviour
 
-```gherkin
-Given the user opens the Pickbag page
-Then a centered heading "Multi-Select #9" is visible
-And a multi-select widget is displayed in a centered container
-And the placeholder text "Select Categories" is shown in the widget
-```
+#### Scenario: Page renders with centered heading and select widget
 
-### Scenario: Dropdown opens and shows all 8 options
+- **GIVEN** the user opens the Pickbag page
+- **THEN** a centered heading "Multi-Select #9" is visible
+- **AND** a multi-select widget is displayed in a centered container
+- **AND** the placeholder text "Select Categories" is shown in the widget
 
-```gherkin
-Given the user clicks the multi-select widget
-Then a dropdown list opens below the widget
-And the dropdown contains exactly 8 options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
-And each option is clickable to select
-```
+#### Scenario: Dropdown opens and shows all 8 options
 
-### Scenario: Selecting items creates colored tags
+- **GIVEN** the user clicks the multi-select widget
+- **THEN** a dropdown list opens below the widget
+- **AND** the dropdown contains exactly 8 options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
+- **AND** each option is clickable to select
 
-```gherkin
-Given the user clicks the multi-select widget
-When the user clicks "Design"
-Then a tag "Design" appears in the container with an "x" close button
-And the tag has a colored background from the cycling palette
-When the user clicks "HTML5"
-Then a second tag "HTML5" appears next to the first
-And both tags are visible with distinct backgrounds
-```
+#### Scenario: Selecting items creates colored tags
 
-### Scenario: Deselecting items via tag close button
+- **GIVEN** the user clicks the multi-select widget
+- **WHEN** the user clicks "Design"
+- **THEN** a tag "Design" appears in the container with an "x" close button
+- **AND** the tag has a colored background from the cycling palette
+- **WHEN** the user clicks "HTML5"
+- **THEN** a second tag "HTML5" appears next to the first
+- **AND** both tags are visible with distinct backgrounds
 
-```gherkin
-Given the user has selected "Design" and "HTML5"
-And tags for both are visible in the container
-When the user clicks the "x" on the "Design" tag
-Then the "Design" tag is removed from the container
-And "Design" reappears in the dropdown option list
-```
+#### Scenario: Deselecting items via tag close button
 
-### Scenario: Search filtering within the widget
+- **GIVEN** the user has selected "Design" and "HTML5"
+- **AND** tags for both are visible in the container
+- **WHEN** the user clicks the "x" on the "Design" tag
+- **THEN** the "Design" tag is removed from the container
+- **AND** "Design" reappears in the dropdown option list
 
-```gherkin
-Given the user clicks the multi-select widget
-When the user types "boot" in the search input
-Then only options matching "boot" are shown in the dropdown (Bootstrap)
-And non-matching options (Design, HTML5, CSS3, etc.) are hidden
-```
+#### Scenario: Search filtering within the widget
 
-### Scenario: Placeholder reappears when all items deselected
+- **GIVEN** the user clicks the multi-select widget
+- **WHEN** the user types "boot" in the search input
+- **THEN** only options matching "boot" are shown in the dropdown (Bootstrap)
+- **AND** non-matching options (Design, HTML5, CSS3, etc.) are hidden
 
-```gherkin
-Given the user has selected "Design"
-And a "Design" tag is visible
-When the user clicks the "x" on the "Design" tag
-Then the tag container is empty
-And the placeholder text "Select Categories" reappears
-```
+#### Scenario: Placeholder reappears when all items deselected
 
-### Scenario: Responsive layout — narrow viewport
+- **GIVEN** the user has selected "Design"
+- **AND** a "Design" tag is visible
+- **WHEN** the user clicks the "x" on the "Design" tag
+- **THEN** the tag container is empty
+- **AND** the placeholder text "Select Categories" reappears
 
-```gherkin
-Given the user opens the Pickbag page on a viewport narrower than 768px
-Then the heading remains centered
-And the select widget remains functional and full-width within its column
-```
+#### Scenario: Responsive layout — narrow viewport
 
-### Scenario: Component Dock footer link
+- **GIVEN** the user opens the Pickbag page on a viewport narrower than 768px
+- **THEN** the heading remains centered
+- **AND** the select widget remains functional and full-width within its column
 
-```gherkin
-Given the user opens the Pickbag page
-Then a footer link to "https://www.componentdock.com/" is visible
-And the link text includes "Component Dock"
-```
+#### Scenario: Component Dock footer link
+
+- **GIVEN** the user opens the Pickbag page
+- **THEN** a footer link to "https://www.componentdock.com/" is visible
+- **AND** the link text includes "Component Dock"
 
 ## Verification checklist
 

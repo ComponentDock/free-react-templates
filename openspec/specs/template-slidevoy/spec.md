@@ -46,68 +46,70 @@ The template is a single-page layout:
 4. **Dot indicators** — centered at bottom of carousel
 5. **Prev/Next arrows** — positioned at left/right edges, centered vertically
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with heading
+### Feature: SlideVoy template behaviour
 
-- **Given** the user visits the SlideVoy page
-- **Then** the heading "Carousel #8" (or equivalent slidevoy-branded heading) is visible centered at the top
+#### Scenario: Page renders with heading
 
-### Scenario: Tab navigation shows three tabs
+- **GIVEN** the user visits the SlideVoy page
+- **THEN** the heading "Carousel #8" (or equivalent slidevoy-branded heading) is visible centered at the top
 
-- **Given** the user sees the tab navigation
-- **When** there are 3 tab links visible
-- **Then** the first tab is styled as active (black bottom border indicator)
+#### Scenario: Tab navigation shows three tabs
 
-### Scenario: Tab switching
+- **GIVEN** the user sees the tab navigation
+- **WHEN** there are 3 tab links visible
+- **THEN** the first tab is styled as active (black bottom border indicator)
 
-- **Given** the user clicks the second tab
-- **Then** the second tab becomes active (black border indicator)
-- **And** the carousel advances to show the second slide content
-- **And** the first tab loses the active indicator
+#### Scenario: Tab switching
 
-### Scenario: Carousel shows split-layout slide
+- **GIVEN** the user clicks the second tab
+- **THEN** the second tab becomes active (black border indicator)
+- **AND** the carousel advances to show the second slide content
+- **AND** the first tab loses the active indicator
 
-- **Given** a slide is displayed
-- **Then** the layout is a 50/50 horizontal split
-- **And** the left half shows a full-width image
-- **And** the right half shows a category label, heading, and paragraph
+#### Scenario: Carousel shows split-layout slide
 
-### Scenario: Category label styling
+- **GIVEN** a slide is displayed
+- **THEN** the layout is a 50/50 horizontal split
+- **AND** the left half shows a full-width image
+- **AND** the right half shows a category label, heading, and paragraph
 
-- **Given** the category label is visible in a slide
-- **Then** the label is uppercase with wide letter-spacing
-- **And** the label text color is a muted gray (#adb5bd)
+#### Scenario: Category label styling
 
-### Scenario: Heading in slide uses serif font
+- **GIVEN** the category label is visible in a slide
+- **THEN** the label is uppercase with wide letter-spacing
+- **AND** the label text color is a muted gray (#adb5bd)
 
-- **Given** the slide heading is visible
-- **Then** the heading uses "Playfair Display" serif font
-- **And** the heading color is black
-- **And** the heading has generous line-height (1.3)
+#### Scenario: Heading in slide uses serif font
 
-### Scenario: Prev/Next navigation arrows
+- **GIVEN** the slide heading is visible
+- **THEN** the heading uses "Playfair Display" serif font
+- **AND** the heading color is black
+- **AND** the heading has generous line-height (1.3)
 
-- **Given** the carousel is displayed
-- **Then** a left arrow and right arrow are visible at the slide edges
-- **And** the arrows are vertically centered on the slide
+#### Scenario: Prev/Next navigation arrows
 
-### Scenario: Dot indicators
+- **GIVEN** the carousel is displayed
+- **THEN** a left arrow and right arrow are visible at the slide edges
+- **AND** the arrows are vertically centered on the slide
 
-- **Given** the carousel shows dot indicators
-- **Then** there are 3 circular dots centered below the carousel
-- **And** the active dot is white, inactive dots are semi-transparent white
+#### Scenario: Dot indicators
 
-### Scenario: Responsive mobile layout
+- **GIVEN** the carousel shows dot indicators
+- **THEN** there are 3 circular dots centered below the carousel
+- **AND** the active dot is white, inactive dots are semi-transparent white
 
-- **Given** the viewport is below 992px
-- **Then** the 50/50 split stacks vertically
-- **And** the text padding is reduced
+#### Scenario: Responsive mobile layout
 
-### Scenario: Link transitions
+- **GIVEN** the viewport is below 992px
+- **THEN** the 50/50 split stacks vertically
+- **AND** the text padding is reduced
 
-- **Given** the user hovers over a heading link or tab link
-- **Then** the color transition occurs smoothly (0.3s ease)
+#### Scenario: Link transitions
+
+- **GIVEN** the user hovers over a heading link or tab link
+- **THEN** the color transition occurs smoothly (0.3s ease)
 
 ## Verification checklist
 

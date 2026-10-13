@@ -45,76 +45,87 @@ Recreation of ColorLib **Travello** as a React 19 + Vite + Tailwind CSS 4 + Type
 10. **News** -- 3 blog posts (image + date + title + category + excerpt). Sidebar: promotional discount card.
 11. **Footer** -- Newsletter subscription (name + email + "SUBSCRIBE" button), 3-column contact info (phone, address, email), copyright line.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: TripNest -- Travel and Tourism single-page template
 
-  Scenario: Header displays navigation and branding
-    Given the user visits the page
-    Then the header shows the logo "TripNest"
-    And navigation links: Home, About, Services, News, Contact
-    And a phone number is displayed
-    And social media icons are visible
+#### Scenario: Header displays navigation and branding
 
-  Scenario: Hero slider cycles through slides
-    Given the hero section is visible
-    Then a large heading is displayed over a background image
-    And the heading rotates through "Let us take you away", "Discover the world", "Adventure awaits"
-    And page navigation links appear on the right side
+- **GIVEN** the user visits the page
+- **THEN** the header shows the logo "TripNest"
+- **AND** navigation links: Home, About, Services, News, Contact
+- **AND** a phone number is displayed
+- **AND** social media icons are visible
 
-  Scenario: Search bar accepts trip parameters
-    Given the search section is visible
-    Then 4 input fields are shown: City, Departure, Arrival, Budget
-    And a "SEARCH" pill button is displayed
-    When the user fills all inputs and clicks search
-    Then the form is submitted
+#### Scenario: Hero slider cycles through slides
 
-  Scenario: Intro features three value propositions
-    Given the intro section is visible
-    Then 3 items are shown: "Top Destinations", "The Best Prices", "Amazing Services"
-    And each has an icon and subtitle text
+- **GIVEN** the hero section is visible
+- **THEN** a large heading is displayed over a background image
+- **AND** the heading rotates through "Let us take you away", "Discover the world", "Adventure awaits"
+- **AND** page navigation links appear on the right side
 
-  Scenario: Popular Destinations grid shows 6 cards
-    Given the destinations section is visible
-    Then 6 destination cards are rendered in a 3-column grid
-    And each card has an image, title, description, and price
-    And one card shows a "Special Offer" badge
-    And hovering a card scales the image and deepens the shadow
+#### Scenario: Search bar accepts trip parameters
 
-  Scenario: Why Choose Us shows 3 feature cards
-    Given the why section is visible
-    Then a parallax background image is displayed
-    And 3 white cards are shown: "Fast Services", "Expert Guides", "Best Deals"
-    And each card has an image, icon circle, title, and description
+- **GIVEN** the search section is visible
+- **THEN** 4 input fields are shown: City, Departure, Arrival, Budget
+- **AND** a "SEARCH" pill button is displayed
+- **WHEN** the user fills all inputs and clicks search
+- **THEN** the form is submitted
 
-  Scenario: Featured Tours carousel
-    Given the tours section is visible
-    Then a carousel of tour cards is displayed
-    And each card shows image, badge, duration, location, rating, title, price
-    And a "View Details" button appears on each card
-    And a "View All Tours" button appears below the carousel
+#### Scenario: Intro features three value propositions
 
-  Scenario: Testimonials slider
-    Given the testimonials section is visible
-    Then a background image is displayed behind the section
-    And testimonial text and author name are shown
-    And navigation links appear on the right side
+- **GIVEN** the intro section is visible
+- **THEN** 3 items are shown: "Top Destinations", "The Best Prices", "Amazing Services"
+- **AND** each has an icon and subtitle text
 
-  Scenario: Instagram feed grid
-    Given the instagram section is visible
-    Then 6 images are shown in a row
-    And hovering shows an Instagram icon overlay
+#### Scenario: Popular Destinations grid shows 6 cards
 
-  Scenario: News section with sidebar
-    Given the news section is visible
-    Then 3 blog posts are shown with image, date, title, category, excerpt
-    And a sidebar promotional card offers a discount
+- **GIVEN** the destinations section is visible
+- **THEN** 6 destination cards are rendered in a 3-column grid
+- **AND** each card has an image, title, description, and price
+- **AND** one card shows a "Special Offer" badge
+- **AND** hovering a card scales the image and deepens the shadow
 
-  Scenario: Footer newsletter and contact
-    Given the footer is visible
-    Then a newsletter form with name, email, and subscribe button is shown
-    And 3 contact columns display phone, address, and email info
-    And a copyright line appears at the bottom
+#### Scenario: Why Choose Us shows 3 feature cards
+
+- **GIVEN** the why section is visible
+- **THEN** a parallax background image is displayed
+- **AND** 3 white cards are shown: "Fast Services", "Expert Guides", "Best Deals"
+- **AND** each card has an image, icon circle, title, and description
+
+#### Scenario: Featured Tours carousel
+
+- **GIVEN** the tours section is visible
+- **THEN** a carousel of tour cards is displayed
+- **AND** each card shows image, badge, duration, location, rating, title, price
+- **AND** a "View Details" button appears on each card
+- **AND** a "View All Tours" button appears below the carousel
+
+#### Scenario: Testimonials slider
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a background image is displayed behind the section
+- **AND** testimonial text and author name are shown
+- **AND** navigation links appear on the right side
+
+#### Scenario: Instagram feed grid
+
+- **GIVEN** the instagram section is visible
+- **THEN** 6 images are shown in a row
+- **AND** hovering shows an Instagram icon overlay
+
+#### Scenario: News section with sidebar
+
+- **GIVEN** the news section is visible
+- **THEN** 3 blog posts are shown with image, date, title, category, excerpt
+- **AND** a sidebar promotional card offers a discount
+
+#### Scenario: Footer newsletter and contact
+
+- **GIVEN** the footer is visible
+- **THEN** a newsletter form with name, email, and subscribe button is shown
+- **AND** 3 contact columns display phone, address, and email info
+- **AND** a copyright line appears at the bottom
 
 ## Verification checklist
 

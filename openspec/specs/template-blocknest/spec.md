@@ -53,161 +53,151 @@ Recreation of ColorLib's **Cryptian** template as a React 19 + Vite + Tailwind 4
 13. **Community** — Social media icon grid (Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr) — use Lucide equivalents.
 14. **Footer** — 4-column: logo + description + copyright, nav links (About, Token Sale, Roadmap, Contact), nav links (White Paper, Team, App, FAQ), newsletter subscription form (email + GO button). Footer MUST link componentdock.com.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar renders with all nav links
-  Given the page loads
-  Then the navbar displays logo and links for Home, About, White Paper, Token Sale, Roadmap, Team, App, FAQ, Contact
-  And a Login button is visible on the right
+#### Scenario: Navbar renders with all nav links
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls down past the hero
-  Then the navbar background transitions to dark navy (#000D47)
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays logo and links for Home, About, White Paper, Token Sale, Roadmap, Team, App, FAQ, Contact
+- **AND** a Login button is visible on the right
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar background transitions to dark navy (#000D47)
 
 ### Hero
 
-```gherkin
-Scenario: Hero displays headline and CTAs
-  Given the page loads
-  Then the hero section shows a headline about ICO/blockchain
-  And two CTA buttons are visible: "Register for the ICO" and "Download Whitepaper"
+#### Scenario: Hero displays headline and CTAs
 
-Scenario: Hero has animated particle background
-  Given the page loads
-  Then a particles animation renders behind the hero content
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows a headline about ICO/blockchain
+- **AND** two CTA buttons are visible: "Register for the ICO" and "Download Whitepaper"
+
+#### Scenario: Hero has animated particle background
+
+- **GIVEN** the page loads
+- **THEN** a particles animation renders behind the hero content
 
 ### Featured Logos
 
-```gherkin
-Scenario: Logo carousel displays partner logos
-  Given the page loads
-  Then a "We are featured in" section shows at least 5 partner logos
-  And the logos scroll automatically in a carousel
-```
+#### Scenario: Logo carousel displays partner logos
+
+- **GIVEN** the page loads
+- **THEN** a "We are featured in" section shows at least 5 partner logos
+- **AND** the logos scroll automatically in a carousel
 
 ### About
 
-```gherkin
-Scenario: About section displays content
-  Given the page loads
-  Then the about section shows an illustration and heading
-  And a paragraph about cryptocurrency exchange is displayed
-  And a "Join us on Telegraph" CTA button is visible
-```
+#### Scenario: About section displays content
+
+- **GIVEN** the page loads
+- **THEN** the about section shows an illustration and heading
+- **AND** a paragraph about cryptocurrency exchange is displayed
+- **AND** a "Join us on Telegraph" CTA button is visible
 
 ### Feature Cards
 
-```gherkin
-Scenario: Three feature cards render
-  Given the page loads
-  Then three feature cards are displayed in a row
-  And each card has an icon, title, and description
-  And the cards are: Exciting Opportunity, Vetted ICO Marketplace, Diverse Profit Ways
-```
+#### Scenario: Three feature cards render
+
+- **GIVEN** the page loads
+- **THEN** three feature cards are displayed in a row
+- **AND** each card has an icon, title, and description
+- **AND** the cards are: Exciting Opportunity, Vetted ICO Marketplace, Diverse Profit Ways
 
 ### ICO Stats
 
-```gherkin
-Scenario: ICO stats section shows token sale data
-  Given the page loads
-  Then token sold count, ETH/BTC/LTH collected values are displayed
-  And a countdown timer shows days, hours, minutes, seconds
+#### Scenario: ICO stats section shows token sale data
 
-Scenario: Progress bar shows funding progress
-  Given the page loads
-  Then a gradient progress bar is rendered
-  And soft cap and max cap labels are visible
-  And a "Buy Tokens" CTA is displayed
-```
+- **GIVEN** the page loads
+- **THEN** token sold count, ETH/BTC/LTH collected values are displayed
+- **AND** a countdown timer shows days, hours, minutes, seconds
+
+#### Scenario: Progress bar shows funding progress
+
+- **GIVEN** the page loads
+- **THEN** a gradient progress bar is rendered
+- **AND** soft cap and max cap labels are visible
+- **AND** a "Buy Tokens" CTA is displayed
 
 ### Whitepaper
 
-```gherkin
-Scenario: Whitepaper section shows language options
-  Given the page loads
-  Then a "Download Documentation" heading is shown
-  And 5 language buttons are visible with flag icons: English, Spanish, Russian, Arabic, Portuguese
-```
+#### Scenario: Whitepaper section shows language options
+
+- **GIVEN** the page loads
+- **THEN** a "Download Documentation" heading is shown
+- **AND** 5 language buttons are visible with flag icons: English, Spanish, Russian, Arabic, Portuguese
 
 ### Token Distribution
 
-```gherkin
-Scenario: Token distribution shows allocation breakdown
-  Given the page loads
-  Then an "Initial Distribution" pie chart with legend is displayed
-  And percentages are shown: 15% Team, 50% ICO Investors, 25% Branding, 10% Bounty
-  And a "Token Sales Contribution" section with allocation breakdown is shown
-```
+#### Scenario: Token distribution shows allocation breakdown
+
+- **GIVEN** the page loads
+- **THEN** an "Initial Distribution" pie chart with legend is displayed
+- **AND** percentages are shown: 15% Team, 50% ICO Investors, 25% Branding, 10% Bounty
+- **AND** a "Token Sales Contribution" section with allocation breakdown is shown
 
 ### Roadmap
 
-```gherkin
-Scenario: Roadmap timeline renders milestones
-  Given the page loads
-  Then a "Development Roadmap" heading is shown
-  And at least 4 timeline milestones are displayed
-  And each milestone has a date, title, and description
-```
+#### Scenario: Roadmap timeline renders milestones
+
+- **GIVEN** the page loads
+- **THEN** a "Development Roadmap" heading is shown
+- **AND** at least 4 timeline milestones are displayed
+- **AND** each milestone has a date, title, and description
 
 ### Team
 
-```gherkin
-Scenario: Team section shows member cards
-  Given the page loads
-  Then 4 team member cards are displayed
-  And each card has a photo, name, role, and social links (LinkedIn, Dribbble, Twitter)
-```
+#### Scenario: Team section shows member cards
+
+- **GIVEN** the page loads
+- **THEN** 4 team member cards are displayed
+- **AND** each card has a photo, name, role, and social links (LinkedIn, Dribbble, Twitter)
 
 ### Mobile App
 
-```gherkin
-Scenario: App section shows download options
-  Given the page loads
-  Then a "Track from Anywhere" heading is displayed
-  And Google Play and Apple App Store buttons are visible
-  And a phone mockup image is displayed
-```
+#### Scenario: App section shows download options
+
+- **GIVEN** the page loads
+- **THEN** a "Track from Anywhere" heading is displayed
+- **AND** Google Play and Apple App Store buttons are visible
+- **AND** a phone mockup image is displayed
 
 ### FAQ
 
-```gherkin
-Scenario: FAQ section displays tabbed questions
-  Given the page loads
-  Then 4 FAQ tabs are visible: General Questions, ICO, Token, Cryptocurrency
-  And the General Questions tab is active by default
-  And FAQ items show questions with "Read more" links
+#### Scenario: FAQ section displays tabbed questions
 
-Scenario: Clicking a FAQ tab switches content
-  Given the FAQ section is visible
-  When the user clicks the "Token" tab
-  Then the token FAQ items are displayed
-```
+- **GIVEN** the page loads
+- **THEN** 4 FAQ tabs are visible: General Questions, ICO, Token, Cryptocurrency
+- **AND** the General Questions tab is active by default
+- **AND** FAQ items show questions with "Read more" links
+
+#### Scenario: Clicking a FAQ tab switches content
+
+- **GIVEN** the FAQ section is visible
+- **WHEN** the user clicks the "Token" tab
+- **THEN** the token FAQ items are displayed
 
 ### Community
 
-```gherkin
-Scenario: Community social icons render
-  Given the page loads
-  Then a "Our Community" heading is displayed
-  And social media icons are shown in a grid layout
-  And icons include equivalents for Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr
-```
+#### Scenario: Community social icons render
+
+- **GIVEN** the page loads
+- **THEN** a "Our Community" heading is displayed
+- **AND** social media icons are shown in a grid layout
+- **AND** icons include equivalents for Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr
 
 ### Footer
 
-```gherkin
-Scenario: Footer renders with links and newsletter
-  Given the page loads
-  Then the footer shows logo and description
-  And nav link columns are displayed
-  And a newsletter subscription form with email input and GO button is visible
-  And a "Component Dock" link is present in the footer
-```
+#### Scenario: Footer renders with links and newsletter
+
+- **GIVEN** the page loads
+- **THEN** the footer shows logo and description
+- **AND** nav link columns are displayed
+- **AND** a newsletter subscription form with email input and GO button is visible
+- **AND** a "Component Dock" link is present in the footer
 
 ## Verification checklist
 

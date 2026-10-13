@@ -78,85 +78,98 @@ Recreation of ColorLib **Robust** — a fitness/gym template with dark overlays,
 12. **Footer** — 4-column: About (description + social icons), Quick Links (check-icon list), Recent Posts (3 mini blog cards), Contact Info (address, phone, email, website).
 13. **Copyright** — Centered text, Colorlib attribution → replace with ComponentDock.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Fortitude Gym/Fitness Template
 
-  Scenario: Hero slider displays 4 motivational slides
-    Given the user loads the homepage
-    Then a hero slider with at least 4 slides is visible
-    And each slide shows a motivational headline
-    And a "Join Classes" button is present on each slide
+#### Scenario: Hero slider displays 4 motivational slides
 
-  Scenario: Intro section shows 3 program cards with pricing
-    Given the user scrolls to the Intro section
-    Then 3 program cards are displayed: Body Building, Yoga Program, Aerobics Classes
-    And each card shows a background image, title, description, and price "$25.00 /month"
+- **GIVEN** the user loads the homepage
+- **THEN** a hero slider with at least 4 slides is visible
+- **AND** each slide shows a motivational headline
+- **AND** a "Join Classes" button is present on each slide
 
-  Scenario: Services section shows 4 service types
-    Given the user scrolls to the Services section
-    Then a heading "Being fit is attractive" is visible
-    And 4 service cards are shown: Cardio Program, Body Building, Karate Classes, Boxing Program
-    And each card has an icon, title, and description
+#### Scenario: Intro section shows 3 program cards with pricing
 
-  Scenario: Schedule section has weekly class timetable
-    Given the user scrolls to the Schedule section
-    Then a heading "Our Class Schedule" is visible
-    And a 7-day week tab bar (Sunday–Saturday) is present
-    And class entries show icon, time, class name, and trainer name
+- **GIVEN** the user scrolls to the Intro section
+- **THEN** 3 program cards are displayed: Body Building, Yoga Program, Aerobics Classes
+- **AND** each card shows a background image, title, description, and price "$25.00 /month"
 
-  Scenario: Testimonials carousel shows success stories
-    Given the user scrolls to the Testimonials section
-    Then a heading "What People Says" / "Success Stories" is visible
-    And a carousel with at least 3 testimonials is displayed
-    And each testimonial shows a quote, author name, and circular photo
+#### Scenario: Services section shows 4 service types
 
-  Scenario: Trainers section shows 4 trainers
-    Given the user scrolls to the Trainers section
-    Then a heading "Our Experienced Trainers" is visible
-    And 4 trainer cards are displayed with photos and names
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a heading "Being fit is attractive" is visible
+- **AND** 4 service cards are shown: Cardio Program, Body Building, Karate Classes, Boxing Program
+- **AND** each card has an icon, title, and description
 
-  Scenario: Classes section shows 3 class cards with pricing
-    Given the user scrolls to the Classes section
-    Then 3 class cards are shown: Fitness Gym & Cardio, Strength Training, Yoga Program
-    And each card has an image, price overlay, title, description, and "Learn More" link
+#### Scenario: Schedule section has weekly class timetable
 
-  Scenario: Events section shows upcoming events
-    Given the user scrolls to the Events section
-    Then a heading "Upcoming Events" is visible
-    And 3 event cards are displayed with date, organizer, title, and location
+- **GIVEN** the user scrolls to the Schedule section
+- **THEN** a heading "Our Class Schedule" is visible
+- **AND** a 7-day week tab bar (Sunday–Saturday) is present
+- **AND** class entries show icon, time, class name, and trainer name
 
-  Scenario: Blog section shows recent posts
-    Given the user scrolls to the Blog section
-    Then a heading "Recent Blog" is visible
-    And 3 blog cards are displayed with image, date, author, title, and excerpt
+#### Scenario: Testimonials carousel shows success stories
 
-  Scenario: Newsletter subscription form works
-    Given the user scrolls to the Newsletter section
-    Then a heading "Subscribe Newsletter" is visible
-    And an email input field is present
-    And a "Subscribe Now" button is present
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a heading "What People Says" / "Success Stories" is visible
+- **AND** a carousel with at least 3 testimonials is displayed
+- **AND** each testimonial shows a quote, author name, and circular photo
 
-  Scenario: Footer contains 4 widget columns
-    Given the user scrolls to the footer
-    Then an "About" column with description and social icons is visible
-    And a "Quick Links" column with check-icon list is visible
-    And a "Recent Post" column with 3 mini blog cards is visible
-    And a "Contact Info" column with address, phone, email is visible
+#### Scenario: Trainers section shows 4 trainers
 
-  Scenario: Navigation header with dropdown works
-    Given the user loads the homepage
-    Then the navbar shows links: Home, Classes, Schedule, Trainers, Events, Blog, Contact
-    And a CTA pill button with gradient is present
-    And the Classes link has a dropdown with sub-items
+- **GIVEN** the user scrolls to the Trainers section
+- **THEN** a heading "Our Experienced Trainers" is visible
+- **AND** 4 trainer cards are displayed with photos and names
 
-  Scenario: Design tokens match reference
-    Given any section renders
-    Then the primary brand color is #DC2F2F
-    And the accent color is #9870FC
-    And headings use Poppins font family
-    And body text uses Poppins font family
-    And CTA pill has a red-to-purple gradient with full border-radius
+#### Scenario: Classes section shows 3 class cards with pricing
+
+- **GIVEN** the user scrolls to the Classes section
+- **THEN** 3 class cards are shown: Fitness Gym & Cardio, Strength Training, Yoga Program
+- **AND** each card has an image, price overlay, title, description, and "Learn More" link
+
+#### Scenario: Events section shows upcoming events
+
+- **GIVEN** the user scrolls to the Events section
+- **THEN** a heading "Upcoming Events" is visible
+- **AND** 3 event cards are displayed with date, organizer, title, and location
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a heading "Recent Blog" is visible
+- **AND** 3 blog cards are displayed with image, date, author, title, and excerpt
+
+#### Scenario: Newsletter subscription form works
+
+- **GIVEN** the user scrolls to the Newsletter section
+- **THEN** a heading "Subscribe Newsletter" is visible
+- **AND** an email input field is present
+- **AND** a "Subscribe Now" button is present
+
+#### Scenario: Footer contains 4 widget columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** an "About" column with description and social icons is visible
+- **AND** a "Quick Links" column with check-icon list is visible
+- **AND** a "Recent Post" column with 3 mini blog cards is visible
+- **AND** a "Contact Info" column with address, phone, email is visible
+
+#### Scenario: Navigation header with dropdown works
+
+- **GIVEN** the user loads the homepage
+- **THEN** the navbar shows links: Home, Classes, Schedule, Trainers, Events, Blog, Contact
+- **AND** a CTA pill button with gradient is present
+- **AND** the Classes link has a dropdown with sub-items
+
+#### Scenario: Design tokens match reference
+
+- **GIVEN** any section renders
+- **THEN** the primary brand color is #DC2F2F
+- **AND** the accent color is #9870FC
+- **AND** headings use Poppins font family
+- **AND** body text uses Poppins font family
+- **AND** CTA pill has a red-to-purple gradient with full border-radius
 
 ## Verification Checklist
 

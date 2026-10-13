@@ -114,72 +114,81 @@ exists). Source slug + preview URL are recorded below.
    Support (links), About Us (links + download button + social icons).
    Copyright line at bottom.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Surge template behaviour
+
 Feature: Surge business website template
-  As a visitor
-  I want to browse a professional business website
-  So that I can learn about the company and its services
+As a visitor
+I want to browse a professional business website
+So that I can learn about the company and its services
 
-  Scenario: Navbar displays correctly
-    Given I am on the Surge homepage
-    Then I see the logo "Surge" in the navbar
-    And I see navigation links: Home, About, Services, Gallery, Blog, Contact
-    And the navbar is transparent on desktop
-    And the navbar has a blue background on mobile
+#### Scenario: Navbar displays correctly
 
-  Scenario: Hero section renders with video play button
-    Given I am on the Surge homepage
-    Then I see a full-viewport hero with a background image
-    And I see the heading "Design a better website template."
-    And I see a "Free Download" CTA button
-    And I see a circular play button on the right side
+- **GIVEN** I am on the Surge homepage
+- **THEN** I see the logo "Surge" in the navbar
+- **AND** I see navigation links: Home, About, Services, Gallery, Blog, Contact
+- **AND** the navbar is transparent on desktop
+- **AND** the navbar has a blue background on mobile
 
-  Scenario: Overlapping feature card appears
-    Given I scroll past the hero section
-    Then I see a white card overlapping the hero
-    And the card contains 3 feature blocks: Intuitive Thinking, Orange for Carrots, Infinite Posibilities
-    And each feature block has an icon, heading, and paragraph
+#### Scenario: Hero section renders with video play button
 
-  Scenario: Content section displays correctly
-    Given I scroll to the content section
-    Then I see the heading "Good Design is a Good Start"
-    And I see a two-column text layout
-    And I see a full-width image carousel below
+- **GIVEN** I am on the Surge homepage
+- **THEN** I see a full-viewport hero with a background image
+- **AND** I see the heading "Design a better website template."
+- **AND** I see a "Free Download" CTA button
+- **AND** I see a circular play button on the right side
 
-  Scenario: Services grid shows 6 features
-    Given I scroll to the services section
-    Then I see 6 feature cards in a 3-column grid
-    And the section has a light gray background
-    And I see a "More Features" CTA button
+#### Scenario: Overlapping feature card appears
 
-  Scenario: Portfolio thumbnails display correctly
-    Given I scroll to the portfolio section
-    Then I see 4 portfolio items in a 2x2 asymmetric grid
-    And each item has a background image with dark overlay
-    And hovering reveals the heading and category text
+- **GIVEN** I scroll past the hero section
+- **THEN** I see a white card overlapping the hero
+- **AND** the card contains 3 feature blocks: Intuitive Thinking, Orange for Carrots, Infinite Posibilities
+- **AND** each feature block has an icon, heading, and paragraph
 
-  Scenario: Counter stats animate on scroll
-    Given I scroll to the counter section
-    Then I see 3 stats on a blue background
-    And the stats show: 99399 Lines of Codes, 99 Projects, 124 Clients
-    And the numbers animate from 0 to their target values
+#### Scenario: Content section displays correctly
 
-  Scenario: Testimonials carousel works
-    Given I scroll to the testimonials section
-    Then I see a large quote mark decoration
-    And I see a carousel with testimonial blockquotes
-    And I can navigate between testimonials
+- **GIVEN** I scroll to the content section
+- **THEN** I see the heading "Good Design is a Good Start"
+- **AND** I see a two-column text layout
+- **AND** I see a full-width image carousel below
 
-  Scenario: Footer renders correctly
-    Given I scroll to the footer
-    Then I see a light gray footer with 4 columns
-    And I see About, Learn More, Support, and About Us sections
-    And I see social media icons
-    And I see a "Download for free" button
-    And I see a copyright line linking to Component Dock
-```
+#### Scenario: Services grid shows 6 features
+
+- **GIVEN** I scroll to the services section
+- **THEN** I see 6 feature cards in a 3-column grid
+- **AND** the section has a light gray background
+- **AND** I see a "More Features" CTA button
+
+#### Scenario: Portfolio thumbnails display correctly
+
+- **GIVEN** I scroll to the portfolio section
+- **THEN** I see 4 portfolio items in a 2x2 asymmetric grid
+- **AND** each item has a background image with dark overlay
+- **AND** hovering reveals the heading and category text
+
+#### Scenario: Counter stats animate on scroll
+
+- **GIVEN** I scroll to the counter section
+- **THEN** I see 3 stats on a blue background
+- **AND** the stats show: 99399 Lines of Codes, 99 Projects, 124 Clients
+- **AND** the numbers animate from 0 to their target values
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** I scroll to the testimonials section
+- **THEN** I see a large quote mark decoration
+- **AND** I see a carousel with testimonial blockquotes
+- **AND** I can navigate between testimonials
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a light gray footer with 4 columns
+- **AND** I see About, Learn More, Support, and About Us sections
+- **AND** I see social media icons
+- **AND** I see a "Download for free" button
+- **AND** I see a copyright line linking to Component Dock
 
 ## Verification checklist
 

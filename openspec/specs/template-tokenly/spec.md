@@ -61,233 +61,232 @@ Extracted from the live preview CSS (`style.css`):
 - Community section: masonry-style grid of social media icons (Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr)
 - Footer: logo, nav links, newsletter subscribe form with gradient "GO" button
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header navigation
+### Feature: Tokenly template behaviour
 
-```gherkin
+#### Scenario: Header navigation
+
 Feature: Header
 
-  Scenario: Navbar displays logo and navigation links
-    Given the page loads
-    Then I see the Tokenly logo on the left
-    And I see nav links: Home, About, White Paper, Token Sale, Roadmap, Team, App, FAQ, Contact
-    And a "login" gradient button appears on the right
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Sticky header on scroll
-    Given I scroll past the hero section
-    Then the header background changes from transparent to dark navy (#000D47)
-    And the header remains fixed at the top of the viewport
+- **GIVEN** the page loads
+- **THEN** I see the Tokenly logo on the left
+- **AND** I see nav links: Home, About, White Paper, Token Sale, Roadmap, Team, App, FAQ, Contact
+- **AND** a "login" gradient button appears on the right
 
-  Scenario: Dropdown menu on hover
-    Given I hover over a nav item with a dropdown (e.g. Home)
-    Then a dropdown menu appears below the link
-    And the dropdown has background #001763 with white text
-```
+#### Scenario: Sticky header on scroll
 
-### Scenario: Hero / Welcome section
+- **GIVEN** I scroll past the hero section
+- **THEN** the header background changes from transparent to dark navy (#000D47)
+- **AND** the header remains fixed at the top of the viewport
 
-```gherkin
+#### Scenario: Dropdown menu on hover
+
+- **GIVEN** I hover over a nav item with a dropdown (e.g. Home)
+- **THEN** a dropdown menu appears below the link
+- **AND** the dropdown has background #001763 with white text
+
+#### Scenario: Hero / Welcome section
+
 Feature: Hero
 
-  Scenario: Hero displays headline and CTAs
-    Given the page loads
-    Then I see the headline "Fast Growing ICO Agency for Blockchain Investors and Founders"
-    And I see subtext describing the platform
-    And I see two gradient buttons: "Register for the ICO" and "Download Whitepaper"
-    And a crypto illustration appears on the right side
+#### Scenario: Hero displays headline and CTAs
 
-  Scenario: Particle animation in background
-    Given the page loads
-    Then a particle.js animation is visible behind the hero content
-```
+- **GIVEN** the page loads
+- **THEN** I see the headline "Fast Growing ICO Agency for Blockchain Investors and Founders"
+- **AND** I see subtext describing the platform
+- **AND** I see two gradient buttons: "Register for the ICO" and "Download Whitepaper"
+- **AND** a crypto illustration appears on the right side
 
-### Scenario: Featured logos carousel
+#### Scenario: Particle animation in background
 
-```gherkin
+- **GIVEN** the page loads
+- **THEN** a particle.js animation is visible behind the hero content
+
+#### Scenario: Featured logos carousel
+
 Feature: Featured Logos
 
-  Scenario: Partner logos are displayed
-    Given I scroll to the "We are featured in" section
-    Then I see a horizontal carousel of partner logos
-    And the carousel auto-plays or responds to navigation
-```
+#### Scenario: Partner logos are displayed
 
-### Scenario: About section
+- **GIVEN** I scroll to the "We are featured in" section
+- **THEN** I see a horizontal carousel of partner logos
+- **AND** the carousel auto-plays or responds to navigation
 
-```gherkin
+#### Scenario: About section
+
 Feature: About
 
-  Scenario: About section shows platform description
-    Given I scroll to the about section
-    Then I see a heading "A Platform for Exchange Cryptocurrency and shares"
-    And I see descriptive paragraph text
-    And I see a gradient "join us on telegraph" button with a send icon
-    And an illustration appears on the left side
-```
+#### Scenario: About section shows platform description
 
-### Scenario: Feature cards
+- **GIVEN** I scroll to the about section
+- **THEN** I see a heading "A Platform for Exchange Cryptocurrency and shares"
+- **AND** I see descriptive paragraph text
+- **AND** I see a gradient "join us on telegraph" button with a send icon
+- **AND** an illustration appears on the left side
 
-```gherkin
+#### Scenario: Feature cards
+
 Feature: Feature Cards
 
-  Scenario: Three feature cards are displayed
-    Given I scroll to the feature cards section
-    Then I see 3 cards in a row
-    And each card has an icon, title, and description
-    And the cards have background #1938a2
+#### Scenario: Three feature cards are displayed
 
-  Scenario: Feature card hover effect
-    Given I hover over a feature card
-    Then the card lifts up 5px (translateY(-5px))
-    And the background darkens to #122e91
-```
+- **GIVEN** I scroll to the feature cards section
+- **THEN** I see 3 cards in a row
+- **AND** each card has an icon, title, and description
+- **AND** the cards have background #1938a2
 
-### Scenario: ICO Live section
+#### Scenario: Feature card hover effect
 
-```gherkin
+- **GIVEN** I hover over a feature card
+- **THEN** the card lifts up 5px (translateY(-5px))
+- **AND** the background darkens to #122e91
+
+#### Scenario: ICO Live section
+
 Feature: ICO Live
 
-  Scenario: ICO section displays token sale info
-    Given I scroll to the ICO section
-    Then I see "ICO Live Now" heading
-    And I see token sale stats (tokens sold, ETH rate, bonus)
-    And I see ETH/BTC/LTC collected amounts
-    And I see a countdown timer (days, hours, minutes, seconds)
+#### Scenario: ICO section displays token sale info
 
-  Scenario: Progress bar shows funding progress
-    Given I scroll to the ICO section
-    Then I see a progress bar at approximately 80% filled
-    And the filled portion uses a gradient (gold to orange)
-    And I see "Soft Cap" on the left and "Max Cap" on the right
-    And I see a "Buy Tokens" gradient button
-```
+- **GIVEN** I scroll to the ICO section
+- **THEN** I see "ICO Live Now" heading
+- **AND** I see token sale stats (tokens sold, ETH rate, bonus)
+- **AND** I see ETH/BTC/LTC collected amounts
+- **AND** I see a countdown timer (days, hours, minutes, seconds)
 
-### Scenario: White Paper / Documentation
+#### Scenario: Progress bar shows funding progress
 
-```gherkin
+- **GIVEN** I scroll to the ICO section
+- **THEN** I see a progress bar at approximately 80% filled
+- **AND** the filled portion uses a gradient (gold to orange)
+- **AND** I see "Soft Cap" on the left and "Max Cap" on the right
+- **AND** I see a "Buy Tokens" gradient button
+
+#### Scenario: White Paper / Documentation
+
 Feature: Documentation
 
-  Scenario: Documentation downloads are available
-    Given I scroll to the White Paper section
-    Then I see "Download Documentation" heading
-    And I see 5 language options with flag icons: English, Spanish, Russian, Arabic, Portuguese
-    And each language is a clickable download button
-```
+#### Scenario: Documentation downloads are available
 
-### Scenario: Token Distribution
+- **GIVEN** I scroll to the White Paper section
+- **THEN** I see "Download Documentation" heading
+- **AND** I see 5 language options with flag icons: English, Spanish, Russian, Arabic, Portuguese
+- **AND** each language is a clickable download button
 
-```gherkin
+#### Scenario: Token Distribution
+
 Feature: Token Distribution
 
-  Scenario: Token distribution chart is displayed
-    Given I scroll to the Token Distribution section
-    Then I see "Token Distribution" heading
-    And I see a pie chart illustration with legend
-    And the legend shows: 50% ICO Investors, 25% Branding & Marketing, 15% Build Up Team, 10% Bounty
+#### Scenario: Token distribution chart is displayed
 
-  Scenario: Token Sales Contribution chart is displayed
-    Given I scroll further in the distribution section
-    Then I see "Token Sales Contribution" heading
-    And I see a second pie chart with: 40% HR & Development, 30% Branding & Marketing, 20% Possible Buyout, 10% Legal Advisory
-```
+- **GIVEN** I scroll to the Token Distribution section
+- **THEN** I see "Token Distribution" heading
+- **AND** I see a pie chart illustration with legend
+- **AND** the legend shows: 50% ICO Investors, 25% Branding & Marketing, 15% Build Up Team, 10% Bounty
 
-### Scenario: Roadmap
+#### Scenario: Token Sales Contribution chart is displayed
 
-```gherkin
+- **GIVEN** I scroll further in the distribution section
+- **THEN** I see "Token Sales Contribution" heading
+- **AND** I see a second pie chart with: 40% HR & Development, 30% Branding & Marketing, 20% Possible Buyout, 10% Legal Advisory
+
+#### Scenario: Roadmap
+
 Feature: Roadmap
 
-  Scenario: Development roadmap timeline is displayed
-    Given I scroll to the Roadmap section
-    Then I see "Development Roadmap" heading
-    And I see a horizontal carousel of timeline milestones
-    And each milestone has a date, title, and description
-    And milestones alternate between left-aligned and right-aligned layouts
-```
+#### Scenario: Development roadmap timeline is displayed
 
-### Scenario: Team section
+- **GIVEN** I scroll to the Roadmap section
+- **THEN** I see "Development Roadmap" heading
+- **AND** I see a horizontal carousel of timeline milestones
+- **AND** each milestone has a date, title, and description
+- **AND** milestones alternate between left-aligned and right-aligned layouts
 
-```gherkin
+#### Scenario: Team section
+
 Feature: Team
 
-  Scenario: Core team members are displayed
-    Given I scroll to the Team section
-    Then I see "Our Superman" heading for core team
-    And I see 4 team members in a row, each with photo, name, and role
+#### Scenario: Core team members are displayed
 
-  Scenario: Advisory team members are displayed
-    Given I scroll past the core team
-    Then I see "Advisory Board" heading
-    And I see 4 advisory members in a row, each with photo, name, and role
+- **GIVEN** I scroll to the Team section
+- **THEN** I see "Our Superman" heading for core team
+- **AND** I see 4 team members in a row, each with photo, name, and role
 
-  Scenario: Team member social links
-    Given I view a team member card
-    Then I see 3 social icons: LinkedIn, Dribbble, Twitter
-```
+#### Scenario: Advisory team members are displayed
 
-### Scenario: Mobile App section
+- **GIVEN** I scroll past the core team
+- **THEN** I see "Advisory Board" heading
+- **AND** I see 4 advisory members in a row, each with photo, name, and role
 
-```gherkin
+#### Scenario: Team member social links
+
+- **GIVEN** I view a team member card
+- **THEN** I see 3 social icons: LinkedIn, Dribbble, Twitter
+
+#### Scenario: Mobile App section
+
 Feature: Mobile App
 
-  Scenario: App promotion section is displayed
-    Given I scroll to the App section
-    Then I see "Track from Anywhere" heading
-    And I see descriptive text about the mobile app
-    And I see two buttons: "Google Playstore" and "Apple Appstore"
-    And I see a phone mockup image on the right
-```
+#### Scenario: App promotion section is displayed
 
-### Scenario: FAQ section
+- **GIVEN** I scroll to the App section
+- **THEN** I see "Track from Anywhere" heading
+- **AND** I see descriptive text about the mobile app
+- **AND** I see two buttons: "Google Playstore" and "Apple Appstore"
+- **AND** I see a phone mockup image on the right
 
-```gherkin
+#### Scenario: FAQ section
+
 Feature: FAQ
 
-  Scenario: FAQ tabs are displayed
-    Given I scroll to the FAQ section
-    Then I see "Frequently Asked Questions" heading
-    And I see 4 tab buttons: General Questions, ICO, Token, Cryptocurrency
-    And "General Questions" is active by default
+#### Scenario: FAQ tabs are displayed
 
-  Scenario: FAQ content carousel
-    Given I view the active FAQ tab
-    Then I see a carousel of FAQ cards
-    And each card has a question title, description, and "readmore" link
+- **GIVEN** I scroll to the FAQ section
+- **THEN** I see "Frequently Asked Questions" heading
+- **AND** I see 4 tab buttons: General Questions, ICO, Token, Cryptocurrency
+- **AND** "General Questions" is active by default
 
-  Scenario: Switching FAQ tabs
-    Given I click a different FAQ tab (e.g. "Token")
-    Then the carousel content updates to show that tab's FAQ items
-```
+#### Scenario: FAQ content carousel
 
-### Scenario: Community section
+- **GIVEN** I view the active FAQ tab
+- **THEN** I see a carousel of FAQ cards
+- **AND** each card has a question title, description, and "readmore" link
 
-```gherkin
+#### Scenario: Switching FAQ tabs
+
+- **GIVEN** I click a different FAQ tab (e.g. "Token")
+- **THEN** the carousel content updates to show that tab's FAQ items
+
+#### Scenario: Community section
+
 Feature: Community
 
-  Scenario: Social media grid is displayed
-    Given I scroll to the Community section
-    Then I see "Our Community" heading
-    And I see social media icons in a masonry-style grid
-    And the icons include: Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr
-    And icons have different sizes (some larger, some smaller)
-```
+#### Scenario: Social media grid is displayed
 
-### Scenario: Footer
+- **GIVEN** I scroll to the Community section
+- **THEN** I see "Our Community" heading
+- **AND** I see social media icons in a masonry-style grid
+- **AND** the icons include: Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr
+- **AND** icons have different sizes (some larger, some smaller)
 
-```gherkin
+#### Scenario: Footer
+
 Feature: Footer
 
-  Scenario: Footer displays logo, links, and newsletter
-    Given I scroll to the footer
-    Then I see the Tokenly logo and description
-    And I see two columns of navigation links
-    And I see a newsletter subscribe form with email input and "GO" gradient button
-    And I see a Component Dock attribution link
+#### Scenario: Footer displays logo, links, and newsletter
 
-  Scenario: Footer link hover
-    Given I hover over a footer link
-    Then the link text transitions to white with a 0.3s animation
-```
+- **GIVEN** I scroll to the footer
+- **THEN** I see the Tokenly logo and description
+- **AND** I see two columns of navigation links
+- **AND** I see a newsletter subscribe form with email input and "GO" gradient button
+- **AND** I see a Component Dock attribution link
+
+#### Scenario: Footer link hover
+
+- **GIVEN** I hover over a footer link
+- **THEN** the link text transitions to white with a 0.3s animation
 
 ## Verification checklist
 

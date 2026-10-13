@@ -20,45 +20,45 @@ A professional dark-themed legal, investigative, and security consulting website
 
 ---
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Advocate Legal & Professional Template
 
 #### Scenario: User views the hero banner
 
-- **Given** the user visits the Advocate homepage
-- **When** the page loads
-- **Then** a fullscreen hero banner appears with heading "Meet all your investigative and litigation needs", dark overlay, and primary call-to-action buttons.
+- **GIVEN** the user visits the Advocate homepage
+- **WHEN** the page loads
+- **THEN** a fullscreen hero banner appears with heading "Meet all your investigative and litigation needs", dark overlay, and primary call-to-action buttons
 
 #### Scenario: User inspects About section
 
-- **Given** the user scrolls to the About section
-- **When** the section is in view
-- **Then** it displays "I'm Jon Campbell", professional profile copy, and styled images.
+- **GIVEN** the user scrolls to the About section
+- **WHEN** the section is in view
+- **THEN** it displays "I'm Jon Campbell", professional profile copy, and styled images
 
 #### Scenario: User explores Practice Areas
 
-- **Given** the user views the Practice Area numbered cards section
-- **When** examining the cards (Asset Searches, Background Investigations, Business Due Diligence, etc.)
-- **Then** each card displays a sequential index number (01, 02, etc.), clear title, and hover interaction arrow.
+- **GIVEN** the user views the Practice Area numbered cards section
+- **WHEN** examining the cards (Asset Searches, Background Investigations, Business Due Diligence, etc.)
+- **THEN** each card displays a sequential index number (01, 02, etc.), clear title, and hover interaction arrow
 
 #### Scenario: User navigates Services Tabs
 
-- **Given** the user interacts with the Services tabs section
-- **When** clicking different tabs (Investigative Services, Security Consultations, Criminal Defense Investigations)
-- **Then** the corresponding tab content updates dynamically with description and visual elements.
+- **GIVEN** the user interacts with the Services tabs section
+- **WHEN** clicking different tabs (Investigative Services, Security Consultations, Criminal Defense Investigations)
+- **THEN** the corresponding tab content updates dynamically with description and visual elements
 
 #### Scenario: User reads Testimonials
 
-- **Given** the user views the Testimonials section
-- **When** browsing client feedback
-- **Then** testimonial avatars, author titles, and quote blocks are displayed cleanly.
+- **GIVEN** the user views the Testimonials section
+- **WHEN** browsing client feedback
+- **THEN** testimonial avatars, author titles, and quote blocks are displayed cleanly
 
 #### Scenario: User reviews Footer attribution
 
-- **Given** the user reaches the footer of the page
-- **When** checking attribution links
-- **Then** it displays "Made with Component Dock" linking to `https://www.componentdock.com/`.
+- **GIVEN** the user reaches the footer of the page
+- **WHEN** checking attribution links
+- **THEN** it displays "Made with Component Dock" linking to `https://www.componentdock.com/`
 
 ---
 

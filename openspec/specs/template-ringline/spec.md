@@ -41,133 +41,140 @@ Name: **Ringline** (`apps/ringline`, package `@free-react-templates/ringline`).
 9. **Contact** — "If you need, Just drop us a line". Contact form (name, email, subject, message) + Google Maps embed placeholder. White bg.
 10. **Footer** — 4-column: About Us, Contact Us, Newsletter (email input + "Subscribe" button), social icons. Dark #222 bg. Footer bottom: copyright + social links strip.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Sticky navbar with logo and navigation links
-  Given the user loads the Ringline page
-  Then a navigation bar is visible at the top
-  And the logo reads "Ringline" (or equivalent branding)
-  And links for Home, Feature, We Offer, About, and Contact are present
-  And the navbar is sticky (stays on scroll)
 
-Scenario: Navbar links navigate to sections
-  Given the user clicks "Feature" in the navbar
-  Then the page scrolls to the Features section
-```
+#### Scenario: Sticky navbar with logo and navigation links
+
+- **GIVEN** the user loads the Ringline page
+- **THEN** a navigation bar is visible at the top
+- **AND** the logo reads "Ringline" (or equivalent branding)
+- **AND** links for Home, Feature, We Offer, About, and Contact are present
+- **AND** the navbar is sticky (stays on scroll)
+
+#### Scenario: Navbar links navigate to sections
+
+- **GIVEN** the user clicks "Feature" in the navbar
+- **THEN** the page scrolls to the Features section
 
 ### Banner / Hero
-```gherkin
-Scenario: Hero section displays with split layout
-  Given the user views the page
-  Then a hero section is visible
-  And it contains a subtitle "Discover the Colorful World"
-  And an h1 heading "Efficiency Booster"
-  And body text describing the service
-  And a "Discover Now" CTA button with blue rounded-pill style
 
-Scenario: Hero image area shows call center visual
-  Given the user views the hero section
-  Then an image area is visible on the left side
-  And it uses a placeholder call-center-themed image from picsum
-```
+#### Scenario: Hero section displays with split layout
+
+- **GIVEN** the user views the page
+- **THEN** a hero section is visible
+- **AND** it contains a subtitle "Discover the Colorful World"
+- **AND** an h1 heading "Efficiency Booster"
+- **AND** body text describing the service
+- **AND** a "Discover Now" CTA button with blue rounded-pill style
+
+#### Scenario: Hero image area shows call center visual
+
+- **GIVEN** the user views the hero section
+- **THEN** an image area is visible on the left side
+- **AND** it uses a placeholder call-center-themed image from picsum
 
 ### Features
-```gherkin
-Scenario: Three feature cards in a row
-  Given the user scrolls to the Features section
-  Then 3 feature cards are displayed side by side
-  And each card has an icon, a title, and a description
-  And the titles are "Online Support", "24/7 Round the Clock", "Handling All Issues"
 
-Scenario: Feature section has light background
-  Given the user views the Features section
-  Then the background color is #f9f9ff
-```
+#### Scenario: Three feature cards in a row
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** 3 feature cards are displayed side by side
+- **AND** each card has an icon, a title, and a description
+- **AND** the titles are "Online Support", "24/7 Round the Clock", "Handling All Issues"
+
+#### Scenario: Feature section has light background
+
+- **GIVEN** the user views the Features section
+- **THEN** the background color is #f9f9ff
 
 ### Testimonials (Carousel)
-```gherkin
-Scenario: Testimonial carousel with multiple items
-  Given the user scrolls to the Testimonials section
-  Then at least 2 testimonial items are visible
-  And each has an avatar image, name heading, and quote text
-  And navigation dots or arrows allow cycling through items
-```
+
+#### Scenario: Testimonial carousel with multiple items
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** at least 2 testimonial items are visible
+- **AND** each has an avatar image, name heading, and quote text
+- **AND** navigation dots or arrows allow cycling through items
 
 ### Services
-```gherkin
-Scenario: Six service cards in grid layout
-  Given the user scrolls to the Services section
-  Then 6 service cards are displayed in a 3-column grid
-  And each card has an icon, title, and description
-  And the section heading reads "Our Offered Services"
 
-Scenario: Services section has light background
-  Given the user views the Services section
-  Then the background color is #f9f9ff
-```
+#### Scenario: Six service cards in grid layout
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service cards are displayed in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the section heading reads "Our Offered Services"
+
+#### Scenario: Services section has light background
+
+- **GIVEN** the user views the Services section
+- **THEN** the background color is #f9f9ff
 
 ### Stats / Counters
-```gherkin
-Scenario: Animated counter strip
-  Given the user scrolls to the Stats section
-  Then 4 counter items are displayed in a row
-  And each shows a number with a label
-  And the numbers animate (count up) on scroll into view
-  And the section has a dark/contrasting background
 
-Scenario: Counter items show expected labels
-  Given the user views the Stats section
-  Then labels include "Happy Clients", "Projects", "Cups Coffee", "Active Clients"
-```
+#### Scenario: Animated counter strip
+
+- **GIVEN** the user scrolls to the Stats section
+- **THEN** 4 counter items are displayed in a row
+- **AND** each shows a number with a label
+- **AND** the numbers animate (count up) on scroll into view
+- **AND** the section has a dark/contrasting background
+
+#### Scenario: Counter items show expected labels
+
+- **GIVEN** the user views the Stats section
+- **THEN** labels include "Happy Clients", "Projects", "Cups Coffee", "Active Clients"
 
 ### Why Choose Us
-```gherkin
-Scenario: Why Choose Us section with skill bars
-  Given the user scrolls to the "Why Choose Us" section
-  Then a heading "Some Awesomeness that should share" is visible
-  And at least 2 testimonial slides are present
-  And skill bars display with percentage values and labels
-  And skill bar labels include "Expert Technicians", "Professional Service"
-```
+
+#### Scenario: Why Choose Us section with skill bars
+
+- **GIVEN** the user scrolls to the "Why Choose Us" section
+- **THEN** a heading "Some Awesomeness that should share" is visible
+- **AND** at least 2 testimonial slides are present
+- **AND** skill bars display with percentage values and labels
+- **AND** skill bar labels include "Expert Technicians", "Professional Service"
 
 ### About / CTA Split
-```gherkin
-Scenario: About section with split layout
-  Given the user scrolls to the About section
-  Then a two-column layout is displayed
-  And the left column has a heading "Responsible Customer Support"
-  And the right column has heading text about interior architecture
-  And a decorative blue brush-stroke visual is present
-```
+
+#### Scenario: About section with split layout
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a two-column layout is displayed
+- **AND** the left column has a heading "Responsible Customer Support"
+- **AND** the right column has heading text about interior architecture
+- **AND** a decorative blue brush-stroke visual is present
 
 ### Contact
-```gherkin
-Scenario: Contact form with fields
-  Given the user scrolls to the Contact section
-  Then a heading "If you need, Just drop us a line" is visible
-  And a form with Name, Email, Subject, and Message fields is present
-  And a submit button is present
 
-Scenario: Contact form validation
-  Given the user submits the contact form with empty fields
-  Then validation errors appear for required fields
-```
+#### Scenario: Contact form with fields
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a heading "If you need, Just drop us a line" is visible
+- **AND** a form with Name, Email, Subject, and Message fields is present
+- **AND** a submit button is present
+
+#### Scenario: Contact form validation
+
+- **GIVEN** the user submits the contact form with empty fields
+- **THEN** validation errors appear for required fields
 
 ### Footer
-```gherkin
-Scenario: Footer with columns and newsletter
-  Given the user scrolls to the footer
-  Then 4 columns are visible: About Us, Contact Us, Newsletter, Social
-  And the Newsletter column has an email input and Subscribe button
-  And the footer background is dark (#222)
 
-Scenario: Footer links to Component Dock
-  Given the user inspects the footer
-  Then a link to "https://www.componentdock.com/" is present
-  And it is labeled "Component Dock"
-```
+#### Scenario: Footer with columns and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are visible: About Us, Contact Us, Newsletter, Social
+- **AND** the Newsletter column has an email input and Subscribe button
+- **AND** the footer background is dark (#222)
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user inspects the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** it is labeled "Component Dock"
 
 ## Verification checklist
 

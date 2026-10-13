@@ -17,7 +17,7 @@ Recreation of ColorLib **Bootstrap Accordion V05** (`https://colorlib.com/wp/tem
   - Header styling with distinct icons (Manage, Location, Hobbies)
   - Clean lists inside each accordion section with item indicators
 
-## Gherkin requirements & scenarios
+## Requirements
 
 ### Feature: Pleats Accordion Showcase
 
@@ -25,21 +25,21 @@ As a user visiting the Pleats interactive accordion component showcase, I want t
 
 #### Scenario: View accordion sections
 
-- Given the user loads the Pleats application
-- Then the main heading "Pleats Showcase" (or Accordion #05 equivalent) should be visible
-- And three primary sections ("Manage", "Location", "Hobbies") should be displayed as accordion cards
+- **GIVEN** the user loads the Pleats application
+- **THEN** the main heading "Pleats Showcase" (or Accordion #05 equivalent) should be visible
+- **AND** three primary sections ("Manage", "Location", "Hobbies") should be displayed as accordion cards
 
 #### Scenario: Expand and collapse accordion sections
 
-- Given the "Manage" section is initially expanded showing account, settings, and profile links
-- When the user clicks on the "Location" section header
-- Then the "Location" section expands to show its content
-- And the "Manage" section collapses
+- **GIVEN** the "Manage" section is initially expanded showing account, settings, and profile links
+- **WHEN** the user clicks on the "Location" section header
+- **THEN** the "Location" section expands to show its content
+- **AND** the "Manage" section collapses
 
 #### Scenario: Footer attribution
 
-- Given the user scrolls to the bottom of the page
-- Then a footer should display copyright and a link to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer should display copyright and a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification checklist
 

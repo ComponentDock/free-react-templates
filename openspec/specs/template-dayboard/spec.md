@@ -18,7 +18,7 @@ A modern, interactive scheduling and date picker calendar application built with
   5. Schedule / Event Details sidebar or panel for managing daily appointments.
   6. Footer featuring the Component Dock attribution (`https://www.componentdock.com/`).
 
-## Requirements & Scenarios (Gherkin)
+## Requirements
 
 ### Feature: Interactive Date Selection & Calendar Grid
 
@@ -26,15 +26,15 @@ As a user, I want to select years, months, and days to view and manage my calend
 
 #### Scenario: Selecting Year, Month, and Day
 
-- **Given** the Dayboard calendar is loaded
-- **When** I select year "2026", month "09", and day "28" from the selector columns
-- **Then** the calendar grid updates to highlight September 28, 2026, showing scheduled events for that date.
+- **GIVEN** the Dayboard calendar is loaded
+- **WHEN** I select year "2026", month "09", and day "28" from the selector columns
+- **THEN** the calendar grid updates to highlight September 28, 2026, showing scheduled events for that date
 
 #### Scenario: Navigating Calendar Months
 
-- **Given** the calendar is currently displaying August 2026
-- **When** I click the "Next Month" button
-- **Then** the view transitions to September 2026 with correct day alignment.
+- **GIVEN** the calendar is currently displaying August 2026
+- **WHEN** I click the "Next Month" button
+- **THEN** the view transitions to September 2026 with correct day alignment
 
 ### Feature: Schedule & Event Management
 
@@ -42,15 +42,15 @@ As a user, I want to view, add, and filter daily scheduled items.
 
 #### Scenario: Viewing Daily Events
 
-- **Given** I have selected a date with scheduled appointments
-- **When** I look at the event list panel
-- **Then** I see the time, title, category, and status of each appointment.
+- **GIVEN** I have selected a date with scheduled appointments
+- **WHEN** I look at the event list panel
+- **THEN** I see the time, title, category, and status of each appointment
 
 #### Scenario: Adding a New Event
 
-- **Given** I am viewing the daily schedule
-- **When** I click "New Event", fill in title "Team Sync" at 10:00 AM, and save
-- **Then** the new event appears in the schedule list and updates the calendar indicator.
+- **GIVEN** I am viewing the daily schedule
+- **WHEN** I click "New Event", fill in title "Team Sync" at 10:00 AM, and save
+- **THEN** the new event appears in the schedule list and updates the calendar indicator
 
 ## Verification Checklist
 

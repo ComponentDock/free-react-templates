@@ -35,67 +35,77 @@ Recreation of ColorLib "Carrentals" template.
 8. **CTA** — "What are you waiting for?" heading, short text, button; bg-primary (#0779e4) full-width
 9. **Footer** — 4-column layout (About Us, Quick Links, Resources, Support, Company), dark bg
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: CruiseCraft template behaviour
+
 Feature: CruiseCraft car rental template
 
-  Background:
-    Given the user opens the CruiseCraft template
+Background:
+- **GIVEN** the user opens the CruiseCraft template
 
-  Scenario: Navbar renders correctly
-    Then the navbar contains the logo
-    And the navbar contains 6 navigation links
-    And the navbar is sticky/fixed on scroll
-    And a mobile hamburger menu exists
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays
-    Then a hero banner with background image is visible
-    And the hero contains a heading about car rental
-    And a trip form with pickup/dropoff fields is rendered
+- **THEN** the navbar contains the logo
+- **AND** the navbar contains 6 navigation links
+- **AND** the navbar is sticky/fixed on scroll
+- **AND** a mobile hamburger menu exists
 
-  Scenario: Trip form has required fields
-    Then a pickup location field is present
-    And a dropoff location field is present
-    And a pickup date picker is present
-    And a dropoff date picker is present
-    And a submit/CTA button is present
+#### Scenario: Hero section displays
 
-  Scenario: How It Works section displays
-    Then 3 numbered steps are shown in a row
-    And each step has an icon and title
-    And the step titles are "Select a car", "Fill up form", "Payment"
+- **THEN** a hero banner with background image is visible
+- **AND** the hero contains a heading about car rental
+- **AND** a trip form with pickup/dropoff fields is rendered
 
-  Scenario: Promo banner section displays
-    Then a promotional banner is visible with descriptive text
-    And the section uses a light background
+#### Scenario: Trip form has required fields
 
-  Scenario: Car Listings section displays
-    Then 6 car cards are shown in a 2-column grid
-    And each card shows an image, name, price, and description
-    And each card has a "Details" action button
+- **THEN** a pickup location field is present
+- **AND** a dropoff location field is present
+- **AND** a pickup date picker is present
+- **AND** a dropoff date picker is present
+- **AND** a submit/CTA button is present
 
-  Scenario: Features section displays
-    Then a "Features" heading is visible
-    And 6 feature items are shown in a 2-column grid
-    And each feature has an icon, title, and description
+#### Scenario: How It Works section displays
 
-  Scenario: Testimonials section displays
-    Then a "Testimonials" heading is visible
-    And 3 testimonial cards are shown
-    And each testimonial has a quote, name, and role
-    And the section uses a light background
+- **THEN** 3 numbered steps are shown in a row
+- **AND** each step has an icon and title
+- **AND** the step titles are "Select a car", "Fill up form", "Payment"
 
-  Scenario: CTA section displays
-    Then a "What are you waiting for?" heading is visible
-    And a call-to-action button is present
-    And the section uses the brand blue background
+#### Scenario: Promo banner section displays
 
-  Scenario: Footer renders correctly
-    Then the footer has 4+ columns with link groups
-    And the footer contains a Component Dock link
-    And the footer has a dark background
-```
+- **THEN** a promotional banner is visible with descriptive text
+- **AND** the section uses a light background
+
+#### Scenario: Car Listings section displays
+
+- **THEN** 6 car cards are shown in a 2-column grid
+- **AND** each card shows an image, name, price, and description
+- **AND** each card has a "Details" action button
+
+#### Scenario: Features section displays
+
+- **THEN** a "Features" heading is visible
+- **AND** 6 feature items are shown in a 2-column grid
+- **AND** each feature has an icon, title, and description
+
+#### Scenario: Testimonials section displays
+
+- **THEN** a "Testimonials" heading is visible
+- **AND** 3 testimonial cards are shown
+- **AND** each testimonial has a quote, name, and role
+- **AND** the section uses a light background
+
+#### Scenario: CTA section displays
+
+- **THEN** a "What are you waiting for?" heading is visible
+- **AND** a call-to-action button is present
+- **AND** the section uses the brand blue background
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer has 4+ columns with link groups
+- **AND** the footer contains a Component Dock link
+- **AND** the footer has a dark background
 
 ## Verification checklist
 

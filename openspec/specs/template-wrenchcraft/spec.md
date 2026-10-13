@@ -42,99 +42,114 @@ Extracted from the live preview CSS (`css/style.css`) and inline `<style>`:
 11. **Projects Gallery** — White background. "Projects" subtitle + "Done Projects" heading. Full-width 4-column image grid with overlay labels (category + title). Lightbox expand icon on hover.
 12. **Footer** — Dark background. 4-column layout: Logo + description + social icons, Services list, Contact information (address, phone, email), Business Hours. Copyright bar at bottom with Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: WrenchCraft Template
 
 #### Scenario: Navbar renders with correct links and CTA
-- **Given** the user visits the WrenchCraft homepage
-- **Then** the navbar displays the "WrenchCraft." logo
-- **And** navigation links include: Home, About, Services, Projects, Blog, Contact
-- **And** a "Book an appointment" primary button is visible
+
+- **GIVEN** the user visits the WrenchCraft homepage
+- **THEN** the navbar displays the "WrenchCraft." logo
+- **AND** navigation links include: Home, About, Services, Projects, Blog, Contact
+- **AND** a "Book an appointment" primary button is visible
 
 #### Scenario: Hero slider displays slides with CTA
-- **Given** the hero section is rendered
-- **Then** at least 2 slides are displayed with background images
-- **And** each slide shows a subtitle, headline, and primary CTA button
-- **And** slides auto-advance or respond to navigation controls
+
+- **GIVEN** the hero section is rendered
+- **THEN** at least 2 slides are displayed with background images
+- **AND** each slide shows a subtitle, headline, and primary CTA button
+- **AND** slides auto-advance or respond to navigation controls
 
 #### Scenario: Intro CTA bar is visible
-- **Given** the hero section is visible
-- **Then** a blue background CTA bar appears below the hero
-- **And** it shows a heading with "repair" messaging
-- **And** a "Book an Appointment" button is present
+
+- **GIVEN** the hero section is visible
+- **THEN** a blue background CTA bar appears below the hero
+- **AND** it shows a heading with "repair" messaging
+- **AND** a "Book an Appointment" button is present
 
 #### Scenario: Services section shows 6 service cards
-- **Given** the services section is rendered
-- **Then** the heading "Our car services" is displayed
-- **And** 6 service cards are shown in a 3-column grid
-- **And** each card has an icon, title, description, and "Read more" link
-- **And** services include: Oil Change, Tire Change, Batteries, Engine Repair, Tow Truck, Car Maintenance
+
+- **GIVEN** the services section is rendered
+- **THEN** the heading "Our car services" is displayed
+- **AND** 6 service cards are shown in a 3-column grid
+- **AND** each card has an icon, title, description, and "Read more" link
+- **AND** services include: Oil Change, Tire Change, Batteries, Engine Repair, Tow Truck, Car Maintenance
 
 #### Scenario: About section with tabs
-- **Given** the about section is rendered
-- **Then** a video thumbnail area with play button is shown on the left
-- **And** the right side shows "Welcome to WrenchCraft" heading
-- **And** 3 tabs are present: Our Mission, Our Vision, Our Value
-- **And** clicking each tab reveals its content
+
+- **GIVEN** the about section is rendered
+- **THEN** a video thumbnail area with play button is shown on the left
+- **AND** the right side shows "Welcome to WrenchCraft" heading
+- **AND** 3 tabs are present: Our Mission, Our Vision, Our Value
+- **AND** clicking each tab reveals its content
 
 #### Scenario: Statistics counter section
-- **Given** the counter section is rendered
-- **Then** 4 statistics are displayed in a row
-- **And** values include: 45 (Years), 8500 (Projects), 2342 (Customers), 30 (Awards)
+
+- **GIVEN** the counter section is rendered
+- **THEN** 4 statistics are displayed in a row
+- **AND** values include: 45 (Years), 8500 (Projects), 2342 (Customers), 30 (Awards)
 
 #### Scenario: Appointment form submission
-- **Given** the appointment section is rendered
-- **Then** a form with fields is displayed: service select, name, vehicle number, date, time, message
-- **And** a "Send message" button submits the form
-- **And** the section has a dark background image with overlay
+
+- **GIVEN** the appointment section is rendered
+- **THEN** a form with fields is displayed: service select, name, vehicle number, date, time, message
+- **AND** a "Send message" button submits the form
+- **AND** the section has a dark background image with overlay
 
 #### Scenario: Testimonials carousel
-- **Given** the testimonials section is rendered
-- **Then** a carousel of testimonial cards is displayed
-- **And** each card shows a quote icon, testimonial text, avatar, name, and position
+
+- **GIVEN** the testimonials section is rendered
+- **THEN** a carousel of testimonial cards is displayed
+- **AND** each card shows a quote icon, testimonial text, avatar, name, and position
 
 #### Scenario: Blog section shows 3 articles
-- **Given** the blog section is rendered
-- **Then** the heading "Latest news from our blog" is displayed
-- **And** 3 blog cards are shown in a 3-column grid
-- **And** each card has an image, author info, and article title
+
+- **GIVEN** the blog section is rendered
+- **THEN** the heading "Latest news from our blog" is displayed
+- **AND** 3 blog cards are shown in a 3-column grid
+- **AND** each card has an image, author info, and article title
 
 #### Scenario: Pricing section shows 4 plans
-- **Given** the pricing section is rendered
-- **Then** the heading "Pricing" is displayed
-- **And** 4 pricing cards are shown
-- **And** each card shows a service name, price, description, and "Get Started" button
+
+- **GIVEN** the pricing section is rendered
+- **THEN** the heading "Pricing" is displayed
+- **AND** 4 pricing cards are shown
+- **AND** each card shows a service name, price, description, and "Get Started" button
 
 #### Scenario: Projects gallery grid
-- **Given** the projects section is rendered
-- **Then** the heading "Done Projects" is displayed
-- **And** a 4-column image grid is shown
-- **And** each image has a category label and title overlay
+
+- **GIVEN** the projects section is rendered
+- **THEN** the heading "Done Projects" is displayed
+- **AND** a 4-column image grid is shown
+- **AND** each image has a category label and title overlay
 
 #### Scenario: Footer with all columns
-- **Given** the footer is rendered
-- **Then** 4 footer columns are present: brand info + social links, services list, contact information, business hours
-- **And** a copyright line includes a link to Component Dock (https://www.componentdock.com/)
+
+- **GIVEN** the footer is rendered
+- **THEN** 4 footer columns are present: brand info + social links, services list, contact information, business hours
+- **AND** a copyright line includes a link to Component Dock (https://www.componentdock.com/)
 
 #### Scenario: Responsive layout
-- **Given** the user views the template on a mobile viewport
-- **Then** the navbar collapses into a hamburger menu
-- **And** service cards stack vertically
-- **And** the about section stacks vertically (image above text)
-- **And** pricing cards stack vertically
-- **And** blog cards stack vertically
-- **And** footer columns stack vertically
+
+- **GIVEN** the user views the template on a mobile viewport
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** service cards stack vertically
+- **AND** the about section stacks vertically (image above text)
+- **AND** pricing cards stack vertically
+- **AND** blog cards stack vertically
+- **AND** footer columns stack vertically
 
 #### Scenario: No ColorLib references in app code
-- **Given** the template is built
-- **Then** no `apps/wrenchcraft/` file contains "colorlib" or "preview.colorlib.com"
-- **And** provenance is only in the spec and TEMPLATES.md
+
+- **GIVEN** the template is built
+- **THEN** no `apps/wrenchcraft/` file contains "colorlib" or "preview.colorlib.com"
+- **AND** provenance is only in the spec and TEMPLATES.md
 
 #### Scenario: Footer links to Component Dock
-- **Given** the footer is rendered
-- **Then** a link to https://www.componentdock.com/ is present
-- **And** it is branded as "Component Dock"
+
+- **GIVEN** the footer is rendered
+- **THEN** a link to https://www.componentdock.com/ is present
+- **AND** it is branded as "Component Dock"
 
 ## Verification Checklist
 

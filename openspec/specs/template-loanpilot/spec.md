@@ -60,98 +60,109 @@ Sections extracted from `https://preview.colorlib.com/theme/loanday/` (top to bo
 - Blog section with author avatars.
 - Overall: modern, trustworthy financial services feel.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Loanpilot Template
 
 #### Scenario: Navbar renders with logo and navigation links
-- Given the user visits the Loanpilot homepage
-- When the page loads
-- Then a sticky navbar is visible with the logo "Loanpilot." (green dot accent)
-- And navigation links: Home, About, Services, Blog, Pages (dropdown), Contact
-- And a search icon is visible
-- And mobile hamburger menu appears on small screens
+
+- **GIVEN** the user visits the Loanpilot homepage
+- **WHEN** the page loads
+- **THEN** a sticky navbar is visible with the logo "Loanpilot." (green dot accent)
+- **AND** navigation links: Home, About, Services, Blog, Pages (dropdown), Contact
+- **AND** a search icon is visible
+- **AND** mobile hamburger menu appears on small screens
 
 #### Scenario: Hero section displays headline and loan form
-- Given the user is on the homepage
-- When the hero section loads
-- Then a full-width banner with background image is displayed
-- And the headline "Find The Best Monthly Payment" is visible
-- And a subtitle about business loans is shown
-- And two green CTA buttons ("Get Started", "How It Works") are visible
-- And a loan calculator form is displayed on the right with fields: Amount, Days, Repayment, Name, Phone
-- And the form has a green submit button
+
+- **GIVEN** the user is on the homepage
+- **WHEN** the hero section loads
+- **THEN** a full-width banner with background image is displayed
+- **AND** the headline "Find The Best Monthly Payment" is visible
+- **AND** a subtitle about business loans is shown
+- **AND** two green CTA buttons ("Get Started", "How It Works") are visible
+- **AND** a loan calculator form is displayed on the right with fields: Amount, Days, Repayment, Name, Phone
+- **AND** the form has a green submit button
 
 #### Scenario: Home About section shows company trust message
-- Given the user scrolls to the About section
-- When the section is visible
-- Then "Thousands Of Customers Trust Our Company" heading is displayed
-- And a description paragraph is shown
-- And two sub-items ("Our Company", "Our Vision") are displayed in a 2-column grid
-- And a green "Learn More" CTA button is visible
-- And an image is shown on the right side
+
+- **GIVEN** the user scrolls to the About section
+- **WHEN** the section is visible
+- **THEN** "Thousands Of Customers Trust Our Company" heading is displayed
+- **AND** a description paragraph is shown
+- **AND** two sub-items ("Our Company", "Our Vision") are displayed in a 2-column grid
+- **AND** a green "Learn More" CTA button is visible
+- **AND** an image is shown on the right side
 
 #### Scenario: Loan Services section displays 4 loan types
-- Given the user scrolls to the Loan Services section
-- When the section is visible
-- Then "Discover all the loans for you" heading is displayed
-- And 4 loan type cards are shown in a full-width grid
-- And each card has a background image with text overlay
-- And the loan types are: Personal Loan (01.), Business Loan (02.), Education Loan (03.), Commercial Loan (04.)
-- And each card has a "Find Out More" link
+
+- **GIVEN** the user scrolls to the Loan Services section
+- **WHEN** the section is visible
+- **THEN** "Discover all the loans for you" heading is displayed
+- **AND** 4 loan type cards are shown in a full-width grid
+- **AND** each card has a background image with text overlay
+- **AND** the loan types are: Personal Loan (01.), Business Loan (02.), Education Loan (03.), Commercial Loan (04.)
+- **AND** each card has a "Find Out More" link
 
 #### Scenario: Choose section shows 6 feature cards
-- Given the user scrolls to the Choose section
-- When the section is visible
-- Then "Why People Choose Us" heading is displayed
-- And 6 feature cards are shown in a 3-column grid
-- And each card has an icon, title, and description
-- And the features are: Quick & Easy, Absolute Security, Quick Approval, Low Interest Rates, Customer Support, Transparent Process
+
+- **GIVEN** the user scrolls to the Choose section
+- **WHEN** the section is visible
+- **THEN** "Why People Choose Us" heading is displayed
+- **AND** 6 feature cards are shown in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the features are: Quick & Easy, Absolute Security, Quick Approval, Low Interest Rates, Customer Support, Transparent Process
 
 #### Scenario: Testimonial section shows customer reviews
-- Given the user scrolls to the Testimonial section
-- When the section is visible
-- Then a dark background section with background image is displayed
-- And "What Customers Are Saying" heading is shown
-- And a carousel with 3 testimonial cards is displayed
-- And each card has a customer photo, name, role, and quote text
+
+- **GIVEN** the user scrolls to the Testimonial section
+- **WHEN** the section is visible
+- **THEN** a dark background section with background image is displayed
+- **AND** "What Customers Are Saying" heading is shown
+- **AND** a carousel with 3 testimonial cards is displayed
+- **AND** each card has a customer photo, name, role, and quote text
 
 #### Scenario: Counter section displays statistics
-- Given the user scrolls to the Counter section
-- When the section is visible
-- Then 4 stat items are shown in a row
-- And each stat has an icon, number, and label
-- And the stats are: 2100 (Successful Loan Approval), 99% (Customer Satisfaction), 90+ (Office National Partners), 70+ (Team Members)
+
+- **GIVEN** the user scrolls to the Counter section
+- **WHEN** the section is visible
+- **THEN** 4 stat items are shown in a row
+- **AND** each stat has an icon, number, and label
+- **AND** the stats are: 2100 (Successful Loan Approval), 99% (Customer Satisfaction), 90+ (Office National Partners), 70+ (Team Members)
 
 #### Scenario: Call/CTA section encourages action
-- Given the user scrolls to the Call section
-- When the section is visible
-- Then a full-width background image with dark overlay is displayed
-- And a CTA heading and description are shown
-- And a green CTA button is visible
+
+- **GIVEN** the user scrolls to the Call section
+- **WHEN** the section is visible
+- **THEN** a full-width background image with dark overlay is displayed
+- **AND** a CTA heading and description are shown
+- **AND** a green CTA button is visible
 
 #### Scenario: Blog section shows latest posts
-- Given the user scrolls to the Blog section
-- When the section is visible
-- Then "Latest Post" heading is displayed
-- And 3 blog post cards are shown in a row
-- And each card has a title, excerpt, and author info (photo + name + date)
+
+- **GIVEN** the user scrolls to the Blog section
+- **WHEN** the section is visible
+- **THEN** "Latest Post" heading is displayed
+- **AND** 3 blog post cards are shown in a row
+- **AND** each card has a title, excerpt, and author info (photo + name + date)
 
 #### Scenario: Contact widget shows office locations
-- Given the user scrolls to the Contact widget section
-- When the section is visible
-- Then a background image with dark overlay is displayed
-- And two office addresses are shown (New York, New Jersey)
-- And a "Contact Us Now!" phone number is displayed on the right
+
+- **GIVEN** the user scrolls to the Contact widget section
+- **WHEN** the section is visible
+- **THEN** a background image with dark overlay is displayed
+- **AND** two office addresses are shown (New York, New Jersey)
+- **AND** a "Contact Us Now!" phone number is displayed on the right
 
 #### Scenario: Footer renders with links and social icons
-- Given the user scrolls to the footer
-- When the section is visible
-- Then a dark background footer is displayed
-- And the logo is shown
-- And Quick Links, Follow Us social icons, and address info are visible
-- And a Component Dock attribution link is present
-- And copyright text is shown
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the section is visible
+- **THEN** a dark background footer is displayed
+- **AND** the logo is shown
+- **AND** Quick Links, Follow Us social icons, and address info are visible
+- **AND** a Component Dock attribution link is present
+- **AND** copyright text is shown
 
 ## Verification checklist
 

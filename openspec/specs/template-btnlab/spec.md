@@ -41,7 +41,7 @@
 
 ---
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Page Header and Hero Introduction
 
@@ -50,10 +50,10 @@
 
 #### Scenario: User loads the button showcase page
 
-- **Given** the user opens the BtnLab template
-- **When** the page loads
-- **Then** the heading "Button #03" is displayed in white text
-- **And** the page background is dark charcoal (`#222222`)
+- **GIVEN** the user opens the BtnLab template
+- **WHEN** the page loads
+- **THEN** the heading "Button #03" is displayed in white text
+- **AND** the page background is dark charcoal (`#222222`)
 
 ### Requirement 2: Default Button Variants (Solid & Outline)
 
@@ -63,17 +63,17 @@
 
 #### Scenario: User views default button grid
 
-- **Given** the user scrolls to the default buttons section
-- **When** the buttons render
-- **Then** there are buttons in primary (`#3e64ff`), secondary (`#bd83ce`), tertiary (`#8105d8`), quaternary (`#52de97`), and white variants
-- **And** each button has uppercase text, sharp corners, and a hover shadow effect
+- **GIVEN** the user scrolls to the default buttons section
+- **WHEN** the buttons render
+- **THEN** there are buttons in primary (`#3e64ff`), secondary (`#bd83ce`), tertiary (`#8105d8`), quaternary (`#52de97`), and white variants
+- **AND** each button has uppercase text, sharp corners, and a hover shadow effect
 
 #### Scenario: User hovers a default button
 
-- **Given** the user hovers over a primary default button
-- **When** the hover state activates
-- **Then** the shadow intensifies to `0px 12px 20px -6px rgba(0, 0, 0, 0.21)`
-- **And** the button color darkens slightly
+- **GIVEN** the user hovers over a primary default button
+- **WHEN** the hover state activates
+- **THEN** the shadow intensifies to `0px 12px 20px -6px rgba(0, 0, 0, 0.21)`
+- **AND** the button color darkens slightly
 
 ### Requirement 3: Default Buttons with Icons (Leading & Trailing)
 
@@ -82,10 +82,10 @@
 
 #### Scenario: User views icon buttons
 
-- **Given** the user scrolls to the icon buttons section
-- **When** the icon buttons render
-- **Then** there are buttons with icons on the left (leading) and right (trailing)
-- **And** icons are aligned correctly within each button
+- **GIVEN** the user scrolls to the icon buttons section
+- **WHEN** the icon buttons render
+- **THEN** there are buttons with icons on the left (leading) and right (trailing)
+- **AND** icons are aligned correctly within each button
 
 ### Requirement 4: Social Media Buttons
 
@@ -95,17 +95,17 @@
 
 #### Scenario: User views social button variants
 
-- **Given** the user scrolls to the social buttons section
-- **When** the social buttons render
-- **Then** there are Twitter (`#69b6f0`), Facebook (`#4f69a2`), and Dribbble (`#ea6294`) buttons
-- **And** each social button has an icon and label
+- **GIVEN** the user scrolls to the social buttons section
+- **WHEN** the social buttons render
+- **THEN** there are Twitter (`#69b6f0`), Facebook (`#4f69a2`), and Dribbble (`#ea6294`) buttons
+- **AND** each social button has an icon and label
 
 #### Scenario: User views social buttons with counts
 
-- **Given** the user views the social buttons with count badges
-- **When** the buttons render
-- **Then** buttons display labels like "SHARE - 8.2K" and "CONNECT WITH TWITTER"
-- **And** LinkedIn (`#2884ba`) and Pinterest (`#d03940`) buttons are also present
+- **GIVEN** the user views the social buttons with count badges
+- **WHEN** the buttons render
+- **THEN** buttons display labels like "SHARE - 8.2K" and "CONNECT WITH TWITTER"
+- **AND** LinkedIn (`#2884ba`) and Pinterest (`#d03940`) buttons are also present
 
 ### Requirement 5: Dropdown Buttons
 
@@ -115,10 +115,10 @@
 
 #### Scenario: User interacts with dropdown buttons
 
-- **Given** the user scrolls to the dropdown buttons section
-- **When** they click a dropdown button
-- **Then** a white dropdown menu appears with a box-shadow
-- **And** the dropdown items are `13px` font size with subtle hover states
+- **GIVEN** the user scrolls to the dropdown buttons section
+- **WHEN** they click a dropdown button
+- **THEN** a white dropdown menu appears with a box-shadow
+- **AND** the dropdown items are `13px` font size with subtle hover states
 
 ### Requirement 6: Group Buttons
 
@@ -127,10 +127,10 @@
 
 #### Scenario: User views button groups
 
-- **Given** the user scrolls to the group buttons section
-- **When** the groups render
-- **Then** there are two button groups with connected borders
-- **And** each group contains "BUTTON 1" / "BUTTON 2" and "OUTLINE BUTTON"
+- **GIVEN** the user scrolls to the group buttons section
+- **WHEN** the groups render
+- **THEN** there are two button groups with connected borders
+- **AND** each group contains "BUTTON 1" / "BUTTON 2" and "OUTLINE BUTTON"
 
 ### Requirement 7: Custom Checkboxes
 
@@ -140,16 +140,16 @@
 
 #### Scenario: User views checkbox variants
 
-- **Given** the user scrolls to the checkboxes section
-- **When** the checkboxes render
-- **Then** there are checkbox items labeled "Primary", "Success", "Danger", "Warning", "Disabled"
-- **And** each checkbox has a custom icon-based appearance
+- **GIVEN** the user scrolls to the checkboxes section
+- **WHEN** the checkboxes render
+- **THEN** there are checkbox items labeled "Primary", "Success", "Danger", "Warning", "Disabled"
+- **AND** each checkbox has a custom icon-based appearance
 
 #### Scenario: User toggles a checkbox
 
-- **Given** the user clicks on a primary checkbox
-- **When** the checkbox is toggled
-- **Then** the checkmark color changes to primary (`#3e64ff`)
+- **GIVEN** the user clicks on a primary checkbox
+- **WHEN** the checkbox is toggled
+- **THEN** the checkmark color changes to primary (`#3e64ff`)
 
 ### Requirement 8: Custom Radio Buttons
 
@@ -159,16 +159,16 @@
 
 #### Scenario: User views radio button variants
 
-- **Given** the user scrolls to the radios buttons section
-- **When** the radio buttons render
-- **Then** there are radio items labeled "Primary", "Success", "Danger", "Warning", "Disabled"
-- **And** each radio has a custom circular appearance with colored fill when selected
+- **GIVEN** the user scrolls to the radios buttons section
+- **WHEN** the radio buttons render
+- **THEN** there are radio items labeled "Primary", "Success", "Danger", "Warning", "Disabled"
+- **AND** each radio has a custom circular appearance with colored fill when selected
 
 #### Scenario: User selects a radio button
 
-- **Given** the user clicks on a primary radio button
-- **When** the radio is selected
-- **Then** the inner dot appears in primary color (`#3e64ff`)
+- **GIVEN** the user clicks on a primary radio button
+- **WHEN** the radio is selected
+- **THEN** the inner dot appears in primary color (`#3e64ff`)
 
 ### Requirement 9: Action Buttons Row
 
@@ -177,10 +177,10 @@
 
 #### Scenario: User views action buttons
 
-- **Given** the user scrolls to the action buttons section
-- **When** the action buttons render
-- **Then** buttons for "WATCH PHOTOS", "DOWNLOAD", "ADD COMMENT", "LIKE 2", and "CREATE ACCOUNT" are visible
-- **And** some buttons include leading icons
+- **GIVEN** the user scrolls to the action buttons section
+- **WHEN** the action buttons render
+- **THEN** buttons for "WATCH PHOTOS", "DOWNLOAD", "ADD COMMENT", "LIKE 2", and "CREATE ACCOUNT" are visible
+- **AND** some buttons include leading icons
 
 ### Requirement 10: Footer with Component Dock Attribution
 
@@ -188,9 +188,9 @@
 
 #### Scenario: User checks the footer
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer renders
-- **Then** it contains the Component Dock link and copyright notice
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it contains the Component Dock link and copyright notice
 
 ---
 

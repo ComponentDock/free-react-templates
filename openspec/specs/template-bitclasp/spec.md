@@ -138,169 +138,190 @@ Recreation of ColorLib **Bitcoin** template as a React 19 + Vite + Tailwind CSS 
 - Social icon bg: #111, hover: #f78f3d
 - **Footer must link Component Dock** (https://www.componentdock.com/) — replaces ColorLib attribution
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Navigation Bar
-  Scenario: Logo displays with brand styling
-    Given the page loads
-    Then the logo text "BitClasp" is visible
-    And the logo has a left orange border
 
-  Scenario: Navigation links are present
-    Given the page loads
-    Then nav links "Home", "Convert", "Features", "Pricing", "Blog" are visible
+#### Scenario: Logo displays with brand styling
 
-  Scenario: Header scrolls with background change
-    Given the page loads
-    When the user scrolls down past the hero
-    Then the header background becomes semi-transparent dark
+- **GIVEN** the page loads
+- **THEN** the logo text "BitClasp" is visible
+- **AND** the logo has a left orange border
 
-  Scenario: Mobile menu toggle
-    Given the viewport is less than 800px wide
-    When the user clicks the hamburger toggle
-    Then the mobile navigation drawer slides in from the left
-```
+#### Scenario: Navigation links are present
+
+- **GIVEN** the page loads
+- **THEN** nav links "Home", "Convert", "Features", "Pricing", "Blog" are visible
+
+#### Scenario: Header scrolls with background change
+
+- **GIVEN** the page loads
+- **WHEN** the user scrolls down past the hero
+- **THEN** the header background becomes semi-transparent dark
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** the viewport is less than 800px wide
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the mobile navigation drawer slides in from the left
 
 ### Banner / Hero
-```gherkin
-Feature: Hero Banner
-  Scenario: Hero content is displayed
-    Given the page loads
-    Then the hero banner fills the viewport height
-    And a dark overlay covers the background image
-    And the label "Currently Purchase Rate" is visible
-    And the main headline is visible in white uppercase text
-    And the "Buy Bitcoin" button is visible
 
-  Scenario: Hero button links to convert section
-    Given the page loads
-    When the user clicks "Buy Bitcoin"
-    Then the page scrolls to the converter section
-```
+Feature: Hero Banner
+
+#### Scenario: Hero content is displayed
+
+- **GIVEN** the page loads
+- **THEN** the hero banner fills the viewport height
+- **AND** a dark overlay covers the background image
+- **AND** the label "Currently Purchase Rate" is visible
+- **AND** the main headline is visible in white uppercase text
+- **AND** the "Buy Bitcoin" button is visible
+
+#### Scenario: Hero button links to convert section
+
+- **GIVEN** the page loads
+- **WHEN** the user clicks "Buy Bitcoin"
+- **THEN** the page scrolls to the converter section
 
 ### Currency Converter
-```gherkin
-Feature: Currency Converter
-  Scenario: Converter form is visible
-    Given the page loads
-    Then the converter section overlaps the hero
-    And the heading "The Currency Converter" is visible
-    And form input fields are visible
-    And the "Calculate" button is visible
 
-  Scenario: Converter has gradient background
-    Given the page loads
-    Then the converter section has a gold-to-orange gradient background
-```
+Feature: Currency Converter
+
+#### Scenario: Converter form is visible
+
+- **GIVEN** the page loads
+- **THEN** the converter section overlaps the hero
+- **AND** the heading "The Currency Converter" is visible
+- **AND** form input fields are visible
+- **AND** the "Calculate" button is visible
+
+#### Scenario: Converter has gradient background
+
+- **GIVEN** the page loads
+- **THEN** the converter section has a gold-to-orange gradient background
 
 ### Simple Services
-```gherkin
+
 Feature: Simple Services
-  Scenario: Three service cards displayed
-    Given the page loads
-    Then three service cards are visible
-    And the cards show "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
-    And each card has an icon above its title
-```
+
+#### Scenario: Three service cards displayed
+
+- **GIVEN** the page loads
+- **THEN** three service cards are visible
+- **AND** the cards show "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
+- **AND** each card has an icon above its title
 
 ### About Us
-```gherkin
+
 Feature: About Us Section
-  Scenario: About section has dark background
-    Given the page loads
-    Then the about section has a dark (#222) background
-    And an image carousel is visible on the left
-    And white descriptive text is visible on the right
-```
+
+#### Scenario: About section has dark background
+
+- **GIVEN** the page loads
+- **THEN** the about section has a dark (#222) background
+- **AND** an image carousel is visible on the left
+- **AND** white descriptive text is visible on the right
 
 ### Features
-```gherkin
-Feature: Features Section
-  Scenario: Six feature items displayed
-    Given the page loads
-    Then the heading "Why choose us during purchase bitcoin" is visible
-    And six feature cards are displayed in a grid
-    And each card has an icon and a title
 
-  Scenario: Feature hover effect
-    Given the features section is visible
-    When the user hovers over a feature card
-    Then the feature title turns orange (#f78f3d)
-```
+Feature: Features Section
+
+#### Scenario: Six feature items displayed
+
+- **GIVEN** the page loads
+- **THEN** the heading "Why choose us during purchase bitcoin" is visible
+- **AND** six feature cards are displayed in a grid
+- **AND** each card has an icon and a title
+
+#### Scenario: Feature hover effect
+
+- **GIVEN** the features section is visible
+- **WHEN** the user hovers over a feature card
+- **THEN** the feature title turns orange (#f78f3d)
 
 ### Stats
-```gherkin
+
 Feature: Stats Section
-  Scenario: Stats section displayed
-    Given the page loads
-    Then the stats section has a light (#f9f9ff) background
-    And an image is visible on the left
-    And "Ups and Downs" heading is visible on the right
-    And a "View Details" button is visible
-```
+
+#### Scenario: Stats section displayed
+
+- **GIVEN** the page loads
+- **THEN** the stats section has a light (#f9f9ff) background
+- **AND** an image is visible on the left
+- **AND** "Ups and Downs" heading is visible on the right
+- **AND** a "View Details" button is visible
 
 ### Call to Action
-```gherkin
+
 Feature: Call to Action Banner
-  Scenario: CTA section content
-    Given the page loads
-    Then the CTA section has a gold-to-orange gradient background
-    And "Huge Transaction in last Week" heading is visible in white
-    And the "Buy Bitcoin Now!" button is visible with white background
-```
+
+#### Scenario: CTA section content
+
+- **GIVEN** the page loads
+- **THEN** the CTA section has a gold-to-orange gradient background
+- **AND** "Huge Transaction in last Week" heading is visible in white
+- **AND** the "Buy Bitcoin Now!" button is visible with white background
 
 ### Pricing
-```gherkin
-Feature: Pricing Section
-  Scenario: Three pricing cards displayed
-    Given the page loads
-    Then three pricing cards are visible
-    And each card has a title (e.g. "01 Bitcoin")
-    And each card has a "Get Started" button
 
-  Scenario: Pricing card hover effect
-    Given the pricing section is visible
-    When the user hovers over a pricing card
-    Then the button background changes to gold (#ca9814)
-```
+Feature: Pricing Section
+
+#### Scenario: Three pricing cards displayed
+
+- **GIVEN** the page loads
+- **THEN** three pricing cards are visible
+- **AND** each card has a title (e.g. "01 Bitcoin")
+- **AND** each card has a "Get Started" button
+
+#### Scenario: Pricing card hover effect
+
+- **GIVEN** the pricing section is visible
+- **WHEN** the user hovers over a pricing card
+- **THEN** the button background changes to gold (#ca9814)
 
 ### Blog
-```gherkin
-Feature: Blog Section
-  Scenario: Three blog posts displayed
-    Given the page loads
-    Then the heading "Latest Posts from our Blog" is visible
-    And three blog cards are visible
-    And each card has a thumbnail, title, and author info
 
-  Scenario: Blog post hover effect
-    Given the blog section is visible
-    When the user hovers over a blog post
-    Then the post title turns orange (#f78f3d)
-```
+Feature: Blog Section
+
+#### Scenario: Three blog posts displayed
+
+- **GIVEN** the page loads
+- **THEN** the heading "Latest Posts from our Blog" is visible
+- **AND** three blog cards are visible
+- **AND** each card has a thumbnail, title, and author info
+
+#### Scenario: Blog post hover effect
+
+- **GIVEN** the blog section is visible
+- **WHEN** the user hovers over a blog post
+- **THEN** the post title turns orange (#f78f3d)
 
 ### Footer
-```gherkin
+
 Feature: Footer
-  Scenario: Footer columns displayed
-    Given the page loads
-    Then the footer has a dark (#04091e) background
-    And an "About Us" column is visible
-    And a "Top Products" link list is visible
-    And a newsletter input with subscribe button is visible
 
-  Scenario: Footer links to Component Dock
-    Given the page loads
-    Then the footer contains a link to https://www.componentdock.com/
+#### Scenario: Footer columns displayed
 
-  Scenario: Social icons are visible
-    Given the page loads
-    Then social media icons (Facebook, Twitter, Dribbble, Behance) are visible
-    And social icons have dark background
-    And social icons turn orange on hover
-```
+- **GIVEN** the page loads
+- **THEN** the footer has a dark (#04091e) background
+- **AND** an "About Us" column is visible
+- **AND** a "Top Products" link list is visible
+- **AND** a newsletter input with subscribe button is visible
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/
+
+#### Scenario: Social icons are visible
+
+- **GIVEN** the page loads
+- **THEN** social media icons (Facebook, Twitter, Dribbble, Behance) are visible
+- **AND** social icons have dark background
+- **AND** social icons turn orange on hover
 
 ## Verification Checklist
 

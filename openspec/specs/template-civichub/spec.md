@@ -3,6 +3,12 @@
 Recreation of ColorLib "Civic" (https://colorlib.com/wp/template/civic/).
 Preview: https://preview.colorlib.com/theme/civic/
 
+## Purpose
+
+CivicHub is a CV and resume portfolio page with a work-experience timeline, education blocks, a portfolio grid and a contact form.
+
+It recreates the ColorLib **Civic** design (https://colorlib.com/wp/template/civic/, preview: https://preview.colorlib.com/theme/civic/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (extracted from css/style.css)
 
 | Token            | Value        | Usage                                        |
@@ -46,48 +52,78 @@ Preview: https://preview.colorlib.com/theme/civic/
 
 10. **Footer** — Centered copyright text with heart icon + "Component Dock" link to https://www.componentdock.com/. Background: #40424a. Text: white.
 
-## Scenarios
+## Requirements
 
 ### Header
-- GIVEN user loads the page, THEN header shows logo "CivicHub" with tagline and two CTA buttons
-- GIVEN user clicks "Download CV" button, THEN action is handled (placeholder link)
-- GIVEN user clicks "Discover me" button, THEN page scrolls to hero section
+
+#### Scenario: Header
+
+- **GIVEN** user loads the page, THEN header shows logo "CivicHub" with tagline and two CTA buttons
+- **GIVEN** user clicks "Download CV" button, THEN action is handled (placeholder link)
+- **GIVEN** user clicks "Discover me" button, THEN page scrolls to hero section
 
 ### Hero
-- GIVEN user loads the page, THEN hero shows name, bio, and general info list
-- GIVEN user loads the page, THEN hero shows portrait photo on the right
+
+#### Scenario: Hero
+
+- **GIVEN** user loads the page, THEN hero shows name, bio, and general info list
+- **GIVEN** user loads the page, THEN hero shows portrait photo on the right
 
 ### SocialLinks
-- GIVEN user scrolls to social section, THEN 5 social icon links are visible
-- GIVEN user hovers a social icon, THEN icon shows hover state
+
+#### Scenario: SocialLinks
+
+- **GIVEN** user scrolls to social section, THEN 5 social icon links are visible
+- **GIVEN** user hovers a social icon, THEN icon shows hover state
 
 ### WorkExperience
-- GIVEN user scrolls to work experience, THEN section title "Work Experience" is visible
-- GIVEN user views work experience, THEN 2 job entries display with year, company, role, and description
+
+#### Scenario: WorkExperience
+
+- **GIVEN** user scrolls to work experience, THEN section title "Work Experience" is visible
+- **GIVEN** user views work experience, THEN 2 job entries display with year, company, role, and description
 
 ### Education
-- GIVEN user scrolls to education, THEN section title "Education" is visible with background image
-- GIVEN user views education, THEN 2 education entries display with year, degree, school, and description
+
+#### Scenario: Education
+
+- **GIVEN** user scrolls to education, THEN section title "Education" is visible with background image
+- **GIVEN** user views education, THEN 2 education entries display with year, degree, school, and description
 
 ### References
-- GIVEN user scrolls to references, THEN section title "References" is visible
-- GIVEN user views references, THEN carousel displays 3 review cards with quote, name, and role
+
+#### Scenario: References
+
+- **GIVEN** user scrolls to references, THEN section title "References" is visible
+- **GIVEN** user views references, THEN carousel displays 3 review cards with quote, name, and role
 
 ### Portfolio
-- GIVEN user scrolls to portfolio, THEN section title and "See All Portfolio" button are visible
-- GIVEN user views portfolio, THEN 4 portfolio items display with image, title, and category
+
+#### Scenario: Portfolio
+
+- **GIVEN** user scrolls to portfolio, THEN section title and "See All Portfolio" button are visible
+- **GIVEN** user views portfolio, THEN 4 portfolio items display with image, title, and category
 
 ### ExtraSkills
-- GIVEN user scrolls to extra skills, THEN section title "Extra Skills" is visible
-- GIVEN user views extra skills, THEN 2 circular progress indicators and 2 stat boxes display
+
+#### Scenario: ExtraSkills
+
+- **GIVEN** user scrolls to extra skills, THEN section title "Extra Skills" is visible
+- **GIVEN** user views extra skills, THEN 2 circular progress indicators and 2 stat boxes display
 
 ### ContactForm
-- GIVEN user scrolls to contact, THEN form with Name, Email, Subject, Message, and Send button is visible
-- GIVEN user submits form with empty fields, THEN form does not navigate (client-side handling)
+
+#### Scenario: ContactForm
+
+- **GIVEN** user scrolls to contact, THEN form with Name, Email, Subject, Message, and Send button is visible
+- **GIVEN** user submits form with empty fields, THEN form does not navigate (client-side handling)
 
 ### Footer
-- GIVEN user scrolls to footer, THEN copyright text with "Component Dock" link is visible
-- GIVEN user clicks "Component Dock" link, THEN browser navigates to https://www.componentdock.com/
+
+#### Scenario: Footer
+
+- **GIVEN** user scrolls to footer, THEN copyright text with "Component Dock" link is visible
+- **GIVEN** user clicks "Component Dock" link, THEN browser navigates to https://www.componentdock.com/
 
 ## Verification Checklist
 

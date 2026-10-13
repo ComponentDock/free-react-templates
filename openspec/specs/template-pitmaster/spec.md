@@ -28,89 +28,101 @@ Recreation of ColorLib "Steakshop" — a steakhouse restaurant single-page websi
 | section-padding | `150px 0` (80px mobile) | Standard section gap |
 | font-size-heading | `36px–42px` | h1 in sections and banner |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with fixed sidebar layout
-- **Given** the page loads
-- **When** the user sees the navigation
-- **Then** a fixed right-side vertical sidebar nav is visible (desktop)
-- **And** a hamburger menu trigger appears on small screens (<1920px)
-- **And** nav items include: Home, About, Menu, Book Table, Chefs, Pages, Blog, Contact
-- **And** nav link text is Roboto 12px, capitalize, black (#000)
-- **And** active state shows red (#f42f2c) background
+### Feature: Pitmaster template behaviour
 
-### Scenario: Hero banner displays full-screen background with video popup
-- **Given** the page loads
-- **When** the hero section renders
-- **Then** a full-screen background image covers the viewport
-- **And** a dark overlay (rgba(0,0,0,0.2)) sits over the image
-- **And** a video play button (circular, pulsing animation) appears at bottom-left with text "Watch video"
-- **And** a white banner content card overlaps the hero bottom
+#### Scenario: Navbar renders with fixed sidebar layout
 
-### Scenario: Banner bottom card shows headline and CTA
-- **Given** the hero section is visible
-- **When** the banner bottom card renders
-- **Then** a white background card contains the top text "STEAK SHOP OFFERS BEST STEAK IN TOWN" (uppercase, letter-spacing)
-- **And** a heading h1 in Pacifico, 42px, #222222
-- **And** descriptive paragraph text in Roboto, #777777
-- **And** an "Explore Menu" primary button (border 1px solid #f42f2c, border-radius 2px, white bg, hover → red bg)
+- **GIVEN** the page loads
+- **WHEN** the user sees the navigation
+- **THEN** a fixed right-side vertical sidebar nav is visible (desktop)
+- **AND** a hamburger menu trigger appears on small screens (<1920px)
+- **AND** nav items include: Home, About, Menu, Book Table, Chefs, Pages, Blog, Contact
+- **AND** nav link text is Roboto 12px, capitalize, black (#000)
+- **AND** active state shows red (#f42f2c) background
 
-### Scenario: Breakfast section shows text and image side by side
-- **Given** the page loads
-- **When** the breakfast section renders
-- **Then** left side has heading "Daily Food Courses with Drinks" in Pacifico
-- **And** two paragraph texts in Roboto
-- **And** a "See Full Menu" primary button
-- **And** right side shows two overlapping food images (picsum placeholder)
+#### Scenario: Hero banner displays full-screen background with video popup
 
-### Scenario: Lunch section mirrors breakfast with chef attribution
-- **Given** the page loads
-- **When** the lunch section renders
-- **Then** layout is reversed (images left, text right)
-- **And** heading "Daily Food Courses with Drinks" in Pacifico
-- **And** two paragraph texts
-- **And** a chef attribution row with avatar thumbnail, name, and title
-- **And** images use overlapping layout (positioned absolute)
+- **GIVEN** the page loads
+- **WHEN** the hero section renders
+- **THEN** a full-screen background image covers the viewport
+- **AND** a dark overlay (rgba(0,0,0,0.2)) sits over the image
+- **AND** a video play button (circular, pulsing animation) appears at bottom-left with text "Watch video"
+- **AND** a white banner content card overlaps the hero bottom
 
-### Scenario: Reservation section has background image with form card
-- **Given** the page loads
-- **When** the reservation section renders
-- **Then** a background image covers the section
-- **And** a white form card with box-shadow overlays the right side
-- **And** form fields: Name, Email, Phone Number, Number of People (select), Date/Time, Event (select)
-- **And** form input borders are #eeeeee bottom border only
-- **And** a "Make Reservation" button (primary style)
-- **And** form field focus removes outline
+#### Scenario: Banner bottom card shows headline and CTA
 
-### Scenario: Chef section features a chef photo and item thumbnails
-- **Given** the page loads
-- **When** the chef section renders
-- **Then** a large chef photo appears left of center
-- **And** right side has heading, two paragraphs, and a signature image
-- **And** below, a row of 4 small food item thumbnails (hover → lightbox popup)
+- **GIVEN** the hero section is visible
+- **WHEN** the banner bottom card renders
+- **THEN** a white background card contains the top text "STEAK SHOP OFFERS BEST STEAK IN TOWN" (uppercase, letter-spacing)
+- **AND** a heading h1 in Pacifico, 42px, #222222
+- **AND** descriptive paragraph text in Roboto, #777777
+- **AND** an "Explore Menu" primary button (border 1px solid #f42f2c, border-radius 2px, white bg, hover → red bg)
 
-### Scenario: Food gallery renders as image carousel
-- **Given** the page loads
-- **When** the gallery section renders
-- **Then** a full-width carousel of food images displays
-- **And** images fill the full viewport width (fluid)
-- **And** carousel auto-scrolls (owl-carousel style)
+#### Scenario: Breakfast section shows text and image side by side
 
-### Scenario: Brands section shows partner logos in carousel
-- **Given** the page loads
-- **When** the brands section renders
-- **Then** a heading "In associasion with" centered with description text
-- **And** a carousel of partner brand logos (5 logos, horizontally scrolling)
-- **And** each logo is vertically centered in its cell
+- **GIVEN** the page loads
+- **WHEN** the breakfast section renders
+- **THEN** left side has heading "Daily Food Courses with Drinks" in Pacifico
+- **AND** two paragraph texts in Roboto
+- **AND** a "See Full Menu" primary button
+- **AND** right side shows two overlapping food images (picsum placeholder)
 
-### Scenario: Footer has dark overlay with columns
-- **Given** the page loads
-- **When** the footer renders
-- **Then** a dark overlay (#000, 75% opacity) covers a background image
-- **And** four columns: Top Products, Resources, Newsletter, and a wider Newsletter column
-- **And** newsletter has email input + arrow button
-- **And** footer bottom has copyright text and social icons (Facebook, Twitter, Dribbble, Behance)
-- **And** footer links section MUST include Component Dock attribution (per conventions)
+#### Scenario: Lunch section mirrors breakfast with chef attribution
+
+- **GIVEN** the page loads
+- **WHEN** the lunch section renders
+- **THEN** layout is reversed (images left, text right)
+- **AND** heading "Daily Food Courses with Drinks" in Pacifico
+- **AND** two paragraph texts
+- **AND** a chef attribution row with avatar thumbnail, name, and title
+- **AND** images use overlapping layout (positioned absolute)
+
+#### Scenario: Reservation section has background image with form card
+
+- **GIVEN** the page loads
+- **WHEN** the reservation section renders
+- **THEN** a background image covers the section
+- **AND** a white form card with box-shadow overlays the right side
+- **AND** form fields: Name, Email, Phone Number, Number of People (select), Date/Time, Event (select)
+- **AND** form input borders are #eeeeee bottom border only
+- **AND** a "Make Reservation" button (primary style)
+- **AND** form field focus removes outline
+
+#### Scenario: Chef section features a chef photo and item thumbnails
+
+- **GIVEN** the page loads
+- **WHEN** the chef section renders
+- **THEN** a large chef photo appears left of center
+- **AND** right side has heading, two paragraphs, and a signature image
+- **AND** below, a row of 4 small food item thumbnails (hover → lightbox popup)
+
+#### Scenario: Food gallery renders as image carousel
+
+- **GIVEN** the page loads
+- **WHEN** the gallery section renders
+- **THEN** a full-width carousel of food images displays
+- **AND** images fill the full viewport width (fluid)
+- **AND** carousel auto-scrolls (owl-carousel style)
+
+#### Scenario: Brands section shows partner logos in carousel
+
+- **GIVEN** the page loads
+- **WHEN** the brands section renders
+- **THEN** a heading "In associasion with" centered with description text
+- **AND** a carousel of partner brand logos (5 logos, horizontally scrolling)
+- **AND** each logo is vertically centered in its cell
+
+#### Scenario: Footer has dark overlay with columns
+
+- **GIVEN** the page loads
+- **WHEN** the footer renders
+- **THEN** a dark overlay (#000, 75% opacity) covers a background image
+- **AND** four columns: Top Products, Resources, Newsletter, and a wider Newsletter column
+- **AND** newsletter has email input + arrow button
+- **AND** footer bottom has copyright text and social icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** footer links section MUST include Component Dock attribution (per conventions)
 
 ## Verification Checklist
 

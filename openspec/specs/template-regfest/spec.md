@@ -42,47 +42,54 @@ Extracted from the screenshot (preview unreachable, CSS not fetchable):
 - No visible card border or shadow — the dark navy background creates contrast
   against the gradient.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Regfest — Event Registration Form
 
 #### Scenario: Full-viewport gradient background renders
-  - Given the page loads
-  - Then a full-viewport gradient background is visible transitioning from deep purple to mauve/pink
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport gradient background is visible transitioning from deep purple to mauve/pink
 
 #### Scenario: Centered two-column card layout
-  - Given the page loads
-  - Then a centered card is displayed with two columns
-  - And the left column has a dark navy background
-  - And the right column contains an image
+
+- **GIVEN** the page loads
+- **THEN** a centered card is displayed with two columns
+- **AND** the left column has a dark navy background
+- **AND** the right column contains an image
 
 #### Scenario: Form title is displayed
-  - Given the card is visible
-  - Then the title "Set The Event" is displayed in coral serif font
-  - And the title is in the left column
+
+- **GIVEN** the card is visible
+- **THEN** the title "Set The Event" is displayed in coral serif font
+- **AND** the title is in the left column
 
 #### Scenario: Form fields render correctly
-  - Given the form is visible
-  - Then a "Price" field displays "$270" as text
-  - And a "People" field renders a dropdown with default value "1"
-  - And "Name", "Mail", "Phone" text inputs are rendered with underline borders
-  - And a "Comment" textarea is rendered with an underline border
+
+- **GIVEN** the form is visible
+- **THEN** a "Price" field displays "$270" as text
+- **AND** a "People" field renders a dropdown with default value "1"
+- **AND** "Name", "Mail", "Phone" text inputs are rendered with underline borders
+- **AND** a "Comment" textarea is rendered with an underline border
 
 #### Scenario: Submit button renders
-  - Given the form is visible
-  - Then a "Send your booking" button is displayed in coral with white text
-  - And the button has slight rounded corners
+
+- **GIVEN** the form is visible
+- **THEN** a "Send your booking" button is displayed in coral with white text
+- **AND** the button has slight rounded corners
 
 #### Scenario: Contact information displays
-  - Given the right column is visible
-  - Then an event image is displayed in the right column
-  - And contact details are displayed below the image in coral text
-  - And the contact details include an address, phone number, and email
+
+- **GIVEN** the right column is visible
+- **THEN** an event image is displayed in the right column
+- **AND** contact details are displayed below the image in coral text
+- **AND** the contact details include an address, phone number, and email
 
 #### Scenario: Responsive layout stacks columns
-  - Given the viewport width is below 640px
-  - Then the two columns stack vertically
-  - And the image appears above the form
+
+- **GIVEN** the viewport width is below 640px
+- **THEN** the two columns stack vertically
+- **AND** the image appears above the form
 
 ## Verification Checklist
 

@@ -77,107 +77,121 @@ form, and testimonials. Dark overlay aesthetic with amber accent.
     - Col 5 (within col 4 row): Connect With Us — social icons (Facebook, Twitter, Instagram, YouTube)
     - Bottom: Copyright line with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Carvery Restaurant Template
 
-  Scenario: Header displays logo and navigation
-    Given the user loads the page
-    Then the header shows the "Carvery" logo on the left
-    And a hamburger menu toggle is visible on the right
-    And the navbar is transparent over the hero
+#### Scenario: Header displays logo and navigation
 
-  Scenario: Header becomes fixed on scroll
-    Given the user scrolls past the hero
-    Then the header becomes fixed at the top
-    And the background changes to white with a subtle shadow
-    And the logo text changes to black
+- **GIVEN** the user loads the page
+- **THEN** the header shows the "Carvery" logo on the left
+- **AND** a hamburger menu toggle is visible on the right
+- **AND** the navbar is transparent over the hero
 
-  Scenario: Hero section renders parallax background
-    Given the user views the hero section
-    Then a full-viewport parallax background image is displayed
-    And a dark overlay covers the image
-    And the heading "Welcome To Carvery — Food & Restaurant" is centered in white
-    And a white outline "Play Video" button is visible
-    And a mouse scroll indicator appears at the bottom
+#### Scenario: Header becomes fixed on scroll
 
-  Scenario: About section shows image and text
-    Given the user scrolls to the about section
-    Then a food image is displayed on the left with parallax offset
-    And a text block overlays the right side
-    And the heading reads "Welcome To Carvery Food & Restaurant"
-    And two descriptive paragraphs are shown
-    And a black outline "Read More" button is present
+- **GIVEN** the user scrolls past the hero
+- **THEN** the header becomes fixed at the top
+- **AND** the background changes to white with a subtle shadow
+- **AND** the logo text changes to black
 
-  Scenario: Services section displays 6 service cards
-    Given the user scrolls to the services section
-    Then the section has a light gray background
-    And the heading reads "Restaurant Services"
-    And 6 service cards are displayed in a 3-column grid
-    And each card has an icon, amber title, and gray description
+#### Scenario: Hero section renders parallax background
 
-  Scenario: Menu section shows tabbed navigation
-    Given the user scrolls to the menu section
-    Then the heading reads "Our Menu"
-    And three tabs are visible: Breakfast, Lunch, Dinner
-    And the Breakfast tab is active by default
-    And each tab shows 6 menu items in a 2-column layout
-    And each menu item has a circular thumbnail, name, description, and amber price
+- **GIVEN** the user views the hero section
+- **THEN** a full-viewport parallax background image is displayed
+- **AND** a dark overlay covers the image
+- **AND** the heading "Welcome To Carvery — Food & Restaurant" is centered in white
+- **AND** a white outline "Play Video" button is visible
+- **AND** a mouse scroll indicator appears at the bottom
 
-  Scenario: Menu tab switching works correctly
-    Given the Breakfast tab is active
-    When the user clicks the "Lunch" tab
-    Then the Lunch tab becomes active with black border
-    And the Breakfast tab reverts to gray border
-    And the lunch menu items are displayed
+#### Scenario: About section shows image and text
 
-  Scenario: Fun Facts section shows statistics
-    Given the user scrolls to the fun facts section
-    Then the section has a light gray background
-    And the heading reads "Today's Fun Facts"
-    And counter statistics are displayed with large numbers
+- **GIVEN** the user scrolls to the about section
+- **THEN** a food image is displayed on the left with parallax offset
+- **AND** a text block overlays the right side
+- **AND** the heading reads "Welcome To Carvery Food & Restaurant"
+- **AND** two descriptive paragraphs are shown
+- **AND** a black outline "Read More" button is present
 
-  Scenario: News & Events section shows blog cards
-    Given the user scrolls to the news section
-    Then the heading reads "News & Events"
-    And event/blog cards are displayed with thumbnail images
-    And cards have hover overlay effects
+#### Scenario: Services section displays 6 service cards
 
-  Scenario: Testimonials section shows reviews
-    Given the user scrolls to the testimonials section
-    Then the section has a light gray background
-    And blockquote-style testimonials are displayed
-    And each testimonial has a large quotation mark, review text, author photo, name, and position
+- **GIVEN** the user scrolls to the services section
+- **THEN** the section has a light gray background
+- **AND** the heading reads "Restaurant Services"
+- **AND** 6 service cards are displayed in a 3-column grid
+- **AND** each card has an icon, amber title, and gray description
 
-  Scenario: Reservation form is functional
-    Given the user scrolls to the reservation section
-    Then the heading reads "Reserve A Table"
-    And an opening hours panel is displayed on the left with dark background
-    And the reservation form is on the right
-    And the form has fields for Party Size, Date, Time, Name, Phone, Email
-    And a full-width black "Reserve Now" button is present
+#### Scenario: Menu section shows tabbed navigation
 
-  Scenario: Footer displays all widgets
-    Given the user scrolls to the footer
-    Then 4 widget columns are displayed
-    And the first column has "About Carvery Restaurant" with description and button
-    And Quick Links, Support, About Us, and Connect With Us columns are present
-    And social media icons are shown (Facebook, Twitter, Instagram, YouTube)
-    And the copyright line links to Component Dock
+- **GIVEN** the user scrolls to the menu section
+- **THEN** the heading reads "Our Menu"
+- **AND** three tabs are visible: Breakfast, Lunch, Dinner
+- **AND** the Breakfast tab is active by default
+- **AND** each tab shows 6 menu items in a 2-column layout
+- **AND** each menu item has a circular thumbnail, name, description, and amber price
 
-  Scenario: All buttons use sharp square style
-    Given any button is rendered on the page
-    Then the button has no border-radius (sharp corners)
-    And the text is uppercase with letter-spacing
-    And hover transitions are smooth (0.3s ease)
+#### Scenario: Menu tab switching works correctly
 
-  Scenario: Responsive layout adapts to mobile
-    Given the user views on a mobile viewport
-    Then the hamburger menu is visible
-    And service cards stack vertically
-    And menu items display in a single column
-    And the reservation form fields stack vertically
-    And the footer columns stack vertically
+- **GIVEN** the Breakfast tab is active
+- **WHEN** the user clicks the "Lunch" tab
+- **THEN** the Lunch tab becomes active with black border
+- **AND** the Breakfast tab reverts to gray border
+- **AND** the lunch menu items are displayed
+
+#### Scenario: Fun Facts section shows statistics
+
+- **GIVEN** the user scrolls to the fun facts section
+- **THEN** the section has a light gray background
+- **AND** the heading reads "Today's Fun Facts"
+- **AND** counter statistics are displayed with large numbers
+
+#### Scenario: News & Events section shows blog cards
+
+- **GIVEN** the user scrolls to the news section
+- **THEN** the heading reads "News & Events"
+- **AND** event/blog cards are displayed with thumbnail images
+- **AND** cards have hover overlay effects
+
+#### Scenario: Testimonials section shows reviews
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the section has a light gray background
+- **AND** blockquote-style testimonials are displayed
+- **AND** each testimonial has a large quotation mark, review text, author photo, name, and position
+
+#### Scenario: Reservation form is functional
+
+- **GIVEN** the user scrolls to the reservation section
+- **THEN** the heading reads "Reserve A Table"
+- **AND** an opening hours panel is displayed on the left with dark background
+- **AND** the reservation form is on the right
+- **AND** the form has fields for Party Size, Date, Time, Name, Phone, Email
+- **AND** a full-width black "Reserve Now" button is present
+
+#### Scenario: Footer displays all widgets
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 widget columns are displayed
+- **AND** the first column has "About Carvery Restaurant" with description and button
+- **AND** Quick Links, Support, About Us, and Connect With Us columns are present
+- **AND** social media icons are shown (Facebook, Twitter, Instagram, YouTube)
+- **AND** the copyright line links to Component Dock
+
+#### Scenario: All buttons use sharp square style
+
+- **GIVEN** any button is rendered on the page
+- **THEN** the button has no border-radius (sharp corners)
+- **AND** the text is uppercase with letter-spacing
+- **AND** hover transitions are smooth (0.3s ease)
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the user views on a mobile viewport
+- **THEN** the hamburger menu is visible
+- **AND** service cards stack vertically
+- **AND** menu items display in a single column
+- **AND** the reservation form fields stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

@@ -51,69 +51,77 @@ Sections in exact order as rendered:
    - Widget columns: Logo + description + social links | Services links | Useful Links | Newsletter form + subscribe button
    - Copyright bar: "Made with ❤ by Colorlib" → replace with Component Dock
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: RankPulse — SEO Agency Landing Template
 
-```gherkin
 Feature: RankPulse — SEO Agency Landing Page
-  As a visitor to an SEO agency website
-  I want to see a professional, conversion-focused landing page
-  So that I can understand the services and get in touch
+As a visitor to an SEO agency website
+I want to see a professional, conversion-focused landing page
+So that I can understand the services and get in touch
 
-  Background:
-    Given the page is loaded at the root URL
+Background:
+- **GIVEN** the page is loaded at the root URL
 
-  Scenario: Navbar renders with all navigation links
-    Then the navbar contains links for "Home", "Services", "Case Study", and "Contact"
-    And the navbar contains a phone number CTA element
-    And the navbar is sticky on scroll
+#### Scenario: Navbar renders with all navigation links
 
-  Scenario: Hero section displays headline and CTA
-    Then the hero section contains a heading about boosting business / search engine
-    And the hero section has a "Get Started" call-to-action button
-    And the hero section has a decorative illustration
+- **THEN** the navbar contains links for "Home", "Services", "Case Study", and "Contact"
+- **AND** the navbar contains a phone number CTA element
+- **AND** the navbar is sticky on scroll
 
-  Scenario: Services section shows three service cards
-    Then there are exactly 3 service cards visible
-    And each service card has an icon, title, description, and "Learn More" link
-    And the services are "SEO/SEM", "Digital Marketing", and "Social Media"
+#### Scenario: Hero section displays headline and CTA
 
-  Scenario: Company Info section has split layout
-    Then there is a company info section with heading about SEO specialization
-    And there is an "About Us" button
-    And there is an illustration on the left side
+- **THEN** the hero section contains a heading about boosting business / search engine
+- **AND** the hero section has a "Get Started" call-to-action button
+- **AND** the hero section has a decorative illustration
 
-  Scenario: Case Study carousel is interactive
-    Then there is a "Our Selected Case Study" section heading
-    And there are case study cards in a carousel
-    And each card has a thumbnail, title, and tags
+#### Scenario: Services section shows three service cards
 
-  Scenario: Accordion FAQ section is functional
-    Then there is an accordion section with expandable questions
-    And clicking a question toggles its answer visibility
+- **THEN** there are exactly 3 service cards visible
+- **AND** each service card has an icon, title, description, and "Learn More" link
+- **AND** the services are "SEO/SEM", "Digital Marketing", and "Social Media"
 
-  Scenario: Features section displays six feature cards
-    Then there are exactly 6 feature cards in a grid
-    And each feature card has an icon, title, and description
-    And the features include "Custom design" and "Email Marketing"
+#### Scenario: Company Info section has split layout
 
-  Scenario: Testimonials carousel is interactive
-    Then there is a testimonials section with a carousel
-    And each testimonial has a quote, author name, role, and circular avatar
+- **THEN** there is a company info section with heading about SEO specialization
+- **AND** there is an "About Us" button
+- **AND** there is an illustration on the left side
 
-  Scenario: Footer contains all required elements
-    Then the footer has a "Let's Start your project" CTA bar
-    And the footer has a newsletter subscription form
-    And the footer has social media links
-    And the footer has a "Component Dock" attribution link
-    And the footer contains service links and useful links columns
+#### Scenario: Case Study carousel is interactive
 
-  Scenario: Page is responsive
-    Then the navbar collapses into a mobile menu on small viewports
-    And service cards stack vertically on mobile
-    And feature cards stack vertically on mobile
-```
+- **THEN** there is a "Our Selected Case Study" section heading
+- **AND** there are case study cards in a carousel
+- **AND** each card has a thumbnail, title, and tags
+
+#### Scenario: Accordion FAQ section is functional
+
+- **THEN** there is an accordion section with expandable questions
+- **AND** clicking a question toggles its answer visibility
+
+#### Scenario: Features section displays six feature cards
+
+- **THEN** there are exactly 6 feature cards in a grid
+- **AND** each feature card has an icon, title, and description
+- **AND** the features include "Custom design" and "Email Marketing"
+
+#### Scenario: Testimonials carousel is interactive
+
+- **THEN** there is a testimonials section with a carousel
+- **AND** each testimonial has a quote, author name, role, and circular avatar
+
+#### Scenario: Footer contains all required elements
+
+- **THEN** the footer has a "Let's Start your project" CTA bar
+- **AND** the footer has a newsletter subscription form
+- **AND** the footer has social media links
+- **AND** the footer has a "Component Dock" attribution link
+- **AND** the footer contains service links and useful links columns
+
+#### Scenario: Page is responsive
+
+- **THEN** the navbar collapses into a mobile menu on small viewports
+- **AND** service cards stack vertically on mobile
+- **AND** feature cards stack vertically on mobile
 
 ## Verification Checklist
 

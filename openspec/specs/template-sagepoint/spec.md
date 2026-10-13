@@ -102,6 +102,149 @@ mandate, with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
       Colorlib attribution with "Made with Component Dock" and link to
       `https://www.componentdock.com/`.
 
+## Requirements
+
+### Feature: Header
+
+top bar (`header-top top-bg`): navy `#002d5b` background,
+     left: address + email with icons, right: social icons (LinkedIn, Twitter,
+     Facebook, Google+); bottom bar (`header-bottom header-sticky`): logo
+     image (left, 2-col), centered nav (Home, About, Services, Cases, Blog
+     dropdown, Pages dropdown), right "Contact Now" coral `.btn` CTA button.
+     Sticky with `box-shadow: 0 10px 15px rgba(25,25,25,0.1)`.
+
+#### Scenario: Header renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Header band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Hero slider
+
+(`slider-area > slider-active`): full-width background
+     image (`h1_hero.jpg`) with `min-height: 830px`, `background-size: cover`;
+     left-aligned `.hero-caption` (6-col): small p "Welcome to Buson" in
+     coral `#ff656a` uppercase 18px font-weight 300; h1 "We help you to
+     grow your business" in navy `#002d5b` uppercase 70px font-weight 900
+     line-height 1.2; `.hero-btn` "Learn More" solid coral `#ff656a` button
+     with 30px 56px padding. Slider has dot navigation. At least 2 slides
+     (identical content in the source).
+
+#### Scenario: Hero slider renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Hero slider band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Team Profile
+
+(`.team-profile.team-padding`, bg `#f6f9fe`): 3-column
+     row; first two cards are `.single-profile-front` with a team photo
+     (`team_1.jpg`, `team_2.jpg`, `overflow:hidden`, 7px border-bottom on
+     hover → coral, scale 1.1) + `.profile-caption` (h4 "Business Planning" /
+     "Financial Projections" in `#191d34` 25px weight 600, lorem ipsum p).
+     Third card is `.single-profile-back-last`: 4px solid coral border, white
+     bg, h2 "What we do for you", description text, "View profile »" link.
+
+#### Scenario: Team Profile renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Team Profile band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: We Trusted
+
+(`.we-trusted-area.trusted-padding`, top padding 200px):
+     7/5 split — left: large trusted image (`wetrusted.jpg`); right:
+     `.trusted-caption`: h2 "We are more trusted then 5000 clients", lorem p,
+     `.trusted-btn` "Learn More" coral button.
+
+#### Scenario: We Trusted renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the We Trusted band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Our Services
+
+(`.services-area.section-padding2`, top 200px): centered
+     section title h2 "Our Services"; 3-column cards (`.single-services
+     text-center mb-30`) each with icon span (`.flaticon-checklist`,
+     `.flaticon-audit`, `.flaticon-checklist-1`), h4 title ("Strategic
+     Planning", "Trades & stocks", "Audit & Assurance"), lorem p. Below: row
+     with `.border-btn` "More Services" outline button.
+
+#### Scenario: Our Services renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Our Services band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Completed Cases
+
+(`.completed-cases.section-padding3`, bg `#f6f9fe`):
+     4/8 split; left: `.single-cases-info` h3 "Completed Cases", lorem p,
+     `.border-btn.border-btn2` "See more" outline button; right: Owl Carousel
+     (`.completed-active.owl-carousel`) of case cards (`.single-cases-img`)
+     each with case image + overlay caption (h4 "Marketing Strategy", p
+     description, span tag "Advisory"). Carousel with prev/next arrows.
+
+#### Scenario: Completed Cases renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Completed Cases band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Testimonials
+
+(`.testimonial-area.fix`, white bg): centered layout
+     (9-col); testimonial icon image (animated with `.ani-btn`), quote text
+     in italic centered, 5-star rating (`.fas.fa-star` × 5 in coral),
+     author "Clifford Frazier" with "- Colorlib Themes" suffix. Carousel with
+     at least 2 identical slides.
+
+#### Scenario: Testimonials renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Testimonials band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Our Recent News
+
+(`.recent-area.section-paddingt`): centered section
+     title h2 "Our Recent News"; 3-column blog cards (`.single-recent-cap`):
+     each with image (`rcent_1/2/3.png`), category tag (`<span>` e.g.
+     "Business planing", "Audit"), h4 post title ("Amazing Places To Visit In
+     Summer"), date p ("Nov 30, 2020").
+
+#### Scenario: Our Recent News renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Our Recent News band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Request for Call Back
+
+(`.request-back-area.section-padding30`): 4/7
+     split; left: `.request-content` h3 "Request for Call Back" + lorem p;
+     right: `.form-wrapper` contact form with 2-col first row (Name input,
+     Phone input), 8-col select dropdown "Services" with 3 options, 4-col
+     "Send" button (`.send-btn`, coral, 5px radius, full-width).
+
+#### Scenario: Request for Call Back renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Request for Call Back band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Footer
+
+(`.footer-area.footer-padding`): 4-column layout — left:
+      footer logo image + short description paragraph + 4 social icons
+      (Facebook, Twitter, LinkedIn, Pinterest); col 2: "Company" links
+      (Home, About Us, Services, Cases, Contact Us); col 3: "Services" links
+      (Commercial Cleaning, Office Cleaning, etc.); col 4: "Get in Touch"
+      info (phone, email, address). Footer bottom bar
+      (`.footer-bottom-area.footer-bg`): copyright text centered. Replace
+      Colorlib attribution with "Made with Component Dock" and link to
+      `https://www.componentdock.com/`.
+
+#### Scenario: Footer renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Footer band SHALL be present at its documented position with the structure, copy and tokens named above
+
 ## Verification checklist
 
 - [ ] Header: sticky nav with coral "Contact Now" CTA, dropdown menus with

@@ -50,55 +50,59 @@ Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript · Vitest + Testing Libr
    - REGISTRATION CODE — text input (full width)
 6. **Submit button** — green, left-aligned, "Submit" label
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Registration form page
 
-```gherkin
 Feature: Registra registration form
-  As a visitor
-  I want to fill out a class registration form
-  So that I can register for a class
+As a visitor
+I want to fill out a class registration form
+So that I can register for a class
 
-  Background:
-    Given I am on the registration page
-    And the page has a blue background (#4285F4)
-    And a white card is centered on the page
+Background:
+- **GIVEN** I am on the registration page
+- **AND** the page has a blue background (#4285F4)
+- **AND** a white card is centered on the page
 
-  Scenario: Page loads with correct structure
-    Then I should see a hero image at the top of the card
-    And I should see the heading "Registration Info"
-    And I should see a "Submit" button
+#### Scenario: Page loads with correct structure
 
-  Scenario: Form fields are present
-    Then I should see a "NAME" text input
-    And I should see a "BIRTHDATE" date input
-    And I should see a "GENDER" select dropdown
-    And I should see a "CLASS" select dropdown
-    And I should see a "REGISTRATION CODE" text input
+- **THEN** I should see a hero image at the top of the card
+- **AND** I should see the heading "Registration Info"
+- **AND** I should see a "Submit" button
 
-  Scenario: Birthdate and gender are side by side
-    Then the "BIRTHDATE" and "GENDER" fields should be in the same row
+#### Scenario: Form fields are present
 
-  Scenario: Form validation — empty submission
-    When I click the "Submit" button without filling any fields
-    Then the form should not submit
-    And required field indicators should appear
+- **THEN** I should see a "NAME" text input
+- **AND** I should see a "BIRTHDATE" date input
+- **AND** I should see a "GENDER" select dropdown
+- **AND** I should see a "CLASS" select dropdown
+- **AND** I should see a "REGISTRATION CODE" text input
 
-  Scenario: Form submission with valid data
-    When I enter "John Doe" in the "NAME" field
-    And I select a birthdate
-    And I select "Male" from the "GENDER" dropdown
-    And I select a class from the "CLASS" dropdown
-    And I enter "ABC123" in the "REGISTRATION CODE" field
-    And I click the "Submit" button
-    Then the form should submit successfully
+#### Scenario: Birthdate and gender are side by side
 
-  Scenario: Responsive layout
-    Given I am on a mobile viewport (375px wide)
-    Then the card should fill the screen width with padding
-    And the BIRTHDATE and GENDER fields should stack vertically
-```
+- **THEN** the "BIRTHDATE" and "GENDER" fields should be in the same row
+
+#### Scenario: Form validation — empty submission
+
+- **WHEN** I click the "Submit" button without filling any fields
+- **THEN** the form should not submit
+- **AND** required field indicators should appear
+
+#### Scenario: Form submission with valid data
+
+- **WHEN** I enter "John Doe" in the "NAME" field
+- **AND** I select a birthdate
+- **AND** I select "Male" from the "GENDER" dropdown
+- **AND** I select a class from the "CLASS" dropdown
+- **AND** I enter "ABC123" in the "REGISTRATION CODE" field
+- **AND** I click the "Submit" button
+- **THEN** the form should submit successfully
+
+#### Scenario: Responsive layout
+
+- **GIVEN** I am on a mobile viewport (375px wide)
+- **THEN** the card should fill the screen width with padding
+- **AND** the BIRTHDATE and GENDER fields should stack vertically
 
 ## Verification checklist
 

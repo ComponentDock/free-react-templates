@@ -65,114 +65,130 @@ Extracted from the preview's CSS (`css/style.css`):
 - **Contact:** 2-column top (info with icon list + map placeholder), full-width form below (First Name, Last Name, Email, Subject, Message, Send Message button).
 - **Footer:** Dark background, logo, social icon circles, copyright with Colorlib attribution → replaced with "Component Dock" link.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with correct links
-- Given the page loads
-- When I view the navigation bar
-- Then I see a logo on the left
-- And I see links: Home, About, Services, Portfolio, Team, Skill, Clients, Pricing, Blog, Contact
-- And clicking each link scrolls to the corresponding section
-- And the navbar becomes sticky on scroll with a solid background
+### Feature: BizPulse template behaviour
 
-### Scenario: Hero carousel displays slides
-- Given the page loads
-- When I view the hero section
-- Then I see a full-width background image with dark overlay
-- And a large headline in white text is centered
-- And a subtitle is shown below the headline
-- And a ghost button with white border is shown
-- And left/right arrows allow cycling through slides
-- And slides auto-advance
+#### Scenario: Navbar renders with correct links
 
-### Scenario: About section shows services overview
-- Given the page loads
-- When I scroll to the About section
-- Then I see a section title with coral underline
-- And I see 4 circular icons in a row
-- And each icon has a service name and description below
-- And hovering an icon shows a coral background fill
+- **GIVEN** the page loads
+- **WHEN** I view the navigation bar
+- **THEN** I see a logo on the left
+- **AND** I see links: Home, About, Services, Portfolio, Team, Skill, Clients, Pricing, Blog, Contact
+- **AND** clicking each link scrolls to the corresponding section
+- **AND** the navbar becomes sticky on scroll with a solid background
 
-### Scenario: Services section displays service cards
-- Given the page loads
-- When I scroll to the Services section
-- Then I see a section title "SERVICES WE PROVIDE"
-- And I see 6 service cards in a 3×2 grid
-- And each card has an icon, title, and description paragraph
+#### Scenario: Hero carousel displays slides
 
-### Scenario: Portfolio section has filterable gallery
-- Given the page loads
-- When I scroll to the Portfolio section
-- Then I see a filter menu with options: All, Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
-- And I see a grid of project images
-- And clicking a filter shows only matching projects
-- And hovering a project image shows an overlay with title and tags
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** I see a full-width background image with dark overlay
+- **AND** a large headline in white text is centered
+- **AND** a subtitle is shown below the headline
+- **AND** a ghost button with white border is shown
+- **AND** left/right arrows allow cycling through slides
+- **AND** slides auto-advance
 
-### Scenario: Middle banner CTA
-- Given the page loads
-- When I scroll past the portfolio
-- Then I see a full-width parallax banner
-- And it has a dark overlay with centered text and a CTA button
-- And the button says "Let's Work Together"
+#### Scenario: About section shows services overview
 
-### Scenario: Team section shows members
-- Given the page loads
-- When I scroll to the Team section
-- Then I see 3 team members in a row
-- And each member has a photo with hover overlay showing name, role, and description
-- And below the photo is the member name, role, and social media icon links
+- **GIVEN** the page loads
+- **WHEN** I scroll to the About section
+- **THEN** I see a section title with coral underline
+- **AND** I see 4 circular icons in a row
+- **AND** each icon has a service name and description below
+- **AND** hovering an icon shows a coral background fill
 
-### Scenario: Skills section shows progress bars
-- Given the page loads
-- When I scroll to the Skills section
-- Then I see an image on the left side
-- And 5 skill progress bars on the right
-- And each bar shows skill name and percentage
-- And the bars are: Web Development 89%, Online Marketing 58%, Digital Media 49%, Photography 76%, Creative Design 64%
+#### Scenario: Services section displays service cards
 
-### Scenario: Clients section displays testimonials
-- Given the page loads
-- When I scroll to the Clients section
-- Then I see a testimonial slider
-- And each slide shows a client avatar, quote text, and client name
-- And navigation allows cycling through testimonials
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Services section
+- **THEN** I see a section title "SERVICES WE PROVIDE"
+- **AND** I see 6 service cards in a 3×2 grid
+- **AND** each card has an icon, title, and description paragraph
 
-### Scenario: Pricing section shows plans
-- Given the page loads
-- When I scroll to the Pricing section
-- Then I see 3 pricing cards in a row
-- And each card has a plan name, price, feature list, and a CTA button
-- And the plans are: Basic ($9.99/mo), Advanced ($39.99/mo), Premium ($59.99/mo)
-- And each feature list has 5 items
+#### Scenario: Portfolio section has filterable gallery
 
-### Scenario: Blog section shows posts
-- Given the page loads
-- When I scroll to the Blog section
-- Then I see 3 blog post cards in a row
-- And each card has a thumbnail image, title, date/author, excerpt, and "Read More" link
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Portfolio section
+- **THEN** I see a filter menu with options: All, Web Design, Photography, Web Development, Online Marketing, Digital Media, Support
+- **AND** I see a grid of project images
+- **AND** clicking a filter shows only matching projects
+- **AND** hovering a project image shows an overlay with title and tags
 
-### Scenario: Contact section has form and info
-- Given the page loads
-- When I scroll to the Contact section
-- Then I see a 2-column layout: contact info (left) and map placeholder (right)
-- And contact info shows address, phone, and email with circular coral icons
-- And below is a contact form with fields: First Name, Last Name, Email, Subject, Message
-- And a "Send Message" button styled with coral background
+#### Scenario: Middle banner CTA
 
-### Scenario: Footer renders with social links
-- Given the page loads
-- When I scroll to the footer
-- Then I see a dark background footer
-- And it shows the logo centered
-- And circular social media icon links are displayed
-- And a copyright line is shown with a link to "Component Dock"
+- **GIVEN** the page loads
+- **WHEN** I scroll past the portfolio
+- **THEN** I see a full-width parallax banner
+- **AND** it has a dark overlay with centered text and a CTA button
+- **AND** the button says "Let's Work Together"
 
-### Scenario: Responsive layout adapts to mobile
-- Given the page loads on a mobile viewport
-- When I view the navigation
-- Then the nav links collapse into a hamburger menu
-- And multi-column grids stack to single column
-- And the hero text scales down appropriately
+#### Scenario: Team section shows members
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Team section
+- **THEN** I see 3 team members in a row
+- **AND** each member has a photo with hover overlay showing name, role, and description
+- **AND** below the photo is the member name, role, and social media icon links
+
+#### Scenario: Skills section shows progress bars
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Skills section
+- **THEN** I see an image on the left side
+- **AND** 5 skill progress bars on the right
+- **AND** each bar shows skill name and percentage
+- **AND** the bars are: Web Development 89%, Online Marketing 58%, Digital Media 49%, Photography 76%, Creative Design 64%
+
+#### Scenario: Clients section displays testimonials
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Clients section
+- **THEN** I see a testimonial slider
+- **AND** each slide shows a client avatar, quote text, and client name
+- **AND** navigation allows cycling through testimonials
+
+#### Scenario: Pricing section shows plans
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Pricing section
+- **THEN** I see 3 pricing cards in a row
+- **AND** each card has a plan name, price, feature list, and a CTA button
+- **AND** the plans are: Basic ($9.99/mo), Advanced ($39.99/mo), Premium ($59.99/mo)
+- **AND** each feature list has 5 items
+
+#### Scenario: Blog section shows posts
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Blog section
+- **THEN** I see 3 blog post cards in a row
+- **AND** each card has a thumbnail image, title, date/author, excerpt, and "Read More" link
+
+#### Scenario: Contact section has form and info
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Contact section
+- **THEN** I see a 2-column layout: contact info (left) and map placeholder (right)
+- **AND** contact info shows address, phone, and email with circular coral icons
+- **AND** below is a contact form with fields: First Name, Last Name, Email, Subject, Message
+- **AND** a "Send Message" button styled with coral background
+
+#### Scenario: Footer renders with social links
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** I see a dark background footer
+- **AND** it shows the logo centered
+- **AND** circular social media icon links are displayed
+- **AND** a copyright line is shown with a link to "Component Dock"
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the page loads on a mobile viewport
+- **WHEN** I view the navigation
+- **THEN** the nav links collapse into a hamburger menu
+- **AND** multi-column grids stack to single column
+- **AND** the hero text scales down appropriately
 
 ## Verification Checklist
 

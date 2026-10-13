@@ -34,112 +34,103 @@ Extracted from https://preview.colorlib.com/theme/finloans/css/style.css and pre
 
 The original uses Font Awesome + Themify Icons + Flaticon. In the React recreation, use `lucide-react` icons instead (Home, DollarSign, CreditCard, CheckCircle, ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Quote, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Menu, X, Send).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Header / Navbar
-```
-Given the user visits the page
-Then a sticky header displays the "LoanPath" logo
-And navigation links: Home, Loan, About, Pages (dropdown), Blog (dropdown), FAQ, Contact
-And a phone number "+10 673 567 367" on the right
-And an "Apply for a Loan" CTA button (teal)
-And on mobile a hamburger menu appears
-```
+### Feature: LoanPath template behaviour
 
-### Scenario: Hero with Loan Calculator
-```
-Given the user sees the hero section
-Then a full-width background image with dark overlay is shown
-And a headline: "Get Loan for your Business growth or startup"
-And a "How it Works" button
-And on the right a white card form: "How much do you want?"
-And the form has Amount dropdown, Month dropdown
-And a "You have to pay: $0" display
-And a "Continue" teal button
-```
+#### Scenario: Header / Navbar
 
-### Scenario: Services (3 loan types)
-```
-Given the user scrolls to services
-Then "What we offer for you" heading with subtitle
-And 3 service cards in a row:
-  - Home Loan ($3000-$10000) with icon, details list, "Apply Now" button
-  - Business Loan ($10000-$50000) with icon, details list, "Apply Now" button
-  - Personal Loan ($1000-$5000) with icon, details list, "Apply Now" button
-And each card has: icon, loan type name, price range, 4 detail items, teal CTA button
-```
+- **GIVEN** the user visits the page
+- **THEN** a sticky header displays the "LoanPath" logo
+- **AND** navigation links: Home, Loan, About, Pages (dropdown), Blog (dropdown), FAQ, Contact
+- **AND** a phone number "+10 673 567 367" on the right
+- **AND** an "Apply for a Loan" CTA button (teal)
+- **AND** on mobile a hamburger menu appears
 
-### Scenario: About
-```
-Given the user sees the About section
-Then "Why Choose Us?" heading
-And a left image
-And a right column with:
-  - descriptive paragraph
-  - checklist: "Loans with quick approval", "Customize a loan based on the amount", "Good credit profile", "We provide online instant cash loans"
-  - "About Us" teal button
-```
+#### Scenario: Hero with Loan Calculator
 
-### Scenario: How It Works (3 steps)
-```
-Given the user sees the How It Works section
-Then "How it Works" heading with subtitle
-And 3 step cards:
-  - 01: "Apply for loan" with description
-  - 02: "Application review" with description
-  - 03: "Get funding fast" with description
-```
+- **GIVEN** the user sees the hero section
+- **THEN** a full-width background image with dark overlay is shown
+- **AND** a headline: "Get Loan for your Business growth or startup"
+- **AND** a "How it Works" button
+- **AND** on the right a white card form: "How much do you want?"
+- **AND** the form has Amount dropdown, Month dropdown
+- **AND** a "You have to pay: $0" display
+- **AND** a "Continue" teal button
 
-### Scenario: Brand Logos
-```
-Given the user sees the brand logos section
-Then a carousel of 5 brand/partner logo images
-```
+#### Scenario: Services (3 loan types)
 
-### Scenario: FAQ Accordion
-```
-Given the user sees the FAQ section
-Then "Frequently ask" heading
-And an accordion with 4+ FAQ items
-And each item has a clickable question header
-And clicking expands/collapses the answer
-```
+- **GIVEN** the user scrolls to services
+- **THEN** "What we offer for you" heading with subtitle
+- **AND** 3 service cards in a row:
+- Home Loan ($3000-$10000) with icon, details list, "Apply Now" button
+- Business Loan ($10000-$50000) with icon, details list, "Apply Now" button
+- Personal Loan ($1000-$5000) with icon, details list, "Apply Now" button
+- **AND** each card has: icon, loan type name, price range, 4 detail items, teal CTA button
 
-### Scenario: Testimonials
-```
-Given the user sees the Testimonials section
-Then a carousel of testimonial slides
-And each slide has: author photo, quote icon, testimonial paragraph, author name
-```
+#### Scenario: About
 
-### Scenario: Apply Loan CTA
-```
-Given the user sees the CTA banner
-Then a dark overlay background
-And "Apply for a Loan for your startup, education or company" heading
-And an "Apply Now" teal button
-```
+- **GIVEN** the user sees the About section
+- **THEN** "Why Choose Us?" heading
+- **AND** a left image
+- **AND** a right column with:
+- descriptive paragraph
+- checklist: "Loans with quick approval", "Customize a loan based on the amount", "Good credit profile", "We provide online instant cash loans"
+- "About Us" teal button
 
-### Scenario: Footer
-```
-Given the user sees the footer
-Then a dark background footer
-And left column: logo, contact info (email, phone, address), social icons (FB, Google+, Twitter, Instagram)
-And second column: "Services" links list
-And third column: "Quick Links" list
-And right column: "Subscribe" newsletter form with email input + Subscribe button
-And a copyright line at bottom
-And a link to https://www.componentdock.com/ ("Component Dock")
-```
+#### Scenario: How It Works (3 steps)
 
-### Scenario: Mobile responsiveness
-```
-Given the user views on mobile
-Then the navbar collapses to a hamburger menu
-And service cards stack vertically
-And about section stacks (image above text)
-And the hero form stacks below the headline
-```
+- **GIVEN** the user sees the How It Works section
+- **THEN** "How it Works" heading with subtitle
+- **AND** 3 step cards:
+- 01: "Apply for loan" with description
+- 02: "Application review" with description
+- 03: "Get funding fast" with description
+
+#### Scenario: Brand Logos
+
+- **GIVEN** the user sees the brand logos section
+- **THEN** a carousel of 5 brand/partner logo images
+
+#### Scenario: FAQ Accordion
+
+- **GIVEN** the user sees the FAQ section
+- **THEN** "Frequently ask" heading
+- **AND** an accordion with 4+ FAQ items
+- **AND** each item has a clickable question header
+- **AND** clicking expands/collapses the answer
+
+#### Scenario: Testimonials
+
+- **GIVEN** the user sees the Testimonials section
+- **THEN** a carousel of testimonial slides
+- **AND** each slide has: author photo, quote icon, testimonial paragraph, author name
+
+#### Scenario: Apply Loan CTA
+
+- **GIVEN** the user sees the CTA banner
+- **THEN** a dark overlay background
+- **AND** "Apply for a Loan for your startup, education or company" heading
+- **AND** an "Apply Now" teal button
+
+#### Scenario: Footer
+
+- **GIVEN** the user sees the footer
+- **THEN** a dark background footer
+- **AND** left column: logo, contact info (email, phone, address), social icons (FB, Google+, Twitter, Instagram)
+- **AND** second column: "Services" links list
+- **AND** third column: "Quick Links" list
+- **AND** right column: "Subscribe" newsletter form with email input + Subscribe button
+- **AND** a copyright line at bottom
+- **AND** a link to https://www.componentdock.com/ ("Component Dock")
+
+#### Scenario: Mobile responsiveness
+
+- **GIVEN** the user views on mobile
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** service cards stack vertically
+- **AND** about section stacks (image above text)
+- **AND** the hero form stacks below the headline
 
 ## Verification Checklist
 

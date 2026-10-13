@@ -51,88 +51,98 @@ Extracted from the live preview CSS (`css/style.css`):
 8. **Call-to-Action** — Full-width background image. Large heading ("Fresh Ideas, Fresh Moments Giving Wings to your Stories."), subtitle, CTA link ("Start your stories").
 9. **Footer** — Dark background. Top row: logo left, social icons right. Middle: 3-column layout (About us text, Who we are links, Newsletter signup). Copyright bar at bottom.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Cinelux Template
 
 #### Scenario: Header renders with transparent overlay
-- **Given** the user loads the page
-- **When** the header is visible
-- **Then** the header has a transparent background with a subtle white border-bottom
-- **And** the logo is displayed on the left
-- **And** the navigation links are centered
-- **And** social media icons are on the right
-- **And** all text is white
+
+- **GIVEN** the user loads the page
+- **WHEN** the header is visible
+- **THEN** the header has a transparent background with a subtle white border-bottom
+- **AND** the logo is displayed on the left
+- **AND** the navigation links are centered
+- **AND** social media icons are on the right
+- **AND** all text is white
 
 #### Scenario: Hero slider displays with background images
-- **Given** the user loads the page
-- **When** the hero section is rendered
-- **Then** a full-width background image slider is displayed
-- **And** each slide shows a subtitle text, a heading, and a CTA button
-- **And** pagination dots are visible at the bottom-left
-- **And** slides auto-rotate or respond to user interaction
+
+- **GIVEN** the user loads the page
+- **WHEN** the hero section is rendered
+- **THEN** a full-width background image slider is displayed
+- **AND** each slide shows a subtitle text, a heading, and a CTA button
+- **AND** pagination dots are visible at the bottom-left
+- **AND** slides auto-rotate or respond to user interaction
 
 #### Scenario: Services section shows four service items
-- **Given** the user scrolls to the services section
-- **When** the services section is in view
-- **Then** a heading "What We do?" is displayed
-- **And** a description paragraph and "View all services" button are shown on the left
-- **And** four service cards are arranged in a 2×2 grid on the right
-- **And** each card has an icon, title, and description
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the services section is in view
+- **THEN** a heading "What We do?" is displayed
+- **AND** a description paragraph and "View all services" button are shown on the left
+- **AND** four service cards are arranged in a 2×2 grid on the right
+- **AND** each card has an icon, title, and description
 
 #### Scenario: Work gallery displays masonry grid
-- **Given** the user scrolls to the work section
-- **When** the gallery is rendered
-- **Then** a masonry-style grid of project thumbnails is shown
-- **And** items have varying sizes (wide, large, small)
-- **And** hovering an item reveals an overlay with project info
-- **And** the section background is dark indigo
+
+- **GIVEN** the user scrolls to the work section
+- **WHEN** the gallery is rendered
+- **THEN** a masonry-style grid of project thumbnails is shown
+- **AND** items have varying sizes (wide, large, small)
+- **AND** hovering an item reveals an overlay with project info
+- **AND** the section background is dark indigo
 
 #### Scenario: Counter section shows animated stats
-- **Given** the user scrolls to the counter section
-- **When** the counter section is visible
-- **Then** four stat items are displayed in a row
-- **And** each item shows an icon, an animated number, and a label
-- **And** the background is dark indigo
+
+- **GIVEN** the user scrolls to the counter section
+- **WHEN** the counter section is visible
+- **THEN** four stat items are displayed in a row
+- **AND** each item shows an icon, an animated number, and a label
+- **AND** the background is dark indigo
 
 #### Scenario: Team section displays member cards
-- **Given** the user scrolls to the team section
-- **When** the team section is rendered
-- **Then** a heading "OUR Team" is displayed
-- **And** four team member cards are shown in a row
-- **And** each card has a background image, name, role, and social icons
-- **And** social icons overlay on hover
+
+- **GIVEN** the user scrolls to the team section
+- **WHEN** the team section is rendered
+- **THEN** a heading "OUR Team" is displayed
+- **AND** four team member cards are shown in a row
+- **AND** each card has a background image, name, role, and social icons
+- **AND** social icons overlay on hover
 
 #### Scenario: Blog section shows latest posts
-- **Given** the user scrolls to the blog section
-- **When** the blog section is rendered
-- **Then** a heading "Blog Update" is displayed
-- **And** three blog post cards are shown in a carousel
-- **And** each card has a title, date, comment count, excerpt, and "Read more" link
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the blog section is rendered
+- **THEN** a heading "Blog Update" is displayed
+- **AND** three blog post cards are shown in a carousel
+- **AND** each card has a title, date, comment count, excerpt, and "Read more" link
 
 #### Scenario: Call-to-action section prompts engagement
-- **Given** the user scrolls to the CTA section
-- **When** the CTA section is visible
-- **Then** a large heading about stories is displayed
-- **And** a subtitle line is shown below
-- **And** a "Start your stories" link is prominently displayed
-- **And** the section has a background image
+
+- **GIVEN** the user scrolls to the CTA section
+- **WHEN** the CTA section is visible
+- **THEN** a large heading about stories is displayed
+- **AND** a subtitle line is shown below
+- **AND** a "Start your stories" link is prominently displayed
+- **AND** the section has a background image
 
 #### Scenario: Footer renders with logo, links, and social
-- **Given** the user scrolls to the footer
-- **When** the footer is visible
-- **Then** the logo and social media icons are in the top row
-- **And** three columns of content are shown: About us, Who we are links, Newsletter
-- **And** a copyright bar is at the bottom
-- **And** the footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** the logo and social media icons are in the top row
+- **AND** three columns of content are shown: About us, Who we are links, Newsletter
+- **AND** a copyright bar is at the bottom
+- **AND** the footer links to Component Dock
 
 #### Scenario: Mobile responsive behavior
-- **Given** the user views the page on a mobile device
-- **When** the viewport is narrow
-- **Then** the navigation collapses to a hamburger menu
-- **And** grid layouts stack vertically
-- **And** the hero text remains readable
-- **And** team cards stack in a single column
+
+- **GIVEN** the user views the page on a mobile device
+- **WHEN** the viewport is narrow
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** grid layouts stack vertically
+- **AND** the hero text remains readable
+- **AND** team cards stack in a single column
 
 ## Verification Checklist
 

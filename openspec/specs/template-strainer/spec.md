@@ -39,54 +39,64 @@ Recreation of ColorLib **Multiselect 12** ("Multiselect V12") as a standalone Re
 | Transition | `.3s all ease` | `a` |
 | Heading font | `Poppins`, sans-serif (loaded but unused in snippet) | font-face declarations |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Component renders with heading and instructions
-- **Given** the page loads
-- **Then** a heading "Multi-Select" is visible
-- **And** a paragraph instructs the user to separate items with a comma
-- **And** a multi-select dropdown is displayed
+### Feature: Strainer template behaviour
 
-### Scenario: Dropdown shows available options
-- **Given** the user clicks the dropdown area
-- **Then** a list of options appears (US states: Alaska, Hawaii, California, Nevada, Oregon, Washington, Alabama, Utah)
-- **And** the dropdown has a shadow (`0 15px 30px`) and rounded corners (`border-radius: 7px`)
+#### Scenario: Component renders with heading and instructions
 
-### Scenario: User selects a single option
-- **Given** the dropdown is open
-- **When** the user clicks "California"
-- **Then** a coral-pink tag labeled "California" appears in the selected area
-- **And** the tag has white text, no visible border, and `font-size: 14px`
+- **GIVEN** the page loads
+- **THEN** a heading "Multi-Select" is visible
+- **AND** a paragraph instructs the user to separate items with a comma
+- **AND** a multi-select dropdown is displayed
 
-### Scenario: User selects multiple options
-- **Given** the user has already selected "California"
-- **When** the user selects "Nevada"
-- **Then** both "California" and "Nevada" tags are visible
-- **And** the tags are arranged horizontally
+#### Scenario: Dropdown shows available options
 
-### Scenario: User removes a selected option
-- **Given** the user has selected "California" and "Nevada"
-- **When** the user clicks the × on the "California" tag
-- **Then** only "Nevada" remains as a selected tag
+- **GIVEN** the user clicks the dropdown area
+- **THEN** a list of options appears (US states: Alaska, Hawaii, California, Nevada, Oregon, Washington, Alabama, Utah)
+- **AND** the dropdown has a shadow (`0 15px 30px`) and rounded corners (`border-radius: 7px`)
 
-### Scenario: Live search filters options
-- **Given** the dropdown is open with 8 options
-- **When** the user types "ore" into the search field
-- **Then** only "Oregon" is displayed in the filtered list
-- **And** other options are hidden
+#### Scenario: User selects a single option
 
-### Scenario: Keyboard accessibility
-- **Given** the dropdown is focused
-- **When** the user presses arrow keys
-- **Then** focus moves through the available options
-- **And** pressing Enter selects the focused option
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "California"
+- **THEN** a coral-pink tag labeled "California" appears in the selected area
+- **AND** the tag has white text, no visible border, and `font-size: 14px`
 
-### Scenario: Visual styling matches reference
-- **Given** the component renders
-- **Then** the background is `#efefef`
-- **And** the heading uses Roboto font at 20px
-- **And** selected tags are coral pink (`#f67280`) with white text
-- **And** the dropdown has no border and a box shadow
+#### Scenario: User selects multiple options
+
+- **GIVEN** the user has already selected "California"
+- **WHEN** the user selects "Nevada"
+- **THEN** both "California" and "Nevada" tags are visible
+- **AND** the tags are arranged horizontally
+
+#### Scenario: User removes a selected option
+
+- **GIVEN** the user has selected "California" and "Nevada"
+- **WHEN** the user clicks the × on the "California" tag
+- **THEN** only "Nevada" remains as a selected tag
+
+#### Scenario: Live search filters options
+
+- **GIVEN** the dropdown is open with 8 options
+- **WHEN** the user types "ore" into the search field
+- **THEN** only "Oregon" is displayed in the filtered list
+- **AND** other options are hidden
+
+#### Scenario: Keyboard accessibility
+
+- **GIVEN** the dropdown is focused
+- **WHEN** the user presses arrow keys
+- **THEN** focus moves through the available options
+- **AND** pressing Enter selects the focused option
+
+#### Scenario: Visual styling matches reference
+
+- **GIVEN** the component renders
+- **THEN** the background is `#efefef`
+- **AND** the heading uses Roboto font at 20px
+- **AND** selected tags are coral pink (`#f67280`) with white text
+- **AND** the dropdown has no border and a box shadow
 
 ## Verification checklist
 

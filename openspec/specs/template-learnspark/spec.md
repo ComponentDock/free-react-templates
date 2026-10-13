@@ -99,147 +99,140 @@ template focused on online courses, instructors, and enrollment.
 12. **Footer** — dark navy background, multiple columns: about text,
     quick links, support links, newsletter. "Made with Component Dock" link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Sticky navigation bar
-  Given the user scrolls down the page
-  Then the navbar should remain fixed at the top
-  And it should display the logo on the left
-  And nav links: Home, Features, Courses, Testimonial, Blog, FAQs, Contact
-  And an "Enroll the Courses" button on the right
+#### Scenario: Sticky navigation bar
 
-Scenario: Mobile hamburger menu
-  Given the viewport is narrower than 768px
-  When the user taps the hamburger icon
-  Then the navigation menu should toggle open
-```
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar should remain fixed at the top
+- **AND** it should display the logo on the left
+- **AND** nav links: Home, Features, Courses, Testimonial, Blog, FAQs, Contact
+- **AND** an "Enroll the Courses" button on the right
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu should toggle open
 
 ### Feature: Welcome Slider (Hero)
 
-```gherkin
-Scenario: Hero headline displays
-  Given the page loads
-  Then the hero section should show "Develop a passion for learning new things."
-  And a call-to-action button should be visible
-  And slide navigation dots should be present
+#### Scenario: Hero headline displays
 
-Scenario: Auto-rotating slides
-  Given the hero section is visible
-  When 5 seconds pass without user interaction
-  Then the slider should advance to the next slide
-```
+- **GIVEN** the page loads
+- **THEN** the hero section should show "Develop a passion for learning new things."
+- **AND** a call-to-action button should be visible
+- **AND** slide navigation dots should be present
+
+#### Scenario: Auto-rotating slides
+
+- **GIVEN** the hero section is visible
+- **WHEN** 5 seconds pass without user interaction
+- **THEN** the slider should advance to the next slide
 
 ### Feature: Features Section
 
-```gherkin
-Scenario: Feature cards display
-  Given the features section is in view
-  Then 4 feature cards should be visible: Certificate, Expert Instructors, Learn from anywhere, Quality Service
-  And each card should have an icon, title, and description
+#### Scenario: Feature cards display
 
-Scenario: Trust counter displays
-  Given the features section loads
-  Then a counter showing "50,000+ students" should be visible
-```
+- **GIVEN** the features section is in view
+- **THEN** 4 feature cards should be visible: Certificate, Expert Instructors, Learn from anywhere, Quality Service
+- **AND** each card should have an icon, title, and description
+
+#### Scenario: Trust counter displays
+
+- **GIVEN** the features section loads
+- **THEN** a counter showing "50,000+ students" should be visible
 
 ### Feature: Fun Fact Stats
 
-```gherkin
-Scenario: Animated counters on scroll
-  Given the fun fact section enters the viewport
-  Then the stat counters should animate from 0 to their target values
-  And the background should be a parallax image with dark overlay
-```
+#### Scenario: Animated counters on scroll
+
+- **GIVEN** the fun fact section enters the viewport
+- **THEN** the stat counters should animate from 0 to their target values
+- **AND** the background should be a parallax image with dark overlay
 
 ### Feature: Trending Courses
 
-```gherkin
-Scenario: Course cards grid
-  Given the courses section loads
-  Then at least 4 course cards should be displayed
-  And each card should show an image, category, title, instructor, and enroll button
+#### Scenario: Course cards grid
 
-Scenario: Enroll button interaction
-  Given a course card is visible
-  When the user clicks the Enroll button
-  Then it should respond with a visual hover state (bg changes to navy)
-```
+- **GIVEN** the courses section loads
+- **THEN** at least 4 course cards should be displayed
+- **AND** each card should show an image, category, title, instructor, and enroll button
+
+#### Scenario: Enroll button interaction
+
+- **GIVEN** a course card is visible
+- **WHEN** the user clicks the Enroll button
+- **THEN** it should respond with a visual hover state (bg changes to navy)
 
 ### Feature: About Section
 
-```gherkin
-Scenario: Split layout displays
-  Given the about section is in view
-  Then the left side should show the text "Education is the foundation upon which we build our future."
-  And the right side should show a video thumbnail with a play button
-  And a "Read More" link should be present
-```
+#### Scenario: Split layout displays
+
+- **GIVEN** the about section is in view
+- **THEN** the left side should show the text "Education is the foundation upon which we build our future."
+- **AND** the right side should show a video thumbnail with a play button
+- **AND** a "Read More" link should be present
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonial slider
-  Given the testimonial section loads on green background
-  Then testimonial cards should be displayed with avatar, name, designation, and quote
-  And left/right navigation arrows should be present
-  And pagination dots should be visible
+#### Scenario: Testimonial slider
 
-Scenario: Testimonial navigation
-  Given the testimonial slider is visible
-  When the user clicks the next arrow
-  Then the next testimonial should slide into view
-```
+- **GIVEN** the testimonial section loads on green background
+- **THEN** testimonial cards should be displayed with avatar, name, designation, and quote
+- **AND** left/right navigation arrows should be present
+- **AND** pagination dots should be visible
+
+#### Scenario: Testimonial navigation
+
+- **GIVEN** the testimonial slider is visible
+- **WHEN** the user clicks the next arrow
+- **THEN** the next testimonial should slide into view
 
 ### Feature: Blog Feed
 
-```gherkin
-Scenario: Blog cards grid
-  Given the blog section loads
-  Then 3 blog cards should be displayed
-  And each card should show an image, date, author name, title, and excerpt
-```
+#### Scenario: Blog cards grid
+
+- **GIVEN** the blog section loads
+- **THEN** 3 blog cards should be displayed
+- **AND** each card should show an image, date, author name, title, and excerpt
 
 ### Feature: FAQs
 
-```gherkin
-Scenario: FAQ accordion
-  Given the FAQs section loads
-  Then at least 3 FAQ items should be visible with question text
-  And clicking a question should expand/collapse the answer
-```
+#### Scenario: FAQ accordion
+
+- **GIVEN** the FAQs section loads
+- **THEN** at least 3 FAQ items should be visible with question text
+- **AND** clicking a question should expand/collapse the answer
 
 ### Feature: Contact Form
 
-```gherkin
-Scenario: Contact form on gray background
-  Given the contact section is visible
-  Then a form with fields: name, email, subject, message should be present
-  And a submit button should be visible
-  And contact info (address, phone, email) should display alongside
-```
+#### Scenario: Contact form on gray background
+
+- **GIVEN** the contact section is visible
+- **THEN** a form with fields: name, email, subject, message should be present
+- **AND** a submit button should be visible
+- **AND** contact info (address, phone, email) should display alongside
 
 ### Feature: Admission / Newsletter
 
-```gherkin
-Scenario: Newsletter subscription
-  Given the newsletter section loads on green background
-  Then "Subscribe Our Newsletter" heading should be visible
-  And an email input field should be present
-  And a subscribe button should be present
-```
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the newsletter section loads on green background
+- **THEN** "Subscribe Our Newsletter" heading should be visible
+- **AND** an email input field should be present
+- **AND** a subscribe button should be present
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer layout
-  Given the page footer is visible
-  Then it should have a dark navy background
-  And multiple columns: about, quick links, support
-  And a "Made with Component Dock" link linking to https://www.componentdock.com/
-```
+#### Scenario: Footer layout
+
+- **GIVEN** the page footer is visible
+- **THEN** it should have a dark navy background
+- **AND** multiple columns: about, quick links, support
+- **AND** a "Made with Component Dock" link linking to https://www.componentdock.com/
 
 ## Verification Checklist
 

@@ -47,61 +47,72 @@ Extracted from the preview page's `css/style.css` and inline styles.
      - Description paragraph (centered, gray #777, 14px)
      - Social interaction row (like count in red, message count in blue, add count in blue)
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page loads with trigger button
-- **Given** the user visits the template page
-- **When** the page finishes loading
-- **Then** a centered "Launch modal" button is visible
-- **And** the button has Bootstrap secondary styling (gray bg, white text)
+### Feature: Critique template behaviour
 
-### Scenario: Modal opens on trigger click
-- **Given** the trigger button is visible
-- **When** the user clicks "Launch modal"
-- **Then** a split-screen modal animates into view
-- **And** the modal is centered on screen
-- **And** the modal has a light gray background (#efefef)
-- **And** the modal has rounded corners (7px) and a deep drop shadow
+#### Scenario: Page loads with trigger button
 
-### Scenario: Left panel shows product image with price
-- **Given** the modal is open
-- **Then** the left 50% of the modal shows a product image
-- **And** a price badge ("$2000") appears in the top-left corner of the image
-- **And** the price badge has white text
+- **GIVEN** the user visits the template page
+- **WHEN** the page finishes loading
+- **THEN** a centered "Launch modal" button is visible
+- **AND** the button has Bootstrap secondary styling (gray bg, white text)
 
-### Scenario: Right panel shows product details
-- **Given** the modal is open
-- **Then** the right panel shows the product name ("Grand Prix 4000")
-- **And** a decorative horizontal line appears below the product name
-- **And** a 4-out-of-5 star rating row is visible below the title
-- **And** a description paragraph is visible below the stars
-- **And** the description text is gray (#777)
+#### Scenario: Modal opens on trigger click
 
-### Scenario: Social interaction counters are displayed
-- **Given** the modal is open
-- **Then** a like counter shows "25" with a red heart icon
-- **And** a message counter shows "10" with a blue chat icon
-- **And** an add counter shows "55" with a blue plus icon
+- **GIVEN** the trigger button is visible
+- **WHEN** the user clicks "Launch modal"
+- **THEN** a split-screen modal animates into view
+- **AND** the modal is centered on screen
+- **AND** the modal has a light gray background (#efefef)
+- **AND** the modal has rounded corners (7px) and a deep drop shadow
 
-### Scenario: Share icon is accessible
-- **Given** the modal is open
-- **Then** a share icon is visible in the top-right corner of the content panel
-- **And** the share icon is gray (#ccc) by default
-- **And** the share icon turns black (#000) on hover
+#### Scenario: Left panel shows product image with price
 
-### Scenario: Modal closes on backdrop click
-- **Given** the modal is open
-- **When** the user clicks outside the modal
-- **Then** the modal fades out and disappears
+- **GIVEN** the modal is open
+- **THEN** the left 50% of the modal shows a product image
+- **AND** a price badge ("$2000") appears in the top-left corner of the image
+- **AND** the price badge has white text
 
-### Scenario: Modal closes on Escape key
-- **Given** the modal is open
-- **When** the user presses Escape
-- **Then** the modal closes
+#### Scenario: Right panel shows product details
 
-### Scenario: Responsive layout
-- **Given** the modal is open on a narrow viewport (< 768px)
-- **Then** the split layout stacks vertically (image on top, content below)
+- **GIVEN** the modal is open
+- **THEN** the right panel shows the product name ("Grand Prix 4000")
+- **AND** a decorative horizontal line appears below the product name
+- **AND** a 4-out-of-5 star rating row is visible below the title
+- **AND** a description paragraph is visible below the stars
+- **AND** the description text is gray (#777)
+
+#### Scenario: Social interaction counters are displayed
+
+- **GIVEN** the modal is open
+- **THEN** a like counter shows "25" with a red heart icon
+- **AND** a message counter shows "10" with a blue chat icon
+- **AND** an add counter shows "55" with a blue plus icon
+
+#### Scenario: Share icon is accessible
+
+- **GIVEN** the modal is open
+- **THEN** a share icon is visible in the top-right corner of the content panel
+- **AND** the share icon is gray (#ccc) by default
+- **AND** the share icon turns black (#000) on hover
+
+#### Scenario: Modal closes on backdrop click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks outside the modal
+- **THEN** the modal fades out and disappears
+
+#### Scenario: Modal closes on Escape key
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Escape
+- **THEN** the modal closes
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the modal is open on a narrow viewport (< 768px)
+- **THEN** the split layout stacks vertically (image on top, content below)
 
 ## Verification Checklist
 

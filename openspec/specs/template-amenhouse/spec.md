@@ -84,143 +84,166 @@ Preview URL: https://preview.colorlib.com/theme/brotherlylove/
 | Nav link size     | 15px                                 | `.nav-link` font-size                          |
 | Line height       | 2 (body)                             | Generous vertical rhythm                       |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Top bar and navigation
 
-  Scenario: Top info bar renders with links and social icons
-    Given the page is loaded
-    Then a top bar is visible above the navbar
-    And it contains links for "Home", "About Us", "Ministries"
-    And it shows social media icons (Facebook, Twitter, LinkedIn, Instagram)
+#### Scenario: Top info bar renders with links and social icons
 
-  Scenario: Navbar displays brand and navigation items
-    Given the page is loaded
-    Then the navbar shows the brand "AmenHouse" with a heart icon
-    And navigation items include "Home", "Ministries" (dropdown), "Sermons" (dropdown), "Events", "About", "Contact"
-    And the active nav link is highlighted in purple (#6c5b7b)
+- **GIVEN** the page is loaded
+- **THEN** a top bar is visible above the navbar
+- **AND** it contains links for "Home", "About Us", "Ministries"
+- **AND** it shows social media icons (Facebook, Twitter, LinkedIn, Instagram)
 
-  Scenario: Ministries dropdown shows ministry categories
-    Given the user hovers over "Ministries" in the navbar
-    Then a dropdown appears with items: "Outreach Ministry", "Men's Ministry", "Women's Ministry", "Children's Ministry", "Youth Ministry"
+#### Scenario: Navbar displays brand and navigation items
 
-  Scenario: Sermons dropdown shows sermon categories
-    Given the user hovers over "Sermons" in the navbar
-    Then a dropdown appears with items: "Daily Sermon", "Music", "Audio", "Video"
+- **GIVEN** the page is loaded
+- **THEN** the navbar shows the brand "AmenHouse" with a heart icon
+- **AND** navigation items include "Home", "Ministries" (dropdown), "Sermons" (dropdown), "Events", "About", "Contact"
+- **AND** the active nav link is highlighted in purple (#6c5b7b)
 
-  Scenario: Navbar is responsive on mobile
-    Given the viewport width is less than 992px
-    Then a hamburger toggler button is visible
-    And the nav items collapse into a mobile menu
+#### Scenario: Ministries dropdown shows ministry categories
+
+- **GIVEN** the user hovers over "Ministries" in the navbar
+- **THEN** a dropdown appears with items: "Outreach Ministry", "Men's Ministry", "Women's Ministry", "Children's Ministry", "Youth Ministry"
+
+#### Scenario: Sermons dropdown shows sermon categories
+
+- **GIVEN** the user hovers over "Sermons" in the navbar
+- **THEN** a dropdown appears with items: "Daily Sermon", "Music", "Audio", "Video"
+
+#### Scenario: Navbar is responsive on mobile
+
+- **GIVEN** the viewport width is less than 992px
+- **THEN** a hamburger toggler button is visible
+- **AND** the nav items collapse into a mobile menu
 
 ### Feature: Hero section
 
-  Scenario: Hero renders with background image and overlay
-    Given the page is loaded
-    Then the hero section is visible with a background image
-    And a dark overlay covers the background (rgba(0,0,0,0.1))
+#### Scenario: Hero renders with background image and overlay
 
-  Scenario: Hero displays heading and CTAs
-    Given the hero section is rendered
-    Then the heading reads "Let your light so shine before men."
-    And an "About Us" button is visible (white text on purple #6c5b7b)
-    And a "Visit Our Church" text link with location icon is visible
+- **GIVEN** the page is loaded
+- **THEN** the hero section is visible with a background image
+- **AND** a dark overlay covers the background (rgba(0,0,0,0.1))
 
-  Scenario: Hero has parallax scrolling effect
-    Given the user scrolls the page
-    Then the hero background moves at a slower rate than foreground content
+#### Scenario: Hero displays heading and CTAs
+
+- **GIVEN** the hero section is rendered
+- **THEN** the heading reads "Let your light so shine before men."
+- **AND** an "About Us" button is visible (white text on purple #6c5b7b)
+- **AND** a "Visit Our Church" text link with location icon is visible
+
+#### Scenario: Hero has parallax scrolling effect
+
+- **GIVEN** the user scrolls the page
+- **THEN** the hero background moves at a slower rate than foreground content
 
 ### Feature: Sermon announcement bar
 
-  Scenario: Sermon bar displays latest sermon info
-    Given the page is loaded
-    Then a sermon bar is visible below the hero
-    And it shows "Latest Sermon:" label
-    And it shows the sermon title "Rebuilding The Walls"
-    And it shows date "June 28, 2018" and pastor "Pastor John Smith"
-    And four media icons are visible (video, headphones, download, book)
+#### Scenario: Sermon bar displays latest sermon info
 
-  Scenario: Sermon bar overlaps hero section
-    Given the page is loaded
-    Then the sermon bar overlaps the bottom of the hero section
-    And it has a purple (#6c5b7b) top border
+- **GIVEN** the page is loaded
+- **THEN** a sermon bar is visible below the hero
+- **AND** it shows "Latest Sermon:" label
+- **AND** it shows the sermon title "Rebuilding The Walls"
+- **AND** it shows date "June 28, 2018" and pastor "Pastor John Smith"
+- **AND** four media icons are visible (video, headphones, download, book)
+
+#### Scenario: Sermon bar overlaps hero section
+
+- **GIVEN** the page is loaded
+- **THEN** the sermon bar overlaps the bottom of the hero section
+- **AND** it has a purple (#6c5b7b) top border
 
 ### Feature: Welcome section
 
-  Scenario: Welcome section shows split layout with video
-    Given the page is loaded
-    Then a welcome section is visible with two columns
-    And the left column has an image with a circular play button overlay
-    And the right column has heading "Welcome To Church"
-    And the right column has a description paragraph
-    And the right column shows a pastor attribution
+#### Scenario: Welcome section shows split layout with video
 
-  Scenario: Play button links to video
-    Given the user clicks the circular play button
-    Then a video modal or embed opens (Vimeo or placeholder)
+- **GIVEN** the page is loaded
+- **THEN** a welcome section is visible with two columns
+- **AND** the left column has an image with a circular play button overlay
+- **AND** the right column has heading "Welcome To Church"
+- **AND** the right column has a description paragraph
+- **AND** the right column shows a pastor attribution
+
+#### Scenario: Play button links to video
+
+- **GIVEN** the user clicks the circular play button
+- **THEN** a video modal or embed opens (Vimeo or placeholder)
 
 ### Feature: Feature cards
 
-  Scenario: Three feature cards render in a grid
-    Given the page is loaded
-    Then three feature cards are visible in a 3-column grid
-    And card 1 has an icon (BookOpen), heading "Connect With God", and description
-    And card 2 has an icon (User), heading "Come As You Are", and description
-    And card 3 has an icon (Heart), heading "Fellowship", and description
+#### Scenario: Three feature cards render in a grid
 
-  Scenario: Feature card icons have circular wrapper
-    Given the feature cards are rendered
-    Then each card's icon sits inside a circular wrapper with light gray (#f6f6f6) background
+- **GIVEN** the page is loaded
+- **THEN** three feature cards are visible in a 3-column grid
+- **AND** card 1 has an icon (BookOpen), heading "Connect With God", and description
+- **AND** card 2 has an icon (User), heading "Come As You Are", and description
+- **AND** card 3 has an icon (Heart), heading "Fellowship", and description
+
+#### Scenario: Feature card icons have circular wrapper
+
+- **GIVEN** the feature cards are rendered
+- **THEN** each card's icon sits inside a circular wrapper with light gray (#f6f6f6) background
 
 ### Feature: Church services carousel
 
-  Scenario: Church services section displays heading
-    Given the page is loaded
-    Then a "Church Services" heading is visible on a light gray background
+#### Scenario: Church services section displays heading
 
-  Scenario: Services carousel shows service cards
-    Given the church services section is rendered
-    Then a horizontal carousel/slider of service cards is visible
-    And each card has an image, heading, description, and "Read More" link
-    And at least 3 service cards are shown (Bible studies, Piano Lesson, The Truth)
+- **GIVEN** the page is loaded
+- **THEN** a "Church Services" heading is visible on a light gray background
 
-  Scenario: Services carousel is navigable
-    Given the services carousel is rendered
-    Then the user can scroll/navigate between service cards
+#### Scenario: Services carousel shows service cards
+
+- **GIVEN** the church services section is rendered
+- **THEN** a horizontal carousel/slider of service cards is visible
+- **AND** each card has an image, heading, description, and "Read More" link
+- **AND** at least 3 service cards are shown (Bible studies, Piano Lesson, The Truth)
+
+#### Scenario: Services carousel is navigable
+
+- **GIVEN** the services carousel is rendered
+- **THEN** the user can scroll/navigate between service cards
 
 ### Feature: Testimonials section
 
-  Scenario: Testimonials section renders with heading
-    Given the page is loaded
-    Then a "Change Lives" heading is visible on a light gray background
+#### Scenario: Testimonials section renders with heading
 
-  Scenario: Three testimonial cards display
-    Given the testimonials section is rendered
-    Then three testimonial cards are visible in a 3-column grid
-    And each card has a blockquote with testimonial text
-    And each card has a circular avatar image
-    And each card shows a person name and location
+- **GIVEN** the page is loaded
+- **THEN** a "Change Lives" heading is visible on a light gray background
+
+#### Scenario: Three testimonial cards display
+
+- **GIVEN** the testimonials section is rendered
+- **THEN** three testimonial cards are visible in a 3-column grid
+- **AND** each card has a blockquote with testimonial text
+- **AND** each card has a circular avatar image
+- **AND** each card shows a person name and location
 
 ### Feature: Footer
 
-  Scenario: Footer displays quick links
-    Given the page is loaded
-    Then the footer is visible with a dark background
-    And a "Church Quick Links" section shows ministry links in 3 columns
+#### Scenario: Footer displays quick links
 
-  Scenario: Footer displays events
-    Given the footer is rendered
-    Then an "Events" section shows event items with title, date, author, and comment count
+- **GIVEN** the page is loaded
+- **THEN** the footer is visible with a dark background
+- **AND** a "Church Quick Links" section shows ministry links in 3 columns
 
-  Scenario: Footer displays contact information
-    Given the footer is rendered
-    Then a "Contact Information" section shows address, phone, and email
+#### Scenario: Footer displays events
 
-  Scenario: Footer shows copyright and social links
-    Given the footer is rendered
-    Then a copyright line is visible
-    And social media icons (Facebook, Twitter, LinkedIn, Instagram) are shown
-    And a "Component Dock" link is present (replacing Colorlib attribution)
+- **GIVEN** the footer is rendered
+- **THEN** an "Events" section shows event items with title, date, author, and comment count
+
+#### Scenario: Footer displays contact information
+
+- **GIVEN** the footer is rendered
+- **THEN** a "Contact Information" section shows address, phone, and email
+
+#### Scenario: Footer shows copyright and social links
+
+- **GIVEN** the footer is rendered
+- **THEN** a copyright line is visible
+- **AND** social media icons (Facebook, Twitter, LinkedIn, Instagram) are shown
+- **AND** a "Component Dock" link is present (replacing Colorlib attribution)
 
 ## Verification checklist
 

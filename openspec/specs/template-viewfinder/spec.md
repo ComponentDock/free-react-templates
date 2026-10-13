@@ -11,7 +11,7 @@ Recreation of ColorLib **Photosen** (`https://colorlib.com/wp/template/photosen/
 - **Buttons**: Outline white buttons (`border border-white text-white hover:bg-white hover:text-black transition-all py-2 px-4`).
 - **Layout**: Fluid container (`container-fluid`), multi-column grid of photo cards with hover overlay effects and centered category titles with action buttons.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Photography Portfolio Layout & Navigation
 
@@ -19,20 +19,20 @@ As a visitor, I want to explore photography categories and browse portfolio work
 
 #### Scenario: Header and Navigation Links
 
-- Given the user loads the Viewfinder homepage
-- Then the header displays the brand "Viewfinder"
-- And navigation links include Home, Gallery (with dropdown), Services, About, and Contact
-- And social media icons (Facebook, Twitter, Instagram, YouTube) are visible in the navbar
+- **GIVEN** the user loads the Viewfinder homepage
+- **THEN** the header displays the brand "Viewfinder"
+- **AND** navigation links include Home, Gallery (with dropdown), Services, About, and Contact
+- **AND** social media icons (Facebook, Twitter, Instagram, YouTube) are visible in the navbar
 
 #### Scenario: Photo Grid Showcase
 
-- Given the user views the main portfolio grid
-- Then 9 photography category cards are displayed (Nature, Portrait, People, Architecture, Animals, Sports, Travel, etc.)
-- And each card features a category title, an "More Photos" outline button, and a responsive image
-- And hovering or viewing the card presents clean contrast against the dark background
+- **GIVEN** the user views the main portfolio grid
+- **THEN** 9 photography category cards are displayed (Nature, Portrait, People, Architecture, Animals, Sports, Travel, etc.)
+- **AND** each card features a category title, an "More Photos" outline button, and a responsive image
+- **AND** hovering or viewing the card presents clean contrast against the dark background
 
 #### Scenario: Footer Attribution
 
-- Given the user scrolls to the bottom of the page
-- Then the footer displays copyright information
-- And a branded link to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** the footer displays copyright information
+- **AND** a branded link to `https://www.componentdock.com/` ("Component Dock")

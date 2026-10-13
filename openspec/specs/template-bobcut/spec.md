@@ -43,75 +43,86 @@ Extracted from `https://preview.colorlib.com/theme/akame/style.css`.
 10. **CTA / Book Appointment** — gray bg. Split: left = heading "Make Stilo Your Number One Choice" + paragraph + two buttons ("Book An Appointment", "Contact Us"), right = background image.
 11. **Footer** — dark background. Columns: about text + social icons, opening times, contact info (phone, email, address), copyright line with "Colorlib" credit.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Bobcut Hair Salon Template
 
 #### Scenario: Top Header Bar renders contact info
-Given a user visits the page
-Then a dark top bar displays "Welcome to hair salon!" on the left
-And displays "Mon-Sat: 8.00 to 17.00" and phone number on the right
+
+- **GIVEN** a user visits the page
+- **THEN** a dark top bar displays "Welcome to hair salon!" on the left
+- **AND** displays "Mon-Sat: 8.00 to 17.00" and phone number on the right
 
 #### Scenario: Navigation displays all links
-Given a user views the navigation
-Then links for Home, Portfolio, Services, About Us, Blog, Contact are visible
-And a logo is displayed on the left
-And the navigation is sticky on scroll
+
+- **GIVEN** a user views the navigation
+- **THEN** links for Home, Portfolio, Services, About Us, Blog, Contact are visible
+- **AND** a logo is displayed on the left
+- **AND** the navigation is sticky on scroll
 
 #### Scenario: Hero section displays headline and CTA
-Given a user sees the hero area
-Then "We Care About Your Hair" heading is displayed
-And an "About Us" button is visible below the heading
-And the background is a full-width image carousel
+
+- **GIVEN** a user sees the hero area
+- **THEN** "We Care About Your Hair" heading is displayed
+- **AND** an "About Us" button is visible below the heading
+- **AND** the background is a full-width image carousel
 
 #### Scenario: About Us section shows salon info
-Given a user scrolls to the About section
-Then a split layout shows an image on the left and text on the right
-And the heading reads "The House of Hair Salon & Spa"
-And a blockquote about salon trends is displayed
-And a "Read More" button is visible
+
+- **GIVEN** a user scrolls to the About section
+- **THEN** a split layout shows an image on the left and text on the right
+- **AND** the heading reads "The House of Hair Salon & Spa"
+- **AND** a blockquote about salon trends is displayed
+- **AND** a "Read More" button is visible
 
 #### Scenario: Services section lists four services
-Given a user views the Services section
-Then "Our Services" heading is centered at the top
-And four service cards are displayed: Coloring, Haircut, Hairstyle, Coloring
-And each card has an icon, title, and description
+
+- **GIVEN** a user views the Services section
+- **THEN** "Our Services" heading is centered at the top
+- **AND** four service cards are displayed: Coloring, Haircut, Hairstyle, Coloring
+- **AND** each card has an icon, title, and description
 
 #### Scenario: Why Choose Us section has split layout
-Given a user sees the Why Choose Us section
-Then the section has a light gray background
-And a large image is shown alongside text content
-And the heading reads "Why Choose Us"
+
+- **GIVEN** a user sees the Why Choose Us section
+- **THEN** the section has a light gray background
+- **AND** a large image is shown alongside text content
+- **AND** the heading reads "Why Choose Us"
 
 #### Scenario: Portfolio section has filterable grid
-Given a user views the Portfolio section
-Then filter tabs are displayed centered above the grid
-And a 4-column image grid is shown
-And portfolio items have hover overlays
+
+- **GIVEN** a user views the Portfolio section
+- **THEN** filter tabs are displayed centered above the grid
+- **AND** a 4-column image grid is shown
+- **AND** portfolio items have hover overlays
 
 #### Scenario: Experts section shows team members
-Given a user scrolls to the Experts section
-Then the heading reads "Our Experts"
-And four team member cards are displayed in a grid
-And each card shows a photo, name, and role
+
+- **GIVEN** a user scrolls to the Experts section
+- **THEN** the heading reads "Our Experts"
+- **AND** four team member cards are displayed in a grid
+- **AND** each card shows a photo, name, and role
 
 #### Scenario: Blog section shows recent posts
-Given a user views the Blog section
-Then the heading reads "Latest News"
-And three blog post cards are displayed
-And each card has an image, title, date, and comment count
+
+- **GIVEN** a user views the Blog section
+- **THEN** the heading reads "Latest News"
+- **AND** three blog post cards are displayed
+- **AND** each card has an image, title, date, and comment count
 
 #### Scenario: CTA section prompts appointment booking
-Given a user sees the CTA section
-Then the heading reads "Make Stilo Your Number One Choice"
-And a "Book An Appointment" button is visible
-And a "Contact Us" button is visible
+
+- **GIVEN** a user sees the CTA section
+- **THEN** the heading reads "Make Stilo Your Number One Choice"
+- **AND** a "Book An Appointment" button is visible
+- **AND** a "Contact Us" button is visible
 
 #### Scenario: Footer displays contact and hours
-Given a user scrolls to the footer
-Then opening hours are displayed
-And contact info includes phone, email, and address
-And a copyright line with "Component Dock" link is shown
+
+- **GIVEN** a user scrolls to the footer
+- **THEN** opening hours are displayed
+- **AND** contact info includes phone, email, and address
+- **AND** a copyright line with "Component Dock" link is shown
 
 ## Verification Checklist
 

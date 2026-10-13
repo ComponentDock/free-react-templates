@@ -16,7 +16,7 @@ Recreation of ColorLib **Accordion 13** (`https://colorlib.com/wp/template/accor
 - **Border Radius:** `4px` (`rounded`)
 - **Accordion Body Text:** `#888888`
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Accordion Panels
 
@@ -24,31 +24,31 @@ As a visitor, I want to expand and collapse accordion items so that I can read d
 
 #### Scenario: Default initial state
 
-- Given the accordion page is loaded
-- When the user views the accordion items
-- Then all accordion items are collapsed by default
-- And each item shows a down-chevron icon and gray border (`#efefef`)
+- **GIVEN** the accordion page is loaded
+- **WHEN** the user views the accordion items
+- **THEN** all accordion items are collapsed by default
+- **AND** each item shows a down-chevron icon and gray border (`#efefef`)
 
 #### Scenario: Expanding a collapsed item
 
-- Given the user is viewing the accordion component
-- When the user clicks on a collapsed accordion item header
-- Then that item expands to reveal its content body
-- And its header transitions to the active green border (`#72c02c`) with green text and up-chevron icon
-- And other items remain in their previous state (multiple items can be open)
+- **GIVEN** the user is viewing the accordion component
+- **WHEN** the user clicks on a collapsed accordion item header
+- **THEN** that item expands to reveal its content body
+- **AND** its header transitions to the active green border (`#72c02c`) with green text and up-chevron icon
+- **AND** other items remain in their previous state (multiple items can be open)
 
 #### Scenario: Collapsing an expanded item
 
-- Given the user has expanded an accordion item
-- When the user clicks on the expanded item header again
-- Then the item collapses and the content is hidden
-- And the header returns to gray border and gray text with down-chevron
+- **GIVEN** the user has expanded an accordion item
+- **WHEN** the user clicks on the expanded item header again
+- **THEN** the item collapses and the content is hidden
+- **AND** the header returns to gray border and gray text with down-chevron
 
 #### Scenario: Component Footer attribution
 
-- Given the accordion page is rendered
-- When the user scrolls to the bottom of the page
-- Then a footer is visible containing copyright information and a link to `https://www.componentdock.com/` ("Component Dock").
+- **GIVEN** the accordion page is rendered
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** a footer is visible containing copyright information and a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

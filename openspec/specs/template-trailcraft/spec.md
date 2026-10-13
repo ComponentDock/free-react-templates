@@ -160,7 +160,9 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Button radius:** Bootstrap default (0.25rem)
 - **Card height:** 300px (destination entries)
 
-## Gherkin requirements
+## Requirements
+
+### Feature: Trailcraft template behaviour
 
 Feature: Trailcraft Travel Agency Template
   As a visitor to a travel agency website
@@ -168,126 +170,158 @@ Feature: Trailcraft Travel Agency Template
   So that I can plan my next adventure
 
   Background:
-    Given the Trailcraft template is loaded
-    And the viewport is at desktop width (≥1200px)
+- **GIVEN** the Trailcraft template is loaded
+- **AND** the viewport is at desktop width (≥1200px)
 
-  # --- Navbar ---
-  Scenario: Navbar displays brand and navigation links
-    Then I should see the brand "Trailcraft" in the navbar
-    And I should see navigation links: Home, About, Places, Hotels, Blog, Contact
-    And the "Home" link should be visually active/highlighted
+**--- Navbar ---**
 
-  Scenario: Navbar becomes sticky on scroll
-    When I scroll down past the hero section
-    Then the navbar should become sticky at the top
-    And it should have a white/light background
+#### Scenario: Navbar displays brand and navigation links
 
-  # --- Hero ---
-  Scenario: Hero section displays with background and heading
-    Then I should see a full-height hero section
-    And it should display the heading "Discover A new Place"
-    And it should display the subtext about finding places to stay, eat, shop
-    And it should have a dark overlay over the background image
+- **THEN** I should see the brand "Trailcraft" in the navbar
+- **AND** I should see navigation links: Home, About, Places, Hotels, Blog, Contact
+- **AND** the "Home" link should be visually active/highlighted
 
-  # --- Search Tabs ---
-  Scenario: Search tabs show Flight, Hotel, Car Rent options
-    Then I should see three tabs: Flight, Hotel, Car Rent
-    And the Flight tab should be active by default
+#### Scenario: Navbar becomes sticky on scroll
 
-  Scenario: Flight search form displays correct fields
-    Given the Flight tab is active
-    Then I should see form fields: From, Where, Check In, Check Out, Travelers
-    And I should see a "Search" button with primary color
+- **WHEN** I scroll down past the hero section
+- **THEN** the navbar should become sticky at the top
+- **AND** it should have a white/light background
 
-  Scenario: Hotel search form displays correct fields
-    When I click the "Hotel" tab
-    Then I should see form fields: Check In, Check Out, Guest
-    And I should see a "Search" button
+**--- Hero ---**
 
-  Scenario: Car Rent search form displays correct fields
-    When I click the "Car Rent" tab
-    Then I should see form fields: Where, Check In, Check Out
-    And I should see a "Search" button
+#### Scenario: Hero section displays with background and heading
 
-  # --- Intro Features ---
-  Scenario: Intro section shows three feature columns
-    Given I scroll to the intro section
-    Then I should see three columns with headings: Travel, Experience, Relax
-    And each column should have a numbered badge (01, 02, 03)
-    And each column should have a descriptive paragraph
-    And the section should have a light background
+- **THEN** I should see a full-height hero section
+- **AND** it should display the heading "Discover A new Place"
+- **AND** it should display the subtext about finding places to stay, eat, shop
+- **AND** it should have a dark overlay over the background image
 
-  # --- Latest Vacation Ideas ---
-  Scenario: Vacation ideas section shows three cards
-    Given I scroll to the vacation ideas section
-    Then I should see the heading "See our latest vacation ideas"
-    And I should see three destination cards: Beachfront Scape, Group Holidays, City Breaks
-    And each card should have a background image and text overlay
+**--- Search Tabs ---**
 
-  # --- About / Best Travel Agency ---
-  Scenario: About section displays agency information
-    Given I scroll to the about section
-    Then I should see the heading "The Best Travel Agency"
-    And I should see an image alongside descriptive text
-    And the layout should be side-by-side (two columns)
+#### Scenario: Search tabs show Flight, Hotel, Car Rent options
 
-  # --- Services ---
-  Scenario: Services section shows four service cards
-    Given I scroll to the services section
-    Then I should see four services: Special Activities, Travel Arrangements, Private Guide, Location Manager
-    And each service should have an icon and description paragraph
-    And the section should have a light background
+- **THEN** I should see three tabs: Flight, Hotel, Car Rent
+- **AND** the Flight tab should be active by default
 
-  # --- Popular Destinations ---
-  Scenario: Destinations section shows destination cards
-    Given I scroll to the destinations section
-    Then I should see the heading "Most Popular Destination"
-    And I should see destination cards with: image, name, star rating, price, description, duration
-    And each card should have a "Discover" link
+#### Scenario: Flight search form displays correct fields
 
-  # --- Counter Stats ---
-  Scenario: Counter section shows animated statistics
-    Given I scroll to the counter section
-    Then I should see 4 statistics with animated counters
-    And the section should have a parallax background image
+- **GIVEN** the Flight tab is active
+- **THEN** I should see form fields: From, Where, Check In, Check Out, Travelers
+- **AND** I should see a "Search" button with primary color
 
-  # --- Testimonials ---
-  Scenario: Testimonials carousel displays customer reviews
-    Given I scroll to the testimonials section
-    Then I should see the heading "Our satisfied customer says"
-    And I should see testimonial cards with avatar, star rating, quote, and customer name
-    And the testimonials should be in a carousel format
+#### Scenario: Hotel search form displays correct fields
 
-  # --- Recommended Restaurants ---
-  Scenario: Restaurants section shows restaurant cards
-    Given I scroll to the restaurants section
-    Then I should see the heading "Recommended Restaurants"
-    And I should see restaurant cards with image and name
+- **WHEN** I click the "Hotel" tab
+- **THEN** I should see form fields: Check In, Check Out, Guest
+- **AND** I should see a "Search" button
 
-  # --- Newsletter CTA ---
-  Scenario: Newsletter section accepts email subscriptions
-    Given I scroll to the newsletter section
-    Then I should see the heading "Subcribe to our Newsletter"
-    And I should see an email input field
-    And I should see a "Subscribe" button
-    And the section should have a parallax background image with dark overlay
+#### Scenario: Car Rent search form displays correct fields
 
-  # --- Footer ---
-  Scenario: Footer displays brand, links, and contact info
-    Given I scroll to the footer
-    Then I should see the brand "Trailcraft" with description
-    And I should see social media icons (Twitter, Facebook, Instagram)
-    And I should see four link columns: Brand, Information, Experience, Contact
-    And I should see contact information: address, phone, email
-    And I should see a copyright bar with Component Dock attribution
+- **WHEN** I click the "Car Rent" tab
+- **THEN** I should see form fields: Where, Check In, Check Out
+- **AND** I should see a "Search" button
 
-  # --- Responsive ---
-  Scenario: Template is responsive on mobile
-    Given the viewport width is 375px
-    Then the navbar should show a hamburger toggle
-    And the search tabs should stack vertically
-    And the destination cards should stack in a single column
-    And the footer columns should stack vertically
+**--- Intro Features ---**
+
+#### Scenario: Intro section shows three feature columns
+
+- **GIVEN** I scroll to the intro section
+- **THEN** I should see three columns with headings: Travel, Experience, Relax
+- **AND** each column should have a numbered badge (01, 02, 03)
+- **AND** each column should have a descriptive paragraph
+- **AND** the section should have a light background
+
+**--- Latest Vacation Ideas ---**
+
+#### Scenario: Vacation ideas section shows three cards
+
+- **GIVEN** I scroll to the vacation ideas section
+- **THEN** I should see the heading "See our latest vacation ideas"
+- **AND** I should see three destination cards: Beachfront Scape, Group Holidays, City Breaks
+- **AND** each card should have a background image and text overlay
+
+**--- About / Best Travel Agency ---**
+
+#### Scenario: About section displays agency information
+
+- **GIVEN** I scroll to the about section
+- **THEN** I should see the heading "The Best Travel Agency"
+- **AND** I should see an image alongside descriptive text
+- **AND** the layout should be side-by-side (two columns)
+
+**--- Services ---**
+
+#### Scenario: Services section shows four service cards
+
+- **GIVEN** I scroll to the services section
+- **THEN** I should see four services: Special Activities, Travel Arrangements, Private Guide, Location Manager
+- **AND** each service should have an icon and description paragraph
+- **AND** the section should have a light background
+
+**--- Popular Destinations ---**
+
+#### Scenario: Destinations section shows destination cards
+
+- **GIVEN** I scroll to the destinations section
+- **THEN** I should see the heading "Most Popular Destination"
+- **AND** I should see destination cards with: image, name, star rating, price, description, duration
+- **AND** each card should have a "Discover" link
+
+**--- Counter Stats ---**
+
+#### Scenario: Counter section shows animated statistics
+
+- **GIVEN** I scroll to the counter section
+- **THEN** I should see 4 statistics with animated counters
+- **AND** the section should have a parallax background image
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials carousel displays customer reviews
+
+- **GIVEN** I scroll to the testimonials section
+- **THEN** I should see the heading "Our satisfied customer says"
+- **AND** I should see testimonial cards with avatar, star rating, quote, and customer name
+- **AND** the testimonials should be in a carousel format
+
+**--- Recommended Restaurants ---**
+
+#### Scenario: Restaurants section shows restaurant cards
+
+- **GIVEN** I scroll to the restaurants section
+- **THEN** I should see the heading "Recommended Restaurants"
+- **AND** I should see restaurant cards with image and name
+
+**--- Newsletter CTA ---**
+
+#### Scenario: Newsletter section accepts email subscriptions
+
+- **GIVEN** I scroll to the newsletter section
+- **THEN** I should see the heading "Subcribe to our Newsletter"
+- **AND** I should see an email input field
+- **AND** I should see a "Subscribe" button
+- **AND** the section should have a parallax background image with dark overlay
+
+**--- Footer ---**
+
+#### Scenario: Footer displays brand, links, and contact info
+
+- **GIVEN** I scroll to the footer
+- **THEN** I should see the brand "Trailcraft" with description
+- **AND** I should see social media icons (Twitter, Facebook, Instagram)
+- **AND** I should see four link columns: Brand, Information, Experience, Contact
+- **AND** I should see contact information: address, phone, email
+- **AND** I should see a copyright bar with Component Dock attribution
+
+**--- Responsive ---**
+
+#### Scenario: Template is responsive on mobile
+
+- **GIVEN** the viewport width is 375px
+- **THEN** the navbar should show a hamburger toggle
+- **AND** the search tabs should stack vertically
+- **AND** the destination cards should stack in a single column
+- **AND** the footer columns should stack vertically
 
 ## Verification checklist
 

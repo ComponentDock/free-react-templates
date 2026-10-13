@@ -69,107 +69,121 @@ Extracted from `https://colorlib.com/etc/searchf/colorlib-search-15/css/style.cs
    - Class radio buttons: First Class / Business / Economy
    - "search" button
 
-## Gherkin Scenarios
+## Requirements
 
 ### Background
 
-Given a user visits the Querypad page, a full-viewport travel-themed background image is visible and a dark semi-transparent card is centered on the page.
+#### Scenario: Background
+
+- **GIVEN** a user visits the Querypad page, a full-viewport travel-themed background image is visible and a dark semi-transparent card is centered on the page
 
 ### Tab Navigation
 
-Scenario: Default tab is hotels
-  Given the page loads
-  Then the "hotels" tab is active by default
-  And the hotels form pane is visible
-  And the car and flight panes are hidden
+#### Scenario: Default tab is hotels
 
-Scenario: Switch to car tab
-  Given the page loads
-  When the user clicks the "car" tab
-  Then the car form pane becomes visible
-  And the hotels and flight panes are hidden
-  And the "car" tab is visually active
+- **GIVEN** the page loads
+- **THEN** the "hotels" tab is active by default
+- **AND** the hotels form pane is visible
+- **AND** the car and flight panes are hidden
 
-Scenario: Switch to flight tab
-  Given the page loads
-  When the user clicks the "flight" tab
-  Then the flight form pane becomes visible
-  And the hotels and car panes are hidden
-  And the "flight" tab is visually active
+#### Scenario: Switch to car tab
+
+- **GIVEN** the page loads
+- **WHEN** the user clicks the "car" tab
+- **THEN** the car form pane becomes visible
+- **AND** the hotels and flight panes are hidden
+- **AND** the "car" tab is visually active
+
+#### Scenario: Switch to flight tab
+
+- **GIVEN** the page loads
+- **WHEN** the user clicks the "flight" tab
+- **THEN** the flight form pane becomes visible
+- **AND** the hotels and car panes are hidden
+- **AND** the "flight" tab is visually active
 
 ### Hotels Form
 
-Scenario: Hotels form fields are present
-  Given the hotels tab is active
-  Then a "Going to" text input with placeholder "Destination, hotel name" is visible
-  And a check-in date input is visible
-  And a check-out date input is visible
-  And a "Travellers" input showing "1 Adult, 0 Children, 1 Room" is visible
-  And an "Add a flight" checkbox is visible and checked by default
-  And an "Add a car" checkbox is visible and unchecked by default
-  And a green "search" button is visible
+#### Scenario: Hotels form fields are present
 
-Scenario: Traverer dropdown opens
-  Given the hotels tab is active
-  When the user clicks the travellers input
-  Then a dropdown appears with Room 1 containing Adults and Children counters
-  And an "Add room" link is visible
+- **GIVEN** the hotels tab is active
+- **THEN** a "Going to" text input with placeholder "Destination, hotel name" is visible
+- **AND** a check-in date input is visible
+- **AND** a check-out date input is visible
+- **AND** a "Travellers" input showing "1 Adult, 0 Children, 1 Room" is visible
+- **AND** an "Add a flight" checkbox is visible and checked by default
+- **AND** an "Add a car" checkbox is visible and unchecked by default
+- **AND** a green "search" button is visible
 
-Scenario: Traveller counter increment
-  Given the travellers dropdown is open
-  When the user clicks the "+" button on Adults counter
-  Then the adults count increases by 1
+#### Scenario: Traverer dropdown opens
 
-Scenario: Traveller counter decrement
-  Given the travellers dropdown is open
-  When the users clicks the "-" button on Adults counter
-  Then the adults count decreases by 1 (minimum 0)
+- **GIVEN** the hotels tab is active
+- **WHEN** the user clicks the travellers input
+- **THEN** a dropdown appears with Room 1 containing Adults and Children counters
+- **AND** an "Add room" link is visible
+
+#### Scenario: Traveller counter increment
+
+- **GIVEN** the travellers dropdown is open
+- **WHEN** the user clicks the "+" button on Adults counter
+- **THEN** the adults count increases by 1
+
+#### Scenario: Traveller counter decrement
+
+- **GIVEN** the travellers dropdown is open
+- **WHEN** the users clicks the "-" button on Adults counter
+- **THEN** the adults count decreases by 1 (minimum 0)
 
 ### Car Form
 
-Scenario: Car form fields are present
-  Given the car tab is active
-  Then a "Location" text input is visible
-  And a "Driver age" select with values (23–26, default 25) is visible
-  And a "Car group" select with values (Group S-car, Group 1, 2, 3) is visible
-  And a "Pick up" date input is visible
-  And a "Time" select for pick-up is visible (default 10:00 AM)
-  And a "Drop off" date input is visible
-  And a "Time" select for drop-off is visible (default 10:00 AM)
-  And a green "search" button is visible
+#### Scenario: Car form fields are present
+
+- **GIVEN** the car tab is active
+- **THEN** a "Location" text input is visible
+- **AND** a "Driver age" select with values (23–26, default 25) is visible
+- **AND** a "Car group" select with values (Group S-car, Group 1, 2, 3) is visible
+- **AND** a "Pick up" date input is visible
+- **AND** a "Time" select for pick-up is visible (default 10:00 AM)
+- **AND** a "Drop off" date input is visible
+- **AND** a "Time" select for drop-off is visible (default 10:00 AM)
+- **AND** a green "search" button is visible
 
 ### Flight Form
 
-Scenario: Flight form fields are present
-  Given the flight tab is active
-  Then an "Origin" text input with placeholder "City or airport" is visible
-  And a "Destination" text input with placeholder "City or airport" is visible
-  And a "Departing" date input is visible
-  And a "Returning" date input is visible
-  And radio buttons for First Class, Business, Economy are visible
-  And Economy is selected by default
-  And a green "search" button is visible
+#### Scenario: Flight form fields are present
 
-Scenario: Flight class selection
-  Given the flight tab is active
-  When the user clicks "First Class" radio
-  Then First Class becomes selected
-  And Economy becomes deselected
+- **GIVEN** the flight tab is active
+- **THEN** an "Origin" text input with placeholder "City or airport" is visible
+- **AND** a "Destination" text input with placeholder "City or airport" is visible
+- **AND** a "Departing" date input is visible
+- **AND** a "Returning" date input is visible
+- **AND** radio buttons for First Class, Business, Economy are visible
+- **AND** Economy is selected by default
+- **AND** a green "search" button is visible
+
+#### Scenario: Flight class selection
+
+- **GIVEN** the flight tab is active
+- **WHEN** the user clicks "First Class" radio
+- **THEN** First Class becomes selected
+- **AND** Economy becomes deselected
 
 ### Visual Design
 
-Scenario: Card styling
-  Given the page loads
-  Then the card has a dark navy background at 90% opacity
-  And the card has 10px border-radius
-  And form input groups have white backgrounds with 10px border-radius
-  And the submit button is green (#00ad5f) with white text and 10px border-radius
+#### Scenario: Card styling
 
-Scenario: Responsive layout
-  Given the page loads on a mobile viewport (< 768px)
-  Then 2-column rows stack to single column
-  And the card padding adjusts for smaller screens
-  And tab links reduce to 22px font size
+- **GIVEN** the page loads
+- **THEN** the card has a dark navy background at 90% opacity
+- **AND** the card has 10px border-radius
+- **AND** form input groups have white backgrounds with 10px border-radius
+- **AND** the submit button is green (#00ad5f) with white text and 10px border-radius
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the page loads on a mobile viewport (< 768px)
+- **THEN** 2-column rows stack to single column
+- **AND** the card padding adjusts for smaller screens
+- **AND** tab links reduce to 22px font size
 
 ## Verification Checklist
 

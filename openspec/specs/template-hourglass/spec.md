@@ -78,82 +78,93 @@ sections, and rounded CTA buttons.
     button, (c) Follow Us with 4 social icon links. Footer links to
     Component Dock per monorepo convention.
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Hourglass template behaviour
+
 Feature: Hourglass Landing Page
 
-  Background:
-    Given the user visits the Hourglass landing page
+Background:
+- **GIVEN** the user visits the Hourglass landing page
 
-  Scenario: Navbar displays all navigation links
-    Then the navbar shows links: Home, About, Service, Unique Feature, Review, FAQ
-    And the navbar has a logo on the left
+#### Scenario: Navbar displays all navigation links
 
-  Scenario: Hero banner renders with CTA
-    Given the hero banner is visible
-    Then the banner heading reads "Smart New Future"
-    And the banner subtitle reads "Now you can feel the Heat"
-    And there is a "Buy Now" button
-    When the user clicks "Buy Now"
-    Then the page scrolls to the content area
+- **THEN** the navbar shows links: Home, About, Service, Unique Feature, Review, FAQ
+- **AND** the navbar has a logo on the left
 
-  Scenario: Video section shows play overlay
-    Given the video section is visible
-    Then there is a video thumbnail with a play button overlay
-    And the left side shows a heading and description
-    And there is a "Get Started now" button
+#### Scenario: Hero banner renders with CTA
 
-  Scenario: Top courses grid displays 4 feature cards
-    Given the courses section is visible
-    Then there are 4 feature cards displayed
-    And each card has an icon, title, and description
-    And a center product image is shown between the card columns
+- **GIVEN** the hero banner is visible
+- **THEN** the banner heading reads "Smart New Future"
+- **AND** the banner subtitle reads "Now you can feel the Heat"
+- **AND** there is a "Buy Now" button
+- **WHEN** the user clicks "Buy Now"
+- **THEN** the page scrolls to the content area
 
-  Scenario: About section shows split layout
-    Given the about section is visible
-    Then there is an image on the left
-    And the heading "Globally Connected by Large Network" is on the right
-    And there is a "get details" CTA button
+#### Scenario: Video section shows play overlay
 
-  Scenario: Service section shows 3 feature cards
-    Given the service section is visible
-    Then there are 3 service cards displayed
-    And each card has an icon, title, and description
+- **GIVEN** the video section is visible
+- **THEN** there is a video thumbnail with a play button overlay
+- **AND** the left side shows a heading and description
+- **AND** there is a "Get Started now" button
 
-  Scenario: Unique features section shows 4 product cards
-    Given the unique features section is visible
-    Then there are 4 product cards displayed
-    And each card shows a product image, name, price, and "Pre Order" button
-    And the section has a colored/dark background
+#### Scenario: Top courses grid displays 4 feature cards
 
-  Scenario: Review section shows testimonial cards with ratings
-    Given the review section is visible
-    Then there are 7 review cards displayed in a grid
-    And each card shows a reviewer name, review text, and star rating
-    And star ratings use filled/unfilled star icons
+- **GIVEN** the courses section is visible
+- **THEN** there are 4 feature cards displayed
+- **AND** each card has an icon, title, and description
+- **AND** a center product image is shown between the card columns
 
-  Scenario: FAQ accordion expands and collapses
-    Given the FAQ section is visible
-    Then there are 4 accordion items displayed
-    When the user clicks the first FAQ question
-    Then the answer becomes visible
-    When the user clicks the same question again
-    Then the answer collapses
+#### Scenario: About section shows split layout
 
-  Scenario: Footer has three columns
-    Given the footer is visible
-    Then there is an "About Us" column with description text
-    And there is a "Newsletter" column with an email input
-    And there is a "Follow Us" column with social icons
-    And the footer links to Component Dock
+- **GIVEN** the about section is visible
+- **THEN** there is an image on the left
+- **AND** the heading "Globally Connected by Large Network" is on the right
+- **AND** there is a "get details" CTA button
 
-  Scenario: Navigation links scroll to sections
-    When the user clicks "About" in the navbar
-    Then the page scrolls to the about section
-    When the user clicks "Service" in the navbar
-    Then the page scrolls to the service section
-```
+#### Scenario: Service section shows 3 feature cards
+
+- **GIVEN** the service section is visible
+- **THEN** there are 3 service cards displayed
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Unique features section shows 4 product cards
+
+- **GIVEN** the unique features section is visible
+- **THEN** there are 4 product cards displayed
+- **AND** each card shows a product image, name, price, and "Pre Order" button
+- **AND** the section has a colored/dark background
+
+#### Scenario: Review section shows testimonial cards with ratings
+
+- **GIVEN** the review section is visible
+- **THEN** there are 7 review cards displayed in a grid
+- **AND** each card shows a reviewer name, review text, and star rating
+- **AND** star ratings use filled/unfilled star icons
+
+#### Scenario: FAQ accordion expands and collapses
+
+- **GIVEN** the FAQ section is visible
+- **THEN** there are 4 accordion items displayed
+- **WHEN** the user clicks the first FAQ question
+- **THEN** the answer becomes visible
+- **WHEN** the user clicks the same question again
+- **THEN** the answer collapses
+
+#### Scenario: Footer has three columns
+
+- **GIVEN** the footer is visible
+- **THEN** there is an "About Us" column with description text
+- **AND** there is a "Newsletter" column with an email input
+- **AND** there is a "Follow Us" column with social icons
+- **AND** the footer links to Component Dock
+
+#### Scenario: Navigation links scroll to sections
+
+- **WHEN** the user clicks "About" in the navbar
+- **THEN** the page scrolls to the about section
+- **WHEN** the user clicks "Service" in the navbar
+- **THEN** the page scrolls to the service section
 
 ## Verification Checklist
 

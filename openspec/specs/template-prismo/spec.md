@@ -33,142 +33,133 @@ website template. Single-page React app; all sections on one page.
 | CTA banner         | Green bg (`#00d089`) or image      | "Let's create something awesome"           |
 | Footer bg          | Dark (dark surface)                | 4-column footer                            |
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
 
-  Scenario: Logo and navigation links
-    Given the user visits the page
-    Then a navbar is visible at the top
-    And it contains links: Home, About, Services, Blog, Pages (dropdown), Contact
-    And social icons (Facebook, Twitter, Dribbble, Instagram) appear on desktop
-    And a hamburger menu toggle appears on mobile
+#### Scenario: Logo and navigation links
 
-  Scenario: Sticky navbar on scroll
-    Given the user scrolls down
-    Then the navbar becomes sticky with a subtle shadow
-```
+- **GIVEN** the user visits the page
+- **THEN** a navbar is visible at the top
+- **AND** it contains links: Home, About, Services, Blog, Pages (dropdown), Contact
+- **AND** social icons (Facebook, Twitter, Dribbble, Instagram) appear on desktop
+- **AND** a hamburger menu toggle appears on mobile
+
+#### Scenario: Sticky navbar on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar becomes sticky with a subtle shadow
 
 ### Hero / Banner
 
-```gherkin
 Feature: Hero Banner
 
-  Scenario: Hero displays headline and CTA
-    Given the user visits the page
-    Then a hero banner is visible
-    And it contains subtitle "We are digital agency"
-    And headline "Digital and innovative idea"
-    And a CTA button "Explore Work"
-    And the background is a dark overlay image
-```
+#### Scenario: Hero displays headline and CTA
+
+- **GIVEN** the user visits the page
+- **THEN** a hero banner is visible
+- **AND** it contains subtitle "We are digital agency"
+- **AND** headline "Digital and innovative idea"
+- **AND** a CTA button "Explore Work"
+- **AND** the background is a dark overlay image
 
 ### Client Logos
 
-```gherkin
 Feature: Client Logo Carousel
 
-  Scenario: Logo carousel displays partner logos
-    Given the user scrolls to the client logos section
-    Then a horizontal carousel of 6+ partner logos is visible
-    And the logos auto-scroll in an infinite loop
-```
+#### Scenario: Logo carousel displays partner logos
+
+- **GIVEN** the user scrolls to the client logos section
+- **THEN** a horizontal carousel of 6+ partner logos is visible
+- **AND** the logos auto-scroll in an infinite loop
 
 ### About Us
 
-```gherkin
 Feature: About Section
 
-  Scenario: About section shows company info
-    Given the user scrolls to the About section
-    Then subtitle "About Us" is shown in brand green
-    And heading "Digital design and development company"
-    And a paragraph of body text
-    And a CTA button "explore us"
-    And an illustration image on the right
-```
+#### Scenario: About section shows company info
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** subtitle "About Us" is shown in brand green
+- **AND** heading "Digital design and development company"
+- **AND** a paragraph of body text
+- **AND** a CTA button "explore us"
+- **AND** an illustration image on the right
 
 ### Services
 
-```gherkin
 Feature: Services Section
 
-  Scenario: Three service cards are displayed
-    Given the user scrolls to the services section
-    Then 3 numbered service cards are shown (01, 02, 03)
-    And each card has a heading, description paragraph, and bullet list
-    And card 01 is "User experience design"
-    And card 02 is "Web and App development"
-    And card 03 is "Digital and innovative marketing"
-```
+#### Scenario: Three service cards are displayed
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 3 numbered service cards are shown (01, 02, 03)
+- **AND** each card has a heading, description paragraph, and bullet list
+- **AND** card 01 is "User experience design"
+- **AND** card 02 is "Web and App development"
+- **AND** card 03 is "Digital and innovative marketing"
 
 ### Projects / Portfolio
 
-```gherkin
 Feature: Projects Section
 
-  Scenario: Portfolio grid with filters
-    Given the user scrolls to the projects section
-    Then subtitle "our project" and heading "Our Projects" are shown
-    And filter tabs "All", "Web Design", "Mobile App" are visible
-    And 2 project cards are shown with images
-    And hovering a card shows an overlay with category + title
-    And a "more projects" link is visible on desktop
-```
+#### Scenario: Portfolio grid with filters
+
+- **GIVEN** the user scrolls to the projects section
+- **THEN** subtitle "our project" and heading "Our Projects" are shown
+- **AND** filter tabs "All", "Web Design", "Mobile App" are visible
+- **AND** 2 project cards are shown with images
+- **AND** hovering a card shows an overlay with category + title
+- **AND** a "more projects" link is visible on desktop
 
 ### Creative / Video Section
 
-```gherkin
 Feature: Creative Section
 
-  Scenario: Full-width creative section with video CTA
-    Given the user scrolls to the creative section
-    Then heading "We work hard and think creatively"
-    And a paragraph + quote
-    And a "See how we work" link with play icon (YouTube popup)
-    And an illustration image on the left
-```
+#### Scenario: Full-width creative section with video CTA
+
+- **GIVEN** the user scrolls to the creative section
+- **THEN** heading "We work hard and think creatively"
+- **AND** a paragraph + quote
+- **AND** a "See how we work" link with play icon (YouTube popup)
+- **AND** an illustration image on the left
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials Section
 
-  Scenario: Client testimonials carousel
-    Given the user scrolls to the testimonials section
-    Then subtitle "Testimonials" and heading "What our Client say"
-    And a carousel of at least 2 testimonials
-    And each testimonial has an avatar, name, role, and quote
-```
+#### Scenario: Client testimonials carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** subtitle "Testimonials" and heading "What our Client say"
+- **AND** a carousel of at least 2 testimonials
+- **AND** each testimonial has an avatar, name, role, and quote
 
 ### CTA Banner
 
-```gherkin
 Feature: CTA Banner
 
-  Scenario: Call-to-action banner
-    Given the user scrolls to the CTA section
-    Then heading "Let's create something awesome together"
-    And a CTA button "Discuss project"
-    And the background is brand green or a dark overlay image
-```
+#### Scenario: Call-to-action banner
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** heading "Let's create something awesome together"
+- **AND** a CTA button "Discuss project"
+- **AND** the background is brand green or a dark overlay image
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: 4-column footer
-    Given the user scrolls to the footer
-    Then 4 columns are shown: brand info + nav, Company links, Resources links, Contact info
-    And social icons are visible
-    And contact info shows 2 office locations (London, New York)
-    And the footer links to https://www.componentdock.com/
-    And a "More templates at Component Dock" or equivalent line is present
-```
+#### Scenario: 4-column footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are shown: brand info + nav, Company links, Resources links, Contact info
+- **AND** social icons are visible
+- **AND** contact info shows 2 office locations (London, New York)
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** a "More templates at Component Dock" or equivalent line is present
 
 ## Verification Checklist
 

@@ -51,115 +51,141 @@ Extracted from the live preview CSS (`style.css` at `https://preview.colorlib.co
 | 7   | reservation    | `Reservation`  | Two-column: left = heading "Reservation" + subtext "Reserve Your Desk", right = form with fields (Select Persons dropdown, Last Name input, date/time). CTA button.                                           |
 | 8   | footer         | `Footer`       | Dark background (#333333). Logo "Canape" + copyright "All rights reserved". Centered text.                                                                                                                    |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Canape Restaurant Template
 
-```gherkin
 Feature: Canape Restaurant Template
-  As a visitor to Canape,
-  I want to browse a restaurant website,
-  So that I can learn about the restaurant, view the menu, and make a reservation.
+As a visitor to Canape,
+I want to browse a restaurant website,
+So that I can learn about the restaurant, view the menu, and make a reservation.
 
-  Background:
-    Given the user visits "canape.free.componentdock.com"
-    And the page has loaded successfully
+Background:
+- **GIVEN** the user visits "canape.free.componentdock.com"
+- **AND** the page has loaded successfully
 
-  # --- Header ---
-  Scenario: Fixed header displays navigation
-    Then the header is fixed at the top of the page
-    And the header contains the logo "Canape"
-    And the navigation shows links: "About Us", "Menu", "Awards", "Testimonials", "Reservation"
-    And clicking each nav link scrolls to the corresponding section
+**--- Header ---**
 
-  Scenario: Header has search icon
-    Then a search icon is visible in the header navigation
+#### Scenario: Fixed header displays navigation
 
-  # --- Hero ---
-  Scenario: Hero section displays image slider
-    Then the hero section displays a full-width image slider
-    And the slider shows at least 2 slides
-    And each slide has a headline and a call-to-action button
+- **THEN** the header is fixed at the top of the page
+- **AND** the header contains the logo "Canape"
+- **AND** the navigation shows links: "About Us", "Menu", "Awards", "Testimonials", "Reservation"
+- **AND** clicking each nav link scrolls to the corresponding section
 
-  Scenario: Hero CTA navigates to reservation
-    Then each slide has a red/white "Reservation" button
-    And clicking the button scrolls to the reservation section
+#### Scenario: Header has search icon
 
-  Scenario: Slider has navigation arrows
-    Then left and right navigation arrows are visible on the slider
-    And clicking arrows advances or reverses the slide
+- **THEN** a search icon is visible in the header navigation
 
-  # --- About Us ---
-  Scenario: About Us section shows restaurant description
-    Then the section heading reads "About Us"
-    And a subtitle "restaurant style" is displayed
-    And a descriptive paragraph about the restaurant is shown
-    And two food/chef images are displayed on the left side
+**--- Hero ---**
 
-  Scenario: About Us has chef subsection
-    Then a sub-heading "our chef" is displayed
-    And a descriptive paragraph about the chef is shown
+#### Scenario: Hero section displays image slider
 
-  Scenario: About Us has menu CTA
-    Then a "View The Menu" button is displayed
-    And clicking it scrolls to the menu section
+- **THEN** the hero section displays a full-width image slider
+- **AND** the slider shows at least 2 slides
+- **AND** each slide has a headline and a call-to-action button
 
-  # --- Special Menu ---
-  Scenario: Menu section displays dish cards
-    Then the section heading reads "Special"
-    And at least 3 dish cards are displayed in a grid
-    And each card shows a dish image, dish name, and price
+#### Scenario: Hero CTA navigates to reservation
 
-  Scenario: Menu section has CTA
-    Then a "View The Menu" button is displayed
+- **THEN** each slide has a red/white "Reservation" button
+- **AND** clicking the button scrolls to the reservation section
 
-  Scenario: Menu items show hover effect
-    Then hovering over a dish card reveals additional info or changes appearance
+#### Scenario: Slider has navigation arrows
 
-  # --- Awards ---
-  Scenario: Awards section shows badges
-    Then the section heading reads "Awards"
-    And at least 5 award badge/logo images are displayed in a row
+- **THEN** left and right navigation arrows are visible on the slider
+- **AND** clicking arrows advances or reverses the slide
 
-  # --- Testimonials ---
-  Scenario: Testimonials section displays reviews
-    Then the section heading reads "Testimonials"
-    And at least 2 testimonial cards are shown
-    And each card has an author photo, author name, and testimonial text
+**--- About Us ---**
 
-  # --- Reservation ---
-  Scenario: Reservation section has booking form
-    Then the section heading reads "Reservation"
-    And subtext "Reserve Your Desk" is displayed
-    And a form is visible with at least a persons selector and last name input
+#### Scenario: About Us section shows restaurant description
 
-  Scenario: Reservation form is interactive
-    Then the persons selector shows a dropdown with options
-    And the last name field accepts text input
+- **THEN** the section heading reads "About Us"
+- **AND** a subtitle "restaurant style" is displayed
+- **AND** a descriptive paragraph about the restaurant is shown
+- **AND** two food/chef images are displayed on the left side
 
-  # --- Footer ---
-  Scenario: Footer displays brand and copyright
-    Then the footer has a dark background (#333333)
-    And the footer shows the "Canape" logo/text
-    And a copyright notice is displayed
-    And a link to "https://www.componentdock.com/" is present (branded "Component Dock")
+#### Scenario: About Us has chef subsection
 
-  # --- Design Fidelity ---
-  Scenario: Typography matches source
-    Then body text uses "Open Sans" font family
-    And headings and buttons use "Work Sans" font family
+- **THEN** a sub-heading "our chef" is displayed
+- **AND** a descriptive paragraph about the chef is shown
 
-  Scenario: Button style matches source
-    Then CTA buttons are square (no border-radius)
-    And buttons have a thin gray border (#b2b2b2)
-    And buttons have white background with black text
-    And buttons have minimum width 180px and height 54px
+#### Scenario: About Us has menu CTA
 
-  Scenario: Color palette matches source
-    Then the primary accent color is red (#ff0000)
-    And the footer background is dark gray (#333333)
-    And section backgrounds alternate between white and light gray (#fafafa)
-```
+- **THEN** a "View The Menu" button is displayed
+- **AND** clicking it scrolls to the menu section
+
+**--- Special Menu ---**
+
+#### Scenario: Menu section displays dish cards
+
+- **THEN** the section heading reads "Special"
+- **AND** at least 3 dish cards are displayed in a grid
+- **AND** each card shows a dish image, dish name, and price
+
+#### Scenario: Menu section has CTA
+
+- **THEN** a "View The Menu" button is displayed
+
+#### Scenario: Menu items show hover effect
+
+- **THEN** hovering over a dish card reveals additional info or changes appearance
+
+**--- Awards ---**
+
+#### Scenario: Awards section shows badges
+
+- **THEN** the section heading reads "Awards"
+- **AND** at least 5 award badge/logo images are displayed in a row
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section displays reviews
+
+- **THEN** the section heading reads "Testimonials"
+- **AND** at least 2 testimonial cards are shown
+- **AND** each card has an author photo, author name, and testimonial text
+
+**--- Reservation ---**
+
+#### Scenario: Reservation section has booking form
+
+- **THEN** the section heading reads "Reservation"
+- **AND** subtext "Reserve Your Desk" is displayed
+- **AND** a form is visible with at least a persons selector and last name input
+
+#### Scenario: Reservation form is interactive
+
+- **THEN** the persons selector shows a dropdown with options
+- **AND** the last name field accepts text input
+
+**--- Footer ---**
+
+#### Scenario: Footer displays brand and copyright
+
+- **THEN** the footer has a dark background (#333333)
+- **AND** the footer shows the "Canape" logo/text
+- **AND** a copyright notice is displayed
+- **AND** a link to "https://www.componentdock.com/" is present (branded "Component Dock")
+
+**--- Design Fidelity ---**
+
+#### Scenario: Typography matches source
+
+- **THEN** body text uses "Open Sans" font family
+- **AND** headings and buttons use "Work Sans" font family
+
+#### Scenario: Button style matches source
+
+- **THEN** CTA buttons are square (no border-radius)
+- **AND** buttons have a thin gray border (#b2b2b2)
+- **AND** buttons have white background with black text
+- **AND** buttons have minimum width 180px and height 54px
+
+#### Scenario: Color palette matches source
+
+- **THEN** the primary accent color is red (#ff0000)
+- **AND** the footer background is dark gray (#333333)
+- **AND** section backgrounds alternate between white and light gray (#fafafa)
 
 ## Verification checklist
 

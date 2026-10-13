@@ -48,92 +48,102 @@ Order from the live preview DOM:
 11. **RecentBlog** — white section, centered heading "Recent Blog" with green subheading "Blog". 4 blog cards: image with dark overlay, meta (date, author, comment count with green icon), heading text.
 12. **Footer** — dark bg, 5-column layout: Brand + social icons (Twitter, Facebook, Instagram), Community links, About Us links, Company links, Contact info (address, phone, email). Bottom copyright bar.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: GreenView Real Estate Template
 
-```gherkin
 Feature: GreenView Real Estate Template
-  As a visitor to GreenView
-  I want a professional real estate website
-  So that I can browse properties and contact agents
+As a visitor to GreenView
+I want a professional real estate website
+So that I can browse properties and contact agents
 
-  Scenario: Navbar displays correctly
-    Given I visit the GreenView homepage
-    Then I see a dark navbar with brand "GreenView"
-    And I see navigation links: Home, About, Agents, Services, Properties, Blog, Contact
-    And the Home link is highlighted in green
-    And the navbar becomes sticky with white background on scroll
+#### Scenario: Navbar displays correctly
 
-  Scenario: Hero section renders
-    Given I visit the GreenView homepage
-    Then I see a full-width hero with a real estate background image
-    And there is a dark overlay on the image
-    And I see heading "Find Perfect House From Your Area"
-    And I see a green "View all properties" button
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a dark navbar with brand "GreenView"
+- **AND** I see navigation links: Home, About, Agents, Services, Properties, Blog, Contact
+- **AND** the Home link is highlighted in green
+- **AND** the navbar becomes sticky with white background on scroll
 
-  Scenario: Search bar is functional
-    Given I visit the GreenView homepage
-    Then I see a search form with 4 fields
-    And the fields are Keyword, Property Type, Location, Price Limit
-    And there is a green "Search" submit button
-    And the search form overlaps the hero section
+#### Scenario: Hero section renders
 
-  Scenario: Services strip shows 4 features
-    Given I visit the GreenView homepage
-    Then I see a green section with 4 service cards
-    And the cards are "Trusted by Thousands", "Wide Range of Properties", "Financing Made Easy", "Locked in Pricing"
-    And each card has an icon, heading, and description
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a full-width hero with a real estate background image
+- **AND** there is a dark overlay on the image
+- **AND** I see heading "Find Perfect House From Your Area"
+- **AND** I see a green "View all properties" button
 
-  Scenario: Featured properties carousel
-    Given I visit the GreenView homepage
-    Then I see a "Featured Properties" section
-    And I see property cards in a carousel
-    And each card shows an image, price, bed/bath/sqft, name, location, and agent info
-    And cards have Sale/Rent badges
+#### Scenario: Search bar is functional
 
-  Scenario: How it works workflow
-    Given I visit the GreenView homepage
-    Then I see a dark "How it works" section
-    And I see 4 numbered steps: Evaluate Property, Meet Your Agent, Close the Deal, Have Your Property
-    And each step has an icon and description
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a search form with 4 fields
+- **AND** the fields are Keyword, Property Type, Location, Price Limit
+- **AND** there is a green "Search" submit button
+- **AND** the search form overlaps the hero section
 
-  Scenario: About section
-    Given I visit the GreenView homepage
-    Then I see an about section with 2 images and descriptive text
-    And the heading is "GreenView Real Estate"
+#### Scenario: Services strip shows 4 features
 
-  Scenario: Stats counter section
-    Given I visit the GreenView homepage
-    Then I see 4 animated counters
-    And the counters show: 1000 Area Population, 2500 Total Properties, 500 Average House, 67 Total Branches
-    And counter numbers are displayed in green
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a green section with 4 service cards
+- **AND** the cards are "Trusted by Thousands", "Wide Range of Properties", "Financing Made Easy", "Locked in Pricing"
+- **AND** each card has an icon, heading, and description
 
-  Scenario: Testimonials carousel
-    Given I visit the GreenView homepage
-    Then I see a "Happy Clients" section with light background
-    And I see testimony cards with quotes, avatars, names, and positions
-    And the quote icon is green
+#### Scenario: Featured properties carousel
 
-  Scenario: Agents section
-    Given I visit the GreenView homepage
-    Then I see an "Our Agents" section
-    And I see 4 agent cards with photos, names, and listing counts
-    And hovering an agent card highlights the name in green
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a "Featured Properties" section
+- **AND** I see property cards in a carousel
+- **AND** each card shows an image, price, bed/bath/sqft, name, location, and agent info
+- **AND** cards have Sale/Rent badges
 
-  Scenario: Blog section
-    Given I visit the GreenView homepage
-    Then I see a "Recent Blog" section
-    And I see 4 blog cards with images, meta info, and headings
-    And the comment icon is green
+#### Scenario: How it works workflow
 
-  Scenario: Footer
-    Given I visit the GreenView homepage
-    Then I see a dark footer with 5 columns
-    And the columns are: brand+social, Community, About Us, Company, Contact
-    And the footer links are green
-    And the footer includes a Component Dock link
-```
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a dark "How it works" section
+- **AND** I see 4 numbered steps: Evaluate Property, Meet Your Agent, Close the Deal, Have Your Property
+- **AND** each step has an icon and description
+
+#### Scenario: About section
+
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see an about section with 2 images and descriptive text
+- **AND** the heading is "GreenView Real Estate"
+
+#### Scenario: Stats counter section
+
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see 4 animated counters
+- **AND** the counters show: 1000 Area Population, 2500 Total Properties, 500 Average House, 67 Total Branches
+- **AND** counter numbers are displayed in green
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a "Happy Clients" section with light background
+- **AND** I see testimony cards with quotes, avatars, names, and positions
+- **AND** the quote icon is green
+
+#### Scenario: Agents section
+
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see an "Our Agents" section
+- **AND** I see 4 agent cards with photos, names, and listing counts
+- **AND** hovering an agent card highlights the name in green
+
+#### Scenario: Blog section
+
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a "Recent Blog" section
+- **AND** I see 4 blog cards with images, meta info, and headings
+- **AND** the comment icon is green
+
+#### Scenario: Footer
+
+- **GIVEN** I visit the GreenView homepage
+- **THEN** I see a dark footer with 5 columns
+- **AND** the columns are: brand+social, Community, About Us, Company, Contact
+- **AND** the footer links are green
+- **AND** the footer includes a Component Dock link
 
 ## Verification Checklist
 

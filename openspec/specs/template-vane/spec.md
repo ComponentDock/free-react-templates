@@ -45,69 +45,82 @@ product designer & art director single-page site.
 - Overall: dark hero, white content sections, bold typography, yellow
   accent buttons with sharp 1px radius.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navigation
-Scenario: Fixed hamburger navigation
-  Given the user loads the page
-  When the navbar renders
-  Then it should show the brand "V." on the left
-  And it should show a hamburger menu icon on the right
-  And clicking the hamburger should open a full-screen blue (#002bdc) overlay
-  And the overlay should contain nav links: Home, About, Services, Work, Blog, Contact
 
-Scenario: Nav overlay closes on link click
-  Given the nav overlay is open
-  When the user clicks a nav link
-  Then the overlay should close
-  And the page should scroll to the corresponding section
+#### Scenario: Fixed hamburger navigation
+
+- **GIVEN** the user loads the page
+- **WHEN** the navbar renders
+- **THEN** it should show the brand "V." on the left
+- **AND** it should show a hamburger menu icon on the right
+- **AND** clicking the hamburger should open a full-screen blue (#002bdc) overlay
+- **AND** the overlay should contain nav links: Home, About, Services, Work, Blog, Contact
+
+#### Scenario: Nav overlay closes on link click
+
+- **GIVEN** the nav overlay is open
+- **WHEN** the user clicks a nav link
+- **THEN** the overlay should close
+- **AND** the page should scroll to the corresponding section
 
 ### Hero Section
-Scenario: Full-screen hero with CTA
-  Given the user loads the page
-  When the hero section renders
-  Then it should be full-screen height with a dark background
-  And it should display a headline introducing the designer
-  And it should show a subheadline describing the role
-  And it should show a "Hire me now" button in yellow (#ffdd00)
+
+#### Scenario: Full-screen hero with CTA
+
+- **GIVEN** the user loads the page
+- **WHEN** the hero section renders
+- **THEN** it should be full-screen height with a dark background
+- **AND** it should display a headline introducing the designer
+- **AND** it should show a subheadline describing the role
+- **AND** it should show a "Hire me now" button in yellow (#ffdd00)
 
 ### Services Section
-Scenario: Services grouped by category
-  Given the user scrolls to the services section
-  When it renders
-  Then it should show heading "Strategy, design and a bit of magic"
-  And it should display 3 category groups: Explore, Create, Learn
-  And Explore should contain: Design Sprints, Product Strategy, UX Strategy
-  And Create should contain: Information, UX/UI Design, Branding
-  And Learn should contain: Prototyping, User Testing, UI Testing
+
+#### Scenario: Services grouped by category
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** it renders
+- **THEN** it should show heading "Strategy, design and a bit of magic"
+- **AND** it should display 3 category groups: Explore, Create, Learn
+- **AND** Explore should contain: Design Sprints, Product Strategy, UX Strategy
+- **AND** Create should contain: Information, UX/UI Design, Branding
+- **AND** Learn should contain: Prototyping, User Testing, UI Testing
 
 ### Work/Projects Section
-Scenario: Project showcase
-  Given the user scrolls to the work section
-  When it renders
-  Then it should show heading "Happy spending my time to this projects"
-  And it should display project cards with images
-  And each card should show category tags (e.g. "UI/UX, Art Direction")
-  And each card should show a title and description
-  And each card should have a "See details" link
+
+#### Scenario: Project showcase
+
+- **GIVEN** the user scrolls to the work section
+- **WHEN** it renders
+- **THEN** it should show heading "Happy spending my time to this projects"
+- **AND** it should display project cards with images
+- **AND** each card should show category tags (e.g. "UI/UX, Art Direction")
+- **AND** each card should show a title and description
+- **AND** each card should have a "See details" link
 
 ### Subscribe/Newsletter Section
-Scenario: Newsletter subscription
-  Given the user scrolls to the subscribe section
-  When it renders
-  Then it should show a description paragraph
-  And it should show an email input field
-  And it should show a subscribe button
+
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the user scrolls to the subscribe section
+- **WHEN** it renders
+- **THEN** it should show a description paragraph
+- **AND** it should show an email input field
+- **AND** it should show a subscribe button
 
 ### Footer
-Scenario: Footer with contact and social
-  Given the user views the footer
-  When it renders
-  Then it should show "Lets Talk" heading
-  And it should show an info section with email, phone, and address
-  And it should show social links: Twitter, Facebook, Dribbble
-  And it should include a copyright notice
-  And it should link to https://www.componentdock.com/ (Component Dock)
+
+#### Scenario: Footer with contact and social
+
+- **GIVEN** the user views the footer
+- **WHEN** it renders
+- **THEN** it should show "Lets Talk" heading
+- **AND** it should show an info section with email, phone, and address
+- **AND** it should show social links: Twitter, Facebook, Dribbble
+- **AND** it should include a copyright notice
+- **AND** it should link to https://www.componentdock.com/ (Component Dock)
 
 ## Verification Checklist
 

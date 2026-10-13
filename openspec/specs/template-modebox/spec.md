@@ -101,103 +101,116 @@ Google Fonts import: `https://fonts.googleapis.com/css?family=Poppins:200,300,40
 - Footer: white
 - Section spacing: `padding: 120px 0` (60px on mobile)
 
-## Gherkin Requirements
+## Requirements
 
 ### Hero Banner
-- **Scenario:** Hero banner displays centered content
-  - Given the page loads
-  - When the hero banner is visible
-  - Then it shows the heading "Fashion for Upcoming Winter"
-  - And a subtitle paragraph below the heading
-  - And a "View Collection" button below the subtitle
-  - And the banner has a dark overlay on the background image
 
+#### Scenario: Hero Banner
+
+- **Scenario:** Hero banner displays centered content
+- **GIVEN** the page loads
+- **WHEN** the hero banner is visible
+- **THEN** it shows the heading "Fashion for Upcoming Winter"
+- **AND** a subtitle paragraph below the heading
+- **AND** a "View Collection" button below the subtitle
+- **AND** the banner has a dark overlay on the background image
 - **Scenario:** Hero CTA button navigates correctly
-  - Given the hero banner is displayed
-  - When the user clicks "View Collection"
-  - Then the user is navigated to the collection/shop page
+- **GIVEN** the hero banner is displayed
+- **WHEN** the user clicks "View Collection"
+- **THEN** the user is navigated to the collection/shop page
 
 ### Hot Deals
+
+#### Scenario: Hot Deals
+
 - **Scenario:** Hot deals section shows two equal cards
-  - Given the page loads
-  - When the user scrolls to the hot deals section
-  - Then two side-by-side deal cards are visible
-  - And each card shows "Hot Deals of this Month" heading
-  - And each card shows "shop now" subtext
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the hot deals section
+- **THEN** two side-by-side deal cards are visible
+- **AND** each card shows "Hot Deals of this Month" heading
+- **AND** each card shows "shop now" subtext
 
 ### Client Logos
+
+#### Scenario: Client Logos
+
 - **Scenario:** Client logos carousel renders
-  - Given the page loads
-  - When the user scrolls to the client logos section
-  - Then 5 client logo images are displayed in a carousel
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the client logos section
+- **THEN** 5 client logo images are displayed in a carousel
 
 ### Featured Products
+
+#### Scenario: Featured Products
+
 - **Scenario:** Featured products grid shows products
-  - Given the page loads
-  - When the user scrolls to the featured products section
-  - Then a "Featured Products" heading is displayed
-  - And at least 5 product cards are visible
-  - And each card has a product image, name, and price
-
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the featured products section
+- **THEN** a "Featured Products" heading is displayed
+- **AND** at least 5 product cards are visible
+- **AND** each card has a product image, name, and price
 - **Scenario:** Product card hover shows action icons
-  - Given the featured products grid is displayed
-  - When the user hovers over a product card
-  - Then heart and cart icon buttons appear as an overlay
-
+- **GIVEN** the featured products grid is displayed
+- **WHEN** the user hovers over a product card
+- **THEN** heart and cart icon buttons appear as an overlay
 - **Scenario:** Product grid is horizontally scrollable
-  - Given the featured products grid is displayed
-  - When the user scrolls horizontally
-  - Then additional product cards scroll into view
-
+- **GIVEN** the featured products grid is displayed
+- **WHEN** the user scrolls horizontally
+- **THEN** additional product cards scroll into view
 - **Scenario:** Product pagination shows page numbers
-  - Given the featured products grid is displayed
-  - Then pagination with page numbers (01–09) is shown below
+- **GIVEN** the featured products grid is displayed
+- **THEN** pagination with page numbers (01–09) is shown below
 
 ### Newsletter Subscription
-- **Scenario:** Newsletter section displays correctly
-  - Given the page loads
-  - When the user scrolls to the newsletter section
-  - Then a "Subscribe for Our Newsletter" heading is shown
-  - And a subtitle "We won't send any kind of spam" is below
-  - And an email input field is present
-  - And a "Get Started" button is present
 
+#### Scenario: Newsletter Subscription
+
+- **Scenario:** Newsletter section displays correctly
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the newsletter section
+- **THEN** a "Subscribe for Our Newsletter" heading is shown
+- **AND** a subtitle "We won't send any kind of spam" is below
+- **AND** an email input field is present
+- **AND** a "Get Started" button is present
 - **Scenario:** Newsletter form submits email
-  - Given the newsletter section is visible
-  - When the user enters a valid email and clicks "Get Started"
-  - Then the form attempts subscription submission
+- **GIVEN** the newsletter section is visible
+- **WHEN** the user enters a valid email and clicks "Get Started"
+- **THEN** the form attempts subscription submission
 
 ### Footer
+
+#### Scenario: Footer
+
 - **Scenario:** Footer shows four columns
-  - Given the page loads
-  - When the user scrolls to the footer
-  - Then an "About Us" column with text is visible
-  - And a "Newsletter" column with email input is visible
-  - And an "Instagram Feed" column with 8 thumbnails is visible
-  - And a "Follow Us" column with social icons is visible
-
+- **GIVEN** the page loads
+- **WHEN** the user scrolls to the footer
+- **THEN** an "About Us" column with text is visible
+- **AND** a "Newsletter" column with email input is visible
+- **AND** an "Instagram Feed" column with 8 thumbnails is visible
+- **AND** a "Follow Us" column with social icons is visible
 - **Scenario:** Footer social icons are interactive
-  - Given the footer is displayed
-  - When the user hovers over a social icon
-  - Then the icon color changes to the brand blue
-
+- **GIVEN** the footer is displayed
+- **WHEN** the user hovers over a social icon
+- **THEN** the icon color changes to the brand blue
 - **Scenario:** Footer copyright links to Component Dock
-  - Given the footer is displayed
-  - When the user views the copyright line
-  - Then it links to https://www.componentdock.com/
+- **GIVEN** the footer is displayed
+- **WHEN** the user views the copyright line
+- **THEN** it links to https://www.componentdock.com/
 
 ### Navigation
-- **Scenario:** Navbar displays logo and navigation links
-  - Given the page loads
-  - When the user views the header
-  - Then a logo image is displayed on the left
-  - And navigation links (Home, Shop, Blog, Pages, Contact) are visible
-  - And right-side utility icons (search, user, heart, cart) are visible
 
+#### Scenario: Navigation
+
+- **Scenario:** Navbar displays logo and navigation links
+- **GIVEN** the page loads
+- **WHEN** the user views the header
+- **THEN** a logo image is displayed on the left
+- **AND** navigation links (Home, Shop, Blog, Pages, Contact) are visible
+- **AND** right-side utility icons (search, user, heart, cart) are visible
 - **Scenario:** Navigation links highlight on hover
-  - Given the navbar is displayed
-  - When the user hovers over a nav link
-  - Then the link color changes to brand blue `#1641ff`
+- **GIVEN** the navbar is displayed
+- **WHEN** the user hovers over a nav link
+- **THEN** the link color changes to brand blue `#1641ff`
 
 ## Verification Checklist
 

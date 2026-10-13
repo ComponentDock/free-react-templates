@@ -52,76 +52,89 @@ Recreation of **ColorLib Reg Form V31** (`colorlib-regform-31`) as a React 19 + 
    - **Password row** — Label + password input with lock icon (right-aligned)
    - **Register button** — Blue submit button (180px wide, centered, box shadow)
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Full-page layout
-- **Given** the user navigates to the template
-- **When** the page loads
-- **Then** a teal `#5eb2b3` background fills the viewport
-- **And** a white card is centered on the page
+### Feature: Registrix template behaviour
 
-### Scenario: Card dimensions and styling
-- **Given** the page has loaded
-- **When** the card is visible
-- **Then** the card is 670px wide with an 8px border-radius
-- **And** the card has a white background
+#### Scenario: Full-page layout
 
-### Scenario: Form heading with underline bar
-- **Given** the card is visible
-- **When** the user views the form heading
-- **Then** the heading reads "Register Account Form"
-- **And** the heading is bold, 25px, centered
-- **And** a blue `#3786bd` underline bar (50px wide, 2px tall) appears below the heading
+- **GIVEN** the user navigates to the template
+- **WHEN** the page loads
+- **THEN** a teal `#5eb2b3` background fills the viewport
+- **AND** a white card is centered on the page
 
-### Scenario: Full Name input with icon
-- **Given** the form is visible
-- **When** the user views the Full Name field
-- **Then** a label "Full Name" is displayed
-- **And** a text input with placeholder "Your Name" is shown
-- **And** a user icon (gray `#999`) is positioned to the right of the input
+#### Scenario: Card dimensions and styling
 
-### Scenario: Email input with icon
-- **Given** the form is visible
-- **When** the user views the Your Email field
-- **Then** a label "Your Email" is displayed
-- **And** a text input with placeholder "Your Email" is shown
-- **And** an envelope icon (gray `#999`) is positioned to the right of the input
+- **GIVEN** the page has loaded
+- **WHEN** the card is visible
+- **THEN** the card is 670px wide with an 8px border-radius
+- **AND** the card has a white background
 
-### Scenario: Password input with icon
-- **Given** the form is visible
-- **When** the user views the Password field
-- **Then** a label "Password" is displayed
-- **And** a password input with placeholder "Your Password" is shown
-- **And** a lock icon (gray `#999`) is positioned to the right of the input
+#### Scenario: Form heading with underline bar
 
-### Scenario: Register button
-- **Given** the form is visible
-- **When** the user views the submit button
-- **Then** a "Register" button is displayed centered below the form fields
-- **And** the button has a blue `#3786bd` background
-- **And** the button has white text at 18px font-size
-- **And** the button is 180px wide with a 5px border-radius
-- **And** the button has a box-shadow of `0px 5px 15px rgba(0,0,0,0.2)`
+- **GIVEN** the card is visible
+- **WHEN** the user views the form heading
+- **THEN** the heading reads "Register Account Form"
+- **AND** the heading is bold, 25px, centered
+- **AND** a blue `#3786bd` underline bar (50px wide, 2px tall) appears below the heading
 
-### Scenario: Register button hover state
-- **Given** the Register button is visible
-- **When** the user hovers over the Register button
-- **Then** the button background changes to a darker blue `#2f73a3`
+#### Scenario: Full Name input with icon
 
-### Scenario: Input focus state
-- **Given** the form fields are visible
-- **When** the user focuses on an input field
-- **Then** the input border changes to `1px solid #b3b3b3`
+- **GIVEN** the form is visible
+- **WHEN** the user views the Full Name field
+- **THEN** a label "Full Name" is displayed
+- **AND** a text input with placeholder "Your Name" is shown
+- **AND** a user icon (gray `#999`) is positioned to the right of the input
 
-### Scenario: Form submission prevention
-- **Given** the form is visible
-- **When** the user fills in all fields and clicks Register
-- **Then** the form does not cause a page reload
+#### Scenario: Email input with icon
 
-### Scenario: Responsive layout at small screens
-- **Given** the user is on a device with viewport width ≤767px
-- **When** the page loads
-- **Then** the card has horizontal margin of 20px
+- **GIVEN** the form is visible
+- **WHEN** the user views the Your Email field
+- **THEN** a label "Your Email" is displayed
+- **AND** a text input with placeholder "Your Email" is shown
+- **AND** an envelope icon (gray `#999`) is positioned to the right of the input
+
+#### Scenario: Password input with icon
+
+- **GIVEN** the form is visible
+- **WHEN** the user views the Password field
+- **THEN** a label "Password" is displayed
+- **AND** a password input with placeholder "Your Password" is shown
+- **AND** a lock icon (gray `#999`) is positioned to the right of the input
+
+#### Scenario: Register button
+
+- **GIVEN** the form is visible
+- **WHEN** the user views the submit button
+- **THEN** a "Register" button is displayed centered below the form fields
+- **AND** the button has a blue `#3786bd` background
+- **AND** the button has white text at 18px font-size
+- **AND** the button is 180px wide with a 5px border-radius
+- **AND** the button has a box-shadow of `0px 5px 15px rgba(0,0,0,0.2)`
+
+#### Scenario: Register button hover state
+
+- **GIVEN** the Register button is visible
+- **WHEN** the user hovers over the Register button
+- **THEN** the button background changes to a darker blue `#2f73a3`
+
+#### Scenario: Input focus state
+
+- **GIVEN** the form fields are visible
+- **WHEN** the user focuses on an input field
+- **THEN** the input border changes to `1px solid #b3b3b3`
+
+#### Scenario: Form submission prevention
+
+- **GIVEN** the form is visible
+- **WHEN** the user fills in all fields and clicks Register
+- **THEN** the form does not cause a page reload
+
+#### Scenario: Responsive layout at small screens
+
+- **GIVEN** the user is on a device with viewport width ≤767px
+- **WHEN** the page loads
+- **THEN** the card has horizontal margin of 20px
 
 ## Verification Checklist
 

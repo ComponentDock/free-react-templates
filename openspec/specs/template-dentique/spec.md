@@ -69,137 +69,115 @@ Gold → cream → cyan diagonal gradient.
 - Container width: 1110px, border-radius: 5px
 - Logo text (placeholder): `Dentique`
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Hero Section — Slider
+### Feature: Dentique template behaviour
 
-```
-Given the user loads the page
-When the hero section is visible
-Then there should be a full-width image slider with at least 2 slides
-And each slide shows a headline in script/display font and a subheadline
-And each slide has "See Our Services" and "Book An Appointment" CTAs
-And a diagonal gradient overlay (gold→cyan) is applied over the images
-```
+#### Scenario: Hero Section — Slider
 
-### Scenario: Services Section — 4 Cards
+- **GIVEN** the user loads the page
+- **WHEN** the hero section is visible
+- **THEN** there should be a full-width image slider with at least 2 slides
+- **AND** each slide shows a headline in script/display font and a subheadline
+- **AND** each slide has "See Our Services" and "Book An Appointment" CTAs
+- **AND** a diagonal gradient overlay (gold→cyan) is applied over the images
 
-```
-Given the user scrolls to the services section
-When the section is visible
-Then there are exactly 4 service cards in a row
-And each card has an icon (Font Awesome or Lucide), title, and description
-And the section background is light cyan (#effcfd)
-And the titles are: Emergency Service, Qualified Dentist, General Treatment, Online Appointment
-```
+#### Scenario: Services Section — 4 Cards
 
-### Scenario: Services Section — 8 Feature Cards
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the section is visible
+- **THEN** there are exactly 4 service cards in a row
+- **AND** each card has an icon (Font Awesome or Lucide), title, and description
+- **AND** the section background is light cyan (#effcfd)
+- **AND** the titles are: Emergency Service, Qualified Dentist, General Treatment, Online Appointment
 
-```
-Given the user scrolls to the expanded services section
-When the section is visible
-Then there are exactly 8 feature cards in 2 rows of 4
-And each card has an icon, title, and short description
-And the titles include: Easy Booking, Experience, Flexible Schedule, Best Price Guarantee
-And the section background is white
-```
+#### Scenario: Services Section — 8 Feature Cards
 
-### Scenario: About Section
+- **GIVEN** the user scrolls to the expanded services section
+- **WHEN** the section is visible
+- **THEN** there are exactly 8 feature cards in 2 rows of 4
+- **AND** each card has an icon, title, and short description
+- **AND** the titles include: Easy Booking, Experience, Flexible Schedule, Best Price Guarantee
+- **AND** the section background is white
 
-```
-Given the user scrolls to the about section
-When the section is visible
-Then there is a heading "We Are Dentique — A Dental Clinic"
-And there is descriptive paragraph text
-And there is a "Get in touch with us" CTA button
-And there is a large image on the right side
-```
+#### Scenario: About Section
 
-### Scenario: Stats/Counter Section
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section is visible
+- **THEN** there is a heading "We Are Dentique — A Dental Clinic"
+- **AND** there is descriptive paragraph text
+- **AND** there is a "Get in touch with us" CTA button
+- **AND** there is a large image on the right side
 
-```
-Given the user scrolls to the stats section
-When the section is visible
-Then there are 3+ stat counters displayed
-And each stat shows a number and a label (e.g. "Years of Experience", "Happy Patients")
-And the section uses a parallax background image with dark overlay
-```
+#### Scenario: Stats/Counter Section
 
-### Scenario: Testimonials Section
+- **GIVEN** the user scrolls to the stats section
+- **WHEN** the section is visible
+- **THEN** there are 3+ stat counters displayed
+- **AND** each stat shows a number and a label (e.g. "Years of Experience", "Happy Patients")
+- **AND** the section uses a parallax background image with dark overlay
 
-```
-Given the user scrolls to the testimonials section
-When the section is visible
-Then there are 3+ testimonial cards in a carousel or grid
-And each card has a quote, author name, and role
-And the section background is light (#effcfd)
-```
+#### Scenario: Testimonials Section
 
-### Scenario: Appointment Form
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the section is visible
+- **THEN** there are 3+ testimonial cards in a carousel or grid
+- **AND** each card has a quote, author name, and role
+- **AND** the section background is light (#effcfd)
 
-```
-Given the user scrolls to the appointment section
-When the section is visible
-Then there is a heading "Appointment Form"
-And the form contains fields: First Name, Last Name, Phone, Date, Time, Message
-And there is a "Make An Appointment" submit button
-And the section has a diagonal gradient background (gold→cyan)
-```
+#### Scenario: Appointment Form
 
-### Scenario: CTA/Intro Section
+- **GIVEN** the user scrolls to the appointment section
+- **WHEN** the section is visible
+- **THEN** there is a heading "Appointment Form"
+- **AND** the form contains fields: First Name, Last Name, Phone, Date, Time, Message
+- **AND** there is a "Make An Appointment" submit button
+- **AND** the section has a diagonal gradient background (gold→cyan)
 
-```
-Given the user scrolls to the intro CTA section
-When the section is visible
-Then there is a headline and description text
-And a CTA button
-And the section has a gradient background (gold→cyan)
-```
+#### Scenario: CTA/Intro Section
 
-### Scenario: Navbar Behavior
+- **GIVEN** the user scrolls to the intro CTA section
+- **WHEN** the section is visible
+- **THEN** there is a headline and description text
+- **AND** a CTA button
+- **AND** the section has a gradient background (gold→cyan)
 
-```
-Given the page loads
-When the navbar is at the top
-Then it is transparent with white text
-And when the user scrolls down
-Then the navbar becomes white with a shadow
-And the active link is highlighted in cyan (#65d8ea)
-And the nav items are: Home, About, Services, Dentist, Blog, Gallery, Contact
-```
+#### Scenario: Navbar Behavior
 
-### Scenario: Footer
+- **GIVEN** the page loads
+- **WHEN** the navbar is at the top
+- **THEN** it is transparent with white text
+- **AND** when the user scrolls down
+- **THEN** the navbar becomes white with a shadow
+- **AND** the active link is highlighted in cyan (#65d8ea)
+- **AND** the nav items are: Home, About, Services, Dentist, Blog, Gallery, Contact
 
-```
-Given the user scrolls to the footer
-When the footer is visible
-Then there is a phone number and email link
-And there is a copyright line with "Component Dock" link
-And the footer background is dark navy (#1b262c)
-And there are light-colored text elements
-```
+#### Scenario: Footer
 
-### Scenario: Responsive Layout
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** there is a phone number and email link
+- **AND** there is a copyright line with "Component Dock" link
+- **AND** the footer background is dark navy (#1b262c)
+- **AND** there are light-colored text elements
 
-```
-Given the user views the page on a mobile device (< 768px)
-When the layout adapts
-Then the navbar collapses to a hamburger menu
-And service cards stack vertically
-And the hero text remains readable
-And the appointment form fields stack vertically
-```
+#### Scenario: Responsive Layout
 
-### Scenario: Accessibility
+- **GIVEN** the user views the page on a mobile device (< 768px)
+- **WHEN** the layout adapts
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** service cards stack vertically
+- **AND** the hero text remains readable
+- **AND** the appointment form fields stack vertically
 
-```
-Given the page loads
-When a screen reader navigates the page
-Then all images have alt text
-And interactive elements are keyboard-focusable
-And form inputs have associated labels
-And the page has a valid heading hierarchy (h1 → h2 → h3)
-```
+#### Scenario: Accessibility
+
+- **GIVEN** the page loads
+- **WHEN** a screen reader navigates the page
+- **THEN** all images have alt text
+- **AND** interactive elements are keyboard-focusable
+- **AND** form inputs have associated labels
+- **AND** the page has a valid heading hierarchy (h1 → h2 → h3)
 
 ## Verification Checklist
 

@@ -53,171 +53,169 @@ Recreation of ColorLib **Pacific** — a travel agency website template with a d
 11. **CTA Banner** — Full-width bg image, dark overlay, "We Are Pacific A Travel Agency" heading + "Ask For A Quote" CTA (orange).
 12. **Footer** — Bg image + dark overlay, 4-column layout: About text + social icons (Twitter, Facebook, Instagram), Information links, Experience links, Contact info (address, phone, email). Copyright line at bottom.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation links
-  Given the user visits the Roamcraft homepage
-  Then a dark navbar with brand text "Roamcraft" is visible
-  And nav links "Home", "About", "Destination", "Hotel", "Blog", "Contact" are displayed
+#### Scenario: Navbar displays brand and navigation links
 
-Scenario: Navbar shows hamburger on mobile
-  Given the user resizes to mobile viewport
-  Then a hamburger menu icon is displayed
-  And clicking it toggles the mobile navigation menu
-```
+- **GIVEN** the user visits the Roamcraft homepage
+- **THEN** a dark navbar with brand text "Roamcraft" is visible
+- **AND** nav links "Home", "About", "Destination", "Hotel", "Blog", "Contact" are displayed
+
+#### Scenario: Navbar shows hamburger on mobile
+
+- **GIVEN** the user resizes to mobile viewport
+- **THEN** a hamburger menu icon is displayed
+- **AND** clicking it toggles the mobile navigation menu
 
 ### Feature: Hero Section
 
-```gherkin
-Scenario: Hero displays fullscreen with dark overlay
-  Given the user visits the Roamcraft homepage
-  Then a fullscreen hero section with a background image and dark overlay is visible
-  And the subheading "Welcome to Roamcraft" is displayed in Arizonia font and orange color
-  And the heading "Discover Your Favorite Place with Us" is displayed in large white text
-  And a circular video play button is displayed to the right of the text
+#### Scenario: Hero displays fullscreen with dark overlay
 
-Scenario: Hero is responsive
-  Given the user resizes the viewport to mobile width
-  Then the hero content remains centered and readable
-  And the heading font size reduces for mobile
-```
+- **GIVEN** the user visits the Roamcraft homepage
+- **THEN** a fullscreen hero section with a background image and dark overlay is visible
+- **AND** the subheading "Welcome to Roamcraft" is displayed in Arizonia font and orange color
+- **AND** the heading "Discover Your Favorite Place with Us" is displayed in large white text
+- **AND** a circular video play button is displayed to the right of the text
+
+#### Scenario: Hero is responsive
+
+- **GIVEN** the user resizes the viewport to mobile width
+- **THEN** the hero content remains centered and readable
+- **AND** the heading font size reduces for mobile
 
 ### Feature: Search/Booking Form
 
-```gherkin
-Scenario: Search form displays with tabs
-  Given the user views the search section
-  Then two tab pills are visible: "Search Tour" (active) and "Hotel"
-  And the active tab has an orange background
-  And clicking "Hotel" switches to the hotel search form
+#### Scenario: Search form displays with tabs
 
-Scenario: Search form contains all fields
-  Given the user views the search form
-  Then fields for Destination, Check-in date, Check-out date, Price Limit, and a Search button are visible
-  And the Search button has an orange background
-  And the form has a white background with rounded corners and box shadow
-```
+- **GIVEN** the user views the search section
+- **THEN** two tab pills are visible: "Search Tour" (active) and "Hotel"
+- **AND** the active tab has an orange background
+- **AND** clicking "Hotel" switches to the hotel search form
+
+#### Scenario: Search form contains all fields
+
+- **GIVEN** the user views the search form
+- **THEN** fields for Destination, Check-in date, Check-out date, Price Limit, and a Search button are visible
+- **AND** the Search button has an orange background
+- **AND** the form has a white background with rounded corners and box shadow
 
 ### Feature: Services Section
 
-```gherkin
-Scenario: Services section shows text and 4 service cards
-  Given the user scrolls to the services section
-  Then a heading "It's time to start your adventure" is displayed on the left
-  And 4 service cards are displayed on the right in a 2×2 grid
-  And the service cards are: Activities, Travel Arrangements, Private Guide, Location Manager
-  And each card has a background image, icon, title, and description
-```
+#### Scenario: Services section shows text and 4 service cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a heading "It's time to start your adventure" is displayed on the left
+- **AND** 4 service cards are displayed on the right in a 2×2 grid
+- **AND** the service cards are: Activities, Travel Arrangements, Private Guide, Location Manager
+- **AND** each card has a background image, icon, title, and description
 
 ### Feature: Select Destination
 
-```gherkin
-Scenario: Destination carousel displays destination cards
-  Given the user scrolls to the destination section
-  Then a heading "Select Your Destination" is displayed
-  And a carousel of destination cards is visible
-  And each card shows a destination name and tour count
-  And destination cards have orange label badges
+#### Scenario: Destination carousel displays destination cards
 
-Scenario: Destination section has parallax background
-  Given the user views the destination section
-  Then a parallax background image is visible behind the carousel
-```
+- **GIVEN** the user scrolls to the destination section
+- **THEN** a heading "Select Your Destination" is displayed
+- **AND** a carousel of destination cards is visible
+- **AND** each card shows a destination name and tour count
+- **AND** destination cards have orange label badges
+
+#### Scenario: Destination section has parallax background
+
+- **GIVEN** the user views the destination section
+- **THEN** a parallax background image is visible behind the carousel
 
 ### Feature: Tour Destinations
 
-```gherkin
-Scenario: Tour destination grid shows 6 cards
-  Given the user scrolls to the tour destinations section
-  Then 6 tour cards are displayed in a 3×2 grid
-  And each card shows a price badge in orange, tour duration, location, and amenities
-  And each card has a background image with a white content area below
+#### Scenario: Tour destination grid shows 6 cards
 
-Scenario: Tour cards are responsive
-  Given the user resizes the viewport to mobile width
-  Then the tour cards stack vertically
-```
+- **GIVEN** the user scrolls to the tour destinations section
+- **THEN** 6 tour cards are displayed in a 3×2 grid
+- **AND** each card shows a price badge in orange, tour duration, location, and amenities
+- **AND** each card has a background image with a white content area below
+
+#### Scenario: Tour cards are responsive
+
+- **GIVEN** the user resizes the viewport to mobile width
+- **THEN** the tour cards stack vertically
 
 ### Feature: Video/Parallax Banner
 
-```gherkin
-Scenario: Video banner displays with play button
-  Given the user scrolls to the video banner
-  Then a full-width background image with dark overlay is visible
-  And a centered circular play button is displayed
-```
+#### Scenario: Video banner displays with play button
+
+- **GIVEN** the user scrolls to the video banner
+- **THEN** a full-width background image with dark overlay is visible
+- **AND** a centered circular play button is displayed
 
 ### Feature: About Us
 
-```gherkin
-Scenario: About section shows image and text side by side
-  Given the user scrolls to the about section
-  Then an image is displayed on the left
-  And the heading "Make Your Tour Memorable and Safe With Us" is on the right
-  And a "Book Your Destination" CTA button in orange is displayed
+#### Scenario: About section shows image and text side by side
 
-Scenario: About section has Arizonia subheading
-  Given the user views the about section
-  Then the subheading "About Us" is displayed in Arizonia cursive font
-```
+- **GIVEN** the user scrolls to the about section
+- **THEN** an image is displayed on the left
+- **AND** the heading "Make Your Tour Memorable and Safe With Us" is on the right
+- **AND** a "Book Your Destination" CTA button in orange is displayed
+
+#### Scenario: About section has Arizonia subheading
+
+- **GIVEN** the user views the about section
+- **THEN** the subheading "About Us" is displayed in Arizonia cursive font
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials carousel displays with star ratings
-  Given the user scrolls to the testimonials section
-  Then a carousel of testimonial cards is visible
-  And each card shows 5 orange stars, a quote, user avatar, name, and position
-  And the section has a background image with dark overlay
+#### Scenario: Testimonials carousel displays with star ratings
 
-Scenario: Testimonials carousel cycles through items
-  Given the user views the testimonial section
-  Then the testimonials rotate through multiple items automatically
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card shows 5 orange stars, a quote, user avatar, name, and position
+- **AND** the section has a background image with dark overlay
+
+#### Scenario: Testimonials carousel cycles through items
+
+- **GIVEN** the user views the testimonial section
+- **THEN** the testimonials rotate through multiple items automatically
 
 ### Feature: Blog
 
-```gherkin
-Scenario: Blog section shows 3 post cards
-  Given the user scrolls to the blog section
-  Then 3 blog post cards are displayed in a row
-  And each card has a background image, date badge, heading, and "Read more" CTA
+#### Scenario: Blog section shows 3 post cards
 
-Scenario: Blog cards are responsive
-  Given the user resizes the viewport to mobile width
-  Then the blog cards stack vertically
-```
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed in a row
+- **AND** each card has a background image, date badge, heading, and "Read more" CTA
+
+#### Scenario: Blog cards are responsive
+
+- **GIVEN** the user resizes the viewport to mobile width
+- **THEN** the blog cards stack vertically
 
 ### Feature: CTA Banner
 
-```gherkin
-Scenario: CTA banner displays with call to action
-  Given the user scrolls to the CTA banner
-  Then a full-width background image with dark overlay is visible
-  And the heading "We Are Roamcraft A Travel Agency" is displayed
-  And an "Ask For A Quote" CTA button in orange is shown
-```
+#### Scenario: CTA banner displays with call to action
+
+- **GIVEN** the user scrolls to the CTA banner
+- **THEN** a full-width background image with dark overlay is visible
+- **AND** the heading "We Are Roamcraft A Travel Agency" is displayed
+- **AND** an "Ask For A Quote" CTA button in orange is shown
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer displays 4 columns of content
-  Given the user scrolls to the footer
-  Then 4 columns are displayed: About (with social icons), Information links, Experience links, Contact info
-  And a copyright line is at the bottom
-  And the footer has a background image with dark overlay
+#### Scenario: Footer displays 4 columns of content
 
-Scenario: Footer social icons use orange color
-  Given the user hovers over a footer social icon
-  Then the icon color is orange (#f15d30)
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are displayed: About (with social icons), Information links, Experience links, Contact info
+- **AND** a copyright line is at the bottom
+- **AND** the footer has a background image with dark overlay
 
-Scenario: Footer links have hover effect
-  Given the user hovers over a footer link
-  Then the link color changes to orange (#f15d30)
-```
+#### Scenario: Footer social icons use orange color
+
+- **GIVEN** the user hovers over a footer social icon
+- **THEN** the icon color is orange (#f15d30)
+
+#### Scenario: Footer links have hover effect
+
+- **GIVEN** the user hovers over a footer link
+- **THEN** the link color changes to orange (#f15d30)
 
 ## Verification Checklist
 

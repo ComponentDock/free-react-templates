@@ -43,230 +43,238 @@ Recreation of the ColorLib "Bitcoin" template as a React 19 + Vite + Tailwind CS
 10. **Blog** — Centered heading. 3-column blog cards with thumbnail image, h4 title, excerpt, author row (avatar + name + date). Hover: title turns brand orange.
 11. **Footer** — Dark (#04091e) section. 3 columns: About Us text, Top Products links, Newsletter (email input + submit). Bottom bar: copyright + social icons (Facebook, Twitter, Dribbble, Behance). Footer links hover to #f78f3d. Footer MUST link https://www.componentdock.com/ (Component Dock).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
 
-  Scenario: Renders navigation links
-    Given the page loads
-    When the navbar is visible
-    Then it shows links for Home, Convert, Features, Price, Blog
+#### Scenario: Renders navigation links
 
-  Scenario: Fixed positioning on scroll
-    Given the user scrolls down
-    When the navbar is visible
-    Then it remains fixed at the top with a dark background
+- **GIVEN** the page loads
+- **WHEN** the navbar is visible
+- **THEN** it shows links for Home, Convert, Features, Price, Blog
 
-  Scenario: Brand logo links to top
-    Given the user clicks the logo
-    When the click is processed
-    Then the page scrolls to the top
-```
+#### Scenario: Fixed positioning on scroll
+
+- **GIVEN** the user scrolls down
+- **WHEN** the navbar is visible
+- **THEN** it remains fixed at the top with a dark background
+
+#### Scenario: Brand logo links to top
+
+- **GIVEN** the user clicks the logo
+- **WHEN** the click is processed
+- **THEN** the page scrolls to the top
 
 ### Hero / Banner
 
-```gherkin
 Feature: Hero Banner
 
-  Scenario: Displays current rate
-    Given the page loads
-    When the hero section is visible
-    Then it shows "Currently Purchase Rate" as a subtitle
-    And it shows a large price figure (e.g. "$12,356")
+#### Scenario: Displays current rate
 
-  Scenario: Dark overlay renders over background
-    Given the page loads
-    When the hero is visible
-    Then a dark semi-transparent overlay covers the background image
+- **GIVEN** the page loads
+- **WHEN** the hero section is visible
+- **THEN** it shows "Currently Purchase Rate" as a subtitle
+- **AND** it shows a large price figure (e.g. "$12,356")
 
-  Scenario: CTA button visible
-    Given the hero is rendered
-    When the user looks for the primary action
-    Then a "Buy Bitcoin" button is visible with an orange gradient background
-```
+#### Scenario: Dark overlay renders over background
+
+- **GIVEN** the page loads
+- **WHEN** the hero is visible
+- **THEN** a dark semi-transparent overlay covers the background image
+
+#### Scenario: CTA button visible
+
+- **GIVEN** the hero is rendered
+- **WHEN** the user looks for the primary action
+- **THEN** a "Buy Bitcoin" button is visible with an orange gradient background
 
 ### Currency Converter
 
-```gherkin
 Feature: Currency Converter
 
-  Scenario: Converter card overlaps hero
-    Given the page loads
-    When the converter section is visible
-    Then it overlaps the hero with a negative top margin and elevated z-index
+#### Scenario: Converter card overlaps hero
 
-  Scenario: Form inputs are present
-    Given the converter is visible
-    When the user looks at the form
-    Then there are input fields for currency conversion amounts
-    And a submit button ("Convert" or similar) is present
+- **GIVEN** the page loads
+- **WHEN** the converter section is visible
+- **THEN** it overlaps the hero with a negative top margin and elevated z-index
 
-  Scenario: Button on gradient background
-    Given the converter is visible
-    When the user sees the button
-    Then the button has a white background with dark text
-```
+#### Scenario: Form inputs are present
+
+- **GIVEN** the converter is visible
+- **WHEN** the user looks at the form
+- **THEN** there are input fields for currency conversion amounts
+- **AND** a submit button ("Convert" or similar) is present
+
+#### Scenario: Button on gradient background
+
+- **GIVEN** the converter is visible
+- **WHEN** the user sees the button
+- **THEN** the button has a white background with dark text
 
 ### Simple Services (3-column icons)
 
-```gherkin
 Feature: Simple Services
 
-  Scenario: Three service cards rendered
-    Given the page loads
-    When the services section is visible
-    Then exactly 3 service cards are displayed in a row
+#### Scenario: Three service cards rendered
 
-  Scenario: Each card has icon, title, description
-    Given the services section is visible
-    When the user views a card
-    Then it contains an icon/image, a title link, and a description paragraph
-```
+- **GIVEN** the page loads
+- **WHEN** the services section is visible
+- **THEN** exactly 3 service cards are displayed in a row
+
+#### Scenario: Each card has icon, title, description
+
+- **GIVEN** the services section is visible
+- **WHEN** the user views a card
+- **THEN** it contains an icon/image, a title link, and a description paragraph
 
 ### About Us
 
-```gherkin
 Feature: About Us
 
-  Scenario: Dark background section
-    Given the page loads
-    When the about section is visible
-    Then it has a dark (#222) background with white text
+#### Scenario: Dark background section
 
-  Scenario: Split layout
-    Given the about section is visible
-    When the user views the layout
-    Then the left half shows an image carousel
-    And the right half shows a heading and description
-```
+- **GIVEN** the page loads
+- **WHEN** the about section is visible
+- **THEN** it has a dark (#222) background with white text
+
+#### Scenario: Split layout
+
+- **GIVEN** the about section is visible
+- **WHEN** the user views the layout
+- **THEN** the left half shows an image carousel
+- **AND** the right half shows a heading and description
 
 ### Features (6-card grid)
 
-```gherkin
 Feature: Features
 
-  Scenario: Six feature cards
-    Given the page loads
-    When the features section is visible
-    Then 6 feature cards are displayed in a 3x2 grid
+#### Scenario: Six feature cards
 
-  Scenario: Each card has icon and text
-    Given the features section is visible
-    When the user views a card
-    Then it contains a linear icon, an h4 title, and a description
+- **GIVEN** the page loads
+- **WHEN** the features section is visible
+- **THEN** 6 feature cards are displayed in a 3x2 grid
 
-  Scenario: Hover highlights title
-    Given the features are visible
-    When the user hovers over a feature card
-    Then the title color changes to brand orange (#f78f3d)
-```
+#### Scenario: Each card has icon and text
+
+- **GIVEN** the features section is visible
+- **WHEN** the user views a card
+- **THEN** it contains a linear icon, an h4 title, and a description
+
+#### Scenario: Hover highlights title
+
+- **GIVEN** the features are visible
+- **WHEN** the user hovers over a feature card
+- **THEN** the title color changes to brand orange (#f78f3d)
 
 ### Statistics
 
-```gherkin
 Feature: Statistics
 
-  Scenario: Chart and text split
-    Given the page loads
-    When the statistics section is visible
-    Then the left side shows a chart/graph image
-    And the right side shows a heading, description, and button
+#### Scenario: Chart and text split
 
-  Scenario: View Details button
-    Given the statistics section is visible
-    When the user views the button
-    Then a "View Details" button is present
-    And it has orange border on hover
-```
+- **GIVEN** the page loads
+- **WHEN** the statistics section is visible
+- **THEN** the left side shows a chart/graph image
+- **AND** the right side shows a heading, description, and button
+
+#### Scenario: View Details button
+
+- **GIVEN** the statistics section is visible
+- **WHEN** the user views the button
+- **THEN** a "View Details" button is present
+- **AND** it has orange border on hover
 
 ### Call to Action
 
-```gherkin
 Feature: Call to Action
 
-  Scenario: Gradient background bar
-    Given the page loads
-    When the call-to-action section is visible
-    Then it displays a gold-to-orange gradient background
+#### Scenario: Gradient background bar
 
-  Scenario: White text and button
-    Given the call-to-action is visible
-    When the user views the content
-    Then heading and description text are white
-    And a "Buy Bitcoin Now!" button is white with dark text
-```
+- **GIVEN** the page loads
+- **WHEN** the call-to-action section is visible
+- **THEN** it displays a gold-to-orange gradient background
+
+#### Scenario: White text and button
+
+- **GIVEN** the call-to-action is visible
+- **WHEN** the user views the content
+- **THEN** heading and description text are white
+- **AND** a "Buy Bitcoin Now!" button is white with dark text
 
 ### Pricing
 
-```gherkin
 Feature: Pricing Cards
 
-  Scenario: Three pricing cards
-    Given the page loads
-    When the pricing section is visible
-    Then 3 pricing cards are displayed in a row
+#### Scenario: Three pricing cards
 
-  Scenario: Card structure
-    Given the pricing section is visible
-    When the user views a card
-    Then it has a top bar with name, a description, a price with dollar sign, and a "Get Started" button
+- **GIVEN** the page loads
+- **WHEN** the pricing section is visible
+- **THEN** 3 pricing cards are displayed in a row
 
-  Scenario: Hover effect
-    Given the pricing cards are visible
-    When the user hovers over a card
-    Then the bottom area background changes to gold gradient
-```
+#### Scenario: Card structure
+
+- **GIVEN** the pricing section is visible
+- **WHEN** the user views a card
+- **THEN** it has a top bar with name, a description, a price with dollar sign, and a "Get Started" button
+
+#### Scenario: Hover effect
+
+- **GIVEN** the pricing cards are visible
+- **WHEN** the user hovers over a card
+- **THEN** the bottom area background changes to gold gradient
 
 ### Blog
 
-```gherkin
 Feature: Blog Cards
 
-  Scenario: Three blog posts
-    Given the page loads
-    When the blog section is visible
-    Then 3 blog cards are displayed in a row
+#### Scenario: Three blog posts
 
-  Scenario: Card structure
-    Given the blog section is visible
-    When the user views a card
-    Then it contains a thumbnail image, title, excerpt, author avatar, author name, and date
+- **GIVEN** the page loads
+- **WHEN** the blog section is visible
+- **THEN** 3 blog cards are displayed in a row
 
-  Scenario: Hover highlights title
-    Given the blog cards are visible
-    When the user hovers over a card title
-    Then the title color changes to brand orange
-```
+#### Scenario: Card structure
+
+- **GIVEN** the blog section is visible
+- **WHEN** the user views a card
+- **THEN** it contains a thumbnail image, title, excerpt, author avatar, author name, and date
+
+#### Scenario: Hover highlights title
+
+- **GIVEN** the blog cards are visible
+- **WHEN** the user hovers over a card title
+- **THEN** the title color changes to brand orange
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Dark background with columns
-    Given the page loads
-    When the footer is visible
-    Then it has a dark (#04091e) background
-    And it contains 3 columns: About Us, Top Products, Newsletter
+#### Scenario: Dark background with columns
 
-  Scenario: Newsletter form
-    Given the footer is visible
-    When the user views the newsletter column
-    Then an email input field and submit button are present
+- **GIVEN** the page loads
+- **WHEN** the footer is visible
+- **THEN** it has a dark (#04091e) background
+- **AND** it contains 3 columns: About Us, Top Products, Newsletter
 
-  Scenario: Social links
-    Given the footer is visible
-    When the user views the bottom bar
-    Then social icons (Facebook, Twitter, Dribbble, Behance) are present
+#### Scenario: Newsletter form
 
-  Scenario: Component Dock attribution
-    Given the footer is visible
-    When the user views the copyright line
-    Then it links to https://www.componentdock.com/ branded as "Component Dock"
-```
+- **GIVEN** the footer is visible
+- **WHEN** the user views the newsletter column
+- **THEN** an email input field and submit button are present
+
+#### Scenario: Social links
+
+- **GIVEN** the footer is visible
+- **WHEN** the user views the bottom bar
+- **THEN** social icons (Facebook, Twitter, Dribbble, Behance) are present
+
+#### Scenario: Component Dock attribution
+
+- **GIVEN** the footer is visible
+- **WHEN** the user views the copyright line
+- **THEN** it links to https://www.componentdock.com/ branded as "Component Dock"
 
 ## Verification Checklist
 

@@ -59,108 +59,131 @@ Extracted from the live preview CSS (`css/style.css`):
 12. **Footer** — Near-black (#121212) background. 3 columns: About Meal (text + Read More button), Service Hours (Lunch/Dinner), Follow Along (social icons: TripAdvisor, Twitter, Facebook, Instagram) + Newsletter (email input). Bottom: copyright line.
 13. **Loader** — Full-screen white overlay with animated circular spinner (coral stroke #ff7a5c).
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-Scenario: Fixed side-panel navigation
-  Given the page is loaded
-  When the user clicks the hamburger menu icon
-  Then a side panel slides in from the right
-  And the menu shows links: Home, About Us, Our Menu, Reserve A Table, Contact
-  When the user clicks a menu link
-  Then the page scrolls to the corresponding section
-  And the side panel closes
 
-Scenario: Centered logo in header
-  Given the header is visible
-  Then the logo displays as a bordered letter "M"
-  And the logo is centered horizontally
+#### Scenario: Fixed side-panel navigation
+
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** a side panel slides in from the right
+- **AND** the menu shows links: Home, About Us, Our Menu, Reserve A Table, Contact
+- **WHEN** the user clicks a menu link
+- **THEN** the page scrolls to the corresponding section
+- **AND** the side panel closes
+
+#### Scenario: Centered logo in header
+
+- **GIVEN** the header is visible
+- **THEN** the logo displays as a bordered letter "M"
+- **AND** the logo is centered horizontally
 
 ### Hero
-Scenario: Full-viewport hero section
-  Given the page loads
-  Then a full-viewport hero image is displayed
-  And a dark overlay covers the image
-  And the heading "Welcome to Meal" is centered in white serif text
-  And a "Reserve A Table" outlined button is displayed below the heading
 
-Scenario: Hero CTA scrolls to reservation
-  Given the hero section is displayed
-  When the user clicks "Reserve A Table"
-  Then the page scrolls to the reservation section
+#### Scenario: Full-viewport hero section
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero image is displayed
+- **AND** a dark overlay covers the image
+- **AND** the heading "Welcome to Meal" is centered in white serif text
+- **AND** a "Reserve A Table" outlined button is displayed below the heading
+
+#### Scenario: Hero CTA scrolls to reservation
+
+- **GIVEN** the hero section is displayed
+- **WHEN** the user clicks "Reserve A Table"
+- **THEN** the page scrolls to the reservation section
 
 ### Food Showcase
-Scenario: Two-row food grid with arrow connectors
-  Given the food showcase section is visible
-  Then a heading "Find your best food" is displayed
-  And row 1 shows: image → text card (Vegies, Beef Empanadas) → image
-  And row 2 shows: text card (Food, Buttermilk Chicken Jibaritos) → image → text card (Food, Chicken Chimichurri Croquettes)
-  And each text card has a "Learn More →" link
-  And text cards have arrow-shaped CSS connectors pointing to adjacent images
+
+#### Scenario: Two-row food grid with arrow connectors
+
+- **GIVEN** the food showcase section is visible
+- **THEN** a heading "Find your best food" is displayed
+- **AND** row 1 shows: image → text card (Vegies, Beef Empanadas) → image
+- **AND** row 2 shows: text card (Food, Buttermilk Chicken Jibaritos) → image → text card (Food, Chicken Chimichurri Croquettes)
+- **AND** each text card has a "Learn More →" link
+- **AND** text cards have arrow-shaped CSS connectors pointing to adjacent images
 
 ### About
-Scenario: Restaurant description section
-  Given the about section is visible
-  Then the heading "The Restaurant" is centered
-  And two paragraphs of descriptive text are displayed
-  And the section has a white background
+
+#### Scenario: Restaurant description section
+
+- **GIVEN** the about section is visible
+- **THEN** the heading "The Restaurant" is centered
+- **AND** two paragraphs of descriptive text are displayed
+- **AND** the section has a white background
 
 ### Chefs
-Scenario: Chef profiles in 2-column grid
-  Given the chefs section is visible
-  Then the heading "Meet The Chefs" is centered
-  And 2 chef cards are displayed in a grid
-  And each card shows: circular photo, name in serif, role subtitle, bio text
-  And each card has 3 social icons (Facebook, Twitter, Instagram)
+
+#### Scenario: Chef profiles in 2-column grid
+
+- **GIVEN** the chefs section is visible
+- **THEN** the heading "Meet The Chefs" is centered
+- **AND** 2 chef cards are displayed in a grid
+- **AND** each card shows: circular photo, name in serif, role subtitle, bio text
+- **AND** each card has 3 social icons (Facebook, Twitter, Instagram)
 
 ### Menu
-Scenario: Tabbed menu with food items
-  Given the menu section is visible
-  Then a heading "Menu" is displayed
-  And 3 tabs are shown: Breakfast, Brunch, Dinner
-  And the Breakfast tab is active by default
-  And each tab shows 4 menu items
-  And each menu item has: thumbnail image, dish name, description, price
 
-Scenario: Tab switching
-  Given the menu section is visible
-  When the user clicks the "Brunch" tab
-  Then the Brunch menu items are displayed
-  And the Breakfast items are hidden
+#### Scenario: Tabbed menu with food items
+
+- **GIVEN** the menu section is visible
+- **THEN** a heading "Menu" is displayed
+- **AND** 3 tabs are shown: Breakfast, Brunch, Dinner
+- **AND** the Breakfast tab is active by default
+- **AND** each tab shows 4 menu items
+- **AND** each menu item has: thumbnail image, dish name, description, price
+
+#### Scenario: Tab switching
+
+- **GIVEN** the menu section is visible
+- **WHEN** the user clicks the "Brunch" tab
+- **THEN** the Brunch menu items are displayed
+- **AND** the Breakfast items are hidden
 
 ### Reservation
-Scenario: Reservation form fields
-  Given the reservation section is visible
-  Then a heading "Reservation" is displayed
-  And a form shows fields: Name, Email, Phone, Number of Persons (select), Date, Time
-  And each input has an icon prefix
-  And a "Book a Table" submit button is displayed
+
+#### Scenario: Reservation form fields
+
+- **GIVEN** the reservation section is visible
+- **THEN** a heading "Reservation" is displayed
+- **AND** a form shows fields: Name, Email, Phone, Number of Persons (select), Date, Time
+- **AND** each input has an icon prefix
+- **AND** a "Book a Table" submit button is displayed
 
 ### Reviews
-Scenario: Testimonial carousel
-  Given the reviews section is visible
-  Then the heading "Customer Reviews" is displayed
-  And a carousel shows 4 testimonial cards
-  And each card shows: quote text, circular author photo, author name, role
-  And carousel navigation dots are shown
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the reviews section is visible
+- **THEN** the heading "Customer Reviews" is displayed
+- **AND** a carousel shows 4 testimonial cards
+- **AND** each card shows: quote text, circular author photo, author name, role
+- **AND** carousel navigation dots are shown
 
 ### Contact
-Scenario: Contact form
-  Given the contact section is visible
-  Then the heading "Get In Touch" is displayed
-  And a form shows fields: Name, Email, Phone, Message (textarea)
-  And a "Send Message" submit button is displayed
-  And the form is in a white card with shadow
+
+#### Scenario: Contact form
+
+- **GIVEN** the contact section is visible
+- **THEN** the heading "Get In Touch" is displayed
+- **AND** a form shows fields: Name, Email, Phone, Message (textarea)
+- **AND** a "Send Message" submit button is displayed
+- **AND** the form is in a white card with shadow
 
 ### Footer
-Scenario: Dark footer with 3 columns
-  Given the footer is visible
-  Then it has a near-black (#121212) background
-  And column 1: "About Meal" heading with description and "Read More" button
-  And column 2: Lunch Service and Dinner Service hours
-  And column 3: "Follow Along" social icons and Newsletter email input
-  And a copyright line is centered at the bottom
-  And the footer links to Component Dock
+
+#### Scenario: Dark footer with 3 columns
+
+- **GIVEN** the footer is visible
+- **THEN** it has a near-black (#121212) background
+- **AND** column 1: "About Meal" heading with description and "Read More" button
+- **AND** column 2: Lunch Service and Dinner Service hours
+- **AND** column 3: "Follow Along" social icons and Newsletter email input
+- **AND** a copyright line is centered at the bottom
+- **AND** the footer links to Component Dock
 
 ## Verification Checklist
 

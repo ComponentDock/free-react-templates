@@ -47,105 +47,95 @@ Extracted from the live preview CSS (`css/main.css`):
 9. **Blog** — "Latest From Our Blog" heading, 4 blog cards in 4-col grid (thumbnail, date, title, excerpt, likes/comments)
 10. **Footer** — Dark navy background, 5-column layout (Quick Links, Features, Resources, Social, Newsletter), copyright with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with navigation links
-```
-Given the user visits the Vroomly homepage
-Then the navbar displays logo and links: Home, About, Cars, Service, Blog, Contact
-And the navbar is sticky on scroll
-```
+### Feature: Vroomly template behaviour
 
-### Scenario: Hero section displays booking form
-```
-Given the user is on the homepage
-Then the hero section shows a full-screen background with dark overlay
-And the headline "Relaxed Journey Ever" is visible
-And the subheadline paragraph is visible
-And a "Rent Car Now" CTA button is visible
-And the booking form contains: car model select, pickup/dropoff selects, date pickers, name/email/phone fields, and a "Confirm Car Booking" button
-```
+#### Scenario: Navbar renders with navigation links
 
-### Scenario: Features section shows 6 service cards
-```
-Given the user scrolls to the features section
-Then 6 service cards are displayed in a 3-column responsive grid
-And each card has an icon, title, and description
-And cards have a light background (#f9f9ff) with 10px border-radius
-```
+- **GIVEN** the user visits the Vroomly homepage
+- **THEN** the navbar displays logo and links: Home, About, Cars, Service, Blog, Contact
+- **AND** the navbar is sticky on scroll
 
-### Scenario: About section shows split layout
-```
-Given the user scrolls to the about section
-Then a left-aligned image and right-aligned text are shown side-by-side
-And the heading reads "Globally Connected by Large Network"
-And a "get details" primary button is visible
-```
+#### Scenario: Hero section displays booking form
 
-### Scenario: Car models section shows carousel
-```
-Given the user scrolls to the car models section
-Then multiple car model cards are displayed
-And each card shows: car name, price per day, description, specs (capacity, doors, AC, transmission), a "Book This Car Now" button, and a car image
-And cards have a carousel/pagination behavior
-```
+- **GIVEN** the user is on the homepage
+- **THEN** the hero section shows a full-screen background with dark overlay
+- **AND** the headline "Relaxed Journey Ever" is visible
+- **AND** the subheadline paragraph is visible
+- **AND** a "Rent Car Now" CTA button is visible
+- **AND** the booking form contains: car model select, pickup/dropoff selects, date pickers, name/email/phone fields, and a "Confirm Car Booking" button
 
-### Scenario: Facts bar displays stat counters
-```
-Given the user scrolls to the facts section
-Then a gold (#fab700) background bar is visible
-And 5 stat counters are displayed (Projects, Clients, Tasks, Coffee, Professionals)
-```
+#### Scenario: Features section shows 6 service cards
 
-### Scenario: Reviews section shows 6 review cards
-```
-Given the user scrolls to the reviews section
-Then 6 review cards are displayed in a 3-column responsive grid
-And each card has a name, text, and star rating (out of 5)
-```
+- **GIVEN** the user scrolls to the features section
+- **THEN** 6 service cards are displayed in a 3-column responsive grid
+- **AND** each card has an icon, title, and description
+- **AND** cards have a light background (#f9f9ff) with 10px border-radius
 
-### Scenario: Call-to-action section is visible
-```
-Given the user scrolls to the CTA section
-Then a dark overlay background is shown
-And the heading "Experience Great Support" is visible
-And a "Reach Our Support Team" button with gold background is visible
-```
+#### Scenario: About section shows split layout
 
-### Scenario: Blog section shows 4 blog cards
-```
-Given the user scrolls to the blog section
-Then 4 blog cards are displayed in a 4-column responsive grid
-And each card has a thumbnail image, date, title, excerpt, likes count, and comments count
-```
+- **GIVEN** the user scrolls to the about section
+- **THEN** a left-aligned image and right-aligned text are shown side-by-side
+- **AND** the heading reads "Globally Connected by Large Network"
+- **AND** a "get details" primary button is visible
 
-### Scenario: Footer renders with newsletter and links
-```
-Given the user scrolls to the footer
-Then a dark navy (#04091e) background is visible
-And 5 columns are shown: Quick Links, Features, Resources, Social, Newsletter
-And the newsletter has an email input and submit button
-And social icons (Facebook, Twitter, Dribbble, Behance) are displayed
-And the copyright footer links to Component Dock
-```
+#### Scenario: Car models section shows carousel
 
-### Scenario: Responsive layout adapts to mobile
-```
-Given the user views on a mobile viewport (< 768px)
-Then the navbar collapses to a hamburger menu
-And the hero booking form stacks vertically
-And feature/review cards stack in single column
-And the car model section stacks vertically
-And blog cards stack in single column
-And the footer columns stack vertically
-```
+- **GIVEN** the user scrolls to the car models section
+- **THEN** multiple car model cards are displayed
+- **AND** each card shows: car name, price per day, description, specs (capacity, doors, AC, transmission), a "Book This Car Now" button, and a car image
+- **AND** cards have a carousel/pagination behavior
 
-### Scenario: Primary buttons have hover animation
-```
-Given the user hovers over a primary button
-Then the background transitions from gold (#fab700) to transparent
-And the border and text color transition to gold (#fab700)
-```
+#### Scenario: Facts bar displays stat counters
+
+- **GIVEN** the user scrolls to the facts section
+- **THEN** a gold (#fab700) background bar is visible
+- **AND** 5 stat counters are displayed (Projects, Clients, Tasks, Coffee, Professionals)
+
+#### Scenario: Reviews section shows 6 review cards
+
+- **GIVEN** the user scrolls to the reviews section
+- **THEN** 6 review cards are displayed in a 3-column responsive grid
+- **AND** each card has a name, text, and star rating (out of 5)
+
+#### Scenario: Call-to-action section is visible
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a dark overlay background is shown
+- **AND** the heading "Experience Great Support" is visible
+- **AND** a "Reach Our Support Team" button with gold background is visible
+
+#### Scenario: Blog section shows 4 blog cards
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 4 blog cards are displayed in a 4-column responsive grid
+- **AND** each card has a thumbnail image, date, title, excerpt, likes count, and comments count
+
+#### Scenario: Footer renders with newsletter and links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark navy (#04091e) background is visible
+- **AND** 5 columns are shown: Quick Links, Features, Resources, Social, Newsletter
+- **AND** the newsletter has an email input and submit button
+- **AND** social icons (Facebook, Twitter, Dribbble, Behance) are displayed
+- **AND** the copyright footer links to Component Dock
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the user views on a mobile viewport (< 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero booking form stacks vertically
+- **AND** feature/review cards stack in single column
+- **AND** the car model section stacks vertically
+- **AND** blog cards stack in single column
+- **AND** the footer columns stack vertically
+
+#### Scenario: Primary buttons have hover animation
+
+- **GIVEN** the user hovers over a primary button
+- **THEN** the background transitions from gold (#fab700) to transparent
+- **AND** the border and text color transition to gold (#fab700)
 
 ## Verification Checklist
 

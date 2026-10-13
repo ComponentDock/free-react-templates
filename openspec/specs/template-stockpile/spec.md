@@ -36,116 +36,111 @@ Recreation of the ColorLib **Product** template as a React 19 + Vite + Tailwind 
 7. **Newsletter** — Subscribe form: email input + "Subscribe" button (black bg).
 8. **Footer** — 4 widget columns: Help (Contact us, Account, Shipping, Returns, FAQ), About, social icons, copyright with "Component Dock" link.
 
-## Gherkin scenarios
+## Requirements
 
 ### Nav
 
-```gherkin
 Feature: Stockpile Navigation
 
-  Scenario: Nav displays links and icons
-    Given the user is on the Stockpile page
-    Then navigation links are visible: New, Shop, Pages, Blog, Contact
-    And search, person, and cart icons are on the right
-    And a cart badge shows item count
+#### Scenario: Nav displays links and icons
 
-  Scenario: Mobile menu opens offcanvas
-    Given the user is on a mobile viewport
-    When the hamburger menu is clicked
-    Then an offcanvas menu slides in with navigation links
-```
+- **GIVEN** the user is on the Stockpile page
+- **THEN** navigation links are visible: New, Shop, Pages, Blog, Contact
+- **AND** search, person, and cart icons are on the right
+- **AND** a cart badge shows item count
+
+#### Scenario: Mobile menu opens offcanvas
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the hamburger menu is clicked
+- **THEN** an offcanvas menu slides in with navigation links
 
 ### Hero
 
-```gherkin
 Feature: Stockpile Hero
 
-  Scenario: Hero displays carousel
-    Given the user is on the Stockpile page
-    Then a full-width hero carousel is visible
-    And the heading "The New Way To Display Product" is shown in white serif font
-    And a description paragraph is below the heading
-    And an "Explore now" outline button is present
-```
+#### Scenario: Hero displays carousel
+
+- **GIVEN** the user is on the Stockpile page
+- **THEN** a full-width hero carousel is visible
+- **AND** the heading "The New Way To Display Product" is shown in white serif font
+- **AND** a description paragraph is below the heading
+- **AND** an "Explore now" outline button is present
 
 ### Features
 
-```gherkin
 Feature: Stockpile Features
 
-  Scenario: Features section shows 3 items
-    Given the user scrolls to the features area
-    Then 3 feature items are displayed in a row
-    And each has an icon, heading, and description
-    And the items are: "Worldwide Delivery", "Secure Payments", "Simple Returns"
-```
+#### Scenario: Features section shows 3 items
+
+- **GIVEN** the user scrolls to the features area
+- **THEN** 3 feature items are displayed in a row
+- **AND** each has an icon, heading, and description
+- **AND** the items are: "Worldwide Delivery", "Secure Payments", "Simple Returns"
 
 ### Products
 
-```gherkin
 Feature: Stockpile Products
 
-  Scenario: Product grid displays items
-    Given the user scrolls to the new arrivals section
-    Then 6 product cards are shown in a grid
-    And each card has an image with hover overlay
-    And each card shows a product title and price
-    And some cards show "New" or "Sale" badges
+#### Scenario: Product grid displays items
 
-  Scenario: Product card has hover interaction
-    Given a product card is visible
-    When the user hovers over the product image
-    Then a cart icon overlay appears
-```
+- **GIVEN** the user scrolls to the new arrivals section
+- **THEN** 6 product cards are shown in a grid
+- **AND** each card has an image with hover overlay
+- **AND** each card shows a product title and price
+- **AND** some cards show "New" or "Sale" badges
+
+#### Scenario: Product card has hover interaction
+
+- **GIVEN** a product card is visible
+- **WHEN** the user hovers over the product image
+- **THEN** a cart icon overlay appears
 
 ### WeekDeal
 
-```gherkin
 Feature: Stockpile Week Deal
 
-  Scenario: Week Deal section renders
-    Given the user scrolls to the week deal section
-    Then a "Week Deal" heading is displayed
-    And a featured product is shown with details
-```
+#### Scenario: Week Deal section renders
+
+- **GIVEN** the user scrolls to the week deal section
+- **THEN** a "Week Deal" heading is displayed
+- **AND** a featured product is shown with details
 
 ### PopularItems
 
-```gherkin
 Feature: Stockpile Popular Items
 
-  Scenario: Popular items section renders
-    Given the user scrolls to the popular items section
-    Then a "Popular Items" heading is displayed
-    And 5 product cards are shown in a row
-```
+#### Scenario: Popular items section renders
+
+- **GIVEN** the user scrolls to the popular items section
+- **THEN** a "Popular Items" heading is displayed
+- **AND** 5 product cards are shown in a row
 
 ### Newsletter
 
-```gherkin
 Feature: Stockpile Newsletter
 
-  Scenario: Newsletter form displays
-    Given the user scrolls to the newsletter section
-    Then an email input field is present
-    And a "Subscribe" button with black background is present
-```
+#### Scenario: Newsletter form displays
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** an email input field is present
+- **AND** a "Subscribe" button with black background is present
 
 ### Footer
 
-```gherkin
 Feature: Stockpile Footer
 
-  Scenario: Footer displays widgets
-    Given the user scrolls to the footer
-    Then 4 widget columns are displayed (Help, About, social, copyright)
-    And a copyright bar is at the bottom
+#### Scenario: Footer displays widgets
 
-  Scenario: Footer links to Component Dock
-    Given the footer is rendered
-    Then the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
-    And no ColorLib references appear in the app code
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 widget columns are displayed (Help, About, social, copyright)
+- **AND** a copyright bar is at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is rendered
+- **THEN** the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
+- **AND** no ColorLib references appear in the app code
 
 ## Verification checklist
 

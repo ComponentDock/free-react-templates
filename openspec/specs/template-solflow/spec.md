@@ -49,86 +49,100 @@ The description mentions: slider, CTA buttons, contact page, Google Maps, social
 | Button padding | `12px 32px` | Generous button sizing |
 | Navbar background | Transparent / semi-transparent | Over hero image |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Solflow Yoga Studio Template
 
   Background:
-    Given the user opens the Solflow homepage
+- **GIVEN** the user opens the Solflow homepage
 
-  Scenario: Navbar displays with navigation links
-    Then the navbar shows the logo "SOLFLOW" centered
-    And navigation links "Home", "Classes", "About Us" appear on the left
-    And navigation links "Shop", "News", "Contact" appear on the right
+#### Scenario: Navbar displays with navigation links
 
-  Scenario: Hero section renders with carousel
-    Then a full-width hero section is visible
-    And the hero displays the heading "Find Your Zen"
-    And the hero displays a subtitle above the heading
-    And the hero has a "Read More" CTA button
-    And left and right carousel navigation arrows are present
+- **THEN** the navbar shows the logo "SOLFLOW" centered
+- **AND** navigation links "Home", "Classes", "About Us" appear on the left
+- **AND** navigation links "Shop", "News", "Contact" appear on the right
 
-  Scenario: Hero carousel navigates between slides
-    When the user clicks the right arrow
-    Then the hero content transitions to the next slide
-    When the user clicks the left arrow
-    Then the hero content transitions to the previous slide
+#### Scenario: Hero section renders with carousel
 
-  Scenario: About section displays studio introduction
-    Then an about section is visible with a heading
-    And the about section contains introductory paragraph text
-    And the about section has an image or visual element
+- **THEN** a full-width hero section is visible
+- **AND** the hero displays the heading "Find Your Zen"
+- **AND** the hero displays a subtitle above the heading
+- **AND** the hero has a "Read More" CTA button
+- **AND** left and right carousel navigation arrows are present
 
-  Scenario: Classes section displays offerings
-    Then a classes section is visible with a heading
-    And the classes section shows class cards or list items
+#### Scenario: Hero carousel navigates between slides
 
-  Scenario: Features section highlights services
-    Then a features section is visible
-    And feature cards show an icon, title, and description
+- **WHEN** the user clicks the right arrow
+- **THEN** the hero content transitions to the next slide
+- **WHEN** the user clicks the left arrow
+- **THEN** the hero content transitions to the previous slide
 
-  Scenario: Pricing section shows plans
-    Then a pricing section is visible with a heading
-    And pricing cards display plan names, prices, and feature lists
-    And a "Get Started" or "Join Now" CTA button appears on each plan
+#### Scenario: About section displays studio introduction
 
-  Scenario: Testimonials section displays reviews
-    Then a testimonials section is visible with a heading
-    And testimonial cards show a quote, author name, and optional image
+- **THEN** an about section is visible with a heading
+- **AND** the about section contains introductory paragraph text
+- **AND** the about section has an image or visual element
 
-  Scenario: Gallery section shows images
-    Then a gallery section is visible with a heading
-    And gallery images are displayed in a grid layout
-    And gallery images have hover effects or lightbox interaction
+#### Scenario: Classes section displays offerings
 
-  Scenario: Blog section displays recent posts
-    Then a blog section is visible with a heading
-    And blog cards show a featured image, title, excerpt, and date
-    And each blog card has a "Read More" link
+- **THEN** a classes section is visible with a heading
+- **AND** the classes section shows class cards or list items
 
-  Scenario: Contact section provides contact form and map
-    Then a contact section is visible with a heading
-    And a contact form shows name, email, subject, and message fields
-    And a Google Maps embed or map placeholder is present
-    And a "Send Message" submit button is visible
+#### Scenario: Features section highlights services
 
-  Scenario: Footer displays links and attribution
-    Then a footer is visible
-    And the footer contains a link to "https://www.componentdock.com/"
-    And social media icon links are present in the footer
+- **THEN** a features section is visible
+- **AND** feature cards show an icon, title, and description
 
-  Scenario: Page is responsive on mobile
-    When the viewport width is less than 768px
-    Then the navbar collapses into a hamburger menu
-    And sections stack vertically
-    And the hero text remains readable
-    And pricing cards stack vertically
+#### Scenario: Pricing section shows plans
 
-  Scenario: Page accessibility basics
-    Then all images have descriptive alt attributes
-    And all form fields have associated labels
-    And interactive elements are keyboard-focusable
-    And heading hierarchy follows h1 → h2 → h3 order
+- **THEN** a pricing section is visible with a heading
+- **AND** pricing cards display plan names, prices, and feature lists
+- **AND** a "Get Started" or "Join Now" CTA button appears on each plan
+
+#### Scenario: Testimonials section displays reviews
+
+- **THEN** a testimonials section is visible with a heading
+- **AND** testimonial cards show a quote, author name, and optional image
+
+#### Scenario: Gallery section shows images
+
+- **THEN** a gallery section is visible with a heading
+- **AND** gallery images are displayed in a grid layout
+- **AND** gallery images have hover effects or lightbox interaction
+
+#### Scenario: Blog section displays recent posts
+
+- **THEN** a blog section is visible with a heading
+- **AND** blog cards show a featured image, title, excerpt, and date
+- **AND** each blog card has a "Read More" link
+
+#### Scenario: Contact section provides contact form and map
+
+- **THEN** a contact section is visible with a heading
+- **AND** a contact form shows name, email, subject, and message fields
+- **AND** a Google Maps embed or map placeholder is present
+- **AND** a "Send Message" submit button is visible
+
+#### Scenario: Footer displays links and attribution
+
+- **THEN** a footer is visible
+- **AND** the footer contains a link to "https://www.componentdock.com/"
+- **AND** social media icon links are present in the footer
+
+#### Scenario: Page is responsive on mobile
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** sections stack vertically
+- **AND** the hero text remains readable
+- **AND** pricing cards stack vertically
+
+#### Scenario: Page accessibility basics
+
+- **THEN** all images have descriptive alt attributes
+- **AND** all form fields have associated labels
+- **AND** interactive elements are keyboard-focusable
+- **AND** heading hierarchy follows h1 → h2 → h3 order
 
 ## Verification checklist
 

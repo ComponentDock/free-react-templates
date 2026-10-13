@@ -48,89 +48,103 @@ two items have a warm yellow unread background (`#fffaef`). At the bottom a
 "View All" link centers below the list. The whole component sits in a centered
 column (`col-md-5`).
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Notification dropdown snippet
 
-**Scenario: Bell icon renders with badge count**
-  Given the component is mounted
-  When I look at the bell icon area
-  Then I see a bell icon (lucide Bell)
-  And I see a circular badge with the text "5"
+#### Scenario: Bell icon renders with badge count
 
-**Scenario: Badge styling matches source**
-  Given the component is mounted
-  When I inspect the badge
-  Then its background is #007bff
-  And its text color is #fff
-  And its border-radius is 50%
-  And its border is 2px solid #fff
+- **GIVEN** the component is mounted
+- **WHEN** I look at the bell icon area
+- **THEN** I see a bell icon (lucide Bell)
+- **AND** I see a circular badge with the text "5"
 
-**Scenario: Dropdown opens on bell click**
-  Given the dropdown is closed
-  When I click the bell icon
-  Then the dropdown panel appears with animation (opacity fade)
-  And the bell icon aria-expanded is true
+#### Scenario: Badge styling matches source
 
-**Scenario: Dropdown closes on bell click again**
-  Given the dropdown is open
-  When I click the bell icon
-  Then the dropdown panel disappears
-  And the bell icon aria-expanded is false
+- **GIVEN** the component is mounted
+- **WHEN** I inspect the badge
+- **THEN** its background is #007bff
+- **AND** its text color is #fff
+- **AND** its border-radius is 50%
+- **AND** its border is 2px solid #fff
 
-**Scenario: Dropdown closes on outside click**
-  Given the dropdown is open
-  When I click outside the dropdown area
-  Then the dropdown panel disappears
+#### Scenario: Dropdown opens on bell click
 
-**Scenario: Notification list header**
-  Given the dropdown is open
-  When I inspect the header
-  Then I see "Notifications" text (uppercase, bold, 12px)
-  And I see "Mark all as read" link aligned right
+- **GIVEN** the dropdown is closed
+- **WHEN** I click the bell icon
+- **THEN** the dropdown panel appears with animation (opacity fade)
+- **AND** the bell icon aria-expanded is true
 
-**Scenario: Notification items render**
-  Given the dropdown is open
-  When I count the notification items
-  Then there are 5 items
+#### Scenario: Dropdown closes on bell click again
 
-**Scenario: Each notification item structure**
-  Given the dropdown is open
-  When I look at any notification item
-  Then it has a circular avatar image (40px)
-  And it has a bold name
-  And it has a gray action description
+- **GIVEN** the dropdown is open
+- **WHEN** I click the bell icon
+- **THEN** the dropdown panel disappears
+- **AND** the bell icon aria-expanded is false
 
-**Scenario: Unread items highlighted**
-  Given the dropdown is open
-  When I look at unread items
-  Then their background is #fffaef
+#### Scenario: Dropdown closes on outside click
 
-**Scenario: Hover state on items**
-  Given the dropdown is open
-  When I hover over a notification item
-  Then the item background becomes #f9f9f9
+- **GIVEN** the dropdown is open
+- **WHEN** I click outside the dropdown area
+- **THEN** the dropdown panel disappears
 
-**Scenario: Scrollable list**
-  Given the dropdown is open
-  Given there are more than 4 visible items
-  When I look at the notification list
-  Then its max height is 200px with overflow-y scroll
+#### Scenario: Notification list header
 
-**Scenario: View All link**
-  Given the dropdown is open
-  When I look at the bottom of the dropdown
-  Then I see a centered "View All" link
+- **GIVEN** the dropdown is open
+- **WHEN** I inspect the header
+- **THEN** I see "Notifications" text (uppercase, bold, 12px)
+- **AND** I see "Mark all as read" link aligned right
 
-**Scenario: Dropdown max width**
-  Given the dropdown is open
-  When I measure the dropdown width
-  Then it is at most 380px
+#### Scenario: Notification items render
 
-**Scenario: Accessibility — keyboard**
-  Given the dropdown is open
-  When I press Escape
-  Then the dropdown closes
+- **GIVEN** the dropdown is open
+- **WHEN** I count the notification items
+- **THEN** there are 5 items
+
+#### Scenario: Each notification item structure
+
+- **GIVEN** the dropdown is open
+- **WHEN** I look at any notification item
+- **THEN** it has a circular avatar image (40px)
+- **AND** it has a bold name
+- **AND** it has a gray action description
+
+#### Scenario: Unread items highlighted
+
+- **GIVEN** the dropdown is open
+- **WHEN** I look at unread items
+- **THEN** their background is #fffaef
+
+#### Scenario: Hover state on items
+
+- **GIVEN** the dropdown is open
+- **WHEN** I hover over a notification item
+- **THEN** the item background becomes #f9f9f9
+
+#### Scenario: Scrollable list
+
+- **GIVEN** the dropdown is open
+- **GIVEN** there are more than 4 visible items
+- **WHEN** I look at the notification list
+- **THEN** its max height is 200px with overflow-y scroll
+
+#### Scenario: View All link
+
+- **GIVEN** the dropdown is open
+- **WHEN** I look at the bottom of the dropdown
+- **THEN** I see a centered "View All" link
+
+#### Scenario: Dropdown max width
+
+- **GIVEN** the dropdown is open
+- **WHEN** I measure the dropdown width
+- **THEN** it is at most 380px
+
+#### Scenario: Accessibility — keyboard
+
+- **GIVEN** the dropdown is open
+- **WHEN** I press Escape
+- **THEN** the dropdown closes
 
 ## Verification checklist
 

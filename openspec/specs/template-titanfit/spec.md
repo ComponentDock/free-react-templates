@@ -227,7 +227,7 @@ The footer SHALL display About text, Quick Menu links, Contact Info, and Social 
 - **THEN** a "Made with Component Dock" link is present
 - **AND** the link points to https://www.componentdock.com/
 
-### Requirement: Accessibility
+### Feature: Accessibility
 
 #### Scenario: Semantic landmarks
 
@@ -243,7 +243,7 @@ The footer SHALL display About text, Quick Menu links, Contact Info, and Social 
 - **THEN** all interactive elements are focusable
 - **AND** focus-visible rings are displayed on focused elements
 
-### Requirement: Responsive design
+### Feature: Responsive design
 
 #### Scenario: Mobile layout
 

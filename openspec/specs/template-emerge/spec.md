@@ -78,114 +78,147 @@ Name mapping: `apps/emerge` recreates ColorLib "Unfold".
     Twitter, Instagram, Dribbble, Behance), copyright with Component Dock
     attribution (replacing ColorLib attribution).
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-- Given the page loads, When I look at the top, Then I see a fixed navbar with
+
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, When I look at the top, Then I see a fixed navbar with
   the logo "Emerge" centered.
-- Given the navbar is visible, When I look left of the logo, Then I see links:
+- **GIVEN** the navbar is visible, When I look left of the logo, Then I see links:
   Portfolio, About, Services.
-- Given the navbar is visible, When I look right of the logo, Then I see
+- **GIVEN** the navbar is visible, When I look right of the logo, Then I see
   links: Skills, Testimonial, Journal, Contact.
-- Given I am on mobile, When I tap the hamburger, Then a mobile menu opens
+- **GIVEN** I am on mobile, When I tap the hamburger, Then a mobile menu opens
   with all nav links.
-- Given the navbar is visible, When I look to the far right, Then I see a
+- **GIVEN** the navbar is visible, When I look to the far right, Then I see a
   dark/light mode toggle button.
 
 ### Hero
-- Given the page loads, When I see the hero section, Then there is a full-
+
+#### Scenario: Hero
+
+- **GIVEN** the page loads, When I see the hero section, Then there is a full-
   viewport parallax background image with dark overlay.
-- Given the hero is visible, When I read the heading, Then it says "Emerge".
-- Given the hero is visible, When I read the subheading, Then it shows a
+- **GIVEN** the hero is visible, When I read the heading, Then it says "Emerge"
+- **GIVEN** the hero is visible, When I read the subheading, Then it shows a
   designer tagline.
-- Given the hero is visible, When I look at the bottom, Then I see a scroll
+- **GIVEN** the hero is visible, When I look at the bottom, Then I see a scroll
   indicator (mouse icon + "Scroll" label).
 
 ### Portfolio
-- Given I scroll to portfolio, When I see the section, Then there is a
+
+#### Scenario: Portfolio
+
+- **GIVEN** I scroll to portfolio, When I see the section, Then there is a
   heading "Portfolio" with a divider image underneath.
-- Given the portfolio grid is visible, When I count the items, Then there
+- **GIVEN** the portfolio grid is visible, When I count the items, Then there
   are 9 portfolio items in a 3-column grid.
-- Given a portfolio item, When I hover over it, Then a dark overlay appears
+- **GIVEN** a portfolio item, When I hover over it, Then a dark overlay appears
   with a link icon, project title, and category tags.
-- Given a portfolio item, When I look at the aspect ratio, Then most items
+- **GIVEN** a portfolio item, When I look at the aspect ratio, Then most items
   are landscape and 1-2 are portrait (taller).
 
 ### About Me
-- Given I scroll to about, When I see the section, Then there is a heading
+
+#### Scenario: About Me
+
+- **GIVEN** I scroll to about, When I see the section, Then there is a heading
   "About Me" with a divider image.
-- Given the about section is visible, When I look left, Then I see a large
+- **GIVEN** the about section is visible, When I look left, Then I see a large
   designer portrait photo with a dotted background decoration.
-- Given the about section is visible, When I look right, Then I see a heading
+- **GIVEN** the about section is visible, When I look right, Then I see a heading
   "We can make it together", two paragraphs, and a "Download my CV" pill
   button.
 
 ### My Services
-- Given I scroll to services, When I see the section, Then there is a
+
+#### Scenario: My Services
+
+- **GIVEN** I scroll to services, When I see the section, Then there is a
   heading "My Services" with a divider image.
-- Given the services grid is visible, When I count the items, Then there
+- **GIVEN** the services grid is visible, When I count the items, Then there
   are 6 service cards in a 3-column grid (2 rows).
-- Given a service card, When I look at it, Then I see an SVG icon (45px),
+- **GIVEN** a service card, When I look at it, Then I see an SVG icon (45px),
   a two-word heading, and a description paragraph.
-- Given the services are listed, When I read the headings, Then they are:
+- **GIVEN** the services are listed, When I read the headings, Then they are:
   Digital Strategy, Web Design, User Experience, Web Development, WordPress
   Solutions, Mobile Applications.
 
 ### My Skills
-- Given I scroll to skills, When I see the section, Then there is a heading
+
+#### Scenario: My Skills
+
+- **GIVEN** I scroll to skills, When I see the section, Then there is a heading
   "My Skills" with a divider image.
-- Given the skills counters are visible, When I count them, Then there are
+- **GIVEN** the skills counters are visible, When I count them, Then there are
   4 animated counter items in a row.
-- Given a skill counter, When I look at it, Then I see a large red number
+- **GIVEN** a skill counter, When I look at it, Then I see a large red number
   (90, 99, 95, or 100), a "%" symbol, and an uppercase label.
-- Given the skill labels, When I read them, Then they are: WordPress, HTML/
+- **GIVEN** the skill labels, When I read them, Then they are: WordPress, HTML/
   CSS, JavaScript, Design.
 
 ### Testimonials
-- Given I scroll to testimonials, When I see the section, Then there is a
+
+#### Scenario: Testimonials
+
+- **GIVEN** I scroll to testimonials, When I see the section, Then there is a
   heading "My Happy Clients" with a divider image.
-- Given the testimonial carousel is visible, When I look at a slide, Then
+- **GIVEN** the testimonial carousel is visible, When I look at a slide, Then
   I see a quote blockquote, author photo, name, and role with @company.
-- Given the testimonials are loaded, When I count them, Then there are 3
+- **GIVEN** the testimonials are loaded, When I count them, Then there are 3
   testimonial slides in the carousel.
-- Given a testimonial, When I read the author info, Then the name and role
+- **GIVEN** a testimonial, When I read the author info, Then the name and role
   are visible below the photo.
 
 ### Journal / Blog
-- Given I scroll to journal, When I see the section, Then there is a heading
+
+#### Scenario: Journal / Blog
+
+- **GIVEN** I scroll to journal, When I see the section, Then there is a heading
   "My Journal" with a divider image.
-- Given the blog grid is visible, When I look at the layout, Then the top
+- **GIVEN** the blog grid is visible, When I look at the layout, Then the top
   row has 1 large post (col-8) and 1 small post (col-4), and the bottom
   row has 2 equal posts.
-- Given a blog post card, When I hover over it, Then a dark overlay appears
+- **GIVEN** a blog post card, When I hover over it, Then a dark overlay appears
   with the title and author + read time meta.
-- Given the blog posts are loaded, When I count them, Then there are 4
+- **GIVEN** the blog posts are loaded, When I count them, Then there are 4
   blog post cards total.
 
 ### Contact / Get In Touch
-- Given I scroll to contact, When I see the section, Then there is a heading
+
+#### Scenario: Contact / Get In Touch
+
+- **GIVEN** I scroll to contact, When I see the section, Then there is a heading
   "Get In Touch" with a divider image.
-- Given the contact section is visible, When I look left, Then I see a form
+- **GIVEN** the contact section is visible, When I look left, Then I see a form
   with Name, Email, Message fields and a "Send Message" pill button.
-- Given the contact section is visible, When I look right, Then I see contact
+- **GIVEN** the contact section is visible, When I look right, Then I see contact
   info: Email, Phone, and Address.
-- Given the contact form, When I submit with empty fields, Then validation
+- **GIVEN** the contact form, When I submit with empty fields, Then validation
   errors are shown (via react-hook-form / zod).
 
 ### Footer
-- Given I scroll to the footer, When I look at it, Then I see the logo
+
+#### Scenario: Footer
+
+- **GIVEN** I scroll to the footer, When I look at it, Then I see the logo
   "Emerge" centered with a dot accent.
-- Given the footer is visible, When I look below the logo, Then I see social
+- **GIVEN** the footer is visible, When I look below the logo, Then I see social
   links: Facebook, Twitter, Instagram, Dribbble, Behance.
-- Given the footer is visible, When I read the copyright line, Then it says
+- **GIVEN** the footer is visible, When I read the copyright line, Then it says
   "All rights reserved" with a Component Dock link.
 
 ### Dark/Light Mode
-- Given the page loads in dark mode (default), When I read body text, Then
+
+#### Scenario: Dark/Light Mode
+
+- **GIVEN** the page loads in dark mode (default), When I read body text, Then
   it is white on dark background.
-- Given I click the theme toggle, When the page switches to light mode, Then
+- **GIVEN** I click the theme toggle, When the page switches to light mode, Then
   backgrounds become light and text becomes dark (#212529).
-- Given I am in light mode, When I look at the hero button, Then it stays
+- **GIVEN** I am in light mode, When I look at the hero button, Then it stays
   white text (not dark) for contrast over the hero image.
 
 ## Verification Checklist

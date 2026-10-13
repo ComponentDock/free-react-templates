@@ -41,138 +41,146 @@ Recreation of the ColorLib **Innova** template as a React 19 + Vite + Tailwind 4
 7. **CTA Banner ("Get Started")** — purple bg-primary, white text heading + description + "Get In Touch!" button (btn-outline-white)
 8. **Footer** — white bg, 3 columns: About Us text, Navigation links, Social icons (Twitter, Facebook, LinkedIn, Instagram)
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Navbar
 
-  Scenario: Transparent sticky navbar
-    Given the user is on the page
-    Then a transparent navbar is visible over the hero
-    And the brand name "InnoTide" is displayed in Abril Fatface font
-    And the nav links are visible on the right side
+#### Scenario: Transparent sticky navbar
 
-  Scenario: Navbar becomes opaque on mobile
-    Given the viewport is narrow (< 992px)
-    Then the navbar background changes to dark (#343a40)
-    And a hamburger toggle icon is visible
+- **GIVEN** the user is on the page
+- **THEN** a transparent navbar is visible over the hero
+- **AND** the brand name "InnoTide" is displayed in Abril Fatface font
+- **AND** the nav links are visible on the right side
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is narrow (< 992px)
-    When the user taps the hamburger icon
-    Then the mobile navigation menu slides open
-```
+#### Scenario: Navbar becomes opaque on mobile
+
+- **GIVEN** the viewport is narrow (< 992px)
+- **THEN** the navbar background changes to dark (#343a40)
+- **AND** a hamburger toggle icon is visible
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is narrow (< 992px)
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile navigation menu slides open
 
 ### Hero
-```gherkin
+
 Feature: Hero Section
 
-  Scenario: Hero displays on load
-    Given the user is on the page
-    Then a full-viewport hero section with a background image is visible
-    And the heading reads "We Are InnoTide We Create Great Stuff."
-    And a dark overlay covers the hero image
-    And dot indicators are visible at the bottom center
+#### Scenario: Hero displays on load
 
-  Scenario: Heading text has purple highlight
-    Given the hero section is visible
-    Then the heading words have a purple (#6f42c1) highlight/background behind them
-```
+- **GIVEN** the user is on the page
+- **THEN** a full-viewport hero section with a background image is visible
+- **AND** the heading reads "We Are InnoTide We Create Great Stuff."
+- **AND** a dark overlay covers the hero image
+- **AND** dot indicators are visible at the bottom center
+
+#### Scenario: Heading text has purple highlight
+
+- **GIVEN** the hero section is visible
+- **THEN** the heading words have a purple (#6f42c1) highlight/background behind them
 
 ### Services
-```gherkin
+
 Feature: Services Section
 
-  Scenario: Four service cards displayed
-    Given the user scrolls to the services section
-    Then four service cards are displayed in a row
-    And each card has an icon, title, and short description
-    And the icons are displayed in the primary purple color (#6f42c1)
+#### Scenario: Four service cards displayed
 
-  Scenario: Service card content
-    Given the services section is visible
-    Then the cards show: Email Design, Web Design, Mobile Design, Research
-    And each card description contains placeholder text
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** four service cards are displayed in a row
+- **AND** each card has an icon, title, and short description
+- **AND** the icons are displayed in the primary purple color (#6f42c1)
+
+#### Scenario: Service card content
+
+- **GIVEN** the services section is visible
+- **THEN** the cards show: Email Design, Web Design, Mobile Design, Research
+- **AND** each card description contains placeholder text
 
 ### Portfolio
-```gherkin
+
 Feature: Portfolio Section
 
-  Scenario: Portfolio grid displayed
-    Given the user scrolls to the portfolio section
-    Then a "Selected Work" heading is visible
-    And four portfolio items are displayed in a 2×2 grid
-    And each item shows an image with a category label
+#### Scenario: Portfolio grid displayed
 
-  Scenario: Portfolio hover effect
-    Given the portfolio items are visible
-    When the user hovers over a portfolio item
-    Then the project name and category are revealed over a dark overlay
-```
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** a "Selected Work" heading is visible
+- **AND** four portfolio items are displayed in a 2×2 grid
+- **AND** each item shows an image with a category label
+
+#### Scenario: Portfolio hover effect
+
+- **GIVEN** the portfolio items are visible
+- **WHEN** the user hovers over a portfolio item
+- **THEN** the project name and category are revealed over a dark overlay
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials Section
 
-  Scenario: Testimonials carousel
-    Given the user scrolls to the testimonials section
-    Then a "Happy Client" heading is visible
-    And a carousel of testimonial cards is displayed
-    And each card shows an avatar, person name, company, and a quote
+#### Scenario: Testimonials carousel
 
-  Scenario: Carousel navigation
-    Given the testimonials carousel is visible
-    When the user navigates to the next slide
-    Then a different testimonial card is displayed
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a "Happy Client" heading is visible
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows an avatar, person name, company, and a quote
+
+#### Scenario: Carousel navigation
+
+- **GIVEN** the testimonials carousel is visible
+- **WHEN** the user navigates to the next slide
+- **THEN** a different testimonial card is displayed
 
 ### About
-```gherkin
+
 Feature: About Section
 
-  Scenario: About section layout
-    Given the user scrolls to the about section
-    Then a split layout is displayed
-    And the left side shows a large image with a dotted background decoration
-    And the right side shows an "About US" label, "Creative We Grow" heading, and descriptive text
-    And a "Learn More" button (btn-outline-black) is displayed
+#### Scenario: About section layout
 
-  Scenario: About section button
-    Given the about section is visible
-    When the user clicks the "Learn More" button
-    Then the button responds with a hover state (black fill, white text)
-```
+- **GIVEN** the user scrolls to the about section
+- **THEN** a split layout is displayed
+- **AND** the left side shows a large image with a dotted background decoration
+- **AND** the right side shows an "About US" label, "Creative We Grow" heading, and descriptive text
+- **AND** a "Learn More" button (btn-outline-black) is displayed
+
+#### Scenario: About section button
+
+- **GIVEN** the about section is visible
+- **WHEN** the user clicks the "Learn More" button
+- **THEN** the button responds with a hover state (black fill, white text)
 
 ### CTA Banner
-```gherkin
+
 Feature: CTA Banner
 
-  Scenario: Purple CTA banner
-    Given the user scrolls to the CTA section
-    Then a purple (#6f42c1) background banner is visible
-    And a "Get Started" heading in white is displayed
-    And a "Get In Touch!" button (btn-outline-white) is centered below
-```
+#### Scenario: Purple CTA banner
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a purple (#6f42c1) background banner is visible
+- **AND** a "Get Started" heading in white is displayed
+- **AND** a "Get In Touch!" button (btn-outline-white) is centered below
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Footer layout
-    Given the user scrolls to the footer
-    Then the footer has a white background
-    And an "About Us" column with descriptive text is on the left
-    And a "Navigation" column with links (About, Services, Portfolio, Contact) is in the middle
-    And social media icons (Twitter, Facebook, LinkedIn, Instagram) are on the right
-    And a "Made with Component Dock" attribution link is present
+#### Scenario: Footer layout
 
-  Scenario: Footer links
-    Given the footer is visible
-    When the user hovers over a navigation link
-    Then the link is underlined
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a white background
+- **AND** an "About Us" column with descriptive text is on the left
+- **AND** a "Navigation" column with links (About, Services, Portfolio, Contact) is in the middle
+- **AND** social media icons (Twitter, Facebook, LinkedIn, Instagram) are on the right
+- **AND** a "Made with Component Dock" attribution link is present
+
+#### Scenario: Footer links
+
+- **GIVEN** the footer is visible
+- **WHEN** the user hovers over a navigation link
+- **THEN** the link is underlined
 
 ## Verification checklist
 

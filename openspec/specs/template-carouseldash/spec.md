@@ -64,7 +64,7 @@ Recreation of **ColorLib "Carousel 18"** (source slug: `carousel-18`), a Bootstr
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Tabbed Carousel Navigation
 
@@ -74,25 +74,25 @@ Recreation of **ColorLib "Carousel 18"** (source slug: `carousel-18`), a Bootstr
 
 #### Scenario: Initial load shows first tab active
 
-Given the page loads  
-When the carousel renders  
-Then "First Tab" is visually active (dark text + bottom underline)  
-And the first slide (image + text) is displayed
+- **GIVEN** the page loads
+- **WHEN** the carousel renders
+- **THEN** "First Tab" is visually active (dark text + bottom underline)
+- **AND** the first slide (image + text) is displayed
 
 #### Scenario: Clicking a tab switches the active slide
 
-Given "Second Tab" is inactive  
-When the user clicks "Second Tab"  
-Then "Second Tab" becomes active (dark text + underline)  
-And "First Tab" becomes inactive (muted text, no underline)  
-And the second slide content appears (image + "TRAVEL — SECOND TAB" label + heading + paragraph)  
-And the transition is smooth (0.3s ease)
+- **GIVEN** "Second Tab" is inactive
+- **WHEN** the user clicks "Second Tab"
+- **THEN** "Second Tab" becomes active (dark text + underline)
+- **AND** "First Tab" becomes inactive (muted text, no underline)
+- **AND** the second slide content appears (image + "TRAVEL — SECOND TAB" label + heading + paragraph)
+- **AND** the transition is smooth (0.3s ease)
 
 #### Scenario: Tab hover changes text color
 
-Given a tab is inactive  
-When the user hovers over it  
-Then the tab text color changes to primary black (`#000`)
+- **GIVEN** a tab is inactive
+- **WHEN** the user hovers over it
+- **THEN** the tab text color changes to primary black (`#000`)
 
 ---
 
@@ -104,17 +104,17 @@ Then the tab text color changes to primary black (`#000`)
 
 #### Scenario: Desktop layout shows side-by-side image and text
 
-Given viewport width ≥ 992px (md breakpoint)  
-When a slide is active  
-Then the image occupies 50% width (flex: 0 0 50%)  
-And the text container occupies 50% width with 50px padding
+- **GIVEN** viewport width ≥ 992px (md breakpoint)
+- **WHEN** a slide is active
+- **THEN** the image occupies 50% width (flex: 0 0 50%)
+- **AND** the text container occupies 50% width with 50px padding
 
 #### Scenario: Mobile layout stacks image above text
 
-Given viewport width ≤ 991px  
-When a slide is active  
-Then the image occupies full width  
-And the text container occupies full width with 20px padding
+- **GIVEN** viewport width ≤ 991px
+- **WHEN** a slide is active
+- **THEN** the image occupies full width
+- **AND** the text container occupies full width with 20px padding
 
 ---
 
@@ -126,16 +126,16 @@ And the text container occupies full width with 20px padding
 
 #### Scenario: Each slide has category label, heading, and paragraph
 
-Given any slide is active  
-Then a category label appears: uppercase, muted color (`#adb5bd`), 12px, bold, letter-spaced  
-And a heading appears: Playfair Display serif, 2rem, line-height 1.3, dark color (`#000`)  
-And a paragraph appears: Roboto light, muted color (`#999999`)
+- **GIVEN** any slide is active
+- **THEN** a category label appears: uppercase, muted color (`#adb5bd`), 12px, bold, letter-spaced
+- **AND** a heading appears: Playfair Display serif, 2rem, line-height 1.3, dark color (`#000`)
+- **AND** a paragraph appears: Roboto light, muted color (`#999999`)
 
 #### Scenario: Category label reflects tab context
 
-Given "Second Tab" is active  
-Then the category label reads "TRAVEL — SECOND TAB"  
-And similarly for Third Tab
+- **GIVEN** "Second Tab" is active
+- **THEN** the category label reads "TRAVEL — SECOND TAB"
+- **AND** similarly for Third Tab
 
 ---
 
@@ -147,18 +147,18 @@ And similarly for Third Tab
 
 #### Scenario: Arrow navigation exists
 
-Given the carousel is rendered  
-Then left/right arrow buttons exist (positioned at 50% vertical, 20px from edges)  
-And arrows are white icons on colored circles (blue/red borders in source, styleable)  
-And clicking advances to previous/next slide
+- **GIVEN** the carousel is rendered
+- **THEN** left/right arrow buttons exist (positioned at 50% vertical, 20px from edges)
+- **AND** arrows are white icons on colored circles (blue/red borders in source, styleable)
+- **AND** clicking advances to previous/next slide
 
 #### Scenario: Dot indicators exist
 
-Given the carousel is rendered  
-Then dots appear centered at bottom (40px up), 7px circles  
-And inactive dots are semi-transparent white (`rgba(255,255,255,0.5)`)  
-And active dot is solid white  
-And clicking a dot jumps to that slide
+- **GIVEN** the carousel is rendered
+- **THEN** dots appear centered at bottom (40px up), 7px circles
+- **AND** inactive dots are semi-transparent white (`rgba(255,255,255,0.5)`)
+- **AND** active dot is solid white
+- **AND** clicking a dot jumps to that slide
 
 ---
 
@@ -170,14 +170,14 @@ And clicking a dot jumps to that slide
 
 #### Scenario: Tab bar remains usable on mobile
 
-Given viewport < 576px  
-Then tabs stack or shrink but remain clickable with 20px padding
+- **GIVEN** viewport < 576px
+- **THEN** tabs stack or shrink but remain clickable with 20px padding
 
 #### Scenario: Text remains readable on mobile
 
-Given viewport ≤ 991px  
-Then text container padding reduces to 20px  
-And heading size scales appropriately
+- **GIVEN** viewport ≤ 991px
+- **THEN** text container padding reduces to 20px
+- **AND** heading size scales appropriately
 
 ---
 

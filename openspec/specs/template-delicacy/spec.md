@@ -45,95 +45,117 @@ Awards bar with grayscale logos. Testimonials carousel with circular profile
 photos. Split reservation section: form left, full-bleed image right. Dark footer
 with centered logo and copyright.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Delicacy restaurant template
 
   Background:
-    Given the app is served at the root URL
-    And the page loads without errors
+- **GIVEN** the app is served at the root URL
+- **AND** the page loads without errors
 
-  # --- Navbar ---
-  Scenario: Navbar displays brand and navigation links
-    Then a navigation bar is visible at the top
-    And the brand text reads "delicacy"
-    And navigation links include "Home", "About Us", "Menu", "Awards", "Testimonials", "Reservation", "Contact"
+**--- Navbar ---**
 
-  Scenario: Navbar becomes sticky on scroll
-    When the user scrolls down past the hero
-    Then the navbar has a dark semi-transparent background
+#### Scenario: Navbar displays brand and navigation links
 
-  # --- Hero ---
-  Scenario: Hero section shows a fullscreen background image
-    Given the hero section is visible
-    Then the hero occupies the full viewport height
-    And a background image is displayed
-    And the hero text includes a heading and a description paragraph
-    And a "Reservation" CTA button is visible
+- **THEN** a navigation bar is visible at the top
+- **AND** the brand text reads "delicacy"
+- **AND** navigation links include "Home", "About Us", "Menu", "Awards", "Testimonials", "Reservation", "Contact"
 
-  Scenario: Hero button uses correct styling
-    Then the Reservation button has no border-radius
-    And the Reservation button has white text on default state
-    And the Reservation button shows red text on hover
+#### Scenario: Navbar becomes sticky on scroll
 
-  # --- About Us ---
-  Scenario: About section shows image and text in two-column layout
-    Given the "About Us" section is visible
-    Then an image is displayed on the left
-    And a heading "About Us" is displayed
-    And a subtitle "restaurant style" is shown
-    And a paragraph of description text is shown
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar has a dark semi-transparent background
 
-  Scenario: About section has a second row with reversed layout
-    When the user scrolls to the second about row
-    Then the text content is on the left
-    And the image is on the right
-    And the subtitle reads "our chef"
+**--- Hero ---**
 
-  # --- Dish Menu ---
-  Scenario: Dish menu shows three dishes in a grid
-    Given the "Special" menu section is visible
-    Then a heading "Special" is displayed
-    And a "View The Menu" button is shown
-    And three dish cards are displayed in a row
-    And each dish card shows an image, name, and price
+#### Scenario: Hero section shows a fullscreen background image
 
-  Scenario: Dish menu section has dark background
-    Then the dish menu section has a dark background color (#333333)
+- **GIVEN** the hero section is visible
+- **THEN** the hero occupies the full viewport height
+- **AND** a background image is displayed
+- **AND** the hero text includes a heading and a description paragraph
+- **AND** a "Reservation" CTA button is visible
 
-  # --- Awards ---
-  Scenario: Awards section displays award images
-    Given the "Awards" section is visible
-    Then a heading "Awards" is displayed
-    And multiple award images are shown in a horizontal row
+#### Scenario: Hero button uses correct styling
 
-  # --- Testimonials ---
-  Scenario: Testimonials section shows customer reviews
-    Given the "Testimonials" section is visible
-    Then a heading "Testimonials" is displayed
-    And testimonial cards show a circular avatar, name, and review text
+- **THEN** the Reservation button has no border-radius
+- **AND** the Reservation button has white text on default state
+- **AND** the Reservation button shows red text on hover
 
-  Scenario: Testimonial avatars are circular
-    Then each testimonial avatar has a 50% border-radius
+**--- About Us ---**
 
-  # --- Reservation ---
-  Scenario: Reservation section has form and image side by side
-    Given the "Reservation" section is visible
-    Then a heading "Reservation" is displayed
-    And a form is visible with date, time, persons, name, and message fields
-    And a "Reserve Your Desk" submit button is shown
-    And an image is displayed alongside the form
+#### Scenario: About section shows image and text in two-column layout
 
-  Scenario: Reservation form inputs use underline style
-    Then form inputs have no visible border except a bottom underline
+- **GIVEN** the "About Us" section is visible
+- **THEN** an image is displayed on the left
+- **AND** a heading "About Us" is displayed
+- **AND** a subtitle "restaurant style" is shown
+- **AND** a paragraph of description text is shown
 
-  # --- Footer ---
-  Scenario: Footer shows brand and copyright
-    Given the footer is visible
-    Then the footer has a dark background (#333333)
-    And the brand text "delicacy" is displayed
-    And a copyright notice is shown
-    And a link to "https://www.componentdock.com/" is present (Component Dock)
+#### Scenario: About section has a second row with reversed layout
+
+- **WHEN** the user scrolls to the second about row
+- **THEN** the text content is on the left
+- **AND** the image is on the right
+- **AND** the subtitle reads "our chef"
+
+**--- Dish Menu ---**
+
+#### Scenario: Dish menu shows three dishes in a grid
+
+- **GIVEN** the "Special" menu section is visible
+- **THEN** a heading "Special" is displayed
+- **AND** a "View The Menu" button is shown
+- **AND** three dish cards are displayed in a row
+- **AND** each dish card shows an image, name, and price
+
+#### Scenario: Dish menu section has dark background
+
+- **THEN** the dish menu section has a dark background color (#333333)
+
+**--- Awards ---**
+
+#### Scenario: Awards section displays award images
+
+- **GIVEN** the "Awards" section is visible
+- **THEN** a heading "Awards" is displayed
+- **AND** multiple award images are shown in a horizontal row
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section shows customer reviews
+
+- **GIVEN** the "Testimonials" section is visible
+- **THEN** a heading "Testimonials" is displayed
+- **AND** testimonial cards show a circular avatar, name, and review text
+
+#### Scenario: Testimonial avatars are circular
+
+- **THEN** each testimonial avatar has a 50% border-radius
+
+**--- Reservation ---**
+
+#### Scenario: Reservation section has form and image side by side
+
+- **GIVEN** the "Reservation" section is visible
+- **THEN** a heading "Reservation" is displayed
+- **AND** a form is visible with date, time, persons, name, and message fields
+- **AND** a "Reserve Your Desk" submit button is shown
+- **AND** an image is displayed alongside the form
+
+#### Scenario: Reservation form inputs use underline style
+
+- **THEN** form inputs have no visible border except a bottom underline
+
+**--- Footer ---**
+
+#### Scenario: Footer shows brand and copyright
+
+- **GIVEN** the footer is visible
+- **THEN** the footer has a dark background (#333333)
+- **AND** the brand text "delicacy" is displayed
+- **AND** a copyright notice is shown
+- **AND** a link to "https://www.componentdock.com/" is present (Component Dock)
 
 ## Verification checklist
 

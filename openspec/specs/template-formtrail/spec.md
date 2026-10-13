@@ -89,79 +89,88 @@ Hover: image opacity 0.6.
 - **Disabled state:** When fields are empty, Next is replaced by the
   validation text message.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: FormTrail template behaviour
+
 Feature: FormTrail — Multi-step User Profile Wizard
 
-  Background:
-    Given I open the FormTrail page
-    Then I see a white card centered on a nature background photo
-    And I see a step indicator showing "1 / 3" in the top-right corner
+Background:
+- **GIVEN** I open the FormTrail page
+- **THEN** I see a white card centered on a nature background photo
+- **AND** I see a step indicator showing "1 / 3" in the top-right corner
 
-  Scenario: Step 1 displays user profile form
-    Given I am on step 1
-    Then I see the heading "USER PROFILE"
-    And I see 6 form fields in a 2-column grid:
-      | Field            | Icon            |
-      | Full Name        | account-o       |
-      | Education Level  | edit            |
-      | Email ID         | email           |
-      | Phone Number     | smartphone      |
-      | Specialization   | spellcheck      |
-      | Date of Birth    | calendar        |
-    And each input has a left-aligned icon
-    And the Date of Birth field is a datepicker
+#### Scenario: Step 1 displays user profile form
 
-  Scenario: Navigate from step 1 to step 2
-    Given I am on step 1
-    When I click the "NEXT" button
-    Then the step indicator shows "2 / 3"
-    And I see the heading "RESIDENTIAL ADDRESS"
-    And I see 6 address fields in a 2-column grid
+- **GIVEN** I am on step 1
+- **THEN** I see the heading "USER PROFILE"
+- **AND** I see 6 form fields in a 2-column grid:
+| Field            | Icon            |
+| Full Name        | account-o       |
+| Education Level  | edit            |
+| Email ID         | email           |
+| Phone Number     | smartphone      |
+| Specialization   | spellcheck      |
+| Date of Birth    | calendar        |
+- **AND** each input has a left-aligned icon
+- **AND** the Date of Birth field is a datepicker
 
-  Scenario: Step 2 displays residential address form
-    Given I am on step 2
-    Then I see the heading "RESIDENTIAL ADDRESS"
-    And I see a Country select dropdown
-    And I see fields: Street Address, Apartment, Town / City, County, Postcode / Zip
+#### Scenario: Navigate from step 1 to step 2
 
-  Scenario: Navigate from step 2 to step 3
-    Given I am on step 2
-    When I click the "NEXT" button
-    Then the step indicator shows "3 / 3"
-    And I see the heading "WHAT ARE YOU DOING?"
-    And I see a 3x2 grid of selectable category cards
+- **GIVEN** I am on step 1
+- **WHEN** I click the "NEXT" button
+- **THEN** the step indicator shows "2 / 3"
+- **AND** I see the heading "RESIDENTIAL ADDRESS"
+- **AND** I see 6 address fields in a 2-column grid
 
-  Scenario: Step 3 displays category selection grid
-    Given I am on step 3
-    Then I see 6 category cards: Programming, Sports, Business, Tour Guide, Art-Design, Doctor
-    And each card has a thumbnail image and a vertical text label
-    And the first card is active (brand blue sidebar)
+#### Scenario: Step 2 displays residential address form
 
-  Scenario: Select a category on step 3
-    Given I am on step 3
-    When I click the "Sports" card
-    Then the "Sports" card becomes active (brand blue sidebar)
-    And the previously active card becomes inactive (gray sidebar)
+- **GIVEN** I am on step 2
+- **THEN** I see the heading "RESIDENTIAL ADDRESS"
+- **AND** I see a Country select dropdown
+- **AND** I see fields: Street Address, Apartment, Town / City, County, Postcode / Zip
 
-  Scenario: Navigate backwards
-    Given I am on step 2
-    When I click the "PREVIOUS" button
-    Then the step indicator shows "1 / 3"
-    And I see the heading "USER PROFILE"
-    And the form fields retain their entered values
+#### Scenario: Navigate from step 2 to step 3
 
-  Scenario: Validation message on empty form
-    Given I am on step 1 with empty fields
-    Then I see the validation message instead of the Next button
+- **GIVEN** I am on step 2
+- **WHEN** I click the "NEXT" button
+- **THEN** the step indicator shows "3 / 3"
+- **AND** I see the heading "WHAT ARE YOU DOING?"
+- **AND** I see a 3x2 grid of selectable category cards
 
-  Scenario: Responsive layout on mobile
-    Given I view the page at 767px width or less
-    Then the form rows stack vertically (single column)
-    And the grid items become 2-column
-    And the background image is hidden
-```
+#### Scenario: Step 3 displays category selection grid
+
+- **GIVEN** I am on step 3
+- **THEN** I see 6 category cards: Programming, Sports, Business, Tour Guide, Art-Design, Doctor
+- **AND** each card has a thumbnail image and a vertical text label
+- **AND** the first card is active (brand blue sidebar)
+
+#### Scenario: Select a category on step 3
+
+- **GIVEN** I am on step 3
+- **WHEN** I click the "Sports" card
+- **THEN** the "Sports" card becomes active (brand blue sidebar)
+- **AND** the previously active card becomes inactive (gray sidebar)
+
+#### Scenario: Navigate backwards
+
+- **GIVEN** I am on step 2
+- **WHEN** I click the "PREVIOUS" button
+- **THEN** the step indicator shows "1 / 3"
+- **AND** I see the heading "USER PROFILE"
+- **AND** the form fields retain their entered values
+
+#### Scenario: Validation message on empty form
+
+- **GIVEN** I am on step 1 with empty fields
+- **THEN** I see the validation message instead of the Next button
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** I view the page at 767px width or less
+- **THEN** the form rows stack vertically (single column)
+- **AND** the grid items become 2-column
+- **AND** the background image is hidden
 
 ## Verification checklist
 

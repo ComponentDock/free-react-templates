@@ -30,7 +30,7 @@ steps, featured stories grid, and newsletter signup.
 | Button outline | #bc5148 border, red text | Secondary CTAs |
 | Loader | Gold (#f4b214) spinner circle | Page loader |
 
-## Section order and Gherkin scenarios
+## Requirements
 
 ### 1. Top Bar
 
@@ -38,11 +38,12 @@ steps, featured stories grid, and newsletter signup.
 - "Sponsor" button and "Login" CTA on the right
 - Light background bar above the navbar
 
-**Scenario: Top bar**
-- Given the page loads
-- When the top bar renders
-- Then 4 social media icons are displayed on the left
-- And "Sponsor" and "Login" buttons are on the right
+#### Scenario: Top bar
+
+- **GIVEN** the page loads
+- **WHEN** the top bar renders
+- **THEN** 4 social media icons are displayed on the left
+- **AND** "Sponsor" and "Login" buttons are on the right
 
 ### 2. Navbar
 
@@ -51,17 +52,19 @@ steps, featured stories grid, and newsletter signup.
 - Bootstrap expandable navbar with hamburger on mobile
 - Light background (`bg-light`)
 
-**Scenario: Desktop navbar**
-- Given the viewport width is ≥ 768px
-- When the navbar renders
-- Then the brand "Havenly" is visible on the left
-- And 5 nav links are displayed to the right
-- And the Adoption link has a dropdown menu
+#### Scenario: Desktop navbar
 
-**Scenario: Mobile navbar**
-- Given the viewport width is < 768px
-- When the hamburger is clicked
-- Then the navbar collapses and shows nav items vertically
+- **GIVEN** the viewport width is ≥ 768px
+- **WHEN** the navbar renders
+- **THEN** the brand "Havenly" is visible on the left
+- **AND** 5 nav links are displayed to the right
+- **AND** the Adoption link has a dropdown menu
+
+#### Scenario: Mobile navbar
+
+- **GIVEN** the viewport width is < 768px
+- **WHEN** the hamburger is clicked
+- **THEN** the navbar collapses and shows nav items vertically
 
 ### 3. Hero Slider
 
@@ -71,18 +74,20 @@ steps, featured stories grid, and newsletter signup.
 - Dark overlay on first slide, white text on second
 - Height: 100vh - 117px (min 700px)
 
-**Scenario: Hero slide content**
-- Given the hero slider renders
-- When the page loads
-- Then the first slide shows a child's name in cursive
-- And a headline "Needs a Caring Parents" is displayed
-- And a description paragraph is shown
-- And an "Adopt Her Now!" button is visible
+#### Scenario: Hero slide content
 
-**Scenario: Hero slide navigation**
-- Given the hero slider is active
-- When navigation arrows are clicked
-- Then the next slide is shown with different child info
+- **GIVEN** the hero slider renders
+- **WHEN** the page loads
+- **THEN** the first slide shows a child's name in cursive
+- **AND** a headline "Needs a Caring Parents" is displayed
+- **AND** a description paragraph is shown
+- **AND** an "Adopt Her Now!" button is visible
+
+#### Scenario: Hero slide navigation
+
+- **GIVEN** the hero slider is active
+- **WHEN** navigation arrows are clicked
+- **THEN** the next slide is shown with different child info
 
 ### 4. Steps to Adopt (About Section)
 
@@ -97,18 +102,20 @@ steps, featured stories grid, and newsletter signup.
   6. Finalizing an adoption
   7. State information
 
-**Scenario: Steps section**
-- Given the steps section is in view
-- When the section renders
-- Then an SVG illustration is displayed on the left
-- And an accordion with 7 steps is shown on the right
-- And each step has a title and expandable description
+#### Scenario: Steps section
 
-**Scenario: Accordion interaction**
-- Given the steps accordion is displayed
-- When a step title is clicked
-- Then that step's description expands and becomes visible
-- And other steps collapse
+- **GIVEN** the steps section is in view
+- **WHEN** the section renders
+- **THEN** an SVG illustration is displayed on the left
+- **AND** an accordion with 7 steps is shown on the right
+- **AND** each step has a title and expandable description
+
+#### Scenario: Accordion interaction
+
+- **GIVEN** the steps accordion is displayed
+- **WHEN** a step title is clicked
+- **THEN** that step's description expands and becomes visible
+- **AND** other steps collapse
 
 ### 5. Waiting Children (Carousel)
 
@@ -117,12 +124,13 @@ steps, featured stories grid, and newsletter signup.
 - Carousel of 5 children cards (image + name + age)
 - Children: Edward (14), Mellisa (6), Mark (12), Jessa (13), Ben (14)
 
-**Scenario: Waiting children carousel**
-- Given the waiting children section is in view
-- When the section renders
-- Then a heading "Waiting Children" is displayed
-- And a carousel shows child cards with photos, names, and ages
-- And a "Find More Waiting Children" button is visible
+#### Scenario: Waiting children carousel
+
+- **GIVEN** the waiting children section is in view
+- **WHEN** the section renders
+- **THEN** a heading "Waiting Children" is displayed
+- **AND** a carousel shows child cards with photos, names, and ages
+- **AND** a "Find More Waiting Children" button is visible
 
 ### 6. Featured Stories (Grid)
 
@@ -132,12 +140,13 @@ steps, featured stories grid, and newsletter signup.
 - Each card: link overlay with date, title, plus icon, and background image
 - Stories: "Being loved has taught me how to love", "Becoming a perfect parent out of imperfect", "Home sweet home"
 
-**Scenario: Featured stories grid**
-- Given the featured stories section is in view
-- When the section renders
-- Then 3 story cards are displayed in a row
-- And each card has a date, title, and background image
-- And a plus icon overlay appears on hover
+#### Scenario: Featured stories grid
+
+- **GIVEN** the featured stories section is in view
+- **WHEN** the section renders
+- **THEN** 3 story cards are displayed in a row
+- **AND** each card has a date, title, and background image
+- **AND** a plus icon overlay appears on hover
 
 ### 7. Newsletter Signup
 
@@ -145,13 +154,14 @@ steps, featured stories grid, and newsletter signup.
 - Heading "Get News & Updates"
 - Form with: name input, email input, "Subscribe" primary button (3-column row)
 
-**Scenario: Newsletter form**
-- Given the newsletter section is in view
-- When the section renders
-- Then a heading "Get News & Updates" is displayed
-- And a name input field is shown
-- And an email input field is shown
-- And a "Subscribe" button is displayed
+#### Scenario: Newsletter form
+
+- **GIVEN** the newsletter section is in view
+- **WHEN** the section renders
+- **THEN** a heading "Get News & Updates" is displayed
+- **AND** a name input field is shown
+- **AND** an email input field is shown
+- **AND** a "Subscribe" button is displayed
 
 ### 8. Footer
 
@@ -160,26 +170,28 @@ steps, featured stories grid, and newsletter signup.
 - Copyright text centered at bottom
 - Must link to https://www.componentdock.com/
 
-**Scenario: Footer content**
-- Given the page footer is in view
-- When the footer renders
-- Then an "About" column with text is shown
-- And a "Contact & Address" column with details is shown
-- And a "Quick Links" column with navigation links is shown
-- And a "Social" column with icon links is shown
-- And copyright text is centered at the bottom
-- And a link to ComponentDock is present
+#### Scenario: Footer content
+
+- **GIVEN** the page footer is in view
+- **WHEN** the footer renders
+- **THEN** an "About" column with text is shown
+- **AND** a "Contact & Address" column with details is shown
+- **AND** a "Quick Links" column with navigation links is shown
+- **AND** a "Social" column with icon links is shown
+- **AND** copyright text is centered at the bottom
+- **AND** a link to ComponentDock is present
 
 ### 9. Page Loader
 
 - Full-screen overlay with gold (#f4b214) spinning circle
 - Disappears when page is loaded
 
-**Scenario: Page loader**
-- Given the page is loading
-- When the loader is visible
-- Then a full-screen overlay with a spinning gold circle is shown
-- And the loader disappears once the page finishes loading
+#### Scenario: Page loader
+
+- **GIVEN** the page is loading
+- **WHEN** the loader is visible
+- **THEN** a full-screen overlay with a spinning gold circle is shown
+- **AND** the loader disappears once the page finishes loading
 
 ## Verification checklist
 

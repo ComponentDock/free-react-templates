@@ -57,75 +57,61 @@ Extracted from the live preview stylesheet (`css/style.css`):
 </body>
 ```
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with heading
+### Feature: DropShelf template behaviour
 
-```gherkin
-Given the user opens the DropShelf page
-Then a centered heading "Dropdown #1" is visible
-```
+#### Scenario: Page renders with heading
 
-### Scenario: Dropdown trigger displays with icon and label
+- **GIVEN** the user opens the DropShelf page
+- **THEN** a centered heading "Dropdown #1" is visible
 
-```gherkin
-Given the user opens the DropShelf page
-Then a dropdown trigger with a cog icon and text "Privacy Settings" is visible
-```
+#### Scenario: Dropdown trigger displays with icon and label
 
-### Scenario: Dropdown opens on click
+- **GIVEN** the user opens the DropShelf page
+- **THEN** a dropdown trigger with a cog icon and text "Privacy Settings" is visible
 
-```gherkin
-Given the user opens the DropShelf page
-When the user clicks the "Privacy Settings" dropdown trigger
-Then a dropdown menu appears below the trigger
-And the menu contains items: "Account", "Privacy & Security", "Password", "Notification"
-```
+#### Scenario: Dropdown opens on click
 
-### Scenario: Dropdown closes when clicking outside
+- **GIVEN** the user opens the DropShelf page
+- **WHEN** the user clicks the "Privacy Settings" dropdown trigger
+- **THEN** a dropdown menu appears below the trigger
+- **AND** the menu contains items: "Account", "Privacy & Security", "Password", "Notification"
 
-```gherkin
-Given the dropdown menu is open
-When the user clicks outside the dropdown
-Then the dropdown menu closes
-```
+#### Scenario: Dropdown closes when clicking outside
 
-### Scenario: Dropdown items are clickable
+- **GIVEN** the dropdown menu is open
+- **WHEN** the user clicks outside the dropdown
+- **THEN** the dropdown menu closes
 
-```gherkin
-Given the dropdown menu is open
-When the user clicks the "Account" item
-Then the dropdown menu closes
-```
+#### Scenario: Dropdown items are clickable
 
-### Scenario: Visual styling matches reference
+- **GIVEN** the dropdown menu is open
+- **WHEN** the user clicks the "Account" item
+- **THEN** the dropdown menu closes
 
-```gherkin
-Given the user opens the DropShelf page
-Then the page background is white
-And the heading uses Roboto font
-And the dropdown trigger has a 4px border radius
-And the dropdown trigger text is color #888
-And the dropdown menu has a box shadow of 0 15px 30px 0 rgba(0,0,0,0.2)
-And the dropdown items are color #888
-```
+#### Scenario: Visual styling matches reference
 
-### Scenario: Hover state on trigger
+- **GIVEN** the user opens the DropShelf page
+- **THEN** the page background is white
+- **AND** the heading uses Roboto font
+- **AND** the dropdown trigger has a 4px border radius
+- **AND** the dropdown trigger text is color #888
+- **AND** the dropdown menu has a box shadow of 0 15px 30px 0 rgba(0,0,0,0.2)
+- **AND** the dropdown items are color #888
 
-```gherkin
-Given the user opens the DropShelf page
-When the user hovers over the dropdown trigger
-Then the trigger shows a light border (#efefef)
-And the trigger shows a subtle box shadow
-```
+#### Scenario: Hover state on trigger
 
-### Scenario: Hover state on menu items
+- **GIVEN** the user opens the DropShelf page
+- **WHEN** the user hovers over the dropdown trigger
+- **THEN** the trigger shows a light border (#efefef)
+- **AND** the trigger shows a subtle box shadow
 
-```gherkin
-Given the dropdown menu is open
-When the user hovers over a menu item
-Then the item text changes to black
-```
+#### Scenario: Hover state on menu items
+
+- **GIVEN** the dropdown menu is open
+- **WHEN** the user hovers over a menu item
+- **THEN** the item text changes to black
 
 ## Verification Checklist
 

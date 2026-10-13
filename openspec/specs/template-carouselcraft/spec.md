@@ -22,29 +22,39 @@ Recreation of ColorLib **Carousel 15** (`https://colorlib.com/wp/template/carous
   - Rounded corners (`rounded-lg`, `rounded-full` for navigation arrows)
   - Subtle shadows and smooth hover transitions
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Hero Banner & Navigation
+
+#### Scenario: Hero Banner & Navigation
 
 - The template must feature a responsive top navigation bar with brand logo and navigation links (Home, Features, Gallery, Contact).
 - A prominent hero section introducing the Carousel Showcase with headline, description, and primary CTA.
 
 ### Requirement 2: Interactive Feature Carousel
 
+#### Scenario: Interactive Feature Carousel
+
 - A multi-item carousel component with sliding animation, next/previous controls, and dot indicators.
 - Each slide contains high-quality imagery, title, description, and interactive action button.
 
 ### Requirement 3: Thumbnail Navigation Strip
+
+#### Scenario: Thumbnail Navigation Strip
 
 - A thumbnail preview bar underneath or beside the main carousel allowing direct click-to-slide navigation.
 - Active thumbnail highlighted with a distinct border/glow.
 
 ### Requirement 4: Features / Highlights Grid
 
+#### Scenario: Features / Highlights Grid
+
 - A 3-column feature grid highlighting key capabilities (Responsive Design, Touch Enabled, Smooth Transitions).
 - Icons, titles, and descriptive blurbs for each feature.
 
 ### Requirement 5: Call to Action & Footer
+
+#### Scenario: Call to Action & Footer
 
 - A call-to-action banner prompting users to explore or download.
 - Footer with copyright, social links, and mandatory Component Dock attribution (`https://www.componentdock.com/`).

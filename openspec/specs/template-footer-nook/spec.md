@@ -66,78 +66,72 @@ featuring a multi-column link layout with a contact form sidebar.
      - "Contact us" heading (white)
      - Contact form: Name, Email, Subject, Message textarea, Send button
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Hero section renders centered heading
-```gherkin
-Given the page loads
-When I view the hero section
-Then I see a centered heading "Footer #08"
-And the section has padding of approximately 12em vertically
-```
+### Feature: FooterNook template behaviour
 
-### Scenario: Footer displays three-column link layout
-```gherkin
-Given the footer renders
-When I look at the left column (col-md-9)
-Then I see an "About us" column with description text and social icons
-And I see a "Discover" column with links: Buy & Sell, Merchant, Giving back, Help & Support
-And I see an "About" column with links: Staff, Team, Careers, Blog
-And I see a "Resources" column with links: Security, Global, Charts, Privacy
-```
+#### Scenario: Hero section renders centered heading
 
-### Scenario: Social icons render with circular styling
-```gherkin
-Given the footer renders
-When I look at the About us section
-Then I see social icons for Twitter, Facebook, and Instagram
-And each icon has a 40x40px circular background
-And the background color is rgba(0,0,0,0.05)
-```
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** I see a centered heading "Footer #08"
+- **AND** the section has padding of approximately 12em vertically
 
-### Scenario: Contact form displays in green sidebar
-```gherkin
-Given the footer renders
-When I look at the right sidebar (col-md-3)
-Then the sidebar background is #12cc94 (green)
-And I see a "Contact us" heading in white
-And I see form fields: Name, Email, Subject, Message
-And I see a "Send" button with blue (#2f89fc) background
-```
+#### Scenario: Footer displays three-column link layout
 
-### Scenario: Contact form inputs have correct styling
-```gherkin
-Given the contact form renders
-When I examine the form inputs
-Then each input has height of 50px
-And each input has border-radius of 5px
-And each input has no visible border
-And placeholder text color is rgba(0,0,0,0.3)
-```
+- **GIVEN** the footer renders
+- **WHEN** I look at the left column (col-md-9)
+- **THEN** I see an "About us" column with description text and social icons
+- **AND** I see a "Discover" column with links: Buy & Sell, Merchant, Giving back, Help & Support
+- **AND** I see an "About" column with links: Staff, Team, Careers, Blog
+- **AND** I see a "Resources" column with links: Security, Global, Charts, Privacy
 
-### Scenario: Copyright line renders at footer bottom
-```gherkin
-Given the footer renders
-When I look at the bottom of the left column
-Then I see a copyright line with dynamic year
-And the text color is rgba(0,0,0,0.3)
-```
+#### Scenario: Social icons render with circular styling
 
-### Scenario: Links use brand accent color
-```gherkin
-Given the footer renders
-When I hover over any footer link
-Then the link color is #12cc94 (brand green)
-```
+- **GIVEN** the footer renders
+- **WHEN** I look at the About us section
+- **THEN** I see social icons for Twitter, Facebook, and Instagram
+- **AND** each icon has a 40x40px circular background
+- **AND** the background color is rgba(0,0,0,0.05)
 
-### Scenario: Footer is responsive
-```gherkin
-Given the viewport width is less than 768px
-When the footer renders
-Then the sidebar background becomes transparent
-And the sidebar stretch pseudo-element is hidden
-And the layout stacks vertically
-```
+#### Scenario: Contact form displays in green sidebar
+
+- **GIVEN** the footer renders
+- **WHEN** I look at the right sidebar (col-md-3)
+- **THEN** the sidebar background is #12cc94 (green)
+- **AND** I see a "Contact us" heading in white
+- **AND** I see form fields: Name, Email, Subject, Message
+- **AND** I see a "Send" button with blue (#2f89fc) background
+
+#### Scenario: Contact form inputs have correct styling
+
+- **GIVEN** the contact form renders
+- **WHEN** I examine the form inputs
+- **THEN** each input has height of 50px
+- **AND** each input has border-radius of 5px
+- **AND** each input has no visible border
+- **AND** placeholder text color is rgba(0,0,0,0.3)
+
+#### Scenario: Copyright line renders at footer bottom
+
+- **GIVEN** the footer renders
+- **WHEN** I look at the bottom of the left column
+- **THEN** I see a copyright line with dynamic year
+- **AND** the text color is rgba(0,0,0,0.3)
+
+#### Scenario: Links use brand accent color
+
+- **GIVEN** the footer renders
+- **WHEN** I hover over any footer link
+- **THEN** the link color is #12cc94 (brand green)
+
+#### Scenario: Footer is responsive
+
+- **GIVEN** the viewport width is less than 768px
+- **WHEN** the footer renders
+- **THEN** the sidebar background becomes transparent
+- **AND** the sidebar stretch pseudo-element is hidden
+- **AND** the layout stacks vertically
 
 ## Verification Checklist
 

@@ -89,81 +89,95 @@ Lodgely is a luxury hotel landing template. It recreates the ColorLib **Colorlib
 - Copyright bar with Component Dock link
 - Social media icons (Facebook, Twitter, LinkedIn, Instagram)
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Lodgely template behaviour
+
 Feature: Lodgely hotel template
 
-  Scenario: Hero renders headline and subtitle
-    Given I visit the Lodgely homepage
-    Then I should see the heading "A Best Place To Stay"
-    And I should see "Welcome To" with star icons
+#### Scenario: Hero renders headline and subtitle
 
-  Scenario: Booking form is present
-    Given I visit the Lodgely homepage
-    Then I should see a booking form with check-in and check-out date fields
-    And I should see adults and children select fields
-    And I should see a "Check Availability" button
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see the heading "A Best Place To Stay"
+- **AND** I should see "Welcome To" with star icons
 
-  Scenario: Booking form prevents default submission
-    Given I visit the Lodgely homepage
-    When I click the "Check Availability" button
-    Then the form should not navigate away
+#### Scenario: Booking form is present
 
-  Scenario: Welcome section renders
-    Given I visit the Lodgely homepage
-    Then I should see a "Welcome!" heading
-    And I should see a "Learn More" button
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see a booking form with check-in and check-out date fields
+- **AND** I should see adults and children select fields
+- **AND** I should see a "Check Availability" button
 
-  Scenario: Rooms and suites are displayed
-    Given I visit the Lodgely homepage
-    Then I should see a "Rooms & Suites" heading
-    And I should see 3 room cards with names and prices
+#### Scenario: Booking form prevents default submission
 
-  Scenario: Photos gallery is displayed
-    Given I visit the Lodgely homepage
-    Then I should see a "Photos" heading
-    And I should see a gallery of images
+- **GIVEN** I visit the Lodgely homepage
+- **WHEN** I click the "Check Availability" button
+- **THEN** the form should not navigate away
 
-  Scenario: Restaurant menu has tabs
-    Given I visit the Lodgely homepage
-    Then I should see "Our Restaurant Menu" heading
-    And I should see Mains, Desserts, and Drinks tabs
-    And the Mains tab should be active by default
+#### Scenario: Welcome section renders
 
-  Scenario: Restaurant menu tab switching
-    Given I visit the Lodgely homepage
-    When I click the "Desserts" tab
-    Then the Desserts tab should be active
-    And I should see dessert menu items
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see a "Welcome!" heading
+- **AND** I should see a "Learn More" button
 
-  Scenario: Testimonials are displayed
-    Given I visit the Lodgely homepage
-    Then I should see a "People Says" heading
-    And I should see testimonial cards with quotes and authors
+#### Scenario: Rooms and suites are displayed
 
-  Scenario: Events section is displayed
-    Given I visit the Lodgely homepage
-    Then I should see an "Events" heading
-    And I should see 3 event cards
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see a "Rooms & Suites" heading
+- **AND** I should see 3 room cards with names and prices
 
-  Scenario: CTA banner with reserve button
-    Given I visit the Lodgely homepage
-    Then I should see "Reserve Now" text
-    And I should see a "Reserve Now" link
+#### Scenario: Photos gallery is displayed
 
-  Scenario: Footer contains Component Dock link
-    Given I visit the Lodgely homepage
-    Then the footer should contain a "Component Dock" link
-    And the link should point to https://www.componentdock.com/
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see a "Photos" heading
+- **AND** I should see a gallery of images
 
-  Scenario: Footer has newsletter form
-    Given I visit the Lodgely homepage
-    Then I should see a newsletter email input
-    And I should see a subscribe button
+#### Scenario: Restaurant menu has tabs
 
-  Scenario: Newsletter form clears on submit
-    Given I visit the Lodgely homepage
-    When I enter an email and click subscribe
-    Then the email input should be cleared
-```
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see "Our Restaurant Menu" heading
+- **AND** I should see Mains, Desserts, and Drinks tabs
+- **AND** the Mains tab should be active by default
+
+#### Scenario: Restaurant menu tab switching
+
+- **GIVEN** I visit the Lodgely homepage
+- **WHEN** I click the "Desserts" tab
+- **THEN** the Desserts tab should be active
+- **AND** I should see dessert menu items
+
+#### Scenario: Testimonials are displayed
+
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see a "People Says" heading
+- **AND** I should see testimonial cards with quotes and authors
+
+#### Scenario: Events section is displayed
+
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see an "Events" heading
+- **AND** I should see 3 event cards
+
+#### Scenario: CTA banner with reserve button
+
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see "Reserve Now" text
+- **AND** I should see a "Reserve Now" link
+
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** the footer should contain a "Component Dock" link
+- **AND** the link should point to https://www.componentdock.com/
+
+#### Scenario: Footer has newsletter form
+
+- **GIVEN** I visit the Lodgely homepage
+- **THEN** I should see a newsletter email input
+- **AND** I should see a subscribe button
+
+#### Scenario: Newsletter form clears on submit
+
+- **GIVEN** I visit the Lodgely homepage
+- **WHEN** I enter an email and click subscribe
+- **THEN** the email input should be cleared

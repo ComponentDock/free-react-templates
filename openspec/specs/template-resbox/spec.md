@@ -51,134 +51,139 @@ interaction on each item.
 - **Color scheme:** Predominantly white with pink (#f271ab) accents. Clean,
   minimal aesthetic with heavy use of whitespace.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Resbox Navbar
 
-  Scenario: Navigation links are visible
-    Given I visit the Resbox homepage
-    Then I see navigation links for Home, About, Contact, and Features
+#### Scenario: Navigation links are visible
 
-  Scenario: Logo links to homepage
-    Given I visit the Resbox homepage
-    When I click the logo
-    Then I am taken to the homepage
+- **GIVEN** I visit the Resbox homepage
+- **THEN** I see navigation links for Home, About, Contact, and Features
 
-  Scenario: Mobile hamburger menu toggles
-    Given I visit the Resbox homepage on a mobile viewport
-    When I click the hamburger menu icon
-    Then the navigation menu expands/collapses
-```
+#### Scenario: Logo links to homepage
+
+- **GIVEN** I visit the Resbox homepage
+- **WHEN** I click the logo
+- **THEN** I am taken to the homepage
+
+#### Scenario: Mobile hamburger menu toggles
+
+- **GIVEN** I visit the Resbox homepage on a mobile viewport
+- **WHEN** I click the hamburger menu icon
+- **THEN** the navigation menu expands/collapses
 
 ### Search Bar
 
-```gherkin
 Feature: Resbox Search
 
-  Scenario: Search input is displayed
-    Given I visit the Resbox homepage
-    Then I see a search input with placeholder "search anything & hit enter"
+#### Scenario: Search input is displayed
 
-  Scenario: Search input accepts text
-    Given I visit the Resbox homepage
-    When I type "mockup" into the search input
-    Then the search input contains "mockup"
-```
+- **GIVEN** I visit the Resbox homepage
+- **THEN** I see a search input with placeholder "search anything & hit enter"
+
+#### Scenario: Search input accepts text
+
+- **GIVEN** I visit the Resbox homepage
+- **WHEN** I type "mockup" into the search input
+- **THEN** the search input contains "mockup"
 
 ### Hero / Animated Headline
 
-```gherkin
 Feature: Resbox Hero Headline
 
-  Scenario: Headline rotates through phrases
-    Given I visit the Resbox homepage
-    Then I see an animated headline rotating through phrases like
-      "pixel precise", "web resources", "psd files", "mockups"
-      "to suit all your needs."
+#### Scenario: Headline rotates through phrases
 
-  Scenario: Headline is styled correctly
-    Given I visit the Resbox homepage
-    Then the headline uses Lato font at 28px with font-weight 300
-```
+- **GIVEN** I visit the Resbox homepage
+- **THEN** I see an animated headline rotating through phrases like
+"pixel precise", "web resources", "psd files", "mockups"
+"to suit all your needs."
+
+#### Scenario: Headline is styled correctly
+
+- **GIVEN** I visit the Resbox homepage
+- **THEN** the headline uses Lato font at 28px with font-weight 300
 
 ### Blog Grid / Masonry Layout
 
-```gherkin
 Feature: Resbox Blog Grid
 
-  Scenario: Grid displays resource items
-    Given I visit the Resbox homepage
-    Then I see a masonry grid of resource items
-    And each item has an image, title, category, and download count
+#### Scenario: Grid displays resource items
 
-  Scenario: Grid items have heart/like interaction
-    Given I visit the Resbox homepage
-    When I hover over a grid item
-    Then a heart/like icon is visible at bottom-right
+- **GIVEN** I visit the Resbox homepage
+- **THEN** I see a masonry grid of resource items
+- **AND** each item has an image, title, category, and download count
 
-  Scenario: Grid items show category labels
-    Given I visit the Resbox homepage
-    Then each grid item displays its category in uppercase gray text
+#### Scenario: Grid items have heart/like interaction
 
-  Scenario: Grid uses masonry sizing
-    Given I visit the Resbox homepage
-    Then grid items use masonry layout with full-width, half-width, and quarter-width items
+- **GIVEN** I visit the Resbox homepage
+- **WHEN** I hover over a grid item
+- **THEN** a heart/like icon is visible at bottom-right
 
-  Scenario: Grid item image has hover overlay
-    Given I visit the Resbox homepage
-    When I hover over a grid item image
-    Then a dark blue-black overlay appears on the image
-```
+#### Scenario: Grid items show category labels
+
+- **GIVEN** I visit the Resbox homepage
+- **THEN** each grid item displays its category in uppercase gray text
+
+#### Scenario: Grid uses masonry sizing
+
+- **GIVEN** I visit the Resbox homepage
+- **THEN** grid items use masonry layout with full-width, half-width, and quarter-width items
+
+#### Scenario: Grid item image has hover overlay
+
+- **GIVEN** I visit the Resbox homepage
+- **WHEN** I hover over a grid item image
+- **THEN** a dark blue-black overlay appears on the image
 
 ### Categories Section
 
-```gherkin
 Feature: Resbox Categories
 
-  Scenario: Category list is displayed
-    Given I visit the Resbox homepage
-    Then I see a categories section with items like Branding, Fonts, Icons, Misc, Mockup, Play, Vectors, Video
+#### Scenario: Category list is displayed
 
-  Scenario: Category items are clickable
-    Given I visit the Resbox homepage
-    When I click a category name
-    Then it functions as a navigation link
-```
+- **GIVEN** I visit the Resbox homepage
+- **THEN** I see a categories section with items like Branding, Fonts, Icons, Misc, Mockup, Play, Vectors, Video
+
+#### Scenario: Category items are clickable
+
+- **GIVEN** I visit the Resbox homepage
+- **WHEN** I click a category name
+- **THEN** it functions as a navigation link
 
 ### Footer
 
-```gherkin
 Feature: Resbox Footer
 
-  Scenario: Footer shows navigation links
-    Given I visit the Resbox homepage
-    Then I see footer links for About, Features, and Contact
+#### Scenario: Footer shows navigation links
 
-  Scenario: Footer shows copyright
-    Given I visit the Resbox homepage
-    Then I see a copyright line
+- **GIVEN** I visit the Resbox homepage
+- **THEN** I see footer links for About, Features, and Contact
 
-  Scenario: Footer links to Component Dock
-    Given I visit the Resbox homepage
-    Then the footer contains a link to https://www.componentdock.com/
-```
+#### Scenario: Footer shows copyright
+
+- **GIVEN** I visit the Resbox homepage
+- **THEN** I see a copyright line
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Resbox homepage
+- **THEN** the footer contains a link to https://www.componentdock.com/
 
 ### Responsive Design
 
-```gherkin
 Feature: Resbox Responsive
 
-  Scenario: Mobile layout adjusts grid
-    Given I visit the Resbox homepage on a mobile viewport
-    Then the masonry grid stacks items vertically
+#### Scenario: Mobile layout adjusts grid
 
-  Scenario: Mobile layout collapses navigation
-    Given I visit the Resbox homepage on a mobile viewport
-    Then the navigation menu is replaced by a hamburger toggle
-```
+- **GIVEN** I visit the Resbox homepage on a mobile viewport
+- **THEN** the masonry grid stacks items vertically
+
+#### Scenario: Mobile layout collapses navigation
+
+- **GIVEN** I visit the Resbox homepage on a mobile viewport
+- **THEN** the navigation menu is replaced by a hamburger toggle
 
 ## Verification Checklist
 

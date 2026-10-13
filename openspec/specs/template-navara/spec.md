@@ -36,67 +36,75 @@ Recreation of ColorLib "Cruise" template.
 7. **Blog Posts** — 4-column card grid on light background (`#f6f5f5`), each card: image + date meta + title + "Read More" link
 8. **Footer** — dark bg (`#000`), 3-column layout: About Us text + Features links list + Newsletter form (email input + Subscribe button) + social icons (Facebook, Twitter, Instagram, LinkedIn); copyright line at bottom
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Navara template behaviour
+
 Feature: Navara technology/corporate template
 
-  Background:
-    Given the user opens the Navara template
+Background:
+- **GIVEN** the user opens the Navara template
 
-  Scenario: Navbar renders correctly
-    Then the navbar is positioned over the hero (transparent/absolute)
-    And the logo "navara" is centered
-    And navigation links "Home", "Technology", "Careers" appear on the left
-    And navigation links "About", "Blog", "Contact" appear on the right
-    And a mobile hamburger menu toggle is present
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays
-    Then a full-width hero banner with a background image is visible
-    And the hero has a dark overlay
-    And the hero contains the heading "We can make it together"
-    And the hero contains a subtext line
+- **THEN** the navbar is positioned over the hero (transparent/absolute)
+- **AND** the logo "navara" is centered
+- **AND** navigation links "Home", "Technology", "Careers" appear on the left
+- **AND** navigation links "About", "Blog", "Contact" appear on the right
+- **AND** a mobile hamburger menu toggle is present
 
-  Scenario: What We Do section displays
-    Then 3 feature cards are shown in a row
-    And each card has a background image
-    And each card has a white overlay panel with title and description
-    And each card has a "Learn More" link styled with an uppercase border-bottom accent
+#### Scenario: Hero section displays
 
-  Scenario: Our Features section displays with dark background
-    Then the section uses a dark navy background (#1c2d37)
-    And the section heading "Our Features" is visible
-    And 2 feature rows are displayed in alternating layouts
-    And each row has a large image (9 columns) and a text sidebar (3 columns)
-    And the second row has a reversed layout (text left, image right)
-    And each row has a numbered caption ("01.", "02.") in brand color
-    And all text in this section is white
+- **THEN** a full-width hero banner with a background image is visible
+- **AND** the hero has a dark overlay
+- **AND** the hero contains the heading "We can make it together"
+- **AND** the hero contains a subtext line
 
-  Scenario: Design for the Future section displays
-    Then 4 text feature items are shown in a 2x2 grid
-    And each feature has a green checkmark icon (#71bc42)
-    And each feature has a title and description
+#### Scenario: What We Do section displays
 
-  Scenario: Testimonial section displays
-    Then a centered blockquote is visible
-    And the quote has a quote icon in brand color (#ff5533)
-    And the quote text is displayed
-    And an attribution line shows name and role
+- **THEN** 3 feature cards are shown in a row
+- **AND** each card has a background image
+- **AND** each card has a white overlay panel with title and description
+- **AND** each card has a "Learn More" link styled with an uppercase border-bottom accent
 
-  Scenario: Blog Posts section displays
-    Then 4 blog post cards are shown in a 4-column grid
-    And the section uses a light background (#f6f5f5)
-    And each card has an image, date, title, and "Read More" link
+#### Scenario: Our Features section displays with dark background
 
-  Scenario: Footer renders correctly
-    Then the footer uses a dark background (#000)
-    And an "About Us" column with descriptive text is present
-    And a "Features" column with a link list is present
-    And a "Subscribe to Newsletter" form with email input and button is present
-    And social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
-    And a copyright line is displayed at the bottom
-    And a link to Component Dock is present
-```
+- **THEN** the section uses a dark navy background (#1c2d37)
+- **AND** the section heading "Our Features" is visible
+- **AND** 2 feature rows are displayed in alternating layouts
+- **AND** each row has a large image (9 columns) and a text sidebar (3 columns)
+- **AND** the second row has a reversed layout (text left, image right)
+- **AND** each row has a numbered caption ("01.", "02.") in brand color
+- **AND** all text in this section is white
+
+#### Scenario: Design for the Future section displays
+
+- **THEN** 4 text feature items are shown in a 2x2 grid
+- **AND** each feature has a green checkmark icon (#71bc42)
+- **AND** each feature has a title and description
+
+#### Scenario: Testimonial section displays
+
+- **THEN** a centered blockquote is visible
+- **AND** the quote has a quote icon in brand color (#ff5533)
+- **AND** the quote text is displayed
+- **AND** an attribution line shows name and role
+
+#### Scenario: Blog Posts section displays
+
+- **THEN** 4 blog post cards are shown in a 4-column grid
+- **AND** the section uses a light background (#f6f5f5)
+- **AND** each card has an image, date, title, and "Read More" link
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer uses a dark background (#000)
+- **AND** an "About Us" column with descriptive text is present
+- **AND** a "Features" column with a link list is present
+- **AND** a "Subscribe to Newsletter" form with email input and button is present
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
+- **AND** a copyright line is displayed at the bottom
+- **AND** a link to Component Dock is present
 
 ## Verification checklist
 

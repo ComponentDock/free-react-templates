@@ -60,82 +60,96 @@ Extracted from live preview HTML + `css/style.css`.
 13. Footer (logo + social, recent blog, explore links, contact info)
 14. Copyright bar
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Flexpose template behaviour
+
 Feature: Flexpose - Yoga & Fitness Template
 
-  Background:
-    Given the user opens the Flexpose template homepage
+Background:
+- **GIVEN** the user opens the Flexpose template homepage
 
-  Scenario: Top bar displays contact info and social links
-    Then the top bar shows phone number and email
-    And 4 social media icon links are visible (Facebook, Twitter, Instagram, Dribbble)
+#### Scenario: Top bar displays contact info and social links
 
-  Scenario: Navbar navigation
-    Given the page is scrolled to the top
-    Then the navbar is transparent over the hero
-    When the user scrolls down
-    Then the navbar becomes solid black with white text
-    And 7 navigation links are visible: Home, About, Trainer, Classes, Schedule, Blog, Contact
+- **THEN** the top bar shows phone number and email
+- **AND** 4 social media icon links are visible (Facebook, Twitter, Instagram, Dribbble)
 
-  Scenario: Hero section
-    Then a full-width hero background image is displayed
-    And  the heading reads "Yoga Enhances Your Life"
-    And  the subheading reads "Welcome to Flexpose"
-    And  a circular green video play button is visible
+#### Scenario: Navbar navigation
 
-  Scenario: Services section
-    Then 3 service cards are displayed in a row
-    And  each card has an icon, heading, and description
-    And  the section has a light gray background
+- **GIVEN** the page is scrolled to the top
+- **THEN** the navbar is transparent over the hero
+- **WHEN** the user scrolls down
+- **THEN** the navbar becomes solid black with white text
+- **AND** 7 navigation links are visible: Home, About, Trainer, Classes, Schedule, Blog, Contact
 
-  Scenario: About section
-    Then a split layout is displayed
-    And  the left side shows a background image with a stat counter
-    And  the right side shows text content with a quote and video thumbnail
+#### Scenario: Hero section
 
-  Scenario: Image services section
-    Then a full-width background image with dark overlay is displayed
-    And  a yoga illustration is shown on the left
-    And  3 benefit items (Body & Mind Balance, Healthy Daily Life, Improves Flexibility) are listed on the right
+- **THEN** a full-width hero background image is displayed
+- **AND** the heading reads "Yoga Enhances Your Life"
+- **AND** the subheading reads "Welcome to Flexpose"
+- **AND** a circular green video play button is visible
 
-  Scenario: Counter section
-    Then 4 animated stat counters are displayed
-    And  each counter shows an icon, number, and label
-    And  the section has a background image with dark overlay
+#### Scenario: Services section
 
-  Scenario: Classes section
-    Then 6 class cards are displayed in a 3-column grid
-    And  each card shows a background image, trainer name, schedule days, time, and class title
+- **THEN** 3 service cards are displayed in a row
+- **AND** each card has an icon, heading, and description
+- **AND** the section has a light gray background
 
-  Scenario: Testimonials section
-    Then a split layout is displayed
-    And  the left side has a heading, description, and 2 feature callouts
-    And  the right side has a carousel of testimonial cards
-    And  each card shows a quote, avatar, name, and position
+#### Scenario: About section
 
-  Scenario: Schedule section
-    Then a 7-column weekly schedule table is displayed
-    And  active cells show a circular thumbnail, class name, and time
-    And  inactive cells show a close icon
+- **THEN** a split layout is displayed
+- **AND** the left side shows a background image with a stat counter
+- **AND** the right side shows text content with a quote and video thumbnail
 
-  Scenario: Trainers section
-    Then 4 trainer cards are displayed in a row
-    And  each card has a photo, role title, name, and social icons
+#### Scenario: Image services section
 
-  Scenario: Blog section
-    Then 3 blog post cards are displayed in a row
-    And  each card shows an image, date, title, excerpt, and a read-more link
+- **THEN** a full-width background image with dark overlay is displayed
+- **AND** a yoga illustration is shown on the left
+- **AND** 3 benefit items (Body & Mind Balance, Healthy Daily Life, Improves Flexibility) are listed on the right
 
-  Scenario: Footer
-    Then the footer has a dark navy background
-    And  4 columns are visible: logo + social, recent blog, explore links, contact info
+#### Scenario: Counter section
 
-  Scenario: Copyright bar
-    Then a full-width dark bar is displayed at the bottom
-    And  copyright text is shown in semi-transparent white
-```
+- **THEN** 4 animated stat counters are displayed
+- **AND** each counter shows an icon, number, and label
+- **AND** the section has a background image with dark overlay
+
+#### Scenario: Classes section
+
+- **THEN** 6 class cards are displayed in a 3-column grid
+- **AND** each card shows a background image, trainer name, schedule days, time, and class title
+
+#### Scenario: Testimonials section
+
+- **THEN** a split layout is displayed
+- **AND** the left side has a heading, description, and 2 feature callouts
+- **AND** the right side has a carousel of testimonial cards
+- **AND** each card shows a quote, avatar, name, and position
+
+#### Scenario: Schedule section
+
+- **THEN** a 7-column weekly schedule table is displayed
+- **AND** active cells show a circular thumbnail, class name, and time
+- **AND** inactive cells show a close icon
+
+#### Scenario: Trainers section
+
+- **THEN** 4 trainer cards are displayed in a row
+- **AND** each card has a photo, role title, name, and social icons
+
+#### Scenario: Blog section
+
+- **THEN** 3 blog post cards are displayed in a row
+- **AND** each card shows an image, date, title, excerpt, and a read-more link
+
+#### Scenario: Footer
+
+- **THEN** the footer has a dark navy background
+- **AND** 4 columns are visible: logo + social, recent blog, explore links, contact info
+
+#### Scenario: Copyright bar
+
+- **THEN** a full-width dark bar is displayed at the bottom
+- **AND** copyright text is shown in semi-transparent white
 
 ## Verification Checklist
 

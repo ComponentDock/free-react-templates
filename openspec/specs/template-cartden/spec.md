@@ -40,158 +40,160 @@ The screenshot shows a classic e-commerce layout:
 - "Latest Products" product grid with tabbed filter
 - Dark charcoal footer with about text, account links, customer service links, newsletter signup, copyright
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: CartDen Header
 
-  Scenario: Top utility bar renders
-    Given the page loads
-    Then a dark charcoal top bar displays "Welcome to CartDen!"
-    And utility links "STORE", "NEWSLETTER", "FAQ" are visible
-    And language and currency selectors are present
+#### Scenario: Top utility bar renders
 
-  Scenario: Main header with logo and search
-    Given the page loads
-    Then the "CartDen" brand logo is displayed in coral-orange
-    And a category dropdown search input is visible
-    And account icon and cart icon with item count are shown
+- **GIVEN** the page loads
+- **THEN** a dark charcoal top bar displays "Welcome to CartDen!"
+- **AND** utility links "STORE", "NEWSLETTER", "FAQ" are visible
+- **AND** language and currency selectors are present
 
-  Scenario: Cart dropdown shows items
-    Given the cart has items
-    When the user hovers the cart icon
-    Then a dropdown lists cart items with name, price, quantity, and remove button
-    And a subtotal and checkout link are displayed
-```
+#### Scenario: Main header with logo and search
+
+- **GIVEN** the page loads
+- **THEN** the "CartDen" brand logo is displayed in coral-orange
+- **AND** a category dropdown search input is visible
+- **AND** account icon and cart icon with item count are shown
+
+#### Scenario: Cart dropdown shows items
+
+- **GIVEN** the cart has items
+- **WHEN** the user hovers the cart icon
+- **THEN** a dropdown lists cart items with name, price, quantity, and remove button
+- **AND** a subtotal and checkout link are displayed
 
 ### Navigation
 
-```gherkin
 Feature: CartDen Navigation
 
-  Scenario: Category navigation bar renders
-    Given the page loads
-    Then a dark charcoal nav bar is visible below the header
-    And a coral "CATEGORIES" button with hamburger icon is on the left
-    And menu links HOME, SHOP, WOMEN, MEN, SALES, PAGES are listed
-    And dropdown menus with sub-links appear on hover for WOMEN, MEN, PAGES
+#### Scenario: Category navigation bar renders
 
-  Scenario: Category sidebar opens on click
-    Given the CATEGORIES button is visible
-    When the user clicks the CATEGORIES button
-    Then a sidebar lists categories: Women's Clothing, Men's Clothing, Phones & Accessories, Computer & Office, Consumer Electronics, Jewelry & Watches, Bags & Shoes, View All
-    And each category with sub-items has a right-arrow chevron
-```
+- **GIVEN** the page loads
+- **THEN** a dark charcoal nav bar is visible below the header
+- **AND** a coral "CATEGORIES" button with hamburger icon is on the left
+- **AND** menu links HOME, SHOP, WOMEN, MEN, SALES, PAGES are listed
+- **AND** dropdown menus with sub-links appear on hover for WOMEN, MEN, PAGES
+
+#### Scenario: Category sidebar opens on click
+
+- **GIVEN** the CATEGORIES button is visible
+- **WHEN** the user clicks the CATEGORIES button
+- **THEN** a sidebar lists categories: Women's Clothing, Men's Clothing, Phones & Accessories, Computer & Office, Consumer Electronics, Jewelry & Watches, Bags & Shoes, View All
+- **AND** each category with sub-items has a right-arrow chevron
 
 ### Hero Section
 
-```gherkin
 Feature: CartDen Hero Slider
 
-  Scenario: Hero banner slider displays
-    Given the page loads
-    Then a full-width hero slider shows a product image with overlay text
-    And the overlay text reads "NEW PRODUCT COLLECTION"
-    And a coral "SHOP NOW" button is centered on the banner
+#### Scenario: Hero banner slider displays
 
-  Scenario: Slider navigation arrows work
-    Given the hero slider is visible
-    When the user clicks the left or right arrow
-    Then the slider transitions to the previous or next slide
-```
+- **GIVEN** the page loads
+- **THEN** a full-width hero slider shows a product image with overlay text
+- **AND** the overlay text reads "NEW PRODUCT COLLECTION"
+- **AND** a coral "SHOP NOW" button is centered on the banner
+
+#### Scenario: Slider navigation arrows work
+
+- **GIVEN** the hero slider is visible
+- **WHEN** the user clicks the left or right arrow
+- **THEN** the slider transitions to the previous or next slide
 
 ### Category Cards
 
-```gherkin
 Feature: CartDen Category Cards
 
-  Scenario: Three category cards render
-    Given the hero section is visible
-    Then three equal-width category image cards are displayed
-    And each card has an overlay with "NEW COLLECTION" text
-    And the images represent different product categories (bags, shoes, apparel)
-```
+#### Scenario: Three category cards render
+
+- **GIVEN** the hero section is visible
+- **THEN** three equal-width category image cards are displayed
+- **AND** each card has an overlay with "NEW COLLECTION" text
+- **AND** the images represent different product categories (bags, shoes, apparel)
 
 ### Deals of the Day
 
-```gherkin
 Feature: CartDen Deals Section
 
-  Scenario: Deals section renders with title and description
-    Given the page loads
-    Then a "Deals Of The Day" section title is displayed
-    And a descriptive subtitle is shown
+#### Scenario: Deals section renders with title and description
 
-  Scenario: Deal product cards show countdown and badges
-    Given the deals section is visible
-    Then each product card shows: image, countdown timer (H/M/S), badge (New/-20%)
-    And each card shows: product name, current price, old price (strikethrough)
-    And quick-view, wishlist, and compare icon buttons appear on hover
+- **GIVEN** the page loads
+- **THEN** a "Deals Of The Day" section title is displayed
+- **AND** a descriptive subtitle is shown
 
-  Scenario: Add to Cart button works on deal cards
-    Given a deal product card is visible
-    When the user clicks "Add to Cart"
-    Then the cart count in the header increments by 1
-```
+#### Scenario: Deal product cards show countdown and badges
+
+- **GIVEN** the deals section is visible
+- **THEN** each product card shows: image, countdown timer (H/M/S), badge (New/-20%)
+- **AND** each card shows: product name, current price, old price (strikethrough)
+- **AND** quick-view, wishlist, and compare icon buttons appear on hover
+
+#### Scenario: Add to Cart button works on deal cards
+
+- **GIVEN** a deal product card is visible
+- **WHEN** the user clicks "Add to Cart"
+- **THEN** the cart count in the header increments by 1
 
 ### Promotional Banners
 
-```gherkin
 Feature: CartDen Promo Banners
 
-  Scenario: Hot Deal banner renders
-    Given the deals section is visible
-    Then a "HOT DEAL" banner with "Up to 50% OFF" text and "Shop Now" CTA is displayed
-    And the banner has a background image
+#### Scenario: Hot Deal banner renders
 
-  Scenario: New Collection banner renders
-    Given the Hot Deal banner is visible
-    Then a "NEW COLLECTION" banner with "Shop Now" CTA is displayed beside it
-```
+- **GIVEN** the deals section is visible
+- **THEN** a "HOT DEAL" banner with "Up to 50% OFF" text and "Shop Now" CTA is displayed
+- **AND** the banner has a background image
+
+#### Scenario: New Collection banner renders
+
+- **GIVEN** the Hot Deal banner is visible
+- **THEN** a "NEW COLLECTION" banner with "Shop Now" CTA is displayed beside it
 
 ### Latest Products
 
-```gherkin
 Feature: CartDen Latest Products
 
-  Scenario: Latest Products section renders
-    Given the page loads
-    Then a "Latest Products" section title is displayed
-    And a grid of product cards is shown
+#### Scenario: Latest Products section renders
 
-  Scenario: Product cards display correctly
-    Given the latest products section is visible
-    Then each product card shows: image, badges (New/-20%), name, price
-    And quick-view, wishlist, and compare icon buttons appear on hover
-    And an "Add to Cart" button is present
-```
+- **GIVEN** the page loads
+- **THEN** a "Latest Products" section title is displayed
+- **AND** a grid of product cards is shown
+
+#### Scenario: Product cards display correctly
+
+- **GIVEN** the latest products section is visible
+- **THEN** each product card shows: image, badges (New/-20%), name, price
+- **AND** quick-view, wishlist, and compare icon buttons appear on hover
+- **AND** an "Add to Cart" button is present
 
 ### Footer
 
-```gherkin
 Feature: CartDen Footer
 
-  Scenario: Footer renders with four columns
-    Given the page loads
-    Then a dark charcoal footer is displayed
-    And column 1 shows the logo and about text
-    And column 2 shows "My Account" links: My Account, My Wishlist, Compare, Checkout, Login
-    And column 3 shows "Customer Service" links: About Us, Shipping & Return, Shipping Guide, FAQ
-    And column 4 shows "Stay Connected" with newsletter signup form
+#### Scenario: Footer renders with four columns
 
-  Scenario: Newsletter signup form
-    Given the footer is visible
-    When the user enters an email and clicks "Join Newsletter"
-    Then the form validates the email format
-    And an error message appears for invalid emails
+- **GIVEN** the page loads
+- **THEN** a dark charcoal footer is displayed
+- **AND** column 1 shows the logo and about text
+- **AND** column 2 shows "My Account" links: My Account, My Wishlist, Compare, Checkout, Login
+- **AND** column 3 shows "Customer Service" links: About Us, Shipping & Return, Shipping Guide, FAQ
+- **AND** column 4 shows "Stay Connected" with newsletter signup form
 
-  Scenario: Copyright bar
-    Given the footer is visible
-    Then a copyright bar displays the current year
-    And a "Component Dock" link is present (replacing original Colorlib attribution)
-```
+#### Scenario: Newsletter signup form
+
+- **GIVEN** the footer is visible
+- **WHEN** the user enters an email and clicks "Join Newsletter"
+- **THEN** the form validates the email format
+- **AND** an error message appears for invalid emails
+
+#### Scenario: Copyright bar
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright bar displays the current year
+- **AND** a "Component Dock" link is present (replacing original Colorlib attribution)
 
 ## Verification Checklist
 

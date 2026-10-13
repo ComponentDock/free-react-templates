@@ -70,72 +70,82 @@ Extracted from `https://preview.colorlib.com/theme/calvin/assets/css/style.css` 
 9. **Blog ("Latest News")** — carousel of 3 blog cards: image + tag button + date/byline + title link
 10. **Footer** — dark bg, 2-column: left has logo + description + social icons (twitter, facebook, pinterest, globe, instagram); right has "Let's Talk" + "Download CV" buttons; bottom row with copyright
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Sketched Template
 
 #### Scenario: Navbar renders with transparent overlay and correct links
-- Given the user loads the page
-- Then a transparent navbar overlays the hero section
-- And it contains links: Home, Work, Service, Blog (with dropdown), Contact
-- And a "Let's Talk" button is visible on the right
-- And a mobile hamburger menu is present
+
+- **GIVEN** the user loads the page
+- **THEN** a transparent navbar overlays the hero section
+- **AND** it contains links: Home, Work, Service, Blog (with dropdown), Contact
+- **AND** a "Let's Talk" button is visible on the right
+- **AND** a mobile hamburger menu is present
 
 #### Scenario: Hero section displays designer intro
-- Given the user loads the page
-- Then a full-height hero section is visible with a background image and dark overlay
-- And a person/employee image is shown on the left side
-- And the heading reads "My name is Calvin. Digital Product Designer"
-- And a subtitle reads "Head of design at Calvino"
+
+- **GIVEN** the user loads the page
+- **THEN** a full-height hero section is visible with a background image and dark overlay
+- **AND** a person/employee image is shown on the left side
+- **AND** the heading reads "My name is Calvin. Digital Product Designer"
+- **AND** a subtitle reads "Head of design at Calvino"
 
 #### Scenario: About info bar shows contact details
-- Given the user scrolls to the bottom of the hero
-- Then an info bar is visible with 3 sections: "Design For: Web & Mobile", phone number, and email
-- And the email section has an envelope icon
+
+- **GIVEN** the user scrolls to the bottom of the hero
+- **THEN** an info bar is visible with 3 sections: "Design For: Web & Mobile", phone number, and email
+- **AND** the email section has an envelope icon
 
 #### Scenario: Services section displays four expertise items
-- Given the user scrolls to the services section
-- Then the heading reads "My Experties"
-- And 4 service cards are displayed in a 2×2 grid
-- And each card has an icon, title, description, and browse link
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading reads "My Experties"
+- **AND** 4 service cards are displayed in a 2×2 grid
+- **AND** each card has an icon, title, description, and browse link
 
 #### Scenario: Gallery section shows four portfolio items
-- Given the user scrolls to the gallery section
-- Then the heading reads "My Works"
-- And 4 portfolio items are displayed in a 2×2 grid
-- And each item has a background image and hover overlay with title
-- And a "More Work" button is centered below
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** the heading reads "My Works"
+- **AND** 4 portfolio items are displayed in a 2×2 grid
+- **AND** each item has a background image and hover overlay with title
+- **AND** a "More Work" button is centered below
 
 #### Scenario: About section shows skills with progress bars
-- Given the user scrolls to the about section
-- Then the heading reads "About Me"
-- And descriptive text is visible on the left
-- And 3 progress bars are displayed on the right: UI Design (60%), User Experience (89%), Illustration (95%)
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading reads "About Me"
+- **AND** descriptive text is visible on the left
+- **AND** 3 progress bars are displayed on the right: UI Design (60%), User Experience (89%), Illustration (95%)
 
 #### Scenario: Brand logos carousel displays
-- Given the user scrolls to the brand area
-- Then a carousel of brand logos is visible
-- And logos are displayed in a horizontal scrolling row
+
+- **GIVEN** the user scrolls to the brand area
+- **THEN** a carousel of brand logos is visible
+- **AND** logos are displayed in a horizontal scrolling row
 
 #### Scenario: Testimonials section displays client quotes
-- Given the user scrolls to the testimonials section
-- Then the heading reads "Client Testimonial"
-- And a testimonial slider is visible with quote text
-- And each testimonial shows a founder image, name, and role
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the heading reads "Client Testimonial"
+- **AND** a testimonial slider is visible with quote text
+- **AND** each testimonial shows a founder image, name, and role
 
 #### Scenario: Blog section shows latest news
-- Given the user scrolls to the blog section
-- Then the heading reads "Latest News"
-- And 3 blog post cards are displayed in a carousel
-- And each card has an image, tag button, date/byline, and title link
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading reads "Latest News"
+- **AND** 3 blog post cards are displayed in a carousel
+- **AND** each card has an image, tag button, date/byline, and title link
 
 #### Scenario: Footer renders with CTA and social links
-- Given the user scrolls to the footer
-- Then a dark background footer is visible
-- And a logo and description text are displayed
-- And social media icons (Twitter, Facebook, Pinterest, Globe, Instagram) are present
-- And "Let's Talk" and "Download CV" buttons are visible
-- And a copyright line with a link to componentdock.com is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is visible
+- **AND** a logo and description text are displayed
+- **AND** social media icons (Twitter, Facebook, Pinterest, Globe, Instagram) are present
+- **AND** "Let's Talk" and "Download CV" buttons are visible
+- **AND** a copyright line with a link to componentdock.com is present
 
 ## Verification checklist
 

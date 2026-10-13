@@ -16,7 +16,7 @@ Recreation of ColorLib **Bootstrap Buttons 16** (`https://colorlib.com/wp/templa
   - Text primary: `#212529`, muted text: `rgba(0, 0, 0, 0.3)` / `text-slate-400`
 - **Button Styling**: Clean rounded-md / pill cards with icon-left and icon-right alignment, statistics badge displays (bold numerical values with subtitle labels), smooth hover transitions.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Metric Button Dashboard & Component Grid
 
@@ -26,21 +26,21 @@ So that I can evaluate dashboard button components.
 
 #### Scenario: Displaying metric button widgets
 
-- Given the application is loaded
-- When the user views the dashboard section
-- Then all metric button cards (New Posts, New Comments, Bounce Rate, Total Visits, Projects, Clients, Conversion Rate) should be visible with proper icons and numerical statistics.
+- **GIVEN** the application is loaded
+- **WHEN** the user views the dashboard section
+- **THEN** all metric button cards (New Posts, New Comments, Bounce Rate, Total Visits, Projects, Clients, Conversion Rate) should be visible with proper icons and numerical statistics
 
 #### Scenario: Interactive button states and hover effects
 
-- Given the metric buttons are rendered
-- When the user hovers over any button card
-- Then the button card displays a subtle hover elevation or color highlight.
+- **GIVEN** the metric buttons are rendered
+- **WHEN** the user hovers over any button card
+- **THEN** the button card displays a subtle hover elevation or color highlight
 
 #### Scenario: Component Dock footer presence
 
-- Given the page is scrolled to the footer
-- When the user looks at the footer section
-- Then a prominent link pointing to `https://www.componentdock.com/` ("Component Dock") is displayed.
+- **GIVEN** the page is scrolled to the footer
+- **WHEN** the user looks at the footer section
+- **THEN** a prominent link pointing to `https://www.componentdock.com/` ("Component Dock") is displayed
 
 ## Verification Checklist
 

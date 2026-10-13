@@ -46,87 +46,109 @@ Extracted from live preview CSS (`css/style.css`) and DOM structure.
 - Footer: dark bg (`#121618`) with overlay
 - Appointment/Contact: background image with overlay + map on left
 
-## Gherkin Requirements
+## Requirements
 
 ### Hero Slider
-Scenario: Hero displays a rotating carousel of full-width pizza images
-  Given the user visits the homepage
-  Then a full-width image carousel is displayed
-  And the carousel auto-rotates between slides
-  And each slide shows a heading ("Italian Cuisine" / "Italian Pizza" / "We cooked your desired Pizza Recipe")
-  And each slide has two CTAs: "Order Now" (primary) and "View Menu" (white outline)
+
+#### Scenario: Hero displays a rotating carousel of full-width pizza images
+
+- **GIVEN** the user visits the homepage
+- **THEN** a full-width image carousel is displayed
+- **AND** the carousel auto-rotates between slides
+- **AND** each slide shows a heading ("Italian Cuisine" / "Italian Pizza" / "We cooked your desired Pizza Recipe")
+- **AND** each slide has two CTAs: "Order Now" (primary) and "View Menu" (white outline)
 
 ### Navbar
-Scenario: Navbar is fixed at top with logo and navigation links
-  Given the user scrolls down the page
-  Then the navbar remains fixed at the top
-  And it contains links: Home, Menu, Services, Blog, About, Contact
-  And a "Order Now" CTA button is displayed on the right
+
+#### Scenario: Navbar is fixed at top with logo and navigation links
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar remains fixed at the top
+- **AND** it contains links: Home, Menu, Services, Blog, About, Contact
+- **AND** a "Order Now" CTA button is displayed on the right
 
 ### Intro Bar
-Scenario: Contact info bar displays below hero
-  Given the hero section is visible
-  Then a horizontal bar shows three items: phone number, address, and hours
-  And each item has an icon and text
-  And social media icons (Twitter, Facebook, Instagram) are displayed on the right
+
+#### Scenario: Contact info bar displays below hero
+
+- **GIVEN** the hero section is visible
+- **THEN** a horizontal bar shows three items: phone number, address, and hours
+- **AND** each item has an icon and text
+- **AND** social media icons (Twitter, Facebook, Instagram) are displayed on the right
 
 ### About Section
-Scenario: About section shows split layout with image and text
-  Given the user scrolls to the about section
-  Then a two-column layout is displayed
-  And the left half shows a food/restaurant image
-  And the right half shows a heading "Welcome to Pizza A Restaurant" and descriptive paragraph
+
+#### Scenario: About section shows split layout with image and text
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a two-column layout is displayed
+- **AND** the left half shows a food/restaurant image
+- **AND** the right half shows a heading "Welcome to Pizza A Restaurant" and descriptive paragraph
 
 ### Services Section
-Scenario: Services section displays three service cards
-  Given the user scrolls to the services section
-  Then a dark background section with "Our Services" heading is displayed
-  And three service cards are shown: "Healthy Foods", "Fastest Delivery", "Original Recipes"
-  And each card has an icon, heading, and description
+
+#### Scenario: Services section displays three service cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a dark background section with "Our Services" heading is displayed
+- **AND** three service cards are shown: "Healthy Foods", "Fastest Delivery", "Original Recipes"
+- **AND** each card has an icon, heading, and description
 
 ### Gallery Section
-Scenario: Gallery shows a 4-column image grid
-  Given the user scrolls to the gallery section
-  Then a full-width 4-column image grid is displayed
-  And each image has a hover overlay with a search icon
-  And there are 4 gallery images total
+
+#### Scenario: Gallery shows a 4-column image grid
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a full-width 4-column image grid is displayed
+- **AND** each image has a hover overlay with a search icon
+- **AND** there are 4 gallery images total
 
 ### Counter Section
-Scenario: Counter section displays key statistics with animation
-  Given the user scrolls to the counter section
-  Then a dark section with parallax background image is displayed
-  And four statistics are shown: "100 Pizza Branches", "85 Number of Awards", "10567 Happy Customers", "900 Staff"
-  And each statistic has a pizza/food icon
-  And numbers animate (count up) when scrolled into view
+
+#### Scenario: Counter section displays key statistics with animation
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a dark section with parallax background image is displayed
+- **AND** four statistics are shown: "100 Pizza Branches", "85 Number of Awards", "10567 Happy Customers", "900 Staff"
+- **AND** each statistic has a pizza/food icon
+- **AND** numbers animate (count up) when scrolled into view
 
 ### Menu Section
-Scenario: Menu section displays tabbed food categories
-  Given the user scrolls to the menu section
-  Then a split layout is shown: image on left, menu on right
-  And four tabs are available: Pizza, Drinks, Burgers, Pasta
-  And each tab shows 3 menu items with image, name, description, and price
-  And clicking a tab switches the visible menu items
+
+#### Scenario: Menu section displays tabbed food categories
+
+- **GIVEN** the user scrolls to the menu section
+- **THEN** a split layout is shown: image on left, menu on right
+- **AND** four tabs are available: Pizza, Drinks, Burgers, Pasta
+- **AND** each tab shows 3 menu items with image, name, description, and price
+- **AND** clicking a tab switches the visible menu items
 
 ### Blog Section
-Scenario: Blog section shows recent posts
-  Given the user scrolls to the blog section
-  Then "Recent from blog" heading is displayed
-  And three blog cards are shown in a row
-  And each card has a cover image, date, author, comment count, title, and excerpt
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** "Recent from blog" heading is displayed
+- **AND** three blog cards are shown in a row
+- **AND** each card has a cover image, date, author, comment count, title, and excerpt
 
 ### Contact/Appointment Section
-Scenario: Contact form with map
-  Given the user scrolls to the contact section
-  Then a split layout is displayed: map on the left, form on the right
-  And the form has fields: First Name, Last Name, Message
-  And a "Send" primary button submits the form
+
+#### Scenario: Contact form with map
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a split layout is displayed: map on the left, form on the right
+- **AND** the form has fields: First Name, Last Name, Message
+- **AND** a "Send" primary button submits the form
 
 ### Footer
-Scenario: Footer with multi-column layout
-  Given the user scrolls to the bottom
-  Then a dark footer section with overlay is displayed
-  And it contains: About Us column with social icons, Recent Blog column, Newsletter signup column, and Contact info column
-  And a bottom bar shows copyright and attribution
+
+#### Scenario: Footer with multi-column layout
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a dark footer section with overlay is displayed
+- **AND** it contains: About Us column with social icons, Recent Blog column, Newsletter signup column, and Contact info column
+- **AND** a bottom bar shows copyright and attribution
 
 ## Verification Checklist
 

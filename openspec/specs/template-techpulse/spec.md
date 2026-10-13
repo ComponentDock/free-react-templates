@@ -95,7 +95,7 @@ TypeScript.
 - **Category badge colors**: technology=#624693, world=#61e49b, video=#ff4b75, party=#f8a64f
 - **Post info**: author image (30px round), author name link, date link, comments link (right-aligned)
 
-## Gherkin Requirements
+## Requirements
 
 ### Requirement: Full magazine layout on page load
 

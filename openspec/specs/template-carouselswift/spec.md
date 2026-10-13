@@ -21,7 +21,7 @@ Recreation of ColorLib [Carousel 17](https://colorlib.com/wp/template/carousel-1
   - Buttons: Rounded-lg (`rounded-lg`), shadow effects, smooth hover transitions.
   - Cards: White background, subtle border, soft shadow (`shadow-sm`, `border-slate-200`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: CarouselSwift Showcase
 
@@ -29,33 +29,33 @@ As a visitor, I want to explore the carousel showcase, features, testimonials, a
 
 #### Scenario: Navigation and Hero Banner
 
-- Given the user lands on the CarouselSwift homepage
-- When the header navigation and hero banner are displayed
-- Then the user should see brand title, nav links, headline, subtitle, and primary call-to-action buttons.
+- **GIVEN** the user lands on the CarouselSwift homepage
+- **WHEN** the header navigation and hero banner are displayed
+- **THEN** the user should see brand title, nav links, headline, subtitle, and primary call-to-action buttons
 
 #### Scenario: Interactive Carousel Section
 
-- Given the user scrolls to the carousel showcase section
-- When interactive slides/cards are presented with next/previous controls
-- Then the user can cycle through featured items smoothly.
+- **GIVEN** the user scrolls to the carousel showcase section
+- **WHEN** interactive slides/cards are presented with next/previous controls
+- **THEN** the user can cycle through featured items smoothly
 
 #### Scenario: Feature Highlights Grid
 
-- Given the user views the feature highlights
-- When cards are displayed with icons and descriptive text
-- Then each feature clearly communicates core capabilities.
+- **GIVEN** the user views the feature highlights
+- **WHEN** cards are displayed with icons and descriptive text
+- **THEN** each feature clearly communicates core capabilities
 
 #### Scenario: Testimonial Slider
 
-- Given the user views the testimonials section
-- When user quotes and avatars are displayed in a slider format
-- Then users can navigate through client feedback.
+- **GIVEN** the user views the testimonials section
+- **WHEN** user quotes and avatars are displayed in a slider format
+- **THEN** users can navigate through client feedback
 
 #### Scenario: Newsletter and Footer
 
-- Given the user scrolls to the bottom of the page
-- When the newsletter subscription form and footer are rendered
-- Then the footer must prominently link to `https://www.componentdock.com/`.
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the newsletter subscription form and footer are rendered
+- **THEN** the footer must prominently link to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

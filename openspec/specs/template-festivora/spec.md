@@ -47,89 +47,102 @@ Recreation of ColorLib **Evento** — a conference/event landing page template.
 12. **Footer** — Dark bg (`#18181c`). 3-column layout: logo + description + social icons (Pinterest, Facebook, Twitter, Dribbble, Instagram as rounded circles), Instagram image grid (6 images), Newsletter form (email input + "SUBSCRIBE" button).
 13. **Copyright Footer** — Very dark bg (`#080113`). Copyright text left, footer nav links right (Home, Speakers, Events, News, Contact). Component Dock link added per convention.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Festivora template behaviour
+
 Feature: Festivora conference event template
 
-  Background:
-    Given the template is loaded at the root URL
+Background:
+- **GIVEN** the template is loaded at the root URL
 
-  Scenario: Navbar displays correctly
-    Then the logo is visible
-    And navigation links "Home", "Speakers", "Events", "News", "Contact" are present
-    And a search icon is visible
+#### Scenario: Navbar displays correctly
 
-  Scenario: Hero slider renders
-    Then a full-viewport image slider with 3 slides is displayed
-    And dot navigation indicators are present
-    And each slide shows "Prepare yourself for the" heading
-    And each slide shows large "conference" text
-    And a date "12-14 February 2018" is visible
-    And a "Buy Tickets Now" rounded red button is present
+- **THEN** the logo is visible
+- **AND** navigation links "Home", "Speakers", "Events", "News", "Contact" are present
+- **AND** a search icon is visible
 
-  Scenario: Event info cards display
-    Then 4 info cards are shown in a row
-    And cards show DATE, LOCATION, SPEAKERS, TICKETS labels
-    And each card has an icon above the label
+#### Scenario: Hero slider renders
 
-  Scenario: Countdown section renders
-    Then a background image with dark overlay is displayed
-    And the heading "Counter until the big event" is visible
-    And 4 countdown boxes show days, hours, minutes, seconds
-    And countdown boxes have red background with white text
+- **THEN** a full-viewport image slider with 3 slides is displayed
+- **AND** dot navigation indicators are present
+- **AND** each slide shows "Prepare yourself for the" heading
+- **AND** each slide shows large "conference" text
+- **AND** a date "12-14 February 2018" is visible
+- **AND** a "Buy Tickets Now" rounded red button is present
 
-  Scenario: About section displays
-    Then the section title "About the event" is visible
-    And two columns of description text are shown
-    And the title has a red top-border accent line
+#### Scenario: Event info cards display
 
-  Scenario: Event features render
-    Then 4 feature cards are displayed in a row
-    And each card shows an icon, title, description, and "read more" link
-    And feature titles are "9 Speakers", "8 hrs Marathon", "Live Broadcast", "Early Bird"
+- **THEN** 4 info cards are shown in a row
+- **AND** cards show DATE, LOCATION, SPEAKERS, TICKETS labels
+- **AND** each card has an icon above the label
 
-  Scenario: Speakers section displays
-    Then the section title "Our Speakers" is visible
-    And 8 speaker cards are shown in a 4-column grid
-    And each card shows a portrait image
-    And hovering reveals name and position info
+#### Scenario: Countdown section renders
 
-  Scenario: Pricing table renders
-    Then the section title "Pricing Table" is visible
-    And 3 pricing cards are displayed
-    And the "Early Bird" card shows "$65" and has "recommended" badge
-    And the "Start up" card shows "$85"
-    And the "Corporate" card shows "$95"
-    And each card has a "Purchase" button
+- **THEN** a background image with dark overlay is displayed
+- **AND** the heading "Counter until the big event" is visible
+- **AND** 4 countdown boxes show days, hours, minutes, seconds
+- **AND** countdown boxes have red background with white text
 
-  Scenario: Event calendar displays
-    Then a table header "Next Events Calendar" is visible
-    And 3 event rows are shown
-    And each row shows an image, date, event info, and "Read More" button
-    And each row has a "buy now" link
+#### Scenario: About section displays
 
-  Scenario: Partners carousel renders
-    Then the section title "Our Partners" is visible
-    And a carousel of 5 partner logos is displayed
-    And logos are at reduced opacity, full on hover
+- **THEN** the section title "About the event" is visible
+- **AND** two columns of description text are shown
+- **AND** the title has a red top-border accent line
 
-  Scenario: Get Tickets section renders
-    Then a background image with overlay is displayed
-    And the heading "Get your tickets" is visible
-    And a "buy now" rounded red button is present
+#### Scenario: Event features render
 
-  Scenario: Footer renders
-    Then a dark footer with logo and description is displayed
-    And social media icons (Pinterest, Facebook, Twitter, Dribbble, Instagram) are present
-    And an Instagram image grid with 6 images is shown
-    And a newsletter form with email input and "SUBSCRIBE" button is present
+- **THEN** 4 feature cards are displayed in a row
+- **AND** each card shows an icon, title, description, and "read more" link
+- **AND** feature titles are "9 Speakers", "8 hrs Marathon", "Live Broadcast", "Early Bird"
 
-  Scenario: Copyright footer renders
-    Then a copyright line is displayed
-    And footer navigation links (Home, Speakers, Events, News, Contact) are present
-    And a Component Dock attribution link is present
-```
+#### Scenario: Speakers section displays
+
+- **THEN** the section title "Our Speakers" is visible
+- **AND** 8 speaker cards are shown in a 4-column grid
+- **AND** each card shows a portrait image
+- **AND** hovering reveals name and position info
+
+#### Scenario: Pricing table renders
+
+- **THEN** the section title "Pricing Table" is visible
+- **AND** 3 pricing cards are displayed
+- **AND** the "Early Bird" card shows "$65" and has "recommended" badge
+- **AND** the "Start up" card shows "$85"
+- **AND** the "Corporate" card shows "$95"
+- **AND** each card has a "Purchase" button
+
+#### Scenario: Event calendar displays
+
+- **THEN** a table header "Next Events Calendar" is visible
+- **AND** 3 event rows are shown
+- **AND** each row shows an image, date, event info, and "Read More" button
+- **AND** each row has a "buy now" link
+
+#### Scenario: Partners carousel renders
+
+- **THEN** the section title "Our Partners" is visible
+- **AND** a carousel of 5 partner logos is displayed
+- **AND** logos are at reduced opacity, full on hover
+
+#### Scenario: Get Tickets section renders
+
+- **THEN** a background image with overlay is displayed
+- **AND** the heading "Get your tickets" is visible
+- **AND** a "buy now" rounded red button is present
+
+#### Scenario: Footer renders
+
+- **THEN** a dark footer with logo and description is displayed
+- **AND** social media icons (Pinterest, Facebook, Twitter, Dribbble, Instagram) are present
+- **AND** an Instagram image grid with 6 images is shown
+- **AND** a newsletter form with email input and "SUBSCRIBE" button is present
+
+#### Scenario: Copyright footer renders
+
+- **THEN** a copyright line is displayed
+- **AND** footer navigation links (Home, Speakers, Events, News, Contact) are present
+- **AND** a Component Dock attribution link is present
 
 ## Verification Checklist
 

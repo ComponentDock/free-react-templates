@@ -44,73 +44,100 @@ Extracted from the live preview stylesheet (`main.css`) and DOM:
 9. **Contact (contact-area)** — White bg, contact form with name/email/message fields
 10. **Footer** — Black bg (#000), 5 columns: Top Products, Company, Support, Projects, Quick Contact — social icons row
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-- Given the user is on any page
-  - When the page loads
-  - Then a transparent header navbar appears at the top
-  - And the navbar contains the logo and navigation links
+
+#### Scenario: Navbar
+
+- **GIVEN** the user is on any page
+- **WHEN** the page loads
+- **THEN** a transparent header navbar appears at the top
+- **AND** the navbar contains the logo and navigation links
 
 ### Hero Section
-- Given the user is on the homepage
-  - When the hero renders
-  - Then a full-screen gradient background (salmon-to-pink) displays
-  - And the heading "Brand new Simples" is shown with white text and pink shadow
-  - And a CTA button is visible
+
+#### Scenario: Hero Section
+
+- **GIVEN** the user is on the homepage
+- **WHEN** the hero renders
+- **THEN** a full-screen gradient background (salmon-to-pink) displays
+- **AND** the heading "Brand new Simples" is shown with white text and pink shadow
+- **AND** a CTA button is visible
 
 ### Features Section
-- Given the user scrolls to the Features section
-  - When the section renders
-  - Then 4 feature items are displayed in a grid
-  - And each item has a pink icon and uppercase title
-  - And the items are: Easy Installation, Multiple Layouts, Free Updates, Fully Responsive
+
+#### Scenario: Features Section
+
+- **GIVEN** the user scrolls to the Features section
+- **WHEN** the section renders
+- **THEN** 4 feature items are displayed in a grid
+- **AND** each item has a pink icon and uppercase title
+- **AND** the items are: Easy Installation, Multiple Layouts, Free Updates, Fully Responsive
 
 ### Core Feature Sections
-- Given the user scrolls to the Core Feature area
-  - When the section renders
-  - Then a light background (#f9f9ff) section displays
-  - And a split layout shows an image alongside text content
-  - And the heading "Core Feature" with a description is visible
-  - And carousel navigation arrows are present
+
+#### Scenario: Core Feature Sections
+
+- **GIVEN** the user scrolls to the Core Feature area
+- **WHEN** the section renders
+- **THEN** a light background (#f9f9ff) section displays
+- **AND** a split layout shows an image alongside text content
+- **AND** the heading "Core Feature" with a description is visible
+- **AND** carousel navigation arrows are present
 
 ### Process Section
-- Given the user scrolls to the Process section
-  - When the section renders
-  - Then a gradient background section displays
-  - And 6 process steps are shown in a row
-  - And each step has a white border-top, pink icon, and uppercase label
-  - And the steps are: Brainstorm, Discuss Ideas, Projections, Strategies, SEO Target, Awards
+
+#### Scenario: Process Section
+
+- **GIVEN** the user scrolls to the Process section
+- **WHEN** the section renders
+- **THEN** a gradient background section displays
+- **AND** 6 process steps are shown in a row
+- **AND** each step has a white border-top, pink icon, and uppercase label
+- **AND** the steps are: Brainstorm, Discuss Ideas, Projections, Strategies, SEO Target, Awards
 
 ### Service/Article Section
-- Given the user scrolls to the Service section
-  - When the section renders
-  - Then a dark overlay background displays
-  - And article cards are shown in a carousel
-  - And each card has a title and excerpt text
+
+#### Scenario: Service/Article Section
+
+- **GIVEN** the user scrolls to the Service section
+- **WHEN** the section renders
+- **THEN** a dark overlay background displays
+- **AND** article cards are shown in a carousel
+- **AND** each card has a title and excerpt text
 
 ### Subscription Section
-- Given the user scrolls to the Subscription section
-  - When the section renders
-  - Then a light background (#f9f9ff) section appears
-  - And the heading "Subscribe" is displayed
-  - And a rounded email input field is present
-  - And a CTA button is positioned next to the input
+
+#### Scenario: Subscription Section
+
+- **GIVEN** the user scrolls to the Subscription section
+- **WHEN** the section renders
+- **THEN** a light background (#f9f9ff) section appears
+- **AND** the heading "Subscribe" is displayed
+- **AND** a rounded email input field is present
+- **AND** a CTA button is positioned next to the input
 
 ### Contact Section
-- Given the user scrolls to the Contact section
-  - When the section renders
-  - Then a white background section displays
-  - And a contact form with name, email, and message fields is shown
-  - And a submit button is present
+
+#### Scenario: Contact Section
+
+- **GIVEN** the user scrolls to the Contact section
+- **WHEN** the section renders
+- **THEN** a white background section displays
+- **AND** a contact form with name, email, and message fields is shown
+- **AND** a submit button is present
 
 ### Footer
-- Given the user scrolls to the footer
-  - When the footer renders
-  - Then a black background (#000) footer is visible
-  - And five columns display: Top Products, Company, Support, Projects, Quick Contact
-  - And a social icons row is shown
-  - And the footer links to Component Dock
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** a black background (#000) footer is visible
+- **AND** five columns display: Top Products, Company, Support, Projects, Quick Contact
+- **AND** a social icons row is shown
+- **AND** the footer links to Component Dock
 
 ## Verification Checklist
 

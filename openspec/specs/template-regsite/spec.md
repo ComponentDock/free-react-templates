@@ -72,78 +72,89 @@ Single-section template (no multi-page navigation). Order:
    - Upload CV file picker (hidden input + "Choose file" label button + "No file chosen" info text + description "Upload your CV/Resume or any other relevant file. Max file size 50 MB")
 4. **Card footer** — white background with border, "Send Application" blue submit button (right-aligned or full-width)
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: RegSite template behaviour
+
 Feature: RegSite job application form
 
-  Scenario: Page renders with dark background and centered card
-    Given the page loads
-    Then the background is dark charcoal (#1a1a1a)
-    And a white card is centered with max-width 900px
-    And the card heading shows "Apply for job" in white bold text
+#### Scenario: Page renders with dark background and centered card
 
-  Scenario: Speech-bubble arrow points from card body to heading
-    Given the card body section is visible
-    Then a CSS triangle arrow points upward from the card body toward the heading
-    And the arrow is positioned at left: 75px from the card body edge
+- **GIVEN** the page loads
+- **THEN** the background is dark charcoal (#1a1a1a)
+- **AND** a white card is centered with max-width 900px
+- **AND** the card heading shows "Apply for job" in white bold text
 
-  Scenario: Full name field renders correctly
-    Given the form is displayed
-    Then the "Full name" label is bold, 15px, #333
-    And the text input has a light gray border (#cccccc) with 3px radius
-    And the input text color is #666
+#### Scenario: Speech-bubble arrow points from card body to heading
 
-  Scenario: Email field has placeholder
-    Given the form is displayed
-    Then the "Email address" label is shown
-    And the email input has placeholder "example@email.com"
+- **GIVEN** the card body section is visible
+- **THEN** a CSS triangle arrow points upward from the card body toward the heading
+- **AND** the arrow is positioned at left: 75px from the card body edge
 
-  Scenario: Message textarea renders with minimum height
-    Given the form is displayed
-    Then the "Message" label is shown
-    And the textarea has placeholder "Message sent to the employer"
-    And the textarea has a minimum height of 120px
+#### Scenario: Full name field renders correctly
 
-  Scenario: Upload CV file picker works
-    Given the form is displayed
-    Then the "Upload CV" label is shown
-    And a "Choose file" button is visible (styled label)
-    And "No file chosen" info text is shown
-    And description text reads "Upload your CV/Resume or any other relevant file. Max file size 50 MB"
-    When the user clicks "Choose file"
-    Then the native file picker opens
+- **GIVEN** the form is displayed
+- **THEN** the "Full name" label is bold, 15px, #333
+- **AND** the text input has a light gray border (#cccccc) with 3px radius
+- **AND** the input text color is #666
 
-  Scenario: Input focus creates lift effect
-    Given any text input in the form
-    When the user focuses the input
-    Then a subtle box-shadow appears (rgba(0,0,0,0.15))
-    And the input lifts 3px upward (translateY(-3px))
+#### Scenario: Email field has placeholder
 
-  Scenario: Submit button renders with blue styling
-    Given the form card footer is visible
-    Then the "Send Application" button is blue (#2c6ed5)
-    And the button has 5px border radius
-    And the button text is white, bold, 15px
-    When the user hovers the button
-    Then the button darkens to #185ac1
+- **GIVEN** the form is displayed
+- **THEN** the "Email address" label is shown
+- **AND** the email input has placeholder "example@email.com"
 
-  Scenario: Form rows have consistent spacing and borders
-    Given the form is displayed
-    Then each form row has padding 24px 55px
-    And each form row has a bottom border (#e5e5e5)
+#### Scenario: Message textarea renders with minimum height
 
-  Scenario: Responsive layout stacks fields vertically on mobile
-    Given the viewport width is less than 768px
-    Then form rows stack vertically (block layout)
-    And form row padding reduces to 24px 30px
-    And labels and inputs each take full width
+- **GIVEN** the form is displayed
+- **THEN** the "Message" label is shown
+- **AND** the textarea has placeholder "Message sent to the employer"
+- **AND** the textarea has a minimum height of 120px
 
-  Scenario: Card footer has proper spacing
-    Given the card footer is visible
-    Then the footer has padding 50px 55px (30px on mobile)
-    And the submit button is rendered inside the footer
-```
+#### Scenario: Upload CV file picker works
+
+- **GIVEN** the form is displayed
+- **THEN** the "Upload CV" label is shown
+- **AND** a "Choose file" button is visible (styled label)
+- **AND** "No file chosen" info text is shown
+- **AND** description text reads "Upload your CV/Resume or any other relevant file. Max file size 50 MB"
+- **WHEN** the user clicks "Choose file"
+- **THEN** the native file picker opens
+
+#### Scenario: Input focus creates lift effect
+
+- **GIVEN** any text input in the form
+- **WHEN** the user focuses the input
+- **THEN** a subtle box-shadow appears (rgba(0,0,0,0.15))
+- **AND** the input lifts 3px upward (translateY(-3px))
+
+#### Scenario: Submit button renders with blue styling
+
+- **GIVEN** the form card footer is visible
+- **THEN** the "Send Application" button is blue (#2c6ed5)
+- **AND** the button has 5px border radius
+- **AND** the button text is white, bold, 15px
+- **WHEN** the user hovers the button
+- **THEN** the button darkens to #185ac1
+
+#### Scenario: Form rows have consistent spacing and borders
+
+- **GIVEN** the form is displayed
+- **THEN** each form row has padding 24px 55px
+- **AND** each form row has a bottom border (#e5e5e5)
+
+#### Scenario: Responsive layout stacks fields vertically on mobile
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** form rows stack vertically (block layout)
+- **AND** form row padding reduces to 24px 30px
+- **AND** labels and inputs each take full width
+
+#### Scenario: Card footer has proper spacing
+
+- **GIVEN** the card footer is visible
+- **THEN** the footer has padding 50px 55px (30px on mobile)
+- **AND** the submit button is rendered inside the footer
 
 ## Verification checklist
 

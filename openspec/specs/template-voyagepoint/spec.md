@@ -55,82 +55,95 @@ The template is a travel/tourism booking site with:
 9. **Blog** — dark blue gradient background, 2-column blog cards with images, date badge, title, excerpt, "Read more" link.
 10. **Footer** — dark background with logo, quick links, recent products, support links, copyright.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: VoyagePoint — Travel Template
 
 #### Scenario: Page renders all sections in order
-Given a user visits the VoyagePoint homepage
-Then they see the following sections in order: TopBar, Navbar, Hero, Services, FeaturedTours, Video, AboutCompany, Testimonials, Blog, Footer
+
+- **GIVEN** a user visits the VoyagePoint homepage
+- **THEN** they see the following sections in order: TopBar, Navbar, Hero, Services, FeaturedTours, Video, AboutCompany, Testimonials, Blog, Footer
 
 #### Scenario: Top bar displays contact info
-Given the TopBar is visible
-Then it shows an email address, phone number, and address
-And social media icon links are on the right side
-And the background color is deep navy blue
+
+- **GIVEN** the TopBar is visible
+- **THEN** it shows an email address, phone number, and address
+- **AND** social media icon links are on the right side
+- **AND** the background color is deep navy blue
 
 #### Scenario: Navbar has correct links
-Given the Navbar is visible
-Then it shows the VoyagePoint logo on the left
-And navigation links: Home, About Us, Package, Blog, Pages, Contact Us
-And the background is white
+
+- **GIVEN** the Navbar is visible
+- **THEN** it shows the VoyagePoint logo on the left
+- **AND** navigation links: Home, About Us, Package, Blog, Pages, Contact Us
+- **AND** the background is white
 
 #### Scenario: Hero section has search form
-Given the Hero section is visible
-Then it displays a large heading with script-style accent text
-And a subtitle text
-And a search form with destination input, date input, and search button
-And the search button has gold/yellow color
+
+- **GIVEN** the Hero section is visible
+- **THEN** it displays a large heading with script-style accent text
+- **AND** a subtitle text
+- **AND** a search form with destination input, date input, and search button
+- **AND** the search button has gold/yellow color
 
 #### Scenario: Services section shows 4 stats
-Given the Services section is visible
-Then 4 stat cards are displayed in a row
-And each card has an icon, a number/stat, and a description
+
+- **GIVEN** the Services section is visible
+- **THEN** 4 stat cards are displayed in a row
+- **AND** each card has an icon, a number/stat, and a description
 
 #### Scenario: Featured Tours shows tour cards
-Given the FeaturedTours section is visible
-Then section title reads "FEATURED TOURS Packages"
-And at least 4 tour cards are displayed
-And each card shows an image, rating badge, title, price, duration, and location
+
+- **GIVEN** the FeaturedTours section is visible
+- **THEN** section title reads "FEATURED TOURS Packages"
+- **AND** at least 4 tour cards are displayed
+- **AND** each card shows an image, rating badge, title, price, duration, and location
 
 #### Scenario: Video section has play button
-Given the Video section is visible
-Then a landscape image is shown with a play button overlay
-And descriptive text appears alongside
-And a company description with checkmark list
+
+- **GIVEN** the Video section is visible
+- **THEN** a landscape image is shown with a play button overlay
+- **AND** descriptive text appears alongside
+- **AND** a company description with checkmark list
 
 #### Scenario: About Company section
-Given the AboutCompany section is visible
-Then it shows company description text
-And a checklist of features/benefits
-And an image on the right side
+
+- **GIVEN** the AboutCompany section is visible
+- **THEN** it shows company description text
+- **AND** a checklist of features/benefits
+- **AND** an image on the right side
 
 #### Scenario: Testimonials slider
-Given the Testimonials section is visible
-Then a testimonial quote is displayed
-And the author name and avatar are shown
+
+- **GIVEN** the Testimonials section is visible
+- **THEN** a testimonial quote is displayed
+- **AND** the author name and avatar are shown
 
 #### Scenario: Blog section
-Given the Blog section is visible
-Then it has a dark blue gradient background
-And blog post cards show image, date, title, excerpt, and "Read more" link
+
+- **GIVEN** the Blog section is visible
+- **THEN** it has a dark blue gradient background
+- **AND** blog post cards show image, date, title, excerpt, and "Read more" link
 
 #### Scenario: Footer
-Given the Footer is visible
-Then it contains the VoyagePoint logo
-And quick links, products, and support sections
-And a copyright line
-And a link to Component Dock (https://www.componentdock.com/)
+
+- **GIVEN** the Footer is visible
+- **THEN** it contains the VoyagePoint logo
+- **AND** quick links, products, and support sections
+- **AND** a copyright line
+- **AND** a link to Component Dock (https://www.componentdock.com/)
 
 #### Scenario: Responsive layout
-Given a user visits on mobile viewport
-Then the navbar collapses to a hamburger menu
-And sections stack vertically
-And the hero search form stacks inputs vertically
+
+- **GIVEN** a user visits on mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the hero search form stacks inputs vertically
 
 #### Scenario: Footer links to Component Dock
-Given the Footer is visible
-Then it contains a link to https://www.componentdock.com/
+
+- **GIVEN** the Footer is visible
+- **THEN** it contains a link to https://www.componentdock.com/
 
 ## Verification Checklist
 

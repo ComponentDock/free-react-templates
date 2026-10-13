@@ -93,108 +93,108 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
     - Have a Questions?: address, phone, email
     - Copyright bar at bottom with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Motorpath Car Rental Template
 
 #### Scenario: Navbar renders correctly
 
-Given the page loads
-Then the navbar displays the "Motorpath" brand logo
-And the logo "Motor" is in white and "path" is in orange
-And navigation links are visible: Home, About, Pricing, Our Car, Blog, Contact
-And the navbar has a dark (black) background
-And the navbar is responsive with a hamburger menu on mobile
+- **GIVEN** the page loads
+- **THEN** the navbar displays the "Motorpath" brand logo
+- **AND** the logo "Motor" is in white and "path" is in orange
+- **AND** navigation links are visible: Home, About, Pricing, Our Car, Blog, Contact
+- **AND** the navbar has a dark (black) background
+- **AND** the navbar is responsive with a hamburger menu on mobile
 
 #### Scenario: Hero section displays with booking form
 
-Given the page loads
-Then the hero section shows a full-width background image with a dark overlay
-And a heading reads "Now It's easy for you rent a car"
-And a subtext paragraph is visible below the heading
-And a video play link with circular icon is present
-And a booking form "Make your trip" is on the right side
-And the form contains pick-up location input
-And the form contains drop-off location input
-And the form contains pick-up date input
-And the form contains drop-off date input
-And the form contains pick-up time input
-And a "Search Vehicle" orange CTA button is visible
+- **GIVEN** the page loads
+- **THEN** the hero section shows a full-width background image with a dark overlay
+- **AND** a heading reads "Now It's easy for you rent a car"
+- **AND** a subtext paragraph is visible below the heading
+- **AND** a video play link with circular icon is present
+- **AND** a booking form "Make your trip" is on the right side
+- **AND** the form contains pick-up location input
+- **AND** the form contains drop-off location input
+- **AND** the form contains pick-up date input
+- **AND** the form contains drop-off date input
+- **AND** the form contains pick-up time input
+- **AND** a "Search Vehicle" orange CTA button is visible
 
 #### Scenario: Search filter bar renders below hero
 
-Given the page loads
-Then a horizontal search filter bar is visible below the hero
-And it contains Model select dropdown
-And it contains Brand select dropdown
-And it contains Year select dropdown
-And it contains Price Limit select dropdown
-And a "Search" orange button is present
+- **GIVEN** the page loads
+- **THEN** a horizontal search filter bar is visible below the hero
+- **AND** it contains Model select dropdown
+- **AND** it contains Brand select dropdown
+- **AND** it contains Year select dropdown
+- **AND** it contains Price Limit select dropdown
+- **AND** a "Search" orange button is present
 
 #### Scenario: Services section displays 4 service cards
 
-Given the page loads
-Then the "Our Services" heading is visible
-And 4 service cards are displayed in a row
-And each card has an icon, title, and description text
-And the services are: 24/7 Car Support, Lots of location, Reservation, Rental Cars
+- **GIVEN** the page loads
+- **THEN** the "Our Services" heading is visible
+- **AND** 4 service cards are displayed in a row
+- **AND** each card has an icon, title, and description text
+- **AND** the services are: 24/7 Car Support, Lots of location, Reservation, Rental Cars
 
 #### Scenario: Car fleet section displays 4 car cards
 
-Given the page loads
-Then the "Choose Your Car" heading is visible
-And 4 car cards are displayed in a grid
-And each card shows a car image with a price badge overlay
-And each card shows a car name and brand
-And each card has "Book now" and "Details" black buttons
+- **GIVEN** the page loads
+- **THEN** the "Choose Your Car" heading is visible
+- **AND** 4 car cards are displayed in a grid
+- **AND** each card shows a car image with a price badge overlay
+- **AND** each card shows a car name and brand
+- **AND** each card has "Book now" and "Details" black buttons
 
 #### Scenario: How It Works section displays on parallax background
 
-Given the page loads
-Then the "How it works" heading is visible on a parallax background image with dark overlay
-And white text is used for the heading
-And 4 steps are displayed: Pick Destination, Select Term, Choose A Car, Drive Off
-And each step has an icon, title, and description
+- **GIVEN** the page loads
+- **THEN** the "How it works" heading is visible on a parallax background image with dark overlay
+- **AND** white text is used for the heading
+- **AND** 4 steps are displayed: Pick Destination, Select Term, Choose A Car, Drive Off
+- **AND** each step has an icon, title, and description
 
 #### Scenario: Testimonials carousel displays
 
-Given the page loads
-Then a testimonials carousel is visible
-And each testimonial shows a customer photo, name, role, and quote
-And the carousel auto-scrolls through testimonials
+- **GIVEN** the page loads
+- **THEN** a testimonials carousel is visible
+- **AND** each testimonial shows a customer photo, name, role, and quote
+- **AND** the carousel auto-scrolls through testimonials
 
 #### Scenario: About Us section displays
 
-Given the page loads
-Then the "About us" heading is visible
-And the "Choose A Perfect Car" subheading is visible
-And descriptive paragraphs are present
-And an "Search Vehicle" orange CTA button is visible
+- **GIVEN** the page loads
+- **THEN** the "About us" heading is visible
+- **AND** the "Choose A Perfect Car" subheading is visible
+- **AND** descriptive paragraphs are present
+- **AND** an "Search Vehicle" orange CTA button is visible
 
 #### Scenario: Blog section displays 3 blog cards
 
-Given the page loads
-Then the "Recent Blog" heading is visible
-And 3 blog post cards are displayed
-And each card has a featured image, date, admin name, comment count
-And each card has a title and excerpt text
+- **GIVEN** the page loads
+- **THEN** the "Recent Blog" heading is visible
+- **AND** 3 blog post cards are displayed
+- **AND** each card has a featured image, date, admin name, comment count
+- **AND** each card has a title and excerpt text
 
 #### Scenario: Footer renders with 4 columns
 
-Given the page loads
-Then the footer has a solid black background
-And an "About Motorpath" column with description and social icons is visible
-And an "Information" column with link list is visible
-And a "Customer Support" column with link list is visible
-And a "Have a Questions?" column with address, phone, and email is visible
-And a copyright bar with Component Dock link is at the bottom
+- **GIVEN** the page loads
+- **THEN** the footer has a solid black background
+- **AND** an "About Motorpath" column with description and social icons is visible
+- **AND** an "Information" column with link list is visible
+- **AND** a "Customer Support" column with link list is visible
+- **AND** a "Have a Questions?" column with address, phone, and email is visible
+- **AND** a copyright bar with Component Dock link is at the bottom
 
 #### Scenario: Footer contains Component Dock attribution
 
-Given the page loads
-Then the footer copyright includes a link to https://www.componentdock.com/
-And the link text references "Component Dock"
-And no ColorLib attribution links are present in the footer
+- **GIVEN** the page loads
+- **THEN** the footer copyright includes a link to https://www.componentdock.com/
+- **AND** the link text references "Component Dock"
+- **AND** no ColorLib attribution links are present in the footer
 
 ## Verification Checklist
 

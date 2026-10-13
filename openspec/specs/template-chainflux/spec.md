@@ -50,97 +50,113 @@ Recreation of ColorLib "Cryptian" template.
 15. **Community** — "Our Community" heading, grid of social media icons (Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr)
 16. **Footer** — 4 columns: logo + description + copyright, navigation links, secondary links, newsletter subscription form
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: ChainFlux template behaviour
+
 Feature: ChainFlux cryptocurrency/ICO landing template
 
-  Background:
-    Given the user opens the ChainFlux template
+Background:
+- **GIVEN** the user opens the ChainFlux template
 
-  Scenario: Navbar renders correctly
-    Then the navbar has a transparent background overlaying the hero
-    And the logo is displayed on the left
-    And navigation links include Home, About, White Paper, Token Sale, Roadmap, Team, APP, FAQ, Contact
-    And a gradient "login" button is on the right
-    And a mobile hamburger menu exists
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays
-    Then an animated particle background is visible
-    And a heading about ICO/blockchain agency is displayed
-    And a descriptive subtext line is shown
-    And an illustration/image is on the right side
-    And two gradient CTA buttons are present ("Register for the ICO" and "Download Whitepaper")
+- **THEN** the navbar has a transparent background overlaying the hero
+- **AND** the logo is displayed on the left
+- **AND** navigation links include Home, About, White Paper, Token Sale, Roadmap, Team, APP, FAQ, Contact
+- **AND** a gradient "login" button is on the right
+- **AND** a mobile hamburger menu exists
 
-  Scenario: Featured In section displays
-    Then a carousel of partner logos is visible
+#### Scenario: Hero section displays
 
-  Scenario: About section displays
-    Then a split layout with image on left and text on right is shown
-    And the heading reads "A Platform for Exchange Cryptocurrency and shares"
-    And a "join us on telegraph" gradient button is present
+- **THEN** an animated particle background is visible
+- **AND** a heading about ICO/blockchain agency is displayed
+- **AND** a descriptive subtext line is shown
+- **AND** an illustration/image is on the right side
+- **AND** two gradient CTA buttons are present ("Register for the ICO" and "Download Whitepaper")
 
-  Scenario: Features section displays
-    Then 3 feature cards are shown in a row
-    And each card has an icon, title, and description
-    And the titles are "Exciting Opportunity", "Vetted ICO Marketplace", "Diverse Profit Ways"
+#### Scenario: Featured In section displays
 
-  Scenario: ICO Live Now section displays
-    Then token sale statistics are shown (Token Sold count, ETH/BTC/LTH collected)
-    And a countdown timer with days, hours, minutes, seconds is visible
-    And a progress bar showing soft cap to max cap is displayed
-    And a "Buy Tokens" button is present
+- **THEN** a carousel of partner logos is visible
 
-  Scenario: Whitepaper section displays
-    Then a "Download Documentation" heading is visible
-    And 5 language buttons with flags are shown (English, Spanish, Russian, Arabic, Portuguese)
+#### Scenario: About section displays
 
-  Scenario: Token Distribution section displays
-    Then an "initial distribution" heading is shown
-    And a pie chart with 4 segments is displayed
-    And the legend shows: Build Up Team 15%, ICO Investors 50%, Branding & Marketing 25%, Bounty 10%
+- **THEN** a split layout with image on left and text on right is shown
+- **AND** the heading reads "A Platform for Exchange Cryptocurrency and shares"
+- **AND** a "join us on telegraph" gradient button is present
 
-  Scenario: Token Sales Contribution section displays
-    Then a "Sale breakdown" heading is shown
-    And a second pie chart with 4 segments is displayed
-    And the legend shows: HR & Development 40%, Branding & Marketing 30%, Possible Buyout 20%, Legal Advisory 10%
+#### Scenario: Features section displays
 
-  Scenario: Roadmap section displays
-    Then a "Development Roadmap" heading is visible
-    And a timeline carousel with alternating left/right items is shown
-    And each item has a date, title, and description
+- **THEN** 3 feature cards are shown in a row
+- **AND** each card has an icon, title, and description
+- **AND** the titles are "Exciting Opportunity", "Vetted ICO Marketplace", "Diverse Profit Ways"
 
-  Scenario: Core Team section displays
-    Then an "Our Superman" heading is visible
-    And 4 team member cards are shown in a row
-    And each card has a photo, name, role, and social icons
+#### Scenario: ICO Live Now section displays
 
-  Scenario: Advisory Board section displays
-    Then an "Advisory Board" heading is visible
-    And 5 advisor cards are shown in a row
+- **THEN** token sale statistics are shown (Token Sold count, ETH/BTC/LTH collected)
+- **AND** a countdown timer with days, hours, minutes, seconds is visible
+- **AND** a progress bar showing soft cap to max cap is displayed
+- **AND** a "Buy Tokens" button is present
 
-  Scenario: Mobile App section displays
-    Then a "Track from Anywhere" heading is visible
-    And a description text is shown
-    And Google Play and Apple App Store buttons are present
-    And a phone mockup image is on the right
+#### Scenario: Whitepaper section displays
 
-  Scenario: FAQ section displays
-    Then tabbed navigation with 4 tabs is shown (General Questions, ICO, Token, Cryptocurrency)
-    And FAQ cards with questions and "readmore" links are displayed in a carousel
+- **THEN** a "Download Documentation" heading is visible
+- **AND** 5 language buttons with flags are shown (English, Spanish, Russian, Arabic, Portuguese)
 
-  Scenario: Community section displays
-    Then a grid of social media icons is shown
-    And icons include Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr
+#### Scenario: Token Distribution section displays
 
-  Scenario: Footer renders correctly
-    Then a 4-column footer layout is present
-    And column 1 has logo, description, and copyright
-    And column 2 has navigation links (About, Token Sale, Roadmap, Contact)
-    And column 3 has secondary links (White Paper, Team, APP, FAQ)
-    And column 4 has a newsletter subscription form
-    And a link to Component Dock is present
-```
+- **THEN** an "initial distribution" heading is shown
+- **AND** a pie chart with 4 segments is displayed
+- **AND** the legend shows: Build Up Team 15%, ICO Investors 50%, Branding & Marketing 25%, Bounty 10%
+
+#### Scenario: Token Sales Contribution section displays
+
+- **THEN** a "Sale breakdown" heading is shown
+- **AND** a second pie chart with 4 segments is displayed
+- **AND** the legend shows: HR & Development 40%, Branding & Marketing 30%, Possible Buyout 20%, Legal Advisory 10%
+
+#### Scenario: Roadmap section displays
+
+- **THEN** a "Development Roadmap" heading is visible
+- **AND** a timeline carousel with alternating left/right items is shown
+- **AND** each item has a date, title, and description
+
+#### Scenario: Core Team section displays
+
+- **THEN** an "Our Superman" heading is visible
+- **AND** 4 team member cards are shown in a row
+- **AND** each card has a photo, name, role, and social icons
+
+#### Scenario: Advisory Board section displays
+
+- **THEN** an "Advisory Board" heading is visible
+- **AND** 5 advisor cards are shown in a row
+
+#### Scenario: Mobile App section displays
+
+- **THEN** a "Track from Anywhere" heading is visible
+- **AND** a description text is shown
+- **AND** Google Play and Apple App Store buttons are present
+- **AND** a phone mockup image is on the right
+
+#### Scenario: FAQ section displays
+
+- **THEN** tabbed navigation with 4 tabs is shown (General Questions, ICO, Token, Cryptocurrency)
+- **AND** FAQ cards with questions and "readmore" links are displayed in a carousel
+
+#### Scenario: Community section displays
+
+- **THEN** a grid of social media icons is shown
+- **AND** icons include Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr
+
+#### Scenario: Footer renders correctly
+
+- **THEN** a 4-column footer layout is present
+- **AND** column 1 has logo, description, and copyright
+- **AND** column 2 has navigation links (About, Token Sale, Roadmap, Contact)
+- **AND** column 3 has secondary links (White Paper, Team, APP, FAQ)
+- **AND** column 4 has a newsletter subscription form
+- **AND** a link to Component Dock is present
 
 ## Verification checklist
 

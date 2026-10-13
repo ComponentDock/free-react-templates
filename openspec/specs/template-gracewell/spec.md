@@ -92,69 +92,78 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`).
     - Instagram feed widget
     - Footer bottom with copyright + social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-  Scenario: Fixed navigation bar
-    Given the user loads the page
-    Then a fixed navbar is visible at the top
-    And the navbar contains the logo on the left
-    And the navbar contains navigation links
-    And a "Donate Now" button is visible in the navbar
-    And the navbar has a white background
+#### Scenario: Fixed navigation bar
 
-  Scenario: Navbar scroll behavior
-    Given the user scrolls down the page
-    Then the navbar remains fixed at the top of the viewport
+- **GIVEN** the user loads the page
+- **THEN** a fixed navbar is visible at the top
+- **AND** the navbar contains the logo on the left
+- **AND** the navbar contains navigation links
+- **AND** a "Donate Now" button is visible in the navbar
+- **AND** the navbar has a white background
+
+#### Scenario: Navbar scroll behavior
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar remains fixed at the top of the viewport
 
 ### Feature: Hero Banner
 
-  Scenario: Full-width parallax banner
-    Given the user is on the landing page
-    Then a full-width banner with parallax background is displayed
-    And the banner has a dark overlay
-    And the banner contains the heading "We need your Help to serve the people"
-    And a "Donate Now" CTA button is centered below the heading
+#### Scenario: Full-width parallax banner
 
-  Scenario: Hero CTA interaction
-    Given the user sees the banner
-    When the user clicks "Donate Now"
-    Then the page scrolls to the donation section
+- **GIVEN** the user is on the landing page
+- **THEN** a full-width banner with parallax background is displayed
+- **AND** the banner has a dark overlay
+- **AND** the banner contains the heading "We need your Help to serve the people"
+- **AND** a "Donate Now" CTA button is centered below the heading
+
+#### Scenario: Hero CTA interaction
+
+- **GIVEN** the user sees the banner
+- **WHEN** the user clicks "Donate Now"
+- **THEN** the page scrolls to the donation section
 
 ### Feature: Donation Stats
 
-  Scenario: Three stat cards displayed
-    Given the user views the donation area
-    Then three stat cards are shown in a row
-    And the first card has a yellow accent
-    And the second card has a pink accent with "Total Donation" and "$2.5M"
-    And the third card has a green accent with "Total Volunteers" and "3268"
+#### Scenario: Three stat cards displayed
 
-  Scenario: Stat card content
-    Given a donation stat card is visible
-    Then it displays an icon on the left
-    And it displays a stat title and value on the right
+- **GIVEN** the user views the donation area
+- **THEN** three stat cards are shown in a row
+- **AND** the first card has a yellow accent
+- **AND** the second card has a pink accent with "Total Donation" and "$2.5M"
+- **AND** the third card has a green accent with "Total Volunteers" and "3268"
+
+#### Scenario: Stat card content
+
+- **GIVEN** a donation stat card is visible
+- **THEN** it displays an icon on the left
+- **AND** it displays a stat title and value on the right
 
 ### Feature: Welcome Section
 
-  Scenario: Welcome content displayed
-    Given the user scrolls to the welcome section
-    Then a "Welcome to Kindity" heading is shown (replaced with GraceWell)
-    And a descriptive paragraph accompanies the heading
-    And a welcome image appears on the right side
+#### Scenario: Welcome content displayed
 
-  Scenario: Welcome counters
-    Given the welcome section is visible
-    Then three counter stats are displayed below the text
-    And the counters show numeric values (e.g., 2.5M, 1465, 3965)
+- **GIVEN** the user scrolls to the welcome section
+- **THEN** a "Welcome to Kindity" heading is shown (replaced with GraceWell)
+- **AND** a descriptive paragraph accompanies the heading
+- **AND** a welcome image appears on the right side
+
+#### Scenario: Welcome counters
+
+- **GIVEN** the welcome section is visible
+- **THEN** three counter stats are displayed below the text
+- **AND** the counters show numeric values (e.g., 2.5M, 1465, 3965)
 
 ### Feature: Causes Section
 
-  Scenario: Causes card grid
-    Given the user views the causes section
-    Then a "Our Major Causes" heading is displayed
-    And three cause cards are shown in a row
+#### Scenario: Causes card grid
+
+- **GIVEN** the user views the causes section
+- **THEN** a "Our Major Causes" heading is displayed
+- **AND** three cause cards are shown in a row
     Each cause card contains:
       | element     | detail                              |
       | image       | top of card, with overlay           |
@@ -162,54 +171,61 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`).
       | title       | cause name                          |
       | description | short blurb                         |
 
-  Scenario: Cause card hover
-    Given a cause card is displayed
-    When the user hovers over the card
-    Then the card shows a hover effect (overlay/icon transition)
+#### Scenario: Cause card hover
+
+- **GIVEN** a cause card is displayed
+- **WHEN** the user hovers over the card
+- **THEN** the card shows a hover effect (overlay/icon transition)
 
 ### Feature: Features Section (Dark)
 
-  Scenario: Features on dark background
-    Given the user scrolls to the features section
-    Then the section has a dark navy background (#04091e)
-    And the text is white or light colored
-    And feature items are displayed in a grid
+#### Scenario: Features on dark background
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** the section has a dark navy background (#04091e)
+- **AND** the text is white or light colored
+- **AND** feature items are displayed in a grid
 
 ### Feature: Events Section
 
-  Scenario: Events listing
-    Given the user views the events section
-    Then event items are displayed
+#### Scenario: Events listing
+
+- **GIVEN** the user views the events section
+- **THEN** event items are displayed
     Each event item contains a date, title, and description
 
 ### Feature: Testimonials Section
 
-  Scenario: Testimonials display
-    Given the user views the testimonials section
-    Then the section has a light background (#f9f9ff)
-    And testimonial quotes are displayed
+#### Scenario: Testimonials display
+
+- **GIVEN** the user views the testimonials section
+- **THEN** the section has a light background (#f9f9ff)
+- **AND** testimonial quotes are displayed
     Each testimonial includes a client photo and name
 
 ### Feature: Clients Logos
 
-  Scenario: Client logo carousel
-    Given the user views the clients section
-    Then a row of client/partner logos is displayed
+#### Scenario: Client logo carousel
+
+- **GIVEN** the user views the clients section
+- **THEN** a row of client/partner logos is displayed
     The logos are grayscale or low-opacity by default
 
 ### Feature: Footer
 
-  Scenario: Dark footer layout
-    Given the user scrolls to the footer
-    Then the footer has a dark navy background (#04091e)
-    And the footer contains multiple columns (about, links, newsletter, social)
-    And an Instagram feed widget is present
-    And the footer bottom contains copyright text
-    And the footer links to Component Dock
+#### Scenario: Dark footer layout
 
-  Scenario: Footer newsletter signup
-    Given the footer is visible
-    Then an email input and submit button are present for newsletter signup
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark navy background (#04091e)
+- **AND** the footer contains multiple columns (about, links, newsletter, social)
+- **AND** an Instagram feed widget is present
+- **AND** the footer bottom contains copyright text
+- **AND** the footer links to Component Dock
+
+#### Scenario: Footer newsletter signup
+
+- **GIVEN** the footer is visible
+- **THEN** an email input and submit button are present for newsletter signup
 
 ## Verification checklist
 

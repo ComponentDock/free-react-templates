@@ -2,6 +2,12 @@
 
 > Recreation of ColorLib "Phozogy" (https://colorlib.com/wp/template/phozogy/)
 
+## Purpose
+
+Capturelab is a photography studio landing page with a hero slider, service cards, a category carousel and a filterable masonry portfolio grid.
+
+It recreates the ColorLib **Phozogy** design (https://colorlib.com/wp/template/phozogy/, preview: https://preview.colorlib.com/theme/phozogy/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (from preview DOM + CSS analysis)
 
 - **Primary/accent color:** `#009603` (green) — buttons, active nav, hover states
@@ -22,68 +28,75 @@
 5. **Portfolio** — "Our latest works" title, filter tabs (All, Fashion, Lifestyle, Natural, Wedding, Videos), masonry grid of portfolio items with image overlay, magnific-popup lightbox, and hover text ("COLORS SPEAK" + category). Some items have `large-width` or `large-height` classes for varied sizes
 6. **Footer** — 4-column: (1) logo + description + social icons, (2) Instagram thumbnail grid (3 images), (3) quick links (Home, About, Contact, Gallery, Portfolio, Services), (4) subscribe form with email input + send button. Copyright bar at bottom with Component Dock link
 
-## Scenarios
+## Requirements
 
 ### Gherkin requirements
 
-```gherkin
 Feature: Capturelab Photography Studio
 
-  Scenario: Navbar renders all navigation links
-    Given I visit the Capturelab page
-    Then I see the logo
-    And I see links: Home, About, Services, Pricing, Portfolio, Blog, Contact
-    And I see a "Pages" dropdown menu
-    And I see a search icon
+#### Scenario: Navbar renders all navigation links
 
-  Scenario: Mobile menu opens and closes
-    Given I visit the Capturelab page on mobile
-    When I click the hamburger menu icon
-    Then I see the mobile navigation links
-    When I click "Close menu"
-    Then the mobile navigation is hidden
+- **GIVEN** I visit the Capturelab page
+- **THEN** I see the logo
+- **AND** I see links: Home, About, Services, Pricing, Portfolio, Blog, Contact
+- **AND** I see a "Pages" dropdown menu
+- **AND** I see a search icon
 
-  Scenario: Hero slider auto-advances
-    Given I visit the Capturelab page
-    Then I see "Photography Studio" heading on slide 1
-    When I wait for the slider to advance
-    Then I see "Photography Studio" heading on slide 2
+#### Scenario: Mobile menu opens and closes
 
-  Scenario: Hero slider has Contact us CTA
-    Given I visit the Capturelab page
-    Then I see a "Contact us" button on the hero
+- **GIVEN** I visit the Capturelab page on mobile
+- **WHEN** I click the hamburger menu icon
+- **THEN** I see the mobile navigation links
+- **WHEN** I click "Close menu"
+- **THEN** the mobile navigation is hidden
 
-  Scenario: Services section shows 3 service cards
-    Given I visit the Capturelab page
-    Then I see 3 service cards: Shooting, Videos, Editing
-    And each card has an image and description
+#### Scenario: Hero slider auto-advances
 
-  Scenario: Categories section shows category carousel
-    Given I visit the Capturelab page
-    Then I see a "Categories" heading
-    And I see category items with names and picture counts
-    And I see a "View all" button
+- **GIVEN** I visit the Capturelab page
+- **THEN** I see "Photography Studio" heading on slide 1
+- **WHEN** I wait for the slider to advance
+- **THEN** I see "Photography Studio" heading on slide 2
 
-  Scenario: Portfolio section shows filterable grid
-    Given I visit the Capturelab page
-    Then I see "Our latest works" heading
-    And I see filter tabs: All, Fashion, Lifestyle, Natural, Wedding, Videos
-    And I see portfolio grid items with images and overlay text
-    And clicking a filter tab shows only matching items
+#### Scenario: Hero slider has Contact us CTA
 
-  Scenario: Portfolio items show hover overlay
-    Given I visit the Capturelab page
-    When I hover over a portfolio item
-    Then I see a "+" icon and text overlay with title and category
+- **GIVEN** I visit the Capturelab page
+- **THEN** I see a "Contact us" button on the hero
 
-  Scenario: Footer renders all columns
-    Given I visit the Capturelab page
-    Then I see 4 footer columns
-    And I see social media icons (Facebook, Twitter, YouTube, Instagram)
-    And I see an email subscribe form
-    And I see quick links (Home, About, Contact, Gallery, Portfolio, Services)
-    And I see a "Component Dock" link in the copyright area
-```
+#### Scenario: Services section shows 3 service cards
+
+- **GIVEN** I visit the Capturelab page
+- **THEN** I see 3 service cards: Shooting, Videos, Editing
+- **AND** each card has an image and description
+
+#### Scenario: Categories section shows category carousel
+
+- **GIVEN** I visit the Capturelab page
+- **THEN** I see a "Categories" heading
+- **AND** I see category items with names and picture counts
+- **AND** I see a "View all" button
+
+#### Scenario: Portfolio section shows filterable grid
+
+- **GIVEN** I visit the Capturelab page
+- **THEN** I see "Our latest works" heading
+- **AND** I see filter tabs: All, Fashion, Lifestyle, Natural, Wedding, Videos
+- **AND** I see portfolio grid items with images and overlay text
+- **AND** clicking a filter tab shows only matching items
+
+#### Scenario: Portfolio items show hover overlay
+
+- **GIVEN** I visit the Capturelab page
+- **WHEN** I hover over a portfolio item
+- **THEN** I see a "+" icon and text overlay with title and category
+
+#### Scenario: Footer renders all columns
+
+- **GIVEN** I visit the Capturelab page
+- **THEN** I see 4 footer columns
+- **AND** I see social media icons (Facebook, Twitter, YouTube, Instagram)
+- **AND** I see an email subscribe form
+- **AND** I see quick links (Home, About, Contact, Gallery, Portfolio, Services)
+- **AND** I see a "Component Dock" link in the copyright area
 
 ## Preview analysis notes
 

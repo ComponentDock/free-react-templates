@@ -100,169 +100,170 @@ The screenshot shows a dark magazine layout with:
   "Most Viewed News" with thumbnail items.
 - **Copyright bar:** Copyright text left, social media icons right.
 
-## Gherkin requirements
+## Requirements
 
 ### Hero Banner Area
 
-```gherkin
 Feature: Hero Banner Area
 
-  Scenario: Banner displays edge-to-edge with three columns
-    Given the page loads
-    Then the banner area spans full width with no container padding
-    And a left column (col-lg-3) shows 3 stacked article cards
-    And a center column (col-lg-6) shows a carousel with featured article
-    And a right column (col-lg-3) shows sidebar widgets
+#### Scenario: Banner displays edge-to-edge with three columns
 
-  Scenario: Left sidebar articles show image with overlay
-    Given the banner area is visible
-    Then each left sidebar article has a full-width image with dark overlay
-    And each article shows a category badge, date, and comment count
-    And each article has a title and excerpt paragraph
+- **GIVEN** the page loads
+- **THEN** the banner area spans full width with no container padding
+- **AND** a left column (col-lg-3) shows 3 stacked article cards
+- **AND** a center column (col-lg-6) shows a carousel with featured article
+- **AND** a right column (col-lg-3) shows sidebar widgets
 
-  Scenario: Center carousel shows featured article
-    Given the banner area is visible
-    Then the center carousel shows a large article with image overlay
-    And the article displays category badge, date, comment count
-    And the article shows a large title with <br> line break
-    And the article shows a paragraph excerpt
-    And a "read more" fill button is displayed below the excerpt
-    And carousel navigation arrows are visible at bottom-right
+#### Scenario: Left sidebar articles show image with overlay
 
-  Scenario: Right sidebar has weather and playlist widgets
-    Given the banner area is visible
-    Then a weather widget shows location, date, and temperature
-    And a "Recent Music Playlist" widget shows 3 numbered items
-    And each playlist item shows a lorem ipsum description
-```
+- **GIVEN** the banner area is visible
+- **THEN** each left sidebar article has a full-width image with dark overlay
+- **AND** each article shows a category badge, date, and comment count
+- **AND** each article has a title and excerpt paragraph
+
+#### Scenario: Center carousel shows featured article
+
+- **GIVEN** the banner area is visible
+- **THEN** the center carousel shows a large article with image overlay
+- **AND** the article displays category badge, date, comment count
+- **AND** the article shows a large title with <br> line break
+- **AND** the article shows a paragraph excerpt
+- **AND** a "read more" fill button is displayed below the excerpt
+- **AND** carousel navigation arrows are visible at bottom-right
+
+#### Scenario: Right sidebar has weather and playlist widgets
+
+- **GIVEN** the banner area is visible
+- **THEN** a weather widget shows location, date, and temperature
+- **AND** a "Recent Music Playlist" widget shows 3 numbered items
+- **AND** each playlist item shows a lorem ipsum description
 
 ### Navbar
 
-```gherkin
 Feature: Navigation Bar
 
-  Scenario: Navbar displays below banner
-    Given the page loads
-    Then a navigation bar is visible below the hero banner
-    And the navbar contains a logo with icon and "SMASHED" text
-    And the subtitle "MAGAZINE" appears below the logo text
+#### Scenario: Navbar displays below banner
 
-  Scenario: Navigation links are correct
-    Given the navbar is visible
-    Then the nav menu shows: Home, Archive, Category, Pages, Contact
-    And "Home" has the active state styling
-    And "Pages" has a dropdown with "Post Details" and "Elements"
-    And a search icon is visible on the right
+- **GIVEN** the page loads
+- **THEN** a navigation bar is visible below the hero banner
+- **AND** the navbar contains a logo with icon and "SMASHED" text
+- **AND** the subtitle "MAGAZINE" appears below the logo text
 
-  Scenario: Navbar has dark background
-    Given the navbar is visible
-    Then the navbar background matches the body dark theme (#252525 area)
-    And all nav text is white
-    And the active link uses the brand primary color (#ff1857)
-```
+#### Scenario: Navigation links are correct
+
+- **GIVEN** the navbar is visible
+- **THEN** the nav menu shows: Home, Archive, Category, Pages, Contact
+- **AND** "Home" has the active state styling
+- **AND** "Pages" has a dropdown with "Post Details" and "Elements"
+- **AND** a search icon is visible on the right
+
+#### Scenario: Navbar has dark background
+
+- **GIVEN** the navbar is visible
+- **THEN** the navbar background matches the body dark theme (#252525 area)
+- **AND** all nav text is white
+- **AND** the active link uses the brand primary color (#ff1857)
 
 ### Editors Area
 
-```gherkin
 Feature: Editors Picks Section
 
-  Scenario: Editors area displays 4-column grid
-    Given the page loads
-    Then the editors area section is visible
-    And it has a dark background (#2e2e2e)
-    And it contains 4 equal-width columns (col-lg-3)
+#### Scenario: Editors area displays 4-column grid
 
-  Scenario: Each editor pick shows article card
-    Given the editors area is visible
-    Then each column shows a single-post card
-    And each card has an image thumbnail
-    And each card shows a category badge, date, and comment count
-    And each card has a title and excerpt
-```
+- **GIVEN** the page loads
+- **THEN** the editors area section is visible
+- **AND** it has a dark background (#2e2e2e)
+- **AND** it contains 4 equal-width columns (col-lg-3)
+
+#### Scenario: Each editor pick shows article card
+
+- **GIVEN** the editors area is visible
+- **THEN** each column shows a single-post card
+- **AND** each card has an image thumbnail
+- **AND** each card shows a category badge, date, and comment count
+- **AND** each card has a title and excerpt
 
 ### International News Area
 
-```gherkin
 Feature: International News Section
 
-  Scenario: International news section displays correctly
-    Given the page loads
-    Then the international news section is visible
-    And it has a section title heading
-    And it shows a 3-column grid of news articles
-    And each article has image, category badge, date, title
-```
+#### Scenario: International news section displays correctly
+
+- **GIVEN** the page loads
+- **THEN** the international news section is visible
+- **AND** it has a section title heading
+- **AND** it shows a 3-column grid of news articles
+- **AND** each article has image, category badge, date, title
 
 ### Tech News Area
 
-```gherkin
 Feature: Tech News Section
 
-  Scenario: Tech news section displays correctly
-    Given the page loads
-    Then the tech news section is visible
-    And it has a section title heading
-    And it shows a 4-column grid of news articles
-    And each article has image, category badge, date, title
-```
+#### Scenario: Tech news section displays correctly
+
+- **GIVEN** the page loads
+- **THEN** the tech news section is visible
+- **AND** it has a section title heading
+- **AND** it shows a 4-column grid of news articles
+- **AND** each article has image, category badge, date, title
 
 ### Exclusive Video Area
 
-```gherkin
 Feature: Exclusive Video Section
 
-  Scenario: Video section displays correctly
-    Given the page loads
-    Then the exclusive video section is visible
-    And it has a section title heading
-    And it shows a 3-column grid of video articles
-    And each article has image, category badge, date, title
-```
+#### Scenario: Video section displays correctly
+
+- **GIVEN** the page loads
+- **THEN** the exclusive video section is visible
+- **AND** it has a section title heading
+- **AND** it shows a 3-column grid of video articles
+- **AND** each article has image, category badge, date, title
 
 ### Popular News Area
 
-```gherkin
 Feature: Popular News Section
 
-  Scenario: Popular news section displays correctly
-    Given the page loads
-    Then the popular news section is visible
-    And it has a section title heading
-    And it shows a multi-column grid of news articles
-    And each article has image, category badge, date, title
-```
+#### Scenario: Popular news section displays correctly
+
+- **GIVEN** the page loads
+- **THEN** the popular news section is visible
+- **AND** it has a section title heading
+- **AND** it shows a multi-column grid of news articles
+- **AND** each article has image, category badge, date, title
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer has three columns
-    Given the page loads
-    Then the footer area is visible
-    And column 1 shows the logo image and about paragraph
-    And column 2 shows "Quick Links" with two sub-columns of nav links
-    And column 3 shows "Most Viewed News" with 2 thumbnail items
+#### Scenario: Footer has three columns
 
-  Scenario: Footer quick links
-    Given the footer is visible
-    Then quick links include: Sitemaps, Categories, Archives, Advertise, Ad Choice
-    And a second column includes: Privacy Policy, Terms of Use, Help Center, Newsletters, Feedback
+- **GIVEN** the page loads
+- **THEN** the footer area is visible
+- **AND** column 1 shows the logo image and about paragraph
+- **AND** column 2 shows "Quick Links" with two sub-columns of nav links
+- **AND** column 3 shows "Most Viewed News" with 2 thumbnail items
 
-  Scenario: Footer most viewed news items
-    Given the footer is visible
-    Then each most-viewed item shows a thumbnail image
-    And each item has a title, date, and comment count
+#### Scenario: Footer quick links
 
-  Scenario: Copyright bar
-    Given the footer is visible
-    Then a copyright bar appears at the bottom
-    And it has a top border (#252525)
-    And copyright text is on the left
-    And social media icons are on the right
-    And links use brand primary color (#ff1857)
-    And footer MUST link https://www.componentdock.com/ (Component Dock)
-```
+- **GIVEN** the footer is visible
+- **THEN** quick links include: Sitemaps, Categories, Archives, Advertise, Ad Choice
+- **AND** a second column includes: Privacy Policy, Terms of Use, Help Center, Newsletters, Feedback
+
+#### Scenario: Footer most viewed news items
+
+- **GIVEN** the footer is visible
+- **THEN** each most-viewed item shows a thumbnail image
+- **AND** each item has a title, date, and comment count
+
+#### Scenario: Copyright bar
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright bar appears at the bottom
+- **AND** it has a top border (#252525)
+- **AND** copyright text is on the left
+- **AND** social media icons are on the right
+- **AND** links use brand primary color (#ff1857)
+- **AND** footer MUST link https://www.componentdock.com/ (Component Dock)
 
 ## Verification checklist
 

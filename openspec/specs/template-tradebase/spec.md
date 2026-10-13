@@ -48,83 +48,94 @@ Extracted from `css/style.css` of the ColorLib preview (fetched 2026-09-07):
 8. **Blog** — `section.blog_part`. Heading "Update From Blog". Blog post cards with images, titles, excerpts.
 9. **Footer** — `section.footer-area`. Multi-column footer with widgets, social links, and copyright bar.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Tradebase — business/corporate website
 
 #### Scenario: Page renders header with navigation
-- **Given** the user loads the page
-- **When** the header is visible
-- **Then** a logo is displayed
-- **And** navigation links are visible: Home, About, Blog, Contact
-- **And** the navbar is positioned at the top of the page
+
+- **GIVEN** the user loads the page
+- **WHEN** the header is visible
+- **THEN** a logo is displayed
+- **AND** navigation links are visible: Home, About, Blog, Contact
+- **AND** the navbar is positioned at the top of the page
 
 #### Scenario: Hero banner displays correctly
-- **Given** the user loads the page
-- **When** the banner section is visible
-- **Then** the heading "Lead from the front" (or equivalent) is displayed
-- **And** a subtitle/description text is shown below the heading
-- **And** a call-to-action button is visible
-- **And** the banner background is approximately `#f0eed4` (cream)
-- **And** the CTA button has a gradient background (orange tones)
+
+- **GIVEN** the user loads the page
+- **WHEN** the banner section is visible
+- **THEN** the heading "Lead from the front" (or equivalent) is displayed
+- **AND** a subtitle/description text is shown below the heading
+- **AND** a call-to-action button is visible
+- **AND** the banner background is approximately `#f0eed4` (cream)
+- **AND** the CTA button has a gradient background (orange tones)
 
 #### Scenario: CTA button has pill shape
-- **Given** the banner is visible
-- **When** the CTA button is inspected
-- **Then** it has a border-radius of approximately 50px (pill shape)
-- **And** it has white text on an orange gradient background
+
+- **GIVEN** the banner is visible
+- **WHEN** the CTA button is inspected
+- **THEN** it has a border-radius of approximately 50px (pill shape)
+- **AND** it has white text on an orange gradient background
 
 #### Scenario: About section renders
-- **Given** the user scrolls to the about section
-- **When** the about section is visible
-- **Then** a two-column layout is displayed (image + text)
-- **And** a heading and descriptive text are present
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the about section is visible
+- **THEN** a two-column layout is displayed (image + text)
+- **AND** a heading and descriptive text are present
 
 #### Scenario: Services section displays service cards
-- **Given** the user scrolls to the services section
-- **When** the services section is visible
-- **Then** the heading "We Provide Best Services" is displayed
-- **And** at least 3 service cards are shown in a grid
-- **And** each card has an icon, title, and description
-- **And** the section has a gray background
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the services section is visible
+- **THEN** the heading "We Provide Best Services" is displayed
+- **AND** at least 3 service cards are shown in a grid
+- **AND** each card has an icon, title, and description
+- **AND** the section has a gray background
 
 #### Scenario: Testimonials section displays reviews
-- **Given** the user scrolls to the testimonials section
-- **When** the testimonials section is visible
-- **Then** the heading "Customer Are Saying" is displayed
-- **And** testimonial cards show a name, role, and quote
-- **And** the testimonials are in a carousel/slider format
+
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the testimonials section is visible
+- **THEN** the heading "Customer Are Saying" is displayed
+- **AND** testimonial cards show a name, role, and quote
+- **AND** the testimonials are in a carousel/slider format
 
 #### Scenario: Portfolio section shows project cards
-- **Given** the user scrolls to the portfolio section
-- **When** the portfolio section is visible
-- **Then** project cards are displayed in a grid
-- **And** each card has an image, title, and description
+
+- **GIVEN** the user scrolls to the portfolio section
+- **WHEN** the portfolio section is visible
+- **THEN** project cards are displayed in a grid
+- **AND** each card has an image, title, and description
 
 #### Scenario: Blog section displays posts
-- **Given** the user scrolls to the blog section
-- **When** the blog section is visible
-- **Then** the heading "Update From Blog" is displayed
-- **And** blog post cards with images and titles are shown
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the blog section is visible
+- **THEN** the heading "Update From Blog" is displayed
+- **AND** blog post cards with images and titles are shown
 
 #### Scenario: Footer renders with Component Dock link
-- **Given** the user scrolls to the footer
-- **When** the footer is visible
-- **Then** it contains multiple columns with content
-- **And** a link to https://www.componentdock.com/ is present (branded as "Component Dock")
-- **And** a copyright notice is displayed
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** it contains multiple columns with content
+- **AND** a link to https://www.componentdock.com/ is present (branded as "Component Dock")
+- **AND** a copyright notice is displayed
 
 #### Scenario: Page is responsive
-- **Given** the user views the page on a mobile viewport (375px width)
-- **When** the page renders
-- **Then** the navbar collapses into a hamburger menu
-- **And** sections stack vertically
-- **And** buttons and text remain readable
+
+- **GIVEN** the user views the page on a mobile viewport (375px width)
+- **WHEN** the page renders
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** sections stack vertically
+- **AND** buttons and text remain readable
 
 #### Scenario: Orange gradient accent is consistent
-- **Given** the user views any section with accent styling
-- **When** accent elements are inspected
-- **Then** the gradient `linear-gradient(131deg, #feb47b, #ff7e5f)` is used on buttons and highlights
+
+- **GIVEN** the user views any section with accent styling
+- **WHEN** accent elements are inspected
+- **THEN** the gradient `linear-gradient(131deg, #feb47b, #ff7e5f)` is used on buttons and highlights
 
 ## Verification checklist
 

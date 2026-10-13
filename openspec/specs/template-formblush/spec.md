@@ -46,74 +46,87 @@ Extracted from the ColorLib screenshot (preview was unreachable):
    - **Social section** — "Sign up with social platforms" text + 4 social icons (Facebook, Instagram, Twitter, Tumblr) in pink-bordered circles.
 4. **Footer** — Component Dock attribution link (mandatory per conventions).
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: FormBlush template behaviour
+
 Feature: FormBlush sign-up form
 
-  Background:
-    Given the page is loaded at the root route
+Background:
+- **GIVEN** the page is loaded at the root route
 
-  Scenario: Full-page split layout renders
-    Then a full-viewport layout is visible
-    And the layout has a photo panel and a form panel
+#### Scenario: Full-page split layout renders
 
-  Scenario: Photo panel renders on desktop
-    Then the photo panel displays a decorative image
-    And the image covers the full panel height
+- **THEN** a full-viewport layout is visible
+- **AND** the layout has a photo panel and a form panel
 
-  Scenario: Form panel has pink background
-    Then the form panel has a pink background
+#### Scenario: Photo panel renders on desktop
 
-  Scenario: Sign Up heading renders
-    Then the heading reads "Sign Up"
-    And the heading uses a cursive font style
-    And a wavy underline decoration appears below the heading
+- **THEN** the photo panel displays a decorative image
+- **AND** the image covers the full panel height
 
-  Scenario: Username input renders
-    Then there is a username input with label "Username:"
-    And the input has a white background
+#### Scenario: Form panel has pink background
 
-  Scenario: Email input renders
-    Then there is an email input with label "E-mail:"
-    And the input has a white background
+- **THEN** the form panel has a pink background
 
-  Scenario: Password input renders
-    Then there is a password input with label "Password:"
-    And the input has a white background
+#### Scenario: Sign Up heading renders
 
-  Scenario: Submit button renders
-    Then there is a "Create My Account" button
-    And the button is pill-shaped (fully rounded)
-    And the button has a white background with pink text
-    And the button is full width
+- **THEN** the heading reads "Sign Up"
+- **AND** the heading uses a cursive font style
+- **AND** a wavy underline decoration appears below the heading
 
-  Scenario: Social platforms section renders
-    Then text "Sign up with social platforms" is visible
-    And there are four social media icon links
-    And the social icons are Facebook, Instagram, Twitter, and Tumblr
-    And each social icon is in a pink-bordered circle
+#### Scenario: Username input renders
 
-  Scenario: Social links open in new tabs
-    When the user clicks a social media icon
-    Then the link opens in a new tab
+- **THEN** there is a username input with label "Username:"
+- **AND** the input has a white background
 
-  Scenario: Form is interactive
-    When the user types "johndoe" in the username input
-    Then the username input shows "johndoe"
-    When the user types "john@example.com" in the email input
-    Then the email input shows "john@example.com"
-    When the user types "secret123" in the password input
-    Then the password input shows "secret123"
+#### Scenario: Email input renders
 
-  Scenario: Form submits without error
-    When the user clicks the "Create My Account" button
-    Then the form submits without crashing
+- **THEN** there is an email input with label "E-mail:"
+- **AND** the input has a white background
 
-  Scenario: Footer links to Component Dock
-    Then a footer link points to "https://www.componentdock.com/"
-    And the link text mentions "Component Dock"
-```
+#### Scenario: Password input renders
+
+- **THEN** there is a password input with label "Password:"
+- **AND** the input has a white background
+
+#### Scenario: Submit button renders
+
+- **THEN** there is a "Create My Account" button
+- **AND** the button is pill-shaped (fully rounded)
+- **AND** the button has a white background with pink text
+- **AND** the button is full width
+
+#### Scenario: Social platforms section renders
+
+- **THEN** text "Sign up with social platforms" is visible
+- **AND** there are four social media icon links
+- **AND** the social icons are Facebook, Instagram, Twitter, and Tumblr
+- **AND** each social icon is in a pink-bordered circle
+
+#### Scenario: Social links open in new tabs
+
+- **WHEN** the user clicks a social media icon
+- **THEN** the link opens in a new tab
+
+#### Scenario: Form is interactive
+
+- **WHEN** the user types "johndoe" in the username input
+- **THEN** the username input shows "johndoe"
+- **WHEN** the user types "john@example.com" in the email input
+- **THEN** the email input shows "john@example.com"
+- **WHEN** the user types "secret123" in the password input
+- **THEN** the password input shows "secret123"
+
+#### Scenario: Form submits without error
+
+- **WHEN** the user clicks the "Create My Account" button
+- **THEN** the form submits without crashing
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** a footer link points to "https://www.componentdock.com/"
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

@@ -14,13 +14,17 @@ Recreation of ColorLib **Accordion 11** (`https://colorlib.com/wp/template/accor
   - Font Family: Inter / system sans-serif (`font-sans`).
 - **Radii & Borders**: Rounded-xl (`0.75rem`) cards and collapsible panels with subtle slate-200 borders.
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Hero / Header Section
+
+#### Scenario: Hero / Header Section
 
 - **Scenario:** The page displays a prominent header section introducing the Ruche accordion collection with a title ("Ruche Interactive Accordions"), subtitle, and quick search or category filter.
 
 ### Requirement 2: Interactive Accordion Groups
+
+#### Scenario: Interactive Accordion Groups
 
 - **Scenario:** Multiple categorized accordion groups (e.g., General Information, Technical Specifications, Integration Guide, Billing & Support) are rendered.
 - **Scenario:** Each accordion item can be expanded/collapsed smoothly. Clicking an item toggles its open/closed state while maintaining proper accessibility attributes (`aria-expanded`, `aria-controls`).
@@ -28,9 +32,13 @@ Recreation of ColorLib **Accordion 11** (`https://colorlib.com/wp/template/accor
 
 ### Requirement 3: Interactive Playground / Customizer
 
+#### Scenario: Interactive Playground / Customizer
+
 - **Scenario:** A live customization panel allows users to toggle accordion variants (flush, bordered, separated, rounded), add icons, and test states instantly.
 
 ### Requirement 4: Footer Component
+
+#### Scenario: Footer Component
 
 - **Scenario:** The footer displays branding and a required link to `https://www.componentdock.com/` ("Component Dock").
 - **Scenario:** Includes quick navigation links and copyright information.

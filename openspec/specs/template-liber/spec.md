@@ -30,48 +30,68 @@ Liber is an author book landing template with a navbar, hero banner, about band,
 9. **Testimonials** — white bg, "What Our Readers Say About Us", 3 testimonial cards.
 10. **Footer** — dark bg, 3-col: About + social links, Quick Links, Newsletter form. Bottom: copyright + Component Dock link.
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-- Given the page loads, When I look at the header, Then I see "Liber" logo and navigation links.
-- Given I am on mobile, When I click the menu button, Then the mobile navigation appears.
-- Given the mobile menu is open, When I click a link, Then the menu closes.
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, When I look at the header, Then I see "Liber" logo and navigation links
+- **GIVEN** I am on mobile, When I click the menu button, Then the mobile navigation appears
+- **GIVEN** the mobile menu is open, When I click a link, Then the menu closes
 
 ### Hero
 
-- Given the page loads, When I look at the hero section, Then I see "Author: Travor James", "New Adventure", and a "Buy Now" button.
+#### Scenario: Hero
+
+- **GIVEN** the page loads, When I look at the hero section, Then I see "Author: Travor James", "New Adventure", and a "Buy Now" button
 
 ### About
 
-- Given the page loads, When I look at the about section, Then I see the author name, bio text, and portrait image.
+#### Scenario: About
+
+- **GIVEN** the page loads, When I look at the about section, Then I see the author name, bio text, and portrait image
 
 ### Features
 
-- Given the page loads, When I look at the features section, Then I see 4 feature cards with icons.
+#### Scenario: Features
+
+- **GIVEN** the page loads, When I look at the features section, Then I see 4 feature cards with icons
 
 ### Counters
 
-- Given the page loads, When I look at the counters section, Then I see 4 stat values and labels.
+#### Scenario: Counters
+
+- **GIVEN** the page loads, When I look at the counters section, Then I see 4 stat values and labels
 
 ### Pricing
 
-- Given the page loads, When I look at the pricing section, Then I see 3 pricing tiers with prices and purchase buttons.
+#### Scenario: Pricing
+
+- **GIVEN** the page loads, When I look at the pricing section, Then I see 3 pricing tiers with prices and purchase buttons
 
 ### Courses
 
-- Given the page loads, When I look at the courses section, Then I see 3 course cards with titles, prices, and view buttons.
+#### Scenario: Courses
+
+- **GIVEN** the page loads, When I look at the courses section, Then I see 3 course cards with titles, prices, and view buttons
 
 ### App Download
 
-- Given the page loads, When I look at the CTA section, Then I see App Store and Play Store download links.
+#### Scenario: App Download
+
+- **GIVEN** the page loads, When I look at the CTA section, Then I see App Store and Play Store download links
 
 ### Testimonials
 
-- Given the page loads, When I look at the testimonials section, Then I see 3 testimonial cards with names and quotes.
+#### Scenario: Testimonials
+
+- **GIVEN** the page loads, When I look at the testimonials section, Then I see 3 testimonial cards with names and quotes
 
 ### Footer
 
-- Given the page loads, When I look at the footer, Then I see Quick Links, Newsletter form, and a Component Dock link.
-- Given I enter an invalid email, When I click Subscribe, Then I see a validation error.
-- Given I enter a valid email, When I click Subscribe, Then I see a thank-you message.
+#### Scenario: Footer
+
+- **GIVEN** the page loads, When I look at the footer, Then I see Quick Links, Newsletter form, and a Component Dock link
+- **GIVEN** I enter an invalid email, When I click Subscribe, Then I see a validation error
+- **GIVEN** I enter a valid email, When I click Subscribe, Then I see a thank-you message

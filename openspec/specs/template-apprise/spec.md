@@ -30,117 +30,114 @@ Extracted from the template screenshot and ColorLib page metadata:
 | Card radius         | `8px`                         | Rounded corners on feature cards                       |
 | Navbar              | Transparent over hero gradient | Logo left, nav links center, CTA button right         |
 
-## Gherkin Requirements
+## Requirements
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero section displays gradient background
-  Given the visitor is on the landing page
-  When the hero section is visible
-  Then it shows a purple-to-magenta diagonal gradient background
+#### Scenario: Hero section displays gradient background
 
-Scenario: Hero section displays headline and subtitle
-  Given the hero section is visible
-  Then it shows the headline "Apprise" (or equivalent app name)
-  And it shows a subtitle describing app value proposition
-  And both use white text
+- **GIVEN** the visitor is on the landing page
+- **WHEN** the hero section is visible
+- **THEN** it shows a purple-to-magenta diagonal gradient background
 
-Scenario: Hero section displays email input and CTA button
-  Given the hero section is visible
-  When the visitor looks at the CTA area
-  Then there is an email input field with placeholder "name@company.com"
-  And there is a coral-red "Get Started" button
-  And the button has rounded corners
+#### Scenario: Hero section displays headline and subtitle
 
-Scenario: Hero section displays phone mockup
-  Given the hero section is visible
-  Then there is a phone/device mockup image on the right side
-  And the mockup shows a sample app screen
-```
+- **GIVEN** the hero section is visible
+- **THEN** it shows the headline "Apprise" (or equivalent app name)
+- **AND** it shows a subtitle describing app value proposition
+- **AND** both use white text
+
+#### Scenario: Hero section displays email input and CTA button
+
+- **GIVEN** the hero section is visible
+- **WHEN** the visitor looks at the CTA area
+- **THEN** there is an email input field with placeholder "name@company.com"
+- **AND** there is a coral-red "Get Started" button
+- **AND** the button has rounded corners
+
+#### Scenario: Hero section displays phone mockup
+
+- **GIVEN** the hero section is visible
+- **THEN** there is a phone/device mockup image on the right side
+- **AND** the mockup shows a sample app screen
 
 ### Navigation Bar
 
-```gherkin
-Scenario: Navbar displays with transparent background over hero
-  Given the visitor is on the landing page
-  When the hero section is in view
-  Then the navbar is transparent with white text links
-  And the logo is on the left
-  And navigation links are centered
-  And a "Sign Up Free" outlined button is on the right
+#### Scenario: Navbar displays with transparent background over hero
 
-Scenario: Navbar has correct navigation links
-  Given the navbar is visible
-  Then it contains links to: Home, About, Features, Screenshot, Pricing, Testimonials, Team, Contact
-  And each link scrolls to the corresponding section
-```
+- **GIVEN** the visitor is on the landing page
+- **WHEN** the hero section is in view
+- **THEN** the navbar is transparent with white text links
+- **AND** the logo is on the left
+- **AND** navigation links are centered
+- **AND** a "Sign Up Free" outlined button is on the right
+
+#### Scenario: Navbar has correct navigation links
+
+- **GIVEN** the navbar is visible
+- **THEN** it contains links to: Home, About, Features, Screenshot, Pricing, Testimonials, Team, Contact
+- **AND** each link scrolls to the corresponding section
 
 ### Features Section ("Why Is It Special")
 
-```gherkin
-Scenario: Features section displays heading with underline
-  Given the visitor scrolls to the features section
-  Then it shows the heading "Why Is It Special"
-  And the heading has a short pink/red underline
+#### Scenario: Features section displays heading with underline
 
-Scenario: Features section displays three feature cards
-  Given the features section is visible
-  Then there are exactly 3 feature cards in a row
-  And each card has a colored icon at the top
-  And each card has a title (e.g. "Easy to use", "Powerful Design", "Customizability")
-  And each card has a descriptive paragraph
-  And cards have white backgrounds with subtle shadows
-  And cards have rounded corners
-```
+- **GIVEN** the visitor scrolls to the features section
+- **THEN** it shows the heading "Why Is It Special"
+- **AND** the heading has a short pink/red underline
+
+#### Scenario: Features section displays three feature cards
+
+- **GIVEN** the features section is visible
+- **THEN** there are exactly 3 feature cards in a row
+- **AND** each card has a colored icon at the top
+- **AND** each card has a title (e.g. "Easy to use", "Powerful Design", "Customizability")
+- **AND** each card has a descriptive paragraph
+- **AND** cards have white backgrounds with subtle shadows
+- **AND** cards have rounded corners
 
 ### Screenshots Section
 
-```gherkin
-Scenario: Screenshots section displays app screenshots carousel
-  Given the visitor scrolls to the screenshots section
-  Then it shows multiple app screenshots
-  And screenshots are displayed in a horizontal carousel or grid
-  And each screenshot shows a different app screen
-```
+#### Scenario: Screenshots section displays app screenshots carousel
+
+- **GIVEN** the visitor scrolls to the screenshots section
+- **THEN** it shows multiple app screenshots
+- **AND** screenshots are displayed in a horizontal carousel or grid
+- **AND** each screenshot shows a different app screen
 
 ### Pricing Section
 
-```gherkin
-Scenario: Pricing section displays pricing plans
-  Given the visitor scrolls to the pricing section
-  Then it shows 3 pricing plan cards (e.g. Basic, Standard, Premium)
-  And each plan shows a price, feature list, and CTA button
-  And one plan is highlighted as recommended
-```
+#### Scenario: Pricing section displays pricing plans
+
+- **GIVEN** the visitor scrolls to the pricing section
+- **THEN** it shows 3 pricing plan cards (e.g. Basic, Standard, Premium)
+- **AND** each plan shows a price, feature list, and CTA button
+- **AND** one plan is highlighted as recommended
 
 ### Testimonials Section
 
-```gherkin
-Scenario: Testimonials section displays user testimonials
-  Given the visitor scrolls to the testimonials section
-  Then it shows testimonial cards with user avatar, name, and quote
-  And testimonials are presented in a slider or grid
-```
+#### Scenario: Testimonials section displays user testimonials
+
+- **GIVEN** the visitor scrolls to the testimonials section
+- **THEN** it shows testimonial cards with user avatar, name, and quote
+- **AND** testimonials are presented in a slider or grid
 
 ### Download / CTA Section
 
-```gherkin
-Scenario: Download section encourages app download
-  Given the visitor scrolls to the download section
-  Then it shows app store download badges (Google Play, App Store)
-  And it has a gradient or colored background matching the hero
-```
+#### Scenario: Download section encourages app download
+
+- **GIVEN** the visitor scrolls to the download section
+- **THEN** it shows app store download badges (Google Play, App Store)
+- **AND** it has a gradient or colored background matching the hero
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays basic information
-  Given the visitor scrolls to the footer
-  Then it shows copyright information
-  And it links to https://www.componentdock.com/ branded as "Component Dock"
-  And it has social media icon links
-```
+#### Scenario: Footer displays basic information
+
+- **GIVEN** the visitor scrolls to the footer
+- **THEN** it shows copyright information
+- **AND** it links to https://www.componentdock.com/ branded as "Component Dock"
+- **AND** it has social media icon links
 
 ## Verification Checklist
 

@@ -44,117 +44,107 @@ section has three-column cards with the middle one highlighted. The gallery is
 a masonry-style image grid. The footer is dark with a multi-column layout
 (address, links, newsletter form, social icons).
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Header / Navigation
 
-```gherkin
-Scenario: Sticky header with logo and navigation links
-  Given the user loads the GymFlow page
-  Then a header is visible with the logo on the left
-  And navigation links include Home, About, Classes, Schedule, Pricing, Team, Contact
-  And the header becomes sticky on scroll
-  And a hamburger menu icon appears on mobile viewports
-```
+#### Scenario: Sticky header with logo and navigation links
+
+- **GIVEN** the user loads the GymFlow page
+- **THEN** a header is visible with the logo on the left
+- **AND** navigation links include Home, About, Classes, Schedule, Pricing, Team, Contact
+- **AND** the header becomes sticky on scroll
+- **AND** a hamburger menu icon appears on mobile viewports
 
 ### Hero Section
 
-```gherkin
-Scenario: Full-width hero banner with CTA
-  Given the user loads the GymFlow page
-  Then a full-width hero section is displayed
-  And it contains a headline text centered on a dark overlay image
-  And a call-to-action button styled with brand color #f36100 and pill shape (border-radius 60px)
-  And the CTA button has white text on orange background
-```
+#### Scenario: Full-width hero banner with CTA
+
+- **GIVEN** the user loads the GymFlow page
+- **THEN** a full-width hero section is displayed
+- **AND** it contains a headline text centered on a dark overlay image
+- **AND** a call-to-action button styled with brand color #f36100 and pill shape (border-radius 60px)
+- **AND** the CTA button has white text on orange background
 
 ### Why Choose Us Section
 
-```gherkin
-Scenario: Feature grid showing gym advantages
-  Given the user scrolls to the Why Choose Us section
-  Then 4 feature items are displayed in a grid
-  And each feature has an icon, a title, and a short description
-  And the section has a white background
-  And the section title uses Oswald font with an orange underline
-```
+#### Scenario: Feature grid showing gym advantages
+
+- **GIVEN** the user scrolls to the Why Choose Us section
+- **THEN** 4 feature items are displayed in a grid
+- **AND** each feature has an icon, a title, and a short description
+- **AND** the section has a white background
+- **AND** the section title uses Oswald font with an orange underline
 
 ### Classes Section
 
-```gherkin
-Scenario: Gym class showcase cards
-  Given the user scrolls to the Classes section
-  Then class cards are displayed in a responsive grid
-  And each card shows a class image, class name, and a brief description
-  And cards have a hover overlay effect
-  And the section has a white background with spad padding
-```
+#### Scenario: Gym class showcase cards
+
+- **GIVEN** the user scrolls to the Classes section
+- **THEN** class cards are displayed in a responsive grid
+- **AND** each card shows a class image, class name, and a brief description
+- **AND** cards have a hover overlay effect
+- **AND** the section has a white background with spad padding
 
 ### Banner / CTA Section
 
-```gherkin
-Scenario: Dark full-width CTA banner
-  Given the user scrolls past the Classes section
-  Then a full-width dark banner section is displayed
-  And it contains a motivational headline and a CTA button
-  And the background is a dark image with overlay
-  And the button uses the brand orange color
-```
+#### Scenario: Dark full-width CTA banner
+
+- **GIVEN** the user scrolls past the Classes section
+- **THEN** a full-width dark banner section is displayed
+- **AND** it contains a motivational headline and a CTA button
+- **AND** the background is a dark image with overlay
+- **AND** the button uses the brand orange color
 
 ### Pricing Section
 
-```gherkin
-Scenario: Three-column pricing table
-  Given the user scrolls to the Pricing section
-  Then 3 pricing cards are displayed side by side
-  And each card shows a plan name, price, and a list of features
-  And one card (the recommended plan) is highlighted with the brand orange color
-  And each card has a "Join Now" button
-  And the section has a white background
-```
+#### Scenario: Three-column pricing table
+
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** 3 pricing cards are displayed side by side
+- **AND** each card shows a plan name, price, and a list of features
+- **AND** one card (the recommended plan) is highlighted with the brand orange color
+- **AND** each card has a "Join Now" button
+- **AND** the section has a white background
 
 ### Gallery Section
 
-```gherkin
-Scenario: Photo gallery grid
-  Given the user scrolls to the Gallery section
-  Then a grid of gym photos is displayed
-  And images are arranged in a multi-column masonry layout
-  And images have hover effects (e.g., zoom or overlay)
-  And the section has a dark background
-```
+#### Scenario: Photo gallery grid
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a grid of gym photos is displayed
+- **AND** images are arranged in a multi-column masonry layout
+- **AND** images have hover effects (e.g., zoom or overlay)
+- **AND** the section has a dark background
 
 ### Team Section
 
-```gherkin
-Scenario: Team member showcase
-  Given the user scrolls to the Team section
-  Then team member cards are displayed
-  And each card shows a photo, name, and role/title
-  And social media icons are shown below each member
-  And the section has a white background
-```
+#### Scenario: Team member showcase
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** team member cards are displayed
+- **AND** each card shows a photo, name, and role/title
+- **AND** social media icons are shown below each member
+- **AND** the section has a white background
 
 ### Contact / Get In Touch Section
 
-```gherkin
-Scenario: Contact form and info
-  Given the user scrolls to the Get In Touch section
-  Then a contact form is displayed with fields for name, email, subject, and message
-  And a "Send Message" button is present with brand orange styling
-  And contact information (address, phone, email) is displayed alongside the form
-```
+#### Scenario: Contact form and info
+
+- **GIVEN** the user scrolls to the Get In Touch section
+- **THEN** a contact form is displayed with fields for name, email, subject, and message
+- **AND** a "Send Message" button is present with brand orange styling
+- **AND** contact information (address, phone, email) is displayed alongside the form
 
 ### Footer
 
-```gherkin
-Scenario: Dark footer with multi-column layout
-  Given the user scrolls to the bottom of the page
-  Then a dark footer section is displayed
-  And it contains columns for About text, Quick Links, and a Newsletter signup
-  And social media icons are visible
-  And a copyright line with Component Dock attribution is present
-```
+#### Scenario: Dark footer with multi-column layout
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a dark footer section is displayed
+- **AND** it contains columns for About text, Quick Links, and a Newsletter signup
+- **AND** social media icons are visible
+- **AND** a copyright line with Component Dock attribution is present
 
 ## Verification Checklist
 

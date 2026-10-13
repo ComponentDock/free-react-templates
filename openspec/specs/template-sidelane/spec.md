@@ -49,9 +49,11 @@ A clean sidebar navigation template with a fixed left sidebar, main content area
    - Page heading matching original ("Sidebar #05" → "Sidelane")
    - Descriptive paragraphs
 
-## Scenarios (Gherkin)
+## Requirements
 
 ### Sidebar
+
+#### Scenario: Sidebar
 
 - renders sidebar with brand header
 - renders all navigation items
@@ -64,11 +66,15 @@ A clean sidebar navigation template with a fixed left sidebar, main content area
 
 ### Topbar
 
+#### Scenario: Topbar
+
 - renders hamburger menu button
 - calls onMenuClick when clicked
 - is hidden on desktop
 
 ### MainContent
+
+#### Scenario: MainContent
 
 - renders page heading
 - renders descriptive paragraphs

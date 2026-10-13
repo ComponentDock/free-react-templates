@@ -44,102 +44,114 @@ Recreation of ColorLib "Suites" template.
 9. **What People Say** — Light bg (#f8f9fa), centered heading, Owl Carousel of testimonial cards (circular avatar + name + blockquote)
 10. **Footer** — Dark bg with overlay, 3-column: About description + Quick Menu links + Ministries links + Social Icons, copyright line with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Lucerne Hotel Landing Template
 
 #### Scenario: Navbar renders correctly
-- Given the user visits the Lucerne page
-- Then the navbar displays the logo "Lucerne" in Playfair Display font
-- And the navbar shows navigation links: Home, Rooms, Events, About, Contact
-- And the Rooms link has a dropdown with room types
-- And the navbar becomes sticky on scroll with white background
-- And a hamburger menu toggle appears on mobile viewports
+
+- **GIVEN** the user visits the Lucerne page
+- **THEN** the navbar displays the logo "Lucerne" in Playfair Display font
+- **AND** the navbar shows navigation links: Home, Rooms, Events, About, Contact
+- **AND** the Rooms link has a dropdown with room types
+- **AND** the navbar becomes sticky on scroll with white background
+- **AND** a hamburger menu toggle appears on mobile viewports
 
 #### Scenario: Hero slider displays
-- Given the hero section is visible
-- Then a full-viewport image carousel is displayed with 3 slides
-- And each slide has a dark overlay (rgba(0,0,0,0.4))
-- And each slide shows centered heading text and a caption subtitle
-- And slide text includes "Welcome To Lucerne" / "Hotel & Resort"
-- And carousel navigation arrows are present
+
+- **GIVEN** the hero section is visible
+- **THEN** a full-viewport image carousel is displayed with 3 slides
+- **AND** each slide has a dark overlay (rgba(0,0,0,0.4))
+- **AND** each slide shows centered heading text and a caption subtitle
+- **AND** slide text includes "Welcome To Lucerne" / "Hotel & Resort"
+- **AND** carousel navigation arrows are present
 
 #### Scenario: Our Rooms section
-- Given the rooms section is visible
-- Then the heading "Our Rooms" is displayed centered
-- And 6 room cards are shown in a 3-column responsive grid
-- And each card has an image, room name, and price per night
-- And room names include: Standard Room, Family Room, Single Room, Deluxe Room, Luxury Room, Single Room
-- And hovering a card shows a shadow and image zoom effect
+
+- **GIVEN** the rooms section is visible
+- **THEN** the heading "Our Rooms" is displayed centered
+- **AND** 6 room cards are shown in a 3-column responsive grid
+- **AND** each card has an image, room name, and price per night
+- **AND** room names include: Standard Room, Family Room, Single Room, Deluxe Room, Luxury Room, Single Room
+- **AND** hovering a card shows a shadow and image zoom effect
 
 #### Scenario: About Us section
-- Given the About Us section is visible
-- Then a two-column layout is displayed
-- And the left column shows an image with a play-button overlay for video
-- And a small overlapping image is positioned near the main image
-- And the right column shows heading "About Us" and descriptive text
-- And a "Watch Video" link with arrow icon is shown
+
+- **GIVEN** the About Us section is visible
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows an image with a play-button overlay for video
+- **AND** a small overlapping image is positioned near the main image
+- **AND** the right column shows heading "About Us" and descriptive text
+- **AND** a "Watch Video" link with arrow icon is shown
 
 #### Scenario: Hotel Features section
-- Given the hotel features section is visible
-- Then the heading "Hotel Features" is displayed centered
-- And 8 feature items are shown in a 4-column responsive grid
-- And each feature has an icon and a label
-- And feature icons use the primary color (#f23a2e)
-- And features include: Swimming Pool, Hotel Teller, Fire Exit, Car Parking, Hair Dryer, Minibar, Drinks, Car Airport
+
+- **GIVEN** the hotel features section is visible
+- **THEN** the heading "Hotel Features" is displayed centered
+- **AND** 8 feature items are shown in a 4-column responsive grid
+- **AND** each feature has an icon and a label
+- **AND** feature icons use the primary color (#f23a2e)
+- **AND** features include: Swimming Pool, Hotel Teller, Fire Exit, Car Parking, Hair Dryer, Minibar, Drinks, Car Airport
 
 #### Scenario: Promo banner section
-- Given the promo banner section is visible
-- Then a parallax background image is displayed with dark overlay
-- And the heading "Summer Promo 50% Off" is shown in white
-- And an "Avail Now" outlined button is displayed
-- And a countdown timer area is present
+
+- **GIVEN** the promo banner section is visible
+- **THEN** a parallax background image is displayed with dark overlay
+- **AND** the heading "Summer Promo 50% Off" is shown in white
+- **AND** an "Avail Now" outlined button is displayed
+- **AND** a countdown timer area is present
 
 #### Scenario: Gallery section
-- Given the gallery section is visible
-- Then the heading "Our Gallery" is displayed centered
-- And 8 clickable images are shown in a 2×4 grid
-- And clicking an image opens a lightbox popup
-- And images use full-width no-gutters layout
+
+- **GIVEN** the gallery section is visible
+- **THEN** the heading "Our Gallery" is displayed centered
+- **AND** 8 clickable images are shown in a 2×4 grid
+- **AND** clicking an image opens a lightbox popup
+- **AND** images use full-width no-gutters layout
 
 #### Scenario: Upcoming Events section
-- Given the events section is visible
-- Then the heading "Upcoming Events" is displayed centered
-- And event cards are shown in a carousel/slider
-- And each event card has an image, title, date, and excerpt text
+
+- **GIVEN** the events section is visible
+- **THEN** the heading "Upcoming Events" is displayed centered
+- **AND** event cards are shown in a carousel/slider
+- **AND** each event card has an image, title, date, and excerpt text
 
 #### Scenario: Testimonials section
-- Given the testimonials section is visible
-- Then the heading "What People Say" is displayed centered
-- And testimonial cards are shown in a carousel/slider
-- And each card has a circular avatar, reviewer name, and blockquote
-- And the section has light background (#f8f9fa)
+
+- **GIVEN** the testimonials section is visible
+- **THEN** the heading "What People Say" is displayed centered
+- **AND** testimonial cards are shown in a carousel/slider
+- **AND** each card has a circular avatar, reviewer name, and blockquote
+- **AND** the section has light background (#f8f9fa)
 
 #### Scenario: Footer renders
-- Given the footer is visible
-- Then a dark background with overlay is displayed
-- And column content includes: About description, Quick Menu links, Ministries/Social links
-- And social media icon links are present (Facebook, Twitter, Instagram, Vimeo)
-- And a copyright line is shown
-- And a "Made with Component Dock" link to https://www.componentdock.com/ is present
+
+- **GIVEN** the footer is visible
+- **THEN** a dark background with overlay is displayed
+- **AND** column content includes: About description, Quick Menu links, Ministries/Social links
+- **AND** social media icon links are present (Facebook, Twitter, Instagram, Vimeo)
+- **AND** a copyright line is shown
+- **AND** a "Made with Component Dock" link to https://www.componentdock.com/ is present
 
 #### Scenario: Responsive design
-- Given the user views the page on mobile (viewport < 768px)
-- Then the navbar collapses to a hamburger menu
-- And room cards stack vertically
-- And feature items stack into 2-column then 1-column
-- And gallery images stack into 2-column then 1-column
-- And the about section stacks vertically
-- And section padding reduces from 7em to 3em
+
+- **GIVEN** the user views the page on mobile (viewport < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** room cards stack vertically
+- **AND** feature items stack into 2-column then 1-column
+- **AND** gallery images stack into 2-column then 1-column
+- **AND** the about section stacks vertically
+- **AND** section padding reduces from 7em to 3em
 
 #### Scenario: Design tokens applied
-- Given the page loads
-- Then the primary color #f23a2e is used for feature icons and accent links
-- And headings use Playfair Display font (logo and hero)
-- And body text uses Work Sans font
-- And buttons have pill shape (border-radius: 30px)
-- And sections alternate between white and #f8f9fa backgrounds
-- And dark overlay sections use rgba(0,0,0,0.4)
+
+- **GIVEN** the page loads
+- **THEN** the primary color #f23a2e is used for feature icons and accent links
+- **AND** headings use Playfair Display font (logo and hero)
+- **AND** body text uses Work Sans font
+- **AND** buttons have pill shape (border-radius: 30px)
+- **AND** sections alternate between white and #f8f9fa backgrounds
+- **AND** dark overlay sections use rgba(0,0,0,0.4)
 
 ## Verification Checklist
 

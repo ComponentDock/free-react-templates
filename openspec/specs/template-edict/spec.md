@@ -73,160 +73,132 @@ Recreation of the ColorLib "Solicitor" template for a law firm / legal services 
 11. **Contact Form** (`sec-6`) — heading "Write to us", form with fields: Full Name, Email, Phone Number, Choose a Service (select/text), Message (textarea), Submit button.
 12. **Footer** (`site-footer`) — 3-column: Contact (address, phone, email), Sources (links), Links (links + social icons: Instagram, Twitter, Facebook, Pinterest, Dribbble). Social icons in circular buttons, hover turns blue.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with correct links
+### Feature: Edict template behaviour
 
-```gherkin
-Given the page loads
-When I look at the navbar
-Then I see the logo "Edict"
-And I see nav links: Home, Practicing Area, Services, About, Contact Us
-And I see a phone number on the right
-```
+#### Scenario: Navbar renders with correct links
 
-### Scenario: Hero section displays correctly
+- **GIVEN** the page loads
+- **WHEN** I look at the navbar
+- **THEN** I see the logo "Edict"
+- **AND** I see nav links: Home, Practicing Area, Services, About, Contact Us
+- **AND** I see a phone number on the right
 
-```gherkin
-Given the page loads
-When I look at the hero section
-Then I see a full-screen background image with dark overlay
-And I see a heading "Meet all your investigative and litigation needs"
-And I see a subtext paragraph
-And I see two CTA buttons: "Our services" (primary) and "Contact us" (outline)
-```
+#### Scenario: Hero section displays correctly
 
-### Scenario: About Me section shows practitioner info
+- **GIVEN** the page loads
+- **WHEN** I look at the hero section
+- **THEN** I see a full-screen background image with dark overlay
+- **AND** I see a heading "Meet all your investigative and litigation needs"
+- **AND** I see a subtext paragraph
+- **AND** I see two CTA buttons: "Our services" (primary) and "Contact us" (outline)
 
-```gherkin
-Given the page loads
-When I scroll to the About Me section
-Then I see the heading "I'm Jon Campbell"
-And I see two text columns: text on left, image on right
-And I see a CTA button "Our services"
-```
+#### Scenario: About Me section shows practitioner info
 
-### Scenario: Our Services grid renders 6 service cards
+- **GIVEN** the page loads
+- **WHEN** I scroll to the About Me section
+- **THEN** I see the heading "I'm Jon Campbell"
+- **AND** I see two text columns: text on left, image on right
+- **AND** I see a CTA button "Our services"
 
-```gherkin
-Given the page loads
-When I scroll to the Our Services section
-Then I see heading "Our Services"
-And I see 6 service cards in a 3-column grid
-And each card has an icon, title, and description
-And the service titles are: Counsel, Legal Dept, Compliance, Identity, Hall of Justice, Law Abiding
-```
+#### Scenario: Our Services grid renders 6 service cards
 
-### Scenario: Service card hover effect
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Our Services section
+- **THEN** I see heading "Our Services"
+- **AND** I see 6 service cards in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the service titles are: Counsel, Legal Dept, Compliance, Identity, Hall of Justice, Law Abiding
 
-```gherkin
-Given the Our Services section is visible
-When I hover over a service card
-Then the card background changes to blue (#037ef3)
-And the icon becomes fully opaque
-```
+#### Scenario: Service card hover effect
 
-### Scenario: Security Consultants section
+- **GIVEN** the Our Services section is visible
+- **WHEN** I hover over a service card
+- **THEN** the card background changes to blue (#037ef3)
+- **AND** the icon becomes fully opaque
 
-```gherkin
-Given the page loads
-When I scroll to the Security Consultants section
-Then I see a large image on the left
-And I see heading "Security Consultants" with subheading "Justice serves"
-And I see a paragraph and CTA button "Read more"
-```
+#### Scenario: Security Consultants section
 
-### Scenario: Tabbed services switch content
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Security Consultants section
+- **THEN** I see a large image on the left
+- **AND** I see heading "Security Consultants" with subheading "Justice serves"
+- **AND** I see a paragraph and CTA button "Read more"
 
-```gherkin
-Given the tabbed services section is visible
-When I click the "Security Consultations" tab
-Then the tab becomes active
-And I see the Security Consultations heading and image
-When I click the "Criminal Defense Investigations" tab
-Then I see the Criminal Defense Investigations heading and image
-```
+#### Scenario: Tabbed services switch content
 
-### Scenario: Practice Area grid shows 12 items
+- **GIVEN** the tabbed services section is visible
+- **WHEN** I click the "Security Consultations" tab
+- **THEN** the tab becomes active
+- **AND** I see the Security Consultations heading and image
+- **WHEN** I click the "Criminal Defense Investigations" tab
+- **THEN** I see the Criminal Defense Investigations heading and image
 
-```gherkin
-Given the page loads
-When I scroll to the Practice Area section
-Then I see heading "Practice Area"
-And I see 12 numbered cards in a 3-column grid
-And each card shows a number (01–12), service title, and arrow icon
-```
+#### Scenario: Practice Area grid shows 12 items
 
-### Scenario: Practice area card hover
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Practice Area section
+- **THEN** I see heading "Practice Area"
+- **AND** I see 12 numbered cards in a 3-column grid
+- **AND** each card shows a number (01–12), service title, and arrow icon
 
-```gherkin
-Given the Practice Area section is visible
-When I hover over a practice area card
-Then the card background changes to blue (#037ef3)
-```
+#### Scenario: Practice area card hover
 
-### Scenario: Testimonials section with tabbed authors
+- **GIVEN** the Practice Area section is visible
+- **WHEN** I hover over a practice area card
+- **THEN** the card background changes to blue (#037ef3)
 
-```gherkin
-Given the page loads
-When I scroll to the Testimonials section
-Then I see heading "Testimonials"
-And I see 3 author photos on the left with names and titles
-And I see a blockquote with testimonial text on the right
-When I click a different author
-Then the testimonial text changes to that author's quote
-```
+#### Scenario: Testimonials section with tabbed authors
 
-### Scenario: Resources section shows link columns
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Testimonials section
+- **THEN** I see heading "Testimonials"
+- **AND** I see 3 author photos on the left with names and titles
+- **AND** I see a blockquote with testimonial text on the right
+- **WHEN** I click a different author
+- **THEN** the testimonial text changes to that author's quote
 
-```gherkin
-Given the page loads
-When I scroll to the Resources section
-Then I see heading "Resources"
-And I see 4 columns of links in a box container
-```
+#### Scenario: Resources section shows link columns
 
-### Scenario: Peace & Order section
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Resources section
+- **THEN** I see heading "Resources"
+- **AND** I see 4 columns of links in a box container
 
-```gherkin
-Given the page loads
-When I scroll to the Peace & Order section
-Then I see heading "Peace & order"
-And I see a paragraph and CTA button on the left
-And I see an image on the right
-```
+#### Scenario: Peace & Order section
 
-### Scenario: Contact form renders all fields
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Peace & Order section
+- **THEN** I see heading "Peace & order"
+- **AND** I see a paragraph and CTA button on the left
+- **AND** I see an image on the right
 
-```gherkin
-Given the page loads
-When I scroll to the contact form section
-Then I see heading "Write to us"
-And I see input fields: Full Name, Email, Phone Number, Choose a Service
-And I see a textarea for message
-And I see a submit button "Send Message"
-```
+#### Scenario: Contact form renders all fields
 
-### Scenario: Footer renders with columns
+- **GIVEN** the page loads
+- **WHEN** I scroll to the contact form section
+- **THEN** I see heading "Write to us"
+- **AND** I see input fields: Full Name, Email, Phone Number, Choose a Service
+- **AND** I see a textarea for message
+- **AND** I see a submit button "Send Message"
 
-```gherkin
-Given the page loads
-When I scroll to the footer
-Then I see 3 columns: Contact, Sources, Links
-And I see social media icons (Instagram, Twitter, Facebook, Pinterest, Dribbble)
-And I see a link to https://www.componentdock.com/
-```
+#### Scenario: Footer renders with columns
 
-### Scenario: Mobile responsive navbar
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** I see 3 columns: Contact, Sources, Links
+- **AND** I see social media icons (Instagram, Twitter, Facebook, Pinterest, Dribbble)
+- **AND** I see a link to https://www.componentdock.com/
 
-```gherkin
-Given the viewport is 375px wide
-When the page loads
-Then the nav links are hidden
-And a hamburger menu icon is visible
-When I tap the hamburger icon
-Then the mobile menu slides in from the right
-```
+#### Scenario: Mobile responsive navbar
+
+- **GIVEN** the viewport is 375px wide
+- **WHEN** the page loads
+- **THEN** the nav links are hidden
+- **AND** a hamburger menu icon is visible
+- **WHEN** I tap the hamburger icon
+- **THEN** the mobile menu slides in from the right
 
 ## Verification Checklist
 

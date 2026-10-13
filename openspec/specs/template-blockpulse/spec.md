@@ -65,126 +65,143 @@ two CTA buttons. The body background is deep navy blue throughout.
 14. **Community** — social icon grid (Google+, LinkedIn, Dribbble, GitHub, Behance, YouTube, Twitter, Flickr)
 15. **Footer** — dark bg, 4-column: logo + about text + copyright, links column 1, links column 2, newsletter subscribe form
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-  Scenario: Logo and navigation links are visible
-    Given the user loads the page
-    Then the navbar displays the logo
-    And the nav links include "Home", "About", "White Paper", "Token Sale", "Roadmap", "Team", "APP", "FAQ", "Contact"
-    And a "login" button is visible on the right
+#### Scenario: Logo and navigation links are visible
 
-  Scenario: Navbar becomes fixed on scroll
-    Given the user scrolls down past the hero
-    Then the navbar gets a solid dark background
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays the logo
+- **AND** the nav links include "Home", "About", "White Paper", "Token Sale", "Roadmap", "Team", "APP", "FAQ", "Contact"
+- **AND** a "login" button is visible on the right
 
-  Scenario: Mobile hamburger menu toggles
-    Given the user is on a mobile viewport
-    When they click the hamburger menu button
-    Then the mobile navigation menu slides in
+#### Scenario: Navbar becomes fixed on scroll
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar gets a solid dark background
+
+#### Scenario: Mobile hamburger menu toggles
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** they click the hamburger menu button
+- **THEN** the mobile navigation menu slides in
 
 ### Feature: Hero / Welcome
 
-  Scenario: Hero displays headline and CTAs
-    Given the user views the page
-    Then the hero shows the headline about ICO/blockchain
-    And two CTA buttons are displayed ("Register for the ICO", "Download Whitepaper")
-    And an illustration is displayed on the right side
-    And a particles.js animated background is active
+#### Scenario: Hero displays headline and CTAs
+
+- **GIVEN** the user views the page
+- **THEN** the hero shows the headline about ICO/blockchain
+- **AND** two CTA buttons are displayed ("Register for the ICO", "Download Whitepaper")
+- **AND** an illustration is displayed on the right side
+- **AND** a particles.js animated background is active
 
 ### Feature: Featured In (Logo Carousel)
 
-  Scenario: Logo carousel displays partner logos
-    Given the user scrolls to the "We are featured in" section
-    Then a carousel of partner logos is visible
-    And the logos auto-scroll horizontally
+#### Scenario: Logo carousel displays partner logos
+
+- **GIVEN** the user scrolls to the "We are featured in" section
+- **THEN** a carousel of partner logos is visible
+- **AND** the logos auto-scroll horizontally
 
 ### Feature: About
 
-  Scenario: About section displays content
-    Given the user scrolls to the about section
-    Then an illustration is shown on the left
-    And a heading, description text, and CTA button are shown on the right
+#### Scenario: About section displays content
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** an illustration is shown on the left
+- **AND** a heading, description text, and CTA button are shown on the right
 
 ### Feature: Feature Highlights
 
-  Scenario: Three feature cards are displayed
-    Given the user scrolls to the feature highlights section
-    Then 3 feature cards are visible in a row
-    And each card has an icon, title, and description
+#### Scenario: Three feature cards are displayed
+
+- **GIVEN** the user scrolls to the feature highlights section
+- **THEN** 3 feature cards are visible in a row
+- **AND** each card has an icon, title, and description
 
 ### Feature: ICO Live Stats
 
-  Scenario: ICO stats and countdown are displayed
-    Given the user scrolls to the ICO section
-    Then the headline "ICO Live Now" is visible
-    And token sale statistics are displayed (Token Sold, ETH/BTC collected)
-    And a countdown timer shows days, hours, minutes, seconds
-    And a progress bar shows fundraising progress
-    And a "Buy Tokens" button is visible
+#### Scenario: ICO stats and countdown are displayed
+
+- **GIVEN** the user scrolls to the ICO section
+- **THEN** the headline "ICO Live Now" is visible
+- **AND** token sale statistics are displayed (Token Sold, ETH/BTC collected)
+- **AND** a countdown timer shows days, hours, minutes, seconds
+- **AND** a progress bar shows fundraising progress
+- **AND** a "Buy Tokens" button is visible
 
 ### Feature: Whitepaper / Documentation
 
-  Scenario: Download options are displayed
-    Given the user scrolls to the documentation section
-    Then 5 language download buttons are visible (English, Spanish, Russian, Arabic, Portuguese)
-    And each button shows a flag icon and language name
+#### Scenario: Download options are displayed
+
+- **GIVEN** the user scrolls to the documentation section
+- **THEN** 5 language download buttons are visible (English, Spanish, Russian, Arabic, Portuguese)
+- **AND** each button shows a flag icon and language name
 
 ### Feature: Token Distribution
 
-  Scenario: Token distribution is displayed
-    Given the user scrolls to the token distribution section
-    Then a pie chart image is visible
-    And a legend shows allocation percentages (Build Up Team, ICO Investors, Branding, Bounty)
+#### Scenario: Token distribution is displayed
+
+- **GIVEN** the user scrolls to the token distribution section
+- **THEN** a pie chart image is visible
+- **AND** a legend shows allocation percentages (Build Up Team, ICO Investors, Branding, Bounty)
 
 ### Feature: Development Roadmap
 
-  Scenario: Roadmap timeline is displayed
-    Given the user scrolls to the roadmap section
-    Then a carousel of timeline milestones is visible
-    And each milestone shows a date, title, and description
+#### Scenario: Roadmap timeline is displayed
+
+- **GIVEN** the user scrolls to the roadmap section
+- **THEN** a carousel of timeline milestones is visible
+- **AND** each milestone shows a date, title, and description
 
 ### Feature: Team
 
-  Scenario: Core team members are displayed
-    Given the user scrolls to the team section
-    Then 4 core team member cards are visible
-    And each card shows a photo, name, role, and social icons
+#### Scenario: Core team members are displayed
 
-  Scenario: Advisory board is displayed
-    Given the user scrolls further in the team section
-    Then 4 advisory board member cards are visible
+- **GIVEN** the user scrolls to the team section
+- **THEN** 4 core team member cards are visible
+- **AND** each card shows a photo, name, role, and social icons
+
+#### Scenario: Advisory board is displayed
+
+- **GIVEN** the user scrolls further in the team section
+- **THEN** 4 advisory board member cards are visible
 
 ### Feature: Mobile App
 
-  Scenario: App download section is displayed
-    Given the user scrolls to the apps section
-    Then a heading "Track from Anywhere" is visible
-    And description text is shown
-    And "Google Playstore" and "Apple Appstore" buttons are visible
-    And a phone mockup image is displayed
+#### Scenario: App download section is displayed
+
+- **GIVEN** the user scrolls to the apps section
+- **THEN** a heading "Track from Anywhere" is visible
+- **AND** description text is shown
+- **AND** "Google Playstore" and "Apple Appstore" buttons are visible
+- **AND** a phone mockup image is displayed
 
 ### Feature: FAQ
 
-  Scenario: FAQ tabs and questions are displayed
-    Given the user scrolls to the FAQ section
-    Then tab navigation shows categories (General Questions, ICO, Token, Cryptocurrency)
-    And FAQ items are displayed in a carousel per tab
-    And each item has a title, description, and "readmore" link
+#### Scenario: FAQ tabs and questions are displayed
+
+- **GIVEN** the user scrolls to the FAQ section
+- **THEN** tab navigation shows categories (General Questions, ICO, Token, Cryptocurrency)
+- **AND** FAQ items are displayed in a carousel per tab
+- **AND** each item has a title, description, and "readmore" link
 
 ### Feature: Community
 
-  Scenario: Social media icons are displayed
-    Given the user scrolls to the community section
-    Then social media icon links are visible (Google+, LinkedIn, Dribbble, GitHub, YouTube, Twitter)
+#### Scenario: Social media icons are displayed
+
+- **GIVEN** the user scrolls to the community section
+- **THEN** social media icon links are visible (Google+, LinkedIn, Dribbble, GitHub, YouTube, Twitter)
 
 ### Feature: Footer
 
-  Scenario: Footer content is visible
-    Given the user scrolls to the footer
-    Then the footer displays logo, about text, link columns, and newsletter form
-    And the copyright line links to "https://www.componentdock.com/" (branded "Component Dock")
+#### Scenario: Footer content is visible
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer displays logo, about text, link columns, and newsletter form
+- **AND** the copyright line links to "https://www.componentdock.com/" (branded "Component Dock")
 
 ## Verification Checklist
 

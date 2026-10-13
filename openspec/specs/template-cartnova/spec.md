@@ -60,97 +60,100 @@ Recreation of ColorLib **Karma** — a fashion/e-commerce single-page template w
 8. **Related Products** — carousel of related product cards (similar to section 5)
 9. **Footer** — 4 columns: About Us text, Newsletter email form, Instagram feed grid (8 images), Follow Us social icons; footer-bottom copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
-```gherkin
-Scenario: Sticky header displays logo, nav links, cart, and search
-  Given the user visits the homepage
-  Then the header is visible with logo on the left
-  And nav links include Home, Shop, Blog, Pages, Contact
-  And a cart icon and search toggle are on the right
 
-Scenario: Header remains sticky on scroll
-  Given the user scrolls down past the banner
-  Then the header stays fixed at the top of the viewport
-```
+#### Scenario: Sticky header displays logo, nav links, cart, and search
+
+- **GIVEN** the user visits the homepage
+- **THEN** the header is visible with logo on the left
+- **AND** nav links include Home, Shop, Blog, Pages, Contact
+- **AND** a cart icon and search toggle are on the right
+
+#### Scenario: Header remains sticky on scroll
+
+- **GIVEN** the user scrolls down past the banner
+- **THEN** the header stays fixed at the top of the viewport
 
 ### Banner
-```gherkin
-Scenario: Hero banner shows product heading and CTA
-  Given the user views the banner section
-  Then a heading "New Collection!" is visible
-  And an "Add to Bag" CTA button is displayed
-  And a product hero image is shown
 
-Scenario: Banner auto-rotates slides
-  Given the user waits on the banner
-  Then slides transition automatically with carousel behavior
-```
+#### Scenario: Hero banner shows product heading and CTA
+
+- **GIVEN** the user views the banner section
+- **THEN** a heading "New Collection!" is visible
+- **AND** an "Add to Bag" CTA button is displayed
+- **AND** a product hero image is shown
+
+#### Scenario: Banner auto-rotates slides
+
+- **GIVEN** the user waits on the banner
+- **THEN** slides transition automatically with carousel behavior
 
 ### Features
-```gherkin
-Scenario: Four feature cards display service highlights
-  Given the user views the features section
-  Then 4 feature cards are displayed in a row
-  And each card has an icon, heading, and description
-  And headings are: Free Delivery, Return Policy, Coupon Code, 24/7 Service
-```
+
+#### Scenario: Four feature cards display service highlights
+
+- **GIVEN** the user views the features section
+- **THEN** 4 feature cards are displayed in a row
+- **AND** each card has an icon, heading, and description
+- **AND** headings are: Free Delivery, Return Policy, Coupon Code, 24/7 Service
 
 ### Category
-```gherkin
-Scenario: Category grid shows product categories with overlays
-  Given the user views the category section
-  Then an asymmetric grid of 4 category cards is displayed
-  And each card has a background image with overlay text
-```
+
+#### Scenario: Category grid shows product categories with overlays
+
+- **GIVEN** the user views the category section
+- **THEN** an asymmetric grid of 4 category cards is displayed
+- **AND** each card has a background image with overlay text
 
 ### Product Carousel
-```gherkin
-Scenario: Tabbed product carousel shows products
-  Given the user views the products section
-  Then tabs for Latest, Best Seller, and Featured are displayed
-  And products render as cards with image, name, price, and wishlist icon
 
-Scenario: Clicking a tab switches product list
-  Given the user clicks the "Best Seller" tab
-  Then the product list updates to show best seller items
-```
+#### Scenario: Tabbed product carousel shows products
+
+- **GIVEN** the user views the products section
+- **THEN** tabs for Latest, Best Seller, and Featured are displayed
+- **AND** products render as cards with image, name, price, and wishlist icon
+
+#### Scenario: Clicking a tab switches product list
+
+- **GIVEN** the user clicks the "Best Seller" tab
+- **THEN** the product list updates to show best seller items
 
 ### Exclusive Deal
-```gherkin
-Scenario: Countdown timer shows deal expiry
-  Given the user views the exclusive deal section
-  Then a countdown timer displays Days, Hours, Minutes, Seconds
-  And a "Shop Now" CTA button is shown
-  And a product image is displayed alongside
-```
+
+#### Scenario: Countdown timer shows deal expiry
+
+- **GIVEN** the user views the exclusive deal section
+- **THEN** a countdown timer displays Days, Hours, Minutes, Seconds
+- **AND** a "Shop Now" CTA button is shown
+- **AND** a product image is displayed alongside
 
 ### Brand Logos
-```gherkin
-Scenario: Partner brand logos are displayed
-  Given the user views the brand section
-  Then 5 brand logo images are shown in a horizontal row
-```
+
+#### Scenario: Partner brand logos are displayed
+
+- **GIVEN** the user views the brand section
+- **THEN** 5 brand logo images are shown in a horizontal row
 
 ### Related Products
-```gherkin
-Scenario: Related products carousel displays items
-  Given the user views the related products section
-  Then a carousel of product cards is shown
-  And each card has an image, name, price, and wishlist icon
-```
+
+#### Scenario: Related products carousel displays items
+
+- **GIVEN** the user views the related products section
+- **THEN** a carousel of product cards is shown
+- **AND** each card has an image, name, price, and wishlist icon
 
 ### Footer
-```gherkin
-Scenario: Footer has 4 columns with newsletter and social
-  Given the user scrolls to the footer
-  Then an "About Us" text column is visible
-  And a newsletter email input with submit button is present
-  And an Instagram image grid (8 thumbnails) is displayed
-  And social media icons (Facebook, Twitter, etc.) are shown
-  And a "Component Dock" attribution link is in the footer-bottom
-```
+
+#### Scenario: Footer has 4 columns with newsletter and social
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** an "About Us" text column is visible
+- **AND** a newsletter email input with submit button is present
+- **AND** an Instagram image grid (8 thumbnails) is displayed
+- **AND** social media icons (Facebook, Twitter, etc.) are shown
+- **AND** a "Component Dock" attribution link is in the footer-bottom
 
 ## Verification Checklist
 

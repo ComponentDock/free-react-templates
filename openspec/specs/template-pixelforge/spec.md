@@ -43,126 +43,141 @@ and assets for a striking web presence." Published September 18, 2022.
 6. **Contact** — `.contact-area` → "Get In Touch" heading, contact form with name/email/subject inputs, textarea for message, "Send Message" pixel-btn.
 7. **Footer** — `.footer-area` → 3-column layout: logo + description left, Address widget center, Support widget (phone) center-right, Social widget (Facebook, Dribbble, Flickr, Instagram, LinkedIn, Pinterest icons) right. Copyright line at bottom → replace with Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Feature: Navbar
-  Scenario: Navigation displays logo and menu links
-    Given the page loads
-    Then a navigation bar should be visible with a logo on the left
-    And menu links should include Home, About, Services, Pages, Contact
-    And the navbar should become sticky on scroll
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is mobile width
-    Then a hamburger menu icon should replace the nav links
-    And tapping it should open a slide-in mobile menu
-```
+Feature: Navbar
+
+#### Scenario: Navigation displays logo and menu links
+
+- **GIVEN** the page loads
+- **THEN** a navigation bar should be visible with a logo on the left
+- **AND** menu links should include Home, About, Services, Pages, Contact
+- **AND** the navbar should become sticky on scroll
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is mobile width
+- **THEN** a hamburger menu icon should replace the nav links
+- **AND** tapping it should open a slide-in mobile menu
 
 ### Hero Slider
-```gherkin
+
 Feature: Hero Slider
-  Scenario: Hero displays rotating slides
-    Given the page loads
-    Then a full-width hero slider should be visible
-    And it should show a headline like "Digital Agency of the year 2019"
-    And a subtext with client/credit info should appear below
-    And a "View Project" button should be visible
 
-  Scenario: Hero auto-rotates
-    Given the hero slider is visible
-    Then the slides should auto-advance after a few seconds
-    And navigation dots or arrows should be present
+#### Scenario: Hero displays rotating slides
 
-  Scenario: Hero button styling
-    Given the hero section is visible
-    Then the "View Project" button should have orange (#ff7902) background
-    And it should have 0 border-radius (sharp corners)
-    And on hover it should transition to blue (#688bfe) over 500ms
-```
+- **GIVEN** the page loads
+- **THEN** a full-width hero slider should be visible
+- **AND** it should show a headline like "Digital Agency of the year 2019"
+- **AND** a subtext with client/credit info should appear below
+- **AND** a "View Project" button should be visible
+
+#### Scenario: Hero auto-rotates
+
+- **GIVEN** the hero slider is visible
+- **THEN** the slides should auto-advance after a few seconds
+- **AND** navigation dots or arrows should be present
+
+#### Scenario: Hero button styling
+
+- **GIVEN** the hero section is visible
+- **THEN** the "View Project" button should have orange (#ff7902) background
+- **AND** it should have 0 border-radius (sharp corners)
+- **AND** on hover it should transition to blue (#688bfe) over 500ms
 
 ### Top Category Area
-```gherkin
+
 Feature: Top Category Area
-  Scenario: Category cards display
-    Given the page loads
-    Then a row of category/service cards should appear below the hero
-    And each card should have a background image and label
-    And cards should be laid out in a flex-wrap row
-```
+
+#### Scenario: Category cards display
+
+- **GIVEN** the page loads
+- **THEN** a row of category/service cards should appear below the hero
+- **AND** each card should have a background image and label
+- **AND** cards should be laid out in a flex-wrap row
 
 ### Newsletter
-```gherkin
-Feature: Newsletter Signup
-  Scenario: Newsletter form displays
-    Given the page loads
-    Then a "Stay in touch with us" section should appear
-    And an email input with blue (#688bfe) background should be visible
-    And the input should have left-rounded corners (border-radius: 5px 0 0 5px)
 
-  Scenario: Newsletter form interaction
-    Given the newsletter section is visible
-    When the user enters an email and submits
-    Then the form should accept the submission
-```
+Feature: Newsletter Signup
+
+#### Scenario: Newsletter form displays
+
+- **GIVEN** the page loads
+- **THEN** a "Stay in touch with us" section should appear
+- **AND** an email input with blue (#688bfe) background should be visible
+- **AND** the input should have left-rounded corners (border-radius: 5px 0 0 5px)
+
+#### Scenario: Newsletter form interaction
+
+- **GIVEN** the newsletter section is visible
+- **WHEN** the user enters an email and submits
+- **THEN** the form should accept the submission
 
 ### Portfolio
-```gherkin
+
 Feature: Portfolio Grid
-  Scenario: Portfolio displays with filter tabs
-    Given the page loads
-    Then a "Made by pixel" section heading should appear
-    And filter buttons should show: All Projects, Visual, Advertising, Web Development
-    And "All Projects" should be active by default
-    And a grid of portfolio items should be displayed
 
-  Scenario: Portfolio items show hover overlay
-    Given the portfolio section is visible
-    When a user hovers over a portfolio item
-    Then a centered overlay with "Branding Identity" text should appear
-    And the overlay should have a semi-transparent dark background
+#### Scenario: Portfolio displays with filter tabs
 
-  Scenario: Filter tabs filter portfolio items
-    Given the portfolio section is visible
-    When a user clicks "Visual" filter
-    Then only visual-category items should be visible
-    When a user clicks "All Projects"
-    Then all items should be visible again
-```
+- **GIVEN** the page loads
+- **THEN** a "Made by pixel" section heading should appear
+- **AND** filter buttons should show: All Projects, Visual, Advertising, Web Development
+- **AND** "All Projects" should be active by default
+- **AND** a grid of portfolio items should be displayed
+
+#### Scenario: Portfolio items show hover overlay
+
+- **GIVEN** the portfolio section is visible
+- **WHEN** a user hovers over a portfolio item
+- **THEN** a centered overlay with "Branding Identity" text should appear
+- **AND** the overlay should have a semi-transparent dark background
+
+#### Scenario: Filter tabs filter portfolio items
+
+- **GIVEN** the portfolio section is visible
+- **WHEN** a user clicks "Visual" filter
+- **THEN** only visual-category items should be visible
+- **WHEN** a user clicks "All Projects"
+- **THEN** all items should be visible again
 
 ### Contact Form
-```gherkin
-Feature: Contact Form
-  Scenario: Contact form displays
-    Given the page loads
-    Then a "Get In Touch" heading should appear
-    And a contact form with name, email, subject fields should be present
-    And a message textarea should be present
-    And a "Send Message" orange button should be visible
 
-  Scenario: Contact form validation
-    Given the contact section is visible
-    When the user submits without filling required fields
-    Then validation messages should appear
-```
+Feature: Contact Form
+
+#### Scenario: Contact form displays
+
+- **GIVEN** the page loads
+- **THEN** a "Get In Touch" heading should appear
+- **AND** a contact form with name, email, subject fields should be present
+- **AND** a message textarea should be present
+- **AND** a "Send Message" orange button should be visible
+
+#### Scenario: Contact form validation
+
+- **GIVEN** the contact section is visible
+- **WHEN** the user submits without filling required fields
+- **THEN** validation messages should appear
 
 ### Footer
-```gherkin
-Feature: Footer
-  Scenario: Footer displays widgets and social links
-    Given the page loads
-    Then a footer should be visible with 3 columns
-    And a logo should appear in the first column
-    And an Address widget should show location info
-    And a Support widget should show a phone number
-    And a Social widget should show icons for Facebook, Dribbble, Flickr, Instagram, LinkedIn, Pinterest
 
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then a link to https://www.componentdock.com/ should be present
-    And it should display as "Component Dock"
-```
+Feature: Footer
+
+#### Scenario: Footer displays widgets and social links
+
+- **GIVEN** the page loads
+- **THEN** a footer should be visible with 3 columns
+- **AND** a logo should appear in the first column
+- **AND** an Address widget should show location info
+- **AND** a Support widget should show a phone number
+- **AND** a Social widget should show icons for Facebook, Dribbble, Flickr, Instagram, LinkedIn, Pinterest
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ should be present
+- **AND** it should display as "Component Dock"
 
 ## Verification Checklist
 

@@ -32,150 +32,171 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
 
 **Visual notes from screenshot**: Clean, professional layout with a hero area featuring a large background image and dark overlay. Green accent lines flank the section subheading labels. Dark footer and testimonial sections contrast with light card-based content sections. The "How It Works" section uses a stepped numbered layout with hover-reveal descriptions.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-Scenario: Navbar renders with brand and navigation links
-  Given the app is loaded
-  Then a navbar is visible at the top
-  And the brand text reads "Virtuoso"
-  And navigation links include "Home", "About", "Services", "How It Works", "Pricing", and "Contact"
+#### Scenario: Navbar renders with brand and navigation links
 
-Scenario: Navbar is responsive with hamburger menu
-  Given the viewport width is less than 768px
-  Then the hamburger toggle button is visible
-  And clicking it reveals the navigation links
+- **GIVEN** the app is loaded
+- **THEN** a navbar is visible at the top
+- **AND** the brand text reads "Virtuoso"
+- **AND** navigation links include "Home", "About", "Services", "How It Works", "Pricing", and "Contact"
+
+#### Scenario: Navbar is responsive with hamburger menu
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the hamburger toggle button is visible
+- **AND** clicking it reveals the navigation links
 
 ### Feature: Hero section
 
-Scenario: Hero displays headline and CTA
-  Given the app is loaded
-  Then the hero section is visible with a background image
-  And a dark overlay covers the background
-  And a headline reads "Save Your Precious Time & Outsource Daily Tasks"
-  And a CTA button reads "Request Our Assistant"
+#### Scenario: Hero displays headline and CTA
 
-Scenario: Hero CTA button is clickable
-  Given the hero section is displayed
-  When the user clicks the CTA button
-  Then the page scrolls or navigates appropriately
+- **GIVEN** the app is loaded
+- **THEN** the hero section is visible with a background image
+- **AND** a dark overlay covers the background
+- **AND** a headline reads "Save Your Precious Time & Outsource Daily Tasks"
+- **AND** a CTA button reads "Request Our Assistant"
+
+#### Scenario: Hero CTA button is clickable
+
+- **GIVEN** the hero section is displayed
+- **WHEN** the user clicks the CTA button
+- **THEN** the page scrolls or navigates appropriately
 
 ### Feature: Why Choose Us section
 
-Scenario: Why Choose Us section displays with image and feature list
-  Given the app is loaded
-  Then the "Why Choose Us" section is visible
-  And a subheading label "Why Choose Us" is shown in green accent
-  And a heading reads "Top Reason Why We Need to Get Virtual Assistant"
-  And an image is displayed on the left side
-  And four feature items are listed on the right side
+#### Scenario: Why Choose Us section displays with image and feature list
 
-Scenario: Feature items have icon, title, and description
-  Given the Why Choose Us section is displayed
-  Then each feature item shows an icon, a title, and a short description
-  And the four features are: "Get decided business results", "Save time with qualified assistants", "Work & Life Balance", "Quick formulate your all plans"
+- **GIVEN** the app is loaded
+- **THEN** the "Why Choose Us" section is visible
+- **AND** a subheading label "Why Choose Us" is shown in green accent
+- **AND** a heading reads "Top Reason Why We Need to Get Virtual Assistant"
+- **AND** an image is displayed on the left side
+- **AND** four feature items are listed on the right side
+
+#### Scenario: Feature items have icon, title, and description
+
+- **GIVEN** the Why Choose Us section is displayed
+- **THEN** each feature item shows an icon, a title, and a short description
+- **AND** the four features are: "Get decided business results", "Save time with qualified assistants", "Work & Life Balance", "Quick formulate your all plans"
 
 ### Feature: Services section
 
-Scenario: Services grid displays 8 service cards
-  Given the app is loaded
-  Then the "Our Services & Offers" section is visible
-  And a subheading reads "Virtual Assistant Services"
-  And 8 service cards are displayed in a 4-column grid
+#### Scenario: Services grid displays 8 service cards
 
-Scenario: Each service card has icon, title, and description
-  Given the services section is displayed
-  Then each card shows a centered icon, a title, and a description
-  And the services are: "Family Task", "Online Research", "Management Task", "Project Management", "Writing Editing", "Multilingual Services", "Customer Service", "Executive Admin"
+- **GIVEN** the app is loaded
+- **THEN** the "Our Services & Offers" section is visible
+- **AND** a subheading reads "Virtual Assistant Services"
+- **AND** 8 service cards are displayed in a 4-column grid
+
+#### Scenario: Each service card has icon, title, and description
+
+- **GIVEN** the services section is displayed
+- **THEN** each card shows a centered icon, a title, and a description
+- **AND** the services are: "Family Task", "Online Research", "Management Task", "Project Management", "Writing Editing", "Multilingual Services", "Customer Service", "Executive Admin"
 
 ### Feature: About / Comparison section
 
-Scenario: About section displays with image and progress circles
-  Given the app is loaded
-  Then a section displays "Get Your Own Highly Skilled Virtual Assistant"
-  And an image is shown on the left
-  And descriptive text is shown on the right
-  And two circular progress indicators are displayed below the text
+#### Scenario: About section displays with image and progress circles
 
-Scenario: Progress circles show comparison data
-  Given the about/comparison section is displayed
-  Then one circle shows "30%" labeled "Regular Office Employee"
-  And another circle shows "75%" labeled "Virtual Assistant Employee"
+- **GIVEN** the app is loaded
+- **THEN** a section displays "Get Your Own Highly Skilled Virtual Assistant"
+- **AND** an image is shown on the left
+- **AND** descriptive text is shown on the right
+- **AND** two circular progress indicators are displayed below the text
+
+#### Scenario: Progress circles show comparison data
+
+- **GIVEN** the about/comparison section is displayed
+- **THEN** one circle shows "30%" labeled "Regular Office Employee"
+- **AND** another circle shows "75%" labeled "Virtual Assistant Employee"
 
 ### Feature: Testimonials section
 
-Scenario: Testimonials carousel displays client reviews
-  Given the app is loaded
-  Then the testimonial section is visible with a dark background
-  And a subheading reads "Testimonial"
-  And a heading reads "Happy Clients"
-  And a carousel shows at least 3 testimonial cards
+#### Scenario: Testimonials carousel displays client reviews
 
-Scenario: Each testimonial card has quote, avatar, name, and role
-  Given the testimonial carousel is displayed
-  Then each card shows a quote icon, a testimonial paragraph, a user avatar image, a name, and a role/title
+- **GIVEN** the app is loaded
+- **THEN** the testimonial section is visible with a dark background
+- **AND** a subheading reads "Testimonial"
+- **AND** a heading reads "Happy Clients"
+- **AND** a carousel shows at least 3 testimonial cards
+
+#### Scenario: Each testimonial card has quote, avatar, name, and role
+
+- **GIVEN** the testimonial carousel is displayed
+- **THEN** each card shows a quote icon, a testimonial paragraph, a user avatar image, a name, and a role/title
 
 ### Feature: How It Works section
 
-Scenario: How It Works shows 3-step process
-  Given the app is loaded
-  Then the "How It Works" section is visible
-  And a subheading reads "Proceduce" [sic — keep as-is for fidelity]
-  And 3 step cards are displayed in a row
-  And each card has a number (01, 02, 03), a title, and a description
+#### Scenario: How It Works shows 3-step process
 
-Scenario: Step cards reveal description on hover/active
-  Given the How It Works section is displayed
-  Then step 1 is "Handling The Task"
-  And step 2 is "Creating To-Do List" (active/highlighted)
-  And step 3 is "Schedule A Meeting"
+- **GIVEN** the app is loaded
+- **THEN** the "How It Works" section is visible
+- **AND** a subheading reads "Proceduce" [sic — keep as-is for fidelity]
+- **AND** 3 step cards are displayed in a row
+- **AND** each card has a number (01, 02, 03), a title, and a description
+
+#### Scenario: Step cards reveal description on hover/active
+
+- **GIVEN** the How It Works section is displayed
+- **THEN** step 1 is "Handling The Task"
+- **AND** step 2 is "Creating To-Do List" (active/highlighted)
+- **AND** step 3 is "Schedule A Meeting"
 
 ### Feature: Pricing section
 
-Scenario: Pricing displays 4 plan cards
-  Given the app is loaded
-  Then the "Affordable Packages" section is visible
-  And a subheading reads "Price & Plans"
-  And 4 pricing cards are displayed in a row
+#### Scenario: Pricing displays 4 plan cards
 
-Scenario: Each pricing card shows price, plan name, features, and CTA
-  Given the pricing section is displayed
-  Then card 1 shows "$49/mo" with label "Small Plan"
-  And card 2 shows "$79/mo" with label "Startup Plan"
-  And card 3 shows "$109/mo" with label "Medium Plan"
-  And card 4 shows "$149/mo" with label "Commercial Plan"
-  And each card lists 2 features with checkmarks
-  And each card has a "Get Started" button
+- **GIVEN** the app is loaded
+- **THEN** the "Affordable Packages" section is visible
+- **AND** a subheading reads "Price & Plans"
+- **AND** 4 pricing cards are displayed in a row
+
+#### Scenario: Each pricing card shows price, plan name, features, and CTA
+
+- **GIVEN** the pricing section is displayed
+- **THEN** card 1 shows "$49/mo" with label "Small Plan"
+- **AND** card 2 shows "$79/mo" with label "Startup Plan"
+- **AND** card 3 shows "$109/mo" with label "Medium Plan"
+- **AND** card 4 shows "$149/mo" with label "Commercial Plan"
+- **AND** each card lists 2 features with checkmarks
+- **AND** each card has a "Get Started" button
 
 ### Feature: Blog section
 
-Scenario: Blog section displays recent posts
-  Given the app is loaded
-  Then the "Recent Blog" section is visible
-  And a subheading reads "Blog"
-  And 3 blog post cards are displayed
+#### Scenario: Blog section displays recent posts
 
-Scenario: Each blog card has image, date, author, comments, and title
-  Given the blog section is displayed
-  Then each card shows a background image, a date, an author, a comment count, and a post title
+- **GIVEN** the app is loaded
+- **THEN** the "Recent Blog" section is visible
+- **AND** a subheading reads "Blog"
+- **AND** 3 blog post cards are displayed
+
+#### Scenario: Each blog card has image, date, author, comments, and title
+
+- **GIVEN** the blog section is displayed
+- **THEN** each card shows a background image, a date, an author, a comment count, and a post title
 
 ### Feature: Footer
 
-Scenario: Footer displays with multiple columns
-  Given the app is loaded
-  Then the footer is visible with a dark background (#1a1a1a)
-  And it contains the brand "Virtuoso" with social media icons (Twitter, Facebook, Instagram)
-  And it has columns: "Explore", "Legal", "Company", and "Have a Questions?"
+#### Scenario: Footer displays with multiple columns
 
-Scenario: Footer includes contact information
-  Given the footer is displayed
-  Then it shows an address, phone number, and email
+- **GIVEN** the app is loaded
+- **THEN** the footer is visible with a dark background (#1a1a1a)
+- **AND** it contains the brand "Virtuoso" with social media icons (Twitter, Facebook, Instagram)
+- **AND** it has columns: "Explore", "Legal", "Company", and "Have a Questions?"
 
-Scenario: Footer links to Component Dock
-  Given the footer is displayed
-  Then a link to "https://www.componentdock.com/" is present
-  And it reads "Component Dock" (replacing the original Colorlib attribution)
+#### Scenario: Footer includes contact information
+
+- **GIVEN** the footer is displayed
+- **THEN** it shows an address, phone number, and email
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is displayed
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** it reads "Component Dock" (replacing the original Colorlib attribution)
 
 ## Verification checklist
 

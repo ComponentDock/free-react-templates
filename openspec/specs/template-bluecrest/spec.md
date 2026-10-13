@@ -44,71 +44,79 @@ Extracted from live preview CSS (`css/main.css`):
 8. **Contact** — white-bg card layout: left = contact image; right = contact form (name, email, textarea, "Send Message" gradient button)
 9. **Footer** — dark bg (#000); copyright text + social icons (Facebook, Twitter, Dribbble, Behance) in dark squares
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Bluecrest landing page
 
-```gherkin
-Scenario: Header displays logo and navigation
-  Given the user visits the Bluecrest page
-  Then the header shows the logo on the left
-  And the navigation shows Home, Generic, Elements links
-  And the nav is transparent over the hero
-  And on mobile the nav collapses to a hamburger menu
+#### Scenario: Header displays logo and navigation
 
-Scenario: Hero banner shows fullscreen title
-  Given the user visits the Bluecrest page
-  Then a fullscreen background image is displayed
-  And "Introducing" appears as a subtitle
-  And "BLUELINE" appears as a large heading with text-shadow
+- **GIVEN** the user visits the Bluecrest page
+- **THEN** the header shows the logo on the left
+- **AND** the navigation shows Home, Generic, Elements links
+- **AND** the nav is transparent over the hero
+- **AND** on mobile the nav collapses to a hamburger menu
 
-Scenario: Features section shows 3 numbered cards
-  Given the user scrolls to the Features section
-  Then 3 feature items are displayed in a row
-  And each has a gradient-colored number (01, 02, 03), title, and description
-  And the titles are Responsive View, Multiple Layouts, Flexible Design
+#### Scenario: Hero banner shows fullscreen title
 
-Scenario: Video section shows embed and description
-  Given the user scrolls to the Video section
-  Then a video area with play button overlay is displayed
-  And below it, a heading with gradient-highlighted spans and a description paragraph appear
+- **GIVEN** the user visits the Bluecrest page
+- **THEN** a fullscreen background image is displayed
+- **AND** "Introducing" appears as a subtitle
+- **AND** "BLUELINE" appears as a large heading with text-shadow
 
-Scenario: Services section has split dark/light layout
-  Given the user scrolls to the Services section
-  Then the left half has a dark background with white heading "Services We Offered" and description
-  And the right half has a white background with 4 service cards in a 2x2 grid
-  And each service card has an icon, title, and description
+#### Scenario: Features section shows 3 numbered cards
 
-Scenario: Latest Works shows image slider
-  Given the user scrolls to the Latest Works section
-  Then a heading "Some Of our Latest Works" is displayed
-  And a horizontal image slider with navigation arrows is shown
+- **GIVEN** the user scrolls to the Features section
+- **THEN** 3 feature items are displayed in a row
+- **AND** each has a gradient-colored number (01, 02, 03), title, and description
+- **AND** the titles are Responsive View, Multiple Layouts, Flexible Design
 
-Scenario: Newsletter section shows subscription form
-  Given the user scrolls to the Newsletter section
-  Then "Subscribe for our Newsletter" heading is displayed
-  And an email input with rounded pill shape is shown
-  And a "Get Started" gradient button is next to the input
+#### Scenario: Video section shows embed and description
 
-Scenario: Contact section has image and form
-  Given the user scrolls to the Contact section
-  Then a card layout shows an image on the left
-  And a contact form on the right with name, email, textarea fields
-  And a "Send Message" gradient button
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a video area with play button overlay is displayed
+- **AND** below it, a heading with gradient-highlighted spans and a description paragraph appear
 
-Scenario: Footer shows copyright and social links
-  Given the user scrolls to the footer
-  Then a dark background footer shows copyright text
-  And social icons for Facebook, Twitter, Dribbble, Behance are displayed
-  And it links to https://www.componentdock.com/
+#### Scenario: Services section has split dark/light layout
 
-Scenario: Design tokens are applied consistently
-  Given any section of the page
-  Then headings use Poppins font, weight 600
-  And primary buttons use the blue-to-cyan gradient with rounded pill shape
-  And the accent color #77d5f7 is used for highlights and links
-  And inputs have rounded pill shape with light background
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the left half has a dark background with white heading "Services We Offered" and description
+- **AND** the right half has a white background with 4 service cards in a 2x2 grid
+- **AND** each service card has an icon, title, and description
+
+#### Scenario: Latest Works shows image slider
+
+- **GIVEN** the user scrolls to the Latest Works section
+- **THEN** a heading "Some Of our Latest Works" is displayed
+- **AND** a horizontal image slider with navigation arrows is shown
+
+#### Scenario: Newsletter section shows subscription form
+
+- **GIVEN** the user scrolls to the Newsletter section
+- **THEN** "Subscribe for our Newsletter" heading is displayed
+- **AND** an email input with rounded pill shape is shown
+- **AND** a "Get Started" gradient button is next to the input
+
+#### Scenario: Contact section has image and form
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a card layout shows an image on the left
+- **AND** a contact form on the right with name, email, textarea fields
+- **AND** a "Send Message" gradient button
+
+#### Scenario: Footer shows copyright and social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer shows copyright text
+- **AND** social icons for Facebook, Twitter, Dribbble, Behance are displayed
+- **AND** it links to https://www.componentdock.com/
+
+#### Scenario: Design tokens are applied consistently
+
+- **GIVEN** any section of the page
+- **THEN** headings use Poppins font, weight 600
+- **AND** primary buttons use the blue-to-cyan gradient with rounded pill shape
+- **AND** the accent color #77d5f7 is used for highlights and links
+- **AND** inputs have rounded pill shape with light background
 
 ## Verification checklist
 

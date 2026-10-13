@@ -76,68 +76,80 @@ and a 4-column footer.
     list, Services list, "Have a Questions?" with contact + social icons.
     Bottom: copyright + "Made with ❤ by Component Dock" link.
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Palette template behaviour
+
 Feature: Palette Template
-  As a visitor to the Palette portfolio site
-  I want to see a professional designer portfolio
-  So I can evaluate the designer's work and contact them
+As a visitor to the Palette portfolio site
+I want to see a professional designer portfolio
+So I can evaluate the designer's work and contact them
 
-  Scenario: Navbar displays all sections
-    Given I am on the Palette homepage
-    Then I see a navbar with "Palette." brand
-    And the navbar has links to Home, About, Skills, Services, Projects, Blog, Contact
+#### Scenario: Navbar displays all sections
 
-  Scenario: Hero section shows designer info
-    Given I am on the Palette homepage
-    Then I see a hero section with heading "Creative UI/UX Designer & Developer"
-    And I see "Hire me" and "Download CV" buttons
+- **GIVEN** I am on the Palette homepage
+- **THEN** I see a navbar with "Palette." brand
+- **AND** the navbar has links to Home, About, Skills, Services, Projects, Blog, Contact
 
-  Scenario: Stats section shows counters
-    Given I scroll to the stats section
-    Then I see 4 stat items: Project Complete, Happy Clients, Cups of coffee, Years experienced
+#### Scenario: Hero section shows designer info
 
-  Scenario: About section shows personal info
-    Given I scroll to the about section
-    Then I see "About Me" heading
-    And I see personal info items (Name, Date of birth, Address, Email, Phone)
-    And I see interest tags (Music, Travel, Movie, Sports)
+- **GIVEN** I am on the Palette homepage
+- **THEN** I see a hero section with heading "Creative UI/UX Designer & Developer"
+- **AND** I see "Hire me" and "Download CV" buttons
 
-  Scenario: Skills section shows progress
-    Given I scroll to the skills section
-    Then I see 6 skill cards: CSS, HTML, jQuery, Photoshop, WordPress, SEO
-    And each card shows a percentage value
+#### Scenario: Stats section shows counters
 
-  Scenario: Services section shows offerings
-    Given I scroll to the services section
-    Then I see 8 service cards in a grid
-    And each card has an icon, title, and description
+- **GIVEN** I scroll to the stats section
+- **THEN** I see 4 stat items: Project Complete, Happy Clients, Cups of coffee, Years experienced
 
-  Scenario: CTA banner prompts contact
-    Given I scroll to the CTA section
-    Then I see "Have a project on your mind?" heading
-    And I see a "Contact me" button
+#### Scenario: About section shows personal info
 
-  Scenario: Projects section shows portfolio
-    Given I scroll to the projects section
-    Then I see 8 project cards with images and overlay text
+- **GIVEN** I scroll to the about section
+- **THEN** I see "About Me" heading
+- **AND** I see personal info items (Name, Date of birth, Address, Email, Phone)
+- **AND** I see interest tags (Music, Travel, Movie, Sports)
 
-  Scenario: Testimonials section shows reviews
-    Given I scroll to the testimonials section
-    Then I see testimonial cards with quotes, names, and positions
+#### Scenario: Skills section shows progress
 
-  Scenario: Blog section shows posts
-    Given I scroll to the blog section
-    Then I see 3 blog cards with images, dates, and titles
+- **GIVEN** I scroll to the skills section
+- **THEN** I see 6 skill cards: CSS, HTML, jQuery, Photoshop, WordPress, SEO
+- **AND** each card shows a percentage value
 
-  Scenario: Contact section has form and info
-    Given I scroll to the contact section
-    Then I see a contact form with name, email, subject, message fields
-    And I see contact info cards for address, phone, email, website
+#### Scenario: Services section shows offerings
 
-  Scenario: Footer contains Component Dock link
-    Given I scroll to the footer
-    Then I see a link to https://www.componentdock.com/
-    And the link text mentions "Component Dock"
-```
+- **GIVEN** I scroll to the services section
+- **THEN** I see 8 service cards in a grid
+- **AND** each card has an icon, title, and description
+
+#### Scenario: CTA banner prompts contact
+
+- **GIVEN** I scroll to the CTA section
+- **THEN** I see "Have a project on your mind?" heading
+- **AND** I see a "Contact me" button
+
+#### Scenario: Projects section shows portfolio
+
+- **GIVEN** I scroll to the projects section
+- **THEN** I see 8 project cards with images and overlay text
+
+#### Scenario: Testimonials section shows reviews
+
+- **GIVEN** I scroll to the testimonials section
+- **THEN** I see testimonial cards with quotes, names, and positions
+
+#### Scenario: Blog section shows posts
+
+- **GIVEN** I scroll to the blog section
+- **THEN** I see 3 blog cards with images, dates, and titles
+
+#### Scenario: Contact section has form and info
+
+- **GIVEN** I scroll to the contact section
+- **THEN** I see a contact form with name, email, subject, message fields
+- **AND** I see contact info cards for address, phone, email, website
+
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a link to https://www.componentdock.com/
+- **AND** the link text mentions "Component Dock"

@@ -3,6 +3,12 @@
 Recreation of ColorLib **Search Form/Bar 06**
 (https://colorlib.com/wp/template/search-form-bar-06/)
 
+## Purpose
+
+ProbeBar is a minimal search form bar component page with a centered heading, a pill-shaped search input and a circular olive-green submit button.
+
+It recreates the ColorLib **Search Form/Bar 06** design (https://colorlib.com/wp/template/search-form-bar-06/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from screenshot analysis)
 
 - **Font**: System sans-serif (Helvetica/Arial-like), no Google Font loaded
@@ -27,20 +33,26 @@ Single section with:
 2. Search form: circular green button (left) + rounded input field (right)
 3. Footer with Component Dock branding (added per convention)
 
-## Scenarios
+## Requirements
 
 ### ProbeBar component
-- GIVEN the page loads, THEN the heading is visible and centered
-- GIVEN the page loads, THEN the search input is visible with placeholder "Search..."
-- GIVEN the page loads, THEN the green circular search button is visible to the left of the input
-- GIVEN the user clicks the search button, THEN no page navigation occurs (form submit prevented)
-- GIVEN the user types in the search input, THEN the input value updates
-- GIVEN the user focuses the input, THEN the input is focused and ready for typing
-- GIVEN the footer is present, THEN it links to componentdock.com
+
+#### Scenario: ProbeBar component
+
+- **GIVEN** the page loads, THEN the heading is visible and centered
+- **GIVEN** the page loads, THEN the search input is visible with placeholder "Search..."
+- **GIVEN** the page loads, THEN the green circular search button is visible to the left of the input
+- **GIVEN** the user clicks the search button, THEN no page navigation occurs (form submit prevented)
+- **GIVEN** the user types in the search input, THEN the input value updates
+- **GIVEN** the user focuses the input, THEN the input is focused and ready for typing
+- **GIVEN** the footer is present, THEN it links to componentdock.com
 
 ### Responsive behavior
-- GIVEN a mobile viewport, THEN the search bar scales down proportionally
-- GIVEN a desktop viewport, THEN the search bar is centered with max-width constraint
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** a mobile viewport, THEN the search bar scales down proportionally
+- **GIVEN** a desktop viewport, THEN the search bar is centered with max-width constraint
 
 ## Verification Checklist
 

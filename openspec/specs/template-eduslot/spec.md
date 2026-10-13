@@ -51,81 +51,74 @@ Recreation of ColorLib template **Reg Form V12** (`colorlib-regform-12`).
 10. **Submit button** — "Request an appointment", purple, left-aligned
 11. **White space below** — extends to viewport bottom
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Full-viewport layout
-```gherkin
-Given the page loads
-Then the background image covers the full viewport
-And a dark overlay covers the background
-And a white card panel appears on the left ~55% of the viewport
-```
+### Feature: EduSlot template behaviour
 
-### Scenario: Form title visible
-```gherkin
-Given the form card is visible
-Then the title "EDUCATION APPOINTMENT FORM" is displayed
-And the title is uppercase, bold, and dark colored
-And the title is positioned at the top of the card with padding
-```
+#### Scenario: Full-viewport layout
 
-### Scenario: Personal information fields
-```gherkin
-Given the form card is visible
-Then there are four text input fields in order:
-  | Field        | Placeholder    |
-  | Title        | Title          |
-  | Your Name    | Your Name      |
-  | Email        | Email          |
-  | Phone number | Phone number   |
-And each field has a light gray bottom border only
-And each field has placeholder text in light gray
-```
+- **GIVEN** the page loads
+- **THEN** the background image covers the full viewport
+- **AND** a dark overlay covers the background
+- **AND** a white card panel appears on the left ~55% of the viewport
 
-### Scenario: Course Type dropdown
-```gherkin
-Given the form card is visible
-Then a "Course Type" dropdown select is displayed below the text inputs
-And it shows a dropdown chevron on the right
-```
+#### Scenario: Form title visible
 
-### Scenario: Contact preference section
-```gherkin
-Given the form card is visible
-Then a bold heading "How would you like to be located?" is displayed
-And a dropdown for contact method is shown (default: "By phone")
-And a dropdown for hours is shown (default: "Hours : 8am 10pm")
-```
+- **GIVEN** the form card is visible
+- **THEN** the title "EDUCATION APPOINTMENT FORM" is displayed
+- **AND** the title is uppercase, bold, and dark colored
+- **AND** the title is positioned at the top of the card with padding
 
-### Scenario: Terms and conditions checkbox
-```gherkin
-Given the form card is visible
-Then a checkbox is displayed with label "I agree to the"
-And "Terms and Conditions" is a clickable link styled in blue
-```
+#### Scenario: Personal information fields
 
-### Scenario: Submit button
-```gherkin
-Given the form card is visible
-Then a purple button labeled "Request an appointment" is displayed
-And the button has white text on a purple (#6c63ff) background
-And the button is left-aligned below the checkbox
-And hovering the button darkens the background slightly
-```
+- **GIVEN** the form card is visible
+- **THEN** there are four text input fields in order:
+| Field        | Placeholder    |
+| Title        | Title          |
+| Your Name    | Your Name      |
+| Email        | Email          |
+| Phone number | Phone number   |
+- **AND** each field has a light gray bottom border only
+- **AND** each field has placeholder text in light gray
 
-### Scenario: Right side of viewport
-```gherkin
-Given the page loads
-Then the right side of the viewport shows only the background image
-And no card or form elements appear on the right side
-```
+#### Scenario: Course Type dropdown
 
-### Scenario: Responsive behavior
-```gherkin
-Given the viewport is narrow (mobile)
-Then the card should expand to near-full width
-And the background image remains visible above/below the card
-```
+- **GIVEN** the form card is visible
+- **THEN** a "Course Type" dropdown select is displayed below the text inputs
+- **AND** it shows a dropdown chevron on the right
+
+#### Scenario: Contact preference section
+
+- **GIVEN** the form card is visible
+- **THEN** a bold heading "How would you like to be located?" is displayed
+- **AND** a dropdown for contact method is shown (default: "By phone")
+- **AND** a dropdown for hours is shown (default: "Hours : 8am 10pm")
+
+#### Scenario: Terms and conditions checkbox
+
+- **GIVEN** the form card is visible
+- **THEN** a checkbox is displayed with label "I agree to the"
+- **AND** "Terms and Conditions" is a clickable link styled in blue
+
+#### Scenario: Submit button
+
+- **GIVEN** the form card is visible
+- **THEN** a purple button labeled "Request an appointment" is displayed
+- **AND** the button has white text on a purple (#6c63ff) background
+- **AND** the button is left-aligned below the checkbox
+- **AND** hovering the button darkens the background slightly
+
+#### Scenario: Right side of viewport
+
+- **GIVEN** the page loads
+- **THEN** the right side of the viewport shows only the background image
+- **AND** no card or form elements appear on the right side
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the viewport is narrow (mobile)
+- **THEN** the card should expand to near-full width
+- **AND** the background image remains visible above/below the card
 
 ## Verification Checklist
 

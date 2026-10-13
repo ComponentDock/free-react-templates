@@ -144,169 +144,172 @@ The screenshot shows a dark, moody musician website with:
    - Social icons row (Pinterest, Facebook, Twitter, Dribbble, Behance)
    - Copyright bar
 
-## Gherkin Requirements
+## Requirements
 
 ### Hero Slider
 
-```gherkin
 Feature: Hero Slider
-  As a visitor, I want to see a fullscreen hero slider so I can discover the music site.
+As a visitor, I want to see a fullscreen hero slider so I can discover the music site.
 
-  Scenario: Hero slider renders with background images
-    Given the page loads
-    Then a fullscreen hero section is visible
-    And the hero has a dark overlay on the background image
-    And the headline "your music." is displayed in large white text
+#### Scenario: Hero slider renders with background images
 
-  Scenario: Ticket search form is present
-    Given the hero slider is visible
-    Then an Event dropdown selector is displayed
-    And a Tickets text input is displayed
-    And a Search button is displayed
+- **GIVEN** the page loads
+- **THEN** a fullscreen hero section is visible
+- **AND** the hero has a dark overlay on the background image
+- **AND** the headline "your music." is displayed in large white text
 
-  Scenario: Social links sidebar is visible
-    Given the hero slider is visible
-    Then a "follow" label is displayed
-    And social media icon links are displayed in a vertical list
+#### Scenario: Ticket search form is present
 
-  Scenario: Scroll down indicator is visible
-    Given the hero slider is visible
-    Then a scroll-down arrow/link is displayed at the bottom
-```
+- **GIVEN** the hero slider is visible
+- **THEN** an Event dropdown selector is displayed
+- **AND** a Tickets text input is displayed
+- **AND** a Search button is displayed
+
+#### Scenario: Social links sidebar is visible
+
+- **GIVEN** the hero slider is visible
+- **THEN** a "follow" label is displayed
+- **AND** social media icon links are displayed in a vertical list
+
+#### Scenario: Scroll down indicator is visible
+
+- **GIVEN** the hero slider is visible
+- **THEN** a scroll-down arrow/link is displayed at the bottom
 
 ### Song of the Week Player
 
-```gherkin
 Feature: Song of the Week Player
-  As a visitor, I want to play a featured song so I can preview the music.
+As a visitor, I want to play a featured song so I can preview the music.
 
-  Scenario: Player section renders with parallax background
-    Given the Song of the Week section is in the viewport
-    Then a parallax background image is displayed
-    And the section title "song of the week" is visible
+#### Scenario: Player section renders with parallax background
 
-  Scenario: Player controls are interactive
-    Given the audio player is displayed
-    Then a play button is visible
-    And a stop button is visible
-    And a progress bar with current time and duration is visible
-    And an artist name is displayed
+- **GIVEN** the Song of the Week section is in the viewport
+- **THEN** a parallax background image is displayed
+- **AND** the section title "song of the week" is visible
 
-  Scenario: Volume controls are present
-    Given the audio player is displayed
-    Then a mute/volume button is visible
-    And a volume slider bar is visible
-```
+#### Scenario: Player controls are interactive
+
+- **GIVEN** the audio player is displayed
+- **THEN** a play button is visible
+- **AND** a stop button is visible
+- **AND** a progress bar with current time and duration is visible
+- **AND** an artist name is displayed
+
+#### Scenario: Volume controls are present
+
+- **GIVEN** the audio player is displayed
+- **THEN** a mute/volume button is visible
+- **AND** a volume slider bar is visible
 
 ### Tour Dates
 
-```gherkin
 Feature: Tour Dates
-  As a visitor, I want to see upcoming tour dates so I can attend concerts.
+As a visitor, I want to see upcoming tour dates so I can attend concerts.
 
-  Scenario: Tour dates list renders
-    Given the Tour Dates section is visible
-    Then the title "Tour Dates" is displayed
-    And at least 4 tour date entries are listed
-    And each entry shows date, venue name, and location
-    And each entry has a "get your tickets" button
+#### Scenario: Tour dates list renders
 
-  Scenario: Tour promotional card renders
-    Given the Tour Dates section is visible
-    Then a promotional card is displayed on the right side
-    And the card shows "it's awesome" text
-    And the card shows a year, title "world tour", and subtitle
-    And the card has a "get your tickets" button
+- **GIVEN** the Tour Dates section is visible
+- **THEN** the title "Tour Dates" is displayed
+- **AND** at least 4 tour date entries are listed
+- **AND** each entry shows date, venue name, and location
+- **AND** each entry has a "get your tickets" button
 
-  Scenario: See All Tour Dates link is visible
-    Given the Tour Dates section is visible
-    Then a "See All Tour Dates" link is displayed below the list
-```
+#### Scenario: Tour promotional card renders
+
+- **GIVEN** the Tour Dates section is visible
+- **THEN** a promotional card is displayed on the right side
+- **AND** the card shows "it's awesome" text
+- **AND** the card shows a year, title "world tour", and subtitle
+- **AND** the card has a "get your tickets" button
+
+#### Scenario: See All Tour Dates link is visible
+
+- **GIVEN** the Tour Dates section is visible
+- **THEN** a "See All Tour Dates" link is displayed below the list
 
 ### App Download
 
-```gherkin
 Feature: App Download
-  As a visitor, I want to download the music app so I can listen on mobile.
+As a visitor, I want to download the music app so I can listen on mobile.
 
-  Scenario: App section renders with device image
-    Given the App Download section is visible
-    Then a phone/device image is displayed
-    And the title "Get Your Music Right Now!" is displayed
+#### Scenario: App section renders with device image
 
-  Scenario: Store download buttons are visible
-    Given the App Download section is visible
-    Then an App Store download button/image is displayed
-    And a Google Play download button/image is displayed
-```
+- **GIVEN** the App Download section is visible
+- **THEN** a phone/device image is displayed
+- **AND** the title "Get Your Music Right Now!" is displayed
+
+#### Scenario: Store download buttons are visible
+
+- **GIVEN** the App Download section is visible
+- **THEN** an App Store download button/image is displayed
+- **AND** a Google Play download button/image is displayed
 
 ### Featured Albums
 
-```gherkin
 Feature: Featured Albums
-  As a visitor, I want to browse featured albums so I can discover music.
+As a visitor, I want to browse featured albums so I can discover music.
 
-  Scenario: Featured Albums section renders
-    Given the Featured Albums section is visible
-    Then the title "Featured Albums" is centered
-    And a grid/list of album entries is displayed
-```
+#### Scenario: Featured Albums section renders
+
+- **GIVEN** the Featured Albums section is visible
+- **THEN** the title "Featured Albums" is centered
+- **AND** a grid/list of album entries is displayed
 
 ### Latest News
 
-```gherkin
 Feature: Latest News
-  As a visitor, I want to read the latest news so I can stay updated.
+As a visitor, I want to read the latest news so I can stay updated.
 
-  Scenario: News grid renders with 3 cards
-    Given the Latest News section is visible
-    Then the title "Latest News" is displayed
-    And 3 news post cards are displayed in a grid
-    And each card has an image, date, title, and text excerpt
+#### Scenario: News grid renders with 3 cards
 
-  Scenario: News cards have alternating image positions
-    Given the Latest News section is visible
-    Then the first card has the image on top
-    And the second card has the image on bottom
-    And the third card has the image on top
-```
+- **GIVEN** the Latest News section is visible
+- **THEN** the title "Latest News" is displayed
+- **AND** 3 news post cards are displayed in a grid
+- **AND** each card has an image, date, title, and text excerpt
+
+#### Scenario: News cards have alternating image positions
+
+- **GIVEN** the Latest News section is visible
+- **THEN** the first card has the image on top
+- **AND** the second card has the image on bottom
+- **AND** the third card has the image on top
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter Subscription
-  As a visitor, I want to subscribe to the newsletter so I get updates.
+As a visitor, I want to subscribe to the newsletter so I get updates.
 
-  Scenario: Newsletter form renders
-    Given the Newsletter section is visible
-    Then the title "Subscribe & Follow" is displayed
-    And description text is displayed
-    And an email input field is displayed
-    And a "subscribe" button is displayed
+#### Scenario: Newsletter form renders
 
-  Scenario: Newsletter form validates email
-    Given the Newsletter section is visible
-    When I click "subscribe" without entering an email
-    Then the form shows a validation error
-```
+- **GIVEN** the Newsletter section is visible
+- **THEN** the title "Subscribe & Follow" is displayed
+- **AND** description text is displayed
+- **AND** an email input field is displayed
+- **AND** a "subscribe" button is displayed
+
+#### Scenario: Newsletter form validates email
+
+- **GIVEN** the Newsletter section is visible
+- **WHEN** I click "subscribe" without entering an email
+- **THEN** the form shows a validation error
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  As a visitor, I want to see the footer so I can find social links.
+As a visitor, I want to see the footer so I can find social links.
 
-  Scenario: Footer renders with logo and social icons
-    Given the footer is visible
-    Then the logo is displayed
-    And social media icon links are displayed (Pinterest, Facebook,
-        Twitter, Dribbble, Behance)
+#### Scenario: Footer renders with logo and social icons
 
-  Scenario: Footer has copyright
-    Given the footer is visible
-    Then a copyright notice is displayed in the footer bar
-    And the copyright links to Component Dock
-```
+- **GIVEN** the footer is visible
+- **THEN** the logo is displayed
+- **AND** social media icon links are displayed (Pinterest, Facebook,
+Twitter, Dribbble, Behance)
+
+#### Scenario: Footer has copyright
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright notice is displayed in the footer bar
+- **AND** the copyright links to Component Dock
 
 ## Verification Checklist
 

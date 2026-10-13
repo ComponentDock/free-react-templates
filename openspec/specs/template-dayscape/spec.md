@@ -43,7 +43,7 @@ Stack: Vite + React 19 + TypeScript + Tailwind CSS 4. No ColorLib references in 
 - **Footer icons**: `w-5 h-5`, `text-rose-600`, hover `text-rose-700`
 - **Selected date**: `w-8 h-8`, `bg-blue-500 text-white`, `rounded-full`, centered
 
-## Gherkin requirements + scenarios
+## Requirements
 
 ### Feature: Calendar Datepicker
 
@@ -51,74 +51,74 @@ As a user I want to select a date and time from a visual calendar so that I can 
 
 #### Scenario: Initial render shows datepicker with current selection
 
-Given the Dayscape page loads
-When the datepicker renders
-Then the input field displays a formatted datetime placeholder "MM/DD/YYYY hh:mm:ss"
-And the calendar dropdown is visible below the input
-And the current month/year is displayed in the header (e.g. "December 2020")
-And day headers show "Su Mo Tu We Th Fr Sa"
-And dates for the current month are shown in a 7-column grid
-And dates from adjacent months are shown in muted gray
-And the currently selected date (if any) is highlighted with a blue circle
-And four footer icons are visible: chevron-up, clock, trash, X
+- **GIVEN** the Dayscape page loads
+- **WHEN** the datepicker renders
+- **THEN** the input field displays a formatted datetime placeholder "MM/DD/YYYY hh:mm:ss"
+- **AND** the calendar dropdown is visible below the input
+- **AND** the current month/year is displayed in the header (e.g. "December 2020")
+- **AND** day headers show "Su Mo Tu We Th Fr Sa"
+- **AND** dates for the current month are shown in a 7-column grid
+- **AND** dates from adjacent months are shown in muted gray
+- **AND** the currently selected date (if any) is highlighted with a blue circle
+- **AND** four footer icons are visible: chevron-up, clock, trash, X
 
 #### Scenario: Month navigation
 
-Given the calendar dropdown is open
-When the user clicks the right arrow
-Then the month advances by one and the date grid updates
-When the user clicks the left arrow
-Then the month goes back by one and the date grid updates
+- **GIVEN** the calendar dropdown is open
+- **WHEN** the user clicks the right arrow
+- **THEN** the month advances by one and the date grid updates
+- **WHEN** the user clicks the left arrow
+- **THEN** the month goes back by one and the date grid updates
 
 #### Scenario: Date selection
 
-Given the calendar dropdown is open
-When the user clicks a date cell for the current month
-Then that date becomes highlighted with a blue circle
-And the input field updates to show the selected date in "MM/DD/YYYY hh:mm:ss" format
+- **GIVEN** the calendar dropdown is open
+- **WHEN** the user clicks a date cell for the current month
+- **THEN** that date becomes highlighted with a blue circle
+- **AND** the input field updates to show the selected date in "MM/DD/YYYY hh:mm:ss" format
 
 #### Scenario: Adjacent month date selection
 
-Given the calendar shows dates from previous/next month in muted gray
-When the user clicks an adjacent-month date
-Then the month switches to that month
-And the date becomes highlighted
-And the input updates accordingly
+- **GIVEN** the calendar shows dates from previous/next month in muted gray
+- **WHEN** the user clicks an adjacent-month date
+- **THEN** the month switches to that month
+- **AND** the date becomes highlighted
+- **AND** the input updates accordingly
 
 #### Scenario: Footer icon interactions
 
-Given the calendar dropdown is open
-When the user clicks the chevron-up icon
-Then the time picker view toggles (if implemented) or selection confirms
-When the user clicks the clock icon
-Then the time resets to current time or opens time picker
-When the user clicks the trash icon
-Then the selection clears and input shows placeholder
-When the user clicks the X icon
-Then the calendar dropdown closes
+- **GIVEN** the calendar dropdown is open
+- **WHEN** the user clicks the chevron-up icon
+- **THEN** the time picker view toggles (if implemented) or selection confirms
+- **WHEN** the user clicks the clock icon
+- **THEN** the time resets to current time or opens time picker
+- **WHEN** the user clicks the trash icon
+- **THEN** the selection clears and input shows placeholder
+- **WHEN** the user clicks the X icon
+- **THEN** the calendar dropdown closes
 
 #### Scenario: Input focus behavior
 
-Given the page loads
-When the user clicks the input field
-Then the calendar dropdown becomes visible (if not already)
-When the user clicks outside the datepicker
-Then the calendar dropdown closes
+- **GIVEN** the page loads
+- **WHEN** the user clicks the input field
+- **THEN** the calendar dropdown becomes visible (if not already)
+- **WHEN** the user clicks outside the datepicker
+- **THEN** the calendar dropdown closes
 
 #### Scenario: Responsive layout
 
-Given the viewport is mobile (< 640px)
-When the datepicker renders
-Then the container uses full width with comfortable padding
-And all date cells remain tappable (min 44x44px touch targets)
+- **GIVEN** the viewport is mobile (< 640px)
+- **WHEN** the datepicker renders
+- **THEN** the container uses full width with comfortable padding
+- **AND** all date cells remain tappable (min 44x44px touch targets)
 
 #### Scenario: Dark mode
 
-Given the user has `prefers-color-scheme: dark`
-When the page renders
-Then background becomes `gray-900`, surface becomes `gray-800`
-And text colors invert appropriately
-And blue/rose accents remain accessible
+- **GIVEN** the user has `prefers-color-scheme: dark`
+- **WHEN** the page renders
+- **THEN** background becomes `gray-900`, surface becomes `gray-800`
+- **AND** text colors invert appropriately
+- **AND** blue/rose accents remain accessible
 
 ## Verification checklist
 

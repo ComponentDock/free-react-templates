@@ -97,111 +97,110 @@ Extracted from `css/style.css` on the live preview (2026-09-20).
 8. **Footer** — two parts: (a) footer_top with centered event date, venue,
    description, "Buy Tickets" button; (b) copy-right bar with copyright text.
 
-## Gherkin scenarios
+## Requirements
 
 ### Header
 
-```gherkin
-Scenario: Header renders navigation and CTA
-  Given the page loads
-  Then the header is visible with logo on the left
-  And the nav has links: Home, Performer, Pages (dropdown), Blog (dropdown), Contact
-  And a "Buy Tickets" button is visible on the right
-  And the header background is transparent (overlays the hero)
+#### Scenario: Header renders navigation and CTA
 
-Scenario: Mobile menu toggle
-  Given the viewport is mobile (< 992px)
-  Then a hamburger/mobile menu icon is visible
-  And the desktop nav is hidden
-```
+- **GIVEN** the page loads
+- **THEN** the header is visible with logo on the left
+- **AND** the nav has links: Home, Performer, Pages (dropdown), Blog (dropdown), Contact
+- **AND** a "Buy Tickets" button is visible on the right
+- **AND** the header background is transparent (overlays the hero)
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** the viewport is mobile (< 992px)
+- **THEN** a hamburger/mobile menu icon is visible
+- **AND** the desktop nav is hidden
 
 ### Hero Slider
 
-```gherkin
-Scenario: Hero displays event info
-  Given the page loads
-  Then a full-screen hero section is visible with a background image
-  And a dark overlay gradient is applied
-  And the date "12 Feb, 2020" is displayed
-  And the title "Concert 2020" is displayed
-  And the subtitle "Green Avenue, New York" is displayed
-  And decorative SVG shapes are visible
+#### Scenario: Hero displays event info
 
-Scenario: Hero text is centered
-  Given the page loads
-  Then all hero text is horizontally and vertically centered
-```
+- **GIVEN** the page loads
+- **THEN** a full-screen hero section is visible with a background image
+- **AND** a dark overlay gradient is applied
+- **AND** the date "12 Feb, 2020" is displayed
+- **AND** the title "Concert 2020" is displayed
+- **AND** the subtitle "Green Avenue, New York" is displayed
+- **AND** decorative SVG shapes are visible
+
+#### Scenario: Hero text is centered
+
+- **GIVEN** the page loads
+- **THEN** all hero text is horizontally and vertically centered
 
 ### Performers
 
-```gherkin
-Scenario: Performer grid renders four cards
-  Given the user scrolls to the Performers section
-  Then a "Performer" heading is displayed
-  And 4 performer cards are shown in a 2x2 grid
-  And each card has an image, performer name, and instrument role
+#### Scenario: Performer grid renders four cards
 
-Scenario: Performer cards respond to hover
-  Given the user hovers over a performer card
-  Then a tilt/transform effect is applied to the image
-```
+- **GIVEN** the user scrolls to the Performers section
+- **THEN** a "Performer" heading is displayed
+- **AND** 4 performer cards are shown in a 2x2 grid
+- **AND** each card has an image, performer name, and instrument role
+
+#### Scenario: Performer cards respond to hover
+
+- **GIVEN** the user hovers over a performer card
+- **THEN** a tilt/transform effect is applied to the image
 
 ### About Program
 
-```gherkin
-Scenario: About section shows image and CTA
-  Given the user scrolls to the About section
-  Then a centered "About Program" heading is displayed
-  And a description paragraph is shown
-  And a large image with decorative SVG shape is on the left
-  And text with "It's time to book your seat" heading is on the right
-  And a "Buy Tickets" button (boxed-btn3 style) is visible
+#### Scenario: About section shows image and CTA
 
-Scenario: About layout is side-by-side on desktop
-  Given the viewport is desktop (>= 992px)
-  Then the image and text are displayed in a two-column layout
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** a centered "About Program" heading is displayed
+- **AND** a description paragraph is shown
+- **AND** a large image with decorative SVG shape is on the left
+- **AND** text with "It's time to book your seat" heading is on the right
+- **AND** a "Buy Tickets" button (boxed-btn3 style) is visible
+
+#### Scenario: About layout is side-by-side on desktop
+
+- **GIVEN** the viewport is desktop (>= 992px)
+- **THEN** the image and text are displayed in a two-column layout
 
 ### Program Details
 
-```gherkin
-Scenario: Program timeline shows schedule items
-  Given the user scrolls to the Program Details section
-  Then a "Program Details" heading is displayed
-  And 4 program items are listed vertically
-  And each item shows a time range, date, performer image, and performer name
-  And a vertical timeline with circle indicators connects the items
+#### Scenario: Program timeline shows schedule items
 
-Scenario: Program section has dark overlay
-  Given the page loads
-  Then the program section background has a dark overlay gradient
-```
+- **GIVEN** the user scrolls to the Program Details section
+- **THEN** a "Program Details" heading is displayed
+- **AND** 4 program items are listed vertically
+- **AND** each item shows a time range, date, performer image, and performer name
+- **AND** a vertical timeline with circle indicators connects the items
+
+#### Scenario: Program section has dark overlay
+
+- **GIVEN** the page loads
+- **THEN** the program section background has a dark overlay gradient
 
 ### Sponsors
 
-```gherkin
-Scenario: Sponsor carousel renders logos
-  Given the user scrolls to the Sponsors section
-  Then a "Sponsor Logos" heading is displayed
-  And a carousel of brand logos is visible
-  And navigation arrows allow scrolling through logos
-```
+#### Scenario: Sponsor carousel renders logos
+
+- **GIVEN** the user scrolls to the Sponsors section
+- **THEN** a "Sponsor Logos" heading is displayed
+- **AND** a carousel of brand logos is visible
+- **AND** navigation arrows allow scrolling through logos
 
 ### Footer
 
-```gherkin
-Scenario: Footer shows event details and CTA
-  Given the user scrolls to the footer
-  Then the event date "12 Feb, 2020" is displayed
-  And the venue "Green Avenue, New York" is displayed
-  And a description paragraph is shown
-  And a "Buy Tickets" button is visible
-  And a copyright bar is at the bottom
+#### Scenario: Footer shows event details and CTA
 
-Scenario: Footer links to Component Dock
-  Given the page loads
-  Then the footer contains a link to https://www.componentdock.com/
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the event date "12 Feb, 2020" is displayed
+- **AND** the venue "Green Avenue, New York" is displayed
+- **AND** a description paragraph is shown
+- **AND** a "Buy Tickets" button is visible
+- **AND** a copyright bar is at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/
 
 ## Verification checklist
 

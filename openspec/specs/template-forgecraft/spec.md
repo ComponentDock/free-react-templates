@@ -51,65 +51,107 @@ Extracted from the live preview's `css/style.css`:
 13. **CTA Banner** — primary bg, "Let's Get Started" heading, full-width link
 14. **Footer** — dark bg, about text + features list + social icons + newsletter form, copyright line
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Bar
-- GIVEN the page loads, THEN a dark top bar displays phone number and email on the left and social icons (Facebook, Twitter, Instagram, LinkedIn) on the right.
+
+#### Scenario: Top Bar
+
+- **GIVEN** the page loads, THEN a dark top bar displays phone number and email on the left and social icons (Facebook, Twitter, Instagram, LinkedIn) on the right
 
 ### Navbar
-- GIVEN the page loads, THEN a white sticky navbar shows the logo "ForgeCraft." with a teal dot accent.
-- GIVEN the user scrolls past the hero, THEN the navbar remains fixed at the top.
-- GIVEN the user clicks a nav link, THEN the page scrolls smoothly to the corresponding section.
+
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, THEN a white sticky navbar shows the logo "ForgeCraft." with a teal dot accent
+- **GIVEN** the user scrolls past the hero, THEN the navbar remains fixed at the top
+- **GIVEN** the user clicks a nav link, THEN the page scrolls smoothly to the corresponding section
 
 ### Hero
-- GIVEN the page loads, THEN a full-width hero section shows a background image with dark overlay.
-- GIVEN the hero loads, THEN animated typed text cycles through ["Web Apps", "WordPress", "Mobile Apps"] after "We Love To Build ".
-- GIVEN the hero loads, THEN a "Watch Video" pill button is visible below the typed text.
+
+#### Scenario: Hero
+
+- **GIVEN** the page loads, THEN a full-width hero section shows a background image with dark overlay
+- **GIVEN** the hero loads, THEN animated typed text cycles through ["Web Apps", "WordPress", "Mobile Apps"] after "We Love To Build "
+- **GIVEN** the hero loads, THEN a "Watch Video" pill button is visible below the typed text
 
 ### Features (Numbered)
-- GIVEN the features section is visible, THEN 3 numbered cards (01 Innovate, 02 Create, 03 Scale) are displayed in a 3-column grid.
-- GIVEN a features card, THEN it contains a title, description paragraph, and a checkmark list of 3 items.
+
+#### Scenario: Features (Numbered)
+
+- **GIVEN** the features section is visible, THEN 3 numbered cards (01 Innovate, 02 Create, 03 Scale) are displayed in a 3-column grid
+- **GIVEN** a features card, THEN it contains a title, description paragraph, and a checkmark list of 3 items
 
 ### Our Works
-- GIVEN the works section is visible, THEN 6 portfolio items are shown in a 3-column grid.
-- GIVEN the user hovers a portfolio item, THEN an overlay shows the item title and category.
+
+#### Scenario: Our Works
+
+- **GIVEN** the works section is visible, THEN 6 portfolio items are shown in a 3-column grid
+- **GIVEN** the user hovers a portfolio item, THEN an overlay shows the item title and category
 
 ### About Dark Panel
-- GIVEN the about dark panel is visible, THEN a black full-width section shows an image on the left and 4 feature blocks (Strategy, Web Development, Art Direction, Copywriting) with icons on the right.
-- GIVEN a feature block, THEN it contains an icon, title, description, and "Read More" link.
+
+#### Scenario: About Dark Panel
+
+- **GIVEN** the about dark panel is visible, THEN a black full-width section shows an image on the left and 4 feature blocks (Strategy, Web Development, Art Direction, Copywriting) with icons on the right
+- **GIVEN** a feature block, THEN it contains an icon, title, description, and "Read More" link
 
 ### Testimonials
-- GIVEN the testimonials section is visible, THEN a centered heading "Testimonials" is shown.
-- GIVEN the testimonials carousel loads, THEN 4 testimonials cycle with blockquote text, circular photo, and name.
+
+#### Scenario: Testimonials
+
+- **GIVEN** the testimonials section is visible, THEN a centered heading "Testimonials" is shown
+- **GIVEN** the testimonials carousel loads, THEN 4 testimonials cycle with blockquote text, circular photo, and name
 
 ### Our Services
-- GIVEN the services section is visible, THEN 6 service cards are shown in a 3-column grid.
-- GIVEN a service card, THEN it contains a teal icon, title, description, and "Learn More" link.
+
+#### Scenario: Our Services
+
+- **GIVEN** the services section is visible, THEN 6 service cards are shown in a 3-column grid
+- **GIVEN** a service card, THEN it contains a teal icon, title, description, and "Learn More" link
 
 ### About Us
-- GIVEN the about us section is visible, THEN a heading "About Us" is displayed with a description paragraph.
-- GIVEN the about us section loads, THEN an image appears on the right and 2 specialty blocks (Web & Mobile Specialties, Intuitive Thinkers) with secondary-colored icons appear on the left.
+
+#### Scenario: About Us
+
+- **GIVEN** the about us section is visible, THEN a heading "About Us" is displayed with a description paragraph
+- **GIVEN** the about us section loads, THEN an image appears on the right and 2 specialty blocks (Web & Mobile Specialties, Intuitive Thinkers) with secondary-colored icons appear on the left
 
 ### Our Team
-- GIVEN the team section is visible, THEN 3 team members are shown in a 3-column grid.
-- GIVEN a team member card, THEN it contains a circular photo, name, position, description, and 4 social icon circles (Facebook, Twitter, LinkedIn, Instagram).
+
+#### Scenario: Our Team
+
+- **GIVEN** the team section is visible, THEN 3 team members are shown in a 3-column grid
+- **GIVEN** a team member card, THEN it contains a circular photo, name, position, description, and 4 social icon circles (Facebook, Twitter, LinkedIn, Instagram)
 
 ### Blog
-- GIVEN the blog section is visible, THEN 3 blog cards are shown in a 3-column grid.
-- GIVEN a blog card, THEN it contains an image, title, meta line (author, date, category), excerpt, and "Continue Reading" link.
+
+#### Scenario: Blog
+
+- **GIVEN** the blog section is visible, THEN 3 blog cards are shown in a 3-column grid
+- **GIVEN** a blog card, THEN it contains an image, title, meta line (author, date, category), excerpt, and "Continue Reading" link
 
 ### Contact
-- GIVEN the contact section is visible, THEN a contact form and address info are displayed side by side.
-- GIVEN the contact form, THEN it contains fields for first name, last name, email, subject, message, and a "Send Message" pill button.
-- GIVEN the address sidebar, THEN it shows address, phone, and email info in white cards.
+
+#### Scenario: Contact
+
+- **GIVEN** the contact section is visible, THEN a contact form and address info are displayed side by side
+- **GIVEN** the contact form, THEN it contains fields for first name, last name, email, subject, message, and a "Send Message" pill button
+- **GIVEN** the address sidebar, THEN it shows address, phone, and email info in white cards
 
 ### CTA Banner
-- GIVEN the CTA banner is visible, THEN a teal full-width bar shows "Let's Get Started" heading.
-- GIVEN the user clicks the CTA banner, THEN it links to the contact section.
+
+#### Scenario: CTA Banner
+
+- **GIVEN** the CTA banner is visible, THEN a teal full-width bar shows "Let's Get Started" heading
+- **GIVEN** the user clicks the CTA banner, THEN it links to the contact section
 
 ### Footer
-- GIVEN the footer is visible, THEN a dark section shows about text, features links, social icons, and a newsletter subscription form.
-- GIVEN the footer loads, THEN a copyright line with "Component Dock" link is displayed at the bottom.
+
+#### Scenario: Footer
+
+- **GIVEN** the footer is visible, THEN a dark section shows about text, features links, social icons, and a newsletter subscription form
+- **GIVEN** the footer loads, THEN a copyright line with "Component Dock" link is displayed at the bottom
 
 ## Verification Checklist
 

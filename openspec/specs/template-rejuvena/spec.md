@@ -69,142 +69,132 @@ a logo + newsletter form + social icons row on top, then 4 columns (Company
 links, Quick links, Contact address, Google Maps embed), and a copyright bar
 at the bottom.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Header / Navigation
 
-```gherkin
-Scenario: Sticky header with logo, nav links, and appointment button
-  Given the user loads the Rejuvena page
-  Then a header is visible at the top with the logo "Aesthetic" on the left
-  And navigation links include Home, Pages, Doctor, Services, Blog, Contact
-  And a teal (#13a2b7) "Appointment" button is on the right
-  And a dark-mode toggle (moon icon) is visible
-  And the header becomes sticky on scroll
-  And a hamburger menu icon appears on mobile viewports
-```
+#### Scenario: Sticky header with logo, nav links, and appointment button
+
+- **GIVEN** the user loads the Rejuvena page
+- **THEN** a header is visible at the top with the logo "Aesthetic" on the left
+- **AND** navigation links include Home, Pages, Doctor, Services, Blog, Contact
+- **AND** a teal (#13a2b7) "Appointment" button is on the right
+- **AND** a dark-mode toggle (moon icon) is visible
+- **AND** the header becomes sticky on scroll
+- **AND** a hamburger menu icon appears on mobile viewports
 
 ### Hero Section
 
-```gherkin
-Scenario: Full-width hero with background image and CTA
-  Given the user loads the Rejuvena page
-  Then a full-width hero section is displayed with a background image
-  And an uppercase teal (#13a2b7) subheading reads "Eiusmod tempor incididunt"
-  And a large dark (#111111) heading reads "Take the world's best quality Treatment"
-  And a teal (#13a2b7) "Contact us" button is displayed below the heading
-  And the hero text is left-aligned on the first 50% width
-```
+#### Scenario: Full-width hero with background image and CTA
+
+- **GIVEN** the user loads the Rejuvena page
+- **THEN** a full-width hero section is displayed with a background image
+- **AND** an uppercase teal (#13a2b7) subheading reads "Eiusmod tempor incididunt"
+- **AND** a large dark (#111111) heading reads "Take the world's best quality Treatment"
+- **AND** a teal (#13a2b7) "Contact us" button is displayed below the heading
+- **AND** the hero text is left-aligned on the first 50% width
 
 ### Consultation Section
 
-```gherkin
-Scenario: Consultation form alongside welcome text and video
-  Given the user scrolls to the Consultation section
-  Then a left column (col-lg-4) shows a white booking form card with shadow
-  And the form has a section title "REQUEST FOR YOUR" / "Consultation"
-  And the form includes fields: Name, Email, Date (with calendar icon), Type of service (dropdown)
-  And a "Book appointment" submit button is at the bottom
-  And the right column (col-lg-8) shows a welcome text area with heading "Find Best Doctors With AESTHETIC"
-  And a video thumbnail with a teal play button (50px circle) is shown
-  And the text describes 30 years of experience in Cosmetic Surgery
-```
+#### Scenario: Consultation form alongside welcome text and video
+
+- **GIVEN** the user scrolls to the Consultation section
+- **THEN** a left column (col-lg-4) shows a white booking form card with shadow
+- **AND** the form has a section title "REQUEST FOR YOUR" / "Consultation"
+- **AND** the form includes fields: Name, Email, Date (with calendar icon), Type of service (dropdown)
+- **AND** a "Book appointment" submit button is at the bottom
+- **AND** the right column (col-lg-8) shows a welcome text area with heading "Find Best Doctors With AESTHETIC"
+- **AND** a video thumbnail with a teal play button (50px circle) is shown
+- **AND** the text describes 30 years of experience in Cosmetic Surgery
 
 ### Choose Us Section
 
-```gherkin
-Scenario: Four feature items on white background
-  Given the user scrolls to the Choose Us section
-  Then a centered section title shows "Why choose us?" / "Offer for you"
-  And 4 feature items are displayed in a row
-  And each item has an icon image, a title, and a short description
-  And the items are: Advanced equipment, Qualified doctors, Certified services, Emergency care
-  And the section has 100px top/bottom padding (spad)
-```
+#### Scenario: Four feature items on white background
+
+- **GIVEN** the user scrolls to the Choose Us section
+- **THEN** a centered section title shows "Why choose us?" / "Offer for you"
+- **AND** 4 feature items are displayed in a row
+- **AND** each item has an icon image, a title, and a short description
+- **AND** the items are: Advanced equipment, Qualified doctors, Certified services, Emergency care
+- **AND** the section has 100px top/bottom padding (spad)
 
 ### Services Section
 
-```gherkin
-Scenario: Services grid on dark background image
-  Given the user scrolls to the Services section
-  Then a section with a dark background image is displayed
-  And the section title shows "Our services" / "Offer for you" in white text
-  And a teal "Contact us" button is aligned right
-  And 4 service cards are shown in a 2x2 grid
-  And each card has a left-floating teal icon, a title, and a description
-  And the cards are: Body procedures, Facial Procedures, Breast procedures, Skin care & Beauty
-  And the cards have white background with 5px border-radius
-  And on hover, the card background turns teal (#13a2b7) with white text
-```
+#### Scenario: Services grid on dark background image
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a section with a dark background image is displayed
+- **AND** the section title shows "Our services" / "Offer for you" in white text
+- **AND** a teal "Contact us" button is aligned right
+- **AND** 4 service cards are shown in a 2x2 grid
+- **AND** each card has a left-floating teal icon, a title, and a description
+- **AND** the cards are: Body procedures, Facial Procedures, Breast procedures, Skin care & Beauty
+- **AND** the cards have white background with 5px border-radius
+- **AND** on hover, the card background turns teal (#13a2b7) with white text
 
 ### Team Section
 
-```gherkin
-Scenario: Three doctor cards with circular photos
-  Given the user scrolls to the Team section
-  Then a centered section title shows "Our Team" / "Our Expert Doctors"
-  And 3 team member cards are displayed in a row
-  And each card has a circular photo (270px, white border with shadow)
-  And below the photo: name, specialty "Plastic surgeon", and 4 social icon links
-  And the doctors are: Caroline Grant, Dr. Maria Angel, Nathan Mullins
-  And on hover, the photo border turns teal (#13a2b7)
-```
+#### Scenario: Three doctor cards with circular photos
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** a centered section title shows "Our Team" / "Our Expert Doctors"
+- **AND** 3 team member cards are displayed in a row
+- **AND** each card has a circular photo (270px, white border with shadow)
+- **AND** below the photo: name, specialty "Plastic surgeon", and 4 social icon links
+- **AND** the doctors are: Caroline Grant, Dr. Maria Angel, Nathan Mullins
+- **AND** on hover, the photo border turns teal (#13a2b7)
 
 ### Gallery Section
 
-```gherkin
-Scenario: Masonry-style image gallery with hover overlay
-  Given the user scrolls to the Gallery section
-  Then a 4-column image gallery is displayed
-  And 7 gallery items are shown (6 regular at 338px height, 1 large at 696px)
-  And on hover, a teal overlay (rgba(19, 161, 183, 0.5)) appears
-  And a magnifying glass icon becomes visible on hover
-  And clicking the icon opens a lightbox
-```
+#### Scenario: Masonry-style image gallery with hover overlay
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a 4-column image gallery is displayed
+- **AND** 7 gallery items are shown (6 regular at 338px height, 1 large at 696px)
+- **AND** on hover, a teal overlay (rgba(19, 161, 183, 0.5)) appears
+- **AND** a magnifying glass icon becomes visible on hover
+- **AND** clicking the icon opens a lightbox
 
 ### Latest News Section
 
-```gherkin
-Scenario: Three blog entry cards
-  Given the user scrolls to the Latest News section
-  Then a section title shows "Our News" / "Skin care tips"
-  And a "View all news" teal button is aligned right
-  And 3 blog entry cards are shown in a row
-  And each card has a title, excerpt, author name with small avatar, and date
-  And the cards have white background with subtle box-shadow
-  And the card titles are: "Here's how you can get a natural glow this party season",
-      "Get better skin with these top 10 tips for skin care",
-      "8 Ways to Save Your Skin if You Exercise Outside This Winter"
-```
+#### Scenario: Three blog entry cards
+
+- **GIVEN** the user scrolls to the Latest News section
+- **THEN** a section title shows "Our News" / "Skin care tips"
+- **AND** a "View all news" teal button is aligned right
+- **AND** 3 blog entry cards are shown in a row
+- **AND** each card has a title, excerpt, author name with small avatar, and date
+- **AND** the cards have white background with subtle box-shadow
+- **AND** the card titles are: "Here's how you can get a natural glow this party season",
+"Get better skin with these top 10 tips for skin care",
+"8 Ways to Save Your Skin if You Exercise Outside This Winter"
 
 ### Footer
 
-```gherkin
-Scenario: Dark footer with newsletter, link columns, and map
-  Given the user scrolls to the footer
-  Then the footer has a dark (#121c1d) background
-  And the footer top row shows: logo on left, newsletter email input + Subscribe button in center, 4 social icons on right
-  And the newsletter input has a teal (#13a2b7) border and 50px rounded shape
-  And below the top row, 4 columns are shown:
-    - Company: About Us, Departments, Find a Doctor, FAQ, News
-    - Quick links: Facial Fillers, Breast Surgery, Body Lifts, Face & Neck, Fat Reduction
-    - Contact Us: address, phone, email
-    - Google Maps embed
-  And a copyright bar at the bottom with "All Rights Reserved", "Terms & Use", "Privacy Policy"
-  And the footer links to https://www.componentdock.com/
-```
+#### Scenario: Dark footer with newsletter, link columns, and map
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark (#121c1d) background
+- **AND** the footer top row shows: logo on left, newsletter email input + Subscribe button in center, 4 social icons on right
+- **AND** the newsletter input has a teal (#13a2b7) border and 50px rounded shape
+- **AND** below the top row, 4 columns are shown:
+- Company: About Us, Departments, Find a Doctor, FAQ, News
+- Quick links: Facial Fillers, Breast Surgery, Body Lifts, Face & Neck, Fat Reduction
+- Contact Us: address, phone, email
+- Google Maps embed
+- **AND** a copyright bar at the bottom with "All Rights Reserved", "Terms & Use", "Privacy Policy"
+- **AND** the footer links to https://www.componentdock.com/
 
 ### Appointment Modal
 
-```gherkin
-Scenario: Appointment booking modal
-  Given the user clicks the "Appointment" button in the header
-  Then a modal dialog appears with title "Book an Appointment"
-  And the modal contains a form with fields: Name, Email, Date, Phone, Service dropdown, Doctor dropdown, Notes
-  And the modal has a checkbox for privacy policy consent
-  And a "SUBMIT" button at the bottom
-  And the modal can be closed with the X button or clicking outside
-```
+#### Scenario: Appointment booking modal
+
+- **GIVEN** the user clicks the "Appointment" button in the header
+- **THEN** a modal dialog appears with title "Book an Appointment"
+- **AND** the modal contains a form with fields: Name, Email, Date, Phone, Service dropdown, Doctor dropdown, Notes
+- **AND** the modal has a checkbox for privacy policy consent
+- **AND** a "SUBMIT" button at the bottom
+- **AND** the modal can be closed with the X button or clicking outside
 
 ## Verification Checklist
 

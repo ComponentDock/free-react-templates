@@ -27,7 +27,7 @@
 - **Layout**: Split-screen — left ~40% decorative illustration, right ~60% form card
 - **Background**: Full-page peach (`#f3d4b7`) behind the white card
 
-## Gherkin Requirements
+## Requirements
 
 ### Requirement: Multi-step checkout wizard navigation
 
@@ -48,7 +48,7 @@ Users SHALL navigate through a 4-step checkout wizard with a horizontal progress
 - **WHEN** the user navigates between steps
 - **THEN** the transition uses a fade effect (500ms)
 
-### Requirement: Form fields per step
+### Feature: Form fields per step
 
 #### Scenario: Step 1 — Billing Details
 
@@ -89,7 +89,7 @@ Users SHALL have Previous/Next buttons to move between steps.
 - **WHEN** the user is on Step 4
 - **THEN** the Next button is replaced with a "Place Order" button
 
-### Requirement: Payment method selection
+### Feature: Payment method selection
 
 #### Scenario: Selecting a payment method
 
@@ -101,7 +101,7 @@ Users SHALL have Previous/Next buttons to move between steps.
 - **WHEN** the user views a payment method option
 - **THEN** a description tooltip is visible explaining the payment method details
 
-### Requirement: Responsive split-screen layout
+### Feature: Responsive split-screen layout
 
 #### Scenario: Desktop layout
 

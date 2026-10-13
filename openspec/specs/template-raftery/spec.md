@@ -41,72 +41,84 @@ pricing tiers, and a dark footer.
 10. **PricingSection** — light bg, heading "Pricing", 4 pricing cards: Standard $49, Basic $79 (highlighted), Standard $109, Professional $149. Each: tier name, price, 5 feature items, "Get Started" button.
 11. **Footer** — dark (#252525) background, 4 columns: brand + social links, Services list, Business Hours, Contact info. Bottom copyright bar with Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Raftery template behaviour
+
 Feature: Raftery — Roofing company website
 
-  Background:
-    Given the app is loaded at the root URL
+Background:
+- **GIVEN** the app is loaded at the root URL
 
-  Scenario: TopBar displays brand and social links
-    Then the logo text "Raftery" is visible
-    And social icon links for Facebook, Twitter, Instagram, and Dribbble are present
+#### Scenario: TopBar displays brand and social links
 
-  Scenario: Navbar navigation links
-    Then navigation contains "Home", "About", "Services", "Project", "Blog", "Contact"
-    And the navbar is dark-themed
+- **THEN** the logo text "Raftery" is visible
+- **AND** social icon links for Facebook, Twitter, Instagram, and Dribbble are present
 
-  Scenario: Hero slider shows CTA
-    Then the hero heading "We are best Roofing Services" is displayed
-    And the "Book an appointment" CTA button is visible
-    And the hero section is full-height
+#### Scenario: Navbar navigation links
 
-  Scenario: About section with tabs
-    Given the about/quote section is visible
-    When the user clicks "Our Vision" tab
-    Then the "Our Vision" tab becomes active (gold background)
-    And the corresponding content panel is shown
-    When the user clicks "Our Value" tab
-    Then the "Our Value" tab becomes active
+- **THEN** navigation contains "Home", "About", "Services", "Project", "Blog", "Contact"
+- **AND** the navbar is dark-themed
 
-  Scenario: Get a Quote form
-    Given the quote form is visible
-    Then the form has fields: service select, name, email, date, time, message
-    And the "Send message" button is present
+#### Scenario: Hero slider shows CTA
 
-  Scenario: Counter section displays stats
-    Then 4 counter items are displayed
-    And the section has a gold background
+- **THEN** the hero heading "We are best Roofing Services" is displayed
+- **AND** the "Book an appointment" CTA button is visible
+- **AND** the hero section is full-height
 
-  Scenario: Services section with tabbed content
-    Then 6 service tabs are visible: Skylights, Waterproofing, Industrial Roofing, Residential Roofing, Gutter Cleaning, Commercial Roofing
-    When the user clicks "Waterproofing" tab
-    Then the "Waterproofing" tab becomes active
-    And the waterproofing content panel with description and checklist is shown
+#### Scenario: About section with tabs
 
-  Scenario: Projects gallery
-    Then 8 project cards are displayed in a grid
-    And each card shows a title and category
+- **GIVEN** the about/quote section is visible
+- **WHEN** the user clicks "Our Vision" tab
+- **THEN** the "Our Vision" tab becomes active (gold background)
+- **AND** the corresponding content panel is shown
+- **WHEN** the user clicks "Our Value" tab
+- **THEN** the "Our Value" tab becomes active
 
-  Scenario: Testimonials carousel
-    Then testimonial cards are displayed
-    And each card has a quote icon, text, avatar, name, and position
+#### Scenario: Get a Quote form
 
-  Scenario: Blog section
-    Then 3 blog entries are displayed
-    And each entry has a featured image, author info, and title
+- **GIVEN** the quote form is visible
+- **THEN** the form has fields: service select, name, email, date, time, message
+- **AND** the "Send message" button is present
 
-  Scenario: Pricing section
-    Then 4 pricing cards are displayed
-    And the cards show tier names: Standard, Basic, Standard, Professional
-    And each card has a price and feature list
+#### Scenario: Counter section displays stats
 
-  Scenario: Footer
-    Then the footer has a dark background
-    And the footer contains: brand, services list, business hours, contact info
-    And a "Component Dock" link is present
-```
+- **THEN** 4 counter items are displayed
+- **AND** the section has a gold background
+
+#### Scenario: Services section with tabbed content
+
+- **THEN** 6 service tabs are visible: Skylights, Waterproofing, Industrial Roofing, Residential Roofing, Gutter Cleaning, Commercial Roofing
+- **WHEN** the user clicks "Waterproofing" tab
+- **THEN** the "Waterproofing" tab becomes active
+- **AND** the waterproofing content panel with description and checklist is shown
+
+#### Scenario: Projects gallery
+
+- **THEN** 8 project cards are displayed in a grid
+- **AND** each card shows a title and category
+
+#### Scenario: Testimonials carousel
+
+- **THEN** testimonial cards are displayed
+- **AND** each card has a quote icon, text, avatar, name, and position
+
+#### Scenario: Blog section
+
+- **THEN** 3 blog entries are displayed
+- **AND** each entry has a featured image, author info, and title
+
+#### Scenario: Pricing section
+
+- **THEN** 4 pricing cards are displayed
+- **AND** the cards show tier names: Standard, Basic, Standard, Professional
+- **AND** each card has a price and feature list
+
+#### Scenario: Footer
+
+- **THEN** the footer has a dark background
+- **AND** the footer contains: brand, services list, business hours, contact info
+- **AND** a "Component Dock" link is present
 
 ## Verification Checklist
 

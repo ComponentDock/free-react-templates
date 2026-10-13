@@ -100,65 +100,73 @@ CSS 4 + TypeScript.
 - Bottom bar: copyright + "Made with ♥ by Component Dock" link
   (https://www.componentdock.com/)
 
-## Scenarios
+## Requirements
 
 ### Gherkin scenarios
 
-```gherkin
 Feature: Sundial Real Estate Template
 
-  Scenario: Header renders with navigation links
-    Given the page loads
-    Then the navbar displays logo "Sundial"
-    And navigation links "Home", "About", "Properties", "Blog", "Contact" are visible
+#### Scenario: Header renders with navigation links
 
-  Scenario: Mobile menu toggles
-    Given the page loads on mobile viewport
-    When the user clicks the hamburger menu button
-    Then the mobile navigation menu opens
-    And all navigation links are visible
+- **GIVEN** the page loads
+- **THEN** the navbar displays logo "Sundial"
+- **AND** navigation links "Home", "About", "Properties", "Blog", "Contact" are visible
 
-  Scenario: Hero section displays headline and search form
-    Given the page loads
-    Then the hero section shows "Find Your Dream Home"
-    And the search form contains keyword input and dropdowns
+#### Scenario: Mobile menu toggles
 
-  Scenario: Featured properties shows 6 property cards
-    Given the page loads
-    Then 6 property cards are displayed in a grid
-    And each card shows a "For Sale" tag
-    And each card shows a price
+- **GIVEN** the page loads on mobile viewport
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** the mobile navigation menu opens
+- **AND** all navigation links are visible
 
-  Scenario: Call to action section renders
-    Given the page loads
-    Then the CTA section shows "Are you looking for a place to rent?"
-    And a Search button is visible
+#### Scenario: Hero section displays headline and search form
 
-  Scenario: Testimonials section renders
-    Given the page loads
-    Then the testimonials section shows "Client testimonials"
-    And testimonial cards display author information
+- **GIVEN** the page loads
+- **THEN** the hero section shows "Find Your Dream Home"
+- **AND** the search form contains keyword input and dropdowns
 
-  Scenario: Agent section renders
-    Given the page loads
-    Then "Jeremy Scott" agent name is displayed
-    And "Realtor" role is displayed
-    And contact information is visible
+#### Scenario: Featured properties shows 6 property cards
 
-  Scenario: Footer renders with Component Dock link
-    Given the page loads
-    Then the footer displays "About Us", "Useful Links", "Newsletter", "Contact"
-    And the Component Dock link points to https://www.componentdock.com/
-    And the footer shows copyright information
+- **GIVEN** the page loads
+- **THEN** 6 property cards are displayed in a grid
+- **AND** each card shows a "For Sale" tag
+- **AND** each card shows a price
 
-  Scenario: Footer newsletter form accepts email
-    Given the page loads
-    When the user types an email in the newsletter input
-    And clicks the subscribe button
-    Then the email is entered in the field
+#### Scenario: Call to action section renders
 
-  Scenario: Search form dropdowns are interactive
-    Given the page loads
-    When the user selects a city from the dropdown
-    Then the dropdown reflects the selected value
-```
+- **GIVEN** the page loads
+- **THEN** the CTA section shows "Are you looking for a place to rent?"
+- **AND** a Search button is visible
+
+#### Scenario: Testimonials section renders
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section shows "Client testimonials"
+- **AND** testimonial cards display author information
+
+#### Scenario: Agent section renders
+
+- **GIVEN** the page loads
+- **THEN** "Jeremy Scott" agent name is displayed
+- **AND** "Realtor" role is displayed
+- **AND** contact information is visible
+
+#### Scenario: Footer renders with Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** the footer displays "About Us", "Useful Links", "Newsletter", "Contact"
+- **AND** the Component Dock link points to https://www.componentdock.com/
+- **AND** the footer shows copyright information
+
+#### Scenario: Footer newsletter form accepts email
+
+- **GIVEN** the page loads
+- **WHEN** the user types an email in the newsletter input
+- **AND** clicks the subscribe button
+- **THEN** the email is entered in the field
+
+#### Scenario: Search form dropdowns are interactive
+
+- **GIVEN** the page loads
+- **WHEN** the user selects a city from the dropdown
+- **THEN** the dropdown reflects the selected value

@@ -26,64 +26,66 @@ component.
 | dropdown-shadow| `0px 3px 19px -15px rgba(0,0,0,0.41)` | Active dropdown menu shadow         |
 | section-padding| `7em 0`                        | Top/bottom section padding                  |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Section renders with centered heading
+### Feature: TopicFilter template behaviour
 
-- Given the page loads
-- Then the section heading "Multiselect #02" is visible
-- And the heading is centered horizontally
-- And the heading text is 28px and black (#000)
+#### Scenario: Section renders with centered heading
 
-### Scenario: Multiselect dropdown renders with topic options
+- **GIVEN** the page loads
+- **THEN** the section heading "Multiselect #02" is visible
+- **AND** the heading is centered horizontally
+- **AND** the heading text is 28px and black (#000)
 
-- Given the page loads
-- Then a multiselect dropdown is visible
-- And the dropdown label reads "Select Topics"
-- And the dropdown contains options "All", "Topic 1" through "Topic 11"
-- And the dropdown supports multiple selection
+#### Scenario: Multiselect dropdown renders with topic options
 
-### Scenario: Dropdown opens on click
+- **GIVEN** the page loads
+- **THEN** a multiselect dropdown is visible
+- **AND** the dropdown label reads "Select Topics"
+- **AND** the dropdown contains options "All", "Topic 1" through "Topic 11"
+- **AND** the dropdown supports multiple selection
 
-- Given the multiselect dropdown is closed
-- When the user clicks the dropdown
-- Then the dropdown menu expands
-- And all topic options are visible
-- And the menu has a shadow (`0px 3px 19px -15px rgba(0,0,0,0.41)`)
+#### Scenario: Dropdown opens on click
 
-### Scenario: Option selection and tag rendering
+- **GIVEN** the multiselect dropdown is closed
+- **WHEN** the user clicks the dropdown
+- **THEN** the dropdown menu expands
+- **AND** all topic options are visible
+- **AND** the menu has a shadow (`0px 3px 19px -15px rgba(0,0,0,0.41)`)
 
-- Given the dropdown is open
-- When the user selects "Topic 1"
-- Then a coral/pink (#e8647c) label tag appears for "Topic 1"
-- And the tag has white text
-- And clicking the tag's remove icon deselects the option
+#### Scenario: Option selection and tag rendering
 
-### Scenario: Multiple selections
+- **GIVEN** the dropdown is open
+- **WHEN** the user selects "Topic 1"
+- **THEN** a coral/pink (#e8647c) label tag appears for "Topic 1"
+- **AND** the tag has white text
+- **AND** clicking the tag's remove icon deselects the option
 
-- Given "Topic 1" is selected
-- When the user selects "Topic 3" and "Topic 5"
-- Then three label tags are visible
-- And each tag is coral/pink with white text
+#### Scenario: Multiple selections
 
-### Scenario: All option behavior
+- **GIVEN** "Topic 1" is selected
+- **WHEN** the user selects "Topic 3" and "Topic 5"
+- **THEN** three label tags are visible
+- **AND** each tag is coral/pink with white text
 
-- Given the dropdown is open
-- When the user selects "All"
-- Then all topic options are selected
-- And tags appear for every topic
+#### Scenario: All option behavior
 
-### Scenario: Responsive layout
+- **GIVEN** the dropdown is open
+- **WHEN** the user selects "All"
+- **THEN** all topic options are selected
+- **AND** tags appear for every topic
 
-- Given the viewport is less than 768px wide
-- Then the dropdown takes full width
-- And the section heading remains centered
+#### Scenario: Responsive layout
 
-### Scenario: Section spacing
+- **GIVEN** the viewport is less than 768px wide
+- **THEN** the dropdown takes full width
+- **AND** the section heading remains centered
 
-- Given the page loads
-- Then the section has 7em padding on top and bottom
-- And the heading and dropdown are centered in the container
+#### Scenario: Section spacing
+
+- **GIVEN** the page loads
+- **THEN** the section has 7em padding on top and bottom
+- **AND** the heading and dropdown are centered in the container
 
 ## Verification checklist
 

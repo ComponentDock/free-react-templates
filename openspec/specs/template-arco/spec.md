@@ -83,126 +83,135 @@ top navbar on mobile.
 8. **CTA ("Get in Touch")** — Yellow (`#FFC300`) background section.
    Heading "Get in Touch!", lead text paragraph, "Contact me!" button.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Sidebar Navigation
 
-Scenario: Desktop sidebar displays logo and nav links
-  Given the page is loaded on desktop (≥1024px)
-  When the sidebar is visible
-  Then it shows the "Arco" logo at the top
-  And it lists navigation links: Home, Projects, About, Services, Blog, Contact
-  And the active link is highlighted in brand yellow (#FFC300) with an underline
-  And the sidebar background is charcoal (#2C2C2C)
-  And social media icon links appear in the sidebar footer
+#### Scenario: Desktop sidebar displays logo and nav links
 
-Scenario: Mobile sidebar collapses to top navbar
-  Given the page is loaded on mobile (<768px)
-  When the viewport is narrow
-  Then the sidebar is hidden by default
-  And a hamburger toggle button is visible
-  And tapping the toggle opens the sidebar as an overlay from the left
-  And tapping a nav link closes the overlay and scrolls to the section
+- **GIVEN** the page is loaded on desktop (≥1024px)
+- **WHEN** the sidebar is visible
+- **THEN** it shows the "Arco" logo at the top
+- **AND** it lists navigation links: Home, Projects, About, Services, Blog, Contact
+- **AND** the active link is highlighted in brand yellow (#FFC300) with an underline
+- **AND** the sidebar background is charcoal (#2C2C2C)
+- **AND** social media icon links appear in the sidebar footer
+
+#### Scenario: Mobile sidebar collapses to top navbar
+
+- **GIVEN** the page is loaded on mobile (<768px)
+- **WHEN** the viewport is narrow
+- **THEN** the sidebar is hidden by default
+- **AND** a hamburger toggle button is visible
+- **AND** tapping the toggle opens the sidebar as an overlay from the left
+- **AND** tapping a nav link closes the overlay and scrolls to the section
 
 ### Feature: Hero Slider
 
-Scenario: Hero displays rotating slides with brand-colored text boxes
-  Given the hero section is visible
-  When the page loads
-  Then a full-height image slider is displayed
-  And each slide has a dark overlay on the background image
-  And a yellow (#FFC300) text box appears at bottom-right containing:
+#### Scenario: Hero displays rotating slides with brand-colored text boxes
+
+- **GIVEN** the hero section is visible
+- **WHEN** the page loads
+- **THEN** a full-height image slider is displayed
+- **AND** each slide has a dark overlay on the background image
+- **AND** a yellow (#FFC300) text box appears at bottom-right containing:
     - A heading (light weight, large text)
     - A subheading
     - A "View Project" button (uppercase, no radius)
-  And slides auto-cycle on a timer
-  And the slider responds to touch/swipe on mobile
+- **AND** slides auto-cycle on a timer
+- **AND** the slider responds to touch/swipe on mobile
 
 ### Feature: About Section
 
-Scenario: About section shows company description and values
-  Given the about section scrolls into view
-  When it becomes visible
-  Then it displays a "Welcome" meta label
-  And a "Who we are" heading
-  And two paragraphs of descriptive text
-  And a left-aligned background image
-  And 3 value cards in a row below the text:
+#### Scenario: About section shows company description and values
+
+- **GIVEN** the about section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** it displays a "Welcome" meta label
+- **AND** a "Who we are" heading
+- **AND** two paragraphs of descriptive text
+- **AND** a left-aligned background image
+- **AND** 3 value cards in a row below the text:
     - "We are passionate" with a checkmark icon
     - "Honest Dependable" with a checkmark icon
     - "Always Improving" with a checkmark icon
-  And each card animates in from left (fadeInLeft)
+- **AND** each card animates in from left (fadeInLeft)
 
 ### Feature: Services Section
 
-Scenario: Services section displays expertise features and service cards
-  Given the services section scrolls into view
-  When it becomes visible
-  Then it shows a "What I do?" meta label and heading "Here are some of my expertise"
-  And 4 feature items are listed vertically on the left:
+#### Scenario: Services section displays expertise features and service cards
+
+- **GIVEN** the services section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** it shows a "What I do?" meta label and heading "Here are some of my expertise"
+- **AND** 4 feature items are listed vertically on the left:
     - General Contracting (with icon)
     - Pre-Construction Design (with icon)
     - Building & Modeling (with icon)
     - Construction Management (with icon)
-  And 5 service image cards are displayed in a 2-column grid on the right:
+- **AND** 5 service image cards are displayed in a 2-column grid on the right:
     - Design & Build, House Remodeling, Construction Management (left col)
     - Painting & Tiling, Kitchen Remodeling (right col, offset down)
-  And each service card has a background image with an overlay title
+- **AND** each service card has a background image with an overlay title
 
 ### Feature: Counters Section
 
-Scenario: Counter stats animate on scroll
-  Given the counter section scrolls into view
-  When it becomes visible
-  Then a parallax background image is displayed with a dark overlay
-  And 4 stat columns appear in a row:
+#### Scenario: Counter stats animate on scroll
+
+- **GIVEN** the counter section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** a parallax background image is displayed with a dark overlay
+- **AND** 4 stat columns appear in a row:
     - Projects: 1,539
     - Employees: 3,653
     - Constructors: 5,987
     - Partners: 3,999
-  And each stat has an icon above the number
-  And each number animates (counts up from 0 to the target)
-  And the label text appears below each number
+- **AND** each stat has an icon above the number
+- **AND** each number animates (counts up from 0 to the target)
+- **AND** the label text appears below each number
 
 ### Feature: Portfolio/Work Section
 
-Scenario: Portfolio grid displays project cards
-  Given the portfolio section scrolls into view
-  When it becomes visible
-  Then it shows "My Work" meta label and "Recent Work" heading
-  And 6 project cards are displayed in an asymmetric grid:
+#### Scenario: Portfolio grid displays project cards
+
+- **GIVEN** the portfolio section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** it shows "My Work" meta label and "Recent Work" heading
+- **AND** 6 project cards are displayed in an asymmetric grid:
     - Work 01 (Building) — 2-column width
     - Work 02 (House, Apartment) — 1-column width
     - Work 03 (Dining Room) — 1-column width
     - Work 04 (House, Building) — 1-column width
     - Work 05 (Condo, Pad) — 1-column width
     - Work 06 (Table, Chairs) — 2-column width
-  And each card has a background image
-  And hovering/focusing a card reveals: title, category, share icon, view count, heart count
+- **AND** each card has a background image
+- **AND** hovering/focusing a card reveals: title, category, share icon, view count, heart count
 
 ### Feature: Blog Section
 
-Scenario: Blog entries display in a 3-column grid
-  Given the blog section scrolls into view
-  When it becomes visible
-  Then it shows "Read" meta label and "Recent Blog" heading
-  And 3 blog cards are displayed in a row
-  And each card contains:
+#### Scenario: Blog entries display in a 3-column grid
+
+- **GIVEN** the blog section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** it shows "Read" meta label and "Recent Blog" heading
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card contains:
     - A blog image
     - Date, category, and comment count
     - A title link
     - An excerpt paragraph
-  And cards animate in from left (fadeInLeft)
+- **AND** cards animate in from left (fadeInLeft)
 
 ### Feature: CTA Section
 
-Scenario: Call-to-action section encourages contact
-  Given the CTA section scrolls into view
-  When it becomes visible
-  Then the section background is brand yellow (#FFC300)
-  And it shows the heading "Get in Touch!"
-  And a lead paragraph with descriptive text
-  And a "Contact me!" button (uppercase, no radius, black text on white bg)
+#### Scenario: Call-to-action section encourages contact
+
+- **GIVEN** the CTA section scrolls into view
+- **WHEN** it becomes visible
+- **THEN** the section background is brand yellow (#FFC300)
+- **AND** it shows the heading "Get in Touch!"
+- **AND** a lead paragraph with descriptive text
+- **AND** a "Contact me!" button (uppercase, no radius, black text on white bg)
 
 ## Verification checklist
 

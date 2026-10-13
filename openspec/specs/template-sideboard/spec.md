@@ -99,67 +99,77 @@ time of prep — 2026-09-30 — reference is the TEMPLATES.md screenshot).
 | Font family | System sans-serif stack | Headings + body (e.g. system-ui, -apple-system, sans-serif) |
 | Border color | #e0e0e0 | Divider below top nav |
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Sideboard template behaviour
+
 Feature: Sideboard sidebar navigation layout
 
-  Background:
-    Given the Sideboard template is loaded
+Background:
+- **GIVEN** the Sideboard template is loaded
 
-  Scenario: Sidebar visibility on desktop
-    Then the sidebar is visible on the left side
-    And the sidebar background is royal blue
-    And the sidebar spans the full viewport height
-    And the sidebar width is approximately 90px
+#### Scenario: Sidebar visibility on desktop
 
-  Scenario: Logo display in sidebar
-    Then a logo wordmark is displayed at the top of the sidebar
-    And the logo text color is white
-    And the logo is bold and large
+- **THEN** the sidebar is visible on the left side
+- **AND** the sidebar background is royal blue
+- **AND** the sidebar spans the full viewport height
+- **AND** the sidebar width is approximately 90px
 
-  Scenario: Vertical navigation in sidebar
-    Then five navigation items are displayed vertically
-    And each navigation item has an icon
-    And the navigation text is white
-    And the navigation items are evenly spaced
+#### Scenario: Logo display in sidebar
 
-  Scenario: Navigation hover state
-    When I hover over a navigation item
-    Then the item highlights or brightens
+- **THEN** a logo wordmark is displayed at the top of the sidebar
+- **AND** the logo text color is white
+- **AND** the logo is bold and large
 
-  Scenario: Hamburger toggle button
-    Then a circular hamburger button is visible
-    And the button is at the top-left of the main content area
-    And the button has a blue background
+#### Scenario: Vertical navigation in sidebar
 
-  Scenario: Hamburger toggle on mobile
-    When the viewport is mobile width
-    And I click the hamburger button
-    Then the sidebar becomes visible
-    And clicking again hides the sidebar
+- **THEN** five navigation items are displayed vertically
+- **AND** each navigation item has an icon
+- **AND** the navigation text is white
+- **AND** the navigation items are evenly spaced
 
-  Scenario: Top navigation bar
-    Then horizontal navigation links are displayed at the top-right
-    And the links are: Home, About, Portfolio, Contact
-    And the link text is dark colored
-    And a bottom border separates the nav from content
+#### Scenario: Navigation hover state
 
-  Scenario: Main content area
-    Then the main content area has a light gray background
-    And a heading is displayed in bold dark text
-    And body text paragraphs are displayed below the heading
-    And the content has generous padding
+- **WHEN** I hover over a navigation item
+- **THEN** the item highlights or brightens
 
-  Scenario: Responsive layout
-    When the viewport is tablet width
-    Then the sidebar may collapse to hidden
-    And the hamburger button toggles the sidebar
+#### Scenario: Hamburger toggle button
 
-  Scenario: Footer
-    Then a footer section links to https://www.componentdock.com/
-    And the footer is branded "Component Dock"
-```
+- **THEN** a circular hamburger button is visible
+- **AND** the button is at the top-left of the main content area
+- **AND** the button has a blue background
+
+#### Scenario: Hamburger toggle on mobile
+
+- **WHEN** the viewport is mobile width
+- **AND** I click the hamburger button
+- **THEN** the sidebar becomes visible
+- **AND** clicking again hides the sidebar
+
+#### Scenario: Top navigation bar
+
+- **THEN** horizontal navigation links are displayed at the top-right
+- **AND** the links are: Home, About, Portfolio, Contact
+- **AND** the link text is dark colored
+- **AND** a bottom border separates the nav from content
+
+#### Scenario: Main content area
+
+- **THEN** the main content area has a light gray background
+- **AND** a heading is displayed in bold dark text
+- **AND** body text paragraphs are displayed below the heading
+- **AND** the content has generous padding
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport is tablet width
+- **THEN** the sidebar may collapse to hidden
+- **AND** the hamburger button toggles the sidebar
+
+#### Scenario: Footer
+
+- **THEN** a footer section links to https://www.componentdock.com/
+- **AND** the footer is branded "Component Dock"
 
 ## Verification checklist
 

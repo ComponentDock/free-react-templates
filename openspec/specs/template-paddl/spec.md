@@ -79,98 +79,98 @@ The template presents a **clean, modern auction marketplace** with:
 - CTA banner: white background with centered text + orange Register button
 - Footer: light gray with 4-column layout (logo, Solutions, Services, Contact)
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Paddl — Auction Marketplace Landing Page
 
 #### Scenario: Page loads with header navigation
 
-- Given the user visits the Paddl homepage
-- Then a fixed navigation bar is visible at the top
-- And the navigation contains links: Home, Buy, Sell, Services (dropdown), Blog, About, Contact
-- And a "Sign In / Register" link is visible on the right
+- **GIVEN** the user visits the Paddl homepage
+- **THEN** a fixed navigation bar is visible at the top
+- **AND** the navigation contains links: Home, Buy, Sell, Services (dropdown), Blog, About, Contact
+- **AND** a "Sign In / Register" link is visible on the right
 
 #### Scenario: Hero section displays
 
-- Given the user visits the Paddl homepage
-- Then a full-viewport hero section is displayed
-- And the hero has a background image with dark overlay
-- And the heading reads "The Best Place to Buy and Sell"
-- And a "Register" button is visible below the subtitle
+- **GIVEN** the user visits the Paddl homepage
+- **THEN** a full-viewport hero section is displayed
+- **AND** the hero has a background image with dark overlay
+- **AND** the heading reads "The Best Place to Buy and Sell"
+- **AND** a "Register" button is visible below the subtitle
 
 #### Scenario: Hero Register button is interactive
 
-- Given the hero section is displayed
-- When the user clicks the "Register" button
-- Then the button is focusable and responds to click
+- **GIVEN** the hero section is displayed
+- **WHEN** the user clicks the "Register" button
+- **THEN** the button is focusable and responds to click
 
 #### Scenario: Current Auctions section displays product grid
 
-- Given the user scrolls past the hero
-- Then a "Current Auctions" section is visible
-- And a caption label "Auctions" appears above the heading
-- And a 4-column grid of auction items is displayed (8 items total across 2 rows)
+- **GIVEN** the user scrolls past the hero
+- **THEN** a "Current Auctions" section is visible
+- **AND** a caption label "Auctions" appears above the heading
+- **AND** a 4-column grid of auction items is displayed (8 items total across 2 rows)
 
 #### Scenario: Each auction item card shows details
 
-- Given the auction grid is visible
-- Then each item card displays a product image
-- And an orange circular price badge (e.g. "$95") overlays the image top-left
-- And a product title is shown below the image
-- And a category label and bid count are shown
-- And a "Submit a Bid" button is present
+- **GIVEN** the auction grid is visible
+- **THEN** each item card displays a product image
+- **AND** an orange circular price badge (e.g. "$95") overlays the image top-left
+- **AND** a product title is shown below the image
+- **AND** a category label and bid count are shown
+- **AND** a "Submit a Bid" button is present
 
 #### Scenario: Submit a Bid button is interactive
 
-- Given an auction item card is displayed
-- When the user clicks "Submit a Bid"
-- Then the button is focusable and responds to click
+- **GIVEN** an auction item card is displayed
+- **WHEN** the user clicks "Submit a Bid"
+- **THEN** the button is focusable and responds to click
 
 #### Scenario: How It Works section displays
 
-- Given the user scrolls past the auctions grid
-- Then a "How It Works" section is visible with a "How?" caption
-- And 4 steps are displayed in a row: Register, Buy or Bid, Submit a bid, Win
-- And each step has a circular icon with an orange top border
-- And each step has a title and description paragraph
+- **GIVEN** the user scrolls past the auctions grid
+- **THEN** a "How It Works" section is visible with a "How?" caption
+- **AND** 4 steps are displayed in a row: Register, Buy or Bid, Submit a bid, Win
+- **AND** each step has a circular icon with an orange top border
+- **AND** each step has a title and description paragraph
 
 #### Scenario: About Us section displays
 
-- Given the user scrolls past the How It Works section
-- Then an "About Us" section is visible with a "About?" caption
-- And an image is displayed on the left half
-- And 3 feature items are displayed on the right half: Fast Support, Happy Customers, 24/7 Support
-- And each feature has an icon and description
+- **GIVEN** the user scrolls past the How It Works section
+- **THEN** an "About Us" section is visible with a "About?" caption
+- **AND** an image is displayed on the left half
+- **AND** 3 feature items are displayed on the right half: Fast Support, Happy Customers, 24/7 Support
+- **AND** each feature has an icon and description
 
 #### Scenario: Testimonials section displays
 
-- Given the user scrolls past the About Us section
-- Then a dark-background testimonials section is visible
-- And the section has a background image with dark overlay
-- And a "Testimonials" caption and "Happy Clients" heading are centered
-- And a carousel of testimonial cards is displayed
-- And each card shows a person photo, name, role, and quote
+- **GIVEN** the user scrolls past the About Us section
+- **THEN** a dark-background testimonials section is visible
+- **AND** the section has a background image with dark overlay
+- **AND** a "Testimonials" caption and "Happy Clients" heading are centered
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows a person photo, name, role, and quote
 
 #### Scenario: Testimonials carousel is interactive
 
-- Given the testimonials carousel is displayed
-- When the user interacts with the carousel
-- Then it scrolls through testimonial cards
+- **GIVEN** the testimonials carousel is displayed
+- **WHEN** the user interacts with the carousel
+- **THEN** it scrolls through testimonial cards
 
 #### Scenario: CTA section displays
 
-- Given the user scrolls past the testimonials
-- Then a call-to-action section is visible
-- And the text reads "Create an account and start Buy, Bid or Sell Now!"
-- And a "Register" button is present
+- **GIVEN** the user scrolls past the testimonials
+- **THEN** a call-to-action section is visible
+- **AND** the text reads "Create an account and start Buy, Bid or Sell Now!"
+- **AND** a "Register" button is present
 
 #### Scenario: Footer displays
 
-- Given the user scrolls to the bottom of the page
-- Then a footer section is visible with a light gray background
-- And the footer contains 4 columns: logo/description, Solutions, Services, Contact
-- And a copyright line is shown at the bottom
-- And the footer links to "Component Dock" (https://www.componentdock.com/)
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer section is visible with a light gray background
+- **AND** the footer contains 4 columns: logo/description, Solutions, Services, Contact
+- **AND** a copyright line is shown at the bottom
+- **AND** the footer links to "Component Dock" (https://www.componentdock.com/)
 
 ## Verification checklist
 

@@ -19,19 +19,25 @@ New original name: `carouselflow` (`@free-react-templates/carouselflow`). Stack:
   - Generous padding (`7rem 0` content wrapper).
   - Carousel indicator dots styled as horizontal bars (`15px` width, `3px` height, no border radius).
 
-## Section Structure & Requirements
+## Requirements
 
 ### 1. Header / Title Section
+
+#### Scenario: 1. Header / Title Section
 
 - Centered section heading (`Carousel #2` / `Our Products`) styled with clean typography and spacing.
 
 ### 2. Carousel Showcase Section (`bg-left-half`)
+
+#### Scenario: 2. Carousel Showcase Section (`bg-left-half`)
 
 - Split background container (`bg-[#f8f9fa]` on the left half).
 - Responsive interactive product carousel supporting multiple item cards (6 items featuring high-quality photography and bold titles).
 - Interactive navigation dots (horizontal bar indicators) allowing users to switch active slide views.
 
 ### 3. Footer
+
+#### Scenario: 3. Footer
 
 - Minimalist footer featuring copyright and mandatory Component Dock branding link (`https://www.componentdock.com/`).
 

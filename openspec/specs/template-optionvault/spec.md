@@ -45,54 +45,66 @@ The page has a clean, minimal white background. A centered section contains a la
    - Dropdown highlights lime-green on hover/selection
 4. **Footer attribution** — "Made with Component Dock" link (required by conventions)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders heading
-- **Given** the user visits the OptionVault page
-- **Then** a heading "Multiselect #08" is visible centered at the top
+### Feature: OptionVault template behaviour
 
-### Scenario: Dropdown placeholder text
-- **Given** the page is loaded with no selections
-- **Then** the dropdown shows placeholder text "Your Favorite Football Teams"
+#### Scenario: Page renders heading
 
-### Scenario: Category groupings visible
-- **Given** the user opens the dropdown
-- **Then** options are grouped under category headers: "NFC EAST", "NFC NORTH", "NFC SOUTH", "NFC WEST", "AFC EAST", "AFC NORTH", "AFC SOUTH", "AFC WEST"
+- **GIVEN** the user visits the OptionVault page
+- **THEN** a heading "Multiselect #08" is visible centered at the top
 
-### Scenario: Select single option
-- **Given** the dropdown is open
-- **When** the user clicks "Dallas Cowboys"
-- **Then** "Dallas Cowboys" appears as a selected tag/chip below the input
-- **And** the option is marked as selected in the dropdown
+#### Scenario: Dropdown placeholder text
 
-### Scenario: Select multiple options
-- **Given** the user has already selected "Dallas Cowboys"
-- **When** the user clicks "New York Giants"
-- **Then** both "Dallas Cowboys" and "New York Giants" appear as selected tags
+- **GIVEN** the page is loaded with no selections
+- **THEN** the dropdown shows placeholder text "Your Favorite Football Teams"
 
-### Scenario: Deselect option
-- **Given** the user has selected "Dallas Cowboys"
-- **When** the user clicks the remove (×) button on the "Dallas Cowboys" tag
-- **Then** "Dallas Cowboys" is removed from the selection
+#### Scenario: Category groupings visible
 
-### Scenario: Search/filter options
-- **Given** the dropdown is open
-- **When** the user types "Packers" in the search field
-- **Then** only "Green Bay Packers" is shown in the filtered results
+- **GIVEN** the user opens the dropdown
+- **THEN** options are grouped under category headers: "NFC EAST", "NFC NORTH", "NFC SOUTH", "NFC WEST", "AFC EAST", "AFC NORTH", "AFC SOUTH", "AFC WEST"
 
-### Scenario: Empty state
-- **Given** the user has not selected any options
-- **Then** no tag chips are visible below the input
+#### Scenario: Select single option
 
-### Scenario: Accessibility — keyboard navigation
-- **Given** the dropdown is focused
-- **When** the user presses arrow keys
-- **Then** focus moves through the options sequentially
-- **And** Enter selects the focused option
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "Dallas Cowboys"
+- **THEN** "Dallas Cowboys" appears as a selected tag/chip below the input
+- **AND** the option is marked as selected in the dropdown
 
-### Scenario: Footer link
-- **Given** the user scrolls to the bottom
-- **Then** a link to "https://www.componentdock.com/" labeled "Component Dock" is visible
+#### Scenario: Select multiple options
+
+- **GIVEN** the user has already selected "Dallas Cowboys"
+- **WHEN** the user clicks "New York Giants"
+- **THEN** both "Dallas Cowboys" and "New York Giants" appear as selected tags
+
+#### Scenario: Deselect option
+
+- **GIVEN** the user has selected "Dallas Cowboys"
+- **WHEN** the user clicks the remove (×) button on the "Dallas Cowboys" tag
+- **THEN** "Dallas Cowboys" is removed from the selection
+
+#### Scenario: Search/filter options
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user types "Packers" in the search field
+- **THEN** only "Green Bay Packers" is shown in the filtered results
+
+#### Scenario: Empty state
+
+- **GIVEN** the user has not selected any options
+- **THEN** no tag chips are visible below the input
+
+#### Scenario: Accessibility — keyboard navigation
+
+- **GIVEN** the dropdown is focused
+- **WHEN** the user presses arrow keys
+- **THEN** focus moves through the options sequentially
+- **AND** Enter selects the focused option
+
+#### Scenario: Footer link
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a link to "https://www.componentdock.com/" labeled "Component Dock" is visible
 
 ## Verification checklist
 

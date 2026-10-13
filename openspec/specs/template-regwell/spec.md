@@ -53,3 +53,31 @@ Regwell is an education appointment form template with a form card. It recreates
 - **Styling:** Tailwind CSS 4, `@theme` tokens for brand colors
 - **Form handling:** Controlled inputs, validation with zod (for type safety)
 - **Testing:** Vitest + Testing Library, 100% coverage
+
+## Requirements
+
+### Feature: Background layer
+
+full-viewport photo (students at desk) with dark overlay
+
+#### Scenario: Background layer renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Background layer band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Form card
+
+white card, left-of-center, with subtle shadow
+   - Heading: "EDUCATION APPOINTMENT FORM" (uppercase, bold)
+   - Fields: Title, Your Name, Email, Phone number (text inputs, underline style)
+   - Course Type (dropdown/select)
+   - Sub-section: "How would you like to be located?" heading
+     - By phone (dropdown/select)
+     - Hours : 8am 10pm (dropdown/select)
+   - Checkbox: "I agree to the Terms and Conditions"
+   - Submit button: "Request an appointment" (dark blue, rounded)
+
+#### Scenario: Form card renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Form card band SHALL be present at its documented position with the structure, copy and tokens named above

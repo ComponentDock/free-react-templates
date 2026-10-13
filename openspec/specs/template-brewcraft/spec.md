@@ -56,89 +56,113 @@ Extracted from the live preview CSS (`css/main.css`) and DOM structure:
 7. **Blog** — section title + 2 blog post cards (image + tag pills + title + excerpt + date)
 8. **Footer** — dark bg, 3 columns: About Us text + Newsletter form (email input + arrow button) + Follow Us social icons (Facebook, Twitter, Dribbble, Behance) + copyright
 
-## Gherkin requirements
+## Requirements
 
 ### Background
-  Given the Brewcraft template is loaded in the browser
-  And the page displays the "Brewcraft" brand
+
+#### Scenario: Background
+
+- **GIVEN** the Brewcraft template is loaded in the browser
+- **AND** the page displays the "Brewcraft" brand
 
 ### Header
-  Scenario: Top bar displays hours and phone
-    Then the top bar shows "Mon-Fri: 8am to 2pm"
-    And the top bar shows "Sat-Sun: 11am to 4pm"
-    And a phone link "(012) 6985 236 7512" is visible
 
-  Scenario: Navbar contains navigation links
-    Then the navbar contains links: "Home", "About", "Coffee", "Review", "Blog"
-    And a hamburger menu is present for mobile
+#### Scenario: Top bar displays hours and phone
+
+- **THEN** the top bar shows "Mon-Fri: 8am to 2pm"
+- **AND** the top bar shows "Sat-Sun: 11am to 4pm"
+- **AND** a phone link "(012) 6985 236 7512" is visible
+
+#### Scenario: Navbar contains navigation links
+
+- **THEN** the navbar contains links: "Home", "About", "Coffee", "Review", "Blog"
+- **AND** a hamburger menu is present for mobile
 
 ### Hero / Banner
-  Scenario: Hero section displays headline and CTA
-    Given the hero section is visible
-    Then a subtitle "Now you can feel the Energy" is shown
-    And the main headline "Start your day with a black Coffee" is displayed
-    And a "Buy Now" button links to the menu section
+
+#### Scenario: Hero section displays headline and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** a subtitle "Now you can feel the Energy" is shown
+- **AND** the main headline "Start your day with a black Coffee" is displayed
+- **AND** a "Buy Now" button links to the menu section
 
 ### About / Video section
-  Scenario: About section shows video and text
-    Given the about section is visible
-    Then a play button overlay links to a video
-    And the heading "We Telecast our Coffee Making Live" is shown
-    And a paragraph about the coffee shop is displayed
-    And a signature image is visible
+
+#### Scenario: About section shows video and text
+
+- **GIVEN** the about section is visible
+- **THEN** a play button overlay links to a video
+- **AND** the heading "We Telecast our Coffee Making Live" is shown
+- **AND** a paragraph about the coffee shop is displayed
+- **AND** a signature image is visible
 
 ### Menu / Coffee section
-  Scenario: Menu section displays coffee items
-    Given the coffee menu section is visible
-    Then 6 coffee item cards are displayed in a 2-column grid
-    And each card shows a coffee name, price, and description
-    And the coffee names include "Cappuccino", "Americano", "Espresso", "Macchiato", "Mocha", "Coffee"
 
-  Scenario: Menu cards have correct styling
-    Given a coffee menu card is rendered
-    Then it has a white background with amber-tinted shadow
-    And it has rounded corners (10px border-radius)
+#### Scenario: Menu section displays coffee items
+
+- **GIVEN** the coffee menu section is visible
+- **THEN** 6 coffee item cards are displayed in a 2-column grid
+- **AND** each card shows a coffee name, price, and description
+- **AND** the coffee names include "Cappuccino", "Americano", "Espresso", "Macchiato", "Mocha", "Coffee"
+
+#### Scenario: Menu cards have correct styling
+
+- **GIVEN** a coffee menu card is rendered
+- **THEN** it has a white background with amber-tinted shadow
+- **AND** it has rounded corners (10px border-radius)
 
 ### Gallery
-  Scenario: Gallery section displays images
-    Given the gallery section is visible
-    Then a section title "What kind of Coffee we serve for you" is shown
-    And 5 gallery images are displayed in a masonry grid layout
-    And each image opens in a lightbox on click
+
+#### Scenario: Gallery section displays images
+
+- **GIVEN** the gallery section is visible
+- **THEN** a section title "What kind of Coffee we serve for you" is shown
+- **AND** 5 gallery images are displayed in a masonry grid layout
+- **AND** each image opens in a lightbox on click
 
 ### Review / Testimonials
-  Scenario: Review section shows testimonials
-    Given the review section is visible
-    Then the section has a gold/amber (#b68834) background
-    And 2 reviewer cards are displayed side by side
-    And each card shows an avatar, name, star rating, and review text
 
-  Scenario: Counter row shows statistics
-    Given the counter row is visible
-    Then 4 statistics are displayed: "Happy Client" (2536), "Total Projects" (7562), "Cups Coffee" (2013), "Total Submitted" (10536)
+#### Scenario: Review section shows testimonials
+
+- **GIVEN** the review section is visible
+- **THEN** the section has a gold/amber (#b68834) background
+- **AND** 2 reviewer cards are displayed side by side
+- **AND** each card shows an avatar, name, star rating, and review text
+
+#### Scenario: Counter row shows statistics
+
+- **GIVEN** the counter row is visible
+- **THEN** 4 statistics are displayed: "Happy Client" (2536), "Total Projects" (7562), "Cups Coffee" (2013), "Total Submitted" (10536)
 
 ### Blog
-  Scenario: Blog section displays posts
-    Given the blog section is visible
-    Then 2 blog post cards are displayed side by side
-    And each card shows an image, tag pills, title, excerpt, and date
+
+#### Scenario: Blog section displays posts
+
+- **GIVEN** the blog section is visible
+- **THEN** 2 blog post cards are displayed side by side
+- **AND** each card shows an image, tag pills, title, excerpt, and date
 
 ### Footer
-  Scenario: Footer displays content and links
-    Given the footer is visible
-    Then an "About Us" column with description text is shown
-    And a "Newsletter" column with email input and submit button is shown
-    And a "Follow Us" column with social media icons is shown
-    And a copyright notice is displayed at the bottom
-    And a "Component Dock" link is present (replacing original Colorlib attribution)
+
+#### Scenario: Footer displays content and links
+
+- **GIVEN** the footer is visible
+- **THEN** an "About Us" column with description text is shown
+- **AND** a "Newsletter" column with email input and submit button is shown
+- **AND** a "Follow Us" column with social media icons is shown
+- **AND** a copyright notice is displayed at the bottom
+- **AND** a "Component Dock" link is present (replacing original Colorlib attribution)
 
 ### Responsive
-  Scenario: Mobile layout adjusts layout
-    Given the viewport is 375px wide
-    Then the hamburger menu is visible
-    And navigation links collapse into a mobile menu
-    And coffee menu cards stack vertically
-    And blog post cards stack vertically
+
+#### Scenario: Mobile layout adjusts layout
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the hamburger menu is visible
+- **AND** navigation links collapse into a mobile menu
+- **AND** coffee menu cards stack vertically
+- **AND** blog post cards stack vertically
 
 ## Verification checklist
 

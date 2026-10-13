@@ -52,48 +52,55 @@ with a chat icon toggle, overlaid on a blog post grid.
    - SEND button: full-width, white background, dark text, uppercase
    - Form fields stack vertically with spacing
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: SidebarPanel template behaviour
+
 Feature: SidebarPanel template layout
 
-  Background:
-    Given the user opens the SidebarPanel template page
+Background:
+- **GIVEN** the user opens the SidebarPanel template page
 
-  Scenario: Chat icon toggle is visible
-    Then a white chat/speech-bubble icon is visible near the top-right of the viewport
+#### Scenario: Chat icon toggle is visible
 
-  Scenario: Sidebar contact panel opens
-    When the user clicks the chat icon toggle
-    Then the right sidebar contact panel slides in from the right
-    And the panel has a deep purple background
-    And the heading "Get in touch" is displayed in white
+- **THEN** a white chat/speech-bubble icon is visible near the top-right of the viewport
 
-  Scenario: Contact form fields are present
-    Then the sidebar contains a name input field with placeholder "Enter your name"
-    And an email input field with placeholder "Enter your email"
-    And a message textarea with placeholder "Write your message"
+#### Scenario: Sidebar contact panel opens
 
-  Scenario: Send button renders
-    Then a "SEND" button is visible at the bottom of the contact form
-    And the button has a white background and dark text
-    And the button spans the full width of the form
+- **WHEN** the user clicks the chat icon toggle
+- **THEN** the right sidebar contact panel slides in from the right
+- **AND** the panel has a deep purple background
+- **AND** the heading "Get in touch" is displayed in white
 
-  Scenario: Sidebar closes
-    Given the sidebar contact panel is open
-    When the user clicks the chat icon toggle
-    Then the sidebar slides back to the right and is hidden
+#### Scenario: Contact form fields are present
 
-  Scenario: Blog post grid renders
-    Then the main content area shows a 2-column grid of blog post cards
-    And each post card shows an author photo
-    And each post card shows a post title and posted date
+- **THEN** the sidebar contains a name input field with placeholder "Enter your name"
+- **AND** an email input field with placeholder "Enter your email"
+- **AND** a message textarea with placeholder "Write your message"
 
-  Scenario: Responsive behavior
-    When the viewport is below 768px
-    Then the sidebar becomes a full-width bottom drawer or overlay
-    And the post grid switches to a single column
-```
+#### Scenario: Send button renders
+
+- **THEN** a "SEND" button is visible at the bottom of the contact form
+- **AND** the button has a white background and dark text
+- **AND** the button spans the full width of the form
+
+#### Scenario: Sidebar closes
+
+- **GIVEN** the sidebar contact panel is open
+- **WHEN** the user clicks the chat icon toggle
+- **THEN** the sidebar slides back to the right and is hidden
+
+#### Scenario: Blog post grid renders
+
+- **THEN** the main content area shows a 2-column grid of blog post cards
+- **AND** each post card shows an author photo
+- **AND** each post card shows a post title and posted date
+
+#### Scenario: Responsive behavior
+
+- **WHEN** the viewport is below 768px
+- **THEN** the sidebar becomes a full-width bottom drawer or overlay
+- **AND** the post grid switches to a single column
 
 ## Verification checklist
 

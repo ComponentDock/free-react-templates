@@ -54,69 +54,69 @@ component page.
      - Checkbox list of all 50 US states (scrollable)
 5. **Footer** with Component Dock link (mandatory per AGENTS.md)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multiselect Checkbox Dropdown with Search and Select All
 
 #### Scenario: Page renders with heading and dropdown
 
-- Given the page loads
-- When the user views the page
-- Then a heading "Multi-Select #4" is visible (centered, 20px)
-- And a multi-select dropdown trigger button is visible
+- **GIVEN** the page loads
+- **WHEN** the user views the page
+- **THEN** a heading "Multi-Select #4" is visible (centered, 20px)
+- **AND** a multi-select dropdown trigger button is visible
 
 #### Scenario: Dropdown opens on click
 
-- Given the dropdown is closed
-- When the user clicks the trigger button
-- Then a dropdown panel appears with search input, "Select All" link, and checkbox list
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the trigger button
+- **THEN** a dropdown panel appears with search input, "Select All" link, and checkbox list
 
 #### Scenario: Select All checks all options
 
-- Given the dropdown is open
-- When the user clicks "Select All"
-- Then all 50 US state checkboxes become checked
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "Select All"
+- **THEN** all 50 US state checkboxes become checked
 
 #### Scenario: Deselect All unchecks all options
 
-- Given all states are checked via Select All
-- When the user clicks "Select All" again (now shows "Deselect All")
-- Then all checkboxes become unchecked
+- **GIVEN** all states are checked via Select All
+- **WHEN** the user clicks "Select All" again (now shows "Deselect All")
+- **THEN** all checkboxes become unchecked
 
 #### Scenario: Individual checkbox selection
 
-- Given the dropdown is open
-- When the user checks "California"
-- Then "California" checkbox is checked
-- And the trigger button text updates to reflect 1 selected
+- **GIVEN** the dropdown is open
+- **WHEN** the user checks "California"
+- **THEN** "California" checkbox is checked
+- **AND** the trigger button text updates to reflect 1 selected
 
 #### Scenario: Multiple checkbox selection
 
-- Given "California" is checked
-- When the user also checks "Texas" and "New York"
-- Then three checkboxes are checked
-- And the trigger button text updates to reflect 3 selected
+- **GIVEN** "California" is checked
+- **WHEN** the user also checks "Texas" and "New York"
+- **THEN** three checkboxes are checked
+- **AND** the trigger button text updates to reflect 3 selected
 
 #### Scenario: Live search filters states
 
-- Given the dropdown is open
-- When the user types "New" in the search input
-- Then only states containing "New" are visible (New Hampshire, New Jersey, New Mexico, New York)
-- And non-matching states are hidden
+- **GIVEN** the dropdown is open
+- **WHEN** the user types "New" in the search input
+- **THEN** only states containing "New" are visible (New Hampshire, New Jersey, New Mexico, New York)
+- **AND** non-matching states are hidden
 
 #### Scenario: Dropdown closes on outside click
 
-- Given the dropdown is open
-- When the user clicks outside the dropdown
-- Then the dropdown panel becomes hidden
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown
+- **THEN** the dropdown panel becomes hidden
 
 #### Scenario: Accessibility
 
-- Given the page loads
-- When the user navigates with keyboard
-- Then the trigger button is focusable
-- And checkboxes are keyboard-accessible
-- And the search input is focusable
+- **GIVEN** the page loads
+- **WHEN** the user navigates with keyboard
+- **THEN** the trigger button is focusable
+- **AND** checkboxes are keyboard-accessible
+- **AND** the search input is focusable
 
 ## Verification Checklist
 

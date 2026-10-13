@@ -44,114 +44,106 @@ Extracted from live preview CSS (`css/style.css`) on 2026-09-10.
 8. **CTA Banner** — Full-width `#0779e4` blue background. Heading "What are you waiting for?" + description + "Rent a car now" white button.
 9. **Footer** — White background. Left column: "About Us" text + social icons (Facebook, Instagram, Twitter, LinkedIn). Right 4 columns: Quick Links, Resources, Support, Company. Bottom: copyright line with heart icon.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with logo and navigation links
-```gherkin
-Given the user visits the Motovault homepage
-Then a navbar is visible at the top
-And the navbar contains the logo text "Motovault"
-And the navbar contains navigation links: Home, Listing, Testimonials, Blog, About, Contact
-And the navbar is responsive with a mobile hamburger menu
-```
+### Feature: Motovault template behaviour
 
-### Scenario: Hero section displays booking form
-```gherkin
-Given the user is on the homepage
-Then a hero section is visible with a background image
-And the hero heading reads "Rent a car is within your finger tips"
-And a trip booking form is displayed over the hero
-And the form contains a car type dropdown with options
-And the form contains a pick-up date input
-And the form contains a drop-off date input
-And the form contains a "Search Now" primary button
-```
+#### Scenario: Navbar renders with logo and navigation links
 
-### Scenario: How It Works section shows three steps
-```gherkin
-Given the user scrolls to the How It Works section
-Then the section heading reads "How it works?"
-And a subtitle reads "Easy steps to get you started"
-And three steps are displayed in a row
-And step 1 is titled "Select a car"
-And step 2 is titled "Fill up form"
-And step 3 is titled "Payment"
-And each step has a large faded step number
-And a "Video how it works" play link is shown below
-```
+- **GIVEN** the user visits the Motovault homepage
+- **THEN** a navbar is visible at the top
+- **AND** the navbar contains the logo text "Motovault"
+- **AND** the navbar contains navigation links: Home, Listing, Testimonials, Blog, About, Contact
+- **AND** the navbar is responsive with a mobile hamburger menu
 
-### Scenario: Promo Feature section with split layout
-```gherkin
-Given the user scrolls to the promo feature section
-Then the heading reads "You can easily avail our promo for renting a car"
-And a feature illustration image is displayed
-And body paragraph text is shown
-And a "Meet them now" primary button is visible
-```
+#### Scenario: Hero section displays booking form
 
-### Scenario: Car Listings section shows six car cards
-```gherkin
-Given the user scrolls to the Car Listings section
-Then the section heading reads "Car Listings"
-And six car listing cards are displayed in a 3-column grid
-And each card shows a car image
-And each card shows the car name
-And each card shows the rental price per day
-And each card shows luggage, doors, and passenger specs
-And each card shows a description paragraph
-And each card has a "Rent Now" primary button
-```
+- **GIVEN** the user is on the homepage
+- **THEN** a hero section is visible with a background image
+- **AND** the hero heading reads "Rent a car is within your finger tips"
+- **AND** a trip booking form is displayed over the hero
+- **AND** the form contains a car type dropdown with options
+- **AND** the form contains a pick-up date input
+- **AND** the form contains a drop-off date input
+- **AND** the form contains a "Search Now" primary button
 
-### Scenario: Features section shows six feature cards
-```gherkin
-Given the user scrolls to the Features section
-Then the section heading reads "Features"
-And six feature cards are displayed in a 3-column grid
-And each feature card shows an icon in a bordered square
-And each feature card shows a title and description
-And each feature card has a "Learn more" link
-```
+#### Scenario: How It Works section shows three steps
 
-### Scenario: Testimonials section shows three testimonial cards
-```gherkin
-Given the user scrolls to the Testimonials section
-Then the section heading reads "Testimonials"
-And three testimonial cards are displayed in a 3-column grid
-And each card shows a blockquote with testimonial text
-And each card shows the author avatar, name, and role
-And each card has a blue bottom border accent
-```
+- **GIVEN** the user scrolls to the How It Works section
+- **THEN** the section heading reads "How it works?"
+- **AND** a subtitle reads "Easy steps to get you started"
+- **AND** three steps are displayed in a row
+- **AND** step 1 is titled "Select a car"
+- **AND** step 2 is titled "Fill up form"
+- **AND** step 3 is titled "Payment"
+- **AND** each step has a large faded step number
+- **AND** a "Video how it works" play link is shown below
 
-### Scenario: CTA Banner section with call to action
-```gherkin
-Given the user scrolls to the CTA Banner section
-Then a full-width blue background banner is displayed
-And the heading reads "What are you waiting for?"
-And a description paragraph is shown
-And a "Rent a car now" white button is visible
-```
+#### Scenario: Promo Feature section with split layout
 
-### Scenario: Footer with about and link columns
-```gherkin
-Given the user scrolls to the footer
-Then the footer contains an "About Us" section with description text
-And social media icon links are shown (Facebook, Instagram, Twitter, LinkedIn)
-And four link columns are displayed: Quick Links, Resources, Support, Company
-And each column contains a list of links
-And a copyright line with a heart icon is shown at the bottom
-And the footer links to Component Dock
-```
+- **GIVEN** the user scrolls to the promo feature section
+- **THEN** the heading reads "You can easily avail our promo for renting a car"
+- **AND** a feature illustration image is displayed
+- **AND** body paragraph text is shown
+- **AND** a "Meet them now" primary button is visible
 
-### Scenario: Responsive layout across viewports
-```gherkin
-Given the user views the page on mobile (< 768px)
-Then the navbar collapses to a hamburger menu
-And the trip form stacks vertically
-And the car listings display in a single column
-And the feature cards display in a single column
-And the testimonial cards display in a single column
-And the footer columns stack vertically
-```
+#### Scenario: Car Listings section shows six car cards
+
+- **GIVEN** the user scrolls to the Car Listings section
+- **THEN** the section heading reads "Car Listings"
+- **AND** six car listing cards are displayed in a 3-column grid
+- **AND** each card shows a car image
+- **AND** each card shows the car name
+- **AND** each card shows the rental price per day
+- **AND** each card shows luggage, doors, and passenger specs
+- **AND** each card shows a description paragraph
+- **AND** each card has a "Rent Now" primary button
+
+#### Scenario: Features section shows six feature cards
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** the section heading reads "Features"
+- **AND** six feature cards are displayed in a 3-column grid
+- **AND** each feature card shows an icon in a bordered square
+- **AND** each feature card shows a title and description
+- **AND** each feature card has a "Learn more" link
+
+#### Scenario: Testimonials section shows three testimonial cards
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the section heading reads "Testimonials"
+- **AND** three testimonial cards are displayed in a 3-column grid
+- **AND** each card shows a blockquote with testimonial text
+- **AND** each card shows the author avatar, name, and role
+- **AND** each card has a blue bottom border accent
+
+#### Scenario: CTA Banner section with call to action
+
+- **GIVEN** the user scrolls to the CTA Banner section
+- **THEN** a full-width blue background banner is displayed
+- **AND** the heading reads "What are you waiting for?"
+- **AND** a description paragraph is shown
+- **AND** a "Rent a car now" white button is visible
+
+#### Scenario: Footer with about and link columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer contains an "About Us" section with description text
+- **AND** social media icon links are shown (Facebook, Instagram, Twitter, LinkedIn)
+- **AND** four link columns are displayed: Quick Links, Resources, Support, Company
+- **AND** each column contains a list of links
+- **AND** a copyright line with a heart icon is shown at the bottom
+- **AND** the footer links to Component Dock
+
+#### Scenario: Responsive layout across viewports
+
+- **GIVEN** the user views the page on mobile (< 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the trip form stacks vertically
+- **AND** the car listings display in a single column
+- **AND** the feature cards display in a single column
+- **AND** the testimonial cards display in a single column
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

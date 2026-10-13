@@ -74,6 +74,10 @@ src/
 
 ## Requirements
 
+### Feature: Laurel template behaviour
+
+#### Scenario: Laurel
+
 - All images use picsum.photos with seed placeholders
 - All icons use lucide-react (no brand icons — use inline SVG for social)
 - Footer MUST link https://www.componentdock.com/ branded "Component Dock"

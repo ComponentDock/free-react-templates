@@ -48,81 +48,92 @@ Extracted from `style.css` on the live preview:
 10. **CTA / Contact** — "Have project in mind?" with gradient background (pink→purple), paragraph text, "Contact Us" button.
 11. **Footer** — Dark background, multiple columns (About, Quick Link, Newsletter with form, Follow Us social links). Footer bottom with copyright + Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: SeoCrest template behaviour
+
 Feature: SeoCrest — SEO Digital Marketing Template
 
-  Background:
-    Given the app is built with Vite + React 19 + Tailwind 4 + TypeScript
-    And the design tokens are defined in index.css @theme
+Background:
+- **GIVEN** the app is built with Vite + React 19 + Tailwind 4 + TypeScript
+- **AND** the design tokens are defined in index.css @theme
 
-  Scenario: Header displays transparent over hero
-    Given the page loads at the top
-    Then the header background is transparent
-    And the logo is visible on the left
-    And nav links (Home, About, Services, Contact, Blog, Pages) are centered
-    And a "Contact Us" button appears on the right
-    When the user scrolls down
-    Then the header becomes sticky with white background and shadow
+#### Scenario: Header displays transparent over hero
 
-  Scenario: Hero section renders two-column layout
-    Given the hero section is visible
-    Then a heading "We Collect High Quality Leads" is displayed
-    And a paragraph describes the service
-    And a "Contact Us" CTA button is rendered
-    And an illustration or image is shown on the right
+- **GIVEN** the page loads at the top
+- **THEN** the header background is transparent
+- **AND** the logo is visible on the left
+- **AND** nav links (Home, About, Services, Contact, Blog, Pages) are centered
+- **AND** a "Contact Us" button appears on the right
+- **WHEN** the user scrolls down
+- **THEN** the header becomes sticky with white background and shadow
 
-  Scenario: Services section shows three service cards
-    Given the services section is visible
-    Then 3 service cards are displayed in a grid
-    And each card has an icon, title, description, and "get started" link
+#### Scenario: Hero section renders two-column layout
 
-  Scenario: Generating Customers shows four feature blocks
-    Given the generating-customers section is visible
-    Then 4 feature blocks are displayed
-    And each block has an icon, title, and description
+- **GIVEN** the hero section is visible
+- **THEN** a heading "We Collect High Quality Leads" is displayed
+- **AND** a paragraph describes the service
+- **AND** a "Contact Us" CTA button is rendered
+- **AND** an illustration or image is shown on the right
 
-  Scenario: Pricing section shows three tier cards
-    Given the pricing section is visible
-    Then 3 pricing cards are displayed
-    And each card shows a price and feature list
+#### Scenario: Services section shows three service cards
 
-  Scenario: Portfolio section displays project grid
-    Given the portfolio section is visible
-    Then 4 portfolio items are displayed in a grid
-    And each item has a title and category label
+- **GIVEN** the services section is visible
+- **THEN** 3 service cards are displayed in a grid
+- **AND** each card has an icon, title, description, and "get started" link
 
-  Scenario: Testimonials carousel shows client quotes
-    Given the testimonials section is visible
-    Then a carousel with client quotes is rendered
-    And each slide shows a quote, author name, and role
+#### Scenario: Generating Customers shows four feature blocks
 
-  Scenario: Blog section shows three post cards
-    Given the blog section is visible
-    Then 3 blog post cards are displayed
-    And each card has an image, title, "Continue Reading" link, and date
+- **GIVEN** the generating-customers section is visible
+- **THEN** 4 feature blocks are displayed
+- **AND** each block has an icon, title, and description
 
-  Scenario: CTA section renders gradient background
-    Given the CTA section is visible
-    Then a gradient background (pink to purple) is displayed
-    And "Have project in mind?" heading is shown
-    And a "Contact Us" button is rendered
+#### Scenario: Pricing section shows three tier cards
 
-  Scenario: Footer has multi-column layout
-    Given the footer is visible
-    Then it contains About, Quick Link, Newsletter, and Follow Us columns
-    And a copyright line with "Component Dock" link is at the bottom
-    And the newsletter column includes an email input and subscribe button
+- **GIVEN** the pricing section is visible
+- **THEN** 3 pricing cards are displayed
+- **AND** each card shows a price and feature list
 
-  Scenario: All sections match ColorLib Seos design tokens
-    Given the template is rendered
-    Then heading color is #2b4b80
-    And body text color is #707b8e
-    And primary button color is #ff5c97
-    And font family is Poppins
-    And button border-radius is 5px
-```
+#### Scenario: Portfolio section displays project grid
+
+- **GIVEN** the portfolio section is visible
+- **THEN** 4 portfolio items are displayed in a grid
+- **AND** each item has a title and category label
+
+#### Scenario: Testimonials carousel shows client quotes
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a carousel with client quotes is rendered
+- **AND** each slide shows a quote, author name, and role
+
+#### Scenario: Blog section shows three post cards
+
+- **GIVEN** the blog section is visible
+- **THEN** 3 blog post cards are displayed
+- **AND** each card has an image, title, "Continue Reading" link, and date
+
+#### Scenario: CTA section renders gradient background
+
+- **GIVEN** the CTA section is visible
+- **THEN** a gradient background (pink to purple) is displayed
+- **AND** "Have project in mind?" heading is shown
+- **AND** a "Contact Us" button is rendered
+
+#### Scenario: Footer has multi-column layout
+
+- **GIVEN** the footer is visible
+- **THEN** it contains About, Quick Link, Newsletter, and Follow Us columns
+- **AND** a copyright line with "Component Dock" link is at the bottom
+- **AND** the newsletter column includes an email input and subscribe button
+
+#### Scenario: All sections match ColorLib Seos design tokens
+
+- **GIVEN** the template is rendered
+- **THEN** heading color is #2b4b80
+- **AND** body text color is #707b8e
+- **AND** primary button color is #ff5c97
+- **AND** font family is Poppins
+- **AND** button border-radius is 5px
 
 ## Verification Checklist
 

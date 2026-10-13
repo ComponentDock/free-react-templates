@@ -44,235 +44,240 @@ Extracted from the live preview CSS (`css/main.css`):
 - **Contact**: Form with name, email, subject, message + send button.
 - **Footer**: Dark (#222) with 3 columns (About, Contact+phone numbers, Newsletter), bottom bar with copyright + social icons.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Fixed navbar with logo and navigation
 
-  Scenario: Logo displays with left blue accent border
-    Given the page loads
-    When I look at the header
-    Then a text-based logo "Helpdesk" is visible on the left
-    And it has a 4px left border in #8490ff
+#### Scenario: Logo displays with left blue accent border
 
-  Scenario: Navigation links are uppercase and reactive
-    Given the page loads
-    When I view the navigation menu
-    Then links "Home", "Feature", "We Offer", "About", "Contact" are visible
-    And each link is uppercase and 12px font
-    When I hover over a link
-    Then its color changes to #8490ff
-    When the page scrolls down
-    Then the header gains a box-shadow
+- **GIVEN** the page loads
+- **WHEN** I look at the header
+- **THEN** a text-based logo "Helpdesk" is visible on the left
+- **AND** it has a 4px left border in #8490ff
 
-  Scenario: Mobile menu toggle
-    Given I am on a viewport width below 800px
-    When I click the mobile hamburger icon
-    Then a dark slide-in sidebar appears with nav links
-    And the hamburger icon color is #8490ff
-```
+#### Scenario: Navigation links are uppercase and reactive
+
+- **GIVEN** the page loads
+- **WHEN** I view the navigation menu
+- **THEN** links "Home", "Feature", "We Offer", "About", "Contact" are visible
+- **AND** each link is uppercase and 12px font
+- **WHEN** I hover over a link
+- **THEN** its color changes to #8490ff
+- **WHEN** the page scrolls down
+- **THEN** the header gains a box-shadow
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** I am on a viewport width below 800px
+- **WHEN** I click the mobile hamburger icon
+- **THEN** a dark slide-in sidebar appears with nav links
+- **AND** the hamburger icon color is #8490ff
 
 ### Hero / Banner
 
-```gherkin
 Feature: Hero banner section
 
-  Scenario: Hero displays with blue brush stroke and agent photo
-    Given the page loads
-    When I look at the hero section
-    Then there is a white background with a blue watercolor brush stroke graphic
-    And a subtitle "DISCOVER THE COLORFUL WORLD" is displayed in uppercase
-    And a heading "Efficiency Booster" is displayed at 60px / 700 weight
-    And body lorem ipsum text is shown below the heading
-    And a "DISCOVER NOW" button is visible with gradient background and 25px border-radius
+#### Scenario: Hero displays with blue brush stroke and agent photo
 
-  Scenario: Hero CTA button hover
-    Given I hover over the hero "Discover Now" button
-    Then the button becomes transparent with a #222 border
-    And the text color changes to #222
+- **GIVEN** the page loads
+- **WHEN** I look at the hero section
+- **THEN** there is a white background with a blue watercolor brush stroke graphic
+- **AND** a subtitle "DISCOVER THE COLORFUL WORLD" is displayed in uppercase
+- **AND** a heading "Efficiency Booster" is displayed at 60px / 700 weight
+- **AND** body lorem ipsum text is shown below the heading
+- **AND** a "DISCOVER NOW" button is visible with gradient background and 25px border-radius
 
-  Scenario: Hero responsive
-    Given I am on a viewport below 768px
-    When I view the hero section
-    Then the heading font size reduces to 36px
-    And the section height is 700px
-```
+#### Scenario: Hero CTA button hover
+
+- **GIVEN** I hover over the hero "Discover Now" button
+- **THEN** the button becomes transparent with a #222 border
+- **AND** the text color changes to #222
+
+#### Scenario: Hero responsive
+
+- **GIVEN** I am on a viewport below 768px
+- **WHEN** I view the hero section
+- **THEN** the heading font size reduces to 36px
+- **AND** the section height is 700px
 
 ### Features
 
-```gherkin
 Feature: Three-column feature highlights
 
-  Scenario: Features display three items
-    Given I scroll to the features section
-    Then three feature cards are visible in a row
-    And each card contains an illustrated icon, a heading, and body text
-    And the headings are "Online Support", "24/7 Round the Clock", "Handling All Issues"
+#### Scenario: Features display three items
 
-  Scenario: Feature cards responsive
-    Given I am on a viewport below 800px
-    When I view the features section
-    Then each feature card stacks vertically with bottom margin
-```
+- **GIVEN** I scroll to the features section
+- **THEN** three feature cards are visible in a row
+- **AND** each card contains an illustrated icon, a heading, and body text
+- **AND** the headings are "Online Support", "24/7 Round the Clock", "Handling All Issues"
+
+#### Scenario: Feature cards responsive
+
+- **GIVEN** I am on a viewport below 800px
+- **WHEN** I view the features section
+- **THEN** each feature card stacks vertically with bottom margin
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonial carousel
 
-  Scenario: Testimonials section has overlay background
-    Given I scroll to the testimonial section
-    Then the section has a background image with a gradient overlay (#8490ff at 90% opacity)
-    And the heading "Why Choose Us Your Fitness Builder" is white text
+#### Scenario: Testimonials section has overlay background
 
-  Scenario: Testimonial cards show user info
-    Given I view the testimonial carousel
-    Then each card shows a user avatar image, testimonial text, user name, and title
-    And the user name becomes #8490ff on hover
-```
+- **GIVEN** I scroll to the testimonial section
+- **THEN** the section has a background image with a gradient overlay (#8490ff at 90% opacity)
+- **AND** the heading "Why Choose Us Your Fitness Builder" is white text
+
+#### Scenario: Testimonial cards show user info
+
+- **GIVEN** I view the testimonial carousel
+- **THEN** each card shows a user avatar image, testimonial text, user name, and title
+- **AND** the user name becomes #8490ff on hover
 
 ### Offered Services
 
-```gherkin
 Feature: Services offered section
 
-  Scenario: Offered services displays icon grid and description
-    Given I scroll to the offered services section
-    Then a heading "Our Offered Services" is displayed in white text
-    And a 3×2 grid of service icon cards is shown on the left
-    And a text block with heading "Content Synchronization" is shown on the right
-    And a "VIEW DETAILS" button is visible with gradient background
+#### Scenario: Offered services displays icon grid and description
 
-  Scenario: Service icon card hover
-    Given I hover over a service icon card
-    Then it gains a 2px solid #6a9ddc border
-    And the box-shadow changes
+- **GIVEN** I scroll to the offered services section
+- **THEN** a heading "Our Offered Services" is displayed in white text
+- **AND** a 3×2 grid of service icon cards is shown on the left
+- **AND** a text block with heading "Content Synchronization" is shown on the right
+- **AND** a "VIEW DETAILS" button is visible with gradient background
 
-  Scenario: Service icon card responsive
-    Given I am on a viewport below 800px
-    When I view the service icon grid
-    Then each card stacks with bottom margin
-```
+#### Scenario: Service icon card hover
+
+- **GIVEN** I hover over a service icon card
+- **THEN** it gains a 2px solid #6a9ddc border
+- **AND** the box-shadow changes
+
+#### Scenario: Service icon card responsive
+
+- **GIVEN** I am on a viewport below 800px
+- **WHEN** I view the service icon grid
+- **THEN** each card stacks with bottom margin
 
 ### Facts / Stats
 
-```gherkin
 Feature: Statistics counter row
 
-  Scenario: Stats display with gradient numbers
-    Given I scroll to the facts section
-    Then five stat items are visible in a row
-    And each has a large gradient number (blue → blue-violet) and a label
-    And the values are "2536 Projects Completed", "6784 Really Happy Clients", "1059 Total Tasks Completed", "2239 Cups of Coffee Taken", "435 In House Professionals"
+#### Scenario: Stats display with gradient numbers
 
-  Scenario: Stats responsive
-    Given I am on a viewport below 800px
-    When I view the facts section
-    Then each stat stacks vertically with bottom margin
-```
+- **GIVEN** I scroll to the facts section
+- **THEN** five stat items are visible in a row
+- **AND** each has a large gradient number (blue → blue-violet) and a label
+- **AND** the values are "2536 Projects Completed", "6784 Really Happy Clients", "1059 Total Tasks Completed", "2239 Cups of Coffee Taken", "435 In House Professionals"
+
+#### Scenario: Stats responsive
+
+- **GIVEN** I am on a viewport below 800px
+- **WHEN** I view the facts section
+- **THEN** each stat stacks vertically with bottom margin
 
 ### Services (Dark section)
 
-```gherkin
 Feature: Services grid on dark background
 
-  Scenario: Services section has dark photo background
-    Given I scroll to the services section
-    Then the section has a dark photo background with a 70% black overlay
-    And a heading "Some Awesomeness that should share" is displayed in white
-    And a subtext "Who are in extremely love with eco friendly system." is shown in white
+#### Scenario: Services section has dark photo background
 
-  Scenario: Service cards display with icons
-    Given I view the services grid
-    Then six service cards are shown in a 3×2 grid
-    And each card has a Linearicons icon, a white heading, and white body text
-    And the services are "Expert Technicians", "Professional Service", "Great Support", "Technical Skills", "Highly Recomended", "Positive Reviews"
+- **GIVEN** I scroll to the services section
+- **THEN** the section has a dark photo background with a 70% black overlay
+- **AND** a heading "Some Awesomeness that should share" is displayed in white
+- **AND** a subtext "Who are in extremely love with eco friendly system." is shown in white
 
-  Scenario: Service card hover
-    Given I hover over a service card
-    Then the card gains a shadow effect
-```
+#### Scenario: Service cards display with icons
+
+- **GIVEN** I view the services grid
+- **THEN** six service cards are shown in a 3×2 grid
+- **AND** each card has a Linearicons icon, a white heading, and white body text
+- **AND** the services are "Expert Technicians", "Professional Service", "Great Support", "Technical Skills", "Highly Recomended", "Positive Reviews"
+
+#### Scenario: Service card hover
+
+- **GIVEN** I hover over a service card
+- **THEN** the card gains a shadow effect
 
 ### Info / About Split
 
-```gherkin
 Feature: Information split layout
 
-  Scenario: Info section displays image and text side by side
-    Given I scroll to the info section
-    Then a full-width image is shown on the left half
-    And a text block is shown on the right half
-    And the heading is "Responsible Customer Support" at large size
-    And a "LEARN MORE" primary button is visible
+#### Scenario: Info section displays image and text side by side
 
-  Scenario: About section with video
-    Given I scroll to the about section
-    Then the left side shows a heading "We Believe that Interior beautifies the Total Architecture"
-    And a paragraph of text is displayed below
-    And a "SEE DETAILS" primary button is visible
-    And the right side shows a video thumbnail with a dark overlay (#8490ff at 84% opacity) and a play button
-```
+- **GIVEN** I scroll to the info section
+- **THEN** a full-width image is shown on the left half
+- **AND** a text block is shown on the right half
+- **AND** the heading is "Responsible Customer Support" at large size
+- **AND** a "LEARN MORE" primary button is visible
+
+#### Scenario: About section with video
+
+- **GIVEN** I scroll to the about section
+- **THEN** the left side shows a heading "We Believe that Interior beautifies the Total Architecture"
+- **AND** a paragraph of text is displayed below
+- **AND** a "SEE DETAILS" primary button is visible
+- **AND** the right side shows a video thumbnail with a dark overlay (#8490ff at 84% opacity) and a play button
 
 ### Brand Logos
 
-```gherkin
 Feature: Client/brand logo row
 
-  Scenario: Brand logos display in grayscale
-    Given I scroll to the brand section
-    Then five logo images are displayed in a row
-    And each logo is displayed in grayscale by default
-    When I hover over a logo
-    Then it transitions to full color
-```
+#### Scenario: Brand logos display in grayscale
+
+- **GIVEN** I scroll to the brand section
+- **THEN** five logo images are displayed in a row
+- **AND** each logo is displayed in grayscale by default
+- **WHEN** I hover over a logo
+- **THEN** it transitions to full color
 
 ### Contact Form
 
-```gherkin
 Feature: Contact form section
 
-  Scenario: Contact form displays heading and form fields
-    Given I scroll to the contact section
-    Then a heading "If you need, Just drop us a line" is displayed centered
-    And subtext "Who are in extremely love with eco friendly system." is shown
+#### Scenario: Contact form displays heading and form fields
 
-  Scenario: Form fields are functional
-    Given I view the contact form
-    Then four fields are visible: name (text), email (email), subject (text), message (textarea)
-    And all fields have light gray (#f9f9ff) background
-    And a "SEND MESSAGE" primary button is visible below the textarea
+- **GIVEN** I scroll to the contact section
+- **THEN** a heading "If you need, Just drop us a line" is displayed centered
+- **AND** subtext "Who are in extremely love with eco friendly system." is shown
 
-  Scenario: Form validates required fields
-    Given I leave all fields empty
-    When I click "Send Message"
-    Then the browser validation prevents submission
-```
+#### Scenario: Form fields are functional
+
+- **GIVEN** I view the contact form
+- **THEN** four fields are visible: name (text), email (email), subject (text), message (textarea)
+- **AND** all fields have light gray (#f9f9ff) background
+- **AND** a "SEND MESSAGE" primary button is visible below the textarea
+
+#### Scenario: Form validates required fields
+
+- **GIVEN** I leave all fields empty
+- **WHEN** I click "Send Message"
+- **THEN** the browser validation prevents submission
 
 ### Footer
 
-```gherkin
 Feature: Dark footer with newsletter
 
-  Scenario: Footer displays three columns
-    Given I view the footer
-    Then the background is #222
-    And an "About Us" column with lorem text is visible
-    And a "Contact Us" column with phone numbers in #8490ff is visible
-    And a "Newsletter" column with email input and arrow button is visible
+#### Scenario: Footer displays three columns
 
-  Scenario: Footer bottom bar
-    Given I view the footer bottom
-    Then a copyright line is displayed with "Component Dock" link
-    And social icons (Facebook, Twitter, Dribbble, Behance) are shown on the right
-    And social icon backgrounds are #111, turning #8490ff on hover
+- **GIVEN** I view the footer
+- **THEN** the background is #222
+- **AND** an "About Us" column with lorem text is visible
+- **AND** a "Contact Us" column with phone numbers in #8490ff is visible
+- **AND** a "Newsletter" column with email input and arrow button is visible
 
-  Scenario: Newsletter form
-    Given I view the newsletter form
-    Then an email input with rounded white border is displayed
-    And a rounded submit button with #8490ff background is shown
-```
+#### Scenario: Footer bottom bar
+
+- **GIVEN** I view the footer bottom
+- **THEN** a copyright line is displayed with "Component Dock" link
+- **AND** social icons (Facebook, Twitter, Dribbble, Behance) are shown on the right
+- **AND** social icon backgrounds are #111, turning #8490ff on hover
+
+#### Scenario: Newsletter form
+
+- **GIVEN** I view the newsletter form
+- **THEN** an email input with rounded white border is displayed
+- **AND** a rounded submit button with #8490ff background is shown
 
 ## Verification checklist
 

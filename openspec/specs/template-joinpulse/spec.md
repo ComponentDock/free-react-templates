@@ -88,9 +88,11 @@ Extracted from `css/style.css` (preview) and the template HTML:
 
 6. **Responsive:** On mobile (<992px), all columns stack vertically: social buttons first, divider, then form.
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Page loads with centered form layout
+### Feature: JoinPulse template behaviour
+
+#### Scenario: Page loads with centered form layout
 
 - **GIVEN** the user visits the JoinPulse page
 - **WHEN** the page finishes loading
@@ -98,7 +100,7 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **AND** the layout contains three columns on desktop (social, divider, form)
 - **AND** the columns stack vertically on mobile
 
-### Scenario: Social login buttons display correctly
+#### Scenario: Social login buttons display correctly
 
 - **GIVEN** the page is loaded
 - **WHEN** the user views the social login area
@@ -109,14 +111,14 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **AND** the Google button has a `#ea4335` background with a white Google icon
 - **AND** each social button spans the full width of its column
 
-### Scenario: Divider displays between social and form
+#### Scenario: Divider displays between social and form
 
 - **GIVEN** the page is loaded
 - **WHEN** the user views the divider area
 - **THEN** the text "— or —" is centered vertically and horizontally
 - **AND** the divider is between the social login and form columns
 
-### Scenario: Registration form displays correctly
+#### Scenario: Registration form displays correctly
 
 - **GIVEN** the page is loaded
 - **WHEN** the user views the form area
@@ -125,7 +127,7 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **AND** a descriptive paragraph is displayed below the heading
 - **AND** four input fields are visible: Name, Email, Password, Re-type Password
 
-### Scenario: Floating labels animate on focus
+#### Scenario: Floating labels animate on focus
 
 - **GIVEN** the form is displayed
 - **WHEN** the user clicks on the Name input
@@ -133,7 +135,7 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **AND** the input border is a bottom-border-only style
 - **AND** the input has a transparent background
 
-### Scenario: Terms checkbox interaction
+#### Scenario: Terms checkbox interaction
 
 - **GIVEN** the form is displayed
 - **THEN** the "Terms and Conditions" checkbox is checked by default
@@ -142,14 +144,14 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **WHEN** the user re-checks the checkbox
 - **THEN** the checkbox indicator turns teal (#38d39f)
 
-### Scenario: Sign In link is present
+#### Scenario: Sign In link is present
 
 - **GIVEN** the form is displayed
 - **WHEN** the user looks at the checkbox row
 - **THEN** a "Sign In" link is visible aligned to the right
 - **AND** the link color is `#888`
 
-### Scenario: Register button is pill-shaped and full-width
+#### Scenario: Register button is pill-shaped and full-width
 
 - **GIVEN** the form is displayed
 - **WHEN** the user views the Register button
@@ -158,7 +160,7 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **AND** the button has white text
 - **AND** the button has a pill shape (border-radius: 30px)
 
-### Scenario: Responsive layout stacks on mobile
+#### Scenario: Responsive layout stacks on mobile
 
 - **GIVEN** the user views the template on a viewport under 992px
 - **WHEN** the page renders
@@ -166,7 +168,7 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **AND** the divider stacks above the form
 - **AND** the form block takes full width
 
-### Scenario: Footer links to Component Dock
+#### Scenario: Footer links to Component Dock
 
 - **GIVEN** the page is loaded
 - **WHEN** the user scrolls to the footer

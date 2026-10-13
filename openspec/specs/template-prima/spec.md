@@ -45,9 +45,11 @@ Extracted from live preview CSS (style.css) and HTML DOM:
 - Newsletter section (light gray bg) with email input + orange button.
 - Footer: dark navy bg, multi-column links, copyright with border.
 
-## Gherkin Requirements
+## Requirements
 
 ### Section Order (1:1 with original)
+
+#### Scenario: Section Order (1:1 with original)
 
 The template MUST render sections in this exact order:
 1. Navbar (logo + menu + search/cart icons)
@@ -65,51 +67,42 @@ The template MUST render sections in this exact order:
 
 ### Scenarios
 
-#### Navbar
-- GIVEN the page loads, WHEN I look at the top, THEN I see a logo on the left and info items (working time, address) on the right.
-- GIVEN the page loads, WHEN I look below the header, THEN I see a dark navy bar with navigation links and search/cart icons.
-- GIVEN the navbar is visible, WHEN I click a nav link, THEN it navigates to the correct section.
-- GIVEN the navbar is visible on mobile, WHEN I click the hamburger icon, THEN the mobile menu opens.
+#### Scenario: Scenarios
 
-#### Hero
-- GIVEN the page loads, WHEN I see the hero, THEN I see a full-width background image with text overlay.
-- GIVEN the hero is visible, WHEN I read the content, THEN I see an orange subtitle ("Award Winning University"), a large white heading, body text, and an orange pill "GET STARTED" button.
-- GIVEN the hero is visible, WHEN I look at the bottom, THEN I see slider dots for navigation.
-
-#### Counter
-- GIVEN the page loads, WHEN I scroll to the counter section, THEN I see a dark navy bar with a graduation-cap icon, next course info, and a countdown timer (days, hours, minutes, seconds).
-
-#### Services
-- GIVEN the page loads, WHEN I scroll to services, THEN I see a centered section title "OUR SERVICES" and 6 service cards in a 3-column grid.
-- GIVEN I see a service card, WHEN I look at it, THEN I see an icon, a title, and a description paragraph.
-
-#### Enroll
-- GIVEN the page loads, WHEN I scroll to the enroll section, THEN I see a list of enrollment benefits with checkmark icons and a CTA button.
-
-#### Courses
-- GIVEN the page loads, WHEN I scroll to courses, THEN I see 3 course cards in a row.
-- GIVEN I see a course card, WHEN I look at it, THEN I see a thumbnail image with an orange category badge, a title, and a read-more link.
-
-#### Facts
-- GIVEN the page loads, WHEN I scroll to facts, THEN I see a background image section with 4 stat counters, each showing an icon, a large number, and a label.
-
-#### Events
-- GIVEN the page loads, WHEN I scroll to events, THEN I see 3 event cards.
-- GIVEN I see an event card, WHEN I look at it, THEN I see a thumbnail image with a date badge, a title, a description, and a read-more link.
-
-#### Gallery
-- GIVEN the page loads, WHEN I scroll to the gallery, THEN I see a grid of images that can be enlarged via popup.
-
-#### Blog
-- GIVEN the page loads, WHEN I scroll to blog, THEN I see 3 blog cards.
-- GIVEN I see a blog card, WHEN I look at it, THEN I see a thumbnail image, a title, and meta info.
-
-#### Newsletter
-- GIVEN the page loads, WHEN I scroll to newsletter, THEN I see a light gray section with a centered title, description, and an email input with an orange submit button.
-
-#### Footer
-- GIVEN the page loads, WHEN I scroll to the footer, THEN I see a dark navy background with multi-column link sections and a copyright line with a border.
-- GIVEN the footer is visible, WHEN I read the copyright, THEN it includes a link to Component Dock.
+**Navbar**
+- **GIVEN** the page loads, WHEN I look at the top, THEN I see a logo on the left and info items (working time, address) on the right
+- **GIVEN** the page loads, WHEN I look below the header, THEN I see a dark navy bar with navigation links and search/cart icons
+- **GIVEN** the navbar is visible, WHEN I click a nav link, THEN it navigates to the correct section
+- **GIVEN** the navbar is visible on mobile, WHEN I click the hamburger icon, THEN the mobile menu opens
+**Hero**
+- **GIVEN** the page loads, WHEN I see the hero, THEN I see a full-width background image with text overlay
+- **GIVEN** the hero is visible, WHEN I read the content, THEN I see an orange subtitle ("Award Winning University"), a large white heading, body text, and an orange pill "GET STARTED" button
+- **GIVEN** the hero is visible, WHEN I look at the bottom, THEN I see slider dots for navigation
+**Counter**
+- **GIVEN** the page loads, WHEN I scroll to the counter section, THEN I see a dark navy bar with a graduation-cap icon, next course info, and a countdown timer (days, hours, minutes, seconds)
+**Services**
+- **GIVEN** the page loads, WHEN I scroll to services, THEN I see a centered section title "OUR SERVICES" and 6 service cards in a 3-column grid
+- **GIVEN** I see a service card, WHEN I look at it, THEN I see an icon, a title, and a description paragraph
+**Enroll**
+- **GIVEN** the page loads, WHEN I scroll to the enroll section, THEN I see a list of enrollment benefits with checkmark icons and a CTA button
+**Courses**
+- **GIVEN** the page loads, WHEN I scroll to courses, THEN I see 3 course cards in a row
+- **GIVEN** I see a course card, WHEN I look at it, THEN I see a thumbnail image with an orange category badge, a title, and a read-more link
+**Facts**
+- **GIVEN** the page loads, WHEN I scroll to facts, THEN I see a background image section with 4 stat counters, each showing an icon, a large number, and a label
+**Events**
+- **GIVEN** the page loads, WHEN I scroll to events, THEN I see 3 event cards
+- **GIVEN** I see an event card, WHEN I look at it, THEN I see a thumbnail image with a date badge, a title, a description, and a read-more link
+**Gallery**
+- **GIVEN** the page loads, WHEN I scroll to the gallery, THEN I see a grid of images that can be enlarged via popup
+**Blog**
+- **GIVEN** the page loads, WHEN I scroll to blog, THEN I see 3 blog cards
+- **GIVEN** I see a blog card, WHEN I look at it, THEN I see a thumbnail image, a title, and meta info
+**Newsletter**
+- **GIVEN** the page loads, WHEN I scroll to newsletter, THEN I see a light gray section with a centered title, description, and an email input with an orange submit button
+**Footer**
+- **GIVEN** the page loads, WHEN I scroll to the footer, THEN I see a dark navy background with multi-column link sections and a copyright line with a border
+- **GIVEN** the footer is visible, WHEN I read the copyright, THEN it includes a link to Component Dock
 
 ## Verification Checklist
 

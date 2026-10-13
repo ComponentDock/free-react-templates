@@ -76,83 +76,94 @@ showcase layout.
 12. **Dropdowns** — Dropdown menu examples (standard, split, etc.).
 13. **Forms** — Form inputs: text fields, selects, checkboxes, radio buttons, textareas.
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Tidepool template behaviour
+
 Feature: Tidepool UI Kit Showcase
 
-  Scenario: Hero section displays correctly
-    Given the page loads
-    Then the hero section is visible with a full-width background image
-    And the heading "Jellyfish Bootstrap UI Kit" is centered on the hero
-    And the subtitle lorem ipsum text is displayed below the heading
+#### Scenario: Hero section displays correctly
 
-  Scenario: Color scheme grid shows all 9 colors
-    Given the page loads
-    When I scroll to the "Color Scheme" section
-    Then 9 color swatches are displayed in a 3x3 grid
-    And each swatch has a label: Primary, Secondary, Success, Info, Warning, Danger, Indigo, Dark, Teal
-    And each swatch displays its assigned brand color
+- **GIVEN** the page loads
+- **THEN** the hero section is visible with a full-width background image
+- **AND** the heading "Jellyfish Bootstrap UI Kit" is centered on the hero
+- **AND** the subtitle lorem ipsum text is displayed below the heading
 
-  Scenario: Cards section renders product and profile cards
-    Given the page loads
-    When I scroll to the "Cards" section
-    Then 3 product cards with image, title, text, and button are shown
-    And 1 profile card with avatar, name, role, and social links is shown
+#### Scenario: Color scheme grid shows all 9 colors
 
-  Scenario: Features section shows three feature blocks
-    Given the page loads
-    When I scroll to the "Features" section
-    Then 3 feature blocks are displayed: Settings, Development, Support
-    And each feature block has an icon, heading, and description
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Color Scheme" section
+- **THEN** 9 color swatches are displayed in a 3x3 grid
+- **AND** each swatch has a label: Primary, Secondary, Success, Info, Warning, Danger, Indigo, Dark, Teal
+- **AND** each swatch displays its assigned brand color
 
-  Scenario: Pricing section renders three tiers
-    Given the page loads
-    When I scroll to the "Pricing" section
-    Then 3 pricing cards are displayed: Free, Pro, Enterprise
-    And the Free card shows $0/mo
-    And the Pro card shows $15/mo and is highlighted
-    And the Enterprise card shows $29/mo
-    And each card has a feature list and CTA button
+#### Scenario: Cards section renders product and profile cards
 
-  Scenario: Alerts section shows variants
-    Given the page loads
-    When I scroll to the "Alerts" section
-    Then alerts with icon and shadow are displayed
-    And dismissing alerts with a close button are displayed
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Cards" section
+- **THEN** 3 product cards with image, title, text, and button are shown
+- **AND** 1 profile card with avatar, name, role, and social links is shown
 
-  Scenario: Badge section shows contextual and pill variations
-    Given the page loads
-    When I scroll to the "Badge" section
-    Then contextual badges in primary, secondary, success, info, warning, danger colors are shown
-    And pill-shaped badges are shown
+#### Scenario: Features section shows three feature blocks
 
-  Scenario: Buttons section demonstrates all variants
-    Given the page loads
-    When I scroll to the "Buttons" section
-    Then solid color buttons are displayed
-    And outline buttons are displayed
-    And pill-shaped buttons are displayed
-    And buttons in different sizes (sm, md, lg) are displayed
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Features" section
+- **THEN** 3 feature blocks are displayed: Settings, Development, Support
+- **AND** each feature block has an icon, heading, and description
 
-  Scenario: Carousel shows three slides
-    Given the page loads
-    When I scroll to the "Carousel" section
-    Then a carousel with 3 slides is displayed
-    And navigation controls (prev/next) are functional
-    And slide indicators are clickable
+#### Scenario: Pricing section renders three tiers
 
-  Scenario: Dropdowns section shows menu examples
-    Given the page loads
-    When I scroll to the "Dropdowns" section
-    Then dropdown menus are displayed and toggle on click
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Pricing" section
+- **THEN** 3 pricing cards are displayed: Free, Pro, Enterprise
+- **AND** the Free card shows $0/mo
+- **AND** the Pro card shows $15/mo and is highlighted
+- **AND** the Enterprise card shows $29/mo
+- **AND** each card has a feature list and CTA button
 
-  Scenario: Forms section shows input components
-    Given the page loads
-    When I scroll to the "Forms" section
-    Then text inputs, selects, checkboxes, radio buttons, and textareas are displayed
-    And form inputs are focusable and accept user input
-```
+#### Scenario: Alerts section shows variants
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Alerts" section
+- **THEN** alerts with icon and shadow are displayed
+- **AND** dismissing alerts with a close button are displayed
+
+#### Scenario: Badge section shows contextual and pill variations
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Badge" section
+- **THEN** contextual badges in primary, secondary, success, info, warning, danger colors are shown
+- **AND** pill-shaped badges are shown
+
+#### Scenario: Buttons section demonstrates all variants
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Buttons" section
+- **THEN** solid color buttons are displayed
+- **AND** outline buttons are displayed
+- **AND** pill-shaped buttons are displayed
+- **AND** buttons in different sizes (sm, md, lg) are displayed
+
+#### Scenario: Carousel shows three slides
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Carousel" section
+- **THEN** a carousel with 3 slides is displayed
+- **AND** navigation controls (prev/next) are functional
+- **AND** slide indicators are clickable
+
+#### Scenario: Dropdowns section shows menu examples
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Dropdowns" section
+- **THEN** dropdown menus are displayed and toggle on click
+
+#### Scenario: Forms section shows input components
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the "Forms" section
+- **THEN** text inputs, selects, checkboxes, radio buttons, and textareas are displayed
+- **AND** form inputs are focusable and accept user input
 
 ## Verification Checklist
 

@@ -42,103 +42,117 @@ Extracted from the live preview CSS (`css/style.css`):
 7. **CTA** — Parallax background with blue overlay. "Looking For A Job?" heading. Subtext. "Sign Up" button (warning/yellow, large).
 8. **Footer** — Dark background. 4 columns: Search Trending (link list), Company (link list), Support (link list), Contact Us (social icons: Facebook, Twitter, Instagram, LinkedIn — circular blue buttons). Copyright line.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Talently template behaviour
+
 Feature: Talently — Job Board / Career Portal Template
 
-  Background:
-    Given the user visits the Talently homepage
+Background:
+- **GIVEN** the user visits the Talently homepage
 
-  # ── Navbar ──
+**── Navbar ──**
 
-  Scenario: Navbar renders logo and navigation links
-    Then the logo "Talently" is visible in the top-left
-    And the nav contains links: Home, Job Listings, About, Services, Blog
-    And a "Contact Us" CTA button is visible on the right
+#### Scenario: Navbar renders logo and navigation links
 
-  Scenario: Navbar is positioned over the hero
-    Then the navbar overlays the hero background image
+- **THEN** the logo "Talently" is visible in the top-left
+- **AND** the nav contains links: Home, Job Listings, About, Services, Blog
+- **AND** a "Contact Us" CTA button is visible on the right
 
-  # ── Hero ──
+#### Scenario: Navbar is positioned over the hero
 
-  Scenario: Hero displays headline and search form
-    Then a heading "A Powerful Career Website Template" is displayed
-    And a search form with 4 fields is visible
-    And field 1 is a text input with placeholder "Job title, keywords..."
-    And field 2 is a select with location options (Anywhere, San Francisco, etc.)
-    And field 3 is a select with job type options (Part Time, Full Time, Freelancer)
-    And field 4 is a "Search Job" button with search icon
+- **THEN** the navbar overlays the hero background image
 
-  Scenario: Hero has a background image with dark overlay
-    Then the hero section has a background image
-    And the hero section has a semi-transparent dark overlay
+**── Hero ──**
 
-  # ── Statistics ──
+#### Scenario: Hero displays headline and search form
 
-  Scenario: Statistics section shows four counters
-    Then four stat counters are displayed: Candidates, Jobs Posted, Jobs Filled, Companies
-    And each counter has a large bold number
-    And the counters have values: 1930, 54, 120, 550
+- **THEN** a heading "A Powerful Career Website Template" is displayed
+- **AND** a search form with 4 fields is visible
+- **AND** field 1 is a text input with placeholder "Job title, keywords..."
+- **AND** field 2 is a select with location options (Anywhere, San Francisco, etc.)
+- **AND** field 3 is a select with job type options (Part Time, Full Time, Freelancer)
+- **AND** field 4 is a "Search Job" button with search icon
 
-  Scenario: Statistics section has parallax background with overlay
-    Then the statistics section has a background image with blue overlay
-    And the heading "Careers Statistics" is white text
+#### Scenario: Hero has a background image with dark overlay
 
-  # ── Job Listings ──
+- **THEN** the hero section has a background image
+- **AND** the hero section has a semi-transparent dark overlay
 
-  Scenario: Job listings section displays headline and job cards
-    Then a heading "109,234 Job Listed" is displayed
-    And at least 6 job listing cards are visible
+**── Statistics ──**
 
-  Scenario: Each job card shows image, badge, title, publisher, location, and salary
-    Then each job card contains:
-      | field     | example              |
-      | image     | featured-listing-1   |
-      | badge     | Freelancer / Full-time |
-      | title     | Dropbox Product Designer |
-      | publisher | John Stewart         |
-      | category  | Design               |
-      | location  | Melbourne, Australia |
-      | salary    | $60k — $100k         |
+#### Scenario: Statistics section shows four counters
 
-  # ── Company Logos ──
+- **THEN** four stat counters are displayed: Candidates, Jobs Posted, Jobs Filled, Companies
+- **AND** each counter has a large bold number
+- **AND** the counters have values: 1930, 54, 120, 550
 
-  Scenario: Company logos section displays
-    Then a heading "Our Candidates Work In Company" is displayed
-    And a row of company logos is visible
+#### Scenario: Statistics section has parallax background with overlay
 
-  # ── Testimonials ──
+- **THEN** the statistics section has a background image with blue overlay
+- **AND** the heading "Careers Statistics" is white text
 
-  Scenario: Testimonials carousel shows quotes
-    Then a testimonial section with light background is displayed
-    And at least 2 testimonial slides are present
-    And each slide has a person photo, blockquote text, and author name
+**── Job Listings ──**
 
-  # ── CTA ──
+#### Scenario: Job listings section displays headline and job cards
 
-  Scenario: CTA section prompts sign-up
-    Then a heading "Looking For A Job?" is displayed
-    And a "Sign Up" button in warning/yellow color is visible
-    And the section has a parallax background with overlay
+- **THEN** a heading "109,234 Job Listed" is displayed
+- **AND** at least 6 job listing cards are visible
 
-  # ── Footer ──
+#### Scenario: Each job card shows image, badge, title, publisher, location, and salary
 
-  Scenario: Footer has four columns and social links
-    Then 4 footer columns are visible: Search Trending, Company, Support, Contact Us
-    And the Contact Us column contains social icon links (Facebook, Twitter, Instagram, LinkedIn)
-    And social icons are circular blue buttons
+- **THEN** each job card contains:
+| field     | example              |
+| image     | featured-listing-1   |
+| badge     | Freelancer / Full-time |
+| title     | Dropbox Product Designer |
+| publisher | John Stewart         |
+| category  | Design               |
+| location  | Melbourne, Australia |
+| salary    | $60k — $100k         |
 
-  Scenario: Footer includes Component Dock attribution
-    Then a "Component Dock" link is present in the footer
+**── Company Logos ──**
 
-  # ── Responsive ──
+#### Scenario: Company logos section displays
 
-  Scenario: Mobile navigation shows hamburger menu
-    Given the viewport is 375px wide
-    Then the hamburger menu icon is visible
-    And the desktop nav links are hidden
-```
+- **THEN** a heading "Our Candidates Work In Company" is displayed
+- **AND** a row of company logos is visible
+
+**── Testimonials ──**
+
+#### Scenario: Testimonials carousel shows quotes
+
+- **THEN** a testimonial section with light background is displayed
+- **AND** at least 2 testimonial slides are present
+- **AND** each slide has a person photo, blockquote text, and author name
+
+**── CTA ──**
+
+#### Scenario: CTA section prompts sign-up
+
+- **THEN** a heading "Looking For A Job?" is displayed
+- **AND** a "Sign Up" button in warning/yellow color is visible
+- **AND** the section has a parallax background with overlay
+
+**── Footer ──**
+
+#### Scenario: Footer has four columns and social links
+
+- **THEN** 4 footer columns are visible: Search Trending, Company, Support, Contact Us
+- **AND** the Contact Us column contains social icon links (Facebook, Twitter, Instagram, LinkedIn)
+- **AND** social icons are circular blue buttons
+
+#### Scenario: Footer includes Component Dock attribution
+
+- **THEN** a "Component Dock" link is present in the footer
+
+**── Responsive ──**
+
+#### Scenario: Mobile navigation shows hamburger menu
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the hamburger menu icon is visible
+- **AND** the desktop nav links are hidden
 
 ## Verification checklist
 

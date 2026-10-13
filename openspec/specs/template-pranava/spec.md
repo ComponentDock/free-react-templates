@@ -78,105 +78,117 @@ Timetable → Testimonial → Contact (map) → Gallery → Footer.
 | Subtitle/label     | 12px, uppercase, 1px letter-spacing, `#938e99`| `.sp-title span`                |
 | Section heading    | 24px, bold, uppercase, 2px letter-spacing     | `.sp-title h4`                  |
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Hero Section
 
-Scenario: Hero displays background image with centered content
-  Given the user opens the landing page
-  Then the hero section shows a full-width background image
-  And a heading "Find your inner CHI" with "CHI" in accent color
-  And a descriptive paragraph below the heading
-  And a lime CTA button labeled "discover"
-  And a decorative hero figure image is visible
+#### Scenario: Hero displays background image with centered content
 
-Scenario: Hero CTA button has correct styling
-  Given the user views the hero section
-  Then the "discover" button has a pale lime background
-  And the button text is uppercase with deep purple color
-  And the button has rounded corners (9px radius)
+- **GIVEN** the user opens the landing page
+- **THEN** the hero section shows a full-width background image
+- **AND** a heading "Find your inner CHI" with "CHI" in accent color
+- **AND** a descriptive paragraph below the heading
+- **AND** a lime CTA button labeled "discover"
+- **AND** a decorative hero figure image is visible
+
+#### Scenario: Hero CTA button has correct styling
+
+- **GIVEN** the user views the hero section
+- **THEN** the "discover" button has a pale lime background
+- **AND** the button text is uppercase with deep purple color
+- **AND** the button has rounded corners (9px radius)
 
 ### Courses Section
 
-Scenario: Three course cards are displayed
-  Given the user scrolls to the courses section
-  Then 3 course cards are visible in a row
-  And each card has a decorative icon
-  And each card shows "Beginner & Advanced" subtitle
-  And each card has a course title (Yoga, Hatha, Pilates)
-  And each card has a description paragraph
+#### Scenario: Three course cards are displayed
 
-Scenario: Courses section has correct layout
-  Given the user views the courses section
-  Then the three cards are arranged in a 3-column grid
-  And the section has standard padding
+- **GIVEN** the user scrolls to the courses section
+- **THEN** 3 course cards are visible in a row
+- **AND** each card has a decorative icon
+- **AND** each card shows "Beginner & Advanced" subtitle
+- **AND** each card has a course title (Yoga, Hatha, Pilates)
+- **AND** each card has a description paragraph
+
+#### Scenario: Courses section has correct layout
+
+- **GIVEN** the user views the courses section
+- **THEN** the three cards are arranged in a 3-column grid
+- **AND** the section has standard padding
 
 ### Meditation Section
 
-Scenario: Meditation section shows content with background
-  Given the user scrolls to the meditation section
-  Then the section has a full-width background image
-  And a "Meditation Sessions" heading is displayed
-  And a description paragraph is shown
-  And a lime "discover" CTA button is present
-  And a decorative meditation figure image is visible
+#### Scenario: Meditation section shows content with background
+
+- **GIVEN** the user scrolls to the meditation section
+- **THEN** the section has a full-width background image
+- **AND** a "Meditation Sessions" heading is displayed
+- **AND** a description paragraph is shown
+- **AND** a lime "discover" CTA button is present
+- **AND** a decorative meditation figure image is visible
 
 ### Timetable Section
 
-Scenario: Timetable shows schedule and progress bars
-  Given the user scrolls to the timetable section
-  Then a weekly schedule is displayed with 7 days
-  And each day shows its time range
-  And Sunday shows "Closed"
-  And three progress bars are visible (Breathing, Meditation, Flexibility)
-  And each progress bar shows its percentage label
+#### Scenario: Timetable shows schedule and progress bars
 
-Scenario: Progress bars have correct values
-  Given the user views the timetable section
-  Then Breaching progress bar is at 60%
-  And Meditation progress bar is at 87%
-  And Flexibility progress bar is at 70%
+- **GIVEN** the user scrolls to the timetable section
+- **THEN** a weekly schedule is displayed with 7 days
+- **AND** each day shows its time range
+- **AND** Sunday shows "Closed"
+- **AND** three progress bars are visible (Breathing, Meditation, Flexibility)
+- **AND** each progress bar shows its percentage label
+
+#### Scenario: Progress bars have correct values
+
+- **GIVEN** the user views the timetable section
+- **THEN** Breaching progress bar is at 60%
+- **AND** Meditation progress bar is at 87%
+- **AND** Flexibility progress bar is at 70%
 
 ### Testimonial Section
 
-Scenario: Testimonial displays a quote with attribution
-  Given the user scrolls to the testimonial section
-  Then the section has a full-width background image
-  And a decorative quote icon is displayed
-  And a testimonial paragraph is shown
-  And "Maria Smith" author name is displayed
-  And "Customer" subtitle is shown below the name
+#### Scenario: Testimonial displays a quote with attribution
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** the section has a full-width background image
+- **AND** a decorative quote icon is displayed
+- **AND** a testimonial paragraph is shown
+- **AND** "Maria Smith" author name is displayed
+- **AND** "Customer" subtitle is shown below the name
 
 ### Contact Section
 
-Scenario: Contact section shows map and info
-  Given the user scrolls to the contact section
-  Then a Google Maps embed is displayed on the left
-  And contact information is shown on the right
-  And the info includes an address, phone number, and email
+#### Scenario: Contact section shows map and info
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a Google Maps embed is displayed on the left
+- **AND** contact information is shown on the right
+- **AND** the info includes an address, phone number, and email
 
 ### Gallery Section
 
-Scenario: Gallery displays a carousel of images
-  Given the user scrolls to the gallery section
-  Then a horizontal carousel/slider is visible
-  And at least 5 gallery images are displayed
+#### Scenario: Gallery displays a carousel of images
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a horizontal carousel/slider is visible
+- **AND** at least 5 gallery images are displayed
 
 ### Footer Section
 
-Scenario: Footer has gradient background and attribution
-  Given the user views the footer
-  Then the footer background is a purple-to-pink gradient
-  And a decorative footer icon is displayed
-  And the text includes a "Component Dock" link
+#### Scenario: Footer has gradient background and attribution
+
+- **GIVEN** the user views the footer
+- **THEN** the footer background is a purple-to-pink gradient
+- **AND** a decorative footer icon is displayed
+- **AND** the text includes a "Component Dock" link
 
 ### Navigation
 
-Scenario: Header shows logo and navigation menu
-  Given the user opens the landing page
-  Then a logo image is displayed
-  And social media icon links are shown (Pinterest, Facebook, Twitter, Dribbble, Behance)
-  And a navigation menu with 5 items is visible (Home, About Us, Classes, Blog, Contact)
+#### Scenario: Header shows logo and navigation menu
+
+- **GIVEN** the user opens the landing page
+- **THEN** a logo image is displayed
+- **AND** social media icon links are shown (Pinterest, Facebook, Twitter, Dribbble, Behance)
+- **AND** a navigation menu with 5 items is visible (Home, About Us, Classes, Blog, Contact)
 
 ## Verification Checklist
 

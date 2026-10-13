@@ -118,67 +118,77 @@ background with white text items separated by subtle lines. The overall
 aesthetic is clean, minimal, account-settings-like with sharp corners and
 Poppins typography.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Sulci template behaviour
+
 Feature: Sulci Accordion Component
-  As a user, I want to expand/collapse accordion sections
-  so I can manage my account settings.
+As a user, I want to expand/collapse accordion sections
+so I can manage my account settings.
 
-  Background:
-    Given the page is loaded
-    And the accordion is visible
+Background:
+- **GIVEN** the page is loaded
+- **AND** the accordion is visible
 
-  Scenario: Page heading is displayed
-    Then I should see the heading "Accordion #05"
+#### Scenario: Page heading is displayed
 
-  Scenario: First panel is expanded by default
-    Given the "Manage" panel is expanded
-    Then I should see the list items "01 Account", "02 Settings", "03 Profile"
-    And the chevron icon for "Manage" should indicate expanded state
+- **THEN** I should see the heading "Accordion #05"
 
-  Scenario: Clicking "Manage" collapses it
-    Given the "Manage" panel is expanded
-    When I click the "Manage" header button
-    Then the "Manage" panel should be collapsed
-    And the chevron icon for "Manage" should indicate collapsed state
+#### Scenario: First panel is expanded by default
 
-  Scenario: Clicking "Location" expands it
-    Given the "Location" panel is collapsed
-    When I click the "Location" header button
-    Then the "Location" panel should be expanded
-    And I should see descriptive text content
+- **GIVEN** the "Manage" panel is expanded
+- **THEN** I should see the list items "01 Account", "02 Settings", "03 Profile"
+- **AND** the chevron icon for "Manage" should indicate expanded state
 
-  Scenario: Clicking "Hobbies" expands it
-    Given the "Hobbies" panel is collapsed
-    When I click the "Hobbies" header button
-    Then the "Hobbies" panel should be expanded
-    And I should see the list items "Playing Basketball", "Playing Baseball", "Running"
+#### Scenario: Clicking "Manage" collapses it
 
-  Scenario: Only one panel can be open at a time (accordion behavior)
-    Given the "Manage" panel is expanded
-    When I click the "Location" header button
-    Then the "Manage" panel should be collapsed
-    And the "Location" panel should be expanded
+- **GIVEN** the "Manage" panel is expanded
+- **WHEN** I click the "Manage" header button
+- **THEN** the "Manage" panel should be collapsed
+- **AND** the chevron icon for "Manage" should indicate collapsed state
 
-  Scenario: Icons are displayed for each section
-    Then I should see an icon next to "Manage"
-    And I should see an icon next to "Location"
-    And I should see an icon next to "Hobbies"
+#### Scenario: Clicking "Location" expands it
 
-  Scenario: Chevron icons rotate on expand/collapse
-    Given the "Manage" panel is expanded
-    Then the "Manage" chevron should show expanded state
-    When I click the "Manage" header button
-    Then the "Manage" chevron should show collapsed state
+- **GIVEN** the "Location" panel is collapsed
+- **WHEN** I click the "Location" header button
+- **THEN** the "Location" panel should be expanded
+- **AND** I should see descriptive text content
 
-  Scenario: Cards have sharp corners (no border-radius)
-    Then the accordion container should have no border-radius
+#### Scenario: Clicking "Hobbies" expands it
 
-  Scenario: Card body has teal background when expanded
-    Given the "Manage" panel is expanded
-    Then the expanded panel body should have background color #75d6d1
-```
+- **GIVEN** the "Hobbies" panel is collapsed
+- **WHEN** I click the "Hobbies" header button
+- **THEN** the "Hobbies" panel should be expanded
+- **AND** I should see the list items "Playing Basketball", "Playing Baseball", "Running"
+
+#### Scenario: Only one panel can be open at a time (accordion behavior)
+
+- **GIVEN** the "Manage" panel is expanded
+- **WHEN** I click the "Location" header button
+- **THEN** the "Manage" panel should be collapsed
+- **AND** the "Location" panel should be expanded
+
+#### Scenario: Icons are displayed for each section
+
+- **THEN** I should see an icon next to "Manage"
+- **AND** I should see an icon next to "Location"
+- **AND** I should see an icon next to "Hobbies"
+
+#### Scenario: Chevron icons rotate on expand/collapse
+
+- **GIVEN** the "Manage" panel is expanded
+- **THEN** the "Manage" chevron should show expanded state
+- **WHEN** I click the "Manage" header button
+- **THEN** the "Manage" chevron should show collapsed state
+
+#### Scenario: Cards have sharp corners (no border-radius)
+
+- **THEN** the accordion container should have no border-radius
+
+#### Scenario: Card body has teal background when expanded
+
+- **GIVEN** the "Manage" panel is expanded
+- **THEN** the expanded panel body should have background color #75d6d1
 
 ## Verification checklist
 

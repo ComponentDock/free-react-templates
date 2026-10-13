@@ -40,76 +40,87 @@ consulting websites.
 | Footer background          | Dark (image-based)                                   | Footer uses section-bg2 background image                        |
 | Transitions                | `0.3s`                                               | Smooth hover transitions on images and links                    |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Venturely — Business & Investment Landing Page
 
-Scenario: Page loads with hero slider
-Given the user opens the Venturely page
-Then the navigation bar should be visible with logo and menu items
-And a hero slider should display with animated content
-And the hero should show "Entrepreneur. Investor. Marketing Extraordinaire." heading
-And an "Explore Our Services" CTA button should be visible
+#### Scenario: Page loads with hero slider
 
-Scenario: Navigation menu items
-Given the page is loaded
-Then the navigation should contain links for "Home", "About", "Services", "Blog", "Contact"
-And a phone number button should be visible on desktop
-And clicking a nav link should scroll to the corresponding section
+- **GIVEN** the user opens the Venturely page
+- **THEN** the navigation bar should be visible with logo and menu items
+- **AND** a hero slider should display with animated content
+- **AND** the hero should show "Entrepreneur. Investor. Marketing Extraordinaire." heading
+- **AND** an "Explore Our Services" CTA button should be visible
 
-Scenario: About section with stats
-Given the user scrolls to the about section
-Then an "About Us" label should be visible
-And a "Build trust fast using the most engaging technology" heading should be displayed
-And a descriptive paragraph should be below the heading
-And a "More About Us" button should be visible
-And two stat boxes should show "10 Years of experience" and "$40M+ invested"
+#### Scenario: Navigation menu items
 
-Scenario: Services / popular items section with 3 cards
-Given the user scrolls to the services section
-Then a "How we can help?" label should be visible
-And 3 service cards should be displayed in a row
-And each card should have an image with hover overlay and title
-And each card should have a "Read More" overlay on hover
+- **GIVEN** the page is loaded
+- **THEN** the navigation should contain links for "Home", "About", "Services", "Blog", "Contact"
+- **AND** a phone number button should be visible on desktop
+- **AND** clicking a nav link should scroll to the corresponding section
 
-Scenario: Testimonial section with slider
-Given the user scrolls to the testimonial section
-Then a testimonial slider should be visible
-And the testimonial should show a quote, company logo, and author name/role
-And dot navigation indicators should be present for the slider
+#### Scenario: About section with stats
 
-Scenario: Team section with 3 members
-Given the user scrolls to the team section
-Then a "Meet with our amazing team" heading should be visible
-And 3 team member cards should be displayed
-And each card should have a photo, name, role, and social media links
-And social links should include Twitter, Facebook, and Pinterest icons
+- **GIVEN** the user scrolls to the about section
+- **THEN** an "About Us" label should be visible
+- **AND** a "Build trust fast using the most engaging technology" heading should be displayed
+- **AND** a descriptive paragraph should be below the heading
+- **AND** a "More About Us" button should be visible
+- **AND** two stat boxes should show "10 Years of experience" and "$40M+ invested"
 
-Scenario: Portfolio / popular items section with 2 cards
-Given the user scrolls to the second portfolio section
-Then 2 portfolio cards should be displayed side by side
-And each card should have an image with hover overlay and title
+#### Scenario: Services / popular items section with 3 cards
 
-Scenario: Contact / CTA section
-Given the user scrolls to the contact section
-Then a contact form or call-to-action should be visible
-And the section should have a dark textured background
+- **GIVEN** the user scrolls to the services section
+- **THEN** a "How we can help?" label should be visible
+- **AND** 3 service cards should be displayed in a row
+- **AND** each card should have an image with hover overlay and title
+- **AND** each card should have a "Read More" overlay on hover
 
-Scenario: Footer with links
-Given the user scrolls to the footer
-Then the footer should contain navigation links and copyright
-And a "Component Dock" link should be present (per conventions)
+#### Scenario: Testimonial section with slider
 
-Scenario: Responsive layout on mobile
-Given the user opens the page on a viewport width less than 768px
-Then the navigation should collapse to a mobile hamburger menu
-And all sections should stack vertically
-And team cards should stack vertically
-And the phone number button should be hidden on mobile
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** a testimonial slider should be visible
+- **AND** the testimonial should show a quote, company logo, and author name/role
+- **AND** dot navigation indicators should be present for the slider
 
-Scenario: Smooth scroll navigation
-Given the user clicks a navigation menu item
-Then the page should smoothly scroll to the target section
+#### Scenario: Team section with 3 members
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** a "Meet with our amazing team" heading should be visible
+- **AND** 3 team member cards should be displayed
+- **AND** each card should have a photo, name, role, and social media links
+- **AND** social links should include Twitter, Facebook, and Pinterest icons
+
+#### Scenario: Portfolio / popular items section with 2 cards
+
+- **GIVEN** the user scrolls to the second portfolio section
+- **THEN** 2 portfolio cards should be displayed side by side
+- **AND** each card should have an image with hover overlay and title
+
+#### Scenario: Contact / CTA section
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a contact form or call-to-action should be visible
+- **AND** the section should have a dark textured background
+
+#### Scenario: Footer with links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer should contain navigation links and copyright
+- **AND** a "Component Dock" link should be present (per conventions)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a viewport width less than 768px
+- **THEN** the navigation should collapse to a mobile hamburger menu
+- **AND** all sections should stack vertically
+- **AND** team cards should stack vertically
+- **AND** the phone number button should be hidden on mobile
+
+#### Scenario: Smooth scroll navigation
+
+- **GIVEN** the user clicks a navigation menu item
+- **THEN** the page should smoothly scroll to the target section
 
 ## Verification checklist
 

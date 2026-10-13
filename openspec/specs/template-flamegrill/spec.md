@@ -44,75 +44,85 @@ Recreation of ColorLib's **Burger** template as a React 19 + Vite + Tailwind 4 +
 - **Instagram Gallery:** White background
 - **Footer:** Dark background image (`footer_bg.png`)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: FlameGrill — Burger Restaurant Template
 
 #### Scenario: Navbar displays correctly
-- **Given** the user loads the page
-- **Then** a sticky navbar is visible with a centered logo
-- **And** navigation links include: Home, Menu, About, Blog, Contact
-- **And** social media icons (Instagram, Twitter, Facebook, Google+) are shown on the right
-- **And** a phone number CTA button is visible on desktop
+
+- **GIVEN** the user loads the page
+- **THEN** a sticky navbar is visible with a centered logo
+- **AND** navigation links include: Home, Menu, About, Blog, Contact
+- **AND** social media icons (Instagram, Twitter, Facebook, Google+) are shown on the right
+- **AND** a phone number CTA button is visible on desktop
 
 #### Scenario: Hero carousel shows slides
-- **Given** the user views the hero section
-- **Then** a full-width image carousel is displayed with auto-rotation
-- **And** each slide shows a "Big Deal" badge, a heading ("Burger Bachelor"), and a subtitle ("Maxican")
-- **And** the slide has a dark overlay on the background image
-- **And** navigation dots/arrows allow manual slide control
+
+- **GIVEN** the user views the hero section
+- **THEN** a full-width image carousel is displayed with auto-rotation
+- **AND** each slide shows a "Big Deal" badge, a heading ("Burger Bachelor"), and a subtitle ("Maxican")
+- **AND** the slide has a dark overlay on the background image
+- **AND** navigation dots/arrows allow manual slide control
 
 #### Scenario: Best Burgers menu grid displays items
-- **Given** the user scrolls to the menu section
-- **Then** a "Burger Menu" section label and "Best Ever Burgers" heading are shown
-- **And** 8 burger items are displayed in a 2-column responsive grid
-- **And** each item shows a thumbnail image, burger name, short description, and price
-- **And** items are: Beefy Burgers, Burger Boys, Burger Bizz, Crackles Burger, Bull Burgers, Rocket Burgers, Smokin Burger, and one more
+
+- **GIVEN** the user scrolls to the menu section
+- **THEN** a "Burger Menu" section label and "Best Ever Burgers" heading are shown
+- **AND** 8 burger items are displayed in a 2-column responsive grid
+- **AND** each item shows a thumbnail image, burger name, short description, and price
+- **AND** items are: Beefy Burgers, Burger Boys, Burger Bizz, Crackles Burger, Bull Burgers, Rocket Burgers, Smokin Burger, and one more
 
 #### Scenario: About section shows restaurant info
-- **Given** the user scrolls to the about section
-- **Then** a split layout is shown: images on the left, text on the right
-- **And** the heading reads "Best Burger in your City" with "About Us" label
-- **And** a descriptive paragraph is displayed
-- **And** a signature image is shown below the text
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a split layout is shown: images on the left, text on the right
+- **AND** the heading reads "Best Burger in your City" with "About Us" label
+- **AND** a descriptive paragraph is displayed
+- **AND** a signature image is shown below the text
 
 #### Scenario: Video CTA section displays
-- **Given** the user scrolls to the video section
-- **Then** a dark background with burger imagery is shown
-- **And** the heading "Burger Bachelor" and subtitle "How we make delicious Burger" are visible
-- **And** a circular play button links to a video (YouTube)
+
+- **GIVEN** the user scrolls to the video section
+- **THEN** a dark background with burger imagery is shown
+- **AND** the heading "Burger Bachelor" and subtitle "How we make delicious Burger" are visible
+- **AND** a circular play button links to a video (YouTube)
 
 #### Scenario: Testimonials carousel works
-- **Given** the user scrolls to the testimonials section
-- **Then** "Testimonials" label and "Happy Customers" heading are shown
-- **And** testimonials are displayed in a carousel
-- **And** each testimonial shows a quote, author avatar, author name, and star rating
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** "Testimonials" label and "Happy Customers" heading are shown
+- **AND** testimonials are displayed in a carousel
+- **AND** each testimonial shows a quote, author avatar, author name, and star rating
 
 #### Scenario: Instagram gallery shows images
-- **Given** the user scrolls to the Instagram section
-- **Then** a 4-column grid of images is displayed
-- **And** each image has an Instagram icon overlay on hover
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** a 4-column grid of images is displayed
+- **AND** each image has an Instagram icon overlay on hover
 
 #### Scenario: Footer displays locations and newsletter
-- **Given** the user scrolls to the footer
-- **Then** a 3-column footer shows two location cards (address + phone) and a newsletter signup
-- **And** social media icons are displayed below the columns
-- **And** a copyright bar with "Made with ❤ by Component Dock" is shown at the bottom
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a 3-column footer shows two location cards (address + phone) and a newsletter signup
+- **AND** social media icons are displayed below the columns
+- **AND** a copyright bar with "Made with ❤ by Component Dock" is shown at the bottom
 
 #### Scenario: Responsive behavior on mobile
-- **Given** the user views the page on a mobile viewport (≤768px)
-- **Then** the navbar collapses to a hamburger menu
-- **And** the hero carousel text is centered and scaled down
-- **And** the menu grid stacks to a single column
-- **And** the about section stacks images above text
-- **And** the footer columns stack vertically
+
+- **GIVEN** the user views the page on a mobile viewport (≤768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero carousel text is centered and scaled down
+- **AND** the menu grid stacks to a single column
+- **AND** the about section stacks images above text
+- **AND** the footer columns stack vertically
 
 #### Scenario: Dark mode styling
-- **Given** the user enables dark mode
-- **Then** the page background becomes dark navy (#040E27)
-- **And** text colors adjust to white/light
-- **And** card backgrounds use dark tones
-- **And** brand orange and gold accents remain visible
+
+- **GIVEN** the user enables dark mode
+- **THEN** the page background becomes dark navy (#040E27)
+- **AND** text colors adjust to white/light
+- **AND** card backgrounds use dark tones
+- **AND** brand orange and gold accents remain visible
 
 ## Verification Checklist
 

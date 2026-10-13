@@ -39,60 +39,80 @@ Recreation of ColorLib's **Ezuca** template as a React 19 + Vite + Tailwind 4 + 
 10. **Home Gallery** — image gallery grid
 11. **Footer** — columns with links, newsletter, social, Component Dock
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: LearnBase template behaviour
+
 Feature: LearnBase Navigation
-  Scenario: Navbar shows logo and links
-    Given the user visits the LearnBase homepage
-    Then the navbar has logo "LearnBase" and links: Home, About, Courses, Blog, Contact
+
+#### Scenario: Navbar shows logo and links
+
+- **GIVEN** the user visits the LearnBase homepage
+- **THEN** the navbar has logo "LearnBase" and links: Home, About, Courses, Blog, Contact
 
 Feature: LearnBase Hero Slider
-  Scenario: Hero has multiple slides with CTAs
-    Given the user visits the homepage
-    Then a slider shows headings and "read more" buttons
+
+#### Scenario: Hero has multiple slides with CTAs
+
+- **GIVEN** the user visits the homepage
+- **THEN** a slider shows headings and "read more" buttons
 
 Feature: LearnBase Features
-  Scenario: Five feature items displayed
-    Given the user scrolls past the hero
-    Then 5 feature items with icons and "read more" links appear
+
+#### Scenario: Five feature items displayed
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** 5 feature items with icons and "read more" links appear
 
 Feature: LearnBase Featured Courses (Horizontal)
-  Scenario: Two featured courses shown
-    Given the user scrolls to featured courses
-    Then 2 course cards display with title, author, ratings, and cost
+
+#### Scenario: Two featured courses shown
+
+- **GIVEN** the user scrolls to featured courses
+- **THEN** 2 course cards display with title, author, ratings, and cost
 
 Feature: LearnBase About
-  Scenario: Instructor profiles displayed
-    Given the user scrolls to the about section
-    Then 3 instructor profiles with names and universities are shown
+
+#### Scenario: Instructor profiles displayed
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** 3 instructor profiles with names and universities are shown
 
 Feature: LearnBase Testimonials
-  Scenario: Testimonial slider works
-    Given the user scrolls to testimonials
-    Then a carousel of testimonial slides is displayed
+
+#### Scenario: Testimonial slider works
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** a carousel of testimonial slides is displayed
 
 Feature: LearnBase Featured Courses (Vertical)
-  Scenario: Category tabs filter courses
-    Given the user views the vertical courses section
-    When the user clicks "Design" tab
-    Then only design courses are shown
+
+#### Scenario: Category tabs filter courses
+
+- **GIVEN** the user views the vertical courses section
+- **WHEN** the user clicks "Design" tab
+- **THEN** only design courses are shown
 
 Feature: LearnBase News
-  Scenario: News and events displayed
-    Given the user scrolls to latest news
-    Then news/event cards are shown
+
+#### Scenario: News and events displayed
+
+- **GIVEN** the user scrolls to latest news
+- **THEN** news/event cards are shown
 
 Feature: LearnBase Gallery
-  Scenario: Image gallery grid
-    Given the user scrolls to the gallery
-    Then a grid of images is displayed
+
+#### Scenario: Image gallery grid
+
+- **GIVEN** the user scrolls to the gallery
+- **THEN** a grid of images is displayed
 
 Feature: LearnBase Footer
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" branded "Component Dock" exists
-```
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" branded "Component Dock" exists
 
 ## Verification checklist
 

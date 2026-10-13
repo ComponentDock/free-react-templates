@@ -45,102 +45,112 @@ Recreation of ColorLib **Montana** template as a React 19 + Vite + Tailwind 4 + 
 9. **Instagram feed** — 5 equal-width columns of images with dark overlay on hover and Instagram icon.
 10. **Footer** — black background. Top area with 4 columns: Address (200, Green road, Mongla, New Yor City USA + "Get Direction" line-button), Reservation (+10 367 267 2678, reservation@montana.com), Navigation (Home, Rooms, About, News links), Newsletter (email input + "Sign Up" button + "Subscribe newsletter to get updates" text). Bottom: copyright bar with divider, copyright text + social icons (Facebook, Twitter, Instagram).
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Highland Hotel Template
 
-```gherkin
 Feature: Highland — Hotel/Resort Website Template
-  As a user visiting the Highland website
-  I want to see a professional luxury hotel website
-  So that I can explore rooms, offers, and make a reservation
+As a user visiting the Highland website
+I want to see a professional luxury hotel website
+So that I can explore rooms, offers, and make a reservation
 
-  Scenario: Navbar displays navigation and booking CTA
-    Given I am on the Highland homepage
-    Then I see a transparent header with centered logo
-    And I see navigation links: Home, Rooms, About, Blog, Pages, Contact
-    And I see social icons (Facebook, Twitter, Instagram)
-    And I see a "Book A Room" blue button
-    And the header becomes sticky with black background on scroll
+#### Scenario: Navbar displays navigation and booking CTA
 
-  Scenario: Hero slider shows resort imagery with text
-    Given I am on the Highland homepage
-    Then I see a full-viewport image slider
-    And I see centered white text "Montana Resort" or "Life is Beautiful"
-    And I see subtitle "Unlock to enjoy the view of Martine"
-    And slides rotate automatically
+- **GIVEN** I am on the Highland homepage
+- **THEN** I see a transparent header with centered logo
+- **AND** I see navigation links: Home, Rooms, About, Blog, Pages, Contact
+- **AND** I see social icons (Facebook, Twitter, Instagram)
+- **AND** I see a "Book A Room" blue button
+- **AND** the header becomes sticky with black background on scroll
 
-  Scenario: About section describes the hotel
-    Given I scroll to the about section
-    Then I see label "About Us" in blue
-    And I see heading "A Luxuries Hotel with Nature"
-    And I see a descriptive paragraph
-    And I see a "Learn More" underline link
-    And I see two overlapping images on the right
+#### Scenario: Hero slider shows resort imagery with text
 
-  Scenario: Offers section displays 3 deal cards
-    Given I scroll to the offers section
-    Then I see label "Our Offers" and heading "Ongoing Offers"
-    And I see 3 offer cards in a row
-    And each card has an image, heading, bullet list, and "book now" button
-    And the bullets show: Luxaries condition, 3 Adults & 2 Children size, Sea view side
+- **GIVEN** I am on the Highland homepage
+- **THEN** I see a full-viewport image slider
+- **AND** I see centered white text "Montana Resort" or "Life is Beautiful"
+- **AND** I see subtitle "Unlock to enjoy the view of Martine"
+- **AND** slides rotate automatically
 
-  Scenario: Video section shows play overlay
-    Given I scroll to the video section
-    Then I see a background image with dark overlay
-    And I see label "Montana Sea View"
-    And I see heading "Relax and Enjoy your Vacation"
-    And I see a circular white play button
+#### Scenario: About section describes the hotel
 
-  Scenario: Dining section describes restaurant
-    Given I scroll to the dining section
-    Then I see label "Delicious Food"
-    And I see heading "We Serve Fresh and Delicious Food"
-    And I see a descriptive paragraph
-    And I see a "Learn More" underline link
-    And images appear on the left side (reversed layout)
+- **GIVEN** I scroll to the about section
+- **THEN** I see label "About Us" in blue
+- **AND** I see heading "A Luxuries Hotel with Nature"
+- **AND** I see a descriptive paragraph
+- **AND** I see a "Learn More" underline link
+- **AND** I see two overlapping images on the right
 
-  Scenario: Featured Rooms shows 4 room options
-    Given I scroll to the rooms section
-    Then I see label "Featured Rooms" and heading "Choose a Better Room"
-    And I see 4 room cards: Superior Room, Deluxe Room, Signature Room, Couple Room
-    And each card shows price "From $250/night"
-    And each card has a "book now" line-button
-    And each card has a gradient overlay on the image
+#### Scenario: Offers section displays 3 deal cards
 
-  Scenario: Reservation query bar displays phone contact
-    Given I scroll to the reservation bar
-    Then I see a bordered box with "For Reservation 0r Query?"
-    And I see a blue pill-shaped phone button "+10 576 377 4789"
+- **GIVEN** I scroll to the offers section
+- **THEN** I see label "Our Offers" and heading "Ongoing Offers"
+- **AND** I see 3 offer cards in a row
+- **AND** each card has an image, heading, bullet list, and "book now" button
+- **AND** the bullets show: Luxaries condition, 3 Adults & 2 Children size, Sea view side
 
-  Scenario: Instagram feed shows 5 images
-    Given I scroll to the Instagram section
-    Then I see 5 equal-width images in a row
-    And hovering shows a dark overlay with Instagram icon
+#### Scenario: Video section shows play overlay
 
-  Scenario: Footer displays contact info and newsletter
-    Given I scroll to the footer
-    Then I see a black footer with 4 columns
-    And I see address: "200, Green road, Mongla, New Yor City USA"
-    And I see reservation contact: "+10 367 267 2678"
-    And I see navigation links: Home, Rooms, About, News
-    And I see a newsletter form with email input and "Sign Up" button
-    And I see a copyright bar with social icons
-    And I see a "Component Dock" link in the footer
+- **GIVEN** I scroll to the video section
+- **THEN** I see a background image with dark overlay
+- **AND** I see label "Montana Sea View"
+- **AND** I see heading "Relax and Enjoy your Vacation"
+- **AND** I see a circular white play button
 
-  Scenario: All sections maintain consistent spacing
-    Given I scroll through the entire page
-    Then each section has consistent vertical padding
-    And headings use Raleway font consistently
-    And the brand color #009DFF appears in labels, buttons, and accents
+#### Scenario: Dining section describes restaurant
 
-  Scenario: Page is responsive on mobile
-    Given I view the page on a 375px viewport
-    Then the navbar collapses to a hamburger menu
-    Then columns stack vertically
-    And the hero text remains readable
-    And room cards stack vertically
-```
+- **GIVEN** I scroll to the dining section
+- **THEN** I see label "Delicious Food"
+- **AND** I see heading "We Serve Fresh and Delicious Food"
+- **AND** I see a descriptive paragraph
+- **AND** I see a "Learn More" underline link
+- **AND** images appear on the left side (reversed layout)
+
+#### Scenario: Featured Rooms shows 4 room options
+
+- **GIVEN** I scroll to the rooms section
+- **THEN** I see label "Featured Rooms" and heading "Choose a Better Room"
+- **AND** I see 4 room cards: Superior Room, Deluxe Room, Signature Room, Couple Room
+- **AND** each card shows price "From $250/night"
+- **AND** each card has a "book now" line-button
+- **AND** each card has a gradient overlay on the image
+
+#### Scenario: Reservation query bar displays phone contact
+
+- **GIVEN** I scroll to the reservation bar
+- **THEN** I see a bordered box with "For Reservation 0r Query?"
+- **AND** I see a blue pill-shaped phone button "+10 576 377 4789"
+
+#### Scenario: Instagram feed shows 5 images
+
+- **GIVEN** I scroll to the Instagram section
+- **THEN** I see 5 equal-width images in a row
+- **AND** hovering shows a dark overlay with Instagram icon
+
+#### Scenario: Footer displays contact info and newsletter
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a black footer with 4 columns
+- **AND** I see address: "200, Green road, Mongla, New Yor City USA"
+- **AND** I see reservation contact: "+10 367 267 2678"
+- **AND** I see navigation links: Home, Rooms, About, News
+- **AND** I see a newsletter form with email input and "Sign Up" button
+- **AND** I see a copyright bar with social icons
+- **AND** I see a "Component Dock" link in the footer
+
+#### Scenario: All sections maintain consistent spacing
+
+- **GIVEN** I scroll through the entire page
+- **THEN** each section has consistent vertical padding
+- **AND** headings use Raleway font consistently
+- **AND** the brand color #009DFF appears in labels, buttons, and accents
+
+#### Scenario: Page is responsive on mobile
+
+- **GIVEN** I view the page on a 375px viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **THEN** columns stack vertically
+- **AND** the hero text remains readable
+- **AND** room cards stack vertically
 
 ## Verification checklist
 

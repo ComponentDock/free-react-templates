@@ -20,7 +20,7 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 ---
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature 1: Responsive Navigation Bar
 
@@ -30,9 +30,9 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 #### Scenario: Nav bar renders correctly
 
-- **Given** the user loads the Carouselide home page,
-- **When** the navigation bar is rendered,
-- **Then** it displays the brand logo, links for Home, Features, Gallery, Testimonials, and Contact, and a "Get Started" CTA button.
+- **GIVEN** the user loads the Carouselide home page,
+- **WHEN** the navigation bar is rendered,
+- **THEN** it displays the brand logo, links for Home, Features, Gallery, Testimonials, and Contact, and a "Get Started" CTA button
 
 ### Feature 2: Hero Carousel Showcase
 
@@ -42,9 +42,9 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 #### Scenario: Hero carousel controls
 
-- **Given** the hero carousel displays slide 1 of 3,
-- **When** the user clicks the next arrow or slide indicator dot,
-- **Then** the carousel smoothly transitions to slide 2 with updated headline and CTA.
+- **GIVEN** the hero carousel displays slide 1 of 3,
+- **WHEN** the user clicks the next arrow or slide indicator dot,
+- **THEN** the carousel smoothly transitions to slide 2 with updated headline and CTA
 
 ### Feature 3: Interactive Feature Cards Slider
 
@@ -54,9 +54,9 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 #### Scenario: Feature cards display and interaction
 
-- **Given** the feature section is visible,
-- **When** the user views the feature cards grid or navigates via slider controls,
-- **Then** each card shows an icon, title, description, and hover animation.
+- **GIVEN** the feature section is visible,
+- **WHEN** the user views the feature cards grid or navigates via slider controls,
+- **THEN** each card shows an icon, title, description, and hover animation
 
 ### Feature 4: Testimonial Carousel
 
@@ -66,9 +66,9 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 #### Scenario: Testimonial navigation
 
-- **Given** the testimonial carousel is active,
-- **When** the user clicks pagination buttons,
-- **Then** the review quote, author avatar, and title update instantly.
+- **GIVEN** the testimonial carousel is active,
+- **WHEN** the user clicks pagination buttons,
+- **THEN** the review quote, author avatar, and title update instantly
 
 ### Feature 5: Image Gallery Carousel
 
@@ -78,9 +78,9 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 #### Scenario: Gallery display
 
-- **Given** the gallery section is loaded,
-- **When** the user scrolls or clicks through the gallery items,
-- **Then** responsive images load cleanly via Picsum placeholders.
+- **GIVEN** the gallery section is loaded,
+- **WHEN** the user scrolls or clicks through the gallery items,
+- **THEN** responsive images load cleanly via Picsum placeholders
 
 ### Feature 6: Newsletter Subscription
 
@@ -90,9 +90,9 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 #### Scenario: Valid email submission
 
-- **Given** the newsletter form is displayed,
-- **When** the user enters a valid email address and clicks subscribe,
-- **Then** a success confirmation message appears.
+- **GIVEN** the newsletter form is displayed,
+- **WHEN** the user enters a valid email address and clicks subscribe,
+- **THEN** a success confirmation message appears
 
 ### Feature 7: Footer with Component Dock Link
 
@@ -102,8 +102,8 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 #### Scenario: Footer attribution present
 
-- **Given** the footer is rendered,
-- **Then** it must contain a link pointing to `https://www.componentdock.com/` labeled "Component Dock" or similar.
+- **GIVEN** the footer is rendered,
+- **THEN** it must contain a link pointing to `https://www.componentdock.com/` labeled "Component Dock" or similar
 
 ---
 

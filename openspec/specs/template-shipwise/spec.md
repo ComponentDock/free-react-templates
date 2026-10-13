@@ -49,124 +49,126 @@ New name: `shipwise` (never "carries" — naming rule enforced)
 
 ---
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation links
-  Given I visit the Shipwise homepage
-  Then I see a navigation bar with brand logo and nav links
-  And the navbar is sticky on scroll
+#### Scenario: Navbar displays brand and navigation links
 
-Scenario: Navbar has search and language controls
-  Given I visit the Shipwise homepage
-  Then I see a search icon and language selector in the top bar
-```
+- **GIVEN** I visit the Shipwise homepage
+- **THEN** I see a navigation bar with brand logo and nav links
+- **AND** the navbar is sticky on scroll
+
+#### Scenario: Navbar has search and language controls
+
+- **GIVEN** I visit the Shipwise homepage
+- **THEN** I see a search icon and language selector in the top bar
 
 ### Feature: Hero Slider
 
-```gherkin
-Scenario: Hero displays two slides with headlines
-  Given I visit the Shipwise homepage
-  Then I see a full-width hero slider with two slides
-  And each slide has a headline and CTA button
+#### Scenario: Hero displays two slides with headlines
 
-Scenario: Hero buttons navigate or trigger action
-  Given I am on the hero slider
-  Then each CTA button is styled with border and uppercase text
-```
+- **GIVEN** I visit the Shipwise homepage
+- **THEN** I see a full-width hero slider with two slides
+- **AND** each slide has a headline and CTA button
+
+#### Scenario: Hero buttons navigate or trigger action
+
+- **GIVEN** I am on the hero slider
+- **THEN** each CTA button is styled with border and uppercase text
 
 ### Feature: Blog Cards
 
-```gherkin
-Scenario: Blog section shows three cards
-  Given I scroll to the blog section
-  Then I see three blog cards in a grid
-  And each card has an image, title, and meta info
+#### Scenario: Blog section shows three cards
 
-Scenario: Blog section has gray background
-  Given I view the blog section
-  Then the background color is light blue-gray (#f7f9fc)
-```
+- **GIVEN** I scroll to the blog section
+- **THEN** I see three blog cards in a grid
+- **AND** each card has an image, title, and meta info
+
+#### Scenario: Blog section has gray background
+
+- **GIVEN** I view the blog section
+- **THEN** the background color is light blue-gray (#f7f9fc)
 
 ### Feature: About + Quote Form
 
-```gherkin
-Scenario: About section displays text and stats
-  Given I scroll to the about section
-  Then I see introductory text on the left
-  And counter statistics below the text
+#### Scenario: About section displays text and stats
 
-Scenario: Quote form collects shipping inquiry
-  Given I scroll to the quote form area
-  Then I see fields for Name, Email, Phone, Type, Quantity, Destination
-  And a Submit button styled in dark slate color
-```
+- **GIVEN** I scroll to the about section
+- **THEN** I see introductory text on the left
+- **AND** counter statistics below the text
+
+#### Scenario: Quote form collects shipping inquiry
+
+- **GIVEN** I scroll to the quote form area
+- **THEN** I see fields for Name, Email, Phone, Type, Quantity, Destination
+- **AND** a Submit button styled in dark slate color
 
 ### Feature: Service Area
 
-```gherkin
-Scenario: Service section shows four hexagon service cards
-  Given I scroll to the service section
-  Then I see four service cards with hexagon icons
-  And the services are: Warehouse, Road Freight, Sea Freight, Air Freight
+#### Scenario: Service section shows four hexagon service cards
 
-Scenario: Service icons use hexagon shape
-  Given I view the service cards
-  Then each service icon is inside a hexagon container
-```
+- **GIVEN** I scroll to the service section
+- **THEN** I see four service cards with hexagon icons
+- **AND** the services are: Warehouse, Road Freight, Sea Freight, Air Freight
+
+#### Scenario: Service icons use hexagon shape
+
+- **GIVEN** I view the service cards
+- **THEN** each service icon is inside a hexagon container
 
 ### Feature: Service Catalog / Why Choose Us
 
-```gherkin
-Scenario: Why Choose Us section with checklist
-  Given I scroll to the catalog section
-  Then I see "Why Choose Us?" heading
-  And a checklist of 4-5 benefits
-  And a parallax background image
+#### Scenario: Why Choose Us section with checklist
 
-Scenario: Promo cards display 4 features
-  Given I view the catalog area
-  Then I see 4 promo cards: Our Location, Latest News, 24/7 Support, Fast Delivery
-  And each has an icon and short description
-```
+- **GIVEN** I scroll to the catalog section
+- **THEN** I see "Why Choose Us?" heading
+- **AND** a checklist of 4-5 benefits
+- **AND** a parallax background image
+
+#### Scenario: Promo cards display 4 features
+
+- **GIVEN** I view the catalog area
+- **THEN** I see 4 promo cards: Our Location, Latest News, 24/7 Support, Fast Delivery
+- **AND** each has an icon and short description
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials display client quotes
-  Given I scroll to the testimonials section
-  Then I see a carousel of client testimonials
-  And each testimonial has a photo, quote, name, and title
+#### Scenario: Testimonials display client quotes
 
-Scenario: Testimonials are centered and styled
-  Given I view the testimonials
-  Then the section is centered with a clean background
-  And quotes are styled with proper typography
-```
+- **GIVEN** I scroll to the testimonials section
+- **THEN** I see a carousel of client testimonials
+- **AND** each testimonial has a photo, quote, name, and title
+
+#### Scenario: Testimonials are centered and styled
+
+- **GIVEN** I view the testimonials
+- **THEN** the section is centered with a clean background
+- **AND** quotes are styled with proper typography
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has four columns
-  Given I scroll to the footer
-  Then I see four widget columns: About Us, Latest Tweets, Customer Service, Instagram Feed
+#### Scenario: Footer has four columns
 
-Scenario: Footer includes subscribe form
-  Given I view the footer
-  Then I see an email subscription form
-  And the subscribe button is amber (#f39c12)
+- **GIVEN** I scroll to the footer
+- **THEN** I see four widget columns: About Us, Latest Tweets, Customer Service, Instagram Feed
 
-Scenario: Footer has dark background
-  Given I view the footer
-  Then the background is dark (#3c4147)
-  And text is white
+#### Scenario: Footer includes subscribe form
 
-Scenario: Footer links to Component Dock
-  Given I view the footer
-  Then I see a link to https://www.componentdock.com/
-```
+- **GIVEN** I view the footer
+- **THEN** I see an email subscription form
+- **AND** the subscribe button is amber (#f39c12)
+
+#### Scenario: Footer has dark background
+
+- **GIVEN** I view the footer
+- **THEN** the background is dark (#3c4147)
+- **AND** text is white
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I view the footer
+- **THEN** I see a link to https://www.componentdock.com/
 
 ---
 

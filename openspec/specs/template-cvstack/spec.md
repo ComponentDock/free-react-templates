@@ -56,68 +56,78 @@ Full-viewport app (`100vw × 100vh`, overflow hidden) with padding frame (40px l
      - **Contact** — Contact form (name, email, subject, message, submit button)
 4. **Footer** — Simple copyright line: "© 2026 | Made with ❤ by Component Dock" linking https://www.componentdock.com/
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: CVStack Personal vCard Template
 
-  Scenario: Page loads with header and sidebar visible
-    Given the user opens the CVStack page
-    Then the header should display the logo "CVStack" with a colored dot
-    And the navigation should show 8 tabs: About, Skills, Services, Experience, Education, Portfolio, Testimonials, Contact
-    And the sidebar should display a profile image and general information
+#### Scenario: Page loads with header and sidebar visible
 
-  Scenario: Navigation tabs switch content sections
-    Given the user is on the About section
-    When the user clicks the "Skills" tab
-    Then the main content area should display the Skills section
-    And the "Skills" tab should be highlighted with the brand color
+- **GIVEN** the user opens the CVStack page
+- **THEN** the header should display the logo "CVStack" with a colored dot
+- **AND** the navigation should show 8 tabs: About, Skills, Services, Experience, Education, Portfolio, Testimonials, Contact
+- **AND** the sidebar should display a profile image and general information
 
-  Scenario: Sidebar displays personal information
-    Given the sidebar is visible
-    Then it should show Name, Location, Date of Birth, Email, Phone, and Website fields
-    And each field should have an icon and label-value pair
+#### Scenario: Navigation tabs switch content sections
 
-  Scenario: Social links are present in sidebar
-    Given the sidebar is visible
-    Then there should be 4 social media icon links
-    And each link should have a hover effect changing to white
+- **GIVEN** the user is on the About section
+- **WHEN** the user clicks the "Skills" tab
+- **THEN** the main content area should display the Skills section
+- **AND** the "Skills" tab should be highlighted with the brand color
 
-  Scenario: Skills section shows animated progress
-    Given the user navigates to the Skills section
-    Then there should be 4 circular skill indicators
-    And each indicator should display a skill name and percentage
-    And the circles should animate on view
+#### Scenario: Sidebar displays personal information
 
-  Scenario: Contact form validates inputs
-    Given the user is on the Contact section
-    When the user submits the form without filling any fields
-    Then validation errors should appear
-    When the user fills in name, email, subject, and message
-    And clicks submit
-    Then the form should submit successfully
+- **GIVEN** the sidebar is visible
+- **THEN** it should show Name, Location, Date of Birth, Email, Phone, and Website fields
+- **AND** each field should have an icon and label-value pair
 
-  Scenario: Header shrinks on scroll
-    Given the page is loaded
-    When the user scrolls down in the main content area
-    Then the header height should reduce from 97px to 60px
-    And the logo should shrink from 36px to 24px
+#### Scenario: Social links are present in sidebar
 
-  Scenario: Footer displays Component Dock branding
-    Given the page is loaded
-    Then the footer should contain a link to https://www.componentdock.com/
-    And the link text should reference "Component Dock"
+- **GIVEN** the sidebar is visible
+- **THEN** there should be 4 social media icon links
+- **AND** each link should have a hover effect changing to white
 
-  Scenario: Responsive layout adapts to smaller screens
-    Given the user views the page on a screen narrower than 1200px
-    Then the sidebar should stack above the main content
-    And a hamburger menu should appear for navigation
+#### Scenario: Skills section shows animated progress
 
-  Scenario: Dark mode toggle works
-    Given the page is loaded in light mode
-    When the user toggles dark mode
-    Then the sidebar background should remain dark
-    And the main content background should switch to a dark tone
-    And all text should remain readable
+- **GIVEN** the user navigates to the Skills section
+- **THEN** there should be 4 circular skill indicators
+- **AND** each indicator should display a skill name and percentage
+- **AND** the circles should animate on view
+
+#### Scenario: Contact form validates inputs
+
+- **GIVEN** the user is on the Contact section
+- **WHEN** the user submits the form without filling any fields
+- **THEN** validation errors should appear
+- **WHEN** the user fills in name, email, subject, and message
+- **AND** clicks submit
+- **THEN** the form should submit successfully
+
+#### Scenario: Header shrinks on scroll
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls down in the main content area
+- **THEN** the header height should reduce from 97px to 60px
+- **AND** the logo should shrink from 36px to 24px
+
+#### Scenario: Footer displays Component Dock branding
+
+- **GIVEN** the page is loaded
+- **THEN** the footer should contain a link to https://www.componentdock.com/
+- **AND** the link text should reference "Component Dock"
+
+#### Scenario: Responsive layout adapts to smaller screens
+
+- **GIVEN** the user views the page on a screen narrower than 1200px
+- **THEN** the sidebar should stack above the main content
+- **AND** a hamburger menu should appear for navigation
+
+#### Scenario: Dark mode toggle works
+
+- **GIVEN** the page is loaded in light mode
+- **WHEN** the user toggles dark mode
+- **THEN** the sidebar background should remain dark
+- **AND** the main content background should switch to a dark tone
+- **AND** all text should remain readable
 
 ## Verification Checklist
 

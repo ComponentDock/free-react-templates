@@ -45,121 +45,152 @@ Extracted from the live preview at `https://preview.colorlib.com/theme/create/` 
 11. **CTA Banner** — Full-width primary-color background, centered "Let's Get Started" heading in white
 12. **Footer** — Dark background. Left columns: About Us text, Features links, Social icons. Right column: Newsletter subscribe form (email input + Send button). Bottom: copyright line
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Bricoleur template behaviour
+
 Feature: Bricoleur — Creative Agency One-Page Template
 
-  Background:
-    Given the app is loaded in a browser
-    And the page scrolls to the top
+Background:
+- **GIVEN** the app is loaded in a browser
+- **AND** the page scrolls to the top
 
-  # ── Top Bar ──
-  Scenario: Top bar displays contact info and social links
-    Then I should see a phone number in the top bar
-    And I should see an email address in the top bar
-    And I should see social media icon links in the top bar
+**── Top Bar ──**
 
-  # ── Navbar ──
-  Scenario: Navbar is sticky and shows logo and navigation links
-    Given I scroll down the page
-    Then the navbar should remain fixed at the top
-    And I should see the logo "Bricoleur."
-    And I should see navigation links: Home, Work, Services, About, Blog, Contact
+#### Scenario: Top bar displays contact info and social links
 
-  Scenario: Navbar mobile toggle works
-    Given the viewport is mobile-width
-    When I click the hamburger menu icon
-    Then the mobile navigation menu should be visible
+- **THEN** I should see a phone number in the top bar
+- **AND** I should see an email address in the top bar
+- **AND** I should see social media icon links in the top bar
 
-  Scenario: About dropdown shows sub-items
-    When I hover over or click "About" in the navbar
-    Then I should see a dropdown with "Specialties" and "Our Team"
+**── Navbar ──**
 
-  # ── Hero ──
-  Scenario: Hero section displays headline and CTA
-    Then I should see a hero section with a background image
-    And I should see the headline "We Love To Build"
-    And I should see a typed-words animation element
-    And I should see a "Watch Video" CTA button
+#### Scenario: Navbar is sticky and shows logo and navigation links
 
-  Scenario: Hero CTA button is styled as primary
-    Then the "Watch Video" button should use the brand teal color
+- **GIVEN** I scroll down the page
+- **THEN** the navbar should remain fixed at the top
+- **AND** I should see the logo "Bricoleur."
+- **AND** I should see navigation links: Home, Work, Services, About, Blog, Contact
 
-  # ── Features ──
-  Scenario: Features section shows three numbered cards
-    Then I should see three feature cards
-    And the first card should show number "01." and title "Innovate"
-    And the second card should show number "02." and title "Create"
-    And the third card should show number "03." and title "Scale"
-    And each card should have a check-list of sub-items
+#### Scenario: Navbar mobile toggle works
 
-  # ── Portfolio / Works ──
-  Scenario: Works section shows portfolio gallery
-    Then I should see a section heading "Our Works"
-    And I should see at least three portfolio items
-    And each portfolio item should have an image and a title overlay
+- **GIVEN** the viewport is mobile-width
+- **WHEN** I click the hamburger menu icon
+- **THEN** the mobile navigation menu should be visible
 
-  # ── Services ──
-  Scenario: Services section shows six service items
-    Then I should see a section heading "Our Services"
-    And I should see six service cards
-    And each service card should have an icon, title, description, and "Learn More" link
+#### Scenario: About dropdown shows sub-items
 
-  Scenario: Service items list expected services
-    Then I should see services including "Web Design", "eCommerce", "Web Applications", "Branding", "Copy Writing", and "Mobile Applications"
+- **WHEN** I hover over or click "About" in the navbar
+- **THEN** I should see a dropdown with "Specialties" and "Our Team"
 
-  # ── About ──
-  Scenario: About section shows image and description
-    Then I should see a section heading "About Us"
-    And I should see an about image
-    And I should see a lead paragraph
-    And I should see two sub-feature items: "Web & Mobile Specialties" and "Intuitive Thinkers"
+**── Hero ──**
 
-  # ── Team ──
-  Scenario: Team section shows three members
-    Then I should see a section heading "Our Team"
-    And I should see three team member cards
-    And each card should show a circular photo, name, position, description, and social links
+#### Scenario: Hero section displays headline and CTA
 
-  # ── Blog ──
-  Scenario: Blog section shows three article cards
-    Then I should see a section heading "Blog"
-    And I should see three blog cards
-    And each card should have an image, title, meta (author, date, category), excerpt, and "Continue Reading" link
+- **THEN** I should see a hero section with a background image
+- **AND** I should see the headline "We Love To Build"
+- **AND** I should see a typed-words animation element
+- **AND** I should see a "Watch Video" CTA button
 
-  # ── Contact ──
-  Scenario: Contact section shows form and info
-    Then I should see a section heading "Contact Us"
-    And I should see a contact form with fields: First Name, Last Name, Email, Subject, Message
-    And I should see a "Send Message" submit button
-    And I should see address information on the right side
+#### Scenario: Hero CTA button is styled as primary
 
-  # ── CTA Banner ──
-  Scenario: CTA banner displays between contact and footer
-    Then I should see a full-width banner with primary background color
-    And I should see the text "Let's Get Started" in white
+- **THEN** the "Watch Video" button should use the brand teal color
 
-  # ── Footer ──
-  Scenario: Footer shows about, links, social, and newsletter
-    Then I should see a footer section with dark background
-    And I should see "About Us" text in the footer
-    And I should see "Features" link list in the footer
-    And I should see social media icon links
-    And I should see a newsletter subscribe form with email input and "Send" button
-    And I should see a copyright line
-    And the footer should include a link to "https://www.componentdock.com/" branded as "Component Dock"
+**── Features ──**
 
-  # ── Accessibility ──
-  Scenario: Page has proper heading hierarchy
-    Then the page should have a single h1 element
-    And section headings should use h2 elements
+#### Scenario: Features section shows three numbered cards
 
-  Scenario: Interactive elements are keyboard accessible
-    When I navigate with keyboard Tab
-    Then all interactive elements should be focusable
-    And focus indicators should be visible
-```
+- **THEN** I should see three feature cards
+- **AND** the first card should show number "01." and title "Innovate"
+- **AND** the second card should show number "02." and title "Create"
+- **AND** the third card should show number "03." and title "Scale"
+- **AND** each card should have a check-list of sub-items
+
+**── Portfolio / Works ──**
+
+#### Scenario: Works section shows portfolio gallery
+
+- **THEN** I should see a section heading "Our Works"
+- **AND** I should see at least three portfolio items
+- **AND** each portfolio item should have an image and a title overlay
+
+**── Services ──**
+
+#### Scenario: Services section shows six service items
+
+- **THEN** I should see a section heading "Our Services"
+- **AND** I should see six service cards
+- **AND** each service card should have an icon, title, description, and "Learn More" link
+
+#### Scenario: Service items list expected services
+
+- **THEN** I should see services including "Web Design", "eCommerce", "Web Applications", "Branding", "Copy Writing", and "Mobile Applications"
+
+**── About ──**
+
+#### Scenario: About section shows image and description
+
+- **THEN** I should see a section heading "About Us"
+- **AND** I should see an about image
+- **AND** I should see a lead paragraph
+- **AND** I should see two sub-feature items: "Web & Mobile Specialties" and "Intuitive Thinkers"
+
+**── Team ──**
+
+#### Scenario: Team section shows three members
+
+- **THEN** I should see a section heading "Our Team"
+- **AND** I should see three team member cards
+- **AND** each card should show a circular photo, name, position, description, and social links
+
+**── Blog ──**
+
+#### Scenario: Blog section shows three article cards
+
+- **THEN** I should see a section heading "Blog"
+- **AND** I should see three blog cards
+- **AND** each card should have an image, title, meta (author, date, category), excerpt, and "Continue Reading" link
+
+**── Contact ──**
+
+#### Scenario: Contact section shows form and info
+
+- **THEN** I should see a section heading "Contact Us"
+- **AND** I should see a contact form with fields: First Name, Last Name, Email, Subject, Message
+- **AND** I should see a "Send Message" submit button
+- **AND** I should see address information on the right side
+
+**── CTA Banner ──**
+
+#### Scenario: CTA banner displays between contact and footer
+
+- **THEN** I should see a full-width banner with primary background color
+- **AND** I should see the text "Let's Get Started" in white
+
+**── Footer ──**
+
+#### Scenario: Footer shows about, links, social, and newsletter
+
+- **THEN** I should see a footer section with dark background
+- **AND** I should see "About Us" text in the footer
+- **AND** I should see "Features" link list in the footer
+- **AND** I should see social media icon links
+- **AND** I should see a newsletter subscribe form with email input and "Send" button
+- **AND** I should see a copyright line
+- **AND** the footer should include a link to "https://www.componentdock.com/" branded as "Component Dock"
+
+**── Accessibility ──**
+
+#### Scenario: Page has proper heading hierarchy
+
+- **THEN** the page should have a single h1 element
+- **AND** section headings should use h2 elements
+
+#### Scenario: Interactive elements are keyboard accessible
+
+- **WHEN** I navigate with keyboard Tab
+- **THEN** all interactive elements should be focusable
+- **AND** focus indicators should be visible
 
 ## Verification checklist
 

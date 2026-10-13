@@ -69,90 +69,102 @@ Recreation of ColorLib SEL — a real estate multi-property website template wit
 9. **Client Logos** — "Reliable Customers" heading, horizontal logo carousel
 10. **Footer** — 4 columns (About Us, Newsletter, Instagram Feed, Follow Us) + copyright bar with social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Dwellpoint — Real Estate Property Website
 
-  Scenario: Page renders with correct structure
-    Given a user loads the Dwellpoint homepage
-    Then they see a header with logo and navigation
-    And a hero banner with background image
-    And a property search form
-    And a welcome section
-    And a properties grid
-    And a testimonials section
-    And a cities showcase
-    And a features grid
-    And a client logos section
-    And a footer
+#### Scenario: Page renders with correct structure
 
-  Scenario: Header navigation
-    Given the page loads
-    Then the header contains links: Home, About, Properties, Team, Contact
-    And the header contains dropdown menus for Pages and Blog
-    And the header contains a search icon
-    And the header is sticky on scroll
+- **GIVEN** a user loads the Dwellpoint homepage
+- **THEN** they see a header with logo and navigation
+- **AND** a hero banner with background image
+- **AND** a property search form
+- **AND** a welcome section
+- **AND** a properties grid
+- **AND** a testimonials section
+- **AND** a cities showcase
+- **AND** a features grid
+- **AND** a client logos section
+- **AND** a footer
 
-  Scenario: Hero banner
-    Given the page loads
-    Then the hero shows subtitle "The joy of home owning"
-    And the hero shows headline "Find Your New Home"
-    And the hero has a "Learn More" CTA button
+#### Scenario: Header navigation
 
-  Scenario: Advanced search form
-    Given the page loads
-    Then the search form shows 4 dropdown selects: Locations, Property Type, Bedrooms, Bathrooms
-    And the search form shows 2 range sliders: Price Range and Property Area
-    And the search form has a "Search Property" submit button
+- **GIVEN** the page loads
+- **THEN** the header contains links: Home, About, Properties, Team, Contact
+- **AND** the header contains dropdown menus for Pages and Blog
+- **AND** the header contains a search icon
+- **AND** the header is sticky on scroll
 
-  Scenario: Welcome section
-    Given the page loads
-    Then the welcome section shows a 2-column layout
-    And the left column shows a welcome image
-    And the right column shows a welcome heading and description
-    And 3 stat boxes display: Total Donation, Total Projects, Total Volunteers
+#### Scenario: Hero banner
 
-  Scenario: Properties grid
-    Given the page loads
-    Then 3 property cards are displayed in a row
-    And each card shows an image, title, tag pills, price, and "For Sale" button
-    And tag pills show bed count, bath count, sqm, and amenity availability
+- **GIVEN** the page loads
+- **THEN** the hero shows subtitle "The joy of home owning"
+- **AND** the hero shows headline "Find Your New Home"
+- **AND** the hero has a "Learn More" CTA button
 
-  Scenario: Testimonials carousel
-    Given the page loads
-    Then the testimonials section shows a left text block with "Client's Feedback"
-    And a right-side carousel displays testimonial items
-    And each testimonial shows an avatar, quote, name, and role
+#### Scenario: Advanced search form
 
-  Scenario: Cities showcase
-    Given the page loads
-    Then 4 city image cards are displayed in a row
-    And each card has a centered "Book Now" button overlay
+- **GIVEN** the page loads
+- **THEN** the search form shows 4 dropdown selects: Locations, Property Type, Bedrooms, Bathrooms
+- **AND** the search form shows 2 range sliders: Price Range and Property Area
+- **AND** the search form has a "Search Property" submit button
 
-  Scenario: Features grid
-    Given the page loads
-    Then 6 feature items are displayed in a 3-column x 2-row grid
-    And each feature has an icon, title, and description
+#### Scenario: Welcome section
 
-  Scenario: Client logos carousel
-    Given the page loads
-    Then a horizontal client logo carousel is displayed
+- **GIVEN** the page loads
+- **THEN** the welcome section shows a 2-column layout
+- **AND** the left column shows a welcome image
+- **AND** the right column shows a welcome heading and description
+- **AND** 3 stat boxes display: Total Donation, Total Projects, Total Volunteers
 
-  Scenario: Footer
-    Given the page loads
-    Then the footer has 4 columns: About Us, Newsletter, Instagram Feed, Follow Us
-    And the newsletter column has an email input and subscribe button
-    And the Instagram feed shows 8 thumbnail images
-    And the footer bottom shows copyright text
-    And the footer links to https://www.componentdock.com/ as "Component Dock"
+#### Scenario: Properties grid
 
-  Scenario: Design tokens
-    Given the page loads
-    Then brand accent color is #f5204b (crimson red)
-    And body font is Roboto sans-serif
-    And buttons use brand color background with white text
-    And section backgrounds alternate between white and #f9f9ff
-    And the footer background is #04091e (dark navy)
+- **GIVEN** the page loads
+- **THEN** 3 property cards are displayed in a row
+- **AND** each card shows an image, title, tag pills, price, and "For Sale" button
+- **AND** tag pills show bed count, bath count, sqm, and amenity availability
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section shows a left text block with "Client's Feedback"
+- **AND** a right-side carousel displays testimonial items
+- **AND** each testimonial shows an avatar, quote, name, and role
+
+#### Scenario: Cities showcase
+
+- **GIVEN** the page loads
+- **THEN** 4 city image cards are displayed in a row
+- **AND** each card has a centered "Book Now" button overlay
+
+#### Scenario: Features grid
+
+- **GIVEN** the page loads
+- **THEN** 6 feature items are displayed in a 3-column x 2-row grid
+- **AND** each feature has an icon, title, and description
+
+#### Scenario: Client logos carousel
+
+- **GIVEN** the page loads
+- **THEN** a horizontal client logo carousel is displayed
+
+#### Scenario: Footer
+
+- **GIVEN** the page loads
+- **THEN** the footer has 4 columns: About Us, Newsletter, Instagram Feed, Follow Us
+- **AND** the newsletter column has an email input and subscribe button
+- **AND** the Instagram feed shows 8 thumbnail images
+- **AND** the footer bottom shows copyright text
+- **AND** the footer links to https://www.componentdock.com/ as "Component Dock"
+
+#### Scenario: Design tokens
+
+- **GIVEN** the page loads
+- **THEN** brand accent color is #f5204b (crimson red)
+- **AND** body font is Roboto sans-serif
+- **AND** buttons use brand color background with white text
+- **AND** section backgrounds alternate between white and #f9f9ff
+- **AND** the footer background is #04091e (dark navy)
 
 ## Verification checklist
 

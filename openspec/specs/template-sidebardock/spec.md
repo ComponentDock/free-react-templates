@@ -46,80 +46,84 @@ Extracted from the screenshot (preview was unreachable):
    - Article grid: 2 columns of post cards
    - Each card: thumbnail image (circular or rounded), post title, date
 
-## Gherkin scenarios
+## Requirements
 
 ### Sidebar
 
-```gherkin
 Feature: Sidebar component
 
-  Scenario: Sidebar displays author portrait with gradient overlay
-    Given the sidebar is visible
-    Then the author portrait image is displayed
-    And a blue-to-violet gradient overlay covers the portrait
+#### Scenario: Sidebar displays author portrait with gradient overlay
 
-  Scenario: Sidebar displays site title
-    Given the sidebar is visible
-    Then the title "Journal" is displayed in a large serif font
-    And the title text is white
+- **GIVEN** the sidebar is visible
+- **THEN** the author portrait image is displayed
+- **AND** a blue-to-violet gradient overlay covers the portrait
 
-  Scenario: Sidebar displays tagline
-    Given the sidebar is visible
-    Then a tagline paragraph is displayed below the title
-    And the tagline text is white
+#### Scenario: Sidebar displays site title
 
-  Scenario: Sidebar displays navigation links
-    Given the sidebar is visible
-    Then navigation links for "Latest", "Projects", and "About" are shown
-    And the link text is white
+- **GIVEN** the sidebar is visible
+- **THEN** the title "Journal" is displayed in a large serif font
+- **AND** the title text is white
 
-  Scenario: Sidebar displays social icons
-    Given the sidebar is visible
-    Then 5 social icons are displayed in a horizontal row
-    And each icon is a circular button with semi-transparent white background
-    And the icons represent Facebook, Twitter, Instagram, Dribbble, and LinkedIn
-```
+#### Scenario: Sidebar displays tagline
+
+- **GIVEN** the sidebar is visible
+- **THEN** a tagline paragraph is displayed below the title
+- **AND** the tagline text is white
+
+#### Scenario: Sidebar displays navigation links
+
+- **GIVEN** the sidebar is visible
+- **THEN** navigation links for "Latest", "Projects", and "About" are shown
+- **AND** the link text is white
+
+#### Scenario: Sidebar displays social icons
+
+- **GIVEN** the sidebar is visible
+- **THEN** 5 social icons are displayed in a horizontal row
+- **AND** each icon is a circular button with semi-transparent white background
+- **AND** the icons represent Facebook, Twitter, Instagram, Dribbble, and LinkedIn
 
 ### Content area
 
-```gherkin
 Feature: Content area
 
-  Scenario: Toggle button controls sidebar visibility
-    Given the sidebar is visible
-    When the user clicks the toggle button (X)
-    Then the sidebar slides out of view
-    When the user clicks the toggle button again
-    Then the sidebar slides back into view
+#### Scenario: Toggle button controls sidebar visibility
 
-  Scenario: Article grid displays post cards in 2 columns
-    Given the content area is visible
-    Then post cards are arranged in a 2-column grid
-    And each card contains a thumbnail image
-    And each card contains a post title
-    And each card contains a posted date
+- **GIVEN** the sidebar is visible
+- **WHEN** the user clicks the toggle button (X)
+- **THEN** the sidebar slides out of view
+- **WHEN** the user clicks the toggle button again
+- **THEN** the sidebar slides back into view
 
-  Scenario: Post cards display correct content
-    Given the content area is visible
-    Then each card title is displayed in dark text
-    And each card date is displayed in gray text
-    And each card date reads "Posted: [date]"
-```
+#### Scenario: Article grid displays post cards in 2 columns
+
+- **GIVEN** the content area is visible
+- **THEN** post cards are arranged in a 2-column grid
+- **AND** each card contains a thumbnail image
+- **AND** each card contains a post title
+- **AND** each card contains a posted date
+
+#### Scenario: Post cards display correct content
+
+- **GIVEN** the content area is visible
+- **THEN** each card title is displayed in dark text
+- **AND** each card date is displayed in gray text
+- **AND** each card date reads "Posted: [date]"
 
 ### Responsive behavior
 
-```gherkin
 Feature: Responsive layout
 
-  Scenario: Sidebar is full width on mobile
-    Given the viewport is less than 768px wide
-    Then the sidebar occupies the full width
-    And the content area is hidden or below the sidebar
+#### Scenario: Sidebar is full width on mobile
 
-  Scenario: Content grid collapses to single column on small screens
-    Given the viewport is less than 768px wide
-    Then the article grid shows 1 column instead of 2
-```
+- **GIVEN** the viewport is less than 768px wide
+- **THEN** the sidebar occupies the full width
+- **AND** the content area is hidden or below the sidebar
+
+#### Scenario: Content grid collapses to single column on small screens
+
+- **GIVEN** the viewport is less than 768px wide
+- **THEN** the article grid shows 1 column instead of 2
 
 ## Verification checklist
 

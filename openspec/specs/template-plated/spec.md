@@ -27,37 +27,43 @@
 6. **Testimonials Section ("What our customer sayes"):** Customer reviews slider / carousel with avatars, quotes, and navigation arrows.
 7. **Footer ("What our customer says" / footer wrapper):** 4-column layout (Brand bio + social links, Quick Links, Popular Cakes / Specialties, Contact Us with address, phone, email, and mandatory Component Dock attribution footer).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Plated Restaurant Template Landing Page
 
-Scenario: User views the Hero section and main CTAs
-Given the user navigates to the Plated home page
-When the Hero section is displayed
-Then they should see the heading "Meet, Eat & Enjoy the true test"
-And they should see "Our Menu" and "Watch Video" action buttons
+#### Scenario: User views the Hero section and main CTAs
 
-Scenario: User explores feature categories
-Given the user scrolls to the features section
-When the feature cards load
-Then they should see "Healthy Meal", "Fast Food", and "Delicious Coffee" categories with descriptive text
+- **GIVEN** the user navigates to the Plated home page
+- **WHEN** the Hero section is displayed
+- **THEN** they should see the heading "Meet, Eat & Enjoy the true test"
+- **AND** they should see "Our Menu" and "Watch Video" action buttons
 
-Scenario: User filters popular dishes by category
-Given the user views the Popular Dishes menu section
-When they click on the "Breakfast" or "Lunches" tab
-Then the corresponding dish items should be displayed with "Order Now" actions
+#### Scenario: User explores feature categories
 
-Scenario: User submits a table reservation request
-Given the user scrolls to the "Book a table" section
-When they fill in guest count, date, phone number, and message
-And click "Send Request"
-Then a success confirmation message should appear
+- **GIVEN** the user scrolls to the features section
+- **WHEN** the feature cards load
+- **THEN** they should see "Healthy Meal", "Fast Food", and "Delicious Coffee" categories with descriptive text
 
-Scenario: User views customer testimonials
-Given the user views the testimonials section
-Then they should see customer review quotes and navigation controls
+#### Scenario: User filters popular dishes by category
 
-Scenario: User interacts with the footer and Component Dock attribution
-Given the user scrolls to the bottom of the page
-When the footer renders
-Then it should display quick links, contact info, and a link to https://www.componentdock.com/
+- **GIVEN** the user views the Popular Dishes menu section
+- **WHEN** they click on the "Breakfast" or "Lunches" tab
+- **THEN** the corresponding dish items should be displayed with "Order Now" actions
+
+#### Scenario: User submits a table reservation request
+
+- **GIVEN** the user scrolls to the "Book a table" section
+- **WHEN** they fill in guest count, date, phone number, and message
+- **AND** click "Send Request"
+- **THEN** a success confirmation message should appear
+
+#### Scenario: User views customer testimonials
+
+- **GIVEN** the user views the testimonials section
+- **THEN** they should see customer review quotes and navigation controls
+
+#### Scenario: User interacts with the footer and Component Dock attribution
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it should display quick links, contact info, and a link to https://www.componentdock.com/

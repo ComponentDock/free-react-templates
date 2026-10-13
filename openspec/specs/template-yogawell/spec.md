@@ -43,101 +43,126 @@ Extracted from the live preview's `css/style.css`:
 8. **Get In Touch** — Contact form (Name, Phone, Email, Message) alongside Contact Details (address, phone, email)
 9. **Footer** — Multi-column: About Us blurb, Quick Links, Newsletter subscription form, Follow Us social links, copyright
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Yogawell template behaviour
+
 Feature: Yogawell — Yoga studio website template
 
-  Background:
-    Given the user opens "https://yogawell.free.componentdock.com"
+Background:
+- **GIVEN** the user opens "https://yogawell.free.componentdock.com"
 
-  # --- Navbar ---
-  Scenario: Navbar displays logo and navigation links
-    Then the navbar shows the logo "Yogawell"
-    And navigation links include "Home", "Classes", "Team", "Pricing"
-    And the navbar becomes sticky on scroll
+**--- Navbar ---**
 
-  Scenario: Mobile hamburger menu
-    When the viewport is narrow (< 768px)
-    Then a hamburger menu icon is visible
-    When the user taps the hamburger icon
-    Then the mobile navigation menu opens
+#### Scenario: Navbar displays logo and navigation links
 
-  # --- Hero ---
-  Scenario: Hero banner renders correctly
-    Then the hero section displays heading "A Yoga Studio"
-    And a descriptive paragraph is shown below the heading
-    And a "Watch the video" CTA button is visible
-    And the hero has a dark overlay on a background image
+- **THEN** the navbar shows the logo "Yogawell"
+- **AND** navigation links include "Home", "Classes", "Team", "Pricing"
+- **AND** the navbar becomes sticky on scroll
 
-  # --- Featured Classes ---
-  Scenario: Featured classes carousel
-    Then 4 yoga class cards are displayed
-    And each card shows a class image, name, and price
-    And previous/next navigation arrows are available
-    When the user clicks next
-    Then the carousel advances to the next set of cards
+#### Scenario: Mobile hamburger menu
 
-  Scenario: Class cards contain correct data
-    Then class "Ashtanga Foundations" shows price "$29.99"
-    And class "Surya Vinyasa" shows price "$32.99"
-    And class "Chandra Vinyasa" shows price "$22.99"
-    And class "Yinyasa" shows price "$34.99"
+- **WHEN** the viewport is narrow (< 768px)
+- **THEN** a hamburger menu icon is visible
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile navigation menu opens
 
-  # --- Schedule ---
-  Scenario: Schedule section lists upcoming classes
-    Then the schedule shows 4 class entries
-    And each entry has a class name, description, time, and date
-    And each entry has a "Join from $15" call-to-action
+**--- Hero ---**
 
-  Scenario: Schedule classes have correct times
-    Then all schedule entries show time "5:30 PM"
-    And all schedule entries show date "April 22, 2019"
+#### Scenario: Hero banner renders correctly
 
-  # --- About Us ---
-  Scenario: About Us section renders
-    Then the heading "About Us" is displayed
-    And descriptive paragraphs are shown
-    And at least one image is displayed alongside the text
+- **THEN** the hero section displays heading "A Yoga Studio"
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** a "Watch the video" CTA button is visible
+- **AND** the hero has a dark overlay on a background image
 
-  # --- Events ---
-  Scenario: Events section shows event cards
-    Then 2 event cards are displayed
-    And each card has a name, date, description, and "Read More" link
+**--- Featured Classes ---**
 
-  # --- Gallery ---
-  Scenario: Yoga gallery with filter tabs
-    Then a grid of gallery images is displayed
-    And filter tabs include "All", "Classes", "Intern", "Training"
-    When the user clicks a filter tab
-    Then only matching gallery images are shown
+#### Scenario: Featured classes carousel
 
-  # --- Contact ---
-  Scenario: Contact form
-    Then a contact form with fields "Name", "Phone", "Email", "Write Message" is visible
-    And a submit button is present
-    And contact details show address, phone number, and email
+- **THEN** 4 yoga class cards are displayed
+- **AND** each card shows a class image, name, and price
+- **AND** previous/next navigation arrows are available
+- **WHEN** the user clicks next
+- **THEN** the carousel advances to the next set of cards
 
-  # --- Footer ---
-  Scenario: Footer content
-    Then the footer contains "About Us" section with a short blurb
-    And "Quick Links" with navigation links
-    And a newsletter subscription form with "Send" button
-    And "Follow Us" social media links
-    And copyright text with "Component Dock" link to https://www.componentdock.com/
+#### Scenario: Class cards contain correct data
 
-  # --- Responsive ---
-  Scenario: Responsive layout
-    When the viewport width is less than 768px
-    Then the layout switches to single-column stacked sections
-    And the navbar collapses to a hamburger menu
+- **THEN** class "Ashtanga Foundations" shows price "$29.99"
+- **AND** class "Surya Vinyasa" shows price "$32.99"
+- **AND** class "Chandra Vinyasa" shows price "$22.99"
+- **AND** class "Yinyasa" shows price "$34.99"
 
-  # --- Accessibility ---
-  Scenario: Accessibility basics
-    Then all images have alt text
-    And interactive elements are keyboard-focusable
-    And form inputs have associated labels
-```
+**--- Schedule ---**
+
+#### Scenario: Schedule section lists upcoming classes
+
+- **THEN** the schedule shows 4 class entries
+- **AND** each entry has a class name, description, time, and date
+- **AND** each entry has a "Join from $15" call-to-action
+
+#### Scenario: Schedule classes have correct times
+
+- **THEN** all schedule entries show time "5:30 PM"
+- **AND** all schedule entries show date "April 22, 2019"
+
+**--- About Us ---**
+
+#### Scenario: About Us section renders
+
+- **THEN** the heading "About Us" is displayed
+- **AND** descriptive paragraphs are shown
+- **AND** at least one image is displayed alongside the text
+
+**--- Events ---**
+
+#### Scenario: Events section shows event cards
+
+- **THEN** 2 event cards are displayed
+- **AND** each card has a name, date, description, and "Read More" link
+
+**--- Gallery ---**
+
+#### Scenario: Yoga gallery with filter tabs
+
+- **THEN** a grid of gallery images is displayed
+- **AND** filter tabs include "All", "Classes", "Intern", "Training"
+- **WHEN** the user clicks a filter tab
+- **THEN** only matching gallery images are shown
+
+**--- Contact ---**
+
+#### Scenario: Contact form
+
+- **THEN** a contact form with fields "Name", "Phone", "Email", "Write Message" is visible
+- **AND** a submit button is present
+- **AND** contact details show address, phone number, and email
+
+**--- Footer ---**
+
+#### Scenario: Footer content
+
+- **THEN** the footer contains "About Us" section with a short blurb
+- **AND** "Quick Links" with navigation links
+- **AND** a newsletter subscription form with "Send" button
+- **AND** "Follow Us" social media links
+- **AND** copyright text with "Component Dock" link to https://www.componentdock.com/
+
+**--- Responsive ---**
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** the layout switches to single-column stacked sections
+- **AND** the navbar collapses to a hamburger menu
+
+**--- Accessibility ---**
+
+#### Scenario: Accessibility basics
+
+- **THEN** all images have alt text
+- **AND** interactive elements are keyboard-focusable
+- **AND** form inputs have associated labels
 
 ## Verification checklist
 

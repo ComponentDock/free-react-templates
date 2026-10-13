@@ -117,82 +117,95 @@ Extracted from the live preview CSS (`style.css`) and screenshot analysis.
   - Column 4: Newsletter subscribe (email input + button)
 - Footer bottom bar: copyright text, centered
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Buildex template behaviour
+
 Feature: Buildex Construction Landing Page
 
-  Background:
-    Given the Buildex template is loaded in the browser
+Background:
+- **GIVEN** the Buildex template is loaded in the browser
 
-  Scenario: Navbar renders with all navigation links
-    Then the navbar displays the "Buildex" logo
-    And navigation links include "Home", "About", "Services", "Projects", "Testimonials", "Contact"
+#### Scenario: Navbar renders with all navigation links
 
-  Scenario: Navbar is sticky on scroll
-    When the user scrolls past the hero section
-    Then the navbar remains fixed at the top of the viewport
+- **THEN** the navbar displays the "Buildex" logo
+- **AND** navigation links include "Home", "About", "Services", "Projects", "Testimonials", "Contact"
 
-  Scenario: Hero section displays heading and CTA
-    Then the hero section shows "Experienced Construction Solution" heading
-    And an "Our Services" button is visible
-    And the hero background is dark purple
+#### Scenario: Navbar is sticky on scroll
 
-  Scenario: Hero CTA button navigates to services
-    When the user clicks "Our Services"
-    Then the page scrolls to the services section
+- **WHEN** the user scrolls past the hero section
+- **THEN** the navbar remains fixed at the top of the viewport
 
-  Scenario: About section shows split layout
-    Then the about section displays an image on the left
-    And the heading "Complete solution of large projects" on the right
-    And an "Explore Now" link is visible
+#### Scenario: Hero section displays heading and CTA
 
-  Scenario: Services section renders service cards
-    Then the services section has a dark background
-    And a "Services" heading is visible
-    And 4 service cards are displayed in a grid
-    And each service card has an icon, title, and description
+- **THEN** the hero section shows "Experienced Construction Solution" heading
+- **AND** an "Our Services" button is visible
+- **AND** the hero background is dark purple
 
-  Scenario: Projects section renders project cards
-    Then the projects section heading reads "Projects we have Done"
-    And 3 project cards are displayed
-    And each project card shows an image, title, and "View Project" button
-    And an "All Project" link is visible
+#### Scenario: Hero CTA button navigates to services
 
-  Scenario: Testimonials section shows carousel
-    Then the testimonials section displays testimonial cards
-    And each card contains a quote, author name, and role
+- **WHEN** the user clicks "Our Services"
+- **THEN** the page scrolls to the services section
 
-  Scenario: Contact form accepts input
-    Then a "Get Free Quote" heading is visible
-    And a form with name, email, and message fields is displayed
-    And a "Send Message" submit button is visible
+#### Scenario: About section shows split layout
 
-  Scenario: Contact form submission shows success
-    When the user fills in name, email, and message
-    And clicks "Send Message"
-    Then a success confirmation is displayed
+- **THEN** the about section displays an image on the left
+- **AND** the heading "Complete solution of large projects" on the right
+- **AND** an "Explore Now" link is visible
 
-  Scenario: CTA banner displays call to action
-    Then the CTA section shows "Any help needed?"
-    And a "Contact Us" button is visible
+#### Scenario: Services section renders service cards
 
-  Scenario: Footer renders all columns
-    Then the footer displays 4 columns
-    And column 1 has the logo and description
-    And column 2 has navigation links
-    And column 3 has services links
-    And column 4 has a newsletter subscribe form
-    And the footer bottom shows copyright text
-    And the footer links to "https://www.componentdock.com/"
+- **THEN** the services section has a dark background
+- **AND** a "Services" heading is visible
+- **AND** 4 service cards are displayed in a grid
+- **AND** each service card has an icon, title, and description
 
-  Scenario: Mobile responsive layout
-    When the viewport is below 768px width
-    Then the navbar collapses to a hamburger menu
-    And service cards stack vertically
-    And project cards stack vertically
-    And footer columns stack vertically
-```
+#### Scenario: Projects section renders project cards
+
+- **THEN** the projects section heading reads "Projects we have Done"
+- **AND** 3 project cards are displayed
+- **AND** each project card shows an image, title, and "View Project" button
+- **AND** an "All Project" link is visible
+
+#### Scenario: Testimonials section shows carousel
+
+- **THEN** the testimonials section displays testimonial cards
+- **AND** each card contains a quote, author name, and role
+
+#### Scenario: Contact form accepts input
+
+- **THEN** a "Get Free Quote" heading is visible
+- **AND** a form with name, email, and message fields is displayed
+- **AND** a "Send Message" submit button is visible
+
+#### Scenario: Contact form submission shows success
+
+- **WHEN** the user fills in name, email, and message
+- **AND** clicks "Send Message"
+- **THEN** a success confirmation is displayed
+
+#### Scenario: CTA banner displays call to action
+
+- **THEN** the CTA section shows "Any help needed?"
+- **AND** a "Contact Us" button is visible
+
+#### Scenario: Footer renders all columns
+
+- **THEN** the footer displays 4 columns
+- **AND** column 1 has the logo and description
+- **AND** column 2 has navigation links
+- **AND** column 3 has services links
+- **AND** column 4 has a newsletter subscribe form
+- **AND** the footer bottom shows copyright text
+- **AND** the footer links to "https://www.componentdock.com/"
+
+#### Scenario: Mobile responsive layout
+
+- **WHEN** the viewport is below 768px width
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** service cards stack vertically
+- **AND** project cards stack vertically
+- **AND** footer columns stack vertically
 
 ## Verification Checklist
 

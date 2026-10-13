@@ -29,28 +29,30 @@ Recreation of ColorLib **Car Rental** template.
 
 Dark hero banner with golden yellow brand accent. The banner has a full-bleed background image with a dark semi-transparent overlay. A booking form sits on the right side of the hero. Below: white-background feature/service cards, a split about section (image left, text right), a car model carousel with pricing, a bright yellow stats/facts bar, a testimonials/reviews carousel, a dark call-to-action band, light lavender blog cards, and a dark navy footer.
 
-## Gherkin requirements
+## Requirements
 
 ### 1. Navbar
 
-Scenario: Sticky navigation bar renders with logo and links
-  Given the user is on the Revly homepage
-  When the page loads
-  Then a sticky navbar is visible at the top
-  And it contains the logo text "Revly"
-  And navigation links include: Home, About, Cars, Services, Blog, Contact
-  And the active link is visually highlighted
+#### Scenario: Sticky navigation bar renders with logo and links
+
+- **GIVEN** the user is on the Revly homepage
+- **WHEN** the page loads
+- **THEN** a sticky navbar is visible at the top
+- **AND** it contains the logo text "Revly"
+- **AND** navigation links include: Home, About, Cars, Services, Blog, Contact
+- **AND** the active link is visually highlighted
 
 ### 2. Hero / Banner
 
-Scenario: Hero section displays with booking form
-  Given the user is on the Revly homepage
-  When the hero section is visible
-  Then a dark overlay covers the hero background image
-  And a heading reads "The Royal Essence of Journey"
-  And a subheading paragraph is present
-  And a primary CTA button reads "Rent Car Now"
-  And a booking form is displayed with:
+#### Scenario: Hero section displays with booking form
+
+- **GIVEN** the user is on the Revly homepage
+- **WHEN** the hero section is visible
+- **THEN** a dark overlay covers the hero background image
+- **AND** a heading reads "The Royal Essence of Journey"
+- **AND** a subheading paragraph is present
+- **AND** a primary CTA button reads "Rent Car Now"
+- **AND** a booking form is displayed with:
     - Car selection dropdown (e.g. BMW, Ferrari, Toyota)
     - Pickup date picker
     - Dropoff date picker
@@ -60,81 +62,88 @@ Scenario: Hero section displays with booking form
 
 ### 3. Features / Services
 
-Scenario: Six service feature cards are displayed
-  Given the user scrolls to the services section
-  When the feature area is visible
-  Then a heading reads "What Services We Offer"
-  And a subheading "Who are in extremely love with eco friendly system" is shown
-  And 6 service cards are displayed in a 3×2 grid
-  And each card has an icon, title, and description paragraph
+#### Scenario: Six service feature cards are displayed
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the feature area is visible
+- **THEN** a heading reads "What Services We Offer"
+- **AND** a subheading "Who are in extremely love with eco friendly system" is shown
+- **AND** 6 service cards are displayed in a 3×2 grid
+- **AND** each card has an icon, title, and description paragraph
 
 ### 4. About Section
 
-Scenario: Split about section with text and image
-  Given the user scrolls to the about section
-  When the about area is visible
-  Then a heading reads "Globally Connected by Large Network"
-  And a subheading "We are here to listen from you deliver excellence" is shown
-  And two paragraphs of descriptive text are present
-  And a primary button reads "Get Details"
-  And an image occupies the left half
+#### Scenario: Split about section with text and image
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the about area is visible
+- **THEN** a heading reads "Globally Connected by Large Network"
+- **AND** a subheading "We are here to listen from you deliver excellence" is shown
+- **AND** two paragraphs of descriptive text are present
+- **AND** a primary button reads "Get Details"
+- **AND** an image occupies the left half
 
 ### 5. Car Models
 
-Scenario: Car model cards with carousel navigation
-  Given the user scrolls to the car models section
-  When the model area is visible
-  Then a heading reads "Choose Your Desired Car Model"
-  And car cards display with:
+#### Scenario: Car model cards with carousel navigation
+
+- **GIVEN** the user scrolls to the car models section
+- **WHEN** the model area is visible
+- **THEN** a heading reads "Choose Your Desired Car Model"
+- **AND** car cards display with:
     - Car image
     - Car name (e.g. "Audi 3000 msi")
     - Price per day (e.g. "$149 /day")
     - Specs: Capacity, Doors, Air Condition, Transmission, Fuel
-  And a "Book This Car Now" button on each card
-  And carousel dots allow navigation between pages of cars
+- **AND** a "Book This Car Now" button on each card
+- **AND** carousel dots allow navigation between pages of cars
 
 ### 6. Facts / Stats
 
-Scenario: Statistics bar with animated counters
-  Given the user scrolls to the facts section
-  When the facts area is visible
-  Then a yellow (#fab700) background spans the full width
-  And 5 stat counters are displayed:
+#### Scenario: Statistics bar with animated counters
+
+- **GIVEN** the user scrolls to the facts section
+- **WHEN** the facts area is visible
+- **THEN** a yellow (#fab700) background spans the full width
+- **AND** 5 stat counters are displayed:
     - Projects Completed
     - Happy Clients
     - Total Tasks Completed
     - Cups of Coffee Taken
     - In House Professionals
-  And the counter values animate on scroll into view
+- **AND** the counter values animate on scroll into view
 
 ### 7. Reviews / Testimonials
 
-Scenario: Testimonials carousel
-  Given the user scrolls to the reviews section
-  When the reviews area is visible
-  Then a heading reads "Some Features That Made Us Unique"
-  And a subheading "Who are in extremely love with eco friendly system" is shown
-  And testimonial cards are displayed in a carousel
-  And each card has a quote, reviewer name, and role
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the user scrolls to the reviews section
+- **WHEN** the reviews area is visible
+- **THEN** a heading reads "Some Features That Made Us Unique"
+- **AND** a subheading "Who are in extremely love with eco friendly system" is shown
+- **AND** testimonial cards are displayed in a carousel
+- **AND** each card has a quote, reviewer name, and role
 
 ### 8. Call to Action
 
-Scenario: Full-width CTA band with dark overlay
-  Given the user scrolls to the call-to-action section
-  When the CTA area is visible
-  Then a dark overlay covers the background image
-  And a heading reads "Experience Great Support"
-  And a paragraph of supporting text is present
-  And a CTA button reads "Reach Our Support Team"
+#### Scenario: Full-width CTA band with dark overlay
+
+- **GIVEN** the user scrolls to the call-to-action section
+- **WHEN** the CTA area is visible
+- **THEN** a dark overlay covers the background image
+- **AND** a heading reads "Experience Great Support"
+- **AND** a paragraph of supporting text is present
+- **AND** a CTA button reads "Reach Our Support Team"
 
 ### 9. Blog
 
-Scenario: Blog post cards in a grid
-  Given the user scrolls to the blog section
-  When the blog area is visible
-  Then a heading reads "Latest From Our Blog"
-  And 3 blog post cards are displayed
-  And each card shows:
+#### Scenario: Blog post cards in a grid
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the blog area is visible
+- **THEN** a heading reads "Latest From Our Blog"
+- **AND** 3 blog post cards are displayed
+- **AND** each card shows:
     - Post image
     - Date
     - Post title
@@ -143,29 +152,31 @@ Scenario: Blog post cards in a grid
 
 ### 10. Footer
 
-Scenario: Dark footer with columns and newsletter
-  Given the user scrolls to the footer
-  When the footer is visible
-  Then the background is dark navy (#04091e)
-  And three columns are displayed:
+#### Scenario: Dark footer with columns and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** the background is dark navy (#04091e)
+- **AND** three columns are displayed:
     - Quick Links
     - Resources
     - Newsletter signup
-  And a "Follow Us" social links section is present
-  And a copyright notice is shown
-  And a "Component Dock" attribution link is present in the footer
+- **AND** a "Follow Us" social links section is present
+- **AND** a copyright notice is shown
+- **AND** a "Component Dock" attribution link is present in the footer
 
 ### 11. Responsive
 
-Scenario: Mobile layout adapts correctly
-  Given the user views on a mobile viewport (< 768px)
-  When the page loads
-  Then the navbar collapses into a hamburger menu
-  And the booking form stacks vertically
-  And service cards stack into a single column
-  And the about section stacks image above text
-  And car model cards display one per row
-  And blog cards stack vertically
+#### Scenario: Mobile layout adapts correctly
+
+- **GIVEN** the user views on a mobile viewport (< 768px)
+- **WHEN** the page loads
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the booking form stacks vertically
+- **AND** service cards stack into a single column
+- **AND** the about section stacks image above text
+- **AND** car model cards display one per row
+- **AND** blog cards stack vertically
 
 ## Verification checklist
 

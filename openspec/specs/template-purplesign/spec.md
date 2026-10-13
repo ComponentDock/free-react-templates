@@ -50,80 +50,91 @@ template with social sign-in options, built on a vibrant purple background.
    - Divider text: "— Or Sign In With —"
    - Social buttons row: Facebook + Twitter — white pill buttons, side by side
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: PurpleSign — Transparent Login Form
 
-```gherkin
 Feature: PurpleSign login form
-  As a visitor
-  I want to sign in with a clean, modern form
-  So that I can access my account
+As a visitor
+I want to sign in with a clean, modern form
+So that I can access my account
 
-  Background:
-    Given the page is loaded with a purple (#c859ff) full-page background
-    And the font family is "Lato" (Google Fonts)
+Background:
+- **GIVEN** the page is loaded with a purple (#c859ff) full-page background
+- **AND** the font family is "Lato" (Google Fonts)
 
-  Scenario: Page heading renders
-    Then a centered heading "Login #02" is visible in white
+#### Scenario: Page heading renders
 
-  Scenario: Sign In form heading
-    Then a "Sign In" heading is displayed above the form inputs
+- **THEN** a centered heading "Login #02" is visible in white
 
-  Scenario: Username input
-    Given the username input is displayed
-    Then the placeholder text is "Username"
-    And the input has a transparent background
-    And the input has a white bottom border
+#### Scenario: Sign In form heading
 
-  Scenario: Password input
-    Given the password input is displayed
-    Then the placeholder text is "Password"
-    And the input is of type "password"
-    And the input has a transparent background
+- **THEN** a "Sign In" heading is displayed above the form inputs
 
-  Scenario: Submit button styling
-    Then the submit button text is "Sign In"
-    And the button has a yellow (#f6f078) background
-    And the button has black text
-    And the button has a fully rounded pill shape (border-radius 40px)
-    And the button spans the full width of the form
+#### Scenario: Username input
 
-  Scenario: Submit button hover state
-    When the user hovers over the submit button
-    Then the background becomes transparent
-    And the text and border become yellow (#f6f078)
+- **GIVEN** the username input is displayed
+- **THEN** the placeholder text is "Username"
+- **AND** the input has a transparent background
+- **AND** the input has a white bottom border
 
-  Scenario: Remember Me checkbox
-    Then a "Remember Me" checkbox is displayed on the left
-    And the checkbox checkmark is yellow (#f6f078) when checked
+#### Scenario: Password input
 
-  Scenario: Forgot Password link
-    Then a "Forgot Password" link is displayed on the right
-    And the link color is yellow (#f6f078)
+- **GIVEN** the password input is displayed
+- **THEN** the placeholder text is "Password"
+- **AND** the input is of type "password"
+- **AND** the input has a transparent background
 
-  Scenario: Social sign-in divider
-    Then a divider text "Or Sign In With" is displayed below the form
+#### Scenario: Submit button styling
 
-  Scenario: Social sign-in buttons
-    Then Facebook and Twitter social buttons are displayed side by side
-    And each social button has a white background with black text
-    And each social button has a rounded border
+- **THEN** the submit button text is "Sign In"
+- **AND** the button has a yellow (#f6f078) background
+- **AND** the button has black text
+- **AND** the button has a fully rounded pill shape (border-radius 40px)
+- **AND** the button spans the full width of the form
 
-  Scenario: Social button hover
-    When the user hovers over a social button
-    Then the background becomes black (#000)
-    And the text becomes white
+#### Scenario: Submit button hover state
 
-  Scenario: Form validation
-    When the user clicks "Sign In" without filling any fields
-    Then the browser shows native validation messages for required fields
+- **WHEN** the user hovers over the submit button
+- **THEN** the background becomes transparent
+- **AND** the text and border become yellow (#f6f078)
 
-  Scenario: Responsive layout
-    When viewed on mobile (< 768px)
-    Then the form card is centered and fills the available width
-    And the social buttons stack vertically
-```
+#### Scenario: Remember Me checkbox
+
+- **THEN** a "Remember Me" checkbox is displayed on the left
+- **AND** the checkbox checkmark is yellow (#f6f078) when checked
+
+#### Scenario: Forgot Password link
+
+- **THEN** a "Forgot Password" link is displayed on the right
+- **AND** the link color is yellow (#f6f078)
+
+#### Scenario: Social sign-in divider
+
+- **THEN** a divider text "Or Sign In With" is displayed below the form
+
+#### Scenario: Social sign-in buttons
+
+- **THEN** Facebook and Twitter social buttons are displayed side by side
+- **AND** each social button has a white background with black text
+- **AND** each social button has a rounded border
+
+#### Scenario: Social button hover
+
+- **WHEN** the user hovers over a social button
+- **THEN** the background becomes black (#000)
+- **AND** the text becomes white
+
+#### Scenario: Form validation
+
+- **WHEN** the user clicks "Sign In" without filling any fields
+- **THEN** the browser shows native validation messages for required fields
+
+#### Scenario: Responsive layout
+
+- **WHEN** viewed on mobile (< 768px)
+- **THEN** the form card is centered and fills the available width
+- **AND** the social buttons stack vertically
 
 ## Verification Checklist
 

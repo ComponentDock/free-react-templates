@@ -117,19 +117,19 @@ has multiple HTML pages; this recreation focuses on the homepage (index.html).
       Services (list), Newsletter (text + subscribe input)
     - Copyright bar at bottom with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Navbar
 
 The system SHALL render a dark fixed-top navbar with logo, navigation links,
-and a CTA button.
+- **AND** a CTA button
 
 #### Scenario: Navbar renders on desktop
 
 - **GIVEN** the Bitlab app is rendered on desktop (≥992px)
 - **THEN** a dark (#000000) fixed-top navbar SHALL display
 - **AND** a logo "BitLab" SHALL render left with "Bit" in green (#31de79)
-  and "Lab" in white
+- **AND** "Lab" in white
 - **AND** navigation links SHALL render center: Home, Services, Projects,
   About, Testimony, Blog, Contact (white text)
 - **AND** a "Get in touch" green CTA button SHALL render right

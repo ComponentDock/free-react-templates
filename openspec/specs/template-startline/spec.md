@@ -26,7 +26,7 @@ A professional business and SaaS startup landing page featuring hero section wit
 7. **Features Grid**: 6 feature cards with icons (Easy to use, Fast and Secure, Robust and Intuitive), hover borders and icon background transitions.
 8. **Footer**: Multi-column footer (Help, About, Support, Subscribe newsletter form with email input and button, copyright notice linking Component Dock).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: StartLine Startup Landing Page
 
@@ -34,28 +34,28 @@ As a user visiting the StartLine landing page, I want to explore the SaaS featur
 
 #### Scenario: View Navbar and Hero
 
-- Given the page is loaded
-- When I view the header
-- Then I should see the brand "StartLine." and navigation items (Home, Solutions, Plans & Pricing, Why Us, Contact Us)
-- And the hero section should display the headline "A big business starts small" with a "Get started" CTA button and amber image wrapper.
+- **GIVEN** the page is loaded
+- **WHEN** I view the header
+- **THEN** I should see the brand "StartLine." and navigation items (Home, Solutions, Plans & Pricing, Why Us, Contact Us)
+- **AND** the hero section should display the headline "A big business starts small" with a "Get started" CTA button and amber image wrapper
 
 #### Scenario: View Logo Cloud and Section Splits
 
-- Given I scroll down the page
-- When I reach the "As seen on" section and Section 1
-- Then I should see media partner logos and the business value proposition split with bullet items and image wrapper.
+- **GIVEN** I scroll down the page
+- **WHEN** I reach the "As seen on" section and Section 1
+- **THEN** I should see media partner logos and the business value proposition split with bullet items and image wrapper
 
 #### Scenario: View Stats and Features Grid
 
-- Given I continue scrolling
-- When I reach the stats counter and features grid
-- Then I should see review, download, and employee statistics on a dark background followed by 6 interactive feature cards with hover states.
+- **GIVEN** I continue scrolling
+- **WHEN** I reach the stats counter and features grid
+- **THEN** I should see review, download, and employee statistics on a dark background followed by 6 interactive feature cards with hover states
 
 #### Scenario: Newsletter Subscription and Footer Links
 
-- Given I reach the page footer
-- When I check the footer content
-- Then I should see help, about, and support links, a newsletter subscription form, and the required copyright footer linking `https://www.componentdock.com/`.
+- **GIVEN** I reach the page footer
+- **WHEN** I check the footer content
+- **THEN** I should see help, about, and support links, a newsletter subscription form, and the required copyright footer linking `https://www.componentdock.com/`
 
 ## Verification Checklist
 

@@ -38,149 +38,144 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
 | 9   | Newsletter / parallax         | Parallax bg image                | Subscribe form with email + CTA button                         |
 | 10  | Footer (dark)                 | `#212529` dark                   | Company info, Buy/Sell/Have sections, social links, contact    |
 
-## Gherkin scenarios
+## Requirements
 
 ### Hero slider
 
-```gherkin
 Feature: Hero slider with property showcase
 
-  Scenario: Displays property address and price
-    Given the hero slider is loaded
-    Then the property address is visible (e.g. "Florida 5, Pinecrest, FL")
-    And the price is displayed (e.g. "$28,000")
-    And a location pin icon is shown with suburb
+#### Scenario: Displays property address and price
 
-  Scenario: View Details CTA button
-    Given the hero slider is loaded
-    Then a "View Details" button is visible
-    And it is pill-shaped (border-radius 30px)
-    And it uses the primary cyan color (#78d5ef)
+- **GIVEN** the hero slider is loaded
+- **THEN** the property address is visible (e.g. "Florida 5, Pinecrest, FL")
+- **AND** the price is displayed (e.g. "$28,000")
+- **AND** a location pin icon is shown with suburb
 
-  Scenario: Background image with overlay
-    Given the hero slider is loaded
-    Then a full-width background image is shown
-    And a dark overlay (20% opacity) is applied
-```
+#### Scenario: View Details CTA button
+
+- **GIVEN** the hero slider is loaded
+- **THEN** a "View Details" button is visible
+- **AND** it is pill-shaped (border-radius 30px)
+- **AND** it uses the primary cyan color (#78d5ef)
+
+#### Scenario: Background image with overlay
+
+- **GIVEN** the hero slider is loaded
+- **THEN** a full-width background image is shown
+- **AND** a dark overlay (20% opacity) is applied
 
 ### Search bar
 
-```gherkin
 Feature: Property search form
 
-  Scenario: Search fields are displayed
-    Given the search bar section is loaded
-    Then fields are visible: Keyword, City/Locality, Type, Beds, Bath, Price, Area
+#### Scenario: Search fields are displayed
 
-  Scenario: Search button triggers filter
-    Given the user has entered search criteria
-    When they click the Search button
-    Then the properties section filters accordingly
-```
+- **GIVEN** the search bar section is loaded
+- **THEN** fields are visible: Keyword, City/Locality, Type, Beds, Bath, Price, Area
+
+#### Scenario: Search button triggers filter
+
+- **GIVEN** the user has entered search criteria
+- **WHEN** they click the Search button
+- **THEN** the properties section filters accordingly
 
 ### Feature cards
 
-```gherkin
 Feature: Feature highlights section
 
-  Scenario: Four feature cards are shown
-    Given the features section is loaded on a light background
-    Then 4 cards are visible with icons
-    And the card titles are: Find Places, Agents Experience, Buy & Rent, Making Money
-    And each card has descriptive text beneath the title
-```
+#### Scenario: Four feature cards are shown
+
+- **GIVEN** the features section is loaded on a light background
+- **THEN** 4 cards are visible with icons
+- **AND** the card titles are: Find Places, Agents Experience, Buy & Rent, Making Money
+- **AND** each card has descriptive text beneath the title
 
 ### Recent properties
 
-```gherkin
 Feature: Recent property listings
 
-  Scenario: Property grid is displayed
-    Given the Recent Properties section loads
-    Then 4 property cards are shown in a responsive grid
-    And each card shows: image, price, address, beds count, bath count
+#### Scenario: Property grid is displayed
 
-  Scenario: Property cards have hover interaction
-    Given a property card is visible
-    When the user hovers over it
-    Then the card shows a subtle elevation or overlay effect
-```
+- **GIVEN** the Recent Properties section loads
+- **THEN** 4 property cards are shown in a responsive grid
+- **AND** each card shows: image, price, address, beds count, bath count
+
+#### Scenario: Property cards have hover interaction
+
+- **GIVEN** a property card is visible
+- **WHEN** the user hovers over it
+- **THEN** the card shows a subtle elevation or overlay effect
 
 ### Most recommended
 
-```gherkin
 Feature: Most recommended properties
 
-  Scenario: Recommended section matches Recent layout
-    Given the Most Recommended section loads on a light background
-    Then 4 property cards are shown in the same grid layout
-    And the section heading reads "Most Recommended Properties"
-```
+#### Scenario: Recommended section matches Recent layout
+
+- **GIVEN** the Most Recommended section loads on a light background
+- **THEN** 4 property cards are shown in the same grid layout
+- **AND** the section heading reads "Most Recommended Properties"
 
 ### Counter / fun facts
 
-```gherkin
 Feature: Statistics counters
 
-  Scenario: Four counters are displayed
-    Given the counter section loads with a background image
-    Then 4 stat blocks are visible: Happy Customers, Properties, Agents, Awards
-    And all numbers and labels are white text
-    And numbers animate (count up) on scroll into view
-```
+#### Scenario: Four counters are displayed
+
+- **GIVEN** the counter section loads with a background image
+- **THEN** 4 stat blocks are visible: Happy Customers, Properties, Agents, Awards
+- **AND** all numbers and labels are white text
+- **AND** numbers animate (count up) on scroll into view
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonial carousel
 
-  Scenario: Testimonials carousel is functional
-    Given the testimonials section loads on a light background
-    Then a carousel of testimonial cards is visible
-    And each card has an avatar, name, and quote text
-    And the carousel auto-plays or allows manual navigation
-```
+#### Scenario: Testimonials carousel is functional
+
+- **GIVEN** the testimonials section loads on a light background
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card has an avatar, name, and quote text
+- **AND** the carousel auto-plays or allows manual navigation
 
 ### Recent blog
 
-```gherkin
 Feature: Blog entries
 
-  Scenario: Blog cards are displayed
-    Given the Recent Blog section loads
-    Then 4 blog entry cards are shown
-    And each card shows: image, date, title, and excerpt
-```
+#### Scenario: Blog cards are displayed
+
+- **GIVEN** the Recent Blog section loads
+- **THEN** 4 blog entry cards are shown
+- **AND** each card shows: image, date, title, and excerpt
 
 ### Newsletter / parallax
 
-```gherkin
 Feature: Newsletter subscription
 
-  Scenario: Parallax newsletter section
-    Given the newsletter section loads
-    Then a parallax background image is shown
-    And a heading "Subscribe to our Newsletter" is visible
-    And an email input field + subscribe button are present
-```
+#### Scenario: Parallax newsletter section
+
+- **GIVEN** the newsletter section loads
+- **THEN** a parallax background image is shown
+- **AND** a heading "Subscribe to our Newsletter" is visible
+- **AND** an email input field + subscribe button are present
 
 ### Footer
 
-```gherkin
 Feature: Site footer
 
-  Scenario: Footer layout
-    Given the footer renders
-    Then it has a dark background (#212529)
-    And columns show: company info, Buy, Sell, Have a Question sections
-    And social media icon links are present
-    And a Component Dock link is in the footer
+#### Scenario: Footer layout
 
-  Scenario: Component Dock branding
-    Given the footer is rendered
-    Then a link to https://www.componentdock.com/ is present
-    And it is labeled "Component Dock"
-```
+- **GIVEN** the footer renders
+- **THEN** it has a dark background (#212529)
+- **AND** columns show: company info, Buy, Sell, Have a Question sections
+- **AND** social media icon links are present
+- **AND** a Component Dock link is in the footer
+
+#### Scenario: Component Dock branding
+
+- **GIVEN** the footer is rendered
+- **THEN** a link to https://www.componentdock.com/ is present
+- **AND** it is labeled "Component Dock"
 
 ## Verification checklist
 

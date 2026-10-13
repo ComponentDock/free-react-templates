@@ -34,97 +34,83 @@ The template uses a **sidebar + content** layout:
 - **Sidebar (left, 2-col / ~16.67%):** Fixed dark panel with logo, nav menu, filter menu, social icons, copyright
 - **Content area (right, 10-col / ~83.33%):** Scrollable content
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Sidebar Navigation
+### Feature: Pupa template behaviour
 
-```gherkin
-Given the user visits the page
-Then a fixed sidebar is visible on the left
-And the sidebar has a dark background (#18181c)
-And the sidebar contains a logo at the top
-And the sidebar contains navigation links: Home, About, Services, Portfolio, Blog, Contact
-And the sidebar contains a filter menu with options: All, Branding, Design, Photography, Architecture
-And the sidebar contains social media icons (Pinterest, Facebook, Twitter, Dribbble)
-And the sidebar contains a copyright line at the bottom
-And clicking a nav link scrolls to or navigates to the corresponding section
-```
+#### Scenario: Sidebar Navigation
 
-### Scenario: Portfolio Grid (Home)
+- **GIVEN** the user visits the page
+- **THEN** a fixed sidebar is visible on the left
+- **AND** the sidebar has a dark background (#18181c)
+- **AND** the sidebar contains a logo at the top
+- **AND** the sidebar contains navigation links: Home, About, Services, Portfolio, Blog, Contact
+- **AND** the sidebar contains a filter menu with options: All, Branding, Design, Photography, Architecture
+- **AND** the sidebar contains social media icons (Pinterest, Facebook, Twitter, Dribbble)
+- **AND** the sidebar contains a copyright line at the bottom
+- **AND** clicking a nav link scrolls to or navigates to the corresponding section
 
-```gherkin
-Given the user is on the home/portfolio section
-Then a masonry grid of portfolio items is displayed
-And each portfolio item shows a placeholder image
-And hovering over a portfolio item reveals an overlay with a plus icon and project name
-And portfolio items are filterable by category (branding, design, photography, architecture)
-And clicking "All" shows all items
-And clicking a category shows only items in that category
-And the grid uses a 4-column layout on large screens
-And the grid uses a 2-column layout on medium screens
-And the grid uses a 1-column layout on small screens
-```
+#### Scenario: Portfolio Grid (Home)
 
-### Scenario: About Section
+- **GIVEN** the user is on the home/portfolio section
+- **THEN** a masonry grid of portfolio items is displayed
+- **AND** each portfolio item shows a placeholder image
+- **AND** hovering over a portfolio item reveals an overlay with a plus icon and project name
+- **AND** portfolio items are filterable by category (branding, design, photography, architecture)
+- **AND** clicking "All" shows all items
+- **AND** clicking a category shows only items in that category
+- **AND** the grid uses a 4-column layout on large screens
+- **AND** the grid uses a 2-column layout on medium screens
+- **AND** the grid uses a 1-column layout on small screens
 
-```gherkin
-Given the user navigates to the About section
-Then a split layout is displayed (image left, content right)
-And the heading reads "Just a few words about us"
-And a description paragraph is present below the heading
-And three counter boxes are displayed: Years of experience (12), Happy clients (257), Projects completed (192)
-And a testimonial carousel is displayed below the counters
-And the carousel shows testimonial cards with author name, role, and quote text
-```
+#### Scenario: About Section
 
-### Scenario: Services Section
+- **GIVEN** the user navigates to the About section
+- **THEN** a split layout is displayed (image left, content right)
+- **AND** the heading reads "Just a few words about us"
+- **AND** a description paragraph is present below the heading
+- **AND** three counter boxes are displayed: Years of experience (12), Happy clients (257), Projects completed (192)
+- **AND** a testimonial carousel is displayed below the counters
+- **AND** the carousel shows testimonial cards with author name, role, and quote text
 
-```gherkin
-Given the user navigates to the Services section
-Then a split layout is displayed (image left, content right)
-And six service items are listed: Typography Courses, Mix and Match, Architecture Plans, Brand Identity, Interior Design, Collateral Design
-And each service item has a title and description paragraph
-```
+#### Scenario: Services Section
 
-### Scenario: Blog Section
+- **GIVEN** the user navigates to the Services section
+- **THEN** a split layout is displayed (image left, content right)
+- **AND** six service items are listed: Typography Courses, Mix and Match, Architecture Plans, Brand Identity, Interior Design, Collateral Design
+- **AND** each service item has a title and description paragraph
 
-```gherkin
-Given the user navigates to the Blog section
-Then blog post cards are displayed in a main content area
-And each blog card has a date badge, title, and excerpt text
-And a sidebar is displayed with widgets: Search, Categories, Instagram, Tags
-```
+#### Scenario: Blog Section
 
-### Scenario: Contact Section
+- **GIVEN** the user navigates to the Blog section
+- **THEN** blog post cards are displayed in a main content area
+- **AND** each blog card has a date badge, title, and excerpt text
+- **AND** a sidebar is displayed with widgets: Search, Categories, Instagram, Tags
 
-```gherkin
-Given the user navigates to the Contact section
-Then a split layout is displayed (image left, form right)
-And the contact form contains fields: Name, Email, Subject, Message
-And a "Send" button is present
-And the form fields have placeholder text
-```
+#### Scenario: Contact Section
 
-### Scenario: Mobile Responsiveness
+- **GIVEN** the user navigates to the Contact section
+- **THEN** a split layout is displayed (image left, form right)
+- **AND** the contact form contains fields: Name, Email, Subject, Message
+- **AND** a "Send" button is present
+- **AND** the form fields have placeholder text
 
-```gherkin
-Given the user views the page on a mobile device
-Then the sidebar collapses or becomes a hamburger menu
-And the portfolio grid switches to a single-column layout
-And the split layouts stack vertically
-And all text remains readable
-```
+#### Scenario: Mobile Responsiveness
 
-### Scenario: Visual Fidelity
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the sidebar collapses or becomes a hamburger menu
+- **AND** the portfolio grid switches to a single-column layout
+- **AND** the split layouts stack vertically
+- **AND** all text remains readable
 
-```gherkin
-Given the page is rendered
-Then all fonts use Montserrat
-And the brand color #99896e is used for accents and buttons
-And buttons have pill shape (border-radius: 50px)
-And section titles have a short underline accent (2px, #99896e)
-And the overall aesthetic is clean, minimal, portfolio-focused
-```
+#### Scenario: Visual Fidelity
+
+- **GIVEN** the page is rendered
+- **THEN** all fonts use Montserrat
+- **AND** the brand color #99896e is used for accents and buttons
+- **AND** buttons have pill shape (border-radius: 50px)
+- **AND** section titles have a short underline accent (2px, #99896e)
+- **AND** the overall aesthetic is clean, minimal, portfolio-focused
 
 ## Verification Checklist
 

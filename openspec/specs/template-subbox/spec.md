@@ -51,62 +51,70 @@ Extracted from the live preview CSS (style.css + bootstrap.min.css).
 - **Color palette:** Soft pink background, black headings, gray body text,
   blue primary accent, gray secondary accent.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: SubBox template behaviour
+
 Feature: SubBox — subscription form modal
 
-  Background:
-    Given the page loads at the root URL
-    And the modal is hidden by default
+Background:
+- **GIVEN** the page loads at the root URL
+- **AND** the modal is hidden by default
 
-  Scenario: Launch button opens modal
-    Given the user sees the "Launch modal" button
-    When the user clicks the "Launch modal" button
-    Then the modal dialog appears centered on screen
-    And the modal has a soft pink (#f9eaf2) background
-    And the modal shows a logo, heading, description, email form, and two buttons
+#### Scenario: Launch button opens modal
 
-  Scenario: Close modal via close button
-    Given the modal is open
-    When the user clicks the close (X) button
-    Then the modal closes
+- **GIVEN** the user sees the "Launch modal" button
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** the modal dialog appears centered on screen
+- **AND** the modal has a soft pink (#f9eaf2) background
+- **AND** the modal shows a logo, heading, description, email form, and two buttons
 
-  Scenario: Close modal via "No, thanks" button
-    Given the modal is open
-    When the user clicks the "No, thanks" button
-    Then the modal closes
+#### Scenario: Close modal via close button
 
-  Scenario: Submit email form
-    Given the modal is open
-    When the user types a valid email in the email input
-    And the user clicks the "Subscribe" button
-    Then the form submits (action="#")
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close (X) button
+- **THEN** the modal closes
 
-  Scenario: Empty email validation
-    Given the modal is open
-    When the user clicks "Subscribe" without entering an email
-    Then the browser's native email validation prevents submission
+#### Scenario: Close modal via "No, thanks" button
 
-  Scenario: Keyboard accessibility
-    Given the modal is open
-    When the user presses Escape
-    Then the modal closes
-    And focus returns to the launch button
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "No, thanks" button
+- **THEN** the modal closes
 
-  Scenario: Modal is responsive
-    Given the modal is open on a mobile viewport
-    Then the email input is full-width
-    And the two buttons stack or remain side-by-side as in the original
+#### Scenario: Submit email form
 
-  Scenario: Visual design match
-    Given the modal is open
-    Then the background is soft pink (#f9eaf2)
-    And headings are black (#000)
-    And paragraphs are gray (#777)
-    And the logo is centered above the heading
-    And the modal has 7px border-radius and heavy drop shadow
-```
+- **GIVEN** the modal is open
+- **WHEN** the user types a valid email in the email input
+- **AND** the user clicks the "Subscribe" button
+- **THEN** the form submits (action="#")
+
+#### Scenario: Empty email validation
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks "Subscribe" without entering an email
+- **THEN** the browser's native email validation prevents submission
+
+#### Scenario: Keyboard accessibility
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Escape
+- **THEN** the modal closes
+- **AND** focus returns to the launch button
+
+#### Scenario: Modal is responsive
+
+- **GIVEN** the modal is open on a mobile viewport
+- **THEN** the email input is full-width
+- **AND** the two buttons stack or remain side-by-side as in the original
+
+#### Scenario: Visual design match
+
+- **GIVEN** the modal is open
+- **THEN** the background is soft pink (#f9eaf2)
+- **AND** headings are black (#000)
+- **AND** paragraphs are gray (#777)
+- **AND** the logo is centered above the heading
+- **AND** the modal has 7px border-radius and heavy drop shadow
 
 ## Component breakdown
 

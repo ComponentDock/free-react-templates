@@ -58,82 +58,93 @@ Extracted from the live preview CSS (`https://colorlib.com/etc/searchf/colorlib-
 - **Button hover:** Background transitions to `#eb6f00` (0.4s ease)
 - **Tab hover:** Color transitions to `#ff8300` (0.4s ease)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-tab Travel Search Form
 
-  Scenario: Page renders with Hotels tab active by default
-    Given the user opens the travel search page
-    Then a centered white card is displayed on a light mint background
-    And three tabs are visible: "HOTELS", "CAR", "FLIGHT"
-    And the "HOTELS" tab is highlighted in orange
-    And the Hotels form is visible
-    And the Car and Flight forms are hidden
+#### Scenario: Page renders with Hotels tab active by default
 
-  Scenario: Hotels tab form fields
-    Given the Hotels tab is active
-    Then the form shows a "Where:" text input with placeholder "City, region or specific hotel"
-    And a "Check-In:" date input is displayed
-    And a "Check-Out:" date input is displayed
-    And a "Travellers:" field shows "1 Adult, 0 Children, 1 Room" with a chevron icon
-    And two checkboxes are shown: "Add a flight" (checked) and "Add a car" (unchecked)
-    And an orange "SEARCH" button spans the full width
+- **GIVEN** the user opens the travel search page
+- **THEN** a centered white card is displayed on a light mint background
+- **AND** three tabs are visible: "HOTELS", "CAR", "FLIGHT"
+- **AND** the "HOTELS" tab is highlighted in orange
+- **AND** the Hotels form is visible
+- **AND** the Car and Flight forms are hidden
 
-  Scenario: Switch to Car tab
-    Given the user clicks the "CAR" tab
-    Then the Hotels form is hidden
-    And the Car form is displayed with fields: "Location:", "Driver Age:" dropdown, "Car Group:" dropdown
-    And "Pick Up:" date and "Time:" dropdown, "Drop Off:" date and "Time:" dropdown
-    And a "SEARCH" button is shown
+#### Scenario: Hotels tab form fields
 
-  Scenario: Switch to Flight tab
-    Given the user clicks the "FLIGHT" tab
-    Then the Hotels and Car forms are hidden
-    And the Flight form is displayed with "Origin:" and "Destination:" text inputs
-    And "Departing:" and "Returning:" date inputs
-    And checkboxes: "First Class", "Business", "Economy" (Economy checked)
-    And a "SEARCH" button is shown
+- **GIVEN** the Hotels tab is active
+- **THEN** the form shows a "Where:" text input with placeholder "City, region or specific hotel"
+- **AND** a "Check-In:" date input is displayed
+- **AND** a "Check-Out:" date input is displayed
+- **AND** a "Travellers:" field shows "1 Adult, 0 Children, 1 Room" with a chevron icon
+- **AND** two checkboxes are shown: "Add a flight" (checked) and "Add a car" (unchecked)
+- **AND** an orange "SEARCH" button spans the full width
 
-  Scenario: Traveller dropdown interaction
-    Given the Hotels tab is active
-    When the user clicks the "Travellers:" field
-    Then a dropdown appears showing "Room 1" with "Adults" and "Children" counters
-    And +/- buttons are shown for each counter
-    And an "Add room" link appears at the bottom
+#### Scenario: Switch to Car tab
 
-  Scenario: Increment traveller count
-    Given the traveller dropdown is open
-    When the user clicks the "+" button next to "Adults"
-    Then the adult count increments from 1 to 2
-    And the summary text updates to "2 Adult, 0 Children, 1 Room"
+- **GIVEN** the user clicks the "CAR" tab
+- **THEN** the Hotels form is hidden
+- **AND** the Car form is displayed with fields: "Location:", "Driver Age:" dropdown, "Car Group:" dropdown
+- **AND** "Pick Up:" date and "Time:" dropdown, "Drop Off:" date and "Time:" dropdown
+- **AND** a "SEARCH" button is shown
 
-  Scenario: Decrement traveller count
-    Given the traveller dropdown is open with 2 adults
-    When the user clicks the "-" button next to "Adults"
-    Then the adult count decrements to 1
-    And the minimum count is 0 (cannot go below)
+#### Scenario: Switch to Flight tab
 
-  Scenario: Add room
-    Given the traveller dropdown is open
-    When the user clicks "Add room"
-    Then a "Room 2" section appears below Room 1
-    And Room 2 has its own Adults and Children counters
+- **GIVEN** the user clicks the "FLIGHT" tab
+- **THEN** the Hotels and Car forms are hidden
+- **AND** the Flight form is displayed with "Origin:" and "Destination:" text inputs
+- **AND** "Departing:" and "Returning:" date inputs
+- **AND** checkboxes: "First Class", "Business", "Economy" (Economy checked)
+- **AND** a "SEARCH" button is shown
 
-  Scenario: Responsive layout
-    Given the user views the form on a mobile device (width < 768px)
-    Then the card padding reduces
-    And two-column date fields stack vertically
-    And tab items stack vertically instead of floating
+#### Scenario: Traveller dropdown interaction
 
-  Scenario: Submit button hover
-    Given the form is visible
-    When the user hovers over the "SEARCH" button
-    Then the button background transitions from #ff8300 to #eb6f00
+- **GIVEN** the Hotels tab is active
+- **WHEN** the user clicks the "Travellers:" field
+- **THEN** a dropdown appears showing "Room 1" with "Adults" and "Children" counters
+- **AND** +/- buttons are shown for each counter
+- **AND** an "Add room" link appears at the bottom
 
-  Scenario: Tab hover
-    Given the form is visible
-    When the user hovers over an inactive tab
-    Then the tab text color transitions to orange (#ff8300)
+#### Scenario: Increment traveller count
+
+- **GIVEN** the traveller dropdown is open
+- **WHEN** the user clicks the "+" button next to "Adults"
+- **THEN** the adult count increments from 1 to 2
+- **AND** the summary text updates to "2 Adult, 0 Children, 1 Room"
+
+#### Scenario: Decrement traveller count
+
+- **GIVEN** the traveller dropdown is open with 2 adults
+- **WHEN** the user clicks the "-" button next to "Adults"
+- **THEN** the adult count decrements to 1
+- **AND** the minimum count is 0 (cannot go below)
+
+#### Scenario: Add room
+
+- **GIVEN** the traveller dropdown is open
+- **WHEN** the user clicks "Add room"
+- **THEN** a "Room 2" section appears below Room 1
+- **AND** Room 2 has its own Adults and Children counters
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the form on a mobile device (width < 768px)
+- **THEN** the card padding reduces
+- **AND** two-column date fields stack vertically
+- **AND** tab items stack vertically instead of floating
+
+#### Scenario: Submit button hover
+
+- **GIVEN** the form is visible
+- **WHEN** the user hovers over the "SEARCH" button
+- **THEN** the button background transitions from #ff8300 to #eb6f00
+
+#### Scenario: Tab hover
+
+- **GIVEN** the form is visible
+- **WHEN** the user hovers over an inactive tab
+- **THEN** the tab text color transitions to orange (#ff8300)
 
 ## Verification Checklist
 

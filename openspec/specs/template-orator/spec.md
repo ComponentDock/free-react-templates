@@ -45,113 +45,125 @@ partner logo carousel and social icon circles.
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header / Navigation
 
-  Scenario: Renders sticky navigation bar
-    Given the user loads the page
-    Then a navigation bar is visible at the top
-    And the nav contains links: Home, About, Speakers, Schedule, Blog, Contact
-    And the nav contains a "Ticket" CTA button styled as a pill with brand gradient
+#### Scenario: Renders sticky navigation bar
 
-  Scenario: Speakers dropdown on hover
-    Given the user hovers over the "Speakers" nav link
-    Then a dropdown appears listing speaker names (Emma, Sara, Jayden, Harriet)
+- **GIVEN** the user loads the page
+- **THEN** a navigation bar is visible at the top
+- **AND** the nav contains links: Home, About, Speakers, Schedule, Blog, Contact
+- **AND** the nav contains a "Ticket" CTA button styled as a pill with brand gradient
+
+#### Scenario: Speakers dropdown on hover
+
+- **GIVEN** the user hovers over the "Speakers" nav link
+- **THEN** a dropdown appears listing speaker names (Emma, Sara, Jayden, Harriet)
 
 ### Feature: Hero Section
 
-  Scenario: Displays event headline and CTA
-    Given the user views the hero section
-    Then a date/event info line is visible (uppercase, accent color)
-    And a large headline "Change Your Mind To Become Success" is displayed
-    And a "Buy Ticket" primary button is shown below the headline
-    And a hero illustration/image appears on the right side
+#### Scenario: Displays event headline and CTA
+
+- **GIVEN** the user views the hero section
+- **THEN** a date/event info line is visible (uppercase, accent color)
+- **AND** a large headline "Change Your Mind To Become Success" is displayed
+- **AND** a "Buy Ticket" primary button is shown below the headline
+- **AND** a hero illustration/image appears on the right side
 
 ### Feature: Countdown Timer
 
-  Scenario: Shows event countdown
-    Given the user views the counter section
-    Then a countdown timer displays Days, Hours, Minutes, Seconds
-    And the section has a gradient background (brand gradient)
-    And "Conference Date" label and descriptive text appear on the left
+#### Scenario: Shows event countdown
+
+- **GIVEN** the user views the counter section
+- **THEN** a countdown timer displays Days, Hours, Minutes, Seconds
+- **AND** the section has a gradient background (brand gradient)
+- **AND** "Conference Date" label and descriptive text appear on the left
 
 ### Feature: About Section
 
-  Scenario: Displays conference info with checklist
-    Given the user views the about section
-    Then an image appears on the left half
-    And "About Conference" heading appears on the right half
-    And a paragraph of descriptive text follows
-    And a checklist with 4 items (with accent-colored check icons) is shown
-    And a "Discover Now" link with underline effect is visible
+#### Scenario: Displays conference info with checklist
+
+- **GIVEN** the user views the about section
+- **THEN** an image appears on the left half
+- **AND** "About Conference" heading appears on the right half
+- **AND** a paragraph of descriptive text follows
+- **AND** a checklist with 4 items (with accent-colored check icons) is shown
+- **AND** a "Discover Now" link with underline effect is visible
 
 ### Feature: Team / Speakers Section
 
-  Scenario: Displays speaker cards in a row
-    Given the user views the speakers section
-    Then "Who's Speaking" heading is displayed centered
-    And 10 speaker cards are shown in a horizontal grid (5 per visible row)
-    And each card has a background image of the speaker
-    And each card shows speaker name and role on hover
-    And each card has social media icon links (Facebook, Instagram, Twitter, LinkedIn)
+#### Scenario: Displays speaker cards in a row
+
+- **GIVEN** the user views the speakers section
+- **THEN** "Who's Speaking" heading is displayed centered
+- **AND** 10 speaker cards are shown in a horizontal grid (5 per visible row)
+- **AND** each card has a background image of the speaker
+- **AND** each card shows speaker name and role on hover
+- **AND** each card has social media icon links (Facebook, Instagram, Twitter, LinkedIn)
 
 ### Feature: Schedule Section
 
-  Scenario: Tabbed day schedule
-    Given the user views the schedule section
-    Then "Our Schedule" heading is displayed centered
-    And 5 tabs are shown: Day 1 through Day 5, each with a date
-    And the active tab has a gradient background
-    And each tab shows session cards with: speaker photo, session title, speaker name/email, time, location
-    And 4 sessions are shown per day tab
+#### Scenario: Tabbed day schedule
+
+- **GIVEN** the user views the schedule section
+- **THEN** "Our Schedule" heading is displayed centered
+- **AND** 5 tabs are shown: Day 1 through Day 5, each with a date
+- **AND** the active tab has a gradient background
+- **AND** each tab shows session cards with: speaker photo, session title, speaker name/email, time, location
+- **AND** 4 sessions are shown per day tab
 
 ### Feature: Pricing Section
 
-  Scenario: Three-column pricing cards
-    Given the user views the pricing section
-    Then 3 pricing tier cards are displayed side by side
-    And each card has: tier name, price (with Poppins font), feature list, "Get Ticket" button
-    And the middle card has a "top rated" ribbon badge
-    And the section has a dark background image with overlay
-    And the price text uses the brand gradient
+#### Scenario: Three-column pricing cards
+
+- **GIVEN** the user views the pricing section
+- **THEN** 3 pricing tier cards are displayed side by side
+- **AND** each card has: tier name, price (with Poppins font), feature list, "Get Ticket" button
+- **AND** the middle card has a "top rated" ribbon badge
+- **AND** the section has a dark background image with overlay
+- **AND** the price text uses the brand gradient
 
 ### Feature: Latest Blog Section
 
-  Scenario: Blog cards layout
-    Given the user views the blog section
-    Then "Latest News" heading is displayed centered
-    And 1 large blog card appears on the left (full height)
-    And 2 smaller blog cards appear stacked on the right
-    And each card has: background image, category tag, title, date
-    And the section has a light gray (#f4f6f8) background
+#### Scenario: Blog cards layout
+
+- **GIVEN** the user views the blog section
+- **THEN** "Latest News" heading is displayed centered
+- **AND** 1 large blog card appears on the left (full height)
+- **AND** 2 smaller blog cards appear stacked on the right
+- **AND** each card has: background image, category tag, title, date
+- **AND** the section has a light gray (#f4f6f8) background
 
 ### Feature: Newsletter Section
 
-  Scenario: Newsletter signup form
-    Given the user views the newsletter section
-    Then a newsletter bar with background image is displayed
-    And "Subscribe Newsletter" heading and description appear on the left
-    And an email input field with pill shape is shown
-    And a "Subscribe" button with gradient is shown on the right
+#### Scenario: Newsletter signup form
+
+- **GIVEN** the user views the newsletter section
+- **THEN** a newsletter bar with background image is displayed
+- **AND** "Subscribe Newsletter" heading and description appear on the left
+- **AND** an email input field with pill shape is shown
+- **AND** a "Subscribe" button with gradient is shown on the right
 
 ### Feature: Contact Section
 
-  Scenario: Location and map
-    Given the user views the contact section
-    Then "Location" heading and "Get directions to our event center" text appear
-    And address, phone, email contact details are listed
-    And a Google Maps embed iframe is shown on the right half
+#### Scenario: Location and map
+
+- **GIVEN** the user views the contact section
+- **THEN** "Location" heading and "Get directions to our event center" text appear
+- **AND** address, phone, email contact details are listed
+- **AND** a Google Maps embed iframe is shown on the right half
 
 ### Feature: Footer
 
-  Scenario: Footer layout
-    Given the user views the footer
-    Then a partner logo carousel strip is shown at the top
-    And footer nav links: Home, Speakers, Schedule, Blog, Contact
-    And a copyright line with "Made with ❤ by Component Dock" text
-    And social media icon circles (Facebook, Twitter, LinkedIn, Instagram, YouTube)
-    And the footer has dark background (#171822)
+#### Scenario: Footer layout
+
+- **GIVEN** the user views the footer
+- **THEN** a partner logo carousel strip is shown at the top
+- **AND** footer nav links: Home, Speakers, Schedule, Blog, Contact
+- **AND** a copyright line with "Made with ❤ by Component Dock" text
+- **AND** social media icon circles (Facebook, Twitter, LinkedIn, Instagram, YouTube)
+- **AND** the footer has dark background (#171822)
 
 ---
 

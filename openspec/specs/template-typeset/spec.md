@@ -51,184 +51,196 @@ Recreation of ColorLib **Author** — a personal author/book promotion one-page 
 11. **Contact** — "Contact Me" heading + description. Row of 4 contact info cards (Address, Phone, Email, Website) on light bg. Below: two-column — left = contact form (Name, Email, Subject, Message, Send button), right = map placeholder.
 12. **Footer** — Black bg, 4 columns: About text + social icons (Twitter, Facebook, Instagram), Links list, Services list, Contact info. Copyright line with Component Dock link.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar displays all section links
-  Given the page loads
-  When I view the navigation bar
-  Then I see links for Home, About, Chapter, Reviews, My Books, Author, and Contact
 
-Scenario: Navbar brand shows with green accent dot
-  Given the page loads
-  When I view the navbar brand
-  Then I see "Typeset" with a green dot accent
+#### Scenario: Navbar displays all section links
 
-Scenario: Navbar scrolls to section on click
-  Given the page is loaded
-  When I click "About" in the navbar
-  Then the page scrolls to the About section
-```
+- **GIVEN** the page loads
+- **WHEN** I view the navigation bar
+- **THEN** I see links for Home, About, Chapter, Reviews, My Books, Author, and Contact
+
+#### Scenario: Navbar brand shows with green accent dot
+
+- **GIVEN** the page loads
+- **WHEN** I view the navbar brand
+- **THEN** I see "Typeset" with a green dot accent
+
+#### Scenario: Navbar scrolls to section on click
+
+- **GIVEN** the page is loaded
+- **WHEN** I click "About" in the navbar
+- **THEN** the page scrolls to the About section
 
 ### Hero
-```gherkin
-Scenario: Hero displays headline and CTA
-  Given the page loads
-  When I view the hero section
-  Then I see a subheading "Best Seller Book Of The Week"
-  And I see a headline about a book title
-  And I see a description paragraph
-  And I see a "Buy Now" CTA button with pill shape
 
-Scenario: Hero has split layout
-  Given the page loads
-  When I view the hero section
-  Then the left side shows text content
-  And the right side shows an illustration
-```
+#### Scenario: Hero displays headline and CTA
+
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** I see a subheading "Best Seller Book Of The Week"
+- **AND** I see a headline about a book title
+- **AND** I see a description paragraph
+- **AND** I see a "Buy Now" CTA button with pill shape
+
+#### Scenario: Hero has split layout
+
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** the left side shows text content
+- **AND** the right side shows an illustration
 
 ### Partners
-```gherkin
-Scenario: Partners section shows logos
-  Given the page loads
-  When I scroll to the partners section
-  Then I see 5 partner/publisher logos in a row
-```
+
+#### Scenario: Partners section shows logos
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the partners section
+- **THEN** I see 5 partner/publisher logos in a row
 
 ### About Book
-```gherkin
-Scenario: About section shows book info
-  Given the page loads
-  When I scroll to the About section
-  Then I see "About The Book" heading
-  And I see a description paragraph
-  And I see feature list with Award achievements, Read On Any Devices, and Very High Resolution
 
-Scenario: About section has split layout
-  Given the page loads
-  When I view the About section
-  Then the left side shows a background image
-  And the right side shows text content
-```
+#### Scenario: About section shows book info
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the About section
+- **THEN** I see "About The Book" heading
+- **AND** I see a description paragraph
+- **AND** I see feature list with Award achievements, Read On Any Devices, and Very High Resolution
+
+#### Scenario: About section has split layout
+
+- **GIVEN** the page loads
+- **WHEN** I view the About section
+- **THEN** the left side shows a background image
+- **AND** the right side shows text content
 
 ### Counter
-```gherkin
-Scenario: Counter displays 4 stats
-  Given the page loads
-  When I scroll to the counter section
-  Then I see 4 stat cards
-  And the stats show Copies Sold, Copies Released, Cup Of Coffee, and Happy Readers
 
-Scenario: Counter numbers animate on scroll
-  Given the counter section is visible
-  When I view the counter numbers
-  Then the numbers animate from 0 to their target values
-```
+#### Scenario: Counter displays 4 stats
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the counter section
+- **THEN** I see 4 stat cards
+- **AND** the stats show Copies Sold, Copies Released, Cup Of Coffee, and Happy Readers
+
+#### Scenario: Counter numbers animate on scroll
+
+- **GIVEN** the counter section is visible
+- **WHEN** I view the counter numbers
+- **THEN** the numbers animate from 0 to their target values
 
 ### Chapter
-```gherkin
-Scenario: Chapter section shows table of contents
-  Given the page loads
-  When I scroll to the Chapter section
-  Then I see "What's Inside The Book" heading
-  And I see 8 chapter links in a sticky nav
-  And I see 8 chapter content pages
 
-Scenario: Chapter nav highlights active page
-  Given the Chapter section is visible
-  When I click a chapter link
-  Then the corresponding chapter page is displayed
-  And the nav link shows green active indicator
-```
+#### Scenario: Chapter section shows table of contents
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Chapter section
+- **THEN** I see "What's Inside The Book" heading
+- **AND** I see 8 chapter links in a sticky nav
+- **AND** I see 8 chapter content pages
+
+#### Scenario: Chapter nav highlights active page
+
+- **GIVEN** the Chapter section is visible
+- **WHEN** I click a chapter link
+- **THEN** the corresponding chapter page is displayed
+- **AND** the nav link shows green active indicator
 
 ### Services
-```gherkin
-Scenario: Services shows 3 cards
-  Given the page loads
-  When I scroll to the Services section
-  Then I see 3 service cards
-  And the cards show Experience, Marketing Goals, and Targeting Vision
 
-Scenario: Service card highlights on hover
-  Given the Services section is visible
-  When I hover over a service card
-  Then the card background turns green (#17b978)
-```
+#### Scenario: Services shows 3 cards
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Services section
+- **THEN** I see 3 service cards
+- **AND** the cards show Experience, Marketing Goals, and Targeting Vision
+
+#### Scenario: Service card highlights on hover
+
+- **GIVEN** the Services section is visible
+- **WHEN** I hover over a service card
+- **THEN** the card background turns green (#17b978)
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials shows carousel
-  Given the page loads
-  When I scroll to the Testimonials section
-  Then I see a green overlay background
-  And I see "Kind Words From Customers" heading
-  And I see testimonial cards with quotes
 
-Scenario: Testimonial cards show user info
-  Given the Testimonials section is visible
-  When I view a testimonial card
-  Then I see a quote icon, quote text, user avatar, name, and position
-```
+#### Scenario: Testimonials shows carousel
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Testimonials section
+- **THEN** I see a green overlay background
+- **AND** I see "Kind Words From Customers" heading
+- **AND** I see testimonial cards with quotes
+
+#### Scenario: Testimonial cards show user info
+
+- **GIVEN** the Testimonials section is visible
+- **WHEN** I view a testimonial card
+- **THEN** I see a quote icon, quote text, user avatar, name, and position
 
 ### Projects/Books
-```gherkin
-Scenario: Projects shows 8 book cards
-  Given the page loads
-  When I scroll to the Projects section
-  Then I see "My Other Books" heading
-  And I see 8 book cover cards in a grid
 
-Scenario: Book card reveals info on hover
-  Given the Projects section is visible
-  When I hover over a book card
-  Then the overlay appears with book title and genre tag
-```
+#### Scenario: Projects shows 8 book cards
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Projects section
+- **THEN** I see "My Other Books" heading
+- **AND** I see 8 book cover cards in a grid
+
+#### Scenario: Book card reveals info on hover
+
+- **GIVEN** the Projects section is visible
+- **WHEN** I hover over a book card
+- **THEN** the overlay appears with book title and genre tag
 
 ### Author Bio
-```gherkin
-Scenario: Author bio shows author info
-  Given the page loads
-  When I scroll to the Author section
-  Then I see author portrait image
-  And I see "Know More About The Author" subheading
-  And I see author name, bio, and contact details list
 
-Scenario: Author bio has View All Books button
-  Given the Author section is visible
-  When I view the author info
-  Then I see a "View All Books" pill button
-```
+#### Scenario: Author bio shows author info
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Author section
+- **THEN** I see author portrait image
+- **AND** I see "Know More About The Author" subheading
+- **AND** I see author name, bio, and contact details list
+
+#### Scenario: Author bio has View All Books button
+
+- **GIVEN** the Author section is visible
+- **WHEN** I view the author info
+- **THEN** I see a "View All Books" pill button
 
 ### Contact
-```gherkin
-Scenario: Contact shows info cards and form
-  Given the page loads
-  When I scroll to the Contact section
-  Then I see "Contact Me" heading
-  And I see 4 contact info cards (Address, Phone, Email, Website)
-  And I see a contact form with Name, Email, Subject, Message fields
 
-Scenario: Contact form has Send button
-  Given the Contact section is visible
-  When I view the contact form
-  Then I see a "Send Message" button with pill shape
-```
+#### Scenario: Contact shows info cards and form
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Contact section
+- **THEN** I see "Contact Me" heading
+- **AND** I see 4 contact info cards (Address, Phone, Email, Website)
+- **AND** I see a contact form with Name, Email, Subject, Message fields
+
+#### Scenario: Contact form has Send button
+
+- **GIVEN** the Contact section is visible
+- **WHEN** I view the contact form
+- **THEN** I see a "Send Message" button with pill shape
 
 ### Footer
-```gherkin
-Scenario: Footer shows 4 columns
-  Given the page loads
-  When I scroll to the footer
-  Then I see About, Links, Services, and Contact columns
-  And I see social icons (Twitter, Facebook, Instagram)
-  And I see a Component Dock attribution link
 
-Scenario: Footer has black background
-  Given the page loads
-  When I view the footer
-  Then the background is black (#000000)
-```
+#### Scenario: Footer shows 4 columns
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** I see About, Links, Services, and Contact columns
+- **AND** I see social icons (Twitter, Facebook, Instagram)
+- **AND** I see a Component Dock attribution link
+
+#### Scenario: Footer has black background
+
+- **GIVEN** the page loads
+- **WHEN** I view the footer
+- **THEN** the background is black (#000000)
 
 ## Verification checklist
 

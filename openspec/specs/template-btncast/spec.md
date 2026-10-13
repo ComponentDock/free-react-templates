@@ -21,41 +21,45 @@ Recreation of ColorLib Bootstrap Buttons 14 (`https://colorlib.com/wp/template/b
 - **Button Radii**: Rounded (`5px`), Pill/Round (`40px`)
 - **Section Backgrounds**: Clean white / Slate-50 light mode (`#fafafa` / `#fff`)
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Interactive Button Styles Showcase
 
 - As a developer visiting the template, I want to explore a well-organized grid of various modern button styles so I can easily copy and use them in my projects.
 
-Scenario: Viewing button styles
-Given the user is on the BtnCast home page
-When the user views the "Pick Your Style" section
-Then they should see default solid, outline, icon-enabled, and rounded buttons with hover/active states
+#### Scenario: Viewing button styles
+
+- **GIVEN** the user is on the BtnCast home page
+- **WHEN** the user views the "Pick Your Style" section
+- **THEN** they should see default solid, outline, icon-enabled, and rounded buttons with hover/active states
 
 ### Requirement 2: Button Sizes and Color Variants
 
 - As a developer, I want to test different button sizes and color themes.
 
-Scenario: Exploring sizes and colors
-Given the user scrolls to the size and color sections
-When the user views small, regular, and large buttons in primary, secondary, tertiary, and gradient tones
-Then all variants should display correct padding, font size, and color accents
+#### Scenario: Exploring sizes and colors
+
+- **GIVEN** the user scrolls to the size and color sections
+- **WHEN** the user views small, regular, and large buttons in primary, secondary, tertiary, and gradient tones
+- **THEN** all variants should display correct padding, font size, and color accents
 
 ### Requirement 3: Brand Social Buttons
 
 - As a user, I want to see social media action buttons with official brand colors.
 
-Scenario: Viewing social brand buttons
-Given the user views the Social Buttons grid
-Then they should see styled buttons for Twitter, Facebook, LinkedIn, Pinterest, and Dribbble in both solid and outline variants
+#### Scenario: Viewing social brand buttons
+
+- **GIVEN** the user views the Social Buttons grid
+- **THEN** they should see styled buttons for Twitter, Facebook, LinkedIn, Pinterest, and Dribbble in both solid and outline variants
 
 ### Requirement 4: Component Dock Footer & Responsive Navigation
 
 - As a user, I want a responsive header and footer linking to Component Dock.
 
-Scenario: Footer attribution check
-Given the user scrolls to the bottom of the page
-Then the footer must display "Made with Component Dock" linking to `https://www.componentdock.com/`
+#### Scenario: Footer attribution check
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** the footer must display "Made with Component Dock" linking to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

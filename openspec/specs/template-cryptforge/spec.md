@@ -55,88 +55,88 @@ Recreation of ColorLib **Bitcoin** (`https://colorlib.com/wp/template/bitcoin/`)
   - Footer: `#04091e` very dark navy
 - **Section Spacing**: `.section-gap` = `padding: 120px 0`
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Cryptocurrency Landing Page
 
 #### Scenario: Navbar Visibility and Scroll Behavior
 
-- **Given** the user visits the CryptForge landing page
-- **Then** they should see a fixed navbar with the brand logo and navigation links: Home, Convert, Features, Pricing, Blog
-- **And** the navbar starts transparent and transitions to dark (`rgba(34,34,34,0.9)`) on scroll
+- **GIVEN** the user visits the CryptForge landing page
+- **THEN** they should see a fixed navbar with the brand logo and navigation links: Home, Convert, Features, Pricing, Blog
+- **AND** the navbar starts transparent and transitions to dark (`rgba(34,34,34,0.9)`) on scroll
 
 #### Scenario: Hero / Banner Section
 
-- **Given** the user views the hero section
-- **Then** they should see a full-height banner with a dark overlay background image
-- **And** a subtitle "Currently Purchase Rate" in uppercase with letter spacing
-- **And** a large price display (e.g. "$12,356") in bold white
-- **And** a descriptive paragraph below the price
-- **And** a "Buy Bitcoin" primary CTA button with orange solid background and sharp corners (3px radius)
+- **GIVEN** the user views the hero section
+- **THEN** they should see a full-height banner with a dark overlay background image
+- **AND** a subtitle "Currently Purchase Rate" in uppercase with letter spacing
+- **AND** a large price display (e.g. "$12,356") in bold white
+- **AND** a descriptive paragraph below the price
+- **AND** a "Buy Bitcoin" primary CTA button with orange solid background and sharp corners (3px radius)
 
 #### Scenario: Currency Converter Section
 
-- **Given** the user scrolls past the hero to the converter section
-- **Then** they should see a gradient-background card overlapping the banner by 105px
-- **And** the heading "The Currency Converter" with a subtitle
-- **And** a visual Bitcoin image on the left
-- **And** two columns of form inputs (feet/pounds, inches/pounds) with transparent backgrounds and gold borders
-- **And** a "Calculate Your BMI" (adapted to crypto context) white button on the right
+- **GIVEN** the user scrolls past the hero to the converter section
+- **THEN** they should see a gradient-background card overlapping the banner by 105px
+- **AND** the heading "The Currency Converter" with a subtitle
+- **AND** a visual Bitcoin image on the left
+- **AND** two columns of form inputs (feet/pounds, inches/pounds) with transparent backgrounds and gold borders
+- **AND** a "Calculate Your BMI" (adapted to crypto context) white button on the right
 
 #### Scenario: Simple Services Section
 
-- **Given** the user views the services overview
-- **Then** they should see 3 equal columns each with an icon image, a linked heading (e.g. "Get Paid through Bitcoin"), and a description paragraph
-- **And** hovering the heading turns it orange (`#f78f3d`)
+- **GIVEN** the user views the services overview
+- **THEN** they should see 3 equal columns each with an icon image, a linked heading (e.g. "Get Paid through Bitcoin"), and a description paragraph
+- **AND** hovering the heading turns it orange (`#f78f3d`)
 
 #### Scenario: About Us Section
 
-- **Given** the user views the about section
-- **Then** they should see a split layout: left half with an image carousel (owl-carousel), right half with dark background containing a Bitcoin icon, heading "Exchange Bitcoin is not that tough Anymore", and descriptive text
-- **And** the entire section has a `#222` dark background
+- **GIVEN** the user views the about section
+- **THEN** they should see a split layout: left half with an image carousel (owl-carousel), right half with dark background containing a Bitcoin icon, heading "Exchange Bitcoin is not that tough Anymore", and descriptive text
+- **AND** the entire section has a `#222` dark background
 
 #### Scenario: Features / Why Choose Us Section
 
-- **Given** the user views the features section
-- **Then** they should see a centered heading "Why choose us during purchase bitcoin" with subtitle
-- **And** 6 feature cards in a 3x2 grid, each with a Linearicons icon, a title (e.g. "Expert Technicians"), and a description
-- **And** hovering a card turns its title orange
+- **GIVEN** the user views the features section
+- **THEN** they should see a centered heading "Why choose us during purchase bitcoin" with subtitle
+- **AND** 6 feature cards in a 3x2 grid, each with a Linearicons icon, a title (e.g. "Expert Technicians"), and a description
+- **AND** hovering a card turns its title orange
 
 #### Scenario: Stats / Chart Section
 
-- **Given** the user views the stats section
-- **Then** they should see a light `#f9f9ff` background with a split layout: chart image on the left, text on the right
-- **And** the heading "Ups and Downs of Bitcoin (Realtime)" with descriptive text
-- **And** a "View Details" primary button with orange gradient, hover → transparent with orange border
+- **GIVEN** the user views the stats section
+- **THEN** they should see a light `#f9f9ff` background with a split layout: chart image on the left, text on the right
+- **AND** the heading "Ups and Downs of Bitcoin (Realtime)" with descriptive text
+- **AND** a "View Details" primary button with orange gradient, hover → transparent with orange border
 
 #### Scenario: Call-to-Action Section
 
-- **Given** the user views the call-to-action section
-- **Then** they should see a gradient background (`#f3c400 → #f88845`) with centered white text
-- **And** the heading "Huge Transaction in last Week" with a description paragraph
-- **And** a "Buy Bitcoin Now!" white button with dark text, hover → transparent
+- **GIVEN** the user views the call-to-action section
+- **THEN** they should see a gradient background (`#f3c400 → #f88845`) with centered white text
+- **AND** the heading "Huge Transaction in last Week" with a description paragraph
+- **AND** a "Buy Bitcoin Now!" white button with dark text, hover → transparent
 
 #### Scenario: Pricing Section
 
-- **Given** the user views the pricing section
-- **Then** they should see a centered heading "Purchase whatever you want" with subtitle
-- **And** 3 pricing cards in a row (e.g. Ripple $7999, Ethereum $9999, Bitcoin $5999)
-- **And** each card has a light top section with the name, a middle text area, and a bottom section with the price and a "Get Started" button
-- **And** hovering a card changes its bottom button to a gold gradient
+- **GIVEN** the user views the pricing section
+- **THEN** they should see a centered heading "Purchase whatever you want" with subtitle
+- **AND** 3 pricing cards in a row (e.g. Ripple $7999, Ethereum $9999, Bitcoin $5999)
+- **AND** each card has a light top section with the name, a middle text area, and a bottom section with the price and a "Get Started" button
+- **AND** hovering a card changes its bottom button to a gold gradient
 
 #### Scenario: Blog Section
 
-- **Given** the user views the blog section
-- **Then** they should see a centered heading "Latest Posts from our Blog" with subtitle
-- **And** 3 blog cards each with a thumbnail image, linked title, excerpt, and author info (avatar + name + date)
-- **And** hovering a blog card turns its title orange
+- **GIVEN** the user views the blog section
+- **THEN** they should see a centered heading "Latest Posts from our Blog" with subtitle
+- **AND** 3 blog cards each with a thumbnail image, linked title, excerpt, and author info (avatar + name + date)
+- **AND** hovering a blog card turns its title orange
 
 #### Scenario: Footer Section
 
-- **Given** the user views the footer
-- **Then** they should see a dark navy (`#04091e`) background with 4 columns: About Us, Top Products (link list), Newsletter (email input + submit button), and social icons (Facebook, Twitter, Dribbble, Behance)
-- **And** a footer bottom bar with copyright text linking `https://www.componentdock.com/` (branded "Component Dock") and social icon buttons
-- **And** newsletter input has dark `#1e2235` background, rounded (20px), with an orange submit button
+- **GIVEN** the user views the footer
+- **THEN** they should see a dark navy (`#04091e`) background with 4 columns: About Us, Top Products (link list), Newsletter (email input + submit button), and social icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** a footer bottom bar with copyright text linking `https://www.componentdock.com/` (branded "Component Dock") and social icon buttons
+- **AND** newsletter input has dark `#1e2235` background, rounded (20px), with an orange submit button
 
 ## Verification Checklist
 

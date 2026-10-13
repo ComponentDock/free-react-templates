@@ -102,78 +102,89 @@ all pages, CSS, JS).
      with heart icon + Component Dock link (replacing Colorlib),
      Terms & Conditions + FAQ links.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Plumero template behaviour
+
 Feature: Plumero — eCommerce Pillow Store Template
 
-  Background:
-    Given the Plumero app is loaded in the browser
+Background:
+- **GIVEN** the Plumero app is loaded in the browser
 
-  Scenario: Navbar renders with all navigation links
-    Then the navbar displays the logo
-    And the navbar shows links: Home, About, Products, Pages, Blog, Contact
-    And the navbar shows a search icon
-    And the navbar shows a cart icon
+#### Scenario: Navbar renders with all navigation links
 
-  Scenario: Hero banner displays with correct content
-    Then the hero section shows the heading "Best quality pillow"
-    And the hero section shows a descriptive paragraph
-    And the hero section shows a "Shop Now" primary button
-    And the hero section shows a large product image on the right
+- **THEN** the navbar displays the logo
+- **AND** the navbar shows links: Home, About, Products, Pages, Blog, Contact
+- **AND** the navbar shows a search icon
+- **AND** the navbar shows a cart icon
 
-  Scenario: Featured products section shows 3 product rows
-    Then 3 featured product rows are displayed
-    And each row shows "Started from $10" subtitle
-    And each row shows a product title
-    And each row shows an "Explore Now" outline button
-    And each row shows a product image with overlay
+#### Scenario: Hero banner displays with correct content
 
-  Scenario: Trending items grid shows 6 products
-    Then the trending section shows heading "Trending Items"
-    And 6 product cards are displayed in a 3-column grid
-    And each card shows a product image
-    And each card shows a product name
-    And each card shows a price starting "From $5"
+- **THEN** the hero section shows the heading "Best quality pillow"
+- **AND** the hero section shows a descriptive paragraph
+- **AND** the hero section shows a "Shop Now" primary button
+- **AND** the hero section shows a large product image on the right
 
-  Scenario: Client review carousel displays testimonials
-    Then the review section shows a carousel of testimonials
-    And each testimonial shows a customer avatar
-    And each testimonial shows a quote
-    And each testimonial shows the reviewer name
+#### Scenario: Featured products section shows 3 product rows
 
-  Scenario: Feature highlights show 4 service items
-    Then the feature section shows a heading and description
-    And 4 feature items are displayed: Credit Card Support, Online Order, Free Delivery, Product with Gift
+- **THEN** 3 featured product rows are displayed
+- **AND** each row shows "Started from $10" subtitle
+- **AND** each row shows a product title
+- **AND** each row shows an "Explore Now" outline button
+- **AND** each row shows a product image with overlay
 
-  Scenario: Newsletter subscription section renders
-    Then the subscribe section shows "Get promotions & updates!" heading
-    And the subscribe section shows an email input field
-    And the subscribe section shows a "Subscribe" primary button
+#### Scenario: Trending items grid shows 6 products
 
-  Scenario: Footer renders with navigation and social links
-    Then the footer shows the logo
-    And the footer shows navigation links: Home, About, Products, Pages, Blog, Contact
-    And the footer shows social media icons: Facebook, Instagram, Google+, LinkedIn
+- **THEN** the trending section shows heading "Trending Items"
+- **AND** 6 product cards are displayed in a 3-column grid
+- **AND** each card shows a product image
+- **AND** each card shows a product name
+- **AND** each card shows a price starting "From $5"
 
-  Scenario: Copyright bar shows attribution
-    Then the copyright bar shows copyright text with a heart icon
-    And the copyright bar links to Component Dock
-    And the copyright bar shows "Terms & Conditions" and "FAQ" links
+#### Scenario: Client review carousel displays testimonials
 
-  Scenario: Responsive layout adapts to mobile
-    When the viewport width is less than 768px
-    Then the navbar collapses to a hamburger menu
-    And the hero banner adjusts height
-    And the product grid stacks to single column
-    And the trending items grid stacks to single column
+- **THEN** the review section shows a carousel of testimonials
+- **AND** each testimonial shows a customer avatar
+- **AND** each testimonial shows a quote
+- **AND** each testimonial shows the reviewer name
 
-  Scenario: Brand colors are applied consistently
-    Then the primary brand color is #B08EAD
-    And the dark section backgrounds use #4B3049
-    And the light section backgrounds use #F4EDF2
-    And buttons use 5px border-radius
-```
+#### Scenario: Feature highlights show 4 service items
+
+- **THEN** the feature section shows a heading and description
+- **AND** 4 feature items are displayed: Credit Card Support, Online Order, Free Delivery, Product with Gift
+
+#### Scenario: Newsletter subscription section renders
+
+- **THEN** the subscribe section shows "Get promotions & updates!" heading
+- **AND** the subscribe section shows an email input field
+- **AND** the subscribe section shows a "Subscribe" primary button
+
+#### Scenario: Footer renders with navigation and social links
+
+- **THEN** the footer shows the logo
+- **AND** the footer shows navigation links: Home, About, Products, Pages, Blog, Contact
+- **AND** the footer shows social media icons: Facebook, Instagram, Google+, LinkedIn
+
+#### Scenario: Copyright bar shows attribution
+
+- **THEN** the copyright bar shows copyright text with a heart icon
+- **AND** the copyright bar links to Component Dock
+- **AND** the copyright bar shows "Terms & Conditions" and "FAQ" links
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero banner adjusts height
+- **AND** the product grid stacks to single column
+- **AND** the trending items grid stacks to single column
+
+#### Scenario: Brand colors are applied consistently
+
+- **THEN** the primary brand color is #B08EAD
+- **AND** the dark section backgrounds use #4B3049
+- **AND** the light section backgrounds use #F4EDF2
+- **AND** buttons use 5px border-radius
 
 ## Verification checklist
 

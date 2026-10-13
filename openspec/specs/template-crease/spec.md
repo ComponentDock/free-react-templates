@@ -14,19 +14,25 @@ Recreation of ColorLib **Accordion 05** (`https://colorlib.com/wp/template/accor
 - **Shadows**: `-webkit-box-shadow: 0px 10px 29px -16px rgba(0, 0, 0, 0.12);` box-shadow on `.myaccordion`.
 - **Icons**: Lucide React equivalents for Ionicons (`Settings`, `MapPin`, `Trophy`/`Activity`, chevron arrows).
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Hero / Header Section
+
+#### Scenario: Hero / Header Section
 
 - As a visitor, I see a centered section heading "Accordion #05" with a generous padding rhythm (`ftco-section` padding).
 
 ### Requirement 2: Interactive Accordion Cards
+
+#### Scenario: Interactive Accordion Cards
 
 - As a visitor, I can view an interactive accordion component (`.myaccordion`) containing collapsible items (Manage, Location, Hobbies, etc.).
 - Clicking an accordion header toggles its expanded/collapsed state with smooth transitions and active icon color changes (`#75d6d1`).
 - Expanded card bodies reveal either sub-lists (e.g., Account, Settings, Profile links with bullet numbers) or informative paragraph content with teal background highlights (`#75d6d1`) and white text.
 
 ### Requirement 3: Branding & Footer
+
+#### Scenario: Branding & Footer
 
 - As a visitor, I see a branded footer linking to `https://www.componentdock.com/` ("Component Dock").
 

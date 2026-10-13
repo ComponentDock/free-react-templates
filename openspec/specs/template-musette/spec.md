@@ -11,15 +11,19 @@ Recreation of ColorLib **Accordion 13** (`https://colorlib.com/wp/template/accor
 - **Radius:** 4px (`rounded`).
 - **Section structure:** Header navigation / title area, main content container with multiple interactive accordion item cards.
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Accordion Panel State Management
+
+#### Scenario: Accordion Panel State Management
 
 - **Scenario:** User clicks an accordion item header to toggle its open/closed state.
 - **Scenario:** Active open items highlight with the green accent border (`#72c02c`) and matching active text color.
 - **Scenario:** Chevron icons toggle between down/up states accordingly.
 
 ### Requirement 2: Footer Branding
+
+#### Scenario: Footer Branding
 
 - **Scenario:** The page footer links to `https://www.componentdock.com/` ("Component Dock").
 

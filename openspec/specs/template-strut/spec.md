@@ -55,99 +55,90 @@ Extracted from the live preview CSS (`css/style.css`):
 8. **Address/Contact** — Black bg, 3-column layout (Location, Opening Hours, Contact) with icon, heading, text, link
 9. **Footer** — 4-column: logo + description + social links | Company links | Solutions links | Branch office locations; Bottom: copyright bar
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Header renders with top bar and main navigation
-```
-Given the user visits the Strut homepage
-Then a top bar is visible with phone number and email on the left
-And navigation links (News & Media, Review, FAQ) on the right
-And the main nav shows logo, menu items (Home, About, Services, Projects, Blog, Contact), search icon, and "Get a quote" button
-```
+### Feature: Strut template behaviour
 
-### Scenario: Header becomes sticky on scroll
-```
-Given the user scrolls down the page
-Then the main header should become fixed at the top with a shadow
-And the top bar should remain hidden
-```
+#### Scenario: Header renders with top bar and main navigation
 
-### Scenario: Hero slider displays with content box
-```
-Given the user loads the homepage
-Then a full-width slider area is visible
-And the slider shows a background image with dark overlay
-And a white content box appears on the left with:
-  | Element    | Content                                    |
-  | Tagline    | "Quality work. Trustable service..."      |
-  | Heading    | "We provide your Industrial solution"      |
-  | CTA Button | "Our Services"                             |
-And navigation dots are visible on the right
-```
+- **GIVEN** the user visits the Strut homepage
+- **THEN** a top bar is visible with phone number and email on the left
+- **AND** navigation links (News & Media, Review, FAQ) on the right
+- **AND** the main nav shows logo, menu items (Home, About, Services, Projects, Blog, Contact), search icon, and "Get a quote" button
 
-### Scenario: Brand logos carousel displays
-```
-Given the user views the brand area
-Then a horizontal carousel of partner logos is visible
-And the area has a gray (#f5f5f5) background
-```
+#### Scenario: Header becomes sticky on scroll
 
-### Scenario: Services section shows 3 service cards
-```
-Given the user scrolls to the services section
-Then a section title "OUR SERVICES" is visible
-And 3 service cards are displayed in a row
-And each card has an image thumbnail, title, description, and "Read More" link
-```
+- **GIVEN** the user scrolls down the page
+- **THEN** the main header should become fixed at the top with a shadow
+- **AND** the top bar should remain hidden
 
-### Scenario: Projects section displays with dark overlay and carousel
-```
-Given the user scrolls to the projects section
-Then a dark overlay background is visible
-And a left panel shows heading "Take a look around our projects" with description and "More Projects" link
-And a right panel shows a carousel of project cards
-And each project card has an image, category label, and project title
-```
+#### Scenario: Hero slider displays with content box
 
-### Scenario: About section shows video thumbnail and testimonials
-```
-Given the user scrolls to the about section
-Then a left area shows a large video thumbnail with a play button
-And a right area shows heading "Deliver innovative Industrial solution" with "Learn More" CTA
-And below is a testimonial carousel with quote, star rating, author, and "350+" review count
-```
+- **GIVEN** the user loads the homepage
+- **THEN** a full-width slider area is visible
+- **AND** the slider shows a background image with dark overlay
+- **AND** a white content box appears on the left with:
+| Element    | Content                                    |
+| Tagline    | "Quality work. Trustable service..."      |
+| Heading    | "We provide your Industrial solution"      |
+| CTA Button | "Our Services"                             |
+- **AND** navigation dots are visible on the right
 
-### Scenario: CTA banner displays with background image
-```
-Given the user scrolls to the CTA area
-Then a full-width banner with dark overlay background image is visible
-And it shows heading "Let's talk about your industrial problems"
-And a black "Discuss now" CTA button is visible
-```
+#### Scenario: Brand logos carousel displays
 
-### Scenario: Address section shows 3 contact columns
-```
-Given the user scrolls to the address area
-Then a black background section with 3 columns is visible
-And columns show: Location, Opening Hours, Contact information
-And each column has an icon, heading, text, and optional link
-```
+- **GIVEN** the user views the brand area
+- **THEN** a horizontal carousel of partner logos is visible
+- **AND** the area has a gray (#f5f5f5) background
 
-### Scenario: Footer renders with 4 columns and copyright
-```
-Given the user scrolls to the footer
-Then a 4-column footer is visible with logo + description, Company links, Solutions links, and Branch office info
-And social media icons (Facebook, Twitter, LinkedIn) are shown
-And a copyright bar appears at the bottom
-```
+#### Scenario: Services section shows 3 service cards
 
-### Scenario: All interactive elements are accessible
-```
-Given the user navigates with keyboard only
-Then all buttons and links are focusable
-And focus-visible rings appear on interactive elements
-And the navigation is keyboard-navigable
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** a section title "OUR SERVICES" is visible
+- **AND** 3 service cards are displayed in a row
+- **AND** each card has an image thumbnail, title, description, and "Read More" link
+
+#### Scenario: Projects section displays with dark overlay and carousel
+
+- **GIVEN** the user scrolls to the projects section
+- **THEN** a dark overlay background is visible
+- **AND** a left panel shows heading "Take a look around our projects" with description and "More Projects" link
+- **AND** a right panel shows a carousel of project cards
+- **AND** each project card has an image, category label, and project title
+
+#### Scenario: About section shows video thumbnail and testimonials
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a left area shows a large video thumbnail with a play button
+- **AND** a right area shows heading "Deliver innovative Industrial solution" with "Learn More" CTA
+- **AND** below is a testimonial carousel with quote, star rating, author, and "350+" review count
+
+#### Scenario: CTA banner displays with background image
+
+- **GIVEN** the user scrolls to the CTA area
+- **THEN** a full-width banner with dark overlay background image is visible
+- **AND** it shows heading "Let's talk about your industrial problems"
+- **AND** a black "Discuss now" CTA button is visible
+
+#### Scenario: Address section shows 3 contact columns
+
+- **GIVEN** the user scrolls to the address area
+- **THEN** a black background section with 3 columns is visible
+- **AND** columns show: Location, Opening Hours, Contact information
+- **AND** each column has an icon, heading, text, and optional link
+
+#### Scenario: Footer renders with 4 columns and copyright
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a 4-column footer is visible with logo + description, Company links, Solutions links, and Branch office info
+- **AND** social media icons (Facebook, Twitter, LinkedIn) are shown
+- **AND** a copyright bar appears at the bottom
+
+#### Scenario: All interactive elements are accessible
+
+- **GIVEN** the user navigates with keyboard only
+- **THEN** all buttons and links are focusable
+- **AND** focus-visible rings appear on interactive elements
+- **AND** the navigation is keyboard-navigable
 
 ## Verification Checklist
 

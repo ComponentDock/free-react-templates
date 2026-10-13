@@ -45,106 +45,122 @@ Extracted from `https://preview.colorlib.com/theme/bootstrap/login-form-06/css/s
 
 **Typography:** Roboto 300 for body/paragraphs, Roboto 400 for headings. Headings use system font stack fallback.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Feature: Split-screen login layout
 
-  Scenario: Full viewport split layout
-    Given the user opens the sign-in page
-    Then the viewport is split into two equal halves at lg breakpoint and above
-    And the right half displays a full-cover background image
-    And the left half contains the login form centered vertically
+#### Scenario: Full viewport split layout
 
-  Scenario: Mobile responsive layout
-    Given the viewport is narrower than 998px
-    Then the background image appears above the form at 500px height
-    And the form occupies the remaining space below
+- **GIVEN** the user opens the sign-in page
+- **THEN** the viewport is split into two equal halves at lg breakpoint and above
+- **AND** the right half displays a full-cover background image
+- **AND** the left half contains the login form centered vertically
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the viewport is narrower than 998px
+- **THEN** the background image appears above the form at 500px height
+- **AND** the form occupies the remaining space below
 
 ### Feature: Login form
 
-  Scenario: Sign-in heading and description
-    Given the user sees the login form
-    Then a "Sign In" heading is displayed
-    And a short descriptive paragraph appears below the heading
+#### Scenario: Sign-in heading and description
 
-  Scenario: Username field
-    Given the user sees the login form
-    When the user clicks the username input
-    Then the floating label moves above the input
-    And the input accepts text entry
+- **GIVEN** the user sees the login form
+- **THEN** a "Sign In" heading is displayed
+- **AND** a short descriptive paragraph appears below the heading
 
-  Scenario: Password field
-    Given the user sees the login form
-    When the user clicks the password input
-    Then the floating label moves above the input
-    And the input masks characters as the user types
+#### Scenario: Username field
 
-  Scenario: Form group styling
-    Given the user sees the login form
-    Then the username field has top border radius of 7px
-    And the password field has bottom border radius of 7px
-    And adjacent fields share a 1px #efefef border with no double borders
+- **GIVEN** the user sees the login form
+- **WHEN** the user clicks the username input
+- **THEN** the floating label moves above the input
+- **AND** the input accepts text entry
 
-  Scenario: Remember me checkbox
-    Given the user sees the login form
-    When the user checks "Remember me"
-    Then the checkbox indicator turns #007bff
-    And a checkmark appears inside the indicator
-    When the user unchecks it
-    Then the indicator returns to #e6e6e6
+#### Scenario: Password field
 
-  Scenario: Forgot password link
-    Given the user sees the login form
-    Then a "Forgot Password" link is aligned right below the form fields
-    And the link color is #888
+- **GIVEN** the user sees the login form
+- **WHEN** the user clicks the password input
+- **THEN** the floating label moves above the input
+- **AND** the input masks characters as the user types
 
-  Scenario: Log In button
-    Given the user sees the login form
-    Then the "Log In" button spans full width with height 54px
-    And the button background is #007bff
-    And the button text is white
+#### Scenario: Form group styling
+
+- **GIVEN** the user sees the login form
+- **THEN** the username field has top border radius of 7px
+- **AND** the password field has bottom border radius of 7px
+- **AND** adjacent fields share a 1px #efefef border with no double borders
+
+#### Scenario: Remember me checkbox
+
+- **GIVEN** the user sees the login form
+- **WHEN** the user checks "Remember me"
+- **THEN** the checkbox indicator turns #007bff
+- **AND** a checkmark appears inside the indicator
+- **WHEN** the user unchecks it
+- **THEN** the indicator returns to #e6e6e6
+
+#### Scenario: Forgot password link
+
+- **GIVEN** the user sees the login form
+- **THEN** a "Forgot Password" link is aligned right below the form fields
+- **AND** the link color is #888
+
+#### Scenario: Log In button
+
+- **GIVEN** the user sees the login form
+- **THEN** the "Log In" button spans full width with height 54px
+- **AND** the button background is #007bff
+- **AND** the button text is white
 
 ### Feature: Social login
 
-  Scenario: Or divider
-    Given the user sees the login form
-    Then a centered "— or —" divider appears between the main form and social buttons
+#### Scenario: Or divider
 
-  Scenario: Facebook login button
-    Given the user sees the social login section
-    Then a "Login with Facebook" button is displayed
-    And its background is #3b5998
-    And the text is white
+- **GIVEN** the user sees the login form
+- **THEN** a centered "— or —" divider appears between the main form and social buttons
 
-  Scenario: Twitter/X login button
-    Given the user sees the social login section
-    Then a "Login with Twitter" button is displayed
-    And its background is #1da1f2
-    And the text is white
+#### Scenario: Facebook login button
 
-  Scenario: Google login button
-    Given the user sees the social login section
-    Then a "Login with Google" button is displayed
-    And its background is #ea4335
-    And the text is white
+- **GIVEN** the user sees the social login section
+- **THEN** a "Login with Facebook" button is displayed
+- **AND** its background is #3b5998
+- **AND** the text is white
 
-  Scenario: Social button hover states
-    Given the user hovers over any social login button
-    Then the background darkens (Facebook #344e86, Twitter #0d95e8, Google #e82e1e)
-    And the text remains white
+#### Scenario: Twitter/X login button
+
+- **GIVEN** the user sees the social login section
+- **THEN** a "Login with Twitter" button is displayed
+- **AND** its background is #1da1f2
+- **AND** the text is white
+
+#### Scenario: Google login button
+
+- **GIVEN** the user sees the social login section
+- **THEN** a "Login with Google" button is displayed
+- **AND** its background is #ea4335
+- **AND** the text is white
+
+#### Scenario: Social button hover states
+
+- **GIVEN** the user hovers over any social login button
+- **THEN** the background darkens (Facebook #344e86, Twitter #0d95e8, Google #e82e1e)
+- **AND** the text remains white
 
 ### Feature: Accessibility and footer
 
-  Scenario: Semantic form elements
-    Given the user inspects the login form
-    Then all inputs have associated labels via htmlFor
-    And the form uses semantic <form> element
-    And the submit button has type="submit"
+#### Scenario: Semantic form elements
 
-  Scenario: Footer attribution
-    Given the user scrolls to the bottom of the page
-    Then a "Made with Component Dock" footer is displayed
-    And it links to https://www.componentdock.com/
+- **GIVEN** the user inspects the login form
+- **THEN** all inputs have associated labels via htmlFor
+- **AND** the form uses semantic <form> element
+- **AND** the submit button has type="submit"
+
+#### Scenario: Footer attribution
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a "Made with Component Dock" footer is displayed
+- **AND** it links to https://www.componentdock.com/
 
 ## Verification checklist
 

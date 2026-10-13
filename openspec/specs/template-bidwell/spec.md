@@ -60,139 +60,142 @@ Recreation of ColorLib "Auction" template.
 7. **CTA** — centered headline + Register button
 8. **Footer** — 4 columns (logo + text, Solutions, Services, Contact), copyright line
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Logo is visible and links to home
-  Given the page is loaded
-  Then the logo is visible in the top-left of the navbar
+#### Scenario: Logo is visible and links to home
 
-Scenario: Navigation links are present
-  Given the page is loaded
-  Then the navbar contains links for "Home", "Buy", "Sell", "Services", "Blog", "About", "Contact"
+- **GIVEN** the page is loaded
+- **THEN** the logo is visible in the top-left of the navbar
 
-Scenario: Services link has dropdown submenu
-  Given the page is loaded
-  When I hover over the "Services" nav link
-  Then a dropdown appears with "Sell Items", "Buy Items", "Submit a Bid"
+#### Scenario: Navigation links are present
 
-Scenario: Sign In / Register link is present
-  Given the page is loaded
-  Then a "Sign In / Register" link is visible in the navbar
-```
+- **GIVEN** the page is loaded
+- **THEN** the navbar contains links for "Home", "Buy", "Sell", "Services", "Blog", "About", "Contact"
+
+#### Scenario: Services link has dropdown submenu
+
+- **GIVEN** the page is loaded
+- **WHEN** I hover over the "Services" nav link
+- **THEN** a dropdown appears with "Sell Items", "Buy Items", "Submit a Bid"
+
+#### Scenario: Sign In / Register link is present
+
+- **GIVEN** the page is loaded
+- **THEN** a "Sign In / Register" link is visible in the navbar
 
 ### Hero
 
-```gherkin
-Scenario: Hero section displays headline and CTA
-  Given the page is loaded
-  Then the hero section displays "The Best Place to Buy and Sell" as the heading
-  And a "Register" call-to-action button is visible
+#### Scenario: Hero section displays headline and CTA
 
-Scenario: Hero has a background image
-  Given the page is loaded
-  Then the hero section has a background image covering the full width
-```
+- **GIVEN** the page is loaded
+- **THEN** the hero section displays "The Best Place to Buy and Sell" as the heading
+- **AND** a "Register" call-to-action button is visible
+
+#### Scenario: Hero has a background image
+
+- **GIVEN** the page is loaded
+- **THEN** the hero section has a background image covering the full width
 
 ### Current Auctions
 
-```gherkin
-Scenario: Auctions section heading is displayed
-  Given the page is loaded
-  Then the "Current Auctions" section heading is visible
-  And the caption "Auctions" appears above it
+#### Scenario: Auctions section heading is displayed
 
-Scenario: Eight auction items are displayed in a grid
-  Given the page is loaded
-  Then 8 auction item cards are displayed in a 4-column grid
+- **GIVEN** the page is loaded
+- **THEN** the "Current Auctions" section heading is visible
+- **AND** the caption "Auctions" appears above it
 
-Scenario: Each auction item shows price, image, name, category, and bid count
-  Given the page is loaded
-  Then each auction item card displays a price badge
-  And each card displays a product image
-  And each card displays the item name
-  And each card displays the item category
-  And each card displays the bid count
+#### Scenario: Eight auction items are displayed in a grid
 
-Scenario: Each auction item has a Submit a Bid button
-  Given the page is loaded
-  Then each auction item card contains a "Submit a Bid" button
-```
+- **GIVEN** the page is loaded
+- **THEN** 8 auction item cards are displayed in a 4-column grid
+
+#### Scenario: Each auction item shows price, image, name, category, and bid count
+
+- **GIVEN** the page is loaded
+- **THEN** each auction item card displays a price badge
+- **AND** each card displays a product image
+- **AND** each card displays the item name
+- **AND** each card displays the item category
+- **AND** each card displays the bid count
+
+#### Scenario: Each auction item has a Submit a Bid button
+
+- **GIVEN** the page is loaded
+- **THEN** each auction item card contains a "Submit a Bid" button
 
 ### How It Works
 
-```gherkin
-Scenario: How It Works section displays four steps
-  Given the page is loaded
-  Then the "How It Works" section heading is visible
-  And four step cards are displayed in a row
-  And step 1 is titled "Register"
-  And step 2 is titled "Buy or Bid"
-  And step 3 is titled "Submit a bid"
-  And step 4 is titled "Win"
+#### Scenario: How It Works section displays four steps
 
-Scenario: Each step has an icon, title, and description
-  Given the page is loaded
-  Then each step card contains an icon, a title, and a description paragraph
-```
+- **GIVEN** the page is loaded
+- **THEN** the "How It Works" section heading is visible
+- **AND** four step cards are displayed in a row
+- **AND** step 1 is titled "Register"
+- **AND** step 2 is titled "Buy or Bid"
+- **AND** step 3 is titled "Submit a bid"
+- **AND** step 4 is titled "Win"
+
+#### Scenario: Each step has an icon, title, and description
+
+- **GIVEN** the page is loaded
+- **THEN** each step card contains an icon, a title, and a description paragraph
 
 ### About Us
 
-```gherkin
-Scenario: About Us section shows image and features
-  Given the page is loaded
-  Then the "About Us" section heading is visible
-  And a large image is displayed on the left
-  And three feature items are displayed on the right
+#### Scenario: About Us section shows image and features
 
-Scenario: Feature items have icon, title, and description
-  Given the page is loaded
-  Then feature 1 is "Fast Support"
-  And feature 2 is "Happy Customers"
-  And feature 3 is "24/7 Support"
-  And each feature item has an icon and description
-```
+- **GIVEN** the page is loaded
+- **THEN** the "About Us" section heading is visible
+- **AND** a large image is displayed on the left
+- **AND** three feature items are displayed on the right
+
+#### Scenario: Feature items have icon, title, and description
+
+- **GIVEN** the page is loaded
+- **THEN** feature 1 is "Fast Support"
+- **AND** feature 2 is "Happy Customers"
+- **AND** feature 3 is "24/7 Support"
+- **AND** each feature item has an icon and description
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials section displays with parallax background
-  Given the page is loaded
-  Then the "Happy Clients" heading is visible
-  And the section has a parallax background image
+#### Scenario: Testimonials section displays with parallax background
 
-Scenario: Testimonials carousel shows testimonial cards
-  Given the page is loaded
-  Then multiple testimonial cards are displayed
-  And each card has an avatar image, a name, a title, and a quote
-```
+- **GIVEN** the page is loaded
+- **THEN** the "Happy Clients" heading is visible
+- **AND** the section has a parallax background image
+
+#### Scenario: Testimonials carousel shows testimonial cards
+
+- **GIVEN** the page is loaded
+- **THEN** multiple testimonial cards are displayed
+- **AND** each card has an avatar image, a name, a title, and a quote
 
 ### CTA
 
-```gherkin
-Scenario: CTA section encourages registration
-  Given the page is loaded
-  Then the CTA section displays "Create an account and start Buy, Bid or Sell Now!"
-  And a "Register" button is visible
-```
+#### Scenario: CTA section encourages registration
+
+- **GIVEN** the page is loaded
+- **THEN** the CTA section displays "Create an account and start Buy, Bid or Sell Now!"
+- **AND** a "Register" button is visible
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays four columns
-  Given the page is loaded
-  Then the footer shows a logo column with description and "Learn More" link
-  And a "Solutions" column with links
-  And a "Services" column with links
-  And a "Contact" column with links
+#### Scenario: Footer displays four columns
 
-Scenario: Footer has copyright line
-  Given the page is loaded
-  Then a copyright notice is displayed at the bottom of the footer
-  And the footer links to Component Dock
-```
+- **GIVEN** the page is loaded
+- **THEN** the footer shows a logo column with description and "Learn More" link
+- **AND** a "Solutions" column with links
+- **AND** a "Services" column with links
+- **AND** a "Contact" column with links
+
+#### Scenario: Footer has copyright line
+
+- **GIVEN** the page is loaded
+- **THEN** a copyright notice is displayed at the bottom of the footer
+- **AND** the footer links to Component Dock
 
 ## Verification checklist
 

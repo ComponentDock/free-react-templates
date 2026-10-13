@@ -47,83 +47,96 @@ Extracted from the live preview stylesheet
 11. **Blog Section** — section title "rECENT NEWS FORM BLOG" / "gYM TIPS news fOR YOU", 2-column blog cards with image, date, title, excerpt.
 12. **Footer** — dark background image overlay, 3-column layout (COMPANY links, Open Hours, RESOURCES), copyright bar, social icons.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: MuscleBay template behaviour
+
 Feature: MuscleBay — Fitness club landing template
 
-  Background:
-    Given the template is loaded in the browser
+Background:
+- **GIVEN** the template is loaded in the browser
 
-  Scenario: Header displays navigation
-    Then the nav contains links: Home, About, Services, Schedule, Gallery, Blog, Contact
-    And the logo is positioned on the left
-    And the header is transparent over the hero
+#### Scenario: Header displays navigation
 
-  Scenario: Hero slider renders
-    Then the hero spans the full viewport width
-    And the heading reads "Build Perfect body Shape for good and Healthy life."
-    And a "became a member" button is visible
-    And the background is a full-width image
+- **THEN** the nav contains links: Home, About, Services, Schedule, Gallery, Blog, Contact
+- **AND** the logo is positioned on the left
+- **AND** the header is transparent over the hero
 
-  Scenario: About section displays
-    Then the section title reads "ABOUT oUR GYM"
-    And the heading reads "Safe Body building proper Solutions That Saves our Valuable Time!"
-    And an about image is displayed on the left
-    And two description paragraphs are shown
-    And a "became a member" button is visible
+#### Scenario: Hero slider renders
 
-  Scenario: Services section shows service cards
-    Then the section title reads "oUR sERVICES FOR YOU"
-    And the heading reads "PUSH YOUR LIMITS FORWARD We Offer to you"
-    And at least 3 service cards are displayed with icons
-    And a "More Services" button is visible
+- **THEN** the hero spans the full viewport width
+- **AND** the heading reads "Build Perfect body Shape for good and Healthy life."
+- **AND** a "became a member" button is visible
+- **AND** the background is a full-width image
 
-  Scenario: Testimonial section renders
-    Then a testimonial image with quotation overlay is shown
-    And a client quote is displayed
-    And the client name and role are shown
+#### Scenario: About section displays
 
-  Scenario: Membership CTA banner
-    Then the heading reads "April membership offer available Now"
-    And a "More Services" button is visible
-    And the section has a dark background image overlay
+- **THEN** the section title reads "ABOUT oUR GYM"
+- **AND** the heading reads "Safe Body building proper Solutions That Saves our Valuable Time!"
+- **AND** an about image is displayed on the left
+- **AND** two description paragraphs are shown
+- **AND** a "became a member" button is visible
 
-  Scenario: Schedule tabs section
-    Then the section title reads "OUR tIME SCHEDULE"
-    And the heading reads "SELECT THE pERFECT TIME YOU NEED NOW"
-    And tabbed navigation is displayed for different days
+#### Scenario: Services section shows service cards
 
-  Scenario: Team section shows team members
-    Then 3 team member cards are displayed
-    And each card has a photo, role, name, and social links
+- **THEN** the section title reads "oUR sERVICES FOR YOU"
+- **AND** the heading reads "PUSH YOUR LIMITS FORWARD We Offer to you"
+- **AND** at least 3 service cards are displayed with icons
+- **AND** a "More Services" button is visible
 
-  Scenario: Contact form section
-    Then the section title reads "Contact Form"
-    And the heading reads "Feel Free to contact with us!"
-    And form fields for name, email, subject, and message are present
-    And a submit button is visible
+#### Scenario: Testimonial section renders
 
-  Scenario: Gallery section shows images
-    Then a 2-column gallery layout is displayed
-    And images have hover overlay with title and category
+- **THEN** a testimonial image with quotation overlay is shown
+- **AND** a client quote is displayed
+- **AND** the client name and role are shown
 
-  Scenario: Blog section shows posts
-    Then the section title reads "rECENT NEWS FORM BLOG"
-    And at least 2 blog cards are displayed
-    And each card has an image, date, title, and excerpt
+#### Scenario: Membership CTA banner
 
-  Scenario: Footer structure
-    Then the footer has 3 columns: COMPANY, Open Hours, RESOURCES
-    And a copyright bar is displayed at the bottom
-    And the footer links to https://www.componentdock.com/
+- **THEN** the heading reads "April membership offer available Now"
+- **AND** a "More Services" button is visible
+- **AND** the section has a dark background image overlay
 
-  Scenario: Responsive layout
-    When the viewport is mobile width
-    Then the navigation collapses to a hamburger menu
-    And columns stack vertically
-    And the gallery adjusts to fewer columns
-```
+#### Scenario: Schedule tabs section
+
+- **THEN** the section title reads "OUR tIME SCHEDULE"
+- **AND** the heading reads "SELECT THE pERFECT TIME YOU NEED NOW"
+- **AND** tabbed navigation is displayed for different days
+
+#### Scenario: Team section shows team members
+
+- **THEN** 3 team member cards are displayed
+- **AND** each card has a photo, role, name, and social links
+
+#### Scenario: Contact form section
+
+- **THEN** the section title reads "Contact Form"
+- **AND** the heading reads "Feel Free to contact with us!"
+- **AND** form fields for name, email, subject, and message are present
+- **AND** a submit button is visible
+
+#### Scenario: Gallery section shows images
+
+- **THEN** a 2-column gallery layout is displayed
+- **AND** images have hover overlay with title and category
+
+#### Scenario: Blog section shows posts
+
+- **THEN** the section title reads "rECENT NEWS FORM BLOG"
+- **AND** at least 2 blog cards are displayed
+- **AND** each card has an image, date, title, and excerpt
+
+#### Scenario: Footer structure
+
+- **THEN** the footer has 3 columns: COMPANY, Open Hours, RESOURCES
+- **AND** a copyright bar is displayed at the bottom
+- **AND** the footer links to https://www.componentdock.com/
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport is mobile width
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** columns stack vertically
+- **AND** the gallery adjusts to fewer columns
 
 ## Verification checklist
 

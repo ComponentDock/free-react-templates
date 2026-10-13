@@ -32,78 +32,80 @@ Extracted from the template page analysis and screenshot:
 
 From the screenshot: A centered modal with a promotional offer layout. The modal features a headline like "Special Offer" or "Limited Time Deal", a promotional image or graphic, descriptive text about the offer, and a prominent orange CTA button. The design is clean and focused on conversion, with visual hierarchy guiding the eye from headline to image to CTA. The overall aesthetic is modern, urgent, and conversion-oriented.
 
-## Gherkin Requirements
+## Requirements
 
-### Background
+### Feature: ModalOffer template behaviour
 
-Given the page loads with a modal overlay
-When the viewport is displayed
-Then the modal is centered in the viewport
-And the modal has a promotional offer layout
+**Background**
 
-### Scenario: Modal displays offer content
+- **GIVEN** the page loads with a modal overlay
+- **WHEN** the viewport is displayed
+- **THEN** the modal is centered in the viewport
+- **AND** the modal has a promotional offer layout
 
-Given the modal is open
-When the user views the modal
-Then a headline (e.g., "Special Offer") is visible
-And a promotional image or graphic is displayed
-And descriptive text about the offer is shown
-And a CTA button is prominently displayed
+#### Scenario: Modal displays offer content
 
-### Scenario: CTA button interaction
+- **GIVEN** the modal is open
+- **WHEN** the user views the modal
+- **THEN** a headline (e.g., "Special Offer") is visible
+- **AND** a promotional image or graphic is displayed
+- **AND** descriptive text about the offer is shown
+- **AND** a CTA button is prominently displayed
 
-Given the modal is open
-When the user clicks the CTA button
-Then the button shows a hover state (darker orange)
-And the click triggers the intended action (e.g., navigation, form)
+#### Scenario: CTA button interaction
 
-### Scenario: Modal closes on close button click
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the CTA button
+- **THEN** the button shows a hover state (darker orange)
+- **AND** the click triggers the intended action (e.g., navigation, form)
 
-Given the modal is open
-When the user clicks the close button (X)
-Then the modal closes with a fade-out animation
-And the page content is visible again
+#### Scenario: Modal closes on close button click
 
-### Scenario: Modal closes on backdrop click
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes with a fade-out animation
+- **AND** the page content is visible again
 
-Given the modal is open
-When the user clicks the dark backdrop area outside the modal
-Then the modal closes
-And the page content is visible again
+#### Scenario: Modal closes on backdrop click
 
-### Scenario: Modal closes on Escape key
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the dark backdrop area outside the modal
+- **THEN** the modal closes
+- **AND** the page content is visible again
 
-Given the modal is open
-When the user presses the Escape key
-Then the modal closes
-And the page content is visible again
+#### Scenario: Modal closes on Escape key
 
-### Scenario: Accessibility - modal focus trap
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
+- **AND** the page content is visible again
 
-Given the modal is open
-When the user presses Tab repeatedly
-Then focus stays trapped within the modal
-And focus cycles through CTA button and close button
+#### Scenario: Accessibility - modal focus trap
 
-### Scenario: Accessibility - aria attributes
+- **GIVEN** the modal is open
+- **WHEN** the user presses Tab repeatedly
+- **THEN** focus stays trapped within the modal
+- **AND** focus cycles through CTA button and close button
 
-Given the modal is rendered
-Then the modal container has `role="dialog"`
-And the modal has `aria-labelledby` pointing to the headline
-And the modal has `aria-hidden="true"` when closed
-And the close button has `aria-label="Close"`
+#### Scenario: Accessibility - aria attributes
 
-### Scenario: Responsive layout
+- **GIVEN** the modal is rendered
+- **THEN** the modal container has `role="dialog"`
+- **AND** the modal has `aria-labelledby` pointing to the headline
+- **AND** the modal has `aria-hidden="true"` when closed
+- **AND** the close button has `aria-label="Close"`
 
-Given the page is viewed on a mobile viewport (375px width)
-Then the modal scales appropriately
-And the CTA button remains prominent
-And the close button remains accessible
+#### Scenario: Responsive layout
 
-### Scenario: Design token verification
+- **GIVEN** the page is viewed on a mobile viewport (375px width)
+- **THEN** the modal scales appropriately
+- **AND** the CTA button remains prominent
+- **AND** the close button remains accessible
 
-Given the page is rendered
-Then the modal background is white
-And the CTA button color is orange (#ff6b35)
-And the button text is white
-And the modal has rounded corners
+#### Scenario: Design token verification
+
+- **GIVEN** the page is rendered
+- **THEN** the modal background is white
+- **AND** the CTA button color is orange (#ff6b35)
+- **AND** the button text is white
+- **AND** the modal has rounded corners

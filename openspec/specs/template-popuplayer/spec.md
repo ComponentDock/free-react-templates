@@ -34,42 +34,50 @@ Recreation of ColorLib **Modal 10** — a newsletter subscription modal with a b
 | Modal border-radius  | `0.3rem`                   | Slight rounding                                    |
 | Icon circle          | `200px × 200px`            | Background rgba(255,255,255,0.2), 50% border-radius |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page loads with launch button
-  Given the user visits the page
-  Then the heading "Modal 10" is visible
-  And a "Launch Modal 10" button is displayed
+### Feature: PopupLayer template behaviour
 
-### Scenario: Modal opens on button click
-  Given the user clicks the "Launch Modal 10" button
-  Then the modal dialog appears centered on screen
-  And the modal header shows a background image
-  And the modal body displays "Newsletter" heading
-  And an email icon is shown
+#### Scenario: Page loads with launch button
 
-### Scenario: Newsletter form is displayed
-  Given the modal is open
-  Then the heading "Subscribe to our newsletter" is visible
-  And an email input field with placeholder "Enter email address" is shown
-  And a "Subscribe" button is displayed
+- **GIVEN** the user visits the page
+- **THEN** the heading "Modal 10" is visible
+- **AND** a "Launch Modal 10" button is displayed
 
-### Scenario: Form submission
-  Given the modal is open
-  When the user enters an email and clicks "Subscribe"
-  Then the form submits (prevent default)
+#### Scenario: Modal opens on button click
 
-### Scenario: Modal closes
-  Given the modal is open
-  When the user clicks the close button (X)
-  Then the modal closes
-  And the page returns to the initial state
+- **GIVEN** the user clicks the "Launch Modal 10" button
+- **THEN** the modal dialog appears centered on screen
+- **AND** the modal header shows a background image
+- **AND** the modal body displays "Newsletter" heading
+- **AND** an email icon is shown
 
-### Scenario: Responsive layout
-  Given the user views on a mobile device
-  Then the modal takes full width
-  And the form inputs stack vertically
-  And the padding adjusts for smaller screens
+#### Scenario: Newsletter form is displayed
+
+- **GIVEN** the modal is open
+- **THEN** the heading "Subscribe to our newsletter" is visible
+- **AND** an email input field with placeholder "Enter email address" is shown
+- **AND** a "Subscribe" button is displayed
+
+#### Scenario: Form submission
+
+- **GIVEN** the modal is open
+- **WHEN** the user enters an email and clicks "Subscribe"
+- **THEN** the form submits (prevent default)
+
+#### Scenario: Modal closes
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes
+- **AND** the page returns to the initial state
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views on a mobile device
+- **THEN** the modal takes full width
+- **AND** the form inputs stack vertically
+- **AND** the padding adjusts for smaller screens
 
 ## Verification Checklist
 

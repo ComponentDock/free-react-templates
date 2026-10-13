@@ -85,129 +85,125 @@ Extracted from `https://preview.colorlib.com/theme/carries/style.css`:
     - Copyright bar with "Made with ❤ by Colorlib" → replaced with
       "Component Dock" link.
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar renders with logo and navigation links
-  Given the user loads the vessel page
-  Then the navbar is visible with "Vessel" logo
-  And navigation links "Home", "About", "Service", "Blog", "Contact" are present
-  And utility icons (user, search, cart) are visible
+#### Scenario: Navbar renders with logo and navigation links
 
-Scenario: Navbar dropdown menus expand on hover
-  Given the user hovers over "About"
-  Then a dropdown with sub-links appears
+- **GIVEN** the user loads the vessel page
+- **THEN** the navbar is visible with "Vessel" logo
+- **AND** navigation links "Home", "About", "Service", "Blog", "Contact" are present
+- **AND** utility icons (user, search, cart) are visible
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls past the hero
-  Then the navbar sticks to the top of the viewport
-```
+#### Scenario: Navbar dropdown menus expand on hover
+
+- **GIVEN** the user hovers over "About"
+- **THEN** a dropdown with sub-links appears
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar sticks to the top of the viewport
 
 ### Hero Slider
 
-```gherkin
-Scenario: Hero slider displays headline and CTAs
-  Given the user loads the page
-  Then the hero section shows an uppercase headline
-  And a subtitle paragraph is visible
-  And two CTA buttons are present ("Our Service", "Get A Quote")
+#### Scenario: Hero slider displays headline and CTAs
 
-Scenario: Hero background is a full-width image
-  Given the hero is rendered
-  Then the background covers the full viewport width
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero section shows an uppercase headline
+- **AND** a subtitle paragraph is visible
+- **AND** two CTA buttons are present ("Our Service", "Get A Quote")
+
+#### Scenario: Hero background is a full-width image
+
+- **GIVEN** the hero is rendered
+- **THEN** the background covers the full viewport width
 
 ### Service Cards
 
-```gherkin
-Scenario: Three service cards render on desktop
-  Given the user views the service cards section on desktop
-  Then 3 cards are displayed in a row
-  And each card has an image, icon badge, title, and description
+#### Scenario: Three service cards render on desktop
 
-Scenario: Service cards are accessible
-  Given the service cards section loads
-  Then each card image has alt text
-  And each card title is a heading element
-```
+- **GIVEN** the user views the service cards section on desktop
+- **THEN** 3 cards are displayed in a row
+- **AND** each card has an image, icon badge, title, and description
+
+#### Scenario: Service cards are accessible
+
+- **GIVEN** the service cards section loads
+- **THEN** each card image has alt text
+- **AND** each card title is a heading element
 
 ### About / Stats
 
-```gherkin
-Scenario: Stats counters display numeric values
-  Given the about section loads
-  Then 3 stat blocks are visible with numbers and labels
-  And the stat blocks show "Project Done" labels
+#### Scenario: Stats counters display numeric values
 
-Scenario: Quote form is present
-  Given the about section loads
-  Then a contact/quote form with input and send button is visible
-```
+- **GIVEN** the about section loads
+- **THEN** 3 stat blocks are visible with numbers and labels
+- **AND** the stat blocks show "Project Done" labels
+
+#### Scenario: Quote form is present
+
+- **GIVEN** the about section loads
+- **THEN** a contact/quote form with input and send button is visible
 
 ### Service Catalog
 
-```gherkin
-Scenario: Service catalog shows checklist
-  Given the user views the service catalog
-  Then a "Why Choose Us?" heading is visible
-  And a checklist of 4 items is displayed
-  And a "Learn More" link is present
-```
+#### Scenario: Service catalog shows checklist
+
+- **GIVEN** the user views the service catalog
+- **THEN** a "Why Choose Us?" heading is visible
+- **AND** a checklist of 4 items is displayed
+- **AND** a "Learn More" link is present
 
 ### Service List (Hexagon Icons)
 
-```gherkin
-Scenario: Four service items render with hexagon icons
-  Given the service list section loads
-  Then 4 service items are displayed
-  And each has a hex-shaped icon container
-  And each has a title, description, and "read more" link
-```
+#### Scenario: Four service items render with hexagon icons
+
+- **GIVEN** the service list section loads
+- **THEN** 4 service items are displayed
+- **AND** each has a hex-shaped icon container
+- **AND** each has a title, description, and "read more" link
 
 ### Promo Features
 
-```gherkin
-Scenario: Four promo blocks render in a grid
-  Given the promo section loads
-  Then 4 feature blocks are displayed
-  And each has an orange icon, title, and short description
-```
+#### Scenario: Four promo blocks render in a grid
+
+- **GIVEN** the promo section loads
+- **THEN** 4 feature blocks are displayed
+- **AND** each has an orange icon, title, and short description
 
 ### Promo CTA
 
-```gherkin
-Scenario: Promo CTA displays over parallax background
-  Given the promo CTA section loads
-  Then a headline about international freight is visible
-  And a "Get a Quote" button is present
-```
+#### Scenario: Promo CTA displays over parallax background
+
+- **GIVEN** the promo CTA section loads
+- **THEN** a headline about international freight is visible
+- **AND** a "Get a Quote" button is present
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel renders
-  Given the testimonials section loads
-  Then a heading "What Client's Say" is visible
-  And client photos are displayed in a carousel
-  And quote text with client name and role is shown
-  And prev/next navigation arrows are present
-```
+#### Scenario: Testimonials carousel renders
+
+- **GIVEN** the testimonials section loads
+- **THEN** a heading "What Client's Say" is visible
+- **AND** client photos are displayed in a carousel
+- **AND** quote text with client name and role is shown
+- **AND** prev/next navigation arrows are present
 
 ### Footer
 
-```gherkin
-Scenario: Footer renders newsletter and columns
-  Given the footer loads
-  Then a newsletter signup with email input and subscribe button is visible
-  And 4 footer columns are displayed (About, Tweets, Links, Images)
-  And the copyright line links to Component Dock
+#### Scenario: Footer renders newsletter and columns
 
-Scenario: Footer background is dark
-  Given the footer is rendered
-  Then the background color is dark gray-blue
-```
+- **GIVEN** the footer loads
+- **THEN** a newsletter signup with email input and subscribe button is visible
+- **AND** 4 footer columns are displayed (About, Tweets, Links, Images)
+- **AND** the copyright line links to Component Dock
+
+#### Scenario: Footer background is dark
+
+- **GIVEN** the footer is rendered
+- **THEN** the background color is dark gray-blue
 
 ## Verification Checklist
 

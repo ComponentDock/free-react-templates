@@ -123,82 +123,92 @@ Extracted from live preview CSS (`style.css`) at
 - Content width: 1170px max (`.content-1170`)
 - Section padding: generous vertical space (~100px+ top/bottom)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Creavox — Creative Agency One-Page Template
 
 #### Scenario: Hero section displays centered logo and tagline
-  - GIVEN the user loads the page
-  - THEN the hero section shows a centered logo image
-  - AND a large heading "We Craft Awesome Web And Graphic Design Solutions"
-  - AND a subtitle in serif font below
-  - AND the background is deep purple with a decorative image overlay
+
+- **GIVEN** the user loads the page
+- **THEN** the hero section shows a centered logo image
+- **AND** a large heading "We Craft Awesome Web And Graphic Design Solutions"
+- **AND** a subtitle in serif font below
+- **AND** the background is deep purple with a decorative image overlay
 
 #### Scenario: Navigation menu anchors to sections
-  - GIVEN the user loads the page
-  - THEN a fixed navigation bar is visible with links: Home, Services,
+
+- **GIVEN** the user loads the page
+- **THEN** a fixed navigation bar is visible with links: Home, Services,
     Portfolio, About, News, Video, Skills, Contact
-  - AND clicking each link scrolls to the corresponding section
+- **AND** clicking each link scrolls to the corresponding section
 
 #### Scenario: Services section shows a card carousel
-  - GIVEN the user scrolls to the Services section
-  - THEN a numbered title "01" with label "Services" appears on a green
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a numbered title "01" with label "Services" appears on a green
     background
-  - AND four service cards are visible (Branding, Mobile Apps, Web, Graphic)
-  - AND each card has an icon, title, and description
-  - AND a next arrow allows sliding to a second set of four cards
+- **AND** four service cards are visible (Branding, Mobile Apps, Web, Graphic)
+- **AND** each card has an icon, title, and description
+- **AND** a next arrow allows sliding to a second set of four cards
 
 #### Scenario: Portfolio section shows a masonry grid
-  - GIVEN the user scrolls to the Portfolio section
-  - THEN a numbered title "02" with label "Portfolio" appears
-  - AND a 2-column masonry grid shows 4 portfolio items with images
-  - AND hovering over a portfolio item reveals an overlay with category
+
+- **GIVEN** the user scrolls to the Portfolio section
+- **THEN** a numbered title "02" with label "Portfolio" appears
+- **AND** a 2-column masonry grid shows 4 portfolio items with images
+- **AND** hovering over a portfolio item reveals an overlay with category
     icon, type label, and item name
-  - AND a "LOAD MORE" button is visible below the grid
+- **AND** a "LOAD MORE" button is visible below the grid
 
 #### Scenario: About section shows bio and team slider
-  - GIVEN the user scrolls to the About section
-  - THEN a numbered title "03" with label "CRAFTERS" appears
-  - AND a two-column layout shows descriptive text on the left and a
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a numbered title "03" with label "CRAFTERS" appears
+- **AND** a two-column layout shows descriptive text on the left and a
     timeline with colored dates on the right
-  - AND below the text, an image slider shows team member photos
-  - AND team member cards show name, position, and bio description
+- **AND** below the text, an image slider shows team member photos
+- **AND** team member cards show name, position, and bio description
 
 #### Scenario: News section shows blog list and testimonials
-  - GIVEN the user scrolls to the News section
-  - THEN a numbered title "04" with label "STORIES" appears
-  - AND four blog articles are listed with sequence numbers (01–04),
+
+- **GIVEN** the user scrolls to the News section
+- **THEN** a numbered title "04" with label "STORIES" appears
+- **AND** four blog articles are listed with sequence numbers (01–04),
     author name, category tag, and headline
-  - AND a "GO TO BLOG" link is at the bottom
-  - AND a testimonial carousel below shows quotes with author names
+- **AND** a "GO TO BLOG" link is at the bottom
+- **AND** a testimonial carousel below shows quotes with author names
 
 #### Scenario: Video section shows feature with icon carousel
-  - GIVEN the user scrolls to the Video section
-  - THEN a numbered title "05" with label "OFFER" appears
-  - AND a two-column layout shows description and a timeline on the left,
-    and a video thumbnail with play button on the right
-  - AND a full-width horizontal carousel below shows icon+label pairs
+
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a numbered title "05" with label "OFFER" appears
+- **AND** a two-column layout shows description and a timeline on the left,
+- **AND** a video thumbnail with play button on the right
+- **AND** a full-width horizontal carousel below shows icon+label pairs
     (Video Editing, Premium Cleer, For All Displays, etc.)
 
 #### Scenario: Skills section shows progress bars
-  - GIVEN the user scrolls to the Skills section
-  - THEN a numbered title "06" with label "EXPERTISE" appears
-  - AND four animated progress bars are shown: HTML (81%, green),
+
+- **GIVEN** the user scrolls to the Skills section
+- **THEN** a numbered title "06" with label "EXPERTISE" appears
+- **AND** four animated progress bars are shown: HTML (81%, green),
     CSS (93%, gold), PSD (72%, rose), DESIGN (99%, blue)
-  - AND each bar displays its percentage and label text in matching color
+- **AND** each bar displays its percentage and label text in matching color
 
 #### Scenario: Contact section shows form and map
-  - GIVEN the user scrolls to the Contact section
-  - THEN a numbered title "07" with label "Contact" appears
-  - AND a two-column layout shows description text on the left and a
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a numbered title "07" with label "Contact" appears
+- **AND** a two-column layout shows description text on the left and a
     contact form on the right
-  - AND the form has fields: Name, Email, Subject, Message, and SEND button
-  - AND an embedded Google Map iframe appears full-width below the form
+- **AND** the form has fields: Name, Email, Subject, Message, and SEND button
+- **AND** an embedded Google Map iframe appears full-width below the form
 
 #### Scenario: Footer shows copyright and social links
-  - GIVEN the user scrolls to the bottom of the page
-  - THEN a footer shows copyright text and a link to Component Dock
-  - AND social media icon links (Twitter, Behance, Dribbble, Facebook, RSS)
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer shows copyright text and a link to Component Dock
+- **AND** social media icon links (Twitter, Behance, Dribbble, Facebook, RSS)
     are visible on the right
 
 ## Verification Checklist

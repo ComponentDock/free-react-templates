@@ -235,85 +235,96 @@ Browsed visually in the browser — confirms the live preview DOM exactly:
 | Grid item              | 134px height, 30% width, 7px radius        | Interest grid tiles                             |
 | Form holder dot        | 10px × 10px, `2px solid #f6c2ec`            | Decorative circle before each field, active fills pink |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Charm — 3-Step Profile & Order Wizard
 
-  Scenario: Page loads with section 1 active (Profile)
-    Given the user opens the Charm page
-    Then a three-step wizard should be visible on a pastel gradient background
-    And section 1 "Profile" should be displayed and active
-    And sections 2 and 3 should be available but not active
-    And the form should contain a profile avatar image area
-    And the form should contain a "Choose Picture" upload label with a camera icon
-    And the form should contain "First Name", "Last Name", and "Team Name" inputs
-    And the form should contain an "Email" input field
-    And the form should contain a "Create a password" input field
-    And a "Continue" button with a right arrow should be visible
+#### Scenario: Page loads with section 1 active (Profile)
 
-  Scenario: Step 1 profile form layout
-    Given the user is on section 1 "Profile"
-    Then the avatar and "Choose Picture" label should be on the left (≈33.75% width)
-    And the First Name, Last Name, Team Name, Email, and Create Password fields should be on the right (≈66.25% width)
-    And First Name, Last Name, and Team Name should be side by side in a row
-    And the "Create a password" input should be type "password"
-    And each input field should have uppercase placeholder text
+- **GIVEN** the user opens the Charm page
+- **THEN** a three-step wizard should be visible on a pastel gradient background
+- **AND** section 1 "Profile" should be displayed and active
+- **AND** sections 2 and 3 should be available but not active
+- **AND** the form should contain a profile avatar image area
+- **AND** the form should contain a "Choose Picture" upload label with a camera icon
+- **AND** the form should contain "First Name", "Last Name", and "Team Name" inputs
+- **AND** the form should contain an "Email" input field
+- **AND** the form should contain a "Create a password" input field
+- **AND** a "Continue" button with a right arrow should be visible
 
-  Scenario: Step indicator dots
-    Given the user is on any step
-    Then a horizontal dot indicator should be visible at the bottom of the card
-    And the current step's dot should be 22px wide and filled with the pink accent color
-    And the inactive step dots should be 10px circles with a white border
+#### Scenario: Step 1 profile form layout
 
-  Scenario: Navigation buttons
-    Given the user is on section 1
-    Then a "Continue" button (blue `#aac1f0` with white chevron) should be visible
-    And a "Back" button should not be visible (disabled on step 1)
+- **GIVEN** the user is on section 1 "Profile"
+- **THEN** the avatar and "Choose Picture" label should be on the left (≈33.75% width)
+- **AND** the First Name, Last Name, Team Name, Email, and Create Password fields should be on the right (≈66.25% width)
+- **AND** First Name, Last Name, and Team Name should be side by side in a row
+- **AND** the "Create a password" input should be type "password"
+- **AND** each input field should have uppercase placeholder text
 
-  Scenario: Navigate to section 2
-    Given the user is on section 1
-    When the user clicks "Continue"
-    Then section 2 (interest grid) should become active
-    And a "Back" button (pink `#f6c2ec`) should be visible
-    And the step indicator should advance to highlight step 2
+#### Scenario: Step indicator dots
 
-  Scenario: Section 2 interest grid
-    Given the user is on section 2
-    Then a 2×3 grid of interest icons should be displayed:
+- **GIVEN** the user is on any step
+- **THEN** a horizontal dot indicator should be visible at the bottom of the card
+- **AND** the current step's dot should be 22px wide and filled with the pink accent color
+- **AND** the inactive step dots should be 10px circles with a white border
+
+#### Scenario: Navigation buttons
+
+- **GIVEN** the user is on section 1
+- **THEN** a "Continue" button (blue `#aac1f0` with white chevron) should be visible
+- **AND** a "Back" button should not be visible (disabled on step 1)
+
+#### Scenario: Navigate to section 2
+
+- **GIVEN** the user is on section 1
+- **WHEN** the user clicks "Continue"
+- **THEN** section 2 (interest grid) should become active
+- **AND** a "Back" button (pink `#f6c2ec`) should be visible
+- **AND** the step indicator should advance to highlight step 2
+
+#### Scenario: Section 2 interest grid
+
+- **GIVEN** the user is on section 2
+- **THEN** a 2×3 grid of interest icons should be displayed:
     Programming, Research, Teacher, Tour Guide, Business, Artist
-    And each grid item should be clickable with a background image
+- **AND** each grid item should be clickable with a background image
 
-  Scenario: Navigate to section 3
-    Given the user is on section 2
-    When the user clicks "Continue"
-    Then section 3 (address form) should become active
-    And the step indicator should advance to highlight step 3
+#### Scenario: Navigate to section 3
 
-  Scenario: Section 3 address form
-    Given the user is on section 3
-    Then the form should contain "Street Name" and "Street Number" inputs side by side
-    And the form should contain "City" and "Country" inputs side by side
-    And a "Finish" button should be visible
+- **GIVEN** the user is on section 2
+- **WHEN** the user clicks "Continue"
+- **THEN** section 3 (address form) should become active
+- **AND** the step indicator should advance to highlight step 3
 
-  Scenario: Back navigation
-    Given the user is on section 2 or 3
-    When the user clicks "Back"
-    Then the wizard should return to the previous section with a fade transition
-    And the step indicator should move back
+#### Scenario: Section 3 address form
 
-  Scenario: Unblocked navigation
-    Given the user is on any step
-    When the user clicks on a step dot in the indicator
-    Then the wizard should navigate to that step directly (no validation gating)
+- **GIVEN** the user is on section 3
+- **THEN** the form should contain "Street Name" and "Street Number" inputs side by side
+- **AND** the form should contain "City" and "Country" inputs side by side
+- **AND** a "Finish" button should be visible
 
-  Scenario: Responsive layout on mobile
-    Given the user opens the page on a viewport width less than 768px
-    Then the background gradient should be replaced with a solid color
-    And the wizard card should fit the screen width
-    And the avatar should stack above the form fields
-    And the grid items should be full-width
-    And the step indicator dots should be hidden
-    And the form rows should stack vertically
+#### Scenario: Back navigation
+
+- **GIVEN** the user is on section 2 or 3
+- **WHEN** the user clicks "Back"
+- **THEN** the wizard should return to the previous section with a fade transition
+- **AND** the step indicator should move back
+
+#### Scenario: Unblocked navigation
+
+- **GIVEN** the user is on any step
+- **WHEN** the user clicks on a step dot in the indicator
+- **THEN** the wizard should navigate to that step directly (no validation gating)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a viewport width less than 768px
+- **THEN** the background gradient should be replaced with a solid color
+- **AND** the wizard card should fit the screen width
+- **AND** the avatar should stack above the form fields
+- **AND** the grid items should be full-width
+- **AND** the step indicator dots should be hidden
+- **AND** the form rows should stack vertically
 
 ## Verification checklist
 

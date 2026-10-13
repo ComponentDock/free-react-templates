@@ -56,139 +56,133 @@ The banner uses a diagonal gradient: `linear-gradient(135deg, #ff7e5f 0%, #feb47
 - Footer: dark background
 - Newsletter section (within footer): warm gradient (`#ff7e5f` → `#feb47b`)
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```
 Feature: Stratify Navbar
 
-Scenario: Desktop navigation shows all menu items
-  Given the user is on a desktop viewport
-  When the page loads
-  Then the navbar displays "Bizcon" brand logo text
-  And the navbar shows links: Home, About, Blog (with dropdown), Page (with dropdown), Contact
-  And the navbar has a transparent/overlay background on the hero
+#### Scenario: Desktop navigation shows all menu items
 
-Scenario: Mobile hamburger menu toggles navigation
-  Given the user is on a mobile viewport
-  When the user taps the hamburger icon
-  Then the navigation menu expands/collapses
-  And all nav items are accessible
-```
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar displays "Bizcon" brand logo text
+- **AND** the navbar shows links: Home, About, Blog (with dropdown), Page (with dropdown), Contact
+- **AND** the navbar has a transparent/overlay background on the hero
+
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu expands/collapses
+- **AND** all nav items are accessible
 
 ### Hero / Banner
 
-```
 Feature: Stratify Hero Section
 
-Scenario: Hero displays headline and CTA
-  Given the user lands on the page
-  When the hero section renders
-  Then it shows the headline "Lead from Front in Business Innovation"
-  And it shows supporting subtext
-  And a "Learn More" primary CTA button is visible
-  And an "Intro Video" link/button is present
-  And the background uses the orange-to-peach gradient
-  And decorative floating animation elements are present
+#### Scenario: Hero displays headline and CTA
 
-Scenario: Hero has the warm gradient background
-  Given the user views the hero section
-  Then the background displays a diagonal gradient from coral-orange to peach
-```
+- **GIVEN** the user lands on the page
+- **WHEN** the hero section renders
+- **THEN** it shows the headline "Lead from Front in Business Innovation"
+- **AND** it shows supporting subtext
+- **AND** a "Learn More" primary CTA button is visible
+- **AND** an "Intro Video" link/button is present
+- **AND** the background uses the orange-to-peach gradient
+- **AND** decorative floating animation elements are present
+
+#### Scenario: Hero has the warm gradient background
+
+- **GIVEN** the user views the hero section
+- **THEN** the background displays a diagonal gradient from coral-orange to peach
 
 ### About Section
 
-```
 Feature: Stratify About Section
 
-Scenario: About section shows company experience
-  Given the user scrolls to the about area
-  Then the heading reads "We Have 24 Year Experience in consulting"
-  And descriptive paragraph text is shown
-  And an "About Us" CTA button is visible
-  And the layout is a two-column split (text left, image right or vice versa)
-```
+#### Scenario: About section shows company experience
+
+- **GIVEN** the user scrolls to the about area
+- **THEN** the heading reads "We Have 24 Year Experience in consulting"
+- **AND** descriptive paragraph text is shown
+- **AND** an "About Us" CTA button is visible
+- **AND** the layout is a two-column split (text left, image right or vice versa)
 
 ### Services Section
 
-```
 Feature: Stratify Services Section
 
-Scenario: Services section on gray background shows service cards
-  Given the user scrolls to the services area
-  Then the section has a gray (#f7f7f7) background
-  And the heading reads "We Provide Best Services"
-  And three service cards are displayed
-  And each card has a title, description, and icon/number indicator
+#### Scenario: Services section on gray background shows service cards
 
-Scenario: Services section has light background
-  Given the user views the services section
-  Then the background color is #f7f7f7 (light gray)
-```
+- **GIVEN** the user scrolls to the services area
+- **THEN** the section has a gray (#f7f7f7) background
+- **AND** the heading reads "We Provide Best Services"
+- **AND** three service cards are displayed
+- **AND** each card has a title, description, and icon/number indicator
+
+#### Scenario: Services section has light background
+
+- **GIVEN** the user views the services section
+- **THEN** the background color is #f7f7f7 (light gray)
 
 ### Reviews / Testimonials
 
-```
 Feature: Stratify Reviews Section
 
-Scenario: Testimonials carousel shows customer reviews
-  Given the user scrolls to the reviews area
-  Then the heading reads "Customer Are Saying"
-  And a carousel/slider of testimonials is displayed
-  And each testimonial shows a name, role/title, and quote
-  And navigation dots or arrows allow browsing testimonials
-```
+#### Scenario: Testimonials carousel shows customer reviews
+
+- **GIVEN** the user scrolls to the reviews area
+- **THEN** the heading reads "Customer Are Saying"
+- **AND** a carousel/slider of testimonials is displayed
+- **AND** each testimonial shows a name, role/title, and quote
+- **AND** navigation dots or arrows allow browsing testimonials
 
 ### Portfolio Section
 
-```
 Feature: Stratify Portfolio Section
 
-Scenario: Portfolio grid shows project thumbnails
-  Given the user scrolls to the portfolio area
-  Then the heading reads "Explore Our Best Practice Area"
-  And four portfolio items are displayed in a grid
-  And each item has a title label overlay
-  And a "Load More" button is available
-```
+#### Scenario: Portfolio grid shows project thumbnails
+
+- **GIVEN** the user scrolls to the portfolio area
+- **THEN** the heading reads "Explore Our Best Practice Area"
+- **AND** four portfolio items are displayed in a grid
+- **AND** each item has a title label overlay
+- **AND** a "Load More" button is available
 
 ### Secondary Services / CTA
 
-```
 Feature: Stratify Secondary Services Section
 
-Scenario: Secondary services section with CTA
-  Given the user scrolls past the portfolio
-  Then the heading reads "We Providing high quality adviser service"
-  And descriptive text is shown
-  And a "Learn More" CTA button is visible
-```
+#### Scenario: Secondary services section with CTA
+
+- **GIVEN** the user scrolls past the portfolio
+- **THEN** the heading reads "We Providing high quality adviser service"
+- **AND** descriptive text is shown
+- **AND** a "Learn More" CTA button is visible
 
 ### Blog Section
 
-```
 Feature: Stratify Blog Section
 
-Scenario: Blog section shows recent posts
-  Given the user scrolls to the blog area
-  Then the heading reads "Update From Blog"
-  And three blog post cards are displayed
-  And each card has a thumbnail image, title, and "read more" link
-```
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the blog area
+- **THEN** the heading reads "Update From Blog"
+- **AND** three blog post cards are displayed
+- **AND** each card has a thumbnail image, title, and "read more" link
 
 ### Footer
 
-```
 Feature: Stratify Footer
 
-Scenario: Footer contains newsletter signup and links
-  Given the user scrolls to the footer
-  Then a newsletter signup section is shown with the warm gradient background
-  And the footer has columns: Top Products, Quick Links, Features, Resources
-  And the copyright bar is shown at the bottom
-  And the footer links to https://www.componentdock.com/ (branded "Component Dock")
-```
+#### Scenario: Footer contains newsletter signup and links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a newsletter signup section is shown with the warm gradient background
+- **AND** the footer has columns: Top Products, Quick Links, Features, Resources
+- **AND** the copyright bar is shown at the bottom
+- **AND** the footer links to https://www.componentdock.com/ (branded "Component Dock")
 
 ## Verification checklist
 

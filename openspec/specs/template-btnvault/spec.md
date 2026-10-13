@@ -11,7 +11,7 @@ Recreation of ColorLib **Bootstrap Buttons 07** (`https://colorlib.com/wp/templa
 - **Button Shapes**: Rounded-full (pill / circular buttons), rounded-lg, sharp edges, outline variants, gradient fills, shadow effects, icon-badge buttons, social buttons, floating action buttons.
 - **Section Backgrounds**: Clean white and light gray (`#f8fafc`) cards with soft drop shadows and border accents.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Button Showcase & Playground
 
@@ -19,27 +19,27 @@ As a developer or designer visiting BtnVault, I want to explore various styled b
 
 #### Scenario: View button categories
 
-- Given the user opens the BtnVault page
-- When the page loads
-- Then the user sees navigation tabs for Solid Buttons, Gradient Buttons, Outline Buttons, Pill & Circular Buttons, Social Buttons, and Floating Action Buttons.
+- **GIVEN** the user opens the BtnVault page
+- **WHEN** the page loads
+- **THEN** the user sees navigation tabs for Solid Buttons, Gradient Buttons, Outline Buttons, Pill & Circular Buttons, Social Buttons, and Floating Action Buttons
 
 #### Scenario: Interactive state testing
 
-- Given the user is on the button showcase section
-- When the user hovers or clicks a button variant
-- Then the button exhibits interactive feedback (scale, shadow elevation, color shift, ripple or loading spinner state).
+- **GIVEN** the user is on the button showcase section
+- **WHEN** the user hovers or clicks a button variant
+- **THEN** the button exhibits interactive feedback (scale, shadow elevation, color shift, ripple or loading spinner state)
 
 #### Scenario: Copy button snippet
 
-- Given the user clicks "Copy Code" on a button card
-- When the action is triggered
-- Then the Tailwind / React JSX code snippet is copied to the clipboard with a success toast confirmation.
+- **GIVEN** the user clicks "Copy Code" on a button card
+- **WHEN** the action is triggered
+- **THEN** the Tailwind / React JSX code snippet is copied to the clipboard with a success toast confirmation
 
 #### Scenario: Footer attribution
 
-- Given the user scrolls to the bottom of the page
-- When the footer is rendered
-- Then it contains a copyright notice and a mandatory link to `https://www.componentdock.com/` ("Component Dock").
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it contains a copyright notice and a mandatory link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

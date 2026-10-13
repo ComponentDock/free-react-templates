@@ -91,7 +91,7 @@ newsletter signup.
 11. **Contact** — "If you need, Just drop us a line" with contact form
 12. **Footer** — 3-column: About Us, Contact Us, Newsletter + copyright
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Navbar
 

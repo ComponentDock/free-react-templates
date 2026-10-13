@@ -44,146 +44,157 @@ Recreation of the ColorLib "Fashiop" template as a React 19 + Vite + Tailwind 4 
 7. **Newsletter** — subscription area with `#f9f9ff` bg, centered title "Subscribe for Our Newsletter", subtitle "We won't send any kind of spam", email input with pill border-radius, "Get Started" button (blue, positioned inside input)
 8. **Footer** — 4-column layout: About Us text, Newsletter form with arrow button, Instagram feed (8 thumbnail images), Follow Us social icons (facebook, twitter, dribbble, behance); bottom bar with copyright + "Made with ❤ by Colorlib" → replace with "Component Dock"
 
-## Gherkin requirements
+## Requirements
 
 ### TopBar
 
-```gherkin
 Feature: TopBar
-  Scenario: TopBar displays phone number and utility links
-    Given the user loads the page
-    Then a thin bar shows "Call Us: 012 44 5698 7456 896" on the left
-    And "Login/Register", "My Account", "Contact Us" links appear on the right
 
-  Scenario: TopBar is visually subtle
-    Given the user views the top bar
-    Then the background is light gray
-    And the text is small and muted (#777777)
-```
+#### Scenario: TopBar displays phone number and utility links
+
+- **GIVEN** the user loads the page
+- **THEN** a thin bar shows "Call Us: 012 44 5698 7456 896" on the left
+- **AND** "Login/Register", "My Account", "Contact Us" links appear on the right
+
+#### Scenario: TopBar is visually subtle
+
+- **GIVEN** the user views the top bar
+- **THEN** the background is light gray
+- **AND** the text is small and muted (#777777)
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Navbar shows logo, nav links, and icon actions
-    Given the user loads the page
-    Then a logo appears on the left
-    And centered nav links include "Home", "Shop", "Blog", "Pages", "Contact"
-    And right-side icons include search, user, heart, and cart
 
-  Scenario: Navbar is sticky or static at top
-    Given the user scrolls down
-    Then the navbar remains accessible at the top of the viewport
+#### Scenario: Navbar shows logo, nav links, and icon actions
 
-  Scenario: Nav icons have vertical dividers
-    Given the user views the right-side icons
-    Then each icon is separated by a vertical line divider
-```
+- **GIVEN** the user loads the page
+- **THEN** a logo appears on the left
+- **AND** centered nav links include "Home", "Shop", "Blog", "Pages", "Contact"
+- **AND** right-side icons include search, user, heart, and cart
+
+#### Scenario: Navbar is sticky or static at top
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar remains accessible at the top of the viewport
+
+#### Scenario: Nav icons have vertical dividers
+
+- **GIVEN** the user views the right-side icons
+- **THEN** each icon is separated by a vertical line divider
 
 ### Hero
 
-```gherkin
 Feature: Hero Banner
-  Scenario: Hero shows fashion image with centered content
-    Given the user loads the page
-    Then a full-width hero banner displays a fashion image
-    And a dark overlay covers the image
-    And centered text reads "Fashion for Upcoming Winter"
-    And a description paragraph appears below the heading
-    And a "View Collection" button is shown
 
-  Scenario: Hero button has correct styling
-    Given the user views the hero CTA
-    Then the button has white/light background (#f9f9ff)
-    And the button text is dark (#222222)
-    And the button has border-radius 5px
-```
+#### Scenario: Hero shows fashion image with centered content
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero banner displays a fashion image
+- **AND** a dark overlay covers the image
+- **AND** centered text reads "Fashion for Upcoming Winter"
+- **AND** a description paragraph appears below the heading
+- **AND** a "View Collection" button is shown
+
+#### Scenario: Hero button has correct styling
+
+- **GIVEN** the user views the hero CTA
+- **THEN** the button has white/light background (#f9f9ff)
+- **AND** the button text is dark (#222222)
+- **AND** the button has border-radius 5px
 
 ### HotDeals
 
-```gherkin
 Feature: Hot Deals
-  Scenario: Two hot deal cards are displayed side-by-side
-    Given the user loads the page
-    Then two large image cards appear in a 2-column layout
-    And each card shows "Hot Deals of this Month" and "shop now"
 
-  Scenario: Hot deal cards have dark overlay
-    Given the user views the hot deal cards
-    Then the background is black (#000000)
-    And the image has opacity 0.5
+#### Scenario: Two hot deal cards are displayed side-by-side
 
-  Scenario: Hot deal cards change on hover
-    Given the user hovers over a hot deal card
-    Then the background transitions to brand blue (#1641ff)
-    And the image fades to opacity 0.2
-```
+- **GIVEN** the user loads the page
+- **THEN** two large image cards appear in a 2-column layout
+- **AND** each card shows "Hot Deals of this Month" and "shop now"
+
+#### Scenario: Hot deal cards have dark overlay
+
+- **GIVEN** the user views the hot deal cards
+- **THEN** the background is black (#000000)
+- **AND** the image has opacity 0.5
+
+#### Scenario: Hot deal cards change on hover
+
+- **GIVEN** the user hovers over a hot deal card
+- **THEN** the background transitions to brand blue (#1641ff)
+- **AND** the image fades to opacity 0.2
 
 ### ClientLogos
 
-```gherkin
 Feature: Client Logos
-  Scenario: Logo carousel shows brand logos
-    Given the user loads the page
-    Then a horizontal row of client logos is displayed
-    And the logos scroll or auto-rotate
-```
+
+#### Scenario: Logo carousel shows brand logos
+
+- **GIVEN** the user loads the page
+- **THEN** a horizontal row of client logos is displayed
+- **AND** the logos scroll or auto-rotate
 
 ### FeaturedProducts
 
-```gherkin
 Feature: Featured Products
-  Scenario: Section title and subtitle are displayed
-    Given the user loads the page
-    Then "Featured Products" heading appears
-    And a subtitle "Who are in extremely love with eco friendly system." is shown
 
-  Scenario: Product grid shows items with hover actions
-    Given the user views the product grid
-    Then product cards display an image, product name, and price
-    And hovering over a product reveals heart and cart icon overlays
+#### Scenario: Section title and subtitle are displayed
 
-  Scenario: Pagination is shown below the grid
-    Given the user scrolls past the products
-    Then pagination controls (01, 02, 03, ..., 09) with prev/next arrows appear
-```
+- **GIVEN** the user loads the page
+- **THEN** "Featured Products" heading appears
+- **AND** a subtitle "Who are in extremely love with eco friendly system." is shown
+
+#### Scenario: Product grid shows items with hover actions
+
+- **GIVEN** the user views the product grid
+- **THEN** product cards display an image, product name, and price
+- **AND** hovering over a product reveals heart and cart icon overlays
+
+#### Scenario: Pagination is shown below the grid
+
+- **GIVEN** the user scrolls past the products
+- **THEN** pagination controls (01, 02, 03, ..., 09) with prev/next arrows appear
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter Subscription
-  Scenario: Subscription form is displayed
-    Given the user loads the page
-    Then a section with light lavender background (#f9f9ff) appears
-    And the title reads "Subscribe for Our Newsletter"
-    And a subtitle "We won't send any kind of spam" is shown
-    And an email input with pill-shaped border-radius is present
-    And a "Get Started" button is inside or adjacent to the input
 
-  Scenario: Newsletter button styling
-    Given the user views the subscribe button
-    Then the button background is #1641ff
-    And the button text is white (#fffdff)
-    And the button has rounded (pill) shape
-```
+#### Scenario: Subscription form is displayed
+
+- **GIVEN** the user loads the page
+- **THEN** a section with light lavender background (#f9f9ff) appears
+- **AND** the title reads "Subscribe for Our Newsletter"
+- **AND** a subtitle "We won't send any kind of spam" is shown
+- **AND** an email input with pill-shaped border-radius is present
+- **AND** a "Get Started" button is inside or adjacent to the input
+
+#### Scenario: Newsletter button styling
+
+- **GIVEN** the user views the subscribe button
+- **THEN** the button background is #1641ff
+- **AND** the button text is white (#fffdff)
+- **AND** the button has rounded (pill) shape
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer has four columns
-    Given the user loads the page
-    Then the footer shows "About Us" text, "Newsletter" form, "Instagram Feed" thumbnails, and "Follow Us" social links
 
-  Scenario: Footer social icons are present
-    Given the user views the Follow Us section
-    Then icons for Facebook, Twitter, Dribbble, and Behance are shown
+#### Scenario: Footer has four columns
 
-  Scenario: Footer bottom bar shows copyright
-    Given the user views the footer bottom
-    Then a copyright line with a heart icon is displayed
-    And it links to Component Dock (not ColorLib)
-```
+- **GIVEN** the user loads the page
+- **THEN** the footer shows "About Us" text, "Newsletter" form, "Instagram Feed" thumbnails, and "Follow Us" social links
+
+#### Scenario: Footer social icons are present
+
+- **GIVEN** the user views the Follow Us section
+- **THEN** icons for Facebook, Twitter, Dribbble, and Behance are shown
+
+#### Scenario: Footer bottom bar shows copyright
+
+- **GIVEN** the user views the footer bottom
+- **THEN** a copyright line with a heart icon is displayed
+- **AND** it links to Component Dock (not ColorLib)
 
 ## Verification checklist
 

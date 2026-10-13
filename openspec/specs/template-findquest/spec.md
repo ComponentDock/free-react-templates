@@ -71,161 +71,170 @@ The search form inside the card is laid out in two rows:
 The gradient card contrasts sharply against the dark coastal background, making
 the form the clear focal point. The design is modern, clean, and travel-oriented.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Section: Hero background
 
-```gherkin
 Feature: Hero background
-  Scenario: Full-viewport background image
-    Given the page loads
-    Then a full-viewport hero section is displayed
-    And the hero has a background image filling the entire viewport
-    And the hero has a subtle dark overlay for text contrast
 
-  Scenario: Responsive background
-    Given the page is viewed on a mobile device
-    Then the background image scales to cover the viewport
-    And the hero maintains full viewport height
-```
+#### Scenario: Full-viewport background image
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero section is displayed
+- **AND** the hero has a background image filling the entire viewport
+- **AND** the hero has a subtle dark overlay for text contrast
+
+#### Scenario: Responsive background
+
+- **GIVEN** the page is viewed on a mobile device
+- **THEN** the background image scales to cover the viewport
+- **AND** the hero maintains full viewport height
 
 ### Section: Search card
 
-```gherkin
 Feature: Search card
-  Scenario: Search card rendered
-    Given the page loads
-    Then a search card is displayed centered on the hero
-    And the card has a blue-to-purple-to-pink gradient background
-    And the card has rounded corners (~8–12px border-radius)
-    And the card is approximately 700–800px wide
 
-  Scenario: Card transparency
-    Given the page loads
-    Then the card is slightly semi-transparent (~0.85–0.95 opacity)
-    And the hero background image is partially visible behind the card
-```
+#### Scenario: Search card rendered
+
+- **GIVEN** the page loads
+- **THEN** a search card is displayed centered on the hero
+- **AND** the card has a blue-to-purple-to-pink gradient background
+- **AND** the card has rounded corners (~8–12px border-radius)
+- **AND** the card is approximately 700–800px wide
+
+#### Scenario: Card transparency
+
+- **GIVEN** the page loads
+- **THEN** the card is slightly semi-transparent (~0.85–0.95 opacity)
+- **AND** the hero background image is partially visible behind the card
 
 ### Section: From field
 
-```gherkin
 Feature: From field
-  Scenario: From field rendered
-    Given the page loads
-    Then a "From" label is displayed in white bold text
-    And a text input is displayed with placeholder "City, Region or Airport"
-    And the input has a white background and slight border radius
 
-  Scenario: Typing in From field
-    Given the page is visible
-    When the user types "New York" into the From input
-    Then the input value is "New York"
-```
+#### Scenario: From field rendered
+
+- **GIVEN** the page loads
+- **THEN** a "From" label is displayed in white bold text
+- **AND** a text input is displayed with placeholder "City, Region or Airport"
+- **AND** the input has a white background and slight border radius
+
+#### Scenario: Typing in From field
+
+- **GIVEN** the page is visible
+- **WHEN** the user types "New York" into the From input
+- **THEN** the input value is "New York"
 
 ### Section: To field
 
-```gherkin
 Feature: To field
-  Scenario: To field rendered
-    Given the page loads
-    Then a "To" label is displayed in white bold text
-    And a text input is displayed with placeholder "City, Region or Airport"
-    And the input has a white background and slight border radius
 
-  Scenario: Typing in To field
-    Given the page is visible
-    When the user types "London" into the To input
-    Then the input value is "London"
-```
+#### Scenario: To field rendered
+
+- **GIVEN** the page loads
+- **THEN** a "To" label is displayed in white bold text
+- **AND** a text input is displayed with placeholder "City, Region or Airport"
+- **AND** the input has a white background and slight border radius
+
+#### Scenario: Typing in To field
+
+- **GIVEN** the page is visible
+- **WHEN** the user types "London" into the To input
+- **THEN** the input value is "London"
 
 ### Section: Passengers field
 
-```gherkin
 Feature: Passengers field
-  Scenario: Passengers field rendered
-    Given the page loads
-    Then a "Passengers" label is displayed in white bold text
-    And a dropdown is displayed showing "1 Adult, 0 Children, 1 Room +"
-    And the dropdown has a white background
 
-  Scenario: Changing passenger count
-    Given the page is visible
-    When the user opens the Passengers dropdown
-    Then a list of passenger options is displayed
-    When the user selects "2 Adults, 1 Child, 1 Room"
-    Then the dropdown displays "2 Adults, 1 Child, 1 Room"
-```
+#### Scenario: Passengers field rendered
+
+- **GIVEN** the page loads
+- **THEN** a "Passengers" label is displayed in white bold text
+- **AND** a dropdown is displayed showing "1 Adult, 0 Children, 1 Room +"
+- **AND** the dropdown has a white background
+
+#### Scenario: Changing passenger count
+
+- **GIVEN** the page is visible
+- **WHEN** the user opens the Passengers dropdown
+- **THEN** a list of passenger options is displayed
+- **WHEN** the user selects "2 Adults, 1 Child, 1 Room"
+- **THEN** the dropdown displays "2 Adults, 1 Child, 1 Room"
 
 ### Section: Depart date picker
 
-```gherkin
 Feature: Depart date picker
-  Scenario: Depart field rendered
-    Given the page loads
-    Then a "Depart" label is displayed in white bold text
-    And a date picker is displayed with placeholder "mm/dd/yyyy"
-    And the date picker has a white background and slight border radius
 
-  Scenario: Selecting departure date
-    Given the page is visible
-    When the user clicks the Depart date picker
-    Then a calendar popup is displayed
-    When the user selects a date
-    Then the Depart field displays the selected date in mm/dd/yyyy format
-```
+#### Scenario: Depart field rendered
+
+- **GIVEN** the page loads
+- **THEN** a "Depart" label is displayed in white bold text
+- **AND** a date picker is displayed with placeholder "mm/dd/yyyy"
+- **AND** the date picker has a white background and slight border radius
+
+#### Scenario: Selecting departure date
+
+- **GIVEN** the page is visible
+- **WHEN** the user clicks the Depart date picker
+- **THEN** a calendar popup is displayed
+- **WHEN** the user selects a date
+- **THEN** the Depart field displays the selected date in mm/dd/yyyy format
 
 ### Section: Return date picker
 
-```gherkin
 Feature: Return date picker
-  Scenario: Return field rendered
-    Given the page loads
-    Then a "Return" label is displayed in white bold text
-    And a date picker is displayed with placeholder "mm/dd/yyyy"
-    And the date picker has a white background and slight border radius
 
-  Scenario: Selecting return date
-    Given the page is visible
-    When the user clicks the Return date picker
-    Then a calendar popup is displayed
-    When the user selects a date
-    Then the Return field displays the selected date in mm/dd/yyyy format
-```
+#### Scenario: Return field rendered
+
+- **GIVEN** the page loads
+- **THEN** a "Return" label is displayed in white bold text
+- **AND** a date picker is displayed with placeholder "mm/dd/yyyy"
+- **AND** the date picker has a white background and slight border radius
+
+#### Scenario: Selecting return date
+
+- **GIVEN** the page is visible
+- **WHEN** the user clicks the Return date picker
+- **THEN** a calendar popup is displayed
+- **WHEN** the user selects a date
+- **THEN** the Return field displays the selected date in mm/dd/yyyy format
 
 ### Section: Search button
 
-```gherkin
 Feature: Search button
-  Scenario: Search button rendered
-    Given the page loads
-    Then a green "SEARCH" button is displayed
-    And the button has white uppercase bold text
-    And the button has slight border radius (~4px)
 
-  Scenario: Clicking Search
-    Given the page is visible
-    And the From field has "New York"
-    And the To field has "London"
-    When the user clicks the SEARCH button
-    Then the search action is triggered with the entered values
-```
+#### Scenario: Search button rendered
+
+- **GIVEN** the page loads
+- **THEN** a green "SEARCH" button is displayed
+- **AND** the button has white uppercase bold text
+- **AND** the button has slight border radius (~4px)
+
+#### Scenario: Clicking Search
+
+- **GIVEN** the page is visible
+- **AND** the From field has "New York"
+- **AND** the To field has "London"
+- **WHEN** the user clicks the SEARCH button
+- **THEN** the search action is triggered with the entered values
 
 ### Section: Responsive behavior
 
-```gherkin
 Feature: Responsive behavior
-  Scenario: Mobile layout
-    Given the page is viewed on a screen narrower than 768px
-    Then the search card stacks fields vertically
-    And the From and To inputs each take full width
-    And the Passengers, Depart, Return, and Search button stack vertically
-    And the card width adapts to the viewport
 
-  Scenario: Tablet layout
-    Given the page is viewed on a screen between 768px and 1024px
-    Then the search card remains horizontal
-    And the card width adapts to the viewport
-```
+#### Scenario: Mobile layout
+
+- **GIVEN** the page is viewed on a screen narrower than 768px
+- **THEN** the search card stacks fields vertically
+- **AND** the From and To inputs each take full width
+- **AND** the Passengers, Depart, Return, and Search button stack vertically
+- **AND** the card width adapts to the viewport
+
+#### Scenario: Tablet layout
+
+- **GIVEN** the page is viewed on a screen between 768px and 1024px
+- **THEN** the search card remains horizontal
+- **AND** the card width adapts to the viewport
 
 ## Verification checklist
 

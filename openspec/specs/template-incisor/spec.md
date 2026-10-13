@@ -47,87 +47,99 @@ Recreation of ColorLib's **Dento** template as a free React component.
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Incisor — Dental Practice Website Template
 
 #### Scenario: TopHeader displays contact information
-  - **Given** the user visits the page
-  - **When** the top bar renders
-  - **Then** the address "28 Jackson Street, Chicago, 7788569 USA" is shown
-  - **And** the email "info@incisor.com" is shown
-  - **And** social media icons are displayed on the right
+
+- **GIVEN** the user visits the page
+- **WHEN** the top bar renders
+- **THEN** the address "28 Jackson Street, Chicago, 7788569 USA" is shown
+- **AND** the email "info@incisor.com" is shown
+- **AND** social media icons are displayed on the right
 
 #### Scenario: Navbar is sticky on scroll
-  - **Given** the user scrolls past the hero
-  - **When** the header becomes sticky
-  - **Then** the navbar background changes to white
-  - **And** the "Booking Now" CTA button is visible
+
+- **GIVEN** the user scrolls past the hero
+- **WHEN** the header becomes sticky
+- **THEN** the navbar background changes to white
+- **AND** the "Booking Now" CTA button is visible
 
 #### Scenario: Hero section renders slides with CTAs
-  - **Given** the user is at the top of the page
-  - **When** the hero slider loads
-  - **Then** a headline "We Believe Everyone Should Have Easy Access To Great Dental Care" is displayed
-  - **And** two CTA buttons ("Get Started" and "Contact Us") are rendered
+
+- **GIVEN** the user is at the top of the page
+- **WHEN** the hero slider loads
+- **THEN** a headline "We Believe Everyone Should Have Easy Access To Great Dental Care" is displayed
+- **AND** two CTA buttons ("Get Started" and "Contact Us") are rendered
 
 #### Scenario: AboutUs shows content and features
-  - **Given** the user scrolls to the About Us section
-  - **When** the section renders
-  - **Then** an image is displayed on the left
-  - **And** a heading "About Us" with descriptive text appears on the right
-  - **And** feature icons (Experience, Dentist, Modern Equipment, Friendly Staff) are shown
+
+- **GIVEN** the user scrolls to the About Us section
+- **WHEN** the section renders
+- **THEN** an image is displayed on the left
+- **AND** a heading "About Us" with descriptive text appears on the right
+- **AND** feature icons (Experience, Dentist, Modern Equipment, Friendly Staff) are shown
 
 #### Scenario: Counters display statistics
-  - **Given** the user views the counters section
-  - **When** the counters animate
-  - **Then** "20" Years Of Experience is displayed
-  - **And** "700+" Happy Patients is displayed
-  - **And** "120" Certificate is displayed
-  - **And** "40+" Dentist is displayed
+
+- **GIVEN** the user views the counters section
+- **WHEN** the counters animate
+- **THEN** "20" Years Of Experience is displayed
+- **AND** "700+" Happy Patients is displayed
+- **AND** "120" Certificate is displayed
+- **AND** "40+" Dentist is displayed
 
 #### Scenario: Services section lists dental services
-  - **Given** the user scrolls to Services
-  - **When** the section renders
-  - **Then** a heading "Our Services" with underline is shown
-  - **And** 6 service cards are displayed each with an icon, title, and description
+
+- **GIVEN** the user scrolls to Services
+- **WHEN** the section renders
+- **THEN** a heading "Our Services" with underline is shown
+- **AND** 6 service cards are displayed each with an icon, title, and description
 
 #### Scenario: Pricing table shows service costs
-  - **Given** the user scrolls to Pricing
-  - **When** the pricing table renders
-  - **Then** a table with columns "Service Names", "Stage", "Price" is shown
-  - **And** at least 8 dental service rows with prices are listed
+
+- **GIVEN** the user scrolls to Pricing
+- **WHEN** the pricing table renders
+- **THEN** a table with columns "Service Names", "Stage", "Price" is shown
+- **AND** at least 8 dental service rows with prices are listed
 
 #### Scenario: Appointment form collects booking info
-  - **Given** the user scrolls to Book An Appointment
-  - **When** the form renders
-  - **Then** fields for Name, Phone, Email, Address, and Message are present
-  - **And** a schedule dropdown is available
-  - **And** a "Booking Now" submit button is rendered
+
+- **GIVEN** the user scrolls to Book An Appointment
+- **WHEN** the form renders
+- **THEN** fields for Name, Phone, Email, Address, and Message are present
+- **AND** a schedule dropdown is available
+- **AND** a "Booking Now" submit button is rendered
 
 #### Scenario: Dentist section shows team members
-  - **Given** the user scrolls to Our Dentist
-  - **When** the section renders
-  - **Then** 3 dentist cards are displayed
-  - **And** each card has a circular photo, name, specialty, and social icons
+
+- **GIVEN** the user scrolls to Our Dentist
+- **WHEN** the section renders
+- **THEN** 3 dentist cards are displayed
+- **AND** each card has a circular photo, name, specialty, and social icons
 
 #### Scenario: Testimonials slider displays patient reviews
-  - **Given** the user scrolls to Testimonials
-  - **When** the slider renders
-  - **Then** testimonial cards with avatar, quote, patient name, and role are shown
+
+- **GIVEN** the user scrolls to Testimonials
+- **WHEN** the slider renders
+- **THEN** testimonial cards with avatar, quote, patient name, and role are shown
 
 #### Scenario: Blog section shows latest news
-  - **Given** the user scrolls to The Latest News
-  - **When** the section renders
-  - **Then** 3 blog cards with image, title, excerpt, date, and comment count are displayed
+
+- **GIVEN** the user scrolls to The Latest News
+- **WHEN** the section renders
+- **THEN** 3 blog cards with image, title, excerpt, date, and comment count are displayed
 
 #### Scenario: Footer provides site info and newsletter
-  - **Given** the user scrolls to the footer
-  - **When** the footer renders
-  - **Then** it has a dark background
-  - **And** columns for About, Quick Links, Opening Hours, and Newsletter are shown
-  - **And** a newsletter email input + submit button are present
-  - **And** social media icons are displayed at the bottom
-  - **And** a "Component Dock" link is included
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** it has a dark background
+- **AND** columns for About, Quick Links, Opening Hours, and Newsletter are shown
+- **AND** a newsletter email input + submit button are present
+- **AND** social media icons are displayed at the bottom
+- **AND** a "Component Dock" link is included
 
 ---
 

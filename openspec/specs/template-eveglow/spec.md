@@ -71,7 +71,7 @@ Extracted from the original CSS (`06-comming-soon/css/styles.css`).
 - Each icon gets a unique brand color (see table above)
 - Hover: white background
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: EveGlow Coming Soon Page
 
@@ -79,74 +79,83 @@ The template is a single full-viewport section with background image, centered
 content, countdown timer, CTA button, and social icons.
 
 #### Scenario: Full-viewport background image
-  Given the page loads
-  Then a full-viewport background image covers the entire page
-  And a semi-transparent dark overlay (40% black) is displayed over the image
-  And the content is vertically centered within the viewport
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport background image covers the entire page
+- **AND** a semi-transparent dark overlay (40% black) is displayed over the image
+- **AND** the content is vertically centered within the viewport
 
 #### Scenario: Title text
-  Given the page loads
-  Then the heading "Coming Soon" is displayed centered
-  And the heading uses Poppins font
-  And the heading is white
-  And the heading is large (3.5em equivalent)
+
+- **GIVEN** the page loads
+- **THEN** the heading "Coming Soon" is displayed centered
+- **AND** the heading uses Poppins font
+- **AND** the heading is white
+- **AND** the heading is large (3.5em equivalent)
 
 #### Scenario: Description text
-  Given the page loads
-  Then a description paragraph is displayed below the title
-  And the description reads "Our website is currently undergoing scheduled maintenance. We should be back shortly. Thank you for your patience."
-  And the description text is white
-  And the description is centered with a max-width of approximately 500px
+
+- **GIVEN** the page loads
+- **THEN** a description paragraph is displayed below the title
+- **AND** the description reads "Our website is currently undergoing scheduled maintenance. We should be back shortly. Thank you for your patience."
+- **AND** the description text is white
+- **AND** the description is centered with a max-width of approximately 500px
 
 #### Scenario: Countdown timer
-  Given the page loads
-  Then a countdown timer is displayed with four circular badges
-  And each badge shows a number (days, hours, minutes, seconds)
-  And each badge is a white circle (90px diameter)
-  And the number inside each badge is pink (#F84982)
-  And each badge has a label below the number ("Days", "Hours", "Mins", "Sec")
-  And the countdown ticks down to a target date
+
+- **GIVEN** the page loads
+- **THEN** a countdown timer is displayed with four circular badges
+- **AND** each badge shows a number (days, hours, minutes, seconds)
+- **AND** each badge is a white circle (90px diameter)
+- **AND** the number inside each badge is pink (#F84982)
+- **AND** each badge has a label below the number ("Days", "Hours", "Mins", "Sec")
+- **AND** the countdown ticks down to a target date
 
 #### Scenario: Notify Us button
-  Given the page loads
-  Then a "NOTIFY US" button is displayed below the countdown
-  And the button has a pink background (#F84982)
-  And the button has a pill shape (border-radius 50px)
-  And the button text is white and uppercase
-  When the user hovers the button
-  Then the background becomes transparent (outline style)
+
+- **GIVEN** the page loads
+- **THEN** a "NOTIFY US" button is displayed below the countdown
+- **AND** the button has a pink background (#F84982)
+- **AND** the button has a pill shape (border-radius 50px)
+- **AND** the button text is white and uppercase
+- **WHEN** the user hovers the button
+- **THEN** the background becomes transparent (outline style)
 
 #### Scenario: Social media icons
-  Given the page loads
-  Then a "Follow us for update" label is displayed at the bottom
-  And five circular social icons are displayed in a row
-  And the Facebook icon has a blue circle (#2A61D6)
-  And the Twitter icon has a light blue circle (#3AA4F8)
-  And the Google+ icon has a red circle (#F43846)
-  And the Instagram icon has a brown circle (#8F614A)
-  And the Pinterest icon has a yellow circle (#E1C013)
-  When the user hovers any social icon
-  Then the icon circle turns white
+
+- **GIVEN** the page loads
+- **THEN** a "Follow us for update" label is displayed at the bottom
+- **AND** five circular social icons are displayed in a row
+- **AND** the Facebook icon has a blue circle (#2A61D6)
+- **AND** the Twitter icon has a light blue circle (#3AA4F8)
+- **AND** the Google+ icon has a red circle (#F43846)
+- **AND** the Instagram icon has a brown circle (#8F614A)
+- **AND** the Pinterest icon has a yellow circle (#E1C013)
+- **WHEN** the user hovers any social icon
+- **THEN** the icon circle turns white
 
 #### Scenario: Responsive layout
-  Given the page loads on a mobile device
-  Then the layout stacks vertically and remains centered
-  And the countdown circles remain visible
-  And the social icons remain visible and tappable
-  And the text remains legible
+
+- **GIVEN** the page loads on a mobile device
+- **THEN** the layout stacks vertically and remains centered
+- **AND** the countdown circles remain visible
+- **AND** the social icons remain visible and tappable
+- **AND** the text remains legible
 
 #### Scenario: Accessibility
-  Given the page loads
-  Then the heading is a semantic h1 element
-  And the social icons have descriptive aria-labels
-  And the Notify button is a semantic button element
-  And the countdown numbers have appropriate aria attributes
+
+- **GIVEN** the page loads
+- **THEN** the heading is a semantic h1 element
+- **AND** the social icons have descriptive aria-labels
+- **AND** the Notify button is a semantic button element
+- **AND** the countdown numbers have appropriate aria attributes
 
 #### Scenario: Footer branding
-  Given the page loads
-  Then the footer contains a link to https://www.componentdock.com/
-  And the footer text reads "Component Dock"
-  And no ColorLib branding or attribution is present
+
+- **GIVEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the footer text reads "Component Dock"
+- **AND** no ColorLib branding or attribution is present
 
 ## Verification Checklist
 

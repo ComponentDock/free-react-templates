@@ -12,7 +12,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons, Vitest.
 - **Component Shapes**: Rounded cards (`rounded-2xl`), smooth button transitions, soft shadow elevations (`shadow-xl`).
 - **Layout**: Centered interactive date picker widget with month header, day grid, quick actions (Today, Clear, Close), and event list sidebar.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Interactive Calendar & Date Picker Widget
 
@@ -20,27 +20,27 @@ As a user, I want to view an interactive calendar month grid, select dates, view
 
 #### Scenario: Monthly navigation and date selection
 
-- **Given** the Datebook calendar application is loaded
-- **When** the user clicks the next/previous month chevron buttons
-- **Then** the calendar view updates to display the correct month and year
-- **And** clicking any day cell selects that date and highlights it
+- **GIVEN** the Datebook calendar application is loaded
+- **WHEN** the user clicks the next/previous month chevron buttons
+- **THEN** the calendar view updates to display the correct month and year
+- **AND** clicking any day cell selects that date and highlights it
 
 #### Scenario: Quick action buttons
 
-- **Given** the calendar date picker is open
-- **When** the user clicks the "Today" button
-- **Then** the calendar jumps to the current date and selects it
-- **When** the user clicks "Clear"
-- **Then** the current date selection is cleared
-- **When** the user clicks "Close"
-- **Then** the date picker dialog closes or collapses
+- **GIVEN** the calendar date picker is open
+- **WHEN** the user clicks the "Today" button
+- **THEN** the calendar jumps to the current date and selects it
+- **WHEN** the user clicks "Clear"
+- **THEN** the current date selection is cleared
+- **WHEN** the user clicks "Close"
+- **THEN** the date picker dialog closes or collapses
 
 #### Scenario: Event listing for selected date
 
-- **Given** a date with scheduled events is selected
-- **When** the event panel renders
-- **Then** it displays time slots, event titles, and categories with appropriate badges
-- **And** the footer links to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** a date with scheduled events is selected
+- **WHEN** the event panel renders
+- **THEN** it displays time slots, event titles, and categories with appropriate badges
+- **AND** the footer links to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

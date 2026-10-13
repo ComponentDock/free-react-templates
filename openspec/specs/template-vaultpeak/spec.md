@@ -40,159 +40,131 @@ Extracted from https://preview.colorlib.com/theme/banker/css/style.css and previ
 
 The original uses icomoon + flaticon icon fonts. In the React recreation, use `lucide-react` icons instead (Wallet, ShoppingCart, CreditCard, Users, Briefcase, HelpCircle, MessageCircle, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Search, Menu, X, ChevronRight, Heart).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar
+### Feature: VaultPeak template behaviour
 
-```
-Given the user visits the page
-Then a sticky navbar displays "VaultPeak" logo with an orange dot
-And navigation links: Home, About Us (with dropdown), Blog, Contact
-And social icons (Facebook, Twitter, LinkedIn) in the nav
-And on scroll the navbar becomes white with shadow and orange logo
-```
+#### Scenario: Navbar
 
-### Scenario: Hero
+- **GIVEN** the user visits the page
+- **THEN** a sticky navbar displays "VaultPeak" logo with an orange dot
+- **AND** navigation links: Home, About Us (with dropdown), Blog, Contact
+- **AND** social icons (Facebook, Twitter, LinkedIn) in the nav
+- **AND** on scroll the navbar becomes white with shadow and orange logo
 
-```
-Given the user sees the hero section
-Then a full-screen background image is shown with a warm beige overlay
-And a rotating carousel displays three headlines:
-  - "Banking Solutions"
-  - "Financing Solutions"
-  - "Savings Accounts"
-And each slide shows a descriptive paragraph
-And a scroll-down mouse icon animates at the bottom
-```
+#### Scenario: Hero
 
-### Scenario: Features (3-column)
+- **GIVEN** the user sees the hero section
+- **THEN** a full-screen background image is shown with a warm beige overlay
+- **AND** a rotating carousel displays three headlines:
+- "Banking Solutions"
+- "Financing Solutions"
+- "Savings Accounts"
+- **AND** each slide shows a descriptive paragraph
+- **AND** a scroll-down mouse icon animates at the bottom
 
-```
-Given the user scrolls past the hero
-Then three feature cards appear side by side:
-  - "Money Savings" with wallet icon
-  - "Online Shoppings" with cart icon
-  - "Credit / Debit Cards" with credit card icon
-And each card has an icon, title, and short description
-```
+#### Scenario: Features (3-column)
 
-### Scenario: About / Amortization
+- **GIVEN** the user scrolls past the hero
+- **THEN** three feature cards appear side by side:
+- "Money Savings" with wallet icon
+- "Online Shoppings" with cart icon
+- "Credit / Debit Cards" with credit card icon
+- **AND** each card has an icon, title, and short description
 
-```
-Given the user sees the amortization section
-Then a circular-background image appears on the left
-And "Amortization Computation" heading with a checklist on the right
-And an email input with "Submit Email" pill button
-```
+#### Scenario: About / Amortization
 
-### Scenario: About Us
+- **GIVEN** the user sees the amortization section
+- **THEN** a circular-background image appears on the left
+- **AND** "Amortization Computation" heading with a checklist on the right
+- **AND** an email input with "Submit Email" pill button
 
-```
-Given the user sees the About Us section
-Then a centered "About Us" heading with lead text
-And a circular-background image on the left
-And "We Solve Your Financial Problem" heading with two paragraphs on the right
-```
+#### Scenario: About Us
 
-### Scenario: Team
+- **GIVEN** the user sees the About Us section
+- **THEN** a centered "About Us" heading with lead text
+- **AND** a circular-background image on the left
+- **AND** "We Solve Your Financial Problem" heading with two paragraphs on the right
 
-```
-Given the user sees the Team section
-Then "Meet Team" heading with lead text
-And a 4-column grid of team member cards
-And each card shows a photo with social icon overlay (FB, Twitter, LinkedIn, Instagram)
-And name and position below the photo
-```
+#### Scenario: Team
 
-### Scenario: Services
+- **GIVEN** the user sees the Team section
+- **THEN** "Meet Team" heading with lead text
+- **AND** a 4-column grid of team member cards
+- **AND** each card shows a photo with social icon overlay (FB, Twitter, LinkedIn, Instagram)
+- **AND** name and position below the photo
 
-```
-Given the user sees the Services section
-Then "Our Services" heading on a light background
-And a 3-column grid of service cards with:
-  - icon, heading, description, "Learn More" link
-And items: Business Consulting, Credit Card, Income Monitoring, Tax Management, Insurance Policy, Financial Planning
-```
+#### Scenario: Services
 
-### Scenario: Pricing
+- **GIVEN** the user sees the Services section
+- **THEN** "Our Services" heading on a light background
+- **AND** a 3-column grid of service cards with:
+- icon, heading, description, "Learn More" link
+- **AND** items: Business Consulting, Credit Card, Income Monitoring, Tax Management, Insurance Policy, Financial Planning
 
-```
-Given the user sees the Pricing section
-Then "Pricing" heading on a light background
-And 3 pricing cards side by side:
-  - Basic ($47/year), Premium ($200/year, highlighted), Professional ($750/year)
-And each card has a plan name, price, feature checklist (some struck-through), and "Buy Now" button
-And the Premium card uses the primary orange "Buy Now" button
-```
+#### Scenario: Pricing
 
-### Scenario: FAQ
+- **GIVEN** the user sees the Pricing section
+- **THEN** "Pricing" heading on a light background
+- **AND** 3 pricing cards side by side:
+- Basic ($47/year), Premium ($200/year, highlighted), Professional ($750/year)
+- **AND** each card has a plan name, price, feature checklist (some struck-through), and "Buy Now" button
+- **AND** the Premium card uses the primary orange "Buy Now" button
 
-```
-Given the user sees the FAQ section
-Then "Frequently Ask Questions" heading
-And a 2-column layout with 8 FAQ items total
-And each item has an h4 question and a paragraph answer
-```
+#### Scenario: FAQ
 
-### Scenario: Testimonials
+- **GIVEN** the user sees the FAQ section
+- **THEN** "Frequently Ask Questions" heading
+- **AND** a 2-column layout with 8 FAQ items total
+- **AND** each item has an h4 question and a paragraph answer
 
-```
-Given the user sees the Testimonials section
-Then "Happy Customers" heading
-And a carousel of testimonial slides
-And each slide shows a blockquote, author photo, and author name
-```
+#### Scenario: Testimonials
 
-### Scenario: Gallery
+- **GIVEN** the user sees the Testimonials section
+- **THEN** "Happy Customers" heading
+- **AND** a carousel of testimonial slides
+- **AND** each slide shows a blockquote, author photo, and author name
 
-```
-Given the user sees the Gallery section
-Then "Gallery" heading
-And filter buttons: All, Events, Party, Holidays
-And a 4-column grid of images
-And clicking an image opens a lightbox overlay
-```
+#### Scenario: Gallery
 
-### Scenario: Blog
+- **GIVEN** the user sees the Gallery section
+- **THEN** "Gallery" heading
+- **AND** filter buttons: All, Events, Party, Holidays
+- **AND** a 4-column grid of images
+- **AND** clicking an image opens a lightbox overlay
 
-```
-Given the user sees the Blog section
-Then "Our Blog" heading
-And 3 blog post cards in a row
-And each card has a featured image, title, meta (author · date · category), excerpt, and "Continue Reading..." link
-```
+#### Scenario: Blog
 
-### Scenario: Contact
+- **GIVEN** the user sees the Blog section
+- **THEN** "Our Blog" heading
+- **AND** 3 blog post cards in a row
+- **AND** each card has a featured image, title, meta (author · date · category), excerpt, and "Continue Reading..." link
 
-```
-Given the user sees the Contact section
-Then "Contact Us" heading on a light background
-And 3 contact info columns: address, phone, email with icons
-And a white contact form with fields: First Name, Last Name, Email, Subject, Message
-And a "Send Message" pill button
-```
+#### Scenario: Contact
 
-### Scenario: Footer
+- **GIVEN** the user sees the Contact section
+- **THEN** "Contact Us" heading on a light background
+- **AND** 3 contact info columns: address, phone, email with icons
+- **AND** a white contact form with fields: First Name, Last Name, Email, Subject, Message
+- **AND** a "Send Message" pill button
 
-```
-Given the user sees the footer
-Then a dark background (#343a40) footer
-And left columns: "About Us" paragraph, "Quick Links" list, "Follow Us" social icons
-And right column: "Subscribe Newsletter" with email input and "Send" button
-And a copyright line at the bottom
-And a link to https://www.componentdock.com/ ("Component Dock")
-```
+#### Scenario: Footer
 
-### Scenario: Mobile responsiveness
+- **GIVEN** the user sees the footer
+- **THEN** a dark background (#343a40) footer
+- **AND** left columns: "About Us" paragraph, "Quick Links" list, "Follow Us" social icons
+- **AND** right column: "Subscribe Newsletter" with email input and "Send" button
+- **AND** a copyright line at the bottom
+- **AND** a link to https://www.componentdock.com/ ("Component Dock")
 
-```
-Given the user views on mobile
-Then the navbar collapses to a hamburger menu
-And team/services/blog cards stack vertically
-And pricing cards stack vertically
-And the gallery grid reduces columns
-And the contact form fields stack
-```
+#### Scenario: Mobile responsiveness
+
+- **GIVEN** the user views on mobile
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** team/services/blog cards stack vertically
+- **AND** pricing cards stack vertically
+- **AND** the gallery grid reduces columns
+- **AND** the contact form fields stack
 
 ## Verification Checklist
 

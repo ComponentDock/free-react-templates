@@ -41,154 +41,179 @@ Extracted from the live preview CSS (`css/style.css`):
 7. **Blog Entries** — Section title "Blog" / "Latest Blog Posts". Five blog post cards in a row, each with a date, heading link, and description text. Cards have rounded corners.
 8. **Footer** — Two-column: left has About text + social media icons (Facebook, Twitter, Instagram, Dribbble, LinkedIn in rounded tiles). Right has three columns of navigation links (Home, Services, Work, Process, About Us / Press, Blog, Contact, Support, Privacy / Privacy, FAQ, Careers, Process, About Us). Bottom copyright line with Component Dock attribution.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Navbar
-  Scenario: Logo displays template name
-    Given the page loads
-    Then the navbar shows "Creativity" as the logo text
 
-  Scenario: Navigation links present
-    Given the page loads
-    Then the navbar contains "Home", "Dropdown", "Inner Page", and "Contact" links
+#### Scenario: Logo displays template name
 
-  Scenario: CTA button in navbar
-    Given the page loads
-    Then the navbar right side shows an "Explore" button
+- **GIVEN** the page loads
+- **THEN** the navbar shows "Creativity" as the logo text
 
-  Scenario: Mobile menu toggle
-    Given the viewport is mobile width
-    Then a burger menu icon is visible
-    When the burger menu is clicked
-    Then the mobile navigation menu expands
-```
+#### Scenario: Navigation links present
+
+- **GIVEN** the page loads
+- **THEN** the navbar contains "Home", "Dropdown", "Inner Page", and "Contact" links
+
+#### Scenario: CTA button in navbar
+
+- **GIVEN** the page loads
+- **THEN** the navbar right side shows an "Explore" button
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** the viewport is mobile width
+- **THEN** a burger menu icon is visible
+- **WHEN** the burger menu is clicked
+- **THEN** the mobile navigation menu expands
 
 ### Hero
-```gherkin
+
 Feature: Hero Section
-  Scenario: Hero headline visible
-    Given the page loads
-    Then the hero displays a headline about creating and coding
 
-  Scenario: Hero description visible
-    Given the page loads
-    Then the hero displays a descriptive paragraph
+#### Scenario: Hero headline visible
 
-  Scenario: Hero CTA button
-    Given the page loads
-    Then the hero displays a "Get Started" button
+- **GIVEN** the page loads
+- **THEN** the hero displays a headline about creating and coding
 
-  Scenario: Hero feature cards
-    Given the page loads
-    Then the hero shows two feature cards below the CTA
-    And each feature card has an icon, title, and description
+#### Scenario: Hero description visible
 
-  Scenario: Hero image with quote
-    Given the page loads
-    Then the hero right side shows an image
-    And a quote overlay card is visible on the image
-    And the quote card shows an author name and role
-```
+- **GIVEN** the page loads
+- **THEN** the hero displays a descriptive paragraph
+
+#### Scenario: Hero CTA button
+
+- **GIVEN** the page loads
+- **THEN** the hero displays a "Get Started" button
+
+#### Scenario: Hero feature cards
+
+- **GIVEN** the page loads
+- **THEN** the hero shows two feature cards below the CTA
+- **AND** each feature card has an icon, title, and description
+
+#### Scenario: Hero image with quote
+
+- **GIVEN** the page loads
+- **THEN** the hero right side shows an image
+- **AND** a quote overlay card is visible on the image
+- **AND** the quote card shows an author name and role
 
 ### Achievements
-```gherkin
-Feature: Achievements Section
-  Scenario: Four stat cards displayed
-    Given the achievements section is visible
-    Then 4 stat cards are shown in a row
-    And each card has a number, heading, and description
 
-  Scenario: Stat values are prominent
-    Given the achievements section is visible
-    Then each stat card number is displayed in large bold text
-```
+Feature: Achievements Section
+
+#### Scenario: Four stat cards displayed
+
+- **GIVEN** the achievements section is visible
+- **THEN** 4 stat cards are shown in a row
+- **AND** each card has a number, heading, and description
+
+#### Scenario: Stat values are prominent
+
+- **GIVEN** the achievements section is visible
+- **THEN** each stat card number is displayed in large bold text
 
 ### How It Works
-```gherkin
+
 Feature: How It Works Section
-  Scenario: Section title
-    Given the how-it-works section is visible
-    Then the section displays "How it works" as the subtitle
-    And a description paragraph is shown
 
-  Scenario: Three step cards
-    Given the how-it-works section is visible
-    Then 3 step cards are shown in a row
-    And each step has an icon, numbered heading, and description
+#### Scenario: Section title
 
-  Scenario: Steps connected by arrows
-    Given the how-it-works section is visible
-    Then dashed curved arrows connect steps 1→2 and 2→3
-```
+- **GIVEN** the how-it-works section is visible
+- **THEN** the section displays "How it works" as the subtitle
+- **AND** a description paragraph is shown
+
+#### Scenario: Three step cards
+
+- **GIVEN** the how-it-works section is visible
+- **THEN** 3 step cards are shown in a row
+- **AND** each step has an icon, numbered heading, and description
+
+#### Scenario: Steps connected by arrows
+
+- **GIVEN** the how-it-works section is visible
+- **THEN** dashed curved arrows connect steps 1→2 and 2→3
 
 ### Services
-```gherkin
+
 Feature: Services Section
-  Scenario: Services content
-    Given the services section is visible
-    Then the left side shows a "Services" subtitle and heading
-    And a description paragraph is displayed
-    And a checklist of 3 items is shown with check icons
 
-  Scenario: Services CTA
-    Given the services section is visible
-    Then a "Get Started" button is displayed
+#### Scenario: Services content
 
-  Scenario: Services image
-    Given the services section is visible
-    Then the right side shows an image with a dotted decoration
-```
+- **GIVEN** the services section is visible
+- **THEN** the left side shows a "Services" subtitle and heading
+- **AND** a description paragraph is displayed
+- **AND** a checklist of 3 items is shown with check icons
+
+#### Scenario: Services CTA
+
+- **GIVEN** the services section is visible
+- **THEN** a "Get Started" button is displayed
+
+#### Scenario: Services image
+
+- **GIVEN** the services section is visible
+- **THEN** the right side shows an image with a dotted decoration
 
 ### Testimonials
-```gherkin
-Feature: Testimonials Section
-  Scenario: Testimonial carousel
-    Given the testimonials section is visible
-    Then a carousel of testimonial cards is displayed
 
-  Scenario: Testimonial card content
-    Given a testimonial card is in view
-    Then it shows a circular person image
-    And a blockquote with testimonial text
-    And the author name and role
-```
+Feature: Testimonials Section
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a carousel of testimonial cards is displayed
+
+#### Scenario: Testimonial card content
+
+- **GIVEN** a testimonial card is in view
+- **THEN** it shows a circular person image
+- **AND** a blockquote with testimonial text
+- **AND** the author name and role
 
 ### Blog Entries
-```gherkin
-Feature: Blog Entries Section
-  Scenario: Blog section title
-    Given the blog section is visible
-    Then "Blog" subtitle and "Latest Blog Posts" heading are displayed
 
-  Scenario: Blog post cards
-    Given the blog section is visible
-    Then 5 blog post cards are shown in a row
-    And each card has a date, heading link, and description
-```
+Feature: Blog Entries Section
+
+#### Scenario: Blog section title
+
+- **GIVEN** the blog section is visible
+- **THEN** "Blog" subtitle and "Latest Blog Posts" heading are displayed
+
+#### Scenario: Blog post cards
+
+- **GIVEN** the blog section is visible
+- **THEN** 5 blog post cards are shown in a row
+- **AND** each card has a date, heading link, and description
 
 ### Footer
-```gherkin
+
 Feature: Footer
-  Scenario: Footer layout
-    Given the footer is visible
-    Then it has an About section with description text
-    And social media icons are shown (Facebook, Twitter, Instagram, Dribbble, LinkedIn)
 
-  Scenario: Navigation links
-    Given the footer is visible
-    Then three columns of navigation links are displayed
+#### Scenario: Footer layout
 
-  Scenario: Copyright attribution
-    Given the footer is visible
-    Then a copyright line is shown
-    And it includes a link to Component Dock
+- **GIVEN** the footer is visible
+- **THEN** it has an About section with description text
+- **AND** social media icons are shown (Facebook, Twitter, Instagram, Dribbble, LinkedIn)
 
-  Scenario: Footer social icon styling
-    Given the footer is visible
-    Then social icons have rounded square tiles with light background
-```
+#### Scenario: Navigation links
+
+- **GIVEN** the footer is visible
+- **THEN** three columns of navigation links are displayed
+
+#### Scenario: Copyright attribution
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright line is shown
+- **AND** it includes a link to Component Dock
+
+#### Scenario: Footer social icon styling
+
+- **GIVEN** the footer is visible
+- **THEN** social icons have rounded square tiles with light background
 
 ## Verification Checklist
 

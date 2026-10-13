@@ -20,63 +20,63 @@
 
 ---
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Lawguard Landing Page
 
 #### Scenario: Navigation Bar
 
-- Given the user visits the Lawguard landing page
-- Then they should see a sticky navigation bar with the brand logo "Lawguard", links to Home, Practicing Area, Services, About, and Contact Us, plus a phone contact button `123-489-9381`.
-- When the user clicks the mobile menu toggle on small viewports
-- Then a mobile slide-out navigation menu should open with all navigation links.
+- **GIVEN** the user visits the Lawguard landing page
+- **THEN** they should see a sticky navigation bar with the brand logo "Lawguard", links to Home, Practicing Area, Services, About, and Contact Us, plus a phone contact button `123-489-9381`
+- **WHEN** the user clicks the mobile menu toggle on small viewports
+- **THEN** a mobile slide-out navigation menu should open with all navigation links
 
 #### Scenario: Hero Section
 
-- Given the user views the hero section
-- Then they should see a full-screen hero with an overlay, heading "Meet all your investigative and litigation needs", descriptive paragraph, and primary CTAs "Our services" and "Contact us".
+- **GIVEN** the user views the hero section
+- **THEN** they should see a full-screen hero with an overlay, heading "Meet all your investigative and litigation needs", descriptive paragraph, and primary CTAs "Our services" and "Contact us"
 
 #### Scenario: About / Founder Section
 
-- Given the user scrolls to the about section
-- Then they should see the profile feature ("I'm Jon Campbell"), biographical paragraphs with dark backdrop accent (`bg-1`), a prominent profile image (`img-wrap`), and an "Our services" link.
+- **GIVEN** the user scrolls to the about section
+- **THEN** they should see the profile feature ("I'm Jon Campbell"), biographical paragraphs with dark backdrop accent (`bg-1`), a prominent profile image (`img-wrap`), and an "Our services" link
 
 #### Scenario: Services Section (Grid / Cards)
 
-- Given the user scrolls to the Our Services section
-- Then they should see a grid of service cards (Counsel, Legal Dept, Compliance, Identity, Hall of Justice, Law Abiding) featuring icons and descriptions, with hover states changing background color to primary blue `#037ef3`.
+- **GIVEN** the user scrolls to the Our Services section
+- **THEN** they should see a grid of service cards (Counsel, Legal Dept, Compliance, Identity, Hall of Justice, Law Abiding) featuring icons and descriptions, with hover states changing background color to primary blue `#037ef3`
 
 #### Scenario: Security Consultants / Justice Serves Section
 
-- Given the user views the Security Consultants and Justice Serves section
-- Then they should see editorial layout blocks with headings, detailed paragraphs about investigative services, and tabbed interfaces ("Investigative Services", "Security Consultations", "Criminal Defense Investigations").
+- **GIVEN** the user views the Security Consultants and Justice Serves section
+- **THEN** they should see editorial layout blocks with headings, detailed paragraphs about investigative services, and tabbed interfaces ("Investigative Services", "Security Consultations", "Criminal Defense Investigations")
 
 #### Scenario: Practice Area Section
 
-- Given the user scrolls to the Practice Area section
-- Then they should see a numbered list of practice areas (Asset Searches, Background Investigations, Business Due Diligence, Civil Investigations, Criminal Defense Investigations, etc.) with clickable triggers and interactive indicators.
+- **GIVEN** the user scrolls to the Practice Area section
+- **THEN** they should see a numbered list of practice areas (Asset Searches, Background Investigations, Business Due Diligence, Civil Investigations, Criminal Defense Investigations, etc.) with clickable triggers and interactive indicators
 
 #### Scenario: Testimonials Section
 
-- Given the user views the Testimonials section
-- Then they should see a tabbed testimonial widget with avatar pictures, names, roles, and prominent blockquotes ("Angela Smith", "Joshua Hamilton", etc.).
+- **GIVEN** the user views the Testimonials section
+- **THEN** they should see a tabbed testimonial widget with avatar pictures, names, roles, and prominent blockquotes ("Angela Smith", "Joshua Hamilton", etc.)
 
 #### Scenario: Resources Section
 
-- Given the user views the Resources section
-- Then they should see categorized lists of resource links and an informational dark box background.
+- **GIVEN** the user views the Resources section
+- **THEN** they should see categorized lists of resource links and an informational dark box background
 
 #### Scenario: Contact & Write to Us Section
 
-- Given the user views the Write to Us section
-- Then they should see an interactive contact form with fields for Full Name, Email, Phone Number, Choose a Service, and Write your message, along with a submit button.
-- When the user submits valid input in the contact form
-- Then a success confirmation should be displayed.
+- **GIVEN** the user views the Write to Us section
+- **THEN** they should see an interactive contact form with fields for Full Name, Email, Phone Number, Choose a Service, and Write your message, along with a submit button
+- **WHEN** the user submits valid input in the contact form
+- **THEN** a success confirmation should be displayed
 
 #### Scenario: Footer
 
-- Given the user scrolls to the page footer
-- Then they should see contact address details, phone numbers, email (`info@mydomain.com`), quick navigation links, social media icons, copyright notice, and the mandatory attribution link to **Component Dock** (`https://www.componentdock.com/`).
+- **GIVEN** the user scrolls to the page footer
+- **THEN** they should see contact address details, phone numbers, email (`info@mydomain.com`), quick navigation links, social media icons, copyright notice, and the mandatory attribution link to **Component Dock** (`https://www.componentdock.com/`)
 
 ---
 

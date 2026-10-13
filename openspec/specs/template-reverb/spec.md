@@ -24,46 +24,58 @@ New app name: `reverb`. Domain category: Business agency / Creative portfolio.
 6. **Media / Value Proposition Section**: "Get anything done in one place" heading, descriptive text, CTA button, and dual image layout (`img-1` and `img-2`).
 7. **Footer**: 3-column footer containing Contact info, Sources links, Links, social icons (Instagram, Twitter, Facebook, LinkedIn, Pinterest, Dribbble), and branded footer link to Component Dock (`https://www.componentdock.com/`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Navbar
 
+#### Scenario: Navbar
+
 - Scenario: Displays brand and navigation links
-  - Given the user visits the home page
-  - Then they should see the brand title "Reverb"
-  - And navigation items for Home, Services, Pricing, About, and Contact Us
+- **GIVEN** the user visits the home page
+- **THEN** they should see the brand title "Reverb"
+- **AND** navigation items for Home, Services, Pricing, About, and Contact Us
 
 ### Feature: Hero Section
 
+#### Scenario: Hero Section
+
 - Scenario: Displays hero heading with animated typed words and CTA
-  - Given the user is on the hero banner
-  - Then they should see the heading "We are pretty Awesome" with dynamic typed words
-  - And a CTA button "Our services"
+- **GIVEN** the user is on the hero banner
+- **THEN** they should see the heading "We are pretty Awesome" with dynamic typed words
+- **AND** a CTA button "Our services"
 
 ### Feature: About Section
 
+#### Scenario: About Section
+
 - Scenario: Displays about us business growth proposition
-  - Given the user scrolls to the About section
-  - Then they should see the subheading "About us" and heading "We are here to help grow your business"
-  - And an intro box with vertical accent line
+- **GIVEN** the user scrolls to the About section
+- **THEN** they should see the subheading "About us" and heading "We are here to help grow your business"
+- **AND** an intro box with vertical accent line
 
 ### Feature: Services Section
 
+#### Scenario: Services Section
+
 - Scenario: Displays service offerings and sliders
-  - Given the user scrolls to the Services section
-  - Then they should see "What We Offer" and service cards (Web Design, Graphic Design, Web/Mobile Application, Brand Identity)
+- **GIVEN** the user scrolls to the Services section
+- **THEN** they should see "What We Offer" and service cards (Web Design, Graphic Design, Web/Mobile Application, Brand Identity)
 
 ### Feature: Stats Counter
 
+#### Scenario: Stats Counter
+
 - Scenario: Displays key business statistics
-  - Given the user scrolls to the stats counter section
-  - Then they should see project counts, happy clients, leadership, and years of experience
+- **GIVEN** the user scrolls to the stats counter section
+- **THEN** they should see project counts, happy clients, leadership, and years of experience
 
 ### Feature: Footer Attribution
 
+#### Scenario: Footer Attribution
+
 - Scenario: Displays branded footer link to Component Dock
-  - Given the user scrolls to the footer
-  - Then they should see copyright information and a link to Component Dock (`https://www.componentdock.com/`)
+- **GIVEN** the user scrolls to the footer
+- **THEN** they should see copyright information and a link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

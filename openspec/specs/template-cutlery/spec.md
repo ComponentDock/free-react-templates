@@ -43,88 +43,100 @@ Recreation of ColorLib "Meal" template.
 - **Footer**: Three columns — About + Read More button, Service hours (Lunch/Dinner), Social links + Newsletter signup. Copyright line at bottom
 - **Color palette**: Minimal — predominantly white/light backgrounds, black text, coral `#ff7a5c` as sole accent. Elegant, clean, monochrome with single warm accent
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Cutlery restaurant template
 
   Background:
-    Given the user visits the Cutlery template page
-    Then the page loads without errors
+- **GIVEN** the user visits the Cutlery template page
+- **THEN** the page loads without errors
 
-  Scenario: Header navigation
-    Given the header is visible
-    When the user clicks the hamburger menu
-    Then a right-side slide-in navigation panel opens
-    And the panel contains links: Home, About Us, Our Menu, Reserve A Table, Contact
-    When the user clicks a nav link
-    Then the page scrolls to the corresponding section
+#### Scenario: Header navigation
 
-  Scenario: Hero section
-    Given the hero section is in view
-    Then a full-width background image is displayed
-    And the heading "Welcome to Meal" is shown in white
-    And a "Reserve A Table" outline-white button links to the reservation section
+- **GIVEN** the header is visible
+- **WHEN** the user clicks the hamburger menu
+- **THEN** a right-side slide-in navigation panel opens
+- **AND** the panel contains links: Home, About Us, Our Menu, Reserve A Table, Contact
+- **WHEN** the user clicks a nav link
+- **THEN** the page scrolls to the corresponding section
 
-  Scenario: Food features grid
-    Given the food features section is visible
-    Then 4 food items are displayed in alternating image-text rows
-    And each item shows a category label, dish name, description, and "Learn More" link
+#### Scenario: Hero section
 
-  Scenario: About section
-    Given the about section is in view
-    Then a centered "The Restaurant" heading appears
-    And descriptive text paragraphs are displayed below
+- **GIVEN** the hero section is in view
+- **THEN** a full-width background image is displayed
+- **AND** the heading "Welcome to Meal" is shown in white
+- **AND** a "Reserve A Table" outline-white button links to the reservation section
 
-  Scenario: Chefs section
-    Given the chefs section is visible
-    Then 2 chef cards are displayed side by side
-    And each card shows a photo, chef name, role title, bio text, and social icons
+#### Scenario: Food features grid
 
-  Scenario: Menu section with tabs
-    Given the menu section is in view
-    Then 3 tab buttons are visible: Breakfast, Brunch, Dinner
-    When the user clicks the "Breakfast" tab
-    Then 4 breakfast menu items are shown with thumbnail, name, description, and price
-    When the user clicks the "Brunch" tab
-    Then 4 brunch menu items are shown
-    When the user clicks the "Dinner" tab
-    Then 4 dinner menu items are shown
-    And the Breakfast tab is active by default
+- **GIVEN** the food features section is visible
+- **THEN** 4 food items are displayed in alternating image-text rows
+- **AND** each item shows a category label, dish name, description, and "Learn More" link
 
-  Scenario: Services section
-    Given the services section is visible
-    Then 6 service feature cards are displayed in a 3-column grid
-    And each card has an icon, title, and short description
+#### Scenario: About section
 
-  Scenario: Reservation form
-    Given the reservation section is in view
-    Then a form with fields: Name, Email, Phone, Number of Persons, Date, Message is displayed
-    And a "Send Message" submit button is present
-    When the user focuses an input field
-    Then the border highlights in coral `#ff7a5c`
+- **GIVEN** the about section is in view
+- **THEN** a centered "The Restaurant" heading appears
+- **AND** descriptive text paragraphs are displayed below
 
-  Scenario: Customer reviews carousel
-    Given the reviews section is visible
-    Then a testimonial carousel is displayed
-    And each slide shows a quote, author photo, author name, and role
+#### Scenario: Chefs section
 
-  Scenario: Contact form
-    Given the contact section is in view
-    Then a form with fields: Name, Email, Phone, Message is displayed
-    And a "Send Message" submit button is present
+- **GIVEN** the chefs section is visible
+- **THEN** 2 chef cards are displayed side by side
+- **AND** each card shows a photo, chef name, role title, bio text, and social icons
 
-  Scenario: Footer
-    Given the footer is visible
-    Then it contains 3 columns: About, Service hours, Social + Newsletter
-    And a "Component Dock" link is present in the footer
-    And social icons for Facebook, Twitter, Instagram are shown
-    And a newsletter email input with send button is present
+#### Scenario: Menu section with tabs
 
-  Scenario: Responsive layout
-    Given the user is on a mobile viewport
-    Then the hamburger menu is visible
-    And food grid items stack vertically
-    And chef cards stack vertically
-    And menu tabs remain accessible
-    And services cards stack vertically
-    And footer columns stack vertically
+- **GIVEN** the menu section is in view
+- **THEN** 3 tab buttons are visible: Breakfast, Brunch, Dinner
+- **WHEN** the user clicks the "Breakfast" tab
+- **THEN** 4 breakfast menu items are shown with thumbnail, name, description, and price
+- **WHEN** the user clicks the "Brunch" tab
+- **THEN** 4 brunch menu items are shown
+- **WHEN** the user clicks the "Dinner" tab
+- **THEN** 4 dinner menu items are shown
+- **AND** the Breakfast tab is active by default
+
+#### Scenario: Services section
+
+- **GIVEN** the services section is visible
+- **THEN** 6 service feature cards are displayed in a 3-column grid
+- **AND** each card has an icon, title, and short description
+
+#### Scenario: Reservation form
+
+- **GIVEN** the reservation section is in view
+- **THEN** a form with fields: Name, Email, Phone, Number of Persons, Date, Message is displayed
+- **AND** a "Send Message" submit button is present
+- **WHEN** the user focuses an input field
+- **THEN** the border highlights in coral `#ff7a5c`
+
+#### Scenario: Customer reviews carousel
+
+- **GIVEN** the reviews section is visible
+- **THEN** a testimonial carousel is displayed
+- **AND** each slide shows a quote, author photo, author name, and role
+
+#### Scenario: Contact form
+
+- **GIVEN** the contact section is in view
+- **THEN** a form with fields: Name, Email, Phone, Message is displayed
+- **AND** a "Send Message" submit button is present
+
+#### Scenario: Footer
+
+- **GIVEN** the footer is visible
+- **THEN** it contains 3 columns: About, Service hours, Social + Newsletter
+- **AND** a "Component Dock" link is present in the footer
+- **AND** social icons for Facebook, Twitter, Instagram are shown
+- **AND** a newsletter email input with send button is present
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** the hamburger menu is visible
+- **AND** food grid items stack vertically
+- **AND** chef cards stack vertically
+- **AND** menu tabs remain accessible
+- **AND** services cards stack vertically
+- **AND** footer columns stack vertically

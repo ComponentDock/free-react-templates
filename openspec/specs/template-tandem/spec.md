@@ -72,76 +72,87 @@ Extracted from the live preview CSS (`css/main.css`).
      - Instafeed (8 thumbnail images in flex grid)
    - **Footer bottom bar**: Copyright text left, social icons right (Facebook, Twitter, Dribbble, Behance)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Tandem template behaviour
+
 Feature: Tandem creative agency template
 
-  Scenario: Page loads with boxed layout on crimson background
-    Given I visit the Tandem page
-    Then I should see a crimson (#e0003b) body background
-    And the page content should be framed in a white centered box with shadow
+#### Scenario: Page loads with boxed layout on crimson background
 
-  Scenario: Header displays logo and navigation
-    Given I visit the Tandem page
-    Then I should see a logo in the header
-    And I should see navigation links for Home, Generic, and Elements
-    And I should see a hamburger menu button
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see a crimson (#e0003b) body background
+- **AND** the page content should be framed in a white centered box with shadow
 
-  Scenario: Hero banner shows headline and CTA
-    Given I visit the Tandem page
-    Then I should see the headline "Sleek and Clean with same perspective"
-    And I should see a descriptive paragraph below the headline
-    And I should see a "Get Started" button with an arrow icon
+#### Scenario: Header displays logo and navigation
 
-  Scenario: Studio section displays with red overlay background
-    Given I visit the Tandem page
-    Then I should see the "Green Forest Studio" heading
-    And I should see a description paragraph
-    And I should see a "View More" button
-    And the section should have a background image with crimson overlay
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see a logo in the header
+- **AND** I should see navigation links for Home, Generic, and Elements
+- **AND** I should see a hamburger menu button
 
-  Scenario: Achievements section shows 6 metric cards
-    Given I visit the Tandem page
-    Then I should see the "Our Achievements" heading
-    And I should see 6 achievement cards with icons
-    And the cards should include Behance Review, Dribbble Shots, Youtube Subscribe, Github Push, Offline Trophy, and Cash Prizes
+#### Scenario: Hero banner shows headline and CTA
 
-  Scenario: Video section displays play button
-    Given I visit the Tandem page
-    Then I should see the "Everyone wants to be unique" heading
-    And I should see a play button that links to a video
-    And the section should have a background image with crimson overlay
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see the headline "Sleek and Clean with same perspective"
+- **AND** I should see a descriptive paragraph below the headline
+- **AND** I should see a "Get Started" button with an arrow icon
 
-  Scenario: Skills section shows progress bars
-    Given I visit the Tandem page
-    Then I should see the "Our Tools Expertness" heading
-    And I should see 4 labeled progress bars
-    And the progress bars should represent Adobe Photoshop CC, Illustrator CC, Indesign CC, and After Effects CC
+#### Scenario: Studio section displays with red overlay background
 
-  Scenario: Carousel displays project items
-    Given I visit the Tandem page
-    Then I should see carousel slides with images and text
-    And each slide should have a "View More" button with white variant styling
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see the "Green Forest Studio" heading
+- **AND** I should see a description paragraph
+- **AND** I should see a "View More" button
+- **AND** the section should have a background image with crimson overlay
 
-  Scenario: Contact section shows 4 contact columns
-    Given I visit the Tandem page
-    Then I should see Visit Our Office, Let's call us, Let's Email Us, and Customer Support columns
-    And each column should contain relevant contact information
+#### Scenario: Achievements section shows 6 metric cards
 
-  Scenario: Footer contains subscription form and links
-    Given I visit the Tandem page
-    Then I should see an email subscription input with "Subscribe now" button
-    And I should see footer columns with navigation links
-    And I should see social icons for Facebook, Twitter, Dribbble, and Behance
-    And I should see a Component Dock attribution link
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see the "Our Achievements" heading
+- **AND** I should see 6 achievement cards with icons
+- **AND** the cards should include Behance Review, Dribbble Shots, Youtube Subscribe, Github Push, Offline Trophy, and Cash Prizes
 
-  Scenario: Primary buttons have pill shape and hover animation
-    Given I visit the Tandem page
-    Then all primary buttons should have pill-shaped rounded corners
-    And hovering over a primary button should fill it with crimson and change text to white
-    And the arrow icon should slide right on hover
-```
+#### Scenario: Video section displays play button
+
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see the "Everyone wants to be unique" heading
+- **AND** I should see a play button that links to a video
+- **AND** the section should have a background image with crimson overlay
+
+#### Scenario: Skills section shows progress bars
+
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see the "Our Tools Expertness" heading
+- **AND** I should see 4 labeled progress bars
+- **AND** the progress bars should represent Adobe Photoshop CC, Illustrator CC, Indesign CC, and After Effects CC
+
+#### Scenario: Carousel displays project items
+
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see carousel slides with images and text
+- **AND** each slide should have a "View More" button with white variant styling
+
+#### Scenario: Contact section shows 4 contact columns
+
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see Visit Our Office, Let's call us, Let's Email Us, and Customer Support columns
+- **AND** each column should contain relevant contact information
+
+#### Scenario: Footer contains subscription form and links
+
+- **GIVEN** I visit the Tandem page
+- **THEN** I should see an email subscription input with "Subscribe now" button
+- **AND** I should see footer columns with navigation links
+- **AND** I should see social icons for Facebook, Twitter, Dribbble, and Behance
+- **AND** I should see a Component Dock attribution link
+
+#### Scenario: Primary buttons have pill shape and hover animation
+
+- **GIVEN** I visit the Tandem page
+- **THEN** all primary buttons should have pill-shaped rounded corners
+- **AND** hovering over a primary button should fill it with crimson and change text to white
+- **AND** the arrow icon should slide right on hover
 
 ## Verification Checklist
 

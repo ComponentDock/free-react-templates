@@ -63,150 +63,175 @@ BugShield lives in `apps/bugshield` and uses shared components from
 
 ### Header
 
-- **Scenario: Fixed top bar with contact info**
-  Given the page loads
-  When I look at the top bar
-  Then I see address text, business hours, phone number, and social icons (facebook, twitter, instagram, linkedin)
+#### Scenario: Fixed top bar with contact info
 
-- **Scenario: Main navigation with logo and CTA**
-  Given the page loads
-  When I look at the header
-  Then I see the logo on the left, navigation links (Home, Services, Pages, Blog, Contact), a search icon, and an "Appointment" button styled as a pill
+- **GIVEN** the page loads
+- **WHEN** I look at the top bar
+- **THEN** I see address text, business hours, phone number, and social icons (facebook, twitter, instagram, linkedin)
 
-- **Scenario: Pages dropdown menu**
-  Given the page loads
-  When I hover over or click "Pages" in the nav
-  Then a dropdown appears with links (About, Services Details, Blog Details)
+#### Scenario: Main navigation with logo and CTA
+
+- **GIVEN** the page loads
+- **WHEN** I look at the header
+- **THEN** I see the logo on the left, navigation links (Home, Services, Pages, Blog, Contact), a search icon, and an "Appointment" button styled as a pill
+
+#### Scenario: Pages dropdown menu
+
+- **GIVEN** the page loads
+- **WHEN** I hover over or click "Pages" in the nav
+- **THEN** a dropdown appears with links (About, Services Details, Blog Details)
 
 ### Hero Slider
 
-- **Scenario: Hero displays slider with background image and overlay**
-  Given the page loads
-  When I look at the hero section
-  Then I see a full-width slider with background images and dark overlay
+#### Scenario: Hero displays slider with background image and overlay
 
-- **Scenario: Hero shows pest control headline and CTA**
-  Given the hero slider is visible
-  When I read the hero text
-  Then I see a "Pest Control" label in brand color, heading "Keep your House clean & Safe", tagline "Trusted. Experienced. Dedicated.", and a "Learn More" button
+- **GIVEN** the page loads
+- **WHEN** I look at the hero section
+- **THEN** I see a full-width slider with background images and dark overlay
 
-- **Scenario: Hero supports multiple slides**
-  Given the hero slider is visible
-  When I navigate slides
-  Then I can switch between at least 2 slides with navigation dots or arrows
+#### Scenario: Hero shows pest control headline and CTA
+
+- **GIVEN** the hero slider is visible
+- **WHEN** I read the hero text
+- **THEN** I see a "Pest Control" label in brand color, heading "Keep your House clean & Safe", tagline "Trusted. Experienced. Dedicated.", and a "Learn More" button
+
+#### Scenario: Hero supports multiple slides
+
+- **GIVEN** the hero slider is visible
+- **WHEN** I navigate slides
+- **THEN** I can switch between at least 2 slides with navigation dots or arrows
 
 ### Appointment Form
 
-- **Scenario: Appointment form visible over hero area**
-  Given the page loads
-  When I look below the hero
-  Then I see a white form box with heading "Ready To Appointment"
+#### Scenario: Appointment form visible over hero area
 
-- **Scenario: Form fields are present**
-  Given the appointment form is visible
-  When I inspect the fields
-  Then I see: a service dropdown, "Your Name" input, "Your Phone" input, "Email Address" input, and an "Appointment" submit button
+- **GIVEN** the page loads
+- **WHEN** I look below the hero
+- **THEN** I see a white form box with heading "Ready To Appointment"
 
-- **Scenario: Form submission**
-  Given the appointment form is filled with valid data
-  When I click "Appointment"
-  Then the form submits (no validation errors shown)
+#### Scenario: Form fields are present
+
+- **GIVEN** the appointment form is visible
+- **WHEN** I inspect the fields
+- **THEN** I see: a service dropdown, "Your Name" input, "Your Phone" input, "Email Address" input, and an "Appointment" submit button
+
+#### Scenario: Form submission
+
+- **GIVEN** the appointment form is filled with valid data
+- **WHEN** I click "Appointment"
+- **THEN** the form submits (no validation errors shown)
 
 ### About Section
 
-- **Scenario: About section with two-column layout**
-  Given the page loads
-  When I scroll to the About section
-  Then I see a left column with heading "Welcome to the Pest Control Services Company", description text, "How Does It Work?" blurb, services list, and "About Us" button; and a right column with image collage
+#### Scenario: About section with two-column layout
 
-- **Scenario: Services list in about section**
-  Given the about section is visible
-  When I look at the services list
-  Then I see 4 items: Facility Management, Pest control, Energy management, Technical maintenance (each with an icon)
+- **GIVEN** the page loads
+- **WHEN** I scroll to the About section
+- **THEN** I see a left column with heading "Welcome to the Pest Control Services Company", description text, "How Does It Work?" blurb, services list, and "About Us" button; and a right column with image collage
+
+#### Scenario: Services list in about section
+
+- **GIVEN** the about section is visible
+- **WHEN** I look at the services list
+- **THEN** I see 4 items: Facility Management, Pest control, Energy management, Technical maintenance (each with an icon)
 
 ### Services Section
 
-- **Scenario: Services grid displays 8 pest types**
-  Given the page loads
-  When I scroll to the Services section
-  Then I see a centered section title "Our Services" with subtitle and 8 service cards in a 4-column grid
+#### Scenario: Services grid displays 8 pest types
 
-- **Scenario: Each service card has icon, name, and description**
-  Given the services section is visible
-  When I look at any service card
-  Then I see an icon, a pest name (Cockroaches, Ants, Rodents, Scorpion, Silver Fish, Millipedes, Spiders, or Centipede), and a description paragraph
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Services section
+- **THEN** I see a centered section title "Our Services" with subtitle and 8 service cards in a 4-column grid
+
+#### Scenario: Each service card has icon, name, and description
+
+- **GIVEN** the services section is visible
+- **WHEN** I look at any service card
+- **THEN** I see an icon, a pest name (Cockroaches, Ants, Rodents, Scorpion, Silver Fish, Millipedes, Spiders, or Centipede), and a description paragraph
 
 ### Choose Us Section
 
-- **Scenario: Choose Us with three-column layout**
-  Given the page loads
-  When I scroll to the Choose Us section
-  Then I see left column (heading + description + "Read More" button), middle column (image), and right column (3 feature items with icons)
+#### Scenario: Choose Us with three-column layout
 
-- **Scenario: Feature items displayed**
-  Given the Choose Us section is visible
-  When I look at the feature list
-  Then I see: Comfortable Price, Safe And Clean, Friendly Customer Service
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Choose Us section
+- **THEN** I see left column (heading + description + "Read More" button), middle column (image), and right column (3 feature items with icons)
+
+#### Scenario: Feature items displayed
+
+- **GIVEN** the Choose Us section is visible
+- **WHEN** I look at the feature list
+- **THEN** I see: Comfortable Price, Safe And Clean, Friendly Customer Service
 
 ### Counter Section
 
-- **Scenario: Counter section with blue background and 4 stats**
-  Given the page loads
-  When I scroll to the counter section
-  Then I see a blue (#1c6ab8) background with 4 stat columns
+#### Scenario: Counter section with blue background and 4 stats
 
-- **Scenario: Stat values are displayed**
-  Given the counter section is visible
-  When I read the stats
-  Then I see: 50+ Years Of Experience, 1254+ Satisfied Clients, 2000+ Happy Customers, 42+ Awards & Certificates
+- **GIVEN** the page loads
+- **WHEN** I scroll to the counter section
+- **THEN** I see a blue (#1c6ab8) background with 4 stat columns
+
+#### Scenario: Stat values are displayed
+
+- **GIVEN** the counter section is visible
+- **WHEN** I read the stats
+- **THEN** I see: 50+ Years Of Experience, 1254+ Satisfied Clients, 2000+ Happy Customers, 42+ Awards & Certificates
 
 ### Testimonials Section
 
-- **Scenario: Testimonials with rating widget**
-  Given the page loads
-  When I scroll to the testimonials section
-  Then I see heading "Testimonials" on the left, and a rating widget on the right showing 4.7 stars and "3000 Rating"
+#### Scenario: Testimonials with rating widget
 
-- **Scenario: Testimonial carousel**
-  Given the testimonials section is visible
-  When I interact with the carousel
-  Then I see testimonial quotes with author names
+- **GIVEN** the page loads
+- **WHEN** I scroll to the testimonials section
+- **THEN** I see heading "Testimonials" on the left, and a rating widget on the right showing 4.7 stars and "3000 Rating"
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** I interact with the carousel
+- **THEN** I see testimonial quotes with author names
 
 ### Call To Action
 
-- **Scenario: CTA banner with background image**
-  Given the page loads
-  When I scroll to the call-to-action section
-  Then I see a full-width background image with dark overlay
+#### Scenario: CTA banner with background image
 
-- **Scenario: CTA displays contact info**
-  Given the CTA section is visible
-  When I read the text
-  Then I see "Have Any Question?", "Call Us: (+800) 1234 56781", and a descriptive paragraph
+- **GIVEN** the page loads
+- **WHEN** I scroll to the call-to-action section
+- **THEN** I see a full-width background image with dark overlay
+
+#### Scenario: CTA displays contact info
+
+- **GIVEN** the CTA section is visible
+- **WHEN** I read the text
+- **THEN** I see "Have Any Question?", "Call Us: (+800) 1234 56781", and a descriptive paragraph
 
 ### Latest Blog Posts
 
-- **Scenario: Blog section with 1 featured + 3 small posts**
-  Given the page loads
-  When I scroll to the blog section
-  Then I see a centered section title "Latest Blog Post" with subtitle, 1 large featured post (image + date + heading + excerpt + "Read More"), and 3 smaller posts (image + date + title + excerpt)
+#### Scenario: Blog section with 1 featured + 3 small posts
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the blog section
+- **THEN** I see a centered section title "Latest Blog Post" with subtitle, 1 large featured post (image + date + heading + excerpt + "Read More"), and 3 smaller posts (image + date + title + excerpt)
 
 ### Footer
 
-- **Scenario: Dark footer with 4 columns**
-  Given the page loads
-  When I scroll to the footer
-  Then I see a dark (#222222) footer with 4 columns: logo/about/phone + Useful Links + Our Services + Contact Us
+#### Scenario: Dark footer with 4 columns
 
-- **Scenario: Footer includes Component Dock link**
-  Given the footer is visible
-  When I look at the footer
-  Then I see a "Made with Component Dock" or similar attribution linking to https://www.componentdock.com/
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** I see a dark (#222222) footer with 4 columns: logo/about/phone + Useful Links + Our Services + Contact Us
 
-- **Scenario: Copyright bar with social icons**
-  Given the footer is visible
-  When I look at the copyright bar
-  Then I see a copyright notice and social icons (facebook, twitter, linkedin, pinterest)
+#### Scenario: Footer includes Component Dock link
+
+- **GIVEN** the footer is visible
+- **WHEN** I look at the footer
+- **THEN** I see a "Made with Component Dock" or similar attribution linking to https://www.componentdock.com/
+
+#### Scenario: Copyright bar with social icons
+
+- **GIVEN** the footer is visible
+- **WHEN** I look at the copyright bar
+- **THEN** I see a copyright notice and social icons (facebook, twitter, linkedin, pinterest)
 
 ## Verification checklist
 

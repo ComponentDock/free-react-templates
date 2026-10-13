@@ -53,130 +53,135 @@ Extracted from `https://preview.colorlib.com/theme/politics/css/main.css`:
 10. **Blog** — 4-column grid. Section heading "Latest From Our Blog". Each card: image (hover: scale), black date badge, h4 title (hover: blue), excerpt, bottom bar with likes + comments icons.
 11. **Footer** — Dark navy `#04091e`. 3-column layout: Top Products (link list), Newsletter (email input + subscribe button), Instagram Feed (8-grid thumbnails). Bottom: copyright text + social icon squares.
 
-## Gherkin Scenarios
+## Requirements
 
 ### Header
-```gherkin
-Scenario: Header renders with top bar and navigation
-  Given the page loads
-  Then the header top bar displays social icons and contact info
-  And the navigation menu shows Home, About, Service, Team, Blog, Elements, Contact
-  And the logo has a blue left-border accent
 
-Scenario: Header is fixed on scroll
-  Given the user scrolls down
-  Then the header remains fixed at the top
-  And the header gains a box-shadow on scroll
-```
+#### Scenario: Header renders with top bar and navigation
+
+- **GIVEN** the page loads
+- **THEN** the header top bar displays social icons and contact info
+- **AND** the navigation menu shows Home, About, Service, Team, Blog, Elements, Contact
+- **AND** the logo has a blue left-border accent
+
+#### Scenario: Header is fixed on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the header remains fixed at the top
+- **AND** the header gains a box-shadow on scroll
 
 ### Banner/Hero
-```gherkin
-Scenario: Hero section displays campaign message
-  Given the page loads
-  Then the banner shows subtitle "Don't look further, This is our Leader"
-  And the banner shows heading "Support Our Party"
-  And a "Get Started" CTA button is visible
 
-Scenario: Hero has dark overlay on background image
-  Given the page loads
-  Then the banner has a semi-transparent dark overlay over the background image
-```
+#### Scenario: Hero section displays campaign message
+
+- **GIVEN** the page loads
+- **THEN** the banner shows subtitle "Don't look further, This is our Leader"
+- **AND** the banner shows heading "Support Our Party"
+- **AND** a "Get Started" CTA button is visible
+
+#### Scenario: Hero has dark overlay on background image
+
+- **GIVEN** the page loads
+- **THEN** the banner has a semi-transparent dark overlay over the background image
 
 ### Countdown
-```gherkin
-Scenario: Countdown section shows election countdown
-  Given the page loads
-  Then the countdown area displays "Election is knocking at door" heading
-  And 4 countdown columns are visible on a blue background
-```
+
+#### Scenario: Countdown section shows election countdown
+
+- **GIVEN** the page loads
+- **THEN** the countdown area displays "Election is knocking at door" heading
+- **AND** 4 countdown columns are visible on a blue background
 
 ### Services
-```gherkin
-Scenario: Services section shows 3 service cards
-  Given the page loads
-  Then 3 service cards are displayed in a row
-  And each card has an image, title, and description
-  And hovering an image triggers a scale+rotate animation
 
-Scenario: Service cards show correct content
-  Given the page loads
-  Then the services are "Conduct Campaign", "Generate Member", "Energy Saving Policy"
-```
+#### Scenario: Services section shows 3 service cards
+
+- **GIVEN** the page loads
+- **THEN** 3 service cards are displayed in a row
+- **AND** each card has an image, title, and description
+- **AND** hovering an image triggers a scale+rotate animation
+
+#### Scenario: Service cards show correct content
+
+- **GIVEN** the page loads
+- **THEN** the services are "Conduct Campaign", "Generate Member", "Energy Saving Policy"
 
 ### About
-```gherkin
-Scenario: About section shows party info
-  Given the page loads
-  Then the heading reads "Who we are to Serve the nation"
-  And 2 feature items are displayed: "Expert Services" and "Great Support"
-  And the left side has a background image
 
-Scenario: About icons use Linearicons
-  Given the page loads
-  Then the feature items show diamond and phone icons
-```
+#### Scenario: About section shows party info
+
+- **GIVEN** the page loads
+- **THEN** the heading reads "Who we are to Serve the nation"
+- **AND** 2 feature items are displayed: "Expert Services" and "Great Support"
+- **AND** the left side has a background image
+
+#### Scenario: About icons use Linearicons
+
+- **GIVEN** the page loads
+- **THEN** the feature items show diamond and phone icons
 
 ### Gallery
-```gherkin
-Scenario: Gallery shows masonry image grid
-  Given the page loads
-  Then 4 gallery images are displayed in a masonry grid
-  And the first row has an 8-column and 4-column image
-  And the second row has two 6-column images
-  And images fade on hover
-```
+
+#### Scenario: Gallery shows masonry image grid
+
+- **GIVEN** the page loads
+- **THEN** 4 gallery images are displayed in a masonry grid
+- **AND** the first row has an 8-column and 4-column image
+- **AND** the second row has two 6-column images
+- **AND** images fade on hover
 
 ### Counter
-```gherkin
-Scenario: Counter section shows statistics
-  Given the page loads
-  Then 4 counters are displayed with circular blue design
-  And the counters show: 2K+ Projects Completed, 5.5K Total Employees, 959 Happy Clients, 367 Tickets Submitted
-  And the section has a dark overlay background
-```
+
+#### Scenario: Counter section shows statistics
+
+- **GIVEN** the page loads
+- **THEN** 4 counters are displayed with circular blue design
+- **AND** the counters show: 2K+ Projects Completed, 5.5K Total Employees, 959 Happy Clients, 367 Tickets Submitted
+- **AND** the section has a dark overlay background
 
 ### Feedback/Accordion
-```gherkin
-Scenario: Accordion shows 4 expandable items
-  Given the page loads
-  Then 4 accordion items are displayed: Success, Info, danger, Warning
-  And clicking an item expands to show its content
-  And only one item is open at a time
 
-Scenario: Video play button is visible
-  Given the page loads
-  Then a video play button is displayed on the right side
-  And the right side has a dark overlay background
-```
+#### Scenario: Accordion shows 4 expandable items
+
+- **GIVEN** the page loads
+- **THEN** 4 accordion items are displayed: Success, Info, danger, Warning
+- **AND** clicking an item expands to show its content
+- **AND** only one item is open at a time
+
+#### Scenario: Video play button is visible
+
+- **GIVEN** the page loads
+- **THEN** a video play button is displayed on the right side
+- **AND** the right side has a dark overlay background
 
 ### Brands
-```gherkin
-Scenario: Brand logos display in carousel
-  Given the page loads
-  Then 5 brand logos are shown in a carousel
-  And logos are grayscale by default
-  And logos show full color on hover
-```
+
+#### Scenario: Brand logos display in carousel
+
+- **GIVEN** the page loads
+- **THEN** 5 brand logos are shown in a carousel
+- **AND** logos are grayscale by default
+- **AND** logos show full color on hover
 
 ### Blog
-```gherkin
-Scenario: Blog section shows 4 post cards
-  Given the page loads
-  Then 4 blog cards are displayed in a row
-  And each card has an image, date badge, title, excerpt, and engagement stats
-  And the date badge is black with white text
-  And hovering a card scales the image and turns the title blue
-```
+
+#### Scenario: Blog section shows 4 post cards
+
+- **GIVEN** the page loads
+- **THEN** 4 blog cards are displayed in a row
+- **AND** each card has an image, date badge, title, excerpt, and engagement stats
+- **AND** the date badge is black with white text
+- **AND** hovering a card scales the image and turns the title blue
 
 ### Footer
-```gherkin
-Scenario: Footer displays with newsletter and social links
-  Given the page loads
-  Then the footer has dark navy background
-  And it shows Top Products links, Newsletter form, and Instagram feed
-  And the bottom has copyright text and social icon squares
-  And the footer links to Component Dock
-```
+
+#### Scenario: Footer displays with newsletter and social links
+
+- **GIVEN** the page loads
+- **THEN** the footer has dark navy background
+- **AND** it shows Top Products links, Newsletter form, and Instagram feed
+- **AND** the bottom has copyright text and social icon squares
+- **AND** the footer links to Component Dock
 
 ## Verification Checklist
 

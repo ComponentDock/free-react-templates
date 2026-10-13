@@ -154,7 +154,7 @@ white main navigation bar.
   - Right: search icon + cart icon
 - **AND** the active link SHALL have a blue-purple `#5F67FF` underline
 
-### Requirement: Hero section
+### Feature: Hero section
 
 #### Scenario: Hero with dark photo background
 
@@ -166,15 +166,15 @@ white main navigation bar.
 - **AND** a blue-purple `.primary-btn` "Our Services" SHALL render
   below the text
 - **AND** the button SHALL have `#5F67FF` background, white text,
-  and `border-radius: 2px`
+- **AND** `border-radius: 2px`
 
-### Requirement: Services section
+### Feature: Services section
 
 #### Scenario: Four alternating service items
 
 - **GIVEN** the hero section is rendered
 - **THEN** a "What We Do?" section SHALL render with a centered title
-  and subtitle
+- **AND** subtitle
 - **AND** four service items SHALL render in a grid: Engine Overhaul,
   Power Steering, Oil Change, Upgrades Car
 - **AND** each item SHALL alternate between text (icon + title +
@@ -182,7 +182,7 @@ white main navigation bar.
 - **AND** the layout SHALL use `order-lg-*` classes to achieve the
   alternating text/image arrangement on desktop
 
-### Requirement: Choose Us section
+### Feature: Choose Us section
 
 #### Scenario: Split image and text layout
 
@@ -194,7 +194,7 @@ white main navigation bar.
     (icon_check + lorem text), and a "About Us" `.primary-btn`
 - **AND** the checklist items SHALL use a checkmark icon
 
-### Requirement: Products section
+### Feature: Products section
 
 #### Scenario: Four product cards
 
@@ -207,7 +207,7 @@ white main navigation bar.
 - **AND** the four products SHALL be: High Flow Fuel, Revolution
   Wheels, Tone Interior Kit, Matte Gunmetal
 
-### Requirement: Testimonial section
+### Feature: Testimonial section
 
 #### Scenario: Carousel with quotes
 
@@ -217,9 +217,9 @@ white main navigation bar.
 - **AND** each item SHALL have a blue-purple `#5F67FF` quotation mark
   icon and a testimonial paragraph
 - **AND** dot navigation SHALL render below with active dot in `#353535`
-  and inactive dots in `#b5b5b5`
+- **AND** inactive dots in `#b5b5b5`
 
-### Requirement: Counter section
+### Feature: Counter section
 
 #### Scenario: Four stat counters on dark background
 
@@ -232,7 +232,7 @@ white main navigation bar.
 - **AND** counter numbers SHALL be blue-purple `#5F67FF` and labels
   SHALL be white
 
-### Requirement: Latest News section
+### Feature: Latest News section
 
 #### Scenario: Three blog cards
 
@@ -242,7 +242,7 @@ white main navigation bar.
   overlay, article title, excerpt text, and "Continue Reading" link
 - **AND** all three cards SHALL use the same structure and layout
 
-### Requirement: Footer
+### Feature: Footer
 
 #### Scenario: Multi-column footer
 
@@ -262,7 +262,7 @@ white main navigation bar.
   `https://www.componentdock.com/` branded as "Component Dock"
 - **AND** the original ColorLib attribution SHALL NOT appear
 
-### Requirement: Placeholder images
+### Feature: Placeholder images
 
 #### Scenario: Picsum placeholders
 

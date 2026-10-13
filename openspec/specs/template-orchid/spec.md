@@ -55,64 +55,76 @@ pill-shaped submit button.
 - **No navbar, no footer** in the visible design — single-page form only.
 - **Typography:** Clean sans-serif, moderate weight, good spacing between fields.
 
-## Gherkin requirements
+## Requirements
 
-### Background
-  Given the user navigates to the Orchid template
-  Then the page displays a contact form on a gradient background
+### Feature: Orchid template behaviour
 
-### Scenario: Page layout
-  Given the page loads
-  Then a full-viewport gradient background is visible (pink-to-purple)
-  And a centered white card is displayed
-  And the card contains the heading "Contact Us"
+**Background**
+- **GIVEN** the user navigates to the Orchid template
+- **THEN** the page displays a contact form on a gradient background
 
-### Scenario: Name fields
-  Given the page loads
-  Then a "YOUR NAME" label is visible
-  And two side-by-side input fields are shown (first name and last name)
-  And both fields have underline-style borders
+#### Scenario: Page layout
 
-### Scenario: Email field
-  Given the page loads
-  Then an "EMAIL ADDRESS" label is visible
-  And a single full-width input field is shown with underline border
+- **GIVEN** the page loads
+- **THEN** a full-viewport gradient background is visible (pink-to-purple)
+- **AND** a centered white card is displayed
+- **AND** the card contains the heading "Contact Us"
 
-### Scenario: Phone field
-  Given the page loads
-  Then a "PHONE NUMBER" label is visible
-  And a single full-width input field is shown with underline border
+#### Scenario: Name fields
 
-### Scenario: Message field
-  Given the page loads
-  Then a "MESSAGE" label is visible
-  And a textarea is shown with placeholder "Please enter your comments..."
-  And the textarea has underline-style border
+- **GIVEN** the page loads
+- **THEN** a "YOUR NAME" label is visible
+- **AND** two side-by-side input fields are shown (first name and last name)
+- **AND** both fields have underline-style borders
 
-### Scenario: Submit button
-  Given the page loads
-  Then a "Submit" button is visible at the bottom of the form
-  And the button is dark/charcoal with white text
-  And the button has a pill/rounded shape
-  And the button displays a right-arrow icon after the text
+#### Scenario: Email field
 
-### Scenario: Valid field indicator
-  Given the user enters a valid email address
-  Then a green checkmark appears next to the email field
+- **GIVEN** the page loads
+- **THEN** an "EMAIL ADDRESS" label is visible
+- **AND** a single full-width input field is shown with underline border
 
-### Scenario: Invalid field indicator
-  Given the user enters an invalid phone number
-  Then a red X mark appears next to the phone field
+#### Scenario: Phone field
 
-### Scenario: Form submission with empty fields
-  Given the user clicks Submit without filling any fields
-  Then validation error indicators appear on required fields
-  And the form is not submitted
+- **GIVEN** the page loads
+- **THEN** a "PHONE NUMBER" label is visible
+- **AND** a single full-width input field is shown with underline border
 
-### Scenario: Responsive layout
-  Given the user views on a mobile device (width < 768px)
-  Then the card takes near-full width with horizontal padding
-  And the name fields stack vertically instead of side-by-side
+#### Scenario: Message field
+
+- **GIVEN** the page loads
+- **THEN** a "MESSAGE" label is visible
+- **AND** a textarea is shown with placeholder "Please enter your comments..."
+- **AND** the textarea has underline-style border
+
+#### Scenario: Submit button
+
+- **GIVEN** the page loads
+- **THEN** a "Submit" button is visible at the bottom of the form
+- **AND** the button is dark/charcoal with white text
+- **AND** the button has a pill/rounded shape
+- **AND** the button displays a right-arrow icon after the text
+
+#### Scenario: Valid field indicator
+
+- **GIVEN** the user enters a valid email address
+- **THEN** a green checkmark appears next to the email field
+
+#### Scenario: Invalid field indicator
+
+- **GIVEN** the user enters an invalid phone number
+- **THEN** a red X mark appears next to the phone field
+
+#### Scenario: Form submission with empty fields
+
+- **GIVEN** the user clicks Submit without filling any fields
+- **THEN** validation error indicators appear on required fields
+- **AND** the form is not submitted
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views on a mobile device (width < 768px)
+- **THEN** the card takes near-full width with horizontal padding
+- **AND** the name fields stack vertically instead of side-by-side
 
 ## Verification checklist
 

@@ -13,7 +13,7 @@
 - **Layout**: Centered container with responsive image slider, prominent prev/next floating control arrows, and bottom pagination dots.
 - **Footer Attribution**: Must include link to `https://www.componentdock.com/` ("Component Dock").
 
-## Gherkin requirements and scenarios
+## Requirements
 
 ### Feature: Interactive Image Carousel
 
@@ -21,16 +21,16 @@ As a visitor, I want to browse high-resolution featured photos via an interactiv
 
 #### Scenario: User navigates slides using next and previous buttons
 
-- Given the CarouselPulse homepage is loaded
-- When the user clicks the "Next" (`›`) or "Previous" (`‹`) arrow control
-- Then the carousel transitions smoothly to the next or previous slide image
-- And the active pagination indicator updates accordingly
+- **GIVEN** the CarouselPulse homepage is loaded
+- **WHEN** the user clicks the "Next" (`›`) or "Previous" (`‹`) arrow control
+- **THEN** the carousel transitions smoothly to the next or previous slide image
+- **AND** the active pagination indicator updates accordingly
 
 #### Scenario: User clicks pagination dots to jump directly to a slide
 
-- Given the CarouselPulse homepage is loaded
-- When the user clicks a specific pagination dot at the bottom
-- Then the carousel displays the corresponding slide image immediately
+- **GIVEN** the CarouselPulse homepage is loaded
+- **WHEN** the user clicks a specific pagination dot at the bottom
+- **THEN** the carousel displays the corresponding slide image immediately
 
 ### Feature: Branding and Component Dock Footer
 
@@ -38,9 +38,9 @@ As a visitor, I want clear branding and a footer linking to Component Dock.
 
 #### Scenario: Footer links to Component Dock
 
-- Given the CarouselPulse application is rendered
-- When the user scrolls to the footer
-- Then they see a "Component Dock" link pointing to `https://www.componentdock.com/`
+- **GIVEN** the CarouselPulse application is rendered
+- **WHEN** the user scrolls to the footer
+- **THEN** they see a "Component Dock" link pointing to `https://www.componentdock.com/`
 
 ## Verification checklist
 

@@ -49,76 +49,86 @@ Loaded via `@font-face` with multiple subsets (Latin, Latin-Ext, Cyrillic, Vietn
 7. **Blog Entries** — Centered subtitle + heading, 5-column blog post cards (date, title, excerpt)
 8. **Footer** — Dark/gray: About widget, social icons (Facebook, Twitter, Instagram, Dribbble, LinkedIn), 3-column navigation link lists, copyright line
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: CraftCanvas template behaviour
+
 Feature: CraftCanvas — Design Agency Template
 
-  Background:
-    Given the user opens the CraftCanvas template
-    And the page loads with the Montserrat font family
+Background:
+- **GIVEN** the user opens the CraftCanvas template
+- **AND** the page loads with the Montserrat font family
 
-  Scenario: Navbar displays logo and navigation links
-    Then the navbar shows the logo "CraftCanvas"
-    And the navigation links include "Home", "About", "Services", and "Contact"
-    And a right-aligned CTA button "Browse Templates" is visible
-    And on mobile a hamburger menu toggle is displayed
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Hero section renders split layout
-    Then the hero section shows a heading "Create, Code, and Published."
-    And a descriptive paragraph is below the heading
-    And a "Get Started" pill button is present
-    And two feature cards with icons appear below the CTA
-    And the right side shows a hero image with a dark quote overlay
-    And the quote overlay shows an author name and role
+- **THEN** the navbar shows the logo "CraftCanvas"
+- **AND** the navigation links include "Home", "About", "Services", and "Contact"
+- **AND** a right-aligned CTA button "Browse Templates" is visible
+- **AND** on mobile a hamburger menu toggle is displayed
 
-  Scenario: Achievements section shows four stat cards
-    Then four stat cards are displayed in a row
-    And each card shows a large number, a heading, and a description
-    And the numbers are approximately "99.55%", "98,000+", "99.99%", "1M+"
+#### Scenario: Hero section renders split layout
 
-  Scenario: How It Works section shows three steps
-    Then the section subtitle reads "How it works"
-    And three steps are displayed with circular blue icons
-    And each step has a numbered title and description
-    And decorative curved arrow SVGs connect the steps
+- **THEN** the hero section shows a heading "Create, Code, and Published."
+- **AND** a descriptive paragraph is below the heading
+- **AND** a "Get Started" pill button is present
+- **AND** two feature cards with icons appear below the CTA
+- **AND** the right side shows a hero image with a dark quote overlay
+- **AND** the quote overlay shows an author name and role
 
-  Scenario: Services section has text and image split
-    Then the left side shows subtitle "Services", a heading, and a checklist
-    And a "Get Started" pill button appears below the checklist
-    And the right side displays an image with a dotted overlay decoration
-    And the section background is light gray (#f8f9fa)
+#### Scenario: Achievements section shows four stat cards
 
-  Scenario: Testimonials section renders a carousel
-    Then a carousel shows three testimonial cards
-    And each card has a circular avatar image
-    And each card shows a blockquote with testimonial text
-    And each card shows the author's name and role
+- **THEN** four stat cards are displayed in a row
+- **AND** each card shows a large number, a heading, and a description
+- **AND** the numbers are approximately "99.55%", "98,000+", "99.99%", "1M+"
 
-  Scenario: Blog Entries section displays post cards
-    Then the section subtitle reads "Blog"
-    And five blog post cards are shown in a row
-    And each card has a date, title link, and excerpt text
+#### Scenario: How It Works section shows three steps
 
-  Scenario: Footer contains navigation and social links
-    Then the footer shows an "About" widget with description
-    And social media icon links are present (Facebook, Twitter, Instagram, Dribbble, LinkedIn)
-    And three columns of navigation links are displayed
-    And a copyright line with "Component Dock" attribution is shown
+- **THEN** the section subtitle reads "How it works"
+- **AND** three steps are displayed with circular blue icons
+- **AND** each step has a numbered title and description
+- **AND** decorative curved arrow SVGs connect the steps
 
-  Scenario: All buttons use pill shape
-    Then every primary button has border-radius of 30px
-    And buttons use the brand color #1264fa
-    And button hover changes to #2671fa
+#### Scenario: Services section has text and image split
 
-  Scenario: Responsive behavior
-    Then on mobile the navbar collapses to a hamburger menu
-    And the hero section stacks vertically
-    And stat cards stack to 2 columns then 1 column
-    And the 3-step section stacks vertically
-    And the services split layout stacks vertically
-    And the 5-column blog grid stacks to fewer columns
-```
+- **THEN** the left side shows subtitle "Services", a heading, and a checklist
+- **AND** a "Get Started" pill button appears below the checklist
+- **AND** the right side displays an image with a dotted overlay decoration
+- **AND** the section background is light gray (#f8f9fa)
+
+#### Scenario: Testimonials section renders a carousel
+
+- **THEN** a carousel shows three testimonial cards
+- **AND** each card has a circular avatar image
+- **AND** each card shows a blockquote with testimonial text
+- **AND** each card shows the author's name and role
+
+#### Scenario: Blog Entries section displays post cards
+
+- **THEN** the section subtitle reads "Blog"
+- **AND** five blog post cards are shown in a row
+- **AND** each card has a date, title link, and excerpt text
+
+#### Scenario: Footer contains navigation and social links
+
+- **THEN** the footer shows an "About" widget with description
+- **AND** social media icon links are present (Facebook, Twitter, Instagram, Dribbble, LinkedIn)
+- **AND** three columns of navigation links are displayed
+- **AND** a copyright line with "Component Dock" attribution is shown
+
+#### Scenario: All buttons use pill shape
+
+- **THEN** every primary button has border-radius of 30px
+- **AND** buttons use the brand color #1264fa
+- **AND** button hover changes to #2671fa
+
+#### Scenario: Responsive behavior
+
+- **THEN** on mobile the navbar collapses to a hamburger menu
+- **AND** the hero section stacks vertically
+- **AND** stat cards stack to 2 columns then 1 column
+- **AND** the 3-step section stacks vertically
+- **AND** the services split layout stacks vertically
+- **AND** the 5-column blog grid stacks to fewer columns
 
 ## Verification Checklist
 

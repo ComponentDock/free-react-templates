@@ -47,88 +47,99 @@ The Autoroad screenshot shows:
 - Blog: 3 blog cards with thumbnail image, date, author, title, excerpt
 - Dark footer (#000): 4 columns — About Autoroad, Information links, Customer Support links, Contact Us with address/phone/email + social icons
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: OpenRoad — Car Rental Landing Page
 
 #### Scenario: Navbar displays brand and navigation links
-- GIVEN the user loads the page
-- THEN a dark navigation bar is displayed at the top
-- AND the brand logo "OpenRoad" appears on the left with a colored accent span
-- AND navigation links appear on the right: Home, About, Pricing, Our Car, Blog, Contact
-- AND the navbar becomes sticky/solid on scroll
+
+- **GIVEN** the user loads the page
+- **THEN** a dark navigation bar is displayed at the top
+- **AND** the brand logo "OpenRoad" appears on the left with a colored accent span
+- **AND** navigation links appear on the right: Home, About, Pricing, Our Car, Blog, Contact
+- **AND** the navbar becomes sticky/solid on scroll
 
 #### Scenario: Hero section has headline and booking form
-- GIVEN the user views the hero area
-- THEN a full-width hero with background image and dark overlay is displayed
-- AND a large white headline "Now It's easy for you rent a car" appears on the left
-- AND a paragraph description appears below the headline
-- AND a video play button link "Easy steps for renting a car" appears below the text
-- AND a white elevated booking form card appears on the right with fields: pick-up location, drop-off location, pick-up date, drop-off date, pick-up time
-- AND the booking form has rounded corners (5px) and shadow
-- AND a blue "Search Vehicle" submit button is at the bottom of the form
+
+- **GIVEN** the user views the hero area
+- **THEN** a full-width hero with background image and dark overlay is displayed
+- **AND** a large white headline "Now It's easy for you rent a car" appears on the left
+- **AND** a paragraph description appears below the headline
+- **AND** a video play button link "Easy steps for renting a car" appears below the text
+- **AND** a white elevated booking form card appears on the right with fields: pick-up location, drop-off location, pick-up date, drop-off date, pick-up time
+- **AND** the booking form has rounded corners (5px) and shadow
+- **AND** a blue "Search Vehicle" submit button is at the bottom of the form
 
 #### Scenario: Vehicle search filter bar
-- GIVEN the user scrolls past the hero
-- THEN a search/filter bar is displayed with 4 dropdown selects
-- AND the selects are: Select Model, Select Brand, Year Model, Min Year
-- AND a "Search Vehicle" button is present
-- AND the bar has a white background
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** a search/filter bar is displayed with 4 dropdown selects
+- **AND** the selects are: Select Model, Select Brand, Year Model, Min Year
+- **AND** a "Search Vehicle" button is present
+- **AND** the bar has a white background
 
 #### Scenario: Services section displays 4 service cards
-- GIVEN the user scrolls to the Services section
-- THEN a dark overlay background section is shown
-- AND a centered "Our Services" heading appears
-- AND 4 service cards are displayed in a horizontal row
-- AND each card has a flaticon icon, title, and description text
-- AND the services are: 24/7 Car Support, Lots of location, Reservation, Rental Cars
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a dark overlay background section is shown
+- **AND** a centered "Our Services" heading appears
+- **AND** 4 service cards are displayed in a horizontal row
+- **AND** each card has a flaticon icon, title, and description text
+- **AND** the services are: 24/7 Car Support, Lots of location, Reservation, Rental Cars
 
 #### Scenario: Choose Your Car section shows car listing cards
-- GIVEN the user scrolls to the car listings section
-- THEN a "Choose Your Car" heading is displayed
-- AND car cards are shown in a grid layout
-- AND each card has a car image, price display (orange #fc983c rate), car name, brand label
-- AND each card has "Book now" and "Details" buttons
-- AND cards have a subtle shadow effect
+
+- **GIVEN** the user scrolls to the car listings section
+- **THEN** a "Choose Your Car" heading is displayed
+- **AND** car cards are shown in a grid layout
+- **AND** each card has a car image, price display (orange #fc983c rate), car name, brand label
+- **AND** each card has "Book now" and "Details" buttons
+- **AND** cards have a subtle shadow effect
 
 #### Scenario: How It Works section shows 4-step workflow
-- GIVEN the user scrolls to the workflow section
-- THEN a "How it works" heading is displayed
-- AND 4 steps are shown horizontally: Pick Destination, Select Term, Choose A Car, Enjoy The Ride
-- AND each step has an icon, title, and description
+
+- **GIVEN** the user scrolls to the workflow section
+- **THEN** a "How it works" heading is displayed
+- **AND** 4 steps are shown horizontally: Pick Destination, Select Term, Choose A Car, Enjoy The Ride
+- **AND** each step has an icon, title, and description
 
 #### Scenario: Testimonials section displays client reviews
-- GIVEN the user scrolls to the Testimonials section
-- THEN a "Happy Clients" heading is displayed
-- AND a carousel of testimonials is shown
-- AND each testimonial has a client photo, quote text, client name, and role
-- AND the carousel allows navigation between testimonials
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a "Happy Clients" heading is displayed
+- **AND** a carousel of testimonials is shown
+- **AND** each testimonial has a client photo, quote text, client name, and role
+- **AND** the carousel allows navigation between testimonials
 
 #### Scenario: About section shows company info
-- GIVEN the user scrolls to the About section
-- THEN a "Choose A Perfect Car" heading is displayed
-- AND descriptive text about the company is shown
-- AND a "Search Vehicle" CTA button appears
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a "Choose A Perfect Car" heading is displayed
+- **AND** descriptive text about the company is shown
+- **AND** a "Search Vehicle" CTA button appears
 
 #### Scenario: Blog section shows recent articles
-- GIVEN the user scrolls to the Blog section
-- THEN a "Recent Blog" heading is displayed
-- AND 3 blog cards are shown in a row
-- AND each card has a thumbnail image, date, author name, title, and excerpt
-- AND cards have a subtle border and shadow
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a "Recent Blog" heading is displayed
+- **AND** 3 blog cards are shown in a row
+- **AND** each card has a thumbnail image, date, author name, title, and excerpt
+- **AND** cards have a subtle border and shadow
 
 #### Scenario: Footer displays multi-column layout
-- GIVEN the user scrolls to the footer
-- THEN a dark black (#000) footer is displayed
-- AND 4 columns appear: About Autoroad, Information links, Customer Support links, Contact Us
-- AND social media icons are shown in the About column
-- AND contact info includes address, phone, and email
-- AND the footer links "Made with Component Dock" or "Component Dock" attribution is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark black (#000) footer is displayed
+- **AND** 4 columns appear: About Autoroad, Information links, Customer Support links, Contact Us
+- **AND** social media icons are shown in the About column
+- **AND** contact info includes address, phone, and email
+- **AND** the footer links "Made with Component Dock" or "Component Dock" attribution is present
 
 #### Scenario: Footer attribution links to Component Dock
-- GIVEN the user views the footer
-- THEN a link to "https://www.componentdock.com/" is present
-- AND the link text references "Component Dock"
+
+- **GIVEN** the user views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text references "Component Dock"
 
 ## Verification Checklist
 

@@ -95,147 +95,157 @@ PR.
 - **Section titles:** `.section-title h1` = 36px, centered, with grey
   subtitle paragraph below.
 
-## Gherkin requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Navigation header
-  Scenario: Logo and nav links are visible
-    Given the page loads
-    Then the "Shopnova" wordmark is displayed in the header
-    And nav links "Home", "Shop", "Blog", "Pages", "Contact" are visible
 
-  Scenario: Shop dropdown shows sub-links on hover
-    Given the user hovers over "Shop"
-    Then a dropdown appears with "Shop Category", "Product Details", "Product Checkout", "Shopping Cart", "Confirmation"
+#### Scenario: Logo and nav links are visible
 
-  Scenario: Blog dropdown shows sub-links on hover
-    Given the user hovers over "Blog"
-    Then a dropdown appears with "Blog", "Blog Details"
+- **GIVEN** the page loads
+- **THEN** the "Shopnova" wordmark is displayed in the header
+- **AND** nav links "Home", "Shop", "Blog", "Pages", "Contact" are visible
 
-  Scenario: Pages dropdown shows sub-links on hover
-    Given the user hovers over "Pages"
-    Then a dropdown appears with "Login", "Tracking", "Elements"
+#### Scenario: Shop dropdown shows sub-links on hover
 
-  Scenario: Bag icon and search toggle are present
-    Given the header is visible
-    Then a shopping bag icon is displayed
-    And a search toggle button is displayed
+- **GIVEN** the user hovers over "Shop"
+- **THEN** a dropdown appears with "Shop Category", "Product Details", "Product Checkout", "Shopping Cart", "Confirmation"
 
-  Scenario: Search bar opens on toggle click
-    Given the user clicks the search toggle
-    Then a full-width search input field appears with brand gradient background
-```
+#### Scenario: Blog dropdown shows sub-links on hover
+
+- **GIVEN** the user hovers over "Blog"
+- **THEN** a dropdown appears with "Blog", "Blog Details"
+
+#### Scenario: Pages dropdown shows sub-links on hover
+
+- **GIVEN** the user hovers over "Pages"
+- **THEN** a dropdown appears with "Login", "Tracking", "Elements"
+
+#### Scenario: Bag icon and search toggle are present
+
+- **GIVEN** the header is visible
+- **THEN** a shopping bag icon is displayed
+- **AND** a search toggle button is displayed
+
+#### Scenario: Search bar opens on toggle click
+
+- **GIVEN** the user clicks the search toggle
+- **THEN** a full-width search input field appears with brand gradient background
 
 ### Hero banner
 
-```gherkin
 Feature: Hero product carousel
-  Scenario: Hero displays product headline and CTA
-    Given the hero section is visible
-    Then a headline "Nike New Collection!" is displayed
-    And a description paragraph is shown
-    And an "Add to Bag" circular button is visible
 
-  Scenario: Hero is a fullscreen carousel
-    Given the hero section loads
-    Then the hero occupies the full viewport height
-    And carousel navigation arrows are present
-```
+#### Scenario: Hero displays product headline and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** a headline "Nike New Collection!" is displayed
+- **AND** a description paragraph is shown
+- **AND** an "Add to Bag" circular button is visible
+
+#### Scenario: Hero is a fullscreen carousel
+
+- **GIVEN** the hero section loads
+- **THEN** the hero occupies the full viewport height
+- **AND** carousel navigation arrows are present
 
 ### Features
 
-```gherkin
 Feature: Features row
-  Scenario: Four features are displayed
-    Given the features section is visible
-    Then 4 feature cards are shown in a row
-    And each card has an icon, a title, and a description
-    And the titles are "Free Delivery", "Return Policy", "24/7 Support", "Secure Payment"
-```
+
+#### Scenario: Four features are displayed
+
+- **GIVEN** the features section is visible
+- **THEN** 4 feature cards are shown in a row
+- **AND** each card has an icon, a title, and a description
+- **AND** the titles are "Free Delivery", "Return Policy", "24/7 Support", "Secure Payment"
 
 ### Category grid
 
-```gherkin
 Feature: Category image grid
-  Scenario: Category grid shows deal cards
-    Given the category section is visible
-    Then 5 category cards are displayed in an asymmetric grid
-    And each card has an overlay with a title on hover
-```
+
+#### Scenario: Category grid shows deal cards
+
+- **GIVEN** the category section is visible
+- **THEN** 5 category cards are displayed in an asymmetric grid
+- **AND** each card has an overlay with a title on hover
 
 ### Product carousel
 
-```gherkin
 Feature: Product carousel
-  Scenario: Product section shows Latest Products by default
-    Given the product carousel section is visible
-    Then the heading "Latest Products" is displayed
-    And product cards are shown in a carousel
 
-  Scenario: Each product card has name, price, and action icons
-    Given a product card is visible
-    Then it shows a product image, name, current price, and strikethrough old price
-    And hover reveals 4 action icons: add to bag, wishlist, compare, view more
-```
+#### Scenario: Product section shows Latest Products by default
+
+- **GIVEN** the product carousel section is visible
+- **THEN** the heading "Latest Products" is displayed
+- **AND** product cards are shown in a carousel
+
+#### Scenario: Each product card has name, price, and action icons
+
+- **GIVEN** a product card is visible
+- **THEN** it shows a product image, name, current price, and strikethrough old price
+- **AND** hover reveals 4 action icons: add to bag, wishlist, compare, view more
 
 ### Exclusive deal
 
-```gherkin
 Feature: Exclusive deal countdown
-  Scenario: Countdown timer displays days, hours, minutes, seconds
-    Given the exclusive deal section is visible
-    Then a countdown timer with Days, Hours, Mins, Secs blocks is displayed
-    And the heading "Exclusive Hot Deal Ends Soon!" is shown
-    And a "Shop Now" primary button is visible
 
-  Scenario: Right side shows product carousel
-    Given the exclusive deal section is visible
-    Then a product image with price and "Add to Bag" is shown on the right
-```
+#### Scenario: Countdown timer displays days, hours, minutes, seconds
+
+- **GIVEN** the exclusive deal section is visible
+- **THEN** a countdown timer with Days, Hours, Mins, Secs blocks is displayed
+- **AND** the heading "Exclusive Hot Deal Ends Soon!" is shown
+- **AND** a "Shop Now" primary button is visible
+
+#### Scenario: Right side shows product carousel
+
+- **GIVEN** the exclusive deal section is visible
+- **THEN** a product image with price and "Add to Bag" is shown on the right
 
 ### Brand logos
 
-```gherkin
 Feature: Brand logos row
-  Scenario: Brand logos are displayed
-    Given the brand section is visible
-    Then 5 brand logo images are shown in a horizontal row
-```
+
+#### Scenario: Brand logos are displayed
+
+- **GIVEN** the brand section is visible
+- **THEN** 5 brand logo images are shown in a horizontal row
 
 ### Deals of the week
 
-```gherkin
 Feature: Deals of the week
-  Scenario: Related products are displayed
-    Given the deals section is visible
-    Then the heading "Deals of the Week" is displayed
-    And 9 related product cards with thumbnail, title, and price are shown
-    And a sidebar promotional image is displayed
-```
+
+#### Scenario: Related products are displayed
+
+- **GIVEN** the deals section is visible
+- **THEN** the heading "Deals of the Week" is displayed
+- **AND** 9 related product cards with thumbnail, title, and price are shown
+- **AND** a sidebar promotional image is displayed
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer columns are displayed
-    Given the footer is visible
-    Then an "About Us" column with description text is shown
-    And a "Newsletter" column with email input and submit button is shown
-    And an "Instagram Feed" column with 8 thumbnail images is shown
-    And a "Follow Us" column with 4 social icons is shown
 
-  Scenario: Footer copyright links to Component Dock
-    Given the footer bottom bar is visible
-    Then "Copyright" text with current year is displayed
-    And "Made with ♥ by Component Dock" links to https://www.componentdock.com/
+#### Scenario: Footer columns are displayed
 
-  Scenario: Newsletter form validates email
-    Given the newsletter email input is empty
-    When the user clicks submit
-    Then a validation message is shown
-```
+- **GIVEN** the footer is visible
+- **THEN** an "About Us" column with description text is shown
+- **AND** a "Newsletter" column with email input and submit button is shown
+- **AND** an "Instagram Feed" column with 8 thumbnail images is shown
+- **AND** a "Follow Us" column with 4 social icons is shown
+
+#### Scenario: Footer copyright links to Component Dock
+
+- **GIVEN** the footer bottom bar is visible
+- **THEN** "Copyright" text with current year is displayed
+- **AND** "Made with ♥ by Component Dock" links to https://www.componentdock.com/
+
+#### Scenario: Newsletter form validates email
+
+- **GIVEN** the newsletter email input is empty
+- **WHEN** the user clicks submit
+- **THEN** a validation message is shown
 
 ## Verification checklist
 

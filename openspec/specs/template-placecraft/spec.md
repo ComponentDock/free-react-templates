@@ -35,7 +35,7 @@ Extracted from the live preview stylesheet (`css/style.css`):
 | nav-pill-radius      | `30px`                       | Rounded pill for active/hover nav items    |
 | nav-dropdown-border  | `#7971ea` (top)              | 2px solid top border on dropdown           |
 
-## Section structure & Gherkin requirements
+## Requirements
 
 ### 1. Navbar
 
@@ -44,26 +44,28 @@ right: Home, Listings, About (dropdown: The Company, The Leadership,
 Philosophy, Careers), Blog, Contact. Active item gets a purple pill background.
 Mobile: hamburger menu toggle.
 
-```gherkin
-Scenario: Navbar renders all navigation links
-  Given the page loads
-  Then the navbar displays "Placecraft" as the logo
-  And the nav contains links: "Home", "Listings", "About", "Blog", "Contact"
+#### Scenario: Navbar renders all navigation links
 
-Scenario: About link shows dropdown on hover
-  Given the navbar is visible
-  When the user hovers over "About"
-  Then a dropdown appears with "The Company", "The Leadership", "Philosophy", "Careers"
+- **GIVEN** the page loads
+- **THEN** the navbar displays "Placecraft" as the logo
+- **AND** the nav contains links: "Home", "Listings", "About", "Blog", "Contact"
 
-Scenario: Active nav item has pill highlight
-  Given the user is on the Home page
-  Then the "Home" link has a purple pill background
+#### Scenario: About link shows dropdown on hover
 
-Scenario: Mobile menu toggle is visible on small screens
-  Given the viewport is below xl breakpoint
-  Then a hamburger menu button is visible
-  And clicking it opens the mobile nav drawer
-```
+- **GIVEN** the navbar is visible
+- **WHEN** the user hovers over "About"
+- **THEN** a dropdown appears with "The Company", "The Leadership", "Philosophy", "Careers"
+
+#### Scenario: Active nav item has pill highlight
+
+- **GIVEN** the user is on the Home page
+- **THEN** the "Home" link has a purple pill background
+
+#### Scenario: Mobile menu toggle is visible on small screens
+
+- **GIVEN** the viewport is below xl breakpoint
+- **THEN** a hamburger menu button is visible
+- **AND** clicking it opens the mobile nav drawer
 
 ### 2. Hero section
 
@@ -74,24 +76,25 @@ Full-width cover image with dark overlay. Centered content:
   Category (dropdown: All Categories, Apartment, Restaurant, Eat & Drink,
   Events, Fitness, Others), Search button (primary, square).
 
-```gherkin
-Scenario: Hero displays headline and subtitle
-  Given the page loads
-  Then the hero section shows "Find Nearby" as the headline
-  And a subtitle reads "Explore top-rated attractions, activities and more!"
+#### Scenario: Hero displays headline and subtitle
 
-Scenario: Search form has four fields
-  Given the hero section is visible
-  Then a text input with placeholder "What are you looking for?" is shown
-  And a text input with placeholder "Location" is shown
-  And a select dropdown with category options is shown
-  And a "Search" submit button is shown
+- **GIVEN** the page loads
+- **THEN** the hero section shows "Find Nearby" as the headline
+- **AND** a subtitle reads "Explore top-rated attractions, activities and more!"
 
-Scenario: Search form submit
-  Given the search form is filled
-  When the user clicks "Search"
-  Then the form submission is triggered
-```
+#### Scenario: Search form has four fields
+
+- **GIVEN** the hero section is visible
+- **THEN** a text input with placeholder "What are you looking for?" is shown
+- **AND** a text input with placeholder "Location" is shown
+- **AND** a select dropdown with category options is shown
+- **AND** a "Search" submit button is shown
+
+#### Scenario: Search form submit
+
+- **GIVEN** the search form is filled
+- **WHEN** the user clicks "Search"
+- **THEN** the form submission is triggered
 
 ### 3. Most Visited Places
 
@@ -99,22 +102,23 @@ Section heading "Most Visited Places" with subtitle. 3-column grid of listing
 cards. Each card: image thumbnail, heart/bookmark icon overlay, category tag
 badge, location title, address text.
 
-```gherkin
-Scenario: Listing cards render
-  Given the Most Visited Places section is visible
-  Then 3 listing cards are displayed in a grid
+#### Scenario: Listing cards render
 
-Scenario: Each listing card shows image and details
-  Given a listing card
-  Then it contains an image
-  And a category badge (e.g. "Stores", "Restaurants", "Events")
-  And a title link
-  And an address line
+- **GIVEN** the Most Visited Places section is visible
+- **THEN** 3 listing cards are displayed in a grid
 
-Scenario: Listing card has bookmark icon
-  Given a listing card
-  Then a heart/bookmark icon is visible for bookmarking
-```
+#### Scenario: Each listing card shows image and details
+
+- **GIVEN** a listing card
+- **THEN** it contains an image
+- **AND** a category badge (e.g. "Stores", "Restaurants", "Events")
+- **AND** a title link
+- **AND** an address line
+
+#### Scenario: Listing card has bookmark icon
+
+- **GIVEN** a listing card
+- **THEN** a heart/bookmark icon is visible for bookmarking
 
 ### 4. Popular Categories
 
@@ -122,34 +126,34 @@ Section heading "Popular Categories" with subtitle. 6-column grid of category
 cards. Each card: icon, uppercase label, item count number. Categories:
 Appartments, Events, Fitness, Department Store, Restaurants, Other.
 
-```gherkin
-Scenario: Category cards render
-  Given the Popular Categories section is visible
-  Then 6 category cards are displayed
+#### Scenario: Category cards render
 
-Scenario: Each category card shows icon, label, and count
-  Given a category card
-  Then it contains an icon
-  And an uppercase caption label
-  And a numeric count
-```
+- **GIVEN** the Popular Categories section is visible
+- **THEN** 6 category cards are displayed
+
+#### Scenario: Each category card shows icon, label, and count
+
+- **GIVEN** a category card
+- **THEN** it contains an icon
+- **AND** an uppercase caption label
+- **AND** a numeric count
 
 ### 5. Why Us
 
 Two-column layout: left = image, right = heading "Why Us", two paragraphs of
 text, and a bulleted checkmark list (green check icons) with 3 items.
 
-```gherkin
-Scenario: Why Us section renders split layout
-  Given the Why Us section is visible
-  Then an image is shown on the left
-  And "Why Us" heading appears on the right
-  And a checkmark list with 3 items is displayed
+#### Scenario: Why Us section renders split layout
 
-Scenario: Checkmarks are green
-  Given the checkmark list
-  Then each check icon is green (#8bc34a)
-```
+- **GIVEN** the Why Us section is visible
+- **THEN** an image is shown on the left
+- **AND** "Why Us" heading appears on the right
+- **AND** a checkmark list with 3 items is displayed
+
+#### Scenario: Checkmarks are green
+
+- **GIVEN** the checkmark list
+- **THEN** each check icon is green (#8bc34a)
 
 ### 6. Testimonials
 
@@ -157,17 +161,17 @@ Light background section. Heading "Testimonials". Carousel/slider with
 testimonial cards. Each: person photo (circular or rounded), name, blockquote
 with double quotes.
 
-```gherkin
-Scenario: Testimonials section renders carousel
-  Given the Testimonials section is visible
-  Then a carousel of testimonial cards is shown
+#### Scenario: Testimonials section renders carousel
 
-Scenario: Each testimonial card has photo, name, and quote
-  Given a testimonial card
-  Then it displays a person photo
-  And a person name
-  And a blockquote with quotation marks
-```
+- **GIVEN** the Testimonials section is visible
+- **THEN** a carousel of testimonial cards is shown
+
+#### Scenario: Each testimonial card has photo, name, and quote
+
+- **GIVEN** a testimonial card
+- **THEN** it displays a person photo
+- **AND** a person name
+- **AND** a blockquote with quotation marks
 
 ### 7. Our Blog
 
@@ -175,18 +179,18 @@ Section heading "Our Blog" with subtitle "See Our Daily News & Updates".
 2-column grid of blog post cards. Each: image, title link, meta line (author,
 date, category), excerpt paragraph.
 
-```gherkin
-Scenario: Blog posts render
-  Given the Our Blog section is visible
-  Then 2 blog post cards are displayed
+#### Scenario: Blog posts render
 
-Scenario: Each blog card shows image, title, meta, and excerpt
-  Given a blog card
-  Then it contains an image
-  And a title link
-  And a meta line with author and date
-  And a text excerpt
-```
+- **GIVEN** the Our Blog section is visible
+- **THEN** 2 blog post cards are displayed
+
+#### Scenario: Each blog card shows image, title, meta, and excerpt
+
+- **GIVEN** a blog card
+- **THEN** it contains an image
+- **AND** a title link
+- **AND** a meta line with author and date
+- **AND** a text excerpt
 
 ### 8. FAQ Accordion
 
@@ -194,22 +198,23 @@ Section heading "Frequently Ask Question" with subtitle. Centered column with
 4 accordion items. Each: bordered rounded card with question link that expands
 to show an answer paragraph.
 
-```gherkin
-Scenario: FAQ items render
-  Given the FAQ section is visible
-  Then 4 accordion items are displayed
+#### Scenario: FAQ items render
 
-Scenario: Clicking a question expands its answer
-  Given the FAQ section
-  When the user clicks a question
-  Then the corresponding answer paragraph becomes visible
+- **GIVEN** the FAQ section is visible
+- **THEN** 4 accordion items are displayed
 
-Scenario: Clicking another question collapses the previous
-  Given one FAQ answer is open
-  When the user clicks a different question
-  Then the previous answer collapses
-  And the new answer expands
-```
+#### Scenario: Clicking a question expands its answer
+
+- **GIVEN** the FAQ section
+- **WHEN** the user clicks a question
+- **THEN** the corresponding answer paragraph becomes visible
+
+#### Scenario: Clicking another question collapses the previous
+
+- **GIVEN** one FAQ answer is open
+- **WHEN** the user clicks a different question
+- **THEN** the previous answer collapses
+- **AND** the new answer expands
 
 ### 9. CTA Banner
 
@@ -217,13 +222,12 @@ Full-width primary-colored (#7971ea) background. Centered text: heading "Let's
 get started. Create your account", subtitle, and a white outlined "Sign Up"
 button.
 
-```gherkin
-Scenario: CTA banner renders
-  Given the CTA section is visible
-  Then it has a purple (#7971ea) background
-  And displays "Let's get started. Create your account"
-  And a "Sign Up" button with white outline style
-```
+#### Scenario: CTA banner renders
+
+- **GIVEN** the CTA section is visible
+- **THEN** it has a purple (#7971ea) background
+- **AND** displays "Let's get started. Create your account"
+- **AND** a "Sign Up" button with white outline style
 
 ### 10. Footer
 
@@ -232,22 +236,23 @@ Follow Us (social icons: Facebook, Twitter, Instagram, LinkedIn). Right side:
 Newsletter subscription form (email input + Send button). Bottom: copyright
 line with "Made with ❤️ by Component Dock" link to componentdock.com.
 
-```gherkin
-Scenario: Footer renders column links
-  Given the footer is visible
-  Then columns show "Quick Links", "Products", "Features", "Follow Us"
-  And each column has a list of link items
+#### Scenario: Footer renders column links
 
-Scenario: Footer has newsletter form
-  Given the footer
-  Then an email input with placeholder "Enter Email" is shown
-  And a "Send" button is next to it
+- **GIVEN** the footer is visible
+- **THEN** columns show "Quick Links", "Products", "Features", "Follow Us"
+- **AND** each column has a list of link items
 
-Scenario: Footer has Component Dock attribution
-  Given the footer
-  Then a link to "https://www.componentdock.com/" is present
-  And it is labeled "Component Dock"
-```
+#### Scenario: Footer has newsletter form
+
+- **GIVEN** the footer
+- **THEN** an email input with placeholder "Enter Email" is shown
+- **AND** a "Send" button is next to it
+
+#### Scenario: Footer has Component Dock attribution
+
+- **GIVEN** the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** it is labeled "Component Dock"
 
 ## Verification checklist
 

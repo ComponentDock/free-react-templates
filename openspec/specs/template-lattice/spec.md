@@ -68,7 +68,11 @@ Lattice is a portfolio gallery grid. It recreates the ColorLib **Carousel 02** d
 - Link to https://www.componentdock.com/
 - Dark background, light text
 
-## Behavior
+## Requirements
+
+### Feature: Lattice template behaviour
+
+#### Scenario: Lattice
 
 - Responsive grid layout (CSS Grid or Flexbox)
 - Hover effect on cards: icon overlay appears

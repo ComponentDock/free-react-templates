@@ -39,7 +39,7 @@ Extracted from `https://preview.colorlib.com/theme/personify/css/style.css`:
 - **Mobile-first:** On small screens, profile image sits above content as a banner (height 400px), menu button fixed top-right.
 - **Minimalist aesthetic:** Clean white background, serif/sans-serif font pairing, generous whitespace, no heavy graphics.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Likeness — Personal/VCard Website
 
@@ -48,107 +48,120 @@ Extracted from `https://preview.colorlib.com/theme/personify/css/style.css`:
   So I can learn about the person and get in touch.
 
   Background:
-    Given the Likeness template is loaded
-    And the split layout is displayed with content on the left and profile photo on the right (desktop)
+- **GIVEN** the Likeness template is loaded
+- **AND** the split layout is displayed with content on the left and profile photo on the right (desktop)
 
-  # --- Section: Navbar / Off-Canvas Menu ---
+**--- Section: Navbar / Off-Canvas Menu ---**
 
-  Scenario: Off-canvas menu toggle
-    Given the "Menu" button is visible (top-right on desktop, top-right on mobile)
-    When I click the "Menu" button
-    Then a slide-in menu appears from the right
-    And the menu shows links: Bio, Portfolio, Resume, Contact
-    And the menu shows social icons (Twitter, Facebook, Instagram)
-    And the menu background is dark navy (#283149)
-    When I click a menu link
-    Then the content switches to the corresponding section
-    And the menu closes
+#### Scenario: Off-canvas menu toggle
 
-  Scenario: Mobile menu has black background
-    Given the viewport is 767px or narrower
-    When the navbar is visible
-    Then the navbar background is black
+- **GIVEN** the "Menu" button is visible (top-right on desktop, top-right on mobile)
+- **WHEN** I click the "Menu" button
+- **THEN** a slide-in menu appears from the right
+- **AND** the menu shows links: Bio, Portfolio, Resume, Contact
+- **AND** the menu shows social icons (Twitter, Facebook, Instagram)
+- **AND** the menu background is dark navy (#283149)
+- **WHEN** I click a menu link
+- **THEN** the content switches to the corresponding section
+- **AND** the menu closes
 
-  # --- Section: Bio (default section) ---
+#### Scenario: Mobile menu has black background
 
-  Scenario: Bio section displays personal info
-    Given the Bio section is active
-    Then I see a heading with the person's name
-    And I see a subtitle with the person's job title
-    And I see two paragraphs of bio text
-    And I see social link buttons (Twitter, Facebook, Instagram)
+- **GIVEN** the viewport is 767px or narrower
+- **WHEN** the navbar is visible
+- **THEN** the navbar background is black
 
-  # --- Section: Portfolio ---
+**--- Section: Bio (default section) ---**
 
-  Scenario: Portfolio section shows project list
-    Given the Portfolio section is active
-    Then I see a "Portfolio" heading
-    And I see a list of portfolio items, each with an image, project name, and "Visit Website" link
-    And each portfolio item has a bordered container
+#### Scenario: Bio section displays personal info
 
-  Scenario: Portfolio item hover overlay
-    Given the Portfolio section is active
-    When I hover over a portfolio item
-    Then a pink (#F73859) overlay appears over the image
-    And the project name and "Visit Website" text become visible in white
-    And a subtle shadow appears on the item
+- **GIVEN** the Bio section is active
+- **THEN** I see a heading with the person's name
+- **AND** I see a subtitle with the person's job title
+- **AND** I see two paragraphs of bio text
+- **AND** I see social link buttons (Twitter, Facebook, Instagram)
 
-  # --- Section: Resume ---
+**--- Section: Portfolio ---**
 
-  Scenario: Resume section shows experience and education
-    Given the Resume section is active
-    Then I see an "Experience" heading
-    And I see a list of experience items, each with a job title, company, date range, and description
-    And I see an "Education" heading
-    And I see a list of education items, each with institution name, date range, and description
+#### Scenario: Portfolio section shows project list
 
-  # --- Section: Contact ---
+- **GIVEN** the Portfolio section is active
+- **THEN** I see a "Portfolio" heading
+- **AND** I see a list of portfolio items, each with an image, project name, and "Visit Website" link
+- **AND** each portfolio item has a bordered container
 
-  Scenario: Contact section displays form
-    Given the Contact section is active
-    Then I see a "Contact Me" heading
-    And I see a form with fields: Full Name, Email Address, Phone, Message (textarea)
-    And I see a "Send Message" submit button
-    And the button has square corners (border-radius 0), uppercase text, and letter-spacing
+#### Scenario: Portfolio item hover overlay
 
-  Scenario: Contact form submission
-    Given the Contact section is active
-    And I have filled in all required fields
-    When I click "Send Message"
-    Then the form is submitted
+- **GIVEN** the Portfolio section is active
+- **WHEN** I hover over a portfolio item
+- **THEN** a pink (#F73859) overlay appears over the image
+- **AND** the project name and "Visit Website" text become visible in white
+- **AND** a subtle shadow appears on the item
 
-  # --- Layout / Responsive ---
+**--- Section: Resume ---**
 
-  Scenario: Desktop split layout
-    Given the viewport is 576px or wider
-    Then the profile photo occupies the right 50% of the viewport
-    And the profile photo is fixed in position while content scrolls
-    And the main content occupies the left 50% with 7% padding
+#### Scenario: Resume section shows experience and education
 
-  Scenario: Mobile stacked layout
-    Given the viewport is narrower than 576px
-    Then the profile photo is a 400px tall banner above the content
-    And the main content is full-width below the banner
+- **GIVEN** the Resume section is active
+- **THEN** I see an "Experience" heading
+- **AND** I see a list of experience items, each with a job title, company, date range, and description
+- **AND** I see an "Education" heading
+- **AND** I see a list of education items, each with institution name, date range, and description
 
-  Scenario: Home button on sub-sections
-    Given I am on any section other than Bio
-    Then a home button (house icon, brand color #F73859) is visible at the top-left
-    And clicking it navigates back to the Bio section
+**--- Section: Contact ---**
 
-  # --- Navigation ---
+#### Scenario: Contact section displays form
 
-  Scenario: Tab navigation between sections
-    Given I am on the Bio section
-    When I click "Portfolio" in the menu
-    Then the Portfolio content is displayed
-    And the Bio content is hidden
-    When I click "Resume" in the menu
-    Then the Resume content is displayed
+- **GIVEN** the Contact section is active
+- **THEN** I see a "Contact Me" heading
+- **AND** I see a form with fields: Full Name, Email Address, Phone, Message (textarea)
+- **AND** I see a "Send Message" submit button
+- **AND** the button has square corners (border-radius 0), uppercase text, and letter-spacing
 
-  Scenario: Social links in menu
-    Given the off-canvas menu is open
-    Then social icons are displayed below the navigation links
-    And each icon links to the respective social platform
+#### Scenario: Contact form submission
+
+- **GIVEN** the Contact section is active
+- **AND** I have filled in all required fields
+- **WHEN** I click "Send Message"
+- **THEN** the form is submitted
+
+**--- Layout / Responsive ---**
+
+#### Scenario: Desktop split layout
+
+- **GIVEN** the viewport is 576px or wider
+- **THEN** the profile photo occupies the right 50% of the viewport
+- **AND** the profile photo is fixed in position while content scrolls
+- **AND** the main content occupies the left 50% with 7% padding
+
+#### Scenario: Mobile stacked layout
+
+- **GIVEN** the viewport is narrower than 576px
+- **THEN** the profile photo is a 400px tall banner above the content
+- **AND** the main content is full-width below the banner
+
+#### Scenario: Home button on sub-sections
+
+- **GIVEN** I am on any section other than Bio
+- **THEN** a home button (house icon, brand color #F73859) is visible at the top-left
+- **AND** clicking it navigates back to the Bio section
+
+**--- Navigation ---**
+
+#### Scenario: Tab navigation between sections
+
+- **GIVEN** I am on the Bio section
+- **WHEN** I click "Portfolio" in the menu
+- **THEN** the Portfolio content is displayed
+- **AND** the Bio content is hidden
+- **WHEN** I click "Resume" in the menu
+- **THEN** the Resume content is displayed
+
+#### Scenario: Social links in menu
+
+- **GIVEN** the off-canvas menu is open
+- **THEN** social icons are displayed below the navigation links
+- **AND** each icon links to the respective social platform
 
 ## Verification checklist
 

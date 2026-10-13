@@ -29,216 +29,229 @@ Recreation of the ColorLib **Jobpply** template as a React 19 + Vite + Tailwind 
 | Hero overlay | Dark semi-transparent overlay on parallax image | |
 | Section spacing | Standard Bootstrap section padding (~80px vertical) | |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Navbar
 
-  Scenario: Dark sticky navbar with brand and CTAs
-    Given the user is on the page
-    Then a dark (#343a40) navbar is visible at the top
-    And the brand text reads "HireDesk"
-    And the nav links are: Home, About, Candidates, Blog, Contact
-    And two CTA buttons are visible: "Post a Job" (outlined) and "Want a Job" (colored/filled)
+#### Scenario: Dark sticky navbar with brand and CTAs
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is narrow (< 992px)
-    When the user taps the hamburger icon
-    Then the navigation menu collapses open with all links visible
-```
+- **GIVEN** the user is on the page
+- **THEN** a dark (#343a40) navbar is visible at the top
+- **AND** the brand text reads "HireDesk"
+- **AND** the nav links are: Home, About, Candidates, Blog, Contact
+- **AND** two CTA buttons are visible: "Post a Job" (outlined) and "Want a Job" (colored/filled)
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is narrow (< 992px)
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu collapses open with all links visible
 
 ### Hero / Search Section
-```gherkin
+
 Feature: Hero Section
 
-  Scenario: Hero displays on load
-    Given the user is on the page
-    Then a full-height hero section is visible with a dark overlay on a background image
-    And an illustration (SVG or placeholder) is displayed on the right side
-    And a counter reads "We have 200,000 great job offers you deserve!"
-    And the main heading reads "Largest Job Site In The World"
+#### Scenario: Hero displays on load
 
-  Scenario: Tab-based search form
-    Given the hero section is visible
-    Then two tabs are displayed: "Find a Job" and "Find a Candidate"
-    And the "Find a Job" tab is active by default
-    And the search form has fields: keyword, category (select), location, and a "Search" button
+- **GIVEN** the user is on the page
+- **THEN** a full-height hero section is visible with a dark overlay on a background image
+- **AND** an illustration (SVG or placeholder) is displayed on the right side
+- **AND** a counter reads "We have 200,000 great job offers you deserve!"
+- **AND** the main heading reads "Largest Job Site In The World"
 
-  Scenario: Switch to Find a Candidate tab
-    Given the hero section is visible
-    When the user clicks the "Find a Candidate" tab
-    Then the form fields change to: candidate name, category (select), location, and "Search" button
-```
+#### Scenario: Tab-based search form
+
+- **GIVEN** the hero section is visible
+- **THEN** two tabs are displayed: "Find a Job" and "Find a Candidate"
+- **AND** the "Find a Job" tab is active by default
+- **AND** the search form has fields: keyword, category (select), location, and a "Search" button
+
+#### Scenario: Switch to Find a Candidate tab
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user clicks the "Find a Candidate" tab
+- **THEN** the form fields change to: candidate name, category (select), location, and "Search" button
 
 ### Services
-```gherkin
+
 Feature: Services Section
 
-  Scenario: Four service cards on blue background
-    Given the user scrolls past the hero
-    Then a blue (#007bff) background section is visible
-    And four service items are displayed in a row
-    And each service has an icon, title, and description
-    And the services are: Search Millions of Jobs, Easy To Manage Jobs, Top Careers, Search Expert Candidates
+#### Scenario: Four service cards on blue background
 
-  Scenario: Service card hover
-    Given the service cards are visible
-    When the user hovers over a card
-    Then the card lifts slightly with a shadow effect
-```
+- **GIVEN** the user scrolls past the hero
+- **THEN** a blue (#007bff) background section is visible
+- **AND** four service items are displayed in a row
+- **AND** each service has an icon, title, and description
+- **AND** the services are: Search Millions of Jobs, Easy To Manage Jobs, Top Careers, Search Expert Candidates
+
+#### Scenario: Service card hover
+
+- **GIVEN** the service cards are visible
+- **WHEN** the user hovers over a card
+- **THEN** the card lifts slightly with a shadow effect
 
 ### Top Categories
-```gherkin
+
 Feature: Top Categories
 
-  Scenario: Category grid with job counts
-    Given the user scrolls to the categories area
-    Then the heading reads "Top Categories"
-    And a 4-column grid displays job categories
-    And each category shows: name, open position count, and a forward arrow
-    And categories include: Web Development (354), Graphic Designer (143), Multimedia (100), etc.
+#### Scenario: Category grid with job counts
 
-  Scenario: Category hover
-    Given the category list is visible
-    When the user hovers over a category
-    Then the category row highlights with a color change
-```
+- **GIVEN** the user scrolls to the categories area
+- **THEN** the heading reads "Top Categories"
+- **AND** a 4-column grid displays job categories
+- **AND** each category shows: name, open position count, and a forward arrow
+- **AND** categories include: Web Development (354), Graphic Designer (143), Multimedia (100), etc
+
+#### Scenario: Category hover
+
+- **GIVEN** the category list is visible
+- **WHEN** the user hovers over a category
+- **THEN** the category row highlights with a color change
 
 ### Browse by Specialism
-```gherkin
+
 Feature: Browse by Specialism
 
-  Scenario: Parallax search section
-    Given the user scrolls past categories
-    Then a parallax background section is visible
-    And the heading reads "Browse Job by Specialism"
-    And a search icon and "Search Job" subheading are displayed
-```
+#### Scenario: Parallax search section
+
+- **GIVEN** the user scrolls past categories
+- **THEN** a parallax background section is visible
+- **AND** the heading reads "Browse Job by Specialism"
+- **AND** a search icon and "Search Job" subheading are displayed
 
 ### Hot Jobs
-```gherkin
+
 Feature: Hot Jobs Section
 
-  Scenario: Job listing cards
-    Given the user scrolls to the hot jobs area
-    Then the heading reads "Hot Jobs"
-    And 5 job listing items are displayed in a vertical list
-    And each job card has: title, employment type badge, company name, location, heart icon, and "Apply Job" button
+#### Scenario: Job listing cards
 
-  Scenario: Badge color coding
-    Given the job listings are visible
-    Then "Partime" badges are blue (primary)
-    And "Fulltime" badges are yellow (warning)
-    And "Freelance" badges are teal (info)
-    And "Internship" badges are gray (secondary)
+- **GIVEN** the user scrolls to the hot jobs area
+- **THEN** the heading reads "Hot Jobs"
+- **AND** 5 job listing items are displayed in a vertical list
+- **AND** each job card has: title, employment type badge, company name, location, heart icon, and "Apply Job" button
 
-  Scenario: Apply button click
-    Given a job listing is visible
-    When the user clicks the "Apply Job" button
-    Then the button triggers a navigation or action
-```
+#### Scenario: Badge color coding
+
+- **GIVEN** the job listings are visible
+- **THEN** "Partime" badges are blue (primary)
+- **AND** "Fulltime" badges are yellow (warning)
+- **AND** "Freelance" badges are teal (info)
+- **AND** "Internship" badges are gray (secondary)
+
+#### Scenario: Apply button click
+
+- **GIVEN** a job listing is visible
+- **WHEN** the user clicks the "Apply Job" button
+- **THEN** the button triggers a navigation or action
 
 ### Counter Stats
-```gherkin
+
 Feature: Counter Stats
 
-  Scenario: Animated statistics
-    Given the user scrolls to the counter section
-    Then a parallax background section is visible
-    And four stat items are displayed: 435,000 Jobs, 40,000 Members, 30,000 Resumes, 10,500 Companies
-    And each stat has an icon and animated count-up number
+#### Scenario: Animated statistics
 
-  Scenario: Number animation on scroll
-    Given the counter section enters the viewport
-    When the section becomes visible
-    Then the numbers animate from 0 to their target values
-```
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a parallax background section is visible
+- **AND** four stat items are displayed: 435,000 Jobs, 40,000 Members, 30,000 Resumes, 10,500 Companies
+- **AND** each stat has an icon and animated count-up number
+
+#### Scenario: Number animation on scroll
+
+- **GIVEN** the counter section enters the viewport
+- **WHEN** the section becomes visible
+- **THEN** the numbers animate from 0 to their target values
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials
 
-  Scenario: Customer testimonial carousel
-    Given the user scrolls to the testimonials area
-    Then the heading reads "Happy Clients"
-    And a carousel shows customer testimonials
-    And each testimonial has a circular photo, quote icon, review text, name, and position
-    And navigation dots are present
+#### Scenario: Customer testimonial carousel
 
-  Scenario: Carousel auto-advance
-    Given the testimonials section is visible
-    When the user waits
-    Then the carousel automatically advances to the next testimonial
-```
+- **GIVEN** the user scrolls to the testimonials area
+- **THEN** the heading reads "Happy Clients"
+- **AND** a carousel shows customer testimonials
+- **AND** each testimonial has a circular photo, quote icon, review text, name, and position
+- **AND** navigation dots are present
+
+#### Scenario: Carousel auto-advance
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the user waits
+- **THEN** the carousel automatically advances to the next testimonial
 
 ### Latest Candidates
-```gherkin
+
 Feature: Latest Candidates
 
-  Scenario: Candidate profile carousel on blue background
-    Given the user scrolls to the candidates section
-    Then a blue (#007bff) background section is visible
-    And the heading reads "Latest Candidates"
-    And a carousel shows candidate profiles
-    And each profile has a circular photo, name, and location
+#### Scenario: Candidate profile carousel on blue background
 
-  Scenario: Candidate click
-    Given a candidate profile is visible
-    When the user clicks on a candidate
-    Then the candidate link navigates to a profile page
-```
+- **GIVEN** the user scrolls to the candidates section
+- **THEN** a blue (#007bff) background section is visible
+- **AND** the heading reads "Latest Candidates"
+- **AND** a carousel shows candidate profiles
+- **AND** each profile has a circular photo, name, and location
+
+#### Scenario: Candidate click
+
+- **GIVEN** a candidate profile is visible
+- **WHEN** the user clicks on a candidate
+- **THEN** the candidate link navigates to a profile page
 
 ### Blog
-```gherkin
+
 Feature: Blog Section
 
-  Scenario: Four blog post cards
-    Given the user scrolls to the blog area
-    Then the heading reads "Recent Blog"
-    And four blog cards are displayed in a row
-    And each card has a featured image, date, author, comment count, and title
+#### Scenario: Four blog post cards
 
-  Scenario: Blog card hover
-    Given the blog cards are visible
-    When the user hovers over a card
-    Then the card image lifts slightly with a transition effect
-```
+- **GIVEN** the user scrolls to the blog area
+- **THEN** the heading reads "Recent Blog"
+- **AND** four blog cards are displayed in a row
+- **AND** each card has a featured image, date, author, comment count, and title
+
+#### Scenario: Blog card hover
+
+- **GIVEN** the blog cards are visible
+- **WHEN** the user hovers over a card
+- **THEN** the card image lifts slightly with a transition effect
 
 ### Newsletter
-```gherkin
+
 Feature: Newsletter Subscription
 
-  Scenario: Email subscription form
-    Given the user scrolls to the newsletter area
-    Then a parallax background section is visible
-    And the heading reads "Subscribe to our Newsletter"
-    And an email input field and "Subscribe" button are displayed
+#### Scenario: Email subscription form
 
-  Scenario: Empty email validation
-    Given the newsletter form is visible
-    When the user clicks "Subscribe" without entering an email
-    Then the form shows a validation error or does not submit
-```
+- **GIVEN** the user scrolls to the newsletter area
+- **THEN** a parallax background section is visible
+- **AND** the heading reads "Subscribe to our Newsletter"
+- **AND** an email input field and "Subscribe" button are displayed
+
+#### Scenario: Empty email validation
+
+- **GIVEN** the newsletter form is visible
+- **WHEN** the user clicks "Subscribe" without entering an email
+- **THEN** the form shows a validation error or does not submit
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Multi-column footer layout
-    Given the user reaches the page bottom
-    Then a dark (#343a40) footer is visible
-    And the footer has four columns: About, Employers, Workers, Have a Questions?
-    And the About column has social media icon links (Twitter, Facebook, Instagram)
-    And the Employers column lists: How it works, Register, Post a Job, Advance Skill Search, Recruiting Service, Blog, Faq
-    And the Workers column lists: How it works, Register, Post Your Skills, Job Search, Employer Search
-    And the "Have a Questions?" column has address, phone, and email
+#### Scenario: Multi-column footer layout
 
-  Scenario: Footer copyright
-    Given the footer is visible
-    Then the copyright line is present
-    And a link to https://www.componentdock.com/ ("Component Dock") is present (replacing ColorLib attribution)
-```
+- **GIVEN** the user reaches the page bottom
+- **THEN** a dark (#343a40) footer is visible
+- **AND** the footer has four columns: About, Employers, Workers, Have a Questions?
+- **AND** the About column has social media icon links (Twitter, Facebook, Instagram)
+- **AND** the Employers column lists: How it works, Register, Post a Job, Advance Skill Search, Recruiting Service, Blog, Faq
+- **AND** the Workers column lists: How it works, Register, Post Your Skills, Job Search, Employer Search
+- **AND** the "Have a Questions?" column has address, phone, and email
+
+#### Scenario: Footer copyright
+
+- **GIVEN** the footer is visible
+- **THEN** the copyright line is present
+- **AND** a link to https://www.componentdock.com/ ("Component Dock") is present (replacing ColorLib attribution)
 
 ## Verification checklist
 

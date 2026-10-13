@@ -94,84 +94,95 @@ blog cards, and a dark four-column footer. The page uses Poppins font, orange
 | Section padding    | `ftco-section` class (approx 80px vertical)           |
 | Border-radius      | `3px` (buttons), `5px` (request form card), `0` (form inputs/selects) |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Autolane — Car Rental Landing Page
 
-  Scenario: Navbar renders with brand and navigation links
-    Given the user visits the Autolane page
-    Then the navbar displays the brand "Autolane" (bold, uppercase)
-    And the navbar contains links: Home, About, Pricing, Our Car, Blog, Contact
-    And the navbar is transparent and overlays the hero section
-    And on scroll the navbar becomes fixed with a white background
+#### Scenario: Navbar renders with brand and navigation links
 
-  Scenario: Hero section displays background image with overlay and booking form
-    Given the user is on the landing page
-    Then a full-width hero background image is displayed
-    And a dark overlay at 40% opacity covers the hero image
-    And the hero headline reads "Now It's easy for you rent a car"
-    And a circular orange play-button CTA is shown with text "Easy steps for renting a car"
-    And a white floating booking card titled "Make your trip" appears on the right
+- **GIVEN** the user visits the Autolane page
+- **THEN** the navbar displays the brand "Autolane" (bold, uppercase)
+- **AND** the navbar contains links: Home, About, Pricing, Our Car, Blog, Contact
+- **AND** the navbar is transparent and overlays the hero section
+- **AND** on scroll the navbar becomes fixed with a white background
 
-  Scenario: Booking form collects trip details
-    Given the user sees the booking card
-    Then the form has fields: Pick-up location, Drop-off location, Pick-up date, Drop-off date, Pick-up time
-    And a "Search Vehicle" orange button submits the form
-    And each input has a placeholder and 50px height
+#### Scenario: Hero section displays background image with overlay and booking form
 
-  Scenario: Search filter bar presents vehicle selectors
-    Given the hero section is visible
-    Then a 4-column filter bar appears below the hero
-    And the filters are: Select Model, Select Brand, Year Model, Price Limit
-    And each filter is a styled select dropdown with arrow icon
-    And an orange "Search" button spans the bottom of the filter bar
+- **GIVEN** the user is on the landing page
+- **THEN** a full-width hero background image is displayed
+- **AND** a dark overlay at 40% opacity covers the hero image
+- **AND** the hero headline reads "Now It's easy for you rent a car"
+- **AND** a circular orange play-button CTA is shown with text "Easy steps for renting a car"
+- **AND** a white floating booking card titled "Make your trip" appears on the right
 
-  Scenario: Services section shows 4 service cards
-    Given the user scrolls to the "Our Services" section
-    Then 4 service cards are displayed in a row
-    And the cards are: "24/7 Car Support", "Lots of Location", "Reservation", "Rental Cars"
-    And each card has an icon, heading, and short description
+#### Scenario: Booking form collects trip details
 
-  Scenario: Car listings display 8 vehicles in a grid
-    Given the user scrolls to the "Choose Your Car" section
-    Then 8 car cards are displayed in a 4-column grid
-    And each card shows a car image, a price badge (e.g. "$25 From /Day"), a car name, and a brand label
-    And each card has "Book now" and "Details" buttons
-    And price rates are displayed in orange text
+- **GIVEN** the user sees the booking card
+- **THEN** the form has fields: Pick-up location, Drop-off location, Pick-up date, Drop-off date, Pick-up time
+- **AND** a "Search Vehicle" orange button submits the form
+- **AND** each input has a placeholder and 50px height
 
-  Scenario: How it works section displays workflow steps
-    Given the user scrolls to the "How it works" section
-    Then a parallax background image is displayed with a dark overlay
-    And the heading reads "Work flow" / "How it works"
-    And 4 workflow steps are shown: "Pick Destination", "Select Term", "Choose A Car", "Enjoy The Ride"
-    And each step has a white icon, heading, and short description
+#### Scenario: Search filter bar presents vehicle selectors
 
-  Scenario: Testimonials section shows client reviews
-    Given the user scrolls to the "Happy Clients" section
-    Then a carousel of testimonials is displayed
-    And each testimonial shows a person image, quote, name, and position
-    And the carousel navigates with arrow buttons
+- **GIVEN** the hero section is visible
+- **THEN** a 4-column filter bar appears below the hero
+- **AND** the filters are: Select Model, Select Brand, Year Model, Price Limit
+- **AND** each filter is a styled select dropdown with arrow icon
+- **AND** an orange "Search" button spans the bottom of the filter bar
 
-  Scenario: About Us section displays split layout
-    Given the user scrolls to the "About us" section
-    Then a 50/50 split layout is shown
-    And the left side displays a background image
-    And the right side shows "Choose A Perfect Car" heading with descriptive text
-    And an orange "Search Vehicle" CTA button is present
+#### Scenario: Services section shows 4 service cards
 
-  Scenario: Blog section shows 3 recent posts
-    Given the user scrolls to the "Recent Blog" section
-    Then 3 blog cards are displayed in a row
-    And each card shows a thumbnail image, date, author, comment count, title, and excerpt
+- **GIVEN** the user scrolls to the "Our Services" section
+- **THEN** 4 service cards are displayed in a row
+- **AND** the cards are: "24/7 Car Support", "Lots of Location", "Reservation", "Rental Cars"
+- **AND** each card has an icon, heading, and short description
 
-  Scenario: Footer displays brand info and contact details
-    Given the user scrolls to the footer
-    Then a dark (#3c312e) footer is displayed with 4 columns
-    And column 1: "About Autolane" with description and social icons (Twitter, Facebook, Instagram)
-    And column 2: "Information" with links (About, Services, Terms, etc.)
-    And column 3: "Customer Support" with links (FAQ, Payment, etc.)
-    And column 4: "Have a Questions?" with address, phone, email
-    And a copyright line at the bottom links to Component Dock
+#### Scenario: Car listings display 8 vehicles in a grid
+
+- **GIVEN** the user scrolls to the "Choose Your Car" section
+- **THEN** 8 car cards are displayed in a 4-column grid
+- **AND** each card shows a car image, a price badge (e.g. "$25 From /Day"), a car name, and a brand label
+- **AND** each card has "Book now" and "Details" buttons
+- **AND** price rates are displayed in orange text
+
+#### Scenario: How it works section displays workflow steps
+
+- **GIVEN** the user scrolls to the "How it works" section
+- **THEN** a parallax background image is displayed with a dark overlay
+- **AND** the heading reads "Work flow" / "How it works"
+- **AND** 4 workflow steps are shown: "Pick Destination", "Select Term", "Choose A Car", "Enjoy The Ride"
+- **AND** each step has a white icon, heading, and short description
+
+#### Scenario: Testimonials section shows client reviews
+
+- **GIVEN** the user scrolls to the "Happy Clients" section
+- **THEN** a carousel of testimonials is displayed
+- **AND** each testimonial shows a person image, quote, name, and position
+- **AND** the carousel navigates with arrow buttons
+
+#### Scenario: About Us section displays split layout
+
+- **GIVEN** the user scrolls to the "About us" section
+- **THEN** a 50/50 split layout is shown
+- **AND** the left side displays a background image
+- **AND** the right side shows "Choose A Perfect Car" heading with descriptive text
+- **AND** an orange "Search Vehicle" CTA button is present
+
+#### Scenario: Blog section shows 3 recent posts
+
+- **GIVEN** the user scrolls to the "Recent Blog" section
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card shows a thumbnail image, date, author, comment count, title, and excerpt
+
+#### Scenario: Footer displays brand info and contact details
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark (#3c312e) footer is displayed with 4 columns
+- **AND** column 1: "About Autolane" with description and social icons (Twitter, Facebook, Instagram)
+- **AND** column 2: "Information" with links (About, Services, Terms, etc.)
+- **AND** column 3: "Customer Support" with links (FAQ, Payment, etc.)
+- **AND** column 4: "Have a Questions?" with address, phone, email
+- **AND** a copyright line at the bottom links to Component Dock
 
 ## Verification Checklist
 

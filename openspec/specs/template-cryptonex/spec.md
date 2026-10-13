@@ -55,116 +55,131 @@ Extracted from live preview CSS (`assets/css/styles.css`):
 15. **Blog** — "Latest Our News" title; 3 blog cards; each: image + title + meta (author, date, category) + excerpt + "Read More" link
 16. **Footer** — dark bg; 4 columns: logo + description + newsletter form, Our Services list, Twitter Feeds, Newsletter signup; bottom: copyright + social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Cryptonex landing page
 
-```gherkin
-Scenario: Header top bar displays contact info and social icons
-  Given the user visits the Cryptonex page
-  Then the top bar shows phone numbers, fax, email, and website on the left
-  And circular social media icons (Facebook, Twitter, Google+, LinkedIn, YouTube) are on the right
-  And the top bar has a white background with a bottom border
+#### Scenario: Header top bar displays contact info and social icons
 
-Scenario: Navigation bar shows logo and menu
-  Given the user visits the Cryptonex page
-  Then the nav bar has a dark background (#242424)
-  And the logo is on the left with an orange accent
-  And navigation links include Home, About Us, Pages, Blog, Contact
-  And an orange "GET A QUOTE?" button is on the right
-  And on mobile the nav collapses to a hamburger menu
+- **GIVEN** the user visits the Cryptonex page
+- **THEN** the top bar shows phone numbers, fax, email, and website on the left
+- **AND** circular social media icons (Facebook, Twitter, Google+, LinkedIn, YouTube) are on the right
+- **AND** the top bar has a white background with a bottom border
 
-Scenario: Hero slider displays with background image and content
-  Given the user visits the Cryptonex page
-  Then a full-width image slider is displayed
-  And each slide has a heading, description, and call-to-action link
-  And slider navigation dots are shown
+#### Scenario: Navigation bar shows logo and menu
 
-Scenario: Featured section shows 3 content cards
-  Given the user scrolls to the Featured section
-  Then 3 cards are displayed in a row
-  And each card has an image, title link, and description paragraph
+- **GIVEN** the user visits the Cryptonex page
+- **THEN** the nav bar has a dark background (#242424)
+- **AND** the logo is on the left with an orange accent
+- **AND** navigation links include Home, About Us, Pages, Blog, Contact
+- **AND** an orange "GET A QUOTE?" button is on the right
+- **AND** on mobile the nav collapses to a hamburger menu
 
-Scenario: About Bitcoin section shows description and image
-  Given the user scrolls to the About Bitcoin section
-  Then a "WHAT IS BITCOIN" heading with "Buy And Sell Bitcoin" is displayed
-  And a description paragraph and "JOIN US NOW" button appear
-  And a decorative image is shown on the left (desktop only)
+#### Scenario: Hero slider displays with background image and content
 
-Scenario: Services section shows service offerings
-  Given the user scrolls to the Services section
-  Then "Why Choose Bitcoin" heading with decorative line is shown
-  And a "What We Offer" column with description and "Free Consultation" button appears
-  And 4 service items in a 2x2 grid display (Safe And Secure, Instant Exchange, Secure Wallet, Experts Support)
-  And each service item has an icon, title, and description
+- **GIVEN** the user visits the Cryptonex page
+- **THEN** a full-width image slider is displayed
+- **AND** each slide has a heading, description, and call-to-action link
+- **AND** slider navigation dots are shown
 
-Scenario: About section shows stats counters
-  Given the user scrolls to the About section
-  Then "About Bitcoin" heading is displayed
-  And a heading about token purchase is shown with description
-  And 4 stat counters are displayed (Support Countries, Bank Support, Bitcoin ATMs, Producers Ready)
+#### Scenario: Featured section shows 3 content cards
 
-Scenario: Testimonials section shows review carousel
-  Given the user scrolls to the Testimonials section
-  Then a carousel with testimonial slides is displayed
-  And each slide shows an avatar, name, star rating, and quote text
+- **GIVEN** the user scrolls to the Featured section
+- **THEN** 3 cards are displayed in a row
+- **AND** each card has an image, title link, and description paragraph
 
-Scenario: Special CTA section has dark background with checklist
-  Given the user scrolls to the Special CTA section
-  Then a dark background section with a large quote heading is shown
-  And a 2-column checklist with 4 check-marked items is displayed
+#### Scenario: About Bitcoin section shows description and image
 
-Scenario: Market Resources section shows trading pairs and chart
-  Given the user scrolls to the Market Resources section
-  Then "Our Market Resource" heading is displayed
-  And a grid of crypto trading pairs with prices is shown on the left
-  And a chart area is displayed on the right
+- **GIVEN** the user scrolls to the About Bitcoin section
+- **THEN** a "WHAT IS BITCOIN" heading with "Buy And Sell Bitcoin" is displayed
+- **AND** a description paragraph and "JOIN US NOW" button appear
+- **AND** a decorative image is shown on the left (desktop only)
 
-Scenario: Expert Team CTA shows team description
-  Given the user scrolls to the Expert Team section
-  Then a dark background section with decorative image is shown
-  And a "dynamic team" heading with description and "More About" link appears
+#### Scenario: Services section shows service offerings
 
-Scenario: Contact section shows callback form
-  Given the user scrolls to the Contact section
-  Then a "Request A Call Back" heading is displayed
-  And a form with Name, Email, Phone, Subject, and textarea fields is shown
-  And a "Submit Now" button is below the form
-  And a background image is visible on the left (desktop only)
+- **GIVEN** the user scrolls to the Services section
+- **THEN** "Why Choose Bitcoin" heading with decorative line is shown
+- **AND** a "What We Offer" column with description and "Free Consultation" button appears
+- **AND** 4 service items in a 2x2 grid display (Safe And Secure, Instant Exchange, Secure Wallet, Experts Support)
+- **AND** each service item has an icon, title, and description
 
-Scenario: Team section shows member cards
-  Given the user scrolls to the Team section
-  Then "Our Experts Team" heading is displayed
-  And 4 team member cards are shown in a row
-  And each card has a photo, name, role, and social media icons
+#### Scenario: About section shows stats counters
 
-Scenario: Investments CTA shows call-to-action
-  Given the user scrolls to the Investments CTA section
-  Then a dark background section with "Need to take care of your Currency Investments" is shown
-  And "View Services" and "CONTACT US" buttons are displayed
-  And a decorative image is on the right
+- **GIVEN** the user scrolls to the About section
+- **THEN** "About Bitcoin" heading is displayed
+- **AND** a heading about token purchase is shown with description
+- **AND** 4 stat counters are displayed (Support Countries, Bank Support, Bitcoin ATMs, Producers Ready)
 
-Scenario: Blog section shows latest news
-  Given the user scrolls to the Blog section
-  Then "Latest Our News" heading is displayed
-  And 3 blog cards are shown in a row
-  And each card has an image, title, meta info, excerpt, and "Read More" link
+#### Scenario: Testimonials section shows review carousel
 
-Scenario: Footer shows logo, services, social, and copyright
-  Given the user scrolls to the footer
-  Then a dark background footer with logo, description, and newsletter form is shown
-  And columns for Our Services, Twitter Feeds, and Newsletter are displayed
-  And a copyright bar with social icons appears at the bottom
-  And it links to https://www.componentdock.com/
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a carousel with testimonial slides is displayed
+- **AND** each slide shows an avatar, name, star rating, and quote text
 
-Scenario: Design tokens are applied consistently
-  Given any section of the page
-  Then headings use Roboto font family
-  And body text uses Open Sans font family
-  And the primary orange #ff7700 is used for buttons, accents, and highlights
-  And dark sections use #242424 background
-  And CTA buttons are uppercase with orange background
-```
+#### Scenario: Special CTA section has dark background with checklist
+
+- **GIVEN** the user scrolls to the Special CTA section
+- **THEN** a dark background section with a large quote heading is shown
+- **AND** a 2-column checklist with 4 check-marked items is displayed
+
+#### Scenario: Market Resources section shows trading pairs and chart
+
+- **GIVEN** the user scrolls to the Market Resources section
+- **THEN** "Our Market Resource" heading is displayed
+- **AND** a grid of crypto trading pairs with prices is shown on the left
+- **AND** a chart area is displayed on the right
+
+#### Scenario: Expert Team CTA shows team description
+
+- **GIVEN** the user scrolls to the Expert Team section
+- **THEN** a dark background section with decorative image is shown
+- **AND** a "dynamic team" heading with description and "More About" link appears
+
+#### Scenario: Contact section shows callback form
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a "Request A Call Back" heading is displayed
+- **AND** a form with Name, Email, Phone, Subject, and textarea fields is shown
+- **AND** a "Submit Now" button is below the form
+- **AND** a background image is visible on the left (desktop only)
+
+#### Scenario: Team section shows member cards
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** "Our Experts Team" heading is displayed
+- **AND** 4 team member cards are shown in a row
+- **AND** each card has a photo, name, role, and social media icons
+
+#### Scenario: Investments CTA shows call-to-action
+
+- **GIVEN** the user scrolls to the Investments CTA section
+- **THEN** a dark background section with "Need to take care of your Currency Investments" is shown
+- **AND** "View Services" and "CONTACT US" buttons are displayed
+- **AND** a decorative image is on the right
+
+#### Scenario: Blog section shows latest news
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** "Latest Our News" heading is displayed
+- **AND** 3 blog cards are shown in a row
+- **AND** each card has an image, title, meta info, excerpt, and "Read More" link
+
+#### Scenario: Footer shows logo, services, social, and copyright
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer with logo, description, and newsletter form is shown
+- **AND** columns for Our Services, Twitter Feeds, and Newsletter are displayed
+- **AND** a copyright bar with social icons appears at the bottom
+- **AND** it links to https://www.componentdock.com/
+
+#### Scenario: Design tokens are applied consistently
+
+- **GIVEN** any section of the page
+- **THEN** headings use Roboto font family
+- **AND** body text uses Open Sans font family
+- **AND** the primary orange #ff7700 is used for buttons, accents, and highlights
+- **AND** dark sections use #242424 background
+- **AND** CTA buttons are uppercase with orange background
 
 ## Verification checklist
 

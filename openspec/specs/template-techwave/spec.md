@@ -37,7 +37,7 @@ Extracted from https://preview.colorlib.com/theme/portech/css/style.css:
 | Footer text color | `rgba(255,255,255,0.9)` | Footer paragraphs |
 | Project card | Full bg-image with bottom text overlay | `.project-wrap` |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: TechWave Template
 
@@ -46,132 +46,158 @@ Extracted from https://preview.colorlib.com/theme/portech/css/style.css:
   So that I can learn about services, view portfolio, and get in touch.
 
   Background:
-    Given the browser loads "/" 
-    Then the page renders without errors
+- **GIVEN** the browser loads "/"
+- **THEN** the page renders without errors
 
-  # --- Top Bar ---
-  Scenario: Top contact bar displays phone and email
-    Given the page is loaded
-    When I view the top bar
-    Then I see "Phone no:" followed by a phone number
-    And I see "email us:" followed by an email address
-    And I see social media icons (Facebook, Twitter, Instagram, Dribbble)
+**--- Top Bar ---**
 
-  # --- Navbar ---
-  Scenario: Navigation bar is present and dark
-    Given the page is loaded
-    When I view the navigation bar
-    Then it has a dark background
-    And it shows the brand name "TechWave"
-    And it has links: Home, About, Services, Portfolio, Blog, Contact
+#### Scenario: Top contact bar displays phone and email
 
-  Scenario: Navbar is responsive
-    Given the viewport is mobile (< 768px)
-    When I view the navigation bar
-    Then a hamburger menu button is visible
-    And clicking it expands the nav links
+- **GIVEN** the page is loaded
+- **WHEN** I view the top bar
+- **THEN** I see "Phone no:" followed by a phone number
+- **AND** I see "email us:" followed by an email address
+- **AND** I see social media icons (Facebook, Twitter, Instagram, Dribbble)
 
-  # --- Hero ---
-  Scenario: Hero slider shows welcome headline and CTAs
-    Given the page is loaded
-    When I view the hero section
-    Then I see a subheading "Welcome to TechWave"
-    And I see heading "We Create Website the Way You Want with TechWave"
-    And I see a "Learn More" primary button
-    And I see a "View Portfolio" white button
-    And I see a video play icon on the left half
+**--- Navbar ---**
 
-  Scenario: Hero has background image with overlay
-    Given the page is loaded
-    When I view the hero section
-    Then a dark overlay covers the background image
-    And the text is white/light
+#### Scenario: Navigation bar is present and dark
 
-  # --- Services ---
-  Scenario: Services section shows 4 service cards
-    Given the page is loaded
-    When I scroll to the services section
-    Then I see 4 service cards in a row on desktop
-    And each card has an icon, heading, description, and arrow link
-    And the services are: UX/UI Design, Development, Branding, Search Optimization
-    And the section background is light grey (#f8f9fa)
-    And the cards have white background and float above the section
+- **GIVEN** the page is loaded
+- **WHEN** I view the navigation bar
+- **THEN** it has a dark background
+- **AND** it shows the brand name "TechWave"
+- **AND** it has links: Home, About, Services, Portfolio, Blog, Contact
 
-  # --- About ---
-  Scenario: About section displays studio info with image and stats
-    Given the page is loaded
-    When I scroll to the about section
-    Then I see a subheading "Welcome to TechWave"
-    And I see heading "We Are TechWave Creative Studio Agency"
-    And I see an image area with "42 Year Of Experienced" stat callout
-    And I see "Expert Team" and "Solution For Business" feature highlights
-    And I see a paragraph about the agency
+#### Scenario: Navbar is responsive
 
-  # --- Team ---
-  Scenario: Team section shows staff cards on dark background
-    Given the page is loaded
-    When I scroll to the team section
-    Then the section has a dark background (#141b25)
-    And I see subheading "Team & Staff"
-    And I see heading "Our Team"
-    And I see 3 staff member cards
-    And each card shows a photo, name, role, and social icons
-    And I see a "View All Staff" primary button
+- **GIVEN** the viewport is mobile (< 768px)
+- **WHEN** I view the navigation bar
+- **THEN** a hamburger menu button is visible
+- **AND** clicking it expands the nav links
 
-  # --- Counter ---
-  Scenario: Counter section displays stats with parallax background
-    Given the page is loaded
-    When I scroll to the counter section
-    Then I see 4 stat counters in a row
-    And the stats are: 4800 Project Completed, 1000 Our Staff, 350 Services Provide, 7650 Happy Customers
-    And each counter has an icon
-    And the background has a parallax image with overlay
+**--- Hero ---**
 
-  # --- FAQ ---
-  Scenario: FAQ section shows features and accordion
-    Given the page is loaded
-    When I scroll to the FAQ section
-    Then I see a left column with an image and feature list (Creative Ideas, Better Strategy)
-    And I see a right column with "Frequently Ask Question" heading
-    And I see an accordion with expandable questions
-    And clicking a question reveals its answer
+#### Scenario: Hero slider shows welcome headline and CTAs
 
-  # --- Testimonials ---
-  Scenario: Testimonials section shows client reviews in carousel
-    Given the page is loaded
-    When I scroll to the testimonials section
-    Then I see subheading "Testimonial"
-    And I see heading "What Are Clients Says"
-    And I see a carousel of testimonial cards
-    And each card has 5 stars, a quote, a person image, name, and role
+- **GIVEN** the page is loaded
+- **WHEN** I view the hero section
+- **THEN** I see a subheading "Welcome to TechWave"
+- **AND** I see heading "We Create Website the Way You Want with TechWave"
+- **AND** I see a "Learn More" primary button
+- **AND** I see a "View Portfolio" white button
+- **AND** I see a video play icon on the left half
 
-  # --- Portfolio ---
-  Scenario: Portfolio section shows project grid
-    Given the page is loaded
-    When I scroll to the portfolio section
-    Then I see subheading "Recent Portfolio"
-    And I see heading "Our Exceptional Quality Work"
-    And I see 6 project cards in a 3-column grid
-    And each card has a background image, category label, title, and arrow icon
+#### Scenario: Hero has background image with overlay
 
-  # --- Newsletter / Intro ---
-  Scenario: Newsletter section has email subscription form
-    Given the page is loaded
-    When I scroll to the newsletter section
-    Then I see heading "Subscribe to our Newsletter"
-    And I see an email input field and a "Subscribe" button
-    And the section has a background image with overlay
+- **GIVEN** the page is loaded
+- **WHEN** I view the hero section
+- **THEN** a dark overlay covers the background image
+- **AND** the text is white/light
 
-  # --- Footer ---
-  Scenario: Footer has multiple columns with links and contact info
-    Given the page is loaded
-    When I scroll to the footer
-    Then I see the brand name "TechWave" with a short description
-    And I see social media links (Twitter, Facebook, Instagram)
-    And I see columns: Explore, Info, Company, Have a Questions?
-    And I see address, phone, and email in the contact column
-    And the footer background is dark navy (#141b25)
-    And the footer includes a link to Component Dock
+**--- Services ---**
+
+#### Scenario: Services section shows 4 service cards
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the services section
+- **THEN** I see 4 service cards in a row on desktop
+- **AND** each card has an icon, heading, description, and arrow link
+- **AND** the services are: UX/UI Design, Development, Branding, Search Optimization
+- **AND** the section background is light grey (#f8f9fa)
+- **AND** the cards have white background and float above the section
+
+**--- About ---**
+
+#### Scenario: About section displays studio info with image and stats
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the about section
+- **THEN** I see a subheading "Welcome to TechWave"
+- **AND** I see heading "We Are TechWave Creative Studio Agency"
+- **AND** I see an image area with "42 Year Of Experienced" stat callout
+- **AND** I see "Expert Team" and "Solution For Business" feature highlights
+- **AND** I see a paragraph about the agency
+
+**--- Team ---**
+
+#### Scenario: Team section shows staff cards on dark background
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the team section
+- **THEN** the section has a dark background (#141b25)
+- **AND** I see subheading "Team & Staff"
+- **AND** I see heading "Our Team"
+- **AND** I see 3 staff member cards
+- **AND** each card shows a photo, name, role, and social icons
+- **AND** I see a "View All Staff" primary button
+
+**--- Counter ---**
+
+#### Scenario: Counter section displays stats with parallax background
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the counter section
+- **THEN** I see 4 stat counters in a row
+- **AND** the stats are: 4800 Project Completed, 1000 Our Staff, 350 Services Provide, 7650 Happy Customers
+- **AND** each counter has an icon
+- **AND** the background has a parallax image with overlay
+
+**--- FAQ ---**
+
+#### Scenario: FAQ section shows features and accordion
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the FAQ section
+- **THEN** I see a left column with an image and feature list (Creative Ideas, Better Strategy)
+- **AND** I see a right column with "Frequently Ask Question" heading
+- **AND** I see an accordion with expandable questions
+- **AND** clicking a question reveals its answer
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section shows client reviews in carousel
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the testimonials section
+- **THEN** I see subheading "Testimonial"
+- **AND** I see heading "What Are Clients Says"
+- **AND** I see a carousel of testimonial cards
+- **AND** each card has 5 stars, a quote, a person image, name, and role
+
+**--- Portfolio ---**
+
+#### Scenario: Portfolio section shows project grid
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the portfolio section
+- **THEN** I see subheading "Recent Portfolio"
+- **AND** I see heading "Our Exceptional Quality Work"
+- **AND** I see 6 project cards in a 3-column grid
+- **AND** each card has a background image, category label, title, and arrow icon
+
+**--- Newsletter / Intro ---**
+
+#### Scenario: Newsletter section has email subscription form
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the newsletter section
+- **THEN** I see heading "Subscribe to our Newsletter"
+- **AND** I see an email input field and a "Subscribe" button
+- **AND** the section has a background image with overlay
+
+**--- Footer ---**
+
+#### Scenario: Footer has multiple columns with links and contact info
+
+- **GIVEN** the page is loaded
+- **WHEN** I scroll to the footer
+- **THEN** I see the brand name "TechWave" with a short description
+- **AND** I see social media links (Twitter, Facebook, Instagram)
+- **AND** I see columns: Explore, Info, Company, Have a Questions?
+- **AND** I see address, phone, and email in the contact column
+- **AND** the footer background is dark navy (#141b25)
+- **AND** the footer includes a link to Component Dock
 
 ## Verification checklist
 

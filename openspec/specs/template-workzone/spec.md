@@ -38,66 +38,85 @@ Extracted from `https://preview.colorlib.com/theme/workshop/css/style.css`:
 6. **News/Blog** — section heading "News", 3 blog post cards (image, title, author meta with avatar, date, excerpt)
 7. **Footer** — 3-column: About Event (text), Quick Links (list), Connect with Us (social icons), copyright bar
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-- Scenario: Navbar renders all section links
-  - Given the page loads
-  - Then a navigation element is visible
-  - And links to "About", "Speakers", "Programs", "Sponsors", "News", "Contact" are present
 
+#### Scenario: Navbar
+
+- Scenario: Navbar renders all section links
+- **GIVEN** the page loads
+- **THEN** a navigation element is visible
+- **AND** links to "About", "Speakers", "Programs", "Sponsors", "News", "Contact" are present
 - Scenario: Mobile hamburger opens menu
-  - Given the viewport is mobile-width
-  - When the hamburger button is clicked
-  - Then a mobile menu drawer opens with all nav links
+- **GIVEN** the viewport is mobile-width
+- **WHEN** the hamburger button is clicked
+- **THEN** a mobile menu drawer opens with all nav links
 
 ### Hero
-- Scenario: Hero displays conference info
-  - Given the page loads
-  - Then a heading "Web Design Conference" is visible
-  - And a date/location line is visible
-  - And a "Buy Tickets" button is visible
 
+#### Scenario: Hero
+
+- Scenario: Hero displays conference info
+- **GIVEN** the page loads
+- **THEN** a heading "Web Design Conference" is visible
+- **AND** a date/location line is visible
+- **AND** a "Buy Tickets" button is visible
 - Scenario: Buy Tickets button navigates
-  - Given the hero is visible
-  - When the "Buy Tickets" button is clicked
-  - Then navigation occurs (or scroll to section)
+- **GIVEN** the hero is visible
+- **WHEN** the "Buy Tickets" button is clicked
+- **THEN** navigation occurs (or scroll to section)
 
 ### Speakers
+
+#### Scenario: Speakers
+
 - Scenario: Speaker section shows 4 speakers
-  - Given the page loads
-  - When scrolling to the Speakers section
-  - Then 4 speaker cards are visible
-  - And each card shows a name and role
+- **GIVEN** the page loads
+- **WHEN** scrolling to the Speakers section
+- **THEN** 4 speaker cards are visible
+- **AND** each card shows a name and role
 
 ### Programs
+
+#### Scenario: Programs
+
 - Scenario: Schedule displays time slots
-  - Given the page loads
-  - When scrolling to the Programs section
-  - Then at least 5 schedule rows are visible
-  - And each row shows a time, title, and speaker name
+- **GIVEN** the page loads
+- **WHEN** scrolling to the Programs section
+- **THEN** at least 5 schedule rows are visible
+- **AND** each row shows a time, title, and speaker name
 
 ### Sponsors
+
+#### Scenario: Sponsors
+
 - Scenario: Sponsors section shows logos
-  - Given the page loads
-  - When scrolling to the Sponsors section
-  - Then at least 3 sponsor logos are visible
+- **GIVEN** the page loads
+- **WHEN** scrolling to the Sponsors section
+- **THEN** at least 3 sponsor logos are visible
 
 ### News
+
+#### Scenario: News
+
 - Scenario: News section shows blog posts
-  - Given the page loads
-  - When scrolling to the News section
-  - Then 3 blog post cards are visible
-  - And each card shows an image, title, author, date, and excerpt
+- **GIVEN** the page loads
+- **WHEN** scrolling to the News section
+- **THEN** 3 blog post cards are visible
+- **AND** each card shows an image, title, author, date, and excerpt
 
 ### Footer
+
+#### Scenario: Footer
+
 - Scenario: Footer renders all columns
-  - Given the page loads
-  - When scrolling to the footer
-  - Then an "About Event" section is visible
-  - And a "Quick Links" section is visible
-  - And a "Connect with Us" section with social icons is visible
-  - And a Component Dock link is present
+- **GIVEN** the page loads
+- **WHEN** scrolling to the footer
+- **THEN** an "About Event" section is visible
+- **AND** a "Quick Links" section is visible
+- **AND** a "Connect with Us" section with social icons is visible
+- **AND** a Component Dock link is present
 
 ## Verification checklist
 

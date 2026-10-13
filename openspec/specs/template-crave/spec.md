@@ -88,9 +88,11 @@ The source appears TWICE in TEMPLATES.md (dup-row trap): line 1171
 - Fonts: Google Fonts link in index.html for "Josefin Sans" + "Open Sans"
 - Footer links to `https://www.componentdock.com/`
 
-## Scenarios (Gherkin)
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
 
 - Scenario: Renders logo and navigation links
 - Scenario: Shows mobile toggle on small screens
@@ -98,46 +100,66 @@ The source appears TWICE in TEMPLATES.md (dup-row trap): line 1171
 
 ### HeroBanner
 
+#### Scenario: HeroBanner
+
 - Scenario: Displays headline and CTA buttons
 - Scenario: Shows feature icons (Fast Service, Fresh Food, 24/7 Support)
 - Scenario: Renders food image carousel
 
 ### AboutSection
 
+#### Scenario: AboutSection
+
 - Scenario: Shows "About Us" heading and body text
 - Scenario: Renders Learn More button
 
 ### FeaturedFood
 
+#### Scenario: FeaturedFood
+
 - Scenario: Shows food cards with name, price, and star ratings
 
 ### OfferBanner
+
+#### Scenario: OfferBanner
 
 - Scenario: Displays offer text "50% OFF" and Read More button
 
 ### FoodMenu
 
+#### Scenario: FoodMenu
+
 - Scenario: Renders 8 menu items with name and price
 
 ### CtaBanner
 
+#### Scenario: CtaBanner
+
 - Scenario: Shows CTA text and Reservation button
 
 ### ChefSection
+
+#### Scenario: ChefSection
 
 - Scenario: Shows 3 chef cards with name and title
 - Scenario: Shows social icons on hover
 
 ### ReservationForm
 
+#### Scenario: ReservationForm
+
 - Scenario: Renders form fields (name, email, phone, date, people)
 - Scenario: Has Make Reservation submit button
 
 ### BlogSection
 
+#### Scenario: BlogSection
+
 - Scenario: Shows 3 blog cards with title and date
 
 ### Footer
+
+#### Scenario: Footer
 
 - Scenario: Shows column headings and link lists
 - Scenario: Shows newsletter input
@@ -145,6 +167,8 @@ The source appears TWICE in TEMPLATES.md (dup-row trap): line 1171
 - Scenario: Shows social icons in bottom bar
 
 ### App
+
+#### Scenario: App
 
 - Scenario: Composes all sections and sets document title
 - Scenario: Shows banner landmark (header) and contentinfo landmark (footer)

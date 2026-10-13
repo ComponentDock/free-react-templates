@@ -43,134 +43,142 @@ Extracted from the live preview CSS (`styles/main.css`):
 9. **Footer** — logo, about text, useful links column, contact info column (phone, address, email), navigation links; green "Submit Listing" button; bottom bar with copyright + Component Dock link
 10. **GoogleMap** — embedded map (static placeholder in React)
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: TopBar
-```gherkin
-Scenario: TopBar displays contact info
-  Given the page is loaded
-  Then the top bar shows phone number "+546 990221 123"
-  And the top bar shows address "Main Str, no 23, New York"
-  And the top bar shows email "hosting@contact.com"
-  And the top bar shows Login and Register links
 
-Scenario: TopBar shows social icons
-  Given the page is loaded
-  Then the top bar shows 5 social icon links (Pinterest, Facebook, Twitter, Dribbble, Behance)
-```
+#### Scenario: TopBar displays contact info
+
+- **GIVEN** the page is loaded
+- **THEN** the top bar shows phone number "+546 990221 123"
+- **AND** the top bar shows address "Main Str, no 23, New York"
+- **AND** the top bar shows email "hosting@contact.com"
+- **AND** the top bar shows Login and Register links
+
+#### Scenario: TopBar shows social icons
+
+- **GIVEN** the page is loaded
+- **THEN** the top bar shows 5 social icon links (Pinterest, Facebook, Twitter, Dribbble, Behance)
 
 ### Feature: Navbar
-```gherkin
-Scenario: Navbar renders logo and nav links
-  Given the page is loaded
-  Then the navbar displays the "HouseCraft" logo text
-  And the navbar shows 5 navigation links: Home, About Us, Listings, News, Contact
-  And the navbar shows a green "Submit Listing" button
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls down past the hero
-  Then the navbar remains visible at the top of the viewport
-```
+#### Scenario: Navbar renders logo and nav links
+
+- **GIVEN** the page is loaded
+- **THEN** the navbar displays the "HouseCraft" logo text
+- **AND** the navbar shows 5 navigation links: Home, About Us, Listings, News, Contact
+- **AND** the navbar shows a green "Submit Listing" button
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar remains visible at the top of the viewport
 
 ### Feature: HeroSlider
-```gherkin
-Scenario: Hero slider displays property overlays
-  Given the page is loaded
-  Then the hero section shows a carousel with 3 slides
-  And each slide has a property image background with a purple overlay
-  And each slide shows an address and price tag
 
-Scenario: Hero slider supports navigation
-  Given the page is loaded
-  Then dot navigation indicators are present
-```
+#### Scenario: Hero slider displays property overlays
+
+- **GIVEN** the page is loaded
+- **THEN** the hero section shows a carousel with 3 slides
+- **AND** each slide has a property image background with a purple overlay
+- **AND** each slide shows an address and price tag
+
+#### Scenario: Hero slider supports navigation
+
+- **GIVEN** the page is loaded
+- **THEN** dot navigation indicators are present
 
 ### Feature: SearchForm
-```gherkin
-Scenario: Search form renders inputs and button
-  Given the page is loaded
-  Then the search section shows a "Find your home" heading
-  And the search form has input fields for location, property type, bedrooms, and price
-  And the search form has a green "Search" button
 
-Scenario: Search form is functional
-  Given the user fills in search criteria
-  When the user clicks the Search button
-  Then the form does not cause a page error
-```
+#### Scenario: Search form renders inputs and button
+
+- **GIVEN** the page is loaded
+- **THEN** the search section shows a "Find your home" heading
+- **AND** the search form has input fields for location, property type, bedrooms, and price
+- **AND** the search form has a green "Search" button
+
+#### Scenario: Search form is functional
+
+- **GIVEN** the user fills in search criteria
+- **WHEN** the user clicks the Search button
+- **THEN** the form does not cause a page error
 
 ### Feature: FeaturedProperties
-```gherkin
-Scenario: Featured properties section shows 3 property cards
-  Given the page is loaded
-  Then the featured properties section shows "The best deals" subtitle
-  And the featured properties section shows "Featured Properties" heading
-  And 3 property cards are displayed in a row
-  And each card shows a property image, tag (house for sale/rent), price, address, sqft, beds, baths, and garages
 
-Scenario: Property cards have correct tag styling
-  Given the page is loaded
-  Then sale tags are styled differently from rent tags (different background color)
-```
+#### Scenario: Featured properties section shows 3 property cards
+
+- **GIVEN** the page is loaded
+- **THEN** the featured properties section shows "The best deals" subtitle
+- **AND** the featured properties section shows "Featured Properties" heading
+- **AND** 3 property cards are displayed in a row
+- **AND** each card shows a property image, tag (house for sale/rent), price, address, sqft, beds, baths, and garages
+
+#### Scenario: Property cards have correct tag styling
+
+- **GIVEN** the page is loaded
+- **THEN** sale tags are styled differently from rent tags (different background color)
 
 ### Feature: ChooseLocation
-```gherkin
-Scenario: Location chooser shows 8 locations
-  Given the page is loaded
-  Then the location section shows "The best deals" subtitle
-  And the location section shows "Choose a location" heading
-  And 8 location names are listed (Downtown Miami, Chicago, Manhattan, West Hollywood, Washington, Maryland, San Francisco, Orange County)
-```
+
+#### Scenario: Location chooser shows 8 locations
+
+- **GIVEN** the page is loaded
+- **THEN** the location section shows "The best deals" subtitle
+- **AND** the location section shows "Choose a location" heading
+- **AND** 8 location names are listed (Downtown Miami, Chicago, Manhattan, West Hollywood, Washington, Maryland, San Francisco, Orange County)
 
 ### Feature: HotDeal
-```gherkin
-Scenario: Hot deal section shows featured property
-  Given the page is loaded
-  Then the hot deal section shows "Today's Hot Deal" heading
-  And the hot deal shows a property image
-  And the hot deal shows price "$ 562 346"
-  And the hot deal shows property details: 1234 sqft, 2 baths, 5 beds, 2 garages
-  And the hot deal shows agent name "Maria Smith, Agent"
-```
+
+#### Scenario: Hot deal section shows featured property
+
+- **GIVEN** the page is loaded
+- **THEN** the hot deal section shows "Today's Hot Deal" heading
+- **AND** the hot deal shows a property image
+- **AND** the hot deal shows price "$ 562 346"
+- **AND** the hot deal shows property details: 1234 sqft, 2 baths, 5 beds, 2 garages
+- **AND** the hot deal shows agent name "Maria Smith, Agent"
 
 ### Feature: Testimonials
-```gherkin
-Scenario: Testimonials section shows client quotes
-  Given the page is loaded
-  Then the testimonials section shows "Clients testimonials" heading
-  And the testimonials section shows a client quote
-  And the testimonials section shows client name "Cristinne Smith, Client"
 
-Scenario: Testimonials have image background with overlay
-  Given the page is loaded
-  Then the testimonials section has a background image with a dark overlay
-```
+#### Scenario: Testimonials section shows client quotes
+
+- **GIVEN** the page is loaded
+- **THEN** the testimonials section shows "Clients testimonials" heading
+- **AND** the testimonials section shows a client quote
+- **AND** the testimonials section shows client name "Cristinne Smith, Client"
+
+#### Scenario: Testimonials have image background with overlay
+
+- **GIVEN** the page is loaded
+- **THEN** the testimonials section has a background image with a dark overlay
 
 ### Feature: Footer
-```gherkin
-Scenario: Footer shows brand and links
-  Given the page is loaded
-  Then the footer shows the "HouseCraft" logo
-  And the footer shows "Useful Links" column
-  And the footer shows contact info (phone, address, email)
-  And the footer shows a "Submit Listing" button
 
-Scenario: Footer links to Component Dock
-  Given the page is loaded
-  Then the footer contains a link to "https://www.componentdock.com/"
-  And the footer link text mentions "Component Dock"
-```
+#### Scenario: Footer shows brand and links
+
+- **GIVEN** the page is loaded
+- **THEN** the footer shows the "HouseCraft" logo
+- **AND** the footer shows "Useful Links" column
+- **AND** the footer shows contact info (phone, address, email)
+- **AND** the footer shows a "Submit Listing" button
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the page is loaded
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the footer link text mentions "Component Dock"
 
 ### Feature: Overall Layout
-```gherkin
-Scenario: Template uses Montserrat font
-  Given the page is loaded
-  Then the primary font family is "Montserrat"
 
-Scenario: Template brand color is green
-  Given the page is loaded
-  Then primary CTA buttons use the brand green color (#adc867)
-```
+#### Scenario: Template uses Montserrat font
+
+- **GIVEN** the page is loaded
+- **THEN** the primary font family is "Montserrat"
+
+#### Scenario: Template brand color is green
+
+- **GIVEN** the page is loaded
+- **THEN** primary CTA buttons use the brand green color (#adc867)
 
 ## Verification checklist
 

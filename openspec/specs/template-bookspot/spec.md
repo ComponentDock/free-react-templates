@@ -28,56 +28,64 @@ Recreation of ColorLib "Search Form Bar 18" as a standalone React 19 + Vite + Ta
 | Font family | `"Poppins", sans-serif` (inferred from ColorLib patterns) | Clean geometric sans-serif |
 | Section background | None — single centered card on photo | No other sections (this is a single-section form template) |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: BookSpot — Travel Search Form
 
-  Scenario: Page loads with background image
-    Given the user navigates to the BookSpot page
-    Then a full-viewport background image is displayed
-    And a dark semi-transparent card is centered on the page
+#### Scenario: Page loads with background image
 
-  Scenario: Tab navigation between HOTELS, CAR, FLIGHT
-    Given the search card is visible
-    Then three tabs are displayed: "HOTELS", "CAR", "FLIGHT"
-    And the "HOTELS" tab is active by default (white, bold)
-    And the "CAR" and "FLIGHT" tabs are inactive (dimmed)
-    When the user clicks the "CAR" tab
-    Then the "CAR" tab becomes active and "HOTELS" becomes inactive
-    When the user clicks the "FLIGHT" tab
-    Then the "FLIGHT" tab becomes active and "CAR" becomes inactive
+- **GIVEN** the user navigates to the BookSpot page
+- **THEN** a full-viewport background image is displayed
+- **AND** a dark semi-transparent card is centered on the page
 
-  Scenario: Where field displays correctly
-    Given the HOTELS tab is active
-    Then a "Where:" label is displayed
-    And a text input with placeholder "City, region or specific hotel" is shown
-    And a magnifying glass icon is visible inside the input
+#### Scenario: Tab navigation between HOTELS, CAR, FLIGHT
 
-  Scenario: Check-In and Check-Out date fields
-    Given the HOTELS tab is active
-    Then "Check-In:" and "Check-Out:" labels are displayed side by side
-    And date picker inputs with placeholder "mm/dd/yyyy" are shown
+- **GIVEN** the search card is visible
+- **THEN** three tabs are displayed: "HOTELS", "CAR", "FLIGHT"
+- **AND** the "HOTELS" tab is active by default (white, bold)
+- **AND** the "CAR" and "FLIGHT" tabs are inactive (dimmed)
+- **WHEN** the user clicks the "CAR" tab
+- **THEN** the "CAR" tab becomes active and "HOTELS" becomes inactive
+- **WHEN** the user clicks the "FLIGHT" tab
+- **THEN** the "FLIGHT" tab becomes active and "CAR" becomes inactive
 
-  Scenario: Travellers dropdown
-    Given the HOTELS tab is active
-    Then a "Travellers:" label is displayed
-    And a dropdown shows "1 Adult, 0 Children, 1 Room" by default
+#### Scenario: Where field displays correctly
 
-  Scenario: Search button
-    Given the HOTELS tab is active
-    Then a purple "SEARCH" button is displayed on the right side
-    And the button text is uppercase and white
+- **GIVEN** the HOTELS tab is active
+- **THEN** a "Where:" label is displayed
+- **AND** a text input with placeholder "City, region or specific hotel" is shown
+- **AND** a magnifying glass icon is visible inside the input
 
-  Scenario: Responsive layout
-    Given the user views the page on a mobile viewport (< 768px)
-    Then the card spans nearly full width with padding
-    And fields stack vertically instead of side-by-side
+#### Scenario: Check-In and Check-Out date fields
 
-  Scenario: Accessibility
-    Given the page is loaded
-    Then all form inputs have associated labels
-    And the search button has an accessible name
-    And tabs are keyboard-navigable with aria roles
+- **GIVEN** the HOTELS tab is active
+- **THEN** "Check-In:" and "Check-Out:" labels are displayed side by side
+- **AND** date picker inputs with placeholder "mm/dd/yyyy" are shown
+
+#### Scenario: Travellers dropdown
+
+- **GIVEN** the HOTELS tab is active
+- **THEN** a "Travellers:" label is displayed
+- **AND** a dropdown shows "1 Adult, 0 Children, 1 Room" by default
+
+#### Scenario: Search button
+
+- **GIVEN** the HOTELS tab is active
+- **THEN** a purple "SEARCH" button is displayed on the right side
+- **AND** the button text is uppercase and white
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **THEN** the card spans nearly full width with padding
+- **AND** fields stack vertically instead of side-by-side
+
+#### Scenario: Accessibility
+
+- **GIVEN** the page is loaded
+- **THEN** all form inputs have associated labels
+- **AND** the search button has an accessible name
+- **AND** tabs are keyboard-navigable with aria roles
 
 ## Verification checklist
 

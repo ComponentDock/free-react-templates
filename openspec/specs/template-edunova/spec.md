@@ -45,99 +45,112 @@ Extracted from the live preview stylesheet (`assets/css/style.css`):
 9. **Newsletter / CTA** — Orange (#FF6F00) background, centered text with email input + subscribe button
 10. **Footer** — Dark background, 4-column: logo + description + social icons | Subjects links | Our Company links | Support links; bottom bar with copyright + "Made with ❤️ by ColorLib" (replace with Component Dock)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: EduNova template behaviour
+
 Feature: EduNova — Education Online Courses Template
 
-  Background:
-    Given the user visits the EduNova homepage
-    Then the page loads with a sticky header and hero section
+Background:
+- **GIVEN** the user visits the EduNova homepage
+- **THEN** the page loads with a sticky header and hero section
 
-  Scenario: Header — sticky navigation
-    When the user scrolls down past the header
-    Then the header remains fixed at the top with a white background and shadow
-    And the nav links are visible and clickable
-    And the search bar is visible with a rounded input field
-    And the "Sign In" button is rendered
+#### Scenario: Header — sticky navigation
 
-  Scenario: Header — mobile menu
-    Given the viewport is mobile (< 768px)
-    Then the desktop nav is hidden
-    And a hamburger menu icon is visible
-    When the user taps the hamburger icon
-    Then the mobile menu expands with all nav links
+- **WHEN** the user scrolls down past the header
+- **THEN** the header remains fixed at the top with a white background and shadow
+- **AND** the nav links are visible and clickable
+- **AND** the search bar is visible with a rounded input field
+- **AND** the "Sign In" button is rendered
 
-  Scenario: Hero section — search form
-    Given the hero section is visible
-    Then a large headline is displayed: "Learn new skills online with top educators"
-    And a subtext paragraph is displayed below the headline
-    And a search input with placeholder "What do you want to learn?" is shown
-    And a red (#EA5252) search button is attached to the right of the input
-    And a hero illustration image fills the right half of the hero
+#### Scenario: Header — mobile menu
 
-  Scenario: Popular Courses — carousel
-    Given the user scrolls to the courses section
-    Then a section title "The world's largest selection of courses" is displayed
-    And at least 4 course cards are rendered
-    And each card has an image with a price badge overlay
-    And each card shows a course title, author name, and 5-star rating with review count
+- **GIVEN** the viewport is mobile (< 768px)
+- **THEN** the desktop nav is hidden
+- **AND** a hamburger menu icon is visible
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile menu expands with all nav links
 
-  Scenario: Popular Courses — carousel interaction
-    Given the courses carousel is visible
-    When the user clicks the next arrow
-    Then the next set of course cards slides into view
+#### Scenario: Hero section — search form
 
-  Scenario: About / CTA section
-    Given the user scrolls to the about section
-    Then a two-column layout is shown: image left, text right
-    And the text area has a headline, description paragraph, and two buttons
-    And the primary button has a purple (#5A4E8C) background
-    And the secondary button has an outlined/ghost style
+- **GIVEN** the hero section is visible
+- **THEN** a large headline is displayed: "Learn new skills online with top educators"
+- **AND** a subtext paragraph is displayed below the headline
+- **AND** a search input with placeholder "What do you want to learn?" is shown
+- **AND** a red (#EA5252) search button is attached to the right of the input
+- **AND** a hero illustration image fills the right half of the hero
 
-  Scenario: Course Categories
-    Given the user scrolls to the categories section
-    Then a section title "Discover Our Top Categories" is displayed
-    And a grid of category cards is shown with images and labels
+#### Scenario: Popular Courses — carousel
 
-  Scenario: Testimonials carousel
-    Given the user scrolls to the testimonials section
-    Then a testimonial slider is visible
-    And each slide shows a quote, author avatar, name, and role
+- **GIVEN** the user scrolls to the courses section
+- **THEN** a section title "The world's largest selection of courses" is displayed
+- **AND** at least 4 course cards are rendered
+- **AND** each card has an image with a price badge overlay
+- **AND** each card shows a course title, author name, and 5-star rating with review count
 
-  Scenario: Features / Why Choose Us
-    Given the user scrolls to the features section
-    Then the section has a light blue (#EFFDFF) background
-    And a two-column layout is shown: feature list left, illustration right
-    And 3 feature items are listed, each with an icon, title, and description
+#### Scenario: Popular Courses — carousel interaction
 
-  Scenario: Newsletter CTA
-    Given the user scrolls to the newsletter section
-    Then the section has an orange (#FF6F00) background
-    And an email input field is displayed with a subscribe button
+- **GIVEN** the courses carousel is visible
+- **WHEN** the user clicks the next arrow
+- **THEN** the next set of course cards slides into view
 
-  Scenario: Footer
-    Given the user scrolls to the footer
-    Then the footer has a dark background
-    And 4 columns are shown: logo+description+social, Subjects, Our Company, Support
-    And social icons (Twitter, Facebook, Pinterest) are displayed
-    And the bottom bar shows copyright text
-    And the footer links to https://www.componentdock.com/
+#### Scenario: About / CTA section
 
-  Scenario: Responsive layout
-    Given the viewport is resized to mobile (< 576px)
-    Then all sections stack vertically
-    And course cards display in a single column
-    And the hero section stacks text above the image
-    And the footer columns stack vertically
+- **GIVEN** the user scrolls to the about section
+- **THEN** a two-column layout is shown: image left, text right
+- **AND** the text area has a headline, description paragraph, and two buttons
+- **AND** the primary button has a purple (#5A4E8C) background
+- **AND** the secondary button has an outlined/ghost style
 
-  Scenario: Back to top button
-    Given the user scrolls past the hero section
-    Then a circular back-to-top button appears at bottom-right
-    And the button has a red (#EA5252) background
-    When the user clicks the button
-    Then the page scrolls smoothly to the top
-```
+#### Scenario: Course Categories
+
+- **GIVEN** the user scrolls to the categories section
+- **THEN** a section title "Discover Our Top Categories" is displayed
+- **AND** a grid of category cards is shown with images and labels
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial slider is visible
+- **AND** each slide shows a quote, author avatar, name, and role
+
+#### Scenario: Features / Why Choose Us
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** the section has a light blue (#EFFDFF) background
+- **AND** a two-column layout is shown: feature list left, illustration right
+- **AND** 3 feature items are listed, each with an icon, title, and description
+
+#### Scenario: Newsletter CTA
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** the section has an orange (#FF6F00) background
+- **AND** an email input field is displayed with a subscribe button
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** 4 columns are shown: logo+description+social, Subjects, Our Company, Support
+- **AND** social icons (Twitter, Facebook, Pinterest) are displayed
+- **AND** the bottom bar shows copyright text
+- **AND** the footer links to https://www.componentdock.com/
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the viewport is resized to mobile (< 576px)
+- **THEN** all sections stack vertically
+- **AND** course cards display in a single column
+- **AND** the hero section stacks text above the image
+- **AND** the footer columns stack vertically
+
+#### Scenario: Back to top button
+
+- **GIVEN** the user scrolls past the hero section
+- **THEN** a circular back-to-top button appears at bottom-right
+- **AND** the button has a red (#EA5252) background
+- **WHEN** the user clicks the button
+- **THEN** the page scrolls smoothly to the top
 
 ## Verification Checklist
 

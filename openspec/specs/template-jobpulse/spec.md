@@ -22,6 +22,10 @@ A full-viewport job search form template with a solid blue background, centered 
 
 ## Requirements
 
+### Feature: Jobpulse template behaviour
+
+#### Scenario: Jobpulse
+
 1. **Full-viewport blue background** — The template SHALL render a solid blue background covering the entire viewport.
 2. **Centered heading** — The template SHALL display "Find For A Jobs" in large white text, centered.
 3. **Search form** — The template SHALL provide a horizontal search form with keyword input, location input, budget dropdown, and search button.

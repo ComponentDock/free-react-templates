@@ -45,80 +45,73 @@ Extracted from the live preview CSS (`css/style.css`):
 9. **News & Articles** — Centered heading. 3-column blog cards (thumbnail with date overlay, post meta, title).
 10. **Footer** — About text + social icons (3 col), Quick Links, Helpful Links, Resources columns. Copyright with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar renders with correct links
-```
-Given the user loads the page
-Then the navbar displays "Wellward" logo
-And the navbar contains links: Home, Prevention, Symptoms, Blog, Contact
-And the Prevention link has a dropdown with sub-links
-```
+### Feature: Wellward template behaviour
 
-### Scenario: Hero section displays correctly
-```
-Given the user loads the page
-Then the hero shows heading "Stay Safe. Stay Home."
-And the hero shows a subheading "Health Awareness"
-And the hero shows a CTA button labeled "How to prevent"
-And the hero shows an illustration on the right
-```
+#### Scenario: Navbar renders with correct links
 
-### Scenario: Statistics section shows three stats
-```
-Given the user loads the page
-Then three stat cards are visible
-And each stat card has an icon, number, and label
-And the labels are "Active Cases", "Deaths", "Recovered"
-```
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays "Wellward" logo
+- **AND** the navbar contains links: Home, Prevention, Symptoms, Blog, Contact
+- **AND** the Prevention link has a dropdown with sub-links
 
-### Scenario: About section with video overlay
-```
-Given the user loads the page
-Then the about section shows a "Watch the Video" overlay on the image
-And the about section shows heading "What is a Health Crisis?"
-And the about section has a checklist and a "Learn more" button
-```
+#### Scenario: Hero section displays correctly
 
-### Scenario: Prevention tips displayed on light background
-```
-Given the user loads the page
-Then the prevention section has a light purple background
-And four prevention tips are shown: Stay at home, Wear facemask, Keep social distancing, Wash your hands
-And each tip has an icon and description
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero shows heading "Stay Safe. Stay Home."
+- **AND** the hero shows a subheading "Health Awareness"
+- **AND** the hero shows a CTA button labeled "How to prevent"
+- **AND** the hero shows an illustration on the right
 
-### Scenario: Symptoms section shows four symptom cards
-```
-Given the user loads the page
-Then four symptom cards are displayed: High Fever, Cough, Sore Throat, Headache
-And each card has an image and description
-And a help line banner is shown at the bottom
-```
+#### Scenario: Statistics section shows three stats
 
-### Scenario: News section shows three blog posts
-```
-Given the user loads the page
-Then three blog cards are visible
-And each card has a thumbnail, date overlay, post meta, and title
-```
+- **GIVEN** the user loads the page
+- **THEN** three stat cards are visible
+- **AND** each stat card has an icon, number, and label
+- **AND** the labels are "Active Cases", "Deaths", "Recovered"
 
-### Scenario: Footer has correct structure
-```
-Given the user loads the page
-Then the footer shows an "About" section with social icons
-And the footer shows Quick Links, Helpful Links, Resources columns
-And the footer contains a "Made with Component Dock" attribution
-```
+#### Scenario: About section with video overlay
 
-### Scenario: Responsive layout
-```
-Given the user loads the page on a mobile viewport
-Then the navbar collapses to a hamburger menu
-And the hero stacks vertically
-And the stat cards stack vertically
-And the prevention grid stacks vertically
-```
+- **GIVEN** the user loads the page
+- **THEN** the about section shows a "Watch the Video" overlay on the image
+- **AND** the about section shows heading "What is a Health Crisis?"
+- **AND** the about section has a checklist and a "Learn more" button
+
+#### Scenario: Prevention tips displayed on light background
+
+- **GIVEN** the user loads the page
+- **THEN** the prevention section has a light purple background
+- **AND** four prevention tips are shown: Stay at home, Wear facemask, Keep social distancing, Wash your hands
+- **AND** each tip has an icon and description
+
+#### Scenario: Symptoms section shows four symptom cards
+
+- **GIVEN** the user loads the page
+- **THEN** four symptom cards are displayed: High Fever, Cough, Sore Throat, Headache
+- **AND** each card has an image and description
+- **AND** a help line banner is shown at the bottom
+
+#### Scenario: News section shows three blog posts
+
+- **GIVEN** the user loads the page
+- **THEN** three blog cards are visible
+- **AND** each card has a thumbnail, date overlay, post meta, and title
+
+#### Scenario: Footer has correct structure
+
+- **GIVEN** the user loads the page
+- **THEN** the footer shows an "About" section with social icons
+- **AND** the footer shows Quick Links, Helpful Links, Resources columns
+- **AND** the footer contains a "Made with Component Dock" attribution
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user loads the page on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero stacks vertically
+- **AND** the stat cards stack vertically
+- **AND** the prevention grid stacks vertically
 
 ## Verification checklist
 

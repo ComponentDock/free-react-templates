@@ -52,71 +52,83 @@ layout, colors, typography, and content types (no ColorLib assets copied).
     coming-soon series.
   - **Buttons:** pink filled (#e15e88), likely rounded, centered.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Teaser — Coming Soon Landing Page
 
-  Scenario: Page loads with correct meta and title
-    Given the user navigates to the Teaser page
-    Then the page title contains "Teaser"
-    And the page has a meta description
+#### Scenario: Page loads with correct meta and title
 
-  Scenario: Header displays brand
-    Given the user views the page
-    Then a header section is visible
-    And the header contains the site brand name "Teaser"
+- **GIVEN** the user navigates to the Teaser page
+- **THEN** the page title contains "Teaser"
+- **AND** the page has a meta description
 
-  Scenario: Hero section is visible
-    Given the user scrolls to the hero area
-    Then a hero heading is displayed
-    And the hero has a dark background
+#### Scenario: Header displays brand
 
-  Scenario: Countdown or timer element is present
-    Given the user views the hero section
-    Then a countdown or timer component is visible
-    And the countdown shows days, hours, minutes, and seconds
+- **GIVEN** the user views the page
+- **THEN** a header section is visible
+- **AND** the header contains the site brand name "Teaser"
 
-  Scenario: Email signup form is present
-    Given the user views the CTA area
-    Then an email input field is visible
-    And a subscribe button is visible
-    And the subscribe button is styled with the pink brand color #e15e88
+#### Scenario: Hero section is visible
 
-  Scenario: Email form validates input
-    Given the user clicks the subscribe button without entering an email
-    Then a validation message is shown
-    Given the user enters "notanemail" in the email field
-    And clicks the subscribe button
-    Then a validation error is shown
+- **GIVEN** the user scrolls to the hero area
+- **THEN** a hero heading is displayed
+- **AND** the hero has a dark background
 
-  Scenario: Footer is visible
-    Given the user scrolls to the bottom of the page
-    Then a footer section is visible
-    And the footer has a dark warm-brown background
+#### Scenario: Countdown or timer element is present
 
-  Scenario: Footer contains navigation links
-    Given the user views the footer
-    Then navigation links are present in the footer
-    And each link is clickable
+- **GIVEN** the user views the hero section
+- **THEN** a countdown or timer component is visible
+- **AND** the countdown shows days, hours, minutes, and seconds
 
-  Scenario: Footer contains Component Dock link
-    Given the user views the footer
-    Then a link to "https://www.componentdock.com/" is present
-    And the link text reads "Component Dock"
+#### Scenario: Email signup form is present
 
-  Scenario: Footer contains copyright
-    Given the user views the footer
-    Then a copyright notice is visible in the bottom strip
+- **GIVEN** the user views the CTA area
+- **THEN** an email input field is visible
+- **AND** a subscribe button is visible
+- **AND** the subscribe button is styled with the pink brand color #e15e88
 
-  Scenario: Page is responsive
-    Given the user views the page at 375px width
-    Then all sections are visible without horizontal overflow
-    And the layout adapts to the narrow viewport
+#### Scenario: Email form validates input
 
-  Scenario: Dark mode toggle works
-    Given the user is on the page
-    When the user toggles dark mode
-    Then the page theme changes appropriately
+- **GIVEN** the user clicks the subscribe button without entering an email
+- **THEN** a validation message is shown
+- **GIVEN** the user enters "notanemail" in the email field
+- **AND** clicks the subscribe button
+- **THEN** a validation error is shown
+
+#### Scenario: Footer is visible
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer section is visible
+- **AND** the footer has a dark warm-brown background
+
+#### Scenario: Footer contains navigation links
+
+- **GIVEN** the user views the footer
+- **THEN** navigation links are present in the footer
+- **AND** each link is clickable
+
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** the user views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text reads "Component Dock"
+
+#### Scenario: Footer contains copyright
+
+- **GIVEN** the user views the footer
+- **THEN** a copyright notice is visible in the bottom strip
+
+#### Scenario: Page is responsive
+
+- **GIVEN** the user views the page at 375px width
+- **THEN** all sections are visible without horizontal overflow
+- **AND** the layout adapts to the narrow viewport
+
+#### Scenario: Dark mode toggle works
+
+- **GIVEN** the user is on the page
+- **WHEN** the user toggles dark mode
+- **THEN** the page theme changes appropriately
 
 ## Verification checklist
 

@@ -54,74 +54,86 @@ brand logos, contact form, and dark footer.
 10. **Contact** — Heading "If you need, Just drop us a line", form (name, email, subject, message) + address info
 11. **Footer** — Dark bg, 3 columns (About, Contact Info, Newsletter signup), social links, copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Ringdesk call center landing page
 
-  Scenario: Page renders with navbar
-    Given the user loads the Ringdesk page
-    Then a fixed white navbar is visible at top
-    And the logo "Ringdesk" is displayed on the left
-    And nav links include: Home, About, Services, Features, Gallery, Pricing, Blog, Contact
+#### Scenario: Page renders with navbar
 
-  Scenario: Hero section displays
-    Given the user loads the Ringdesk page
-    Then the hero has a dark overlay on a background image
-    And the heading reads "Efficiency Booster"
-    And a "Discover Now" CTA button is visible
+- **GIVEN** the user loads the Ringdesk page
+- **THEN** a fixed white navbar is visible at top
+- **AND** the logo "Ringdesk" is displayed on the left
+- **AND** nav links include: Home, About, Services, Features, Gallery, Pricing, Blog, Contact
 
-  Scenario: Features section shows 3 feature cards
-    Given the user scrolls to the features section
-    Then 3 feature cards are displayed in a row
-    And each card has an icon image, title, and description
+#### Scenario: Hero section displays
 
-  Scenario: Testimonials section has slider
-    Given the user scrolls to the testimonials section
-    Then a testimonial card is visible with client avatar, name, and quote
-    And prev/next navigation arrows are present
+- **GIVEN** the user loads the Ringdesk page
+- **THEN** the hero has a dark overlay on a background image
+- **AND** the heading reads "Efficiency Booster"
+- **AND** a "Discover Now" CTA button is visible
 
-  Scenario: Offered services grid displays
-    Given the user scrolls to the offered services section
-    Then a 3x2 grid of service cards is displayed
-    And each card has an icon and service title
+#### Scenario: Features section shows 3 feature cards
 
-  Scenario: Stats section shows numbers
-    Given the user scrolls to the facts section
-    Then large gradient numbers are visible: 2536, 6784, 1059, 2239, 435
-    And each number has a label below it
+- **GIVEN** the user scrolls to the features section
+- **THEN** 3 feature cards are displayed in a row
+- **AND** each card has an icon image, title, and description
 
-  Scenario: Services section on dark background
-    Given the user scrolls to the services section
-    Then a dark overlay background is displayed
-    And 6 service cards are shown in a grid
+#### Scenario: Testimonials section has slider
 
-  Scenario: About section with split layout
-    Given the user scrolls to the about section
-    Then text appears on the left and a play button overlay on the right
-    And the heading mentions "Interior beautifies the Total Architecture"
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial card is visible with client avatar, name, and quote
+- **AND** prev/next navigation arrows are present
 
-  Scenario: Brand logos section
-    Given the user scrolls to the brand section
-    Then partner logos are displayed in grayscale
-    And logos transition to full color on hover
+#### Scenario: Offered services grid displays
 
-  Scenario: Contact form section
-    Given the user scrolls to the contact section
-    Then a form with name, email, subject, and message fields is visible
-    And contact address information is displayed alongside
+- **GIVEN** the user scrolls to the offered services section
+- **THEN** a 3x2 grid of service cards is displayed
+- **AND** each card has an icon and service title
 
-  Scenario: Footer with newsletter
-    Given the user scrolls to the footer
-    Then a dark footer is visible with 3 columns
-    And a newsletter signup form is present
-    And social media links are displayed
-    And a Component Dock link is in the footer
+#### Scenario: Stats section shows numbers
 
-  Scenario: Responsive layout on mobile
-    Given the user views Ringdesk on a viewport width < 768px
-    Then the navbar collapses to a hamburger menu
-    And sections stack vertically
-    And feature/service cards stack to single column
+- **GIVEN** the user scrolls to the facts section
+- **THEN** large gradient numbers are visible: 2536, 6784, 1059, 2239, 435
+- **AND** each number has a label below it
+
+#### Scenario: Services section on dark background
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a dark overlay background is displayed
+- **AND** 6 service cards are shown in a grid
+
+#### Scenario: About section with split layout
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** text appears on the left and a play button overlay on the right
+- **AND** the heading mentions "Interior beautifies the Total Architecture"
+
+#### Scenario: Brand logos section
+
+- **GIVEN** the user scrolls to the brand section
+- **THEN** partner logos are displayed in grayscale
+- **AND** logos transition to full color on hover
+
+#### Scenario: Contact form section
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a form with name, email, subject, and message fields is visible
+- **AND** contact address information is displayed alongside
+
+#### Scenario: Footer with newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark footer is visible with 3 columns
+- **AND** a newsletter signup form is present
+- **AND** social media links are displayed
+- **AND** a Component Dock link is in the footer
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user views Ringdesk on a viewport width < 768px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** feature/service cards stack to single column
 
 ## Verification Checklist
 

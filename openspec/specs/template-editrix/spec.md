@@ -61,135 +61,143 @@ Extracted from the live preview stylesheet (`css/style.css`) on 2026-09-24.
 - **Blog grid:** CSS grid via Bootstrap rows. Cards have: background image with dark overlay, centered white text (tag pill, headline, description). Mixed column widths: 50/50, 25/25/50, full-width, 33/33/33, 60/40 patterns.
 - **Pagination:** Centered numbered links with `«` / `»` arrows, 50% rounded active state.
 
-## Gherkin requirements
+## Requirements
 
 ### Sidebar Navigation
 
-```gherkin
 Feature: Editrix sidebar navigation
 
-  Scenario: Sidebar renders with brand name
-    Given the page loads
-    Then the sidebar displays the site name "Editrix" in uppercase
-    And the sidebar is fixed to the left side of the viewport
+#### Scenario: Sidebar renders with brand name
 
-  Scenario: Sidebar contains navigation links
-    Given the sidebar is visible
-    Then the following nav links are present: Home, Style, Fashion, Travel, Sports, Video, Archives
-    And the "Home" link has an active indicator (underline or bold)
+- **GIVEN** the page loads
+- **THEN** the sidebar displays the site name "Editrix" in uppercase
+- **AND** the sidebar is fixed to the left side of the viewport
 
-  Scenario: Sidebar footer shows copyright and social icons
-    Given the sidebar footer is visible
-    Then a copyright notice is displayed
-    And social media icons are shown: Facebook, Twitter, Instagram, LinkedIn
+#### Scenario: Sidebar contains navigation links
 
-  Scenario: Sidebar collapses on mobile
-    Given the viewport width is below 768px
-    Then the sidebar is hidden off-screen
-    And a hamburger toggle button appears
-    When the hamburger button is clicked
-    Then the sidebar slides in from the left
+- **GIVEN** the sidebar is visible
+- **THEN** the following nav links are present: Home, Style, Fashion, Travel, Sports, Video, Archives
+- **AND** the "Home" link has an active indicator (underline or bold)
 
-  Scenario: Clicking a nav link highlights it
-    Given the sidebar is visible
-    When the user clicks "Fashion"
-    Then "Fashion" becomes the active nav item
-    And "Home" is no longer active
-```
+#### Scenario: Sidebar footer shows copyright and social icons
+
+- **GIVEN** the sidebar footer is visible
+- **THEN** a copyright notice is displayed
+- **AND** social media icons are shown: Facebook, Twitter, Instagram, LinkedIn
+
+#### Scenario: Sidebar collapses on mobile
+
+- **GIVEN** the viewport width is below 768px
+- **THEN** the sidebar is hidden off-screen
+- **AND** a hamburger toggle button appears
+- **WHEN** the hamburger button is clicked
+- **THEN** the sidebar slides in from the left
+
+#### Scenario: Clicking a nav link highlights it
+
+- **GIVEN** the sidebar is visible
+- **WHEN** the user clicks "Fashion"
+- **THEN** "Fashion" becomes the active nav item
+- **AND** "Home" is no longer active
 
 ### Hero Slider
 
-```gherkin
 Feature: Editrix hero slider
 
-  Scenario: Hero slider displays a full-viewport slide
-    Given the page loads
-    Then the hero section occupies the full viewport height
-    And a background image is displayed
-    And a semi-transparent dark overlay covers the image
+#### Scenario: Hero slider displays a full-viewport slide
 
-  Scenario: Slide shows category tag, headline, and description
-    Given a hero slide is visible
-    Then a category tag pill is displayed (e.g. "Fashion")
-    And a large headline in white text is shown
-    And a description paragraph appears below the headline
+- **GIVEN** the page loads
+- **THEN** the hero section occupies the full viewport height
+- **AND** a background image is displayed
+- **AND** a semi-transparent dark overlay covers the image
 
-  Scenario: Hero carousel cycles through slides
-    Given the hero slider has multiple slides
-    When the page loads
-    Then the slider auto-advances through slides
-    And carousel navigation dots are visible at the bottom right
+#### Scenario: Slide shows category tag, headline, and description
 
-  Scenario: Carousel dots indicate current slide
-    Given the hero slider is on slide 1
-    Then the first dot is filled/active
-    When the slider advances to slide 2
-    Then the second dot becomes active
-```
+- **GIVEN** a hero slide is visible
+- **THEN** a category tag pill is displayed (e.g. "Fashion")
+- **AND** a large headline in white text is shown
+- **AND** a description paragraph appears below the headline
+
+#### Scenario: Hero carousel cycles through slides
+
+- **GIVEN** the hero slider has multiple slides
+- **WHEN** the page loads
+- **THEN** the slider auto-advances through slides
+- **AND** carousel navigation dots are visible at the bottom right
+
+#### Scenario: Carousel dots indicate current slide
+
+- **GIVEN** the hero slider is on slide 1
+- **THEN** the first dot is filled/active
+- **WHEN** the slider advances to slide 2
+- **THEN** the second dot becomes active
 
 ### Blog Grid
 
-```gherkin
 Feature: Editrix blog article grid
 
-  Scenario: First row shows one large and two small cards
-    Given the blog grid renders
-    Then the first row contains one large card spanning 50% width
-    And two smaller cards each spanning 25% width on the right
+#### Scenario: First row shows one large and two small cards
 
-  Scenario: Blog cards display image with overlay and text
-    Given a blog card is rendered
-    Then a background image is shown
-    And a dark overlay covers the image
-    And a category tag pill is centered on the card
-    And a headline is centered below the tag
-    And a short description appears below the headline
+- **GIVEN** the blog grid renders
+- **THEN** the first row contains one large card spanning 50% width
+- **AND** two smaller cards each spanning 25% width on the right
 
-  Scenario: Full-width card row exists
-    Given the blog grid renders
-    Then at least one row contains a single full-width card
+#### Scenario: Blog cards display image with overlay and text
 
-  Scenario: Grid uses mixed column layouts
-    Given the blog grid renders
-    Then rows use varying column splits: 50/25/25, 100, 40/30/30, 60/40 patterns
-```
+- **GIVEN** a blog card is rendered
+- **THEN** a background image is shown
+- **AND** a dark overlay covers the image
+- **AND** a category tag pill is centered on the card
+- **AND** a headline is centered below the tag
+- **AND** a short description appears below the headline
+
+#### Scenario: Full-width card row exists
+
+- **GIVEN** the blog grid renders
+- **THEN** at least one row contains a single full-width card
+
+#### Scenario: Grid uses mixed column layouts
+
+- **GIVEN** the blog grid renders
+- **THEN** rows use varying column splits: 50/25/25, 100, 40/30/30, 60/40 patterns
 
 ### Pagination
 
-```gherkin
 Feature: Editrix blog pagination
 
-  Scenario: Pagination renders below the grid
-    Given the blog grid has more than one page of content
-    Then numbered page links appear below the grid
-    And left/right arrow buttons are present
+#### Scenario: Pagination renders below the grid
 
-  Scenario: Current page is visually distinct
-    Given pagination is visible
-    Then the current page number has an active/rounded style
-    And other page numbers are plain links
-```
+- **GIVEN** the blog grid has more than one page of content
+- **THEN** numbered page links appear below the grid
+- **AND** left/right arrow buttons are present
+
+#### Scenario: Current page is visually distinct
+
+- **GIVEN** pagination is visible
+- **THEN** the current page number has an active/rounded style
+- **AND** other page numbers are plain links
 
 ### Responsive Layout
 
-```gherkin
 Feature: Editrix responsive behavior
 
-  Scenario: Sidebar adapts on tablet
-    Given the viewport is between 768px and 1200px
-    Then the sidebar width expands to 30%
+#### Scenario: Sidebar adapts on tablet
 
-  Scenario: Sidebar collapses on mobile
-    Given the viewport is below 768px
-    Then the sidebar becomes a 270px drawer
-    And the hamburger toggle is visible
-    And the main content fills the full width
+- **GIVEN** the viewport is between 768px and 1200px
+- **THEN** the sidebar width expands to 30%
 
-  Scenario: Blog cards stack on mobile
-    Given the viewport is below 768px
-    Then blog cards stack vertically
-    And small blog card images expand to 400px height
-```
+#### Scenario: Sidebar collapses on mobile
+
+- **GIVEN** the viewport is below 768px
+- **THEN** the sidebar becomes a 270px drawer
+- **AND** the hamburger toggle is visible
+- **AND** the main content fills the full width
+
+#### Scenario: Blog cards stack on mobile
+
+- **GIVEN** the viewport is below 768px
+- **THEN** blog cards stack vertically
+- **AND** small blog card images expand to 400px height
 
 ## Verification checklist
 

@@ -62,83 +62,67 @@ Recreation of ColorLib Creative Login Form — a minimal, centered login form pa
    - **Login button** — Full-width green button with "LOGIN" text (uppercase)
    - **Registration link** — "Not registered? Create an account" text
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with centered login form
+### Feature: SignFlux template behaviour
 
-```gherkin
-Given the user loads the SignFlux page
-Then a login form card is displayed centered on the page
-And the page background is solid green
-```
+#### Scenario: Page renders with centered login form
 
-### Scenario: Login form contains username field
+- **GIVEN** the user loads the SignFlux page
+- **THEN** a login form card is displayed centered on the page
+- **AND** the page background is solid green
 
-```gherkin
-Given the login form is visible
-Then a username input field is present
-And the username input has a placeholder "username"
-```
+#### Scenario: Login form contains username field
 
-### Scenario: Login form contains password field
+- **GIVEN** the login form is visible
+- **THEN** a username input field is present
+- **AND** the username input has a placeholder "username"
 
-```gherkin
-Given the login form is visible
-Then a password input field is present
-And the password input has a placeholder "password"
-```
+#### Scenario: Login form contains password field
 
-### Scenario: Login button is displayed
+- **GIVEN** the login form is visible
+- **THEN** a password input field is present
+- **AND** the password input has a placeholder "password"
 
-```gherkin
-Given the login form is visible
-Then a "LOGIN" button is displayed below the inputs
-And the button is full-width with green background
-And the button text is white and uppercase
-```
+#### Scenario: Login button is displayed
 
-### Scenario: Registration link is present
+- **GIVEN** the login form is visible
+- **THEN** a "LOGIN" button is displayed below the inputs
+- **AND** the button is full-width with green background
+- **AND** the button text is white and uppercase
 
-```gherkin
-Given the login form is visible
-Then the text "Not registered? Create an account" is shown below the login button
-And "Create an account" is a green clickable link
-```
+#### Scenario: Registration link is present
 
-### Scenario: Form submission with empty fields
+- **GIVEN** the login form is visible
+- **THEN** the text "Not registered? Create an account" is shown below the login button
+- **AND** "Create an account" is a green clickable link
 
-```gherkin
-Given the login form is visible
-When the user clicks the LOGIN button without entering any data
-Then the form should not navigate away
-And the form should remain displayed
-```
+#### Scenario: Form submission with empty fields
 
-### Scenario: Form submission with credentials
+- **GIVEN** the login form is visible
+- **WHEN** the user clicks the LOGIN button without entering any data
+- **THEN** the form should not navigate away
+- **AND** the form should remain displayed
 
-```gherkin
-Given the login form is visible
-When the user enters a username and password
-And clicks the LOGIN button
-Then the form attempts to submit the credentials
-```
+#### Scenario: Form submission with credentials
 
-### Scenario: Responsive layout on mobile
+- **GIVEN** the login form is visible
+- **WHEN** the user enters a username and password
+- **AND** clicks the LOGIN button
+- **THEN** the form attempts to submit the credentials
 
-```gherkin
-Given the user loads the page on a mobile viewport (375px)
-Then the login form card is centered and scales to fit the viewport
-And the inputs and button remain full-width within the card
-And the card has appropriate padding for mobile
-```
+#### Scenario: Responsive layout on mobile
 
-### Scenario: Button hover effect
+- **GIVEN** the user loads the page on a mobile viewport (375px)
+- **THEN** the login form card is centered and scales to fit the viewport
+- **AND** the inputs and button remain full-width within the card
+- **AND** the card has appropriate padding for mobile
 
-```gherkin
-Given the login form is visible
-When the user hovers over the LOGIN button
-Then the button background changes to a slightly darker green
-```
+#### Scenario: Button hover effect
+
+- **GIVEN** the login form is visible
+- **WHEN** the user hovers over the LOGIN button
+- **THEN** the button background changes to a slightly darker green
 
 ## Verification checklist
 

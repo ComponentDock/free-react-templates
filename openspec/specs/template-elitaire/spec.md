@@ -95,77 +95,88 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Centered copyright text with "Component Dock" link (replacing Colorlib attribution)
 - Simple text-only footer
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Elitaire template behaviour
+
 Feature: Elitaire — Photography Portfolio Template
 
-  Scenario: Fixed sidebar header renders
-    Given the user is on a desktop viewport
-    Then a fixed left sidebar (250px wide) with black background is visible
-    And the logo "Elit Photo" is displayed in white uppercase text
-    And navigation links "Home", "Photos", "Biography", "Blog", "Contact" are visible
-    And social icons (Facebook, Twitter, Instagram) are visible below the nav
+#### Scenario: Fixed sidebar header renders
 
-  Scenario: Sidebar active link highlights in pink
-    Given the user scrolls to the Photos section
-    Then the "Photos" nav link in the sidebar is highlighted in pink (#df0e62)
+- **GIVEN** the user is on a desktop viewport
+- **THEN** a fixed left sidebar (250px wide) with black background is visible
+- **AND** the logo "Elit Photo" is displayed in white uppercase text
+- **AND** navigation links "Home", "Photos", "Biography", "Blog", "Contact" are visible
+- **AND** social icons (Facebook, Twitter, Instagram) are visible below the nav
 
-  Scenario: Mobile offcanvas menu works
-    Given the user is on a mobile viewport
-    When the user clicks the hamburger menu icon
-    Then an offcanvas menu slides in from the right
-    And navigation links and social links are visible in the menu
+#### Scenario: Sidebar active link highlights in pink
 
-  Scenario: Hero displays with parallax
-    Given the hero section is in the viewport
-    Then a full-screen parallax background image with dark overlay is visible
-    And the heading "Welcome" is displayed in large uppercase text
-    And a "Contact Me" pill-shaped pink button is visible
+- **GIVEN** the user scrolls to the Photos section
+- **THEN** the "Photos" nav link in the sidebar is highlighted in pink (#df0e62)
 
-  Scenario: Photos gallery shows 9 items
-    Given the photos section is scrolled into view
-    Then 9 photo items are displayed in a 3-column grid
-    And each photo has a hover overlay with search icon
-    And clicking a photo opens a lightbox
+#### Scenario: Mobile offcanvas menu works
 
-  Scenario: Testimonials carousel works
-    Given the testimonial section is scrolled into view
-    Then the heading "Testimonial" is visible
-    And a carousel with at least one testimonial is shown
-    And each testimonial has a circular photo, name, and quote
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** an offcanvas menu slides in from the right
+- **AND** navigation links and social links are visible in the menu
 
-  Scenario: Biography section renders
-    Given the biography section is scrolled into view
-    Then the heading "Biography" is visible on dark background
-    And a pink accent bar is visible at the top-left
-    And a photo and text content are displayed side by side
-    And a checklist with green checkmarks is visible
+#### Scenario: Hero displays with parallax
 
-  Scenario: Blog section shows posts
-    Given the blog section is scrolled into view
-    Then the heading "Blog" is visible
-    And 4 blog post entries are displayed in a list
-    And each entry has an image, title, meta, and excerpt
-    And pagination numbers are visible at the bottom
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-screen parallax background image with dark overlay is visible
+- **AND** the heading "Welcome" is displayed in large uppercase text
+- **AND** a "Contact Me" pill-shaped pink button is visible
 
-  Scenario: Contact form renders
-    Given the contact section is scrolled into view
-    Then the heading "Contact" is visible on dark background
-    And a form with First Name, Last Name, Email, Subject, and Message fields is displayed
-    And a "Send Message" pink pill button is visible
+#### Scenario: Photos gallery shows 9 items
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then a copyright notice is displayed
-    And a link to "https://www.componentdock.com/" is present
+- **GIVEN** the photos section is scrolled into view
+- **THEN** 9 photo items are displayed in a 3-column grid
+- **AND** each photo has a hover overlay with search icon
+- **AND** clicking a photo opens a lightbox
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 992px)
-    Then the sidebar becomes a fixed top bar with hamburger
-    And the main content takes full width
-    And photo grid stacks to fewer columns
-```
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the testimonial section is scrolled into view
+- **THEN** the heading "Testimonial" is visible
+- **AND** a carousel with at least one testimonial is shown
+- **AND** each testimonial has a circular photo, name, and quote
+
+#### Scenario: Biography section renders
+
+- **GIVEN** the biography section is scrolled into view
+- **THEN** the heading "Biography" is visible on dark background
+- **AND** a pink accent bar is visible at the top-left
+- **AND** a photo and text content are displayed side by side
+- **AND** a checklist with green checkmarks is visible
+
+#### Scenario: Blog section shows posts
+
+- **GIVEN** the blog section is scrolled into view
+- **THEN** the heading "Blog" is visible
+- **AND** 4 blog post entries are displayed in a list
+- **AND** each entry has an image, title, meta, and excerpt
+- **AND** pagination numbers are visible at the bottom
+
+#### Scenario: Contact form renders
+
+- **GIVEN** the contact section is scrolled into view
+- **THEN** the heading "Contact" is visible on dark background
+- **AND** a form with First Name, Last Name, Email, Subject, and Message fields is displayed
+- **AND** a "Send Message" pink pill button is visible
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** a copyright notice is displayed
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 992px)
+- **THEN** the sidebar becomes a fixed top bar with hamburger
+- **AND** the main content takes full width
+- **AND** photo grid stacks to fewer columns
 
 ## Verification Checklist
 

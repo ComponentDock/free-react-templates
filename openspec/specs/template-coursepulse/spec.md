@@ -42,62 +42,70 @@ Recreation of ColorLib **WebUni** — a free education/online-courses landing pa
 7. **Banner/CTA** — "Join Our Community Now!" heading + subtitle + "Register Now" button, centered.
 8. **Footer** — Dark background. 5 widget columns: Contact Info, Engineering links, Graphic Design links, Development links, Newsletter (email + Subscribe). Bottom bar: Terms & Conditions / Register / Privacy links + copyright line.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: CoursePulse template behaviour
+
 Feature: CoursePulse — Education Landing Page
 
-  Background:
-    Given the user opens the CoursePulse homepage
+Background:
+- **GIVEN** the user opens the CoursePulse homepage
 
-  Scenario: Navbar displays logo and navigation links
-    Then the navbar shows the logo on the left
-    And the navbar contains links: Home, About Us, Courses, News, Contact
-    And the navbar shows a Login button
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Hero section renders with signup form
-    Then the hero displays the heading "Get The Best Free Online Courses"
-    And the hero shows a descriptive subtitle
-    And the hero contains a signup form with Name and Email inputs
-    And the signup form has a "Sign Up Now" button
+- **THEN** the navbar shows the logo on the left
+- **AND** the navbar contains links: Home, About Us, Courses, News, Contact
+- **AND** the navbar shows a Login button
 
-  Scenario: Categories section shows 6 course categories
-    Then the categories section displays "Our Course Categories" heading
-    And 6 category cards are visible in a 3-column grid
-    And each category card shows a thumbnail, title, description, and course count
-    When the user hovers over a category card
-    Then the card background changes to crimson and text turns white
+#### Scenario: Hero section renders with signup form
 
-  Scenario: Search section renders course search form
-    Then the search section has a crimson background
-    And the search form contains Course and Category inputs
-    And the search form has a "Search Course" button
+- **THEN** the hero displays the heading "Get The Best Free Online Courses"
+- **AND** the hero shows a descriptive subtitle
+- **AND** the hero contains a signup form with Name and Email inputs
+- **AND** the signup form has a "Sign Up Now" button
 
-  Scenario: Featured Courses section with filter tabs
-    Then the featured courses section shows "Featured Courses" heading
-    And filter tabs are visible: All, Finance, Design, Web Development, Photography
-    And 8 course cards are displayed in a 4-column grid
-    And each course card shows a thumbnail with price badge, title, description, student count, and author info
+#### Scenario: Categories section shows 6 course categories
 
-  Scenario: Signup section with teacher registration form
-    Then the signup section shows "Sign up to became a teacher" heading
-    And the signup form contains Name, Email, and Phone inputs
-    And the form has an Upload Course button and a submit button
-    And the right side of the signup section shows a background image
+- **THEN** the categories section displays "Our Course Categories" heading
+- **AND** 6 category cards are visible in a 3-column grid
+- **AND** each category card shows a thumbnail, title, description, and course count
+- **WHEN** the user hovers over a category card
+- **THEN** the card background changes to crimson and text turns white
 
-  Scenario: Banner CTA section
-    Then the banner section shows "Join Our Community Now!" heading
-    And a "Register Now" button is centered below the text
+#### Scenario: Search section renders course search form
 
-  Scenario: Footer with widgets and copyright
-    Then the footer displays 5 widget columns
-    And the footer contains a Contact Info section with address, phone, and email
-    And the footer contains link columns for Engineering, Graphic Design, and Development
-    And the footer contains a Newsletter form with email input and Subscribe button
-    And the footer bottom shows Terms & Conditions, Register, and Privacy links
-    And the footer bottom shows a copyright line
-    And the footer links to Component Dock
-```
+- **THEN** the search section has a crimson background
+- **AND** the search form contains Course and Category inputs
+- **AND** the search form has a "Search Course" button
+
+#### Scenario: Featured Courses section with filter tabs
+
+- **THEN** the featured courses section shows "Featured Courses" heading
+- **AND** filter tabs are visible: All, Finance, Design, Web Development, Photography
+- **AND** 8 course cards are displayed in a 4-column grid
+- **AND** each course card shows a thumbnail with price badge, title, description, student count, and author info
+
+#### Scenario: Signup section with teacher registration form
+
+- **THEN** the signup section shows "Sign up to became a teacher" heading
+- **AND** the signup form contains Name, Email, and Phone inputs
+- **AND** the form has an Upload Course button and a submit button
+- **AND** the right side of the signup section shows a background image
+
+#### Scenario: Banner CTA section
+
+- **THEN** the banner section shows "Join Our Community Now!" heading
+- **AND** a "Register Now" button is centered below the text
+
+#### Scenario: Footer with widgets and copyright
+
+- **THEN** the footer displays 5 widget columns
+- **AND** the footer contains a Contact Info section with address, phone, and email
+- **AND** the footer contains link columns for Engineering, Graphic Design, and Development
+- **AND** the footer contains a Newsletter form with email input and Subscribe button
+- **AND** the footer bottom shows Terms & Conditions, Register, and Privacy links
+- **AND** the footer bottom shows a copyright line
+- **AND** the footer links to Component Dock
 
 ## Verification Checklist
 

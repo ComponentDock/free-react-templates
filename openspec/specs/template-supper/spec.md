@@ -32,49 +32,59 @@ Supper is a restaurant template with a navbar, hero, feature cards, about band, 
 10. **Contact** — "Get In Touch" heading, form: Name, Email, Phone, Message, Submit button
 11. **Footer** — 3-column layout: About text + "Read More" btn, Service Hours (Lunch + Dinner), Social icons + Newsletter signup. Bottom: Component Dock link (mandatory)
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Supper template behaviour
+
 Feature: Supper — Restaurant Template
 
-  Background:
-    Given I am on the Supper homepage
+Background:
+- **GIVEN** I am on the Supper homepage
 
-  Scenario: Page loads with hero section
-    Then I should see the heading "Welcome to Supper"
-    And I should see a "Reserve A Table" button
+#### Scenario: Page loads with hero section
 
-  Scenario: Navbar shows all navigation links
-    Then I should see links for "Home", "About", "Menu", "Reserve A Table", "Contact"
+- **THEN** I should see the heading "Welcome to Supper"
+- **AND** I should see a "Reserve A Table" button
 
-  Scenario: Features section shows food items
-    Then I should see "Find your best food" heading
-    And I should see 3 food cards
+#### Scenario: Navbar shows all navigation links
 
-  Scenario: About section is visible
-    Then I should see "The Restaurant" heading
+- **THEN** I should see links for "Home", "About", "Menu", "Reserve A Table", "Contact"
 
-  Scenario: Chefs section shows chef profiles
-    Then I should see "Meet The Chefs" heading
-    And I should see 2 chef profiles
+#### Scenario: Features section shows food items
 
-  Scenario: Menu section displays items
-    Then I should see "Menu" heading
-    And I should see menu item entries
+- **THEN** I should see "Find your best food" heading
+- **AND** I should see 3 food cards
 
-  Scenario: Reservation form has all fields
-    Then I should see "Reservation" heading
-    And I should see form fields for Name, Email, Phone, Date, Time, Message
-    And I should see a persons dropdown
+#### Scenario: About section is visible
 
-  Scenario: Testimonials section shows reviews
-    Then I should see "Customer Reviews" heading
+- **THEN** I should see "The Restaurant" heading
 
-  Scenario: Contact form has required fields
-    Then I should see "Get In Touch" heading
-    And I should see form fields for Name, Email, Phone, Message
+#### Scenario: Chefs section shows chef profiles
 
-  Scenario: Footer links to Component Dock
-    Then I should see a link to "https://www.componentdock.com/"
-    And the link text should contain "Component Dock"
-```
+- **THEN** I should see "Meet The Chefs" heading
+- **AND** I should see 2 chef profiles
+
+#### Scenario: Menu section displays items
+
+- **THEN** I should see "Menu" heading
+- **AND** I should see menu item entries
+
+#### Scenario: Reservation form has all fields
+
+- **THEN** I should see "Reservation" heading
+- **AND** I should see form fields for Name, Email, Phone, Date, Time, Message
+- **AND** I should see a persons dropdown
+
+#### Scenario: Testimonials section shows reviews
+
+- **THEN** I should see "Customer Reviews" heading
+
+#### Scenario: Contact form has required fields
+
+- **THEN** I should see "Get In Touch" heading
+- **AND** I should see form fields for Name, Email, Phone, Message
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** I should see a link to "https://www.componentdock.com/"
+- **AND** the link text should contain "Component Dock"

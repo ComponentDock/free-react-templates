@@ -46,63 +46,70 @@ Recreation of the ColorLib **Portfolio** template (`portfolio`) as a React 19 + 
 6. **Testimonials** — Heading "How Our Customers Treat Us" + subtitle. 2x2 grid of review cards: avatar image, name, star rating (3/5 in original), review text.
 7. **Footer** — Dark navy (#04091e) background. Three columns: About Us (text + copyright), Newsletter (email input + arrow button), Follow Us (social icons: Facebook, Twitter, Dribbble, Behance).
 
-## Gherkin scenarios
+## Requirements
 
 ### Feature: Vitrine Portfolio Template
 
-```gherkin
-Scenario: Navbar renders with correct links
-  Given the Vitrine app is loaded
-  Then the navbar contains links for Home, Portfolio, Services, and Testimonial
-  And the logo is displayed on the left
+#### Scenario: Navbar renders with correct links
 
-Scenario: Hero banner displays with overlay
-  Given the Vitrine app is loaded
-  Then the hero section shows the heading "Let's Explore Idea!"
-  And the subtext "Now you can watch the Talent" is visible above the heading
-  And an "Explore Now" button is displayed with green background
-  And a dark overlay covers the background image
+- **GIVEN** the Vitrine app is loaded
+- **THEN** the navbar contains links for Home, Portfolio, Services, and Testimonial
+- **AND** the logo is displayed on the left
 
-Scenario: Portfolio grid renders 12 items
-  Given the Vitrine app is loaded
-  Then the portfolio section displays 12 portfolio items in a grid
-  And each item shows an image, a title, and a category label
+#### Scenario: Hero banner displays with overlay
 
-Scenario: Portfolio filter tabs are functional
-  Given the Vitrine app is loaded
-  When the user clicks the "Vector" filter
-  Then only Vector category items are visible
-  When the user clicks "All"
-  Then all portfolio items are visible again
+- **GIVEN** the Vitrine app is loaded
+- **THEN** the hero section shows the heading "Let's Explore Idea!"
+- **AND** the subtext "Now you can watch the Talent" is visible above the heading
+- **AND** an "Explore Now" button is displayed with green background
+- **AND** a dark overlay covers the background image
 
-Scenario: Service section header displays over dark overlay
-  Given the Vitrine app is loaded
-  Then the service header section has a dark overlay background
-  And the heading "This is what we can do for you" is visible in white
+#### Scenario: Portfolio grid renders 12 items
 
-Scenario: Service cards display in 3-column layout
-  Given the Vitrine app is loaded
-  Then three service cards are displayed: Vector Artworks, Corporate Identity, Art Direction Design
-  And each card has an icon, title, and description
+- **GIVEN** the Vitrine app is loaded
+- **THEN** the portfolio section displays 12 portfolio items in a grid
+- **AND** each item shows an image, a title, and a category label
 
-Scenario: Testimonials section displays review cards
-  Given the Vitrine app is loaded
-  Then four review cards are displayed in a 2-column grid
-  And each card shows an avatar, reviewer name, star rating, and review text
+#### Scenario: Portfolio filter tabs are functional
 
-Scenario: Footer has three columns
-  Given the Vitrine app is loaded
-  Then the footer shows an About Us section with description text
-  And a Newsletter section with an email input and submit button
-  And a Follow Us section with social media icons
-  And a "Made with Component Dock" link is present
+- **GIVEN** the Vitrine app is loaded
+- **WHEN** the user clicks the "Vector" filter
+- **THEN** only Vector category items are visible
+- **WHEN** the user clicks "All"
+- **THEN** all portfolio items are visible again
 
-Scenario: Responsive layout adapts to mobile
-  Given the Vitrine app is loaded on a mobile viewport
-  Then the navbar collapses into a hamburger menu
-  And portfolio items stack into a single column
-  And service cards stack vertically
-```
+#### Scenario: Service section header displays over dark overlay
+
+- **GIVEN** the Vitrine app is loaded
+- **THEN** the service header section has a dark overlay background
+- **AND** the heading "This is what we can do for you" is visible in white
+
+#### Scenario: Service cards display in 3-column layout
+
+- **GIVEN** the Vitrine app is loaded
+- **THEN** three service cards are displayed: Vector Artworks, Corporate Identity, Art Direction Design
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Testimonials section displays review cards
+
+- **GIVEN** the Vitrine app is loaded
+- **THEN** four review cards are displayed in a 2-column grid
+- **AND** each card shows an avatar, reviewer name, star rating, and review text
+
+#### Scenario: Footer has three columns
+
+- **GIVEN** the Vitrine app is loaded
+- **THEN** the footer shows an About Us section with description text
+- **AND** a Newsletter section with an email input and submit button
+- **AND** a Follow Us section with social media icons
+- **AND** a "Made with Component Dock" link is present
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the Vitrine app is loaded on a mobile viewport
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** portfolio items stack into a single column
+- **AND** service cards stack vertically
 
 ## Verification checklist
 

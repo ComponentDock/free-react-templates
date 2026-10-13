@@ -33,93 +33,85 @@ Recreation of ColorLib's **Steak** template as a React 19 + Vite + Tailwind 4 + 
 | Footer             | Dark background, white text              | 4-column layout with social links              |
 | Map height         | `680px` (desktop), offset by `-15em` margin-top | Google Maps embed section              |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Hero section renders with parallax background
-```gherkin
-Given the user visits the Smokehouse homepage
-Then a full-screen hero section is visible
-And the heading reads "Welcome To Smokehouse Food & Restaurant"
-And a "Play Video" button is visible in the hero
-And a scroll-down mouse indicator is shown at the bottom
-```
+### Feature: Smokehouse template behaviour
 
-### Scenario: Header navigation is sticky
-```gherkin
-Given the user scrolls past the hero
-Then the header becomes fixed at the top with a white background
-And the logo text switches from white to black
-```
+#### Scenario: Hero section renders with parallax background
 
-### Scenario: About section displays with image and text
-```gherkin
-Given the user scrolls to the About section
-Then an about image is displayed on the left
-And the heading "Welcome To Smokehouse Food & Restaurant" is shown on the right
-And two paragraphs of descriptive text are shown
-And a "Read More" button is visible
-```
+- **GIVEN** the user visits the Smokehouse homepage
+- **THEN** a full-screen hero section is visible
+- **AND** the heading reads "Welcome To Smokehouse Food & Restaurant"
+- **AND** a "Play Video" button is visible in the hero
+- **AND** a scroll-down mouse indicator is shown at the bottom
 
-### Scenario: Services section shows 6 food service items
-```gherkin
-Given the user scrolls to the Services section
-Then the heading "Restaurant Services" is visible
-And 6 service items are displayed in a 3-column grid
-And each service item has an icon, title, and description
-And the service titles are: Noodles & Spaguetti, Big Hamburger, Chicken Leg, Vegetarian Food, Fried Chicken, Beef Steak & Rib
-```
+#### Scenario: Header navigation is sticky
 
-### Scenario: Menu section has tabbed content
-```gherkin
-Given the user scrolls to the Menu section
-Then the heading "Our Menu" is visible
-And 3 tabs are shown: Breakfast, Lunch, Dinner
-And Breakfast tab is active by default
-And each tab shows 6 menu items in a 2-column layout
-And each menu item has a circular image, title, description, and price
-```
+- **GIVEN** the user scrolls past the hero
+- **THEN** the header becomes fixed at the top with a white background
+- **AND** the logo text switches from white to black
 
-### Scenario: Counter section shows fun facts
-```gherkin
-Given the user scrolls to the Counter section
-Then the heading "Today's Fun Facts" is visible
-And 3 counters are displayed: Noodles Sold (124), Burgers Sold (200), Chicken Sold (234)
-And each counter has an icon and an uppercase label
-```
+#### Scenario: About section displays with image and text
 
-### Scenario: News & Events section displays blog cards
-```gherkin
-Given the user scrolls to the News & Events section
-Then the heading "News & Events" is visible
-And 4 thumbnail cards are displayed in an asymmetric grid
-And each card has a background image, title, and date metadata
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** an about image is displayed on the left
+- **AND** the heading "Welcome To Smokehouse Food & Restaurant" is shown on the right
+- **AND** two paragraphs of descriptive text are shown
+- **AND** a "Read More" button is visible
 
-### Scenario: Testimonials section shows customer quotes
-```gherkin
-Given the user scrolls to the Testimonials section
-Then a carousel of testimonials is displayed
-And each testimonial has a quote, author name, position, and circular avatar
-And a large quotation mark decorative element is shown
-```
+#### Scenario: Services section shows 6 food service items
 
-### Scenario: Reservation section has a form
-```gherkin
-Given the user scrolls to the Reservation section
-Then the heading "Reserve A Table" is visible
-And a Time Open panel is displayed with a black background showing hours
-And a reservation form is shown with fields: party size, date, time, name, phone, email
-And a "Reserve Now" submit button is visible
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the heading "Restaurant Services" is visible
+- **AND** 6 service items are displayed in a 3-column grid
+- **AND** each service item has an icon, title, and description
+- **AND** the service titles are: Noodles & Spaguetti, Big Hamburger, Chicken Leg, Vegetarian Food, Fried Chicken, Beef Steak & Rib
 
-### Scenario: Footer contains site links and social icons
-```gherkin
-Given the user scrolls to the Footer
-Then an "About Smokehouse Restaurant" widget is shown
-And Quick Links, Support, About Us, Connect With Us columns are displayed
-And social media icons are visible for Facebook, Twitter, Instagram, YouTube
-And a copyright line with "Made with Component Dock" attribution links to https://www.componentdock.com/
-```
+#### Scenario: Menu section has tabbed content
+
+- **GIVEN** the user scrolls to the Menu section
+- **THEN** the heading "Our Menu" is visible
+- **AND** 3 tabs are shown: Breakfast, Lunch, Dinner
+- **AND** Breakfast tab is active by default
+- **AND** each tab shows 6 menu items in a 2-column layout
+- **AND** each menu item has a circular image, title, description, and price
+
+#### Scenario: Counter section shows fun facts
+
+- **GIVEN** the user scrolls to the Counter section
+- **THEN** the heading "Today's Fun Facts" is visible
+- **AND** 3 counters are displayed: Noodles Sold (124), Burgers Sold (200), Chicken Sold (234)
+- **AND** each counter has an icon and an uppercase label
+
+#### Scenario: News & Events section displays blog cards
+
+- **GIVEN** the user scrolls to the News & Events section
+- **THEN** the heading "News & Events" is visible
+- **AND** 4 thumbnail cards are displayed in an asymmetric grid
+- **AND** each card has a background image, title, and date metadata
+
+#### Scenario: Testimonials section shows customer quotes
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a carousel of testimonials is displayed
+- **AND** each testimonial has a quote, author name, position, and circular avatar
+- **AND** a large quotation mark decorative element is shown
+
+#### Scenario: Reservation section has a form
+
+- **GIVEN** the user scrolls to the Reservation section
+- **THEN** the heading "Reserve A Table" is visible
+- **AND** a Time Open panel is displayed with a black background showing hours
+- **AND** a reservation form is shown with fields: party size, date, time, name, phone, email
+- **AND** a "Reserve Now" submit button is visible
+
+#### Scenario: Footer contains site links and social icons
+
+- **GIVEN** the user scrolls to the Footer
+- **THEN** an "About Smokehouse Restaurant" widget is shown
+- **AND** Quick Links, Support, About Us, Connect With Us columns are displayed
+- **AND** social media icons are visible for Facebook, Twitter, Instagram, YouTube
+- **AND** a copyright line with "Made with Component Dock" attribution links to https://www.componentdock.com/
 
 ## Verification checklist
 

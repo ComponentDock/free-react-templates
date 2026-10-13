@@ -40,36 +40,39 @@ and sections for events, sermons, donations, and blog posts.
 
 ### Gherkin Scenarios
 
-```gherkin
 Feature: Creed church website template
 
-  Scenario: Page loads with all sections
-    Given I visit the Creed template
-    Then I should see the navbar with logo and navigation links
-    And I should see the hero section with event information
-    And I should see the "Visitors Info" CTA section
-    And I should see the about section with scripture quote
-    And I should see the church activities section
-    And I should see the donate section
-    And I should see the blog section
-    And I should see the footer with contact info
+#### Scenario: Page loads with all sections
 
-  Scenario: Navigation contains required links
-    Given I visit the Creed template
-    Then the navbar should contain links for Home, Ministries, Sermons, Blog, Contact
-    And there should be a "Send Donations" button
+- **GIVEN** I visit the Creed template
+- **THEN** I should see the navbar with logo and navigation links
+- **AND** I should see the hero section with event information
+- **AND** I should see the "Visitors Info" CTA section
+- **AND** I should see the about section with scripture quote
+- **AND** I should see the church activities section
+- **AND** I should see the donate section
+- **AND** I should see the blog section
+- **AND** I should see the footer with contact info
 
-  Scenario: Hero section displays event info
-    Given I visit the Creed template
-    Then the hero should show a headline about faith
-    And it should show a worship time
+#### Scenario: Navigation contains required links
 
-  Scenario: Footer links to Component Dock
-    Given I visit the Creed template
-    Then the footer should contain a link to https://www.componentdock.com/
-    And the link text should mention "Component Dock"
+- **GIVEN** I visit the Creed template
+- **THEN** the navbar should contain links for Home, Ministries, Sermons, Blog, Contact
+- **AND** there should be a "Send Donations" button
 
-  Scenario: Document title is set
-    Given I visit the Creed template
-    Then the document title should contain "Creed"
-```
+#### Scenario: Hero section displays event info
+
+- **GIVEN** I visit the Creed template
+- **THEN** the hero should show a headline about faith
+- **AND** it should show a worship time
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Creed template
+- **THEN** the footer should contain a link to https://www.componentdock.com/
+- **AND** the link text should mention "Component Dock"
+
+#### Scenario: Document title is set
+
+- **GIVEN** I visit the Creed template
+- **THEN** the document title should contain "Creed"

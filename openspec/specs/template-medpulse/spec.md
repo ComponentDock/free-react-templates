@@ -45,137 +45,139 @@ Recreation of the ColorLib **Medex** template as a single-page React 19 + Vite +
 12. **Testimonials** — Parallax background with blue overlay; testimonial carousel: avatar, name, quote text, star rating
 13. **Footer** — Dark background; 5 columns: Brand logo + social, Departments list, Links list, Services list, Contact info (address, phone, email) + newsletter form; bottom bar: copyright + "Made with Component Dock"
 
-## Gherkin requirements
+## Requirements
 
 ### TopBar
-```gherkin
-Scenario: Top bar displays contact info and social links
-  Given the user loads the page
-  Then a top bar shows the email address
-  And social media icons for Facebook, Twitter, Instagram, Dribbble are visible
-  And a "Book An Appointment" button is displayed with pill shape
-```
+
+#### Scenario: Top bar displays contact info and social links
+
+- **GIVEN** the user loads the page
+- **THEN** a top bar shows the email address
+- **AND** social media icons for Facebook, Twitter, Instagram, Dribbble are visible
+- **AND** a "Book An Appointment" button is displayed with pill shape
 
 ### Header
-```gherkin
-Scenario: Header shows brand logo, phone, and location
-  Given the user loads the page
-  Then the brand logo and name are displayed
-  And a phone number "+1 234 456 78910" is shown
-  And a physical address is shown
-```
+
+#### Scenario: Header shows brand logo, phone, and location
+
+- **GIVEN** the user loads the page
+- **THEN** the brand logo and name are displayed
+- **AND** a phone number "+1 234 456 78910" is shown
+- **AND** a physical address is shown
 
 ### Navbar
-```gherkin
-Scenario: Navigation bar is visible with all links
-  Given the user loads the page
-  Then a blue navbar is displayed
-  And navigation links for Home, About, Services, Doctors, Departments, Pricing, Gallery, Blog, Contact are visible
-  And the active link is highlighted
 
-Scenario: Navbar toggles on mobile
-  Given the viewport is less than 992px wide
-  Then a hamburger menu button is displayed
-  And clicking it expands the navigation links vertically
-```
+#### Scenario: Navigation bar is visible with all links
+
+- **GIVEN** the user loads the page
+- **THEN** a blue navbar is displayed
+- **AND** navigation links for Home, About, Services, Doctors, Departments, Pricing, Gallery, Blog, Contact are visible
+- **AND** the active link is highlighted
+
+#### Scenario: Navbar toggles on mobile
+
+- **GIVEN** the viewport is less than 992px wide
+- **THEN** a hamburger menu button is displayed
+- **AND** clicking it expands the navigation links vertically
 
 ### Hero
-```gherkin
-Scenario: Hero section shows headline and appointment form
-  Given the user loads the page
-  Then a full-width hero with background image and dark overlay is displayed
-  And the headline "The Most Valuable Thing is Your Health" is visible
-  And a department dropdown is shown
-  And a "Book Appointment" green pill button is visible
-```
+
+#### Scenario: Hero section shows headline and appointment form
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero with background image and dark overlay is displayed
+- **AND** the headline "The Most Valuable Thing is Your Health" is visible
+- **AND** a department dropdown is shown
+- **AND** a "Book Appointment" green pill button is visible
 
 ### Welcome/Services
-```gherkin
-Scenario: Welcome section shows services and appointment form
-  Given the user scrolls to the welcome section
-  Then a "Welcome to [Brand]" heading is displayed
-  And 4 service cards are shown: Emergency Help, Qualified Doctors, Location & Directions, Medical Treatment
-  And each service card has an icon, title, and description
-  And an appointment form with First Name, Last Name, Service dropdown, Phone, Date, Time, Message fields is visible
-  And the "Appointment" button is green
-```
+
+#### Scenario: Welcome section shows services and appointment form
+
+- **GIVEN** the user scrolls to the welcome section
+- **THEN** a "Welcome to [Brand]" heading is displayed
+- **AND** 4 service cards are shown: Emergency Help, Qualified Doctors, Location & Directions, Medical Treatment
+- **AND** each service card has an icon, title, and description
+- **AND** an appointment form with First Name, Last Name, Service dropdown, Phone, Date, Time, Message fields is visible
+- **AND** the "Appointment" button is green
 
 ### About/Counter
-```gherkin
-Scenario: About section shows brand info and CTAs
-  Given the user scrolls to the about section
-  Then a background image is displayed on the left
-  And a heading "We Are [Brand] A Healthcare Provider" is shown on the right
-  And two CTA buttons are visible: primary (blue) and secondary (green)
-```
+
+#### Scenario: About section shows brand info and CTAs
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a background image is displayed on the left
+- **AND** a heading "We Are [Brand] A Healthcare Provider" is shown on the right
+- **AND** two CTA buttons are visible: primary (blue) and secondary (green)
 
 ### Intro Banner
-```gherkin
-Scenario: Intro banner shows call to action
-  Given the user scrolls to the intro banner
-  Then a parallax background with blue overlay is displayed
-  And the heading "Your Health is Our Priority" is visible
-  And a white pill CTA button "Make An Appointment" is shown
-```
+
+#### Scenario: Intro banner shows call to action
+
+- **GIVEN** the user scrolls to the intro banner
+- **THEN** a parallax background with blue overlay is displayed
+- **AND** the heading "Your Health is Our Priority" is visible
+- **AND** a white pill CTA button "Make An Appointment" is shown
 
 ### Departments
-```gherkin
-Scenario: Departments section shows tabbed content
-  Given the user scrolls to the departments section
-  Then a heading "[Brand] Department" is centered
-  And tabbed navigation shows: Neurology, Cardiology, X-Ray, Dental, Ophthalmology, Other Services
-  And clicking a tab shows that department's content with background image
 
-Scenario: Default tab is Neurology
-  Given the departments section is visible
-  Then the Neurology tab is active by default
-  And its content is displayed
-```
+#### Scenario: Departments section shows tabbed content
+
+- **GIVEN** the user scrolls to the departments section
+- **THEN** a heading "[Brand] Department" is centered
+- **AND** tabbed navigation shows: Neurology, Cardiology, X-Ray, Dental, Ophthalmology, Other Services
+- **AND** clicking a tab shows that department's content with background image
+
+#### Scenario: Default tab is Neurology
+
+- **GIVEN** the departments section is visible
+- **THEN** the Neurology tab is active by default
+- **AND** its content is displayed
 
 ### Doctors
-```gherkin
-Scenario: Doctors section shows doctor cards
-  Given the user scrolls to the doctors section
-  Then 4 doctor cards are displayed in a row
-  And each card shows a photo, doctor name, and specialty
-  And each card has social media icons (Twitter, Facebook, Google, Instagram)
-```
+
+#### Scenario: Doctors section shows doctor cards
+
+- **GIVEN** the user scrolls to the doctors section
+- **THEN** 4 doctor cards are displayed in a row
+- **AND** each card shows a photo, doctor name, and specialty
+- **AND** each card has social media icons (Twitter, Facebook, Google, Instagram)
 
 ### Facts/Stats
-```gherkin
-Scenario: Facts section shows statistics
-  Given the user scrolls to the facts section
-  Then 4 stat counters are displayed: Happy Patients, Medical Specialist, Health Insurance, Award Won
-  And the section has a parallax background with green overlay
-```
+
+#### Scenario: Facts section shows statistics
+
+- **GIVEN** the user scrolls to the facts section
+- **THEN** 4 stat counters are displayed: Happy Patients, Medical Specialist, Health Insurance, Award Won
+- **AND** the section has a parallax background with green overlay
 
 ### Blog
-```gherkin
-Scenario: Blog section shows recent posts
-  Given the user scrolls to the blog section
-  Then 3 blog post cards are displayed
-  And each card shows a featured image, date, title, excerpt, and "Read more" link
-```
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed
+- **AND** each card shows a featured image, date, title, excerpt, and "Read more" link
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials section shows reviews
-  Given the user scrolls to the testimonials section
-  Then a testimonial carousel is displayed
-  And each testimonial shows an avatar, name, quote, and star rating
-  And the section has a parallax background with blue overlay
-```
+
+#### Scenario: Testimonials section shows reviews
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial carousel is displayed
+- **AND** each testimonial shows an avatar, name, quote, and star rating
+- **AND** the section has a parallax background with blue overlay
 
 ### Footer
-```gherkin
-Scenario: Footer shows brand info and links
-  Given the user scrolls to the footer
-  Then the brand logo and description are displayed
-  And columns for Departments, Links, Services, and Contact info are shown
-  And a newsletter email input is visible
-  And social media icons are displayed
-  And the bottom bar contains copyright text and "Made with Component Dock"
-```
+
+#### Scenario: Footer shows brand info and links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the brand logo and description are displayed
+- **AND** columns for Departments, Links, Services, and Contact info are shown
+- **AND** a newsletter email input is visible
+- **AND** social media icons are displayed
+- **AND** the bottom bar contains copyright text and "Made with Component Dock"
 
 ## Verification checklist
 

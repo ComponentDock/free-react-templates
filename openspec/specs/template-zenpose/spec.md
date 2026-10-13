@@ -94,98 +94,112 @@ CSS 4 + TypeScript.
     (address, phone, email), Quick Links (About, Terms, Disclaimers, Contact).
     Copyright bar at bottom with "Made with Component Dock" link.
 
-## Gherkin requirements
+## Requirements
+
+### Feature: Zenpose template behaviour
 
 Feature: Zenpose Yoga Studio Template
   As a visitor to the Zenpose yoga studio website
   I want to see a professional yoga studio landing page
   So that I can learn about classes and get in touch
 
-  Scenario: Header navigation
-    Given the page has loaded
-    Then the header displays the "Zenpose" brand on the left
-    And the navigation links "Home", "About", "Classes", "Blog", "Contact" are visible
-    And the navbar has a dark background with white text
-    And on mobile the hamburger menu toggle is visible
+#### Scenario: Header navigation
 
-  Scenario: Hero section
-    Given the page has loaded
-    Then a full-width hero background image is displayed
-    And the heading "Lose Yourself In Ambience & Atmosphere" is centered
-    And a circular white play button is visible
-    And the text "Watch Video" appears below the play button
+- **GIVEN** the page has loaded
+- **THEN** the header displays the "Zenpose" brand on the left
+- **AND** the navigation links "Home", "About", "Classes", "Blog", "Contact" are visible
+- **AND** the navbar has a dark background with white text
+- **AND** on mobile the hamburger menu toggle is visible
 
-  Scenario: Features section
-    Given I scroll to the features section
-    Then a 3-column layout is displayed
-    And four feature cards are shown: Chakra, Lotus, Chakra 2, Yoga
-    And each card has an icon, title, and description
-    And a center image is displayed between the feature columns
-    And feature cards have a light gray (#f8f9fa) background
+#### Scenario: Hero section
 
-  Scenario: About section 1
-    Given I scroll to the first about section
-    Then the heading "Do Yoga Today For Better Tomorrow" is displayed
-    And a descriptive paragraph is shown
-    And a "Read More" link with arrow icon is visible
-    And an image with frame border is displayed on the right
+- **GIVEN** the page has loaded
+- **THEN** a full-width hero background image is displayed
+- **AND** the heading "Lose Yourself In Ambience & Atmosphere" is centered
+- **AND** a circular white play button is visible
+- **AND** the text "Watch Video" appears below the play button
 
-  Scenario: About section 2
-    Given I scroll to the second about section
-    Then the section has a light gray background
-    And the heading "Perfect Yoga Style" is displayed
-    And an image is displayed on the left
-    And a "Read More" link with arrow icon is visible
+#### Scenario: Features section
 
-  Scenario: Yoga classes section
-    Given I scroll to the yoga classes section
-    Then the heading "Yoga Classes" is centered
-    And a subtitle paragraph is displayed
-    And a 2x3 grid of 6 class thumbnail cards is shown
-    And each card has a title: Yoga Barre, Yoga Core, Yoga For Health, Yoga For Beginners, Yoga for All, Yoga Restore
-    And each card has an overlay icon and background image
-    And hovering a card reveals the full image
+- **GIVEN** I scroll to the features section
+- **THEN** a 3-column layout is displayed
+- **AND** four feature cards are shown: Chakra, Lotus, Chakra 2, Yoga
+- **AND** each card has an icon, title, and description
+- **AND** a center image is displayed between the feature columns
+- **AND** feature cards have a light gray (#f8f9fa) background
 
-  Scenario: Testimonials section
-    Given I scroll to the testimonials section
-    Then the heading "Testimonial" is centered
-    And a carousel of testimonial cards is displayed
-    And each card shows an avatar image, name, role, and blockquote
-    And the carousel auto-loops through testimonials
+#### Scenario: About section 1
 
-  Scenario: CTA band
-    Given I scroll to the CTA band
-    Then the section has an olive green (#71774b) background
-    And three columns are displayed: Chat With Us, Happy Customers, Fast Support
-    And each column has an icon, heading, and description in white text
+- **GIVEN** I scroll to the first about section
+- **THEN** the heading "Do Yoga Today For Better Tomorrow" is displayed
+- **AND** a descriptive paragraph is shown
+- **AND** a "Read More" link with arrow icon is visible
+- **AND** an image with frame border is displayed on the right
 
-  Scenario: Blog section
-    Given I scroll to the blog section
-    Then the heading "Our Blog" is centered
-    And a subtitle paragraph is displayed
-    And two blog post cards are shown in a 2-column layout
-    And each card has a thumbnail, date, title, excerpt, and readmore link
+#### Scenario: About section 2
 
-  Scenario: Subscribe section
-    Given I scroll to the subscribe section
-    Then the heading "Subscribe" is centered
-    And an email input field is displayed
-    And a "Subscribe" button is visible and clickable
+- **GIVEN** I scroll to the second about section
+- **THEN** the section has a light gray background
+- **AND** the heading "Perfect Yoga Style" is displayed
+- **AND** an image is displayed on the left
+- **AND** a "Read More" link with arrow icon is visible
 
-  Scenario: Footer
-    Given I scroll to the footer
-    Then an About section with description and social icons is displayed
-    And contact information (address, phone, email) is shown
-    And quick links (About, Terms, Disclaimers, Contact) are listed
-    And the copyright bar contains a link to Component Dock
+#### Scenario: Yoga classes section
 
-  Scenario: Responsive layout
-    Given the viewport width is less than 768px
-    Then the navigation collapses to a hamburger menu
-    And feature cards stack vertically
-    And the 2x3 class grid becomes a single column
-    And the footer columns stack vertically
-    And all sections remain readable and accessible
+- **GIVEN** I scroll to the yoga classes section
+- **THEN** the heading "Yoga Classes" is centered
+- **AND** a subtitle paragraph is displayed
+- **AND** a 2x3 grid of 6 class thumbnail cards is shown
+- **AND** each card has a title: Yoga Barre, Yoga Core, Yoga For Health, Yoga For Beginners, Yoga for All, Yoga Restore
+- **AND** each card has an overlay icon and background image
+- **AND** hovering a card reveals the full image
+
+#### Scenario: Testimonials section
+
+- **GIVEN** I scroll to the testimonials section
+- **THEN** the heading "Testimonial" is centered
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows an avatar image, name, role, and blockquote
+- **AND** the carousel auto-loops through testimonials
+
+#### Scenario: CTA band
+
+- **GIVEN** I scroll to the CTA band
+- **THEN** the section has an olive green (#71774b) background
+- **AND** three columns are displayed: Chat With Us, Happy Customers, Fast Support
+- **AND** each column has an icon, heading, and description in white text
+
+#### Scenario: Blog section
+
+- **GIVEN** I scroll to the blog section
+- **THEN** the heading "Our Blog" is centered
+- **AND** a subtitle paragraph is displayed
+- **AND** two blog post cards are shown in a 2-column layout
+- **AND** each card has a thumbnail, date, title, excerpt, and readmore link
+
+#### Scenario: Subscribe section
+
+- **GIVEN** I scroll to the subscribe section
+- **THEN** the heading "Subscribe" is centered
+- **AND** an email input field is displayed
+- **AND** a "Subscribe" button is visible and clickable
+
+#### Scenario: Footer
+
+- **GIVEN** I scroll to the footer
+- **THEN** an About section with description and social icons is displayed
+- **AND** contact information (address, phone, email) is shown
+- **AND** quick links (About, Terms, Disclaimers, Contact) are listed
+- **AND** the copyright bar contains a link to Component Dock
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** feature cards stack vertically
+- **AND** the 2x3 class grid becomes a single column
+- **AND** the footer columns stack vertically
+- **AND** all sections remain readable and accessible
 
 ## Verification checklist
 

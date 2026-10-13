@@ -42,45 +42,75 @@ Recreation of the ColorLib **Inds** template as a React 19 + Vite + Tailwind CSS
 10. **Footer** — Dark background, 4 columns: About Us blurb, Contact Info (address, phone, gallery link), Important Links, Newsletter (email input + submit)
 11. **Footer Bottom** — Copyright + social icons
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-- GIVEN the page loads, WHEN the user sees the header, THEN a top info bar shows phone number, email, and business hours
-- GIVEN the page loads, WHEN the user sees the nav, THEN a sticky navigation bar displays logo, 5 menu items (Home, About, Industries, Works, Blog), and a "Get A Quote" button
-- GIVEN the user scrolls down, WHEN the nav leaves the viewport, THEN the nav sticks to the top of the page
+
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, WHEN the user sees the header, THEN a top info bar shows phone number, email, and business hours
+- **GIVEN** the page loads, WHEN the user sees the nav, THEN a sticky navigation bar displays logo, 5 menu items (Home, About, Industries, Works, Blog), and a "Get A Quote" button
+- **GIVEN** the user scrolls down, WHEN the nav leaves the viewport, THEN the nav sticks to the top of the page
 
 ### Hero Slider
-- GIVEN the page loads, WHEN the hero section renders, THEN a carousel displays with heading "Industrial Solutions!", subtitle text, and "Our Services" button
-- GIVEN the hero loads, WHEN the CTA button renders, THEN it has a dark navy background with an orange offset box-shadow
+
+#### Scenario: Hero Slider
+
+- **GIVEN** the page loads, WHEN the hero section renders, THEN a carousel displays with heading "Industrial Solutions!", subtitle text, and "Our Services" button
+- **GIVEN** the hero loads, WHEN the CTA button renders, THEN it has a dark navy background with an orange offset box-shadow
 
 ### Services
-- GIVEN the services section loads, WHEN the user sees it, THEN 3 service cards are displayed in a row: Automotive Manufacturing, Heavy Industry Market, Industry Analysis
-- GIVEN a service card renders, WHEN the user hovers over it, THEN the card background transitions from #fafafa to white
+
+#### Scenario: Services
+
+- **GIVEN** the services section loads, WHEN the user sees it, THEN 3 service cards are displayed in a row: Automotive Manufacturing, Heavy Industry Market, Industry Analysis
+- **GIVEN** a service card renders, WHEN the user hovers over it, THEN the card background transitions from #fafafa to white
 
 ### About
-- GIVEN the about section loads, WHEN the user sees it, THEN a split layout shows heading + paragraphs + button on left and an image + numbered mission badges on right
+
+#### Scenario: About
+
+- **GIVEN** the about section loads, WHEN the user sees it, THEN a split layout shows heading + paragraphs + button on left and an image + numbered mission badges on right
 
 ### Gallery
-- GIVEN the gallery section loads, WHEN the user sees it, THEN 4 project items are displayed in a grid with numbered labels, titles, descriptions, and "Read more" links
-- GIVEN a gallery item renders, WHEN the user hovers over it, THEN an orange overlay fades in covering the image
+
+#### Scenario: Gallery
+
+- **GIVEN** the gallery section loads, WHEN the user sees it, THEN 4 project items are displayed in a grid with numbered labels, titles, descriptions, and "Read more" links
+- **GIVEN** a gallery item renders, WHEN the user hovers over it, THEN an orange overlay fades in covering the image
 
 ### Team
-- GIVEN the team section loads, WHEN the user sees it, THEN 4 team member cards display with photos, names, and roles
-- GIVEN the team section renders, WHEN the user sees the heading area, THEN a "Contact Us" button appears below the subtitle
+
+#### Scenario: Team
+
+- **GIVEN** the team section loads, WHEN the user sees it, THEN 4 team member cards display with photos, names, and roles
+- **GIVEN** the team section renders, WHEN the user sees the heading area, THEN a "Contact Us" button appears below the subtitle
 
 ### Testimonial
-- GIVEN the testimonial section loads, WHEN the user sees it, THEN a slider shows a quote with avatar and attribution on a dark background
+
+#### Scenario: Testimonial
+
+- **GIVEN** the testimonial section loads, WHEN the user sees it, THEN a slider shows a quote with avatar and attribution on a dark background
 
 ### Blog
-- GIVEN the blog section loads, WHEN the user sees it, THEN 2 blog post cards display with category, date, title, and "Read more" button
+
+#### Scenario: Blog
+
+- **GIVEN** the blog section loads, WHEN the user sees it, THEN 2 blog post cards display with category, date, title, and "Read more" button
 
 ### CTA Banner
-- GIVEN the CTA section loads, WHEN the user sees it, THEN a full-width orange banner displays "Want To Work With Us?" heading and a "Let's Work Together" white button
+
+#### Scenario: CTA Banner
+
+- **GIVEN** the CTA section loads, WHEN the user sees it, THEN a full-width orange banner displays "Want To Work With Us?" heading and a "Let's Work Together" white button
 
 ### Footer
-- GIVEN the footer loads, WHEN the user sees it, THEN 4 columns appear: About Us, Contact Info, Important Links, Newsletter
-- GIVEN the newsletter renders, WHEN the user sees it, THEN an email input and submit button are displayed
-- GIVEN the footer bottom renders, WHEN the user sees it, THEN a copyright line and social media icons are shown, with a link to https://www.componentdock.com/
+
+#### Scenario: Footer
+
+- **GIVEN** the footer loads, WHEN the user sees it, THEN 4 columns appear: About Us, Contact Info, Important Links, Newsletter
+- **GIVEN** the newsletter renders, WHEN the user sees it, THEN an email input and submit button are displayed
+- **GIVEN** the footer bottom renders, WHEN the user sees it, THEN a copyright line and social media icons are shown, with a link to https://www.componentdock.com/
 
 ## Verification Checklist
 

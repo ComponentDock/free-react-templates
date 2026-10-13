@@ -74,102 +74,82 @@ Recreation of ColorLib BBS — a small company website template with a purple gr
 8. **Newsletter** — "Subscribe Newsletter" heading + email input with "Get Started" button
 9. **Footer** — Dark background, nav links, social icons (Facebook, Twitter, Dribbble, Behance), copyright
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with correct heading
+### Feature: CreativeWave template behaviour
 
-```gherkin
-Given the user loads the CreativeWave page
-Then the hero heading "we're Creative" is visible
-And the heading is styled with large bold text
-```
+#### Scenario: Page renders with correct heading
 
-### Scenario: Navbar displays navigation links
+- **GIVEN** the user loads the CreativeWave page
+- **THEN** the hero heading "we're Creative" is visible
+- **AND** the heading is styled with large bold text
 
-```gherkin
-Given the user loads the CreativeWave page
-Then the navigation bar is visible at the top
-And it contains links: Home, Generic, Elements
-```
+#### Scenario: Navbar displays navigation links
 
-### Scenario: Features section shows four feature cards
+- **GIVEN** the user loads the CreativeWave page
+- **THEN** the navigation bar is visible at the top
+- **AND** it contains links: Home, Generic, Elements
 
-```gherkin
-Given the user scrolls to the features section
-Then four feature cards are displayed in a 2-column grid
-And each card has an icon, title, and description
-```
+#### Scenario: Features section shows four feature cards
 
-### Scenario: About section has tabbed content
+- **GIVEN** the user scrolls to the features section
+- **THEN** four feature cards are displayed in a 2-column grid
+- **AND** each card has an icon, title, and description
 
-```gherkin
-Given the user scrolls to the about section
-Then the heading "About Our Company" is visible
-And two tabs are shown: History and Mission & Vision
-And the History tab is active by default
-```
+#### Scenario: About section has tabbed content
 
-### Scenario: Switching about tabs
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading "About Our Company" is visible
+- **AND** two tabs are shown: History and Mission & Vision
+- **AND** the History tab is active by default
 
-```gherkin
-Given the about section is visible with History tab active
-When the user clicks the "Mission & Vision" tab
-Then the Mission & Vision content is displayed
-And the History content is hidden
-```
+#### Scenario: Switching about tabs
 
-### Scenario: Video section displays correctly
+- **GIVEN** the about section is visible with History tab active
+- **WHEN** the user clicks the "Mission & Vision" tab
+- **THEN** the Mission & Vision content is displayed
+- **AND** the History content is hidden
 
-```gherkin
-Given the user scrolls to the video section
-Then the heading "New Features that open the door of future" is visible
-And a play button is displayed
-And the section has a purple overlay background
-```
+#### Scenario: Video section displays correctly
 
-### Scenario: Blog section shows three cards
+- **GIVEN** the user scrolls to the video section
+- **THEN** the heading "New Features that open the door of future" is visible
+- **AND** a play button is displayed
+- **AND** the section has a purple overlay background
 
-```gherkin
-Given the user scrolls to the blog section
-Then three blog cards are displayed
-And each card has a thumbnail image, title, and description
-```
+#### Scenario: Blog section shows three cards
 
-### Scenario: Newsletter subscription form
+- **GIVEN** the user scrolls to the blog section
+- **THEN** three blog cards are displayed
+- **AND** each card has a thumbnail image, title, and description
 
-```gherkin
-Given the user scrolls to the newsletter section
-Then the heading "Subscribe Newsletter" is visible
-And an email input field is present
-And a "Get Started" button is present
-```
+#### Scenario: Newsletter subscription form
 
-### Scenario: Footer displays correctly
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** the heading "Subscribe Newsletter" is visible
+- **AND** an email input field is present
+- **AND** a "Get Started" button is present
 
-```gherkin
-Given the user scrolls to the footer
-Then navigation links are displayed (Home, Generic, Elements)
-And social media icons are shown (Facebook, Twitter, Dribbble, Behance)
-And a copyright notice is visible
-And a Component Dock link is present
-```
+#### Scenario: Footer displays correctly
 
-### Scenario: Responsive layout on mobile
+- **GIVEN** the user scrolls to the footer
+- **THEN** navigation links are displayed (Home, Generic, Elements)
+- **AND** social media icons are shown (Facebook, Twitter, Dribbble, Behance)
+- **AND** a copyright notice is visible
+- **AND** a Component Dock link is present
 
-```gherkin
-Given the user loads the page on a mobile viewport (375px)
-Then the navigation collapses to a hamburger menu
-And the layout adjusts to single-column
-And the banner heading reduces in size
-```
+#### Scenario: Responsive layout on mobile
 
-### Scenario: Banner button hover effect
+- **GIVEN** the user loads the page on a mobile viewport (375px)
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** the layout adjusts to single-column
+- **AND** the banner heading reduces in size
 
-```gherkin
-Given the user hovers over the "Get Started" button in the banner
-Then the button background changes to a pink-to-yellow gradient
-And the text color changes to dark
-```
+#### Scenario: Banner button hover effect
+
+- **GIVEN** the user hovers over the "Get Started" button in the banner
+- **THEN** the button background changes to a pink-to-yellow gradient
+- **AND** the text color changes to dark
 
 ## Verification checklist
 

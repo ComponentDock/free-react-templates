@@ -78,83 +78,92 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
 9. **Newsletter** — Blue bg-primary, "Newsletter" heading + description + email input + "Subscribe" button
 10. **Footer** — Dark gray (#333) bg, About text + Navigations links + Follow Us social icons + Search form + copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Adspot Classified Ads Template
 
-```gherkin
-Scenario: Navbar renders with correct brand and links
-  Given the Adspot page loads
-  Then the navbar displays the brand "Classy" with "Ads" in accent color
-  And the navbar contains links: Home, Ads, About, Blog, Contact
-  And there are Log In and Register links
-  And a "+ Post an Ad" call-to-action button is visible
+#### Scenario: Navbar renders with correct brand and links
 
-Scenario: Hero section renders search functionality
-  Given the page loads
-  Then the hero displays the headline "Largest Classifieds In The World"
-  And a subtitle "You can buy, sell anything you want." is shown
-  And a search form is visible with fields: What, Location, Category dropdown
-  And a "Search" button is present
+- **GIVEN** the Adspot page loads
+- **THEN** the navbar displays the brand "Classy" with "Ads" in accent color
+- **AND** the navbar contains links: Home, Ads, About, Blog, Contact
+- **AND** there are Log In and Register links
+- **AND** a "+ Post an Ad" call-to-action button is visible
 
-Scenario: Category bar displays 6 categories with counts
-  Given the page loads
-  Then 6 category cards are displayed in a row
-  And each category card shows an icon, name, and listing count
-  And the categories are: Real Estate, Books & Magazines, Furniture, Electronics, Cars & Vehicles, Other
+#### Scenario: Hero section renders search functionality
 
-Scenario: Featured Ads carousel shows listing cards
-  Given the page loads
-  Then a "Featured Ads" section is visible
-  And listing cards are displayed in a carousel
-  And each card has an image, category badge, title, address, and star rating
+- **GIVEN** the page loads
+- **THEN** the hero displays the headline "Largest Classifieds In The World"
+- **AND** a subtitle "You can buy, sell anything you want." is shown
+- **AND** a search form is visible with fields: What, Location, Category dropdown
+- **AND** a "Search" button is present
 
-Scenario: Popular Products section shows listing grid
-  Given the page loads
-  Then a "Popular Products" heading is displayed
-  And 5 listing items are shown in a responsive grid
-  And each item has an image, category badge, title, and address
+#### Scenario: Category bar displays 6 categories with counts
 
-Scenario: Trending Today section shows listings
-  Given the page loads
-  Then a "Trending Today" heading is displayed
-  And listing cards are shown in a 2-column layout
-  And each card has an image, category badge, title, address, and star rating
+- **GIVEN** the page loads
+- **THEN** 6 category cards are displayed in a row
+- **AND** each category card shows an icon, name, and listing count
+- **AND** the categories are: Real Estate, Books & Magazines, Furniture, Electronics, Cars & Vehicles, Other
 
-Scenario: Testimonials carousel displays reviews
-  Given the page loads
-  Then a "Testimonials" heading is displayed
-  And customer testimonials are shown in a carousel
-  And each testimonial has a profile photo, name, and quote
+#### Scenario: Featured Ads carousel shows listing cards
 
-Scenario: Blog section shows 3 articles
-  Given the page loads
-  Then a "Our Blog" heading is displayed
-  And 3 blog cards are shown in a row
-  And each card has an image, title, author, date, category, and excerpt
-  And a "View All Posts" button is visible
+- **GIVEN** the page loads
+- **THEN** a "Featured Ads" section is visible
+- **AND** listing cards are displayed in a carousel
+- **AND** each card has an image, category badge, title, address, and star rating
 
-Scenario: Newsletter section captures email subscriptions
-  Given the page loads
-  Then a newsletter section is visible with blue background
-  And an email input field is present
-  And a "Subscribe" button is displayed
+#### Scenario: Popular Products section shows listing grid
 
-Scenario: Footer displays navigation and social links
-  Given the page loads
-  Then the footer shows About, Navigations, and Follow Us sections
-  And social media icon links are present (Facebook, Twitter, Instagram, LinkedIn)
-  And a search form is in the footer
-  And a copyright notice is displayed
+- **GIVEN** the page loads
+- **THEN** a "Popular Products" heading is displayed
+- **AND** 5 listing items are shown in a responsive grid
+- **AND** each item has an image, category badge, title, and address
 
-Scenario: All sections render on mobile viewport
-  Given the page is viewed on a 375px wide viewport
-  Then the navbar collapses to a hamburger menu
-  And the hero search form stacks vertically
-  And category cards stack in a grid
-  And listing cards stack vertically
-  And the footer columns stack vertically
-```
+#### Scenario: Trending Today section shows listings
+
+- **GIVEN** the page loads
+- **THEN** a "Trending Today" heading is displayed
+- **AND** listing cards are shown in a 2-column layout
+- **AND** each card has an image, category badge, title, address, and star rating
+
+#### Scenario: Testimonials carousel displays reviews
+
+- **GIVEN** the page loads
+- **THEN** a "Testimonials" heading is displayed
+- **AND** customer testimonials are shown in a carousel
+- **AND** each testimonial has a profile photo, name, and quote
+
+#### Scenario: Blog section shows 3 articles
+
+- **GIVEN** the page loads
+- **THEN** a "Our Blog" heading is displayed
+- **AND** 3 blog cards are shown in a row
+- **AND** each card has an image, title, author, date, category, and excerpt
+- **AND** a "View All Posts" button is visible
+
+#### Scenario: Newsletter section captures email subscriptions
+
+- **GIVEN** the page loads
+- **THEN** a newsletter section is visible with blue background
+- **AND** an email input field is present
+- **AND** a "Subscribe" button is displayed
+
+#### Scenario: Footer displays navigation and social links
+
+- **GIVEN** the page loads
+- **THEN** the footer shows About, Navigations, and Follow Us sections
+- **AND** social media icon links are present (Facebook, Twitter, Instagram, LinkedIn)
+- **AND** a search form is in the footer
+- **AND** a copyright notice is displayed
+
+#### Scenario: All sections render on mobile viewport
+
+- **GIVEN** the page is viewed on a 375px wide viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero search form stacks vertically
+- **AND** category cards stack in a grid
+- **AND** listing cards stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

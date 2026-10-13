@@ -57,63 +57,73 @@ Recreation of Colorlib "Reg Form V33" — a split-screen registration/signup for
 | Responsive breakpoint | 991px (stacks vertically) |
 | Mobile form padding | 30px 20px (below 575px) |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: SignCraft — Split-screen registration form
 
 #### Scenario: Full page renders with gradient background
-  Given the page loads
-  Then the full viewport has a diagonal gradient background from yellow (#fee140) to pink (#fa709a)
-  And the form card is centered horizontally and vertically
+
+- **GIVEN** the page loads
+- **THEN** the full viewport has a diagonal gradient background from yellow (#fee140) to pink (#fa709a)
+- **AND** the form card is centered horizontally and vertically
 
 #### Scenario: Form card layout (desktop)
-  Given the viewport is wider than 991px
-  Then the form card displays as a horizontal flex container
-  And the left side shows an image with "Sign Up" text overlay and "Privacy policy & Term of service" subtext
-  And the right side shows the registration form with white background and box shadow
+
+- **GIVEN** the viewport is wider than 991px
+- **THEN** the form card displays as a horizontal flex container
+- **AND** the left side shows an image with "Sign Up" text overlay and "Privacy policy & Term of service" subtext
+- **AND** the right side shows the registration form with white background and box shadow
 
 #### Scenario: Registration form fields
-  Given the form card is visible
-  Then the form contains a USERNAME text input
-  And the form contains an E-MAIL input with email validation pattern
-  And the form contains a PASSWORD input (type=password)
-  And the form contains a CONFIRM PASSWORD input (type=password)
-  And each field has an uppercase label above it
+
+- **GIVEN** the form card is visible
+- **THEN** the form contains a USERNAME text input
+- **AND** the form contains an E-MAIL input with email validation pattern
+- **AND** the form contains a PASSWORD input (type=password)
+- **AND** the form contains a CONFIRM PASSWORD input (type=password)
+- **AND** each field has an uppercase label above it
 
 #### Scenario: Register button
-  Given the form is visible
-  Then a "Register" button is displayed with blue-purple background (#373be3)
-  And the button has rounded corners (4px radius)
-  And on hover the button background darkens to #2a2cb0
+
+- **GIVEN** the form is visible
+- **THEN** a "Register" button is displayed with blue-purple background (#373be3)
+- **AND** the button has rounded corners (4px radius)
+- **AND** on hover the button background darkens to #2a2cb0
 
 #### Scenario: Sign-in link
-  Given the form is visible
-  Then an "Or Sign in" text is shown below the Register button
-  And "Sign in" is a clickable link styled in #373be3
+
+- **GIVEN** the form is visible
+- **THEN** an "Or Sign in" text is shown below the Register button
+- **AND** "Sign in" is a clickable link styled in #373be3
 
 #### Scenario: Input focus states
-  Given a user focuses on any form input
-  Then the bottom border changes to green (#2bb33e)
+
+- **GIVEN** a user focuses on any form input
+- **THEN** the bottom border changes to green (#2bb33e)
 
 #### Scenario: Form validation
-  Given the user submits the form with empty required fields
-  Then validation errors appear for EMAIL, PASSWORD, and CONFIRM PASSWORD fields
-  And error messages are displayed in red below the respective fields
+
+- **GIVEN** the user submits the form with empty required fields
+- **THEN** validation errors appear for EMAIL, PASSWORD, and CONFIRM PASSWORD fields
+- **AND** error messages are displayed in red below the respective fields
 
 #### Scenario: Responsive layout (tablet)
-  Given the viewport is between 576px and 991px wide
-  Then the form card stacks vertically (image on top, form below)
-  And form padding is 50px
+
+- **GIVEN** the viewport is between 576px and 991px wide
+- **THEN** the form card stacks vertically (image on top, form below)
+- **AND** form padding is 50px
 
 #### Scenario: Responsive layout (mobile)
-  Given the viewport is narrower than 576px
-  Then the form card stacks vertically
-  And form padding is 30px 20px
-  And the Register button is full-width (not floated)
+
+- **GIVEN** the viewport is narrower than 576px
+- **THEN** the form card stacks vertically
+- **AND** form padding is 30px 20px
+- **AND** the Register button is full-width (not floated)
 
 #### Scenario: Footer with Component Dock link
-  Given the page is fully loaded
-  Then a footer is present with a link to "https://www.componentdock.com/" branded as "Component Dock"
+
+- **GIVEN** the page is fully loaded
+- **THEN** a footer is present with a link to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification Checklist
 

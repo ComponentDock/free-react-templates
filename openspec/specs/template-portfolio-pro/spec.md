@@ -45,49 +45,58 @@ Images: https://picsum.photos/seed/portfolio-pro-<n>/w/h placeholders.
 6. **Counter / Stats Section** — dark background, heading "Portfolio" / "I love to share my achievements", animated counters: Clients (420), Project done (890), Cups of coffee (1000)
 7. **Footer** — dark warm brown (#3c312e), centered layout: social icons, "Contact Us" heading, email link, copyright with attribution
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar renders with logo and navigation links
-- **Given** the page loads
-- **Then** the navbar displays the logo (avatar image + name)
-- **And** the navbar has a hamburger toggle for mobile
-- **And** the sidebar nav lists 6 items with numbers: Home, Resume, Services, Portfolio, Blog, Contact
+### Feature: PortfolioPro template behaviour
 
-### Scenario: Hero slider displays slides with centered text
-- **Given** the hero section is visible
-- **Then** a full-height carousel shows background images with overlay
-- **And** each slide has centered text (greeting + name/title)
-- **And** a scroll-down indicator is visible at the bottom
+#### Scenario: Navbar renders with logo and navigation links
 
-### Scenario: About section shows split layout with author info
-- **Given** the about section is in view
-- **Then** a large faded "About" text appears as background
-- **And** an author portrait image is displayed on the left
-- **And** intro text, a resume link, social icons, and contact info appear on the right
+- **GIVEN** the page loads
+- **THEN** the navbar displays the logo (avatar image + name)
+- **AND** the navbar has a hamburger toggle for mobile
+- **AND** the sidebar nav lists 6 items with numbers: Home, Resume, Services, Portfolio, Blog, Contact
 
-### Scenario: Services section displays three service cards
-- **Given** the services section is visible
-- **Then** a heading "What I do" / "My services" is centered
-- **And** three service cards are displayed in a row
-- **And** each card has an icon and multiple service titles
+#### Scenario: Hero slider displays slides with centered text
 
-### Scenario: Portfolio section shows alternating project items
-- **Given** the portfolio section is in view
-- **Then** the heading "Portfolio" / "Checkout a few of my works" is displayed
-- **And** six project items are listed alternating left/right image layout
-- **And** each item has an image, category label, title, description, and "View Project" link
+- **GIVEN** the hero section is visible
+- **THEN** a full-height carousel shows background images with overlay
+- **AND** each slide has centered text (greeting + name/title)
+- **AND** a scroll-down indicator is visible at the bottom
 
-### Scenario: Counter section displays animated stats
-- **Given** the counter section is visible
-- **Then** three stats are shown (Clients: 420, Projects: 890, Coffee: 1000)
-- **And** numbers animate from 0 to their target values
-- **And** the section has a dark background
+#### Scenario: About section shows split layout with author info
 
-### Scenario: Footer shows contact info and social links
-- **Given** the footer is visible
-- **Then** social icons (twitter, facebook, instagram) are displayed
-- **And** "Contact Us" heading with email link is shown
-- **And** a copyright line with "Component Dock" attribution link is present
+- **GIVEN** the about section is in view
+- **THEN** a large faded "About" text appears as background
+- **AND** an author portrait image is displayed on the left
+- **AND** intro text, a resume link, social icons, and contact info appear on the right
+
+#### Scenario: Services section displays three service cards
+
+- **GIVEN** the services section is visible
+- **THEN** a heading "What I do" / "My services" is centered
+- **AND** three service cards are displayed in a row
+- **AND** each card has an icon and multiple service titles
+
+#### Scenario: Portfolio section shows alternating project items
+
+- **GIVEN** the portfolio section is in view
+- **THEN** the heading "Portfolio" / "Checkout a few of my works" is displayed
+- **AND** six project items are listed alternating left/right image layout
+- **AND** each item has an image, category label, title, description, and "View Project" link
+
+#### Scenario: Counter section displays animated stats
+
+- **GIVEN** the counter section is visible
+- **THEN** three stats are shown (Clients: 420, Projects: 890, Coffee: 1000)
+- **AND** numbers animate from 0 to their target values
+- **AND** the section has a dark background
+
+#### Scenario: Footer shows contact info and social links
+
+- **GIVEN** the footer is visible
+- **THEN** social icons (twitter, facebook, instagram) are displayed
+- **AND** "Contact Us" heading with email link is shown
+- **AND** a copyright line with "Component Dock" attribution link is present
 
 ## Verification checklist
 

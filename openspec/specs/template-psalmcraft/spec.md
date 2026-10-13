@@ -46,172 +46,169 @@ Extracted from the live preview CSS (`https://preview.colorlib.com/theme/libchur
 12. **FooterTop** — Split layout: left side has contact info (address, email, phone), right side has embedded map area.
 13. **Footer** — Dark maroon (`#3c1919`) background. Copyright text left, social media icon links right.
 
-## Gherkin requirements
+## Requirements
 
 ### TopNavBar
 
-```gherkin
 Feature: Top navigation bar
 
-  Scenario: Social links are displayed
-    Given the page loads
-    Then the top nav bar shows social media icon links
+#### Scenario: Social links are displayed
 
-  Scenario: Donation counter items visible on desktop
-    Given the viewport width is >= 768px
-    Then the top nav bar shows counter items with donation statistics
+- **GIVEN** the page loads
+- **THEN** the top nav bar shows social media icon links
 
-  Scenario: Top nav hidden on mobile
-    Given the viewport width is < 768px
-    Then the top nav bar is hidden
-```
+#### Scenario: Donation counter items visible on desktop
+
+- **GIVEN** the viewport width is >= 768px
+- **THEN** the top nav bar shows counter items with donation statistics
+
+#### Scenario: Top nav hidden on mobile
+
+- **GIVEN** the viewport width is < 768px
+- **THEN** the top nav bar is hidden
 
 ### Header/Navbar
 
-```gherkin
 Feature: Main navigation
 
-  Scenario: Logo and nav links visible
-    Given the page loads
-    Then a logo and 6 nav links are displayed (Home, About Us, Sermons, Event, Blog, Contact)
+#### Scenario: Logo and nav links visible
 
-  Scenario: Donate button visible
-    Given the page loads
-    Then a "Donate Now" button is visible in the header
+- **GIVEN** the page loads
+- **THEN** a logo and 6 nav links are displayed (Home, About Us, Sermons, Event, Blog, Contact)
 
-  Scenario: Mobile hamburger menu
-    Given the viewport width is < 992px
-    Then a hamburger toggle is displayed
-    When the user clicks the hamburger
-    Then the nav menu expands
-```
+#### Scenario: Donate button visible
+
+- **GIVEN** the page loads
+- **THEN** a "Donate Now" button is visible in the header
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport width is < 992px
+- **THEN** a hamburger toggle is displayed
+- **WHEN** the user clicks the hamburger
+- **THEN** the nav menu expands
 
 ### Hero
 
-```gherkin
 Feature: Hero section
 
-  Scenario: Hero content displayed
-    Given the page loads
-    Then a heading, subtext, and CTA button are centered over a background image
+#### Scenario: Hero content displayed
 
-  Scenario: CTA button navigates
-    Given the user clicks "Join With Us"
-    Then the page scrolls to the about section
-```
+- **GIVEN** the page loads
+- **THEN** a heading, subtext, and CTA button are centered over a background image
+
+#### Scenario: CTA button navigates
+
+- **GIVEN** the user clicks "Join With Us"
+- **THEN** the page scrolls to the about section
 
 ### EventBanner
 
-```gherkin
 Feature: Event banner with countdown
 
-  Scenario: Countdown timer displays
-    Given the page loads
-    Then a countdown timer shows days, hours, minutes, and seconds
+#### Scenario: Countdown timer displays
 
-  Scenario: Event details shown
-    Given the page loads
-    Then the event title, time, and location are displayed
-```
+- **GIVEN** the page loads
+- **THEN** a countdown timer shows days, hours, minutes, and seconds
+
+#### Scenario: Event details shown
+
+- **GIVEN** the page loads
+- **THEN** the event title, time, and location are displayed
 
 ### About
 
-```gherkin
 Feature: About section
 
-  Scenario: About content visible
-    Given the page loads
-    Then a heading, two paragraphs, and a CTA button are displayed
-    And an image is displayed beside the text
-```
+#### Scenario: About content visible
+
+- **GIVEN** the page loads
+- **THEN** a heading, two paragraphs, and a CTA button are displayed
+- **AND** an image is displayed beside the text
 
 ### Services
 
-```gherkin
 Feature: Services / Values section
 
-  Scenario: Three service cards displayed
-    Given the page loads
-    Then 3 service cards are shown in a row
-    And each card has an icon, title, description, and read-more link
-```
+#### Scenario: Three service cards displayed
+
+- **GIVEN** the page loads
+- **THEN** 3 service cards are shown in a row
+- **AND** each card has an icon, title, description, and read-more link
 
 ### Sermon
 
-```gherkin
 Feature: Sermon section
 
-  Scenario: Sermon content displayed
-    Given the page loads
-    Then a sermon title, speaker, categories, date, and description are shown
-    And share icon links are visible
-```
+#### Scenario: Sermon content displayed
+
+- **GIVEN** the page loads
+- **THEN** a sermon title, speaker, categories, date, and description are shown
+- **AND** share icon links are visible
 
 ### EventList
 
-```gherkin
 Feature: Upcoming events list
 
-  Scenario: Event items rendered
-    Given the page loads
-    Then 2 event items are displayed
-    And each item shows a date badge, thumbnail, title, speaker, time, location, and description
-```
+#### Scenario: Event items rendered
+
+- **GIVEN** the page loads
+- **THEN** 2 event items are displayed
+- **AND** each item shows a date badge, thumbnail, title, speaker, time, location, and description
 
 ### Donate
 
-```gherkin
 Feature: Donation section
 
-  Scenario: Progress bar visible
-    Given the page loads
-    Then a circular progress indicator shows the percentage raised
-    And raised amount and goal amount are displayed
+#### Scenario: Progress bar visible
 
-  Scenario: CTA button present
-    Given the page loads
-    Then a donation CTA button is displayed
-```
+- **GIVEN** the page loads
+- **THEN** a circular progress indicator shows the percentage raised
+- **AND** raised amount and goal amount are displayed
+
+#### Scenario: CTA button present
+
+- **GIVEN** the page loads
+- **THEN** a donation CTA button is displayed
 
 ### Blog
 
-```gherkin
 Feature: Blog / Latest News section
 
-  Scenario: Blog cards displayed
-    Given the page loads
-    Then 3 blog cards are shown
-    And each card has a thumbnail, date, title, author, and category
-```
+#### Scenario: Blog cards displayed
+
+- **GIVEN** the page loads
+- **THEN** 3 blog cards are shown
+- **AND** each card has a thumbnail, date, title, author, and category
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter subscription
 
-  Scenario: Email input visible
-    Given the page loads
-    Then an email input and subscribe button are displayed
+#### Scenario: Email input visible
 
-  Scenario: Subscribe button clickable
-    Given the user enters an email and clicks subscribe
-    Then the form submits (no validation enforcement in original)
-```
+- **GIVEN** the page loads
+- **THEN** an email input and subscribe button are displayed
+
+#### Scenario: Subscribe button clickable
+
+- **GIVEN** the user enters an email and clicks subscribe
+- **THEN** the form submits (no validation enforcement in original)
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Contact information displayed
-    Given the page loads
-    Then the footer top section shows address, email, and phone
+#### Scenario: Contact information displayed
 
-  Scenario: Copyright and social links
-    Given the page loads
-    Then the footer bottom shows copyright text and social media icon links
-    And a "Component Dock" attribution link is present
-```
+- **GIVEN** the page loads
+- **THEN** the footer top section shows address, email, and phone
+
+#### Scenario: Copyright and social links
+
+- **GIVEN** the page loads
+- **THEN** the footer bottom shows copyright text and social media icon links
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification checklist
 

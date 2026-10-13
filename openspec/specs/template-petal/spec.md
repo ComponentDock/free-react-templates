@@ -57,44 +57,52 @@ Instagram gallery, and a full footer.
 | Button bg      | #f45d96                | Primary buttons              |
 | Button hover   | #111111                | Button hover state           |
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: Petal template behaviour
+
 Feature: Petal flower shop template
 
-  Scenario: Page renders all sections
-    Given the user visits the Petal homepage
-    Then the navbar, hero, benefits, categories, about, arrivals, CTA,
-      blog, testimonials, instagram, and footer sections are visible
+#### Scenario: Page renders all sections
 
-  Scenario: Hero displays tagline and CTA
-    Given the hero section is visible
-    Then a heading "Making beautiful flowers a part of your life" is shown
-    And a "Shop now" button is present
+- **GIVEN** the user visits the Petal homepage
+- **THEN** the navbar, hero, benefits, categories, about, arrivals, CTA,
+blog, testimonials, instagram, and footer sections are visible
 
-  Scenario: Benefits section shows four items
-    Given the benefits section is visible
-    Then 4 benefit items are displayed with icons and text
+#### Scenario: Hero displays tagline and CTA
 
-  Scenario: Categories section shows four cards
-    Given the categories section is visible
-    Then 4 category cards with names and item counts are displayed
+- **GIVEN** the hero section is visible
+- **THEN** a heading "Making beautiful flowers a part of your life" is shown
+- **AND** a "Shop now" button is present
 
-  Scenario: Arrivals section filters products
-    Given the arrivals section is visible
-    When the user clicks the "Bouquet" filter
-    Then only bouquet products are displayed
+#### Scenario: Benefits section shows four items
 
-  Scenario: CTA section shows action buttons
-    Given the CTA section is visible
-    Then "Order Now" and "Contact Us" buttons are present
+- **GIVEN** the benefits section is visible
+- **THEN** 4 benefit items are displayed with icons and text
 
-  Scenario: Blog section shows three posts
-    Given the blog section is visible
-    Then 3 blog post cards are displayed
+#### Scenario: Categories section shows four cards
 
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then a link to "https://www.componentdock.com/" is present
-    And the link text mentions "Component Dock"
-```
+- **GIVEN** the categories section is visible
+- **THEN** 4 category cards with names and item counts are displayed
+
+#### Scenario: Arrivals section filters products
+
+- **GIVEN** the arrivals section is visible
+- **WHEN** the user clicks the "Bouquet" filter
+- **THEN** only bouquet products are displayed
+
+#### Scenario: CTA section shows action buttons
+
+- **GIVEN** the CTA section is visible
+- **THEN** "Order Now" and "Contact Us" buttons are present
+
+#### Scenario: Blog section shows three posts
+
+- **GIVEN** the blog section is visible
+- **THEN** 3 blog post cards are displayed
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"

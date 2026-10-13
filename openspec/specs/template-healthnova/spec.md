@@ -59,86 +59,104 @@ and DOM analysis.
 - Section padding: ~120–200px top/bottom (desktop)
 - Container max-width: ~1140px (Bootstrap default)
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Feature: HealthNova Medical Landing Page
 
-```gherkin
 Feature: HealthNova — medical/healthcare landing page
-  As a healthcare provider
-  I want a professional landing page
-  So that patients can learn about services and book appointments
+As a healthcare provider
+I want a professional landing page
+So that patients can learn about services and book appointments
 
-  Background:
-    Given the HealthNova landing page is loaded
+Background:
+- **GIVEN** the HealthNova landing page is loaded
 
-  # ── Navbar ──
-  Scenario: Navbar displays with logo and navigation
-    Then the navbar shows a logo on the left
-    And the navbar shows navigation links: Home, About, Blog, Pages, Contact
-    And the navbar shows a "Book Appointment" button on the right
-    And the navbar is sticky on scroll
+**── Navbar ──**
 
-  # ── Hero ──
-  Scenario: Hero section displays with headline and CTA
-    Then the hero shows a subtitle "the best medical center"
-    And the hero shows the heading "Bringing health to life for the whole family"
-    And the hero shows a "Discover More" CTA button
-    And the hero has a dark overlay gradient on a background image
+#### Scenario: Navbar displays with logo and navigation
 
-  # ── Welcome ──
-  Scenario: Welcome section shows clinic intro
-    Then the welcome section shows an image on the left
-    And the welcome section shows heading "Welcome To Modern Clinic"
-    And the welcome section shows three bullet points with check icons
-    And the welcome section shows an "About us" CTA button
+- **THEN** the navbar shows a logo on the left
+- **AND** the navbar shows navigation links: Home, About, Blog, Pages, Contact
+- **AND** the navbar shows a "Book Appointment" button on the right
+- **AND** the navbar is sticky on scroll
 
-  # ── Departments ──
-  Scenario: Departments section shows tabbed categories
-    Then the departments section shows heading "Departments"
-    And the departments section shows a "Learn more" link
-    And the departments section shows 6 tab buttons: Dentistry, Cardiology, ENT Specialists, Astrology, Neuroanatomy, Blood Screening
-    And clicking a tab shows a department image, description, and "Make An Appointment" CTA
+**── Hero ──**
 
-  # ── Doctors ──
-  Scenario: Doctors section shows team cards
-    Then the doctors section shows heading "Our Doctors"
-    And the doctors section shows 3 doctor cards
-    And each doctor card has a photo, name, specialty, and social media links
+#### Scenario: Hero section displays with headline and CTA
 
-  # ── Book Appointment Form ──
-  Scenario: Appointment form collects patient info
-    Then the appointment section shows heading "Book an Appointment"
-    And the form has a doctor select dropdown
-    And the form has inputs for name, age, phone, email, date, time
-    And the form has a "Make an Appointment" submit button
+- **THEN** the hero shows a subtitle "the best medical center"
+- **AND** the hero shows the heading "Bringing health to life for the whole family"
+- **AND** the hero shows a "Discover More" CTA button
+- **AND** the hero has a dark overlay gradient on a background image
 
-  # ── Quality Health ──
-  Scenario: Quality section shows features
-    Then the quality section shows heading "Quality Health"
-    And the quality section shows 3 feature cards: Health Consultation, Find Health, Search Doctor
-    And each card has an icon, title, and description
+**── Welcome ──**
 
-  # ── Emergency Contact ──
-  Scenario: Emergency section shows contact CTA
-    Then the emergency section shows "We are here for you" subtitle
-    And the emergency section shows "Book Appointment" heading with CTA button
-    And the emergency section shows a phone number "+1-465 4545"
-    And the emergency section has a cyan-blue background
+#### Scenario: Welcome section shows clinic intro
 
-  # ── Footer ──
-  Scenario: Footer shows links and hours
-    Then the footer shows a logo and description
-    And the footer shows "Our Departments" link list
-    And the footer shows "We're Available" with business hours
-    And the footer shows social media icons
-    And the footer has a dark background
+- **THEN** the welcome section shows an image on the left
+- **AND** the welcome section shows heading "Welcome To Modern Clinic"
+- **AND** the welcome section shows three bullet points with check icons
+- **AND** the welcome section shows an "About us" CTA button
 
-  # ── Copyright ──
-  Scenario: Copyright bar displays
-    Then the copyright bar shows the current year
-    And the copyright bar shows "Component Dock" link
-```
+**── Departments ──**
+
+#### Scenario: Departments section shows tabbed categories
+
+- **THEN** the departments section shows heading "Departments"
+- **AND** the departments section shows a "Learn more" link
+- **AND** the departments section shows 6 tab buttons: Dentistry, Cardiology, ENT Specialists, Astrology, Neuroanatomy, Blood Screening
+- **AND** clicking a tab shows a department image, description, and "Make An Appointment" CTA
+
+**── Doctors ──**
+
+#### Scenario: Doctors section shows team cards
+
+- **THEN** the doctors section shows heading "Our Doctors"
+- **AND** the doctors section shows 3 doctor cards
+- **AND** each doctor card has a photo, name, specialty, and social media links
+
+**── Book Appointment Form ──**
+
+#### Scenario: Appointment form collects patient info
+
+- **THEN** the appointment section shows heading "Book an Appointment"
+- **AND** the form has a doctor select dropdown
+- **AND** the form has inputs for name, age, phone, email, date, time
+- **AND** the form has a "Make an Appointment" submit button
+
+**── Quality Health ──**
+
+#### Scenario: Quality section shows features
+
+- **THEN** the quality section shows heading "Quality Health"
+- **AND** the quality section shows 3 feature cards: Health Consultation, Find Health, Search Doctor
+- **AND** each card has an icon, title, and description
+
+**── Emergency Contact ──**
+
+#### Scenario: Emergency section shows contact CTA
+
+- **THEN** the emergency section shows "We are here for you" subtitle
+- **AND** the emergency section shows "Book Appointment" heading with CTA button
+- **AND** the emergency section shows a phone number "+1-465 4545"
+- **AND** the emergency section has a cyan-blue background
+
+**── Footer ──**
+
+#### Scenario: Footer shows links and hours
+
+- **THEN** the footer shows a logo and description
+- **AND** the footer shows "Our Departments" link list
+- **AND** the footer shows "We're Available" with business hours
+- **AND** the footer shows social media icons
+- **AND** the footer has a dark background
+
+**── Copyright ──**
+
+#### Scenario: Copyright bar displays
+
+- **THEN** the copyright bar shows the current year
+- **AND** the copyright bar shows "Component Dock" link
 
 ## Verification checklist
 

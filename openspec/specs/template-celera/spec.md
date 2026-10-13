@@ -55,157 +55,176 @@ Poppins typography.
    (links), Compare (links), Quick About (text + phone/email + social icons).
    Bottom bar with copyright + Colorlib attribution → replaced with Component Dock.
 
-## Gherkin Scenarios
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Header
-  Scenario: Logo is displayed
-    Given the page loads
-    Then the header shows a logo image
 
-  Scenario: Hamburger menu is visible on desktop
-    Given the page loads on desktop viewport
-    Then a hamburger menu icon is visible in the header
+#### Scenario: Logo is displayed
 
-  Scenario: Navigation links toggle on menu click
-    Given the page loads on mobile viewport
-    When the user clicks the hamburger menu
-    Then the navigation links become visible
-```
+- **GIVEN** the page loads
+- **THEN** the header shows a logo image
+
+#### Scenario: Hamburger menu is visible on desktop
+
+- **GIVEN** the page loads on desktop viewport
+- **THEN** a hamburger menu icon is visible in the header
+
+#### Scenario: Navigation links toggle on menu click
+
+- **GIVEN** the page loads on mobile viewport
+- **WHEN** the user clicks the hamburger menu
+- **THEN** the navigation links become visible
 
 ### Banner / Hero
 
-```gherkin
 Feature: Banner / Hero
-  Scenario: Hero headline is displayed
-    Given the page loads
-    Then the hero section shows a headline with the word "Success" styled differently
 
-  Scenario: Hero CTA button is clickable
-    Given the page loads
-    Then a "Get Started" button is visible
-    And the button has a pill-shaped border radius
+#### Scenario: Hero headline is displayed
 
-  Scenario: Hero image is displayed
-    Given the page loads
-    Then the hero section shows a decorative image on the left side
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows a headline with the word "Success" styled differently
+
+#### Scenario: Hero CTA button is clickable
+
+- **GIVEN** the page loads
+- **THEN** a "Get Started" button is visible
+- **AND** the button has a pill-shaped border radius
+
+#### Scenario: Hero image is displayed
+
+- **GIVEN** the page loads
+- **THEN** the hero section shows a decorative image on the left side
 
 ### Video Area
 
-```gherkin
 Feature: Video Area
-  Scenario: Video section heading is visible
-    Given the page loads
-    Then the video area shows the heading "Being unique is the preference"
 
-  Scenario: Play button is displayed
-    Given the page loads
-    Then a play button is visible in the video area
+#### Scenario: Video section heading is visible
 
-  Scenario: Video area has green overlay
-    Given the page loads
-    Then the video area has a green-tinted overlay on its background image
-```
+- **GIVEN** the page loads
+- **THEN** the video area shows the heading "Being unique is the preference"
+
+#### Scenario: Play button is displayed
+
+- **GIVEN** the page loads
+- **THEN** a play button is visible in the video area
+
+#### Scenario: Video area has green overlay
+
+- **GIVEN** the page loads
+- **THEN** the video area has a green-tinted overlay on its background image
 
 ### About
 
-```gherkin
 Feature: About
-  Scenario: About heading is visible
-    Given the page loads
-    Then the about section shows a heading "Brief Information About"
 
-  Scenario: About has descriptive text
-    Given the page loads
-    Then the about section contains paragraph text
+#### Scenario: About heading is visible
 
-  Scenario: About has an image
-    Given the page loads
-    Then the about section shows an image on the right side
+- **GIVEN** the page loads
+- **THEN** the about section shows a heading "Brief Information About"
 
-  Scenario: About has a CTA button
-    Given the page loads
-    Then a "View More" button with a border style is visible in the about section
-```
+#### Scenario: About has descriptive text
+
+- **GIVEN** the page loads
+- **THEN** the about section contains paragraph text
+
+#### Scenario: About has an image
+
+- **GIVEN** the page loads
+- **THEN** the about section shows an image on the right side
+
+#### Scenario: About has a CTA button
+
+- **GIVEN** the page loads
+- **THEN** a "View More" button with a border style is visible in the about section
 
 ### Features
 
-```gherkin
 Feature: Features
-  Scenario: Six feature cards are displayed
-    Given the page loads
-    Then 6 feature cards are visible in the features section
 
-  Scenario: Each feature card has icon, title, and description
-    Given the page loads
-    Then each feature card shows an icon, a title, and a description paragraph
+#### Scenario: Six feature cards are displayed
 
-  Scenario: Features section has green overlay background
-    Given the page loads
-    Then the features section has a green-tinted overlay on its background image
-```
+- **GIVEN** the page loads
+- **THEN** 6 feature cards are visible in the features section
+
+#### Scenario: Each feature card has icon, title, and description
+
+- **GIVEN** the page loads
+- **THEN** each feature card shows an icon, a title, and a description paragraph
+
+#### Scenario: Features section has green overlay background
+
+- **GIVEN** the page loads
+- **THEN** the features section has a green-tinted overlay on its background image
 
 ### Stats / FAQ
 
-```gherkin
 Feature: Stats / FAQ
-  Scenario: Four stat counters are displayed
-    Given the page loads
-    Then 4 stat counters are visible (Projects Completed, New Projects, Tickets Submitted, Cup of Coffee)
 
-  Scenario: Each stat has a number and label
-    Given the page loads
-    Then each stat counter shows a large number and a descriptive label
+#### Scenario: Four stat counters are displayed
 
-  Scenario: Three FAQ items are displayed
-    Given the page loads
-    Then 3 FAQ items are visible with heading and answer text
-```
+- **GIVEN** the page loads
+- **THEN** 4 stat counters are visible (Projects Completed, New Projects, Tickets Submitted, Cup of Coffee)
+
+#### Scenario: Each stat has a number and label
+
+- **GIVEN** the page loads
+- **THEN** each stat counter shows a large number and a descriptive label
+
+#### Scenario: Three FAQ items are displayed
+
+- **GIVEN** the page loads
+- **THEN** 3 FAQ items are visible with heading and answer text
 
 ### Contact
 
-```gherkin
 Feature: Contact Form
-  Scenario: Contact heading is visible
-    Given the page loads
-    Then the contact section shows "Send Us Message" as the heading
 
-  Scenario: Contact form has name and email fields
-    Given the page loads
-    Then a "name" input field and an "email" input field are visible
+#### Scenario: Contact heading is visible
 
-  Scenario: Contact form has a message textarea
-    Given the page loads
-    Then a message textarea is visible in the contact form
+- **GIVEN** the page loads
+- **THEN** the contact section shows "Send Us Message" as the heading
 
-  Scenario: Contact form has a submit button
-    Given the page loads
-    Then a "Send Message" button is visible in the contact form
+#### Scenario: Contact form has name and email fields
 
-  Scenario: Contact section has green overlay background
-    Given the page loads
-    Then the contact section has a green-tinted overlay on its background image
-```
+- **GIVEN** the page loads
+- **THEN** a "name" input field and an "email" input field are visible
+
+#### Scenario: Contact form has a message textarea
+
+- **GIVEN** the page loads
+- **THEN** a message textarea is visible in the contact form
+
+#### Scenario: Contact form has a submit button
+
+- **GIVEN** the page loads
+- **THEN** a "Send Message" button is visible in the contact form
+
+#### Scenario: Contact section has green overlay background
+
+- **GIVEN** the page loads
+- **THEN** the contact section has a green-tinted overlay on its background image
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer has four columns
-    Given the page loads
-    Then the footer shows 4 link columns: "Top Product", "Navigation", "Compare", "Quick About"
 
-  Scenario: Footer has social icons
-    Given the page loads
-    Then the footer shows social media icon links
+#### Scenario: Footer has four columns
 
-  Scenario: Footer has Component Dock attribution
-    Given the page loads
-    Then the footer bottom bar shows a link to "https://www.componentdock.com/" branded as "Component Dock"
-```
+- **GIVEN** the page loads
+- **THEN** the footer shows 4 link columns: "Top Product", "Navigation", "Compare", "Quick About"
+
+#### Scenario: Footer has social icons
+
+- **GIVEN** the page loads
+- **THEN** the footer shows social media icon links
+
+#### Scenario: Footer has Component Dock attribution
+
+- **GIVEN** the page loads
+- **THEN** the footer bottom bar shows a link to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification Checklist
 

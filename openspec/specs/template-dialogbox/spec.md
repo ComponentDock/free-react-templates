@@ -47,69 +47,78 @@ button. When the modal opens, it appears centered with:
 
 Overall aesthetic: minimal, modern, clean white with blue accent color.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: DialogBox — Login/Registration Modal Form
 
   Background:
-    Given the page loads
-    Then the background is white
-    And the primary font is Poppins
+- **GIVEN** the page loads
+- **THEN** the background is white
+- **AND** the primary font is Poppins
 
-  Scenario: Page displays heading and launch button
-    Given the page is loaded
-    Then I see "Create Your Account" or similar heading
-    And I see a blue rounded "Launch Modal" button
+#### Scenario: Page displays heading and launch button
 
-  Scenario: Launch button opens modal
-    Given the page is loaded
-    When I click the "Launch Modal" button
-    Then a centered modal dialog appears
-    And the modal has a subtle shadow
-    And the modal has a white background
+- **GIVEN** the page is loaded
+- **THEN** I see "Create Your Account" or similar heading
+- **AND** I see a blue rounded "Launch Modal" button
 
-  Scenario: Modal displays close button
-    Given the modal is open
-    Then I see a close button (X) in the top-right corner
-    When I click the close button
-    Then the modal closes
+#### Scenario: Launch button opens modal
 
-  Scenario: Modal displays social login icons
-    Given the modal is open
-    Then I see three social icons (Twitter, Facebook, Instagram)
-    And the icons are circular with a light border
-    And hovering an icon turns it blue (#3e64ff)
+- **GIVEN** the page is loaded
+- **WHEN** I click the "Launch Modal" button
+- **THEN** a centered modal dialog appears
+- **AND** the modal has a subtle shadow
+- **AND** the modal has a white background
 
-  Scenario: Modal displays registration form
-    Given the modal is open
-    Then I see a "Full Name" input field
-    And I see an "Email Address" input field
-    And I see a "Password" input field
-    And I see a "Sign Up" submit button
+#### Scenario: Modal displays close button
 
-  Scenario: Form inputs have correct styling
-    Given the modal is open
-    Then the inputs are 52px tall
-    And the inputs have 5px border-radius
-    And the labels are uppercase and muted (#rgba(0,0,0,0.3))
+- **GIVEN** the modal is open
+- **THEN** I see a close button (X) in the top-right corner
+- **WHEN** I click the close button
+- **THEN** the modal closes
 
-  Scenario: Submit button is styled as pill
-    Given the modal is open
-    Then the "Sign Up" button is blue (#3e64ff)
-    And the button has a pill shape (border-radius: 40px)
-    And the button text is white
+#### Scenario: Modal displays social login icons
 
-  Scenario: "I'm already a member" link
-    Given the modal is open
-    Then I see an "I'm already a member" link
-    And the link is underlined and muted
-    And clicking the link closes or navigates away from the modal
+- **GIVEN** the modal is open
+- **THEN** I see three social icons (Twitter, Facebook, Instagram)
+- **AND** the icons are circular with a light border
+- **AND** hovering an icon turns it blue (#3e64ff)
 
-  Scenario: Modal is responsive
-    Given the modal is open on a mobile viewport
-    Then the modal content fits within the screen
-    And the form fields are full-width
-    And the social icons remain visible
+#### Scenario: Modal displays registration form
+
+- **GIVEN** the modal is open
+- **THEN** I see a "Full Name" input field
+- **AND** I see an "Email Address" input field
+- **AND** I see a "Password" input field
+- **AND** I see a "Sign Up" submit button
+
+#### Scenario: Form inputs have correct styling
+
+- **GIVEN** the modal is open
+- **THEN** the inputs are 52px tall
+- **AND** the inputs have 5px border-radius
+- **AND** the labels are uppercase and muted (#rgba(0,0,0,0.3))
+
+#### Scenario: Submit button is styled as pill
+
+- **GIVEN** the modal is open
+- **THEN** the "Sign Up" button is blue (#3e64ff)
+- **AND** the button has a pill shape (border-radius: 40px)
+- **AND** the button text is white
+
+#### Scenario: "I'm already a member" link
+
+- **GIVEN** the modal is open
+- **THEN** I see an "I'm already a member" link
+- **AND** the link is underlined and muted
+- **AND** clicking the link closes or navigates away from the modal
+
+#### Scenario: Modal is responsive
+
+- **GIVEN** the modal is open on a mobile viewport
+- **THEN** the modal content fits within the screen
+- **AND** the form fields are full-width
+- **AND** the social icons remain visible
 
 ## Verification Checklist
 

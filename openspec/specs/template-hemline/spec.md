@@ -41,79 +41,72 @@ The template is a dark-themed fashion e-commerce landing page with a golden/ambe
 | Font family | Muli (Google Fonts) — weights 300–900, sans-serif |
 | Section spacing | `spad` class = consistent vertical padding (~60px) |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header renders with navigation and top bar
-```
-Given the user loads the Hemline page
-Then the top bar shows email, phone, login link, and language selector
-And the main navigation shows the logo, categories dropdown, search bar, cart icon, and wishlist icon
-```
+### Feature: Hemline template behaviour
 
-### Scenario: Hero carousel displays product slides
-```
-Given the user loads the page
-Then a hero carousel renders with product slides
-And each slide shows a product image, product name, price, and "Shop Now" CTA button
-And the carousel auto-rotates between slides
-```
+#### Scenario: Header renders with navigation and top bar
 
-### Scenario: Women's banner section
-```
-Given the hero section is rendered
-Then a "Women's" banner section appears below the hero
-And it shows a heading "Women's" and a "Shop Now" link
-And a mannequin/fashion image occupies the right side
-```
+- **GIVEN** the user loads the Hemline page
+- **THEN** the top bar shows email, phone, login link, and language selector
+- **AND** the main navigation shows the logo, categories dropdown, search bar, cart icon, and wishlist icon
 
-### Scenario: Deal of the week section
-```
-Given the women's banner is rendered
-Then a "Deal of the Week" section appears
-And it shows a featured product image and name
-And a countdown timer displays days, hours, minutes, seconds
-```
+#### Scenario: Hero carousel displays product slides
 
-### Scenario: Men's banner section
-```
-Given the deal of the week section is rendered
-Then a "Men's" banner section appears
-And it mirrors the women's banner layout (image left, text right)
-```
+- **GIVEN** the user loads the page
+- **THEN** a hero carousel renders with product slides
+- **AND** each slide shows a product image, product name, price, and "Shop Now" CTA button
+- **AND** the carousel auto-rotates between slides
 
-### Scenario: Latest blog section
-```
-Given the men's banner is rendered
-Then a "From The Blog" section appears
-And it shows 3 blog post cards in a row
-And each card has an image, date, title, and excerpt
-```
+#### Scenario: Women's banner section
 
-### Scenario: Instagram photo gallery
-```
-Given the blog section is rendered
-Then an Instagram photo strip appears
-And it shows 6 square images in a row
-And each image has a hover overlay effect
-```
+- **GIVEN** the hero section is rendered
+- **THEN** a "Women's" banner section appears below the hero
+- **AND** it shows a heading "Women's" and a "Shop Now" link
+- **AND** a mannequin/fashion image occupies the right side
 
-### Scenario: Footer renders
-```
-Given the Instagram strip is rendered
-Then the footer renders with logo and about text, shop links, quick links, and newsletter signup
-And the newsletter section has an email input and submit button
-And social media icons are displayed
-And a "Made with Component Dock" link appears
-```
+#### Scenario: Deal of the week section
 
-### Scenario: Responsive layout
-```
-Given the user loads the page on a mobile viewport
-Then the navigation collapses to a hamburger menu
-And sections stack vertically
-And blog cards stack to single column
-And Instagram images wrap to multiple rows
-```
+- **GIVEN** the women's banner is rendered
+- **THEN** a "Deal of the Week" section appears
+- **AND** it shows a featured product image and name
+- **AND** a countdown timer displays days, hours, minutes, seconds
+
+#### Scenario: Men's banner section
+
+- **GIVEN** the deal of the week section is rendered
+- **THEN** a "Men's" banner section appears
+- **AND** it mirrors the women's banner layout (image left, text right)
+
+#### Scenario: Latest blog section
+
+- **GIVEN** the men's banner is rendered
+- **THEN** a "From The Blog" section appears
+- **AND** it shows 3 blog post cards in a row
+- **AND** each card has an image, date, title, and excerpt
+
+#### Scenario: Instagram photo gallery
+
+- **GIVEN** the blog section is rendered
+- **THEN** an Instagram photo strip appears
+- **AND** it shows 6 square images in a row
+- **AND** each image has a hover overlay effect
+
+#### Scenario: Footer renders
+
+- **GIVEN** the Instagram strip is rendered
+- **THEN** the footer renders with logo and about text, shop links, quick links, and newsletter signup
+- **AND** the newsletter section has an email input and submit button
+- **AND** social media icons are displayed
+- **AND** a "Made with Component Dock" link appears
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user loads the page on a mobile viewport
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** blog cards stack to single column
+- **AND** Instagram images wrap to multiple rows
 
 ## Verification checklist
 

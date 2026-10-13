@@ -42,56 +42,66 @@ Extracted from the live preview stylesheet (`css/style.css`) and HTML structure:
 | Modal body top border | `4px solid #ed5107` | Orange accent bar |
 | Content height | `100vh` | Full viewport height for launch area |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page loads with launch button visible
-- **Given** the user navigates to the page
-- **Then** a "Launch modal" button should be visible in the center of the viewport
-- **And** the modal should NOT be visible
+### Feature: ModalDrop template behaviour
 
-### Scenario: Clicking launch button opens modal
-- **Given** the page has loaded
-- **When** the user clicks the "Launch modal" button
-- **Then** a modal overlay should appear
-- **And** the modal should contain a "Log In" heading
-- **And** the modal should have a top orange accent border (#ed5107, 4px)
+#### Scenario: Page loads with launch button visible
 
-### Scenario: Modal contains login form fields
-- **Given** the modal is open
-- **Then** a "Username/Email" input field should be visible
-- **And** a "Password" input field should be visible
-- **And** a "Login" button should be visible
-- **And** a "Forgot password" link should be visible
+- **GIVEN** the user navigates to the page
+- **THEN** a "Launch modal" button should be visible in the center of the viewport
+- **AND** the modal should NOT be visible
 
-### Scenario: Modal contains signup link
-- **Given** the modal is open
-- **Then** text "If you don't have account yet" should be visible
-- **And** a "Sign up here" link should be visible
+#### Scenario: Clicking launch button opens modal
 
-### Scenario: Modal closes on backdrop click
-- **Given** the modal is open
-- **When** the user clicks outside the modal (on the backdrop)
-- **Then** the modal should close
-- **And** the launch button should be visible again
+- **GIVEN** the page has loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a modal overlay should appear
+- **AND** the modal should contain a "Log In" heading
+- **AND** the modal should have a top orange accent border (#ed5107, 4px)
 
-### Scenario: Modal closes on close button
-- **Given** the modal is open
-- **When** the user clicks the close button (×)
-- **Then** the modal should close
+#### Scenario: Modal contains login form fields
 
-### Scenario: Form fields have correct styling
-- **Given** the modal is open
-- **Then** input fields should have a subtle shadow (0 1px 3px 0 rgba(0,0,0,0.2))
-- **And** input fields should have no visible border
-- **And** the Login button should have rounded corners (4px radius)
-- **And** the Login button should have no border
+- **GIVEN** the modal is open
+- **THEN** a "Username/Email" input field should be visible
+- **AND** a "Password" input field should be visible
+- **AND** a "Login" button should be visible
+- **AND** a "Forgot password" link should be visible
 
-### Scenario: Modal has correct visual tokens
-- **Given** the modal is open
-- **Then** the modal body background should be light gray (#efefef)
-- **And** the modal should have a heavy drop shadow
-- **And** the heading text should be dark (#000)
-- **And** paragraph text should be medium gray (#777)
+#### Scenario: Modal contains signup link
+
+- **GIVEN** the modal is open
+- **THEN** text "If you don't have account yet" should be visible
+- **AND** a "Sign up here" link should be visible
+
+#### Scenario: Modal closes on backdrop click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks outside the modal (on the backdrop)
+- **THEN** the modal should close
+- **AND** the launch button should be visible again
+
+#### Scenario: Modal closes on close button
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (×)
+- **THEN** the modal should close
+
+#### Scenario: Form fields have correct styling
+
+- **GIVEN** the modal is open
+- **THEN** input fields should have a subtle shadow (0 1px 3px 0 rgba(0,0,0,0.2))
+- **AND** input fields should have no visible border
+- **AND** the Login button should have rounded corners (4px radius)
+- **AND** the Login button should have no border
+
+#### Scenario: Modal has correct visual tokens
+
+- **GIVEN** the modal is open
+- **THEN** the modal body background should be light gray (#efefef)
+- **AND** the modal should have a heavy drop shadow
+- **AND** the heading text should be dark (#000)
+- **AND** paragraph text should be medium gray (#777)
 
 ## Verification Checklist
 

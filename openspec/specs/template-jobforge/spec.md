@@ -38,120 +38,120 @@ Recreation of ColorLib **Jobstart** as a React 19 + Vite + Tailwind 4 + TypeScri
 - **Subscribe Newsletter:** Dark section with email input and subscribe button.
 - **Footer:** Dark charcoal (`#393e46`). 4 columns: For Candidates, For Employers, Archives, Company + Contact Info. Bottom copyright bar.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation links
-  Given the user loads the page
-  Then a navbar is visible with the brand "JobForge" on the left
-  And navigation links "Home", "Category", "Blog", "About", "Contact" appear on the right
-  And a "+ Post a Job" CTA button is visible in the navbar
+#### Scenario: Navbar displays brand and navigation links
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls past the hero
-  Then the navbar should remain fixed at the top of the viewport
-```
+- **GIVEN** the user loads the page
+- **THEN** a navbar is visible with the brand "JobForge" on the left
+- **AND** navigation links "Home", "Category", "Blog", "About", "Contact" appear on the right
+- **AND** a "+ Post a Job" CTA button is visible in the navbar
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar should remain fixed at the top of the viewport
 
 ### Hero section
 
-```gherkin
-Scenario: Hero displays headline and search tabs
-  Given the user views the hero section
-  Then a background image with dark overlay is displayed
-  And the heading "Largest Job Site On The Net" is visible
-  And two tab buttons appear: "Find A Job" (active, blue) and "Find A Candidate"
+#### Scenario: Hero displays headline and search tabs
 
-Scenario: Job search form is displayed
-  Given the "Find A Job" tab is active
-  Then a search bar is visible with inputs for keyword, category (dropdown), and location
-  And a "Search" button is displayed
+- **GIVEN** the user views the hero section
+- **THEN** a background image with dark overlay is displayed
+- **AND** the heading "Largest Job Site On The Net" is visible
+- **AND** two tab buttons appear: "Find A Job" (active, blue) and "Find A Candidate"
 
-Scenario: Candidate search form switches on tab click
-  Given the user clicks "Find A Candidate"
-  Then the search form changes to candidate-oriented inputs (name, location)
-```
+#### Scenario: Job search form is displayed
+
+- **GIVEN** the "Find A Job" tab is active
+- **THEN** a search bar is visible with inputs for keyword, category (dropdown), and location
+- **AND** a "Search" button is displayed
+
+#### Scenario: Candidate search form switches on tab click
+
+- **GIVEN** the user clicks "Find A Candidate"
+- **THEN** the search form changes to candidate-oriented inputs (name, location)
 
 ### Recent Jobs section
 
-```gherkin
-Scenario: Job listing section renders correctly
-  Given the user scrolls to the "Recent Jobs" section
-  Then a section heading "Recent Jobs" is displayed
-  And a "+ Post a Job" button is shown
+#### Scenario: Job listing section renders correctly
 
-Scenario: Job cards display all required information
-  Given job listings are loaded
-  Then each job card shows: title, job type badge, company name, location, favorite heart icon
-  And an "Apply Job" button is visible on each card
+- **GIVEN** the user scrolls to the "Recent Jobs" section
+- **THEN** a section heading "Recent Jobs" is displayed
+- **AND** a "+ Post a Job" button is shown
 
-Scenario: Job type badges use correct styling
-  Given a job has type "Part Time"
-  Then the badge displays "Part Time" in a styled pill
-```
+#### Scenario: Job cards display all required information
+
+- **GIVEN** job listings are loaded
+- **THEN** each job card shows: title, job type badge, company name, location, favorite heart icon
+- **AND** an "Apply Job" button is visible on each card
+
+#### Scenario: Job type badges use correct styling
+
+- **GIVEN** a job has type "Part Time"
+- **THEN** the badge displays "Part Time" in a styled pill
 
 ### Why JobForge (Features) section
 
-```gherkin
-Scenario: Features section displays 6 feature cards
-  Given the user scrolls to the "Why JobForge" section
-  Then a heading "Why JobForge" is displayed
-  And 6 feature cards are shown in a 3-column grid (2 rows)
-  And each card has an icon, title, and description paragraph
+#### Scenario: Features section displays 6 feature cards
 
-Scenario: Feature titles match the original
-  Then the feature titles are: "Search Millions of Jobs", "Location Search", "Top Careers", "Search Expert Candidates", "Easy To Manage Jobs", "Online Reviews"
-```
+- **GIVEN** the user scrolls to the "Why JobForge" section
+- **THEN** a heading "Why JobForge" is displayed
+- **AND** 6 feature cards are shown in a 3-column grid (2 rows)
+- **AND** each card has an icon, title, and description paragraph
+
+#### Scenario: Feature titles match the original
+
+- **THEN** the feature titles are: "Search Millions of Jobs", "Location Search", "Top Careers", "Search Expert Candidates", "Easy To Manage Jobs", "Online Reviews"
 
 ### Testimonials section
 
-```gherkin
-Scenario: Testimonials carousel renders
-  Given the user scrolls to the "Happy Employers" section
-  Then a heading "Happy Employers" is displayed
-  And a carousel of testimonials is visible
-  And each testimonial shows: profile image, name, role, and quote text
+#### Scenario: Testimonials carousel renders
 
-Scenario: Carousel pagination is functional
-  Given the testimonials carousel is displayed
-  Then pagination dots are visible below the carousel
-  And clicking a dot navigates to the corresponding testimonial
-```
+- **GIVEN** the user scrolls to the "Happy Employers" section
+- **THEN** a heading "Happy Employers" is displayed
+- **AND** a carousel of testimonials is visible
+- **AND** each testimonial shows: profile image, name, role, and quote text
+
+#### Scenario: Carousel pagination is functional
+
+- **GIVEN** the testimonials carousel is displayed
+- **THEN** pagination dots are visible below the carousel
+- **AND** clicking a dot navigates to the corresponding testimonial
 
 ### Blog section
 
-```gherkin
-Scenario: Blog section displays 4 blog cards
-  Given the user scrolls to the "Latest Blog" section
-  Then a heading "Latest Blog" is displayed
-  And 4 blog cards are shown in a 4-column grid
-  And each card has: image, title, author name, date, and excerpt text
-```
+#### Scenario: Blog section displays 4 blog cards
+
+- **GIVEN** the user scrolls to the "Latest Blog" section
+- **THEN** a heading "Latest Blog" is displayed
+- **AND** 4 blog cards are shown in a 4-column grid
+- **AND** each card has: image, title, author name, date, and excerpt text
 
 ### Subscribe Newsletter section
 
-```gherkin
-Scenario: Newsletter section renders
-  Given the user scrolls to the "Subscribe Newsletter" section
-  Then a heading "Subscribe Newsletter" is displayed
-  And an email input field is visible
-  And a "Subscribe" button is present
-```
+#### Scenario: Newsletter section renders
+
+- **GIVEN** the user scrolls to the "Subscribe Newsletter" section
+- **THEN** a heading "Subscribe Newsletter" is displayed
+- **AND** an email input field is visible
+- **AND** a "Subscribe" button is present
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays link columns
-  Given the user scrolls to the footer
-  Then columns "For Candidates", "For Employers", "Archives", "Company" are displayed
-  And each column contains relevant navigation links
-  And a "Contact Info" section is present
+#### Scenario: Footer displays link columns
 
-Scenario: Footer links Component Dock
-  Given the user views the footer
-  Then a link to "https://www.componentdock.com/" is present with text "Component Dock"
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** columns "For Candidates", "For Employers", "Archives", "Company" are displayed
+- **AND** each column contains relevant navigation links
+- **AND** a "Contact Info" section is present
+
+#### Scenario: Footer links Component Dock
+
+- **GIVEN** the user views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present with text "Component Dock"
 
 ## Verification checklist
 

@@ -51,72 +51,80 @@ Recreation of ColorLib **Bootstrap Sidebar 03** template as a React 19 + Vite + 
    - Content cards: 2x2 grid of cards with icon, title, and description.
    - Body text: paragraph describing the template below cards.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Flank Sidebar Template
 
-```gherkin
 Feature: Flank — Sidebar Navigation Website Template
-  As a user visiting the Flank website
-  I want to see a clean sidebar-based layout with icons
-  So that I can navigate the site via a persistent sidebar with newsletter signup
+As a user visiting the Flank website
+I want to see a clean sidebar-based layout with icons
+So that I can navigate the site via a persistent sidebar with newsletter signup
 
-  Scenario: Sidebar displays logo and navigation
-    Given I am on the Flank homepage
-    Then I see a fixed left sidebar with navy background
-    And I see the logo "Flank" at the top of the sidebar
-    And I see navigation links: Home, About, Services, Portfolio, Blog, Contact
-    And each nav link has an icon on the left
-    And all sidebar text is white
+#### Scenario: Sidebar displays logo and navigation
 
-  Scenario: Sidebar shows newsletter subscription
-    Given I am on the Flank homepage
-    Then I see a "Stay Updated" section in the sidebar
-    And I see an email input field with placeholder "Email Address"
-    And I see a "Subscribe" button with blue accent color
+- **GIVEN** I am on the Flank homepage
+- **THEN** I see a fixed left sidebar with navy background
+- **AND** I see the logo "Flank" at the top of the sidebar
+- **AND** I see navigation links: Home, About, Services, Portfolio, Blog, Contact
+- **AND** each nav link has an icon on the left
+- **AND** all sidebar text is white
 
-  Scenario: Sidebar displays copyright at bottom
-    Given I am on the Flank homepage
-    Then I see copyright text at the bottom of the sidebar
-    And the copyright text is white and small
+#### Scenario: Sidebar shows newsletter subscription
 
-  Scenario: Main content shows heading and cards
-    Given I am on the Flank homepage
-    Then I see the heading "Sidebar Navigation" in the main content area
-    And I see a subheading "A clean sidebar template"
-    And I see 4 content cards in a grid layout
+- **GIVEN** I am on the Flank homepage
+- **THEN** I see a "Stay Updated" section in the sidebar
+- **AND** I see an email input field with placeholder "Email Address"
+- **AND** I see a "Subscribe" button with blue accent color
 
-  Scenario: Content cards display icon, title, and description
-    Given I am on the Flank homepage
-    Then each content card has an icon, title, and description text
-    And the cards are arranged in a 2-column grid
+#### Scenario: Sidebar displays copyright at bottom
 
-  Scenario: Hamburger toggle is visible on mobile
-    Given I am on the Flank homepage on a mobile viewport
-    Then I see a navy circular hamburger button
-    And clicking it toggles the sidebar visibility
+- **GIVEN** I am on the Flank homepage
+- **THEN** I see copyright text at the bottom of the sidebar
+- **AND** the copyright text is white and small
 
-  Scenario: Sidebar navigation supports active state
-    Given I am on the Flank homepage
-    Then the "Home" nav link is highlighted as active
-    And active link has a distinct background color
+#### Scenario: Main content shows heading and cards
 
-  Scenario: Newsletter form accepts email
-    Given I am on the Flank homepage
-    When I enter an email address in the newsletter input
-    And I click the Subscribe button
-    Then the form processes the subscription
+- **GIVEN** I am on the Flank homepage
+- **THEN** I see the heading "Sidebar Navigation" in the main content area
+- **AND** I see a subheading "A clean sidebar template"
+- **AND** I see 4 content cards in a grid layout
 
-  Scenario: Responsive layout adapts to mobile
-    Given I view the site on a mobile viewport
-    Then the sidebar collapses and is toggled by the hamburger button
-    And the main content fills the full width
+#### Scenario: Content cards display icon, title, and description
 
-  Scenario: Footer links to Component Dock
-    Given I am on the Flank homepage
-    Then I see a link to https://www.componentdock.com/ in the sidebar copyright area
-    And the link text includes "Component Dock"
-```
+- **GIVEN** I am on the Flank homepage
+- **THEN** each content card has an icon, title, and description text
+- **AND** the cards are arranged in a 2-column grid
+
+#### Scenario: Hamburger toggle is visible on mobile
+
+- **GIVEN** I am on the Flank homepage on a mobile viewport
+- **THEN** I see a navy circular hamburger button
+- **AND** clicking it toggles the sidebar visibility
+
+#### Scenario: Sidebar navigation supports active state
+
+- **GIVEN** I am on the Flank homepage
+- **THEN** the "Home" nav link is highlighted as active
+- **AND** active link has a distinct background color
+
+#### Scenario: Newsletter form accepts email
+
+- **GIVEN** I am on the Flank homepage
+- **WHEN** I enter an email address in the newsletter input
+- **AND** I click the Subscribe button
+- **THEN** the form processes the subscription
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** I view the site on a mobile viewport
+- **THEN** the sidebar collapses and is toggled by the hamburger button
+- **AND** the main content fills the full width
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I am on the Flank homepage
+- **THEN** I see a link to https://www.componentdock.com/ in the sidebar copyright area
+- **AND** the link text includes "Component Dock"
 
 ## Verification checklist
 

@@ -78,11 +78,12 @@ template. Original source slug: `caviar`.
 8. **Footer** — Dark charcoal (#333333) bg. Logo wordmark centered.
    Copyright text (subtle white). Link to Component Dock.
 
-## Gherkin scenarios
+## Requirements
 
 ### Feature: Supperly — Fine Dining Restaurant Template
 
 #### Scenario: Navbar renders with all navigation links
+
 - **GIVEN** the user loads the Supperly homepage
 - **WHEN** the navbar is visible
 - **THEN** it SHALL contain the logo/brand text "supperly"
@@ -91,6 +92,7 @@ template. Original source slug: `caviar`.
 - **AND** it SHALL contain a search icon button
 
 #### Scenario: Hero section displays with CTA
+
 - **GIVEN** the user loads the Supperly homepage
 - **WHEN** the hero section is rendered
 - **THEN** it SHALL display a full-width background image
@@ -100,15 +102,17 @@ template. Original source slug: `caviar`.
 - **AND** social media icon links SHALL be positioned vertically on the right
 
 #### Scenario: About Us section shows two content blocks
+
 - **GIVEN** the user scrolls to the About Us section
 - **WHEN** the section renders
 - **THEN** it SHALL show a heading "About Us"
 - **AND** it SHALL contain a red uppercase subheading "restaurant style"
 - **AND** it SHALL show an image alongside the text
 - **AND** it SHALL have a second sub-section with subheading "our chef"
-  and an image on the opposite side
+- **AND** an image on the opposite side
 
 #### Scenario: Dish Menu section shows special dishes
+
 - **GIVEN** the user scrolls to the Menu section
 - **WHEN** the section renders
 - **THEN** it SHALL show a centered heading "Special"
@@ -117,12 +121,14 @@ template. Original source slug: `caviar`.
 - **AND** each dish card SHALL show an image, dish name, and price
 
 #### Scenario: Awards section shows award badges
+
 - **GIVEN** the user scrolls to the Awards section
 - **WHEN** the section renders
 - **THEN** it SHALL show a heading "Awards"
 - **AND** it SHALL display award badge images in a horizontal row
 
 #### Scenario: Testimonials carousel shows reviews
+
 - **GIVEN** the user scrolls to the Testimonials section
 - **WHEN** the section renders
 - **THEN** it SHALL show a centered heading "Testimonials"
@@ -130,6 +136,7 @@ template. Original source slug: `caviar`.
 - **AND** each card SHALL contain an avatar image, name, tagline, and quote
 
 #### Scenario: Reservation form accepts booking details
+
 - **GIVEN** the user scrolls to the Reservation section
 - **WHEN** the form renders
 - **THEN** it SHALL show a heading "Reservation"
@@ -138,6 +145,7 @@ template. Original source slug: `caviar`.
 - **AND** a decorative background image SHALL appear on the left side
 
 #### Scenario: Footer displays brand and copyright
+
 - **GIVEN** the user scrolls to the footer
 - **WHEN** the footer renders
 - **THEN** it SHALL display the brand text "supperly"
@@ -145,6 +153,7 @@ template. Original source slug: `caviar`.
 - **AND** it SHALL link to Component Dock (https://www.componentdock.com/)
 
 #### Scenario: Design tokens are applied correctly
+
 - **GIVEN** the user views any section of Supperly
 - **WHEN** visual styling is computed
 - **THEN** the brand color SHALL be red (#ff0000)
@@ -153,6 +162,7 @@ template. Original source slug: `caviar`.
 - **AND** section backgrounds SHALL alternate between white and off-white (#fafafa)
 
 #### Scenario: Responsive layout adapts to mobile
+
 - **GIVEN** the user loads Supperly on a mobile viewport (< 768px)
 - **WHEN** the layout renders
 - **THEN** the navbar SHALL collapse into a hamburger menu

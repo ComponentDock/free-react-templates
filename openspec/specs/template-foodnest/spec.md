@@ -42,95 +42,86 @@ Extracted from the live preview stylesheet (`css/style.css`):
 8. **Blog** — `bg-light` with top slant. 2-column blog cards. Each: background image, date, title, excerpt, "Read More" orange button.
 9. **Footer** — Newsletter subscribe section (email input + "Subscribe" button). Then 3 columns: About Us + social icons (Twitter, Facebook, LinkedIn, Instagram), Opening Hours + Contact Info, Quick Links. Copyright line with Component Dock attribution.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Dark navbar renders navigation
-```
-Given the user visits the Foodnest page
-Then a dark (black) navigation bar is visible at the top
-And it displays the brand name "Foody" (or "Foodnest" in recreation)
-And it contains links: Home, Recipes, Services, About, News
-And a "Contact Us" button is on the right
-```
+### Feature: Foodnest template behaviour
 
-### Scenario: Mobile hamburger opens navigation
-```
-Given the viewport width is less than 768px
-When the user taps the hamburger toggle
-Then a collapsible navigation menu appears
-And all nav links are accessible
-```
+#### Scenario: Dark navbar renders navigation
 
-### Scenario: Hero slider displays slides
-```
-Given the user is on the homepage
-Then a full-width image slider is visible
-And each slide shows a heading, paragraph, and "Get Started" CTA button
-And the CTA button has a white outline style
-```
+- **GIVEN** the user visits the Foodnest page
+- **THEN** a dark (black) navigation bar is visible at the top
+- **AND** it displays the brand name "Foody" (or "Foodnest" in recreation)
+- **AND** it contains links: Home, Recipes, Services, About, News
+- **AND** a "Contact Us" button is on the right
 
-### Scenario: Services section shows four service blocks
-```
-Given the user scrolls to the Services section
-Then four service blocks are displayed in a row
-And each block has an icon, orange heading, and description text
-And the section has a light background with a slanted bottom edge
-```
+#### Scenario: Mobile hamburger opens navigation
 
-### Scenario: Restaurant section displays heading and images
-```
-Given the user scrolls to the Restaurant section
-Then a centered heading "The Restaurant" is shown with a paragraph
-And three images are displayed in a row below
-```
+- **GIVEN** the viewport width is less than 768px
+- **WHEN** the user taps the hamburger toggle
+- **THEN** a collapsible navigation menu appears
+- **AND** all nav links are accessible
 
-### Scenario: Special Menu carousel shows dish cards
-```
-Given the user scrolls to the Special Menu section
-Then a horizontal carousel of dish cards is displayed
-And each card shows a dish image with price and name overlaid
-```
+#### Scenario: Hero slider displays slides
 
-### Scenario: Our Menu shows two-column dish layout
-```
-Given the user scrolls to the Our Menu section
-Then a two-column layout with dish items is displayed
-And each item has a background image, dish name, description, and price
-And prices are displayed in orange
-And items alternate text/image ordering
-```
+- **GIVEN** the user is on the homepage
+- **THEN** a full-width image slider is visible
+- **AND** each slide shows a heading, paragraph, and "Get Started" CTA button
+- **AND** the CTA button has a white outline style
 
-### Scenario: Testimonials carousel displays quotes
-```
-Given the user scrolls to the Testimonial section
-Then a carousel of testimonials is shown
-And each testimonial contains a quote, author image, name, and role
-```
+#### Scenario: Services section shows four service blocks
 
-### Scenario: Blog section shows two post cards
-```
-Given the user scrolls to the Blog section
-Then two blog post cards are displayed
-And each card has a background image, date, title, excerpt, and "Read More" button
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** four service blocks are displayed in a row
+- **AND** each block has an icon, orange heading, and description text
+- **AND** the section has a light background with a slanted bottom edge
 
-### Scenario: Footer has newsletter and info columns
-```
-Given the user scrolls to the footer
-Then a newsletter subscription section with email input and "Subscribe" button is visible
-And three info columns are displayed: About Us, Opening Hours + Contact Info, Quick Links
-And social icons (Twitter, Facebook, LinkedIn, Instagram) are shown
-And the footer contains a "Made with ❤ by Component Dock" copyright line
-```
+#### Scenario: Restaurant section displays heading and images
 
-### Scenario: Brand orange is used consistently
-```
-Given the user views any section of the page
-Then CTA buttons use the orange brand color (#ff7404)
-And price text uses the orange brand color
-And active nav items use the orange brand color
-And buttons have square corners (border-radius: 0)
-```
+- **GIVEN** the user scrolls to the Restaurant section
+- **THEN** a centered heading "The Restaurant" is shown with a paragraph
+- **AND** three images are displayed in a row below
+
+#### Scenario: Special Menu carousel shows dish cards
+
+- **GIVEN** the user scrolls to the Special Menu section
+- **THEN** a horizontal carousel of dish cards is displayed
+- **AND** each card shows a dish image with price and name overlaid
+
+#### Scenario: Our Menu shows two-column dish layout
+
+- **GIVEN** the user scrolls to the Our Menu section
+- **THEN** a two-column layout with dish items is displayed
+- **AND** each item has a background image, dish name, description, and price
+- **AND** prices are displayed in orange
+- **AND** items alternate text/image ordering
+
+#### Scenario: Testimonials carousel displays quotes
+
+- **GIVEN** the user scrolls to the Testimonial section
+- **THEN** a carousel of testimonials is shown
+- **AND** each testimonial contains a quote, author image, name, and role
+
+#### Scenario: Blog section shows two post cards
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** two blog post cards are displayed
+- **AND** each card has a background image, date, title, excerpt, and "Read More" button
+
+#### Scenario: Footer has newsletter and info columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a newsletter subscription section with email input and "Subscribe" button is visible
+- **AND** three info columns are displayed: About Us, Opening Hours + Contact Info, Quick Links
+- **AND** social icons (Twitter, Facebook, LinkedIn, Instagram) are shown
+- **AND** the footer contains a "Made with ❤ by Component Dock" copyright line
+
+#### Scenario: Brand orange is used consistently
+
+- **GIVEN** the user views any section of the page
+- **THEN** CTA buttons use the orange brand color (#ff7404)
+- **AND** price text uses the orange brand color
+- **AND** active nav items use the orange brand color
+- **AND** buttons have square corners (border-radius: 0)
 
 ## Verification Checklist
 

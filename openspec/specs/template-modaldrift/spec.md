@@ -56,92 +56,105 @@ with subtle shadows. The overall aesthetic is clean, modern, and focused on
 lead capture — the image draws attention while the structured form collects
 detailed user information.
 
-## Gherkin Requirements
+## Requirements
 
-### Background
-Given the page loads with a centered layout
-When the viewport is displayed
-Then the content is vertically and horizontally centered
-And the page title "Modal #6" is visible
-And a "Launch modal" button is displayed below the title
+### Feature: ModalDrift template behaviour
 
-### Scenario: Modal opens on button click
-Given the page is loaded
-When the user clicks the "Launch modal" button
-Then a large modal dialog appears centered in the viewport
-And the modal displays a split-screen layout
-And the left half shows a background image
-And the right half shows a heading "Registration form"
-And the right half shows a description paragraph
-And the right half shows a registration form
+**Background**
+- **GIVEN** the page loads with a centered layout
+- **WHEN** the viewport is displayed
+- **THEN** the content is vertically and horizontally centered
+- **AND** the page title "Modal #6" is visible
+- **AND** a "Launch modal" button is displayed below the title
 
-### Scenario: Registration form contains required fields
-Given the modal is open
-When the user inspects the form
-Then a "Country" dropdown select is visible
-And a "Full Name" text input is visible
-And an "Email Address" input field is visible
-And a "Date of Birth" section with MM, DD, YYYY inputs is visible
-And a "Sign up" submit button is visible
-And a privacy policy note is displayed below the button
+#### Scenario: Modal opens on button click
 
-### Scenario: Form submission with valid data
-Given the modal is open
-When the user selects a country from the dropdown
-And the user enters a full name
-And the user enters a valid email address
-And the user enters a date of birth (MM, DD, YYYY)
-And the user clicks the "Sign up" button
-Then the form submits (or shows validation feedback)
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a large modal dialog appears centered in the viewport
+- **AND** the modal displays a split-screen layout
+- **AND** the left half shows a background image
+- **AND** the right half shows a heading "Registration form"
+- **AND** the right half shows a description paragraph
+- **AND** the right half shows a registration form
 
-### Scenario: Form submission with empty fields
-Given the modal is open
-When the user clicks the "Sign up" button without entering data
-Then required field validation errors appear
-And the form does not submit
+#### Scenario: Registration form contains required fields
 
-### Scenario: Modal closes on close button click
-Given the modal is open
-When the user clicks the close button (X)
-Then the modal closes with a fade-out animation
-And the page content is visible again
+- **GIVEN** the modal is open
+- **WHEN** the user inspects the form
+- **THEN** a "Country" dropdown select is visible
+- **AND** a "Full Name" text input is visible
+- **AND** an "Email Address" input field is visible
+- **AND** a "Date of Birth" section with MM, DD, YYYY inputs is visible
+- **AND** a "Sign up" submit button is visible
+- **AND** a privacy policy note is displayed below the button
 
-### Scenario: Modal closes on backdrop click
-Given the modal is open
-When the user clicks the dark backdrop area outside the modal
-Then the modal closes
-And the page content is visible again
+#### Scenario: Form submission with valid data
 
-### Scenario: Modal closes on Escape key
-Given the modal is open
-When the user presses the Escape key
-Then the modal closes
-And the page content is visible again
+- **GIVEN** the modal is open
+- **WHEN** the user selects a country from the dropdown
+- **AND** the user enters a full name
+- **AND** the user enters a valid email address
+- **AND** the user enters a date of birth (MM, DD, YYYY)
+- **AND** the user clicks the "Sign up" button
+- **THEN** the form submits (or shows validation feedback)
 
-### Scenario: Modal keyboard accessibility
-Given the modal is open
-When the user presses Tab repeatedly
-Then focus cycles through the modal form fields only
-And focus does not escape to the background page
+#### Scenario: Form submission with empty fields
 
-### Scenario: Responsive layout
-Given the modal is open on a mobile viewport (< 768px)
-Then the split-screen layout stacks vertically
-And the image appears above the form content
-And all form fields remain usable
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "Sign up" button without entering data
+- **THEN** required field validation errors appear
+- **AND** the form does not submit
 
-### Scenario: Country dropdown functionality
-Given the modal is open
-When the user clicks the Country dropdown
-Then a list of countries is displayed
-And the user can select a country
-And the selected country appears in the dropdown
+#### Scenario: Modal closes on close button click
 
-### Scenario: Date of birth inputs
-Given the modal is open
-When the user focuses on a date field (MM, DD, or YYYY)
-Then the input accepts text
-And the placeholder text indicates the expected format
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes with a fade-out animation
+- **AND** the page content is visible again
+
+#### Scenario: Modal closes on backdrop click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the dark backdrop area outside the modal
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+#### Scenario: Modal closes on Escape key
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+#### Scenario: Modal keyboard accessibility
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Tab repeatedly
+- **THEN** focus cycles through the modal form fields only
+- **AND** focus does not escape to the background page
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the modal is open on a mobile viewport (< 768px)
+- **THEN** the split-screen layout stacks vertically
+- **AND** the image appears above the form content
+- **AND** all form fields remain usable
+
+#### Scenario: Country dropdown functionality
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the Country dropdown
+- **THEN** a list of countries is displayed
+- **AND** the user can select a country
+- **AND** the selected country appears in the dropdown
+
+#### Scenario: Date of birth inputs
+
+- **GIVEN** the modal is open
+- **WHEN** the user focuses on a date field (MM, DD, or YYYY)
+- **THEN** the input accepts text
+- **AND** the placeholder text indicates the expected format
 
 ## Verification Checklist
 

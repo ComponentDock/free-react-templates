@@ -75,7 +75,7 @@ returned HTTP 404. All tokens above are derived from the screenshot
 and the ColorLib template page description. Implementers should use these
 as guidelines and refine from the visual reference.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Login Form — Signhook
 
@@ -83,65 +83,74 @@ as guidelines and refine from the visual reference.
   I want to log in with my username and password,
   So that I can access my account.
 
-  Scenario: Page loads with split-panel layout
-    Given the user navigates to the Signhook login page
-    Then a lifestyle image is displayed on the left side of the viewport
-    And a white login card is centered on the right side
-    And the heading "Login to Colorlib" (or similar) is visible
-    And the Username field is visible with placeholder "your-email@gmail.com"
-    And the Password field is visible with placeholder "Your Password"
-    And the "Remember me" checkbox is visible and unchecked by default
-    And the "Forgot Password" link is visible
-    And the "Log In" button is visible and full-width
+#### Scenario: Page loads with split-panel layout
 
-  Scenario: Successful login with valid credentials
-    Given the user is on the Signhook login page
-    When the user enters "user@example.com" in the Username field
-    And the user enters "password123" in the Password field
-    And the user clicks the "Log In" button
-    Then the form submits (no client-side error is shown)
+- **GIVEN** the user navigates to the Signhook login page
+- **THEN** a lifestyle image is displayed on the left side of the viewport
+- **AND** a white login card is centered on the right side
+- **AND** the heading "Login to Colorlib" (or similar) is visible
+- **AND** the Username field is visible with placeholder "your-email@gmail.com"
+- **AND** the Password field is visible with placeholder "Your Password"
+- **AND** the "Remember me" checkbox is visible and unchecked by default
+- **AND** the "Forgot Password" link is visible
+- **AND** the "Log In" button is visible and full-width
 
-  Scenario: Empty username shows validation
-    Given the user is on the Signhook login page
-    When the user leaves the Username field empty
-    And the user enters "password123" in the Password field
-    And the user clicks the "Log In" button
-    Then a validation error is shown for the Username field
+#### Scenario: Successful login with valid credentials
 
-  Scenario: Empty password shows validation
-    Given the user is on the Signhook login page
-    When the user enters "user@example.com" in the Username field
-    And the user leaves the Password field empty
-    And the user clicks the "Log In" button
-    Then a validation error is shown for the Password field
+- **GIVEN** the user is on the Signhook login page
+- **WHEN** the user enters "user@example.com" in the Username field
+- **AND** the user enters "password123" in the Password field
+- **AND** the user clicks the "Log In" button
+- **THEN** the form submits (no client-side error is shown)
 
-  Scenario: Both fields empty shows validation
-    Given the user is on the Signhook login page
-    When the user clicks the "Log In" button without entering any data
-    Then validation errors are shown for both Username and Password fields
+#### Scenario: Empty username shows validation
 
-  Scenario: Remember me checkbox toggle
-    Given the user is on the Signhook login page
-    When the user clicks the "Remember me" checkbox
-    Then the checkbox becomes checked
-    When the user clicks the "Remember me" checkbox again
-    Then the checkbox becomes unchecked
+- **GIVEN** the user is on the Signhook login page
+- **WHEN** the user leaves the Username field empty
+- **AND** the user enters "password123" in the Password field
+- **AND** the user clicks the "Log In" button
+- **THEN** a validation error is shown for the Username field
 
-  Scenario: Forgot Password link is clickable
-    Given the user is on the Signhook login page
-    When the user clicks the "Forgot Password" link
-    Then the link is activated (no page crash)
+#### Scenario: Empty password shows validation
 
-  Scenario: Responsive layout — mobile viewport
-    Given the user is on the Signhook login page
-    When the viewport width is less than 768px
-    Then the split layout collapses to a single column
-    And the login card takes full width
-    And the form remains functional
+- **GIVEN** the user is on the Signhook login page
+- **WHEN** the user enters "user@example.com" in the Username field
+- **AND** the user leaves the Password field empty
+- **AND** the user clicks the "Log In" button
+- **THEN** a validation error is shown for the Password field
 
-  Scenario: Footer credit
-    Given the user is on the Signhook login page
-    Then a footer with "Component Dock" credit linking
+#### Scenario: Both fields empty shows validation
+
+- **GIVEN** the user is on the Signhook login page
+- **WHEN** the user clicks the "Log In" button without entering any data
+- **THEN** validation errors are shown for both Username and Password fields
+
+#### Scenario: Remember me checkbox toggle
+
+- **GIVEN** the user is on the Signhook login page
+- **WHEN** the user clicks the "Remember me" checkbox
+- **THEN** the checkbox becomes checked
+- **WHEN** the user clicks the "Remember me" checkbox again
+- **THEN** the checkbox becomes unchecked
+
+#### Scenario: Forgot Password link is clickable
+
+- **GIVEN** the user is on the Signhook login page
+- **WHEN** the user clicks the "Forgot Password" link
+- **THEN** the link is activated (no page crash)
+
+#### Scenario: Responsive layout — mobile viewport
+
+- **GIVEN** the user is on the Signhook login page
+- **WHEN** the viewport width is less than 768px
+- **THEN** the split layout collapses to a single column
+- **AND** the login card takes full width
+- **AND** the form remains functional
+
+#### Scenario: Footer credit
+
+- **GIVEN** the user is on the Signhook login page
+- **THEN** a footer with "Component Dock" credit linking
       https://www.componentdock.com/ is visible
 
 ## Verification checklist

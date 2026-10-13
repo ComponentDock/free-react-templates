@@ -60,58 +60,66 @@ Layout: centered row (`justify-content-center`), `col-md-8` container, inner row
 
 Layout: `align-items-center` for vertical centering.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: FootStack footer template
 
   Background:
-    Given the user loads the FootStack page
-    Then the page displays a content area above the footer
+- **GIVEN** the user loads the FootStack page
+- **THEN** the page displays a content area above the footer
 
-  Scenario: Footer link columns render correctly
-    Given the footer is visible
-    Then there are 5 link columns: Discover, About, Services, Buy, Help
-    And each column has a bold h3 heading
-    And each column has 2-4 navigation links
-    And all links are styled at 14px with color #777
-    And hovering a link changes its color to #4200ff
+#### Scenario: Footer link columns render correctly
 
-  Scenario: Link columns are responsive
-    Given the viewport is wider than 768px
-    Then all 5 columns display in a single row
-    Given the viewport is narrower than 768px
-    Then columns stack into a 2-column grid
+- **GIVEN** the footer is visible
+- **THEN** there are 5 link columns: Discover, About, Services, Buy, Help
+- **AND** each column has a bold h3 heading
+- **AND** each column has 2-4 navigation links
+- **AND** all links are styled at 14px with color #777
+- **AND** hovering a link changes its color to #4200ff
 
-  Scenario: Social icons render in bottom bar
-    Given the footer bottom bar is visible
-    Then there are social icons for Twitter and Facebook on the left
-    And the icons are styled at #ccc color
-    And hovering an icon changes its color to #4200ff
+#### Scenario: Link columns are responsive
 
-  Scenario: Copyright text displays centered
-    Given the footer bottom bar is visible
-    Then the copyright text is centered between social icons and app links
-    And the text reads "© All Rights Reserved."
+- **GIVEN** the viewport is wider than 768px
+- **THEN** all 5 columns display in a single row
+- **GIVEN** the viewport is narrower than 768px
+- **THEN** columns stack into a 2-column grid
 
-  Scenario: App download links render on right
-    Given the footer bottom bar is visible
-    Then there are app download links on the right side
-    And the links show "App Store" and "Google Store" with icons
-    And the links are styled at 13px
+#### Scenario: Social icons render in bottom bar
 
-  Scenario: Divider separates columns from bottom bar
-    Given the footer is visible
-    Then a horizontal border-top line separates the link columns from the bottom bar
+- **GIVEN** the footer bottom bar is visible
+- **THEN** there are social icons for Twitter and Facebook on the left
+- **AND** the icons are styled at #ccc color
+- **AND** hovering an icon changes its color to #4200ff
 
-  Scenario: Footer has correct padding and font
-    Given the footer is visible
-    Then the footer has 7rem top and bottom padding
-    And the footer text uses the Poppins font family
+#### Scenario: Copyright text displays centered
 
-  Scenario: Component Dock attribution in footer
-    Given the footer is visible
-    Then the footer includes a link to https://www.componentdock.com/
-    And the link text mentions "Component Dock"
+- **GIVEN** the footer bottom bar is visible
+- **THEN** the copyright text is centered between social icons and app links
+- **AND** the text reads "© All Rights Reserved."
+
+#### Scenario: App download links render on right
+
+- **GIVEN** the footer bottom bar is visible
+- **THEN** there are app download links on the right side
+- **AND** the links show "App Store" and "Google Store" with icons
+- **AND** the links are styled at 13px
+
+#### Scenario: Divider separates columns from bottom bar
+
+- **GIVEN** the footer is visible
+- **THEN** a horizontal border-top line separates the link columns from the bottom bar
+
+#### Scenario: Footer has correct padding and font
+
+- **GIVEN** the footer is visible
+- **THEN** the footer has 7rem top and bottom padding
+- **AND** the footer text uses the Poppins font family
+
+#### Scenario: Component Dock attribution in footer
+
+- **GIVEN** the footer is visible
+- **THEN** the footer includes a link to https://www.componentdock.com/
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

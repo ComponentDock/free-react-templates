@@ -59,73 +59,83 @@ screenshot visual analysis + ColorLib listing page embedded `<style>` blocks.
 | Contact/Map | (Google Maps integration mentioned in description) |
 | Footer | Dark background, multi-column links |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: WhiteRoom — Cleaning / Residential Services Website Template
 
 #### Scenario: Top utility bar displays contact information
-- **Given** the user loads the WhiteRoom homepage
-- **Then** a utility bar at the top shows a phone number and email address on the left
-- **And** social media icons (Facebook, Twitter, Instagram, Pinterest) appear on the right in white
-- **And** the bar has a solid blue background (`#1976D2`)
+
+- **GIVEN** the user loads the WhiteRoom homepage
+- **THEN** a utility bar at the top shows a phone number and email address on the left
+- **AND** social media icons (Facebook, Twitter, Instagram, Pinterest) appear on the right in white
+- **AND** the bar has a solid blue background (`#1976D2`)
 
 #### Scenario: Navbar displays brand and navigation
-- **Given** the user loads the WhiteRoom homepage
-- **Then** the navbar shows the logo "CLEANING COMPANY" (dark + yellow text) on the left
-- **And** navigation links include: Home, About, Services, Portfolio, Pricing, Blog, Contact
-- **And** the active link (Home) shows a yellow underline accent (`#FFC107`)
-- **And** the navbar is sticky on scroll with white background
+
+- **GIVEN** the user loads the WhiteRoom homepage
+- **THEN** the navbar shows the logo "CLEANING COMPANY" (dark + yellow text) on the left
+- **AND** navigation links include: Home, About, Services, Portfolio, Pricing, Blog, Contact
+- **AND** the active link (Home) shows a yellow underline accent (`#FFC107`)
+- **AND** the navbar is sticky on scroll with white background
 
 #### Scenario: Hero section displays headline and CTA
-- **Given** the user views the hero section
-- **Then** a full-viewport background photo fills the area (cleaner with supplies)
-- **And** a subtitle "Leave the house cleaning chores to us" appears in white
-- **And** a headline "Let us do the dirty work, so you don't have to." appears in white bold
-- **And** a "LEARN MORE" button appears in blue with white text
+
+- **GIVEN** the user views the hero section
+- **THEN** a full-viewport background photo fills the area (cleaner with supplies)
+- **AND** a subtitle "Leave the house cleaning chores to us" appears in white
+- **AND** a headline "Let us do the dirty work, so you don't have to." appears in white bold
+- **AND** a "LEARN MORE" button appears in blue with white text
 
 #### Scenario: Appointment booking bar
-- **Given** the user scrolls past the hero
-- **Then** a full-width white booking bar appears
-- **And** four fields are shown: Name (text), Phone Number (text), Select Services (dropdown), Select Cleaners (dropdown)
-- **And** a blue "MAKE AN APPOINTMENT" button appears at the right end
-- **And** the bar is visually distinct with a subtle border or shadow
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** a full-width white booking bar appears
+- **AND** four fields are shown: Name (text), Phone Number (text), Select Services (dropdown), Select Cleaners (dropdown)
+- **AND** a blue "MAKE AN APPOINTMENT" button appears at the right end
+- **AND** the bar is visually distinct with a subtle border or shadow
 
 #### Scenario: Welcome / About section
-- **Given** the user scrolls to the welcome section
-- **Then** a two-column layout appears: photo of a cleaner on the left, text on the right
-- **And** a blue uppercase caption "WELCOME TO CLEANING COMPANY" appears
-- **And** a heading "Let's make you fresher than ever" appears in bold dark text
-- **And** a body paragraph describes the cleaning service
-- **And** a floating blue "Business Hours" box overlaps the left column with yellow heading text
+
+- **GIVEN** the user scrolls to the welcome section
+- **THEN** a two-column layout appears: photo of a cleaner on the left, text on the right
+- **AND** a blue uppercase caption "WELCOME TO CLEANING COMPANY" appears
+- **AND** a heading "Let's make you fresher than ever" appears in bold dark text
+- **AND** a body paragraph describes the cleaning service
+- **AND** a floating blue "Business Hours" box overlaps the left column with yellow heading text
 
 #### Scenario: Services section displays cleaning services
-- **Given** the user scrolls to the services section
-- **Then** a section heading appears (e.g., "Our Services" or "What We Offer")
-- **And** service cards display with icons and descriptions
-- **And** each card has an icon, title, and brief description
-- **And** the section has a light background
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a section heading appears (e.g., "Our Services" or "What We Offer")
+- **AND** service cards display with icons and descriptions
+- **AND** each card has an icon, title, and brief description
+- **AND** the section has a light background
 
 #### Scenario: Gallery / Portfolio section
-- **Given** the user scrolls to the gallery section
-- **Then** a grid of work samples or before/after images appears
-- **And** images are responsive and arranged in a masonry or grid layout
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a grid of work samples or before/after images appears
+- **AND** images are responsive and arranged in a masonry or grid layout
 
 #### Scenario: Testimonials section
-- **Given** the user scrolls to the testimonials section
-- **Then** customer testimonials appear with quotes, names, and roles
-- **And** the section has a distinct background treatment
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** customer testimonials appear with quotes, names, and roles
+- **AND** the section has a distinct background treatment
 
 #### Scenario: Contact section with form or map
-- **Given** the user scrolls to the contact section
-- **Then** a contact form or Google Maps embed appears
-- **And** contact details (address, phone, email) are displayed
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a contact form or Google Maps embed appears
+- **AND** contact details (address, phone, email) are displayed
 
 #### Scenario: Footer displays brand and navigation
-- **Given** the user scrolls to the footer
-- **Then** the footer has a dark background
-- **And** multiple columns appear with navigation links
-- **And** a copyright line appears at the bottom center
-- **And** the footer links to Component Dock (replacing Colorlib attribution)
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** multiple columns appear with navigation links
+- **AND** a copyright line appears at the bottom center
+- **AND** the footer links to Component Dock (replacing Colorlib attribution)
 
 ## Verification Checklist
 

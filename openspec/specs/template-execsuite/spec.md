@@ -65,117 +65,107 @@ Recreation of ColorLib "Corporate" template as a React 19 + Vite + Tailwind 4 + 
 10. **Contact Section** — Split layout: left = Google Map embed, right = contact form (name, email, subject, message textarea, "Send Message" primary button)
 11. **Footer** — Dark `#222` background, 3 columns (About Us text, Contact Us with phone numbers, Newsletter with email input + submit), bottom bar with copyright + Component Dock attribution + social icons
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with correct links
-```gherkin
-Given the user visits the ExecSuite landing page
-Then the navbar is visible with the logo and "ExecSuite" brand text
-And navigation links "Home", "About", "We Offer", "Portfolio", "Recent Work", "Contact" are displayed
-And the navbar becomes sticky on scroll
-```
+### Feature: ExecSuite template behaviour
 
-### Scenario: Hero section displays correctly
-```gherkin
-Given the user sees the hero section
-Then a full-screen background image with dark overlay is displayed
-And the subtitle "Discover the Colorful World" is shown
-And the heading "Build Your Dream" is prominent
-And a "Discover Now" pill button is visible
-When the user clicks "Discover Now"
-Then the page scrolls to the about section
-```
+#### Scenario: Navbar renders with correct links
 
-### Scenario: About section shows split layout
-```gherkin
-Given the user scrolls to the about section
-Then a two-column layout is displayed
-And the left column shows an image
-And the right column shows the heading with gradient-accent text
-And two feature items (Expert Services, Great Support) are shown with icons
-```
+- **GIVEN** the user visits the ExecSuite landing page
+- **THEN** the navbar is visible with the logo and "ExecSuite" brand text
+- **AND** navigation links "Home", "About", "We Offer", "Portfolio", "Recent Work", "Contact" are displayed
+- **AND** the navbar becomes sticky on scroll
 
-### Scenario: Services section displays four service cards
-```gherkin
-Given the user scrolls to the services section
-Then the heading "What we can offer for you" is displayed
-And 4 service cards are shown in a grid
-And each card has an icon, title, description, and "View Details" button
-When the user hovers over a service card
-Then the icon color changes to the brand gradient
-```
+#### Scenario: Hero section displays correctly
 
-### Scenario: Feature images section renders alternating layout
-```gherkin
-Given the user scrolls to the features section
-Then a dark background section with 4 columns is displayed
-And the layout alternates between image and text blocks
-And each text block has a heading and paragraph
-```
+- **GIVEN** the user sees the hero section
+- **THEN** a full-screen background image with dark overlay is displayed
+- **AND** the subtitle "Discover the Colorful World" is shown
+- **AND** the heading "Build Your Dream" is prominent
+- **AND** a "Discover Now" pill button is visible
+- **WHEN** the user clicks "Discover Now"
+- **THEN** the page scrolls to the about section
 
-### Scenario: Portfolio gallery displays images
-```gherkin
-Given the user scrolls to the portfolio section
-Then the heading "Our Recent Works may impress you" is displayed
-And 6 portfolio images are shown in a masonry grid
-When the user hovers over a portfolio image
-Then an expand icon overlay appears
-```
+#### Scenario: About section shows split layout
 
-### Scenario: Statistics counters animate
-```gherkin
-Given the user scrolls to the statistics section
-Then 5 counter values are displayed on a gradient background
-And each counter shows: a number and a label
-And the numbers animate counting up when visible
-```
+- **GIVEN** the user scrolls to the about section
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows an image
+- **AND** the right column shows the heading with gradient-accent text
+- **AND** two feature items (Expert Services, Great Support) are shown with icons
 
-### Scenario: Recent work cards display correctly
-```gherkin
-Given the user scrolls to the recent work section
-Then 3 work cards are displayed
-And each card has a background image with overlay content
-And each card shows a title, description, author avatar, author name, and date
-```
+#### Scenario: Services section displays four service cards
 
-### Scenario: Brand logos section displays
-```gherkin
-Given the user scrolls to the brand logos section
-Then 5 partner logos are shown in a horizontal row
-And logos are grayscale by default
-When the user hovers over a logo
-Then it transitions to full color
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading "What we can offer for you" is displayed
+- **AND** 4 service cards are shown in a grid
+- **AND** each card has an icon, title, description, and "View Details" button
+- **WHEN** the user hovers over a service card
+- **THEN** the icon color changes to the brand gradient
 
-### Scenario: Contact section with form and map
-```gherkin
-Given the user scrolls to the contact section
-Then a split layout with map on the left and form on the right is displayed
-And the form has fields for name, email, subject, and message
-And a "Send Message" button is visible
-When the user fills in all fields and clicks "Send Message"
-Then the form submission is handled without page reload
-```
+#### Scenario: Feature images section renders alternating layout
 
-### Scenario: Footer renders correctly
-```gherkin
-Given the user views the footer
-Then a dark background section with 3 columns is displayed
-And columns show About Us, Contact Us (with phone numbers), and Newsletter
-And a bottom bar with copyright text and social media icons is visible
-And a Component Dock attribution link is present
-```
+- **GIVEN** the user scrolls to the features section
+- **THEN** a dark background section with 4 columns is displayed
+- **AND** the layout alternates between image and text blocks
+- **AND** each text block has a heading and paragraph
 
-### Scenario: Responsive layout adapts to mobile
-```gherkin
-Given the user views the page on a mobile viewport (< 768px)
-Then the navbar collapses into a hamburger menu
-And the about section stacks vertically
-And the services grid becomes single-column
-And the portfolio grid becomes single-column
-And the contact section stacks vertically
-And footer columns stack vertically
-```
+#### Scenario: Portfolio gallery displays images
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** the heading "Our Recent Works may impress you" is displayed
+- **AND** 6 portfolio images are shown in a masonry grid
+- **WHEN** the user hovers over a portfolio image
+- **THEN** an expand icon overlay appears
+
+#### Scenario: Statistics counters animate
+
+- **GIVEN** the user scrolls to the statistics section
+- **THEN** 5 counter values are displayed on a gradient background
+- **AND** each counter shows: a number and a label
+- **AND** the numbers animate counting up when visible
+
+#### Scenario: Recent work cards display correctly
+
+- **GIVEN** the user scrolls to the recent work section
+- **THEN** 3 work cards are displayed
+- **AND** each card has a background image with overlay content
+- **AND** each card shows a title, description, author avatar, author name, and date
+
+#### Scenario: Brand logos section displays
+
+- **GIVEN** the user scrolls to the brand logos section
+- **THEN** 5 partner logos are shown in a horizontal row
+- **AND** logos are grayscale by default
+- **WHEN** the user hovers over a logo
+- **THEN** it transitions to full color
+
+#### Scenario: Contact section with form and map
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a split layout with map on the left and form on the right is displayed
+- **AND** the form has fields for name, email, subject, and message
+- **AND** a "Send Message" button is visible
+- **WHEN** the user fills in all fields and clicks "Send Message"
+- **THEN** the form submission is handled without page reload
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the user views the footer
+- **THEN** a dark background section with 3 columns is displayed
+- **AND** columns show About Us, Contact Us (with phone numbers), and Newsletter
+- **AND** a bottom bar with copyright text and social media icons is visible
+- **AND** a Component Dock attribution link is present
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the about section stacks vertically
+- **AND** the services grid becomes single-column
+- **AND** the portfolio grid becomes single-column
+- **AND** the contact section stacks vertically
+- **AND** footer columns stack vertically
 
 ## Verification Checklist
 

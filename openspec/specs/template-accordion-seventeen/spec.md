@@ -22,7 +22,7 @@ Recreation of ColorLib **Bootstrap Accordion V17** (`https://colorlib.com/wp/tem
    - Item 3: "How to link your paypal and bank account?" (Collapsed with Plus icon)
 3. **Footer Section**: Branded footer linking `https://www.componentdock.com/`.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Header Display
 

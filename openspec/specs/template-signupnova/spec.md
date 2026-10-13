@@ -38,71 +38,65 @@ Single centered card on light gray background. Two-column layout:
    - CTA button: "Create an account" (solid purple, rounded)
    - Footer text: "I'm already a member! Sign In" (link)
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders signup card
-```gherkin
-Given the user visits the SignupNova page
-Then a centered card is displayed on a light gray background
-And the card has two panels side by side
-```
+### Feature: SignupNova template behaviour
 
-### Scenario: Left panel displays welcome content
-```gherkin
-Given the user views the left panel
-Then a heading "Welcome to signup form" is visible
-And a welcome description paragraph is shown below the heading
-And the panel has a purple gradient overlay on a background image
-And all text in the left panel is white
-```
+#### Scenario: Page renders signup card
 
-### Scenario: Social login options
-```gherkin
-Given the user views the right panel
-Then "Signup with this services" heading is displayed
-And three social login icons are shown (Google, Facebook, Twitter)
-And an "or" divider with horizontal lines separates social from form
-```
+- **GIVEN** the user visits the SignupNova page
+- **THEN** a centered card is displayed on a light gray background
+- **AND** the card has two panels side by side
 
-### Scenario: Form fields render correctly
-```gherkin
-Given the user views the signup form
-Then a "Full Name" input field is visible
-And a "Username" input field is visible
-And "Full Name" and "Username" appear side by side on the same row
-And an "Email Address" input field is visible (full width)
-And a "Password" input field is visible (full width)
-```
+#### Scenario: Left panel displays welcome content
 
-### Scenario: Terms of service checkbox
-```gherkin
-Given the user views the signup form
-Then a checkbox labeled "I Agree All Statements In Terms Of Service" is displayed
-And the checkbox is styled with the brand purple color when checked
-```
+- **GIVEN** the user views the left panel
+- **THEN** a heading "Welcome to signup form" is visible
+- **AND** a welcome description paragraph is shown below the heading
+- **AND** the panel has a purple gradient overlay on a background image
+- **AND** all text in the left panel is white
 
-### Scenario: Create account button
-```gherkin
-Given the user views the signup form
-Then a "Create an account" button is displayed
-And the button has solid purple background and white text
-And the button has rounded corners
-```
+#### Scenario: Social login options
 
-### Scenario: Sign in link
-```gherkin
-Given the user views the signup form
-Then "I'm already a member! Sign In" text is displayed below the button
-And "Sign In" is a styled link in the brand purple color
-```
+- **GIVEN** the user views the right panel
+- **THEN** "Signup with this services" heading is displayed
+- **AND** three social login icons are shown (Google, Facebook, Twitter)
+- **AND** an "or" divider with horizontal lines separates social from form
 
-### Scenario: Accessibility
-```gherkin
-Given the user navigates with keyboard only
-Then all form inputs are focusable via Tab key
-And the checkbox can be toggled with Space key
-And the social login buttons have accessible labels
-```
+#### Scenario: Form fields render correctly
+
+- **GIVEN** the user views the signup form
+- **THEN** a "Full Name" input field is visible
+- **AND** a "Username" input field is visible
+- **AND** "Full Name" and "Username" appear side by side on the same row
+- **AND** an "Email Address" input field is visible (full width)
+- **AND** a "Password" input field is visible (full width)
+
+#### Scenario: Terms of service checkbox
+
+- **GIVEN** the user views the signup form
+- **THEN** a checkbox labeled "I Agree All Statements In Terms Of Service" is displayed
+- **AND** the checkbox is styled with the brand purple color when checked
+
+#### Scenario: Create account button
+
+- **GIVEN** the user views the signup form
+- **THEN** a "Create an account" button is displayed
+- **AND** the button has solid purple background and white text
+- **AND** the button has rounded corners
+
+#### Scenario: Sign in link
+
+- **GIVEN** the user views the signup form
+- **THEN** "I'm already a member! Sign In" text is displayed below the button
+- **AND** "Sign In" is a styled link in the brand purple color
+
+#### Scenario: Accessibility
+
+- **GIVEN** the user navigates with keyboard only
+- **THEN** all form inputs are focusable via Tab key
+- **AND** the checkbox can be toggled with Space key
+- **AND** the social login buttons have accessible labels
 
 ## Verification checklist
 

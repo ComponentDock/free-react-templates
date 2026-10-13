@@ -45,69 +45,79 @@ Extracted from the live preview stylesheet (`main.css`) and rendered DOM:
 - Blog: 3-column cards with image, category tag, title, date/author.
 - Footer: 4-column layout (logo/about, quick links, categories, download app + social). Dark background.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Urbanscape — City Directory Landing Page
 
 #### Scenario: Navbar displays correctly
-- **Given** the user visits the homepage
-- **Then** the navbar shows the logo, navigation links (Home, About, Categories, Listing, Page, Blog, Contact), an "+ add Listing" button, and "Sign in or Register" link
-- **And** the navbar is transparent when overlaid on the hero
+
+- **GIVEN** the user visits the homepage
+- **THEN** the navbar shows the logo, navigation links (Home, About, Categories, Listing, Page, Blog, Contact), an "+ add Listing" button, and "Sign in or Register" link
+- **AND** the navbar is transparent when overlaid on the hero
 
 #### Scenario: Hero section renders with search functionality
-- **Given** the user views the hero section
-- **Then** a script-font subheading "Explore the city" is displayed
-- **And** the heading "Discover Great Places" is displayed
-- **And** a search form with text input, category dropdown, and search button is visible
-- **And** the search button is styled with the accent red color (#e6373d)
+
+- **GIVEN** the user views the hero section
+- **THEN** a script-font subheading "Explore the city" is displayed
+- **AND** the heading "Discover Great Places" is displayed
+- **AND** a search form with text input, category dropdown, and search button is visible
+- **AND** the search button is styled with the accent red color (#e6373d)
 
 #### Scenario: Popular Locations section displays location cards
-- **Given** the user scrolls to the Popular Locations section
-- **Then** a subheading "Most visited places" and heading "Popular Locations" are shown
-- **And** 6 location cards are displayed in a grid
-- **And** each card shows a city image, city name, and location count badge
+
+- **GIVEN** the user scrolls to the Popular Locations section
+- **THEN** a subheading "Most visited places" and heading "Popular Locations" are shown
+- **AND** 6 location cards are displayed in a grid
+- **AND** each card shows a city image, city name, and location count badge
 
 #### Scenario: How It Works section explains the process
-- **Given** the user scrolls to the How It Works section
-- **Then** a subheading "Easy to explore" and heading "How It Works" are shown
-- **And** 3 steps are displayed: "Choose a Category", "What You Want", "Go Out & Explore"
-- **And** each step has an icon, title, and description text
+
+- **GIVEN** the user scrolls to the How It Works section
+- **THEN** a subheading "Easy to explore" and heading "How It Works" are shown
+- **AND** 3 steps are displayed: "Choose a Category", "What You Want", "Go Out & Explore"
+- **AND** each step has an icon, title, and description text
 
 #### Scenario: Featured Categories section shows category cards
-- **Given** the user scrolls to the Featured Categories section
-- **Then** a subheading and heading "Featured Categories" are shown
-- **And** 4 category cards are displayed in a grid
-- **And** each card shows an icon, category title, description, and "View Details" link
+
+- **GIVEN** the user scrolls to the Featured Categories section
+- **THEN** a subheading and heading "Featured Categories" are shown
+- **AND** 4 category cards are displayed in a grid
+- **AND** each card shows an icon, category title, description, and "View Details" link
 
 #### Scenario: Statistics section highlights site usage
-- **Given** the user scrolls to the statistics/info section
-- **Then** a heading about millions of visitors is displayed
-- **And** two feature items with icons and descriptions are shown
+
+- **GIVEN** the user scrolls to the statistics/info section
+- **THEN** a heading about millions of visitors is displayed
+- **AND** two feature items with icons and descriptions are shown
 
 #### Scenario: Testimonials carousel displays client quotes
-- **Given** the user scrolls to the testimonials section
-- **Then** a subheading "Our client testimonials" and heading "What our client say" are shown
-- **And** a testimonial carousel displays with quote text, founder image, name, and role
-- **And** navigation arrows allow cycling through testimonials
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a subheading "Our client testimonials" and heading "What our client say" are shown
+- **AND** a testimonial carousel displays with quote text, founder image, name, and role
+- **AND** navigation arrows allow cycling through testimonials
 
 #### Scenario: Newsletter subscription form is functional
-- **Given** the user scrolls to the newsletter section
-- **Then** a subheading "Subscribe out newsletter" and heading "Subscribe For Newsletter" are shown
-- **And** an email input field and "Send Now" button are visible
-- **And** the section has a dark background
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** a subheading "Subscribe out newsletter" and heading "Subscribe For Newsletter" are shown
+- **AND** an email input field and "Send Now" button are visible
+- **AND** the section has a dark background
 
 #### Scenario: Blog section displays recent posts
-- **Given** the user scrolls to the blog section
-- **Then** a subheading "Our blog" and heading "News and tips" are shown
-- **And** 3 blog post cards are displayed in a grid
-- **And** each card shows an image, category tag, title, date, and author
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a subheading "Our blog" and heading "News and tips" are shown
+- **AND** 3 blog post cards are displayed in a grid
+- **AND** each card shows an image, category tag, title, date, and author
 
 #### Scenario: Footer provides navigation and social links
-- **Given** the user scrolls to the footer
-- **Then** the footer shows 4 columns: logo/about, Quick Links, Categories, and Download App
-- **And** social media icon links are displayed
-- **And** a copyright notice with Component Dock attribution is shown
-- **And** the footer links to https://www.componentdock.com/
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer shows 4 columns: logo/about, Quick Links, Categories, and Download App
+- **AND** social media icon links are displayed
+- **AND** a copyright notice with Component Dock attribution is shown
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification Checklist
 

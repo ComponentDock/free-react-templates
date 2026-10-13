@@ -38,105 +38,95 @@ Recreation of ColorLib's **Rooftop** restaurant template as a single-page React
 | Footer bg | `#04091e` | Deep navy |
 | Footer text | `#fff` | Widget headings uppercase |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Skydeck — Restaurant Landing Page
 
 #### Scenario: Header / Navbar renders correctly
-```
-Given the user visits the Skydeck page
-Then the header displays a centered logo image
-And the left nav contains links: Home, Menu, About
-And the right nav contains: Pages (dropdown with Contact, Elements), Blog (dropdown with Blog, Blog Detail), Gallery
-And the navbar collapses into a hamburger menu on mobile
-```
+
+- **GIVEN** the user visits the Skydeck page
+- **THEN** the header displays a centered logo image
+- **AND** the left nav contains links: Home, Menu, About
+- **AND** the right nav contains: Pages (dropdown with Contact, Elements), Blog (dropdown with Blog, Blog Detail), Gallery
+- **AND** the navbar collapses into a hamburger menu on mobile
 
 #### Scenario: Hero / Banner section
-```
-Given the user sees the hero banner
-Then it displays a full-width dark background image
-And the heading "Skydeck" is centered in Playfair Display, white, 72px
-And a horizontal rule separates the heading from the subtitle
-And the subtitle reads "A Fine Dining Restaurant" in Roboto, white
-And a scroll-down arrow icon links to the menu section
-And fixed side links show "View Menu" and "Book a Table" on desktop
-```
+
+- **GIVEN** the user sees the hero banner
+- **THEN** it displays a full-width dark background image
+- **AND** the heading "Skydeck" is centered in Playfair Display, white, 72px
+- **AND** a horizontal rule separates the heading from the subtitle
+- **AND** the subtitle reads "A Fine Dining Restaurant" in Roboto, white
+- **AND** a scroll-down arrow icon links to the menu section
+- **AND** fixed side links show "View Menu" and "Book a Table" on desktop
 
 #### Scenario: Menu section
-```
-Given the user scrolls to the menu section
-Then a left column shows the title "Daily Food Courses with Drinks" in Playfair Display
-And a paragraph of description text appears below the title
-And a "See Full Menu" primary button (gold, uppercase, sharp corners) is rendered
-And the right column displays menu categories: Appetizer, Main Courses, Drinks & Juices
-And each category contains at least 2 menu items with name, dotted price, and description
-```
+
+- **GIVEN** the user scrolls to the menu section
+- **THEN** a left column shows the title "Daily Food Courses with Drinks" in Playfair Display
+- **AND** a paragraph of description text appears below the title
+- **AND** a "See Full Menu" primary button (gold, uppercase, sharp corners) is rendered
+- **AND** the right column displays menu categories: Appetizer, Main Courses, Drinks & Juices
+- **AND** each category contains at least 2 menu items with name, dotted price, and description
 
 #### Scenario: Gallery section
-```
-Given the user views the gallery section
-Then 4 food/restaurant images are displayed in a staggered 2-column grid
-And the first image has a top margin offset (-480px visual push)
-And the third image has a top margin offset (-280px visual push)
-And each image shows an overlay on hover with a cross/zoom icon
-And clicking the icon opens a lightbox/popup view
-```
+
+- **GIVEN** the user views the gallery section
+- **THEN** 4 food/restaurant images are displayed in a staggered 2-column grid
+- **AND** the first image has a top margin offset (-480px visual push)
+- **AND** the third image has a top margin offset (-280px visual push)
+- **AND** each image shows an overlay on hover with a cross/zoom icon
+- **AND** clicking the icon opens a lightbox/popup view
 
 #### Scenario: Reservation form section
-```
-Given the user reaches the reservation section
-Then the left side shows a booking form with fields: Event Name, Event Date (with calendar icon), Meal Preferences (select), Number of Guests (select), Budget, Contact Name, Email Address, Phone Number, Message (textarea)
-And a "Send Request" dark button (black bg, white text, sharp corners) is at the bottom-right
-And the right side displays the title "Book a Table or Rooms for private dining" in Playfair Display
-And a description paragraph appears below the title
-```
+
+- **GIVEN** the user reaches the reservation section
+- **THEN** the left side shows a booking form with fields: Event Name, Event Date (with calendar icon), Meal Preferences (select), Number of Guests (select), Budget, Contact Name, Email Address, Phone Number, Message (textarea)
+- **AND** a "Send Request" dark button (black bg, white text, sharp corners) is at the bottom-right
+- **AND** the right side displays the title "Book a Table or Rooms for private dining" in Playfair Display
+- **AND** a description paragraph appears below the title
 
 #### Scenario: Chef's Quotes section
-```
-Given the user scrolls to the chef's quotes section
-Then the left column shows the heading "Chef's Quotes" in Playfair Display
-And a quote paragraph is displayed below the heading
-And a signature image appears below the quote
-And the right column shows a chef portrait image
-```
+
+- **GIVEN** the user scrolls to the chef's quotes section
+- **THEN** the left column shows the heading "Chef's Quotes" in Playfair Display
+- **AND** a quote paragraph is displayed below the heading
+- **AND** a signature image appears below the quote
+- **AND** the right column shows a chef portrait image
 
 #### Scenario: Call to Action carousel
-```
-Given the user reaches the CTA carousel
-Then it displays food images with overlay text boxes
-And each item shows a category title (e.g. "Main Course") and description
-And carousel navigation arrows allow swiping between items
-```
+
+- **GIVEN** the user reaches the CTA carousel
+- **THEN** it displays food images with overlay text boxes
+- **AND** each item shows a category title (e.g. "Main Course") and description
+- **AND** carousel navigation arrows allow swiping between items
 
 #### Scenario: Contact section
-```
-Given the user views the contact section
-Then the left column shows a map placeholder
-And the right column shows the restaurant name "Skydeck Fine Dining Restaurant" in Playfair Display
-And address lines are displayed (placeholder text)
-And phone numbers are listed
-And email addresses are shown
-```
+
+- **GIVEN** the user views the contact section
+- **THEN** the left column shows a map placeholder
+- **AND** the right column shows the restaurant name "Skydeck Fine Dining Restaurant" in Playfair Display
+- **AND** address lines are displayed (placeholder text)
+- **AND** phone numbers are listed
+- **AND** email addresses are shown
 
 #### Scenario: Footer
-```
-Given the user reaches the footer
-Then the footer has a dark navy background (#04091e)
-And it contains 4 widget columns: Top Products, Quick Links, Features, Resources
-And each column has a heading (uppercase, white, Roboto 500) and a list of links
-And the bottom includes a copyright line
-And the footer includes a link to https://www.componentdock.com/ branded as "Component Dock"
-```
+
+- **GIVEN** the user reaches the footer
+- **THEN** the footer has a dark navy background (#04091e)
+- **AND** it contains 4 widget columns: Top Products, Quick Links, Features, Resources
+- **AND** each column has a heading (uppercase, white, Roboto 500) and a list of links
+- **AND** the bottom includes a copyright line
+- **AND** the footer includes a link to https://www.componentdock.com/ branded as "Component Dock"
 
 #### Scenario: Responsive behavior
-```
-Given the user views on mobile
-Then the navbar collapses into a hamburger toggle
-Then the gallery switches to a single-column layout
-Then the reservation form stacks vertically
-Then the footer columns stack into 2-column grid
-And all section paddings reduce appropriately
-```
+
+- **GIVEN** the user views on mobile
+- **THEN** the navbar collapses into a hamburger toggle
+- **THEN** the gallery switches to a single-column layout
+- **THEN** the reservation form stacks vertically
+- **THEN** the footer columns stack into 2-column grid
+- **AND** all section paddings reduce appropriately
 
 ## Verification checklist
 

@@ -50,51 +50,58 @@ The original screenshot shows:
      - "Contact us" heading (white)
      - Contact form: Name, Email, Subject, Message textarea, Send button
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Seagrass template behaviour
+
 Feature: Seagrass footer template
-  As a visitor I see a light footer with a teal contact sidebar
+As a visitor I see a light footer with a teal contact sidebar
 
-  Background:
-    Given the Seagrass page is loaded
+Background:
+- **GIVEN** the Seagrass page is loaded
 
-  Scenario: Hero section displays
-    Then a white hero section is visible
-    And the hero contains a centered heading
+#### Scenario: Hero section displays
 
-  Scenario: Footer background
-    Then the footer background is light gray-green (#f1f6f5)
+- **THEN** a white hero section is visible
+- **AND** the hero contains a centered heading
 
-  Scenario: About us section
-    Then the footer displays an "About us" heading
-    And a description paragraph is shown below the heading
-    And three social icons (Twitter, Facebook, Instagram) are shown
+#### Scenario: Footer background
 
-  Scenario: Link columns
-    Then three link columns are displayed: "Discover", "About", "Resources"
-    And "Discover" contains links: "Buy & Sell", "Merchant", "Giving back", "Help & Support"
-    And "About" contains links: "Staff", "Team", "Careers", "Blog"
-    And "Resources" contains links: "Security", "Global", "Charts", "Privacy"
-    And all link text color is rgba(0, 0, 0, 0.3)
-    And hovering a link changes color to teal (#12cc94)
+- **THEN** the footer background is light gray-green (#f1f6f5)
 
-  Scenario: Contact sidebar
-    Then a right sidebar has teal (#12cc94) background
-    And the sidebar displays a white "Contact us" heading
-    And the sidebar contains a contact form
-    And the form has fields: Name, Email, Subject, Message
-    And form inputs are white with 5px border-radius
-    And the Send button is blue (#2f89fc)
+#### Scenario: About us section
 
-  Scenario: Copyright line
-    Then a copyright line is displayed at the footer bottom
-    And the copyright includes the current year
+- **THEN** the footer displays an "About us" heading
+- **AND** a description paragraph is shown below the heading
+- **AND** three social icons (Twitter, Facebook, Instagram) are shown
 
-  Scenario: Component Dock footer link
-    Then the footer includes a link to https://www.componentdock.com/
-    And the link text references "Component Dock"
-```
+#### Scenario: Link columns
+
+- **THEN** three link columns are displayed: "Discover", "About", "Resources"
+- **AND** "Discover" contains links: "Buy & Sell", "Merchant", "Giving back", "Help & Support"
+- **AND** "About" contains links: "Staff", "Team", "Careers", "Blog"
+- **AND** "Resources" contains links: "Security", "Global", "Charts", "Privacy"
+- **AND** all link text color is rgba(0, 0, 0, 0.3)
+- **AND** hovering a link changes color to teal (#12cc94)
+
+#### Scenario: Contact sidebar
+
+- **THEN** a right sidebar has teal (#12cc94) background
+- **AND** the sidebar displays a white "Contact us" heading
+- **AND** the sidebar contains a contact form
+- **AND** the form has fields: Name, Email, Subject, Message
+- **AND** form inputs are white with 5px border-radius
+- **AND** the Send button is blue (#2f89fc)
+
+#### Scenario: Copyright line
+
+- **THEN** a copyright line is displayed at the footer bottom
+- **AND** the copyright includes the current year
+
+#### Scenario: Component Dock footer link
+
+- **THEN** the footer includes a link to https://www.componentdock.com/
+- **AND** the link text references "Component Dock"
 
 ## Verification checklist
 

@@ -31,52 +31,76 @@ Recreation of the ColorLib "Contact Form V20" template as a React 19 + Vite + Ta
 | Overall aesthetic | Minimal, clean, centered card floating over a map background              |
 | Font family       | Sans-serif; fallback to system fonts (Poppins from Google Fonts)          |
 
-## Gherkin requirements
+## Requirements
 
 ### Background
-- Given the page loads
-- Then a full-viewport map background is visible
-- And a centered white contact form card is displayed over the map
+
+#### Scenario: Background
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport map background is visible
+- **AND** a centered white contact form card is displayed over the map
 
 ### Card structure
-- Given the contact form card is visible
-- Then an envelope/mail icon is displayed at the top center of the card
-- And a heading "Drop Us A Message" appears below the icon
-- And the heading is centered and styled with a dark sans-serif font
+
+#### Scenario: Card structure
+
+- **GIVEN** the contact form card is visible
+- **THEN** an envelope/mail icon is displayed at the top center of the card
+- **AND** a heading "Drop Us A Message" appears below the icon
+- **AND** the heading is centered and styled with a dark sans-serif font
 
 ### Name field
-- Given the form card is visible
-- Then a text input labeled "Name" is displayed
-- And the input has a placeholder "Name"
-- And the input has a light border and white background
+
+#### Scenario: Name field
+
+- **GIVEN** the form card is visible
+- **THEN** a text input labeled "Name" is displayed
+- **AND** the input has a placeholder "Name"
+- **AND** the input has a light border and white background
 
 ### Email field
-- Given the form card is visible
-- Then a text input labeled "Email Address" is displayed
-- And the input has a placeholder "Email Address"
-- And the Name and Email fields are displayed side by side in a row
+
+#### Scenario: Email field
+
+- **GIVEN** the form card is visible
+- **THEN** a text input labeled "Email Address" is displayed
+- **AND** the input has a placeholder "Email Address"
+- **AND** the Name and Email fields are displayed side by side in a row
 
 ### Message textarea
-- Given the form card is visible
-- Then a textarea labeled "Write Us A Message" is displayed
-- And the textarea spans the full width of the form
-- And the textarea has a placeholder "Write Us A Message"
+
+#### Scenario: Message textarea
+
+- **GIVEN** the form card is visible
+- **THEN** a textarea labeled "Write Us A Message" is displayed
+- **AND** the textarea spans the full width of the form
+- **AND** the textarea has a placeholder "Write Us A Message"
 
 ### Send button
-- Given the form card is visible
-- Then a "Send" button is displayed at the bottom-right of the form
-- And the button has a red/coral background with white text
-- And the button is compact/small sized
+
+#### Scenario: Send button
+
+- **GIVEN** the form card is visible
+- **THEN** a "Send" button is displayed at the bottom-right of the form
+- **AND** the button has a red/coral background with white text
+- **AND** the button is compact/small sized
 
 ### Layout and styling
-- Given the page is displayed at any viewport width
-- Then the map background fills the entire viewport
-- And the contact form card remains centered horizontally and vertically
-- And the card has rounded corners and a subtle shadow
+
+#### Scenario: Layout and styling
+
+- **GIVEN** the page is displayed at any viewport width
+- **THEN** the map background fills the entire viewport
+- **AND** the contact form card remains centered horizontally and vertically
+- **AND** the card has rounded corners and a subtle shadow
 
 ### Footer
-- Given the page is displayed
-- Then a footer links to https://www.componentdock.com/ (branded "Component Dock")
+
+#### Scenario: Footer
+
+- **GIVEN** the page is displayed
+- **THEN** a footer links to https://www.componentdock.com/ (branded "Component Dock")
 
 ## Verification checklist
 

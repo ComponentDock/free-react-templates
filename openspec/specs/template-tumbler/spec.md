@@ -88,119 +88,135 @@ From the ColorLib preview DOM analysis:
 - **Footer:** Dark navy (#052336), 4 columns: About (logo + description),
   Services links, Quick Links, Contact info. Social icons. Copyright bar.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Tumbler template behaviour
+
 Feature: Tumbler Locksmith Services Template
 
-  Background:
-    Given the user visits the Tumbler homepage
+Background:
+- **GIVEN** the user visits the Tumbler homepage
 
-  # ── Page Preloader ──
+**── Page Preloader ──**
 
-  Scenario: Page shows preloader while loading
-    Then a loading spinner should be visible
-    And it should disappear after page loads
+#### Scenario: Page shows preloader while loading
 
-  # ── Off-Canvas Menu ──
+- **THEN** a loading spinner should be visible
+- **AND** it should disappear after page loads
 
-  Scenario: Off-canvas menu is hidden by default
-    Then the sidebar menu should not be visible
+**── Off-Canvas Menu ──**
 
-  Scenario: Clicking hamburger opens off-canvas menu
-    When the user clicks the hamburger icon
-    Then the off-canvas menu should slide in from the right
-    And it should show the site logo
-    And mobile navigation links
-    And a phone number
+#### Scenario: Off-canvas menu is hidden by default
 
-  # ── Header ──
+- **THEN** the sidebar menu should not be visible
 
-  Scenario: Header displays logo and navigation
-    Then the header should show the site logo
-    And nav links: Home (active), About, Services, Shop, Pages, News, Contact
-    And a phone number
+#### Scenario: Clicking hamburger opens off-canvas menu
 
-  Scenario: Pages menu shows dropdown
-    When the user hovers over "Pages"
-    Then a dropdown should appear with: Cart, Checkout, Wishlist, Product Details
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the off-canvas menu should slide in from the right
+- **AND** it should show the site logo
+- **AND** mobile navigation links
+- **AND** a phone number
 
-  # ── Hero Slider ──
+**── Header ──**
 
-  Scenario: Hero slider shows 3 slides
-    Then the hero slider should display 3 slides
-    And each slide should have a background image
-    And a label text (e.g. "Best locksmith")
-    And a heading (e.g. "We Provide Best Locksmith Services")
-    And a "Contact us" button with gold (#ffc446) background
+#### Scenario: Header displays logo and navigation
 
-  # ── Filter Search ──
+- **THEN** the header should show the site logo
+- **AND** nav links: Home (active), About, Services, Shop, Pages, News, Contact
+- **AND** a phone number
 
-  Scenario: Filter search shows search form
-    Then a search bar should be visible
-    And it should have a Location dropdown
-    And a Service Type dropdown
-    And a Date input
-    And a Search button with gold accent
+#### Scenario: Pages menu shows dropdown
 
-  # ── Services ──
+- **WHEN** the user hovers over "Pages"
+- **THEN** a dropdown should appear with: Cart, Checkout, Wishlist, Product Details
 
-  Scenario: Services section shows 3 service items
-    Then the "Services We Offer" section should display 3 items
-    And each item should have an icon, title, and description
-    And items: Locksmith Services, Safes & Locks, Emergency Service
+**── Hero Slider ──**
 
-  # ── Choose Us ──
+#### Scenario: Hero slider shows 3 slides
 
-  Scenario: Choose Us section displays content
-    Then a "Why Choose Us" section should be visible
-    And it should contain descriptive text about the service
+- **THEN** the hero slider should display 3 slides
+- **AND** each slide should have a background image
+- **AND** a label text (e.g. "Best locksmith")
+- **AND** a heading (e.g. "We Provide Best Locksmith Services")
+- **AND** a "Contact us" button with gold (#ffc446) background
 
-  # ── Counter ──
+**── Filter Search ──**
 
-  Scenario: Counter shows 4 statistics
-    Then 4 counter items should be displayed
-    And each should show a number and label
-    And items: Years Experience, Clients, Projects, Awards
+#### Scenario: Filter search shows search form
 
-  # ── Product ──
+- **THEN** a search bar should be visible
+- **AND** it should have a Location dropdown
+- **AND** a Service Type dropdown
+- **AND** a Date input
+- **AND** a Search button with gold accent
 
-  Scenario: Product section shows product cards
-    Then product cards should be displayed in a grid
-    And each card should show an image, title, and price
+**── Services ──**
 
-  # ── Testimonial ──
+#### Scenario: Services section shows 3 service items
 
-  Scenario: Testimonial section shows customer reviews
-    Then a testimonials carousel should be visible
-    And each review should show a customer photo, name, and rating
+- **THEN** the "Services We Offer" section should display 3 items
+- **AND** each item should have an icon, title, and description
+- **AND** items: Locksmith Services, Safes & Locks, Emergency Service
 
-  # ── Latest ──
+**── Choose Us ──**
 
-  Scenario: Latest section shows blog posts
-    Then the "Latest News" section should display blog post cards
-    And each card should show an image, title, and date
+#### Scenario: Choose Us section displays content
 
-  # ── Call To Action ──
+- **THEN** a "Why Choose Us" section should be visible
+- **AND** it should contain descriptive text about the service
 
-  Scenario: CTA banner displays heading and button
-    Then a call-to-action banner should be visible
-    And it should have a dark navy (#052336) background
-    And a heading text
-    And a gold (#ffc446) button
+**── Counter ──**
 
-  # ── Footer ──
+#### Scenario: Counter shows 4 statistics
 
-  Scenario: Footer displays 4 columns
-    Then the footer should show 4 columns
-    And columns: About, Services, Quick Links, Contact
-    And social media icons
-    And a copyright bar
+- **THEN** 4 counter items should be displayed
+- **AND** each should show a number and label
+- **AND** items: Years Experience, Clients, Projects, Awards
 
-  Scenario: Footer has Component Dock attribution
-    Then the footer should link to https://www.componentdock.com/
-    And display "Component Dock" as the brand name
-```
+**── Product ──**
+
+#### Scenario: Product section shows product cards
+
+- **THEN** product cards should be displayed in a grid
+- **AND** each card should show an image, title, and price
+
+**── Testimonial ──**
+
+#### Scenario: Testimonial section shows customer reviews
+
+- **THEN** a testimonials carousel should be visible
+- **AND** each review should show a customer photo, name, and rating
+
+**── Latest ──**
+
+#### Scenario: Latest section shows blog posts
+
+- **THEN** the "Latest News" section should display blog post cards
+- **AND** each card should show an image, title, and date
+
+**── Call To Action ──**
+
+#### Scenario: CTA banner displays heading and button
+
+- **THEN** a call-to-action banner should be visible
+- **AND** it should have a dark navy (#052336) background
+- **AND** a heading text
+- **AND** a gold (#ffc446) button
+
+**── Footer ──**
+
+#### Scenario: Footer displays 4 columns
+
+- **THEN** the footer should show 4 columns
+- **AND** columns: About, Services, Quick Links, Contact
+- **AND** social media icons
+- **AND** a copyright bar
+
+#### Scenario: Footer has Component Dock attribution
+
+- **THEN** the footer should link to https://www.componentdock.com/
+- **AND** display "Component Dock" as the brand name
 
 ## Verification Checklist
 

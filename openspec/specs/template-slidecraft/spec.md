@@ -12,7 +12,7 @@ Built with Vite, React 19, Tailwind CSS 4, TypeScript, and Lucide React icons.
 - **Radii:** Rounded-xl (`0.75rem`) for cards, rounded-full for carousel pagination dots and buttons.
 - **Shadows:** Soft drop shadows (`shadow-lg`, `shadow-xl`) on carousel items and feature cards.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Portfolio Carousel Showcase
 
@@ -20,24 +20,24 @@ As a visitor, I want to browse featured creative projects and portfolio items vi
 
 #### Scenario: Viewing the Hero Section and Carousel
 
-- **Given** the user visits the SlideCraft homepage
-- **When** the page loads
-- **Then** the header displays the brand title, navigation links, and a CTA button
-- **And** the hero section features a prominent interactive carousel displaying project items with title, category, and background imagery
+- **GIVEN** the user visits the SlideCraft homepage
+- **WHEN** the page loads
+- **THEN** the header displays the brand title, navigation links, and a CTA button
+- **AND** the hero section features a prominent interactive carousel displaying project items with title, category, and background imagery
 
 #### Scenario: Interacting with Carousel Navigation
 
-- **Given** the user is viewing the portfolio carousel
-- **When** the user clicks the "Next" or "Previous" arrow buttons (or pagination dots)
-- **Then** the carousel smoothly transitions to the next/previous portfolio item
-- **And** the active slide indicator updates accordingly
+- **GIVEN** the user is viewing the portfolio carousel
+- **WHEN** the user clicks the "Next" or "Previous" arrow buttons (or pagination dots)
+- **THEN** the carousel smoothly transitions to the next/previous portfolio item
+- **AND** the active slide indicator updates accordingly
 
 #### Scenario: Exploring Project Details and Call to Action
 
-- **Given** a portfolio slide is displayed
-- **When** the user clicks "View Project" or inspects the project details
-- **Then** a detailed description or modal/preview appears
-- **And** the footer displays copyright and links to Component Dock (`https://www.componentdock.com/`)
+- **GIVEN** a portfolio slide is displayed
+- **WHEN** the user clicks "View Project" or inspects the project details
+- **THEN** a detailed description or modal/preview appears
+- **AND** the footer displays copyright and links to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

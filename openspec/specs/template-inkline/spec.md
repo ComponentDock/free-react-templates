@@ -74,106 +74,98 @@ website template.
    right (Facebook, Twitter, Dribbble, Behance) on dark squares (#1e1e1e),
    gradient hover.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Header renders with logo and navigation
-```gherkin
-Given the page loads
-When the header is rendered
-Then a logo image is displayed on the left
-And navigation links "Home", "Generic", "Elements" are visible on desktop
-And a hamburger menu icon is visible on mobile viewports
-And the header is transparent and overlaid on the hero
-```
+### Feature: Inkline template behaviour
 
-### Scenario: Hero banner displays fullscreen with heading
-```gherkin
-Given the page loads
-When the hero section renders
-Then a full-viewport background image is displayed
-And the subtitle "Introducing" appears in white uppercase
-And the headline "inkline" appears in large white text (124px desktop)
-And the text has a text-shadow effect
-```
+#### Scenario: Header renders with logo and navigation
 
-### Scenario: Features section shows three columns
-```gherkin
-Given the page loads
-When the features section renders
-Then three feature cards are displayed in a row
-And each card has a large gradient-colored number (01, 02, 03)
-And each card has a title and description text
-And the gradient goes from blue to cyan
-```
+- **GIVEN** the page loads
+- **WHEN** the header is rendered
+- **THEN** a logo image is displayed on the left
+- **AND** navigation links "Home", "Generic", "Elements" are visible on desktop
+- **AND** a hamburger menu icon is visible on mobile viewports
+- **AND** the header is transparent and overlaid on the hero
 
-### Scenario: Video section shows embed and text
-```gherkin
-Given the page loads
-When the video section renders
-Then a video thumbnail with play button overlay is displayed
-And the heading "Great Modern Design" is shown
-And a description paragraph follows the heading
-```
+#### Scenario: Hero banner displays fullscreen with heading
 
-### Scenario: Services section shows split layout
-```gherkin
-Given the page loads
-When the services section renders
-Then the left half has a dark background with white text
-And the heading "Services We Offered" is displayed
-And the right half has a white background with a 2×2 grid of service cards
-And each card has an icon, title, and description
-And each card has a light border
-```
+- **GIVEN** the page loads
+- **WHEN** the hero section renders
+- **THEN** a full-viewport background image is displayed
+- **AND** the subtitle "Introducing" appears in white uppercase
+- **AND** the headline "inkline" appears in large white text (124px desktop)
+- **AND** the text has a text-shadow effect
 
-### Scenario: Latest Works section shows portfolio slider
-```gherkin
-Given the page loads
-When the latest works section renders
-Then the heading "Some Of our Latest Works" is displayed
-And a carousel of portfolio images is shown
-And the active image is fully opaque with a white border
-And inactive images have reduced opacity
-```
+#### Scenario: Features section shows three columns
 
-### Scenario: Newsletter section shows subscription form
-```gherkin
-Given the page loads
-When the newsletter section renders
-Then the heading "Subscribe for our Newsletter" is displayed
-And an email input field is shown with rounded corners
-And a "Get Started" gradient pill button is positioned to the right
-```
+- **GIVEN** the page loads
+- **WHEN** the features section renders
+- **THEN** three feature cards are displayed in a row
+- **AND** each card has a large gradient-colored number (01, 02, 03)
+- **AND** each card has a title and description text
+- **AND** the gradient goes from blue to cyan
 
-### Scenario: Contact section shows form with image
-```gherkin
-Given the page loads
-When the contact section renders
-Then a contact image is shown on the left (small column)
-And a form with name, email, and message fields is on the right
-And a "Send Message" gradient pill button is shown
-And the form sits on a white background card
-```
+#### Scenario: Video section shows embed and text
 
-### Scenario: Footer renders with copyright and social links
-```gherkin
-Given the page loads
-When the footer renders
-Then a copyright line is shown with a colored link
-And social media icons (Facebook, Twitter, Dribbble, Behance) are shown
-And the footer has a dark background
-And social icon squares are dark (#1e1e1e) with gradient hover
-```
+- **GIVEN** the page loads
+- **WHEN** the video section renders
+- **THEN** a video thumbnail with play button overlay is displayed
+- **AND** the heading "Great Modern Design" is shown
+- **AND** a description paragraph follows the heading
 
-### Scenario: Primary button has gradient pill style
-```gherkin
-Given a primary button is rendered
-When the button is displayed
-Then it has a gradient background from blue to cyan
-And it has pill-shaped border-radius (20px)
-And the text is white and uppercase
-And on hover the background becomes white with colored text/border
-```
+#### Scenario: Services section shows split layout
+
+- **GIVEN** the page loads
+- **WHEN** the services section renders
+- **THEN** the left half has a dark background with white text
+- **AND** the heading "Services We Offered" is displayed
+- **AND** the right half has a white background with a 2×2 grid of service cards
+- **AND** each card has an icon, title, and description
+- **AND** each card has a light border
+
+#### Scenario: Latest Works section shows portfolio slider
+
+- **GIVEN** the page loads
+- **WHEN** the latest works section renders
+- **THEN** the heading "Some Of our Latest Works" is displayed
+- **AND** a carousel of portfolio images is shown
+- **AND** the active image is fully opaque with a white border
+- **AND** inactive images have reduced opacity
+
+#### Scenario: Newsletter section shows subscription form
+
+- **GIVEN** the page loads
+- **WHEN** the newsletter section renders
+- **THEN** the heading "Subscribe for our Newsletter" is displayed
+- **AND** an email input field is shown with rounded corners
+- **AND** a "Get Started" gradient pill button is positioned to the right
+
+#### Scenario: Contact section shows form with image
+
+- **GIVEN** the page loads
+- **WHEN** the contact section renders
+- **THEN** a contact image is shown on the left (small column)
+- **AND** a form with name, email, and message fields is on the right
+- **AND** a "Send Message" gradient pill button is shown
+- **AND** the form sits on a white background card
+
+#### Scenario: Footer renders with copyright and social links
+
+- **GIVEN** the page loads
+- **WHEN** the footer renders
+- **THEN** a copyright line is shown with a colored link
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are shown
+- **AND** the footer has a dark background
+- **AND** social icon squares are dark (#1e1e1e) with gradient hover
+
+#### Scenario: Primary button has gradient pill style
+
+- **GIVEN** a primary button is rendered
+- **WHEN** the button is displayed
+- **THEN** it has a gradient background from blue to cyan
+- **AND** it has pill-shaped border-radius (20px)
+- **AND** the text is white and uppercase
+- **AND** on hover the background becomes white with colored text/border
 
 ## Verification Checklist
 

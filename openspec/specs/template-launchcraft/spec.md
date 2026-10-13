@@ -130,7 +130,7 @@ CTA button, and an illustration in an orange accent wrap.
 - **THEN** the hero height SHALL be auto (not 100vh) with padding-top ~10rem
 - **AND** the illustration SHALL stack below the heading content
 
-### Requirement: Logos strip
+### Feature: Logos strip
 
 #### Scenario: "As seen on" logos
 
@@ -140,7 +140,7 @@ CTA button, and an illustration in an orange accent wrap.
   (replacing the source's NYT, Forbes, Fox, Business Insider, NBC images
   with text or generic logo placeholders)
 
-### Requirement: Section 1 — Split content with dark bg
+### Feature: Section 1 — Split content with dark bg
 
 #### Scenario: Split layout
 
@@ -152,7 +152,7 @@ CTA button, and an illustration in an orange accent wrap.
 - **AND** the section background SHALL be dark teal (matching hero)
 - **AND** heading and text SHALL be white
 
-### Requirement: Section 2 — Testimonial split (bg-light)
+### Feature: Section 2 — Testimonial split (bg-light)
 
 #### Scenario: Testimonial layout
 
@@ -163,7 +163,7 @@ CTA button, and an illustration in an orange accent wrap.
   "John Doe, XYZ Inc."), right side with illustration in orange wrap
 - **AND** the content card SHALL have white bg with 4px radius
 
-### Requirement: Stats counter section
+### Feature: Stats counter section
 
 #### Scenario: Counter display
 
@@ -173,7 +173,7 @@ CTA button, and an illustration in an orange accent wrap.
 - **AND** counter numbers SHALL be large white text with muted labels
 - **AND** (optional) numbers SHALL animate counting up on scroll entry
 
-### Requirement: Features grid
+### Feature: Features grid
 
 #### Scenario: Feature cards
 
@@ -182,13 +182,13 @@ CTA button, and an illustration in an orange accent wrap.
   "Features" followed by 6 feature cards in a 2×3 grid (3 per row on
   desktop, 2 on tablet, 1 on mobile)
 - **AND** each card SHALL contain an icon (lucide-react), an h3 title,
-  and a paragraph description
+- **AND** a paragraph description
 - **AND** cards SHALL have 4px border-radius with a subtle border
 - **WHEN** a feature card is hovered
 - **THEN** the border color SHALL change to `#10495c` and the icon's
   background SHALL turn `#10495c` with `#f2ad5f` icon color
 
-### Requirement: Footer
+### Feature: Footer
 
 #### Scenario: Footer layout
 
@@ -205,7 +205,9 @@ CTA button, and an illustration in an orange accent wrap.
 - **GIVEN** a viewport at or below 768px
 - **THEN** footer columns SHALL stack vertically
 
-### Requirement: Accessibility and semantics
+### Feature: Accessibility and semantics
+
+#### Scenario: Accessibility and semantics
 
 - **GIVEN** the app is rendered
 - **THEN** semantic elements SHALL be used (nav, main, section, footer)

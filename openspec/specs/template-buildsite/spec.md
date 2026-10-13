@@ -82,140 +82,148 @@ Order from the live preview HTML:
 10. **Latest News** — 2-column blog cards on dark background (#00235b). Each: image with date badge (orange), category, title, "Read more" link.
 11. **Footer** — 4 columns: Logo + description, Quick Links, Contact info, Newsletter form + map. Dark background with copyright bar.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header Navigation
-```gherkin
-Scenario: Transparent header displays on page load
-  Given the user loads the page
-  Then the header should be visible with transparent background
-  And the logo should link to the home page
-  And navigation should show: Home, About, Projects, Services, Blog, Contact
 
-Scenario: Header becomes sticky on scroll
-  Given the user scrolls down past the hero section
-  Then the header should become fixed at the top
-  And the background should change to dark (#191a33)
-```
+#### Scenario: Transparent header displays on page load
+
+- **GIVEN** the user loads the page
+- **THEN** the header should be visible with transparent background
+- **AND** the logo should link to the home page
+- **AND** navigation should show: Home, About, Projects, Services, Blog, Contact
+
+#### Scenario: Header becomes sticky on scroll
+
+- **GIVEN** the user scrolls down past the hero section
+- **THEN** the header should become fixed at the top
+- **AND** the background should change to dark (#191a33)
 
 ### Feature: Hero Section
-```gherkin
-Scenario: Hero displays with background image and overlay
-  Given the user loads the page
-  Then the hero section should display a full-width background image
-  And a dark gradient overlay should be visible
-  And the headline text should be visible
 
-Scenario: Hero shows CTA button
-  Given the hero section is visible
-  Then a "Our Services" link button should be present
-  And clicking it should navigate to the services section
-```
+#### Scenario: Hero displays with background image and overlay
+
+- **GIVEN** the user loads the page
+- **THEN** the hero section should display a full-width background image
+- **AND** a dark gradient overlay should be visible
+- **AND** the headline text should be visible
+
+#### Scenario: Hero shows CTA button
+
+- **GIVEN** the hero section is visible
+- **THEN** a "Our Services" link button should be present
+- **AND** clicking it should navigate to the services section
 
 ### Feature: Services Section
-```gherkin
-Scenario: Services section displays 3 service cards
-  Given the user scrolls to the services section
-  Then 3 service cards should be visible
-  And each card should have an image, title, and "Read More" link
 
-Scenario: Service card hover effect
-  Given a service card is displayed
-  When the user hovers over the card
-  Then the image should scale up slightly
-  And the "Read More" icon should change color
-```
+#### Scenario: Services section displays 3 service cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 3 service cards should be visible
+- **AND** each card should have an image, title, and "Read More" link
+
+#### Scenario: Service card hover effect
+
+- **GIVEN** a service card is displayed
+- **WHEN** the user hovers over the card
+- **THEN** the image should scale up slightly
+- **AND** the "Read More" icon should change color
 
 ### Feature: About Section
-```gherkin
-Scenario: About section displays split layout
-  Given the user scrolls to the about section
-  Then the left side should show "Who we are" heading with "About us" background text
-  And descriptive paragraphs should be visible
-  And a "Read More" button should be present
-  And the right side should show an image with a "1994 Since" badge
 
-Scenario: About badge styling
-  Given the about section is visible
-  Then the year badge should have a navy blue (#1f2b7b) background
-  And the badge should be positioned at the bottom-right of the image
-```
+#### Scenario: About section displays split layout
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the left side should show "Who we are" heading with "About us" background text
+- **AND** descriptive paragraphs should be visible
+- **AND** a "Read More" button should be present
+- **AND** the right side should show an image with a "1994 Since" badge
+
+#### Scenario: About badge styling
+
+- **GIVEN** the about section is visible
+- **THEN** the year badge should have a navy blue (#1f2b7b) background
+- **AND** the badge should be positioned at the bottom-right of the image
 
 ### Feature: Projects Gallery
-```gherkin
-Scenario: Projects section displays with tab filters
-  Given the user scrolls to the projects section
-  Then filter tabs should be visible: Show all, Interior, Recent, Big building, Park
-  And 6 project cards should be visible in "Show all" tab
 
-Scenario: Project card hover effect
-  Given a project card is displayed
-  When the user hovers over the card
-  Then the caption background should turn dark (#00235b)
-  And a plus icon should appear
-  And the text should turn white
-```
+#### Scenario: Projects section displays with tab filters
+
+- **GIVEN** the user scrolls to the projects section
+- **THEN** filter tabs should be visible: Show all, Interior, Recent, Big building, Park
+- **AND** 6 project cards should be visible in "Show all" tab
+
+#### Scenario: Project card hover effect
+
+- **GIVEN** a project card is displayed
+- **WHEN** the user hovers over the card
+- **THEN** the caption background should turn dark (#00235b)
+- **AND** a plus icon should appear
+- **AND** the text should turn white
 
 ### Feature: Counter Stats
-```gherkin
-Scenario: Counter section displays 3 stats
-  Given the user scrolls to the counter section
-  Then 3 stat items should be visible
-  And each should show a large number and label
-  And the section should have a background image with overlay
-```
+
+#### Scenario: Counter section displays 3 stats
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 3 stat items should be visible
+- **AND** each should show a large number and label
+- **AND** the section should have a background image with overlay
 
 ### Feature: Team Section
-```gherkin
-Scenario: Team section displays 3 members
-  Given the user scrolls to the team section
-  Then 3 team member cards should be visible
-  And each card should show an image, role, and name
-  And the role text should have an orange (#c94500) decorative bar
 
-Scenario: Team card hover effect
-  Given a team card is displayed
-  When the user hovers over the card
-  Then the team image should scale up slightly
-```
+#### Scenario: Team section displays 3 members
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** 3 team member cards should be visible
+- **AND** each card should show an image, role, and name
+- **AND** the role text should have an orange (#c94500) decorative bar
+
+#### Scenario: Team card hover effect
+
+- **GIVEN** a team card is displayed
+- **WHEN** the user hovers over the card
+- **THEN** the team image should scale up slightly
 
 ### Feature: Testimonials
-```gherkin
-Scenario: Testimonials display in carousel
-  Given the user scrolls to the testimonial section
-  Then a carousel of testimonials should be visible
-  And each testimonial should show a quote icon, text, author name, and title
-  And navigation arrows should allow cycling through testimonials
-```
+
+#### Scenario: Testimonials display in carousel
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** a carousel of testimonials should be visible
+- **AND** each testimonial should show a quote icon, text, author name, and title
+- **AND** navigation arrows should allow cycling through testimonials
 
 ### Feature: Latest News
-```gherkin
-Scenario: News section displays 2 blog cards
-  Given the user scrolls to the news section
-  Then 2 blog cards should be visible on a dark (#00235b) background
-  And each card should have an image with date badge, category, title, and "Read more" link
 
-Scenario: Blog date badge styling
-  Given a blog card is displayed
-  Then the date badge should be positioned top-left on the image
-  And the badge should have an orange (#c94500) background
-  And the date number and month should be white
-```
+#### Scenario: News section displays 2 blog cards
+
+- **GIVEN** the user scrolls to the news section
+- **THEN** 2 blog cards should be visible on a dark (#00235b) background
+- **AND** each card should have an image with date badge, category, title, and "Read more" link
+
+#### Scenario: Blog date badge styling
+
+- **GIVEN** a blog card is displayed
+- **THEN** the date badge should be positioned top-left on the image
+- **AND** the badge should have an orange (#c94500) background
+- **AND** the date number and month should be white
 
 ### Feature: Footer
-```gherkin
-Scenario: Footer displays 4 columns
-  Given the user scrolls to the footer
-  Then the footer should show: logo + description, Quick Links, Contact info, Newsletter form
-  And the newsletter form should have an email input and "SIGN UP" button
-  And a map image should be visible below the newsletter form
-  And a copyright bar should be at the bottom
-  And the footer should link to https://www.componentdock.com/
 
-Scenario: Footer navigation links
-  Given the footer is visible
-  Then Quick Links should include: About, Services, Projects, Contact Us
-```
+#### Scenario: Footer displays 4 columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer should show: logo + description, Quick Links, Contact info, Newsletter form
+- **AND** the newsletter form should have an email input and "SIGN UP" button
+- **AND** a map image should be visible below the newsletter form
+- **AND** a copyright bar should be at the bottom
+- **AND** the footer should link to https://www.componentdock.com/
+
+#### Scenario: Footer navigation links
+
+- **GIVEN** the footer is visible
+- **THEN** Quick Links should include: About, Services, Projects, Contact Us
 
 ## Verification Checklist
 

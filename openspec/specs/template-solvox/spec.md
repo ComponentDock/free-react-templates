@@ -31,194 +31,187 @@ agency website template.
 | Shadow (card)        | `0 2px 25px -16px rgba(0,0,0,0.26)`     | Subtle card lift                                    |
 | Section spacing      | ~`80px` vertical padding                 | Standard ftco-section padding                       |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Sticky navbar with logo and navigation links
-  Given the user loads the page
-  Then a sticky navbar is visible at the top
-  And it contains the logo text "Solvox"
-  And navigation links: Home, About, Pricing, Portfolio, Blog, Contact
-  And the navbar has a dark background (#141b25)
-  And the navbar becomes fixed on scroll
-```
+#### Scenario: Sticky navbar with logo and navigation links
+
+- **GIVEN** the user loads the page
+- **THEN** a sticky navbar is visible at the top
+- **AND** it contains the logo text "Solvox"
+- **AND** navigation links: Home, About, Pricing, Portfolio, Blog, Contact
+- **AND** the navbar has a dark background (#141b25)
+- **AND** the navbar becomes fixed on scroll
 
 ### Hero
 
-```gherkin
-Scenario: Full-height hero slider with background images
-  Given the user loads the page
-  Then a full-height hero section is displayed
-  And it contains the heading "Digital Innovation Company that Creates Solution"
-  And it contains a subheading "Professional & Creative Design Solution"
-  And there is a paragraph of descriptive text
-  And there are two CTA buttons: "Get Started" and "View Portfolio"
-  And the hero has a dark overlay over the background image
-  And the slider auto-rotates between slides
+#### Scenario: Full-height hero slider with background images
 
-Scenario: Hero CTA buttons navigate correctly
-  Given the hero section is visible
-  When the user clicks "Get Started"
-  Then the page scrolls to the services or contact section
-  When the user clicks "View Portfolio"
-  Then the page scrolls to the portfolio section
-```
+- **GIVEN** the user loads the page
+- **THEN** a full-height hero section is displayed
+- **AND** it contains the heading "Digital Innovation Company that Creates Solution"
+- **AND** it contains a subheading "Professional & Creative Design Solution"
+- **AND** there is a paragraph of descriptive text
+- **AND** there are two CTA buttons: "Get Started" and "View Portfolio"
+- **AND** the hero has a dark overlay over the background image
+- **AND** the slider auto-rotates between slides
+
+#### Scenario: Hero CTA buttons navigate correctly
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user clicks "Get Started"
+- **THEN** the page scrolls to the services or contact section
+- **WHEN** the user clicks "View Portfolio"
+- **THEN** the page scrolls to the portfolio section
 
 ### Services
 
-```gherkin
-Scenario: Services section with 6 service cards
-  Given the user scrolls to the services section
-  Then the heading reads "We Shape The Perfect Solutions"
-  And there is a description paragraph below the heading
-  And 6 service cards are displayed in a grid
-  And the service cards are: Digital Products, Online Marketing, Graphic Design,
-      Application Development, Web Development, UX/UI Design
-  And each card has an icon, title, and short description
-  And the section has a dark textured background
-  And non-active cards have background #1a1a1a
-  And the active/hovered card has background #cdb30c (gold)
+#### Scenario: Services section with 6 service cards
 
-Scenario: Service card hover interaction
-  Given the services section is visible
-  When the user hovers over a service card
-  Then the card background transitions to the gold accent color #cdb30c
-  And the card text color changes to dark for contrast
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading reads "We Shape The Perfect Solutions"
+- **AND** there is a description paragraph below the heading
+- **AND** 6 service cards are displayed in a grid
+- **AND** the service cards are: Digital Products, Online Marketing, Graphic Design,
+Application Development, Web Development, UX/UI Design
+- **AND** each card has an icon, title, and short description
+- **AND** the section has a dark textured background
+- **AND** non-active cards have background #1a1a1a
+- **AND** the active/hovered card has background #cdb30c (gold)
+
+#### Scenario: Service card hover interaction
+
+- **GIVEN** the services section is visible
+- **WHEN** the user hovers over a service card
+- **THEN** the card background transitions to the gold accent color #cdb30c
+- **AND** the card text color changes to dark for contrast
 
 ### About
 
-```gherkin
-Scenario: About section with background image and text overlay
-  Given the user scrolls to the about section
-  Then the heading reads "Highest Creative Standards"
-  And there is a "Welcome to Solvox" label above the heading
-  And there are two columns: image on the left, text on the right
-  And the section has a background image with overlay
-  And the text describes the company's creative approach
-  And there is a CTA button ("Learn More" or similar)
-```
+#### Scenario: About section with background image and text overlay
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading reads "Highest Creative Standards"
+- **AND** there is a "Welcome to Solvox" label above the heading
+- **AND** there are two columns: image on the left, text on the right
+- **AND** the section has a background image with overlay
+- **AND** the text describes the company's creative approach
+- **AND** there is a CTA button ("Learn More" or similar)
 
 ### Counter
 
-```gherkin
-Scenario: Animated counter statistics
-  Given the user scrolls to the counter section
-  Then 4 statistics are displayed in a row
-  And the statistics are: Project Completed, Our Staff, Services Provided, Happy Customers
-  And each stat has an icon and a number
-  And the numbers animate (count up) when scrolled into view
-  And the section has a background image with overlay
-```
+#### Scenario: Animated counter statistics
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 4 statistics are displayed in a row
+- **AND** the statistics are: Project Completed, Our Staff, Services Provided, Happy Customers
+- **AND** each stat has an icon and a number
+- **AND** the numbers animate (count up) when scrolled into view
+- **AND** the section has a background image with overlay
 
 ### Experience / FAQ
 
-```gherkin
-Scenario: Experience section with skill bars and FAQ accordion
-  Given the user scrolls to the experience section
-  Then the left side shows "We Are Very Experienced & Professionals"
-  And 4 skill bars are displayed: Creative Design (95%), Product Engineering (85%),
-      Marketing Strategy (95%), Support Tips (90%)
-  And the right side shows a FAQ accordion
-  And the FAQ has 4 questions: "How to fix a problem?", "How to manage your Website?",
-      "How to grow your investments funds?", "What are those requirements for businesses?"
-  And the section has a light background (#f4f5f9)
+#### Scenario: Experience section with skill bars and FAQ accordion
 
-Scenario: FAQ accordion interaction
-  Given the FAQ accordion is visible
-  When the user clicks a question
-  Then the answer expands below the question
-  And only one answer is open at a time
-  When the user clicks the same question again
-  Then the answer collapses
-```
+- **GIVEN** the user scrolls to the experience section
+- **THEN** the left side shows "We Are Very Experienced & Professionals"
+- **AND** 4 skill bars are displayed: Creative Design (95%), Product Engineering (85%),
+Marketing Strategy (95%), Support Tips (90%)
+- **AND** the right side shows a FAQ accordion
+- **AND** the FAQ has 4 questions: "How to fix a problem?", "How to manage your Website?",
+"How to grow your investments funds?", "What are those requirements for businesses?"
+- **AND** the section has a light background (#f4f5f9)
+
+#### Scenario: FAQ accordion interaction
+
+- **GIVEN** the FAQ accordion is visible
+- **WHEN** the user clicks a question
+- **THEN** the answer expands below the question
+- **AND** only one answer is open at a time
+- **WHEN** the user clicks the same question again
+- **THEN** the answer collapses
 
 ### Team
 
-```gherkin
-Scenario: Team members grid
-  Given the user scrolls to the team section
-  Then the heading reads "Professional Creative Team Members"
-  And 4 team member cards are displayed in a row
-  And each card has a photo, name, and role
-  And the team members are: Lloyd Wilson, Liam Neil, Alen Broke, John Hayes
-  And there is a "View All Members" link
+#### Scenario: Team members grid
 
-Scenario: Team member card hover
-  Given the team section is visible
-  When the user hovers over a team card
-  Then social media icons overlay appears on the photo
-```
+- **GIVEN** the user scrolls to the team section
+- **THEN** the heading reads "Professional Creative Team Members"
+- **AND** 4 team member cards are displayed in a row
+- **AND** each card has a photo, name, and role
+- **AND** the team members are: Lloyd Wilson, Liam Neil, Alen Broke, John Hayes
+- **AND** there is a "View All Members" link
+
+#### Scenario: Team member card hover
+
+- **GIVEN** the team section is visible
+- **WHEN** the user hovers over a team card
+- **THEN** social media icons overlay appears on the photo
 
 ### Portfolio
 
-```gherkin
-Scenario: Portfolio grid with filter tabs
-  Given the user scrolls to the portfolio section
-  Then the heading reads "We Have Done Many Latest Projects"
-  And a grid of portfolio items is displayed
-  And each item has an image and a category label ("Interior Design")
-  And there are filter tabs to filter by category
-  And there is a "View All Projects" link
-  And the section has a dark background (#232429)
-```
+#### Scenario: Portfolio grid with filter tabs
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** the heading reads "We Have Done Many Latest Projects"
+- **AND** a grid of portfolio items is displayed
+- **AND** each item has an image and a category label ("Interior Design")
+- **AND** there are filter tabs to filter by category
+- **AND** there is a "View All Projects" link
+- **AND** the section has a dark background (#232429)
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonial carousel
-  Given the user scrolls to the testimonials section
-  Then the heading reads "People Say About Our Works"
-  And testimonial cards are displayed in a carousel
-  And each testimonial has a quote, author name, and photo
-  And carousel navigation dots/arrows allow switching testimonials
-  And the section has a light background
-```
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the heading reads "People Say About Our Works"
+- **AND** testimonial cards are displayed in a carousel
+- **AND** each testimonial has a quote, author name, and photo
+- **AND** carousel navigation dots/arrows allow switching testimonials
+- **AND** the section has a light background
 
 ### Blog
 
-```gherkin
-Scenario: Recent blog posts
-  Given the user scrolls to the blog section
-  Then the heading reads "Recent Post"
-  And 3 blog post cards are displayed in a row
-  And each card has a featured image, category tag, title, date, and excerpt
-  And the blog posts share the title "Marketing Strategies for Digital Ecosystem"
+#### Scenario: Recent blog posts
 
-Scenario: Blog post card hover
-  Given the blog section is visible
-  When the user hovers over a blog card
-  Then the card lifts with a shadow effect
-```
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading reads "Recent Post"
+- **AND** 3 blog post cards are displayed in a row
+- **AND** each card has a featured image, category tag, title, date, and excerpt
+- **AND** the blog posts share the title "Marketing Strategies for Digital Ecosystem"
+
+#### Scenario: Blog post card hover
+
+- **GIVEN** the blog section is visible
+- **WHEN** the user hovers over a blog card
+- **THEN** the card lifts with a shadow effect
 
 ### Newsletter
 
-```gherkin
-Scenario: Newsletter signup section
-  Given the user scrolls to the newsletter section
-  Then the heading reads "Join Us Newsletter"
-  And there is a description: "Sign Up to our Newsletter and get our latest news update"
-  And an email input field is displayed
-  And a "Subscribe" button is next to the input
-  And the section has a dark background with overlay
-```
+#### Scenario: Newsletter signup section
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** the heading reads "Join Us Newsletter"
+- **AND** there is a description: "Sign Up to our Newsletter and get our latest news update"
+- **AND** an email input field is displayed
+- **AND** a "Subscribe" button is next to the input
+- **AND** the section has a dark background with overlay
 
 ### Footer
 
-```gherkin
-Scenario: Footer with columns and contact info
-  Given the user scrolls to the footer
-  Then the footer has 4 columns: About, Explore, Info, Company
-  And the About column has the logo "Solvox" and a description
-  And the Explore column has links: About, Contact, Portfolio, Blog
-  And the Info column has links: Join us, Blog, Privacy & Policy, Terms & Conditions
-  And the Company column has links: About Us, Blog, Contact, Careers
-  And there is a "Have a Questions?" column with address and phone
-  And there is a copyright line with "Made with Component Dock"
-  And the footer has a dark background
-```
+#### Scenario: Footer with columns and contact info
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has 4 columns: About, Explore, Info, Company
+- **AND** the About column has the logo "Solvox" and a description
+- **AND** the Explore column has links: About, Contact, Portfolio, Blog
+- **AND** the Info column has links: Join us, Blog, Privacy & Policy, Terms & Conditions
+- **AND** the Company column has links: About Us, Blog, Contact, Careers
+- **AND** there is a "Have a Questions?" column with address and phone
+- **AND** there is a copyright line with "Made with Component Dock"
+- **AND** the footer has a dark background
 
 ## Verification checklist
 

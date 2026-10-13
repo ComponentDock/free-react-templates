@@ -21,28 +21,31 @@ Recreation of ColorLib **Carousel 14** (`https://colorlib.com/wp/template/carous
   - Header navigation bar with brand logo and links.
   - Footer with copyright and mandatory Component Dock link.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature 1: Header Navigation
 
-- **Scenario**: User views the navigation bar
-  - Given the user loads the Lenslide template
-  - When the header renders
-  - Then it displays a brand logo and navigation menu items.
+#### Scenario: User views the navigation bar
+
+- **GIVEN** the user loads the Lenslide template
+- **WHEN** the header renders
+- **THEN** it displays a brand logo and navigation menu items
 
 ### Feature 2: Hero Carousel Testimonial Section
 
-- **Scenario**: User views and interacts with the testimonial carousel
-  - Given the user is on the main carousel section
-  - When the slider renders active testimony items with side-by-side image and quote blocks
-  - Then the user can click next/previous arrow controls or pagination dots to switch between testimonials smoothly.
+#### Scenario: User views and interacts with the testimonial carousel
+
+- **GIVEN** the user is on the main carousel section
+- **WHEN** the slider renders active testimony items with side-by-side image and quote blocks
+- **THEN** the user can click next/previous arrow controls or pagination dots to switch between testimonials smoothly
 
 ### Feature 3: Footer Attribution
 
-- **Scenario**: User checks the page footer
-  - Given the user scrolls to the bottom of the page
-  - When the footer renders
-  - Then it displays copyright information and a prominent link to `https://www.componentdock.com/`.
+#### Scenario: User checks the page footer
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it displays copyright information and a prominent link to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

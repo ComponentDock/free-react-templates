@@ -52,92 +52,103 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 7. **Newsletter** — centered subscribe form with email input + "Subscribe" button (primary red), `bg-light`
 8. **Footer** — dark background, 3 content columns (About Us + social icons, Opening Hours + Contact Info, Quick Links), copyright bar
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Hearthside template behaviour
+
 Feature: Hearthside Restaurant Template
 
-  Background:
-    Given the user visits https://hearthside.free.componentdock.com
-    Then the page loads successfully
+Background:
+- **GIVEN** the user visits https://hearthside.free.componentdock.com
+- **THEN** the page loads successfully
 
-  Scenario: Navbar renders with brand and navigation
-    Then the navbar displays brand text "Hearthside"
-    And the navbar contains links: Home, Recipes, Services (dropdown), About, News
-    And the navbar contains a "Contact Us" button styled with primary red background
-    And the Services dropdown contains: Catering, Birthday Party, Wedding Party
-    And the navbar is transparent on desktop overlaying the hero
+#### Scenario: Navbar renders with brand and navigation
 
-  Scenario: Hero slider displays full-screen slides
-    Then the hero slider occupies full viewport height
-    And each slide has a background image with dark overlay
-    And each slide displays a centered headline and description paragraph
-    And each slide has a "Get Started" white outline button
-    And the slider supports multiple slides (at least 2)
+- **THEN** the navbar displays brand text "Hearthside"
+- **AND** the navbar contains links: Home, Recipes, Services (dropdown), About, News
+- **AND** the navbar contains a "Contact Us" button styled with primary red background
+- **AND** the Services dropdown contains: Catering, Birthday Party, Wedding Party
+- **AND** the navbar is transparent on desktop overlaying the hero
 
-  Scenario: Features section displays 4 category icons
-    Then a features section appears on light background
-    And it contains 4 feature items in a grid
-    And each feature has an icon, a title, and a description
-    And the titles are: Drinks, Sea Foods, Cup Coffees, Fresh Salad
+#### Scenario: Hero slider displays full-screen slides
 
-  Scenario: Special Dishes carousel shows dish cards
-    Then a "Special Dishes" section appears with decorative back-text watermark
-    And the section heading has a red decorative bar above it
-    And a carousel of dish images is displayed
-    And each dish card has a dark overlay with price badge (red circle) and dish name
-    And at least 4 dishes are shown
-    And the price badge uses a circular shape with red background
+- **THEN** the hero slider occupies full viewport height
+- **AND** each slide has a background image with dark overlay
+- **AND** each slide displays a centered headline and description paragraph
+- **AND** each slide has a "Get Started" white outline button
+- **AND** the slider supports multiple slides (at least 2)
 
-  Scenario: Our Menu section displays items in 2-column grid
-    Then an "Our Menu" section appears on light background
-    And menu items are laid out in a 2-column grid
-    And each item shows a dish name, description, and price
-    And each item includes a background image
-    And items alternate text/image positioning between rows
+#### Scenario: Features section displays 4 category icons
 
-  Scenario: Testimonials section displays 3 testimonial cards
-    Then a "Testimonial" section appears
-    And 3 testimonial blockquotes are displayed in columns
-    And each testimonial has a quote, author photo (circular), author name, and role
-    And the author photo uses 50% border-radius
+- **THEN** a features section appears on light background
+- **AND** it contains 4 feature items in a grid
+- **AND** each feature has an icon, a title, and a description
+- **AND** the titles are: Drinks, Sea Foods, Cup Coffees, Fresh Salad
 
-  Scenario: Newsletter section has email subscription form
-    Then a newsletter section appears on light background
-    And an email input field is displayed
-    And a "Subscribe" button appears (primary red style)
-    And the form spans the full container width
+#### Scenario: Special Dishes carousel shows dish cards
 
-  Scenario: Footer renders with all content blocks
-    Then the footer has a dark background
-    And it contains "About Us" text and social media icon links (Twitter, Facebook, LinkedIn, Instagram)
-    And it shows "Opening Hours" (Sunday-Thursday, 5AM-10PM)
-    And it shows "Contact Info" (address, telephone, email)
-    And it shows "Quick Links" (About, Terms of Use, Disclaimers, Contact)
-    And the footer links to https://www.componentdock.com/ (branded "Component Dock")
+- **THEN** a "Special Dishes" section appears with decorative back-text watermark
+- **AND** the section heading has a red decorative bar above it
+- **AND** a carousel of dish images is displayed
+- **AND** each dish card has a dark overlay with price badge (red circle) and dish name
+- **AND** at least 4 dishes are shown
+- **AND** the price badge uses a circular shape with red background
 
-  Scenario: Design token fidelity
-    Then the primary brand color is #cf1d16
-    And the font family is "Open Sans", Arial, sans-serif
-    And buttons have 0px border-radius (sharp corners)
-    And buttons are uppercase with letter-spacing 0.2em
-    And section headings use black (#000) color at 50px font-size
-    And decorative heading bars are 80px wide and 2px tall in brand red
+#### Scenario: Our Menu section displays items in 2-column grid
 
-  Scenario: Responsive behavior
-    Then the navbar collapses to a hamburger menu on mobile
-    And the features grid stacks vertically on mobile
-    And the menu section stacks to single column on mobile
-    And the testimonials stack vertically on mobile
-    And the footer columns stack on mobile
+- **THEN** an "Our Menu" section appears on light background
+- **AND** menu items are laid out in a 2-column grid
+- **AND** each item shows a dish name, description, and price
+- **AND** each item includes a background image
+- **AND** items alternate text/image positioning between rows
 
-  Scenario: Accessibility
-    Then all interactive elements have appropriate aria attributes
-    And the navbar toggle has aria-label "Toggle navigation"
-    And semantic HTML elements are used (header, nav, section, footer)
-    And images have alt text
-    And the form has proper labels or placeholders
-```
+#### Scenario: Testimonials section displays 3 testimonial cards
+
+- **THEN** a "Testimonial" section appears
+- **AND** 3 testimonial blockquotes are displayed in columns
+- **AND** each testimonial has a quote, author photo (circular), author name, and role
+- **AND** the author photo uses 50% border-radius
+
+#### Scenario: Newsletter section has email subscription form
+
+- **THEN** a newsletter section appears on light background
+- **AND** an email input field is displayed
+- **AND** a "Subscribe" button appears (primary red style)
+- **AND** the form spans the full container width
+
+#### Scenario: Footer renders with all content blocks
+
+- **THEN** the footer has a dark background
+- **AND** it contains "About Us" text and social media icon links (Twitter, Facebook, LinkedIn, Instagram)
+- **AND** it shows "Opening Hours" (Sunday-Thursday, 5AM-10PM)
+- **AND** it shows "Contact Info" (address, telephone, email)
+- **AND** it shows "Quick Links" (About, Terms of Use, Disclaimers, Contact)
+- **AND** the footer links to https://www.componentdock.com/ (branded "Component Dock")
+
+#### Scenario: Design token fidelity
+
+- **THEN** the primary brand color is #cf1d16
+- **AND** the font family is "Open Sans", Arial, sans-serif
+- **AND** buttons have 0px border-radius (sharp corners)
+- **AND** buttons are uppercase with letter-spacing 0.2em
+- **AND** section headings use black (#000) color at 50px font-size
+- **AND** decorative heading bars are 80px wide and 2px tall in brand red
+
+#### Scenario: Responsive behavior
+
+- **THEN** the navbar collapses to a hamburger menu on mobile
+- **AND** the features grid stacks vertically on mobile
+- **AND** the menu section stacks to single column on mobile
+- **AND** the testimonials stack vertically on mobile
+- **AND** the footer columns stack on mobile
+
+#### Scenario: Accessibility
+
+- **THEN** all interactive elements have appropriate aria attributes
+- **AND** the navbar toggle has aria-label "Toggle navigation"
+- **AND** semantic HTML elements are used (header, nav, section, footer)
+- **AND** images have alt text
+- **AND** the form has proper labels or placeholders
 
 ## Verification Checklist
 

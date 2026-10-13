@@ -53,106 +53,119 @@ text. The newsletter section has a centered form, and the footer is dark gray
 with centered nav links and social icons. The overall aesthetic is clean,
 modern, and vibrant with a purple-pink-yellow color scheme.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Craftlab Small Company Website Template
 
-#### Background
-  Given the template is loaded in a browser
-  And the body font is "Poppins" sans-serif
-  And the primary accent is a pink-to-yellow gradient (#f58e9a → #fbe44c)
+**Background**
+- **GIVEN** the template is loaded in a browser
+- **AND** the body font is "Poppins" sans-serif
+- **AND** the primary accent is a pink-to-yellow gradient (#f58e9a → #fbe44c)
 
 #### Scenario: Header renders with logo and navigation
-  Given the page loads
-  When I view the header
-  Then I see a logo (text or image) at the left
-  And I see a navigation bar with links: Home, Generic, Elements
-  And I see a hamburger menu toggle on the right
-  And the header is positioned at the top
+
+- **GIVEN** the page loads
+- **WHEN** I view the header
+- **THEN** I see a logo (text or image) at the left
+- **AND** I see a navigation bar with links: Home, Generic, Elements
+- **AND** I see a hamburger menu toggle on the right
+- **AND** the header is positioned at the top
 
 #### Scenario: Banner/Hero section displays
-  Given the page loads
-  When I view the hero section
-  Then I see a purple gradient background (radial, #7539dd → #7034db)
-  And I see the heading "we're Creative" in uppercase, centered
-  And I see a "Get Started" pill-shaped outline button (border-radius 20px)
-  And the section height is 600px
+
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** I see a purple gradient background (radial, #7539dd → #7034db)
+- **AND** I see the heading "we're Creative" in uppercase, centered
+- **AND** I see a "Get Started" pill-shaped outline button (border-radius 20px)
+- **AND** the section height is 600px
 
 #### Scenario: Features section shows 4 items in a grid
-  Given I scroll to the Features section
-  Then I see a white background section with 60px top / 100px bottom padding
-  And I see 4 feature cards in a 2×2 grid layout
-  And each card has an icon image, a heading (h4), and a description paragraph
-  And the features are: "Unlimited Colors", "Smart Security", "Endless Support", "Smart Security"
+
+- **GIVEN** I scroll to the Features section
+- **THEN** I see a white background section with 60px top / 100px bottom padding
+- **AND** I see 4 feature cards in a 2×2 grid layout
+- **AND** each card has an icon image, a heading (h4), and a description paragraph
+- **AND** the features are: "Unlimited Colors", "Smart Security", "Endless Support", "Smart Security"
 
 #### Scenario: About section has tabbed content
-  Given I scroll to the About section
-  Then I see a light purple background (#f9f9ff)
-  And I see 3 columns: heading "About Our Company", an image, and tabbed content
-  And there are 2 tabs: "History" and "Mission & Vision"
-  And the active tab shows a gradient underline (#f58e9a → #fbe44c)
-  And clicking "Mission & Vision" switches the content panel
+
+- **GIVEN** I scroll to the About section
+- **THEN** I see a light purple background (#f9f9ff)
+- **AND** I see 3 columns: heading "About Our Company", an image, and tabbed content
+- **AND** there are 2 tabs: "History" and "Mission & Vision"
+- **AND** the active tab shows a gradient underline (#f58e9a → #fbe44c)
+- **AND** clicking "Mission & Vision" switches the content panel
 
 #### Scenario: Video section displays with play button
-  Given I scroll to the Video section
-  Then I see a background image with a purple gradient overlay (opacity 0.8)
-  And I see a centered heading "New Features that open the door of future"
-  And I see a play button that links to a YouTube video
-  And I see a white description paragraph below the play button
+
+- **GIVEN** I scroll to the Video section
+- **THEN** I see a background image with a purple gradient overlay (opacity 0.8)
+- **AND** I see a centered heading "New Features that open the door of future"
+- **AND** I see a play button that links to a YouTube video
+- **AND** I see a white description paragraph below the play button
 
 #### Scenario: Blog section shows 3 cards
-  Given I scroll to the Blog section
-  Then I see a white background section
-  And I see 3 blog cards in a row
-  And each card has a thumbnail image (215px height), centered title, and centered description
-  And the cards are: "Ultimate pet lover", "Upcoming role model", "Colors of Life"
+
+- **GIVEN** I scroll to the Blog section
+- **THEN** I see a white background section
+- **AND** I see 3 blog cards in a row
+- **AND** each card has a thumbnail image (215px height), centered title, and centered description
+- **AND** the cards are: "Ultimate pet lover", "Upcoming role model", "Colors of Life"
 
 #### Scenario: Story section renders in solid purple
-  Given I scroll to the Story section
-  Then I see a solid purple background (#7034db)
-  And I see a white heading "Crafting Our Experiences"
-  And I see white description text
+
+- **GIVEN** I scroll to the Story section
+- **THEN** I see a solid purple background (#7034db)
+- **AND** I see a white heading "Crafting Our Experiences"
+- **AND** I see white description text
 
 #### Scenario: Subscribe section has newsletter form
-  Given I scroll to the Subscribe section
-  Then I see a centered heading "Subscribe Newsletter"
-  And I see a subtitle text
-  And I see an email input with placeholder "Email address"
-  And I see a "Get Started" primary button with gradient
+
+- **GIVEN** I scroll to the Subscribe section
+- **THEN** I see a centered heading "Subscribe Newsletter"
+- **AND** I see a subtitle text
+- **AND** I see an email input with placeholder "Email address"
+- **AND** I see a "Get Started" primary button with gradient
 
 #### Scenario: Newsletter form validates email
-  Given the Subscribe section is visible
-  When I click "Get Started" with an empty email
-  Then the form does not submit
-  When I enter a valid email and submit
-  Then the form submits successfully
+
+- **GIVEN** the Subscribe section is visible
+- **WHEN** I click "Get Started" with an empty email
+- **THEN** the form does not submit
+- **WHEN** I enter a valid email and submit
+- **THEN** the form submits successfully
 
 #### Scenario: Footer renders with nav, social, and copyright
-  Given I scroll to the footer
-  Then I see a dark gray background (#333333)
-  And I see centered nav links: Home, Generic, Elements
-  And I see 4 social media icons (Facebook, Twitter, Dribbble, Behance)
-  And I see a copyright line with "Made with ❤ by Component Dock" attribution
-  And footer links turn pink (#f58e9a) on hover
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a dark gray background (#333333)
+- **AND** I see centered nav links: Home, Generic, Elements
+- **AND** I see 4 social media icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** I see a copyright line with "Made with ❤ by Component Dock" attribution
+- **AND** footer links turn pink (#f58e9a) on hover
 
 #### Scenario: Footer links to Component Dock
-  Given the footer is visible
-  When I look at the attribution text
-  Then I see a link to "https://www.componentdock.com/" labeled "Component Dock"
+
+- **GIVEN** the footer is visible
+- **WHEN** I look at the attribution text
+- **THEN** I see a link to "https://www.componentdock.com/" labeled "Component Dock"
 
 #### Scenario: Responsive layout adapts to mobile
-  Given the viewport width is less than 768px
-  When I view the page
-  Then the about section title centers
-  And the blog cards stack vertically
-  And the navigation becomes a hamburger menu
+
+- **GIVEN** the viewport width is less than 768px
+- **WHEN** I view the page
+- **THEN** the about section title centers
+- **AND** the blog cards stack vertically
+- **AND** the navigation becomes a hamburger menu
 
 #### Scenario: Accessibility basics
-  Given the page loads
-  Then all images have alt text
-  And all interactive elements are keyboard-focusable
-  And the page has proper heading hierarchy (h1 > h2 > h3 > h4)
-  And focus-visible rings appear on interactive elements
+
+- **GIVEN** the page loads
+- **THEN** all images have alt text
+- **AND** all interactive elements are keyboard-focusable
+- **AND** the page has proper heading hierarchy (h1 > h2 > h3 > h4)
+- **AND** focus-visible rings appear on interactive elements
 
 ## Verification checklist
 

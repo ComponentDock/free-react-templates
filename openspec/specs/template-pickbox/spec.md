@@ -41,54 +41,64 @@ Recreation of ColorLib "Multiselect 03" — a free custom select dropdown menu t
 - Selected items highlighted in brand blue (#3e64ff)
 - Very compact — single form component in a centered column (col-md-6 col-lg-4)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with title
-- Given the user visits the Pickbox page
-- Then the heading "Multiselect #03" is visible
-- And the heading is centered on the page
+### Feature: Pickbox template behaviour
 
-### Scenario: Dropdown displays with label
-- Given the page has loaded
-- Then a label "Select Language" is visible above the dropdown
-- And a dropdown component is rendered below the label
+#### Scenario: Page renders with title
 
-### Scenario: Dropdown shows default state
-- Given the dropdown is in its default state
-- Then the placeholder text "All" is displayed
-- And the dropdown has a light gray border (#e6e6e6)
+- **GIVEN** the user visits the Pickbox page
+- **THEN** the heading "Multiselect #03" is visible
+- **AND** the heading is centered on the page
 
-### Scenario: Dropdown opens on click
-- Given the dropdown is closed
-- When the user clicks the dropdown
-- Then the dropdown menu expands
-- And the menu displays language options: PHP, Javascript, Java, jQuery, SQL, Wordpress, Python, .Net, HTML, CSS
-- And the dropdown has a subtle shadow
+#### Scenario: Dropdown displays with label
 
-### Scenario: Single item selection
-- Given the dropdown is open
-- When the user clicks "PHP"
-- Then "PHP" is selected and highlighted in brand blue (#3e64ff)
-- And the dropdown label updates to show the selected item
+- **GIVEN** the page has loaded
+- **THEN** a label "Select Language" is visible above the dropdown
+- **AND** a dropdown component is rendered below the label
 
-### Scenario: Multiple item selection
-- Given the dropdown is open
-- When the user clicks "PHP"
-- And the user clicks "Javascript"
-- Then both "PHP" and "Javascript" are selected
-- And selected items are displayed with check marks or highlight
+#### Scenario: Dropdown shows default state
 
-### Scenario: Item hover styling
-- Given the dropdown is open
-- When the user hovers over an item
-- Then the item text color changes to brand blue (#3e64ff)
-- And the hover transition is smooth (0.3s ease)
+- **GIVEN** the dropdown is in its default state
+- **THEN** the placeholder text "All" is displayed
+- **AND** the dropdown has a light gray border (#e6e6e6)
 
-### Scenario: Responsive layout
-- Given the user views on a mobile device
-- Then the dropdown is full width within its container
-- And the heading remains centered
-- And the layout adjusts to single-column
+#### Scenario: Dropdown opens on click
+
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the dropdown
+- **THEN** the dropdown menu expands
+- **AND** the menu displays language options: PHP, Javascript, Java, jQuery, SQL, Wordpress, Python, .Net, HTML, CSS
+- **AND** the dropdown has a subtle shadow
+
+#### Scenario: Single item selection
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "PHP"
+- **THEN** "PHP" is selected and highlighted in brand blue (#3e64ff)
+- **AND** the dropdown label updates to show the selected item
+
+#### Scenario: Multiple item selection
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "PHP"
+- **AND** the user clicks "Javascript"
+- **THEN** both "PHP" and "Javascript" are selected
+- **AND** selected items are displayed with check marks or highlight
+
+#### Scenario: Item hover styling
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user hovers over an item
+- **THEN** the item text color changes to brand blue (#3e64ff)
+- **AND** the hover transition is smooth (0.3s ease)
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views on a mobile device
+- **THEN** the dropdown is full width within its container
+- **AND** the heading remains centered
+- **AND** the layout adjusts to single-column
 
 ## Verification checklist
 

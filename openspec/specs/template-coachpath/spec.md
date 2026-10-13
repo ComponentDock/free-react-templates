@@ -75,105 +75,134 @@ newsletter/social).
 
 ---
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
-- **Scenario: Sticky navbar visible on scroll**
-  - Given the page is loaded
-  - When the user scrolls down past the hero
-  - Then the navbar remains fixed at the top with a visible border/shadow
 
-- **Scenario: Navigation links scroll to sections**
-  - Given the page is loaded
-  - When the user clicks "About" in the navbar
-  - Then the page smooth-scrolls to the About section
+#### Scenario: Sticky navbar visible on scroll
 
-- **Scenario: Mobile hamburger toggle**
-  - Given the viewport is 768px wide
-  - When the user taps the hamburger icon
-  - Then a mobile menu slides in with all nav links
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar remains fixed at the top with a visible border/shadow
+
+#### Scenario: Navigation links scroll to sections
+
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks "About" in the navbar
+- **THEN** the page smooth-scrolls to the About section
+
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** the viewport is 768px wide
+- **WHEN** the user taps the hamburger icon
+- **THEN** a mobile menu slides in with all nav links
 
 ### Hero
-- **Scenario: Hero displays typed text animation**
-  - Given the page is loaded
-  - Then the hero heading shows "I'm Professional" followed by a typed-word animation cycling through roles
 
-- **Scenario: Contact Me button scrolls to contact**
-  - Given the page is loaded
-  - When the user clicks the "Contact Me" button
-  - Then the page smooth-scrolls to the Contact section
+#### Scenario: Hero displays typed text animation
+
+- **GIVEN** the page is loaded
+- **THEN** the hero heading shows "I'm Professional" followed by a typed-word animation cycling through roles
+
+#### Scenario: Contact Me button scrolls to contact
+
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Contact Me" button
+- **THEN** the page smooth-scrolls to the Contact section
 
 ### About
-- **Scenario: About section shows two-column layout**
-  - Given the About section is in view
-  - Then there are two columns: left has heading + paragraphs, right has 2 icon cards
 
-- **Scenario: Icon cards display titles and descriptions**
-  - Given the About section is rendered
-  - Then there are exactly 2 icon cards with distinct icons, titles, and descriptions
+#### Scenario: About section shows two-column layout
+
+- **GIVEN** the About section is in view
+- **THEN** there are two columns: left has heading + paragraphs, right has 2 icon cards
+
+#### Scenario: Icon cards display titles and descriptions
+
+- **GIVEN** the About section is rendered
+- **THEN** there are exactly 2 icon cards with distinct icons, titles, and descriptions
 
 ### Training
-- **Scenario: Training carousel shows 3 cards**
-  - Given the Training section is rendered
-  - Then there are exactly 3 training cards visible in the carousel
-  - And each card has an image, title, and description
 
-- **Scenario: Training section has light background**
-  - Given the Training section is rendered
-  - Then its background color is light gray
+#### Scenario: Training carousel shows 3 cards
+
+- **GIVEN** the Training section is rendered
+- **THEN** there are exactly 3 training cards visible in the carousel
+- **AND** each card has an image, title, and description
+
+#### Scenario: Training section has light background
+
+- **GIVEN** the Training section is rendered
+- **THEN** its background color is light gray
 
 ### Testimonials
-- **Scenario: Testimonials carousel displays quotes**
-  - Given the Testimonials section is rendered
-  - Then there are at least 2 testimonial blocks
-  - And each block has a blockquote, a circular avatar, and a name
+
+#### Scenario: Testimonials carousel displays quotes
+
+- **GIVEN** the Testimonials section is rendered
+- **THEN** there are at least 2 testimonial blocks
+- **AND** each block has a blockquote, a circular avatar, and a name
 
 ### Services
-- **Scenario: Services section has navy background**
-  - Given the Services section is rendered
-  - Then its background color is the brand navy (#373a6d)
-  - And all service card text and headings are visible against the navy
 
-- **Scenario: Service cards are white with icons**
-  - Given the Services section is rendered
-  - Then there are at least 3 service cards
-  - And each card has a white background, an icon, a title, and a description
+#### Scenario: Services section has navy background
+
+- **GIVEN** the Services section is rendered
+- **THEN** its background color is the brand navy (#373a6d)
+- **AND** all service card text and headings are visible against the navy
+
+#### Scenario: Service cards are white with icons
+
+- **GIVEN** the Services section is rendered
+- **THEN** there are at least 3 service cards
+- **AND** each card has a white background, an icon, a title, and a description
 
 ### Blog
-- **Scenario: Blog grid shows 4 entries**
-  - Given the Blog section is rendered
-  - Then there are exactly 4 blog entries in a 2-column grid
 
-- **Scenario: Blog entry has image and metadata**
-  - Given a blog entry is rendered
-  - Then it has an image thumbnail, a title, a date, an excerpt, and a "Read More.." link
+#### Scenario: Blog grid shows 4 entries
+
+- **GIVEN** the Blog section is rendered
+- **THEN** there are exactly 4 blog entries in a 2-column grid
+
+#### Scenario: Blog entry has image and metadata
+
+- **GIVEN** a blog entry is rendered
+- **THEN** it has an image thumbnail, a title, a date, an excerpt, and a "Read More.." link
 
 ### Contact
-- **Scenario: Contact info row shows 3 columns**
-  - Given the Contact section is rendered
-  - Then there are 3 contact info blocks: Address, Phone, Email
 
-- **Scenario: Contact form has required fields**
-  - Given the Contact section is rendered
-  - Then there is a form with: first-name input, email input, message textarea, and "Send Message" button
+#### Scenario: Contact info row shows 3 columns
 
-- **Scenario: Contact form validation**
-  - Given the Contact form is empty
-  - When the user clicks "Send Message"
-  - Then the browser shows validation errors on required fields
+- **GIVEN** the Contact section is rendered
+- **THEN** there are 3 contact info blocks: Address, Phone, Email
+
+#### Scenario: Contact form has required fields
+
+- **GIVEN** the Contact section is rendered
+- **THEN** there is a form with: first-name input, email input, message textarea, and "Send Message" button
+
+#### Scenario: Contact form validation
+
+- **GIVEN** the Contact form is empty
+- **WHEN** the user clicks "Send Message"
+- **THEN** the browser shows validation errors on required fields
 
 ### Footer
-- **Scenario: Footer has three columns**
-  - Given the Footer is rendered
-  - Then there are 3 columns: About blurb, Quick Links list, Follow Us + Newsletter
 
-- **Scenario: Footer links to ComponentDock**
-  - Given the Footer is rendered
-  - Then there is a link to https://www.componentdock.com/
+#### Scenario: Footer has three columns
 
-- **Scenario: Newsletter form in footer**
-  - Given the Footer is rendered
-  - Then there is a newsletter email input with a "Send" button
+- **GIVEN** the Footer is rendered
+- **THEN** there are 3 columns: About blurb, Quick Links list, Follow Us + Newsletter
+
+#### Scenario: Footer links to ComponentDock
+
+- **GIVEN** the Footer is rendered
+- **THEN** there is a link to https://www.componentdock.com/
+
+#### Scenario: Newsletter form in footer
+
+- **GIVEN** the Footer is rendered
+- **THEN** there is a newsletter email input with a "Send" button
 
 ---
 

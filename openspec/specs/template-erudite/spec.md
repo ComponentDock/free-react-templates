@@ -83,87 +83,98 @@ Extracted from the live preview at https://preview.colorlib.com/theme/ezuca/ and
 10. **Footer** — 4-column: About/logo + description, Contact info (email, phone, address), Quick Links, Follow Us (social icons: Facebook, Google+, Instagram, Twitter)
 11. **Footer Bar** — Copyright notice, app store download links
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Erudite Education Template
 
 #### Scenario: Top header bar displays contact info and auth links
-- **Given** the user visits the page
-- **When** the top header bar renders
-- **Then** it shows an email address and phone number on the left
-- **And** it shows a search input and Register/Login links on the right
-- **And** the search input has placeholder text "What would you like to learn?"
+
+- **GIVEN** the user visits the page
+- **WHEN** the top header bar renders
+- **THEN** it shows an email address and phone number on the left
+- **AND** it shows a search input and Register/Login links on the right
+- **AND** the search input has placeholder text "What would you like to learn?"
 
 #### Scenario: Navbar displays logo and navigation links
-- **Given** the user visits the page
-- **When** the navbar renders
-- **Then** it shows the Erudite logo on the left
-- **And** it shows navigation links: Home, About, Courses, Pages, Blog, Contact
-- **And** the navbar is sticky on scroll
+
+- **GIVEN** the user visits the page
+- **WHEN** the navbar renders
+- **THEN** it shows the Erudite logo on the left
+- **AND** it shows navigation links: Home, About, Courses, Pages, Blog, Contact
+- **AND** the navbar is sticky on scroll
 
 #### Scenario: Hero section renders with CTA
-- **Given** the user visits the page
-- **When** the hero section renders
-- **Then** it shows a full-width background image with dark overlay
-- **And** it shows the heading "Learn to Code"
-- **And** it shows a subtitle paragraph
-- **And** it shows a "read more" call-to-action button
+
+- **GIVEN** the user visits the page
+- **WHEN** the hero section renders
+- **THEN** it shows a full-width background image with dark overlay
+- **AND** it shows the heading "Learn to Code"
+- **AND** it shows a subtitle paragraph
+- **AND** it shows a "read more" call-to-action button
 
 #### Scenario: Featured courses horizontal section shows course cards
-- **Given** the user visits the page
-- **When** the horizontal featured courses section renders
-- **Then** it shows a heading "Featured Courses" with a "view all" button
-- **And** it displays 2 course cards in a 2-column layout
-- **And** each course card shows a thumbnail, star rating, title, author, date, and price
-- **And** free courses display a "Free" badge
+
+- **GIVEN** the user visits the page
+- **WHEN** the horizontal featured courses section renders
+- **THEN** it shows a heading "Featured Courses" with a "view all" button
+- **AND** it displays 2 course cards in a 2-column layout
+- **AND** each course card shows a thumbnail, star rating, title, author, date, and price
+- **AND** free courses display a "Free" badge
 
 #### Scenario: About section shows stats and video
-- **Given** the user visits the page
-- **When** the about section renders
-- **Then** it shows a heading "About Erudite" with a description
-- **And** it shows 4 stats counters: 50M+ Students, 30K+ Courses, 340M+ Instructors, 20+ Countries
-- **And** it shows a video thumbnail with a play button overlay on the right
+
+- **GIVEN** the user visits the page
+- **WHEN** the about section renders
+- **THEN** it shows a heading "About Erudite" with a description
+- **AND** it shows 4 stats counters: 50M+ Students, 30K+ Courses, 340M+ Instructors, 20+ Countries
+- **AND** it shows a video thumbnail with a play button overlay on the right
 
 #### Scenario: Testimonial section displays carousel
-- **Given** the user visits the page
-- **When** the testimonial section renders
-- **Then** it shows a carousel/slider of testimonials
-- **And** each testimonial has a circular avatar, quote text, author name, and affiliation
-- **And** the section has a dark background
+
+- **GIVEN** the user visits the page
+- **WHEN** the testimonial section renders
+- **THEN** it shows a carousel/slider of testimonials
+- **AND** each testimonial has a circular avatar, quote text, author name, and affiliation
+- **AND** the section has a dark background
 
 #### Scenario: Featured courses vertical section with category filter
-- **Given** the user visits the page
-- **When** the vertical featured courses section renders
-- **Then** it shows a category filter nav: All, Business, Design, Web Development, Photography
-- **And** it displays a 3-column grid of course cards
-- **And** each card shows thumbnail, title, author, date, price (with strikethrough original), and star rating
-- **And** the "All" category is active by default
+
+- **GIVEN** the user visits the page
+- **WHEN** the vertical featured courses section renders
+- **THEN** it shows a category filter nav: All, Business, Design, Web Development, Photography
+- **AND** it displays a 3-column grid of course cards
+- **AND** each card shows thumbnail, title, author, date, price (with strikethrough original), and star rating
+- **AND** the "All" category is active by default
 
 #### Scenario: Latest news and events section
-- **Given** the user visits the page
-- **When** the latest news section renders
-- **Then** it shows a heading "Latest News & Events"
-- **And** it shows a featured event with large image, date badge (day + month), title, location, and duration
-- **And** it shows a side list of additional event items with smaller thumbnails
+
+- **GIVEN** the user visits the page
+- **WHEN** the latest news section renders
+- **THEN** it shows a heading "Latest News & Events"
+- **AND** it shows a featured event with large image, date badge (day + month), title, location, and duration
+- **AND** it shows a side list of additional event items with smaller thumbnails
 
 #### Scenario: Home gallery section
-- **Given** the user visits the page
-- **When** the gallery section renders
-- **Then** it shows an asymmetric image grid
-- **And** the grid uses a mix of 1x1 and larger tiles in a flex layout
+
+- **GIVEN** the user visits the page
+- **WHEN** the gallery section renders
+- **THEN** it shows an asymmetric image grid
+- **AND** the grid uses a mix of 1x1 and larger tiles in a flex layout
 
 #### Scenario: Footer displays contact info and links
-- **Given** the user visits the page
-- **When** the footer renders
-- **Then** it shows 4 columns: About (logo + description), Contact (email, phone, address), Quick Links, Follow Us (social icons)
-- **And** social icons include Facebook, Google+, Instagram, Twitter
-- **And** the footer links to Component Dock
+
+- **GIVEN** the user visits the page
+- **WHEN** the footer renders
+- **THEN** it shows 4 columns: About (logo + description), Contact (email, phone, address), Quick Links, Follow Us (social icons)
+- **AND** social icons include Facebook, Google+, Instagram, Twitter
+- **AND** the footer links to Component Dock
 
 #### Scenario: Footer bar shows copyright
-- **Given** the user visits the page
-- **When** the footer bar renders
-- **Then** it shows a copyright notice with the current year
-- **And** it shows app store download links
+
+- **GIVEN** the user visits the page
+- **WHEN** the footer bar renders
+- **THEN** it shows a copyright notice with the current year
+- **AND** it shows app store download links
 
 ## Verification Checklist
 

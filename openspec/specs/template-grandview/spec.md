@@ -40,103 +40,116 @@ Recreation of ColorLib "Sogo Hotel" template.
 10. **CTA Reserve** — Dark overlay section, "A Best Place To Stay. Reserve Now!" + "Reserve Now" button
 11. **Footer** — Dark bg (#1a1a1a), 4-column: About + Quick Links + Customer Service + Contact Info + Social icons + newsletter form
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Grandview Hotel Landing Template
 
 #### Scenario: Navbar renders correctly
-- Given the user visits the Grandview page
-- Then the navbar displays the logo "Grandview Hotel"
-- And the navbar shows navigation links: Home, Rooms, About, Events, Contact, Reservation
-- And the navbar becomes sticky on scroll
-- And a hamburger menu toggle appears on mobile viewports
+
+- **GIVEN** the user visits the Grandview page
+- **THEN** the navbar displays the logo "Grandview Hotel"
+- **AND** the navbar shows navigation links: Home, Rooms, About, Events, Contact, Reservation
+- **AND** the navbar becomes sticky on scroll
+- **AND** a hamburger menu toggle appears on mobile viewports
 
 #### Scenario: Hero section displays
-- Given the hero section is visible
-- Then a full-viewport background image is displayed with a dark overlay
-- And the text "Welcome To 5" followed by a star icon and "Hotel" is shown
-- And the heading "A Best Place To Stay" is centered
-- And a scroll-down mouse indicator is present
+
+- **GIVEN** the hero section is visible
+- **THEN** a full-viewport background image is displayed with a dark overlay
+- **AND** the text "Welcome To 5" followed by a star icon and "Hotel" is shown
+- **AND** the heading "A Best Place To Stay" is centered
+- **AND** a scroll-down mouse indicator is present
 
 #### Scenario: Check Availability form
-- Given the check availability section is visible
-- Then a Check In date picker input is displayed
-- And a Check Out date picker input is displayed
-- And an Adults dropdown (select) is displayed
-- And a Children dropdown (select) is displayed
-- And a "Check Availability" button is displayed in gold (#ffba5a)
-- When the user clicks "Check Availability" with empty fields
-- Then the form does not submit (client-side validation)
+
+- **GIVEN** the check availability section is visible
+- **THEN** a Check In date picker input is displayed
+- **AND** a Check Out date picker input is displayed
+- **AND** an Adults dropdown (select) is displayed
+- **AND** a Children dropdown (select) is displayed
+- **AND** a "Check Availability" button is displayed in gold (#ffba5a)
+- **WHEN** the user clicks "Check Availability" with empty fields
+- **THEN** the form does not submit (client-side validation)
 
 #### Scenario: Welcome section renders
-- Given the welcome section is visible
-- Then the heading "Welcome!" is displayed
-- And a descriptive paragraph is shown
-- And a "Learn More" button in gold is shown
-- And a "See video" link is shown
-- And two images are displayed (main image + small overlay image)
+
+- **GIVEN** the welcome section is visible
+- **THEN** the heading "Welcome!" is displayed
+- **AND** a descriptive paragraph is shown
+- **AND** a "Learn More" button in gold is shown
+- **AND** a "See video" link is shown
+- **AND** two images are displayed (main image + small overlay image)
 
 #### Scenario: Rooms & Suites section
-- Given the rooms section is visible
-- Then the heading "Rooms & Suites" is displayed centered
-- And 3 room cards are shown in a responsive grid
-- And each card has an image, room name, and price
-- And the room names are: Single Room, Family Room, Presidential Room
+
+- **GIVEN** the rooms section is visible
+- **THEN** the heading "Rooms & Suites" is displayed centered
+- **AND** 3 room cards are shown in a responsive grid
+- **AND** each card has an image, room name, and price
+- **AND** the room names are: Single Room, Family Room, Presidential Room
 
 #### Scenario: Photo gallery section
-- Given the photo gallery section is visible
-- Then the heading "Photos" is displayed
-- And an image carousel/slider is present
-- And users can navigate between photos
+
+- **GIVEN** the photo gallery section is visible
+- **THEN** the heading "Photos" is displayed
+- **AND** an image carousel/slider is present
+- **AND** users can navigate between photos
 
 #### Scenario: Restaurant menu section
-- Given the restaurant menu section is visible
-- Then the heading "Our Restaurant Menu" is displayed in white
-- And menu items are organized in columns with dish names
-- And the section has a dark overlay background
-- And dish items include: Murgh Tikka Masala, Fish Moilee, Safed Gosht, etc.
+
+- **GIVEN** the restaurant menu section is visible
+- **THEN** the heading "Our Restaurant Menu" is displayed in white
+- **AND** menu items are organized in columns with dish names
+- **AND** the section has a dark overlay background
+- **AND** dish items include: Murgh Tikka Masala, Fish Moilee, Safed Gosht, etc
 
 #### Scenario: Testimonials section
-- Given the testimonials section is visible
-- Then the heading "People Says" is displayed
-- And testimonial cards show avatar, quote, and reviewer name
-- And testimonials cycle or display in a grid
+
+- **GIVEN** the testimonials section is visible
+- **THEN** the heading "People Says" is displayed
+- **AND** testimonial cards show avatar, quote, and reviewer name
+- **AND** testimonials cycle or display in a grid
 
 #### Scenario: Events section
-- Given the events section is visible
-- Then the heading "Events" is displayed
-- And 3 blog/event cards are shown in a responsive grid
-- And each card has an image, title, and excerpt text
+
+- **GIVEN** the events section is visible
+- **THEN** the heading "Events" is displayed
+- **AND** 3 blog/event cards are shown in a responsive grid
+- **AND** each card has an image, title, and excerpt text
 
 #### Scenario: CTA Reserve section
-- Given the CTA section is visible
-- Then a dark overlay background is displayed
-- And the text "A Best Place To Stay. Reserve Now!" is shown in white
-- And a "Reserve Now" button is displayed
+
+- **GIVEN** the CTA section is visible
+- **THEN** a dark overlay background is displayed
+- **AND** the text "A Best Place To Stay. Reserve Now!" is shown in white
+- **AND** a "Reserve Now" button is displayed
 
 #### Scenario: Footer renders
-- Given the footer is visible
-- Then contact information is displayed
-- And social media links are present
-- And quick links navigation is shown
-- And a newsletter signup form is present
-- And a "Made with Component Dock" link to https://www.componentdock.com/ is present
+
+- **GIVEN** the footer is visible
+- **THEN** contact information is displayed
+- **AND** social media links are present
+- **AND** quick links navigation is shown
+- **AND** a newsletter signup form is present
+- **AND** a "Made with Component Dock" link to https://www.componentdock.com/ is present
 
 #### Scenario: Responsive design
-- Given the user views the page on mobile (viewport < 768px)
-- Then the navbar collapses to a hamburger menu
-- And room cards stack vertically
-- And the welcome section stacks vertically
-- And blog cards stack vertically
-- And the check availability form fields stack
+
+- **GIVEN** the user views the page on mobile (viewport < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** room cards stack vertically
+- **AND** the welcome section stacks vertically
+- **AND** blog cards stack vertically
+- **AND** the check availability form fields stack
 
 #### Scenario: Design tokens applied
-- Given the page loads
-- Then the primary color #ffba5a is used for buttons and accents
-- And headings use Playfair Display font
-- And body text uses Roboto font
-- And buttons have pill shape (border-radius: 50px)
-- And alternating sections use #f2f4fb light blue-gray background
+
+- **GIVEN** the page loads
+- **THEN** the primary color #ffba5a is used for buttons and accents
+- **AND** headings use Playfair Display font
+- **AND** body text uses Roboto font
+- **AND** buttons have pill shape (border-radius: 50px)
+- **AND** alternating sections use #f2f4fb light blue-gray background
 
 ## Verification Checklist
 

@@ -13,14 +13,18 @@
 - Button Shapes: Rounded-full for carousel navigation controls
 - Section Backgrounds: Light gray `#f1f5f9`, clean white `#ffffff` cards
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Testimonial Carousel Section
+
+#### Scenario: Testimonial Carousel Section
 
 - The template must display a clean, centered testimonial carousel featuring quote cards with quotation marks icon, descriptive quote text, author name, and role/title.
 - Interactive slide navigation (prev/next controls and clickable pagination dots).
 
 ### Requirement 2: Footer Component
+
+#### Scenario: Footer Component
 
 - Professional footer featuring brand info, quick navigation links, newsletter signup, and mandatory Component Dock attribution (`https://www.componentdock.com/`).
 

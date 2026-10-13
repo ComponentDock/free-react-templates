@@ -55,90 +55,126 @@ Extracted from the ColorLib preview (`css/style.css`):
 11. **Appointment/Contact** — Split: left map placeholder, right form (First Name, Last Name, Message, Send button) on dark overlay
 12. **Footer** — Dark background (`#101315`), 4-column: About Us + social icons, Recent Blog (2 posts), Services links, Contact info. Copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
+
 - Scenario: Navbar displays logo and navigation links
-  - Given the user visits the home page
-  - Then the navbar shows the logo text "Margherita" with subtitle "Delicious"
-  - And navigation links "Home", "Menu", "Services", "Blog", "About", "Contact" are visible
-  - And the navbar has a dark background
+- **GIVEN** the user visits the home page
+- **THEN** the navbar shows the logo text "Margherita" with subtitle "Delicious"
+- **AND** navigation links "Home", "Menu", "Services", "Blog", "About", "Contact" are visible
+- **AND** the navbar has a dark background
 
 ### Hero Slider
+
+#### Scenario: Hero Slider
+
 - Scenario: Hero slider shows rotating slides with CTAs
-  - Given the user views the hero section
-  - Then a full-width image slider is displayed at 750px height
-  - And each slide contains a subheading, headline, description, and two CTA buttons
-  - And the primary button reads "Order Now"
-  - And the secondary button reads "View Menu" with white outline style
-  - And slide indicators allow manual navigation
+- **GIVEN** the user views the hero section
+- **THEN** a full-width image slider is displayed at 750px height
+- **AND** each slide contains a subheading, headline, description, and two CTA buttons
+- **AND** the primary button reads "Order Now"
+- **AND** the secondary button reads "View Menu" with white outline style
+- **AND** slide indicators allow manual navigation
 
 ### Intro Bar
+
+#### Scenario: Intro Bar
+
 - Scenario: Intro bar shows contact info and social links
-  - Given the user scrolls below the hero
-  - Then a two-part bar appears: left section with phone, address, and hours
-  - And the left section has a black background with white text
-  - And the right section has a gold (#fac564) background with social media icons
+- **GIVEN** the user scrolls below the hero
+- **THEN** a two-part bar appears: left section with phone, address, and hours
+- **AND** the left section has a black background with white text
+- **AND** the right section has a gold (#fac564) background with social media icons
 
 ### About Section
+
+#### Scenario: About Section
+
 - Scenario: About section displays split image and text
-  - Given the user views the about area
-  - Then a 50/50 split layout shows: left half is a background image, right half has heading and paragraph text
-  - And the heading reads "Welcome to Margherita Restaurant"
+- **GIVEN** the user views the about area
+- **THEN** a 50/50 split layout shows: left half is a background image, right half has heading and paragraph text
+- **AND** the heading reads "Welcome to Margherita Restaurant"
 
 ### Services Section
+
+#### Scenario: Services Section
+
 - Scenario: Services section shows three service cards
-  - Given the user views the services area
-  - Then three service items are displayed in a row
-  - And each item has a circular icon with gold border, a heading, and description
-  - And the section has a patterned dark background with gold accent
+- **GIVEN** the user views the services area
+- **THEN** three service items are displayed in a row
+- **AND** each item has a circular icon with gold border, a heading, and description
+- **AND** the section has a patterned dark background with gold accent
 
 ### Hot Meals Section
+
+#### Scenario: Hot Meals Section
+
 - Scenario: Hot meals grid shows pizza items with pricing
-  - Given the user views the featured items
-  - Then a 3-column grid displays 6 pizza menu items
-  - And each item shows a circular food image, name, description, price, and Order button
-  - And the section heading reads "Hot Pizza Meals"
+- **GIVEN** the user views the featured items
+- **THEN** a 3-column grid displays 6 pizza menu items
+- **AND** each item shows a circular food image, name, description, price, and Order button
+- **AND** the section heading reads "Hot Pizza Meals"
 
 ### Gallery Section
+
+#### Scenario: Gallery Section
+
 - Scenario: Gallery shows a 4-column image grid
-  - Given the user views the gallery
-  - Then 4 images are displayed in a full-width row
-  - And hovering an image reveals a search icon overlay
+- **GIVEN** the user views the gallery
+- **THEN** 4 images are displayed in a full-width row
+- **AND** hovering an image reveals a search icon overlay
 
 ### Counter Section
+
+#### Scenario: Counter Section
+
 - Scenario: Counter section shows statistics
-  - Given the user views the counter area
-  - Then 4 statistic counters are displayed
-  - And each counter has a circular gold-bordered icon and a number
+- **GIVEN** the user views the counter area
+- **THEN** 4 statistic counters are displayed
+- **AND** each counter has a circular gold-bordered icon and a number
 
 ### Menu Section
+
+#### Scenario: Menu Section
+
 - Scenario: Menu section has tabbed content
-  - Given the user views the menu area
-  - Then a left image and right tabbed content area are shown
-  - And tabs include "Pizza", "Drinks", "Burgers", "Pasta"
-  - And each tab shows 3 menu items with circular images, name, description, price, and Add to cart button
+- **GIVEN** the user views the menu area
+- **THEN** a left image and right tabbed content area are shown
+- **AND** tabs include "Pizza", "Drinks", "Burgers", "Pasta"
+- **AND** each tab shows 3 menu items with circular images, name, description, price, and Add to cart button
 
 ### Blog Section
+
+#### Scenario: Blog Section
+
 - Scenario: Blog section shows recent posts
-  - Given the user views the blog area
-  - Then 3 blog cards are displayed in a row
-  - And each card shows an image, title, date, author, and comment count
+- **GIVEN** the user views the blog area
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card shows an image, title, date, author, and comment count
 
 ### Contact Section
+
+#### Scenario: Contact Section
+
 - Scenario: Contact form allows user messages
-  - Given the user views the contact area
-  - Then a map placeholder is on the left and a form on the right
-  - And the form has First Name, Last Name, Message fields and a Send button
-  - And the section has a dark overlay background
+- **GIVEN** the user views the contact area
+- **THEN** a map placeholder is on the left and a form on the right
+- **AND** the form has First Name, Last Name, Message fields and a Send button
+- **AND** the section has a dark overlay background
 
 ### Footer
+
+#### Scenario: Footer
+
 - Scenario: Footer shows site info and links
-  - Given the user scrolls to the bottom
-  - Then a dark footer (#101315) with 4 columns is displayed
-  - And columns include: About Us with social icons, Recent Blog, Services links, Contact info
-  - And a copyright line appears at the bottom
-  - And the footer links to "Component Dock" (https://www.componentdock.com/)
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a dark footer (#101315) with 4 columns is displayed
+- **AND** columns include: About Us with social icons, Recent Blog, Services links, Contact info
+- **AND** a copyright line appears at the bottom
+- **AND** the footer links to "Component Dock" (https://www.componentdock.com/)
 
 ## Verification Checklist
 

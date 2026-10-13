@@ -53,88 +53,91 @@ Right column (~50%):
 Key differences: no card, no background image, very clean/minimal, large bold
 heading, coral accent, text content on the right side.
 
-## Gherkin requirements
+## Requirements
 
 ### Page layout
 
-```gherkin
-Scenario: Page renders a centered two-column layout
-  Given I visit the Formbay page
-  Then I see a centered two-column layout on a white background
+#### Scenario: Page renders a centered two-column layout
 
-Scenario: Left column contains heading and form
-  Given I visit the Formbay page
-  Then the left column has a large heading "Fill the form. It's easy."
-  And it contains a contact form
+- **GIVEN** I visit the Formbay page
+- **THEN** I see a centered two-column layout on a white background
 
-Scenario: Right column contains text content
-  Given I visit the Formbay page
-  Then the right column has a heading "Let's talk about everything."
-  And it contains a paragraph of text
-  And it contains a "Read more" link
-```
+#### Scenario: Left column contains heading and form
+
+- **GIVEN** I visit the Formbay page
+- **THEN** the left column has a large heading "Fill the form. It's easy."
+- **AND** it contains a contact form
+
+#### Scenario: Right column contains text content
+
+- **GIVEN** I visit the Formbay page
+- **THEN** the right column has a heading "Let's talk about everything."
+- **AND** it contains a paragraph of text
+- **AND** it contains a "Read more" link
 
 ### Contact form
 
-```gherkin
-Scenario: Form displays all fields
-  Given I visit the Formbay page
-  Then I see a First name input field
-  And I see a Last name input field
-  And I see an Email input field
-  And I see a Message textarea
-  And I see a Send Message button
+#### Scenario: Form displays all fields
 
-Scenario: First name and Last name are side by side
-  Given I visit the Formbay page
-  Then the First name and Last name inputs are in the same row
+- **GIVEN** I visit the Formbay page
+- **THEN** I see a First name input field
+- **AND** I see a Last name input field
+- **AND** I see an Email input field
+- **AND** I see a Message textarea
+- **AND** I see a Send Message button
 
-Scenario: Inputs have underline style
-  Given I visit the Formbay page
-  Then all form inputs have a bottom border only (underline style)
+#### Scenario: First name and Last name are side by side
 
-Scenario: Message field has label
-  Given I visit the Formbay page
-  Then the Message textarea has a "Write your message" label above it
+- **GIVEN** I visit the Formbay page
+- **THEN** the First name and Last name inputs are in the same row
 
-Scenario: Send Message button is styled
-  Given I visit the Formbay page
-  Then the Send Message button has a coral background and white text
-```
+#### Scenario: Inputs have underline style
+
+- **GIVEN** I visit the Formbay page
+- **THEN** all form inputs have a bottom border only (underline style)
+
+#### Scenario: Message field has label
+
+- **GIVEN** I visit the Formbay page
+- **THEN** the Message textarea has a "Write your message" label above it
+
+#### Scenario: Send Message button is styled
+
+- **GIVEN** I visit the Formbay page
+- **THEN** the Send Message button has a coral background and white text
 
 ### Text content
 
-```gherkin
-Scenario: Right column displays heading
-  Given I visit the Formbay page
-  Then I see "Let's talk about everything." in the right column
+#### Scenario: Right column displays heading
 
-Scenario: Right column displays paragraph
-  Given I visit the Formbay page
-  Then I see a paragraph of text below the heading in the right column
+- **GIVEN** I visit the Formbay page
+- **THEN** I see "Let's talk about everything." in the right column
 
-Scenario: Right column displays Read more link
-  Given I visit the Formbay page
-  Then I see a "Read more" link in coral color
-```
+#### Scenario: Right column displays paragraph
+
+- **GIVEN** I visit the Formbay page
+- **THEN** I see a paragraph of text below the heading in the right column
+
+#### Scenario: Right column displays Read more link
+
+- **GIVEN** I visit the Formbay page
+- **THEN** I see a "Read more" link in coral color
 
 ### Responsive behavior
 
-```gherkin
-Scenario: Columns stack on mobile
-  Given I visit the Formbay page on a mobile viewport
-  Then the two columns stack vertically
-  And the form appears above the text content
-```
+#### Scenario: Columns stack on mobile
+
+- **GIVEN** I visit the Formbay page on a mobile viewport
+- **THEN** the two columns stack vertically
+- **AND** the form appears above the text content
 
 ### Footer
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formbay page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Formbay page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references Component Dock
 
 ## Verification checklist
 

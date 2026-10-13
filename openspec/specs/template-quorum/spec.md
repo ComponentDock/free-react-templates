@@ -74,98 +74,111 @@ Extracted from the live preview CSS (`css/style.css`) and inline HTML styles:
 9. **Contact** — light bg, 4 info cards: Address, Contact Number, Email, Website
 10. **Footer** — 3-column: about text, navigation links, practice areas links, contact info + copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Quorum Law Firm Template
 
 #### Scenario: Navbar renders with correct navigation links
-- **Given** the user visits the Quorum page
-- **Then** a dark navbar is visible at the top
-- **And** the brand text reads "Quorum"
-- **And** navigation links include: Home, About, Practice Areas, Attorneys, Blog, Contact
-- **And** a "Request a Quote" CTA link is visible
+
+- **GIVEN** the user visits the Quorum page
+- **THEN** a dark navbar is visible at the top
+- **AND** the brand text reads "Quorum"
+- **AND** navigation links include: Home, About, Practice Areas, Attorneys, Blog, Contact
+- **AND** a "Request a Quote" CTA link is visible
 
 #### Scenario: Hero section displays full-height with CTA
-- **Given** the user visits the Quorum page
-- **Then** a full-height hero section is visible
-- **And** the heading reads "Reputation, Respect, Result"
-- **And** a subtitle paragraph is displayed below the heading
-- **And** a "Request a Quote" button is present with brand color styling
-- **And** the hero has a background image with a dark overlay
+
+- **GIVEN** the user visits the Quorum page
+- **THEN** a full-height hero section is visible
+- **AND** the heading reads "Reputation, Respect, Result"
+- **AND** a subtitle paragraph is displayed below the heading
+- **AND** a "Request a Quote" button is present with brand color styling
+- **AND** the hero has a background image with a dark overlay
 
 #### Scenario: Stats counter section shows 4 metrics
-- **Given** the user scrolls to the stats section
-- **Then** 4 counter items are visible
-- **And** "50" Years of Experienced is displayed
-- **And** "10000" Trusted Clients is displayed
-- **And** "564" Qualified Lawyers is displayed
-- **And** "300" Honors & Awards is displayed
-- **And** each counter has an icon above the number
+
+- **GIVEN** the user scrolls to the stats section
+- **THEN** 4 counter items are visible
+- **AND** "50" Years of Experienced is displayed
+- **AND** "10000" Trusted Clients is displayed
+- **AND** "564" Qualified Lawyers is displayed
+- **AND** "300" Honors & Awards is displayed
+- **AND** each counter has an icon above the number
 
 #### Scenario: About section displays on light background
-- **Given** the user scrolls to the about section
-- **Then** the section has a light background
-- **And** a "Welcome" subheading is visible
-- **And** the heading reads "Welcome to Quorum A Law Firm"
-- **And** descriptive paragraphs are present
-- **And** a video play button is visible on the left image area
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the section has a light background
+- **AND** a "Welcome" subheading is visible
+- **AND** the heading reads "Welcome to Quorum A Law Firm"
+- **AND** descriptive paragraphs are present
+- **AND** a video play button is visible on the left image area
 
 #### Scenario: Testimonials section shows carousel
-- **Given** the user scrolls to the testimonials section
-- **Then** a carousel of testimonial cards is visible
-- **And** each card contains a quote icon, quote text, person photo, name, and role
-- **And** navigation dots/arrows allow cycling through testimonials
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card contains a quote icon, quote text, person photo, name, and role
+- **AND** navigation dots/arrows allow cycling through testimonials
 
 #### Scenario: Practice Areas section shows tabbed panel
-- **Given** the user scrolls to the practice areas section
-- **Then** a vertical tab panel is visible with a brand-colored sidebar
-- **And** area tabs include: Family Law, Business Law, Insurance Law, Criminal Law, Employment Law, Financial Law, Drug Offenses, Sexual Offenses, Property Law
-- **And** clicking a tab shows that area's title, description, and "Learn More" link on the right panel
-- **And** the first tab is selected by default
+
+- **GIVEN** the user scrolls to the practice areas section
+- **THEN** a vertical tab panel is visible with a brand-colored sidebar
+- **AND** area tabs include: Family Law, Business Law, Insurance Law, Criminal Law, Employment Law, Financial Law, Drug Offenses, Sexual Offenses, Property Law
+- **AND** clicking a tab shows that area's title, description, and "Learn More" link on the right panel
+- **AND** the first tab is selected by default
 
 #### Scenario: Attorneys section shows team grid
-- **Given** the user scrolls to the attorneys section
-- **Then** 4 attorney cards are displayed in a grid
-- **And** each card shows a photo, name, and role
-- **And** attorneys listed: Lloyd Wilson (CEO, Founder), Rachel Parker (Business Lawyer), Ian Smith (Insurance Lawyer), Alicia Henderson (Criminal Law)
+
+- **GIVEN** the user scrolls to the attorneys section
+- **THEN** 4 attorney cards are displayed in a grid
+- **AND** each card shows a photo, name, and role
+- **AND** attorneys listed: Lloyd Wilson (CEO, Founder), Rachel Parker (Business Lawyer), Ian Smith (Insurance Lawyer), Alicia Henderson (Criminal Law)
 
 #### Scenario: Blog section shows post cards
-- **Given** the user scrolls to the blog section
-- **Then** 3 blog post cards are displayed
-- **And** each card contains an image, title, excerpt, "Read More" link, and meta info
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed
+- **AND** each card contains an image, title, excerpt, "Read More" link, and meta info
 
 #### Scenario: Contact section displays info cards
-- **Given** the user scrolls to the contact section
-- **Then** 4 info items are visible on a light background
-- **And** Address, Contact Number, Email, and Website are displayed
-- **And** a "Contact Us" heading is present
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** 4 info items are visible on a light background
+- **AND** Address, Contact Number, Email, and Website are displayed
+- **AND** a "Contact Us" heading is present
 
 #### Scenario: Footer has three columns
-- **Given** the user scrolls to the footer
-- **Then** the footer contains 3 columns
-- **And** column 1 has about text and description
-- **And** column 2 has navigation links
-- **And** column 3 has practice area links and contact info
-- **And** a copyright line is at the bottom
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer contains 3 columns
+- **AND** column 1 has about text and description
+- **AND** column 2 has navigation links
+- **AND** column 3 has practice area links and contact info
+- **AND** a copyright line is at the bottom
 
 #### Scenario: Responsive design
-- **Given** the user views the page on a mobile viewport (< 768px)
-- **Then** the navbar collapses into a hamburger menu
-- **And** columns stack vertically
-- **And** the practice areas tabs move above the content panel
-- **And** all content remains readable
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** columns stack vertically
+- **AND** the practice areas tabs move above the content panel
+- **AND** all content remains readable
 
 #### Scenario: Brand color consistency
-- **Given** the user views any interactive element
-- **Then** primary buttons use `#6e5773` background
-- **And** the practice areas tab sidebar uses `#6e5773` background
-- **And** the navbar uses dark background `#343a40`
-- **And** section backgrounds alternate between white and `#f8f9fa`
+
+- **GIVEN** the user views any interactive element
+- **THEN** primary buttons use `#6e5773` background
+- **AND** the practice areas tab sidebar uses `#6e5773` background
+- **AND** the navbar uses dark background `#343a40`
+- **AND** section backgrounds alternate between white and `#f8f9fa`
 
 #### Scenario: Footer links to Component Dock
-- **Given** the user views the footer
-- **Then** a link to "https://www.componentdock.com/" is present
-- **And** the link text references "Component Dock"
+
+- **GIVEN** the user views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text references "Component Dock"
 
 ## Verification Checklist
 

@@ -48,93 +48,119 @@ Recreation of ColorLib "Drcare" — a medical/dental care website template.
 15. **Blog** — 3 recent blog post cards
 16. **Footer** — dark bg, 6 columns: About/Dr.Care Facts, Links, Services, Recent Blog, Opening Hours, Subscribe
 
-## Gherkin requirements
+## Requirements
 
 ### TopBar
-- **Scenario: contact info display**
-  - Given the user visits the page
-  - Then a top bar shows phone number, email, and address with icons
-  - And the bar has a light/white background
+
+#### Scenario: contact info display
+
+- **GIVEN** the user visits the page
+- **THEN** a top bar shows phone number, email, and address with icons
+- **AND** the bar has a light/white background
 
 ### Navbar
-- **Scenario: navigation links**
-  - Given the user views the navbar
-  - Then links are visible: Home, About, Department, Doctor, Blog, Contact
-  - And the navbar has a dark background
-  - And the logo appears on the left
 
-- **Scenario: mobile toggle**
-  - Given the viewport is narrow (mobile)
-  - When the user taps the hamburger icon
-  - Then the nav links expand in a dropdown
+#### Scenario: navigation links
+
+- **GIVEN** the user views the navbar
+- **THEN** links are visible: Home, About, Department, Doctor, Blog, Contact
+- **AND** the navbar has a dark background
+- **AND** the logo appears on the left
+
+#### Scenario: mobile toggle
+
+- **GIVEN** the viewport is narrow (mobile)
+- **WHEN** the user taps the hamburger icon
+- **THEN** the nav links expand in a dropdown
 
 ### HeroSlider
-- **Scenario: hero content**
-  - Given the hero slider is visible
-  - Then a heading is displayed (e.g., "Everyday We Bring Hope and Smile")
-  - And a subheading provides context
-  - And a CTA button is present
 
-- **Scenario: slider navigation**
-  - Given the hero slider is visible
-  - When the user navigates slides
-  - Then the content transitions between at least 2 slides
+#### Scenario: hero content
+
+- **GIVEN** the hero slider is visible
+- **THEN** a heading is displayed (e.g., "Everyday We Bring Hope and Smile")
+- **AND** a subheading provides context
+- **AND** a CTA button is present
+
+#### Scenario: slider navigation
+
+- **GIVEN** the hero slider is visible
+- **WHEN** the user navigates slides
+- **THEN** the content transitions between at least 2 slides
 
 ### Services
-- **Scenario: service cards**
-  - Given the user scrolls to services
-  - Then 4 service cards are visible
-  - And each card has an icon, title, and short description
-  - And the services are: Qualified Doctors, Emergency Care, Outdoor Checkup, 24 Hours Service
+
+#### Scenario: service cards
+
+- **GIVEN** the user scrolls to services
+- **THEN** 4 service cards are visible
+- **AND** each card has an icon, title, and short description
+- **AND** the services are: Qualified Doctors, Emergency Care, Outdoor Checkup, 24 Hours Service
 
 ### About
-- **Scenario: about content**
-  - Given the user scrolls to the about section
-  - Then a heading or paragraph about medical care is displayed
-  - And supporting content (stats or text) appears alongside
+
+#### Scenario: about content
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading or paragraph about medical care is displayed
+- **AND** supporting content (stats or text) appears alongside
 
 ### Stats
-- **Scenario: counter display**
-  - Given the user scrolls to the stats section
-  - Then 4 counters are visible (patients, doctors, staff, awards or similar)
-  - And the section has a parallax background image
+
+#### Scenario: counter display
+
+- **GIVEN** the user scrolls to the stats section
+- **THEN** 4 counters are visible (patients, doctors, staff, awards or similar)
+- **AND** the section has a parallax background image
 
 ### Departments
-- **Scenario: department tabs**
-  - Given the user scrolls to departments
-  - Then tabs are visible for 5+ departments
-  - And clicking a tab shows 4 sub-items (Primary Care, Lab Test, Symptom Check, Heart Rate)
+
+#### Scenario: department tabs
+
+- **GIVEN** the user scrolls to departments
+- **THEN** tabs are visible for 5+ departments
+- **AND** clicking a tab shows 4 sub-items (Primary Care, Lab Test, Symptom Check, Heart Rate)
 
 ### Doctors
-- **Scenario: doctor cards**
-  - Given the user scrolls to the doctors section
-  - Then 4 doctor cards are displayed
-  - And each card shows photo, name, specialty, and social links
+
+#### Scenario: doctor cards
+
+- **GIVEN** the user scrolls to the doctors section
+- **THEN** 4 doctor cards are displayed
+- **AND** each card shows photo, name, specialty, and social links
 
 ### Testimonials
-- **Scenario: patient quotes**
-  - Given the user scrolls to testimonials
-  - Then patient testimonial quotes are displayed
-  - And the section has a light gray background
+
+#### Scenario: patient quotes
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** patient testimonial quotes are displayed
+- **AND** the section has a light gray background
 
 ### Pricing
-- **Scenario: pricing tiers**
-  - Given the user scrolls to pricing
-  - Then 4 pricing tiers are shown (Basic, Standard, Premium, Platinum)
-  - And each tier lists features and a price
+
+#### Scenario: pricing tiers
+
+- **GIVEN** the user scrolls to pricing
+- **THEN** 4 pricing tiers are shown (Basic, Standard, Premium, Platinum)
+- **AND** each tier lists features and a price
 
 ### Blog
-- **Scenario: recent posts**
-  - Given the user scrolls to blog
-  - Then 3 blog post cards are displayed
-  - And each has an image, title, date, and excerpt
+
+#### Scenario: recent posts
+
+- **GIVEN** the user scrolls to blog
+- **THEN** 3 blog post cards are displayed
+- **AND** each has an image, title, date, and excerpt
 
 ### Footer
-- **Scenario: footer columns**
-  - Given the user scrolls to the footer
-  - Then 6 columns are visible: About, Links, Services, Blog, Opening Hours, Subscribe
-  - And the footer has a dark background
-  - And a "Component Dock" attribution link is present
+
+#### Scenario: footer columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 6 columns are visible: About, Links, Services, Blog, Opening Hours, Subscribe
+- **AND** the footer has a dark background
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification checklist
 

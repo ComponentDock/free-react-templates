@@ -50,73 +50,85 @@ Recreation of ColorLib **Login Form V15** as a React 19 + Vite + Tailwind 4 + Ty
 - "Forgot Password?" link: `#999999` default, hover green `#57b846`
 - Login button: full-width, 50px height, background `#57b846`, border-radius 25px (pill), white text, Poppins Regular 16px, hover → `#333333`
 
-## Gherkin requirements
+## Requirements
 
-### Background: page layout
-Given the user visits the login page
-Then the page background is light grey (#ebeeef)
-And a centered white login card is visible
-And the card has rounded corners (border-radius 10px)
+### Feature: Loginauth template behaviour
 
-### Scenario: title banner
-Given the login card is visible
-Then a full-width title banner is displayed at the top of the card
-And the banner has a background image with a semi-transparent dark teal overlay
-And the title text "Sign In" is displayed in white, Poppins Bold, 30px
+**Background: page layout**
+- **GIVEN** the user visits the login page
+- **THEN** the page background is light grey (#ebeeef)
+- **AND** a centered white login card is visible
+- **AND** the card has rounded corners (border-radius 10px)
 
-### Scenario: username input
-Given the login form is visible
-When the user views the username field
-Then the label "Username" is displayed above the input
-And the placeholder text reads "Enter username"
-And the input accepts text
+#### Scenario: title banner
 
-### Scenario: password input
-Given the login form is visible
-When the user views the password field
-Then the label "Password" is displayed above the input
-And the placeholder text reads "Enter password"
-And the input is of type password
+- **GIVEN** the login card is visible
+- **THEN** a full-width title banner is displayed at the top of the card
+- **AND** the banner has a background image with a semi-transparent dark teal overlay
+- **AND** the title text "Sign In" is displayed in white, Poppins Bold, 30px
 
-### Scenario: input focus animation
-Given the login form is visible
-When the user focuses on an input field
-Then a green underline (#57b846) expands from left to right below the input
+#### Scenario: username input
 
-### Scenario: remember me checkbox
-Given the login form is visible
-When the user checks "Remember me"
-Then the checkbox is checked
-And the checkbox checkmark is green (#57b846)
+- **GIVEN** the login form is visible
+- **WHEN** the user views the username field
+- **THEN** the label "Username" is displayed above the input
+- **AND** the placeholder text reads "Enter username"
+- **AND** the input accepts text
 
-### Scenario: forgot password link
-Given the login form is visible
-When the user hovers over "Forgot Password?"
-Then the link color changes to green (#57b846)
+#### Scenario: password input
 
-### Scenario: login button
-Given the login form is visible
-When the user views the login button
-Then the button reads "Login"
-And the button background is green (#57b846)
-And the button text is white
-And the button has rounded pill shape (border-radius 25px)
-And the button is full width
+- **GIVEN** the login form is visible
+- **WHEN** the user views the password field
+- **THEN** the label "Password" is displayed above the input
+- **AND** the placeholder text reads "Enter password"
+- **AND** the input is of type password
 
-### Scenario: login button hover
-Given the login button is visible
-When the user hovers over the login button
-Then the button background changes to dark (#333333)
+#### Scenario: input focus animation
 
-### Scenario: validation — empty username
-Given the login form is visible
-When the user submits without entering a username
-Then a validation message "Username is required" is displayed
+- **GIVEN** the login form is visible
+- **WHEN** the user focuses on an input field
+- **THEN** a green underline (#57b846) expands from left to right below the input
 
-### Scenario: validation — empty password
-Given the login form is visible
-When the user submits without entering a password
-Then a validation message "Password is required" is displayed
+#### Scenario: remember me checkbox
+
+- **GIVEN** the login form is visible
+- **WHEN** the user checks "Remember me"
+- **THEN** the checkbox is checked
+- **AND** the checkbox checkmark is green (#57b846)
+
+#### Scenario: forgot password link
+
+- **GIVEN** the login form is visible
+- **WHEN** the user hovers over "Forgot Password?"
+- **THEN** the link color changes to green (#57b846)
+
+#### Scenario: login button
+
+- **GIVEN** the login form is visible
+- **WHEN** the user views the login button
+- **THEN** the button reads "Login"
+- **AND** the button background is green (#57b846)
+- **AND** the button text is white
+- **AND** the button has rounded pill shape (border-radius 25px)
+- **AND** the button is full width
+
+#### Scenario: login button hover
+
+- **GIVEN** the login button is visible
+- **WHEN** the user hovers over the login button
+- **THEN** the button background changes to dark (#333333)
+
+#### Scenario: validation — empty username
+
+- **GIVEN** the login form is visible
+- **WHEN** the user submits without entering a username
+- **THEN** a validation message "Username is required" is displayed
+
+#### Scenario: validation — empty password
+
+- **GIVEN** the login form is visible
+- **WHEN** the user submits without entering a password
+- **THEN** a validation message "Password is required" is displayed
 
 ## Verification checklist
 - [ ] Card is centered on screen with correct background color (#ebeeef)

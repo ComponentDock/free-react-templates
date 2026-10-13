@@ -58,53 +58,61 @@ Recreation of ColorLib **Login Form V3** as a React 19 + Vite + Tailwind 4 + Typ
 - Forgot Password: white link text, centered below button
 - Card padding: ~50px horizontal, ~40px vertical
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Entryway Login Form
 
-  Scenario: Page renders with centered login card
-    Given the user visits the Entryway page
-    Then a centered login card is visible
-    And the card has a purple-to-magenta gradient background
-    And the page background shows a faded city skyline image
+#### Scenario: Page renders with centered login card
 
-  Scenario: Logo and heading are displayed
-    Given the user visits the Entryway page
-    Then a circular white logo area is displayed above the heading
-    And the heading reads "LOG IN" in white uppercase letters
+- **GIVEN** the user visits the Entryway page
+- **THEN** a centered login card is visible
+- **AND** the card has a purple-to-magenta gradient background
+- **AND** the page background shows a faded city skyline image
 
-  Scenario: Username field accepts input
-    Given the user visits the Entryway page
-    When the user clicks the Username input
-    And types a username
-    Then the username text appears in the field
-    And the placeholder text disappears
+#### Scenario: Logo and heading are displayed
 
-  Scenario: Password field masks input
-    Given the user visits the Entryway page
-    When the user clicks the Password input
-    And types a password
-    Then the password text is masked (type="password")
+- **GIVEN** the user visits the Entryway page
+- **THEN** a circular white logo area is displayed above the heading
+- **AND** the heading reads "LOG IN" in white uppercase letters
 
-  Scenario: Remember me checkbox toggles
-    Given the user visits the Entryway page
-    When the user clicks the "Remember me" checkbox
-    Then the checkbox becomes checked
-    When the user clicks the "Remember me" checkbox again
-    Then the checkbox becomes unchecked
+#### Scenario: Username field accepts input
 
-  Scenario: Login button is clickable
-    Given the user visits the Entryway page
-    When the user clicks the "Login" button
-    Then a form submission is attempted
+- **GIVEN** the user visits the Entryway page
+- **WHEN** the user clicks the Username input
+- **AND** types a username
+- **THEN** the username text appears in the field
+- **AND** the placeholder text disappears
 
-  Scenario: Forgot Password link is present
-    Given the user visits the Entryway page
-    Then a "Forgot Password?" link is visible below the login button
+#### Scenario: Password field masks input
 
-  Scenario: Footer contains Component Dock link
-    Given the user visits the Entryway page
-    Then the footer contains a link to "https://www.componentdock.com/"
+- **GIVEN** the user visits the Entryway page
+- **WHEN** the user clicks the Password input
+- **AND** types a password
+- **THEN** the password text is masked (type="password")
+
+#### Scenario: Remember me checkbox toggles
+
+- **GIVEN** the user visits the Entryway page
+- **WHEN** the user clicks the "Remember me" checkbox
+- **THEN** the checkbox becomes checked
+- **WHEN** the user clicks the "Remember me" checkbox again
+- **THEN** the checkbox becomes unchecked
+
+#### Scenario: Login button is clickable
+
+- **GIVEN** the user visits the Entryway page
+- **WHEN** the user clicks the "Login" button
+- **THEN** a form submission is attempted
+
+#### Scenario: Forgot Password link is present
+
+- **GIVEN** the user visits the Entryway page
+- **THEN** a "Forgot Password?" link is visible below the login button
+
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** the user visits the Entryway page
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
 
 ## Verification checklist
 

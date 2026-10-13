@@ -41,162 +41,150 @@ Recreation of the ColorLib **Selling** template as a React 19 + Vite + Tailwind 
 12. **Get In Touch** — "Get In Touch" heading, "Contact Form" subheading, contact form.
 13. **Footer** — Dark (#333) bg. 4 columns: About Us, Quick Links, Follow Us, Featured Product. Copyright with Component Dock.
 
-## Gherkin scenarios
+## Requirements
 
 ### Nav
 
-```gherkin
 Feature: Hawker Navigation
 
-  Scenario: Nav displays logo and links
-    Given the user is on the Hawker page
-    Then the logo "Selling." with an orange dot is visible
-    And navigation links are visible: Home, Shop, Featured, About, Blog, Contact
-    And the header is sticky on scroll
-```
+#### Scenario: Nav displays logo and links
+
+- **GIVEN** the user is on the Hawker page
+- **THEN** the logo "Selling." with an orange dot is visible
+- **AND** navigation links are visible: Home, Shop, Featured, About, Blog, Contact
+- **AND** the header is sticky on scroll
 
 ### Hero
 
-```gherkin
 Feature: Hawker Hero
 
-  Scenario: Hero displays heading and CTA
-    Given the user is on the Hawker page
-    Then a "Shop With Us" heading is displayed
-    And a description paragraph is present
-    And CTA buttons are available
-```
+#### Scenario: Hero displays heading and CTA
+
+- **GIVEN** the user is on the Hawker page
+- **THEN** a "Shop With Us" heading is displayed
+- **AND** a description paragraph is present
+- **AND** CTA buttons are available
 
 ### Products
 
-```gherkin
 Feature: Hawker Products
 
-  Scenario: Products section displays items
-    Given the user scrolls to the products section
-    Then a "Our Products" heading is displayed
-    And product cards are shown in a grid
-    And each card has an image, title, and price
-```
+#### Scenario: Products section displays items
+
+- **GIVEN** the user scrolls to the products section
+- **THEN** a "Our Products" heading is displayed
+- **AND** product cards are shown in a grid
+- **AND** each card has an image, title, and price
 
 ### Newsletter
 
-```gherkin
 Feature: Hawker Newsletter
 
-  Scenario: Newsletter form displays
-    Given the user scrolls to the newsletter section
-    Then a "Get notified on each updates" heading is shown
-    And an email input field is present
-    And a subscribe button is present
-```
+#### Scenario: Newsletter form displays
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** a "Get notified on each updates" heading is shown
+- **AND** an email input field is present
+- **AND** a subscribe button is present
 
 ### Featured Products
 
-```gherkin
 Feature: Hawker Featured Products
 
-  Scenario: Featured products section renders
-    Given the user scrolls to the featured section
-    Then a "Featured Products" heading is displayed
-    And product cards are shown
-```
+#### Scenario: Featured products section renders
+
+- **GIVEN** the user scrolls to the featured section
+- **THEN** a "Featured Products" heading is displayed
+- **AND** product cards are shown
 
 ### About Us
 
-```gherkin
 Feature: Hawker About Us
 
-  Scenario: About section renders
-    Given the user scrolls to the about section
-    Then an "About Us" heading is displayed
-    And company description text is present
-```
+#### Scenario: About section renders
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** an "About Us" heading is displayed
+- **AND** company description text is present
 
 ### Leadership
 
-```gherkin
 Feature: Hawker Leadership
 
-  Scenario: Team section renders
-    Given the user scrolls to the leadership section
-    Then a "Leadership" heading is displayed
-    And team member cards are shown
-```
+#### Scenario: Team section renders
+
+- **GIVEN** the user scrolls to the leadership section
+- **THEN** a "Leadership" heading is displayed
+- **AND** team member cards are shown
 
 ### Summer Sale
 
-```gherkin
 Feature: Hawker Summer Sale
 
-  Scenario: Promotional banner renders
-    Given the user scrolls to the summer sale section
-    Then the section has a dark background
-    And a "Summer Sale" white heading is displayed
-```
+#### Scenario: Promotional banner renders
+
+- **GIVEN** the user scrolls to the summer sale section
+- **THEN** the section has a dark background
+- **AND** a "Summer Sale" white heading is displayed
 
 ### Services
 
-```gherkin
 Feature: Hawker Services
 
-  Scenario: Services section renders
-    Given the user scrolls to the services section
-    Then a "We Offer Services" heading is displayed
-    And service cards are shown
-```
+#### Scenario: Services section renders
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a "We Offer Services" heading is displayed
+- **AND** service cards are shown
 
 ### Testimonials
 
-```gherkin
 Feature: Hawker Testimonials
 
-  Scenario: Testimonials section renders
-    Given the user scrolls to the testimonials section
-    Then a "Testimonials" heading is displayed
-    And testimonial cards are shown
-```
+#### Scenario: Testimonials section renders
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a "Testimonials" heading is displayed
+- **AND** testimonial cards are shown
 
 ### Blog Posts
 
-```gherkin
 Feature: Hawker Blog
 
-  Scenario: Blog section renders
-    Given the user scrolls to the blog section
-    Then a "Blog Posts" heading is displayed
-    And 3 blog post cards are shown
-    And each card has an image and title
-```
+#### Scenario: Blog section renders
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a "Blog Posts" heading is displayed
+- **AND** 3 blog post cards are shown
+- **AND** each card has an image and title
 
 ### Get In Touch
 
-```gherkin
 Feature: Hawker Contact
 
-  Scenario: Contact form renders
-    Given the user scrolls to the contact section
-    Then a "Get In Touch" heading is displayed
-    And a "Contact Form" subheading is shown
-    And a contact form with input fields is present
-```
+#### Scenario: Contact form renders
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a "Get In Touch" heading is displayed
+- **AND** a "Contact Form" subheading is shown
+- **AND** a contact form with input fields is present
 
 ### Footer
 
-```gherkin
 Feature: Hawker Footer
 
-  Scenario: Footer displays widgets
-    Given the user scrolls to the footer
-    Then the footer has a dark (#333333) background
-    And 4 widget columns are displayed (About Us, Quick Links, Follow Us, Featured Product)
-    And a copyright bar is at the bottom
+#### Scenario: Footer displays widgets
 
-  Scenario: Footer links to Component Dock
-    Given the footer is rendered
-    Then the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
-    And no ColorLib references appear in the app code
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark (#333333) background
+- **AND** 4 widget columns are displayed (About Us, Quick Links, Follow Us, Featured Product)
+- **AND** a copyright bar is at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is rendered
+- **THEN** the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
+- **AND** no ColorLib references appear in the app code
 
 ## Verification checklist
 

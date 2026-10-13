@@ -66,7 +66,7 @@ and contact info.
   border-radius `0.25rem`
 - Hover: bg `#56caeb`, border `#4ac7ea`
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: FrameDay — Photography Portfolio Template
 
@@ -75,107 +75,125 @@ and contact info.
   So that visitors can browse my work and contact me.
 
   Background:
-    Given the template is loaded in a browser
-    And the viewport is 1280×800
+- **GIVEN** the template is loaded in a browser
+- **AND** the viewport is 1280×800
 
-  # --- Sidebar ---
+**--- Sidebar ---**
 
-  Scenario: Sidebar displays author info
-    Then the sidebar should show a circular author portrait (160px)
-    And the author name should be displayed below the portrait
-    And the sidebar should be fixed on the left side
+#### Scenario: Sidebar displays author info
 
-  Scenario: Sidebar navigation
-    Then the sidebar should contain a vertical nav menu
-    And the menu should include Home, Collection, About Me, My Services, Blog, Contact
-    And the active item should be visually highlighted
+- **THEN** the sidebar should show a circular author portrait (160px)
+- **AND** the author name should be displayed below the portrait
+- **AND** the sidebar should be fixed on the left side
 
-  Scenario: Sidebar newsletter form
-    Then the sidebar should include a newsletter subscription form
-    And the form should have an email input and submit icon
-    And the input placeholder should read "Enter Email Address"
+#### Scenario: Sidebar navigation
 
-  # --- Hero Section ---
+- **THEN** the sidebar should contain a vertical nav menu
+- **AND** the menu should include Home, Collection, About Me, My Services, Blog, Contact
+- **AND** the active item should be visually highlighted
 
-  Scenario: Hero layout
-    Given the hero section is visible
-    Then the hero should be split into two 50/50 columns
-    And the left column should contain a photo carousel
-    And the right column should contain author info text
+#### Scenario: Sidebar newsletter form
 
-  Scenario: Hero photo carousel
-    Then the left column should show a full-height image slider
-    And the slider should cycle through author photographs
-    And images should use `background-size: cover` for proper fit
+- **THEN** the sidebar should include a newsletter subscription form
+- **AND** the form should have an email input and submit icon
+- **AND** the input placeholder should read "Enter Email Address"
 
-  Scenario: Hero text content
-    Then the hero should display a "Hello! I'm" subheading
-    And the author name should appear as a large heading
-    And a signature-style cursive name should appear below the text
-    And social media icons (Twitter, Facebook, Instagram) should be visible
+**--- Hero Section ---**
 
-  Scenario: Hero big background letter
-    Then a large decorative name text should appear behind the heading
-    And it should be positioned absolutely and use color `#ededed`
-    And it should have a large font size
+#### Scenario: Hero layout
 
-  # --- Instagram Grid ---
+- **GIVEN** the hero section is visible
+- **THEN** the hero should be split into two 50/50 columns
+- **AND** the left column should contain a photo carousel
+- **AND** the right column should contain author info text
 
-  Scenario: Instagram section heading
-    Then the Instagram section should display "Follow me on Instagram"
-    And the heading should be uppercase with letter-spacing
+#### Scenario: Hero photo carousel
 
-  Scenario: Instagram photo grid
-    Then the grid should show 5 equal-width photo columns
-    And each photo should have 200px height
-    And there should be no gutters between photos
+- **THEN** the left column should show a full-height image slider
+- **AND** the slider should cycle through author photographs
+- **AND** images should use `background-size: cover` for proper fit
 
-  Scenario: Instagram hover effect
-    When I hover over an Instagram photo
-    Then a dark overlay should appear (`rgba(0,0,0,0.2)`)
-    And an Instagram icon should be centered in the overlay
-    And the overlay should fade in with a 0.3s transition
+#### Scenario: Hero text content
 
-  # --- Footer ---
+- **THEN** the hero should display a "Hello! I'm" subheading
+- **AND** the author name should appear as a large heading
+- **AND** a signature-style cursive name should appear below the text
+- **AND** social media icons (Twitter, Facebook, Instagram) should be visible
 
-  Scenario: Footer layout
-    Then the footer should have a dark background (`#242423`)
-    And it should be divided into 3 columns
+#### Scenario: Hero big background letter
 
-  Scenario: Footer recent photos
-    Then the first column should display "Recent Photos"
-    And it should show 6 thumbnail images in a list
+- **THEN** a large decorative name text should appear behind the heading
+- **AND** it should be positioned absolutely and use color `#ededed`
+- **AND** it should have a large font size
 
-  Scenario: Footer archives
-    Then the second column should display "Archives"
-    And it should list months with photo counts
+**--- Instagram Grid ---**
 
-  Scenario: Footer contact info
-    Then the third column should display "Have a Questions?"
-    And it should show address, phone, and email with icons
+#### Scenario: Instagram section heading
 
-  Scenario: Footer copyright
-    Then the footer bottom should display a copyright notice
-    And it should link to https://www.componentdock.com/
-    And it should NOT contain any ColorLib attribution
+- **THEN** the Instagram section should display "Follow me on Instagram"
+- **AND** the heading should be uppercase with letter-spacing
 
-  # --- Responsive ---
+#### Scenario: Instagram photo grid
 
-  Scenario: Mobile sidebar toggle
-    Given the viewport is 375×667
-    Then the sidebar should be off-screen (translated left)
-    And a hamburger toggle should be visible
-    And clicking the toggle should slide the sidebar in
+- **THEN** the grid should show 5 equal-width photo columns
+- **AND** each photo should have 200px height
+- **AND** there should be no gutters between photos
 
-  Scenario: Mobile hero layout
-    Given the viewport is 375×667
-    Then the hero columns should stack vertically
-    And the author info should take 70% width
-    And the author image should take 30% width
+#### Scenario: Instagram hover effect
 
-  Scenario: Mobile Instagram grid
-    Given the viewport is 375×667
-    Then the Instagram photos should stack to single column
+- **WHEN** I hover over an Instagram photo
+- **THEN** a dark overlay should appear (`rgba(0,0,0,0.2)`)
+- **AND** an Instagram icon should be centered in the overlay
+- **AND** the overlay should fade in with a 0.3s transition
+
+**--- Footer ---**
+
+#### Scenario: Footer layout
+
+- **THEN** the footer should have a dark background (`#242423`)
+- **AND** it should be divided into 3 columns
+
+#### Scenario: Footer recent photos
+
+- **THEN** the first column should display "Recent Photos"
+- **AND** it should show 6 thumbnail images in a list
+
+#### Scenario: Footer archives
+
+- **THEN** the second column should display "Archives"
+- **AND** it should list months with photo counts
+
+#### Scenario: Footer contact info
+
+- **THEN** the third column should display "Have a Questions?"
+- **AND** it should show address, phone, and email with icons
+
+#### Scenario: Footer copyright
+
+- **THEN** the footer bottom should display a copyright notice
+- **AND** it should link to https://www.componentdock.com/
+- **AND** it should NOT contain any ColorLib attribution
+
+**--- Responsive ---**
+
+#### Scenario: Mobile sidebar toggle
+
+- **GIVEN** the viewport is 375×667
+- **THEN** the sidebar should be off-screen (translated left)
+- **AND** a hamburger toggle should be visible
+- **AND** clicking the toggle should slide the sidebar in
+
+#### Scenario: Mobile hero layout
+
+- **GIVEN** the viewport is 375×667
+- **THEN** the hero columns should stack vertically
+- **AND** the author info should take 70% width
+- **AND** the author image should take 30% width
+
+#### Scenario: Mobile Instagram grid
+
+- **GIVEN** the viewport is 375×667
+- **THEN** the Instagram photos should stack to single column
 
 ## Verification checklist
 

@@ -72,107 +72,120 @@ dark footer with social links.
 | Date badge      | `#c6a16e` bg, `#fff` text, radius `5px`      | blog post date overlay on image                                                           |
 | Preloader       | `#f7f7f7` bg, `#c6a16e` spinner border       | loading screen with rotating circle                                                       |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-  Scenario: Sticky navigation bar
-    Given the user loads the page
-    Then a sticky navbar is visible at the top
-    And the navbar contains a logo on the left
-    And the navbar contains navigation links: Home, Spaces, About, Blog, Contact
-    And the navbar becomes sticky on scroll with a white background and shadow
+#### Scenario: Sticky navigation bar
 
-  Scenario: Mobile hamburger menu
-    Given the user is on a viewport width <= 991px
-    Then a hamburger menu icon is visible
-    And clicking it toggles the mobile navigation overlay
+- **GIVEN** the user loads the page
+- **THEN** a sticky navbar is visible at the top
+- **AND** the navbar contains a logo on the left
+- **AND** the navbar contains navigation links: Home, Spaces, About, Blog, Contact
+- **AND** the navbar becomes sticky on scroll with a white background and shadow
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user is on a viewport width <= 991px
+- **THEN** a hamburger menu icon is visible
+- **AND** clicking it toggles the mobile navigation overlay
 
 ### Feature: Hero Slider
 
-  Scenario: Hero section displays workspace headline
-    Given the user loads the page
-    Then a hero section is visible with warm off-white background
-    And the headline reads "Amazing workspace you will love"
-    And a subheadline describes discovering spaces that define luxury
-    And a CTA button is visible
+#### Scenario: Hero section displays workspace headline
 
-  Scenario: Hero rating badge
-    Given the hero section is visible
-    Then a rating badge shows "4.8" with stars
-    And a label reads "Rating based on 500+ reviews"
+- **GIVEN** the user loads the page
+- **THEN** a hero section is visible with warm off-white background
+- **AND** the headline reads "Amazing workspace you will love"
+- **AND** a subheadline describes discovering spaces that define luxury
+- **AND** a CTA button is visible
+
+#### Scenario: Hero rating badge
+
+- **GIVEN** the hero section is visible
+- **THEN** a rating badge shows "4.8" with stars
+- **AND** a label reads "Rating based on 500+ reviews"
 
 ### Feature: About Section
 
-  Scenario: Two-column about layout
-    Given the user scrolls to the About section
-    Then a workspace image appears on the left with a rotating decorative shape
-    And a heading reads "Premium quality spaces for agency and personal"
-    And descriptive body text appears on the right
+#### Scenario: Two-column about layout
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a workspace image appears on the left with a rotating decorative shape
+- **AND** a heading reads "Premium quality spaces for agency and personal"
+- **AND** descriptive body text appears on the right
 
 ### Feature: Spaces Gallery
 
-  Scenario: Image carousel of spaces
-    Given the user scrolls to the Spaces section
-    Then a heading reads "Spaces that you'd love"
-    And a carousel displays full-width workspace images
-    And each image has an overlay with the space name and starting price
-    And carousel navigation arrows are visible
+#### Scenario: Image carousel of spaces
+
+- **GIVEN** the user scrolls to the Spaces section
+- **THEN** a heading reads "Spaces that you'd love"
+- **AND** a carousel displays full-width workspace images
+- **AND** each image has an overlay with the space name and starting price
+- **AND** carousel navigation arrows are visible
 
 ### Feature: Testimonials
 
-  Scenario: Testimonial section
-    Given the user scrolls to the Testimonials section
-    Then a section with warm off-white background is displayed
-    And testimonial quotes are shown in a carousel
-    And navigation arrows allow cycling through testimonials
+#### Scenario: Testimonial section
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a section with warm off-white background is displayed
+- **AND** testimonial quotes are shown in a carousel
+- **AND** navigation arrows allow cycling through testimonials
 
 ### Feature: Features Grid
 
-  Scenario: Feature cards
-    Given the user scrolls to the Features section
-    Then a heading reads "Make the customer the hero of your story"
-    And four feature cards are displayed: Money Saver, Locker and Key, Active Listening, Space for Events
-    And each card has an icon, title, and description
+#### Scenario: Feature cards
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** a heading reads "Make the customer the hero of your story"
+- **AND** four feature cards are displayed: Money Saver, Locker and Key, Active Listening, Space for Events
+- **AND** each card has an icon, title, and description
 
 ### Feature: Video Section
 
-  Scenario: Video showcase
-    Given the user scrolls to the Video section
-    Then a full-width section with a background image is displayed
-    And a play button overlay is centered in the section
+#### Scenario: Video showcase
+
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a full-width section with a background image is displayed
+- **AND** a play button overlay is centered in the section
 
 ### Feature: Brand Logos
 
-  Scenario: Brand partner logos
-    Given the user scrolls to the Brands section
-    Then a strip of partner logos is displayed on a warm off-white background
-    And the logos are arranged in a horizontal row
+#### Scenario: Brand partner logos
+
+- **GIVEN** the user scrolls to the Brands section
+- **THEN** a strip of partner logos is displayed on a warm off-white background
+- **AND** the logos are arranged in a horizontal row
 
 ### Feature: Blog Grid
 
-  Scenario: Blog posts
-    Given the user scrolls to the Blog section
-    Then a heading reads "Our Insights"
-    And three blog cards are displayed in a grid
-    And each card has an image, date badge, title, and excerpt
+#### Scenario: Blog posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a heading reads "Our Insights"
+- **AND** three blog cards are displayed in a grid
+- **AND** each card has an image, date badge, title, and excerpt
 
 ### Feature: Newsletter
 
-  Scenario: Newsletter subscription
-    Given the user scrolls to the Newsletter section
-    Then a heading invites users to subscribe
-    And an email input field is displayed
-    And a submit button is visible
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the user scrolls to the Newsletter section
+- **THEN** a heading invites users to subscribe
+- **AND** an email input field is displayed
+- **AND** a submit button is visible
 
 ### Feature: Footer
 
-  Scenario: Dark footer
-    Given the user scrolls to the footer
-    Then a black (#000000) footer is displayed
-    And it contains navigation links
-    And it contains social media icon links
-    And it contains a copyright notice with a Component Dock credit link
+#### Scenario: Dark footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a black (#000000) footer is displayed
+- **AND** it contains navigation links
+- **AND** it contains social media icon links
+- **AND** it contains a copyright notice with a Component Dock credit link
 
 ## Verification checklist
 

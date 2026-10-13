@@ -37,7 +37,7 @@ Recreation of ColorLib "Classy Ads" (https://colorlib.com/wp/template/classy-ads
 8. **Newsletter** — Newsletter subscription section with email input and subscribe button.
 9. **Footer** — Multi-column footer with About text, Quick Links, Contact Info, social icons, and copyright "Made with Component Dock" linking https://www.componentdock.com/.
 
-## Gherkin Requirements
+## Requirements
 
 ### Requirement: Navbar with logo, navigation, and CTA
 

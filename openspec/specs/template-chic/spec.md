@@ -46,121 +46,134 @@ Extracted from the preview's CSS (style.css):
 - **Latest Blog:** 3-column blog post cards with images, dates, and article titles: "What Curling Irons Are The Best Ones", "Eternity Bands Do Last Forever", "The Health Benefits Of Sunglasses".
 - **Footer:** Dark (#111111) background. 4-column layout: About (logo + description), Shopping links, Information links, Newsletter signup. Copyright bar at bottom with heart icon in red.
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
-```gherkin
-Feature: Chic Header
-  Scenario: Top bar displays shipping info and account links
-    Given the user is on the chic homepage
-    Then a dark top bar shows "Free shipping, 30-day return or refund guarantee."
-    And the top bar has "SIGN IN", "FAQS", and "USD" currency selector links
 
-  Scenario: Main navigation displays correctly
-    Given the user is on the chic homepage
-    Then the nav bar shows the logo "Chic."
-    And navigation links include "Home", "Shop", "Pages", "About Us", "Blog", "Contacts"
-    And the nav bar shows search, wishlist, and cart icons with "$0.00"
-```
+Feature: Chic Header
+
+#### Scenario: Top bar displays shipping info and account links
+
+- **GIVEN** the user is on the chic homepage
+- **THEN** a dark top bar shows "Free shipping, 30-day return or refund guarantee."
+- **AND** the top bar has "SIGN IN", "FAQS", and "USD" currency selector links
+
+#### Scenario: Main navigation displays correctly
+
+- **GIVEN** the user is on the chic homepage
+- **THEN** the nav bar shows the logo "Chic."
+- **AND** navigation links include "Home", "Shop", "Pages", "About Us", "Blog", "Contacts"
+- **AND** the nav bar shows search, wishlist, and cart icons with "$0.00"
 
 ### Hero Section
-```gherkin
-Feature: Chic Hero
-  Scenario: Hero slider shows collection info
-    Given the user views the hero section
-    Then the subtitle reads "SUMMER COLLECTION" in red uppercase
-    And the heading reads "Fall - Winter Collections 2030"
-    And a description paragraph is displayed
-    And a "SHOP NOW →" black button is visible
 
-  Scenario: Hero has social media links
-    Given the user views the hero section
-    Then social media icons (Facebook, Twitter, Pinterest, Instagram) are shown below the CTA
-```
+Feature: Chic Hero
+
+#### Scenario: Hero slider shows collection info
+
+- **GIVEN** the user views the hero section
+- **THEN** the subtitle reads "SUMMER COLLECTION" in red uppercase
+- **AND** the heading reads "Fall - Winter Collections 2030"
+- **AND** a description paragraph is displayed
+- **AND** a "SHOP NOW →" black button is visible
+
+#### Scenario: Hero has social media links
+
+- **GIVEN** the user views the hero section
+- **THEN** social media icons (Facebook, Twitter, Pinterest, Instagram) are shown below the CTA
 
 ### Banner Section
-```gherkin
+
 Feature: Chic Banners
-  Scenario: Three promotional banners are displayed
-    Given the user scrolls to the banner section
-    Then three banners are shown side by side
-    And banner 1 shows "Clothing Collections 2030" with "SHOP NOW" link
-    And banner 2 shows "Accessories" with "SHOP NOW" link
-    And banner 3 shows "Shoes Spring 2030" with "SHOP NOW" link
-```
+
+#### Scenario: Three promotional banners are displayed
+
+- **GIVEN** the user scrolls to the banner section
+- **THEN** three banners are shown side by side
+- **AND** banner 1 shows "Clothing Collections 2030" with "SHOP NOW" link
+- **AND** banner 2 shows "Accessories" with "SHOP NOW" link
+- **AND** banner 3 shows "Shoes Spring 2030" with "SHOP NOW" link
 
 ### Product Section
-```gherkin
+
 Feature: Chic Products
-  Scenario: Product grid displays with tab filters
-    Given the user scrolls to the product section
-    Then tab filters show "Best Sellers", "New Arrivals", "Hot Sales"
-    And "Best Sellers" is active by default
-    And a grid of product cards is displayed
 
-  Scenario: Product card shows details
-    Given a product card is rendered
-    Then it shows the product image
-    And it shows the product name
-    And it shows the price
-    And it may show a "New" or "Sale" label
+#### Scenario: Product grid displays with tab filters
 
-  Scenario: Tab switching works
-    Given the user clicks "New Arrivals" tab
-    Then the product grid updates to show new arrivals
-    And "New Arrivals" tab becomes active
-```
+- **GIVEN** the user scrolls to the product section
+- **THEN** tab filters show "Best Sellers", "New Arrivals", "Hot Sales"
+- **AND** "Best Sellers" is active by default
+- **AND** a grid of product cards is displayed
+
+#### Scenario: Product card shows details
+
+- **GIVEN** a product card is rendered
+- **THEN** it shows the product image
+- **AND** it shows the product name
+- **AND** it shows the price
+- **AND** it may show a "New" or "Sale" label
+
+#### Scenario: Tab switching works
+
+- **GIVEN** the user clicks "New Arrivals" tab
+- **THEN** the product grid updates to show new arrivals
+- **AND** "New Arrivals" tab becomes active
 
 ### Categories Section
-```gherkin
+
 Feature: Chic Categories
-  Scenario: Featured product with countdown
-    Given the user scrolls to the categories section
-    Then the section has a warm gray (#f3f2ee) background
-    And a featured product image is centered
-    And the product name "Multi-pocket Chest Bag Black" is shown
-    And the price "$29.99" is displayed
-    And a countdown timer shows Days, Hours, Minutes, Seconds
-```
+
+#### Scenario: Featured product with countdown
+
+- **GIVEN** the user scrolls to the categories section
+- **THEN** the section has a warm gray (#f3f2ee) background
+- **AND** a featured product image is centered
+- **AND** the product name "Multi-pocket Chest Bag Black" is shown
+- **AND** the price "$29.99" is displayed
+- **AND** a countdown timer shows Days, Hours, Minutes, Seconds
 
 ### Instagram Section
-```gherkin
+
 Feature: Chic Instagram
-  Scenario: Instagram image grid
-    Given the user scrolls to the Instagram section
-    Then the heading "Instagram" is displayed
-    And a 3×2 grid of 6 fashion images is shown
-    And images are clickable links
-```
+
+#### Scenario: Instagram image grid
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** the heading "Instagram" is displayed
+- **AND** a 3×2 grid of 6 fashion images is shown
+- **AND** images are clickable links
 
 ### Latest Blog Section
-```gherkin
+
 Feature: Chic Latest Blog
-  Scenario: Blog posts are displayed
-    Given the user scrolls to the latest section
-    Then the heading "Fashion New Trends" is shown
-    And 3 blog post cards are displayed in a row
-    And each card shows an image, date, and article title
-    And post titles are "What Curling Irons Are The Best Ones", "Eternity Bands Do Last Forever", "The Health Benefits Of Sunglasses"
-```
+
+#### Scenario: Blog posts are displayed
+
+- **GIVEN** the user scrolls to the latest section
+- **THEN** the heading "Fashion New Trends" is shown
+- **AND** 3 blog post cards are displayed in a row
+- **AND** each card shows an image, date, and article title
+- **AND** post titles are "What Curling Irons Are The Best Ones", "Eternity Bands Do Last Forever", "The Health Benefits Of Sunglasses"
 
 ### Footer
-```gherkin
-Feature: Chic Footer
-  Scenario: Footer layout and content
-    Given the user scrolls to the footer
-    Then the footer has a dark (#111111) background
-    And column 1 shows the logo and about text
-    And column 2 shows Shopping links: "Clothing Store", "Trending Shoes", "Accessories", "Sale"
-    And column 3 shows Information links: "Contact Us", "Payment Methods", "Delivery", "Return & Exchanges"
-    And column 4 shows a Newsletter signup with email input and button
-    And a copyright bar at the bottom reads "© 2026 All rights reserved" with Component Dock link
 
-  Scenario: Footer newsletter form
-    Given the user is in the newsletter section of the footer
-    Then an email input field with placeholder text is shown
-    And a submit button is positioned to the right of the input
-```
+Feature: Chic Footer
+
+#### Scenario: Footer layout and content
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark (#111111) background
+- **AND** column 1 shows the logo and about text
+- **AND** column 2 shows Shopping links: "Clothing Store", "Trending Shoes", "Accessories", "Sale"
+- **AND** column 3 shows Information links: "Contact Us", "Payment Methods", "Delivery", "Return & Exchanges"
+- **AND** column 4 shows a Newsletter signup with email input and button
+- **AND** a copyright bar at the bottom reads "© 2026 All rights reserved" with Component Dock link
+
+#### Scenario: Footer newsletter form
+
+- **GIVEN** the user is in the newsletter section of the footer
+- **THEN** an email input field with placeholder text is shown
+- **AND** a submit button is positioned to the right of the input
 
 ## Verification Checklist
 

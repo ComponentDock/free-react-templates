@@ -99,147 +99,152 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Middle: Company links | Account links | Newsletter form (email input + Subscribe button)
 - Copyright bar: "All rights reserved | Made with ❤ by Component Dock" (replaced from original Colorlib)
 
-## Requirements (Gherkin)
+## Requirements
 
 ### R1 — Navbar renders correctly
-```
-Scenario: Desktop navbar displays all navigation links
-  Given the page loads on a desktop viewport
-  Then the navbar shows links: Home, About, Services, Shop, Pages, Blog, Contact
-  And the logo is visible on the left
-  And search, heart (05), and bag (01) icons are visible on the right
-  And the price "$65.0" is shown in brand pink
 
-Scenario: Pages dropdown opens on hover
-  Given the user hovers over "Pages"
-  Then a dropdown appears with: Cart, Checkout, Wishlist, Portfolio, Shop Details, Blog Details
-  And the dropdown has dark background (#111111) with white text
+#### Scenario: Desktop navbar displays all navigation links
 
-Scenario: Mobile hamburger opens offcanvas menu
-  Given the page loads on a mobile viewport
-  When the user taps the hamburger icon
-  Then an offcanvas menu slides in from the right
-  And it contains the nav links, search, cart widget, and logo
-```
+- **GIVEN** the page loads on a desktop viewport
+- **THEN** the navbar shows links: Home, About, Services, Shop, Pages, Blog, Contact
+- **AND** the logo is visible on the left
+- **AND** search, heart (05), and bag (01) icons are visible on the right
+- **AND** the price "$65.0" is shown in brand pink
+
+#### Scenario: Pages dropdown opens on hover
+
+- **GIVEN** the user hovers over "Pages"
+- **THEN** a dropdown appears with: Cart, Checkout, Wishlist, Portfolio, Shop Details, Blog Details
+- **AND** the dropdown has dark background (#111111) with white text
+
+#### Scenario: Mobile hamburger opens offcanvas menu
+
+- **GIVEN** the page loads on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** an offcanvas menu slides in from the right
+- **AND** it contains the nav links, search, cart widget, and logo
 
 ### R2 — Hero slider displays
-```
-Scenario: Hero shows slide content
-  Given the hero slider is visible
-  Then the subtitle "Fresh Flower & Gift Shop" is displayed
-  And the heading "Making beautiful flowers a part of your life." is shown
-  And a "Shop now" pill button in brand pink is visible
 
-Scenario: Hero content animates in
-  Given the page loads
-  Then the hero text elements fade in with staggered timing
-```
+#### Scenario: Hero shows slide content
+
+- **GIVEN** the hero slider is visible
+- **THEN** the subtitle "Fresh Flower & Gift Shop" is displayed
+- **AND** the heading "Making beautiful flowers a part of your life." is shown
+- **AND** a "Shop now" pill button in brand pink is visible
+
+#### Scenario: Hero content animates in
+
+- **GIVEN** the page loads
+- **THEN** the hero text elements fade in with staggered timing
 
 ### R3 — Benefits section
-```
-Scenario: Benefits shows 4 items
-  Given the benefits section is visible
-  Then 4 benefit items are displayed in a row
-  And each item has an icon, heading, and short description
-```
+
+#### Scenario: Benefits shows 4 items
+
+- **GIVEN** the benefits section is visible
+- **THEN** 4 benefit items are displayed in a row
+- **AND** each item has an icon, heading, and short description
 
 ### R4 — Categories grid
-```
-Scenario: Categories shows 4 cards
-  Given the categories section is visible
-  Then 4 category cards are displayed in a 2x2 grid
-  And each card has a background image and overlay text
-  And the categories are: Fresh Flower, Succulent plants, Cactus plants, Furniture tree
-```
+
+#### Scenario: Categories shows 4 cards
+
+- **GIVEN** the categories section is visible
+- **THEN** 4 category cards are displayed in a 2x2 grid
+- **AND** each card has a background image and overlay text
+- **AND** the categories are: Fresh Flower, Succulent plants, Cactus plants, Furniture tree
 
 ### R5 — About section
-```
-Scenario: About section renders with title and content
-  Given the about section is visible
-  Then the section title "About us" is shown
-  And the heading "We provide all kinds of fresh flower services" is displayed
-  And a video thumbnail with play button is visible
-  And the "Contact us" CTA button is present
-```
+
+#### Scenario: About section renders with title and content
+
+- **GIVEN** the about section is visible
+- **THEN** the section title "About us" is shown
+- **AND** the heading "We provide all kinds of fresh flower services" is displayed
+- **AND** a video thumbnail with play button is visible
+- **AND** the "Contact us" CTA button is present
 
 ### R6 — Product grid with filters
-```
-Scenario: Products display with filter tabs
-  Given the new arrivals section is visible
-  Then filter tabs are shown: All, Bouquet, Flower box, Flower shelf, Basket of flower, Gift combos
-  And "All" tab is active by default
-  And product cards show image, name, price, and "Add to cart" link
 
-Scenario: Product cards show labels
-  Given products are displayed
-  Then some products show "New" label
-  And some products show "Sale" label
-  And some products show "Out Of Stock" label
-```
+#### Scenario: Products display with filter tabs
+
+- **GIVEN** the new arrivals section is visible
+- **THEN** filter tabs are shown: All, Bouquet, Flower box, Flower shelf, Basket of flower, Gift combos
+- **AND** "All" tab is active by default
+- **AND** product cards show image, name, price, and "Add to cart" link
+
+#### Scenario: Product cards show labels
+
+- **GIVEN** products are displayed
+- **THEN** some products show "New" label
+- **AND** some products show "Sale" label
+- **AND** some products show "Out Of Stock" label
 
 ### R7 — Call to action section
-```
-Scenario: CTA shows with two buttons
-  Given the call-to-action section is visible
-  Then the heading "Let our flowers make your party more perfect." is displayed
-  And an "Order Now" brand pink pill button is visible
-  And a "Contact Us" white pill button with pink text is visible
-  And a background image covers the section
-```
+
+#### Scenario: CTA shows with two buttons
+
+- **GIVEN** the call-to-action section is visible
+- **THEN** the heading "Let our flowers make your party more perfect." is displayed
+- **AND** an "Order Now" brand pink pill button is visible
+- **AND** a "Contact Us" white pill button with pink text is visible
+- **AND** a background image covers the section
 
 ### R8 — Blog posts section
-```
-Scenario: Latest posts shows 3 blog cards
-  Given the blog section is visible
-  Then 3 blog cards are displayed in a row
-  And each card has an image, category label, title, excerpt, and date
-  And a "View all posts" border button is visible
-```
+
+#### Scenario: Latest posts shows 3 blog cards
+
+- **GIVEN** the blog section is visible
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card has an image, category label, title, excerpt, and date
+- **AND** a "View all posts" border button is visible
 
 ### R9 — Testimonials
-```
-Scenario: Testimonial slider renders
-  Given the testimonial section is visible
-  Then a testimonial card is displayed with centered text
-  And the testimonial text is italic serif
-  And the author name and role are shown below
-  And the section has a light background (#f7f5fa)
-```
+
+#### Scenario: Testimonial slider renders
+
+- **GIVEN** the testimonial section is visible
+- **THEN** a testimonial card is displayed with centered text
+- **AND** the testimonial text is italic serif
+- **AND** the author name and role are shown below
+- **AND** the section has a light background (#f7f5fa)
 
 ### R10 — Instagram feed
-```
-Scenario: Instagram images display in a row
-  Given the Instagram section is visible
-  Then 5 images are displayed in a full-width row
-  And hovering shows an overlay with Instagram icon and "Follow us @floresco"
-```
+
+#### Scenario: Instagram images display in a row
+
+- **GIVEN** the Instagram section is visible
+- **THEN** 5 images are displayed in a full-width row
+- **AND** hovering shows an overlay with Instagram icon and "Follow us @floresco"
 
 ### R11 — Footer
-```
-Scenario: Footer renders all sections
-  Given the footer is visible
-  Then the logo is displayed
-  And a description paragraph is shown
-  And social icons (Facebook, Twitter, Instagram, LinkedIn) are visible
-  And Company links (About us, Services, Contact us) are listed
-  And Account links (My cart, Wishlist, Login/Register) are listed
-  And a newsletter form with email input and Subscribe button is present
-  And the copyright bar reads "All rights reserved" with a link to componentdock.com
 
-Scenario: Footer newsletter form
-  Given the newsletter form is visible
-  Then an email input with placeholder "Email" is shown
-  And a "Subscribe" button is visible
-```
+#### Scenario: Footer renders all sections
+
+- **GIVEN** the footer is visible
+- **THEN** the logo is displayed
+- **AND** a description paragraph is shown
+- **AND** social icons (Facebook, Twitter, Instagram, LinkedIn) are visible
+- **AND** Company links (About us, Services, Contact us) are listed
+- **AND** Account links (My cart, Wishlist, Login/Register) are listed
+- **AND** a newsletter form with email input and Subscribe button is present
+- **AND** the copyright bar reads "All rights reserved" with a link to componentdock.com
+
+#### Scenario: Footer newsletter form
+
+- **GIVEN** the newsletter form is visible
+- **THEN** an email input with placeholder "Email" is shown
+- **AND** a "Subscribe" button is visible
 
 ### R12 — Responsive layout
-```
-Scenario: Mobile layout adjusts columns
-  Given the page loads on a mobile viewport
-  Then the navbar collapses to a hamburger menu
-  And product grid shows fewer columns
-  And the footer stacks vertically
-```
+
+#### Scenario: Mobile layout adjusts columns
+
+- **GIVEN** the page loads on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** product grid shows fewer columns
+- **AND** the footer stacks vertically
 
 ## Verification Checklist
 

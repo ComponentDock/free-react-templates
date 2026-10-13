@@ -13,12 +13,16 @@ Gather is an interactive accordion component template inspired by ColorLib "Acco
 
 ## Requirements
 
-### Requirement: Interactive Accordion Steps
+### Feature: Interactive Accordion Steps
+
+#### Scenario: Interactive Accordion Steps
 
 - The system SHALL render accordion items for Step 01 through Step 04.
 - Clicking an accordion header SHALL expand that step and collapse others (or toggle state).
 - Expanded steps SHALL reveal bullet points with links/descriptions.
 
-### Requirement: Footer Attribution
+### Feature: Footer Attribution
+
+#### Scenario: Footer Attribution
 
 - The footer SHALL link to https://www.componentdock.com/ with branded text "More templates at Component Dock" or similar.

@@ -82,86 +82,80 @@ Extracted from the live preview stylesheet (style.css at preview.colorlib.com/th
 
 10. **Bottom Footer** — Copyright line: "Made with ♥ by Component Dock".
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar displays logo and navigation links
-```
-GIVEN the page loads
-WHEN the user views the top header
-THEN "Welcome to Coinwell" is displayed with accent color on "Coinwell"
-AND Login | Register, FAQ, Earn Money links are visible
-WHEN the user views the main navbar
-THEN logo, Home, Pages, Currencies, Contact links are visible
-AND a newsletter form is present in the nav area
-```
+### Feature: Coinwell template behaviour
 
-### Scenario: Hero carousel shows slides with CTA
-```
-GIVEN the hero area is in view
-WHEN the carousel renders
-THEN the headline "Take a step into the Crypto World" is displayed
-AND descriptive text is shown below the headline
-AND a gold CTA button "Read More" is visible
-AND a hero image/illustration is shown beside the text
-```
+#### Scenario: Navbar displays logo and navigation links
 
-### Scenario: Feature cards are interactive
-```
-GIVEN the features area is visible
-WHEN the user views the 4 feature cards
-THEN each card shows an icon, title, description, and "Read More" button
-WHEN the user hovers or focuses a feature card
-THEN the card background changes to gold (#ffaf02)
-AND text colors invert for contrast
-```
+- **GIVEN** the page loads
+- **WHEN** the user views the top header
+- **THEN** "Welcome to Coinwell" is displayed with accent color on "Coinwell"
+- **AND** Login | Register, FAQ, Earn Money links are visible
+- **WHEN** the user views the main navbar
+- **THEN** logo, Home, Pages, Currencies, Contact links are visible
+- **AND** a newsletter form is present in the nav area
 
-### Scenario: About section shows split layout
-```
-GIVEN the about area is in view
-WHEN the user views the section
-THEN an illustration is displayed on the left
-AND "Let's change the world together" heading is on the right
-AND descriptive paragraph and "Read More" button are present
-```
+#### Scenario: Hero carousel shows slides with CTA
 
-### Scenario: Currency calculator accepts input
-```
-GIVEN the currency calculator section is visible
-WHEN the user views the calculator
-THEN two converter rows are displayed
-AND each row has a numeric input, a currency dropdown, an equals sign, a result input, and another currency dropdown
-WHEN the user enters a value in the first input
-THEN the form is interactive and accepts the input
-```
+- **GIVEN** the hero area is in view
+- **WHEN** the carousel renders
+- **THEN** the headline "Take a step into the Crypto World" is displayed
+- **AND** descriptive text is shown below the headline
+- **AND** a gold CTA button "Read More" is visible
+- **AND** a hero image/illustration is shown beside the text
 
-### Scenario: Blog section displays posts and price table
-```
-GIVEN the blog area is visible
-WHEN the user views the left column
-THEN 3 blog posts are displayed with thumbnails, category, date, title, and excerpt
-WHEN the user views the right column
-THEN a crypto price table shows 10 coins with icon, name, ticker, and price
-AND price changes are indicated with increase/decrease styling
-```
+#### Scenario: Feature cards are interactive
 
-### Scenario: Newsletter subscribe form works
-```
-GIVEN the newsletter section is visible
-WHEN the user sees the form
-THEN "Subscribe to Newsletter" heading is displayed
-AND an email input and Subscribe button are present
-WHEN the user enters a valid email and clicks Subscribe
-THEN the form attempts submission
-```
+- **GIVEN** the features area is visible
+- **WHEN** the user views the 4 feature cards
+- **THEN** each card shows an icon, title, description, and "Read More" button
+- **WHEN** the user hovers or focuses a feature card
+- **THEN** the card background changes to gold (#ffaf02)
+- **AND** text colors invert for contrast
 
-### Scenario: Footer displays content and links
-```
-GIVEN the footer is in view
-WHEN the user scrolls to the bottom
-THEN the main footer has 3 widget columns: logo+social, Recent Posts, Quick Links
-AND social icons for Facebook, Twitter, Dribbble, Behance, Instagram are visible
-AND the bottom footer shows copyright text with Component Dock link
-```
+#### Scenario: About section shows split layout
+
+- **GIVEN** the about area is in view
+- **WHEN** the user views the section
+- **THEN** an illustration is displayed on the left
+- **AND** "Let's change the world together" heading is on the right
+- **AND** descriptive paragraph and "Read More" button are present
+
+#### Scenario: Currency calculator accepts input
+
+- **GIVEN** the currency calculator section is visible
+- **WHEN** the user views the calculator
+- **THEN** two converter rows are displayed
+- **AND** each row has a numeric input, a currency dropdown, an equals sign, a result input, and another currency dropdown
+- **WHEN** the user enters a value in the first input
+- **THEN** the form is interactive and accepts the input
+
+#### Scenario: Blog section displays posts and price table
+
+- **GIVEN** the blog area is visible
+- **WHEN** the user views the left column
+- **THEN** 3 blog posts are displayed with thumbnails, category, date, title, and excerpt
+- **WHEN** the user views the right column
+- **THEN** a crypto price table shows 10 coins with icon, name, ticker, and price
+- **AND** price changes are indicated with increase/decrease styling
+
+#### Scenario: Newsletter subscribe form works
+
+- **GIVEN** the newsletter section is visible
+- **WHEN** the user sees the form
+- **THEN** "Subscribe to Newsletter" heading is displayed
+- **AND** an email input and Subscribe button are present
+- **WHEN** the user enters a valid email and clicks Subscribe
+- **THEN** the form attempts submission
+
+#### Scenario: Footer displays content and links
+
+- **GIVEN** the footer is in view
+- **WHEN** the user scrolls to the bottom
+- **THEN** the main footer has 3 widget columns: logo+social, Recent Posts, Quick Links
+- **AND** social icons for Facebook, Twitter, Dribbble, Behance, Instagram are visible
+- **AND** the bottom footer shows copyright text with Component Dock link
 
 ## Verification Checklist
 

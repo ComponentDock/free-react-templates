@@ -12,31 +12,37 @@ Recreation of ColorLib **Carousel 03** (`https://colorlib.com/wp/template/carous
 - **Interactive Elements**: Category pill tags with white background and uppercase purple text (`#b063c5`), interactive slide carousel with smooth transitions, pagination dots (active dot highlighted in purple), and navigation arrows.
 - **Footer**: Required Component Dock attribution link (`https://www.componentdock.com/`).
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### 1. Header & Section Title
 
 - **Requirement**: Display a clean header section with a prominent heading "Carousel Showcase" or "#03" and subtitle.
-- **Scenario**: User views the top of the page
-  - Given the Glide application is loaded
-  - When the user views the header section
-  - Then they should see the section title "Carousel #03" centered with appropriate spacing.
+
+#### Scenario: User views the top of the page
+
+- **GIVEN** the Glide application is loaded
+- **WHEN** the user views the header section
+- **THEN** they should see the section title "Carousel #03" centered with appropriate spacing
 
 ### 2. Interactive Carousel Cards
 
 - **Requirement**: Showcase feature cards with background imagery, dark gradient overlay, category tag, and serif headline.
-- **Scenario**: User interacts with the carousel slides
-  - Given the carousel displays multiple work items (e.g. Working Spaces for Startups Freelancer)
-  - When the user clicks navigation arrows or pagination dots
-  - Then the active slide updates smoothly, showing the corresponding background image, category badge ("WEB DESIGN"), and bold serif headline.
+
+#### Scenario: User interacts with the carousel slides
+
+- **GIVEN** the carousel displays multiple work items (e.g. Working Spaces for Startups Freelancer)
+- **WHEN** the user clicks navigation arrows or pagination dots
+- **THEN** the active slide updates smoothly, showing the corresponding background image, category badge ("WEB DESIGN"), and bold serif headline
 
 ### 3. Footer Attribution
 
 - **Requirement**: Every template footer must link to Component Dock (`https://www.componentdock.com/`).
-- **Scenario**: User scrolls to the footer
-  - Given the user is at the bottom of the page
-  - When they view the footer
-  - Then they see "More templates at Component Dock" linking to `https://www.componentdock.com/`.
+
+#### Scenario: User scrolls to the footer
+
+- **GIVEN** the user is at the bottom of the page
+- **WHEN** they view the footer
+- **THEN** they see "More templates at Component Dock" linking to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

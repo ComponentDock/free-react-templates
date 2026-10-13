@@ -14,6 +14,10 @@ Recreation of ColorLib "Bootstrap Buttons V12" (`https://colorlib.com/wp/templat
 
 ## Requirements
 
+### Feature: template-btnridge template behaviour
+
+#### Scenario: template-btnridge
+
 - Gherkin feature scenarios covering Header, SizeScale, ColorPalette, SocialButtons, and Footer sections.
 - 100% test coverage.
 - Fully accessible with proper ARIA labels and semantic markup.

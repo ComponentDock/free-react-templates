@@ -66,104 +66,114 @@ Extracted from the live preview's stylesheets on 2026-09-10.
    icons (Twitter, Behance, Dribbble, Facebook, RSS). Replace Colorlib
    attribution with Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Lumicraft template behaviour
+
 Feature: Lumicraft — Creative Digital Agency Template
 
-  Background:
-    Given the user opens the Lumicraft page
-    Then the fixed navigation bar is visible at the top
+Background:
+- **GIVEN** the user opens the Lumicraft page
+- **THEN** the fixed navigation bar is visible at the top
 
-  # --- HERO ---
+**--- HERO ---**
 
-  Scenario: Hero section displays with dark purple background
-    Given the hero section is visible
-    Then the hero has a dark purple background with background image
-    And a centered logo is displayed
-    And the headline reads "We Craft Awesome Web And Graphic Design Solutions"
-    And the headline uses Montserrat bold white font
-    And a PT Serif subtitle is displayed below the headline
+#### Scenario: Hero section displays with dark purple background
 
-  # --- SERVICES ---
+- **GIVEN** the hero section is visible
+- **THEN** the hero has a dark purple background with background image
+- **AND** a centered logo is displayed
+- **AND** the headline reads "We Craft Awesome Web And Graphic Design Solutions"
+- **AND** the headline uses Montserrat bold white font
+- **AND** a PT Serif subtitle is displayed below the headline
 
-  Scenario: Services section shows numbered title block and service cards
-    Given the user scrolls to the services section
-    Then section number "01" is displayed in a green 370×370 title block on the left
-    And the heading "Services" is displayed in white uppercase Montserrat
-    And a service card slider is shown on the right
-    And the first slide contains 4 service cards: Branding, Mobile Apps, Web, Graphic
-    And each card has an icon, uppercase title, and description text
+**--- SERVICES ---**
 
-  Scenario: Services slider navigation
-    Given the services slider is visible
-    When the user clicks the next arrow
-    Then the second slide appears with: Services, PSD, HTML, PHP
+#### Scenario: Services section shows numbered title block and service cards
 
-  # --- PORTFOLIO ---
+- **GIVEN** the user scrolls to the services section
+- **THEN** section number "01" is displayed in a green 370×370 title block on the left
+- **AND** the heading "Services" is displayed in white uppercase Montserrat
+- **AND** a service card slider is shown on the right
+- **AND** the first slide contains 4 service cards: Branding, Mobile Apps, Web, Graphic
+- **AND** each card has an icon, uppercase title, and description text
 
-  Scenario: Portfolio section shows grid with hover overlay
-    Given the user scrolls to the portfolio section
-    Then section number "02" is displayed in a green title block on the right
-    And a masonry grid of portfolio items is displayed on the left
-    And each item shows a hover overlay with category, title, and subtitle
+#### Scenario: Services slider navigation
 
-  # --- CRAFTERS / ABOUT ---
+- **GIVEN** the services slider is visible
+- **WHEN** the user clicks the next arrow
+- **THEN** the second slide appears with: Services, PSD, HTML, PHP
 
-  Scenario: About section shows team members
-    Given the user scrolls to the about section
-    Then section number "03" is displayed in a green title block on the left
-    And the heading reads "CRAFTERS"
-    And a team slider shows 3 members with photos and names
-    And navigation arrows allow browsing between team slides
+**--- PORTFOLIO ---**
 
-  # --- STORIES / NEWS ---
+#### Scenario: Portfolio section shows grid with hover overlay
 
-  Scenario: News section shows blog entries
-    Given the user scrolls to the news section
-    Then section number "04" is displayed in a green title block on the right
-    And the heading reads "STORIES"
-    And 4 blog entries are displayed in a grid
-    And each entry has an image, date, category tag, title, excerpt, and read more link
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** section number "02" is displayed in a green title block on the right
+- **AND** a masonry grid of portfolio items is displayed on the left
+- **AND** each item shows a hover overlay with category, title, and subtitle
 
-  # --- OFFER / VIDEO ---
+**--- CRAFTERS / ABOUT ---**
 
-  Scenario: Video section shows video popup and testimonials
-    Given the user scrolls to the video section
-    Then section number "05" is displayed in a green title block on the left
-    And the heading reads "OFFER"
-    And a video thumbnail with popup overlay is displayed
-    And a testimonial slider shows quotes with author attribution
-    And a full-width image carousel with pagination is shown
+#### Scenario: About section shows team members
 
-  # --- EXPERTISE / SKILLS ---
+- **GIVEN** the user scrolls to the about section
+- **THEN** section number "03" is displayed in a green title block on the left
+- **AND** the heading reads "CRAFTERS"
+- **AND** a team slider shows 3 members with photos and names
+- **AND** navigation arrows allow browsing between team slides
 
-  Scenario: Skills section shows progress bars
-    Given the user scrolls to the skills section
-    Then section number "06" is displayed in a green title block on the right
-    And the heading reads "EXPERTISE"
-    And 4 progress bars are displayed: HTML (81%), CSS (93%), PSD (72%), Design (99%)
-    And each bar has a skill name, percentage text, and colored fill bar
+**--- STORIES / NEWS ---**
 
-  # --- CONTACT ---
+#### Scenario: News section shows blog entries
 
-  Scenario: Contact section displays form and map
-    Given the user scrolls to the contact section
-    Then section number "07" is displayed in a green title block on the left
-    And the heading reads "Contact"
-    And a two-column layout is shown: descriptive text on the left, form on the right
-    And the form contains Name, Email, Subject, Message fields and a Submit button
-    And a full-width Google Maps embed is displayed below the form
+- **GIVEN** the user scrolls to the news section
+- **THEN** section number "04" is displayed in a green title block on the right
+- **AND** the heading reads "STORIES"
+- **AND** 4 blog entries are displayed in a grid
+- **AND** each entry has an image, date, category tag, title, excerpt, and read more link
 
-  # --- FOOTER ---
+**--- OFFER / VIDEO ---**
 
-  Scenario: Footer displays copyright and social links
-    Given the user scrolls to the footer
-    Then the footer has a dark purple background
-    And a copyright line is displayed
-    And social icons for Twitter, Behance, Dribbble, Facebook, and RSS are shown
-    And a "Component Dock" link replaces the original Colorlib attribution
-```
+#### Scenario: Video section shows video popup and testimonials
+
+- **GIVEN** the user scrolls to the video section
+- **THEN** section number "05" is displayed in a green title block on the left
+- **AND** the heading reads "OFFER"
+- **AND** a video thumbnail with popup overlay is displayed
+- **AND** a testimonial slider shows quotes with author attribution
+- **AND** a full-width image carousel with pagination is shown
+
+**--- EXPERTISE / SKILLS ---**
+
+#### Scenario: Skills section shows progress bars
+
+- **GIVEN** the user scrolls to the skills section
+- **THEN** section number "06" is displayed in a green title block on the right
+- **AND** the heading reads "EXPERTISE"
+- **AND** 4 progress bars are displayed: HTML (81%), CSS (93%), PSD (72%), Design (99%)
+- **AND** each bar has a skill name, percentage text, and colored fill bar
+
+**--- CONTACT ---**
+
+#### Scenario: Contact section displays form and map
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** section number "07" is displayed in a green title block on the left
+- **AND** the heading reads "Contact"
+- **AND** a two-column layout is shown: descriptive text on the left, form on the right
+- **AND** the form contains Name, Email, Subject, Message fields and a Submit button
+- **AND** a full-width Google Maps embed is displayed below the form
+
+**--- FOOTER ---**
+
+#### Scenario: Footer displays copyright and social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark purple background
+- **AND** a copyright line is displayed
+- **AND** social icons for Twitter, Behance, Dribbble, Facebook, and RSS are shown
+- **AND** a "Component Dock" link replaces the original Colorlib attribution
 
 ## Verification Checklist
 

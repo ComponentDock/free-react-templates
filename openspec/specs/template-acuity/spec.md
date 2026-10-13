@@ -12,7 +12,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React.
 - **Button Shapes**: Rounded-xl (`border-radius: 0.75rem`), smooth transitions, shadow-md.
 - **Section Backgrounds**: Clean white and light slate alternating backgrounds with card shadows and accordion expanders.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Interactive Profile & Widget Accordion Sections
 
@@ -20,20 +20,20 @@ As a site visitor, I want to interact with profile widgets and collapsible accor
 
 #### Scenario: Expanding profile accordion items
 
-- Given the user is on the Acuity template home page
-- When the user clicks on a profile accordion header
-- Then the respective profile card expands smoothly to reveal detailed stats, bio, and social links
-- And clicking another accordion item collapses the previous one or expands independently
+- **GIVEN** the user is on the Acuity template home page
+- **WHEN** the user clicks on a profile accordion header
+- **THEN** the respective profile card expands smoothly to reveal detailed stats, bio, and social links
+- **AND** clicking another accordion item collapses the previous one or expands independently
 
 #### Scenario: Interacting with profile widgets and action buttons
 
-- Given an expanded profile accordion section
-- When the user clicks on action buttons (e.g., "Follow", "Message", "View Profile")
-- Then interactive feedback or success states are displayed
+- **GIVEN** an expanded profile accordion section
+- **WHEN** the user clicks on action buttons (e.g., "Follow", "Message", "View Profile")
+- **THEN** interactive feedback or success states are displayed
 
 #### Scenario: Responsive layout and navigation
 
-- Given the user views the template on mobile or desktop devices
-- When the page renders
-- Then the accordion cards stack neatly with responsive padding and readable typography
-- And the footer links to Component Dock (`https://www.componentdock.com/`)
+- **GIVEN** the user views the template on mobile or desktop devices
+- **WHEN** the page renders
+- **THEN** the accordion cards stack neatly with responsive padding and readable typography
+- **AND** the footer links to Component Dock (`https://www.componentdock.com/`)

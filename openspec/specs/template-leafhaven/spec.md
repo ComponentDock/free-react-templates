@@ -106,73 +106,83 @@ Extracted from the live preview CSS (`assets/css/style.css`) at https://preview.
   - Column 3: Address + phone + email
 - Bottom bar: copyright text (must link to Component Dock)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: LeafHaven template behaviour
+
 Feature: LeafHaven Hotel Template
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo "LeafHaven" is visible in the top-left
-    And navigation links "Home", "Rooms", "About", "Blog", "Contact" are visible
-    And a "Book Now" button is visible
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays
-    Given the hero section is in the viewport
-    Then the heading "World Class Accommodation" is displayed in serif font
-    And a subtitle about discovering luxury is shown
-    And a "View More" CTA button is visible
-    And a hotel room image is displayed on the right
+- **GIVEN** the user is on any viewport
+- **THEN** the logo "LeafHaven" is visible in the top-left
+- **AND** navigation links "Home", "Rooms", "About", "Blog", "Contact" are visible
+- **AND** a "Book Now" button is visible
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: About section shows
-    Given the about section is scrolled into view
-    Then a centered heading paragraph is visible
-    And a two-column layout shows text on the left and images on the right
-    And a "Learn More" button is visible
+#### Scenario: Hero section displays
 
-  Scenario: Popular rooms carousel displays cards
-    Given the rooms section is scrolled into view
-    Then a section heading is visible
-    And multiple room cards are displayed in a horizontal carousel
-    And each card shows an image, title, price, and description
+- **GIVEN** the hero section is in the viewport
+- **THEN** the heading "World Class Accommodation" is displayed in serif font
+- **AND** a subtitle about discovering luxury is shown
+- **AND** a "View More" CTA button is visible
+- **AND** a hotel room image is displayed on the right
 
-  Scenario: Video section renders
-    Given the video section is scrolled into view
-    Then a play button icon is centered on a dark background
-    And "Hotel Preview" text is displayed below the play button
+#### Scenario: About section shows
 
-  Scenario: Booking form renders and validates
-    Given the booking form section is scrolled into view
-    Then a "Book A Room" heading is visible
-    And check-in and check-out date input fields are present
-    And room type and guest count select dropdowns are present
-    And a "Check Availability" submit button is visible
+- **GIVEN** the about section is scrolled into view
+- **THEN** a centered heading paragraph is visible
+- **AND** a two-column layout shows text on the left and images on the right
+- **AND** a "Learn More" button is visible
 
-  Scenario: Blog section shows 3 cards
-    Given the blog section is scrolled into view
-    Then 3 blog cards are visible in a row
-    And each card has an image, title, and description
+#### Scenario: Popular rooms carousel displays cards
 
-  Scenario: Testimonials slider works
-    Given the testimonials section is scrolled into view
-    Then client testimonials with names, ratings, and quotes are shown
-    And dot navigation indicators are present
+- **GIVEN** the rooms section is scrolled into view
+- **THEN** a section heading is visible
+- **AND** multiple room cards are displayed in a horizontal carousel
+- **AND** each card shows an image, title, price, and description
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then a logo and description text are visible
-    And navigation links are listed
-    And address and contact information are shown
-    And social media icon links are visible
-    And a link to "https://www.componentdock.com/" is present
+#### Scenario: Video section renders
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And multi-column sections stack vertically
-    And the booking form fields stack vertically
-```
+- **GIVEN** the video section is scrolled into view
+- **THEN** a play button icon is centered on a dark background
+- **AND** "Hotel Preview" text is displayed below the play button
+
+#### Scenario: Booking form renders and validates
+
+- **GIVEN** the booking form section is scrolled into view
+- **THEN** a "Book A Room" heading is visible
+- **AND** check-in and check-out date input fields are present
+- **AND** room type and guest count select dropdowns are present
+- **AND** a "Check Availability" submit button is visible
+
+#### Scenario: Blog section shows 3 cards
+
+- **GIVEN** the blog section is scrolled into view
+- **THEN** 3 blog cards are visible in a row
+- **AND** each card has an image, title, and description
+
+#### Scenario: Testimonials slider works
+
+- **GIVEN** the testimonials section is scrolled into view
+- **THEN** client testimonials with names, ratings, and quotes are shown
+- **AND** dot navigation indicators are present
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** a logo and description text are visible
+- **AND** navigation links are listed
+- **AND** address and contact information are shown
+- **AND** social media icon links are visible
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** multi-column sections stack vertically
+- **AND** the booking form fields stack vertically
 
 ## Verification Checklist
 

@@ -56,87 +56,111 @@ Recreation of the ColorLib **Eventro** template as a single-page event/conferenc
 8. **Contact CTA** — Blue background image, "Book your seat" heading, description, "Buy Ticket" button centered.
 9. **Footer** — Black background, centered social icons (Facebook, Instagram, Twitter, LinkedIn, YouTube, Tumblr), nav links (Home, About, Programs, Speakers, Location, Contact), copyright with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Festmark template behaviour
+
 Feature: Festmark — Event/Conference Landing Page
 
-  Background:
-    Given the user opens the Festmark homepage
+Background:
+- **GIVEN** the user opens the Festmark homepage
 
-  # --- Navbar ---
-  Scenario: Navbar displays all navigation links
-    Then I should see links for "Home", "About", "Programs", "Speakers", "Blog", "Contact"
-    And I should see a "Buy Ticket" button
+**--- Navbar ---**
 
-  Scenario: Navbar is transparent over hero
-    Given the page has loaded
-    Then the navbar background should be transparent
+#### Scenario: Navbar displays all navigation links
 
-  # --- Hero ---
-  Scenario: Hero shows event headline and date
-    Then I should see a date label (e.g. "12 Jan - 20 Jan 2020")
-    And I should see a large heading "Business Conference"
-    And I should see a description paragraph
+- **THEN** I should see links for "Home", "About", "Programs", "Speakers", "Blog", "Contact"
+- **AND** I should see a "Buy Ticket" button
 
-  Scenario: Hero has call-to-action buttons
-    Then I should see a "Join Now" button
-    And I should see a "Watch Video" button/link
+#### Scenario: Navbar is transparent over hero
 
-  # --- About ---
-  Scenario: About section displays conference info
-    Then I should see an "About the Conference" heading
-    And I should see an image on the left
-    And I should see text content on the right with location information
+- **GIVEN** the page has loaded
+- **THEN** the navbar background should be transparent
 
-  # --- Program Intro ---
-  Scenario: Program intro shows tech companies section
-    Then I should see a "The New Era of Tech Companies" heading
-    And I should see descriptive text
-    And I should see a "Join Now" button
+**--- Hero ---**
 
-  # --- Subscribe ---
-  Scenario: Subscribe section has email form
-    Then I should see a "We have top executive & start up here" heading
-    And I should see an email input field
-    And I should see a "Subscribe" button
+#### Scenario: Hero shows event headline and date
 
-  # --- Program Schedule ---
-  Scenario: Program schedule has date tabs
-    Then I should see tabs for at least 4 dates
-    And the first tab should be active by default
+- **THEN** I should see a date label (e.g. "12 Jan - 20 Jan 2020")
+- **AND** I should see a large heading "Business Conference"
+- **AND** I should see a description paragraph
 
-  Scenario: Each tab shows program items
-    Given I click on a date tab
-    Then I should see program items with speaker avatar, title, description, time, and speaker name
+#### Scenario: Hero has call-to-action buttons
 
-  # --- Speakers ---
-  Scenario: Speakers section shows speaker cards
-    Then I should see an "Our Speakers" heading
-    And I should see at least 4 speaker cards in a grid
-    And each card shows a name and role
+- **THEN** I should see a "Join Now" button
+- **AND** I should see a "Watch Video" button/link
 
-  Scenario: Speaker card shows social links on hover
-    Given I hover over a speaker card
-    Then I should see social media icons (Facebook, Twitter, LinkedIn)
+**--- About ---**
 
-  # --- Contact CTA ---
-  Scenario: Contact CTA encourages ticket purchase
-    Then I should see a "Book your seat" heading
-    And I should see a "Buy Ticket" button
+#### Scenario: About section displays conference info
 
-  # --- Footer ---
-  Scenario: Footer shows social links and navigation
-    Then I should see social media icons
-    And I should see navigation links (Home, About, Programs, Speakers, Location, Contact)
-    And I should see a copyright notice with "Component Dock" link
+- **THEN** I should see an "About the Conference" heading
+- **AND** I should see an image on the left
+- **AND** I should see text content on the right with location information
 
-  # --- Responsive ---
-  Scenario: Mobile menu toggle appears on small screens
-    Given the viewport width is less than 992px
-    Then I should see a mobile menu toggle
-    And the desktop nav should be hidden
-```
+**--- Program Intro ---**
+
+#### Scenario: Program intro shows tech companies section
+
+- **THEN** I should see a "The New Era of Tech Companies" heading
+- **AND** I should see descriptive text
+- **AND** I should see a "Join Now" button
+
+**--- Subscribe ---**
+
+#### Scenario: Subscribe section has email form
+
+- **THEN** I should see a "We have top executive & start up here" heading
+- **AND** I should see an email input field
+- **AND** I should see a "Subscribe" button
+
+**--- Program Schedule ---**
+
+#### Scenario: Program schedule has date tabs
+
+- **THEN** I should see tabs for at least 4 dates
+- **AND** the first tab should be active by default
+
+#### Scenario: Each tab shows program items
+
+- **GIVEN** I click on a date tab
+- **THEN** I should see program items with speaker avatar, title, description, time, and speaker name
+
+**--- Speakers ---**
+
+#### Scenario: Speakers section shows speaker cards
+
+- **THEN** I should see an "Our Speakers" heading
+- **AND** I should see at least 4 speaker cards in a grid
+- **AND** each card shows a name and role
+
+#### Scenario: Speaker card shows social links on hover
+
+- **GIVEN** I hover over a speaker card
+- **THEN** I should see social media icons (Facebook, Twitter, LinkedIn)
+
+**--- Contact CTA ---**
+
+#### Scenario: Contact CTA encourages ticket purchase
+
+- **THEN** I should see a "Book your seat" heading
+- **AND** I should see a "Buy Ticket" button
+
+**--- Footer ---**
+
+#### Scenario: Footer shows social links and navigation
+
+- **THEN** I should see social media icons
+- **AND** I should see navigation links (Home, About, Programs, Speakers, Location, Contact)
+- **AND** I should see a copyright notice with "Component Dock" link
+
+**--- Responsive ---**
+
+#### Scenario: Mobile menu toggle appears on small screens
+
+- **GIVEN** the viewport width is less than 992px
+- **THEN** I should see a mobile menu toggle
+- **AND** the desktop nav should be hidden
 
 ## Verification checklist
 

@@ -39,15 +39,16 @@ Extracted from the original `css/style.css` at the preview URL above.
 | **Form field height** | 42px                                  |
 | **Grid layout**     | 3 columns, items 31.25% width          |
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Feature: Three-step user profile wizard
 
-  Scenario: Step 1 — User Profile form renders with all fields
-    Given the user opens the wizard
-    Then the heading "User Profile" is displayed in uppercase
-    And the step indicator shows "1/3"
-    And the following fields are visible in two columns:
+#### Scenario: Step 1 — User Profile form renders with all fields
+
+- **GIVEN** the user opens the wizard
+- **THEN** the heading "User Profile" is displayed in uppercase
+- **AND** the step indicator shows "1/3"
+- **AND** the following fields are visible in two columns:
       | Field            | Column |
       | Full Name        | Left   |
       | Education Level  | Right  |
@@ -55,25 +56,28 @@ Extracted from the original `css/style.css` at the preview URL above.
       | Phone Number     | Right  |
       | Specialization   | Left   |
       | Date of Birth    | Right  |
-    And each input has a left-aligned icon
-    And the "Date of Birth" field is a date picker
+- **AND** each input has a left-aligned icon
+- **AND** the "Date of Birth" field is a date picker
 
-  Scenario: Step 1 — Validation blocks Next when fields empty
-    Given the user opens the wizard
-    When the user clicks "Next"
-    Then validation helper text appears
-    And the user stays on step 1
+#### Scenario: Step 1 — Validation blocks Next when fields empty
 
-  Scenario: Step 1 — Next advances to step 2
-    Given the user fills all step-1 fields
-    When the user clicks "Next"
-    Then the heading changes to "Residential Address"
-    And the step indicator shows "2/3"
+- **GIVEN** the user opens the wizard
+- **WHEN** the user clicks "Next"
+- **THEN** validation helper text appears
+- **AND** the user stays on step 1
 
-  Scenario: Step 2 — Residential Address form renders
-    Given the user is on step 2
-    Then the heading "Residential Address" is displayed
-    And the following fields are visible:
+#### Scenario: Step 1 — Next advances to step 2
+
+- **GIVEN** the user fills all step-1 fields
+- **WHEN** the user clicks "Next"
+- **THEN** the heading changes to "Residential Address"
+- **AND** the step indicator shows "2/3"
+
+#### Scenario: Step 2 — Residential Address form renders
+
+- **GIVEN** the user is on step 2
+- **THEN** the heading "Residential Address" is displayed
+- **AND** the following fields are visible:
       | Field              | Type     |
       | Country            | Select   |
       | Street Address     | Text     |
@@ -81,23 +85,26 @@ Extracted from the original `css/style.css` at the preview URL above.
       | Town / City        | Text     |
       | County             | Text     |
       | Postcode / Zip     | Password |
-    And the Country dropdown contains "United States", "United Kingdom", "Viet Nam"
+- **AND** the Country dropdown contains "United States", "United Kingdom", "Viet Nam"
 
-  Scenario: Step 2 — Previous returns to step 1
-    Given the user is on step 2
-    When the user clicks "Previous"
-    Then the heading changes to "User Profile"
-    And the step indicator shows "1/3"
+#### Scenario: Step 2 — Previous returns to step 1
 
-  Scenario: Step 2 — Next advances to step 3
-    Given the user fills all step-2 fields
-    When the user clicks "Next"
-    Then the heading changes to "What are you doing?"
-    And the step indicator shows "3/3"
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Previous"
+- **THEN** the heading changes to "User Profile"
+- **AND** the step indicator shows "1/3"
 
-  Scenario: Step 3 — Category grid renders with 6 options
-    Given the user is on step 3
-    Then a 3-column grid displays 6 category cards:
+#### Scenario: Step 2 — Next advances to step 3
+
+- **GIVEN** the user fills all step-2 fields
+- **WHEN** the user clicks "Next"
+- **THEN** the heading changes to "What are you doing?"
+- **AND** the step indicator shows "3/3"
+
+#### Scenario: Step 3 — Category grid renders with 6 options
+
+- **GIVEN** the user is on step 3
+- **THEN** a 3-column grid displays 6 category cards:
       | Category    |
       | Programming |
       | Sports      |
@@ -105,26 +112,29 @@ Extracted from the original `css/style.css` at the preview URL above.
       | Tour Guide  |
       | Art-Design  |
       | Doctor      |
-    And each card has an image thumbnail and a vertical text label
-    And "Programming" is active (highlighted) by default
+- **AND** each card has an image thumbnail and a vertical text label
+- **AND** "Programming" is active (highlighted) by default
 
-  Scenario: Step 3 — Category selection toggles active state
-    Given the user is on step 3
-    When the user clicks "Sports"
-    Then "Sports" becomes the active card
-    And "Programming" is no longer active
+#### Scenario: Step 3 — Category selection toggles active state
 
-  Scenario: Step 3 — Previous returns to step 2
-    Given the user is on step 3
-    When the user clicks "Previous"
-    Then the heading changes to "Residential Address"
-    And the step indicator shows "2/3"
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks "Sports"
+- **THEN** "Sports" becomes the active card
+- **AND** "Programming" is no longer active
 
-  Scenario: Responsive — mobile layout
-    Given the viewport width is below 768px
-    Then the form fields stack into single columns
-    And the grid items resize to 2 columns
-    And the background image is hidden
+#### Scenario: Step 3 — Previous returns to step 2
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks "Previous"
+- **THEN** the heading changes to "Residential Address"
+- **AND** the step indicator shows "2/3"
+
+#### Scenario: Responsive — mobile layout
+
+- **GIVEN** the viewport width is below 768px
+- **THEN** the form fields stack into single columns
+- **AND** the grid items resize to 2 columns
+- **AND** the background image is hidden
 
 ## Verification checklist
 

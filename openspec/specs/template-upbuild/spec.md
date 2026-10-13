@@ -83,194 +83,188 @@ TypeScript.
 - **Accordion:** Bootstrap collapse panels with `.panel-heading` and
   `.panel-body`, first panel expanded by default (`collapse in`).
 
-## Gherkin requirements
+## Requirements
 
 ### Hero Banner
 
-```gherkin
-Scenario: Hero section displays construction headline
-  Given the visitor is on the homepage
-  When the page loads
-  Then the hero section shows "We Build Your Dream" as the main heading
-  And a subtitle paragraph with construction-related description is below
-  And a "Learn more" secondary button is visible
-  And the background is a dark construction-site image with a white overlay
+#### Scenario: Hero section displays construction headline
 
-Scenario: Hero background is a parallax cover image
-  Given the hero section is rendered
-  When the visitor scrolls
-  Then the background image stays fixed (parallax effect)
-```
+- **GIVEN** the visitor is on the homepage
+- **WHEN** the page loads
+- **THEN** the hero section shows "We Build Your Dream" as the main heading
+- **AND** a subtitle paragraph with construction-related description is below
+- **AND** a "Learn more" secondary button is visible
+- **AND** the background is a dark construction-site image with a white overlay
+
+#### Scenario: Hero background is a parallax cover image
+
+- **GIVEN** the hero section is rendered
+- **WHEN** the visitor scrolls
+- **THEN** the background image stays fixed (parallax effect)
 
 ### Top Navbar
 
-```gherkin
-Scenario: Top contact bar displays business information
-  Given the visitor is on the homepage
-  When the header loads
-  Then a top navbar shows address, phone, and email with Font Awesome icons
-```
+#### Scenario: Top contact bar displays business information
+
+- **GIVEN** the visitor is on the homepage
+- **WHEN** the header loads
+- **THEN** a top navbar shows address, phone, and email with Font Awesome icons
 
 ### Main Navigation
 
-```gherkin
-Scenario: Main navigation shows all menu items
-  Given the visitor is on the homepage
-  When the main navbar loads
-  Then the logo is on the left
-  And 6 navigation links are visible: Home, About, Projects, Services, Blog, Contact
-  And Home, Projects, Services, Blog have dropdown submenus
+#### Scenario: Main navigation shows all menu items
 
-Scenario: Navigation dropdowns open on click
-  Given the main navbar is visible
-  When the visitor clicks "Services"
-  Then a dropdown appears with: Construction, Renovation, Architecture, Painting, Decorating, Consulting
-```
+- **GIVEN** the visitor is on the homepage
+- **WHEN** the main navbar loads
+- **THEN** the logo is on the left
+- **AND** 6 navigation links are visible: Home, About, Projects, Services, Blog, Contact
+- **AND** Home, Projects, Services, Blog have dropdown submenus
+
+#### Scenario: Navigation dropdowns open on click
+
+- **GIVEN** the main navbar is visible
+- **WHEN** the visitor clicks "Services"
+- **THEN** a dropdown appears with: Construction, Renovation, Architecture, Painting, Decorating, Consulting
 
 ### About Section 01 (3-column cards)
 
-```gherkin
-Scenario: Three about feature cards are displayed
-  Given the visitor scrolls to the about section
-  Then 3 cards are shown in a row
-  And each card has an image, title, description paragraph, and "Read more" link
-  And the card titles are "Certified Experience", "The Great Teamwork", "Modern Technology"
+#### Scenario: Three about feature cards are displayed
 
-Scenario: About cards link to detail pages
-  Given the about section is displayed
-  When the visitor clicks "Read more" on any card
-  Then the link activates (navigates or scrolls)
-```
+- **GIVEN** the visitor scrolls to the about section
+- **THEN** 3 cards are shown in a row
+- **AND** each card has an image, title, description paragraph, and "Read more" link
+- **AND** the card titles are "Certified Experience", "The Great Teamwork", "Modern Technology"
+
+#### Scenario: About cards link to detail pages
+
+- **GIVEN** the about section is displayed
+- **WHEN** the visitor clicks "Read more" on any card
+- **THEN** the link activates (navigates or scrolls)
 
 ### About Section 02 (split layout)
 
-```gherkin
-Scenario: About section 02 shows split image-text layout
-  Given the visitor scrolls to about section 02
-  Then a half-width background image appears on the left
-  And "Subtitle", "About Us" heading, and body text appear on the right
-  And the section has a grey (#F8F8F8) background
-```
+#### Scenario: About section 02 shows split image-text layout
+
+- **GIVEN** the visitor scrolls to about section 02
+- **THEN** a half-width background image appears on the left
+- **AND** "Subtitle", "About Us" heading, and body text appear on the right
+- **AND** the section has a grey (#F8F8F8) background
 
 ### Numbers/Stats Section
 
-```gherkin
-Scenario: Four statistics are displayed on yellow background
-  Given the visitor scrolls to the numbers section
-  Then 4 stat boxes are shown in a row
-  And each box shows an icon, large number, and label
-  And the stats are: "20 Year Of Experience", "154 Project Completed",
-      "785 Happy Client", "14 Award Won"
-  And the section background is yellow (#FFD626)
-```
+#### Scenario: Four statistics are displayed on yellow background
+
+- **GIVEN** the visitor scrolls to the numbers section
+- **THEN** 4 stat boxes are shown in a row
+- **AND** each box shows an icon, large number, and label
+- **AND** the stats are: "20 Year Of Experience", "154 Project Completed",
+"785 Happy Client", "14 Award Won"
+- **AND** the section background is yellow (#FFD626)
 
 ### Portfolio Section
 
-```gherkin
-Scenario: Portfolio carousel shows project cards
-  Given the visitor scrolls to the portfolio section
-  Then a carousel/slider displays project cards
-  And each card has an image with overlay hover (link + search icons)
-  And each card shows "Project Title" and "Category" below the image
-  And a "View All" button is below the carousel
+#### Scenario: Portfolio carousel shows project cards
 
-Scenario: Portfolio hover reveals overlay actions
-  Given a portfolio card is visible
-  When the visitor hovers over a card image
-  Then a dark overlay appears with link and search icons
-```
+- **GIVEN** the visitor scrolls to the portfolio section
+- **THEN** a carousel/slider displays project cards
+- **AND** each card has an image with overlay hover (link + search icons)
+- **AND** each card shows "Project Title" and "Category" below the image
+- **AND** a "View All" button is below the carousel
+
+#### Scenario: Portfolio hover reveals overlay actions
+
+- **GIVEN** a portfolio card is visible
+- **WHEN** the visitor hovers over a card image
+- **THEN** a dark overlay appears with link and search icons
 
 ### Services Section
 
-```gherkin
-Scenario: Six services are displayed in a grid
-  Given the visitor scrolls to the services section
-  Then 6 service items are shown in a 3×2 grid
-  And each service has an icon, title, description, and "Read more" link
-  And the services are: Construction, Renovation, Architecture, Painting, Decorating, Consulting
-```
+#### Scenario: Six services are displayed in a grid
+
+- **GIVEN** the visitor scrolls to the services section
+- **THEN** 6 service items are shown in a 3×2 grid
+- **AND** each service has an icon, title, description, and "Read more" link
+- **AND** the services are: Construction, Renovation, Architecture, Painting, Decorating, Consulting
 
 ### Why Choose Us (Accordion)
 
-```gherkin
-Scenario: Accordion shows three collapsible panels
-  Given the visitor scrolls to the "Why Choose Us" section
-  Then a heading "Why Choose Us" with subtitle and description is on the left
-  And 3 accordion panels are shown: "Certified Experience", "The Great Teamwork", "Modern Technology"
-  And the first panel is expanded by default
-  And a half-width background image is on the right
-  And the section has a grey (#F8F8F8) background
+#### Scenario: Accordion shows three collapsible panels
 
-Scenario: Clicking a collapsed accordion panel expands it
-  Given the "Why Choose Us" accordion is visible
-  When the visitor clicks "The Great Teamwork"
-  Then that panel expands to show its body text
-  And the previously open panel collapses
-```
+- **GIVEN** the visitor scrolls to the "Why Choose Us" section
+- **THEN** a heading "Why Choose Us" with subtitle and description is on the left
+- **AND** 3 accordion panels are shown: "Certified Experience", "The Great Teamwork", "Modern Technology"
+- **AND** the first panel is expanded by default
+- **AND** a half-width background image is on the right
+- **AND** the section has a grey (#F8F8F8) background
+
+#### Scenario: Clicking a collapsed accordion panel expands it
+
+- **GIVEN** the "Why Choose Us" accordion is visible
+- **WHEN** the visitor clicks "The Great Teamwork"
+- **THEN** that panel expands to show its body text
+- **AND** the previously open panel collapses
 
 ### Call to Action 1
 
-```gherkin
-Scenario: CTA section 1 shows headline and button on yellow
-  Given the visitor scrolls to CTA section 1
-  Then a headline, subtitle, and "Contact Us" button are centered
-  And the section background is yellow (#FFD626)
-```
+#### Scenario: CTA section 1 shows headline and button on yellow
+
+- **GIVEN** the visitor scrolls to CTA section 1
+- **THEN** a headline, subtitle, and "Contact Us" button are centered
+- **AND** the section background is yellow (#FFD626)
 
 ### Testimonials Section
 
-```gherkin
-Scenario: Testimonial carousel shows client quotes
-  Given the visitor scrolls to the testimonials section
-  Then a carousel displays testimonial cards
-  And each card shows a quote paragraph, client name, and role
-  And the section has a full-width background image with overlay
-  And the heading reads "Happy Clients"
+#### Scenario: Testimonial carousel shows client quotes
 
-Scenario: Client logos carousel is displayed
-  Given the testimonials section is visible
-  Then a partner/client logo carousel is below the testimonials
-  And multiple partner logos are displayed in a slider
-```
+- **GIVEN** the visitor scrolls to the testimonials section
+- **THEN** a carousel displays testimonial cards
+- **AND** each card shows a quote paragraph, client name, and role
+- **AND** the section has a full-width background image with overlay
+- **AND** the heading reads "Happy Clients"
+
+#### Scenario: Client logos carousel is displayed
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a partner/client logo carousel is below the testimonials
+- **AND** multiple partner logos are displayed in a slider
 
 ### Blog Section
 
-```gherkin
-Scenario: Three blog post cards are displayed
-  Given the visitor scrolls to the blog section
-  Then 3 blog cards are shown in a row
-  And each card has an image, date + author meta, title, excerpt, and "Read more" link
+#### Scenario: Three blog post cards are displayed
 
-Scenario: Blog section heading is displayed
-  Given the blog section is visible
-  Then the heading reads "Latest News" with a subtitle above
-```
+- **GIVEN** the visitor scrolls to the blog section
+- **THEN** 3 blog cards are shown in a row
+- **AND** each card has an image, date + author meta, title, excerpt, and "Read more" link
+
+#### Scenario: Blog section heading is displayed
+
+- **GIVEN** the blog section is visible
+- **THEN** the heading reads "Latest News" with a subtitle above
 
 ### Call to Action 2
 
-```gherkin
-Scenario: CTA section 2 shows horizontal headline-button layout
-  Given the visitor scrolls to CTA section 2
-  Then a headline is on the left and a "Contact Us" button is on the right
-  And the section background is yellow (#FFD626)
-  And the section has compact padding (xs-section)
-```
+#### Scenario: CTA section 2 shows horizontal headline-button layout
+
+- **GIVEN** the visitor scrolls to CTA section 2
+- **THEN** a headline is on the left and a "Contact Us" button is on the right
+- **AND** the section background is yellow (#FFD626)
+- **AND** the section has compact padding (xs-section)
 
 ### Footer
 
-```gherkin
-Scenario: Footer has three columns on dark background
-  Given the visitor scrolls to the footer
-  Then the background is dark navy (#001232)
-  And column 1 has: logo, description, and contact info (address, phone, email) with icons
-  And column 2 has: "Quick Links" with two columns of navigation links
-  And column 3 has: "Keep in touch" heading, email subscribe form, and social icons
+#### Scenario: Footer has three columns on dark background
 
-Scenario: Copyright bar is displayed at the bottom
-  Given the footer is displayed
-  Then a bottom bar shows copyright text
-  And the copyright links to Component Dock (https://www.componentdock.com/)
-```
+- **GIVEN** the visitor scrolls to the footer
+- **THEN** the background is dark navy (#001232)
+- **AND** column 1 has: logo, description, and contact info (address, phone, email) with icons
+- **AND** column 2 has: "Quick Links" with two columns of navigation links
+- **AND** column 3 has: "Keep in touch" heading, email subscribe form, and social icons
+
+#### Scenario: Copyright bar is displayed at the bottom
+
+- **GIVEN** the footer is displayed
+- **THEN** a bottom bar shows copyright text
+- **AND** the copyright links to Component Dock (https://www.componentdock.com/)
 
 ## Verification checklist
 

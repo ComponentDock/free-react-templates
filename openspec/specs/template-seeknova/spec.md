@@ -54,85 +54,71 @@ and horizontally on the page:
 No footer, no navigation, no additional sections — this is a single-section
 search form widget.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Full-viewport search hero renders
+### Feature: SeekNova template behaviour
 
-```gherkin
-Given the user opens the SeekNova page
-Then a full-viewport container is visible
-  And the container has a photographic background image covering the viewport
-  And the content is centered both vertically and horizontally
-```
+#### Scenario: Full-viewport search hero renders
 
-### Scenario: Heading displays correctly
+- **GIVEN** the user opens the SeekNova page
+- **THEN** a full-viewport container is visible
+- **AND** the container has a photographic background image covering the viewport
+- **AND** the content is centered both vertically and horizontally
 
-```gherkin
-Given the user opens the SeekNova page
-Then a heading is visible with text "What are you looking for?"
-  And the heading is white, bold, and italic
-  And the heading uses the Poppins font at 36px / weight 800
-```
+#### Scenario: Heading displays correctly
 
-### Scenario: Search input renders with pill shape
+- **GIVEN** the user opens the SeekNova page
+- **THEN** a heading is visible with text "What are you looking for?"
+- **AND** the heading is white, bold, and italic
+- **AND** the heading uses the Poppins font at 36px / weight 800
 
-```gherkin
-Given the user opens the SeekNova page
-Then a text input is visible inside a white pill-shaped container
-  And the input has a border-radius of 34px (fully rounded)
-  And the input height is 70px on desktop viewports
-  And the input placeholder text is light gray (#cccccc)
-```
+#### Scenario: Search input renders with pill shape
 
-### Scenario: Search icon is visible inside input
+- **GIVEN** the user opens the SeekNova page
+- **THEN** a text input is visible inside a white pill-shaped container
+- **AND** the input has a border-radius of 34px (fully rounded)
+- **AND** the input height is 70px on desktop viewports
+- **AND** the input placeholder text is light gray (#cccccc)
 
-```gherkin
-Given the user opens the SeekNova page
-Then a magnifying-glass SVG icon is visible inside the search input
-  And the icon is positioned on the left side of the input
-  And the icon fill color is light gray (#cccccc)
-  And on hover the icon fill darkens to #666666
-```
+#### Scenario: Search icon is visible inside input
 
-### Scenario: User can type in the search input
+- **GIVEN** the user opens the SeekNova page
+- **THEN** a magnifying-glass SVG icon is visible inside the search input
+- **AND** the icon is positioned on the left side of the input
+- **AND** the icon fill color is light gray (#cccccc)
+- **AND** on hover the icon fill darkens to #666666
 
-```gherkin
-Given the user opens the SeekNova page
-When the user clicks the search input
-  And types "shoes"
-Then the input displays "shoes"
-  And the input text color is #666666
-```
+#### Scenario: User can type in the search input
 
-### Scenario: Category suggestion pills render
+- **GIVEN** the user opens the SeekNova page
+- **WHEN** the user clicks the search input
+- **AND** types "shoes"
+- **THEN** the input displays "shoes"
+- **AND** the input text color is #666666
 
-```gherkin
-Given the user opens the SeekNova page
-Then 5 suggestion pills are visible below the search input
-  And the pills read "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
-  And each pill has a dark semi-transparent background (rgba(0,0,0,0.6))
-  And each pill has white text in Helvetica at 14px
-  And each pill has a border-radius of 16px (pill-shaped)
-```
+#### Scenario: Category suggestion pills render
 
-### Scenario: Suggestion pills wrap on narrow viewports
+- **GIVEN** the user opens the SeekNova page
+- **THEN** 5 suggestion pills are visible below the search input
+- **AND** the pills read "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
+- **AND** each pill has a dark semi-transparent background (rgba(0,0,0,0.6))
+- **AND** each pill has white text in Helvetica at 14px
+- **AND** each pill has a border-radius of 16px (pill-shaped)
 
-```gherkin
-Given the user opens the SeekNova page on a mobile viewport (width < 768px)
-Then the search input height reduces to 50px
-  And the search icon size reduces to 26px
-  And the suggestion pills wrap to multiple rows if needed
-```
+#### Scenario: Suggestion pills wrap on narrow viewports
 
-### Scenario: Form submits on Enter
+- **GIVEN** the user opens the SeekNova page on a mobile viewport (width < 768px)
+- **THEN** the search input height reduces to 50px
+- **AND** the search icon size reduces to 26px
+- **AND** the suggestion pills wrap to multiple rows if needed
 
-```gherkin
-Given the user opens the SeekNova page
-When the user types "jacket" in the search input
-  And presses Enter
-Then the form submit event fires
-  And the search query is accessible
-```
+#### Scenario: Form submits on Enter
+
+- **GIVEN** the user opens the SeekNova page
+- **WHEN** the user types "jacket" in the search input
+- **AND** presses Enter
+- **THEN** the form submit event fires
+- **AND** the search query is accessible
 
 ## Verification Checklist
 

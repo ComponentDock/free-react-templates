@@ -46,76 +46,86 @@ original is a Bootstrap-based snippet for user onboarding flows.
 | Body text color                | `#4B4B4B`                     | Dark gray for body text                                          |
 | Input focus border             | `#B4BDE8`                     | Periwinkle blue on focus                                         |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: WizDeck — 3-Step Account Creation Wizard
 
-Scenario: Page loads with gradient background and centered card
-  Given the user opens the WizDeck page
-  Then a full-viewport gradient background should be visible (top: periwinkle blue #B4BDE8, bottom: lavender pink #E4B9E8)
-  And a white card with rounded corners (16px) should be centered horizontally
-  And the card should have a soft drop shadow
-  And a large semi-transparent white heading "TELL US ABOUT YOURSELF" should appear above the card on the gradient background
+#### Scenario: Page loads with gradient background and centered card
 
-Scenario: Step indicators show current progress
-  Given the page is loaded on step 1
-  Then 3 step indicator dots should be visible below the form card
-  And the first dot should be filled white (active)
-  And the second and third dots should be gray (#CCCCCC, inactive)
-  And clicking through steps should update which dot is active
+- **GIVEN** the user opens the WizDeck page
+- **THEN** a full-viewport gradient background should be visible (top: periwinkle blue #B4BDE8, bottom: lavender pink #E4B9E8)
+- **AND** a white card with rounded corners (16px) should be centered horizontally
+- **AND** the card should have a soft drop shadow
+- **AND** a large semi-transparent white heading "TELL US ABOUT YOURSELF" should appear above the card on the gradient background
 
-Scenario: Step 1 — Personal Information
-  Given the user is on step 1
-  Then a circular profile picture placeholder should be visible with a periwinkle blue border
-  And a "CHOOSE PICTURE" label with camera icon should appear below the circle
-  And form fields should include "FIRST NAME", "LAST NAME", "TEAM NAME", "EMAIL", and "CREATE A PASSWORD"
-  And each field should have a small circle indicator to its left (inactive: gray, active: pink #F0A0C8)
-  And the fields should be arranged in two columns for FIRST NAME / LAST NAME and TEAM NAME / EMAIL
-  And CREATE A PASSWORD should be full-width below
-  And a "CONTINUE →" pill button (periwinkle blue #B4BDE8 background, white text) should be visible at the bottom
+#### Scenario: Step indicators show current progress
 
-Scenario: Profile picture selection
-  Given the user is on step 1
-  And the profile picture placeholder is displayed
-  When the user clicks "CHOOSE PICTURE"
-  Then a file picker dialog should open
-  And upon selecting an image it should display within the circular frame
+- **GIVEN** the page is loaded on step 1
+- **THEN** 3 step indicator dots should be visible below the form card
+- **AND** the first dot should be filled white (active)
+- **AND** the second and third dots should be gray (#CCCCCC, inactive)
+- **AND** clicking through steps should update which dot is active
 
-Scenario: Step 2 — Additional Details
-  Given the user completes step 1 and clicks "CONTINUE →"
-  Then step 2 should become active
-  And the step indicator should update (first dot gray, second dot white)
-  And new form fields appropriate for a second onboarding step should be displayed
-  And a "CONTINUE →" button should be visible
+#### Scenario: Step 1 — Personal Information
 
-Scenario: Step 3 — Confirmation / Completion
-  Given the user completes step 2 and clicks "CONTINUE →"
-  Then step 3 should become active
-  And the step indicator should update (first and second dots gray, third dot white)
-  And a completion/confirmation view should be displayed
-  And a "SUBMIT" or "FINISH" button should be visible
+- **GIVEN** the user is on step 1
+- **THEN** a circular profile picture placeholder should be visible with a periwinkle blue border
+- **AND** a "CHOOSE PICTURE" label with camera icon should appear below the circle
+- **AND** form fields should include "FIRST NAME", "LAST NAME", "TEAM NAME", "EMAIL", and "CREATE A PASSWORD"
+- **AND** each field should have a small circle indicator to its left (inactive: gray, active: pink #F0A0C8)
+- **AND** the fields should be arranged in two columns for FIRST NAME / LAST NAME and TEAM NAME / EMAIL
+- **AND** CREATE A PASSWORD should be full-width below
+- **AND** a "CONTINUE →" pill button (periwinkle blue #B4BDE8 background, white text) should be visible at the bottom
 
-Scenario: Step navigation preserves entered data
-  Given the user has filled fields on step 1
-  When the user advances to step 2
-  And then navigates back to step 1
-  Then all previously entered field values should be preserved
+#### Scenario: Profile picture selection
 
-Scenario: Field focus styling
-  Given the user clicks on a form input field
-  Then the input border should change to periwinkle blue (#B4BDE8)
-  And the field's left indicator circle should turn pink (#F0A0C8)
+- **GIVEN** the user is on step 1
+- **AND** the profile picture placeholder is displayed
+- **WHEN** the user clicks "CHOOSE PICTURE"
+- **THEN** a file picker dialog should open
+- **AND** upon selecting an image it should display within the circular frame
 
-Scenario: Responsive layout on mobile
-  Given the user views the page on a viewport width less than 768px
-  Then the card should take full width with horizontal padding
-  And form fields should stack vertically (single column)
-  And the heading should remain centered above the card
+#### Scenario: Step 2 — Additional Details
 
-Scenario: Component Dock footer
-  Given the page is fully loaded
-  Then a footer should be present below the main content
-  And the footer should contain a link to "https://www.componentdock.com/" branded as "Component Dock"
+- **GIVEN** the user completes step 1 and clicks "CONTINUE →"
+- **THEN** step 2 should become active
+- **AND** the step indicator should update (first dot gray, second dot white)
+- **AND** new form fields appropriate for a second onboarding step should be displayed
+- **AND** a "CONTINUE →" button should be visible
+
+#### Scenario: Step 3 — Confirmation / Completion
+
+- **GIVEN** the user completes step 2 and clicks "CONTINUE →"
+- **THEN** step 3 should become active
+- **AND** the step indicator should update (first and second dots gray, third dot white)
+- **AND** a completion/confirmation view should be displayed
+- **AND** a "SUBMIT" or "FINISH" button should be visible
+
+#### Scenario: Step navigation preserves entered data
+
+- **GIVEN** the user has filled fields on step 1
+- **WHEN** the user advances to step 2
+- **AND** then navigates back to step 1
+- **THEN** all previously entered field values should be preserved
+
+#### Scenario: Field focus styling
+
+- **GIVEN** the user clicks on a form input field
+- **THEN** the input border should change to periwinkle blue (#B4BDE8)
+- **AND** the field's left indicator circle should turn pink (#F0A0C8)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user views the page on a viewport width less than 768px
+- **THEN** the card should take full width with horizontal padding
+- **AND** form fields should stack vertically (single column)
+- **AND** the heading should remain centered above the card
+
+#### Scenario: Component Dock footer
+
+- **GIVEN** the page is fully loaded
+- **THEN** a footer should be present below the main content
+- **AND** the footer should contain a link to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification checklist
 

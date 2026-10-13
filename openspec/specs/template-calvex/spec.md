@@ -86,111 +86,118 @@ portfolio gallery, skills progress bars, testimonials, and blog section.
   - **Footer top (Want To Work):** Logo + description + social icons (Twitter, Facebook, Pinterest, Globe, Instagram) + "Let's Talk" button + "Download CV" white outline button. Dark background.
   - **Footer bottom:** Copyright with Component Dock link + duplicate nav links (Home, Work, Service, Blog, Contact).
 
-## Gherkin Scenarios
+## Requirements
 
 ### Header
-```gherkin
-Scenario: Transparent header overlays hero
-  Given I view the page
-  Then the header is transparent and overlays the hero area
-  And I see the logo, nav links, and "Let's Talk" button
 
-Scenario: Nav has correct links
-  Given I view the header
-  Then the nav contains Home, Work, Service, Blog, Contact
-  And Blog has a dropdown with Blog, Blog Details, Elements
-```
+#### Scenario: Transparent header overlays hero
+
+- **GIVEN** I view the page
+- **THEN** the header is transparent and overlays the hero area
+- **AND** I see the logo, nav links, and "Let's Talk" button
+
+#### Scenario: Nav has correct links
+
+- **GIVEN** I view the header
+- **THEN** the nav contains Home, Work, Service, Blog, Contact
+- **AND** Blog has a dropdown with Blog, Blog Details, Elements
 
 ### Hero
-```gherkin
-Scenario: Hero displays name and role
-  Given I view the hero section
-  Then I see "My name is Calvin. Digital Product Designer"
-  And I see "Head of design at Calvino" subtitle
-  And I see a portrait image on the left
 
-Scenario: Hero has background image
-  Given I view the hero section
-  Then it has a full-width background image covering the area
-```
+#### Scenario: Hero displays name and role
+
+- **GIVEN** I view the hero section
+- **THEN** I see "My name is Calvin. Digital Product Designer"
+- **AND** I see "Head of design at Calvino" subtitle
+- **AND** I see a portrait image on the left
+
+#### Scenario: Hero has background image
+
+- **GIVEN** I view the hero section
+- **THEN** it has a full-width background image covering the area
 
 ### About Info Bar
-```gherkin
-Scenario: Info bar shows contact details
-  Given I view the info bar below the hero
-  Then I see "Design For" → "Web & Mobile"
-  And I see "Phone" → "+10 (67) 367-9034"
-  And I see "Drop your Message" → "calvino90@gmail.com"
-```
+
+#### Scenario: Info bar shows contact details
+
+- **GIVEN** I view the info bar below the hero
+- **THEN** I see "Design For" → "Web & Mobile"
+- **AND** I see "Phone" → "+10 (67) 367-9034"
+- **AND** I see "Drop your Message" → "calvino90@gmail.com"
 
 ### Services
-```gherkin
-Scenario: Services display in 2x2 grid
-  Given I view the services section
-  Then I see 4 service cards in a 2x2 grid
-  And each card has an icon, title "Strategy & Direction", and description
 
-Scenario: Services section has left-aligned title
-  Given I view the services section
-  Then I see "My Experties" left-aligned above the cards
-```
+#### Scenario: Services display in 2x2 grid
+
+- **GIVEN** I view the services section
+- **THEN** I see 4 service cards in a 2x2 grid
+- **AND** each card has an icon, title "Strategy & Direction", and description
+
+#### Scenario: Services section has left-aligned title
+
+- **GIVEN** I view the services section
+- **THEN** I see "My Experties" left-aligned above the cards
 
 ### Gallery
-```gherkin
-Scenario: Gallery shows portfolio items
-  Given I view the gallery section
-  Then I see 4 portfolio items in a 2x2 grid
-  And each item has a background image with hover overlay
 
-Scenario: Gallery has More Work button
-  Given I view the gallery section
-  Then I see an orange outline "More Work" button centered below
-```
+#### Scenario: Gallery shows portfolio items
+
+- **GIVEN** I view the gallery section
+- **THEN** I see 4 portfolio items in a 2x2 grid
+- **AND** each item has a background image with hover overlay
+
+#### Scenario: Gallery has More Work button
+
+- **GIVEN** I view the gallery section
+- **THEN** I see an orange outline "More Work" button centered below
 
 ### About Me
-```gherkin
-Scenario: About Me shows text and skills
-  Given I view the about section
-  Then I see "About Me" heading with paragraphs on the left
-  And 3 progress bars on the right: UI Design 60%, UX 89%, Illustration 95%
 
-Scenario: About Me has brand carousel below
-  Given I view the about section
-  Then I see a row of brand logos below the content
-```
+#### Scenario: About Me shows text and skills
+
+- **GIVEN** I view the about section
+- **THEN** I see "About Me" heading with paragraphs on the left
+- **AND** 3 progress bars on the right: UI Design 60%, UX 89%, Illustration 95%
+
+#### Scenario: About Me has brand carousel below
+
+- **GIVEN** I view the about section
+- **THEN** I see a row of brand logos below the content
 
 ### Testimonial
-```gherkin
-Scenario: Testimonial shows quote and author
-  Given I view the testimonial section
-  Then I see "Client Testimonial" centered heading
-  And a carousel with quote text and author "Jacson Miller" / "Designer @Colorlib"
-  And the background is warm white (#FFFBF9)
-```
+
+#### Scenario: Testimonial shows quote and author
+
+- **GIVEN** I view the testimonial section
+- **THEN** I see "Client Testimonial" centered heading
+- **AND** a carousel with quote text and author "Jacson Miller" / "Designer @Colorlib"
+- **AND** the background is warm white (#FFFBF9)
 
 ### Blog
-```gherkin
-Scenario: Blog shows latest news cards
-  Given I view the blog section
-  Then I see "Latest News" heading
-  And 3 blog cards with images, "Tips" badge, date/author, and title
 
-Scenario: Blog has purple-tinted background
-  Given I view the blog section
-  Then the background is #fbf9ff
-```
+#### Scenario: Blog shows latest news cards
+
+- **GIVEN** I view the blog section
+- **THEN** I see "Latest News" heading
+- **AND** 3 blog cards with images, "Tips" badge, date/author, and title
+
+#### Scenario: Blog has purple-tinted background
+
+- **GIVEN** I view the blog section
+- **THEN** the background is #fbf9ff
 
 ### Footer
-```gherkin
-Scenario: Footer has two parts
-  Given I view the footer
-  Then I see a top section with logo, social icons, and CTA buttons
-  And a bottom section with copyright and nav links
 
-Scenario: Footer copyright links Component Dock
-  Given I view the footer bottom
-  Then I see copyright linking to componentdock.com
-```
+#### Scenario: Footer has two parts
+
+- **GIVEN** I view the footer
+- **THEN** I see a top section with logo, social icons, and CTA buttons
+- **AND** a bottom section with copyright and nav links
+
+#### Scenario: Footer copyright links Component Dock
+
+- **GIVEN** I view the footer bottom
+- **THEN** I see copyright linking to componentdock.com
 
 ## Verification Checklist
 

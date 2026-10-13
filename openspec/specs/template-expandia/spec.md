@@ -15,7 +15,7 @@ Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 - **Typography**: Font family `"Poppins", Arial, sans-serif`
 - **Buttons / Radii**: Rounded container corners (`5px`), circular menu item thumbnails (`rounded-full`), circular icon highlight badges (`rounded-full`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Food Menu Accordion
 
@@ -23,22 +23,22 @@ As a visitor, I want to explore restaurant menu categories (Breakfast, Lunch, Di
 
 #### Scenario: Default state with Breakfast expanded
 
-- Given the user loads the Expandia template page
-- Then the "Our Specialties" header is displayed
-- And the accordion sections (Breakfast, Lunch, Dinner, Drink, Wine) are rendered
-- And the "Breakfast" section is expanded by default showing menu items (Grilled Beef with potatoes, etc.) with prices ($29) and circular item images
-- And all other sections are collapsed
+- **GIVEN** the user loads the Expandia template page
+- **THEN** the "Our Specialties" header is displayed
+- **AND** the accordion sections (Breakfast, Lunch, Dinner, Drink, Wine) are rendered
+- **AND** the "Breakfast" section is expanded by default showing menu items (Grilled Beef with potatoes, etc.) with prices ($29) and circular item images
+- **AND** all other sections are collapsed
 
 #### Scenario: Toggling accordion categories
 
-- Given the user clicks on the "Lunch" accordion header
-- Then the "Lunch" section expands to show lunch menu items
-- And the previously expanded "Breakfast" section collapses
+- **GIVEN** the user clicks on the "Lunch" accordion header
+- **THEN** the "Lunch" section expands to show lunch menu items
+- **AND** the previously expanded "Breakfast" section collapses
 
 #### Scenario: Footer attribution
 
-- Given the user scrolls to the bottom of the page
-- Then the footer displays a link to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** the footer displays a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

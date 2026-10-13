@@ -24,70 +24,97 @@ Recreation of ColorLib **Lingua** — a language learning school template.
 | Button radius | 3px (subtle rounded) |
 | Card border-radius | 3px |
 
-## Gherkin requirements
+## Requirements
 
 ### TopBar
+
+#### Scenario: TopBar
+
 - Scenario: TopBar displays phone and social icons
-  - Given the page loads
-  - When the TopBar is rendered
-  - Then it shows a phone number and social media icon links
-  - And its background is white with a bottom border
+- **GIVEN** the page loads
+- **WHEN** the TopBar is rendered
+- **THEN** it shows a phone number and social media icon links
+- **AND** its background is white with a bottom border
 
 ### Header
+
+#### Scenario: Header
+
 - Scenario: Header displays logo and search
-  - Given the page loads
-  - When the Header is rendered
-  - Then it shows a logo on the left and a search form on the right
+- **GIVEN** the page loads
+- **WHEN** the Header is rendered
+- **THEN** it shows a logo on the left and a search form on the right
 
 ### LanguageSlider
+
+#### Scenario: LanguageSlider
+
 - Scenario: LanguageSlider shows language flags in a carousel
-  - Given the page loads
-  - When the LanguageSlider section is visible
-  - Then it displays 8 language items in a horizontal carousel
-  - And each item shows a flag icon and language name
+- **GIVEN** the page loads
+- **WHEN** the LanguageSlider section is visible
+- **THEN** it displays 8 language items in a horizontal carousel
+- **AND** each item shows a flag icon and language name
 
 ### Courses
+
+#### Scenario: Courses
+
 - Scenario: Courses section shows 3 course cards
-  - Given the page loads
-  - When the Courses section is visible
-  - Then it displays 3 course cards in a row
-  - And each card has an image, title, info text, student count, rating, and a price badge
-  - And the price badge has brand-primary background (#2e21df)
+- **GIVEN** the page loads
+- **WHEN** the Courses section is visible
+- **THEN** it displays 3 course cards in a row
+- **AND** each card has an image, title, info text, student count, rating, and a price badge
+- **AND** the price badge has brand-primary background (#2e21df)
 
 ### Instructors
+
+#### Scenario: Instructors
+
 - Scenario: Instructors section shows instructor profiles
-  - Given the page loads
-  - When the Instructors section is visible
-  - Then it displays instructor cards in a grid
+- **GIVEN** the page loads
+- **WHEN** the Instructors section is visible
+- **THEN** it displays instructor cards in a grid
 
 ### Register
+
+#### Scenario: Register
+
 - Scenario: Register section shows CTA
-  - Given the page loads
-  - When the Register section is visible
-  - Then it shows a registration call-to-action
-  - And the section background is light gray (#f8f8f8)
+- **GIVEN** the page loads
+- **WHEN** the Register section is visible
+- **THEN** it shows a registration call-to-action
+- **AND** the section background is light gray (#f8f8f8)
 
 ### Events
+
+#### Scenario: Events
+
 - Scenario: Events section shows event cards
-  - Given the page loads
-  - When the Events section is visible
-  - Then it displays 3 event cards in a row
-  - And the section background is white
+- **GIVEN** the page loads
+- **WHEN** the Events section is visible
+- **THEN** it displays 3 event cards in a row
+- **AND** the section background is white
 
 ### Blog
+
+#### Scenario: Blog
+
 - Scenario: Blog section shows categories and featured post
-  - Given the page loads
-  - When the Blog section is visible
-  - Then it shows a left panel with 6 category tiles in a 3x2 grid
-  - And a right panel with a featured blog post (image, category, title, text)
+- **GIVEN** the page loads
+- **WHEN** the Blog section is visible
+- **THEN** it shows a left panel with 6 category tiles in a 3x2 grid
+- **AND** a right panel with a featured blog post (image, category, title, text)
 
 ### Footer
+
+#### Scenario: Footer
+
 - Scenario: Footer shows columns with newsletter and links
-  - Given the page loads
-  - When the Footer is rendered
-  - Then it shows 4 columns: logo+newsletter, two link columns, contact+social
-  - And the footer background is dark (#252525)
-  - And it contains a Component Dock link
+- **GIVEN** the page loads
+- **WHEN** the Footer is rendered
+- **THEN** it shows 4 columns: logo+newsletter, two link columns, contact+social
+- **AND** the footer background is dark (#252525)
+- **AND** it contains a Component Dock link
 
 ## Verification checklist
 

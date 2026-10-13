@@ -61,46 +61,51 @@ time of research — falling back to screenshot reference)
    (white on dark circles), progress bar/timeline with green accent,
    volume icon, timestamp (00:00 / 02:33).
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Opus — Music Band Website Template
 
   Background:
-    Given the Opus template is loaded in the browser
+- **GIVEN** the Opus template is loaded in the browser
 
-  Scenario: Navbar renders correctly
-    Then the navbar should display the logo (colored bars icon + "opus" text)
-    And the navbar should show navigation links: Home, Artists, Download Music, News, Contact
-    And the navbar should show a "Login / Register" link on the right
-    And the "Home" link should have an active indicator (green dot)
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays correctly
-    Then the hero should have a full-viewport dark navy/purple background
-    And the hero should display the headline "YOUR MUSIC."
-    And the word "MUSIC." in the headline should be lime green colored
-    And the hero should show two pill-shaped input fields labeled "Event" and "Tickets"
-    And the hero should show a lime green "GET YOUR TICKETS" pill button
-    And the hero should show a green circular chevron button
-    And the hero should show a pink "LIVE" circular badge
+- **THEN** the navbar should display the logo (colored bars icon + "opus" text)
+- **AND** the navbar should show navigation links: Home, Artists, Download Music, News, Contact
+- **AND** the navbar should show a "Login / Register" link on the right
+- **AND** the "Home" link should have an active indicator (green dot)
 
-  Scenario: Follow bar renders correctly
-    Then the follow bar should display the text "FOLLOW"
-    And the follow bar should show 5 circular social media icons
-    And the follow bar should display "SCROLL DOWN" text
+#### Scenario: Hero section displays correctly
 
-  Scenario: Song of the Week section renders correctly
-    Then the section should show a "SONG OF THE WEEK" green pill badge
-    And the section should display an artist photo thumbnail
-    And the section should show the artist name "MICHAEL SMITH"
-    And the section should show the song title "Better Days"
-    And the section should display audio player controls (play, pause, stop)
-    And the section should display a progress/timeline bar with green accent
-    And the section should show a volume icon
-    And the section should show timestamps (00:00 and 02:33)
+- **THEN** the hero should have a full-viewport dark navy/purple background
+- **AND** the hero should display the headline "YOUR MUSIC."
+- **AND** the word "MUSIC." in the headline should be lime green colored
+- **AND** the hero should show two pill-shaped input fields labeled "Event" and "Tickets"
+- **AND** the hero should show a lime green "GET YOUR TICKETS" pill button
+- **AND** the hero should show a green circular chevron button
+- **AND** the hero should show a pink "LIVE" circular badge
 
-  Scenario: Footer renders correctly
-    Then the footer should display a "Made with Component Dock" link
-    And the footer link should point to https://www.componentdock.com/
+#### Scenario: Follow bar renders correctly
+
+- **THEN** the follow bar should display the text "FOLLOW"
+- **AND** the follow bar should show 5 circular social media icons
+- **AND** the follow bar should display "SCROLL DOWN" text
+
+#### Scenario: Song of the Week section renders correctly
+
+- **THEN** the section should show a "SONG OF THE WEEK" green pill badge
+- **AND** the section should display an artist photo thumbnail
+- **AND** the section should show the artist name "MICHAEL SMITH"
+- **AND** the section should show the song title "Better Days"
+- **AND** the section should display audio player controls (play, pause, stop)
+- **AND** the section should display a progress/timeline bar with green accent
+- **AND** the section should show a volume icon
+- **AND** the section should show timestamps (00:00 and 02:33)
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer should display a "Made with Component Dock" link
+- **AND** the footer link should point to https://www.componentdock.com/
 
 ## Verification Checklist
 

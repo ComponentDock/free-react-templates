@@ -47,123 +47,129 @@ Extracted from the live preview's `css/style.css`:
 7. **Contact** — Dark section with "Contact" heading, form fields (name, email, subject, message) with bottom-border-only style, "Send Message" button, heading underline in brand color.
 8. **Footer** — Copyright line, "Made with Component Dock" link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Sidebar
-```gherkin
+
 Feature: Sidebar Navigation
 
-  Scenario: Desktop sidebar displays logo and nav links
-    Given the viewport is wider than 992px
-    Then a fixed left sidebar of 250px width is visible
-    And the site logo text is "DARKFRAME"
-    And nav links "Home", "Photos", "Biography", "Blog", "Contact" are listed vertically
-    And social media icons (Facebook, Twitter, Instagram) are below the nav
+#### Scenario: Desktop sidebar displays logo and nav links
 
-  Scenario: Active nav link is highlighted in brand color
-    Given the user is viewing the Home section
-    Then the "Home" nav link text color is #df0e62
+- **GIVEN** the viewport is wider than 992px
+- **THEN** a fixed left sidebar of 250px width is visible
+- **AND** the site logo text is "DARKFRAME"
+- **AND** nav links "Home", "Photos", "Biography", "Blog", "Contact" are listed vertically
+- **AND** social media icons (Facebook, Twitter, Instagram) are below the nav
 
-  Scenario: Mobile collapses sidebar to top bar
-    Given the viewport is narrower than 992px
-    Then the sidebar becomes a 70px-tall top bar
-    And nav links are displayed horizontally
-```
+#### Scenario: Active nav link is highlighted in brand color
+
+- **GIVEN** the user is viewing the Home section
+- **THEN** the "Home" nav link text color is #df0e62
+
+#### Scenario: Mobile collapses sidebar to top bar
+
+- **GIVEN** the viewport is narrower than 992px
+- **THEN** the sidebar becomes a 70px-tall top bar
+- **AND** nav links are displayed horizontally
 
 ### Hero
-```gherkin
+
 Feature: Hero Section
 
-  Scenario: Full-viewport hero with background image
-    Given the user is on the home page
-    Then a full-viewport-height hero section is displayed
-    And a dark overlay covers the background image
-    And the heading "WELCOME" is centered in Oswald font at 4rem
-    And a paragraph of introductory text is below the heading
-    And a pill-shaped "CONTACT ME" button in brand color is centered below the text
+#### Scenario: Full-viewport hero with background image
 
-  Scenario: Hero is responsive
-    Given the viewport is narrower than 768px
-    Then the hero heading font size reduces to 2.5rem
-```
+- **GIVEN** the user is on the home page
+- **THEN** a full-viewport-height hero section is displayed
+- **AND** a dark overlay covers the background image
+- **AND** the heading "WELCOME" is centered in Oswald font at 4rem
+- **AND** a paragraph of introductory text is below the heading
+- **AND** a pill-shaped "CONTACT ME" button in brand color is centered below the text
+
+#### Scenario: Hero is responsive
+
+- **GIVEN** the viewport is narrower than 768px
+- **THEN** the hero heading font size reduces to 2.5rem
 
 ### Photo Grid
-```gherkin
+
 Feature: Photo Grid
 
-  Scenario: 3-column photo grid
-    Given the user scrolls to the photos section
-    Then 12 photos are displayed in a 3-column grid
-    And each photo has object-fit cover at 300px height
+#### Scenario: 3-column photo grid
 
-  Scenario: Photo hover overlay
-    Given the user hovers over a photo
-    Then a dark overlay fades in over the photo
-    And a heading and meta text appear centered on the photo
-```
+- **GIVEN** the user scrolls to the photos section
+- **THEN** 12 photos are displayed in a 3-column grid
+- **AND** each photo has object-fit cover at 300px height
+
+#### Scenario: Photo hover overlay
+
+- **GIVEN** the user hovers over a photo
+- **THEN** a dark overlay fades in over the photo
+- **AND** a heading and meta text appear centered on the photo
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials Slider
 
-  Scenario: Testimonial carousel displays quotes
-    Given the user scrolls to the testimonials section
-    Then at least 2 testimonial slides are present
-    And each slide shows a quote, person name, and role
+#### Scenario: Testimonial carousel displays quotes
 
-  Scenario: Active dot is brand-colored
-    Given the testimonials slider is visible
-    Then the active dot indicator is #df0e62
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** at least 2 testimonial slides are present
+- **AND** each slide shows a quote, person name, and role
+
+#### Scenario: Active dot is brand-colored
+
+- **GIVEN** the testimonials slider is visible
+- **THEN** the active dot indicator is #df0e62
 
 ### Biography
-```gherkin
+
 Feature: Biography Section
 
-  Scenario: Biography with accent bar
-    Given the user scrolls to the biography section
-    Then the section background is #1a1a1a
-    And a 4px brand-color accent bar appears at the top-left
+#### Scenario: Biography with accent bar
 
-  Scenario: Biography content layout
-    Given the biography section is visible
-    Then a photo of the photographer is displayed
-    And the heading reads "Hi I'm [Name]"
-    And a subtitle reads "Photographer for 10 years"
-    And a skills check-list is shown with brand-colored check icons
-```
+- **GIVEN** the user scrolls to the biography section
+- **THEN** the section background is #1a1a1a
+- **AND** a 4px brand-color accent bar appears at the top-left
+
+#### Scenario: Biography content layout
+
+- **GIVEN** the biography section is visible
+- **THEN** a photo of the photographer is displayed
+- **AND** the heading reads "Hi I'm [Name]"
+- **AND** a subtitle reads "Photographer for 10 years"
+- **AND** a skills check-list is shown with brand-colored check icons
 
 ### Blog
-```gherkin
+
 Feature: Blog Section
 
-  Scenario: Blog card grid
-    Given the user scrolls to the blog section
-    Then 4 blog cards are displayed
-    And each card has an image, heading, date meta, and excerpt paragraph
-```
+#### Scenario: Blog card grid
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 4 blog cards are displayed
+- **AND** each card has an image, heading, date meta, and excerpt paragraph
 
 ### Contact
-```gherkin
+
 Feature: Contact Form
 
-  Scenario: Contact form with styled inputs
-    Given the user scrolls to the contact section
-    Then a "Contact" heading is displayed with a brand-color underline
-    And form fields for name, email, subject, and message are shown
-    And inputs have bottom-border-only styling (no box border)
-    And a "Send Message" button is below the form
-```
+#### Scenario: Contact form with styled inputs
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a "Contact" heading is displayed with a brand-color underline
+- **AND** form fields for name, email, subject, and message are shown
+- **AND** inputs have bottom-border-only styling (no box border)
+- **AND** a "Send Message" button is below the form
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Footer attribution
-    Given the user scrolls to the bottom
-    Then a copyright line is displayed
-    And a "Made with Component Dock" link points to https://www.componentdock.com/
-```
+#### Scenario: Footer attribution
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a copyright line is displayed
+- **AND** a "Made with Component Dock" link points to https://www.componentdock.com/
 
 ## Verification Checklist
 

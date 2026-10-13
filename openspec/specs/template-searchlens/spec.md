@@ -57,126 +57,134 @@ arranged horizontally:
 On mobile (≤767px), the form wraps: all three sections stack vertically at
 full width with spacing between them. The form gets internal padding.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Section: Page layout
 
-```gherkin
 Feature: Page layout
-  Scenario: Full viewport background
-    Given the page loads
-    Then the page has a full-viewport background image
-    And the background covers the entire viewport
-    And the background is centered
 
-  Scenario: Centered form
-    Given the page loads
-    Then a search form is centered on the page
-    And the form has a max-width of approximately 940px
-    And the form contains three sections arranged horizontally
-```
+#### Scenario: Full viewport background
+
+- **GIVEN** the page loads
+- **THEN** the page has a full-viewport background image
+- **AND** the background covers the entire viewport
+- **AND** the background is centered
+
+#### Scenario: Centered form
+
+- **GIVEN** the page loads
+- **THEN** a search form is centered on the page
+- **AND** the form has a max-width of approximately 940px
+- **AND** the form contains three sections arranged horizontally
 
 ### Section: Text input
 
-```gherkin
 Feature: Text input
-  Scenario: Default state
-    Given the page loads
-    Then the left section contains a text input
-    And the input has a white background
-    And the input has a light gray border (#e5e5e5)
-    And the input has no right border (connects to category)
-    And the placeholder text is "What are you looking for?" in gray (#9a9a9a)
-    And the input height is approximately 68px
-    And the input takes up the remaining horizontal space
 
-  Scenario: Focus state
-    Given the user clicks on the text input
-    Then the input receives focus
-    And no outline or shadow appears
-```
+#### Scenario: Default state
+
+- **GIVEN** the page loads
+- **THEN** the left section contains a text input
+- **AND** the input has a white background
+- **AND** the input has a light gray border (#e5e5e5)
+- **AND** the input has no right border (connects to category)
+- **AND** the placeholder text is "What are you looking for?" in gray (#9a9a9a)
+- **AND** the input height is approximately 68px
+- **AND** the input takes up the remaining horizontal space
+
+#### Scenario: Focus state
+
+- **GIVEN** the user clicks on the text input
+- **THEN** the input receives focus
+- **AND** no outline or shadow appears
 
 ### Section: Category dropdown
 
-```gherkin
 Feature: Category dropdown
-  Scenario: Default state
-    Given the page loads
-    Then the middle section contains a category dropdown
-    And the dropdown shows "CATEGORY" as the default option
-    And the dropdown has a light gray background (#f9f9f9)
-    And the dropdown has a border (#e5e5e5)
-    And a chevron-down icon is visible on the right side
-    And the dropdown minimum width is approximately 260px
 
-  Scenario: Open dropdown
-    Given the user clicks on the category dropdown
-    Then the dropdown options are displayed
-    And the options include "Subject A", "Subject B", "Subject C"
-    And the chevron icon changes direction (points up)
+#### Scenario: Default state
 
-  Scenario: Select option
-    Given the dropdown is open
-    When the user selects an option
-    Then the dropdown closes
-    And the selected option text is displayed
-```
+- **GIVEN** the page loads
+- **THEN** the middle section contains a category dropdown
+- **AND** the dropdown shows "CATEGORY" as the default option
+- **AND** the dropdown has a light gray background (#f9f9f9)
+- **AND** the dropdown has a border (#e5e5e5)
+- **AND** a chevron-down icon is visible on the right side
+- **AND** the dropdown minimum width is approximately 260px
+
+#### Scenario: Open dropdown
+
+- **GIVEN** the user clicks on the category dropdown
+- **THEN** the dropdown options are displayed
+- **AND** the options include "Subject A", "Subject B", "Subject C"
+- **AND** the chevron icon changes direction (points up)
+
+#### Scenario: Select option
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user selects an option
+- **THEN** the dropdown closes
+- **AND** the selected option text is displayed
 
 ### Section: Search button
 
-```gherkin
 Feature: Search button
-  Scenario: Default state
-    Given the page loads
-    Then a blue SEARCH button is displayed on the right
-    And the button background is #4272d7
-    And the button text is white and uppercase
-    And the button text reads "SEARCH"
-    And the button width is approximately 164px
 
-  Scenario: Hover state
-    Given the user hovers over the SEARCH button
-    Then the button background darkens to #2d62d3
-    And the transition is smooth (~0.2s)
+#### Scenario: Default state
 
-  Scenario: Click
-    Given the user clicks the SEARCH button
-    Then the form submits (or triggers search action)
-```
+- **GIVEN** the page loads
+- **THEN** a blue SEARCH button is displayed on the right
+- **AND** the button background is #4272d7
+- **AND** the button text is white and uppercase
+- **AND** the button text reads "SEARCH"
+- **AND** the button width is approximately 164px
+
+#### Scenario: Hover state
+
+- **GIVEN** the user hovers over the SEARCH button
+- **THEN** the button background darkens to #2d62d3
+- **AND** the transition is smooth (~0.2s)
+
+#### Scenario: Click
+
+- **GIVEN** the user clicks the SEARCH button
+- **THEN** the form submits (or triggers search action)
 
 ### Section: Responsive behavior
 
-```gherkin
 Feature: Responsive behavior
-  Scenario: Tablet layout
-    Given the page is viewed on a screen narrower than 993px
-    Then the input field height reduces to approximately 60px
 
-  Scenario: Mobile layout
-    Given the page is viewed on a screen narrower than 768px
-    Then the form sections stack vertically
-    And each section takes full width
-    And the form has internal padding (20px)
-    And there is spacing between the stacked sections
-```
+#### Scenario: Tablet layout
+
+- **GIVEN** the page is viewed on a screen narrower than 993px
+- **THEN** the input field height reduces to approximately 60px
+
+#### Scenario: Mobile layout
+
+- **GIVEN** the page is viewed on a screen narrower than 768px
+- **THEN** the form sections stack vertically
+- **AND** each section takes full width
+- **AND** the form has internal padding (20px)
+- **AND** there is spacing between the stacked sections
 
 ### Section: Accessibility
 
-```gherkin
 Feature: Accessibility
-  Scenario: Keyboard navigation
-    Given the page loads
-    Then the text input is focusable via keyboard
-    And the category dropdown is focusable via keyboard
-    And the SEARCH button is focusable via keyboard
-    And focus-visible styling is applied
 
-  Scenario: Screen reader support
-    Given the page loads
-    Then the text input has an appropriate aria-label
-    The category dropdown has an accessible label
-    And the SEARCH button has an accessible label
-```
+#### Scenario: Keyboard navigation
+
+- **GIVEN** the page loads
+- **THEN** the text input is focusable via keyboard
+- **AND** the category dropdown is focusable via keyboard
+- **AND** the SEARCH button is focusable via keyboard
+- **AND** focus-visible styling is applied
+
+#### Scenario: Screen reader support
+
+- **GIVEN** the page loads
+- **THEN** the text input has an appropriate aria-label
+The category dropdown has an accessible label
+- **AND** the SEARCH button has an accessible label
 
 ## Verification checklist
 

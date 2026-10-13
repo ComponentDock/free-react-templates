@@ -35,49 +35,55 @@ carousel, search package form, blog cards, and a multi-column footer.
 8. **Blog** — "From our Blog" heading, 3 blog cards with image, title, date, comment count, excerpt
 9. **Footer** — 4 columns (About, Navigation, Newsletter, InstaFeed), copyright bar with Component Dock link
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Dune template behaviour
+
 Feature: Dune travel landing page
 
-  Scenario: Page renders all sections
-    Given the app loads
-    Then the navbar is visible with logo "Dune"
-    And the hero section displays "Travel More To Discover Yourself"
-    And the services section shows 3 service cards
-    And the about section has an image and text
-    And the tours section shows 4 tour cards
-    And the testimonials section shows client reviews
-    And the search package form is present
-    And the blog section shows 3 articles
-    And the footer links to Component Dock
+#### Scenario: Page renders all sections
 
-  Scenario: Navigation links work
-    Given the navbar is visible
-    When I click "About"
-    Then the page scrolls to the about section
+- **GIVEN** the app loads
+- **THEN** the navbar is visible with logo "Dune"
+- **AND** the hero section displays "Travel More To Discover Yourself"
+- **AND** the services section shows 3 service cards
+- **AND** the about section has an image and text
+- **AND** the tours section shows 4 tour cards
+- **AND** the testimonials section shows client reviews
+- **AND** the search package form is present
+- **AND** the blog section shows 3 articles
+- **AND** the footer links to Component Dock
 
-  Scenario: Mobile menu toggles
-    Given the viewport is mobile
-    When I click the menu button
-    Then the mobile menu opens
-    And I see all navigation links
+#### Scenario: Navigation links work
 
-  Scenario: Search form submission
-    Given the search package form is visible
-    When I fill in the search field
-    And I select a category
-    And I click "Search Package"
-    Then the form does not reload the page
+- **GIVEN** the navbar is visible
+- **WHEN** I click "About"
+- **THEN** the page scrolls to the about section
 
-  Scenario: Newsletter subscription
-    Given the footer newsletter form is visible
-    When I enter a valid email
-    And I click subscribe
-    Then a success message appears
+#### Scenario: Mobile menu toggles
 
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then the copyright mentions "Component Dock"
-    And the link points to https://www.componentdock.com/
-```
+- **GIVEN** the viewport is mobile
+- **WHEN** I click the menu button
+- **THEN** the mobile menu opens
+- **AND** I see all navigation links
+
+#### Scenario: Search form submission
+
+- **GIVEN** the search package form is visible
+- **WHEN** I fill in the search field
+- **AND** I select a category
+- **AND** I click "Search Package"
+- **THEN** the form does not reload the page
+
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the footer newsletter form is visible
+- **WHEN** I enter a valid email
+- **AND** I click subscribe
+- **THEN** a success message appears
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** the copyright mentions "Component Dock"
+- **AND** the link points to https://www.componentdock.com/

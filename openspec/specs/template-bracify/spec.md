@@ -42,72 +42,82 @@ Extracted from `css/style.css` on the ColorLib preview:
 8. **Contact** — Light background (`#f4f5f9`). Section heading "Get In Touch" / "Contact Us". Left column = contact form (first name, last name, email, message, submit button); right column = heading + descriptive text.
 9. **Footer** — Dark background (`#333333`). Two rows: top = About Us text + Features links + Newsletter form + Follow Us social icons; bottom = copyright line.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Bracify template behaviour
+
 Feature: Bracify dental clinic website
 
-  Scenario: Page loads with all sections
-    Given the user visits the Bracify homepage
-    Then the page displays 9 sections in order: Navbar, Hero, Services, About, Team, Testimonials, Blog, Contact, Footer
+#### Scenario: Page loads with all sections
 
-  Scenario: Navbar displays correctly
-    Given the user sees the Navbar
-    Then it shows the logo "Bracify" with brand color accent
-    And it displays navigation links: Home, Services, About, Doctors, Testimonials, Blog, Contact
-    And it becomes sticky on scroll
-    And a hamburger menu appears on mobile
+- **GIVEN** the user visits the Bracify homepage
+- **THEN** the page displays 9 sections in order: Navbar, Hero, Services, About, Team, Testimonials, Blog, Contact, Footer
 
-  Scenario: Hero section renders
-    Given the user sees the Hero section
-    Then it shows a heading "We Care For Your Smile"
-    And it shows descriptive subtext
-    And it shows a "Contact Us" button with brand color background
-    And the section has a background image
+#### Scenario: Navbar displays correctly
 
-  Scenario: Services section shows 6 service cards
-    Given the user scrolls to the Services section
-    Then 6 service cards are displayed in a 3-column grid on desktop
-    And each card has an icon, a title, and a description paragraph
-    And the services are: Tooth Extraction, Tooth Fillings, Braces Install, Children Clinic, Tooth Cleaning, Patient Records
+- **GIVEN** the user sees the Navbar
+- **THEN** it shows the logo "Bracify" with brand color accent
+- **AND** it displays navigation links: Home, Services, About, Doctors, Testimonials, Blog, Contact
+- **AND** it becomes sticky on scroll
+- **AND** a hamburger menu appears on mobile
 
-  Scenario: About section displays stats
-    Given the user scrolls to the About section
-    Then the section has a gradient background (#51eaea to #499bea)
-    And a video embed placeholder is centered
-    And 4 stat counters are shown: 8+ Years, 15+ Doctors, 320+ Sections, 1500+ Happy Smiles
+#### Scenario: Hero section renders
 
-  Scenario: Team section shows doctor cards
-    Given the user scrolls to the Team section
-    Then 3 team member cards are displayed in a row on desktop
-    And each card shows a circular photo, name, role, short bio, and social icon buttons
+- **GIVEN** the user sees the Hero section
+- **THEN** it shows a heading "We Care For Your Smile"
+- **AND** it shows descriptive subtext
+- **AND** it shows a "Contact Us" button with brand color background
+- **AND** the section has a background image
 
-  Scenario: Testimonials carousel works
-    Given the user scrolls to the Testimonials section
-    Then testimonial cards are displayed with quote text, avatar, and name
-    And the section has a light background
+#### Scenario: Services section shows 6 service cards
 
-  Scenario: Blog section shows posts
-    Given the user scrolls to the Blog section
-    Then 1 featured post is displayed on the left with large image, title, date, author, excerpt, and Read More link
-    And 4 list-style post entries are displayed on the right
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service cards are displayed in a 3-column grid on desktop
+- **AND** each card has an icon, a title, and a description paragraph
+- **AND** the services are: Tooth Extraction, Tooth Fillings, Braces Install, Children Clinic, Tooth Cleaning, Patient Records
 
-  Scenario: Contact form renders
-    Given the user scrolls to the Contact section
-    Then a contact form is displayed with fields: First Name, Last Name, Email, Message
-    And a "Send Message" submit button is present
-    And the right column shows descriptive text
+#### Scenario: About section displays stats
 
-  Scenario: Footer renders with newsletter and social links
-    Given the user scrolls to the Footer
-    Then the section has a dark background (#333333)
-    And it shows an About Us description
-    And it shows a Features link list
-    And it shows a Newsletter subscription form
-    And it shows social media icon links (Facebook, Twitter, Instagram, LinkedIn)
-    And it shows a copyright line
-    And the footer links to Component Dock (https://www.componentdock.com/)
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** the section has a gradient background (#51eaea to #499bea)
+- **AND** a video embed placeholder is centered
+- **AND** 4 stat counters are shown: 8+ Years, 15+ Doctors, 320+ Sections, 1500+ Happy Smiles
+
+#### Scenario: Team section shows doctor cards
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** 3 team member cards are displayed in a row on desktop
+- **AND** each card shows a circular photo, name, role, short bio, and social icon buttons
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** testimonial cards are displayed with quote text, avatar, and name
+- **AND** the section has a light background
+
+#### Scenario: Blog section shows posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 1 featured post is displayed on the left with large image, title, date, author, excerpt, and Read More link
+- **AND** 4 list-style post entries are displayed on the right
+
+#### Scenario: Contact form renders
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a contact form is displayed with fields: First Name, Last Name, Email, Message
+- **AND** a "Send Message" submit button is present
+- **AND** the right column shows descriptive text
+
+#### Scenario: Footer renders with newsletter and social links
+
+- **GIVEN** the user scrolls to the Footer
+- **THEN** the section has a dark background (#333333)
+- **AND** it shows an About Us description
+- **AND** it shows a Features link list
+- **AND** it shows a Newsletter subscription form
+- **AND** it shows social media icon links (Facebook, Twitter, Instagram, LinkedIn)
+- **AND** it shows a copyright line
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
 
 ## Verification Checklist
 

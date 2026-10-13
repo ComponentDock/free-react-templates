@@ -43,106 +43,90 @@ Extracted from the live preview stylesheet (`css/style.css`):
 
 The preview shows a single-column centered layout on a light gray (#fafafa) background. A centered "Accordion #05" heading sits above a white card container with a subtle box-shadow. Each accordion card has a 60×60px teal (#75d6d1) icon square on the left with a white Ionicons icon, a category title (e.g. "Manage", "Location", "Hobbies"), and a chevron arrow on the right. When expanded, the content area turns solid teal with white text — either a numbered list of sub-items (e.g. "01 Account", "02 Settings") or a text paragraph. The overall feel is clean, minimal, and modern with flat styling (no border-radius).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with centered heading
+### Feature: Reedfold template behaviour
 
-```gherkin
-Given the page loads
-When the user views the template
-Then a centered heading "Accordion #05" is displayed
-And the heading has font-size 28px and color black
-And the page background is light gray (#fafafa)
-```
+#### Scenario: Page renders with centered heading
 
-### Scenario: Accordion container is styled correctly
+- **GIVEN** the page loads
+- **WHEN** the user views the template
+- **THEN** a centered heading "Accordion #05" is displayed
+- **AND** the heading has font-size 28px and color black
+- **AND** the page background is light gray (#fafafa)
 
-```gherkin
-Given the page loads
-When the user views the accordion container
-Then it has a white background
-And a subtle box-shadow (0px 10px 29px -16px rgba(0,0,0,0.12))
-And sharp corners (border-radius: 0)
-And is centered within the layout
-```
+#### Scenario: Accordion container is styled correctly
 
-### Scenario: Accordion cards display headers with icons
+- **GIVEN** the page loads
+- **WHEN** the user views the accordion container
+- **THEN** it has a white background
+- **AND** a subtle box-shadow (0px 10px 29px -16px rgba(0,0,0,0.12))
+- **AND** sharp corners (border-radius: 0)
+- **AND** is centered within the layout
 
-```gherkin
-Given the page loads
-When the user views any accordion card header
-Then a 60×60px teal (#75d6d1) icon square is displayed on the left
-And a category title is displayed next to the icon
-And a chevron arrow is displayed on the right
-And the header button spans full width
-And the header has a subtle bottom border (1px solid rgba(0,0,0,0.05))
-```
+#### Scenario: Accordion cards display headers with icons
 
-### Scenario: First accordion card is expanded by default
+- **GIVEN** the page loads
+- **WHEN** the user views any accordion card header
+- **THEN** a 60×60px teal (#75d6d1) icon square is displayed on the left
+- **AND** a category title is displayed next to the icon
+- **AND** a chevron arrow is displayed on the right
+- **AND** the header button spans full width
+- **AND** the header has a subtle bottom border (1px solid rgba(0,0,0,0.05))
 
-```gherkin
-Given the page loads
-When the user views the accordion
-Then the first card ("Manage") is expanded
-And its content area has a teal (#75d6d1) background
-And its chevron icon is teal-colored
-And the content shows a numbered list (01 Account, 02 Settings, 03 Profile)
-And each list item has a forward arrow icon
-```
+#### Scenario: First accordion card is expanded by default
 
-### Scenario: Clicking a collapsed card expands it
+- **GIVEN** the page loads
+- **WHEN** the user views the accordion
+- **THEN** the first card ("Manage") is expanded
+- **AND** its content area has a teal (#75d6d1) background
+- **AND** its chevron icon is teal-colored
+- **AND** the content shows a numbered list (01 Account, 02 Settings, 03 Profile)
+- **AND** each list item has a forward arrow icon
 
-```gherkin
-Given the accordion is loaded with the first card expanded
-When the user clicks the second card header ("Location")
-Then the second card expands with a smooth transition
-And the second card's content area shows a paragraph of text
-And the second card's chevron becomes teal-colored
-And the first card collapses
-```
+#### Scenario: Clicking a collapsed card expands it
 
-### Scenario: Clicking an expanded card collapses it
+- **GIVEN** the accordion is loaded with the first card expanded
+- **WHEN** the user clicks the second card header ("Location")
+- **THEN** the second card expands with a smooth transition
+- **AND** the second card's content area shows a paragraph of text
+- **AND** the second card's chevron becomes teal-colored
+- **AND** the first card collapses
 
-```gherkin
-Given the first card ("Manage") is expanded
-When the user clicks the "Manage" card header
-Then the card collapses
-And its content area is hidden
-And the chevron reverts to gray (rgba(0,0,0,0.3))
-```
+#### Scenario: Clicking an expanded card collapses it
 
-### Scenario: Card-body list items have correct styling
+- **GIVEN** the first card ("Manage") is expanded
+- **WHEN** the user clicks the "Manage" card header
+- **THEN** the card collapses
+- **AND** its content area is hidden
+- **AND** the chevron reverts to gray (rgba(0,0,0,0.3))
 
-```gherkin
-Given a card with a list (e.g. "Manage" or "Hobbies")
-When the card is expanded
-Then each list item has white text (80% opacity)
-And list items are separated by white border lines (25.5% opacity)
-And list items have 15px 30px padding
-And the numbered spans are dimmer (50% opacity white)
-And forward arrow icons are white (80% opacity)
-```
+#### Scenario: Card-body list items have correct styling
 
-### Scenario: Accordion is single-expand (only one open at a time)
+- **GIVEN** a card with a list (e.g. "Manage" or "Hobbies")
+- **WHEN** the card is expanded
+- **THEN** each list item has white text (80% opacity)
+- **AND** list items are separated by white border lines (25.5% opacity)
+- **AND** list items have 15px 30px padding
+- **AND** the numbered spans are dimmer (50% opacity white)
+- **AND** forward arrow icons are white (80% opacity)
 
-```gherkin
-Given two accordion cards are present
-When the user opens the first card
-And then opens the second card
-Then only the second card remains open
-And the first card is collapsed
-```
+#### Scenario: Accordion is single-expand (only one open at a time)
 
-### Scenario: Responsive layout
+- **GIVEN** two accordion cards are present
+- **WHEN** the user opens the first card
+- **AND** then opens the second card
+- **THEN** only the second card remains open
+- **AND** the first card is collapsed
 
-```gherkin
-Given the page loads on a mobile device
-When the user views the accordion
-Then the accordion remains centered
-And the icon boxes scale appropriately
-And list item text remains readable
-And touch targets are at least 44px
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the page loads on a mobile device
+- **WHEN** the user views the accordion
+- **THEN** the accordion remains centered
+- **AND** the icon boxes scale appropriately
+- **AND** list item text remains readable
+- **AND** touch targets are at least 44px
 
 ## Verification Checklist
 

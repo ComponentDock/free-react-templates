@@ -50,165 +50,173 @@ Recreation of ColorLib **Tattooz** — a dark, moody tattoo parlor website templ
 11. **Footer** — 4-column: About Us (text + contact), Working Time (schedule), Short Links (nav), Instagram (8-image grid)
 12. **Footer Bottom** — brand orange background, copyright text left, social icons right
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Sticky header with logo and navigation
-    Given the user visits the Inkcraft homepage
-    Then the header displays a logo on the left
-    And navigation links for "Home", "Service", "Pages", "Blog", "Shop", "Team", "Contact" are visible
-    And a cart icon and search icon appear on the right
 
-  Scenario: Sticky behavior on scroll
-    Given the user scrolls down the page
-    Then the header remains fixed at the top of the viewport
-```
+#### Scenario: Sticky header with logo and navigation
+
+- **GIVEN** the user visits the Inkcraft homepage
+- **THEN** the header displays a logo on the left
+- **AND** navigation links for "Home", "Service", "Pages", "Blog", "Shop", "Team", "Contact" are visible
+- **AND** a cart icon and search icon appear on the right
+
+#### Scenario: Sticky behavior on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the header remains fixed at the top of the viewport
 
 ### Hero Slider
 
-```gherkin
 Feature: Hero Slider
-  Scenario: Display hero banner with CTA
-    Given the homepage loads
-    Then a full-width hero banner is displayed with a dark overlay
-    And the heading text "We Provide Forever." is visible
-    And a "Book Now" button with white background is shown
 
-  Scenario: Hero button hover
-    Given the user hovers over the "Book Now" button
-    Then the button background changes to brand orange (#fb9902)
-    And the text becomes white
-```
+#### Scenario: Display hero banner with CTA
+
+- **GIVEN** the homepage loads
+- **THEN** a full-width hero banner is displayed with a dark overlay
+- **AND** the heading text "We Provide Forever." is visible
+- **AND** a "Book Now" button with white background is shown
+
+#### Scenario: Hero button hover
+
+- **GIVEN** the user hovers over the "Book Now" button
+- **THEN** the button background changes to brand orange (#fb9902)
+- **AND** the text becomes white
 
 ### About Us
 
-```gherkin
 Feature: About Us Section
-  Scenario: Display about section
-    Given the user scrolls to the About Us section
-    Then the section title "About Us" is centered
-    And a heading "Our Tattoos Last Longer Than Most Marriages." is displayed
-    And two images are shown on the right side in a grid
-    And a "View All" link is visible
 
-  Scenario: About section uses dark-1 background
-    Given the About Us section renders
-    Then the background is #0d0f11
-```
+#### Scenario: Display about section
+
+- **GIVEN** the user scrolls to the About Us section
+- **THEN** the section title "About Us" is centered
+- **AND** a heading "Our Tattoos Last Longer Than Most Marriages." is displayed
+- **AND** two images are shown on the right side in a grid
+- **AND** a "View All" link is visible
+
+#### Scenario: About section uses dark-1 background
+
+- **GIVEN** the About Us section renders
+- **THEN** the background is #0d0f11
 
 ### What We Do
 
-```gherkin
 Feature: What We Do Section
-  Scenario: Display six services
-    Given the user scrolls to the What We Do section
-    Then the section title "What We Do" is centered
-    And six service items are displayed: Tattooing, Tattoo Design, Tattoo Removal, Piercing, Laser Removal, Henna Design
-    And each service has an icon, title, and short description
-    And a center image is shown between the two columns
 
-  Scenario: Services use dark-2 background
-    Given the What We Do section renders
-    Then the background is #131619
-```
+#### Scenario: Display six services
+
+- **GIVEN** the user scrolls to the What We Do section
+- **THEN** the section title "What We Do" is centered
+- **AND** six service items are displayed: Tattooing, Tattoo Design, Tattoo Removal, Piercing, Laser Removal, Henna Design
+- **AND** each service has an icon, title, and short description
+- **AND** a center image is shown between the two columns
+
+#### Scenario: Services use dark-2 background
+
+- **GIVEN** the What We Do section renders
+- **THEN** the background is #131619
 
 ### Gallery
 
-```gherkin
 Feature: Tattoo Gallery
-  Scenario: Filterable gallery grid
-    Given the user scrolls to the gallery section
-    Then the section title "Our Latest Tattoos" is centered
-    And filter buttons "All", "Body Design", "Hand Design", "Leg Design" are shown
-    And 8 tattoo images are displayed in a 4-column grid
 
-  Scenario: Gallery filtering
-    Given the user clicks the "Body Design" filter
-    Then only images tagged as "Body Design" are visible
-    And other images are hidden
+#### Scenario: Filterable gallery grid
 
-  Scenario: Gallery hover overlay
-    Given the user hovers over a gallery image
-    Then a dark overlay appears with a link icon
-```
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** the section title "Our Latest Tattoos" is centered
+- **AND** filter buttons "All", "Body Design", "Hand Design", "Leg Design" are shown
+- **AND** 8 tattoo images are displayed in a 4-column grid
+
+#### Scenario: Gallery filtering
+
+- **GIVEN** the user clicks the "Body Design" filter
+- **THEN** only images tagged as "Body Design" are visible
+- **AND** other images are hidden
+
+#### Scenario: Gallery hover overlay
+
+- **GIVEN** the user hovers over a gallery image
+- **THEN** a dark overlay appears with a link icon
 
 ### Team
 
-```gherkin
 Feature: Team Section
-  Scenario: Display team members
-    Given the user scrolls to the Team section
-    Then 4 team member cards are shown in a row
-    And each card has a photo, name, role, and social media icons
-```
+
+#### Scenario: Display team members
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** 4 team member cards are shown in a row
+- **AND** each card has a photo, name, role, and social media icons
 
 ### Discount / CTA
 
-```gherkin
 Feature: Discount CTA
-  Scenario: Parallax promotional section
-    Given the user scrolls to the discount section
-    Then a background image with parallax effect is displayed
-    And the heading "Get 30% Off Your Body Massage" is centered
-    And a "Book Now" button with white background is shown
-```
+
+#### Scenario: Parallax promotional section
+
+- **GIVEN** the user scrolls to the discount section
+- **THEN** a background image with parallax effect is displayed
+- **AND** the heading "Get 30% Off Your Body Massage" is centered
+- **AND** a "Book Now" button with white background is shown
 
 ### Pricing
 
-```gherkin
 Feature: Pricing Section
-  Scenario: Display three pricing tiers
-    Given the user scrolls to the Pricing section
-    Then three pricing cards are shown: Silver ($52), Diamond ($125), Golden ($95)
-    And each card has a feature list with check/cross items
-    And a "Choose Your Pack" button is on each card
-    And the Diamond card is visually highlighted as active
 
-  Scenario: Pricing uses dark-1 background
-    Given the Pricing section renders
-    Then the background is #0d0f11
-```
+#### Scenario: Display three pricing tiers
+
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** three pricing cards are shown: Silver ($52), Diamond ($125), Golden ($95)
+- **AND** each card has a feature list with check/cross items
+- **AND** a "Choose Your Pack" button is on each card
+- **AND** the Diamond card is visually highlighted as active
+
+#### Scenario: Pricing uses dark-1 background
+
+- **GIVEN** the Pricing section renders
+- **THEN** the background is #0d0f11
 
 ### Booking Form
 
-```gherkin
 Feature: Booking Form
-  Scenario: Display booking form
-    Given the user scrolls to the Book Now section
-    Then a parallax background with dark overlay is shown
-    And a form with fields: First Name, Last Name, Date, Time, Email, Pack selection is displayed
-    And a Submit button is shown
-    And an illustration image appears on the right side
-```
+
+#### Scenario: Display booking form
+
+- **GIVEN** the user scrolls to the Book Now section
+- **THEN** a parallax background with dark overlay is shown
+- **AND** a form with fields: First Name, Last Name, Date, Time, Email, Pack selection is displayed
+- **AND** a Submit button is shown
+- **AND** an illustration image appears on the right side
 
 ### Blog
 
-```gherkin
 Feature: Blog Section
-  Scenario: Display blog posts
-    Given the user scrolls to the Latest News section
-    Then 4 blog post cards are shown in a row
-    And each card has an image, metadata (date, author, comments), title, excerpt, and "Read More" link
-```
+
+#### Scenario: Display blog posts
+
+- **GIVEN** the user scrolls to the Latest News section
+- **THEN** 4 blog post cards are shown in a row
+- **AND** each card has an image, metadata (date, author, comments), title, excerpt, and "Read More" link
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer layout
-    Given the user scrolls to the footer
-    Then a 4-column footer is shown: About Us, Working Time, Short Links, Instagram
-    And the footer-top background is #0d0f11
-    And the footer-bottom background is brand orange #fb9902
-    And the footer-bottom contains copyright text and social media icons
 
-  Scenario: Footer links to Component Dock
-    Given the footer renders
-    Then a link to https://www.componentdock.com/ is present with "Component Dock" text
-```
+#### Scenario: Footer layout
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a 4-column footer is shown: About Us, Working Time, Short Links, Instagram
+- **AND** the footer-top background is #0d0f11
+- **AND** the footer-bottom background is brand orange #fb9902
+- **AND** the footer-bottom contains copyright text and social media icons
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer renders
+- **THEN** a link to https://www.componentdock.com/ is present with "Component Dock" text
 
 ## Verification checklist
 

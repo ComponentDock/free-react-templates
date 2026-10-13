@@ -34,111 +34,91 @@ Extracted from `css/style.css` of the live preview.
 | Section padding | `65px` (mobile), `130px` (desktop) | For padded sections |
 | Navbar | Transparent header overlaying hero; fixed on scroll with shadow |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar renders with correct links
+### Feature: Roamwise template behaviour
 
-```gherkin
-Given the user visits the Roamwise homepage
-Then the navbar displays links: Home, About, Packages, Pages (dropdown), Blog (dropdown), Contact
-And the navbar displays a "Get Started" button on the right
-And the navbar is transparent and overlays the hero section
-```
+#### Scenario: Navbar renders with correct links
 
-### Scenario: Hero banner displays headline and CTA
+- **GIVEN** the user visits the Roamwise homepage
+- **THEN** the navbar displays links: Home, About, Packages, Pages (dropdown), Blog (dropdown), Contact
+- **AND** the navbar displays a "Get Started" button on the right
+- **AND** the navbar is transparent and overlays the hero section
 
-```gherkin
-Given the user visits the Roamwise homepage
-Then the hero section displays the heading "Travel More To Discover Yourself"
-And a supporting paragraph text
-And a "Get Started" pill button
-And a hero illustration on the right
-```
+#### Scenario: Hero banner displays headline and CTA
 
-### Scenario: Services section shows three service cards
+- **GIVEN** the user visits the Roamwise homepage
+- **THEN** the hero section displays the heading "Travel More To Discover Yourself"
+- **AND** a supporting paragraph text
+- **AND** a "Get Started" pill button
+- **AND** a hero illustration on the right
 
-```gherkin
-Given the user scrolls to the Services section
-Then three cards are displayed: Hotel Booking, Flight Booking, Destination Booking
-And each card has an icon/illustration, heading, and description
-And the section heading reads "Our Popular Services"
-```
+#### Scenario: Services section shows three service cards
 
-### Scenario: About section displays two-column layout
+- **GIVEN** the user scrolls to the Services section
+- **THEN** three cards are displayed: Hotel Booking, Flight Booking, Destination Booking
+- **AND** each card has an icon/illustration, heading, and description
+- **AND** the section heading reads "Our Popular Services"
 
-```gherkin
-Given the user scrolls to the About section
-Then an image appears on the left
-And text appears on the right with heading "Exploration is really the essence of the human spirit"
-And a "Learn More" pill button
-And the section has a light gray background
-```
+#### Scenario: About section displays two-column layout
 
-### Scenario: Tour section shows four tour cards with price overlay
+- **GIVEN** the user scrolls to the About section
+- **THEN** an image appears on the left
+- **AND** text appears on the right with heading "Exploration is really the essence of the human spirit"
+- **AND** a "Learn More" pill button
+- **AND** the section has a light gray background
 
-```gherkin
-Given the user scrolls to the Tour section
-Then four tour cards are displayed in a 2-column layout
-And each card shows a destination image with overlay containing tour name, duration, description, and price
-And a centered heading "We offer worldwise tour plan recently" appears
-```
+#### Scenario: Tour section shows four tour cards with price overlay
 
-### Scenario: Testimonials carousel displays client reviews
+- **GIVEN** the user scrolls to the Tour section
+- **THEN** four tour cards are displayed in a 2-column layout
+- **AND** each card shows a destination image with overlay containing tour name, duration, description, and price
+- **AND** a centered heading "We offer worldwise tour plan recently" appears
 
-```gherkin
-Given the user scrolls to the Testimonials section
-Then the section heading reads "Our client says"
-And a carousel displays testimonial cards
-And each testimonial has an avatar, name, role, quote text, and a quote icon
-And the section has a light gray background
-```
+#### Scenario: Testimonials carousel displays client reviews
 
-### Scenario: Search Package form accepts tour search criteria
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the section heading reads "Our client says"
+- **AND** a carousel displays testimonial cards
+- **AND** each testimonial has an avatar, name, role, quote text, and a quote icon
+- **AND** the section has a light gray background
 
-```gherkin
-Given the user scrolls to the Search Package section
-Then a form appears with fields: text search, category select, tour duration select, date picker, price range select
-And a "Search Package" pill button submits the form
-And descriptive text "Search suitable and affordable plan for your tour" appears to the left
-```
+#### Scenario: Search Package form accepts tour search criteria
 
-### Scenario: Blog section shows three blog cards
+- **GIVEN** the user scrolls to the Search Package section
+- **THEN** a form appears with fields: text search, category select, tour duration select, date picker, price range select
+- **AND** a "Search Package" pill button submits the form
+- **AND** descriptive text "Search suitable and affordable plan for your tour" appears to the left
 
-```gherkin
-Given the user scrolls to the Blog section
-Then three blog cards are displayed
-And each card has an image, title, date, comment count, and excerpt
-And the section heading reads "From our Blog"
-And the section has a light gray background
-```
+#### Scenario: Blog section shows three blog cards
 
-### Scenario: Footer displays four columns and social links
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** three blog cards are displayed
+- **AND** each card has an image, title, date, comment count, and excerpt
+- **AND** the section heading reads "From our Blog"
+- **AND** the section has a light gray background
 
-```gherkin
-Given the user scrolls to the footer
-Then four columns are displayed: About Agency, Navigation Links, Newsletter (with email input), InstaFeed (image grid)
-And a bottom bar shows copyright and social media icons (Facebook, Twitter, Dribbble, Behance)
-And the footer has a dark navy background (#04091e)
-And the footer links to https://www.componentdock.com/
-```
+#### Scenario: Footer displays four columns and social links
 
-### Scenario: Pill-shaped buttons are styled correctly
+- **GIVEN** the user scrolls to the footer
+- **THEN** four columns are displayed: About Agency, Navigation Links, Newsletter (with email input), InstaFeed (image grid)
+- **AND** a bottom bar shows copyright and social media icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** the footer has a dark navy background (#04091e)
+- **AND** the footer links to https://www.componentdock.com/
 
-```gherkin
-Given the user views any button on the page
-Then buttons have a pill shape (border-radius: 30px)
-And buttons use the primary purple color (#6059f6) with white text
-And button hover transitions to darker purple (#201aa3)
-```
+#### Scenario: Pill-shaped buttons are styled correctly
 
-### Scenario: Typography follows design tokens
+- **GIVEN** the user views any button on the page
+- **THEN** buttons have a pill shape (border-radius: 30px)
+- **AND** buttons use the primary purple color (#6059f6) with white text
+- **AND** button hover transitions to darker purple (#201aa3)
 
-```gherkin
-Given the user views any text on the page
-Then body text uses Roboto font at 15px
-And headings use Roboto Condensed bold
-And heading color is #2a2a2a
-```
+#### Scenario: Typography follows design tokens
+
+- **GIVEN** the user views any text on the page
+- **THEN** body text uses Roboto font at 15px
+- **AND** headings use Roboto Condensed bold
+- **AND** heading color is #2a2a2a
 
 ## Verification checklist
 

@@ -126,79 +126,89 @@ imagery, light purple tinted sections, and smooth hover animations.
 10. **Footer** — Dark `#021017` bg. Centered logo, nav links (white text),
     4 social icons (white circles), copyright with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Pawfolio creative portfolio template
 
-Scenario: Navbar displays and becomes fixed on scroll
-Given the user loads the page
-Then the navbar is transparent and overlays the hero
-And nav links (Home, About, Portfolio, Pages, Blog, Contact) are visible
-When the user scrolls down
-Then the navbar becomes fixed with white background and box-shadow
+#### Scenario: Navbar displays and becomes fixed on scroll
 
-Scenario: Hero section shows headline and social icons
-Given the user is on the homepage
-Then the hero displays "Hey There!" text
-And the heading "I Am Jo Breed" is visible
-And "Creative art director & designer" subtitle is shown
-And 5 social media icons are displayed
-And a "See My Work" CTA button is visible
+- **GIVEN** the user loads the page
+- **THEN** the navbar is transparent and overlays the hero
+- **AND** nav links (Home, About, Portfolio, Pages, Blog, Contact) are visible
+- **WHEN** the user scrolls down
+- **THEN** the navbar becomes fixed with white background and box-shadow
 
-Scenario: Statistics section shows three metrics
-Given the user views the page
-Then 3 statistics items are visible
-And "15k+" Happy Customer is displayed
-And "12k+" Ticket Solved is displayed
-And "9/10" Average Rating is displayed
+#### Scenario: Hero section shows headline and social icons
 
-Scenario: About section shows two-column layout
-Given the user scrolls to the About section
-Then "About me" label text is visible with pink underline
-And the heading "Creative Art Director And Designer" is displayed
-And a paragraph of description text is visible
-And a "Download CV" CTA button is present
+- **GIVEN** the user is on the homepage
+- **THEN** the hero displays "Hey There!" text
+- **AND** the heading "I Am Jo Breed" is visible
+- **AND** "Creative art director & designer" subtitle is shown
+- **AND** 5 social media icons are displayed
+- **AND** a "See My Work" CTA button is visible
 
-Scenario: Services section shows three service cards
-Given the user scrolls to the Services section
-Then 3 service cards are displayed: Web Development, UX/UI Design, WP Developing
-And each card has an icon, title, description, and "Learn More" link
-When the user hovers a service card
-Then the card background turns purple
+#### Scenario: Statistics section shows three metrics
 
-Scenario: Testimonial carousel displays client quotes
-Given the user scrolls to the Testimonials section
-Then a carousel of testimonial items is displayed
-And each item shows a photo, name, role, quote, and star rating
+- **GIVEN** the user views the page
+- **THEN** 3 statistics items are visible
+- **AND** "15k+" Happy Customer is displayed
+- **AND** "12k+" Ticket Solved is displayed
+- **AND** "9/10" Average Rating is displayed
 
-Scenario: Portfolio grid loads with filter tabs
-Given the user scrolls to the Portfolio section
-Then filter tabs are visible: all, popular, latest, following, upcoming
-And 6 portfolio items are displayed in a grid
-And each item shows an image and title
-When the user hovers a portfolio item
-Then a blue overlay appears with the item title
+#### Scenario: About section shows two-column layout
 
-Scenario: Blog section shows three blog cards
-Given the user scrolls to the Blog section
-Then 3 blog cards are displayed
-And each card has a thumbnail, author, date, title, excerpt, and "Learn More" link
+- **GIVEN** the user scrolls to the About section
+- **THEN** "About me" label text is visible with pink underline
+- **AND** the heading "Creative Art Director And Designer" is displayed
+- **AND** a paragraph of description text is visible
+- **AND** a "Download CV" CTA button is present
 
-Scenario: Footer displays with social icons
-Given the user scrolls to the bottom
-Then the footer has a dark background
-And a logo is centered
-And nav links are visible
-And 4 social media icons are displayed in white circles
-And a Component Dock link is present
+#### Scenario: Services section shows three service cards
 
-Scenario: Mobile responsive layout
-Given the user views the page on a 375px wide viewport
-Then the navbar collapses to a hamburger menu
-And hero illustration image is hidden
-And service cards stack vertically
-And portfolio items stack vertically
-And blog cards stack vertically
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 3 service cards are displayed: Web Development, UX/UI Design, WP Developing
+- **AND** each card has an icon, title, description, and "Learn More" link
+- **WHEN** the user hovers a service card
+- **THEN** the card background turns purple
+
+#### Scenario: Testimonial carousel displays client quotes
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a carousel of testimonial items is displayed
+- **AND** each item shows a photo, name, role, quote, and star rating
+
+#### Scenario: Portfolio grid loads with filter tabs
+
+- **GIVEN** the user scrolls to the Portfolio section
+- **THEN** filter tabs are visible: all, popular, latest, following, upcoming
+- **AND** 6 portfolio items are displayed in a grid
+- **AND** each item shows an image and title
+- **WHEN** the user hovers a portfolio item
+- **THEN** a blue overlay appears with the item title
+
+#### Scenario: Blog section shows three blog cards
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 3 blog cards are displayed
+- **AND** each card has a thumbnail, author, date, title, excerpt, and "Learn More" link
+
+#### Scenario: Footer displays with social icons
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** the footer has a dark background
+- **AND** a logo is centered
+- **AND** nav links are visible
+- **AND** 4 social media icons are displayed in white circles
+- **AND** a Component Dock link is present
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** hero illustration image is hidden
+- **AND** service cards stack vertically
+- **AND** portfolio items stack vertically
+- **AND** blog cards stack vertically
 
 ## Verification checklist
 

@@ -67,124 +67,122 @@ Recreation of the ColorLib "Cakes" template for a bakery / cake shop landing pag
 8. **Instagram** — Horizontal image strip (6 images) with Instagram icon overlay on hover
 9. **Footer** — 4-column: logo + description + social icons | Quick Links | Cake types | Contact info + phone; bottom bar with copyright + Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
 
-```gherkin
-Scenario: Logo and navigation render
-  Given the user loads the page
-  Then the logo is visible in the top-left
-  And the navigation links "Home", "Product", "About", "Blog", "Contact" are visible
+#### Scenario: Logo and navigation render
 
-Scenario: Phone number and Order Online button render
-  Given the user loads the page
-  Then the phone number "+10 (56) 745 3095" is displayed
-  And the "Order Online" button is visible in the header
+- **GIVEN** the user loads the page
+- **THEN** the logo is visible in the top-left
+- **AND** the navigation links "Home", "Product", "About", "Blog", "Contact" are visible
 
-Scenario: Blog dropdown shows submenu on hover
-  Given the user hovers over "Blog" in the navigation
-  Then a submenu with "Blog", "Blog Details", "Element" links appears
+#### Scenario: Phone number and Order Online button render
 
-Scenario: Header becomes sticky on scroll
-  Given the user scrolls down past the header
-  Then the header sticks to the top with a white background and subtle shadow
-```
+- **GIVEN** the user loads the page
+- **THEN** the phone number "+10 (56) 745 3095" is displayed
+- **AND** the "Order Online" button is visible in the header
+
+#### Scenario: Blog dropdown shows submenu on hover
+
+- **GIVEN** the user hovers over "Blog" in the navigation
+- **THEN** a submenu with "Blog", "Blog Details", "Element" links appears
+
+#### Scenario: Header becomes sticky on scroll
+
+- **GIVEN** the user scrolls down past the header
+- **THEN** the header sticks to the top with a white background and subtle shadow
 
 ### Hero
 
-```gherkin
-Scenario: Hero section displays headline and CTA
-  Given the user loads the page
-  Then the hero section displays "Delicious Cake For Everyone" heading
-  And the "Explore Menu" button is visible
-  And a decorative "Delicious" watermark text appears in Lobster font
+#### Scenario: Hero section displays headline and CTA
 
-Scenario: Hero has background image
-  Given the user loads the page
-  Then the hero section has a full-width cake background image
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero section displays "Delicious Cake For Everyone" heading
+- **AND** the "Explore Menu" button is visible
+- **AND** a decorative "Delicious" watermark text appears in Lobster font
+
+#### Scenario: Hero has background image
+
+- **GIVEN** the user loads the page
+- **THEN** the hero section has a full-width cake background image
 
 ### Popular Items
 
-```gherkin
-Scenario: Popular items section shows cake cards
-  Given the user scrolls to the popular items section
-  Then the heading "Our Exclusive Cakes" is visible
-  And 3 cake cards are displayed (Chocolate, Sweetheart, Blackforest)
+#### Scenario: Popular items section shows cake cards
 
-Scenario: Each cake card has image, title, description, and order button
-  Given the user views a cake card
-  Then it shows a cake image, the cake name, a short description
-  And a "$20 | Order Now" button
+- **GIVEN** the user scrolls to the popular items section
+- **THEN** the heading "Our Exclusive Cakes" is visible
+- **AND** 3 cake cards are displayed (Chocolate, Sweetheart, Blackforest)
 
-Scenario: Cake cards have rounded bottom-right corners and light peach background
-  Given the user views a cake card
-  Then the card background is #FFF5F2
-  And the bottom-right corner has border-radius of 60px
-```
+#### Scenario: Each cake card has image, title, description, and order button
+
+- **GIVEN** the user views a cake card
+- **THEN** it shows a cake image, the cake name, a short description
+- **AND** a "$20 | Order Now" button
+
+#### Scenario: Cake cards have rounded bottom-right corners and light peach background
+
+- **GIVEN** the user views a cake card
+- **THEN** the card background is #FFF5F2
+- **AND** the bottom-right corner has border-radius of 60px
 
 ### About
 
-```gherkin
-Scenario: About section shows split layout
-  Given the user scrolls to the about section
-  Then an image appears on the left
-  And text content appears on the right with "Fresh & Delicious" label
-  And the heading "A Simple Way to Eating Delicious" is displayed
-  And the "Our Story" button is visible
-```
+#### Scenario: About section shows split layout
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** an image appears on the left
+- **AND** text content appears on the right with "Fresh & Delicious" label
+- **AND** the heading "A Simple Way to Eating Delicious" is displayed
+- **AND** the "Our Story" button is visible
 
 ### Services
 
-```gherkin
-Scenario: Services section shows 3 feature cards
-  Given the user scrolls to the services section
-  Then the heading "Quality is Our First Priority" is visible
-  And 3 service cards each display an icon, title, and description
-```
+#### Scenario: Services section shows 3 feature cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading "Quality is Our First Priority" is visible
+- **AND** 3 service cards each display an icon, title, and description
 
 ### Video
 
-```gherkin
-Scenario: Video section has play button
-  Given the user scrolls to the video section
-  Then a dark background image is displayed
-  And a play button icon is centered on the section
-```
+#### Scenario: Video section has play button
+
+- **GIVEN** the user scrolls to the video section
+- **THEN** a dark background image is displayed
+- **AND** a play button icon is centered on the section
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel shows customer quotes
-  Given the user scrolls to the testimonials section
-  Then the heading "What Customers Say" is visible
-  And customer testimonial cards display a quote, avatar image, name, and role
-```
+#### Scenario: Testimonials carousel shows customer quotes
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the heading "What Customers Say" is visible
+- **AND** customer testimonial cards display a quote, avatar image, name, and role
 
 ### Instagram
 
-```gherkin
-Scenario: Instagram image strip renders
-  Given the user scrolls to the Instagram section
-  Then a horizontal strip of 6 images is displayed
-  And hovering an image reveals an Instagram icon overlay
-```
+#### Scenario: Instagram image strip renders
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** a horizontal strip of 6 images is displayed
+- **AND** hovering an image reveals an Instagram icon overlay
 
 ### Footer
 
-```gherkin
-Scenario: Footer has 4 columns
-  Given the user scrolls to the footer
-  Then the footer shows logo, description, and social icons in column 1
-  And "Quick Links" with Home/About/Services/Blog/Contact in column 2
-  And cake type links in column 3
-  And contact info with phone number in column 4
+#### Scenario: Footer has 4 columns
 
-Scenario: Footer bottom has Component Dock link
-  Given the user scrolls to the footer bottom
-  Then the copyright line contains a link to "https://www.componentdock.com/"
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer shows logo, description, and social icons in column 1
+- **AND** "Quick Links" with Home/About/Services/Blog/Contact in column 2
+- **AND** cake type links in column 3
+- **AND** contact info with phone number in column 4
+
+#### Scenario: Footer bottom has Component Dock link
+
+- **GIVEN** the user scrolls to the footer bottom
+- **THEN** the copyright line contains a link to "https://www.componentdock.com/"
 
 ## Verification Checklist
 

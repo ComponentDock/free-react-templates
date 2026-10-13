@@ -50,50 +50,68 @@ Residium is a real estate landing page with a navbar, hero slider, about band, f
 - `LatestNews.tsx` — news carousel
 - `Footer.tsx` — 4-column footer + copyright
 
-## Test scenarios (Gherkin)
+## Requirements
 
 ### Navbar
 
-- Given the page loads, When I view the header, Then the logo "Residium" is visible
-- Given the page loads, When I view the nav, Then links for Home, About, Pages, Blog, Contact are present
-- Given the viewport is mobile, When I click the hamburger, Then the mobile menu opens
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, When I view the header, Then the logo "Residium" is visible
+- **GIVEN** the page loads, When I view the nav, Then links for Home, About, Pages, Blog, Contact are present
+- **GIVEN** the viewport is mobile, When I click the hamburger, Then the mobile menu opens
 
 ### HeroSlider
 
-- Given the page loads, When I view the hero, Then the heading "We Create your dream apartment" is visible
-- Given the page loads, When I view the hero, Then a "View Project" button is visible
+#### Scenario: HeroSlider
+
+- **GIVEN** the page loads, When I view the hero, Then the heading "We Create your dream apartment" is visible
+- **GIVEN** the page loads, When I view the hero, Then a "View Project" button is visible
 
 ### About
 
-- Given the page loads, When I view the about section, Then "10 Years of Experience" badge is visible
-- Given the page loads, When I view the about section, Then stats "120 Buildings" and "500+ Clients" are visible
+#### Scenario: About
+
+- **GIVEN** the page loads, When I view the about section, Then "10 Years of Experience" badge is visible
+- **GIVEN** the page loads, When I view the about section, Then stats "120 Buildings" and "500+ Clients" are visible
 
 ### Facilities
 
-- Given the page loads, When I view facilities, Then 3 facility cards are rendered
-- Given the page loads, When I view facilities, Then each card has a "Learn more" link
+#### Scenario: Facilities
+
+- **GIVEN** the page loads, When I view facilities, Then 3 facility cards are rendered
+- **GIVEN** the page loads, When I view facilities, Then each card has a "Learn more" link
 
 ### Apartments
 
-- Given the page loads, When I view apartments, Then at least 3 apartment cards are rendered
-- Given the page loads, When I view apartments, Then each card shows a price, title, and specs (BD/BA/SF)
+#### Scenario: Apartments
+
+- **GIVEN** the page loads, When I view apartments, Then at least 3 apartment cards are rendered
+- **GIVEN** the page loads, When I view apartments, Then each card shows a price, title, and specs (BD/BA/SF)
 
 ### Testimonials
 
-- Given the page loads, When I view testimonials, Then at least 1 testimonial is visible
-- Given the page loads, When I view testimonials, Then author name and quote are displayed
+#### Scenario: Testimonials
+
+- **GIVEN** the page loads, When I view testimonials, Then at least 1 testimonial is visible
+- **GIVEN** the page loads, When I view testimonials, Then author name and quote are displayed
 
 ### CTA
 
-- Given the page loads, When I view the CTA, Then "Get a free quotation Today!" is visible
-- Given the page loads, When I view the CTA, Then a "Contact Us" button is present
+#### Scenario: CTA
+
+- **GIVEN** the page loads, When I view the CTA, Then "Get a free quotation Today!" is visible
+- **GIVEN** the page loads, When I view the CTA, Then a "Contact Us" button is present
 
 ### LatestNews
 
-- Given the page loads, When I view news, Then at least 2 news cards are rendered
-- Given the page loads, When I view news, Then each card has a "Read more" link
+#### Scenario: LatestNews
+
+- **GIVEN** the page loads, When I view news, Then at least 2 news cards are rendered
+- **GIVEN** the page loads, When I view news, Then each card has a "Read more" link
 
 ### Footer
 
-- Given the page loads, When I view the footer, Then "Component Dock" link to componentdock.com is present
-- Given the page loads, When I view the footer, Then newsletter input and submit button are visible
+#### Scenario: Footer
+
+- **GIVEN** the page loads, When I view the footer, Then "Component Dock" link to componentdock.com is present
+- **GIVEN** the page loads, When I view the footer, Then newsletter input and submit button are visible

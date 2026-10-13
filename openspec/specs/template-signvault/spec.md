@@ -83,88 +83,90 @@ Extracted from TEMPLATES.md screenshot (preview page 404 at prep time):
    - "Already have an account?" in muted dark text
    - "Sign In" as red accent link (`#e74c3c`), underlined
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Page loads with centered card
+### Feature: Signvault template behaviour
 
-- Given the user visits the template page
-- When the page finishes loading
-- Then a white card is centered on a light gray background
-- And the card has rounded corners and a subtle shadow
+#### Scenario: Page loads with centered card
 
-### Scenario: Card displays heading
+- **GIVEN** the user visits the template page
+- **WHEN** the page finishes loading
+- **THEN** a white card is centered on a light gray background
+- **AND** the card has rounded corners and a subtle shadow
 
-- Given the page is loaded
-- Then a "Sign Up" heading is visible inside the card
-- And the heading is left-aligned
+#### Scenario: Card displays heading
 
-### Scenario: Form has four fields
+- **GIVEN** the page is loaded
+- **THEN** a "Sign Up" heading is visible inside the card
+- **AND** the heading is left-aligned
 
-- Given the page is loaded
-- Then a "Full Name" text input is present with placeholder "John Doe"
-- And an "Email Address" input is present with placeholder "johndoe@gmail.com"
-- And a "Password" input is present with placeholder "Password"
-- And a "Confirm Password" input is present with placeholder "Confirm Password"
+#### Scenario: Form has four fields
 
-### Scenario: Floating labels
+- **GIVEN** the page is loaded
+- **THEN** a "Full Name" text input is present with placeholder "John Doe"
+- **AND** an "Email Address" input is present with placeholder "johndoe@gmail.com"
+- **AND** a "Password" input is present with placeholder "Password"
+- **AND** a "Confirm Password" input is present with placeholder "Confirm Password"
 
-- Given the page is loaded
-- When the user focuses on an input field
-- Then the corresponding label floats above the input text
-- And the label color is muted gray
+#### Scenario: Floating labels
 
-### Scenario: Input focus state
+- **GIVEN** the page is loaded
+- **WHEN** the user focuses on an input field
+- **THEN** the corresponding label floats above the input text
+- **AND** the label color is muted gray
 
-- Given the page is loaded
-- When the user clicks on an input field
-- Then the input border changes to the brand red color (#e74c3c)
+#### Scenario: Input focus state
 
-### Scenario: Circular submit button
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks on an input field
+- **THEN** the input border changes to the brand red color (#e74c3c)
 
-- Given the page is loaded
-- Then a circular red button is visible
-- And the button has a white send/arrow icon inside
-- And the button overlaps the bottom-right edge of the card
+#### Scenario: Circular submit button
 
-### Scenario: Submit button hover
+- **GIVEN** the page is loaded
+- **THEN** a circular red button is visible
+- **AND** the button has a white send/arrow icon inside
+- **AND** the button overlaps the bottom-right edge of the card
 
-- Given the page is loaded
-- When the user hovers over the circular submit button
-- Then the button shows a red-tinted shadow effect
-- And the button icon remains white
+#### Scenario: Submit button hover
 
-### Scenario: Wave decoration
+- **GIVEN** the page is loaded
+- **WHEN** the user hovers over the circular submit button
+- **THEN** the button shows a red-tinted shadow effect
+- **AND** the button icon remains white
 
-- Given the page is loaded
-- Then a subtle wave/swoosh decoration is visible at the bottom of the card
-- And the wave is in a light gray tone
+#### Scenario: Wave decoration
 
-### Scenario: Sign In link
+- **GIVEN** the page is loaded
+- **THEN** a subtle wave/swoosh decoration is visible at the bottom of the card
+- **AND** the wave is in a light gray tone
 
-- Given the page is loaded
-- Then text "Already have an account?" is visible below the card
-- And a "Sign In" link is displayed in the brand red color
-- And clicking the link navigates (or simulates navigation)
+#### Scenario: Sign In link
 
-### Scenario: Form validation
+- **GIVEN** the page is loaded
+- **THEN** text "Already have an account?" is visible below the card
+- **AND** a "Sign In" link is displayed in the brand red color
+- **AND** clicking the link navigates (or simulates navigation)
 
-- Given the page is loaded
-- When the user clicks the submit button without filling any fields
-- Then HTML5 validation prevents submission
-- And the browser shows a validation message on the first empty required field
+#### Scenario: Form validation
 
-### Scenario: Responsive layout
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the submit button without filling any fields
+- **THEN** HTML5 validation prevents submission
+- **AND** the browser shows a validation message on the first empty required field
 
-- Given the user is on a mobile viewport (width < 640px)
-- When the page loads
-- Then the card takes full width with horizontal padding
-- And all form fields remain accessible and readable
+#### Scenario: Responsive layout
 
-### Scenario: Footer links to Component Dock
+- **GIVEN** the user is on a mobile viewport (width < 640px)
+- **WHEN** the page loads
+- **THEN** the card takes full width with horizontal padding
+- **AND** all form fields remain accessible and readable
 
-- Given the user views the page footer
-- Then a link to componentdock.com is present
-- And the link opens in a new tab
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user views the page footer
+- **THEN** a link to componentdock.com is present
+- **AND** the link opens in a new tab
 
 ## Verification Checklist
 

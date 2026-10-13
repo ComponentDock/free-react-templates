@@ -50,77 +50,87 @@ four-column footer with newsletter signup.
 9. **MostSearched** — 4-column grid with thumbnail + product name + price per item (3 items per column)
 10. **Footer** — 4 columns: About Us, Newsletter (email input + arrow button), Instagram Feed (8 thumbnails), Follow Us (social icons) + copyright bar
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Shopvibe template behaviour
+
 Feature: Shopvibe Ecommerce Landing Page
 
-  Scenario: Top menu displays contact info and social links
-    Given I visit the Shopvibe homepage
-    Then I see a top menu bar with "support@shopvibe.com" email
-    And I see "Welcome to Catalogue" text
-    And I see social media icon links (Facebook, Twitter, Dribbble, Behance)
+#### Scenario: Top menu displays contact info and social links
 
-  Scenario: Navbar shows logo, navigation, cart and search
-    Given I visit the Shopvibe homepage
-    Then I see the Shopvibe logo on the left
-    And I see nav links: Home, Shop, Blog, Pages, Contact
-    And I see a cart icon and a search icon on the right
-    And "Home" is the active nav link
+- **GIVEN** I visit the Shopvibe homepage
+- **THEN** I see a top menu bar with "support@shopvibe.com" email
+- **AND** I see "Welcome to Catalogue" text
+- **AND** I see social media icon links (Facebook, Twitter, Dribbble, Behance)
 
-  Scenario: Hero section renders with headline and CTA
-    Given I visit the Shopvibe homepage
-    Then I see a hero section with light blue-gray background
-    And I see the headline "Collections!" (paraphrased from original)
-    And I see a description paragraph below the headline
-    And I see a "View Collection" button styled with white background and rounded corners
-    And I see a product image on the right side
+#### Scenario: Navbar shows logo, navigation, cart and search
 
-  Scenario: Hot deals section shows two promo cards
-    Given I scroll to the hot deals section
-    Then I see two side-by-side promo cards
-    And each card has a product image with text overlay
-    And each card shows "Hot Deals of this Month" heading
-    And each card has a "Shop Now" link
+- **GIVEN** I visit the Shopvibe homepage
+- **THEN** I see the Shopvibe logo on the left
+- **AND** I see nav links: Home, Shop, Blog, Pages, Contact
+- **AND** I see a cart icon and a search icon on the right
+- **AND** "Home" is the active nav link
 
-  Scenario: Featured products carousel
-    Given I scroll to the featured products section
-    Then I see "Featured Products" heading with subtitle
-    And I see a horizontal carousel of product cards
-    And each product card shows an image, product name, and price
-    And hovering a product card reveals heart and cart icons
+#### Scenario: Hero section renders with headline and CTA
 
-  Scenario: Deal countdown timer
-    Given I scroll to the deal timer section
-    Then I see "Exclusive Hot Deal Ends Soon!" heading
-    And I see a countdown timer with days, hours, minutes, seconds
-    And I see a "Shop Now" primary button (red pill-shaped)
+- **GIVEN** I visit the Shopvibe homepage
+- **THEN** I see a hero section with light blue-gray background
+- **AND** I see the headline "Collections!" (paraphrased from original)
+- **AND** I see a description paragraph below the headline
+- **AND** I see a "View Collection" button styled with white background and rounded corners
+- **AND** I see a product image on the right side
 
-  Scenario: Latest products grid
-    Given I scroll to the latest products section
-    Then I see "Latest Products" heading
-    And I see 8 product cards in a responsive grid (4 cols desktop, 2 cols mobile)
-    And each card has an image, hover icons, name, and price
+#### Scenario: Hot deals section shows two promo cards
 
-  Scenario: Top brands logo carousel
-    Given I scroll to the brands section
-    Then I see "Top Brands of this Month" heading
-    And I see brand logo images in a carousel
+- **GIVEN** I scroll to the hot deals section
+- **THEN** I see two side-by-side promo cards
+- **AND** each card has a product image with text overlay
+- **AND** each card shows "Hot Deals of this Month" heading
+- **AND** each card has a "Shop Now" link
 
-  Scenario: Most searched products grid
-    Given I scroll to the most searched section
-    Then I see "Most Searched Products" heading
-    And I see 4 columns of product listings
-    And each listing has a thumbnail image, product name, and price
+#### Scenario: Featured products carousel
 
-  Scenario: Footer layout
-    Given I scroll to the footer
-    Then I see 4 footer columns: About Us, Newsletter, Instagram Feed, Follow Us
-    And the Newsletter column has an email input with arrow submit button
-    And the Instagram Feed shows 8 thumbnail images in a grid
-    And the Follow Us column has social media icon links
-    And the footer bottom shows a copyright line with Component Dock link
-```
+- **GIVEN** I scroll to the featured products section
+- **THEN** I see "Featured Products" heading with subtitle
+- **AND** I see a horizontal carousel of product cards
+- **AND** each product card shows an image, product name, and price
+- **AND** hovering a product card reveals heart and cart icons
+
+#### Scenario: Deal countdown timer
+
+- **GIVEN** I scroll to the deal timer section
+- **THEN** I see "Exclusive Hot Deal Ends Soon!" heading
+- **AND** I see a countdown timer with days, hours, minutes, seconds
+- **AND** I see a "Shop Now" primary button (red pill-shaped)
+
+#### Scenario: Latest products grid
+
+- **GIVEN** I scroll to the latest products section
+- **THEN** I see "Latest Products" heading
+- **AND** I see 8 product cards in a responsive grid (4 cols desktop, 2 cols mobile)
+- **AND** each card has an image, hover icons, name, and price
+
+#### Scenario: Top brands logo carousel
+
+- **GIVEN** I scroll to the brands section
+- **THEN** I see "Top Brands of this Month" heading
+- **AND** I see brand logo images in a carousel
+
+#### Scenario: Most searched products grid
+
+- **GIVEN** I scroll to the most searched section
+- **THEN** I see "Most Searched Products" heading
+- **AND** I see 4 columns of product listings
+- **AND** each listing has a thumbnail image, product name, and price
+
+#### Scenario: Footer layout
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see 4 footer columns: About Us, Newsletter, Instagram Feed, Follow Us
+- **AND** the Newsletter column has an email input with arrow submit button
+- **AND** the Instagram Feed shows 8 thumbnail images in a grid
+- **AND** the Follow Us column has social media icon links
+- **AND** the footer bottom shows a copyright line with Component Dock link
 
 ## Verification Checklist
 

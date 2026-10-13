@@ -65,120 +65,109 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-
 - Team cards have a gradient overlay effect with member names.
 - Blog cards have image-first layout with date badges.
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Navbar renders with correct structure
-```gherkin
-Given the user visits the Studiohaus page
-Then the navbar displays the logo "Studiohaus"
-And the navbar contains navigation links: Home, About, Services, Work, Blog, Contact
-And the navbar has a CTA button labeled "GET STARTED"
-And the navbar becomes sticky on scroll
-```
+### Feature: Studiohaus template behaviour
 
-### Scenario: Hero section renders correctly
-```gherkin
-Given the user visits the Studiohaus page
-Then the hero section displays a full-width background image
-And the hero has a dark overlay
-And the hero displays a heading in uppercase with large bold text
-And the hero displays a subtitle paragraph
-And the hero has an animated scroll indicator arrow
-```
+#### Scenario: Navbar renders with correct structure
 
-### Scenario: Info stats bar displays
-```gherkin
-Given the user visits the Studiohaus page
-Then the info stats section displays 4 info items in a row
-And each info item has a label and value
-And the section has a background image with overlay
-```
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the navbar displays the logo "Studiohaus"
+- **AND** the navbar contains navigation links: Home, About, Services, Work, Blog, Contact
+- **AND** the navbar has a CTA button labeled "GET STARTED"
+- **AND** the navbar becomes sticky on scroll
 
-### Scenario: Professional services banner renders
-```gherkin
-Given the user visits the Studiohaus page on desktop
-Then the professional services banner displays a background image
-And the banner has a headline and description paragraph
-And the banner has a CTA button
-```
+#### Scenario: Hero section renders correctly
 
-### Scenario: Services grid displays correctly
-```gherkin
-Given the user visits the Studiohaus page
-Then the services section displays 3 service cards in a grid
-And each service card has an image, title, and description
-And each service card title has a warm accent underline
-And hovering a service card changes its background to white
-```
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the hero section displays a full-width background image
+- **AND** the hero has a dark overlay
+- **AND** the hero displays a heading in uppercase with large bold text
+- **AND** the hero displays a subtitle paragraph
+- **AND** the hero has an animated scroll indicator arrow
 
-### Scenario: Gallery grid renders
-```gherkin
-Given the user visits the Studiohaus page
-Then the gallery section displays 6 images in a masonry-style grid
-And images are arranged in a 3-column layout
-```
+#### Scenario: Info stats bar displays
 
-### Scenario: Team section renders
-```gherkin
-Given the user visits the Studiohaus page
-Then the team section displays 3 team member cards
-And each card shows a member image with a dark gradient overlay
-And each card displays the member name and role at the bottom-left
-And hovering a team card applies a subtle zoom effect
-```
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the info stats section displays 4 info items in a row
+- **AND** each info item has a label and value
+- **AND** the section has a background image with overlay
 
-### Scenario: Testimonials carousel works
-```gherkin
-Given the user visits the Studiohaus page
-Then the testimonials section displays a quote with large white text
-And each testimonial shows a founder image and name
-And dot navigation indicators are visible
-And the user can navigate between testimonials
-```
+#### Scenario: Professional services banner renders
 
-### Scenario: Brand logos row displays
-```gherkin
-Given the user visits the Studiohaus page
-Then the brand logos section displays 6 partner logos
-And logos are arranged in a horizontal row with separators
-```
+- **GIVEN** the user visits the Studiohaus page on desktop
+- **THEN** the professional services banner displays a background image
+- **AND** the banner has a headline and description paragraph
+- **AND** the banner has a CTA button
 
-### Scenario: Want to Work CTA bar renders
-```gherkin
-Given the user visits the Studiohaus page
-Then the CTA section displays as a full-width gold background bar
-And the CTA section has a large white headline
-And the CTA section has a dark "GET STARTED" button
-```
+#### Scenario: Services grid displays correctly
 
-### Scenario: Blog section displays
-```gherkin
-Given the user visits the Studiohaus page
-Then the blog section displays 2 blog post cards
-And each card has a featured image with dark overlay
-And each card shows a date badge with gold background
-And each card has a post title, excerpt, and "more" link
-```
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the services section displays 3 service cards in a grid
+- **AND** each service card has an image, title, and description
+- **AND** each service card title has a warm accent underline
+- **AND** hovering a service card changes its background to white
 
-### Scenario: Footer renders correctly
-```gherkin
-Given the user visits the Studiohaus page
-Then the footer displays on a dark navy background
-And the footer has 4 columns: logo/description, quick links, footer links, Instagram gallery
-And the footer bottom bar shows copyright text and social media icons
-And the footer links to "https://www.componentdock.com/"
-```
+#### Scenario: Gallery grid renders
 
-### Scenario: Responsive layout
-```gherkin
-Given the user views the Studiohaus page on mobile
-Then the navbar collapses into a mobile hamburger menu
-And the hero heading text is smaller
-And the services grid shows 1 column
-And the gallery shows 2 columns
-And the team section shows 1 column
-And the blog section shows 1 column
-```
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the gallery section displays 6 images in a masonry-style grid
+- **AND** images are arranged in a 3-column layout
+
+#### Scenario: Team section renders
+
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the team section displays 3 team member cards
+- **AND** each card shows a member image with a dark gradient overlay
+- **AND** each card displays the member name and role at the bottom-left
+- **AND** hovering a team card applies a subtle zoom effect
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the testimonials section displays a quote with large white text
+- **AND** each testimonial shows a founder image and name
+- **AND** dot navigation indicators are visible
+- **AND** the user can navigate between testimonials
+
+#### Scenario: Brand logos row displays
+
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the brand logos section displays 6 partner logos
+- **AND** logos are arranged in a horizontal row with separators
+
+#### Scenario: Want to Work CTA bar renders
+
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the CTA section displays as a full-width gold background bar
+- **AND** the CTA section has a large white headline
+- **AND** the CTA section has a dark "GET STARTED" button
+
+#### Scenario: Blog section displays
+
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the blog section displays 2 blog post cards
+- **AND** each card has a featured image with dark overlay
+- **AND** each card shows a date badge with gold background
+- **AND** each card has a post title, excerpt, and "more" link
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the user visits the Studiohaus page
+- **THEN** the footer displays on a dark navy background
+- **AND** the footer has 4 columns: logo/description, quick links, footer links, Instagram gallery
+- **AND** the footer bottom bar shows copyright text and social media icons
+- **AND** the footer links to "https://www.componentdock.com/"
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the Studiohaus page on mobile
+- **THEN** the navbar collapses into a mobile hamburger menu
+- **AND** the hero heading text is smaller
+- **AND** the services grid shows 1 column
+- **AND** the gallery shows 2 columns
+- **AND** the team section shows 1 column
+- **AND** the blog section shows 1 column
 
 ## Verification checklist
 

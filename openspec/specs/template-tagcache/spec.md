@@ -44,118 +44,135 @@ Extracted from the live preview CSS (`css/style.css`) at `https://preview.colorl
 | Dropdown border-radius | `8px`                                             | Top/bottom corners of list                |
 | Arrow color            | `#99A3BA`                                         | Expand/collapse indicator                 |
 
-## Gherkin Requirements
+## Requirements
 
 ### Background
 
-Given the page loads at the root URL
-Then the page background is `#fafafa`
-And the font family is "Lato" (with Arial fallback)
+#### Scenario: Background
+
+- **GIVEN** the page loads at the root URL
+- **THEN** the page background is `#fafafa`
+- **AND** the font family is "Lato" (with Arial fallback)
 
 ### Section: Main
 
-Scenario: Page heading renders
-Given the page is loaded
-Then a centered heading "Multiselect #06" (replaced with template name) is visible
-And the heading font size is approximately 28px
-And the heading color is black (#000)
+#### Scenario: Page heading renders
 
-Scenario: Dropdown trigger renders with placeholder
-Given the page is loaded
-Then a dropdown trigger container is visible
-And the container has a white background (#fff)
-And the container has a border-radius of 8px
-And the container has a box-shadow of `0 4px 16px 0 rgba(22, 42, 90, 0.12)`
-And the container min-height is 44px
-And the container width is 240px
-And the placeholder text "Add Language" is visible in color #99A3BA
-And an arrow indicator (chevron) is visible on the right side
+- **GIVEN** the page is loaded
+- **THEN** a centered heading "Multiselect #06" (replaced with template name) is visible
+- **AND** the heading font size is approximately 28px
+- **AND** the heading color is black (#000)
 
-Scenario: Dropdown opens on click
-Given the dropdown trigger is displayed
-When the user clicks the dropdown trigger
-Then a dropdown list panel appears below the trigger
-And the dropdown list has a border-radius of 8px
-And the dropdown list has a drop-shadow filter
-And the dropdown list displays a list of language options
-And the trigger shadow changes to `0 4px 20px -1px rgba(22, 42, 90, 0.12)`
-And the arrow indicator rotates to point upward
+#### Scenario: Dropdown trigger renders with placeholder
 
-Scenario: Dropdown shows language options
-Given the dropdown is open
-Then the following options are visible: Javascript, jQuery, HTML, Wordpress, PHP
-And each option has padding of 12px 16px
-And each option has a white background
+- **GIVEN** the page is loaded
+- **THEN** a dropdown trigger container is visible
+- **AND** the container has a white background (#fff)
+- **AND** the container has a border-radius of 8px
+- **AND** the container has a box-shadow of `0 4px 16px 0 rgba(22, 42, 90, 0.12)`
+- **AND** the container min-height is 44px
+- **AND** the container width is 240px
+- **AND** the placeholder text "Add Language" is visible in color #99A3BA
+- **AND** an arrow indicator (chevron) is visible on the right side
 
-Scenario: Selecting an option adds a tag
-Given the dropdown is open
-When the user clicks the "Javascript" option
-Then a tag/chip appears inside the trigger area
-And the tag displays the text "Javascript"
-And the tag has a light blue background `rgba(228, 236, 250, 0.7)`
-And the tag has a close (X) icon in color #f16821
-And the placeholder text "Add Language" is hidden
-And the "Javascript" option disappears from the dropdown list
+#### Scenario: Dropdown opens on click
 
-Scenario: Multiple selections create multiple tags
-Given the dropdown is open
-When the user selects "Javascript"
-And the user selects "jQuery"
-Then two tags appear inside the trigger area
-And both tags are displayed inline
+- **GIVEN** the dropdown trigger is displayed
+- **WHEN** the user clicks the dropdown trigger
+- **THEN** a dropdown list panel appears below the trigger
+- **AND** the dropdown list has a border-radius of 8px
+- **AND** the dropdown list has a drop-shadow filter
+- **AND** the dropdown list displays a list of language options
+- **AND** the trigger shadow changes to `0 4px 20px -1px rgba(22, 42, 90, 0.12)`
+- **AND** the arrow indicator rotates to point upward
 
-Scenario: Removing a tag deselects the option
-Given "Javascript" is selected and displayed as a tag
-When the user clicks the X icon on the "Javascript" tag
-Then the "Javascript" tag disappears from the trigger area
-And the "Javascript" option reappears in the dropdown list
-And the placeholder text "Add Language" reappears when no tags remain
+#### Scenario: Dropdown shows language options
 
-Scenario: Hovering a dropdown option highlights it
-Given the dropdown is open
-When the user hovers over the "PHP" option
-Then the option background changes to #f16821 (brand orange)
-And the option text color changes to #fff (white)
+- **GIVEN** the dropdown is open
+- **THEN** the following options are visible: Javascript, jQuery, HTML, Wordpress, PHP
+- **AND** each option has padding of 12px 16px
+- **AND** each option has a white background
 
-Scenario: Dropdown closes on outside click
-Given the dropdown is open
-When the user clicks outside the dropdown area
-Then the dropdown panel closes with a fade-out animation
+#### Scenario: Selecting an option adds a tag
 
-Scenario: Dropdown closes on second trigger click
-Given the dropdown is open
-When the user clicks the dropdown trigger again
-Then the dropdown panel closes
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks the "Javascript" option
+- **THEN** a tag/chip appears inside the trigger area
+- **AND** the tag displays the text "Javascript"
+- **AND** the tag has a light blue background `rgba(228, 236, 250, 0.7)`
+- **AND** the tag has a close (X) icon in color #f16821
+- **AND** the placeholder text "Add Language" is hidden
+- **AND** the "Javascript" option disappears from the dropdown list
 
-Scenario: Dropdown list animates on open
-Given the dropdown is closed
-When the user clicks the dropdown trigger
-Then the dropdown list transitions from `translate(0, 20px) scale(0.8) opacity: 0` to `translate(0, 12px) scale(1) opacity: 1`
-And the transition uses a cubic-bezier easing curve
+#### Scenario: Multiple selections create multiple tags
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user selects "Javascript"
+- **AND** the user selects "jQuery"
+- **THEN** two tags appear inside the trigger area
+- **AND** both tags are displayed inline
+
+#### Scenario: Removing a tag deselects the option
+
+- **GIVEN** "Javascript" is selected and displayed as a tag
+- **WHEN** the user clicks the X icon on the "Javascript" tag
+- **THEN** the "Javascript" tag disappears from the trigger area
+- **AND** the "Javascript" option reappears in the dropdown list
+- **AND** the placeholder text "Add Language" reappears when no tags remain
+
+#### Scenario: Hovering a dropdown option highlights it
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user hovers over the "PHP" option
+- **THEN** the option background changes to #f16821 (brand orange)
+- **AND** the option text color changes to #fff (white)
+
+#### Scenario: Dropdown closes on outside click
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown area
+- **THEN** the dropdown panel closes with a fade-out animation
+
+#### Scenario: Dropdown closes on second trigger click
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks the dropdown trigger again
+- **THEN** the dropdown panel closes
+
+#### Scenario: Dropdown list animates on open
+
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the dropdown trigger
+- **THEN** the dropdown list transitions from `translate(0, 20px) scale(0.8) opacity: 0` to `translate(0, 12px) scale(1) opacity: 1`
+- **AND** the transition uses a cubic-bezier easing curve
 
 ### Accessibility
 
-Scenario: Dropdown trigger is keyboard accessible
-Given the page is loaded
-When the user presses Tab to focus the dropdown trigger
-Then the trigger receives visible focus indication
-And pressing Enter or Space opens the dropdown
+#### Scenario: Dropdown trigger is keyboard accessible
 
-Scenario: Options are navigable by keyboard
-Given the dropdown is open
-When the user presses ArrowDown
-Then focus moves to the next option
-And pressing ArrowUp moves focus to the previous option
+- **GIVEN** the page is loaded
+- **WHEN** the user presses Tab to focus the dropdown trigger
+- **THEN** the trigger receives visible focus indication
+- **AND** pressing Enter or Space opens the dropdown
 
-Scenario: Selection works with keyboard
-Given the dropdown is open and an option is focused
-When the user presses Space or Enter
-Then the focused option is selected and a tag appears
+#### Scenario: Options are navigable by keyboard
 
-Scenario: Tags are removable by keyboard
-Given a tag is displayed in the trigger
-When the user focuses the tag's close button and presses Enter
-Then the tag is removed
+- **GIVEN** the dropdown is open
+- **WHEN** the user presses ArrowDown
+- **THEN** focus moves to the next option
+- **AND** pressing ArrowUp moves focus to the previous option
+
+#### Scenario: Selection works with keyboard
+
+- **GIVEN** the dropdown is open and an option is focused
+- **WHEN** the user presses Space or Enter
+- **THEN** the focused option is selected and a tag appears
+
+#### Scenario: Tags are removable by keyboard
+
+- **GIVEN** a tag is displayed in the trigger
+- **WHEN** the user focuses the tag's close button and presses Enter
+- **THEN** the tag is removed
 
 ## Verification Checklist
 

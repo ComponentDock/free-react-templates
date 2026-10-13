@@ -53,75 +53,85 @@ The template is a **centered wizard component** with two visual halves:
    - **Action Button:** "NEXT" — sharp rectangle, white border, white text.
    - **Step Counter:** "1 / 3" — bottom-right of panel.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: FormNova — Multi-Step Restaurant Booking Wizard
 
   Background:
-    Given the user navigates to the FormNova template
-    And the page displays a dark wizard panel over a hero image
+- **GIVEN** the user navigates to the FormNova template
+- **AND** the page displays a dark wizard panel over a hero image
 
-  Scenario: Initial rendering
-    Then the heading "BOOK A TABLE" is visible
-    And the cursive subheading is visible
-    And three form fields are visible: People, Date, Time
-    And the step counter shows "1 / 3"
-    And the "NEXT" button is visible
+#### Scenario: Initial rendering
 
-  Scenario: Step indicator reflects current step
-    Then the step counter displays "1 / 3" on the first step
-    When the user completes step 1 and advances
-    Then the step counter displays "2 / 3"
-    When the user completes step 2 and advances
-    Then the step counter displays "3 / 3"
+- **THEN** the heading "BOOK A TABLE" is visible
+- **AND** the cursive subheading is visible
+- **AND** three form fields are visible: People, Date, Time
+- **AND** the step counter shows "1 / 3"
+- **AND** the "NEXT" button is visible
 
-  Scenario: People selector
-    Given the People field is visible with default value "1"
-    When the user clicks the People dropdown
-    Then a list of party size options is shown
-    When the user selects a party size
-    Then the People field updates to show the selected value
+#### Scenario: Step indicator reflects current step
 
-  Scenario: Date picker
-    Given the Date field is visible
-    When the user selects a date
-    Then the Date field displays the chosen date in "DD MON YYYY" format
+- **THEN** the step counter displays "1 / 3" on the first step
+- **WHEN** the user completes step 1 and advances
+- **THEN** the step counter displays "2 / 3"
+- **WHEN** the user completes step 2 and advances
+- **THEN** the step counter displays "3 / 3"
 
-  Scenario: Time range selection
-    Given the start Time field shows a default value
-    And the end Time field shows a default value
-    When the user selects a start time
-    Then the start time field updates
-    When the user selects an end time
-    Then the end time field updates
+#### Scenario: People selector
 
-  Scenario: Navigation between steps
-    Given the wizard is on step 1
-    When the user clicks "NEXT"
-    Then the wizard advances to step 2
-    And the step counter updates to "2 / 3"
+- **GIVEN** the People field is visible with default value "1"
+- **WHEN** the user clicks the People dropdown
+- **THEN** a list of party size options is shown
+- **WHEN** the user selects a party size
+- **THEN** the People field updates to show the selected value
 
-  Scenario: Back navigation
-    Given the wizard is on step 2
-    When the user clicks "BACK"
-    Then the wizard returns to step 1
-    And the step counter updates to "1 / 3"
+#### Scenario: Date picker
 
-  Scenario: Final step shows confirmation
-    Given the wizard is on step 3
-    Then a booking confirmation summary is displayed
-    And a "BOOK NOW" or "CONFIRM" button is visible
+- **GIVEN** the Date field is visible
+- **WHEN** the user selects a date
+- **THEN** the Date field displays the chosen date in "DD MON YYYY" format
 
-  Scenario: Keyboard accessibility
-    Given the wizard is rendered
-    When the user presses Tab
-    Then focus moves through form fields in logical order
-    And focus indicators are visible on each interactive element
+#### Scenario: Time range selection
 
-  Scenario: Responsive layout
-    Given the viewport is narrower than 768px
-    Then the hero image is hidden or stacked above the form panel
-    And the form panel takes full width
+- **GIVEN** the start Time field shows a default value
+- **AND** the end Time field shows a default value
+- **WHEN** the user selects a start time
+- **THEN** the start time field updates
+- **WHEN** the user selects an end time
+- **THEN** the end time field updates
+
+#### Scenario: Navigation between steps
+
+- **GIVEN** the wizard is on step 1
+- **WHEN** the user clicks "NEXT"
+- **THEN** the wizard advances to step 2
+- **AND** the step counter updates to "2 / 3"
+
+#### Scenario: Back navigation
+
+- **GIVEN** the wizard is on step 2
+- **WHEN** the user clicks "BACK"
+- **THEN** the wizard returns to step 1
+- **AND** the step counter updates to "1 / 3"
+
+#### Scenario: Final step shows confirmation
+
+- **GIVEN** the wizard is on step 3
+- **THEN** a booking confirmation summary is displayed
+- **AND** a "BOOK NOW" or "CONFIRM" button is visible
+
+#### Scenario: Keyboard accessibility
+
+- **GIVEN** the wizard is rendered
+- **WHEN** the user presses Tab
+- **THEN** focus moves through form fields in logical order
+- **AND** focus indicators are visible on each interactive element
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the viewport is narrower than 768px
+- **THEN** the hero image is hidden or stacked above the form panel
+- **AND** the form panel takes full width
 
 ## Verification Checklist
 

@@ -70,85 +70,92 @@ Recreation of ColorLib **Razo** template as a React 19 + Vite + Tailwind 4 + Typ
     - Column 3: "Instagram" — 3×3 grid of Instagram thumbnail images.
     - Copyright bar at bottom with attribution text and Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Soundbyte Radio Template
 
-```gherkin
 Feature: Soundbyte — Radio & Music Website Template
-  As a user visiting the Soundbyte website
-  I want to see a professional radio/music website
-  So that I can browse shows, view music charts, and discover trending content
+As a user visiting the Soundbyte website
+I want to see a professional radio/music website
+So that I can browse shows, view music charts, and discover trending content
 
-  Scenario: Header displays navigation and search
-    Given I am on the Soundbyte homepage
-    Then I see a sticky navbar
-    And I see the logo on the left
-    And I see navigation links: Home, Pages, Shows, Charts, Podcasts, Events, Blog
-    And I see a social share icon and a search icon
-    And on mobile I see a hamburger menu toggle
+#### Scenario: Header displays navigation and search
 
-  Scenario: Hero carousel shows music event with CTA
-    Given I am on the Soundbyte homepage
-    Then I see a full-width carousel with 4 slides
-    And each slide has a background image with dark overlay
-    And each slide shows heading "Designed For Music, Engineered to Last"
-    And each slide shows subtitle about a party event
-    And each slide has a "Book Now" CTA button in pink (#dc2878)
-    And the carousel auto-rotates
+- **GIVEN** I am on the Soundbyte homepage
+- **THEN** I see a sticky navbar
+- **AND** I see the logo on the left
+- **AND** I see navigation links: Home, Pages, Shows, Charts, Podcasts, Events, Blog
+- **AND** I see a social share icon and a search icon
+- **AND** on mobile I see a hamburger menu toggle
 
-  Scenario: Blog area shows featured and trending posts
-    Given I scroll to the Blog area
-    Then I see a "Blog New" section on the left (8-column width)
-    And I see a featured post with large image overlay and title
-    And I see 4 smaller posts in a 2x2 grid with thumbnails
-    And I see a "Trending" section on the right (4-column width)
-    And I see a featured trending post with image overlay
-    And I see 4 trending posts listed vertically
+#### Scenario: Hero carousel shows music event with CTA
 
-  Scenario: Music charts section displays track list
-    Given I scroll to the Music Charts section
-    Then I see a dark parallax background
-    And I see section heading "Music Chart"
-    And I see a "Show All Trending (Top 10)" button
-    And I see 5 music chart items listed vertically
-    And each item has a serial number, thumbnail, audio player, title, and price button
+- **GIVEN** I am on the Soundbyte homepage
+- **THEN** I see a full-width carousel with 4 slides
+- **AND** each slide has a background image with dark overlay
+- **AND** each slide shows heading "Designed For Music, Engineered to Last"
+- **AND** each slide shows subtitle about a party event
+- **AND** each slide has a "Book Now" CTA button in pink (#dc2878)
+- **AND** the carousel auto-rotates
 
-  Scenario: Trending video section shows video grid
-    Given I scroll to the Trending Video section
-    Then I see a centered section heading "Trending Video"
-    And I see a featured YouTube video embed (full-width)
-    And I see 6 video post thumbnails in a 3-column grid
+#### Scenario: Blog area shows featured and trending posts
 
-  Scenario: App download section promotes the mobile app
-    Given I scroll to the App Download section
-    Then I see a dark parallax background
-    And I see a phone mockup image on the left
-    And I see "Download app and Enjoy radio & music" text on the right
-    And I see a "Radio Music" heading
-    And I see Google Play and App Store badge images
+- **GIVEN** I scroll to the Blog area
+- **THEN** I see a "Blog New" section on the left (8-column width)
+- **AND** I see a featured post with large image overlay and title
+- **AND** I see 4 smaller posts in a 2x2 grid with thumbnails
+- **AND** I see a "Trending" section on the right (4-column width)
+- **AND** I see a featured trending post with image overlay
+- **AND** I see 4 trending posts listed vertically
 
-  Scenario: Weekly schedule shows broadcast timetable
-    Given I scroll to the Weekly Schedule section
-    Then I see a centered section heading "Weekly Schedule"
-    And I see a responsive table with columns for Monday through Saturday
-    And each cell shows show name and time slot
+#### Scenario: Music charts section displays track list
 
-  Scenario: Latest news carousel shows news cards
-    Given I scroll to the Latest News section
-    Then I see a dark parallax background
-    And I see "Latest News" heading and "Show All Blog" button
-    And I see a carousel of news cards
-    And each card has a background image, title, excerpt, date, and "Read More" button
+- **GIVEN** I scroll to the Music Charts section
+- **THEN** I see a dark parallax background
+- **AND** I see section heading "Music Chart"
+- **AND** I see a "Show All Trending (Top 10)" button
+- **AND** I see 5 music chart items listed vertically
+- **AND** each item has a serial number, thumbnail, audio player, title, and price button
 
-  Scenario: Footer shows contact info and social feeds
-    Given I scroll to the footer
-    Then I see the logo and description text
-    And I see contact info (address, phone, email) with icons
-    And I see a Twitter Feed section with 3 tweet items
-    And I see an Instagram grid with 9 thumbnail images
-    And I see a copyright bar with Component Dock link
-```
+#### Scenario: Trending video section shows video grid
+
+- **GIVEN** I scroll to the Trending Video section
+- **THEN** I see a centered section heading "Trending Video"
+- **AND** I see a featured YouTube video embed (full-width)
+- **AND** I see 6 video post thumbnails in a 3-column grid
+
+#### Scenario: App download section promotes the mobile app
+
+- **GIVEN** I scroll to the App Download section
+- **THEN** I see a dark parallax background
+- **AND** I see a phone mockup image on the left
+- **AND** I see "Download app and Enjoy radio & music" text on the right
+- **AND** I see a "Radio Music" heading
+- **AND** I see Google Play and App Store badge images
+
+#### Scenario: Weekly schedule shows broadcast timetable
+
+- **GIVEN** I scroll to the Weekly Schedule section
+- **THEN** I see a centered section heading "Weekly Schedule"
+- **AND** I see a responsive table with columns for Monday through Saturday
+- **AND** each cell shows show name and time slot
+
+#### Scenario: Latest news carousel shows news cards
+
+- **GIVEN** I scroll to the Latest News section
+- **THEN** I see a dark parallax background
+- **AND** I see "Latest News" heading and "Show All Blog" button
+- **AND** I see a carousel of news cards
+- **AND** each card has a background image, title, excerpt, date, and "Read More" button
+
+#### Scenario: Footer shows contact info and social feeds
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see the logo and description text
+- **AND** I see contact info (address, phone, email) with icons
+- **AND** I see a Twitter Feed section with 3 tweet items
+- **AND** I see an Instagram grid with 9 thumbnail images
+- **AND** I see a copyright bar with Component Dock link
 
 ## Verification checklist
 

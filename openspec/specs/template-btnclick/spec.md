@@ -10,14 +10,20 @@ Btnclick is a bootstrap button component page. It recreates the ColorLib **Boots
 
 ### Requirement 1: Size Variants & Layout
 
+#### Scenario: Size Variants & Layout
+
 - The page displays size variant buttons (Large, Medium, Small) matching the Bootstrap 4 buttons style #10.
 - Heading `#10 — Bootstrap 4 Buttons` is prominently displayed.
 
 ### Requirement 2: Color Palette Buttons
 
+#### Scenario: Color Palette Buttons
+
 - Displays a comprehensive set of button color variants (Primary, Secondary, Success, Info, Warning, Danger, Light, Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray).
 
 ### Requirement 3: Block Button & Footer
+
+#### Scenario: Block Button & Footer
 
 - Includes a full-width block button.
 - Includes a professional footer linking `https://www.componentdock.com/` ("Component Dock").

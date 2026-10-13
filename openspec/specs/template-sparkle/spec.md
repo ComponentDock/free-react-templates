@@ -142,120 +142,108 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
     - Contact: address, phone, email
     - Copyright line + "Made with Component Dock" link
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation
-  Given the user is on the Sparkle homepage
-  Then the navbar shows the brand "Sparkle"
-  And the nav contains links: Home, About, Pricing, Services, Blog, Contact
-  And a "Request A Quote" CTA button is visible
-```
+#### Scenario: Navbar displays brand and navigation
+
+- **GIVEN** the user is on the Sparkle homepage
+- **THEN** the navbar shows the brand "Sparkle"
+- **AND** the nav contains links: Home, About, Pricing, Services, Blog, Contact
+- **AND** a "Request A Quote" CTA button is visible
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero displays heading and CTA
-  Given the user is on the Sparkle homepage
-  Then the hero shows "A Clean Home is A Happy Home"
-  And a "Request A Quote" button is visible
-  And a dark overlay covers the background image
-```
+#### Scenario: Hero displays heading and CTA
+
+- **GIVEN** the user is on the Sparkle homepage
+- **THEN** the hero shows "A Clean Home is A Happy Home"
+- **AND** a "Request A Quote" button is visible
+- **AND** a dark overlay covers the background image
 
 ### Booking Form
 
-```gherkin
-Scenario: Booking form accepts service details
-  Given the user scrolls to the "Book A Service" section
-  Then a form with First Name, Last Name, Service dropdown, Phone, Date, and Time fields is shown
-  And a "Request A Quote" submit button is present
-  And the service dropdown has options: Residential, Commercial, Construction, Windows, Carpet, Furniture, Other
-```
+#### Scenario: Booking form accepts service details
+
+- **GIVEN** the user scrolls to the "Book A Service" section
+- **THEN** a form with First Name, Last Name, Service dropdown, Phone, Date, and Time fields is shown
+- **AND** a "Request A Quote" submit button is present
+- **AND** the service dropdown has options: Residential, Commercial, Construction, Windows, Carpet, Furniture, Other
 
 ### Why Choose Us
 
-```gherkin
-Scenario: Why Choose Us shows 4 feature cards
-  Given the user scrolls to the "Why Choose Us" section
-  Then 4 feature cards are displayed
-  And the features are: Highly Trained Staff, Best Equipments, 100% Warranty, Fast & Effective Service
-```
+#### Scenario: Why Choose Us shows 4 feature cards
+
+- **GIVEN** the user scrolls to the "Why Choose Us" section
+- **THEN** 4 feature cards are displayed
+- **AND** the features are: Highly Trained Staff, Best Equipments, 100% Warranty, Fast & Effective Service
 
 ### Industries
 
-```gherkin
-Scenario: Industries section shows checklist
-  Given the user scrolls to the "Industries We Serve" section
-  Then 8 industries are listed with checkmark icons
-  And the industries include Airport & Airlines, House & Offices, Schools & Universities
-```
+#### Scenario: Industries section shows checklist
+
+- **GIVEN** the user scrolls to the "Industries We Serve" section
+- **THEN** 8 industries are listed with checkmark icons
+- **AND** the industries include Airport & Airlines, House & Offices, Schools & Universities
 
 ### Services
 
-```gherkin
-Scenario: Services section shows 6 service cards
-  Given the user scrolls to the "Offering Best Cleaning Services" section
-  Then 6 service cards are displayed in a grid
-  And each card shows a background image, service name, price, and "Learn more" button
-```
+#### Scenario: Services section shows 6 service cards
+
+- **GIVEN** the user scrolls to the "Offering Best Cleaning Services" section
+- **THEN** 6 service cards are displayed in a grid
+- **AND** each card shows a background image, service name, price, and "Learn more" button
 
 ### How It Works
 
-```gherkin
-Scenario: How it works shows 3 steps
-  Given the user scrolls to the "How it Works" section
-  Then 3 steps are shown: Pick a suitable plan, Set your schedule, Get things done
-  And each step has a numbered icon and description
-  And the section has a dark overlay background
-```
+#### Scenario: How it works shows 3 steps
+
+- **GIVEN** the user scrolls to the "How it Works" section
+- **THEN** 3 steps are shown: Pick a suitable plan, Set your schedule, Get things done
+- **AND** each step has a numbered icon and description
+- **AND** the section has a dark overlay background
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel displays reviews
-  Given the user scrolls to the "What Are Clients Says" section
-  Then a carousel of testimonial cards is visible
-  And each card shows a user photo, name, location, and quote
-```
+#### Scenario: Testimonials carousel displays reviews
+
+- **GIVEN** the user scrolls to the "What Are Clients Says" section
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card shows a user photo, name, location, and quote
 
 ### Pricing
 
-```gherkin
-Scenario: Pricing shows 4 plans
-  Given the user scrolls to the "Our Plans & Pricing" section
-  Then 4 pricing cards are shown: Basic ($29), Standard ($59), Premium ($79), Ultimate ($99)
-  And each card has a feature list and "Sign Up" button
-  And the Premium plan is highlighted
-```
+#### Scenario: Pricing shows 4 plans
+
+- **GIVEN** the user scrolls to the "Our Plans & Pricing" section
+- **THEN** 4 pricing cards are shown: Basic ($29), Standard ($59), Premium ($79), Ultimate ($99)
+- **AND** each card has a feature list and "Sign Up" button
+- **AND** the Premium plan is highlighted
 
 ### Blog
 
-```gherkin
-Scenario: Blog section shows recent posts
-  Given the user scrolls to the "Recent Post" section
-  Then 3 blog cards are displayed
-  And each card shows an image, date, author, title, and description
-```
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the "Recent Post" section
+- **THEN** 3 blog cards are displayed
+- **AND** each card shows an image, date, author, title, and description
 
 ### Counters
 
-```gherkin
-Scenario: Counters display statistics
-  Given the user scrolls to the counters section
-  Then 4 stats are shown: Project Completed (4800), Employees (14000), Clients (200), Awards (5000)
-```
+#### Scenario: Counters display statistics
+
+- **GIVEN** the user scrolls to the counters section
+- **THEN** 4 stats are shown: Project Completed (4800), Employees (14000), Clients (200), Awards (5000)
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays columns and contact
-  Given the user scrolls to the footer
-  Then 4 columns are shown: About, Recent Posts, Explore, Contact
-  And social media icons are in the About column
-  And a "Made with Component Dock" link is present
-```
+#### Scenario: Footer displays columns and contact
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are shown: About, Recent Posts, Explore, Contact
+- **AND** social media icons are in the About column
+- **AND** a "Made with Component Dock" link is present
 
 ## Verification Checklist
 

@@ -61,104 +61,131 @@ Recreation of ColorLib's **Universityedu** template.
 8. **CTA Split** — Two-column split: left = image, right = dark green bg (#007A5C) with white text: heading "TRUSTED BY OVER 6000+ STUDENTS", two paragraphs, "Join Now" white link.
 9. **Footer** — Light gray bg: logo, Quick Links, Programs, Resources columns + Newsletter signup form (email input + submit). Bottom bar with copyright + social links.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Eduford template behaviour
+
 Feature: Eduford - Education Landing Page
 
-  Background:
-    Given the user is on the Eduford homepage
+Background:
+- **GIVEN** the user is on the Eduford homepage
 
-  # --- Header ---
-  Scenario: Header displays promo bar with countdown
-    Then a top promo bar is visible with promotional text
-    And a countdown timer shows days, hours, minutes, seconds
+**--- Header ---**
 
-  Scenario: Navigation links are present
-    Then the navigation contains links: Home, About, Programs, Blog, Contact
-    And a phone number is displayed in the header
-    And social media icons are visible
+#### Scenario: Header displays promo bar with countdown
 
-  Scenario: Sticky header behavior
-    When the user scrolls down
-    Then the header remains fixed at the top of the viewport
+- **THEN** a top promo bar is visible with promotional text
+- **AND** a countdown timer shows days, hours, minutes, seconds
 
-  # --- Hero ---
-  Scenario: Hero section renders with heading and CTA
-    Then the hero displays the tagline "EDUCATION & SCHOOL"
-    And the heading reads "SHOWCASE COURSES, EVENTS AND MORE!"
-    And a "Get Started Now" button is visible
+#### Scenario: Navigation links are present
 
-  Scenario: Hero has full-width background with overlay
-    Then the hero background covers the full viewport width
-    And a dark overlay is applied over the background image
+- **THEN** the navigation contains links: Home, About, Programs, Blog, Contact
+- **AND** a phone number is displayed in the header
+- **AND** social media icons are visible
 
-  # --- About ---
-  Scenario: About section shows image and text
-    Then an image is displayed on the left side
-    And the heading "A comprehensive teaching approach" is visible
-    And two paragraphs of descriptive text are shown
-    And a "Learn More" link is present
+#### Scenario: Sticky header behavior
 
-  Scenario: About section has warm peach background
-    Then the about section background color is #FCF2EB
+- **WHEN** the user scrolls down
+- **THEN** the header remains fixed at the top of the viewport
 
-  # --- Programs ---
-  Scenario: Programs section displays program cards
-    Then the heading "Programs we Offer" is visible
-    And two program cards are displayed in a grid
-    And each card has an image, title, description, and "Learn More" link
+**--- Hero ---**
 
-  Scenario: Program cards show Faculty of Science and Faculty of Arts
-    Then one card is titled "Faculty of Science"
-    And another card is titled "Faculty of Arts"
+#### Scenario: Hero section renders with heading and CTA
 
-  # --- Gallery / Essential Resources ---
-  Scenario: Gallery section has split layout
-    Then the left side shows "Essential resources" heading on green background
-    And three resource items are listed: First year students, Tuition & fees, International students
-    And each item has a title, description, and arrow icon
-    And the right side displays an image
+- **THEN** the hero displays the tagline "EDUCATION & SCHOOL"
+- **AND** the heading reads "SHOWCASE COURSES, EVENTS AND MORE!"
+- **AND** a "Get Started Now" button is visible
 
-  # --- Top Stories ---
-  Scenario: Top Stories section shows three story cards
-    Then the heading "Top Stories" is visible
-    And a "More Stories" link is present
-    And three story cards are displayed in a row
-    And each card has an image and a centered title
+#### Scenario: Hero has full-width background with overlay
 
-  # --- Partners ---
-  Scenario: Partners section displays logos
-    Then the heading "Our Partners" is visible
-    And a logo carousel/slider displays partner logos
+- **THEN** the hero background covers the full viewport width
+- **AND** a dark overlay is applied over the background image
 
-  # --- CTA Split ---
-  Scenario: CTA section has green split layout
-    Then the left side shows an image
-    And the right side has a green background (#007A5C)
-    And white text reads "TRUSTED BY OVER 6000+ STUDENTS"
-    And a "Join Now" white button is visible
+**--- About ---**
 
-  # --- Footer ---
-  Scenario: Footer has four columns and newsletter
-    Then the footer contains a logo, Quick Links, Programs, and Resources columns
-    And a newsletter signup form with email input and submit button is present
-    And social media links are displayed in the footer bottom
+#### Scenario: About section shows image and text
 
-  Scenario: Footer links to Component Dock
-    Then the footer contains a link to https://www.componentdock.com/
+- **THEN** an image is displayed on the left side
+- **AND** the heading "A comprehensive teaching approach" is visible
+- **AND** two paragraphs of descriptive text are shown
+- **AND** a "Learn More" link is present
 
-  # --- Responsive ---
-  Scenario: Mobile navigation collapses
-    When the viewport width is less than 992px
-    Then the main navigation is hidden
-    And a mobile menu toggle is displayed
+#### Scenario: About section has warm peach background
 
-  Scenario: Sections stack vertically on mobile
-    When the viewport width is less than 768px
-    Then two-column sections stack into a single column
-    And section padding is reduced
-```
+- **THEN** the about section background color is #FCF2EB
+
+**--- Programs ---**
+
+#### Scenario: Programs section displays program cards
+
+- **THEN** the heading "Programs we Offer" is visible
+- **AND** two program cards are displayed in a grid
+- **AND** each card has an image, title, description, and "Learn More" link
+
+#### Scenario: Program cards show Faculty of Science and Faculty of Arts
+
+- **THEN** one card is titled "Faculty of Science"
+- **AND** another card is titled "Faculty of Arts"
+
+**--- Gallery / Essential Resources ---**
+
+#### Scenario: Gallery section has split layout
+
+- **THEN** the left side shows "Essential resources" heading on green background
+- **AND** three resource items are listed: First year students, Tuition & fees, International students
+- **AND** each item has a title, description, and arrow icon
+- **AND** the right side displays an image
+
+**--- Top Stories ---**
+
+#### Scenario: Top Stories section shows three story cards
+
+- **THEN** the heading "Top Stories" is visible
+- **AND** a "More Stories" link is present
+- **AND** three story cards are displayed in a row
+- **AND** each card has an image and a centered title
+
+**--- Partners ---**
+
+#### Scenario: Partners section displays logos
+
+- **THEN** the heading "Our Partners" is visible
+- **AND** a logo carousel/slider displays partner logos
+
+**--- CTA Split ---**
+
+#### Scenario: CTA section has green split layout
+
+- **THEN** the left side shows an image
+- **AND** the right side has a green background (#007A5C)
+- **AND** white text reads "TRUSTED BY OVER 6000+ STUDENTS"
+- **AND** a "Join Now" white button is visible
+
+**--- Footer ---**
+
+#### Scenario: Footer has four columns and newsletter
+
+- **THEN** the footer contains a logo, Quick Links, Programs, and Resources columns
+- **AND** a newsletter signup form with email input and submit button is present
+- **AND** social media links are displayed in the footer bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** the footer contains a link to https://www.componentdock.com/
+
+**--- Responsive ---**
+
+#### Scenario: Mobile navigation collapses
+
+- **WHEN** the viewport width is less than 992px
+- **THEN** the main navigation is hidden
+- **AND** a mobile menu toggle is displayed
+
+#### Scenario: Sections stack vertically on mobile
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** two-column sections stack into a single column
+- **AND** section padding is reduced
 
 ## Verification Checklist
 

@@ -13,34 +13,37 @@ Recreation of ColorLib Bootstrap Buttons 11 (`https://colorlib.com/wp/template/b
 - **Button Radii**: Standard rounded (`rounded`), pill (`rounded-full`), square (`rounded-none`)
 - **Section Backgrounds**: Clean white (`bg-white`) and light gray (`bg-gray-50`) with subtle card borders
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Button Sizes & Dimensions
 
 - As a developer, I want to explore different button sizes (Large, Medium, Small) so I can choose the appropriate scale for my user interfaces.
 
-Scenario: Viewing button sizes
-Given the user is on the BtnShade home page
-When the user views the button sizes section
-Then they should see Large, Medium, and Small button variants with proportional padding and typography
+#### Scenario: Viewing button sizes
+
+- **GIVEN** the user is on the BtnShade home page
+- **WHEN** the user views the button sizes section
+- **THEN** they should see Large, Medium, and Small button variants with proportional padding and typography
 
 ### Requirement 2: Comprehensive Color Palette
 
 - As a UI designer, I want to test all standard Bootstrap and custom shaded button colors (Primary, Secondary, Success, Info, Warning, Danger, Light, Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray) to evaluate color contrast and hierarchy.
 
-Scenario: Exploring color variants
-Given the user is on the color variants section
-When the user browses the complete grid of 18 button color options
-Then each button should display its distinct background color with accessible foreground text and hover effects
+#### Scenario: Exploring color variants
+
+- **GIVEN** the user is on the color variants section
+- **WHEN** the user browses the complete grid of 18 button color options
+- **THEN** each button should display its distinct background color with accessible foreground text and hover effects
 
 ### Requirement 3: Full-Width & Special Layouts
 
 - As a frontend engineer, I want to inspect full-width buttons and responsive alignment specimens for form submission and call-to-action blocks.
 
-Scenario: Viewing full-width buttons
-Given the user is on the full-width button section
-When the user views the container
-Then a full-width block button should span the container width with centered label text
+#### Scenario: Viewing full-width buttons
+
+- **GIVEN** the user is on the full-width button section
+- **WHEN** the user views the container
+- **THEN** a full-width block button should span the container width with centered label text
 
 ## Verification Checklist
 

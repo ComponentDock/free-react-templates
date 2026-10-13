@@ -27,87 +27,98 @@ Recreation of ColorLib "Colorlib Wizard 20" — a multi-step account setup wizar
 | Button hover | `background-color: #090909` | `.actions ul li a:hover` |
 | Title text shadow | `3px 4px 5px rgba(0,0,0,0.2)` | `.title-text` |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-Step Account Setup Wizard
 
 #### Scenario: Page Load and Gradient Background
-  Given the user opens the wizard page
-  Then the page background displays a vertical gradient from purple (#884d80) through lavender (#9795f0) to dark blue (#2b5876) and dark purple (#4e4376)
-  And a centered white card (330px wide) with 10px border-radius and subtle box-shadow is visible
-  And the card displays step indicator circles (3 circles) at the top
-  And step 1 is highlighted as active (gradient background, white text)
-  And steps 2 and 3 show inactive style (gray background, gray text)
-  And the step title text "Account Setup" is visible below the form heading
+
+- **GIVEN** the user opens the wizard page
+- **THEN** the page background displays a vertical gradient from purple (#884d80) through lavender (#9795f0) to dark blue (#2b5876) and dark purple (#4e4376)
+- **AND** a centered white card (330px wide) with 10px border-radius and subtle box-shadow is visible
+- **AND** the card displays step indicator circles (3 circles) at the top
+- **AND** step 1 is highlighted as active (gradient background, white text)
+- **AND** steps 2 and 3 show inactive style (gray background, gray text)
+- **AND** the step title text "Account Setup" is visible below the form heading
 
 #### Scenario: Step 1 — Account Setup
-  Given the wizard is on step 1
-  Then the heading "Creat your account" is displayed (uppercase, 16px, bold)
-  And an email input with placeholder "Eg: aucreative@gmail.com" is shown
-  And a password input with placeholder "Password" is shown
-  And a confirm password input with placeholder "Confirm Password" is shown
-  And a "Next" button is visible at the bottom of the card
+
+- **GIVEN** the wizard is on step 1
+- **THEN** the heading "Creat your account" is displayed (uppercase, 16px, bold)
+- **AND** an email input with placeholder "Eg: aucreative@gmail.com" is shown
+- **AND** a password input with placeholder "Password" is shown
+- **AND** a confirm password input with placeholder "Confirm Password" is shown
+- **AND** a "Next" button is visible at the bottom of the card
 
 #### Scenario: Step 1 Input Interaction
-  Given the user is on step 1
-  When the user clicks on the email input
-  Then the input border shows a gradient effect (blue → purple → dark blue)
-  And the placeholder text remains visible (#999 color)
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks on the email input
+- **THEN** the input border shows a gradient effect (blue → purple → dark blue)
+- **AND** the placeholder text remains visible (#999 color)
 
 #### Scenario: Step 1 to Step 2 Navigation
-  Given the user is on step 1
-  When the user clicks "Next"
-  Then step 2 content slides into view
-  And the step indicator updates: step 1 circle shows completed state, step 2 becomes active (gradient bg)
-  And the heading changes to "Social profiles"
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "Next"
+- **THEN** step 2 content slides into view
+- **AND** the step indicator updates: step 1 circle shows completed state, step 2 becomes active (gradient bg)
+- **AND** the heading changes to "Social profiles"
 
 #### Scenario: Step 2 — Social Profiles
-  Given the wizard is on step 2
-  Then the heading "Social profiles" is displayed (uppercase)
-  And a text input with placeholder "Twitter" is shown
-  And a text input with placeholder "Facebook" is shown
-  And a text input with placeholder "Google Plus" is shown
-  And both "Previous" and "Next" buttons are visible
+
+- **GIVEN** the wizard is on step 2
+- **THEN** the heading "Social profiles" is displayed (uppercase)
+- **AND** a text input with placeholder "Twitter" is shown
+- **AND** a text input with placeholder "Facebook" is shown
+- **AND** a text input with placeholder "Google Plus" is shown
+- **AND** both "Previous" and "Next" buttons are visible
 
 #### Scenario: Step 2 Back Navigation
-  Given the user is on step 2
-  When the user clicks "Previous"
-  Then step 1 content returns
-  And the form fields retain their entered values
-  And the step indicator reverts to step 1 active
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Previous"
+- **THEN** step 1 content returns
+- **AND** the form fields retain their entered values
+- **AND** the step indicator reverts to step 1 active
 
 #### Scenario: Step 2 to Step 3 Navigation
-  Given the user is on step 2
-  When the user clicks "Next"
-  Then step 3 content appears
-  And the step indicator updates: step 2 shows completed, step 3 becomes active
-  And the heading changes to "Personal Details"
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Next"
+- **THEN** step 3 content appears
+- **AND** the step indicator updates: step 2 shows completed, step 3 becomes active
+- **AND** the heading changes to "Personal Details"
 
 #### Scenario: Step 3 — Personal Details
-  Given the wizard is on step 3
-  Then the heading "Personal Details" is displayed (uppercase)
-  And a text input with placeholder "Your name" is shown
-  And a text input with placeholder "Phone" is shown
-  And a text input with placeholder "Address" is shown
-  And "Previous" and "Finish" (or submit) buttons are visible
+
+- **GIVEN** the wizard is on step 3
+- **THEN** the heading "Personal Details" is displayed (uppercase)
+- **AND** a text input with placeholder "Your name" is shown
+- **AND** a text input with placeholder "Phone" is shown
+- **AND** a text input with placeholder "Address" is shown
+- **AND** "Previous" and "Finish" (or submit) buttons are visible
 
 #### Scenario: Step 3 Submit
-  Given the user is on step 3
-  When the user clicks the submit/finish button
-  Then the form data is processed
-  And a confirmation or redirect occurs
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks the submit/finish button
+- **THEN** the form data is processed
+- **AND** a confirmation or redirect occurs
 
 #### Scenario: Responsive Layout
-  Given the viewport is 480px or narrower
-  Then the container width becomes full width minus 40px padding
-  And the content card fills the available width
-  And the action buttons resize to 100px width
-  And form padding adjusts to 20px left/right
+
+- **GIVEN** the viewport is 480px or narrower
+- **THEN** the container width becomes full width minus 40px padding
+- **AND** the content card fills the available width
+- **AND** the action buttons resize to 100px width
+- **AND** form padding adjusts to 20px left/right
 
 #### Scenario: Button Hover States
-  Given any action button is displayed
-  When the user hovers over the button
-  Then the button background changes to dark (#090909)
+
+- **GIVEN** any action button is displayed
+- **WHEN** the user hovers over the button
+- **THEN** the button background changes to dark (#090909)
 
 ## Verification Checklist
 

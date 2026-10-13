@@ -11,7 +11,7 @@ Recreation of ColorLib Calendar V07 (`https://colorlib.com/wp/template/calendar-
 - **Button & Card Styling:** Rounded corners (`rounded-xl`), soft shadow (`shadow-lg`), clean hover transitions.
 - **Section Structure:** Split layout with an image/event background panel on the left/top and an interactive calendar grid on the right/bottom.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Calendar Widget
 
@@ -19,24 +19,24 @@ As a user, I want to view a monthly calendar grid with selectable days, so that 
 
 #### Scenario: Display current month and navigation
 
-- Given the user opens the DayPlanner application
-- When the calendar renders
-- Then the current month and year are displayed with previous/next month navigation arrows
-- And weekdays (Sun-Sat) are correctly listed
+- **GIVEN** the user opens the DayPlanner application
+- **WHEN** the calendar renders
+- **THEN** the current month and year are displayed with previous/next month navigation arrows
+- **AND** weekdays (Sun-Sat) are correctly listed
 
 #### Scenario: Select a date and view events
 
-- Given the calendar shows the current month
-- When the user clicks on a specific date (e.g. 15th)
-- Then that date is highlighted as selected
-- And the side panel updates to show the background image, date header, and scheduled events for that day
+- **GIVEN** the calendar shows the current month
+- **WHEN** the user clicks on a specific date (e.g. 15th)
+- **THEN** that date is highlighted as selected
+- **AND** the side panel updates to show the background image, date header, and scheduled events for that day
 
 #### Scenario: Add a new event
 
-- Given the user is viewing a selected date
-- When the user clicks the "Add Event" button and submits event details (title, time)
-- Then the event is added to the list for that date
-- And displayed immediately in the events panel
+- **GIVEN** the user is viewing a selected date
+- **WHEN** the user clicks the "Add Event" button and submits event details (title, time)
+- **THEN** the event is added to the list for that date
+- **AND** displayed immediately in the events panel
 
 ## Verification Checklist
 

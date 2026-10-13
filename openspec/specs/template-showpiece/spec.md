@@ -43,7 +43,7 @@ Recreation of ColorLib **Portfolio 2** template as a React 19 + Vite + Tailwind 
 - Gallery has a distinctive blue circle that slides in from left on hover
 - "More Works" bar in dark background links to full portfolio page
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Sticky header with navigation
 

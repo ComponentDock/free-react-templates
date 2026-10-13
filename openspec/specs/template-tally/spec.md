@@ -31,69 +31,93 @@ Tally is an accounting & business consulting template with a top bar, navbar, he
 11. **Pricing** — 4 pricing tiers: Personal ($49), Business ($79), Ultimate ($109), Premium ($149), each with feature list + CTA button
 12. **Footer** — dark bg: About column + social, Services column, Discover column, Resources column, Free Consultation form, copyright with Component Dock link
 
-## Gherkin Scenarios
+## Requirements
 
 ### TopBar
 
-- Given the page loads, Then the top bar displays phone number and email address
-- Given the page loads, Then social media icons are visible in the top bar
+#### Scenario: TopBar
+
+- **GIVEN** the page loads, Then the top bar displays phone number and email address
+- **GIVEN** the page loads, Then social media icons are visible in the top bar
 
 ### Navbar
 
-- Given the page loads, Then the navbar shows brand "Tally"
-- Given the page loads, Then navigation links for Home, About, Services, Case Study, Blog, Contact are visible
-- Given the user scrolls down, Then the navbar becomes sticky
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, Then the navbar shows brand "Tally"
+- **GIVEN** the page loads, Then navigation links for Home, About, Services, Case Study, Blog, Contact are visible
+- **GIVEN** the user scrolls down, Then the navbar becomes sticky
 
 ### Hero
 
-- Given the page loads, Then a carousel displays the first slide with heading and CTA
-- Given the user waits, Then slides auto-rotate
-- Given a slide is active, Then it shows a background image with dark overlay and centered text
+#### Scenario: Hero
+
+- **GIVEN** the page loads, Then a carousel displays the first slide with heading and CTA
+- **GIVEN** the user waits, Then slides auto-rotate
+- **GIVEN** a slide is active, Then it shows a background image with dark overlay and centered text
 
 ### About
 
-- Given the page loads, Then an image appears on the left and text content on the right
-- Given the about section loads, Then 4 service items are displayed (Market Analysis, Accounting Advisor, General Consultancy, Structured Assessment)
+#### Scenario: About
+
+- **GIVEN** the page loads, Then an image appears on the left and text content on the right
+- **GIVEN** the about section loads, Then 4 service items are displayed (Market Analysis, Accounting Advisor, General Consultancy, Structured Assessment)
 
 ### Services
 
-- Given the page loads, Then 4 service cards are displayed in a grid
-- Given a service card renders, Then it shows an icon, heading, and description
+#### Scenario: Services
+
+- **GIVEN** the page loads, Then 4 service cards are displayed in a grid
+- **GIVEN** a service card renders, Then it shows an icon, heading, and description
 
 ### StatsCounter
 
-- Given the page loads, Then 4 stat counters are displayed
-- Given a counter enters viewport, Then the number animates from 0 to target value
+#### Scenario: StatsCounter
+
+- **GIVEN** the page loads, Then 4 stat counters are displayed
+- **GIVEN** a counter enters viewport, Then the number animates from 0 to target value
 
 ### Testimonials
 
-- Given the page loads, Then a testimonials carousel is displayed
-- Given a testimonial card renders, Then it shows a quote, avatar, name, and position
+#### Scenario: Testimonials
+
+- **GIVEN** the page loads, Then a testimonials carousel is displayed
+- **GIVEN** a testimonial card renders, Then it shows a quote, avatar, name, and position
 
 ### FAQ
 
-- Given the page loads, Then 4 FAQ items are displayed
-- Given the user clicks an FAQ header, Then the answer expands/collapses
+#### Scenario: FAQ
+
+- **GIVEN** the page loads, Then 4 FAQ items are displayed
+- **GIVEN** the user clicks an FAQ header, Then the answer expands/collapses
 
 ### Blog
 
-- Given the page loads, Then 3 blog cards are displayed
-- Given a blog card renders, Then it shows an image, date, author, comment count, and heading
+#### Scenario: Blog
+
+- **GIVEN** the page loads, Then 3 blog cards are displayed
+- **GIVEN** a blog card renders, Then it shows an image, date, author, comment count, and heading
 
 ### Newsletter
 
-- Given the page loads, Then a newsletter banner with email input and subscribe button is displayed
+#### Scenario: Newsletter
+
+- **GIVEN** the page loads, Then a newsletter banner with email input and subscribe button is displayed
 
 ### Pricing
 
-- Given the page loads, Then 4 pricing tiers are displayed
-- Given a pricing tier renders, Then it shows tier name, price, feature list, and CTA button
+#### Scenario: Pricing
+
+- **GIVEN** the page loads, Then 4 pricing tiers are displayed
+- **GIVEN** a pricing tier renders, Then it shows tier name, price, feature list, and CTA button
 
 ### Footer
 
-- Given the page loads, Then the footer shows About, Services, Discover, Resources columns
-- Given the page loads, Then a consultation form is visible in the footer
-- Given the page loads, Then the copyright links to Component Dock (https://www.componentdock.com/)
+#### Scenario: Footer
+
+- **GIVEN** the page loads, Then the footer shows About, Services, Discover, Resources columns
+- **GIVEN** the page loads, Then a consultation form is visible in the footer
+- **GIVEN** the page loads, Then the copyright links to Component Dock (https://www.componentdock.com/)
 
 ## Verification
 

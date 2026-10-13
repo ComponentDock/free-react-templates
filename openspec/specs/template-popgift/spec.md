@@ -38,74 +38,84 @@ The modal has a heavy box-shadow and rounded outer corners (7px), but sharp inne
 
 Screenshot analysis: The background behind the modal is transparent/dimmed. The modal body is warm cream (#fff4e4). The promo image is a lifestyle/product photo. The coupon code is prominently displayed in a dashed-border box.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: PopGift — Coupon Form Pop-up Modal
 
   Background:
-    Given the user is on the PopGift page
-    Then the "Launch modal" button is visible in the center of the viewport
+- **GIVEN** the user is on the PopGift page
+- **THEN** the "Launch modal" button is visible in the center of the viewport
 
-  Scenario: Modal opens on button click
-    Given the "Launch modal" button is visible
-    When the user clicks the "Launch modal" button
-    Then the coupon modal dialog is displayed centered on screen
-    And the modal has a promo image on the left side
-    And the heading "60% off coupon" is visible
-    And the descriptive paragraph text is visible below the heading
-    And the coupon code "SUMMER60" is displayed in a dashed-border box
-    And the "Use a coupon" primary button is visible
-    And the "Sorry, I don't want this." cancel link is visible
+#### Scenario: Modal opens on button click
 
-  Scenario: Modal closes on cancel click
-    Given the coupon modal is open
-    When the user clicks the "Sorry, I don't want this." cancel link
-    Then the modal closes and the page returns to the background state
+- **GIVEN** the "Launch modal" button is visible
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** the coupon modal dialog is displayed centered on screen
+- **AND** the modal has a promo image on the left side
+- **AND** the heading "60% off coupon" is visible
+- **AND** the descriptive paragraph text is visible below the heading
+- **AND** the coupon code "SUMMER60" is displayed in a dashed-border box
+- **AND** the "Use a coupon" primary button is visible
+- **AND** the "Sorry, I don't want this." cancel link is visible
 
-  Scenario: Modal closes on backdrop click
-    Given the coupon modal is open
-    When the user clicks outside the modal on the backdrop
-    Then the modal closes
+#### Scenario: Modal closes on cancel click
 
-  Scenario: Modal closes on close button
-    Given the coupon modal is open
-    When the user clicks the X close button in the modal header
-    Then the modal closes
+- **GIVEN** the coupon modal is open
+- **WHEN** the user clicks the "Sorry, I don't want this." cancel link
+- **THEN** the modal closes and the page returns to the background state
 
-  Scenario: Promo image is visible
-    Given the coupon modal is open
-    Then the promo image is displayed on the left side of the modal body
-    And the promo image is 200px wide
+#### Scenario: Modal closes on backdrop click
 
-  Scenario: Coupon code styling
-    Given the coupon modal is open
-    Then the coupon code has a white background
-    And the coupon code has a 2px dashed border
-    And the coupon code is centered within its container
+- **GIVEN** the coupon modal is open
+- **WHEN** the user clicks outside the modal on the backdrop
+- **THEN** the modal closes
 
-  Scenario: Button styling
-    Given the coupon modal is open
-    Then the "Use a coupon" button has rounded corners (4px radius)
-    And the "Use a coupon" button is a full-width block element within the modal
-    And the "Launch modal" trigger button is styled as a secondary button
+#### Scenario: Modal closes on close button
 
-  Scenario: Modal visual design
-    Given the coupon modal is open
-    Then the modal body background is warm cream (#fff4e4)
-    And the modal has a heavy box-shadow (0 10px 50px -10px rgba(0,0,0,0.9))
-    And the modal outer wrapper has 7px border radius
-    And the modal content inner corners are sharp (0 radius)
+- **GIVEN** the coupon modal is open
+- **WHEN** the user clicks the X close button in the modal header
+- **THEN** the modal closes
 
-  Scenario: Accessibility — modal ARIA
-    Given the coupon modal is open
-    Then the modal has role="dialog"
-    And the modal is focus-trapped
-    And pressing Escape closes the modal
+#### Scenario: Promo image is visible
 
-  Scenario: Page layout
-    Given the user is on the PopGift page
-    Then the page content fills the full viewport height
-    And the "Launch modal" button is centered both horizontally and vertically
+- **GIVEN** the coupon modal is open
+- **THEN** the promo image is displayed on the left side of the modal body
+- **AND** the promo image is 200px wide
+
+#### Scenario: Coupon code styling
+
+- **GIVEN** the coupon modal is open
+- **THEN** the coupon code has a white background
+- **AND** the coupon code has a 2px dashed border
+- **AND** the coupon code is centered within its container
+
+#### Scenario: Button styling
+
+- **GIVEN** the coupon modal is open
+- **THEN** the "Use a coupon" button has rounded corners (4px radius)
+- **AND** the "Use a coupon" button is a full-width block element within the modal
+- **AND** the "Launch modal" trigger button is styled as a secondary button
+
+#### Scenario: Modal visual design
+
+- **GIVEN** the coupon modal is open
+- **THEN** the modal body background is warm cream (#fff4e4)
+- **AND** the modal has a heavy box-shadow (0 10px 50px -10px rgba(0,0,0,0.9))
+- **AND** the modal outer wrapper has 7px border radius
+- **AND** the modal content inner corners are sharp (0 radius)
+
+#### Scenario: Accessibility — modal ARIA
+
+- **GIVEN** the coupon modal is open
+- **THEN** the modal has role="dialog"
+- **AND** the modal is focus-trapped
+- **AND** pressing Escape closes the modal
+
+#### Scenario: Page layout
+
+- **GIVEN** the user is on the PopGift page
+- **THEN** the page content fills the full viewport height
+- **AND** the "Launch modal" button is centered both horizontally and vertically
 
 ## Verification checklist
 

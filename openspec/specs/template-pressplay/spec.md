@@ -52,117 +52,134 @@ Extracted from the live preview CSS (`main_styles.css`):
   (email input + subscribe button), right: three link columns (Useful Links,
   Site links, Connect). Copyright bar at bottom.
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
 
-Scenario: Logo and navigation display
-  Given the page loads
-  Then the header shows the site logo "PressPlay"
-  And navigation links: Home, About, Music, News, Contact
-  And Login/Register links are visible
+#### Scenario: Logo and navigation display
 
-Scenario: Mobile hamburger menu
-  Given the viewport is below 768px
-  When the hamburger icon is clicked
-  Then a fullscreen overlay menu appears with nav links
-  And the menu can be closed
+- **GIVEN** the page loads
+- **THEN** the header shows the site logo "PressPlay"
+- **AND** navigation links: Home, About, Music, News, Contact
+- **AND** Login/Register links are visible
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is below 768px
+- **WHEN** the hamburger icon is clicked
+- **THEN** a fullscreen overlay menu appears with nav links
+- **AND** the menu can be closed
 
 ### Hero Slider
 
-Scenario: Hero slider displays
-  Given the page loads
-  Then the hero section shows a full-width background image
-  And the heading "Love is all around" is displayed
-  And the subtitle "New single release" is displayed
-  And a "Listen on Soundcloud" CTA link is shown
+#### Scenario: Hero slider displays
 
-Scenario: Slider navigation dots
-  Given the hero slider is visible
-  Then navigation dots appear at the bottom
-  And the active dot is highlighted
+- **GIVEN** the page loads
+- **THEN** the hero section shows a full-width background image
+- **AND** the heading "Love is all around" is displayed
+- **AND** the subtitle "New single release" is displayed
+- **AND** a "Listen on Soundcloud" CTA link is shown
+
+#### Scenario: Slider navigation dots
+
+- **GIVEN** the hero slider is visible
+- **THEN** navigation dots appear at the bottom
+- **AND** the active dot is highlighted
 
 ### Featured Album
 
-Scenario: Featured album section renders
-  Given the user scrolls to the Featured Album section
-  Then the section subtitle "Events" and title "Featured Album" are visible
-  And an album artwork image is displayed on the left
-  And a player card is displayed on the right
+#### Scenario: Featured album section renders
 
-Scenario: Album player shows track info
-  Given the featured album section is in view
-  Then the artist name "Maria Smith" is shown
-  And the track title "Love is all Around" is shown
-  And a "buy it on itunes" link is present
+- **GIVEN** the user scrolls to the Featured Album section
+- **THEN** the section subtitle "Events" and title "Featured Album" are visible
+- **AND** an album artwork image is displayed on the left
+- **AND** a player card is displayed on the right
 
-Scenario: Audio player controls render
-  Given the featured album player is visible
-  Then a play/pause button is rendered
-  And a progress/seek bar is rendered
-  And current time and duration labels are present
-  And a volume control is present
+#### Scenario: Album player shows track info
+
+- **GIVEN** the featured album section is in view
+- **THEN** the artist name "Maria Smith" is shown
+- **AND** the track title "Love is all Around" is shown
+- **AND** a "buy it on itunes" link is present
+
+#### Scenario: Audio player controls render
+
+- **GIVEN** the featured album player is visible
+- **THEN** a play/pause button is rendered
+- **AND** a progress/seek bar is rendered
+- **AND** current time and duration labels are present
+- **AND** a volume control is present
 
 ### Shows / Upcoming Events
 
-Scenario: Shows list displays
-  Given the user scrolls to the Shows section
-  Then the section subtitle "Events" and title "Upcoming Shows" are visible
-  And at least 6 show entries are listed
-  And each show entry has a date, venue name, and location
+#### Scenario: Shows list displays
 
-Scenario: Buy Tickets buttons
-  Given the shows list is visible
-  Then each show entry has a "Buy Tickets" button
-  And clicking "Buy Tickets" triggers no navigation (placeholder)
+- **GIVEN** the user scrolls to the Shows section
+- **THEN** the section subtitle "Events" and title "Upcoming Shows" are visible
+- **AND** at least 6 show entries are listed
+- **AND** each show entry has a date, venue name, and location
 
-Scenario: Shows image
-  Given the shows section is visible
-  Then a venue/crowd image is displayed alongside the list
+#### Scenario: Buy Tickets buttons
+
+- **GIVEN** the shows list is visible
+- **THEN** each show entry has a "Buy Tickets" button
+- **AND** clicking "Buy Tickets" triggers no navigation (placeholder)
+
+#### Scenario: Shows image
+
+- **GIVEN** the shows section is visible
+- **THEN** a venue/crowd image is displayed alongside the list
 
 ### Artist Bio
 
-Scenario: Artist section renders
-  Given the user scrolls to the Artist section
-  Then the section subtitle "Events" and title "The Artist" are visible
-  And an artist portrait image is displayed
-  And bio text paragraphs are shown
+#### Scenario: Artist section renders
 
-Scenario: Artist signature
-  Given the artist section is in view
-  Then a signature image is displayed below the bio text
+- **GIVEN** the user scrolls to the Artist section
+- **THEN** the section subtitle "Events" and title "The Artist" are visible
+- **AND** an artist portrait image is displayed
+- **AND** bio text paragraphs are shown
 
-Scenario: Single track player
-  Given the artist section is visible
-  Then an embedded single-track audio player is rendered below the signature
-  And play/pause controls are present
+#### Scenario: Artist signature
+
+- **GIVEN** the artist section is in view
+- **THEN** a signature image is displayed below the bio text
+
+#### Scenario: Single track player
+
+- **GIVEN** the artist section is visible
+- **THEN** an embedded single-track audio player is rendered below the signature
+- **AND** play/pause controls are present
 
 ### Extra / CTA Section
 
-Scenario: Ticket CTA renders
-  Given the user scrolls to the Extra section
-  Then a parallax background image is displayed
-  And the heading "Get your tickets now!" is shown
-  And a description paragraph is present
-  And a "Buy Now" button is displayed
+#### Scenario: Ticket CTA renders
+
+- **GIVEN** the user scrolls to the Extra section
+- **THEN** a parallax background image is displayed
+- **AND** the heading "Get your tickets now!" is shown
+- **AND** a description paragraph is present
+- **AND** a "Buy Now" button is displayed
 
 ### Footer / Newsletter
 
-Scenario: Newsletter subscription form
-  Given the user scrolls to the footer
-  Then a "Subscribe to our newsletter" heading is displayed
-  And an email input field is present
-  And a "Subscribe" button is present
+#### Scenario: Newsletter subscription form
 
-Scenario: Footer link columns
-  Given the footer is visible
-  Then three link columns are displayed (Useful Links, PressPlay, Connect)
-  And each column has at least 4 links
+- **GIVEN** the user scrolls to the footer
+- **THEN** a "Subscribe to our newsletter" heading is displayed
+- **AND** an email input field is present
+- **AND** a "Subscribe" button is present
 
-Scenario: Copyright bar
-  Given the footer is visible
-  Then a copyright bar is shown at the bottom
-  And it links to "Component Dock" (not ColorLib)
+#### Scenario: Footer link columns
+
+- **GIVEN** the footer is visible
+- **THEN** three link columns are displayed (Useful Links, PressPlay, Connect)
+- **AND** each column has at least 4 links
+
+#### Scenario: Copyright bar
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright bar is shown at the bottom
+- **AND** it links to "Component Dock" (not ColorLib)
 
 ## Verification Checklist
 

@@ -66,69 +66,79 @@ utilities throughout.
    (2-col list), Newsletter subscription + social icons. Bottom: copyright +
    "Made with Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Bodhi Yoga Studio Template
 
-  Scenario: Navbar renders with all navigation links
-    Given the page loads
-    Then the navbar displays the logo "Bodhi"
-    And the nav contains links for Home, Classes, Schedule, About, Events, Gallery, Contact
-    And the top bar shows contact info and social icons
+#### Scenario: Navbar renders with all navigation links
 
-  Scenario: Hero section displays with video CTA
-    Given the page loads
-    Then the hero section shows a full-width background image
-    And the heading reads "A Yoga Studio"
-    And a play button links to a video
+- **GIVEN** the page loads
+- **THEN** the navbar displays the logo "Bodhi"
+- **AND** the nav contains links for Home, Classes, Schedule, About, Events, Gallery, Contact
+- **AND** the top bar shows contact info and social icons
 
-  Scenario: Featured Classes carousel shows class cards
-    Given the page loads
-    When I view the Featured Classes section
-    Then I see class cards with image, price, and class name
-    And prev/next navigation buttons are present
+#### Scenario: Hero section displays with video CTA
 
-  Scenario: Schedule section displays class schedule grid
-    Given the page loads
-    When I view the Schedule section
-    Then I see a 2-column grid with 4 schedule items
-    And each item shows class name, description, time, and a join button
+- **GIVEN** the page loads
+- **THEN** the hero section shows a full-width background image
+- **AND** the heading reads "A Yoga Studio"
+- **AND** a play button links to a video
 
-  Scenario: About Us section displays with overlapping images
-    Given the page loads
-    When I view the About Us section
-    Then a text column appears on the left with heading and paragraphs
-    And two images overlap on the right side
+#### Scenario: Featured Classes carousel shows class cards
 
-  Scenario: Events section shows blog-style cards
-    Given the page loads
-    When I view the Events section
-    Then I see event cards with image, title, date, excerpt, and read more link
+- **GIVEN** the page loads
+- **WHEN** I view the Featured Classes section
+- **THEN** I see class cards with image, price, and class name
+- **AND** prev/next navigation buttons are present
 
-  Scenario: Gallery section has filterable image grid
-    Given the page loads
-    When I view the Gallery section
-    Then filter buttons show All, Classes, Intern, Training
-    And a 3-column grid of images is displayed
-    And hovering an image shows a search icon overlay
+#### Scenario: Schedule section displays class schedule grid
 
-  Scenario: Contact section has form and details
-    Given the page loads
-    When I view the Contact section
-    Then a form with name, phone, email, message fields and send button is shown
-    And contact details with address, phone, and email are displayed
+- **GIVEN** the page loads
+- **WHEN** I view the Schedule section
+- **THEN** I see a 2-column grid with 4 schedule items
+- **AND** each item shows class name, description, time, and a join button
 
-  Scenario: Footer renders with columns and Component Dock link
-    Given the page loads
-    Then the footer has 3 columns: About, Quick Links, Newsletter
-    And a "Made with Component Dock" link points to https://www.componentdock.com/
-    And social media icons are displayed
+#### Scenario: About Us section displays with overlapping images
 
-  Scenario: Page is responsive
-    Given the page loads on a mobile viewport
-    Then the navbar collapses to a hamburger menu
-    And the schedule grid stacks to single column
-    And the gallery grid adjusts to fewer columns
+- **GIVEN** the page loads
+- **WHEN** I view the About Us section
+- **THEN** a text column appears on the left with heading and paragraphs
+- **AND** two images overlap on the right side
+
+#### Scenario: Events section shows blog-style cards
+
+- **GIVEN** the page loads
+- **WHEN** I view the Events section
+- **THEN** I see event cards with image, title, date, excerpt, and read more link
+
+#### Scenario: Gallery section has filterable image grid
+
+- **GIVEN** the page loads
+- **WHEN** I view the Gallery section
+- **THEN** filter buttons show All, Classes, Intern, Training
+- **AND** a 3-column grid of images is displayed
+- **AND** hovering an image shows a search icon overlay
+
+#### Scenario: Contact section has form and details
+
+- **GIVEN** the page loads
+- **WHEN** I view the Contact section
+- **THEN** a form with name, phone, email, message fields and send button is shown
+- **AND** contact details with address, phone, and email are displayed
+
+#### Scenario: Footer renders with columns and Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** the footer has 3 columns: About, Quick Links, Newsletter
+- **AND** a "Made with Component Dock" link points to https://www.componentdock.com/
+- **AND** social media icons are displayed
+
+#### Scenario: Page is responsive
+
+- **GIVEN** the page loads on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the schedule grid stacks to single column
+- **AND** the gallery grid adjusts to fewer columns
 
 ## Verification checklist
 

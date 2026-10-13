@@ -19,7 +19,7 @@ Provides a clean, elegant vertical accordion widget with smooth expand/collapse 
   - Centered container with generous padding (`7rem 0`)
   - Stacked accordion items with 10px spacing and rounded corners (`4px`)
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Foldcraft Interactive Accordion
 
@@ -27,22 +27,22 @@ As a site visitor, I want to click accordion headers to expand or collapse conte
 
 #### Scenario: Initial render shows first panel expanded
 
-- **Given** the Foldcraft accordion page is loaded
-- **Then** the first accordion item ("How to download and register?") should be expanded and show its body content
-- **And** items 2 and 3 should be collapsed
+- **GIVEN** the Foldcraft accordion page is loaded
+- **THEN** the first accordion item ("How to download and register?") should be expanded and show its body content
+- **AND** items 2 and 3 should be collapsed
 
 #### Scenario: Clicking a collapsed accordion header expands it and highlights active state
 
-- **Given** item 2 ("How to create your paypal account?") is collapsed
-- **When** the user clicks item 2's header
-- **Then** item 2 expands to show its body content
-- **And** item 2's header gets the primary accent background (`#72c02c`) and white text
-- **And** previously expanded item 1 collapses
+- **GIVEN** item 2 ("How to create your paypal account?") is collapsed
+- **WHEN** the user clicks item 2's header
+- **THEN** item 2 expands to show its body content
+- **AND** item 2's header gets the primary accent background (`#72c02c`) and white text
+- **AND** previously expanded item 1 collapses
 
 #### Scenario: Footer displays required Component Dock attribution
 
-- **Given** the Foldcraft page is rendered
-- **Then** the footer must contain a link to `https://www.componentdock.com/` with branded text
+- **GIVEN** the Foldcraft page is rendered
+- **THEN** the footer must contain a link to `https://www.componentdock.com/` with branded text
 
 ## Verification Checklist
 

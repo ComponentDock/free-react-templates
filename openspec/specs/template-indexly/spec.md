@@ -63,140 +63,143 @@ https://preview.colorlib.com/theme/browse/css/style.css:
 - **Footer:** White background, 4 columns: Quick Links, Products, Features,
   Follow Us + newsletter subscription
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Navigation bar
 
-  Scenario: Desktop navbar displays brand and links
-    Given the user is on a desktop viewport
-    When the page loads
-    Then the navbar shows the brand "Indexly" on the left
-    And nav links "Home", "Listings", "About", "Blog", "Contact" are visible
-    And "Home" link has a teal pill-shaped active indicator
+#### Scenario: Desktop navbar displays brand and links
 
-  Scenario: Mobile hamburger menu
-    Given the user is on a mobile viewport
-    When the user taps the hamburger icon
-    Then a slide-down mobile menu appears with all nav links
-    And tapping a link closes the menu
-```
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar shows the brand "Indexly" on the left
+- **AND** nav links "Home", "Listings", "About", "Blog", "Contact" are visible
+- **AND** "Home" link has a teal pill-shaped active indicator
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** a slide-down mobile menu appears with all nav links
+- **AND** tapping a link closes the menu
 
 ### Hero section
-```gherkin
+
 Feature: Hero banner with search
 
-  Scenario: Hero displays headline and search bar
-    Given the user is on any viewport
-    When the hero section is visible
-    Then a background image with dark overlay is shown
-    And the heading "Find Nearby" is displayed in white
-    And a subtitle paragraph is displayed below the heading
-    And a floating white search card is positioned at the bottom of the hero
+#### Scenario: Hero displays headline and search bar
 
-  Scenario: Search bar has three fields and a button
-    Given the hero search bar is visible
-    Then there is a text input labeled "What are you looking for?"
-    And there is a text input labeled "Location" with a pin icon
-    And there is a category dropdown labeled "All Categories"
-    And a teal "Search" button is displayed
-```
+- **GIVEN** the user is on any viewport
+- **WHEN** the hero section is visible
+- **THEN** a background image with dark overlay is shown
+- **AND** the heading "Find Nearby" is displayed in white
+- **AND** a subtitle paragraph is displayed below the heading
+- **AND** a floating white search card is positioned at the bottom of the hero
+
+#### Scenario: Search bar has three fields and a button
+
+- **GIVEN** the hero search bar is visible
+- **THEN** there is a text input labeled "What are you looking for?"
+- **AND** there is a text input labeled "Location" with a pin icon
+- **AND** there is a category dropdown labeled "All Categories"
+- **AND** a teal "Search" button is displayed
 
 ### Most Visited Places
-```gherkin
+
 Feature: Visited places grid
 
-  Scenario: Section heading and card grid
-    Given the user scrolls to the Most Visited Places section
-    Then a heading "Most Visited Places" is shown in teal
-    And a subtitle paragraph appears below the heading
-    And a 3-column responsive grid of 6 place cards is displayed
+#### Scenario: Section heading and card grid
 
-  Scenario: Each place card shows details
-    Given a place card is rendered
-    Then it displays a cover image with rounded corners
-    And it shows a title
-    And it shows a location string below the title
-```
+- **GIVEN** the user scrolls to the Most Visited Places section
+- **THEN** a heading "Most Visited Places" is shown in teal
+- **AND** a subtitle paragraph appears below the heading
+- **AND** a 3-column responsive grid of 6 place cards is displayed
+
+#### Scenario: Each place card shows details
+
+- **GIVEN** a place card is rendered
+- **THEN** it displays a cover image with rounded corners
+- **AND** it shows a title
+- **AND** it shows a location string below the title
 
 ### Popular Categories
-```gherkin
+
 Feature: Category listing
 
-  Scenario: Category grid displays items
-    Given the user scrolls to the Popular Categories section
-    Then a heading "Popular Categories" is shown
-    And 4 category items are displayed in a grid
-    And each item shows a teal icon, category name, and count
-```
+#### Scenario: Category grid displays items
+
+- **GIVEN** the user scrolls to the Popular Categories section
+- **THEN** a heading "Popular Categories" is shown
+- **AND** 4 category items are displayed in a grid
+- **AND** each item shows a teal icon, category name, and count
 
 ### Why Us
-```gherkin
+
 Feature: Why-us feature cards
 
-  Scenario: Feature cards display
-    Given the user scrolls to the Why Us section
-    Then a heading "Why Us" is shown
-    And 3 feature cards are displayed
-    And each card has an icon, a title, and a description paragraph
-```
+#### Scenario: Feature cards display
+
+- **GIVEN** the user scrolls to the Why Us section
+- **THEN** a heading "Why Us" is shown
+- **AND** 3 feature cards are displayed
+- **AND** each card has an icon, a title, and a description paragraph
 
 ### How It Works
-```gherkin
+
 Feature: How-it-works steps
 
-  Scenario: Steps display with numbered circles
-    Given the user scrolls to the How It Works section
-    Then a heading "How It Works" is shown
-    And 3 steps are displayed
-    And each step has a teal numbered circle, a title, and a description
-    And step titles are "Decide What To Do", "Find What You Want", "Explore Amazing Places"
-```
+#### Scenario: Steps display with numbered circles
+
+- **GIVEN** the user scrolls to the How It Works section
+- **THEN** a heading "How It Works" is shown
+- **AND** 3 steps are displayed
+- **AND** each step has a teal numbered circle, a title, and a description
+- **AND** step titles are "Decide What To Do", "Find What You Want", "Explore Amazing Places"
 
 ### Testimonials
-```gherkin
+
 Feature: Satisfied customers
 
-  Scenario: Testimonial cards render
-    Given the user scrolls to the Satisfied Customers section
-    Then a heading "Satisfied Customers" is shown
-    And multiple testimonial cards are displayed
-    And each card has a quote, an author name, and a circular avatar image
-```
+#### Scenario: Testimonial cards render
+
+- **GIVEN** the user scrolls to the Satisfied Customers section
+- **THEN** a heading "Satisfied Customers" is shown
+- **AND** multiple testimonial cards are displayed
+- **AND** each card has a quote, an author name, and a circular avatar image
 
 ### Tips & Articles
-```gherkin
+
 Feature: Blog articles
 
-  Scenario: Article cards display
-    Given the user scrolls to the Tips & Articles section
-    Then a heading "Tips & Articles" is shown
-    And article cards are displayed in a grid
-    And each card has a cover image, a date, and a title
-```
+#### Scenario: Article cards display
+
+- **GIVEN** the user scrolls to the Tips & Articles section
+- **THEN** a heading "Tips & Articles" is shown
+- **AND** article cards are displayed in a grid
+- **AND** each card has a cover image, a date, and a title
 
 ### Call-to-Action
-```gherkin
+
 Feature: Signup CTA section
 
-  Scenario: CTA displays with signup prompt
-    Given the user scrolls to the CTA section
-    Then a dark background section is shown
-    And the text "Let's get started. Create your account" is displayed
-    And a "Sign Up" button with white outline is shown
-```
+#### Scenario: CTA displays with signup prompt
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a dark background section is shown
+- **AND** the text "Let's get started. Create your account" is displayed
+- **AND** a "Sign Up" button with white outline is shown
 
 ### Footer
-```gherkin
+
 Feature: Site footer
 
-  Scenario: Footer columns and newsletter
-    Given the user scrolls to the footer
-    Then 4 footer columns are displayed: Quick Links, Products, Features, Follow Us
-    And a newsletter subscription section with an email input and Send button is shown
-    And a "Component Dock" attribution link is present
-```
+#### Scenario: Footer columns and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 footer columns are displayed: Quick Links, Products, Features, Follow Us
+- **AND** a newsletter subscription section with an email input and Send button is shown
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification checklist
 

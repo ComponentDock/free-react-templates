@@ -46,73 +46,83 @@ Warm-toned bakery site with peach/pink backgrounds. Hero has a full-width slider
 8. **Newsletter** — email signup form with heading and input + button.
 9. **Footer** — 3-column layout: About paragraph, Quick Links, Product links, Contact info (address, phone). Copyright bar at bottom with Component Dock attribution.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Pastella — Cake Shop Template
 
 #### Scenario: Navbar displays correctly
-- **Given** the user loads the page
-- **Then** a sticky navbar is visible at the top
-- **And** it contains the logo, navigation links (Home, Product, About, Blog, Contact)
-- **And** a phone number and "Order Online" button are shown
-- **And** on mobile (< 992px) a hamburger menu icon appears
+
+- **GIVEN** the user loads the page
+- **THEN** a sticky navbar is visible at the top
+- **AND** it contains the logo, navigation links (Home, Product, About, Blog, Contact)
+- **AND** a phone number and "Order Online" button are shown
+- **AND** on mobile (< 992px) a hamburger menu icon appears
 
 #### Scenario: Hero section renders
-- **Given** the user loads the page
-- **Then** a full-width hero section is displayed with a background image
-- **And** the script accent word "Delicious" is shown
-- **And** the heading "Delicious Cake For Everyone" is visible
-- **And** a description paragraph is below the heading
-- **And** an "Explore Menu" pill button is present
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero section is displayed with a background image
+- **AND** the script accent word "Delicious" is shown
+- **AND** the heading "Delicious Cake For Everyone" is visible
+- **AND** a description paragraph is below the heading
+- **AND** an "Explore Menu" pill button is present
 
 #### Scenario: Popular Items section displays cake cards
-- **Given** the user scrolls to the Popular Items section
-- **Then** the section heading "Most Popular" and subheading "Our Exclusive Cakes" are shown
-- **And** 4 cake cards are displayed in a responsive grid
-- **And** each card shows an image, cake name, short description, and price
-- **And** each card has an "Order Now" pill button
+
+- **GIVEN** the user scrolls to the Popular Items section
+- **THEN** the section heading "Most Popular" and subheading "Our Exclusive Cakes" are shown
+- **AND** 4 cake cards are displayed in a responsive grid
+- **AND** each card shows an image, cake name, short description, and price
+- **AND** each card has an "Order Now" pill button
 
 #### Scenario: About section layout
-- **Given** the user scrolls to the About section
-- **Then** a split layout is shown: image on the left, text on the right
-- **And** the heading reads "Fresh & Delicious" with subheading "A Simple Way to Eating Delicious"
-- **And** a description paragraph is present
-- **And** an "Our Story" pill button is displayed
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a split layout is shown: image on the left, text on the right
+- **AND** the heading reads "Fresh & Delicious" with subheading "A Simple Way to Eating Delicious"
+- **AND** a description paragraph is present
+- **AND** an "Our Story" pill button is displayed
 
 #### Scenario: Features section displays services
-- **Given** the user scrolls to the Features section
-- **Then** the heading "Our Features / Quality is Our First Priority" is shown
-- **And** 3 service cards are displayed in a row
-- **And** each card has an icon, title, and description
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** the heading "Our Features / Quality is Our First Priority" is shown
+- **AND** 3 service cards are displayed in a row
+- **AND** each card has an icon, title, and description
 
 #### Scenario: Video area with play button
-- **Given** the user scrolls to the Video section
-- **Then** a dark-background section with a centered play button icon is visible
-- **And** clicking the play button opens a popup/modal (video embed placeholder)
+
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a dark-background section with a centered play button icon is visible
+- **AND** clicking the play button opens a popup/modal (video embed placeholder)
 
 #### Scenario: Testimonials carousel
-- **Given** the user scrolls to the Testimonials section
-- **Then** the heading "Testimonial / What Customers Say" is displayed
-- **And** a carousel of testimonial cards is shown
-- **And** each card contains a quote, avatar image, name, and role
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the heading "Testimonial / What Customers Say" is displayed
+- **AND** a carousel of testimonial cards is shown
+- **AND** each card contains a quote, avatar image, name, and role
 
 #### Scenario: Newsletter signup
-- **Given** the user scrolls to the Newsletter section
-- **Then** an email input field and submit button are visible
+
+- **GIVEN** the user scrolls to the Newsletter section
+- **THEN** an email input field and submit button are visible
 
 #### Scenario: Footer renders with links
-- **Given** the user scrolls to the Footer
-- **Then** a multi-column footer is shown with About, Quick Links, Product links, and Contact sections
-- **And** the footer includes an address and phone number
-- **And** a copyright bar with "Component Dock" attribution is at the bottom
+
+- **GIVEN** the user scrolls to the Footer
+- **THEN** a multi-column footer is shown with About, Quick Links, Product links, and Contact sections
+- **AND** the footer includes an address and phone number
+- **AND** a copyright bar with "Component Dock" attribution is at the bottom
 
 #### Scenario: Responsive layout
-- **Given** the user views the page on a mobile device (< 576px)
-- **Then** the navbar collapses to a hamburger menu
-- **And** the hero text scales down appropriately
-- **And** cake cards stack vertically
-- **And** the about section stacks image above text
-- **And** service cards stack vertically
+
+- **GIVEN** the user views the page on a mobile device (< 576px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero text scales down appropriately
+- **AND** cake cards stack vertically
+- **AND** the about section stacks image above text
+- **AND** service cards stack vertically
 
 ## Verification Checklist
 

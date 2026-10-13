@@ -71,59 +71,69 @@ form card floating on a vivid blue page.
 returned 404 — all tokens derived from the TEMPLATES.md screenshot
 (`colorlib-reg-form-35.jpg`, 1200×972 AVIF, converted to PNG for analysis).
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with blue background
-- **Given** the user navigates to the Regbloom page
-- **When** the page loads
-- **Then** the full viewport background is a solid steel blue color (~`#4A7FB5`)
-- **And** there are no gradients or textures on the page background
+### Feature: Regbloom template behaviour
 
-### Scenario: Card is centered on page
-- **Given** the page has loaded
-- **When** the user views the viewport
-- **Then** a single card is centered both horizontally and vertically
-- **And** the card has rounded corners (~12–16px radius)
-- **And** the card has a dark semi-transparent overlay on a background image
+#### Scenario: Page renders with blue background
 
-### Scenario: Card displays heading and divider
-- **Given** the card is visible
-- **When** the user reads the card content
-- **Then** the heading "Registration Form" is displayed in white bold text
-- **And** a short white horizontal divider line (~60px) appears below the heading
+- **GIVEN** the user navigates to the Regbloom page
+- **WHEN** the page loads
+- **THEN** the full viewport background is a solid steel blue color (~`#4A7FB5`)
+- **AND** there are no gradients or textures on the page background
 
-### Scenario: Form displays four fields in 2×2 grid
-- **Given** the card is visible
-- **When** the user views the form fields
-- **Then** four input fields are displayed in a two-column grid layout
-- **And** the fields are: Name, Email, Password, Confirm Password
-- **And** each field has a pill-shaped (rounded) appearance
-- **And** each field has a semi-transparent dark background
-- **And** each field shows white/light placeholder text
+#### Scenario: Card is centered on page
 
-### Scenario: Register button is centered below fields
-- **Given** the form fields are visible
-- **When** the user views the button area
-- **Then** a "Register" button is centered below the form fields
-- **And** the button has a coral/salmon background color (~`#E8735A`)
-- **And** the button text is white
-- **And** the button has pill-shaped rounded corners
+- **GIVEN** the page has loaded
+- **WHEN** the user views the viewport
+- **THEN** a single card is centered both horizontally and vertically
+- **AND** the card has rounded corners (~12–16px radius)
+- **AND** the card has a dark semi-transparent overlay on a background image
 
-### Scenario: White section below card
-- **Given** the card is visible
-- **When** the user scrolls or looks below the card
-- **Then** a plain white section fills the area below the card
+#### Scenario: Card displays heading and divider
 
-### Scenario: Form submission with valid data
-- **Given** the form is displayed
-- **When** the user fills in Name, Email, Password, and Confirm Password
-- **And** clicks the Register button
-- **Then** the form attempts submission (no client-side validation in original)
+- **GIVEN** the card is visible
+- **WHEN** the user reads the card content
+- **THEN** the heading "Registration Form" is displayed in white bold text
+- **AND** a short white horizontal divider line (~60px) appears below the heading
 
-### Scenario: Form handles empty submission
-- **Given** the form is displayed with empty fields
-- **When** the user clicks the Register button
-- **Then** the form attempts submission (original has no client-side validation)
+#### Scenario: Form displays four fields in 2×2 grid
+
+- **GIVEN** the card is visible
+- **WHEN** the user views the form fields
+- **THEN** four input fields are displayed in a two-column grid layout
+- **AND** the fields are: Name, Email, Password, Confirm Password
+- **AND** each field has a pill-shaped (rounded) appearance
+- **AND** each field has a semi-transparent dark background
+- **AND** each field shows white/light placeholder text
+
+#### Scenario: Register button is centered below fields
+
+- **GIVEN** the form fields are visible
+- **WHEN** the user views the button area
+- **THEN** a "Register" button is centered below the form fields
+- **AND** the button has a coral/salmon background color (~`#E8735A`)
+- **AND** the button text is white
+- **AND** the button has pill-shaped rounded corners
+
+#### Scenario: White section below card
+
+- **GIVEN** the card is visible
+- **WHEN** the user scrolls or looks below the card
+- **THEN** a plain white section fills the area below the card
+
+#### Scenario: Form submission with valid data
+
+- **GIVEN** the form is displayed
+- **WHEN** the user fills in Name, Email, Password, and Confirm Password
+- **AND** clicks the Register button
+- **THEN** the form attempts submission (no client-side validation in original)
+
+#### Scenario: Form handles empty submission
+
+- **GIVEN** the form is displayed with empty fields
+- **WHEN** the user clicks the Register button
+- **THEN** the form attempts submission (original has no client-side validation)
 
 ## Verification checklist
 

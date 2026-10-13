@@ -113,82 +113,94 @@ https://colorlib.com/wp/template/wiser/
       with link lists.
     - Footer border/copyright bar at bottom.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Sagewise template behaviour
+
 Feature: Sagewise Education Template
 
-  Background:
-    Given the Sagewise template is loaded at its root URL
-    And the page has fully rendered
+Background:
+- **GIVEN** the Sagewise template is loaded at its root URL
+- **AND** the page has fully rendered
 
-  Scenario: Header displays contact information
-    Then the top bar shows phone and email contact info
-    And the navigation bar shows logo, menu items, and book now button
+#### Scenario: Header displays contact information
 
-  Scenario: Navigation is responsive
-    When the viewport is mobile width
-    Then a hamburger menu icon is visible
-    And the desktop menu is hidden
-    When the hamburger is clicked
-    Then the mobile menu expands with all navigation links
+- **THEN** the top bar shows phone and email contact info
+- **AND** the navigation bar shows logo, menu items, and book now button
 
-  Scenario: Hero slider displays and auto-plays
-    Then the hero section shows a full-width slider
-    And the slider displays heading text "Boost up your skills"
-    And the slider shows a scholarship callout card
-    When idle for several seconds
-    Then the slider transitions to the next slide
+#### Scenario: Navigation is responsive
 
-  Scenario: Service area shows service cards
-    Then the service section displays 3 service cards
-    And each card has a yellow background
-    And each card has an icon, title, and description
+- **WHEN** the viewport is mobile width
+- **THEN** a hamburger menu icon is visible
+- **AND** the desktop menu is hidden
+- **WHEN** the hamburger is clicked
+- **THEN** the mobile menu expands with all navigation links
 
-  Scenario: Popular programs carousel works
-    Then the popular programs section shows a carousel of programs
-    When the next arrow is clicked
-    Then the carousel scrolls to show more programs
-    When the previous arrow is clicked
-    Then the carousel scrolls back
+#### Scenario: Hero slider displays and auto-plays
 
-  Scenario: Latest courses carousel works
-    Then the latest courses section shows course cards
-    And each card has an image and course title
-    When carousel navigation is used
-    Then courses scroll horizontally
+- **THEN** the hero section shows a full-width slider
+- **AND** the slider displays heading text "Boost up your skills"
+- **AND** the slider shows a scholarship callout card
+- **WHEN** idle for several seconds
+- **THEN** the slider transitions to the next slide
 
-  Scenario: Recent events carousel works
-    Then the recent events section shows event cards
-    And each card has a date badge and event title
+#### Scenario: Service area shows service cards
 
-  Scenario: Admission form is interactive
-    Then the admission section shows a form with input fields
-    And the form has name, email, and program selection fields
-    When valid data is entered and submitted
-    Then the form processes without error
+- **THEN** the service section displays 3 service cards
+- **AND** each card has a yellow background
+- **AND** each card has an icon, title, and description
 
-  Scenario: Recent news shows article cards
-    Then the news section shows 3 article cards
-    And each card has an image, title, and excerpt
-    And each card has a read more link
+#### Scenario: Popular programs carousel works
 
-  Scenario: Newsletter subscription form works
-    Then the footer newsletter section shows an email input
-    And a subscribe button with yellow background
-    When a valid email is entered and submitted
-    Then the form processes without error
+- **THEN** the popular programs section shows a carousel of programs
+- **WHEN** the next arrow is clicked
+- **THEN** the carousel scrolls to show more programs
+- **WHEN** the previous arrow is clicked
+- **THEN** the carousel scrolls back
 
-  Scenario: Footer displays column links
-    Then the footer shows columns for About Us, Campus, Study, Support
-    And each column has a list of links
-    And the footer links to Component Dock
+#### Scenario: Latest courses carousel works
 
-  Scenario: All sections render without console errors
-    Given the browser console is monitoring
-    When the page loads completely
-    Then no JavaScript errors are logged
-```
+- **THEN** the latest courses section shows course cards
+- **AND** each card has an image and course title
+- **WHEN** carousel navigation is used
+- **THEN** courses scroll horizontally
+
+#### Scenario: Recent events carousel works
+
+- **THEN** the recent events section shows event cards
+- **AND** each card has a date badge and event title
+
+#### Scenario: Admission form is interactive
+
+- **THEN** the admission section shows a form with input fields
+- **AND** the form has name, email, and program selection fields
+- **WHEN** valid data is entered and submitted
+- **THEN** the form processes without error
+
+#### Scenario: Recent news shows article cards
+
+- **THEN** the news section shows 3 article cards
+- **AND** each card has an image, title, and excerpt
+- **AND** each card has a read more link
+
+#### Scenario: Newsletter subscription form works
+
+- **THEN** the footer newsletter section shows an email input
+- **AND** a subscribe button with yellow background
+- **WHEN** a valid email is entered and submitted
+- **THEN** the form processes without error
+
+#### Scenario: Footer displays column links
+
+- **THEN** the footer shows columns for About Us, Campus, Study, Support
+- **AND** each column has a list of links
+- **AND** the footer links to Component Dock
+
+#### Scenario: All sections render without console errors
+
+- **GIVEN** the browser console is monitoring
+- **WHEN** the page loads completely
+- **THEN** no JavaScript errors are logged
 
 ## Verification checklist
 

@@ -11,29 +11,35 @@ Recreation of ColorLib [Accordion 05](https://colorlib.com/wp/template/accordion
 - **Accordion Style**: Clean collapsible cards with chevron indicators, smooth toggle transitions, bold headers, and structured body content.
 - **Layout**: Centered container with header title, subtitle, and vertical stack of interactive accordion items.
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Header Section
 
+#### Scenario: Header Section
+
 - The template must display a clear title and subtitle introducing the accordion collection.
 - Scenario: User loads the page
-  - Given the user visits the Plicate template homepage
-  - Then they should see the main header "Interactive Accordion Showcase" and subtitle describing the component set.
+- **GIVEN** the user visits the Plicate template homepage
+- **THEN** they should see the main header "Interactive Accordion Showcase" and subtitle describing the component set
 
 ### Requirement 2: Interactive Accordion Component
 
+#### Scenario: Interactive Accordion Component
+
 - The template must provide a fully interactive accordion list where clicking an item expands its content while collapsing others (or independently toggleable).
 - Scenario: User expands an accordion item
-  - Given the user views the accordion list
-  - When they click on an accordion header
-  - Then the corresponding content area expands with smooth transition and the chevron icon rotates.
+- **GIVEN** the user views the accordion list
+- **WHEN** they click on an accordion header
+- **THEN** the corresponding content area expands with smooth transition and the chevron icon rotates
 
 ### Requirement 3: Footer Attribution
 
+#### Scenario: Footer Attribution
+
 - The template footer must link to Component Dock (`https://www.componentdock.com/`).
 - Scenario: User scrolls to the footer
-  - Given the user reaches the bottom of the page
-  - Then they should see the copyright and a link to Component Dock.
+- **GIVEN** the user reaches the bottom of the page
+- **THEN** they should see the copyright and a link to Component Dock
 
 ## Verification Checklist
 

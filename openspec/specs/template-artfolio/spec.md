@@ -35,142 +35,160 @@ Extracted from the live preview at `https://preview.colorlib.com/theme/breed2/` 
 | Form border-radius         | `5px` (inputs), `12px` (textarea)                                                                        | Form styling                                                     |
 | Link hover color           | `#1345e6`                                                                                                | Blog tags, nav items, text links                                 |
 
-## Gherkin requirements
+## Requirements
 
 ### Background
 
-Given the user loads the Artfolio single-page application
-Then the page renders with the Roboto font family
-And all sections appear in the documented order below
+#### Scenario: Background
+
+- **GIVEN** the user loads the Artfolio single-page application
+- **THEN** the page renders with the Roboto font family
+- **AND** all sections appear in the documented order below
 
 ### Navbar
 
-Scenario: Transparent header with navigation
-Given the page loads at the top
-Then the navbar is transparent with no background
-And navigation links include Home, About, Portfolio, Services, Blog, Contact
-And the logo text reads "artfolio" (derived from template name)
-When the user scrolls past the hero section
-Then the navbar background becomes white (#ffffff)
-And a subtle box-shadow appears (0px 3px 16px rgba(0,0,0,0.1))
-And the navbar becomes fixed to the top
+#### Scenario: Transparent header with navigation
 
-Scenario: Mobile navbar toggle
-Given the viewport width is below 992px
-Then a hamburger toggle button is visible
-When the user clicks the hamburger toggle
-Then the navigation menu expands vertically
-And each nav link has a bottom border separator
+- **GIVEN** the page loads at the top
+- **THEN** the navbar is transparent with no background
+- **AND** navigation links include Home, About, Portfolio, Services, Blog, Contact
+- **AND** the logo text reads "artfolio" (derived from template name)
+- **WHEN** the user scrolls past the hero section
+- **THEN** the navbar background becomes white (#ffffff)
+- **AND** a subtle box-shadow appears (0px 3px 16px rgba(0,0,0,0.1))
+- **AND** the navbar becomes fixed to the top
+
+#### Scenario: Mobile navbar toggle
+
+- **GIVEN** the viewport width is below 992px
+- **THEN** a hamburger toggle button is visible
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the navigation menu expands vertically
+- **AND** each nav link has a bottom border separator
 
 ### Hero section
 
-Scenario: Hero displays personal introduction
-Given the hero section is visible
-Then a greeting text "Hey There!" is displayed
-And a heading "I am [Name]" is displayed
-And a subtitle "Creative art director & designer" is shown
-And a "See My Work" CTA button is visible
-And social media icon links are displayed (Facebook, Twitter, Instagram, Pinterest)
+#### Scenario: Hero displays personal introduction
 
-Scenario: Hero uses background image
-Given the hero section is visible
-Then a background image covers the hero area (min-height: 890px)
-And a banner-right image is shown on desktop (hidden on mobile)
+- **GIVEN** the hero section is visible
+- **THEN** a greeting text "Hey There!" is displayed
+- **AND** a heading "I am [Name]" is displayed
+- **AND** a subtitle "Creative art director & designer" is shown
+- **AND** a "See My Work" CTA button is visible
+- **AND** social media icon links are displayed (Facebook, Twitter, Instagram, Pinterest)
+
+#### Scenario: Hero uses background image
+
+- **GIVEN** the hero section is visible
+- **THEN** a background image covers the hero area (min-height: 890px)
+- **AND** a banner-right image is shown on desktop (hidden on mobile)
 
 ### Statistics section
 
-Scenario: Stats display with gradient numbers
-Given the statistics section is visible
-Then 3 stat items are displayed horizontally
-And each stat number has a gradient text effect (blue-to-pink)
-And stat items are: "Happy Customer" (15k+), "Ticket Solved" (12k+), "Average Rating" (9/10)
-And stat items have a #f8faff background
+#### Scenario: Stats display with gradient numbers
 
-Scenario: Stats overlap hero
-Given the statistics section is visible on desktop
-Then the section has negative top margin (-121px) to overlap the hero
+- **GIVEN** the statistics section is visible
+- **THEN** 3 stat items are displayed horizontally
+- **AND** each stat number has a gradient text effect (blue-to-pink)
+- **AND** stat items are: "Happy Customer" (15k+), "Ticket Solved" (12k+), "Average Rating" (9/10)
+- **AND** stat items have a #f8faff background
+
+#### Scenario: Stats overlap hero
+
+- **GIVEN** the statistics section is visible on desktop
+- **THEN** the section has negative top margin (-121px) to overlap the hero
 
 ### About section
 
-Scenario: About displays personal info
-Given the About section is visible
-Then a section heading "About me" is shown
-And a subheading "Creative Art Director And Designer" is displayed
-And a descriptive paragraph is shown
-And a "Download CV" button is visible
-And an about image is displayed on the left side (hidden on mobile)
+#### Scenario: About displays personal info
+
+- **GIVEN** the About section is visible
+- **THEN** a section heading "About me" is shown
+- **AND** a subheading "Creative Art Director And Designer" is displayed
+- **AND** a descriptive paragraph is shown
+- **AND** a "Download CV" button is visible
+- **AND** an about image is displayed on the left side (hidden on mobile)
 
 ### Services section
 
-Scenario: Services display 3 service cards
-Given the Services section is visible
-Then a section heading "Our Service" with subheading "What Service We Offer For You" is shown
-And 3 service cards are displayed in a 3-column grid
-And each card contains: an icon, a title, a description, and a "Learn More" link
-And the services are: "Web Development", "UX/UI Design", "WP Developing"
+#### Scenario: Services display 3 service cards
 
-Scenario: Service card hover state
-Given a service card is displayed
-When the user hovers over the service card
-Then the card background changes to #5f30ff (purple)
-And the text and link color change to #ffffff (white)
+- **GIVEN** the Services section is visible
+- **THEN** a section heading "Our Service" with subheading "What Service We Offer For You" is shown
+- **AND** 3 service cards are displayed in a 3-column grid
+- **AND** each card contains: an icon, a title, a description, and a "Learn More" link
+- **AND** the services are: "Web Development", "UX/UI Design", "WP Developing"
+
+#### Scenario: Service card hover state
+
+- **GIVEN** a service card is displayed
+- **WHEN** the user hovers over the service card
+- **THEN** the card background changes to #5f30ff (purple)
+- **AND** the text and link color change to #ffffff (white)
 
 ### Testimonials section
 
-Scenario: Testimonial carousel
-Given the Testimonials section is visible
-Then a section heading "Our Testimonial" with subheading "Honourable Client Says About Me" is shown
-And a testimonial slider displays items
-And each item shows: an avatar image, a name, a role/company, a quote, and a star rating
-And the testimonial background includes a decorative image element (desktop only)
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the Testimonials section is visible
+- **THEN** a section heading "Our Testimonial" with subheading "Honourable Client Says About Me" is shown
+- **AND** a testimonial slider displays items
+- **AND** each item shows: an avatar image, a name, a role/company, a quote, and a star rating
+- **AND** the testimonial background includes a decorative image element (desktop only)
 
 ### Portfolio section
 
-Scenario: Portfolio gallery with filters
-Given the Portfolio section is visible
-Then a section heading "Our Portfolio" with subheading "Check Our Recent Client Work" is shown
-And filter tabs are displayed: "all", "popular", "latest", "following", "upcoming"
-And a 3-column grid of portfolio items is shown
-And each item displays a thumbnail image, a title ("Lens Mockup Design"), and a category ("Art, Illustration")
+#### Scenario: Portfolio gallery with filters
 
-Scenario: Portfolio item hover overlay
-Given a portfolio item is displayed
-When the user hovers over a portfolio item
-Then a blue overlay appears (rgba(19,69,230,0.9))
-And the item title and category become visible in white
+- **GIVEN** the Portfolio section is visible
+- **THEN** a section heading "Our Portfolio" with subheading "Check Our Recent Client Work" is shown
+- **AND** filter tabs are displayed: "all", "popular", "latest", "following", "upcoming"
+- **AND** a 3-column grid of portfolio items is shown
+- **AND** each item displays a thumbnail image, a title ("Lens Mockup Design"), and a category ("Art, Illustration")
+
+#### Scenario: Portfolio item hover overlay
+
+- **GIVEN** a portfolio item is displayed
+- **WHEN** the user hovers over a portfolio item
+- **THEN** a blue overlay appears (rgba(19,69,230,0.9))
+- **AND** the item title and category become visible in white
 
 ### Blog section
 
-Scenario: Blog cards display
-Given the Blog section is visible
-Then a section heading "Our Blog" with subheading "Latest Story From Our Blog" is shown
-And 3 blog cards are displayed in a 3-column grid
-And each card contains: a thumbnail image, a date badge, a title, an excerpt, and a "Learn More" link
+#### Scenario: Blog cards display
 
-Scenario: Blog card hover
-Given a blog card is displayed
-When the user hovers over the blog card
-Then a subtle box-shadow appears (0px 10px 20px rgba(5,54,77,0.1))
-And the card details background changes to white
-And the image scales up slightly (transform: scale(1.1))
+- **GIVEN** the Blog section is visible
+- **THEN** a section heading "Our Blog" with subheading "Latest Story From Our Blog" is shown
+- **AND** 3 blog cards are displayed in a 3-column grid
+- **AND** each card contains: a thumbnail image, a date badge, a title, an excerpt, and a "Learn More" link
+
+#### Scenario: Blog card hover
+
+- **GIVEN** a blog card is displayed
+- **WHEN** the user hovers over the blog card
+- **THEN** a subtle box-shadow appears (0px 10px 20px rgba(5,54,77,0.1))
+- **AND** the card details background changes to white
+- **AND** the image scales up slightly (transform: scale(1.1))
 
 ### Brands section
 
-Scenario: Brand logos carousel
-Given the Brands section is visible
-Then a row of brand logos is displayed
-And the logos are shown in a carousel/slider format
+#### Scenario: Brand logos carousel
+
+- **GIVEN** the Brands section is visible
+- **THEN** a row of brand logos is displayed
+- **AND** the logos are shown in a carousel/slider format
 
 ### Footer section
 
-Scenario: Dark footer with links
-Given the Footer is visible
-Then the footer has a dark background (#021017)
-And a centered logo is displayed
-And circular social media icon buttons are shown (white bg, dark icon)
-And footer navigation links are displayed: Home, About, Portfolio, Blog, Services
-And a copyright notice is shown at the bottom
-And a link to https://www.componentdock.com/ ("Component Dock") is present in the footer
+#### Scenario: Dark footer with links
+
+- **GIVEN** the Footer is visible
+- **THEN** the footer has a dark background (#021017)
+- **AND** a centered logo is displayed
+- **AND** circular social media icon buttons are shown (white bg, dark icon)
+- **AND** footer navigation links are displayed: Home, About, Portfolio, Blog, Services
+- **AND** a copyright notice is shown at the bottom
+- **AND** a link to https://www.componentdock.com/ ("Component Dock") is present in the footer
 
 ## Verification checklist
 

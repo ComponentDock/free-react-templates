@@ -65,87 +65,100 @@ and a dark footer with four columns.
 - Gradient overlay via `::after`: brand gradient at 0.9 opacity
 - Text: white, centered, uppercase subtitle + large h1 + description + CTA button
 
-## Gherkin Requirements
+## Requirements
 
-### Background
+### Feature: Hostera template behaviour
 
-Given the user navigates to the Hostera homepage
+**Background**
 
-### Scenario: Navbar displays correctly
-Then the navbar shows the logo on the left
-And navigation links: Home, Features, Services, Pricing, Blog, Contact
-And a "Live Chat" link and a "Login" button on the right
-And the navbar becomes sticky with a solid indigo background on scroll
+- **GIVEN** the user navigates to the Hostera homepage
 
-### Scenario: Hero banner renders
-Given the hero banner section is visible
-Then it shows a subtitle "Smart Company With Perfect Space"
-And a headline "Powerful Web Hosting"
-And a description paragraph
-And a "Get Started" outline button (white border, pill shape)
+#### Scenario: Navbar displays correctly
 
-### Scenario: Domain search section works
-Given the domain search section is visible
-Then it shows "Search Your Domain Now!" heading
-And an input field with placeholder "Enter Your Domain name"
-And a "Search" button with brand gradient
-And four checkboxes: .com ($5.99), .net ($5.99), .org ($5.99), .in ($5.99)
+- **THEN** the navbar shows the logo on the left
+- **AND** navigation links: Home, Features, Services, Pricing, Blog, Contact
+- **AND** a "Live Chat" link and a "Login" button on the right
+- **AND** the navbar becomes sticky with a solid indigo background on scroll
 
-### Scenario: Client logo carousel displays
-Given the client logos section is visible
-Then it shows "Trusted by 12,000+ happy customer worldwide"
-And a carousel of 5 client logo images
+#### Scenario: Hero banner renders
 
-### Scenario: Feature grid renders 6 items
-Given the features section is visible
-Then it shows a heading "Choose Your Own Virtual Space"
-And 6 feature cards in a 3-column grid
-And each card has an icon, title, and description
-And the feature cards are: Secured Server, Backup Facility, Easy To Customize, Free Domain Transfer, Live Chat Support
+- **GIVEN** the hero banner section is visible
+- **THEN** it shows a subtitle "Smart Company With Perfect Space"
+- **AND** a headline "Powerful Web Hosting"
+- **AND** a description paragraph
+- **AND** a "Get Started" outline button (white border, pill shape)
 
-### Scenario: Pricing table shows 3 plans
-Given the pricing section is visible
-Then it shows "Popular Pricing Package" heading
-And 3 pricing cards: Normal ($45.80), Premium ($65.80), Ultimate ($75.80)
-And each card has a feature list and a "Select Plan" button
-And cards have a light background with subtle shadow
+#### Scenario: Domain search section works
 
-### Scenario: Services grid renders 6 items
-Given the services section is visible
-Then it shows "High Quality Service" heading
-And 6 service cards in a 3-column grid
-And each card has an icon, title, and description
-And the services are: SSD Cloud Hosting, Free Domain Transfer, Best Hosting Service, Strong Backup, Email Service, Data Analysis
+- **GIVEN** the domain search section is visible
+- **THEN** it shows "Search Your Domain Now!" heading
+- **AND** an input field with placeholder "Enter Your Domain name"
+- **AND** a "Search" button with brand gradient
+- **AND** four checkboxes: .com ($5.99), .net ($5.99), .org ($5.99), .in ($5.99)
 
-### Scenario: Newsletter subscription section
-Given the newsletter section is visible
-Then it shows "Subscribe To Get Our Newsletter" heading
-And an email input with placeholder "Enter Your email"
-And a "Subscribe" button with shadow effect
-And the section has a light gray background
+#### Scenario: Client logo carousel displays
 
-### Scenario: Dedicated server section
-Given the dedicated server section is visible
-Then it shows text on the left about dedicated and secured servers
-And a server image on the right
-And the layout is side-by-side on desktop
+- **GIVEN** the client logos section is visible
+- **THEN** it shows "Trusted by 12,000+ happy customer worldwide"
+- **AND** a carousel of 5 client logo images
 
-### Scenario: Testimonials carousel
-Given the testimonials section is visible
-Then it shows "Happy Customer Says" heading
-And a carousel of testimonial cards
-And each card has a circular avatar, quote, name, and title
-And the section has a light gray background
+#### Scenario: Feature grid renders 6 items
 
-### Scenario: Footer layout
-Given the footer is visible
-Then it shows 4 columns: About Us, Contact Info, Important Links, Newsletter
-And the About Us column has description text and logo
-And the Contact Info column has address, phone, email
-And the Important Links column has 5 links
-And the Newsletter column has an email input with submit button
-And a footer bottom bar with copyright text and social media icons (Facebook, Twitter, Dribbble, LinkedIn)
-And the footer links to Component Dock (replacing ColorLib attribution)
+- **GIVEN** the features section is visible
+- **THEN** it shows a heading "Choose Your Own Virtual Space"
+- **AND** 6 feature cards in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the feature cards are: Secured Server, Backup Facility, Easy To Customize, Free Domain Transfer, Live Chat Support
+
+#### Scenario: Pricing table shows 3 plans
+
+- **GIVEN** the pricing section is visible
+- **THEN** it shows "Popular Pricing Package" heading
+- **AND** 3 pricing cards: Normal ($45.80), Premium ($65.80), Ultimate ($75.80)
+- **AND** each card has a feature list and a "Select Plan" button
+- **AND** cards have a light background with subtle shadow
+
+#### Scenario: Services grid renders 6 items
+
+- **GIVEN** the services section is visible
+- **THEN** it shows "High Quality Service" heading
+- **AND** 6 service cards in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the services are: SSD Cloud Hosting, Free Domain Transfer, Best Hosting Service, Strong Backup, Email Service, Data Analysis
+
+#### Scenario: Newsletter subscription section
+
+- **GIVEN** the newsletter section is visible
+- **THEN** it shows "Subscribe To Get Our Newsletter" heading
+- **AND** an email input with placeholder "Enter Your email"
+- **AND** a "Subscribe" button with shadow effect
+- **AND** the section has a light gray background
+
+#### Scenario: Dedicated server section
+
+- **GIVEN** the dedicated server section is visible
+- **THEN** it shows text on the left about dedicated and secured servers
+- **AND** a server image on the right
+- **AND** the layout is side-by-side on desktop
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the testimonials section is visible
+- **THEN** it shows "Happy Customer Says" heading
+- **AND** a carousel of testimonial cards
+- **AND** each card has a circular avatar, quote, name, and title
+- **AND** the section has a light gray background
+
+#### Scenario: Footer layout
+
+- **GIVEN** the footer is visible
+- **THEN** it shows 4 columns: About Us, Contact Info, Important Links, Newsletter
+- **AND** the About Us column has description text and logo
+- **AND** the Contact Info column has address, phone, email
+- **AND** the Important Links column has 5 links
+- **AND** the Newsletter column has an email input with submit button
+- **AND** a footer bottom bar with copyright text and social media icons (Facebook, Twitter, Dribbble, LinkedIn)
+- **AND** the footer links to Component Dock (replacing ColorLib attribution)
 
 ## Verification checklist
 

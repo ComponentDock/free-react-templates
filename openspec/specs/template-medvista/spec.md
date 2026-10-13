@@ -30,200 +30,209 @@ Extracted from the live preview CSS (`css/style.css`) and inline styles:
 | Hero height | `700px` | Full-height hero with background image |
 | CTA button white | `#fff bg, #fff border, #000 text` | `.btn-white` on parallax CTA |
 
-## Gherkin requirements
+## Requirements
 
 ### TopBar
 
-```gherkin
 Feature: Top Bar
-  Scenario: Display contact info and auth links
-    Given the user visits the page
-    Then a black top bar is visible at the very top
-    And it shows a phone number with phone icon
-    And it shows an email address with paper-plane icon
-    And it shows "Sign Up" and "Sign In" links on the right
 
-  Scenario: Hidden on mobile
-    Given the user is on a viewport < 992px wide
-    Then the top bar is hidden
-```
+#### Scenario: Display contact info and auth links
+
+- **GIVEN** the user visits the page
+- **THEN** a black top bar is visible at the very top
+- **AND** it shows a phone number with phone icon
+- **AND** it shows an email address with paper-plane icon
+- **AND** it shows "Sign Up" and "Sign In" links on the right
+
+#### Scenario: Hidden on mobile
+
+- **GIVEN** the user is on a viewport < 992px wide
+- **THEN** the top bar is hidden
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Display navigation links
-    Given the user visits the page
-    Then the navbar shows the brand "Medvista"
-    And it has nav links: Home, About, Department, Doctors, Blog, Contact
-    And it has an "Appointment" CTA button with coral (#fe5f55) border
 
-  Scenario: Sticky dark navbar on scroll
-    Given the user scrolls past the hero
-    Then the navbar becomes sticky with a dark (#000) background
-    And the brand and nav links are white text
+#### Scenario: Display navigation links
 
-  Scenario: Mobile hamburger menu
-    Given the user is on a viewport < 992px wide
-    Then a hamburger toggle button is visible
-    And clicking it expands the nav links vertically
-```
+- **GIVEN** the user visits the page
+- **THEN** the navbar shows the brand "Medvista"
+- **AND** it has nav links: Home, About, Department, Doctors, Blog, Contact
+- **AND** it has an "Appointment" CTA button with coral (#fe5f55) border
+
+#### Scenario: Sticky dark navbar on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar becomes sticky with a dark (#000) background
+- **AND** the brand and nav links are white text
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user is on a viewport < 992px wide
+- **THEN** a hamburger toggle button is visible
+- **AND** clicking it expands the nav links vertically
 
 ### Hero
 
-```gherkin
 Feature: Hero Section
-  Scenario: Full-height hero with background image
-    Given the user visits the page
-    Then a full-height hero section is displayed with a background image
-    And a dark semi-transparent overlay covers the image
-    And it shows "Welcome to Medvista" as a small uppercase subheading
-    And it shows "We are here for your Care" as the main heading
-    And it shows a paragraph of descriptive text
-    And it shows a "Make an appointment" primary button
 
-  Scenario: Hero text positioned left
-    Given the user visits the page
-    Then the hero text content is left-aligned within the left half of the hero
-```
+#### Scenario: Full-height hero with background image
+
+- **GIVEN** the user visits the page
+- **THEN** a full-height hero section is displayed with a background image
+- **AND** a dark semi-transparent overlay covers the image
+- **AND** it shows "Welcome to Medvista" as a small uppercase subheading
+- **AND** it shows "We are here for your Care" as the main heading
+- **AND** it shows a paragraph of descriptive text
+- **AND** it shows a "Make an appointment" primary button
+
+#### Scenario: Hero text positioned left
+
+- **GIVEN** the user visits the page
+- **THEN** the hero text content is left-aligned within the left half of the hero
 
 ### About
 
-```gherkin
 Feature: About Section
-  Scenario: Two-column about layout
-    Given the user scrolls to the about section
-    Then a left column shows a background image
-    And a right column shows the heading "We Are Medvista A Medical Clinic"
-    And it shows two paragraphs of descriptive text
-    And it shows "Make an appointment" and "Contact us" buttons side by side
-```
+
+#### Scenario: Two-column about layout
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a left column shows a background image
+- **AND** a right column shows the heading "We Are Medvista A Medical Clinic"
+- **AND** it shows two paragraphs of descriptive text
+- **AND** it shows "Make an appointment" and "Contact us" buttons side by side
 
 ### Services
 
-```gherkin
 Feature: Services Section
-  Scenario: 2x2 service grid with appointment form
-    Given the user scrolls to the services section
-    Then a light (#f8f9fa) background section is displayed
-    And the left side shows "Our Services" heading
-    And a 2x2 grid shows 4 service cards: Emergency Services, Qualified Doctors, Outdoors Checkup, 24 Hours Service
-    And each service card has a coral (#fe5f55) icon and a title + description
-    And the right side shows a "Free Consultation" form
-    And the form has fields: First Name, Last Name, Service select, Phone, Date, Time, Message
-    And the form has an "Appointment" submit button (secondary style)
 
-  Scenario: Service card hover
-    Given the user hovers over a service card
-    Then the icon scales up with a smooth transition
-```
+#### Scenario: 2x2 service grid with appointment form
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a light (#f8f9fa) background section is displayed
+- **AND** the left side shows "Our Services" heading
+- **AND** a 2x2 grid shows 4 service cards: Emergency Services, Qualified Doctors, Outdoors Checkup, 24 Hours Service
+- **AND** each service card has a coral (#fe5f55) icon and a title + description
+- **AND** the right side shows a "Free Consultation" form
+- **AND** the form has fields: First Name, Last Name, Service select, Phone, Date, Time, Message
+- **AND** the form has an "Appointment" submit button (secondary style)
+
+#### Scenario: Service card hover
+
+- **GIVEN** the user hovers over a service card
+- **THEN** the icon scales up with a smooth transition
 
 ### CTA Banner
 
-```gherkin
 Feature: CTA Banner
-  Scenario: Parallax CTA section
-    Given the user scrolls to the CTA banner
-    Then a full-width section with a background image and dark overlay is displayed
-    And it shows "Your Health is Our Priority" as a large white heading
-    And it shows a descriptive paragraph
-    And it shows a "Search Places" white outlined button
-```
+
+#### Scenario: Parallax CTA section
+
+- **GIVEN** the user scrolls to the CTA banner
+- **THEN** a full-width section with a background image and dark overlay is displayed
+- **AND** it shows "Your Health is Our Priority" as a large white heading
+- **AND** it shows a descriptive paragraph
+- **AND** it shows a "Search Places" white outlined button
 
 ### Departments
 
-```gherkin
 Feature: Departments Section
-  Scenario: Asymmetric department layout
-    Given the user scrolls to the departments section
-    Then a full-width container is displayed with no gutters
-    And a left column (1/3 width) shows a tall background image
-    And a right column (2/3 width) shows a 3-column grid of 9 department cards
-    And each department card shows a blue (#207dff) stethoscope icon, department name, and description
-    And departments include: Neurology, Surgical, Dental, Ophthalmology, Cardiology, Traumatology, Nuclear Magnetic, X-ray, Cardiology
 
-  Scenario: Department card hover
-    Given the user hovers over a department card
-    Then the card background becomes blue (#207dff)
-    And the text and icon become white
-```
+#### Scenario: Asymmetric department layout
+
+- **GIVEN** the user scrolls to the departments section
+- **THEN** a full-width container is displayed with no gutters
+- **AND** a left column (1/3 width) shows a tall background image
+- **AND** a right column (2/3 width) shows a 3-column grid of 9 department cards
+- **AND** each department card shows a blue (#207dff) stethoscope icon, department name, and description
+- **AND** departments include: Neurology, Surgical, Dental, Ophthalmology, Cardiology, Traumatology, Nuclear Magnetic, X-ray, Cardiology
+
+#### Scenario: Department card hover
+
+- **GIVEN** the user hovers over a department card
+- **THEN** the card background becomes blue (#207dff)
+- **AND** the text and icon become white
 
 ### Doctors
 
-```gherkin
 Feature: Doctors Section
-  Scenario: Doctor cards grid
-    Given the user scrolls to the doctors section
-    Then it shows the heading "Our Qualified Doctors"
-    And a subtitle paragraph is displayed
-    And a 4-column grid shows 4 doctor cards
-    And each card has a doctor photo, name, specialty, description, and social links (Twitter, Facebook, Google, Instagram)
-    And each card has a "Book now" primary button
-    And the specialty text is uppercase blue (#207dff) with letter-spacing
 
-  Scenario: Doctor card hover
-    Given the user hovers over a doctor card
-    Then the photo overlay transitions and the faded description area reveals
-```
+#### Scenario: Doctor cards grid
+
+- **GIVEN** the user scrolls to the doctors section
+- **THEN** it shows the heading "Our Qualified Doctors"
+- **AND** a subtitle paragraph is displayed
+- **AND** a 4-column grid shows 4 doctor cards
+- **AND** each card has a doctor photo, name, specialty, description, and social links (Twitter, Facebook, Google, Instagram)
+- **AND** each card has a "Book now" primary button
+- **AND** the specialty text is uppercase blue (#207dff) with letter-spacing
+
+#### Scenario: Doctor card hover
+
+- **GIVEN** the user hovers over a doctor card
+- **THEN** the photo overlay transitions and the faded description area reveals
 
 ### Blog
 
-```gherkin
 Feature: Blog Section
-  Scenario: Blog cards grid
-    Given the user scrolls to the blog section
-    Then a light (#f8f9fa) background section is displayed
-    And it shows "Gets Every Single Updates Here" heading
-    And a 3-column grid shows 6 blog cards
-    And each card has a background image, meta (date, author, comment count), title, excerpt, and "Read more" primary button
 
-  Scenario: Blog card hover
-    Given the user hovers over a blog card image
-    Then the image scales or transitions smoothly
-```
+#### Scenario: Blog cards grid
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a light (#f8f9fa) background section is displayed
+- **AND** it shows "Gets Every Single Updates Here" heading
+- **AND** a 3-column grid shows 6 blog cards
+- **AND** each card has a background image, meta (date, author, comment count), title, excerpt, and "Read more" primary button
+
+#### Scenario: Blog card hover
+
+- **GIVEN** the user hovers over a blog card image
+- **THEN** the image scales or transitions smoothly
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials Section
-  Scenario: Parallax testimonials carousel
-    Given the user scrolls to the testimonials section
-    Then a full-width section with background image and dark overlay is displayed
-    And it shows "Read testimonials" subheading
-    And it shows "Our Patient Says" heading
-    And a carousel shows testimonial cards
-    And each card has a circular user photo, quote icon, testimonial text, patient name, and role
-```
+
+#### Scenario: Parallax testimonials carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a full-width section with background image and dark overlay is displayed
+- **AND** it shows "Read testimonials" subheading
+- **AND** it shows "Our Patient Says" heading
+- **AND** a carousel shows testimonial cards
+- **AND** each card has a circular user photo, quote icon, testimonial text, patient name, and role
 
 ### Contact
 
-```gherkin
 Feature: Contact Section
-  Scenario: Contact info and form
-    Given the user scrolls to the contact section
-    Then it shows "Contact Us" heading
-    And 4 info boxes show: address (map marker icon), phone (phone icon), email (envelope icon), website (globe icon)
-    And each info box has a light (#f8f9fa) background with centered icon and text
-    And a contact form has fields: Name, Email, Subject, Message
-    And the form has a "Send Message" submit button
 
-  Scenario: Map embed
-    Given the user scrolls past the contact form
-    Then a full-width Google Map embed is displayed
-```
+#### Scenario: Contact info and form
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** it shows "Contact Us" heading
+- **AND** 4 info boxes show: address (map marker icon), phone (phone icon), email (envelope icon), website (globe icon)
+- **AND** each info box has a light (#f8f9fa) background with centered icon and text
+- **AND** a contact form has fields: Name, Email, Subject, Message
+- **AND** the form has a "Send Message" submit button
+
+#### Scenario: Map embed
+
+- **GIVEN** the user scrolls past the contact form
+- **THEN** a full-width Google Map embed is displayed
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Multi-column footer with parallax
-    Given the user scrolls to the footer
-    Then a footer with a background image and dark overlay is displayed
-    And it has multiple widget columns with headings and lists
-    And it shows a social links list (Twitter, Facebook, Google, Instagram)
-    And it shows a copyright line
-    And it links to https://www.componentdock.com/ ("Component Dock")
-```
+
+#### Scenario: Multi-column footer with parallax
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a footer with a background image and dark overlay is displayed
+- **AND** it has multiple widget columns with headings and lists
+- **AND** it shows a social links list (Twitter, Facebook, Google, Instagram)
+- **AND** it shows a copyright line
+- **AND** it links to https://www.componentdock.com/ ("Component Dock")
 
 ## Verification checklist
 

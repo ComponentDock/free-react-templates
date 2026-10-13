@@ -52,64 +52,73 @@ Recreation of the ColorLib **Handyman** template.
 8. **Blog** — Recent posts section: 3 blog cards with date, author, title, excerpt. Light background.
 9. **Footer** — Dark background. 5-column layout: About Us (logo + description), then 4 Quick Links columns. Copyright bar at bottom.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Toolcraft template behaviour
+
 Feature: Toolcraft — Construction/Handyman Landing Page
 
-  Scenario: Navbar displays correctly
-    Given the page loads
-    Then the navbar shows the "Toolcraft" logo
-    And the navbar has links: Home, About, Services, Projects, Blog, Contact
-    And the navbar is sticky on scroll
-    And a mobile hamburger menu appears on small screens
+#### Scenario: Navbar displays correctly
 
-  Scenario: Hero section renders with slider
-    Given the page loads
-    Then the hero section has a dark overlay on the background
-    And the heading reads "Perfection is always in our mind."
-    And the hero background cycles through 3 slides
+- **GIVEN** the page loads
+- **THEN** the navbar shows the "Toolcraft" logo
+- **AND** the navbar has links: Home, About, Services, Projects, Blog, Contact
+- **AND** the navbar is sticky on scroll
+- **AND** a mobile hamburger menu appears on small screens
 
-  Scenario: Quick Contact form is functional
-    Given the page loads
-    Then a "Get Quotation" section is visible
-    And the contact form has fields: Name, Email, Subject, Message
-    And a Submit button is present
-    And form fields have placeholder text
+#### Scenario: Hero section renders with slider
 
-  Scenario: Services section shows 6 service cards
-    Given the page loads
-    Then the services section displays 6 cards in a 3-column grid
-    And each card has an icon, title, and description
-    And the service names are: Renovation, Finishing, Building Construction, House Build, Fence Construction, Bridge Construct
+- **GIVEN** the page loads
+- **THEN** the hero section has a dark overlay on the background
+- **AND** the heading reads "Perfection is always in our mind."
+- **AND** the hero background cycles through 3 slides
 
-  Scenario: Stats/Counter section displays metrics
-    Given the page loads
-    Then the stats section shows 3 tabbed items: Technology, Quality, Staff
-    And each tab reveals a counter with icon and description
+#### Scenario: Quick Contact form is functional
 
-  Scenario: Testimonials section shows client quote
-    Given the page loads
-    Then a testimonial quote is displayed
-    And the client name and source are shown below the quote
+- **GIVEN** the page loads
+- **THEN** a "Get Quotation" section is visible
+- **AND** the contact form has fields: Name, Email, Subject, Message
+- **AND** a Submit button is present
+- **AND** form fields have placeholder text
 
-  Scenario: Projects gallery shows project cards
-    Given the page loads
-    Then the projects section displays project images in a grid
-    And each project has a hover overlay with a heart icon
+#### Scenario: Services section shows 6 service cards
 
-  Scenario: Blog section shows recent posts
-    Given the page loads
-    Then the blog section displays 3 post cards
-    And each card shows date, author, title, and excerpt
+- **GIVEN** the page loads
+- **THEN** the services section displays 6 cards in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the service names are: Renovation, Finishing, Building Construction, House Build, Fence Construction, Bridge Construct
 
-  Scenario: Footer displays correctly
-    Given the page loads
-    Then the footer has an About Us section with description
-    And the footer has Quick Links columns
-    And the footer contains a copyright notice
-    And the footer links to https://www.componentdock.com/
-```
+#### Scenario: Stats/Counter section displays metrics
+
+- **GIVEN** the page loads
+- **THEN** the stats section shows 3 tabbed items: Technology, Quality, Staff
+- **AND** each tab reveals a counter with icon and description
+
+#### Scenario: Testimonials section shows client quote
+
+- **GIVEN** the page loads
+- **THEN** a testimonial quote is displayed
+- **AND** the client name and source are shown below the quote
+
+#### Scenario: Projects gallery shows project cards
+
+- **GIVEN** the page loads
+- **THEN** the projects section displays project images in a grid
+- **AND** each project has a hover overlay with a heart icon
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the page loads
+- **THEN** the blog section displays 3 post cards
+- **AND** each card shows date, author, title, and excerpt
+
+#### Scenario: Footer displays correctly
+
+- **GIVEN** the page loads
+- **THEN** the footer has an About Us section with description
+- **AND** the footer has Quick Links columns
+- **AND** the footer contains a copyright notice
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification Checklist
 

@@ -69,82 +69,92 @@ Warm, minimalist checkout wizard with an earthy palette. Two-column layout insid
    - "Place Order" / "Complete" button
 9. **Navigation Buttons** — each step has "← Back" (on steps 2–4) and "Next →" / "Complete" buttons at the bottom of the form card.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Crucible — 4-Step Checkout Wizard Template
 
 #### Scenario: Page layout and decorative panel render
-- **Given** the user loads the page
-- **Then** a centered container with warm beige background is displayed
-- **And** a two-column layout is shown: illustration panel (left) and form card (right)
-- **And** a decorative placeholder illustration appears in the left panel
+
+- **GIVEN** the user loads the page
+- **THEN** a centered container with warm beige background is displayed
+- **AND** a two-column layout is shown: illustration panel (left) and form card (right)
+- **AND** a decorative placeholder illustration appears in the left panel
 
 #### Scenario: Progress bar displays correctly
-- **Given** the user loads the page
-- **Then** a 4-segment progress bar is shown at the top of the form card
-- **And** the segments are labeled "Billing", "Shipping", "Order Review", "Payment"
-- **And** the first segment ("Billing") is highlighted in orange (#F2994A)
-- **And** the remaining segments are light gray (#E0E0E0)
-- **And** each segment has rounded corners
+
+- **GIVEN** the user loads the page
+- **THEN** a 4-segment progress bar is shown at the top of the form card
+- **AND** the segments are labeled "Billing", "Shipping", "Order Review", "Payment"
+- **AND** the first segment ("Billing") is highlighted in orange (#F2994A)
+- **AND** the remaining segments are light gray (#E0E0E0)
+- **AND** each segment has rounded corners
 
 #### Scenario: Step 1 — Billing Details form
-- **Given** the user is on step 1 (Billing Details)
-- **Then** the heading "Billing Details" is displayed
-- **And** form fields are shown: First Name*, Last Name*, Company Name, Country*, Street Address*, Apartment/suite/unit, Town/City*
-- **And** required fields are marked with an asterisk
-- **And** a "Next →" button is displayed at the bottom
-- **And** clicking "Next" validates required fields before advancing
+
+- **GIVEN** the user is on step 1 (Billing Details)
+- **THEN** the heading "Billing Details" is displayed
+- **AND** form fields are shown: First Name*, Last Name*, Company Name, Country*, Street Address*, Apartment/suite/unit, Town/City*
+- **AND** required fields are marked with an asterisk
+- **AND** a "Next →" button is displayed at the bottom
+- **AND** clicking "Next" validates required fields before advancing
 
 #### Scenario: Step 2 — Shipping Details form
-- **Given** the user completes step 1 and clicks "Next"
-- **Then** the progress bar updates: Billing is complete, Shipping is active (orange)
-- **And** the heading "Shipping Details" is displayed
-- **And** shipping address fields are shown (similar to billing)
-- **And** a "← Back" button is displayed
-- **And** a "Next →" button is displayed
-- **And** clicking "← Back" returns to step 1
+
+- **GIVEN** the user completes step 1 and clicks "Next"
+- **THEN** the progress bar updates: Billing is complete, Shipping is active (orange)
+- **AND** the heading "Shipping Details" is displayed
+- **AND** shipping address fields are shown (similar to billing)
+- **AND** a "← Back" button is displayed
+- **AND** a "Next →" button is displayed
+- **AND** clicking "← Back" returns to step 1
 
 #### Scenario: Step 3 — Order Review
-- **Given** the user completes step 2 and clicks "Next"
-- **Then** the progress bar updates: Shipping is complete, Order Review is active
-- **And** the heading "Order Review" is displayed
-- **And** a summary of products (name, quantity, price) is shown
-- **And** subtotal, shipping, and total amounts are displayed
-- **And** "← Back" and "Next →" buttons are present
+
+- **GIVEN** the user completes step 2 and clicks "Next"
+- **THEN** the progress bar updates: Shipping is complete, Order Review is active
+- **AND** the heading "Order Review" is displayed
+- **AND** a summary of products (name, quantity, price) is shown
+- **AND** subtotal, shipping, and total amounts are displayed
+- **AND** "← Back" and "Next →" buttons are present
 
 #### Scenario: Step 4 — Payment Details
-- **Given** the user completes step 3 and clicks "Next"
-- **Then** the progress bar updates: Order Review is complete, Payment is active
-- **And** the heading "Payment Details" is displayed
-- **And** form fields are shown: Cardholder Name*, Card Number*, Expiry Date*, CVV*
-- **And** "← Back" and "Complete" / "Place Order" buttons are present
-- **And** clicking "Complete" validates payment fields
+
+- **GIVEN** the user completes step 3 and clicks "Next"
+- **THEN** the progress bar updates: Order Review is complete, Payment is active
+- **AND** the heading "Payment Details" is displayed
+- **AND** form fields are shown: Cardholder Name*, Card Number*, Expiry Date*, CVV*
+- **AND** "← Back" and "Complete" / "Place Order" buttons are present
+- **AND** clicking "Complete" validates payment fields
 
 #### Scenario: Progress bar navigation
-- **Given** the user is on step 3
-- **When** the user clicks the "Billing" segment in the progress bar
-- **Then** the wizard navigates back to step 1
-- **And** the progress bar updates to show step 1 as active
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks the "Billing" segment in the progress bar
+- **THEN** the wizard navigates back to step 1
+- **AND** the progress bar updates to show step 1 as active
 
 #### Scenario: Form validation on step advancement
-- **Given** the user is on step 1
-- **When** the user clicks "Next" without filling required fields
-- **Then** validation errors are displayed on the required fields
-- **And** the wizard does not advance to the next step
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "Next" without filling required fields
+- **THEN** validation errors are displayed on the required fields
+- **AND** the wizard does not advance to the next step
 
 #### Scenario: Responsive layout on mobile
-- **Given** the user views the page on a mobile device (< 576px)
-- **Then** the two-column layout stacks vertically (illustration above form)
-- **And** the form card fills the full width
-- **And** the progress bar remains visible and functional
-- **And** all form fields are accessible and usable
+
+- **GIVEN** the user views the page on a mobile device (< 576px)
+- **THEN** the two-column layout stacks vertically (illustration above form)
+- **AND** the form card fills the full width
+- **AND** the progress bar remains visible and functional
+- **AND** all form fields are accessible and usable
 
 #### Scenario: Form card styling
-- **Given** the user loads the page
-- **Then** the form card has a white background with rounded corners (8–10px)
-- **And** the card has a subtle drop shadow
-- **And** form inputs have light gray borders with rounded corners
-- **And** the "Next" button matches the page background color with dark text
+
+- **GIVEN** the user loads the page
+- **THEN** the form card has a white background with rounded corners (8–10px)
+- **AND** the card has a subtle drop shadow
+- **AND** form inputs have light gray borders with rounded corners
+- **AND** the "Next" button matches the page background color with dark text
 
 ## Verification Checklist
 

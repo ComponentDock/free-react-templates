@@ -49,128 +49,155 @@ Recreation of ColorLib **Work** template.
 - Social links: Facebook, Twitter, Instagram, LinkedIn
 - Copyright footer with "Made with ❤" attribution
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Workbench template behaviour
+
 Feature: Workbench Template
-  As a visitor, I want to see a professional portfolio site
-  So that I can learn about the freelancer and their work.
+As a visitor, I want to see a professional portfolio site
+So that I can learn about the freelancer and their work.
 
-  Background:
-    Given the template loads at the root URL
+Background:
+- **GIVEN** the template loads at the root URL
 
-  # --- Sidebar ---
-  Scenario: Sidebar navigation
-    Then a fixed left sidebar is visible
-    And the sidebar shows a logo
-    And the sidebar shows navigation links: Home, Work, About, Services, Blog, Contact
-    And the sidebar shows social media icons (Facebook, Twitter, Instagram, LinkedIn)
-    And the sidebar shows a copyright line
+**--- Sidebar ---**
 
-  Scenario: Sidebar scroll links
-    When I click a navigation link in the sidebar
-    Then the page scrolls to the corresponding section
+#### Scenario: Sidebar navigation
 
-  # --- Hero ---
-  Scenario: Hero slider displays
-    Then a full-height hero slider is visible
-    And the slider shows a heading text
-    And the slider shows a subtitle
-    And the slider shows a "Learn More" button
-    And the slider has a dark overlay on the background image
+- **THEN** a fixed left sidebar is visible
+- **AND** the sidebar shows a logo
+- **AND** the sidebar shows navigation links: Home, Work, About, Services, Blog, Contact
+- **AND** the sidebar shows social media icons (Facebook, Twitter, Instagram, LinkedIn)
+- **AND** the sidebar shows a copyright line
 
-  Scenario: Hero slider auto-rotation
-    Given the page loads
-    When I wait a few seconds
-    Then the slider transitions to the next slide automatically
+#### Scenario: Sidebar scroll links
 
-  # --- About ---
-  Scenario: About section layout
-    Then the About section is visible
-    And the About section shows two stacked overlapping images on the left
-    And the About section shows "Welcome & Introduce" meta label
-    And the About section shows an introduction heading
-    And the About section shows a paragraph of bio text
+- **WHEN** I click a navigation link in the sidebar
+- **THEN** the page scrolls to the corresponding section
 
-  Scenario: About accordion
-    Then the About section shows an accordion with 3 panels
-    And panel 1 is titled "Why choose me?"
-    And panel 2 is titled "What I do?"
-    And panel 3 is titled "My Specialties"
+**--- Hero ---**
 
-  Scenario: Accordion expand/collapse
-    When I click an accordion panel header
-    Then the panel body becomes visible
-    When I click the same panel header again
-    Then the panel body is hidden
+#### Scenario: Hero slider displays
 
-  # --- Services ---
-  Scenario: Services section displays
-    Then the Services section is visible
-    And the section shows "What I do?" meta label
-    And the section shows "Here are some of my expertise" heading
-    And there are 6 feature cards displayed in a 2×3 grid
+- **THEN** a full-height hero slider is visible
+- **AND** the slider shows a heading text
+- **AND** the slider shows a subtitle
+- **AND** the slider shows a "Learn More" button
+- **AND** the slider has a dark overlay on the background image
 
-  Scenario: Service feature card content
-    Then each service card shows an icon
-    And each service card shows a title
-    And each service card shows a description paragraph
+#### Scenario: Hero slider auto-rotation
 
-  # --- Work / Portfolio ---
-  Scenario: Portfolio section displays
-    Then the Work/Portfolio section is visible
-    And the section shows "My Work" meta label
-    And the section shows "Recent Work" heading
-    And there are 6 project cards displayed in a 2×3 grid
+- **GIVEN** the page loads
+- **WHEN** I wait a few seconds
+- **THEN** the slider transitions to the next slide automatically
 
-  Scenario: Portfolio card content
-    Then each project card shows a background image
-    And each project card shows a title
-    And each project card shows category tags
-    And each project card shows share, view count, and like count icons
+**--- About ---**
 
-  Scenario: Portfolio card hover
-    When I hover over a project card
-    Then the card shows an overlay with title and tags
+#### Scenario: About section layout
 
-  # --- Blog ---
-  Scenario: Blog section displays
-    Then the Blog section is visible
-    And the section shows "Read" meta label
-    And the section shows "Recent Blog" heading
-    And there are 3 blog cards displayed in a 3-column grid
+- **THEN** the About section is visible
+- **AND** the About section shows two stacked overlapping images on the left
+- **AND** the About section shows "Welcome & Introduce" meta label
+- **AND** the About section shows an introduction heading
+- **AND** the About section shows a paragraph of bio text
 
-  Scenario: Blog card content
-    Then each blog card shows a featured image
-    And each blog card shows date, category, and comment count
-    And each blog card shows a title
-    And each blog card shows an excerpt paragraph
-    And each blog card shows a "Read More" link
+#### Scenario: About accordion
 
-  # --- CTA ---
-  Scenario: Call-to-action section
-    Then a "Get in Touch" section is visible
-    And the CTA section has a light gray (#fafafa) background
-    And the CTA shows a heading
-    And the CTA shows a description paragraph
-    And the CTA shows a "Contact me!" primary button
+- **THEN** the About section shows an accordion with 3 panels
+- **AND** panel 1 is titled "Why choose me?"
+- **AND** panel 2 is titled "What I do?"
+- **AND** panel 3 is titled "My Specialties"
 
-  # --- Footer ---
-  Scenario: Footer with Component Dock link
-    Then the footer is visible
-    And the footer links to https://www.componentdock.com/
+#### Scenario: Accordion expand/collapse
 
-  # --- Design tokens ---
-  Scenario: Brand color applied
-    Then primary buttons use the coral (#F75940) accent color
-    And headings use the Quicksand font family
-    And buttons have pill-shaped border radius (30px)
+- **WHEN** I click an accordion panel header
+- **THEN** the panel body becomes visible
+- **WHEN** I click the same panel header again
+- **THEN** the panel body is hidden
 
-  Scenario: Responsive layout
-    Then the sidebar collapses on mobile viewports
-    And a hamburger toggle appears on mobile
-    And the main content takes full width on mobile
-```
+**--- Services ---**
+
+#### Scenario: Services section displays
+
+- **THEN** the Services section is visible
+- **AND** the section shows "What I do?" meta label
+- **AND** the section shows "Here are some of my expertise" heading
+- **AND** there are 6 feature cards displayed in a 2×3 grid
+
+#### Scenario: Service feature card content
+
+- **THEN** each service card shows an icon
+- **AND** each service card shows a title
+- **AND** each service card shows a description paragraph
+
+**--- Work / Portfolio ---**
+
+#### Scenario: Portfolio section displays
+
+- **THEN** the Work/Portfolio section is visible
+- **AND** the section shows "My Work" meta label
+- **AND** the section shows "Recent Work" heading
+- **AND** there are 6 project cards displayed in a 2×3 grid
+
+#### Scenario: Portfolio card content
+
+- **THEN** each project card shows a background image
+- **AND** each project card shows a title
+- **AND** each project card shows category tags
+- **AND** each project card shows share, view count, and like count icons
+
+#### Scenario: Portfolio card hover
+
+- **WHEN** I hover over a project card
+- **THEN** the card shows an overlay with title and tags
+
+**--- Blog ---**
+
+#### Scenario: Blog section displays
+
+- **THEN** the Blog section is visible
+- **AND** the section shows "Read" meta label
+- **AND** the section shows "Recent Blog" heading
+- **AND** there are 3 blog cards displayed in a 3-column grid
+
+#### Scenario: Blog card content
+
+- **THEN** each blog card shows a featured image
+- **AND** each blog card shows date, category, and comment count
+- **AND** each blog card shows a title
+- **AND** each blog card shows an excerpt paragraph
+- **AND** each blog card shows a "Read More" link
+
+**--- CTA ---**
+
+#### Scenario: Call-to-action section
+
+- **THEN** a "Get in Touch" section is visible
+- **AND** the CTA section has a light gray (#fafafa) background
+- **AND** the CTA shows a heading
+- **AND** the CTA shows a description paragraph
+- **AND** the CTA shows a "Contact me!" primary button
+
+**--- Footer ---**
+
+#### Scenario: Footer with Component Dock link
+
+- **THEN** the footer is visible
+- **AND** the footer links to https://www.componentdock.com/
+
+**--- Design tokens ---**
+
+#### Scenario: Brand color applied
+
+- **THEN** primary buttons use the coral (#F75940) accent color
+- **AND** headings use the Quicksand font family
+- **AND** buttons have pill-shaped border radius (30px)
+
+#### Scenario: Responsive layout
+
+- **THEN** the sidebar collapses on mobile viewports
+- **AND** a hamburger toggle appears on mobile
+- **AND** the main content takes full width on mobile
 
 ## Verification checklist
 

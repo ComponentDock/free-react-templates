@@ -64,96 +64,120 @@ Extracted from the live preview's `css/style.css` and `index.html`.
 | Footer                          | Dark charcoal `#333333`                           |
 | Copyright bar                   | Same dark charcoal (part of footer)               |
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Cuspide template behaviour
+
 Feature: Cuspide dental clinic website
 
-  Background:
-    Given the user loads the Cuspide page
+Background:
+- **GIVEN** the user loads the Cuspide page
 
-  # --- Top Bar ---
-  Scenario: Top bar shows social icons and contact info
-    Then a top bar is visible above the navbar
-    And social media icons (Twitter, Facebook, LinkedIn, Instagram) are shown on the left
-    And email address and phone number are shown on the right
+**--- Top Bar ---**
 
-  # --- Navbar ---
-  Scenario: Navbar displays brand and navigation links
-    Then the brand "Cuspide" is visible on the left
-    And navigation links are: Home, About Us, Patients, News, Services, Contact
-    And Home has a dropdown with Menu One, Menu Two, Menu Three, and a Sub Menu
-    And Patients has a dropdown with Menu One, Menu Two, Menu Three
-    And the navbar becomes sticky with white bg and shadow on scroll
+#### Scenario: Top bar shows social icons and contact info
 
-  # --- Hero ---
-  Scenario: Hero section shows background image with heading
-    Then a full-width hero section with a background image is displayed
-    And a subtitle "We Priority Your" is shown
-    And a heading "Your New Smile" is shown with "New Smile" in bold
-    And the hero uses a parallax scroll effect
+- **THEN** a top bar is visible above the navbar
+- **AND** social media icons (Twitter, Facebook, LinkedIn, Instagram) are shown on the left
+- **AND** email address and phone number are shown on the right
 
-  # --- Service Feature Strip ---
-  Scenario: Three service feature cards are shown over the hero
-    Then 3 service feature cards are visible: Periodontology, Tooth Whitening, Preventative Care
-    And each card has a dental icon, heading, and short description
-    And each card has a semi-transparent dark overlay background
+**--- Navbar ---**
 
-  # --- Image + Feature Grid ---
-  Scenario: Image and feature grid section is displayed
-    Then a left column shows an image
-    And a right column shows 4 feature items in a 2x2 grid: Tooth Whitening, Stethoscope, First Aid Kit, Tooth Pliers
-    And each feature item has an icon and heading
-    And active/selected feature items have a box-shadow effect
+#### Scenario: Navbar displays brand and navigation links
 
-  # --- Appointment Form ---
-  Scenario: Appointment request form is displayed
-    Then a heading "Online Appointment Request Form" is shown
-    And a description paragraph is visible
-    And a white form card contains fields: First Name, Last Name, Date, Email, Treatment Needed (select), Notes (textarea)
-    And a "Send" submit button is present
-    And the section has a warm beige background (#ece8d9)
+- **THEN** the brand "Cuspide" is visible on the left
+- **AND** navigation links are: Home, About Us, Patients, News, Services, Contact
+- **AND** Home has a dropdown with Menu One, Menu Two, Menu Three, and a Sub Menu
+- **AND** Patients has a dropdown with Menu One, Menu Two, Menu Three
+- **AND** the navbar becomes sticky with white bg and shadow on scroll
 
-  # --- Promo Countdown Bar ---
-  Scenario: Promo bar shows a discount offer
-    Then a blue promotional bar is displayed
-    And the text reads "Promo For Tooth Cleaning from $140.00 now $50.00"
-    And a countdown timer is shown
+**--- Hero ---**
 
-  # --- Services Section ---
-  Scenario: Services section shows 6 service cards
-    Then an "Our Services" heading is displayed
-    And 6 service cards are shown in a 3x2 grid
-    And the services are: Tooth Whitening, Stethoscope, Dentist Chair, Tooth Pliers, First Aid Kit, Dentist Tools
-    And each card has an icon, heading, and description paragraph
+#### Scenario: Hero section shows background image with heading
 
-  # --- Video / Success Stories ---
-  Scenario: Success stories section with video
-    Then a "Success Stories" heading is displayed
-    And a description paragraph is visible on the left
-    And a background image with a play button is shown on the right
-    And clicking the play button opens a video popup
+- **THEN** a full-width hero section with a background image is displayed
+- **AND** a subtitle "We Priority Your" is shown
+- **AND** a heading "Your New Smile" is shown with "New Smile" in bold
+- **AND** the hero uses a parallax scroll effect
 
-  # --- Testimonials ---
-  Scenario: Testimonials section shows patient reviews
-    Then a "People Says" heading is displayed
-    And 3 testimonial cards are shown in a row
-    And each card has a circular avatar image, quote text, and a person name
-    And one card has an "active" state with white background and shadow
+**--- Service Feature Strip ---**
 
-  # --- Footer ---
-  Scenario: Footer shows navigation, news, newsletter, and social links
-    Then the footer has a dark charcoal background
-    And a "Navigation" column shows links: Home, Services, News, Team, About Us, Privacy Policy, Contact Us, Membership
-    And a "Recent News" column shows 3 news items with thumbnail images
-    And a "Subscribe Newsletter" column has an email input and "Send" button
-    And social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
-    And a "Component Dock" link is present in the footer
+#### Scenario: Three service feature cards are shown over the hero
 
-  # --- Copyright ---
-  Scenario: Copyright bar is shown
-    Then a copyright notice is displayed at the bottom of the footer
-```
+- **THEN** 3 service feature cards are visible: Periodontology, Tooth Whitening, Preventative Care
+- **AND** each card has a dental icon, heading, and short description
+- **AND** each card has a semi-transparent dark overlay background
+
+**--- Image + Feature Grid ---**
+
+#### Scenario: Image and feature grid section is displayed
+
+- **THEN** a left column shows an image
+- **AND** a right column shows 4 feature items in a 2x2 grid: Tooth Whitening, Stethoscope, First Aid Kit, Tooth Pliers
+- **AND** each feature item has an icon and heading
+- **AND** active/selected feature items have a box-shadow effect
+
+**--- Appointment Form ---**
+
+#### Scenario: Appointment request form is displayed
+
+- **THEN** a heading "Online Appointment Request Form" is shown
+- **AND** a description paragraph is visible
+- **AND** a white form card contains fields: First Name, Last Name, Date, Email, Treatment Needed (select), Notes (textarea)
+- **AND** a "Send" submit button is present
+- **AND** the section has a warm beige background (#ece8d9)
+
+**--- Promo Countdown Bar ---**
+
+#### Scenario: Promo bar shows a discount offer
+
+- **THEN** a blue promotional bar is displayed
+- **AND** the text reads "Promo For Tooth Cleaning from $140.00 now $50.00"
+- **AND** a countdown timer is shown
+
+**--- Services Section ---**
+
+#### Scenario: Services section shows 6 service cards
+
+- **THEN** an "Our Services" heading is displayed
+- **AND** 6 service cards are shown in a 3x2 grid
+- **AND** the services are: Tooth Whitening, Stethoscope, Dentist Chair, Tooth Pliers, First Aid Kit, Dentist Tools
+- **AND** each card has an icon, heading, and description paragraph
+
+**--- Video / Success Stories ---**
+
+#### Scenario: Success stories section with video
+
+- **THEN** a "Success Stories" heading is displayed
+- **AND** a description paragraph is visible on the left
+- **AND** a background image with a play button is shown on the right
+- **AND** clicking the play button opens a video popup
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section shows patient reviews
+
+- **THEN** a "People Says" heading is displayed
+- **AND** 3 testimonial cards are shown in a row
+- **AND** each card has a circular avatar image, quote text, and a person name
+- **AND** one card has an "active" state with white background and shadow
+
+**--- Footer ---**
+
+#### Scenario: Footer shows navigation, news, newsletter, and social links
+
+- **THEN** the footer has a dark charcoal background
+- **AND** a "Navigation" column shows links: Home, Services, News, Team, About Us, Privacy Policy, Contact Us, Membership
+- **AND** a "Recent News" column shows 3 news items with thumbnail images
+- **AND** a "Subscribe Newsletter" column has an email input and "Send" button
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
+- **AND** a "Component Dock" link is present in the footer
+
+**--- Copyright ---**
+
+#### Scenario: Copyright bar is shown
+
+- **THEN** a copyright notice is displayed at the bottom of the footer
 
 ## Verification checklist
 

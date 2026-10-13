@@ -43,135 +43,139 @@ Extracted from the live preview stylesheet (`css/style.css`):
 - Newsletter subscription area
 - Dark footer with logo, address, social links
 
-## Gherkin requirements
+## Requirements
 
 ### Header / Navigation
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the user loads the page
-  When the header renders
-  Then the logo "Routebook" is visible on the left
-  And navigation links "Home", "About", "Listings", "Blog", "Contact" are shown
-  And a red "Add Listing" primary button appears
-  And a circular login icon button appears
 
-Scenario: Header becomes fixed on scroll
-  Given the user scrolls past the hero
-  When the header enters fixed position
-  Then it gains a white background with box shadow
-  And all nav link colors change from white to dark
-```
+#### Scenario: Navbar displays logo and navigation links
+
+- **GIVEN** the user loads the page
+- **WHEN** the header renders
+- **THEN** the logo "Routebook" is visible on the left
+- **AND** navigation links "Home", "About", "Listings", "Blog", "Contact" are shown
+- **AND** a red "Add Listing" primary button appears
+- **AND** a circular login icon button appears
+
+#### Scenario: Header becomes fixed on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **WHEN** the header enters fixed position
+- **THEN** it gains a white background with box shadow
+- **AND** all nav link colors change from white to dark
 
 ### Hero Section
-```gherkin
-Scenario: Hero renders with search form
-  Given the user is on the homepage
-  When the hero section loads
-  Then a full-width background image is displayed
-  And the heading "Discover The Best Services Near You" is centered in white
-  And a search form with two dropdowns (category, location) is shown
-  And a red "Search" button is visible
 
-Scenario: Hero search form has category options
-  Given the hero search form is visible
-  When the user clicks the category dropdown
-  Then options for service categories are displayed
-```
+#### Scenario: Hero renders with search form
+
+- **GIVEN** the user is on the homepage
+- **WHEN** the hero section loads
+- **THEN** a full-width background image is displayed
+- **AND** the heading "Discover The Best Services Near You" is centered in white
+- **AND** a search form with two dropdowns (category, location) is shown
+- **AND** a red "Search" button is visible
+
+#### Scenario: Hero search form has category options
+
+- **GIVEN** the hero search form is visible
+- **WHEN** the user clicks the category dropdown
+- **THEN** options for service categories are displayed
 
 ### Categories Section
-```gherkin
-Scenario: Categories section shows popular categories
-  Given the user scrolls to the categories section
-  When the section renders
-  Then the heading "Most Popular Categories" is displayed
-  And 5 category items are shown in a row: Food & Drink, Restaurant, Hotels, Beauty & Spa, Shopping
-  And each category has an icon and label
-```
+
+#### Scenario: Categories section shows popular categories
+
+- **GIVEN** the user scrolls to the categories section
+- **WHEN** the section renders
+- **THEN** the heading "Most Popular Categories" is displayed
+- **AND** 5 category items are shown in a row: Food & Drink, Restaurant, Hotels, Beauty & Spa, Shopping
+- **AND** each category has an icon and label
 
 ### Most Searched / Listings Section
-```gherkin
-Scenario: Tabbed listings section renders
-  Given the user scrolls to the most-searched section
-  When the section loads
-  Then the heading "The Most Searched Services" is displayed
-  And 6 tab navigation items are shown with food icons
-  And the first tab is active by default
-  And 3 listing cards are visible in the active tab
 
-Scenario: Listing cards display correctly
-  Given a listing card is rendered
-  When the user views it
-  Then it shows a background image
-  And a category tag label in the top-left
-  And heart/bookmark icon buttons in the top-right
-  And below the image: title, star rating, price range, location/address
-  And an "Open Now" or status indicator
+#### Scenario: Tabbed listings section renders
 
-Scenario: Clicking a tab switches content
-  Given the user is on the most-searched section
-  When the user clicks a different tab
-  Then the listing cards update to show that category's results
-  And the clicked tab becomes active
-```
+- **GIVEN** the user scrolls to the most-searched section
+- **WHEN** the section loads
+- **THEN** the heading "The Most Searched Services" is displayed
+- **AND** 6 tab navigation items are shown with food icons
+- **AND** the first tab is active by default
+- **AND** 3 listing cards are visible in the active tab
+
+#### Scenario: Listing cards display correctly
+
+- **GIVEN** a listing card is rendered
+- **WHEN** the user views it
+- **THEN** it shows a background image
+- **AND** a category tag label in the top-left
+- **AND** heart/bookmark icon buttons in the top-right
+- **AND** below the image: title, star rating, price range, location/address
+- **AND** an "Open Now" or status indicator
+
+#### Scenario: Clicking a tab switches content
+
+- **GIVEN** the user is on the most-searched section
+- **WHEN** the user clicks a different tab
+- **THEN** the listing cards update to show that category's results
+- **AND** the clicked tab becomes active
 
 ### How It Works Section
-```gherkin
-Scenario: Work section shows steps
-  Given the user scrolls to the how-it-works section
-  When the section renders on light gray background
-  Then the heading "How Does It Work" is centered
-  And 3 step cards are displayed: "Explore Listing", "Make Appointments", "Get Services"
-  And each card has an icon, title, and description text
-```
+
+#### Scenario: Work section shows steps
+
+- **GIVEN** the user scrolls to the how-it-works section
+- **WHEN** the section renders on light gray background
+- **THEN** the heading "How Does It Work" is centered
+- **AND** 3 step cards are displayed: "Explore Listing", "Make Appointments", "Get Services"
+- **AND** each card has an icon, title, and description text
 
 ### Featured Locations Section
-```gherkin
-Scenario: Location cards render
-  Given the user scrolls to the locations section
-  When the section renders
-  Then the heading "Top Featured Locations" is displayed
-  And 4 location cards are shown in a grid: Washington D.C, Chicago, San Antonio, Los Angeles
-  And each card shows a city image with a label overlay
-```
+
+#### Scenario: Location cards render
+
+- **GIVEN** the user scrolls to the locations section
+- **WHEN** the section renders
+- **THEN** the heading "Top Featured Locations" is displayed
+- **AND** 4 location cards are shown in a grid: Washington D.C, Chicago, San Antonio, Los Angeles
+- **AND** each card shows a city image with a label overlay
 
 ### Testimonials Section
-```gherkin
-Scenario: Testimonials render with user quotes
-  Given the user scrolls to the testimonials section
-  When the section renders on a background image
-  Then the heading "Trusted By Over 5000+ Users" is displayed
-  And testimonial cards show user name and quote text
-  And a large decorative quote icon is visible
-```
+
+#### Scenario: Testimonials render with user quotes
+
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the section renders on a background image
+- **THEN** the heading "Trusted By Over 5000+ Users" is displayed
+- **AND** testimonial cards show user name and quote text
+- **AND** a large decorative quote icon is visible
 
 ### Blog / News Section
-```gherkin
-Scenario: News posts render
-  Given the user scrolls to the news section
-  When the section renders
-  Then the heading "News Post" is displayed
-  And 3 blog post cards are shown with image, date, title, and excerpt
-```
+
+#### Scenario: News posts render
+
+- **GIVEN** the user scrolls to the news section
+- **WHEN** the section renders
+- **THEN** the heading "News Post" is displayed
+- **AND** 3 blog post cards are shown with image, date, title, and excerpt
 
 ### Newsletter Section
-```gherkin
-Scenario: Newsletter form renders
-  Given the user scrolls to the newsletter section
-  When the section renders on light gray background
-  Then the heading "Subscribe Newsletter" is displayed
-  And an email input field is shown
-  And a red "Subscribe" button is visible
-```
+
+#### Scenario: Newsletter form renders
+
+- **GIVEN** the user scrolls to the newsletter section
+- **WHEN** the section renders on light gray background
+- **THEN** the heading "Subscribe Newsletter" is displayed
+- **AND** an email input field is shown
+- **AND** a red "Subscribe" button is visible
 
 ### Footer
-```gherkin
-Scenario: Footer renders with links and Component Dock
-  Given the user scrolls to the footer
-  When the footer renders on dark background
-  Then the Routebook logo/brand is shown
-  And address and social icon links are displayed
-  And a "Made with Component Dock" or equivalent link to https://www.componentdock.com/ is present
-```
+
+#### Scenario: Footer renders with links and Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders on dark background
+- **THEN** the Routebook logo/brand is shown
+- **AND** address and social icon links are displayed
+- **AND** a "Made with Component Dock" or equivalent link to https://www.componentdock.com/ is present
 
 ## Verification checklist
 

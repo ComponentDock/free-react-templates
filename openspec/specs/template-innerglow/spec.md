@@ -39,222 +39,235 @@ Extracted from the preview stylesheet (`css/style.css`):
 - Gallery: image slider, no solid background
 - Footer: dark (implied by `.text-white` styling and dark footer section)
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navigation Bar
 
-  Scenario: Top info bar displays contact details
-    Given the user visits the page
-    Then the top bar shows address "184 Main Collins Street"
-    And shows phone "(965) 436 3274"
-    And shows hours "Mon - Fri: 6:30am - 07:45pm"
+#### Scenario: Top info bar displays contact details
 
-  Scenario: Navigation links are present
-    Given the user visits the page
-    Then the navbar contains links: Home, About, Classes, Trainers, Events, Blog, Contact
+- **GIVEN** the user visits the page
+- **THEN** the top bar shows address "184 Main Collins Street"
+- **AND** shows phone "(965) 436 3274"
+- **AND** shows hours "Mon - Fri: 6:30am - 07:45pm"
 
-  Scenario: Logo is visible
-    Given the user visits the page
-    Then the logo "InnerGlow" is displayed in the header
+#### Scenario: Navigation links are present
 
-  Scenario: Mobile hamburger menu toggles navigation
-    Given the viewport is mobile-width
-    When the user clicks the hamburger menu icon
-    Then the navigation menu becomes visible
-```
+- **GIVEN** the user visits the page
+- **THEN** the navbar contains links: Home, About, Classes, Trainers, Events, Blog, Contact
+
+#### Scenario: Logo is visible
+
+- **GIVEN** the user visits the page
+- **THEN** the logo "InnerGlow" is displayed in the header
+
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** the viewport is mobile-width
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** the navigation menu becomes visible
 
 ### Hero Section
 
-```gherkin
 Feature: Hero Section
 
-  Scenario: Hero displays gradient background
-    Given the user visits the page
-    Then the hero section has a coral-to-peach gradient background
+#### Scenario: Hero displays gradient background
 
-  Scenario: Hero shows headline text
-    Given the user visits the page
-    Then the hero displays a yoga-related headline
+- **GIVEN** the user visits the page
+- **THEN** the hero section has a coral-to-peach gradient background
 
-  Scenario: Hero has call-to-action button
-    Given the user visits the page
-    Then a "Register now" CTA button is visible in the hero
+#### Scenario: Hero shows headline text
 
-  Scenario: Hero social links are visible
-    Given the user visits the page
-    Then social media icons (Facebook, Instagram, Twitter, LinkedIn) appear in the hero sidebar
-```
+- **GIVEN** the user visits the page
+- **THEN** the hero displays a yoga-related headline
+
+#### Scenario: Hero has call-to-action button
+
+- **GIVEN** the user visits the page
+- **THEN** a "Register now" CTA button is visible in the hero
+
+#### Scenario: Hero social links are visible
+
+- **GIVEN** the user visits the page
+- **THEN** social media icons (Facebook, Instagram, Twitter, LinkedIn) appear in the hero sidebar
 
 ### About Section
 
-```gherkin
 Feature: About Section
 
-  Scenario: About section has section title
-    Given the user scrolls to the About section
-    Then the section title reads "Welcome to InnerGlow"
-    And a tagline about yoga practice is displayed
+#### Scenario: About section has section title
 
-  Scenario: About section shows feature items
-    Given the user scrolls to the About section
-    Then three feature items are displayed: "Full Rejuvenation", "Extension of Spring", "Against Aging"
-    And each feature has an icon and description
+- **GIVEN** the user scrolls to the About section
+- **THEN** the section title reads "Welcome to InnerGlow"
+- **AND** a tagline about yoga practice is displayed
 
-  Scenario: About section has explore CTA
-    Given the user scrolls to the About section
-    Then an "Explore More" button is visible
-```
+#### Scenario: About section shows feature items
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** three feature items are displayed: "Full Rejuvenation", "Extension of Spring", "Against Aging"
+- **AND** each feature has an icon and description
+
+#### Scenario: About section has explore CTA
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** an "Explore More" button is visible
 
 ### Classes Section
 
-```gherkin
 Feature: Classes Section
 
-  Scenario: Classes section displays class cards
-    Given the user scrolls to the Classes section
-    Then a carousel of class cards is displayed
+#### Scenario: Classes section displays class cards
 
-  Scenario: Each class card shows details
-    Given a class card is visible
-    Then it shows the class name, schedule, time range, description, trainer name, and trainer role
-    And a "Book Now" button is present
+- **GIVEN** the user scrolls to the Classes section
+- **THEN** a carousel of class cards is displayed
 
-  Scenario: Section title reads "Popular Classes"
-    Given the user scrolls to the Classes section
-    Then the section title reads "Popular Classes"
-```
+#### Scenario: Each class card shows details
+
+- **GIVEN** a class card is visible
+- **THEN** it shows the class name, schedule, time range, description, trainer name, and trainer role
+- **AND** a "Book Now" button is present
+
+#### Scenario: Section title reads "Popular Classes"
+
+- **GIVEN** the user scrolls to the Classes section
+- **THEN** the section title reads "Popular Classes"
 
 ### Trainers Section
 
-```gherkin
 Feature: Trainers Section
 
-  Scenario: Trainers section displays trainer profiles
-    Given the user scrolls to the Trainers section
-    Then a carousel of trainer cards is shown
+#### Scenario: Trainers section displays trainer profiles
 
-  Scenario: Each trainer card shows details
-    Given a trainer card is visible
-    Then it shows the trainer name, role, bio, and social links (Facebook, Instagram, Twitter, LinkedIn)
+- **GIVEN** the user scrolls to the Trainers section
+- **THEN** a carousel of trainer cards is shown
 
-  Scenario: Section title reads "Our Trainers"
-    Given the user scrolls to the Trainers section
-    Then the section title reads "Our Trainers"
-```
+#### Scenario: Each trainer card shows details
+
+- **GIVEN** a trainer card is visible
+- **THEN** it shows the trainer name, role, bio, and social links (Facebook, Instagram, Twitter, LinkedIn)
+
+#### Scenario: Section title reads "Our Trainers"
+
+- **GIVEN** the user scrolls to the Trainers section
+- **THEN** the section title reads "Our Trainers"
 
 ### Testimonial / Review Section
 
-```gherkin
 Feature: Testimonial Section
 
-  Scenario: Testimonial section has gradient background
-    Given the user scrolls to the Testimonials section
-    Then the section has a coral-to-peach gradient overlay on a background image
+#### Scenario: Testimonial section has gradient background
 
-  Scenario: Testimonials are displayed in a carousel
-    Given the user scrolls to the Testimonials section
-    Then a carousel of testimonials is shown
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the section has a coral-to-peach gradient overlay on a background image
 
-  Scenario: Each testimonial shows quote, name, and role
-    Given a testimonial card is visible
-    Then it shows a quoted text, person name, and role/title
-```
+#### Scenario: Testimonials are displayed in a carousel
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a carousel of testimonials is shown
+
+#### Scenario: Each testimonial shows quote, name, and role
+
+- **GIVEN** a testimonial card is visible
+- **THEN** it shows a quoted text, person name, and role/title
 
 ### Events Section
 
-```gherkin
 Feature: Events Section
 
-  Scenario: Events section shows upcoming events
-    Given the user scrolls to the Events section
-    Then the section title reads "Upcoming Events"
+#### Scenario: Events section shows upcoming events
 
-  Scenario: Events section has video feature
-    Given the user scrolls to the Events section
-    Then a video thumbnail with a play button is visible on the left
+- **GIVEN** the user scrolls to the Events section
+- **THEN** the section title reads "Upcoming Events"
 
-  Scenario: Event items show details
-    Given an event item is visible
-    Then it shows the event name, host, date, and location
-```
+#### Scenario: Events section has video feature
+
+- **GIVEN** the user scrolls to the Events section
+- **THEN** a video thumbnail with a play button is visible on the left
+
+#### Scenario: Event items show details
+
+- **GIVEN** an event item is visible
+- **THEN** it shows the event name, host, date, and location
 
 ### Pricing Section
 
-```gherkin
 Feature: Pricing Section
 
-  Scenario: Pricing section displays four plans
-    Given the user scrolls to the Pricing section
-    Then four pricing cards are displayed
+#### Scenario: Pricing section displays four plans
 
-  Scenario: Pricing plans have names and prices
-    Given the pricing cards are visible
-    Then plan names are: "Beginner" ($59), "Intermediate" ($99), "Advanced" ($159), "Professional" ($199)
-    And each shows "Per month"
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** four pricing cards are displayed
 
-  Scenario: Pricing plans list features
-    Given a pricing card is visible
-    Then it lists features: "Take Up To 7 Classes", "Available To Anyone", "Towels Included", "Never Expires"
+#### Scenario: Pricing plans have names and prices
 
-  Scenario: Pricing plans have CTA buttons
-    Given a pricing card is visible
-    Then a "Get Started" button is present
-```
+- **GIVEN** the pricing cards are visible
+- **THEN** plan names are: "Beginner" ($59), "Intermediate" ($99), "Advanced" ($159), "Professional" ($199)
+- **AND** each shows "Per month"
+
+#### Scenario: Pricing plans list features
+
+- **GIVEN** a pricing card is visible
+- **THEN** it lists features: "Take Up To 7 Classes", "Available To Anyone", "Towels Included", "Never Expires"
+
+#### Scenario: Pricing plans have CTA buttons
+
+- **GIVEN** a pricing card is visible
+- **THEN** a "Get Started" button is present
 
 ### Sign-up / Contact Section
 
-```gherkin
 Feature: Sign-up Section
 
-  Scenario: Sign-up section has map and form
-    Given the user scrolls to the Sign-up section
-    Then a Google Maps embed is shown on the left
-    And a contact form is shown on the right
+#### Scenario: Sign-up section has map and form
 
-  Scenario: Contact form has fields
-    Given the contact form is visible
-    Then it contains: First Name, Last Name, Email, Phone Number, Message textarea
-    And a "Get Started" submit button
-```
+- **GIVEN** the user scrolls to the Sign-up section
+- **THEN** a Google Maps embed is shown on the left
+- **AND** a contact form is shown on the right
+
+#### Scenario: Contact form has fields
+
+- **GIVEN** the contact form is visible
+- **THEN** it contains: First Name, Last Name, Email, Phone Number, Message textarea
+- **AND** a "Get Started" submit button
 
 ### Gallery Section
 
-```gherkin
 Feature: Gallery Section
 
-  Scenario: Gallery displays image carousel
-    Given the user scrolls to the Gallery section
-    Then an image carousel/slider is displayed
+#### Scenario: Gallery displays image carousel
 
-  Scenario: Gallery images have Instagram hover
-    Given a gallery image is hovered
-    Then an Instagram icon and handle are shown as overlay
-```
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** an image carousel/slider is displayed
+
+#### Scenario: Gallery images have Instagram hover
+
+- **GIVEN** a gallery image is hovered
+- **THEN** an Instagram icon and handle are shown as overlay
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer has four columns
-    Given the user scrolls to the footer
-    Then four columns are displayed: About (logo + contact), Company links, About Us links, Open Times + newsletter
+#### Scenario: Footer has four columns
 
-  Scenario: Footer shows social links
-    Given the user scrolls to the footer
-    Then social media icons (Facebook, Instagram, Twitter, LinkedIn) are displayed
+- **GIVEN** the user scrolls to the footer
+- **THEN** four columns are displayed: About (logo + contact), Company links, About Us links, Open Times + newsletter
 
-  Scenario: Footer shows copyright
-    Given the user scrolls to the footer bottom
-    Then a copyright notice is displayed
+#### Scenario: Footer shows social links
 
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" is present (branded as "Component Dock")
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** social media icons (Facebook, Instagram, Twitter, LinkedIn) are displayed
+
+#### Scenario: Footer shows copyright
+
+- **GIVEN** the user scrolls to the footer bottom
+- **THEN** a copyright notice is displayed
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" is present (branded as "Component Dock")
 
 ## Verification checklist
 

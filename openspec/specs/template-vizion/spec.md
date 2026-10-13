@@ -40,9 +40,11 @@ stats counters, testimonial carousel, project CTA, and a footer.
 8. **CTA** — "Let's discuss for a project" heading, description, "Start Talking" button.
 9. **Footer** — Top: nav links (About, Services, Portfolio) left + social icons right. Bottom: copyright with "Made with Component Dock" link.
 
-## Scenarios
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
 
 - Renders logo and all nav links
 - "Contact Me" button is visible
@@ -50,16 +52,22 @@ stats counters, testimonial carousel, project CTA, and a footer.
 
 ### Hero
 
+#### Scenario: Hero
+
 - Displays heading "Hello This is Vizion"
 - Displays subtitle "Creative Designer"
 - Shows social media icon links
 
 ### Services
 
+#### Scenario: Services
+
 - Renders 3 service cards
 - Each card has icon, title, description
 
 ### Portfolio
+
+#### Scenario: Portfolio
 
 - Renders section header on dark background
 - Shows 5 portfolio items in grid
@@ -68,24 +76,34 @@ stats counters, testimonial carousel, project CTA, and a footer.
 
 ### About
 
+#### Scenario: About
+
 - Shows "About me" heading and description
 - "Download CV" button is present
 - Decorative image/grid visible
 
 ### Stats
 
+#### Scenario: Stats
+
 - Shows 3 stat counters with values and labels
 
 ### Testimonials
+
+#### Scenario: Testimonials
 
 - Renders testimonial content with author info
 
 ### CTA
 
+#### Scenario: CTA
+
 - Shows "Let's discuss for a project" heading
 - "Start Talking" button is present
 
 ### Footer
+
+#### Scenario: Footer
 
 - Contains nav links
 - Contains social media icons

@@ -51,57 +51,68 @@ Extracted from screenshot pixel analysis and CSS references on the ColorLib page
    - "Don't have an account? Sign up" link below
 4. **Footer** — minimal; "Component Dock" attribution link
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with split-screen layout
-- **Given** the user navigates to the LoginCrux page
-- **Then** the page displays a split-screen layout
-- **And** the left half shows a full-height background image with a dark overlay
-- **And** the right half shows a white form panel
+### Feature: LoginCrux template behaviour
 
-### Scenario: Form displays all required fields
-- **Given** the user views the login form
-- **Then** an email/username input is visible
-- **And** a password input is visible
-- **And** a "Remember me" checkbox is present
-- **And** a "Forgot password?" link is present
-- **And** a submit button is visible
+#### Scenario: Page renders with split-screen layout
 
-### Scenario: Form submission with empty fields shows validation
-- **Given** the user leaves all fields empty
-- **When** the user clicks the submit button
-- **Then** validation error messages are displayed
-- **And** the form is not submitted
+- **GIVEN** the user navigates to the LoginCrux page
+- **THEN** the page displays a split-screen layout
+- **AND** the left half shows a full-height background image with a dark overlay
+- **AND** the right half shows a white form panel
 
-### Scenario: Form submission with valid credentials
-- **Given** the user enters a valid email and password
-- **When** the user clicks the submit button
-- **Then** the form submits successfully (no validation errors)
+#### Scenario: Form displays all required fields
 
-### Scenario: Mobile responsive behavior
-- **Given** the user views the page on a mobile viewport (<768px)
-- **Then** the left image half is hidden
-- **And** the form takes full width
-- **And** all form elements are accessible and properly sized
+- **GIVEN** the user views the login form
+- **THEN** an email/username input is visible
+- **AND** a password input is visible
+- **AND** a "Remember me" checkbox is present
+- **AND** a "Forgot password?" link is present
+- **AND** a submit button is visible
 
-### Scenario: Accessibility
-- **Given** the user navigates the form using keyboard only
-- **When** the user presses Tab
-- **Then** focus moves through form fields in logical order
-- **And** each field has a visible focus indicator
-- **And** the submit button is keyboard-accessible
+#### Scenario: Form submission with empty fields shows validation
 
-### Scenario: Forgot password link
-- **Given** the user clicks "Forgot password?"
-- **Then** the link navigates appropriately (href set, behavior defined)
+- **GIVEN** the user leaves all fields empty
+- **WHEN** the user clicks the submit button
+- **THEN** validation error messages are displayed
+- **AND** the form is not submitted
 
-### Scenario: Sign up link
-- **Given** the user clicks "Don't have an account? Sign up"
-- **Then** the link navigates appropriately (href set, behavior defined)
+#### Scenario: Form submission with valid credentials
 
-### Scenario: Footer contains Component Dock link
-- **Given** the user scrolls to the bottom of the page
-- **Then** a "Component Dock" link to `https://www.componentdock.com/` is visible
+- **GIVEN** the user enters a valid email and password
+- **WHEN** the user clicks the submit button
+- **THEN** the form submits successfully (no validation errors)
+
+#### Scenario: Mobile responsive behavior
+
+- **GIVEN** the user views the page on a mobile viewport (<768px)
+- **THEN** the left image half is hidden
+- **AND** the form takes full width
+- **AND** all form elements are accessible and properly sized
+
+#### Scenario: Accessibility
+
+- **GIVEN** the user navigates the form using keyboard only
+- **WHEN** the user presses Tab
+- **THEN** focus moves through form fields in logical order
+- **AND** each field has a visible focus indicator
+- **AND** the submit button is keyboard-accessible
+
+#### Scenario: Forgot password link
+
+- **GIVEN** the user clicks "Forgot password?"
+- **THEN** the link navigates appropriately (href set, behavior defined)
+
+#### Scenario: Sign up link
+
+- **GIVEN** the user clicks "Don't have an account? Sign up"
+- **THEN** the link navigates appropriately (href set, behavior defined)
+
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a "Component Dock" link to `https://www.componentdock.com/` is visible
 
 ## Verification Checklist
 

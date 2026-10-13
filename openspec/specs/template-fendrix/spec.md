@@ -38,111 +38,109 @@ Extracted from the live preview's `css/style.css` stylesheet and screenshot anal
 7. **Contact** — image bg; white card (left half) with heading + address + hours + reservation phone/email
 8. **Footer** — dark bg `#1c1a18`; 3-column layout: logo + phone + email + social | Quick links list | Newsletter form + description; copyright bar with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar displays all navigation links
-  Given the user is on the Fendrix page
-  Then the navbar shows links: Home, About, Menu, Blog, Contact
-  And social icons for Facebook and Instagram are visible
+#### Scenario: Navbar displays all navigation links
 
-Scenario: Navbar collapses on mobile
-  Given the viewport width is less than 992px
-  When the user clicks the hamburger toggle
-  Then the navigation links are shown in a collapsible menu
-```
+- **GIVEN** the user is on the Fendrix page
+- **THEN** the navbar shows links: Home, About, Menu, Blog, Contact
+- **AND** social icons for Facebook and Instagram are visible
+
+#### Scenario: Navbar collapses on mobile
+
+- **GIVEN** the viewport width is less than 992px
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the navigation links are shown in a collapsible menu
 
 ### Feature: Hero Banner
 
-```gherkin
-Scenario: Hero section displays headline and CTA
-  Given the user is on the Fendrix page
-  Then a subtitle reads "Expensive but the best"
-  And a heading reads "Modern restaurant in center of the city"
-  And a "book a table" button is visible
+#### Scenario: Hero section displays headline and CTA
 
-Scenario: Hero uses background image
-  Given the user is on the Fendrix page
-  Then the hero section has a background food photography image
-```
+- **GIVEN** the user is on the Fendrix page
+- **THEN** a subtitle reads "Expensive but the best"
+- **AND** a heading reads "Modern restaurant in center of the city"
+- **AND** a "book a table" button is visible
+
+#### Scenario: Hero uses background image
+
+- **GIVEN** the user is on the Fendrix page
+- **THEN** the hero section has a background food photography image
 
 ### Feature: About Section
 
-```gherkin
-Scenario: About section overlaps hero
-  Given the user is on the Fendrix page
-  Then the about section overlaps the hero by approximately 250px
+#### Scenario: About section overlaps hero
 
-Scenario: About section shows content
-  Given the user is on the Fendrix page
-  Then a heading reads "Delicious food provider since 1990"
-  And a "learn More" button is visible
-  And a food image is displayed on the right
-```
+- **GIVEN** the user is on the Fendrix page
+- **THEN** the about section overlaps the hero by approximately 250px
+
+#### Scenario: About section shows content
+
+- **GIVEN** the user is on the Fendrix page
+- **THEN** a heading reads "Delicious food provider since 1990"
+- **AND** a "learn More" button is visible
+- **AND** a food image is displayed on the right
 
 ### Feature: Food Menu
 
-```gherkin
-Scenario: Menu displays 6 food items
-  Given the user is on the Fendrix page
-  When the user scrolls to the food menu section
-  Then 6 food items are displayed in a 2-column grid
-  And each item shows a name, description, and price
+#### Scenario: Menu displays 6 food items
 
-Scenario: Menu has section title
-  Given the user is on the Fendrix page
-  Then the menu section title reads "Popular Menu" / "Delicious Food Menu"
-```
+- **GIVEN** the user is on the Fendrix page
+- **WHEN** the user scrolls to the food menu section
+- **THEN** 6 food items are displayed in a 2-column grid
+- **AND** each item shows a name, description, and price
+
+#### Scenario: Menu has section title
+
+- **GIVEN** the user is on the Fendrix page
+- **THEN** the menu section title reads "Popular Menu" / "Delicious Food Menu"
 
 ### Feature: Video Intro
 
-```gherkin
-Scenario: Video section shows play button
-  Given the user is on the Fendrix page
-  When the user scrolls to the video intro section
-  Then a centered play button is visible
-  And clicking it opens a YouTube video popup
-```
+#### Scenario: Video section shows play button
+
+- **GIVEN** the user is on the Fendrix page
+- **WHEN** the user scrolls to the video intro section
+- **THEN** a centered play button is visible
+- **AND** clicking it opens a YouTube video popup
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials carousel displays reviews
-  Given the user is on the Fendrix page
-  When the user scrolls to the testimonials section
-  Then review cards are shown in a carousel
-  And each card has a quote, client name, avatar, and 5-star rating
+#### Scenario: Testimonials carousel displays reviews
 
-Scenario: Testimonials section title
-  Given the user is on the Fendrix page
-  Then the testimonials section title reads "Testimonials" / "What they said"
-```
+- **GIVEN** the user is on the Fendrix page
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** review cards are shown in a carousel
+- **AND** each card has a quote, client name, avatar, and 5-star rating
+
+#### Scenario: Testimonials section title
+
+- **GIVEN** the user is on the Fendrix page
+- **THEN** the testimonials section title reads "Testimonials" / "What they said"
 
 ### Feature: Contact
 
-```gherkin
-Scenario: Contact section shows info
-  Given the user is on the Fendrix page
-  When the user scrolls to the contact section
-  Then address, opening hours, and reservation phone/email are displayed
-  And the info is inside a white card overlaying a background image
-```
+#### Scenario: Contact section shows info
+
+- **GIVEN** the user is on the Fendrix page
+- **WHEN** the user scrolls to the contact section
+- **THEN** address, opening hours, and reservation phone/email are displayed
+- **AND** the info is inside a white card overlaying a background image
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer shows links and newsletter
-  Given the user is on the Fendrix page
-  Then the footer has a dark background
-  And quick links are listed
-  And a newsletter email subscription form is present
+#### Scenario: Footer shows links and newsletter
 
-Scenario: Footer links to Component Dock
-  Given the user is on the Fendrix page
-  Then the footer contains a link to https://www.componentdock.com/
-```
+- **GIVEN** the user is on the Fendrix page
+- **THEN** the footer has a dark background
+- **AND** quick links are listed
+- **AND** a newsletter email subscription form is present
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user is on the Fendrix page
+- **THEN** the footer contains a link to https://www.componentdock.com/
 
 ## Verification checklist
 

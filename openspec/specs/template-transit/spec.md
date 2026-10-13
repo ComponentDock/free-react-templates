@@ -19,7 +19,7 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 - **Border Radius:** `0.375rem` (rounded-md) / `0.5rem` (rounded-lg)
 - **Button Shape:** Rounded rectangle with primary orange background and white text, uppercase lettering for major CTA elements.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature 1: Hero Banner & Navigation
 
@@ -29,11 +29,11 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 
 #### Scenario: Navigation and Hero Display
 
-- **Given** the user visits the Transit home page
-- **When** the header and hero section load
-- **Then** the top bar displays contact info (phone, email, hours) and social icons
-- **And** the sticky navigation displays the brand logo and menu items (Home, About, Services, Tracking, Contact)
-- **And** the hero banner shows a prominent headline about global logistics services, subtitle, and action buttons ("Explore Services", "Get a Quote").
+- **GIVEN** the user visits the Transit home page
+- **WHEN** the header and hero section load
+- **THEN** the top bar displays contact info (phone, email, hours) and social icons
+- **AND** the sticky navigation displays the brand logo and menu items (Home, About, Services, Tracking, Contact)
+- **AND** the hero banner shows a prominent headline about global logistics services, subtitle, and action buttons ("Explore Services", "Get a Quote")
 
 ### Feature 2: Services Section
 
@@ -43,9 +43,9 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 
 #### Scenario: Viewing Services Grid
 
-- **Given** the user scrolls down to the Services section
-- **When** the service cards render
-- **Then** at least 4 core logistics services are displayed with icons, titles, short descriptions, and "Read More" links.
+- **GIVEN** the user scrolls down to the Services section
+- **WHEN** the service cards render
+- **THEN** at least 4 core logistics services are displayed with icons, titles, short descriptions, and "Read More" links
 
 ### Feature 3: About Us & Statistics Counter
 
@@ -55,9 +55,9 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 
 #### Scenario: Statistics Counter Display
 
-- **Given** the user views the About section
-- **When** the statistics counter row appears
-- **Then** key metrics are shown with animated or static counts (e.g., 99% Satisfied Clients, 1200+ Delivered Goods, 50+ Global Branches).
+- **GIVEN** the user views the About section
+- **WHEN** the statistics counter row appears
+- **THEN** key metrics are shown with animated or static counts (e.g., 99% Satisfied Clients, 1200+ Delivered Goods, 50+ Global Branches)
 
 ### Feature 4: Tracking / Quote Calculator Section
 
@@ -67,9 +67,9 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 
 #### Scenario: Submitting Quote Form
 
-- **Given** the user navigates to the Request a Quote or Tracking section
-- **When** they fill in cargo details (weight, destination, dimensions) and submit
-- **Then** a confirmation message or estimated shipping breakdown is shown.
+- **GIVEN** the user navigates to the Request a Quote or Tracking section
+- **WHEN** they fill in cargo details (weight, destination, dimensions) and submit
+- **THEN** a confirmation message or estimated shipping breakdown is shown
 
 ### Feature 5: Testimonials & Footer
 
@@ -79,9 +79,9 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 
 #### Scenario: Footer Attribution
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer is rendered
-- **Then** it displays company links, newsletter subscription, and copyright notice with a link to `https://www.componentdock.com/`.
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it displays company links, newsletter subscription, and copyright notice with a link to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

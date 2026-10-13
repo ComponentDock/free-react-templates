@@ -64,135 +64,133 @@ Preview URL: https://preview.colorlib.com/theme/interior-2/ (404 as of
 - **Implementation:** Google Fonts `<link>` in `index.html`, Tailwind
   `@theme` custom font family.
 
-## Gherkin requirements
+## Requirements
 
 ### Hero section
 
-```gherkin
 Feature: Hero section
 
-  Scenario: Hero displays full-width background image
-    Given the visitor opens the page
-    Then a full-width hero section is visible
-    And the hero has a dark overlay over a background photograph
-    And the background photograph depicts a modern interior space
+#### Scenario: Hero displays full-width background image
 
-  Scenario: Hero displays headline and CTA
-    Given the hero section is visible
-    Then a headline reads "Interior Design Solution For Your Business"
-    And the headline is white and bold
-    And a "View Works" button is visible below the headline
-    And the button has a white background with dark text
+- **GIVEN** the visitor opens the page
+- **THEN** a full-width hero section is visible
+- **AND** the hero has a dark overlay over a background photograph
+- **AND** the background photograph depicts a modern interior space
 
-  Scenario: Hero has carousel navigation
-    Given the hero section is visible
-    Then left and right arrow indicators are visible on the hero edges
-    And clicking an arrow transitions to the next/previous slide
-```
+#### Scenario: Hero displays headline and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** a headline reads "Interior Design Solution For Your Business"
+- **AND** the headline is white and bold
+- **AND** a "View Works" button is visible below the headline
+- **AND** the button has a white background with dark text
+
+#### Scenario: Hero has carousel navigation
+
+- **GIVEN** the hero section is visible
+- **THEN** left and right arrow indicators are visible on the hero edges
+- **AND** clicking an arrow transitions to the next/previous slide
 
 ### Navbar
 
-```gherkin
 Feature: Navigation bar
 
-  Scenario: Navbar displays logo and links
-    Given the visitor opens the page
-    Then a navigation bar is visible at the top
-    And the logo reads "Interloom" (replacing ColorLib "Interior.")
-    And navigation links include Home, Projects, Pages, Blog, Contact
+#### Scenario: Navbar displays logo and links
 
-  Scenario: Navbar has CTA button
-    Given the navbar is visible
-    Then a "Say Hello" button is visible on the right side of the navbar
-    And the button links to the contact section
+- **GIVEN** the visitor opens the page
+- **THEN** a navigation bar is visible at the top
+- **AND** the logo reads "Interloom" (replacing ColorLib "Interior.")
+- **AND** navigation links include Home, Projects, Pages, Blog, Contact
 
-  Scenario: Navbar is sticky on scroll
-    Given the visitor scrolls down the page
-    Then the navbar remains fixed at the top
-    And the navbar background becomes opaque white with a subtle shadow
-```
+#### Scenario: Navbar has CTA button
+
+- **GIVEN** the navbar is visible
+- **THEN** a "Say Hello" button is visible on the right side of the navbar
+- **AND** the button links to the contact section
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the visitor scrolls down the page
+- **THEN** the navbar remains fixed at the top
+- **AND** the navbar background becomes opaque white with a subtle shadow
 
 ### Services section
 
-```gherkin
 Feature: Services grid
 
-  Scenario: Services section displays three columns
-    Given the visitor scrolls to the services section
-    Then three service columns are visible in a row
-    And each column has a gold/yellow dash prefix
-    And the services are "Planning", "Architecture", "3D Design"
+#### Scenario: Services section displays three columns
 
-  Scenario: Services section displays numbered accents
-    Given the services section is visible
-    Then large light-gray numbers appear below each service heading
-    And the numbers read "01", "02", "03"
-```
+- **GIVEN** the visitor scrolls to the services section
+- **THEN** three service columns are visible in a row
+- **AND** each column has a gold/yellow dash prefix
+- **AND** the services are "Planning", "Architecture", "3D Design"
+
+#### Scenario: Services section displays numbered accents
+
+- **GIVEN** the services section is visible
+- **THEN** large light-gray numbers appear below each service heading
+- **AND** the numbers read "01", "02", "03"
 
 ### Project gallery (inferred from standard ColorLib interior pattern)
 
-```gherkin
 Feature: Project gallery
 
-  Scenario: Gallery displays project grid
-    Given the visitor scrolls to the projects section
-    Then a grid of project images is visible
-    And each project has a title and category label
-    And projects are filterable by category
+#### Scenario: Gallery displays project grid
 
-  Scenario: Gallery items have hover overlay
-    Given the visitor hovers over a project image
-    Then a dark overlay appears with project details
-    And a link to view the full project is visible
-```
+- **GIVEN** the visitor scrolls to the projects section
+- **THEN** a grid of project images is visible
+- **AND** each project has a title and category label
+- **AND** projects are filterable by category
+
+#### Scenario: Gallery items have hover overlay
+
+- **GIVEN** the visitor hovers over a project image
+- **THEN** a dark overlay appears with project details
+- **AND** a link to view the full project is visible
 
 ### About section (inferred)
 
-```gherkin
 Feature: About section
 
-  Scenario: About section displays company info
-    Given the visitor scrolls to the about section
-    Then a heading introduces the company
-    And descriptive text explains the company's mission
-    And an image accompanies the text
-```
+#### Scenario: About section displays company info
+
+- **GIVEN** the visitor scrolls to the about section
+- **THEN** a heading introduces the company
+- **AND** descriptive text explains the company's mission
+- **AND** an image accompanies the text
 
 ### Testimonials (inferred)
 
-```gherkin
 Feature: Testimonials
 
-  Scenario: Testimonials display client feedback
-    Given the visitor scrolls to the testimonials section
-    Then client quotes are visible
-    And client names and roles are displayed
-    And a navigation indicator allows cycling through testimonials
-```
+#### Scenario: Testimonials display client feedback
+
+- **GIVEN** the visitor scrolls to the testimonials section
+- **THEN** client quotes are visible
+- **AND** client names and roles are displayed
+- **AND** a navigation indicator allows cycling through testimonials
 
 ### CTA band (inferred)
 
-```gherkin
 Feature: Call-to-action band
 
-  Scenario: CTA band prompts contact
-    Given the visitor scrolls to the CTA section
-    Then a dark background band is visible
-    And a headline encourages the visitor to get in touch
-    And a CTA button links to the contact section
-```
+#### Scenario: CTA band prompts contact
+
+- **GIVEN** the visitor scrolls to the CTA section
+- **THEN** a dark background band is visible
+- **AND** a headline encourages the visitor to get in touch
+- **AND** a CTA button links to the contact section
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer displays links and branding
-    Given the visitor scrolls to the footer
-    Then the footer contains navigation links
-    And the footer links to https://www.componentdock.com/ as "Component Dock"
-    And social media icons are displayed
-```
+#### Scenario: Footer displays links and branding
+
+- **GIVEN** the visitor scrolls to the footer
+- **THEN** the footer contains navigation links
+- **AND** the footer links to https://www.componentdock.com/ as "Component Dock"
+- **AND** social media icons are displayed
 
 ## Verification checklist
 

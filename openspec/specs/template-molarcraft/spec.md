@@ -50,102 +50,117 @@ newsletter footer.
 | 10 | `blog-area`          | 4-column blog cards: image, date, title, excerpt, likes + comments meta |
 | 11 | `footer-area`        | 4-column footer: Top Products links, Contact Us (address + phone), Newsletter (email input + Subscribe button), Copyright + social icons |
 
-## Gherkin requirements
+## Requirements
 
-### Background
-Given the user opens Molarcraft on a desktop browser
-Then the page loads with Poppins font from Google Fonts
-And all sections render in the correct order (1–11)
+### Feature: Molarcraft template behaviour
 
-### Scenario: Header navigation
-Given the page has loaded
-When the user views the top bar
-Then the left side shows a logo placeholder
-And the right side shows phone number "+953 012 3654 896" and email link
-And a green gradient navigation bar contains links: Home, About, Services, Opening Hour, Blog (with dropdown), Pricing, Elements, Contact
-And social media icons (Facebook, Twitter, Dribbble, Behance) are displayed in the nav
+**Background**
+- **GIVEN** the user opens Molarcraft on a desktop browser
+- **THEN** the page loads with Poppins font from Google Fonts
+- **AND** all sections render in the correct order (1–11)
 
-### Scenario: Hero banner
-Given the user scrolls to the top of the page
-When the hero section is visible
-Then a fullscreen background image is displayed with a dark navy overlay (85% opacity)
-And the headline reads "Authentic Dental Service" in white, 48px bold
-And a subheadline reads "Don't look further, This is your Dentist" in white uppercase with letter-spacing
-And a green gradient "Get Started" pill button is centered below the text
+#### Scenario: Header navigation
 
-### Scenario: Opening Hours floating card
-Given the user scrolls past the hero
-When the opening hours card enters view
-Then a white card with 10px border-radius and box-shadow overlaps the hero section
-And the card displays "Opening Hours" title and "We are open Now" badge with a green circle dot
-And the schedule shows: Monday-Friday 10:00am to 05:00pm, Saturday 12:00am to 03:00pm, Sunday closed
+- **GIVEN** the page has loaded
+- **WHEN** the user views the top bar
+- **THEN** the left side shows a logo placeholder
+- **AND** the right side shows phone number "+953 012 3654 896" and email link
+- **AND** a green gradient navigation bar contains links: Home, About, Services, Opening Hour, Blog (with dropdown), Pricing, Elements, Contact
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are displayed in the nav
 
-### Scenario: Services grid
-Given the user scrolls to the services section
-When the services section is visible
-Then 4 service cards are displayed in a row
-And each card has an image, a linked title, and a short description
-And the section heading reads "What we Offer to our Customers"
+#### Scenario: Hero banner
 
-### Scenario: About section
-Given the user scrolls to the about section
-When the about section is visible
-Then a split layout shows an image on the left and a dark background on the right
-And the right side displays "Who we are to Serve the nation" in white
-And 2 feature boxes show "Expert Services" and "Great Support" with linearicons icons
+- **GIVEN** the user scrolls to the top of the page
+- **WHEN** the hero section is visible
+- **THEN** a fullscreen background image is displayed with a dark navy overlay (85% opacity)
+- **AND** the headline reads "Authentic Dental Service" in white, 48px bold
+- **AND** a subheadline reads "Don't look further, This is your Dentist" in white uppercase with letter-spacing
+- **AND** a green gradient "Get Started" pill button is centered below the text
 
-### Scenario: Testimonials carousel
-Given the user scrolls to the testimonials section
-When the testimonials section is visible
-Then a carousel displays testimonial cards with circular avatar images
-And each card shows a quote, a name, and a role
-And the carousel auto-rotates through testimonials
+#### Scenario: Opening Hours floating card
 
-### Scenario: Team section
-Given the user scrolls to the team section
-When the team section is visible
-Then 4 team member cards are displayed on a light #f9f9ff background
-And hovering a card reveals a green gradient overlay with the member's name and role
+- **GIVEN** the user scrolls past the hero
+- **WHEN** the opening hours card enters view
+- **THEN** a white card with 10px border-radius and box-shadow overlaps the hero section
+- **AND** the card displays "Opening Hours" title and "We are open Now" badge with a green circle dot
+- **AND** the schedule shows: Monday-Friday 10:00am to 05:00pm, Saturday 12:00am to 03:00pm, Sunday closed
 
-### Scenario: Features grid
-Given the user scrolls to the features section
-When the features section is visible
-Then a 2-column × 3-row grid shows 6 features
-And each feature has an icon (lucide-react), title, and description
-And the section heading reads "Features that make us unique"
+#### Scenario: Services grid
 
-### Scenario: Appointment form
-Given the user scrolls to the appointment section
-When the appointment section is visible
-Then a dark navy (#04091e) split section shows a background image on the left
-And the right side displays a form with fields: Patient Name, Phone, Email, Date of Birth, Appointment Date, Message textarea
-And the form has a "Confirm booking" button with no border-radius and transparent background
-And the form fields have #ccc text color and #505362 borders on transparent background
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the services section is visible
+- **THEN** 4 service cards are displayed in a row
+- **AND** each card has an image, a linked title, and a short description
+- **AND** the section heading reads "What we Offer to our Customers"
 
-### Scenario: Blog section
-Given the user scrolls to the blog section
-When the blog section is visible
-Then 4 blog cards are displayed in a row
-And each card has an image, a date, a linked title, an excerpt, and a likes/comments meta row
+#### Scenario: About section
 
-### Scenario: Footer
-Given the user scrolls to the footer
-When the footer is visible
-Then 4 columns display: Top Products (links), Contact Us (address + phone numbers), Newsletter (email input + Subscribe button), Copyright line + social icons
-And the footer copyright links to Component Dock (not Colorlib)
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the about section is visible
+- **THEN** a split layout shows an image on the left and a dark background on the right
+- **AND** the right side displays "Who we are to Serve the nation" in white
+- **AND** 2 feature boxes show "Expert Services" and "Great Support" with linearicons icons
 
-### Scenario: Newsletter subscription
-Given the user views the newsletter area in the footer
-When they enter an email and click Subscribe
-Then the form attempts subscription (visual only in this recreation)
+#### Scenario: Testimonials carousel
 
-### Scenario: Responsive layout
-Given the user resizes the browser to mobile width (< 768px)
-When any section is visible
-Then the hero text reduces to 25px
-And the service, team, features, and blog grids stack to single column
-And the appointment section stacks vertically (image hidden, form full width)
-And the navigation converts to a hamburger menu
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the testimonials section is visible
+- **THEN** a carousel displays testimonial cards with circular avatar images
+- **AND** each card shows a quote, a name, and a role
+- **AND** the carousel auto-rotates through testimonials
+
+#### Scenario: Team section
+
+- **GIVEN** the user scrolls to the team section
+- **WHEN** the team section is visible
+- **THEN** 4 team member cards are displayed on a light #f9f9ff background
+- **AND** hovering a card reveals a green gradient overlay with the member's name and role
+
+#### Scenario: Features grid
+
+- **GIVEN** the user scrolls to the features section
+- **WHEN** the features section is visible
+- **THEN** a 2-column × 3-row grid shows 6 features
+- **AND** each feature has an icon (lucide-react), title, and description
+- **AND** the section heading reads "Features that make us unique"
+
+#### Scenario: Appointment form
+
+- **GIVEN** the user scrolls to the appointment section
+- **WHEN** the appointment section is visible
+- **THEN** a dark navy (#04091e) split section shows a background image on the left
+- **AND** the right side displays a form with fields: Patient Name, Phone, Email, Date of Birth, Appointment Date, Message textarea
+- **AND** the form has a "Confirm booking" button with no border-radius and transparent background
+- **AND** the form fields have #ccc text color and #505362 borders on transparent background
+
+#### Scenario: Blog section
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the blog section is visible
+- **THEN** 4 blog cards are displayed in a row
+- **AND** each card has an image, a date, a linked title, an excerpt, and a likes/comments meta row
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** 4 columns display: Top Products (links), Contact Us (address + phone numbers), Newsletter (email input + Subscribe button), Copyright line + social icons
+- **AND** the footer copyright links to Component Dock (not Colorlib)
+
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the user views the newsletter area in the footer
+- **WHEN** they enter an email and click Subscribe
+- **THEN** the form attempts subscription (visual only in this recreation)
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user resizes the browser to mobile width (< 768px)
+- **WHEN** any section is visible
+- **THEN** the hero text reduces to 25px
+- **AND** the service, team, features, and blog grids stack to single column
+- **AND** the appointment section stacks vertically (image hidden, form full width)
+- **AND** the navigation converts to a hamburger menu
 
 ## Verification checklist
 

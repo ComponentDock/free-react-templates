@@ -44,70 +44,80 @@ Extracted from the live preview CSS (`css/style.css`):
 - 4-column footer on cream with social icons in copyright bar
 - Sticky navbar with white background + shadow on scroll
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Throne — Portfolio/Agency Template
 
 #### Scenario: Navbar renders with logo and navigation links
-  Given the page loads
-  Then a sticky navbar is visible
-  And the logo text "Throne" is displayed in brand orange (#f26200)
-  And navigation links are present: Home, Portfolio, About, Services, Blog, Contact
+
+- **GIVEN** the page loads
+- **THEN** a sticky navbar is visible
+- **AND** the logo text "Throne" is displayed in brand orange (#f26200)
+- **AND** navigation links are present: Home, Portfolio, About, Services, Blog, Contact
 
 #### Scenario: Mobile menu toggle
-  Given the viewport width is less than 992px
-  When the hamburger menu icon is clicked
-  Then a mobile menu slides in from the right
-  And navigation links are displayed vertically
+
+- **GIVEN** the viewport width is less than 992px
+- **WHEN** the hamburger menu icon is clicked
+- **THEN** a mobile menu slides in from the right
+- **AND** navigation links are displayed vertically
 
 #### Scenario: Hero section displays centered content
-  Given the hero section is visible
-  Then the headline "Do What You Love" is displayed in orange (#f26200)
-  And a subtitle paragraph is shown below the headline
-  And a circular play button (70px, orange bg) is centered below the subtitle
+
+- **GIVEN** the hero section is visible
+- **THEN** the headline "Do What You Love" is displayed in orange (#f26200)
+- **AND** a subtitle paragraph is shown below the headline
+- **AND** a circular play button (70px, orange bg) is centered below the subtitle
 
 #### Scenario: Services section shows three service cards
-  Given the services section is visible
-  Then three service cards are displayed in a row
-  And each card has an icon, heading, and description paragraph
-  And the service headings are "Interface Design", "Product Design", "Quality Results"
+
+- **GIVEN** the services section is visible
+- **THEN** three service cards are displayed in a row
+- **AND** each card has an icon, heading, and description paragraph
+- **AND** the service headings are "Interface Design", "Product Design", "Quality Results"
 
 #### Scenario: Portfolio section shows image grid
-  Given the portfolio section is visible
-  Then a "Portfolio" heading is displayed
-  And 6 portfolio items are rendered in a 3-column grid
-  And each item displays an image with hover zoom effect
+
+- **GIVEN** the portfolio section is visible
+- **THEN** a "Portfolio" heading is displayed
+- **AND** 6 portfolio items are rendered in a 3-column grid
+- **AND** each item displays an image with hover zoom effect
 
 #### Scenario: Testimonials section shows client cards
-  Given the testimonials section is visible
-  Then a "Testimonials" heading is displayed
-  And 4 testimonial cards are shown on a cream (#f5ecdb) background
-  And each card has a client name, role ("Customer"), circular photo, and quote text
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a "Testimonials" heading is displayed
+- **AND** 4 testimonial cards are shown on a cream (#f5ecdb) background
+- **AND** each card has a client name, role ("Customer"), circular photo, and quote text
 
 #### Scenario: Blog section shows post carousel
-  Given the blog section is visible
-  Then a "Blog Updates" heading is displayed
-  And a subtitle paragraph is shown below
-  And blog post cards are rendered in a horizontal carousel
-  And each card has an image, date, title, and author info (avatar + name + role)
+
+- **GIVEN** the blog section is visible
+- **THEN** a "Blog Updates" heading is displayed
+- **AND** a subtitle paragraph is shown below
+- **AND** blog post cards are rendered in a horizontal carousel
+- **AND** each card has an image, date, title, and author info (avatar + name + role)
 
 #### Scenario: Client logos section
-  Given the client logos section is visible
-  Then 4 client logos are displayed in a row
+
+- **GIVEN** the client logos section is visible
+- **THEN** 4 client logos are displayed in a row
 
 #### Scenario: Footer renders with columns
-  Given the footer is visible
-  Then the logo "Throne" is displayed in brand orange
-  And a description paragraph is shown
-  And contact information links are present
-  And navigation link columns are present
-  And a "Made with Component Dock" link is present in the copyright area
+
+- **GIVEN** the footer is visible
+- **THEN** the logo "Throne" is displayed in brand orange
+- **AND** a description paragraph is shown
+- **AND** contact information links are present
+- **AND** navigation link columns are present
+- **AND** a "Made with Component Dock" link is present in the copyright area
 
 #### Scenario: Copyright bar with social icons
-  Given the copyright section is visible
-  Then social media icon links are displayed (Facebook, Twitter, LinkedIn, Instagram)
-  And a copyright notice with current year is shown
-  And a "Component Dock" link replaces any external attribution
+
+- **GIVEN** the copyright section is visible
+- **THEN** social media icon links are displayed (Facebook, Twitter, LinkedIn, Instagram)
+- **AND** a copyright notice with current year is shown
+- **AND** a "Component Dock" link replaces any external attribution
 
 ## Verification Checklist
 

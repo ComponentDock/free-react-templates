@@ -15,31 +15,37 @@
 - **Border Radius:** Rounded-xl (`0.75rem`) containers and cards, rounded-lg buttons.
 - **Section Background:** Light clean neutral canvas (`bg-slate-50` / `bg-white`) with centered elegant card layout.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Hero / Header Section
 
+#### Scenario: Hero / Header Section
+
 - **Description:** A clean introductory header with title, subtitle, and badge highlighting the FAQ / Accordion features.
 - **Scenario:** Viewing the header
-  - Given the user visits the TabDrop page
-  - When the header renders
-  - Then it displays a badge ("FAQ & Accordion"), a main title ("Frequently Asked Questions"), and a helpful subtitle.
+- **GIVEN** the user visits the TabDrop page
+- **WHEN** the header renders
+- **THEN** it displays a badge ("FAQ & Accordion"), a main title ("Frequently Asked Questions"), and a helpful subtitle
 
 ### Requirement 2: Interactive Accordion Sections
 
+#### Scenario: Interactive Accordion Sections
+
 - **Description:** An accordion component featuring expandable Q&A items with smooth transitions, plus/minus or chevron indicators, and clear typography.
 - **Scenario:** Expanding and collapsing accordion items
-  - Given the accordion list is rendered with default items ("How many events can I create?", "How many collaborators can I invite?", "Transparent and simple pricing", "Is my data safe?")
-  - When the user clicks an accordion header
-  - Then that item expands to show its detailed response text, while other items remain collapsed or can be toggled independently.
+- **GIVEN** the accordion list is rendered with default items ("How many events can I create?", "How many collaborators can I invite?", "Transparent and simple pricing", "Is my data safe?")
+- **WHEN** the user clicks an accordion header
+- **THEN** that item expands to show its detailed response text, while other items remain collapsed or can be toggled independently
 
 ### Requirement 3: Footer Attribution
 
+#### Scenario: Footer Attribution
+
 - **Description:** A professional footer containing copyright, links, and the required Component Dock branding link.
 - **Scenario:** Checking footer contents
-  - Given the user scrolls to the bottom of the page
-  - When the footer renders
-  - Then it displays copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock").
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it displays copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

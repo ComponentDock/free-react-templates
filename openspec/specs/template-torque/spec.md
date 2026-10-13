@@ -96,76 +96,88 @@ Recreation of ColorLib **Force** magazine template.
   - **Col 3 — "Most Viewed News"**: 2 small media items (thumbnail + title + date)
 - **Bottom bar**: separator line, copyright text ("Made with Component Dock"), social icons (facebook, twitter, youtube, pinterest, rss)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header renders with navigation
-- Given the user visits the homepage
-- When the header loads
-- Then a top bar shows the current date and social icons
-- And a logo is displayed
-- And a navigation bar shows links: Home, Category, Archive, Elements, Contact
-- And a search icon is visible in the navbar
+### Feature: Torque template behaviour
 
-### Scenario: Hero banner displays carousel
-- Given the user visits the homepage
-- When the hero banner loads
-- Then a full-width carousel with background image is displayed
-- And each slide shows a category badge, date, comment count, headline, and description
-- And carousel indicators are visible
+#### Scenario: Header renders with navigation
 
-### Scenario: Editor's Choice shows 4 article cards
-- Given the user visits the homepage
-- When the Editor's Choice section loads
-- Then 4 article cards are displayed in a row
-- And each card shows an image, category badge, date, title, and excerpt
+- **GIVEN** the user visits the homepage
+- **WHEN** the header loads
+- **THEN** a top bar shows the current date and social icons
+- **AND** a logo is displayed
+- **AND** a navigation bar shows links: Home, Category, Archive, Elements, Contact
+- **AND** a search icon is visible in the navbar
 
-### Scenario: Latest News shows 4 horizontal posts
-- Given the user visits the homepage
-- When the Latest News section loads
-- Then 4 horizontal media-style posts are displayed
-- And each post shows a thumbnail, category badge, date, title, and excerpt
+#### Scenario: Hero banner displays carousel
 
-### Scenario: Travel and Food shows 8 small cards
-- Given the user visits the homepage
-- When the Travel and Food section loads
-- Then 8 small article cards are displayed in a 2×4 grid
-- And each card shows an image, title, date, and comment count
+- **GIVEN** the user visits the homepage
+- **WHEN** the hero banner loads
+- **THEN** a full-width carousel with background image is displayed
+- **AND** each slide shows a category badge, date, comment count, headline, and description
+- **AND** carousel indicators are visible
 
-### Scenario: Sidebar shows popular news widget
-- Given the user visits the homepage
-- When the sidebar loads
-- Then a "Most Popular News" widget is displayed
-- And it shows 1 featured article with image and excerpt
-- And a carousel of additional popular posts is available
+#### Scenario: Editor's Choice shows 4 article cards
 
-### Scenario: Sidebar shows social networks widget
-- Given the user visits the homepage
-- When the Social Networks widget loads
-- Then 6 social platform entries are displayed
-- And each shows an icon, follower/subscriber count, and call-to-action
+- **GIVEN** the user visits the homepage
+- **WHEN** the Editor's Choice section loads
+- **THEN** 4 article cards are displayed in a row
+- **AND** each card shows an image, category badge, date, title, and excerpt
 
-### Scenario: Sidebar shows newsletter widget
-- Given the user visits the homepage
-- When the Newsletter widget loads
-- Then an envelope icon in a pink circle is displayed
-- And a "Subscribe to our Newsletter" heading is shown
-- And an email input field and Subscribe button are present
-- And the card has a pink top border accent
+#### Scenario: Latest News shows 4 horizontal posts
 
-### Scenario: Product List shows 3 columns
-- Given the user visits the homepage
-- When the Product List section loads
-- Then 3 columns are displayed: "Best Product Deals" (2 columns) and "Brilliant Ideas" (1 column)
-- And each column contains 4 media-style items with thumbnail, title, and date
+- **GIVEN** the user visits the homepage
+- **WHEN** the Latest News section loads
+- **THEN** 4 horizontal media-style posts are displayed
+- **AND** each post shows a thumbnail, category badge, date, title, and excerpt
 
-### Scenario: Footer renders with all sections
-- Given the user visits the homepage
-- When the footer loads
-- Then a dark navy background is displayed
-- And a logo with about text is shown in the first column
-- And Quick Links are shown in two sub-columns
-- And "Most Viewed News" shows 2 small items
-- And a bottom bar shows copyright with "Component Dock" link and social icons
+#### Scenario: Travel and Food shows 8 small cards
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the Travel and Food section loads
+- **THEN** 8 small article cards are displayed in a 2×4 grid
+- **AND** each card shows an image, title, date, and comment count
+
+#### Scenario: Sidebar shows popular news widget
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the sidebar loads
+- **THEN** a "Most Popular News" widget is displayed
+- **AND** it shows 1 featured article with image and excerpt
+- **AND** a carousel of additional popular posts is available
+
+#### Scenario: Sidebar shows social networks widget
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the Social Networks widget loads
+- **THEN** 6 social platform entries are displayed
+- **AND** each shows an icon, follower/subscriber count, and call-to-action
+
+#### Scenario: Sidebar shows newsletter widget
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the Newsletter widget loads
+- **THEN** an envelope icon in a pink circle is displayed
+- **AND** a "Subscribe to our Newsletter" heading is shown
+- **AND** an email input field and Subscribe button are present
+- **AND** the card has a pink top border accent
+
+#### Scenario: Product List shows 3 columns
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the Product List section loads
+- **THEN** 3 columns are displayed: "Best Product Deals" (2 columns) and "Brilliant Ideas" (1 column)
+- **AND** each column contains 4 media-style items with thumbnail, title, and date
+
+#### Scenario: Footer renders with all sections
+
+- **GIVEN** the user visits the homepage
+- **WHEN** the footer loads
+- **THEN** a dark navy background is displayed
+- **AND** a logo with about text is shown in the first column
+- **AND** Quick Links are shown in two sub-columns
+- **AND** "Most Viewed News" shows 2 small items
+- **AND** a bottom bar shows copyright with "Component Dock" link and social icons
 
 ## Verification checklist
 

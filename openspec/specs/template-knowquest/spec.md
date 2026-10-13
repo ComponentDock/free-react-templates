@@ -30,137 +30,133 @@ using React 19 + Vite + Tailwind CSS 4 + TypeScript.
 | Dropdown bg        | `#000`                      | Nav dropdown background, radius: 4px     |
 | Dropdown text      | `#999999`                   |                                          |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Top Bar Navigation
+### Feature: KnowQuest template behaviour
 
-```gherkin
+#### Scenario: Top Bar Navigation
+
 Feature: Top Bar Navigation
 
-  Scenario: Top bar displays tagline and action links
-    Given I visit the KnowQuest page
-    Then I see a dark purple-navy top bar with tagline "The ideal WordPress theme for online learning center"
-    And I see links for "Our Vision", "Our Missions", and "Sign Up" aligned right
+#### Scenario: Top bar displays tagline and action links
 
-  Scenario: Main nav displays logo and menu items
-    Given I visit the KnowQuest page
-    Then I see the "Knowledge" logo on the left
-    And I see navigation items: Home (active), Courses (with dropdown), Teachers, About, Events, News, Contact
-    And I see a "Get started" CTA button in the nav
-```
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a dark purple-navy top bar with tagline "The ideal WordPress theme for online learning center"
+- **AND** I see links for "Our Vision", "Our Missions", and "Sign Up" aligned right
 
-### Scenario: Hero Section (Slider)
+#### Scenario: Main nav displays logo and menu items
 
-```gherkin
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see the "Knowledge" logo on the left
+- **AND** I see navigation items: Home (active), Courses (with dropdown), Teachers, About, Events, News, Contact
+- **AND** I see a "Get started" CTA button in the nav
+
+#### Scenario: Hero Section (Slider)
+
 Feature: Hero Section
 
-  Scenario: Hero displays rotating slides with CTA
-    Given I visit the KnowQuest page
-    Then I see a full-width hero slider section
-    And each slide shows a headline ("You only have to know one thing"), subtitle, and play button "Start Learning Now!"
-    And the play button has a dark circle icon on the left
-    And there is a "Discover More" outline button below
-    And navigation dots or arrows appear for slide control
+#### Scenario: Hero displays rotating slides with CTA
 
-  Scenario: Hero slide content variety
-    Given I see the hero slider
-    Then the slides cycle through subtitles: "Best Online Learning System", "Online Free Course", "Education is a Key to Success", "Best Online Learning Center"
-```
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a full-width hero slider section
+- **AND** each slide shows a headline ("You only have to know one thing"), subtitle, and play button "Start Learning Now!"
+- **AND** the play button has a dark circle icon on the left
+- **AND** there is a "Discover More" outline button below
+- **AND** navigation dots or arrows appear for slide control
 
-### Scenario: Search / Course Filter Section
+#### Scenario: Hero slide content variety
 
-```gherkin
+- **GIVEN** I see the hero slider
+- **THEN** the slides cycle through subtitles: "Best Online Learning System", "Online Free Course", "Education is a Key to Success", "Best Online Learning Center"
+
+#### Scenario: Search / Course Filter Section
+
 Feature: Course Search
 
-  Scenario: Search form with category, difficulty, and submit
-    Given I visit the KnowQuest page
-    Then I see a search section with dark background (#302a39)
-    And it contains a form with a "Categories" dropdown
-    And a "Difficulty" dropdown (Beginner, Intermediate, Advance)
-    And a "Sort By" dropdown (Default, Duration, Student Number)
-    And a blue "Submit" button (pill shape)
-```
+#### Scenario: Search form with category, difficulty, and submit
 
-### Scenario: Course Categories Section
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a search section with dark background (#302a39)
+- **AND** it contains a form with a "Categories" dropdown
+- **AND** a "Difficulty" dropdown (Beginner, Intermediate, Advance)
+- **AND** a "Sort By" dropdown (Default, Duration, Student Number)
+- **AND** a blue "Submit" button (pill shape)
 
-```gherkin
+#### Scenario: Course Categories Section
+
 Feature: Course Categories
 
-  Scenario: Course cards display with images
-    Given I visit the KnowQuest page
-    Then I see a section titled "Popular Online Courses"
-    And there are 6 course cards in a carousel/slider layout
-    And each card shows an image, course title, and price/info
-    And cards have hover effects
+#### Scenario: Course cards display with images
 
-  Scenario: Course card content
-    Given I see the course category cards
-    Then each card displays a course type (e.g. "Developing Mobile Apps Using Ruby on Rails")
-    And cards include instructor info, rating, and duration
-```
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a section titled "Popular Online Courses"
+- **AND** there are 6 course cards in a carousel/slider layout
+- **AND** each card shows an image, course title, and price/info
+- **AND** cards have hover effects
 
-### Scenario: Stats / Counter Section
+#### Scenario: Course card content
 
-```gherkin
+- **GIVEN** I see the course category cards
+- **THEN** each card displays a course type (e.g. "Developing Mobile Apps Using Ruby on Rails")
+- **AND** cards include instructor info, rating, and duration
+
+#### Scenario: Stats / Counter Section
+
 Feature: Statistics Counters
 
-  Scenario: Parallax counter section with stats
-    Given I visit the KnowQuest page
-    Then I see a dark parallax background section with overlay
-    And there are 4 animated counters displayed in a row
-    And the counters show: "1539 Courses", "3653 Students", "2300 Teachers online", "200 Countries"
-    And counter numbers are displayed in brand blue (#4586ff)
-    And labels are displayed in white below each number
-```
+#### Scenario: Parallax counter section with stats
 
-### Scenario: Trainers Section
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a dark parallax background section with overlay
+- **AND** there are 4 animated counters displayed in a row
+- **AND** the counters show: "1539 Courses", "3653 Students", "2300 Teachers online", "200 Countries"
+- **AND** counter numbers are displayed in brand blue (#4586ff)
+- **AND** labels are displayed in white below each number
 
-```gherkin
+#### Scenario: Trainers Section
+
 Feature: Trainers / Teachers
 
-  Scenario: Trainer profiles displayed
-    Given I visit the KnowQuest page
-    Then I see a section with instructor/trainer profiles
-    And each trainer has a photo, name, and subject specialty
-    And trainer names include "Dave Henderson", "Olivia Young", "Daniel Anderson", "David Brook"
-```
+#### Scenario: Trainer profiles displayed
 
-### Scenario: Events Section
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a section with instructor/trainer profiles
+- **AND** each trainer has a photo, name, and subject specialty
+- **AND** trainer names include "Dave Henderson", "Olivia Young", "Daniel Anderson", "David Brook"
 
-```gherkin
+#### Scenario: Events Section
+
 Feature: Events
 
-  Scenario: Upcoming events listed
-    Given I visit the KnowQuest page
-    Then I see an "Upcoming Events" section
-    And events display with an image, title, date, and description
-    And there is a "Discover" link/button
-```
+#### Scenario: Upcoming events listed
 
-### Scenario: Blog Section
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see an "Upcoming Events" section
+- **AND** events display with an image, title, date, and description
+- **AND** there is a "Discover" link/button
 
-```gherkin
+#### Scenario: Blog Section
+
 Feature: Blog / Articles
 
-  Scenario: Blog posts displayed on light background
-    Given I visit the KnowQuest page
-    Then I see a blog section with light grey background (#f2f3f7)
-    And there are article cards with featured images, titles, and excerpts
-    And articles show author name and date
-```
+#### Scenario: Blog posts displayed on light background
 
-### Scenario: Footer
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a blog section with light grey background (#f2f3f7)
+- **AND** there are article cards with featured images, titles, and excerpts
+- **AND** articles show author name and date
 
-```gherkin
+#### Scenario: Footer
+
 Feature: Footer
 
-  Scenario: Multi-column footer with info and links
-    Given I visit the KnowQuest page
-    Then I see a dark footer with multiple columns
-    And columns include: About text, Course links (Diploma Degree, BS Degree), Difficulty links (Beginner, Intermediate, Advance), Company links
-    And the footer contains address, phone, and email contact info
-    And there is a "Component Dock" attribution link (branded as required)
-```
+#### Scenario: Multi-column footer with info and links
+
+- **GIVEN** I visit the KnowQuest page
+- **THEN** I see a dark footer with multiple columns
+- **AND** columns include: About text, Course links (Diploma Degree, BS Degree), Difficulty links (Beginner, Intermediate, Advance), Company links
+- **AND** the footer contains address, phone, and email contact info
+- **AND** there is a "Component Dock" attribution link (branded as required)
 
 ## Verification Checklist
 

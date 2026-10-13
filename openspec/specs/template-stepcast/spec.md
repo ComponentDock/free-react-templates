@@ -52,7 +52,7 @@ peppercorns, bowls). The card contains:
 The overall aesthetic is **clean, modern, organic/earthy minimalist UI**
 tailored for food-focused services.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Multi-step checkout wizard
 
@@ -60,105 +60,121 @@ As a user completing a food store checkout, I want a guided multi-step form
 so that I can fill details, review my cart, and confirm totals incrementally.
 
 #### Scenario: Step indicator displays 4 steps
-- **Given** the wizard has loaded
-- **Then** 4 step circles are visible in a horizontal row
-- **And** step 1 is highlighted (solid olive-green fill)
-- **And** steps 2–4 are inactive (outlined, grey icons)
+
+- **GIVEN** the wizard has loaded
+- **THEN** 4 step circles are visible in a horizontal row
+- **AND** step 1 is highlighted (solid olive-green fill)
+- **AND** steps 2–4 are inactive (outlined, grey icons)
 
 #### Scenario: Navigate forward through steps
-- **Given** the user is on step 1
-- **When** the user clicks "CONTINUE"
-- **Then** step 2 becomes active
-- **And** step 1 icon becomes inactive (outlined)
-- **And** the step 2 form section is displayed
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "CONTINUE"
+- **THEN** step 2 becomes active
+- **AND** step 1 icon becomes inactive (outlined)
+- **AND** the step 2 form section is displayed
 
 #### Scenario: Navigate backward through steps
-- **Given** the user is on step 2
-- **When** the user clicks "BACK"
-- **Then** step 1 becomes active again
-- **And** the step 1 form section is restored with previous values
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "BACK"
+- **THEN** step 1 becomes active again
+- **AND** the step 1 form section is restored with previous values
 
 #### Scenario: Step 1 — Basic details form
-- **Given** the wizard is on step 1
-- **Then** the heading "BASIC DETAILS" is displayed
-- **And** form fields exist for: First Name, Last Name, Email ID, User ID, Country, State, City, Phone Number, Reference Coder
-- **And** each input has a right-aligned icon
-- **And** inputs are arranged in 2-column and 3-column rows
+
+- **GIVEN** the wizard is on step 1
+- **THEN** the heading "BASIC DETAILS" is displayed
+- **AND** form fields exist for: First Name, Last Name, Email ID, User ID, Country, State, City, Phone Number, Reference Coder
+- **AND** each input has a right-aligned icon
+- **AND** inputs are arranged in 2-column and 3-column rows
 
 #### Scenario: Step 1 — Focus state
-- **Given** the wizard is on step 1
-- **When** the user focuses an input
-- **Then** the input border color changes to olive-green (#8eb852)
+
+- **GIVEN** the wizard is on step 1
+- **WHEN** the user focuses an input
+- **THEN** the input border color changes to olive-green (#8eb852)
 
 #### Scenario: Step 2 — Password change form
-- **Given** the wizard is on step 2
-- **Then** the heading "PASSWORD CHANGE" is displayed
-- **And** form fields exist for: Current Password, Enter Current Password, New Password, Confirm New Password
-- **And** each field is full-width with a lock icon
+
+- **GIVEN** the wizard is on step 2
+- **THEN** the heading "PASSWORD CHANGE" is displayed
+- **AND** form fields exist for: Current Password, Enter Current Password, New Password, Confirm New Password
+- **AND** each field is full-width with a lock icon
 
 #### Scenario: Step 3 — My Cart table
-- **Given** the wizard is on step 3
-- **Then** the heading "MY CART" is displayed
-- **And** a cart table is shown with columns: thumbnail, Product Detail, Quantity, Total Price, remove button
-- **And** each product row shows a thumbnail image, product name with price, a quantity stepper (+ / input / -), and a total price in green
-- **And** a remove button (close-circle icon) is on each row
+
+- **GIVEN** the wizard is on step 3
+- **THEN** the heading "MY CART" is displayed
+- **AND** a cart table is shown with columns: thumbnail, Product Detail, Quantity, Total Price, remove button
+- **AND** each product row shows a thumbnail image, product name with price, a quantity stepper (+ / input / -), and a total price in green
+- **AND** a remove button (close-circle icon) is on each row
 
 #### Scenario: Step 3 — Quantity adjustment
-- **Given** the cart table is visible
-- **When** the user clicks "+"
-- **Then** the quantity increments by 1
-- **And** the total price for that row updates
+
+- **GIVEN** the cart table is visible
+- **WHEN** the user clicks "+"
+- **THEN** the quantity increments by 1
+- **AND** the total price for that row updates
 
 #### Scenario: Step 3 — Quantity decrement
-- **Given** the cart table is visible with quantity > 1
-- **When** the user clicks "-"
-- **Then** the quantity decrements by 1
-- **And** the total price for that row updates
+
+- **GIVEN** the cart table is visible with quantity > 1
+- **WHEN** the user clicks "-"
+- **THEN** the quantity decrements by 1
+- **AND** the total price for that row updates
 
 #### Scenario: Step 3 — Remove product
-- **Given** the cart table has products
-- **When** the user clicks the remove button on a row
-- **Then** that row is removed from the cart
+
+- **GIVEN** the cart table has products
+- **WHEN** the user clicks the remove button on a row
+- **THEN** that row is removed from the cart
 
 #### Scenario: Step 4 — Cart totals
-- **Given** the wizard is on step 4
-- **Then** the heading "CART TOTALS" is displayed
-- **And** a totals table shows: Subtotal, Shipping (radio: Free Shipping / Local pickup), Service (estimated), Total
-- **And** the total row uses bold dark text
-- **And** the BACK button is hidden on the final step
+
+- **GIVEN** the wizard is on step 4
+- **THEN** the heading "CART TOTALS" is displayed
+- **AND** a totals table shows: Subtotal, Shipping (radio: Free Shipping / Local pickup), Service (estimated), Total
+- **AND** the total row uses bold dark text
+- **AND** the BACK button is hidden on the final step
 
 #### Scenario: Step 4 — Shipping selection
-- **Given** the cart totals are visible
-- **When** the user selects "Local pickup"
-- **Then** the radio is checked and Free Shipping is unchecked
-- **And** the shipping cost updates accordingly
+
+- **GIVEN** the cart totals are visible
+- **WHEN** the user selects "Local pickup"
+- **THEN** the radio is checked and Free Shipping is unchecked
+- **AND** the shipping cost updates accordingly
 
 #### Scenario: Responsive layout
-- **Given** the viewport is ≤ 767px
-- **Then** the form card is full-width with 20px padding
-- **And** form fields stack vertically (single column)
-- **And** action buttons stack vertically aligned to the right
+
+- **GIVEN** the viewport is ≤ 767px
+- **THEN** the form card is full-width with 20px padding
+- **AND** form fields stack vertically (single column)
+- **AND** action buttons stack vertically aligned to the right
 
 ### Feature: Visual design compliance
 
 #### Scenario: Brand colors applied
-- **Given** the template is rendered
-- **Then** buttons use background #8eb852 with white text
-- **And** active step circle uses #8eb852 fill
-- **And** focus borders use #8eb852
+
+- **GIVEN** the template is rendered
+- **THEN** buttons use background #8eb852 with white text
+- **AND** active step circle uses #8eb852 fill
+- **AND** focus borders use #8eb852
 
 #### Scenario: Typography matches source
-- **Given** the template is rendered
-- **Then** headings use Lato Black weight, uppercase, 20px, letter-spacing 2px
-- **And** body text uses Lato Regular at 14px
-- **And** step labels use 12px uppercase
+
+- **GIVEN** the template is rendered
+- **THEN** headings use Lato Black weight, uppercase, 20px, letter-spacing 2px
+- **AND** body text uses Lato Regular at 14px
+- **AND** step labels use 12px uppercase
 
 #### Scenario: Card layout matches source
-- **Given** the template is rendered
-- **Then** the form card has white background
-- **And** the page background is a photographic food-themed image
-- **And** inputs have 1px #e6e6e6 borders with 42px height
-- **And** buttons have 3px border-radius, 42px height, uppercase text
+
+- **GIVEN** the template is rendered
+- **THEN** the form card has white background
+- **AND** the page background is a photographic food-themed image
+- **AND** inputs have 1px #e6e6e6 borders with 42px height
+- **AND** buttons have 3px border-radius, 42px height, uppercase text
 
 ## Verification checklist
 

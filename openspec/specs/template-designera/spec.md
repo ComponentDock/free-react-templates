@@ -37,76 +37,94 @@ Recreation of the ColorLib "Design" template.
 7. **Blog Entries** — Section title centered, 5-column card grid (rounded cards with date, title, excerpt)
 8. **Footer** — 2-column: left has About text + social icons (5 rounded buttons); right has 3-column navigation links. Copyright line at bottom with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
-  Scenario: Logo and navigation links render
-    Given the page loads
-    Then the navbar displays the "Designera" logo
-    And nav links "Home", "Inner Page", "Contact us" are visible
-    And a "Get Started" CTA button is rendered
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is mobile
-    Then a hamburger icon is displayed
-    And clicking it reveals the mobile navigation menu
+#### Scenario: Logo and navigation links render
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays the "Designera" logo
+- **AND** nav links "Home", "Inner Page", "Contact us" are visible
+- **AND** a "Get Started" CTA button is rendered
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is mobile
+- **THEN** a hamburger icon is displayed
+- **AND** clicking it reveals the mobile navigation menu
 
 ### Feature: Hero
-  Scenario: Hero content renders
-    Given the page loads
-    Then the hero heading "Create, Code, and Published." is visible
-    And a paragraph description is shown
-    And a "Get Started" primary button is rendered
-    And two feature icon cards ("High Quality") appear below
 
-  Scenario: Hero image and quote
-    Given the page loads
-    Then a hero image is displayed on the right side
-    And a dark navy quote box overlays the bottom of the image
-    And the quote contains attribution text
+#### Scenario: Hero content renders
+
+- **GIVEN** the page loads
+- **THEN** the hero heading "Create, Code, and Published." is visible
+- **AND** a paragraph description is shown
+- **AND** a "Get Started" primary button is rendered
+- **AND** two feature icon cards ("High Quality") appear below
+
+#### Scenario: Hero image and quote
+
+- **GIVEN** the page loads
+- **THEN** a hero image is displayed on the right side
+- **AND** a dark navy quote box overlays the bottom of the image
+- **AND** the quote contains attribution text
 
 ### Feature: Achievements
-  Scenario: Stats row renders
-    Given the page loads
-    Then 4 stat blocks are displayed in a row
-    And each stat block shows a large number, heading, and description
+
+#### Scenario: Stats row renders
+
+- **GIVEN** the page loads
+- **THEN** 4 stat blocks are displayed in a row
+- **AND** each stat block shows a large number, heading, and description
 
 ### Feature: How It Works
-  Scenario: Steps render
-    Given the page loads
-    Then a "How it works" section title is displayed
-    And 3 steps are shown with icons
-    And dashed arrow connectors link step 1 to step 2 and step 2 to step 3
+
+#### Scenario: Steps render
+
+- **GIVEN** the page loads
+- **THEN** a "How it works" section title is displayed
+- **AND** 3 steps are shown with icons
+- **AND** dashed arrow connectors link step 1 to step 2 and step 2 to step 3
 
 ### Feature: Services
-  Scenario: Services section renders
-    Given the page loads
-    Then a "Services" subtitle and heading appear on the left
-    And a paragraph and check list with 3 items are shown
-    And a "Get Started" CTA button is rendered
-    And a service image with decorative dots appears on the right
+
+#### Scenario: Services section renders
+
+- **GIVEN** the page loads
+- **THEN** a "Services" subtitle and heading appear on the left
+- **AND** a paragraph and check list with 3 items are shown
+- **AND** a "Get Started" CTA button is rendered
+- **AND** a service image with decorative dots appears on the right
 
 ### Feature: Testimonials
-  Scenario: Testimonial carousel renders
-    Given the page loads
-    Then a testimonial section is visible
-    And it contains an author photo, blockquote, name, and role
-    And navigation dots allow cycling between testimonials
+
+#### Scenario: Testimonial carousel renders
+
+- **GIVEN** the page loads
+- **THEN** a testimonial section is visible
+- **AND** it contains an author photo, blockquote, name, and role
+- **AND** navigation dots allow cycling between testimonials
 
 ### Feature: Blog Entries
-  Scenario: Blog grid renders
-    Given the page loads
-    Then a "Latest Blog Posts" section title is displayed
-    And 5 blog post cards appear in a grid
-    And each card shows a date, title, and excerpt
+
+#### Scenario: Blog grid renders
+
+- **GIVEN** the page loads
+- **THEN** a "Latest Blog Posts" section title is displayed
+- **AND** 5 blog post cards appear in a grid
+- **AND** each card shows a date, title, and excerpt
 
 ### Feature: Footer
-  Scenario: Footer renders
-    Given the page loads
-    Then the footer displays an "About" section with paragraph
-    And 5 social icon buttons are shown
-    And a 3-column navigation link grid is visible
-    And a copyright line with Component Dock link is at the bottom
+
+#### Scenario: Footer renders
+
+- **GIVEN** the page loads
+- **THEN** the footer displays an "About" section with paragraph
+- **AND** 5 social icon buttons are shown
+- **AND** a 3-column navigation link grid is visible
+- **AND** a copyright line with Component Dock link is at the bottom
 
 ## Verification checklist
 

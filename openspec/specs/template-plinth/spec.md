@@ -72,63 +72,72 @@ Library with 100% coverage enforced.
   4. "Further Information" links (Terms & Conditions, Privacy Policy)
   5. "Follow us" social icons (Facebook, Twitter, LinkedIn, Medium, Telegram)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Plinth — Dark Footer with CTA Banner
 
-  Scenario: Footer renders with correct section structure
-    Given the page loads
-    Then a footer element is visible
-    And the footer contains a CTA banner section
-    And the footer contains a five-column grid
-    And the footer has a dark navy background
+#### Scenario: Footer renders with correct section structure
 
-  Scenario: CTA banner displays headline and call-to-action
-    Given the footer is rendered
-    Then the CTA banner shows "Ready for a next project?" as the heading
-    And the CTA banner shows "Let's get started!" as the subheading
-    And a "Contact us" button is visible in the CTA banner
-    And the button has dark styling with sharp corners
+- **GIVEN** the page loads
+- **THEN** a footer element is visible
+- **AND** the footer contains a CTA banner section
+- **AND** the footer contains a five-column grid
+- **AND** the footer has a dark navy background
 
-  Scenario: CTA banner has correct visual styling
-    Given the footer is rendered
-    Then the CTA banner has a lavender/periwinkle background (#8186d5)
-    And the CTA banner has an offset shadow effect
-    And the CTA banner overlaps the footer area above it
+#### Scenario: CTA banner displays headline and call-to-action
 
-  Scenario: Logo column displays brand and copyright
-    Given the footer is rendered
-    Then the first column contains a logo text link
-    And the logo text is uppercase
-    And a copyright notice with year is displayed below the logo
+- **GIVEN** the footer is rendered
+- **THEN** the CTA banner shows "Ready for a next project?" as the heading
+- **AND** the CTA banner shows "Let's get started!" as the subheading
+- **AND** a "Contact us" button is visible in the CTA banner
+- **AND** the button has dark styling with sharp corners
 
-  Scenario: Link columns display correct headings and items
-    Given the footer is rendered
-    Then a "Customers" column contains "Buyer" and "Supplier" links
-    And a "Company" column contains "About us", "Careers", and "Contact us" links
-    And a "Further Information" column contains "Terms & Conditions" and "Privacy Policy" links
+#### Scenario: CTA banner has correct visual styling
 
-  Scenario: Social icons render as circular buttons
-    Given the footer is rendered
-    Then the "Follow us" column contains social icon links
-    And each social icon is displayed in a circular button
-    And the circular buttons have the lavender/periwinkle background
+- **GIVEN** the footer is rendered
+- **THEN** the CTA banner has a lavender/periwinkle background (#8186d5)
+- **AND** the CTA banner has an offset shadow effect
+- **AND** the CTA banner overlaps the footer area above it
 
-  Scenario: Footer link hover states
-    Given the footer is rendered
-    When a user hovers over a footer link
-    Then the link text color changes to white
+#### Scenario: Logo column displays brand and copyright
 
-  Scenario: Responsive layout adjusts columns
-    Given the footer is rendered on a mobile viewport
-    Then the five columns stack vertically
-    And the CTA banner stacks vertically with full-width button
+- **GIVEN** the footer is rendered
+- **THEN** the first column contains a logo text link
+- **AND** the logo text is uppercase
+- **AND** a copyright notice with year is displayed below the logo
 
-  Scenario: Footer accessibility
-    Given the footer is rendered
-    Then all links are keyboard-focusable
-    And social icons have accessible labels
-    And the footer uses semantic HTML elements
+#### Scenario: Link columns display correct headings and items
+
+- **GIVEN** the footer is rendered
+- **THEN** a "Customers" column contains "Buyer" and "Supplier" links
+- **AND** a "Company" column contains "About us", "Careers", and "Contact us" links
+- **AND** a "Further Information" column contains "Terms & Conditions" and "Privacy Policy" links
+
+#### Scenario: Social icons render as circular buttons
+
+- **GIVEN** the footer is rendered
+- **THEN** the "Follow us" column contains social icon links
+- **AND** each social icon is displayed in a circular button
+- **AND** the circular buttons have the lavender/periwinkle background
+
+#### Scenario: Footer link hover states
+
+- **GIVEN** the footer is rendered
+- **WHEN** a user hovers over a footer link
+- **THEN** the link text color changes to white
+
+#### Scenario: Responsive layout adjusts columns
+
+- **GIVEN** the footer is rendered on a mobile viewport
+- **THEN** the five columns stack vertically
+- **AND** the CTA banner stacks vertically with full-width button
+
+#### Scenario: Footer accessibility
+
+- **GIVEN** the footer is rendered
+- **THEN** all links are keyboard-focusable
+- **AND** social icons have accessible labels
+- **AND** the footer uses semantic HTML elements
 
 ## Verification Checklist
 

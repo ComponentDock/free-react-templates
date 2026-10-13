@@ -278,7 +278,7 @@ circle on a `#fff4f4` background, a title, and a short blurb, bordered
 - **AND** each card SHALL show a circular icon badge (100px, `#fff4f4`
   background, `#ec5b53` lucide icon) above the title and a one-line blurb
 - **AND** each card SHALL have a `1px solid #e1ebf7` border, 6px radius,
-  and ~`61px 22px` padding
+- **AND** ~`61px 22px` padding
 - **AND** hovering a card SHALL drop the border and apply a subtle
   shadow/overlay (per live-page hover state)
 
@@ -395,7 +395,9 @@ padding.
 - **AND** section padding SHALL scale down from the 195px/90px desktop
   rhythm to a mobile-friendly rhythm
 
-### Requirement: Component Dock attribution
+### Feature: Component Dock attribution
+
+#### Scenario: Component Dock attribution
 
 Every template in the monorepo MUST carry the Component Dock footer link
 (covered by the Footer requirement above — listed separately so the gate

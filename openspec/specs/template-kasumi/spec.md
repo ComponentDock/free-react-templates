@@ -77,113 +77,115 @@ The ColorLib preview shows a warm, elegant hotel template with:
 - Blog cards with category labels
 - Dark footer with newsletter form
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Top bar displays contact info and auth links
-  Given the user visits the homepage
-  Then the top bar shows address "96 Ernser Vista Suite 437, NY, US"
-  And shows phone "(123) 456-78-910"
-  And shows Login and Register links
-  And shows a language selector
 
-Scenario: Navbar shows navigation links and Book Now button
-  Given the user visits the homepage
-  Then the navbar shows links: Home, Rooms, About Us, News, Contact
-  And shows a "Book Now" button styled with brand color
-```
+#### Scenario: Top bar displays contact info and auth links
+
+- **GIVEN** the user visits the homepage
+- **THEN** the top bar shows address "96 Ernser Vista Suite 437, NY, US"
+- **AND** shows phone "(123) 456-78-910"
+- **AND** shows Login and Register links
+- **AND** shows a language selector
+
+#### Scenario: Navbar shows navigation links and Book Now button
+
+- **GIVEN** the user visits the homepage
+- **THEN** the navbar shows links: Home, Rooms, About Us, News, Contact
+- **AND** shows a "Book Now" button styled with brand color
 
 ### Hero
-```gherkin
-Scenario: Hero section displays booking form
-  Given the user visits the homepage
-  Then the hero section shows heading "WELCOME KASUMI"
-  And shows a subheading about holidays
-  And shows a booking form with Location, Check In, Check Out, Person fields
-  And shows a "BOOK NOW" submit button
 
-Scenario: Hero has background image
-  Given the user visits the homepage
-  Then the hero section has a full-width background image
-```
+#### Scenario: Hero section displays booking form
+
+- **GIVEN** the user visits the homepage
+- **THEN** the hero section shows heading "WELCOME KASUMI"
+- **AND** shows a subheading about holidays
+- **AND** shows a booking form with Location, Check In, Check Out, Person fields
+- **AND** shows a "BOOK NOW" submit button
+
+#### Scenario: Hero has background image
+
+- **GIVEN** the user visits the homepage
+- **THEN** the hero section has a full-width background image
 
 ### About
-```gherkin
-Scenario: About section shows hotel info
-  Given the user scrolls to the About section
-  Then it shows heading "ABOUT US" with h2 subheading
-  And shows two paragraphs of description text
-  And shows a signature image
-  And shows a large photo on the right side
-```
+
+#### Scenario: About section shows hotel info
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** it shows heading "ABOUT US" with h2 subheading
+- **AND** shows two paragraphs of description text
+- **AND** shows a signature image
+- **AND** shows a large photo on the right side
 
 ### Services
-```gherkin
-Scenario: Services section displays 6 amenity cards
-  Given the user scrolls to the Services section
-  Then 6 service cards are displayed in a 3×2 grid
-  And each card has an icon image, title, and description
-  And the titles are: Free Wi-Fi, Premium Pool, Coffee Maker, Bar Wine, TV HD, Restaurant
-```
+
+#### Scenario: Services section displays 6 amenity cards
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service cards are displayed in a 3×2 grid
+- **AND** each card has an icon image, title, and description
+- **AND** the titles are: Free Wi-Fi, Premium Pool, Coffee Maker, Bar Wine, TV HD, Restaurant
 
 ### Rooms
-```gherkin
-Scenario: Rooms section shows 4 room cards
-  Given the user scrolls to the Rooms section
-  Then 4 room cards are displayed in a full-width row
-  And each card has a background image, room name, price, and "Booking Now" link
-  And the heading says "OUR ROOM" / "Explore Our Hotel"
-```
+
+#### Scenario: Rooms section shows 4 room cards
+
+- **GIVEN** the user scrolls to the Rooms section
+- **THEN** 4 room cards are displayed in a full-width row
+- **AND** each card has a background image, room name, price, and "Booking Now" link
+- **AND** the heading says "OUR ROOM" / "Explore Our Hotel"
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials section shows customer reviews
-  Given the user scrolls to the Testimonials section
-  Then a testimonial image is shown on the left
-  And a testimonial slider is shown on the right
-  And each testimonial has a star rating, quote, and author info
-  And the heading says "What do customers say about us?"
-```
+
+#### Scenario: Testimonials section shows customer reviews
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a testimonial image is shown on the left
+- **AND** a testimonial slider is shown on the right
+- **AND** each testimonial has a star rating, quote, and author info
+- **AND** the heading says "What do customers say about us?"
 
 ### Why Choose Us
-```gherkin
-Scenario: Why Choose Us CTA section
-  Given the user scrolls to the Why Choose Us section
-  Then a parallax background image is displayed
-  And a centered CTA with heading and "Booking Now" button is shown
-```
+
+#### Scenario: Why Choose Us CTA section
+
+- **GIVEN** the user scrolls to the Why Choose Us section
+- **THEN** a parallax background image is displayed
+- **AND** a centered CTA with heading and "Booking Now" button is shown
 
 ### Gallery
-```gherkin
-Scenario: Gallery section shows image carousel
-  Given the user scrolls to the Gallery section
-  Then 4 gallery images are shown in a carousel
-  And a "View Gallery" button is displayed
-  And the heading says "OUR GALLERY"
-```
+
+#### Scenario: Gallery section shows image carousel
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** 4 gallery images are shown in a carousel
+- **AND** a "View Gallery" button is displayed
+- **AND** the heading says "OUR GALLERY"
 
 ### Blog
-```gherkin
-Scenario: Blog section shows 3 recent posts
-  Given the user scrolls to the Blog section
-  Then 3 blog cards are displayed
-  And each card has an image, category label, title, date, and "Read More" link
-  And the heading says "NEWS & EVENT" / "From Our Blog"
-```
+
+#### Scenario: Blog section shows 3 recent posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 3 blog cards are displayed
+- **AND** each card has an image, category label, title, date, and "Read More" link
+- **AND** the heading says "NEWS & EVENT" / "From Our Blog"
 
 ### Footer
-```gherkin
-Scenario: Footer displays links and newsletter
-  Given the user scrolls to the footer
-  Then the footer has a dark background
-  And shows an About section with logo and description
-  And shows Quick Links
-  And shows a Newsletter signup form with email input and Subscribe button
-  And shows social media icons
-  And shows a copyright bar at the bottom
-  And the copyright links to Component Dock
-```
+
+#### Scenario: Footer displays links and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** shows an About section with logo and description
+- **AND** shows Quick Links
+- **AND** shows a Newsletter signup form with email input and Subscribe button
+- **AND** shows social media icons
+- **AND** shows a copyright bar at the bottom
+- **AND** the copyright links to Component Dock
 
 ## Verification Checklist
 

@@ -11,19 +11,25 @@ Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-1
 - **Primary Accent**: Clean neutral/indigo focus rings, dark text (`#212529`), muted gray helper text (`#b3b3b3`)
 - **Interactive**: Smooth transition on focus and hover, modern datepicker input UI
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Header and Branding
+
+#### Scenario: Header and Branding
 
 - The template must display a centered section heading (e.g. "Calendar Scheduler" / "Calzeal") with clean typography.
 - The footer must link to `https://www.componentdock.com/` as "Component Dock".
 
 ### Requirement 2: Interactive Datepicker Form
 
+#### Scenario: Interactive Datepicker Form
+
 - The main section must feature a clean form group with a "Select Date" label and an interactive date input / calendar popover widget.
 - Users can click the input to open a functional calendar month view, select dates, and see the selected date populate the input field.
 
 ### Requirement 3: Verification & Responsive Layout
+
+#### Scenario: Verification & Responsive Layout
 
 - Responsive design adapting cleanly on mobile, tablet, and desktop viewports.
 - Fully accessible with proper label associations and keyboard navigation.

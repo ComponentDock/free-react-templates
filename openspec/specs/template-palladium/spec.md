@@ -98,90 +98,123 @@ colors, typography, and content types (no ColorLib assets copied).
 | **Section spacing** | ~80px vertical padding | `ftco-section` class pattern |
 | **Parallax** | `data-stellar-background-ratio="0.5"` | Counter/stats section |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
+
 - Scenario: Dark navbar renders with brand and navigation links
-  - Given the user loads the homepage
-  - Then a dark-background navbar is visible with brand text "Palladium"
-  - And navigation links include Home, About, Work, Pricing, Blog, Contact
-  - And the navbar is sticky on scroll
-  - And a mobile hamburger toggler is visible on small viewports
+- **GIVEN** the user loads the homepage
+- **THEN** a dark-background navbar is visible with brand text "Palladium"
+- **AND** navigation links include Home, About, Work, Pricing, Blog, Contact
+- **AND** the navbar is sticky on scroll
+- **AND** a mobile hamburger toggler is visible on small viewports
 
 ### Hero
+
+#### Scenario: Hero
+
 - Scenario: Split hero displays headline and CTA
-  - Given the user loads the homepage
-  - Then a split hero section is visible
-  - And the left side has dark background with white text
-  - And a "WELCOME" subheading with yellow underline is visible
-  - And h1 "We Help to Build You the Product" is displayed
-  - And h2 "Business Solution" subtext is displayed
-  - And a "Get in touch" button with yellow accent is visible
-  - And the right side shows a full-height background image
+- **GIVEN** the user loads the homepage
+- **THEN** a split hero section is visible
+- **AND** the left side has dark background with white text
+- **AND** a "WELCOME" subheading with yellow underline is visible
+- **AND** h1 "We Help to Build You the Product" is displayed
+- **AND** h2 "Business Solution" subtext is displayed
+- **AND** a "Get in touch" button with yellow accent is visible
+- **AND** the right side shows a full-height background image
 
 ### About / Services List
+
+#### Scenario: About / Services List
+
 - Scenario: "What We Can Do for You" section renders with service items
-  - Given the user scrolls to the about section
-  - Then "PROVIDING" subheading and "What We Can Do for You" heading are visible
-  - And a right-aligned image is displayed
-  - And 4 service items are listed (Market Research, Financial Services, Online Marketing, 24/7 Support)
-  - And each service item has an icon and description text
+- **GIVEN** the user scrolls to the about section
+- **THEN** "PROVIDING" subheading and "What We Can Do for You" heading are visible
+- **AND** a right-aligned image is displayed
+- **AND** 4 service items are listed (Market Research, Financial Services, Online Marketing, 24/7 Support)
+- **AND** each service item has an icon and description text
 
 ### Services Grid
+
+#### Scenario: Services Grid
+
 - Scenario: 4-column services grid renders correctly
-  - Given the user scrolls to the services grid
-  - Then 4 service cards are displayed in a row
-  - And each card has a circle icon, title, and description
-  - And the services are: Business Strategy, Data Analysis, Graphic Design, Creative
+- **GIVEN** the user scrolls to the services grid
+- **THEN** 4 service cards are displayed in a row
+- **AND** each card has a circle icon, title, and description
+- **AND** the services are: Business Strategy, Data Analysis, Graphic Design, Creative
 
 ### Counter / Stats
+
+#### Scenario: Counter / Stats
+
 - Scenario: Parallax stats section displays counters
-  - Given the user scrolls to the stats section
-  - Then a parallax background image is visible
-  - And "SOME" subheading and "Interesting Facts" heading are displayed
-  - And 4 stat counters are shown with numbers and labels
+- **GIVEN** the user scrolls to the stats section
+- **THEN** a parallax background image is visible
+- **AND** "SOME" subheading and "Interesting Facts" heading are displayed
+- **AND** 4 stat counters are shown with numbers and labels
 
 ### Projects
+
+#### Scenario: Projects
+
 - Scenario: Project portfolio grid displays work samples
-  - Given the user scrolls to the projects section
-  - Then "PROJECTS" subheading and "Recents Projects" heading are visible
-  - And 6 project cards are displayed in a 2×3 grid
-  - And each card has a background image, dark overlay, arrow button, title, and category
+- **GIVEN** the user scrolls to the projects section
+- **THEN** "PROJECTS" subheading and "Recents Projects" heading are visible
+- **AND** 6 project cards are displayed in a 2×3 grid
+- **AND** each card has a background image, dark overlay, arrow button, title, and category
 
 ### Testimonials
+
+#### Scenario: Testimonials
+
 - Scenario: Testimonials carousel renders with user quotes
-  - Given the user scrolls to the testimonials section
-  - Then a carousel of testimonial cards is visible
-  - And each card has a circular user photo, quote icon, testimonial text, name, and role
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card has a circular user photo, quote icon, testimonial text, name, and role
 
 ### Blog / Case Study
+
+#### Scenario: Blog / Case Study
+
 - Scenario: Blog cards display latest updates
-  - Given the user scrolls to the blog section
-  - Then "OUR LATEST UPDATE" subheading and "Case Study" heading are visible
-  - And 3 blog cards are displayed in a row
-  - And each card has a background image, date, author, comment count, and title
+- **GIVEN** the user scrolls to the blog section
+- **THEN** "OUR LATEST UPDATE" subheading and "Case Study" heading are visible
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card has a background image, date, author, comment count, and title
 
 ### Pricing
+
+#### Scenario: Pricing
+
 - Scenario: Pricing section displays 4 tiers
-  - Given the user scrolls to the pricing section
-  - Then "PRICING PLANS" subheading and "Our Best Pricing" heading are visible
-  - And 4 pricing cards are displayed: Free ($0), Startup ($19), Premium ($49), Enterprise ($99)
-  - And each card has a feature list and CTA button
-  - And the section has a light gray background
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** "PRICING PLANS" subheading and "Our Best Pricing" heading are visible
+- **AND** 4 pricing cards are displayed: Free ($0), Startup ($19), Premium ($49), Enterprise ($99)
+- **AND** each card has a feature list and CTA button
+- **AND** the section has a light gray background
 
 ### Partners
+
+#### Scenario: Partners
+
 - Scenario: Partner logos displayed in a strip
-  - Given the user scrolls to the partners section
-  - Then 5 partner logo images are displayed in a horizontal row
+- **GIVEN** the user scrolls to the partners section
+- **THEN** 5 partner logo images are displayed in a horizontal row
 
 ### Footer
+
+#### Scenario: Footer
+
 - Scenario: Dark footer renders with columns and copyright
-  - Given the user scrolls to the footer
-  - Then a dark-background footer is visible
-  - And it contains 4 columns: brand + social, Useful Links, Quick Links, Contact Us
-  - And social icons (Twitter, Facebook, Instagram) are present
-  - And a copyright bar is at the bottom
-  - And a "Component Dock" link is included per monorepo convention
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark-background footer is visible
+- **AND** it contains 4 columns: brand + social, Useful Links, Quick Links, Contact Us
+- **AND** social icons (Twitter, Facebook, Instagram) are present
+- **AND** a copyright bar is at the bottom
+- **AND** a "Component Dock" link is included per monorepo convention
 
 ## Verification checklist
 

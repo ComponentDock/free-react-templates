@@ -59,81 +59,93 @@ The template has a strong, energetic gym aesthetic:
 11. **Newsletter** — Heading "Subscribe Newsletter", email input + "Subscribe Now" red pill button
 12. **Footer** — Dark bg (#25282a), 4 columns: About (social icons), Quick Links, Recent Posts, Contact Info + copyright with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: IronForge template behaviour
+
 Feature: IronForge fitness/gym template
 
-  Background:
-    Given the user opens the IronForge template
+Background:
+- **GIVEN** the user opens the IronForge template
 
-  Scenario: Navbar displays with correct links
-    Then the navbar shows logo "IronForge"
-    And the navbar has links: Home, Classes, Schedule, Trainers, Events, Blog, Contact
-    And a cart icon is visible
+#### Scenario: Navbar displays with correct links
 
-  Scenario: Hero slider renders
-    Given the hero section is visible
-    Then a full-width background image is displayed
-    And a dark overlay covers the image
-    And a motivational headline is centered in white
-    And a "Join Classes" pill button in red is shown
+- **THEN** the navbar shows logo "IronForge"
+- **AND** the navbar has links: Home, Classes, Schedule, Trainers, Events, Blog, Contact
+- **AND** a cart icon is visible
 
-  Scenario: Intro class cards display
-    Given the class cards section is visible
-    Then 3 class cards are shown: Body Building, Yoga Program, Aerobics Classes
-    And each card has a background image
-    And each card shows a title, description, and price of $25.00/month
+#### Scenario: Hero slider renders
 
-  Scenario: Services section displays feature icons
-    Given the services section is visible
-    Then the heading "Being fit is attractive" is shown
-    And 4 feature cards are displayed: Cardio Program, Body Building, Karate Classes, Boxing Program
+- **GIVEN** the hero section is visible
+- **THEN** a full-width background image is displayed
+- **AND** a dark overlay covers the image
+- **AND** a motivational headline is centered in white
+- **AND** a "Join Classes" pill button in red is shown
 
-  Scenario: Schedule table renders
-    Given the schedule section is visible
-    Then a weekly class timetable grid is displayed
-    And class names appear in their correct time slots
+#### Scenario: Intro class cards display
 
-  Scenario: Testimonials carousel shows
-    Given the testimonials section is visible
-    Then a heading "What People Says" is shown
-    And "Success Stories" is displayed
-    And testimonial content is navigable
+- **GIVEN** the class cards section is visible
+- **THEN** 3 class cards are shown: Body Building, Yoga Program, Aerobics Classes
+- **AND** each card has a background image
+- **AND** each card shows a title, description, and price of $25.00/month
 
-  Scenario: Trainers section displays profiles
-    Given the trainers section is visible
-    Then 3 trainer cards are shown
-    And each card has a photo, name, and specialty
+#### Scenario: Services section displays feature icons
 
-  Scenario: Classes section shows class cards
-    Given the classes section is visible
-    Then 3 class cards are shown: Fitness Gym & Cardio, Strength Training, Yoga Program
-    And each card has a background image and description
+- **GIVEN** the services section is visible
+- **THEN** the heading "Being fit is attractive" is shown
+- **AND** 4 feature cards are displayed: Cardio Program, Body Building, Karate Classes, Boxing Program
 
-  Scenario: Events section shows upcoming events
-    Given the events section is visible
-    Then the heading "Upcoming Events" is shown
-    And 3 event cards are displayed with titles and descriptions
+#### Scenario: Schedule table renders
 
-  Scenario: Blog section displays recent posts
-    Given the blog section is visible
-    Then the heading "Recent Blog" is shown
-    And 3 blog post teasers are displayed with images
+- **GIVEN** the schedule section is visible
+- **THEN** a weekly class timetable grid is displayed
+- **AND** class names appear in their correct time slots
 
-  Scenario: Newsletter subscription form
-    Given the newsletter section is visible
-    Then the heading "Subscribe Newsletter" is shown
-    And an email input field is present
-    And a "Subscribe Now" red pill button is shown
+#### Scenario: Testimonials carousel shows
 
-  Scenario: Footer renders all columns
-    Given the footer is visible
-    Then it has a dark background (#25282a)
-    And 4 columns are shown: About, Quick Links, Recent Posts, Contact Info
-    And social media icons are present
-    And the copyright includes a link to Component Dock
-```
+- **GIVEN** the testimonials section is visible
+- **THEN** a heading "What People Says" is shown
+- **AND** "Success Stories" is displayed
+- **AND** testimonial content is navigable
+
+#### Scenario: Trainers section displays profiles
+
+- **GIVEN** the trainers section is visible
+- **THEN** 3 trainer cards are shown
+- **AND** each card has a photo, name, and specialty
+
+#### Scenario: Classes section shows class cards
+
+- **GIVEN** the classes section is visible
+- **THEN** 3 class cards are shown: Fitness Gym & Cardio, Strength Training, Yoga Program
+- **AND** each card has a background image and description
+
+#### Scenario: Events section shows upcoming events
+
+- **GIVEN** the events section is visible
+- **THEN** the heading "Upcoming Events" is shown
+- **AND** 3 event cards are displayed with titles and descriptions
+
+#### Scenario: Blog section displays recent posts
+
+- **GIVEN** the blog section is visible
+- **THEN** the heading "Recent Blog" is shown
+- **AND** 3 blog post teasers are displayed with images
+
+#### Scenario: Newsletter subscription form
+
+- **GIVEN** the newsletter section is visible
+- **THEN** the heading "Subscribe Newsletter" is shown
+- **AND** an email input field is present
+- **AND** a "Subscribe Now" red pill button is shown
+
+#### Scenario: Footer renders all columns
+
+- **GIVEN** the footer is visible
+- **THEN** it has a dark background (#25282a)
+- **AND** 4 columns are shown: About, Quick Links, Recent Posts, Contact Info
+- **AND** social media icons are present
+- **AND** the copyright includes a link to Component Dock
 
 ## Verification Checklist
 

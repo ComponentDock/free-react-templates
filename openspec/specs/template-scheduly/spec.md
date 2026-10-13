@@ -20,7 +20,7 @@ Recreation of ColorLib Calendar 09 (`https://colorlib.com/wp/template/calendar-0
   - Sidebar / Event Panel: Upcoming events list, mini date picker, and quick filters.
   - Footer: Clean modern footer with copyright and required link to https://www.componentdock.com/ ("Component Dock").
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Calendar & Event Management
 
@@ -28,27 +28,27 @@ As a user, I want to view a monthly calendar grid with scheduled events so that 
 
 #### Scenario: Viewing the calendar month grid
 
-- Given the user loads Scheduly
-- When the calendar view is displayed
-- Then the user sees the 7-column week header, days of the month grid, and any scheduled event badges.
+- **GIVEN** the user loads Scheduly
+- **WHEN** the calendar view is displayed
+- **THEN** the user sees the 7-column week header, days of the month grid, and any scheduled event badges
 
 #### Scenario: Switching calendar views
 
-- Given the user is on the calendar interface
-- When the user clicks the "Week" or "Day" view switcher
-- Then the calendar layout updates to display the selected time scope.
+- **GIVEN** the user is on the calendar interface
+- **WHEN** the user clicks the "Week" or "Day" view switcher
+- **THEN** the calendar layout updates to display the selected time scope
 
 #### Scenario: Adding a new event
 
-- Given the user clicks the "Add Event" button or a specific calendar day
-- When the user fills out the event title, date, and time in the modal form and submits
-- Then the new event appears immediately in the calendar grid and upcoming events list.
+- **GIVEN** the user clicks the "Add Event" button or a specific calendar day
+- **WHEN** the user fills out the event title, date, and time in the modal form and submits
+- **THEN** the new event appears immediately in the calendar grid and upcoming events list
 
 #### Scenario: Footer Attribution
 
-- Given the user scrolls to the bottom of the page
-- When the footer renders
-- Then it contains a link to https://www.componentdock.com/ anchored with "Component Dock".
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it contains a link to https://www.componentdock.com/ anchored with "Component Dock"
 
 ## Verification Checklist
 

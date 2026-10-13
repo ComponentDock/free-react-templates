@@ -70,7 +70,7 @@ carousel, blog grid, brand logos, and a 4-column dark footer.
 11. **Footer** — 4-column: About Agency, Navigation Links, Newsletter form,
     InstaFeed (8 thumbnail grid); dark `#04091e` background
 
-## Gherkin requirements and scenarios
+## Requirements
 
 ### Requirement: Page layout and header
 
@@ -201,7 +201,7 @@ avatar images, quotes, names, and titles.
 - **THEN** a testimonial section SHALL be visible on a dark background
 - **AND** it SHALL contain at least 3 testimonial cards
 - **AND** each card SHALL have an avatar image, a quote paragraph, a name,
-  and a title/role
+- **AND** a title/role
 - **AND** the testimonials SHALL cycle via carousel navigation
 
 ### Requirement: Blog section
@@ -213,7 +213,7 @@ The system SHALL render a 4-column grid of blog post cards.
 - **GIVEN** the Mendly app is rendered
 - **THEN** a blog section SHALL be visible with 4 blog post cards
 - **AND** each card SHALL contain an image, a date/author line, a title,
-  and an excerpt
+- **AND** an excerpt
 - **AND** each card SHALL have a "Details" link/button
 
 ### Requirement: Brands section

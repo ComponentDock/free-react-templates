@@ -72,110 +72,97 @@ Recreation of the ColorLib "Bee" template as a construction company landing page
 11. **Blog** — 3-column blog cards; each with image, date overlay, title, excerpt, "Read More" button
 12. **Footer** — Dark background; 4 columns: logo + social, Services links, Recent Blog posts, Newsletter signup form; copyright bar
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Bumble Construction Template
 
 #### Scenario: Top Info Bar renders contact details
-```
-Given the user loads the page
-Then the top bar displays phone number, email address, and business hours
-And each item has an icon beside it
-```
+
+- **GIVEN** the user loads the page
+- **THEN** the top bar displays phone number, email address, and business hours
+- **AND** each item has an icon beside it
 
 #### Scenario: Navbar navigation
-```
-Given the user loads the page
-Then a dark navbar displays with the logo "Bumble"
-And navigation links include Home, About, Services, Projects, Blog, Contact
-And a search form is present
-```
+
+- **GIVEN** the user loads the page
+- **THEN** a dark navbar displays with the logo "Bumble"
+- **AND** navigation links include Home, About, Services, Projects, Blog, Contact
+- **AND** a search form is present
 
 #### Scenario: Hero slider displays construction imagery
-```
-Given the user loads the page
-Then a hero slider shows parallax background images
-And each slide has a heading and subtext overlay
-And the text is positioned on the right half of the slide
-```
+
+- **GIVEN** the user loads the page
+- **THEN** a hero slider shows parallax background images
+- **AND** each slide has a heading and subtext overlay
+- **AND** the text is positioned on the right half of the slide
 
 #### Scenario: About section with quote form
-```
-Given the user scrolls to the about section
-Then a heading reads "We Are Highly Recommendable Construction Firm"
-And body text describes the company
-And a "Request A Quote" form appears on the right with amber header
-And the form contains input fields and a submit button
-```
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading reads "We Are Highly Recommendable Construction Firm"
+- **AND** body text describes the company
+- **AND** a "Request A Quote" form appears on the right with amber header
+- **AND** the form contains input fields and a submit button
 
 #### Scenario: Services grid shows 4 service types
-```
-Given the user scrolls to the services section
-Then 4 service cards are displayed in a row
-And each card has an icon, heading, and description
-And the services are Construction, House Renovation, Painting, Architecture Design
-```
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 4 service cards are displayed in a row
+- **AND** each card has an icon, heading, and description
+- **AND** the services are Construction, House Renovation, Painting, Architecture Design
 
 #### Scenario: Intro CTA parallax section
-```
-Given the user scrolls past services
-Then a full-width parallax section displays "Let's Build Your Dream Together"
-And a primary CTA button reads "Know more about us"
-```
+
+- **GIVEN** the user scrolls past services
+- **THEN** a full-width parallax section displays "Let's Build Your Dream Together"
+- **AND** a primary CTA button reads "Know more about us"
 
 #### Scenario: Team section shows 4 members
-```
-Given the user scrolls to the team section
-Then 4 team member cards are displayed
-And each card has a photo, name, title, and social media icons
-```
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** 4 team member cards are displayed
+- **AND** each card has a photo, name, title, and social media icons
 
 #### Scenario: Projects gallery grid
-```
-Given the user scrolls to the projects section
-Then a masonry-style grid of project images is displayed
-And hovering over a project shows an overlay effect
-```
+
+- **GIVEN** the user scrolls to the projects section
+- **THEN** a masonry-style grid of project images is displayed
+- **AND** hovering over a project shows an overlay effect
 
 #### Scenario: Counter stats section
-```
-Given the user scrolls to the counter section
-Then 4 statistics are displayed: Years Experienced, Projects Successful, Professional Expert, Happy Customers
-And each stat has an animated number counter
-And the section has a parallax background image
-```
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 4 statistics are displayed: Years Experienced, Projects Successful, Professional Expert, Happy Customers
+- **AND** each stat has an animated number counter
+- **AND** the section has a parallax background image
 
 #### Scenario: Services detail section
-```
-Given the user scrolls to the services detail section
-Then the heading reads "Experience Great Services"
-And 3 service items are shown: Expert & Professional, High Quality Work, 24/7 Help Support
-And each has an icon and description
-```
+
+- **GIVEN** the user scrolls to the services detail section
+- **THEN** the heading reads "Experience Great Services"
+- **AND** 3 service items are shown: Expert & Professional, High Quality Work, 24/7 Help Support
+- **AND** each has an icon and description
 
 #### Scenario: Blog section
-```
-Given the user scrolls to the blog section
-Then 3 blog post cards are displayed in a row
-And each card has an image, date overlay, title, excerpt, and "Read More" button
-```
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed in a row
+- **AND** each card has an image, date overlay, title, excerpt, and "Read More" button
 
 #### Scenario: Footer layout
-```
-Given the user scrolls to the footer
-Then the footer has a dark background
-And it contains 4 columns: logo + social icons, services links, recent blog posts, newsletter signup
-And the newsletter has an email input and subscribe button
-And the copyright line links to Component Dock
-```
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** it contains 4 columns: logo + social icons, services links, recent blog posts, newsletter signup
+- **AND** the newsletter has an email input and subscribe button
+- **AND** the copyright line links to Component Dock
 
 #### Scenario: Responsive layout
-```
-Given the user views on mobile
-Then the navbar collapses to a hamburger menu
-And the 4-column grids stack to single column
-And the hero slider text remains readable
-```
+
+- **GIVEN** the user views on mobile
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the 4-column grids stack to single column
+- **AND** the hero slider text remains readable
 
 ## Verification Checklist
 

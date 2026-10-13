@@ -29,37 +29,41 @@ Griddle is a burger restaurant template with a header bar, hero slider, menu gri
 7. **InstagramGrid** — 4-column image grid with Instagram overlay
 8. **Footer** — 3-column: location cards (address + email + phone), newsletter signup form; social icon row; copyright bar with Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: Griddle template behaviour
+
 Feature: Griddle burger restaurant template
 
-  Scenario: renders all sections
-    Given the app loads
-    Then the header is visible with navigation links
-    And the hero slider shows "Big Deal" and "Burger Bachelor"
-    And the menu grid shows 4 burger items with prices
-    And the about section is visible
-    And the video section is visible with a play button
-    And the testimonials section shows customer reviews
-    And the instagram grid shows 4 images
-    And the footer links to componentdock.com
+#### Scenario: renders all sections
 
-  Scenario: mobile menu toggle
-    Given the viewport is narrow
-    When I click the menu toggle button
-    Then the mobile navigation opens
-    When I click a navigation link
-    Then the mobile menu closes
+- **GIVEN** the app loads
+- **THEN** the header is visible with navigation links
+- **AND** the hero slider shows "Big Deal" and "Burger Bachelor"
+- **AND** the menu grid shows 4 burger items with prices
+- **AND** the about section is visible
+- **AND** the video section is visible with a play button
+- **AND** the testimonials section shows customer reviews
+- **AND** the instagram grid shows 4 images
+- **AND** the footer links to componentdock.com
 
-  Scenario: testimonial carousel advances
-    Given the testimonials section is visible
-    When I click the next arrow
-    Then the next testimonial is shown
+#### Scenario: mobile menu toggle
 
-  Scenario: footer newsletter form
-    Given the footer is visible
-    When I enter an email in the newsletter input
-    And I click "Sign Up"
-    Then the form is submitted
-```
+- **GIVEN** the viewport is narrow
+- **WHEN** I click the menu toggle button
+- **THEN** the mobile navigation opens
+- **WHEN** I click a navigation link
+- **THEN** the mobile menu closes
+
+#### Scenario: testimonial carousel advances
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** I click the next arrow
+- **THEN** the next testimonial is shown
+
+#### Scenario: footer newsletter form
+
+- **GIVEN** the footer is visible
+- **WHEN** I enter an email in the newsletter input
+- **AND** I click "Sign Up"
+- **THEN** the form is submitted

@@ -43,138 +43,141 @@ Single-page index with these sections in order:
 | btn-radius | `0` | Buttons are sharp (no border-radius) |
 | font-awesome | 4.7.0 | Icons (replace with lucide-react) |
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Bar
-```
-Scenario: Top bar displays contact info and social links
-  Given the page loads
-  Then I see "Phone no:" with a phone number
-  And I see "email us:" with an email address
-  And I see social media icons for Facebook, Twitter, Instagram, Dribbble
-  And the top bar has a blue background (#006fdc)
-```
+
+#### Scenario: Top bar displays contact info and social links
+
+- **GIVEN** the page loads
+- **THEN** I see "Phone no:" with a phone number
+- **AND** I see "email us:" with an email address
+- **AND** I see social media icons for Facebook, Twitter, Instagram, Dribbble
+- **AND** the top bar has a blue background (#006fdc)
 
 ### Navbar
-```
-Scenario: Navbar is sticky with dark background
-  Given the page loads
-  Then I see a navbar with brand name "WellPilot" and a leaf icon
-  And the navbar has links: Home, About, Coach, Pricing, Services, Stories, Blog, Contact
-  And the navbar background is dark
-  And the brand text color is white with a green leaf icon
 
-Scenario: Navbar is responsive on mobile
-  Given the viewport is less than 992px wide
-  When I tap the hamburger menu
-  Then the navigation links expand in a dropdown
-```
+#### Scenario: Navbar is sticky with dark background
+
+- **GIVEN** the page loads
+- **THEN** I see a navbar with brand name "WellPilot" and a leaf icon
+- **AND** the navbar has links: Home, About, Coach, Pricing, Services, Stories, Blog, Contact
+- **AND** the navbar background is dark
+- **AND** the brand text color is white with a green leaf icon
+
+#### Scenario: Navbar is responsive on mobile
+
+- **GIVEN** the viewport is less than 992px wide
+- **WHEN** I tap the hamburger menu
+- **THEN** the navigation links expand in a dropdown
 
 ### Hero Section
-```
-Scenario: Hero displays a full-height slider with 3 slides
-  Given the page loads
-  Then I see a full-height hero section with a background image
-  And there is a dark overlay on the image
-  And I see a headline and subheadline
-  And there are two CTA buttons: "Learn more" and "Contact us"
-  And the "Learn more" button is blue (primary)
-  And the "Contact us" button is white
 
-Scenario: Hero slider cycles through 3 slides
-  Given the page loads
-  When I wait for the slider to auto-advance
-  Then the second slide appears with a different background image
-  And the headline and subheadline change
-```
+#### Scenario: Hero displays a full-height slider with 3 slides
+
+- **GIVEN** the page loads
+- **THEN** I see a full-height hero section with a background image
+- **AND** there is a dark overlay on the image
+- **AND** I see a headline and subheadline
+- **AND** there are two CTA buttons: "Learn more" and "Contact us"
+- **AND** the "Learn more" button is blue (primary)
+- **AND** the "Contact us" button is white
+
+#### Scenario: Hero slider cycles through 3 slides
+
+- **GIVEN** the page loads
+- **WHEN** I wait for the slider to auto-advance
+- **THEN** the second slide appears with a different background image
+- **AND** the headline and subheadline change
 
 ### Services Section
-```
-Scenario: Services section displays 3 service cards
-  Given I scroll to the Services section
-  Then I see 3 service cards in a row
-  And each card has an image, heading, description, and "Read more" button
-  And the headings are "Exercise Program", "Nutrition Plans", "Lifestyle Management"
-  And the "Read more" button has an outline style
-```
+
+#### Scenario: Services section displays 3 service cards
+
+- **GIVEN** I scroll to the Services section
+- **THEN** I see 3 service cards in a row
+- **AND** each card has an image, heading, description, and "Read more" button
+- **AND** the headings are "Exercise Program", "Nutrition Plans", "Lifestyle Management"
+- **AND** the "Read more" button has an outline style
 
 ### About Section
-```
-Scenario: About section has split layout with image and text
-  Given I scroll to the About section
-  Then I see an image on the left and text content on the right
-  And there is a "Welcome to WellPilot" subheading
-  And there are two descriptive paragraphs
-  And I see a founder card with photo, name, and position
-```
+
+#### Scenario: About section has split layout with image and text
+
+- **GIVEN** I scroll to the About section
+- **THEN** I see an image on the left and text content on the right
+- **AND** there is a "Welcome to WellPilot" subheading
+- **AND** there are two descriptive paragraphs
+- **AND** I see a founder card with photo, name, and position
 
 ### Free Consultation Section
-```
-Scenario: Consultation section has 3-column layout
-  Given I scroll to the Consultation section
-  Then I see a left card with "Healthcare Services" heading and "See Services" button
-  And a center form with fields: First Name, Last Name, Service dropdown, Date, Time, Message
-  And a right info panel
-  And the left card background is #1089ff
-  And the form panel background is #006fdc
 
-Scenario: Consultation form accepts user input
-  Given I scroll to the Consultation section
-  When I fill in the First Name field
-  And I fill in the Last Name field
-  And I select a service from the dropdown
-  And I pick a date
-  And I type a message
-  Then the form fields contain my input
-```
+#### Scenario: Consultation section has 3-column layout
+
+- **GIVEN** I scroll to the Consultation section
+- **THEN** I see a left card with "Healthcare Services" heading and "See Services" button
+- **AND** a center form with fields: First Name, Last Name, Service dropdown, Date, Time, Message
+- **AND** a right info panel
+- **AND** the left card background is #1089ff
+- **AND** the form panel background is #006fdc
+
+#### Scenario: Consultation form accepts user input
+
+- **GIVEN** I scroll to the Consultation section
+- **WHEN** I fill in the First Name field
+- **AND** I fill in the Last Name field
+- **AND** I select a service from the dropdown
+- **AND** I pick a date
+- **AND** I type a message
+- **THEN** the form fields contain my input
 
 ### Testimonials Section
-```
-Scenario: Testimonials carousel displays client quotes
-  Given I scroll to the Testimonials section
-  Then I see a heading "Happy Clients & Feedbacks"
-  And I see testimonial cards with user photo, quote icon, quote text, name, and position
-  And the section has a light gray background
-```
+
+#### Scenario: Testimonials carousel displays client quotes
+
+- **GIVEN** I scroll to the Testimonials section
+- **THEN** I see a heading "Happy Clients & Feedbacks"
+- **AND** I see testimonial cards with user photo, quote icon, quote text, name, and position
+- **AND** the section has a light gray background
 
 ### Counter Section
-```
-Scenario: Counter section displays statistics
-  Given I scroll to the Counter section
-  Then I see 4 statistic columns with numbers
-  And each column has a label below the number
-  And the section has a parallax background image
-```
+
+#### Scenario: Counter section displays statistics
+
+- **GIVEN** I scroll to the Counter section
+- **THEN** I see 4 statistic columns with numbers
+- **AND** each column has a label below the number
+- **AND** the section has a parallax background image
 
 ### Pricing Section
-```
-Scenario: Pricing section displays 3-4 pricing cards
-  Given I scroll to the Pricing section
-  Then I see pricing cards with plan name, excerpt, and price
-  And each card has a feature list with checkmark icons
-  And each card has a "Get Started" button
-  And the prices are $49, $79, $109
-```
+
+#### Scenario: Pricing section displays 3-4 pricing cards
+
+- **GIVEN** I scroll to the Pricing section
+- **THEN** I see pricing cards with plan name, excerpt, and price
+- **AND** each card has a feature list with checkmark icons
+- **AND** each card has a "Get Started" button
+- **AND** the prices are $49, $79, $109
 
 ### Blog Section
-```
-Scenario: Blog section displays 3 blog post cards
-  Given I scroll to the Blog section
-  Then I see 3 blog cards in a row
-  And each card has an image, date, author, comment count, and title
-  And the cards link to individual blog posts
-```
+
+#### Scenario: Blog section displays 3 blog post cards
+
+- **GIVEN** I scroll to the Blog section
+- **THEN** I see 3 blog cards in a row
+- **AND** each card has an image, date, author, comment count, and title
+- **AND** the cards link to individual blog posts
 
 ### Footer
-```
-Scenario: Footer displays newsletter form and links
-  Given I scroll to the footer
-  Then I see a newsletter subscribe form with email input and "Subscribe" button
-  And I see 5 columns: logo + description, Services, About, Resources, Social
-  And the footer background is dark (#131719)
-  And the logo accent color is green (#a3cb4c)
-  And there is a "Made with Component Dock" attribution link
-```
+
+#### Scenario: Footer displays newsletter form and links
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a newsletter subscribe form with email input and "Subscribe" button
+- **AND** I see 5 columns: logo + description, Services, About, Resources, Social
+- **AND** the footer background is dark (#131719)
+- **AND** the logo accent color is green (#a3cb4c)
+- **AND** there is a "Made with Component Dock" attribution link
 
 ## Verification Checklist
 

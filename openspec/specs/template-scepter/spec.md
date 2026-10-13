@@ -67,107 +67,91 @@ light gray background. The footer is warm beige with the logo, contact
 info, and two link columns. The copyright bar is also warm beige with
 social icons (Facebook, Twitter, LinkedIn, Instagram, Skype).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page loads with correct structure
+### Feature: Scepter template behaviour
 
-```gherkin
-Given the user visits the Scepter page
-Then the page title contains "Scepter"
-And a <header> element is visible
-And the header contains a logo link with text "Scepter"
-And a navigation menu with links is visible
-```
+#### Scenario: Page loads with correct structure
 
-### Scenario: Hero section with video CTA
+- **GIVEN** the user visits the Scepter page
+- **THEN** the page title contains "Scepter"
+- **AND** a <header> element is visible
+- **AND** the header contains a logo link with text "Scepter"
+- **AND** a navigation menu with links is visible
 
-```gherkin
-Given the user visits the Scepter page
-Then a hero cover section is visible at the top
-And the hero has a warm beige (#f5ecdb) background
-And a heading "Do What You Love" is visible
-And a subtitle paragraph is visible
-And a circular play button is visible
-And the play button links to a video (Fancybox)
-```
+#### Scenario: Hero section with video CTA
 
-### Scenario: Services section
+- **GIVEN** the user visits the Scepter page
+- **THEN** a hero cover section is visible at the top
+- **AND** the hero has a warm beige (#f5ecdb) background
+- **AND** a heading "Do What You Love" is visible
+- **AND** a subtitle paragraph is visible
+- **AND** a circular play button is visible
+- **AND** the play button links to a video (Fancybox)
 
-```gherkin
-Given the user scrolls to the services section
-Then three service cards are displayed in a row
-And each card has an icon, a title, and a description
-And the first card title is "Interface Design"
-And the second card title is "Product Design"
-And the third card title is "Quality Results"
-```
+#### Scenario: Services section
 
-### Scenario: Portfolio grid
+- **GIVEN** the user scrolls to the services section
+- **THEN** three service cards are displayed in a row
+- **AND** each card has an icon, a title, and a description
+- **AND** the first card title is "Interface Design"
+- **AND** the second card title is "Product Design"
+- **AND** the third card title is "Quality Results"
 
-```gherkin
-Given the user scrolls to the portfolio section
-Then a heading "Portfolio" is visible
-And a 3-column grid of 6 portfolio images is displayed
-And each image links to a portfolio detail page
-And images have hover effects
-```
+#### Scenario: Portfolio grid
 
-### Scenario: Testimonials section
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** a heading "Portfolio" is visible
+- **AND** a 3-column grid of 6 portfolio images is displayed
+- **AND** each image links to a portfolio detail page
+- **AND** images have hover effects
 
-```gherkin
-Given the user scrolls to the testimonials section
-Then a heading "Testimonials" is visible
-And four testimonial cards are displayed in a row
-And each card shows a customer name, role, circular avatar, and quote
-And the customer names are: Chad Hawkins, Ayisha Atherton,
-     Riccardo Gilliam, Jasleen Dunkley
-```
+#### Scenario: Testimonials section
 
-### Scenario: Blog carousel
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a heading "Testimonials" is visible
+- **AND** four testimonial cards are displayed in a row
+- **AND** each card shows a customer name, role, circular avatar, and quote
+- **AND** the customer names are: Chad Hawkins, Ayisha Atherton,
+Riccardo Gilliam, Jasleen Dunkley
 
-```gherkin
-Given the user scrolls to the blog section
-Then a heading "Blog Updates" is visible
-And a subtitle paragraph is visible
-And a horizontal carousel of blog article cards is displayed
-And each card shows an image, date, title, and author info
-And carousel navigation arrows are visible
-```
+#### Scenario: Blog carousel
 
-### Scenario: Client/Brand logos
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a heading "Blog Updates" is visible
+- **AND** a subtitle paragraph is visible
+- **AND** a horizontal carousel of blog article cards is displayed
+- **AND** each card shows an image, date, title, and author info
+- **AND** carousel navigation arrows are visible
 
-```gherkin
-Given the user scrolls to the client logos section
-Then a light gray (#f8f9fa) background section is visible
-And four client logo images are displayed in a row
-And the logos represent: Google, Invision, Nike, Microsoft
-```
+#### Scenario: Client/Brand logos
 
-### Scenario: Footer section
+- **GIVEN** the user scrolls to the client logos section
+- **THEN** a light gray (#f8f9fa) background section is visible
+- **AND** four client logo images are displayed in a row
+- **AND** the logos represent: Google, Invision, Nike, Microsoft
 
-```gherkin
-Given the user scrolls to the footer
-Then the footer has a warm beige (#f5ecdb) background
-And the "Scepter" logo is visible on the left
-And a description paragraph is visible on the left
-And contact info (email, phone) is visible on the right
-And navigation link columns are visible on the right
-And social media icons (Facebook, Twitter, LinkedIn, Instagram, Skype)
-     are visible in the copyright section
-And the copyright includes a "Component Dock" link
-```
+#### Scenario: Footer section
 
-### Scenario: Responsive layout
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a warm beige (#f5ecdb) background
+- **AND** the "Scepter" logo is visible on the left
+- **AND** a description paragraph is visible on the left
+- **AND** contact info (email, phone) is visible on the right
+- **AND** navigation link columns are visible on the right
+- **AND** social media icons (Facebook, Twitter, LinkedIn, Instagram, Skype)
+are visible in the copyright section
+- **AND** the copyright includes a "Component Dock" link
 
-```gherkin
-Given the user is on a mobile viewport (below 768px)
-Then the hero text stacks vertically
-And service cards stack vertically
-And portfolio grid adjusts to fewer columns
-And testimonial cards stack vertically
-And footer columns stack vertically
-And a mobile hamburger menu toggle is visible
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user is on a mobile viewport (below 768px)
+- **THEN** the hero text stacks vertically
+- **AND** service cards stack vertically
+- **AND** portfolio grid adjusts to fewer columns
+- **AND** testimonial cards stack vertically
+- **AND** footer columns stack vertically
+- **AND** a mobile hamburger menu toggle is visible
 
 ## Verification Checklist
 

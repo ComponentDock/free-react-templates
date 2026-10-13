@@ -58,111 +58,104 @@ Extracted from the live preview stylesheet (`css/style.css`) and screenshot anal
   Have a Questions? / newsletter form). Copyright bar at bottom with "Component Dock"
   link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Hero section
 
-```gherkin
-Scenario: Hero renders welcome headline and registration form
-  Given the user visits the Studium landing page
-  Then the hero section displays "We Are Online Platform For Make Learn" headline
-  And the hero has a background image with overlay
-  And a registration form is visible with fields: Full Name, Email Address, Password, Confirm Password
-  And the form has a "Register Now" heading in magenta
-  And two CTA buttons are present: "Our Course" (solid blue) and "Learn More" (outline)
-  And a "Sign In" link is visible below the form
+#### Scenario: Hero renders welcome headline and registration form
 
-Scenario: Hero form has proper input types
-  Given the hero registration form
-  Then the Email Address field uses type "email"
-  And the Password field uses type "password"
-  And the Confirm Password field uses type "password"
-```
+- **GIVEN** the user visits the Studium landing page
+- **THEN** the hero section displays "We Are Online Platform For Make Learn" headline
+- **AND** the hero has a background image with overlay
+- **AND** a registration form is visible with fields: Full Name, Email Address, Password, Confirm Password
+- **AND** the form has a "Register Now" heading in magenta
+- **AND** two CTA buttons are present: "Our Course" (solid blue) and "Learn More" (outline)
+- **AND** a "Sign In" link is visible below the form
+
+#### Scenario: Hero form has proper input types
+
+- **GIVEN** the hero registration form
+- **THEN** the Email Address field uses type "email"
+- **AND** the Password field uses type "password"
+- **AND** the Confirm Password field uses type "password"
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation links
-  Given the user visits the Studium page
-  Then the navbar shows the "Studium" brand name
-  And navigation links include: Home, About, Course, Instructor, Blog, Contact
-  And the navbar is dark-themed with transparent background
-```
+#### Scenario: Navbar displays brand and navigation links
+
+- **GIVEN** the user visits the Studium page
+- **THEN** the navbar shows the "Studium" brand name
+- **AND** navigation links include: Home, About, Course, Instructor, Blog, Contact
+- **AND** the navbar is dark-themed with transparent background
 
 ### Feature: Course categories
 
-```gherkin
-Scenario: Course categories display circular thumbnails
-  Given the user scrolls to the categories section
-  Then the section heading reads "Browse Online Course Category"
-  And six category circles are displayed: IT & Software, Music, Photography, Marketing, Health, Audio Video
-  And each circle shows "100+ courses" text
-  And a "See All Courses" button is centered below the categories
+#### Scenario: Course categories display circular thumbnails
 
-Scenario: Category circles are clickable
-  Given the categories section
-  Then each category circle is a clickable element
-```
+- **GIVEN** the user scrolls to the categories section
+- **THEN** the section heading reads "Browse Online Course Category"
+- **AND** six category circles are displayed: IT & Software, Music, Photography, Marketing, Health, Audio Video
+- **AND** each circle shows "100+ courses" text
+- **AND** a "See All Courses" button is centered below the categories
+
+#### Scenario: Category circles are clickable
+
+- **GIVEN** the categories section
+- **THEN** each category circle is a clickable element
 
 ### Feature: Course cards
 
-```gherkin
-Scenario: Course cards display course information
-  Given the user scrolls to the courses section
-  Then the section heading reads "Pick Your Course"
-  And multiple course cards are displayed in a grid
-  And each card has an image, title, and description
-  And a "See All Courses" button is available
-```
+#### Scenario: Course cards display course information
+
+- **GIVEN** the user scrolls to the courses section
+- **THEN** the section heading reads "Pick Your Course"
+- **AND** multiple course cards are displayed in a grid
+- **AND** each card has an image, title, and description
+- **AND** a "See All Courses" button is available
 
 ### Feature: Features / services
 
-```gherkin
-Scenario: Features section highlights platform benefits
-  Given the user scrolls to the features section
-  Then four feature items are displayed: Top Quality Content, Highly Skilled Instructor, World Class Quiz, Get Certified
-  And each feature has an icon, title, and description
-```
+#### Scenario: Features section highlights platform benefits
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** four feature items are displayed: Top Quality Content, Highly Skilled Instructor, World Class Quiz, Get Certified
+- **AND** each feature has an icon, title, and description
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials section shows student reviews
-  Given the user scrolls to the testimonials section
-  Then the section heading reads "What Are Students Says"
-  And testimonial cards display student quotes
-  And each card has an avatar and student name
-```
+#### Scenario: Testimonials section shows student reviews
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the section heading reads "What Are Students Says"
+- **AND** testimonial cards display student quotes
+- **AND** each card has an avatar and student name
 
 ### Feature: About section
 
-```gherkin
-Scenario: About section provides platform description
-  Given the user scrolls to the about section
-  Then the heading reads "We Are StudyLab An Online Learning Center"
-  And a description paragraph is present
-```
+#### Scenario: About section provides platform description
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading reads "We Are StudyLab An Online Learning Center"
+- **AND** a description paragraph is present
 
 ### Feature: Blog section
 
-```gherkin
-Scenario: Blog section displays recent posts
-  Given the user scrolls to the blog section
-  Then the heading reads "Recent Post"
-  And three blog post cards are displayed
-  And each card has an image, title, and "Read more" link
-```
+#### Scenario: Blog section displays recent posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading reads "Recent Post"
+- **AND** three blog post cards are displayed
+- **AND** each card has an image, title, and "Read more" link
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has multi-column layout with Component Dock link
-  Given the user scrolls to the footer
-  Then the footer has a dark background
-  And four columns are present: About, Help Desk, Recent Courses, Have a Questions?
-  And the footer links to https://www.componentdock.com/ as "Component Dock"
-  And a copyright notice is displayed
-```
+#### Scenario: Footer has multi-column layout with Component Dock link
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** four columns are present: About, Help Desk, Recent Courses, Have a Questions?
+- **AND** the footer links to https://www.componentdock.com/ as "Component Dock"
+- **AND** a copyright notice is displayed
 
 ## Verification checklist
 

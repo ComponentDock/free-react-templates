@@ -120,7 +120,7 @@ from `packages/ui` (cn at minimum).
   breakpoints at 576/768/992/1200px. Banner text uses table-cell vertical
   alignment for centering.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Culinaire — Restaurant Homepage
 
@@ -130,71 +130,80 @@ from `packages/ui` (cn at minimum).
   get in touch.
 
   Background:
-    Given the user opens the Culinaire homepage
+- **GIVEN** the user opens the Culinaire homepage
 
-  Scenario: Navbar displays on page load
-    Then a sticky navigation bar is visible at the top
-    And the navbar contains a logo on the left
-    And the navbar contains nav links: Home, About, Menu, Blog, Contact
-    And social media icons (Facebook, Instagram) appear on the right
-    And a mobile hamburger menu appears on small viewports
+#### Scenario: Navbar displays on page load
 
-  Scenario: Hero banner displays with call to action
-    Then a full-width hero banner is displayed with a background image
-    And the banner shows a subtitle text on the left side
-    And the banner shows a heading "Modern restaurant in center of the city"
-    And a primary CTA button "book a table" is visible in the banner
-    And the banner height is responsive (1080px desktop, 650px tablet/mobile)
+- **THEN** a sticky navigation bar is visible at the top
+- **AND** the navbar contains a logo on the left
+- **AND** the navbar contains nav links: Home, About, Menu, Blog, Contact
+- **AND** social media icons (Facebook, Instagram) appear on the right
+- **AND** a mobile hamburger menu appears on small viewports
 
-  Scenario: About section overlaps the hero banner
-    Then the about section appears below the hero with a negative top margin
-    And the about section has a white background
-    And the left column shows an "about us" subtitle in brand color (#d6ad86)
-    And the left column shows a heading "Delicious food provider since 1990"
-    And two descriptive paragraphs are displayed
-    And a "learn More" button is visible below the text
-    And the right column shows a food/restaurant image
+#### Scenario: Hero banner displays with call to action
 
-  Scenario: Food menu section displays six menu items
-    Then a section title shows "Popular Menu" subtitle and "Delicious Food Menu" heading
-    And six menu items are displayed in a 2-column grid
-    And each menu item shows a food image on the left
-    And each menu item shows a name, description, and price on the right
-    And all items display "From $40.00" as the price
+- **THEN** a full-width hero banner is displayed with a background image
+- **AND** the banner shows a subtitle text on the left side
+- **AND** the banner shows a heading "Modern restaurant in center of the city"
+- **AND** a primary CTA button "book a table" is visible in the banner
+- **AND** the banner height is responsive (1080px desktop, 650px tablet/mobile)
 
-  Scenario: Intro video section shows a play button
-    Then a dark background section with a background image is displayed
-    And a centered play button icon is visible
-    And clicking the play button opens a video popup/link
+#### Scenario: About section overlaps the hero banner
 
-  Scenario: Testimonials section displays review cards
-    Then a section title shows "Testimonials" subtitle and "What they said" heading
-    And a carousel displays multiple review cards
-    And each review card shows a quote, client image, client name, and 5-star rating
-    And the carousel auto-plays or can be navigated
+- **THEN** the about section appears below the hero with a negative top margin
+- **AND** the about section has a white background
+- **AND** the left column shows an "about us" subtitle in brand color (#d6ad86)
+- **AND** the left column shows a heading "Delicious food provider since 1990"
+- **AND** two descriptive paragraphs are displayed
+- **AND** a "learn More" button is visible below the text
+- **AND** the right column shows a food/restaurant image
 
-  Scenario: Contact section shows restaurant information
-    Then a background image section is displayed with a white overlay card
-    And the card heading reads "Contact Us"
-    And an address block shows location information
-    And an hours block shows "WE ARE OPEN" with operating hours
-    And a reservation block shows "RESERVATION" with booking info
+#### Scenario: Food menu section displays six menu items
 
-  Scenario: Footer displays with newsletter signup
-    Then a dark footer (background #1c1a18) is displayed
-    And the footer has 3 columns on desktop
-    And column 1 shows the logo, phone number, email, and social icons
-    And column 2 shows "Quick links" with navigation items
-    And column 3 shows "Subscribe newsletter" with an email input and send button
-    And a copyright bar at the bottom links to Component Dock
+- **THEN** a section title shows "Popular Menu" subtitle and "Delicious Food Menu" heading
+- **AND** six menu items are displayed in a 2-column grid
+- **AND** each menu item shows a food image on the left
+- **AND** each menu item shows a name, description, and price on the right
+- **AND** all items display "From $40.00" as the price
 
-  Scenario: Responsive layout adapts to mobile
-    Then the navbar collapses into a hamburger menu below 992px
-    And the hero banner text is centered on mobile
-    And the about section stacks to single column on mobile
-    And the food menu items stack to single column on mobile
-    And the footer columns stack vertically on mobile
-    And button sizes reduce on mobile (14px 28px padding)
+#### Scenario: Intro video section shows a play button
+
+- **THEN** a dark background section with a background image is displayed
+- **AND** a centered play button icon is visible
+- **AND** clicking the play button opens a video popup/link
+
+#### Scenario: Testimonials section displays review cards
+
+- **THEN** a section title shows "Testimonials" subtitle and "What they said" heading
+- **AND** a carousel displays multiple review cards
+- **AND** each review card shows a quote, client image, client name, and 5-star rating
+- **AND** the carousel auto-plays or can be navigated
+
+#### Scenario: Contact section shows restaurant information
+
+- **THEN** a background image section is displayed with a white overlay card
+- **AND** the card heading reads "Contact Us"
+- **AND** an address block shows location information
+- **AND** an hours block shows "WE ARE OPEN" with operating hours
+- **AND** a reservation block shows "RESERVATION" with booking info
+
+#### Scenario: Footer displays with newsletter signup
+
+- **THEN** a dark footer (background #1c1a18) is displayed
+- **AND** the footer has 3 columns on desktop
+- **AND** column 1 shows the logo, phone number, email, and social icons
+- **AND** column 2 shows "Quick links" with navigation items
+- **AND** column 3 shows "Subscribe newsletter" with an email input and send button
+- **AND** a copyright bar at the bottom links to Component Dock
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **THEN** the navbar collapses into a hamburger menu below 992px
+- **AND** the hero banner text is centered on mobile
+- **AND** the about section stacks to single column on mobile
+- **AND** the food menu items stack to single column on mobile
+- **AND** the footer columns stack vertically on mobile
+- **AND** button sizes reduce on mobile (14px 28px padding)
 
 ## Verification checklist
 

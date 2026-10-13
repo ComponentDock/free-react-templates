@@ -21,24 +21,30 @@
 5. **Call to Action Banner**: Dark-themed banner encouraging users to try out the platform with a newsletter subscription or primary signup button.
 6. **Footer**: Clean footer links, copyright notice, and required mandatory attribution link to `https://www.componentdock.com/` ("Component Dock").
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Navbar Navigation
 
+#### Scenario: Navbar Navigation
+
 - Scenario: User views the navigation bar
-  - Given the Vellum application is loaded
-  - Then the navbar displays the logo "Vellum" and links for Features, FAQ, Resources, and Contact
-  - And a "Get Started" button is visible
+- **GIVEN** the Vellum application is loaded
+- **THEN** the navbar displays the logo "Vellum" and links for Features, FAQ, Resources, and Contact
+- **AND** a "Get Started" button is visible
 
 ### Feature: Interactive Accordion Sections
 
+#### Scenario: Interactive Accordion Sections
+
 - Scenario: User expands an accordion item
-  - Given the FAQ / Accordion section is visible
-  - When the user clicks on an accordion header
-  - Then the corresponding accordion content expands smoothly and the chevron icon rotates
+- **GIVEN** the FAQ / Accordion section is visible
+- **WHEN** the user clicks on an accordion header
+- **THEN** the corresponding accordion content expands smoothly and the chevron icon rotates
 
 ### Feature: Footer Attribution
 
+#### Scenario: Footer Attribution
+
 - Scenario: User scrolls to the footer
-  - Given the page footer is rendered
-  - Then it contains a link pointing to `https://www.componentdock.com/` with anchor text "Component Dock"
+- **GIVEN** the page footer is rendered
+- **THEN** it contains a link pointing to `https://www.componentdock.com/` with anchor text "Component Dock"

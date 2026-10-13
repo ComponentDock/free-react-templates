@@ -35,9 +35,11 @@ TypeScript.
 9. **Contact** — "Need any help?" section with phone/email/address info, "Drop Your Message" border button
 10. **Footer** — three columns: logo + description + social links, Quick Links, Company; bottom bar with Component Dock link
 
-## Scenarios (Gherkin)
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
 
 - **Sticky header:** Navbar sticks to top on scroll
 - **Nav links:** Home, About, Services, Blog, Contact are visible
@@ -45,11 +47,15 @@ TypeScript.
 
 ### Hero
 
+#### Scenario: Hero
+
 - **Heading:** "Agricultural solution" heading is visible
 - **Description:** Description text is visible
 - **CTA:** "Explore Our Services" button is visible and clickable
 
 ### About
+
+#### Scenario: About
 
 - **Image:** About section image is visible
 - **Heading:** "20+ years agricultural cooperative" heading is visible
@@ -57,16 +63,22 @@ TypeScript.
 
 ### Services
 
+#### Scenario: Services
+
 - **Cards:** Two service cards are rendered
 - **Content:** Each card has a number, title, description, and button
 - **CTA:** "Get the Service" buttons are visible
 
 ### Stats
 
+#### Scenario: Stats
+
 - **Counters:** Four stat items are displayed
 - **Values:** Stats show values with suffixes (+, K)
 
 ### Why Choose Us
+
+#### Scenario: Why Choose Us
 
 - **Features:** Three feature items with checkmark icons are visible
 - **Image:** Right-side image with floating badges is visible
@@ -74,9 +86,13 @@ TypeScript.
 
 ### Video
 
+#### Scenario: Video
+
 - **Play button:** Video play button is visible and clickable
 
 ### Tips
+
+#### Scenario: Tips
 
 - **Posts:** Two blog posts are displayed
 - **Content:** Each post has image, title, description, and "Read More" link
@@ -84,16 +100,22 @@ TypeScript.
 
 ### Contact
 
+#### Scenario: Contact
+
 - **Info:** Phone, email, and address are displayed
 - **CTA:** "Drop Your Message" border button is visible
 
 ### Footer
+
+#### Scenario: Footer
 
 - **Logo:** Footer logo is visible
 - **Columns:** Quick Links and Company columns are visible
 - **Copyright:** Footer copyright with Component Dock link is visible
 
 ### Accessibility
+
+#### Scenario: Accessibility
 
 - **Semantic HTML:** Uses `<header>`, `<main>`, `<footer>`, `<nav>`, `<section>`
 - **ARIA:** Interactive elements have appropriate labels

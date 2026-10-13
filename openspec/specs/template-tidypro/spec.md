@@ -132,103 +132,93 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
     - Contact: address, phone, email
     - Copyright line + "Made with Component Dock" link
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation
-  Given the user is on the TidyPro homepage
-  Then the navbar shows the brand "TidyPro"
-  And the nav contains links: Home, About, Services, Portfolio, Pricing, Blog, Contact
-```
+#### Scenario: Navbar displays brand and navigation
+
+- **GIVEN** the user is on the TidyPro homepage
+- **THEN** the navbar shows the brand "TidyPro"
+- **AND** the nav contains links: Home, About, Services, Portfolio, Pricing, Blog, Contact
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero displays heading and CTA
-  Given the user is on the TidyPro homepage
-  Then the hero shows "Let us do the dirty work, so you don't have to."
-  And a "Learn more" blue CTA button is visible
-  And a dark overlay covers the background image
-```
+#### Scenario: Hero displays heading and CTA
+
+- **GIVEN** the user is on the TidyPro homepage
+- **THEN** the hero shows "Let us do the dirty work, so you don't have to."
+- **AND** a "Learn more" blue CTA button is visible
+- **AND** a dark overlay covers the background image
 
 ### Appointment Form
 
-```gherkin
-Scenario: Appointment form accepts service details
-  Given the user scrolls to the appointment section
-  Then a form with Name, Phone, Service dropdown, Cleaner dropdown, Date, Time fields is shown
-  And a "Request A Quote" submit button is present
-```
+#### Scenario: Appointment form accepts service details
+
+- **GIVEN** the user scrolls to the appointment section
+- **THEN** a form with Name, Phone, Service dropdown, Cleaner dropdown, Date, Time fields is shown
+- **AND** a "Request A Quote" submit button is present
 
 ### Business Hours
 
-```gherkin
-Scenario: Business hours display opening times
-  Given the user scrolls to the "Business Hours" section
-  Then opening days are shown: Monday-Friday 9am-8pm, Saturday 9am-5pm
-  And vacation days are listed
-  And an emergency phone number is displayed
-```
+#### Scenario: Business hours display opening times
+
+- **GIVEN** the user scrolls to the "Business Hours" section
+- **THEN** opening days are shown: Monday-Friday 9am-8pm, Saturday 9am-5pm
+- **AND** vacation days are listed
+- **AND** an emergency phone number is displayed
 
 ### Services
 
-```gherkin
-Scenario: Services section shows 5 service cards
-  Given the user scrolls to the "How We Works" section
-  Then 5 service cards are displayed
-  And the services are: Office Cleaning, Pool Cleaning, Carpet Cleaning, Kitchen Cleaning, Garden Cleaning
-```
+#### Scenario: Services section shows 5 service cards
+
+- **GIVEN** the user scrolls to the "How We Works" section
+- **THEN** 5 service cards are displayed
+- **AND** the services are: Office Cleaning, Pool Cleaning, Carpet Cleaning, Kitchen Cleaning, Garden Cleaning
 
 ### Team
 
-```gherkin
-Scenario: Team section shows member cards
-  Given the user scrolls to the "Our Team" section
-  Then 3 team member cards are displayed
-  And each card shows a photo, name, and position
-```
+#### Scenario: Team section shows member cards
+
+- **GIVEN** the user scrolls to the "Our Team" section
+- **THEN** 3 team member cards are displayed
+- **AND** each card shows a photo, name, and position
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel displays reviews
-  Given the user scrolls to the "Happy Customer" section
-  Then a carousel of testimonial cards is visible
-  And each card shows a user photo, name, location, and quote
-  And the section has a dark background
-```
+#### Scenario: Testimonials carousel displays reviews
+
+- **GIVEN** the user scrolls to the "Happy Customer" section
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card shows a user photo, name, location, and quote
+- **AND** the section has a dark background
 
 ### Portfolio
 
-```gherkin
-Scenario: Portfolio shows project grid
-  Given the user scrolls to the portfolio section
-  Then 4 project items are displayed in a grid
-  And each item shows a background image and title
-  And hovering shows an expand icon
-```
+#### Scenario: Portfolio shows project grid
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** 4 project items are displayed in a grid
+- **AND** each item shows a background image and title
+- **AND** hovering shows an expand icon
 
 ### Pricing
 
-```gherkin
-Scenario: Pricing shows 3 plans
-  Given the user scrolls to the "Choose Your Perfect Plans" section
-  Then 3 pricing cards are shown: Starter ($49), Standard ($79), Premium ($109)
-  And each card has a feature list and "Get Started" button
-  And the Standard plan is highlighted
-```
+#### Scenario: Pricing shows 3 plans
+
+- **GIVEN** the user scrolls to the "Choose Your Perfect Plans" section
+- **THEN** 3 pricing cards are shown: Starter ($49), Standard ($79), Premium ($109)
+- **AND** each card has a feature list and "Get Started" button
+- **AND** the Standard plan is highlighted
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays columns and contact
-  Given the user scrolls to the footer
-  Then 4 columns are shown: About, Latest News, Quick Links, Contact
-  And social media icons are in the About column
-  And a "Made with Component Dock" link is present
-```
+#### Scenario: Footer displays columns and contact
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are shown: About, Latest News, Quick Links, Contact
+- **AND** social media icons are in the About column
+- **AND** a "Made with Component Dock" link is present
 
 ## Verification Checklist
 

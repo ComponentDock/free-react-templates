@@ -88,86 +88,99 @@ carousel, and a dark photo-overlay footer.
 | Form card    | White bg, `box-shadow: 0 20px 50px rgba(0,0,0,0.1)` | `.contact-form-section`, padding 70px 50px |
 | Sidebar width| 150px                            | `.fixed-menu` width; collapses off-screen on mobile (≤570px)                 |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Grillhouse — Restaurant Website Template
 
-  Scenario: Page loads with sidebar navigation and all sections
-    Given the user visits the Grillhouse homepage
-    Then a fixed right sidebar is visible with logo and navigation links
-    And sections are rendered in order: hero/banner-bottom, breakfast, lunch, reservation, chef, food gallery, brands, footer
+#### Scenario: Page loads with sidebar navigation and all sections
 
-  Scenario: Sidebar navigation shows all links with icons
-    Given the user views the sidebar navigation
-    Then links are displayed: Home, About, Menu, Book Table, Chefs, Pages (dropdown), Blog (dropdown), Contact
-    And each link has a small icon image prefix
-    And the active link has a red background with white text
+- **GIVEN** the user visits the Grillhouse homepage
+- **THEN** a fixed right sidebar is visible with logo and navigation links
+- **AND** sections are rendered in order: hero/banner-bottom, breakfast, lunch, reservation, chef, food gallery, brands, footer
 
-  Scenario: Sidebar collapses on mobile
-    Given the user views the page at 570px width
-    Then the sidebar is hidden off-screen to the right
-    And a hamburger menu trigger (three bars) is visible
-    And clicking the trigger reveals the sidebar
+#### Scenario: Sidebar navigation shows all links with icons
 
-  Scenario: Hero banner shows fullscreen background with overlay
-    Given the user views the hero section
-    Then a fullscreen background image is displayed with a dark overlay
-    And the hero has a video popup area below with play icon and "Watch video" text
+- **GIVEN** the user views the sidebar navigation
+- **THEN** links are displayed: Home, About, Menu, Book Table, Chefs, Pages (dropdown), Blog (dropdown), Contact
+- **AND** each link has a small icon image prefix
+- **AND** the active link has a red background with white text
 
-  Scenario: Banner-bottom shows heading and call-to-action
-    Given the user views the banner-bottom section
-    Then a white content box is displayed on the right
-    And the heading reads "Steak Shop offers best steak in town"
-    And an "Explore Menu" button is visible
+#### Scenario: Sidebar collapses on mobile
 
-  Scenario: Breakfast section has text and overlapping food images
-    Given the user views the breakfast section
-    Then a text block with heading "Daily Food Courses with Drinks" is on the left
-    And two overlapping food images are on the right
-    And a "See Full Menu" primary button is below the text
+- **GIVEN** the user views the page at 570px width
+- **THEN** the sidebar is hidden off-screen to the right
+- **AND** a hamburger menu trigger (three bars) is visible
+- **AND** clicking the trigger reveals the sidebar
 
-  Scenario: Lunch section has reversed layout with chef attribution
-    Given the user views the lunch section
-    Then overlapping food images are on the left
-    And text with heading and chef attribution (avatar + name + title) is on the right
+#### Scenario: Hero banner shows fullscreen background with overlay
 
-  Scenario: Reservation form has all required fields
-    Given the user views the reservation section
-    Then a white card form is displayed over a background photo
-    And fields include: Name, Email, Phone Number, Number of People, Date & Time, Select Event
-    And a "Make Reservation" button is visible below the form
+- **GIVEN** the user views the hero section
+- **THEN** a fullscreen background image is displayed with a dark overlay
+- **AND** the hero has a video popup area below with play icon and "Watch video" text
 
-  Scenario: Chef section shows portrait, text, and item thumbnails
-    Given the user views the chef section
-    Then a chef portrait image is displayed on the left
-    And heading text with signature image is on the right
-    And four chef item thumbnails overlap the portrait from below
+#### Scenario: Banner-bottom shows heading and call-to-action
 
-  Scenario: Food gallery shows carousel of images
-    Given the user views the food gallery section
-    Then a carousel of food images is displayed
-    And images scroll automatically
+- **GIVEN** the user views the banner-bottom section
+- **THEN** a white content box is displayed on the right
+- **AND** the heading reads "Steak Shop offers best steak in town"
+- **AND** an "Explore Menu" button is visible
 
-  Scenario: Brands section shows partner logos
-    Given the user views the brands section
-    Then a heading "In associasion with" is displayed
-    And a carousel of brand logos is shown at low opacity
-    And logos increase opacity on hover
+#### Scenario: Breakfast section has text and overlapping food images
 
-  Scenario: Footer has five columns and newsletter on dark overlay
-    Given the user views the footer
-    Then a dark photo background with overlay is displayed
-    And five columns are shown: Top Products, Quick Links, Features, Resources, Newsletter
-    And the Newsletter column has an email input with submit button
-    And social icons are displayed in the footer bottom
-    And the footer bottom links to https://www.componentdock.com/
+- **GIVEN** the user views the breakfast section
+- **THEN** a text block with heading "Daily Food Courses with Drinks" is on the left
+- **AND** two overlapping food images are on the right
+- **AND** a "See Full Menu" primary button is below the text
 
-  Scenario: Responsive behavior at mobile widths
-    Given the user views the page at 767px width
-    Then the sidebar collapses off-screen with hamburger trigger
-    And the hero banner background image is hidden
-    And the chef items row is hidden
-    And footer columns stack vertically
+#### Scenario: Lunch section has reversed layout with chef attribution
+
+- **GIVEN** the user views the lunch section
+- **THEN** overlapping food images are on the left
+- **AND** text with heading and chef attribution (avatar + name + title) is on the right
+
+#### Scenario: Reservation form has all required fields
+
+- **GIVEN** the user views the reservation section
+- **THEN** a white card form is displayed over a background photo
+- **AND** fields include: Name, Email, Phone Number, Number of People, Date & Time, Select Event
+- **AND** a "Make Reservation" button is visible below the form
+
+#### Scenario: Chef section shows portrait, text, and item thumbnails
+
+- **GIVEN** the user views the chef section
+- **THEN** a chef portrait image is displayed on the left
+- **AND** heading text with signature image is on the right
+- **AND** four chef item thumbnails overlap the portrait from below
+
+#### Scenario: Food gallery shows carousel of images
+
+- **GIVEN** the user views the food gallery section
+- **THEN** a carousel of food images is displayed
+- **AND** images scroll automatically
+
+#### Scenario: Brands section shows partner logos
+
+- **GIVEN** the user views the brands section
+- **THEN** a heading "In associasion with" is displayed
+- **AND** a carousel of brand logos is shown at low opacity
+- **AND** logos increase opacity on hover
+
+#### Scenario: Footer has five columns and newsletter on dark overlay
+
+- **GIVEN** the user views the footer
+- **THEN** a dark photo background with overlay is displayed
+- **AND** five columns are shown: Top Products, Quick Links, Features, Resources, Newsletter
+- **AND** the Newsletter column has an email input with submit button
+- **AND** social icons are displayed in the footer bottom
+- **AND** the footer bottom links to https://www.componentdock.com/
+
+#### Scenario: Responsive behavior at mobile widths
+
+- **GIVEN** the user views the page at 767px width
+- **THEN** the sidebar collapses off-screen with hamburger trigger
+- **AND** the hero banner background image is hidden
+- **AND** the chef items row is hidden
+- **AND** footer columns stack vertically
 
 ## Verification checklist
 

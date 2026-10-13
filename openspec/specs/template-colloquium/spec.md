@@ -103,47 +103,53 @@ CTA registration form, and a multi-column footer.
 - Multi-column: brand + about, Explore links, Info links, Get Your Seat CTA, Contact info
 - Copyright bar with Component Dock link
 
-## Test Scenarios (Gherkin)
+## Requirements
 
-```gherkin
+### Feature: Colloquium template behaviour
+
 Feature: Colloquium template renders all sections
 
-  Scenario: Page renders all major sections
-    Given I render the Colloquium App
-    Then I see a navigation bar with "Colloquium" brand
-    And I see a hero section with "Biggest Developer Conference" heading
-    And I see a countdown timer with days, hours, minutes, seconds
-    And I see an about section with "Welcome to Colloquium" subtitle
-    And I see stats counters for Places, Events, Photos, Speakers
-    And I see a schedule section with 4 day tabs
-    And I see a speakers section with speaker cards
-    And I see a gallery section
-    And I see a testimonials section
-    And I see a pricing section with 3 plans
-    And I see a blog section
-    And I see a CTA form section
-    And I see a footer with Component Dock link
+#### Scenario: Page renders all major sections
 
-  Scenario: Countdown timer displays time units
-    Given I render the Colloquium App
-    Then I see countdown units for days, hours, minutes, and seconds
+- **GIVEN** I render the Colloquium App
+- **THEN** I see a navigation bar with "Colloquium" brand
+- **AND** I see a hero section with "Biggest Developer Conference" heading
+- **AND** I see a countdown timer with days, hours, minutes, seconds
+- **AND** I see an about section with "Welcome to Colloquium" subtitle
+- **AND** I see stats counters for Places, Events, Photos, Speakers
+- **AND** I see a schedule section with 4 day tabs
+- **AND** I see a speakers section with speaker cards
+- **AND** I see a gallery section
+- **AND** I see a testimonials section
+- **AND** I see a pricing section with 3 plans
+- **AND** I see a blog section
+- **AND** I see a CTA form section
+- **AND** I see a footer with Component Dock link
 
-  Scenario: Schedule tabs switch content
-    Given I render the Colloquium App
-    When I click the "Day 02" tab
-    Then I see sessions for Day 02
+#### Scenario: Countdown timer displays time units
 
-  Scenario: Pricing cards show correct plans
-    Given I render the Colloquium App
-    Then I see "Basic" plan at "$29"
-    And I see "Standard" plan at "$49"
-    And I see "Premium" plan at "$79"
+- **GIVEN** I render the Colloquium App
+- **THEN** I see countdown units for days, hours, minutes, and seconds
 
-  Scenario: Footer links to Component Dock
-    Given I render the Colloquium App
-    Then the footer contains a link to "https://www.componentdock.com/"
+#### Scenario: Schedule tabs switch content
 
-  Scenario: Navbar has correct navigation links
-    Given I render the Colloquium App
-    Then I see navigation links for "Home", "About", "Pricing", "Schedule", "Speakers", "Blog", "Contact"
-```
+- **GIVEN** I render the Colloquium App
+- **WHEN** I click the "Day 02" tab
+- **THEN** I see sessions for Day 02
+
+#### Scenario: Pricing cards show correct plans
+
+- **GIVEN** I render the Colloquium App
+- **THEN** I see "Basic" plan at "$29"
+- **AND** I see "Standard" plan at "$49"
+- **AND** I see "Premium" plan at "$79"
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I render the Colloquium App
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+
+#### Scenario: Navbar has correct navigation links
+
+- **GIVEN** I render the Colloquium App
+- **THEN** I see navigation links for "Home", "About", "Pricing", "Schedule", "Speakers", "Blog", "Contact"

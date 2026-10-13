@@ -26,11 +26,12 @@
 | Active step color | Brand blue or green | Series convention |
 | Completed step indicator | Checkmark icon | Series convention |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-Step Account and Payment Wizard
 
 #### Scenario: Step 1 — Account Setup
+
 - **GIVEN** the user loads the FormPilot wizard
 - **WHEN** Step 1 is displayed
 - **THEN** the heading "Account Setup" (or equivalent) is visible
@@ -38,22 +39,26 @@
 - **AND** the progress indicator shows Step 1 as active
 
 #### Scenario: Step 1 — Form Validation
+
 - **GIVEN** the user is on Step 1
 - **WHEN** the user clicks "Next" without filling required fields
 - **THEN** inline validation errors appear for email, password, and confirm password
 - **AND** the form does not advance
 
 #### Scenario: Step 1 — Email Format Validation
+
 - **GIVEN** the user is on Step 1
 - **WHEN** the user enters an invalid email format and clicks "Next"
 - **THEN** an email format validation error is displayed
 
 #### Scenario: Step 1 — Password Mismatch
+
 - **GIVEN** the user is on Step 1
 - **WHEN** the user enters different values in password and confirm password
 - **THEN** a "passwords do not match" error is displayed
 
 #### Scenario: Step 2 — Payment Details
+
 - **GIVEN** the user has completed Step 1 with valid data
 - **WHEN** Step 2 is displayed
 - **THEN** the heading "Payment Details" (or equivalent) is visible
@@ -61,40 +66,47 @@
 - **AND** the progress indicator shows Step 1 as completed (checkmark) and Step 2 as active
 
 #### Scenario: Step 2 — Form Validation
+
 - **GIVEN** the user is on Step 2
 - **WHEN** the user clicks "Next" with empty payment fields
 - **THEN** validation errors are shown for card holder name, card number, CVC, and expiration date
 - **AND** the form does not advance
 
 #### Scenario: Step 3 — Confirmation / Review
+
 - **GIVEN** the user has completed Steps 1 and 2 with valid data
 - **WHEN** Step 3 is displayed
 - **THEN** a confirmation/review screen is shown summarizing the entered information
 - **AND** the progress indicator shows Steps 1 and 2 as completed and Step 3 as active
 
 #### Scenario: Step 3 — Agreement or Final Confirmation
+
 - **GIVEN** the user is on Step 3
 - **WHEN** the user clicks "Submit" or "Confirm"
 - **THEN** the wizard completes and a success screen is displayed
 
 #### Scenario: Success Screen
+
 - **GIVEN** the user has submitted the wizard successfully
 - **WHEN** the success screen is shown
 - **THEN** a completion message is displayed (e.g. "Registration Complete")
 - **AND** a "Start Over" button resets the wizard to Step 1
 
 #### Scenario: Navigation — Back Button
+
 - **GIVEN** the user is on Step 2 or Step 3
 - **WHEN** the user clicks "Back"
 - **THEN** the wizard returns to the previous step
 - **AND** previously entered data is preserved
 
 #### Scenario: Navigation — Back Button Hidden on First Step
+
 - **GIVEN** the user is on Step 1
 - **WHEN** the page renders
 - **THEN** the Back button is not visible
 
 #### Scenario: Step Indicator Progress
+
 - **GIVEN** the wizard form is loaded
 - **WHEN** the user advances through steps
 - **THEN** a vertical sidebar step indicator is displayed on the left
@@ -103,15 +115,18 @@
 - **AND** completed steps show a checkmark
 
 #### Scenario: Responsive Layout
+
 - **GIVEN** the form is displayed on a mobile viewport
 - **WHEN** the page renders
 - **THEN** the layout adjusts to single-column (stacked)
 - **AND** all form fields remain accessible and usable
 
 ### Requirement: Footer with Component Dock branding
+
 Every template's footer SHALL link to https://www.componentdock.com/.
 
 #### Scenario: Footer contains Component Dock link
+
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 

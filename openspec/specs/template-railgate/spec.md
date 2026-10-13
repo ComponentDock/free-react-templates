@@ -102,123 +102,123 @@ https://colorlib.com/etc/bootstrap-sidebar/sidebar-09/
 | `--body-line-height`         | `1.8`                          | Line height for paragraphs                             |
 | `--heading-font-weight`      | `400`                          | Headings use regular weight, not bold                  |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Sidebar Navigation
 
 #### Scenario: Page renders with sidebar visible
 
-Given the user loads the page on a desktop viewport (>= 992px)
-When the page renders
-Then the sidebar is visible on the left side
-And the sidebar width is approximately 300px
-And the sidebar background is dark charcoal (#32373d)
-And the main content area is visible on the right
-And the main content background is white
+- **GIVEN** the user loads the page on a desktop viewport (>= 992px)
+- **WHEN** the page renders
+- **THEN** the sidebar is visible on the left side
+- **AND** the sidebar width is approximately 300px
+- **AND** the sidebar background is dark charcoal (#32373d)
+- **AND** the main content area is visible on the right
+- **AND** the main content background is white
 
 #### Scenario: Profile section displays correctly
 
-Given the sidebar is visible
-When the user looks at the top of the sidebar
-Then a profile banner with a background image is displayed
-And a dark overlay (30% opacity) covers the background image
-And a circular avatar image (100×100px) is centered
-And the profile name "Catriona Henderson" appears below the avatar in white
+- **GIVEN** the sidebar is visible
+- **WHEN** the user looks at the top of the sidebar
+- **THEN** a profile banner with a background image is displayed
+- **AND** a dark overlay (30% opacity) covers the background image
+- **AND** a circular avatar image (100×100px) is centered
+- **AND** the profile name "Catriona Henderson" appears below the avatar in white
 
 #### Scenario: Navigation items are rendered
 
-Given the sidebar is visible
-When the user looks at the navigation list
-Then 7 navigation items are displayed vertically
-And each item has an icon (lucide-react) and a text label
-And the items are: Home, Download, Gift Code, Top Review, Settings, Support, Sign Out
-And each item has a subtle bottom border (rgba white 5% opacity)
-And the text color is semi-transparent white (rgba white 60%)
+- **GIVEN** the sidebar is visible
+- **WHEN** the user looks at the navigation list
+- **THEN** 7 navigation items are displayed vertically
+- **AND** each item has an icon (lucide-react) and a text label
+- **AND** the items are: Home, Download, Gift Code, Top Review, Settings, Support, Sign Out
+- **AND** each item has a subtle bottom border (rgba white 5% opacity)
+- **AND** the text color is semi-transparent white (rgba white 60%)
 
 #### Scenario: Navigation item hover state
 
-Given the sidebar is visible
-When the user hovers over a navigation item
-Then the item background becomes blue (#2f89fc)
-And the item text becomes full white
-And the bottom border becomes blue (#2f89fc)
+- **GIVEN** the sidebar is visible
+- **WHEN** the user hovers over a navigation item
+- **THEN** the item background becomes blue (#2f89fc)
+- **AND** the item text becomes full white
+- **AND** the bottom border becomes blue (#2f89fc)
 
 #### Scenario: Active navigation item styling
 
-Given the sidebar is visible
-When the Home item is the active item
-Then the Home item text is full white
-And the Home item background is transparent (not blue)
-And hovering the active item still shows the blue background
+- **GIVEN** the sidebar is visible
+- **WHEN** the Home item is the active item
+- **THEN** the Home item text is full white
+- **AND** the Home item background is transparent (not blue)
+- **AND** hovering the active item still shows the blue background
 
 #### Scenario: Download notification badge
 
-Given the sidebar is visible
-When the user looks at the Download nav item
-Then a red circular badge with the number "5" is displayed next to the icon
+- **GIVEN** the sidebar is visible
+- **WHEN** the user looks at the Download nav item
+- **THEN** a red circular badge with the number "5" is displayed next to the icon
 
 #### Scenario: Sidebar toggle button visible
 
-Given the sidebar is visible on desktop
-When the user looks at the toggle button area
-Then a 30×30px blue square button is positioned at the top-right of the sidebar
-And the button extends slightly outside the sidebar (right side)
-And the button displays a white right-arrow icon
+- **GIVEN** the sidebar is visible on desktop
+- **WHEN** the user looks at the toggle button area
+- **THEN** a 30×30px blue square button is positioned at the top-right of the sidebar
+- **AND** the button extends slightly outside the sidebar (right side)
+- **AND** the button displays a white right-arrow icon
 
 #### Scenario: Sidebar collapses when toggle is clicked
 
-Given the sidebar is visible and expanded
-When the user clicks the toggle button
-Then the sidebar collapses (slides left, off-screen) with a 0.3s transition
-And the toggle button icon changes to a left-arrow
-And the main content area expands to fill the full width
+- **GIVEN** the sidebar is visible and expanded
+- **WHEN** the user clicks the toggle button
+- **THEN** the sidebar collapses (slides left, off-screen) with a 0.3s transition
+- **AND** the toggle button icon changes to a left-arrow
+- **AND** the main content area expands to fill the full width
 
 #### Scenario: Sidebar expands when toggle is clicked again
 
-Given the sidebar is collapsed
-When the user clicks the toggle button
-Then the sidebar expands back to 300px width with a 0.3s transition
-And the toggle button icon changes back to a right-arrow
+- **GIVEN** the sidebar is collapsed
+- **WHEN** the user clicks the toggle button
+- **THEN** the sidebar expands back to 300px width with a 0.3s transition
+- **AND** the toggle button icon changes back to a right-arrow
 
 #### Scenario: Mobile responsive layout
 
-Given the user loads the page on a mobile viewport (< 992px)
-When the page renders
-Then the sidebar is hidden off-screen (collapsed by default)
-And the toggle button is positioned at top:10px, right:-60px
-And the main content fills the full viewport width
+- **GIVEN** the user loads the page on a mobile viewport (< 992px)
+- **WHEN** the page renders
+- **THEN** the sidebar is hidden off-screen (collapsed by default)
+- **AND** the toggle button is positioned at top:10px, right:-60px
+- **AND** the main content fills the full viewport width
 
 #### Scenario: Mobile sidebar toggle
 
-Given the user is on mobile and the sidebar is hidden
-When the user clicks the toggle button
-Then the sidebar slides in from the left to full 300px width
-And the main content is pushed to the right or overlaid
+- **GIVEN** the user is on mobile and the sidebar is hidden
+- **WHEN** the user clicks the toggle button
+- **THEN** the sidebar slides in from the left to full 300px width
+- **AND** the main content is pushed to the right or overlaid
 
 #### Scenario: Content section displays correctly
 
-Given the page has loaded
-When the user looks at the main content area
-Then a heading "Sidebar #09" (replaced with template name) is displayed
-And two paragraphs of body text are shown below the heading
-And the content has generous padding (1.5rem mobile, 3rem desktop)
+- **GIVEN** the page has loaded
+- **WHEN** the user looks at the main content area
+- **THEN** a heading "Sidebar #09" (replaced with template name) is displayed
+- **AND** two paragraphs of body text are shown below the heading
+- **AND** the content has generous padding (1.5rem mobile, 3rem desktop)
 
 #### Scenario: Typography matches reference
 
-Given the page renders
-When the user inspects the typography
-Then the font family is "Poppins" with Arial fallback
-And the base font size is 14px
-And the line height is 1.8
-And headings use font-weight 400 (regular, not bold)
+- **GIVEN** the page renders
+- **WHEN** the user inspects the typography
+- **THEN** the font family is "Poppins" with Arial fallback
+- **AND** the base font size is 14px
+- **AND** the line height is 1.8
+- **AND** headings use font-weight 400 (regular, not bold)
 
 #### Scenario: Footer with Component Dock link
 
-Given the page has loaded
-When the user scrolls to the bottom of the main content
-Then a footer section is present
-And the footer links to https://www.componentdock.com/
-And the footer text mentions "Component Dock"
+- **GIVEN** the page has loaded
+- **WHEN** the user scrolls to the bottom of the main content
+- **THEN** a footer section is present
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** the footer text mentions "Component Dock"
 
 ## Verification checklist
 

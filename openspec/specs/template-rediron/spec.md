@@ -120,76 +120,87 @@ Recreation of the ColorLib **Sintec** construction company template as a React 1
   - Col 3: "Email Newsletter" — email input + subscribe button (red, square), privacy policy link
 - Footer bottom bar: copyright text, heart icon, "Component Dock" link (replaces Colorlib attribution)
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: RedIron template behaviour
+
 Feature: RedIron — Construction Company Template
 
-  Background:
-    Given the app is loaded at the root URL
+Background:
+- **GIVEN** the app is loaded at the root URL
 
-  Scenario: Top bar displays contact and social info
-    Then the top bar shows a phone number
-    And the top bar shows a physical address
-    And the top bar shows social media icons (Facebook, Twitter, Instagram, Skype, Vimeo)
-    And the top bar has a light grey background
+#### Scenario: Top bar displays contact and social info
 
-  Scenario: Navbar renders with all navigation links
-    Then the navbar shows a logo
-    And the navbar has links: Home, About, Services, Project, Blog, Contact
-    And the active link is highlighted in the primary color
-    And a cart icon with a badge is visible
-    And a search icon is visible
+- **THEN** the top bar shows a phone number
+- **AND** the top bar shows a physical address
+- **AND** the top bar shows social media icons (Facebook, Twitter, Instagram, Skype, Vimeo)
+- **AND** the top bar has a light grey background
 
-  Scenario: Navbar becomes opaque on scroll
-    When the user scrolls past the hero section
-    Then the navbar background changes to white
+#### Scenario: Navbar renders with all navigation links
 
-  Scenario: Hero section displays headline and CTA
-    Then the hero shows a background image with dark overlay
-    And the subtitle reads "Future construction"
-    And the headline reads a construction-themed message
-    And a "Get a Quote" CTA button is visible in the primary color
+- **THEN** the navbar shows a logo
+- **AND** the navbar has links: Home, About, Services, Project, Blog, Contact
+- **AND** the active link is highlighted in the primary color
+- **AND** a cart icon with a badge is visible
+- **AND** a search icon is visible
 
-  Scenario: About section shows company info
-    Then the about section displays an illustration on the left
-    And the about section shows a heading about expertise since 1974
-    And the about section has a "Learn More" CTA button
+#### Scenario: Navbar becomes opaque on scroll
 
-  Scenario: Services section displays 4 service cards
-    Then the services heading reads "What We Provide"
-    And 4 service cards are displayed in a grid
-    And each card has an icon, title, and description
+- **WHEN** the user scrolls past the hero section
+- **THEN** the navbar background changes to white
 
-  Scenario: Stats section shows 3 counters
-    Then the stats section shows "15K+" happy customers
-    And the stats section shows "10K+" projects done
-    And the stats section shows "9/10" average rating
-    And the stat numbers use the accent color
+#### Scenario: Hero section displays headline and CTA
 
-  Scenario: Portfolio section with filter tabs
-    Then the portfolio heading reads "Our Recent Project"
-    And filter tabs are shown: all, buildings, offices, rebuild, architecture
-    And 4 portfolio cards are displayed in a 2-column grid
-    And hovering a card reveals a white overlay with project details
+- **THEN** the hero shows a background image with dark overlay
+- **AND** the subtitle reads "Future construction"
+- **AND** the headline reads a construction-themed message
+- **AND** a "Get a Quote" CTA button is visible in the primary color
 
-  Scenario: Testimonials carousel
-    Then the testimonials heading reads "Customer reviews"
-    And testimonial cards show an avatar, name, designation, and quote
-    And cards have rounded corners and subtle shadow
+#### Scenario: About section shows company info
 
-  Scenario: Blog section shows 3 article cards
-    Then the blog heading reads "Our Recent News"
-    And 3 blog cards are displayed in a 3-column grid
-    And each card shows an image, date, category, and title
+- **THEN** the about section displays an illustration on the left
+- **AND** the about section shows a heading about expertise since 1974
+- **AND** the about section has a "Learn More" CTA button
 
-  Scenario: Footer displays links, hours, and newsletter
-    Then the footer has a dark background
-    And the footer shows useful links in two sub-columns
-    And the footer shows business hours
-    And the footer has an email newsletter input with subscribe button
-    And the footer bottom bar links to Component Dock
-```
+#### Scenario: Services section displays 4 service cards
+
+- **THEN** the services heading reads "What We Provide"
+- **AND** 4 service cards are displayed in a grid
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Stats section shows 3 counters
+
+- **THEN** the stats section shows "15K+" happy customers
+- **AND** the stats section shows "10K+" projects done
+- **AND** the stats section shows "9/10" average rating
+- **AND** the stat numbers use the accent color
+
+#### Scenario: Portfolio section with filter tabs
+
+- **THEN** the portfolio heading reads "Our Recent Project"
+- **AND** filter tabs are shown: all, buildings, offices, rebuild, architecture
+- **AND** 4 portfolio cards are displayed in a 2-column grid
+- **AND** hovering a card reveals a white overlay with project details
+
+#### Scenario: Testimonials carousel
+
+- **THEN** the testimonials heading reads "Customer reviews"
+- **AND** testimonial cards show an avatar, name, designation, and quote
+- **AND** cards have rounded corners and subtle shadow
+
+#### Scenario: Blog section shows 3 article cards
+
+- **THEN** the blog heading reads "Our Recent News"
+- **AND** 3 blog cards are displayed in a 3-column grid
+- **AND** each card shows an image, date, category, and title
+
+#### Scenario: Footer displays links, hours, and newsletter
+
+- **THEN** the footer has a dark background
+- **AND** the footer shows useful links in two sub-columns
+- **AND** the footer shows business hours
+- **AND** the footer has an email newsletter input with subscribe button
+- **AND** the footer bottom bar links to Component Dock
 
 ## Verification checklist
 

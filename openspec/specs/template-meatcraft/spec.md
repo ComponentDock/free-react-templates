@@ -42,101 +42,120 @@ follows. A brand partner carousel ("In association with") with grayscale logos.
 A dark image-backed footer with 4 link columns, a newsletter signup, and social
 icons.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Meatcraft template behaviour
+
 Feature: Meatcraft — Steakhouse Restaurant Template
 
-  Background:
-    Given the user visits the Meatcraft homepage
-    Then  all sections render without errors
+Background:
+- **GIVEN** the user visits the Meatcraft homepage
+- **THEN** all sections render without errors
 
-  # ─── Hero / Banner ─────────────────────────────────────────────────
-  Scenario: Full-screen hero banner
-    Given  the hero banner is visible
-    Then   it covers the full viewport width
-    And    a dark overlay is applied over the background image
-    And    the headline reads "Steak Shop offers best steak in town"
-    And    a "Watch video" play icon is shown
+**─── Hero / Banner ─────────────────────────────────────────────────**
 
-  Scenario: Banner bottom bar
-    Given  the banner bottom bar is visible
-    Then   it overlaps the hero by ~340px (negative margin)
-    And    it contains the headline "Steak Shop offers best steak in town"
-    And    a subtext paragraph is present
-    And    an "Explore Menu" CTA button is visible
+#### Scenario: Full-screen hero banner
 
-  # ─── Breakfast / Food Course Section (left) ─────────────────────────
-  Scenario: Breakfast section layout
-    Given  the "Daily Food Courses with Drinks" breakfast section is visible
-    Then   it uses a two-column layout (text left, images right)
-    And    a heading "Daily Food Courses with Drinks" is displayed
-    And    two body paragraphs of lorem ipsum are shown
-    And    a "See Full Menu" primary button is visible
-    And    two overlapping food images are displayed on the right
+- **GIVEN** the hero banner is visible
+- **THEN** it covers the full viewport width
+- **AND** a dark overlay is applied over the background image
+- **AND** the headline reads "Steak Shop offers best steak in town"
+- **AND** a "Watch video" play icon is shown
 
-  # ─── Lunch / Food Course Section (right) ───────────────────────────
-  Scenario: Lunch section layout
-    Given  the lunch section is visible
-    Then   it uses a two-column layout (images left, text right)
-    And    a heading "Daily Food Courses with Drinks" is displayed
-    And    two body paragraphs of lorem ipsum are shown
-    And    a chef attribution (name + role) is displayed
-    And    two overlapping food images are displayed on the left
+#### Scenario: Banner bottom bar
 
-  # ─── Reservation Form ──────────────────────────────────────────────
-  Scenario: Reservation form
-    Given  the reservation form section is visible
-    Then   a heading "Reservation Form" is displayed
-    And    inputs are present for: Name, Email, Phone Number
-    And    a "Number of people" select is present
-    And    a "Select Date & Time" input is present
-    And    a "Select event" (location) select is present
-    And    a "Make Reservation" submit button is visible
-    And    the form uses red accent borders
+- **GIVEN** the banner bottom bar is visible
+- **THEN** it overlaps the hero by ~340px (negative margin)
+- **AND** it contains the headline "Steak Shop offers best steak in town"
+- **AND** a subtext paragraph is present
+- **AND** an "Explore Menu" CTA button is visible
 
-  # ─── Chef Section ──────────────────────────────────────────────────
-  Scenario: Chef profile section
-    Given  the chef section is visible
-    Then   a large chef image is displayed
-    And    a heading "Daily Food Courses with Drinks" is present
-    And    body paragraphs are shown
-    And    a signature image is displayed
-    And    4 food item thumbnails are shown in a row
+**─── Breakfast / Food Course Section (left) ─────────────────────────**
 
-  # ─── Food Gallery Carousel ─────────────────────────────────────────
-  Scenario: Food gallery carousel
-    Given  the food gallery section is visible
-    Then   a carousel of food images is displayed
-    And    at least 6 food images are in the carousel
-    And    the carousel is horizontally scrollable
+#### Scenario: Breakfast section layout
 
-  # ─── Brand Partners ────────────────────────────────────────────────
-  Scenario: Brand partner carousel
-    Given  the brands section is visible
-    Then   a heading "In associasion with" (sic) is displayed
-    And    a subtitle paragraph is shown
-    And    a carousel of 6 brand logos is present
-    And    the logos are grayscale by default
+- **GIVEN** the "Daily Food Courses with Drinks" breakfast section is visible
+- **THEN** it uses a two-column layout (text left, images right)
+- **AND** a heading "Daily Food Courses with Drinks" is displayed
+- **AND** two body paragraphs of lorem ipsum are shown
+- **AND** a "See Full Menu" primary button is visible
+- **AND** two overlapping food images are displayed on the right
 
-  # ─── Footer ────────────────────────────────────────────────────────
-  Scenario: Footer layout
-    Given  the footer is visible
-    Then   it has a dark image background with overlay
-    And    5 link columns are present: Top Products, Quick Links, Features, Resources, Newsletter
-    And    a newsletter signup form with email input is present
-    And    social icons (Facebook, Twitter, Dribbble, Behance) are shown
-    And    a copyright line is displayed
-    And    a "Component Dock" attribution link is present
+**─── Lunch / Food Course Section (right) ───────────────────────────**
 
-  # ─── Responsive ────────────────────────────────────────────────────
-  Scenario: Mobile responsiveness
-    Given  the viewport is 375px wide
-    Then    the hero banner hides its background image
-    And    the banner bottom repositions above the fold
-    And    all sections stack vertically
-    And    the reservation form remains usable
-```
+#### Scenario: Lunch section layout
+
+- **GIVEN** the lunch section is visible
+- **THEN** it uses a two-column layout (images left, text right)
+- **AND** a heading "Daily Food Courses with Drinks" is displayed
+- **AND** two body paragraphs of lorem ipsum are shown
+- **AND** a chef attribution (name + role) is displayed
+- **AND** two overlapping food images are displayed on the left
+
+**─── Reservation Form ──────────────────────────────────────────────**
+
+#### Scenario: Reservation form
+
+- **GIVEN** the reservation form section is visible
+- **THEN** a heading "Reservation Form" is displayed
+- **AND** inputs are present for: Name, Email, Phone Number
+- **AND** a "Number of people" select is present
+- **AND** a "Select Date & Time" input is present
+- **AND** a "Select event" (location) select is present
+- **AND** a "Make Reservation" submit button is visible
+- **AND** the form uses red accent borders
+
+**─── Chef Section ──────────────────────────────────────────────────**
+
+#### Scenario: Chef profile section
+
+- **GIVEN** the chef section is visible
+- **THEN** a large chef image is displayed
+- **AND** a heading "Daily Food Courses with Drinks" is present
+- **AND** body paragraphs are shown
+- **AND** a signature image is displayed
+- **AND** 4 food item thumbnails are shown in a row
+
+**─── Food Gallery Carousel ─────────────────────────────────────────**
+
+#### Scenario: Food gallery carousel
+
+- **GIVEN** the food gallery section is visible
+- **THEN** a carousel of food images is displayed
+- **AND** at least 6 food images are in the carousel
+- **AND** the carousel is horizontally scrollable
+
+**─── Brand Partners ────────────────────────────────────────────────**
+
+#### Scenario: Brand partner carousel
+
+- **GIVEN** the brands section is visible
+- **THEN** a heading "In associasion with" (sic) is displayed
+- **AND** a subtitle paragraph is shown
+- **AND** a carousel of 6 brand logos is present
+- **AND** the logos are grayscale by default
+
+**─── Footer ────────────────────────────────────────────────────────**
+
+#### Scenario: Footer layout
+
+- **GIVEN** the footer is visible
+- **THEN** it has a dark image background with overlay
+- **AND** 5 link columns are present: Top Products, Quick Links, Features, Resources, Newsletter
+- **AND** a newsletter signup form with email input is present
+- **AND** social icons (Facebook, Twitter, Dribbble, Behance) are shown
+- **AND** a copyright line is displayed
+- **AND** a "Component Dock" attribution link is present
+
+**─── Responsive ────────────────────────────────────────────────────**
+
+#### Scenario: Mobile responsiveness
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the hero banner hides its background image
+- **AND** the banner bottom repositions above the fold
+- **AND** all sections stack vertically
+- **AND** the reservation form remains usable
 
 ## Verification checklist
 

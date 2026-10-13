@@ -61,207 +61,207 @@ fund-bar:    #0a686e   (raised bar)
 11. **Blog** — h2 "Recent From Blog". Three blog cards: image, "3 COMMENTS" link (gold), heading ("Give Hope to the People Need Most"), excerpt text, "Read More" link (gold).
 12. **Footer** — Very dark teal (#042628) background. Three columns: brand + description + social icons (left), Recent Posts with date/author + heading (middle), Contact info with phone + email (right). Bottom bar: copyright + attribution.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navigation bar
 
-  Scenario: Brand link visible
-    Given the page loads
-    Then the navbar displays the brand text "LOVECARE CHARITY THEME"
+#### Scenario: Brand link visible
 
-  Scenario: Navigation links present
-    Given the page loads
-    Then the navbar contains links: Home, About, Causes, Blog, Contact
+- **GIVEN** the page loads
+- **THEN** the navbar displays the brand text "LOVECARE CHARITY THEME"
 
-  Scenario: Mobile hamburger menu
-    Given the viewport width is less than 992px
-    When the user clicks the hamburger icon
-    Then the navigation menu expands vertically
-```
+#### Scenario: Navigation links present
+
+- **GIVEN** the page loads
+- **THEN** the navbar contains links: Home, About, Causes, Blog, Contact
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport width is less than 992px
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the navigation menu expands vertically
 
 ### Hero
 
-```gherkin
 Feature: Hero section
 
-  Scenario: Hero content displays
-    Given the page loads
-    Then the hero shows subheading "Raising Hope"
-    And the hero shows heading "To the Homeless & Hopeless People"
-    And the heading uses a cursive display font (Patrick Hand)
+#### Scenario: Hero content displays
 
-  Scenario: Hero CTAs
-    Given the page loads
-    Then the hero shows "Join Us" button
-    And the hero shows "Watch the Video" button
+- **GIVEN** the page loads
+- **THEN** the hero shows subheading "Raising Hope"
+- **AND** the hero shows heading "To the Homeless & Hopeless People"
+- **AND** the heading uses a cursive display font (Patrick Hand)
 
-  Scenario: Hero background
-    Given the page loads
-    Then the hero has a full-viewport background image
-    And a dark teal-to-gold gradient overlay covers the background
-```
+#### Scenario: Hero CTAs
+
+- **GIVEN** the page loads
+- **THEN** the hero shows "Join Us" button
+- **AND** the hero shows "Watch the Video" button
+
+#### Scenario: Hero background
+
+- **GIVEN** the page loads
+- **THEN** the hero has a full-viewport background image
+- **AND** a dark teal-to-gold gradient overlay covers the background
 
 ### Fund/Donate
 
-```gherkin
 Feature: Fund and donation form
 
-  Scenario: Fund stats display
-    Given the page loads
-    Then the fund section shows "$1,850,000" as funds raised
-    And shows "FUNDS RAISED BY 1200 PEOPLE" as caption
+#### Scenario: Fund stats display
 
-  Scenario: Donation form fields
-    Given the page loads
-    Then the form has a "Your Full Name" text input
-    And an "Email Address" text input
-    And a "Select Causes" dropdown with options: Food, Medical Health, Education, Environment, Shelter/Home, Clothes, Other
-    And an "Amount" text input
-    And radio buttons for payment: Paypal, Credit Card, Payoneer
+- **GIVEN** the page loads
+- **THEN** the fund section shows "$1,850,000" as funds raised
+- **AND** shows "FUNDS RAISED BY 1200 PEOPLE" as caption
 
-  Scenario: Donate button
-    Given the page loads
-    Then the form has a "Donate Now" submit button
-    And the button is gold (#d49a3a) colored
-```
+#### Scenario: Donation form fields
+
+- **GIVEN** the page loads
+- **THEN** the form has a "Your Full Name" text input
+- **AND** an "Email Address" text input
+- **AND** a "Select Causes" dropdown with options: Food, Medical Health, Education, Environment, Shelter/Home, Clothes, Other
+- **AND** an "Amount" text input
+- **AND** radio buttons for payment: Paypal, Credit Card, Payoneer
+
+#### Scenario: Donate button
+
+- **GIVEN** the page loads
+- **THEN** the form has a "Donate Now" submit button
+- **AND** the button is gold (#d49a3a) colored
 
 ### Mission/Actions
 
-```gherkin
 Feature: Mission statement and action cards
 
-  Scenario: Mission heading
-    Given the page loads
-    Then the section shows "We Help Thousands of Children to Get Their Education"
+#### Scenario: Mission heading
 
-  Scenario: Action cards
-    Given the page loads
-    Then three action cards are visible
-    And the cards are: "Start Donating", "Join Our Community", "Be A Volunteer"
-    And each card has an icon and a heading
-```
+- **GIVEN** the page loads
+- **THEN** the section shows "We Help Thousands of Children to Get Their Education"
+
+#### Scenario: Action cards
+
+- **GIVEN** the page loads
+- **THEN** three action cards are visible
+- **AND** the cards are: "Start Donating", "Join Our Community", "Be A Volunteer"
+- **AND** each card has an icon and a heading
 
 ### Stats Counter
 
-```gherkin
 Feature: Statistics counter section
 
-  Scenario: Stats display
-    Given the page loads
-    Then four statistic values are shown
-    And the values are: "$60M", "9200", "5800", "2750"
-    And the section has a dark overlay background
-```
+#### Scenario: Stats display
+
+- **GIVEN** the page loads
+- **THEN** four statistic values are shown
+- **AND** the values are: "$60M", "9200", "5800", "2750"
+- **AND** the section has a dark overlay background
 
 ### Causes Carousel
 
-```gherkin
 Feature: Causes carousel
 
-  Scenario: Causes cards
-    Given the page loads
-    Then a carousel of cause cards is visible
-    And each card has a category label, heading, and progress bar
-    And the progress bar shows a percentage
+#### Scenario: Causes cards
 
-  Scenario: Carousel navigation
-    Given the page loads
-    Then carousel dot pagination is visible
-```
+- **GIVEN** the page loads
+- **THEN** a carousel of cause cards is visible
+- **AND** each card has a category label, heading, and progress bar
+- **AND** the progress bar shows a percentage
+
+#### Scenario: Carousel navigation
+
+- **GIVEN** the page loads
+- **THEN** carousel dot pagination is visible
 
 ### CTA Banner
 
-```gherkin
 Feature: Call-to-action banner
 
-  Scenario: CTA content
-    Given the page loads
-    Then the banner shows "LOVECARE CHARITY" as subheading
-    And "The Smallest Act of Kindness is Worth More Than the Grandest Intention" as heading
-    And "Donate Now!" and "Become A Volunteer" buttons are visible
+#### Scenario: CTA content
 
-  Scenario: CTA background
-    Given the page loads
-    Then the banner has a cream/beige background with parallax effect
-```
+- **GIVEN** the page loads
+- **THEN** the banner shows "LOVECARE CHARITY" as subheading
+- **AND** "The Smallest Act of Kindness is Worth More Than the Grandest Intention" as heading
+- **AND** "Donate Now!" and "Become A Volunteer" buttons are visible
+
+#### Scenario: CTA background
+
+- **GIVEN** the page loads
+- **THEN** the banner has a cream/beige background with parallax effect
 
 ### Volunteers
 
-```gherkin
 Feature: Volunteer team section
 
-  Scenario: Volunteer cards
-    Given the page loads
-    Then four volunteer cards are displayed
-    And each card shows a circular avatar, name, "Volunteer" label
-    And each card has social media icon links (Twitter, Facebook, Instagram, LinkedIn)
-```
+#### Scenario: Volunteer cards
+
+- **GIVEN** the page loads
+- **THEN** four volunteer cards are displayed
+- **AND** each card shows a circular avatar, name, "Volunteer" label
+- **AND** each card has social media icon links (Twitter, Facebook, Instagram, LinkedIn)
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials section
 
-  Scenario: Testimonials carousel
-    Given the page loads
-    Then a testimonials carousel is visible
-    And each slide shows a quote, user name (gold), and position (gray)
-    And a circular quote icon is positioned above the card
+#### Scenario: Testimonials carousel
 
-  Scenario: Testimonial pagination
-    Given the page loads
-    Then carousel dot pagination is visible
-```
+- **GIVEN** the page loads
+- **THEN** a testimonials carousel is visible
+- **AND** each slide shows a quote, user name (gold), and position (gray)
+- **AND** a circular quote icon is positioned above the card
+
+#### Scenario: Testimonial pagination
+
+- **GIVEN** the page loads
+- **THEN** carousel dot pagination is visible
 
 ### Video CTA
 
-```gherkin
 Feature: Video call-to-action
 
-  Scenario: Video CTA content
-    Given the page loads
-    Then "Do You Care Our Children?" heading is displayed
-    And a "Be A Volunteer" button is visible
-    And the section has a background image with dark overlay
-```
+#### Scenario: Video CTA content
+
+- **GIVEN** the page loads
+- **THEN** "Do You Care Our Children?" heading is displayed
+- **AND** a "Be A Volunteer" button is visible
+- **AND** the section has a background image with dark overlay
 
 ### Blog
 
-```gherkin
 Feature: Blog section
 
-  Scenario: Blog cards
-    Given the page loads
-    Then three blog post cards are shown
-    And each card has an image, comment count, heading, excerpt, and "Read More" link
+#### Scenario: Blog cards
 
-  Scenario: Blog card styling
-    Given the page loads
-    Then comment count is displayed in gold (#d49a3a)
-    And "Read More" link is gold colored
-```
+- **GIVEN** the page loads
+- **THEN** three blog post cards are shown
+- **AND** each card has an image, comment count, heading, excerpt, and "Read More" link
+
+#### Scenario: Blog card styling
+
+- **GIVEN** the page loads
+- **THEN** comment count is displayed in gold (#d49a3a)
+- **AND** "Read More" link is gold colored
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer columns
-    Given the page loads
-    Then the footer has three columns
-    And column 1 shows brand name and description with social icons
-    And column 2 shows "Recent Posts" with post cards
-    And column 3 shows "Have a Questions?" with phone and email
+#### Scenario: Footer columns
 
-  Scenario: Footer styling
-    Given the page loads
-    Then the footer has a very dark teal background (#042628)
-    And the bottom bar has a slightly lighter dark background (#053336)
-    And the footer links to https://www.componentdock.com/
-```
+- **GIVEN** the page loads
+- **THEN** the footer has three columns
+- **AND** column 1 shows brand name and description with social icons
+- **AND** column 2 shows "Recent Posts" with post cards
+- **AND** column 3 shows "Have a Questions?" with phone and email
+
+#### Scenario: Footer styling
+
+- **GIVEN** the page loads
+- **THEN** the footer has a very dark teal background (#042628)
+- **AND** the bottom bar has a slightly lighter dark background (#053336)
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification Checklist
 

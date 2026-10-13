@@ -62,71 +62,83 @@ Extracted from `https://preview.colorlib.com/theme/fashe/assets/css/style.css`:
 8. **Journal / Blog** — 2-3 blog cards with image, date, category tag, title, excerpt — color scheme 1
 9. **Footer** — 4 columns (Brand/Shop/Help/Newsletter), bottom bar with copyright — color scheme 3 (dark)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Announcement bar displays correctly
-- **Given** the user visits the homepage
-- **Then** an announcement bar is visible at the top of the page
-- **And** it displays scrolling text with shipping, returns, delivery, and material info
+### Feature: Vesture template behaviour
 
-### Scenario: Navbar navigation
-- **Given** the user is on any page
-- **Then** the navbar displays the brand name on the left
-- **And** navigation links are present: Shop, Collections, Journal, About
-- **And** a cart icon is displayed on the right
+#### Scenario: Announcement bar displays correctly
 
-### Scenario: Hero section
-- **Given** the user views the homepage
-- **Then** a hero banner is displayed with a large background image
-- **And** the text "New season essentials" is displayed
-- **And** a "Shop Now" call-to-action button is present
+- **GIVEN** the user visits the homepage
+- **THEN** an announcement bar is visible at the top of the page
+- **AND** it displays scrolling text with shipping, returns, delivery, and material info
 
-### Scenario: Shop by category section
-- **Given** the user scrolls to the category section
-- **Then** 3 category cards are displayed (Clothing, Jewellery, Bags)
-- **And** each card has an image and a title
-- **And** clicking a category navigates to the shop page
+#### Scenario: Navbar navigation
 
-### Scenario: New arrivals product grid
-- **Given** the user scrolls to the new arrivals section
-- **Then** "New arrivals" heading is displayed
-- **And** a "View all" link is present
-- **And** at least 6 product cards are shown
-- **And** each product card shows an image, title, price, and "Quick add" button
-- **And** sale items show both original and discounted prices
+- **GIVEN** the user is on any page
+- **THEN** the navbar displays the brand name on the left
+- **AND** navigation links are present: Shop, Collections, Journal, About
+- **AND** a cart icon is displayed on the right
 
-### Scenario: Made to last editorial section
-- **Given** the user scrolls to the editorial section
-- **Then** the heading "Made to last" is displayed
-- **And** descriptive text about natural fibres and construction is shown
-- **And** an image is displayed alongside the text
-- **And** a "Our story" CTA link is present
+#### Scenario: Hero section
 
-### Scenario: Why shop with us features
-- **Given** the user scrolls to the features section
-- **Then** "Why shop with us" heading is displayed
-- **And** 3 feature cards are shown: Free shipping, 30 day returns, Made responsibly
-- **And** each card has a title and description
+- **GIVEN** the user views the homepage
+- **THEN** a hero banner is displayed with a large background image
+- **AND** the text "New season essentials" is displayed
+- **AND** a "Shop Now" call-to-action button is present
 
-### Scenario: Journal section
-- **Given** the user scrolls to the blog section
-- **Then** "Journal" heading is displayed
-- **And** "All posts" link is present
-- **And** at least 2 blog post cards are shown
-- **And** each card displays an image, date, category, title, and excerpt
+#### Scenario: Shop by category section
 
-### Scenario: Footer
-- **Given** the user scrolls to the bottom of the page
-- **Then** the footer displays 4 columns: Brand, Shop, Help, Newsletter
-- **And** the newsletter section has an email input and submit button
-- **And** copyright text is displayed at the bottom
-- **And** a link to `https://www.componentdock.com/` is present
+- **GIVEN** the user scrolls to the category section
+- **THEN** 3 category cards are displayed (Clothing, Jewellery, Bags)
+- **AND** each card has an image and a title
+- **AND** clicking a category navigates to the shop page
 
-### Scenario: Responsive design
-- **Given** the user views the page on a mobile device (viewport < 768px)
-- **Then** the navbar collapses to a hamburger menu
-- **And** the product grid switches to a single-column layout
-- **And** category cards stack vertically
+#### Scenario: New arrivals product grid
+
+- **GIVEN** the user scrolls to the new arrivals section
+- **THEN** "New arrivals" heading is displayed
+- **AND** a "View all" link is present
+- **AND** at least 6 product cards are shown
+- **AND** each product card shows an image, title, price, and "Quick add" button
+- **AND** sale items show both original and discounted prices
+
+#### Scenario: Made to last editorial section
+
+- **GIVEN** the user scrolls to the editorial section
+- **THEN** the heading "Made to last" is displayed
+- **AND** descriptive text about natural fibres and construction is shown
+- **AND** an image is displayed alongside the text
+- **AND** a "Our story" CTA link is present
+
+#### Scenario: Why shop with us features
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** "Why shop with us" heading is displayed
+- **AND** 3 feature cards are shown: Free shipping, 30 day returns, Made responsibly
+- **AND** each card has a title and description
+
+#### Scenario: Journal section
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** "Journal" heading is displayed
+- **AND** "All posts" link is present
+- **AND** at least 2 blog post cards are shown
+- **AND** each card displays an image, date, category, title, and excerpt
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** the footer displays 4 columns: Brand, Shop, Help, Newsletter
+- **AND** the newsletter section has an email input and submit button
+- **AND** copyright text is displayed at the bottom
+- **AND** a link to `https://www.componentdock.com/` is present
+
+#### Scenario: Responsive design
+
+- **GIVEN** the user views the page on a mobile device (viewport < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the product grid switches to a single-column layout
+- **AND** category cards stack vertically
 
 ## Verification checklist
 

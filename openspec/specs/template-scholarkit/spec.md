@@ -48,108 +48,99 @@ web courses, classes, schools and universities.
 11. **Footer** — 4-column: About + social icons, Quick Links, Recent Posts (3 blog cards with thumbnails), Contact Info (address, phone, email, location).
 12. **Footer bottom** — copyright with heart icon + "Colorlib" link → replaced with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Upper menu bar renders correctly
-```gherkin
-Given the page loads
-Then the upper menu bar is visible with dark background (#1E2022)
-And it shows "Welcome to Scholarkit" text on the left
-And social icon links (Twitter, Facebook, LinkedIn, Dribbble) are on the right
-And an "Apply Now" text link is present
-```
+### Feature: Scholarkit template behaviour
 
-### Scenario: Main navbar renders correctly
-```gherkin
-Given the page loads
-Then the navbar is visible with white background
-And the logo "Scholarkit" is displayed on the left
-And nav links "Home", "Courses", "About", "Events", "News", "Contact" are present
-And "Courses" has a dropdown with sub-items
-And a "Free Trial" CTA button with pill shape (border-radius 100px) and brand blue bg (#429FFD) is shown
-```
+#### Scenario: Upper menu bar renders correctly
 
-### Scenario: Hero slider displays slides
-```gherkin
-Given the page loads
-Then a full-width hero slider is visible
-And it displays a background image with dark overlay
-And a centered heading is shown (e.g. "Best Online Learning System")
-And a primary CTA button ("Register Now") with brand blue bg is below the heading
-And the slider cycles through multiple slides automatically
-```
+- **GIVEN** the page loads
+- **THEN** the upper menu bar is visible with dark background (#1E2022)
+- **AND** it shows "Welcome to Scholarkit" text on the left
+- **AND** social icon links (Twitter, Facebook, LinkedIn, Dribbble) are on the right
+- **AND** an "Apply Now" text link is present
 
-### Scenario: Intro cards section
-```gherkin
-Given the page loads
-Then 3 intro cards are displayed in a row
-And the first card shows an icon + "Learn Courses Online" + "View More" link
-And the second card shows an icon + "Online Library Store" + "View More" link
-And the third card is a promo card with colored background showing "50% off in all selected Courses"
-```
+#### Scenario: Main navbar renders correctly
 
-### Scenario: About section with accordion
-```gherkin
-Given the page loads
-Then a "Welcome to Scholarkit" heading is displayed
-And a descriptive paragraph is shown next to it
-And a 3-panel accordion FAQ is present
-And the first panel is expanded by default showing content
-And clicking a collapsed panel header expands it and collapses the currently open one
-```
+- **GIVEN** the page loads
+- **THEN** the navbar is visible with white background
+- **AND** the logo "Scholarkit" is displayed on the left
+- **AND** nav links "Home", "Courses", "About", "Events", "News", "Contact" are present
+- **AND** "Courses" has a dropdown with sub-items
+- **AND** a "Free Trial" CTA button with pill shape (border-radius 100px) and brand blue bg (#429FFD) is shown
 
-### Scenario: Services section
-```gherkin
-Given the page loads
-Then 4 service cards are displayed in a row
-And each card has an icon, a heading, and a description
-And the services are: "Professional Courses", "Experienced Instructor", "Practical Training", "Validated Certificate"
-```
+#### Scenario: Hero slider displays slides
 
-### Scenario: Counter section with animated numbers
-```gherkin
-Given the page loads
-Then a counter section with dark parallax background is visible
-And 4 counters are displayed: Courses, Students, Faculty, Countries
-And each counter shows an icon, an animated number, and a label
-And the numbers animate (count up) when the section enters the viewport
-```
+- **GIVEN** the page loads
+- **THEN** a full-width hero slider is visible
+- **AND** it displays a background image with dark overlay
+- **AND** a centered heading is shown (e.g. "Best Online Learning System")
+- **AND** a primary CTA button ("Register Now") with brand blue bg is below the heading
+- **AND** the slider cycles through multiple slides automatically
 
-### Scenario: Our Classes section
-```gherkin
-Given the page loads
-Then an "Our Classes" heading with sub-description is displayed
-And 6 course cards are shown in a 3-column grid (2 rows)
-And each card has an image, a price tag, a title, a description, and a "Learn More" link
-```
+#### Scenario: Intro cards section
 
-### Scenario: Testimonials section
-```gherkin
-Given the page loads
-Then a testimonials section with image background and dark overlay is visible
-And a "What Students Say" heading is displayed
-And a carousel shows testimonial slides with text and avatar
-```
+- **GIVEN** the page loads
+- **THEN** 3 intro cards are displayed in a row
+- **AND** the first card shows an icon + "Learn Courses Online" + "View More" link
+- **AND** the second card shows an icon + "Online Library Store" + "View More" link
+- **AND** the third card is a promo card with colored background showing "50% off in all selected Courses"
 
-### Scenario: Newsletter subscription section
-```gherkin
-Given the page loads
-Then a newsletter section with image background and overlay is visible
-And a "Subscribe Newsletter" heading is displayed
-And an email input field with placeholder "Enter your email" is present
-And a "Subscribe Now" primary button is present
-```
+#### Scenario: About section with accordion
 
-### Scenario: Footer
-```gherkin
-Given the page loads
-Then a 4-column footer is displayed
-And the first column has "About Scholarkit" text and social icons
-And the second column has "Quick Links" with icon-marked links
-And the third column has "Recent Post" with 3 blog cards (image + title + date)
-And the fourth column has "Contact Info" with address, phone, email, location
-And the footer bottom shows copyright with "Component Dock" link (not Colorlib)
-```
+- **GIVEN** the page loads
+- **THEN** a "Welcome to Scholarkit" heading is displayed
+- **AND** a descriptive paragraph is shown next to it
+- **AND** a 3-panel accordion FAQ is present
+- **AND** the first panel is expanded by default showing content
+- **AND** clicking a collapsed panel header expands it and collapses the currently open one
+
+#### Scenario: Services section
+
+- **GIVEN** the page loads
+- **THEN** 4 service cards are displayed in a row
+- **AND** each card has an icon, a heading, and a description
+- **AND** the services are: "Professional Courses", "Experienced Instructor", "Practical Training", "Validated Certificate"
+
+#### Scenario: Counter section with animated numbers
+
+- **GIVEN** the page loads
+- **THEN** a counter section with dark parallax background is visible
+- **AND** 4 counters are displayed: Courses, Students, Faculty, Countries
+- **AND** each counter shows an icon, an animated number, and a label
+- **AND** the numbers animate (count up) when the section enters the viewport
+
+#### Scenario: Our Classes section
+
+- **GIVEN** the page loads
+- **THEN** an "Our Classes" heading with sub-description is displayed
+- **AND** 6 course cards are shown in a 3-column grid (2 rows)
+- **AND** each card has an image, a price tag, a title, a description, and a "Learn More" link
+
+#### Scenario: Testimonials section
+
+- **GIVEN** the page loads
+- **THEN** a testimonials section with image background and dark overlay is visible
+- **AND** a "What Students Say" heading is displayed
+- **AND** a carousel shows testimonial slides with text and avatar
+
+#### Scenario: Newsletter subscription section
+
+- **GIVEN** the page loads
+- **THEN** a newsletter section with image background and overlay is visible
+- **AND** a "Subscribe Newsletter" heading is displayed
+- **AND** an email input field with placeholder "Enter your email" is present
+- **AND** a "Subscribe Now" primary button is present
+
+#### Scenario: Footer
+
+- **GIVEN** the page loads
+- **THEN** a 4-column footer is displayed
+- **AND** the first column has "About Scholarkit" text and social icons
+- **AND** the second column has "Quick Links" with icon-marked links
+- **AND** the third column has "Recent Post" with 3 blog cards (image + title + date)
+- **AND** the fourth column has "Contact Info" with address, phone, email, location
+- **AND** the footer bottom shows copyright with "Component Dock" link (not Colorlib)
 
 ## Verification checklist
 

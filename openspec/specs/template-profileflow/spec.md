@@ -64,23 +64,25 @@ Recreation of ColorLib "Colorlib Wizard 9" — a multi-step user profile wizard 
 | Wrapper BG | Repeating pattern image overlay                                  |
 | Card BG    | Solid white, slight rounded corners implied by wrapper padding   |
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Multi-Step User Profile Wizard
+### Feature: ProfileFlow template behaviour
 
-#### Background
+**Feature: Multi-Step User Profile Wizard**
 
-Given the user navigates to the ProfileFlow page
-Then a centered white card is displayed over a background image
-And the card shows a 3-step wizard with step indicator "1/3"
+**Background**
 
-### Scenario: Step 1 — User Profile
+- **GIVEN** the user navigates to the ProfileFlow page
+- **THEN** a centered white card is displayed over a background image
+- **AND** the card shows a 3-step wizard with step indicator "1/3"
 
-Given the user is on step 1
-When the page loads
-Then the heading "USER PROFILE" is displayed in uppercase navy blue
-And the step indicator shows "1 / 3" in the top-right corner
-And the following fields are visible in a 2-column grid:
+#### Scenario: Step 1 — User Profile
+
+- **GIVEN** the user is on step 1
+- **WHEN** the page loads
+- **THEN** the heading "USER PROFILE" is displayed in uppercase navy blue
+- **AND** the step indicator shows "1 / 3" in the top-right corner
+- **AND** the following fields are visible in a 2-column grid:
 | Field | Type | Icon |
 | Full Name | text | account (person) |
 | Education Level | text | edit (pencil) |
@@ -88,14 +90,14 @@ And the following fields are visible in a 2-column grid:
 | Phone Number | text | smartphone (phone) |
 | Specialization | text | spellcheck (text) |
 | Date of Birth | text | calendar |
-And the "NEXT" button is visible at the bottom-right
-And the "BACK" button is not visible on step 1
+- **AND** the "NEXT" button is visible at the bottom-right
+- **AND** the "BACK" button is not visible on step 1
 
-### Scenario: Step 2 — Residential Address
+#### Scenario: Step 2 — Residential Address
 
-Given the user is on step 2
-When the heading "RESIDENTIAL ADDRESS" is displayed
-Then the following fields are visible in a 2-column grid:
+- **GIVEN** the user is on step 2
+- **WHEN** the heading "RESIDENTIAL ADDRESS" is displayed
+- **THEN** the following fields are visible in a 2-column grid:
 | Field | Type | Icon |
 | Country | select | account |
 | Street Address | text | pin |
@@ -103,14 +105,14 @@ Then the following fields are visible in a 2-column grid:
 | Town / City | text | pin-drop |
 | County | text | pin |
 | Postcode / Zip | text | eye (password) |
-And the step indicator shows "2 / 3"
-And both "BACK" and "NEXT" buttons are visible
+- **AND** the step indicator shows "2 / 3"
+- **AND** both "BACK" and "NEXT" buttons are visible
 
-### Scenario: Step 3 — What Are You Doing?
+#### Scenario: Step 3 — What Are You Doing?
 
-Given the user is on step 3
-When the heading "WHAT ARE YOU DOING?" is displayed
-Then a 3×2 grid of clickable image cards is shown:
+- **GIVEN** the user is on step 3
+- **WHEN** the heading "WHAT ARE YOU DOING?" is displayed
+- **THEN** a 3×2 grid of clickable image cards is shown:
 | Card | Default |
 | Programming | active |
 | Sports | default |
@@ -118,64 +120,64 @@ Then a 3×2 grid of clickable image cards is shown:
 | Tour Guide | default |
 | Art-Design | default |
 | Doctor | default |
-And each card has a thumbnail image and a vertical label on the right
-And the active card's label background is navy blue (#3377c0)
-And inactive cards have a gray (#b3b3b3) label background
-And the step indicator shows "3 / 3"
+- **AND** each card has a thumbnail image and a vertical label on the right
+- **AND** the active card's label background is navy blue (#3377c0)
+- **AND** inactive cards have a gray (#b3b3b3) label background
+- **AND** the step indicator shows "3 / 3"
 
-### Scenario: Navigation Between Steps
+#### Scenario: Navigation Between Steps
 
-Given the user is on step 1
-When all required fields in step 1 are filled
-And the user clicks "NEXT"
-Then the wizard transitions to step 2
-And the step indicator updates to "2 / 3"
+- **GIVEN** the user is on step 1
+- **WHEN** all required fields in step 1 are filled
+- **AND** the user clicks "NEXT"
+- **THEN** the wizard transitions to step 2
+- **AND** the step indicator updates to "2 / 3"
 
-Given the user is on step 2
-When the user clicks "BACK"
-Then the wizard returns to step 1
-And the step indicator updates to "1 / 3"
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "BACK"
+- **THEN** the wizard returns to step 1
+- **AND** the step indicator updates to "1 / 3"
 
-Given the user is on step 3
-When the user clicks a grid card
-Then that card becomes active (navy blue label)
-And the previously active card becomes inactive (gray label)
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks a grid card
+- **THEN** that card becomes active (navy blue label)
+- **AND** the previously active card becomes inactive (gray label)
 
-### Scenario: Validation Feedback
+#### Scenario: Validation Feedback
 
-Given the user is on any step
-When the user tries to click "NEXT" without filling all required fields
-Then the message "Your must fill all fields, to be able to continue" appears
-And the "NEXT" button is hidden until validation passes
+- **GIVEN** the user is on any step
+- **WHEN** the user tries to click "NEXT" without filling all required fields
+- **THEN** the message "Your must fill all fields, to be able to continue" appears
+- **AND** the "NEXT" button is hidden until validation passes
 
-### Scenario: Responsive Layout
+#### Scenario: Responsive Layout
 
-Given the user is on a viewport narrower than 768px
-When the wizard renders
-Then the form fields stack vertically (single column)
-And the grid items display in a 2-column layout
-And the heading font size reduces to 30px
-And the card padding adjusts to 60px top, 20px sides
+- **GIVEN** the user is on a viewport narrower than 768px
+- **WHEN** the wizard renders
+- **THEN** the form fields stack vertically (single column)
+- **AND** the grid items display in a 2-column layout
+- **AND** the heading font size reduces to 30px
+- **AND** the card padding adjusts to 60px top, 20px sides
 
-### Scenario: Icon-Left Input Pattern
+#### Scenario: Icon-Left Input Pattern
 
-Given any form field is displayed
-Then each input has an icon positioned on the left side
-And the icon is vertically centered within the input
-And the input has left padding of 46px to accommodate the icon
-And the select dropdown has a chevron-down icon on the right
+- **GIVEN** any form field is displayed
+- **THEN** each input has an icon positioned on the left side
+- **AND** the icon is vertically centered within the input
+- **AND** the input has left padding of 46px to accommodate the icon
+- **AND** the select dropdown has a chevron-down icon on the right
 
-### Scenario: Hover Effects
+#### Scenario: Hover Effects
 
-Given any grid card is displayed
-When the user hovers over a grid card
-Then the thumbnail image opacity reduces to 0.6
+- **GIVEN** any grid card is displayed
+- **WHEN** the user hovers over a grid card
+- **THEN** the thumbnail image opacity reduces to 0.6
 
-Given the "BACK" button is displayed
-When the user hovers over it
-Then the border becomes transparent
-And the text becomes white
-And the background becomes #3b87d9
+- **GIVEN** the "BACK" button is displayed
+- **WHEN** the user hovers over it
+- **THEN** the border becomes transparent
+- **AND** the text becomes white
+- **AND** the background becomes #3b87d9
 
 ## Verification Checklist
 

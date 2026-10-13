@@ -112,68 +112,77 @@ Tooltips: `#f2f2f2` background, arrow pointing up at top.
 | < 991px    | Image holder hidden, form centered at 60% width, no right margin                                                                                 |
 | < 767px    | Stacked: image full-width on top, form below, auto height. Paired fields stack vertically. Padding reduced to 70px top, 20px sides, 40px bottom. |
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: FormBoost template behaviour
+
 Feature: FormBoost — 4-step order wizard
 
-  Background:
-    Given the FormBoost page is loaded
+Background:
+- **GIVEN** the FormBoost page is loaded
 
-  Scenario: Renders billing details as the first step
-    Then step 1 "Billing Details" should be visible
-    And the first step indicator segment should be active
-    And the "Next" button should be visible
-    And the "Previous" button should be hidden
+#### Scenario: Renders billing details as the first step
 
-  Scenario: Navigate forward through all steps
-    When the user clicks "Next"
-    Then step 2 "Additional Information" should be visible
-    When the user clicks "Next"
-    Then step 3 "Your Order" should be visible
-    When the user clicks "Next"
-    Then step 4 "Billing Method" should be visible
-    And the "Next" button should be hidden
+- **THEN** step 1 "Billing Details" should be visible
+- **AND** the first step indicator segment should be active
+- **AND** the "Next" button should be visible
+- **AND** the "Previous" button should be hidden
 
-  Scenario: Navigate backward from step 2
-    Given the user is on step 2
-    When the user clicks "Previous"
-    Then step 1 "Billing Details" should be visible
+#### Scenario: Navigate forward through all steps
 
-  Scenario: Step indicator updates on navigation
-    Given the user is on step 3
-    Then step indicator segments 1, 2, 3 should be active
-    And step indicator segment 4 should be inactive
+- **WHEN** the user clicks "Next"
+- **THEN** step 2 "Additional Information" should be visible
+- **WHEN** the user clicks "Next"
+- **THEN** step 3 "Your Order" should be visible
+- **WHEN** the user clicks "Next"
+- **THEN** step 4 "Billing Method" should be visible
+- **AND** the "Next" button should be hidden
 
-  Scenario: Payment method selection with tooltip
-    Given the user is on step 4
-    Then "Direct bank transfer" should be selected by default
-    And the bank transfer tooltip should be visible
-    When the user selects "Cash on delivery"
-    Then the bank transfer tooltip should be hidden
-    And the cash on delivery tooltip should be visible
+#### Scenario: Navigate backward from step 2
 
-  Scenario: Order summary displays correct data
-    Given the user is on step 3
-    Then product "Low Table/Stool" should show quantity ×4 and price $29
-    And product "Set of 3 Porcelain" should show quantity ×2 and price $124
-    And the subtotal should show $364
-    And the total should show $364
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Previous"
+- **THEN** step 1 "Billing Details" should be visible
 
-  Scenario: Paired form fields display side by side
-    Given the user is on step 1
-    Then "First Name" and "Last Name" should be in a horizontal pair
+#### Scenario: Step indicator updates on navigation
 
-  Scenario: Responsive — image hidden on small screens
-    Given the viewport width is less than 991px
-    Then the decorative image should be hidden
-    And the form should be centered
+- **GIVEN** the user is on step 3
+- **THEN** step indicator segments 1, 2, 3 should be active
+- **AND** step indicator segment 4 should be inactive
 
-  Scenario: Responsive — stacked layout on mobile
-    Given the viewport width is less than 767px
-    Then paired fields should stack vertically
-    And the image should appear above the form
-```
+#### Scenario: Payment method selection with tooltip
+
+- **GIVEN** the user is on step 4
+- **THEN** "Direct bank transfer" should be selected by default
+- **AND** the bank transfer tooltip should be visible
+- **WHEN** the user selects "Cash on delivery"
+- **THEN** the bank transfer tooltip should be hidden
+- **AND** the cash on delivery tooltip should be visible
+
+#### Scenario: Order summary displays correct data
+
+- **GIVEN** the user is on step 3
+- **THEN** product "Low Table/Stool" should show quantity ×4 and price $29
+- **AND** product "Set of 3 Porcelain" should show quantity ×2 and price $124
+- **AND** the subtotal should show $364
+- **AND** the total should show $364
+
+#### Scenario: Paired form fields display side by side
+
+- **GIVEN** the user is on step 1
+- **THEN** "First Name" and "Last Name" should be in a horizontal pair
+
+#### Scenario: Responsive — image hidden on small screens
+
+- **GIVEN** the viewport width is less than 991px
+- **THEN** the decorative image should be hidden
+- **AND** the form should be centered
+
+#### Scenario: Responsive — stacked layout on mobile
+
+- **GIVEN** the viewport width is less than 767px
+- **THEN** paired fields should stack vertically
+- **AND** the image should appear above the form
 
 ## Verification checklist
 

@@ -39,82 +39,100 @@ The template is a clean, modern digital services/agency layout with:
 - White "Contact" section: 2-column — left form (first name, full name, email, subject, message, send button), right side with 2 office locations (London, New York) with address/phone/email
 - Light footer: 4-column layout with address, 3 link lists, social icons, copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-Scenario: Renders sticky navbar with site logo and navigation links
-  Given the page loads
-  Then a sticky header is displayed with logo "Opsforge" on the left
-  And navigation links are: Home, About, Services, Projects, Blog, Contact
-  And the navbar becomes sticky on scroll with white background and shadow
-  And the logo has a bordered box style (4px solid border)
+
+#### Scenario: Renders sticky navbar with site logo and navigation links
+
+- **GIVEN** the page loads
+- **THEN** a sticky header is displayed with logo "Opsforge" on the left
+- **AND** navigation links are: Home, About, Services, Projects, Blog, Contact
+- **AND** the navbar becomes sticky on scroll with white background and shadow
+- **AND** the logo has a bordered box style (4px solid border)
 
 ### Hero Section
-Scenario: Renders full-viewport hero with background image and CTA
-  Given the page loads
-  Then a full-viewport hero section is displayed with background image
-  And the heading reads "We Are Digital Services"
-  And a subtitle paragraph is displayed below the heading
-  And a CTA button labeled "Our Services" links to the services section
-  And the button has pill shape (border-radius: 30px) and lime-green background
+
+#### Scenario: Renders full-viewport hero with background image and CTA
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero section is displayed with background image
+- **AND** the heading reads "We Are Digital Services"
+- **AND** a subtitle paragraph is displayed below the heading
+- **AND** a CTA button labeled "Our Services" links to the services section
+- **AND** the button has pill shape (border-radius: 30px) and lime-green background
 
 ### About Section
-Scenario: Renders About Us section with text-image-text layout
-  Given the user scrolls to the About section
-  Then the section title reads "About Us"
-  And three columns are displayed: text on left, image in center, text on right
-  And each text column contains two paragraphs of descriptive content
+
+#### Scenario: Renders About Us section with text-image-text layout
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** the section title reads "About Us"
+- **AND** three columns are displayed: text on left, image in center, text on right
+- **AND** each text column contains two paragraphs of descriptive content
 
 ### Services Section
-Scenario: Renders 6 service cards in a 2-column grid
-  Given the user scrolls to the Services section
-  Then the section title reads "Services" (centered)
-  And 6 service cards are displayed in a 2-column grid
-  And each card has an icon, a title, and a description paragraph
-  And the services are: Content Marketing, Social Media Marketing, Brand & Logo Design, Social Media Advertising, Social Media Advertising, Web Design / Development
+
+#### Scenario: Renders 6 service cards in a 2-column grid
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the section title reads "Services" (centered)
+- **AND** 6 service cards are displayed in a 2-column grid
+- **AND** each card has an icon, a title, and a description paragraph
+- **AND** the services are: Content Marketing, Social Media Marketing, Brand & Logo Design, Social Media Advertising, Social Media Advertising, Web Design / Development
 
 ### Projects Section
-Scenario: Renders filterable gallery with category buttons
-  Given the user scrolls to the Projects section
-  Then the section title reads "Projects" (centered)
-  And filter buttons are displayed: All, Web, Design, Brand
-  And "All" is the default active filter
-  And 12 project images are displayed in a 3-column grid with no gaps
-  And clicking a filter button shows only items matching that category
-  And hovering an image shows a search icon overlay
+
+#### Scenario: Renders filterable gallery with category buttons
+
+- **GIVEN** the user scrolls to the Projects section
+- **THEN** the section title reads "Projects" (centered)
+- **AND** filter buttons are displayed: All, Web, Design, Brand
+- **AND** "All" is the default active filter
+- **AND** 12 project images are displayed in a 3-column grid with no gaps
+- **AND** clicking a filter button shows only items matching that category
+- **AND** hovering an image shows a search icon overlay
 
 ### Testimonials Section
-Scenario: Renders client testimonials in a carousel on lime-green background
-  Given the user scrolls to the Testimonials section
-  Then the section has a lime-green background
-  And the section title reads "What Client Are Sayings" (white text, centered)
-  And a carousel displays 3 testimonial slides
-  And each slide has a quote and a cite with author name
-  And the carousel auto-advances or allows manual navigation
+
+#### Scenario: Renders client testimonials in a carousel on lime-green background
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the section has a lime-green background
+- **AND** the section title reads "What Client Are Sayings" (white text, centered)
+- **AND** a carousel displays 3 testimonial slides
+- **AND** each slide has a quote and a cite with author name
+- **AND** the carousel auto-advances or allows manual navigation
 
 ### Blog Section
-Scenario: Renders 3 blog post cards on light background
-  Given the user scrolls to the Blog section
-  Then the section has a light background
-  And the section title reads "Blog Posts" (centered)
-  And 3 blog cards are displayed in a 3-column grid
-  And each card has a featured image, a white content area with title, date, description, and "Read More" link
+
+#### Scenario: Renders 3 blog post cards on light background
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** the section has a light background
+- **AND** the section title reads "Blog Posts" (centered)
+- **AND** 3 blog cards are displayed in a 3-column grid
+- **AND** each card has a featured image, a white content area with title, date, description, and "Read More" link
 
 ### Contact Section
-Scenario: Renders contact form with office locations
-  Given the user scrolls to the Contact section
-  Then the section title reads "Contact Form" (centered)
-  And a form is displayed on the left with fields: First name, Full name, Email address, Subject, Message textarea
-  And a "Send Message" button with pill shape is below the form
-  And on the right, two office locations are listed (London, New York) with Address, Phone, Email for each
+
+#### Scenario: Renders contact form with office locations
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** the section title reads "Contact Form" (centered)
+- **AND** a form is displayed on the left with fields: First name, Full name, Email address, Subject, Message textarea
+- **AND** a "Send Message" button with pill shape is below the form
+- **AND** on the right, two office locations are listed (London, New York) with Address, Phone, Email for each
 
 ### Footer
-Scenario: Renders light footer with columns and social icons
-  Given the page footer
-  Then the footer has a light background
-  And four columns are displayed: address, Services links, Resources links, Templates links
-  And social icons are displayed (Twitter, Facebook, Instagram, Dribbble, LinkedIn)
-  And a copyright line with "Component Dock" link replaces the original attribution
+
+#### Scenario: Renders light footer with columns and social icons
+
+- **GIVEN** the page footer
+- **THEN** the footer has a light background
+- **AND** four columns are displayed: address, Services links, Resources links, Templates links
+- **AND** social icons are displayed (Twitter, Facebook, Instagram, Dribbble, LinkedIn)
+- **AND** a copyright line with "Component Dock" link replaces the original attribution
 
 ## Verification Checklist
 

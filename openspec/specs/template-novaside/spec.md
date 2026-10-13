@@ -43,96 +43,100 @@ menu toggle is positioned at the top-right of the main content area. When the
 sidebar is open, the main content shifts left by 380px with a semi-transparent
 overlay behind.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Sidebar Panel
 
-```gherkin
 Feature: NovaSide — slide-in sidebar panel
 
-  Scenario: Sidebar hidden by default
-    Given the page loads
-    Then the sidebar panel is translated off-screen to the right
-    And the main content fills the full viewport width
+#### Scenario: Sidebar hidden by default
 
-  Scenario: Sidebar opens on hamburger click
-    Given the page loads
-    When the user clicks the hamburger toggle button
-    Then the sidebar slides in from the right
-    And the main content shifts left by 380px
-    And a dark overlay appears behind the sidebar
-    And the hamburger icon transforms to an X
+- **GIVEN** the page loads
+- **THEN** the sidebar panel is translated off-screen to the right
+- **AND** the main content fills the full viewport width
 
-  Scenario: Sidebar closes on toggle click when open
-    Given the sidebar is open
-    When the user clicks the hamburger toggle button
-    Then the sidebar slides out to the right
-    And the main content returns to full width
-    And the overlay disappears
-    And the hamburger icon returns to three bars
+#### Scenario: Sidebar opens on hamburger click
 
-  Scenario: Sidebar closes on overlay click
-    Given the sidebar is open
-    When the user clicks the dark overlay
-    Then the sidebar closes
-```
+- **GIVEN** the page loads
+- **WHEN** the user clicks the hamburger toggle button
+- **THEN** the sidebar slides in from the right
+- **AND** the main content shifts left by 380px
+- **AND** a dark overlay appears behind the sidebar
+- **AND** the hamburger icon transforms to an X
+
+#### Scenario: Sidebar closes on toggle click when open
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks the hamburger toggle button
+- **THEN** the sidebar slides out to the right
+- **AND** the main content returns to full width
+- **AND** the overlay disappears
+- **AND** the hamburger icon returns to three bars
+
+#### Scenario: Sidebar closes on overlay click
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks the dark overlay
+- **THEN** the sidebar closes
 
 ### Sidebar Content
 
-```gherkin
 Feature: NovaSide — sidebar content
 
-  Scenario: Heading is displayed
-    Given the sidebar is open
-    Then a heading reads "Share Your Article to the World"
-    And the heading uses bold weight at 3rem font size
+#### Scenario: Heading is displayed
 
-  Scenario: Description text is shown
-    Given the sidebar is open
-    Then a descriptive paragraph is visible below the heading
+- **GIVEN** the sidebar is open
+- **THEN** a heading reads "Share Your Article to the World"
+- **AND** the heading uses bold weight at 3rem font size
 
-  Scenario: Email signup form is present
-    Given the sidebar is open
-    Then an email input field is visible with placeholder "Enter your email"
-    And a "Sign Up" submit button is visible below the input
-    And the button is full-width with white background and black text
-```
+#### Scenario: Description text is shown
+
+- **GIVEN** the sidebar is open
+- **THEN** a descriptive paragraph is visible below the heading
+
+#### Scenario: Email signup form is present
+
+- **GIVEN** the sidebar is open
+- **THEN** an email input field is visible with placeholder "Enter your email"
+- **AND** a "Sign Up" submit button is visible below the input
+- **AND** the button is full-width with white background and black text
 
 ### Post Grid (Main Content)
 
-```gherkin
 Feature: NovaSide — post grid
 
-  Scenario: Posts are displayed in a 2-column grid
-    Given the page loads
-    Then the main content area shows posts in a 2-column grid layout
-    And each post entry has a thumbnail image on the left
-    And each post entry has a title and a date on the right
+#### Scenario: Posts are displayed in a 2-column grid
 
-  Scenario: Post entries are responsive
-    Given the viewport is narrower than 768px
-    Then the post grid collapses to a single column
+- **GIVEN** the page loads
+- **THEN** the main content area shows posts in a 2-column grid layout
+- **AND** each post entry has a thumbnail image on the left
+- **AND** each post entry has a title and a date on the right
 
-  Scenario: Post thumbnail is 80px square
-    Given a post entry is rendered
-    Then the thumbnail is 80x80 pixels with no border radius
-```
+#### Scenario: Post entries are responsive
+
+- **GIVEN** the viewport is narrower than 768px
+- **THEN** the post grid collapses to a single column
+
+#### Scenario: Post thumbnail is 80px square
+
+- **GIVEN** a post entry is rendered
+- **THEN** the thumbnail is 80x80 pixels with no border radius
 
 ### Hamburger Toggle
 
-```gherkin
 Feature: NovaSide — hamburger toggle
 
-  Scenario: Hamburger button is visible
-    Given the page loads
-    Then a hamburger toggle button is visible at the top-right
-    And it consists of three horizontal bars
+#### Scenario: Hamburger button is visible
 
-  Scenario: Hamburger animates to X when active
-    Given the sidebar is open
-    Then the middle bar fades out
-    And the top and bottom bars rotate to form an X shape
-```
+- **GIVEN** the page loads
+- **THEN** a hamburger toggle button is visible at the top-right
+- **AND** it consists of three horizontal bars
+
+#### Scenario: Hamburger animates to X when active
+
+- **GIVEN** the sidebar is open
+- **THEN** the middle bar fades out
+- **AND** the top and bottom bars rotate to form an X shape
 
 ## Verification checklist
 

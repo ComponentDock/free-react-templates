@@ -56,81 +56,75 @@ The template consists of a single modal component with a split-screen layout:
      - Description paragraph
      - Social action bar: heart (count 25), message (count 10), add/bookmark (count 55)
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Modal trigger button renders
-```gherkin
-Given the page loads
-When the user views the body
-Then a "Launch modal" button is visible in the center of the page
-And the button is styled with Bootstrap btn-secondary
-```
+### Feature: ReviewCard template behaviour
 
-### Scenario: Modal opens on button click
-```gherkin
-Given the page is loaded
-When the user clicks the "Launch modal" button
-Then a centered modal appears
-And the modal has a split-screen layout
-And the modal is semi-transparent backdrop with the modal content centered
-```
+#### Scenario: Modal trigger button renders
 
-### Scenario: Modal contains product image panel
-```gherkin
-Given the modal is open
-When the user views the left panel
-Then a product image fills 50% of the modal width
-And a price badge ("$2000") is overlaid on the top-left of the image
-And the price badge text is white
-```
+- **GIVEN** the page loads
+- **WHEN** the user views the body
+- **THEN** a "Launch modal" button is visible in the center of the page
+- **AND** the button is styled with Bootstrap btn-secondary
 
-### Scenario: Modal contains review content panel
-```gherkin
-Given the modal is open
-When the user views the right panel
-Then a share icon is in the top-right corner
-And a product heading "Grand Prix 4000" is displayed
-And the heading has a decorative centered gray underline below it
-And a star rating shows 4 filled yellow stars and 1 empty star
-And a description paragraph is shown in gray text
-```
+#### Scenario: Modal opens on button click
 
-### Scenario: Social actions bar displays correctly
-```gherkin
-Given the modal is open
-When the user views the bottom of the right panel
-Then three social actions are displayed in a row
-And the heart action shows a count of "25" with red icon
-And the message action shows a count of "10" with blue icon
-And the add/bookmark action shows a count of "55" with blue icon
-And each action is clickable (linked to #)
-```
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a centered modal appears
+- **AND** the modal has a split-screen layout
+- **AND** the modal is semi-transparent backdrop with the modal content centered
 
-### Scenario: Modal closes
-```gherkin
-Given the modal is open
-When the user clicks the backdrop area outside the modal content
-Then the modal closes and the trigger button is visible again
-```
+#### Scenario: Modal contains product image panel
 
-### Scenario: Modal responsive layout
-```gherkin
-Given the modal is open on a desktop viewport
-Then the split-screen layout shows image on left and content on right
-When the modal is viewed on a smaller viewport
-Then the modal remains centered and scrollable within the viewport
-```
+- **GIVEN** the modal is open
+- **WHEN** the user views the left panel
+- **THEN** a product image fills 50% of the modal width
+- **AND** a price badge ("$2000") is overlaid on the top-left of the image
+- **AND** the price badge text is white
 
-### Scenario: Design token fidelity
-```gherkin
-Given the modal is rendered
-Then the modal background is #efefef
-And the modal border-radius is 7px
-And the modal shadow is 0 10px 50px -10px rgba(0,0,0,0.9)
-And the heading color is #000
-And the body text color is #777
-And the font-family is Roboto or system fallback
-```
+#### Scenario: Modal contains review content panel
+
+- **GIVEN** the modal is open
+- **WHEN** the user views the right panel
+- **THEN** a share icon is in the top-right corner
+- **AND** a product heading "Grand Prix 4000" is displayed
+- **AND** the heading has a decorative centered gray underline below it
+- **AND** a star rating shows 4 filled yellow stars and 1 empty star
+- **AND** a description paragraph is shown in gray text
+
+#### Scenario: Social actions bar displays correctly
+
+- **GIVEN** the modal is open
+- **WHEN** the user views the bottom of the right panel
+- **THEN** three social actions are displayed in a row
+- **AND** the heart action shows a count of "25" with red icon
+- **AND** the message action shows a count of "10" with blue icon
+- **AND** the add/bookmark action shows a count of "55" with blue icon
+- **AND** each action is clickable (linked to #)
+
+#### Scenario: Modal closes
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the backdrop area outside the modal content
+- **THEN** the modal closes and the trigger button is visible again
+
+#### Scenario: Modal responsive layout
+
+- **GIVEN** the modal is open on a desktop viewport
+- **THEN** the split-screen layout shows image on left and content on right
+- **WHEN** the modal is viewed on a smaller viewport
+- **THEN** the modal remains centered and scrollable within the viewport
+
+#### Scenario: Design token fidelity
+
+- **GIVEN** the modal is rendered
+- **THEN** the modal background is #efefef
+- **AND** the modal border-radius is 7px
+- **AND** the modal shadow is 0 10px 50px -10px rgba(0,0,0,0.9)
+- **AND** the heading color is #000
+- **AND** the body text color is #777
+- **AND** the font-family is Roboto or system fallback
 
 ## Verification checklist
 

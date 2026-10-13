@@ -103,46 +103,54 @@ through a `snippet.js` script. No build step — plain CSS.
 - Full-viewport scenic mountain landscape image, `center center/cover no-repeat`
 - Original asset: `bg-img-01.jpg` — use placeholder: `https://picsum.photos/seed/voyagepick/1920/1080`
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with scenic background
-  Given the user opens the Voyagepick page
-  Then the background covers the full viewport
-  And a centered card is visible in the middle of the page
+### Feature: Voyagepick template behaviour
 
-### Scenario: Tab bar displays three tabs
-  Given the card is visible
-  Then three tabs are displayed: "HOTELS", "CAR", "FLIGHT"
-  And the tab bar has a red background
-  And the first tab ("HOTELS") is active by default
+#### Scenario: Page renders with scenic background
 
-### Scenario: Clicking a tab switches the visible panel
-  Given the "HOTELS" tab is active
-  When the user clicks the "FLIGHT" tab
-  Then the flight panel is displayed
-  And the hotels panel is hidden
-  And the "FLIGHT" tab text is bright white
-  And the other tab texts are dimmed
+- **GIVEN** the user opens the Voyagepick page
+- **THEN** the background covers the full viewport
+- **AND** a centered card is visible in the middle of the page
 
-### Scenario: Active tab shows downward caret
-  Given the "HOTELS" tab is active
-  Then a small red triangle appears below the "HOTELS" tab
+#### Scenario: Tab bar displays three tabs
 
-### Scenario: Hotels panel has correct fields
-  Given the "HOTELS" tab is active
-  Then the following fields are visible:
+- **GIVEN** the card is visible
+- **THEN** three tabs are displayed: "HOTELS", "CAR", "FLIGHT"
+- **AND** the tab bar has a red background
+- **AND** the first tab ("HOTELS") is active by default
+
+#### Scenario: Clicking a tab switches the visible panel
+
+- **GIVEN** the "HOTELS" tab is active
+- **WHEN** the user clicks the "FLIGHT" tab
+- **THEN** the flight panel is displayed
+- **AND** the hotels panel is hidden
+- **AND** the "FLIGHT" tab text is bright white
+- **AND** the other tab texts are dimmed
+
+#### Scenario: Active tab shows downward caret
+
+- **GIVEN** the "HOTELS" tab is active
+- **THEN** a small red triangle appears below the "HOTELS" tab
+
+#### Scenario: Hotels panel has correct fields
+
+- **GIVEN** the "HOTELS" tab is active
+- **THEN** the following fields are visible:
     | Label | Type |
     | WHERE | text input |
     | CHECK-IN | date input |
     | CHECK-OUT | date input |
     | TRAVELLERS | dropdown selector |
-  And a checkbox "Add a flight" is visible (checked by default)
-  And a checkbox "Add a car" is visible (unchecked)
-  And a green "SEARCH" button is visible
+- **AND** a checkbox "Add a flight" is visible (checked by default)
+- **AND** a checkbox "Add a car" is visible (unchecked)
+- **AND** a green "SEARCH" button is visible
 
-### Scenario: Car panel has correct fields
-  Given the user clicks the "CAR" tab
-  Then the following fields are visible:
+#### Scenario: Car panel has correct fields
+
+- **GIVEN** the user clicks the "CAR" tab
+- **THEN** the following fields are visible:
     | Label | Type |
     | LOCATION | text input |
     | DRIVER AGE | dropdown |
@@ -151,63 +159,71 @@ through a `snippet.js` script. No build step — plain CSS.
     | TIME | dropdown |
     | DROP OFF | date input |
     | TIME | dropdown |
-  And a green "SEARCH" button is visible
+- **AND** a green "SEARCH" button is visible
 
-### Scenario: Flight panel has correct fields
-  Given the user clicks the "FLIGHT" tab
-  Then the following fields are visible:
+#### Scenario: Flight panel has correct fields
+
+- **GIVEN** the user clicks the "FLIGHT" tab
+- **THEN** the following fields are visible:
     | Label | Type |
     | ORIGIN | text input |
     | DESTINATION | text input |
     | DEPARTING | date input |
     | RETURNING | date input |
-  And checkboxes "First Class", "Business", "Economy" are visible
-  And "Economy" is checked by default
-  And a green "SEARCH" button is visible
+- **AND** checkboxes "First Class", "Business", "Economy" are visible
+- **AND** "Economy" is checked by default
+- **AND** a green "SEARCH" button is visible
 
-### Scenario: Travellers dropdown opens with room selector
-  Given the "HOTELS" tab is active
-  When the user clicks the TRAVELLERS input
-  Then a dropdown popover opens
-  And it shows "Room 1" with Adults and Children counters
-  And minus/plus circular buttons are visible for each counter
-  And an "Add room" link is visible at the bottom
+#### Scenario: Travellers dropdown opens with room selector
 
-### Scenario: Minus button decrements traveller count
-  Given the travellers dropdown is open
-  And the Adults count is 1
-  When the user clicks the minus button for Adults
-  Then the Adults count becomes 0
-  And the minus button is at minimum (count 0)
+- **GIVEN** the "HOTELS" tab is active
+- **WHEN** the user clicks the TRAVELLERS input
+- **THEN** a dropdown popover opens
+- **AND** it shows "Room 1" with Adults and Children counters
+- **AND** minus/plus circular buttons are visible for each counter
+- **AND** an "Add room" link is visible at the bottom
 
-### Scenario: Plus button increments traveller count
-  Given the travellers dropdown is open
-  When the user clicks the plus button for Children
-  Then the Children count increments by 1
+#### Scenario: Minus button decrements traveller count
 
-### Scenario: Form inputs have underline style
-  Given any form panel is visible
-  Then all text and date inputs have a gray bottom border
-  And input labels are uppercase and small
-  And input text is bold and larger than label text
+- **GIVEN** the travellers dropdown is open
+- **AND** the Adults count is 1
+- **WHEN** the user clicks the minus button for Adults
+- **THEN** the Adults count becomes 0
+- **AND** the minus button is at minimum (count 0)
 
-### Scenario: Search button is full-width green
-  Given any form panel is visible
-  Then the SEARCH button spans the full card width
-  And the button background is green
-  And the button text is white uppercase bold
-  And on hover the button becomes darker green
+#### Scenario: Plus button increments traveller count
 
-### Scenario: Card has rounded corners and shadow
-  Given the card is rendered
-  Then the card has 10px border-radius
-  And the card has a box-shadow of 0 8px 20px rgba(0,0,0,0.15)
+- **GIVEN** the travellers dropdown is open
+- **WHEN** the user clicks the plus button for Children
+- **THEN** the Children count increments by 1
 
-### Scenario: Responsive layout on mobile
-  Given the viewport width is less than 768px
-  Then the card padding reduces
-  And side-by-side columns stack vertically
-  And the tab bar padding adjusts for smaller screens
+#### Scenario: Form inputs have underline style
+
+- **GIVEN** any form panel is visible
+- **THEN** all text and date inputs have a gray bottom border
+- **AND** input labels are uppercase and small
+- **AND** input text is bold and larger than label text
+
+#### Scenario: Search button is full-width green
+
+- **GIVEN** any form panel is visible
+- **THEN** the SEARCH button spans the full card width
+- **AND** the button background is green
+- **AND** the button text is white uppercase bold
+- **AND** on hover the button becomes darker green
+
+#### Scenario: Card has rounded corners and shadow
+
+- **GIVEN** the card is rendered
+- **THEN** the card has 10px border-radius
+- **AND** the card has a box-shadow of 0 8px 20px rgba(0,0,0,0.15)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the card padding reduces
+- **AND** side-by-side columns stack vertically
+- **AND** the tab bar padding adjusts for smaller screens
 
 ## Verification checklist
 

@@ -71,114 +71,105 @@ Extracted from `styles/main_styles.css` of the live preview.
 9. **Newsletter** — Left: subscribe form (email input + button). Right: weekly offer promo card
 10. **Footer** — Logo, social links, about text, useful links, contact form (name, email, message, send), contact info (address, phone, email, website)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Hero slider renders
-```gherkin
-Given the user visits the homepage
-Then a full-viewport hero section is visible
-And the hero displays the headline "find your home"
-And the hero contains navigation arrows
-```
+### Feature: Manor template behaviour
 
-### Scenario: Fixed header appears on scroll
-```gherkin
-Given the user is at the top of the page
-Then the header is transparent with white text
-When the user scrolls down
-Then the header background becomes navy (#0e1d41)
-And the header is fixed to the top of the viewport
-```
+#### Scenario: Hero slider renders
 
-### Scenario: Header navigation links
-```gherkin
-Given the header is visible
-Then the logo displays "manor"
-And the nav contains links: home, about us, listings, news, contact
-And a phone number is displayed in the header
-```
+- **GIVEN** the user visits the homepage
+- **THEN** a full-viewport hero section is visible
+- **AND** the hero displays the headline "find your home"
+- **AND** the hero contains navigation arrows
 
-### Scenario: Search box form
-```gherkin
-Given the search box is visible
-Then the search box has a dark navy background
-And the title reads "search your home"
-And the form contains dropdown selects for: keywords, property ID, property status, location, property type, bedrooms, bathrooms, min price, max price, min sq ft, max sq ft
-And a search submit button is present
-And specific features checkboxes are available
-```
+#### Scenario: Fixed header appears on scroll
 
-### Scenario: Featured properties cards
-```gherkin
-Given the featured properties section is visible
-Then the section title reads "featured properties"
-And the subtitle reads "See our best offers"
-And 3 property cards are displayed
-And each card has an image, a "featured" badge, title, description
-And each card shows room details: bedrooms, bathrooms, area, patio, garage
-And each card has amenity tags
-And each card has a price box with "For Sale" and a price
-```
+- **GIVEN** the user is at the top of the page
+- **THEN** the header is transparent with white text
+- **WHEN** the user scrolls down
+- **THEN** the header background becomes navy (#0e1d41)
+- **AND** the header is fixed to the top of the viewport
 
-### Scenario: Testimonials carousel
-```gherkin
-Given the testimonials section is visible
-Then a parallax background image is displayed
-And the section title reads "clients testimonials"
-And testimonial items show a quote, user name, and user title
-And the carousel allows navigation between testimonials
-```
+#### Scenario: Header navigation links
 
-### Scenario: Workflow steps
-```gherkin
-Given the workflow section is visible
-Then the section title reads "see how we operate"
-And the subtitle reads "What you need to do"
-And 3 steps are displayed in a row
-And step 01 is "Choose a Location"
-And step 02 is "Find the Perfect Home"
-And step 03 is "Move in your new life"
-And each step has a circular illustration with a number
-```
+- **GIVEN** the header is visible
+- **THEN** the logo displays "manor"
+- **AND** the nav contains links: home, about us, listings, news, contact
+- **AND** a phone number is displayed in the header
 
-### Scenario: Cities carousel
-```gherkin
-Given the cities section is visible
-Then the section title reads "cities clients prefer"
-And city cards show: Miami, Dublin, Vienna, Marbella, New York, Geneva
-And carousel navigation arrows are present
-```
+#### Scenario: Search box form
 
-### Scenario: CTA section
-```gherkin
-Given the CTA section is visible
-Then the heading reads "Do you want to talk with one of our real estate experts?"
-And "real estate experts" is highlighted in orange
-And an orange phone number button is displayed
-```
+- **GIVEN** the search box is visible
+- **THEN** the search box has a dark navy background
+- **AND** the title reads "search your home"
+- **AND** the form contains dropdown selects for: keywords, property ID, property status, location, property type, bedrooms, bathrooms, min price, max price, min sq ft, max sq ft
+- **AND** a search submit button is present
+- **AND** specific features checkboxes are available
 
-### Scenario: Newsletter section
-```gherkin
-Given the newsletter section is visible
-Then the background is dark navy
-And the heading reads "subscribe to our newsletter"
-And the subtitle reads "Get the latest offers"
-And an email input field is present
-And an orange "subscribe" button is present
-And a weekly offer promo card is displayed alongside
-```
+#### Scenario: Featured properties cards
 
-### Scenario: Footer
-```gherkin
-Given the footer is visible
-Then the background is dark navy (#07122c)
-And the logo "manor" is displayed
-And social media icon links are present (Pinterest, Facebook, Twitter, Dribbble, Behance)
-And useful links are listed
-And a contact form with name, email, message fields and a send button is present
-And contact info (address, phone, email, website) is displayed
-And the footer links to https://www.componentdock.com/
-```
+- **GIVEN** the featured properties section is visible
+- **THEN** the section title reads "featured properties"
+- **AND** the subtitle reads "See our best offers"
+- **AND** 3 property cards are displayed
+- **AND** each card has an image, a "featured" badge, title, description
+- **AND** each card shows room details: bedrooms, bathrooms, area, patio, garage
+- **AND** each card has amenity tags
+- **AND** each card has a price box with "For Sale" and a price
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a parallax background image is displayed
+- **AND** the section title reads "clients testimonials"
+- **AND** testimonial items show a quote, user name, and user title
+- **AND** the carousel allows navigation between testimonials
+
+#### Scenario: Workflow steps
+
+- **GIVEN** the workflow section is visible
+- **THEN** the section title reads "see how we operate"
+- **AND** the subtitle reads "What you need to do"
+- **AND** 3 steps are displayed in a row
+- **AND** step 01 is "Choose a Location"
+- **AND** step 02 is "Find the Perfect Home"
+- **AND** step 03 is "Move in your new life"
+- **AND** each step has a circular illustration with a number
+
+#### Scenario: Cities carousel
+
+- **GIVEN** the cities section is visible
+- **THEN** the section title reads "cities clients prefer"
+- **AND** city cards show: Miami, Dublin, Vienna, Marbella, New York, Geneva
+- **AND** carousel navigation arrows are present
+
+#### Scenario: CTA section
+
+- **GIVEN** the CTA section is visible
+- **THEN** the heading reads "Do you want to talk with one of our real estate experts?"
+- **AND** "real estate experts" is highlighted in orange
+- **AND** an orange phone number button is displayed
+
+#### Scenario: Newsletter section
+
+- **GIVEN** the newsletter section is visible
+- **THEN** the background is dark navy
+- **AND** the heading reads "subscribe to our newsletter"
+- **AND** the subtitle reads "Get the latest offers"
+- **AND** an email input field is present
+- **AND** an orange "subscribe" button is present
+- **AND** a weekly offer promo card is displayed alongside
+
+#### Scenario: Footer
+
+- **GIVEN** the footer is visible
+- **THEN** the background is dark navy (#07122c)
+- **AND** the logo "manor" is displayed
+- **AND** social media icon links are present (Pinterest, Facebook, Twitter, Dribbble, Behance)
+- **AND** useful links are listed
+- **AND** a contact form with name, email, message fields and a send button is present
+- **AND** contact info (address, phone, email, website) is displayed
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification checklist
 

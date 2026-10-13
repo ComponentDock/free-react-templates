@@ -91,148 +91,147 @@ order is:
     Footer MUST link `https://www.componentdock.com/` (branded
     "Component Dock").
 
-## Gherkin requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Physiohub Header
 
-  Scenario: Desktop navigation displays all links
-    Given the user is on a desktop viewport (≥1024px)
-    When the page loads
-    Then a sticky header is visible
-    And the logo is displayed on the left
-    And navigation links are visible: Home, About, Services, Blog, Contact
-    And a CTA button (e.g. "Book Appointment") is visible on the right
+#### Scenario: Desktop navigation displays all links
 
-  Scenario: Multi-level dropdown opens on hover/click
-    Given the user is on a desktop viewport
-    When the user hovers over or clicks a nav item with a submenu
-    Then a dropdown menu appears below the parent link
-    And the dropdown contains sub-navigation items
+- **GIVEN** the user is on a desktop viewport (≥1024px)
+- **WHEN** the page loads
+- **THEN** a sticky header is visible
+- **AND** the logo is displayed on the left
+- **AND** navigation links are visible: Home, About, Services, Blog, Contact
+- **AND** a CTA button (e.g. "Book Appointment") is visible on the right
 
-  Scenario: Mobile hamburger menu opens on click
-    Given the user is on a mobile viewport (<1024px)
-    When the user taps the hamburger icon
-    Then a slide-down or overlay mobile menu appears
-    And all navigation links are accessible in the mobile menu
+#### Scenario: Multi-level dropdown opens on hover/click
 
-  Scenario: Header becomes sticky on scroll
-    Given the user has scrolled past the hero section
-    Then the header remains fixed at the top of the viewport
-    And the header background becomes solid (white or semi-transparent)
-```
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the user hovers over or clicks a nav item with a submenu
+- **THEN** a dropdown menu appears below the parent link
+- **AND** the dropdown contains sub-navigation items
+
+#### Scenario: Mobile hamburger menu opens on click
+
+- **GIVEN** the user is on a mobile viewport (<1024px)
+- **WHEN** the user taps the hamburger icon
+- **THEN** a slide-down or overlay mobile menu appears
+- **AND** all navigation links are accessible in the mobile menu
+
+#### Scenario: Header becomes sticky on scroll
+
+- **GIVEN** the user has scrolled past the hero section
+- **THEN** the header remains fixed at the top of the viewport
+- **AND** the header background becomes solid (white or semi-transparent)
 
 ### Hero
 
-```gherkin
 Feature: Physiohub Hero Section
 
-  Scenario: Hero displays typewriter headline
-    Given the user is on the hero section
-    Then a headline text is displayed
-    And the headline features a typewriter/rotating text animation
-    And a subheadline paragraph is visible below
-    And at least one CTA button is visible
+#### Scenario: Hero displays typewriter headline
 
-  Scenario: Hero has parallax background
-    Given the user scrolls the page
-    Then the hero background image moves at a different speed than the
-      foreground content (parallax effect)
-```
+- **GIVEN** the user is on the hero section
+- **THEN** a headline text is displayed
+- **AND** the headline features a typewriter/rotating text animation
+- **AND** a subheadline paragraph is visible below
+- **AND** at least one CTA button is visible
+
+#### Scenario: Hero has parallax background
+
+- **GIVEN** the user scrolls the page
+- **THEN** the hero background image moves at a different speed than the
+foreground content (parallax effect)
 
 ### Services
 
-```gherkin
 Feature: Physiohub Services Section
 
-  Scenario: Services section displays service cards
-    Given the user scrolls to the services section
-    Then a section heading is visible (e.g. "Our Services")
-    And at least 3 service cards are displayed in a grid layout
-    And each card has an icon, title, and short description
+#### Scenario: Services section displays service cards
 
-  Scenario: Service cards are responsive
-    Given the user is on a mobile viewport
-    Then service cards stack vertically in a single column
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** a section heading is visible (e.g. "Our Services")
+- **AND** at least 3 service cards are displayed in a grid layout
+- **AND** each card has an icon, title, and short description
+
+#### Scenario: Service cards are responsive
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** service cards stack vertically in a single column
 
 ### Statistics
 
-```gherkin
 Feature: Physiohub Statistics Section
 
-  Scenario: Animated counters display on scroll
-    Given the user scrolls to the statistics section
-    Then at least 3 counter items are visible
-    And each counter animates from 0 to its target number
-    And each counter has a label (e.g. "Happy Patients", "Years Experience")
-```
+#### Scenario: Animated counters display on scroll
+
+- **GIVEN** the user scrolls to the statistics section
+- **THEN** at least 3 counter items are visible
+- **AND** each counter animates from 0 to its target number
+- **AND** each counter has a label (e.g. "Happy Patients", "Years Experience")
 
 ### Testimonials
 
-```gherkin
 Feature: Physiohub Testimonials Section
 
-  Scenario: Testimonials slider displays patient quotes
-    Given the user scrolls to the testimonials section
-    Then a section heading is visible (e.g. "Testimonials")
-    And at least 2 testimonial items are available in the slider
-    And each testimonial shows a quote, patient name, and optional photo
-    And navigation dots or arrows allow switching between testimonials
+#### Scenario: Testimonials slider displays patient quotes
 
-  Scenario: Testimonials auto-advance
-    Given the user is viewing the testimonials section
-    When 5 seconds pass without interaction
-    Then the slider advances to the next testimonial automatically
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a section heading is visible (e.g. "Testimonials")
+- **AND** at least 2 testimonial items are available in the slider
+- **AND** each testimonial shows a quote, patient name, and optional photo
+- **AND** navigation dots or arrows allow switching between testimonials
+
+#### Scenario: Testimonials auto-advance
+
+- **GIVEN** the user is viewing the testimonials section
+- **WHEN** 5 seconds pass without interaction
+- **THEN** the slider advances to the next testimonial automatically
 
 ### Blog
 
-```gherkin
 Feature: Physiohub Blog Section
 
-  Scenario: Blog section shows recent posts
-    Given the user scrolls to the blog section
-    Then a section heading is visible (e.g. "Latest News")
-    And at least 2 blog post cards are displayed
-    And each card has an image, title, date, and excerpt
-```
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a section heading is visible (e.g. "Latest News")
+- **AND** at least 2 blog post cards are displayed
+- **AND** each card has an image, title, date, and excerpt
 
 ### Contact
 
-```gherkin
 Feature: Physiohub Contact Section
 
-  Scenario: Contact form is displayed and functional
-    Given the user scrolls to the contact section
-    Then a contact form is visible with fields: Name, Email, Phone,
-      Message
-    And a submit button is visible
-    And form validation shows errors for empty required fields
+#### Scenario: Contact form is displayed and functional
 
-  Scenario: Contact form validates email format
-    Given the user enters "invalid-email" in the Email field
-    When the user submits the form
-    Then an email format validation error is displayed
-```
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a contact form is visible with fields: Name, Email, Phone,
+Message
+- **AND** a submit button is visible
+- **AND** form validation shows errors for empty required fields
+
+#### Scenario: Contact form validates email format
+
+- **GIVEN** the user enters "invalid-email" in the Email field
+- **WHEN** the user submits the form
+- **THEN** an email format validation error is displayed
 
 ### Footer
 
-```gherkin
 Feature: Physiohub Footer
 
-  Scenario: Footer displays all required content
-    Given the user scrolls to the footer
-    Then the footer has a dark background
-    And it contains the logo and a brief description
-    And quick links are displayed
-    And contact information is shown (address, phone, email)
-    And social media icon links are present
-    And a "Made with Component Dock" link to
-      https://www.componentdock.com/ is visible
-```
+#### Scenario: Footer displays all required content
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** it contains the logo and a brief description
+- **AND** quick links are displayed
+- **AND** contact information is shown (address, phone, email)
+- **AND** social media icon links are present
+- **AND** a "Made with Component Dock" link to
+https://www.componentdock.com/ is visible
 
 ## Verification checklist
 

@@ -44,89 +44,103 @@ Extracted from the live preview CSS (`css/style.css`):
 - **Footer:** dark (#1F1F1F), 4 columns — logo+description, services links, useful links, address+contact
 - **Copyright bar:** centered, "All rights reserved | This template is made with Colorlib"
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: BizHive Business Consulting Template
 
 #### Scenario: Top Bar renders contact information
-- **Given** the user visits the BizHive homepage
-- **Then** the top bar displays social media icons (LinkedIn, Facebook, Google+)
-- **And** the top bar displays email "info@docmed.com" and phone "1601-609 6780"
+
+- **GIVEN** the user visits the BizHive homepage
+- **THEN** the top bar displays social media icons (LinkedIn, Facebook, Google+)
+- **AND** the top bar displays email "info@docmed.com" and phone "1601-609 6780"
 
 #### Scenario: Navigation bar is visible and functional
-- **Given** the user visits the BizHive homepage
-- **Then** the navbar shows the BizHive logo (green triangle + text)
-- **And** navigation links include: Home, About, Services, Blog, Pages, Contact
-- **And** a green "Get a Quote" CTA button is displayed on the right
+
+- **GIVEN** the user visits the BizHive homepage
+- **THEN** the navbar shows the BizHive logo (green triangle + text)
+- **AND** navigation links include: Home, About, Services, Blog, Pages, Contact
+- **AND** a green "Get a Quote" CTA button is displayed on the right
 
 #### Scenario: Hero carousel displays slides
-- **Given** the user visits the BizHive homepage
-- **Then** a hero carousel is displayed with auto-rotating slides
-- **And** each slide has a dark overlay background image
-- **And** each slide contains a headline ("Grow Big With BizHive Business"), subtitle text
-- **And** two CTA buttons: green "Our Services" and white outline "See How it Work" with play icon
+
+- **GIVEN** the user visits the BizHive homepage
+- **THEN** a hero carousel is displayed with auto-rotating slides
+- **AND** each slide has a dark overlay background image
+- **AND** each slide contains a headline ("Grow Big With BizHive Business"), subtitle text
+- **AND** two CTA buttons: green "Our Services" and white outline "See How it Work" with play icon
 
 #### Scenario: Services section shows three service cards
-- **Given** the user scrolls to the services section
-- **Then** the heading reads "Explore Our Solutions"
-- **And** three service cards are displayed: Invoicing, Business Growth, Problem Solving
-- **And** each card has a background image with dark overlay and hover effect
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading reads "Explore Our Solutions"
+- **AND** three service cards are displayed: Invoicing, Business Growth, Problem Solving
+- **AND** each card has a background image with dark overlay and hover effect
 
 #### Scenario: About section displays company information
-- **Given** the user scrolls to the about section
-- **Then** the heading reads "The Largest Business Expert"
-- **And** a two-column layout shows: left image, right descriptive text with feature bullets
-- **And** a green "About Us" CTA button is displayed
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading reads "The Largest Business Expert"
+- **AND** a two-column layout shows: left image, right descriptive text with feature bullets
+- **AND** a green "About Us" CTA button is displayed
 
 #### Scenario: Counter section displays statistics
-- **Given** the user scrolls to the counter section
-- **Then** three counters are displayed: Total Projects (520), On Going Projects (244), Job Success (90%)
-- **And** the counter area has a dark background
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** three counters are displayed: Total Projects (520), On Going Projects (244), Job Success (90%)
+- **AND** the counter area has a dark background
 
 #### Scenario: Portfolio section shows recent works
-- **Given** the user scrolls to the portfolio section
-- **Then** the heading reads "Our Recent Works"
-- **And** six portfolio items are displayed in a 2×3 grid
-- **And** each item shows "Product Branding" category with dark overlay on hover
-- **And** a green "More Works" CTA button is displayed
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** the heading reads "Our Recent Works"
+- **AND** six portfolio items are displayed in a 2×3 grid
+- **AND** each item shows "Product Branding" category with dark overlay on hover
+- **AND** a green "More Works" CTA button is displayed
 
 #### Scenario: Feature cards section shows capabilities
-- **Given** the user scrolls to the feature section
-- **Then** three feature cards are displayed: Unlimited Control, Rapidly Growth, Problem Solving
-- **And** each card has an icon and brief description text
+
+- **GIVEN** the user scrolls to the feature section
+- **THEN** three feature cards are displayed: Unlimited Control, Rapidly Growth, Problem Solving
+- **AND** each card has an icon and brief description text
 
 #### Scenario: Financial solution CTA section
-- **Given** the user scrolls to the financial CTA section
-- **Then** the heading reads "Gives you the best Financial solution for business"
-- **And** descriptive text is displayed below the heading
+
+- **GIVEN** the user scrolls to the financial CTA section
+- **THEN** the heading reads "Gives you the best Financial solution for business"
+- **AND** descriptive text is displayed below the heading
 
 #### Scenario: Testimonials section displays client feedback
-- **Given** the user scrolls to the testimonials section
-- **Then** a testimonial carousel is displayed
-- **And** each testimonial shows a quote, client name ("Robert Jonson"), and role ("Business Owner")
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial carousel is displayed
+- **AND** each testimonial shows a quote, client name ("Robert Jonson"), and role ("Business Owner")
 
 #### Scenario: Call-to-action section
-- **Given** the user scrolls to the CTA section
-- **Then** the heading reads "Do you Have any Project?"
-- **And** a subtitle is displayed
-- **And** a white outline "Contact Us" button is shown on a dark background
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the heading reads "Do you Have any Project?"
+- **AND** a subtitle is displayed
+- **AND** a white outline "Contact Us" button is shown on a dark background
 
 #### Scenario: Footer with contact and navigation
-- **Given** the user scrolls to the footer
-- **Then** the footer has a dark background (#1F1F1F)
-- **And** four columns display: logo + description, Services links, Useful Links, Address + contact info
-- **And** a copyright bar reads "All rights reserved" with "Component Dock" attribution
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background (#1F1F1F)
+- **AND** four columns display: logo + description, Services links, Useful Links, Address + contact info
+- **AND** a copyright bar reads "All rights reserved" with "Component Dock" attribution
 
 #### Scenario: Footer links to Component Dock
-- **Given** the user inspects the footer
-- **Then** the footer contains a link to https://www.componentdock.com/
-- **And** the link text references "Component Dock"
+
+- **GIVEN** the user inspects the footer
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references "Component Dock"
 
 #### Scenario: Responsive design
-- **Given** the user views BizHive on a mobile viewport (≤768px)
-- **Then** the navbar collapses to a hamburger menu
-- **And** multi-column layouts stack to single column
-- **And** all text remains readable and buttons are tap-friendly
+
+- **GIVEN** the user views BizHive on a mobile viewport (≤768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** multi-column layouts stack to single column
+- **AND** all text remains readable and buttons are tap-friendly
 
 ## Verification Checklist
 

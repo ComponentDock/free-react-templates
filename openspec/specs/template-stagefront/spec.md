@@ -43,80 +43,91 @@ Recreation of ColorLib "Staging" — an architecture, interior design, and proje
 10. **Latest / Blog** — "Latest News" / "From our blog" with "View All" button, 3-column blog cards (image, category span, title, "Read more" link).
 11. **Footer** — Parallax bg image, top row = "Ready To Work With Us?" + email signup form; 4-column grid (logo + address + social, Company links, Services links, Get In Touch); copyright bar with terms/privacy.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Stagefront — Architecture & Interior Design Template
 
 #### Scenario: Header displays navigation and phone info
-  GIVEN the user loads the page
-  THEN a transparent header with centered navigation links is visible
-  AND a phone number "+01 123 456 789" appears on the right
-  AND the header becomes solid on scroll
+
+- **GIVEN** the user loads the page
+- **THEN** a transparent header with centered navigation links is visible
+- **AND** a phone number "+01 123 456 789" appears on the right
+- **AND** the header becomes solid on scroll
 
 #### Scenario: Hero carousel displays slide content
-  GIVEN the user loads the page
-  THEN a full-width hero slider is visible with a background image
-  AND a heading "Quality is not only our standard." is displayed in white
-  AND a "See Project" primary button is visible
-  AND a "Discover more" link is visible
-  AND social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero slider is visible with a background image
+- **AND** a heading "Quality is not only our standard." is displayed in white
+- **AND** a "See Project" primary button is visible
+- **AND** a "Discover more" link is visible
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
 
 #### Scenario: About section shows two-column layout
-  GIVEN the user scrolls to the about section
-  THEN a section label "who are we" appears in golden amber
-  AND a heading "We propose and discuss design rules" is displayed
-  AND body text paragraphs are visible
-  AND a "Learn More" button is shown
-  AND a right-side image with decorative frame is displayed
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a section label "who are we" appears in golden amber
+- **AND** a heading "We propose and discuss design rules" is displayed
+- **AND** body text paragraphs are visible
+- **AND** a "Learn More" button is shown
+- **AND** a right-side image with decorative frame is displayed
 
 #### Scenario: Projects carousel shows project cards
-  GIVEN the user scrolls to the projects section
-  THEN a heading "Latest projects" is displayed
-  AND project image cards are shown in a carousel
-  AND hovering a card reveals the project category and title on a white overlay
+
+- **GIVEN** the user scrolls to the projects section
+- **THEN** a heading "Latest projects" is displayed
+- **AND** project image cards are shown in a carousel
+- **AND** hovering a card reveals the project category and title on a white overlay
 
 #### Scenario: Services section shows four service cards
-  GIVEN the user scrolls to the services section
-  THEN a heading "What we do" is displayed
-  AND four service cards are visible (Interior Design, Office Design, Home Design, Design Drawing)
-  AND each card has an icon, title, and description paragraph
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a heading "What we do" is displayed
+- **AND** four service cards are visible (Interior Design, Office Design, Home Design, Design Drawing)
+- **AND** each card has an icon, title, and description paragraph
 
 #### Scenario: Stats counters display metrics
-  GIVEN the user scrolls to the counter section
-  THEN four stat counters are displayed (85 Projects Completed, 127 Happy Clients, 36 Awards Received, 74 Cups Of Coffee)
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** four stat counters are displayed (85 Projects Completed, 127 Happy Clients, 36 Awards Received, 74 Cups Of Coffee)
 
 #### Scenario: Testimonials carousel shows client quotes
-  GIVEN the user scrolls to the testimonials section
-  THEN a parallax background image is visible
-  AND a heading "What your clients say" is displayed
-  AND a testimonial carousel shows quote text
-  AND a client avatar carousel shows circular photos with names and roles
-  AND a logo carousel shows partner brand logos
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a parallax background image is visible
+- **AND** a heading "What your clients say" is displayed
+- **AND** a testimonial carousel shows quote text
+- **AND** a client avatar carousel shows circular photos with names and roles
+- **AND** a logo carousel shows partner brand logos
 
 #### Scenario: Team section shows team member cards
-  GIVEN the user scrolls to the team section
-  THEN a heading "Meet our team" is displayed
-  AND three team member cards are shown with background images
-  AND hovering a card reveals the member name, role, bio, and social links
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** a heading "Meet our team" is displayed
+- **AND** three team member cards are shown with background images
+- **AND** hovering a card reveals the member name, role, bio, and social links
 
 #### Scenario: Call to action section
-  GIVEN the user scrolls to the CTA section
-  THEN a parallax background is visible
-  AND a "Why choose us?" label is shown in golden amber
-  AND a long headline about the team is displayed
-  AND a solid golden "Contact Us" button is shown
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a parallax background is visible
+- **AND** a "Why choose us?" label is shown in golden amber
+- **AND** a long headline about the team is displayed
+- **AND** a solid golden "Contact Us" button is shown
 
 #### Scenario: Blog / Latest section shows posts
-  GIVEN the user scrolls to the blog section
-  THEN a heading "From our blog" is displayed
-  AND three blog post cards are shown with images, categories, titles, and "Read more" links
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a heading "From our blog" is displayed
+- **AND** three blog post cards are shown with images, categories, titles, and "Read more" links
 
 #### Scenario: Footer displays contact info and links
-  GIVEN the user scrolls to the footer
-  THEN a "Ready To Work With Us?" heading and email signup form are shown
-  AND Company, Services, and Get In Touch columns are displayed
-  AND a copyright bar with Terms of use and Privacy Policy is shown
-  AND a Component Dock link is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a "Ready To Work With Us?" heading and email signup form are shown
+- **AND** Company, Services, and Get In Touch columns are displayed
+- **AND** a copyright bar with Terms of use and Privacy Policy is shown
+- **AND** a Component Dock link is present
 
 ## Verification Checklist
 

@@ -44,50 +44,56 @@ Extracted from the screenshot (preview unreachable):
 - **Hero:** blue gradient (medium blue → lighter blue)
 - **Basic Elements / body:** white (#FFFFFF)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Toolshed — Tools Design UI Kit Landing
 
 #### Scenario: Navbar renders with logo and navigation links
-  Given the page loads
-  Then a navbar is visible at the top
-  And the logo text "Toolshed" is displayed on the left
-  And navigation links are displayed on the right including "COMPONENTS" and "Download"
-  And social media icons (Facebook, Twitter, Instagram) are visible in the navbar
+
+- **GIVEN** the page loads
+- **THEN** a navbar is visible at the top
+- **AND** the logo text "Toolshed" is displayed on the left
+- **AND** navigation links are displayed on the right including "COMPONENTS" and "Download"
+- **AND** social media icons (Facebook, Twitter, Instagram) are visible in the navbar
 
 #### Scenario: Hero section displays with gradient background
-  Given the page loads
-  Then the hero section occupies the full viewport width
-  And the hero has a blue gradient background transitioning from medium blue to lighter blue
-  And a large heading "Toolshed" is centered in white
-  And a subtitle "A Tools-Inspired UI Kit for Modern Interfaces" is centered below the heading in white
-  And a white CTA button with rounded pill shape is centered below the subtitle
+
+- **GIVEN** the page loads
+- **THEN** the hero section occupies the full viewport width
+- **AND** the hero has a blue gradient background transitioning from medium blue to lighter blue
+- **AND** a large heading "Toolshed" is centered in white
+- **AND** a subtitle "A Tools-Inspired UI Kit for Modern Interfaces" is centered below the heading in white
+- **AND** a white CTA button with rounded pill shape is centered below the subtitle
 
 #### Scenario: Hero CTA button is interactive
-  Given the hero section is visible
-  When the user hovers over the CTA button
-  Then the button shows a hover state (slight darken or opacity change)
-  And the button displays a cloud/download icon alongside the label "Download Tools"
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user hovers over the CTA button
+- **THEN** the button shows a hover state (slight darken or opacity change)
+- **AND** the button displays a cloud/download icon alongside the label "Download Tools"
 
 #### Scenario: Basic Elements section renders
-  Given the user scrolls past the hero
-  Then a "Basic Elements" section appears on a white background
-  And the section has a large heading "Basic Elements"
-  And a subheading "Buttons" is displayed
-  And descriptive text "Pick your style" appears below the subheading
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** a "Basic Elements" section appears on a white background
+- **AND** the section has a large heading "Basic Elements"
+- **AND** a subheading "Buttons" is displayed
+- **AND** descriptive text "Pick your style" appears below the subheading
 
 #### Scenario: Buttons showcase displays multiple button variants
-  Given the Buttons subsection is visible
-  Then multiple button style variants are displayed
-  And buttons use the brand blue color (#4A6CF7) with white text
-  And buttons have rounded pill-shaped corners
-  And buttons vary in size (small, medium, large)
+
+- **GIVEN** the Buttons subsection is visible
+- **THEN** multiple button style variants are displayed
+- **AND** buttons use the brand blue color (#4A6CF7) with white text
+- **AND** buttons have rounded pill-shaped corners
+- **AND** buttons vary in size (small, medium, large)
 
 #### Scenario: Footer renders with attribution
-  Given the user scrolls to the bottom
-  Then a footer section is visible
-  And the footer contains a link to "Component Dock" (https://www.componentdock.com/)
-  And the footer has a dark or contrasting background
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a footer section is visible
+- **AND** the footer contains a link to "Component Dock" (https://www.componentdock.com/)
+- **AND** the footer has a dark or contrasting background
 
 ## Verification Checklist
 

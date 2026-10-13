@@ -40,144 +40,153 @@ Extracted from the live preview stylesheet (`css/style.css`):
 7. **Reservation** — Section title "Make Reservation", form with name, email, phone, date/time, event dropdown, submit button
 8. **Footer** — 4 link columns (Top Products, Quick Links, Features, Resources) + Newsletter signup (email input + gradient purple submit arrow) + Copyright bar with social icons (Facebook, Twitter, Dribbble, Behance)
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Forkfully Navbar
 
-  Scenario: Desktop navbar displays all navigation links
-    Given the user is on a desktop viewport
-    Then the navbar shows links: Home, About, Menu, Book a Table, Pages, Blog, Contact
+#### Scenario: Desktop navbar displays all navigation links
 
-  Scenario: Navbar becomes visible on scroll
-    Given the user scrolls down from the hero
-    Then the navbar becomes sticky with a white background
+- **GIVEN** the user is on a desktop viewport
+- **THEN** the navbar shows links: Home, About, Menu, Book a Table, Pages, Blog, Contact
 
-  Scenario: Mobile hamburger menu opens off-canvas
-    Given the user is on a mobile viewport
-    When the user taps the hamburger icon
-    Then an off-canvas side menu slides in from the left
-    And the menu shows all navigation links vertically
-```
+#### Scenario: Navbar becomes visible on scroll
+
+- **GIVEN** the user scrolls down from the hero
+- **THEN** the navbar becomes sticky with a white background
+
+#### Scenario: Mobile hamburger menu opens off-canvas
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** an off-canvas side menu slides in from the left
+- **AND** the menu shows all navigation links vertically
 
 ### Hero
-```gherkin
+
 Feature: Forkfully Hero Banner
 
-  Scenario: Hero displays split layout
-    Given the user loads the page
-    Then the hero has a left panel with light background (#f9f9ff)
-    And the left panel contains a headline "delicious cupcakes"
-    And the left panel contains a description paragraph
-    And the left panel contains a "Check Our Menu" CTA button
+#### Scenario: Hero displays split layout
 
-  Scenario: Hero right panel shows decorative elements
-    Given the user loads the page
-    Then the hero right panel displays a circular animated planet graphic
-    And a food image is visible in the right panel
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero has a left panel with light background (#f9f9ff)
+- **AND** the left panel contains a headline "delicious cupcakes"
+- **AND** the left panel contains a description paragraph
+- **AND** the left panel contains a "Check Our Menu" CTA button
+
+#### Scenario: Hero right panel shows decorative elements
+
+- **GIVEN** the user loads the page
+- **THEN** the hero right panel displays a circular animated planet graphic
+- **AND** a food image is visible in the right panel
 
 ### Top Rated Dishes
-```gherkin
+
 Feature: Forkfully Top Dishes
 
-  Scenario: Displays three dish cards in a grid
-    Given the user scrolls to the Top Rated Dishes section
-    Then a section title "Our Top Rated Dishes" is visible
-    And three dish cards are shown in a 3-column grid
-    And each card has an image, dish name, ingredients text, and price
+#### Scenario: Displays three dish cards in a grid
 
-  Scenario: Dish cards show correct content
-    Given the user views a dish card
-    Then the card displays the dish image at the top
-    And the dish name is below the image
-    And ingredient text is shown below the name
-    And the price is displayed in a styled element
-```
+- **GIVEN** the user scrolls to the Top Rated Dishes section
+- **THEN** a section title "Our Top Rated Dishes" is visible
+- **AND** three dish cards are shown in a 3-column grid
+- **AND** each card has an image, dish name, ingredients text, and price
+
+#### Scenario: Dish cards show correct content
+
+- **GIVEN** the user views a dish card
+- **THEN** the card displays the dish image at the top
+- **AND** the dish name is below the image
+- **AND** ingredient text is shown below the name
+- **AND** the price is displayed in a styled element
 
 ### Menu
-```gherkin
+
 Feature: Forkfully Menu Section
 
-  Scenario: Displays two-column menu list
-    Given the user scrolls to the Menu section
-    Then a section title "Our favourite Menu" is visible
-    And menu items are displayed in two columns
-    And each item shows dish name, price span, and ingredient description
+#### Scenario: Displays two-column menu list
 
-  Scenario: Menu items are formatted consistently
-    Given the user views a menu item
-    Then the dish name is an h4 with the price as an inline span
-    And the ingredient text is shown as a paragraph below
-```
+- **GIVEN** the user scrolls to the Menu section
+- **THEN** a section title "Our favourite Menu" is visible
+- **AND** menu items are displayed in two columns
+- **AND** each item shows dish name, price span, and ingredient description
+
+#### Scenario: Menu items are formatted consistently
+
+- **GIVEN** the user views a menu item
+- **THEN** the dish name is an h4 with the price as an inline span
+- **AND** the ingredient text is shown as a paragraph below
 
 ### Gallery
-```gherkin
+
 Feature: Forkfully Gallery
 
-  Scenario: Gallery displays masonry image grid
-    Given the user scrolls to the Gallery section
-    Then a section title is visible
-    And images are arranged in a masonry layout across rows
-    And each image has a hover overlay with a picture icon
+#### Scenario: Gallery displays masonry image grid
 
-  Scenario: Gallery images have overlay interaction
-    Given the user hovers over a gallery image
-    Then a semi-transparent overlay appears
-    And an icon is centered on the overlay
-```
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a section title is visible
+- **AND** images are arranged in a masonry layout across rows
+- **AND** each image has a hover overlay with a picture icon
+
+#### Scenario: Gallery images have overlay interaction
+
+- **GIVEN** the user hovers over a gallery image
+- **THEN** a semi-transparent overlay appears
+- **AND** an icon is centered on the overlay
 
 ### Testimonials
-```gherkin
+
 Feature: Forkfully Testimonials
 
-  Scenario: Testimonials carousel displays reviewer info
-    Given the user scrolls to the Testimonials section
-    Then a carousel slider is visible
-    And each slide shows a person image on the left
-    And the person's name, role, and quote text on the right
+#### Scenario: Testimonials carousel displays reviewer info
 
-  Scenario: Carousel can navigate between slides
-    Given the user is viewing the testimonials
-    When the user clicks the next navigation arrow
-    Then the next testimonial slide is displayed
-```
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a carousel slider is visible
+- **AND** each slide shows a person image on the left
+- **AND** the person's name, role, and quote text on the right
+
+#### Scenario: Carousel can navigate between slides
+
+- **GIVEN** the user is viewing the testimonials
+- **WHEN** the user clicks the next navigation arrow
+- **THEN** the next testimonial slide is displayed
 
 ### Reservation
-```gherkin
+
 Feature: Forkfully Reservation Form
 
-  Scenario: Reservation form displays all fields
-    Given the user scrolls to the Reservation section
-    Then a section title "Make Reservation" is visible
-    And the form has fields: Name, Email, Phone Number, Date & Time, Event select
-    And a "Make Reservation" submit button is at the bottom
+#### Scenario: Reservation form displays all fields
 
-  Scenario: Form fields accept input
-    Given the user is on the reservation form
-    When the user types into the Name field
-    Then the field displays the entered text
-    When the user types into the Email field
-    Then the field displays the entered email
-```
+- **GIVEN** the user scrolls to the Reservation section
+- **THEN** a section title "Make Reservation" is visible
+- **AND** the form has fields: Name, Email, Phone Number, Date & Time, Event select
+- **AND** a "Make Reservation" submit button is at the bottom
+
+#### Scenario: Form fields accept input
+
+- **GIVEN** the user is on the reservation form
+- **WHEN** the user types into the Name field
+- **THEN** the field displays the entered text
+- **WHEN** the user types into the Email field
+- **THEN** the field displays the entered email
 
 ### Footer
-```gherkin
+
 Feature: Forkfully Footer
 
-  Scenario: Footer shows link columns and newsletter
-    Given the user scrolls to the footer
-    Then four link columns are visible (Top Products, Quick Links, Features, Resources)
-    And a newsletter signup section is on the right with email input and submit button
-    And the submit button has a purple gradient style
+#### Scenario: Footer shows link columns and newsletter
 
-  Scenario: Footer shows copyright and social links
-    Given the user views the footer bottom
-    Then a copyright line is displayed
-    And social icons (Facebook, Twitter, Dribbble, Behance) are visible
-    And a "Component Dock" attribution link is present
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** four link columns are visible (Top Products, Quick Links, Features, Resources)
+- **AND** a newsletter signup section is on the right with email input and submit button
+- **AND** the submit button has a purple gradient style
+
+#### Scenario: Footer shows copyright and social links
+
+- **GIVEN** the user views the footer bottom
+- **THEN** a copyright line is displayed
+- **AND** social icons (Facebook, Twitter, Dribbble, Behance) are visible
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification Checklist
 

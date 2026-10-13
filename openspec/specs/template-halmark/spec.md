@@ -91,72 +91,82 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Copyright text with "Component Dock" link
 - Social icons on right: Facebook, Twitter, Instagram
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Halmark template behaviour
+
 Feature: Halmark — Photography Portfolio Template
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo image is visible in the top-left
-    And navigation links "Home", "About", "Albums", "Blog", "Pages", "Contact" are visible
-    And social icons (Facebook, Twitter, Instagram) are visible on the right
-    And the navbar becomes sticky on scroll
-    And on mobile viewports a hamburger menu is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero slider displays
-    Given the hero section is in the viewport
-    Then a full-width slider with parallax background images is visible
-    And the heading about a professional photographer is displayed
-    And an "Explore Work" square button is visible
-    And slider navigation arrows are present
+- **GIVEN** the user is on any viewport
+- **THEN** the logo image is visible in the top-left
+- **AND** navigation links "Home", "About", "Albums", "Blog", "Pages", "Contact" are visible
+- **AND** social icons (Facebook, Twitter, Instagram) are visible on the right
+- **AND** the navbar becomes sticky on scroll
+- **AND** on mobile viewports a hamburger menu is visible
 
-  Scenario: Photography Skills section renders
-    Given the photography skills section is scrolled into view
-    Then the heading "World class photography skills" is visible
-    And a description paragraph is shown
-    And a signature image is displayed
+#### Scenario: Hero slider displays
 
-  Scenario: Wildlife Photography section renders
-    Given the wildlife photography section is scrolled into view
-    Then a wildlife photo is displayed on the left
-    And "Wildlife photography" heading with description is on the right
-    And an "Explore Work" black button is visible
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width slider with parallax background images is visible
+- **AND** the heading about a professional photographer is displayed
+- **AND** an "Explore Work" square button is visible
+- **AND** slider navigation arrows are present
 
-  Scenario: Gallery shows 6 items
-    Given the gallery section is scrolled into view
-    Then the heading "My world class photography" is visible
-    And 6 gallery items are displayed in a 3-column grid
-    And each item has an image with hover overlay (title + category)
+#### Scenario: Photography Skills section renders
 
-  Scenario: Testimonials carousel works
-    Given the testimonials section is scrolled into view
-    Then a carousel with 3 testimonials is displayed
-    And each testimonial has a heading, quote, author photo, and name
+- **GIVEN** the photography skills section is scrolled into view
+- **THEN** the heading "World class photography skills" is visible
+- **AND** a description paragraph is shown
+- **AND** a signature image is displayed
 
-  Scenario: Team section shows 3 members
-    Given the team section is scrolled into view
-    Then 3 team member cards are displayed in a 3-column grid
-    And each card has a photo, name, title, and social icons
+#### Scenario: Wildlife Photography section renders
 
-  Scenario: Contact section renders
-    Given the contact section is scrolled into view
-    Then "Contact Us" heading with address info is visible on the left
-    And a map area is displayed on the right
-    And social icons are visible
+- **GIVEN** the wildlife photography section is scrolled into view
+- **THEN** a wildlife photo is displayed on the left
+- **AND** "Wildlife photography" heading with description is on the right
+- **AND** an "Explore Work" black button is visible
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then a dark background is displayed
-    And a copyright notice with "Component Dock" link is present
-    And social icons are visible
+#### Scenario: Gallery shows 6 items
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And gallery/team columns stack vertically
-    And the contact section stacks vertically
-```
+- **GIVEN** the gallery section is scrolled into view
+- **THEN** the heading "My world class photography" is visible
+- **AND** 6 gallery items are displayed in a 3-column grid
+- **AND** each item has an image with hover overlay (title + category)
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the testimonials section is scrolled into view
+- **THEN** a carousel with 3 testimonials is displayed
+- **AND** each testimonial has a heading, quote, author photo, and name
+
+#### Scenario: Team section shows 3 members
+
+- **GIVEN** the team section is scrolled into view
+- **THEN** 3 team member cards are displayed in a 3-column grid
+- **AND** each card has a photo, name, title, and social icons
+
+#### Scenario: Contact section renders
+
+- **GIVEN** the contact section is scrolled into view
+- **THEN** "Contact Us" heading with address info is visible on the left
+- **AND** a map area is displayed on the right
+- **AND** social icons are visible
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** a dark background is displayed
+- **AND** a copyright notice with "Component Dock" link is present
+- **AND** social icons are visible
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** gallery/team columns stack vertically
+- **AND** the contact section stacks vertically
 
 ## Verification Checklist
 

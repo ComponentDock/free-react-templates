@@ -53,127 +53,121 @@ https://preview.colorlib.com/theme/automotive/css/style.css.
 - **Footer Main:** 4-column — About text, Quick Links, News list, Office address.
 - **Footer Copyright:** Dark bar with copyright text and social icons.
 
-## Gherkin Requirements
+## Requirements
 
 ### Section: Header Top Bar
 
-```gherkin
-Scenario: Top bar displays contact info and social links
-  Given the user loads the page
-  Then the top bar shows a phone number "(+123) 4567-7890-123"
-  And shows hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
-  And shows a "Find us on map" link
-  And shows 4 social icon links (Facebook, Twitter, Vimeo, Pinterest)
-```
+#### Scenario: Top bar displays contact info and social links
+
+- **GIVEN** the user loads the page
+- **THEN** the top bar shows a phone number "(+123) 4567-7890-123"
+- **AND** shows hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
+- **AND** shows a "Find us on map" link
+- **AND** shows 4 social icon links (Facebook, Twitter, Vimeo, Pinterest)
 
 ### Section: Navigation Header
 
-```gherkin
-Scenario: Main nav has correct links
-  Given the user loads the page
-  Then the header shows a logo image
-  And the nav contains links: Home, Services, Shop, Pages (with dropdown), Blog
-  And a search icon and cart icon are visible in the header right area
+#### Scenario: Main nav has correct links
 
-Scenario: Pages dropdown shows sub-links
-  Given the user hovers over or clicks "Pages" in the nav
-  Then a dropdown appears with: About Us, Services Details, Shop Details, Blog Details, Contact
-```
+- **GIVEN** the user loads the page
+- **THEN** the header shows a logo image
+- **AND** the nav contains links: Home, Services, Shop, Pages (with dropdown), Blog
+- **AND** a search icon and cart icon are visible in the header right area
+
+#### Scenario: Pages dropdown shows sub-links
+
+- **GIVEN** the user hovers over or clicks "Pages" in the nav
+- **THEN** a dropdown appears with: About Us, Services Details, Shop Details, Blog Details, Contact
 
 ### Section: Hero
 
-```gherkin
-Scenario: Hero displays welcome message and CTA
-  Given the user loads the page
-  Then the hero shows a background image
-  And the headline reads "Welcome To" (small) above "Auto-Motive Garage" (large)
-  And a subtitle paragraph is shown
-  And a "Our Services" CTA button is visible
-```
+#### Scenario: Hero displays welcome message and CTA
+
+- **GIVEN** the user loads the page
+- **THEN** the hero shows a background image
+- **AND** the headline reads "Welcome To" (small) above "Auto-Motive Garage" (large)
+- **AND** a subtitle paragraph is shown
+- **AND** a "Our Services" CTA button is visible
 
 ### Section: Services
 
-```gherkin
-Scenario: Services section shows 4 service items
-  Given the user loads the page
-  Then the services section displays a title "What We Do?"
-  And 4 services are shown: Engine Overhaul, Power Steering, Oil change, Upgrades Car
-  And each service has an icon image, title, and description text
-  And services alternate between text-left/image-right and text-right/image-left layout
-```
+#### Scenario: Services section shows 4 service items
+
+- **GIVEN** the user loads the page
+- **THEN** the services section displays a title "What We Do?"
+- **AND** 4 services are shown: Engine Overhaul, Power Steering, Oil change, Upgrades Car
+- **AND** each service has an icon image, title, and description text
+- **AND** services alternate between text-left/image-right and text-right/image-left layout
 
 ### Section: Choose Us
 
-```gherkin
-Scenario: Choose us shows experience claims
-  Given the user loads the page
-  Then the choose-us section has a large image on the left side
-  And text on the right with headline "We Have 20 Years Of Experience In Auto Car"
-  And 4 checkmark list items are shown
-  And an "About Us" CTA button is visible
-```
+#### Scenario: Choose us shows experience claims
+
+- **GIVEN** the user loads the page
+- **THEN** the choose-us section has a large image on the left side
+- **AND** text on the right with headline "We Have 20 Years Of Experience In Auto Car"
+- **AND** 4 checkmark list items are shown
+- **AND** an "About Us" CTA button is visible
 
 ### Section: Products
 
-```gherkin
-Scenario: Products grid shows 4 product cards
-  Given the user loads the page
-  Then the products section displays a title "Our Products"
-  And 4 product cards are shown in a grid
-  And each card has an image, product name, price ($800.00), and "+Add To Cart" link
-  And each card has hover overlay icons (heart, eye, exchange)
+#### Scenario: Products grid shows 4 product cards
 
-Scenario: Product names are displayed correctly
-  Given the user views the products section
-  Then the product names are: High Flow Fuel, Revolution Wheels, Tone Interior Kit, Matte Gunmetal
-```
+- **GIVEN** the user loads the page
+- **THEN** the products section displays a title "Our Products"
+- **AND** 4 product cards are shown in a grid
+- **AND** each card has an image, product name, price ($800.00), and "+Add To Cart" link
+- **AND** each card has hover overlay icons (heart, eye, exchange)
+
+#### Scenario: Product names are displayed correctly
+
+- **GIVEN** the user views the products section
+- **THEN** the product names are: High Flow Fuel, Revolution Wheels, Tone Interior Kit, Matte Gunmetal
 
 ### Section: Testimonials
 
-```gherkin
-Scenario: Testimonials carousel shows quotes
-  Given the user loads the page
-  Then a testimonial carousel is displayed
-  And each slide shows a quotation mark icon and a customer quote paragraph
-```
+#### Scenario: Testimonials carousel shows quotes
+
+- **GIVEN** the user loads the page
+- **THEN** a testimonial carousel is displayed
+- **AND** each slide shows a quotation mark icon and a customer quote paragraph
 
 ### Section: Counter / Statistics
 
-```gherkin
-Scenario: Statistics section shows 4 counters
-  Given the user loads the page
-  Then the counter section displays a title "About Our Statistics"
-  And 4 counter items are shown: All Project (560+), Project Completed (560+), Customers Action (560+), Awards Winner (560+)
-  And each counter has an icon image above the number
-```
+#### Scenario: Statistics section shows 4 counters
+
+- **GIVEN** the user loads the page
+- **THEN** the counter section displays a title "About Our Statistics"
+- **AND** 4 counter items are shown: All Project (560+), Project Completed (560+), Customers Action (560+), Awards Winner (560+)
+- **AND** each counter has an icon image above the number
 
 ### Section: Latest News / Blog
 
-```gherkin
-Scenario: Blog section shows 3 articles
-  Given the user loads the page
-  Then the latest news section displays a title "Latest News"
-  And 3 blog cards are shown
-  And each card has a background image with author/date overlay, title, excerpt, and "Continue Reading" link
-```
+#### Scenario: Blog section shows 3 articles
+
+- **GIVEN** the user loads the page
+- **THEN** the latest news section displays a title "Latest News"
+- **AND** 3 blog cards are shown
+- **AND** each card has a background image with author/date overlay, title, excerpt, and "Continue Reading" link
 
 ### Section: Footer
 
-```gherkin
-Scenario: Footer top shows 3 CTA items
-  Given the user loads the page
-  Then the footer top row shows 3 items: Booking Repair / Appointment, Contact / Phone Number, Find Us On Map
+#### Scenario: Footer top shows 3 CTA items
 
-Scenario: Footer main shows 4 columns
-  Given the user loads the page
-  Then the footer shows 4 columns: About text, Quick Links, News items, Office Address
-  And the copyright bar at the bottom shows "All rights reserved" text
-  And social media icons are shown in the copyright area
+- **GIVEN** the user loads the page
+- **THEN** the footer top row shows 3 items: Booking Repair / Appointment, Contact / Phone Number, Find Us On Map
 
-Scenario: Footer links to Component Dock
-  Given the user loads the page
-  Then the footer contains a link to https://www.componentdock.com/
-```
+#### Scenario: Footer main shows 4 columns
+
+- **GIVEN** the user loads the page
+- **THEN** the footer shows 4 columns: About text, Quick Links, News items, Office Address
+- **AND** the copyright bar at the bottom shows "All rights reserved" text
+- **AND** social media icons are shown in the copyright area
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user loads the page
+- **THEN** the footer contains a link to https://www.componentdock.com/
 
 ## Verification Checklist
 

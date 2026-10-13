@@ -35,127 +35,150 @@ Recreation of ColorLib **Pharmative** template.
 6. **Testimonials + Why Us** — Two-column split. Left: "Happy **Customers**" heading + testimonial carousel (avatar image, quote, author name in green). Right: "Why **Us**" heading + 3 numbered steps with text.
 7. **Footer** — Three-column: About (text block), Navigation (Supplements, Vitamins, Diet & Nutrition, Tea & Coffee), Contact Info (address, phone, email). Copyright line with heart icon.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-Scenario: Logo renders with brand styling
-  Given the user loads the page
-  Then the logo text "Pharmvault" is visible
-  And the first part of the logo ("Pharm") is bold and green
-  And the rest of the logo text is dark/black
+#### Scenario: Logo renders with brand styling
 
-Scenario: Navigation links are present
-  Given the user loads the page
-  Then the following nav links are visible: Home, Store, Products, About, Contact
+- **GIVEN** the user loads the page
+- **THEN** the logo text "Pharmvault" is visible
+- **AND** the first part of the logo ("Pharm") is bold and green
+- **AND** the rest of the logo text is dark/black
 
-Scenario: Products dropdown opens on hover
-  Given the user hovers over the "Products" nav link
-  Then a dropdown appears with: Supplements, Vitamins, Diet & Nutrition, Tea & Coffee
+#### Scenario: Navigation links are present
 
-Scenario: Cart icon shows item count
-  Given the user loads the page
-  Then a shopping bag icon is visible with a badge showing "2"
+- **GIVEN** the user loads the page
+- **THEN** the following nav links are visible: Home, Store, Products, About, Contact
 
-Scenario: Search icon is present
-  Given the user loads the page
-  Then a search icon button is visible in the navbar
+#### Scenario: Products dropdown opens on hover
+
+- **GIVEN** the user hovers over the "Products" nav link
+- **THEN** a dropdown appears with: Supplements, Vitamins, Diet & Nutrition, Tea & Coffee
+
+#### Scenario: Cart icon shows item count
+
+- **GIVEN** the user loads the page
+- **THEN** a shopping bag icon is visible with a badge showing "2"
+
+#### Scenario: Search icon is present
+
+- **GIVEN** the user loads the page
+- **THEN** a search icon button is visible in the navbar
 
 ### Feature: Hero Carousel
 
-Scenario: First hero slide renders
-  Given the page loads
-  Then a hero banner with background image is displayed
-  And the heading "Pharmvault Opens 24 Hours" is visible
-  And a subtext paragraph is visible below the heading
-  And a "Shop Now" green button is visible
+#### Scenario: First hero slide renders
 
-Scenario: Second hero slide renders
-  Given the carousel advances to slide 2
-  Then the heading "New Medicine Everyday" is visible
-  And a "Shop Now" green button is visible
+- **GIVEN** the page loads
+- **THEN** a hero banner with background image is displayed
+- **AND** the heading "Pharmvault Opens 24 Hours" is visible
+- **AND** a subtext paragraph is visible below the heading
+- **AND** a "Shop Now" green button is visible
 
-Scenario: Hero slides have dark overlay
-  Given the user views the hero section
-  Then each slide has a semi-transparent dark overlay over the background image
+#### Scenario: Second hero slide renders
+
+- **GIVEN** the carousel advances to slide 2
+- **THEN** the heading "New Medicine Everyday" is visible
+- **AND** a "Shop Now" green button is visible
+
+#### Scenario: Hero slides have dark overlay
+
+- **GIVEN** the user views the hero section
+- **THEN** each slide has a semi-transparent dark overlay over the background image
 
 ### Feature: Features Section
 
-Scenario: Three features render in a row
-  Given the user scrolls to the features section
-  Then three feature cards are displayed side by side
+#### Scenario: Three features render in a row
 
-Scenario: Feature cards show icon, title, description, link
-  Given a feature card is rendered
-  Then it shows an icon, a title, a description paragraph, and a "Learn more" link with arrow
+- **GIVEN** the user scrolls to the features section
+- **THEN** three feature cards are displayed side by side
 
-Scenario: Feature content is correct
-  Given the features section renders
-  Then the first feature is "Free Delivery"
-  And the second feature is "New Medicine Everyday"
-  And the third feature is "Medicines Guaranteed"
+#### Scenario: Feature cards show icon, title, description, link
+
+- **GIVEN** a feature card is rendered
+- **THEN** it shows an icon, a title, a description paragraph, and a "Learn more" link with arrow
+
+#### Scenario: Feature content is correct
+
+- **GIVEN** the features section renders
+- **THEN** the first feature is "Free Delivery"
+- **AND** the second feature is "New Medicine Everyday"
+- **AND** the third feature is "Medicines Guaranteed"
 
 ### Feature: Products Carousel
 
-Scenario: Products section renders on gray background
-  Given the user scrolls to the products section
-  Then the section has a light gray background
-  And the heading "Pharmacy Products" is visible
+#### Scenario: Products section renders on gray background
 
-Scenario: Product cards display correctly
-  Given a product card is rendered
-  Then it shows a product image, a product name, and a price ($120.00)
+- **GIVEN** the user scrolls to the products section
+- **THEN** the section has a light gray background
+- **AND** the heading "Pharmacy Products" is visible
 
-Scenario: Sale badge appears on select products
-  Given some product cards are marked as on sale
-  Then a "Sale" badge is overlaid on those product cards
+#### Scenario: Product cards display correctly
+
+- **GIVEN** a product card is rendered
+- **THEN** it shows a product image, a product name, and a price ($120.00)
+
+#### Scenario: Sale badge appears on select products
+
+- **GIVEN** some product cards are marked as on sale
+- **THEN** a "Sale" badge is overlaid on those product cards
 
 ### Feature: CTA Banner
 
-Scenario: Discount banner renders with dark overlay
-  Given the user scrolls to the CTA section
-  Then a full-width banner with a background image and dark overlay is visible
-  And the heading "Sign up for discount up to 55% OFF" is displayed
-  And a "Sign up" outlined-white button is visible
+#### Scenario: Discount banner renders with dark overlay
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a full-width banner with a background image and dark overlay is visible
+- **AND** the heading "Sign up for discount up to 55% OFF" is displayed
+- **AND** a "Sign up" outlined-white button is visible
 
 ### Feature: Testimonials + Why Us
 
-Scenario: Testimonials section renders
-  Given the user scrolls to the testimonials area
-  Then the heading "Happy Customers" is visible
-  And a testimonial carousel is displayed
+#### Scenario: Testimonials section renders
 
-Scenario: Testimonial card content
-  Given a testimonial card is rendered
-  Then it shows an avatar image, a quoted paragraph, and an author name in green
+- **GIVEN** the user scrolls to the testimonials area
+- **THEN** the heading "Happy Customers" is visible
+- **AND** a testimonial carousel is displayed
 
-Scenario: Why Us section renders
-  Given the user views the right side of the section
-  Then the heading "Why Us" is visible
-  And three numbered steps (1, 2, 3) with description text are shown
+#### Scenario: Testimonial card content
+
+- **GIVEN** a testimonial card is rendered
+- **THEN** it shows an avatar image, a quoted paragraph, and an author name in green
+
+#### Scenario: Why Us section renders
+
+- **GIVEN** the user views the right side of the section
+- **THEN** the heading "Why Us" is visible
+- **AND** three numbered steps (1, 2, 3) with description text are shown
 
 ### Feature: Footer
 
-Scenario: Footer renders with three columns
-  Given the user scrolls to the footer
-  Then three columns are visible: About, Navigation, Contact Info
+#### Scenario: Footer renders with three columns
 
-Scenario: Footer about column
-  Given the footer renders
-  Then the "About Pharmvault" heading is visible with a description paragraph
+- **GIVEN** the user scrolls to the footer
+- **THEN** three columns are visible: About, Navigation, Contact Info
 
-Scenario: Footer navigation links
-  Given the footer renders
-  Then the Navigation column lists: Supplements, Vitamins, Diet & Nutrition, Tea & Coffee
+#### Scenario: Footer about column
 
-Scenario: Footer contact info
-  Given the footer renders
-  Then the Contact Info column shows an address, phone number, and email
+- **GIVEN** the footer renders
+- **THEN** the "About Pharmvault" heading is visible with a description paragraph
 
-Scenario: Footer copyright with Component Dock link
-  Given the footer renders
-  Then a copyright line is visible
-  And it contains a link to "https://www.componentdock.com/" branded as "Component Dock"
+#### Scenario: Footer navigation links
+
+- **GIVEN** the footer renders
+- **THEN** the Navigation column lists: Supplements, Vitamins, Diet & Nutrition, Tea & Coffee
+
+#### Scenario: Footer contact info
+
+- **GIVEN** the footer renders
+- **THEN** the Contact Info column shows an address, phone number, and email
+
+#### Scenario: Footer copyright with Component Dock link
+
+- **GIVEN** the footer renders
+- **THEN** a copyright line is visible
+- **AND** it contains a link to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification Checklist
 

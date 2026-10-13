@@ -43,110 +43,112 @@ Extracted from the preview's `assets/css/style.css` (minified) and HTML structur
 8. **Maps Section** — Two map images side by side (location reference)
 9. **Footer** — Dark background image; 4 columns: Logo + description + phone/email, Opening hours (Mon-Fri, Sat, Sun closed), Navigation links, Social icons (Twitter, Facebook, Pinterest); copyright bar
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: SudsCraft Navbar
 
-  Scenario: Navigation displays links and phone CTA
-    Given I visit the SudsCraft page
-    Then I see a logo on the left
-    And I see nav links: Home, About, Services, Blog, Contact
-    And I see a phone CTA button "10 (87) 256-2903"
+#### Scenario: Navigation displays links and phone CTA
 
-  Scenario: Blog dropdown shows sub-links
-    Given I hover over the "Blog" nav link
-    Then I see a dropdown with Blog, Blog Details, Element
-```
+- **GIVEN** I visit the SudsCraft page
+- **THEN** I see a logo on the left
+- **AND** I see nav links: Home, About, Services, Blog, Contact
+- **AND** I see a phone CTA button "10 (87) 256-2903"
+
+#### Scenario: Blog dropdown shows sub-links
+
+- **GIVEN** I hover over the "Blog" nav link
+- **THEN** I see a dropdown with Blog, Blog Details, Element
 
 ### Hero
-```gherkin
+
 Feature: SudsCraft Hero
 
-  Scenario: Hero displays main heading and CTA
-    Given I visit the SudsCraft page
-    Then I see a hero section with a background image
-    And I see the heading "Car Wash"
-    And I see animated text "& Detailing"
-    And I see an "Our Services" pill button CTA
-```
+#### Scenario: Hero displays main heading and CTA
+
+- **GIVEN** I visit the SudsCraft page
+- **THEN** I see a hero section with a background image
+- **AND** I see the heading "Car Wash"
+- **AND** I see animated text "& Detailing"
+- **AND** I see an "Our Services" pill button CTA
 
 ### Office Environments
-```gherkin
+
 Feature: SudsCraft Office Environments
 
-  Scenario: Equipment section shows split layout
-    Given I scroll to the Office Environments section
-    Then I see a decorative background image on the left
-    And I see the title "We have the latest equipment"
-    And I see a description paragraph
-    And I see an "About Us" outlined button
-```
+#### Scenario: Equipment section shows split layout
+
+- **GIVEN** I scroll to the Office Environments section
+- **THEN** I see a decorative background image on the left
+- **AND** I see the title "We have the latest equipment"
+- **AND** I see a description paragraph
+- **AND** I see an "About Us" outlined button
 
 ### Pricing Cards
-```gherkin
+
 Feature: SudsCraft Pricing
 
-  Scenario: Three pricing tiers displayed
-    Given I scroll to the Pricing section
-    Then I see the title "We offer best services to our customer"
-    And I see 3 pricing cards: Car wash ($50), Detailing ($100), Wash & Detailing ($200)
-    And each card has a service icon, "Starting at" label, price, and feature list
-    And each card has a "Get Started" border button
+#### Scenario: Three pricing tiers displayed
 
-  Scenario: Pricing cards are interactive
-    Given I hover over a "Get Started" button
-    Then the button fills with the brand blue color and text turns white
-```
+- **GIVEN** I scroll to the Pricing section
+- **THEN** I see the title "We offer best services to our customer"
+- **AND** I see 3 pricing cards: Car wash ($50), Detailing ($100), Wash & Detailing ($200)
+- **AND** each card has a service icon, "Starting at" label, price, and feature list
+- **AND** each card has a "Get Started" border button
+
+#### Scenario: Pricing cards are interactive
+
+- **GIVEN** I hover over a "Get Started" button
+- **THEN** the button fills with the brand blue color and text turns white
 
 ### Testimonials
-```gherkin
+
 Feature: SudsCraft Testimonials
 
-  Scenario: Testimonial carousel displays reviews
-    Given I scroll to the Testimonials section
-    Then I see a quote icon and testimonial text
-    And I see a founder avatar with name and role
-    And the section has carousel dot navigation
-```
+#### Scenario: Testimonial carousel displays reviews
+
+- **GIVEN** I scroll to the Testimonials section
+- **THEN** I see a quote icon and testimonial text
+- **AND** I see a founder avatar with name and role
+- **AND** the section has carousel dot navigation
 
 ### Services / Categories
-```gherkin
+
 Feature: SudsCraft Services
 
-  Scenario: Four service categories shown
-    Given I scroll to the Services section
-    Then I see the title "Why take our services?"
-    And I see 4 service cards: Car wash without detergents, Surface drying machines, Application, Lacquer protection
-    And each card has an SVG icon, title, and description
-```
+#### Scenario: Four service categories shown
+
+- **GIVEN** I scroll to the Services section
+- **THEN** I see the title "Why take our services?"
+- **AND** I see 4 service cards: Car wash without detergents, Surface drying machines, Application, Lacquer protection
+- **AND** each card has an SVG icon, title, and description
 
 ### Video Section
-```gherkin
+
 Feature: SudsCraft Video
 
-  Scenario: Video section shows play button
-    Given I scroll to the Video section
-    Then I see a dark background image
-    And I see a circular play button
-    And I see the text "Your car will look as your new one"
-    And clicking play opens a YouTube popup
-```
+#### Scenario: Video section shows play button
+
+- **GIVEN** I scroll to the Video section
+- **THEN** I see a dark background image
+- **AND** I see a circular play button
+- **AND** I see the text "Your car will look as your new one"
+- **AND** clicking play opens a YouTube popup
 
 ### Footer
-```gherkin
+
 Feature: SudsCraft Footer
 
-  Scenario: Footer displays contact and navigation
-    Given I scroll to the Footer
-    Then I see a logo, description, phone number, and email
-    And I see Opening hours for Mon-Fri, Sat, and Sun
-    And I see Navigation links: Home, About, Services, Blog, Contact
-    And I see social icons: Twitter, Facebook, Pinterest
-    And I see a copyright bar
-    And the footer links to https://www.componentdock.com/
-```
+#### Scenario: Footer displays contact and navigation
+
+- **GIVEN** I scroll to the Footer
+- **THEN** I see a logo, description, phone number, and email
+- **AND** I see Opening hours for Mon-Fri, Sat, and Sun
+- **AND** I see Navigation links: Home, About, Services, Blog, Contact
+- **AND** I see social icons: Twitter, Facebook, Pinterest
+- **AND** I see a copyright bar
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification checklist
 

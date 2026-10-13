@@ -38,110 +38,125 @@ Recreation of ColorLib "Colorlib Wizard 5" — a flexible 4-step order/checkout 
 | Error color | `#ef4444` | Validation errors |
 | Success color | `#22c55e` | Completion state |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: 4-Step eCommerce Checkout Wizard
 
 #### Scenario: Wizard renders with 4-step progress indicator
-  Given the user loads the checkout wizard
-  Then a horizontal progress indicator is displayed at the top
-  And it shows 4 numbered step circles: 1, 2, 3, 4
-  And step 1 is highlighted as active (blue background)
-  And steps 2, 3, 4 are inactive (gray background)
-  And connector lines link the step circles
+
+- **GIVEN** the user loads the checkout wizard
+- **THEN** a horizontal progress indicator is displayed at the top
+- **AND** it shows 4 numbered step circles: 1, 2, 3, 4
+- **AND** step 1 is highlighted as active (blue background)
+- **AND** steps 2, 3, 4 are inactive (gray background)
+- **AND** connector lines link the step circles
 
 #### Scenario: Step 1 — Cart Review
-  Given the user is on step 1
-  Then the heading "Review Your Cart" is visible
-  And a list of cart items is displayed (each with name, quantity, price)
-  And a subtotal/total amount is shown
-  And a "Next" button is visible
-  And a "Back" button is NOT visible
+
+- **GIVEN** the user is on step 1
+- **THEN** the heading "Review Your Cart" is visible
+- **AND** a list of cart items is displayed (each with name, quantity, price)
+- **AND** a subtotal/total amount is shown
+- **AND** a "Next" button is visible
+- **AND** a "Back" button is NOT visible
 
 #### Scenario: Step 2 — Shipping Information
-  Given the user has completed step 1
-  When the user clicks "Next"
-  Then step 2 is displayed with heading "Shipping Information"
-  And form fields are shown: Full Name, Email, Address, City, State, Zip Code
-  And the progress indicator shows step 1 as completed (checkmark) and step 2 as active
+
+- **GIVEN** the user has completed step 1
+- **WHEN** the user clicks "Next"
+- **THEN** step 2 is displayed with heading "Shipping Information"
+- **AND** form fields are shown: Full Name, Email, Address, City, State, Zip Code
+- **AND** the progress indicator shows step 1 as completed (checkmark) and step 2 as active
 
 #### Scenario: Step 3 — Payment Details
-  Given the user has completed step 2
-  When the user clicks "Next"
-  Then step 3 is displayed with heading "Payment Details"
-  And form fields are shown: Name on Card, Card Number, Expiry Date, CVV
-  And the progress indicator shows steps 1-2 as completed and step 3 as active
+
+- **GIVEN** the user has completed step 2
+- **WHEN** the user clicks "Next"
+- **THEN** step 3 is displayed with heading "Payment Details"
+- **AND** form fields are shown: Name on Card, Card Number, Expiry Date, CVV
+- **AND** the progress indicator shows steps 1-2 as completed and step 3 as active
 
 #### Scenario: Step 4 — Order Confirmation
-  Given the user has completed step 3
-  When the user clicks "Next"
-  Then step 4 is displayed with heading "Confirm Your Order"
-  And an order summary is shown (items, shipping address, payment method last-4)
-  And a "Place Order" button is visible
-  And a "Back" button is visible
-  And the progress indicator shows all 4 steps as completed
+
+- **GIVEN** the user has completed step 3
+- **WHEN** the user clicks "Next"
+- **THEN** step 4 is displayed with heading "Confirm Your Order"
+- **AND** an order summary is shown (items, shipping address, payment method last-4)
+- **AND** a "Place Order" button is visible
+- **AND** a "Back" button is visible
+- **AND** the progress indicator shows all 4 steps as completed
 
 #### Scenario: Place Order completes the wizard
-  Given the user is on step 4
-  When the user clicks "Place Order"
-  Then a success confirmation is displayed
-  And the message "Order Placed Successfully" or equivalent is shown
+
+- **GIVEN** the user is on step 4
+- **WHEN** the user clicks "Place Order"
+- **THEN** a success confirmation is displayed
+- **AND** the message "Order Placed Successfully" or equivalent is shown
 
 ### Feature: Form Validation
 
 #### Scenario: Step 2 validation — required fields
-  Given the user is on step 2
-  When the user clicks "Next" with empty required fields
-  Then validation errors appear for Full Name, Email, Address, City, State, Zip Code
-  And the form does not advance to step 3
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Next" with empty required fields
+- **THEN** validation errors appear for Full Name, Email, Address, City, State, Zip Code
+- **AND** the form does not advance to step 3
 
 #### Scenario: Step 2 validation — invalid email
-  Given the user is on step 2
-  When the user enters "not-an-email" in the Email field
-  And clicks "Next"
-  Then an email format validation error is displayed
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user enters "not-an-email" in the Email field
+- **AND** clicks "Next"
+- **THEN** an email format validation error is displayed
 
 #### Scenario: Step 3 validation — required fields
-  Given the user is on step 3
-  When the user clicks "Next" with empty payment fields
-  Then validation errors appear for Name on Card, Card Number, Expiry Date, CVV
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks "Next" with empty payment fields
+- **THEN** validation errors appear for Name on Card, Card Number, Expiry Date, CVV
 
 #### Scenario: Step 3 validation — invalid card number
-  Given the user is on step 3
-  When the user enters "123" in the Card Number field
-  And clicks "Next"
-  Then a card number validation error is displayed
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user enters "123" in the Card Number field
+- **AND** clicks "Next"
+- **THEN** a card number validation error is displayed
 
 ### Feature: Navigation
 
 #### Scenario: Back button returns to previous step
-  Given the user is on step 3
-  When the user clicks "Back"
-  Then the form returns to step 2
-  And the progress indicator updates to show step 3 as inactive
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks "Back"
+- **THEN** the form returns to step 2
+- **AND** the progress indicator updates to show step 3 as inactive
 
 #### Scenario: Back button hidden on step 1
-  Given the user is on step 1
-  Then the "Back" button is not visible
+
+- **GIVEN** the user is on step 1
+- **THEN** the "Back" button is not visible
 
 #### Scenario: Clicking completed step navigates back
-  Given the user is on step 3
-  When the user clicks on the step 1 circle in the progress indicator
-  Then the form returns to step 1
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user clicks on the step 1 circle in the progress indicator
+- **THEN** the form returns to step 1
 
 ### Feature: Responsive Design
 
 #### Scenario: Mobile layout stacks vertically
-  Given the user is on a viewport width less than 640px
-  Then the progress indicator wraps or shrinks appropriately
-  And form fields stack vertically
-  And buttons are full-width
+
+- **GIVEN** the user is on a viewport width less than 640px
+- **THEN** the progress indicator wraps or shrinks appropriately
+- **AND** form fields stack vertically
+- **AND** buttons are full-width
 
 ### Feature: Footer with Component Dock branding
 
 #### Scenario: Footer contains Component Dock link
-  Given the page is rendered
-  Then the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
+
+- **GIVEN** the page is rendered
+- **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
 ## Verification Checklist
 

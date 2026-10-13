@@ -44,80 +44,89 @@ The original template shows a single centered section on a light blue-gray (`#f8
 
 Layout: single centered column (Bootstrap `col-md-5`), vertically and horizontally centered in the viewport section. Minimalist, component-focused design — no hero imagery, no footer visible. The entire template is essentially one interactive component showcase.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Selective Multi-Select Component
 
-```gherkin
 Feature: Selective multi-select dropdown component
-  As a user interacting with a form
-  I want a searchable multi-select dropdown
-  So I can efficiently select multiple options from a list
+As a user interacting with a form
+I want a searchable multi-select dropdown
+So I can efficiently select multiple options from a list
 
-  Background:
-    Given the Selective page is loaded
+Background:
+- **GIVEN** the Selective page is loaded
 
-  Scenario: Page displays heading and dropdown
-    Then I should see the heading "Multi-Select"
-    And I should see a dropdown button
+#### Scenario: Page displays heading and dropdown
 
-  Scenario: Dropdown shows initial state
-    Then the dropdown label should read "States"
-    And the dropdown quantity should show "(Any)"
+- **THEN** I should see the heading "Multi-Select"
+- **AND** I should see a dropdown button
 
-  Scenario: Dropdown opens on click
-    When I click the dropdown button
-    Then a search input should be visible
-    And a list of states should be visible
+#### Scenario: Dropdown shows initial state
 
-  Scenario: Dropdown closes on second click
-    Given the dropdown is open
-    When I click the dropdown button
-    Then the search input should be hidden
-    And the list should be hidden
+- **THEN** the dropdown label should read "States"
+- **AND** the dropdown quantity should show "(Any)"
 
-  Scenario: Search filters the list
-    Given the dropdown is open
-    When I type "Cal" in the search input
-    Then only "California" should be visible in the list
+#### Scenario: Dropdown opens on click
 
-  Scenario: Search with no matches shows empty list
-    Given the dropdown is open
-    When I type "XYZ" in the search input
-    Then no states should be visible in the list
+- **WHEN** I click the dropdown button
+- **THEN** a search input should be visible
+- **AND** a list of states should be visible
 
-  Scenario: Selecting an option updates the quantity
-    Given the dropdown is open
-    When I check "California"
-    Then the quantity should show "(1)"
+#### Scenario: Dropdown closes on second click
 
-  Scenario: Selecting multiple options updates the quantity
-    Given the dropdown is open
-    When I check "California"
-    And I check "Texas"
-    Then the quantity should show "(2)"
+- **GIVEN** the dropdown is open
+- **WHEN** I click the dropdown button
+- **THEN** the search input should be hidden
+- **AND** the list should be hidden
 
-  Scenario: Deselecting an option updates the quantity
-    Given the dropdown is open
-    And "California" is checked
-    When I uncheck "California"
-    Then the quantity should show "(Any)"
+#### Scenario: Search filters the list
 
-  Scenario: Visual styling matches design tokens
-    Then the page background should be light blue-gray
-    And the heading should be black
-    And the dropdown should have white background
-    And the dropdown should have rounded corners
-    And the dropdown should have a subtle shadow
-    And accent elements should be coral red
+- **GIVEN** the dropdown is open
+- **WHEN** I type "Cal" in the search input
+- **THEN** only "California" should be visible in the list
 
-  Scenario: Search clears when dropdown closes
-    Given the dropdown is open
-    And I type "Cal" in the search input
-    When I click the dropdown button
-    And I click the dropdown button again
-    Then the search input should show placeholder "Search states"
-```
+#### Scenario: Search with no matches shows empty list
+
+- **GIVEN** the dropdown is open
+- **WHEN** I type "XYZ" in the search input
+- **THEN** no states should be visible in the list
+
+#### Scenario: Selecting an option updates the quantity
+
+- **GIVEN** the dropdown is open
+- **WHEN** I check "California"
+- **THEN** the quantity should show "(1)"
+
+#### Scenario: Selecting multiple options updates the quantity
+
+- **GIVEN** the dropdown is open
+- **WHEN** I check "California"
+- **AND** I check "Texas"
+- **THEN** the quantity should show "(2)"
+
+#### Scenario: Deselecting an option updates the quantity
+
+- **GIVEN** the dropdown is open
+- **AND** "California" is checked
+- **WHEN** I uncheck "California"
+- **THEN** the quantity should show "(Any)"
+
+#### Scenario: Visual styling matches design tokens
+
+- **THEN** the page background should be light blue-gray
+- **AND** the heading should be black
+- **AND** the dropdown should have white background
+- **AND** the dropdown should have rounded corners
+- **AND** the dropdown should have a subtle shadow
+- **AND** accent elements should be coral red
+
+#### Scenario: Search clears when dropdown closes
+
+- **GIVEN** the dropdown is open
+- **AND** I type "Cal" in the search input
+- **WHEN** I click the dropdown button
+- **AND** I click the dropdown button again
+- **THEN** the search input should show placeholder "Search states"
 
 ## Verification Checklist
 

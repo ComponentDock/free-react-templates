@@ -64,66 +64,75 @@ portfolio items, load-more interaction, and a simple social-footer.
    (heart is Font Awesome icon), social icons row (Twitter, Behance, Dribbble,
    Facebook, RSS) using Font Awesome icons.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: DesignVault — Portfolio Creative Resources Template
 
 #### Scenario: Page load and initial render
-  Given the user visits the DesignVault homepage
-  Then the page background is light gray (#ECECEC)
-  And the content wrapper has a white background with visible margin from viewport edges
-  And the centered logo is visible at the top of the content area
+
+- **GIVEN** the user visits the DesignVault homepage
+- **THEN** the page background is light gray (#ECECEC)
+- **AND** the content wrapper has a white background with visible margin from viewport edges
+- **AND** the centered logo is visible at the top of the content area
 
 #### Scenario: Hero section
-  Given the hero section is rendered
-  Then the heading displays "Handpicked design resources crafted with much ❤ and care for every detail"
-  And the phrase "design resources" is visually bold
-  And the subtext reads "free downloads only on fridays" in muted style
-  And the heading and subtext are center-aligned
+
+- **GIVEN** the hero section is rendered
+- **THEN** the heading displays "Handpicked design resources crafted with much ❤ and care for every detail"
+- **AND** the phrase "design resources" is visually bold
+- **AND** the subtext reads "free downloads only on fridays" in muted style
+- **AND** the heading and subtext are center-aligned
 
 #### Scenario: Hamburger menu toggle
-  Given the hamburger menu is closed
-  When the user clicks the toggle button (3 horizontal lines, top-right)
-  Then a full-screen overlay menu appears with white background and gray border
-  And the toggle animates to an X shape
-  And the overlay shows the logo centered at top
-  And nav links are displayed: Home, About, Story, Blog, Contact, More
-  And Contact has a sub-menu item "Contact + Map"
+
+- **GIVEN** the hamburger menu is closed
+- **WHEN** the user clicks the toggle button (3 horizontal lines, top-right)
+- **THEN** a full-screen overlay menu appears with white background and gray border
+- **AND** the toggle animates to an X shape
+- **AND** the overlay shows the logo centered at top
+- **AND** nav links are displayed: Home, About, Story, Blog, Contact, More
+- **AND** Contact has a sub-menu item "Contact + Map"
 
 #### Scenario: Hamburger menu close
-  Given the overlay menu is open
-  When the user clicks the toggle button again
-  Then the overlay menu closes and returns to the initial state
+
+- **GIVEN** the overlay menu is open
+- **WHEN** the user clicks the toggle button again
+- **THEN** the overlay menu closes and returns to the initial state
 
 #### Scenario: Portfolio grid layout
-  Given the portfolio grid is rendered
-  Then items are displayed in a masonry-style grid
-  And each item spans either one-third or two-thirds of the grid width
-  And items have a category tag overlay (e.g. "SMARTPHONE", "GALLERY", "BOOK")
-  And items have a title overlay
-  And items have a placeholder image background
+
+- **GIVEN** the portfolio grid is rendered
+- **THEN** items are displayed in a masonry-style grid
+- **AND** each item spans either one-third or two-thirds of the grid width
+- **AND** items have a category tag overlay (e.g. "SMARTPHONE", "GALLERY", "BOOK")
+- **AND** items have a title overlay
+- **AND** items have a placeholder image background
 
 #### Scenario: Portfolio grid item hover
-  Given a portfolio grid item is rendered
-  When the user hovers over the item
-  Then the item shows a hover state (image zoom or overlay effect)
+
+- **GIVEN** a portfolio grid item is rendered
+- **WHEN** the user hovers over the item
+- **THEN** the item shows a hover state (image zoom or overlay effect)
 
 #### Scenario: Load more interaction
-  Given the portfolio grid is displayed with initial items
-  When the user clicks "Load More"
-  Then additional portfolio items are loaded and appended to the grid
+
+- **GIVEN** the portfolio grid is displayed with initial items
+- **WHEN** the user clicks "Load More"
+- **THEN** additional portfolio items are loaded and appended to the grid
 
 #### Scenario: Footer
-  Given the page footer is rendered
-  Then it displays a copyright line with heart icon
-  And social media icons are present (Twitter, Behance, Dribbble, Facebook, RSS)
-  And social icons link to "#" (placeholder URLs)
+
+- **GIVEN** the page footer is rendered
+- **THEN** it displays a copyright line with heart icon
+- **AND** social media icons are present (Twitter, Behance, Dribbble, Facebook, RSS)
+- **AND** social icons link to "#" (placeholder URLs)
 
 #### Scenario: Responsive behavior
-  Given the user views the page on a mobile viewport
-  Then the hamburger menu is visible as the primary navigation
-  And the portfolio grid items stack to single column
-  And the footer social icons remain visible
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the hamburger menu is visible as the primary navigation
+- **AND** the portfolio grid items stack to single column
+- **AND** the footer social icons remain visible
 
 ## Verification checklist
 

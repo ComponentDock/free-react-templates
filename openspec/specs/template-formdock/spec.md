@@ -56,83 +56,85 @@ Right column (~50%):
 Key differences: labels above inputs (not placeholders), different address
 format, very clean/simple layout, no serif fonts.
 
-## Gherkin requirements
+## Requirements
 
 ### Page layout
 
-```gherkin
-Scenario: Page renders a centered two-column layout
-  Given I visit the Formdock page
-  Then I see a centered two-column layout on a white background
+#### Scenario: Page renders a centered two-column layout
 
-Scenario: Left column contains heading, text, and contact info
-  Given I visit the Formdock page
-  Then the left column has a "Contact Us" heading
-  And it contains a paragraph of text
-  And it contains contact information items
+- **GIVEN** I visit the Formdock page
+- **THEN** I see a centered two-column layout on a white background
 
-Scenario: Right column contains the form
-  Given I visit the Formdock page
-  Then the right column contains a contact form
-```
+#### Scenario: Left column contains heading, text, and contact info
+
+- **GIVEN** I visit the Formdock page
+- **THEN** the left column has a "Contact Us" heading
+- **AND** it contains a paragraph of text
+- **AND** it contains contact information items
+
+#### Scenario: Right column contains the form
+
+- **GIVEN** I visit the Formdock page
+- **THEN** the right column contains a contact form
 
 ### Contact info
 
-```gherkin
-Scenario: Info displays address
-  Given I visit the Formdock page
-  Then I see a building icon and text "34 Street Name, City Name Here, United States"
+#### Scenario: Info displays address
 
-Scenario: Info displays phone
-  Given I visit the Formdock page
-  Then I see a phone icon and text "+1 (222) 345 6789"
+- **GIVEN** I visit the Formdock page
+- **THEN** I see a building icon and text "34 Street Name, City Name Here, United States"
 
-Scenario: Info displays email
-  Given I visit the Formdock page
-  Then I see a mail icon and text "info@mywebsite.com"
-```
+#### Scenario: Info displays phone
+
+- **GIVEN** I visit the Formdock page
+- **THEN** I see a phone icon and text "+1 (222) 345 6789"
+
+#### Scenario: Info displays email
+
+- **GIVEN** I visit the Formdock page
+- **THEN** I see a mail icon and text "info@mywebsite.com"
 
 ### Contact form
 
-```gherkin
-Scenario: Form displays all fields with labels
-  Given I visit the Formdock page
-  Then I see a "Name" label above an input field
-  And I see an "Email" label above an input field
-  And I see a "Message" label above a textarea
-  And I see a Send Message button
+#### Scenario: Form displays all fields with labels
 
-Scenario: Inputs have bordered box style
-  Given I visit the Formdock page
-  Then all form inputs have a full border (box style)
-  And the input borders are light gray
+- **GIVEN** I visit the Formdock page
+- **THEN** I see a "Name" label above an input field
+- **AND** I see an "Email" label above an input field
+- **AND** I see a "Message" label above a textarea
+- **AND** I see a Send Message button
 
-Scenario: Labels appear above inputs
-  Given I visit the Formdock page
-  Then each form field has a label displayed above the input
+#### Scenario: Inputs have bordered box style
 
-Scenario: Send Message button is styled
-  Given I visit the Formdock page
-  Then the Send Message button has a blue background and white text
-```
+- **GIVEN** I visit the Formdock page
+- **THEN** all form inputs have a full border (box style)
+- **AND** the input borders are light gray
+
+#### Scenario: Labels appear above inputs
+
+- **GIVEN** I visit the Formdock page
+- **THEN** each form field has a label displayed above the input
+
+#### Scenario: Send Message button is styled
+
+- **GIVEN** I visit the Formdock page
+- **THEN** the Send Message button has a blue background and white text
 
 ### Responsive behavior
 
-```gherkin
-Scenario: Columns stack on mobile
-  Given I visit the Formdock page on a mobile viewport
-  Then the two columns stack vertically
-  And the left column appears above the form
-```
+#### Scenario: Columns stack on mobile
+
+- **GIVEN** I visit the Formdock page on a mobile viewport
+- **THEN** the two columns stack vertically
+- **AND** the left column appears above the form
 
 ### Footer
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formdock page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Formdock page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references Component Dock
 
 ## Verification checklist
 

@@ -119,96 +119,109 @@ and its stylesheet `css/style.css`:
 | Recent posts        | Light grey (`#f8f9fa`)                          |
 | Footer              | Dark (`#1a1a1a`)                                |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: StudyPad — Online Learning Platform
 
-  Scenario: Navbar displays with correct links
-    Given the user is on the StudyPad homepage
-    Then the navbar should show "StudyPad" logo
-    And the navbar should contain links: Home, About, Course, Instructor, Blog, Contact
-    And the navbar should have a dark background
+#### Scenario: Navbar displays with correct links
 
-  Scenario: Hero section renders with headline and CTAs
-    Given the user is on the StudyPad homepage
-    Then the hero section should display "Welcome to StudyLab" subheading
-    And the hero should display "We Are Online Platform For Make Learn" heading
-    And the hero should have a background image with dark overlay
-    And there should be an "Our Course" primary blue button
-    And there should be a "Learn More" white outlined button
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** the navbar should show "StudyPad" logo
+- **AND** the navbar should contain links: Home, About, Course, Instructor, Blog, Contact
+- **AND** the navbar should have a dark background
 
-  Scenario: Registration form is present in hero area
-    Given the user is on the StudyPad homepage
-    Then a "Register Now" form should be visible
-    And the form should have fields: Full Name, Email Address, Password, Confirm Password
-    And the form should have a submit button with a paper-plane icon
-    And the form should show "Already have an account? Sign In" link
+#### Scenario: Hero section renders with headline and CTAs
 
-  Scenario: Registration form validates required fields
-    Given the user is on the StudyPad homepage
-    When the user clicks the submit button without filling fields
-    Then the form should indicate validation errors for required fields
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** the hero section should display "Welcome to StudyLab" subheading
+- **AND** the hero should display "We Are Online Platform For Make Learn" heading
+- **AND** the hero should have a background image with dark overlay
+- **AND** there should be an "Our Course" primary blue button
+- **AND** there should be a "Learn More" white outlined button
 
-  Scenario: Course categories display with circular thumbnails
-    Given the user is on the StudyPad homepage
-    Then there should be 6 circular category thumbnails
-    And categories should include: IT & Software, Music, Photography, Marketing, Health, Audio Video
-    And each category should show "100 Course" text
-    And a "See All Courses" pink button should be centered below
+#### Scenario: Registration form is present in hero area
 
-  Scenario: Pick Your Course section shows course cards
-    Given the user is on the StudyPad homepage
-    Then the "Pick Your Course" section should be visible
-    And there should be course cards with image, price, instructor name
-    And each card should show star rating and student count
-    And the section should have a light grey background
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** a "Register Now" form should be visible
+- **AND** the form should have fields: Full Name, Email Address, Password, Confirm Password
+- **AND** the form should have a submit button with a paper-plane icon
+- **AND** the form should show "Already have an account? Sign In" link
 
-  Scenario: Statistics counter section animates on scroll
-    Given the user is on the StudyPad homepage
-    When the user scrolls to the statistics section
-    Then 4 counter items should be visible with animated numbers
-    And each counter should have a number and label
-    And the section should have a parallax background image
+#### Scenario: Registration form validates required fields
 
-  Scenario: About section displays with background image
-    Given the user is on the StudyPad homepage
-    Then the about section should display "Learn Anything You Want Today"
-    And the section should have a background image with overlay
-    And there should be descriptive text about the platform
+- **GIVEN** the user is on the StudyPad homepage
+- **WHEN** the user clicks the submit button without filling fields
+- **THEN** the form should indicate validation errors for required fields
 
-  Scenario: Testimonials carousel works
-    Given the user is on the StudyPad homepage
-    Then the testimonials section should display "What Are Students Says"
-    And there should be student testimonials with avatar, name, and quote
-    And the testimonials should be in a carousel/slider format
+#### Scenario: Course categories display with circular thumbnails
 
-  Scenario: Intro CTA block renders with gradient
-    Given the user is on the StudyPad homepage
-    Then an intro CTA section should be visible
-    And it should have "We Are StudyLab An Online Learning Center" heading
-    And it should have descriptive text
-    And it should have an "Enroll Now" button
-    And the background should be a blue-purple gradient
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** there should be 6 circular category thumbnails
+- **AND** categories should include: IT & Software, Music, Photography, Marketing, Health, Audio Video
+- **AND** each category should show "100 Course" text
+- **AND** a "See All Courses" pink button should be centered below
 
-  Scenario: Services section shows four service cards
-    Given the user is on the StudyPad homepage
-    Then 4 service cards should be displayed in a grid
-    And services should include: Top Quality Content, Highly Skilled Instructor, World Class Quiz, Get Certified
-    And each card should have an icon and description text
+#### Scenario: Pick Your Course section shows course cards
 
-  Scenario: Recent blog posts section renders
-    Given the user is on the StudyPad homepage
-    Then the "Recent Post" section should be visible
-    And there should be blog post cards with image, date, author, title
-    And the section should have a light grey background
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** the "Pick Your Course" section should be visible
+- **AND** there should be course cards with image, price, instructor name
+- **AND** each card should show star rating and student count
+- **AND** the section should have a light grey background
 
-  Scenario: Footer displays with correct content
-    Given the user is on the StudyPad homepage
-    Then the footer should be visible with a dark background
-    And it should show the StudyPad logo and description
-    And it should have navigation link columns
-    And it should have a copyright line and social media icons
-    And the footer should link to Component Dock
+#### Scenario: Statistics counter section animates on scroll
+
+- **GIVEN** the user is on the StudyPad homepage
+- **WHEN** the user scrolls to the statistics section
+- **THEN** 4 counter items should be visible with animated numbers
+- **AND** each counter should have a number and label
+- **AND** the section should have a parallax background image
+
+#### Scenario: About section displays with background image
+
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** the about section should display "Learn Anything You Want Today"
+- **AND** the section should have a background image with overlay
+- **AND** there should be descriptive text about the platform
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** the testimonials section should display "What Are Students Says"
+- **AND** there should be student testimonials with avatar, name, and quote
+- **AND** the testimonials should be in a carousel/slider format
+
+#### Scenario: Intro CTA block renders with gradient
+
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** an intro CTA section should be visible
+- **AND** it should have "We Are StudyLab An Online Learning Center" heading
+- **AND** it should have descriptive text
+- **AND** it should have an "Enroll Now" button
+- **AND** the background should be a blue-purple gradient
+
+#### Scenario: Services section shows four service cards
+
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** 4 service cards should be displayed in a grid
+- **AND** services should include: Top Quality Content, Highly Skilled Instructor, World Class Quiz, Get Certified
+- **AND** each card should have an icon and description text
+
+#### Scenario: Recent blog posts section renders
+
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** the "Recent Post" section should be visible
+- **AND** there should be blog post cards with image, date, author, title
+- **AND** the section should have a light grey background
+
+#### Scenario: Footer displays with correct content
+
+- **GIVEN** the user is on the StudyPad homepage
+- **THEN** the footer should be visible with a dark background
+- **AND** it should show the StudyPad logo and description
+- **AND** it should have navigation link columns
+- **AND** it should have a copyright line and social media icons
+- **AND** the footer should link to Component Dock
 
 ## Verification checklist
 

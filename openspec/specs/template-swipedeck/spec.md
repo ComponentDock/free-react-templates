@@ -12,7 +12,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict).
 - **Button / Navigation shapes**: Carousel navigation arrows with distinct borders/styling, pagination dots (active dot solid white, inactive `rgba(255, 255, 255, 0.5)`).
 - **Layout**: Full-screen (`100vh`) hero slider with background images, centered slide titles (`Impedit Ipsam Quae Natus`), and interactive arrow/dot navigation.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: SwipeDeck Hero Carousel
 
@@ -20,32 +20,32 @@ As a visitor, I want to view a full-screen image carousel with slide headings an
 
 #### Scenario: Display main carousel slides with overlay and headings
 
-- Given the SwipeDeck template is loaded
-- When the user views the main carousel
-- Then three or more full-screen slide items should be visible
-- And each slide should display a background image with a dark overlay
-- And each slide should display a centered heading (`Impedit Ipsam Quae Natus` or variation)
+- **GIVEN** the SwipeDeck template is loaded
+- **WHEN** the user views the main carousel
+- **THEN** three or more full-screen slide items should be visible
+- **AND** each slide should display a background image with a dark overlay
+- **AND** each slide should display a centered heading (`Impedit Ipsam Quae Natus` or variation)
 
 #### Scenario: Navigate between slides using next and previous buttons
 
-- Given the carousel is displaying slide 1
-- When the user clicks the next navigation arrow (``)
-- Then the carousel should transition to display slide 2
-- When the user clicks the previous navigation arrow (``)
-- Then the carousel should transition back to slide 1
+- **GIVEN** the carousel is displaying slide 1
+- **WHEN** the user clicks the next navigation arrow (``)
+- **THEN** the carousel should transition to display slide 2
+- **WHEN** the user clicks the previous navigation arrow (``)
+- **THEN** the carousel should transition back to slide 1
 
 #### Scenario: Navigate using pagination dots
 
-- Given the carousel is loaded with multiple slides
-- When the user clicks the second pagination dot
-- Then the carousel should jump directly to slide 2
-- And the second dot should be highlighted as active
+- **GIVEN** the carousel is loaded with multiple slides
+- **WHEN** the user clicks the second pagination dot
+- **THEN** the carousel should jump directly to slide 2
+- **AND** the second dot should be highlighted as active
 
 #### Scenario: Component Dock footer attribution
 
-- Given the SwipeDeck template is fully loaded
-- When the user scrolls to the footer
-- Then a "Made with Component Dock" link pointing to `https://www.componentdock.com/` must be visible
+- **GIVEN** the SwipeDeck template is fully loaded
+- **WHEN** the user scrolls to the footer
+- **THEN** a "Made with Component Dock" link pointing to `https://www.componentdock.com/` must be visible
 
 ## Verification Checklist
 

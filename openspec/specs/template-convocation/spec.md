@@ -49,79 +49,100 @@ Recreation of ColorLib "Confe" — a conference/event landing page template.
 9. **Conference Events** — Centered section heading. 3-column grid, 6 event/post cards. Each: image, title, date + author line, excerpt paragraph.
 10. **Footer** — Dark overlay on background image (`rgba(0,0,0,0.8)`). 3 columns: About (text + Read More link), Quick Menu (two sub-lists of nav links), Social Icons (Facebook, Twitter, Instagram, Vimeo via lucide-react). Copyright line: replace Colorlib attribution with "Component Dock".
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Convocation template behaviour
+
 Feature: Convocation Conference Landing Page
 
-  Background:
-    Given the user opens the Convocation template at the root URL
+Background:
+- **GIVEN** the user opens the Convocation template at the root URL
 
-  # --- Navbar ---
-  Scenario: Navbar displays logo and navigation links
-    Then the logo "Convocation" is visible in the top-left
-    And the navigation links "Home", "Speakers", "Venue", "Sponsors", "About", "Contact" are visible
+**--- Navbar ---**
 
-  Scenario: Navbar becomes solid on scroll
-    When the user scrolls down past the hero
-    Then the navbar background changes to white with a subtle shadow
-    And the logo and link colors switch to dark
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Mobile hamburger menu opens
-    Given the viewport is narrower than 768px
-    When the user clicks the hamburger menu icon
-    Then a mobile slide-out menu appears from the right
+- **THEN** the logo "Convocation" is visible in the top-left
+- **AND** the navigation links "Home", "Speakers", "Venue", "Sponsors", "About", "Contact" are visible
 
-  # --- Hero ---
-  Scenario: Hero section displays with background image
-    Then a full-width hero background image is visible
-    And the heading "The Challenges of Business Innovation" is displayed in white
-    And the date/location text "April 17-21, 2019 • Vancouver" is shown
+#### Scenario: Navbar becomes solid on scroll
 
-  Scenario: Hero CTA buttons are visible
-    Then the "Get Your Ticket" button is visible with a red pill shape
-    And the "Learn More" text link is visible beside it
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navbar background changes to white with a subtle shadow
+- **AND** the logo and link colors switch to dark
 
-  # --- About ---
-  Scenario: About section displays conference description
-    Then the heading "About The Conference" is visible
-    And a countdown timer placeholder is displayed
-    And two descriptive paragraphs are shown
-    And the "Get Your Ticket Now" button is visible
+#### Scenario: Mobile hamburger menu opens
 
-  # --- Image Pairs ---
-  Scenario: Two side-by-side image sections are displayed
-    Then two image pair sections are shown
-    And each pair has two equal-width background images with dark overlay
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** a mobile slide-out menu appears from the right
 
-  # --- Speakers ---
-  Scenario: Speaker cards are displayed in a grid
-    Then 6 speaker cards are shown in a 3-column responsive layout
-    And each card has a photo, full name, and title/company
+**--- Hero ---**
 
-  # --- Why Us ---
-  Scenario: Feature highlights are shown in three columns
-    Then 3 feature items are displayed in a row
-    And each item has an icon, heading, and description text
-    And the items are "Our Mission", "MP3 with Transcript", "Good Reviews"
+#### Scenario: Hero section displays with background image
 
-  # --- Sponsors ---
-  Scenario: Sponsor section displays with dark background
-    Then a sponsor card with logo placeholder text "Your Company Here" is visible
-    And the "Become a Sponsor" pill button is shown
+- **THEN** a full-width hero background image is visible
+- **AND** the heading "The Challenges of Business Innovation" is displayed in white
+- **AND** the date/location text "April 17-21, 2019 • Vancouver" is shown
 
-  # --- Events ---
-  Scenario: Conference event cards are displayed in a grid
-    Then 6 event cards are shown in a 3-column layout
-    And each card has an image, title, date with author, and excerpt
+#### Scenario: Hero CTA buttons are visible
 
-  # --- Footer ---
-  Scenario: Footer shows contact info, quick links, and social icons
-    Then the footer has an About column with description and Read More link
-    And a Quick Menu column with navigation links
-    And social media icon links are displayed
-    And a copyright line with "Component Dock" attribution is visible
-```
+- **THEN** the "Get Your Ticket" button is visible with a red pill shape
+- **AND** the "Learn More" text link is visible beside it
+
+**--- About ---**
+
+#### Scenario: About section displays conference description
+
+- **THEN** the heading "About The Conference" is visible
+- **AND** a countdown timer placeholder is displayed
+- **AND** two descriptive paragraphs are shown
+- **AND** the "Get Your Ticket Now" button is visible
+
+**--- Image Pairs ---**
+
+#### Scenario: Two side-by-side image sections are displayed
+
+- **THEN** two image pair sections are shown
+- **AND** each pair has two equal-width background images with dark overlay
+
+**--- Speakers ---**
+
+#### Scenario: Speaker cards are displayed in a grid
+
+- **THEN** 6 speaker cards are shown in a 3-column responsive layout
+- **AND** each card has a photo, full name, and title/company
+
+**--- Why Us ---**
+
+#### Scenario: Feature highlights are shown in three columns
+
+- **THEN** 3 feature items are displayed in a row
+- **AND** each item has an icon, heading, and description text
+- **AND** the items are "Our Mission", "MP3 with Transcript", "Good Reviews"
+
+**--- Sponsors ---**
+
+#### Scenario: Sponsor section displays with dark background
+
+- **THEN** a sponsor card with logo placeholder text "Your Company Here" is visible
+- **AND** the "Become a Sponsor" pill button is shown
+
+**--- Events ---**
+
+#### Scenario: Conference event cards are displayed in a grid
+
+- **THEN** 6 event cards are shown in a 3-column layout
+- **AND** each card has an image, title, date with author, and excerpt
+
+**--- Footer ---**
+
+#### Scenario: Footer shows contact info, quick links, and social icons
+
+- **THEN** the footer has an About column with description and Read More link
+- **AND** a Quick Menu column with navigation links
+- **AND** social media icon links are displayed
+- **AND** a copyright line with "Component Dock" attribution is visible
 
 ## Verification checklist
 

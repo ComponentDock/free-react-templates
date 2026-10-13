@@ -56,78 +56,87 @@ Recreation of ColorLib **Login Form V16** as a React 19 + Vite + Tailwind 4 + Ty
 | Focus underline      | 1px gradient | Animated width 0 → 100% on focus                         |
 | Background           | Full-viewport image | `images/bg-01.jpg` with 65% dark overlay           |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Logingrove Login Form
 
   Background:
-    Given the user navigates to the logingrove login page
-    Then the full-screen background image is displayed with a dark overlay
-    And a centered white login card is visible
+- **GIVEN** the user navigates to the logingrove login page
+- **THEN** the full-screen background image is displayed with a dark overlay
+- **AND** a centered white login card is visible
 
-  Scenario: Card renders with correct structure
-    Given the login card is displayed
-    Then the card has rounded corners (border-radius 10px)
-    And the card width is approximately 390px
-    And the card background is white (#ffffff)
+#### Scenario: Card renders with correct structure
 
-  Scenario: Title is displayed correctly
-    Given the login card is visible
-    Then the heading reads "Account Login"
-    And the heading is uppercase
-    And the heading text is white (#ffffff)
-    And the heading font is Ubuntu Bold 28px
+- **GIVEN** the login card is displayed
+- **THEN** the card has rounded corners (border-radius 10px)
+- **AND** the card width is approximately 390px
+- **AND** the card background is white (#ffffff)
 
-  Scenario: Username input field
-    Given the login form is displayed
-    Then a username input field is present
-    And the input placeholder text reads "User name"
-    And the input has a bottom border (#e6e6e6)
-    When the user clicks the username input
-    Then a gradient underline animates from 0% to 100% width
-    And the gradient colors transition from purple (#a445b2) to pink (#d41872) to light pink (#fa4299)
-    And the input left padding shrinks from 80px to 60px
+#### Scenario: Title is displayed correctly
 
-  Scenario: Password input field
-    Given the login form is displayed
-    Then a password input field is present
-    And the input placeholder text reads "Password"
-    When the user clicks the password input
-    Then a gradient underline animates from 0% to 100% width
+- **GIVEN** the login card is visible
+- **THEN** the heading reads "Account Login"
+- **AND** the heading is uppercase
+- **AND** the heading text is white (#ffffff)
+- **AND** the heading font is Ubuntu Bold 28px
 
-  Scenario: Login button styling
-    Given the login form is displayed
-    Then the login button is displayed
-    And the button text reads "Login" in uppercase
-    And the button has a pill shape (border-radius 21px)
-    And the button background is a gradient from #a445b2 to #d41872 to #fa4299
-    When the user hovers over the login button
-    Then the button background transitions to transparent
-    And a dark gray (#555555) background appears underneath
+#### Scenario: Username input field
 
-  Scenario: Input field focus animations
-    Given the login form is displayed
-    When the user focuses the username input
-    Then the focus underline appears with gradient colors
-    And the input text shifts left
-    When the user focuses the password input
-    Then the focus underline appears with gradient colors
+- **GIVEN** the login form is displayed
+- **THEN** a username input field is present
+- **AND** the input placeholder text reads "User name"
+- **AND** the input has a bottom border (#e6e6e6)
+- **WHEN** the user clicks the username input
+- **THEN** a gradient underline animates from 0% to 100% width
+- **AND** the gradient colors transition from purple (#a445b2) to pink (#d41872) to light pink (#fa4299)
+- **AND** the input left padding shrinks from 80px to 60px
 
-  Scenario: Form submission
-    Given the login form is displayed
-    When the user enters a username and password
-    And clicks the Login button
-    Then the form submits
+#### Scenario: Password input field
 
-  Scenario: Responsive layout
-    Given the user views the page on a mobile device
-    Then the login card remains centered
-    And the card width adapts to the viewport
+- **GIVEN** the login form is displayed
+- **THEN** a password input field is present
+- **AND** the input placeholder text reads "Password"
+- **WHEN** the user clicks the password input
+- **THEN** a gradient underline animates from 0% to 100% width
 
-  Scenario: Footer links to Component Dock
-    Given the page footer is visible
-    Then a link to "https://www.componentdock.com/" is present
-    And the link text mentions "Component Dock"
+#### Scenario: Login button styling
+
+- **GIVEN** the login form is displayed
+- **THEN** the login button is displayed
+- **AND** the button text reads "Login" in uppercase
+- **AND** the button has a pill shape (border-radius 21px)
+- **AND** the button background is a gradient from #a445b2 to #d41872 to #fa4299
+- **WHEN** the user hovers over the login button
+- **THEN** the button background transitions to transparent
+- **AND** a dark gray (#555555) background appears underneath
+
+#### Scenario: Input field focus animations
+
+- **GIVEN** the login form is displayed
+- **WHEN** the user focuses the username input
+- **THEN** the focus underline appears with gradient colors
+- **AND** the input text shifts left
+- **WHEN** the user focuses the password input
+- **THEN** the focus underline appears with gradient colors
+
+#### Scenario: Form submission
+
+- **GIVEN** the login form is displayed
+- **WHEN** the user enters a username and password
+- **AND** clicks the Login button
+- **THEN** the form submits
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the login card remains centered
+- **AND** the card width adapts to the viewport
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the page footer is visible
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

@@ -89,79 +89,90 @@ with `lucide-react` icons. Do NOT ship icon font files.
     - Col 4: "Connect With Us" (social icons)
     Bottom: copyright line + "Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Chophouse Restaurant Template
 
-  Scenario: Page loads with hero section visible
-    Given the user visits the Chophouse page
-    Then the hero section is visible with heading "Welcome To Steak Food & Restaurant"
-    And the navigation bar shows links: Home, Menu, Gallery, Contact, Reserve Now
-    And the "Reserve Now" button is styled as a primary CTA
+#### Scenario: Page loads with hero section visible
 
-  Scenario: Navigation becomes opaque on scroll
-    Given the user is at the top of the page
-    Then the header has a transparent background
-    When the user scrolls down past the hero
-    Then the header has a white background with shadow
+- **GIVEN** the user visits the Chophouse page
+- **THEN** the hero section is visible with heading "Welcome To Steak Food & Restaurant"
+- **AND** the navigation bar shows links: Home, Menu, Gallery, Contact, Reserve Now
+- **AND** the "Reserve Now" button is styled as a primary CTA
 
-  Scenario: Hero displays parallax background
-    Given the user views the hero section
-    Then a full-viewport background image is visible
-    And a dark overlay covers the background
-    And a "Play Video" button is centered on the hero
+#### Scenario: Navigation becomes opaque on scroll
 
-  Scenario: About section shows two-column layout
-    Given the user scrolls to the About section
-    Then an image is displayed on the left
-    And the heading "Welcome To Steak Food & Restaurant" appears on the right
-    And a "Read More" button is visible below the text
+- **GIVEN** the user is at the top of the page
+- **THEN** the header has a transparent background
+- **WHEN** the user scrolls down past the hero
+- **THEN** the header has a white background with shadow
 
-  Scenario: Services section displays 6 service cards
-    Given the user scrolls to the Services section
-    Then 6 service cards are visible in a 3-column grid
-    And each card has an icon, title, and description
-    And the section has a light grey background
+#### Scenario: Hero displays parallax background
 
-  Scenario: Menu section has tabbed navigation
-    Given the user scrolls to the Menu section
-    Then three tabs are visible: Breakfast, Lunch, Dinner
-    When the user clicks the "Lunch" tab
-    Then the Lunch menu items are displayed
-    And each item shows an image, name, price, and description
-    When the user clicks the "Dinner" tab
-    Then the Dinner menu items are displayed
+- **GIVEN** the user views the hero section
+- **THEN** a full-viewport background image is visible
+- **AND** a dark overlay covers the background
+- **AND** a "Play Video" button is centered on the hero
 
-  Scenario: Fun Facts section shows animated counters
-    Given the user scrolls to the Fun Facts section
-    Then 3 counter stats are visible
-    And the counters animate from 0 to their target values
-    And the section has a light grey background
+#### Scenario: About section shows two-column layout
 
-  Scenario: News & Events displays event cards
-    Given the user scrolls to the News & Events section
-    Then 3 event cards are visible
-    And each card has a thumbnail, title, date, and comment count
+- **GIVEN** the user scrolls to the About section
+- **THEN** an image is displayed on the left
+- **AND** the heading "Welcome To Steak Food & Restaurant" appears on the right
+- **AND** a "Read More" button is visible below the text
 
-  Scenario: Testimonials carousel works
-    Given the user scrolls to the Testimonials section
-    Then a testimonial quote is visible with author name and title
-    When the user clicks the next arrow
-    Then the next testimonial is displayed
-    And the section has a light grey background
+#### Scenario: Services section displays 6 service cards
 
-  Scenario: Reservation form collects table booking details
-    Given the user scrolls to the Reservation section
-    Then the opening hours are displayed on the left
-    And the phone number is visible
-    And the reservation form has fields: Date, Time, Name, Phone, Email
-    When the user fills all required fields and submits
-    Then the form is submitted (no server — local state only)
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service cards are visible in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the section has a light grey background
 
-  Scenario: Footer displays 4-column layout
-    Given the user scrolls to the footer
-    Then 4 columns are visible: About, Quick Links, Support, Connect
-    And a copyright line with "Component Dock" link is at the bottom
+#### Scenario: Menu section has tabbed navigation
+
+- **GIVEN** the user scrolls to the Menu section
+- **THEN** three tabs are visible: Breakfast, Lunch, Dinner
+- **WHEN** the user clicks the "Lunch" tab
+- **THEN** the Lunch menu items are displayed
+- **AND** each item shows an image, name, price, and description
+- **WHEN** the user clicks the "Dinner" tab
+- **THEN** the Dinner menu items are displayed
+
+#### Scenario: Fun Facts section shows animated counters
+
+- **GIVEN** the user scrolls to the Fun Facts section
+- **THEN** 3 counter stats are visible
+- **AND** the counters animate from 0 to their target values
+- **AND** the section has a light grey background
+
+#### Scenario: News & Events displays event cards
+
+- **GIVEN** the user scrolls to the News & Events section
+- **THEN** 3 event cards are visible
+- **AND** each card has a thumbnail, title, date, and comment count
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a testimonial quote is visible with author name and title
+- **WHEN** the user clicks the next arrow
+- **THEN** the next testimonial is displayed
+- **AND** the section has a light grey background
+
+#### Scenario: Reservation form collects table booking details
+
+- **GIVEN** the user scrolls to the Reservation section
+- **THEN** the opening hours are displayed on the left
+- **AND** the phone number is visible
+- **AND** the reservation form has fields: Date, Time, Name, Phone, Email
+- **WHEN** the user fills all required fields and submits
+- **THEN** the form is submitted (no server — local state only)
+
+#### Scenario: Footer displays 4-column layout
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are visible: About, Quick Links, Support, Connect
+- **AND** a copyright line with "Component Dock" link is at the bottom
 
 ## Verification checklist
 

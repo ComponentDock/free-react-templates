@@ -45,83 +45,91 @@ Recreation of ColorLib **Laundry** template as a React 19 + Vite + Tailwind 4 + 
 9. **About Company** — White background, two-column layout. Left: image (use picsum.photos/seed/washhub-about/600/400). Right: H2 "About company", descriptive paragraphs, CTA link/button.
 10. **Footer** — Blue `#6785FF` background, 4-column layout: Brand logo + description, Services links, Quick links, Get in touch (address, phone, email). Bottom bar: copyright text + social icons. Component Dock attribution.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: WashHub Laundry Service Template
 
-```gherkin
 Feature: WashHub — Laundry Service Website Template
-  As a user visiting the WashHub website
-  I want to see a professional laundry service website
-  So that I can learn about services, get a quote, and contact the provider
+As a user visiting the WashHub website
+I want to see a professional laundry service website
+So that I can learn about services, get a quote, and contact the provider
 
-  Scenario: Navbar displays brand and navigation links
-    Given I am on the WashHub homepage
-    Then I see a sticky navbar with brand name "WashHub"
-    And I see navigation links: Home, About, Services, Blog, Contact
-    And I see a call-to-action button with a phone number
-    And the navbar collapses to a hamburger menu on mobile
+#### Scenario: Navbar displays brand and navigation links
 
-  Scenario: Hero section shows headline and CTAs
-    Given I am on the WashHub homepage
-    Then I see a hero section with a dark gradient overlay
-    And I see the heading "Quality laundry service in your city"
-    And I see a "Get a quote" primary button (solid blue)
-    And I see a "Learn more" outlined button
-    And the hero has a background image
+- **GIVEN** I am on the WashHub homepage
+- **THEN** I see a sticky navbar with brand name "WashHub"
+- **AND** I see navigation links: Home, About, Services, Blog, Contact
+- **AND** I see a call-to-action button with a phone number
+- **AND** the navbar collapses to a hamburger menu on mobile
 
-  Scenario: How We Work section shows 3 steps
-    Given I scroll to the How We Work section
-    Then I see the section tag "This is how we work"
-    And I see 3 steps: "We collect your clothes", "Wash your clothes", "Get delivery"
-    And each step has a circular icon, title, and description
+#### Scenario: Hero section shows headline and CTAs
 
-  Scenario: Service categories section shows 3 cards
-    Given I scroll to the service categories section
-    Then I see the section tag "Services we offer"
-    And I see 3 service category cards
-    And each card has a circular icon, service name, and description
-    And cards have hover effects
+- **GIVEN** I am on the WashHub homepage
+- **THEN** I see a hero section with a dark gradient overlay
+- **AND** I see the heading "Quality laundry service in your city"
+- **AND** I see a "Get a quote" primary button (solid blue)
+- **AND** I see a "Learn more" outlined button
+- **AND** the hero has a background image
 
-  Scenario: Promotional banner encourages calling
-    Given I scroll to the promotional banner
-    Then I see a dark background section
-    And I see the heading "Call us for a service"
-    And I see a phone number and CTA button
+#### Scenario: How We Work section shows 3 steps
 
-  Scenario: Testimonials section shows client reviews
-    Given I scroll to the testimonials section
-    Then I see a carousel of testimonials
-    And each testimonial has a star rating, quote text, and client info
-    And client avatars are displayed in circles
-    And navigation dots are visible
+- **GIVEN** I scroll to the How We Work section
+- **THEN** I see the section tag "This is how we work"
+- **AND** I see 3 steps: "We collect your clothes", "Wash your clothes", "Get delivery"
+- **AND** each step has a circular icon, title, and description
 
-  Scenario: Additional services section shows more offerings
-    Given I scroll to the additional services section
-    Then I see a centered section tag and heading
-    And I see 3 service items with icons and descriptions
+#### Scenario: Service categories section shows 3 cards
 
-  Scenario: About company section displays info
-    Given I scroll to the about section
-    Then I see the heading "About company"
-    And I see an image on the left
-    And I see descriptive paragraphs on the right
-    And I see a CTA link/button
+- **GIVEN** I scroll to the service categories section
+- **THEN** I see the section tag "Services we offer"
+- **AND** I see 3 service category cards
+- **AND** each card has a circular icon, service name, and description
+- **AND** cards have hover effects
 
-  Scenario: Footer displays links and contact info
-    Given I scroll to the footer
-    Then I see a blue background footer
-    And I see 4 columns: Brand, Services, Quick links, Get in touch
-    And I see contact information (address, phone, email)
-    And I see social media icons
-    And the footer links to https://www.componentdock.com/
+#### Scenario: Promotional banner encourages calling
 
-  Scenario: Page composes all sections in correct order
-    Given I am on the WashHub homepage
-    When the page loads
-    Then I see sections in order: Navbar, Hero, How We Work, Service Categories, Promo Banner, Testimonials, Additional Services, About, Footer
-    And the document title is "WashHub — Laundry Service Template"
-```
+- **GIVEN** I scroll to the promotional banner
+- **THEN** I see a dark background section
+- **AND** I see the heading "Call us for a service"
+- **AND** I see a phone number and CTA button
+
+#### Scenario: Testimonials section shows client reviews
+
+- **GIVEN** I scroll to the testimonials section
+- **THEN** I see a carousel of testimonials
+- **AND** each testimonial has a star rating, quote text, and client info
+- **AND** client avatars are displayed in circles
+- **AND** navigation dots are visible
+
+#### Scenario: Additional services section shows more offerings
+
+- **GIVEN** I scroll to the additional services section
+- **THEN** I see a centered section tag and heading
+- **AND** I see 3 service items with icons and descriptions
+
+#### Scenario: About company section displays info
+
+- **GIVEN** I scroll to the about section
+- **THEN** I see the heading "About company"
+- **AND** I see an image on the left
+- **AND** I see descriptive paragraphs on the right
+- **AND** I see a CTA link/button
+
+#### Scenario: Footer displays links and contact info
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a blue background footer
+- **AND** I see 4 columns: Brand, Services, Quick links, Get in touch
+- **AND** I see contact information (address, phone, email)
+- **AND** I see social media icons
+- **AND** the footer links to https://www.componentdock.com/
+
+#### Scenario: Page composes all sections in correct order
+
+- **GIVEN** I am on the WashHub homepage
+- **WHEN** the page loads
+- **THEN** I see sections in order: Navbar, Hero, How We Work, Service Categories, Promo Banner, Testimonials, Additional Services, About, Footer
+- **AND** the document title is "WashHub — Laundry Service Template"
 
 ## Verification checklist
 

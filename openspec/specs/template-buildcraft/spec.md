@@ -37,130 +37,153 @@ Extracted from the live preview CSS (`style.css`) and rendered HTML:
 - Latest News blog cards (3 items)
 - Footer: dark navy background, contact info, links
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: BuildCraft Template
 
-```gherkin
 Feature: BuildCraft - Construction Company Website
-  As a visitor to BuildCraft
-  I want to see a professional construction company website
-  So that I can learn about services and contact the company
+As a visitor to BuildCraft
+I want to see a professional construction company website
+So that I can learn about services and contact the company
 
-  Background:
-    Given the user navigates to the BuildCraft homepage
+Background:
+- **GIVEN** the user navigates to the BuildCraft homepage
 
-  # --- Navbar ---
-  Scenario: Navbar displays correctly
-    Then the navbar is visible at the top of the page
-    And the brand name "BuildCraft" is displayed
-    And the navigation links include "Home", "About", "Projects", "Services", "Blog", and "Contact"
-    And the navbar has a dark background
+**--- Navbar ---**
 
-  Scenario: Navbar scrolls to sections
-    When the user clicks "Services" in the navbar
-    Then the page scrolls to the Services section
-    When the user clicks "Contact" in the navbar
-    Then the page scrolls to the Contact section
+#### Scenario: Navbar displays correctly
 
-  # --- Hero Section ---
-  Scenario: Hero section displays correctly
-    Then the hero section is displayed
-    And the heading shows "We Build Your Dream"
-    And there is a description paragraph
-    And there is a "Learn more" button
+- **THEN** the navbar is visible at the top of the page
+- **AND** the brand name "BuildCraft" is displayed
+- **AND** the navigation links include "Home", "About", "Projects", "Services", "Blog", and "Contact"
+- **AND** the navbar has a dark background
 
-  # --- Features Section ---
-  Scenario: Features section shows three items
-    Then the features section displays 3 feature cards
-    And each card has an icon, title, description, and "Read more" link
+#### Scenario: Navbar scrolls to sections
 
-  Scenario Outline: Feature cards display correct titles
-    Given the features section is visible
-    Then the <position> feature card shows title "<title>"
+- **WHEN** the user clicks "Services" in the navbar
+- **THEN** the page scrolls to the Services section
+- **WHEN** the user clicks "Contact" in the navbar
+- **THEN** the page scrolls to the Contact section
 
-    Examples:
-      | position | title                |
-      | 1st      | Certified Experience |
-      | 2nd      | The Great Teamwork   |
-      | 3rd      | Modern Technology    |
+**--- Hero Section ---**
 
-  # --- About Section ---
-  Scenario: About section displays correctly
-    Then the "About Us" section is visible
-    And it shows a subtitle "Subtitle"
-    And it has descriptive body text about the company
+#### Scenario: Hero section displays correctly
 
-  Scenario: Stats counter displays correctly
-    Then the stats section shows 4 counter items
-    And each stat shows a numeric value and label
-    And the stat labels are "Year Of Experience", "Project Completed", "Happy Client", "Award Won"
+- **THEN** the hero section is displayed
+- **AND** the heading shows "We Build Your Dream"
+- **AND** there is a description paragraph
+- **AND** there is a "Learn more" button
 
-  # --- Portfolio Section ---
-  Scenario: Featured Works section displays correctly
-    Then the "Featured Works" section is visible
-    And 4 project cards are displayed
-    And each card shows a project title and category
-    And there is a "View All" link
+**--- Features Section ---**
 
-  # --- Services Section ---
-  Scenario: Services section lists all services
-    Then the "Our Services" section is visible
-    And 6 service items are displayed
+#### Scenario: Features section shows three items
 
-  Scenario Outline: Each service card renders correctly
-    Given the services section is visible
-    Then the service "<name>" shows a description and "Read more" link
+- **THEN** the features section displays 3 feature cards
+- **AND** each card has an icon, title, description, and "Read more" link
 
-    Examples:
-      | name          |
-      | Construction  |
-      | Renovation    |
-      | Architecture  |
-      | Painting      |
-      | Decorating    |
-      | Consulting    |
+Scenario Outline: Feature cards display correct titles
+- **GIVEN** the features section is visible
+- **THEN** the <position> feature card shows title "<title>"
 
-  # --- Why Choose Us Section ---
-  Scenario: Why Choose Us section displays correctly
-    Then the "Why Choose Us" section is visible
-    And it has descriptive body text
-    And an accordion with expandable items is displayed
-    And a "Contact Us" CTA button is visible
+Examples:
+| position | title                |
+| 1st      | Certified Experience |
+| 2nd      | The Great Teamwork   |
+| 3rd      | Modern Technology    |
 
-  Scenario: Accordion items expand on click
-    Given the Why Choose Us section is visible
-    When the user clicks the first accordion item
-    Then the first accordion item expands to show its content
+**--- About Section ---**
 
-  # --- Testimonials Section ---
-  Scenario: Happy Clients section displays correctly
-    Then the "Happy Clients" section is visible
-    And at least 3 testimonial items are displayed
-    And each testimonial shows a quote, client name, and role
+#### Scenario: About section displays correctly
 
-  # --- Blog Section ---
-  Scenario: Latest News section shows blog posts
-    Then the "Lastest News" section is visible
-    And 3 blog post cards are displayed
-    And each card shows a title, date, author, excerpt, and "Read more" link
+- **THEN** the "About Us" section is visible
+- **AND** it shows a subtitle "Subtitle"
+- **AND** it has descriptive body text about the company
 
-  # --- Footer ---
-  Scenario: Footer renders correctly
-    Then the footer is visible at the bottom of the page
-    And the footer shows contact information including address, phone, and email
-    And the footer has a "Contact Us" button
-    And the footer links to https://www.componentdock.com/
+#### Scenario: Stats counter displays correctly
 
-  # --- Responsive ---
-  Scenario: Page is responsive on mobile
-    Given the user views the page on a 375px wide viewport
-    Then the navbar collapses into a hamburger menu
-    And the hero section is full-width
-    And feature cards stack vertically
-    And service cards stack vertically
-    And project grid adjusts to fewer columns
-```
+- **THEN** the stats section shows 4 counter items
+- **AND** each stat shows a numeric value and label
+- **AND** the stat labels are "Year Of Experience", "Project Completed", "Happy Client", "Award Won"
+
+**--- Portfolio Section ---**
+
+#### Scenario: Featured Works section displays correctly
+
+- **THEN** the "Featured Works" section is visible
+- **AND** 4 project cards are displayed
+- **AND** each card shows a project title and category
+- **AND** there is a "View All" link
+
+**--- Services Section ---**
+
+#### Scenario: Services section lists all services
+
+- **THEN** the "Our Services" section is visible
+- **AND** 6 service items are displayed
+
+Scenario Outline: Each service card renders correctly
+- **GIVEN** the services section is visible
+- **THEN** the service "<name>" shows a description and "Read more" link
+
+Examples:
+| name          |
+| Construction  |
+| Renovation    |
+| Architecture  |
+| Painting      |
+| Decorating    |
+| Consulting    |
+
+**--- Why Choose Us Section ---**
+
+#### Scenario: Why Choose Us section displays correctly
+
+- **THEN** the "Why Choose Us" section is visible
+- **AND** it has descriptive body text
+- **AND** an accordion with expandable items is displayed
+- **AND** a "Contact Us" CTA button is visible
+
+#### Scenario: Accordion items expand on click
+
+- **GIVEN** the Why Choose Us section is visible
+- **WHEN** the user clicks the first accordion item
+- **THEN** the first accordion item expands to show its content
+
+**--- Testimonials Section ---**
+
+#### Scenario: Happy Clients section displays correctly
+
+- **THEN** the "Happy Clients" section is visible
+- **AND** at least 3 testimonial items are displayed
+- **AND** each testimonial shows a quote, client name, and role
+
+**--- Blog Section ---**
+
+#### Scenario: Latest News section shows blog posts
+
+- **THEN** the "Lastest News" section is visible
+- **AND** 3 blog post cards are displayed
+- **AND** each card shows a title, date, author, excerpt, and "Read more" link
+
+**--- Footer ---**
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer is visible at the bottom of the page
+- **AND** the footer shows contact information including address, phone, and email
+- **AND** the footer has a "Contact Us" button
+- **AND** the footer links to https://www.componentdock.com/
+
+**--- Responsive ---**
+
+#### Scenario: Page is responsive on mobile
+
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the hero section is full-width
+- **AND** feature cards stack vertically
+- **AND** service cards stack vertically
+- **AND** project grid adjusts to fewer columns
 
 ## Verification Checklist
 

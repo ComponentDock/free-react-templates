@@ -30,102 +30,84 @@ Extracted from the live preview stylesheet (`assets/css/style.css`).
 | Button Radius   | `0` (sharp)               | CTA buttons are rectangular, no border-radius        |
 | Section Border  | `4px solid #131313`       | Top border on section titles (`.section-tittle`)     |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Header — Top Bar
+### Feature: Recount template behaviour
 
-```
-Given a visitor loads the page
-Then the top bar displays the logo on the left
-And a "Sign in" button is shown on the right
-And social media icons (Facebook, Instagram, Twitter, YouTube, Vimeo, LinkedIn) appear in a row next to Sign in
-```
+#### Scenario: Header — Top Bar
 
-### Scenario: Header — Sticky Navigation
+- **GIVEN** a visitor loads the page
+- **THEN** the top bar displays the logo on the left
+- **AND** a "Sign in" button is shown on the right
+- **AND** social media icons (Facebook, Instagram, Twitter, YouTube, Vimeo, LinkedIn) appear in a row next to Sign in
 
-```
-Given the visitor scrolls past the top bar
-Then the navigation bar becomes sticky at the top
-And it contains category links: Home, Page (with dropdown), Science, Technology, Beauty, Health, Arts & Culture, Opinion, Videos, Gallery
-And a search input appears on the right side of the nav
-And a mobile hamburger menu icon appears on small screens
-```
+#### Scenario: Header — Sticky Navigation
 
-### Scenario: What's New Section
+- **GIVEN** the visitor scrolls past the top bar
+- **THEN** the navigation bar becomes sticky at the top
+- **AND** it contains category links: Home, Page (with dropdown), Science, Technology, Beauty, Health, Arts & Culture, Opinion, Videos, Gallery
+- **AND** a search input appears on the right side of the nav
+- **AND** a mobile hamburger menu icon appears on small screens
 
-```
-Given the visitor is on the homepage
-Then a "What's New" section is displayed
-And a large featured article occupies the left 7 columns with an image, category tag "Technology", headline, and author byline
-And three smaller article cards occupy the right 5 columns, each with image, category tag, headline, and author
-```
+#### Scenario: What's New Section
 
-### Scenario: Arts & Culture Section
+- **GIVEN** the visitor is on the homepage
+- **THEN** a "What's New" section is displayed
+- **AND** a large featured article occupies the left 7 columns with an image, category tag "Technology", headline, and author byline
+- **AND** three smaller article cards occupy the right 5 columns, each with image, category tag, headline, and author
 
-```
-Given the visitor scrolls to Arts & Culture
-Then a section title "Arts & Culture" appears with a "See All" link, underlined by a 4px black top-border
-And three article cards are displayed in a row
-And each card has an image, category tag, headline, and author
-And the third card (video) shows a circular play button overlay on its image
-```
+#### Scenario: Arts & Culture Section
 
-### Scenario: Science Update Section
+- **GIVEN** the visitor scrolls to Arts & Culture
+- **THEN** a section title "Arts & Culture" appears with a "See All" link, underlined by a 4px black top-border
+- **AND** three article cards are displayed in a row
+- **AND** each card has an image, category tag, headline, and author
+- **AND** the third card (video) shows a circular play button overlay on its image
 
-```
-Given the visitor scrolls to Science Update
-Then a section title "Science Update" appears with a "See All" link
-And four article cards are displayed in a row
-And each card has an image, category tag, headline, and author
-```
+#### Scenario: Science Update Section
 
-### Scenario: Video Gallery Section
+- **GIVEN** the visitor scrolls to Science Update
+- **THEN** a section title "Science Update" appears with a "See All" link
+- **AND** four article cards are displayed in a row
+- **AND** each card has an image, category tag, headline, and author
 
-```
-Given the visitor scrolls to Video Gallery
-Then a section title "Video Gallery" appears with a "See All" link
-And a large featured video card occupies the left 7 columns with a play button overlay
-And three smaller video cards occupy the right 5 columns, each showing a duration badge (e.g. "5:56") and a clock icon
-```
+#### Scenario: Video Gallery Section
 
-### Scenario: Science Update Carousel Section
+- **GIVEN** the visitor scrolls to Video Gallery
+- **THEN** a section title "Video Gallery" appears with a "See All" link
+- **AND** a large featured video card occupies the left 7 columns with a play button overlay
+- **AND** three smaller video cards occupy the right 5 columns, each showing a duration badge (e.g. "5:56") and a clock icon
 
-```
-Given the visitor scrolls to the second Science Update
-Then a carousel/slider of article cards is displayed
-And each card shows an image, category tag, headline, and author
-And cards scroll horizontally or wrap in a grid
-```
+#### Scenario: Science Update Carousel Section
 
-### Scenario: Newsletter Subscription
+- **GIVEN** the visitor scrolls to the second Science Update
+- **THEN** a carousel/slider of article cards is displayed
+- **AND** each card shows an image, category tag, headline, and author
+- **AND** cards scroll horizontally or wrap in a grid
 
-```
-Given the visitor scrolls to the subscription area
-Then a heading "Subscribe to the newsletter" is displayed
-And a subtitle describes the newsletter value proposition
-And an email input field with placeholder "Enter your mail" is shown
-And a "Send Now" button with brand red background appears next to it
-And disclaimer text about privacy is shown below
-```
+#### Scenario: Newsletter Subscription
 
-### Scenario: Footer
+- **GIVEN** the visitor scrolls to the subscription area
+- **THEN** a heading "Subscribe to the newsletter" is displayed
+- **AND** a subtitle describes the newsletter value proposition
+- **AND** an email input field with placeholder "Enter your mail" is shown
+- **AND** a "Send Now" button with brand red background appears next to it
+- **AND** disclaimer text about privacy is shown below
 
-```
-Given the visitor reaches the bottom
-Then a dark footer (background #131313) is displayed
-And four columns of links appear: About, Categories, Categories, Quick Links
-And each column has a heading and a list of links
-And a footer bottom bar shows copyright text
-And the footer links to https://www.componentdock.com/
-```
+#### Scenario: Footer
 
-### Scenario: Back to Top
+- **GIVEN** the visitor reaches the bottom
+- **THEN** a dark footer (background #131313) is displayed
+- **AND** four columns of links appear: About, Categories, Categories, Quick Links
+- **AND** each column has a heading and a list of links
+- **AND** a footer bottom bar shows copyright text
+- **AND** the footer links to https://www.componentdock.com/
 
-```
-Given the visitor scrolls down the page
-Then a "back to top" button appears
-And clicking it scrolls the page to the top
-```
+#### Scenario: Back to Top
+
+- **GIVEN** the visitor scrolls down the page
+- **THEN** a "back to top" button appears
+- **AND** clicking it scrolls the page to the top
 
 ## Verification Checklist
 

@@ -30,7 +30,7 @@ Derived from the ColorLib Accordion 14 screenshot and design system conventions:
 
 ---
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Accordion Navigation & Interactive Content
 
@@ -38,22 +38,22 @@ As a site visitor, I want to explore interactive accordion sections so that I ca
 
 #### Scenario: Expand and collapse accordion items
 
-- **Given** the user is viewing the accordion section
-- **When** the user clicks an accordion header
-- **Then** the corresponding content panel expands smoothly and displays its details
-- **And** clicking another header expands that item while optionally collapsing or keeping others accessible per accordion behavior.
+- **GIVEN** the user is viewing the accordion section
+- **WHEN** the user clicks an accordion header
+- **THEN** the corresponding content panel expands smoothly and displays its details
+- **AND** clicking another header expands that item while optionally collapsing or keeping others accessible per accordion behavior
 
 #### Scenario: Interactive tabs and features
 
-- **Given** the user is viewing the feature showcase
-- **When** the user interacts with tabs or feature toggles
-- **Then** the active view updates instantly with corresponding content.
+- **GIVEN** the user is viewing the feature showcase
+- **WHEN** the user interacts with tabs or feature toggles
+- **THEN** the active view updates instantly with corresponding content
 
 #### Scenario: Component Dock Footer Attribution
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer is rendered
-- **Then** it must display a copyright notice and a direct link to `https://www.componentdock.com/` labeled "Component Dock".
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it must display a copyright notice and a direct link to `https://www.componentdock.com/` labeled "Component Dock"
 
 ---
 

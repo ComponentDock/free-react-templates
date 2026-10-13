@@ -48,104 +48,113 @@ Extracted from the live preview CSS (https://preview.colorlib.com/theme/phozogy/
 5. **Portfolio** — "Our latest works" title. Filter tabs (All, Fashion, Lifestyle, Natural, Wedding, Videos). Masonry-style grid with hover effects (dark overlay, plus icon, title "COLORS SPEAK", category label). Mix of large-width, large-height, and regular items
 6. **Footer** — Near-black bg (#000606). 4 columns: About (logo + description + social icons), Instagram (3 thumbnails), Quick Links (2 columns), Subscribe (email form). Copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar renders all navigation links
-  Given the user loads the page
-  Then the navbar displays links: Home, About, Services, Pricing, Portfolio, Blog, Pages, Contact
-  And a logo image is visible on the left
-  And a green search icon button is visible on the right
 
-Scenario: Pages dropdown reveals sub-links on hover
-  Given the user hovers over the "Pages" nav link
-  Then a dropdown appears with Gallery, Portfolio Details, Blog Details links
+#### Scenario: Navbar renders all navigation links
 
-Scenario: Nav link hover shows green underline
-  Given the user hovers over any nav link
-  Then a 3px green (#009603) underline appears beneath the link
-```
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays links: Home, About, Services, Pricing, Portfolio, Blog, Pages, Contact
+- **AND** a logo image is visible on the left
+- **AND** a green search icon button is visible on the right
+
+#### Scenario: Pages dropdown reveals sub-links on hover
+
+- **GIVEN** the user hovers over the "Pages" nav link
+- **THEN** a dropdown appears with Gallery, Portfolio Details, Blog Details links
+
+#### Scenario: Nav link hover shows green underline
+
+- **GIVEN** the user hovers over any nav link
+- **THEN** a 3px green (#009603) underline appears beneath the link
 
 ### Hero Slider
-```gherkin
-Scenario: Hero slider displays with heading and CTA
-  Given the page loads
-  Then a full-width hero section is visible
-  And it displays the heading "Photography Studio"
-  And a descriptive paragraph is shown below the heading
-  And a "Contact us" green button is visible
 
-Scenario: Hero slider auto-rotates between slides
-  Given the hero slider is visible
-  When 5 seconds pass
-  Then the slider transitions to the next slide
-```
+#### Scenario: Hero slider displays with heading and CTA
+
+- **GIVEN** the page loads
+- **THEN** a full-width hero section is visible
+- **AND** it displays the heading "Photography Studio"
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** a "Contact us" green button is visible
+
+#### Scenario: Hero slider auto-rotates between slides
+
+- **GIVEN** the hero slider is visible
+- **WHEN** 5 seconds pass
+- **THEN** the slider transitions to the next slide
 
 ### Services Section
-```gherkin
-Scenario: Services section shows three service cards
-  Given the user scrolls to the services section
-  Then 3 service cards are displayed: Shooting, Videos, Editing
-  And each card has an image, title, and description
-  And cards have white background with box shadow
 
-Scenario: Services section overlaps hero
-  Given the services section renders
-  Then the services container has negative top margin overlapping the hero
-```
+#### Scenario: Services section shows three service cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 3 service cards are displayed: Shooting, Videos, Editing
+- **AND** each card has an image, title, and description
+- **AND** cards have white background with box shadow
+
+#### Scenario: Services section overlaps hero
+
+- **GIVEN** the services section renders
+- **THEN** the services container has negative top margin overlapping the hero
 
 ### Categories Section
-```gherkin
-Scenario: Categories section displays with title and view all button
-  Given the user scrolls to the categories section
-  Then "Categories" heading is displayed
-  And a "View all" green button is visible on the right
 
-Scenario: Category cards show image and count
-  Given the categories slider is visible
-  Then each category card shows a background image, category name, and picture count
-```
+#### Scenario: Categories section displays with title and view all button
+
+- **GIVEN** the user scrolls to the categories section
+- **THEN** "Categories" heading is displayed
+- **AND** a "View all" green button is visible on the right
+
+#### Scenario: Category cards show image and count
+
+- **GIVEN** the categories slider is visible
+- **THEN** each category card shows a background image, category name, and picture count
 
 ### Portfolio Section
-```gherkin
-Scenario: Portfolio shows filterable grid
-  Given the user scrolls to the portfolio section
-  Then "Our latest works" heading is displayed
-  And filter tabs are shown: All, Fashion, Lifestyle, Natural, Wedding, Videos
-  And a grid of portfolio items is displayed
 
-Scenario: Portfolio items reveal overlay on hover
-  Given the user hovers over a portfolio item
-  Then a dark semi-transparent overlay appears
-  And a plus icon is centered on the item
-  And the item title and category label appear
+#### Scenario: Portfolio shows filterable grid
 
-Scenario: Clicking a filter tab filters portfolio items
-  Given the user clicks the "Fashion" filter tab
-  Then only fashion-category items are visible
-  And the "All" tab is no longer highlighted
-```
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** "Our latest works" heading is displayed
+- **AND** filter tabs are shown: All, Fashion, Lifestyle, Natural, Wedding, Videos
+- **AND** a grid of portfolio items is displayed
+
+#### Scenario: Portfolio items reveal overlay on hover
+
+- **GIVEN** the user hovers over a portfolio item
+- **THEN** a dark semi-transparent overlay appears
+- **AND** a plus icon is centered on the item
+- **AND** the item title and category label appear
+
+#### Scenario: Clicking a filter tab filters portfolio items
+
+- **GIVEN** the user clicks the "Fashion" filter tab
+- **THEN** only fashion-category items are visible
+- **AND** the "All" tab is no longer highlighted
 
 ### Footer
-```gherkin
-Scenario: Footer displays four columns
-  Given the user scrolls to the footer
-  Then an about column with logo, description, and social icons is visible
-  And an Instagram column with 3 thumbnail images is visible
-  And a Quick Links column with navigation links is visible
-  And a Subscribe column with email input and send button is visible
 
-Scenario: Footer has dark background
-  Given the footer renders
-  Then the background color is near-black (#000606)
-  And text color is light gray (#c4c4c4)
+#### Scenario: Footer displays four columns
 
-Scenario: Copyright bar at bottom
-  Given the footer renders
-  Then a copyright line is shown below a separator border
-  And it includes "Component Dock" link
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** an about column with logo, description, and social icons is visible
+- **AND** an Instagram column with 3 thumbnail images is visible
+- **AND** a Quick Links column with navigation links is visible
+- **AND** a Subscribe column with email input and send button is visible
+
+#### Scenario: Footer has dark background
+
+- **GIVEN** the footer renders
+- **THEN** the background color is near-black (#000606)
+- **AND** text color is light gray (#c4c4c4)
+
+#### Scenario: Copyright bar at bottom
+
+- **GIVEN** the footer renders
+- **THEN** a copyright line is shown below a separator border
+- **AND** it includes "Component Dock" link
 
 ## Verification Checklist
 

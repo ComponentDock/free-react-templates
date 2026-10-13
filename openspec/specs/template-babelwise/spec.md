@@ -39,53 +39,69 @@ Recreation of ColorLib's **Lingua** template as a React 19 + Vite + Tailwind 4 +
 9. **Blog** — Blog posts section
 10. **Footer** — 4 columns, dark bg, Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: BabelWise template behaviour
+
 Feature: BabelWise Navigation
-  Scenario: Navbar shows logo and links
-    Given the user visits the BabelWise homepage
-    Then the navbar shows "BabelWise" logo
-    And links: Home, Courses, Instructors, Events, Blog, Contact
-    And a search icon is visible
+
+#### Scenario: Navbar shows logo and links
+
+- **GIVEN** the user visits the BabelWise homepage
+- **THEN** the navbar shows "BabelWise" logo
+- **AND** links: Home, Courses, Instructors, Events, Blog, Contact
+- **AND** a search icon is visible
 
 Feature: BabelWise Top Bar
-  Scenario: Top bar has language selector
-    Given the user visits the homepage
-    Then a top bar with phone and language dropdown is visible
+
+#### Scenario: Top bar has language selector
+
+- **GIVEN** the user visits the homepage
+- **THEN** a top bar with phone and language dropdown is visible
 
 Feature: BabelWise Hero
-  Scenario: Hero displays headline
-    Given the user visits the homepage
-    Then "Learn Languages Easily" heading is shown
-    And a "get started" button is visible
+
+#### Scenario: Hero displays headline
+
+- **GIVEN** the user visits the homepage
+- **THEN** "Learn Languages Easily" heading is shown
+- **AND** a "get started" button is visible
 
 Feature: BabelWise Language Slider
-  Scenario: Language items displayed
-    Given the user scrolls past the hero
-    Then a carousel of 9 language items is shown
+
+#### Scenario: Language items displayed
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** a carousel of 9 language items is shown
 
 Feature: BabelWise Courses
-  Scenario: Popular courses shown
-    Given the user scrolls to courses
-    Then "Popular Online Courses" heading is visible
-    And course cards show Vocabulary topic, author, language, and price
+
+#### Scenario: Popular courses shown
+
+- **GIVEN** the user scrolls to courses
+- **THEN** "Popular Online Courses" heading is visible
+- **AND** course cards show Vocabulary topic, author, language, and price
 
 Feature: BabelWise Instructors
-  Scenario: Instructor profiles
-    Given the user scrolls to instructors
-    Then 3 profiles with circular avatars and names appear on dark bg
+
+#### Scenario: Instructor profiles
+
+- **GIVEN** the user scrolls to instructors
+- **THEN** 3 profiles with circular avatars and names appear on dark bg
 
 Feature: BabelWise Newsletter
-  Scenario: Newsletter subscribe form
-    Given the user scrolls to newsletter
-    Then a subscribe form is visible on dark background
+
+#### Scenario: Newsletter subscribe form
+
+- **GIVEN** the user scrolls to newsletter
+- **THEN** a subscribe form is visible on dark background
 
 Feature: BabelWise Footer
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" branded "Component Dock" exists
-```
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" branded "Component Dock" exists
 
 ## Verification checklist
 

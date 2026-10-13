@@ -79,95 +79,107 @@ zoom, testimonial carousel, ticket booking form, and blog cards.
 | h1-size           | `140px` (desktop) / `90px` / `50px`       | Hero heading, responsive               |
 | subheading-size   | `34px` (desktop) / `20px`                 | Section subheadings                    |
 
-## Requirements — Gherkin
+## Requirements
 
 ### Feature: Symposium conference landing page
 
-  Scenario: Top bar displays contact info and buy-ticket CTA
-    Given the user loads the page
-    Then a top bar shows phone number and email
-    And a "Buy Ticket" button is visible in the top bar
-    And social media icons (Facebook, Twitter, Instagram, Dribbble) are present
+#### Scenario: Top bar displays contact info and buy-ticket CTA
 
-  Scenario: Navbar is dark with logo and navigation links
-    Given the user loads the page
-    Then a dark navbar displays the "Symposium" brand
-    And navigation links include Home, About, Pricing, Schedule, Speakers, Blog, Contact
-    And the navbar is sticky on scroll
+- **GIVEN** the user loads the page
+- **THEN** a top bar shows phone number and email
+- **AND** a "Buy Ticket" button is visible in the top bar
+- **AND** social media icons (Facebook, Twitter, Instagram, Dribbble) are present
 
-  Scenario: Hero section shows conference headline with countdown
-    Given the user loads the page
-    Then a full-width hero with dark overlay is displayed
-    And a subheading "Hurry Up! Don't Waste Time" appears in uppercase
-    And the main heading shows "Biggest Developer Conference 2021"
-    And key words in the heading are rendered as outline text
-    And location "San Francisco, California, USA" is shown with a map icon
-    And date "April 24 to 27, 2020" is shown with a calendar icon
-    And a countdown timer shows days, hours, minutes, seconds
+#### Scenario: Navbar is dark with logo and navigation links
 
-  Scenario: About section shows conference intro with experience badge
-    Given the user loads the page
-    Then a split layout shows an image on the left and text on the right
-    And the subheading reads "Welcome to Symposium"
-    And the heading reads "Biggest Developer Conference 2020"
-    And a paragraph of descriptive text is present
-    And a magenta "20 Year Of Experienced" badge appears below the text
+- **GIVEN** the user loads the page
+- **THEN** a dark navbar displays the "Symposium" brand
+- **AND** navigation links include Home, About, Pricing, Schedule, Speakers, Blog, Contact
+- **AND** the navbar is sticky on scroll
 
-  Scenario: Counter section displays event statistics
-    Given the user loads the page
-    Then a dark background section with image shows 4 counters
-    And counters display: 301 Places, 102 Events, 1050 Photos, 61 Speakers
-    And each counter has an icon
+#### Scenario: Hero section shows conference headline with countdown
 
-  Scenario: Schedule section has tabbed day-by-day view
-    Given the user loads the page
-    Then a schedule section with "Event Schedule" heading appears
-    And 4 day tabs are shown (Day 01 through Day 04)
-    And Day 01 is active by default
-    And each day shows 3 speaker cards with circular avatar, time, title, description
-    And clicking a different day tab switches the visible schedule
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero with dark overlay is displayed
+- **AND** a subheading "Hurry Up! Don't Waste Time" appears in uppercase
+- **AND** the main heading shows "Biggest Developer Conference 2021"
+- **AND** key words in the heading are rendered as outline text
+- **AND** location "San Francisco, California, USA" is shown with a map icon
+- **AND** date "April 24 to 27, 2020" is shown with a calendar icon
+- **AND** a countdown timer shows days, hours, minutes, seconds
 
-  Scenario: Speakers section shows team grid with hover overlay
-    Given the user loads the page
-    Then a speakers section with purple-to-magenta gradient header appears
-    And the heading reads "Our Event Speakers"
-    And 5 speaker cards are displayed in a row
-    And each card shows a 350px-tall background image
-    And hovering reveals the speaker name, position, and social icons
+#### Scenario: About section shows conference intro with experience badge
 
-  Scenario: Gallery section displays event photos
-    Given the user loads the page
-    Then a gallery section with "Photos of Our Events" heading appears
-    And 8 images are displayed in a 4-column grid
-    And hovering shows a dark overlay with a search icon
+- **GIVEN** the user loads the page
+- **THEN** a split layout shows an image on the left and text on the right
+- **AND** the subheading reads "Welcome to Symposium"
+- **AND** the heading reads "Biggest Developer Conference 2020"
+- **AND** a paragraph of descriptive text is present
+- **AND** a magenta "20 Year Of Experienced" badge appears below the text
 
-  Scenario: Testimonials section shows a carousel
-    Given the user loads the page
-    Then a testimonials section with "People Say About Our Conference" heading appears
-    And testimonial cards show a quote icon, text, user image, 5 stars, name, and position
-    And cards are displayed in a carousel/slider
+#### Scenario: Counter section displays event statistics
 
-  Scenario: Booking form section accepts registration
-    Given the user loads the page
-    Then a booking section with "Book Your Tickets Now" heading appears
-    And a gradient overlay (purple-to-magenta) is behind the form
-    And the form has fields: First Name, Last Name, Phone, Ticket Type
-    And a submit button is present
-    And inputs have transparent background with white border
+- **GIVEN** the user loads the page
+- **THEN** a dark background section with image shows 4 counters
+- **AND** counters display: 301 Places, 102 Events, 1050 Photos, 61 Speakers
+- **AND** each counter has an icon
 
-  Scenario: Blog section shows recent posts
-    Given the user loads the page
-    Then 3 blog cards are displayed in a row
-    And each card shows an image, meta (date, author, comments), title, and excerpt
+#### Scenario: Schedule section has tabbed day-by-day view
 
-  Scenario: Footer has four columns with social and navigation
-    Given the user loads the page
-    Then a dark footer (`#232429`) is displayed
-    And column 1 shows logo "Symposium" + description + circular magenta social icons
-    And column 2 shows "Explore" links (About, Contact, Speaker, Blog)
-    And column 3 shows "Info" links (Join us, Buy Ticket, Privacy, Terms)
-    And column 4 shows "Get Your Seat" with an email signup form
-    And a bottom bar shows copyright and "Component Dock" link
+- **GIVEN** the user loads the page
+- **THEN** a schedule section with "Event Schedule" heading appears
+- **AND** 4 day tabs are shown (Day 01 through Day 04)
+- **AND** Day 01 is active by default
+- **AND** each day shows 3 speaker cards with circular avatar, time, title, description
+- **AND** clicking a different day tab switches the visible schedule
+
+#### Scenario: Speakers section shows team grid with hover overlay
+
+- **GIVEN** the user loads the page
+- **THEN** a speakers section with purple-to-magenta gradient header appears
+- **AND** the heading reads "Our Event Speakers"
+- **AND** 5 speaker cards are displayed in a row
+- **AND** each card shows a 350px-tall background image
+- **AND** hovering reveals the speaker name, position, and social icons
+
+#### Scenario: Gallery section displays event photos
+
+- **GIVEN** the user loads the page
+- **THEN** a gallery section with "Photos of Our Events" heading appears
+- **AND** 8 images are displayed in a 4-column grid
+- **AND** hovering shows a dark overlay with a search icon
+
+#### Scenario: Testimonials section shows a carousel
+
+- **GIVEN** the user loads the page
+- **THEN** a testimonials section with "People Say About Our Conference" heading appears
+- **AND** testimonial cards show a quote icon, text, user image, 5 stars, name, and position
+- **AND** cards are displayed in a carousel/slider
+
+#### Scenario: Booking form section accepts registration
+
+- **GIVEN** the user loads the page
+- **THEN** a booking section with "Book Your Tickets Now" heading appears
+- **AND** a gradient overlay (purple-to-magenta) is behind the form
+- **AND** the form has fields: First Name, Last Name, Phone, Ticket Type
+- **AND** a submit button is present
+- **AND** inputs have transparent background with white border
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user loads the page
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card shows an image, meta (date, author, comments), title, and excerpt
+
+#### Scenario: Footer has four columns with social and navigation
+
+- **GIVEN** the user loads the page
+- **THEN** a dark footer (`#232429`) is displayed
+- **AND** column 1 shows logo "Symposium" + description + circular magenta social icons
+- **AND** column 2 shows "Explore" links (About, Contact, Speaker, Blog)
+- **AND** column 3 shows "Info" links (Join us, Buy Ticket, Privacy, Terms)
+- **AND** column 4 shows "Get Your Seat" with an email signup form
+- **AND** a bottom bar shows copyright and "Component Dock" link
 
 ## Verification checklist
 

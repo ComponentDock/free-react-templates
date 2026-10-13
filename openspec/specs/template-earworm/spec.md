@@ -48,69 +48,73 @@ Recreation of ColorLib **Poca** template as a React 19 + Vite + Tailwind 4 + Typ
 
 6. **Footer** — White background, 80px top padding. 4-column layout: About Us (text + copyright), Categories (nav links: Entrepreneurship, Media, Tech, Tutorials), Latest Episodes (2 episode items with date + title), Follow Us (social icons: Facebook, Twitter, Pinterest, Instagram, YouTube + App Store / Google Play badge images). Copyright line at bottom.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Earworm Podcast Template
 
-```gherkin
 Feature: Earworm — Podcast & Audio Website Template
-  As a user visiting the Earworm website
-  I want to see a professional podcast website
-  So that I can browse episodes, discover guests, and subscribe to the newsletter
+As a user visiting the Earworm website
+I want to see a professional podcast website
+So that I can browse episodes, discover guests, and subscribe to the newsletter
 
-  Scenario: Header displays navigation and social links
-    Given I am on the Earworm homepage
-    Then I see a sticky navbar
-    And I see the logo on the left
-    And I see navigation links: Home, Pages, Podcasts, About, Blog, Contact
-    And I see a search icon and social icons (Facebook, Twitter, Pinterest, Instagram, YouTube)
-    And on mobile I see a hamburger menu toggle
+#### Scenario: Header displays navigation and social links
 
-  Scenario: Hero carousel shows featured episode with subscribe CTAs
-    Given I am on the Earworm homepage
-    Then I see a full-viewport carousel with background images and dark overlays
-    And I see a heading like "Subscribe Today"
-    And I see subtitle text below the heading
-    And I see two CTA buttons: "Subscribe with iTunes" and "Subscribe with RSS"
-    And I see an episode player area with thumbnail, title, metadata, and audio controls
-    And I see like, share, and download action links
-    And the carousel auto-rotates through 3 slides
+- **GIVEN** I am on the Earworm homepage
+- **THEN** I see a sticky navbar
+- **AND** I see the logo on the left
+- **AND** I see navigation links: Home, Pages, Podcasts, About, Blog, Contact
+- **AND** I see a search icon and social icons (Facebook, Twitter, Pinterest, Instagram, YouTube)
+- **AND** on mobile I see a hamburger menu toggle
 
-  Scenario: Latest Episodes section shows filterable episode grid
-    Given I scroll to the Latest Episodes section
-    Then I see the heading "Latest Episodes" with a line divider
-    And I see filter tabs: All, Entrepreneurship, Media, Tech, Tutorials
-    And I see a 2-column grid of episode cards
-    And each card has a thumbnail image
-    And each card shows published date, title, author, category, duration
-    And each card has a native audio player
-    And each card has like, share, and download links
-    And I see a "Load More" button below the grid
+#### Scenario: Hero carousel shows featured episode with subscribe CTAs
 
-  Scenario: Featured Guests section displays guest profiles
-    Given I scroll to the Featured Guests section
-    Then I see the heading "Featured Guests" with a line divider
-    And I see a grid of guest cards
-    And each card has a guest photo
-    And each card shows the guest name and role
+- **GIVEN** I am on the Earworm homepage
+- **THEN** I see a full-viewport carousel with background images and dark overlays
+- **AND** I see a heading like "Subscribe Today"
+- **AND** I see subtitle text below the heading
+- **AND** I see two CTA buttons: "Subscribe with iTunes" and "Subscribe with RSS"
+- **AND** I see an episode player area with thumbnail, title, metadata, and audio controls
+- **AND** I see like, share, and download action links
+- **AND** the carousel auto-rotates through 3 slides
 
-  Scenario: Newsletter section allows email subscription
-    Given I scroll to the newsletter section
-    Then I see a parallax background image with dark overlay
-    And I see heading "Sign Up To Newsletter"
-    And I see subtitle text "Subscribe to receive info on our latest news and episodes"
-    And I see an email input field
-    And I see a "Subscribe" button
+#### Scenario: Latest Episodes section shows filterable episode grid
 
-  Scenario: Footer provides site information and social links
-    Given I scroll to the footer
-    Then I see 4 columns: About Us, Categories, Latest Episodes, Follow Us
-    And I see category links: Entrepreneurship, Media, Tech, Tutorials
-    And I see 2 latest episode entries with dates and titles
-    And I see social icons (Facebook, Twitter, Pinterest, Instagram, YouTube)
-    And I see App Store and Google Play badge images
-    And I see a copyright line with Component Dock link
-```
+- **GIVEN** I scroll to the Latest Episodes section
+- **THEN** I see the heading "Latest Episodes" with a line divider
+- **AND** I see filter tabs: All, Entrepreneurship, Media, Tech, Tutorials
+- **AND** I see a 2-column grid of episode cards
+- **AND** each card has a thumbnail image
+- **AND** each card shows published date, title, author, category, duration
+- **AND** each card has a native audio player
+- **AND** each card has like, share, and download links
+- **AND** I see a "Load More" button below the grid
+
+#### Scenario: Featured Guests section displays guest profiles
+
+- **GIVEN** I scroll to the Featured Guests section
+- **THEN** I see the heading "Featured Guests" with a line divider
+- **AND** I see a grid of guest cards
+- **AND** each card has a guest photo
+- **AND** each card shows the guest name and role
+
+#### Scenario: Newsletter section allows email subscription
+
+- **GIVEN** I scroll to the newsletter section
+- **THEN** I see a parallax background image with dark overlay
+- **AND** I see heading "Sign Up To Newsletter"
+- **AND** I see subtitle text "Subscribe to receive info on our latest news and episodes"
+- **AND** I see an email input field
+- **AND** I see a "Subscribe" button
+
+#### Scenario: Footer provides site information and social links
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see 4 columns: About Us, Categories, Latest Episodes, Follow Us
+- **AND** I see category links: Entrepreneurship, Media, Tech, Tutorials
+- **AND** I see 2 latest episode entries with dates and titles
+- **AND** I see social icons (Facebook, Twitter, Pinterest, Instagram, YouTube)
+- **AND** I see App Store and Google Play badge images
+- **AND** I see a copyright line with Component Dock link
 
 ## Verification checklist
 

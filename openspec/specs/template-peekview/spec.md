@@ -88,63 +88,75 @@ Extracted from `css/style.css` (preview) and HTML structure:
        - "Sign Up" submit button (full-width, brand-primary bg, rounded)
        - "I'm already a member" link (centered, brand-primary color)
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Page loads with launch button
-- Given the user visits the template page
-- When the page finishes loading
-- Then a centered "Launch" button is visible on a white background
-- And the heading text is displayed above the button
+### Feature: PeekView template behaviour
 
-### Scenario: Modal opens on button click
-- Given the page is loaded
-- When the user clicks the "Launch" button
-- Then a centered modal dialog appears
-- And the modal has a semi-transparent backdrop overlay
-- And the modal body shows "Create Your Account" heading
+#### Scenario: Page loads with launch button
 
-### Scenario: Modal shows sign-up form
-- Given the modal is open
-- Then a Full Name input field is visible with placeholder "John Doe"
-- And an Email Address input field is visible with placeholder "johndoe@gmail.com"
-- And a Password input field is visible with placeholder "Password"
-- And a "Sign Up" submit button is visible
+- **GIVEN** the user visits the template page
+- **WHEN** the page finishes loading
+- **THEN** a centered "Launch" button is visible on a white background
+- **AND** the heading text is displayed above the button
 
-### Scenario: Social media icons are visible
-- Given the modal is open
-- Then Twitter, Facebook, and Instagram icon links are visible
-- And each icon is displayed in a 50×50px circular container
+#### Scenario: Modal opens on button click
 
-### Scenario: Modal closes on close button click
-- Given the modal is open
-- When the user clicks the "×" close button
-- Then the modal disappears
-- And the backdrop overlay is removed
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch" button
+- **THEN** a centered modal dialog appears
+- **AND** the modal has a semi-transparent backdrop overlay
+- **AND** the modal body shows "Create Your Account" heading
 
-### Scenario: Modal closes on backdrop click
-- Given the modal is open
-- When the user clicks outside the modal content
-- Then the modal disappears
+#### Scenario: Modal shows sign-up form
 
-### Scenario: Modal closes on Escape key
-- Given the modal is open
-- When the user presses the Escape key
-- Then the modal disappears
+- **GIVEN** the modal is open
+- **THEN** a Full Name input field is visible with placeholder "John Doe"
+- **AND** an Email Address input field is visible with placeholder "johndoe@gmail.com"
+- **AND** a Password input field is visible with placeholder "Password"
+- **AND** a "Sign Up" submit button is visible
 
-### Scenario: "I'm already a member" link is visible
-- Given the modal is open
-- Then a link with text "I'm already a member" is visible below the form
+#### Scenario: Social media icons are visible
 
-### Scenario: Form inputs are interactive
-- Given the modal is open
-- When the user types into the Full Name input
-- Then the input value updates with the typed text
-- And the same behavior applies to Email and Password inputs
+- **GIVEN** the modal is open
+- **THEN** Twitter, Facebook, and Instagram icon links are visible
+- **AND** each icon is displayed in a 50×50px circular container
 
-### Scenario: Responsive layout
-- Given the user views the template on a mobile device
-- Then the page section remains vertically centered
-- And the modal adjusts to fit the screen width
+#### Scenario: Modal closes on close button click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "×" close button
+- **THEN** the modal disappears
+- **AND** the backdrop overlay is removed
+
+#### Scenario: Modal closes on backdrop click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks outside the modal content
+- **THEN** the modal disappears
+
+#### Scenario: Modal closes on Escape key
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal disappears
+
+#### Scenario: "I'm already a member" link is visible
+
+- **GIVEN** the modal is open
+- **THEN** a link with text "I'm already a member" is visible below the form
+
+#### Scenario: Form inputs are interactive
+
+- **GIVEN** the modal is open
+- **WHEN** the user types into the Full Name input
+- **THEN** the input value updates with the typed text
+- **AND** the same behavior applies to Email and Password inputs
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the template on a mobile device
+- **THEN** the page section remains vertically centered
+- **AND** the modal adjusts to fit the screen width
 
 ## Verification Checklist
 

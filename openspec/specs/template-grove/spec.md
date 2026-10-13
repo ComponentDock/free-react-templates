@@ -50,90 +50,100 @@ jQuery-based Bootstrap template for restaurant websites.
 | Section padding (general)      | ~`100px` top/bottom    | Used on reviews, contact, about                              |
 | Transitions                    | `0.5s`                 | Button hover and general transitions                         |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Grove — Restaurant Website Template
 
-Scenario: Page loads with navbar and hero banner
-Given the user opens the Grove page
-Then a navbar should be visible with the logo on the left
-And navigation links should include Home, About, Menu, Blog, and Contact
-And social icons (Facebook, Instagram) should appear on the right side of the navbar
-And a full-width hero banner should display below the navbar
-And the banner should show a subtitle "Expensive but the best"
-And the banner should show a heading "Modern restaurant in center of the city"
-And a "book a table" CTA button should be visible on the banner
+#### Scenario: Page loads with navbar and hero banner
 
-Scenario: Hero banner CTA button
-Given the hero banner is visible
-Then the "book a table" button should have a gold (#d6ad86) background
-And the button should have white text
-And on hover the button background should change to amber (#ffb830)
-And the transition should take 0.5s
+- **GIVEN** the user opens the Grove page
+- **THEN** a navbar should be visible with the logo on the left
+- **AND** navigation links should include Home, About, Menu, Blog, and Contact
+- **AND** social icons (Facebook, Instagram) should appear on the right side of the navbar
+- **AND** a full-width hero banner should display below the navbar
+- **AND** the banner should show a subtitle "Expensive but the best"
+- **AND** the banner should show a heading "Modern restaurant in center of the city"
+- **AND** a "book a table" CTA button should be visible on the banner
 
-Scenario: About section
-Given the user scrolls past the hero banner
-Then an "about us" section should appear
-And it should display a subtitle "about us" in gold (#d6ad86)
-And a heading "Delicious food provider since 1990" in dark (#2c3033)
-And two paragraphs of descriptive text
-And a "learn More" button with black (#000) background and white text
-And an image should be positioned to the right of the text
+#### Scenario: Hero banner CTA button
 
-Scenario: Food Menu section
-Given the user scrolls to the food menu section
-Then a "Popular Menu" subtitle should appear in gold (#d6ad86)
-And a "Delicious Food Menu" heading should be centered
-And 6 food items should be displayed in a 2-column grid
-And each food item should show an image, name, description, and price
-And food items should include Pork Sandwich, Roasted Marrow, Summer Cooking, Easter Delight, Tiener Schnitze, and Chicken Roast
+- **GIVEN** the hero banner is visible
+- **THEN** the "book a table" button should have a gold (#d6ad86) background
+- **AND** the button should have white text
+- **AND** on hover the button background should change to amber (#ffb830)
+- **AND** the transition should take 0.5s
 
-Scenario: Video background section
-Given the user scrolls past the food menu
-Then a video background section should appear with a dark overlay image
-And a centered play button icon should be visible
-And the section should be approximately 550px tall
+#### Scenario: About section
 
-Scenario: Testimonials section
-Given the user scrolls to the testimonials section
-Then a "Testimonials" subtitle should appear in gold (#d6ad86)
-And a "What they said" heading should be centered
-And a carousel of reviews should be displayed
-And each review should contain a text quote, avatar image, name, and 5 gold stars
-And the carousel should support horizontal scrolling/navigation
+- **GIVEN** the user scrolls past the hero banner
+- **THEN** an "about us" section should appear
+- **AND** it should display a subtitle "about us" in gold (#d6ad86)
+- **AND** a heading "Delicious food provider since 1990" in dark (#2c3033)
+- **AND** two paragraphs of descriptive text
+- **AND** a "learn More" button with black (#000) background and white text
+- **AND** an image should be positioned to the right of the text
 
-Scenario: Contact section
-Given the user scrolls to the contact section
-Then a "Contact Us" heading should be visible
-And the section should display an address (240, Kings street, New York city USA)
-And business hours should be shown (Mon-Fri 9:00-19:00, Sat-Sun 9:00-19:00)
-And a reservation phone number should be displayed (+880 367 251 167)
-And an email address should be shown (barires@contact.com)
-And the section should have a background image
+#### Scenario: Food Menu section
 
-Scenario: Footer
-Given the user scrolls to the footer
-Then the footer should have a very dark brown (#1c1a18) background
-And it should display the logo, phone number, and email
-And social icons (Facebook, Instagram) should be visible
-And a "Quick links" column should list About, Menu, Reservation, Blog, Breakfast, Lunch, Dinner
-And a newsletter signup form should be present with an email input and send button
-And the copyright line should link to Component Dock (https://www.componentdock.com/)
+- **GIVEN** the user scrolls to the food menu section
+- **THEN** a "Popular Menu" subtitle should appear in gold (#d6ad86)
+- **AND** a "Delicious Food Menu" heading should be centered
+- **AND** 6 food items should be displayed in a 2-column grid
+- **AND** each food item should show an image, name, description, and price
+- **AND** food items should include Pork Sandwich, Roasted Marrow, Summer Cooking, Easter Delight, Tiener Schnitze, and Chicken Roast
 
-Scenario: Responsive layout
-Given the user views the page on a mobile device (< 768px)
-Then the navbar should collapse into a hamburger menu
-And the hero banner text should stack vertically
-And the about section image should move below the text
-And the food menu grid should stack to a single column
-And the footer columns should stack vertically
+#### Scenario: Video background section
 
-Scenario: Typography consistency
-Given any text is rendered on the page
-Then body text should use Montserrat font family
-And headings (h1, h2) should use Playfair Display serif font
-And section subtitles should be gold (#d6ad86) colored
-And main headings should be dark (#2c3033) colored
+- **GIVEN** the user scrolls past the food menu
+- **THEN** a video background section should appear with a dark overlay image
+- **AND** a centered play button icon should be visible
+- **AND** the section should be approximately 550px tall
+
+#### Scenario: Testimonials section
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a "Testimonials" subtitle should appear in gold (#d6ad86)
+- **AND** a "What they said" heading should be centered
+- **AND** a carousel of reviews should be displayed
+- **AND** each review should contain a text quote, avatar image, name, and 5 gold stars
+- **AND** the carousel should support horizontal scrolling/navigation
+
+#### Scenario: Contact section
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a "Contact Us" heading should be visible
+- **AND** the section should display an address (240, Kings street, New York city USA)
+- **AND** business hours should be shown (Mon-Fri 9:00-19:00, Sat-Sun 9:00-19:00)
+- **AND** a reservation phone number should be displayed (+880 367 251 167)
+- **AND** an email address should be shown (barires@contact.com)
+- **AND** the section should have a background image
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer should have a very dark brown (#1c1a18) background
+- **AND** it should display the logo, phone number, and email
+- **AND** social icons (Facebook, Instagram) should be visible
+- **AND** a "Quick links" column should list About, Menu, Reservation, Blog, Breakfast, Lunch, Dinner
+- **AND** a newsletter signup form should be present with an email input and send button
+- **AND** the copyright line should link to Component Dock (https://www.componentdock.com/)
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device (< 768px)
+- **THEN** the navbar should collapse into a hamburger menu
+- **AND** the hero banner text should stack vertically
+- **AND** the about section image should move below the text
+- **AND** the food menu grid should stack to a single column
+- **AND** the footer columns should stack vertically
+
+#### Scenario: Typography consistency
+
+- **GIVEN** any text is rendered on the page
+- **THEN** body text should use Montserrat font family
+- **AND** headings (h1, h2) should use Playfair Display serif font
+- **AND** section subtitles should be gold (#d6ad86) colored
+- **AND** main headings should be dark (#2c3033) colored
 
 ## Verification checklist
 

@@ -56,168 +56,172 @@ Recreation of ColorLib **Lawfirm** template.
 12. **Footer** — 5 columns: logo + social, Explore links, Legal links, Company links, contact info (address, phone, email)
 13. **FooterBottom** — copyright bar, dark black background
 
-## Gherkin scenarios
+## Requirements
 
 ### TopBar
-```gherkin
+
 Feature: TopBar
 
-  Scenario: TopBar displays contact info and social links
-    Given I visit the Juresc homepage
-    Then I see a phone number "+00 1234 567" in the top bar
-    And I see an email "youremail@email.com" in the top bar
-    And I see social icons for Facebook, Twitter, Instagram, and Dribbble
-```
+#### Scenario: TopBar displays contact info and social links
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a phone number "+00 1234 567" in the top bar
+- **AND** I see an email "youremail@email.com" in the top bar
+- **AND** I see social icons for Facebook, Twitter, Instagram, and Dribbble
 
 ### Navbar
-```gherkin
+
 Feature: Navbar
 
-  Scenario: Navbar shows brand and navigation links
-    Given I visit the Juresc homepage
-    Then I see the brand "Juresc" in the navbar
-    And I see navigation links: Home, About, Practice Areas, Cases, Attorneys, Blog, Contact
+#### Scenario: Navbar shows brand and navigation links
 
-  Scenario: Navbar is dark themed
-    Given I visit the Juresc homepage
-    Then the navbar background is dark colored
-```
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see the brand "Juresc" in the navbar
+- **AND** I see navigation links: Home, About, Practice Areas, Cases, Attorneys, Blog, Contact
+
+#### Scenario: Navbar is dark themed
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** the navbar background is dark colored
 
 ### Hero
-```gherkin
+
 Feature: Hero section
 
-  Scenario: Hero displays headline and CTAs
-    Given I visit the Juresc homepage
-    Then I see the headline "Don't Feel Helpless We Fight for Justice"
-    And I see a "Contact us" primary button
-    And I see a "Read more" white button
-    And I see a video play button
+#### Scenario: Hero displays headline and CTAs
 
-  Scenario: Hero has background image with overlay
-    Given I visit the Juresc homepage
-    Then the hero section has a background image
-    And the hero section has a dark overlay
-```
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see the headline "Don't Feel Helpless We Fight for Justice"
+- **AND** I see a "Contact us" primary button
+- **AND** I see a "Read more" white button
+- **AND** I see a video play button
+
+#### Scenario: Hero has background image with overlay
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** the hero section has a background image
+- **AND** the hero section has a dark overlay
 
 ### IntroStrip
-```gherkin
+
 Feature: Intro strip
 
-  Scenario: Intro strip shows 4 feature cards
-    Given I visit the Juresc homepage
-    Then I see 4 intro cards in a row
-    And the first card has title "Expert Attorneys"
-    And the second card has title "Case Dismissed"
-    And the third card has title "Court Performance"
-    And the fourth card has title "Court Performance"
-```
+#### Scenario: Intro strip shows 4 feature cards
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see 4 intro cards in a row
+- **AND** the first card has title "Expert Attorneys"
+- **AND** the second card has title "Case Dismissed"
+- **AND** the third card has title "Court Performance"
+- **AND** the fourth card has title "Court Performance"
 
 ### AboutSection
-```gherkin
+
 Feature: About section
 
-  Scenario: About section has split layout
-    Given I visit the Juresc homepage
-    Then I see an image with a video play button on the left
-    And I see text content on the right with a light background
-    And I see a subheading "Welcome to Juresc"
-    And I see a heading about trust
-    And I see 4 service items: Expert Attorneys, Great Discount, Legal Advisory, Quick Charges
-```
+#### Scenario: About section has split layout
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see an image with a video play button on the left
+- **AND** I see text content on the right with a light background
+- **AND** I see a subheading "Welcome to Juresc"
+- **AND** I see a heading about trust
+- **AND** I see 4 service items: Expert Attorneys, Great Discount, Legal Advisory, Quick Charges
 
 ### CounterSection
-```gherkin
+
 Feature: Counter section
 
-  Scenario: Counter section shows statistics
-    Given I visit the Juresc homepage
-    Then I see a counter for "3000" Trusted Clients
-    And I see a counter for "1000" Honors & Awards
-    And I see a counter for "2000" Expert Lawyers
-    And I see a counter for "10540" Successful Cases
-```
+#### Scenario: Counter section shows statistics
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a counter for "3000" Trusted Clients
+- **AND** I see a counter for "1000" Honors & Awards
+- **AND** I see a counter for "2000" Expert Lawyers
+- **AND** I see a counter for "10540" Successful Cases
 
 ### PracticeAreas
-```gherkin
+
 Feature: Practice areas
 
-  Scenario: Practice areas displays 6 cards
-    Given I visit the Juresc homepage
-    Then I see a heading "What We Cover"
-    And I see 6 practice area cards
-    And the cards are: Business Law, Family Law, Criminal Law, Real Estate Law, Personal Injury, Judicial Law
-```
+#### Scenario: Practice areas displays 6 cards
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a heading "What We Cover"
+- **AND** I see 6 practice area cards
+- **AND** the cards are: Business Law, Family Law, Criminal Law, Real Estate Law, Personal Injury, Judicial Law
 
 ### CaseStudies
-```gherkin
+
 Feature: Case studies
 
-  Scenario: Case studies shows mixed grid of cases
-    Given I visit the Juresc homepage
-    Then I see a heading "Recent Case Studies"
-    And I see case study cards with background images
-    And each card has a title and short text
-```
+#### Scenario: Case studies shows mixed grid of cases
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a heading "Recent Case Studies"
+- **AND** I see case study cards with background images
+- **AND** each card has a title and short text
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials
 
-  Scenario: Testimonials section with carousel
-    Given I visit the Juresc homepage
-    Then I see a heading "Happy Clients"
-    And I see testimonial cards with a quote icon, text, person image, name, and position
-    And the testimonials are in a carousel/slider
-    And the section has a background image with dark overlay
-```
+#### Scenario: Testimonials section with carousel
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a heading "Happy Clients"
+- **AND** I see testimonial cards with a quote icon, text, person image, name, and position
+- **AND** the testimonials are in a carousel/slider
+- **AND** the section has a background image with dark overlay
 
 ### AppointmentCTA
-```gherkin
+
 Feature: Appointment CTA
 
-  Scenario: CTA section shows results info and consultation form
-    Given I visit the Juresc homepage
-    Then I see a heading "We Have Great Results" on the left
-    And I see 3 service items: Award Winning, 60 Years of Experience, Best Attorneys team
-    And I see a heading "Free Case Consultation" on the right
-    And I see a form with Name, Email, Practice Areas select, Message textarea, and Send message button
-    And the section has a background image with dark overlay
+#### Scenario: CTA section shows results info and consultation form
 
-  Scenario: Consultation form has practice area dropdown
-    Given I visit the Juresc homepage
-    When I look at the consultation form
-    Then I see a dropdown with options: Business Law, Criminal Law, Family Law, Judicial Law, Personal Injury, Real Estate Law
-```
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a heading "We Have Great Results" on the left
+- **AND** I see 3 service items: Award Winning, 60 Years of Experience, Best Attorneys team
+- **AND** I see a heading "Free Case Consultation" on the right
+- **AND** I see a form with Name, Email, Practice Areas select, Message textarea, and Send message button
+- **AND** the section has a background image with dark overlay
+
+#### Scenario: Consultation form has practice area dropdown
+
+- **GIVEN** I visit the Juresc homepage
+- **WHEN** I look at the consultation form
+- **THEN** I see a dropdown with options: Business Law, Criminal Law, Family Law, Judicial Law, Personal Injury, Real Estate Law
 
 ### Blog
-```gherkin
+
 Feature: Blog section
 
-  Scenario: Blog shows 3 entries
-    Given I visit the Juresc homepage
-    Then I see a heading "Recent Blog"
-    And I see 3 blog cards
-    And each card has an image, date (day/month/year), title, and excerpt
-```
+#### Scenario: Blog shows 3 entries
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a heading "Recent Blog"
+- **AND** I see 3 blog cards
+- **AND** each card has an image, date (day/month/year), title, and excerpt
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Footer has 5 columns
-    Given I visit the Juresc homepage
-    Then I see a footer with brand name and social links
-    And I see an "Explore" column with links: About, Contact, Practice Areas, Cases
-    And I see a "Legal" column with links: Join us, Blog, Privacy & Policy, Term & Conditions
-    And I see a "Company" column with links: About Us, Blog, Contact, Careers
-    And I see a "Have a Questions?" column with address, phone, and email
-    And I see a copyright bottom bar
+#### Scenario: Footer has 5 columns
 
-  Scenario: Footer links to Component Dock
-    Given I visit the Juresc homepage
-    Then the footer contains a link to "https://www.componentdock.com/"
-```
+- **GIVEN** I visit the Juresc homepage
+- **THEN** I see a footer with brand name and social links
+- **AND** I see an "Explore" column with links: About, Contact, Practice Areas, Cases
+- **AND** I see a "Legal" column with links: Join us, Blog, Privacy & Policy, Term & Conditions
+- **AND** I see a "Company" column with links: About Us, Blog, Contact, Careers
+- **AND** I see a "Have a Questions?" column with address, phone, and email
+- **AND** I see a copyright bottom bar
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Juresc homepage
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
 
 ## Verification checklist
 

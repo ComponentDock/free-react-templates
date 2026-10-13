@@ -40,125 +40,114 @@ Extracted from the live preview's `style.css` and inline styles.
 - Section title boxes are 370px wide and float; content holders offset by 370px margin.
 - The large section number overlaps the box edge (negative margin-left: -64px).
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Hero section renders with logo, headline, and subtitle
-```gherkin
-Given the user opens the page
-When the hero section loads
-Then a centered logo is displayed
-And a large headline "We Craft Awesome Web And Graphic Design Solutions" is shown
-And a subtitle describing the agency mission is visible
-```
+### Feature: Pixelera template behaviour
 
-### Scenario: Navbar displays fixed top with navigation links
-```gherkin
-Given the user opens the page
-When the navbar renders
-Then it is fixed to the top of the viewport
-And it has a deep purple background (#221C5A)
-And it shows links: Home, Services, Portfolio, About, News, Video, Skills, Contact
-And all link text is white, uppercase, 13px
-```
+#### Scenario: Hero section renders with logo, headline, and subtitle
 
-### Scenario: Navbar scrolls to sections on link click
-```gherkin
-Given the navbar is visible
-When the user clicks a nav link (e.g. "Services")
-Then the page smoothly scrolls to the corresponding section
-```
+- **GIVEN** the user opens the page
+- **WHEN** the hero section loads
+- **THEN** a centered logo is displayed
+- **AND** a large headline "We Craft Awesome Web And Graphic Design Solutions" is shown
+- **AND** a subtitle describing the agency mission is visible
 
-### Scenario: Services section displays with numbered title box
-```gherkin
-Given the user scrolls to the Services section
-Then a green title box (370x370px, #32DB8A) is shown on the left
-And the number "01" is displayed large (180px) in muted green
-And the title "SERVICES" is shown vertically in white Montserrat
-And the content area on the right contains an image slider
-And 8 service items with titles and descriptions are listed
-```
+#### Scenario: Navbar displays fixed top with navigation links
 
-### Scenario: Portfolio section displays masonry grid
-```gherkin
-Given the user scrolls to the Portfolio section
-Then a green title box is shown on the right with number "02" and title "PORTFOLIO"
-And a masonry grid of 4 portfolio items is shown on the left
-And each item has a hover overlay with icon, category text, and title
-And a "LOAD MORE" button with infinity icon is below the grid
-```
+- **GIVEN** the user opens the page
+- **WHEN** the navbar renders
+- **THEN** it is fixed to the top of the viewport
+- **AND** it has a deep purple background (#221C5A)
+- **AND** it shows links: Home, Services, Portfolio, About, News, Video, Skills, Contact
+- **AND** all link text is white, uppercase, 13px
 
-### Scenario: About section shows bio text, image slider, and team members
-```gherkin
-Given the user scrolls to the About section
-Then a green title box is shown on the left with number "03" and title "CRAFTERS"
-And the content area has a two-column layout with bio text and timeline
-And the timeline shows dates in pink (#e54b76) with italic descriptions in gray
-And an image slider shows about images
-And a team member carousel shows member name, position, and bio
-```
+#### Scenario: Navbar scrolls to sections on link click
 
-### Scenario: News section lists blog articles
-```gherkin
-Given the user scrolls to the News section
-Then a green title box is shown on the right with number "04" and title "STORIES"
-And 4 blog articles are listed with number, author, category, and title
-And each article has a numbered badge (01-04)
-And a "GO TO BLOG" link is at the bottom
-```
+- **GIVEN** the navbar is visible
+- **WHEN** the user clicks a nav link (e.g. "Services")
+- **THEN** the page smoothly scrolls to the corresponding section
 
-### Scenario: Video section shows video popup and icon carousel
-```gherkin
-Given the user scrolls to the Video section
-Then a green title box is shown on the left with number "05" and title "OFFER"
-And the content has a two-column layout with description and timeline (amber dates)
-And a video thumbnail with play button overlay links to Vimeo
-And an icon carousel shows 7 service icons (Video Editing, Premium Clean, etc.)
-```
+#### Scenario: Services section displays with numbered title box
 
-### Scenario: Skills section shows animated progress bars
-```gherkin
-Given the user scrolls to the Skills section
-Then a green title box is shown on the right with number "06" and title "EXPERTISE"
-And 4 progress bars are displayed: HTML (81%, green), CSS (93%, amber), PSD (72%, pink), DESIGN (99%, blue)
-And each bar shows the skill name, percentage, and colored fill
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a green title box (370x370px, #32DB8A) is shown on the left
+- **AND** the number "01" is displayed large (180px) in muted green
+- **AND** the title "SERVICES" is shown vertically in white Montserrat
+- **AND** the content area on the right contains an image slider
+- **AND** 8 service items with titles and descriptions are listed
 
-### Scenario: Contact section renders form and map
-```gherkin
-Given the user scrolls to the Contact section
-Then a green title box is shown on the left with number "07" and title "CONTACT"
-And the content area has a two-column layout
-And the left column has descriptive text with a pink-highlighted phrase
-And the right column has a contact form with Name, Email, Subject, Message fields
-And a "SEND" button with pink border that fills on hover
-And a Google Maps embed is below the form
-```
+#### Scenario: Portfolio section displays masonry grid
 
-### Scenario: Footer displays copyright and social links
-```gherkin
-Given the user scrolls to the bottom
-Then a deep purple (#221C5A) footer is displayed
-And it contains copyright text
-And social media icon links (Twitter, Behance, Dribbble, Facebook, RSS) are shown
-And a "Component Dock" attribution link is present
-```
+- **GIVEN** the user scrolls to the Portfolio section
+- **THEN** a green title box is shown on the right with number "02" and title "PORTFOLIO"
+- **AND** a masonry grid of 4 portfolio items is shown on the left
+- **AND** each item has a hover overlay with icon, category text, and title
+- **AND** a "LOAD MORE" button with infinity icon is below the grid
 
-### Scenario: Section title boxes alternate left/right
-```gherkin
-Given sections 01 through 07
-Then odd-numbered sections (01, 03, 05, 07) have the title box on the left
-And even-numbered sections (02, 04, 06) have the title box on the right
-And each box is 370x370px with green background
-```
+#### Scenario: About section shows bio text, image slider, and team members
 
-### Scenario: Page is responsive on mobile
-```gherkin
-Given the user views the page on a mobile viewport
-Then the navbar collapses to a hamburger menu
-And the section title boxes stack above their content
-And the two-column layouts become single-column
-And the masonry grid becomes single-column
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** a green title box is shown on the left with number "03" and title "CRAFTERS"
+- **AND** the content area has a two-column layout with bio text and timeline
+- **AND** the timeline shows dates in pink (#e54b76) with italic descriptions in gray
+- **AND** an image slider shows about images
+- **AND** a team member carousel shows member name, position, and bio
+
+#### Scenario: News section lists blog articles
+
+- **GIVEN** the user scrolls to the News section
+- **THEN** a green title box is shown on the right with number "04" and title "STORIES"
+- **AND** 4 blog articles are listed with number, author, category, and title
+- **AND** each article has a numbered badge (01-04)
+- **AND** a "GO TO BLOG" link is at the bottom
+
+#### Scenario: Video section shows video popup and icon carousel
+
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a green title box is shown on the left with number "05" and title "OFFER"
+- **AND** the content has a two-column layout with description and timeline (amber dates)
+- **AND** a video thumbnail with play button overlay links to Vimeo
+- **AND** an icon carousel shows 7 service icons (Video Editing, Premium Clean, etc.)
+
+#### Scenario: Skills section shows animated progress bars
+
+- **GIVEN** the user scrolls to the Skills section
+- **THEN** a green title box is shown on the right with number "06" and title "EXPERTISE"
+- **AND** 4 progress bars are displayed: HTML (81%, green), CSS (93%, amber), PSD (72%, pink), DESIGN (99%, blue)
+- **AND** each bar shows the skill name, percentage, and colored fill
+
+#### Scenario: Contact section renders form and map
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a green title box is shown on the left with number "07" and title "CONTACT"
+- **AND** the content area has a two-column layout
+- **AND** the left column has descriptive text with a pink-highlighted phrase
+- **AND** the right column has a contact form with Name, Email, Subject, Message fields
+- **AND** a "SEND" button with pink border that fills on hover
+- **AND** a Google Maps embed is below the form
+
+#### Scenario: Footer displays copyright and social links
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a deep purple (#221C5A) footer is displayed
+- **AND** it contains copyright text
+- **AND** social media icon links (Twitter, Behance, Dribbble, Facebook, RSS) are shown
+- **AND** a "Component Dock" attribution link is present
+
+#### Scenario: Section title boxes alternate left/right
+
+- **GIVEN** sections 01 through 07
+- **THEN** odd-numbered sections (01, 03, 05, 07) have the title box on the left
+- **AND** even-numbered sections (02, 04, 06) have the title box on the right
+- **AND** each box is 370x370px with green background
+
+#### Scenario: Page is responsive on mobile
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the section title boxes stack above their content
+- **AND** the two-column layouts become single-column
+- **AND** the masonry grid becomes single-column
 
 ## Verification checklist
 

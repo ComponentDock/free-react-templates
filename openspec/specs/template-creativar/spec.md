@@ -66,69 +66,81 @@ Extracted from the live preview at https://preview.colorlib.com/theme/evans/ and
 5. **Portfolio** — "Latest & Greatest" heading. Three full-width entries: each has a background image on one half and text (category tag, title, description, "View Portfolio" link) on the other half. Alternating image-left/image-right layout.
 6. **Footer** — Black bg, multi-column: brand + description, quick links, newsletter/contact info, social icons. "Made with Component Dock" attribution.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Creativar — Personal Creative Portfolio
 
 #### Scenario: Navbar renders with correct links
-- GIVEN the user loads the page
-- THEN a dark navbar is visible with the brand "Creativar"
-- AND navigation links "About", "Work", and "Contact" are present
+
+- **GIVEN** the user loads the page
+- **THEN** a dark navbar is visible with the brand "Creativar"
+- **AND** navigation links "About", "Work", and "Contact" are present
 
 #### Scenario: Hero displays VR title text
-- GIVEN the user loads the page
-- THEN a large outline text "Creativar" is visible in the hero section
-- AND the text uses Barlow Condensed font with transparent fill and white stroke
+
+- **GIVEN** the user loads the page
+- **THEN** a large outline text "Creativar" is visible in the hero section
+- **AND** the text uses Barlow Condensed font with transparent fill and white stroke
 
 #### Scenario: Hero shows background images
-- GIVEN the user loads the page
-- THEN at least one background image is visible in the hero slider area
-- AND the slider area has a height of approximately 750px
+
+- **GIVEN** the user loads the page
+- **THEN** at least one background image is visible in the hero slider area
+- **AND** the slider area has a height of approximately 750px
 
 #### Scenario: Intro section shows highlighted text
-- GIVEN the user scrolls to the intro section
-- THEN the heading contains gold-highlighted (`#fdcb6e`) text for the brand name
-- AND a descriptive paragraph is displayed below the heading
+
+- **GIVEN** the user scrolls to the intro section
+- **THEN** the heading contains gold-highlighted (`#fdcb6e`) text for the brand name
+- **AND** a descriptive paragraph is displayed below the heading
 
 #### Scenario: Services grid shows 4 service cards
-- GIVEN the user scrolls to the services section
-- THEN 4 service cards are visible: Web Design, Web Development, Graphic Design, Writing
-- AND each card has an icon, title, and description text
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 4 service cards are visible: Web Design, Web Development, Graphic Design, Writing
+- **AND** each card has an icon, title, and description text
 
 #### Scenario: Service card hover effect
-- GIVEN the user hovers over a service card
-- THEN the card background transitions to gold (`#fdcb6e`) with 0.3s ease
+
+- **GIVEN** the user hovers over a service card
+- **THEN** the card background transitions to gold (`#fdcb6e`) with 0.3s ease
 
 #### Scenario: Service card active state on desktop
-- GIVEN the user views on desktop (≥992px)
-- THEN one service card has a dark background (`#1e1e1e`) by default
-- AND another service card has a gold background (`#fdcb6e`) by default
+
+- **GIVEN** the user views on desktop (≥992px)
+- **THEN** one service card has a dark background (`#1e1e1e`) by default
+- **AND** another service card has a gold background (`#fdcb6e`) by default
 
 #### Scenario: Portfolio section displays 3 entries
-- GIVEN the user scrolls to the portfolio section
-- THEN 3 portfolio entries are visible
-- AND each entry has a background image, category label, title, description, and "View Portfolio" link
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** 3 portfolio entries are visible
+- **AND** each entry has a background image, category label, title, description, and "View Portfolio" link
 
 #### Scenario: Portfolio entries alternate layout
-- GIVEN the user views the portfolio section
-- THEN the first entry has image on the left and text on the right
-- AND subsequent entries alternate image/text positioning
+
+- **GIVEN** the user views the portfolio section
+- **THEN** the first entry has image on the left and text on the right
+- **AND** subsequent entries alternate image/text positioning
 
 #### Scenario: Portfolio hover reveals text
-- GIVEN the user hovers over a portfolio entry
-- THEN the text content animates into view (translateY + opacity transition)
+
+- **GIVEN** the user hovers over a portfolio entry
+- **THEN** the text content animates into view (translateY + opacity transition)
 
 #### Scenario: Footer renders with brand info
-- GIVEN the user scrolls to the footer
-- THEN a black footer is visible with the brand name
-- AND navigation links, social icons, and contact info are present
-- AND a "Made with Component Dock" attribution link is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a black footer is visible with the brand name
+- **AND** navigation links, social icons, and contact info are present
+- **AND** a "Made with Component Dock" attribution link is present
 
 #### Scenario: Responsive layout on mobile
-- GIVEN the user views on mobile (<768px)
-- THEN the hero section stacks vertically
-- AND the services grid stacks to single column
-- AND the navbar collapses to a hamburger menu
+
+- **GIVEN** the user views on mobile (<768px)
+- **THEN** the hero section stacks vertically
+- **AND** the services grid stacks to single column
+- **AND** the navbar collapses to a hamburger menu
 
 ## Verification Checklist
 

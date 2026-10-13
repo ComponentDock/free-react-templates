@@ -42,69 +42,80 @@ Extracted from the live preview stylesheet
 10. **Call-to-Action** — dark overlay on background, centered heading "It's never late to start, join us today!", subtext, "Become a Member" button
 11. **Footer** — white background, 3-column (About Us, Contact Us, Newsletter + email input), copyright + social icons
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Physique template behaviour
+
 Feature: Physique — Fitness website template
 
-  Background:
-    Given the template is loaded in the browser
+Background:
+- **GIVEN** the template is loaded in the browser
 
-  Scenario: Header displays navigation
-    Then the nav contains links: Home, About, Services, Trainers, Blog, Pages, Elements, Contact
-    And the logo is centered between email and phone in the top bar
+#### Scenario: Header displays navigation
 
-  Scenario: Hero banner renders
-    Then the banner spans the full viewport height
-    And the heading reads "Shape your Perfect body"
-    And a "Become a Member" button is visible
-    And the background image has a dark semi-transparent overlay
+- **THEN** the nav contains links: Home, About, Services, Trainers, Blog, Pages, Elements, Contact
+- **AND** the logo is centered between email and phone in the top bar
 
-  Scenario: Top courses carousel
-    Then there are 4 course cards visible (or scrollable)
-    And each card shows an image, title, and price
-    And each card has a "Join Now" button in brand color (#f6214b)
+#### Scenario: Hero banner renders
 
-  Scenario: CTA split section
-    Then two side-by-side panels are visible
-    And each panel has a background image with red overlay
-    And each panel displays "Get into shape now" and a "Book Now" button
+- **THEN** the banner spans the full viewport height
+- **AND** the heading reads "Shape your Perfect body"
+- **AND** a "Become a Member" button is visible
+- **AND** the background image has a dark semi-transparent overlay
 
-  Scenario: Features section
-    Then the section title reads "Our Topnotch Features"
-    And an image is displayed on the left
-    And 3 feature items are listed on the right, each with a title and description
+#### Scenario: Top courses carousel
 
-  Scenario: BMI Calculator
-    Then the section title reads "Calculate Your Body Mass Index"
-    And there are input fields for height and weight
-    And a "Calculate Your BMI" button is displayed
-    And the background has a red semi-transparent overlay
+- **THEN** there are 4 course cards visible (or scrollable)
+- **AND** each card shows an image, title, and price
+- **AND** each card has a "Join Now" button in brand color (#f6214b)
 
-  Scenario: Image gallery
-    Then the section title reads "Image Gallery that we like to share"
-    And 6 images are arranged in a 3-column, 2-row grid
+#### Scenario: CTA split section
 
-  Scenario: Testimonials
-    Then the section title reads "Testimonial from our Clients"
-    And testimonial cards display an avatar, quote, name, and role
-    And cards are presented in a carousel
+- **THEN** two side-by-side panels are visible
+- **AND** each panel has a background image with red overlay
+- **AND** each panel displays "Get into shape now" and a "Book Now" button
 
-  Scenario: Brand logos
-    Then 5 brand logos are displayed in a row
-    And logos are grayscale by default and full-color on hover
+#### Scenario: Features section
 
-  Scenario: Call-to-action section
-    Then the heading reads "It's never late to start, join us today!"
-    And a "Become a Member" button is centered
-    And the background image has a dark overlay
+- **THEN** the section title reads "Our Topnotch Features"
+- **AND** an image is displayed on the left
+- **AND** 3 feature items are listed on the right, each with a title and description
 
-  Scenario: Footer
-    Then the footer contains About Us, Contact Us, and Newsletter columns
-    And the newsletter column has an email input and submit button
-    And the footer links to https://www.componentdock.com/
-    And social icons are displayed (Facebook, Twitter, Dribbble, Behance)
-```
+#### Scenario: BMI Calculator
+
+- **THEN** the section title reads "Calculate Your Body Mass Index"
+- **AND** there are input fields for height and weight
+- **AND** a "Calculate Your BMI" button is displayed
+- **AND** the background has a red semi-transparent overlay
+
+#### Scenario: Image gallery
+
+- **THEN** the section title reads "Image Gallery that we like to share"
+- **AND** 6 images are arranged in a 3-column, 2-row grid
+
+#### Scenario: Testimonials
+
+- **THEN** the section title reads "Testimonial from our Clients"
+- **AND** testimonial cards display an avatar, quote, name, and role
+- **AND** cards are presented in a carousel
+
+#### Scenario: Brand logos
+
+- **THEN** 5 brand logos are displayed in a row
+- **AND** logos are grayscale by default and full-color on hover
+
+#### Scenario: Call-to-action section
+
+- **THEN** the heading reads "It's never late to start, join us today!"
+- **AND** a "Become a Member" button is centered
+- **AND** the background image has a dark overlay
+
+#### Scenario: Footer
+
+- **THEN** the footer contains About Us, Contact Us, and Newsletter columns
+- **AND** the newsletter column has an email input and submit button
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** social icons are displayed (Facebook, Twitter, Dribbble, Behance)
 
 ## Verification checklist
 

@@ -48,80 +48,90 @@ Recreation of ColorLib **EatWell** template.
 - Contact section is a two-column layout: form left, info + image right
 - Footer is dark (#222) with 4-column layout: about text, two link columns, social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Platewell Restaurant Template
 
-  Scenario: Navbar renders with correct links
-    Given the page loads
-    Then a navigation bar is visible with brand text "Platewell"
-    And nav links exist for "Home", "About", "Offers", "Menu", "News", "Gallery", "Contact"
-    And clicking each nav link scrolls to the corresponding section
+#### Scenario: Navbar renders with correct links
 
-  Scenario: Hero section displays full-viewport cover
-    Given the page loads
-    Then a full-viewport hero section is visible
-    And the hero heading reads "Welcome To Platewell"
-    And the hero subheading reads "Come and eat well with our delicious & healthy foods."
-    And a "Reservation" button is displayed in outline-white style
+- **GIVEN** the page loads
+- **THEN** a navigation bar is visible with brand text "Platewell"
+- **AND** nav links exist for "Home", "About", "Offers", "Menu", "News", "Gallery", "Contact"
+- **AND** clicking each nav link scrolls to the corresponding section
 
-  Scenario: About section shows story and image
-    Given the user scrolls to the About section
-    Then a "Our Story" subtitle and "Welcome" heading are visible
-    And two paragraphs of introductory text are shown
-    And a "Learn More About Us" secondary button is displayed
-    And a food/restaurant image appears to the right of the text
+#### Scenario: Hero section displays full-viewport cover
 
-  Scenario: Offers section displays food carousel
-    Given the user scrolls to the Offers section
-    Then an "Our Offers" subtitle and "Our Offer This Summer" heading are shown
-    And a carousel displays at least 3 food offer cards
-    And each card shows a food image, price, dish name, description, and "Order Now!" button
-    And carousel navigation dots are visible
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero section is visible
+- **AND** the hero heading reads "Welcome To Platewell"
+- **AND** the hero subheading reads "Come and eat well with our delicious & healthy foods."
+- **AND** a "Reservation" button is displayed in outline-white style
 
-  Scenario: Menu section has tabbed food categories
-    Given the user scrolls to the Menu section
-    Then a "Delicious Menu" heading is shown
-    And three tab buttons exist: "Breakfast", "Lunch", "Dinner"
-    And "Breakfast" tab is active by default
-    And each tab displays a 2-column grid of food items
-    And each food item shows a circular thumbnail, dish name, description, and price
-    When the user clicks "Lunch" tab then the Lunch items are displayed
-    When the user clicks "Dinner" tab then the Dinner items are displayed
+#### Scenario: About section shows story and image
 
-  Scenario: News section shows blog cards
-    Given the user scrolls to the News section
-    Then a "News" heading is shown on a light background
-    And 3 blog cards are displayed in a row
-    And each card shows an image, title, description, and "Read More" button
+- **GIVEN** the user scrolls to the About section
+- **THEN** a "Our Story" subtitle and "Welcome" heading are visible
+- **AND** two paragraphs of introductory text are shown
+- **AND** a "Learn More About Us" secondary button is displayed
+- **AND** a food/restaurant image appears to the right of the text
 
-  Scenario: Gallery section displays image grid
-    Given the user scrolls to the Gallery section
-    Then a "Gallery" heading is shown
-    And a 3×2 grid of food photography thumbnails is displayed
-    And each thumbnail is clickable (lightbox interaction)
+#### Scenario: Offers section displays food carousel
 
-  Scenario: Contact section shows form and info
-    Given the user scrolls to the Contact section
-    Then a "Get In Touch" heading is shown on a light background
-    And a contact form with Name, Email, Message fields and "Send Message" button is displayed
-    And contact information (address, phone, email) is shown to the right
+- **GIVEN** the user scrolls to the Offers section
+- **THEN** an "Our Offers" subtitle and "Our Offer This Summer" heading are shown
+- **AND** a carousel displays at least 3 food offer cards
+- **AND** each card shows a food image, price, dish name, description, and "Order Now!" button
+- **AND** carousel navigation dots are visible
 
-  Scenario: Footer renders with links and social icons
-    Given the user scrolls to the footer
-    Then a dark background footer is visible
-    And an "About Us" column with description text is shown
-    And "The Restaurant" links column is shown (About Us, Chefs, Events, Contact)
-    And two "Useful Links" columns are shown
-    And social icons (Twitter, Facebook, Instagram) are displayed as circles
-    And a copyright line is shown
-    And the footer links to "https://www.componentdock.com/" branded as "Component Dock"
+#### Scenario: Menu section has tabbed food categories
 
-  Scenario: Navbar scrolls to fixed position
-    Given the page is scrolled past the hero
-    Then the navbar becomes fixed at the top
-    And the navbar background changes from transparent to white
-    And nav link text changes from white to dark
+- **GIVEN** the user scrolls to the Menu section
+- **THEN** a "Delicious Menu" heading is shown
+- **AND** three tab buttons exist: "Breakfast", "Lunch", "Dinner"
+- **AND** "Breakfast" tab is active by default
+- **AND** each tab displays a 2-column grid of food items
+- **AND** each food item shows a circular thumbnail, dish name, description, and price
+- **WHEN** the user clicks "Lunch" tab then the Lunch items are displayed
+- **WHEN** the user clicks "Dinner" tab then the Dinner items are displayed
+
+#### Scenario: News section shows blog cards
+
+- **GIVEN** the user scrolls to the News section
+- **THEN** a "News" heading is shown on a light background
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card shows an image, title, description, and "Read More" button
+
+#### Scenario: Gallery section displays image grid
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a "Gallery" heading is shown
+- **AND** a 3×2 grid of food photography thumbnails is displayed
+- **AND** each thumbnail is clickable (lightbox interaction)
+
+#### Scenario: Contact section shows form and info
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a "Get In Touch" heading is shown on a light background
+- **AND** a contact form with Name, Email, Message fields and "Send Message" button is displayed
+- **AND** contact information (address, phone, email) is shown to the right
+
+#### Scenario: Footer renders with links and social icons
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is visible
+- **AND** an "About Us" column with description text is shown
+- **AND** "The Restaurant" links column is shown (About Us, Chefs, Events, Contact)
+- **AND** two "Useful Links" columns are shown
+- **AND** social icons (Twitter, Facebook, Instagram) are displayed as circles
+- **AND** a copyright line is shown
+- **AND** the footer links to "https://www.componentdock.com/" branded as "Component Dock"
+
+#### Scenario: Navbar scrolls to fixed position
+
+- **GIVEN** the page is scrolled past the hero
+- **THEN** the navbar becomes fixed at the top
+- **AND** the navbar background changes from transparent to white
+- **AND** nav link text changes from white to dark
 
 ## Verification checklist
 

@@ -53,147 +53,143 @@ website template.
 - Consult/appointment: parallax background image, dark overlay
 - Footer: #232323 dark background
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Top info bar displays contact details
-  Given the page loads
-  Then a top bar shows address, email, and phone with colored circular icons
+#### Scenario: Top info bar displays contact details
 
-Scenario: Navigation links
-  Given the page loads
-  When I view the navbar
-  Then I see links for Home, About, Teacher, Courses, Pricing, Blog, Contact
+- **GIVEN** the page loads
+- **THEN** a top bar shows address, email, and phone with colored circular icons
 
-Scenario: Navbar scroll behavior
-  Given the page loads
-  When I scroll past the hero
-  Then the navbar becomes fixed with a white background and shadow
-  And the active link is highlighted in brand-blue
-```
+#### Scenario: Navigation links
+
+- **GIVEN** the page loads
+- **WHEN** I view the navbar
+- **THEN** I see links for Home, About, Teacher, Courses, Pricing, Blog, Contact
+
+#### Scenario: Navbar scroll behavior
+
+- **GIVEN** the page loads
+- **WHEN** I scroll past the hero
+- **THEN** the navbar becomes fixed with a white background and shadow
+- **AND** the active link is highlighted in brand-blue
 
 ### Feature: Hero Slider
 
-```gherkin
-Scenario: Hero slider displays slides
-  Given the page loads
-  Then a full-width slider shows with background images
-  And each slide has a large heading and a "Read More" CTA button
+#### Scenario: Hero slider displays slides
 
-Scenario: Slider navigation
-  Given the slider is visible
-  When I view the slider
-  Then pagination dots appear at the bottom
-  And the active dot is highlighted in brand-blue
-```
+- **GIVEN** the page loads
+- **THEN** a full-width slider shows with background images
+- **AND** each slide has a large heading and a "Read More" CTA button
+
+#### Scenario: Slider navigation
+
+- **GIVEN** the slider is visible
+- **WHEN** I view the slider
+- **THEN** pagination dots appear at the bottom
+- **AND** the active dot is highlighted in brand-blue
 
 ### Feature: Services Bar
 
-```gherkin
-Scenario: Four service columns
-  Given the page loads
-  Then four equal-width columns display below the hero
-  And each column has a circular icon, title, and description
-  And the columns use backgrounds: primary, tertiary, fifth, quarternary
-  And the text color is white with 70% opacity for descriptions
+#### Scenario: Four service columns
 
-Scenario: Icon circles
-  Given the services bar is visible
-  Then each icon sits in a white circle centered above the text
-```
+- **GIVEN** the page loads
+- **THEN** four equal-width columns display below the hero
+- **AND** each column has a circular icon, title, and description
+- **AND** the columns use backgrounds: primary, tertiary, fifth, quarternary
+- **AND** the text color is white with 70% opacity for descriptions
+
+#### Scenario: Icon circles
+
+- **GIVEN** the services bar is visible
+- **THEN** each icon sits in a white circle centered above the text
 
 ### Feature: Welcome / About Section
 
-```gherkin
-Scenario: Two-column about layout
-  Given the page loads
-  Then a two-column section displays
-  And the left column (5/12) has "Welcome to Kiddos Learning School" heading and paragraphs
-  And the right column (7/12) has "What We Offer" heading with a 2x2 grid of features
+#### Scenario: Two-column about layout
 
-Scenario: Feature icons
-  Given the about section is visible
-  Then each feature has a circular blue icon and a title with description
-```
+- **GIVEN** the page loads
+- **THEN** a two-column section displays
+- **AND** the left column (5/12) has "Welcome to Kiddos Learning School" heading and paragraphs
+- **AND** the right column (7/12) has "What We Offer" heading with a 2x2 grid of features
+
+#### Scenario: Feature icons
+
+- **GIVEN** the about section is visible
+- **THEN** each feature has a circular blue icon and a title with description
 
 ### Feature: Intro Banner (Parallax)
 
-```gherkin
-Scenario: Parallax intro section
-  Given the page loads
-  Then a full-width section with a parallax background image appears
-  And it has a dark overlay and centered heading text
-```
+#### Scenario: Parallax intro section
+
+- **GIVEN** the page loads
+- **THEN** a full-width section with a parallax background image appears
+- **AND** it has a dark overlay and centered heading text
 
 ### Feature: Staff / Teachers Section
 
-```gherkin
-Scenario: Teacher cards
-  Given the page loads
-  Then a section displays 4 staff cards in a grid
-  And each card has an image, name, position, and social links
-  And hovering reveals the social links bar above the card
+#### Scenario: Teacher cards
 
-Scenario: Section heading
-  Given the staff section is visible
-  Then the heading section shows "Meet Our Teachers"
-```
+- **GIVEN** the page loads
+- **THEN** a section displays 4 staff cards in a grid
+- **AND** each card has an image, name, position, and social links
+- **AND** hovering reveals the social links bar above the card
+
+#### Scenario: Section heading
+
+- **GIVEN** the staff section is visible
+- **THEN** the heading section shows "Meet Our Teachers"
 
 ### Feature: Courses Section
 
-```gherkin
-Scenario: Course cards
-  Given the page loads
-  Then a section displays course items in a grid
-  And each course has a thumbnail, category tag, title, and short description
-  And the category tag uses brand-orange color
-```
+#### Scenario: Course cards
+
+- **GIVEN** the page loads
+- **THEN** a section displays course items in a grid
+- **AND** each course has a thumbnail, category tag, title, and short description
+- **AND** the category tag uses brand-orange color
 
 ### Feature: Counter / Stats Section
 
-```gherkin
-Scenario: Statistics counters
-  Given the page loads
-  Then a parallax section displays 4 statistic counters
-  And each counter has a large number, label, and icon
-  And the background uses a parallax image
-```
+#### Scenario: Statistics counters
+
+- **GIVEN** the page loads
+- **THEN** a parallax section displays 4 statistic counters
+- **AND** each counter has a large number, label, and icon
+- **AND** the background uses a parallax image
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonial carousel
-  Given the page loads
-  Then a carousel shows testimonial cards
-  And each card has a quote, user image, name, and position
-  And pagination dots are shown below
-```
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the page loads
+- **THEN** a carousel shows testimonial cards
+- **AND** each card has a quote, user image, name, and position
+- **AND** pagination dots are shown below
 
 ### Feature: Consult / Appointment Section
 
-```gherkin
-Scenario: Appointment form
-  Given the page loads
-  Then a dark parallax section displays a consultation form
-  And the form has input fields and a submit button
-  And the background uses a parallax image with dark overlay
-```
+#### Scenario: Appointment form
+
+- **GIVEN** the page loads
+- **THEN** a dark parallax section displays a consultation form
+- **AND** the form has input fields and a submit button
+- **AND** the background uses a parallax image with dark overlay
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer layout
-  Given the page loads
-  Then a dark footer (#232323) displays
-  And it contains logo, about text, newsletter subscribe, and social links
-  And the footer links to https://www.componentdock.com/ ("Component Dock")
+#### Scenario: Footer layout
 
-Scenario: Newsletter form
-  Given the footer is visible
-  Then a newsletter input with a purple submit button is shown
-```
+- **GIVEN** the page loads
+- **THEN** a dark footer (#232323) displays
+- **AND** it contains logo, about text, newsletter subscribe, and social links
+- **AND** the footer links to https://www.componentdock.com/ ("Component Dock")
+
+#### Scenario: Newsletter form
+
+- **GIVEN** the footer is visible
+- **THEN** a newsletter input with a purple submit button is shown
 
 ## Verification Checklist
 

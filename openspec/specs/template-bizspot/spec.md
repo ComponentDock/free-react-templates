@@ -42,79 +42,90 @@ Recreation of ColorLib "Listio" — a local business directory listing template.
 10. **Footer** — 3-column layout: logo + description + social icons (Twitter, Facebook, Pinterest, LinkedIn); Quick Links; Company links. Footer bottom: copyright text.
 11. **Back to Top** — fixed circular button bottom-right.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: BizSpot Directory Listing Template
 
 #### Scenario: Navbar renders with all navigation elements
-- Given the page is loaded
-- Then a navbar is visible with a logo, navigation links (Home, Explore, Pages), and an "Add Listing" button
-- And a search input is visible in the header
-- And the navbar becomes sticky with a semi-transparent background on scroll
+
+- **GIVEN** the page is loaded
+- **THEN** a navbar is visible with a logo, navigation links (Home, Explore, Pages), and an "Add Listing" button
+- **AND** a search input is visible in the header
+- **AND** the navbar becomes sticky with a semi-transparent background on scroll
 
 #### Scenario: Hero section displays search form
-- Given the hero section is in view
-- Then a heading "Find your Destination" is visible
-- And a search form with text input, category dropdown, city dropdown, and submit button is visible
-- And the hero has a full-width background image with dark gradient overlay
+
+- **GIVEN** the hero section is in view
+- **THEN** a heading "Find your Destination" is visible
+- **AND** a search form with text input, category dropdown, city dropdown, and submit button is visible
+- **AND** the hero has a full-width background image with dark gradient overlay
 
 #### Scenario: Categories carousel shows category cards
-- Given the categories section is in view
-- Then a section heading "We help you to find" with subtitle "Explore Categories" is visible
-- And at least 5 category cards are displayed in a horizontal carousel
-- And each card shows an icon, category name, and listing count
+
+- **GIVEN** the categories section is in view
+- **THEN** a section heading "We help you to find" with subtitle "Explore Categories" is visible
+- **AND** at least 5 category cards are displayed in a horizontal carousel
+- **AND** each card shows an icon, category name, and listing count
 
 #### Scenario: CTA banner displays with split layout
-- Given the CTA section is in view
-- Then a heading "Best Café & Bars" is visible
-- And a paragraph describing local businesses is visible
-- And an "Explore Now" button is visible
-- And the section has a background image on the right side
+
+- **GIVEN** the CTA section is in view
+- **THEN** a heading "Best Café & Bars" is visible
+- **AND** a paragraph describing local businesses is visible
+- **AND** an "Explore Now" button is visible
+- **AND** the section has a background image on the right side
 
 #### Scenario: Featured listings grid shows listing cards
-- Given the featured listings section is in view
-- Then a heading "Featured Listing" with subtitle "Explore Categories" is visible
-- And 6 listing cards are displayed in a 3-column grid
-- And each card has an image, price badge, status badge, title, description, category, and heart icon
-- And an "Explore More" button is visible below the grid
+
+- **GIVEN** the featured listings section is in view
+- **THEN** a heading "Featured Listing" with subtitle "Explore Categories" is visible
+- **AND** 6 listing cards are displayed in a 3-column grid
+- **AND** each card has an image, price badge, status badge, title, description, category, and heart icon
+- **AND** an "Explore More" button is visible below the grid
 
 #### Scenario: How It Works section shows numbered steps
-- Given the How It Works section is in view
-- Then a heading about how the service works is visible
-- And 3 numbered steps are displayed (Find, Review, Reserve)
-- And each step has a number, title, and description
-- And the section has a background image
+
+- **GIVEN** the How It Works section is in view
+- **THEN** a heading about how the service works is visible
+- **AND** 3 numbered steps are displayed (Find, Review, Reserve)
+- **AND** each step has a number, title, and description
+- **AND** the section has a background image
 
 #### Scenario: Testimonials section displays review carousel
-- Given the testimonials section is in view
-- Then a carousel of testimonial cards is visible
-- And each card shows a quote, avatar image, name, and role
+
+- **GIVEN** the testimonials section is in view
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card shows a quote, avatar image, name, and role
 
 #### Scenario: Newsletter section collects email subscriptions
-- Given the newsletter section is in view
-- Then a heading "Let's Stay In Touch" is visible
-- And an email input field is visible
-- And a "Subscribe" button is visible
-- And the section has a background image
+
+- **GIVEN** the newsletter section is in view
+- **THEN** a heading "Let's Stay In Touch" is visible
+- **AND** an email input field is visible
+- **AND** a "Subscribe" button is visible
+- **AND** the section has a background image
 
 #### Scenario: Blog section shows latest posts
-- Given the blog section is in view
-- Then a heading "Latest News" with subtitle "Explore Blog Post" is visible
-- And 2 blog post cards are displayed
-- And each card shows an image, tag, date, author, and title
+
+- **GIVEN** the blog section is in view
+- **THEN** a heading "Latest News" with subtitle "Explore Blog Post" is visible
+- **AND** 2 blog post cards are displayed
+- **AND** each card shows an image, tag, date, author, and title
 
 #### Scenario: Footer renders with links and copyright
-- Given the footer is visible
-- Then a logo and description are displayed in the first column
-- And social media icon links are visible
-- And Quick Links and Company link lists are displayed
-- And a copyright notice is displayed in the footer bottom
-- And the footer links to https://www.componentdock.com/
+
+- **GIVEN** the footer is visible
+- **THEN** a logo and description are displayed in the first column
+- **AND** social media icon links are visible
+- **AND** Quick Links and Company link lists are displayed
+- **AND** a copyright notice is displayed in the footer bottom
+- **AND** the footer links to https://www.componentdock.com/
 
 #### Scenario: Back to top button appears on scroll
-- Given the user scrolls down the page
-- Then a circular "back to top" button appears in the bottom-right corner
-- And clicking it scrolls smoothly to the top
+
+- **GIVEN** the user scrolls down the page
+- **THEN** a circular "back to top" button appears in the bottom-right corner
+- **AND** clicking it scrolls smoothly to the top
 
 ## Verification checklist
 

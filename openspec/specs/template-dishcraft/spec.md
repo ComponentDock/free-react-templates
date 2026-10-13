@@ -40,115 +40,131 @@ Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript
 12. **Map** — Embedded Google Map placeholder
 13. **Footer** — 3-column layout: About text + Read More button | Service hours (Lunch + Dinner) | Social links + Newsletter email input. Copyright line at bottom.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Dishcraft Restaurant Template
 
 #### Scenario: Navbar displays with logo and hamburger menu
-- Given the user is on the page
-- When the page loads
-- Then a centered logo "D" (bordered square) is visible
-- And a hamburger menu icon is visible on the right
-- And clicking the hamburger opens a slide-out navigation panel
+
+- **GIVEN** the user is on the page
+- **WHEN** the page loads
+- **THEN** a centered logo "D" (bordered square) is visible
+- **AND** a hamburger menu icon is visible on the right
+- **AND** clicking the hamburger opens a slide-out navigation panel
 
 #### Scenario: Navigation links in side menu
-- Given the side menu is open
-- When the user views the navigation
-- Then 5 links are shown: Home, About Us, Our Menu, Reserve A Table, Contact
-- And clicking a link scrolls to the corresponding section
+
+- **GIVEN** the side menu is open
+- **WHEN** the user views the navigation
+- **THEN** 5 links are shown: Home, About Us, Our Menu, Reserve A Table, Contact
+- **AND** clicking a link scrolls to the corresponding section
 
 #### Scenario: Hero section displays
-- Given the user is on the page
-- When the hero section is visible
-- Then a full-width background image is shown
-- And the heading "Welcome to Dishcraft" is centered
-- And a "Reserve A Table" button is displayed with white outline style
+
+- **GIVEN** the user is on the page
+- **WHEN** the hero section is visible
+- **THEN** a full-width background image is shown
+- **AND** the heading "Welcome to Dishcraft" is centered
+- **AND** a "Reserve A Table" button is displayed with white outline style
 
 #### Scenario: Hero CTA button scrolls to reservation
-- Given the hero section is visible
-- When the user clicks "Reserve A Table"
-- Then the page scrolls to the reservation form section
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user clicks "Reserve A Table"
+- **THEN** the page scrolls to the reservation form section
 
 #### Scenario: Food Highlights section
-- Given the user scrolls to the food highlights section
-- When the section is visible
-- Then a centered heading "Find your best food" is displayed
-- And 3 food items are shown in alternating image/text layout
-- And each item has a category label, dish name, description, and "Learn More" link
+
+- **GIVEN** the user scrolls to the food highlights section
+- **WHEN** the section is visible
+- **THEN** a centered heading "Find your best food" is displayed
+- **AND** 3 food items are shown in alternating image/text layout
+- **AND** each item has a category label, dish name, description, and "Learn More" link
 
 #### Scenario: About section
-- Given the user scrolls to the about section
-- When the section is visible
-- Then the heading "The Restaurant" is centered
-- And 2 paragraphs of descriptive text are shown
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section is visible
+- **THEN** the heading "The Restaurant" is centered
+- **AND** 2 paragraphs of descriptive text are shown
 
 #### Scenario: Meet The Chefs section
-- Given the user scrolls to the chefs section
-- When the section is visible
-- Then 2 chef cards are displayed side by side
-- And each card shows a photo, name, title ("Master Chef"), bio, and 3 social icons
+
+- **GIVEN** the user scrolls to the chefs section
+- **WHEN** the section is visible
+- **THEN** 2 chef cards are displayed side by side
+- **AND** each card shows a photo, name, title ("Master Chef"), bio, and 3 social icons
 
 #### Scenario: Menu tabs display food items
-- Given the user scrolls to the menu section
-- When the section is visible
-- Then 3 tabs are shown: Breakfast, Brunch, Dinner
-- And the Breakfast tab is active by default
-- And each tab shows 4 menu items with thumbnail, name, description, and price
+
+- **GIVEN** the user scrolls to the menu section
+- **WHEN** the section is visible
+- **THEN** 3 tabs are shown: Breakfast, Brunch, Dinner
+- **AND** the Breakfast tab is active by default
+- **AND** each tab shows 4 menu items with thumbnail, name, description, and price
 
 #### Scenario: Menu tab switching
-- Given the menu section is visible with the Breakfast tab active
-- When the user clicks the "Brunch" tab
-- Then the Breakfast items are hidden
-- And the Brunch items are shown
-- And the Brunch tab is highlighted as active
+
+- **GIVEN** the menu section is visible with the Breakfast tab active
+- **WHEN** the user clicks the "Brunch" tab
+- **THEN** the Breakfast items are hidden
+- **AND** the Brunch items are shown
+- **AND** the Brunch tab is highlighted as active
 
 #### Scenario: Other Services grid
-- Given the user scrolls to the services section
-- When the section is visible
-- Then the heading "Other Services" is centered
-- And 6 service cards are displayed in a 3x2 grid
-- And each card has an icon, title, and description
+
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the section is visible
+- **THEN** the heading "Other Services" is centered
+- **AND** 6 service cards are displayed in a 3x2 grid
+- **AND** each card has an icon, title, and description
 
 #### Scenario: Reservation form displays
-- Given the user scrolls to the reservation section
-- When the section is visible
-- Then the heading "Reservation" is centered
-- And 6 form fields are shown: Name, Email, Phone, Number of Persons, Date, Time
-- And each field has an icon
-- And a "Reserve Now" submit button is displayed full-width
+
+- **GIVEN** the user scrolls to the reservation section
+- **WHEN** the section is visible
+- **THEN** the heading "Reservation" is centered
+- **AND** 6 form fields are shown: Name, Email, Phone, Number of Persons, Date, Time
+- **AND** each field has an icon
+- **AND** a "Reserve Now" submit button is displayed full-width
 
 #### Scenario: Reservation form validation
-- Given the reservation form is displayed
-- When the user clicks "Reserve Now" without filling fields
-- Then the form shows validation feedback
+
+- **GIVEN** the reservation form is displayed
+- **WHEN** the user clicks "Reserve Now" without filling fields
+- **THEN** the form shows validation feedback
 
 #### Scenario: Customer Reviews carousel
-- Given the user scrolls to the reviews section
-- When the section is visible
-- Then the heading "Customer Reviews" is centered
-- And testimonials are displayed in a carousel
-- And each testimonial shows a quote, author photo, name, and title
+
+- **GIVEN** the user scrolls to the reviews section
+- **WHEN** the section is visible
+- **THEN** the heading "Customer Reviews" is centered
+- **AND** testimonials are displayed in a carousel
+- **AND** each testimonial shows a quote, author photo, name, and title
 
 #### Scenario: Contact form displays
-- Given the user scrolls to the contact section
-- When the section is visible
-- Then the heading "Get In Touch" is centered
-- And 4 form fields are shown: Name, Email, Phone, Message
-- And a "Send Message" submit button is displayed full-width
+
+- **GIVEN** the user scrolls to the contact section
+- **WHEN** the section is visible
+- **THEN** the heading "Get In Touch" is centered
+- **AND** 4 form fields are shown: Name, Email, Phone, Message
+- **AND** a "Send Message" submit button is displayed full-width
 
 #### Scenario: Map section
-- Given the user scrolls past the contact form
-- When the map section is visible
-- Then a map placeholder is rendered
+
+- **GIVEN** the user scrolls past the contact form
+- **WHEN** the map section is visible
+- **THEN** a map placeholder is rendered
 
 #### Scenario: Footer displays
-- Given the user scrolls to the bottom
-- When the footer is visible
-- Then 3 columns are shown: About text, Service hours, Social + Newsletter
-- And social icons link to Twitter, Facebook, Instagram
-- And a newsletter email input with submit button is shown
-- And a copyright line is displayed at the bottom
-- And a "Component Dock" link is included
+
+- **GIVEN** the user scrolls to the bottom
+- **WHEN** the footer is visible
+- **THEN** 3 columns are shown: About text, Service hours, Social + Newsletter
+- **AND** social icons link to Twitter, Facebook, Instagram
+- **AND** a newsletter email input with submit button is shown
+- **AND** a copyright line is displayed at the bottom
+- **AND** a "Component Dock" link is included
 
 ## Verification checklist
 

@@ -76,58 +76,67 @@ Recreation of ColorLib's **Major** template as a React 19 + Vite + Tailwind 4 + 
 - "book now" button (terracotta)
 - Copyright → componentdock.com
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Wavecrest template behaviour
+
 Feature: Wavecrest — Beach Hotel Template
 
-  Background:
-    Given the app is deployed at wavecrest.free.componentdock.com
-    And the page loads with no errors
+Background:
+- **GIVEN** the app is deployed at wavecrest.free.componentdock.com
+- **AND** the page loads with no errors
 
-  Scenario: Navbar renders all navigation items
-    Then the navbar displays the brand "Wavecrest"
-    And the navbar has links for "Home", "About us", "Rooms", "News", "Contact"
-    And the navbar collapses to a hamburger on mobile
+#### Scenario: Navbar renders all navigation items
 
-  Scenario: Hero section renders correctly
-    Then the hero section displays heading "Luxury & Comfort"
-    And the hero section displays subtitle "Beach Hotel — More than a stay"
-    And the hero section has a dark overlay over a background image
+- **THEN** the navbar displays the brand "Wavecrest"
+- **AND** the navbar has links for "Home", "About us", "Rooms", "News", "Contact"
+- **AND** the navbar collapses to a hamburger on mobile
 
-  Scenario: Search/booking box renders correctly
-    Then the search box displays check-in and check-out date inputs
-    And the search box has a search button with terracotta styling
+#### Scenario: Hero section renders correctly
 
-  Scenario: Intro section renders correctly
-    Then the intro section displays heading "Deluxe Room"
-    And the intro section shows an image and testimonial
-    And the testimonial shows author name "Michael Williams"
+- **THEN** the hero section displays heading "Luxury & Comfort"
+- **AND** the hero section displays subtitle "Beach Hotel — More than a stay"
+- **AND** the hero section has a dark overlay over a background image
 
-  Scenario: Room features display correctly
-    Then the room features section displays 4 feature items
-    And each feature item shows an icon and a heading
-    And the feature headings are "Deluxe Room", "Beautiful Rooms", "Swimming Pool", "Luxury Resort"
+#### Scenario: Search/booking box renders correctly
 
-  Scenario: Gallery carousel renders correctly
-    Then the gallery displays a carousel with 5 images
-    And each gallery image has a hover overlay with a "+" icon
+- **THEN** the search box displays check-in and check-out date inputs
+- **AND** the search box has a search button with terracotta styling
 
-  Scenario: Newsletter section renders correctly
-    Then the newsletter section displays heading "Our Newsletter"
-    And the newsletter section has an email input field
-    And the newsletter section has a "subscribe" button
+#### Scenario: Intro section renders correctly
 
-  Scenario: Footer renders correctly
-    Then the footer displays "Contact Info"
-    And the footer has a "book now" button
-    And the footer links to componentdock.com
+- **THEN** the intro section displays heading "Deluxe Room"
+- **AND** the intro section shows an image and testimonial
+- **AND** the testimonial shows author name "Michael Williams"
 
-  Scenario: Responsive behavior
-    Then the navbar collapses to a hamburger menu on mobile
-    And the room features stack vertically on mobile
-    And the gallery carousel is swipeable on mobile
-```
+#### Scenario: Room features display correctly
+
+- **THEN** the room features section displays 4 feature items
+- **AND** each feature item shows an icon and a heading
+- **AND** the feature headings are "Deluxe Room", "Beautiful Rooms", "Swimming Pool", "Luxury Resort"
+
+#### Scenario: Gallery carousel renders correctly
+
+- **THEN** the gallery displays a carousel with 5 images
+- **AND** each gallery image has a hover overlay with a "+" icon
+
+#### Scenario: Newsletter section renders correctly
+
+- **THEN** the newsletter section displays heading "Our Newsletter"
+- **AND** the newsletter section has an email input field
+- **AND** the newsletter section has a "subscribe" button
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer displays "Contact Info"
+- **AND** the footer has a "book now" button
+- **AND** the footer links to componentdock.com
+
+#### Scenario: Responsive behavior
+
+- **THEN** the navbar collapses to a hamburger menu on mobile
+- **AND** the room features stack vertically on mobile
+- **AND** the gallery carousel is swipeable on mobile
 
 ## Verification Checklist
 

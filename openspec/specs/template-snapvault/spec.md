@@ -41,41 +41,62 @@ Extracted from the live preview stylesheet (`css/style.css` at `preview.colorlib
 6. **CTA Banner** — "Need a photographer?" heading with "Contact Me" button (red/rounded)
 7. **Footer** — Dark charcoal background (#333333), 3-column layout: About blurb, Navigation links, Follow Me social links. Copyright bar at bottom
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
+
 - Scenario: Logo displays brand name with accent dot
 - Scenario: Navigation links are visible on desktop (xl+ breakpoint)
 - Scenario: Mobile hamburger menu toggles mobile nav
 - Scenario: Social media icon links are displayed in the header
 
 ### Hero
+
+#### Scenario: Hero
+
 - Scenario: Hero section displays background image with dark overlay
 - Scenario: Hero heading displays photographer introduction text
 - Scenario: Circular profile image is displayed below heading
 
 ### Specialties
+
+#### Scenario: Specialties
+
 - Scenario: "My Specialties" section heading is displayed
 - Scenario: Four specialty cards are rendered (Nature, Portrait, Wedding, Food & Drink)
 - Scenario: Each card shows an image and descriptive text side-by-side
 - Scenario: Cards have subtle box-shadow styling
 
 ### Testimonials
+
+#### Scenario: Testimonials
+
 - Scenario: Testimonial section has parallax background with dark overlay
 - Scenario: Three testimonial quotes are displayed in a carousel
 - Scenario: Each testimonial shows quote text and author attribution
 
 ### Gallery
+
+#### Scenario: Gallery
+
 - Scenario: "My Photography" section heading is displayed
 - Scenario: Six photo items are rendered in a 3-column grid
 - Scenario: Each photo item shows an image with a title label
 - Scenario: Photo items have hover interaction
 
 ### CTA Banner
+
+#### Scenario: CTA Banner
+
 - Scenario: "Need a photographer?" call-to-action is displayed
 - Scenario: "Contact Me" button is rendered with rounded styling
 
 ### Footer
+
+#### Scenario: Footer
+
 - Scenario: Footer has dark background (#333333)
 - Scenario: Three-column layout with About, Navigation, and Follow Me sections
 - Scenario: Footer links are displayed in navigation column

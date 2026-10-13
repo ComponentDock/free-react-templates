@@ -48,90 +48,94 @@ The template shows a split layout:
 The sidebar is collapsible — on mobile or when toggled, it slides out to the
 left (negative margin) and the content takes full width.
 
-## Gherkin Requirements
+## Requirements
 
 ### Sidebar Structure
 
-```gherkin
 Feature: Sidebar navigation panel
 
-  Scenario: Sidebar renders with logo
-    Given the app is loaded
-    Then the sidebar displays a logo text "Sidekick"
-    And the sidebar displays a subtitle text
+#### Scenario: Sidebar renders with logo
 
-  Scenario: Sidebar displays navigation links
-    Given the app is loaded
-    Then the sidebar shows links for "Home", "About", "Blog", "Services", "Contacts"
-    And each link has an icon beside it
-    And each link has a bottom border separator
+- **GIVEN** the app is loaded
+- **THEN** the sidebar displays a logo text "Sidekick"
+- **AND** the sidebar displays a subtitle text
 
-  Scenario: Sidebar has newsletter subscription form
-    Given the app is loaded
-    Then the sidebar shows a newsletter subscription section
-    And it contains an email input field with placeholder text
-    And it contains a subscribe button
+#### Scenario: Sidebar displays navigation links
 
-  Scenario: Sidebar has copyright footer
-    Given the app is loaded
-    Then the sidebar shows a copyright footer at the bottom
-```
+- **GIVEN** the app is loaded
+- **THEN** the sidebar shows links for "Home", "About", "Blog", "Services", "Contacts"
+- **AND** each link has an icon beside it
+- **AND** each link has a bottom border separator
+
+#### Scenario: Sidebar has newsletter subscription form
+
+- **GIVEN** the app is loaded
+- **THEN** the sidebar shows a newsletter subscription section
+- **AND** it contains an email input field with placeholder text
+- **AND** it contains a subscribe button
+
+#### Scenario: Sidebar has copyright footer
+
+- **GIVEN** the app is loaded
+- **THEN** the sidebar shows a copyright footer at the bottom
 
 ### Sidebar Toggle
 
-```gherkin
 Feature: Sidebar collapse/expand
 
-  Scenario: Sidebar starts open on desktop
-    Given the screen width is at least 768px
-    Then the sidebar is visible at 300px width
+#### Scenario: Sidebar starts open on desktop
 
-  Scenario: Toggle button collapses sidebar
-    Given the sidebar is open
-    When the user clicks the hamburger toggle button
-    Then the sidebar slides out to the left with a 0.3s transition
-    And the main content expands to fill the viewport
+- **GIVEN** the screen width is at least 768px
+- **THEN** the sidebar is visible at 300px width
 
-  Scenario: Toggle button expands sidebar
-    Given the sidebar is collapsed
-    When the user clicks the hamburger toggle button
-    Then the sidebar slides back into view at 300px width
-    And the main content shrinks to accommodate the sidebar
-```
+#### Scenario: Toggle button collapses sidebar
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks the hamburger toggle button
+- **THEN** the sidebar slides out to the left with a 0.3s transition
+- **AND** the main content expands to fill the viewport
+
+#### Scenario: Toggle button expands sidebar
+
+- **GIVEN** the sidebar is collapsed
+- **WHEN** the user clicks the hamburger toggle button
+- **THEN** the sidebar slides back into view at 300px width
+- **AND** the main content shrinks to accommodate the sidebar
 
 ### Main Content Area
 
-```gherkin
 Feature: Main content display
 
-  Scenario: Content area displays heading
-    Given the app is loaded
-    Then the main content area shows a heading
+#### Scenario: Content area displays heading
 
-  Scenario: Content area displays paragraphs
-    Given the app is loaded
-    Then the main content area shows descriptive text paragraphs
+- **GIVEN** the app is loaded
+- **THEN** the main content area shows a heading
 
-  Scenario: Content area fills remaining width
-    Given the sidebar is open
-    Then the content area occupies the remaining viewport width
-```
+#### Scenario: Content area displays paragraphs
+
+- **GIVEN** the app is loaded
+- **THEN** the main content area shows descriptive text paragraphs
+
+#### Scenario: Content area fills remaining width
+
+- **GIVEN** the sidebar is open
+- **THEN** the content area occupies the remaining viewport width
 
 ### Responsive Behavior
 
-```gherkin
 Feature: Mobile responsive sidebar
 
-  Scenario: Sidebar hides on small screens
-    Given the screen width is less than 768px
-    Then the sidebar is hidden off-screen by default
-    And the content takes full width
+#### Scenario: Sidebar hides on small screens
 
-  Scenario: Sidebar can be opened on mobile
-    Given the screen width is less than 768px
-    When the user clicks the hamburger toggle button
-    Then the sidebar slides in from the left
-```
+- **GIVEN** the screen width is less than 768px
+- **THEN** the sidebar is hidden off-screen by default
+- **AND** the content takes full width
+
+#### Scenario: Sidebar can be opened on mobile
+
+- **GIVEN** the screen width is less than 768px
+- **WHEN** the user clicks the hamburger toggle button
+- **THEN** the sidebar slides in from the left
 
 ## Verification Checklist
 

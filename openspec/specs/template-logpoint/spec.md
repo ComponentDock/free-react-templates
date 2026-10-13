@@ -43,59 +43,71 @@ Recreation of ColorLib **Login Form 17** as a standalone React page.
    - "Don't have an account?" subtext (white)
    - Sign Up button: outlined white border, pill shape, white text
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Login form renders correctly
-  Given the user visits the Logpoint page
-  Then a split-screen card is visible
-  And the left panel contains a "Sign In" heading
-  And the right panel contains a "Welcome to login" heading
+### Feature: Logpoint template behaviour
 
-### Scenario: Username field accepts input
-  Given the login form is displayed
-  When the user clicks the username input
-  And types a username
-  Then the username field shows the typed value
+#### Scenario: Login form renders correctly
 
-### Scenario: Password field accepts input
-  Given the login form is displayed
-  When the user clicks the password input
-  And types a password
-  Then the password field shows the masked value
+- **GIVEN** the user visits the Logpoint page
+- **THEN** a split-screen card is visible
+- **AND** the left panel contains a "Sign In" heading
+- **AND** the right panel contains a "Welcome to login" heading
 
-### Scenario: Sign In button is present
-  Given the login form is displayed
-  Then a "Sign In" button is visible
-  And the button has a coral gradient background
+#### Scenario: Username field accepts input
 
-### Scenario: Remember Me checkbox toggles
-  Given the login form is displayed
-  When the user clicks the "Remember Me" checkbox
-  Then the checkbox toggles its checked state
+- **GIVEN** the login form is displayed
+- **WHEN** the user clicks the username input
+- **AND** types a username
+- **THEN** the username field shows the typed value
 
-### Scenario: Forgot Password link is present
-  Given the login form is displayed
-  Then a "Forgot Password" link is visible
+#### Scenario: Password field accepts input
 
-### Scenario: Social icons are present
-  Given the login form is displayed
-  Then Facebook and Twitter icons are visible in the top-right area
+- **GIVEN** the login form is displayed
+- **WHEN** the user clicks the password input
+- **AND** types a password
+- **THEN** the password field shows the masked value
 
-### Scenario: Sign Up button is present on right panel
-  Given the login form is displayed
-  Then a "Sign Up" button is visible on the right panel
-  And the button has a white outlined style
+#### Scenario: Sign In button is present
 
-### Scenario: Responsive layout stacks on mobile
-  Given the user views the page on a mobile viewport
-  Then the card stacks vertically
-  And the right panel appears below the left panel
+- **GIVEN** the login form is displayed
+- **THEN** a "Sign In" button is visible
+- **AND** the button has a coral gradient background
 
-### Scenario: Accessibility
-  Given the login form is displayed
-  Then all form inputs have associated labels
-  And the sign-in button is keyboard-focusable
-  And the checkbox is keyboard-operable
+#### Scenario: Remember Me checkbox toggles
+
+- **GIVEN** the login form is displayed
+- **WHEN** the user clicks the "Remember Me" checkbox
+- **THEN** the checkbox toggles its checked state
+
+#### Scenario: Forgot Password link is present
+
+- **GIVEN** the login form is displayed
+- **THEN** a "Forgot Password" link is visible
+
+#### Scenario: Social icons are present
+
+- **GIVEN** the login form is displayed
+- **THEN** Facebook and Twitter icons are visible in the top-right area
+
+#### Scenario: Sign Up button is present on right panel
+
+- **GIVEN** the login form is displayed
+- **THEN** a "Sign Up" button is visible on the right panel
+- **AND** the button has a white outlined style
+
+#### Scenario: Responsive layout stacks on mobile
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the card stacks vertically
+- **AND** the right panel appears below the left panel
+
+#### Scenario: Accessibility
+
+- **GIVEN** the login form is displayed
+- **THEN** all form inputs have associated labels
+- **AND** the sign-in button is keyboard-focusable
+- **AND** the checkbox is keyboard-operable
 
 ## Verification checklist
 

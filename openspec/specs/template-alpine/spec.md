@@ -67,175 +67,190 @@ Extracted from `https://preview.colorlib.com/theme/montana/css/style.css`:
 
 10. **Booking Popup** — Modal with form: check-in date, check-out date, adults dropdown, children dropdown, room type select, "Check Availability" button. Triggered from "Book a Room" button.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Desktop navigation renders all menu items
-  Given the user is on a desktop viewport
-  When the page loads
-  Then the navbar displays "Home", "Rooms", "About", "Blog", "Pages", "Elements", "Contact" links
-  And a centered logo image is visible
-  And a "Book a Room" button appears on the right
-  And social media icons (Facebook, Twitter) are visible
 
-Scenario: Sticky header activates on scroll
-  Given the user is on a desktop viewport
-  When the user scrolls past the hero section
-  Then the header background changes from transparent to black
-  And the header becomes fixed at the top of the viewport
-  And navigation links remain white on the dark background
+#### Scenario: Desktop navigation renders all menu items
 
-Scenario: Mobile hamburger menu toggles
-  Given the user is on a mobile viewport
-  When the user taps the hamburger icon
-  Then the mobile navigation menu opens
-  And all navigation links are visible in a vertical list
-```
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar displays "Home", "Rooms", "About", "Blog", "Pages", "Elements", "Contact" links
+- **AND** a centered logo image is visible
+- **AND** a "Book a Room" button appears on the right
+- **AND** social media icons (Facebook, Twitter) are visible
+
+#### Scenario: Sticky header activates on scroll
+
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the user scrolls past the hero section
+- **THEN** the header background changes from transparent to black
+- **AND** the header becomes fixed at the top of the viewport
+- **AND** navigation links remain white on the dark background
+
+#### Scenario: Mobile hamburger menu toggles
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile navigation menu opens
+- **AND** all navigation links are visible in a vertical list
 
 ### Hero Slider
-```gherkin
-Scenario: Hero slider displays with fullscreen background
-  Given the user is on any viewport
-  When the page loads
-  Then a full-viewport height carousel is displayed
-  And the first slide shows a background image
-  And centered white text is overlaid on the image
 
-Scenario: Hero slider cycles through slides
-  Given the hero slider is visible
-  When 5 seconds pass without interaction
-  Then the slider transitions to the next slide
-  And the transition is a smooth fade or slide
+#### Scenario: Hero slider displays with fullscreen background
 
-Scenario: Slider navigation arrows are visible on hover
-  Given the hero slider is visible on desktop
-  When the user hovers over the slider area
-  Then left and right navigation arrows appear
-  And the arrows are circular (border-radius 50%) with semi-transparent white bg
-```
+- **GIVEN** the user is on any viewport
+- **WHEN** the page loads
+- **THEN** a full-viewport height carousel is displayed
+- **AND** the first slide shows a background image
+- **AND** centered white text is overlaid on the image
+
+#### Scenario: Hero slider cycles through slides
+
+- **GIVEN** the hero slider is visible
+- **WHEN** 5 seconds pass without interaction
+- **THEN** the slider transitions to the next slide
+- **AND** the transition is a smooth fade or slide
+
+#### Scenario: Slider navigation arrows are visible on hover
+
+- **GIVEN** the hero slider is visible on desktop
+- **WHEN** the user hovers over the slider area
+- **THEN** left and right navigation arrows appear
+- **AND** the arrows are circular (border-radius 50%) with semi-transparent white bg
 
 ### About Us
-```gherkin
-Scenario: About section displays two-column layout
-  Given the user scrolls to the About section
-  Then a left column shows the section title and description text
-  And a right column shows two stacked images
-  And the section title includes a blue span (e.g., "About Us" in blue)
 
-Scenario: About section has a "More About Us" link
-  Given the user is in the About section
-  Then a "More About Us" styled link is visible below the description
-```
+#### Scenario: About section displays two-column layout
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a left column shows the section title and description text
+- **AND** a right column shows two stacked images
+- **AND** the section title includes a blue span (e.g., "About Us" in blue)
+
+#### Scenario: About section has a "More About Us" link
+
+- **GIVEN** the user is in the About section
+- **THEN** a "More About Us" styled link is visible below the description
 
 ### Offers Section
-```gherkin
-Scenario: Offers section shows three service cards
-  Given the user scrolls to the Offers section
-  Then three cards are displayed in a row on desktop
-  And each card has an image, title, and feature list
 
-Scenario: Offer card image zooms on hover
-  Given the user hovers over an offer card
-  Then the card image scales up slightly (transform: scale 1.1)
-  And the transition is smooth (0.3s)
+#### Scenario: Offers section shows three service cards
 
-Scenario: Offer card has a button
-  Given the user views an offer card
-  Then a "More About Us" button is visible below the feature list
-  And the button has a blue outline style (boxed-btn)
-```
+- **GIVEN** the user scrolls to the Offers section
+- **THEN** three cards are displayed in a row on desktop
+- **AND** each card has an image, title, and feature list
+
+#### Scenario: Offer card image zooms on hover
+
+- **GIVEN** the user hovers over an offer card
+- **THEN** the card image scales up slightly (transform: scale 1.1)
+- **AND** the transition is smooth (0.3s)
+
+#### Scenario: Offer card has a button
+
+- **GIVEN** the user views an offer card
+- **THEN** a "More About Us" button is visible below the feature list
+- **AND** the button has a blue outline style (boxed-btn)
 
 ### Video / Parallax Section
-```gherkin
-Scenario: Video section shows background image with overlay
-  Given the user scrolls to the video section
-  Then a full-width background image is displayed
-  And a dark semi-transparent overlay covers the image (opacity 0.5)
 
-Scenario: Video section has centered content
-  Given the video section is visible
-  Then white text is centered vertically and horizontally
-  And a circular play button (white bg, 60px, border-radius 50%) is displayed
-```
+#### Scenario: Video section shows background image with overlay
+
+- **GIVEN** the user scrolls to the video section
+- **THEN** a full-width background image is displayed
+- **AND** a dark semi-transparent overlay covers the image (opacity 0.5)
+
+#### Scenario: Video section has centered content
+
+- **GIVEN** the video section is visible
+- **THEN** white text is centered vertically and horizontally
+- **AND** a circular play button (white bg, 60px, border-radius 50%) is displayed
 
 ### Featured Rooms
-```gherkin
-Scenario: Rooms grid displays four room cards in 2x2 layout
-  Given the user scrolls to the rooms section
-  Then four room cards are displayed in a 2-column grid
-  And each card has a full-width image with gradient overlay
 
-Scenario: Room card shows name and price
-  Given a room card is visible
-  Then the room name is displayed in white text
-  And the room price or "per night" label is shown
+#### Scenario: Rooms grid displays four room cards in 2x2 layout
 
-Scenario: Room card hover reveals link
-  Given the user hovers over a room card
-  Then a "More About Us" link slides up from below
-  And the link is initially hidden (opacity 0, translateY offset)
-  And the link appears with a smooth transition
-```
+- **GIVEN** the user scrolls to the rooms section
+- **THEN** four room cards are displayed in a 2-column grid
+- **AND** each card has a full-width image with gradient overlay
+
+#### Scenario: Room card shows name and price
+
+- **GIVEN** a room card is visible
+- **THEN** the room name is displayed in white text
+- **AND** the room price or "per night" label is shown
+
+#### Scenario: Room card hover reveals link
+
+- **GIVEN** the user hovers over a room card
+- **THEN** a "More About Us" link slides up from below
+- **AND** the link is initially hidden (opacity 0, translateY offset)
+- **AND** the link appears with a smooth transition
 
 ### Query / CTA Section
-```gherkin
-Scenario: CTA section displays inquiry prompt
-  Given the user scrolls to the query section
-  Then a heading asks about room inquiries
-  And a description paragraph is displayed
-  And a phone number with phone icon is shown on the right
 
-Scenario: CTA section has blue left border accent
-  Given the query section is visible
-  Then the left side has a blue (#009DFF) left border styling
-```
+#### Scenario: CTA section displays inquiry prompt
+
+- **GIVEN** the user scrolls to the query section
+- **THEN** a heading asks about room inquiries
+- **AND** a description paragraph is displayed
+- **AND** a phone number with phone icon is shown on the right
+
+#### Scenario: CTA section has blue left border accent
+
+- **GIVEN** the query section is visible
+- **THEN** the left side has a blue (#009DFF) left border styling
 
 ### Instagram Feed
-```gherkin
-Scenario: Instagram section shows image row
-  Given the user scrolls to the Instagram section
-  Then five equal-width images are displayed in a row
-  And the images span full width
 
-Scenario: Instagram image shows overlay on hover
-  Given the user hovers over an Instagram image
-  Then a dark overlay appears over the image
-  And the transition is smooth
-```
+#### Scenario: Instagram section shows image row
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** five equal-width images are displayed in a row
+- **AND** the images span full width
+
+#### Scenario: Instagram image shows overlay on hover
+
+- **GIVEN** the user hovers over an Instagram image
+- **THEN** a dark overlay appears over the image
+- **AND** the transition is smooth
 
 ### Footer
-```gherkin
-Scenario: Footer displays four columns
-  Given the user scrolls to the footer
-  Then four columns are visible: About, Quick Links, Instagram, Newsletter
-  And each column has a heading
 
-Scenario: Footer newsletter has email input
-  Given the Newsletter column is visible
-  Then an email input field is displayed
-  And a subscribe button is next to it
+#### Scenario: Footer displays four columns
 
-Scenario: Footer bottom bar shows copyright and social links
-  Given the user views the footer bottom
-  Then copyright text is displayed on the left
-  And social media icons are displayed on the right
-  And a border separates the bottom bar from the footer content
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** four columns are visible: About, Quick Links, Instagram, Newsletter
+- **AND** each column has a heading
+
+#### Scenario: Footer newsletter has email input
+
+- **GIVEN** the Newsletter column is visible
+- **THEN** an email input field is displayed
+- **AND** a subscribe button is next to it
+
+#### Scenario: Footer bottom bar shows copyright and social links
+
+- **GIVEN** the user views the footer bottom
+- **THEN** copyright text is displayed on the left
+- **AND** social media icons are displayed on the right
+- **AND** a border separates the bottom bar from the footer content
 
 ### Booking Popup
-```gherkin
-Scenario: Booking modal opens on button click
-  Given the user clicks "Book a Room"
-  Then a modal dialog opens with a booking form
-  And the modal has a white background with form fields
 
-Scenario: Booking form contains date and room fields
-  Given the booking modal is open
-  Then check-in date, check-out date inputs are visible
-  And adults and children dropdown selects are visible
-  And a "Check Availability" button is at the bottom
-```
+#### Scenario: Booking modal opens on button click
+
+- **GIVEN** the user clicks "Book a Room"
+- **THEN** a modal dialog opens with a booking form
+- **AND** the modal has a white background with form fields
+
+#### Scenario: Booking form contains date and room fields
+
+- **GIVEN** the booking modal is open
+- **THEN** check-in date, check-out date inputs are visible
+- **AND** adults and children dropdown selects are visible
+- **AND** a "Check Availability" button is at the bottom
 
 ## Verification Checklist
 

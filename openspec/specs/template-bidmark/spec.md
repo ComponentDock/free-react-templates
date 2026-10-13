@@ -129,7 +129,7 @@ Source slug + preview URL recorded below.
 | Step arrow        | icomoon `\e315` (CSS ::after)            | Arrow between steps → replace with lucide-react ArrowRight             |
 | Loader spinner    | `#51be78` (green circle)                 | Page loader (optional — may skip in React)                             |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Bidmark — Auction Website Template
 
@@ -139,114 +139,131 @@ Source slug + preview URL recorded below.
   so that I can understand how an auction site looks and feels.
 
   Background:
-    Given the page is loaded at the Bidmark root URL
-    And the browser supports modern JavaScript (ES2020+)
+- **GIVEN** the page is loaded at the Bidmark root URL
+- **AND** the browser supports modern JavaScript (ES2020+)
 
-  Scenario: Navbar renders with absolute positioning
-    Then a navigation bar should be visible at the top of the page
-    And the navbar should have a transparent background
-    And the navbar should display a logo image
-    And the navbar should contain navigation links: Home, Buy, Sell, Services, Blog, About, Contact
-    And a "Sign In / Register" link should be visible in the navbar
+#### Scenario: Navbar renders with absolute positioning
 
-  Scenario: Navbar has mobile menu toggle
-    Given the viewport width is 375px
-    Then a hamburger menu toggle should be visible
-    And the desktop navigation links should be hidden
+- **THEN** a navigation bar should be visible at the top of the page
+- **AND** the navbar should have a transparent background
+- **AND** the navbar should display a logo image
+- **AND** the navbar should contain navigation links: Home, Buy, Sell, Services, Blog, About, Contact
+- **AND** a "Sign In / Register" link should be visible in the navbar
 
-  Scenario: Hero section displays with background image
-    Then a hero section should be visible
-    And the hero should have a background image
-    And the hero should display the heading "The Best Place to Buy and Sell"
-    And the hero should display a subtitle paragraph
-    And the hero should have a "Register" button
-    And the hero should be approximately full viewport height
+#### Scenario: Navbar has mobile menu toggle
 
-  Scenario: Auction grid shows 8 product cards
-    Then a product auction grid should be visible
-    And the grid should display 8 product cards
-    And the grid should be arranged in a 4-column layout
-    And each product card should have a product image
-    And each product card should have an overlaid price badge
+- **GIVEN** the viewport width is 375px
+- **THEN** a hamburger menu toggle should be visible
+- **AND** the desktop navigation links should be hidden
 
-  Scenario: Price badges are circular and orange
-    Then each price badge should be a circle (border-radius 50%)
-    And each price badge should have an orange background (#f37121)
-    And each price badge should display a price in white text
-    And each price badge should be approximately 90px in diameter
+#### Scenario: Hero section displays with background image
 
-  Scenario: Product cards show title, category, and bid count
-    Then each product card should display a product title
-    And each product card should display a category label
-    And each product card should display a bid count
-    And each product card should have a "Submit a Bid" button
+- **THEN** a hero section should be visible
+- **AND** the hero should have a background image
+- **AND** the hero should display the heading "The Best Place to Buy and Sell"
+- **AND** the hero should display a subtitle paragraph
+- **AND** the hero should have a "Register" button
+- **AND** the hero should be approximately full viewport height
 
-  Scenario: Submit a Bid button has square style
-    Then each "Submit a Bid" button should have square corners (no border-radius)
-    And each "Submit a Bid" button should have a light gray background (#f8f9fa)
-    And each "Submit a Bid" button should have black text
+#### Scenario: Auction grid shows 8 product cards
 
-  Scenario: How It Works section shows 4 steps
-    Then a "How It Works" section should be visible
-    And the section should display 4 steps in a row
-    And the steps should be: Register, Buy or Bid, Submit a bid, Win
-    And each step should have an icon
-    And each step should have a heading and description
+- **THEN** a product auction grid should be visible
+- **AND** the grid should display 8 product cards
+- **AND** the grid should be arranged in a 4-column layout
+- **AND** each product card should have a product image
+- **AND** each product card should have an overlaid price badge
 
-  Scenario: Step icons use circle style
-    Then each step icon should be displayed in a circular container
-    And the step icons should use the icomoon font (to be replaced with lucide-react)
+#### Scenario: Price badges are circular and orange
 
-  Scenario: About Us section displays with features
-    Then an "About Us" section should be visible
-    And the section should have a product image on the left
-    And the section should have 3 feature items on the right
-    And the features should be: Fast Support, Happy Customers, 24/7 Support
-    And each feature icon should be in a 70px orange circle
+- **THEN** each price badge should be a circle (border-radius 50%)
+- **AND** each price badge should have an orange background (#f37121)
+- **AND** each price badge should display a price in white text
+- **AND** each price badge should be approximately 90px in diameter
 
-  Scenario: Testimonials section displays over background image
-    Then a testimonials section should be visible
-    And the testimonials section should have a background image
-    And the testimonials section should display "Happy Clients" heading
-    And testimonials should show person photos, names, and roles
-    And testimonials should show quote text
+#### Scenario: Product cards show title, category, and bid count
 
-  Scenario: CTA section displays registration prompt
-    Then a CTA section should be visible
-    And the CTA should display "Create an account and start Buy, Bid or Sell Now!"
-    And the CTA should have a "Register" button
+- **THEN** each product card should display a product title
+- **AND** each product card should display a category label
+- **AND** each product card should display a bid count
+- **AND** each product card should have a "Submit a Bid" button
 
-  Scenario: Footer renders with four columns
-    Then a footer should be visible at the bottom of the page
-    And the footer should have a light gray background (#f8f9fa)
-    And the footer should contain a logo and description
-    And the footer should contain "Solutions" links
-    And the footer should contain "Services" links
-    And the footer should contain "Contact" links
-    And the footer should contain a copyright notice
+#### Scenario: Submit a Bid button has square style
 
-  Scenario: Footer links to Component Dock
-    Then a link to "https://www.componentdock.com/" should be present
-    And the link text should contain "Component Dock"
+- **THEN** each "Submit a Bid" button should have square corners (no border-radius)
+- **AND** each "Submit a Bid" button should have a light gray background (#f8f9fa)
+- **AND** each "Submit a Bid" button should have black text
 
-  Scenario: Responsive layout on mobile
-    Given the viewport width is 375px
-    Then the navbar should collapse to a hamburger menu
-    And the hero content should stack vertically
-    And the auction grid should stack to fewer columns
-    And the how-it-works steps should stack vertically
-    And the footer columns should stack vertically
+#### Scenario: How It Works section shows 4 steps
 
-  Scenario: Orange brand color is consistent
-    Then headings should use the orange color (#f37121)
-    And captions should use the orange color (#f37121)
-    And price badges should use the orange background (#f37121)
-    And feature icons should use the orange background (#f37121)
+- **THEN** a "How It Works" section should be visible
+- **AND** the section should display 4 steps in a row
+- **AND** the steps should be: Register, Buy or Bid, Submit a bid, Win
+- **AND** each step should have an icon
+- **AND** each step should have a heading and description
 
-  Scenario: No ColorLib references in app code
-    Then no source file in the app should contain "colorlib.com"
-    And no source file in the app should contain "Colorlib"
-    And provenance should exist only in the spec and TEMPLATES.md
+#### Scenario: Step icons use circle style
+
+- **THEN** each step icon should be displayed in a circular container
+- **AND** the step icons should use the icomoon font (to be replaced with lucide-react)
+
+#### Scenario: About Us section displays with features
+
+- **THEN** an "About Us" section should be visible
+- **AND** the section should have a product image on the left
+- **AND** the section should have 3 feature items on the right
+- **AND** the features should be: Fast Support, Happy Customers, 24/7 Support
+- **AND** each feature icon should be in a 70px orange circle
+
+#### Scenario: Testimonials section displays over background image
+
+- **THEN** a testimonials section should be visible
+- **AND** the testimonials section should have a background image
+- **AND** the testimonials section should display "Happy Clients" heading
+- **AND** testimonials should show person photos, names, and roles
+- **AND** testimonials should show quote text
+
+#### Scenario: CTA section displays registration prompt
+
+- **THEN** a CTA section should be visible
+- **AND** the CTA should display "Create an account and start Buy, Bid or Sell Now!"
+- **AND** the CTA should have a "Register" button
+
+#### Scenario: Footer renders with four columns
+
+- **THEN** a footer should be visible at the bottom of the page
+- **AND** the footer should have a light gray background (#f8f9fa)
+- **AND** the footer should contain a logo and description
+- **AND** the footer should contain "Solutions" links
+- **AND** the footer should contain "Services" links
+- **AND** the footer should contain "Contact" links
+- **AND** the footer should contain a copyright notice
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** a link to "https://www.componentdock.com/" should be present
+- **AND** the link text should contain "Component Dock"
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport width is 375px
+- **THEN** the navbar should collapse to a hamburger menu
+- **AND** the hero content should stack vertically
+- **AND** the auction grid should stack to fewer columns
+- **AND** the how-it-works steps should stack vertically
+- **AND** the footer columns should stack vertically
+
+#### Scenario: Orange brand color is consistent
+
+- **THEN** headings should use the orange color (#f37121)
+- **AND** captions should use the orange color (#f37121)
+- **AND** price badges should use the orange background (#f37121)
+- **AND** feature icons should use the orange background (#f37121)
+
+#### Scenario: No ColorLib references in app code
+
+- **THEN** no source file in the app should contain "colorlib.com"
+- **AND** no source file in the app should contain "Colorlib"
+- **AND** provenance should exist only in the spec and TEMPLATES.md
 
 ## Verification checklist
 

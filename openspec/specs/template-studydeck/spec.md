@@ -144,153 +144,165 @@ Dark background. Multi-column layout:
 - Contact info (Call Us)
 - Social links
 
-## Gherkin scenarios
+## Requirements
 
 ### Hero Section
-```gherkin
+
 Feature: Hero Section
 
-  Scenario: Displays hero with heading and registration form
-    Given the user loads the page
-    Then a full-viewport hero section is visible
-    And the heading "Welcome to StudyLab" is displayed
-    And a registration form with Name, Email, Password fields is shown
+#### Scenario: Displays hero with heading and registration form
 
-  Scenario: Hero CTAs are present
-    Given the user views the hero
-    Then "Our Course" and "Learn More" buttons are visible
+- **GIVEN** the user loads the page
+- **THEN** a full-viewport hero section is visible
+- **AND** the heading "Welcome to StudyLab" is displayed
+- **AND** a registration form with Name, Email, Password fields is shown
 
-  Scenario: Mobile responsive hero
-    Given the user views on a 375px viewport
-    Then the hero text is readable and centered
-    And the registration form stacks below the text
-```
+#### Scenario: Hero CTAs are present
+
+- **GIVEN** the user views the hero
+- **THEN** "Our Course" and "Learn More" buttons are visible
+
+#### Scenario: Mobile responsive hero
+
+- **GIVEN** the user views on a 375px viewport
+- **THEN** the hero text is readable and centered
+- **AND** the registration form stacks below the text
 
 ### Navbar
-```gherkin
+
 Feature: Navigation
 
-  Scenario: Nav links are present
-    Given the user loads the page
-    Then the navbar displays links: Home, About, Course, Instructor, Blog, Contact
+#### Scenario: Nav links are present
 
-  Scenario: Mobile hamburger menu
-    Given the user views on a 375px viewport
-    Then a hamburger menu icon is displayed
-    And clicking it opens the mobile nav drawer
-```
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays links: Home, About, Course, Instructor, Blog, Contact
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user views on a 375px viewport
+- **THEN** a hamburger menu icon is displayed
+- **AND** clicking it opens the mobile nav drawer
 
 ### Course Categories
-```gherkin
+
 Feature: Course Categories
 
-  Scenario: Category tiles are displayed
-    Given the user views the categories section
-    Then 6 category tiles are shown: IT & Software, Music, Photography, Marketing, Health, Audio Video
+#### Scenario: Category tiles are displayed
 
-  Scenario: Category tile has course count
-    Given a category tile is displayed
-    Then it shows an icon, name, and course count
+- **GIVEN** the user views the categories section
+- **THEN** 6 category tiles are shown: IT & Software, Music, Photography, Marketing, Health, Audio Video
 
-  Scenario: See All Courses link present
-    Given the user views the categories section
-    Then a "See All Courses" link is displayed
-```
+#### Scenario: Category tile has course count
+
+- **GIVEN** a category tile is displayed
+- **THEN** it shows an icon, name, and course count
+
+#### Scenario: See All Courses link present
+
+- **GIVEN** the user views the categories section
+- **THEN** a "See All Courses" link is displayed
 
 ### Popular Courses
-```gherkin
+
 Feature: Popular Courses
 
-  Scenario: Course cards are displayed
-    Given the user views the courses section
-    Then multiple course cards are shown in a grid
+#### Scenario: Course cards are displayed
 
-  Scenario: Course card contains required fields
-    Given a course card is displayed
-    Then it shows an image, category badge, title, instructor, and price
-```
+- **GIVEN** the user views the courses section
+- **THEN** multiple course cards are shown in a grid
+
+#### Scenario: Course card contains required fields
+
+- **GIVEN** a course card is displayed
+- **THEN** it shows an image, category badge, title, instructor, and price
 
 ### Counters
-```gherkin
+
 Feature: Statistics Counters
 
-  Scenario: Animated counters are displayed
-    Given the user scrolls to the counters section
-    Then numerical counters animate from 0 to their target values
-    And counters show: Online Courses, Students Enrolled, Expert Instructors, Hours Content
+#### Scenario: Animated counters are displayed
 
-  Scenario: Section has background image with overlay
-    Given the user views the counters section
-    Then a background image with dark overlay is visible
-```
+- **GIVEN** the user scrolls to the counters section
+- **THEN** numerical counters animate from 0 to their target values
+- **AND** counters show: Online Courses, Students Enrolled, Expert Instructors, Hours Content
+
+#### Scenario: Section has background image with overlay
+
+- **GIVEN** the user views the counters section
+- **THEN** a background image with dark overlay is visible
 
 ### About
-```gherkin
+
 Feature: About Section
 
-  Scenario: About section displays with image
-    Given the user views the about section
-    Then the heading "Learn Anything You Want Today" is shown
-    And a description text and image are displayed side by side
+#### Scenario: About section displays with image
 
-  Scenario: Contact CTA present
-    Given the user views the about section
-    Then a "Get in touch with us" button is visible
-```
+- **GIVEN** the user views the about section
+- **THEN** the heading "Learn Anything You Want Today" is shown
+- **AND** a description text and image are displayed side by side
+
+#### Scenario: Contact CTA present
+
+- **GIVEN** the user views the about section
+- **THEN** a "Get in touch with us" button is visible
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials
 
-  Scenario: Testimonial carousel is displayed
-    Given the user views the testimonials section
-    Then testimonial cards with quote, name, and role are shown
+#### Scenario: Testimonial carousel is displayed
 
-  Scenario: Section has light background
-    Given the user views the testimonials section
-    Then the background is light (#f9faff)
-```
+- **GIVEN** the user views the testimonials section
+- **THEN** testimonial cards with quote, name, and role are shown
+
+#### Scenario: Section has light background
+
+- **GIVEN** the user views the testimonials section
+- **THEN** the background is light (#f9faff)
 
 ### Services
-```gherkin
+
 Feature: Services / Features
 
-  Scenario: Feature cards are displayed
-    Given the user views the services section
-    Then 4 feature cards are shown: Top Quality Content, Highly Skilled Instructor, World Class Quiz, Get Certified
+#### Scenario: Feature cards are displayed
 
-  Scenario: Each feature has an icon
-    Given a feature card is displayed
-    Then it shows an icon and title with description
-```
+- **GIVEN** the user views the services section
+- **THEN** 4 feature cards are shown: Top Quality Content, Highly Skilled Instructor, World Class Quiz, Get Certified
+
+#### Scenario: Each feature has an icon
+
+- **GIVEN** a feature card is displayed
+- **THEN** it shows an icon and title with description
 
 ### Blog
-```gherkin
+
 Feature: Blog Section
 
-  Scenario: Blog posts are displayed
-    Given the user views the blog section
-    Then blog post cards show image, date, author, title, and excerpt
+#### Scenario: Blog posts are displayed
 
-  Scenario: Blog section has light background
-    Given the user views the blog section
-    Then the background is light
-```
+- **GIVEN** the user views the blog section
+- **THEN** blog post cards show image, date, author, title, and excerpt
+
+#### Scenario: Blog section has light background
+
+- **GIVEN** the user views the blog section
+- **THEN** the background is light
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Footer has multi-column layout
-    Given the user scrolls to the footer
-    Then a dark background footer is displayed
-    And it contains columns: Help Desk, Legal, Courses, Contact
+#### Scenario: Footer has multi-column layout
 
-  Scenario: Footer links to Component Dock
-    Given the user views the footer
-    Then a link to "https://www.componentdock.com/" is present
-    And the link text references "Component Dock"
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is displayed
+- **AND** it contains columns: Help Desk, Legal, Courses, Contact
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text references "Component Dock"
 
 ## Verification checklist
 

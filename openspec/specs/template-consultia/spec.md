@@ -54,110 +54,99 @@ with newsletter, and a copyright bar with social links.
 9. **Footer** — White bg. 5 columns: "Top Products" (4 links), "Quick Links" (4 links), "Features" (4 links), "Resources" (4 links), "Newsletter" (p + email input + subscribe button with coral gradient).
 10. **Copyright bar** — Copyright text + "Made with ♥ by Colorlib" (replaced with Component Dock link + social icons: Facebook, Twitter, Instagram, Skype).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders all navigation links
-```
-Given the Consultia page loads
-Then the navbar displays: Home, About, Blog (with dropdown), Page (with dropdown), Contact
-And the Blog dropdown contains: Blog, Single Blog
-And the Page dropdown contains: Project, Project Details, Services, Elements
-```
+### Feature: Consultia template behaviour
 
-### Scenario: Hero banner displays headline and CTA
-```
-Given the Consultia page loads
-Then the hero section shows the headline "Lead from Front in Business Innovation."
-And a paragraph description appears below the headline
-And a coral gradient pill button labeled "learn more" is visible
-And a video link with play icon and "Intro Video" text is visible
-```
+#### Scenario: Navbar renders all navigation links
 
-### Scenario: Hero section has floating decorative animated elements
-```
-Given the Consultia page loads
-Then the hero section contains at least 4 decorative floating icon elements
-And the icons animate with CSS keyframe bouncing/translating motion
-```
+- **GIVEN** the Consultia page loads
+- **THEN** the navbar displays: Home, About, Blog (with dropdown), Page (with dropdown), Contact
+- **AND** the Blog dropdown contains: Blog, Single Blog
+- **AND** the Page dropdown contains: Project, Project Details, Services, Elements
 
-### Scenario: About section shows experience claim
-```
-Given the Consultia page loads
-Then the about section displays heading "We Have 24 Year Experience in consulting"
-And a subtitle and paragraph appear below the heading
-And a "read more" coral gradient pill button is visible
-And an about image is displayed alongside the text
-```
+#### Scenario: Hero banner displays headline and CTA
 
-### Scenario: Services section displays service cards on grey background
-```
-Given the Consultia page loads
-Then the services section has a grey (#f7f7f7) background
-And a heading "We Provide Best Services" is displayed with a "Load More" button
-And two service cards are shown: "Business Opportunity" and "Commercial Approach"
-And each service card has an icon, description text, and a "Learn More" link
-```
+- **GIVEN** the Consultia page loads
+- **THEN** the hero section shows the headline "Lead from Front in Business Innovation."
+- **AND** a paragraph description appears below the headline
+- **AND** a coral gradient pill button labeled "learn more" is visible
+- **AND** a video link with play icon and "Intro Video" text is visible
 
-### Scenario: Testimonials section renders quote slider with thumbnails
-```
-Given the Consultia page loads
-Then the testimonials section displays heading "Customer Are Saying"
-And thumbnail client avatars are shown in a side column
-And a quote slider shows review text with a quote icon
-And each slide displays a client name and role
-```
+#### Scenario: Hero section has floating decorative animated elements
 
-### Scenario: Portfolio section shows project cards in masonry layout
-```
-Given the Consultia page loads
-Then the portfolio section displays a headline card "Explore Our Best Practice Area"
-And 4 project cards are shown with images, titles, and descriptions
-```
+- **GIVEN** the Consultia page loads
+- **THEN** the hero section contains at least 4 decorative floating icon elements
+- **AND** the icons animate with CSS keyframe bouncing/translating motion
 
-### Scenario: Second about section mirrors first about layout
-```
-Given the Consultia page loads
-Then a second about section displays "We Providing high quality adviser service"
-And it has the same reversed-row layout with image and text
-And a "read more" coral gradient pill button is visible
-```
+#### Scenario: About section shows experience claim
 
-### Scenario: Blog section shows 4 blog post cards
-```
-Given the Consultia page loads
-Then the blog section displays heading "Update From Blog"
-And 4 blog cards are shown, each with an image, category tag, date, title, and comment/like counts
-```
+- **GIVEN** the Consultia page loads
+- **THEN** the about section displays heading "We Have 24 Year Experience in consulting"
+- **AND** a subtitle and paragraph appear below the heading
+- **AND** a "read more" coral gradient pill button is visible
+- **AND** an about image is displayed alongside the text
 
-### Scenario: Footer has 5 columns with newsletter signup
-```
-Given the Consultia page loads
-Then the footer shows 5 columns: Top Products, Quick Links, Features, Resources, Newsletter
-And the Newsletter column has an email input and a coral gradient "subscribe" button
-```
+#### Scenario: Services section displays service cards on grey background
 
-### Scenario: Copyright footer links to Component Dock
-```
-Given the Consultia page loads
-Then the copyright bar displays the current year
-And social media icon links are present (Facebook, Twitter, Instagram, Skype)
-And a link to https://www.componentdock.com/ is present (branded "Component Dock")
-```
+- **GIVEN** the Consultia page loads
+- **THEN** the services section has a grey (#f7f7f7) background
+- **AND** a heading "We Provide Best Services" is displayed with a "Load More" button
+- **AND** two service cards are shown: "Business Opportunity" and "Commercial Approach"
+- **AND** each service card has an icon, description text, and a "Learn More" link
 
-### Scenario: CTA buttons use coral gradient with pill shape
-```
-Given the Consultia page loads
-Then all primary CTA buttons use the coral gradient (#feb47b → #ff7e5f)
-And buttons have a 50px border-radius (pill shape)
-And button text is white
-```
+#### Scenario: Testimonials section renders quote slider with thumbnails
 
-### Scenario: Mobile responsive layout collapses navbar
-```
-Given the Consultia page loads on a mobile viewport
-Then the navbar shows a hamburger toggle button
-And navigation links collapse into a dropdown menu
-```
+- **GIVEN** the Consultia page loads
+- **THEN** the testimonials section displays heading "Customer Are Saying"
+- **AND** thumbnail client avatars are shown in a side column
+- **AND** a quote slider shows review text with a quote icon
+- **AND** each slide displays a client name and role
+
+#### Scenario: Portfolio section shows project cards in masonry layout
+
+- **GIVEN** the Consultia page loads
+- **THEN** the portfolio section displays a headline card "Explore Our Best Practice Area"
+- **AND** 4 project cards are shown with images, titles, and descriptions
+
+#### Scenario: Second about section mirrors first about layout
+
+- **GIVEN** the Consultia page loads
+- **THEN** a second about section displays "We Providing high quality adviser service"
+- **AND** it has the same reversed-row layout with image and text
+- **AND** a "read more" coral gradient pill button is visible
+
+#### Scenario: Blog section shows 4 blog post cards
+
+- **GIVEN** the Consultia page loads
+- **THEN** the blog section displays heading "Update From Blog"
+- **AND** 4 blog cards are shown, each with an image, category tag, date, title, and comment/like counts
+
+#### Scenario: Footer has 5 columns with newsletter signup
+
+- **GIVEN** the Consultia page loads
+- **THEN** the footer shows 5 columns: Top Products, Quick Links, Features, Resources, Newsletter
+- **AND** the Newsletter column has an email input and a coral gradient "subscribe" button
+
+#### Scenario: Copyright footer links to Component Dock
+
+- **GIVEN** the Consultia page loads
+- **THEN** the copyright bar displays the current year
+- **AND** social media icon links are present (Facebook, Twitter, Instagram, Skype)
+- **AND** a link to https://www.componentdock.com/ is present (branded "Component Dock")
+
+#### Scenario: CTA buttons use coral gradient with pill shape
+
+- **GIVEN** the Consultia page loads
+- **THEN** all primary CTA buttons use the coral gradient (#feb47b → #ff7e5f)
+- **AND** buttons have a 50px border-radius (pill shape)
+- **AND** button text is white
+
+#### Scenario: Mobile responsive layout collapses navbar
+
+- **GIVEN** the Consultia page loads on a mobile viewport
+- **THEN** the navbar shows a hamburger toggle button
+- **AND** navigation links collapse into a dropdown menu
 
 ## Verification Checklist
 

@@ -39,124 +39,119 @@ Recreation of ColorLib's **Kiddos** template — a kids' learning school website
 9. **CTA / Consult** — "Our Class time" section with background image, class schedule info.
 10. **Footer** — dark (`#3c312e`) with 3 columns: contact info, Recent Blog posts, Links. Social icons row at bottom.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays brand and navigation links
-  Given the user visits the homepage
-  Then the navbar shows the "Peewee" brand name
-  And the nav links are: Home, About, Teacher, Courses, Pricing, Blog, Contact
-  And the top bar shows address, email, and phone
+#### Scenario: Navbar displays brand and navigation links
 
-Scenario: Navbar is responsive on mobile
-  Given the user views the page on a 375px viewport
-  Then the nav collapses into a hamburger menu
-  And tapping the hamburger reveals the nav links
-```
+- **GIVEN** the user visits the homepage
+- **THEN** the navbar shows the "Peewee" brand name
+- **AND** the nav links are: Home, About, Teacher, Courses, Pricing, Blog, Contact
+- **AND** the top bar shows address, email, and phone
+
+#### Scenario: Navbar is responsive on mobile
+
+- **GIVEN** the user views the page on a 375px viewport
+- **THEN** the nav collapses into a hamburger menu
+- **AND** tapping the hamburger reveals the nav links
 
 ### Hero Slider
 
-```gherkin
-Scenario: Hero section displays headline and CTA
-  Given the user visits the homepage
-  Then the hero shows the headline "Kids Are The Best"
-  And a CTA button is visible
+#### Scenario: Hero section displays headline and CTA
 
-Scenario: Hero auto-advances slides
-  Given the user stays on the page for 5 seconds
-  Then the hero slide advances automatically
-```
+- **GIVEN** the user visits the homepage
+- **THEN** the hero shows the headline "Kids Are The Best"
+- **AND** a CTA button is visible
+
+#### Scenario: Hero auto-advances slides
+
+- **GIVEN** the user stays on the page for 5 seconds
+- **THEN** the hero slide advances automatically
 
 ### Services Row
 
-```gherkin
-Scenario: Services row shows 4 items
-  Given the user scrolls to the services section
-  Then 4 service cards are displayed
-  And each card has an icon, title, and description
+#### Scenario: Services row shows 4 items
 
-Scenario: Services row has colored backgrounds
-  Given the user views the services section
-  Then each card has a distinct color accent (blue, orange, purple, green)
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** 4 service cards are displayed
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Services row has colored backgrounds
+
+- **GIVEN** the user views the services section
+- **THEN** each card has a distinct color accent (blue, orange, purple, green)
 
 ### About
 
-```gherkin
-Scenario: About section has 2-column layout
-  Given the user scrolls to the about section
-  Then the heading reads "Welcome to Peewee Learning School"
-  And an image occupies the left column
-  And descriptive text occupies the right column
-```
+#### Scenario: About section has 2-column layout
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading reads "Welcome to Peewee Learning School"
+- **AND** an image occupies the left column
+- **AND** descriptive text occupies the right column
 
 ### What We Offer
 
-```gherkin
-Scenario: Offerings grid shows 6 items
-  Given the user scrolls to the offerings section
-  Then 6 offering cards are displayed in a grid
-  And each card has an icon, title, and short description
-```
+#### Scenario: Offerings grid shows 6 items
+
+- **GIVEN** the user scrolls to the offerings section
+- **THEN** 6 offering cards are displayed in a grid
+- **AND** each card has an icon, title, and short description
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials show teacher profiles
-  Given the user scrolls to the testimonials section
-  Then at least 4 teacher profiles are shown
-  And each profile has a photo, name, role, and quote
+#### Scenario: Testimonials show teacher profiles
 
-Scenario: Testimonials are in a carousel
-  Given the user views the testimonials section
-  Then the profiles rotate in a carousel/slider
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** at least 4 teacher profiles are shown
+- **AND** each profile has a photo, name, role, and quote
+
+#### Scenario: Testimonials are in a carousel
+
+- **GIVEN** the user views the testimonials section
+- **THEN** the profiles rotate in a carousel/slider
 
 ### Counter / Stats
 
-```gherkin
-Scenario: Counter section shows animated numbers
-  Given the user scrolls to the counter section
-  Then at least 3 stat counters are displayed
-  And the counters animate on scroll into view
-  And a parallax background image is behind the counters
-```
+#### Scenario: Counter section shows animated numbers
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** at least 3 stat counters are displayed
+- **AND** the counters animate on scroll into view
+- **AND** a parallax background image is behind the counters
 
 ### Gallery
 
-```gherkin
-Scenario: Gallery displays image grid
-  Given the user scrolls to the gallery section
-  Then a grid of images is displayed
-  And clicking an image opens a lightbox view
-```
+#### Scenario: Gallery displays image grid
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a grid of images is displayed
+- **AND** clicking an image opens a lightbox view
 
 ### CTA / Consult
 
-```gherkin
-Scenario: CTA section shows class info
-  Given the user scrolls to the CTA section
-  Then the heading reads "Our Class time"
-  And a background image is displayed
-  And class schedule or enrollment info is shown
-```
+#### Scenario: CTA section shows class info
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the heading reads "Our Class time"
+- **AND** a background image is displayed
+- **AND** class schedule or enrollment info is shown
 
 ### Footer
 
-```gherkin
-Scenario: Footer has dark background and columns
-  Given the user scrolls to the footer
-  Then the footer background is dark brown (#3c312e)
-  And 3 columns are visible: contact info, recent blog, links
-  And social media icons are shown at the bottom
-  And a "Component Dock" link is present
+#### Scenario: Footer has dark background and columns
 
-Scenario: Footer links are clickable
-  Given the user clicks a footer navigation link
-  Then the page navigates to the corresponding section
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer background is dark brown (#3c312e)
+- **AND** 3 columns are visible: contact info, recent blog, links
+- **AND** social media icons are shown at the bottom
+- **AND** a "Component Dock" link is present
+
+#### Scenario: Footer links are clickable
+
+- **GIVEN** the user clicks a footer navigation link
+- **THEN** the page navigates to the corresponding section
 
 ## Verification checklist
 

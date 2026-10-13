@@ -53,99 +53,109 @@ Extracted from the original CSS (`css/style.css`):
    - Each post entry: 80px thumbnail + title + "Posted: <date>" meta
    - 8 sample posts
 
-## Gherkin Scenarios
+## Requirements
 
 ### Sidebar
 
-```gherkin
 Feature: Sidebar
-  Scenario: Sidebar is hidden by default
-    Given the page loads
-    Then the sidebar is off-screen (translateX -100%)
 
-  Scenario: Burger toggle opens sidebar
-    Given the page loads
-    When the user clicks the burger icon
-    Then the sidebar slides in (translateX 0)
-    And the main content shifts right by 300px
-    And a semi-transparent overlay appears behind
+#### Scenario: Sidebar is hidden by default
 
-  Scenario: Burger toggle closes sidebar
-    Given the sidebar is open
-    When the user clicks the burger icon
-    Then the sidebar slides out (translateX -100%)
-    And the main content returns to full width
+- **GIVEN** the page loads
+- **THEN** the sidebar is off-screen (translateX -100%)
 
-  Scenario: Overlay click closes sidebar
-    Given the sidebar is open
-    When the user clicks the dark overlay
-    Then the sidebar closes
-```
+#### Scenario: Burger toggle opens sidebar
+
+- **GIVEN** the page loads
+- **WHEN** the user clicks the burger icon
+- **THEN** the sidebar slides in (translateX 0)
+- **AND** the main content shifts right by 300px
+- **AND** a semi-transparent overlay appears behind
+
+#### Scenario: Burger toggle closes sidebar
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks the burger icon
+- **THEN** the sidebar slides out (translateX -100%)
+- **AND** the main content returns to full width
+
+#### Scenario: Overlay click closes sidebar
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks the dark overlay
+- **THEN** the sidebar closes
 
 ### Profile Section
 
-```gherkin
 Feature: Profile
-  Scenario: Profile displays avatar, name, and role
-    Given the sidebar is visible
-    Then a round avatar image is displayed (80px)
-    And the name "Craig David" is shown
-    And the role "Web Designer" is shown below the name
-```
+
+#### Scenario: Profile displays avatar, name, and role
+
+- **GIVEN** the sidebar is visible
+- **THEN** a round avatar image is displayed (80px)
+- **AND** the name "Craig David" is shown
+- **AND** the role "Web Designer" is shown below the name
 
 ### Navigation Menu
 
-```gherkin
 Feature: Navigation Menu
-  Scenario: Feed accordion expands
-    Given the sidebar is open
-    When the user clicks "Feed"
-    Then sub-items "News", "Sport", "Health" are revealed
 
-  Scenario: Feed accordion collapses
-    Given the Feed accordion is expanded
-    When the user clicks "Feed"
-    Then the sub-items are hidden
+#### Scenario: Feed accordion expands
 
-  Scenario: Explore accordion expands
-    Given the sidebar is open
-    When the user clicks "Explore"
-    Then sub-items "Interior", "Food", "Travel" are revealed
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks "Feed"
+- **THEN** sub-items "News", "Sport", "Health" are revealed
 
-  Scenario: Explore accordion collapses
-    Given the Explore accordion is expanded
-    When the user clicks "Explore"
-    Then the sub-items are hidden
+#### Scenario: Feed accordion collapses
 
-  Scenario: Active nav item has orange left border
-    Given the sidebar is open
-    When a nav item is active
-    Then it shows a 4px left border in #ff7315
+- **GIVEN** the Feed accordion is expanded
+- **WHEN** the user clicks "Feed"
+- **THEN** the sub-items are hidden
 
-  Scenario: Nav items show hover state
-    Given the sidebar is open
-    When the user hovers over a nav item
-    Then the background becomes #fcfcfc
-    And the text color becomes #000
-```
+#### Scenario: Explore accordion expands
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user clicks "Explore"
+- **THEN** sub-items "Interior", "Food", "Travel" are revealed
+
+#### Scenario: Explore accordion collapses
+
+- **GIVEN** the Explore accordion is expanded
+- **WHEN** the user clicks "Explore"
+- **THEN** the sub-items are hidden
+
+#### Scenario: Active nav item has orange left border
+
+- **GIVEN** the sidebar is open
+- **WHEN** a nav item is active
+- **THEN** it shows a 4px left border in #ff7315
+
+#### Scenario: Nav items show hover state
+
+- **GIVEN** the sidebar is open
+- **WHEN** the user hovers over a nav item
+- **THEN** the background becomes #fcfcfc
+- **AND** the text color becomes #000
 
 ### Main Content
 
-```gherkin
 Feature: Main Content
-  Scenario: Post grid displays entries
-    Given the page loads
-    Then 8 post entries are visible in a 2-column grid
-    And each entry has a thumbnail (80px), title, and date
 
-  Scenario: Responsive layout
-    Given the viewport is below 768px
-    Then the post grid switches to 1 column
+#### Scenario: Post grid displays entries
 
-  Scenario: Sidebar open shifts main content
-    Given the sidebar is open
-    Then the main content area is shifted 300px to the right
-```
+- **GIVEN** the page loads
+- **THEN** 8 post entries are visible in a 2-column grid
+- **AND** each entry has a thumbnail (80px), title, and date
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the viewport is below 768px
+- **THEN** the post grid switches to 1 column
+
+#### Scenario: Sidebar open shifts main content
+
+- **GIVEN** the sidebar is open
+- **THEN** the main content area is shifted 300px to the right
 
 ## Verification Checklist
 

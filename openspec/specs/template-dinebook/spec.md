@@ -43,114 +43,130 @@ Extracted from the original `css/style.css` at the preview URL.
 | Step indicator        | Bottom-right, "1 / 3" format     | Current step number (40px) + "/ 3" (15px)   |
 | Responsive breakpoint | 767px                            | Stacks vertically below 767px               |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Dinebook — Restaurant Table Reservation Wizard
 
-Scenario: Full-page split layout renders on load
-Given the user opens the Dinebook page
-Then a full-viewport split layout is displayed
-And the left side shows a food photography image
-And the right side shows a dark form panel
+#### Scenario: Full-page split layout renders on load
 
-Scenario: Step 1 — Book a table
-Given the user is on step 1
-When the form header is visible
-Then the heading reads "Book a table"
-And the tagline reads "~ Check out our place ~" in cursive font
-And a "People" dropdown shows options 1 through 5
-And a "Date" picker field is displayed
-And two "Time" dropdowns are displayed (AM and PM)
+- **GIVEN** the user opens the Dinebook page
+- **THEN** a full-viewport split layout is displayed
+- **AND** the left side shows a food photography image
+- **AND** the right side shows a dark form panel
 
-Scenario: Select number of people
-Given the user is on step 1
-When the user opens the People dropdown
-Then options 1 through 5 are listed
-When the user selects a value
-Then the dropdown closes and shows the selected number
+#### Scenario: Step 1 — Book a table
 
-Scenario: Select date
-Given the user is on step 1
-When the user clicks the Date field
-Then a date picker opens
-When the user picks a date
-Then the date is displayed in "dd M yyyy" format (e.g. "14 MAR 2021")
+- **GIVEN** the user is on step 1
+- **WHEN** the form header is visible
+- **THEN** the heading reads "Book a table"
+- **AND** the tagline reads "~ Check out our place ~" in cursive font
+- **AND** a "People" dropdown shows options 1 through 5
+- **AND** a "Date" picker field is displayed
+- **AND** two "Time" dropdowns are displayed (AM and PM)
 
-Scenario: Select time range
-Given the user is on step 1
-When the user selects an AM time
-And the user selects a PM time
-Then both time values are shown in their respective dropdowns
+#### Scenario: Select number of people
 
-Scenario: Navigate to step 2
-Given the user has filled in step 1 fields
-When the user clicks the "Next" button
-Then step 2 is displayed
-And the step indicator updates to "2 / 3"
+- **GIVEN** the user is on step 1
+- **WHEN** the user opens the People dropdown
+- **THEN** options 1 through 5 are listed
+- **WHEN** the user selects a value
+- **THEN** the dropdown closes and shows the selected number
 
-Scenario: Step 2 — Contact details
-Given the user is on step 2
-When the form header is visible
-Then the heading reads "Contact details"
-And the tagline reads "~ Check out our place ~"
-And a "Name" text input is displayed
-And a "Phone" text input is displayed
-And an "Email" text input is displayed
+#### Scenario: Select date
 
-Scenario: Fill contact details
-Given the user is on step 2
-When the user types a name into the Name field
-And the user types a phone number into the Phone field
-And the user types an email into the Email field
-Then all three fields show their entered values
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks the Date field
+- **THEN** a date picker opens
+- **WHEN** the user picks a date
+- **THEN** the date is displayed in "dd M yyyy" format (e.g. "14 MAR 2021")
 
-Scenario: Navigate back to step 1
-Given the user is on step 2
-When the user clicks the "Previous" button
-Then step 1 is displayed with previously entered values preserved
+#### Scenario: Select time range
 
-Scenario: Navigate to step 3
-Given the user is on step 2 with all fields filled
-When the user clicks the "Next" button
-Then step 3 is displayed
-And the step indicator updates to "3 / 3"
+- **GIVEN** the user is on step 1
+- **WHEN** the user selects an AM time
+- **AND** the user selects a PM time
+- **THEN** both time values are shown in their respective dropdowns
 
-Scenario: Step 3 — Confirmation
-Given the user is on step 3
-Then a check icon in a gold circle is displayed
-And the heading reads "Your table is ready"
-And the tagline reads "~ Happy friends with a say ~" in cursive font
-And no form fields are displayed
+#### Scenario: Navigate to step 2
 
-Scenario: Step indicator updates across steps
-Given the user navigates through all three steps
-Then the step indicator shows "1 / 3" on step 1
-And "2 / 3" on step 2
-And "3 / 3" on step 3
+- **GIVEN** the user has filled in step 1 fields
+- **WHEN** the user clicks the "Next" button
+- **THEN** step 2 is displayed
+- **AND** the step indicator updates to "2 / 3"
 
-Scenario: Responsive layout stacks vertically
-Given the viewport width is below 767px
-When the page loads
-Then the image section stacks above the form panel
-And the form panel takes full width
+#### Scenario: Step 2 — Contact details
 
-Scenario: Button styling matches design tokens
-Given any step with navigation buttons
-Then buttons have outlined borders (1px solid)
-And buttons show uppercase text
-And buttons use Raleway SemiBold font
-When the user hovers a button
-Then the button background changes to gold (#cdaa7c)
-And the border becomes transparent
+- **GIVEN** the user is on step 2
+- **WHEN** the form header is visible
+- **THEN** the heading reads "Contact details"
+- **AND** the tagline reads "~ Check out our place ~"
+- **AND** a "Name" text input is displayed
+- **AND** a "Phone" text input is displayed
+- **AND** an "Email" text input is displayed
 
-Scenario: Form field focus styling
-Given the user focuses an input field
-Then the input underline changes to a light beige color (#e9e0cf)
+#### Scenario: Fill contact details
 
-Scenario: Component Dock footer link
-Given the user scrolls to the bottom of the page
-Then a footer link to "https://www.componentdock.com/" is visible
-And the link text reads "Component Dock"
+- **GIVEN** the user is on step 2
+- **WHEN** the user types a name into the Name field
+- **AND** the user types a phone number into the Phone field
+- **AND** the user types an email into the Email field
+- **THEN** all three fields show their entered values
+
+#### Scenario: Navigate back to step 1
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks the "Previous" button
+- **THEN** step 1 is displayed with previously entered values preserved
+
+#### Scenario: Navigate to step 3
+
+- **GIVEN** the user is on step 2 with all fields filled
+- **WHEN** the user clicks the "Next" button
+- **THEN** step 3 is displayed
+- **AND** the step indicator updates to "3 / 3"
+
+#### Scenario: Step 3 — Confirmation
+
+- **GIVEN** the user is on step 3
+- **THEN** a check icon in a gold circle is displayed
+- **AND** the heading reads "Your table is ready"
+- **AND** the tagline reads "~ Happy friends with a say ~" in cursive font
+- **AND** no form fields are displayed
+
+#### Scenario: Step indicator updates across steps
+
+- **GIVEN** the user navigates through all three steps
+- **THEN** the step indicator shows "1 / 3" on step 1
+- **AND** "2 / 3" on step 2
+- **AND** "3 / 3" on step 3
+
+#### Scenario: Responsive layout stacks vertically
+
+- **GIVEN** the viewport width is below 767px
+- **WHEN** the page loads
+- **THEN** the image section stacks above the form panel
+- **AND** the form panel takes full width
+
+#### Scenario: Button styling matches design tokens
+
+- **GIVEN** any step with navigation buttons
+- **THEN** buttons have outlined borders (1px solid)
+- **AND** buttons show uppercase text
+- **AND** buttons use Raleway SemiBold font
+- **WHEN** the user hovers a button
+- **THEN** the button background changes to gold (#cdaa7c)
+- **AND** the border becomes transparent
+
+#### Scenario: Form field focus styling
+
+- **GIVEN** the user focuses an input field
+- **THEN** the input underline changes to a light beige color (#e9e0cf)
+
+#### Scenario: Component Dock footer link
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer link to "https://www.componentdock.com/" is visible
+- **AND** the link text reads "Component Dock"
 
 ## Verification Checklist
 

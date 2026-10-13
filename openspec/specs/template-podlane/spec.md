@@ -47,70 +47,74 @@ Recreation of ColorLib **Mypodcast** template as a React 19 + Vite + Tailwind 4 
 
 6. **Footer** — Dark background (`#1f2128`). Centered logo at top. Three columns: Tags (list of 12 tag links: music, art, technology, travel & food, viral, social media, interview, development, success, live, did you know?, health), Latest Episodes (3 episode items with play SVG icon + title + date/category info), Instagram gallery (5 small square images). Bottom: social icons row (Facebook, Instagram, SoundCloud, Vimeo, YouTube) centered. Copyright line.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Podlane Podcast Template
 
-```gherkin
 Feature: Podlane — Podcast Website Template
-  As a user visiting the Podlane website
-  I want to see a professional podcast website
-  So that I can browse episodes, discover shows, and follow the podcast
+As a user visiting the Podlane website
+I want to see a professional podcast website
+So that I can browse episodes, discover shows, and follow the podcast
 
-  Scenario: Header displays navigation and submit CTA
-    Given I am on the Podlane homepage
-    Then I see a fixed transparent header
-    And I see the logo text "podlane" with a play icon
-    And I see navigation links: Home, About, Episodes, Blog, Contact
-    And I see a "Submit a Podcast" button
-    And I see social icons (Facebook, Instagram, SoundCloud, Vimeo, YouTube)
-    And on scroll the header becomes semi-transparent dark
+#### Scenario: Header displays navigation and submit CTA
 
-  Scenario: Hero section shows latest episode with player
-    Given I am on the Podlane homepage
-    Then I see a full-viewport background image
-    And I see tag pills (lifestyle, interview, last episode)
-    And I see a large heading "Season 4 Episode 48 available."
-    And I see subtitle text describing the episode
-    And I see track info (date, category, duration, comments)
-    And I see an embedded audio player (SoundCloud)
-    And I see a "More Info" border button
+- **GIVEN** I am on the Podlane homepage
+- **THEN** I see a fixed transparent header
+- **AND** I see the logo text "podlane" with a play icon
+- **AND** I see navigation links: Home, About, Episodes, Blog, Contact
+- **AND** I see a "Submit a Podcast" button
+- **AND** I see social icons (Facebook, Instagram, SoundCloud, Vimeo, YouTube)
+- **AND** on scroll the header becomes semi-transparent dark
 
-  Scenario: Shows section displays episode cards in a grid
-    Given I scroll to the shows section
-    Then I see a 3-column grid of episode cards
-    And each card has an image with play icon overlay
-    And each card has a category tag
-    And each card shows the episode date and title
-    And each card shows favorite count and comment count
-    And I see a "Browse Shows" fill button
+#### Scenario: Hero section shows latest episode with player
 
-  Scenario: Bi-weekly section shows podcast schedule
-    Given I scroll to the bi-weekly section
-    Then I see a parallax background image
-    And I see heading "Bi-weekly episodes"
-    And I see a descriptive paragraph
-    And I see three platform buttons: Amazon, Itunes, Spotify
-    And I see a show image with logo watermark
+- **GIVEN** I am on the Podlane homepage
+- **THEN** I see a full-viewport background image
+- **AND** I see tag pills (lifestyle, interview, last episode)
+- **AND** I see a large heading "Season 4 Episode 48 available."
+- **AND** I see subtitle text describing the episode
+- **AND** I see track info (date, category, duration, comments)
+- **AND** I see an embedded audio player (SoundCloud)
+- **AND** I see a "More Info" border button
 
-  Scenario: Category section shows shows by category
-    Given I scroll to the category section
-    Then I see heading "By Category"
-    And I see a 4-column grid of episode cards
-    And each card has an image with play icon and title overlay
-    And each card has a category tag
-    And I see a "Browse Shows" fill button
+#### Scenario: Shows section displays episode cards in a grid
 
-  Scenario: Footer provides site navigation and social links
-    Given I scroll to the footer
-    Then I see a dark background footer
-    And I see the logo centered at the top
-    And I see a Tags column with 12 tag links
-    And I see a Latest Episodes column with 3 episodes
-    And I see an Instagram gallery with 5 images
-    And I see social icons (Facebook, Instagram, SoundCloud, Vimeo, YouTube)
-    And I see a copyright line with Component Dock link
-```
+- **GIVEN** I scroll to the shows section
+- **THEN** I see a 3-column grid of episode cards
+- **AND** each card has an image with play icon overlay
+- **AND** each card has a category tag
+- **AND** each card shows the episode date and title
+- **AND** each card shows favorite count and comment count
+- **AND** I see a "Browse Shows" fill button
+
+#### Scenario: Bi-weekly section shows podcast schedule
+
+- **GIVEN** I scroll to the bi-weekly section
+- **THEN** I see a parallax background image
+- **AND** I see heading "Bi-weekly episodes"
+- **AND** I see a descriptive paragraph
+- **AND** I see three platform buttons: Amazon, Itunes, Spotify
+- **AND** I see a show image with logo watermark
+
+#### Scenario: Category section shows shows by category
+
+- **GIVEN** I scroll to the category section
+- **THEN** I see heading "By Category"
+- **AND** I see a 4-column grid of episode cards
+- **AND** each card has an image with play icon and title overlay
+- **AND** each card has a category tag
+- **AND** I see a "Browse Shows" fill button
+
+#### Scenario: Footer provides site navigation and social links
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a dark background footer
+- **AND** I see the logo centered at the top
+- **AND** I see a Tags column with 12 tag links
+- **AND** I see a Latest Episodes column with 3 episodes
+- **AND** I see an Instagram gallery with 5 images
+- **AND** I see social icons (Facebook, Instagram, SoundCloud, Vimeo, YouTube)
+- **AND** I see a copyright line with Component Dock link
 
 ## Verification checklist
 

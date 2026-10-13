@@ -51,112 +51,100 @@ centered and contains:
 4. The SEARCH button is full-width of its column, blue (#1a73e8),
    white text, rounded corners, uppercase.
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Full-viewport background
-```
-Given the user opens Roamgate
-Then a full-viewport background image is visible
-And the background image covers the entire viewport
-```
+### Feature: Roamgate template behaviour
 
-### Scenario: Search card is centered
-```
-Given the user opens Roamgate
-Then a dark semi-transparent search card is centered on screen
-And the card has rounded corners
-```
+#### Scenario: Full-viewport background
 
-### Scenario: Tab bar renders three tabs
-```
-Given the user opens Roamgate
-Then three tabs are visible: "HOTELS", "CAR", "FLIGHT"
-And "HOTELS" tab is active by default
-```
+- **GIVEN** the user opens Roamgate
+- **THEN** a full-viewport background image is visible
+- **AND** the background image covers the entire viewport
 
-### Scenario: Switching tabs changes the form
-```
-Given the Hotels tab is active
-When the user clicks the "CAR" tab
-Then the Hotels form is hidden
-And a Car rental form is shown with fields: Pickup Location, Pick-Up Date/Time, Drop-Off Date/Time, Vehicle Type
-```
+#### Scenario: Search card is centered
 
-```
-Given the Hotels tab is active
-When the user clicks the "FLIGHT" tab
-Then the Hotels form is hidden
-And a Flight search form is shown with fields: From, To, Departure, Return, Passengers
-```
+- **GIVEN** the user opens Roamgate
+- **THEN** a dark semi-transparent search card is centered on screen
+- **AND** the card has rounded corners
 
-### Scenario: Hotels form fields
-```
-Given the Hotels tab is active
-Then a "Where" text input is visible with placeholder "City, region or specific hotel"
-And a "Check-In" date input is visible with placeholder "mm/dd/yyyy"
-And a "Check-Out" date input is visible with placeholder "mm/dd/yyyy"
-And a "Travellers" dropdown is visible with default "1 Adult, 0 Children, 1 Room"
-And a "SEARCH" button is visible
-```
+#### Scenario: Tab bar renders three tabs
 
-### Scenario: Where field has search icon
-```
-Given the Hotels tab is active
-Then the Where field displays a magnifying glass icon on the right side
-```
+- **GIVEN** the user opens Roamgate
+- **THEN** three tabs are visible: "HOTELS", "CAR", "FLIGHT"
+- **AND** "HOTELS" tab is active by default
 
-### Scenario: Car form fields
-```
-Given the Car tab is active
-Then a "Pickup Location" text input is visible
-And a "Pick-Up Date/Time" input is visible
-And a "Drop-Off Date/Time" input is visible
-And a "Vehicle Type" dropdown is visible
-And a "SEARCH" button is visible
-```
+#### Scenario: Switching tabs changes the form
 
-### Scenario: Flight form fields
-```
-Given the Flight tab is active
-Then a "From" text input is visible
-And a "To" text input is visible
-And a "Departure" date input is visible
-And a "Return" date input is visible
-And a "Passengers" dropdown is visible
-And a "SEARCH" button is visible
-```
+- **GIVEN** the Hotels tab is active
+- **WHEN** the user clicks the "CAR" tab
+- **THEN** the Hotels form is hidden
+- **AND** a Car rental form is shown with fields: Pickup Location, Pick-Up Date/Time, Drop-Off Date/Time, Vehicle Type
 
-### Scenario: SEARCH button styling
-```
-Given any tab is active
-Then the SEARCH button has a blue background (#1a73e8)
-And the SEARCH button text is white and uppercase
-And the SEARCH button has rounded corners
-```
+- **GIVEN** the Hotels tab is active
+- **WHEN** the user clicks the "FLIGHT" tab
+- **THEN** the Hotels form is hidden
+- **AND** a Flight search form is shown with fields: From, To, Departure, Return, Passengers
 
-### Scenario: Card transparency
-```
-Given the user opens Roamgate
-Then the search card has a semi-transparent dark background
-And the background image is partially visible through the card
-```
+#### Scenario: Hotels form fields
 
-### Scenario: Field styling
-```
-Given any tab is active
-Then all input fields have white backgrounds
-And all input fields have light gray borders
-And all input fields have rounded corners
-And all input fields have placeholder text in light gray
-```
+- **GIVEN** the Hotels tab is active
+- **THEN** a "Where" text input is visible with placeholder "City, region or specific hotel"
+- **AND** a "Check-In" date input is visible with placeholder "mm/dd/yyyy"
+- **AND** a "Check-Out" date input is visible with placeholder "mm/dd/yyyy"
+- **AND** a "Travellers" dropdown is visible with default "1 Adult, 0 Children, 1 Room"
+- **AND** a "SEARCH" button is visible
 
-### Scenario: Responsive layout
-```
-Given the user opens Roamgate on a mobile device
-Then the search card fills most of the viewport width
-And the form fields stack vertically
-And the date fields stack vertically instead of side-by-side
-```
+#### Scenario: Where field has search icon
+
+- **GIVEN** the Hotels tab is active
+- **THEN** the Where field displays a magnifying glass icon on the right side
+
+#### Scenario: Car form fields
+
+- **GIVEN** the Car tab is active
+- **THEN** a "Pickup Location" text input is visible
+- **AND** a "Pick-Up Date/Time" input is visible
+- **AND** a "Drop-Off Date/Time" input is visible
+- **AND** a "Vehicle Type" dropdown is visible
+- **AND** a "SEARCH" button is visible
+
+#### Scenario: Flight form fields
+
+- **GIVEN** the Flight tab is active
+- **THEN** a "From" text input is visible
+- **AND** a "To" text input is visible
+- **AND** a "Departure" date input is visible
+- **AND** a "Return" date input is visible
+- **AND** a "Passengers" dropdown is visible
+- **AND** a "SEARCH" button is visible
+
+#### Scenario: SEARCH button styling
+
+- **GIVEN** any tab is active
+- **THEN** the SEARCH button has a blue background (#1a73e8)
+- **AND** the SEARCH button text is white and uppercase
+- **AND** the SEARCH button has rounded corners
+
+#### Scenario: Card transparency
+
+- **GIVEN** the user opens Roamgate
+- **THEN** the search card has a semi-transparent dark background
+- **AND** the background image is partially visible through the card
+
+#### Scenario: Field styling
+
+- **GIVEN** any tab is active
+- **THEN** all input fields have white backgrounds
+- **AND** all input fields have light gray borders
+- **AND** all input fields have rounded corners
+- **AND** all input fields have placeholder text in light gray
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user opens Roamgate on a mobile device
+- **THEN** the search card fills most of the viewport width
+- **AND** the form fields stack vertically
+- **AND** the date fields stack vertically instead of side-by-side
 
 ## Verification Checklist
 

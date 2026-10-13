@@ -49,112 +49,135 @@ Extracted from the live preview's style.css and HTML:
 - Left-aligned content: subtitle (h4), headline (h1), description paragraph, "read more" link
 - Green accent on subtitle text
 
-## Gherkin Requirements
+## Requirements
 
 ### Section 1: Navbar
+
 Feature: Navigation bar
 
-  Scenario: Desktop navbar displays site logo and nav links
-    Given the user is on desktop viewport
-    Then a top info bar shows email and phone
-    And a sticky navbar shows the "SkillForge" logo on the left
-    And nav links "Home, About, Courses, Events, Blog, Pages, Contact" are visible on the right
-    And a cart icon is present
+#### Scenario: Desktop navbar displays site logo and nav links
 
-  Scenario: Mobile hamburger menu toggles nav
-    Given the user is on mobile viewport
-    When the user taps the hamburger icon
-    Then the nav links menu expands/collapses
+- **GIVEN** the user is on desktop viewport
+- **THEN** a top info bar shows email and phone
+- **AND** a sticky navbar shows the "SkillForge" logo on the left
+- **AND** nav links "Home, About, Courses, Events, Blog, Pages, Contact" are visible on the right
+- **AND** a cart icon is present
+
+#### Scenario: Mobile hamburger menu toggles nav
+
+- **GIVEN** the user is on mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** the nav links menu expands/collapses
 
 ### Section 2: Hero
+
 Feature: Hero banner
 
-  Scenario: Hero displays headline and CTA
-    Given the hero section is visible
-    Then the subtitle reads "Get started with online courses"
-    And the headline reads "best online Learning system"
-    And a description paragraph is shown
-    And a "read more" link is visible
-    And the background is a dark overlay on an image
+#### Scenario: Hero displays headline and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** the subtitle reads "Get started with online courses"
+- **AND** the headline reads "best online Learning system"
+- **AND** a description paragraph is shown
+- **AND** a "read more" link is visible
+- **AND** the background is a dark overlay on an image
 
 ### Section 3: Icon Boxes
+
 Feature: Feature icon boxes
 
-  Scenario: Four icon boxes display in a row
-    Given the icon boxes section is visible
-    Then 4 icon boxes are displayed side by side
+#### Scenario: Four icon boxes display in a row
+
+- **GIVEN** the icon boxes section is visible
+- **THEN** 4 icon boxes are displayed side by side
     Each box has an icon (Themify), a title, a description, and a "read more" arrow link
 
 ### Section 4: Featured Courses Horizontal
+
 Feature: Horizontal featured courses
 
-  Scenario: Two course cards display side by side
-    Given the horizontal featured courses section is visible
-    Then a "Featured Courses" heading is shown with a "view all" button
-    And 2 course cards are displayed in a 2-column grid
+#### Scenario: Two course cards display side by side
+
+- **GIVEN** the horizontal featured courses section is visible
+- **THEN** a "Featured Courses" heading is shown with a "view all" button
+- **AND** 2 course cards are displayed in a 2-column grid
     Each card has a thumbnail image, star rating (4/5), title, author, date, and price
 
 ### Section 5: About Section
+
 Feature: About with stats and video
 
-  Scenario: About section shows stats and video
-    Given the about section is visible
-    Then "About SkillForge" heading is shown
-    And 4 stat counters are displayed: 50M+ Students, 30K+ Courses, 340M+ Instructors, 20+ Countries
-    And a video thumbnail with a play button overlay is shown on the right
+#### Scenario: About section shows stats and video
+
+- **GIVEN** the about section is visible
+- **THEN** "About SkillForge" heading is shown
+- **AND** 4 stat counters are displayed: 50M+ Students, 30K+ Courses, 340M+ Instructors, 20+ Countries
+- **AND** a video thumbnail with a play button overlay is shown on the right
 
 ### Section 6: Testimonials
+
 Feature: Testimonial slider
 
-  Scenario: Testimonials carousel shows user quotes
-    Given the testimonial section is visible
-    Then a Swiper carousel displays 3 testimonial slides
+#### Scenario: Testimonials carousel shows user quotes
+
+- **GIVEN** the testimonial section is visible
+- **THEN** a Swiper carousel displays 3 testimonial slides
     Each slide shows a user avatar on the left, quote text, and user name with university affiliation
-    And pagination dots are visible below
+- **AND** pagination dots are visible below
 
 ### Section 7: Featured Courses Vertical
+
 Feature: Vertical featured courses grid
 
-  Scenario: Course grid with filter tabs
-    Given the vertical featured courses section is visible
-    Then a "Featured Courses" heading is shown
-    And filter tabs "All, Business, Design, Web Development, Photography" are displayed
-    And 6 course cards are shown in a 3-column grid (2 rows)
+#### Scenario: Course grid with filter tabs
+
+- **GIVEN** the vertical featured courses section is visible
+- **THEN** a "Featured Courses" heading is shown
+- **AND** filter tabs "All, Business, Design, Web Development, Photography" are displayed
+- **AND** 6 course cards are shown in a 3-column grid (2 rows)
     Each card has thumbnail, title, author, date, price, and star rating
-    And a "view all courses" button is centered below
+- **AND** a "view all courses" button is centered below
 
 ### Section 8: Latest News & Events
+
 Feature: News and events
 
-  Scenario: Events section with featured event and event list
-    Given the latest news events section is visible
-    Then a "Latest News & Events" heading is shown
-    And a featured event with large image, date badge, title, location, and duration is on the left
-    And 2-3 smaller event items with thumbnails, dates, titles are on the right
+#### Scenario: Events section with featured event and event list
+
+- **GIVEN** the latest news events section is visible
+- **THEN** a "Latest News & Events" heading is shown
+- **AND** a featured event with large image, date badge, title, location, and duration is on the left
+- **AND** 2-3 smaller event items with thumbnails, dates, titles are on the right
 
 ### Section 9: Gallery
+
 Feature: Photo gallery
 
-  Scenario: Masonry-style gallery grid
-    Given the gallery section is visible
-    Then a grid of 14 images is displayed in a masonry layout
-    And grid items use 1x1, 2x2, 2x1, 3x1 size classes
+#### Scenario: Masonry-style gallery grid
+
+- **GIVEN** the gallery section is visible
+- **THEN** a grid of 14 images is displayed in a masonry layout
+- **AND** grid items use 1x1, 2x2, 2x1, 3x1 size classes
 
 ### Section 10: Client Logos
+
 Feature: Client/partner logos
 
-  Scenario: Logo row displays 5 partner logos
-    Given the client logos section is visible
-    Then 5 grayscale partner logos are shown in a horizontal row
+#### Scenario: Logo row displays 5 partner logos
+
+- **GIVEN** the client logos section is visible
+- **THEN** 5 grayscale partner logos are shown in a horizontal row
 
 ### Section 11: Footer
+
 Feature: Site footer
 
-  Scenario: Footer has 4 columns and bottom bar
-    Given the footer is visible
-    Then the footer widgets area has 4 columns: About with logo, Contact Us, Quick Links (2-col), Follow Us (social icons)
-    And a footer bar shows app store badges and bottom nav links (DPA, Terms, Privacy)
-    And the footer links to https://www.componentdock.com/
+#### Scenario: Footer has 4 columns and bottom bar
+
+- **GIVEN** the footer is visible
+- **THEN** the footer widgets area has 4 columns: About with logo, Contact Us, Quick Links (2-col), Follow Us (social icons)
+- **AND** a footer bar shows app store badges and bottom nav links (DPA, Terms, Privacy)
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification Checklist
 

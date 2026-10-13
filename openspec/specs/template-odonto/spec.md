@@ -28,47 +28,53 @@ Recreation of ColorLib **Toothcare** (`https://colorlib.com/wp/template/toothcar
 12. **CTA Banner**: "Do not wait make an appointment today!" banner with action button.
 13. **Footer**: Comprehensive footer with about snippet, services links, quick links, recent posts, newsletter signup, and mandatory Component Dock link (`https://www.componentdock.com/`).
 
-## Gherkin requirements & scenarios
+## Requirements
 
 ### Feature: Navbar & Navigation
 
-Scenario: User views navigation bar
-Given the Odonto application is loaded
-When the user inspects the header
-Then they see the brand logo "Odonto" and navigation links
-And a prominent "Make an Appointment" button
+#### Scenario: User views navigation bar
+
+- **GIVEN** the Odonto application is loaded
+- **WHEN** the user inspects the header
+- **THEN** they see the brand logo "Odonto" and navigation links
+- **AND** a prominent "Make an Appointment" button
 
 ### Feature: Hero Banner
 
-Scenario: User views hero section
-Given the hero banner is displayed
-When the user reads the main headline
-Then they see professional dental care messaging and call-to-action buttons
+#### Scenario: User views hero section
+
+- **GIVEN** the hero banner is displayed
+- **WHEN** the user reads the main headline
+- **THEN** they see professional dental care messaging and call-to-action buttons
 
 ### Feature: Services Grid
 
-Scenario: User explores dental services
-Given the services section is visible
-When the user views the service cards
-Then they see icons, titles, and descriptions for each dental procedure
+#### Scenario: User explores dental services
+
+- **GIVEN** the services section is visible
+- **WHEN** the user views the service cards
+- **THEN** they see icons, titles, and descriptions for each dental procedure
 
 ### Feature: Appointment Booking
 
-Scenario: User submits appointment form
-Given the appointment section is displayed
-When the user fills out name, email, service, and date
-Then submitting shows a success confirmation message
+#### Scenario: User submits appointment form
+
+- **GIVEN** the appointment section is displayed
+- **WHEN** the user fills out name, email, service, and date
+- **THEN** submitting shows a success confirmation message
 
 ### Feature: Team Section
 
-Scenario: User views doctors/dentists
-Given the team section is loaded
-When the user browses dentist profiles
-Then they see names, titles, and social links for each qualified practitioner
+#### Scenario: User views doctors/dentists
+
+- **GIVEN** the team section is loaded
+- **WHEN** the user browses dentist profiles
+- **THEN** they see names, titles, and social links for each qualified practitioner
 
 ### Feature: Footer Compliance
 
-Scenario: Footer contains Component Dock link
-Given the page is scrolled to the bottom
-When the user inspects the footer
-Then they see a link to `https://www.componentdock.com/` branded as Component Dock
+#### Scenario: Footer contains Component Dock link
+
+- **GIVEN** the page is scrolled to the bottom
+- **WHEN** the user inspects the footer
+- **THEN** they see a link to `https://www.componentdock.com/` branded as Component Dock

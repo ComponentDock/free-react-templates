@@ -106,86 +106,97 @@ Extracted from the live preview CSS (`styles/main_styles.css`) at https://previe
 - 3 footer columns: "Useful Links", "Features", "About us" (each with 4 links)
 - Copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: WodBox template behaviour
+
 Feature: WodBox — Fitness / CrossFit Gym Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "WodBox"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "WodBox"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Header renders correctly
-    Given the user is on any viewport
-    Then the logo "WodBox" is visible in the top-left
-    And navigation links "Home", "About us", "Classes", "News", "Contact" are visible
-    And a "Get in touch" button is visible in the header
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Header renders correctly
 
-  Scenario: Header shrinks on scroll
-    Given the header is at its default height
-    When the user scrolls down the page
-    Then the header height reduces (sticky compact mode)
+- **GIVEN** the user is on any viewport
+- **THEN** the logo "WodBox" is visible in the top-left
+- **AND** navigation links "Home", "About us", "Classes", "News", "Contact" are visible
+- **AND** a "Get in touch" button is visible in the header
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: Hero slider displays with background image
-    Given the hero section is in the viewport
-    Then a full-width background image is visible
-    And the headline "Don't stop when you're tired. Stop when you're done" is displayed
-    And a "Get Started" button with brand orange background is visible
-    And numbered dot indicators (01, 02, 03) are present
+#### Scenario: Header shrinks on scroll
 
-  Scenario: Features section shows 4 items
-    Given the features section is scrolled into view
-    Then 4 feature cards are visible in a row
-    And each card has an icon, heading, and description
+- **GIVEN** the header is at its default height
+- **WHEN** the user scrolls down the page
+- **THEN** the header height reduces (sticky compact mode)
 
-  Scenario: Subscription section renders
-    Given the subscription section is scrolled into view
-    Then the heading "Get your subscription" is visible
-    And a description paragraph is shown
-    And a checklist with 4 checkmark items is displayed
-    And a "Get Started" CTA button is visible
-    And a background image is visible on the right half
+#### Scenario: Hero slider displays with background image
 
-  Scenario: Portfolio slider shows images
-    Given the portfolio section is scrolled into view
-    Then a carousel of portfolio images is displayed
-    And hovering an image shows a "View More" overlay
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width background image is visible
+- **AND** the headline "Don't stop when you're tired. Stop when you're done" is displayed
+- **AND** a "Get Started" button with brand orange background is visible
+- **AND** numbered dot indicators (01, 02, 03) are present
 
-  Scenario: Testimonials carousel works
-    Given the testimonials section is scrolled into view
-    Then the heading "Testimonials" is visible
-    And at least one testimonial with photo, name, title, and quote is shown
-    And carousel navigation is present
+#### Scenario: Features section shows 4 items
 
-  Scenario: Plans section displays 3 pricing cards
-    Given the plans section is scrolled into view
-    Then the heading "Choose a plan" is visible
-    And 3 pricing cards are displayed in a row
-    And each card shows a price, plan name, feature list, and a CTA button
-    And the center card has a dark background (featured)
+- **GIVEN** the features section is scrolled into view
+- **THEN** 4 feature cards are visible in a row
+- **AND** each card has an icon, heading, and description
 
-  Scenario: CTA banner renders
-    Given the CTA section is scrolled into view
-    Then the text "Get your subscription now!" is visible
-    And the background is brand orange (`#ff9908`)
+#### Scenario: Subscription section renders
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then the logo is displayed
-    And social media icon links are visible (Pinterest, Facebook, Twitter, Dribbble, Behance)
-    And 3 footer link columns are present ("Useful Links", "Features", "About us")
-    And a copyright notice is displayed
-    And a link to "https://www.componentdock.com/" is present
+- **GIVEN** the subscription section is scrolled into view
+- **THEN** the heading "Get your subscription" is visible
+- **AND** a description paragraph is shown
+- **AND** a checklist with 4 checkmark items is displayed
+- **AND** a "Get Started" CTA button is visible
+- **AND** a background image is visible on the right half
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And feature columns stack vertically
-    And pricing cards stack vertically
-    And the footer columns stack vertically
-```
+#### Scenario: Portfolio slider shows images
+
+- **GIVEN** the portfolio section is scrolled into view
+- **THEN** a carousel of portfolio images is displayed
+- **AND** hovering an image shows a "View More" overlay
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the testimonials section is scrolled into view
+- **THEN** the heading "Testimonials" is visible
+- **AND** at least one testimonial with photo, name, title, and quote is shown
+- **AND** carousel navigation is present
+
+#### Scenario: Plans section displays 3 pricing cards
+
+- **GIVEN** the plans section is scrolled into view
+- **THEN** the heading "Choose a plan" is visible
+- **AND** 3 pricing cards are displayed in a row
+- **AND** each card shows a price, plan name, feature list, and a CTA button
+- **AND** the center card has a dark background (featured)
+
+#### Scenario: CTA banner renders
+
+- **GIVEN** the CTA section is scrolled into view
+- **THEN** the text "Get your subscription now!" is visible
+- **AND** the background is brand orange (`#ff9908`)
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** the logo is displayed
+- **AND** social media icon links are visible (Pinterest, Facebook, Twitter, Dribbble, Behance)
+- **AND** 3 footer link columns are present ("Useful Links", "Features", "About us")
+- **AND** a copyright notice is displayed
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** feature columns stack vertically
+- **AND** pricing cards stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

@@ -21,7 +21,7 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
   - Box Shadow: `0px 7px 15px -13px rgba(0, 0, 0, 0.17)`
   - Icon Box Width: `60px` with 30px icon size (`ion-ios-*` rendered via Lucide equivalents)
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Section Header and Color Picker Showcase
 
@@ -31,9 +31,9 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
 
 #### Scenario: Display color picker buttons
 
-- **Given** the BtnPeak page is loaded
-- **When** the user views the top buttons section
-- **Then** four primary color buttons ("Default Primary", "Default Secondary", "Default Tertiary", "Default Gradient") are displayed with correct brand colors and hover states.
+- **GIVEN** the BtnPeak page is loaded
+- **WHEN** the user views the top buttons section
+- **THEN** four primary color buttons ("Default Primary", "Default Secondary", "Default Tertiary", "Default Gradient") are displayed with correct brand colors and hover states
 
 ### Requirement 2: White Stat Buttons with Left Icons
 
@@ -43,9 +43,9 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
 
 #### Scenario: Display white left-icon stat buttons
 
-- **Given** the stat buttons section is visible
-- **When** the user inspects the white card buttons with left icons
-- **Then** four cards showing 275 New Posts, 109 New Comments, 68% Bounce Rate, and 343 Total Visits are rendered with 60px colored icon containers on the left and right-aligned text.
+- **GIVEN** the stat buttons section is visible
+- **WHEN** the user inspects the white card buttons with left icons
+- **THEN** four cards showing 275 New Posts, 109 New Comments, 68% Bounce Rate, and 343 Total Visits are rendered with 60px colored icon containers on the left and right-aligned text
 
 ### Requirement 3: White Stat Buttons with Right Icons
 
@@ -55,9 +55,9 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
 
 #### Scenario: Display white right-icon stat buttons
 
-- **Given** the stat buttons section is visible
-- **When** the user inspects the white card buttons with right icons
-- **Then** four cards showing New Projects, New Clients, Conversion Rate, and Support Tickets are rendered with left-aligned text and right-aligned 60px colored icon containers.
+- **GIVEN** the stat buttons section is visible
+- **WHEN** the user inspects the white card buttons with right icons
+- **THEN** four cards showing New Projects, New Clients, Conversion Rate, and Support Tickets are rendered with left-aligned text and right-aligned 60px colored icon containers
 
 ### Requirement 4: Solid Colored Stat Buttons with Left and Right Icons
 
@@ -67,9 +67,9 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
 
 #### Scenario: Display solid colored stat buttons
 
-- **Given** the solid stat buttons rows are visible
-- **When** the user views the filled primary, secondary, tertiary, and quaternary stat buttons
-- **Then** each button displays solid background colors (`#6c5ce7`, `#1ee3cf`, `#ff00c8`, `#a1dd70`), white text, and icon containers.
+- **GIVEN** the solid stat buttons rows are visible
+- **WHEN** the user views the filled primary, secondary, tertiary, and quaternary stat buttons
+- **THEN** each button displays solid background colors (`#6c5ce7`, `#1ee3cf`, `#ff00c8`, `#a1dd70`), white text, and icon containers
 
 ### Requirement 5: Footer Attribution
 
@@ -79,8 +79,8 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
 
 #### Scenario: Footer link present
 
-- **Given** the page footer is rendered
-- **Then** it contains a link to `https://www.componentdock.com/` labeled "Component Dock".
+- **GIVEN** the page footer is rendered
+- **THEN** it contains a link to `https://www.componentdock.com/` labeled "Component Dock"
 
 ## Verification Checklist
 

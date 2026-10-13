@@ -39,65 +39,73 @@ Recreation of the ColorLib **Resta** template as a React 19 + Vite + Tailwind 4 
 7. **Reservation** — Heading "Reservation". Two-column: left is Google Map embed, right is "Book a Table" form (Name, Phone, Date picker, Dinner select, Person select, Book button). Below form: Address + Reservation phone info with icons.
 8. **Footer** — Dark background. 3-column: logo + address + social icons | Useful Links | Subscribe form + newsletter text. Copyright bar at bottom.
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Morselry template behaviour
+
 Feature: Morselry Restaurant Template
 
-  Background:
-    Given the template is loaded at the root URL
+Background:
+- **GIVEN** the template is loaded at the root URL
 
-  Scenario: Navbar renders correctly
-    Then the navbar should display the logo
-    And the nav should contain links: Home, Menu, Pages, Blog, Contact
-    And a "Book a Table" CTA should be visible
-    And the navbar should be transparent over the hero
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero slider displays with overlay
-    Then a hero carousel should be visible
-    And the headline should read "Fresh And Delicious Food For Your Health"
-    And a "View Menus" button should be present
-    And a dark gradient overlay should cover the hero background
+- **THEN** the navbar should display the logo
+- **AND** the nav should contain links: Home, Menu, Pages, Blog, Contact
+- **AND** a "Book a Table" CTA should be visible
+- **AND** the navbar should be transparent over the hero
 
-  Scenario: About section shows restaurant info
-    Then a heading "Sed ut perspiciatis unde omnis iste natus" should be visible
-    And a description paragraph should be present
-    And a food list with "Fresh Ingredients" and "Expert Cooker" should display
-    And two overlapping images should appear on the right
+#### Scenario: Hero slider displays with overlay
 
-  Scenario: Delicious menu shows tabbed food items
-    Then a heading "Delicious Food For You" should be visible
-    And three tabs should be present: Dinner, Breakfast, Lunch
-    And the Dinner tab should be active by default
-    And six menu items should be displayed in a 2-column grid
-    And each item should show a food image, title, description, and price
+- **THEN** a hero carousel should be visible
+- **AND** the headline should read "Fresh And Delicious Food For Your Health"
+- **AND** a "View Menus" button should be present
+- **AND** a dark gradient overlay should cover the hero background
 
-  Scenario: Testimonials carousel displays
-    Then a heading "Our Customer's Say" should be visible
-    And a subtitle "Testimonials" should appear above it
-    And at least two testimonials should be in the carousel
-    And each testimonial should show a quote, author name, photo, and star rating
+#### Scenario: About section shows restaurant info
 
-  Scenario: Photo gallery renders with lightbox
-    Then a heading "Photo Gallery" should be visible
-    And six gallery images should be displayed in an asymmetric grid
-    And clicking a gallery image should open a lightbox overlay
+- **THEN** a heading "Sed ut perspiciatis unde omnis iste natus" should be visible
+- **AND** a description paragraph should be present
+- **AND** a food list with "Fresh Ingredients" and "Expert Cooker" should display
+- **AND** two overlapping images should appear on the right
 
-  Scenario: Reservation form is functional
-    Then a heading "Reservation" should be visible
-    And a "Book a Table" form should be present
-    And the form should have fields: Name, Phone, Date, Dinner, Person
-    And a "Book" submit button should be visible
-    And address and reservation phone info should display below the form
+#### Scenario: Delicious menu shows tabbed food items
 
-  Scenario: Footer contains required elements
-    Then the footer should show the logo and address
-    And social media icon links should be present (Facebook, Twitter, Instagram, Pinterest, YouTube)
-    And a "Useful Links" column should list Menu, About, Blog
-    And a subscribe form with email input and button should be present
-    And a "Made with Component Dock" attribution link to componentdock.com must be present
-    And the copyright text should not reference Colorlib
-```
+- **THEN** a heading "Delicious Food For You" should be visible
+- **AND** three tabs should be present: Dinner, Breakfast, Lunch
+- **AND** the Dinner tab should be active by default
+- **AND** six menu items should be displayed in a 2-column grid
+- **AND** each item should show a food image, title, description, and price
+
+#### Scenario: Testimonials carousel displays
+
+- **THEN** a heading "Our Customer's Say" should be visible
+- **AND** a subtitle "Testimonials" should appear above it
+- **AND** at least two testimonials should be in the carousel
+- **AND** each testimonial should show a quote, author name, photo, and star rating
+
+#### Scenario: Photo gallery renders with lightbox
+
+- **THEN** a heading "Photo Gallery" should be visible
+- **AND** six gallery images should be displayed in an asymmetric grid
+- **AND** clicking a gallery image should open a lightbox overlay
+
+#### Scenario: Reservation form is functional
+
+- **THEN** a heading "Reservation" should be visible
+- **AND** a "Book a Table" form should be present
+- **AND** the form should have fields: Name, Phone, Date, Dinner, Person
+- **AND** a "Book" submit button should be visible
+- **AND** address and reservation phone info should display below the form
+
+#### Scenario: Footer contains required elements
+
+- **THEN** the footer should show the logo and address
+- **AND** social media icon links should be present (Facebook, Twitter, Instagram, Pinterest, YouTube)
+- **AND** a "Useful Links" column should list Menu, About, Blog
+- **AND** a subscribe form with email input and button should be present
+- **AND** a "Made with Component Dock" attribution link to componentdock.com must be present
+- **AND** the copyright text should not reference Colorlib
 
 ## Verification Checklist
 

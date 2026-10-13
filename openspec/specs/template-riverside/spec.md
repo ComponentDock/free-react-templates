@@ -41,100 +41,91 @@ Recreation of ColorLib's **Clyde** personal portfolio template as a React 19 + V
 10. **Contact** — form (name, email, subject, message, submit button) + contact info (address, phone, email, website).
 11. **Footer** — dark background, brand name, social links, copyright, "Link back to Colorlib" text (to be replaced with Component Dock link).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders correctly
-```
-Given the page loads
-Then the navbar displays with brand "Riverside." 
-And navigation links include: Home, About, Skills, Services, Projects, Blog, Contact
-And the navbar has a dark background
-And a mobile hamburger toggle is present
-```
+### Feature: Riverside template behaviour
 
-### Scenario: Hero section displays
-```
-Given the page loads
-Then the hero section shows a subheading "Hello! This is Riverside"
-And a headline with role description
-And two CTA buttons: "Hire me" and "Download CV"
-And a background image is visible with a dark overlay
-```
+#### Scenario: Navbar renders correctly
 
-### Scenario: Counter statistics animate
-```
-Given the page loads
-And the counter section is visible
-Then four stat blocks are displayed
-And each stat shows a number, icon, and label
-And the numbers animate from 0 to their target values on scroll
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays with brand "Riverside."
+- **AND** navigation links include: Home, About, Skills, Services, Projects, Blog, Contact
+- **AND** the navbar has a dark background
+- **AND** a mobile hamburger toggle is present
 
-### Scenario: About section shows personal info
-```
-Given the page loads
-Then the About section displays with subheading "My Intro"
-And a heading "About Me"
-And a description paragraph
-And an info list with Name, Date of birth, Address, Zip code, Email, Phone
-And interest icons for Music, Travel, Movie, Sports
-```
+#### Scenario: Hero section displays
 
-### Scenario: Skills section shows progress circles
-```
-Given the page loads
-Then the Skills section shows 7 skill cards
-And each card has a circular progress indicator with percentage
-And skill names include CSS, HTML, jQuery, Photoshop, WordPress, SEO
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows a subheading "Hello! This is Riverside"
+- **AND** a headline with role description
+- **AND** two CTA buttons: "Hire me" and "Download CV"
+- **AND** a background image is visible with a dark overlay
 
-### Scenario: Services section shows service cards
-```
-Given the page loads
-Then 8 service cards are displayed in a 4-column grid (2 rows)
-And each card has an icon, title, and short description
-And service titles include Web Design, Web Application, Web Development, Banner Design, Branding, Icon Design, Graphic Design, SEO
-```
+#### Scenario: Counter statistics animate
 
-### Scenario: Hire Me CTA section renders
-```
-Given the page loads
-Then the hire-me section displays with heading "Have a project on your mind."
-And a paragraph description
-And a "Contact me" white button
-```
+- **GIVEN** the page loads
+- **AND** the counter section is visible
+- **THEN** four stat blocks are displayed
+- **AND** each stat shows a number, icon, and label
+- **AND** the numbers animate from 0 to their target values on scroll
 
-### Scenario: Projects grid is filterable
-```
-Given the page loads
-Then the projects section shows a grid of portfolio items
-And filter tabs are present: All, Web, Illustration, Branding, Application
-And clicking a filter tab shows only matching projects
-```
+#### Scenario: About section shows personal info
 
-### Scenario: Blog section shows recent posts
-```
-Given the page loads
-Then the blog section displays post cards
-And each card has an image, title, date, author name, and excerpt
-```
+- **GIVEN** the page loads
+- **THEN** the About section displays with subheading "My Intro"
+- **AND** a heading "About Me"
+- **AND** a description paragraph
+- **AND** an info list with Name, Date of birth, Address, Zip code, Email, Phone
+- **AND** interest icons for Music, Travel, Movie, Sports
 
-### Scenario: Contact form renders and validates
-```
-Given the page loads
-Then the contact section displays a form
-And the form has fields: Name, Email, Subject, Message
-And a submit button is present
-And submitting with empty required fields shows validation errors
-```
+#### Scenario: Skills section shows progress circles
 
-### Scenario: Footer renders with Component Dock link
-```
-Given the page loads
-Then the footer displays with a dark background
-And a link to https://www.componentdock.com/ is present
-And social media icons are shown
-```
+- **GIVEN** the page loads
+- **THEN** the Skills section shows 7 skill cards
+- **AND** each card has a circular progress indicator with percentage
+- **AND** skill names include CSS, HTML, jQuery, Photoshop, WordPress, SEO
+
+#### Scenario: Services section shows service cards
+
+- **GIVEN** the page loads
+- **THEN** 8 service cards are displayed in a 4-column grid (2 rows)
+- **AND** each card has an icon, title, and short description
+- **AND** service titles include Web Design, Web Application, Web Development, Banner Design, Branding, Icon Design, Graphic Design, SEO
+
+#### Scenario: Hire Me CTA section renders
+
+- **GIVEN** the page loads
+- **THEN** the hire-me section displays with heading "Have a project on your mind."
+- **AND** a paragraph description
+- **AND** a "Contact me" white button
+
+#### Scenario: Projects grid is filterable
+
+- **GIVEN** the page loads
+- **THEN** the projects section shows a grid of portfolio items
+- **AND** filter tabs are present: All, Web, Illustration, Branding, Application
+- **AND** clicking a filter tab shows only matching projects
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the page loads
+- **THEN** the blog section displays post cards
+- **AND** each card has an image, title, date, author name, and excerpt
+
+#### Scenario: Contact form renders and validates
+
+- **GIVEN** the page loads
+- **THEN** the contact section displays a form
+- **AND** the form has fields: Name, Email, Subject, Message
+- **AND** a submit button is present
+- **AND** submitting with empty required fields shows validation errors
+
+#### Scenario: Footer renders with Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** the footer displays with a dark background
+- **AND** a link to https://www.componentdock.com/ is present
+- **AND** social media icons are shown
 
 ## Verification Checklist
 

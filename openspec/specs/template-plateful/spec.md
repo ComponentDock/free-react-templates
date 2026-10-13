@@ -14,79 +14,99 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide icons, Vitest.
 - **Button styling**: Rounded corners (`rounded-lg` / `bo-rad-10`), white or dark backgrounds with red hover states.
 - **Backgrounds**: Dark/patterned sections (`bg-zinc-900`, `bg-stone-900`, white).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Header & Navigation
 
+#### Scenario: Header & Navigation
+
 - Scenario: User views fixed/sticky header with logo and navigation links
-  - Given the user loads the Plateful app
-  - When the user views the header
-  - Then they see the logo and navigation links (Home, Menu, Reservation, Gallery, About, Blog, Contact)
-  - And clicking a link scrolls or navigates to the respective section
+- **GIVEN** the user loads the Plateful app
+- **WHEN** the user views the header
+- **THEN** they see the logo and navigation links (Home, Menu, Reservation, Gallery, About, Blog, Contact)
+- **AND** clicking a link scrolls or navigates to the respective section
 
 ### Feature: Hero Slider
 
+#### Scenario: Hero Slider
+
 - Scenario: User views the hero carousel section
-  - Given the user is at the top of the page
-  - When the hero slider renders
-  - Then it displays welcome slides with headings, subtitles, and a "Look Menu" button
+- **GIVEN** the user is at the top of the page
+- **WHEN** the hero slider renders
+- **THEN** it displays welcome slides with headings, subtitles, and a "Look Menu" button
 
 ### Feature: Welcome / About Section
 
+#### Scenario: Welcome / About Section
+
 - Scenario: User views the welcome/introduction section
-  - Given the user scrolls to the welcome section
-  - When the section renders
-  - Then it displays "Discover Our Story", "Pato Place" / Plateful highlights (Romantic Restaurant, Delicious Food, Red Wines You Love) with images and "Learn More" links
+- **GIVEN** the user scrolls to the welcome section
+- **WHEN** the section renders
+- **THEN** it displays "Discover Our Story", "Pato Place" / Plateful highlights (Romantic Restaurant, Delicious Food, Red Wines You Love) with images and "Learn More" links
 
 ### Feature: Menu Section
 
+#### Scenario: Menu Section
+
 - Scenario: User views the interactive menu categories
-  - Given the user scrolls to the menu section
-  - When they view the category tabs (Lunch, Dinner, Happy Hour, Drink, Starters, Dessert)
-  - Then clicking a category displays the respective menu items with prices and descriptions
+- **GIVEN** the user scrolls to the menu section
+- **WHEN** they view the category tabs (Lunch, Dinner, Happy Hour, Drink, Starters, Dessert)
+- **THEN** clicking a category displays the respective menu items with prices and descriptions
 
 ### Feature: Events Section
 
+#### Scenario: Events Section
+
 - Scenario: User views upcoming restaurant events
-  - Given the user scrolls to the events section
-  - When the events carousel or list renders
-  - Then it displays event cards with dates, times, descriptions, and "View Details" buttons
+- **GIVEN** the user scrolls to the events section
+- **WHEN** the events carousel or list renders
+- **THEN** it displays event cards with dates, times, descriptions, and "View Details" buttons
 
 ### Feature: Booking / Reservation Form
 
+#### Scenario: Booking / Reservation Form
+
 - Scenario: User submits a table reservation
-  - Given the user navigates to the book table section
-  - When they fill in Date, Time, People count, Name, Phone, and Email
-  - And click "BOOK TABLE"
-  - Then a confirmation message appears
+- **GIVEN** the user navigates to the book table section
+- **WHEN** they fill in Date, Time, People count, Name, Phone, and Email
+- **AND** click "BOOK TABLE"
+- **THEN** a confirmation message appears
 
 ### Feature: Customer Reviews
 
+#### Scenario: Customer Reviews
+
 - Scenario: User views customer testimonials / reviews slider
-  - Given the user scrolls to the reviews section
-  - When the review carousel renders
-  - Then it displays customer feedback quotes and author avatars
+- **GIVEN** the user scrolls to the reviews section
+- **WHEN** the review carousel renders
+- **THEN** it displays customer feedback quotes and author avatars
 
 ### Feature: Blog Section
 
+#### Scenario: Blog Section
+
 - Scenario: User views latest blog posts
-  - Given the user scrolls to the blog section
-  - When the blog cards render
-  - Then they display article images, titles, dates, and "Continue Reading" links
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the blog cards render
+- **THEN** they display article images, titles, dates, and "Continue Reading" links
 
 ### Feature: Newsletter Signup
 
+#### Scenario: Newsletter Signup
+
 - Scenario: User subscribes to specials newsletter
-  - Given the user scrolls to the newsletter section
-  - When they enter their email address and click sign up
-  - Then a success notification is shown
+- **GIVEN** the user scrolls to the newsletter section
+- **WHEN** they enter their email address and click sign up
+- **THEN** a success notification is shown
 
 ### Feature: Footer & Copyright
 
+#### Scenario: Footer & Copyright
+
 - Scenario: User views footer with opening times, contact info, and branding
-  - Given the user scrolls to the bottom of the page
-  - When the footer renders
-  - Then it displays Contact Us, Opening Times, Latest Posts, Gallery thumbnail grid, and a link to Component Dock (`https://www.componentdock.com/`)
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it displays Contact Us, Opening Times, Latest Posts, Gallery thumbnail grid, and a link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

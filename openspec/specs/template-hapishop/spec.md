@@ -43,163 +43,182 @@ Recreation of the ColorLib "Coloshop" template as a modern React 19 + Vite + Tai
 9. **Newsletter** — Gray background. 2-column: left has "Newsletter" heading + description, right has email input + "subscribe" red button.
 10. **Footer** — 2-column top row: nav links (Blog, FAQs, Contact us) left, social icons (Facebook, Twitter, Instagram, Skype, Pinterest) right. Bottom row: copyright "©2018 All Rights Reserved" with heart icon and Colorlib link → replaced with Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
-```gherkin
-Feature: Header
-  Scenario: Top navigation bar displays
-    Given the page loads
-    Then a top nav bar should be visible with dark navy (#1e1e27) background
-    And "free shipping on all u.s orders over $50" text should be shown
-    And currency, language, and account dropdowns should be present
 
-  Scenario: Main navigation shows logo and menu
-    Given the page loads
-    Then a logo should be visible in the main nav
-    And menu links (Home, Shop, Categories, Pages) should be present
-    And user action icons should be visible
-    And a hamburger menu icon should be present on mobile
-```
+Feature: Header
+
+#### Scenario: Top navigation bar displays
+
+- **GIVEN** the page loads
+- **THEN** a top nav bar should be visible with dark navy (#1e1e27) background
+- **AND** "free shipping on all u.s orders over $50" text should be shown
+- **AND** currency, language, and account dropdowns should be present
+
+#### Scenario: Main navigation shows logo and menu
+
+- **GIVEN** the page loads
+- **THEN** a logo should be visible in the main nav
+- **AND** menu links (Home, Shop, Categories, Pages) should be present
+- **AND** user action icons should be visible
+- **AND** a hamburger menu icon should be present on mobile
 
 ### Hero Slider
-```gherkin
-Feature: Hero Slider
-  Scenario: Hero section displays promotional content
-    Given the page loads
-    Then a full-width hero area should be visible with a background image
-    And a subtitle "Spring / Summer Collection 2017" should appear
-    And a headline "Get up to 30% Off New Arrivals" should appear
-    And a red "shop now" CTA button should be visible
 
-  Scenario: Hero CTA button styling
-    Given the hero section is visible
-    Then the "shop now" button should have brand red (#fe4c50) background
-    And it should have 3px border-radius
-    And on hover it should lighten to #FE7C7F
-```
+Feature: Hero Slider
+
+#### Scenario: Hero section displays promotional content
+
+- **GIVEN** the page loads
+- **THEN** a full-width hero area should be visible with a background image
+- **AND** a subtitle "Spring / Summer Collection 2017" should appear
+- **AND** a headline "Get up to 30% Off New Arrivals" should appear
+- **AND** a red "shop now" CTA button should be visible
+
+#### Scenario: Hero CTA button styling
+
+- **GIVEN** the hero section is visible
+- **THEN** the "shop now" button should have brand red (#fe4c50) background
+- **AND** it should have 3px border-radius
+- **AND** on hover it should lighten to #FE7C7F
 
 ### Banner
-```gherkin
-Feature: Category Banners
-  Scenario: Three category cards display
-    Given the page loads
-    Then 3 category banner cards should appear in a row
-    And they should show "women's", "accessories", and "men's" labels
-    And each card should have a background image
 
-  Scenario: Banner cards are interactive
-    Given the banner section is visible
-    When a user hovers over a banner card
-    Then the category label should be prominently visible
-```
+Feature: Category Banners
+
+#### Scenario: Three category cards display
+
+- **GIVEN** the page loads
+- **THEN** 3 category banner cards should appear in a row
+- **AND** they should show "women's", "accessories", and "men's" labels
+- **AND** each card should have a background image
+
+#### Scenario: Banner cards are interactive
+
+- **GIVEN** the banner section is visible
+- **WHEN** a user hovers over a banner card
+- **THEN** the category label should be prominently visible
 
 ### New Arrivals
-```gherkin
+
 Feature: New Arrivals
-  Scenario: Product grid displays with filter tabs
-    Given the page loads
-    Then a "New Arrivals" section title should appear
-    And filter tabs should show: All, Women's, Accessories, Men's
-    And "All" tab should be active by default
-    And a product grid should display multiple product cards
 
-  Scenario: Product card shows all details
-    Given the new arrivals section is visible
-    Then each product card should show: image, product name, price
-    And discounted products should show both current and original price
-    And some products should have a "new" badge or discount bubble
-    And an "add to cart" red button should be below each product
+#### Scenario: Product grid displays with filter tabs
 
-  Scenario: Filter tabs filter products
-    Given the new arrivals section is visible
-    When a user clicks "women's" filter
-    Then only women's category products should be visible
-    When a user clicks "All" filter
-    Then all products should be visible again
-```
+- **GIVEN** the page loads
+- **THEN** a "New Arrivals" section title should appear
+- **AND** filter tabs should show: All, Women's, Accessories, Men's
+- **AND** "All" tab should be active by default
+- **AND** a product grid should display multiple product cards
+
+#### Scenario: Product card shows all details
+
+- **GIVEN** the new arrivals section is visible
+- **THEN** each product card should show: image, product name, price
+- **AND** discounted products should show both current and original price
+- **AND** some products should have a "new" badge or discount bubble
+- **AND** an "add to cart" red button should be below each product
+
+#### Scenario: Filter tabs filter products
+
+- **GIVEN** the new arrivals section is visible
+- **WHEN** a user clicks "women's" filter
+- **THEN** only women's category products should be visible
+- **WHEN** a user clicks "All" filter
+- **THEN** all products should be visible again
 
 ### Deal of the Week
-```gherkin
-Feature: Deal of the Week
-  Scenario: Deal section displays with countdown
-    Given the page loads
-    Then a "Deal Of The Week" section should appear on gray (#f2f2f2) background
-    And a large product image should be shown on the left
-    And a countdown timer should show days, hours, minutes, seconds
-    And a dark "shop now" button should be visible
 
-  Scenario: Countdown timer counts down
-    Given the deal section is visible
-    Then the timer values should be numeric
-    And seconds should decrement over time
-```
+Feature: Deal of the Week
+
+#### Scenario: Deal section displays with countdown
+
+- **GIVEN** the page loads
+- **THEN** a "Deal Of The Week" section should appear on gray (#f2f2f2) background
+- **AND** a large product image should be shown on the left
+- **AND** a countdown timer should show days, hours, minutes, seconds
+- **AND** a dark "shop now" button should be visible
+
+#### Scenario: Countdown timer counts down
+
+- **GIVEN** the deal section is visible
+- **THEN** the timer values should be numeric
+- **AND** seconds should decrement over time
 
 ### Best Sellers
-```gherkin
+
 Feature: Best Sellers
-  Scenario: Carousel displays best-selling products
-    Given the page loads
-    Then a "Best Sellers" section title should appear
-    And a horizontal carousel/slider of products should be visible
-    And each slide should show a product card with image, name, and price
-```
+
+#### Scenario: Carousel displays best-selling products
+
+- **GIVEN** the page loads
+- **THEN** a "Best Sellers" section title should appear
+- **AND** a horizontal carousel/slider of products should be visible
+- **AND** each slide should show a product card with image, name, and price
 
 ### Benefits
-```gherkin
+
 Feature: Benefits Bar
-  Scenario: Four benefit items display
-    Given the page loads
-    Then 4 benefit items should appear in a row
-    And they should show: free shipping, cash on delivery, 45 days return, opening all week
-    And each item should have an icon, title, and description
-```
+
+#### Scenario: Four benefit items display
+
+- **GIVEN** the page loads
+- **THEN** 4 benefit items should appear in a row
+- **AND** they should show: free shipping, cash on delivery, 45 days return, opening all week
+- **AND** each item should have an icon, title, and description
 
 ### Blogs
-```gherkin
-Feature: Latest Blogs
-  Scenario: Blog cards display
-    Given the page loads
-    Then a "Latest Blogs" section title should appear
-    And 3 blog cards should display in a row
-    And each card should have a background image, title, meta info, and "Read more" link
 
-  Scenario: Blog card hover reveals content
-    Given the blog section is visible
-    When a user hovers over a blog card
-    Then the blog content should be prominently visible
-```
+Feature: Latest Blogs
+
+#### Scenario: Blog cards display
+
+- **GIVEN** the page loads
+- **THEN** a "Latest Blogs" section title should appear
+- **AND** 3 blog cards should display in a row
+- **AND** each card should have a background image, title, meta info, and "Read more" link
+
+#### Scenario: Blog card hover reveals content
+
+- **GIVEN** the blog section is visible
+- **WHEN** a user hovers over a blog card
+- **THEN** the blog content should be prominently visible
 
 ### Newsletter
-```gherkin
-Feature: Newsletter Signup
-  Scenario: Newsletter form displays
-    Given the page loads
-    Then a "Newsletter" section should appear on gray background
-    And heading text "Subscribe to our newsletter and get 20% off your first purchase" should be shown
-    And an email input field and "subscribe" button should be present
 
-  Scenario: Newsletter form validation
-    Given the newsletter section is visible
-    When the user submits without an email
-    Then the browser should show a validation message
-```
+Feature: Newsletter Signup
+
+#### Scenario: Newsletter form displays
+
+- **GIVEN** the page loads
+- **THEN** a "Newsletter" section should appear on gray background
+- **AND** heading text "Subscribe to our newsletter and get 20% off your first purchase" should be shown
+- **AND** an email input field and "subscribe" button should be present
+
+#### Scenario: Newsletter form validation
+
+- **GIVEN** the newsletter section is visible
+- **WHEN** the user submits without an email
+- **THEN** the browser should show a validation message
 
 ### Footer
-```gherkin
-Feature: Footer
-  Scenario: Footer displays navigation and social links
-    Given the page loads
-    Then a footer should be visible
-    And nav links (Blog, FAQs, Contact us) should be present
-    And social media icons (Facebook, Twitter, Instagram, Skype, Pinterest) should be shown
-    And a copyright line should be present
 
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then a link to https://www.componentdock.com/ should be present
-    And it should display as "Component Dock"
-```
+Feature: Footer
+
+#### Scenario: Footer displays navigation and social links
+
+- **GIVEN** the page loads
+- **THEN** a footer should be visible
+- **AND** nav links (Blog, FAQs, Contact us) should be present
+- **AND** social media icons (Facebook, Twitter, Instagram, Skype, Pinterest) should be shown
+- **AND** a copyright line should be present
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ should be present
+- **AND** it should display as "Component Dock"
 
 ## Verification Checklist
 

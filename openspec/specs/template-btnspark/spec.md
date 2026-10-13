@@ -13,24 +13,32 @@
 - **Button Shapes**: Rounded-lg and pill buttons with subtle shadow and smooth hover transitions.
 - **Section Backgrounds**: Clean white card containers on a soft neutral slate background.
 
-## Requirements and Scenarios
+## Requirements
 
 ### Requirement 1: Navigation and Header
+
+#### Scenario: Navigation and Header
 
 - The page must render a clean header with title "BtnSpark - Interactive Button Showcase" and navigation links.
 - Scenario: User loads the page and sees the primary heading and quick-jump category links.
 
 ### Requirement 2: Button Showcase Categories
 
+#### Scenario: Button Showcase Categories
+
 - The page must showcase diverse button variants including Solid, Outline, Gradient, Pill, Icon Buttons, Floating Action Buttons, and Loading state buttons.
 - Scenario: User browses through grouped button styles and interacts with hover states.
 
 ### Requirement 3: Interactive States
 
+#### Scenario: Interactive States
+
 - Buttons must provide clear active, focus, and disabled states.
 - Scenario: User clicks or focuses on buttons to verify visual feedback.
 
 ### Requirement 4: Footer
+
+#### Scenario: Footer
 
 - The page footer must display copyright info and a required link to `https://www.componentdock.com/` ("Component Dock").
 - Scenario: User scrolls to the footer and clicks the Component Dock link.

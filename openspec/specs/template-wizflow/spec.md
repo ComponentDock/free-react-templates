@@ -43,108 +43,115 @@ Recreation of ColorLib "Colorlib Wizard 20" — a multi-step signup form with a 
 - **Button hover:** background-color darkens to #090909
 - **Step transitions:** animated via jQuery Steps library (original) → React state transitions
 
-## Gherkin scenarios
+## Requirements
 
 ### Step navigation
-```gherkin
-Scenario: User sees step indicator with 3 steps
-  Given the wizard is loaded
-  Then the step indicator shows "1", "2", "3" as numbered circles
-  And step 1 is highlighted with the accent gradient
-  And steps 2 and 3 have a gray background
 
-Scenario: User advances to next step
-  Given the user is on step 1
-  When the user clicks "Next"
-  Then the form transitions to step 2
-  And the step indicator updates to highlight step 2
+#### Scenario: User sees step indicator with 3 steps
 
-Scenario: User goes back to previous step
-  Given the user is on step 2
-  When the user clicks "Previous"
-  Then the form transitions to step 1
-  And the step indicator updates to highlight step 1
-```
+- **GIVEN** the wizard is loaded
+- **THEN** the step indicator shows "1", "2", "3" as numbered circles
+- **AND** step 1 is highlighted with the accent gradient
+- **AND** steps 2 and 3 have a gray background
+
+#### Scenario: User advances to next step
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "Next"
+- **THEN** the form transitions to step 2
+- **AND** the step indicator updates to highlight step 2
+
+#### Scenario: User goes back to previous step
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks "Previous"
+- **THEN** the form transitions to step 1
+- **AND** the step indicator updates to highlight step 1
 
 ### Step 1: Account Setup
-```gherkin
-Scenario: Account setup form displays correctly
-  Given the user is on step 1
-  Then the heading "Create your account" is visible
-  And an email input field is displayed
-  And a password input field is displayed
-  And a confirm password input field is displayed
 
-Scenario: User fills account details
-  Given the user is on step 1
-  When the user enters "test@example.com" in the email field
-  And the user enters "password123" in the password field
-  And the user enters "password123" in the confirm password field
-  Then all fields are filled
-```
+#### Scenario: Account setup form displays correctly
+
+- **GIVEN** the user is on step 1
+- **THEN** the heading "Create your account" is visible
+- **AND** an email input field is displayed
+- **AND** a password input field is displayed
+- **AND** a confirm password input field is displayed
+
+#### Scenario: User fills account details
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user enters "test@example.com" in the email field
+- **AND** the user enters "password123" in the password field
+- **AND** the user enters "password123" in the confirm password field
+- **THEN** all fields are filled
 
 ### Step 2: Social Profiles
-```gherkin
-Scenario: Social profiles form displays correctly
-  Given the user is on step 2
-  Then the heading "Social profiles" is visible
-  And a Twitter input field is displayed
-  And a Facebook input field is displayed
-  And a Google Plus input field is displayed
 
-Scenario: User fills social profiles
-  Given the user is on step 2
-  When the user enters "@testuser" in the Twitter field
-  And the user enters "testuser" in the Facebook field
-  And the user enters "testuser" in the Google Plus field
-  Then all social fields are filled
-```
+#### Scenario: Social profiles form displays correctly
+
+- **GIVEN** the user is on step 2
+- **THEN** the heading "Social profiles" is visible
+- **AND** a Twitter input field is displayed
+- **AND** a Facebook input field is displayed
+- **AND** a Google Plus input field is displayed
+
+#### Scenario: User fills social profiles
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user enters "@testuser" in the Twitter field
+- **AND** the user enters "testuser" in the Facebook field
+- **AND** the user enters "testuser" in the Google Plus field
+- **THEN** all social fields are filled
 
 ### Step 3: Personal Details
-```gherkin
-Scenario: Personal details form displays correctly
-  Given the user is on step 3
-  Then the heading "Personal Details" is visible
-  And a name input field is displayed
-  And a phone input field is displayed
-  And an address input field is displayed
 
-Scenario: User fills personal details
-  Given the user is on step 3
-  When the user enters "John Doe" in the name field
-  And the user enters "555-1234" in the phone field
-  And the user enters "123 Main St" in the address field
-  Then all personal fields are filled
-```
+#### Scenario: Personal details form displays correctly
+
+- **GIVEN** the user is on step 3
+- **THEN** the heading "Personal Details" is visible
+- **AND** a name input field is displayed
+- **AND** a phone input field is displayed
+- **AND** an address input field is displayed
+
+#### Scenario: User fills personal details
+
+- **GIVEN** the user is on step 3
+- **WHEN** the user enters "John Doe" in the name field
+- **AND** the user enters "555-1234" in the phone field
+- **AND** the user enters "123 Main St" in the address field
+- **THEN** all personal fields are filled
 
 ### Validation
-```gherkin
-Scenario: Email validation
-  Given the user is on step 1
-  When the user enters "invalid-email" in the email field
-  And clicks "Next"
-  Then an error message should be shown
 
-Scenario: Password mismatch validation
-  Given the user is on step 1
-  When the user enters "password123" in the password field
-  And "differentpassword" in the confirm password field
-  And clicks "Next"
-  Then an error message should be shown
-```
+#### Scenario: Email validation
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user enters "invalid-email" in the email field
+- **AND** clicks "Next"
+- **THEN** an error message should be shown
+
+#### Scenario: Password mismatch validation
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user enters "password123" in the password field
+- **AND** "differentpassword" in the confirm password field
+- **AND** clicks "Next"
+- **THEN** an error message should be shown
 
 ### Visual design
-```gherkin
-Scenario: Background gradient renders correctly
-  Given the wizard is loaded
-  Then the page background has a purple-to-blue gradient
 
-Scenario: Card renders with correct styling
-  Given the wizard is loaded
-  Then the form card has a white background
-  And the card has rounded corners (border-radius 10px)
-  And the card has a subtle box shadow
-```
+#### Scenario: Background gradient renders correctly
+
+- **GIVEN** the wizard is loaded
+- **THEN** the page background has a purple-to-blue gradient
+
+#### Scenario: Card renders with correct styling
+
+- **GIVEN** the wizard is loaded
+- **THEN** the form card has a white background
+- **AND** the card has rounded corners (border-radius 10px)
+- **AND** the card has a subtle box shadow
 
 ## Verification checklist
 

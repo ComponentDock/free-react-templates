@@ -43,87 +43,87 @@ Recreation of ColorLib **AutoMotive** (`https://colorlib.com/wp/template/automot
   - Footer: dark background image, white/gray text, 3 info cards at top, 4-column layout below
   - Copyright bar: dark background, social icons
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Automotive Garage Landing Page
 
 #### Scenario: Header and Navigation
 
-- **Given** the user visits the RevLine landing page
-- **Then** they should see a top bar with phone number `(+123) 4567-7890-123` and hours `Mon-Sat: 10:00 - 16:00 / Sunday Close`
-- **And** a "Find us on map" link with arrow
-- **And** social icons (Facebook, Twitter, Vimeo, Pinterest)
-- **And** a main navigation bar with the "RevLine" logo
-- **And** nav links: Home, Services, Shop, Pages (dropdown: About Us, Services Details, Shop Details, Blog Details, Contact), Blog
-- **And** search and cart icon buttons on the right
+- **GIVEN** the user visits the RevLine landing page
+- **THEN** they should see a top bar with phone number `(+123) 4567-7890-123` and hours `Mon-Sat: 10:00 - 16:00 / Sunday Close`
+- **AND** a "Find us on map" link with arrow
+- **AND** social icons (Facebook, Twitter, Vimeo, Pinterest)
+- **AND** a main navigation bar with the "RevLine" logo
+- **AND** nav links: Home, Services, Shop, Pages (dropdown: About Us, Services Details, Shop Details, Blog Details, Contact), Blog
+- **AND** search and cart icon buttons on the right
 
 #### Scenario: Hero Section
 
-- **Given** the user views the hero section
-- **Then** they should see a full-width background image (dark automotive/garage theme)
-- **And** the heading "Welcome To" (smaller, 40px) above "RevLine Garage" (large, 60px bold)
-- **And** a subtitle describing the service
-- **And** a primary CTA button labeled "Our Services" (indigo `#5F67FF`, square shape)
+- **GIVEN** the user views the hero section
+- **THEN** they should see a full-width background image (dark automotive/garage theme)
+- **AND** the heading "Welcome To" (smaller, 40px) above "RevLine Garage" (large, 60px bold)
+- **AND** a subtitle describing the service
+- **AND** a primary CTA button labeled "Our Services" (indigo `#5F67FF`, square shape)
 
 #### Scenario: Services Section
 
-- **Given** the user scrolls to the services section
-- **Then** they should see a centered section title "What We Do?" with a subtitle
-- **And** 4 service items in an alternating text/image layout:
+- **GIVEN** the user scrolls to the services section
+- **THEN** they should see a centered section title "What We Do?" with a subtitle
+- **AND** 4 service items in an alternating text/image layout:
   1. Engine Overhaul — icon + title + description, paired with a service image
   2. Power Steering — icon + title + description, paired with a service image
   3. Oil Change — icon + title + description, paired with a service image
   4. Upgrades Car — icon + title + description, paired with a service image
-- **And** each service has an icon, a title, and a short description paragraph
+- **AND** each service has an icon, a title, and a short description paragraph
 
 #### Scenario: Choose Us Section
 
-- **Given** the user scrolls to the "Choose Us" section
-- **Then** they should see a split layout: left half is a background image, right half has text content
-- **And** the heading "We Have 20 Years Of Experience In Auto Car"
-- **And** a checklist of 4 items with check icons (indigo colored)
-- **And** an "About Us" primary button
+- **GIVEN** the user scrolls to the "Choose Us" section
+- **THEN** they should see a split layout: left half is a background image, right half has text content
+- **AND** the heading "We Have 20 Years Of Experience In Auto Car"
+- **AND** a checklist of 4 items with check icons (indigo colored)
+- **AND** an "About Us" primary button
 
 #### Scenario: Products Section
 
-- **Given** the user views the products section
-- **Then** they should see a centered section title "Our Products" with subtitle
-- **And** a 4-column grid of product cards, each with:
+- **GIVEN** the user views the products section
+- **THEN** they should see a centered section title "Our Products" with subtitle
+- **AND** a 4-column grid of product cards, each with:
   - A product image with hover overlay icons (heart, eye, compare)
   - Product name (e.g. "High Flow Fuel", "Revolution Wheels", "Tone Interior Kit", "Matte Gunmetal")
   - Price (`$800.00`) and an "Add To Cart" button
 
 #### Scenario: Testimonial Section
 
-- **Given** the user scrolls to the testimonial section
-- **Then** they should see a white-background carousel with quotation mark icons in `#5F67FF`
-- **And** testimonial quote text centered
-- **And** dot pagination indicators below
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** they should see a white-background carousel with quotation mark icons in `#5F67FF`
+- **AND** testimonial quote text centered
+- **AND** dot pagination indicators below
 
 #### Scenario: Counter/Statistics Section
 
-- **Given** the user views the statistics section
-- **Then** they should see a full-width background image with dark overlay
-- **And** a section title "About Our Statistics" in white
-- **And** 4 stat items in a row: All Project (560+), Project Completed (560+), Customers Action (560+), Awards Winner (560+)
-- **And** each stat has an icon, a large number with plus sign, and a label
+- **GIVEN** the user views the statistics section
+- **THEN** they should see a full-width background image with dark overlay
+- **AND** a section title "About Our Statistics" in white
+- **AND** 4 stat items in a row: All Project (560+), Project Completed (560+), Customers Action (560+), Awards Winner (560+)
+- **AND** each stat has an icon, a large number with plus sign, and a label
 
 #### Scenario: Latest News Section
 
-- **Given** the user views the latest news section
-- **Then** they should see a centered section title "Latest News" with subtitle
-- **And** a 3-column grid of blog post cards, each with:
+- **GIVEN** the user views the latest news section
+- **THEN** they should see a centered section title "Latest News" with subtitle
+- **AND** a 3-column grid of blog post cards, each with:
   - A featured image with author name and date overlay
   - Post title and excerpt
   - A "Continue Reading" link
 
 #### Scenario: Footer
 
-- **Given** the user scrolls to the footer
-- **Then** they should see 3 info cards at the top: Booking Repair / Appointment, Contact Us Now! / phone, Location / Find us on map
-- **And** a 4-column footer body: About (logo + description + Contact Us button), Quick Links, News items, Address/Contact info
-- **And** a copyright bar at the bottom with social icons
-- **And** a link to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** the user scrolls to the footer
+- **THEN** they should see 3 info cards at the top: Booking Repair / Appointment, Contact Us Now! / phone, Location / Find us on map
+- **AND** a 4-column footer body: About (logo + description + Contact Us button), Quick Links, News items, Address/Contact info
+- **AND** a copyright bar at the bottom with social icons
+- **AND** a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

@@ -39,161 +39,157 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 10. **Blog Section** — Centered subtitle + h2. 2-column grid: blog cards with image, date badge, title link, author line.
 11. **Footer** — 4-column: logo + description, Quick Links, New Products, Support. Bottom bar: copyright text + social icons (twitter, facebook, globe, instagram).
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays logo, nav links, and phone button
-  Given the user visits the LoanBridge page
-  Then the navbar shows a logo on the left
-  And the navbar shows navigation links: Home, About, Services, Blog, Contact
-  And the navbar shows a phone number button on the right
-  And the navbar becomes sticky when scrolling down
+#### Scenario: Navbar displays logo, nav links, and phone button
 
-Scenario: Blog dropdown menu appears on hover
-  Given the navbar is visible
-  When the user hovers over "Blog"
-  Then a dropdown submenu appears with Blog, Blog Details, Element, Apply Now links
-```
+- **GIVEN** the user visits the LoanBridge page
+- **THEN** the navbar shows a logo on the left
+- **AND** the navbar shows navigation links: Home, About, Services, Blog, Contact
+- **AND** the navbar shows a phone number button on the right
+- **AND** the navbar becomes sticky when scrolling down
+
+#### Scenario: Blog dropdown menu appears on hover
+
+- **GIVEN** the navbar is visible
+- **WHEN** the user hovers over "Blog"
+- **THEN** a dropdown submenu appears with Blog, Blog Details, Element, Apply Now links
 
 ### Hero
 
-```gherkin
-Scenario: Hero slider displays headline and CTA
-  Given the user visits the LoanBridge page
-  Then the hero section shows a subtitle "Achieve your financial goal"
-  And the hero shows a headline about small business loans
-  And the hero shows an "Apply for Loan" button
-  And the hero shows a person image on the right
+#### Scenario: Hero slider displays headline and CTA
 
-Scenario: Hero has two slides
-  Given the hero slider is active
-  Then the slider cycles between two slides automatically
-```
+- **GIVEN** the user visits the LoanBridge page
+- **THEN** the hero section shows a subtitle "Achieve your financial goal"
+- **AND** the hero shows a headline about small business loans
+- **AND** the hero shows an "Apply for Loan" button
+- **AND** the hero shows a person image on the right
+
+#### Scenario: Hero has two slides
+
+- **GIVEN** the hero slider is active
+- **THEN** the slider cycles between two slides automatically
 
 ### Hero Stats Bar
 
-```gherkin
-Scenario: Stats bar shows key selling points below hero
-  Given the hero section is displayed
-  Then a dark stats bar appears below the hero
-  And the bar shows 4 items: an image, and three icon+text pairs about quick loan approvals
-```
+#### Scenario: Stats bar shows key selling points below hero
+
+- **GIVEN** the hero section is displayed
+- **THEN** a dark stats bar appears below the hero
+- **AND** the bar shows 4 items: an image, and three icon+text pairs about quick loan approvals
 
 ### About Section
 
-```gherkin
-Scenario: About section shows company info and images
-  Given the user scrolls to the about section
-  Then the section displays "About Our Company" subtitle
-  And the section shows an h2 heading about building a brighter financial future
-  And the section shows two paragraphs of description
-  And the section shows an "Apply for Loan" button
-  And the section shows overlapping about images on the right
-```
+#### Scenario: About section shows company info and images
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the section displays "About Our Company" subtitle
+- **AND** the section shows an h2 heading about building a brighter financial future
+- **AND** the section shows two paragraphs of description
+- **AND** the section shows an "Apply for Loan" button
+- **AND** the section shows overlapping about images on the right
 
 ### Services Section
 
-```gherkin
-Scenario: Services section shows 4 service cards
-  Given the user scrolls to the services section
-  Then the section displays "Services that we are providing" subtitle
-  And the section shows an h2 heading about high performance services
-  And the section shows 4 service cards in a grid
-  And each card has an icon, title, and short description
-  And the services are: Business Loan, Commercial Loans, Construction Loans, Business Loan
+#### Scenario: Services section shows 4 service cards
 
-Scenario: Services section has a background image
-  Given the services section is visible
-  Then the section has a subtle background image
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** the section displays "Services that we are providing" subtitle
+- **AND** the section shows an h2 heading about high performance services
+- **AND** the section shows 4 service cards in a grid
+- **AND** each card has an icon, title, and short description
+- **AND** the services are: Business Loan, Commercial Loans, Construction Loans, Business Loan
+
+#### Scenario: Services section has a background image
+
+- **GIVEN** the services section is visible
+- **THEN** the section has a subtle background image
 
 ### Why Choose Us Section
 
-```gherkin
-Scenario: Support section shows image with badge and checklist
-  Given the user scrolls to the support section
-  Then the section shows a large image with a "Since 1992" badge overlay
-  And the section shows "Why Choose Our Company" subtitle
-  And the section shows an h2 heading about sustainable future
-  And the section shows a paragraph and 4 checked items
-```
+#### Scenario: Support section shows image with badge and checklist
+
+- **GIVEN** the user scrolls to the support section
+- **THEN** the section shows a large image with a "Since 1992" badge overlay
+- **AND** the section shows "Why Choose Our Company" subtitle
+- **AND** the section shows an h2 heading about sustainable future
+- **AND** the section shows a paragraph and 4 checked items
 
 ### Application Form
 
-```gherkin
-Scenario: Application form has loan configuration fields
-  Given the user scrolls to the application section
-  Then the section shows "Apply in Three Easy Steps" subtitle
-  And the form shows a "Select Amount" dropdown
-  And the form shows a "Duration Month" dropdown
-  And the form shows a "Return Amount" text input
-  And the form shows an "Apply for Loan" submit button
+#### Scenario: Application form has loan configuration fields
 
-Scenario: Application form has a background image
-  Given the application section is visible
-  Then the section has a subtle background image
-```
+- **GIVEN** the user scrolls to the application section
+- **THEN** the section shows "Apply in Three Easy Steps" subtitle
+- **AND** the form shows a "Select Amount" dropdown
+- **AND** the form shows a "Duration Month" dropdown
+- **AND** the form shows a "Return Amount" text input
+- **AND** the form shows an "Apply for Loan" submit button
+
+#### Scenario: Application form has a background image
+
+- **GIVEN** the application section is visible
+- **THEN** the section has a subtle background image
 
 ### Team Section
 
-```gherkin
-Scenario: Team section shows 4 team members
-  Given the user scrolls to the team section
-  Then the section shows "Our Loan Section Team Members" subtitle
-  And the section shows an h2 heading about professional team members
-  And the section shows 4 team member cards in a grid
-  And each card has a photo, name, role, and social media overlay icons
+#### Scenario: Team section shows 4 team members
 
-Scenario: Team social overlay appears on hover
-  Given a team member card is displayed
-  When the user hovers over the team member photo
-  Then social media icons (facebook, twitter, globe) appear as an overlay
-```
+- **GIVEN** the user scrolls to the team section
+- **THEN** the section shows "Our Loan Section Team Members" subtitle
+- **AND** the section shows an h2 heading about professional team members
+- **AND** the section shows 4 team member cards in a grid
+- **AND** each card has a photo, name, role, and social media overlay icons
+
+#### Scenario: Team social overlay appears on hover
+
+- **GIVEN** a team member card is displayed
+- **WHEN** the user hovers over the team member photo
+- **THEN** social media icons (facebook, twitter, globe) appear as an overlay
 
 ### Testimonial Section
 
-```gherkin
-Scenario: Testimonial section shows carousel
-  Given the user scrolls to the testimonial section
-  Then the section displays a quote icon
-  And the section shows testimonial text
-  And the section shows a founder photo, name, and role
-  And the testimonial content is in a carousel/slider format
+#### Scenario: Testimonial section shows carousel
 
-Scenario: Testimonial has dark background
-  Given the testimonial section is visible
-  Then the section has a dark background color
-```
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** the section displays a quote icon
+- **AND** the section shows testimonial text
+- **AND** the section shows a founder photo, name, and role
+- **AND** the testimonial content is in a carousel/slider format
+
+#### Scenario: Testimonial has dark background
+
+- **GIVEN** the testimonial section is visible
+- **THEN** the section has a dark background color
 
 ### Blog Section
 
-```gherkin
-Scenario: Blog section shows 2 blog cards
-  Given the user scrolls to the blog section
-  Then the section shows "News from our latest blog" subtitle
-  And the section shows an h2 heading about news from around the world
-  And the section shows 2 blog cards in a 2-column grid
-  And each card has an image, date, title link, and author line
-```
+#### Scenario: Blog section shows 2 blog cards
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the section shows "News from our latest blog" subtitle
+- **AND** the section shows an h2 heading about news from around the world
+- **AND** the section shows 2 blog cards in a 2-column grid
+- **AND** each card has an image, date, title link, and author line
 
 ### Footer
 
-```gherkin
-Scenario: Footer shows 4-column layout
-  Given the user scrolls to the footer
-  Then the footer shows a logo and description in the first column
-  And the footer shows Quick Links in the second column
-  And the footer shows New Products in the third column
-  And the footer shows Support links in the fourth column
+#### Scenario: Footer shows 4-column layout
 
-Scenario: Footer bottom bar has copyright and social icons
-  Given the footer is displayed
-  Then the bottom bar shows a copyright notice
-  And the bottom bar shows social media icons (twitter, facebook, globe, instagram)
-  And the footer includes a link to componentdock.com
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer shows a logo and description in the first column
+- **AND** the footer shows Quick Links in the second column
+- **AND** the footer shows New Products in the third column
+- **AND** the footer shows Support links in the fourth column
+
+#### Scenario: Footer bottom bar has copyright and social icons
+
+- **GIVEN** the footer is displayed
+- **THEN** the bottom bar shows a copyright notice
+- **AND** the bottom bar shows social media icons (twitter, facebook, globe, instagram)
+- **AND** the footer includes a link to componentdock.com
 
 ## Verification Checklist
 

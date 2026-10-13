@@ -75,136 +75,152 @@ testimonial carousel, blog posts, a contact form, and a multi-column footer.
 - Mobile hamburger menu (off-canvas)
 - Countdown timer on Special/Sale section
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Bar
 
-Scenario: Top bar displays social icons and contact info
-  Given the user is on the page
-  Then the top bar shows social media icons (Facebook, Twitter, Instagram, LinkedIn) on the left
-  And the phone number "(+1) 234 5678 9101" and email "shop@yourdomain.com" on the right
-  And the top bar has a light background
+#### Scenario: Top bar displays social icons and contact info
+
+- **GIVEN** the user is on the page
+- **THEN** the top bar shows social media icons (Facebook, Twitter, Instagram, LinkedIn) on the left
+- **AND** the phone number "(+1) 234 5678 9101" and email "shop@yourdomain.com" on the right
+- **AND** the top bar has a light background
 
 ### Navbar
 
-Scenario: Navbar displays logo and navigation links
-  Given the user is on the page
-  Then the navbar shows the logo "Tradium" with an orange dot accent
-  And the navigation links are: Home, Products, About Us, Special, Testimonials, Blog, Contact
-  And the navbar has a white background and is sticky on scroll
+#### Scenario: Navbar displays logo and navigation links
 
-Scenario: Navbar highlights active section
-  Given the user scrolls down the page
-  Then the current section's nav link is highlighted in orange (#f16821)
+- **GIVEN** the user is on the page
+- **THEN** the navbar shows the logo "Tradium" with an orange dot accent
+- **AND** the navigation links are: Home, Products, About Us, Special, Testimonials, Blog, Contact
+- **AND** the navbar has a white background and is sticky on scroll
 
-Scenario: Mobile hamburger menu
-  Given the user is on a mobile viewport
-  Then a hamburger menu icon is visible
-  And clicking it opens an off-canvas mobile menu
+#### Scenario: Navbar highlights active section
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the current section's nav link is highlighted in orange (#f16821)
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** a hamburger menu icon is visible
+- **AND** clicking it opens an off-canvas mobile menu
 
 ### Hero Section
 
-Scenario: Hero displays heading and call-to-action buttons
-  Given the user is on the page
-  Then the hero shows "Shop With Us" heading
-  And a subtitle paragraph below the heading
-  And two buttons: "Shop Now" (white outline) and "Club Membership" (white solid)
-  And the hero has a full-width background image with overlay
+#### Scenario: Hero displays heading and call-to-action buttons
+
+- **GIVEN** the user is on the page
+- **THEN** the hero shows "Shop With Us" heading
+- **AND** a subtitle paragraph below the heading
+- **AND** two buttons: "Shop Now" (white outline) and "Club Membership" (white solid)
+- **AND** the hero has a full-width background image with overlay
 
 ### Popular Products
 
-Scenario: Popular products grid displays 6 products
-  Given the user scrolls to the Products section
-  Then the section shows "Popular Products" sub-title and "Our Products" title
-  And 6 product cards are displayed in a 3-column grid
-  And each product card shows an image, title, star rating (5.0), heart/wishlist count, description, and two buttons ("Cart" black solid, "View" black outline)
+#### Scenario: Popular products grid displays 6 products
+
+- **GIVEN** the user scrolls to the Products section
+- **THEN** the section shows "Popular Products" sub-title and "Our Products" title
+- **AND** 6 product cards are displayed in a 3-column grid
+- **AND** each product card shows an image, title, star rating (5.0), heart/wishlist count, description, and two buttons ("Cart" black solid, "View" black outline)
 
 ### Newsletter Notification
 
-Scenario: Newsletter section collects email subscriptions
-  Given the user scrolls to the notification section
-  Then a parallax background image is displayed
-  And the heading "Get notified on each updates." is shown
-  And an email input field and "Subscribe" button are present
+#### Scenario: Newsletter section collects email subscriptions
+
+- **GIVEN** the user scrolls to the notification section
+- **THEN** a parallax background image is displayed
+- **AND** the heading "Get notified on each updates." is shown
+- **AND** an email input field and "Subscribe" button are present
 
 ### Featured Products
 
-Scenario: Featured products section shows detailed product spotlights
-  Given the user scrolls to the Featured Products section
-  Then the section has a light background
-  And shows "Awesome Products" sub-title and "Featured Products" title
-  And 2 featured product items are displayed, each in a white card
-  And each item has a large image, numbered label (01., 02.), "About This Product" heading, description, price with strikethrough ($269.00) and sale price ($69.00)
-  And two buttons: "View Details" (black outline) and "Add To Cart" (black solid)
-  And the layout alternates image left/text right then image right/text left
+#### Scenario: Featured products section shows detailed product spotlights
+
+- **GIVEN** the user scrolls to the Featured Products section
+- **THEN** the section has a light background
+- **AND** shows "Awesome Products" sub-title and "Featured Products" title
+- **AND** 2 featured product items are displayed, each in a white card
+- **AND** each item has a large image, numbered label (01., 02.), "About This Product" heading, description, price with strikethrough ($269.00) and sale price ($69.00)
+- **AND** two buttons: "View Details" (black outline) and "Add To Cart" (black solid)
+- **AND** the layout alternates image left/text right then image right/text left
 
 ### About Us
 
-Scenario: About section shows company info with trust badge
-  Given the user scrolls to the About Us section
-  Then a large image is displayed on the left
-  And an "experience" badge overlays the image with teal background (#46ddb0) showing "Trusted Merchant" and "for 50 years"
-  And the right side shows "Merchant Company" sub-title, "About Us" title, description text, and "Learn More" button (black with hover effect)
+#### Scenario: About section shows company info with trust badge
+
+- **GIVEN** the user scrolls to the About Us section
+- **THEN** a large image is displayed on the left
+- **AND** an "experience" badge overlays the image with teal background (#46ddb0) showing "Trusted Merchant" and "for 50 years"
+- **AND** the right side shows "Merchant Company" sub-title, "About Us" title, description text, and "Learn More" button (black with hover effect)
 
 ### Team / Leadership
 
-Scenario: Team section displays 3 team members
-  Given the user scrolls to the Team section
-  Then the section shows "Team" sub-title and "Leadership" title
-  And 3 team member cards are displayed in a 3-column layout
-  And each card shows a circular photo, name, position (muted text), bio paragraph, and 4 social circle icons (Facebook, Twitter, LinkedIn, Instagram)
+#### Scenario: Team section displays 3 team members
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** the section shows "Team" sub-title and "Leadership" title
+- **AND** 3 team member cards are displayed in a 3-column layout
+- **AND** each card shows a circular photo, name, position (muted text), bio paragraph, and 4 social circle icons (Facebook, Twitter, LinkedIn, Instagram)
 
 ### Special / Sale
 
-Scenario: Special section displays a summer sale promotion
-  Given the user scrolls to the Special section
-  Then a parallax background image is displayed
-  And "Special Promo" sub-title and "Summer Sale" title are shown
-  And a countdown timer is displayed
-  And a "Shop Now" button (white outline) is present
+#### Scenario: Special section displays a summer sale promotion
+
+- **GIVEN** the user scrolls to the Special section
+- **THEN** a parallax background image is displayed
+- **AND** "Special Promo" sub-title and "Summer Sale" title are shown
+- **AND** a countdown timer is displayed
+- **AND** a "Shop Now" button (white outline) is present
 
 ### Services
 
-Scenario: Services section displays 6 service offerings
-  Given the user scrolls to the Services section
-  Then the section has a light background
-  And shows "Our Services" sub-title and "We Offer Services" title
-  And 6 service cards are displayed in a 3-column grid
-  And each card has an orange icon, title, description, and "Learn More" link
+#### Scenario: Services section displays 6 service offerings
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the section has a light background
+- **AND** shows "Our Services" sub-title and "We Offer Services" title
+- **AND** 6 service cards are displayed in a 3-column grid
+- **AND** each card has an orange icon, title, description, and "Learn More" link
 
 ### Testimonials
 
-Scenario: Testimonials carousel shows customer quotes
-  Given the user scrolls to the Testimonials section
-  Then "People Says" sub-title and "Testimonials" title are shown
-  And an Owl Carousel slider displays 4 testimonials one at a time
-  And each testimonial shows a large photo, italicized quote, and person's name
+#### Scenario: Testimonials carousel shows customer quotes
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** "People Says" sub-title and "Testimonials" title are shown
+- **AND** an Owl Carousel slider displays 4 testimonials one at a time
+- **AND** each testimonial shows a large photo, italicized quote, and person's name
 
 ### Blog
 
-Scenario: Blog section shows 3 recent posts
-  Given the user scrolls to the Blog section
-  Then "Blog" sub-title and "Blog Posts" title are shown
-  And 3 blog post cards are displayed in a 3-column grid
-  And each card shows an image, title, meta info (author, date, category), excerpt, and "Continue Reading..." link
+#### Scenario: Blog section shows 3 recent posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** "Blog" sub-title and "Blog Posts" title are shown
+- **AND** 3 blog post cards are displayed in a 3-column grid
+- **AND** each card shows an image, title, meta info (author, date, category), excerpt, and "Continue Reading..." link
 
 ### Contact
 
-Scenario: Contact form collects user messages
-  Given the user scrolls to the Contact section
-  Then the section has a light background
-  And shows "Contact Form" sub-title and "Get In Touch" title
-  And a white card contains the form with fields: First Name, Last Name, Email, Subject, Message (textarea)
-  And a "Send Message" button (black, square corners)
+#### Scenario: Contact form collects user messages
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** the section has a light background
+- **AND** shows "Contact Form" sub-title and "Get In Touch" title
+- **AND** a white card contains the form with fields: First Name, Last Name, Email, Subject, Message (textarea)
+- **AND** a "Send Message" button (black, square corners)
 
 ### Footer
 
-Scenario: Footer displays company info, links, and social
-  Given the user scrolls to the footer
-  Then the footer has a white background
-  And shows three columns: "About Us" text, "Quick Links" (About Us, Services, Testimonials, Contact Us), and "Follow Us" social icons
-  And a "Featured Product" sidebar with product image, name, price, and "Add to Cart" button
-  And a copyright line at the bottom with "Made with Component Dock" link
+#### Scenario: Footer displays company info, links, and social
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a white background
+- **AND** shows three columns: "About Us" text, "Quick Links" (About Us, Services, Testimonials, Contact Us), and "Follow Us" social icons
+- **AND** a "Featured Product" sidebar with product image, name, price, and "Add to Cart" button
+- **AND** a copyright line at the bottom with "Made with Component Dock" link
 
 ## Verification Checklist
 

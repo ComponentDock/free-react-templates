@@ -32,9 +32,11 @@ Recreation of ColorLib `toothcare` (`https://preview.colorlib.com/theme/toothcar
 12. **Pricing & Packages**: Service tier cards with "GET STARTED" buttons.
 13. **Footer**: Clinic info, Quick links, Recent posts, Contact info, and mandatory Component Dock attribution ("Made with Component Dock" linking `https://www.componentdock.com/`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: BrightMolar Landing Page
+
+#### Scenario: BrightMolar Landing Page
 
 - Scenario: User loads the landing page and views the header navigation and hero section.
 - Scenario: User fills out and submits the appointment booking form with valid data.

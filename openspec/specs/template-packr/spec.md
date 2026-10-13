@@ -41,41 +41,61 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 
 ### Requirement 1: Navigation
 
+#### Scenario: Navigation
+
 The navbar shall display the brand name "Packr" and navigation links to all sections. On mobile, a hamburger button shall toggle a dropdown menu.
 
 ### Requirement 2: Hero Section
+
+#### Scenario: Hero Section
 
 The hero section shall display a background image with a dark overlay, a subtitle, a main heading, and a CTA button linking to the contact section.
 
 ### Requirement 3: Services Section
 
+#### Scenario: Services Section
+
 The services section shall display 6 service cards in a responsive grid, each with an icon, title, and description.
 
 ### Requirement 4: Portfolio Section
+
+#### Scenario: Portfolio Section
 
 The portfolio section shall display 6 project items in a 2-column grid with hover effects showing project tags and title.
 
 ### Requirement 5: Blog Section
 
+#### Scenario: Blog Section
+
 The blog section shall display a featured image alongside 4 blog post cards, each with category, date, and title.
 
 ### Requirement 6: Counter Section
+
+#### Scenario: Counter Section
 
 The counter section shall display 3 counters that animate from 0 to their target values when scrolled into view.
 
 ### Requirement 7: Testimonials Section
 
+#### Scenario: Testimonials Section
+
 The testimonials section shall display 3 client testimonials with photos, quotes, and attribution.
 
 ### Requirement 8: CTA Section
+
+#### Scenario: CTA Section
 
 The CTA section shall display a call-to-action heading and a button linking to the contact section.
 
 ### Requirement 9: Footer
 
+#### Scenario: Footer
+
 The footer shall contain brand info, a newsletter signup form with email validation, social media links, and a "Component Dock" attribution link.
 
 ### Requirement 10: Responsive Design
+
+#### Scenario: Responsive Design
 
 All sections shall be responsive and display correctly on mobile, tablet, and desktop screens.
 

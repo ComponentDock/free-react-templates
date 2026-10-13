@@ -58,91 +58,102 @@ The template has a clean, professional education aesthetic:
 - Contact form (Message Us) on light gray background
 - Footer: 3-column (About, Links, Subscribe with email input)
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: EduNest Homepage
 
 #### Scenario: Navbar renders with logo and navigation links
-- **Given** the user loads the homepage
-- **Then** a sticky navigation bar is visible at the top
-- **And** the logo "EduNest" is displayed on the left in white, font-weight 900
-- **And** navigation links include: Home, Courses, Programs, Teachers
-- **And** a "Contact Us" CTA button is shown on the right with pill shape (`border-radius: 30px`), background `#7971EA`
-- **And** the active nav link color is `#7971EA`
-- **And** the navbar is transparent/overlaying the hero image
+
+- **GIVEN** the user loads the homepage
+- **THEN** a sticky navigation bar is visible at the top
+- **AND** the logo "EduNest" is displayed on the left in white, font-weight 900
+- **AND** navigation links include: Home, Courses, Programs, Teachers
+- **AND** a "Contact Us" CTA button is shown on the right with pill shape (`border-radius: 30px`), background `#7971EA`
+- **AND** the active nav link color is `#7971EA`
+- **AND** the navbar is transparent/overlaying the hero image
 
 #### Scenario: Hero section displays headline and sign-up form
-- **Given** the user views the hero area
-- **Then** a background image is displayed (education/school imagery)
-- **And** the heading reads "Learn From The Expert" in white, large font
-- **And** a paragraph with descriptive text is shown below the heading
-- **And** an "Admission Now" pill-shaped CTA button is present with background `#7971EA`
-- **And** a sign-up form is displayed on the right with fields: Email, Password, Re-type Password, and a "Sign up" submit button
-- **And** the sign-up form has a white background card overlay
+
+- **GIVEN** the user views the hero area
+- **THEN** a background image is displayed (education/school imagery)
+- **AND** the heading reads "Learn From The Expert" in white, large font
+- **AND** a paragraph with descriptive text is shown below the heading
+- **AND** an "Admission Now" pill-shaped CTA button is present with background `#7971EA`
+- **AND** a sign-up form is displayed on the right with fields: Email, Password, Re-type Password, and a "Sign up" submit button
+- **AND** the sign-up form has a white background card overlay
 
 #### Scenario: Courses section displays course carousel
-- **Given** the user scrolls to the courses section
-- **Then** a section title "Courses" is centered with a `#7971EA` background strip
-- **And** course cards are displayed in a carousel layout
-- **And** each course card shows: image, price badge, lesson/week count, course title, description, student count, and comment count
-- **And** prev/next navigation buttons are centered below the carousel
-- **And** course cards have white background with a stats row at the bottom separated by a border
+
+- **GIVEN** the user scrolls to the courses section
+- **THEN** a section title "Courses" is centered with a `#7971EA` background strip
+- **AND** course cards are displayed in a carousel layout
+- **AND** each course card shows: image, price badge, lesson/week count, course title, description, student count, and comment count
+- **AND** prev/next navigation buttons are centered below the carousel
+- **AND** course cards have white background with a stats row at the bottom separated by a border
 
 #### Scenario: Our Programs section shows alternating illustration and stats
-- **Given** the user scrolls to the programs section
-- **Then** a section title "Our Programs" is centered with descriptive paragraph
-- **And** three content rows are displayed alternating left/right layout
-- **And** each row has an illustration image on one side and text + stat counters on the other
-- **And** the stat counters show: "22,931 Yearly Graduates" and "150 Universities Worldwide" with icon + text
-- **And** section headings include "We Are Excellent In Education", "Strive for Excellent", "Education is life"
+
+- **GIVEN** the user scrolls to the programs section
+- **THEN** a section title "Our Programs" is centered with descriptive paragraph
+- **AND** three content rows are displayed alternating left/right layout
+- **AND** each row has an illustration image on one side and text + stat counters on the other
+- **AND** the stat counters show: "22,931 Yearly Graduates" and "150 Universities Worldwide" with icon + text
+- **AND** section headings include "We Are Excellent In Education", "Strive for Excellent", "Education is life"
 
 #### Scenario: Our Teachers section displays teacher profiles
-- **Given** the user scrolls to the teachers section
-- **Then** a section title "Our Teachers" is centered
-- **And** teacher profile cards are displayed in a 3-column grid
-- **And** each card shows: teacher image, name (e.g. "Benjamin Stone", "Katleen Stone", "Sadie White")
-- **And** teacher names are styled in dark text (`#343A40`)
+
+- **GIVEN** the user scrolls to the teachers section
+- **THEN** a section title "Our Teachers" is centered
+- **AND** teacher profile cards are displayed in a 3-column grid
+- **AND** each card shows: teacher image, name (e.g. "Benjamin Stone", "Katleen Stone", "Sadie White")
+- **AND** teacher names are styled in dark text (`#343A40`)
 
 #### Scenario: Testimonial section shows a quote with dark overlay
-- **Given** the user scrolls to the testimonial section
-- **Then** a background image is displayed with a dark overlay (`rgba(0,0,0,0.7)`)
-- **And** a centered quote block is shown with an author photo (rounded circle)
-- **And** the author name "Jerome Jensen" is displayed above the blockquote
-- **And** the quote text is enclosed in a blockquote element
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** a background image is displayed with a dark overlay (`rgba(0,0,0,0.7)`)
+- **AND** a centered quote block is shown with an author photo (rounded circle)
+- **AND** the author name "Jerome Jensen" is displayed above the blockquote
+- **AND** the quote text is enclosed in a blockquote element
 
 #### Scenario: Why Choose Us section shows stat cards
-- **Given** the user scrolls to the Why Choose Us section
-- **Then** a section title "Why Choose Us" is centered
-- **And** stat cards are displayed in a column on the left side (`col-lg-4 ml-auto`)
-- **And** each stat card has an icon (graduation-cap or university) and a label
-- **And** stats include: "22,931 Yearly Graduates", "150 Universities Worldwide", "Top Professionals in The World", "Expand Your Knowledge", "Best Online Teaching Assistant Courses", "Best Teachers"
-- **And** icon backgrounds use the brand color `#7971EA`
+
+- **GIVEN** the user scrolls to the Why Choose Us section
+- **THEN** a section title "Why Choose Us" is centered
+- **AND** stat cards are displayed in a column on the left side (`col-lg-4 ml-auto`)
+- **AND** each stat card has an icon (graduation-cap or university) and a label
+- **AND** stats include: "22,931 Yearly Graduates", "150 Universities Worldwide", "Top Professionals in The World", "Expand Your Knowledge", "Best Online Teaching Assistant Courses", "Best Teachers"
+- **AND** icon backgrounds use the brand color `#7971EA`
 
 #### Scenario: Contact form section renders with fields
-- **Given** the user scrolls to the contact section
-- **Then** the section has a light gray background (`#F8F9FA`)
-- **And** a section title "Message Us" is centered
-- **And** a contact form is displayed with fields: First Name, Last Name, Subject, Email, Message (textarea)
-- **And** a "Send Message" submit button spans the full width with pill shape and `#7971EA` background
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** the section has a light gray background (`#F8F9FA`)
+- **AND** a section title "Message Us" is centered
+- **AND** a contact form is displayed with fields: First Name, Last Name, Subject, Email, Message (textarea)
+- **AND** a "Send Message" submit button spans the full width with pill shape and `#7971EA` background
 
 #### Scenario: Footer renders with three columns and copyright
-- **Given** the user scrolls to the footer
-- **Then** the footer has a white background
-- **And** it contains three columns: "About EduNest" (description text), "Links" (Home, Courses, Programs, Teachers), "Subscribe" (email input + subscribe button)
-- **And** a copyright line at the bottom with a "Component Dock" link
-- **And** the copyright links to `https://www.componentdock.com/`
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a white background
+- **AND** it contains three columns: "About EduNest" (description text), "Links" (Home, Courses, Programs, Teachers), "Subscribe" (email input + subscribe button)
+- **AND** a copyright line at the bottom with a "Component Dock" link
+- **AND** the copyright links to `https://www.componentdock.com/`
 
 #### Scenario: Responsive layout adapts to mobile
-- **Given** the user views the page on a viewport ≤ 768px
-- **Then** the header collapses to a mobile hamburger menu
-- **And** the hero sign-up form stacks below the heading
-- **And** multi-column grids (courses, programs, teachers) stack to single column
-- **And** navbar container padding reduces from 7rem to 15px
+
+- **GIVEN** the user views the page on a viewport ≤ 768px
+- **THEN** the header collapses to a mobile hamburger menu
+- **AND** the hero sign-up form stacks below the heading
+- **AND** multi-column grids (courses, programs, teachers) stack to single column
+- **AND** navbar container padding reduces from 7rem to 15px
 
 #### Scenario: No ColorLib references in app code
-- **Given** any source file under `apps/edunest/`
-- **Then** no file contains the strings "colorlib", "ColorLib", or "preview.colorlib.com"
-- **And** provenance is only in the spec and TEMPLATES.md
+
+- **GIVEN** any source file under `apps/edunest/`
+- **THEN** no file contains the strings "colorlib", "ColorLib", or "preview.colorlib.com"
+- **AND** provenance is only in the spec and TEMPLATES.md
 
 ## Verification checklist
 

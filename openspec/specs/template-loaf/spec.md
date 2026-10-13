@@ -40,57 +40,63 @@ Loaf is a business landing page with a navbar, hero, about band, categories, vid
 
 8. **Footer** — Dark navy (#04091e) background. Three columns: "About Us" with description, "Newsletter" with email input + button, "Follow Us" with social icons. Bottom bar: copyright text + "More templates at Component Dock" link to https://www.componentdock.com/
 
-## Scenarios
+## Requirements
 
 ### Gherkin Requirements
 
-```gherkin
 Feature: Loaf bakery template
 
-  Scenario: Navbar displays brand and navigation
-    Given the page loads
-    Then the navbar shows "Loaf" as the brand
-    And the navbar has links: Home, About, Category, Video, Review, Blog, Contact
+#### Scenario: Navbar displays brand and navigation
 
-  Scenario: Hero section renders
-    Given the page loads
-    Then the hero shows heading "Whenever we bake, bake with our heart"
-    And the hero shows subtitle "Love with baking items"
-    And the hero shows a "Check Our Menu" button
+- **GIVEN** the page loads
+- **THEN** the navbar shows "Loaf" as the brand
+- **AND** the navbar has links: Home, About, Category, Video, Review, Blog, Contact
 
-  Scenario: About section renders
-    Given the page loads
-    Then the about section shows heading "Brand new app to blow your mind"
-    And the about section shows a "Get Started Now" button
+#### Scenario: Hero section renders
 
-  Scenario: Categories section shows food items
-    Given the page loads
-    Then the categories section shows three items
-    And each category item has a title (Pizza, Bread, or Burgers)
-    And the section shows a "View Full Menu" button
+- **GIVEN** the page loads
+- **THEN** the hero shows heading "Whenever we bake, bake with our heart"
+- **AND** the hero shows subtitle "Love with baking items"
+- **AND** the hero shows a "Check Our Menu" button
 
-  Scenario: Video section renders
-    Given the page loads
-    Then the video section shows a heading
-    And the video section shows a "Get Started Now" button
+#### Scenario: About section renders
 
-  Scenario: Testimonials section renders
-    Given the page loads
-    Then the testimonials section shows heading "Enjoy our Client's Review"
-    And there are three testimonial cards with names and review text
+- **GIVEN** the page loads
+- **THEN** the about section shows heading "Brand new app to blow your mind"
+- **AND** the about section shows a "Get Started Now" button
 
-  Scenario: Blog section renders
-    Given the page loads
-    Then the blog section shows heading "Latest posts from our Blog"
-    And there are three blog cards with titles
+#### Scenario: Categories section shows food items
 
-  Scenario: Footer renders with Component Dock link
-    Given the page loads
-    Then the footer shows "About Us" heading
-    And the footer shows a newsletter section
-    And the footer links to https://www.componentdock.com/
-    And the footer text mentions "Component Dock"
-```
+- **GIVEN** the page loads
+- **THEN** the categories section shows three items
+- **AND** each category item has a title (Pizza, Bread, or Burgers)
+- **AND** the section shows a "View Full Menu" button
+
+#### Scenario: Video section renders
+
+- **GIVEN** the page loads
+- **THEN** the video section shows a heading
+- **AND** the video section shows a "Get Started Now" button
+
+#### Scenario: Testimonials section renders
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section shows heading "Enjoy our Client's Review"
+- **AND** there are three testimonial cards with names and review text
+
+#### Scenario: Blog section renders
+
+- **GIVEN** the page loads
+- **THEN** the blog section shows heading "Latest posts from our Blog"
+- **AND** there are three blog cards with titles
+
+#### Scenario: Footer renders with Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** the footer shows "About Us" heading
+- **AND** the footer shows a newsletter section
+- **AND** the footer links to https://www.componentdock.com/
+- **AND** the footer text mentions "Component Dock"
 
 ## Notes
 

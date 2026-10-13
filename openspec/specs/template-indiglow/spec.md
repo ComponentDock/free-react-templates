@@ -83,191 +83,196 @@ Extracted from `https://preview.colorlib.com/theme/blueline/css/main.css` and pr
 | Contact                 | Split — left image, right white form                                |
 | Footer                  | Black (#000)                                                        |
 
-## Gherkin Requirements
+## Requirements
 
 ### Section 1: Navbar
 
-```gherkin
 Feature: Navbar
 
-  Scenario: Desktop navbar visibility
-    Given the viewport is wider than 768px
-    When the page loads
-    Then the navbar is visible with logo on the left and navigation links on the right
-    And the navigation links include "Home", "Generic", "Elements"
+#### Scenario: Desktop navbar visibility
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is narrower than 768px
-    When the page loads
-    Then a hamburger menu icon is visible
-    And the navigation links are hidden
+- **GIVEN** the viewport is wider than 768px
+- **WHEN** the page loads
+- **THEN** the navbar is visible with logo on the left and navigation links on the right
+- **AND** the navigation links include "Home", "Generic", "Elements"
 
-  Scenario: Navbar scrolls with page
-    Given the user scrolls down from the hero
-    Then the navbar scrolls out of view (absolute positioned, not fixed)
-```
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** the page loads
+- **THEN** a hamburger menu icon is visible
+- **AND** the navigation links are hidden
+
+#### Scenario: Navbar scrolls with page
+
+- **GIVEN** the user scrolls down from the hero
+- **THEN** the navbar scrolls out of view (absolute positioned, not fixed)
 
 ### Section 2: Hero Banner
 
-```gherkin
 Feature: Hero Banner
 
-  Scenario: Full-screen hero on desktop
-    Given the viewport is wider than 991px
-    When the page loads
-    Then the hero banner fills the full viewport height
-    And a background image is displayed covering the entire banner area
-    And the text "Introducing" appears as a subtitle (uppercase, weight 200)
-    And the template name appears as a large heading (124px, weight 300, text-shadow)
+#### Scenario: Full-screen hero on desktop
 
-  Scenario: Hero scales on mobile
-    Given the viewport is narrower than 768px
-    When the page loads
-    Then the hero banner height is reduced to approximately 600px
-    And the heading font size reduces to 20px
+- **GIVEN** the viewport is wider than 991px
+- **WHEN** the page loads
+- **THEN** the hero banner fills the full viewport height
+- **AND** a background image is displayed covering the entire banner area
+- **AND** the text "Introducing" appears as a subtitle (uppercase, weight 200)
+- **AND** the template name appears as a large heading (124px, weight 300, text-shadow)
 
-  Scenario: Hero center alignment
-    When the hero banner renders
-    Then all content is centered both horizontally and vertically
-```
+#### Scenario: Hero scales on mobile
+
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** the page loads
+- **THEN** the hero banner height is reduced to approximately 600px
+- **AND** the heading font size reduces to 20px
+
+#### Scenario: Hero center alignment
+
+- **WHEN** the hero banner renders
+- **THEN** all content is centered both horizontally and vertically
 
 ### Section 3: Features
 
-```gherkin
 Feature: Features Section
 
-  Scenario: Three-column feature layout
-    Given the viewport is wider than 991px
-    When the features section is visible
-    Then there are exactly 3 feature cards in a row
-    And each card has a large gradient number (01, 02, 03) on the left
-    And each card has an uppercase title and description paragraph on the right
+#### Scenario: Three-column feature layout
 
-  Scenario: Feature number styling
-    When the features section is visible
-    Then the numbers use a gradient text effect (blue #3c50ca to cyan #77d5f7)
-    And the numbers are 48px font size with text-shadow
+- **GIVEN** the viewport is wider than 991px
+- **WHEN** the features section is visible
+- **THEN** there are exactly 3 feature cards in a row
+- **AND** each card has a large gradient number (01, 02, 03) on the left
+- **AND** each card has an uppercase title and description paragraph on the right
 
-  Scenario: Feature section background
-    When the features section renders
-    Then the background is white (#fff)
-```
+#### Scenario: Feature number styling
+
+- **WHEN** the features section is visible
+- **THEN** the numbers use a gradient text effect (blue #3c50ca to cyan #77d5f7)
+- **AND** the numbers are 48px font size with text-shadow
+
+#### Scenario: Feature section background
+
+- **WHEN** the features section renders
+- **THEN** the background is white (#fff)
 
 ### Section 4: Video
 
-```gherkin
 Feature: Video Section
 
-  Scenario: Video embed display
-    When the video section is visible
-    Then a video thumbnail is displayed with a dark overlay (rgba(0,0,0,0.5))
-    And the video frame has a thick light border (20px solid #f3f3f3)
-    And a centered play button icon overlays the thumbnail
+#### Scenario: Video embed display
 
-  Scenario: Video text content
-    When the video section is visible
-    Then a heading appears below the video with mixed weight (light + bold spans)
-    And a paragraph of descriptive text follows below the heading
-```
+- **WHEN** the video section is visible
+- **THEN** a video thumbnail is displayed with a dark overlay (rgba(0,0,0,0.5))
+- **AND** the video frame has a thick light border (20px solid #f3f3f3)
+- **AND** a centered play button icon overlays the thumbnail
+
+#### Scenario: Video text content
+
+- **WHEN** the video section is visible
+- **THEN** a heading appears below the video with mixed weight (light + bold spans)
+- **AND** a paragraph of descriptive text follows below the heading
 
 ### Section 5: Services
 
-```gherkin
 Feature: Services Section
 
-  Scenario: Split layout
-    Given the viewport is wider than 768px
-    When the services section is visible
-    Then the left half has a black background with white text
-    And the left half contains "Services" and "We Offered" headings
-    And the right half has a white background with 4 service cards in a 2x2 grid
+#### Scenario: Split layout
 
-  Scenario: Service cards
-    When the services section is visible
-    Then each service card has an icon, uppercase title, and description
-    And the cards are separated by subtle borders (#eeeeee80)
+- **GIVEN** the viewport is wider than 768px
+- **WHEN** the services section is visible
+- **THEN** the left half has a black background with white text
+- **AND** the left half contains "Services" and "We Offered" headings
+- **AND** the right half has a white background with 4 service cards in a 2x2 grid
 
-  Scenario: Mobile layout
-    Given the viewport is narrower than 768px
-    When the services section renders
-    Then the left black panel stacks above the service cards with vertical padding
-```
+#### Scenario: Service cards
+
+- **WHEN** the services section is visible
+- **THEN** each service card has an icon, uppercase title, and description
+- **AND** the cards are separated by subtle borders (#eeeeee80)
+
+#### Scenario: Mobile layout
+
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** the services section renders
+- **THEN** the left black panel stacks above the service cards with vertical padding
 
 ### Section 6: Latest Works
 
-```gherkin
 Feature: Latest Works Section
 
-  Scenario: Slider display
-    When the latest works section is visible
-    Then a heading "Some Of our Latest Works" appears with bold "Latest Works" span
-    And a subtitle text is shown below the heading
-    And an image carousel/slider displays work samples
-    And previous/next navigation arrows are visible
+#### Scenario: Slider display
 
-  Scenario: Carousel image styling
-    When the carousel renders
-    Then inactive images have reduced opacity (0.5)
-    And the active image has full opacity with a white border (20px solid #fff)
-```
+- **WHEN** the latest works section is visible
+- **THEN** a heading "Some Of our Latest Works" appears with bold "Latest Works" span
+- **AND** a subtitle text is shown below the heading
+- **AND** an image carousel/slider displays work samples
+- **AND** previous/next navigation arrows are visible
+
+#### Scenario: Carousel image styling
+
+- **WHEN** the carousel renders
+- **THEN** inactive images have reduced opacity (0.5)
+- **AND** the active image has full opacity with a white border (20px solid #fff)
 
 ### Section 7: Newsletter / Subscription
 
-```gherkin
 Feature: Newsletter Section
 
-  Scenario: Subscription form display
-    When the newsletter section is visible
-    Then a centered heading "Subscribe for our Newsletter" appears (light weight, bold "Newsletter")
-    And a subtitle "We won't send any kind of spam" is shown
-    And an email input field with rounded styling (border-radius 25px) is displayed
-    And a gradient "Get Started" button is positioned at the right end of the input
+#### Scenario: Subscription form display
 
-  Scenario: Newsletter background
-    When the newsletter section renders
-    Then the background is white (#fff)
-```
+- **WHEN** the newsletter section is visible
+- **THEN** a centered heading "Subscribe for our Newsletter" appears (light weight, bold "Newsletter")
+- **AND** a subtitle "We won't send any kind of spam" is shown
+- **AND** an email input field with rounded styling (border-radius 25px) is displayed
+- **AND** a gradient "Get Started" button is positioned at the right end of the input
+
+#### Scenario: Newsletter background
+
+- **WHEN** the newsletter section renders
+- **THEN** the background is white (#fff)
 
 ### Section 8: Contact
 
-```gherkin
 Feature: Contact Section
 
-  Scenario: Split contact layout
-    Given the viewport is wider than 768px
-    When the contact section is visible
-    Then the left column displays a contact image
-    And the right column displays a contact form
+#### Scenario: Split contact layout
 
-  Scenario: Contact form fields
-    When the contact form renders
-    Then it contains name input, email input, and message textarea
-    And a "Send Message" gradient button is displayed below the fields
-    And inputs have placeholder text and transparent background with border
+- **GIVEN** the viewport is wider than 768px
+- **WHEN** the contact section is visible
+- **THEN** the left column displays a contact image
+- **AND** the right column displays a contact form
 
-  Scenario: Mobile contact layout
-    Given the viewport is narrower than 768px
-    When the contact section renders
-    Then the image stacks above the form vertically
-```
+#### Scenario: Contact form fields
+
+- **WHEN** the contact form renders
+- **THEN** it contains name input, email input, and message textarea
+- **AND** a "Send Message" gradient button is displayed below the fields
+- **AND** inputs have placeholder text and transparent background with border
+
+#### Scenario: Mobile contact layout
+
+- **GIVEN** the viewport is narrower than 768px
+- **WHEN** the contact section renders
+- **THEN** the image stacks above the form vertically
 
 ### Section 9: Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer display
-    When the footer is visible
-    Then the background is black (#000)
-    And a copyright line is displayed with white text
-    And the footer links (heart icon and "Component Dock" link) use accent blue (#77d5f7)
+#### Scenario: Footer display
 
-  Scenario: Footer social icons
-    When the footer renders
-    Then social media icons are displayed in a row (Facebook, Twitter, Dribbble, Behance)
-    And each icon has a dark background (#1e1e1e) with gray icon color (#777)
-    And on hover the icon turns white
-```
+- **WHEN** the footer is visible
+- **THEN** the background is black (#000)
+- **AND** a copyright line is displayed with white text
+- **AND** the footer links (heart icon and "Component Dock" link) use accent blue (#77d5f7)
+
+#### Scenario: Footer social icons
+
+- **WHEN** the footer renders
+- **THEN** social media icons are displayed in a row (Facebook, Twitter, Dribbble, Behance)
+- **AND** each icon has a dark background (#1e1e1e) with gray icon color (#777)
+- **AND** on hover the icon turns white
 
 ## Verification Checklist
 

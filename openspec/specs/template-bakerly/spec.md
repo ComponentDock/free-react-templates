@@ -87,84 +87,94 @@ Recreation of ColorLib **Cakes** template.
    Component Dock attribution.
 10. **Back-to-top button** — Fixed position, bottom-right, orange circle.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Bakerly — Bakery Cake Shop Template
 
 #### Scenario: Navbar renders correctly
-  Given the page loads
-  When the navbar is visible
-  Then it shows the logo, nav links (Home, Product, About, Blog, Contact),
+
+- **GIVEN** the page loads
+- **WHEN** the navbar is visible
+- **THEN** it shows the logo, nav links (Home, Product, About, Blog, Contact),
     a phone number, and an "Order Online" button
-  And it becomes sticky with a white background and shadow on scroll
+- **AND** it becomes sticky with a white background and shadow on scroll
 
 #### Scenario: Hero section displays
-  Given the page loads
-  When the hero section renders
-  Then it shows a large heading "Delicious Cake For Everyone"
-  And a decorative "Delicious" text in Lobster font at 6% opacity
-  And a body paragraph beneath the heading
-  And an "Explore Menu" pill button
-  And a cake image on the right side in an organic rounded shape
-  And a decorative cake shape bleeds at the bottom-left
+
+- **GIVEN** the page loads
+- **WHEN** the hero section renders
+- **THEN** it shows a large heading "Delicious Cake For Everyone"
+- **AND** a decorative "Delicious" text in Lobster font at 6% opacity
+- **AND** a body paragraph beneath the heading
+- **AND** an "Explore Menu" pill button
+- **AND** a cake image on the right side in an organic rounded shape
+- **AND** a decorative cake shape bleeds at the bottom-left
 
 #### Scenario: Popular Products section displays
-  Given the page loads
-  When the popular products section renders
-  Then it shows a section label "Most Popular"
-  And a heading "Our Exclusive Cakes"
-  And at least 3 product cards in a grid
-  And each card has a cake image, name, description, and an "Order Now" button
-  And the product cards have soft peach backgrounds and rounded bottom-right corners
+
+- **GIVEN** the page loads
+- **WHEN** the popular products section renders
+- **THEN** it shows a section label "Most Popular"
+- **AND** a heading "Our Exclusive Cakes"
+- **AND** at least 3 product cards in a grid
+- **AND** each card has a cake image, name, description, and an "Order Now" button
+- **AND** the product cards have soft peach backgrounds and rounded bottom-right corners
 
 #### Scenario: About section displays
-  Given the page loads
-  When the about section renders
-  Then it shows a large image on the left
-  And a label "Fresh & Delicious"
-  And a heading "A Simple Way to Eating Delicious"
-  And body text
-  And an "Our Story" outlined button
+
+- **GIVEN** the page loads
+- **WHEN** the about section renders
+- **THEN** it shows a large image on the left
+- **AND** a label "Fresh & Delicious"
+- **AND** a heading "A Simple Way to Eating Delicious"
+- **AND** body text
+- **AND** an "Our Story" outlined button
 
 #### Scenario: Services section displays
-  Given the page loads
-  When the services section renders
-  Then it shows a section label "Our Features"
-  And a heading "Quality is Our First Priority"
-  And 3 feature cards with icons, titles, and descriptions
-  And the section has a decorative shape element
+
+- **GIVEN** the page loads
+- **WHEN** the services section renders
+- **THEN** it shows a section label "Our Features"
+- **AND** a heading "Quality is Our First Priority"
+- **AND** 3 feature cards with icons, titles, and descriptions
+- **AND** the section has a decorative shape element
 
 #### Scenario: Video section displays
-  Given the page loads
-  When the video section renders
-  Then it shows a full-width background image
-  And a centered play button that triggers a video popup
+
+- **GIVEN** the page loads
+- **WHEN** the video section renders
+- **THEN** it shows a full-width background image
+- **AND** a centered play button that triggers a video popup
 
 #### Scenario: Testimonials section displays
-  Given the page loads
-  When the testimonials section renders
-  Then it shows a section label "Testimonial"
-  And a heading "What Customers Say"
-  And at least one testimonial with a quote, avatar, name, and title
+
+- **GIVEN** the page loads
+- **WHEN** the testimonials section renders
+- **THEN** it shows a section label "Testimonial"
+- **AND** a heading "What Customers Say"
+- **AND** at least one testimonial with a quote, avatar, name, and title
 
 #### Scenario: Instagram feed section displays
-  Given the page loads
-  When the Instagram section renders
-  Then it shows a horizontal row of food images
-  And each image has an Instagram icon overlay on hover
+
+- **GIVEN** the page loads
+- **WHEN** the Instagram section renders
+- **THEN** it shows a horizontal row of food images
+- **AND** each image has an Instagram icon overlay on hover
 
 #### Scenario: Footer renders correctly
-  Given the page loads
-  When the footer renders
-  Then it shows 4 columns: logo + social links, Quick Links, Cake list, Contact
-  And the footer bottom shows copyright with Component Dock attribution
-  And the footer background is warm off-white (`#FFF7F3`)
+
+- **GIVEN** the page loads
+- **WHEN** the footer renders
+- **THEN** it shows 4 columns: logo + social links, Quick Links, Cake list, Contact
+- **AND** the footer bottom shows copyright with Component Dock attribution
+- **AND** the footer background is warm off-white (`#FFF7F3`)
 
 #### Scenario: Back-to-top button works
-  Given the page loads and user scrolls down
-  When the back-to-top button is visible
-  And the user clicks it
-  Then the page scrolls to the top
+
+- **GIVEN** the page loads and user scrolls down
+- **WHEN** the back-to-top button is visible
+- **AND** the user clicks it
+- **THEN** the page scrolls to the top
 
 ## Verification checklist
 

@@ -33,74 +33,83 @@ Extracted from the live preview at https://preview.colorlib.com/theme/megasis/as
 | Body font size                 | 16px                              | Default paragraph                                  |
 | Body line height               | 30px                              | Paragraphs                                         |
 
-## Gherkin requirements
+## Requirements
 
 ### Header
 
-Scenario: Top bar with logo, social links, and sign-in
-Given a visitor loads the homepage
-Then they see a header top bar with a logo centered
-And social media icon links (Facebook, Instagram, Twitter, YouTube, Vimeo, LinkedIn) on the right
-And a "Sign in" button/link on the far right
+#### Scenario: Top bar with logo, social links, and sign-in
 
-Scenario: Sticky navigation with category links
-Given the header-bottom sticky nav bar
-Then it shows the logo on the left
-And category navigation links: Home, Science, Technology, Beauty, Health, Arts & Culture, Opinion, Videos, Gallery
-And a search input field on the right
+- **GIVEN** a visitor loads the homepage
+- **THEN** they see a header top bar with a logo centered
+- **AND** social media icon links (Facebook, Instagram, Twitter, YouTube, Vimeo, LinkedIn) on the right
+- **AND** a "Sign in" button/link on the far right
+
+#### Scenario: Sticky navigation with category links
+
+- **GIVEN** the header-bottom sticky nav bar
+- **THEN** it shows the logo on the left
+- **AND** category navigation links: Home, Science, Technology, Beauty, Health, Arts & Culture, Opinion, Videos, Gallery
+- **AND** a search input field on the right
 
 ### What's New Section
 
-Scenario: Featured article with sidebar
-Given the "What's News" section
-Then a large featured article is displayed on the left (7 columns) with image, category tag, headline, and author byline
-And three smaller article cards on the right (5 columns) each with image, category tag, headline, and author
+#### Scenario: Featured article with sidebar
+
+- **GIVEN** the "What's News" section
+- **THEN** a large featured article is displayed on the left (7 columns) with image, category tag, headline, and author byline
+- **AND** three smaller article cards on the right (5 columns) each with image, category tag, headline, and author
 
 ### Technology / Article Grid Section
 
-Scenario: Category article grid (Arts & Culture)
-Given the "Arts & Culture" technology section
-Then it displays a section title with a "See All" link on the right
-And a 3-column grid of article cards each with image, category tag, headline, author byline
+#### Scenario: Category article grid (Arts & Culture)
 
-Scenario: Second technology section (4 articles)
-Given the second technology section
-Then it displays a section title with "See All" link
-And a 4-column grid of article cards with image, category tag, headline, author
+- **GIVEN** the "Arts & Culture" technology section
+- **THEN** it displays a section title with a "See All" link on the right
+- **AND** a 3-column grid of article cards each with image, category tag, headline, author byline
+
+#### Scenario: Second technology section (4 articles)
+
+- **GIVEN** the second technology section
+- **THEN** it displays a section title with "See All" link
+- **AND** a 4-column grid of article cards with image, category tag, headline, author
 One article card may have a video play icon overlay
 
 ### What's New Section 2 (Video Focus)
 
-Scenario: Video article with sidebar
-Given the second "What's News" section (video-focused)
-Then a large video article is displayed on the left with a play icon overlay
-And three smaller article cards on the right
+#### Scenario: Video article with sidebar
+
+- **GIVEN** the second "What's News" section (video-focused)
+- **THEN** a large video article is displayed on the left with a play icon overlay
+- **AND** three smaller article cards on the right
 
 ### Newsletter / Subscribe Section
 
-Scenario: Newsletter subscription form
-Given the newsletter section at the bottom of main content
-Then it displays "Subscribe to the newsletter" heading
-And descriptive text about the digest
-And an email input field with "Enter your mail" placeholder
-And a "Send Now" button
-And a disclaimer/privacy text below the form
-And the section has a light gray background (#f7f7f7)
+#### Scenario: Newsletter subscription form
+
+- **GIVEN** the newsletter section at the bottom of main content
+- **THEN** it displays "Subscribe to the newsletter" heading
+- **AND** descriptive text about the digest
+- **AND** an email input field with "Enter your mail" placeholder
+- **AND** a "Send Now" button
+- **AND** a disclaimer/privacy text below the form
+- **AND** the section has a light gray background (#f7f7f7)
 
 ### Footer
 
-Scenario: Footer with navigation columns
-Given the footer area
-Then it displays four columns: About, Categories, Categories, Newsletter
+#### Scenario: Footer with navigation columns
+
+- **GIVEN** the footer area
+- **THEN** it displays four columns: About, Categories, Categories, Newsletter
 Each column has a heading and list of links
 The footer has a light gray background (#f7f7f7)
-And a 4px solid top border in near-black
+- **AND** a 4px solid top border in near-black
 
-Scenario: Footer copyright
-Given the footer-bottom area
-Then it shows copyright text centered
-And the template attribution is replaced with "Made with ❤️ by Component Dock"
-And links to https://www.componentdock.com/
+#### Scenario: Footer copyright
+
+- **GIVEN** the footer-bottom area
+- **THEN** it shows copyright text centered
+- **AND** the template attribution is replaced with "Made with ❤️ by Component Dock"
+- **AND** links to https://www.componentdock.com/
 
 ## Verification checklist
 

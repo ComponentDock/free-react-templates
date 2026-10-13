@@ -67,147 +67,156 @@ Extracted from `https://preview.colorlib.com/theme/razo/style.css`:
 
 9. **Footer** — 3-column layout: (1) Logo + description + contact info (address, phone, email with icons), (2) Twitter Feed (3 tweets with twitter icon + text), (3) Instagram grid (3x3 image thumbnails). Bottom copyright bar. Footer MUST include Component Dock attribution link per conventions.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Desktop navigation renders all menu items
-  Given the user is on a desktop viewport
-  When the page loads
-  Then the navbar displays "Home", "Shows", "Charts", "Podcasts", "Mega" links
-  And a logo image is visible on the left
-  And a social share toggle is available
 
-Scenario: Mobile navigation shows hamburger toggle
-  Given the user is on a mobile viewport
-  When the page loads
-  Then a hamburger menu button is visible
-  And the full nav menu is hidden
-  When the user taps the hamburger button
-  Then the navigation menu expands vertically
-```
+#### Scenario: Desktop navigation renders all menu items
+
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar displays "Home", "Shows", "Charts", "Podcasts", "Mega" links
+- **AND** a logo image is visible on the left
+- **AND** a social share toggle is available
+
+#### Scenario: Mobile navigation shows hamburger toggle
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the page loads
+- **THEN** a hamburger menu button is visible
+- **AND** the full nav menu is hidden
+- **WHEN** the user taps the hamburger button
+- **THEN** the navigation menu expands vertically
 
 ### Hero Carousel
-```gherkin
-Scenario: Hero displays carousel with 4 slides
-  Given the user is on any viewport
-  When the page loads
-  Then a carousel with 4 slides is displayed
-  And each slide shows a background image with dark overlay
-  And each slide has heading "Designed For Music, Engineered to Last"
-  And each slide has a "Book Now" outline button
 
-Scenario: Carousel auto-plays between slides
-  Given the hero carousel is displayed
-  When 5 seconds elapse
-  Then the carousel transitions to the next slide
-```
+#### Scenario: Hero displays carousel with 4 slides
+
+- **GIVEN** the user is on any viewport
+- **WHEN** the page loads
+- **THEN** a carousel with 4 slides is displayed
+- **AND** each slide shows a background image with dark overlay
+- **AND** each slide has heading "Designed For Music, Engineered to Last"
+- **AND** each slide has a "Book Now" outline button
+
+#### Scenario: Carousel auto-plays between slides
+
+- **GIVEN** the hero carousel is displayed
+- **WHEN** 5 seconds elapse
+- **THEN** the carousel transitions to the next slide
 
 ### Blog Area
-```gherkin
-Scenario: Blog section renders two-column layout
-  Given the user scrolls to the Blog section
-  Then a "Blog New" heading is visible in the left column
-  And a featured post with large background image is displayed
-  And 4 smaller post cards are shown in a 2x2 grid below
-  And a "Trending" heading is visible in the right column
-  And a trending featured post and 5 smaller posts are shown
 
-Scenario: Blog posts show comment and view counts
-  Given a blog post card is displayed
-  Then comment count and view count icons are visible
-  And the post title is linked
-```
+#### Scenario: Blog section renders two-column layout
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a "Blog New" heading is visible in the left column
+- **AND** a featured post with large background image is displayed
+- **AND** 4 smaller post cards are shown in a 2x2 grid below
+- **AND** a "Trending" heading is visible in the right column
+- **AND** a trending featured post and 5 smaller posts are shown
+
+#### Scenario: Blog posts show comment and view counts
+
+- **GIVEN** a blog post card is displayed
+- **THEN** comment count and view count icons are visible
+- **AND** the post title is linked
 
 ### Music Charts
-```gherkin
-Scenario: Music chart section renders ranked items
-  Given the user scrolls to the Music Charts section
-  Then a "Music Chart" heading is displayed on a dark parallax background
-  And a "Show All Trending (Top 10)" button is visible
-  And 5 ranked music items are listed
 
-Scenario: Each music chart item shows details
-  Given a music chart item is displayed
-  Then a rank number is shown on the left
-  And a thumbnail image is visible
-  And an audio player control is present
-  And the song title and artist name are displayed
-  And a price button (e.g. "$10.99") is shown on the right
-```
+#### Scenario: Music chart section renders ranked items
+
+- **GIVEN** the user scrolls to the Music Charts section
+- **THEN** a "Music Chart" heading is displayed on a dark parallax background
+- **AND** a "Show All Trending (Top 10)" button is visible
+- **AND** 5 ranked music items are listed
+
+#### Scenario: Each music chart item shows details
+
+- **GIVEN** a music chart item is displayed
+- **THEN** a rank number is shown on the left
+- **AND** a thumbnail image is visible
+- **AND** an audio player control is present
+- **AND** the song title and artist name are displayed
+- **AND** a price button (e.g. "$10.99") is shown on the right
 
 ### Trending Video
-```gherkin
-Scenario: Trending video section renders video embed and cards
-  Given the user scrolls to the Trending Video section
-  Then a "Trending Video" heading is centered
-  And a featured video iframe embed is displayed
-  And 6 video post cards are shown in a 3-column grid
 
-Scenario: Video post cards show metadata
-  Given a video post card is displayed
-  Then a thumbnail image is visible
-  And comment and view counts are shown
-  And the post title is linked
-```
+#### Scenario: Trending video section renders video embed and cards
+
+- **GIVEN** the user scrolls to the Trending Video section
+- **THEN** a "Trending Video" heading is centered
+- **AND** a featured video iframe embed is displayed
+- **AND** 6 video post cards are shown in a 3-column grid
+
+#### Scenario: Video post cards show metadata
+
+- **GIVEN** a video post card is displayed
+- **THEN** a thumbnail image is visible
+- **AND** comment and view counts are shown
+- **AND** the post title is linked
 
 ### App Download
-```gherkin
-Scenario: App download section shows phone mockup and CTA
-  Given the user scrolls to the App Download section
-  Then a dark parallax background is visible
-  And an iPhone mockup image is displayed on the left
-  And "Radio Music" heading is shown on the right
-  And Google Play and App Store badges are visible
-```
+
+#### Scenario: App download section shows phone mockup and CTA
+
+- **GIVEN** the user scrolls to the App Download section
+- **THEN** a dark parallax background is visible
+- **AND** an iPhone mockup image is displayed on the left
+- **AND** "Radio Music" heading is shown on the right
+- **AND** Google Play and App Store badges are visible
 
 ### Weekly Schedule
-```gherkin
-Scenario: Weekly schedule renders a table
-  Given the user scrolls to the Weekly Schedule section
-  Then a "Weekly Schedule" heading is centered
-  And a responsive table with 6 day columns is displayed
-  And each cell shows show name and time slot
 
-Scenario: Empty schedule cells are handled
-  Given the weekly schedule table is displayed
-  Then empty cells are rendered without content
-```
+#### Scenario: Weekly schedule renders a table
+
+- **GIVEN** the user scrolls to the Weekly Schedule section
+- **THEN** a "Weekly Schedule" heading is centered
+- **AND** a responsive table with 6 day columns is displayed
+- **AND** each cell shows show name and time slot
+
+#### Scenario: Empty schedule cells are handled
+
+- **GIVEN** the weekly schedule table is displayed
+- **THEN** empty cells are rendered without content
 
 ### Latest News
-```gherkin
-Scenario: Latest news section renders carousel cards
-  Given the user scrolls to the Latest News section
-  Then a "Latest News" heading is displayed on a dark parallax background
-  And a "Show All Blog" button is visible
-  And 3 news cards are shown in a carousel
 
-Scenario: News cards show content
-  Given a news card is displayed
-  Then a background image with dark overlay is visible
-  And the post title is shown
-  And an excerpt paragraph is displayed
-  And the publication date (day + month) is shown
-  And a "Read More" button is present
-```
+#### Scenario: Latest news section renders carousel cards
+
+- **GIVEN** the user scrolls to the Latest News section
+- **THEN** a "Latest News" heading is displayed on a dark parallax background
+- **AND** a "Show All Blog" button is visible
+- **AND** 3 news cards are shown in a carousel
+
+#### Scenario: News cards show content
+
+- **GIVEN** a news card is displayed
+- **THEN** a background image with dark overlay is visible
+- **AND** the post title is shown
+- **AND** an excerpt paragraph is displayed
+- **AND** the publication date (day + month) is shown
+- **AND** a "Read More" button is present
 
 ### Footer
-```gherkin
-Scenario: Footer renders 3 columns
-  Given the user scrolls to the footer
-  Then a logo and description column is displayed
-  And a Twitter Feed column with 3 tweets is displayed
-  And an Instagram grid column with 9 images is displayed
 
-Scenario: Footer includes Component Dock attribution
-  Given the footer is rendered
-  Then a link to "https://www.componentdock.com/" is present
-  And the link text mentions "Component Dock"
+#### Scenario: Footer renders 3 columns
 
-Scenario: Footer contact info is displayed
-  Given the footer is rendered
-  Then address, phone, and email contact info is visible with icons
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** a logo and description column is displayed
+- **AND** a Twitter Feed column with 3 tweets is displayed
+- **AND** an Instagram grid column with 9 images is displayed
+
+#### Scenario: Footer includes Component Dock attribution
+
+- **GIVEN** the footer is rendered
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"
+
+#### Scenario: Footer contact info is displayed
+
+- **GIVEN** the footer is rendered
+- **THEN** address, phone, and email contact info is visible with icons
 
 ## Verification Checklist
 

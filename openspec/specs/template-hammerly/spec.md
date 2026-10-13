@@ -60,130 +60,130 @@ Modern construction aesthetic:
 | 13 | Clients/Partners | `clients_area` | `#f5f5f5` light |
 | 14 | Address/Contact | `address_area` | `#ffcd00` yellow |
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Bar
-```gherkin
-Scenario: Top bar displays contact info
-  Given the user views the page
-  Then the top bar shows phone number, address, and business hours
-  And social media icon links are on the right
-  And the top bar background is dark (#1e2126)
-```
+
+#### Scenario: Top bar displays contact info
+
+- **GIVEN** the user views the page
+- **THEN** the top bar shows phone number, address, and business hours
+- **AND** social media icon links are on the right
+- **AND** the top bar background is dark (#1e2126)
 
 ### Navigation
-```gherkin
-Scenario: Navigation displays all menu items
-  Given the user views the page
-  Then the nav shows links: Home, Projects, Services, About Us, Blog, Contact
-  And the logo "Hammerly" with a hard hat icon is on the left
-  And a cart icon with a badge count is on the right
-  And the active nav link is highlighted in yellow
-```
+
+#### Scenario: Navigation displays all menu items
+
+- **GIVEN** the user views the page
+- **THEN** the nav shows links: Home, Projects, Services, About Us, Blog, Contact
+- **AND** the logo "Hammerly" with a hard hat icon is on the left
+- **AND** a cart icon with a badge count is on the right
+- **AND** the active nav link is highlighted in yellow
 
 ### Hero Slider
-```gherkin
-Scenario: Hero section shows innovation message
-  Given the user views the page
-  Then a full-width hero with a construction bg image is shown
-  And a dark overlay covers the image
-  And a large yellow headline reads "WE INNOVATE"
-  And a subtext reads "We are Hammerly"
-  And decorative yellow lines are on the left side
-```
+
+#### Scenario: Hero section shows innovation message
+
+- **GIVEN** the user views the page
+- **THEN** a full-width hero with a construction bg image is shown
+- **AND** a dark overlay covers the image
+- **AND** a large yellow headline reads "WE INNOVATE"
+- **AND** a subtext reads "We are Hammerly"
+- **AND** decorative yellow lines are on the left side
 
 ### Get Quote CTA
-```gherkin
-Scenario: Quote bar prompts contact
-  Given the user scrolls past the hero
-  Then a dark bar with a quote question is shown
-  And a yellow CTA button prompts the user to get a quote
-```
+
+#### Scenario: Quote bar prompts contact
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** a dark bar with a quote question is shown
+- **AND** a yellow CTA button prompts the user to get a quote
 
 ### Who We Are
-```gherkin
-Scenario: About section shows company info
-  Given the user scrolls to about section
-  Then a "Who We Are" heading is displayed
-  And a two-column layout shows image + text
-  And an "All About Us" sub-heading is present
-```
+
+#### Scenario: About section shows company info
+
+- **GIVEN** the user scrolls to about section
+- **THEN** a "Who We Are" heading is displayed
+- **AND** a two-column layout shows image + text
+- **AND** an "All About Us" sub-heading is present
 
 ### Our Services
-```gherkin
-Scenario: Services section on dark background
-  Given the user scrolls to services
-  Then the section has a dark (#1e2126) background
-  And service categories are shown: Pre-Construction, New-Construction, Remodel & Remodel
-  And each has a description and icon
-```
+
+#### Scenario: Services section on dark background
+
+- **GIVEN** the user scrolls to services
+- **THEN** the section has a dark (#1e2126) background
+- **AND** service categories are shown: Pre-Construction, New-Construction, Remodel & Remodel
+- **AND** each has a description and icon
 
 ### Our Projects
-```gherkin
-Scenario: Projects gallery
-  Given the user scrolls to projects
-  Then an "Our Projects" heading is displayed
-  And project cards show images and titles (e.g. "Jahanara Vila")
-  And a "Great & Awesome Works" sub-heading is present
-```
+
+#### Scenario: Projects gallery
+
+- **GIVEN** the user scrolls to projects
+- **THEN** an "Our Projects" heading is displayed
+- **AND** project cards show images and titles (e.g. "Jahanara Vila")
+- **AND** a "Great & Awesome Works" sub-heading is present
 
 ### Work With Us CTA
-```gherkin
-Scenario: CTA section with bg image
-  Given the user scrolls to the work section
-  Then a background image with dark overlay is shown
-  And "Work With Us" heading is displayed
-  And a yellow "Get Offer" CTA button is present
-```
+
+#### Scenario: CTA section with bg image
+
+- **GIVEN** the user scrolls to the work section
+- **THEN** a background image with dark overlay is shown
+- **AND** "Work With Us" heading is displayed
+- **AND** a yellow "Get Offer" CTA button is present
 
 ### Our Team
-```gherkin
-Scenario: Team section displays members
-  Given the user scrolls to team
-  Then an "Our Team" heading is shown
-  And team member cards show photo, name, and role
-```
+
+#### Scenario: Team section displays members
+
+- **GIVEN** the user scrolls to team
+- **THEN** an "Our Team" heading is shown
+- **AND** team member cards show photo, name, and role
 
 ### Counter/Stats
-```gherkin
-Scenario: Stats section shows project counts
-  Given the user scrolls to counter section
-  Then a dark gray (#31353d) background is shown
-  And counter stats display (e.g. "245 Total Projects", "535" another stat)
-```
+
+#### Scenario: Stats section shows project counts
+
+- **GIVEN** the user scrolls to counter section
+- **THEN** a dark gray (#31353d) background is shown
+- **AND** counter stats display (e.g. "245 Total Projects", "535" another stat)
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials on light background
-  Given the user scrolls to testimonials
-  Then a light (#f5f5f5) background is shown
-  And client quotes with photos and names are displayed
-  And a "Golden Word" sub-heading is present
-```
+
+#### Scenario: Testimonials on light background
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** a light (#f5f5f5) background is shown
+- **AND** client quotes with photos and names are displayed
+- **AND** a "Golden Word" sub-heading is present
 
 ### Latest News
-```gherkin
-Scenario: Blog posts displayed
-  Given the user scrolls to news
-  Then a "Latest News" heading is shown
-  And blog post cards with thumbnails, titles, and dates are in a grid
-```
+
+#### Scenario: Blog posts displayed
+
+- **GIVEN** the user scrolls to news
+- **THEN** a "Latest News" heading is shown
+- **AND** blog post cards with thumbnails, titles, and dates are in a grid
 
 ### Clients/Partners
-```gherkin
-Scenario: Client logos carousel
-  Given the user scrolls to clients
-  Then a light (#f5f5f5) background is shown
-  And partner/client logos are displayed in a carousel
-```
+
+#### Scenario: Client logos carousel
+
+- **GIVEN** the user scrolls to clients
+- **THEN** a light (#f5f5f5) background is shown
+- **AND** partner/client logos are displayed in a carousel
 
 ### Address/Contact
-```gherkin
-Scenario: Contact bar on yellow background
-  Given the user scrolls to the address section
-  Then the section has a yellow (#ffcd00) background
-  And office address, phone, and email are displayed
-```
+
+#### Scenario: Contact bar on yellow background
+
+- **GIVEN** the user scrolls to the address section
+- **THEN** the section has a yellow (#ffcd00) background
+- **AND** office address, phone, and email are displayed
 
 ## Verification Checklist
 

@@ -62,112 +62,122 @@ and is divided by subtle vertical lines between the fields. The overall design i
 clean, minimal, and modern — a single-purpose search widget overlaid on a
 photographic hero.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Section: Hero background
 
-```gherkin
 Feature: Hero background
-  Scenario: Full-viewport background image
-    Given the page loads
-    Then a full-viewport hero section is displayed
-    And the hero has a background image filling the entire viewport
-    And the hero has a subtle dark overlay for text contrast
 
-  Scenario: Responsive background
-    Given the page is viewed on a mobile device
-    Then the background image scales to cover the viewport
-    And the hero maintains full viewport height
-```
+#### Scenario: Full-viewport background image
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero section is displayed
+- **AND** the hero has a background image filling the entire viewport
+- **AND** the hero has a subtle dark overlay for text contrast
+
+#### Scenario: Responsive background
+
+- **GIVEN** the page is viewed on a mobile device
+- **THEN** the background image scales to cover the viewport
+- **AND** the hero maintains full viewport height
 
 ### Section: Heading
 
-```gherkin
 Feature: Heading
-  Scenario: Heading displayed
-    Given the page loads
-    Then a bold white heading is visible
-    And the heading text is uppercase
-    And the heading reads "QUICK FIND YOUR CITY"
-    And the heading is centered horizontally on the hero
 
-  Scenario: Heading typography
-    Given the page loads
-    Then the heading uses a bold sans-serif font
-    And the heading color is white (#ffffff)
-    And the heading font size is approximately 36–42px
-```
+#### Scenario: Heading displayed
+
+- **GIVEN** the page loads
+- **THEN** a bold white heading is visible
+- **AND** the heading text is uppercase
+- **AND** the heading reads "QUICK FIND YOUR CITY"
+- **AND** the heading is centered horizontally on the hero
+
+#### Scenario: Heading typography
+
+- **GIVEN** the page loads
+- **THEN** the heading uses a bold sans-serif font
+- **AND** the heading color is white (#ffffff)
+- **AND** the heading font size is approximately 36–42px
 
 ### Section: Search bar
 
-```gherkin
 Feature: Search bar
-  Scenario: Search bar rendered
-    Given the page loads
-    Then a white search bar is displayed below the heading
-    And the search bar is centered horizontally
-    And the search bar has sharp square corners (no border-radius)
-    And the search bar is approximately 800px wide
 
-  Scenario: Search bar field layout
-    Given the search bar is visible
-    Then three sections are displayed side by side: WHAT, WHERE, SEARCH
-    And the WHAT and WHERE sections are separated by a subtle vertical line
-    And the WHERE and SEARCH sections are separated by a subtle vertical line
+#### Scenario: Search bar rendered
 
-  Scenario: WHAT field
-    Given the search bar is visible
-    Then the WHAT section shows an uppercase label "WHAT" in gray
-    And the WHAT section has placeholder text "ex: food, service, bar, hotel"
-    And the WHAT field is a text input
+- **GIVEN** the page loads
+- **THEN** a white search bar is displayed below the heading
+- **AND** the search bar is centered horizontally
+- **AND** the search bar has sharp square corners (no border-radius)
+- **AND** the search bar is approximately 800px wide
 
-  Scenario: Typing in WHAT field
-    Given the search bar is visible
-    When the user types "restaurant" into the WHAT input
-    Then the input value is "restaurant"
+#### Scenario: Search bar field layout
 
-  Scenario: WHERE field
-    Given the search bar is visible
-    Then the WHERE section shows an uppercase label "WHERE" in gray
-    And the WHERE section displays "1 adult" as the current selection
-    And a dropdown chevron icon is visible in the WHERE section
+- **GIVEN** the search bar is visible
+- **THEN** three sections are displayed side by side: WHAT, WHERE, SEARCH
+- **AND** the WHAT and WHERE sections are separated by a subtle vertical line
+- **AND** the WHERE and SEARCH sections are separated by a subtle vertical line
 
-  Scenario: Changing WHERE selection
-    Given the search bar is visible
-    When the user opens the WHERE dropdown
-    Then a list of guest count options is displayed
-    When the user selects "2 adults"
-    Then the WHERE section displays "2 adults"
+#### Scenario: WHAT field
 
-  Scenario: SEARCH button
-    Given the search bar is visible
-    Then a coral-red button labeled "SEARCH" is displayed on the right
-    And the button has white uppercase bold text
-    And the button has sharp square corners (no border-radius)
+- **GIVEN** the search bar is visible
+- **THEN** the WHAT section shows an uppercase label "WHAT" in gray
+- **AND** the WHAT section has placeholder text "ex: food, service, bar, hotel"
+- **AND** the WHAT field is a text input
 
-  Scenario: Clicking SEARCH
-    Given the search bar is visible
-    And the user has entered "hotel" in the WHAT field
-    And the WHERE field shows "1 adult"
-    When the user clicks the SEARCH button
-    Then the search action is triggered with the entered values
-```
+#### Scenario: Typing in WHAT field
+
+- **GIVEN** the search bar is visible
+- **WHEN** the user types "restaurant" into the WHAT input
+- **THEN** the input value is "restaurant"
+
+#### Scenario: WHERE field
+
+- **GIVEN** the search bar is visible
+- **THEN** the WHERE section shows an uppercase label "WHERE" in gray
+- **AND** the WHERE section displays "1 adult" as the current selection
+- **AND** a dropdown chevron icon is visible in the WHERE section
+
+#### Scenario: Changing WHERE selection
+
+- **GIVEN** the search bar is visible
+- **WHEN** the user opens the WHERE dropdown
+- **THEN** a list of guest count options is displayed
+- **WHEN** the user selects "2 adults"
+- **THEN** the WHERE section displays "2 adults"
+
+#### Scenario: SEARCH button
+
+- **GIVEN** the search bar is visible
+- **THEN** a coral-red button labeled "SEARCH" is displayed on the right
+- **AND** the button has white uppercase bold text
+- **AND** the button has sharp square corners (no border-radius)
+
+#### Scenario: Clicking SEARCH
+
+- **GIVEN** the search bar is visible
+- **AND** the user has entered "hotel" in the WHAT field
+- **AND** the WHERE field shows "1 adult"
+- **WHEN** the user clicks the SEARCH button
+- **THEN** the search action is triggered with the entered values
 
 ### Section: Responsive behavior
 
-```gherkin
 Feature: Responsive behavior
-  Scenario: Mobile layout
-    Given the page is viewed on a screen narrower than 768px
-    Then the search bar stacks vertically
-    And the WHAT, WHERE, and SEARCH sections each take full width
-    And the heading font size reduces
 
-  Scenario: Tablet layout
-    Given the page is viewed on a screen between 768px and 1024px
-    Then the search bar remains horizontal
-    And the search bar width adapts to the viewport
-```
+#### Scenario: Mobile layout
+
+- **GIVEN** the page is viewed on a screen narrower than 768px
+- **THEN** the search bar stacks vertically
+- **AND** the WHAT, WHERE, and SEARCH sections each take full width
+- **AND** the heading font size reduces
+
+#### Scenario: Tablet layout
+
+- **GIVEN** the page is viewed on a screen between 768px and 1024px
+- **THEN** the search bar remains horizontal
+- **AND** the search bar width adapts to the viewport
 
 ## Verification checklist
 

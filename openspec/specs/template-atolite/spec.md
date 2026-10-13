@@ -50,109 +50,91 @@ Extracted from `css/style.css` of the live preview.
 9. **Testimonial** — Centered quote marks (100px). Carousel of blockquotes. Clean white background.
 10. **Footer** — Light background. Four-column layout: About (text), Learn More (links), Support (links), About Us (links) + Download button + social icons (Facebook, Twitter, GitHub). Bottom copyright line.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar renders correctly
+### Feature: Atolite template behaviour
 
-```gherkin
-Given the user visits the homepage
-Then the navbar displays the logo "Atolite" on the left
-And the nav links are: Home, About, Services, Gallery, Blog, Contact
-And the navbar is transparent on desktop viewport
-And the navbar has a blue background on mobile viewport
-```
+#### Scenario: Navbar renders correctly
 
-### Scenario: Hero section displays
+- **GIVEN** the user visits the homepage
+- **THEN** the navbar displays the logo "Atolite" on the left
+- **AND** the nav links are: Home, About, Services, Gallery, Blog, Contact
+- **AND** the navbar is transparent on desktop viewport
+- **AND** the navbar has a blue background on mobile viewport
 
-```gherkin
-Given the user visits the homepage
-Then the hero section shows a full-width background image
-And the heading reads "Design a better website template."
-And a subtext paragraph is present below the heading
-And a "Free Download" primary button is visible
-And a circular play button is displayed on the right side
-```
+#### Scenario: Hero section displays
 
-### Scenario: Overlap features card
+- **GIVEN** the user visits the homepage
+- **THEN** the hero section shows a full-width background image
+- **AND** the heading reads "Design a better website template."
+- **AND** a subtext paragraph is present below the heading
+- **AND** a "Free Download" primary button is visible
+- **AND** a circular play button is displayed on the right side
 
-```gherkin
-Given the user scrolls past the hero
-Then a white overlapping card appears with rounded corners and shadow
-And the card contains three feature blocks in a row
-And each block has an icon, heading, and description text
-And the features are: Intuitive Thinking, Orange for Carrots, Infinite Posibilities
-```
+#### Scenario: Overlap features card
 
-### Scenario: About text section
+- **GIVEN** the user scrolls past the hero
+- **THEN** a white overlapping card appears with rounded corners and shadow
+- **AND** the card contains three feature blocks in a row
+- **AND** each block has an icon, heading, and description text
+- **AND** the features are: Intuitive Thinking, Orange for Carrots, Infinite Posibilities
 
-```gherkin
-Given the user views the about section
-Then the heading reads "Good Design is a Good Start"
-And two columns of text are displayed side by side
-And the left column contains a lead paragraph with an inline link
-And the right column contains two body paragraphs
-```
+#### Scenario: About text section
 
-### Scenario: Image carousel
+- **GIVEN** the user views the about section
+- **THEN** the heading reads "Good Design is a Good Start"
+- **AND** two columns of text are displayed side by side
+- **AND** the left column contains a lead paragraph with an inline link
+- **AND** the right column contains two body paragraphs
 
-```gherkin
-Given the user reaches the carousel section
-Then a full-width image slider is displayed
-And the slider contains at least 3 images
-And the slider occupies the full container width
-```
+#### Scenario: Image carousel
 
-### Scenario: Features grid section
+- **GIVEN** the user reaches the carousel section
+- **THEN** a full-width image slider is displayed
+- **AND** the slider contains at least 3 images
+- **AND** the slider occupies the full container width
 
-```gherkin
-Given the user views the features grid section
-Then the section has a light gray background
-And six feature blocks are displayed in a 2x3 grid
-And each block has a centered icon, heading, and description
-And a "More Features" black button is centered at the bottom
-```
+#### Scenario: Features grid section
 
-### Scenario: Portfolio thumbnails
+- **GIVEN** the user views the features grid section
+- **THEN** the section has a light gray background
+- **AND** six feature blocks are displayed in a 2x3 grid
+- **AND** each block has a centered icon, heading, and description
+- **AND** a "More Features" black button is centered at the bottom
 
-```gherkin
-Given the user scrolls to the portfolio section
-Then a two-row grid of image cards is displayed
-And row 1 has a one-third card and a two-third card
-And row 2 has a two-third card and a one-third card
-And each card shows a title and category on hover
-And the cards have a dark overlay that intensifies on hover
-```
+#### Scenario: Portfolio thumbnails
 
-### Scenario: Counter stats
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** a two-row grid of image cards is displayed
+- **AND** row 1 has a one-third card and a two-third card
+- **AND** row 2 has a two-third card and a one-third card
+- **AND** each card shows a title and category on hover
+- **AND** the cards have a dark overlay that intensifies on hover
 
-```gherkin
-Given the user reaches the stats section
-Then the section has a blue background
-And three counter columns are displayed: Lines of Codes, Number of Projects, Number of Clients
-And each counter shows a large white number
-And each counter has an uppercase label below the number
-```
+#### Scenario: Counter stats
 
-### Scenario: Testimonial section
+- **GIVEN** the user reaches the stats section
+- **THEN** the section has a blue background
+- **AND** three counter columns are displayed: Lines of Codes, Number of Projects, Number of Clients
+- **AND** each counter shows a large white number
+- **AND** each counter has an uppercase label below the number
 
-```gherkin
-Given the user views the testimonial section
-Then a large quotation mark is centered at the top
-And a testimonial quote is displayed in a centered blockquote
-And the text is styled with increased line height and black color
-```
+#### Scenario: Testimonial section
 
-### Scenario: Footer
+- **GIVEN** the user views the testimonial section
+- **THEN** a large quotation mark is centered at the top
+- **AND** a testimonial quote is displayed in a centered blockquote
+- **AND** the text is styled with increased line height and black color
 
-```gherkin
-Given the user reaches the footer
-Then the footer has a light background
-And an "About" column with descriptive text is on the left
-And three link columns (Learn More, Support, About Us) are displayed
-And a "Download for free" primary button is present
-And social media icons (Facebook, Twitter, GitHub) are shown
-And the copyright line reads "All rights reserved" with a Component Dock link
-```
+#### Scenario: Footer
+
+- **GIVEN** the user reaches the footer
+- **THEN** the footer has a light background
+- **AND** an "About" column with descriptive text is on the left
+- **AND** three link columns (Learn More, Support, About Us) are displayed
+- **AND** a "Download for free" primary button is present
+- **AND** social media icons (Facebook, Twitter, GitHub) are shown
+- **AND** the copyright line reads "All rights reserved" with a Component Dock link
 
 ## Verification checklist
 

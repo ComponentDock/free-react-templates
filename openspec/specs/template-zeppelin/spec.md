@@ -49,142 +49,138 @@ slider, and a services grid.
 9. **Contact** — Parallax background + shape overlay. Centered section title "let's work together". Intro paragraph + centered "contact" button (orange-red).
 10. **Footer** — Dark background (#111111). Copyright line (left), social icons (right).
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Header Navigation
 
-```gherkin
-Scenario: Header displays logo and navigation
-  Given the user loads the page
-  Then the header shows the logo text "zeppelin."
-  And the navigation links are visible: "home", "services", "work", "blog", "contact"
+#### Scenario: Header displays logo and navigation
 
-Scenario: Mobile hamburger menu opens fullscreen overlay
-  Given the viewport is narrow (mobile)
-  When the user taps the hamburger icon
-  Then a fullscreen menu overlay opens
-  And the overlay shows navigation links and social icons
-  And closing the overlay returns to the normal view
-```
+- **GIVEN** the user loads the page
+- **THEN** the header shows the logo text "zeppelin."
+- **AND** the navigation links are visible: "home", "services", "work", "blog", "contact"
+
+#### Scenario: Mobile hamburger menu opens fullscreen overlay
+
+- **GIVEN** the viewport is narrow (mobile)
+- **WHEN** the user taps the hamburger icon
+- **THEN** a fullscreen menu overlay opens
+- **AND** the overlay shows navigation links and social icons
+- **AND** closing the overlay returns to the normal view
 
 ### Feature: Hero Slider
 
-```gherkin
-Scenario: Hero displays heading and CTA
-  Given the user is on the homepage
-  Then the hero section shows a headline "Do you need a modern website?"
-  And the word "modern" is visually accented (colored)
-  And a "discover" button with arrow icon is visible
+#### Scenario: Hero displays heading and CTA
 
-Scenario: Hero slider shows numbered dots
-  Given the hero slider is visible
-  Then numbered dots "01.", "02.", "03." are displayed at the bottom left
-  And the active slide's dot is highlighted
+- **GIVEN** the user is on the homepage
+- **THEN** the hero section shows a headline "Do you need a modern website?"
+- **AND** the word "modern" is visually accented (colored)
+- **AND** a "discover" button with arrow icon is visible
 
-Scenario: Hero slider supports arrow navigation
-  Given the hero slider is visible
-  When the user clicks the right arrow
-  Then the next slide is shown
-  When the user clicks the left arrow
-  Then the previous slide is shown
-```
+#### Scenario: Hero slider shows numbered dots
+
+- **GIVEN** the hero slider is visible
+- **THEN** numbered dots "01.", "02.", "03." are displayed at the bottom left
+- **AND** the active slide's dot is highlighted
+
+#### Scenario: Hero slider supports arrow navigation
+
+- **GIVEN** the hero slider is visible
+- **WHEN** the user clicks the right arrow
+- **THEN** the next slide is shown
+- **WHEN** the user clicks the left arrow
+- **THEN** the previous slide is shown
 
 ### Feature: Social Sidebar
 
-```gherkin
-Scenario: Social sidebar displays on desktop
-  Given the user is on a desktop viewport
-  Then a vertical sidebar with social icons is visible on the right
-  And the icons link to pinterest, facebook, twitter, dribbble, behance, linkedin
-```
+#### Scenario: Social sidebar displays on desktop
+
+- **GIVEN** the user is on a desktop viewport
+- **THEN** a vertical sidebar with social icons is visible on the right
+- **AND** the icons link to pinterest, facebook, twitter, dribbble, behance, linkedin
 
 ### Feature: Features Section
 
-```gherkin
-Scenario: Features displays three items
-  Given the user scrolls to the features section
-  Then three feature cards are displayed in a row
-  And each card has an icon, a heading, and a paragraph
-  And the headings are "modern design", "easy to use", "well documented"
-```
+#### Scenario: Features displays three items
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** three feature cards are displayed in a row
+- **AND** each card has an icon, a heading, and a paragraph
+- **AND** the headings are "modern design", "easy to use", "well documented"
 
 ### Feature: About Section
 
-```gherkin
-Scenario: About section displays with parallax background
-  Given the user scrolls to the about section
-  Then a parallax background image is visible
-  And the section title reads "about our project"
-  And a paragraph of text is shown on the left
-  And a signature image appears below the text
+#### Scenario: About section displays with parallax background
 
-Scenario: About section shows animated progress bars
-  Given the user scrolls to the about section
-  Then four progress bars are displayed: "management", "design", "projects", "inspiration"
-  And the bars animate to fill to their respective percentages (85%, 100%, 75%, 95%)
-```
+- **GIVEN** the user scrolls to the about section
+- **THEN** a parallax background image is visible
+- **AND** the section title reads "about our project"
+- **AND** a paragraph of text is shown on the left
+- **AND** a signature image appears below the text
+
+#### Scenario: About section shows animated progress bars
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** four progress bars are displayed: "management", "design", "projects", "inspiration"
+- **AND** the bars animate to fill to their respective percentages (85%, 100%, 75%, 95%)
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials slider shows review cards
-  Given the user scrolls to the testimonials section
-  Then a slider with testimonial cards is displayed
-  And each card shows a user avatar, name, title, quote, and paragraph
-  And left/right chevron navigation arrows are available
+#### Scenario: Testimonials slider shows review cards
 
-Scenario: Testimonials slider is navigable
-  Given the testimonials slider is visible
-  When the user clicks the right arrow
-  Then the next testimonial card slides in
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a slider with testimonial cards is displayed
+- **AND** each card shows a user avatar, name, title, quote, and paragraph
+- **AND** left/right chevron navigation arrows are available
+
+#### Scenario: Testimonials slider is navigable
+
+- **GIVEN** the testimonials slider is visible
+- **WHEN** the user clicks the right arrow
+- **THEN** the next testimonial card slides in
 
 ### Feature: Services Section
 
-```gherkin
-Scenario: Services section displays 6 items in a grid
-  Given the user scrolls to the services section
-  Then six service items are shown in a 3-column grid
-  And each item has an icon, heading, and paragraph
-  And the headings are: "modern design", "easy to use", "well documented", "smart structure", "elements", "bold colors"
+#### Scenario: Services section displays 6 items in a grid
 
-Scenario: Services section has parallax background
-  Given the user scrolls to the services section
-  Then a parallax background image is visible behind the service items
-  And a "discover" button is centered at the bottom
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** six service items are shown in a 3-column grid
+- **AND** each item has an icon, heading, and paragraph
+- **AND** the headings are: "modern design", "easy to use", "well documented", "smart structure", "elements", "bold colors"
+
+#### Scenario: Services section has parallax background
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a parallax background image is visible behind the service items
+- **AND** a "discover" button is centered at the bottom
 
 ### Feature: Clients Section
 
-```gherkin
-Scenario: Clients section shows logos carousel
-  Given the user scrolls to the clients section
-  Then a centered section title "our clients" is displayed
-  And two paragraphs of introductory text are shown
-  And a carousel of client logos is visible below
-```
+#### Scenario: Clients section shows logos carousel
+
+- **GIVEN** the user scrolls to the clients section
+- **THEN** a centered section title "our clients" is displayed
+- **AND** two paragraphs of introductory text are shown
+- **AND** a carousel of client logos is visible below
 
 ### Feature: Contact Section
 
-```gherkin
-Scenario: Contact section displays CTA
-  Given the user scrolls to the contact section
-  Then a parallax background image is visible
-  And the section title reads "let's work together"
-  And a paragraph of text is shown
-  And a "contact" button (orange-red) is centered below
-```
+#### Scenario: Contact section displays CTA
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a parallax background image is visible
+- **AND** the section title reads "let's work together"
+- **AND** a paragraph of text is shown
+- **AND** a "contact" button (orange-red) is centered below
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer shows copyright and social links
-  Given the user scrolls to the footer
-  Then a dark background footer is displayed
-  And a copyright line is shown on the left
-  And social media icons are shown on the right
-  And a "Component Dock" attribution link is present
-```
+#### Scenario: Footer shows copyright and social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is displayed
+- **AND** a copyright line is shown on the left
+- **AND** social media icons are shown on the right
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification checklist
 

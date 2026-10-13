@@ -58,133 +58,109 @@ awareness and showcase donation causes, volunteer teams, and events.
 - **Hero section:** full-width background image, text left-aligned
 - **Parallax sections:** fixed background-attachment for events, counter areas
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Header renders with top bar and sticky navigation
+### Feature: ReliefWorks template behaviour
 
-```gherkin
-Given the user visits the ReliefWorks page
-Then a top bar is visible with phone number and email
-And a language selector dropdown is shown
-And a "Subscribe Now" link is present
-And social media icons (Twitter, Facebook, LinkedIn, Google) are shown
-And a sticky navigation bar with logo and menu links is visible
-And a "Donate" button is in the header
-```
+#### Scenario: Header renders with top bar and sticky navigation
 
-### Scenario: Hero section displays mission headline and CTAs
+- **GIVEN** the user visits the ReliefWorks page
+- **THEN** a top bar is visible with phone number and email
+- **AND** a language selector dropdown is shown
+- **AND** a "Subscribe Now" link is present
+- **AND** social media icons (Twitter, Facebook, LinkedIn, Google) are shown
+- **AND** a sticky navigation bar with logo and menu links is visible
+- **AND** a "Donate" button is in the header
 
-```gherkin
-Given the user is on the ReliefWorks homepage
-Then the hero section shows a background image
-And the heading "We Are In A Mission To Help The Helpless" is displayed
-And two buttons are present: "Donate" and "About US"
-```
+#### Scenario: Hero section displays mission headline and CTAs
 
-### Scenario: Services section shows three service cards
+- **GIVEN** the user is on the ReliefWorks homepage
+- **THEN** the hero section shows a background image
+- **AND** the heading "We Are In A Mission To Help The Helpless" is displayed
+- **AND** two buttons are present: "Donate" and "About US"
 
-```gherkin
-Given the user scrolls to the services section
-Then the section has a light background (#f8fcff)
-And three service cards are displayed
-And each card has an icon, a title, and a short description
-And cards have white background with rounded corners (border-radius: 6px)
-```
+#### Scenario: Services section shows three service cards
 
-### Scenario: About section shows mission description and CTAs
+- **GIVEN** the user scrolls to the services section
+- **THEN** the section has a light background (#f8fcff)
+- **AND** three service cards are displayed
+- **AND** each card has an icon, a title, and a short description
+- **AND** cards have white background with rounded corners (border-radius: 6px)
 
-```gherkin
-Given the user scrolls to the about section
-Then the heading "We Are In A Mission To Help Helpless" is shown
-And a paragraph describes the charity's mission
-And a left-aligned image is displayed alongside the text
-And an "About US" button and a "Become A Volunteer" button are present
-```
+#### Scenario: About section shows mission description and CTAs
 
-### Scenario: Our Causes section shows causes with progress bars
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading "We Are In A Mission To Help Helpless" is shown
+- **AND** a paragraph describes the charity's mission
+- **AND** a left-aligned image is displayed alongside the text
+- **AND** an "About US" button and a "Become A Volunteer" button are present
 
-```gherkin
-Given the user scrolls to the causes section
-Then the heading "Explore our latest causes that we works" is displayed
-And three cause cards are shown
-And each cause card has an image, title, and donation progress bar
-And a "Donate" link is on each card
-```
+#### Scenario: Our Causes section shows causes with progress bars
 
-### Scenario: Featured Events section with parallax background
+- **GIVEN** the user scrolls to the causes section
+- **THEN** the heading "Explore our latest causes that we works" is displayed
+- **AND** three cause cards are shown
+- **AND** each cause card has an image, title, and donation progress bar
+- **AND** a "Donate" link is on each card
 
-```gherkin
-Given the user scrolls to the events section
-Then a parallax background image is displayed
-And the heading "We arrange many social events for charity donations" is shown
-And the section has a dark overlay treatment
-```
+#### Scenario: Featured Events section with parallax background
 
-### Scenario: Team section shows volunteer profiles
+- **GIVEN** the user scrolls to the events section
+- **THEN** a parallax background image is displayed
+- **AND** the heading "We arrange many social events for charity donations" is shown
+- **AND** the section has a dark overlay treatment
 
-```gherkin
-Given the user scrolls to the team section
-Then the heading "Our Expert Volunteer Alwyes ready" is displayed
-And four team member cards are shown
-And each card has a circular avatar image, name, and role
-And social media icons are below each member
-```
+#### Scenario: Team section shows volunteer profiles
 
-### Scenario: CTA / WantToWork section
+- **GIVEN** the user scrolls to the team section
+- **THEN** the heading "Our Expert Volunteer Alwyes ready" is displayed
+- **AND** four team member cards are shown
+- **AND** each card has a circular avatar image, name, and role
+- **AND** social media icons are below each member
 
-```gherkin
-Given the user scrolls to the call-to-action section
-Then the heading "Lets Chenge The World With Humanity" is displayed
-And a "Become A Volunteer" button is shown
-And the section has a light background
-```
+#### Scenario: CTA / WantToWork section
 
-### Scenario: Testimonials section with slider
+- **GIVEN** the user scrolls to the call-to-action section
+- **THEN** the heading "Lets Chenge The World With Humanity" is displayed
+- **AND** a "Become A Volunteer" button is shown
+- **AND** the section has a light background
 
-```gherkin
-Given the user scrolls to the testimonials section
-Then a testimonial slider is displayed
-And each testimonial shows a quote, name, and role
-And dot navigation indicators allow switching between testimonials
-```
+#### Scenario: Testimonials section with slider
 
-### Scenario: Blog section shows recent posts
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial slider is displayed
+- **AND** each testimonial shows a quote, name, and role
+- **AND** dot navigation indicators allow switching between testimonials
 
-```gherkin
-Given the user scrolls to the blog section
-Then the heading "Latest News from our recent blog" is displayed
-And three blog post cards are shown
-And each card has an image, date, title, and excerpt
-```
+#### Scenario: Blog section shows recent posts
 
-### Scenario: Counter / Funfact section with stats
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading "Latest News from our recent blog" is displayed
+- **AND** three blog post cards are shown
+- **AND** each card has an image, date, title, and excerpt
 
-```gherkin
-Given the user scrolls to the counter section
-Then a parallax background is displayed
-And four statistic counters are shown in white text
-And counters show animated numbers (e.g., total donations, volunteers, events)
-```
+#### Scenario: Counter / Funfact section with stats
 
-### Scenario: Footer with three columns and copyright
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a parallax background is displayed
+- **AND** four statistic counters are shown in white text
+- **AND** counters show animated numbers (e.g., total donations, volunteers, events)
 
-```gherkin
-Given the user scrolls to the footer
-Then three columns are displayed: Contact Info, Important Links, and Newsletter
-And a newsletter signup form with email input is present
-And social media icons are shown
-And a copyright bar with Component Dock link is at the bottom
-```
+#### Scenario: Footer with three columns and copyright
 
-### Scenario: Responsive layout
+- **GIVEN** the user scrolls to the footer
+- **THEN** three columns are displayed: Contact Info, Important Links, and Newsletter
+- **AND** a newsletter signup form with email input is present
+- **AND** social media icons are shown
+- **AND** a copyright bar with Component Dock link is at the bottom
 
-```gherkin
-Given the user views the page on a mobile device
-Then the navigation collapses into a hamburger menu
-And service cards stack vertically
-And the about section stacks image above text
-And the footer columns stack vertically
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the navigation collapses into a hamburger menu
+- **AND** service cards stack vertically
+- **AND** the about section stacks image above text
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

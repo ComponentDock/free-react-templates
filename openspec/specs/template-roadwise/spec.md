@@ -68,95 +68,103 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
 9. **Blog** — 3-column blog cards with date, author, comment count, title, excerpt
 10. **Footer** — Black background, 4 columns (About Roadwise, Information, Customer Support, Have a Questions? with contact info), social icons, copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Roadwise Car Rental Template
 
-```gherkin
-Scenario: Navbar renders with correct links and brand
-  Given the Roadwise page loads
-  Then the navbar displays the brand "Roadwise"
-  And the navbar contains links: Home, About, Pricing, Our Fleet, Blog, Contact
-  And the navbar is sticky/transparent on scroll
+#### Scenario: Navbar renders with correct links and brand
 
-Scenario: Hero section displays booking form
-  Given the Roadwise page loads
-  Then the hero section shows a headline about renting a car
-  And a circular orange play button with "Easy steps for renting a car" is visible
-  And a booking form card is displayed with fields:
-    | Field           | Type   |
-    | Pick-up location | text  |
-    | Drop-off location | text |
-    | Pick-up date    | date   |
-    | Drop-off date   | date   |
-    | Pick-up time    | time   |
-  And a "Search Vehicle" button is present
+- **GIVEN** the Roadwise page loads
+- **THEN** the navbar displays the brand "Roadwise"
+- **AND** the navbar contains links: Home, About, Pricing, Our Fleet, Blog, Contact
+- **AND** the navbar is sticky/transparent on scroll
 
-Scenario: Advanced search bar renders filter controls
-  Given the Roadwise page loads
-  Then the search bar section shows filter dropdowns for:
-    | Filter      |
-    | Model       |
-    | Brand       |
-    | Year        |
-    | Price Range |
-  And a "Search" button is present
+#### Scenario: Hero section displays booking form
 
-Scenario: Our Services section displays 4 service cards
-  Given the Roadwise page loads
-  Then the services section shows 4 cards with icons:
-    | Service           | Icon             |
-    | Customer Support  | customer-support |
-    | Lots of Locations | route            |
-    | Reservation       | online-booking   |
-    | Rental Cars       | rent             |
-  And each card has a title and description text
+- **GIVEN** the Roadwise page loads
+- **THEN** the hero section shows a headline about renting a car
+- **AND** a circular orange play button with "Easy steps for renting a car" is visible
+- **AND** a booking form card is displayed with fields:
+| Field           | Type   |
+| Pick-up location | text  |
+| Drop-off location | text |
+| Pick-up date    | date   |
+| Drop-off date   | date   |
+| Pick-up time    | time   |
+- **AND** a "Search Vehicle" button is present
 
-Scenario: Choose Your Car section shows car grid
-  Given the Roadwise page loads
-  Then a car grid displays vehicle cards
-  And each card shows: car image, model name, brand, daily price ("From $X/Day")
-  And each card has "Book Now" and "Details" buttons
+#### Scenario: Advanced search bar renders filter controls
 
-Scenario: How it works section shows 4-step workflow
-  Given the Roadwise page loads
-  Then the workflow section shows 4 numbered steps:
-    | Step              | Icon     |
-    | Pick Destination  | route    |
-    | Select Term       | select   |
-    | Choose A Car      | rent     |
-    | Enjoy The Ride    | review   |
-  And each step has a title and description
+- **GIVEN** the Roadwise page loads
+- **THEN** the search bar section shows filter dropdowns for:
+| Filter      |
+| Model       |
+| Brand       |
+| Year        |
+| Price Range |
+- **AND** a "Search" button is present
 
-Scenario: Testimonials carousel renders client quotes
-  Given the Roadwise page loads
-  Then the testimonials section displays "Happy Clients"
-  And an owl-carousel shows client testimonials
-  And each testimonial has: quote text, client name, client role
+#### Scenario: Our Services section displays 4 service cards
 
-Scenario: About Us section with split layout
-  Given the Roadwise page loads
-  Then the about section shows "Choose A Perfect Car"
-  And a left column displays a car image
-  And a right column displays descriptive text
+- **GIVEN** the Roadwise page loads
+- **THEN** the services section shows 4 cards with icons:
+| Service           | Icon             |
+| Customer Support  | customer-support |
+| Lots of Locations | route            |
+| Reservation       | online-booking   |
+| Rental Cars       | rent             |
+- **AND** each card has a title and description text
 
-Scenario: Blog section shows 3-column grid
-  Given the Roadwise page loads
-  Then 3 blog cards are displayed
-  And each card shows: date, author, comment count, title, excerpt
+#### Scenario: Choose Your Car section shows car grid
 
-Scenario: Footer with 4 columns
-  Given the Roadwise page loads
-  Then the footer has a black background
-  And 4 columns are present:
-    | Column           | Content                                           |
-    | About Roadwise   | Brand description, links                          |
-    | Information      | About, Services, Terms, Privacy links             |
-    | Customer Support | FAQ, Payment, Booking Tips, How it works, Contact |
-    | Contact          | Address, phone, email                             |
-  And social media icon links are displayed
-  And the footer contains "Made with Component Dock" linking componentdock.com
-```
+- **GIVEN** the Roadwise page loads
+- **THEN** a car grid displays vehicle cards
+- **AND** each card shows: car image, model name, brand, daily price ("From $X/Day")
+- **AND** each card has "Book Now" and "Details" buttons
+
+#### Scenario: How it works section shows 4-step workflow
+
+- **GIVEN** the Roadwise page loads
+- **THEN** the workflow section shows 4 numbered steps:
+| Step              | Icon     |
+| Pick Destination  | route    |
+| Select Term       | select   |
+| Choose A Car      | rent     |
+| Enjoy The Ride    | review   |
+- **AND** each step has a title and description
+
+#### Scenario: Testimonials carousel renders client quotes
+
+- **GIVEN** the Roadwise page loads
+- **THEN** the testimonials section displays "Happy Clients"
+- **AND** an owl-carousel shows client testimonials
+- **AND** each testimonial has: quote text, client name, client role
+
+#### Scenario: About Us section with split layout
+
+- **GIVEN** the Roadwise page loads
+- **THEN** the about section shows "Choose A Perfect Car"
+- **AND** a left column displays a car image
+- **AND** a right column displays descriptive text
+
+#### Scenario: Blog section shows 3-column grid
+
+- **GIVEN** the Roadwise page loads
+- **THEN** 3 blog cards are displayed
+- **AND** each card shows: date, author, comment count, title, excerpt
+
+#### Scenario: Footer with 4 columns
+
+- **GIVEN** the Roadwise page loads
+- **THEN** the footer has a black background
+- **AND** 4 columns are present:
+| Column           | Content                                           |
+| About Roadwise   | Brand description, links                          |
+| Information      | About, Services, Terms, Privacy links             |
+| Customer Support | FAQ, Payment, Booking Tips, How it works, Contact |
+| Contact          | Address, phone, email                             |
+- **AND** social media icon links are displayed
+- **AND** the footer contains "Made with Component Dock" linking componentdock.com
 
 ## Verification Checklist
 

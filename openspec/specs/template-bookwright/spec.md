@@ -53,106 +53,88 @@ ColorLib template page screenshot and page metadata.
 10. **Footer** — Dark background (dark gray or brand dark blue). 4 columns: (1) logo + brief description + social icons, (2) Quick Links, (3) Services links, (4) Newsletter signup with email input + subscribe button. Copyright bar at bottom: "Copyright © 2024 All rights reserved | Made with Component Dock".
 11. **Copyright Bar** — Subtle bar at very bottom: "Copyright © [year] All rights reserved | Made with Component Dock" (replacing original Colorlib attribution).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Top bar displays contact info and social links
+### Feature: Bookwright template behaviour
 
-```
-Given the Bookwright page loads
-Then the top bar shows contact information with phone and email
-And social icons for Facebook, Twitter, and LinkedIn are visible
-And the top bar is hidden on mobile viewports
-```
+#### Scenario: Top bar displays contact info and social links
 
-### Scenario: Navbar renders logo, navigation links, and dropdowns
+- **GIVEN** the Bookwright page loads
+- **THEN** the top bar shows contact information with phone and email
+- **AND** social icons for Facebook, Twitter, and LinkedIn are visible
+- **AND** the top bar is hidden on mobile viewports
 
-```
-Given the Bookwright page loads
-Then the navbar displays the Bookwright logo with dark blue circle and "$" symbol
-And the navigation links include: Home, About, Services, Blog, Contact
-And the Services link has a dropdown indicator
-And the navbar has a white background with bottom border
-```
+#### Scenario: Navbar renders logo, navigation links, and dropdowns
 
-### Scenario: Hero banner shows headline and CTA
+- **GIVEN** the Bookwright page loads
+- **THEN** the navbar displays the Bookwright logo with dark blue circle and "$" symbol
+- **AND** the navigation links include: Home, About, Services, Blog, Contact
+- **AND** the Services link has a dropdown indicator
+- **AND** the navbar has a white background with bottom border
 
-```
-Given the Bookwright page loads
-Then the hero banner displays a full-width background image
-And the headline "Book Keeping Consulting Agency" is centered in white text
-And a dark blue "GET STARTED" button is visible below the headline
-And the hero text has a subtle shadow for readability
-```
+#### Scenario: Hero banner shows headline and CTA
 
-### Scenario: About Us section shows split layout
+- **GIVEN** the Bookwright page loads
+- **THEN** the hero banner displays a full-width background image
+- **AND** the headline "Book Keeping Consulting Agency" is centered in white text
+- **AND** a dark blue "GET STARTED" button is visible below the headline
+- **AND** the hero text has a subtle shadow for readability
 
-```
-Given the Bookwright page loads
-Then the About Us section has a two-column split layout
-And the left column displays a professional image
-And the right column shows the "ABOUT US" subhead in dark blue
-And the heading "Mindful Planning of Monetary Spending and Saving" is displayed
-And a thin dark blue separator line is below the heading
-And 4 feature bullet points are shown in a 2x2 grid with arrow icons
-```
+#### Scenario: About Us section shows split layout
 
-### Scenario: Services section displays service cards
+- **GIVEN** the Bookwright page loads
+- **THEN** the About Us section has a two-column split layout
+- **AND** the left column displays a professional image
+- **AND** the right column shows the "ABOUT US" subhead in dark blue
+- **AND** the heading "Mindful Planning of Monetary Spending and Saving" is displayed
+- **AND** a thin dark blue separator line is below the heading
+- **AND** 4 feature bullet points are shown in a 2x2 grid with arrow icons
 
-```
-Given the Bookwright page loads
-Then the Services section shows a section title "Our Services"
-And at least 3 service cards are displayed in a grid
-And each card has an icon, title, and description text
-```
+#### Scenario: Services section displays service cards
 
-### Scenario: Counters section animates on scroll
+- **GIVEN** the Bookwright page loads
+- **THEN** the Services section shows a section title "Our Services"
+- **AND** at least 3 service cards are displayed in a grid
+- **AND** each card has an icon, title, and description text
 
-```
-Given the Bookwright page loads
-Then the counters section displays 4 statistics
-And each statistic has a number, suffix, and label
-And the numbers animate from 0 to their target value on scroll
-```
+#### Scenario: Counters section animates on scroll
 
-### Scenario: Testimonials section shows review cards
+- **GIVEN** the Bookwright page loads
+- **THEN** the counters section displays 4 statistics
+- **AND** each statistic has a number, suffix, and label
+- **AND** the numbers animate from 0 to their target value on scroll
 
-```
-Given the Bookwright page loads
-Then the testimonials section displays at least 2 testimonial cards
-And each card shows a quote, author name, and author role
-```
+#### Scenario: Testimonials section shows review cards
 
-### Scenario: Contact form is functional
+- **GIVEN** the Bookwright page loads
+- **THEN** the testimonials section displays at least 2 testimonial cards
+- **AND** each card shows a quote, author name, and author role
 
-```
-Given the Bookwright page loads
-Then the contact form displays fields for Name, Email, Subject, and Message
-And a "Send Message" submit button is visible
-And form validation shows errors for empty required fields
-And submitting a valid form shows a success message
-```
+#### Scenario: Contact form is functional
 
-### Scenario: Footer renders multi-column layout
+- **GIVEN** the Bookwright page loads
+- **THEN** the contact form displays fields for Name, Email, Subject, and Message
+- **AND** a "Send Message" submit button is visible
+- **AND** form validation shows errors for empty required fields
+- **AND** submitting a valid form shows a success message
 
-```
-Given the Bookwright page loads
-Then the footer displays 4 columns
-And column 1 has logo, description, and social links
-And column 2 has Quick Links
-And column 3 has Services links
-And column 4 has a newsletter form with email input and subscribe button
-And a copyright bar shows "Component Dock" attribution
-```
+#### Scenario: Footer renders multi-column layout
 
-### Scenario: All sections are responsive
+- **GIVEN** the Bookwright page loads
+- **THEN** the footer displays 4 columns
+- **AND** column 1 has logo, description, and social links
+- **AND** column 2 has Quick Links
+- **AND** column 3 has Services links
+- **AND** column 4 has a newsletter form with email input and subscribe button
+- **AND** a copyright bar shows "Component Dock" attribution
 
-```
-Given the Bookwright page loads on a mobile viewport
-Then the top bar is hidden
-And the navbar shows a hamburger menu toggle
-And all section layouts stack vertically
-And images resize appropriately
-```
+#### Scenario: All sections are responsive
+
+- **GIVEN** the Bookwright page loads on a mobile viewport
+- **THEN** the top bar is hidden
+- **AND** the navbar shows a hamburger menu toggle
+- **AND** all section layouts stack vertically
+- **AND** images resize appropriately
 
 ## Verification Checklist
 

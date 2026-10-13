@@ -50,138 +50,167 @@ Extracted from `https://preview.colorlib.com/theme/classic/style.css`:
 12. **Contact** — white bg, inner div with its own bg. Section title with bar underline. Two columns: left = form (Full Name, Phone, Email, Subject, Message, "Send Now" button); right = contact info (address, phone, email) + social icons.
 13. **Footer** — dark bg. Top section: 4 columns (Brand + social icons, News links, Company links, Resources links, Solutions links). Bottom: copyright with Colorlib attribution (replaced with Component Dock).
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Evergreen — one-page business website
 
-```gherkin
 Feature: Evergreen business one-page template
-  As a visitor, I want to explore a business website's services, portfolio, team, pricing, blog, and contact info in a single page.
+As a visitor, I want to explore a business website's services, portfolio, team, pricing, blog, and contact info in a single page.
 
-  Background:
-    Given the Evergreen template is loaded at the root URL
+Background:
+- **GIVEN** the Evergreen template is loaded at the root URL
 
-  # --- Navbar ---
-  Scenario: Sticky navbar with scroll-spy
-    Then the navbar is visible and sticks to the top on scroll
-    And it shows the logo on the left
-    And it shows primary nav links: Home, Services, Portfolio, Team, Price, Blog, Contact
-    And the active nav link highlights based on the visible section
-    And a search toggle icon is present
-    And a user icon is present
+**--- Navbar ---**
 
-  Scenario: Search toggle
-    When the visitor clicks the search icon
-    Then a search input overlay appears
-    And the input has placeholder text "What do you want to know?"
-    When the visitor clicks elsewhere
-    Then the search overlay closes
+#### Scenario: Sticky navbar with scroll-spy
 
-  # --- Header / Hero ---
-  Scenario: Hero section renders with overlay and CTA
-    Then the hero section has a dark overlay background image
-    And the headline text is visible
-    And a blockquote is visible below the headline
-    And a "Contact Now" pill button is visible
-    When the visitor clicks "Contact Now"
-    Then the page scrolls to the contact section
+- **THEN** the navbar is visible and sticks to the top on scroll
+- **AND** it shows the logo on the left
+- **AND** it shows primary nav links: Home, Services, Portfolio, Team, Price, Blog, Contact
+- **AND** the active nav link highlights based on the visible section
+- **AND** a search toggle icon is present
+- **AND** a user icon is present
 
-  # --- About ---
-  Scenario: About section two-column layout
-    Then the About section shows a heading and paragraph on the left
-    And an image is displayed on the right
-    And a "Learn More" pill button is visible
+#### Scenario: Search toggle
 
-  # --- Video + Why Choose Us ---
-  Scenario: Video thumbnail with play button
-    Then a video thumbnail image is shown on the left
-    And a circular play button overlays the thumbnail
+- **WHEN** the visitor clicks the search icon
+- **THEN** a search input overlay appears
+- **AND** the input has placeholder text "What do you want to know?"
+- **WHEN** the visitor clicks elsewhere
+- **THEN** the search overlay closes
 
-  Scenario: Tabbed Why Choose Us content
-    Then three tabs are visible: "Our Mission", "Our Vision", "Our Support"
-    When the visitor clicks "Our Mission"
-    Then the mission content panel is displayed
-    When the visitor clicks "Our Vision"
-    Then the vision content panel is displayed
-    And the mission panel is hidden
-    When the visitor clicks "Our Support"
-    Then the support content panel is displayed
-    And each tab panel has a heading, paragraph, and "View More" button
+**--- Header / Hero ---**
 
-  # --- Services ---
-  Scenario: Six service feature boxes
-    Then 6 feature boxes are displayed in a grid
-    And each feature box has an icon, title, paragraph, and "Read More" link
-    And the service titles are: Unique Design, Clean Layout, Well Responsive, Pro Developing, Well Documented, Quick Marketing
+#### Scenario: Hero section renders with overlay and CTA
 
-  # --- Skills ---
-  Scenario: Skills section with progress indicators
-    Then the Skills section shows a heading and paragraph
-    And 6 circular progress chart indicators are displayed
-    And each chart shows a percentage label (e.g. 95, 85, 90)
+- **THEN** the hero section has a dark overlay background image
+- **AND** the headline text is visible
+- **AND** a blockquote is visible below the headline
+- **AND** a "Contact Now" pill button is visible
+- **WHEN** the visitor clicks "Contact Now"
+- **THEN** the page scrolls to the contact section
 
-  # --- Portfolio ---
-  Scenario: Portfolio filter tabs
-    Then filter tabs are displayed: All, Graphics, UI/UX, Web Design, Coding, Developing, Photography
-    When the visitor clicks "Web Design"
-    Then only portfolio items tagged "web_design" are visible
-    When the visitor clicks "All"
-    Then all portfolio items are visible
+**--- About ---**
 
-  Scenario: Portfolio items with hover overlay
-    Then 8 portfolio items are displayed in a grid
-    And each item shows an image
-    And hovering over an item reveals a title and a lightbox link
+#### Scenario: About section two-column layout
 
-  # --- Team ---
-  Scenario: Team member cards
-    Then 4 team member cards are displayed
-    And each card shows a photo
-    And hovering over a card reveals the member's name, role, skill bars, and social icons
-    And skill bars show percentage values (e.g. 90%, 70%, 50%)
+- **THEN** the About section shows a heading and paragraph on the left
+- **AND** an image is displayed on the right
+- **AND** a "Learn More" pill button is visible
 
-  # --- Pricing ---
-  Scenario: Pricing toggle between Monthly and Yearly
-    Then "Monthly" and "Yearly" tabs are visible
-    When the visitor clicks "Yearly"
-    Then all price amounts show "/ Year" period
-    When the visitor clicks "Monthly"
-    Then all price amounts show "/ Month" period
+**--- Video + Why Choose Us ---**
 
-  Scenario: Four pricing cards
-    Then 4 pricing cards are displayed: Basic, Premium, Business, Ultimate
-    And prices are $10, $50, $80, $100 respectively (monthly)
-    And each card has a feature list and "Purchase Now" button
-    And the "Premium" card is visually highlighted
+#### Scenario: Video thumbnail with play button
 
-  # --- Blog ---
-  Scenario: Blog section with featured and list posts
-    Then a large featured blog post is displayed on the left with image, heading, and paragraph
-    And 3 smaller blog list posts are displayed on the right
-    And each list post has a thumbnail, heading, date meta, and paragraph
+- **THEN** a video thumbnail image is shown on the left
+- **AND** a circular play button overlays the thumbnail
 
-  # --- Counter / Stats ---
-  Scenario: Stats counter section
-    Then 4 stat counters are displayed: Project Complete (1172), Happy Clients (1000), Total Clients (1200), Winning Award (1172)
-    And each stat has an icon, label, and count number
+#### Scenario: Tabbed Why Choose Us content
 
-  # --- Contact ---
-  Scenario: Contact form
-    Then the contact section shows a section title with bar underline
-    And a form with fields: Full Name, Phone Number, Email, Subject, Message
-    And a "Send Now" button
-    And submitting the form without required fields shows validation errors
+- **THEN** three tabs are visible: "Our Mission", "Our Vision", "Our Support"
+- **WHEN** the visitor clicks "Our Mission"
+- **THEN** the mission content panel is displayed
+- **WHEN** the visitor clicks "Our Vision"
+- **THEN** the vision content panel is displayed
+- **AND** the mission panel is hidden
+- **WHEN** the visitor clicks "Our Support"
+- **THEN** the support content panel is displayed
+- **AND** each tab panel has a heading, paragraph, and "View More" button
 
-  Scenario: Contact info sidebar
-    Then contact info is displayed on the right: address, phone number, email
-    And social icons (Twitter, Skype, Instagram) are shown
+**--- Services ---**
 
-  # --- Footer ---
-  Scenario: Footer layout
-    Then the footer has a top section with 4 columns: brand + social, News, Company, Resources, Solutions
-    And a bottom copyright bar
-    And the footer links to https://www.componentdock.com/ as "Component Dock"
-```
+#### Scenario: Six service feature boxes
+
+- **THEN** 6 feature boxes are displayed in a grid
+- **AND** each feature box has an icon, title, paragraph, and "Read More" link
+- **AND** the service titles are: Unique Design, Clean Layout, Well Responsive, Pro Developing, Well Documented, Quick Marketing
+
+**--- Skills ---**
+
+#### Scenario: Skills section with progress indicators
+
+- **THEN** the Skills section shows a heading and paragraph
+- **AND** 6 circular progress chart indicators are displayed
+- **AND** each chart shows a percentage label (e.g. 95, 85, 90)
+
+**--- Portfolio ---**
+
+#### Scenario: Portfolio filter tabs
+
+- **THEN** filter tabs are displayed: All, Graphics, UI/UX, Web Design, Coding, Developing, Photography
+- **WHEN** the visitor clicks "Web Design"
+- **THEN** only portfolio items tagged "web_design" are visible
+- **WHEN** the visitor clicks "All"
+- **THEN** all portfolio items are visible
+
+#### Scenario: Portfolio items with hover overlay
+
+- **THEN** 8 portfolio items are displayed in a grid
+- **AND** each item shows an image
+- **AND** hovering over an item reveals a title and a lightbox link
+
+**--- Team ---**
+
+#### Scenario: Team member cards
+
+- **THEN** 4 team member cards are displayed
+- **AND** each card shows a photo
+- **AND** hovering over a card reveals the member's name, role, skill bars, and social icons
+- **AND** skill bars show percentage values (e.g. 90%, 70%, 50%)
+
+**--- Pricing ---**
+
+#### Scenario: Pricing toggle between Monthly and Yearly
+
+- **THEN** "Monthly" and "Yearly" tabs are visible
+- **WHEN** the visitor clicks "Yearly"
+- **THEN** all price amounts show "/ Year" period
+- **WHEN** the visitor clicks "Monthly"
+- **THEN** all price amounts show "/ Month" period
+
+#### Scenario: Four pricing cards
+
+- **THEN** 4 pricing cards are displayed: Basic, Premium, Business, Ultimate
+- **AND** prices are $10, $50, $80, $100 respectively (monthly)
+- **AND** each card has a feature list and "Purchase Now" button
+- **AND** the "Premium" card is visually highlighted
+
+**--- Blog ---**
+
+#### Scenario: Blog section with featured and list posts
+
+- **THEN** a large featured blog post is displayed on the left with image, heading, and paragraph
+- **AND** 3 smaller blog list posts are displayed on the right
+- **AND** each list post has a thumbnail, heading, date meta, and paragraph
+
+**--- Counter / Stats ---**
+
+#### Scenario: Stats counter section
+
+- **THEN** 4 stat counters are displayed: Project Complete (1172), Happy Clients (1000), Total Clients (1200), Winning Award (1172)
+- **AND** each stat has an icon, label, and count number
+
+**--- Contact ---**
+
+#### Scenario: Contact form
+
+- **THEN** the contact section shows a section title with bar underline
+- **AND** a form with fields: Full Name, Phone Number, Email, Subject, Message
+- **AND** a "Send Now" button
+- **AND** submitting the form without required fields shows validation errors
+
+#### Scenario: Contact info sidebar
+
+- **THEN** contact info is displayed on the right: address, phone number, email
+- **AND** social icons (Twitter, Skype, Instagram) are shown
+
+**--- Footer ---**
+
+#### Scenario: Footer layout
+
+- **THEN** the footer has a top section with 4 columns: brand + social, News, Company, Resources, Solutions
+- **AND** a bottom copyright bar
+- **AND** the footer links to https://www.componentdock.com/ as "Component Dock"
 
 ## Verification checklist
 

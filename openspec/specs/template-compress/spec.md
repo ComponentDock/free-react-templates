@@ -14,7 +14,7 @@ Recreation of ColorLib **Accordion 15** (preview URL: `https://colorlib.com/wp/t
 - **Button / Component Shape**: Rounded-xl borders with smooth accordion transition animations and clean shadows.
 - **Section Backgrounds**: Clean light gray (`#f8fafc`) with white card surfaces.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Accordion Showcase
 
@@ -24,21 +24,21 @@ So that I can easily inspect information in a compact layout.
 
 #### Scenario: View main accordion showcase
 
-- Given the Compress application is loaded
-- When the user views the main page
-- Then the header, interactive accordion sections, profile widget components, and footer with Component Dock link should be visible.
+- **GIVEN** the Compress application is loaded
+- **WHEN** the user views the main page
+- **THEN** the header, interactive accordion sections, profile widget components, and footer with Component Dock link should be visible
 
 #### Scenario: Expand and collapse accordion panels
 
-- Given an accordion panel is collapsed
-- When the user clicks the accordion header
-- Then the panel expands smoothly to reveal its content and toggle icon rotates.
+- **GIVEN** an accordion panel is collapsed
+- **WHEN** the user clicks the accordion header
+- **THEN** the panel expands smoothly to reveal its content and toggle icon rotates
 
 #### Scenario: Toggle multiple panels
 
-- Given multiple accordion sections are present
-- When the user clicks different panels
-- Then the active panels toggle correctly according to the accordion mode.
+- **GIVEN** multiple accordion sections are present
+- **WHEN** the user clicks different panels
+- **THEN** the active panels toggle correctly according to the accordion mode
 
 ## Verification Checklist
 

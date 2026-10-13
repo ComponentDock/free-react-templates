@@ -39,92 +39,94 @@ Order extracted from `https://preview.colorlib.com/theme/caviar/`:
 7. **Reservation** — split layout: right side has reservation form (date, time, persons, last name, message textarea, "Reserve Your Desk" button), left side has background image. Dark background.
 8. **Footer** — minimal dark footer with logo text and copyright line. Credits Component Dock.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar renders with transparent background over hero
-  Given the user loads the page
-  Then a fixed navbar spans the full width
-  And the navbar background is transparent initially
-  And the logo text "Crudo" is displayed
-  And navigation links are right-aligned
 
-Scenario: Navbar becomes semi-transparent on scroll
-  Given the user scrolls past the hero
-  Then the navbar background becomes rgba(0,0,0,0.85)
-  And the navbar height shrinks from 100px to 70px
-```
+#### Scenario: Navbar renders with transparent background over hero
+
+- **GIVEN** the user loads the page
+- **THEN** a fixed navbar spans the full width
+- **AND** the navbar background is transparent initially
+- **AND** the logo text "Crudo" is displayed
+- **AND** navigation links are right-aligned
+
+#### Scenario: Navbar becomes semi-transparent on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar background becomes rgba(0,0,0,0.85)
+- **AND** the navbar height shrinks from 100px to 70px
 
 ### Hero
-```gherkin
-Scenario: Hero displays full-screen slider with CTA
-  Given the user views the hero
-  Then a full-screen background image is displayed
-  And a content card is positioned on the left side
-  And the card contains a heading and subtext
-  And a "Reservation" square button is shown
 
-Scenario: Hero has social icons on left edge
-  Given the user views the hero
-  Then social media icons (Facebook, Instagram, Twitter) are stacked on the left edge
-```
+#### Scenario: Hero displays full-screen slider with CTA
+
+- **GIVEN** the user views the hero
+- **THEN** a full-screen background image is displayed
+- **AND** a content card is positioned on the left side
+- **AND** the card contains a heading and subtext
+- **AND** a "Reservation" square button is shown
+
+#### Scenario: Hero has social icons on left edge
+
+- **GIVEN** the user views the hero
+- **THEN** social media icons (Facebook, Instagram, Twitter) are stacked on the left edge
 
 ### About Us
-```gherkin
-Scenario: About Us shows two alternating image-text blocks
-  Given the user scrolls to About Us
-  Then the first block has image left, text right
-  And the text block contains heading "About Us" and subtitle "restaurant style"
-  And the second block has text left, image right
-  And the second text block subtitle is "our chef"
-```
+
+#### Scenario: About Us shows two alternating image-text blocks
+
+- **GIVEN** the user scrolls to About Us
+- **THEN** the first block has image left, text right
+- **AND** the text block contains heading "About Us" and subtitle "restaurant style"
+- **AND** the second block has text left, image right
+- **AND** the second text block subtitle is "our chef"
 
 ### Dish Menu
-```gherkin
-Scenario: Menu section shows three dish cards
-  Given the user scrolls to the menu section
-  Then heading "Special" is centered
-  And a "View The Menu" button is below the heading
-  And three dish cards are shown in a row
-  And each card has a dish image, name, and price
-```
+
+#### Scenario: Menu section shows three dish cards
+
+- **GIVEN** the user scrolls to the menu section
+- **THEN** heading "Special" is centered
+- **AND** a "View The Menu" button is below the heading
+- **AND** three dish cards are shown in a row
+- **AND** each card has a dish image, name, and price
 
 ### Awards
-```gherkin
-Scenario: Awards section shows logo row
-  Given the user scrolls to awards
-  Then heading "Awards" is displayed
-  And five award badge images are shown in a horizontal row
-```
+
+#### Scenario: Awards section shows logo row
+
+- **GIVEN** the user scrolls to awards
+- **THEN** heading "Awards" is displayed
+- **AND** five award badge images are shown in a horizontal row
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials section shows carousel
-  Given the user scrolls to testimonials
-  Then heading "Testimonials" is centered
-  And a carousel of testimonial cards is displayed
-  And each card shows author image, name, and quote text
-```
+
+#### Scenario: Testimonials section shows carousel
+
+- **GIVEN** the user scrolls to testimonials
+- **THEN** heading "Testimonials" is centered
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows author image, name, and quote text
 
 ### Reservation
-```gherkin
-Scenario: Reservation section has form and image
-  Given the user scrolls to reservation
-  Then a dark background section is displayed
-  And a reservation form is on the right with fields: date, time, persons, name, message
-  And a "Reserve Your Desk" button submits the form
-  And a decorative image is shown on the left
-```
+
+#### Scenario: Reservation section has form and image
+
+- **GIVEN** the user scrolls to reservation
+- **THEN** a dark background section is displayed
+- **AND** a reservation form is on the right with fields: date, time, persons, name, message
+- **AND** a "Reserve Your Desk" button submits the form
+- **AND** a decorative image is shown on the left
 
 ### Footer
-```gherkin
-Scenario: Footer shows minimal branding and copyright
-  Given the user scrolls to the footer
-  Then a dark footer is displayed
-  And the logo text "Crudo" is shown
-  And copyright text with Component Dock attribution is present
-```
+
+#### Scenario: Footer shows minimal branding and copyright
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark footer is displayed
+- **AND** the logo text "Crudo" is shown
+- **AND** copyright text with Component Dock attribution is present
 
 ## Verification checklist
 

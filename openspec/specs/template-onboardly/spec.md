@@ -31,29 +31,33 @@ Onboardly is a multi-step wizard form page with a footer. It recreates the Color
 7. **Navigation buttons** — Next/Previous with gradient background
 8. **Footer** — Component Dock link
 
-## Gherkin Scenarios
+## Requirements
 
 ### Feature: Onboardly account setup wizard
 
-Scenario: Renders step 1 by default
-Given the wizard is loaded
-Then step 1 "Account Setup" is active
-And the heading "Create your account" is visible
-And the Email, Password, Confirm Password fields are visible
+#### Scenario: Renders step 1 by default
 
-Scenario: Navigate between steps
-When the user clicks "Next" on step 1
-Then step 2 "Social Profiles" is active
-And the heading "Social profiles" is visible
-When the user clicks "Previous"
-Then step 1 is active again
+- **GIVEN** the wizard is loaded
+- **THEN** step 1 "Account Setup" is active
+- **AND** the heading "Create your account" is visible
+- **AND** the Email, Password, Confirm Password fields are visible
 
-Scenario: Complete all steps
-When the user clicks "Next" on step 1
-And clicks "Next" on step 2
-And clicks "Finish" on step 3
-Then a completion message "Account Created!" is shown
+#### Scenario: Navigate between steps
 
-Scenario: Footer links to Component Dock
-Given the wizard is loaded
-Then the footer contains a link to componentdock.com
+- **WHEN** the user clicks "Next" on step 1
+- **THEN** step 2 "Social Profiles" is active
+- **AND** the heading "Social profiles" is visible
+- **WHEN** the user clicks "Previous"
+- **THEN** step 1 is active again
+
+#### Scenario: Complete all steps
+
+- **WHEN** the user clicks "Next" on step 1
+- **AND** clicks "Next" on step 2
+- **AND** clicks "Finish" on step 3
+- **THEN** a completion message "Account Created!" is shown
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the wizard is loaded
+- **THEN** the footer contains a link to componentdock.com

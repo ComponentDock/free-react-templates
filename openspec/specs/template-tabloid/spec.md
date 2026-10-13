@@ -78,116 +78,132 @@ Extracted from the live preview CSS (`style.css`) at https://preview.colorlib.co
 - Copyright bar: copyright text left, footer nav links right (Home, Privacy, Advertisement, Contact Us)
 - Footer MUST link `https://www.componentdock.com/` (replaces Colorlib attribution)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Tabloid template behaviour
+
 Feature: Tabloid — Video & Magazine Blog Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "Tabloid"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "Tabloid"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo is visible in the top-left
-    And navigation links "Home", "Archive", "About", "Contact" are visible
-    And a search input is present
-    And a login icon is visible
-    And a "Submit Video" button with brand pink background is visible
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero slider displays with parallax
-    Given the hero section is in the viewport
-    Then a full-width background image with dark overlay is visible
-    And a date tag and category tag are displayed
-    And a post title in large white text is shown
-    And a video play button (white circle) is visible
-    And dot indicators are present
+- **GIVEN** the user is on any viewport
+- **THEN** the logo is visible in the top-left
+- **AND** navigation links "Home", "Archive", "About", "Contact" are visible
+- **AND** a search input is present
+- **AND** a login icon is visible
+- **AND** a "Submit Video" button with brand pink background is visible
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: Hero slider advances slides
-    Given the hero slider is showing slide 1
-    When the user navigates to the next slide
-    Then slide 2 is displayed with its content
-    And the content animates in
+#### Scenario: Hero slider displays with parallax
 
-  Scenario: Left sidebar shows Most Popular posts
-    Given the left sidebar is in the viewport
-    Then the heading "Most Popular" is visible
-    And 5 post items are displayed (thumbnail + title + stats)
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width background image with dark overlay is visible
+- **AND** a date tag and category tag are displayed
+- **AND** a post title in large white text is shown
+- **AND** a video play button (white circle) is visible
+- **AND** dot indicators are present
 
-  Scenario: Left sidebar shows Latest Videos
-    Given the left sidebar is in the viewport
-    Then the heading "Latest Videos" is visible
-    And 5 video post items are displayed
+#### Scenario: Hero slider advances slides
 
-  Scenario: Trending Now section shows posts
-    Given the main content area is in the viewport
-    Then the heading "TRENDING NOW" is visible
-    And 6 trending post items are displayed with thumbnails and category tags
+- **GIVEN** the hero slider is showing slide 1
+- **WHEN** the user navigates to the next slide
+- **THEN** slide 2 is displayed with its content
+- **AND** the content animates in
 
-  Scenario: Featured Videos section renders
-    Given the main content area is in the viewport
-    Then the heading "Featured Videos" is visible
-    And a large featured post with thumbnail, play button, date, title, and excerpt is shown
-    And a sidebar list of 5 video posts is displayed alongside
+#### Scenario: Left sidebar shows Most Popular posts
 
-  Scenario: Most Viewed Videos carousel works
-    Given the main content area is in the viewport
-    Then the heading "Most Viewed Videos" is visible
-    And video cards with thumbnails, play buttons, duration badges, and titles are shown
-    And carousel navigation is present
+- **GIVEN** the left sidebar is in the viewport
+- **THEN** the heading "Most Popular" is visible
+- **AND** 5 post items are displayed (thumbnail + title + stats)
 
-  Scenario: Sports Videos section renders
-    Given the main content area is in the viewport
-    Then the heading "Sports Videos" is visible
-    And 3 featured sports posts with thumbnails, play buttons, and excerpts are shown
-    And a 4-column grid of video posts is displayed below
+#### Scenario: Left sidebar shows Latest Videos
 
-  Scenario: Right sidebar shows Social Followers
-    Given the right sidebar is in the viewport
-    Then Facebook, Twitter, YouTube, and Google+ follower counts are displayed
+- **GIVEN** the left sidebar is in the viewport
+- **THEN** the heading "Latest Videos" is visible
+- **AND** 5 video post items are displayed
 
-  Scenario: Right sidebar shows Categories
-    Given the right sidebar is in the viewport
-    Then the heading "Categories" is visible
-    And 7 category items with post counts are listed
+#### Scenario: Trending Now section shows posts
 
-  Scenario: Right sidebar shows Hot Channels
-    Given the right sidebar is in the viewport
-    Then the heading "Hot Channels" is visible
-    And 5 channel items with thumbnails and Subscribe buttons are shown
+- **GIVEN** the main content area is in the viewport
+- **THEN** the heading "TRENDING NOW" is visible
+- **AND** 6 trending post items are displayed with thumbnails and category tags
 
-  Scenario: Right sidebar shows Newsletter
-    Given the right sidebar is in the viewport
-    Then the heading "Newsletter" is visible
-    And a description paragraph is shown
-    And an email input field is present
-    And a "Subscribe" button with brand pink background is visible
+#### Scenario: Featured Videos section renders
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then a 4-column footer layout is visible
-    And social media icon links are present (Facebook, Google+, Instagram, Twitter, LinkedIn)
-    And a Categories nav list is shown
-    And a Sport Videos widget with 2 post items is shown
-    And a Channels tag cloud is displayed
-    And a copyright notice is displayed
-    And footer navigation links (Home, Privacy, Advertisement, Contact Us) are visible
-    And a link to "https://www.componentdock.com/" is present
+- **GIVEN** the main content area is in the viewport
+- **THEN** the heading "Featured Videos" is visible
+- **AND** a large featured post with thumbnail, play button, date, title, and excerpt is shown
+- **AND** a sidebar list of 5 video posts is displayed alongside
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And the 3-column layout stacks vertically (left sidebar, main, right sidebar)
-    And footer columns stack vertically
-    And the hero slider remains full-width
+#### Scenario: Most Viewed Videos carousel works
 
-  Scenario: Post items display engagement stats
-    Given any post item with stats is visible
-    Then view count, like count, and comment count are displayed
-    And each stat has an appropriate icon (eye, thumbs-up, comments)
-```
+- **GIVEN** the main content area is in the viewport
+- **THEN** the heading "Most Viewed Videos" is visible
+- **AND** video cards with thumbnails, play buttons, duration badges, and titles are shown
+- **AND** carousel navigation is present
+
+#### Scenario: Sports Videos section renders
+
+- **GIVEN** the main content area is in the viewport
+- **THEN** the heading "Sports Videos" is visible
+- **AND** 3 featured sports posts with thumbnails, play buttons, and excerpts are shown
+- **AND** a 4-column grid of video posts is displayed below
+
+#### Scenario: Right sidebar shows Social Followers
+
+- **GIVEN** the right sidebar is in the viewport
+- **THEN** Facebook, Twitter, YouTube, and Google+ follower counts are displayed
+
+#### Scenario: Right sidebar shows Categories
+
+- **GIVEN** the right sidebar is in the viewport
+- **THEN** the heading "Categories" is visible
+- **AND** 7 category items with post counts are listed
+
+#### Scenario: Right sidebar shows Hot Channels
+
+- **GIVEN** the right sidebar is in the viewport
+- **THEN** the heading "Hot Channels" is visible
+- **AND** 5 channel items with thumbnails and Subscribe buttons are shown
+
+#### Scenario: Right sidebar shows Newsletter
+
+- **GIVEN** the right sidebar is in the viewport
+- **THEN** the heading "Newsletter" is visible
+- **AND** a description paragraph is shown
+- **AND** an email input field is present
+- **AND** a "Subscribe" button with brand pink background is visible
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** a 4-column footer layout is visible
+- **AND** social media icon links are present (Facebook, Google+, Instagram, Twitter, LinkedIn)
+- **AND** a Categories nav list is shown
+- **AND** a Sport Videos widget with 2 post items is shown
+- **AND** a Channels tag cloud is displayed
+- **AND** a copyright notice is displayed
+- **AND** footer navigation links (Home, Privacy, Advertisement, Contact Us) are visible
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the 3-column layout stacks vertically (left sidebar, main, right sidebar)
+- **AND** footer columns stack vertically
+- **AND** the hero slider remains full-width
+
+#### Scenario: Post items display engagement stats
+
+- **GIVEN** any post item with stats is visible
+- **THEN** view count, like count, and comment count are displayed
+- **AND** each stat has an appropriate icon (eye, thumbs-up, comments)
 
 ## Verification Checklist
 

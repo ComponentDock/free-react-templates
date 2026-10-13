@@ -41,109 +41,121 @@ Recreation of ColorLib **Counselor** template as a React 19 + Vite + Tailwind 4 
 11. **Blog** — white background, centered heading "Recent Blog". 3 blog cards in a row, each with image, date, category tag, heading, and excerpt.
 12. **Footer** — dark background. 4 columns: brand name "ZenWell" + description, Explore links, Legal links, Company links. "Have a Questions?" section with address/phone. Copyright bar at bottom.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: ZenWell Counseling Template
 
-```gherkin
 Feature: ZenWell — Counseling/Mental Health Website Template
-  As a user visiting the ZenWell website
-  I want to see a professional counseling service website
-  So that I can learn about services, pricing, and contact the provider
+As a user visiting the ZenWell website
+I want to see a professional counseling service website
+So that I can learn about services, pricing, and contact the provider
 
-  Scenario: Top utility bar displays contact info and social links
-    Given I am on the ZenWell homepage
-    Then I see a green top bar with phone number and email
-    And I see social media icons (Facebook, Twitter, Instagram, Dribbble)
-    And the top bar text is white on green background
+#### Scenario: Top utility bar displays contact info and social links
 
-  Scenario: Navbar is sticky and responsive
-    Given I am on the ZenWell homepage
-    Then I see a dark sticky navbar with brand "ZenWell"
-    And I see navigation links: Home, About, Services, Pricing, Blog, Contact
-    And the navbar collapses to a hamburger menu on mobile
+- **GIVEN** I am on the ZenWell homepage
+- **THEN** I see a green top bar with phone number and email
+- **AND** I see social media icons (Facebook, Twitter, Instagram, Dribbble)
+- **AND** the top bar text is white on green background
 
-  Scenario: Hero section shows headline and CTAs
-    Given I am on the ZenWell homepage
-    Then I see a hero section with a background image
-    And I see the heading "Counseling For Your Better Life"
-    And I see a "Contact us" primary button (green)
-    And I see a "Read more" outlined button (white border)
-    And I see a circular play button overlay on the image
+#### Scenario: Navbar is sticky and responsive
 
-  Scenario: Trust/value proposition section displays 3 benefits
-    Given I scroll to the trust section
-    Then I see a green background section with 3 columns
-    And I see "100% Confidential" with a lock icon
-    And I see "Qualified Team" with a users icon
-    And I see "Individual Approach" with a user icon
-    And each column has a heading and description paragraph
+- **GIVEN** I am on the ZenWell homepage
+- **THEN** I see a dark sticky navbar with brand "ZenWell"
+- **AND** I see navigation links: Home, About, Services, Pricing, Blog, Contact
+- **AND** the navbar collapses to a hamburger menu on mobile
 
-  Scenario: How It Works section shows 3 steps
-    Given I scroll to the How It Works section
-    Then I see the label "SERVICES" and heading "How It Works"
-    And I see 3 numbered steps: Make Schedule, Start Discussion, Enjoy Plan
-    And each step has a number circle, icon, heading, and description
+#### Scenario: Hero section shows headline and CTAs
 
-  Scenario: About section displays counseling description
-    Given I scroll to the about section
-    Then I see the heading "Best Counseling Funding Network Worldwide."
-    And I see descriptive paragraphs about the counseling service
+- **GIVEN** I am on the ZenWell homepage
+- **THEN** I see a hero section with a background image
+- **AND** I see the heading "Counseling For Your Better Life"
+- **AND** I see a "Contact us" primary button (green)
+- **AND** I see a "Read more" outlined button (white border)
+- **AND** I see a circular play button overlay on the image
 
-  Scenario: Tabbed services section allows switching between topics
-    Given I scroll to the services section
-    Then I see the heading "We Can Help You With This Situation"
-    And I see tabs: Relation Problem, Couples Counseling, Depression Treatment, Family Problem, Personal Problem
-    And clicking a tab shows its content panel with heading and description
-    And the active tab is visually highlighted
+#### Scenario: Trust/value proposition section displays 3 benefits
 
-  Scenario: Testimonials section shows client quotes
-    Given I scroll to the testimonials section
-    Then I see a green overlay background
-    And I see the label "Testimonial" and heading "Happy Clients"
-    And I see testimonial cards with quote text and client name
-    And testimonials cycle in a carousel
+- **GIVEN** I scroll to the trust section
+- **THEN** I see a green background section with 3 columns
+- **AND** I see "100% Confidential" with a lock icon
+- **AND** I see "Qualified Team" with a users icon
+- **AND** I see "Individual Approach" with a user icon
+- **AND** each column has a heading and description paragraph
 
-  Scenario: Pricing section displays 3 tiers
-    Given I scroll to the pricing section
-    Then I see a light gray background with heading "Affordable Packages"
-    And I see 3 pricing cards: $49, $79, $109
-    And each card has a feature list and "Get Started" button
-    And the feature list includes: Individual Counseling, Couples Therapy, Family Therapy, Counseling for Children, Behavioral Management
+#### Scenario: How It Works section shows 3 steps
 
-  Scenario: Contact form collects user messages
-    Given I scroll to the contact section
-    Then I see a green overlay background with heading "Send a Message & Get in touch!"
-    And I see form inputs: name, email, subject, message
-    And I see a submit button
-    And the form validates required fields before submission
+- **GIVEN** I scroll to the How It Works section
+- **THEN** I see the label "SERVICES" and heading "How It Works"
+- **AND** I see 3 numbered steps: Make Schedule, Start Discussion, Enjoy Plan
+- **AND** each step has a number circle, icon, heading, and description
 
-  Scenario: Blog section shows recent posts
-    Given I scroll to the blog section
-    Then I see heading "Recent Blog"
-    And I see 3 blog cards in a row
-    And each card has an image, date, category, heading, and excerpt
+#### Scenario: About section displays counseling description
 
-  Scenario: Footer displays site information
-    Given I scroll to the footer
-    Then I see a dark footer with brand "ZenWell" and description
-    And I see column links: Explore, Legal, Company
-    And I see a "Have a Questions?" section with contact details
-    And I see a copyright bar with "Component Dock" link
+- **GIVEN** I scroll to the about section
+- **THEN** I see the heading "Best Counseling Funding Network Worldwide."
+- **AND** I see descriptive paragraphs about the counseling service
 
-  Scenario: All sections maintain consistent spacing
-    Given I scroll through the entire page
-    Then each section has consistent vertical padding
-    And sections alternate between white, light gray, and green backgrounds
-    And headings use consistent sizing and weight
+#### Scenario: Tabbed services section allows switching between topics
 
-  Scenario: Page is responsive on mobile
-    Given I view the page on a 375px viewport
-    Then the navbar collapses to a hamburger menu
-    And columns stack vertically
-    And the hero text remains readable
-    And the contact form is full-width
-```
+- **GIVEN** I scroll to the services section
+- **THEN** I see the heading "We Can Help You With This Situation"
+- **AND** I see tabs: Relation Problem, Couples Counseling, Depression Treatment, Family Problem, Personal Problem
+- **AND** clicking a tab shows its content panel with heading and description
+- **AND** the active tab is visually highlighted
+
+#### Scenario: Testimonials section shows client quotes
+
+- **GIVEN** I scroll to the testimonials section
+- **THEN** I see a green overlay background
+- **AND** I see the label "Testimonial" and heading "Happy Clients"
+- **AND** I see testimonial cards with quote text and client name
+- **AND** testimonials cycle in a carousel
+
+#### Scenario: Pricing section displays 3 tiers
+
+- **GIVEN** I scroll to the pricing section
+- **THEN** I see a light gray background with heading "Affordable Packages"
+- **AND** I see 3 pricing cards: $49, $79, $109
+- **AND** each card has a feature list and "Get Started" button
+- **AND** the feature list includes: Individual Counseling, Couples Therapy, Family Therapy, Counseling for Children, Behavioral Management
+
+#### Scenario: Contact form collects user messages
+
+- **GIVEN** I scroll to the contact section
+- **THEN** I see a green overlay background with heading "Send a Message & Get in touch!"
+- **AND** I see form inputs: name, email, subject, message
+- **AND** I see a submit button
+- **AND** the form validates required fields before submission
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** I scroll to the blog section
+- **THEN** I see heading "Recent Blog"
+- **AND** I see 3 blog cards in a row
+- **AND** each card has an image, date, category, heading, and excerpt
+
+#### Scenario: Footer displays site information
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a dark footer with brand "ZenWell" and description
+- **AND** I see column links: Explore, Legal, Company
+- **AND** I see a "Have a Questions?" section with contact details
+- **AND** I see a copyright bar with "Component Dock" link
+
+#### Scenario: All sections maintain consistent spacing
+
+- **GIVEN** I scroll through the entire page
+- **THEN** each section has consistent vertical padding
+- **AND** sections alternate between white, light gray, and green backgrounds
+- **AND** headings use consistent sizing and weight
+
+#### Scenario: Page is responsive on mobile
+
+- **GIVEN** I view the page on a 375px viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** columns stack vertically
+- **AND** the hero text remains readable
+- **AND** the contact form is full-width
 
 ## Verification checklist
 

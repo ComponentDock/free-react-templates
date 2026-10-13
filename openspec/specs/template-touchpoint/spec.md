@@ -93,107 +93,115 @@ background:
       - Email item: paper plane icon + "Email: info@yoursite.com"
       - Website item: globe icon + "Website: yoursite.com"
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Page Layout
 
-```gherkin
-Scenario: Page displays centered two-column card
-  Given the user loads the page
-  Then a light gray background fills the page
-  And a two-column card layout is centered on the page
-  And the left card has a white background
-  And the right card has a blue background
+#### Scenario: Page displays centered two-column card
 
-Scenario: Responsive layout on mobile
-  Given the viewport is narrow (≤768px)
-  Then the two cards stack vertically (form on top, contact info below)
-  And both cards span the full width with horizontal margins
-```
+- **GIVEN** the user loads the page
+- **THEN** a light gray background fills the page
+- **AND** a two-column card layout is centered on the page
+- **AND** the left card has a white background
+- **AND** the right card has a blue background
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport is narrow (≤768px)
+- **THEN** the two cards stack vertically (form on top, contact info below)
+- **AND** both cards span the full width with horizontal margins
 
 ### Feature: Contact Form
 
-```gherkin
-Scenario: Form heading displays "Get in touch"
-  Given the user loads the page
-  Then the left card heading reads "Get in touch"
-  And the heading is dark text, bold, and large
+#### Scenario: Form heading displays "Get in touch"
 
-Scenario: Form has four fields
-  Given the user loads the page
-  Then the Name and Email fields are displayed side by side in a row
-  And the Subject field is displayed full width below them
-  And the Message textarea is displayed full width below Subject
-  And all fields have light gray borders and placeholder text
+- **GIVEN** the user loads the page
+- **THEN** the left card heading reads "Get in touch"
+- **AND** the heading is dark text, bold, and large
 
-Scenario: Name field accepts text
-  Given the user focuses the Name field
-  When the user types a name
-  Then the text appears in the field
+#### Scenario: Form has four fields
 
-Scenario: Email field validates format
-  Given the user enters an invalid email in the Email field
-  When the user clicks Send Message
-  Then a validation error is shown for the email field
+- **GIVEN** the user loads the page
+- **THEN** the Name and Email fields are displayed side by side in a row
+- **AND** the Subject field is displayed full width below them
+- **AND** the Message textarea is displayed full width below Subject
+- **AND** all fields have light gray borders and placeholder text
 
-Scenario: Message field is a textarea
-  Given the user focuses the Message field
-  When the user types a multi-line message
-  Then the textarea shows the entered text
+#### Scenario: Name field accepts text
 
-Scenario: Send Message button submits form
-  Given the user fills all required fields with valid data
-  When the user clicks "Send Message"
-  Then the form attempts submission (prevent default in React)
-  And no page navigation occurs (SPA behavior)
-```
+- **GIVEN** the user focuses the Name field
+- **WHEN** the user types a name
+- **THEN** the text appears in the field
+
+#### Scenario: Email field validates format
+
+- **GIVEN** the user enters an invalid email in the Email field
+- **WHEN** the user clicks Send Message
+- **THEN** a validation error is shown for the email field
+
+#### Scenario: Message field is a textarea
+
+- **GIVEN** the user focuses the Message field
+- **WHEN** the user types a multi-line message
+- **THEN** the textarea shows the entered text
+
+#### Scenario: Send Message button submits form
+
+- **GIVEN** the user fills all required fields with valid data
+- **WHEN** the user clicks "Send Message"
+- **THEN** the form attempts submission (prevent default in React)
+- **AND** no page navigation occurs (SPA behavior)
 
 ### Feature: Contact Info Card
 
-```gherkin
-Scenario: Contact info card displays heading and items
-  Given the user loads the page
-  Then the right card heading reads "Contact us" in white
-  And four contact info items are visible
+#### Scenario: Contact info card displays heading and items
 
-Scenario: Address item shows location details
-  Given the user loads the page
-  Then the address item shows a location pin icon
-  And the text reads "Address: 198 West 21th Street, Suite 721 New York NY 10016"
+- **GIVEN** the user loads the page
+- **THEN** the right card heading reads "Contact us" in white
+- **AND** four contact info items are visible
 
-Scenario: Phone item shows phone number
-  Given the user loads the page
-  Then the phone item shows a phone icon
-  And the text reads "Phone: + 1235 2355 98"
+#### Scenario: Address item shows location details
 
-Scenario: Email item shows email address
-  Given the user loads the page
-  Then the email item shows a paper plane icon
-  And the text reads "Email: info@yoursite.com"
+- **GIVEN** the user loads the page
+- **THEN** the address item shows a location pin icon
+- **AND** the text reads "Address: 198 West 21th Street, Suite 721 New York NY 10016"
 
-Scenario: Website item shows URL
-  Given the user loads the page
-  Then the website item shows a globe icon
-  And the text reads "Website: yoursite.com"
+#### Scenario: Phone item shows phone number
 
-Scenario: Contact info icons have circular backgrounds
-  Given the user loads the page
-  Then each contact info icon is displayed inside a lighter blue circle
-```
+- **GIVEN** the user loads the page
+- **THEN** the phone item shows a phone icon
+- **AND** the text reads "Phone: + 1235 2355 98"
+
+#### Scenario: Email item shows email address
+
+- **GIVEN** the user loads the page
+- **THEN** the email item shows a paper plane icon
+- **AND** the text reads "Email: info@yoursite.com"
+
+#### Scenario: Website item shows URL
+
+- **GIVEN** the user loads the page
+- **THEN** the website item shows a globe icon
+- **AND** the text reads "Website: yoursite.com"
+
+#### Scenario: Contact info icons have circular backgrounds
+
+- **GIVEN** the user loads the page
+- **THEN** each contact info icon is displayed inside a lighter blue circle
 
 ### Feature: Button Styling
 
-```gherkin
-Scenario: Send Message button is blue with white text
-  Given the user loads the page
-  Then the "Send Message" button has a blue background
-  And the button text is white
-  And the button has slightly rounded corners
+#### Scenario: Send Message button is blue with white text
 
-Scenario: Button hover effect
-  Given the user hovers over the Send Message button
-  Then the button darkens slightly or shows a hover state
-```
+- **GIVEN** the user loads the page
+- **THEN** the "Send Message" button has a blue background
+- **AND** the button text is white
+- **AND** the button has slightly rounded corners
+
+#### Scenario: Button hover effect
+
+- **GIVEN** the user hovers over the Send Message button
+- **THEN** the button darkens slightly or shows a hover state
 
 ## Verification checklist
 

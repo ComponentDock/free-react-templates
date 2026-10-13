@@ -51,77 +51,86 @@ Extracted from `styles/main_styles.css` on the live preview:
 8. **Pricing** — Parallax background image, centered subtitle "our programs", title "pricing", owl-carousel with 3 pricing cards: "beginner" (Free/1 day), "beginner" ($29.90/month), "beginner" ($59.90/month). Each card: name, price, period, feature list (5 items), info link, "order plan" button. Middle card uses alt button style.
 9. **Footer** — Dark background. Logo centered. Three columns: "talk to us" (phone numbers), "e-mail" (email addresses), "location" (address). Copyright bar at bottom (will be replaced with Component Dock link).
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: GymVault — Gym/Fitness Landing Page
 
 #### Scenario: Header renders with logo, nav, and social links
-- **Given** the user visits the GymVault page
-- **When** the page loads
-- **Then** a header displays with the logo
-- **And** navigation links for "home", "about us", "classes", "blog", "contact" are visible
-- **And** social media icons (pinterest, facebook, twitter, dribbble, behance) are present
-- **And** a hamburger menu button is visible for mobile
+
+- **GIVEN** the user visits the GymVault page
+- **WHEN** the page loads
+- **THEN** a header displays with the logo
+- **AND** navigation links for "home", "about us", "classes", "blog", "contact" are visible
+- **AND** social media icons (pinterest, facebook, twitter, dribbble, behance) are present
+- **AND** a hamburger menu button is visible for mobile
 
 #### Scenario: Hero slider displays with call to action
-- **Given** the user is on the home page
-- **When** the hero section renders
-- **Then** a full-width background image is shown with a dark overlay
-- **And** the subtitle "go to the gym now!" is displayed
-- **And** the headline "never limit yourself" is shown (with "never" emphasized)
-- **And** a "read more" CTA button is visible
+
+- **GIVEN** the user is on the home page
+- **WHEN** the hero section renders
+- **THEN** a full-width background image is shown with a dark overlay
+- **AND** the subtitle "go to the gym now!" is displayed
+- **AND** the headline "never limit yourself" is shown (with "never" emphasized)
+- **AND** a "read more" CTA button is visible
 
 #### Scenario: Intro boxes show three program highlights
-- **Given** the user scrolls to the intro section
-- **When** the intro section renders
-- **Then** three info boxes are displayed in a row
-- **And** each box shows an icon, a title, and a description paragraph
-- **And** the titles are "aerobics program", "train hard", and "basic program"
+
+- **GIVEN** the user scrolls to the intro section
+- **WHEN** the intro section renders
+- **THEN** three info boxes are displayed in a row
+- **AND** each box shows an icon, a title, and a description paragraph
+- **AND** the titles are "aerobics program", "train hard", and "basic program"
 
 #### Scenario: About section shows split content and image
-- **Given** the user scrolls to the about section
-- **When** the about section renders
-- **Then** a two-column layout is displayed
-- **And** the left column shows subtitle "aerobics program", title "about sportify", and a paragraph
-- **And** a "read more" button is below the text
-- **And** the right column displays an image
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the about section renders
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows subtitle "aerobics program", title "about sportify", and a paragraph
+- **AND** a "read more" button is below the text
+- **AND** the right column displays an image
 
 #### Scenario: Quote section displays testimonial
-- **Given** the user scrolls to the quote section
-- **When** the quote section renders
-- **Then** a centered blockquote is displayed
-- **And** the quote text is visible
-- **And** the author attribution "Arnold Schwarzenegger" is shown
+
+- **GIVEN** the user scrolls to the quote section
+- **WHEN** the quote section renders
+- **THEN** a centered blockquote is displayed
+- **AND** the quote text is visible
+- **AND** the author attribution "Arnold Schwarzenegger" is shown
 
 #### Scenario: CTA section shows join information
-- **Given** the user scrolls to the CTA section
-- **When** the CTA section renders
-- **Then** a split layout is displayed with an image on the left and content on the right
-- **And** the title "join our gym" is shown
-- **And** a checklist with 4 items is visible
-- **And** two CTA buttons ("read more" primary and "read more" alt) are displayed
+
+- **GIVEN** the user scrolls to the CTA section
+- **WHEN** the CTA section renders
+- **THEN** a split layout is displayed with an image on the left and content on the right
+- **AND** the title "join our gym" is shown
+- **AND** a checklist with 4 items is visible
+- **AND** two CTA buttons ("read more" primary and "read more" alt) are displayed
 
 #### Scenario: Classes carousel shows fitness programs
-- **Given** the user scrolls to the classes section
-- **When** the classes section renders
-- **Then** a centered title "classes" with subtitle "our programs" is displayed
-- **And** a carousel shows class cards with title, description, and instructor image
-- **And** cards include "aerobics", "pilates", and "yoga"
+
+- **GIVEN** the user scrolls to the classes section
+- **WHEN** the classes section renders
+- **THEN** a centered title "classes" with subtitle "our programs" is displayed
+- **AND** a carousel shows class cards with title, description, and instructor image
+- **AND** cards include "aerobics", "pilates", and "yoga"
 
 #### Scenario: Pricing section displays plans with parallax
-- **Given** the user scrolls to the pricing section
-- **When** the pricing section renders
-- **Then** a parallax background image is shown
-- **And** a centered title "pricing" with subtitle "our programs" is displayed
-- **And** three pricing cards are shown (Free, $29.90/mo, $59.90/mo)
-- **And** each card has a feature list of 5 items and an "order plan" button
+
+- **GIVEN** the user scrolls to the pricing section
+- **WHEN** the pricing section renders
+- **THEN** a parallax background image is shown
+- **AND** a centered title "pricing" with subtitle "our programs" is displayed
+- **AND** three pricing cards are shown (Free, $29.90/mo, $59.90/mo)
+- **AND** each card has a feature list of 5 items and an "order plan" button
 
 #### Scenario: Footer shows contact info and branding
-- **Given** the user scrolls to the footer
-- **When** the footer renders
-- **Then** the logo is displayed centered
-- **And** three columns show "talk to us", "e-mail", and "location" contact info
-- **And** a copyright bar with "Component Dock" link is present
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** the logo is displayed centered
+- **AND** three columns show "talk to us", "e-mail", and "location" contact info
+- **AND** a copyright bar with "Component Dock" link is present
 
 ## Verification Checklist
 

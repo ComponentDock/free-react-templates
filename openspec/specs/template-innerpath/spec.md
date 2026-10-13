@@ -114,98 +114,118 @@ Order extracted from `https://preview.colorlib.com/theme/counselor/`:
   - Contact info column: Address (203 Fake St...), Phone (+2 392 3929 210), Email (info@yourdomain.com)
 - Copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
-  Scenario: Sticky dark navbar with navigation links
-    Given the user is on the page
-    When the navbar renders
-    Then it shows a dark background (#1a1a1a)
-    And it contains links: Home, About, Services, Pricing, Blog, Contact
-    And the brand text reads "Counselor" (→ "InnerPath" in recreation)
-    And it becomes sticky on scroll
-    And it collapses to a hamburger on mobile viewports
+
+#### Scenario: Sticky dark navbar with navigation links
+
+- **GIVEN** the user is on the page
+- **WHEN** the navbar renders
+- **THEN** it shows a dark background (#1a1a1a)
+- **AND** it contains links: Home, About, Services, Pricing, Blog, Contact
+- **AND** the brand text reads "Counselor" (→ "InnerPath" in recreation)
+- **AND** it becomes sticky on scroll
+- **AND** it collapses to a hamburger on mobile viewports
 
 ### Feature: Hero / Intro Area
-  Scenario: Hero section with green overlay and 3 feature cards
-    Given the user is on the page
-    When the hero section renders
-    Then it displays a background image with green overlay (#589167)
-    And the heading reads "Counseling For Your Better Life"
-    And 3 feature cards are visible: Confidential, Qualified Team, Individual Approach
-    And each card has an icon, title, and short description
+
+#### Scenario: Hero section with green overlay and 3 feature cards
+
+- **GIVEN** the user is on the page
+- **WHEN** the hero section renders
+- **THEN** it displays a background image with green overlay (#589167)
+- **AND** the heading reads "Counseling For Your Better Life"
+- **AND** 3 feature cards are visible: Confidential, Qualified Team, Individual Approach
+- **AND** each card has an icon, title, and short description
 
 ### Feature: How It Works
-  Scenario: 3-step process section
-    Given the user is on the page
-    When the "How It Works" section renders
-    Then 3 steps are displayed: Make Schedule, Start Discussion, Enjoy Plan
-    And each step shows a number, title, and description
-    And steps are connected visually (horizontal flow)
+
+#### Scenario: 3-step process section
+
+- **GIVEN** the user is on the page
+- **WHEN** the "How It Works" section renders
+- **THEN** 3 steps are displayed: Make Schedule, Start Discussion, Enjoy Plan
+- **AND** each step shows a number, title, and description
+- **AND** steps are connected visually (horizontal flow)
 
 ### Feature: About / Services Overview
-  Scenario: Welcome section with video CTA
-    Given the user is on the page
-    When the welcome section renders
-    Then the heading reads "Welcome to Counselor" (→ "Welcome to InnerPath")
-    And the subtitle reads "Best Counseling Funding Network Worldwide."
-    And a "Watch Our Consultant Video" button is present
+
+#### Scenario: Welcome section with video CTA
+
+- **GIVEN** the user is on the page
+- **WHEN** the welcome section renders
+- **THEN** the heading reads "Welcome to Counselor" (→ "Welcome to InnerPath")
+- **AND** the subtitle reads "Best Counseling Funding Network Worldwide."
+- **AND** a "Watch Our Consultant Video" button is present
 
 ### Feature: Our Services
-  Scenario: 6 service cards in a grid
-    Given the user is on the page
-    When the services section renders
-    Then 6 service cards are displayed in a 3x2 grid
-    And each card has a background image with overlay
-    And card titles are: Relation Problem, Couples Counseling, Depression Treatment, Family Problem, Personal Problem, Business Problem
-    And each card has a "Read more" link
+
+#### Scenario: 6 service cards in a grid
+
+- **GIVEN** the user is on the page
+- **WHEN** the services section renders
+- **THEN** 6 service cards are displayed in a 3x2 grid
+- **AND** each card has a background image with overlay
+- **AND** card titles are: Relation Problem, Couples Counseling, Depression Treatment, Family Problem, Personal Problem, Business Problem
+- **AND** each card has a "Read more" link
 
 ### Feature: Testimonials
-  Scenario: Testimonial carousel with client quotes
-    Given the user is on the page
-    When the testimonials section renders
-    Then a green overlay background is visible (#589167)
-    And the section title reads "Happy Clients"
-    And a carousel displays testimonial slides
-    And each slide shows an avatar, quote text, name, and role
-    And navigation dots are present
+
+#### Scenario: Testimonial carousel with client quotes
+
+- **GIVEN** the user is on the page
+- **WHEN** the testimonials section renders
+- **THEN** a green overlay background is visible (#589167)
+- **AND** the section title reads "Happy Clients"
+- **AND** a carousel displays testimonial slides
+- **AND** each slide shows an avatar, quote text, name, and role
+- **AND** navigation dots are present
 
 ### Feature: Pricing
-  Scenario: 3 pricing cards
-    Given the user is on the page
-    When the pricing section renders
-    Then 3 pricing cards are displayed side by side
-    And prices are $49/mo, $79/mo, $109/mo
-    And each card lists included services
-    And each card has a "Get Started" button
-    And the background is light gray (#f5f4f0)
+
+#### Scenario: 3 pricing cards
+
+- **GIVEN** the user is on the page
+- **WHEN** the pricing section renders
+- **THEN** 3 pricing cards are displayed side by side
+- **AND** prices are $49/mo, $79/mo, $109/mo
+- **AND** each card lists included services
+- **AND** each card has a "Get Started" button
+- **AND** the background is light gray (#f5f4f0)
 
 ### Feature: Contact Form
-  Scenario: Appointment form with services list
-    Given the user is on the page
-    When the contact section renders
-    Then a parallax background image is visible with green overlay
-    And the heading reads "Send a Message & Get in touch!"
-    And form fields are present: Name, Email, Subject, Message
-    And a "Send Message" button is present
-    And a services checklist is shown on the right side
+
+#### Scenario: Appointment form with services list
+
+- **GIVEN** the user is on the page
+- **WHEN** the contact section renders
+- **THEN** a parallax background image is visible with green overlay
+- **AND** the heading reads "Send a Message & Get in touch!"
+- **AND** form fields are present: Name, Email, Subject, Message
+- **AND** a "Send Message" button is present
+- **AND** a services checklist is shown on the right side
 
 ### Feature: Blog
-  Scenario: 3 blog post cards
-    Given the user is on the page
-    When the blog section renders
-    Then 3 blog cards are displayed in a row
-    And each card shows an image, date, title, excerpt, and "Read more" link
+
+#### Scenario: 3 blog post cards
+
+- **GIVEN** the user is on the page
+- **WHEN** the blog section renders
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card shows an image, date, title, excerpt, and "Read more" link
 
 ### Feature: Footer
-  Scenario: 4-column dark footer with contact info
-    Given the user is on the page
-    When the footer renders
-    Then it has a dark background (#1a1a1a)
-    And 4 columns are present: brand info, Explore links, Legal links, Company links
-    And contact information is shown: address, phone, email
-    And a copyright bar is at the bottom
-    And a link to "Component Dock" (https://www.componentdock.com/) is present
+
+#### Scenario: 4-column dark footer with contact info
+
+- **GIVEN** the user is on the page
+- **WHEN** the footer renders
+- **THEN** it has a dark background (#1a1a1a)
+- **AND** 4 columns are present: brand info, Explore links, Legal links, Company links
+- **AND** contact information is shown: address, phone, email
+- **AND** a copyright bar is at the bottom
+- **AND** a link to "Component Dock" (https://www.componentdock.com/) is present
 
 ## Verification Checklist
 

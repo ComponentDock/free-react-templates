@@ -35,66 +35,77 @@ set against a bold blue hero background.
 | Body font size     | 16px                         |                                        |
 | Body line height   | 1.8                          |                                        |
 
-## Gherkin Requirements
+## Requirements
 
 ### Section: Hero Search Bar
 
-**Scenario: Page renders with correct background**
-  Given the user visits the QueryKit page
-  Then the page background is solid brand blue (#1089ff)
+#### Scenario: Page renders with correct background
 
-**Scenario: Title is displayed**
-  Given the user visits the QueryKit page
-  Then a heading "Search For Opportunities" is visible
-  And it is white, centered, and uses the Poppins font
+- **GIVEN** the user visits the QueryKit page
+- **THEN** the page background is solid brand blue (#1089ff)
 
-**Scenario: Subtitle is displayed**
-  Given the user visits the QueryKit page
-  Then a subtitle "Find Your Perfect Role" is visible below the title
-  And it is white, centered, and uses the Poppins font
+#### Scenario: Title is displayed
 
-**Scenario: Keywords input is present**
-  Given the user visits the QueryKit page
-  Then a text input with placeholder "Keywords (e.g. Job Title, Position...)" is visible
-  And it has a search icon on the right side
-  And it has a white background with blue placeholder text
+- **GIVEN** the user visits the QueryKit page
+- **THEN** a heading "Search For Opportunities" is visible
+- **AND** it is white, centered, and uses the Poppins font
 
-**Scenario: Location input is present**
-  Given the user visits the QueryKit page
-  Then a text input with placeholder "Location (City, Country...)" is visible
-  And it has a search icon on the right side
-  And it has a white background with blue placeholder text
+#### Scenario: Subtitle is displayed
 
-**Scenario: Budget dropdown is present**
-  Given the user visits the QueryKit page
-  Then a select dropdown is visible with budget range options
-  And it defaults to the first budget option
-  And it has a dropdown arrow icon on the right side
+- **GIVEN** the user visits the QueryKit page
+- **THEN** a subtitle "Find Your Perfect Role" is visible below the title
+- **AND** it is white, centered, and uses the Poppins font
 
-**Scenario: Search button is present**
-  Given the user visits the QueryKit page
-  Then a "SEARCH JOB" button is visible
-  And it has a black background with white uppercase text
-  And it spans the same height as the inputs (40px)
+#### Scenario: Keywords input is present
 
-**Scenario: Form layout is horizontal on desktop**
-  Given the user visits the QueryKit page on a desktop viewport
-  Then the keywords input, location input, budget dropdown, and search button
+- **GIVEN** the user visits the QueryKit page
+- **THEN** a text input with placeholder "Keywords (e.g. Job Title, Position...)" is visible
+- **AND** it has a search icon on the right side
+- **AND** it has a white background with blue placeholder text
+
+#### Scenario: Location input is present
+
+- **GIVEN** the user visits the QueryKit page
+- **THEN** a text input with placeholder "Location (City, Country...)" is visible
+- **AND** it has a search icon on the right side
+- **AND** it has a white background with blue placeholder text
+
+#### Scenario: Budget dropdown is present
+
+- **GIVEN** the user visits the QueryKit page
+- **THEN** a select dropdown is visible with budget range options
+- **AND** it defaults to the first budget option
+- **AND** it has a dropdown arrow icon on the right side
+
+#### Scenario: Search button is present
+
+- **GIVEN** the user visits the QueryKit page
+- **THEN** a "SEARCH JOB" button is visible
+- **AND** it has a black background with white uppercase text
+- **AND** it spans the same height as the inputs (40px)
+
+#### Scenario: Form layout is horizontal on desktop
+
+- **GIVEN** the user visits the QueryKit page on a desktop viewport
+- **THEN** the keywords input, location input, budget dropdown, and search button
   are displayed in a single horizontal row
 
-**Scenario: Form layout stacks on mobile**
-  Given the user visits the QueryKit page on a mobile viewport
-  Then the inputs and button stack vertically
+#### Scenario: Form layout stacks on mobile
 
-**Scenario: Form fields have focus states**
-  Given the user clicks on the keywords input
-  Then the input border changes to white
-  And the input remains functional
+- **GIVEN** the user visits the QueryKit page on a mobile viewport
+- **THEN** the inputs and button stack vertically
 
-**Scenario: Button hover state**
-  Given the user hovers over the search button
-  Then the button text remains visible
-  And the button remains black
+#### Scenario: Form fields have focus states
+
+- **GIVEN** the user clicks on the keywords input
+- **THEN** the input border changes to white
+- **AND** the input remains functional
+
+#### Scenario: Button hover state
+
+- **GIVEN** the user hovers over the search button
+- **THEN** the button text remains visible
+- **AND** the button remains black
 
 ## Verification Checklist
 

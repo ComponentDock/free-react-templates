@@ -36,78 +36,88 @@ confirming the entered data before submission.
 | Navigation button | Arrow (→) icon | Next step indicator (no text label) |
 | Transitions | Smooth fade/slide between steps | Elegant transitions between sections |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: WizardForm — 3-Step Payment Account Wizard
 
-  Scenario: Page loads with step 1 active
-    Given the user opens the WizardForm page
-    Then the "Personal Information" step should be visible and active
-    And the "Bank Information" and "Confirm Details" steps should be visible but inactive
-    And the first step should display form fields for personal information
+#### Scenario: Page loads with step 1 active
 
-  Scenario: Personal Information step fields
-    Given the user is on step 1 "Personal Information"
-    Then the form should contain a "First Name" text input
-    And the form should contain a "Last Name" text input
-    And the form should contain a "Date of Birth" input
-    And the form should contain an email input field
-    And the form should contain a phone number input field
-    And a "Next" arrow button should be visible
+- **GIVEN** the user opens the WizardForm page
+- **THEN** the "Personal Information" step should be visible and active
+- **AND** the "Bank Information" and "Confirm Details" steps should be visible but inactive
+- **AND** the first step should display form fields for personal information
 
-  Scenario: Navigate to step 2
-    Given the user is on step 1 with valid personal information
-    When the user clicks the "Next" arrow button
-    Then the "Bank Information" step should become active
-    And the "Personal Information" step should show a completed checkmark
-    And the bank information form fields should be visible
+#### Scenario: Personal Information step fields
 
-  Scenario: Bank Information step fields
-    Given the user is on step 2 "Bank Information"
-    Then the form should contain a "Card Number" input field
-    And the form should contain a "Cardholder Name" input field
-    And the form should contain an "Expiry Date" input field
-    And the form should contain a "CVV" input field
-    And a "Next" arrow button should be visible
+- **GIVEN** the user is on step 1 "Personal Information"
+- **THEN** the form should contain a "First Name" text input
+- **AND** the form should contain a "Last Name" text input
+- **AND** the form should contain a "Date of Birth" input
+- **AND** the form should contain an email input field
+- **AND** the form should contain a phone number input field
+- **AND** a "Next" arrow button should be visible
 
-  Scenario: Navigate to step 3
-    Given the user is on step 2 with valid bank information
-    When the user clicks the "Next" arrow button
-    Then the "Confirm Details" step should become active
-    And the "Personal Information" and "Bank Information" steps should show completed checkmarks
-    And the confirmation summary should display all entered data
+#### Scenario: Navigate to step 2
 
-  Scenario: Confirmation step displays summary
-    Given the user is on step 3 "Confirm Details"
-    Then the entered personal information should be displayed in read-only form
-    And the entered bank information should be displayed (card number masked)
-    And a "Submit" or "Confirm" button should be visible
+- **GIVEN** the user is on step 1 with valid personal information
+- **WHEN** the user clicks the "Next" arrow button
+- **THEN** the "Bank Information" step should become active
+- **AND** the "Personal Information" step should show a completed checkmark
+- **AND** the bank information form fields should be visible
 
-  Scenario: Navigate backwards between steps
-    Given the user is on step 2 "Bank Information"
-    When the user clicks the back/previous step indicator
-    Then the "Personal Information" step should become active again
-    And the previously entered data should be preserved
+#### Scenario: Bank Information step fields
 
-  Scenario: Step indicator shows progress
-    Given the user is on any step
-    Then the step indicator bar should show 3 steps in a horizontal row
-    And completed steps should display a checkmark icon
-    And the current step should be highlighted with the accent color
-    And future steps should appear muted/inactive
+- **GIVEN** the user is on step 2 "Bank Information"
+- **THEN** the form should contain a "Card Number" input field
+- **AND** the form should contain a "Cardholder Name" input field
+- **AND** the form should contain an "Expiry Date" input field
+- **AND** the form should contain a "CVV" input field
+- **AND** a "Next" arrow button should be visible
 
-  Scenario: Responsive layout on mobile
-    Given the user opens the page on a viewport width less than 768px
-    Then the wizard card should stack vertically and fit the screen
-    And all form fields should remain usable and accessible
-    And the step indicator should remain visible above the form
+#### Scenario: Navigate to step 3
 
-  Scenario: Form validation prevents advancement
-    Given the user is on step 1
-    And the "First Name" field is empty
-    When the user clicks the "Next" arrow button
-    Then the user should remain on step 1
-    And a validation error should appear on the required field
+- **GIVEN** the user is on step 2 with valid bank information
+- **WHEN** the user clicks the "Next" arrow button
+- **THEN** the "Confirm Details" step should become active
+- **AND** the "Personal Information" and "Bank Information" steps should show completed checkmarks
+- **AND** the confirmation summary should display all entered data
+
+#### Scenario: Confirmation step displays summary
+
+- **GIVEN** the user is on step 3 "Confirm Details"
+- **THEN** the entered personal information should be displayed in read-only form
+- **AND** the entered bank information should be displayed (card number masked)
+- **AND** a "Submit" or "Confirm" button should be visible
+
+#### Scenario: Navigate backwards between steps
+
+- **GIVEN** the user is on step 2 "Bank Information"
+- **WHEN** the user clicks the back/previous step indicator
+- **THEN** the "Personal Information" step should become active again
+- **AND** the previously entered data should be preserved
+
+#### Scenario: Step indicator shows progress
+
+- **GIVEN** the user is on any step
+- **THEN** the step indicator bar should show 3 steps in a horizontal row
+- **AND** completed steps should display a checkmark icon
+- **AND** the current step should be highlighted with the accent color
+- **AND** future steps should appear muted/inactive
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a viewport width less than 768px
+- **THEN** the wizard card should stack vertically and fit the screen
+- **AND** all form fields should remain usable and accessible
+- **AND** the step indicator should remain visible above the form
+
+#### Scenario: Form validation prevents advancement
+
+- **GIVEN** the user is on step 1
+- **AND** the "First Name" field is empty
+- **WHEN** the user clicks the "Next" arrow button
+- **THEN** the user should remain on step 1
+- **AND** a validation error should appear on the required field
 
 ## Verification checklist
 

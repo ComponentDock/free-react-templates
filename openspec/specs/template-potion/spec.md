@@ -85,74 +85,70 @@ Centered card layout (no split screen):
 - Progress: dot 3 active
 - Actions: Back (pink, pill) + Submit (blue, pill, last step)
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Wizard renders Step 1 on load
-```
-Given the user navigates to the registration page
-When the page loads
-Then the wizard displays Step 1 "Profile Setup"
-And an avatar placeholder with "Choose Picture" is shown
-And the form shows First Name, Last Name, Team Name, Email, Password fields
-And progress dot 1 is active (wide pill shape)
-And the "Next" button is visible in lavender blue
-And the "Back" button is not visible
-```
+### Feature: Potion template behaviour
 
-### Scenario: Avatar upload
-```
-Given the user is on Step 1
-When the user clicks "Choose Picture"
-Then a file picker dialog opens
-When the user selects an image file
-Then the avatar preview updates to show the selected image
-```
+#### Scenario: Wizard renders Step 1 on load
 
-### Scenario: Navigation between steps
-```
-Given the user is on Step 1
-When the user fills fields and clicks "Next"
-Then the wizard advances to Step 2 "Category Selection"
-And progress dot 2 becomes active
-And both "Back" (pink) and "Next" (blue) buttons are visible
+- **GIVEN** the user navigates to the registration page
+- **WHEN** the page loads
+- **THEN** the wizard displays Step 1 "Profile Setup"
+- **AND** an avatar placeholder with "Choose Picture" is shown
+- **AND** the form shows First Name, Last Name, Team Name, Email, Password fields
+- **AND** progress dot 1 is active (wide pill shape)
+- **AND** the "Next" button is visible in lavender blue
+- **AND** the "Back" button is not visible
 
-When the user clicks "Back"
-Then the wizard returns to Step 1
-And progress dot 1 becomes active again
-```
+#### Scenario: Avatar upload
 
-### Scenario: Category selection grid
-```
-Given the user is on Step 2
-Then six category cards are displayed in a 2×3 grid
-And each card shows an icon and an uppercase label
-When the user hovers over a category card
-Then a drop shadow appears on the card
-When the user clicks "Next"
-Then the wizard advances to Step 3
-```
+- **GIVEN** the user is on Step 1
+- **WHEN** the user clicks "Choose Picture"
+- **THEN** a file picker dialog opens
+- **WHEN** the user selects an image file
+- **THEN** the avatar preview updates to show the selected image
 
-### Scenario: Step 3 address form
-```
-Given the user is on Step 3
-Then the form shows Street Name, Street Number, City, Country as pill inputs
-And the "Back" button is visible (pink)
-And the "Next" button shows a submit action
-When the user clicks the submit button
-Then the form submits
-```
+#### Scenario: Navigation between steps
 
-### Scenario: Responsive behavior
-```
-Given the user views on a viewport wider than 768px
-Then the card is 738px wide, centered, with shadow and rounded corners
-And the background gradient is visible
+- **GIVEN** the user is on Step 1
+- **WHEN** the user fills fields and clicks "Next"
+- **THEN** the wizard advances to Step 2 "Category Selection"
+- **AND** progress dot 2 becomes active
+- **AND** both "Back" (pink) and "Next" (blue) buttons are visible
 
-Given the user views on a viewport narrower than 768px
-Then the card is full-width with no shadow and no border-radius
-And the background is hidden
-And form fields stack vertically
-```
+- **WHEN** the user clicks "Back"
+- **THEN** the wizard returns to Step 1
+- **AND** progress dot 1 becomes active again
+
+#### Scenario: Category selection grid
+
+- **GIVEN** the user is on Step 2
+- **THEN** six category cards are displayed in a 2×3 grid
+- **AND** each card shows an icon and an uppercase label
+- **WHEN** the user hovers over a category card
+- **THEN** a drop shadow appears on the card
+- **WHEN** the user clicks "Next"
+- **THEN** the wizard advances to Step 3
+
+#### Scenario: Step 3 address form
+
+- **GIVEN** the user is on Step 3
+- **THEN** the form shows Street Name, Street Number, City, Country as pill inputs
+- **AND** the "Back" button is visible (pink)
+- **AND** the "Next" button shows a submit action
+- **WHEN** the user clicks the submit button
+- **THEN** the form submits
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the user views on a viewport wider than 768px
+- **THEN** the card is 738px wide, centered, with shadow and rounded corners
+- **AND** the background gradient is visible
+
+- **GIVEN** the user views on a viewport narrower than 768px
+- **THEN** the card is full-width with no shadow and no border-radius
+- **AND** the background is hidden
+- **AND** form fields stack vertically
 
 ## Verification checklist
 

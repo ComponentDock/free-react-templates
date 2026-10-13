@@ -19,41 +19,51 @@
   - Buttons: Rounded / pill buttons (`rounded`, `rounded-full`), primary solid gold with hover effects, white secondary buttons with solid text.
   - Layout: Clean modern portfolio / professional service layout with split hero sections, carousel/image display, services breakdown, experience timeline, work showcase, blog list, and contact section.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Navbar & Navigation
 
+#### Scenario: Navbar & Navigation
+
 - Scenario: User views the top navigation bar
-  - Given the user loads Brieflaw
-  - Then they see the brand logo "Brieflaw."
-  - And navigation links for Home, About, Services, Experiences, Works, Blog, and Contact.
+- **GIVEN** the user loads Brieflaw
+- **THEN** they see the brand logo "Brieflaw."
+- **AND** navigation links for Home, About, Services, Experiences, Works, Blog, and Contact
 
 ### Feature: Hero Section
 
+#### Scenario: Hero Section
+
 - Scenario: User views the hero introduction
-  - Given the user is on the home page
-  - Then they see the professional subheading "UI/UX Designer & Developer" (adapted for legal/professional services: "Legal Counsel & Advisory")
-  - And heading "I'm John Schmidt" (adapted: "I'm Arthur Brieflaw")
-  - And CTA buttons "More About Me" and "Hire Me"
-  - And professional portrait / showcase carousel imagery.
+- **GIVEN** the user is on the home page
+- **THEN** they see the professional subheading "UI/UX Designer & Developer" (adapted for legal/professional services: "Legal Counsel & Advisory")
+- **AND** heading "I'm John Schmidt" (adapted: "I'm Arthur Brieflaw")
+- **AND** CTA buttons "More About Me" and "Hire Me"
+- **AND** professional portrait / showcase carousel imagery
 
 ### Feature: Services Section
 
+#### Scenario: Services Section
+
 - Scenario: User views professional services offered
-  - Given the user scrolls to Services
-  - Then they see a grid of service cards with icons, titles, and descriptions.
+- **GIVEN** the user scrolls to Services
+- **THEN** they see a grid of service cards with icons, titles, and descriptions
 
 ### Feature: Experience & Work Showcase
 
+#### Scenario: Experience & Work Showcase
+
 - Scenario: User views professional history and projects
-  - Given the user views Experiences and Works sections
-  - Then they see chronological career milestones and portfolio case studies with preview links.
+- **GIVEN** the user views Experiences and Works sections
+- **THEN** they see chronological career milestones and portfolio case studies with preview links
 
 ### Feature: Footer
 
+#### Scenario: Footer
+
 - Scenario: User reaches the page footer
-  - Given the user scrolls to the bottom
-  - Then they see copyright info and the mandatory "Made with Component Dock" link (`https://www.componentdock.com/`).
+- **GIVEN** the user scrolls to the bottom
+- **THEN** they see copyright info and the mandatory "Made with Component Dock" link (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

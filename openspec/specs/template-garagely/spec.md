@@ -43,84 +43,84 @@ Recreation of ColorLib **AutoMotive** (`https://colorlib.com/wp/template/automot
 - **Spacing**: Section padding 100px top/bottom (`.spad`), hero 170px top/bottom, counter 200px top / 70px bottom
 - **Layout**: Bootstrap 4 grid (12-col), max-width container, responsive breakpoints
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Automotive Service Garage Landing Page
 
 #### Scenario: Top Utility Bar
 
-- **Given** the user visits the Garagely landing page
-- **Then** they should see a dark utility bar at the top with phone number `(+123) 4567-7890-123` and business hours `Mon-Sat: 10:00 - 16:00 / Sunday Close`
-- **And** a "Find us on map" link and social icons (Facebook, Twitter, Vimeo, Pinterest) on the right
+- **GIVEN** the user visits the Garagely landing page
+- **THEN** they should see a dark utility bar at the top with phone number `(+123) 4567-7890-123` and business hours `Mon-Sat: 10:00 - 16:00 / Sunday Close`
+- **AND** a "Find us on map" link and social icons (Facebook, Twitter, Vimeo, Pinterest) on the right
 
 #### Scenario: Navigation Bar
 
-- **Given** the utility bar is visible
-- **Then** they should see a white navigation bar below with a logo, nav links (Home, Services, Shop, Pages dropdown, Blog)
-- **And** a search icon and cart icon on the right
-- **And** the active nav link has an indigo underline indicator
-- **And** the Pages dropdown reveals sub-links (About Us, Services Details, Shop Details, Blog Details, Contact)
+- **GIVEN** the utility bar is visible
+- **THEN** they should see a white navigation bar below with a logo, nav links (Home, Services, Shop, Pages dropdown, Blog)
+- **AND** a search icon and cart icon on the right
+- **AND** the active nav link has an indigo underline indicator
+- **AND** the Pages dropdown reveals sub-links (About Us, Services Details, Shop Details, Blog Details, Contact)
 
 #### Scenario: Hero Section
 
-- **Given** the user scrolls past the nav
-- **Then** they should see a full-width hero section with a dark background image
-- **And** the heading "Welcome To Auto-Motive Garage" in white text
-- **And** a subtitle paragraph in white
-- **And** a primary indigo CTA button "Our Services"
+- **GIVEN** the user scrolls past the nav
+- **THEN** they should see a full-width hero section with a dark background image
+- **AND** the heading "Welcome To Auto-Motive Garage" in white text
+- **AND** a subtitle paragraph in white
+- **AND** a primary indigo CTA button "Our Services"
 
 #### Scenario: Services Section ("What We Do?")
 
-- **Given** the user scrolls to the services section
-- **Then** they should see a centered section title "What We Do?" with subtitle text
-- **And** a 4-column grid of 8 items (4 service text cards + 4 service images) arranged in alternating text-image pairs
-- **And** each service card shows an icon, bold title (Engine Overhaul, Power Steering, Oil change, Upgrades Car), and description text
+- **GIVEN** the user scrolls to the services section
+- **THEN** they should see a centered section title "What We Do?" with subtitle text
+- **AND** a 4-column grid of 8 items (4 service text cards + 4 service images) arranged in alternating text-image pairs
+- **AND** each service card shows an icon, bold title (Engine Overhaul, Power Steering, Oil change, Upgrades Car), and description text
 
 #### Scenario: Choose Us Section
 
-- **Given** the user scrolls to the choose-us section
-- **Then** they should see a split layout with an image on the left and text panel on the right
-- **And** the heading "We Have 20 Years Of Experience In Auto Car"
-- **And** a checklist of 4 items with indigo checkmark icons
-- **And** a "About Us" primary button
+- **GIVEN** the user scrolls to the choose-us section
+- **THEN** they should see a split layout with an image on the left and text panel on the right
+- **AND** the heading "We Have 20 Years Of Experience In Auto Car"
+- **AND** a checklist of 4 items with indigo checkmark icons
+- **AND** a "About Us" primary button
 
 #### Scenario: Products Section
 
-- **Given** the user scrolls to the products section
-- **Then** they should see a centered section title "Our Products" with subtitle text
-- **And** a 4-column grid of product cards, each with an image, hover action icons (heart, eye, exchange), product name, price ($800.00), and "+Add To Cart" link
+- **GIVEN** the user scrolls to the products section
+- **THEN** they should see a centered section title "Our Products" with subtitle text
+- **AND** a 4-column grid of product cards, each with an image, hover action icons (heart, eye, exchange), product name, price ($800.00), and "+Add To Cart" link
 
 #### Scenario: Testimonial Section
 
-- **Given** the user scrolls to the testimonial section
-- **Then** they should see a carousel/slider with testimonial quotes
-- **And** each testimonial has an indigo quotation icon and italicized quote text
-- **And** carousel dots for navigation
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** they should see a carousel/slider with testimonial quotes
+- **AND** each testimonial has an indigo quotation icon and italicized quote text
+- **AND** carousel dots for navigation
 
 #### Scenario: Counter / Statistics Section
 
-- **Given** the user scrolls to the counter section
-- **Then** they should see a full-width background image with white section title "About Our Statistics"
-- **And** 4 counter items each with an icon, large indigo number "560+", and label (All Project, Project Completed, Customers Action, Awards Winner)
+- **GIVEN** the user scrolls to the counter section
+- **THEN** they should see a full-width background image with white section title "About Our Statistics"
+- **AND** 4 counter items each with an icon, large indigo number "560+", and label (All Project, Project Completed, Customers Action, Awards Winner)
 
 #### Scenario: Latest News Section
 
-- **Given** the user scrolls to the news section
-- **Then** they should see a centered section title "Latest News" with subtitle text
-- **And** a 3-column grid of blog cards each with an image, author/date overlay, heading, excerpt, and "Continue Reading" link
+- **GIVEN** the user scrolls to the news section
+- **THEN** they should see a centered section title "Latest News" with subtitle text
+- **AND** a 3-column grid of blog cards each with an image, author/date overlay, heading, excerpt, and "Continue Reading" link
 
 #### Scenario: Footer
 
-- **Given** the user scrolls to the bottom
-- **Then** they should see a footer with a full-width background image
-- **And** 3 top call-to-action items (Booking Repair / Appointment, Contact Us / Phone, Location / Find us on map)
-- **And** a main footer section with 4 columns: About (logo + description + Contact Us button), Quick Links, News items, Office address + contact details
-- **And** a copyright bar with social icons
+- **GIVEN** the user scrolls to the bottom
+- **THEN** they should see a footer with a full-width background image
+- **AND** 3 top call-to-action items (Booking Repair / Appointment, Contact Us / Phone, Location / Find us on map)
+- **AND** a main footer section with 4 columns: About (logo + description + Contact Us button), Quick Links, News items, Office address + contact details
+- **AND** a copyright bar with social icons
 
 #### Scenario: Footer Attribution
 
-- **Given** the user views the footer
-- **Then** they should see a link to `https://www.componentdock.com/` branded as "Component Dock"
+- **GIVEN** the user views the footer
+- **THEN** they should see a link to `https://www.componentdock.com/` branded as "Component Dock"
 
 ## Verification Checklist
 

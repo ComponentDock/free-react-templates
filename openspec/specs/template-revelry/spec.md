@@ -40,100 +40,93 @@ Extracted from the live preview CSS (`main_styles.css`):
 7. **Reservations** — Full-width parallax section with tan overlay, star rating, title ("Make a Reservation"), form with party-size selector (2-6 persons) and submit button.
 8. **Footer** — 3-column layout: logo + brand text (left), about paragraph (center), contact info with address/phone/email (right), copyright bar.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header navigation
-```gherkin
-Given the user is on any page
-When the header is rendered
-Then the logo "Revelry" is displayed in script font
-And navigation links "Home", "About Us", "Menu", "Delivery", "Blog", "Contact" are visible
-And a reservation phone number is displayed
-And the nav is sticky on scroll
-And a hamburger menu appears on mobile viewports
-```
+### Feature: Revelry template behaviour
 
-### Scenario: Hero section
-```gherkin
-Given the user loads the page
-When the hero section renders
-Then a full-width parallax background image is displayed
-And the subtitle "The Venue is" appears
-And the title "An Extraordinery Experience" appears in script font
-And a description paragraph is visible below the title
-And a scroll-down icon is centered below the text
-```
+#### Scenario: Header navigation
 
-### Scenario: Introduction section
-```gherkin
-Given the user scrolls past the hero
-When the introduction section enters viewport
-Then a section subtitle and title are displayed
-And a descriptive paragraph is shown
-And two food/venue images appear in a 2-column grid
-```
+- **GIVEN** the user is on any page
+- **WHEN** the header is rendered
+- **THEN** the logo "Revelry" is displayed in script font
+- **AND** navigation links "Home", "About Us", "Menu", "Delivery", "Blog", "Contact" are visible
+- **AND** a reservation phone number is displayed
+- **AND** the nav is sticky on scroll
+- **AND** a hamburger menu appears on mobile viewports
 
-### Scenario: Video CTA section
-```gherkin
-Given the user scrolls to the video section
-When the section renders
-Then a full-width parallax background with dark overlay is shown
-And a centered play button icon is visible
-And a title text is displayed
-```
+#### Scenario: Hero section
 
-### Scenario: Signature Dish section
-```gherkin
-Given the user scrolls to the specials area
-When the signature dish section renders
-Then a subtitle and title "Our Signature Dish" are displayed
-And the dish name and description are shown
-And a 5-star rating is visible
-And an ingredient list (Pork, Tenderloin, Green Pepper, Veggies) is shown
-And an "Order Now" button is present
-And a food image appears on the right side
-```
+- **GIVEN** the user loads the page
+- **WHEN** the hero section renders
+- **THEN** a full-width parallax background image is displayed
+- **AND** the subtitle "The Venue is" appears
+- **AND** the title "An Extraordinery Experience" appears in script font
+- **AND** a description paragraph is visible below the title
+- **AND** a scroll-down icon is centered below the text
 
-### Scenario: Menu section
-```gherkin
-Given the user scrolls to the menu
-When the menu section renders
-Then star ratings and the title "The Menu" are displayed
-And three columns are shown: Starters, Main, Desserts
-And each column contains 5 dishes
-And each dish shows a title, ingredient tags, price, and "Order Now" button
-And the columns have tan section header backgrounds
-```
+#### Scenario: Introduction section
 
-### Scenario: Reservations section
-```gherkin
-Given the user scrolls to reservations
-When the reservation section renders
-Then a full-width parallax background with tan overlay is displayed
-And star ratings and title "Make a Reservation" are shown
-And a form with party-size selector (2-6 persons) is present
-And a "Make a Reservation" submit button is visible
-```
+- **GIVEN** the user scrolls past the hero
+- **WHEN** the introduction section enters viewport
+- **THEN** a section subtitle and title are displayed
+- **AND** a descriptive paragraph is shown
+- **AND** two food/venue images appear in a 2-column grid
 
-### Scenario: Footer
-```gherkin
-Given the user scrolls to the bottom
-When the footer renders
-Then the logo and brand name "Revelry" are displayed
-And an about paragraph is shown in the center column
-And contact information (address, phone, email) is in the right column
-And a copyright bar with Component Dock link is at the bottom
-```
+#### Scenario: Video CTA section
 
-### Scenario: Mobile responsiveness
-```gherkin
-Given the user views the page on a mobile device
-When the viewport is less than 768px wide
-Then the navigation collapses to a hamburger menu
-And sections stack vertically
-And the menu columns stack vertically
-And the reservation form is full-width
-```
+- **GIVEN** the user scrolls to the video section
+- **WHEN** the section renders
+- **THEN** a full-width parallax background with dark overlay is shown
+- **AND** a centered play button icon is visible
+- **AND** a title text is displayed
+
+#### Scenario: Signature Dish section
+
+- **GIVEN** the user scrolls to the specials area
+- **WHEN** the signature dish section renders
+- **THEN** a subtitle and title "Our Signature Dish" are displayed
+- **AND** the dish name and description are shown
+- **AND** a 5-star rating is visible
+- **AND** an ingredient list (Pork, Tenderloin, Green Pepper, Veggies) is shown
+- **AND** an "Order Now" button is present
+- **AND** a food image appears on the right side
+
+#### Scenario: Menu section
+
+- **GIVEN** the user scrolls to the menu
+- **WHEN** the menu section renders
+- **THEN** star ratings and the title "The Menu" are displayed
+- **AND** three columns are shown: Starters, Main, Desserts
+- **AND** each column contains 5 dishes
+- **AND** each dish shows a title, ingredient tags, price, and "Order Now" button
+- **AND** the columns have tan section header backgrounds
+
+#### Scenario: Reservations section
+
+- **GIVEN** the user scrolls to reservations
+- **WHEN** the reservation section renders
+- **THEN** a full-width parallax background with tan overlay is displayed
+- **AND** star ratings and title "Make a Reservation" are shown
+- **AND** a form with party-size selector (2-6 persons) is present
+- **AND** a "Make a Reservation" submit button is visible
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the bottom
+- **WHEN** the footer renders
+- **THEN** the logo and brand name "Revelry" are displayed
+- **AND** an about paragraph is shown in the center column
+- **AND** contact information (address, phone, email) is in the right column
+- **AND** a copyright bar with Component Dock link is at the bottom
+
+#### Scenario: Mobile responsiveness
+
+- **GIVEN** the user views the page on a mobile device
+- **WHEN** the viewport is less than 768px wide
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the menu columns stack vertically
+- **AND** the reservation form is full-width
 
 ## Verification checklist
 

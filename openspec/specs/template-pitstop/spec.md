@@ -146,140 +146,155 @@ The TEMPLATES.md preview image
     - Left: copyright text with red heart + Colorlib attribution → replace with "Made with Component Dock" / "More templates at Component Dock" linking https://www.componentdock.com/
     - Right: social icons (Facebook, Twitter, Vimeo, Pinterest) with brand-color backgrounds
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Pitstop — Automotive Garage Landing Page
 
-```gherkin
 Feature: Pitstop automotive garage landing page
-  As a visitor to a Pitstop automotive site
-  I want a professional garage landing page
-  So that I can learn about services, browse products, and contact the shop
+As a visitor to a Pitstop automotive site
+I want a professional garage landing page
+So that I can learn about services, browse products, and contact the shop
 
-  Background:
-    Given the Pitstop app is loaded at the root URL
+Background:
+- **GIVEN** the Pitstop app is loaded at the root URL
 
-  # --- Header ---
+**--- Header ---**
 
-  Scenario: Header top bar displays contact info and social links
-    Then I should see the phone number "(+123) 4567-7890-123"
-    And I should see business hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
-    And I should see a "Find us on map" link
-    And I should see social icon links for Facebook, Twitter, Vimeo, and Pinterest
+#### Scenario: Header top bar displays contact info and social links
 
-  Scenario: Navbar displays logo, navigation menu, and action icons
-    Then I should see a logo image
-    And I should see navigation links: "Home", "Services", "Shop", "Blog"
-    And I should see a "Pages" dropdown menu
-    And I should see search and cart action icons
+- **THEN** I should see the phone number "(+123) 4567-7890-123"
+- **AND** I should see business hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
+- **AND** I should see a "Find us on map" link
+- **AND** I should see social icon links for Facebook, Twitter, Vimeo, and Pinterest
 
-  Scenario: Pages dropdown reveals sub-navigation
-    When I hover over or click the "Pages" nav link
-    Then I should see dropdown links: "About Us", "Services Details", "Shop Details", "Blog Details", "Contact"
+#### Scenario: Navbar displays logo, navigation menu, and action icons
 
-  Scenario: Active nav item has brand-color underline indicator
-    Given "Home" is the active page
-    Then the "Home" link should have a visible brand-color underline
+- **THEN** I should see a logo image
+- **AND** I should see navigation links: "Home", "Services", "Shop", "Blog"
+- **AND** I should see a "Pages" dropdown menu
+- **AND** I should see search and cart action icons
 
-  # --- Hero ---
+#### Scenario: Pages dropdown reveals sub-navigation
 
-  Scenario: Hero section displays welcome headline and CTA
-    Then I should see the heading "Welcome To Auto-Motive Garage" (or equivalent)
-    And I should see a subtitle paragraph
-    And I should see a "Our Services" call-to-action button
-    And the hero should have a background image
+- **WHEN** I hover over or click the "Pages" nav link
+- **THEN** I should see dropdown links: "About Us", "Services Details", "Shop Details", "Blog Details", "Contact"
 
-  # --- Services ---
+#### Scenario: Active nav item has brand-color underline indicator
 
-  Scenario: Services section shows four service cards
-    Then I should see a section titled "What We Do?"
-    And I should see 4 service cards with the following titles:
-      | title            |
-      | Engine Overhaul  |
-      | Power Steering   |
-      | Oil Change       |
-      | Upgrades Car     |
+- **GIVEN** "Home" is the active page
+- **THEN** the "Home" link should have a visible brand-color underline
 
-  Scenario: Each service card has icon, title, and description
-    Then each service card should contain an icon image, a heading, and a paragraph
+**--- Hero ---**
 
-  # --- Choose Us ---
+#### Scenario: Hero section displays welcome headline and CTA
 
-  Scenario: Choose Us section displays experience claim and checklist
-    Then I should see the heading "We Have 20 Years Of Experience In Auto Car"
-    And I should see 4 checklist items with check icons
-    And I should see an "About Us" call-to-action button
-    And I should see a background image on the left side
+- **THEN** I should see the heading "Welcome To Auto-Motive Garage" (or equivalent)
+- **AND** I should see a subtitle paragraph
+- **AND** I should see a "Our Services" call-to-action button
+- **AND** the hero should have a background image
 
-  # --- Products ---
+**--- Services ---**
 
-  Scenario: Products section displays four product cards
-    Then I should see a section titled "Our Products"
-    And I should see 4 product cards with the following names:
-      | name              |
-      | High Flow Fuel    |
-      | Revolution Wheels |
-      | Tone Interior Kit |
-      | Matte Gunmetal    |
+#### Scenario: Services section shows four service cards
 
-  Scenario: Product card has image, hover actions, name, and price
-    Then each product card should contain an image
-    And each product card should show heart, eye, and exchange icons on hover
-    And each product card should show a product name and price "$800.00"
-    And each product card should show an "+Add To Cart" link
+- **THEN** I should see a section titled "What We Do?"
+- **AND** I should see 4 service cards with the following titles:
+| title            |
+| Engine Overhaul  |
+| Power Steering   |
+| Oil Change       |
+| Upgrades Car     |
 
-  # --- Testimonials ---
+#### Scenario: Each service card has icon, title, and description
 
-  Scenario: Testimonial section displays customer quotes
-    Then I should see 3 testimonial quote blocks
-    And each quote should display a large quotation icon in brand color
-    And each quote should contain an italic paragraph
-    And I should see carousel dot navigation
+- **THEN** each service card should contain an icon image, a heading, and a paragraph
 
-  Scenario: Testimonial carousel cycles through quotes
-    When I click a different carousel dot
-    Then the displayed quote should change
+**--- Choose Us ---**
 
-  # --- Counter ---
+#### Scenario: Choose Us section displays experience claim and checklist
 
-  Scenario: Counter section displays four statistics
-    Then I should see a section titled "About Our Statistics"
-    And I should see 4 counter items:
-      | label              | value |
-      | All Project        | 560+  |
-      | Project Completed  | 560+  |
-      | Customers Action   | 560+  |
-      | Awards Winner      | 560+  |
-    And the counter section should have a background image
+- **THEN** I should see the heading "We Have 20 Years Of Experience In Auto Car"
+- **AND** I should see 4 checklist items with check icons
+- **AND** I should see an "About Us" call-to-action button
+- **AND** I should see a background image on the left side
 
-  # --- Latest News ---
+**--- Products ---**
 
-  Scenario: Latest News section displays three blog cards
-    Then I should see a section titled "Latest News"
-    And I should see 3 blog cards
-    And each blog card should contain a featured image, author name, date, title, and excerpt
-    And each blog card should have a "Continue Reading" link
+#### Scenario: Products section displays four product cards
 
-  # --- Footer ---
+- **THEN** I should see a section titled "Our Products"
+- **AND** I should see 4 product cards with the following names:
+| name              |
+| High Flow Fuel    |
+| Revolution Wheels |
+| Tone Interior Kit |
+| Matte Gunmetal    |
 
-  Scenario: Footer top row displays contact actions
-    Then I should see 3 footer top items: "Appointment", phone number, and "Find us on map"
-    And each footer top item should have an icon and heading
+#### Scenario: Product card has image, hover actions, name, and price
 
-  Scenario: Footer bottom section displays about, links, news, and address
-    Then I should see a footer logo and description paragraph
-    And I should see a "Contact Us" button
-    And I should see "Quick Link" section with: Purchase, Payment, Shipping, Return, Detailing
-    And I should see a "News" section with 3 recent post entries
-    And I should see a "My Office" section with address, fax, mobile, and email
+- **THEN** each product card should contain an image
+- **AND** each product card should show heart, eye, and exchange icons on hover
+- **AND** each product card should show a product name and price "$800.00"
+- **AND** each product card should show an "+Add To Cart" link
 
-  # --- Copyright ---
+**--- Testimonials ---**
 
-  Scenario: Copyright bar shows attribution and social links
-    Then I should see a copyright line with current year
-    And I should see a "Component Dock" link (not Colorlib)
-    And I should see social icon links in the copyright bar
-```
+#### Scenario: Testimonial section displays customer quotes
+
+- **THEN** I should see 3 testimonial quote blocks
+- **AND** each quote should display a large quotation icon in brand color
+- **AND** each quote should contain an italic paragraph
+- **AND** I should see carousel dot navigation
+
+#### Scenario: Testimonial carousel cycles through quotes
+
+- **WHEN** I click a different carousel dot
+- **THEN** the displayed quote should change
+
+**--- Counter ---**
+
+#### Scenario: Counter section displays four statistics
+
+- **THEN** I should see a section titled "About Our Statistics"
+- **AND** I should see 4 counter items:
+| label              | value |
+| All Project        | 560+  |
+| Project Completed  | 560+  |
+| Customers Action   | 560+  |
+| Awards Winner      | 560+  |
+- **AND** the counter section should have a background image
+
+**--- Latest News ---**
+
+#### Scenario: Latest News section displays three blog cards
+
+- **THEN** I should see a section titled "Latest News"
+- **AND** I should see 3 blog cards
+- **AND** each blog card should contain a featured image, author name, date, title, and excerpt
+- **AND** each blog card should have a "Continue Reading" link
+
+**--- Footer ---**
+
+#### Scenario: Footer top row displays contact actions
+
+- **THEN** I should see 3 footer top items: "Appointment", phone number, and "Find us on map"
+- **AND** each footer top item should have an icon and heading
+
+#### Scenario: Footer bottom section displays about, links, news, and address
+
+- **THEN** I should see a footer logo and description paragraph
+- **AND** I should see a "Contact Us" button
+- **AND** I should see "Quick Link" section with: Purchase, Payment, Shipping, Return, Detailing
+- **AND** I should see a "News" section with 3 recent post entries
+- **AND** I should see a "My Office" section with address, fax, mobile, and email
+
+**--- Copyright ---**
+
+#### Scenario: Copyright bar shows attribution and social links
+
+- **THEN** I should see a copyright line with current year
+- **AND** I should see a "Component Dock" link (not Colorlib)
+- **AND** I should see social icon links in the copyright bar
 
 ## Verification checklist
 

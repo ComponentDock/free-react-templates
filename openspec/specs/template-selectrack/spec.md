@@ -45,63 +45,72 @@ component page.
      - Checkbox list of US states (scrollable, max-height 200px)
 4. **Footer** with Component Dock link (mandatory per AGENTS.md)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multiselect Dropdown with Live Search
 
 #### Scenario: Page renders with title and dropdown
-- Given the page loads
-- When the user views the page
-- Then a heading "States" is visible
-- And a dropdown trigger button is visible with label "States" and quantity "Any"
-- And a chevron-down icon is visible on the trigger
+
+- **GIVEN** the page loads
+- **WHEN** the user views the page
+- **THEN** a heading "States" is visible
+- **AND** a dropdown trigger button is visible with label "States" and quantity "Any"
+- **AND** a chevron-down icon is visible on the trigger
 
 #### Scenario: Dropdown opens on click
-- Given the dropdown is closed
-- When the user clicks the dropdown trigger button
-- Then the dropdown list becomes visible
-- And a search input with placeholder "Search states" is visible
-- And a list of US state checkboxes is visible
+
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the dropdown trigger button
+- **THEN** the dropdown list becomes visible
+- **AND** a search input with placeholder "Search states" is visible
+- **AND** a list of US state checkboxes is visible
 
 #### Scenario: Dropdown closes on outside click
-- Given the dropdown is open
-- When the user clicks outside the dropdown
-- Then the dropdown list becomes hidden
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown
+- **THEN** the dropdown list becomes hidden
 
 #### Scenario: Live search filters states
-- Given the dropdown is open
-- When the user types "Cal" in the search input
-- Then only states containing "Cal" are visible (e.g. California)
-- And states not matching are hidden
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user types "Cal" in the search input
+- **THEN** only states containing "Cal" are visible (e.g. California)
+- **AND** states not matching are hidden
 
 #### Scenario: Checkbox selection updates quantity
-- Given the dropdown is open
-- When the user checks "California"
-- Then the quantity badge updates from "Any" to "1"
-- When the user also checks "Texas"
-- Then the quantity badge shows "2"
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user checks "California"
+- **THEN** the quantity badge updates from "Any" to "1"
+- **WHEN** the user also checks "Texas"
+- **THEN** the quantity badge shows "2"
 
 #### Scenario: Checkbox deselection
-- Given "California" is checked
-- When the user unchecks "California"
-- Then the quantity decreases by 1
+
+- **GIVEN** "California" is checked
+- **WHEN** the user unchecks "California"
+- **THEN** the quantity decreases by 1
 
 #### Scenario: Empty search shows no results
-- Given the dropdown is open
-- When the user types "xyz" in the search input
-- Then no state checkboxes are visible
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user types "xyz" in the search input
+- **THEN** no state checkboxes are visible
 
 #### Scenario: Clearing search restores all states
-- Given the dropdown shows filtered results for "Cal"
-- When the user clears the search input
-- Then all states are visible again
+
+- **GIVEN** the dropdown shows filtered results for "Cal"
+- **WHEN** the user clears the search input
+- **THEN** all states are visible again
 
 #### Scenario: Accessibility
-- Given the page loads
-- When the user navigates with keyboard
-- Then the dropdown trigger is focusable
-- And the search input is focusable
-- And checkboxes are keyboard-accessible
+
+- **GIVEN** the page loads
+- **WHEN** the user navigates with keyboard
+- **THEN** the dropdown trigger is focusable
+- **AND** the search input is focusable
+- **AND** checkboxes are keyboard-accessible
 
 ## Verification Checklist
 

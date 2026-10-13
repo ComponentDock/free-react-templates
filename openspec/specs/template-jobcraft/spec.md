@@ -38,89 +38,101 @@ White job listing cards in a bordered list with thumbnails, badges, and salary
 info. Light testimonial carousel with author photos. Dark blue CTA banner.
 Standard footer with 4 link columns.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Feature: Navbar
 
-- **Scenario:** Logo and navigation links are visible
-  - Given the user loads the page
-  - Then the navbar shows the logo "JobCraft" on the left
-  - And navigation links: Home, Job Listings, About, Services, Blog
-  - And a "Contact Us" button is visible on the right (desktop only)
+#### Scenario: Navbar
 
+- **Scenario:** Logo and navigation links are visible
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows the logo "JobCraft" on the left
+- **AND** navigation links: Home, Job Listings, About, Services, Blog
+- **AND** a "Contact Us" button is visible on the right (desktop only)
 - **Scenario:** Mobile menu toggle works
-  - Given the viewport is below xl breakpoint
-  - Then the hamburger menu icon is visible
-  - And clicking it opens the mobile navigation drawer
+- **GIVEN** the viewport is below xl breakpoint
+- **THEN** the hamburger menu icon is visible
+- **AND** clicking it opens the mobile navigation drawer
 
 ### Feature: Hero section
 
-- **Scenario:** Hero displays headline and search form
-  - Given the user is on the homepage
-  - Then a full-width hero section shows with a background image
-  - And the headline "Find Your Dream Career" is centered
-  - And a search form with four fields: keyword input, location select, job type select, search button
+#### Scenario: Hero section
 
+- **Scenario:** Hero displays headline and search form
+- **GIVEN** the user is on the homepage
+- **THEN** a full-width hero section shows with a background image
+- **AND** the headline "Find Your Dream Career" is centered
+- **AND** a search form with four fields: keyword input, location select, job type select, search button
 - **Scenario:** Search form fields are interactive
-  - Given the hero section is visible
-  - When the user types in the keyword input
-  - Then the input accepts text
-  - And the location select shows multiple city options
-  - And the job type select shows Full Time, Part Time, Freelancer
+- **GIVEN** the hero section is visible
+- **WHEN** the user types in the keyword input
+- **THEN** the input accepts text
+- **AND** the location select shows multiple city options
+- **AND** the job type select shows Full Time, Part Time, Freelancer
 
 ### Feature: Statistics section
 
+#### Scenario: Statistics section
+
 - **Scenario:** Animated counters display key metrics
-  - Given the statistics section is visible
-  - Then four counters are displayed: Candidates, Jobs Posted, Jobs Filled, Companies
-  - And each counter has a large number and a label below
+- **GIVEN** the statistics section is visible
+- **THEN** four counters are displayed: Candidates, Jobs Posted, Jobs Filled, Companies
+- **AND** each counter has a large number and a label below
 
 ### Feature: Job Listings
 
+#### Scenario: Job Listings
+
 - **Scenario:** Job listings section shows featured positions
-  - Given the user scrolls to job listings
-  - Then a heading "Featured Job Listings" is displayed
-  - And at least 6 job items are shown in a list
-  - And each item has: thumbnail image, job type badge, job title, publisher/category, location, salary range
-
+- **GIVEN** the user scrolls to job listings
+- **THEN** a heading "Featured Job Listings" is displayed
+- **AND** at least 6 job items are shown in a list
+- **AND** each item has: thumbnail image, job type badge, job title, publisher/category, location, salary range
 - **Scenario:** Job items display correct badge colors
-  - Given a job item has type "Freelancer"
-  - Then the badge color is blue (primary)
-  - And a job item with type "Full-time" shows a yellow badge
-  - And a job item with type "Part-time" shows a green badge
-
+- **GIVEN** a job item has type "Freelancer"
+- **THEN** the badge color is blue (primary)
+- **AND** a job item with type "Full-time" shows a yellow badge
+- **AND** a job item with type "Part-time" shows a green badge
 - **Scenario:** Pagination is visible below job listings
-  - Given the job listings section is displayed
-  - Then Previous/Next pagination links are shown
+- **GIVEN** the job listings section is displayed
+- **THEN** Previous/Next pagination links are shown
 
 ### Feature: Partners section
 
+#### Scenario: Partners section
+
 - **Scenario:** Company logos are displayed
-  - Given the partners section is visible
-  - Then 4 company logo placeholders are shown in a row
+- **GIVEN** the partners section is visible
+- **THEN** 4 company logo placeholders are shown in a row
 
 ### Feature: Testimonials
 
+#### Scenario: Testimonials
+
 - **Scenario:** Testimonial carousel displays quotes
-  - Given the testimonials section is visible
-  - Then at least 2 testimonial slides are available
-  - And each slide shows a person photo, a blockquote, and a citation
+- **GIVEN** the testimonials section is visible
+- **THEN** at least 2 testimonial slides are available
+- **AND** each slide shows a person photo, a blockquote, and a citation
 
 ### Feature: CTA banner
 
+#### Scenario: CTA banner
+
 - **Scenario:** Call-to-action section prompts sign-up
-  - Given the CTA section is visible
-  - Then the heading "Looking For A Job?" is displayed
-  - And a "Sign Up" button is shown
+- **GIVEN** the CTA section is visible
+- **THEN** the heading "Looking For A Job?" is displayed
+- **AND** a "Sign Up" button is shown
 
 ### Feature: Footer
 
+#### Scenario: Footer
+
 - **Scenario:** Footer has four link columns and copyright
-  - Given the user scrolls to the footer
-  - Then four columns are shown: Search Trending, Company, Support, Contact Us
-  - And each column has a list of links
-  - And the bottom row shows copyright text
-  - And a link to `https://www.componentdock.com/` is present
+- **GIVEN** the user scrolls to the footer
+- **THEN** four columns are shown: Search Trending, Company, Support, Contact Us
+- **AND** each column has a list of links
+- **AND** the bottom row shows copyright text
+- **AND** a link to `https://www.componentdock.com/` is present
 
 ## Verification checklist
 

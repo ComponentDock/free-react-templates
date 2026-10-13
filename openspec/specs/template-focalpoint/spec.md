@@ -94,75 +94,82 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Component Dock attribution link (replace Colorlib)
 - Minimal single-line layout
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Focalpoint template behaviour
+
 Feature: Focalpoint — Photography Portfolio Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "Focalpoint"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "Focalpoint"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Offsidebar sidebar renders correctly
-    Given the page is loaded
-    Then a fixed left sidebar is visible with width 90px
-    And a hamburger menu icon is visible in the sidebar
-    When the user clicks the hamburger icon
-    Then a slide-out navigation panel appears
-    And navigation links "Home", "About", "Gallery", "Blog", "Contact" are visible
-    And social icons (Facebook, Twitter, LinkedIn, Instagram) are visible
-    And a copyright line with Component Dock link is visible in the sidebar footer
-    When the user clicks the close arrow
-    Then the navigation panel slides closed
+#### Scenario: Offsidebar sidebar renders correctly
 
-  Scenario: Hero accordion displays correctly
-    Given the hero section is in the viewport
-    Then a horizontal accordion with 5 or more items is visible
-    And each accordion item has a full-cover background image
-    And each item displays a category tag, title, and author info
-    And the first item is expanded by default
-    When the user clicks a collapsed accordion item
-    Then that item expands and the previously active item collapses
+- **GIVEN** the page is loaded
+- **THEN** a fixed left sidebar is visible with width 90px
+- **AND** a hamburger menu icon is visible in the sidebar
+- **WHEN** the user clicks the hamburger icon
+- **THEN** a slide-out navigation panel appears
+- **AND** navigation links "Home", "About", "Gallery", "Blog", "Contact" are visible
+- **AND** social icons (Facebook, Twitter, LinkedIn, Instagram) are visible
+- **AND** a copyright line with Component Dock link is visible in the sidebar footer
+- **WHEN** the user clicks the close arrow
+- **THEN** the navigation panel slides closed
 
-  Scenario: About section renders correctly
-    Given the about section is scrolled into view
-    Then a split layout is visible with left and right halves
-    And the left half shows a profile photo with overlaid text "Hello!" and "I'm Glen Cross"
-    And a "Say Hello" pill button is visible on the left
-    And the right half shows "About Me" heading and bio paragraphs
-    And 4 skill circles are visible (Photoshop, Make Up, Fashion, Photography)
-    And each skill circle shows a percentage value
+#### Scenario: Hero accordion displays correctly
 
-  Scenario: Gallery section with filters works
-    Given the gallery section is scrolled into view
-    Then filter tabs "All", "Featured", "People", "Nature", "Animal", "Travel" are visible
-    And a masonry grid of gallery images is displayed
-    And each image has a hover overlay with author info
-    When the user clicks the "People" filter
-    Then only items tagged "people" are visible
-    When the user clicks the "All" filter
-    Then all gallery items are visible again
+- **GIVEN** the hero section is in the viewport
+- **THEN** a horizontal accordion with 5 or more items is visible
+- **AND** each accordion item has a full-cover background image
+- **AND** each item displays a category tag, title, and author info
+- **AND** the first item is expanded by default
+- **WHEN** the user clicks a collapsed accordion item
+- **THEN** that item expands and the previously active item collapses
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then a dark background footer is visible
-    And a copyright line with the current year is visible
-    And a link to "https://www.componentdock.com/" is present
-    And no other attribution links are visible
+#### Scenario: About section renders correctly
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the sidebar narrows to 60px
-    And the hero accordion adapts to the reduced width
-    And the about section stacks vertically (single column)
-    And the gallery grid switches to fewer columns
+- **GIVEN** the about section is scrolled into view
+- **THEN** a split layout is visible with left and right halves
+- **AND** the left half shows a profile photo with overlaid text "Hello!" and "I'm Glen Cross"
+- **AND** a "Say Hello" pill button is visible on the left
+- **AND** the right half shows "About Me" heading and bio paragraphs
+- **AND** 4 skill circles are visible (Photoshop, Make Up, Fashion, Photography)
+- **AND** each skill circle shows a percentage value
 
-  Scenario: No ColorLib references in app code
-    Given the template source code is inspected
-    Then no file contains "colorlib.com" or "preview.colorlib.com"
-    And the provenance is only in the spec and TEMPLATES.md
-```
+#### Scenario: Gallery section with filters works
+
+- **GIVEN** the gallery section is scrolled into view
+- **THEN** filter tabs "All", "Featured", "People", "Nature", "Animal", "Travel" are visible
+- **AND** a masonry grid of gallery images is displayed
+- **AND** each image has a hover overlay with author info
+- **WHEN** the user clicks the "People" filter
+- **THEN** only items tagged "people" are visible
+- **WHEN** the user clicks the "All" filter
+- **THEN** all gallery items are visible again
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** a dark background footer is visible
+- **AND** a copyright line with the current year is visible
+- **AND** a link to "https://www.componentdock.com/" is present
+- **AND** no other attribution links are visible
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the sidebar narrows to 60px
+- **AND** the hero accordion adapts to the reduced width
+- **AND** the about section stacks vertically (single column)
+- **AND** the gallery grid switches to fewer columns
+
+#### Scenario: No ColorLib references in app code
+
+- **GIVEN** the template source code is inspected
+- **THEN** no file contains "colorlib.com" or "preview.colorlib.com"
+- **AND** the provenance is only in the spec and TEMPLATES.md
 
 ## Verification Checklist
 

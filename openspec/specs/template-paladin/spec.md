@@ -37,150 +37,157 @@ Recreation of ColorLib "Game Warrior" template.
 8. **Footer Top** — 3-column layout: logo + description, Latest Posts (3 blog items with thumbnails, dates, author), Top Comments (4 comment items with author avatars, dates). Dark background.
 9. **Footer** — Centered nav links (same as header), copyright line. Dark background.
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
-```gherkin
+
 Feature: Header navigation
 
-  Scenario: Header displays logo and navigation
-    Given I visit the Paladin homepage
-    Then I see the site logo on the left
-    And I see a user panel with "Login" and "Register" links
-    And I see navigation links: Home, Games, Blog, Forums, Contact
+#### Scenario: Header displays logo and navigation
 
-  Scenario: Header is responsive
-    Given I visit the Paladin homepage on a mobile viewport
-    Then I see a hamburger menu icon
-    And the nav menu is hidden by default
-    When I tap the hamburger icon
-    Then the nav menu slides open
-```
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see the site logo on the left
+- **AND** I see a user panel with "Login" and "Register" links
+- **AND** I see navigation links: Home, Games, Blog, Forums, Contact
+
+#### Scenario: Header is responsive
+
+- **GIVEN** I visit the Paladin homepage on a mobile viewport
+- **THEN** I see a hamburger menu icon
+- **AND** the nav menu is hidden by default
+- **WHEN** I tap the hamburger icon
+- **THEN** the nav menu slides open
 
 ### Hero
-```gherkin
+
 Feature: Hero section
 
-  Scenario: Hero displays welcome message with CTA
-    Given I visit the Paladin homepage
-    Then I see a hero section with background imagery
-    And I see heading text "The Best Games Out There"
-    And the word "Games" is highlighted in brand color
-    And I see a descriptive paragraph
-    And I see a "Read More" button with pill shape
+#### Scenario: Hero displays welcome message with CTA
 
-  Scenario: Hero button is styled correctly
-    Given I see the hero "Read More" button
-    Then it has a golden amber background (#ffb320)
-    And it has pill-shaped border-radius
-    And it has dark text color
-```
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a hero section with background imagery
+- **AND** I see heading text "The Best Games Out There"
+- **AND** the word "Games" is highlighted in brand color
+- **AND** I see a descriptive paragraph
+- **AND** I see a "Read More" button with pill shape
+
+#### Scenario: Hero button is styled correctly
+
+- **GIVEN** I see the hero "Read More" button
+- **THEN** it has a golden amber background (#ffb320)
+- **AND** it has pill-shaped border-radius
+- **AND** it has dark text color
 
 ### Latest News Ticker
-```gherkin
+
 Feature: News ticker
 
-  Scenario: Ticker displays latest news
-    Given I visit the Paladin homepage
-    Then I see a "Latest News" label
-    And I see scrolling news items with category tags
-    And category tags are color-coded: new (amber), strategy (purple), racing (green)
+#### Scenario: Ticker displays latest news
 
-  Scenario: Ticker scrolls horizontally
-    Given I see the news ticker
-    Then the items scroll or cycle through automatically
-```
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a "Latest News" label
+- **AND** I see scrolling news items with category tags
+- **AND** category tags are color-coded: new (amber), strategy (purple), racing (green)
+
+#### Scenario: Ticker scrolls horizontally
+
+- **GIVEN** I see the news ticker
+- **THEN** the items scroll or cycle through automatically
 
 ### Feature Section
-```gherkin
+
 Feature: Feature articles grid
 
-  Scenario: Feature section shows 4 game cards
-    Given I visit the Paladin homepage
-    Then I see a 4-column grid of feature cards
-    And each card has a background image
-    And each card shows a category badge (new/strategy/racing)
-    And each card shows a title, excerpt, and comment count
+#### Scenario: Feature section shows 4 game cards
 
-  Scenario: Feature cards are responsive
-    Given I view the feature section on tablet
-    Then the grid shows 2 columns
-    Given I view the feature section on mobile
-    Then the grid shows 1 column
-```
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a 4-column grid of feature cards
+- **AND** each card has a background image
+- **AND** each card shows a category badge (new/strategy/racing)
+- **AND** each card shows a title, excerpt, and comment count
+
+#### Scenario: Feature cards are responsive
+
+- **GIVEN** I view the feature section on tablet
+- **THEN** the grid shows 2 columns
+- **GIVEN** I view the feature section on mobile
+- **THEN** the grid shows 1 column
 
 ### Recent Games
-```gherkin
+
 Feature: Recent Games section
 
-  Scenario: Recent Games shows 3 game items
-    Given I visit the Paladin homepage
-    Then I see a "Recent Games" heading with "new" tag
-    And I see 3 game cards on a dark background
-    And each card has a thumbnail, title, excerpt, comment count
-    And each card has star and heart icons
+#### Scenario: Recent Games shows 3 game items
 
-  Scenario: Recent Games background
-    Given I see the Recent Games section
-    Then it has a dark textured background image
-```
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a "Recent Games" heading with "new" tag
+- **AND** I see 3 game cards on a dark background
+- **AND** each card has a thumbnail, title, excerpt, comment count
+- **AND** each card has star and heart icons
+
+#### Scenario: Recent Games background
+
+- **GIVEN** I see the Recent Games section
+- **THEN** it has a dark textured background image
 
 ### Tournaments
-```gherkin
+
 Feature: Tournaments section
 
-  Scenario: Tournaments shows 2 tournament cards
-    Given I visit the Paladin homepage
-    Then I see a "Tournaments" heading
-    And I see 2 tournament cards side by side
-    And each card has a "Premium Tournament" badge
-    And each card shows a game thumbnail, title, start/end dates, participants, author, and prizes
+#### Scenario: Tournaments shows 2 tournament cards
 
-  Scenario: Tournaments section background
-    Given I see the Tournaments section
-    Then it has a light background (#eef2f6 area)
-```
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a "Tournaments" heading
+- **AND** I see 2 tournament cards side by side
+- **AND** each card has a "Premium Tournament" badge
+- **AND** each card shows a game thumbnail, title, start/end dates, participants, author, and prizes
+
+#### Scenario: Tournaments section background
+
+- **GIVEN** I see the Tournaments section
+- **THEN** it has a light background (#eef2f6 area)
 
 ### Reviews
-```gherkin
+
 Feature: Recent Reviews section
 
-  Scenario: Reviews shows 4 review items
-    Given I visit the Paladin homepage
-    Then I see a "Recent Reviews" heading with "new" tag
-    And I see 4 review cards on a dark background
-    And each card has a cover image with a colored score badge circle
-    And score badges are colored: yellow, purple, green, pink
-    And each card shows a title and short description
+#### Scenario: Reviews shows 4 review items
 
-  Scenario: Score badges are circular
-    Given I see a review score badge
-    Then it is a circle overlay on the cover image
-    And it displays a numeric score (e.g. 9.3)
-```
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a "Recent Reviews" heading with "new" tag
+- **AND** I see 4 review cards on a dark background
+- **AND** each card has a cover image with a colored score badge circle
+- **AND** score badges are colored: yellow, purple, green, pink
+- **AND** each card shows a title and short description
+
+#### Scenario: Score badges are circular
+
+- **GIVEN** I see a review score badge
+- **THEN** it is a circle overlay on the cover image
+- **AND** it displays a numeric score (e.g. 9.3)
 
 ### Footer Top
-```gherkin
+
 Feature: Footer top section
 
-  Scenario: Footer top shows 3 columns
-    Given I visit the Paladin homepage
-    Then I see a footer top section with 3 columns
-    And column 1 has a logo and description
-    And column 2 shows Latest Posts (3 items with thumbnails, dates, authors)
-    And column 3 shows Top Comments (4 items with avatars, names, dates)
-```
+#### Scenario: Footer top shows 3 columns
+
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a footer top section with 3 columns
+- **AND** column 1 has a logo and description
+- **AND** column 2 shows Latest Posts (3 items with thumbnails, dates, authors)
+- **AND** column 3 shows Top Comments (4 items with avatars, names, dates)
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Footer displays navigation and copyright
-    Given I visit the Paladin homepage
-    Then I see a footer with navigation links: Home, Games, Blog, Forums, Contact
-    And I see a copyright line
-    And the footer links to https://www.componentdock.com/ as "Component Dock"
-```
+#### Scenario: Footer displays navigation and copyright
+
+- **GIVEN** I visit the Paladin homepage
+- **THEN** I see a footer with navigation links: Home, Games, Blog, Forums, Contact
+- **AND** I see a copyright line
+- **AND** the footer links to https://www.componentdock.com/ as "Component Dock"
 
 ## Verification checklist
 

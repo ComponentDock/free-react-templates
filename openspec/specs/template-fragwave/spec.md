@@ -69,93 +69,79 @@ types (no ColorLib assets copied).
   - Follow badges: skewed with `transform: skewX(15deg)`.
   - Circular progress indicators for "best of" sidebar ranking.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header bar displays correctly
+### Feature: Fragwave template behaviour
 
-```
-Given the user opens the Fragwave template
-Then the top bar shows a weather widget, date, and login/signup link on the left
-And social media icons (Facebook, Twitter, YouTube, Instagram, email) appear on the right
-And the logo is centered below the top bar
-And the nav bar contains Home, Platform (mega-menu), Reviews, Windows, Videos links
-And a hamburger menu icon and search icon are visible
-```
+#### Scenario: Header bar displays correctly
 
-### Scenario: Hero section renders featured article and trending posts
+- **GIVEN** the user opens the Fragwave template
+- **THEN** the top bar shows a weather widget, date, and login/signup link on the left
+- **AND** social media icons (Facebook, Twitter, YouTube, Instagram, email) appear on the right
+- **AND** the logo is centered below the top bar
+- **AND** the nav bar contains Home, Platform (mega-menu), Reviews, Windows, Videos links
+- **AND** a hamburger menu icon and search icon are visible
 
-```
-Given the user views the hero section
-Then a category label badge reads "Playstation" with a skewed dark-red background
-And a heading displays the featured article title
-And an author avatar, name, and date are shown below the title
-And the right column shows a "Trending posts" sidebar with a carousel of items
-And each trending item has an image thumbnail, title, date, and comment count
-```
+#### Scenario: Hero section renders featured article and trending posts
 
-### Scenario: Latest Preview carousel displays game previews
+- **GIVEN** the user views the hero section
+- **THEN** a category label badge reads "Playstation" with a skewed dark-red background
+- **AND** a heading displays the featured article title
+- **AND** an author avatar, name, and date are shown below the title
+- **AND** the right column shows a "Trending posts" sidebar with a carousel of items
+- **AND** each trending item has an image thumbnail, title, date, and comment count
 
-```
-Given the user scrolls to the Latest Preview section
-Then the section title reads "Latest Preview"
-And a carousel of game preview cards is displayed
-And each card shows a game image with title text overlay
-```
+#### Scenario: Latest Preview carousel displays game previews
 
-### Scenario: Update News section has tabbed navigation and sidebar
+- **GIVEN** the user scrolls to the Latest Preview section
+- **THEN** the section title reads "Latest Preview"
+- **AND** a carousel of game preview cards is displayed
+- **AND** each card shows a game image with title text overlay
 
-```
-Given the user views the Update News section
-Then the section title reads "News & update" with a red left-border accent
-And tabs show "All", "Platform", "Hardware", "Reviews"
-And "All" is the active tab by default
-And clicking a tab filters the news cards to that category
-And each news card shows an image, category label, title, author, date, and comment count
-And the sidebar displays social follow buttons with platform icons and follower counts
-And a hardware guides section appears below the social follow section
-```
+#### Scenario: Update News section has tabbed navigation and sidebar
 
-### Scenario: Video Guide section shows tabbed video carousel
+- **GIVEN** the user views the Update News section
+- **THEN** the section title reads "News & update" with a red left-border accent
+- **AND** tabs show "All", "Platform", "Hardware", "Reviews"
+- **AND** "All" is the active tab by default
+- **AND** clicking a tab filters the news cards to that category
+- **AND** each news card shows an image, category label, title, author, date, and comment count
+- **AND** the sidebar displays social follow buttons with platform icons and follower counts
+- **AND** a hardware guides section appears below the social follow section
 
-```
-Given the user views the Video Guide section
-Then the section title reads "Videos guide"
-And tabs show "Playstation", "Windows", "Mobile", "Xbox"
-And a carousel of video cards is displayed
-And each card shows a video thumbnail with a play button overlay and a title
-```
+#### Scenario: Video Guide section shows tabbed video carousel
 
-### Scenario: Instagram Post section displays articles and sidebar
+- **GIVEN** the user views the Video Guide section
+- **THEN** the section title reads "Videos guide"
+- **AND** tabs show "Playstation", "Windows", "Mobile", "Xbox"
+- **AND** a carousel of video cards is displayed
+- **AND** each card shows a video thumbnail with a play button overlay and a title
 
-```
-Given the user views the Instagram Post section
-Then the section title reads "Instagram"
-And article cards show a large image, category label, title, author, date, and comment count
-And the sidebar shows a "Best of post" ranked list with circular progress indicators
-And a "Follow us" section with social media follow buttons appears in the sidebar
-```
+#### Scenario: Instagram Post section displays articles and sidebar
 
-### Scenario: Footer renders three columns and copyright bar
+- **GIVEN** the user views the Instagram Post section
+- **THEN** the section title reads "Instagram"
+- **AND** article cards show a large image, category label, title, author, date, and comment count
+- **AND** the sidebar shows a "Best of post" ranked list with circular progress indicators
+- **AND** a "Follow us" section with social media follow buttons appears in the sidebar
 
-```
-Given the user scrolls to the footer
-Then the left column shows the logo, a paragraph, and social media icons
-And the middle column shows "Editor's Choice" with 2 article items
-And the right column shows "Tags Cloud" with tag pill buttons
-And the copyright bar shows copyright text on the left and About/Subscribe/Contact/Support links on the right
-And a link to https://www.componentdock.com/ is present (Component Dock branding)
-```
+#### Scenario: Footer renders three columns and copyright bar
 
-### Scenario: Mobile responsiveness
+- **GIVEN** the user scrolls to the footer
+- **THEN** the left column shows the logo, a paragraph, and social media icons
+- **AND** the middle column shows "Editor's Choice" with 2 article items
+- **AND** the right column shows "Tags Cloud" with tag pill buttons
+- **AND** the copyright bar shows copyright text on the left and About/Subscribe/Contact/Support links on the right
+- **AND** a link to https://www.componentdock.com/ is present (Component Dock branding)
 
-```
-Given the user views the template on a mobile device
-Then the hamburger menu icon is visible in the header
-And tapping it opens a slide-out mobile menu with all nav links
-And the hero section stacks vertically (featured article above trending)
-And the two-column layouts collapse to single column
-And the footer columns stack vertically
-```
+#### Scenario: Mobile responsiveness
+
+- **GIVEN** the user views the template on a mobile device
+- **THEN** the hamburger menu icon is visible in the header
+- **AND** tapping it opens a slide-out mobile menu with all nav links
+- **AND** the hero section stacks vertically (featured article above trending)
+- **AND** the two-column layouts collapse to single column
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

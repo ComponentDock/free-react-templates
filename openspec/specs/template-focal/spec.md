@@ -41,52 +41,62 @@ Focal is a photography portfolio template with a navbar, hero, work gallery, abo
 5. **Contact** — Contact info + form (name, email, message, submit button)
 6. **Footer** — Social icons row, copyright text, "More templates at Component Dock" link
 
-## Scenarios (Gherkin)
+## Requirements
 
 ### Navbar
 
-- **Scenario: Brand name renders**
-  - Given the page loads
-  - Then the navbar displays "Focal"
-- **Scenario: Mobile nav toggle**
-  - Given the viewport is narrow
-  - When the user clicks the hamburger icon
-  - Then the side navigation slides in from the right
+#### Scenario: Brand name renders
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays "Focal"
+
+#### Scenario: Mobile nav toggle
+
+- **GIVEN** the viewport is narrow
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the side navigation slides in from the right
 
 ### Hero
 
-- **Scenario: Hero content renders**
-  - Given the page loads
-  - Then the hero section displays a slide number "01/03"
-  - And the hero section displays heading text
-  - And the hero section displays a "View Galleries" CTA button
-- **Scenario: Slide navigation**
-  - Given the hero has multiple slides
-  - When the user clicks next/prev controls
-  - Then the visible slide changes
+#### Scenario: Hero content renders
+
+- **GIVEN** the page loads
+- **THEN** the hero section displays a slide number "01/03"
+- **AND** the hero section displays heading text
+- **AND** the hero section displays a "View Galleries" CTA button
+
+#### Scenario: Slide navigation
+
+- **GIVEN** the hero has multiple slides
+- **WHEN** the user clicks next/prev controls
+- **THEN** the visible slide changes
 
 ### Work Gallery
 
-- **Scenario: Gallery images render**
-  - Given the page loads
-  - Then the gallery section displays portfolio images
+#### Scenario: Gallery images render
+
+- **GIVEN** the page loads
+- **THEN** the gallery section displays portfolio images
 
 ### About
 
-- **Scenario: About section renders**
-  - Given the page loads
-  - Then the about section displays heading and description text
+#### Scenario: About section renders
+
+- **GIVEN** the page loads
+- **THEN** the about section displays heading and description text
 
 ### Contact
 
-- **Scenario: Contact form renders**
-  - Given the page loads
-  - Then the contact section displays name, email, and message fields
-  - And a submit button
+#### Scenario: Contact form renders
+
+- **GIVEN** the page loads
+- **THEN** the contact section displays name, email, and message fields
+- **AND** a submit button
 
 ### Footer
 
-- **Scenario: Footer component link**
-  - Given the page loads
-  - Then the footer contains a link to "https://www.componentdock.com/"
-  - And the link text mentions "Component Dock"
+#### Scenario: Footer component link
+
+- **GIVEN** the page loads
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the link text mentions "Component Dock"

@@ -95,133 +95,139 @@ Tailwind 4 + TypeScript single-page app.
     - Bottom bar: copyright text + social icons (Facebook, Twitter, Dribbble, Behance)
     - Footer social icons: dark bg (`#111`), orange hover, gray icon color
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar shows brand and navigation links
-  Given the page is loaded
-  Then the brand "Bitrift" is visible in the navbar
-  And nav links "Home", "Convert", "Feature", "Price", "Blog", "Pages" are shown
 
-Scenario: Navbar becomes sticky on scroll
-  Given the page is loaded
-  When the user scrolls down
-  Then the navbar remains visible at the top of the viewport
-```
+#### Scenario: Navbar shows brand and navigation links
+
+- **GIVEN** the page is loaded
+- **THEN** the brand "Bitrift" is visible in the navbar
+- **AND** nav links "Home", "Convert", "Feature", "Price", "Blog", "Pages" are shown
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls down
+- **THEN** the navbar remains visible at the top of the viewport
 
 ### Hero
-```gherkin
-Scenario: Hero displays current price and CTA
-  Given the hero section is visible
-  Then the subheading "Currently Purchase Rate" is displayed
-  And a large price value is prominently shown
-  And a "Buy Bitcoin" button with gradient background is visible
 
-Scenario: Hero has dark overlay on background image
-  Given the hero section is visible
-  Then a dark semi-transparent overlay covers the background image
-  And the overlay color is approximately rgba(4,9,30,0.85)
-```
+#### Scenario: Hero displays current price and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** the subheading "Currently Purchase Rate" is displayed
+- **AND** a large price value is prominently shown
+- **AND** a "Buy Bitcoin" button with gradient background is visible
+
+#### Scenario: Hero has dark overlay on background image
+
+- **GIVEN** the hero section is visible
+- **THEN** a dark semi-transparent overlay covers the background image
+- **AND** the overlay color is approximately rgba(4,9,30,0.85)
 
 ### Converter
-```gherkin
-Scenario: Converter shows form inputs and CTA
-  Given the converter section is visible
-  Then the heading "The Currency Converter" is displayed
-  And input fields for currency conversion are shown
-  And a "Calculate" button is visible
 
-Scenario: Converter overlaps the hero section
-  Given the converter section is visible
-  Then it overlaps the bottom of the hero section
-  And has a yellow-to-orange gradient background
-```
+#### Scenario: Converter shows form inputs and CTA
+
+- **GIVEN** the converter section is visible
+- **THEN** the heading "The Currency Converter" is displayed
+- **AND** input fields for currency conversion are shown
+- **AND** a "Calculate" button is visible
+
+#### Scenario: Converter overlaps the hero section
+
+- **GIVEN** the converter section is visible
+- **THEN** it overlaps the bottom of the hero section
+- **AND** has a yellow-to-orange gradient background
 
 ### Simple Services
-```gherkin
-Scenario: Simple services shows 3 service items
-  Given the simple services section is visible
-  Then 3 service items are shown in a row
-  And each item has an icon, heading, and description
-```
+
+#### Scenario: Simple services shows 3 service items
+
+- **GIVEN** the simple services section is visible
+- **THEN** 3 service items are shown in a row
+- **AND** each item has an icon, heading, and description
 
 ### About Us
-```gherkin
-Scenario: About section shows two-column layout
-  Given the about section is visible
-  Then the left side displays an image carousel
-  And the right side shows the heading "Exchange Bitcoin is not that tough Anymore"
-  And the about section has a dark background
 
-Scenario: About carousel has navigation
-  Given the about section is visible
-  Then up and down navigation arrows are displayed for the image carousel
-```
+#### Scenario: About section shows two-column layout
+
+- **GIVEN** the about section is visible
+- **THEN** the left side displays an image carousel
+- **AND** the right side shows the heading "Exchange Bitcoin is not that tough Anymore"
+- **AND** the about section has a dark background
+
+#### Scenario: About carousel has navigation
+
+- **GIVEN** the about section is visible
+- **THEN** up and down navigation arrows are displayed for the image carousel
 
 ### Features
-```gherkin
-Scenario: Features section shows 6 items
-  Given the features section is visible
-  Then the header "Why choose us during purchase bitcoin" is displayed
-  And 6 feature items are shown in a 3x2 grid
-  And each item has an icon, title, and description
-```
+
+#### Scenario: Features section shows 6 items
+
+- **GIVEN** the features section is visible
+- **THEN** the header "Why choose us during purchase bitcoin" is displayed
+- **AND** 6 feature items are shown in a 3x2 grid
+- **AND** each item has an icon, title, and description
 
 ### Stats
-```gherkin
-Scenario: Stats section shows chart and text
-  Given the stats section is visible
-  Then a chart image is displayed on the left
-  And "Ups and Downs of Bitcoin (Realtime)" heading is shown on the right
-  And a "View Details" button is visible
-```
+
+#### Scenario: Stats section shows chart and text
+
+- **GIVEN** the stats section is visible
+- **THEN** a chart image is displayed on the left
+- **AND** "Ups and Downs of Bitcoin (Realtime)" heading is shown on the right
+- **AND** a "View Details" button is visible
 
 ### Call to Action
-```gherkin
-Scenario: CTA section displays with gradient background
-  Given the call-to-action section is visible
-  Then "Huge Transaction in last Week" heading is displayed in white
-  And a "Buy Bitcoin Now!" button is shown with white background
-  And the section has a yellow-to-orange gradient background
-```
+
+#### Scenario: CTA section displays with gradient background
+
+- **GIVEN** the call-to-action section is visible
+- **THEN** "Huge Transaction in last Week" heading is displayed in white
+- **AND** a "Buy Bitcoin Now!" button is shown with white background
+- **AND** the section has a yellow-to-orange gradient background
 
 ### Pricing
-```gherkin
-Scenario: Pricing shows 3 crypto packages
-  Given the pricing section is visible
-  Then "Purchase whatever you want" heading is displayed
-  And 3 pricing cards are shown (Ripple, Ethereum, Bitcoin)
-  And each card shows a price and "Get Started" button
 
-Scenario: Pricing card highlights on hover
-  Given the pricing section is visible
-  When the user hovers over a pricing card
-  Then the bottom section background changes to gradient
-```
+#### Scenario: Pricing shows 3 crypto packages
+
+- **GIVEN** the pricing section is visible
+- **THEN** "Purchase whatever you want" heading is displayed
+- **AND** 3 pricing cards are shown (Ripple, Ethereum, Bitcoin)
+- **AND** each card shows a price and "Get Started" button
+
+#### Scenario: Pricing card highlights on hover
+
+- **GIVEN** the pricing section is visible
+- **WHEN** the user hovers over a pricing card
+- **THEN** the bottom section background changes to gradient
 
 ### Blog
-```gherkin
-Scenario: Blog shows 3 post cards
-  Given the blog section is visible
-  Then "Latest Posts from our Blog" heading is displayed
-  And 3 blog cards are shown
-  And each card has a thumbnail, title, excerpt, and author info
-```
+
+#### Scenario: Blog shows 3 post cards
+
+- **GIVEN** the blog section is visible
+- **THEN** "Latest Posts from our Blog" heading is displayed
+- **AND** 3 blog cards are shown
+- **AND** each card has a thumbnail, title, excerpt, and author info
 
 ### Footer
-```gherkin
-Scenario: Footer shows company info and newsletter
-  Given the footer is visible
-  Then About Us description and social links are displayed
-  And Top Products navigation links are shown
-  And a newsletter email input and submit button are visible
 
-Scenario: Footer includes Component Dock attribution
-  Given the footer is visible
-  Then a link to "https://www.componentdock.com/" is present
-  And the link text mentions "Component Dock"
-```
+#### Scenario: Footer shows company info and newsletter
+
+- **GIVEN** the footer is visible
+- **THEN** About Us description and social links are displayed
+- **AND** Top Products navigation links are shown
+- **AND** a newsletter email input and submit button are visible
+
+#### Scenario: Footer includes Component Dock attribution
+
+- **GIVEN** the footer is visible
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

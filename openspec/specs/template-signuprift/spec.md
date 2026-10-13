@@ -37,92 +37,105 @@ Recreation of ColorLib **Signup Form 11**
 | Password toggle icon | `#999999` | Eye icon, gray |
 | Font family | `Roboto, sans-serif` | Clean sans-serif |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Page layout
 
-  Scenario: Renders centered card on gray background
-    Given the user visits the signup page
-    Then a white card is centered vertically and horizontally on a light gray background
-    And the card has rounded corners and a subtle shadow
+#### Scenario: Renders centered card on gray background
 
-  Scenario: Displays page title above card
-    Given the signup card is visible
-    Then a "Sign Up #01" title is displayed above the card in dark gray
+- **GIVEN** the user visits the signup page
+- **THEN** a white card is centered vertically and horizontally on a light gray background
+- **AND** the card has rounded corners and a subtle shadow
+
+#### Scenario: Displays page title above card
+
+- **GIVEN** the signup card is visible
+- **THEN** a "Sign Up #01" title is displayed above the card in dark gray
 
 ### Feature: Card header
 
-  Scenario: Displays icon and heading
-    Given the signup card is visible
-    Then a green circular icon with a white pencil/edit symbol is centered at the top
-    And a "Create Your Account" heading is displayed below the icon in dark gray
+#### Scenario: Displays icon and heading
+
+- **GIVEN** the signup card is visible
+- **THEN** a green circular icon with a white pencil/edit symbol is centered at the top
+- **AND** a "Create Your Account" heading is displayed below the icon in dark gray
 
 ### Feature: Signup form
 
-  Scenario: Full Name input field
-    Given the signup form is displayed
-    Then a "FULL NAME" label is displayed in uppercase green text
-    And a text input with border styling is present
-    And the placeholder text is "John Doe"
+#### Scenario: Full Name input field
 
-  Scenario: Email Address input field
-    Given the signup form is displayed
-    Then an "EMAIL ADDRESS" label is displayed in uppercase green text
-    And a text input with border styling is present
-    And the placeholder text is "johndoe@gmail.com"
+- **GIVEN** the signup form is displayed
+- **THEN** a "FULL NAME" label is displayed in uppercase green text
+- **AND** a text input with border styling is present
+- **AND** the placeholder text is "John Doe"
 
-  Scenario: Password input field
-    Given the signup form is displayed
-    Then a "PASSWORD" label is displayed in uppercase green text
-    And a password input with border styling is present
-    And the placeholder text is "Password"
-    And a password visibility toggle (eye icon) is present on the right
+#### Scenario: Email Address input field
 
-  Scenario: Password visibility toggle
-    Given the password field is displayed with the eye icon
-    When the user clicks the eye icon
-    Then the password field switches to type="text"
-    And when the user clicks the eye icon again
-    Then the password field switches back to type="password"
+- **GIVEN** the signup form is displayed
+- **THEN** an "EMAIL ADDRESS" label is displayed in uppercase green text
+- **AND** a text input with border styling is present
+- **AND** the placeholder text is "johndoe@gmail.com"
+
+#### Scenario: Password input field
+
+- **GIVEN** the signup form is displayed
+- **THEN** a "PASSWORD" label is displayed in uppercase green text
+- **AND** a password input with border styling is present
+- **AND** the placeholder text is "Password"
+- **AND** a password visibility toggle (eye icon) is present on the right
+
+#### Scenario: Password visibility toggle
+
+- **GIVEN** the password field is displayed with the eye icon
+- **WHEN** the user clicks the eye icon
+- **THEN** the password field switches to type="text"
+- **AND** when the user clicks the eye icon again
+- **THEN** the password field switches back to type="password"
 
 ### Feature: Terms agreement
 
-  Scenario: Terms checkbox
-    Given the signup form is displayed
-    Then a green checkbox labeled "I Agree All Statements In Terms Of Service" is present
-    And the checkbox is unchecked by default
+#### Scenario: Terms checkbox
+
+- **GIVEN** the signup form is displayed
+- **THEN** a green checkbox labeled "I Agree All Statements In Terms Of Service" is present
+- **AND** the checkbox is unchecked by default
 
 ### Feature: Submit
 
-  Scenario: Sign Up button
-    Given the signup form is displayed
-    Then a full-width "Sign Up" button is displayed
-    And the button has a mint green background
-    And the button text is white
+#### Scenario: Sign Up button
+
+- **GIVEN** the signup form is displayed
+- **THEN** a full-width "Sign Up" button is displayed
+- **AND** the button has a mint green background
+- **AND** the button text is white
 
 ### Feature: Login redirect
 
-  Scenario: Already a member link
-    Given the signup form is displayed
-    Then the text "I'm already a member!" is displayed below the button
-    And a "Sign In" link in green is present next to the text
+#### Scenario: Already a member link
+
+- **GIVEN** the signup form is displayed
+- **THEN** the text "I'm already a member!" is displayed below the button
+- **AND** a "Sign In" link in green is present next to the text
 
 ### Feature: Form validation
 
-  Scenario: Empty form submission
-    Given the user clicks "Sign Up" without filling any fields
-    Then the form does not submit
-    And each required field shows a validation error
+#### Scenario: Empty form submission
+
+- **GIVEN** the user clicks "Sign Up" without filling any fields
+- **THEN** the form does not submit
+- **AND** each required field shows a validation error
 
 ### Feature: Responsive layout
 
-  Scenario: Mobile viewport
-    Given the user views the page on a 375px wide viewport
-    Then the card fills the available width with horizontal padding
+#### Scenario: Mobile viewport
 
-  Scenario: Desktop viewport
-    Given the user views the page on a 1280px wide viewport
-    Then the card is centered with a max-width of approximately 480px
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** the card fills the available width with horizontal padding
+
+#### Scenario: Desktop viewport
+
+- **GIVEN** the user views the page on a 1280px wide viewport
+- **THEN** the card is centered with a max-width of approximately 480px
 
 ## Verification checklist
 

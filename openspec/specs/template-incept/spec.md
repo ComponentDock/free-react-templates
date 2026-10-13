@@ -60,133 +60,162 @@ contact sections.
 - Footer: dark gray (#333333), 3 columns (About Us text, Features links,
   Follow Us social icons) + newsletter signup form + copyright.
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Bar
-Scenario: Dark top bar with contact info and social links
-  Given the user loads the page
-  When the top bar renders
-  Then it should show a dark background (#000)
-  And it should display phone number and email address
-  And it should display social media icons (Facebook, Twitter, Instagram, LinkedIn)
+
+#### Scenario: Dark top bar with contact info and social links
+
+- **GIVEN** the user loads the page
+- **WHEN** the top bar renders
+- **THEN** it should show a dark background (#000)
+- **AND** it should display phone number and email address
+- **AND** it should display social media icons (Facebook, Twitter, Instagram, LinkedIn)
 
 ### Navigation
-Scenario: Sticky white navbar with logo and nav links
-  Given the user loads the page
-  When the navbar renders
-  Then it should have a white background
-  And it should show the brand "Incept." with a teal period
-  And it should show nav links: Home, Work, Services, About, Blog, Contact
-  And it should be sticky (stays fixed on scroll)
 
-Scenario: About dropdown menu
-  Given the navbar is visible
-  When the user hovers over or clicks "About"
-  Then a dropdown should appear with items: Specialties, Our Team
-  And the dropdown should have a teal (#32dbc6) top border
+#### Scenario: Sticky white navbar with logo and nav links
+
+- **GIVEN** the user loads the page
+- **WHEN** the navbar renders
+- **THEN** it should have a white background
+- **AND** it should show the brand "Incept." with a teal period
+- **AND** it should show nav links: Home, Work, Services, About, Blog, Contact
+- **AND** it should be sticky (stays fixed on scroll)
+
+#### Scenario: About dropdown menu
+
+- **GIVEN** the navbar is visible
+- **WHEN** the user hovers over or clicks "About"
+- **THEN** a dropdown should appear with items: Specialties, Our Team
+- **AND** the dropdown should have a teal (#32dbc6) top border
 
 ### Hero Section
-Scenario: Parallax hero with typed text and CTA
-  Given the user loads the page
-  When the hero section renders
-  Then it should display a background image with dark overlay
-  And it should show the headline "We Love To Build" followed by typed rotating words
-  And the rotating words should include "Web Apps", "WordPress", "Mobile Apps"
-  And it should show a "Watch Video" pill button in teal (#32dbc6)
+
+#### Scenario: Parallax hero with typed text and CTA
+
+- **GIVEN** the user loads the page
+- **WHEN** the hero section renders
+- **THEN** it should display a background image with dark overlay
+- **AND** it should show the headline "We Love To Build" followed by typed rotating words
+- **AND** the rotating words should include "Web Apps", "WordPress", "Mobile Apps"
+- **AND** it should show a "Watch Video" pill button in teal (#32dbc6)
 
 ### Services Overview
-Scenario: Three numbered service columns
-  Given the user scrolls to the services overview section
-  When the section renders
-  Then it should show 3 columns: Innovate (01.), Create (02.), Scale (03.)
-  And each column should have a teal heading, description paragraph, and checklist
-  And the checklist items should have teal (#32dbc6) checkmarks
+
+#### Scenario: Three numbered service columns
+
+- **GIVEN** the user scrolls to the services overview section
+- **WHEN** the section renders
+- **THEN** it should show 3 columns: Innovate (01.), Create (02.), Scale (03.)
+- **AND** each column should have a teal heading, description paragraph, and checklist
+- **AND** the checklist items should have teal (#32dbc6) checkmarks
 
 ### Portfolio / Works
-Scenario: 6-item portfolio grid with hover overlay
-  Given the user scrolls to the works section
-  When the section renders
-  Then it should display "Our Works" heading with subtitle
-  And it should show a 3-column grid of 6 portfolio items
-  And each item should have an image
-  And hovering an item should show a dark overlay with title and category
+
+#### Scenario: 6-item portfolio grid with hover overlay
+
+- **GIVEN** the user scrolls to the works section
+- **WHEN** the section renders
+- **THEN** it should display "Our Works" heading with subtitle
+- **AND** it should show a 3-column grid of 6 portfolio items
+- **AND** each item should have an image
+- **AND** hovering an item should show a dark overlay with title and category
 
 ### Features Section
-Scenario: Black background features with image and 4 blocks
-  Given the user scrolls to the features section
-  When the section renders
-  Then it should have a full-width black (#000) background
-  And it should show an image on the left
-  And it should show 4 feature blocks: Strategy, Web Development, Art Direction, Copywriting
-  And each block should have an icon, heading, description, and "Read More" link
+
+#### Scenario: Black background features with image and 4 blocks
+
+- **GIVEN** the user scrolls to the features section
+- **WHEN** the section renders
+- **THEN** it should have a full-width black (#000) background
+- **AND** it should show an image on the left
+- **AND** it should show 4 feature blocks: Strategy, Web Development, Art Direction, Copywriting
+- **AND** each block should have an icon, heading, description, and "Read More" link
 
 ### Testimonials
-Scenario: Testimonial carousel
-  Given the user scrolls to the testimonials section
-  When the section renders
-  Then it should display "Testimonials" heading
-  And it should show a carousel of testimonials
-  And each testimonial should have an avatar image, name, and blockquote text
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the section renders
+- **THEN** it should display "Testimonials" heading
+- **AND** it should show a carousel of testimonials
+- **AND** each testimonial should have an avatar image, name, and blockquote text
 
 ### Our Services
-Scenario: Service detail cards
-  Given the user scrolls to the our-services section
-  When the section renders
-  Then it should display "Our Services" heading
-  And it should show service cards in a grid layout
+
+#### Scenario: Service detail cards
+
+- **GIVEN** the user scrolls to the our-services section
+- **WHEN** the section renders
+- **THEN** it should display "Our Services" heading
+- **AND** it should show service cards in a grid layout
 
 ### About Us
-Scenario: About section with image and text
-  Given the user scrolls to the about section
-  When the section renders
-  Then it should display "About Us" heading
-  And it should show an image alongside descriptive text
+
+#### Scenario: About section with image and text
+
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section renders
+- **THEN** it should display "About Us" heading
+- **AND** it should show an image alongside descriptive text
 
 ### Our Team
-Scenario: Team member cards
-  Given the user scrolls to the team section
-  When the section renders
-  Then it should display "Our Team" heading
-  And it should show team member cards with photo, name, and role
-  And each card should have social media icon links
+
+#### Scenario: Team member cards
+
+- **GIVEN** the user scrolls to the team section
+- **WHEN** the section renders
+- **THEN** it should display "Our Team" heading
+- **AND** it should show team member cards with photo, name, and role
+- **AND** each card should have social media icon links
 
 ### Blog
-Scenario: Blog article cards
-  Given the user scrolls to the blog section
-  When the section renders
-  Then it should display "Blog" heading
-  And it should show 3 article cards in a row
-  And each card should have an image, title, date, category tag, and excerpt
-  And each card should have a "Continue Reading..." link
+
+#### Scenario: Blog article cards
+
+- **GIVEN** the user scrolls to the blog section
+- **WHEN** the section renders
+- **THEN** it should display "Blog" heading
+- **AND** it should show 3 article cards in a row
+- **AND** each card should have an image, title, date, category tag, and excerpt
+- **AND** each card should have a "Continue Reading..." link
 
 ### Contact Us
-Scenario: Contact form and info card
-  Given the user scrolls to the contact section
-  When the section renders
-  Then it should have a light gray background
-  And it should display "Contact Us" heading
-  And it should show a form with fields: First Name, Last Name, Email, Subject, Message
-  And the form should have a "Send Message" teal pill button
-  And it should show contact info card with Address, Phone, Email
+
+#### Scenario: Contact form and info card
+
+- **GIVEN** the user scrolls to the contact section
+- **WHEN** the section renders
+- **THEN** it should have a light gray background
+- **AND** it should display "Contact Us" heading
+- **AND** it should show a form with fields: First Name, Last Name, Email, Subject, Message
+- **AND** the form should have a "Send Message" teal pill button
+- **AND** it should show contact info card with Address, Phone, Email
 
 ### CTA Banner
-Scenario: Teal call-to-action banner
-  Given the user scrolls past the contact section
-  When the CTA banner renders
-  Then it should have a full-width teal (#32dbc6) background
-  And it should display "Let's Get Started" heading in white
+
+#### Scenario: Teal call-to-action banner
+
+- **GIVEN** the user scrolls past the contact section
+- **WHEN** the CTA banner renders
+- **THEN** it should have a full-width teal (#32dbc6) background
+- **AND** it should display "Let's Get Started" heading in white
 
 ### Footer
-Scenario: Dark footer with columns and newsletter
-  Given the user scrolls to the footer
-  When the footer renders
-  Then it should have a dark gray (#333333) background
-  And it should show About Us text column
-  And it should show Features links column (About Us, Services, Testimonials, Contact Us)
-  And it should show Follow Us social icons column
-  And it should show a newsletter signup form with email input and Send button
-  And it should show a copyright line
-  And it should include a link to Component Dock
+
+#### Scenario: Dark footer with columns and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** it should have a dark gray (#333333) background
+- **AND** it should show About Us text column
+- **AND** it should show Features links column (About Us, Services, Testimonials, Contact Us)
+- **AND** it should show Follow Us social icons column
+- **AND** it should show a newsletter signup form with email input and Send button
+- **AND** it should show a copyright line
+- **AND** it should include a link to Component Dock
 
 ## Verification Checklist
 

@@ -34,175 +34,166 @@ Recreation of ColorLib "Conbusi" consulting template as a single-page React 19 +
 | Section border bottom | `#E8E8E8` | Thin border separator |
 | Border radius (cards) | 10px | Accordion images, general cards |
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Contact Bar
 
-```gherkin
-Scenario: Top contact bar displays contact info and social links
-  Given the user loads the page
-  Then a dark navy top bar (#001D38) is visible with white text
-  And it contains "Welcome to Strategos consulting service" on the left
-  And an email address (info@docmed.com) and phone number on the right
-  And social media icon links (LinkedIn, Facebook, Google+) on the far right
-  And the top bar is hidden on mobile and tablet (< lg breakpoint)
-```
+#### Scenario: Top contact bar displays contact info and social links
+
+- **GIVEN** the user loads the page
+- **THEN** a dark navy top bar (#001D38) is visible with white text
+- **AND** it contains "Welcome to Strategos consulting service" on the left
+- **AND** an email address (info@docmed.com) and phone number on the right
+- **AND** social media icon links (LinkedIn, Facebook, Google+) on the far right
+- **AND** the top bar is hidden on mobile and tablet (< lg breakpoint)
 
 ### Navigation Bar
 
-```gherkin
-Scenario: Navbar shows brand logo and navigation links
-  Given the user loads the page
-  Then a sticky white navigation bar is visible below the top bar
-  And it contains the brand logo on the left
-  And navigation links: Home (active), Pages (with dropdown), Services, Case Study, Blog (with dropdown), Contact
-  And a "Get a Quote" CTA button on the right
+#### Scenario: Navbar shows brand logo and navigation links
 
-Scenario: Pages dropdown shows sub-items
-  Given the navbar is visible
-  When the user clicks or hovers on "Pages"
-  Then a dropdown appears with: Case Details, About, Elements
+- **GIVEN** the user loads the page
+- **THEN** a sticky white navigation bar is visible below the top bar
+- **AND** it contains the brand logo on the left
+- **AND** navigation links: Home (active), Pages (with dropdown), Services, Case Study, Blog (with dropdown), Contact
+- **AND** a "Get a Quote" CTA button on the right
 
-Scenario: Blog dropdown shows sub-items
-  Given the navbar is visible
-  When the user clicks or hovers on "Blog"
-  Then a dropdown appears with blog category links
-```
+#### Scenario: Pages dropdown shows sub-items
+
+- **GIVEN** the navbar is visible
+- **WHEN** the user clicks or hovers on "Pages"
+- **THEN** a dropdown appears with: Case Details, About, Elements
+
+#### Scenario: Blog dropdown shows sub-items
+
+- **GIVEN** the navbar is visible
+- **WHEN** the user clicks or hovers on "Blog"
+- **THEN** a dropdown appears with blog category links
 
 ### Hero Carousel
 
-```gherkin
-Scenario: Hero carousel displays with background images and CTAs
-  Given the user loads the page
-  Then a full-width hero carousel is visible
-  And it contains 2 alternating slides with background images and dark overlay
-  And each slide shows "Big Opportunity for your Business" heading
-  And each slide has an "Our Services" pill-shaped CTA button
-  And the carousel auto-rotates between slides
-  And dots/indicators are present for manual navigation
-```
+#### Scenario: Hero carousel displays with background images and CTAs
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero carousel is visible
+- **AND** it contains 2 alternating slides with background images and dark overlay
+- **AND** each slide shows "Big Opportunity for your Business" heading
+- **AND** each slide has an "Our Services" pill-shaped CTA button
+- **AND** the carousel auto-rotates between slides
+- **AND** dots/indicators are present for manual navigation
 
 ### Services Section
 
-```gherkin
-Scenario: Services section displays 6 service cards
-  Given the user scrolls past the hero carousel
-  Then a services section appears on white background
-  And a centered "What we Do?" heading is displayed
-  And 6 service cards are shown in a 3-column grid:
-    | Title                  | Description                              |
-    | Marketing & SEO Agency | Esteem spirit temper too say adieus...   |
-    | Startup Agency         | Esteem spirit temper too say adieus...   |
-    | Corporate Business     | Esteem spirit temper too say adieus...   |
-    | Finance Solution       | Esteem spirit temper too say adieus...   |
-    | Food & Restaurant      | Esteem spirit temper too say adieus...   |
-    | Travel Agency          | Esteem spirit temper too say adieus...   |
-  And each card has a centered SVG icon, title, short description, and "Learn More" link
-```
+#### Scenario: Services section displays 6 service cards
+
+- **GIVEN** the user scrolls past the hero carousel
+- **THEN** a services section appears on white background
+- **AND** a centered "What we Do?" heading is displayed
+- **AND** 6 service cards are shown in a 3-column grid:
+| Title                  | Description                              |
+| Marketing & SEO Agency | Esteem spirit temper too say adieus...   |
+| Startup Agency         | Esteem spirit temper too say adieus...   |
+| Corporate Business     | Esteem spirit temper too say adieus...   |
+| Finance Solution       | Esteem spirit temper too say adieus...   |
+| Food & Restaurant      | Esteem spirit temper too say adieus...   |
+| Travel Agency          | Esteem spirit temper too say adieus...   |
+- **AND** each card has a centered SVG icon, title, short description, and "Learn More" link
 
 ### About Info Section
 
-```gherkin
-Scenario: About section shows content and image side by side
-  Given the user scrolls past services
-  Then an about section appears on white background
-  And the left column shows:
-    | Element | Detail |
-    | Title | "Why our Consulting?" |
-    | Body | Description paragraph about consulting services |
-    | Button | "About Us" pill-shaped CTA button |
-  And the right column shows a large illustration/image
-  And the layout is 2-column (50/50 split)
-```
+#### Scenario: About section shows content and image side by side
+
+- **GIVEN** the user scrolls past services
+- **THEN** an about section appears on white background
+- **AND** the left column shows:
+| Element | Detail |
+| Title | "Why our Consulting?" |
+| Body | Description paragraph about consulting services |
+| Button | "About Us" pill-shaped CTA button |
+- **AND** the right column shows a large illustration/image
+- **AND** the layout is 2-column (50/50 split)
 
 ### Counter / Stats Section
 
-```gherkin
-Scenario: Counter section displays 4 key metrics
-  Given the user scrolls past the about section
-  Then a dark counter section is visible with background image and overlay
-  And 4 metrics are displayed in a row:
-    | Number | Label            |
-    | 200+   | Team Members     |
-    | 97%    | Business Success |
-    | 5628   | Happy Client     |
-    | 5637   | Business Done    |
-  And each metric has a small SVG icon above the number
-  And all text is white on the dark background
-```
+#### Scenario: Counter section displays 4 key metrics
+
+- **GIVEN** the user scrolls past the about section
+- **THEN** a dark counter section is visible with background image and overlay
+- **AND** 4 metrics are displayed in a row:
+| Number | Label            |
+| 200+   | Team Members     |
+| 97%    | Business Success |
+| 5628   | Happy Client     |
+| 5637   | Business Done    |
+- **AND** each metric has a small SVG icon above the number
+- **AND** all text is white on the dark background
 
 ### Case Study Section
 
-```gherkin
-Scenario: Case study section shows portfolio carousel
-  Given the user scrolls past the counter section
-  Then a case study section appears on white background
-  And a centered "Case Study" heading is displayed
-  And a carousel of 4 case study cards is shown, each with:
-    | Element | Detail |
-    | Thumbnail | Project image |
-    | Category | "Finance Solution" label |
-    | Title | "Consumer Products Consulting" (linked) |
-  And a "More Cases" outline button is centered below the carousel
-```
+#### Scenario: Case study section shows portfolio carousel
+
+- **GIVEN** the user scrolls past the counter section
+- **THEN** a case study section appears on white background
+- **AND** a centered "Case Study" heading is displayed
+- **AND** a carousel of 4 case study cards is shown, each with:
+| Element | Detail |
+| Thumbnail | Project image |
+| Category | "Finance Solution" label |
+| Title | "Consumer Products Consulting" (linked) |
+- **AND** a "More Cases" outline button is centered below the carousel
 
 ### Accordion FAQ Section
 
-```gherkin
-Scenario: FAQ section shows accordion with image
-  Given the user scrolls past case studies
-  Then a FAQ section appears on white background
-  And the left column shows a large image (rounded corners, border-radius 10px)
-  And the right column shows a "Frequently ask" heading and 3 accordion items:
-    | Question | Answer |
-    | Adieus who direct esteem It esteems luckily? | Esteem spirit temper... |
-    | Who direct esteem It esteems? | Esteem spirit temper... |
-    | Duis consectetur feugiat auctor? | Esteem spirit temper... |
-  And accordion items expand/collapse on click
-  And only one item is expanded at a time
-```
+#### Scenario: FAQ section shows accordion with image
+
+- **GIVEN** the user scrolls past case studies
+- **THEN** a FAQ section appears on white background
+- **AND** the left column shows a large image (rounded corners, border-radius 10px)
+- **AND** the right column shows a "Frequently ask" heading and 3 accordion items:
+| Question | Answer |
+| Adieus who direct esteem It esteems luckily? | Esteem spirit temper... |
+| Who direct esteem It esteems? | Esteem spirit temper... |
+| Duis consectetur feugiat auctor? | Esteem spirit temper... |
+- **AND** accordion items expand/collapse on click
+- **AND** only one item is expanded at a time
 
 ### Team Section
 
-```gherkin
-Scenario: Team section shows 3 expert team members
-  Given the user scrolls past the FAQ
-  Then a team section appears on white background
-  And a centered "Expert Team" heading is displayed
-  And 3 team member cards are shown in a row:
-    | Name           | Role         |
-    | Milani Mou     | Photographer |
-    | Jasmine Pinky  | Photographer |
-    | Piya Zosoldos  | Photographer |
-  And each card shows a team member photo, name, role, and social media icons (Facebook, Twitter, Instagram)
-```
+#### Scenario: Team section shows 3 expert team members
+
+- **GIVEN** the user scrolls past the FAQ
+- **THEN** a team section appears on white background
+- **AND** a centered "Expert Team" heading is displayed
+- **AND** 3 team member cards are shown in a row:
+| Name           | Role         |
+| Milani Mou     | Photographer |
+| Jasmine Pinky  | Photographer |
+| Piya Zosoldos  | Photographer |
+- **AND** each card shows a team member photo, name, role, and social media icons (Facebook, Twitter, Instagram)
 
 ### Information / CTA Section
 
-```gherkin
-Scenario: Information CTA section with dark overlay
-  Given the user scrolls past the team section
-  Then a full-width dark section with background image and overlay appears
-  And centered white text reads "For Any Information Call Us"
-  And a subtitle paragraph is displayed below
-  And a pill-shaped CTA button shows a phone number: +10 673 763 6786
-  And the section has generous vertical padding
-```
+#### Scenario: Information CTA section with dark overlay
+
+- **GIVEN** the user scrolls past the team section
+- **THEN** a full-width dark section with background image and overlay appears
+- **AND** centered white text reads "For Any Information Call Us"
+- **AND** a subtitle paragraph is displayed below
+- **AND** a pill-shaped CTA button shows a phone number: +10 673 763 6786
+- **AND** the section has generous vertical padding
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays 4 columns on white background
-  Given the user scrolls to the bottom
-  Then a white background footer is visible with 4 columns:
-    | Column | Content |
-    | Brand | Logo, email, phone, address, social icons (Facebook, Twitter, Instagram) |
-    | Services | Marketing & SEO, Startup, Finance solution, Food, Travel |
-    | Useful Links | About, Blog, Contact, Appointment |
-    | Subscribe | Email input field + "Subscribe" button + description text |
-  And a bottom copyright bar with "All rights reserved" text
-  And a "Component Dock" attribution link replacing the original Colorlib credit
-```
+#### Scenario: Footer displays 4 columns on white background
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a white background footer is visible with 4 columns:
+| Column | Content |
+| Brand | Logo, email, phone, address, social icons (Facebook, Twitter, Instagram) |
+| Services | Marketing & SEO, Startup, Finance solution, Food, Travel |
+| Useful Links | About, Blog, Contact, Appointment |
+| Subscribe | Email input field + "Subscribe" button + description text |
+- **AND** a bottom copyright bar with "All rights reserved" text
+- **AND** a "Component Dock" attribution link replacing the original Colorlib credit
 
 ## Verification Checklist
 

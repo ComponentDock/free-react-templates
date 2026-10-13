@@ -115,102 +115,116 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Copyright line: "Copyright © [year] All rights reserved | Made with ❤ by Component Dock"
 - Links to https://www.componentdock.com/
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: ApertureX template behaviour
+
 Feature: ApertureX — Photography Portfolio Template (Sidebar Layout)
 
-  Scenario: Sidebar renders correctly on desktop
-    Given the user is on a desktop viewport (>= 992px)
-    Then a fixed left sidebar is visible with width 250px
-    And the logo "ApertureX" is visible at the top of the sidebar
-    And navigation links "Home", "Photos", "Biography", "Blog", "Contact" are visible
-    And social icons (Facebook, Twitter, Instagram) are visible below the nav
+#### Scenario: Sidebar renders correctly on desktop
 
-  Scenario: Sidebar collapses to top bar on mobile
-    Given the user is on a mobile viewport (< 992px)
-    Then the sidebar is replaced by a fixed top bar (70px height)
-    And the logo is visible in the top bar
-    And a hamburger menu icon is visible
+- **GIVEN** the user is on a desktop viewport (>= 992px)
+- **THEN** a fixed left sidebar is visible with width 250px
+- **AND** the logo "ApertureX" is visible at the top of the sidebar
+- **AND** navigation links "Home", "Photos", "Biography", "Blog", "Contact" are visible
+- **AND** social icons (Facebook, Twitter, Instagram) are visible below the nav
 
-  Scenario: Mobile menu opens on hamburger click
-    Given the user is on a mobile viewport
-    When the user clicks the hamburger menu icon
-    Then an offcanvas menu slides in from the right
-    And navigation links are visible in the mobile menu
-    And a close button is visible
+#### Scenario: Sidebar collapses to top bar on mobile
 
-  Scenario: Mobile menu closes on close click
-    Given the mobile menu is open
-    When the user clicks the close button
-    Then the mobile menu slides out
+- **GIVEN** the user is on a mobile viewport (< 992px)
+- **THEN** the sidebar is replaced by a fixed top bar (70px height)
+- **AND** the logo is visible in the top bar
+- **AND** a hamburger menu icon is visible
 
-  Scenario: Hero section displays correctly
-    Given the user is on any viewport
-    Then a full-viewport hero background image is displayed
-    And a dark overlay (40% opacity) covers the hero
-    And the heading "Welcome" is visible and centered
-    And a "Contact Me" pill button is visible below the heading
+#### Scenario: Mobile menu opens on hamburger click
 
-  Scenario: Photo gallery displays 18 images in a grid
-    Given the user scrolls to the Photos section
-    Then 18 photo items are displayed in a 3-column grid
-    And each photo has object-fit cover with 300px height
-    And hovering over a photo shows a dark overlay with a search icon
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** an offcanvas menu slides in from the right
+- **AND** navigation links are visible in the mobile menu
+- **AND** a close button is visible
 
-  Scenario: Photo hover overlay appears
-    Given the user is on the Photos section
-    When the user hovers over a photo item
-    Then a dark overlay fades in over the image
-    And a centered search icon becomes visible
+#### Scenario: Mobile menu closes on close click
 
-  Scenario: Testimonials carousel works
-    Given the user scrolls to the Testimonial section
-    Then the heading "Testimonial" is visible
-    And a carousel of testimonial cards is displayed
-    And each card shows a circular portrait, author name, and blockquote
-    And navigation dots are visible at the bottom
-    And the user can navigate between testimonials
+- **GIVEN** the mobile menu is open
+- **WHEN** the user clicks the close button
+- **THEN** the mobile menu slides out
 
-  Scenario: Biography section displays correctly
-    Given the user scrolls to the Biography section
-    Then the section has a dark background (#1a1a1a)
-    And a magenta accent line is visible at the top-left
-    And the heading "Biography" is visible
-    And a portrait image is displayed
-    And bio text paragraphs are visible
-    And a two-column checklist with green checkmarks is visible
+#### Scenario: Hero section displays correctly
 
-  Scenario: Blog section displays 4 entries
-    Given the user scrolls to the Blog section
-    Then the heading "Blog" is visible
-    And 4 blog entries are displayed
-    And each entry has a side image, title, metadata, and description
-    And pagination links are visible at the bottom
+- **GIVEN** the user is on any viewport
+- **THEN** a full-viewport hero background image is displayed
+- **AND** a dark overlay (40% opacity) covers the hero
+- **AND** the heading "Welcome" is visible and centered
+- **AND** a "Contact Me" pill button is visible below the heading
 
-  Scenario: Contact form renders correctly
-    Given the user scrolls to the Contact section
-    Then the section has a dark background
-    And the heading "Contact" is visible
-    And form fields for First Name, Last Name, Email, Subject, and Message are visible
-    And a "Send Message" pill button is visible
-    And form inputs have bottom-border-only styling
+#### Scenario: Photo gallery displays 18 images in a grid
 
-  Scenario: Footer renders correctly
-    Given the user scrolls to the footer
-    Then a copyright line is visible
-    And the copyright mentions "Component Dock" with a link
+- **GIVEN** the user scrolls to the Photos section
+- **THEN** 18 photo items are displayed in a 3-column grid
+- **AND** each photo has object-fit cover with 300px height
+- **AND** hovering over a photo shows a dark overlay with a search icon
 
-  Scenario: Sidebar navigation links scroll to sections
-    Given the user is on a desktop viewport
-    When the user clicks a sidebar navigation link
-    Then the page scrolls to the corresponding section
+#### Scenario: Photo hover overlay appears
 
-  Scenario: Section animations trigger on scroll
-    Given the user scrolls down the page
-    Then elements animate into view using AOS (fade-up)
-    And animations have staggered delays for grouped items
-```
+- **GIVEN** the user is on the Photos section
+- **WHEN** the user hovers over a photo item
+- **THEN** a dark overlay fades in over the image
+- **AND** a centered search icon becomes visible
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the user scrolls to the Testimonial section
+- **THEN** the heading "Testimonial" is visible
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows a circular portrait, author name, and blockquote
+- **AND** navigation dots are visible at the bottom
+- **AND** the user can navigate between testimonials
+
+#### Scenario: Biography section displays correctly
+
+- **GIVEN** the user scrolls to the Biography section
+- **THEN** the section has a dark background (#1a1a1a)
+- **AND** a magenta accent line is visible at the top-left
+- **AND** the heading "Biography" is visible
+- **AND** a portrait image is displayed
+- **AND** bio text paragraphs are visible
+- **AND** a two-column checklist with green checkmarks is visible
+
+#### Scenario: Blog section displays 4 entries
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** the heading "Blog" is visible
+- **AND** 4 blog entries are displayed
+- **AND** each entry has a side image, title, metadata, and description
+- **AND** pagination links are visible at the bottom
+
+#### Scenario: Contact form renders correctly
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** the section has a dark background
+- **AND** the heading "Contact" is visible
+- **AND** form fields for First Name, Last Name, Email, Subject, and Message are visible
+- **AND** a "Send Message" pill button is visible
+- **AND** form inputs have bottom-border-only styling
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a copyright line is visible
+- **AND** the copyright mentions "Component Dock" with a link
+
+#### Scenario: Sidebar navigation links scroll to sections
+
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the user clicks a sidebar navigation link
+- **THEN** the page scrolls to the corresponding section
+
+#### Scenario: Section animations trigger on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** elements animate into view using AOS (fade-up)
+- **AND** animations have staggered delays for grouped items
 
 ## Verification Checklist
 

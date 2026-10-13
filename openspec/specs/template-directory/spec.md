@@ -54,72 +54,66 @@ The original template shows:
 6. **More Featured Destinations** — Section heading "More Featured Destinations", 3-column grid of destination cards (same style as Featured Destinations)
 7. **Footer** — Light gray (#f2f2f2) background, 4-column layout: About (text + contact info with icons), Links (nav list), Latest Blog (2 entries with dates), Newsletter (email input + subscribe button)
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar displays correctly
-```gherkin
-Given the page loads
-Then the navbar shows the "Directory" logo text
-And the navbar contains navigation links: Home, Destinations, Places, Blog, About, Contact
-And the navbar contains a search button
-```
+### Feature: Directory template behaviour
 
-### Scenario: Hero section renders
-```gherkin
-Given the page loads
-Then the hero section displays a full-width background image
-And the hero shows the headline "Find your perfect place."
-And the hero shows the subtitle "Discover & connect with great places around the world."
-And the hero contains a "Location Search" button styled with black background and square corners
-```
+#### Scenario: Navbar displays correctly
 
-### Scenario: Featured Destinations grid displays
-```gherkin
-Given the page loads
-Then the "Top Destinations" section shows a heading and subtitle text
-And 3 destination cards are displayed in a row
-And each card has a background image with a dark overlay
-And each card shows a location pin icon, place name, and "Visit This Place" link
-And cards respond to hover with visual feedback
-```
+- **GIVEN** the page loads
+- **THEN** the navbar shows the "Directory" logo text
+- **AND** the navbar contains navigation links: Home, Destinations, Places, Blog, About, Contact
+- **AND** the navbar contains a search button
 
-### Scenario: Top Destinations row displays
-```gherkin
-Given the page loads
-Then a row of 6 smaller destination thumbnails is shown
-And each thumbnail shows a location pin icon and place name
-```
+#### Scenario: Hero section renders
 
-### Scenario: Section Cover parallax displays
-```gherkin
-Given the page loads
-Then a full-width cover section appears with a background image
-And the cover section shows "Get 10% off On Your Next Travel" centered
-```
+- **GIVEN** the page loads
+- **THEN** the hero section displays a full-width background image
+- **AND** the hero shows the headline "Find your perfect place."
+- **AND** the hero shows the subtitle "Discover & connect with great places around the world."
+- **AND** the hero contains a "Location Search" button styled with black background and square corners
 
-### Scenario: More Featured Destinations grid displays
-```gherkin
-Given the page loads
-Then the "More Featured Destinations" section shows a heading
-And 3 destination cards are displayed (same style as Top Destinations)
-```
+#### Scenario: Featured Destinations grid displays
 
-### Scenario: Footer renders
-```gherkin
-Given the page loads
-Then the footer has a light gray background (#f2f2f2)
-And the footer contains 4 columns: About, Links, Latest Blog, Newsletter
-And the About column shows contact info with location, phone, and email icons
-And the footer contains a Component Dock attribution link
-```
+- **GIVEN** the page loads
+- **THEN** the "Top Destinations" section shows a heading and subtitle text
+- **AND** 3 destination cards are displayed in a row
+- **AND** each card has a background image with a dark overlay
+- **AND** each card shows a location pin icon, place name, and "Visit This Place" link
+- **AND** cards respond to hover with visual feedback
 
-### Scenario: Responsive layout
-```gherkin
-Given the page is viewed on a mobile device
-Then the navbar collapses into a hamburger menu
-And the destination grids stack to 1 column
-And the footer columns stack vertically
-```
+#### Scenario: Top Destinations row displays
+
+- **GIVEN** the page loads
+- **THEN** a row of 6 smaller destination thumbnails is shown
+- **AND** each thumbnail shows a location pin icon and place name
+
+#### Scenario: Section Cover parallax displays
+
+- **GIVEN** the page loads
+- **THEN** a full-width cover section appears with a background image
+- **AND** the cover section shows "Get 10% off On Your Next Travel" centered
+
+#### Scenario: More Featured Destinations grid displays
+
+- **GIVEN** the page loads
+- **THEN** the "More Featured Destinations" section shows a heading
+- **AND** 3 destination cards are displayed (same style as Top Destinations)
+
+#### Scenario: Footer renders
+
+- **GIVEN** the page loads
+- **THEN** the footer has a light gray background (#f2f2f2)
+- **AND** the footer contains 4 columns: About, Links, Latest Blog, Newsletter
+- **AND** the About column shows contact info with location, phone, and email icons
+- **AND** the footer contains a Component Dock attribution link
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the page is viewed on a mobile device
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the destination grids stack to 1 column
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

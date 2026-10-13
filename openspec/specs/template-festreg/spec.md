@@ -51,62 +51,57 @@ Recreation of ColorLib "Reg Form V35" (`colorlib-regform-35`) — a concert/even
 8. **Mobile (≤767px)** — input rows stack vertically (flex-direction: column), each input 100% width.
 9. **Small mobile (≤575px)** — form padding reduces to `30px 45px 30px 10px`.
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with blue background and card
-```gherkin
-Given the user opens Festreg
-Then the page background is solid blue (#4077c8)
-And a rounded card (15px radius) is centered in the viewport
-And the card displays a background image
-```
+### Feature: Festreg template behaviour
 
-### Scenario: Heading displays with underline
-```gherkin
-Given the user opens Festreg
-Then the heading "Registration Form" is visible in 35px white text
-And a white underline bar (73px wide, 3px tall) is centered below the heading
-```
+#### Scenario: Page renders with blue background and card
 
-### Scenario: Two-column input layout
-```gherkin
-Given the user opens Festreg on desktop (>767px)
-Then inputs are arranged in two columns with space-between alignment
-And the first row contains "Your Name" and "Your Email"
-And the second row contains "Your Password" and "Confirm Password"
-```
+- **GIVEN** the user opens Festreg
+- **THEN** the page background is solid blue (#4077c8)
+- **AND** a rounded card (15px radius) is centered in the viewport
+- **AND** the card displays a background image
 
-### Scenario: Input styling and focus state
-```gherkin
-Given the user views the registration form
-Then each input has a pill shape (border-radius 27.5px) with semi-transparent white background
-And the placeholder text is light gray (#e5e5e5)
-When the user focuses an input
-Then the border color changes from light gray (#ccc) to darker gray (#999)
-```
+#### Scenario: Heading displays with underline
 
-### Scenario: Submit button hover
-```gherkin
-Given the registration form is visible
-When the user hovers over the "Register" button
-Then the button background changes from coral red (#f25d5d) to darker red (#d95252)
-And the button retains its pill shape (25px radius) and drop shadow
-```
+- **GIVEN** the user opens Festreg
+- **THEN** the heading "Registration Form" is visible in 35px white text
+- **AND** a white underline bar (73px wide, 3px tall) is centered below the heading
 
-### Scenario: Mobile responsive layout
-```gherkin
-Given the user opens Festreg on mobile (≤767px)
-Then the input rows stack vertically instead of side-by-side
-And each input stretches to full width
-And on very small screens (≤575px) the form padding reduces
-```
+#### Scenario: Two-column input layout
 
-### Scenario: Form field presence
-```gherkin
-Given the user opens Festreg
-Then four input fields are visible: Your Name, Your Email, Your Password, Confirm Password
-And a "Register" submit button is visible below the inputs
-```
+- **GIVEN** the user opens Festreg on desktop (>767px)
+- **THEN** inputs are arranged in two columns with space-between alignment
+- **AND** the first row contains "Your Name" and "Your Email"
+- **AND** the second row contains "Your Password" and "Confirm Password"
+
+#### Scenario: Input styling and focus state
+
+- **GIVEN** the user views the registration form
+- **THEN** each input has a pill shape (border-radius 27.5px) with semi-transparent white background
+- **AND** the placeholder text is light gray (#e5e5e5)
+- **WHEN** the user focuses an input
+- **THEN** the border color changes from light gray (#ccc) to darker gray (#999)
+
+#### Scenario: Submit button hover
+
+- **GIVEN** the registration form is visible
+- **WHEN** the user hovers over the "Register" button
+- **THEN** the button background changes from coral red (#f25d5d) to darker red (#d95252)
+- **AND** the button retains its pill shape (25px radius) and drop shadow
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the user opens Festreg on mobile (≤767px)
+- **THEN** the input rows stack vertically instead of side-by-side
+- **AND** each input stretches to full width
+- **AND** on very small screens (≤575px) the form padding reduces
+
+#### Scenario: Form field presence
+
+- **GIVEN** the user opens Festreg
+- **THEN** four input fields are visible: Your Name, Your Email, Your Password, Confirm Password
+- **AND** a "Register" submit button is visible below the inputs
 
 ## Verification checklist
 

@@ -65,207 +65,215 @@ with contact info, mailchimp subscribe, and social links.
 --font-family-base: "Poppins", sans-serif;
 ```
 
-## Gherkin Requirements
+## Requirements
 
 ### Header / Navbar
-```gherkin
+
 Feature: Fitly Navbar
 
-  Scenario: Sticky header with logo and navigation
-    Given the user is on the Fitly homepage
-    Then the header displays the Fitly logo on the left
-    And the navigation links are: Home, About, Classes, Blog, Gallery, Contacts
-    And a "Sign Up Today" call-to-action button is visible on the right
-    And the header background is the brand accent color #f15d44
+#### Scenario: Sticky header with logo and navigation
 
-  Scenario: Navigation links are clickable
-    Given the user is on the Fitly homepage
-    When the user clicks a navigation link
-    Then the page scrolls to the corresponding section
-```
+- **GIVEN** the user is on the Fitly homepage
+- **THEN** the header displays the Fitly logo on the left
+- **AND** the navigation links are: Home, About, Classes, Blog, Gallery, Contacts
+- **AND** a "Sign Up Today" call-to-action button is visible on the right
+- **AND** the header background is the brand accent color #f15d44
+
+#### Scenario: Navigation links are clickable
+
+- **GIVEN** the user is on the Fitly homepage
+- **WHEN** the user clicks a navigation link
+- **THEN** the page scrolls to the corresponding section
 
 ### Hero Section
-```gherkin
+
 Feature: Fitly Hero
 
-  Scenario: Hero displays with background image and BMI CTA
-    Given the user is on the Fitly homepage
-    Then the hero section shows a full-width background image
-    And the label "FITNESS ELEMENTS" is displayed
-    And the heading "BMI CALCULATOR" is displayed
-    And descriptive text about the BMI calculator is shown
-    And a "Read More" primary button is visible
+#### Scenario: Hero displays with background image and BMI CTA
 
-  Scenario: Hero text is left-aligned within container
-    Given the user is on the Fitly homepage
-    Then the hero content occupies the left 8 columns of a 12-column grid
-```
+- **GIVEN** the user is on the Fitly homepage
+- **THEN** the hero section shows a full-width background image
+- **AND** the label "FITNESS ELEMENTS" is displayed
+- **AND** the heading "BMI CALCULATOR" is displayed
+- **AND** descriptive text about the BMI calculator is shown
+- **AND** a "Read More" primary button is visible
+
+#### Scenario: Hero text is left-aligned within container
+
+- **GIVEN** the user is on the Fitly homepage
+- **THEN** the hero content occupies the left 8 columns of a 12-column grid
 
 ### About Section
-```gherkin
+
 Feature: Fitly About
 
-  Scenario: About section shows story with image and play button
-    Given the user scrolls to the About section
-    Then a two-column layout is displayed
-    And the left column shows an image with a play button overlay (video popup)
-    And the right column shows heading "Story About Us"
-    And two paragraphs of descriptive text are displayed
-    And a "Read More" primary button is visible
+#### Scenario: About section shows story with image and play button
 
-  Scenario: Play button triggers video popup
-    Given the user is on the About section
-    When the user clicks the play button overlay
-    Then a video popup opens
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows an image with a play button overlay (video popup)
+- **AND** the right column shows heading "Story About Us"
+- **AND** two paragraphs of descriptive text are displayed
+- **AND** a "Read More" primary button is visible
+
+#### Scenario: Play button triggers video popup
+
+- **GIVEN** the user is on the About section
+- **WHEN** the user clicks the play button overlay
+- **THEN** a video popup opens
 
 ### Services Section
-```gherkin
+
 Feature: Fitly Services
 
-  Scenario: Services section displays 2×2 grid with large image
-    Given the user scrolls to the Services section
-    Then a split layout is shown: large image on left, 4 service cards on right
-    And the 4 cards are arranged in a 2×2 grid
-    And each card has an icon, title, and description
-    And the service titles are: Strategies, Yoga, Workout, Weight Loss
-    And the left column background is dark (#141414 / #1e1e1e)
-```
+#### Scenario: Services section displays 2×2 grid with large image
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a split layout is shown: large image on left, 4 service cards on right
+- **AND** the 4 cards are arranged in a 2×2 grid
+- **AND** each card has an icon, title, and description
+- **AND** the service titles are: Strategies, Yoga, Workout, Weight Loss
+- **AND** the left column background is dark (#141414 / #1e1e1e)
 
 ### Classes Section
-```gherkin
+
 Feature: Fitly Classes
 
-  Scenario: Classes section shows carousel of class cards
-    Given the user scrolls to the Classes section
-    Then the heading "UNLIMITED CLASSES" is displayed
-    And a carousel of class cards is shown
-    And each card has a background image, class name, and trainer name with icon
-    And the classes include: Yoga, Running, Personal Training, Karate, Dance, Weight Loss
+#### Scenario: Classes section shows carousel of class cards
 
-  Scenario: Class cards have dark overlay with white text
-    Given a class card is visible
-    Then the card title and trainer info appear in white text over a dark overlay
-```
+- **GIVEN** the user scrolls to the Classes section
+- **THEN** the heading "UNLIMITED CLASSES" is displayed
+- **AND** a carousel of class cards is shown
+- **AND** each card has a background image, class name, and trainer name with icon
+- **AND** the classes include: Yoga, Running, Personal Training, Karate, Dance, Weight Loss
+
+#### Scenario: Class cards have dark overlay with white text
+
+- **GIVEN** a class card is visible
+- **THEN** the card title and trainer info appear in white text over a dark overlay
 
 ### Trainer Section
-```gherkin
+
 Feature: Fitly Trainers
 
-  Scenario: Trainer section shows 3 trainer cards
-    Given the user scrolls to the Trainer section
-    Then the heading "EXPERT TRAINERS" is displayed
-    And 3 trainer cards are shown in a row
-    And each card has a photo, name, role, description, and social media icons
-    And the social icons include Facebook, Instagram, Twitter, Pinterest
+#### Scenario: Trainer section shows 3 trainer cards
 
-  Scenario: Trainer section has light gray background
-    Given the user is on the Trainer section
-    Then the section background is #f5f5f5
-```
+- **GIVEN** the user scrolls to the Trainer section
+- **THEN** the heading "EXPERT TRAINERS" is displayed
+- **AND** 3 trainer cards are shown in a row
+- **AND** each card has a photo, name, role, description, and social media icons
+- **AND** the social icons include Facebook, Instagram, Twitter, Pinterest
+
+#### Scenario: Trainer section has light gray background
+
+- **GIVEN** the user is on the Trainer section
+- **THEN** the section background is #f5f5f5
 
 ### Testimonial Section
-```gherkin
+
 Feature: Fitly Testimonials
 
-  Scenario: Testimonials carousel shows quotes
-    Given the user scrolls to the Testimonial section
-    Then the heading "success stories" is displayed
-    And a carousel of testimonial items is shown
-    And each item has a quote text, avatar image, author name, and role
-    And navigation dots are displayed below the carousel
-```
+#### Scenario: Testimonials carousel shows quotes
+
+- **GIVEN** the user scrolls to the Testimonial section
+- **THEN** the heading "success stories" is displayed
+- **AND** a carousel of testimonial items is shown
+- **AND** each item has a quote text, avatar image, author name, and role
+- **AND** navigation dots are displayed below the carousel
 
 ### Banner Section
-```gherkin
+
 Feature: Fitly CTA Banner
 
-  Scenario: Banner shows CTA with parallax background
-    Given the user scrolls to the Banner section
-    Then a full-width section with a background image is displayed
-    And heading "Get training today" is shown
-    And descriptive text is displayed
-    And a "Contact Now" primary button is visible
-    And a person image is shown on the right side
-```
+#### Scenario: Banner shows CTA with parallax background
+
+- **GIVEN** the user scrolls to the Banner section
+- **THEN** a full-width section with a background image is displayed
+- **AND** heading "Get training today" is shown
+- **AND** descriptive text is displayed
+- **AND** a "Contact Now" primary button is visible
+- **AND** a person image is shown on the right side
 
 ### Membership Section
-```gherkin
+
 Feature: Fitly Membership Plans
 
-  Scenario: Membership section shows 3 pricing tiers
-    Given the user scrolls to the Membership section
-    Then the heading "MEMBERSHIP PLANS" is displayed
-    And 3 pricing cards are shown: Basic ($17/mo), Standard ($57/mo), Premium ($98/mo)
-    And each card has a plan name, price, feature list, and "Start Now" button
-    And each card has a gradient top border accent (red→orange)
-    And the feature rows show: Duration, Personal trainer, Amount of people, Number of visits
+#### Scenario: Membership section shows 3 pricing tiers
 
-  Scenario: Membership buttons use primary gradient style
-    Given a membership card is visible
-    Then the "Start Now" button has the red→orange gradient
-```
+- **GIVEN** the user scrolls to the Membership section
+- **THEN** the heading "MEMBERSHIP PLANS" is displayed
+- **AND** 3 pricing cards are shown: Basic ($17/mo), Standard ($57/mo), Premium ($98/mo)
+- **AND** each card has a plan name, price, feature list, and "Start Now" button
+- **AND** each card has a gradient top border accent (red→orange)
+- **AND** the feature rows show: Duration, Personal trainer, Amount of people, Number of visits
+
+#### Scenario: Membership buttons use primary gradient style
+
+- **GIVEN** a membership card is visible
+- **THEN** the "Start Now" button has the red→orange gradient
 
 ### Register Section
-```gherkin
+
 Feature: Fitly Registration Form
 
-  Scenario: Registration form with 4 fields
-    Given the user scrolls to the Register section
-    Then the heading "Register Now" is displayed
-    And subheading "The First 7 Day Trial Is Completely Free With The Teacher" is shown
-    And a form with 4 fields is displayed: First Name, Email, Last Name, Mobile No
-    And the fields are arranged in a 2×2 grid
-    And a "Get Started" submit button is visible
-    And an image is shown on the right column
+#### Scenario: Registration form with 4 fields
 
-  Scenario: Form fields have labels above inputs
-    Given the registration form is visible
-    Then each input has a label above it
-    And inputs have a light border (#ebebeb)
-```
+- **GIVEN** the user scrolls to the Register section
+- **THEN** the heading "Register Now" is displayed
+- **AND** subheading "The First 7 Day Trial Is Completely Free With The Teacher" is shown
+- **AND** a form with 4 fields is displayed: First Name, Email, Last Name, Mobile No
+- **AND** the fields are arranged in a 2×2 grid
+- **AND** a "Get Started" submit button is visible
+- **AND** an image is shown on the right column
+
+#### Scenario: Form fields have labels above inputs
+
+- **GIVEN** the registration form is visible
+- **THEN** each input has a label above it
+- **AND** inputs have a light border (#ebebeb)
 
 ### Latest Blog Section
-```gherkin
+
 Feature: Fitly Blog
 
-  Scenario: Blog section shows 3 post cards
-    Given the user scrolls to the Latest Blog section
-    Then the heading "Latest Blog" is displayed
-    And 3 blog post cards are shown in a row
-    And each card has a featured image, date tag, category tag, and post title
-    And the category tags are: #Gym, #Sport, #Body
-```
+#### Scenario: Blog section shows 3 post cards
+
+- **GIVEN** the user scrolls to the Latest Blog section
+- **THEN** the heading "Latest Blog" is displayed
+- **AND** 3 blog post cards are shown in a row
+- **AND** each card has a featured image, date tag, category tag, and post title
+- **AND** the category tags are: #Gym, #Sport, #Body
 
 ### Footer Banner Section
-```gherkin
+
 Feature: Fitly Footer Banners
 
-  Scenario: Two-column footer banners with background images
-    Given the user scrolls to the Footer Banner section
-    Then two side-by-side banner cards are displayed
-    And the left card says "New member" / "7 days for free" with description and CTA
-    And the right card says "contact us" / "09 746 204" with description and CTA
-    And both have background images with dark overlays
-```
+#### Scenario: Two-column footer banners with background images
+
+- **GIVEN** the user scrolls to the Footer Banner section
+- **THEN** two side-by-side banner cards are displayed
+- **AND** the left card says "New member" / "7 days for free" with description and CTA
+- **AND** the right card says "contact us" / "09 746 204" with description and CTA
+- **AND** both have background images with dark overlays
 
 ### Footer
-```gherkin
+
 Feature: Fitly Footer
 
-  Scenario: Footer displays contact info and social links
-    Given the user scrolls to the Footer
-    Then three contact columns are shown: Phone, Address, Email
-    And a mailchimp subscribe section with background image is displayed
-    And the subscribe section has heading, description, email input, and send button
-    And footer social links (Facebook, Twitter, Instagram, Dribbble) are shown
-    And a copyright line is displayed
+#### Scenario: Footer displays contact info and social links
 
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the Footer
-    Then a link to https://www.componentdock.com/ is present
-    And the link text references "Component Dock"
-```
+- **GIVEN** the user scrolls to the Footer
+- **THEN** three contact columns are shown: Phone, Address, Email
+- **AND** a mailchimp subscribe section with background image is displayed
+- **AND** the subscribe section has heading, description, email input, and send button
+- **AND** footer social links (Facebook, Twitter, Instagram, Dribbble) are shown
+- **AND** a copyright line is displayed
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the Footer
+- **THEN** a link to https://www.componentdock.com/ is present
+- **AND** the link text references "Component Dock"
 
 ## Verification Checklist
 

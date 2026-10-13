@@ -30,128 +30,143 @@ Recreation of ColorLib **University** template.
 | Counter number   | `40px, color: #11cbd7`               | `.block-18 .text strong`      |
 | Counter label    | `uppercase, letter-spacing: .1em, color: #ccc` | `.block-18 .text span` |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-Scenario: Navbar renders with brand and navigation links
-  Given the user loads the page
-  Then a sticky white navbar is visible at the top
-  And the brand text "Campuspoint" is uppercase with letter-spacing 0.2em
-  And nav links include: Home, Courses (dropdown), Categories (dropdown), Blog, About, Contact
-  And a "Login / Register" link group is right-aligned
+#### Scenario: Navbar renders with brand and navigation links
 
-Scenario: Navbar collapses on mobile
-  Given the user resizes to mobile viewport
-  Then a hamburger toggle button appears
-  And clicking it expands the nav links vertically
+- **GIVEN** the user loads the page
+- **THEN** a sticky white navbar is visible at the top
+- **AND** the brand text "Campuspoint" is uppercase with letter-spacing 0.2em
+- **AND** nav links include: Home, Courses (dropdown), Categories (dropdown), Blog, About, Contact
+- **AND** a "Login / Register" link group is right-aligned
 
-Scenario: Dropdown menus open on click
-  Given the user clicks "Courses" or "Categories"
-  Then a dropdown menu appears with course/category options
-  And each item has hover color #11cbd7
+#### Scenario: Navbar collapses on mobile
+
+- **GIVEN** the user resizes to mobile viewport
+- **THEN** a hamburger toggle button appears
+- **AND** clicking it expands the nav links vertically
+
+#### Scenario: Dropdown menus open on click
+
+- **GIVEN** the user clicks "Courses" or "Categories"
+- **THEN** a dropdown menu appears with course/category options
+- **AND** each item has hover color #11cbd7
 
 ### Hero section
 
-Scenario: Hero displays full-screen with background image and overlay
-  Given the user loads the page
-  Then a full-viewport hero section covers the screen
-  And a background image fills the section
-  And a semi-transparent dark overlay sits on top
+#### Scenario: Hero displays full-screen with background image and overlay
 
-Scenario: Hero shows search form with filters
-  Given the user sees the hero
-  Then a heading "Find Online Courses That Suits You" is centered
-  And a search form contains: keyword text input, category dropdown, difficulty dropdown
-  And a "Search" button with brand color background is right of the form
+- **GIVEN** the user loads the page
+- **THEN** a full-viewport hero section covers the screen
+- **AND** a background image fills the section
+- **AND** a semi-transparent dark overlay sits on top
 
-Scenario: Hero shows CTA button
-  Given the user sees the hero
-  Then a "Register Now" button with teal background and white text is centered below the form
-  And hover removes background, shows white border
+#### Scenario: Hero shows search form with filters
+
+- **GIVEN** the user sees the hero
+- **THEN** a heading "Find Online Courses That Suits You" is centered
+- **AND** a search form contains: keyword text input, category dropdown, difficulty dropdown
+- **AND** a "Search" button with brand color background is right of the form
+
+#### Scenario: Hero shows CTA button
+
+- **GIVEN** the user sees the hero
+- **THEN** a "Register Now" button with teal background and white text is centered below the form
+- **AND** hover removes background, shows white border
 
 ### Video/Content section
 
-Scenario: Two-column layout with video and text
-  Given the user scrolls to the content section
-  Then a left column shows a video player thumbnail with a circular play button (#11cbd7)
-  And a right column shows heading "Create cool websites" in #11cbd7
-  And descriptive text below the heading
-  And an "Enroll Now" button with teal background
+#### Scenario: Two-column layout with video and text
+
+- **GIVEN** the user scrolls to the content section
+- **THEN** a left column shows a video player thumbnail with a circular play button (#11cbd7)
+- **AND** a right column shows heading "Create cool websites" in #11cbd7
+- **AND** descriptive text below the heading
+- **AND** an "Enroll Now" button with teal background
 
 ### Features section
 
-Scenario: Four feature stats displayed in a row
-  Given the user scrolls to the features section
-  Then 4 stat items are displayed in a grid row
-  And each has an icon, a large number, and a label
-  And numbers are: 12921 Students, 51 Schools, 3902 Books, 1921 Graduates
-  And number color is #11cbd7, font-size 40px
+#### Scenario: Four feature stats displayed in a row
+
+- **GIVEN** the user scrolls to the features section
+- **THEN** 4 stat items are displayed in a grid row
+- **AND** each has an icon, a large number, and a label
+- **AND** numbers are: 12921 Students, 51 Schools, 3902 Books, 1921 Graduates
+- **AND** number color is #11cbd7, font-size 40px
 
 ### Counter/Image section
 
-Scenario: Image and counter stats on light background
-  Given the user scrolls to the counter section
-  Then a light gray background section is visible
-  And left column shows an image
-  And right column shows heading "Education is Life"
-  And descriptive paragraph text
-  And 4 counter stats in 2x2 grid (Students, Schools, Books, Graduates)
+#### Scenario: Image and counter stats on light background
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** a light gray background section is visible
+- **AND** left column shows an image
+- **AND** right column shows heading "Education is Life"
+- **AND** descriptive paragraph text
+- **AND** 4 counter stats in 2x2 grid (Students, Schools, Books, Graduates)
 
 ### Popular Courses
 
-Scenario: Course carousel with cards
-  Given the user scrolls to the courses section
-  Then a heading "Popular Courses" with teal color is centered
-  And a carousel of course cards is shown
-  And each card has: image, title, description, enrollment count, price
-  And cards have white background with subtle shadow
-  And cards lift on hover with increased shadow
-  And "Free" price badge has teal background with white text
+#### Scenario: Course carousel with cards
+
+- **GIVEN** the user scrolls to the courses section
+- **THEN** a heading "Popular Courses" with teal color is centered
+- **AND** a carousel of course cards is shown
+- **AND** each card has: image, title, description, enrollment count, price
+- **AND** cards have white background with subtle shadow
+- **AND** cards lift on hover with increased shadow
+- **AND** "Free" price badge has teal background with white text
 
 ### Teachers section
 
-Scenario: Teacher flip cards
-  Given the user scrolls to the teachers section
-  Then a heading "Teachers" is centered
-  And 3 teacher cards are shown in a row
-  And front side shows: background photo, teacher name, role
-  And hovering flips the card to show a back side with a quote and author info
-  And flip animation uses rotateY 3D transform
+#### Scenario: Teacher flip cards
+
+- **GIVEN** the user scrolls to the teachers section
+- **THEN** a heading "Teachers" is centered
+- **AND** 3 teacher cards are shown in a row
+- **AND** front side shows: background photo, teacher name, role
+- **AND** hovering flips the card to show a back side with a quote and author info
+- **AND** flip animation uses rotateY 3D transform
 
 ### Blog section
 
-Scenario: Blog posts on light background
-  Given the user scrolls to the blog section
-  Then a heading "Blog" with teal color is centered
-  And left column shows one large featured post with image, title, date, author, comments
-  And right column shows 4 smaller posts with thumbnail, title, metadata
-  And post titles link on hover to brand color
+#### Scenario: Blog posts on light background
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a heading "Blog" with teal color is centered
+- **AND** left column shows one large featured post with image, title, date, author, comments
+- **AND** right column shows 4 smaller posts with thumbnail, title, metadata
+- **AND** post titles link on hover to brand color
 
 ### Newsletter section
 
-Scenario: Newsletter signup with teal background
-  Given the user scrolls to the newsletter section
-  Then a full-width teal (#11cbd7) background section appears
-  And heading "Create cool websites" in white
-  And descriptive text in white/translucent
-  And an email input with white background
-  And a "Subscribe" button positioned inside the input
+#### Scenario: Newsletter signup with teal background
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** a full-width teal (#11cbd7) background section appears
+- **AND** heading "Create cool websites" in white
+- **AND** descriptive text in white/translucent
+- **AND** an email input with white background
+- **AND** a "Subscribe" button positioned inside the input
 
 ### Footer
 
-Scenario: Four-column footer
-  Given the user scrolls to the footer
-  Then column 1 shows site name and description
-  And column 2 shows "Quick Links" in two sub-columns
-  And column 3 shows recent "Blog" posts with metadata
-  And column 4 shows "Contact Information" with address, phone, email, hours
+#### Scenario: Four-column footer
 
-Scenario: Footer bottom bar
-  Given the user sees the footer bottom
-  Then a copyright line is left-aligned
-  And social media icon links (Facebook, Twitter, LinkedIn, Instagram) are right-aligned
-  And a "Component Dock" attribution link replaces Colorlib branding
+- **GIVEN** the user scrolls to the footer
+- **THEN** column 1 shows site name and description
+- **AND** column 2 shows "Quick Links" in two sub-columns
+- **AND** column 3 shows recent "Blog" posts with metadata
+- **AND** column 4 shows "Contact Information" with address, phone, email, hours
+
+#### Scenario: Footer bottom bar
+
+- **GIVEN** the user sees the footer bottom
+- **THEN** a copyright line is left-aligned
+- **AND** social media icon links (Facebook, Twitter, LinkedIn, Instagram) are right-aligned
+- **AND** a "Component Dock" attribution link replaces Colorlib branding
 
 ## Verification checklist
 

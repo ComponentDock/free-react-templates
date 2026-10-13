@@ -54,11 +54,12 @@ Extracted from screenshot visual analysis:
 - Minimal footer with copyright + social icons
 - The "SHOW THUMBNAILS" feature likely expands a grid of project thumbnails below the slider
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-Scenario: Clean white navbar with logo and nav links
+#### Scenario: Clean white navbar with logo and nav links
+
   - The navbar is positioned at the top with a white background
   - Logo "Foto." on the left — bold dark text with a teal/green dot accent
   - Navigation links: Home (active, highlighted in teal/green), Portfolio, Blog, About, Contact
@@ -68,7 +69,8 @@ Scenario: Clean white navbar with logo and nav links
 
 ### Hero Slider
 
-Scenario: Fullscreen image slider with overlay text
+#### Scenario: Fullscreen image slider with overlay text
+
   - The hero section is a large image slider (near full viewport height)
   - Each slide has a full-bleed background image (landscape photography)
   - Each slide has a centered large white heading (e.g. "Red kayaks")
@@ -80,7 +82,8 @@ Scenario: Fullscreen image slider with overlay text
 
 ### Thumbnail Gallery View
 
-Scenario: Toggle thumbnail grid below slider
+#### Scenario: Toggle thumbnail grid below slider
+
   - "SHOW THUMBNAILS" text link in the footer area, underlined, uppercase
   - Clicking it reveals/toggles a grid of project thumbnails
   - Thumbnails are arranged in a responsive grid layout
@@ -88,7 +91,8 @@ Scenario: Toggle thumbnail grid below slider
 
 ### Footer
 
-Scenario: Minimal footer with copyright and social links
+#### Scenario: Minimal footer with copyright and social links
+
   - Copyright text on the left: "Copyright ©[year] All rights reserved | This template is made with ♥ by [attribution]"
   - "SHOW THUMBNAILS" toggle link in the center
   - Social media icons on the right: Facebook, Twitter, Instagram, Behance, Pinterest

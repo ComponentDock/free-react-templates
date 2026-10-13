@@ -13,7 +13,7 @@ Recreation of ColorLib **Accordion 12** (`https://colorlib.com/wp/template/accor
 - **Font Family:** `"Roboto", sans-serif`
 - **Border Radius:** `4px` (`rounded`)
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Accordion Panels
 
@@ -21,24 +21,24 @@ As a visitor, I want to expand and collapse accordion items so that I can read d
 
 #### Scenario: Default initial state
 
-- Given the accordion page is loaded
-- When the user views the accordion items
-- Then the first accordion item ("How to download and register?") is expanded by default with the active green background (`#72c02c`), white text, and a chevron-up icon
-- And the other accordion items are collapsed with default border styling (`#efefef`), gray text, and a chevron-down icon.
+- **GIVEN** the accordion page is loaded
+- **WHEN** the user views the accordion items
+- **THEN** the first accordion item ("How to download and register?") is expanded by default with the active green background (`#72c02c`), white text, and a chevron-up icon
+- **AND** the other accordion items are collapsed with default border styling (`#efefef`), gray text, and a chevron-down icon
 
 #### Scenario: Expanding a collapsed item
 
-- Given the user is viewing the accordion component
-- When the user clicks on a collapsed accordion item header ("How to create your paypal account?")
-- Then that item expands to reveal its content body
-- And its header transitions to the active green background (`#72c02c`) with white text and chevron-up icon
-- And previously expanded items collapse.
+- **GIVEN** the user is viewing the accordion component
+- **WHEN** the user clicks on a collapsed accordion item header ("How to create your paypal account?")
+- **THEN** that item expands to reveal its content body
+- **AND** its header transitions to the active green background (`#72c02c`) with white text and chevron-up icon
+- **AND** previously expanded items collapse
 
 #### Scenario: Component Footer attribution
 
-- Given the accordion page is rendered
-- When the user scrolls to the bottom of the page
-- Then a footer is visible containing copyright information and a link to `https://www.componentdock.com/` ("Component Dock").
+- **GIVEN** the accordion page is rendered
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** a footer is visible containing copyright information and a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

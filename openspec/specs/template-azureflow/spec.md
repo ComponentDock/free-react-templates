@@ -128,123 +128,101 @@ Extracted from the live preview CSS (`css/main.css`).
 | Contact       | inherits page bg                                   |
 | Footer        | `#000` (black)                                     |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with transparent navbar over fullscreen hero
+### Feature: Azureflow template behaviour
 
-```gherkin
-Given the user navigates to the Azureflow page
-Then a transparent header is visible at the top
-And the header contains a logo and navigation links (Home, Generic, Elements)
-And a fullscreen hero banner is displayed below the header
-And the hero has a background image with a dark overlay
-```
+#### Scenario: Page renders with transparent navbar over fullscreen hero
 
-### Scenario: Hero displays brand heading with gradient style
+- **GIVEN** the user navigates to the Azureflow page
+- **THEN** a transparent header is visible at the top
+- **AND** the header contains a logo and navigation links (Home, Generic, Elements)
+- **AND** a fullscreen hero banner is displayed below the header
+- **AND** the hero has a background image with a dark overlay
 
-```gherkin
-Given the user is on the Azureflow page
-Then the hero contains "Introducing" in small uppercase white text
-And the hero contains "azureflow" in large white text with letter-spacing
-And the heading has a text-shadow effect
-```
+#### Scenario: Hero displays brand heading with gradient style
 
-### Scenario: Features section displays three numbered items
+- **GIVEN** the user is on the Azureflow page
+- **THEN** the hero contains "Introducing" in small uppercase white text
+- **AND** the hero contains "azureflow" in large white text with letter-spacing
+- **AND** the heading has a text-shadow effect
 
-```gherkin
-Given the user scrolls to the features section
-Then three feature cards are displayed in a row
-And each card has a large gradient-colored number (01, 02, 03)
-And each card has an uppercase title and description paragraph
-And the numbers have a gradient text effect (#3c50ca to #77d5f7)
-```
+#### Scenario: Features section displays three numbered items
 
-### Scenario: Video section shows embedded video with play button
+- **GIVEN** the user scrolls to the features section
+- **THEN** three feature cards are displayed in a row
+- **AND** each card has a large gradient-colored number (01, 02, 03)
+- **AND** each card has an uppercase title and description paragraph
+- **AND** the numbers have a gradient text effect (#3c50ca to #77d5f7)
 
-```gherkin
-Given the user scrolls to the video section
-Then a video thumbnail is displayed with a dark overlay
-And a play button icon is centered on the thumbnail
-And the video frame has a light border (20px solid #f3f3f3)
-And text content reads "Great Modern Design / Build with usability in mind"
-```
+#### Scenario: Video section shows embedded video with play button
 
-### Scenario: Services section has split black/white layout
+- **GIVEN** the user scrolls to the video section
+- **THEN** a video thumbnail is displayed with a dark overlay
+- **AND** a play button icon is centered on the thumbnail
+- **AND** the video frame has a light border (20px solid #f3f3f3)
+- **AND** text content reads "Great Modern Design / Build with usability in mind"
 
-```gherkin
-Given the user scrolls to the services section
-Then the left half has a black background with "Services We Offered" heading
-And the left half has a description paragraph in white text
-And the right half has a white background with 4 service cards
-And each service card has an icon, title, and description
-And service cards have light borders
-```
+#### Scenario: Services section has split black/white layout
 
-### Scenario: Latest works section displays portfolio slider
+- **GIVEN** the user scrolls to the services section
+- **THEN** the left half has a black background with "Services We Offered" heading
+- **AND** the left half has a description paragraph in white text
+- **AND** the right half has a white background with 4 service cards
+- **AND** each service card has an icon, title, and description
+- **AND** service cards have light borders
 
-```gherkin
-Given the user scrolls to the latest works section
-Then a heading "Some Of our Latest Works" is displayed
-And an image carousel/slider shows portfolio images
-And the active image has a white border
-```
+#### Scenario: Latest works section displays portfolio slider
 
-### Scenario: Newsletter section has subscription form
+- **GIVEN** the user scrolls to the latest works section
+- **THEN** a heading "Some Of our Latest Works" is displayed
+- **AND** an image carousel/slider shows portfolio images
+- **AND** the active image has a white border
 
-```gherkin
-Given the user scrolls to the newsletter section
-Then a heading "Subscribe for our Newsletter" is displayed
-And an email input field with rounded shape is shown
-And a "Get Started" gradient button is positioned to the right
-```
+#### Scenario: Newsletter section has subscription form
 
-### Scenario: Contact section has form with image
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** a heading "Subscribe for our Newsletter" is displayed
+- **AND** an email input field with rounded shape is shown
+- **AND** a "Get Started" gradient button is positioned to the right
 
-```gherkin
-Given the user scrolls to the contact section
-Then a contact image is displayed on the left
-And a contact form is displayed on the right
-And the form has name, email, and message fields
-And a "Send Message" gradient button is below the form
-```
+#### Scenario: Contact section has form with image
 
-### Scenario: Footer displays copyright and social links
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a contact image is displayed on the left
+- **AND** a contact form is displayed on the right
+- **AND** the form has name, email, and message fields
+- **AND** a "Send Message" gradient button is below the form
 
-```gherkin
-Given the user scrolls to the footer
-Then the footer has a black background
-And copyright text is displayed
-And social media icons (Facebook, Twitter, Dribbble, Behance) are shown
-And the footer links to Component Dock
-```
+#### Scenario: Footer displays copyright and social links
 
-### Scenario: Page uses Poppins font throughout
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a black background
+- **AND** copyright text is displayed
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are shown
+- **AND** the footer links to Component Dock
 
-```gherkin
-Given the user is on the Azureflow page
-Then all text uses the Poppins font family
-And headings use weight 600 (semibold)
-And body text uses weight 300 (light)
-```
+#### Scenario: Page uses Poppins font throughout
 
-### Scenario: Primary buttons use blue-to-cyan gradient
+- **GIVEN** the user is on the Azureflow page
+- **THEN** all text uses the Poppins font family
+- **AND** headings use weight 600 (semibold)
+- **AND** body text uses weight 300 (light)
 
-```gherkin
-Given the user hovers over a primary CTA button
-Then the button has a gradient background from #3c50ca to #77d5f7
-And the button text is white and uppercase
-And the button has rounded corners (20px radius)
-```
+#### Scenario: Primary buttons use blue-to-cyan gradient
 
-### Scenario: Accessibility
+- **GIVEN** the user hovers over a primary CTA button
+- **THEN** the button has a gradient background from #3c50ca to #77d5f7
+- **AND** the button text is white and uppercase
+- **AND** the button has rounded corners (20px radius)
 
-```gherkin
-Given the user is on the Azureflow page
-Then all images have alt text
-And the navigation is keyboard-accessible
-And the contact form has proper labels
-And semantic HTML elements are used (header, nav, main, section, footer)
-```
+#### Scenario: Accessibility
+
+- **GIVEN** the user is on the Azureflow page
+- **THEN** all images have alt text
+- **AND** the navigation is keyboard-accessible
+- **AND** the contact form has proper labels
+- **AND** semantic HTML elements are used (header, nav, main, section, footer)
 
 ## Verification checklist
 

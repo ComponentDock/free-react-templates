@@ -57,97 +57,109 @@ jQuery-based Bootstrap template for e-commerce checkout flows.
 | Transitions                    | `all 0.5s ease`     | Step bar transitions; button hover `0.3s`                    |
 | Icons                          | Material Design Iconic Font (`zmdi-*`) | Step arrows, caret-down       |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: WizCraft — 4-Step Checkout Wizard
 
-Scenario: Page loads with split layout
-Given the user opens the WizCraft page
-Then a full-screen background should be visible behind the layout
-And a left-side illustration/image should occupy approximately 51% of the viewport
-And a white wizard panel should occupy approximately 49% of the right side
-And the wizard panel should show 4 step progress bars at the top
+#### Scenario: Page loads with split layout
 
-Scenario: Step progress indicators
-Given the page is loaded
-Then 4 horizontal progress bars should be displayed in a row
-And each bar should be approximately 20% width with a 10px gap
-And inactive bars should have a gray (#e6e6e6) background
-And the active step bar should have a peach (#f3d4b7) background
-And a step title should appear above the bars (e.g. "Billing Details" for step 1)
-And transitioning between steps should animate the bar fill color
+- **GIVEN** the user opens the WizCraft page
+- **THEN** a full-screen background should be visible behind the layout
+- **AND** a left-side illustration/image should occupy approximately 51% of the viewport
+- **AND** a white wizard panel should occupy approximately 49% of the right side
+- **AND** the wizard panel should show 4 step progress bars at the top
 
-Scenario: Step 1 — Billing Details
-Given the user is on step 1
-Then the heading "Billing Details" should be visible above the progress bars
-And the form should contain "First Name *" and "Last Name *" inputs side by side
-And a "Company Name" input should be visible (optional, no asterisk)
-And a "Country *" dropdown with options (Viet Nam, United States, United Kingdom) should be present
-And an "Address *" section with "Street address" and "Apartment, suite, unit etc. (optional)" inputs should be visible
-And a "Town / City *" input should be present
-And a "Next" button should be visible at the bottom
+#### Scenario: Step progress indicators
 
-Scenario: Next button navigation
-Given the user is on any step except the last
-Then a "Next" button (peach background, left-aligned text) should be visible
-And clicking "Next" should advance to the next step
-And the progress bar for the completed step should turn peach
-And the step title should update to reflect the new section
+- **GIVEN** the page is loaded
+- **THEN** 4 horizontal progress bars should be displayed in a row
+- **AND** each bar should be approximately 20% width with a 10px gap
+- **AND** inactive bars should have a gray (#e6e6e6) background
+- **AND** the active step bar should have a peach (#f3d4b7) background
+- **AND** a step title should appear above the bars (e.g. "Billing Details" for step 1)
+- **AND** transitioning between steps should animate the bar fill color
 
-Scenario: Previous button navigation
-Given the user is on any step except the first
-Then a "Previous" button (gray background) should be visible to the left of "Next"
-And clicking "Previous" should return to the prior step
-And the step title should update accordingly
+#### Scenario: Step 1 — Billing Details
 
-Scenario: Step 2 — Additional Information
-Given the user navigates to step 2
-Then the heading "Additional Information" should appear above the progress bars
-And a "County *" input should be visible
-And a "Postcode / Zip *" input should be visible
-And "Phone *" and "Email Address *" inputs should be displayed side by side
-And an "Order Notes" textarea with placeholder "Note about your order, eg. special notes for delivery." should be present
-And a "Create an account?" checkbox should be visible
+- **GIVEN** the user is on step 1
+- **THEN** the heading "Billing Details" should be visible above the progress bars
+- **AND** the form should contain "First Name *" and "Last Name *" inputs side by side
+- **AND** a "Company Name" input should be visible (optional, no asterisk)
+- **AND** a "Country *" dropdown with options (Viet Nam, United States, United Kingdom) should be present
+- **AND** an "Address *" section with "Street address" and "Apartment, suite, unit etc. (optional)" inputs should be visible
+- **AND** a "Town / City *" input should be present
+- **AND** a "Next" button should be visible at the bottom
 
-Scenario: Step 3 — Your Order
-Given the user navigates to step 3
-Then the heading "Your Order" should appear above the progress bars
-And a product list should display at least 2 items with thumbnail images, names, quantities, and prices
-And item thumbnails should be in bordered containers (100px × 90px)
-And a subtotal line should show the total (e.g. "$364")
-And a shipping note should indicate shipping availability
-And a total line should display the final amount in bold
+#### Scenario: Next button navigation
 
-Scenario: Step 4 — Billing Method
-Given the user navigates to step 4
-Then the heading "Billing Method" should appear above the progress bars
-And 3 radio options should be visible: "Direct bank transfer", "Check payments", "Cash on delivery"
-And the "Direct bank transfer" radio should be selected by default
-And selecting a radio should display a tooltip with payment instructions
-And the tooltip should have a light gray (#f2f2f2) background with an upward arrow
-And the "Previous" button should be visible but no "Next" button (final step)
+- **GIVEN** the user is on any step except the last
+- **THEN** a "Next" button (peach background, left-aligned text) should be visible
+- **AND** clicking "Next" should advance to the next step
+- **AND** the progress bar for the completed step should turn peach
+- **AND** the step title should update to reflect the new section
 
-Scenario: Form input focus styling
-Given the user clicks into any form input
-Then the input border should change to the accent peach color (#f3d4b7)
-And the focus transition should be smooth
+#### Scenario: Previous button navigation
 
-Scenario: Responsive layout on mobile
-Given the viewport width is below 768px
-Then the left-side illustration should stack above the form panel
-And the form panel should take full width
-And the two-column form rows (First/Last Name, Phone/Email) should stack vertically
-And the wizard panel padding should reduce
+- **GIVEN** the user is on any step except the first
+- **THEN** a "Previous" button (gray background) should be visible to the left of "Next"
+- **AND** clicking "Previous" should return to the prior step
+- **AND** the step title should update accordingly
 
-Scenario: Responsive layout on tablet
-Given the viewport width is between 768px and 991px
-Then the left-side illustration should be hidden
-And the form panel should take approximately 60% width and be centered
+#### Scenario: Step 2 — Additional Information
 
-Scenario: Component Dock footer link
-Given the page footer is visible
-Then a link to "https://www.componentdock.com/" should be present
-And it should read "Component Dock" or "Made with Component Dock"
+- **GIVEN** the user navigates to step 2
+- **THEN** the heading "Additional Information" should appear above the progress bars
+- **AND** a "County *" input should be visible
+- **AND** a "Postcode / Zip *" input should be visible
+- **AND** "Phone *" and "Email Address *" inputs should be displayed side by side
+- **AND** an "Order Notes" textarea with placeholder "Note about your order, eg. special notes for delivery." should be present
+- **AND** a "Create an account?" checkbox should be visible
+
+#### Scenario: Step 3 — Your Order
+
+- **GIVEN** the user navigates to step 3
+- **THEN** the heading "Your Order" should appear above the progress bars
+- **AND** a product list should display at least 2 items with thumbnail images, names, quantities, and prices
+- **AND** item thumbnails should be in bordered containers (100px × 90px)
+- **AND** a subtotal line should show the total (e.g. "$364")
+- **AND** a shipping note should indicate shipping availability
+- **AND** a total line should display the final amount in bold
+
+#### Scenario: Step 4 — Billing Method
+
+- **GIVEN** the user navigates to step 4
+- **THEN** the heading "Billing Method" should appear above the progress bars
+- **AND** 3 radio options should be visible: "Direct bank transfer", "Check payments", "Cash on delivery"
+- **AND** the "Direct bank transfer" radio should be selected by default
+- **AND** selecting a radio should display a tooltip with payment instructions
+- **AND** the tooltip should have a light gray (#f2f2f2) background with an upward arrow
+- **AND** the "Previous" button should be visible but no "Next" button (final step)
+
+#### Scenario: Form input focus styling
+
+- **GIVEN** the user clicks into any form input
+- **THEN** the input border should change to the accent peach color (#f3d4b7)
+- **AND** the focus transition should be smooth
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport width is below 768px
+- **THEN** the left-side illustration should stack above the form panel
+- **AND** the form panel should take full width
+- **AND** the two-column form rows (First/Last Name, Phone/Email) should stack vertically
+- **AND** the wizard panel padding should reduce
+
+#### Scenario: Responsive layout on tablet
+
+- **GIVEN** the viewport width is between 768px and 991px
+- **THEN** the left-side illustration should be hidden
+- **AND** the form panel should take approximately 60% width and be centered
+
+#### Scenario: Component Dock footer link
+
+- **GIVEN** the page footer is visible
+- **THEN** a link to "https://www.componentdock.com/" should be present
+- **AND** it should read "Component Dock" or "Made with Component Dock"
 
 ## Verification checklist
 

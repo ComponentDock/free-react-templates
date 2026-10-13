@@ -21,7 +21,7 @@
 
 ---
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Header / Navigation & Hero Showcase Intro
 
@@ -30,9 +30,9 @@
 
 #### Scenario: User views the hero showcase
 
-- **Given** the user opens the Nocturnal template
-- **When** the page loads
-- **Then** the header and hero section display the title "Nocturnal Buttons", subtitle, and quick navigation links on a dark background.
+- **GIVEN** the user opens the Nocturnal template
+- **WHEN** the page loads
+- **THEN** the header and hero section display the title "Nocturnal Buttons", subtitle, and quick navigation links on a dark background
 
 ### Requirement 2: Solid & Filled Dark Button Variants
 
@@ -40,9 +40,9 @@
 
 #### Scenario: User explores solid dark buttons
 
-- **Given** the user is viewing the solid buttons section
-- **When** they inspect the color options
-- **Then** all standard color variants are rendered with proper hover, focus, and active glow states.
+- **GIVEN** the user is viewing the solid buttons section
+- **WHEN** they inspect the color options
+- **THEN** all standard color variants are rendered with proper hover, focus, and active glow states
 
 ### Requirement 3: Outline & Neon Glow Button Variants
 
@@ -50,9 +50,9 @@
 
 #### Scenario: User interacts with outline and glow buttons
 
-- **Given** the user scrolls to the outline and glow buttons section
-- **When** they hover over a glow button
-- **Then** the luminous shadow intensity increases smoothly while maintaining high contrast.
+- **GIVEN** the user scrolls to the outline and glow buttons section
+- **WHEN** they hover over a glow button
+- **THEN** the luminous shadow intensity increases smoothly while maintaining high contrast
 
 ### Requirement 4: Gradient & Shadow Button Effects
 
@@ -60,9 +60,9 @@
 
 #### Scenario: User views gradient and shadow buttons
 
-- **Given** the user views the gradient and shadow section
-- **When** the components render
-- **Then** dark gradient fills and layered glow effects are clearly visible.
+- **GIVEN** the user views the gradient and shadow section
+- **WHEN** the components render
+- **THEN** dark gradient fills and layered glow effects are clearly visible
 
 ### Requirement 5: Icon Buttons & Button Groups
 
@@ -70,9 +70,9 @@
 
 #### Scenario: User tests icon and grouped buttons
 
-- **Given** the user navigates to the icon and group section
-- **When** they click within a button group
-- **Then** the connected buttons highlight interactively as a cohesive group.
+- **GIVEN** the user navigates to the icon and group section
+- **WHEN** they click within a button group
+- **THEN** the connected buttons highlight interactively as a cohesive group
 
 ### Requirement 6: Footer with Component Dock Attribution
 
@@ -80,9 +80,9 @@
 
 #### Scenario: User checks the footer
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer renders
-- **Then** it contains the Component Dock link and standard copyright notice.
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it contains the Component Dock link and standard copyright notice
 
 ---
 

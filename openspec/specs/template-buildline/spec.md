@@ -80,117 +80,139 @@ The template presents a **professional construction company** aesthetic:
    description + contact + social icons, Navigation links, Services links,
    Newsletter subscription with email input. Copyright bar at bottom.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: BuildLine — Construction Company Website
 
-```gherkin
 Feature: BuildLine construction company template
-  As a visitor to the BuildLine website
-  I want a professional construction company landing page
-  So that I can learn about services, view projects, and get in touch
+As a visitor to the BuildLine website
+I want a professional construction company landing page
+So that I can learn about services, view projects, and get in touch
 
-  Background:
-    Given the page is loaded at the root URL
-    And the viewport is 1280x720
+Background:
+- **GIVEN** the page is loaded at the root URL
+- **AND** the viewport is 1280x720
 
-  # --- Header ---
-  Scenario: Header displays logo, navigation, and contact phone
-    Then I should see a header bar
-    And the header should contain a logo
-    And the header should have navigation links for "Home", "About", "Service", "Project", "Blog", "Contact"
-    And the header should display a phone number in the right segment
-    And the header right segment should have an orange background
+**--- Header ---**
 
-  Scenario: Header is sticky on scroll
-    When I scroll down 200 pixels
-    Then the header should remain fixed at the top of the viewport
+#### Scenario: Header displays logo, navigation, and contact phone
 
-  # --- Hero ---
-  Scenario: Hero section displays with background image and CTA
-    Then I should see a hero section with a background image
-    And the hero section should display the heading "Experienced Construction Solution"
-    And the hero section should display descriptive subtext
-    And the hero section should have an "Our Services" call-to-action button
-    And the CTA button should have an orange background and white text
-    And the CTA button should have sharp corners (no border-radius)
+- **THEN** I should see a header bar
+- **AND** the header should contain a logo
+- **AND** the header should have navigation links for "Home", "About", "Service", "Project", "Blog", "Contact"
+- **AND** the header should display a phone number in the right segment
+- **AND** the header right segment should have an orange background
 
-  Scenario: Hero has a right sidebar promo bar
-    Then I should see a right sidebar bar in the hero
-    And the sidebar should have a translucent orange background
-    And the sidebar should display "Explore Our Latest Projects"
-    And the sidebar should have an "Explore Now" link
+#### Scenario: Header is sticky on scroll
 
-  # --- About ---
-  Scenario: About section displays company info with image
-    Then I should see an About section
-    And the About section should display a heading about project solutions
-    And the About section should display a descriptive paragraph
-    And the About section should have a "Learn More" button
-    And the About section should display a construction-related image on the left
+- **WHEN** I scroll down 200 pixels
+- **THEN** the header should remain fixed at the top of the viewport
 
-  # --- Services ---
-  Scenario: Services section displays on dark background
-    Then I should see a Services section
-    And the Services section should have a dark background
-    And the Services section should display a heading "Services we provide"
-    And the Services section should have a "Get Free Quote" button
+**--- Hero ---**
 
-  Scenario: Services section lists at least 3 service items
-    Then I should see at least 3 service items
-    And each service item should have an image, title, and description
-    And each service item should have an "Explore Now" link
+#### Scenario: Hero section displays with background image and CTA
 
-  # --- Projects ---
-  Scenario: Projects section displays a carousel of project cards
-    Then I should see a Projects section
-    And the Projects section should display a heading "Projects we have Done"
-    And the Projects section should contain project cards in a carousel
-    And each project card should have an image, title, and "View Project" button
+- **THEN** I should see a hero section with a background image
+- **AND** the hero section should display the heading "Experienced Construction Solution"
+- **AND** the hero section should display descriptive subtext
+- **AND** the hero section should have an "Our Services" call-to-action button
+- **AND** the CTA button should have an orange background and white text
+- **AND** the CTA button should have sharp corners (no border-radius)
 
-  Scenario: Projects section has a view-all button
-    Then I should see an "All Project" outlined button
-    And the button should have an orange border and transparent background
+#### Scenario: Hero has a right sidebar promo bar
 
-  # --- Testimonials ---
-  Scenario: Testimonials section displays client quotes
-    Then I should see a Testimonials section
-    And the Testimonials section should have a dark background
-    And the Testimonials section should display at least 2 testimonial items
-    And each testimonial should have a quote, client name, and role
-    And each testimonial should have a quote icon
+- **THEN** I should see a right sidebar bar in the hero
+- **AND** the sidebar should have a translucent orange background
+- **AND** the sidebar should display "Explore Our Latest Projects"
+- **AND** the sidebar should have an "Explore Now" link
 
-  # --- Contact Form ---
-  Scenario: Contact section displays a quote request form
-    Then I should see a Contact form section
-    And the Contact section should have a dark background
-    And the form should have fields for name, email, topic, and message
-    And the form should have a "Send Message" submit button
+**--- About ---**
 
-  # --- CTA Banner ---
-  Scenario: CTA banner asks if help is needed
-    Then I should see a "Any help needed?" banner
-    And the banner should have a "Contact Us" outlined button
-    And the banner should be on a dark background
+#### Scenario: About section displays company info with image
 
-  # --- Footer ---
-  Scenario: Footer contains navigation, services, and newsletter
-    Then I should see a footer
-    And the footer should have a light gray background
-    And the footer should display a logo and description
-    And the footer should contain Navigation links
-    And the footer should contain Services links
-    And the footer should have a newsletter subscription form with an email input
-    And the footer should link to "https://www.componentdock.com/"
-    And the footer should display "Component Dock" text
+- **THEN** I should see an About section
+- **AND** the About section should display a heading about project solutions
+- **AND** the About section should display a descriptive paragraph
+- **AND** the About section should have a "Learn More" button
+- **AND** the About section should display a construction-related image on the left
 
-  # --- Responsive ---
-  Scenario: Template is responsive on mobile viewport
-    Given the viewport is 375x667
-    Then the navigation should collapse into a hamburger menu
-    And all sections should be readable without horizontal scroll
-    And the hero heading should wrap properly
-```
+**--- Services ---**
+
+#### Scenario: Services section displays on dark background
+
+- **THEN** I should see a Services section
+- **AND** the Services section should have a dark background
+- **AND** the Services section should display a heading "Services we provide"
+- **AND** the Services section should have a "Get Free Quote" button
+
+#### Scenario: Services section lists at least 3 service items
+
+- **THEN** I should see at least 3 service items
+- **AND** each service item should have an image, title, and description
+- **AND** each service item should have an "Explore Now" link
+
+**--- Projects ---**
+
+#### Scenario: Projects section displays a carousel of project cards
+
+- **THEN** I should see a Projects section
+- **AND** the Projects section should display a heading "Projects we have Done"
+- **AND** the Projects section should contain project cards in a carousel
+- **AND** each project card should have an image, title, and "View Project" button
+
+#### Scenario: Projects section has a view-all button
+
+- **THEN** I should see an "All Project" outlined button
+- **AND** the button should have an orange border and transparent background
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section displays client quotes
+
+- **THEN** I should see a Testimonials section
+- **AND** the Testimonials section should have a dark background
+- **AND** the Testimonials section should display at least 2 testimonial items
+- **AND** each testimonial should have a quote, client name, and role
+- **AND** each testimonial should have a quote icon
+
+**--- Contact Form ---**
+
+#### Scenario: Contact section displays a quote request form
+
+- **THEN** I should see a Contact form section
+- **AND** the Contact section should have a dark background
+- **AND** the form should have fields for name, email, topic, and message
+- **AND** the form should have a "Send Message" submit button
+
+**--- CTA Banner ---**
+
+#### Scenario: CTA banner asks if help is needed
+
+- **THEN** I should see a "Any help needed?" banner
+- **AND** the banner should have a "Contact Us" outlined button
+- **AND** the banner should be on a dark background
+
+**--- Footer ---**
+
+#### Scenario: Footer contains navigation, services, and newsletter
+
+- **THEN** I should see a footer
+- **AND** the footer should have a light gray background
+- **AND** the footer should display a logo and description
+- **AND** the footer should contain Navigation links
+- **AND** the footer should contain Services links
+- **AND** the footer should have a newsletter subscription form with an email input
+- **AND** the footer should link to "https://www.componentdock.com/"
+- **AND** the footer should display "Component Dock" text
+
+**--- Responsive ---**
+
+#### Scenario: Template is responsive on mobile viewport
+
+- **GIVEN** the viewport is 375x667
+- **THEN** the navigation should collapse into a hamburger menu
+- **AND** all sections should be readable without horizontal scroll
+- **AND** the hero heading should wrap properly
 
 ## Verification checklist
 

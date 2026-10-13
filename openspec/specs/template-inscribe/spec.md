@@ -139,13 +139,14 @@ Extracted from the live preview stylesheet (`css/style.css`) at https://colorlib
 </div>
 ```
 
-## Gherkin Requirements
+## Requirements
 
 ### Requirement: Full-viewport split layout
 
 The page SHALL display a full-viewport split layout with a hero image on the left (~66%) and a form panel on the right (~34%).
 
 #### Scenario: Desktop layout
+
 - **GIVEN** the page is rendered on a viewport wider than 1200px
 - **WHEN** the layout is displayed
 - **THEN** the hero image SHALL occupy approximately 66% of the width on the left
@@ -153,6 +154,7 @@ The page SHALL display a full-viewport split layout with a hero image on the lef
 - **AND** the total height SHALL be 100vh
 
 #### Scenario: Mobile layout (≤767px)
+
 - **GIVEN** the page is rendered on a viewport ≤767px
 - **WHEN** the layout is displayed
 - **THEN** the hero image SHALL stack above the form (block layout)
@@ -164,6 +166,7 @@ The page SHALL display a full-viewport split layout with a hero image on the lef
 The wizard SHALL start on Step 1 displaying event details with icons.
 
 #### Scenario: Step 1 is visible on load
+
 - **GIVEN** the page is rendered
 - **WHEN** the wizard loads
 - **THEN** Step 1 "Event Information" heading SHALL be visible
@@ -171,6 +174,7 @@ The wizard SHALL start on Step 1 displaying event details with icons.
 - **AND** each info item SHALL have a Linearicons icon next to the label
 
 #### Scenario: Event details content
+
 - **GIVEN** Step 1 is displayed
 - **WHEN** the info items are read
 - **THEN** Date SHALL show "August 1 @ 8:00 am"
@@ -184,6 +188,7 @@ The wizard SHALL start on Step 1 displaying event details with icons.
 The wizard SHALL navigate to Step 2 showing a form with event setup fields.
 
 #### Scenario: Step 2 fields
+
 - **GIVEN** I navigate to Step 2
 - **WHEN** the step is displayed
 - **THEN** heading "Set The Event" SHALL be visible
@@ -192,6 +197,7 @@ The wizard SHALL navigate to Step 2 showing a form with event setup fields.
 - **AND** text inputs SHALL be present for Name, E-mail, Phone, and Address
 
 #### Scenario: Form field styling
+
 - **GIVEN** Step 2 is displayed
 - **WHEN** I view the form fields
 - **THEN** each input SHALL have a transparent background with a white bottom border (rgba(255,255,255,0.4))
@@ -203,6 +209,7 @@ The wizard SHALL navigate to Step 2 showing a form with event setup fields.
 The wizard SHALL navigate to Step 3 showing special request fields and a terms checkbox.
 
 #### Scenario: Step 3 fields
+
 - **GIVEN** I navigate to Step 3
 - **WHEN** the step is displayed
 - **THEN** heading "Request from You" SHALL be visible
@@ -217,16 +224,19 @@ The wizard SHALL navigate to Step 3 showing special request fields and a terms c
 The wizard SHALL have Previous and Next navigation buttons.
 
 #### Scenario: Next button advances steps
+
 - **GIVEN** the wizard is on Step 1
 - **WHEN** I click the Next button
 - **THEN** the wizard SHALL advance to Step 2
 
 #### Scenario: Previous button goes back
+
 - **GIVEN** the wizard is on Step 2
 - **WHEN** I click the Previous button
 - **THEN** the wizard SHALL return to Step 1
 
 #### Scenario: Navigation buttons styling
+
 - **GIVEN** the wizard is displayed
 - **WHEN** the navigation buttons are rendered
 - **THEN** each button SHALL be 42px tall × 96px wide
@@ -235,6 +245,7 @@ The wizard SHALL have Previous and Next navigation buttons.
 - **AND** on hover the button SHALL fill white with #333 text
 
 #### Scenario: Previous hidden on first step
+
 - **GIVEN** the wizard is on Step 1
 - **WHEN** the navigation is displayed
 - **THEN** the Previous button SHALL be hidden or disabled (aria-disabled="true")
@@ -244,12 +255,14 @@ The wizard SHALL have Previous and Next navigation buttons.
 The page SHALL display social media icon links at the bottom of the form panel.
 
 #### Scenario: Social icons visible
+
 - **GIVEN** the page is rendered
 - **WHEN** the form panel bottom is displayed
 - **THEN** four social icons SHALL be visible (Facebook, Twitter, Tumblr, Instagram)
 - **AND** icons SHALL be 17px white, positioned at the bottom center of the form panel
 
 #### Scenario: Social icon hover
+
 - **GIVEN** the social icons are displayed
 - **WHEN** I hover over a social icon
 - **THEN** the icon color SHALL change to #e5e5e5
@@ -259,12 +272,14 @@ The page SHALL display social media icon links at the bottom of the form panel.
 The form panel SHALL have a dark background image with white text throughout.
 
 #### Scenario: Form panel background
+
 - **GIVEN** the page is rendered
 - **WHEN** the form panel is displayed
 - **THEN** it SHALL have a dark background image (centered, cover)
 - **AND** all text (headings, labels, body) SHALL be white or near-white (#ccc)
 
 #### Scenario: Wizard container height
+
 - **GIVEN** the wizard is displayed on desktop
 - **WHEN** the wizard container is measured
 - **THEN** it SHALL have a height of 509px
@@ -274,6 +289,7 @@ The form panel SHALL have a dark background image with white text throughout.
 The terms checkbox SHALL be a custom circular checkbox.
 
 #### Scenario: Checkbox appearance
+
 - **GIVEN** Step 3 is displayed
 - **WHEN** the checkbox is rendered
 - **THEN** it SHALL be an 11px circular checkbox with a 1px solid #ccc border
@@ -284,6 +300,7 @@ The terms checkbox SHALL be a custom circular checkbox.
 The page footer SHALL include a link to Component Dock.
 
 #### Scenario: Footer link
+
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
 - **THEN** it SHALL contain a link to componentdock.com

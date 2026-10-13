@@ -85,211 +85,203 @@ Partners: 10).
 12. **Footer** — "Made with Component Dock" link to
     https://www.componentdock.com/
 
-## Gherkin requirements
+## Requirements
 
 ### Sidebar
 
-```gherkin
 Feature: Sidebar navigation
 
-  Scenario: Desktop sidebar is fixed on the left
-    Given the viewport is desktop (>= 768px)
-    When the page loads
-    Then a fixed sidebar appears on the left side
-    And it displays a circular avatar image
-    And it displays the name "Jackson Ford"
-    And it displays the title "UI/UX Designer in San Francisco"
-    And it displays social media icon links
-    And it displays a vertical navigation menu
+#### Scenario: Desktop sidebar is fixed on the left
 
-  Scenario: Mobile sidebar is hidden and togglable
-    Given the viewport is mobile (< 768px)
-    When the page loads
-    Then the sidebar is hidden
-    And a hamburger menu button is visible
-    When the hamburger button is clicked
-    Then the sidebar slides in from the left as an offcanvas panel
-    And clicking a nav link closes the sidebar
+- **GIVEN** the viewport is desktop (>= 768px)
+- **WHEN** the page loads
+- **THEN** a fixed sidebar appears on the left side
+- **AND** it displays a circular avatar image
+- **AND** it displays the name "Jackson Ford"
+- **AND** it displays the title "UI/UX Designer in San Francisco"
+- **AND** it displays social media icon links
+- **AND** it displays a vertical navigation menu
 
-  Scenario: Nav links highlight active section on scroll
-    Given the page is scrolled to the "About" section
-    Then the "About" nav link is visually highlighted
-```
+#### Scenario: Mobile sidebar is hidden and togglable
+
+- **GIVEN** the viewport is mobile (< 768px)
+- **WHEN** the page loads
+- **THEN** the sidebar is hidden
+- **AND** a hamburger menu button is visible
+- **WHEN** the hamburger button is clicked
+- **THEN** the sidebar slides in from the left as an offcanvas panel
+- **AND** clicking a nav link closes the sidebar
+
+#### Scenario: Nav links highlight active section on scroll
+
+- **GIVEN** the page is scrolled to the "About" section
+- **THEN** the "About" nav link is visually highlighted
 
 ### Hero
 
-```gherkin
 Feature: Hero section
 
-  Scenario: Hero displays with background image and CTAs
-    Given the page loads
-    Then a full-viewport hero section is visible
-    And it shows the heading "Hi! I'm Jackson"
-    And it shows a tagline
-    And it shows a "Download CV" button
-    And it shows a "View Portfolio" button
-    And the background has a dark gradient overlay
+#### Scenario: Hero displays with background image and CTAs
 
-  Scenario: Hero has background image slider
-    Given the page loads
-    Then the hero displays a background image
-    And the image transitions automatically on a timer
-```
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero section is visible
+- **AND** it shows the heading "Hi! I'm Jackson"
+- **AND** it shows a tagline
+- **AND** it shows a "Download CV" button
+- **AND** it shows a "View Portfolio" button
+- **AND** the background has a dark gradient overlay
+
+#### Scenario: Hero has background image slider
+
+- **GIVEN** the page loads
+- **THEN** the hero displays a background image
+- **AND** the image transitions automatically on a timer
 
 ### About
 
-```gherkin
 Feature: About section
 
-  Scenario: About section displays intro and expertise cards
-    Given the page loads
-    When I scroll to the About section
-    Then the heading "Who Am I?" is visible
-    And an introductory paragraph is displayed
-    And 4 expertise cards are shown: Graphic Design, Web Design, Software, Application
-    And each card has an icon and a title
-```
+#### Scenario: About section displays intro and expertise cards
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the About section
+- **THEN** the heading "Who Am I?" is visible
+- **AND** an introductory paragraph is displayed
+- **AND** 4 expertise cards are shown: Graphic Design, Web Design, Software, Application
+- **AND** each card has an icon and a title
 
 ### Counter
 
-```gherkin
 Feature: Counter / Stats section
 
-  Scenario: Counter section displays animated stats
-    Given the page loads
-    When I scroll to the counter section
-    Then a parallax background image is visible
-    And 4 stat counters are displayed: Cups of coffee (309), Projects (356), Clients (30), Partners (10)
-    And the numbers animate from 0 to their target values
-```
+#### Scenario: Counter section displays animated stats
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the counter section
+- **THEN** a parallax background image is visible
+- **AND** 4 stat counters are displayed: Cups of coffee (309), Projects (356), Clients (30), Partners (10)
+- **AND** the numbers animate from 0 to their target values
 
 ### Services
 
-```gherkin
 Feature: Services section
 
-  Scenario: Services section displays 6 expertise cards
-    Given the page loads
-    When I scroll to the Services section
-    Then the heading "Here are some of my expertise" is visible
-    And 6 cards are displayed in a 2-column or 3-column responsive grid
-    And each card has an icon, title, and description text
-```
+#### Scenario: Services section displays 6 expertise cards
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Services section
+- **THEN** the heading "Here are some of my expertise" is visible
+- **AND** 6 cards are displayed in a 2-column or 3-column responsive grid
+- **AND** each card has an icon, title, and description text
 
 ### Skills
 
-```gherkin
 Feature: Skills section
 
-  Scenario: Skills section displays progress bars
-    Given the page loads
-    When I scroll to the Skills section
-    Then the heading "My Skills" is visible
-    And 6 skill bars are displayed: Photoshop, JavaScript, HTML5, CSS3, WordPress, SEO
-    And each bar shows a percentage fill with the skill name
-```
+#### Scenario: Skills section displays progress bars
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Skills section
+- **THEN** the heading "My Skills" is visible
+- **AND** 6 skill bars are displayed: Photoshop, JavaScript, HTML5, CSS3, WordPress, SEO
+- **AND** each bar shows a percentage fill with the skill name
 
 ### Education
 
-```gherkin
 Feature: Education section
 
-  Scenario: Education section displays timeline
-    Given the page loads
-    When I scroll to the Education section
-    Then the heading "Education" is visible
-    And 5 education items are displayed in a vertical timeline
-    And each item shows degree name and institution/period
-```
+#### Scenario: Education section displays timeline
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Education section
+- **THEN** the heading "Education" is visible
+- **AND** 5 education items are displayed in a vertical timeline
+- **AND** each item shows degree name and institution/period
 
 ### Experience
 
-```gherkin
 Feature: Experience section
 
-  Scenario: Experience section displays work timeline
-    Given the page loads
-    When I scroll to the Experience section
-    Then the heading "Work Experience" is visible
-    And 5 experience items are displayed in a vertical timeline
-    And each item shows job title, company, and date range
-```
+#### Scenario: Experience section displays work timeline
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Experience section
+- **THEN** the heading "Work Experience" is visible
+- **AND** 5 experience items are displayed in a vertical timeline
+- **AND** each item shows job title, company, and date range
 
 ### Work Gallery
 
-```gherkin
 Feature: Recent Work gallery
 
-  Scenario: Work section displays image grid
-    Given the page loads
-    When I scroll to the Work section
-    Then the heading "Recent Work" is visible
-    And 6 work items are displayed in a responsive grid
-    And each item shows an image with a hover overlay
+#### Scenario: Work section displays image grid
 
-  Scenario: Work items are clickable
-    Given the Work gallery is visible
-    When I hover over a work item
-    Then an overlay with project title appears
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Work section
+- **THEN** the heading "Recent Work" is visible
+- **AND** 6 work items are displayed in a responsive grid
+- **AND** each item shows an image with a hover overlay
+
+#### Scenario: Work items are clickable
+
+- **GIVEN** the Work gallery is visible
+- **WHEN** I hover over a work item
+- **THEN** an overlay with project title appears
 
 ### Blog
 
-```gherkin
 Feature: Blog section
 
-  Scenario: Blog section displays recent posts
-    Given the page loads
-    When I scroll to the Blog section
-    Then the heading "From the Blog" is visible
-    And 3 blog cards are displayed
-    And each card shows an image, date, title, excerpt, and "Read More" link
-```
+#### Scenario: Blog section displays recent posts
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Blog section
+- **THEN** the heading "From the Blog" is visible
+- **AND** 3 blog cards are displayed
+- **AND** each card shows an image, date, title, excerpt, and "Read More" link
 
 ### Contact
 
-```gherkin
 Feature: Contact section
 
-  Scenario: Contact section displays info and form
-    Given the page loads
-    When I scroll to the Contact section
-    Then the heading "Contact" is visible
-    And contact information is displayed: email, address, phone
-    And a contact form is visible with fields: name, email, subject, message
-    And a submit button is present
+#### Scenario: Contact section displays info and form
 
-  Scenario: Contact form validates required fields
-    Given the contact form is visible
-    When I click submit with empty fields
-    Then validation errors appear for required fields
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Contact section
+- **THEN** the heading "Contact" is visible
+- **AND** contact information is displayed: email, address, phone
+- **AND** a contact form is visible with fields: name, email, subject, message
+- **AND** a submit button is present
+
+#### Scenario: Contact form validates required fields
+
+- **GIVEN** the contact form is visible
+- **WHEN** I click submit with empty fields
+- **THEN** validation errors appear for required fields
 
 ### Theme Toggle
 
-```gherkin
 Feature: Dark/Light theme toggle
 
-  Scenario: Theme toggle switches between dark and light modes
-    Given the page loads in light mode
-    When I click the theme toggle button
-    Then the page switches to dark mode
-    And background, text, and border colors update
-    When I click the theme toggle again
-    Then the page returns to light mode
-```
+#### Scenario: Theme toggle switches between dark and light modes
+
+- **GIVEN** the page loads in light mode
+- **WHEN** I click the theme toggle button
+- **THEN** the page switches to dark mode
+- **AND** background, text, and border colors update
+- **WHEN** I click the theme toggle again
+- **THEN** the page returns to light mode
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer displays Component Dock link
-    Given the page loads
-    When I scroll to the footer
-    Then a link to https://www.componentdock.com/ is visible
-    And the link text reads "Component Dock"
-```
+#### Scenario: Footer displays Component Dock link
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** a link to https://www.componentdock.com/ is visible
+- **AND** the link text reads "Component Dock"
 
 ## Verification checklist
 

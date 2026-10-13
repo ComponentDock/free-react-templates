@@ -285,10 +285,11 @@ The system SHALL expose accessible semantics.
 - **AND** all interactive elements SHALL have visible focus rings
 - **AND** the navigation SHALL be accessible via keyboard
 
-### Requirement: Section ordering
+### Feature: Section ordering
+
+#### Scenario: Section ordering
 
 The template sections SHALL appear in this exact order:
-
 1. Header (logo + nav)
 2. Hero Banner (fullscreen, dark overlay, split layout)
 3. Studio Showcase (red overlay, split layout)

@@ -36,36 +36,42 @@ Preview (screenshot only — live preview 404): ColorLib Search Form 15
    - Full-width green "Search" button
 3. **Footer** — simple footer with Component Dock link
 
-## Scenarios (Gherkin)
+## Requirements
 
 ### Render
 
-- Given the app loads, Then the document title is "Travenzo — Travel Booking Search"
-- Given the app loads, Then the "Hotels" tab is visible and active
-- Given the app loads, Then the "Car" tab is visible
-- Given the app loads, Then the "Flight" tab is visible
-- Given the app loads, Then the "Going To" input is present with placeholder "Destination, hotel name"
-- Given the app loads, Then the "Check-In" date input is present
-- Given the app loads, Then the "Check-Out" date input is present
-- Given the app loads, Then the "Travellers" dropdown shows "1 Adult, 0 Children, 1 Room"
-- Given the app loads, Then the "Add a flight" checkbox is checked
-- Given the app loads, Then the "Add a car" checkbox is unchecked
-- Given the app loads, Then the green "Search" button is present
+#### Scenario: Render
+
+- **GIVEN** the app loads, Then the document title is "Travenzo — Travel Booking Search"
+- **GIVEN** the app loads, Then the "Hotels" tab is visible and active
+- **GIVEN** the app loads, Then the "Car" tab is visible
+- **GIVEN** the app loads, Then the "Flight" tab is visible
+- **GIVEN** the app loads, Then the "Going To" input is present with placeholder "Destination, hotel name"
+- **GIVEN** the app loads, Then the "Check-In" date input is present
+- **GIVEN** the app loads, Then the "Check-Out" date input is present
+- **GIVEN** the app loads, Then the "Travellers" dropdown shows "1 Adult, 0 Children, 1 Room"
+- **GIVEN** the app loads, Then the "Add a flight" checkbox is checked
+- **GIVEN** the app loads, Then the "Add a car" checkbox is unchecked
+- **GIVEN** the app loads, Then the green "Search" button is present
 
 ### Interaction
 
-- When the user types in the "Going To" field, Then the field updates with the typed text
-- When the user clicks the "Car" tab, Then it becomes active
-- When the user clicks the "Flight" tab, Then it becomes active
-- When the user clicks the "Hotels" tab, Then it becomes active again
-- When the user toggles the "Add a flight" checkbox, Then its state changes
-- When the user toggles the "Add a car" checkbox, Then its state changes
-- When the user submits the form, Then the page does not reload
+#### Scenario: Interaction
+
+- **WHEN** the user types in the "Going To" field, Then the field updates with the typed text
+- **WHEN** the user clicks the "Car" tab, Then it becomes active
+- **WHEN** the user clicks the "Flight" tab, Then it becomes active
+- **WHEN** the user clicks the "Hotels" tab, Then it becomes active again
+- **WHEN** the user toggles the "Add a flight" checkbox, Then its state changes
+- **WHEN** the user toggles the "Add a car" checkbox, Then its state changes
+- **WHEN** the user submits the form, Then the page does not reload
 
 ### Footer
 
-- Given the app loads, Then the footer shows a link to https://www.componentdock.com/ labeled "Component Dock"
-- Given the app loads, Then the footer shows a copyright line
+#### Scenario: Footer
+
+- **GIVEN** the app loads, Then the footer shows a link to https://www.componentdock.com/ labeled "Component Dock"
+- **GIVEN** the app loads, Then the footer shows a copyright line
 
 ## Files
 

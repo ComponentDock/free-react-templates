@@ -23,65 +23,74 @@ Recreation of ColorLib "Colorlib Wizard 15" — a multi-step financial sign-up w
 | Input border radius | `5px` | Inputs |
 | Search button | `#6DAB3C` green bg | `.submit` |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-Step Wizard Form
 
 #### Scenario: Step 1 - Personal Information
-  Given the user is on the wizard form
-  When step 1 is displayed
-  Then the heading "Personal information" is visible
-  And the description text is shown
-  And fields are displayed: First Name, Last Name, Email, Phone, Birth Date (MM/DD/YYYY dropdowns), SSN
-  And the progress indicator shows step 1 as active
+
+- **GIVEN** the user is on the wizard form
+- **WHEN** step 1 is displayed
+- **THEN** the heading "Personal information" is visible
+- **AND** the description text is shown
+- **AND** fields are displayed: First Name, Last Name, Email, Phone, Birth Date (MM/DD/YYYY dropdowns), SSN
+- **AND** the progress indicator shows step 1 as active
 
 #### Scenario: Step 1 Validation
-  Given the user is on step 1
-  When the user clicks "Next" without filling required fields
-  Then validation errors appear for required fields
-  And the form does not advance
+
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks "Next" without filling required fields
+- **THEN** validation errors appear for required fields
+- **AND** the form does not advance
 
 #### Scenario: Step 1 to Step 2 Navigation
-  Given the user has filled all required fields on step 1
-  When the user clicks "Next"
-  Then step 2 "Connect Bank Account" is displayed
-  And the progress indicator shows step 2 as active
+
+- **GIVEN** the user has filled all required fields on step 1
+- **WHEN** the user clicks "Next"
+- **THEN** step 2 "Connect Bank Account" is displayed
+- **AND** the progress indicator shows step 2 as active
 
 #### Scenario: Step 2 - Bank Account Connection
-  Given step 2 is displayed
-  Then the heading "Connect Bank Account" is visible
-  And a bank search input is shown with placeholder "Ex. Techcombank"
-  And a "Search" button is present
-  And radio options for popular banks are displayed (3 bank images)
+
+- **GIVEN** step 2 is displayed
+- **THEN** the heading "Connect Bank Account" is visible
+- **AND** a bank search input is shown with placeholder "Ex. Techcombank"
+- **AND** a "Search" button is present
+- **AND** radio options for popular banks are displayed (3 bank images)
 
 #### Scenario: Step 2 Bank Selection
-  Given step 2 is displayed
-  When the user selects a bank radio option
-  Then the selected bank is highlighted
-  And the user can proceed to step 3
+
+- **GIVEN** step 2 is displayed
+- **WHEN** the user selects a bank radio option
+- **THEN** the selected bank is highlighted
+- **AND** the user can proceed to step 3
 
 #### Scenario: Step 3 - Financial Goals
-  Given the user has completed step 2
-  When step 3 is displayed
-  Then the heading "Set Financial Goals" is visible
-  And a range slider for goal amount is shown (using noUiSlider)
+
+- **GIVEN** the user has completed step 2
+- **WHEN** step 3 is displayed
+- **THEN** the heading "Set Financial Goals" is visible
+- **AND** a range slider for goal amount is shown (using noUiSlider)
 
 #### Scenario: Form Completion
-  Given all three steps are completed
-  When the user submits the form
-  Then a confirmation message or redirect occurs
+
+- **GIVEN** all three steps are completed
+- **WHEN** the user submits the form
+- **THEN** a confirmation message or redirect occurs
 
 #### Scenario: Progress Indicator
-  Given the wizard form is loaded
-  Then a vertical progress sidebar is displayed on the left
-  And step numbers (1, 2, 3) are shown in circles
-  And the current step is highlighted with green background
-  And completed steps show a checkmark
+
+- **GIVEN** the wizard form is loaded
+- **THEN** a vertical progress sidebar is displayed on the left
+- **AND** step numbers (1, 2, 3) are shown in circles
+- **AND** the current step is highlighted with green background
+- **AND** completed steps show a checkmark
 
 #### Scenario: Responsive Layout
-  Given the form is displayed on mobile
-  Then the layout adjusts to single-column
-  And all form fields remain accessible
+
+- **GIVEN** the form is displayed on mobile
+- **THEN** the layout adjusts to single-column
+- **AND** all form fields remain accessible
 
 ## Verification Checklist
 

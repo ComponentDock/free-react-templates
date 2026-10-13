@@ -104,83 +104,94 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Copyright bar at bottom with social icons (Facebook, Twitter, Dribbble, Behance)
 - Footer MUST link `https://www.componentdock.com/` (replaces Colorlib attribution)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: FlavorHub template behaviour
+
 Feature: FlavorHub — Food Recipe Blog Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "FlavorHub"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "FlavorHub"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo is visible in the top-left
-    And navigation links "Home", "About", "Recipes", "Blog", "Pages", "Contact" are visible
-    And a search icon is visible in the top-right
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays with background image
-    Given the hero section is in the viewport
-    Then a full-width background image is visible
-    And the headline text is displayed in cursive font
-    And the section covers the full viewport height on desktop
+- **GIVEN** the user is on any viewport
+- **THEN** the logo is visible in the top-left
+- **AND** navigation links "Home", "About", "Recipes", "Blog", "Pages", "Contact" are visible
+- **AND** a search icon is visible in the top-right
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: Recipes section shows 3 recipe cards
-    Given the recipes section is scrolled into view
-    Then 3 recipe cards are visible in a row
-    And each card has a food image, recipe name, category, time, and "View Full Recipe" button
-    And the buttons have pill shape (border-radius: 50px)
+#### Scenario: Hero section displays with background image
 
-  Scenario: Recipe videos section renders
-    Given the recipe videos section is scrolled into view
-    Then the heading "Recipe videos that never misses any portion" is visible
-    And a play button with "Watch Video" label is visible
-    And a grid of thumbnail images is displayed on the right
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width background image is visible
+- **AND** the headline text is displayed in cursive font
+- **AND** the section covers the full viewport height on desktop
 
-  Scenario: Dish/catering section shows 3 items
-    Given the dish section is scrolled into view
-    Then 3 dish cards are visible in a row
-    And each card has an image, heading, and description
+#### Scenario: Recipes section shows 3 recipe cards
 
-  Scenario: Latest trending section renders
-    Given the latest trending section is scrolled into view
-    Then a parallax background image is visible
-    And the heading "Discover latest trending recipes" is displayed
-    And a "View all Recipes" button with brand yellow background is visible
+- **GIVEN** the recipes section is scrolled into view
+- **THEN** 3 recipe cards are visible in a row
+- **AND** each card has a food image, recipe name, category, time, and "View Full Recipe" button
+- **AND** the buttons have pill shape (border-radius: 50px)
 
-  Scenario: Customer feedback carousel works
-    Given the customer feedback section is scrolled into view
-    Then the heading "Feedback From Customers" is visible
-    And at least one testimonial with photo, name, title, and quote is shown
-    And carousel navigation is present
+#### Scenario: Recipe videos section renders
 
-  Scenario: Download app section renders
-    Given the download app section is scrolled into view
-    Then the heading "Download app to get recipes from Everywhere" is visible
-    And App Store and Play Store download buttons are visible
+- **GIVEN** the recipe videos section is scrolled into view
+- **THEN** the heading "Recipe videos that never misses any portion" is visible
+- **AND** a play button with "Watch Video" label is visible
+- **AND** a grid of thumbnail images is displayed on the right
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then 4 widget columns are visible (Top Products, Quick Links, Features, Resources)
-    And a newsletter subscription form is present
-    And a copyright notice is displayed
-    And social media icon links are visible (Facebook, Twitter, Dribbble, Behance)
-    And a link to "https://www.componentdock.com/" is present
+#### Scenario: Dish/catering section shows 3 items
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And recipe/dish columns stack vertically
-    And the hero text size reduces
-    And the footer widget columns stack
+- **GIVEN** the dish section is scrolled into view
+- **THEN** 3 dish cards are visible in a row
+- **AND** each card has an image, heading, and description
 
-  Scenario: Parallax effect on trending section
-    Given the latest trending section exists
-    Then it has a parallax background image effect
-    And white text overlays are readable with sufficient contrast
-```
+#### Scenario: Latest trending section renders
+
+- **GIVEN** the latest trending section is scrolled into view
+- **THEN** a parallax background image is visible
+- **AND** the heading "Discover latest trending recipes" is displayed
+- **AND** a "View all Recipes" button with brand yellow background is visible
+
+#### Scenario: Customer feedback carousel works
+
+- **GIVEN** the customer feedback section is scrolled into view
+- **THEN** the heading "Feedback From Customers" is visible
+- **AND** at least one testimonial with photo, name, title, and quote is shown
+- **AND** carousel navigation is present
+
+#### Scenario: Download app section renders
+
+- **GIVEN** the download app section is scrolled into view
+- **THEN** the heading "Download app to get recipes from Everywhere" is visible
+- **AND** App Store and Play Store download buttons are visible
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** 4 widget columns are visible (Top Products, Quick Links, Features, Resources)
+- **AND** a newsletter subscription form is present
+- **AND** a copyright notice is displayed
+- **AND** social media icon links are visible (Facebook, Twitter, Dribbble, Behance)
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** recipe/dish columns stack vertically
+- **AND** the hero text size reduces
+- **AND** the footer widget columns stack
+
+#### Scenario: Parallax effect on trending section
+
+- **GIVEN** the latest trending section exists
+- **THEN** it has a parallax background image effect
+- **AND** white text overlays are readable with sufficient contrast
 
 ## Verification Checklist
 

@@ -78,60 +78,68 @@ Recreation of ColorLib's **LuxuryHotel** template as a React 19 + Vite + Tailwin
 - "Connect With Us" contact info (repeated heading in original)
 - Copyright with link to componentdock.com
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: LavishLodge template behaviour
+
 Feature: LavishLodge — Luxury Hotel Template
 
-  Background:
-    Given the app is deployed at lavish-lodge.free.componentdock.com
-    And the page loads with no errors
+Background:
+- **GIVEN** the app is deployed at lavish-lodge.free.componentdock.com
+- **AND** the page loads with no errors
 
-  Scenario: Navbar renders all navigation items
-    Then the navbar displays the brand "LavishLodge"
-    And the navbar has links for "Home", "Rooms", "Blog", "About", "Contact"
-    And the navbar has a "Book Now" CTA button
-    And the "Rooms" link has a dropdown with "Presidential", "Luxury", "Deluxe"
+#### Scenario: Navbar renders all navigation items
 
-  Scenario: Hero section renders correctly
-    Then the hero section displays heading "Welcome To Our Luxury Rooms"
-    And the hero section displays subtitle "Discover our world's #1 Luxury Room For VIP."
-    And the hero section has a "Book Now" button
-    And the hero section has a dark overlay over a background image
+- **THEN** the navbar displays the brand "LavishLodge"
+- **AND** the navbar has links for "Home", "Rooms", "Blog", "About", "Contact"
+- **AND** the navbar has a "Book Now" CTA button
+- **AND** the "Rooms" link has a dropdown with "Presidential", "Luxury", "Deluxe"
 
-  Scenario: About section renders correctly
-    Then the about section displays heading "Stay and Enjoy"
-    And the about section displays subheading "Stay with our luxury rooms"
-    And the about section has a "More About Us" button
-    And the about section shows a text column and an image column
+#### Scenario: Hero section renders correctly
 
-  Scenario: Rooms section displays featured rooms
-    Then the rooms section displays heading "Featured Rooms"
-    And the rooms section displays subheading "Our Luxury Rooms"
-    And the rooms section displays 3 room cards
-    And each room card shows a room name and a price
-    And the rooms section has a "Book Now From $20" button
+- **THEN** the hero section displays heading "Welcome To Our Luxury Rooms"
+- **AND** the hero section displays subtitle "Discover our world's #1 Luxury Room For VIP."
+- **AND** the hero section has a "Book Now" button
+- **AND** the hero section has a dark overlay over a background image
 
-  Scenario: Parallax section renders correctly
-    Then the parallax section displays "Relax and Enjoy your Holiday"
-    And the parallax section has a dark overlay over a background image
+#### Scenario: About section renders correctly
 
-  Scenario: Blog section renders correctly
-    Then the blog section displays heading "Our Recent Blog"
-    And the blog section displays subheading "Our Blog"
-    And the blog section displays 3 blog post cards
-    And each blog card shows a title, image, and "Read More" link
+- **THEN** the about section displays heading "Stay and Enjoy"
+- **AND** the about section displays subheading "Stay with our luxury rooms"
+- **AND** the about section has a "More About Us" button
+- **AND** the about section shows a text column and an image column
 
-  Scenario: Footer renders correctly
-    Then the footer displays "Phone Support"
-    Then the footer displays "Connect With Us"
-    And the footer links to componentdock.com
+#### Scenario: Rooms section displays featured rooms
 
-  Scenario: Responsive behavior
-    Then the navbar collapses to a hamburger menu on mobile
-    And the room cards stack vertically on mobile
-    And the blog cards stack vertically on mobile
-```
+- **THEN** the rooms section displays heading "Featured Rooms"
+- **AND** the rooms section displays subheading "Our Luxury Rooms"
+- **AND** the rooms section displays 3 room cards
+- **AND** each room card shows a room name and a price
+- **AND** the rooms section has a "Book Now From $20" button
+
+#### Scenario: Parallax section renders correctly
+
+- **THEN** the parallax section displays "Relax and Enjoy your Holiday"
+- **AND** the parallax section has a dark overlay over a background image
+
+#### Scenario: Blog section renders correctly
+
+- **THEN** the blog section displays heading "Our Recent Blog"
+- **AND** the blog section displays subheading "Our Blog"
+- **AND** the blog section displays 3 blog post cards
+- **AND** each blog card shows a title, image, and "Read More" link
+
+#### Scenario: Footer renders correctly
+
+- **THEN** the footer displays "Phone Support"
+- **THEN** the footer displays "Connect With Us"
+- **AND** the footer links to componentdock.com
+
+#### Scenario: Responsive behavior
+
+- **THEN** the navbar collapses to a hamburger menu on mobile
+- **AND** the room cards stack vertically on mobile
+- **AND** the blog cards stack vertically on mobile
 
 ## Verification Checklist
 

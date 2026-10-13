@@ -64,7 +64,7 @@ creative agencies and freelancers showcasing their work.
 - **Section Backgrounds**: Solid `#040E27` dark navy (hero, portfolio,
   footer); solid `#fff` white (testimonial); `#1F1F1F` dark cards
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Dark-Themed Creative Portfolio Page
 
@@ -74,78 +74,78 @@ get in touch.
 
 #### Scenario: Page loads with dark navy hero and watermark text
 
-- Given the user visits the Portlane home page
-- Then the page background is dark navy (`#040E27`)
-- And a large transparent "PORTFOLIO" watermark text is visible behind
+- **GIVEN** the user visits the Portlane home page
+- **THEN** the page background is dark navy (`#040E27`)
+- **AND** a large transparent "PORTFOLIO" watermark text is visible behind
   the main heading (desktop only)
-- And the heading reads "World class consumer and trends research
+- **AND** the heading reads "World class consumer and trends research
   capabilities we design for tomorrow customers in tomorrow's markets."
-- And a "Hello Everyone" greeting in blue (`#0181F5`) appears above
+- **AND** a "Hello Everyone" greeting in blue (`#0181F5`) appears above
   the heading
 
 #### Scenario: Navigation bar displays correctly
 
-- Given the user views the page
-- Then a sticky/absolute navbar is displayed at the top
-- And the logo "PORTFOLIO" appears in white bold text on the left
-- And navigation links "Home", "About", "Blog", "Pages", "Contact"
+- **GIVEN** the user views the page
+- **THEN** a sticky/absolute navbar is displayed at the top
+- **AND** the logo "PORTFOLIO" appears in white bold text on the left
+- **AND** navigation links "Home", "About", "Blog", "Pages", "Contact"
   appear on the right
-- And the navbar has a transparent background overlaying the hero
+- **AND** the navbar has a transparent background overlaying the hero
 
 #### Scenario: Portfolio gallery shows masonry grid with hover effects
 
-- Given the user scrolls to the portfolio section
-- Then a masonry-style grid of portfolio images is displayed
-- And images use a mix of full-width and half-width layouts
-- And hovering over an image reveals a dark overlay with an action icon
-- And clicking a portfolio item could show more details or a lightbox
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** a masonry-style grid of portfolio images is displayed
+- **AND** images use a mix of full-width and half-width layouts
+- **AND** hovering over an image reveals a dark overlay with an action icon
+- **AND** clicking a portfolio item could show more details or a lightbox
 
 #### Scenario: Services section displays three service cards
 
-- Given the user scrolls to the services section
-- Then three service cards are displayed in a row (3D Modeling, UI/UX
+- **GIVEN** the user scrolls to the services section
+- **THEN** three service cards are displayed in a row (3D Modeling, UI/UX
   Design, Architectural Design)
-- And each card has a circular icon and descriptive text
-- And cards are responsive (stacking on mobile)
+- **AND** each card has a circular icon and descriptive text
+- **AND** cards are responsive (stacking on mobile)
 
 #### Scenario: Blog section shows article cards
 
-- Given the user scrolls to the blog section
-- Then the heading "Our Creative Articles" is displayed
-- And blog article cards with images, titles, and category tags are shown
-- And a "More Blogs" link is available
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading "Our Creative Articles" is displayed
+- **AND** blog article cards with images, titles, and category tags are shown
+- **AND** a "More Blogs" link is available
 
 #### Scenario: Testimonial slider works correctly
 
-- Given the user scrolls to the testimonial section
-- Then client testimonials with photos, names, and quotes are displayed
-- And the section has a white background (the only light section)
-- And the slider can be navigated between testimonials
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** client testimonials with photos, names, and quotes are displayed
+- **AND** the section has a white background (the only light section)
+- **AND** the slider can be navigated between testimonials
 
 #### Scenario: CTA section prompts contact
 
-- Given the user scrolls past the testimonials
-- Then a "Let's Talk" or "Start Talking" call-to-action is displayed
-- And clicking the CTA button initiates contact or scrolls to a form
+- **GIVEN** the user scrolls past the testimonials
+- **THEN** a "Let's Talk" or "Start Talking" call-to-action is displayed
+- **AND** clicking the CTA button initiates contact or scrolls to a form
 
 #### Scenario: Footer displays with dark theme and links
 
-- Given the user reaches the page footer
-- Then the footer has a dark navy background (`#040E27`)
-- And it contains service links, useful links, and social media icons
-- And social icons include Dribbble, Behance, Instagram, Facebook
-- And a copyright notice is displayed
-- And the footer links to Component Dock
+- **GIVEN** the user reaches the page footer
+- **THEN** the footer has a dark navy background (`#040E27`)
+- **AND** it contains service links, useful links, and social media icons
+- **AND** social icons include Dribbble, Behance, Instagram, Facebook
+- **AND** a copyright notice is displayed
+- **AND** the footer links to Component Dock
   (`https://www.componentdock.com/`)
 
 #### Scenario: Responsive layout adapts to mobile
 
-- Given the user views the page on a mobile device
-- Then the navbar collapses to a hamburger menu
-- And the portfolio grid stacks to a single column
-- And service cards stack vertically
-- And the watermark text is hidden on mobile (`d-none d-lg-block`)
-- And all text remains readable at smaller viewport widths
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the portfolio grid stacks to a single column
+- **AND** service cards stack vertically
+- **AND** the watermark text is hidden on mobile (`d-none d-lg-block`)
+- **AND** all text remains readable at smaller viewport widths
 
 ## Verification Checklist
 

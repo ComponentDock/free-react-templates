@@ -17,42 +17,47 @@ Recreation of ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/b
 - **Border Radius**: 4px (`rounded`) for buttons
 - **Background**: Light clean white background with crisp typography and card groupings.
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Header & Navigation
 
-- **Scenario**: User views the top navigation bar and title section.
-  - **Given** the app is loaded
-  - **When** the user views the header
-  - **Then** it displays the brand title "#06 — Bootstrap 4 Buttons" with a clean navbar and dark/light mode toggle.
+#### Scenario: User views the top navigation bar and title section.
+
+- **GIVEN** the app is loaded
+- **WHEN** the user views the header
+- **THEN** it displays the brand title "#06 — Bootstrap 4 Buttons" with a clean navbar and dark/light mode toggle
 
 ### Requirement 2: Button Sizes Showcase
 
-- **Scenario**: User views button sizes.
-  - **Given** the user scrolls to the sizes section
-  - **When** the section is rendered
-  - **Then** it displays Large, Medium, and Small buttons with appropriate padding and font sizes.
+#### Scenario: User views button sizes.
+
+- **GIVEN** the user scrolls to the sizes section
+- **WHEN** the section is rendered
+- **THEN** it displays Large, Medium, and Small buttons with appropriate padding and font sizes
 
 ### Requirement 3: Button Colors Showcase
 
-- **Scenario**: User views the comprehensive color palette of buttons.
-  - **Given** the user scrolls to the button colors section
-  - **When** the color grid is rendered
-  - **Then** it displays Primary, Secondary, Success, Info, Warning, Danger, Light, Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray, and White buttons.
+#### Scenario: User views the comprehensive color palette of buttons.
+
+- **GIVEN** the user scrolls to the button colors section
+- **WHEN** the color grid is rendered
+- **THEN** it displays Primary, Secondary, Success, Info, Warning, Danger, Light, Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray, and White buttons
 
 ### Requirement 4: Full-width Button
 
-- **Scenario**: User views the block/full-width button.
-  - **Given** the user scrolls to the bottom actions
-  - **When** the section is rendered
-  - **Then** it displays a full-width primary button.
+#### Scenario: User views the block/full-width button.
+
+- **GIVEN** the user scrolls to the bottom actions
+- **WHEN** the section is rendered
+- **THEN** it displays a full-width primary button
 
 ### Requirement 5: Footer & Component Dock Link
 
-- **Scenario**: User scrolls to the footer.
-  - **Given** the user reaches the bottom of the page
-  - **When** the footer is rendered
-  - **Then** it displays copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock").
+#### Scenario: User scrolls to the footer.
+
+- **GIVEN** the user reaches the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it displays copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

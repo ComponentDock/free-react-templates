@@ -51,70 +51,64 @@ The template is a single centered modal popup on a page. Section order:
 8. **Dual action buttons** — 2-column row: "No, thanks" (secondary, left) + "Subscribe" (primary, right)
 9. **Footer text** — small gray text below buttons
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with launch button
-```gherkin
-Given the user visits the Subforge page
-Then a "Launch modal" button is visible in the center of the viewport
-And no modal is displayed initially
-```
+### Feature: Subforge template behaviour
 
-### Scenario: Modal opens on button click
-```gherkin
-Given the modal is closed
-When the user clicks the "Launch modal" button
-Then the modal appears centered on screen
-And the modal has a light pink background (#f9eaf2)
-And a centered logo/icon is visible
-And the heading "Exclusives offer from Instagram" is visible
-And a description paragraph is visible
-```
+#### Scenario: Page renders with launch button
 
-### Scenario: Email subscription form
-```gherkin
-Given the modal is open
-Then a full-width email input with placeholder "Enter your email address" is visible
-And the input has a subtle box shadow
-And a "Subscribe" button (primary/blue) is visible on the right
-And a "No, thanks" button (secondary/gray) is visible on the left
-```
+- **GIVEN** the user visits the Subforge page
+- **THEN** a "Launch modal" button is visible in the center of the viewport
+- **AND** no modal is displayed initially
 
-### Scenario: Close via close button
-```gherkin
-Given the modal is open
-When the user clicks the close button (X icon) in the top-right corner
-Then the modal closes
-```
+#### Scenario: Modal opens on button click
 
-### Scenario: Close via "No, thanks" button
-```gherkin
-Given the modal is open
-When the user clicks the "No, thanks" button
-Then the modal closes
-```
+- **GIVEN** the modal is closed
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** the modal appears centered on screen
+- **AND** the modal has a light pink background (#f9eaf2)
+- **AND** a centered logo/icon is visible
+- **AND** the heading "Exclusives offer from Instagram" is visible
+- **AND** a description paragraph is visible
 
-### Scenario: Subscribe action
-```gherkin
-Given the modal is open
-When the user enters a valid email and clicks "Subscribe"
-Then the form submits (default behavior)
-```
+#### Scenario: Email subscription form
 
-### Scenario: Keyboard accessibility
-```gherkin
-Given the modal is open
-When the user presses Escape
-Then the modal closes
-And focus returns to the "Launch modal" button
-```
+- **GIVEN** the modal is open
+- **THEN** a full-width email input with placeholder "Enter your email address" is visible
+- **AND** the input has a subtle box shadow
+- **AND** a "Subscribe" button (primary/blue) is visible on the right
+- **AND** a "No, thanks" button (secondary/gray) is visible on the left
 
-### Scenario: Responsive layout
-```gherkin
-Given the user views the template on a mobile viewport (< 576px)
-Then the modal fills the viewport width with appropriate padding
-And the dual buttons stack vertically or remain side-by-side per breakpoint
-```
+#### Scenario: Close via close button
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X icon) in the top-right corner
+- **THEN** the modal closes
+
+#### Scenario: Close via "No, thanks" button
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "No, thanks" button
+- **THEN** the modal closes
+
+#### Scenario: Subscribe action
+
+- **GIVEN** the modal is open
+- **WHEN** the user enters a valid email and clicks "Subscribe"
+- **THEN** the form submits (default behavior)
+
+#### Scenario: Keyboard accessibility
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Escape
+- **THEN** the modal closes
+- **AND** focus returns to the "Launch modal" button
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the template on a mobile viewport (< 576px)
+- **THEN** the modal fills the viewport width with appropriate padding
+- **AND** the dual buttons stack vertically or remain side-by-side per breakpoint
 
 ## Verification checklist
 

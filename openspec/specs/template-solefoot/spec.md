@@ -85,65 +85,76 @@ Extracted from the preview CSS (`style.css`) and HTML.
    - Column 4: "Subscribe" heading + email input with submit button, "Follow us" heading + 3 social icons (Twitter, Facebook, Instagram)
 3. **Copyright bar**: full-width divider, border-top + darker `#1a1a1a` background, copyright text (left), Terms/Privacy/Compliances links (right)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Solefoot template behaviour
+
 Feature: Solefoot template — Bootstrap Footer 14 recreation
-  As a visitor I want a professional full-width footer with brand info,
-  navigation, tags, subscription, and social links.
+As a visitor I want a professional full-width footer with brand info,
+navigation, tags, subscription, and social links.
 
-  Background:
-    Given the template is loaded at the root URL
+Background:
+- **GIVEN** the template is loaded at the root URL
 
-  Scenario: Hero section renders
-    Then the hero heading is visible
-    And the hero heading text is "Footer #04"
-    And the hero section has a white background
+#### Scenario: Hero section renders
 
-  Scenario: Footer has four columns
-    Then the footer section is visible
-    And there are four columns in the footer on desktop
+- **THEN** the hero heading is visible
+- **AND** the hero heading text is "Footer #04"
+- **AND** the hero section has a white background
 
-  Scenario: Column 1 — brand info
-    Then the first column shows the brand name "Solefoot"
-    And the first column has a description paragraph
-    And the first column has a "read more" link
+#### Scenario: Footer has four columns
 
-  Scenario: Column 2 — categories
-    Then the second column has a "Categories" heading
-    And the second column lists 4 category links
+- **THEN** the footer section is visible
+- **AND** there are four columns in the footer on desktop
 
-  Scenario: Column 3 — tag cloud
-    Then the third column has a "Tag cloud" heading
-    And the third column shows 8 tag links
-    And each tag link is styled as uppercase with a rounded border
+#### Scenario: Column 1 — brand info
 
-  Scenario: Column 4 — subscribe form
-    Then the fourth column has a "Subscribe" heading
-    And the subscribe form has an email input and a submit button
-    And the submit button has a gold accent background
+- **THEN** the first column shows the brand name "Solefoot"
+- **AND** the first column has a description paragraph
+- **AND** the first column has a "read more" link
 
-  Scenario: Column 4 — social links
-    Then the fourth column has a "Follow us" heading
-    And there are 3 social media icon links (Twitter, Facebook, Instagram)
-    And each social icon is a 40x40px square with rounded corners
+#### Scenario: Column 2 — categories
 
-  Scenario: Copyright bar
-    Then the copyright bar is visible at the bottom
-    And the copyright bar shows "All rights reserved"
-    And the copyright bar has Terms, Privacy, and Compliances links
+- **THEN** the second column has a "Categories" heading
+- **AND** the second column lists 4 category links
 
-  Scenario: Footer link color
-    Then all links in the footer have a gold accent color (#f7b633)
+#### Scenario: Column 3 — tag cloud
 
-  Scenario: Footer background
-    Then the footer background is dark (#272727)
-    And the copyright bar background is darker (#1a1a1a)
+- **THEN** the third column has a "Tag cloud" heading
+- **AND** the third column shows 8 tag links
+- **AND** each tag link is styled as uppercase with a rounded border
 
-  Scenario: Footer attribution
-    Then the footer MUST link to https://www.componentdock.com/
-    And the footer link text says "Component Dock"
-```
+#### Scenario: Column 4 — subscribe form
+
+- **THEN** the fourth column has a "Subscribe" heading
+- **AND** the subscribe form has an email input and a submit button
+- **AND** the submit button has a gold accent background
+
+#### Scenario: Column 4 — social links
+
+- **THEN** the fourth column has a "Follow us" heading
+- **AND** there are 3 social media icon links (Twitter, Facebook, Instagram)
+- **AND** each social icon is a 40x40px square with rounded corners
+
+#### Scenario: Copyright bar
+
+- **THEN** the copyright bar is visible at the bottom
+- **AND** the copyright bar shows "All rights reserved"
+- **AND** the copyright bar has Terms, Privacy, and Compliances links
+
+#### Scenario: Footer link color
+
+- **THEN** all links in the footer have a gold accent color (#f7b633)
+
+#### Scenario: Footer background
+
+- **THEN** the footer background is dark (#272727)
+- **AND** the copyright bar background is darker (#1a1a1a)
+
+#### Scenario: Footer attribution
+
+- **THEN** the footer MUST link to https://www.componentdock.com/
+- **AND** the footer link text says "Component Dock"
 
 ## Verification Checklist
 

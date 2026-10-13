@@ -75,61 +75,63 @@ and price borders, and Ionicons chevron toggle.
 7. **Accordion item: Drink** — icon (flaticon-cocktail), label "Drink",
    collapsed. Same structure.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page layout
+### Feature: Banquette template behaviour
 
-Given the user loads the page
-Then a centered heading "Accordion #02" is displayed at the top
-And a white card with shadow is centered below
+#### Scenario: Page layout
 
-### Scenario: Accordion header
+- **GIVEN** the user loads the page
+- **THEN** a centered heading "Accordion #02" is displayed at the top
+- **AND** a white card with shadow is centered below
 
-Given the accordion card is visible
-Then a purple header bar shows "Our Specialties" in white text
-And the header spans the full width of the card
+#### Scenario: Accordion header
 
-### Scenario: Accordion items visible
+- **GIVEN** the accordion card is visible
+- **THEN** a purple header bar shows "Our Specialties" in white text
+- **AND** the header spans the full width of the card
 
-Given the accordion is displayed
-Then 4 accordion items are shown: Breakfast, Lunch, Dinner, Drink
-And each item has an icon, label text, and expand/collapse chevron
+#### Scenario: Accordion items visible
 
-### Scenario: Default expanded state
+- **GIVEN** the accordion is displayed
+- **THEN** 4 accordion items are shown: Breakfast, Lunch, Dinner, Drink
+- **AND** each item has an icon, label text, and expand/collapse chevron
 
-Given the page loads
-Then the Breakfast item is expanded by default
-And the Lunch, Dinner, and Drink items are collapsed
+#### Scenario: Default expanded state
 
-### Scenario: Menu items in expanded panel
+- **GIVEN** the page loads
+- **THEN** the Breakfast item is expanded by default
+- **AND** the Lunch, Dinner, and Drink items are collapsed
 
-Given the Breakfast item is expanded
-Then 3 menu items are displayed vertically
-And each menu item has a circular food image, dish name, price, and
+#### Scenario: Menu items in expanded panel
+
+- **GIVEN** the Breakfast item is expanded
+- **THEN** 3 menu items are displayed vertically
+- **AND** each menu item has a circular food image, dish name, price, and
 ingredient tags
 
-### Scenario: Accordion toggle behavior
+#### Scenario: Accordion toggle behavior
 
-Given the Breakfast item is expanded
-When the user clicks the Lunch header
-Then the Breakfast panel collapses
-And the Lunch panel expands
-And only one panel is expanded at a time
+- **GIVEN** the Breakfast item is expanded
+- **WHEN** the user clicks the Lunch header
+- **THEN** the Breakfast panel collapses
+- **AND** the Lunch panel expands
+- **AND** only one panel is expanded at a time
 
-### Scenario: Menu item layout
+#### Scenario: Menu item layout
 
-Given a menu item is displayed
-Then the food image is a 100px circle on the left
-And the dish name is 22px bold to the right of the image
-And the price is right-aligned with a yellow bottom border
-And ingredient tags appear below the dish name
+- **GIVEN** a menu item is displayed
+- **THEN** the food image is a 100px circle on the left
+- **AND** the dish name is 22px bold to the right of the image
+- **AND** the price is right-aligned with a yellow bottom border
+- **AND** ingredient tags appear below the dish name
 
-### Scenario: Responsive behavior
+#### Scenario: Responsive behavior
 
-Given the user views on mobile
-Then the accordion card stacks full-width
-And menu item images appear above the text content
-And the layout adapts to single-column
+- **GIVEN** the user views on mobile
+- **THEN** the accordion card stacks full-width
+- **AND** menu item images appear above the text content
+- **AND** the layout adapts to single-column
 
 ## Verification checklist
 

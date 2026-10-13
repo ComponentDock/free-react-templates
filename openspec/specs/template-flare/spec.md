@@ -65,74 +65,83 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - No multi-column layout — minimal single-row footer
 - White background, centered text
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Flare template behaviour
+
 Feature: Flare — Photography Portfolio Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "Flare"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "Flare"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo "Flare" is visible in the top-left
-    And navigation links "Home", "Gallery", "Services", "Blog", "About", "Reviews", "Contact" are visible
-    And social icons (Facebook, Twitter, Instagram, YouTube) are visible on the right
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Gallery dropdown shows categories
-    Given the user hovers over or clicks "Gallery" in the navbar
-    Then a dropdown menu appears with categories: Nature, Portrait, People, Architecture, Animals, Sports, Travel
-    And each category item is clickable
+- **GIVEN** the user is on any viewport
+- **THEN** the logo "Flare" is visible in the top-left
+- **AND** navigation links "Home", "Gallery", "Services", "Blog", "About", "Reviews", "Contact" are visible
+- **AND** social icons (Facebook, Twitter, Instagram, YouTube) are visible on the right
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: Full-viewport carousel displays correctly
-    Given the carousel section is in the viewport
-    Then a full-width Swiper carousel is visible
-    And the carousel height fills the viewport minus the navbar
-    And at least 7 slides are present
-    And each slide has a category name heading and a "More Photos" button
-    And the first slide's image is visible with overlay text
+#### Scenario: Gallery dropdown shows categories
 
-  Scenario: Carousel navigation works
-    Given the carousel is displayed
-    Then prev/next arrow buttons are visible on left and right sides
-    And pagination dots are visible at the bottom
-    When the user clicks the next arrow
-    Then the carousel advances to the next slide
-    When the user clicks the previous arrow
-    Then the carousel returns to the previous slide
+- **GIVEN** the user hovers over or clicks "Gallery" in the navbar
+- **THEN** a dropdown menu appears with categories: Nature, Portrait, People, Architecture, Animals, Sports, Travel
+- **AND** each category item is clickable
 
-  Scenario: Carousel button hover effect
-    Given a carousel slide is displayed
-    Then the "More Photos" button has white text and white border on transparent background
-    When the user hovers over the button
-    Then the button background becomes white and text becomes black
+#### Scenario: Full-viewport carousel displays correctly
 
-  Scenario: Image hover overlay effect
-    Given a carousel slide image is displayed
-    When the user hovers over the image area
-    Then a dark semi-transparent overlay appears over the image
+- **GIVEN** the carousel section is in the viewport
+- **THEN** a full-width Swiper carousel is visible
+- **AND** the carousel height fills the viewport minus the navbar
+- **AND** at least 7 slides are present
+- **AND** each slide has a category name heading and a "More Photos" button
+- **AND** the first slide's image is visible with overlay text
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then a copyright line with the current year is visible
-    And a link to "https://www.componentdock.com/" is present
-    And no other attribution links are visible
+#### Scenario: Carousel navigation works
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And the carousel still fills the viewport
-    And social icons are hidden on mobile
-    And the footer remains single-line and centered
+- **GIVEN** the carousel is displayed
+- **THEN** prev/next arrow buttons are visible on left and right sides
+- **AND** pagination dots are visible at the bottom
+- **WHEN** the user clicks the next arrow
+- **THEN** the carousel advances to the next slide
+- **WHEN** the user clicks the previous arrow
+- **THEN** the carousel returns to the previous slide
 
-  Scenario: No ColorLib references in app code
-    Given the template source code is inspected
-    Then no file contains "colorlib.com" or "preview.colorlib.com"
-    And the provenance is only in the spec and TEMPLATES.md
-```
+#### Scenario: Carousel button hover effect
+
+- **GIVEN** a carousel slide is displayed
+- **THEN** the "More Photos" button has white text and white border on transparent background
+- **WHEN** the user hovers over the button
+- **THEN** the button background becomes white and text becomes black
+
+#### Scenario: Image hover overlay effect
+
+- **GIVEN** a carousel slide image is displayed
+- **WHEN** the user hovers over the image area
+- **THEN** a dark semi-transparent overlay appears over the image
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** a copyright line with the current year is visible
+- **AND** a link to "https://www.componentdock.com/" is present
+- **AND** no other attribution links are visible
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the carousel still fills the viewport
+- **AND** social icons are hidden on mobile
+- **AND** the footer remains single-line and centered
+
+#### Scenario: No ColorLib references in app code
+
+- **GIVEN** the template source code is inspected
+- **THEN** no file contains "colorlib.com" or "preview.colorlib.com"
+- **AND** the provenance is only in the spec and TEMPLATES.md
 
 ## Verification Checklist
 

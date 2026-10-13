@@ -68,25 +68,28 @@ Visual layout from the HTML structure and CSS:
 - Green accent color (#8eb852) used for buttons, focus states, and cart prices
 - Clean, minimal design with light gray borders (#e6e6e6) and muted text (#999, #666, #333)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: ShopSteps Multi-Step Checkout Wizard
 
-Scenario: Page loads with centered wizard card
-Given the page has loaded
-Then a white card is centered on a background image
-And the card displays a 4-step progress indicator
+#### Scenario: Page loads with centered wizard card
 
-Scenario: Step indicator shows all steps
-Given the page has loaded
-Then 4 step labels are visible: "Basic details", "Password change", "My Cart", "Cart Totals"
-And steps are connected by arrow indicators
-And the current step is highlighted
+- **GIVEN** the page has loaded
+- **THEN** a white card is centered on a background image
+- **AND** the card displays a 4-step progress indicator
 
-Scenario: Step 1 — Basic Details form
-Given the wizard is on step 1
-Then a "Basic details" heading is displayed
-And 8 form fields are visible in a 2-column grid:
+#### Scenario: Step indicator shows all steps
+
+- **GIVEN** the page has loaded
+- **THEN** 4 step labels are visible: "Basic details", "Password change", "My Cart", "Cart Totals"
+- **AND** steps are connected by arrow indicators
+- **AND** the current step is highlighted
+
+#### Scenario: Step 1 — Basic Details form
+
+- **GIVEN** the wizard is on step 1
+- **THEN** a "Basic details" heading is displayed
+- **AND** 8 form fields are visible in a 2-column grid:
 | Field | Icon |
 | First Name | zmdi-account |
 | Last Name | zmdi-account |
@@ -97,72 +100,82 @@ And 8 form fields are visible in a 2-column grid:
 | City | zmdi-pin-drop |
 | Phone Number | zmdi-smartphone |
 | Reference Coder | zmdi-eye (password toggle) |
-And a "Next" button is visible
+- **AND** a "Next" button is visible
 
-Scenario: Navigate to next step
-Given the wizard is on step 1
-When the user clicks the "Next" button
-Then the wizard advances to step 2
-And the step indicator updates to show step 2 as current
+#### Scenario: Navigate to next step
 
-Scenario: Navigate to previous step
-Given the wizard is on step 2
-When the user clicks the "Previous" button
-Then the wizard returns to step 1
+- **GIVEN** the wizard is on step 1
+- **WHEN** the user clicks the "Next" button
+- **THEN** the wizard advances to step 2
+- **AND** the step indicator updates to show step 2 as current
 
-Scenario: Step 2 — Password Change
-Given the wizard is on step 2
-Then a "Password change" heading is displayed
-And 4 full-width password fields are visible:
+#### Scenario: Navigate to previous step
+
+- **GIVEN** the wizard is on step 2
+- **WHEN** the user clicks the "Previous" button
+- **THEN** the wizard returns to step 1
+
+#### Scenario: Step 2 — Password Change
+
+- **GIVEN** the wizard is on step 2
+- **THEN** a "Password change" heading is displayed
+- **AND** 4 full-width password fields are visible:
 | Field |
 | Current Password |
 | Enter the Current Password |
 | New Password |
 | Confirm New Password |
-And each field has a lock-open icon
+- **AND** each field has a lock-open icon
 
-Scenario: Step 3 — My Cart
-Given the wizard is on step 3
-Then a "My Cart" heading is displayed
-And a cart table is visible with columns: Product Detail, Quantity, Total Price
-And 2 cart items are displayed (Cherry $35, Mango $20)
-And each item has a thumbnail, name, price, quantity input with +/- controls, and remove button
+#### Scenario: Step 3 — My Cart
 
-Scenario: Quantity controls in cart
-Given the wizard is on step 3
-When the user clicks the "+" button on a cart item
-Then the quantity increases by 1
-And the total price updates accordingly
+- **GIVEN** the wizard is on step 3
+- **THEN** a "My Cart" heading is displayed
+- **AND** a cart table is visible with columns: Product Detail, Quantity, Total Price
+- **AND** 2 cart items are displayed (Cherry $35, Mango $20)
+- **AND** each item has a thumbnail, name, price, quantity input with +/- controls, and remove button
 
-Scenario: Remove item from cart
-Given the wizard is on step 3
-When the user clicks the remove button on a cart item
-Then the item is removed from the cart
+#### Scenario: Quantity controls in cart
 
-Scenario: Step 4 — Cart Totals
-Given the wizard is on step 4
-Then a "Cart Totals" heading is displayed
-And a totals table shows: Subtotal, Shipping, Service, Total
-And shipping options include radio buttons: "Free Shipping" and "Local pickup"
-And the total price is displayed in green (#92c752)
+- **GIVEN** the wizard is on step 3
+- **WHEN** the user clicks the "+" button on a cart item
+- **THEN** the quantity increases by 1
+- **AND** the total price updates accordingly
 
-Scenario: Final submission
-Given the wizard is on step 4
-When the user clicks the submit button
-Then the form is submitted
+#### Scenario: Remove item from cart
 
-Scenario: Responsive layout
-Given the page is viewed on a mobile viewport (below 767px)
-Then the background image is hidden
-And form rows stack vertically (single column)
-And the wizard card fills the screen width
-And cart table columns stack vertically
+- **GIVEN** the wizard is on step 3
+- **WHEN** the user clicks the remove button on a cart item
+- **THEN** the item is removed from the cart
 
-Scenario: Accessibility
-Given the wizard is loaded
-Then all form inputs have associated labels or placeholders
-And the step indicator is keyboard navigable
-And focus states are visible on interactive elements
+#### Scenario: Step 4 — Cart Totals
+
+- **GIVEN** the wizard is on step 4
+- **THEN** a "Cart Totals" heading is displayed
+- **AND** a totals table shows: Subtotal, Shipping, Service, Total
+- **AND** shipping options include radio buttons: "Free Shipping" and "Local pickup"
+- **AND** the total price is displayed in green (#92c752)
+
+#### Scenario: Final submission
+
+- **GIVEN** the wizard is on step 4
+- **WHEN** the user clicks the submit button
+- **THEN** the form is submitted
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the page is viewed on a mobile viewport (below 767px)
+- **THEN** the background image is hidden
+- **AND** form rows stack vertically (single column)
+- **AND** the wizard card fills the screen width
+- **AND** cart table columns stack vertically
+
+#### Scenario: Accessibility
+
+- **GIVEN** the wizard is loaded
+- **THEN** all form inputs have associated labels or placeholders
+- **AND** the step indicator is keyboard navigable
+- **AND** focus states are visible on interactive elements
 
 ## Verification Checklist
 

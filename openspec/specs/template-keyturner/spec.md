@@ -39,73 +39,81 @@ Extracted from the live preview CSS (`css/style.css`):
 6. **Recent Blog Posts** — Section with `bg-light` background. Heading "Recent Blog Post". 3 blog post cards with image, date, title, excerpt, "Read more" link.
 7. **Footer** — Dark background (`#1a1a1a`). Newsletter signup form (input + submit). Three-column layout: About Us description, Quick Links, Contact Info (address, email, phone). Copyright bar with Component Dock attribution.
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: Keyturner template behaviour
+
 Feature: Keyturner Real Estate Agent Template
 
-  Background:
-    Given the Keyturner template is loaded
+Background:
+- **GIVEN** the Keyturner template is loaded
 
-  Scenario: Navbar renders with logo and navigation links
-    Given the page loads
-    Then the navbar displays a logo
-    And the navbar shows links: About, Blog, Contact
-    And contact info (address, email, phone) is visible
-    And the navbar is sticky on scroll
+#### Scenario: Navbar renders with logo and navigation links
 
-  Scenario: Hero section displays with correct typography
-    Given the page loads
-    Then the hero has a background image with dark overlay
-    And the heading reads "I'm Your Realtor, Get Your Key"
-    And the heading uses Playfair Display font at large size
-    And two CTA buttons are visible: "Get In Touch" and "Download"
-    And the buttons are pill-shaped (border-radius 50px)
-    And a scroll-down indicator is present
+- **GIVEN** the page loads
+- **THEN** the navbar displays a logo
+- **AND** the navbar shows links: About, Blog, Contact
+- **AND** contact info (address, email, phone) is visible
+- **AND** the navbar is sticky on scroll
 
-  Scenario: Popular Properties section shows property cards
-    Given the page loads
-    When I scroll to the properties section
-    Then 3 property cards are displayed in a grid
-    And each card has an image, star rating, and title
-    And the cards have rounded corners
+#### Scenario: Hero section displays with correct typography
 
-  Scenario: About Agent section with bio and features
-    Given the page loads
-    When I scroll to the about section
-    Then an agent avatar and "About Me" heading are shown
-    And 3 feature cards are displayed: Deal On Time, Good Reviews, 24/7 Support
-    And each feature card has an icon, title, and description
+- **GIVEN** the page loads
+- **THEN** the hero has a background image with dark overlay
+- **AND** the heading reads "I'm Your Realtor, Get Your Key"
+- **AND** the heading uses Playfair Display font at large size
+- **AND** two CTA buttons are visible: "Get In Touch" and "Download"
+- **AND** the buttons are pill-shaped (border-radius 50px)
+- **AND** a scroll-down indicator is present
 
-  Scenario: Happy Customers testimonials section
-    Given the page loads
-    When I scroll to the testimonials section
-    Then the heading reads "Happy Customers"
-    And 3 testimonial cards are shown with customer quotes
+#### Scenario: Popular Properties section shows property cards
 
-  Scenario: Recent Blog Posts section
-    Given the page loads
-    When I scroll to the blog section
-    Then the heading reads "Recent Blog Post"
-    And 3 blog post cards are displayed
-    And each card has an image, title, and excerpt
-    And the section has a light background
+- **GIVEN** the page loads
+- **WHEN** I scroll to the properties section
+- **THEN** 3 property cards are displayed in a grid
+- **AND** each card has an image, star rating, and title
+- **AND** the cards have rounded corners
 
-  Scenario: Footer with newsletter and contact
-    Given the page loads
-    When I scroll to the footer
-    Then a newsletter signup form is visible
-    And the footer has a dark background (#1a1a1a)
-    And the footer contains About Us, Quick Links, and Contact Info columns
-    And the copyright line links to Component Dock
+#### Scenario: About Agent section with bio and features
 
-  Scenario: Responsive layout on mobile
-    Given the page loads on a viewport width of 375px
-    Then the navbar collapses to a hamburger menu
-    And the hero heading scales down to ~40px
-    And property cards stack vertically
-    And blog cards stack vertically
-```
+- **GIVEN** the page loads
+- **WHEN** I scroll to the about section
+- **THEN** an agent avatar and "About Me" heading are shown
+- **AND** 3 feature cards are displayed: Deal On Time, Good Reviews, 24/7 Support
+- **AND** each feature card has an icon, title, and description
+
+#### Scenario: Happy Customers testimonials section
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the testimonials section
+- **THEN** the heading reads "Happy Customers"
+- **AND** 3 testimonial cards are shown with customer quotes
+
+#### Scenario: Recent Blog Posts section
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the blog section
+- **THEN** the heading reads "Recent Blog Post"
+- **AND** 3 blog post cards are displayed
+- **AND** each card has an image, title, and excerpt
+- **AND** the section has a light background
+
+#### Scenario: Footer with newsletter and contact
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** a newsletter signup form is visible
+- **AND** the footer has a dark background (#1a1a1a)
+- **AND** the footer contains About Us, Quick Links, and Contact Info columns
+- **AND** the copyright line links to Component Dock
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the page loads on a viewport width of 375px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero heading scales down to ~40px
+- **AND** property cards stack vertically
+- **AND** blog cards stack vertically
 
 ## Verification checklist
 

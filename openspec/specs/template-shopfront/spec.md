@@ -39,99 +39,116 @@ From the ColorLib preview DOM analysis:
 - **Picked For You** — similar product grid.
 - **Footer** — light gray (#F6F7F8) background, 4 columns: logo + social, My Account links, Customer Service links, Newsletter signup form. Copyright bar at bottom.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Shopfront template behaviour
+
 Feature: Shopfront E-Commerce Template
 
-  Background:
-    Given the user visits the Shopfront homepage
+Background:
+- **GIVEN** the user visits the Shopfront homepage
 
-  # ── Top Header Bar ──
+**── Top Header Bar ──**
 
-  Scenario: Top header shows welcome and utility links
-    Then the top header should display "Welcome to Shopfront!"
-    And utility links: Store, Newsletter, FAQ
-    And language selector (ENG) and currency selector (USD)
+#### Scenario: Top header shows welcome and utility links
 
-  # ── Main Header ──
+- **THEN** the top header should display "Welcome to Shopfront!"
+- **AND** utility links: Store, Newsletter, FAQ
+- **AND** language selector (ENG) and currency selector (USD)
 
-  Scenario: Main header has logo and search
-    Then the header should display the site logo
-    And a search bar with text input, category dropdown, and search button
+**── Main Header ──**
 
-  Scenario: Header shows account and cart
-    Then the header should show "My Account" dropdown with Login/Join
-    And a cart icon with item count badge and total price
-    And a mobile nav toggle button
+#### Scenario: Main header has logo and search
 
-  # ── Category Navigation ──
+- **THEN** the header should display the site logo
+- **AND** a search bar with text input, category dropdown, and search button
 
-  Scenario: Category navigation displays categories
-    Then the nav bar should show "Categories" button
-    And horizontal links: Women's Clothing, Men's Clothing, Electronics, Home & Garden
+#### Scenario: Header shows account and cart
 
-  Scenario: Category dropdown shows subcategories
-    When the user hovers a category with subcategories
-    Then a mega-dropdown should appear with category columns and a banner
+- **THEN** the header should show "My Account" dropdown with Login/Join
+- **AND** a cart icon with item count badge and total price
+- **AND** a mobile nav toggle button
 
-  # ── Hero Slider ──
+**── Category Navigation ──**
 
-  Scenario: Hero slider shows promotional slides
-    Then the hero slider should display promotional content
-    And a "Shop Now" call-to-action button
+#### Scenario: Category navigation displays categories
 
-  # ── Category Banners ──
+- **THEN** the nav bar should show "Categories" button
+- **AND** horizontal links: Women's Clothing, Men's Clothing, Electronics, Home & Garden
 
-  Scenario: Category banner grid shows categories
-    Then the category section should display 4 category cards
-    And each card should show category name and image with overlay
+#### Scenario: Category dropdown shows subcategories
 
-  # ── Deals of the Day ──
+- **WHEN** the user hovers a category with subcategories
+- **THEN** a mega-dropdown should appear with category columns and a banner
 
-  Scenario: Deals section shows products with prices
-    Then the "Deals Of The Day" section should display product cards
-    And each card should show image, rating, price, and action buttons
+**── Hero Slider ──**
 
-  # ── Latest Products ──
+#### Scenario: Hero slider shows promotional slides
 
-  Scenario: Latest products grid shows products
-    Then the "Latest Products" section should display product cards in a grid
-    And each card should show image, star rating, product name, and price
+- **THEN** the hero slider should display promotional content
+- **AND** a "Shop Now" call-to-action button
 
-  Scenario: Product card has action buttons
-    Then each product card should have add-to-cart, wishlist, and compare buttons
+**── Category Banners ──**
 
-  # ── Picked For You ──
+#### Scenario: Category banner grid shows categories
 
-  Scenario: Picked section shows recommended products
-    Then the "Picked For You" section should display product cards
+- **THEN** the category section should display 4 category cards
+- **AND** each card should show category name and image with overlay
 
-  # ── Newsletter / Footer ──
+**── Deals of the Day ──**
 
-  Scenario: Footer shows 4 columns
-    Then the footer should display 4 columns: About/Logo, My Account, Customer Service, Stay Connected
+#### Scenario: Deals section shows products with prices
 
-  Scenario: Footer newsletter has email form
-    Then the "Stay Connected" column should show an email input and "Join Newsletter" button
+- **THEN** the "Deals Of The Day" section should display product cards
+- **AND** each card should show image, rating, price, and action buttons
 
-  Scenario: Footer social links
-    Then the footer should show social icons: Facebook, Twitter, Instagram, Google+, Pinterest
+**── Latest Products ──**
 
-  Scenario: Footer copyright
-    Then the footer bottom should show copyright text and a "Component Dock" link
+#### Scenario: Latest products grid shows products
 
-  # ── Responsive ──
+- **THEN** the "Latest Products" section should display product cards in a grid
+- **AND** each card should show image, star rating, product name, and price
 
-  Scenario: Mobile view collapses nav
-    When the viewport width is less than 768px
-    Then the category nav should be hidden
-    And the header should show a hamburger toggle
+#### Scenario: Product card has action buttons
 
-  Scenario: Mobile view adjusts grid
-    When the viewport width is less than 768px
-    Then product grids should stack to 2 columns
-```
+- **THEN** each product card should have add-to-cart, wishlist, and compare buttons
+
+**── Picked For You ──**
+
+#### Scenario: Picked section shows recommended products
+
+- **THEN** the "Picked For You" section should display product cards
+
+**── Newsletter / Footer ──**
+
+#### Scenario: Footer shows 4 columns
+
+- **THEN** the footer should display 4 columns: About/Logo, My Account, Customer Service, Stay Connected
+
+#### Scenario: Footer newsletter has email form
+
+- **THEN** the "Stay Connected" column should show an email input and "Join Newsletter" button
+
+#### Scenario: Footer social links
+
+- **THEN** the footer should show social icons: Facebook, Twitter, Instagram, Google+, Pinterest
+
+#### Scenario: Footer copyright
+
+- **THEN** the footer bottom should show copyright text and a "Component Dock" link
+
+**── Responsive ──**
+
+#### Scenario: Mobile view collapses nav
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** the category nav should be hidden
+- **AND** the header should show a hamburger toggle
+
+#### Scenario: Mobile view adjusts grid
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** product grids should stack to 2 columns
 
 ## Verification Checklist
 

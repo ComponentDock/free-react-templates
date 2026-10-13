@@ -64,96 +64,110 @@ Recreation of ColorLib's **Login Form V4** template as a React 19 + Vite + Tailw
 
 Full-page diagonal gradient from magenta/purple (`#c471ed`) at bottom-right to cyan/teal (`#00d2ff`) at top-left, with subtle geometric angular overlays (semi-transparent polygonal shapes) layered on top for depth.
 
-## Gherkin Requirements
+## Requirements
 
 ### Background
 
-Given the user navigates to the LoginVibe page
-Then a full-page gradient background is displayed (purple-to-cyan diagonal)
-And geometric angular overlays are visible over the gradient
-And a white login card is centered on the page
+#### Scenario: Background
+
+- **GIVEN** the user navigates to the LoginVibe page
+- **THEN** a full-page gradient background is displayed (purple-to-cyan diagonal)
+- **AND** geometric angular overlays are visible over the gradient
+- **AND** a white login card is centered on the page
 
 ### Login Card — Heading
 
-Scenario: Heading displays "Login"
-  Given the page is loaded
-  Then a heading "Login" is visible inside the card
-  And the heading uses bold weight (~2rem)
+#### Scenario: Heading displays "Login"
+
+- **GIVEN** the page is loaded
+- **THEN** a heading "Login" is visible inside the card
+- **AND** the heading uses bold weight (~2rem)
 
 ### Login Card — Username Field
 
-Scenario: Username field renders with icon and placeholder
-  Given the page is loaded
-  Then a "Username" label is visible
-  And an input field with placeholder "Type your username" is present
-  And a user icon is displayed to the left of the input
-  And the input has a bottom-border underline style
+#### Scenario: Username field renders with icon and placeholder
 
-Scenario: Username field accepts text input
-  Given the user clicks the username input
-  And types "admin@example.com"
-  Then the input displays the entered text
+- **GIVEN** the page is loaded
+- **THEN** a "Username" label is visible
+- **AND** an input field with placeholder "Type your username" is present
+- **AND** a user icon is displayed to the left of the input
+- **AND** the input has a bottom-border underline style
+
+#### Scenario: Username field accepts text input
+
+- **GIVEN** the user clicks the username input
+- **AND** types "admin@example.com"
+- **THEN** the input displays the entered text
 
 ### Login Card — Password Field
 
-Scenario: Password field renders with icon and placeholder
-  Given the page is loaded
-  Then a "Password" label is visible
-  And a password input field with placeholder "Type your password" is present
-  And a lock icon is displayed to the left of the input
-  And the input has a bottom-border underline style
+#### Scenario: Password field renders with icon and placeholder
 
-Scenario: Password field masks input
-  Given the user types "secret123" in the password field
-  Then the input value is masked (type="password")
+- **GIVEN** the page is loaded
+- **THEN** a "Password" label is visible
+- **AND** a password input field with placeholder "Type your password" is present
+- **AND** a lock icon is displayed to the left of the input
+- **AND** the input has a bottom-border underline style
+
+#### Scenario: Password field masks input
+
+- **GIVEN** the user types "secret123" in the password field
+- **THEN** the input value is masked (type="password")
 
 ### Login Card — Forgot Password
 
-Scenario: Forgot password link is visible
-  Given the page is loaded
-  Then a "Forgot password?" link is visible below the password field
-  And the link is right-aligned
+#### Scenario: Forgot password link is visible
+
+- **GIVEN** the page is loaded
+- **THEN** a "Forgot password?" link is visible below the password field
+- **AND** the link is right-aligned
 
 ### Login Card — Login Button
 
-Scenario: Login button renders with gradient
-  Given the page is loaded
-  Then a "LOGIN" button is visible
-  And the button has a gradient background (cyan-to-purple)
-  And the button text is white and uppercase
-  And the button has a pill shape (large border-radius)
+#### Scenario: Login button renders with gradient
 
-Scenario: Login button click triggers form submission
-  Given the user fills in username and password
-  And clicks the "LOGIN" button
-  Then the form submission is triggered
+- **GIVEN** the page is loaded
+- **THEN** a "LOGIN" button is visible
+- **AND** the button has a gradient background (cyan-to-purple)
+- **AND** the button text is white and uppercase
+- **AND** the button has a pill shape (large border-radius)
+
+#### Scenario: Login button click triggers form submission
+
+- **GIVEN** the user fills in username and password
+- **AND** clicks the "LOGIN" button
+- **THEN** the form submission is triggered
 
 ### Login Card — Social Login
 
-Scenario: Social login section is visible
-  Given the page is loaded
-  Then "Or Sign Up Using" text is visible below the login button
-  And three social login circular buttons are displayed: Facebook, Twitter, Google
+#### Scenario: Social login section is visible
 
-Scenario: Social buttons have brand colors
-  Given the page is loaded
-  Then the Facebook button has a dark blue background (#3b5998)
-  And the Twitter button has a light blue background (#1da1f2)
-  And the Google button has a red background (#db4437)
+- **GIVEN** the page is loaded
+- **THEN** "Or Sign Up Using" text is visible below the login button
+- **AND** three social login circular buttons are displayed: Facebook, Twitter, Google
+
+#### Scenario: Social buttons have brand colors
+
+- **GIVEN** the page is loaded
+- **THEN** the Facebook button has a dark blue background (#3b5998)
+- **AND** the Twitter button has a light blue background (#1da1f2)
+- **AND** the Google button has a red background (#db4437)
 
 ### Login Card — Sign Up Link
 
-Scenario: Sign up section is visible
-  Given the page is loaded
-  Then "Have not account yet?" text is visible at the bottom of the card
-  And a "SIGN UP" link is displayed below it (uppercase, bold)
+#### Scenario: Sign up section is visible
+
+- **GIVEN** the page is loaded
+- **THEN** "Have not account yet?" text is visible at the bottom of the card
+- **AND** a "SIGN UP" link is displayed below it (uppercase, bold)
 
 ### Footer
 
-Scenario: Footer links to Component Dock
-  Given the page is loaded
-  Then a footer link to "https://www.componentdock.com/" is present
-  And the link text includes "Component Dock"
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the page is loaded
+- **THEN** a footer link to "https://www.componentdock.com/" is present
+- **AND** the link text includes "Component Dock"
 
 ## Verification Checklist
 

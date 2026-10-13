@@ -70,119 +70,135 @@ Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript (strict).
     Explore links, Legal links, Company links. Bottom: copyright + a
     "Have a Questions?" section with email signup.
 
-## Gherkin Requirements
+## Requirements
 
 ### TopBar
 
-Scenario: TopBar displays contact info and social icons
-Given the user visits the homepage
-Then the TopBar shows a phone number and email on the left
-And social media icons (Facebook, Twitter, Instagram, Dribbble) on the right
+#### Scenario: TopBar displays contact info and social icons
+
+- **GIVEN** the user visits the homepage
+- **THEN** the TopBar shows a phone number and email on the left
+- **AND** social media icons (Facebook, Twitter, Instagram, Dribbble) on the right
 
 ### Navbar
 
-Scenario: Navbar is sticky and shows all nav links
-Given the user visits the homepage
-Then the Navbar displays the brand name "Counselcraft"
-And shows links: Home, About, Counselors, Services, Pricing, Blog, Contact
-And the Navbar becomes sticky on scroll
+#### Scenario: Navbar is sticky and shows all nav links
 
-Scenario: Navbar has mobile toggle
-Given the viewport is mobile-width
-Then a hamburger menu button is visible
-And clicking it toggles the nav links
+- **GIVEN** the user visits the homepage
+- **THEN** the Navbar displays the brand name "Counselcraft"
+- **AND** shows links: Home, About, Counselors, Services, Pricing, Blog, Contact
+- **AND** the Navbar becomes sticky on scroll
+
+#### Scenario: Navbar has mobile toggle
+
+- **GIVEN** the viewport is mobile-width
+- **THEN** a hamburger menu button is visible
+- **AND** clicking it toggles the nav links
 
 ### Hero
 
-Scenario: Hero shows headline and CTAs
-Given the user visits the homepage
-Then the Hero section displays a background image with dark overlay
-And the headline "Counseling For Your Better Life" is visible
-And two buttons are shown: "Contact us" (solid green) and "Read more" (outline white)
-And a circular play button is shown on the right side
+#### Scenario: Hero shows headline and CTAs
 
-Scenario: Hero video button opens video modal
-Given the user clicks the play button in the Hero
-Then a video modal or overlay opens
+- **GIVEN** the user visits the homepage
+- **THEN** the Hero section displays a background image with dark overlay
+- **AND** the headline "Counseling For Your Better Life" is visible
+- **AND** two buttons are shown: "Contact us" (solid green) and "Read more" (outline white)
+- **AND** a circular play button is shown on the right side
+
+#### Scenario: Hero video button opens video modal
+
+- **GIVEN** the user clicks the play button in the Hero
+- **THEN** a video modal or overlay opens
 
 ### Intro Cards
 
-Scenario: Three intro cards are displayed
-Given the user scrolls to the Intro section
-Then 3 cards are shown in a row on desktop
-And the cards are: 100% Confidential, Qualified Team, Individual Approach
-And each card has an icon, heading, and description
+#### Scenario: Three intro cards are displayed
+
+- **GIVEN** the user scrolls to the Intro section
+- **THEN** 3 cards are shown in a row on desktop
+- **AND** the cards are: 100% Confidential, Qualified Team, Individual Approach
+- **AND** each card has an icon, heading, and description
 
 ### How It Works
 
-Scenario: Three steps are displayed
-Given the user scrolls to the How It Works section
-Then 3 numbered step cards are shown: Make Schedule, Start Discussion, Enjoy Plan
-And each has a numbered circle badge (01, 02, 03)
+#### Scenario: Three steps are displayed
+
+- **GIVEN** the user scrolls to the How It Works section
+- **THEN** 3 numbered step cards are shown: Make Schedule, Start Discussion, Enjoy Plan
+- **AND** each has a numbered circle badge (01, 02, 03)
 
 ### About
 
-Scenario: About section shows image and text
-Given the user scrolls to the About section
-Then a split layout with an image on the left and text on the right is displayed
-And the heading reads "Best Counseling Funding Network Worldwide"
-And the section has a light background
+#### Scenario: About section shows image and text
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a split layout with an image on the left and text on the right is displayed
+- **AND** the heading reads "Best Counseling Funding Network Worldwide"
+- **AND** the section has a light background
 
 ### Services
 
-Scenario: Six services are displayed
-Given the user scrolls to the Services section
-Then 6 service items are shown in a 2-column grid
-And the items are: Relation Problem, Couples Counseling, Depression Treatment,
+#### Scenario: Six services are displayed
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service items are shown in a 2-column grid
+- **AND** the items are: Relation Problem, Couples Counseling, Depression Treatment,
 Family Problem, Personal Problem, Business Problem
-And each has an icon, title, and short description
+- **AND** each has an icon, title, and short description
 
 ### Testimonials
 
-Scenario: Testimonial carousel is shown
-Given the user scrolls to the Testimonials section
-Then a carousel of testimonial cards is displayed
-And the section has a dark overlay background
-And each card shows an avatar, quote text, and author name
+#### Scenario: Testimonial carousel is shown
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a carousel of testimonial cards is displayed
+- **AND** the section has a dark overlay background
+- **AND** each card shows an avatar, quote text, and author name
 
 ### Pricing
 
-Scenario: Three pricing plans are shown
-Given the user scrolls to the Pricing section
-Then 3 pricing cards are displayed in a row on desktop
-And each card has a price, feature list, and a CTA button
-And the feature list uses green checkmark icons
+#### Scenario: Three pricing plans are shown
 
-Scenario: Pricing cards are responsive
-Given the user views on mobile
-Then the pricing cards stack vertically
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** 3 pricing cards are displayed in a row on desktop
+- **AND** each card has a price, feature list, and a CTA button
+- **AND** the feature list uses green checkmark icons
+
+#### Scenario: Pricing cards are responsive
+
+- **GIVEN** the user views on mobile
+- **THEN** the pricing cards stack vertically
 
 ### Appointment
 
-Scenario: Appointment form section is displayed
-Given the user scrolls to the Appointment section
-Then a background image with green overlay is shown
-And a contact form is visible on the left with heading "Send a Message"
-And form fields include name, subject, message
+#### Scenario: Appointment form section is displayed
+
+- **GIVEN** the user scrolls to the Appointment section
+- **THEN** a background image with green overlay is shown
+- **AND** a contact form is visible on the left with heading "Send a Message"
+- **AND** form fields include name, subject, message
 
 ### Blog
 
-Scenario: Three blog posts are shown
-Given the user scrolls to the Blog section
-Then 3 blog cards are displayed
-And each card has an image, category, title, and date
+#### Scenario: Three blog posts are shown
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 3 blog cards are displayed
+- **AND** each card has an image, category, title, and date
 
 ### Footer
 
-Scenario: Footer shows company info and links
-Given the user scrolls to the Footer
-Then a dark background (#1a1a1a) footer is displayed
-And 4 columns are shown: brand + social, Explore, Legal, Company
-And the footer links to Component Dock in the bottom bar
+#### Scenario: Footer shows company info and links
 
-Scenario: Footer social icons are interactive
-Given the user hovers over a social icon in the Footer
-Then the icon color changes to green (#589167)
+- **GIVEN** the user scrolls to the Footer
+- **THEN** a dark background (#1a1a1a) footer is displayed
+- **AND** 4 columns are shown: brand + social, Explore, Legal, Company
+- **AND** the footer links to Component Dock in the bottom bar
+
+#### Scenario: Footer social icons are interactive
+
+- **GIVEN** the user hovers over a social icon in the Footer
+- **THEN** the icon color changes to green (#589167)
 
 ## Verification Checklist
 

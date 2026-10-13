@@ -43,79 +43,99 @@ Recreation of ColorLib's **Medi 2** template as a React 19 + Vite + Tailwind 4 +
 8. **Book Appointment Section** — Appointment booking form with date picker
 9. **Footer** — Multi-column footer with logo, links, contact info, copyright
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Emergency Contact Bar
-  Scenario: Display emergency contact information
-    Given the user loads the page
-    Then an emergency contact bar is visible at the top
-    And it shows a phone number and address
+
+#### Scenario: Display emergency contact information
+
+- **GIVEN** the user loads the page
+- **THEN** an emergency contact bar is visible at the top
+- **AND** it shows a phone number and address
 
 ### Feature: Navbar
-  Scenario: Display navigation with CTA
-    Given the user loads the page
-    Then a navbar with blue semi-transparent background is visible
-    And it contains the logo "Mediflow" with a shield icon
-    And navigation links are present: Home, About, Blog, Pages, Contact
-    And a "Book Appointment" button is displayed (white background, rounded)
 
-  Scenario: Navigate to sections
-    Given the user clicks a navigation link
-    Then the page scrolls to the corresponding section
+#### Scenario: Display navigation with CTA
+
+- **GIVEN** the user loads the page
+- **THEN** a navbar with blue semi-transparent background is visible
+- **AND** it contains the logo "Mediflow" with a shield icon
+- **AND** navigation links are present: Home, About, Blog, Pages, Contact
+- **AND** a "Book Appointment" button is displayed (white background, rounded)
+
+#### Scenario: Navigate to sections
+
+- **GIVEN** the user clicks a navigation link
+- **THEN** the page scrolls to the corresponding section
 
 ### Feature: Hero Section
-  Scenario: Display hero with overlay
-    Given the user loads the page
-    Then a full-width hero section is displayed
-    And it has a medical/surgery background image with blue tint overlay
-    And the subtitle reads "THE BEST MEDICAL CENTER"
-    And the heading reads "Bringing health to life for the whole family."
-    And a "Discover More" button with white border is visible
 
-  Scenario: Click hero CTA
-    Given the user clicks "Discover More"
-    Then the page scrolls to the welcome section
+#### Scenario: Display hero with overlay
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width hero section is displayed
+- **AND** it has a medical/surgery background image with blue tint overlay
+- **AND** the subtitle reads "THE BEST MEDICAL CENTER"
+- **AND** the heading reads "Bringing health to life for the whole family."
+- **AND** a "Discover More" button with white border is visible
+
+#### Scenario: Click hero CTA
+
+- **GIVEN** the user clicks "Discover More"
+- **THEN** the page scrolls to the welcome section
 
 ### Feature: Welcome Section
-  Scenario: Display welcome content
-    Given the user scrolls to the welcome section
-    Then a two-column layout is displayed
-    And the left column shows a doctor photo with decorative element
-    And the right column shows "Welcome To Modern Clinic." heading
-    And descriptive text is present below the heading
+
+#### Scenario: Display welcome content
+
+- **GIVEN** the user scrolls to the welcome section
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows a doctor photo with decorative element
+- **AND** the right column shows "Welcome To Modern Clinic." heading
+- **AND** descriptive text is present below the heading
 
 ### Feature: Quality Section
-  Scenario: Display quality features
-    Given the user scrolls to the quality section
-    Then 3-4 feature cards are displayed in a grid
-    And each card has an icon, title, and description
+
+#### Scenario: Display quality features
+
+- **GIVEN** the user scrolls to the quality section
+- **THEN** 3-4 feature cards are displayed in a grid
+- **AND** each card has an icon, title, and description
 
 ### Feature: Department Section
-  Scenario: Display department tabs
-    Given the user scrolls to the department section
-    Then department tabs are visible (e.g., Cardiology, Neurology, etc.)
-    And clicking a tab shows the corresponding department info
+
+#### Scenario: Display department tabs
+
+- **GIVEN** the user scrolls to the department section
+- **THEN** department tabs are visible (e.g., Cardiology, Neurology, etc.)
+- **AND** clicking a tab shows the corresponding department info
 
 ### Feature: Expert Doctors Section
-  Scenario: Display doctor team
-    Given the user scrolls to the doctors section
-    Then doctor cards are displayed in a grid
-    And each card shows a photo, name, and specialty
+
+#### Scenario: Display doctor team
+
+- **GIVEN** the user scrolls to the doctors section
+- **THEN** doctor cards are displayed in a grid
+- **AND** each card shows a photo, name, and specialty
 
 ### Feature: Book Appointment Section
-  Scenario: Display appointment form
-    Given the user scrolls to the appointment section
-    Then a booking form is visible
-    And it contains fields for name, email, phone, date, department, and message
-    And a submit button is present
+
+#### Scenario: Display appointment form
+
+- **GIVEN** the user scrolls to the appointment section
+- **THEN** a booking form is visible
+- **AND** it contains fields for name, email, phone, date, department, and message
+- **AND** a submit button is present
 
 ### Feature: Footer
-  Scenario: Display footer content
-    Given the user scrolls to the footer
-    Then the footer shows the logo and navigation links
-    And contact information is displayed
-    And a copyright notice is present
-    And a "Component Dock" link is included
+
+#### Scenario: Display footer content
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer shows the logo and navigation links
+- **AND** contact information is displayed
+- **AND** a copyright notice is present
+- **AND** a "Component Dock" link is included
 
 ## Verification Checklist
 

@@ -147,82 +147,95 @@ folder name. The new name is **splithaven** (`apps/splithaven`,
    The recreation MUST add a minimal footer with Component Dock link
    per conventions.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Splithaven template behaviour
+
 Feature: Splithaven — Split-screen login form
 
-  Background:
-    Given the page is loaded at the root URL
+Background:
+- **GIVEN** the page is loaded at the root URL
 
-  Scenario: Full-viewport split layout
-    Then the split container fills 100vh
-    And the left panel (form) occupies 50% width
-    And the right panel (image) occupies 50% width
+#### Scenario: Full-viewport split layout
 
-  Scenario: Background image panel
-    Then the right panel shows a full-bleed background image
-    And the image covers the panel without tiling
-    And the image is centered
+- **THEN** the split container fills 100vh
+- **AND** the left panel (form) occupies 50% width
+- **AND** the right panel (image) occupies 50% width
 
-  Scenario: Heading displays correctly
-    Then the heading reads "Login to" followed by a bold brand name
-    And the heading uses Roboto font
+#### Scenario: Background image panel
 
-  Scenario: Subtext paragraph
-    Then a gray paragraph (#b3b3b3) appears below the heading
-    And the paragraph uses Roboto 300 weight
+- **THEN** the right panel shows a full-bleed background image
+- **AND** the image covers the panel without tiling
+- **AND** the image is centered
 
-  Scenario: Username field
-    Then a "Username" label appears above the input in 12px gray
-    And the input has placeholder "your-email@gmail.com"
-    And the input has 20px font size
-    And the input has no visible border
+#### Scenario: Heading displays correctly
 
-  Scenario: Password field
-    Then a "Password" label appears above the input in 12px gray
-    And the input type is password
-    And the input has placeholder "Your Password"
-    And the input has 20px font size
-    And the input has no visible border
+- **THEN** the heading reads "Login to" followed by a bold brand name
+- **AND** the heading uses Roboto font
 
-  Scenario: Form field grouping
-    Then the username and password fields appear inside a bordered card
-    And the card has 1px #efefef border
-    And the card top corners have 7px border-radius
-    And the card bottom corners have 7px border-radius
-    And there is no visible border between the two fields
+#### Scenario: Subtext paragraph
 
-  Scenario: Remember me checkbox
-    Then a "Remember me" checkbox appears checked by default
-    And the checkbox indicator is 20×20px with 4px border-radius
-    And the unchecked indicator color is #e6e6e6
-    And the checked indicator color is #007bff
+- **THEN** a gray paragraph (#b3b3b3) appears below the heading
+- **AND** the paragraph uses Roboto 300 weight
 
-  Scenario: Forgot Password link
-    Then a "Forgot Password" link appears right-aligned in the checkbox row
-    And the link is 14px and color #888
-    And the link is underlined
+#### Scenario: Username field
 
-  Scenario: Submit button
-    Then a "Log In" button spans the full width of the form column
-    And the button height is 54px
-    And the button background is #007bff
-    And the button text is white
+- **THEN** a "Username" label appears above the input in 12px gray
+- **AND** the input has placeholder "your-email@gmail.com"
+- **AND** the input has 20px font size
+- **AND** the input has no visible border
 
-  Scenario: Mobile layout
-    When the viewport width is less than 992px
-    Then the background image panel stacks above the form
-    And the image panel height is 500px
-    And the form panel flows below
+#### Scenario: Password field
 
-  Scenario: Footer
-    Then a footer is present with a Component Dock link
-    And the footer does not reference ColorLib
+- **THEN** a "Password" label appears above the input in 12px gray
+- **AND** the input type is password
+- **AND** the input has placeholder "Your Password"
+- **AND** the input has 20px font size
+- **AND** the input has no visible border
 
-  Scenario: No ColorLib references in app code
-    Then no file in apps/splithaven contains "colorlib" or "ColorLib"
-```
+#### Scenario: Form field grouping
+
+- **THEN** the username and password fields appear inside a bordered card
+- **AND** the card has 1px #efefef border
+- **AND** the card top corners have 7px border-radius
+- **AND** the card bottom corners have 7px border-radius
+- **AND** there is no visible border between the two fields
+
+#### Scenario: Remember me checkbox
+
+- **THEN** a "Remember me" checkbox appears checked by default
+- **AND** the checkbox indicator is 20×20px with 4px border-radius
+- **AND** the unchecked indicator color is #e6e6e6
+- **AND** the checked indicator color is #007bff
+
+#### Scenario: Forgot Password link
+
+- **THEN** a "Forgot Password" link appears right-aligned in the checkbox row
+- **AND** the link is 14px and color #888
+- **AND** the link is underlined
+
+#### Scenario: Submit button
+
+- **THEN** a "Log In" button spans the full width of the form column
+- **AND** the button height is 54px
+- **AND** the button background is #007bff
+- **AND** the button text is white
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport width is less than 992px
+- **THEN** the background image panel stacks above the form
+- **AND** the image panel height is 500px
+- **AND** the form panel flows below
+
+#### Scenario: Footer
+
+- **THEN** a footer is present with a Component Dock link
+- **AND** the footer does not reference ColorLib
+
+#### Scenario: No ColorLib references in app code
+
+- **THEN** no file in apps/splithaven contains "colorlib" or "ColorLib"
 
 ## Verification checklist
 

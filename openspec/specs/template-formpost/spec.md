@@ -32,55 +32,54 @@ Formpost is a contact form 09 with a contact info, contact form and footer. It r
 
 All wrapped in a dark full-page container with single-column centered layout (max-w-4xl).
 
-## Scenarios
+## Requirements
 
 ### PageTitle
 
-```gherkin
-Scenario: renders the page title
-  Given I visit the formpost page
-  Then I should see a heading "Contact Form #09"
-```
+#### Scenario: renders the page title
+
+- **GIVEN** I visit the formpost page
+- **THEN** I should see a heading "Contact Form #09"
 
 ### ContactInfo
 
-```gherkin
-Scenario: displays three contact items
-  Given I visit the formpost page
-  Then I should see "Address" with "198 West 21th Street, Suite 721 New York NY 10016"
-  And I should see "Phone" with "+ 1235 2355 98"
-  And I should see "Email" with "info@yoursite.com"
+#### Scenario: displays three contact items
 
-Scenario: renders accessible icons
-  Given I visit the formpost page
-  Then each contact icon should be hidden from screen readers
-```
+- **GIVEN** I visit the formpost page
+- **THEN** I should see "Address" with "198 West 21th Street, Suite 721 New York NY 10016"
+- **AND** I should see "Phone" with "+ 1235 2355 98"
+- **AND** I should see "Email" with "info@yoursite.com"
+
+#### Scenario: renders accessible icons
+
+- **GIVEN** I visit the formpost page
+- **THEN** each contact icon should be hidden from screen readers
 
 ### ContactForm
 
-```gherkin
-Scenario: renders form fields
-  Given I visit the formpost page
-  Then I should see text inputs for "Name", "Email", and "Subject"
-  And I should see a textarea for "Message"
-  And I should see a "Send Message" button
+#### Scenario: renders form fields
 
-Scenario: form accepts user input
-  Given I visit the formpost page
-  When I type "John" in the "Name" field
-  Then the "Name" field should contain "John"
+- **GIVEN** I visit the formpost page
+- **THEN** I should see text inputs for "Name", "Email", and "Subject"
+- **AND** I should see a textarea for "Message"
+- **AND** I should see a "Send Message" button
 
-Scenario: form submission is prevented
-  Given I visit the formpost page
-  When I click the "Send Message" button
-  Then the page should not navigate
-```
+#### Scenario: form accepts user input
+
+- **GIVEN** I visit the formpost page
+- **WHEN** I type "John" in the "Name" field
+- **THEN** the "Name" field should contain "John"
+
+#### Scenario: form submission is prevented
+
+- **GIVEN** I visit the formpost page
+- **WHEN** I click the "Send Message" button
+- **THEN** the page should not navigate
 
 ### Footer
 
-```gherkin
-Scenario: renders Component Dock link
-  Given I visit the formpost page
-  Then I should see a link to "https://www.componentdock.com/" labeled "Component Dock"
-  And the link should open in a new tab
-```
+#### Scenario: renders Component Dock link
+
+- **GIVEN** I visit the formpost page
+- **THEN** I should see a link to "https://www.componentdock.com/" labeled "Component Dock"
+- **AND** the link should open in a new tab

@@ -39,81 +39,91 @@ Recreation of ColorLib **The Venue** restaurant template.
 7. **Reservations** — Parallax background image. Centered form: date picker, time picker, party size dropdown (2–6 persons), "Make a Reservation" button.
 8. **Footer** — Dark (#232323) background. Three columns: Logo + copyright, About text, Contact info (address, phone, email).
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: BanquetWell template behaviour
+
 Feature: BanquetWell Restaurant Template
-  As a visitor I want to see a premium restaurant website
-  So that I can explore the menu and make reservations
+As a visitor I want to see a premium restaurant website
+So that I can explore the menu and make reservations
 
-  Scenario: Header displays navigation and reservation info
-    Given I am on the homepage
-    Then I see the logo "BanquetWell" with "restaurant" subtitle
-    And I see navigation links: Home, About Us, Menu, Delivery, Blog, Contact
-    And I see a reservation phone number on the right
+#### Scenario: Header displays navigation and reservation info
 
-  Scenario: Hero section shows parallax background with welcome text
-    Given I am on the homepage
-    Then I see a full-width hero with parallax background image
-    And I see the subtitle "BanquetWell is"
-    And I see the heading "An Extraordinary Experience"
-    And I see a descriptive paragraph
-    And I see a scroll-down indicator
+- **GIVEN** I am on the homepage
+- **THEN** I see the logo "BanquetWell" with "restaurant" subtitle
+- **AND** I see navigation links: Home, About Us, Menu, Delivery, Blog, Contact
+- **AND** I see a reservation phone number on the right
 
-  Scenario: Intro section displays brand overview with images
-    Given I scroll to the intro section
-    Then I see subtitle "Something new"
-    And I see heading "An Extraordinary Experience"
-    And I see two side-by-side food images
+#### Scenario: Hero section shows parallax background with welcome text
 
-  Scenario: Video section shows promotional video
-    Given I scroll to the video section
-    Then I see a parallax background with "Food for the soul" text
-    And I see a circular play button that links to a video
+- **GIVEN** I am on the homepage
+- **THEN** I see a full-width hero with parallax background image
+- **AND** I see the subtitle "BanquetWell is"
+- **AND** I see the heading "An Extraordinary Experience"
+- **AND** I see a descriptive paragraph
+- **AND** I see a scroll-down indicator
 
-  Scenario: Signature dish section highlights featured item
-    Given I scroll to the signature dish section
-    Then I see subtitle "Something new"
-    And I see heading "Our Signature Dish"
-    And I see a 5-star rating
-    And I see the dish name with price
-    And I see ingredient tags
-    And I see an "Order Now" button with sharp corners
+#### Scenario: Intro section displays brand overview with images
 
-  Scenario: Menu section displays three-column menu
-    Given I scroll to the menu section
-    Then I see a dark title bar with "5 Stars" and "The Menu"
-    And I see three columns: Starters, Main, Deserts
-    And each column contains 5 dishes with name, price, and ingredients
-    And each dish has an "Order Now" link
+- **GIVEN** I scroll to the intro section
+- **THEN** I see subtitle "Something new"
+- **AND** I see heading "An Extraordinary Experience"
+- **AND** I see two side-by-side food images
 
-  Scenario: Reservation form accepts date, time, and party size
-    Given I scroll to the reservations section
-    Then I see a parallax background
-    And I see a date picker input
-    And I see a time picker input
-    And I see a party size dropdown (2–6 persons)
-    And I see a "Make a Reservation" button
+#### Scenario: Video section shows promotional video
 
-  Scenario: Footer shows contact and copyright info
-    Given I scroll to the footer
-    Then I see a dark background
-    And I see the logo "BanquetWell" / "restaurant"
-    And I see an about paragraph
-    And I see contact details: address, phone, email
-    And I see a copyright notice with link to Component Dock
+- **GIVEN** I scroll to the video section
+- **THEN** I see a parallax background with "Food for the soul" text
+- **AND** I see a circular play button that links to a video
 
-  Scenario: Navigation is sticky on scroll
-    Given I am on the homepage
-    When I scroll down
-    Then the header remains fixed at the top of the viewport
+#### Scenario: Signature dish section highlights featured item
 
-  Scenario: Mobile hamburger menu
-    Given I am on a mobile viewport
-    Then I see a hamburger menu toggle
-    When I tap the hamburger
-    Then a full-screen overlay menu appears with all nav links
-```
+- **GIVEN** I scroll to the signature dish section
+- **THEN** I see subtitle "Something new"
+- **AND** I see heading "Our Signature Dish"
+- **AND** I see a 5-star rating
+- **AND** I see the dish name with price
+- **AND** I see ingredient tags
+- **AND** I see an "Order Now" button with sharp corners
+
+#### Scenario: Menu section displays three-column menu
+
+- **GIVEN** I scroll to the menu section
+- **THEN** I see a dark title bar with "5 Stars" and "The Menu"
+- **AND** I see three columns: Starters, Main, Deserts
+- **AND** each column contains 5 dishes with name, price, and ingredients
+- **AND** each dish has an "Order Now" link
+
+#### Scenario: Reservation form accepts date, time, and party size
+
+- **GIVEN** I scroll to the reservations section
+- **THEN** I see a parallax background
+- **AND** I see a date picker input
+- **AND** I see a time picker input
+- **AND** I see a party size dropdown (2–6 persons)
+- **AND** I see a "Make a Reservation" button
+
+#### Scenario: Footer shows contact and copyright info
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a dark background
+- **AND** I see the logo "BanquetWell" / "restaurant"
+- **AND** I see an about paragraph
+- **AND** I see contact details: address, phone, email
+- **AND** I see a copyright notice with link to Component Dock
+
+#### Scenario: Navigation is sticky on scroll
+
+- **GIVEN** I am on the homepage
+- **WHEN** I scroll down
+- **THEN** the header remains fixed at the top of the viewport
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** I am on a mobile viewport
+- **THEN** I see a hamburger menu toggle
+- **WHEN** I tap the hamburger
+- **THEN** a full-screen overlay menu appears with all nav links
 
 ## Verification Checklist
 

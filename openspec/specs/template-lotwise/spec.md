@@ -46,69 +46,78 @@ Recreation of ColorLib **Auction** (`https://colorlib.com/wp/template/auction/`)
   - Default sections: white with `2.5em 0` mobile / `5em 0` desktop padding
 - **Product Card**: subtle shadow (`0 1px 2px rgba(0,0,0,0.05)`), image with price badge overlay, info block with title/category/bids/bid button
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Auction Marketplace Landing Page
 
 #### Scenario: Navbar Rendering
-- **Given** the user visits the Lotwise landing page
-- **Then** they should see a navbar with a logo image on the left
-- **And** navigation links: Home, Buy, Sell, Services (dropdown), Blog, About, Contact
-- **And** a "Sign In / Register" link on the right
-- **And** the navbar is transparent (white text, absolute positioned over the hero)
-- **And** a hamburger menu icon appears on mobile
+
+- **GIVEN** the user visits the Lotwise landing page
+- **THEN** they should see a navbar with a logo image on the left
+- **AND** navigation links: Home, Buy, Sell, Services (dropdown), Blog, About, Contact
+- **AND** a "Sign In / Register" link on the right
+- **AND** the navbar is transparent (white text, absolute positioned over the hero)
+- **AND** a hamburger menu icon appears on mobile
 
 #### Scenario: Hero Section
-- **Given** the user views the hero section
-- **Then** they should see a full-viewport background image with dark overlay
-- **And** a centered heading "The Best Place to Buy and Sell" (60px bold white)
-- **And** a subtitle paragraph below the heading
-- **And** a "Register" primary CTA button
+
+- **GIVEN** the user views the hero section
+- **THEN** they should see a full-viewport background image with dark overlay
+- **AND** a centered heading "The Best Place to Buy and Sell" (60px bold white)
+- **AND** a subtitle paragraph below the heading
+- **AND** a "Register" primary CTA button
 
 #### Scenario: Current Auctions Grid
-- **Given** the user views the auctions section
-- **Then** they should see a section with caption "Auctions" and heading "Current Auctions"
-- **And** a 4-column grid of 8 product cards
-- **And** each card has: an orange circular price badge (90px), product image, product title, category label, bid count, and a "Submit a Bid" button
+
+- **GIVEN** the user views the auctions section
+- **THEN** they should see a section with caption "Auctions" and heading "Current Auctions"
+- **AND** a 4-column grid of 8 product cards
+- **AND** each card has: an orange circular price badge (90px), product image, product title, category label, bid count, and a "Submit a Bid" button
 
 #### Scenario: How It Works Section
-- **Given** the user views the "How It Works" section
-- **Then** they should see a section with caption "How?" and heading "How It Works"
-- **And** 4 steps in a row: Register, Buy or Bid, Submit a Bid, Win
-- **And** each step has a circular orange icon, title, and description
-- **And** arrow connectors between steps (hidden on the last step)
+
+- **GIVEN** the user views the "How It Works" section
+- **THEN** they should see a section with caption "How?" and heading "How It Works"
+- **AND** 4 steps in a row: Register, Buy or Bid, Submit a Bid, Win
+- **AND** each step has a circular orange icon, title, and description
+- **AND** arrow connectors between steps (hidden on the last step)
 
 #### Scenario: About Us Section
-- **Given** the user views the About Us section
-- **Then** they should see a split layout: image on the left, features on the right
-- **And** the right side has a caption "About?", heading "About Us"
-- **And** 3 feature items with icons: Fast Support, Happy Customers, 24/7 Support
+
+- **GIVEN** the user views the About Us section
+- **THEN** they should see a split layout: image on the left, features on the right
+- **AND** the right side has a caption "About?", heading "About Us"
+- **AND** 3 feature items with icons: Fast Support, Happy Customers, 24/7 Support
 
 #### Scenario: Testimonials Section
-- **Given** the user views the testimonials section
-- **Then** they should see a background image with orange overlay
-- **And** a centered caption "Testimonials" and heading "Happy Clients" (white)
-- **And** a carousel of testimonial cards, each with: 50px round avatar, name, role, and quote text
+
+- **GIVEN** the user views the testimonials section
+- **THEN** they should see a background image with orange overlay
+- **AND** a centered caption "Testimonials" and heading "Happy Clients" (white)
+- **AND** a carousel of testimonial cards, each with: 50px round avatar, name, role, and quote text
 
 #### Scenario: Call to Action Section
-- **Given** the user views the CTA section
-- **Then** they should see centered text "Create an account and start Buy, Bid or Sell Now!"
-- **And** a "Register" primary button
+
+- **GIVEN** the user views the CTA section
+- **THEN** they should see centered text "Create an account and start Buy, Bid or Sell Now!"
+- **AND** a "Register" primary button
 
 #### Scenario: Footer Section
-- **Given** the user views the footer
-- **Then** they should see a light background (#f8f9fa) footer with 4 columns
-- **And** columns: Logo + description, Solutions (links), Services (links), Contact (links)
-- **And** a copyright line at the bottom
-- **And** the footer links to Component Dock (`https://www.componentdock.com/`)
+
+- **GIVEN** the user views the footer
+- **THEN** they should see a light background (#f8f9fa) footer with 4 columns
+- **AND** columns: Logo + description, Solutions (links), Services (links), Contact (links)
+- **AND** a copyright line at the bottom
+- **AND** the footer links to Component Dock (`https://www.componentdock.com/`)
 
 #### Scenario: Responsive Behavior
-- **Given** the user views the page on a mobile device (< 992px)
-- **Then** the navbar collapses to a slide-in mobile menu (right side)
-- **And** the hero heading shrinks to 34px
-- **And** auction cards stack into 2 columns on small screens
-- **And** the about section stacks vertically
-- **And** footer columns stack vertically
+
+- **GIVEN** the user views the page on a mobile device (< 992px)
+- **THEN** the navbar collapses to a slide-in mobile menu (right side)
+- **AND** the hero heading shrinks to 34px
+- **AND** auction cards stack into 2 columns on small screens
+- **AND** the about section stacks vertically
+- **AND** footer columns stack vertically
 
 ## Verification Checklist
 

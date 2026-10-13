@@ -45,132 +45,133 @@ Vite + Tailwind 4 + TypeScript application. Deploys to
 7. **Blog** — "Latest From Our Blog" — 4 blog cards in a row, each with thumbnail image, date, title, excerpt, and meta (likes + comments).
 8. **Footer** — Dark navy (#04091e) background, 3 columns: About Us (text + copyright), Newsletter (email input + submit), Follow Us (social icons).
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Header
 
-```gherkin
-Scenario: Header displays top bar with social icons and contact info
-  Given I visit the IronWatch homepage
-  Then I see social media icon links (Facebook, Twitter, Dribbble, Behance) in the top bar
-  And I see a phone number link in the top bar
-  And I see a "Register / Login" link in the top bar
+#### Scenario: Header displays top bar with social icons and contact info
 
-Scenario: Header navigation shows all menu items
-  Given I visit the IronWatch homepage
-  Then the main navigation shows: Home, About, Services, Team, Price, Blog, Contact
-  And there is a "Pages" dropdown with sub-items
-```
+- **GIVEN** I visit the IronWatch homepage
+- **THEN** I see social media icon links (Facebook, Twitter, Dribbble, Behance) in the top bar
+- **AND** I see a phone number link in the top bar
+- **AND** I see a "Register / Login" link in the top bar
+
+#### Scenario: Header navigation shows all menu items
+
+- **GIVEN** I visit the IronWatch homepage
+- **THEN** the main navigation shows: Home, About, Services, Team, Price, Blog, Contact
+- **AND** there is a "Pages" dropdown with sub-items
 
 ### Feature: Banner / Hero
 
-```gherkin
-Scenario: Hero banner displays headline and CTA
-  Given I visit the IronWatch homepage
-  Then I see a full-viewport hero section with a dark overlay
-  And I see a subtitle with an opening date
-  And I see a main headline
-  And I see a description paragraph
-  And I see a "Get Started" primary CTA button in golden amber (#fab700)
+#### Scenario: Hero banner displays headline and CTA
 
-Scenario: Hero button is styled as a square-edged primary button
-  Given the hero section is visible
-  Then the "Get Started" button has no border-radius (sharp square corners)
-  And the button background is #fab700
-  And the button text is white
-```
+- **GIVEN** I visit the IronWatch homepage
+- **THEN** I see a full-viewport hero section with a dark overlay
+- **AND** I see a subtitle with an opening date
+- **AND** I see a main headline
+- **AND** I see a description paragraph
+- **AND** I see a "Get Started" primary CTA button in golden amber (#fab700)
+
+#### Scenario: Hero button is styled as a square-edged primary button
+
+- **GIVEN** the hero section is visible
+- **THEN** the "Get Started" button has no border-radius (sharp square corners)
+- **AND** the button background is #fab700
+- **AND** the button text is white
 
 ### Feature: Services
 
-```gherkin
-Scenario: Services section displays 3 service cards
-  Given I scroll to the Services section
-  Then I see the heading "Our Offered Services"
-  And I see 3 service cards in a single row
-  And each card has an image thumbnail, a linked title, and a description
+#### Scenario: Services section displays 3 service cards
 
-Scenario: Service cards are clickable
-  Given I see a service card
-  When I click the card title link
-  Then nothing navigates away (placeholder link)
-```
+- **GIVEN** I scroll to the Services section
+- **THEN** I see the heading "Our Offered Services"
+- **AND** I see 3 service cards in a single row
+- **AND** each card has an image thumbnail, a linked title, and a description
+
+#### Scenario: Service cards are clickable
+
+- **GIVEN** I see a service card
+- **WHEN** I click the card title link
+- **THEN** nothing navigates away (placeholder link)
 
 ### Feature: Features
 
-```gherkin
-Scenario: Features section displays 6 items in a 2x3 grid
-  Given I scroll to the Features section
-  Then I see the heading "Some Features that Made us Unique"
-  And I see 6 feature items arranged in a 2-row, 3-column grid
-  And each feature has a colored icon, title, and description
+#### Scenario: Features section displays 6 items in a 2x3 grid
 
-Scenario: Feature icons use distinct brand colors
-  Given I view the feature items
-  Then each feature icon uses a different color from the brand palette
-```
+- **GIVEN** I scroll to the Features section
+- **THEN** I see the heading "Some Features that Made us Unique"
+- **AND** I see 6 feature items arranged in a 2-row, 3-column grid
+- **AND** each feature has a colored icon, title, and description
+
+#### Scenario: Feature icons use distinct brand colors
+
+- **GIVEN** I view the feature items
+- **THEN** each feature icon uses a different color from the brand palette
 
 ### Feature: Facts Counter
 
-```gherkin
-Scenario: Facts bar displays 5 statistics on amber background
-  Given I scroll to the Facts section
-  Then I see a full-width amber (#fab700) background
-  And I see 5 stat columns: Projects Completed, Happy Clients, Tasks Completed, Cups of Coffee, In House Professionals
-  And each stat shows a number and a label
+#### Scenario: Facts bar displays 5 statistics on amber background
 
-Scenario: Counter numbers are animated
-  Given the Facts section enters the viewport
-  Then the numbers animate from 0 to their target values
-```
+- **GIVEN** I scroll to the Facts section
+- **THEN** I see a full-width amber (#fab700) background
+- **AND** I see 5 stat columns: Projects Completed, Happy Clients, Tasks Completed, Cups of Coffee, In House Professionals
+- **AND** each stat shows a number and a label
+
+#### Scenario: Counter numbers are animated
+
+- **GIVEN** the Facts section enters the viewport
+- **THEN** the numbers animate from 0 to their target values
 
 ### Feature: Gallery
 
-```gherkin
-Scenario: Gallery displays 7 images in masonry grid
-  Given I scroll to the Gallery section
-  Then I see the heading "Latest From Our Gallery"
-  And I see 7 gallery images arranged in 3 rows: 2 images, 3 images, 2 images
+#### Scenario: Gallery displays 7 images in masonry grid
 
-Scenario: Gallery images are clickable lightbox triggers
-  Given I see a gallery image
-  When I click the image
-  Then it opens in a lightbox overlay (Magnific Popup style)
-```
+- **GIVEN** I scroll to the Gallery section
+- **THEN** I see the heading "Latest From Our Gallery"
+- **AND** I see 7 gallery images arranged in 3 rows: 2 images, 3 images, 2 images
+
+#### Scenario: Gallery images are clickable lightbox triggers
+
+- **GIVEN** I see a gallery image
+- **WHEN** I click the image
+- **THEN** it opens in a lightbox overlay (Magnific Popup style)
 
 ### Feature: Blog
 
-```gherkin
-Scenario: Blog section displays 4 blog cards
-  Given I scroll to the Blog section
-  Then I see the heading "Latest From Our Blog"
-  And I see 4 blog cards in a single row
-  And each card has a thumbnail image, date, title, excerpt, and meta (likes + comments)
+#### Scenario: Blog section displays 4 blog cards
 
-Scenario: Blog cards show date and engagement metrics
-  Given I view a blog card
-  Then I see a date in "DD Mon YYYY" format
-  And I see a heart icon with a like count
-  And I see a bubble icon with a comment count
-```
+- **GIVEN** I scroll to the Blog section
+- **THEN** I see the heading "Latest From Our Blog"
+- **AND** I see 4 blog cards in a single row
+- **AND** each card has a thumbnail image, date, title, excerpt, and meta (likes + comments)
+
+#### Scenario: Blog cards show date and engagement metrics
+
+- **GIVEN** I view a blog card
+- **THEN** I see a date in "DD Mon YYYY" format
+- **AND** I see a heart icon with a like count
+- **AND** I see a bubble icon with a comment count
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has 3 columns on dark background
-  Given I scroll to the Footer
-  Then I see a dark navy (#04091e) background
-  And I see 3 columns: About Us, Newsletter, Follow Us
+#### Scenario: Footer has 3 columns on dark background
 
-Scenario: Footer includes Component Dock branding
-  Given the footer is visible
-  Then I see a link to https://www.componentdock.com/ labeled "Component Dock"
-  And I do NOT see any ColorLib attribution
+- **GIVEN** I scroll to the Footer
+- **THEN** I see a dark navy (#04091e) background
+- **AND** I see 3 columns: About Us, Newsletter, Follow Us
 
-Scenario: Newsletter form has email input and submit button
-  Given I view the Newsletter column
-  Then I see an email input field with placeholder "Enter Email"
-  And I see a submit button styled with a pill shape (20px radius)
-```
+#### Scenario: Footer includes Component Dock branding
+
+- **GIVEN** the footer is visible
+- **THEN** I see a link to https://www.componentdock.com/ labeled "Component Dock"
+- **AND** I do NOT see any ColorLib attribution
+
+#### Scenario: Newsletter form has email input and submit button
+
+- **GIVEN** I view the Newsletter column
+- **THEN** I see an email input field with placeholder "Enter Email"
+- **AND** I see a submit button styled with a pill shape (20px radius)
 
 ## Verification checklist
 

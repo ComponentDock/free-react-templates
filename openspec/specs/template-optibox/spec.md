@@ -44,89 +44,91 @@ Recreation of ColorLib "Multiselect 17" — a free limited multiselect dropdown 
 - Compact layout — the entire component fits in a centered column (roughly col-md-6)
 - Clean, minimal aesthetic — no heavy decorations, focus on the form element
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with title
+### Feature: Optibox template behaviour
 
-- Given the user visits the Optibox page
-- Then the heading "Multiselect 17" (or equivalent) is visible
-- And the heading is centered on the page
+#### Scenario: Page renders with title
 
-### Scenario: Dropdown displays with label
+- **GIVEN** the user visits the Optibox page
+- **THEN** the heading "Multiselect 17" (or equivalent) is visible
+- **AND** the heading is centered on the page
 
-- Given the page has loaded
-- Then a label is visible above the dropdown control
-- And a dropdown trigger/button is rendered below the label
+#### Scenario: Dropdown displays with label
 
-### Scenario: Dropdown shows default state
+- **GIVEN** the page has loaded
+- **THEN** a label is visible above the dropdown control
+- **AND** a dropdown trigger/button is rendered below the label
 
-- Given the dropdown is in its default (closed) state
-- Then the trigger displays a placeholder (e.g. "0 Selected" or "Select items...")
-- And the trigger has a light gray border (#e6e6e6)
+#### Scenario: Dropdown shows default state
 
-### Scenario: Dropdown opens on click
+- **GIVEN** the dropdown is in its default (closed) state
+- **THEN** the trigger displays a placeholder (e.g. "0 Selected" or "Select items...")
+- **AND** the trigger has a light gray border (#e6e6e6)
 
-- Given the dropdown is closed
-- When the user clicks the dropdown trigger
-- Then the dropdown menu expands below the trigger
-- And a list of selectable items is displayed
-- And each item has a checkbox beside its label
+#### Scenario: Dropdown opens on click
 
-### Scenario: Items can be selected
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the dropdown trigger
+- **THEN** the dropdown menu expands below the trigger
+- **AND** a list of selectable items is displayed
+- **AND** each item has a checkbox beside its label
 
-- Given the dropdown is open
-- When the user clicks an item's checkbox
-- Then the checkbox becomes checked
-- And the item is visually highlighted (brand blue #1a73e8)
-- And the selected count on the trigger increments
+#### Scenario: Items can be selected
 
-### Scenario: Maximum selection limit enforced
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks an item's checkbox
+- **THEN** the checkbox becomes checked
+- **AND** the item is visually highlighted (brand blue #1a73e8)
+- **AND** the selected count on the trigger increments
 
-- Given the maximum selection limit is set (e.g. 3)
-- And 3 items are already selected
-- When the user attempts to select a 4th item
-- Then the 4th item's checkbox remains unchecked
-- And the checkbox is visually disabled or the click is ignored
-- And the selected count remains at 3
+#### Scenario: Maximum selection limit enforced
 
-### Scenario: Items can be deselected
+- **GIVEN** the maximum selection limit is set (e.g. 3)
+- **AND** 3 items are already selected
+- **WHEN** the user attempts to select a 4th item
+- **THEN** the 4th item's checkbox remains unchecked
+- **AND** the checkbox is visually disabled or the click is ignored
+- **AND** the selected count remains at 3
 
-- Given one or more items are selected
-- When the user clicks a selected item's checkbox (or its remove button)
-- Then the item is deselected
-- And the checkbox becomes unchecked
-- And the selected count decrements
-- And a previously blocked item becomes selectable again if under the limit
+#### Scenario: Items can be deselected
 
-### Scenario: Dropdown closes on outside click
+- **GIVEN** one or more items are selected
+- **WHEN** the user clicks a selected item's checkbox (or its remove button)
+- **THEN** the item is deselected
+- **AND** the checkbox becomes unchecked
+- **AND** the selected count decrements
+- **AND** a previously blocked item becomes selectable again if under the limit
 
-- Given the dropdown is open
-- When the user clicks outside the dropdown area
-- Then the dropdown menu closes
-- And the selected items remain reflected in the trigger display
+#### Scenario: Dropdown closes on outside click
 
-### Scenario: Selected items shown as tags/chips
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown area
+- **THEN** the dropdown menu closes
+- **AND** the selected items remain reflected in the trigger display
 
-- Given items are selected
-- When the dropdown is closed
-- Then the selected items are displayed as tags or chips in or near the trigger
-- And each tag shows the item label and a remove control
+#### Scenario: Selected items shown as tags/chips
 
-### Scenario: Accessibility — keyboard navigation
+- **GIVEN** items are selected
+- **WHEN** the dropdown is closed
+- **THEN** the selected items are displayed as tags or chips in or near the trigger
+- **AND** each tag shows the item label and a remove control
 
-- Given the dropdown is open
-- When the user presses ArrowDown / ArrowUp
-- Then focus moves between items in the list
-- And pressing Space or Enter toggles the focused item's selection
-- And pressing Escape closes the dropdown
+#### Scenario: Accessibility — keyboard navigation
 
-### Scenario: Accessibility — ARIA attributes
+- **GIVEN** the dropdown is open
+- **WHEN** the user presses ArrowDown / ArrowUp
+- **THEN** focus moves between items in the list
+- **AND** pressing Space or Enter toggles the focused item's selection
+- **AND** pressing Escape closes the dropdown
 
-- Given the component is rendered
-- Then the dropdown trigger has `role="combobox"` or equivalent
-- And the dropdown list has `role="listbox"` or equivalent
-- And each item has `role="option"` with `aria-selected` reflecting selection state
-- And the component announces the selected count to screen readers
+#### Scenario: Accessibility — ARIA attributes
+
+- **GIVEN** the component is rendered
+- **THEN** the dropdown trigger has `role="combobox"` or equivalent
+- **AND** the dropdown list has `role="listbox"` or equivalent
+- **AND** each item has `role="option"` with `aria-selected` reflecting selection state
+- **AND** the component announces the selected count to screen readers
 
 ## Verification checklist
 

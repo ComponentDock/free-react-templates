@@ -39,97 +39,102 @@ Recreation of ColorLib **Tasty** — a restaurant landing template with hero sli
 10. **Instagram** — 5-column grid of images with hover Instagram icon overlay.
 11. **Footer** — Dark bg. 4 columns: Brand+desc+social icons, Opening Hours (Mon-Sun 08:00-22:00), Contact Info, Newsletter (email+subscribe). Copyright: "More templates at Component Dock" → https://www.componentdock.com/
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navigation Bar
-  Scenario: Desktop navbar displays all section links
-    Given the user is on a desktop viewport
-    When the page loads
-    Then the navbar shows the logo "Bistrox" and links for Home, Menu, Specialties, Reservation, Blog, About, Contact
 
-  Scenario: Mobile hamburger menu toggles navigation
-    Given the user is on a mobile viewport
-    When the user taps the hamburger icon
-    Then the navigation menu expands
-    When the user taps the hamburger icon again
-    Then the navigation menu collapses
-```
+#### Scenario: Desktop navbar displays all section links
+
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar shows the logo "Bistrox" and links for Home, Menu, Specialties, Reservation, Blog, About, Contact
+
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu expands
+- **WHEN** the user taps the hamburger icon again
+- **THEN** the navigation menu collapses
 
 ### Hero
 
-```gherkin
 Feature: Hero Slider
-  Scenario: Hero displays heading and CTA
-    Given the user views the page
-    When the hero section loads
-    Then a heading containing "Book a table" is visible
-    And a "Book a table" CTA button is visible
-```
+
+#### Scenario: Hero displays heading and CTA
+
+- **GIVEN** the user views the page
+- **WHEN** the hero section loads
+- **THEN** a heading containing "Book a table" is visible
+- **AND** a "Book a table" CTA button is visible
 
 ### Reservation Form
 
-```gherkin
 Feature: Reservation Form
-  Scenario: Form displays all fields
-    Given the reservation form is visible
-    Then Name, Phone, Date, Time, and Person fields are displayed
-    And a "Book a table" submit button is visible
 
-  Scenario: User can fill and submit the form
-    Given the reservation form is visible
-    When the user fills in Name, Phone, Date, Time, and selects Person count
-    And clicks "Book a table"
-    Then the form does not navigate away
-```
+#### Scenario: Form displays all fields
+
+- **GIVEN** the reservation form is visible
+- **THEN** Name, Phone, Date, Time, and Person fields are displayed
+- **AND** a "Book a table" submit button is visible
+
+#### Scenario: User can fill and submit the form
+
+- **GIVEN** the reservation form is visible
+- **WHEN** the user fills in Name, Phone, Date, Time, and selects Person count
+- **AND** clicks "Book a table"
+- **THEN** the form does not navigate away
 
 ### Menu
 
-```gherkin
 Feature: Menu Section
-  Scenario: Menu displays tabbed content
-    Given the menu section is visible
-    Then tabs for Main, Dessert, and Drinks are displayed
-    And Main tab items are shown by default
 
-  Scenario: Switching tabs shows different items
-    Given the menu section is visible
-    When the user clicks the Dessert tab
-    Then dessert menu items are displayed
-    When the user clicks the Drinks tab
-    Then drink menu items are displayed
-```
+#### Scenario: Menu displays tabbed content
+
+- **GIVEN** the menu section is visible
+- **THEN** tabs for Main, Dessert, and Drinks are displayed
+- **AND** Main tab items are shown by default
+
+#### Scenario: Switching tabs shows different items
+
+- **GIVEN** the menu section is visible
+- **WHEN** the user clicks the Dessert tab
+- **THEN** dessert menu items are displayed
+- **WHEN** the user clicks the Drinks tab
+- **THEN** drink menu items are displayed
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials
-  Scenario: Testimonials carousel displays reviews
-    Given the testimonials section is visible
-    Then a testimonial with author name and star rating is displayed
-    And navigation buttons are available
 
-  Scenario: User can navigate between testimonials
-    Given the testimonials section is visible
-    When the user clicks next
-    Then a different testimonial is shown
-```
+#### Scenario: Testimonials carousel displays reviews
+
+- **GIVEN** the testimonials section is visible
+- **THEN** a testimonial with author name and star rating is displayed
+- **AND** navigation buttons are available
+
+#### Scenario: User can navigate between testimonials
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the user clicks next
+- **THEN** a different testimonial is shown
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then a link to https://www.componentdock.com/ is displayed
-    And the link text mentions "Component Dock"
 
-  Scenario: Footer shows business info
-    Given the footer is visible
-    Then Opening Hours, Contact Information, and Newsletter sections are displayed
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is displayed
+- **AND** the link text mentions "Component Dock"
+
+#### Scenario: Footer shows business info
+
+- **GIVEN** the footer is visible
+- **THEN** Opening Hours, Contact Information, and Newsletter sections are displayed
 
 ## Verification Checklist
 

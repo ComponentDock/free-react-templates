@@ -57,65 +57,75 @@ Component Dock.
    Quick Links, Features). Social icons. Copyright bar at bottom. "Component
    Dock" branding.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Bizcraft template behaviour
+
 Feature: Bizcraft template rendering
 
-  Background:
-    Given the Bizcraft template is mounted at the root path
+Background:
+- **GIVEN** the Bizcraft template is mounted at the root path
 
-  Scenario: Navbar renders all navigation links
-    Then the navbar contains links for "Home", "About", "Blog", and "Contact"
-    And the navbar displays a logo image
-    And the navbar is sticky on scroll
+#### Scenario: Navbar renders all navigation links
 
-  Scenario: Hero section displays headline and CTAs
-    Then the hero heading reads "Lead from Front in Business Innovation"
-    And a "Learn More" button is visible
-    And an "Intro Video" link is visible
-    And the section has a background image
+- **THEN** the navbar contains links for "Home", "About", "Blog", and "Contact"
+- **AND** the navbar displays a logo image
+- **AND** the navbar is sticky on scroll
 
-  Scenario: About section shows company info
-    Then the about section displays a heading with "Experience" or "consulting"
-    And a paragraph of descriptive text is present
-    And a "Read More" link is visible
+#### Scenario: Hero section displays headline and CTAs
 
-  Scenario: Services section lists service cards
-    Then the services section heading reads "We Provide Best Services"
-    And at least 4 service cards are displayed in a grid
-    And each service card has an icon, title, and description
-    And a "Load More" button is visible
+- **THEN** the hero heading reads "Lead from Front in Business Innovation"
+- **AND** a "Learn More" button is visible
+- **AND** an "Intro Video" link is visible
+- **AND** the section has a background image
 
-  Scenario: Testimonials section shows customer reviews
-    Then the testimonials heading reads "Customer Are Saying"
-    And at least 1 testimonial card is displayed
-    And each testimonial shows a name, role, and quote
+#### Scenario: About section shows company info
 
-  Scenario: Portfolio section shows project cards
-    Then the portfolio heading contains "Practice Area"
-    And at least 2 project cards are displayed
+- **THEN** the about section displays a heading with "Experience" or "consulting"
+- **AND** a paragraph of descriptive text is present
+- **AND** a "Read More" link is visible
 
-  Scenario: Adviser CTA section shows service pitch
-    Then the adviser section contains a heading about "adviser service"
-    And a "Read More" link is visible
+#### Scenario: Services section lists service cards
 
-  Scenario: Blog section shows recent posts
-    Then the blog section heading reads "Update From Blog"
-    And at least 2 blog post cards are displayed
-    And each card has a title and short excerpt
+- **THEN** the services section heading reads "We Provide Best Services"
+- **AND** at least 4 service cards are displayed in a grid
+- **AND** each service card has an icon, title, and description
+- **AND** a "Load More" button is visible
 
-  Scenario: Footer contains links and branding
-    Then the footer displays "Top Products", "Quick Links", and "Features" columns
-    And the footer links to Component Dock
-    And social media icons are present
+#### Scenario: Testimonials section shows customer reviews
 
-  Scenario: Page is responsive
-    Given the viewport is 375px wide
-    Then the navbar collapses to a hamburger menu
-    And sections stack vertically
-    And text remains readable
-```
+- **THEN** the testimonials heading reads "Customer Are Saying"
+- **AND** at least 1 testimonial card is displayed
+- **AND** each testimonial shows a name, role, and quote
+
+#### Scenario: Portfolio section shows project cards
+
+- **THEN** the portfolio heading contains "Practice Area"
+- **AND** at least 2 project cards are displayed
+
+#### Scenario: Adviser CTA section shows service pitch
+
+- **THEN** the adviser section contains a heading about "adviser service"
+- **AND** a "Read More" link is visible
+
+#### Scenario: Blog section shows recent posts
+
+- **THEN** the blog section heading reads "Update From Blog"
+- **AND** at least 2 blog post cards are displayed
+- **AND** each card has a title and short excerpt
+
+#### Scenario: Footer contains links and branding
+
+- **THEN** the footer displays "Top Products", "Quick Links", and "Features" columns
+- **AND** the footer links to Component Dock
+- **AND** social media icons are present
+
+#### Scenario: Page is responsive
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** text remains readable
 
 ## Verification checklist
 

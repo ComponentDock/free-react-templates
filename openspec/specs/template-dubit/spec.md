@@ -111,145 +111,135 @@ Extracted from the live preview CSS (`main.css`) at
 | Blog                 | White `#fff`                            |
 | Footer               | `#04091e` (very dark navy)              |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Hero Banner
 
-```gherkin
-Scenario: Hero displays purchase rate and CTA
-  Given I visit the homepage
-  Then I see the heading "Currently Purchase Rate"
-  And I see the headline "$12,356" (or a dynamic price)
-  And I see a "Buy Bitcoin" CTA button
-  And the hero has a dark background image with navy overlay
+#### Scenario: Hero displays purchase rate and CTA
 
-Scenario: Hero CTA button has gradient style
-  Given the hero section is visible
-  Then the "Buy Bitcoin" button has a gradient background (golden to orange)
-  And the button text is white and uppercase
-```
+- **GIVEN** I visit the homepage
+- **THEN** I see the heading "Currently Purchase Rate"
+- **AND** I see the headline "$12,356" (or a dynamic price)
+- **AND** I see a "Buy Bitcoin" CTA button
+- **AND** the hero has a dark background image with navy overlay
+
+#### Scenario: Hero CTA button has gradient style
+
+- **GIVEN** the hero section is visible
+- **THEN** the "Buy Bitcoin" button has a gradient background (golden to orange)
+- **AND** the button text is white and uppercase
 
 ### Feature: Currency Converter
 
-```gherkin
-Scenario: Converter card overlaps hero
-  Given I scroll to the converter section
-  Then I see "The Currency Converter" heading
-  And I see 4 input fields for conversion values
-  And I see a "Calculate" CTA button
-  And the card has a golden-to-orange gradient background
+#### Scenario: Converter card overlaps hero
 
-Scenario: Converter has Bitcoin logo
-  Given the converter card is visible
-  Then I see a Bitcoin logo/image element
-```
+- **GIVEN** I scroll to the converter section
+- **THEN** I see "The Currency Converter" heading
+- **AND** I see 4 input fields for conversion values
+- **AND** I see a "Calculate" CTA button
+- **AND** the card has a golden-to-orange gradient background
+
+#### Scenario: Converter has Bitcoin logo
+
+- **GIVEN** the converter card is visible
+- **THEN** I see a Bitcoin logo/image element
 
 ### Feature: Simple Services
 
-```gherkin
-Scenario: Three services displayed in a row
-  Given I scroll to the services section
-  Then I see 3 service items in a horizontal layout
-  And each service has an icon and title
-  And the titles are "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
-```
+#### Scenario: Three services displayed in a row
+
+- **GIVEN** I scroll to the services section
+- **THEN** I see 3 service items in a horizontal layout
+- **AND** each service has an icon and title
+- **AND** the titles are "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
 
 ### Feature: About Us
 
-```gherkin
-Scenario: About section has dark background with carousel
-  Given I scroll to the about section
-  Then I see the section has a dark (#222) background
-  And I see an image carousel on the left side
-  And I see a heading on the right side
-```
+#### Scenario: About section has dark background with carousel
+
+- **GIVEN** I scroll to the about section
+- **THEN** I see the section has a dark (#222) background
+- **AND** I see an image carousel on the left side
+- **AND** I see a heading on the right side
 
 ### Feature: Service Features
 
-```gherkin
-Scenario: Six feature cards in a grid
-  Given I scroll to the feature section
-  Then I see the heading "Why choose us during purchase bitcoin"
-  And I see 6 feature cards in a 2×3 grid
-  And each card has an icon and title
-  And the titles are: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
-```
+#### Scenario: Six feature cards in a grid
+
+- **GIVEN** I scroll to the feature section
+- **THEN** I see the heading "Why choose us during purchase bitcoin"
+- **AND** I see 6 feature cards in a 2×3 grid
+- **AND** each card has an icon and title
+- **AND** the titles are: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
 
 ### Feature: Stats Section
 
-```gherkin
-Scenario: Stats section with CTA
-  Given I scroll to the stats section
-  Then I see the heading "Ups and Downs"
-  And I see descriptive text below the heading
-  And I see a "View Details" CTA button
-  And the section has a light (#f9f9ff) background
-```
+#### Scenario: Stats section with CTA
+
+- **GIVEN** I scroll to the stats section
+- **THEN** I see the heading "Ups and Downs"
+- **AND** I see descriptive text below the heading
+- **AND** I see a "View Details" CTA button
+- **AND** the section has a light (#f9f9ff) background
 
 ### Feature: Call-to-Action Banner
 
-```gherkin
-Scenario: CTA banner with gradient background
-  Given I scroll to the call-to-action section
-  Then I see the heading "Huge Transaction in last Week"
-  And I see a "Buy Bitcoin Now!" button
-  And the section has a golden-to-orange gradient background
-  And the text is white
-```
+#### Scenario: CTA banner with gradient background
+
+- **GIVEN** I scroll to the call-to-action section
+- **THEN** I see the heading "Huge Transaction in last Week"
+- **AND** I see a "Buy Bitcoin Now!" button
+- **AND** the section has a golden-to-orange gradient background
+- **AND** the text is white
 
 ### Feature: Pricing Cards
 
-```gherkin
-Scenario: Three pricing cards displayed
-  Given I scroll to the pricing section
-  Then I see 3 pricing cards side by side
-  And the cards are labeled "Ripple", "Ethereum", "Bitcoin"
-  And the prices are "$7999", "$9999", "$5999"
-  And each card has a "Get Started" CTA button
-  And the bottom portion of each card has the gradient background
-```
+#### Scenario: Three pricing cards displayed
+
+- **GIVEN** I scroll to the pricing section
+- **THEN** I see 3 pricing cards side by side
+- **AND** the cards are labeled "Ripple", "Ethereum", "Bitcoin"
+- **AND** the prices are "$7999", "$9999", "$5999"
+- **AND** each card has a "Get Started" CTA button
+- **AND** the bottom portion of each card has the gradient background
 
 ### Feature: Blog Area
 
-```gherkin
-Scenario: Three blog posts displayed
-  Given I scroll to the blog section
-  Then I see the heading "Latest Posts from our Blog"
-  And I see 3 blog cards in a row
-  And each card has an image, title, and excerpt text
-```
+#### Scenario: Three blog posts displayed
+
+- **GIVEN** I scroll to the blog section
+- **THEN** I see the heading "Latest Posts from our Blog"
+- **AND** I see 3 blog cards in a row
+- **AND** each card has an image, title, and excerpt text
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer with newsletter and social links
-  Given I scroll to the footer
-  Then I see a newsletter subscription form
-  And I see social media icons
-  And I see a copyright line
-  And the footer has a very dark navy (#04091e) background
-  And the footer contains a link to https://www.componentdock.com/
-```
+#### Scenario: Footer with newsletter and social links
+
+- **GIVEN** I scroll to the footer
+- **THEN** I see a newsletter subscription form
+- **AND** I see social media icons
+- **AND** I see a copyright line
+- **AND** the footer has a very dark navy (#04091e) background
+- **AND** the footer contains a link to https://www.componentdock.com/
 
 ### Feature: Navigation
 
-```gherkin
-Scenario: Fixed header with navigation
-  Given I visit the homepage
-  Then I see a fixed navigation bar at the top
-  And it contains links: Home, Convert, Feature, Price, Blog, Pages
-  And the navigation is transparent over the hero
-  And the navigation becomes solid dark when scrolled
-```
+#### Scenario: Fixed header with navigation
+
+- **GIVEN** I visit the homepage
+- **THEN** I see a fixed navigation bar at the top
+- **AND** it contains links: Home, Convert, Feature, Price, Blog, Pages
+- **AND** the navigation is transparent over the hero
+- **AND** the navigation becomes solid dark when scrolled
 
 ### Feature: Footer Component Dock Link
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I view the footer
-  Then I see a link to https://www.componentdock.com/
-  And the link text references "Component Dock"
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I view the footer
+- **THEN** I see a link to https://www.componentdock.com/
+- **AND** the link text references "Component Dock"
 
 ## Verification checklist
 

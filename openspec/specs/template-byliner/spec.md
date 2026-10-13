@@ -50,163 +50,160 @@ Extracted from the live preview stylesheet (`css/style.css`):
 11. **Contact** — Heading "Contact Me". 4 info cards (Address, Phone, Email, Website) in a row. Contact form (name, email, subject, message textarea, submit button). Map placeholder beside form.
 12. **Footer** — Black bg. 3 columns: About text + social icons, Links list, Newsletter signup. Bottom bar with copyright and Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar renders all navigation links
-  Given the page loads
-  Then the navbar displays links: Home, About, Chapter, Reviews, My Books, Author, Contact
-  And the logo reads "Author." with a green accent dot
+#### Scenario: Navbar renders all navigation links
 
-Scenario: Navbar is responsive
-  Given the viewport is mobile (< 768px)
-  Then the navbar collapses to a hamburger toggle
-  When the hamburger is clicked
-  Then the navigation menu expands with all links visible
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays links: Home, About, Chapter, Reviews, My Books, Author, Contact
+- **AND** the logo reads "Author." with a green accent dot
+
+#### Scenario: Navbar is responsive
+
+- **GIVEN** the viewport is mobile (< 768px)
+- **THEN** the navbar collapses to a hamburger toggle
+- **WHEN** the hamburger is clicked
+- **THEN** the navigation menu expands with all links visible
 
 ### Feature: Hero Section
 
-```gherkin
-Scenario: Hero displays book promotion content
-  Given the page loads
-  Then the hero shows subheading "Best Seller Book Of The Week"
-  And the heading reads "Clue Of The Wooden Cottage"
-  And a CTA button "Buy Now For $22.78" is visible
+#### Scenario: Hero displays book promotion content
 
-Scenario: Hero has split layout
-  Given the page loads on desktop
-  Then the left side contains text content
-  And the right side contains an illustration
-  And a dark overlay covers the hero background
-```
+- **GIVEN** the page loads
+- **THEN** the hero shows subheading "Best Seller Book Of The Week"
+- **AND** the heading reads "Clue Of The Wooden Cottage"
+- **AND** a CTA button "Buy Now For $22.78" is visible
+
+#### Scenario: Hero has split layout
+
+- **GIVEN** the page loads on desktop
+- **THEN** the left side contains text content
+- **AND** the right side contains an illustration
+- **AND** a dark overlay covers the hero background
 
 ### Feature: Partners
 
-```gherkin
-Scenario: Partner logos display in a row
-  Given the page loads
-  Then 5 partner logo placeholders are rendered in a horizontal row
-```
+#### Scenario: Partner logos display in a row
+
+- **GIVEN** the page loads
+- **THEN** 5 partner logo placeholders are rendered in a horizontal row
 
 ### Feature: About Section
 
-```gherkin
-Scenario: About section shows book details
-  Given the page loads
-  Then "About The Book" heading is visible
-  And 3 feature items are listed: Award achievements, Read On Any Devices, Very High Resolution
-  And a background image appears on the left half
+#### Scenario: About section shows book details
 
-Scenario: About section has split layout
-  Given the page loads on desktop
-  Then the left column shows an image
-  And the right column shows text content on a light background
-```
+- **GIVEN** the page loads
+- **THEN** "About The Book" heading is visible
+- **AND** 3 feature items are listed: Award achievements, Read On Any Devices, Very High Resolution
+- **AND** a background image appears on the left half
+
+#### Scenario: About section has split layout
+
+- **GIVEN** the page loads on desktop
+- **THEN** the left column shows an image
+- **AND** the right column shows text content on a light background
 
 ### Feature: Counter Section
 
-```gherkin
-Scenario: Counter displays stats
-  Given the page loads
-  Then 4 stat cards are visible: Copies Sold (1100), Copies Released (1200), Cup Of Coffee (340), Happy Readers (12000)
+#### Scenario: Counter displays stats
 
-Scenario: Counter numbers animate on scroll
-  Given the counter section scrolls into view
-  Then the numbers count up from 0 to their target values
-```
+- **GIVEN** the page loads
+- **THEN** 4 stat cards are visible: Copies Sold (1100), Copies Released (1200), Cup Of Coffee (340), Happy Readers (12000)
+
+#### Scenario: Counter numbers animate on scroll
+
+- **GIVEN** the counter section scrolls into view
+- **THEN** the numbers count up from 0 to their target values
 
 ### Feature: Chapter Navigator
 
-```gherkin
-Scenario: Chapter navigator shows table of contents
-  Given the page loads
-  Then 8 chapter links are listed in the sidebar: Title page, Copyright, Table of contents, Dedication, Foreword, Prologue, Epilogue, Epigraph
+#### Scenario: Chapter navigator shows table of contents
 
-Scenario: Clicking a chapter shows its content
-  Given the page loads
-  When I click "Title page" in the sidebar
-  Then the content area displays the Title page heading and paragraph
-  And the content area scrolls to the selected chapter
-```
+- **GIVEN** the page loads
+- **THEN** 8 chapter links are listed in the sidebar: Title page, Copyright, Table of contents, Dedication, Foreword, Prologue, Epilogue, Epigraph
+
+#### Scenario: Clicking a chapter shows its content
+
+- **GIVEN** the page loads
+- **WHEN** I click "Title page" in the sidebar
+- **THEN** the content area displays the Title page heading and paragraph
+- **AND** the content area scrolls to the selected chapter
 
 ### Feature: Services Section
 
-```gherkin
-Scenario: Services displays 3 service cards
-  Given the page loads
-  Then 3 service cards are visible: Experience, Marketing Goals, Targeting Vision
-  And each card has an icon, title, and description
-```
+#### Scenario: Services displays 3 service cards
+
+- **GIVEN** the page loads
+- **THEN** 3 service cards are visible: Experience, Marketing Goals, Targeting Vision
+- **AND** each card has an icon, title, and description
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials carousel shows review cards
-  Given the page loads
-  Then a carousel of testimonial cards is visible
-  And each card has a quote, person image, name, and position
+#### Scenario: Testimonials carousel shows review cards
 
-Scenario: Testimonials section has parallax background
-  Given the page loads
-  Then the testimonials section shows a background image with a green overlay
-```
+- **GIVEN** the page loads
+- **THEN** a carousel of testimonial cards is visible
+- **AND** each card has a quote, person image, name, and position
+
+#### Scenario: Testimonials section has parallax background
+
+- **GIVEN** the page loads
+- **THEN** the testimonials section shows a background image with a green overlay
 
 ### Feature: Book Gallery
 
-```gherkin
-Scenario: Book gallery displays book covers
-  Given the page loads
-  Then 8 book cover cards are shown in a grid
-  And each card shows a cover image, title, and genre tag on hover
+#### Scenario: Book gallery displays book covers
 
-Scenario: Book gallery has hover overlay
-  Given the page loads
-  When I hover over a book card
-  Then the card reveals an overlay with the book title and genre
-```
+- **GIVEN** the page loads
+- **THEN** 8 book cover cards are shown in a grid
+- **AND** each card shows a cover image, title, and genre tag on hover
+
+#### Scenario: Book gallery has hover overlay
+
+- **GIVEN** the page loads
+- **WHEN** I hover over a book card
+- **THEN** the card reveals an overlay with the book title and genre
 
 ### Feature: Author Bio
 
-```gherkin
-Scenario: Author bio shows personal info
-  Given the page loads
-  Then the author name "Franklin Henderson" is displayed
-  And a bio paragraph is shown
-  And an info list shows: name, date of birth, address, zip code, email, phone
+#### Scenario: Author bio shows personal info
 
-Scenario: Author section has split layout
-  Given the page loads on desktop
-  Then the left column shows an author portrait
-  And the right column shows bio details on a light background
-```
+- **GIVEN** the page loads
+- **THEN** the author name "Franklin Henderson" is displayed
+- **AND** a bio paragraph is shown
+- **AND** an info list shows: name, date of birth, address, zip code, email, phone
+
+#### Scenario: Author section has split layout
+
+- **GIVEN** the page loads on desktop
+- **THEN** the left column shows an author portrait
+- **AND** the right column shows bio details on a light background
 
 ### Feature: Contact Section
 
-```gherkin
-Scenario: Contact info cards display
-  Given the page loads
-  Then 4 contact info cards are visible: Address, Phone, Email, Website
-  And each card has an icon, title, and details
+#### Scenario: Contact info cards display
 
-Scenario: Contact form is functional
-  Given the page loads
-  Then a contact form is visible with fields: Name, Email, Subject, Message
-  And a "Send Message" submit button is present
-```
+- **GIVEN** the page loads
+- **THEN** 4 contact info cards are visible: Address, Phone, Email, Website
+- **AND** each card has an icon, title, and details
+
+#### Scenario: Contact form is functional
+
+- **GIVEN** the page loads
+- **THEN** a contact form is visible with fields: Name, Email, Subject, Message
+- **AND** a "Send Message" submit button is present
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer renders with links and social
-  Given the page loads
-  Then a black footer is visible
-  And it contains About text with social icons (Twitter, Facebook, Instagram)
-  And it contains a Links column with nav items
-  And it links to Component Dock
-```
+#### Scenario: Footer renders with links and social
+
+- **GIVEN** the page loads
+- **THEN** a black footer is visible
+- **AND** it contains About text with social icons (Twitter, Facebook, Instagram)
+- **AND** it contains a Links column with nav items
+- **AND** it links to Component Dock
 
 ## Verification Checklist
 

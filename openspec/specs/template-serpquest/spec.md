@@ -47,54 +47,62 @@ Extracted from the live preview stylesheet (`css/style.css`):
 7. **Testimonials** — Carousel/slider of testimonial cards. Quote text + author name + role ("Business Owner"). Avatar placeholder.
 8. **Footer** — Dark background. 4-column layout: About text, Quick Links, Newsletter signup, Contact info. Copyright bar at bottom.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: SerpQuest template behaviour
+
 Feature: SerpQuest template
 
-  Background:
-    Given the SerpQuest template is loaded
+Background:
+- **GIVEN** the SerpQuest template is loaded
 
-  Scenario: Header displays correctly
-    Then the navbar is sticky at the top
-    And the logo is visible on the left
-    And navigation links are centered
-    And an "Appointment" CTA button is on the right
+#### Scenario: Header displays correctly
 
-  Scenario: Hero section renders
-    Then the hero has a dark background with illustration
-    And the heading says "BoostUp your Business & Get top of Search Engine"
-    And a "Get Started" button is visible
+- **THEN** the navbar is sticky at the top
+- **AND** the logo is visible on the left
+- **AND** navigation links are centered
+- **AND** an "Appointment" CTA button is on the right
 
-  Scenario: Services section shows 3 items
-    Then 3 service cards are displayed in a row
-    And each card has an icon, title, description, and "Learn More" link
+#### Scenario: Hero section renders
 
-  Scenario: Case studies section shows portfolio grid
-    Then the heading says "Our Selected Case Study"
-    And project cards are displayed in a grid
-    And each card has an image, title, and category
+- **THEN** the hero has a dark background with illustration
+- **AND** the heading says "BoostUp your Business & Get top of Search Engine"
+- **AND** a "Get Started" button is visible
 
-  Scenario: Accordion section works
-    Then the heading says "Why Choose Us"
-    And 3 accordion items are displayed
-    When an accordion item is clicked
-    Then its answer becomes visible
+#### Scenario: Services section shows 3 items
 
-  Scenario: Features section shows capability grid
-    Then feature cards are displayed
-    And each card has an icon, title, and description
+- **THEN** 3 service cards are displayed in a row
+- **AND** each card has an icon, title, description, and "Learn More" link
 
-  Scenario: Testimonials carousel works
-    Then testimonial cards are shown
-    And each card has a quote, author name, and role
-    And navigation arrows allow cycling through testimonials
+#### Scenario: Case studies section shows portfolio grid
 
-  Scenario: Footer renders all columns
-    Then the footer has about text, quick links, newsletter, and contact columns
-    And a copyright line is visible at the bottom
-    And a link to Component Dock is present
-```
+- **THEN** the heading says "Our Selected Case Study"
+- **AND** project cards are displayed in a grid
+- **AND** each card has an image, title, and category
+
+#### Scenario: Accordion section works
+
+- **THEN** the heading says "Why Choose Us"
+- **AND** 3 accordion items are displayed
+- **WHEN** an accordion item is clicked
+- **THEN** its answer becomes visible
+
+#### Scenario: Features section shows capability grid
+
+- **THEN** feature cards are displayed
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Testimonials carousel works
+
+- **THEN** testimonial cards are shown
+- **AND** each card has a quote, author name, and role
+- **AND** navigation arrows allow cycling through testimonials
+
+#### Scenario: Footer renders all columns
+
+- **THEN** the footer has about text, quick links, newsletter, and contact columns
+- **AND** a copyright line is visible at the bottom
+- **AND** a link to Component Dock is present
 
 ## Verification checklist
 

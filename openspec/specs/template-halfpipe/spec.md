@@ -101,133 +101,147 @@ section treatment — the entire page is dark with white/primary text.
 - Buttons: Bootstrap default (small radius)
 - Dropdown menus: no radius, 2px primary border-top
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Halfpipe — Personal Brand / Skateboarding Template
 
 #### Scenario: Navbar renders with logo and navigation links
-  Given the page loads
-  Then a sticky navbar is visible at the top
-  And the logo reads "Halfpipe" with primary color accent
-  And navigation links include Home, Services, About, Testimonials, Blog, Contact
-  And the About link has a dropdown with Team, Pricing, FAQ sub-items
-  And nav links are white text on dark background
-  And active/hover state uses primary color #ff8b00
+
+- **GIVEN** the page loads
+- **THEN** a sticky navbar is visible at the top
+- **AND** the logo reads "Halfpipe" with primary color accent
+- **AND** navigation links include Home, Services, About, Testimonials, Blog, Contact
+- **AND** the About link has a dropdown with Team, Pricing, FAQ sub-items
+- **AND** nav links are white text on dark background
+- **AND** active/hover state uses primary color #ff8b00
 
 #### Scenario: Hero carousel displays with background images and CTA
-  Given the page loads
-  Then a full-viewport hero carousel is visible
-  And it contains at least 2 slides with background images
-  And each slide has a dark overlay
-  And each slide shows a large uppercase heading in white Oswald font
-  And each slide has a white paragraph description
-  And each slide has an outline-white "Get in touch" button
-  And slides auto-rotate (carousel behavior)
+
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero carousel is visible
+- **AND** it contains at least 2 slides with background images
+- **AND** each slide has a dark overlay
+- **AND** each slide shows a large uppercase heading in white Oswald font
+- **AND** each slide has a white paragraph description
+- **AND** each slide has an outline-white "Get in touch" button
+- **AND** slides auto-rotate (carousel behavior)
 
 #### Scenario: Services section shows 6 service cards in a grid
-  Given the user scrolls to the Services section
-  Then a heading "Services" is visible with a subtitle paragraph
-  And 6 service cards are displayed in a 3-column grid
-  And each card has an orange (#ff8b00) icon (3rem size)
-  And each card has a white heading (e.g., "Skate for Beginner")
-  And each card has a grey description paragraph
-  And cards animate on scroll (fade-up)
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a heading "Services" is visible with a subtitle paragraph
+- **AND** 6 service cards are displayed in a 3-column grid
+- **AND** each card has an orange (#ff8b00) icon (3rem size)
+- **AND** each card has a white heading (e.g., "Skate for Beginner")
+- **AND** each card has a grey description paragraph
+- **AND** cards animate on scroll (fade-up)
 
 #### Scenario: About / Performance section shows alternating image+text blocks
-  Given the user scrolls to the About section
-  Then 2 alternating blocks are visible
-  And each block has a full-width background image on one side
-  And each block has text content on the other side
-  And text blocks have an orange heading (e.g., "My Best Performance")
-  And text blocks have body paragraphs and a checkmark list with orange icons
-  And the image and text sides alternate left/right between blocks
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** 2 alternating blocks are visible
+- **AND** each block has a full-width background image on one side
+- **AND** each block has text content on the other side
+- **AND** text blocks have an orange heading (e.g., "My Best Performance")
+- **AND** text blocks have body paragraphs and a checkmark list with orange icons
+- **AND** the image and text sides alternate left/right between blocks
 
 #### Scenario: Video embed and stats counters section
-  Given the user scrolls past the About section
-  Then a video embed area is visible with a play button overlay
-  And 4 stat counters are displayed in a row
-  And counters show: "30+ Year of Experience", "4+ Expert Trainer", "4+ Number of Trainer", "1500+ Number of Members"
-  And counter numbers are in large white Oswald font with an orange underline
-  And counters animate on scroll
+
+- **GIVEN** the user scrolls past the About section
+- **THEN** a video embed area is visible with a play button overlay
+- **AND** 4 stat counters are displayed in a row
+- **AND** counters show: "30+ Year of Experience", "4+ Expert Trainer", "4+ Number of Trainer", "1500+ Number of Members"
+- **AND** counter numbers are in large white Oswald font with an orange underline
+- **AND** counters animate on scroll
 
 #### Scenario: Team section shows 3 team members
-  Given the user scrolls to the Team section
-  Then a heading "Our Team" is visible with a subtitle
-  And 3 team member cards are displayed in a 3-column layout
-  And each card has a dark (#333) background with padding
-  And each card shows a circular photo (border-radius 50%)
-  And each card shows an orange member name and grey role subtitle
-  And each card has 3 social media icon buttons (Facebook, Twitter, Instagram)
-  And cards lift on hover (translateY + shadow)
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** a heading "Our Team" is visible with a subtitle
+- **AND** 3 team member cards are displayed in a 3-column layout
+- **AND** each card has a dark (#333) background with padding
+- **AND** each card shows a circular photo (border-radius 50%)
+- **AND** each card shows an orange member name and grey role subtitle
+- **AND** each card has 3 social media icon buttons (Facebook, Twitter, Instagram)
+- **AND** cards lift on hover (translateY + shadow)
 
 #### Scenario: Pricing section shows 3 pricing tiers
-  Given the user scrolls to the Pricing section
-  Then a heading "Session Pricing" is visible with a subtitle
-  And 3 pricing cards are displayed (Basic $47, Premium $200, Professional $750)
-  And each card has a dark (#333) background
-  And each card has a white tier name heading
-  And each card shows the price with the dollar amount in large orange font
-  And each card has a feature list with green (#71bc42) checkmarks
-  And excluded features have a "remove" class (strikethrough/hidden)
-  And each card has a buy button (secondary for Basic/Professional, primary for Premium)
+
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** a heading "Session Pricing" is visible with a subtitle
+- **AND** 3 pricing cards are displayed (Basic $47, Premium $200, Professional $750)
+- **AND** each card has a dark (#333) background
+- **AND** each card has a white tier name heading
+- **AND** each card shows the price with the dollar amount in large orange font
+- **AND** each card has a feature list with green (#71bc42) checkmarks
+- **AND** excluded features have a "remove" class (strikethrough/hidden)
+- **AND** each card has a buy button (secondary for Basic/Professional, primary for Premium)
 
 #### Scenario: FAQ section with questions and answers
-  Given the user scrolls to the FAQ section
-  Then a heading "Frequently Ask Questions" is visible in primary color
-  And 8 FAQ items are displayed in a 2-column layout
-  And each question is an orange heading
-  And each answer is a grey paragraph
-  And items animate on scroll
+
+- **GIVEN** the user scrolls to the FAQ section
+- **THEN** a heading "Frequently Ask Questions" is visible in primary color
+- **AND** 8 FAQ items are displayed in a 2-column layout
+- **AND** each question is an orange heading
+- **AND** each answer is a grey paragraph
+- **AND** items animate on scroll
 
 #### Scenario: Testimonials carousel
-  Given the user scrolls to the Testimonials section
-  Then a heading "Testimonial" is visible
-  And a carousel displays testimonial cards
-  And each card has a dark (#333) blockquote with italic white text
-  And each card shows a circular photo and person name
-  And carousel dots are visible (active dot is orange, inactive grey)
-  And the carousel auto-rotates
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a heading "Testimonial" is visible
+- **AND** a carousel displays testimonial cards
+- **AND** each card has a dark (#333) blockquote with italic white text
+- **AND** each card shows a circular photo and person name
+- **AND** carousel dots are visible (active dot is orange, inactive grey)
+- **AND** the carousel auto-rotates
 
 #### Scenario: Blog section shows 2 blog posts
-  Given the user scrolls to the Blog section
-  Then a heading "Our Blog" is visible with subtitle "Latest Blog Posts"
-  And 2 blog post cards are displayed side by side
-  And each card has a featured image
-  And each card has a title, date/author line, excerpt, and "Read More" link
-  And cards animate on scroll
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a heading "Our Blog" is visible with subtitle "Latest Blog Posts"
+- **AND** 2 blog post cards are displayed side by side
+- **AND** each card has a featured image
+- **AND** each card has a title, date/author line, excerpt, and "Read More" link
+- **AND** cards animate on scroll
 
 #### Scenario: Contact section with form and CTA
-  Given the user scrolls to the Contact section
-  Then a heading "Contact Me" is visible with subtitle "Get In Touch"
-  And a contact form is displayed with: 2 name fields (side by side), email field, textarea, submit button
-  And form inputs have dark (#333) background with white text
-  And the submit button is primary (orange) with white text
-  And to the right of the form is a CTA text block with orange heading and primary "Get Started" button
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a heading "Contact Me" is visible with subtitle "Get In Touch"
+- **AND** a contact form is displayed with: 2 name fields (side by side), email field, textarea, submit button
+- **AND** form inputs have dark (#333) background with white text
+- **AND** the submit button is primary (orange) with white text
+- **AND** to the right of the form is a CTA text block with orange heading and primary "Get Started" button
 
 #### Scenario: Footer with newsletter and social links
-  Given the user scrolls to the footer
-  Then the footer has a dark (#333) background
-  And it contains an "About Us" text column and a "Features" links column
-  And it contains a "Subscribe to Newsletter" section with email input and orange subscribe button
-  And it contains social media icon links (Facebook, Twitter, Instagram, LinkedIn)
-  And a copyright line reads "Copyright © [year] All rights reserved"
-  And the footer links to Component Dock (https://www.componentdock.com/)
-  And no reference to ColorLib appears in the footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark (#333) background
+- **AND** it contains an "About Us" text column and a "Features" links column
+- **AND** it contains a "Subscribe to Newsletter" section with email input and orange subscribe button
+- **AND** it contains social media icon links (Facebook, Twitter, Instagram, LinkedIn)
+- **AND** a copyright line reads "Copyright © [year] All rights reserved"
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
+- **AND** no reference to ColorLib appears in the footer
 
 #### Scenario: Responsive behavior on mobile
-  Given the page is viewed on a mobile viewport (≤991px)
-  Then the navbar collapses to a hamburger menu toggle
-  And the hero h1 reduces to 2rem
-  And service cards stack to single column
-  And team/pricing cards stack to single column
-  And the contact form and CTA stack vertically
-  And all sections maintain dark theme readability
+
+- **GIVEN** the page is viewed on a mobile viewport (≤991px)
+- **THEN** the navbar collapses to a hamburger menu toggle
+- **AND** the hero h1 reduces to 2rem
+- **AND** service cards stack to single column
+- **AND** team/pricing cards stack to single column
+- **AND** the contact form and CTA stack vertically
+- **AND** all sections maintain dark theme readability
 
 #### Scenario: AOS scroll animations throughout
-  Given the page loads
-  Then sections use AOS (Animate On Scroll) fade-up animations
-  And animations have staggered delays (0ms, 100ms, 200ms, 300ms)
-  And animations trigger as sections enter the viewport
+
+- **GIVEN** the page loads
+- **THEN** sections use AOS (Animate On Scroll) fade-up animations
+- **AND** animations have staggered delays (0ms, 100ms, 200ms, 300ms)
+- **AND** animations trigger as sections enter the viewport
 
 ## Verification Checklist
 

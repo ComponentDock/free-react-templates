@@ -23,70 +23,80 @@ The original is a comprehensive higher-education layout featuring a top announce
   - Buttons (`.browse-btn`, `.btn_1`): Rounded with smooth padding, hover transitions.
   - Scroll-to-top button: Circular `#007A5C` with white arrow icon.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature 1: Top Announcement Bar & Header
 
-- **Scenario**: User views announcement banner
-  - **Given** the page is loaded
-  - **Then** the user sees an announcement text ("ENDS TOMORROW: Join Teachable for $4,800 in bonus content") and a live countdown timer (Days, Hours, Minutes, Seconds) with a "Learn More" button.
+#### Scenario: User views announcement banner
+
+- **GIVEN** the page is loaded
+- **THEN** the user sees an announcement text ("ENDS TOMORROW: Join Teachable for $4,800 in bonus content") and a live countdown timer (Days, Hours, Minutes, Seconds) with a "Learn More" button
 
 ### Feature 2: Navigation Bar & Sticky Header
 
-- **Scenario**: User interacts with navigation
-  - **Given** the page is loaded
-  - **Then** the user sees the LearnField logo, primary navigation links (Home, About, Programs, Blog, Contact), phone contact number (`0 (78) 675 3674`), and social media icons.
-  - **When** the user scrolls down
-  - **Then** the header becomes sticky at the top of the viewport.
+#### Scenario: User interacts with navigation
+
+- **GIVEN** the page is loaded
+- **THEN** the user sees the LearnField logo, primary navigation links (Home, About, Programs, Blog, Contact), phone contact number (`0 (78) 675 3674`), and social media icons
+- **WHEN** the user scrolls down
+- **THEN** the header becomes sticky at the top of the viewport
 
 ### Feature 3: Hero Slider Banner
 
-- **Scenario**: User views the hero banner
-  - **Given** the hero section is displayed
-  - **Then** the user sees badge ("EDUCATION & SCHOOL"), headline ("SHOWCASE COURSES, EVENTS AND MORE!"), introductory paragraph, and "Get Started Now" CTA button over a styled background overlay.
+#### Scenario: User views the hero banner
+
+- **GIVEN** the hero section is displayed
+- **THEN** the user sees badge ("EDUCATION & SCHOOL"), headline ("SHOWCASE COURSES, EVENTS AND MORE!"), introductory paragraph, and "Get Started Now" CTA button over a styled background overlay
 
 ### Feature 4: Comprehensive Teaching Approach Section
 
-- **Scenario**: User reads about teaching methodology
-  - **Given** the about section is displayed
-  - **Then** the user sees an institutional about image on the left and title ("A comprehensive teaching approach") with detailed paragraphs and a "Learn More" button on the right against a warm cream background (`#FCF2EB`).
+#### Scenario: User reads about teaching methodology
+
+- **GIVEN** the about section is displayed
+- **THEN** the user sees an institutional about image on the left and title ("A comprehensive teaching approach") with detailed paragraphs and a "Learn More" button on the right against a warm cream background (`#FCF2EB`)
 
 ### Feature 5: Programs We Offer Grid
 
-- **Scenario**: User browses academic programs
-  - **Given** the programs section is displayed
-  - **Then** the user sees section title ("Programs we Offer") and two faculty cards ("Faculty of Science" and "Faculty of Arts") with imagery, descriptions, and "Learn More" links.
+#### Scenario: User browses academic programs
+
+- **GIVEN** the programs section is displayed
+- **THEN** the user sees section title ("Programs we Offer") and two faculty cards ("Faculty of Science" and "Faculty of Arts") with imagery, descriptions, and "Learn More" links
 
 ### Feature 6: Essential Resources Split Section
 
-- **Scenario**: User views essential student resources
-  - **Given** the resources section is displayed
-  - **Then** the user sees a split layout with title ("Essential resources") and clickable resource items ("First year students", "Tuition & fees", "International students") with chevron indicators.
+#### Scenario: User views essential student resources
+
+- **GIVEN** the resources section is displayed
+- **THEN** the user sees a split layout with title ("Essential resources") and clickable resource items ("First year students", "Tuition & fees", "International students") with chevron indicators
 
 ### Feature 7: Top Stories Grid
 
-- **Scenario**: User browses top campus stories
-  - **Given** the top stories section is displayed
-  - **Then** the user sees a header with title ("Top Stories") and "More Stories" button, followed by a 3-column grid of story cards with thumbnail images and headline titles.
+#### Scenario: User browses top campus stories
+
+- **GIVEN** the top stories section is displayed
+- **THEN** the user sees a header with title ("Top Stories") and "More Stories" button, followed by a 3-column grid of story cards with thumbnail images and headline titles
 
 ### Feature 8: Partners / Sponsors Marquee
 
-- **Scenario**: User views institutional partners
-  - **Given** the partner section is displayed
-  - **Then** the user sees title ("Our Partners") and a row of partner/sponsor logo placeholders.
+#### Scenario: User views institutional partners
+
+- **GIVEN** the partner section is displayed
+- **THEN** the user sees title ("Our Partners") and a row of partner/sponsor logo placeholders
 
 ### Feature 9: Trusted By Students Banner
 
-- **Scenario**: User views enrollment trust banner
-  - **Given** the trust section is displayed
-  - **Then** the user sees a split layout highlighting "TRUSTED BY OVER 6000+ STUDENTS" with descriptive copy and a "Join Now" CTA button.
+#### Scenario: User views enrollment trust banner
+
+- **GIVEN** the trust section is displayed
+- **THEN** the user sees a split layout highlighting "TRUSTED BY OVER 6000+ STUDENTS" with descriptive copy and a "Join Now" CTA button
 
 ### Feature 10: Footer & Newsletter Subscription
 
-- **Scenario**: User interacts with footer
-  - **Given** the footer section is displayed
-  - **Then** the user sees quick links, program links, resource links, and a newsletter subscription form.
-  - **And** the footer contains the mandatory copyright notice and brand attribution linking to `https://www.componentdock.com/` ("Component Dock").
+#### Scenario: User interacts with footer
+
+- **GIVEN** the footer section is displayed
+- **THEN** the user sees quick links, program links, resource links, and a newsletter subscription form
+- **AND** the footer contains the mandatory copyright notice and brand attribution linking to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

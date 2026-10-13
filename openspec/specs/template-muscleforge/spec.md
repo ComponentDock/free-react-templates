@@ -70,82 +70,118 @@ https://preview.colorlib.com/theme/gym/css/main.css:
     + primary button (white on transparent, outlined on hover).
 12. **Footer** — Social media links row, copyright with Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
+
+#### Scenario: Header
+
 - Scenario: Header displays tagline, logo, and phone number
-  - Given the user visits the page
-  - Then a top bar shows the tagline on the left, logo centered, phone on right
-  - And a horizontal navigation menu is visible below the top bar
+- **GIVEN** the user visits the page
+- **THEN** a top bar shows the tagline on the left, logo centered, phone on right
+- **AND** a horizontal navigation menu is visible below the top bar
 
 ### Banner/Hero
+
+#### Scenario: Banner/Hero
+
 - Scenario: Hero section renders with dark overlay and headline
-  - Given the user visits the page
-  - Then a full-width hero banner is displayed
-  - And the heading "Real Fitness Depends on Exercise" is visible
-  - And the subtext "Shape your body well." is visible
-  - And a CTA button is present
+- **GIVEN** the user visits the page
+- **THEN** a full-width hero banner is displayed
+- **AND** the heading "Real Fitness Depends on Exercise" is visible
+- **AND** the subtext "Shape your body well." is visible
+- **AND** a CTA button is present
 
 ### Offer Area
+
+#### Scenario: Offer Area
+
 - Scenario: Offer section shows 3 service cards
-  - Given the user scrolls to the offer section
-  - Then 3 cards are displayed in a row
-  - And each card has an image, title, and description
+- **GIVEN** the user scrolls to the offer section
+- **THEN** 3 cards are displayed in a row
+- **AND** each card has an image, title, and description
 
 ### BMI Calculator
+
+#### Scenario: BMI Calculator
+
 - Scenario: BMI calculator renders inputs and button
-  - Given the user scrolls to the BMI section
-  - Then a height input and a weight input are visible
-  - And a "Calculate Your BMI" button is present
+- **GIVEN** the user scrolls to the BMI section
+- **THEN** a height input and a weight input are visible
+- **AND** a "Calculate Your BMI" button is present
 
 ### Top Courses
+
+#### Scenario: Top Courses
+
 - Scenario: Course grid shows 6 courses with prices
-  - Given the user scrolls to the courses section
-  - Then 6 course cards are displayed in a 3x2 grid
-  - And each card shows a "Course Available" badge
-  - And each card displays a course name with a dollar price
+- **GIVEN** the user scrolls to the courses section
+- **THEN** 6 course cards are displayed in a 3x2 grid
+- **AND** each card shows a "Course Available" badge
+- **AND** each card displays a course name with a dollar price
 
 ### Feature Area
+
+#### Scenario: Feature Area
+
 - Scenario: Feature section shows alternating image-text pairs
-  - Given the user scrolls to the features section
-  - Then 2 image-text pairs are displayed on a dark background
-  - And each pair has a heading and paragraph
+- **GIVEN** the user scrolls to the features section
+- **THEN** 2 image-text pairs are displayed on a dark background
+- **AND** each pair has a heading and paragraph
 
 ### Schedule
+
+#### Scenario: Schedule
+
 - Scenario: Schedule table renders with course rows and day columns
-  - Given the user scrolls to the schedule section
-  - Then a table is displayed with day columns (Mon-Fri)
-  - And course rows show time slots
+- **GIVEN** the user scrolls to the schedule section
+- **THEN** a table is displayed with day columns (Mon-Fri)
+- **AND** course rows show time slots
 
 ### Team
+
+#### Scenario: Team
+
 - Scenario: Team section shows 4 trainer cards
-  - Given the user scrolls to the team section
-  - Then 4 trainer cards are displayed
-  - And each card shows a photo, name, and role
+- **GIVEN** the user scrolls to the team section
+- **THEN** 4 trainer cards are displayed
+- **AND** each card shows a photo, name, and role
 
 ### Pricing
+
+#### Scenario: Pricing
+
 - Scenario: Pricing section shows 3 tiers
-  - Given the user scrolls to the pricing section
-  - Then 3 pricing cards are displayed
-  - And each card shows a plan name, price, feature list, and CTA button
-  - And hovering a card turns it red with a shadow
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** 3 pricing cards are displayed
+- **AND** each card shows a plan name, price, feature list, and CTA button
+- **AND** hovering a card turns it red with a shadow
 
 ### Brand Logos
+
+#### Scenario: Brand Logos
+
 - Scenario: Brand logos row displays partner logos
-  - Given the user scrolls to the brand section
-  - Then a row of brand logos is visible
+- **GIVEN** the user scrolls to the brand section
+- **THEN** a row of brand logos is visible
 
 ### CTA Parallax
+
+#### Scenario: CTA Parallax
+
 - Scenario: CTA section shows headline and button on parallax background
-  - Given the user scrolls to the CTA section
-  - Then a parallax background image with dark overlay is displayed
-  - And a heading, subtext, and primary button are visible
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a parallax background image with dark overlay is displayed
+- **AND** a heading, subtext, and primary button are visible
 
 ### Footer
+
+#### Scenario: Footer
+
 - Scenario: Footer shows social links and copyright
-  - Given the user scrolls to the footer
-  - Then social media icon links are visible
-  - And a copyright notice with "Component Dock" link is present
+- **GIVEN** the user scrolls to the footer
+- **THEN** social media icon links are visible
+- **AND** a copyright notice with "Component Dock" link is present
 
 ## Verification Checklist
 

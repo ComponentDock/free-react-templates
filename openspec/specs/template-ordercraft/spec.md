@@ -49,97 +49,110 @@ a white form card with step-by-step billing details on the right.
 | Required field marker | `*` (asterisk) | After field labels that are required |
 | Transitions | Smooth slide/fade between steps | Step content transitions |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: OrderCraft — 4-Step Order Wizard
 
-  Scenario: Page loads with step 1 active
-    Given the user opens the OrderCraft page
-    Then the page should display a split layout with a decorative image on the left and a form card on the right
-    And the "Billing Details" step should be visible and active
-    And the progress bar should show 4 segments with the first segment highlighted
-    And the remaining 3 progress segments should be inactive (gray)
-    And the decorative image should occupy the left 50% of the viewport
+#### Scenario: Page loads with step 1 active
 
-  Scenario: Step 1 — Billing Details fields
-    Given the user is on step 1 "Billing Details"
-    Then the form should contain a "First Name" text input (required)
-    And the form should contain a "Last Name" text input (required)
-    And the form should contain a "Company Name" text input (optional)
-    And the form should contain a "Country" dropdown select (required)
-    And the form should contain an "Address" text input with placeholder "Street address" (required)
-    And the form should contain an "Address line 2" text input with placeholder "Apartment, suite, unit etc. (optional)"
-    And the form should contain a "Town / City" text input (required)
-    And a "Next →" button should be visible at the bottom-right of the form card
+- **GIVEN** the user opens the OrderCraft page
+- **THEN** the page should display a split layout with a decorative image on the left and a form card on the right
+- **AND** the "Billing Details" step should be visible and active
+- **AND** the progress bar should show 4 segments with the first segment highlighted
+- **AND** the remaining 3 progress segments should be inactive (gray)
+- **AND** the decorative image should occupy the left 50% of the viewport
 
-  Scenario: Required field validation on step 1
-    Given the user is on step 1 with empty required fields
-    When the user clicks the "Next →" button
-    Then required fields should show validation errors
-    And the user should not advance to step 2
+#### Scenario: Step 1 — Billing Details fields
 
-  Scenario: Navigate to step 2
-    Given the user is on step 1 with all required fields filled
-    When the user clicks the "Next →" button
-    Then the "Shipping Details" step should become active
-    And the "Billing Details" step should show as completed
-    And the progress bar should show 2 segments highlighted
-    And the form should display shipping-related fields
+- **GIVEN** the user is on step 1 "Billing Details"
+- **THEN** the form should contain a "First Name" text input (required)
+- **AND** the form should contain a "Last Name" text input (required)
+- **AND** the form should contain a "Company Name" text input (optional)
+- **AND** the form should contain a "Country" dropdown select (required)
+- **AND** the form should contain an "Address" text input with placeholder "Street address" (required)
+- **AND** the form should contain an "Address line 2" text input with placeholder "Apartment, suite, unit etc. (optional)"
+- **AND** the form should contain a "Town / City" text input (required)
+- **AND** a "Next →" button should be visible at the bottom-right of the form card
 
-  Scenario: Step 2 — Shipping Details fields
-    Given the user is on step 2 "Shipping Details"
-    Then the form should contain shipping address fields
-    And a "Next →" button should be visible
+#### Scenario: Required field validation on step 1
 
-  Scenario: Navigate to step 3
-    Given the user is on step 2 with valid shipping information
-    When the user clicks the "Next →" button
-    Then the "Order Summary" step should become active
-    And the progress bar should show 3 segments highlighted
+- **GIVEN** the user is on step 1 with empty required fields
+- **WHEN** the user clicks the "Next →" button
+- **THEN** required fields should show validation errors
+- **AND** the user should not advance to step 2
 
-  Scenario: Step 3 — Order Summary
-    Given the user is on step 3 "Order Summary"
-    Then the form should display an order summary with line items
-    And the form should show subtotal and total amounts
-    And a "Next →" button should be visible
+#### Scenario: Navigate to step 2
 
-  Scenario: Navigate to step 4
-    Given the user is on step 3 reviewing the order summary
-    When the user clicks the "Next →" button
-    Then the "Payment" step should become active
-    And the progress bar should show all 4 segments highlighted
+- **GIVEN** the user is on step 1 with all required fields filled
+- **WHEN** the user clicks the "Next →" button
+- **THEN** the "Shipping Details" step should become active
+- **AND** the "Billing Details" step should show as completed
+- **AND** the progress bar should show 2 segments highlighted
+- **AND** the form should display shipping-related fields
 
-  Scenario: Step 4 — Payment fields
-    Given the user is on step 4 "Payment"
-    Then the form should contain a "Card Number" input field
-    And the form should contain a "Cardholder Name" input field
-    And the form should contain an "Expiry Date" input field
-    And the form should contain a "CVV" input field
-    And a "Place Order" button should be visible
+#### Scenario: Step 2 — Shipping Details fields
 
-  Scenario: Place order submission
-    Given the user is on step 4 with valid payment information
-    When the user clicks the "Place Order" button
-    Then a confirmation message should appear
-    And the order should be marked as complete
+- **GIVEN** the user is on step 2 "Shipping Details"
+- **THEN** the form should contain shipping address fields
+- **AND** a "Next →" button should be visible
 
-  Scenario: Back navigation between steps
-    Given the user is on step 2
-    When the user clicks a back button or the step 1 indicator
-    Then the "Billing Details" step should become active again
-    And the previously entered data should be preserved
-    And the progress bar should revert to 1 segment highlighted
+#### Scenario: Navigate to step 3
 
-  Scenario: Responsive layout on mobile
-    Given the user opens the OrderCraft page on a mobile viewport
-    Then the split layout should stack vertically
-    And the decorative image should appear above the form card
-    And all form fields should be full-width
+- **GIVEN** the user is on step 2 with valid shipping information
+- **WHEN** the user clicks the "Next →" button
+- **THEN** the "Order Summary" step should become active
+- **AND** the progress bar should show 3 segments highlighted
 
-  Scenario: Footer branding
-    Given the user scrolls to the bottom of the page
-    Then a footer should be visible with a link to "https://www.componentdock.com/"
-    And the link should read "Component Dock" or similar branding
+#### Scenario: Step 3 — Order Summary
+
+- **GIVEN** the user is on step 3 "Order Summary"
+- **THEN** the form should display an order summary with line items
+- **AND** the form should show subtotal and total amounts
+- **AND** a "Next →" button should be visible
+
+#### Scenario: Navigate to step 4
+
+- **GIVEN** the user is on step 3 reviewing the order summary
+- **WHEN** the user clicks the "Next →" button
+- **THEN** the "Payment" step should become active
+- **AND** the progress bar should show all 4 segments highlighted
+
+#### Scenario: Step 4 — Payment fields
+
+- **GIVEN** the user is on step 4 "Payment"
+- **THEN** the form should contain a "Card Number" input field
+- **AND** the form should contain a "Cardholder Name" input field
+- **AND** the form should contain an "Expiry Date" input field
+- **AND** the form should contain a "CVV" input field
+- **AND** a "Place Order" button should be visible
+
+#### Scenario: Place order submission
+
+- **GIVEN** the user is on step 4 with valid payment information
+- **WHEN** the user clicks the "Place Order" button
+- **THEN** a confirmation message should appear
+- **AND** the order should be marked as complete
+
+#### Scenario: Back navigation between steps
+
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks a back button or the step 1 indicator
+- **THEN** the "Billing Details" step should become active again
+- **AND** the previously entered data should be preserved
+- **AND** the progress bar should revert to 1 segment highlighted
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the OrderCraft page on a mobile viewport
+- **THEN** the split layout should stack vertically
+- **AND** the decorative image should appear above the form card
+- **AND** all form fields should be full-width
+
+#### Scenario: Footer branding
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer should be visible with a link to "https://www.componentdock.com/"
+- **AND** the link should read "Component Dock" or similar branding
 
 ## Verification checklist
 

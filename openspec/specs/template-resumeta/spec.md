@@ -38,157 +38,155 @@ Recreation of ColorLib **Civic** — a single-page CV/resume template.
 9. **Contact** — form with Name, Email, Subject inputs + Message textarea + "Send message" button (`.site-btn`). White background.
 10. **Footer** — centered copyright line. Dark `#40424a` background, white text.
 
-## Gherkin scenarios
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Header section
 
-  Scenario: Logo and tagline render
-    Given the page loads
-    Then the header shows the site name
-    And a tagline below it
+#### Scenario: Logo and tagline render
 
-  Scenario: CTA buttons are visible
-    Given the page loads
-    Then two header buttons are visible
-    And the first reads "Download CV"
-    And the second reads "Discover me"
-```
+- **GIVEN** the page loads
+- **THEN** the header shows the site name
+- **AND** a tagline below it
+
+#### Scenario: CTA buttons are visible
+
+- **GIVEN** the page loads
+- **THEN** two header buttons are visible
+- **AND** the first reads "Download CV"
+- **AND** the second reads "Discover me"
 
 ### Hero
 
-```gherkin
 Feature: Hero section
 
-  Scenario: Personal info renders
-    Given the page loads
-    Then the hero displays a name heading
-    And a bio paragraph below the name
-    And a General Info list with at least 4 items (DOB, address, email, phone)
+#### Scenario: Personal info renders
 
-  Scenario: Hero image renders
-    Given the page loads
-    Then a portrait image is visible on the right half
-```
+- **GIVEN** the page loads
+- **THEN** the hero displays a name heading
+- **AND** a bio paragraph below the name
+- **AND** a General Info list with at least 4 items (DOB, address, email, phone)
+
+#### Scenario: Hero image renders
+
+- **GIVEN** the page loads
+- **THEN** a portrait image is visible on the right half
 
 ### Social Links
 
-```gherkin
 Feature: Social links section
 
-  Scenario: Social icons render
-    Given the page loads
-    Then 5 social link icons are visible (Pinterest, LinkedIn, Instagram, Facebook, Twitter)
-    And each icon links to "#" (placeholder)
-```
+#### Scenario: Social icons render
+
+- **GIVEN** the page loads
+- **THEN** 5 social link icons are visible (Pinterest, LinkedIn, Instagram, Facebook, Twitter)
+- **AND** each icon links to "#" (placeholder)
 
 ### Work Experience
 
-```gherkin
 Feature: Work Experience section
 
-  Scenario: Section title renders
-    Given the page loads
-    Then a "Work Experience" section title is visible with an underline
+#### Scenario: Section title renders
 
-  Scenario: Experience entries render
-    Given the page loads
-    Then at least 2 experience entries are listed
-    And each entry has a year range, company name, role, and description
-```
+- **GIVEN** the page loads
+- **THEN** a "Work Experience" section title is visible with an underline
+
+#### Scenario: Experience entries render
+
+- **GIVEN** the page loads
+- **THEN** at least 2 experience entries are listed
+- **AND** each entry has a year range, company name, role, and description
 
 ### Education
 
-```gherkin
 Feature: Education section
 
-  Scenario: Section title renders
-    Given the page loads
-    Then an "Education" section title is visible with an underline
+#### Scenario: Section title renders
 
-  Scenario: Education entries render
-    Given the page loads
-    Then at least 2 education entries are listed
-    And each entry has a year, diploma name, institution, and description
-    And the section has a parallax background image
-```
+- **GIVEN** the page loads
+- **THEN** an "Education" section title is visible with an underline
+
+#### Scenario: Education entries render
+
+- **GIVEN** the page loads
+- **THEN** at least 2 education entries are listed
+- **AND** each entry has a year, diploma name, institution, and description
+- **AND** the section has a parallax background image
 
 ### References
 
-```gherkin
 Feature: References section
 
-  Scenario: Section title renders
-    Given the page loads
-    Then a "References" section title is visible
+#### Scenario: Section title renders
 
-  Scenario: Testimonial cards render
-    Given the page loads
-    Then at least 3 testimonial cards are in the carousel
-    And each card shows a quotation mark, quote text, name, and role
-```
+- **GIVEN** the page loads
+- **THEN** a "References" section title is visible
+
+#### Scenario: Testimonial cards render
+
+- **GIVEN** the page loads
+- **THEN** at least 3 testimonial cards are in the carousel
+- **AND** each card shows a quotation mark, quote text, name, and role
 
 ### Portfolio
 
-```gherkin
 Feature: Portfolio section
 
-  Scenario: Section title and button render
-    Given the page loads
-    Then a "Portfolio" section title is visible
-    And a "See All Portfolio" button is visible
+#### Scenario: Section title and button render
 
-  Scenario: Portfolio grid renders
-    Given the page loads
-    Then 4 portfolio items are displayed in a grid
-    And each item has an image, title, and category label
-```
+- **GIVEN** the page loads
+- **THEN** a "Portfolio" section title is visible
+- **AND** a "See All Portfolio" button is visible
+
+#### Scenario: Portfolio grid renders
+
+- **GIVEN** the page loads
+- **THEN** 4 portfolio items are displayed in a grid
+- **AND** each item has an image, title, and category label
 
 ### Extra Skills
 
-```gherkin
 Feature: Extra Skills section
 
-  Scenario: Circle progress rings render
-    Given the page loads
-    Then 2 circle-progress rings are visible
-    And each shows a percentage and label
+#### Scenario: Circle progress rings render
 
-  Scenario: Fact boxes render
-    Given the page loads
-    Then 2 dark fact boxes are visible
-    And each shows an icon, number, and label
-```
+- **GIVEN** the page loads
+- **THEN** 2 circle-progress rings are visible
+- **AND** each shows a percentage and label
+
+#### Scenario: Fact boxes render
+
+- **GIVEN** the page loads
+- **THEN** 2 dark fact boxes are visible
+- **AND** each shows an icon, number, and label
 
 ### Contact
 
-```gherkin
 Feature: Contact section
 
-  Scenario: Contact form renders
-    Given the page loads
-    Then a "Contact Me" section title is visible
-    And a form with Name, Email, Subject inputs and a Message textarea is visible
-    And a "Send message" button is visible
+#### Scenario: Contact form renders
 
-  Scenario: Form submission is handled
-    Given the contact form is filled
-    When the user clicks "Send message"
-    Then the form does not submit to an external URL (handled client-side)
-```
+- **GIVEN** the page loads
+- **THEN** a "Contact Me" section title is visible
+- **AND** a form with Name, Email, Subject inputs and a Message textarea is visible
+- **AND** a "Send message" button is visible
+
+#### Scenario: Form submission is handled
+
+- **GIVEN** the contact form is filled
+- **WHEN** the user clicks "Send message"
+- **THEN** the form does not submit to an external URL (handled client-side)
 
 ### Footer
 
-```gherkin
 Feature: Footer section
 
-  Scenario: Footer renders
-    Given the page loads
-    Then a footer with copyright text is visible
-    And it links to Component Dock
-```
+#### Scenario: Footer renders
+
+- **GIVEN** the page loads
+- **THEN** a footer with copyright text is visible
+- **AND** it links to Component Dock
 
 ## Verification checklist
 

@@ -55,78 +55,64 @@ Two-column centered layout within a Bootstrap-style container:
   2. Success message (hidden by default): "Your message was sent, thank you!"
   3. Warning/error message (hidden by default)
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Page renders with correct two-column layout
+### Feature: TouchBase template behaviour
 
-```gherkin
-Given the user loads the TouchBase contact page
-Then the page displays a "Contact Us" heading in the left column
-And the right column contains a contact form with Name, Email, and Message fields
-```
+#### Scenario: Page renders with correct two-column layout
 
-### Scenario: Contact details are displayed
+- **GIVEN** the user loads the TouchBase contact page
+- **THEN** the page displays a "Contact Us" heading in the left column
+- **AND** the right column contains a contact form with Name, Email, and Message fields
 
-```gherkin
-Given the user loads the TouchBase contact page
-Then the left column shows a street address with a map icon
-And the left column shows a phone number with a phone icon
-And the left column shows an email address with an envelope icon
-```
+#### Scenario: Contact details are displayed
 
-### Scenario: Form fields are labeled and properly styled
+- **GIVEN** the user loads the TouchBase contact page
+- **THEN** the left column shows a street address with a map icon
+- **AND** the left column shows a phone number with a phone icon
+- **AND** the left column shows an email address with an envelope icon
 
-```gherkin
-Given the user loads the TouchBase contact page
-Then each form field has a visible label above it (Name, Email, Message)
-And inputs have a light gray border (#d9d9d9)
-And inputs turn black-bordered on focus
-```
+#### Scenario: Form fields are labeled and properly styled
 
-### Scenario: Form submission shows success message
+- **GIVEN** the user loads the TouchBase contact page
+- **THEN** each form field has a visible label above it (Name, Email, Message)
+- **AND** inputs have a light gray border (#d9d9d9)
+- **AND** inputs turn black-bordered on focus
 
-```gherkin
-Given the user fills in Name, Email, and Message fields
-When the user clicks "Send Message"
-Then a success message "Your message was sent, thank you!" appears
-And the success message is styled in green (#55A44E)
-```
+#### Scenario: Form submission shows success message
 
-### Scenario: Form validation on empty fields
+- **GIVEN** the user fills in Name, Email, and Message fields
+- **WHEN** the user clicks "Send Message"
+- **THEN** a success message "Your message was sent, thank you!" appears
+- **AND** the success message is styled in green (#55A44E)
 
-```gherkin
-Given the user leaves all fields empty
-When the user clicks "Send Message"
-Then the form displays validation errors for required fields
-And error text appears in red (#B90B0B)
-```
+#### Scenario: Form validation on empty fields
 
-### Scenario: Responsive layout on mobile
+- **GIVEN** the user leaves all fields empty
+- **WHEN** the user clicks "Send Message"
+- **THEN** the form displays validation errors for required fields
+- **AND** error text appears in red (#B90B0B)
 
-```gherkin
-Given the user loads the TouchBase contact page on a mobile viewport
-Then the two columns stack vertically (single column)
-And the contact details appear above or below the form
-```
+#### Scenario: Responsive layout on mobile
 
-### Scenario: Accessibility
+- **GIVEN** the user loads the TouchBase contact page on a mobile viewport
+- **THEN** the two columns stack vertically (single column)
+- **AND** the contact details appear above or below the form
 
-```gherkin
-Given the user loads the TouchBase contact page
-Then all form fields have associated labels (htmlFor/id)
-And the form inputs are keyboard-focusable
-And the Submit button has accessible text
-```
+#### Scenario: Accessibility
 
-### Scenario: Brand styling consistency
+- **GIVEN** the user loads the TouchBase contact page
+- **THEN** all form fields have associated labels (htmlFor/id)
+- **AND** the form inputs are keyboard-focusable
+- **AND** the Submit button has accessible text
 
-```gherkin
-Given the user loads the TouchBase contact page
-Then headings use Poppins font
-And body text uses Roboto font
-And the page background is white (#ffffff)
-And the "Send Message" button is solid blue (#0d6efd) with square corners
-```
+#### Scenario: Brand styling consistency
+
+- **GIVEN** the user loads the TouchBase contact page
+- **THEN** headings use Poppins font
+- **AND** body text uses Roboto font
+- **AND** the page background is white (#ffffff)
+- **AND** the "Send Message" button is solid blue (#0d6efd) with square corners
 
 ## Verification checklist
 

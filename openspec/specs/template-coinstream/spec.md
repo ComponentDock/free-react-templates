@@ -56,176 +56,164 @@ Name: **coinstream** — new original name (ColorLib source "coinbuzz" not reuse
 
 ---
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays logo, navigation links, and CTA button
-  Given the page loads
-  Then the navbar shows a logo on the left
-  And nav links include "Home", "About", "Pages", "Blog", "Contact"
-  And a "GET A QUOTE" button appears on the right with orange background
+#### Scenario: Navbar displays logo, navigation links, and CTA button
 
-Scenario: Navbar shows top info bar with contact details
-  Given the page loads
-  Then a top bar shows phone, fax, email, and website
-  And social icons (Facebook, Twitter, Google+, LinkedIn, YouTube) are visible
+- **GIVEN** the page loads
+- **THEN** the navbar shows a logo on the left
+- **AND** nav links include "Home", "About", "Pages", "Blog", "Contact"
+- **AND** a "GET A QUOTE" button appears on the right with orange background
 
-Scenario: Navbar collapses to hamburger on mobile
-  Given the viewport is less than 768px wide
-  Then the hamburger menu icon is visible
-  And clicking it opens a mobile dropdown menu with all nav links
-```
+#### Scenario: Navbar shows top info bar with contact details
+
+- **GIVEN** the page loads
+- **THEN** a top bar shows phone, fax, email, and website
+- **AND** social icons (Facebook, Twitter, Google+, LinkedIn, YouTube) are visible
+
+#### Scenario: Navbar collapses to hamburger on mobile
+
+- **GIVEN** the viewport is less than 768px wide
+- **THEN** the hamburger menu icon is visible
+- **AND** clicking it opens a mobile dropdown menu with all nav links
 
 ### Hero Slider
 
-```gherkin
-Scenario: Hero slider displays full-width image with overlay text
-  Given the page loads
-  Then a full-width image slider is visible
-  And the first slide shows the heading "We Are Everyone's Coinbuzz Agency"
-  And the word "Everyone's" has an orange highlight background
-  And a "Read more" CTA button is visible
+#### Scenario: Hero slider displays full-width image with overlay text
 
-Scenario: Hero slider navigates between slides
-  Given the hero slider is displayed
-  When the user clicks the next dot indicator
-  Then the next slide transitions in with the same heading layout
-```
+- **GIVEN** the page loads
+- **THEN** a full-width image slider is visible
+- **AND** the first slide shows the heading "We Are Everyone's Coinbuzz Agency"
+- **AND** the word "Everyone's" has an orange highlight background
+- **AND** a "Read more" CTA button is visible
+
+#### Scenario: Hero slider navigates between slides
+
+- **GIVEN** the hero slider is displayed
+- **WHEN** the user clicks the next dot indicator
+- **THEN** the next slide transitions in with the same heading layout
 
 ### Featured Section
 
-```gherkin
-Scenario: Featured section shows 3 content cards
-  Given the user scrolls to the Featured area
-  Then 3 cards are displayed in a row
-  And each card has an image, a title, and a description paragraph
-  And the card titles are "Personalized", "Behind The Screen", "Time Saver"
-```
+#### Scenario: Featured section shows 3 content cards
+
+- **GIVEN** the user scrolls to the Featured area
+- **THEN** 3 cards are displayed in a row
+- **AND** each card has an image, a title, and a description paragraph
+- **AND** the card titles are "Personalized", "Behind The Screen", "Time Saver"
 
 ### Bitcoin Info (Featured Content)
 
-```gherkin
-Scenario: Bitcoin info section shows split layout
-  Given the user scrolls to the Bitcoin info area
-  Then a heading "Buy And Sell Bitcoin" is displayed
-  And the subtitle "WHAT IS BITCOIN" appears above it in orange
-  And a "JOIN US NOW" CTA button with orange background is visible
-  And on desktop, a decorative image appears on the left side
-```
+#### Scenario: Bitcoin info section shows split layout
+
+- **GIVEN** the user scrolls to the Bitcoin info area
+- **THEN** a heading "Buy And Sell Bitcoin" is displayed
+- **AND** the subtitle "WHAT IS BITCOIN" appears above it in orange
+- **AND** a "JOIN US NOW" CTA button with orange background is visible
+- **AND** on desktop, a decorative image appears on the left side
 
 ### Services
 
-```gherkin
-Scenario: Services section displays 3 service cards
-  Given the user scrolls to the Services area
-  Then the section title "Why Choose Bitcoin" is centered
-  And 3 service cards are displayed with icons, titles, and descriptions
-```
+#### Scenario: Services section displays 3 service cards
+
+- **GIVEN** the user scrolls to the Services area
+- **THEN** the section title "Why Choose Bitcoin" is centered
+- **AND** 3 service cards are displayed with icons, titles, and descriptions
 
 ### About
 
-```gherkin
-Scenario: About section shows stats counters
-  Given the user scrolls to the About area
-  Then the heading "About Bitcoin" is displayed
-  And 4 stat counters are shown: Support Countries, Bank Support, Bitcoin ATMs, Producers Ready
-  And each counter has an icon above the number
-  And on desktop, a large image appears on the left side
-```
+#### Scenario: About section shows stats counters
+
+- **GIVEN** the user scrolls to the About area
+- **THEN** the heading "About Bitcoin" is displayed
+- **AND** 4 stat counters are shown: Support Countries, Bank Support, Bitcoin ATMs, Producers Ready
+- **AND** each counter has an icon above the number
+- **AND** on desktop, a large image appears on the left side
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel shows testimonials with ratings
-  Given the user scrolls to the Testimonials area
-  Then a carousel displays testimonials
-  And each testimonial has a rounded avatar, name, star rating, and quote text
-  And a quote icon appears at the end
-```
+#### Scenario: Testimonials carousel shows testimonials with ratings
+
+- **GIVEN** the user scrolls to the Testimonials area
+- **THEN** a carousel displays testimonials
+- **AND** each testimonial has a rounded avatar, name, star rating, and quote text
+- **AND** a quote icon appears at the end
 
 ### Special Quote
 
-```gherkin
-Scenario: Special quote section shows dark parallax with text
-  Given the user scrolls to the Special area
-  Then a dark background image is displayed
-  And an italic headline is shown
-  And two columns of checkmark list items are visible
-```
+#### Scenario: Special quote section shows dark parallax with text
+
+- **GIVEN** the user scrolls to the Special area
+- **THEN** a dark background image is displayed
+- **AND** an italic headline is shown
+- **AND** two columns of checkmark list items are visible
 
 ### Market Resources
 
-```gherkin
-Scenario: Market Resources section shows crypto pairs and chart
-  Given the user scrolls to the Market Resources area
-  Then the title "Our Market Resource" is centered
-  And a grid of 10 crypto pair cards (e.g. btc/usd, btc/eur) is displayed
-  And a line chart (CanvasJS) occupies the right side
-```
+#### Scenario: Market Resources section shows crypto pairs and chart
+
+- **GIVEN** the user scrolls to the Market Resources area
+- **THEN** the title "Our Market Resource" is centered
+- **AND** a grid of 10 crypto pair cards (e.g. btc/usd, btc/eur) is displayed
+- **AND** a line chart (CanvasJS) occupies the right side
 
 ### Expert Team CTA
 
-```gherkin
-Scenario: Expert Team CTA section shows parallax with team description
-  Given the user scrolls to the Expert area
-  Then a dark parallax background is displayed
-  And the text "We're a dynamic team of creatives" is visible
-  And a "More About" link is shown
-```
+#### Scenario: Expert Team CTA section shows parallax with team description
+
+- **GIVEN** the user scrolls to the Expert area
+- **THEN** a dark parallax background is displayed
+- **AND** the text "We're a dynamic team of creatives" is visible
+- **AND** a "More About" link is shown
 
 ### Contact
 
-```gherkin
-Scenario: Contact section shows callback form
-  Given the user scrolls to the Contact area
-  Then the heading "Request A Call Back" is displayed
-  And form fields for Name, Email, Phone, Subject, and Message are shown
-  And a "Submit Now" button with white background and orange text is visible
-  And on desktop, a dark background image appears on the left
-```
+#### Scenario: Contact section shows callback form
+
+- **GIVEN** the user scrolls to the Contact area
+- **THEN** the heading "Request A Call Back" is displayed
+- **AND** form fields for Name, Email, Phone, Subject, and Message are shown
+- **AND** a "Submit Now" button with white background and orange text is visible
+- **AND** on desktop, a dark background image appears on the left
 
 ### Team
 
-```gherkin
-Scenario: Team section shows 4 team members
-  Given the user scrolls to the Team area
-  Then the title "Our Experts Team" is centered
-  And 4 team member cards are displayed in a row
-  And each card shows a photo, name, role, and social media links
-```
+#### Scenario: Team section shows 4 team members
+
+- **GIVEN** the user scrolls to the Team area
+- **THEN** the title "Our Experts Team" is centered
+- **AND** 4 team member cards are displayed in a row
+- **AND** each card shows a photo, name, role, and social media links
 
 ### Investments CTA
 
-```gherkin
-Scenario: Investments CTA section shows parallax with call to action
-  Given the user scrolls to the Investments area
-  Then a dark parallax background is displayed
-  And the text "Need to take care of your Currency Investments" is shown
-  And two CTA buttons "View Services" and "Contact Us" are visible
-  And on desktop, a decorative illustration appears on the right
-```
+#### Scenario: Investments CTA section shows parallax with call to action
+
+- **GIVEN** the user scrolls to the Investments area
+- **THEN** a dark parallax background is displayed
+- **AND** the text "Need to take care of your Currency Investments" is shown
+- **AND** two CTA buttons "View Services" and "Contact Us" are visible
+- **AND** on desktop, a decorative illustration appears on the right
 
 ### Blog
 
-```gherkin
-Scenario: Blog section shows 3 blog post cards
-  Given the user scrolls to the Blog area
-  Then the title "Latest Our News" is centered
-  And 3 blog cards are displayed with image, title, meta, description, and "Read More" link
-```
+#### Scenario: Blog section shows 3 blog post cards
+
+- **GIVEN** the user scrolls to the Blog area
+- **THEN** the title "Latest Our News" is centered
+- **AND** 3 blog cards are displayed with image, title, meta, description, and "Read More" link
 
 ### Footer
 
-```gherkin
-Scenario: Footer shows 4-column layout with newsletter and contact
-  Given the user scrolls to the footer
-  Then 4 columns are displayed: logo + email subscribe, services, Twitter feeds, contact info
-  And social icons (Facebook, Twitter, Google+, LinkedIn, YouTube) are shown
-  And a bottom bar shows copyright text
-  And the footer links to https://www.componentdock.com/ ("Component Dock")
-```
+#### Scenario: Footer shows 4-column layout with newsletter and contact
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are displayed: logo + email subscribe, services, Twitter feeds, contact info
+- **AND** social icons (Facebook, Twitter, Google+, LinkedIn, YouTube) are shown
+- **AND** a bottom bar shows copyright text
+- **AND** the footer links to https://www.componentdock.com/ ("Component Dock")
 
 ---
 

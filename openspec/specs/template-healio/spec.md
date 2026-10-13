@@ -47,79 +47,90 @@ Extracted from the live preview CSS (`styles/main.css`):
     - Opening Hours column
     - Bottom bar: footer nav (Home, About Us, Services, News, Contact), links (Help Desk, Emergency Services, Appointment), phone number
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Healio template behaviour
+
 Feature: Healio — Medical/Healthcare Landing Page
 
-  Background:
-    Given the user opens the Healio homepage
+Background:
+- **GIVEN** the user opens the Healio homepage
 
-  Scenario: Top bar displays logo and quick links
-    Then the logo "HEALTH+" is visible in the top bar
-    And quick links "Help Desk", "Emergency Services", "Appointment" are shown
-    And a phone number "+34 586 778 8892" is displayed
+#### Scenario: Top bar displays logo and quick links
 
-  Scenario: Navigation bar is present and styled
-    Then a teal navigation bar is visible
-    And nav links "Home", "About Us", "Services", "News", "Contact" are shown
-    And a search input is displayed on the right
+- **THEN** the logo "HEALTH+" is visible in the top bar
+- **AND** quick links "Help Desk", "Emergency Services", "Appointment" are shown
+- **AND** a phone number "+34 586 778 8892" is displayed
 
-  Scenario: Hero section renders with heading and CTA
-    Then a hero section with background image is displayed
-    And the heading "Medical Services that you can trust" is visible
-    And a subtitle paragraph is shown below the heading
-    And a teal "READ MORE" button is displayed
+#### Scenario: Navigation bar is present and styled
 
-  Scenario: Info boxes show three service highlights
-    Then three info boxes are displayed in a row
-    And box 1 shows "Free Consultations" with description and button
-    And box 2 shows "Emergency Care" with description and button
-    And box 3 shows "Make an Appointment" with a form button
+- **THEN** a teal navigation bar is visible
+- **AND** nav links "Home", "About Us", "Services", "News", "Contact" are shown
+- **AND** a search input is displayed on the right
 
-  Scenario: CTA banner prompts appointment booking
-    Then a call-to-action section is visible
-    And the text "Make an appointment with one of our professional Doctors" is shown
-    And a teal CTA button is present
+#### Scenario: Hero section renders with heading and CTA
 
-  Scenario: Services section lists six medical services
-    Then the heading "Our Services" is displayed
-    And six service cards are shown in a 2-column grid
-    And services include "Cardiology", "Gastroenterology", "Medical Lab", "Dental Care", "Surgery", "Neurology"
-    And each card has an icon, title, and description text
+- **THEN** a hero section with background image is displayed
+- **AND** the heading "Medical Services that you can trust" is visible
+- **AND** a subtitle paragraph is shown below the heading
+- **AND** a teal "READ MORE" button is displayed
 
-  Scenario: Departments carousel shows department cards
-    Then the heading "Our Departments" is displayed
-    And department cards are shown in a carousel
-    And departments include "Neonatology", "Dentistry", "Orthopedics", "Laboratory"
-    And each card has an image and department name
+#### Scenario: Info boxes show three service highlights
 
-  Scenario: FAQ section is present
-    Then the heading "Faq & Stuff" is displayed
-    And a subtitle is shown below the heading
+- **THEN** three info boxes are displayed in a row
+- **AND** box 1 shows "Free Consultations" with description and button
+- **AND** box 2 shows "Emergency Care" with description and button
+- **AND** box 3 shows "Make an Appointment" with a form button
 
-  Scenario: Latest News shows three blog posts
-    Then the heading "Latest News" is displayed
-    And three blog post cards are shown
-    And posts include "A simple blog post", "A new way to see things in medicine", "Why is Pharma industry so big?"
-    And each card has an image, title, date, and comment count
+#### Scenario: CTA banner prompts appointment booking
 
-  Scenario: Footer contains about, contact, hours, and navigation
-    Then a dark footer section is displayed
-    And the about column shows the logo and description
-    And a contact form with name, email, message fields and send button is present
-    And an opening hours section is shown
-    And a bottom bar with footer navigation links is displayed
-    And the footer links "Home", "About Us", "Services", "News", "Contact" are shown
-    And a link to "https://www.componentdock.com/" is present (Component Dock branding)
+- **THEN** a call-to-action section is visible
+- **AND** the text "Make an appointment with one of our professional Doctors" is shown
+- **AND** a teal CTA button is present
 
-  Scenario: Design tokens match the original
-    Then the primary brand color is #32c69a (teal-green)
-    And the font family is Montserrat
-    And buttons are rectangular with no border-radius
-    And buttons use teal background with white uppercase text
-    And sections alternate between white and #f4f8fb backgrounds
-```
+#### Scenario: Services section lists six medical services
+
+- **THEN** the heading "Our Services" is displayed
+- **AND** six service cards are shown in a 2-column grid
+- **AND** services include "Cardiology", "Gastroenterology", "Medical Lab", "Dental Care", "Surgery", "Neurology"
+- **AND** each card has an icon, title, and description text
+
+#### Scenario: Departments carousel shows department cards
+
+- **THEN** the heading "Our Departments" is displayed
+- **AND** department cards are shown in a carousel
+- **AND** departments include "Neonatology", "Dentistry", "Orthopedics", "Laboratory"
+- **AND** each card has an image and department name
+
+#### Scenario: FAQ section is present
+
+- **THEN** the heading "Faq & Stuff" is displayed
+- **AND** a subtitle is shown below the heading
+
+#### Scenario: Latest News shows three blog posts
+
+- **THEN** the heading "Latest News" is displayed
+- **AND** three blog post cards are shown
+- **AND** posts include "A simple blog post", "A new way to see things in medicine", "Why is Pharma industry so big?"
+- **AND** each card has an image, title, date, and comment count
+
+#### Scenario: Footer contains about, contact, hours, and navigation
+
+- **THEN** a dark footer section is displayed
+- **AND** the about column shows the logo and description
+- **AND** a contact form with name, email, message fields and send button is present
+- **AND** an opening hours section is shown
+- **AND** a bottom bar with footer navigation links is displayed
+- **AND** the footer links "Home", "About Us", "Services", "News", "Contact" are shown
+- **AND** a link to "https://www.componentdock.com/" is present (Component Dock branding)
+
+#### Scenario: Design tokens match the original
+
+- **THEN** the primary brand color is #32c69a (teal-green)
+- **AND** the font family is Montserrat
+- **AND** buttons are rectangular with no border-radius
+- **AND** buttons use teal background with white uppercase text
+- **AND** sections alternate between white and #f4f8fb backgrounds
 
 ## Verification Checklist
 

@@ -13,18 +13,19 @@ Recreation of ColorLib **Colorlib Wizard 24** (`https://colorlib.com/wp/template
 - Font Family: `Inter, sans-serif`
 - Border Radius: `0.5rem` (rounded-lg)
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Multi-Step Financial Form Wizard & Interactive Validation
 
-- Scenario: User navigates through multi-step financial wizard steps
-  - Given the user is on the Sorcery financial wizard template home page
-  - When the user views Step 1 (Personal & Account Information)
-  - And fills in valid details and clicks "Next"
-  - Then the wizard advances to Step 2 (Financial Profile & Income)
-  - And displays real-time input validation and progress indicators
+#### Scenario: Multi-Step Financial Form Wizard & Interactive Validation
 
+- Scenario: User navigates through multi-step financial wizard steps
+- **GIVEN** the user is on the Sorcery financial wizard template home page
+- **WHEN** the user views Step 1 (Personal & Account Information)
+- **AND** fills in valid details and clicks "Next"
+- **THEN** the wizard advances to Step 2 (Financial Profile & Income)
+- **AND** displays real-time input validation and progress indicators
 - Scenario: User completes the wizard and submits
-  - Given the user has reached the final step of the wizard
-  - When the user reviews their summary and clicks "Submit Application"
-  - Then a success confirmation screen is rendered with reference details
+- **GIVEN** the user has reached the final step of the wizard
+- **WHEN** the user reviews their summary and clicks "Submit Application"
+- **THEN** a success confirmation screen is rendered with reference details

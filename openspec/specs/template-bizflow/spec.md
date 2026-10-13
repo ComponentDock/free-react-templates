@@ -52,113 +52,115 @@ Extracted from `css/style.css` at preview.colorlib.com/theme/busicol/:
 10. **CTA/Project** — "Do you Have any Project?" — call-to-action section with "Contact Us" button.
 11. **Footer** — Multi-column: Services links, Useful Links, Address, Contact. Copyright with "Made with Component Dock".
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Sticky navbar with navigation links
-  Given the page loads
-  Then a sticky navbar is visible at the top
-  And it contains the logo
-  And it shows nav links for Home, Services, About, Portfolio, Blog, Contact
 
-Scenario: Navbar remains visible on scroll
-  Given the user scrolls down
-  Then the navbar stays fixed at the top of the viewport
-```
+#### Scenario: Sticky navbar with navigation links
+
+- **GIVEN** the page loads
+- **THEN** a sticky navbar is visible at the top
+- **AND** it contains the logo
+- **AND** it shows nav links for Home, Services, About, Portfolio, Blog, Contact
+
+#### Scenario: Navbar remains visible on scroll
+
+- **GIVEN** the user scrolls down
+- **THEN** the navbar stays fixed at the top of the viewport
 
 ### Hero Slider
-```gherkin
-Scenario: Hero carousel displays 3 slides
-  Given the page loads
-  Then a full-width hero carousel is visible
-  And slide 1 shows "Grow Big with Musicol Business" heading
-  And each slide has a description and 2 CTA buttons
 
-Scenario: Hero carousel auto-plays
-  Given the hero is visible
-  When 5 seconds pass
-  Then the carousel advances to the next slide automatically
-```
+#### Scenario: Hero carousel displays 3 slides
+
+- **GIVEN** the page loads
+- **THEN** a full-width hero carousel is visible
+- **AND** slide 1 shows "Grow Big with Musicol Business" heading
+- **AND** each slide has a description and 2 CTA buttons
+
+#### Scenario: Hero carousel auto-plays
+
+- **GIVEN** the hero is visible
+- **WHEN** 5 seconds pass
+- **THEN** the carousel advances to the next slide automatically
 
 ### Services
-```gherkin
-Scenario: Services section shows 3 service cards
-  Given the services section scrolls into view
-  Then the heading reads "Explore Our Solutions"
-  And 3 service cards are displayed
-  And each card has an icon, title, and description
-  And the services are: Invoicing, Business Growth, Problem Solving
-```
+
+#### Scenario: Services section shows 3 service cards
+
+- **GIVEN** the services section scrolls into view
+- **THEN** the heading reads "Explore Our Solutions"
+- **AND** 3 service cards are displayed
+- **AND** each card has an icon, title, and description
+- **AND** the services are: Invoicing, Business Growth, Problem Solving
 
 ### About
-```gherkin
-Scenario: About section displays with CTA
-  Given the about section is in view
-  Then the heading reads "The Largest Business Expert"
-  And a description paragraph is shown
-  And an "About Us" button is visible
-```
+
+#### Scenario: About section displays with CTA
+
+- **GIVEN** the about section is in view
+- **THEN** the heading reads "The Largest Business Expert"
+- **AND** a description paragraph is shown
+- **AND** an "About Us" button is visible
 
 ### Counter
-```gherkin
-Scenario: Counter section displays statistics
-  Given the counter section scrolls into view
-  Then 3 statistics are shown: 520+ Projects, 244 On Going, 95% Success
-  And the counters animate on scroll
-```
+
+#### Scenario: Counter section displays statistics
+
+- **GIVEN** the counter section scrolls into view
+- **THEN** 3 statistics are shown: 520+ Projects, 244 On Going, 95% Success
+- **AND** the counters animate on scroll
 
 ### Gallery
-```gherkin
-Scenario: Gallery section shows portfolio items
-  Given the gallery section is in view
-  Then the heading reads "Our Recent Works"
-  And 5 portfolio items are displayed
-  And each item has an image and "Product Branding" title
-  And a "More Works" button is visible
-```
+
+#### Scenario: Gallery section shows portfolio items
+
+- **GIVEN** the gallery section is in view
+- **THEN** the heading reads "Our Recent Works"
+- **AND** 5 portfolio items are displayed
+- **AND** each item has an image and "Product Branding" title
+- **AND** a "More Works" button is visible
 
 ### Features
-```gherkin
-Scenario: Features section shows 3 feature cards
-  Given the features section is in view
-  Then 3 feature cards are displayed
-  And the features are: Unlimited Control, Rapidly Growth, Problem Solving
-  And each card has an icon and description
-```
+
+#### Scenario: Features section shows 3 feature cards
+
+- **GIVEN** the features section is in view
+- **THEN** 3 feature cards are displayed
+- **AND** the features are: Unlimited Control, Rapidly Growth, Problem Solving
+- **AND** each card has an icon and description
 
 ### Financial Solution
-```gherkin
-Scenario: Financial solution section displays
-  Given the financial section is in view
-  Then the heading reads "Gives you the best Financial solution for business"
-  And 2 columns of content are displayed
-```
+
+#### Scenario: Financial solution section displays
+
+- **GIVEN** the financial section is in view
+- **THEN** the heading reads "Gives you the best Financial solution for business"
+- **AND** 2 columns of content are displayed
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials section shows quotes
-  Given the testimonials section is in view
-  Then at least 1 testimonial quote is displayed
-  And author name and role are shown (Robert Jonson, Business Owner)
-```
+
+#### Scenario: Testimonials section shows quotes
+
+- **GIVEN** the testimonials section is in view
+- **THEN** at least 1 testimonial quote is displayed
+- **AND** author name and role are shown (Robert Jonson, Business Owner)
 
 ### CTA/Project
-```gherkin
-Scenario: CTA section displays call-to-action
-  Given the CTA section is in view
-  Then the heading reads "Do you Have any Project?"
-  And a "Contact Us" button is visible
-```
+
+#### Scenario: CTA section displays call-to-action
+
+- **GIVEN** the CTA section is in view
+- **THEN** the heading reads "Do you Have any Project?"
+- **AND** a "Contact Us" button is visible
 
 ### Footer
-```gherkin
-Scenario: Footer displays with links and contact
-  Given the footer is visible
-  Then it contains Services links, Useful Links, and Address
-  And a copyright notice is shown
-  And "Made with Component Dock" branding is present
-```
+
+#### Scenario: Footer displays with links and contact
+
+- **GIVEN** the footer is visible
+- **THEN** it contains Services links, Useful Links, and Address
+- **AND** a copyright notice is shown
+- **AND** "Made with Component Dock" branding is present
 
 ## Verification Checklist
 

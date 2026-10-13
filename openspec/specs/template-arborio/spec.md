@@ -71,131 +71,141 @@ The TEMPLATES.md screenshot shows a warm, elegant restaurant page with:
 7. Contact — map (left 50%) + contact details (right, offset), section header, social links
 8. Footer — dark background, copyright left, nav links right
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Top nav displays logo and social links
-  Given the user loads the page
-  Then the top nav contains a logo link and three social media icon links
 
-Scenario: Bottom nav shows navigation links and CTA
-  Given the user loads the page
-  Then the bottom nav shows links for Home, About, Menu, Reservation, Gallery, Events, Contact
-  And a "Reserve" CTA button is visible
-  And contact info (phone + address) is visible on the right
+#### Scenario: Top nav displays logo and social links
 
-Scenario: Bottom nav becomes sticky on scroll
-  Given the user scrolls past the hero
-  Then the bottom nav sticks to the top with a shadow
-```
+- **GIVEN** the user loads the page
+- **THEN** the top nav contains a logo link and three social media icon links
+
+#### Scenario: Bottom nav shows navigation links and CTA
+
+- **GIVEN** the user loads the page
+- **THEN** the bottom nav shows links for Home, About, Menu, Reservation, Gallery, Events, Contact
+- **AND** a "Reserve" CTA button is visible
+- **AND** contact info (phone + address) is visible on the right
+
+#### Scenario: Bottom nav becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the bottom nav sticks to the top with a shadow
 
 ### Hero
-```gherkin
-Scenario: Hero displays welcome message and CTA
-  Given the user views the hero section
-  Then a heading "Welcome To" is visible
-  And a descriptive paragraph is visible below the heading
-  And a "Discover Menu" button is visible
 
-Scenario: Hero is full-screen with parallax background
-  Given the user loads the page
-  Then the hero section fills the full viewport height
-  And a dark overlay covers the background image
-```
+#### Scenario: Hero displays welcome message and CTA
+
+- **GIVEN** the user views the hero section
+- **THEN** a heading "Welcome To" is visible
+- **AND** a descriptive paragraph is visible below the heading
+- **AND** a "Discover Menu" button is visible
+
+#### Scenario: Hero is full-screen with parallax background
+
+- **GIVEN** the user loads the page
+- **THEN** the hero section fills the full viewport height
+- **AND** a dark overlay covers the background image
 
 ### About
-```gherkin
-Scenario: About section shows intro text and gallery
-  Given the user scrolls to the About section
-  Then a section header with subtitle "About Us" and title is visible
-  And a welcome paragraph is displayed on the left (5-column)
-  And a description paragraph is displayed on the right (7-column)
-  And an image gallery slider is rendered below with multiple gallery items
 
-Scenario: Title has decorative orange underline
-  Given the About section title is rendered
-  Then it has a short orange underline accent below it
-```
+#### Scenario: About section shows intro text and gallery
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a section header with subtitle "About Us" and title is visible
+- **AND** a welcome paragraph is displayed on the left (5-column)
+- **AND** a description paragraph is displayed on the right (7-column)
+- **AND** an image gallery slider is rendered below with multiple gallery items
+
+#### Scenario: Title has decorative orange underline
+
+- **GIVEN** the About section title is rendered
+- **THEN** it has a short orange underline accent below it
 
 ### Menu
-```gherkin
-Scenario: Menu section shows tabbed dish listing
-  Given the user scrolls to the Menu section
-  Then a section header with subtitle "Discover" and title "Our Menu" is visible
-  And tab buttons for Dinner, Drinks, Lunch, Dessert are displayed
-  And the Dinner tab is active by default
-  And dishes are listed in a 2-column grid with name, price, and description
 
-Scenario: Menu section has parallax background with overlay
-  Given the Menu section is rendered
-  Then it has a dark parallax background image with overlay
-  And the title text is white
+#### Scenario: Menu section shows tabbed dish listing
 
-Scenario: Tab switching changes visible dishes
-  Given the Dinner tab is active
-  When the user clicks the Drinks tab
-  Then the Drinks dishes become visible
-  And the Dinner dishes are hidden
-```
+- **GIVEN** the user scrolls to the Menu section
+- **THEN** a section header with subtitle "Discover" and title "Our Menu" is visible
+- **AND** tab buttons for Dinner, Drinks, Lunch, Dessert are displayed
+- **AND** the Dinner tab is active by default
+- **AND** dishes are listed in a 2-column grid with name, price, and description
+
+#### Scenario: Menu section has parallax background with overlay
+
+- **GIVEN** the Menu section is rendered
+- **THEN** it has a dark parallax background image with overlay
+- **AND** the title text is white
+
+#### Scenario: Tab switching changes visible dishes
+
+- **GIVEN** the Dinner tab is active
+- **WHEN** the user clicks the Drinks tab
+- **THEN** the Drinks dishes become visible
+- **AND** the Dinner dishes are hidden
 
 ### Reservation
-```gherkin
-Scenario: Reservation form collects booking details
-  Given the user scrolls to the Reservation section
-  Then a form with fields for Name, Phone, Date, Email, Number of Guests, Time is visible
-  And a "Book Now" button is displayed
-  And opening hours are listed on the right side
 
-Scenario: Opening hours show weekly schedule
-  Given the Opening Time panel is rendered
-  Then days Sunday through Saturday are listed with hours
-  And "Closed" is shown for Friday and Saturday
-```
+#### Scenario: Reservation form collects booking details
+
+- **GIVEN** the user scrolls to the Reservation section
+- **THEN** a form with fields for Name, Phone, Date, Email, Number of Guests, Time is visible
+- **AND** a "Book Now" button is displayed
+- **AND** opening hours are listed on the right side
+
+#### Scenario: Opening hours show weekly schedule
+
+- **GIVEN** the Opening Time panel is rendered
+- **THEN** days Sunday through Saturday are listed with hours
+- **AND** "Closed" is shown for Friday and Saturday
 
 ### Events
-```gherkin
-Scenario: Events section displays upcoming events
-  Given the user scrolls to the Events section
-  Then a section header with subtitle "Special Event" and title "Upcoming Event" is visible
-  And 4 event cards are displayed in a 2-column grid
 
-Scenario: Each event card shows date, time, title, and description
-  Given an event card is rendered
-  Then it displays an image with an orange date badge overlay
-  And the badge shows a date (day + month)
-  And a time range is shown below the image
-  And a title and description paragraph are visible
-```
+#### Scenario: Events section displays upcoming events
+
+- **GIVEN** the user scrolls to the Events section
+- **THEN** a section header with subtitle "Special Event" and title "Upcoming Event" is visible
+- **AND** 4 event cards are displayed in a 2-column grid
+
+#### Scenario: Each event card shows date, time, title, and description
+
+- **GIVEN** an event card is rendered
+- **THEN** it displays an image with an orange date badge overlay
+- **AND** the badge shows a date (day + month)
+- **AND** a time range is shown below the image
+- **AND** a title and description paragraph are visible
 
 ### Contact
-```gherkin
-Scenario: Contact section shows map and details
-  Given the user scrolls to the Contact section
-  Then a map placeholder occupies the left 50%
-  And contact details are displayed on the right (offset)
-  And the section header shows "Contact Us" / "Get In Touch"
-  And phone, address, and email are listed
-  And social media follow links are shown
 
-Scenario: Contact section header has no center alignment
-  Given the Contact section header is rendered
-  Then the subtitle and title are left-aligned (not centered)
-```
+#### Scenario: Contact section shows map and details
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a map placeholder occupies the left 50%
+- **AND** contact details are displayed on the right (offset)
+- **AND** the section header shows "Contact Us" / "Get In Touch"
+- **AND** phone, address, and email are listed
+- **AND** social media follow links are shown
+
+#### Scenario: Contact section header has no center alignment
+
+- **GIVEN** the Contact section header is rendered
+- **THEN** the subtitle and title are left-aligned (not centered)
 
 ### Footer
-```gherkin
-Scenario: Footer shows copyright and navigation
-  Given the user scrolls to the footer
-  Then a copyright line is displayed on the left
-  And navigation links (Home, About, Menu, Reservation, Gallery, Events, Contact) are on the right
-  And the footer has a dark background
 
-Scenario: Footer links match the main nav
-  Given the footer is rendered
-  Then the footer nav links are uppercase
-  And they have the same labels as the bottom nav
-```
+#### Scenario: Footer shows copyright and navigation
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a copyright line is displayed on the left
+- **AND** navigation links (Home, About, Menu, Reservation, Gallery, Events, Contact) are on the right
+- **AND** the footer has a dark background
+
+#### Scenario: Footer links match the main nav
+
+- **GIVEN** the footer is rendered
+- **THEN** the footer nav links are uppercase
+- **AND** they have the same labels as the bottom nav
 
 ## Verification checklist
 

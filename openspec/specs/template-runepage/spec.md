@@ -37,72 +37,72 @@ Recreation of ColorLib "Colorlib Wizard 4" — a multi-step academic course regi
 | Layout                    | Flexbox split: image 41.07% left, form 58.93% right                                         | `.wrapper`                                              |
 | Responsive                | Image hidden at ≤991px, form goes full-width, stacked at ≤767px                             | Media queries                                           |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-Step Course Registration Wizard
 
 #### Scenario: Page load and initial layout
 
-- Given the user navigates to the RunePage wizard
-- Then a split-panel layout is displayed with an image on the left (41%) and a form on the right (59%)
-- And the form header shows a golden badge reading "#Academic Programs"
-- And a heading "Register for the course online" is visible below the badge
+- **GIVEN** the user navigates to the RunePage wizard
+- **THEN** a split-panel layout is displayed with an image on the left (41%) and a form on the right (59%)
+- **AND** the form header shows a golden badge reading "#Academic Programs"
+- **AND** a heading "Register for the course online" is visible below the badge
 
 #### Scenario: Step 1 — Course Information
 
-- Given the wizard is on step 1
-- Then five fields are visible: "Is this course for UF Online?" (select: No/Yes), "Preferred System" (select: Canvas/Svg), "College / Department" (select: University of Florida/Havard/Oxford), "Term" (select placeholder "Select Term" + Term 1/2/3), and "Instructor Username" (text input)
-- And a "Next" button (gold, rounded) is visible at the bottom right
-- And a progress bar shows 33% filled (step 1 of 3)
+- **GIVEN** the wizard is on step 1
+- **THEN** five fields are visible: "Is this course for UF Online?" (select: No/Yes), "Preferred System" (select: Canvas/Svg), "College / Department" (select: University of Florida/Havard/Oxford), "Term" (select placeholder "Select Term" + Term 1/2/3), and "Instructor Username" (text input)
+- **AND** a "Next" button (gold, rounded) is visible at the bottom right
+- **AND** a progress bar shows 33% filled (step 1 of 3)
 
 #### Scenario: Step 2 — Personal Information
 
-- Given the user completes step 1 and clicks "Next"
-- Then five fields are visible: "Date of Birth" (date input), "Country of Birth" (select: US/UK/Vietnam), "Your Email" (text input), "Phone Number" (text input), and "Gender" (radio: Male/Female/Transgender)
-- And a "Back" button (white, rounded) appears at the bottom left
-- And the progress bar fills to 66%
+- **GIVEN** the user completes step 1 and clicks "Next"
+- **THEN** five fields are visible: "Date of Birth" (date input), "Country of Birth" (select: US/UK/Vietnam), "Your Email" (text input), "Phone Number" (text input), and "Gender" (radio: Male/Female/Transgender)
+- **AND** a "Back" button (white, rounded) appears at the bottom left
+- **AND** the progress bar fills to 66%
 
 #### Scenario: Step 3 — Course Details & Confirmation
 
-- Given the user completes step 2 and clicks "Next"
-- Then four fields are visible: "Course ID" (text with placeholder), "Course Title" (text with placeholder), "Section(s)" (text with placeholder), and "Select Teacher" (select: Frances Meyer/Johan Lucas/Merry Linn)
-- And a checkbox "I agree all statement in Terms & Conditions" is shown (checked by default)
-- And the progress bar fills to 100%
-- And a "Finish" or "Submit" button replaces the "Next" button
+- **GIVEN** the user completes step 2 and clicks "Next"
+- **THEN** four fields are visible: "Course ID" (text with placeholder), "Course Title" (text with placeholder), "Section(s)" (text with placeholder), and "Select Teacher" (select: Frances Meyer/Johan Lucas/Merry Linn)
+- **AND** a checkbox "I agree all statement in Terms & Conditions" is shown (checked by default)
+- **AND** the progress bar fills to 100%
+- **AND** a "Finish" or "Submit" button replaces the "Next" button
 
 #### Scenario: Navigation between steps
 
-- Given the user is on step 2 or 3
-- When the user clicks the "Back" button
-- Then the previous step's fields are displayed
-- And the progress bar regresses to the correct percentage
+- **GIVEN** the user is on step 2 or 3
+- **WHEN** the user clicks the "Back" button
+- **THEN** the previous step's fields are displayed
+- **AND** the progress bar regresses to the correct percentage
 
 #### Scenario: Progress bar animation
 
-- Given the wizard transitions between steps
-- Then the progress bar animates smoothly (CSS transition 0.5s ease)
-- And the step icon position moves to indicate the current step
+- **GIVEN** the wizard transitions between steps
+- **THEN** the progress bar animates smoothly (CSS transition 0.5s ease)
+- **AND** the step icon position moves to indicate the current step
 
 #### Scenario: Responsive layout (mobile)
 
-- Given the viewport is ≤991px wide
-- Then the left image panel is hidden
-- And the form takes full width
-- Given the viewport is ≤767px wide
-- Then form rows stack vertically (labels above inputs)
-- And action buttons stack vertically aligned right
+- **GIVEN** the viewport is ≤991px wide
+- **THEN** the left image panel is hidden
+- **AND** the form takes full width
+- **GIVEN** the viewport is ≤767px wide
+- **THEN** form rows stack vertically (labels above inputs)
+- **AND** action buttons stack vertically aligned right
 
 #### Scenario: Input focus styling
 
-- Given the user focuses on any text input or select
-- Then a soft white glow box-shadow appears
-- And the border changes to light blue (#ceebf7)
+- **GIVEN** the user focuses on any text input or select
+- **THEN** a soft white glow box-shadow appears
+- **AND** the border changes to light blue (#ceebf7)
 
 #### Scenario: Button hover effects
 
-- Given the user hovers over the "Next" button
-- Then the background darkens to #c9a630
-- And the arrow icon wobbles horizontally (CSS animation)
+- **GIVEN** the user hovers over the "Next" button
+- **THEN** the background darkens to #c9a630
+- **AND** the arrow icon wobbles horizontally (CSS animation)
 
 ## Verification Checklist
 

@@ -77,119 +77,154 @@ Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript
 14. **Contact** — light background; centered title; 3-column info (address, phone, email with primary-colored icons); contact form (first name, last name, email, subject, message, "Send Message" button)
 15. **Footer** — dark background; three-column: About Us (text), Quick Links (list), Follow Us (social icons); Subscribe Newsletter section (email input + Send button); copyright line with heart icon
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: FinVault template behaviour
+
 Feature: FinVault — Finance/Banking Corporate Template
 
-  Background:
-    Given the FinVault template is loaded at the home page
+Background:
+- **GIVEN** the FinVault template is loaded at the home page
 
-  # ── Navbar ──
-  Scenario: Navbar displays logo and navigation links
-    Then the navbar contains the logo text "FinVault."
-    And the nav links include "Home", "About Us", "Blog", "Contact"
-    And the navbar is sticky when scrolled past the top
+**── Navbar ──**
 
-  Scenario: Navbar dropdown on About Us
-    When I hover over "About Us" in the navbar
-    Then a dropdown appears with "Team", "Pricing", "FAQ", "Gallery", "Services", "Testimonials"
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is mobile-width (<= 1199px)
-    Then the hamburger menu icon is visible
-    When I tap the hamburger icon
-    Then the mobile slide-out menu opens from the right
+- **THEN** the navbar contains the logo text "FinVault."
+- **AND** the nav links include "Home", "About Us", "Blog", "Contact"
+- **AND** the navbar is sticky when scrolled past the top
 
-  # ── Hero ──
-  Scenario: Hero section displays carousel
-    Then the hero section has a full-screen background image with dark overlay
-    And the hero displays a heading "Banking Solutions"
-    And the hero displays a "Get In Touch" primary button
+#### Scenario: Navbar dropdown on About Us
 
-  Scenario: Hero carousel auto-advances
-    When I wait 5 seconds
-    Then the hero heading changes to "Financing Solutions"
+- **WHEN** I hover over "About Us" in the navbar
+- **THEN** a dropdown appears with "Team", "Pricing", "FAQ", "Gallery", "Services", "Testimonials"
 
-  # ── About Us ──
-  Scenario: About section layout
-    Then the About Us section shows a centered "About Us" heading
-    And a left-side image with circular background decoration
-    And a right-side "We Solve Your Financial Problem" sub-heading with two paragraphs
+#### Scenario: Mobile hamburger menu
 
-  # ── Features ──
-  Scenario: Features section displays 3 feature cards
-    Then the features section shows exactly 3 feature cards
-    And each card has an icon, a title, and a short description
+- **GIVEN** the viewport is mobile-width (<= 1199px)
+- **THEN** the hamburger menu icon is visible
+- **WHEN** I tap the hamburger icon
+- **THEN** the mobile slide-out menu opens from the right
 
-  # ── Banking Solutions ──
-  Scenario: Banking Solutions with checklist
-    Then the banking solutions section shows a heading "Banking Solutions Is Our Priority"
-    And a green check-list with at least 3 items
+**── Hero ──**
 
-  # ── Team ──
-  Scenario: Team section displays team members
-    Then the "Meet Team" section shows exactly 3 team member cards
-    And each card displays a name and position
+#### Scenario: Hero section displays carousel
 
-  # ── Gallery ──
-  Scenario: Gallery section with image grid
-    Then the gallery section displays at least 9 images in a masonry grid
-    And hovering an image shows a lightbox overlay icon
+- **THEN** the hero section has a full-screen background image with dark overlay
+- **AND** the hero displays a heading "Banking Solutions"
+- **AND** the hero displays a "Get In Touch" primary button
 
-  # ── How It Works ──
-  Scenario: How It Works section with numbered steps
-    Then the "How It Works" section shows exactly 3 steps
-    And each step has a number (01, 02, 03), a title, and a description
+#### Scenario: Hero carousel auto-advances
 
-  # ── Services ──
-  Scenario: Services grid with 6 items
-    Then the "Our Services" section shows exactly 6 service items
-    And each item has an icon and a title
+- **WHEN** I wait 5 seconds
+- **THEN** the hero heading changes to "Financing Solutions"
 
-  # ── Testimonials ──
-  Scenario: Testimonials carousel
-    Then the "Happy Customers" section displays testimonials
-    And each testimonial has a quote and a customer name
+**── About Us ──**
 
-  # ── Pricing ──
-  Scenario: Pricing section with 3 tiers
-    Then the "Pricing" section shows 3 pricing cards
-    And the tiers are "Basic", "Premium", and "Professional"
-    And the "Premium" tier is visually highlighted as popular
-    And each card has a price, feature list, and "Buy Now" button
+#### Scenario: About section layout
 
-  Scenario: Pricing excluded features are strikethrough
-    Then the "Basic" plan has some features with strikethrough text
-    And the "Professional" plan shows all features without strikethrough
+- **THEN** the About Us section shows a centered "About Us" heading
+- **AND** a left-side image with circular background decoration
+- **AND** a right-side "We Solve Your Financial Problem" sub-heading with two paragraphs
 
-  # ── FAQ ──
-  Scenario: FAQ section in two columns
-    Then the FAQ section shows 8 question-and-answer pairs
-    And the questions are arranged in a two-column layout
+**── Features ──**
 
-  # ── Blog ──
-  Scenario: Blog section with 3 cards
-    Then the blog section shows exactly 3 blog cards
-    And each card has an image, title, meta info, excerpt, and "Continue Reading..." link
+#### Scenario: Features section displays 3 feature cards
 
-  # ── Contact ──
-  Scenario: Contact info with 3 columns
-    Then the "Contact Us" section shows address, phone, and email in 3 columns
-    And each info item has a primary-colored icon above the text
+- **THEN** the features section shows exactly 3 feature cards
+- **AND** each card has an icon, a title, and a short description
 
-  Scenario: Contact form
-    Then a contact form is displayed with fields: First Name, Last Name, Email, Subject, Message
-    And the form has a "Send Message" primary button
+**── Banking Solutions ──**
 
-  # ── Footer ──
-  Scenario: Footer layout
-    Then the footer has a dark background (#343a40)
-    And the footer contains "About Us" text, "Quick Links" list, and "Follow Us" social icons
-    And the footer has a "Subscribe Newsletter" section with email input and Send button
-    And the footer has a copyright line
-    And the footer links to "https://www.componentdock.com/" branded as "Component Dock"
-```
+#### Scenario: Banking Solutions with checklist
+
+- **THEN** the banking solutions section shows a heading "Banking Solutions Is Our Priority"
+- **AND** a green check-list with at least 3 items
+
+**── Team ──**
+
+#### Scenario: Team section displays team members
+
+- **THEN** the "Meet Team" section shows exactly 3 team member cards
+- **AND** each card displays a name and position
+
+**── Gallery ──**
+
+#### Scenario: Gallery section with image grid
+
+- **THEN** the gallery section displays at least 9 images in a masonry grid
+- **AND** hovering an image shows a lightbox overlay icon
+
+**── How It Works ──**
+
+#### Scenario: How It Works section with numbered steps
+
+- **THEN** the "How It Works" section shows exactly 3 steps
+- **AND** each step has a number (01, 02, 03), a title, and a description
+
+**── Services ──**
+
+#### Scenario: Services grid with 6 items
+
+- **THEN** the "Our Services" section shows exactly 6 service items
+- **AND** each item has an icon and a title
+
+**── Testimonials ──**
+
+#### Scenario: Testimonials carousel
+
+- **THEN** the "Happy Customers" section displays testimonials
+- **AND** each testimonial has a quote and a customer name
+
+**── Pricing ──**
+
+#### Scenario: Pricing section with 3 tiers
+
+- **THEN** the "Pricing" section shows 3 pricing cards
+- **AND** the tiers are "Basic", "Premium", and "Professional"
+- **AND** the "Premium" tier is visually highlighted as popular
+- **AND** each card has a price, feature list, and "Buy Now" button
+
+#### Scenario: Pricing excluded features are strikethrough
+
+- **THEN** the "Basic" plan has some features with strikethrough text
+- **AND** the "Professional" plan shows all features without strikethrough
+
+**── FAQ ──**
+
+#### Scenario: FAQ section in two columns
+
+- **THEN** the FAQ section shows 8 question-and-answer pairs
+- **AND** the questions are arranged in a two-column layout
+
+**── Blog ──**
+
+#### Scenario: Blog section with 3 cards
+
+- **THEN** the blog section shows exactly 3 blog cards
+- **AND** each card has an image, title, meta info, excerpt, and "Continue Reading..." link
+
+**── Contact ──**
+
+#### Scenario: Contact info with 3 columns
+
+- **THEN** the "Contact Us" section shows address, phone, and email in 3 columns
+- **AND** each info item has a primary-colored icon above the text
+
+#### Scenario: Contact form
+
+- **THEN** a contact form is displayed with fields: First Name, Last Name, Email, Subject, Message
+- **AND** the form has a "Send Message" primary button
+
+**── Footer ──**
+
+#### Scenario: Footer layout
+
+- **THEN** the footer has a dark background (#343a40)
+- **AND** the footer contains "About Us" text, "Quick Links" list, and "Follow Us" social icons
+- **AND** the footer has a "Subscribe Newsletter" section with email input and Send button
+- **AND** the footer has a copyright line
+- **AND** the footer links to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification Checklist
 

@@ -52,122 +52,111 @@ Extracted from the live preview CSS (`css/style.css`):
 - Instagram grid: 6-column image strip
 - Footer: dark (`#232323`), multi-column with links + contact info
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```
-Scenario: Sticky transparent navbar with logo and links
-  Given the user loads the page
-  Then the navbar displays "Opulence" as the logo text
-  And the nav links are: Home, Rooms, Restaurant, About, Blog, Contact
-  And the navbar becomes solid dark on scroll
-```
+#### Scenario: Sticky transparent navbar with logo and links
+
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays "Opulence" as the logo text
+- **AND** the nav links are: Home, Rooms, Restaurant, About, Blog, Contact
+- **AND** the navbar becomes solid dark on scroll
 
 ### Hero Slider
 
-```
-Scenario: Full-height hero with overlay and CTA
-  Given the user loads the page
-  Then a full-height hero section displays
-  And the heading reads "Welcome To Opulence"
-  And the subheading reads "Hotels & Resorts"
-  And a "Book Now" CTA button is visible
-  And the hero has a dark semi-transparent overlay on the background image
-```
+#### Scenario: Full-height hero with overlay and CTA
+
+- **GIVEN** the user loads the page
+- **THEN** a full-height hero section displays
+- **AND** the heading reads "Welcome To Opulence"
+- **AND** the subheading reads "Hotels & Resorts"
+- **AND** a "Book Now" CTA button is visible
+- **AND** the hero has a dark semi-transparent overlay on the background image
 
 ### Booking Form
 
-```
-Scenario: Floating booking form over hero
-  Given the user sees the hero section
-  Then a booking form appears below the hero with negative margin
-  And the form has fields: Check In, Check Out, Special Request
-  And the form labels use gold accent color (#8d703b)
-  And a "Check Availability" button is displayed
-```
+#### Scenario: Floating booking form over hero
+
+- **GIVEN** the user sees the hero section
+- **THEN** a booking form appears below the hero with negative margin
+- **AND** the form has fields: Check In, Check Out, Special Request
+- **AND** the form labels use gold accent color (#8d703b)
+- **AND** a "Check Availability" button is displayed
 
 ### About Section
 
-```
-Scenario: Welcome section with text and image
-  Given the user scrolls past the booking form
-  Then a two-column section displays
-  And the left column has a large image
-  And the right column has heading "Welcome To Our Hotel"
-  And descriptive paragraph text is present
-```
+#### Scenario: Welcome section with text and image
+
+- **GIVEN** the user scrolls past the booking form
+- **THEN** a two-column section displays
+- **AND** the left column has a large image
+- **AND** the right column has heading "Welcome To Our Hotel"
+- **AND** descriptive paragraph text is present
 
 ### Amenities Section
 
-```
-Scenario: Four amenity cards in a row
-  Given the user scrolls to the amenities area
-  Then 4 amenity cards are displayed in a row
-  And the cards are: Front Desk, Restaurant Bar, Transfer Services, Spa Suites
-  And each card has an icon and descriptive text
-```
+#### Scenario: Four amenity cards in a row
+
+- **GIVEN** the user scrolls to the amenities area
+- **THEN** 4 amenity cards are displayed in a row
+- **AND** the cards are: Front Desk, Restaurant Bar, Transfer Services, Spa Suites
+- **AND** each card has an icon and descriptive text
 
 ### Rooms Section
 
-```
-Scenario: Room listing grid
-  Given the user scrolls to the rooms section
-  Then 6 room cards are displayed in a 3-column grid
-  And the rooms are: Suite Room, Family Room, Deluxe Room, Classic Room, Superior Room, Luxury Room
-  And each card shows an image, room name, price per night, and "View Room Details" link
-  And the section background is light (#f7f7f7)
-```
+#### Scenario: Room listing grid
+
+- **GIVEN** the user scrolls to the rooms section
+- **THEN** 6 room cards are displayed in a 3-column grid
+- **AND** the rooms are: Suite Room, Family Room, Deluxe Room, Classic Room, Superior Room, Luxury Room
+- **AND** each card shows an image, room name, price per night, and "View Room Details" link
+- **AND** the section background is light (#f7f7f7)
 
 ### Counter Section
 
-```
-Scenario: Statistics counter with parallax background
-  Given the user scrolls to the counter section
-  Then 4 statistics are displayed: Happy Guests, Rooms, Staffs, Destination
-  And the section has a parallax background image
-  And numbers animate on scroll into view
-```
+#### Scenario: Statistics counter with parallax background
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 4 statistics are displayed: Happy Guests, Rooms, Staffs, Destination
+- **AND** the section has a parallax background image
+- **AND** numbers animate on scroll into view
 
 ### Testimonials Section
 
-```
-Scenario: Testimonial carousel
-  Given the user scrolls to the testimonials section
-  Then a carousel displays testimonial cards
-  And each card shows a quote, avatar image, and author name
-  And the section background is light (#f7f7f7)
-```
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel displays testimonial cards
+- **AND** each card shows a quote, avatar image, and author name
+- **AND** the section background is light (#f7f7f7)
 
 ### Blog Section
 
-```
-Scenario: Recent blog posts grid
-  Given the user scrolls to the blog section
-  Then 4 blog entry cards are displayed
-  And each card has a featured image, date, title, and excerpt
-  And a "Read more" link is present on each card
-```
+#### Scenario: Recent blog posts grid
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 4 blog entry cards are displayed
+- **AND** each card has a featured image, date, title, and excerpt
+- **AND** a "Read more" link is present on each card
 
 ### Instagram Section
 
-```
-Scenario: Instagram image strip
-  Given the user scrolls to the Instagram section
-  Then a 6-column image strip is displayed
-  And the heading reads "Instagram"
-```
+#### Scenario: Instagram image strip
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** a 6-column image strip is displayed
+- **AND** the heading reads "Instagram"
 
 ### Footer
 
-```
-Scenario: Dark footer with columns
-  Given the user reaches the bottom of the page
-  Then the footer has a dark background (#232323)
-  And columns display: Useful Links, Privacy, Contact info
-  And the footer links to Component Dock (https://www.componentdock.com/)
-  And the footer shows contact phone and email
-```
+#### Scenario: Dark footer with columns
+
+- **GIVEN** the user reaches the bottom of the page
+- **THEN** the footer has a dark background (#232323)
+- **AND** columns display: Useful Links, Privacy, Contact info
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
+- **AND** the footer shows contact phone and email
 
 ## Verification Checklist
 

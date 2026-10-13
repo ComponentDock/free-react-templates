@@ -59,227 +59,246 @@ Use Google Fonts `<link>` for Poppins.
 - **Footer**: Dark navy (`#04091e`) bg, 100px top padding. 3 columns: Top Products links, Contact info (address + phone), Newsletter (email input + green subscribe button). Bottom bar: copyright left, social icons right.
 - **Buttons**: `.primary-btn` — green gradient bg (`linear-gradient(0deg, #ade600, #62b900)`), white text, border-radius 25px, padding 0 30px, height 42px line-height. Hover: white bg, green border. `.header-btn` variant in banner: solid green `#67bc00`, border-radius 0.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header navigation
+### Feature: OralHaven template behaviour
 
-```gherkin
+#### Scenario: Header navigation
+
 Feature: OralHaven Header
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Logo is visible
-    Then a logo image should be visible in the header
+#### Scenario: Logo is visible
 
-  Scenario: Navigation links are present
-    Then the header should contain links for Home, About, Services, Blog, and Contact
+- **THEN** a logo image should be visible in the header
 
-  Scenario: Header is fixed on scroll
-    When the user scrolls down
-    Then the header should remain fixed at the top of the viewport
+#### Scenario: Navigation links are present
 
-  Scenario: Header gains shadow on scroll
-    When the user scrolls past the banner
-    Then the header should display a shadow
-```
+- **THEN** the header should contain links for Home, About, Services, Blog, and Contact
 
-### Scenario: Banner / Hero section
+#### Scenario: Header is fixed on scroll
 
-```gherkin
+- **WHEN** the user scrolls down
+- **THEN** the header should remain fixed at the top of the viewport
+
+#### Scenario: Header gains shadow on scroll
+
+- **WHEN** the user scrolls past the banner
+- **THEN** the header should display a shadow
+
+#### Scenario: Banner / Hero section
+
 Feature: OralHaven Banner
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Hero heading is visible
-    Then the banner should display a main heading about dental service
+#### Scenario: Hero heading is visible
 
-  Scenario: Hero subtitle is visible
-    Then the banner should display a subtitle above the heading
+- **THEN** the banner should display a main heading about dental service
 
-  Scenario: Hero paragraph is visible
-    Then the banner should display descriptive paragraph text
+#### Scenario: Hero subtitle is visible
 
-  Scenario: CTA button is present
-    Then a "Get Started" button should be visible in the banner
+- **THEN** the banner should display a subtitle above the heading
 
-  Scenario: Banner has dark overlay
-    Then the banner background should have a dark overlay
-```
+#### Scenario: Hero paragraph is visible
 
-### Scenario: Opening Hours section
+- **THEN** the banner should display descriptive paragraph text
 
-```gherkin
+#### Scenario: CTA button is present
+
+- **THEN** a "Get Started" button should be visible in the banner
+
+#### Scenario: Banner has dark overlay
+
+- **THEN** the banner background should have a dark overlay
+
+#### Scenario: Opening Hours section
+
 Feature: OralHaven Opening Hours
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Opening hours heading is visible
-    Then the opening hours section should display "Opening Hours"
+#### Scenario: Opening hours heading is visible
 
-  Scenario: Open status indicator is shown
-    Then a green dot with "We are open Now" should be visible
+- **THEN** the opening hours section should display "Opening Hours"
 
-  Scenario: Schedule is displayed
-    Then a 3-row schedule should show Monday–Friday, Saturday, and Sunday hours
-```
+#### Scenario: Open status indicator is shown
 
-### Scenario: Services section
+- **THEN** a green dot with "We are open Now" should be visible
 
-```gherkin
+#### Scenario: Schedule is displayed
+
+- **THEN** a 3-row schedule should show Monday–Friday, Saturday, and Sunday hours
+
+#### Scenario: Services section
+
 Feature: OralHaven Services
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Four services are displayed
-    Then 4 service cards should be visible in a row
+#### Scenario: Four services are displayed
 
-  Scenario: Each service has an image
-    Then each service card should display an image
+- **THEN** 4 service cards should be visible in a row
 
-  Scenario: Each service has a title
-    Then each service card should display a heading
+#### Scenario: Each service has an image
 
-  Scenario: Each service has a description
-    Then each service card should display a paragraph
-```
+- **THEN** each service card should display an image
 
-### Scenario: About section
+#### Scenario: Each service has a title
 
-```gherkin
+- **THEN** each service card should display a heading
+
+#### Scenario: Each service has a description
+
+- **THEN** each service card should display a paragraph
+
+#### Scenario: About section
+
 Feature: OralHaven About
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: About section has dark background
-    Then the about section should have a dark navy background
+#### Scenario: About section has dark background
 
-  Scenario: About heading is visible
-    Then the about section should display a heading about who they are
+- **THEN** the about section should have a dark navy background
 
-  Scenario: About has two feature sub-cards
-    Then two sub-cards should be visible in the about section
-    And each sub-card should have an icon, heading, and paragraph
-```
+#### Scenario: About heading is visible
 
-### Scenario: Testimonials section
+- **THEN** the about section should display a heading about who they are
 
-```gherkin
+#### Scenario: About has two feature sub-cards
+
+- **THEN** two sub-cards should be visible in the about section
+- **AND** each sub-card should have an icon, heading, and paragraph
+
+#### Scenario: Testimonials section
+
 Feature: OralHaven Testimonials
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Testimonials heading is visible
-    Then the testimonials section should display a heading about client feedback
+#### Scenario: Testimonials heading is visible
 
-  Scenario: Testimonial cards are rendered
-    Then at least 3 testimonial cards should be visible
+- **THEN** the testimonials section should display a heading about client feedback
 
-  Scenario: Each testimonial has avatar, quote, name, and role
-    Then each testimonial card should show an avatar image, a quote paragraph, a name heading, and a role paragraph
+#### Scenario: Testimonial cards are rendered
 
-  Scenario: Carousel dots are present
-    Then carousel navigation dots should be visible below the testimonials
-```
+- **THEN** at least 3 testimonial cards should be visible
 
-### Scenario: Team section
+#### Scenario: Each testimonial has avatar, quote, name, and role
 
-```gherkin
+- **THEN** each testimonial card should show an avatar image, a quote paragraph, a name heading, and a role paragraph
+
+#### Scenario: Carousel dots are present
+
+- **THEN** carousel navigation dots should be visible below the testimonials
+
+#### Scenario: Team section
+
 Feature: OralHaven Team
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Team section has light background
-    Then the team section should have a light off-white background
+#### Scenario: Team section has light background
 
-  Scenario: Team member cards are displayed
-    Then 4 team member cards should be visible
+- **THEN** the team section should have a light off-white background
 
-  Scenario: Hover reveals gradient overlay
-    When the user hovers over a team member card
-    Then a green gradient overlay should appear with the member name and role
-```
+#### Scenario: Team member cards are displayed
 
-### Scenario: Features section
+- **THEN** 4 team member cards should be visible
 
-```gherkin
+#### Scenario: Hover reveals gradient overlay
+
+- **WHEN** the user hovers over a team member card
+- **THEN** a green gradient overlay should appear with the member name and role
+
+#### Scenario: Features section
+
 Feature: OralHaven Features
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Six features are displayed
-    Then 6 feature items should be visible
+#### Scenario: Six features are displayed
 
-  Scenario: Each feature has an icon
-    Then each feature should display a green Linearicon icon
+- **THEN** 6 feature items should be visible
 
-  Scenario: Each feature has a title and description
-    Then each feature should display an uppercase heading and a paragraph
-```
+#### Scenario: Each feature has an icon
 
-### Scenario: Appointment section
+- **THEN** each feature should display a green Linearicon icon
 
-```gherkin
+#### Scenario: Each feature has a title and description
+
+- **THEN** each feature should display an uppercase heading and a paragraph
+
+#### Scenario: Appointment section
+
 Feature: OralHaven Appointment
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Appointment section has dark background
-    Then the appointment section should have a dark navy background
+#### Scenario: Appointment section has dark background
 
-  Scenario: Appointment form is visible
-    Then a form with name, email, phone, and message fields should be visible
+- **THEN** the appointment section should have a dark navy background
 
-  Scenario: Submit button is present
-    Then a submit button should be visible in the appointment form
-```
+#### Scenario: Appointment form is visible
 
-### Scenario: Blog section
+- **THEN** a form with name, email, phone, and message fields should be visible
 
-```gherkin
+#### Scenario: Submit button is present
+
+- **THEN** a submit button should be visible in the appointment form
+
+#### Scenario: Blog section
+
 Feature: OralHaven Blog
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Blog posts are displayed
-    Then 3 blog post cards should be visible
+#### Scenario: Blog posts are displayed
 
-  Scenario: Each blog post has image, date badge, and title
-    Then each blog card should show an image, a date badge, and a heading
-```
+- **THEN** 3 blog post cards should be visible
 
-### Scenario: Footer
+#### Scenario: Each blog post has image, date badge, and title
 
-```gherkin
+- **THEN** each blog card should show an image, a date badge, and a heading
+
+#### Scenario: Footer
+
 Feature: OralHaven Footer
 
-  Background:
-    Given the OralHaven page is loaded
+Background:
+- **GIVEN** the OralHaven page is loaded
 
-  Scenario: Footer has dark background
-    Then the footer should have a dark navy background
+#### Scenario: Footer has dark background
 
-  Scenario: Footer has three columns
-    Then the footer should display three columns: links, contact info, and newsletter
+- **THEN** the footer should have a dark navy background
 
-  Scenario: Newsletter form is present
-    Then a newsletter email input and subscribe button should be visible
+#### Scenario: Footer has three columns
 
-  Scenario: Copyright line links Component Dock
-    Then the footer bottom should contain a link to componentdock.com
+- **THEN** the footer should display three columns: links, contact info, and newsletter
 
-  Scenario: Social icons are present
-    Then 4 social media icons should be visible in the footer bottom
-```
+#### Scenario: Newsletter form is present
+
+- **THEN** a newsletter email input and subscribe button should be visible
+
+#### Scenario: Copyright line links Component Dock
+
+- **THEN** the footer bottom should contain a link to componentdock.com
+
+#### Scenario: Social icons are present
+
+- **THEN** 4 social media icons should be visible in the footer bottom
 
 ## Verification checklist
 

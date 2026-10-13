@@ -53,220 +53,240 @@ and a dark copy bar at the bottom.
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Logo displays with camera icon
-  Given the page loads
-  Then the logo shows a camera icon and the text "ImaStudio"
-  And the logo is centered in the navbar
+#### Scenario: Logo displays with camera icon
 
-Scenario: Navigation links split left and right
-  Given the viewport is >= 992px wide
-  Then the left nav shows: Home, Gallery (with dropdown), Services
-  And the right nav shows: Blog, About, Contact
+- **GIVEN** the page loads
+- **THEN** the logo shows a camera icon and the text "ImaStudio"
+- **AND** the logo is centered in the navbar
 
-Scenario: Gallery dropdown appears on hover
-  Given the viewport is >= 992px wide
-  And the user hovers over "Gallery"
-  Then a dropdown with 4 gallery items is displayed
+#### Scenario: Navigation links split left and right
 
-Scenario: Mobile hamburger menu
-  Given the viewport is < 992px wide
-  Then the nav links are hidden
-  And a hamburger menu toggle is visible
+- **GIVEN** the viewport is >= 992px wide
+- **THEN** the left nav shows: Home, Gallery (with dropdown), Services
+- **AND** the right nav shows: Blog, About, Contact
 
-Scenario: Navbar has dark background
-  Given the page loads
-  Then the navbar background is dark (#000000 or transparent over hero)
-```
+#### Scenario: Gallery dropdown appears on hover
+
+- **GIVEN** the viewport is >= 992px wide
+- **AND** the user hovers over "Gallery"
+- **THEN** a dropdown with 4 gallery items is displayed
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is < 992px wide
+- **THEN** the nav links are hidden
+- **AND** a hamburger menu toggle is visible
+
+#### Scenario: Navbar has dark background
+
+- **GIVEN** the page loads
+- **THEN** the navbar background is dark (#000000 or transparent over hero)
 
 ### Feature: Hero Section
 
-```gherkin
-Scenario: Hero displays with background image/video
-  Given the page loads
-  Then a full-width hero section with a dark overlay is visible
-  And the hero height is 800px
+#### Scenario: Hero displays with background image/video
 
-Scenario: Hero headline shows decorative text
-  Given the page loads
-  Then a yellow "holder" label is displayed above the main headline
-  And the headline reads "Fashion Photoshoot" (or equivalent photography heading)
+- **GIVEN** the page loads
+- **THEN** a full-width hero section with a dark overlay is visible
+- **AND** the hero height is 800px
 
-Scenario: Hero has date and CTA
-  Given the hero section is visible
-  Then a date line is shown below the headline
-  And a "View Gallery" button is displayed with circular white style
+#### Scenario: Hero headline shows decorative text
 
-Scenario: View Gallery button is circular
-  Given the hero section loads
-  Then the CTA button has 50% border-radius (circle shape)
-  And the button has white background with black text
-```
+- **GIVEN** the page loads
+- **THEN** a yellow "holder" label is displayed above the main headline
+- **AND** the headline reads "Fashion Photoshoot" (or equivalent photography heading)
+
+#### Scenario: Hero has date and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** a date line is shown below the headline
+- **AND** a "View Gallery" button is displayed with circular white style
+
+#### Scenario: View Gallery button is circular
+
+- **GIVEN** the hero section loads
+- **THEN** the CTA button has 50% border-radius (circle shape)
+- **AND** the button has white background with black text
 
 ### Feature: Services
 
-```gherkin
-Scenario: Services section shows three cards
-  Given the page loads
-  Then 3 service cards are displayed in a row
+#### Scenario: Services section shows three cards
 
-Scenario: Service cards have icons and descriptions
-  Given the services section is visible
-  Then the services are: Photography, Image Processing, Videography
-  And each card has a yellow circular icon, a title, and a description paragraph
+- **GIVEN** the page loads
+- **THEN** 3 service cards are displayed in a row
 
-Scenario: Service icons use yellow accent color
-  Given the services section loads
-  Then the service icons are displayed with #FFDD00 yellow color
-```
+#### Scenario: Service cards have icons and descriptions
+
+- **GIVEN** the services section is visible
+- **THEN** the services are: Photography, Image Processing, Videography
+- **AND** each card has a yellow circular icon, a title, and a description paragraph
+
+#### Scenario: Service icons use yellow accent color
+
+- **GIVEN** the services section loads
+- **THEN** the service icons are displayed with #FFDD00 yellow color
 
 ### Feature: About Section
 
-```gherkin
-Scenario: About section uses split layout
-  Given the page loads
-  Then a split layout is displayed with an image on the left and text on the right
+#### Scenario: About section uses split layout
 
-Scenario: About section has heading and description
-  Given the about section is visible
-  Then the heading reads "We Are ImaStudio a Photography Studio" (or equivalent)
-  And two paragraphs of descriptive text are shown
+- **GIVEN** the page loads
+- **THEN** a split layout is displayed with an image on the left and text on the right
 
-Scenario: About section is full width
-  Given the about section loads
-  Then it spans the full viewport width with the image filling half
-```
+#### Scenario: About section has heading and description
+
+- **GIVEN** the about section is visible
+- **THEN** the heading reads "We Are ImaStudio a Photography Studio" (or equivalent)
+- **AND** two paragraphs of descriptive text are shown
+
+#### Scenario: About section is full width
+
+- **GIVEN** the about section loads
+- **THEN** it spans the full viewport width with the image filling half
 
 ### Feature: Gallery
 
-```gherkin
-Scenario: Gallery heading displays
-  Given the page loads
-  Then a "Gallery" heading is visible centered in the section
+#### Scenario: Gallery heading displays
 
-Scenario: Gallery shows 8 items in a grid
-  Given the gallery section is in view
-  Then 8 gallery items are displayed in a 4-column grid
+- **GIVEN** the page loads
+- **THEN** a "Gallery" heading is visible centered in the section
 
-Scenario: Gallery items have hover overlay
-  Given the gallery section loads
-  Then each item shows a title and category tags on hover
-  And the overlay has a dark semi-transparent background
+#### Scenario: Gallery shows 8 items in a grid
 
-Scenario: Gallery items are responsive
-  Given the viewport is < 768px wide
-  Then the gallery items stack in a 1-column layout
-  Given the viewport is 768px–991px wide
-  Then the gallery items show in a 2-column layout
+- **GIVEN** the gallery section is in view
+- **THEN** 8 gallery items are displayed in a 4-column grid
 
-Scenario: Gallery items have category tags
-  Given the gallery section is visible
-  Then each item displays category tags (e.g. "Fashion", "Jacket", "Woman")
-```
+#### Scenario: Gallery items have hover overlay
+
+- **GIVEN** the gallery section loads
+- **THEN** each item shows a title and category tags on hover
+- **AND** the overlay has a dark semi-transparent background
+
+#### Scenario: Gallery items are responsive
+
+- **GIVEN** the viewport is < 768px wide
+- **THEN** the gallery items stack in a 1-column layout
+- **GIVEN** the viewport is 768px–991px wide
+- **THEN** the gallery items show in a 2-column layout
+
+#### Scenario: Gallery items have category tags
+
+- **GIVEN** the gallery section is visible
+- **THEN** each item displays category tags (e.g. "Fashion", "Jacket", "Woman")
 
 ### Feature: Blog
 
-```gherkin
-Scenario: Blog section shows recent posts
-  Given the page loads
-  Then a "Recent Blog" heading is visible centered in the section
+#### Scenario: Blog section shows recent posts
 
-Scenario: Blog displays 3 article cards
-  Given the blog section is in view
-  Then 3 blog article cards are shown in a 3-column grid
+- **GIVEN** the page loads
+- **THEN** a "Recent Blog" heading is visible centered in the section
 
-Scenario: Blog cards have image, title, excerpt, and metadata
-  Given the blog section loads
-  Then each card has a background image, a title link, an excerpt paragraph
-  And metadata showing author name, date, and comment count
+#### Scenario: Blog displays 3 article cards
 
-Scenario: Blog section is responsive
-  Given the viewport is < 768px wide
-  Then the blog cards stack vertically in a 1-column layout
-```
+- **GIVEN** the blog section is in view
+- **THEN** 3 blog article cards are shown in a 3-column grid
+
+#### Scenario: Blog cards have image, title, excerpt, and metadata
+
+- **GIVEN** the blog section loads
+- **THEN** each card has a background image, a title link, an excerpt paragraph
+- **AND** metadata showing author name, date, and comment count
+
+#### Scenario: Blog section is responsive
+
+- **GIVEN** the viewport is < 768px wide
+- **THEN** the blog cards stack vertically in a 1-column layout
 
 ### Feature: Instagram Feed
 
-```gherkin
-Scenario: Instagram section displays
-  Given the page loads
-  Then an Instagram section with a dark background is visible
+#### Scenario: Instagram section displays
 
-Scenario: Instagram shows heading with icon
-  Given the instagram section is visible
-  Then an Instagram icon and "Instagram" heading are displayed centered
+- **GIVEN** the page loads
+- **THEN** an Instagram section with a dark background is visible
 
-Scenario: Instagram feed shows 8 images
-  Given the instagram section loads
-  Then 8 square image thumbnails are displayed in a horizontal row
+#### Scenario: Instagram shows heading with icon
 
-Scenario: Instagram section is full width
-  Given the instagram section loads
-  Then it spans the full viewport width
-```
+- **GIVEN** the instagram section is visible
+- **THEN** an Instagram icon and "Instagram" heading are displayed centered
+
+#### Scenario: Instagram feed shows 8 images
+
+- **GIVEN** the instagram section loads
+- **THEN** 8 square image thumbnails are displayed in a horizontal row
+
+#### Scenario: Instagram section is full width
+
+- **GIVEN** the instagram section loads
+- **THEN** it spans the full viewport width
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has four columns
-  Given the page loads
-  Then the footer displays in 4 columns: About, Information, Recent Blog, Contact Info
+#### Scenario: Footer has four columns
 
-Scenario: Footer about column
-  Given the footer is visible
-  Then an "About ImaStudio" heading is shown with a description paragraph
-  And social media icons (Twitter, Facebook, LinkedIn, Dribbble) are displayed
+- **GIVEN** the page loads
+- **THEN** the footer displays in 4 columns: About, Information, Recent Blog, Contact Info
 
-Scenario: Footer information column
-  Given the footer is visible
-  Then navigation links include: Home, Gallery, About, Blog, Contact, Privacy
+#### Scenario: Footer about column
 
-Scenario: Footer recent blog column
-  Given the footer is visible
-  Then 3 recent blog entries are shown with thumbnail, title, and date
+- **GIVEN** the footer is visible
+- **THEN** an "About ImaStudio" heading is shown with a description paragraph
+- **AND** social media icons (Twitter, Facebook, LinkedIn, Dribbble) are displayed
 
-Scenario: Footer contact info column
-  Given the footer is visible
-  Then contact details include: address, phone, email, and website link
+#### Scenario: Footer information column
 
-Scenario: Footer copyright bar
-  Given the footer is visible
-  Then a dark copy bar is shown at the bottom
-  And it contains a copyright notice with "Component Dock" link
+- **GIVEN** the footer is visible
+- **THEN** navigation links include: Home, Gallery, About, Blog, Contact, Privacy
 
-Scenario: Footer uses white background
-  Given the footer renders
-  Then the main footer area has a white background
-  And the copy bar has a dark background (#252525)
-```
+#### Scenario: Footer recent blog column
+
+- **GIVEN** the footer is visible
+- **THEN** 3 recent blog entries are shown with thumbnail, title, and date
+
+#### Scenario: Footer contact info column
+
+- **GIVEN** the footer is visible
+- **THEN** contact details include: address, phone, email, and website link
+
+#### Scenario: Footer copyright bar
+
+- **GIVEN** the footer is visible
+- **THEN** a dark copy bar is shown at the bottom
+- **AND** it contains a copyright notice with "Component Dock" link
+
+#### Scenario: Footer uses white background
+
+- **GIVEN** the footer renders
+- **THEN** the main footer area has a white background
+- **AND** the copy bar has a dark background (#252525)
 
 ### Feature: Responsive Behavior
 
-```gherkin
-Scenario: Mobile layout
-  Given the viewport is < 768px wide
-  Then all sections reduce padding
-  And the hero headline wraps appropriately
-  And the gallery and blog stack to 1 column
-  And the footer columns stack vertically
+#### Scenario: Mobile layout
 
-Scenario: Tablet layout
-  Given the viewport is 768px–991px wide
-  Then the gallery shows 2 columns
-  And the blog shows 2 columns
-  And the footer shows 2 columns
+- **GIVEN** the viewport is < 768px wide
+- **THEN** all sections reduce padding
+- **AND** the hero headline wraps appropriately
+- **AND** the gallery and blog stack to 1 column
+- **AND** the footer columns stack vertically
 
-Scenario: Desktop layout
-  Given the viewport is >= 992px wide
-  Then the gallery shows 4 columns
-  And the blog shows 3 columns
-  And the footer shows 4 columns
-  And the about section shows split layout (image + text)
-```
+#### Scenario: Tablet layout
+
+- **GIVEN** the viewport is 768px–991px wide
+- **THEN** the gallery shows 2 columns
+- **AND** the blog shows 2 columns
+- **AND** the footer shows 2 columns
+
+#### Scenario: Desktop layout
+
+- **GIVEN** the viewport is >= 992px wide
+- **THEN** the gallery shows 4 columns
+- **AND** the blog shows 3 columns
+- **AND** the footer shows 4 columns
+- **AND** the about section shows split layout (image + text)
 
 ---
 

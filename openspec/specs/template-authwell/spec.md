@@ -58,75 +58,86 @@ Extracted from the preview stylesheet (`css/style.css`):
   background (#f8fafb). No shadows or cards — content sits directly on
   the background.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: AuthWell template behaviour
+
 Feature: AuthWell login page
 
-  Scenario: Page renders with correct layout
-    Given the user opens the AuthWell login page
-    Then a two-column layout is displayed
-    And the left column shows an illustration
-    And the right column shows the sign-in form
+#### Scenario: Page renders with correct layout
 
-  Scenario: Sign-in form heading
-    Given the user views the sign-in form
-    Then the heading "Sign In" is visible
-    And a subtitle paragraph is displayed below the heading
+- **GIVEN** the user opens the AuthWell login page
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows an illustration
+- **AND** the right column shows the sign-in form
 
-  Scenario: Username field
-    Given the user views the sign-in form
-    Then a "Username" text input field is present
-    And the field has a floating label "Username"
-    And the field background is #edf2f5
+#### Scenario: Sign-in form heading
 
-  Scenario: Password field
-    Given the user views the sign-in form
-    Then a "Password" input field is present
-    And the field has a floating label "Password"
-    And the field type is password
+- **GIVEN** the user views the sign-in form
+- **THEN** the heading "Sign In" is visible
+- **AND** a subtitle paragraph is displayed below the heading
 
-  Scenario: Remember me checkbox
-    Given the user views the sign-in form
-    Then a "Remember me" checkbox is displayed
-    And the checkbox is checked by default
-    When the user unchecks the checkbox
-    Then the checkbox becomes unchecked
+#### Scenario: Username field
 
-  Scenario: Forgot Password link
-    Given the user views the sign-in form
-    Then a "Forgot Password" link is visible
-    And the link is aligned to the right of the checkbox row
+- **GIVEN** the user views the sign-in form
+- **THEN** a "Username" text input field is present
+- **AND** the field has a floating label "Username"
+- **AND** the field background is #edf2f5
 
-  Scenario: Log In button
-    Given the user views the sign-in form
-    Then a "Log In" button is displayed
-    And the button is full-width
-    And the button background color is #6c63ff
-    And the button text color is white
+#### Scenario: Password field
 
-  Scenario: Social login divider
-    Given the user views the sign-in form
-    Then a divider text "--- or login with ---" is displayed
+- **GIVEN** the user views the sign-in form
+- **THEN** a "Password" input field is present
+- **AND** the field has a floating label "Password"
+- **AND** the field type is password
 
-  Scenario: Social login buttons
-    Given the user views the sign-in form
-    Then three social login buttons are displayed
-    And the Facebook button has background #3b5998
-    And the Twitter button has background #1da1f2
-    And the Google button has background #ea4335
-    And each social button is circular (50px diameter)
+#### Scenario: Remember me checkbox
 
-  Scenario: Responsive behavior
-    Given the user views the page on a mobile device
-    Then the two columns stack vertically
-    And the illustration appears above the form
+- **GIVEN** the user views the sign-in form
+- **THEN** a "Remember me" checkbox is displayed
+- **AND** the checkbox is checked by default
+- **WHEN** the user unchecks the checkbox
+- **THEN** the checkbox becomes unchecked
 
-  Scenario: Footer link
-    Given the user scrolls to the bottom
-    Then a "Component Dock" link is visible in the footer
-    And the link points to https://www.componentdock.com/
-```
+#### Scenario: Forgot Password link
+
+- **GIVEN** the user views the sign-in form
+- **THEN** a "Forgot Password" link is visible
+- **AND** the link is aligned to the right of the checkbox row
+
+#### Scenario: Log In button
+
+- **GIVEN** the user views the sign-in form
+- **THEN** a "Log In" button is displayed
+- **AND** the button is full-width
+- **AND** the button background color is #6c63ff
+- **AND** the button text color is white
+
+#### Scenario: Social login divider
+
+- **GIVEN** the user views the sign-in form
+- **THEN** a divider text "--- or login with ---" is displayed
+
+#### Scenario: Social login buttons
+
+- **GIVEN** the user views the sign-in form
+- **THEN** three social login buttons are displayed
+- **AND** the Facebook button has background #3b5998
+- **AND** the Twitter button has background #1da1f2
+- **AND** the Google button has background #ea4335
+- **AND** each social button is circular (50px diameter)
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the two columns stack vertically
+- **AND** the illustration appears above the form
+
+#### Scenario: Footer link
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a "Component Dock" link is visible in the footer
+- **AND** the link points to https://www.componentdock.com/
 
 ## Verification Checklist
 

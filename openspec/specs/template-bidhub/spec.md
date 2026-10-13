@@ -38,84 +38,86 @@ testimonials, and CTA. Built with a warm orange accent palette and Muli font.
 | card-shadow        | `0 2px 10px rgba(0,0,0,0.08)`               | Subtle card shadow                                    |
 | overlay-opacity    | `0.9`                                        | Testimonial section orange overlay                    |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar renders with logo and navigation links
+### Feature: BidHub template behaviour
 
-- Given the page loads
-- Then a sticky navbar is visible at the top
-- And the navbar contains a logo image on the left
-- And the navbar contains navigation links: "Home", "Buy", "Sell", "Services", "Blog", "About", "Contact"
-- And a "Sign In / Register" button is visible on the right
-- And the navbar has a white background
+#### Scenario: Navbar renders with logo and navigation links
 
-### Scenario: Hero section displays with background image
+- **GIVEN** the page loads
+- **THEN** a sticky navbar is visible at the top
+- **AND** the navbar contains a logo image on the left
+- **AND** the navbar contains navigation links: "Home", "Buy", "Sell", "Services", "Blog", "About", "Contact"
+- **AND** a "Sign In / Register" button is visible on the right
+- **AND** the navbar has a white background
 
-- Given the page loads
-- Then a hero section is visible with a full-width background image
-- And the hero heading reads "The Best Place to Buy and Sell"
-- And the heading is centered and white on the dark background
-- And a "Get Started" call-to-action button is visible below the heading
+#### Scenario: Hero section displays with background image
 
-### Scenario: Current Auctions grid displays items
+- **GIVEN** the page loads
+- **THEN** a hero section is visible with a full-width background image
+- **AND** the hero heading reads "The Best Place to Buy and Sell"
+- **AND** the heading is centered and white on the dark background
+- **AND** a "Get Started" call-to-action button is visible below the heading
 
-- Given the page loads
-- Then a section titled "Current Auctions" is visible
-- And 8 auction item cards are displayed in a responsive grid
-- And each card shows a product image, title, current bid price, and time remaining
-- And cards are arranged in 4 columns on desktop, 2 on tablet, 1 on mobile
-- And each card has a white background with a subtle shadow
+#### Scenario: Current Auctions grid displays items
 
-### Scenario: How It Works section displays 4 steps
+- **GIVEN** the page loads
+- **THEN** a section titled "Current Auctions" is visible
+- **AND** 8 auction item cards are displayed in a responsive grid
+- **AND** each card shows a product image, title, current bid price, and time remaining
+- **AND** cards are arranged in 4 columns on desktop, 2 on tablet, 1 on mobile
+- **AND** each card has a white background with a subtle shadow
 
-- Given the page loads
-- Then a section titled "How It Works" is visible
-- And 4 step items are displayed: "Register", "Buy or Bid", "Submit a bid", "Win"
-- And each step has an icon and a brief description
-- And the steps are arranged in a horizontal row
+#### Scenario: How It Works section displays 4 steps
 
-### Scenario: About Us section displays features
+- **GIVEN** the page loads
+- **THEN** a section titled "How It Works" is visible
+- **AND** 4 step items are displayed: "Register", "Buy or Bid", "Submit a bid", "Win"
+- **AND** each step has an icon and a brief description
+- **AND** the steps are arranged in a horizontal row
 
-- Given the page loads
-- Then a section titled "About Us" is visible
-- And 3 feature items are displayed: "Fast Support", "Happy Customers", "24/7 Support"
-- And each feature has an orange (#f37121) icon and a description
-- And the section has a light gray (#f4f5f9) background
+#### Scenario: About Us section displays features
 
-### Scenario: Testimonials section with orange overlay
+- **GIVEN** the page loads
+- **THEN** a section titled "About Us" is visible
+- **AND** 3 feature items are displayed: "Fast Support", "Happy Customers", "24/7 Support"
+- **AND** each feature has an orange (#f37121) icon and a description
+- **AND** the section has a light gray (#f4f5f9) background
 
-- Given the page loads
-- Then a section titled "Happy Clients" is visible
-- And the section has an orange (#f37121) overlay at 90% opacity over a background image
-- And testimonial cards are displayed in a carousel/grid
-- And each card shows a circular avatar, client name, and quote text
-- And client names are white on the orange background
-- And quote text is semi-transparent white
+#### Scenario: Testimonials section with orange overlay
 
-### Scenario: CTA section prompts user action
+- **GIVEN** the page loads
+- **THEN** a section titled "Happy Clients" is visible
+- **AND** the section has an orange (#f37121) overlay at 90% opacity over a background image
+- **AND** testimonial cards are displayed in a carousel/grid
+- **AND** each card shows a circular avatar, client name, and quote text
+- **AND** client names are white on the orange background
+- **AND** quote text is semi-transparent white
 
-- Given the page loads
-- Then a call-to-action section is visible
-- And the heading reads "Create an account and start Buy, Bid or Sell Now!"
-- And the heading is centered and black
-- And a prominent orange button is visible
+#### Scenario: CTA section prompts user action
 
-### Scenario: Footer renders with columns
+- **GIVEN** the page loads
+- **THEN** a call-to-action section is visible
+- **AND** the heading reads "Create an account and start Buy, Bid or Sell Now!"
+- **AND** the heading is centered and black
+- **AND** a prominent orange button is visible
 
-- Given the page loads
-- Then a dark footer (#25262a) is visible
-- And the footer contains 3 columns: "Solutions", "Services", "Contact"
-- And each column has a list of link items
-- And a copyright notice is visible at the bottom
+#### Scenario: Footer renders with columns
 
-### Scenario: Responsive layout adapts to mobile
+- **GIVEN** the page loads
+- **THEN** a dark footer (#25262a) is visible
+- **AND** the footer contains 3 columns: "Solutions", "Services", "Contact"
+- **AND** each column has a list of link items
+- **AND** a copyright notice is visible at the bottom
 
-- Given the viewport is 375px wide
-- Then the navbar collapses to a hamburger menu
-- And the hero heading text scales down
-- And auction cards stack in a single column
-- And how-it-works steps stack vertically
-- And the footer columns stack vertically
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero heading text scales down
+- **AND** auction cards stack in a single column
+- **AND** how-it-works steps stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

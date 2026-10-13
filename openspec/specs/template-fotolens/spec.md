@@ -83,60 +83,68 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
   - Right: "Follow Me" heading + social icon links (Facebook, Twitter, Instagram, LinkedIn)
 - Copyright with "Component Dock" link (replacing Colorlib attribution)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Fotolens template behaviour
+
 Feature: Fotolens — Photography Portfolio Template
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo "fotolens" with red dot is visible
-    And navigation links "Home", "Photography", "Services", "About", "Contact" are visible
-    And social icons (Facebook, Twitter, Instagram, YouTube) are visible on the right
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero displays with parallax
-    Given the hero section is in the viewport
-    Then a full-width parallax background image with dark overlay is visible
-    And the heading about a professional photographer is displayed
+- **GIVEN** the user is on any viewport
+- **THEN** the logo "fotolens" with red dot is visible
+- **AND** navigation links "Home", "Photography", "Services", "About", "Contact" are visible
+- **AND** social icons (Facebook, Twitter, Instagram, YouTube) are visible on the right
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: Specialties section shows 4 items
-    Given the specialties section is scrolled into view
-    Then the heading "My Specialties" with underline decoration is visible
-    And 4 specialty items are displayed in a 2-column grid
-    And each item has a background image and text (heading + description)
+#### Scenario: Hero displays with parallax
 
-  Scenario: Testimonials carousel works
-    Given the testimonials section is scrolled into view
-    Then a parallax background image is visible
-    And a carousel with at least one testimonial is shown
-    And each testimonial has a photo, quote, and name
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width parallax background image with dark overlay is visible
+- **AND** the heading about a professional photographer is displayed
 
-  Scenario: Photography gallery shows 6 items
-    Given the photography gallery section is scrolled into view
-    Then the heading "My Photography" is visible
-    And 6 project cards are displayed in a 3-column grid
-    And each card has an image, title, and category tag
-    And hovering a card reveals a gradient overlay
+#### Scenario: Specialties section shows 4 items
 
-  Scenario: CTA section renders
-    Given the CTA section is scrolled into view
-    Then the heading "Need a photographer?" is visible
-    And a "Contact Me" red button is visible
+- **GIVEN** the specialties section is scrolled into view
+- **THEN** the heading "My Specialties" with underline decoration is visible
+- **AND** 4 specialty items are displayed in a 2-column grid
+- **AND** each item has a background image and text (heading + description)
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then "About Fotolens" section with description is visible
-    And "Navigations" with link lists is visible
-    And "Follow Me" social icons are visible
-    And a link to "https://www.componentdock.com/" is present
+#### Scenario: Testimonials carousel works
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And specialty/gallery columns stack vertically
-    And the CTA section stacks vertically
-```
+- **GIVEN** the testimonials section is scrolled into view
+- **THEN** a parallax background image is visible
+- **AND** a carousel with at least one testimonial is shown
+- **AND** each testimonial has a photo, quote, and name
+
+#### Scenario: Photography gallery shows 6 items
+
+- **GIVEN** the photography gallery section is scrolled into view
+- **THEN** the heading "My Photography" is visible
+- **AND** 6 project cards are displayed in a 3-column grid
+- **AND** each card has an image, title, and category tag
+- **AND** hovering a card reveals a gradient overlay
+
+#### Scenario: CTA section renders
+
+- **GIVEN** the CTA section is scrolled into view
+- **THEN** the heading "Need a photographer?" is visible
+- **AND** a "Contact Me" red button is visible
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** "About Fotolens" section with description is visible
+- **AND** "Navigations" with link lists is visible
+- **AND** "Follow Me" social icons are visible
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** specialty/gallery columns stack vertically
+- **AND** the CTA section stacks vertically
 
 ## Verification Checklist
 

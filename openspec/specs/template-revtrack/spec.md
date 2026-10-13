@@ -49,115 +49,131 @@
 
 9. **Footer** — Dark/white footer. Four columns: About Us (with social links: Facebook, Instagram, Twitter, LinkedIn), Quick Links, Resources, Support, Company. Copyright line at bottom.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-  Scenario: Navbar displays brand and navigation
-    Given the user loads the page
-    Then the navbar shows "CarRental" brand text on the left
-    And navigation links are visible: Home, Listing, Testimonials, Blog, About, Contact
-    And the active link is highlighted in blue (#0779e4)
+#### Scenario: Navbar displays brand and navigation
 
-  Scenario: Navbar is responsive
-    Given the user is on a mobile viewport
-    Then the navigation links collapse into a hamburger menu
-    And clicking the hamburger reveals the navigation links
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows "CarRental" brand text on the left
+- **AND** navigation links are visible: Home, Listing, Testimonials, Blog, About, Contact
+- **AND** the active link is highlighted in blue (#0779e4)
+
+#### Scenario: Navbar is responsive
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** the navigation links collapse into a hamburger menu
+- **AND** clicking the hamburger reveals the navigation links
 
 ### Feature: Hero
 
-  Scenario: Hero section displays with background image
-    Given the user loads the page
-    Then the hero section fills the viewport height
-    And a background image is displayed
-    And the headline "Rent a car is within your finger tips." is visible
-    And "Rent a car" is rendered in bold/900 weight
+#### Scenario: Hero section displays with background image
 
-  Scenario: Search form is functional
-    Given the user views the hero section
-    Then a search form is visible with Select Type, Pick up, Drop off fields
-    And a "Search Now" button is displayed
+- **GIVEN** the user loads the page
+- **THEN** the hero section fills the viewport height
+- **AND** a background image is displayed
+- **AND** the headline "Rent a car is within your finger tips." is visible
+- **AND** "Rent a car" is rendered in bold/900 weight
 
-  Scenario: Select Type dropdown has options
-    Given the user clicks the Select Type dropdown
-    Then options include car types (Ferrari, Toyota, Ford, Lamborghini)
+#### Scenario: Search form is functional
+
+- **GIVEN** the user views the hero section
+- **THEN** a search form is visible with Select Type, Pick up, Drop off fields
+- **AND** a "Search Now" button is displayed
+
+#### Scenario: Select Type dropdown has options
+
+- **GIVEN** the user clicks the Select Type dropdown
+- **THEN** options include car types (Ferrari, Toyota, Ford, Lamborghini)
 
 ### Feature: How It Works
 
-  Scenario: Three steps are displayed
-    Given the user scrolls to the How It Works section
-    Then three step cards are visible in a row
-    And step 1 is "Select a car" with number 01
-    And step 2 is "Fill up form" with number 02
-    And step 3 is "Payment" with number 03
+#### Scenario: Three steps are displayed
 
-  Scenario: Step cards have visual design
-    Given the step cards are rendered
-    Then each card has a large translucent number background
-    And each card has a white background with box shadow
-    And the large number is colored blue (#0779e4) at 100px
+- **GIVEN** the user scrolls to the How It Works section
+- **THEN** three step cards are visible in a row
+- **AND** step 1 is "Select a car" with number 01
+- **AND** step 2 is "Fill up form" with number 02
+- **AND** step 3 is "Payment" with number 03
 
-  Scenario: Video link is present
-    Given the user views the How It Works section
-    Then a "Video how it works" link with play icon is centered below the steps
+#### Scenario: Step cards have visual design
+
+- **GIVEN** the step cards are rendered
+- **THEN** each card has a large translucent number background
+- **AND** each card has a white background with box shadow
+- **AND** the large number is colored blue (#0779e4) at 100px
+
+#### Scenario: Video link is present
+
+- **GIVEN** the user views the How It Works section
+- **THEN** a "Video how it works" link with play icon is centered below the steps
 
 ### Feature: Promo Section
 
-  Scenario: Promo section displays two columns
-    Given the user scrolls to the promo section
-    Then an image is shown on one side (right on desktop)
-    And a heading "You can easily avail our promo for renting a car." is shown on the other side
-    And a "Meet them now" button is displayed
+#### Scenario: Promo section displays two columns
+
+- **GIVEN** the user scrolls to the promo section
+- **THEN** an image is shown on one side (right on desktop)
+- **AND** a heading "You can easily avail our promo for renting a car." is shown on the other side
+- **AND** a "Meet them now" button is displayed
 
 ### Feature: Car Listings
 
-  Scenario: Six car listings are displayed
-    Given the user scrolls to the Car Listings section
-    Then six car cards are visible in a 3-column grid
-    And each card shows a car image, name, price per day, and features
+#### Scenario: Six car listings are displayed
 
-  Scenario: Each listing card has required content
-    Given a car listing card is rendered
-    Then it shows the car name (e.g. "Mitsubishi Pajero")
-    And it shows a price (e.g. "$389.00/day") in blue
-    And it shows features: Luggage, Doors, Passenger counts
-    And it has a description paragraph
-    And it has a "Rent Now" button
+- **GIVEN** the user scrolls to the Car Listings section
+- **THEN** six car cards are visible in a 3-column grid
+- **AND** each card shows a car image, name, price per day, and features
+
+#### Scenario: Each listing card has required content
+
+- **GIVEN** a car listing card is rendered
+- **THEN** it shows the car name (e.g. "Mitsubishi Pajero")
+- **AND** it shows a price (e.g. "$389.00/day") in blue
+- **AND** it shows features: Luggage, Doors, Passenger counts
+- **AND** it has a description paragraph
+- **AND** it has a "Rent Now" button
 
 ### Feature: Features Section
 
-  Scenario: Six feature items are displayed
-    Given the user scrolls to the Features section
-    Then six feature cards are visible in a 3-column grid
-    And each has an icon, title, and description
+#### Scenario: Six feature items are displayed
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** six feature cards are visible in a 3-column grid
+- **AND** each has an icon, title, and description
 
 ### Feature: Testimonials
 
-  Scenario: Three testimonials are displayed
-    Given the user scrolls to the Testimonials section
-    Then three testimonial cards are visible
-    And each shows a blockquote with a quote
-    And each shows author name and role with an avatar image
+#### Scenario: Three testimonials are displayed
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** three testimonial cards are visible
+- **AND** each shows a blockquote with a quote
+- **AND** each shows author name and role with an avatar image
 
 ### Feature: CTA Banner
 
-  Scenario: CTA banner encourages action
-    Given the user scrolls to the CTA section
-    Then the section has a blue background
-    And heading text "What are you waiting for?" is displayed
-    And a "Rent a car now" button is shown on the right
+#### Scenario: CTA banner encourages action
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the section has a blue background
+- **AND** heading text "What are you waiting for?" is displayed
+- **AND** a "Rent a car now" button is shown on the right
 
 ### Feature: Footer
 
-  Scenario: Footer has four-column layout
-    Given the user scrolls to the footer
-    Then an "About Us" column is shown with description and social icons
-    And three link columns are shown: Quick Links, Resources, Support, Company
-    And a copyright line is displayed at the bottom
+#### Scenario: Footer has four-column layout
 
-  Scenario: Footer links are present
-    Given the footer is rendered
-    Then Quick Links include: About Us, Testimonials, Terms of Service, Privacy, Contact Us
+- **GIVEN** the user scrolls to the footer
+- **THEN** an "About Us" column is shown with description and social icons
+- **AND** three link columns are shown: Quick Links, Resources, Support, Company
+- **AND** a copyright line is displayed at the bottom
+
+#### Scenario: Footer links are present
+
+- **GIVEN** the footer is rendered
+- **THEN** Quick Links include: About Us, Testimonials, Terms of Service, Privacy, Contact Us
 
 ## Verification Checklist
 

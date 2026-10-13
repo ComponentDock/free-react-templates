@@ -42,95 +42,120 @@ Extracted from the live preview stylesheet (`css/style.css`) and DOM:
 7. **CTA Banner** — Full-width call-to-action: "Create an account and start Buy, Bid or Sell Now!"
 8. **Footer** — Three columns (Solutions, Services, Contact), dark background
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-- **Scenario: Navbar renders all navigation links**
-  - Given the page loads
-  - Then the navbar displays links: Home, Buy, Sell, Services, Blog, About, Contact
-  - And a "Sign In / Register" button is visible
 
-- **Scenario: Services dropdown reveals sub-items**
-  - Given the page loads on desktop
-  - When the user hovers over "Services"
-  - Then a dropdown shows: Sell Items, Buy Items, Submit a Bid
+#### Scenario: Navbar renders all navigation links
 
-- **Scenario: Mobile hamburger menu**
-  - Given the page loads on a mobile viewport
-  - Then a hamburger menu icon is visible
-  - When the user taps the hamburger icon
-  - Then the mobile navigation menu slides open
+- **GIVEN** the page loads
+- **THEN** the navbar displays links: Home, Buy, Sell, Services, Blog, About, Contact
+- **AND** a "Sign In / Register" button is visible
+
+#### Scenario: Services dropdown reveals sub-items
+
+- **GIVEN** the page loads on desktop
+- **WHEN** the user hovers over "Services"
+- **THEN** a dropdown shows: Sell Items, Buy Items, Submit a Bid
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the page loads on a mobile viewport
+- **THEN** a hamburger menu icon is visible
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile navigation menu slides open
 
 ### Hero / Intro
-- **Scenario: Hero displays headline and CTA**
-  - Given the page loads
-  - Then the hero section shows "The Best Place to Buy and Sell" as the main heading
-  - And a description paragraph is visible below the heading
-  - And a "Register" button is visible and clickable
 
-- **Scenario: Hero is full-viewport height**
-  - Given the page loads
-  - Then the hero section occupies the full viewport height
+#### Scenario: Hero displays headline and CTA
+
+- **GIVEN** the page loads
+- **THEN** the hero section shows "The Best Place to Buy and Sell" as the main heading
+- **AND** a description paragraph is visible below the heading
+- **AND** a "Register" button is visible and clickable
+
+#### Scenario: Hero is full-viewport height
+
+- **GIVEN** the page loads
+- **THEN** the hero section occupies the full viewport height
 
 ### Current Auctions
-- **Scenario: Auction grid displays items**
-  - Given the page loads
-  - Then the "Current Auctions" heading is visible
-  - And at least 8 auction item cards are displayed in a 4-column grid
 
-- **Scenario: Each auction card shows key details**
-  - Given an auction item card
-  - Then it displays an image, price, item title, category label, bid count, and "Submit a Bid" button
+#### Scenario: Auction grid displays items
 
-- **Scenario: Submit a Bid button is clickable**
-  - Given an auction item card
-  - When the user clicks "Submit a Bid"
-  - Then the button responds to the click (no broken interaction)
+- **GIVEN** the page loads
+- **THEN** the "Current Auctions" heading is visible
+- **AND** at least 8 auction item cards are displayed in a 4-column grid
+
+#### Scenario: Each auction card shows key details
+
+- **GIVEN** an auction item card
+- **THEN** it displays an image, price, item title, category label, bid count, and "Submit a Bid" button
+
+#### Scenario: Submit a Bid button is clickable
+
+- **GIVEN** an auction item card
+- **WHEN** the user clicks "Submit a Bid"
+- **THEN** the button responds to the click (no broken interaction)
 
 ### How It Works
-- **Scenario: Steps section renders correctly**
-  - Given the page loads
-  - Then the "How It Works" heading is visible
-  - And 4 step cards are displayed: Register, Buy or Bid, Submit a bid, Win
-  - And each step card has a title and description
+
+#### Scenario: Steps section renders correctly
+
+- **GIVEN** the page loads
+- **THEN** the "How It Works" heading is visible
+- **AND** 4 step cards are displayed: Register, Buy or Bid, Submit a bid, Win
+- **AND** each step card has a title and description
 
 ### About Us
-- **Scenario: About section renders features**
-  - Given the page loads
-  - Then the "About Us" heading is visible
-  - And 3 feature cards are displayed: Fast Support, Happy Customers, 24/7 Support
-  - And each card has a title and description
+
+#### Scenario: About section renders features
+
+- **GIVEN** the page loads
+- **THEN** the "About Us" heading is visible
+- **AND** 3 feature cards are displayed: Fast Support, Happy Customers, 24/7 Support
+- **AND** each card has a title and description
 
 ### Testimonials
-- **Scenario: Testimonials carousel renders**
-  - Given the page loads
-  - Then the "Testimonials" heading is visible
-  - And testimonial cards with avatar, name, and quote are displayed
+
+#### Scenario: Testimonials carousel renders
+
+- **GIVEN** the page loads
+- **THEN** the "Testimonials" heading is visible
+- **AND** testimonial cards with avatar, name, and quote are displayed
 
 ### CTA Banner
-- **Scenario: CTA banner is visible**
-  - Given the page loads
-  - Then a call-to-action section displays "Create an account and start Buy, Bid or Sell Now!"
+
+#### Scenario: CTA banner is visible
+
+- **GIVEN** the page loads
+- **THEN** a call-to-action section displays "Create an account and start Buy, Bid or Sell Now!"
 
 ### Footer
-- **Scenario: Footer renders column layout**
-  - Given the page loads
-  - Then the footer displays three columns: Solutions, Services, Contact
-  - And the footer links to https://www.componentdock.com/
+
+#### Scenario: Footer renders column layout
+
+- **GIVEN** the page loads
+- **THEN** the footer displays three columns: Solutions, Services, Contact
+- **AND** the footer links to https://www.componentdock.com/
 
 ### Design Fidelity
-- **Scenario: Brand color matches reference**
-  - Given the page loads
-  - Then the primary brand color is orange (#f37121) on buttons and accent borders
 
-- **Scenario: Typography matches reference**
-  - Given the page loads
-  - Then the font family is Muli (or a suitable sans-serif fallback)
-  - And the hero heading uses large bold white text
+#### Scenario: Brand color matches reference
 
-- **Scenario: Sharp button corners**
-  - Given the page loads
-  - Then all primary buttons have no border-radius (sharp corners)
+- **GIVEN** the page loads
+- **THEN** the primary brand color is orange (#f37121) on buttons and accent borders
+
+#### Scenario: Typography matches reference
+
+- **GIVEN** the page loads
+- **THEN** the font family is Muli (or a suitable sans-serif fallback)
+- **AND** the hero heading uses large bold white text
+
+#### Scenario: Sharp button corners
+
+- **GIVEN** the page loads
+- **THEN** all primary buttons have no border-radius (sharp corners)
 
 ## Verification Checklist
 

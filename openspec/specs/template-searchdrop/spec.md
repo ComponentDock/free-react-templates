@@ -37,66 +37,75 @@ The template is a **dropdown search form bar** — a minimal, single-purpose sni
 3. **Body area**: White background with centered placeholder text: "Please click the search icon toggle button top right."
 4. **Overall aesthetic**: Clean, minimal, utility-focused. No hero image, no sections beyond the navbar and search bar. The design is essentially a reusable search component demo.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Searchdrop — Dropdown Search Form Bar
 
 #### Scenario: Navbar renders with brand and navigation
-- **Given** the user loads the page
-- **Then** a horizontal navbar is visible at the top
-- **And** the brand name "Searchdrop" (or similar) is displayed on the left in blue
-- **And** navigation links "Home", "About", "Contact" are displayed on the right
-- **And** a search icon (magnifying glass) is visible in the navbar right area
+
+- **GIVEN** the user loads the page
+- **THEN** a horizontal navbar is visible at the top
+- **AND** the brand name "Searchdrop" (or similar) is displayed on the left in blue
+- **AND** navigation links "Home", "About", "Contact" are displayed on the right
+- **AND** a search icon (magnifying glass) is visible in the navbar right area
 
 #### Scenario: Search bar toggles open on search icon click
-- **Given** the page has loaded
-- **When** the user clicks the search icon in the navbar
-- **Then** a search bar strip appears below the navbar
-- **And** the search bar has a light gray background
-- **And** the search bar contains a text input with placeholder "Search..."
-- **And** the search bar contains a blue rounded "Search" button
-- **And** a close (X) icon is visible on the right side of the search bar
+
+- **GIVEN** the page has loaded
+- **WHEN** the user clicks the search icon in the navbar
+- **THEN** a search bar strip appears below the navbar
+- **AND** the search bar has a light gray background
+- **AND** the search bar contains a text input with placeholder "Search..."
+- **AND** the search bar contains a blue rounded "Search" button
+- **AND** a close (X) icon is visible on the right side of the search bar
 
 #### Scenario: Search bar closes on close icon click
-- **Given** the search bar is open/visible
-- **When** the user clicks the close (X) icon
-- **Then** the search bar strip is hidden/collapsed
+
+- **GIVEN** the search bar is open/visible
+- **WHEN** the user clicks the close (X) icon
+- **THEN** the search bar strip is hidden/collapsed
 
 #### Scenario: Search bar closes on pressing Escape key
-- **Given** the search bar is open/visible
-- **When** the user presses the Escape key
-- **Then** the search bar strip is hidden/collapsed
+
+- **GIVEN** the search bar is open/visible
+- **WHEN** the user presses the Escape key
+- **THEN** the search bar strip is hidden/collapsed
 
 #### Scenario: Search bar closes when clicking outside
-- **Given** the search bar is open/visible
-- **When** the user clicks outside the search bar area
-- **Then** the search bar strip is hidden/collapsed
+
+- **GIVEN** the search bar is open/visible
+- **WHEN** the user clicks outside the search bar area
+- **THEN** the search bar strip is hidden/collapsed
 
 #### Scenario: Search form submits on button click
-- **Given** the search bar is open
-- **And** the user has typed text into the search input
-- **When** the user clicks the "Search" button
-- **Then** the search action is triggered (form submit or callback)
+
+- **GIVEN** the search bar is open
+- **AND** the user has typed text into the search input
+- **WHEN** the user clicks the "Search" button
+- **THEN** the search action is triggered (form submit or callback)
 
 #### Scenario: Search form submits on Enter key
-- **Given** the search bar is open
-- **And** the user has typed text into the search input
-- **When** the user presses Enter in the search input
-- **Then** the search action is triggered
+
+- **GIVEN** the search bar is open
+- **AND** the user has typed text into the search input
+- **WHEN** the user presses Enter in the search input
+- **THEN** the search action is triggered
 
 #### Scenario: Mobile responsive layout
-- **Given** the viewport width is less than 768px
-- **When** the page loads
-- **Then** the navbar stacks or collapses appropriately
-- **And** the search bar adapts to the smaller width
-- **And** the search input and button remain usable on mobile
+
+- **GIVEN** the viewport width is less than 768px
+- **WHEN** the page loads
+- **THEN** the navbar stacks or collapses appropriately
+- **AND** the search bar adapts to the smaller width
+- **AND** the search input and button remain usable on mobile
 
 #### Scenario: Accessibility
-- **Given** the page has loaded
-- **Then** the search input has an accessible label or placeholder
-- **And** the search icon button has an aria-label
-- **And** the close button has an aria-label
-- **And** focus is trapped within the search bar when open
+
+- **GIVEN** the page has loaded
+- **THEN** the search input has an accessible label or placeholder
+- **AND** the search icon button has an aria-label
+- **AND** the close button has an aria-label
+- **AND** focus is trapped within the search bar when open
 
 ## Verification checklist
 

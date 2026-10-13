@@ -44,93 +44,105 @@ Extracted from the live preview CSS (`css/style.css`):
 10. **Partners** — 5 partner logos in a horizontal row
 11. **Footer** — dark background, 4-column: brand + social links, Useful Links, Quick Links, Have a Questions? (address, phone, email)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: ClearCut Template
 
 #### Scenario: Navbar renders with correct brand and navigation links
-- Given the page loads
-- When the navbar is visible
-- Then it shows the brand name "ClearCut"
-- And it displays navigation links: Home, About, Work, Pricing, Blog, Contact
-- And the navbar has a dark background
+
+- **GIVEN** the page loads
+- **WHEN** the navbar is visible
+- **THEN** it shows the brand name "ClearCut"
+- **AND** it displays navigation links: Home, About, Work, Pricing, Blog, Contact
+- **AND** the navbar has a dark background
 
 #### Scenario: Hero section displays split layout with text and visual
-- Given the page loads
-- When the hero section is visible
-- Then the left side shows "Welcome" subheading
-- And it shows "We Help to Build You the Product" as the main heading
-- And it shows "Business Solution" as a secondary heading
-- And it shows a "Get in touch" call-to-action button
-- And the right side shows a background image or video area
+
+- **GIVEN** the page loads
+- **WHEN** the hero section is visible
+- **THEN** the left side shows "Welcome" subheading
+- **AND** it shows "We Help to Build You the Product" as the main heading
+- **AND** it shows "Business Solution" as a secondary heading
+- **AND** it shows a "Get in touch" call-to-action button
+- **AND** the right side shows a background image or video area
 
 #### Scenario: About section displays service details in two columns
-- Given the page loads
-- When the about section is visible
-- Then it shows "What We Can Do for You" heading
-- And it lists 4 service items: Market Research, Financial Services, Online Marketing, 24/7 Support
+
+- **GIVEN** the page loads
+- **WHEN** the about section is visible
+- **THEN** it shows "What We Can Do for You" heading
+- **AND** it lists 4 service items: Market Research, Financial Services, Online Marketing, 24/7 Support
 - Each service item has an icon, title, and description
 
 #### Scenario: Services cards show 4 service offerings
-- Given the page loads
-- When the services cards section is visible
-- Then it displays 4 cards in a grid
-- And the cards show: Business Strategy, Data Analysis, Graphic Design, Creative
+
+- **GIVEN** the page loads
+- **WHEN** the services cards section is visible
+- **THEN** it displays 4 cards in a grid
+- **AND** the cards show: Business Strategy, Data Analysis, Graphic Design, Creative
 - Each card has an icon, heading, and description
 
 #### Scenario: Stats counter section displays animated numbers
-- Given the page loads
-- When the counter section is visible
-- Then it shows "Some Interesting Facts" heading
-- And it displays 4 counters: Done Works (2000), Happy Customers (300), Coffee (100), Work Hours (1000)
-- And the section has a parallax background image
+
+- **GIVEN** the page loads
+- **WHEN** the counter section is visible
+- **THEN** it shows "Some Interesting Facts" heading
+- **AND** it displays 4 counters: Done Works (2000), Happy Customers (300), Coffee (100), Work Hours (1000)
+- **AND** the section has a parallax background image
 
 #### Scenario: Projects gallery shows masonry grid of project cards
-- Given the page loads
-- When the projects section is visible
-- Then it shows "Recents Projects" heading
-- And it displays a masonry-style grid of project cards
+
+- **GIVEN** the page loads
+- **WHEN** the projects section is visible
+- **THEN** it shows "Recents Projects" heading
+- **AND** it displays a masonry-style grid of project cards
 - Each card has a background image, overlay, arrow icon, title, and category label
 
 #### Scenario: Testimonials carousel displays user testimonials
-- Given the page loads
-- When the testimonials section is visible
-- Then it shows a carousel of testimonial cards
+
+- **GIVEN** the page loads
+- **WHEN** the testimonials section is visible
+- **THEN** it shows a carousel of testimonial cards
 - Each card has a circular user avatar, quote text, name, and position
 
 #### Scenario: Blog section shows recent blog posts
-- Given the page loads
-- When the blog section is visible
-- Then it displays 3 blog post cards in a row
+
+- **GIVEN** the page loads
+- **WHEN** the blog section is visible
+- **THEN** it displays 3 blog post cards in a row
 - Each card has a thumbnail image, title, date, and excerpt
 
 #### Scenario: Pricing section shows 4 pricing tiers
-- Given the page loads
-- When the pricing section is visible
-- Then it shows "Our Best Pricing" heading
-- And it displays 4 pricing cards: Free ($0), Basic ($19.95), Standard ($29.95), Premium ($49.95)
+
+- **GIVEN** the page loads
+- **WHEN** the pricing section is visible
+- **THEN** it shows "Our Best Pricing" heading
+- **AND** it displays 4 pricing cards: Free ($0), Basic ($19.95), Standard ($29.95), Premium ($49.95)
 - Each card has a feature list and a "Get Started" button
 
 #### Scenario: Partner logos are displayed
-- Given the page loads
-- When the partner section is visible
-- Then it displays 5 partner logo images in a horizontal row
+
+- **GIVEN** the page loads
+- **WHEN** the partner section is visible
+- **THEN** it displays 5 partner logo images in a horizontal row
 
 #### Scenario: Footer renders with dark background and contact info
-- Given the page loads
-- When the footer is visible
-- Then it has a dark background
-- And it shows the brand name "ClearCut"
-- And it displays social media links
-- And it shows "Useful Links" and "Quick Links" columns
-- And it shows "Have a Questions?" with address, phone, and email
-- And it links to https://www.componentdock.com/
+
+- **GIVEN** the page loads
+- **WHEN** the footer is visible
+- **THEN** it has a dark background
+- **AND** it shows the brand name "ClearCut"
+- **AND** it displays social media links
+- **AND** it shows "Useful Links" and "Quick Links" columns
+- **AND** it shows "Have a Questions?" with address, phone, and email
+- **AND** it links to https://www.componentdock.com/
 
 #### Scenario: Footer links to Component Dock
-- Given the page loads
-- When the footer is visible
-- Then it contains a link to https://www.componentdock.com/
-- And the link text references "Component Dock"
+
+- **GIVEN** the page loads
+- **WHEN** the footer is visible
+- **THEN** it contains a link to https://www.componentdock.com/
+- **AND** the link text references "Component Dock"
 
 ## Verification Checklist
 

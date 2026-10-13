@@ -50,126 +50,138 @@ pill-shaped buttons (`border-radius: 25px`).
 9. **Testimonials** — "What our Reader's Say about us" heading, carousel of testimonial cards with avatar image, quote text, name "Mark Alviro Wiens", position "CEO at Google"
 10. **Footer** — 3 columns: About Us (brand blurb + copyright), Newsletter (email subscription form), Follow Us (social icons: Facebook, Twitter, etc.)
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```
-Feature: Navbar
-  Scenario: Renders navigation bar
-    Given the page loads
-    Then a navigation bar is visible at the top
-    And the brand name "PageLeaf" is displayed
-    And 5 navigation links are present: Home, About, Fact, Price, Course
-    And a "Buy Now for $9.99" gradient pill button is displayed
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is mobile width
-    Then a hamburger toggle button is visible
-    And clicking it expands/collapses the navigation links
-```
+Feature: Navbar
+
+#### Scenario: Renders navigation bar
+
+- **GIVEN** the page loads
+- **THEN** a navigation bar is visible at the top
+- **AND** the brand name "PageLeaf" is displayed
+- **AND** 5 navigation links are present: Home, About, Fact, Price, Course
+- **AND** a "Buy Now for $9.99" gradient pill button is displayed
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is mobile width
+- **THEN** a hamburger toggle button is visible
+- **AND** clicking it expands/collapses the navigation links
 
 ### Hero Banner
-```
+
 Feature: Hero Banner
-  Scenario: Renders hero banner
-    Given the page loads
-    Then a full-width gradient banner (#f45622 to #f53e54) is displayed
-    And "Author: Travor James" subheading is shown
-    And a "Buy Now for $9.99" CTA pill button is visible
-    And the banner spans the full viewport width
-```
+
+#### Scenario: Renders hero banner
+
+- **GIVEN** the page loads
+- **THEN** a full-width gradient banner (#f45622 to #f53e54) is displayed
+- **AND** "Author: Travor James" subheading is shown
+- **AND** a "Buy Now for $9.99" CTA pill button is visible
+- **AND** the banner spans the full viewport width
 
 ### About Section
-```
+
 Feature: About Section
-  Scenario: Renders about content
-    Given the page loads
-    Then the About section is displayed with id "about"
-    And an author image is shown on the left half
-    And "Dr. Travor James" heading is displayed on the right
-    And bio paragraphs are present
-    And a signature image is shown below the bio
-```
+
+#### Scenario: Renders about content
+
+- **GIVEN** the page loads
+- **THEN** the About section is displayed with id "about"
+- **AND** an author image is shown on the left half
+- **AND** "Dr. Travor James" heading is displayed on the right
+- **AND** bio paragraphs are present
+- **AND** a signature image is shown below the bio
 
 ### Features Section
-```
+
 Feature: Features Section
-  Scenario: Renders features header
-    Given the page loads
-    Then a "Some Features that Made us Unique" heading is displayed
-    And the section has a dark overlay on a background image
-    And the section id is "fact"
-```
+
+#### Scenario: Renders features header
+
+- **GIVEN** the page loads
+- **THEN** a "Some Features that Made us Unique" heading is displayed
+- **AND** the section has a dark overlay on a background image
+- **AND** the section id is "fact"
 
 ### Counter Section
-```
+
 Feature: Counter Section
-  Scenario: Renders animated counters
-    Given the page loads
-    Then 4 stat counters are shown: Happy Clients (2536), Total Projects (6784), Cups Coffee (1059), Tickets Submitted (12239)
-    And counters animate from 0 to their target values on scroll
-```
+
+#### Scenario: Renders animated counters
+
+- **GIVEN** the page loads
+- **THEN** 4 stat counters are shown: Happy Clients (2536), Total Projects (6784), Cups Coffee (1059), Tickets Submitted (12239)
+- **AND** counters animate from 0 to their target values on scroll
 
 ### Pricing Section
-```
-Feature: Pricing Section
-  Scenario: Renders pricing cards
-    Given the page loads
-    Then a "Purchase whatever you want" heading is displayed
-    And 3 pricing cards are shown: PDF ($79.99), E-Book ($99.99), Print Copy ($59.99)
-    And each card has a "Purchase Now" gradient pill button
-    And the section id is "price"
 
-  Scenario: Pricing card layout
-    Given the page loads
-    Then each pricing card shows the format name, description, and price
-    And the price is displayed prominently with a dollar sign
-```
+Feature: Pricing Section
+
+#### Scenario: Renders pricing cards
+
+- **GIVEN** the page loads
+- **THEN** a "Purchase whatever you want" heading is displayed
+- **AND** 3 pricing cards are shown: PDF ($79.99), E-Book ($99.99), Print Copy ($59.99)
+- **AND** each card has a "Purchase Now" gradient pill button
+- **AND** the section id is "price"
+
+#### Scenario: Pricing card layout
+
+- **GIVEN** the page loads
+- **THEN** each pricing card shows the format name, description, and price
+- **AND** the price is displayed prominently with a dollar sign
 
 ### Courses Section
-```
+
 Feature: Courses Section
-  Scenario: Renders course carousel
-    Given the page loads
-    Then a "Top Courses That are open for Students" heading is displayed
-    And a carousel of 3 course cards is shown
-    And each card has an image, "For Sale" badge, title, price, and description
-    And the section id is "course"
-```
+
+#### Scenario: Renders course carousel
+
+- **GIVEN** the page loads
+- **THEN** a "Top Courses That are open for Students" heading is displayed
+- **AND** a carousel of 3 course cards is shown
+- **AND** each card has an image, "For Sale" badge, title, price, and description
+- **AND** the section id is "course"
 
 ### Call-to-Action Section
-```
+
 Feature: Call-to-Action Section
-  Scenario: Renders app download CTA
-    Given the page loads
-    Then a gradient background CTA section is displayed
-    And "Download Our App for all Platforms" white heading is shown
-    And App Store and Google Play download buttons are visible
-    And Apple and Android icons are displayed
-```
+
+#### Scenario: Renders app download CTA
+
+- **GIVEN** the page loads
+- **THEN** a gradient background CTA section is displayed
+- **AND** "Download Our App for all Platforms" white heading is shown
+- **AND** App Store and Google Play download buttons are visible
+- **AND** Apple and Android icons are displayed
 
 ### Testimonials Section
-```
+
 Feature: Testimonials Section
-  Scenario: Renders testimonial carousel
-    Given the page loads
-    Then a "What our Reader's Say about us" heading is displayed
-    And a carousel of testimonial cards is shown
-    And each card has an avatar, quote text, name, and position
-    And navigation dots allow cycling through testimonials
-```
+
+#### Scenario: Renders testimonial carousel
+
+- **GIVEN** the page loads
+- **THEN** a "What our Reader's Say about us" heading is displayed
+- **AND** a carousel of testimonial cards is shown
+- **AND** each card has an avatar, quote text, name, and position
+- **AND** navigation dots allow cycling through testimonials
 
 ### Footer
-```
+
 Feature: Footer
-  Scenario: Renders footer
-    Given the page loads
-    Then a 3-column footer is displayed
-    And an "About Us" column with brand blurb is shown
-    And a "Newsletter" column with email subscription form is present
-    And a "Follow Us" column with social media icons is displayed
-    And a "Made with Component Dock" attribution is shown (replacing Colorlib link)
-```
+
+#### Scenario: Renders footer
+
+- **GIVEN** the page loads
+- **THEN** a 3-column footer is displayed
+- **AND** an "About Us" column with brand blurb is shown
+- **AND** a "Newsletter" column with email subscription form is present
+- **AND** a "Follow Us" column with social media icons is displayed
+- **AND** a "Made with Component Dock" attribution is shown (replacing Colorlib link)
 
 ## Verification checklist
 

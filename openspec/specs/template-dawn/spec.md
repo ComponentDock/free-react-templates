@@ -41,56 +41,64 @@ Extracted from the original `03-comming-soon/css/styles.css`.
 | Layout | `100vh` full-screen, vertical center via table-cell | |
 | Background | `background-size: cover` full-bleed photo | dark overlay |
 
-## Gherkin requirements
+## Requirements
 
-### Background
-Given a user visits Dawn on any device
-Then the page loads a single full-screen coming-soon view
-And no navigation, header, or multi-section layout exists
+### Feature: Dawn template behaviour
 
-### Scenario: Hero / main area renders
-Given the page is loaded
-When the user views the viewport
-Then a full-screen background image is visible with a dark overlay
-And the content is vertically and horizontally centered
-And the heading "COMING SOON" is displayed in bold white text
+**Background**
+- **GIVEN** a user visits Dawn on any device
+- **THEN** the page loads a single full-screen coming-soon view
+- **AND** no navigation, header, or multi-section layout exists
 
-### Scenario: Description text
-Given the page is loaded
-When the user reads the content below the heading
-Then a description paragraph is visible with white text
-And the text says "Our website is currently undergoing scheduled maintenance. We should be back shortly. Thank you for your patience."
-And the paragraph has a max-width of approximately 500px
+#### Scenario: Hero / main area renders
 
-### Scenario: Notify CTA button
-Given the page is loaded
-When the user locates the call-to-action button
-Then a "NOTIFY US" button is displayed
-And the button has a pill shape (border-radius: 50px)
-And the button background is brand pink (#F84982)
-And the button text is white
-And on hover the button background becomes transparent
+- **GIVEN** the page is loaded
+- **WHEN** the user views the viewport
+- **THEN** a full-screen background image is visible with a dark overlay
+- **AND** the content is vertically and horizontally centered
+- **AND** the heading "COMING SOON" is displayed in bold white text
 
-### Scenario: Social links
-Given the page is loaded
-When the user looks at the bottom of the page
-Then four social links are displayed: Facebook, Twitter, Google, Instagram
-And each link has white text
-And each link has a 2px pink (#F84982) underline on hover that animates out
+#### Scenario: Description text
 
-### Scenario: Responsive layout
-Given the page is loaded on a mobile device (≤767px)
-When the user views the content
-Then h1 font size reduces to approximately 2.8em
-And paragraph line-height reduces to 1.4
-And all content remains centered
+- **GIVEN** the page is loaded
+- **WHEN** the user reads the content below the heading
+- **THEN** a description paragraph is visible with white text
+- **AND** the text says "Our website is currently undergoing scheduled maintenance. We should be back shortly. Thank you for your patience."
+- **AND** the paragraph has a max-width of approximately 500px
 
-### Scenario: Accessibility
-Given the page is loaded
-When a screen reader processes the page
-Then the heading is semantically an h1 element
-And social links are rendered as anchor elements with visible text labels
-And the CTA button is a clickable element
+#### Scenario: Notify CTA button
+
+- **GIVEN** the page is loaded
+- **WHEN** the user locates the call-to-action button
+- **THEN** a "NOTIFY US" button is displayed
+- **AND** the button has a pill shape (border-radius: 50px)
+- **AND** the button background is brand pink (#F84982)
+- **AND** the button text is white
+- **AND** on hover the button background becomes transparent
+
+#### Scenario: Social links
+
+- **GIVEN** the page is loaded
+- **WHEN** the user looks at the bottom of the page
+- **THEN** four social links are displayed: Facebook, Twitter, Google, Instagram
+- **AND** each link has white text
+- **AND** each link has a 2px pink (#F84982) underline on hover that animates out
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the page is loaded on a mobile device (≤767px)
+- **WHEN** the user views the content
+- **THEN** h1 font size reduces to approximately 2.8em
+- **AND** paragraph line-height reduces to 1.4
+- **AND** all content remains centered
+
+#### Scenario: Accessibility
+
+- **GIVEN** the page is loaded
+- **WHEN** a screen reader processes the page
+- **THEN** the heading is semantically an h1 element
+- **AND** social links are rendered as anchor elements with visible text labels
+- **AND** the CTA button is a clickable element
 
 ## Verification checklist
 

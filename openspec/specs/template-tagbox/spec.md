@@ -41,49 +41,59 @@ component with live search and tag-style selected items.
 - **Transitions:** 0.3s all ease on links and interactive elements
 - **No box-shadow on tags**
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with title
-- Given the user visits the Tagbox page
-- Then a centered heading "Multi-Select #1" is visible
-- And a paragraph "Tags separate with comma \",\"" is visible below the heading
+### Feature: Tagbox template behaviour
 
-### Scenario: Dropdown opens on click
-- Given the user sees the multi-select input
-- When the user clicks on the select field
-- Then a dropdown menu appears with all available options
+#### Scenario: Page renders with title
 
-### Scenario: Options are displayed
-- Given the dropdown is open
-- Then the following options are visible: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
+- **GIVEN** the user visits the Tagbox page
+- **THEN** a centered heading "Multi-Select #1" is visible
+- **AND** a paragraph "Tags separate with comma \",\"" is visible below the heading
 
-### Scenario: Single selection
-- Given the dropdown is open
-- When the user clicks "Design"
-- Then a purple tag pill "Design" appears in the select field
-- And the dropdown remains open for further selections
+#### Scenario: Dropdown opens on click
 
-### Scenario: Multiple selections
-- Given "Design" is already selected
-- When the user clicks "HTML5"
-- Then both "Design" and "HTML5" tag pills are visible in the select field
+- **GIVEN** the user sees the multi-select input
+- **WHEN** the user clicks on the select field
+- **THEN** a dropdown menu appears with all available options
 
-### Scenario: Remove a selected tag
-- Given "Design" and "HTML5" are selected
-- When the user clicks the remove button (×) on the "Design" tag
-- Then only "HTML5" remains selected
-- And "Design" is no longer shown as a tag
+#### Scenario: Options are displayed
 
-### Scenario: Search/filter options
-- Given the dropdown is open with all options visible
-- When the user types "boot" in the search field
-- Then only "Bootstrap" is visible in the filtered dropdown
+- **GIVEN** the dropdown is open
+- **THEN** the following options are visible: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
 
-### Scenario: Keyboard navigation
-- Given the dropdown is open
-- When the user presses the down arrow key
-- Then the next option is highlighted
-- And the highlighted option has a purple background
+#### Scenario: Single selection
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "Design"
+- **THEN** a purple tag pill "Design" appears in the select field
+- **AND** the dropdown remains open for further selections
+
+#### Scenario: Multiple selections
+
+- **GIVEN** "Design" is already selected
+- **WHEN** the user clicks "HTML5"
+- **THEN** both "Design" and "HTML5" tag pills are visible in the select field
+
+#### Scenario: Remove a selected tag
+
+- **GIVEN** "Design" and "HTML5" are selected
+- **WHEN** the user clicks the remove button (×) on the "Design" tag
+- **THEN** only "HTML5" remains selected
+- **AND** "Design" is no longer shown as a tag
+
+#### Scenario: Search/filter options
+
+- **GIVEN** the dropdown is open with all options visible
+- **WHEN** the user types "boot" in the search field
+- **THEN** only "Bootstrap" is visible in the filtered dropdown
+
+#### Scenario: Keyboard navigation
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user presses the down arrow key
+- **THEN** the next option is highlighted
+- **AND** the highlighted option has a purple background
 
 ## Verification Checklist
 

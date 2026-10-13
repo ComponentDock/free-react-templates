@@ -6,6 +6,12 @@ Recreation of ColorLib **Search Form Bar 03**
 Preview: https://preview.colorlib.com/theme/search-form-bar-03/
 (Note: preview URL returned 404 at time of prep — spec based on screenshot analysis)
 
+## Purpose
+
+SearchBeacon is a search form bar component page with a centered serif heading and a pill-shaped search input with a coral circular submit button.
+
+It recreates the ColorLib **Search Form Bar 03** design (https://colorlib.com/wp/template/search-form-bar-03/, preview: https://preview.colorlib.com/theme/search-form-bar-03/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from screenshot analysis)
 
 - **Font**: system default (no Google Fonts visible — heading appears to be serif or system serif)
@@ -36,9 +42,11 @@ Single section with:
 2. Search form with circular coral button + input (pill-shaped)
 3. Footer with Component Dock branding
 
-## Gherkin Requirements
+## Requirements
 
 ### SearchBar component
+
+#### Scenario: SearchBar component
 
 - Renders a search input with placeholder "Search..."
 - Displays a coral/salmon circular search button on the left with a white magnifying glass icon
@@ -51,6 +59,8 @@ Single section with:
 
 ### App
 
+#### Scenario: App
+
 - Renders the heading "SearchBeacon"
 - Renders the SearchBar component
 - Uses system/serif font for heading
@@ -58,6 +68,8 @@ Single section with:
 - Centers content vertically and horizontally on the page
 
 ### Footer
+
+#### Scenario: Footer
 
 - Links to https://www.componentdock.com/
 - Shows "Component Dock" branding

@@ -98,91 +98,105 @@ and section highlights.
 | Card shadow        | `0px 10px 20px 0px rgba(221,221,221,0.3)` |
 | Border color       | `#e8edf1`                     |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Medscope medical healthcare website
 
-  Scenario: Header displays navigation and branding
-    Given the user loads the Medscope homepage
-    Then the header shows the logo "MEDSCOPE" with tagline
-    And the navigation contains links: Home, About, Department, Doctors, Blog, Contact
-    And the top utility bar shows email and location info
+#### Scenario: Header displays navigation and branding
 
-  Scenario: Hero section displays with call-to-action buttons
-    Given the user loads the Medscope homepage
-    Then the hero section shows heading "Making Health Care Better Together"
-    And there is a paragraph of descriptive text below the heading
-    And there is a "Make an Appointment" primary button
-    And there is a "View Department" outlined button
-    And the hero has a background image of a medical professional
+- **GIVEN** the user loads the Medscope homepage
+- **THEN** the header shows the logo "MEDSCOPE" with tagline
+- **AND** the navigation contains links: Home, About, Department, Doctors, Blog, Contact
+- **AND** the top utility bar shows email and location info
 
-  Scenario: Feature cards display three key services
-    Given the user scrolls to the features section
-    Then three feature cards are displayed in a row
-    And each card has an icon, title, and description
-    And the cards show "Primary Care", "Emergency Cases", "Online Appointment"
-    And the feature section has a blue background band
+#### Scenario: Hero section displays with call-to-action buttons
 
-  Scenario: Services section lists medical services
-    Given the user scrolls to the services section
-    Then the heading reads "Awesome Health Service"
-    And three service cards are shown: Neurology, Dental Clinic, Plastic Surgery
-    And each card has an icon, title, description, and "Learn More" link
+- **GIVEN** the user loads the Medscope homepage
+- **THEN** the hero section shows heading "Making Health Care Better Together"
+- **AND** there is a paragraph of descriptive text below the heading
+- **AND** there is a "Make an Appointment" primary button
+- **AND** there is a "View Department" outlined button
+- **AND** the hero has a background image of a medical professional
 
-  Scenario: About section displays informational content
-    Given the user scrolls to the about section
-    Then a heading and descriptive paragraph are visible
-    And a "learn more" link is present
+#### Scenario: Feature cards display three key services
 
-  Scenario: Team section displays doctor profiles
-    Given the user scrolls to the team section
-    Then the heading reads "[Brand] Experience Doctors"
-    And three doctor cards are shown with photos, names, and specialties
-    And each card has social media icon links
+- **GIVEN** the user scrolls to the features section
+- **THEN** three feature cards are displayed in a row
+- **AND** each card has an icon, title, and description
+- **AND** the cards show "Primary Care", "Emergency Cases", "Online Appointment"
+- **AND** the feature section has a blue background band
 
-  Scenario: Appointment section has FAQ and booking form
-    Given the user scrolls to the appointment section
-    Then a "Have Some Questions?" FAQ accordion is visible on the left
-    And a "Make an Appointment" form is visible on the right
-    And the form has fields: Name, Phone Number, Date, Service, Message
-    And the form has a blue submit button
+#### Scenario: Services section lists medical services
 
-  Scenario: Testimonial carousel shows doctor quotes
-    Given the user scrolls to the testimonial section
-    Then a carousel displays testimonial cards
-    And each card has a doctor photo, quote, and name
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading reads "Awesome Health Service"
+- **AND** three service cards are shown: Neurology, Dental Clinic, Plastic Surgery
+- **AND** each card has an icon, title, description, and "Learn More" link
 
-  Scenario: Hotline section shows emergency contact
-    Given the user scrolls to the hotline section
-    Then "Emergency hotline" heading is displayed
-    And a phone number is shown
-    And descriptive text about 24/7 support is present
+#### Scenario: About section displays informational content
 
-  Scenario: Blog section shows latest posts
-    Given the user scrolls to the blog section
-    Then the heading reads "Get Every Single Update Here"
-    And three blog post cards are shown with images, dates, and titles
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading and descriptive paragraph are visible
+- **AND** a "learn more" link is present
 
-  Scenario: Brands section shows partner logos
-    Given the user scrolls to the brands section
-    Then a carousel of partner logos is displayed on a light gray background
+#### Scenario: Team section displays doctor profiles
 
-  Scenario: Footer contains links and newsletter
-    Given the user scrolls to the footer
-    Then column links are shown: Top Products, Quick Links, Features, Resources
-    And a newsletter signup with email input is present
-    And the footer links to https://www.componentdock.com/
+- **GIVEN** the user scrolls to the team section
+- **THEN** the heading reads "[Brand] Experience Doctors"
+- **AND** three doctor cards are shown with photos, names, and specialties
+- **AND** each card has social media icon links
 
-  Scenario: Footer links to Component Dock
-    Given the user reaches the page footer
-    Then a link to "https://www.componentdock.com/" is visible
-    And it is labeled "Component Dock"
+#### Scenario: Appointment section has FAQ and booking form
 
-  Scenario: Page is responsive
-    Given the user loads the Medscope homepage on a mobile viewport
-    Then the navigation collapses into a hamburger menu
-    And content stacks vertically in single-column layout
-    And buttons and cards resize appropriately
+- **GIVEN** the user scrolls to the appointment section
+- **THEN** a "Have Some Questions?" FAQ accordion is visible on the left
+- **AND** a "Make an Appointment" form is visible on the right
+- **AND** the form has fields: Name, Phone Number, Date, Service, Message
+- **AND** the form has a blue submit button
+
+#### Scenario: Testimonial carousel shows doctor quotes
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** a carousel displays testimonial cards
+- **AND** each card has a doctor photo, quote, and name
+
+#### Scenario: Hotline section shows emergency contact
+
+- **GIVEN** the user scrolls to the hotline section
+- **THEN** "Emergency hotline" heading is displayed
+- **AND** a phone number is shown
+- **AND** descriptive text about 24/7 support is present
+
+#### Scenario: Blog section shows latest posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading reads "Get Every Single Update Here"
+- **AND** three blog post cards are shown with images, dates, and titles
+
+#### Scenario: Brands section shows partner logos
+
+- **GIVEN** the user scrolls to the brands section
+- **THEN** a carousel of partner logos is displayed on a light gray background
+
+#### Scenario: Footer contains links and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** column links are shown: Top Products, Quick Links, Features, Resources
+- **AND** a newsletter signup with email input is present
+- **AND** the footer links to https://www.componentdock.com/
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user reaches the page footer
+- **THEN** a link to "https://www.componentdock.com/" is visible
+- **AND** it is labeled "Component Dock"
+
+#### Scenario: Page is responsive
+
+- **GIVEN** the user loads the Medscope homepage on a mobile viewport
+- **THEN** the navigation collapses into a hamburger menu
+- **AND** content stacks vertically in single-column layout
+- **AND** buttons and cards resize appropriately
 
 ## Verification checklist
 

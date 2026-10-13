@@ -76,80 +76,93 @@ Extracted from `https://preview.colorlib.com/theme/unearth/css/style.css` and in
 12. **Contact** — form (name, email, subject, message + submit button) on light bg
 13. **Footer** — dark bg, 4 columns: About, Features links, Newsletter subscribe, Follow Us social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Excavate Template
 
 #### Scenario: Navbar renders with correct links and sticky behavior
-- Given the user loads the page
-- Then a sticky navbar is visible at the top
-- And it contains links: Home, About Us, Services, Team, Pricing, Contact
-- And a mobile hamburger toggle is present
+
+- **GIVEN** the user loads the page
+- **THEN** a sticky navbar is visible at the top
+- **AND** it contains links: Home, About Us, Services, Team, Pricing, Contact
+- **AND** a mobile hamburger toggle is present
 
 #### Scenario: Hero carousel displays slides with CTA
-- Given the user loads the page
-- Then a full-width carousel is visible
-- And the first slide shows "Welcome to Excavate" heading
-- And the second slide shows "New Generation of Mining" heading
-- And both slides have a "Get in touch" button
+
+- **GIVEN** the user loads the page
+- **THEN** a full-width carousel is visible
+- **AND** the first slide shows "Welcome to Excavate" heading
+- **AND** the second slide shows "New Generation of Mining" heading
+- **AND** both slides have a "Get in touch" button
 
 #### Scenario: Services section shows two feature blocks
-- Given the user scrolls to the services section
-- Then 2 service cards are displayed side by side
-- And each card has a background image, heading, and description text
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 2 service cards are displayed side by side
+- **AND** each card has a background image, heading, and description text
 
 #### Scenario: Feature grid shows six mining features
-- Given the user scrolls to the feature grid
-- Then 6 feature items are displayed in a grid
-- And each item has an icon, title, and description
+
+- **GIVEN** the user scrolls to the feature grid
+- **THEN** 6 feature items are displayed in a grid
+- **AND** each item has an icon, title, and description
 
 #### Scenario: About section renders on dark background
-- Given the user scrolls to the about section
-- Then the section has a dark background with overlay
-- And a heading and descriptive text are visible
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the section has a dark background with overlay
+- **AND** a heading and descriptive text are visible
 
 #### Scenario: Team section shows six members
-- Given the user scrolls to the team section
-- Then 6 team member cards are displayed
-- And each card shows a photo, name, role, and social icons
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** 6 team member cards are displayed
+- **AND** each card shows a photo, name, role, and social icons
 
 #### Scenario: Pricing section shows three tiers
-- Given the user scrolls to the pricing section
-- Then 3 pricing cards are displayed (Basic, Standard, Premium)
-- And each card shows a price and feature list
-- And each card has a CTA button
+
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** 3 pricing cards are displayed (Basic, Standard, Premium)
+- **AND** each card shows a price and feature list
+- **AND** each card has a CTA button
 
 #### Scenario: FAQ section displays questions
-- Given the user scrolls to the FAQ section
-- Then FAQ items are displayed
-- And each item shows a question and expandable answer
+
+- **GIVEN** the user scrolls to the FAQ section
+- **THEN** FAQ items are displayed
+- **AND** each item shows a question and expandable answer
 
 #### Scenario: Press section shows media logos
-- Given the user scrolls to the press section
-- Then media/press logos are displayed
+
+- **GIVEN** the user scrolls to the press section
+- **THEN** media/press logos are displayed
 
 #### Scenario: Testimonials carousel works
-- Given the user scrolls to the testimonials section
-- Then a carousel of testimonials is visible
-- And navigation controls are present
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonials is visible
+- **AND** navigation controls are present
 
 #### Scenario: Blog section shows recent posts
-- Given the user scrolls to the blog section
-- Then 3 blog post cards are displayed
-- And each card has an image, date, title, and excerpt
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed
+- **AND** each card has an image, date, title, and excerpt
 
 #### Scenario: Contact form is functional
-- Given the user scrolls to the contact section
-- Then a contact form is visible with fields: name, email, subject, message
-- And a submit button is present
-- And submitting empty fields shows validation errors
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a contact form is visible with fields: name, email, subject, message
+- **AND** a submit button is present
+- **AND** submitting empty fields shows validation errors
 
 #### Scenario: Footer renders with all columns
-- Given the user scrolls to the footer
-- Then 4 footer columns are displayed: About, Features, Newsletter, Follow Us
-- And the newsletter section has an email input and subscribe button
-- And social media icons are present
-- And a link to componentdock.com is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 footer columns are displayed: About, Features, Newsletter, Follow Us
+- **AND** the newsletter section has an email input and subscribe button
+- **AND** social media icons are present
+- **AND** a link to componentdock.com is present
 
 ## Verification checklist
 

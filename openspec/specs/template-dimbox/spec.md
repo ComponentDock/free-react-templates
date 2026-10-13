@@ -52,55 +52,63 @@ the gradient header and the white body.
 4. **Modal body**: circular icon, heading, subtext, email address display
 5. **Footer**: Component Dock link (required)
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: DimBox template behaviour
+
 Feature: DimBox confirmation modal
 
-  Background:
-    Given the user is on the DimBox page
+Background:
+- **GIVEN** the user is on the DimBox page
 
-  Scenario: page renders with title and trigger button
-    Then I should see the heading "DimBox"
-    And I should see a button labeled "Open Confirmation Modal"
+#### Scenario: page renders with title and trigger button
 
-  Scenario: modal opens on button click
-    When I click the "Open Confirmation Modal" button
-    Then a modal dialog should be visible
-    And the modal should display "You've Got Mail!" heading
-    And the modal should show an email icon
-    And the modal should display "We sent confirmation link to:"
-    And the modal should show "johndoe@gmail.com"
+- **THEN** I should see the heading "DimBox"
+- **AND** I should see a button labeled "Open Confirmation Modal"
 
-  Scenario: modal closes on close button click
-    Given the modal is open
-    When I click the close button
-    Then the modal should not be visible
+#### Scenario: modal opens on button click
 
-  Scenario: modal closes on backdrop click
-    Given the modal is open
-    When I click outside the modal
-    Then the modal should not be visible
+- **WHEN** I click the "Open Confirmation Modal" button
+- **THEN** a modal dialog should be visible
+- **AND** the modal should display "You've Got Mail!" heading
+- **AND** the modal should show an email icon
+- **AND** the modal should display "We sent confirmation link to:"
+- **AND** the modal should show "johndoe@gmail.com"
 
-  Scenario: modal closes on Escape key
-    Given the modal is open
-    When I press the Escape key
-    Then the modal should not be visible
+#### Scenario: modal closes on close button click
 
-  Scenario: modal is accessible
-    Given the modal is open
-    Then the modal should have role="dialog"
-    And the close button should have aria-label="Close"
+- **GIVEN** the modal is open
+- **WHEN** I click the close button
+- **THEN** the modal should not be visible
 
-  Scenario: page is responsive
-    When I resize the viewport to 375px width
-    Then the modal should still be visible and centered
-    And the button should be fully visible
+#### Scenario: modal closes on backdrop click
 
-  Scenario: footer contains Component Dock link
-    Then I should see a link to "https://www.componentdock.com/"
-    And the link text should include "Component Dock"
-```
+- **GIVEN** the modal is open
+- **WHEN** I click outside the modal
+- **THEN** the modal should not be visible
+
+#### Scenario: modal closes on Escape key
+
+- **GIVEN** the modal is open
+- **WHEN** I press the Escape key
+- **THEN** the modal should not be visible
+
+#### Scenario: modal is accessible
+
+- **GIVEN** the modal is open
+- **THEN** the modal should have role="dialog"
+- **AND** the close button should have aria-label="Close"
+
+#### Scenario: page is responsive
+
+- **WHEN** I resize the viewport to 375px width
+- **THEN** the modal should still be visible and centered
+- **AND** the button should be fully visible
+
+#### Scenario: footer contains Component Dock link
+
+- **THEN** I should see a link to "https://www.componentdock.com/"
+- **AND** the link text should include "Component Dock"
 
 ## Verification checklist
 

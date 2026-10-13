@@ -51,74 +51,85 @@ Single-page centered layout:
      - **Form** — username input, password input (with eye toggle), submit button, remember-me checkbox + forgot password link
      - **Footer** — "Not a member? Sign Up" link
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Loginsphere Login Form
 
 #### Scenario: Page renders the centered login card
-  Given a user visits the Loginsphere page
-  Then a centered white card should be visible
-  And the card should have rounded corners and a subtle shadow
-  And the page background should be light gray-blue (#f8f9fd)
+
+- **GIVEN** a user visits the Loginsphere page
+- **THEN** a centered white card should be visible
+- **AND** the card should have rounded corners and a subtle shadow
+- **AND** the page background should be light gray-blue (#f8f9fd)
 
 #### Scenario: Image banner displays at top of card
-  Given the login card is rendered
-  Then a decorative image banner should appear at the top of the card
-  And the banner should be approximately 200px tall
-  And the banner should use a cover background fit
+
+- **GIVEN** the login card is rendered
+- **THEN** a decorative image banner should appear at the top of the card
+- **AND** the banner should be approximately 200px tall
+- **AND** the banner should use a cover background fit
 
 #### Scenario: Sign In heading and social icons are visible
-  Given the login form is displayed
-  Then a "Sign In" heading should be visible
-  And social media icons (Facebook, Twitter) should be visible to the right of the heading
-  And the social icons should be 40x40px circular buttons
+
+- **GIVEN** the login form is displayed
+- **THEN** a "Sign In" heading should be visible
+- **AND** social media icons (Facebook, Twitter) should be visible to the right of the heading
+- **AND** the social icons should be 40x40px circular buttons
 
 #### Scenario: Username input with floating label
-  Given the login form is displayed
-  Then a username text input should be visible
-  And the placeholder text should read "Username"
-  And when the user focuses the input, the label should float up and turn teal (#01d28e)
+
+- **GIVEN** the login form is displayed
+- **THEN** a username text input should be visible
+- **AND** the placeholder text should read "Username"
+- **AND** when the user focuses the input, the label should float up and turn teal (#01d28e)
 
 #### Scenario: Password input with toggle visibility
-  Given the login form is displayed
-  Then a password input should be visible
-  And the placeholder text should read "Password"
-  And an eye icon toggle should be visible on the right side of the password field
-  And clicking the eye icon should toggle password visibility
+
+- **GIVEN** the login form is displayed
+- **THEN** a password input should be visible
+- **AND** the placeholder text should read "Password"
+- **AND** an eye icon toggle should be visible on the right side of the password field
+- **AND** clicking the eye icon should toggle password visibility
 
 #### Scenario: Submit button styled with brand color
-  Given the login form is displayed
-  Then a "Sign In" submit button should be visible
-  And the button should have a teal (#01d28e) background with white text
-  And on hover, the button should become transparent with teal text
+
+- **GIVEN** the login form is displayed
+- **THEN** a "Sign In" submit button should be visible
+- **AND** the button should have a teal (#01d28e) background with white text
+- **AND** on hover, the button should become transparent with teal text
 
 #### Scenario: Remember Me checkbox and Forgot Password link
-  Given the login form is displayed
-  Then a "Remember Me" checkbox should be visible (left-aligned)
-  And a "Forgot Password" link should be visible (right-aligned)
-  And the checkbox should use the brand teal color as its accent
+
+- **GIVEN** the login form is displayed
+- **THEN** a "Remember Me" checkbox should be visible (left-aligned)
+- **AND** a "Forgot Password" link should be visible (right-aligned)
+- **AND** the checkbox should use the brand teal color as its accent
 
 #### Scenario: Sign Up link in footer
-  Given the login form is displayed
-  Then a "Not a member?" text with a "Sign Up" link should be visible below the form
+
+- **GIVEN** the login form is displayed
+- **THEN** a "Not a member?" text with a "Sign Up" link should be visible below the form
 
 #### Scenario: Social icon hover interaction
-  Given the social icons are displayed
-  When a user hovers over a social icon
-  Then the icon background should change to teal (#01d28e)
-  And the icon color should change to white
+
+- **GIVEN** the social icons are displayed
+- **WHEN** a user hovers over a social icon
+- **THEN** the icon background should change to teal (#01d28e)
+- **AND** the icon color should change to white
 
 #### Scenario: Form input focus styling
-  Given the login form is displayed
-  When a user focuses any input field
-  Then the input border should change to teal (#01d28e)
-  And the floating label should appear above the input in teal, uppercase, bold
+
+- **GIVEN** the login form is displayed
+- **WHEN** a user focuses any input field
+- **THEN** the input border should change to teal (#01d28e)
+- **AND** the floating label should appear above the input in teal, uppercase, bold
 
 #### Scenario: Responsive layout
-  Given a user views the page on a mobile device
-  Then the card should remain centered and readable
-  And the form fields should stack vertically
-  And the Remember Me / Forgot Password row should adapt to the viewport
+
+- **GIVEN** a user views the page on a mobile device
+- **THEN** the card should remain centered and readable
+- **AND** the form fields should stack vertically
+- **AND** the Remember Me / Forgot Password row should adapt to the viewport
 
 ## Verification Checklist
 

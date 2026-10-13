@@ -73,123 +73,131 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 8. **Contact / Message** — "Send us a message" section with form (name, email, subject, message textarea) + submit button.
 9. **Footer** — 4-column layout: about text + logo, quick links, services list, newsletter signup + social icons. Dark background. "Component Dock" attribution.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the user loads the page
-  Then the navbar shows a logo on the left
-  And navigation links are centered
-  And a "Contact Now" button appears on the right
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls past the hero section
-  Then the navbar becomes fixed at the top
-  And the background changes to dark navy (#010E21)
-```
+#### Scenario: Navbar displays logo and navigation links
+
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows a logo on the left
+- **AND** navigation links are centered
+- **AND** a "Contact Now" button appears on the right
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero section
+- **THEN** the navbar becomes fixed at the top
+- **AND** the background changes to dark navy (#010E21)
 
 ### Hero
-```gherkin
-Scenario: Hero section displays headline and CTA
-  Given the user views the hero section
-  Then a large white headline is visible
-  And a light gray subtitle appears below the headline
-  And an arrow CTA icon links to the services section
-  And the background shows a full-width image
 
-Scenario: Hero has carousel navigation
-  Given the hero carousel has multiple slides
-  Then previous/next arrows are visible at the bottom-right
-  And the next arrow has a cyan (#04dbec) background
-```
+#### Scenario: Hero section displays headline and CTA
+
+- **GIVEN** the user views the hero section
+- **THEN** a large white headline is visible
+- **AND** a light gray subtitle appears below the headline
+- **AND** an arrow CTA icon links to the services section
+- **AND** the background shows a full-width image
+
+#### Scenario: Hero has carousel navigation
+
+- **GIVEN** the hero carousel has multiple slides
+- **THEN** previous/next arrows are visible at the bottom-right
+- **AND** the next arrow has a cyan (#04dbec) background
 
 ### Services
-```gherkin
-Scenario: Services section shows three service cards
-  Given the user scrolls to the services section
-  Then 3 service cards are displayed in a row
-  And each card has an icon, heading, and description
-  And the section background is white
 
-Scenario: Service cards are responsive
-  Given the user views on a mobile viewport
-  Then the service cards stack vertically
-```
+#### Scenario: Services section shows three service cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 3 service cards are displayed in a row
+- **AND** each card has an icon, heading, and description
+- **AND** the section background is white
+
+#### Scenario: Service cards are responsive
+
+- **GIVEN** the user views on a mobile viewport
+- **THEN** the service cards stack vertically
 
 ### WantToWork / CTA
-```gherkin
-Scenario: CTA section displays heading and button
-  Given the user scrolls to the CTA section
-  Then a heading "All startups need to make their business work" is visible
-  And a paragraph with supporting text appears
-  And a dark "Contact Us Now" button is positioned to the right
 
-Scenario: CTA section has a dark background variant
-  Given the user views the second CTA section
-  Then a dark background image is displayed
-  And the heading text is white
-```
+#### Scenario: CTA section displays heading and button
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a heading "All startups need to make their business work" is visible
+- **AND** a paragraph with supporting text appears
+- **AND** a dark "Contact Us Now" button is positioned to the right
+
+#### Scenario: CTA section has a dark background variant
+
+- **GIVEN** the user views the second CTA section
+- **THEN** a dark background image is displayed
+- **AND** the heading text is white
 
 ### Portfolio Gallery
-```gherkin
-Scenario: Portfolio shows image grid
-  Given the user scrolls to the portfolio section
-  Then one large image and three small images are displayed
-  And each image has a hover overlay with the project title
 
-Scenario: Portfolio images have hover effect
-  Given the user hovers over a portfolio image
-  Then an overlay appears with the project name
-```
+#### Scenario: Portfolio shows image grid
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** one large image and three small images are displayed
+- **AND** each image has a hover overlay with the project title
+
+#### Scenario: Portfolio images have hover effect
+
+- **GIVEN** the user hovers over a portfolio image
+- **THEN** an overlay appears with the project name
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials carousel shows quotes
-  Given the user scrolls to the testimonials section
-  Then testimonial text is displayed in a carousel
-  And each slide shows the founder name and photo
-  And navigation dots or arrows are present
-```
+
+#### Scenario: Testimonials carousel shows quotes
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** testimonial text is displayed in a carousel
+- **AND** each slide shows the founder name and photo
+- **AND** navigation dots or arrows are present
 
 ### Blog
-```gherkin
-Scenario: Blog section shows three post cards
-  Given the user scrolls to the blog section
-  Then 3 blog cards are displayed in a row
-  And each card has an image, date, title, and description
 
-Scenario: Blog cards respond to hover
-  Given the user hovers over a blog card
-  Then a shadow appears on the card
-```
+#### Scenario: Blog section shows three post cards
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card has an image, date, title, and description
+
+#### Scenario: Blog cards respond to hover
+
+- **GIVEN** the user hovers over a blog card
+- **THEN** a shadow appears on the card
 
 ### Contact
-```gherkin
-Scenario: Contact section has a form
-  Given the user scrolls to the contact section
-  Then a form with name, email, subject, and message fields is visible
-  And a submit button is present
-  And form fields have light borders (#f0e9ff)
 
-Scenario: Contact section displays contact info
-  Given the user views the contact section
-  Then contact details (phone, email) are shown alongside the form
-```
+#### Scenario: Contact section has a form
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a form with name, email, subject, and message fields is visible
+- **AND** a submit button is present
+- **AND** form fields have light borders (#f0e9ff)
+
+#### Scenario: Contact section displays contact info
+
+- **GIVEN** the user views the contact section
+- **THEN** contact details (phone, email) are shown alongside the form
 
 ### Footer
-```gherkin
-Scenario: Footer has four columns
-  Given the user scrolls to the footer
-  Then four columns are displayed: about, quick links, services, newsletter
-  And social media icons are visible
-  And a "Component Dock" attribution link is present at the bottom
 
-Scenario: Footer is dark themed
-  Given the user views the footer
-  Then the background is dark navy
-  And text color is light/white
-```
+#### Scenario: Footer has four columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** four columns are displayed: about, quick links, services, newsletter
+- **AND** social media icons are visible
+- **AND** a "Component Dock" attribution link is present at the bottom
+
+#### Scenario: Footer is dark themed
+
+- **GIVEN** the user views the footer
+- **THEN** the background is dark navy
+- **AND** text color is light/white
 
 ## Verification checklist
 

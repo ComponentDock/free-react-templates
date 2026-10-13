@@ -52,80 +52,74 @@ The original ColorLib "Agenda" preview shows:
 7. **Newsletter Subscribe** — Heading "Subscribe to our newsletter to get the latest trends & news", subtext "Join our database NOW!", form with Name input, Email input, gradient Submit button.
 8. **Footer** — Logo, nav links row (Home, About us, Events, News, Contact), copyright, social icons (Pinterest, LinkedIn, Instagram, Facebook, Twitter).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders correctly
-```gherkin
-Given the page loads
-Then the navbar displays the site logo
-And the navbar shows navigation links: Home, About us, Events, News, Contact
-And a "Buy Tickets" button is visible on desktop
-And the navbar is transparent and positioned over the hero
-```
+### Feature: Meetpoint template behaviour
 
-### Scenario: Hero slider with countdown
-```gherkin
-Given the page loads
-Then a full-width hero slider is displayed
-And the slider shows a countdown with Days, Hours, Minutes, Seconds
-And the hero displays the headline "We have the best events"
-And an "Order here" CTA button is visible
-And previous/next arrows allow slide navigation
-```
+#### Scenario: Navbar renders correctly
 
-### Scenario: Homepage info section
-```gherkin
-Given the page loads
-Then an info section displays the logo on the left
-And a heading "What is Meetpoint and why choose our services?" is shown
-And a descriptive paragraph is displayed
-And "Read More" (gradient) and "Register Now" (dark) buttons appear
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays the site logo
+- **AND** the navbar shows navigation links: Home, About us, Events, News, Contact
+- **AND** a "Buy Tickets" button is visible on desktop
+- **AND** the navbar is transparent and positioned over the hero
 
-### Scenario: Featured events grid
-```gherkin
-Given the page loads
-Then a featured events grid is displayed
-And featured events show an image, title, and date
-And half-width image cards are included in the grid
-```
+#### Scenario: Hero slider with countdown
 
-### Scenario: Next events cards
-```gherkin
-Given the page loads
-Then a "Our next events" section is displayed with a heading and description
-And 3 event cards are shown in a row
+- **GIVEN** the page loads
+- **THEN** a full-width hero slider is displayed
+- **AND** the slider shows a countdown with Days, Hours, Minutes, Seconds
+- **AND** the hero displays the headline "We have the best events"
+- **AND** an "Order here" CTA button is visible
+- **AND** previous/next arrows allow slide navigation
+
+#### Scenario: Homepage info section
+
+- **GIVEN** the page loads
+- **THEN** an info section displays the logo on the left
+- **AND** a heading "What is Meetpoint and why choose our services?" is shown
+- **AND** a descriptive paragraph is displayed
+- **AND** "Read More" (gradient) and "Register Now" (dark) buttons appear
+
+#### Scenario: Featured events grid
+
+- **GIVEN** the page loads
+- **THEN** a featured events grid is displayed
+- **AND** featured events show an image, title, and date
+- **AND** half-width image cards are included in the grid
+
+#### Scenario: Next events cards
+
+- **GIVEN** the page loads
+- **THEN** a "Our next events" section is displayed with a heading and description
+- **AND** 3 event cards are shown in a row
 Each card has an image with a purple rating badge
-And each card shows a title, date, description, and "Buy Tickets" link
-```
+- **AND** each card shows a title, date, description, and "Buy Tickets" link
 
-### Scenario: Regional events slider
-```gherkin
-Given the page loads
-Then a regional events section shows "Events in [City]"
-And a location dropdown allows city selection
-And a horizontal slider displays event cards with images
-And each card has an overlay "+" link and a date
-And partner logos are displayed below the slider
-```
+#### Scenario: Regional events slider
 
-### Scenario: Newsletter subscription
-```gherkin
-Given the page loads
-Then a newsletter section is displayed
-And a heading invites users to subscribe
-And a form shows Name input, Email input, and a gradient Submit button
-```
+- **GIVEN** the page loads
+- **THEN** a regional events section shows "Events in [City]"
+- **AND** a location dropdown allows city selection
+- **AND** a horizontal slider displays event cards with images
+- **AND** each card has an overlay "+" link and a date
+- **AND** partner logos are displayed below the slider
 
-### Scenario: Footer
-```gherkin
-Given the page loads
-Then the footer displays the site logo
-And navigation links are shown (Home, About us, Events, News, Contact)
-And copyright text is displayed
-And social media icon links (Pinterest, LinkedIn, Instagram, Facebook, Twitter) are present
-And a "Component Dock" link is present
-```
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the page loads
+- **THEN** a newsletter section is displayed
+- **AND** a heading invites users to subscribe
+- **AND** a form shows Name input, Email input, and a gradient Submit button
+
+#### Scenario: Footer
+
+- **GIVEN** the page loads
+- **THEN** the footer displays the site logo
+- **AND** navigation links are shown (Home, About us, Events, News, Contact)
+- **AND** copyright text is displayed
+- **AND** social media icon links (Pinterest, LinkedIn, Instagram, Facebook, Twitter) are present
+- **AND** a "Component Dock" link is present
 
 ## Verification Checklist
 

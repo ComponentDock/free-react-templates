@@ -40,136 +40,145 @@ Recreation of ColorLib **Boxus** — a creative digital agency one-page template
 9. **Contact (07)** — Left section title, 2-column: left = description text, right = contact form (Name, Email, Subject, Message, SEND button); below: full-width Google Maps iframe
 10. **Footer** — Copyright line + social icons (Twitter, Behance, Dribbble, Facebook, RSS)
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar displays all section links
-  Given the page loads
-  When I view the navigation bar
-  Then I see links for Home, Services, Portfolio, About, News, Video, Skills, and Contact
 
-Scenario: Navbar scrolls to section on click
-  Given the page is loaded
-  When I click "Services" in the navbar
-  Then the page scrolls to the Services section
-```
+#### Scenario: Navbar displays all section links
+
+- **GIVEN** the page loads
+- **WHEN** I view the navigation bar
+- **THEN** I see links for Home, Services, Portfolio, About, News, Video, Skills, and Contact
+
+#### Scenario: Navbar scrolls to section on click
+
+- **GIVEN** the page is loaded
+- **WHEN** I click "Services" in the navbar
+- **THEN** the page scrolls to the Services section
 
 ### Hero
-```gherkin
-Scenario: Hero displays headline and subtext
-  Given the page loads
-  When I view the hero section
-  Then I see a headline about web and graphic design solutions
-  And I see supporting subtext
 
-Scenario: Hero has dark purple background with image overlay
-  Given the page loads
-  When I view the hero section
-  Then the background is dark purple (#221C5A) with a diagonal image overlay
-```
+#### Scenario: Hero displays headline and subtext
+
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** I see a headline about web and graphic design solutions
+- **AND** I see supporting subtext
+
+#### Scenario: Hero has dark purple background with image overlay
+
+- **GIVEN** the page loads
+- **WHEN** I view the hero section
+- **THEN** the background is dark purple (#221C5A) with a diagonal image overlay
 
 ### Services
-```gherkin
-Scenario: Services section shows numbered title
-  Given the page loads
-  When I scroll to the Services section
-  Then I see section number "01" and title "Services"
 
-Scenario: Services displays cards in a carousel
-  Given the Services section is visible
-  When I view the service cards
-  Then I see 4 cards per slide with icon, title, and description
-  And I can navigate to a second slide with 4 more services
-```
+#### Scenario: Services section shows numbered title
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Services section
+- **THEN** I see section number "01" and title "Services"
+
+#### Scenario: Services displays cards in a carousel
+
+- **GIVEN** the Services section is visible
+- **WHEN** I view the service cards
+- **THEN** I see 4 cards per slide with icon, title, and description
+- **AND** I can navigate to a second slide with 4 more services
 
 ### Portfolio
-```gherkin
-Scenario: Portfolio shows masonry grid
-  Given the page loads
-  When I scroll to the Portfolio section
-  Then I see a masonry grid of portfolio items with overlay text
 
-Scenario: Portfolio has load more button
-  Given the Portfolio section is visible
-  When I view the bottom of the grid
-  Then I see a "LOAD MORE" button
-```
+#### Scenario: Portfolio shows masonry grid
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Portfolio section
+- **THEN** I see a masonry grid of portfolio items with overlay text
+
+#### Scenario: Portfolio has load more button
+
+- **GIVEN** the Portfolio section is visible
+- **WHEN** I view the bottom of the grid
+- **THEN** I see a "LOAD MORE" button
 
 ### About/Crafters
-```gherkin
-Scenario: About section shows team info
-  Given the page loads
-  When I scroll to the CRAFTERS section
-  Then I see section number "03" and title "CRAFTERS"
-  And I see about text and a timeline with year markers
 
-Scenario: About section has team carousel
-  Given the CRAFTERS section is visible
-  When I view the team area
-  Then I see team member cards with name, position, and bio in a carousel
-```
+#### Scenario: About section shows team info
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the CRAFTERS section
+- **THEN** I see section number "03" and title "CRAFTERS"
+- **AND** I see about text and a timeline with year markers
+
+#### Scenario: About section has team carousel
+
+- **GIVEN** the CRAFTERS section is visible
+- **WHEN** I view the team area
+- **THEN** I see team member cards with name, position, and bio in a carousel
 
 ### Blog/Stories
-```gherkin
-Scenario: Blog shows numbered entries
-  Given the page loads
-  When I scroll to the STORIES section
-  Then I see 4 blog entries each with number, author, category, and title
 
-Scenario: Blog has testimonial carousel
-  Given the STORIES section is visible
-  When I view the testimonials area
-  Then I see rotating quotes with author attribution
-```
+#### Scenario: Blog shows numbered entries
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the STORIES section
+- **THEN** I see 4 blog entries each with number, author, category, and title
+
+#### Scenario: Blog has testimonial carousel
+
+- **GIVEN** the STORIES section is visible
+- **WHEN** I view the testimonials area
+- **THEN** I see rotating quotes with author attribution
 
 ### Video/Offer
-```gherkin
-Scenario: Video section has embed thumbnail
-  Given the page loads
-  When I scroll to the OFFER section
-  Then I see a video thumbnail with a play button overlay
 
-Scenario: Video section has feature carousel
-  Given the OFFER section is visible
-  When I view the feature icons
-  Then I see a horizontal carousel of 7 feature items with icon and label
-```
+#### Scenario: Video section has embed thumbnail
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the OFFER section
+- **THEN** I see a video thumbnail with a play button overlay
+
+#### Scenario: Video section has feature carousel
+
+- **GIVEN** the OFFER section is visible
+- **WHEN** I view the feature icons
+- **THEN** I see a horizontal carousel of 7 feature items with icon and label
 
 ### Skills/Expertise
-```gherkin
-Scenario: Skills shows progress bars
-  Given the page loads
-  When I scroll to the EXPERTISE section
-  Then I see 4 progress bars for HTML, CSS, PSD, and Design with percentage labels
 
-Scenario: Progress bars use distinct colors
-  Given the EXPERTISE section is visible
-  When I view the progress bars
-  Then HTML is green, CSS is gold, PSD is pink, and Design is blue
-```
+#### Scenario: Skills shows progress bars
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the EXPERTISE section
+- **THEN** I see 4 progress bars for HTML, CSS, PSD, and Design with percentage labels
+
+#### Scenario: Progress bars use distinct colors
+
+- **GIVEN** the EXPERTISE section is visible
+- **WHEN** I view the progress bars
+- **THEN** HTML is green, CSS is gold, PSD is pink, and Design is blue
 
 ### Contact
-```gherkin
-Scenario: Contact section has form
-  Given the page loads
-  When I scroll to the Contact section
-  Then I see a form with Name, Email, Subject, Message fields and a SEND button
 
-Scenario: Contact section has map
-  Given the Contact section is visible
-  When I view below the form
-  Then I see a Google Maps embed
-```
+#### Scenario: Contact section has form
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the Contact section
+- **THEN** I see a form with Name, Email, Subject, Message fields and a SEND button
+
+#### Scenario: Contact section has map
+
+- **GIVEN** the Contact section is visible
+- **WHEN** I view below the form
+- **THEN** I see a Google Maps embed
 
 ### Footer
-```gherkin
-Scenario: Footer has copyright and social links
-  Given the page loads
-  When I scroll to the footer
-  Then I see a copyright notice and social media icons (Twitter, Behance, Dribbble, Facebook)
-  And the footer links to Component Dock
-```
+
+#### Scenario: Footer has copyright and social links
+
+- **GIVEN** the page loads
+- **WHEN** I scroll to the footer
+- **THEN** I see a copyright notice and social media icons (Twitter, Behance, Dribbble, Facebook)
+- **AND** the footer links to Component Dock
 
 ## Verification checklist
 

@@ -27,171 +27,181 @@ Recreation of the ColorLib **Inds** template as a React 19 + Vite + Tailwind 4 +
 | Button style | `.btn` + `.hero-btn` / `.get-btn` / `.white-btn` | Orange fill for primary CTAs, white fill for secondary |
 | Hero | Dark overlay on slider images, text animations | Multiple slides with fadeInUp animations |
 
-## Gherkin requirements
+## Requirements
 
 ### Header / Navbar
-```gherkin
+
 Feature: Header Navbar
 
-  Scenario: Top info bar and main navigation
-    Given the user is on the page
-    Then a top info bar displays phone number, email, and business hours
-    And a main navbar shows the logo, navigation links, and a "Get a Quote" CTA button
-    And the nav links are: Home, About, Industries, Works, Blog (with submenu), Pages, Contact, Element
+#### Scenario: Top info bar and main navigation
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is narrow (< 992px)
-    When the user taps the hamburger icon
-    Then the navigation menu slides open with all links visible
-```
+- **GIVEN** the user is on the page
+- **THEN** a top info bar displays phone number, email, and business hours
+- **AND** a main navbar shows the logo, navigation links, and a "Get a Quote" CTA button
+- **AND** the nav links are: Home, About, Industries, Works, Blog (with submenu), Pages, Contact, Element
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the viewport is narrow (< 992px)
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu slides open with all links visible
 
 ### Hero / Slider
-```gherkin
+
 Feature: Hero Slider
 
-  Scenario: Hero slider displays on load
-    Given the user is on the page
-    Then a full-width hero slider is visible with background images
-    And each slide has the heading "Industrial Solutions!"
-    And each slide has a subtitle paragraph
-    And each slide has an "Our Services" CTA button
+#### Scenario: Hero slider displays on load
 
-  Scenario: Slider auto-advance
-    Given the hero slider is visible
-    When the user waits
-    Then the slider automatically transitions to the next slide
-    And navigation dots or arrows are available for manual control
-```
+- **GIVEN** the user is on the page
+- **THEN** a full-width hero slider is visible with background images
+- **AND** each slide has the heading "Industrial Solutions!"
+- **AND** each slide has a subtitle paragraph
+- **AND** each slide has an "Our Services" CTA button
+
+#### Scenario: Slider auto-advance
+
+- **GIVEN** the hero slider is visible
+- **WHEN** the user waits
+- **THEN** the slider automatically transitions to the next slide
+- **AND** navigation dots or arrows are available for manual control
 
 ### Services
-```gherkin
+
 Feature: Services Section
 
-  Scenario: Three service cards
-    Given the user scrolls past the hero
-    Then a services area is visible with three service cards in a row
-    And each card has an icon, title, and an arrow button
-    And the services are: Automotive Manufacturing, Heavy Industry Market, Industry Analysis
+#### Scenario: Three service cards
 
-  Scenario: Service card hover
-    Given the service cards are visible
-    When the user hovers over a card
-    Then the card lifts slightly with a shadow effect
-```
+- **GIVEN** the user scrolls past the hero
+- **THEN** a services area is visible with three service cards in a row
+- **AND** each card has an icon, title, and an arrow button
+- **AND** the services are: Automotive Manufacturing, Heavy Industry Market, Industry Analysis
+
+#### Scenario: Service card hover
+
+- **GIVEN** the service cards are visible
+- **WHEN** the user hovers over a card
+- **THEN** the card lifts slightly with a shadow effect
 
 ### Safe Industry Solutions
-```gherkin
+
 Feature: Safe Industry Solutions
 
-  Scenario: About/solutions section with image and mission
-    Given the user scrolls to the safe industry area
-    Then the heading reads "Safe Industrial Solutions That Saves our Valuable Time and Money!"
-    And two paragraphs of descriptive text are displayed
-    And an "Our Services" button is available
-    And an "Our Mission" alert box with an image is displayed on the right
+#### Scenario: About/solutions section with image and mission
 
-  Scenario: Mission alert box
-    Given the safe industry section is visible
-    Then the "Our Mission" box has a colored background and displays a mission statement
-```
+- **GIVEN** the user scrolls to the safe industry area
+- **THEN** the heading reads "Safe Industrial Solutions That Saves our Valuable Time and Money!"
+- **AND** two paragraphs of descriptive text are displayed
+- **AND** an "Our Services" button is available
+- **AND** an "Our Mission" alert box with an image is displayed on the right
+
+#### Scenario: Mission alert box
+
+- **GIVEN** the safe industry section is visible
+- **THEN** the "Our Mission" box has a colored background and displays a mission statement
 
 ### Gallery / Works
-```gherkin
+
 Feature: Gallery Section
 
-  Scenario: Portfolio grid
-    Given the user scrolls to the gallery area
-    Then a grid of project images is displayed
-    And each project has an image and title "Floride Chemicals Factory"
-    And each project has a "Read more" link
-    And the grid shows 8 projects in a 4-column layout
+#### Scenario: Portfolio grid
 
-  Scenario: Gallery hover effect
-    Given the gallery items are visible
-    When the user hovers over a project
-    Then an overlay appears with the project title and link
-```
+- **GIVEN** the user scrolls to the gallery area
+- **THEN** a grid of project images is displayed
+- **AND** each project has an image and title "Floride Chemicals Factory"
+- **AND** each project has a "Read more" link
+- **AND** the grid shows 8 projects in a 4-column layout
+
+#### Scenario: Gallery hover effect
+
+- **GIVEN** the gallery items are visible
+- **WHEN** the user hovers over a project
+- **THEN** an overlay appears with the project title and link
 
 ### Team
-```gherkin
+
 Feature: Team Section
 
-  Scenario: Team member profiles
-    Given the user scrolls to the team area
-    Then the heading reads "Our Team Best Members"
-    And four team member cards are displayed
-    And each card has a photo, name ("Bruce Roberts"), and role
-    And a "Contact Us" button is available
+#### Scenario: Team member profiles
 
-  Scenario: Team card hover
-    Given the team cards are visible
-    When the user hovers over a card
-    Then social media icons or an overlay appears
-```
+- **GIVEN** the user scrolls to the team area
+- **THEN** the heading reads "Our Team Best Members"
+- **AND** four team member cards are displayed
+- **AND** each card has a photo, name ("Bruce Roberts"), and role
+- **AND** a "Contact Us" button is available
+
+#### Scenario: Team card hover
+
+- **GIVEN** the team cards are visible
+- **WHEN** the user hovers over a card
+- **THEN** social media icons or an overlay appears
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials
 
-  Scenario: Testimonial carousel
-    Given the user scrolls to the testimonial area
-    Then a carousel shows customer testimonials
-    And each testimonial has a quote icon, review text, founder name ("Jessya Inn"), and role ("Co Founder")
-    And navigation dots are present to cycle through testimonials
+#### Scenario: Testimonial carousel
 
-  Scenario: Testimonial auto-advance
-    Given the testimonials section is visible
-    When the user waits
-    Then the carousel automatically advances to the next testimonial
-```
+- **GIVEN** the user scrolls to the testimonial area
+- **THEN** a carousel shows customer testimonials
+- **AND** each testimonial has a quote icon, review text, founder name ("Jessya Inn"), and role ("Co Founder")
+- **AND** navigation dots are present to cycle through testimonials
+
+#### Scenario: Testimonial auto-advance
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the user waits
+- **THEN** the carousel automatically advances to the next testimonial
 
 ### Blog / David Droga
-```gherkin
+
 Feature: Blog Section
 
-  Scenario: Two blog post cards
-    Given the user scrolls to the blog area
-    Then two blog post items are displayed side by side
-    And each post has an image, date/author info, title, and "Read more" link
-    And the blog titles reference advertising/industry topics
+#### Scenario: Two blog post cards
 
-  Scenario: Blog hover effect
-    Given the blog cards are visible
-    When the user hovers over a post
-    Then an overlay or shadow effect appears
-```
+- **GIVEN** the user scrolls to the blog area
+- **THEN** two blog post items are displayed side by side
+- **AND** each post has an image, date/author info, title, and "Read more" link
+- **AND** the blog titles reference advertising/industry topics
+
+#### Scenario: Blog hover effect
+
+- **GIVEN** the blog cards are visible
+- **WHEN** the user hovers over a post
+- **THEN** an overlay or shadow effect appears
 
 ### Call to Action
-```gherkin
+
 Feature: CTA Section
 
-  Scenario: Work with us CTA
-    Given the user scrolls past the blog
-    Then a section with heading "Want To Work With Us? Hit The Button." is visible
-    And a "Let's Work Together" white button is displayed
+#### Scenario: Work with us CTA
 
-  Scenario: CTA button hover
-    Given the CTA section is visible
-    When the user hovers over the "Let's Work Together" button
-    Then the button changes to an orange (#f27420) background
-```
+- **GIVEN** the user scrolls past the blog
+- **THEN** a section with heading "Want To Work With Us? Hit The Button." is visible
+- **AND** a "Let's Work Together" white button is displayed
+
+#### Scenario: CTA button hover
+
+- **GIVEN** the CTA section is visible
+- **WHEN** the user hovers over the "Let's Work Together" button
+- **THEN** the button changes to an orange (#f27420) background
 
 ### Footer
-```gherkin
+
 Feature: Footer
 
-  Scenario: Footer layout
-    Given the user reaches the page bottom
-    Then a dark navy (#00163e) footer is visible
-    And the footer has four columns: About Us (with logo and description), Contact Info (phone, email), Photo Gallery, Important Links
-    And social media icon links are present
-    And a bottom bar shows copyright information
+#### Scenario: Footer layout
 
-  Scenario: Footer copyright
-    Given the footer is visible
-    Then the copyright line is present
-    And a link to https://www.componentdock.com/ ("Component Dock") is present (replacing ColorLib attribution)
-```
+- **GIVEN** the user reaches the page bottom
+- **THEN** a dark navy (#00163e) footer is visible
+- **AND** the footer has four columns: About Us (with logo and description), Contact Info (phone, email), Photo Gallery, Important Links
+- **AND** social media icon links are present
+- **AND** a bottom bar shows copyright information
+
+#### Scenario: Footer copyright
+
+- **GIVEN** the footer is visible
+- **THEN** the copyright line is present
+- **AND** a link to https://www.componentdock.com/ ("Component Dock") is present (replacing ColorLib attribution)
 
 ## Verification checklist
 

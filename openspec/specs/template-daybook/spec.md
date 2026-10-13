@@ -11,7 +11,7 @@ Recreation of ColorLib Calendar V14 (`https://colorlib.com/wp/template/calendar-
 - **Button Shapes**: Rounded-lg, subtle shadow, smooth hover states.
 - **Section Backgrounds**: Clean white / slate-50 background with a card-based calendar layout featuring interactive date selection and event management.
 
-## Requirements & Scenarios (Gherkin)
+## Requirements
 
 ### Feature: Interactive Calendar & Datepicker Interface
 
@@ -19,27 +19,27 @@ As a user visiting Daybook, I want an intuitive calendar interface so that I can
 
 #### Scenario: Calendar Grid Display
 
-- **Given** the Daybook application is loaded
-- **When** the user views the main calendar view
-- **Then** the current month and year are displayed with a full interactive calendar grid (days of the week, dates, active/selected day highlight).
+- **GIVEN** the Daybook application is loaded
+- **WHEN** the user views the main calendar view
+- **THEN** the current month and year are displayed with a full interactive calendar grid (days of the week, dates, active/selected day highlight)
 
 #### Scenario: Month Navigation
 
-- **Given** the calendar is displayed
-- **When** the user clicks the previous or next month buttons
-- **Then** the calendar updates to show the corresponding month's grid correctly.
+- **GIVEN** the calendar is displayed
+- **WHEN** the user clicks the previous or next month buttons
+- **THEN** the calendar updates to show the corresponding month's grid correctly
 
 #### Scenario: Event Management / Date Selection
 
-- **Given** a date is visible on the calendar grid
-- **When** the user clicks on a specific date
-- **Then** the date details panel opens, showing scheduled events or allowing the user to add a new event.
+- **GIVEN** a date is visible on the calendar grid
+- **WHEN** the user clicks on a specific date
+- **THEN** the date details panel opens, showing scheduled events or allowing the user to add a new event
 
 #### Scenario: Footer Attribution
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer is rendered
-- **Then** it displays a link to `https://www.componentdock.com/` ("Component Dock").
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it displays a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

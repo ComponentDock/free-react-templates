@@ -36,64 +36,74 @@ Tint is an interior design studio template with a navbar, hero, about band, port
 10. **Blog** — 3-column cards: image, date/comments meta, title, excerpt.
 11. **Footer** — Dark bg `#262533`: 4 link columns (Top Products, Quick Links, Features, Resources) + Newsletter signup. Bottom: copyright line linking Component Dock + social icons.
 
-## Scenarios
+## Requirements
 
 ### Gherkin
 
-```gherkin
 Feature: Tint template renders all sections
 
-  Scenario: Page loads with correct title
-    Given the user visits the Tint page
-    Then the document title is "Tint — Interior Design Studio"
+#### Scenario: Page loads with correct title
 
-  Scenario: Navbar is visible with all links
-    Given the user visits the Tint page
-    Then the banner landmark is visible
-    And navigation links include Home, About, Works, Services, Blog, Contact
+- **GIVEN** the user visits the Tint page
+- **THEN** the document title is "Tint — Interior Design Studio"
 
-  Scenario: Hero section shows headline and CTA
-    Given the user visits the Tint page
-    Then the hero headline mentions Interior Design Conference
-    And a "Learn more about this" CTA button is visible
+#### Scenario: Navbar is visible with all links
 
-  Scenario: About section displays company info
-    Given the user visits the Tint page
-    Then the about heading mentions Creating Awesomeness
-    And the "26 Years" badge is visible
+- **GIVEN** the user visits the Tint page
+- **THEN** the banner landmark is visible
+- **AND** navigation links include Home, About, Works, Services, Blog, Contact
 
-  Scenario: Portfolio grid shows 4 projects
-    Given the user visits the Tint page
-    Then 4 portfolio items are displayed
+#### Scenario: Hero section shows headline and CTA
 
-  Scenario: CTA banner is visible
-    Given the user visits the Tint page
-    Then the CTA banner shows "Get to Know Project Estimate"
+- **GIVEN** the user visits the Tint page
+- **THEN** the hero headline mentions Interior Design Conference
+- **AND** a "Learn more about this" CTA button is visible
 
-  Scenario: Stats counters are displayed
-    Given the user visits the Tint page
-    Then 4 stat items are visible with numeric values
+#### Scenario: About section displays company info
 
-  Scenario: Services section shows 6 services
-    Given the user visits the Tint page
-    Then 6 service cards are displayed
+- **GIVEN** the user visits the Tint page
+- **THEN** the about heading mentions Creating Awesomeness
+- **AND** the "26 Years" badge is visible
 
-  Scenario: Testimonials section is present
-    Given the user visits the Tint page
-    Then the testimonials section contains at least 1 testimonial
+#### Scenario: Portfolio grid shows 4 projects
 
-  Scenario: Blog section shows 3 posts
-    Given the user visits the Tint page
-    Then 3 blog post cards are displayed
+- **GIVEN** the user visits the Tint page
+- **THEN** 4 portfolio items are displayed
 
-  Scenario: Footer has Component Dock link
-    Given the user visits the Tint page
-    Then the footer links to https://www.componentdock.com/
+#### Scenario: CTA banner is visible
 
-  Scenario: Mobile menu toggle
-    Given the user visits the Tint page
-    When the user clicks the mobile menu toggle
-    Then the mobile menu becomes visible
-    When the user clicks the mobile menu toggle again
-    Then the mobile menu is hidden
-```
+- **GIVEN** the user visits the Tint page
+- **THEN** the CTA banner shows "Get to Know Project Estimate"
+
+#### Scenario: Stats counters are displayed
+
+- **GIVEN** the user visits the Tint page
+- **THEN** 4 stat items are visible with numeric values
+
+#### Scenario: Services section shows 6 services
+
+- **GIVEN** the user visits the Tint page
+- **THEN** 6 service cards are displayed
+
+#### Scenario: Testimonials section is present
+
+- **GIVEN** the user visits the Tint page
+- **THEN** the testimonials section contains at least 1 testimonial
+
+#### Scenario: Blog section shows 3 posts
+
+- **GIVEN** the user visits the Tint page
+- **THEN** 3 blog post cards are displayed
+
+#### Scenario: Footer has Component Dock link
+
+- **GIVEN** the user visits the Tint page
+- **THEN** the footer links to https://www.componentdock.com/
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** the user visits the Tint page
+- **WHEN** the user clicks the mobile menu toggle
+- **THEN** the mobile menu becomes visible
+- **WHEN** the user clicks the mobile menu toggle again
+- **THEN** the mobile menu is hidden

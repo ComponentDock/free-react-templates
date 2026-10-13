@@ -55,106 +55,111 @@ The page has three sections on a light gray background:
    - Below each: label (bold) + value text
    - Items: Address, Phone, Email (teal link), Website (teal link)
 
-## Gherkin requirements
+## Requirements
 
 ### Page layout
 
-```gherkin
-Scenario: Page renders the title
-  Given I visit the Formrelay page
-  Then I see "Contact Form #06" centered at the top
+#### Scenario: Page renders the title
 
-Scenario: Page renders a centered two-column card
-  Given I visit the Formrelay page
-  Then I see a centered card with a form on the left and a map on the right
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see "Contact Form #06" centered at the top
 
-Scenario: Page renders contact info below the card
-  Given I visit the Formrelay page
-  Then I see four contact items in a row below the card
-```
+#### Scenario: Page renders a centered two-column card
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see a centered card with a form on the left and a map on the right
+
+#### Scenario: Page renders contact info below the card
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see four contact items in a row below the card
 
 ### Contact form
 
-```gherkin
-Scenario: Form displays all fields
-  Given I visit the Formrelay page
-  Then I see a Full Name input field
-  And I see an Email Address input field
-  And I see a Subject input field
-  And I see a Message textarea
-  And I see a Send Message button
+#### Scenario: Form displays all fields
 
-Scenario: Full Name and Email Address are side by side
-  Given I visit the Formrelay page
-  Then the Full Name and Email Address inputs are in the same row
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see a Full Name input field
+- **AND** I see an Email Address input field
+- **AND** I see a Subject input field
+- **AND** I see a Message textarea
+- **AND** I see a Send Message button
 
-Scenario: Inputs have bordered box style
-  Given I visit the Formrelay page
-  Then all form inputs have a full border (box style)
-  And the input borders are light gray
+#### Scenario: Full Name and Email Address are side by side
 
-Scenario: Field labels are uppercase
-  Given I visit the Formrelay page
-  Then all form field labels are displayed in uppercase
+- **GIVEN** I visit the Formrelay page
+- **THEN** the Full Name and Email Address inputs are in the same row
 
-Scenario: Send Message button is styled
-  Given I visit the Formrelay page
-  Then the Send Message button has a navy blue background and white text
-```
+#### Scenario: Inputs have bordered box style
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** all form inputs have a full border (box style)
+- **AND** the input borders are light gray
+
+#### Scenario: Field labels are uppercase
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** all form field labels are displayed in uppercase
+
+#### Scenario: Send Message button is styled
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** the Send Message button has a navy blue background and white text
 
 ### Map panel
 
-```gherkin
-Scenario: Right column displays a map
-  Given I visit the Formrelay page
-  Then the right column of the card displays a map placeholder image
-  And the image fills the full height of the card
-```
+#### Scenario: Right column displays a map
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** the right column of the card displays a map placeholder image
+- **AND** the image fills the full height of the card
 
 ### Contact info row
 
-```gherkin
-Scenario: Info row displays address
-  Given I visit the Formrelay page
-  Then I see a navy circular icon and text "Address: 198 West 21th Street, Suite 721 New York NY 10016"
+#### Scenario: Info row displays address
 
-Scenario: Info row displays phone
-  Given I visit the Formrelay page
-  Then I see a navy circular icon and text "Phone: + 1235 2355 98"
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see a navy circular icon and text "Address: 198 West 21th Street, Suite 721 New York NY 10016"
 
-Scenario: Info row displays email
-  Given I visit the Formrelay page
-  Then I see a navy circular icon and text "Email: info@yoursite.com"
+#### Scenario: Info row displays phone
 
-Scenario: Info row displays website
-  Given I visit the Formrelay page
-  Then I see a navy circular icon and text "Website: yoursite.com"
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see a navy circular icon and text "Phone: + 1235 2355 98"
 
-Scenario: Info row items have large circular navy icon containers
-  Given I visit the Formrelay page
-  Then each contact info item has a large circular navy icon container
-```
+#### Scenario: Info row displays email
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see a navy circular icon and text "Email: info@yoursite.com"
+
+#### Scenario: Info row displays website
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** I see a navy circular icon and text "Website: yoursite.com"
+
+#### Scenario: Info row items have large circular navy icon containers
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** each contact info item has a large circular navy icon container
 
 ### Responsive behavior
 
-```gherkin
-Scenario: Card columns stack on mobile
-  Given I visit the Formrelay page on a mobile viewport
-  Then the form and map columns stack vertically
+#### Scenario: Card columns stack on mobile
 
-Scenario: Contact info wraps on mobile
-  Given I visit the Formrelay page on a mobile viewport
-  Then the contact info row wraps to multiple rows
-```
+- **GIVEN** I visit the Formrelay page on a mobile viewport
+- **THEN** the form and map columns stack vertically
+
+#### Scenario: Contact info wraps on mobile
+
+- **GIVEN** I visit the Formrelay page on a mobile viewport
+- **THEN** the contact info row wraps to multiple rows
 
 ### Footer
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formrelay page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Formrelay page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references Component Dock
 
 ## Verification checklist
 

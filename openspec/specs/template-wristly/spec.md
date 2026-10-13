@@ -48,43 +48,63 @@ ColorLib source slug (`watch`), and collides with nothing in `apps/`,
 
 ## Requirements
 
-### Requirement: Page composition
+### Feature: Page composition
+
+#### Scenario: Page composition
 
 The system SHALL render all sections in order with Poppins font, centered content, and proper spacing.
 
-### Requirement: Navbar
+### Feature: Navbar
+
+#### Scenario: Navbar
 
 The system SHALL render a sticky navbar with "Wristly" logo and 6 nav links.
 
-### Requirement: Hero
+### Feature: Hero
+
+#### Scenario: Hero
 
 The system SHALL render a hero with dark gradient bg, headline, subtitle, and gradient pill CTA.
 
-### Requirement: About section
+### Feature: About section
+
+#### Scenario: About section
 
 Split layout: image left, text right with heading, paragraph, and CTA.
 
-### Requirement: Features
+### Feature: Features
+
+#### Scenario: Features
 
 4 feature cards with icons in a responsive grid around a central product image.
 
-### Requirement: Services
+### Feature: Services
+
+#### Scenario: Services
 
 6 service cards in a 3×2 grid with lucide-react icons.
 
-### Requirement: Products
+### Feature: Products
+
+#### Scenario: Products
 
 Dark bg section with 4 product cards: image, name, price, "Pre Order" button.
 
-### Requirement: Reviews
+### Feature: Reviews
+
+#### Scenario: Reviews
 
 3 reviewer cards with name, text, and star ratings (lucide-react Star icon).
 
-### Requirement: FAQ accordion
+### Feature: FAQ accordion
+
+#### Scenario: FAQ accordion
 
 4 FAQ items with expand/collapse toggle using aria-expanded.
 
-### Requirement: Footer
+### Feature: Footer
+
+#### Scenario: Footer
 
 Footer with Component Dock link (https://www.componentdock.com/), about text, newsletter, social icons.
 

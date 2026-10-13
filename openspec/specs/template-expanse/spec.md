@@ -31,150 +31,141 @@ with dark theme, parallax hero, and split navigation.
 | Nav layout | Split (left links | logo center | right links) | Desktop: logo centered, links split both sides |
 | Dark mode | `[data-bs-theme="dark"]` / `[data-bs-theme="light"]` | Theme toggle supported via icon-moon-o |
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Navigation
 
-```gherkin
-Scenario: Split centered navigation
-  Given the user loads the page
-  Then a centered logo "Expanse." is displayed
-  And the left side nav contains: Home, Portfolio, About
-  And the right side nav contains: Services, Skills, Testimonial, Journal, Contact
-  And a dark/light theme toggle icon is visible on desktop
-  And a hamburger menu toggle is visible on mobile
+#### Scenario: Split centered navigation
 
-Scenario: Mobile menu opens
-  Given the user is on mobile viewport
-  When the user clicks the hamburger toggle
-  Then the mobile menu slides in from the right
-  And all nav links are listed vertically
-  And a close button (×) is visible
-```
+- **GIVEN** the user loads the page
+- **THEN** a centered logo "Expanse." is displayed
+- **AND** the left side nav contains: Home, Portfolio, About
+- **AND** the right side nav contains: Services, Skills, Testimonial, Journal, Contact
+- **AND** a dark/light theme toggle icon is visible on desktop
+- **AND** a hamburger menu toggle is visible on mobile
+
+#### Scenario: Mobile menu opens
+
+- **GIVEN** the user is on mobile viewport
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the mobile menu slides in from the right
+- **AND** all nav links are listed vertically
+- **AND** a close button (×) is visible
 
 ### Hero / Cover
 
-```gherkin
-Scenario: Fullscreen parallax hero
-  Given the user loads the page
-  Then a full-viewport hero section is displayed
-  And the background is a dark parallax image
-  And the heading reads "Expanse" in large bold white text
-  And a subheading is displayed below the heading
-  And a scroll-down mouse indicator is visible at the bottom center
+#### Scenario: Fullscreen parallax hero
 
-Scenario: Hero scroll indicator
-  Given the hero section is visible
-  When the user clicks the scroll indicator
-  Then the page smoothly scrolls to the portfolio section
-```
+- **GIVEN** the user loads the page
+- **THEN** a full-viewport hero section is displayed
+- **AND** the background is a dark parallax image
+- **AND** the heading reads "Expanse" in large bold white text
+- **AND** a subheading is displayed below the heading
+- **AND** a scroll-down mouse indicator is visible at the bottom center
+
+#### Scenario: Hero scroll indicator
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user clicks the scroll indicator
+- **THEN** the page smoothly scrolls to the portfolio section
 
 ### Portfolio
 
-```gherkin
-Scenario: Portfolio grid
-  Given the user scrolls to the portfolio section
-  Then the heading reads "Portfolio"
-  And a grid of portfolio items is displayed
-  And each item shows an image with a title overlay
-  And items have a hover effect (red overlay with details)
+#### Scenario: Portfolio grid
 
-Scenario: Portfolio filtering
-  Given the portfolio section is visible
-  Then filter tabs are displayed (e.g. All, Branding, Web, etc.)
-  When the user clicks a filter tab
-  Then only items matching that category are shown
-```
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** the heading reads "Portfolio"
+- **AND** a grid of portfolio items is displayed
+- **AND** each item shows an image with a title overlay
+- **AND** items have a hover effect (red overlay with details)
+
+#### Scenario: Portfolio filtering
+
+- **GIVEN** the portfolio section is visible
+- **THEN** filter tabs are displayed (e.g. All, Branding, Web, etc.)
+- **WHEN** the user clicks a filter tab
+- **THEN** only items matching that category are shown
 
 ### Client Logos
 
-```gherkin
-Scenario: Client logo carousel
-  Given the user scrolls past the portfolio
-  Then a row of client/partner logos is displayed
-  And logos scroll or are statically arranged in a row
-```
+#### Scenario: Client logo carousel
+
+- **GIVEN** the user scrolls past the portfolio
+- **THEN** a row of client/partner logos is displayed
+- **AND** logos scroll or are statically arranged in a row
 
 ### About
 
-```gherkin
-Scenario: About section
-  Given the user scrolls to the about section
-  Then the heading reads "About"
-  And a personal description paragraph is displayed
-  And an image or visual element accompanies the text
-```
+#### Scenario: About section
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** the heading reads "About"
+- **AND** a personal description paragraph is displayed
+- **AND** an image or visual element accompanies the text
 
 ### Services
 
-```gherkin
-Scenario: Services section
-  Given the user scrolls to the services section
-  Then the heading reads "Services"
-  And a list of services is displayed
-  And each service has an icon, title, and description
-```
+#### Scenario: Services section
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading reads "Services"
+- **AND** a list of services is displayed
+- **AND** each service has an icon, title, and description
 
 ### Skills / Counters
 
-```gherkin
-Scenario: Skills with animated counters
-  Given the user scrolls to the skills section
-  Then the heading reads "Skills"
-  And animated number counters are displayed (e.g. projects completed, happy clients)
-  And the counters animate on scroll into view
-```
+#### Scenario: Skills with animated counters
+
+- **GIVEN** the user scrolls to the skills section
+- **THEN** the heading reads "Skills"
+- **AND** animated number counters are displayed (e.g. projects completed, happy clients)
+- **AND** the counters animate on scroll into view
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonial carousel
-  Given the user scrolls to the testimonial section
-  Then the heading reads "Testimonial"
-  And a carousel of testimonials is displayed
-  And each testimonial shows a quote, name, and role
-  And navigation dots/arrows allow cycling through testimonials
-```
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** the heading reads "Testimonial"
+- **AND** a carousel of testimonials is displayed
+- **AND** each testimonial shows a quote, name, and role
+- **AND** navigation dots/arrows allow cycling through testimonials
 
 ### Journal / Blog
 
-```gherkin
-Scenario: Journal section
-  Given the user scrolls to the journal section
-  Then the heading reads "Journal"
-  And 3 blog post cards are displayed in a row
-  And each card shows an image, date, title, and excerpt
-```
+#### Scenario: Journal section
+
+- **GIVEN** the user scrolls to the journal section
+- **THEN** the heading reads "Journal"
+- **AND** 3 blog post cards are displayed in a row
+- **AND** each card shows an image, date, title, and excerpt
 
 ### Contact
 
-```gherkin
-Scenario: Contact form
-  Given the user scrolls to the contact section
-  Then the heading reads "Contact"
-  And a contact form is displayed with fields: Name, Email, Subject, Message
-  And a "Send" submit button is visible
-```
+#### Scenario: Contact form
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** the heading reads "Contact"
+- **AND** a contact form is displayed with fields: Name, Email, Subject, Message
+- **AND** a "Send" submit button is visible
 
 ### Footer
 
-```gherkin
-Scenario: Dark footer
-  Given the user scrolls to the footer
-  Then a dark (#191919) footer is displayed
-  And it contains the text "Made with Component Dock" linking to https://www.componentdock.com/
-  And social media icon links are present
-```
+#### Scenario: Dark footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark (#191919) footer is displayed
+- **AND** it contains the text "Made with Component Dock" linking to https://www.componentdock.com/
+- **AND** social media icon links are present
 
 ### Theme Toggle
 
-```gherkin
-Scenario: Dark/light mode toggle
-  Given the user clicks the moon/sun icon in the nav
-  Then the page switches between dark and light themes
-  And all text and background colors adjust accordingly
-  And the toggle icon changes (moon ↔ sun)
-```
+#### Scenario: Dark/light mode toggle
+
+- **GIVEN** the user clicks the moon/sun icon in the nav
+- **THEN** the page switches between dark and light themes
+- **AND** all text and background colors adjust accordingly
+- **AND** the toggle icon changes (moon ↔ sun)
 
 ## Verification checklist
 

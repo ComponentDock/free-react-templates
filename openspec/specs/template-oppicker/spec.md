@@ -54,126 +54,147 @@ The original screenshot shows a centered page with:
 - Light blue-gray (#f8f9fd) page background
 - Green accent (#52de97) for interactive elements
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Page renders with centered heading
+### Feature: Oppicker template behaviour
 
-```gherkin
+#### Scenario: Page renders with centered heading
+
 Feature: Multiselect Dropdown Page
 
-  Scenario: Page displays the heading
-    Given the user visits the page
-    Then a heading "Multiselect #01" is visible
-    And the heading is centered on the page
-```
+#### Scenario: Page displays the heading
 
-### Scenario: Select label is displayed
+- **GIVEN** the user visits the page
+- **THEN** a heading "Multiselect #01" is visible
+- **AND** the heading is centered on the page
 
-```gherkin
-  Scenario: Select label is visible
-    Given the user visits the page
-    Then the text "Select Language:" is visible to the left of the dropdown
-```
+#### Scenario: Select label is displayed
 
-### Scenario: Dropdown trigger shows placeholder
+- **GIVEN** the recreation is rendered
+- **THEN** the Select label is displayed behaves as described by the fidelity notes
 
-```gherkin
-  Scenario: Dropdown shows initial state
-    Given the user visits the page
-    Then the dropdown trigger button is visible
-    And the trigger text shows "None selected" or an empty selection state
-```
+#### Scenario: Select label is visible
 
-### Scenario: Opening the dropdown reveals options
+- **GIVEN** the user visits the page
+- **THEN** the text "Select Language:" is visible to the left of the dropdown
 
-```gherkin
-  Scenario: User opens the multiselect dropdown
-    Given the user visits the page
-    When the user clicks the dropdown trigger
-    Then a dropdown panel opens below the trigger
-    And the options "PHP", "JavaScript", "Java", "SQL", "jQuery", ".Net" are visible
-    And a "Select All" option is visible at the top of the list
-```
+#### Scenario: Dropdown trigger shows placeholder
 
-### Scenario: Selecting an option highlights it
+- **GIVEN** the recreation is rendered
+- **THEN** the Dropdown trigger shows placeholder behaves as described by the fidelity notes
 
-```gherkin
-  Scenario: User selects a single option
-    Given the dropdown is open
-    When the user clicks "PHP"
-    Then the checkbox next to "PHP" turns green (#52de97) with a white checkmark
-    And the trigger text updates to show "1 selected"
-```
+#### Scenario: Dropdown shows initial state
 
-### Scenario: Selecting multiple options
+- **GIVEN** the user visits the page
+- **THEN** the dropdown trigger button is visible
+- **AND** the trigger text shows "None selected" or an empty selection state
 
-```gherkin
-  Scenario: User selects multiple options
-    Given the dropdown is open
-    When the user clicks "PHP"
-    And the user clicks "JavaScript"
-    Then both checkboxes are green with white checkmarks
-    And the trigger text shows "2 selected"
-```
+#### Scenario: Opening the dropdown reveals options
 
-### Scenario: Select All option
+- **GIVEN** the recreation is rendered
+- **THEN** the Opening the dropdown reveals options behaves as described by the fidelity notes
 
-```gherkin
-  Scenario: User clicks Select All
-    Given the dropdown is open
-    When the user clicks "Select All"
-    Then all option checkboxes turn green
-    And the trigger text shows "6 selected" (or "All selected")
-```
+#### Scenario: User opens the multiselect dropdown
 
-### Scenario: Deselecting an option
+- **GIVEN** the user visits the page
+- **WHEN** the user clicks the dropdown trigger
+- **THEN** a dropdown panel opens below the trigger
+- **AND** the options "PHP", "JavaScript", "Java", "SQL", "jQuery", ".Net" are visible
+- **AND** a "Select All" option is visible at the top of the list
 
-```gherkin
-  Scenario: User deselects a previously selected option
-    Given "PHP" is selected
-    When the user clicks "PHP" again
-    Then the checkbox next to "PHP" returns to transparent border state
-    And the trigger text decrements the count
-```
+#### Scenario: Selecting an option highlights it
 
-### Scenario: Closing the dropdown
+- **GIVEN** the recreation is rendered
+- **THEN** the Selecting an option highlights it behaves as described by the fidelity notes
 
-```gherkin
-  Scenario: Dropdown closes on outside click
-    Given the dropdown is open
-    When the user clicks outside the dropdown area
-    Then the dropdown panel closes
-    And the selected options remain shown on the trigger
-```
+#### Scenario: User selects a single option
 
-### Scenario: Visual fidelity — colors and shadows
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "PHP"
+- **THEN** the checkbox next to "PHP" turns green (#52de97) with a white checkmark
+- **AND** the trigger text updates to show "1 selected"
 
-```gherkin
-  Scenario: Design tokens match reference
-    Given the user visits the page
-    Then the page background is light blue-gray (#f8f9fd)
-    And the heading text is black (#000)
-    And the select label text is gray
-    And the active checkbox background is green (#52de97)
-    And the dropdown trigger has a subtle box shadow
-    And the dropdown panel has a subtle box shadow
-    And all border radius values are 4px
-```
+#### Scenario: Selecting multiple options
 
-### Scenario: Accessibility
+- **GIVEN** the recreation is rendered
+- **THEN** the Selecting multiple options behaves as described by the fidelity notes
 
-```gherkin
-  Scenario: Keyboard navigation
-    Given the user visits the page
-    When the user tabs to the dropdown trigger
-    Then the trigger receives focus
-    When the user presses Enter or Space
-    Then the dropdown opens
-    When the user uses arrow keys
-    Then focus moves between options
-    When the user presses Space on an option
-    Then the option is toggled
-```
+#### Scenario: User selects multiple options
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "PHP"
+- **AND** the user clicks "JavaScript"
+- **THEN** both checkboxes are green with white checkmarks
+- **AND** the trigger text shows "2 selected"
+
+#### Scenario: Select All option
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Select All option behaves as described by the fidelity notes
+
+#### Scenario: User clicks Select All
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "Select All"
+- **THEN** all option checkboxes turn green
+- **AND** the trigger text shows "6 selected" (or "All selected")
+
+#### Scenario: Deselecting an option
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Deselecting an option behaves as described by the fidelity notes
+
+#### Scenario: User deselects a previously selected option
+
+- **GIVEN** "PHP" is selected
+- **WHEN** the user clicks "PHP" again
+- **THEN** the checkbox next to "PHP" returns to transparent border state
+- **AND** the trigger text decrements the count
+
+#### Scenario: Closing the dropdown
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Closing the dropdown behaves as described by the fidelity notes
+
+#### Scenario: Dropdown closes on outside click
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown area
+- **THEN** the dropdown panel closes
+- **AND** the selected options remain shown on the trigger
+
+#### Scenario: Visual fidelity — colors and shadows
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Visual fidelity — colors and shadows behaves as described by the fidelity notes
+
+#### Scenario: Design tokens match reference
+
+- **GIVEN** the user visits the page
+- **THEN** the page background is light blue-gray (#f8f9fd)
+- **AND** the heading text is black (#000)
+- **AND** the select label text is gray
+- **AND** the active checkbox background is green (#52de97)
+- **AND** the dropdown trigger has a subtle box shadow
+- **AND** the dropdown panel has a subtle box shadow
+- **AND** all border radius values are 4px
+
+#### Scenario: Accessibility
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Accessibility behaves as described by the fidelity notes
+
+#### Scenario: Keyboard navigation
+
+- **GIVEN** the user visits the page
+- **WHEN** the user tabs to the dropdown trigger
+- **THEN** the trigger receives focus
+- **WHEN** the user presses Enter or Space
+- **THEN** the dropdown opens
+- **WHEN** the user uses arrow keys
+- **THEN** focus moves between options
+- **WHEN** the user presses Space on an option
+- **THEN** the option is toggled
 
 ## Component Structure
 

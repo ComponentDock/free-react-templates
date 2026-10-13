@@ -12,6 +12,8 @@ Sidegate is a minimal sidebar navigation template recreating ColorLib Sidebar V0
 
 ### Sidebar
 
+#### Scenario: Sidebar
+
 - White background sidebar, 288px wide (w-72)
 - Profile section: circular photo, name "Craig David", title "Web Designer"
 - Navigation items: Feed (Home, with chevron), Explore (Search, with chevron), Notifications (Bell), Direct (Send), Stats (BarChart3), Sign out (LogOut)
@@ -22,11 +24,15 @@ Sidegate is a minimal sidebar navigation template recreating ColorLib Sidebar V0
 
 ### Main Content
 
+#### Scenario: Main Content
+
 - Light gray (#f5f5f5) background
 - 2-column responsive grid of post cards
 - 8 post cards with profile photo thumbnail, title, and date "Posted: Dec 17, 2019"
 
 ### Design
+
+#### Scenario: Design
 
 - Poppins font from Google Fonts
 - Neutral color scheme with blue-gray accent (#6c757d)
@@ -34,6 +40,8 @@ Sidegate is a minimal sidebar navigation template recreating ColorLib Sidebar V0
 - lucide-react for icons
 
 ### Testing
+
+#### Scenario: Testing
 
 - Sidebar: profile rendering, nav items, active state switching, mobile toggle, overlay close, desktop visibility, footer link
 - PostCard: title, date, image, custom className

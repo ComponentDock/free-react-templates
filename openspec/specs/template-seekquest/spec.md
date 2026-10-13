@@ -53,58 +53,68 @@ The template is a property/booking search form component:
 5. **Dropdown icons** — down-arrow icons positioned absolutely on the right side of select fields
 6. **Search icon** — magnifying glass SVG positioned absolutely on the right of the Location input
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: SeekQuest template behaviour
+
 Feature: SeekQuest property search form
 
-  Background:
-    Given the SeekQuest component is rendered on the page
+Background:
+- **GIVEN** the SeekQuest component is rendered on the page
 
-  Scenario: renders the form heading
-    Then a heading "SearchQuest" should be visible above the search form
+#### Scenario: renders the form heading
 
-  Scenario: renders all four filter fields
-    Then a Location text input should be visible with placeholder "City/Locality Name"
-    And a Property Type select should be visible with options including "Commercial", "Residential", "Villa"
-    And a Property Status select should be visible with options "Rent" and "Sale"
-    And a Price Limit select should be visible with options from "$5,000" to "$2,000,000"
+- **THEN** a heading "SearchQuest" should be visible above the search form
 
-  Scenario: renders the search button
-    Then a "Search Availability" button should be visible
-    And the button should display "Best Price Guaranteed!" as subtitle
+#### Scenario: renders all four filter fields
 
-  Scenario: form fields are interactive
-    When the user types "New York" in the Location input
-    Then the Location input should contain "New York"
+- **THEN** a Location text input should be visible with placeholder "City/Locality Name"
+- **AND** a Property Type select should be visible with options including "Commercial", "Residential", "Villa"
+- **AND** a Property Status select should be visible with options "Rent" and "Sale"
+- **AND** a Price Limit select should be visible with options from "$5,000" to "$2,000,000"
 
-  Scenario: property type can be selected
-    When the user selects "Villa" from the Property Type dropdown
-    Then the Property Type dropdown should show "Villa"
+#### Scenario: renders the search button
 
-  Scenario: property status can be selected
-    When the user selects "Rent" from the Property Status dropdown
-    Then the Property Status dropdown should show "Rent"
+- **THEN** a "Search Availability" button should be visible
+- **AND** the button should display "Best Price Guaranteed!" as subtitle
 
-  Scenario: price limit can be selected
-    When the user selects "$100,000" from the Price Limit dropdown
-    Then the Price Limit dropdown should show "$100,000"
+#### Scenario: form fields are interactive
 
-  Scenario: form submission
-    Given the user has filled in all form fields
-    When the user clicks the "Search Availability" button
-    Then the form should submit
+- **WHEN** the user types "New York" in the Location input
+- **THEN** the Location input should contain "New York"
 
-  Scenario: responsive layout on mobile
-    Given the viewport width is less than 768px
-    Then the form fields should be stacked vertically
-    And the form should have 20px padding
+#### Scenario: property type can be selected
 
-  Scenario: responsive layout on desktop
-    Given the viewport width is 768px or greater
-    Then the form fields should be arranged in a horizontal row
-    And the form should have 30px left padding
-```
+- **WHEN** the user selects "Villa" from the Property Type dropdown
+- **THEN** the Property Type dropdown should show "Villa"
+
+#### Scenario: property status can be selected
+
+- **WHEN** the user selects "Rent" from the Property Status dropdown
+- **THEN** the Property Status dropdown should show "Rent"
+
+#### Scenario: price limit can be selected
+
+- **WHEN** the user selects "$100,000" from the Price Limit dropdown
+- **THEN** the Price Limit dropdown should show "$100,000"
+
+#### Scenario: form submission
+
+- **GIVEN** the user has filled in all form fields
+- **WHEN** the user clicks the "Search Availability" button
+- **THEN** the form should submit
+
+#### Scenario: responsive layout on mobile
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the form fields should be stacked vertically
+- **AND** the form should have 20px padding
+
+#### Scenario: responsive layout on desktop
+
+- **GIVEN** the viewport width is 768px or greater
+- **THEN** the form fields should be arranged in a horizontal row
+- **AND** the form should have 30px left padding
 
 ## Verification Checklist
 - [ ] Component renders with correct heading

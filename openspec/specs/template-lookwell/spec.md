@@ -35,54 +35,61 @@ Recreation of ColorLib "The Look" — a dark-themed photography/photo gallery te
 5. **Contact Section** — Dark background (#081624). Title "Get in touch". Description paragraph. "send message" button (pill, white border on dark).
 6. **Footer** — Very dark background (#222222). Copyright text with "Component Dock" link replacing Colorlib attribution.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Lookwell — Photography Gallery Template
 
 #### Scenario: Header navigation renders correctly
-  - Given the user loads the Lookwell page
-  - Then a header with the logo "Lookwell" is visible
-  - And navigation links for Home, Gallery, Artists, Shop, News, and Contact are present
-  - And clicking each nav link scrolls to the corresponding section
+
+- **GIVEN** the user loads the Lookwell page
+- **THEN** a header with the logo "Lookwell" is visible
+- **AND** navigation links for Home, Gallery, Artists, Shop, News, and Contact are present
+- **AND** clicking each nav link scrolls to the corresponding section
 
 #### Scenario: Hero slider displays slides with overlay
-  - Given the user is on the Lookwell page
-  - Then a full-width hero slider is visible with 3 slides
-  - And each slide has a dark semi-transparent overlay over a background image
-  - And each slide displays a title, subtitle, artist name, date range, and "Read More" button
-  - And the slider auto-advances or responds to navigation controls
+
+- **GIVEN** the user is on the Lookwell page
+- **THEN** a full-width hero slider is visible with 3 slides
+- **AND** each slide has a dark semi-transparent overlay over a background image
+- **AND** each slide displays a title, subtitle, artist name, date range, and "Read More" button
+- **AND** the slider auto-advances or responds to navigation controls
 
 #### Scenario: Gallery section shows images in grid layout
-  - Given the user scrolls to the gallery section
-  - Then a two-column layout is displayed
-  - And the left column contains an editorial quote and descriptive paragraph
-  - And 6 gallery items are shown in a 2-column grid
-  - And each gallery item has a thumbnail, title, artist name, and "view gallery" link
-  - And a "see all galleries" link is visible at the bottom right
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a two-column layout is displayed
+- **AND** the left column contains an editorial quote and descriptive paragraph
+- **AND** 6 gallery items are shown in a 2-column grid
+- **AND** each gallery item has a thumbnail, title, artist name, and "view gallery" link
+- **AND** a "see all galleries" link is visible at the bottom right
 
 #### Scenario: Blog section shows latest posts
-  - Given the user scrolls to the blog section
-  - Then the heading "Latest from the blog" is visible
-  - And 2 blog post cards are displayed side by side
-  - And each card has a thumbnail image, category tag, title, date, excerpt, and "Read More" link
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading "Latest from the blog" is visible
+- **AND** 2 blog post cards are displayed side by side
+- **AND** each card has a thumbnail image, category tag, title, date, excerpt, and "Read More" link
 
 #### Scenario: Contact section has message form
-  - Given the user scrolls to the contact section
-  - Then a dark background section with "Get in touch" heading is visible
-  - And a description paragraph is shown
-  - And a "send message" button is present
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a dark background section with "Get in touch" heading is visible
+- **AND** a description paragraph is shown
+- **AND** a "send message" button is present
 
 #### Scenario: Footer displays copyright with Component Dock link
-  - Given the user scrolls to the footer
-  - Then a copyright notice is visible
-  - And a link to "https://www.componentdock.com/" labeled "Component Dock" is present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a copyright notice is visible
+- **AND** a link to "https://www.componentdock.com/" labeled "Component Dock" is present
 
 #### Scenario: Responsive layout adapts to mobile
-  - Given the user views the page on a mobile viewport (375px width)
-  - Then the navigation collapses to a hamburger menu
-  - And the hero slider text is readable and centered
-  - And gallery items stack to single column
-  - And blog cards stack vertically
+
+- **GIVEN** the user views the page on a mobile viewport (375px width)
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** the hero slider text is readable and centered
+- **AND** gallery items stack to single column
+- **AND** blog cards stack vertically
 
 ## Verification checklist
 

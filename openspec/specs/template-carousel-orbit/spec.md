@@ -18,7 +18,7 @@ Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-
   - Buttons / Cards: Crisp modern layout with clean subtle shadows (`rounded-md`, clean borders)
   - Interactive Carousel: Horizontal product card slider with navigation controls (prev/next buttons)
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Header / Navigation Section
 
@@ -27,9 +27,9 @@ Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-
 
 #### Scenario: User views the navigation bar
 
-- **Given** the user visits the Carousel Orbit template home page
-- **Then** they see the navigation bar with brand title and links
-- **And** they can click links to jump to page sections
+- **GIVEN** the user visits the Carousel Orbit template home page
+- **THEN** they see the navigation bar with brand title and links
+- **AND** they can click links to jump to page sections
 
 ### Requirement 2: Hero & Showcase Intro Section
 
@@ -37,8 +37,8 @@ Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-
 
 #### Scenario: User views the hero section
 
-- **Given** the user lands on the homepage
-- **Then** they see the "Carousel #2" header and "Our Products" section intro
+- **GIVEN** the user lands on the homepage
+- **THEN** they see the "Carousel #2" header and "Our Products" section intro
 
 ### Requirement 3: Product Carousel / Grid Showcase Section
 
@@ -47,9 +47,9 @@ Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-
 
 #### Scenario: User navigates the product carousel
 
-- **Given** the product showcase is displayed with multiple product cards
-- **When** the user clicks the Next or Prev carousel buttons or scrolls
-- **Then** the carousel items shift accordingly and remain responsive
+- **GIVEN** the product showcase is displayed with multiple product cards
+- **WHEN** the user clicks the Next or Prev carousel buttons or scrolls
+- **THEN** the carousel items shift accordingly and remain responsive
 
 ### Requirement 4: Footer Section
 
@@ -57,8 +57,8 @@ Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-
 
 #### Scenario: User checks the footer
 
-- **Given** the user scrolls to the bottom of the page
-- **Then** they see the copyright notice and the required Component Dock link
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** they see the copyright notice and the required Component Dock link
 
 ## Verification Checklist
 

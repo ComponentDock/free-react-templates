@@ -74,124 +74,98 @@ Replace FontAwesome/Linearicons with `lucide-react`:
 - Email → `Mail` icon
 - Phone → `Phone` icon
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Full-page centered layout
+### Feature: ContactArk template behaviour
 
-```gherkin
-Given the user opens the ContactArk page
-Then the page background is light gray (#e6e6e6)
-And the form is centered both vertically and horizontally
-And the form container is 550px wide
-```
+#### Scenario: Full-page centered layout
 
-### Scenario: Form title
+- **GIVEN** the user opens the ContactArk page
+- **THEN** the page background is light gray (#e6e6e6)
+- **AND** the form is centered both vertically and horizontally
+- **AND** the form container is 550px wide
 
-```gherkin
-Given the form is rendered
-Then a title "Get in Touch" is displayed at the top
-And the title uses Oswald-Medium font at 30px
-And the title color is dark charcoal (#43383e)
-```
+#### Scenario: Form title
 
-### Scenario: Name input field
+- **GIVEN** the form is rendered
+- **THEN** a title "Get in Touch" is displayed at the top
+- **AND** the title uses Oswald-Medium font at 30px
+- **AND** the title color is dark charcoal (#43383e)
 
-```gherkin
-Given the form is rendered
-Then a Name input is present with placeholder "Name"
-And a User icon is displayed on the left side of the Name input
-And the input has a white background and 62px height
-```
+#### Scenario: Name input field
 
-### Scenario: Email input field
+- **GIVEN** the form is rendered
+- **THEN** a Name input is present with placeholder "Name"
+- **AND** a User icon is displayed on the left side of the Name input
+- **AND** the input has a white background and 62px height
 
-```gherkin
-Given the form is rendered
-Then an Email input is present with placeholder "Email"
-And a Mail icon is displayed on the left side of the Email input
-And the input has a white background and 62px height
-```
+#### Scenario: Email input field
 
-### Scenario: Phone input field
+- **GIVEN** the form is rendered
+- **THEN** an Email input is present with placeholder "Email"
+- **AND** a Mail icon is displayed on the left side of the Email input
+- **AND** the input has a white background and 62px height
 
-```gherkin
-Given the form is rendered
-Then a Phone input is present with placeholder "Phone"
-And a Phone icon is displayed on the left side of the Phone input
-And the input has a white background and 62px height
-```
+#### Scenario: Phone input field
 
-### Scenario: Message textarea
+- **GIVEN** the form is rendered
+- **THEN** a Phone input is present with placeholder "Phone"
+- **AND** a Phone icon is displayed on the left side of the Phone input
+- **AND** the input has a white background and 62px height
 
-```gherkin
-Given the form is rendered
-Then a Message textarea is present with placeholder "Your message..."
-And the textarea has a white background and minimum height of 199px
-```
+#### Scenario: Message textarea
 
-### Scenario: Send copy checkbox
+- **GIVEN** the form is rendered
+- **THEN** a Message textarea is present with placeholder "Your message..."
+- **AND** the textarea has a white background and minimum height of 199px
 
-```gherkin
-Given the form is rendered
-Then a checkbox labeled "Send copy to my email" is present
-And the checkbox is unchecked by default
-```
+#### Scenario: Send copy checkbox
 
-### Scenario: Send Email button
+- **GIVEN** the form is rendered
+- **THEN** a checkbox labeled "Send copy to my email" is present
+- **AND** the checkbox is unchecked by default
 
-```gherkin
-Given the form is rendered
-Then a "Send Email" button is displayed below the checkbox
-And the button has a pill shape (border-radius 31px)
-And the button displays a magenta-to-red gradient background
-And the button text is white and centered
-And on hover the gradient slides in from left to right
-```
+#### Scenario: Send Email button
 
-### Scenario: Field validation — name required
+- **GIVEN** the form is rendered
+- **THEN** a "Send Email" button is displayed below the checkbox
+- **AND** the button has a pill shape (border-radius 31px)
+- **AND** the button displays a magenta-to-red gradient background
+- **AND** the button text is white and centered
+- **AND** on hover the gradient slides in from left to right
 
-```gherkin
-Given the user leaves the Name field empty and submits
-Then an error tooltip appears saying "Name is required"
-And the error tooltip has a red border and white background
-```
+#### Scenario: Field validation — name required
 
-### Scenario: Field validation — email format
+- **GIVEN** the user leaves the Name field empty and submits
+- **THEN** an error tooltip appears saying "Name is required"
+- **AND** the error tooltip has a red border and white background
 
-```gherkin
-Given the user enters an invalid email and submits
-Then an error tooltip appears saying "Valid email is required: ex@abc.xyz"
-```
+#### Scenario: Field validation — email format
 
-### Scenario: Field validation — phone required
+- **GIVEN** the user enters an invalid email and submits
+- **THEN** an error tooltip appears saying "Valid email is required: ex@abc.xyz"
 
-```gherkin
-Given the user leaves the Phone field empty and submits
-Then an error tooltip appears saying "Phone is required"
-```
+#### Scenario: Field validation — phone required
 
-### Scenario: Field validation — message required
+- **GIVEN** the user leaves the Phone field empty and submits
+- **THEN** an error tooltip appears saying "Phone is required"
 
-```gherkin
-Given the user leaves the Message field empty and submits
-Then an error tooltip appears saying "Message is required"
-```
+#### Scenario: Field validation — message required
 
-### Scenario: Successful form submission
+- **GIVEN** the user leaves the Message field empty and submits
+- **THEN** an error tooltip appears saying "Message is required"
 
-```gherkin
-Given the user fills all fields with valid data
-When the user clicks "Send Email"
-Then the form submits successfully
-```
+#### Scenario: Successful form submission
 
-### Scenario: Responsive layout
+- **GIVEN** the user fills all fields with valid data
+- **WHEN** the user clicks "Send Email"
+- **THEN** the form submits successfully
 
-```gherkin
-Given the user views the page on a viewport narrower than 576px
-Then the form container fills the available width with padding
-And all inputs and button remain usable
-```
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a viewport narrower than 576px
+- **THEN** the form container fills the available width with padding
+- **AND** all inputs and button remain usable
 
 ## Verification Checklist
 

@@ -112,65 +112,75 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Bottom row: copyright text (left) + social icons (right: TripAdvisor, Facebook, Twitter)
 - Divider line between content and bottom row
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Casamora template behaviour
+
 Feature: Casamora Hotel Template
 
-  Background:
-    Given the Casamora template is loaded
+Background:
+- **GIVEN** the Casamora template is loaded
 
-  Scenario: Navbar displays logo and navigation
-    Then the logo "Casamora" is visible
-    And navigation links include Home, Rooms, About, Events, Contact, Reservation Form
-    And the hamburger menu toggle is visible on mobile
+#### Scenario: Navbar displays logo and navigation
 
-  Scenario: Hero section renders with parallax background
-    Then a full-width hero background image is displayed
-    And the heading "Enjoy A Luxury Experience" is visible
-    And a mouse scroll indicator is shown
+- **THEN** the logo "Casamora" is visible
+- **AND** navigation links include Home, Rooms, About, Events, Contact, Reservation Form
+- **AND** the hamburger menu toggle is visible on mobile
 
-  Scenario: Booking form accepts check-in and check-out dates
-    When the user views the Check Availability section
-    Then Check In and Check Out date inputs are present
-    And Adults and Children select dropdowns are present
-    And the "Check Availability" button is visible
+#### Scenario: Hero section renders with parallax background
 
-  Scenario: About section displays hotel description
-    Then a two-column layout with image and text is shown
-    And the heading "Welcome to Casamora" is visible
-    And "Read More" and "See video" CTAs are present
+- **THEN** a full-width hero background image is displayed
+- **AND** the heading "Enjoy A Luxury Experience" is visible
+- **AND** a mouse scroll indicator is shown
 
-  Scenario: Room pricing shows offers
-    Then two room cards are displayed side by side
-    And each card shows a price, room name, and description
-    And each card has a "Book Now" button
-    And a "View All Rooms" button is centered below
+#### Scenario: Booking form accepts check-in and check-out dates
 
-  Scenario: Gallery slider shows images
-    Then a horizontal image carousel is displayed
-    And multiple hotel images are available in the slider
-    And a "View More Photos" link is shown below
+- **WHEN** the user views the Check Availability section
+- **THEN** Check In and Check Out date inputs are present
+- **AND** Adults and Children select dropdowns are present
+- **AND** the "Check Availability" button is visible
 
-  Scenario: Testimonials carousel renders
-    Then testimonial cards are displayed in a carousel
-    And each card shows an author photo, quote, and name
+#### Scenario: About section displays hotel description
 
-  Scenario: Events section shows blog-style cards
-    Then three event cards are displayed in a grid
-    And each card has an image, date, and title
+- **THEN** a two-column layout with image and text is shown
+- **AND** the heading "Welcome to Casamora" is visible
+- **AND** "Read More" and "See video" CTAs are present
 
-  Scenario: CTA banner promotes reservations
-    Then a call-to-action banner is displayed
-    And a "Reserve Now" button is visible
+#### Scenario: Room pricing shows offers
 
-  Scenario: Footer displays links and contact info
-    Then the footer has 4 columns of content
-    And contact information includes address, phone, and email
-    And a newsletter signup form is present
-    And social media icons are displayed
-    And a copyright line is shown at the bottom
-```
+- **THEN** two room cards are displayed side by side
+- **AND** each card shows a price, room name, and description
+- **AND** each card has a "Book Now" button
+- **AND** a "View All Rooms" button is centered below
+
+#### Scenario: Gallery slider shows images
+
+- **THEN** a horizontal image carousel is displayed
+- **AND** multiple hotel images are available in the slider
+- **AND** a "View More Photos" link is shown below
+
+#### Scenario: Testimonials carousel renders
+
+- **THEN** testimonial cards are displayed in a carousel
+- **AND** each card shows an author photo, quote, and name
+
+#### Scenario: Events section shows blog-style cards
+
+- **THEN** three event cards are displayed in a grid
+- **AND** each card has an image, date, and title
+
+#### Scenario: CTA banner promotes reservations
+
+- **THEN** a call-to-action banner is displayed
+- **AND** a "Reserve Now" button is visible
+
+#### Scenario: Footer displays links and contact info
+
+- **THEN** the footer has 4 columns of content
+- **AND** contact information includes address, phone, and email
+- **AND** a newsletter signup form is present
+- **AND** social media icons are displayed
+- **AND** a copyright line is shown at the bottom
 
 ## Verification Checklist
 

@@ -89,98 +89,112 @@ upcoming events, and a dark footer.
     Quick Menu (links), Ministries (links), Get In Touch (address, phone,
     email). Social icons (Facebook, Twitter, Instagram). Copyright bar.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Devotion template behaviour
+
 Feature: Devotion — Charity/Church Landing Template
 
-  Scenario: Navbar renders with logo and navigation links
-    Given the page loads
-    Then the navbar is visible with the "Devotion" logo text
-    And navigation links "About", "Services", "Sermons", "Events", "Contact" are present
-    And the mobile hamburger menu button is visible on small viewports
+#### Scenario: Navbar renders with logo and navigation links
 
-  Scenario: Hero slider displays with background images and CTAs
-    Given the page loads
-    Then the hero section displays a full-bleed background image
-    And a dark overlay covers the background image
-    And the heading text is visible on the hero
-    And CTA pill buttons are visible on the hero
+- **GIVEN** the page loads
+- **THEN** the navbar is visible with the "Devotion" logo text
+- **AND** navigation links "About", "Services", "Sermons", "Events", "Contact" are present
+- **AND** the mobile hamburger menu button is visible on small viewports
 
-  Scenario: Upcoming events band shows countdown
-    Given the page loads
-    Then the red events band is visible below the hero
-    And the band displays "Upcoming Events" heading
-    And a countdown or event description is visible
+#### Scenario: Hero slider displays with background images and CTAs
 
-  Scenario: Church services section displays three service items
-    Given the page loads
-    Then three church service items are displayed in a grid
-    And each service item has a primary-colored icon
-    And each service item has a title and description text
+- **GIVEN** the page loads
+- **THEN** the hero section displays a full-bleed background image
+- **AND** a dark overlay covers the background image
+- **AND** the heading text is visible on the hero
+- **AND** CTA pill buttons are visible on the hero
 
-  Scenario: Feature cards section displays three feature items
-    Given the page loads
-    Then three feature cards are displayed
-    And each card has an icon, title, and description
-    And each card has a "Read More" link
+#### Scenario: Upcoming events band shows countdown
 
-  Scenario: God is Love section renders with sermon content
-    Given the page loads
-    Then the "God is Love" section is visible
-    And the section shows a preacher attribution
-    And a "Watch Video" CTA button is present
+- **GIVEN** the page loads
+- **THEN** the red events band is visible below the hero
+- **AND** the band displays "Upcoming Events" heading
+- **AND** a countdown or event description is visible
 
-  Scenario: More Features section renders additional items
-    Given the page loads
-    Then the "More Features" heading is visible
-    And additional feature items are displayed
+#### Scenario: Church services section displays three service items
 
-  Scenario: Our Mission section renders with CTA
-    Given the page loads
-    Then the "Our Mission" section is visible
-    And a "Read More" link is present
+- **GIVEN** the page loads
+- **THEN** three church service items are displayed in a grid
+- **AND** each service item has a primary-colored icon
+- **AND** each service item has a title and description text
 
-  Scenario: Sermons carousel displays sermon entries
-    Given the page loads
-    Then the "Listen To Our Sermons" section is visible
-    And sermon entries are displayed in a carousel
-    And each entry shows a sermon title and date
+#### Scenario: Feature cards section displays three feature items
 
-  Scenario: Testimonies carousel displays testimonial cards
-    Given the page loads
-    Then the "Testimonies" section is visible
-    And testimonial cards with quotes and author names are displayed
+- **GIVEN** the page loads
+- **THEN** three feature cards are displayed
+- **AND** each card has an icon, title, and description
+- **AND** each card has a "Read More" link
 
-  Scenario: Upcoming events carousel displays event cards
-    Given the page loads
-    Then the "Upcoming Events" section is visible
-    And event cards with images, dates, titles, and descriptions are displayed
+#### Scenario: God is Love section renders with sermon content
 
-  Scenario: Footer renders with columns and social links
-    Given the page loads
-    Then the footer is visible with dark background
-    And the footer has About, Quick Menu, Ministries, and Get In Touch columns
-    And social media icon links are present
-    And a copyright notice is displayed
-    And a "Component Dock" link is present in the footer
+- **GIVEN** the page loads
+- **THEN** the "God is Love" section is visible
+- **AND** the section shows a preacher attribution
+- **AND** a "Watch Video" CTA button is present
 
-  Scenario: All sections have correct design tokens applied
-    Given the page loads
-    Then headings use "Amatic SC" font family
-    And body text uses "Work Sans" font family
-    And primary accent color is #f23a2e red
-    And CTA buttons have pill shape (30px border-radius)
-    And section backgrounds alternate between white, light gray, and dark overlay
+#### Scenario: More Features section renders additional items
 
-  Scenario: Responsive layout adapts to mobile viewports
-    Given the browser viewport is 375px wide
-    Then the navbar shows a hamburger menu
-    And the hero slider maintains full-width display
-    And church service items stack vertically
-    And feature cards stack vertically
-    And the footer columns stack vertically
-```
+- **GIVEN** the page loads
+- **THEN** the "More Features" heading is visible
+- **AND** additional feature items are displayed
+
+#### Scenario: Our Mission section renders with CTA
+
+- **GIVEN** the page loads
+- **THEN** the "Our Mission" section is visible
+- **AND** a "Read More" link is present
+
+#### Scenario: Sermons carousel displays sermon entries
+
+- **GIVEN** the page loads
+- **THEN** the "Listen To Our Sermons" section is visible
+- **AND** sermon entries are displayed in a carousel
+- **AND** each entry shows a sermon title and date
+
+#### Scenario: Testimonies carousel displays testimonial cards
+
+- **GIVEN** the page loads
+- **THEN** the "Testimonies" section is visible
+- **AND** testimonial cards with quotes and author names are displayed
+
+#### Scenario: Upcoming events carousel displays event cards
+
+- **GIVEN** the page loads
+- **THEN** the "Upcoming Events" section is visible
+- **AND** event cards with images, dates, titles, and descriptions are displayed
+
+#### Scenario: Footer renders with columns and social links
+
+- **GIVEN** the page loads
+- **THEN** the footer is visible with dark background
+- **AND** the footer has About, Quick Menu, Ministries, and Get In Touch columns
+- **AND** social media icon links are present
+- **AND** a copyright notice is displayed
+- **AND** a "Component Dock" link is present in the footer
+
+#### Scenario: All sections have correct design tokens applied
+
+- **GIVEN** the page loads
+- **THEN** headings use "Amatic SC" font family
+- **AND** body text uses "Work Sans" font family
+- **AND** primary accent color is #f23a2e red
+- **AND** CTA buttons have pill shape (30px border-radius)
+- **AND** section backgrounds alternate between white, light gray, and dark overlay
+
+#### Scenario: Responsive layout adapts to mobile viewports
+
+- **GIVEN** the browser viewport is 375px wide
+- **THEN** the navbar shows a hamburger menu
+- **AND** the hero slider maintains full-width display
+- **AND** church service items stack vertically
+- **AND** feature cards stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

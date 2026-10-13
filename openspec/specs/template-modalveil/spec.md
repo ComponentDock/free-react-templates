@@ -49,77 +49,88 @@ corners (7px), a deep box-shadow, and the form inputs have thin gray borders
 with no focus glow. The overall aesthetic is clean, modern, and focused on
 conversion — the image draws attention while the form captures leads.
 
-## Gherkin Requirements
+## Requirements
 
-### Background
-Given the page loads with a centered layout
-When the viewport is displayed
-Then the content is vertically and horizontally centered
-And the page title "Modal #5" is visible
-And a "Launch modal" button is displayed below the title
+### Feature: ModalVeil template behaviour
 
-### Scenario: Modal opens on button click
-Given the page is loaded
-When the user clicks the "Launch modal" button
-Then a large modal dialog appears centered in the viewport
-And the modal displays a split-screen layout
-And the left half shows a background image
-And the right half shows a heading "Sign up to access all the resources"
-And the right half shows a description paragraph
-And the right half shows a sign-up form
+**Background**
+- **GIVEN** the page loads with a centered layout
+- **WHEN** the viewport is displayed
+- **THEN** the content is vertically and horizontally centered
+- **AND** the page title "Modal #5" is visible
+- **AND** a "Launch modal" button is displayed below the title
 
-### Scenario: Sign-up form contains required fields
-Given the modal is open
-When the user inspects the form
-Then an "Email Address" input field is visible
-And a "First Name" input field is visible
-And a "Password" input field is visible
-And a "Sign up" submit button is visible
-And a privacy policy note is displayed below the button
+#### Scenario: Modal opens on button click
 
-### Scenario: Form submission with valid data
-Given the modal is open
-When the user enters a valid email address
-And the user enters a first name
-And the user enters a password
-And the user clicks the "Sign up" button
-Then the form submits (or shows validation feedback)
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a large modal dialog appears centered in the viewport
+- **AND** the modal displays a split-screen layout
+- **AND** the left half shows a background image
+- **AND** the right half shows a heading "Sign up to access all the resources"
+- **AND** the right half shows a description paragraph
+- **AND** the right half shows a sign-up form
 
-### Scenario: Form submission with empty fields
-Given the modal is open
-When the user clicks the "Sign up" button without entering data
-Then the email field shows a validation error
-And the form does not submit
+#### Scenario: Sign-up form contains required fields
 
-### Scenario: Modal closes on close button click
-Given the modal is open
-When the user clicks the close button (X)
-Then the modal closes with a fade-out animation
-And the page content is visible again
+- **GIVEN** the modal is open
+- **WHEN** the user inspects the form
+- **THEN** an "Email Address" input field is visible
+- **AND** a "First Name" input field is visible
+- **AND** a "Password" input field is visible
+- **AND** a "Sign up" submit button is visible
+- **AND** a privacy policy note is displayed below the button
 
-### Scenario: Modal closes on backdrop click
-Given the modal is open
-When the user clicks the dark backdrop area outside the modal
-Then the modal closes
-And the page content is visible again
+#### Scenario: Form submission with valid data
 
-### Scenario: Modal closes on Escape key
-Given the modal is open
-When the user presses the Escape key
-Then the modal closes
-And the page content is visible again
+- **GIVEN** the modal is open
+- **WHEN** the user enters a valid email address
+- **AND** the user enters a first name
+- **AND** the user enters a password
+- **AND** the user clicks the "Sign up" button
+- **THEN** the form submits (or shows validation feedback)
 
-### Scenario: Modal keyboard accessibility
-Given the modal is open
-When the user presses Tab repeatedly
-Then focus cycles through the modal form fields only
-And focus does not escape to the background page
+#### Scenario: Form submission with empty fields
 
-### Scenario: Responsive layout
-Given the modal is open on a mobile viewport (< 768px)
-Then the split-screen layout stacks vertically
-And the image appears above the form content
-And all form fields remain usable
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "Sign up" button without entering data
+- **THEN** the email field shows a validation error
+- **AND** the form does not submit
+
+#### Scenario: Modal closes on close button click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes with a fade-out animation
+- **AND** the page content is visible again
+
+#### Scenario: Modal closes on backdrop click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the dark backdrop area outside the modal
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+#### Scenario: Modal closes on Escape key
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+#### Scenario: Modal keyboard accessibility
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Tab repeatedly
+- **THEN** focus cycles through the modal form fields only
+- **AND** focus does not escape to the background page
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the modal is open on a mobile viewport (< 768px)
+- **THEN** the split-screen layout stacks vertically
+- **AND** the image appears above the form content
+- **AND** all form fields remain usable
 
 ## Verification Checklist
 

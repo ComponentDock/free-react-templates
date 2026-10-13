@@ -99,3 +99,109 @@ Embrace is a charity & donation template. It recreates the ColorLib **Charity** 
 - Heading font: Montserrat, 700 weight
 - Button style: rounded, primary color bg, white text
 - Section alternating: white / light gray
+
+## Requirements
+
+### Feature: Navbar
+
+- Fixed top, transparent on hero (becomes white on scroll)
+- Logo: heart icon + "Embrace" text
+- Nav links: Home, About, News, Causes, Pages
+- "Donate" CTA button (primary color, rounded)
+
+#### Scenario: Navbar renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Navbar band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Hero
+
+- Full-width background image with dark overlay
+- Heading: "Donate Together we can make a difference"
+- Subtext + "Donate Now" button (white, rounded)
+- Full viewport height
+
+#### Scenario: Hero renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Hero band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Service Intro
+
+- 3-column cards overlapping hero bottom
+- Icons: Wallet (Give Donation), Heart (Become Volunteer), GraduationCap (Give Scholarship)
+- Each card: icon + heading + description + "Learn More" link
+- White background cards with shadow
+
+#### Scenario: Service Intro renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Service Intro band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Causes (Most Popular Causes)
+
+- Section heading + lead text
+- 3 cause cards: image, progress bar, raised/goal amounts, title, date, description, "Donate Now!" button
+- Data: Help Children Food ($49,112/$50,000), Help Children Health ($28,127/$30,000), Help Children Education ($21,973/$100,000)
+
+#### Scenario: Causes (Most Popular Causes) renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Causes (Most Popular Causes) band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Latest Donations
+
+- Dark background with background image
+- 4 donor profiles: circular photo, name, donation amount
+- Donors: Linda Reyez ($500), Chris Worth ($1,500), Janet Morris ($250), Jessa Sy ($400)
+
+#### Scenario: Latest Donations renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Latest Donations band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Testimonials ("What People Says")
+
+- Carousel of quotes
+- Each: circular photo, quote text, author name
+- Testimonials from Mike Fisher, Jorge Smith, Brandon White
+
+#### Scenario: Testimonials ("What People Says") renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Testimonials ("What People Says") band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Success Stories
+
+- Split layout: left image, right text
+- Heading + paragraph + "Read More" button
+
+#### Scenario: Success Stories renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Success Stories band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: News / About / Gallery
+
+- 3-column layout:
+  - News: 2 news items with date, title, description, share/comment counts
+  - About: image + text + "Learn More" button
+  - Gallery: image grid/carousel with "View all gallery" button
+
+#### Scenario: News / About / Gallery renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the News / About / Gallery band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Footer
+
+- 3 columns:
+  - About Us: text + social icons (Twitter, Facebook, Github, Dribbble, LinkedIn, YouTube)
+  - Contact Info: address, email, phone with icons
+  - Donation: text + "Donate Now" button
+- Copyright bar: "More templates at Component Dock" + back-to-top link
+
+#### Scenario: Footer renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Footer band SHALL be present at its documented position with the structure, copy and tokens named above

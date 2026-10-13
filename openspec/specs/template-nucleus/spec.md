@@ -77,72 +77,74 @@ Extracted from the live preview CSS (https://preview.colorlib.com/theme/atomic/c
 
 ## Requirements
 
-### Scenario: Page renders with navbar
+### Feature: Nucleus template behaviour
 
-- **Given** the user visits the Nucleus page
-- **Then** a dark navbar is visible at the top with the "Nucleus" logo on the left
-- **And** navigation links "Home", "About", "Services", "Gallery", "Blog", "Contact" are visible on the right
+#### Scenario: Page renders with navbar
 
-### Scenario: Navbar mobile toggle
+- **GIVEN** the user visits the Nucleus page
+- **THEN** a dark navbar is visible at the top with the "Nucleus" logo on the left
+- **AND** navigation links "Home", "About", "Services", "Gallery", "Blog", "Contact" are visible on the right
 
-- **Given** the viewport is mobile (< 768px)
-- **When** the user clicks the hamburger menu icon
-- **Then** the navigation links dropdown appears
-- **When** the user clicks the hamburger menu icon again
-- **Then** the navigation links dropdown is hidden
+#### Scenario: Navbar mobile toggle
 
-### Scenario: Hero section renders
+- **GIVEN** the viewport is mobile (< 768px)
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** the navigation links dropdown appears
+- **WHEN** the user clicks the hamburger menu icon again
+- **THEN** the navigation links dropdown is hidden
 
-- **Given** the user scrolls to the hero section
-- **Then** a full-width background image is visible
-- **And** a video play button icon is centered over the image
-- **And** the heading "Design a better website template." is displayed
-- **And** a "Free Download" CTA button in primary blue is visible
+#### Scenario: Hero section renders
 
-### Scenario: Feature cards render
+- **GIVEN** the user scrolls to the hero section
+- **THEN** a full-width background image is visible
+- **AND** a video play button icon is centered over the image
+- **AND** the heading "Design a better website template." is displayed
+- **AND** a "Free Download" CTA button in primary blue is visible
 
-- **Given** the user scrolls past the hero
-- **Then** 3 feature cards are displayed in a row
-- **And** each card has an icon, a heading, and a description paragraph
+#### Scenario: Feature cards render
 
-### Scenario: Portfolio grid renders
+- **GIVEN** the user scrolls past the hero
+- **THEN** 3 feature cards are displayed in a row
+- **AND** each card has an icon, a heading, and a description paragraph
 
-- **Given** the user scrolls to the portfolio section
-- **Then** a centered heading "Good Design is a Good Start" is visible
-- **And** a responsive grid of 4 portfolio images is displayed
-- **And** hovering over an image shows an overlay effect
+#### Scenario: Portfolio grid renders
 
-### Scenario: Services section renders
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** a centered heading "Good Design is a Good Start" is visible
+- **AND** a responsive grid of 4 portfolio images is displayed
+- **AND** hovering over an image shows an overlay effect
 
-- **Given** the user scrolls to the services section
-- **Then** 6 service items are displayed on a light gray background
-- **And** each item has an icon and a title (e.g. "Regular Update", "Infinite Posibilities")
+#### Scenario: Services section renders
 
-### Scenario: Blog section renders
+- **GIVEN** the user scrolls to the services section
+- **THEN** 6 service items are displayed on a light gray background
+- **AND** each item has an icon and a title (e.g. "Regular Update", "Infinite Posibilities")
 
-- **Given** the user scrolls to the blog section
-- **Then** 4 blog article cards are displayed in a responsive grid
-- **And** each card shows an image, a date, a title, and an excerpt
+#### Scenario: Blog section renders
 
-### Scenario: Counter strip animates
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 4 blog article cards are displayed in a responsive grid
+- **AND** each card shows an image, a date, a title, and an excerpt
 
-- **Given** the user scrolls to the counter strip (blue background)
-- **Then** 3 counter items are displayed: "Lines of Codes", "Number of Projects", "Happy Clients"
-- **And** the numbers animate from 0 to their target values (99399, 99, 124)
-- **And** the animation triggers when the strip enters the viewport
+#### Scenario: Counter strip animates
 
-### Scenario: Footer renders
+- **GIVEN** the user scrolls to the counter strip (blue background)
+- **THEN** 3 counter items are displayed: "Lines of Codes", "Number of Projects", "Happy Clients"
+- **AND** the numbers animate from 0 to their target values (99399, 99, 124)
+- **AND** the animation triggers when the strip enters the viewport
 
-- **Given** the user scrolls to the bottom
-- **Then** a footer on a light gray background is visible
-- **And** it contains a brand section, quick links, and a subscribe form
-- **And** a "Component Dock" link is present in the footer
+#### Scenario: Footer renders
 
-### Scenario: Responsive layout
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a footer on a light gray background is visible
+- **AND** it contains a brand section, quick links, and a subscribe form
+- **AND** a "Component Dock" link is present in the footer
 
-- **Given** the user resizes the viewport to mobile width
-- **Then** the navbar collapses to a hamburger menu
-- **And** the hero text is centered
-- **And** feature cards stack vertically
-- **And** the portfolio grid adjusts to fewer columns
-- **And** the footer columns stack vertically
+#### Scenario: Responsive layout
+
+- **GIVEN** the user resizes the viewport to mobile width
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero text is centered
+- **AND** feature cards stack vertically
+- **AND** the portfolio grid adjusts to fewer columns
+- **AND** the footer columns stack vertically

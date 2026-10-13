@@ -41,100 +41,112 @@ Stack: React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict).
 | 9 | `#blog-section` | Blog: centered heading + description, 3 blog entries (horizontal: image left + title + date + excerpt + "Read More" link). | `picsum.photos` for blog images. Responsive: stacked on mobile. |
 | 10 | `footer.site-footer` | Footer: 3 columns — About Us (text), Quick Links (nav list), Follow Us (social icons) + Newsletter subscription (email input + Send button). Copyright bar. | Social icons via `lucide-react`. Newsletter form. Component Dock link in copyright. |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Mentora Template
 
 #### Scenario: Page renders all sections in correct order
-- Given the user visits the Mentora homepage
-- Then the page displays a sticky navbar at the top
-- And a hero section with a yellow background follows
-- And a hero image carousel follows the hero text
-- And an About section follows the carousel
-- And a Training section follows the About section
-- And a Services section follows the Training section
-- And a Gallery section follows the Services section
-- And a Testimonials section follows the Gallery section
-- And a Blog section follows the Testimonials section
-- And a Footer section is at the bottom
+
+- **GIVEN** the user visits the Mentora homepage
+- **THEN** the page displays a sticky navbar at the top
+- **AND** a hero section with a yellow background follows
+- **AND** a hero image carousel follows the hero text
+- **AND** an About section follows the carousel
+- **AND** a Training section follows the About section
+- **AND** a Services section follows the Training section
+- **AND** a Gallery section follows the Services section
+- **AND** a Testimonials section follows the Gallery section
+- **AND** a Blog section follows the Testimonials section
+- **AND** a Footer section is at the bottom
 
 #### Scenario: Navbar is sticky and responsive
-- Given the user scrolls down the page
-- Then the navbar remains fixed at the top of the viewport
-- And on mobile viewport the nav links collapse into a hamburger menu
-- And clicking the hamburger toggles the mobile nav open/closed
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar remains fixed at the top of the viewport
+- **AND** on mobile viewport the nav links collapse into a hamburger menu
+- **AND** clicking the hamburger toggles the mobile nav open/closed
 
 #### Scenario: Hero section displays typed text animation
-- Given the user views the hero section
-- Then the heading shows "We are " followed by a cycling word
-- And the cycling words include variations like "Coach", "Trainer", "Mentor"
-- And a subtitle paragraph appears below the heading
-- And a "Contact us" link is visible
+
+- **GIVEN** the user views the hero section
+- **THEN** the heading shows "We are " followed by a cycling word
+- **AND** the cycling words include variations like "Coach", "Trainer", "Mentor"
+- **AND** a subtitle paragraph appears below the heading
+- **AND** a "Contact us" link is visible
 
 #### Scenario: Hero image carousel auto-rotates
-- Given the user views the hero section
-- Then 3 hero images are displayed in a carousel
-- And the carousel auto-advances to the next image
-- And carousel navigation dots or arrows are available
+
+- **GIVEN** the user views the hero section
+- **THEN** 3 hero images are displayed in a carousel
+- **AND** the carousel auto-advances to the next image
+- **AND** carousel navigation dots or arrows are available
 
 #### Scenario: About section shows founder info and team
-- Given the user scrolls to the About section
-- Then a heading "Hey there, I'm John The Founder" is displayed
-- And 2-3 bio paragraphs appear in the left column
-- And a signature image appears below the bio
-- And an "Upcoming Speaking Gigs" list appears in the right column
-- And 4 team member cards appear below with circular photos and names
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a heading "Hey there, I'm John The Founder" is displayed
+- **AND** 2-3 bio paragraphs appear in the left column
+- **AND** a signature image appears below the bio
+- **AND** an "Upcoming Speaking Gigs" list appears in the right column
+- **AND** 4 team member cards appear below with circular photos and names
 
 #### Scenario: Training section displays cards in carousel
-- Given the user scrolls to the Training section
-- Then the section has a light gray background
-- And a centered heading "Our Training" is displayed
-- And 3+ training cards are shown in a carousel
-- And each card has an image, title, and description text
+
+- **GIVEN** the user scrolls to the Training section
+- **THEN** the section has a light gray background
+- **AND** a centered heading "Our Training" is displayed
+- **AND** 3+ training cards are shown in a carousel
+- **AND** each card has an image, title, and description text
 
 #### Scenario: Services section displays service cards
-- Given the user scrolls to the Services section
-- Then a centered heading "Our Services" is displayed
-- And 3+ service cards are shown in a carousel
-- And each card has an icon, title, and description text
-- And icons use lucide-react components
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** a centered heading "Our Services" is displayed
+- **AND** 3+ service cards are shown in a carousel
+- **AND** each card has an icon, title, and description text
+- **AND** icons use lucide-react components
 
 #### Scenario: Gallery section displays image grid with lightbox
-- Given the user scrolls to the Gallery section
-- Then a centered heading "Gallery" is displayed
-- And 12 images are shown in a responsive grid
-- And the grid shows 4 columns on extra-large screens
-- And clicking an image opens a lightbox/overlay
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a centered heading "Gallery" is displayed
+- **AND** 12 images are shown in a responsive grid
+- **AND** the grid shows 4 columns on extra-large screens
+- **AND** clicking an image opens a lightbox/overlay
 
 #### Scenario: Testimonials section displays quote cards
-- Given the user scrolls to the Testimonials section
-- Then a centered heading "Happy Customers" is displayed
-- And 2+ testimonial cards appear in a carousel
-- And each card shows a blockquote, circular photo, and person name
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a centered heading "Happy Customers" is displayed
+- **AND** 2+ testimonial cards appear in a carousel
+- **AND** each card shows a blockquote, circular photo, and person name
 
 #### Scenario: Blog section displays entries
-- Given the user scrolls to the Blog section
-- Then a centered heading "Our Blog" is displayed
-- And 3 blog entries are shown in a 2-column grid
-- And each entry has an image, title, date, excerpt, and "Read More" link
-- And entries are horizontally laid out on desktop (image left, text right)
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a centered heading "Our Blog" is displayed
+- **AND** 3 blog entries are shown in a 2-column grid
+- **AND** each entry has an image, title, date, excerpt, and "Read More" link
+- **AND** entries are horizontally laid out on desktop (image left, text right)
 
 #### Scenario: Footer has three columns and newsletter
-- Given the user scrolls to the footer
-- Then the footer displays an "About Us" column with descriptive text
-- And a "Quick Links" column with navigation links
-- And a "Follow Us" column with social media icons
-- And a newsletter subscription form with email input and Send button
-- And the footer contains a copyright notice
-- And the footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer displays an "About Us" column with descriptive text
+- **AND** a "Quick Links" column with navigation links
+- **AND** a "Follow Us" column with social media icons
+- **AND** a newsletter subscription form with email input and Send button
+- **AND** the footer contains a copyright notice
+- **AND** the footer links to Component Dock
 
 #### Scenario: Page is responsive on mobile
-- Given the user views the page on a 375px wide viewport
-- Then all sections stack vertically
-- And the navbar shows a hamburger menu
-- And carousels show one item at a time
-- And the gallery grid shows 2 columns
-- And blog entries stack vertically
+
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** all sections stack vertically
+- **AND** the navbar shows a hamburger menu
+- **AND** carousels show one item at a time
+- **AND** the gallery grid shows 2 columns
+- **AND** blog entries stack vertically
 
 ## Verification Checklist
 

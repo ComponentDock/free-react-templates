@@ -116,317 +116,322 @@ Recreation of the ColorLib **Logistic** template (source: https://colorlib.com/w
 
 ---
 
-## Gherkin Requirements + Scenarios
+## Requirements
 
 ### Feature: Header & Navigation
 
-```gherkin
 Feature: Header & Navigation
-  As a visitor
-  I want a sticky header with navigation and a quote CTA
-  So that I can navigate the site and request a quote from any scroll position
+As a visitor
+I want a sticky header with navigation and a quote CTA
+So that I can navigate the site and request a quote from any scroll position
 
-  Scenario: Header renders with all elements
-    Given the page loads
-    Then the header is visible at the top
-    And the logo (main version) is displayed
-    And the navigation contains links: Home, Services, About, Blog, Contact
-    And the Services and Blog items have dropdown submenus
-    And social icons for Facebook, Instagram, LinkedIn are present
-    And a "Get Free Quote" button with primary styling is displayed
+#### Scenario: Header renders with all elements
 
-  Scenario: Header becomes sticky on scroll
-    Given the page loads
-    When the user scrolls down past the hero
-    Then the header gains a sticky/fixed position
-    And the logo switches to the sticky version (logo2)
-    And a subtle box-shadow appears
+- **GIVEN** the page loads
+- **THEN** the header is visible at the top
+- **AND** the logo (main version) is displayed
+- **AND** the navigation contains links: Home, Services, About, Blog, Contact
+- **AND** the Services and Blog items have dropdown submenus
+- **AND** social icons for Facebook, Instagram, LinkedIn are present
+- **AND** a "Get Free Quote" button with primary styling is displayed
 
-  Scenario: Navigation links navigate to correct sections/pages
-    Given the header is visible
-    When the user clicks "Services"
-    Then the page navigates to the Services section (or services.html in original)
-    When the user clicks "Get Free Quote"
-    Then the page scrolls to the quote form section
+#### Scenario: Header becomes sticky on scroll
 
-  Scenario: Social icons have hover rotation effect
-    Given the header social icons are visible
-    When the user hovers a social icon
-    Then the icon rotates 180deg on Y-axis
-    And the color changes to brand primary (#F02930)
-```
+- **GIVEN** the page loads
+- **WHEN** the user scrolls down past the hero
+- **THEN** the header gains a sticky/fixed position
+- **AND** the logo switches to the sticky version (logo2)
+- **AND** a subtle box-shadow appears
+
+#### Scenario: Navigation links navigate to correct sections/pages
+
+- **GIVEN** the header is visible
+- **WHEN** the user clicks "Services"
+- **THEN** the page navigates to the Services section (or services.html in original)
+- **WHEN** the user clicks "Get Free Quote"
+- **THEN** the page scrolls to the quote form section
+
+#### Scenario: Social icons have hover rotation effect
+
+- **GIVEN** the header social icons are visible
+- **WHEN** the user hovers a social icon
+- **THEN** the icon rotates 180deg on Y-axis
+- **AND** the color changes to brand primary (#F02930)
 
 ### Feature: Hero Slider
 
-```gherkin
 Feature: Hero Slider
-  As a visitor
-  I want an engaging hero slider with split panels and navigation
-  So that I understand the value proposition immediately
+As a visitor
+I want an engaging hero slider with split panels and navigation
+So that I understand the value proposition immediately
 
-  Scenario: Hero renders with three slides
-    Given the page loads
-    Then the hero section occupies at least 850px height (desktop)
-    And three slides exist in the slider
-    And each slide has a left panel (red bg) and right panel (white bg)
+#### Scenario: Hero renders with three slides
 
-  Scenario: Slide content matches design
-    Given a slide is active
-    Then the left panel shows h1 "Give your business a flow"
-    And a border-button "Our Services" linking to services
-    And the right panel shows an icon and h2 "Transport quality and excellence to enhance your business"
-    And each slide has a unique background image
+- **GIVEN** the page loads
+- **THEN** the hero section occupies at least 850px height (desktop)
+- **AND** three slides exist in the slider
+- **AND** each slide has a left panel (red bg) and right panel (white bg)
 
-  Scenario: Slider navigation works
-    Given the hero slider is visible
-    When the user clicks the next arrow
-    Then the slider advances to the next slide
-    When the user clicks the prev arrow
-    Then the slider goes to the previous slide
-    And the slider loops infinitely
+#### Scenario: Slide content matches design
 
-  Scenario: Hero overlay gradient is present
-    Given a slide is active
-    Then a gradient overlay (rgba(139,129,129,0.4) → transparent) covers the slide
-```
+- **GIVEN** a slide is active
+- **THEN** the left panel shows h1 "Give your business a flow"
+- **AND** a border-button "Our Services" linking to services
+- **AND** the right panel shows an icon and h2 "Transport quality and excellence to enhance your business"
+- **AND** each slide has a unique background image
+
+#### Scenario: Slider navigation works
+
+- **GIVEN** the hero slider is visible
+- **WHEN** the user clicks the next arrow
+- **THEN** the slider advances to the next slide
+- **WHEN** the user clicks the prev arrow
+- **THEN** the slider goes to the previous slide
+- **AND** the slider loops infinitely
+
+#### Scenario: Hero overlay gradient is present
+
+- **GIVEN** a slide is active
+- **THEN** a gradient overlay (rgba(139,129,129,0.4) → transparent) covers the slide
 
 ### Feature: Our Services Section
 
-```gherkin
 Feature: Our Services Section
-  As a visitor
-  I want to see the three core services with images and descriptions
-  So that I understand what the company offers
+As a visitor
+I want to see the three core services with images and descriptions
+So that I understand what the company offers
 
-  Scenario: Section renders with title and three cards
-    Given the page loads and user scrolls to Services
-    Then a section title "Our Services" is centered
-    And three service cards display in a row (desktop)
+#### Scenario: Section renders with title and three cards
 
-  Scenario: Each service card has correct content
-    Given the service cards are visible
-    Then card 1 shows image, heading "01. Air Shipping", description
-    And card 2 shows image, heading "02. Logistic Service", description
-    And card 3 shows image, heading "03. Ground Shipping", description
-    And each heading is a link (to service detail in original)
-    And descriptions use the standard lorem ipsum text from preview
-```
+- **GIVEN** the page loads and user scrolls to Services
+- **THEN** a section title "Our Services" is centered
+- **AND** three service cards display in a row (desktop)
+
+#### Scenario: Each service card has correct content
+
+- **GIVEN** the service cards are visible
+- **THEN** card 1 shows image, heading "01. Air Shipping", description
+- **AND** card 2 shows image, heading "02. Logistic Service", description
+- **AND** card 3 shows image, heading "03. Ground Shipping", description
+- **AND** each heading is a link (to service detail in original)
+- **AND** descriptions use the standard lorem ipsum text from preview
 
 ### Feature: Solutions / Features Section
 
-```gherkin
 Feature: Solutions & Features Section
-  As a visitor
-  I want to see key solution highlights with icons
-  So that I understand the platform capabilities
+As a visitor
+I want to see key solution highlights with icons
+So that I understand the platform capabilities
 
-  Scenario: Section renders with heading and feature boxes
-    Given the user scrolls to the solutions section
-    Then heading "We have a wide range of solutions for your business" displays
-    And a "Learn More" link is present
-    And two feature boxes display side-by-side
+#### Scenario: Section renders with heading and feature boxes
 
-  Scenario: Feature boxes have icons and titles
-    Given the feature boxes are visible
-    Then box 1 has an icon and heading "Tracking Is Easy" with description
-    And box 2 has an icon and heading "Multiple Warehouses" with description
-```
+- **GIVEN** the user scrolls to the solutions section
+- **THEN** heading "We have a wide range of solutions for your business" displays
+- **AND** a "Learn More" link is present
+- **AND** two feature boxes display side-by-side
+
+#### Scenario: Feature boxes have icons and titles
+
+- **GIVEN** the feature boxes are visible
+- **THEN** box 1 has an icon and heading "Tracking Is Easy" with description
+- **AND** box 2 has an icon and heading "Multiple Warehouses" with description
 
 ### Feature: Control / About Section
 
-```gherkin
 Feature: Control & About Section
-  As a visitor
-  I want to see the control/benefits messaging with dual solution blocks
-  So that I understand the value of shipment control
+As a visitor
+I want to see the control/benefits messaging with dual solution blocks
+So that I understand the value of shipment control
 
-  Scenario: Section renders with headline and two solution blocks
-    Given the user scrolls to this section
-    Then headline "We give you complete control of your shipments" displays
-    And two "Logistic Solution" blocks appear side-by-side
-    And each block has heading, description, and "Learn More " link with arrow icon
-```
+#### Scenario: Section renders with headline and two solution blocks
+
+- **GIVEN** the user scrolls to this section
+- **THEN** headline "We give you complete control of your shipments" displays
+- **AND** two "Logistic Solution" blocks appear side-by-side
+- **AND** each block has heading, description, and "Learn More " link with arrow icon
 
 ### Feature: Quote Request Form
 
-```gherkin
 Feature: Quote Request Form
-  As a potential customer
-  I want to submit a detailed quote request
-  So that I can get pricing for my shipment
+As a potential customer
+I want to submit a detailed quote request
+So that I can get pricing for my shipment
 
-  Scenario: Form renders with all fields
-    Given the user scrolls to the quote section
-    Then heading "Get free quote" displays
-    And phone link "+10(78) 267 3565" is present
-    And a form with the following fields renders:
-      | Field Group | Fields |
-      | Transport Type (checkboxes) | Ocean Freight, Air Freight (pre-checked), Land Transport |
-      | Cargo Type | text input |
-      | Country of Origin | text input |
-      | Destination | text input |
-      | QTY | text input |
-      | Weight | text input |
-      | Width | text input |
-      | Height | text input |
-      | Length | text input (note: source has typo "LEIGHT") |
-      | Name | text input |
-      | E-Mail | text input |
-      | Phone | text input |
-    And a "Request Quote" submit button (submit-btn2 styling)
+#### Scenario: Form renders with all fields
 
-  Scenario: Form validation and submission
-    Given the form is visible
-    When the user fills required fields and clicks "Request Quote"
-    Then the form submits (in original, posts to contact form handler)
-    And appropriate feedback displays
-```
+- **GIVEN** the user scrolls to the quote section
+- **THEN** heading "Get free quote" displays
+- **AND** phone link "+10(78) 267 3565" is present
+- **AND** a form with the following fields renders:
+| Field Group | Fields |
+| Transport Type (checkboxes) | Ocean Freight, Air Freight (pre-checked), Land Transport |
+| Cargo Type | text input |
+| Country of Origin | text input |
+| Destination | text input |
+| QTY | text input |
+| Weight | text input |
+| Width | text input |
+| Height | text input |
+| Length | text input (note: source has typo "LEIGHT") |
+| Name | text input |
+| E-Mail | text input |
+| Phone | text input |
+- **AND** a "Request Quote" submit button (submit-btn2 styling)
+
+#### Scenario: Form validation and submission
+
+- **GIVEN** the form is visible
+- **WHEN** the user fills required fields and clicks "Request Quote"
+- **THEN** the form submits (in original, posts to contact form handler)
+- **AND** appropriate feedback displays
 
 ### Feature: Video Section
 
-```gherkin
 Feature: Video Section
-  As a visitor
-  I want to watch a promotional video
-  So that I can learn more visually
+As a visitor
+I want to watch a promotional video
+So that I can learn more visually
 
-  Scenario: Video section renders with play button
-    Given the user scrolls to the video section
-    Then a background image covers the section
-    And a centered play button (popup-video) is present
-    When the user clicks the play button
-    Then a YouTube video opens in a lightbox (https://www.youtube.com/watch?v=up68UAfH0d0)
-```
+#### Scenario: Video section renders with play button
+
+- **GIVEN** the user scrolls to the video section
+- **THEN** a background image covers the section
+- **AND** a centered play button (popup-video) is present
+- **WHEN** the user clicks the play button
+- **THEN** a YouTube video opens in a lightbox (https://www.youtube.com/watch?v=up68UAfH0d0)
 
 ### Feature: Client Testimonial
 
-```gherkin
 Feature: Client Testimonial Slider
-  As a visitor
-  I want to see client testimonials
-  So that I build trust in the service
+As a visitor
+I want to see client testimonials
+So that I build trust in the service
 
-  Scenario: Testimonial slider renders
-    Given the user scrolls to testimonials
-    Then heading "Client Testimonial" displays
-    And a slider with 2 testimonials is present
-    And prev/next navigation arrows display
+#### Scenario: Testimonial slider renders
 
-  Scenario: Each testimonial has correct content
-    Given a testimonial slide is active
-    Then it shows a quote paragraph
-    And author image, name "Jacson Miller", role "Designer @Colorlib"
-```
+- **GIVEN** the user scrolls to testimonials
+- **THEN** heading "Client Testimonial" displays
+- **AND** a slider with 2 testimonials is present
+- **AND** prev/next navigation arrows display
+
+#### Scenario: Each testimonial has correct content
+
+- **GIVEN** a testimonial slide is active
+- **THEN** it shows a quote paragraph
+- **AND** author image, name "Jacson Miller", role "Designer @Colorlib"
 
 ### Feature: Map & Address
 
-```gherkin
 Feature: Map & Address
-  As a visitor
-  I want to see the company location and contact details
-  So that I can find or contact them
+As a visitor
+I want to see the company location and contact details
+So that I can find or contact them
 
-  Scenario: Map and address card render
-    Given the user scrolls to the map section
-    Then a Google Maps iframe embed is present (Burj Khalifa location)
-    And an address card on the right shows:
-      | Field | Value |
-      | Address | New York - 1060, Str. First Avenue 1 |
-      | Phone | + (123) 1800-567-8990 |
-      | Email | office@example.com |
-      | Hours | Mon - Fri: 9:00 - 19:00, Closed on Weekends |
-```
+#### Scenario: Map and address card render
+
+- **GIVEN** the user scrolls to the map section
+- **THEN** a Google Maps iframe embed is present (Burj Khalifa location)
+- **AND** an address card on the right shows:
+| Field | Value |
+| Address | New York - 1060, Str. First Avenue 1 |
+| Phone | + (123) 1800-567-8990 |
+| Email | office@example.com |
+| Hours | Mon - Fri: 9:00 - 19:00, Closed on Weekends |
 
 ### Feature: Footer
 
-```gherkin
 Feature: Footer
-  As a visitor
-  I want a footer with links, social, and branding
-  So that I can navigate and connect
+As a visitor
+I want a footer with links, social, and branding
+So that I can navigate and connect
 
-  Scenario: Footer renders with all sections
-    Given the user scrolls to the footer
-    Then the footer displays:
-      - Logo (footer version)
-      - Description paragraph
-      - Social icons: Facebook, Instagram, Twitter, Pinterest
-      - "Quick links" column: Listing, Submit your Business, About, Blog, Cities
-      - "Company" column: Our Team, Privacy Policy, Testimonial, User Stories
-      - Copyright line with current year
+#### Scenario: Footer renders with all sections
 
-  Scenario: Footer links to Component Dock (not Colorlib)
-    Given the footer copyright line
-    Then the attribution link points to https://www.componentdock.com/
-    And reads "Made with Component Dock" or similar
-    And does NOT link to colorlib.com
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer displays:
+- Logo (footer version)
+- Description paragraph
+- Social icons: Facebook, Instagram, Twitter, Pinterest
+- "Quick links" column: Listing, Submit your Business, About, Blog, Cities
+- "Company" column: Our Team, Privacy Policy, Testimonial, User Stories
+- Copyright line with current year
+
+#### Scenario: Footer links to Component Dock (not Colorlib)
+
+- **GIVEN** the footer copyright line
+- **THEN** the attribution link points to https://www.componentdock.com/
+- **AND** reads "Made with Component Dock" or similar
+- **AND** does NOT link to colorlib.com
 
 ### Feature: Responsive Behavior
 
-```gherkin
 Feature: Responsive Design
-  As a mobile/tablet user
-  I want the layout to adapt gracefully
-  So that I can use the site on any device
+As a mobile/tablet user
+I want the layout to adapt gracefully
+So that I can use the site on any device
 
-  Scenario: Mobile navbar collapses to hamburger
-    Given viewport width < 768px
-    Then the main navigation hides
-    And a mobile menu toggle appears
-    When the toggle is clicked
-    Then the mobile menu opens with all nav items
+#### Scenario: Mobile navbar collapses to hamburger
 
-  Scenario: Hero stacks on mobile
-    Given viewport width < 576px
-    Then hero left and right panels stack vertically
-    And hero height adjusts to 750px
+- **GIVEN** viewport width < 768px
+- **THEN** the main navigation hides
+- **AND** a mobile menu toggle appears
+- **WHEN** the toggle is clicked
+- **THEN** the mobile menu opens with all nav items
 
-  Scenario: Service cards stack on mobile
-    Given viewport width < 768px
-    Then the 3 service cards stack in a single column
+#### Scenario: Hero stacks on mobile
 
-  Scenario: Form fields stack on mobile
-    Given viewport width < 576px
-    Then quote form fields stack in single column
-    And checkboxes remain horizontal where space permits
-```
+- **GIVEN** viewport width < 576px
+- **THEN** hero left and right panels stack vertically
+- **AND** hero height adjusts to 750px
+
+#### Scenario: Service cards stack on mobile
+
+- **GIVEN** viewport width < 768px
+- **THEN** the 3 service cards stack in a single column
+
+#### Scenario: Form fields stack on mobile
+
+- **GIVEN** viewport width < 576px
+- **THEN** quote form fields stack in single column
+- **AND** checkboxes remain horizontal where space permits
 
 ### Feature: Design Token Fidelity
 
-```gherkin
 Feature: Design Token Fidelity
-  As a developer
-  I want the implemented design to match the ColorLib reference tokens
-  So that the recreation is visually faithful
+As a developer
+I want the implemented design to match the ColorLib reference tokens
+So that the recreation is visually faithful
 
-  Scenario: Brand colors match exactly
-    Given the implemented page
-    Then primary buttons use #F02930
-    And primary button hover uses #db2228
-    And headings use #232F55
-    And section subtitles use #7EA0FF
-    And light section backgrounds use #F1FBFF
+#### Scenario: Brand colors match exactly
 
-  Scenario: Typography matches Raleway with correct weights
-    Given the implemented page
-    Then font-family is "Raleway", sans-serif
-    And hero h1 uses weight 900
-    And section h2 uses weight 700
-    And body text uses weight 400, line-height 1.4
+- **GIVEN** the implemented page
+- **THEN** primary buttons use #F02930
+- **AND** primary button hover uses #db2228
+- **AND** headings use #232F55
+- **AND** section subtitles use #7EA0FF
+- **AND** light section backgrounds use #F1FBFF
 
-  Scenario: Button border-radius matches spec
-    Given buttons are rendered
-    Then primary buttons have radius 0
-    And submit-btn has radius 5px
-    And nice-select has radius 25px
+#### Scenario: Typography matches Raleway with correct weights
 
-  Scenario: Spacing matches section padding scale
-    Given sections are rendered
-    Then desktop sections have 120px/100px padding
-    And tablet sections have 100px/90px padding
-    And mobile sections have 70px/40px padding
-```
+- **GIVEN** the implemented page
+- **THEN** font-family is "Raleway", sans-serif
+- **AND** hero h1 uses weight 900
+- **AND** section h2 uses weight 700
+- **AND** body text uses weight 400, line-height 1.4
+
+#### Scenario: Button border-radius matches spec
+
+- **GIVEN** buttons are rendered
+- **THEN** primary buttons have radius 0
+- **AND** submit-btn has radius 5px
+- **AND** nice-select has radius 25px
+
+#### Scenario: Spacing matches section padding scale
+
+- **GIVEN** sections are rendered
+- **THEN** desktop sections have 120px/100px padding
+- **AND** tablet sections have 100px/90px padding
+- **AND** mobile sections have 70px/40px padding
 
 ---
 

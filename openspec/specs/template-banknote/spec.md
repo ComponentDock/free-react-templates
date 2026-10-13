@@ -124,193 +124,218 @@ financial services — banking, loans, credit cards, and consulting.
     + Follow Us (social icons); right = Subscribe Newsletter (email + Send
     button). Bottom row: copyright text with heart icon.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Banknote Banking Website
 
-```gherkin
 Feature: Banknote Banking Website
-  As a visitor to a banking services website
-  I want to navigate through banking offerings and services
-  So that I can learn about financial products and contact the company
+As a visitor to a banking services website
+I want to navigate through banking offerings and services
+So that I can learn about financial products and contact the company
 
-  Background:
-    Given the Banknote page is loaded
-    And the browser supports modern JavaScript
+Background:
+- **GIVEN** the Banknote page is loaded
+- **AND** the browser supports modern JavaScript
 
-  # ── Navbar ────────────────────────────────────────────────────────
+**── Navbar ────────────────────────────────────────────────────────**
 
-  Scenario: Sticky navbar with logo and navigation links
-    Then the navbar displays "Banknote." as the logo with an orange dot
-    And the navbar has links: Home, About Us, Blog, Contact
-    And the About Us link has a dropdown submenu
-    And the navbar has social icons (Facebook, Twitter, LinkedIn)
+#### Scenario: Sticky navbar with logo and navigation links
 
-  Scenario: Multi-level dropdown menu
-    When I hover over "About Us" in the navbar
-    Then a dropdown appears with: Team, Pricing, FAQ, Gallery, Services, Testimonials
-    And the dropdown has a top border of orange (#fd7e14)
+- **THEN** the navbar displays "Banknote." as the logo with an orange dot
+- **AND** the navbar has links: Home, About Us, Blog, Contact
+- **AND** the About Us link has a dropdown submenu
+- **AND** the navbar has social icons (Facebook, Twitter, LinkedIn)
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is mobile width (< 768px)
-    Then a hamburger menu icon is visible
-    And the desktop navigation is hidden
-    When I tap the hamburger icon
-    Then a right-side off-canvas menu slides in
+#### Scenario: Multi-level dropdown menu
 
-  # ── Hero ──────────────────────────────────────────────────────────
+- **WHEN** I hover over "About Us" in the navbar
+- **THEN** a dropdown appears with: Team, Pricing, FAQ, Gallery, Services, Testimonials
+- **AND** the dropdown has a top border of orange (#fd7e14)
 
-  Scenario: Hero section with carousel
-    Then a full-viewport hero section is visible
-    And the hero has a background image with dark overlay
-    And the hero displays "Banking Solutions" as the initial slide heading
+#### Scenario: Mobile hamburger menu
 
-  Scenario: Hero carousel auto-rotates
-    Given the hero is showing "Banking Solutions"
-    When I wait for the carousel interval
-    Then the hero shows "Financing Solutions"
+- **GIVEN** the viewport is mobile width (< 768px)
+- **THEN** a hamburger menu icon is visible
+- **AND** the desktop navigation is hidden
+- **WHEN** I tap the hamburger icon
+- **THEN** a right-side off-canvas menu slides in
 
-  Scenario: Mouse scroll indicator
-    Then a mouse scroll indicator is visible at the bottom of the hero
-    And clicking it smooth-scrolls to the next section
+**── Hero ──────────────────────────────────────────────────────────**
 
-  # ── Features ──────────────────────────────────────────────────────
+#### Scenario: Hero section with carousel
 
-  Scenario: Three-column feature cards
-    Then three feature cards are displayed
-    And the cards show: "Money Savings", "Online Shoppings", "Credit / Debit Cards"
-    And each card has an icon, title, and description paragraph
+- **THEN** a full-viewport hero section is visible
+- **AND** the hero has a background image with dark overlay
+- **AND** the hero displays "Banking Solutions" as the initial slide heading
 
-  # ── About + Email ────────────────────────────────────────────────
+#### Scenario: Hero carousel auto-rotates
 
-  Scenario: About section with circular image
-    Then a circular-framed image is displayed on the left
-    And "Amortization Computation" heading is on the right
-    And a green checkmark list with 3 items is displayed
+- **GIVEN** the hero is showing "Banking Solutions"
+- **WHEN** I wait for the carousel interval
+- **THEN** the hero shows "Financing Solutions"
 
-  Scenario: Email signup form
-    Then an email input field with placeholder "Enter your email" exists
-    And a "Submit Email" button is next to the input
+#### Scenario: Mouse scroll indicator
 
-  # ── About Us ─────────────────────────────────────────────────────
+- **THEN** a mouse scroll indicator is visible at the bottom of the hero
+- **AND** clicking it smooth-scrolls to the next section
 
-  Scenario: About Us section
-    Then "About Us" section title is centered
-    And a lead paragraph is displayed below the title
-    And "We Solve Your Financial Problem" heading appears with two paragraphs
+**── Features ──────────────────────────────────────────────────────**
 
-  # ── Team ─────────────────────────────────────────────────────────
+#### Scenario: Three-column feature cards
 
-  Scenario: Team member grid
-    Then "Meet Team" title is centered
-    And 8 team member cards are displayed in a grid
-    And each card has a photo, name, and position
-    And each card shows social icons on hover
+- **THEN** three feature cards are displayed
+- **AND** the cards show: "Money Savings", "Online Shoppings", "Credit / Debit Cards"
+- **AND** each card has an icon, title, and description paragraph
 
-  # ── Gallery ──────────────────────────────────────────────────────
+**── About + Email ────────────────────────────────────────────────**
 
-  Scenario: Filterable gallery
-    Then filter buttons are displayed: All, Events, Party, Holidays
-    And 12 gallery items are displayed in a grid
-    When I click the "Events" filter
-    Then only "Events" category items are visible
+#### Scenario: About section with circular image
 
-  Scenario: Gallery hover overlay
-    When I hover over a gallery image
-    Then a dark overlay with a search icon appears
+- **THEN** a circular-framed image is displayed on the left
+- **AND** "Amortization Computation" heading is on the right
+- **AND** a green checkmark list with 3 items is displayed
 
-  # ── How It Works ────────────────────────────────────────────────
+#### Scenario: Email signup form
 
-  Scenario: How It Works section
-    Then "How It Works" title is centered
-    And a carousel of 3 images is on the left
-    And 3 numbered steps are on the right: "01. Online Applications", "02. Get an approval", "03. Card delivery"
-    And each step has a "Learn More" button
+- **THEN** an email input field with placeholder "Enter your email" exists
+- **AND** a "Submit Email" button is next to the input
 
-  # ── Services ─────────────────────────────────────────────────────
+**── About Us ─────────────────────────────────────────────────────**
 
-  Scenario: Six-column services grid
-    Then "Our Services" title is centered on a light background
-    And 6 service cards are displayed: Business Consulting, Credit Card, Income Monitoring, Insurance Consulting, Financial Investment, Financial Management
-    And each card has an icon, title, description, and "Learn More" link
+#### Scenario: About Us section
 
-  # ── Testimonials ────────────────────────────────────────────────
+- **THEN** "About Us" section title is centered
+- **AND** a lead paragraph is displayed below the title
+- **AND** "We Solve Your Financial Problem" heading appears with two paragraphs
 
-  Scenario: Testimonial carousel
-    Then "Happy Customers" title is centered
-    And 4 testimonials are in an owl-carousel
-    And each testimonial has a blockquote, person image, and name
+**── Team ─────────────────────────────────────────────────────────**
 
-  # ── Pricing ──────────────────────────────────────────────────────
+#### Scenario: Team member grid
 
-  Scenario: Three pricing tiers
-    Then 3 pricing cards are displayed on a light background
-    And the tiers are: Basic ($47/yr), Premium ($200/yr), Professional ($750/yr)
-    And the Premium tier has a "popular" highlight
-    And each card has a feature list and "Buy Now" button
+- **THEN** "Meet Team" title is centered
+- **AND** 8 team member cards are displayed in a grid
+- **AND** each card has a photo, name, and position
+- **AND** each card shows social icons on hover
 
-  Scenario: Pricing feature comparison
-    Then Basic has 3 included features and 2 excluded (struck-through)
-    And Premium has 4 included features and 1 excluded
-    And Professional has 5 included features and 0 excluded
+**── Gallery ──────────────────────────────────────────────────────**
 
-  # ── FAQ ───────────────────────────────────────────────────────────
+#### Scenario: Filterable gallery
 
-  Scenario: FAQ section
-    Then "Frequently Ask Questions" title is centered
-    And 8 FAQ items are displayed in two columns (4 per column)
-    And each FAQ has a question heading and answer paragraph
+- **THEN** filter buttons are displayed: All, Events, Party, Holidays
+- **AND** 12 gallery items are displayed in a grid
+- **WHEN** I click the "Events" filter
+- **THEN** only "Events" category items are visible
 
-  # ── About (2nd) ────────────────────────────────────────────────
+#### Scenario: Gallery hover overlay
 
-  Scenario: Second about section with features
-    Then a circular-framed image is on the left
-    And 2 feature items are on the right: "Bank Loan" and "Banking Consultation"
-    And each feature has an icon, title, text, and "Learn More" link
+- **WHEN** I hover over a gallery image
+- **THEN** a dark overlay with a search icon appears
 
-  # ── Blog ──────────────────────────────────────────────────────────
+**── How It Works ────────────────────────────────────────────────**
 
-  Scenario: Blog posts grid
-    Then "Our Blog" title is centered
-    And 3 blog post cards are displayed
-    And each card has an image, title, meta info (author, date, category), excerpt, and "Continue Reading..." link
+#### Scenario: How It Works section
 
-  # ── Contact ──────────────────────────────────────────────────────
+- **THEN** "How It Works" title is centered
+- **AND** a carousel of 3 images is on the left
+- **AND** 3 numbered steps are on the right: "01. Online Applications", "02. Get an approval", "03. Card delivery"
+- **AND** each step has a "Learn More" button
 
-  Scenario: Contact info
-    Then "Contact Us" title is centered on a light background
-    And 3 contact details are displayed: address, phone, email
-    And each has an orange icon
+**── Services ─────────────────────────────────────────────────────**
 
-  Scenario: Contact form
-    Then a contact form is displayed with fields: First Name, Last Name, Email, Subject, Message
-    And a "Send Message" button submits the form
-    And the form has a white background with padding
+#### Scenario: Six-column services grid
 
-  # ── Footer ───────────────────────────────────────────────────────
+- **THEN** "Our Services" title is centered on a light background
+- **AND** 6 service cards are displayed: Business Consulting, Credit Card, Income Monitoring, Insurance Consulting, Financial Investment, Financial Management
+- **AND** each card has an icon, title, description, and "Learn More" link
 
-  Scenario: Footer layout
-    Then the footer has a dark background (#343a40)
-    And it displays "About Us" text, "Quick Links", and "Follow Us" social icons
-    And a "Subscribe Newsletter" section with email input and "Send" button
-    And a copyright line at the bottom
+**── Testimonials ────────────────────────────────────────────────**
 
-  Scenario: Footer links
-    Then "Quick Links" contains: Terms, Policy, About Us, Services, Testimonials, Contact Us
-    And all footer links smooth-scroll to the corresponding sections
+#### Scenario: Testimonial carousel
 
-  # ── Cross-cutting ───────────────────────────────────────────────
+- **THEN** "Happy Customers" title is centered
+- **AND** 4 testimonials are in an owl-carousel
+- **AND** each testimonial has a blockquote, person image, and name
 
-  Scenario: Responsive layout
-    Given the viewport is mobile width
-    Then the navbar collapses to a hamburger menu
-    And multi-column grids stack to single column
-    And the hero heading reduces to 2rem
+**── Pricing ──────────────────────────────────────────────────────**
 
-  Scenario: AOS scroll animations
-    Then elements with data-aos attributes animate on scroll
-    And fade-up is the most common animation type
-```
+#### Scenario: Three pricing tiers
+
+- **THEN** 3 pricing cards are displayed on a light background
+- **AND** the tiers are: Basic ($47/yr), Premium ($200/yr), Professional ($750/yr)
+- **AND** the Premium tier has a "popular" highlight
+- **AND** each card has a feature list and "Buy Now" button
+
+#### Scenario: Pricing feature comparison
+
+- **THEN** Basic has 3 included features and 2 excluded (struck-through)
+- **AND** Premium has 4 included features and 1 excluded
+- **AND** Professional has 5 included features and 0 excluded
+
+**── FAQ ───────────────────────────────────────────────────────────**
+
+#### Scenario: FAQ section
+
+- **THEN** "Frequently Ask Questions" title is centered
+- **AND** 8 FAQ items are displayed in two columns (4 per column)
+- **AND** each FAQ has a question heading and answer paragraph
+
+**── About (2nd) ────────────────────────────────────────────────**
+
+#### Scenario: Second about section with features
+
+- **THEN** a circular-framed image is on the left
+- **AND** 2 feature items are on the right: "Bank Loan" and "Banking Consultation"
+- **AND** each feature has an icon, title, text, and "Learn More" link
+
+**── Blog ──────────────────────────────────────────────────────────**
+
+#### Scenario: Blog posts grid
+
+- **THEN** "Our Blog" title is centered
+- **AND** 3 blog post cards are displayed
+- **AND** each card has an image, title, meta info (author, date, category), excerpt, and "Continue Reading..." link
+
+**── Contact ──────────────────────────────────────────────────────**
+
+#### Scenario: Contact info
+
+- **THEN** "Contact Us" title is centered on a light background
+- **AND** 3 contact details are displayed: address, phone, email
+- **AND** each has an orange icon
+
+#### Scenario: Contact form
+
+- **THEN** a contact form is displayed with fields: First Name, Last Name, Email, Subject, Message
+- **AND** a "Send Message" button submits the form
+- **AND** the form has a white background with padding
+
+**── Footer ───────────────────────────────────────────────────────**
+
+#### Scenario: Footer layout
+
+- **THEN** the footer has a dark background (#343a40)
+- **AND** it displays "About Us" text, "Quick Links", and "Follow Us" social icons
+- **AND** a "Subscribe Newsletter" section with email input and "Send" button
+- **AND** a copyright line at the bottom
+
+#### Scenario: Footer links
+
+- **THEN** "Quick Links" contains: Terms, Policy, About Us, Services, Testimonials, Contact Us
+- **AND** all footer links smooth-scroll to the corresponding sections
+
+**── Cross-cutting ───────────────────────────────────────────────**
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the viewport is mobile width
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** multi-column grids stack to single column
+- **AND** the hero heading reduces to 2rem
+
+#### Scenario: AOS scroll animations
+
+- **THEN** elements with data-aos attributes animate on scroll
+- **AND** fade-up is the most common animation type
 
 ## Verification Checklist
 

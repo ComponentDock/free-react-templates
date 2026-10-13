@@ -45,81 +45,91 @@ Font family note: Use Google Fonts `Nanum Gothic` via `<link>` in `index.html` (
 8. **Newsletter** — Primary-blue background section. 2-column layout: left = heading "Newsletter" + description, right = email input + Subscribe button.
 9. **Footer** — Dark background (#333333). 3-column layout: About text (6-col), Navigations links (3-col), Follow Us social icons (3-col). Right sidebar: search form. Bottom: copyright with Component Dock link.
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: ListFinder template behaviour
+
 Feature: ListFinder Template
 
-  Scenario: Navbar renders all links
-    Given the page loads
-    Then the navbar displays links for Home, Ads, About, Blog, Contact
-    And a "Log In" link is visible
-    And a "Register" button styled as a primary badge is visible
+#### Scenario: Navbar renders all links
 
-  Scenario: Hero section displays search form
-    Given the hero section is visible
-    Then a heading "Welcome To ListFinder" is shown
-    And a keyword search input is present
-    And a location search input with map-pin icon is present
-    And a category dropdown with "All Categories" as default is present
-    And a "Search" button is present
-    And trending search tags (iPhone, Cars, Flowers, House) are shown
+- **GIVEN** the page loads
+- **THEN** the navbar displays links for Home, Ads, About, Blog, Contact
+- **AND** a "Log In" link is visible
+- **AND** a "Register" button styled as a primary badge is visible
 
-  Scenario: Featured Ads carousel shows listing cards
-    Given the Featured Ads section is visible
-    Then a heading "Featured Ads" is shown
-    And at least 4 listing cards are rendered
-    And each card has a thumbnail image, category badge, title, address, and star rating
+#### Scenario: Hero section displays search form
 
-  Scenario: Popular Categories grid shows 6 categories
-    Given the Popular Categories section is visible
-    Then a heading "Popular Categories" is shown in primary color
-    And 6 category cards are rendered
-    And each card has an icon, category name, and count pill
-    And hovering a category card changes background to primary blue
+- **GIVEN** the hero section is visible
+- **THEN** a heading "Welcome To ListFinder" is shown
+- **AND** a keyword search input is present
+- **AND** a location search input with map-pin icon is present
+- **AND** a category dropdown with "All Categories" as default is present
+- **AND** a "Search" button is present
+- **AND** trending search tags (iPhone, Cars, Flowers, House) are shown
 
-  Scenario: Trending Today shows 2-column listing grid
-    Given the Trending Today section is visible
-    Then a heading "Trending Today" is shown
-    And listing cards are displayed in a 2-column layout
-    And each card has a thumbnail, category, title, address, and star rating
+#### Scenario: Featured Ads carousel shows listing cards
 
-  Scenario: Testimonials carousel renders testimonial cards
-    Given the Testimonials section is visible
-    Then a heading "Testimonials" is shown
-    And at least 3 testimonial cards are rendered
-    And each card has an avatar image, name, and quoted text
+- **GIVEN** the Featured Ads section is visible
+- **THEN** a heading "Featured Ads" is shown
+- **AND** at least 4 listing cards are rendered
+- **AND** each card has a thumbnail image, category badge, title, address, and star rating
 
-  Scenario: Blog section shows 3-column post grid
-    Given the Blog section is visible
-    Then a heading "Our Blog" is shown
-    And 3 blog post cards are rendered
-    And each card has an image, title, meta info, and excerpt
-    And a "View All Posts" button is visible
+#### Scenario: Popular Categories grid shows 6 categories
 
-  Scenario: Newsletter section has email subscription form
-    Given the Newsletter section is visible
-    Then a heading "Newsletter" is shown on primary-blue background
-    And an email input field is present
-    And a "Subscribe" button is present
+- **GIVEN** the Popular Categories section is visible
+- **THEN** a heading "Popular Categories" is shown in primary color
+- **AND** 6 category cards are rendered
+- **AND** each card has an icon, category name, and count pill
+- **AND** hovering a category card changes background to primary blue
 
-  Scenario: Footer has multi-column layout
-    Given the footer is visible
-    Then the footer has a dark background (#333333)
-    And About text is shown
-    And navigation links (About Us, Services, Testimonials, Contact Us) are present
-    And social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
-    And a search form with "Search products..." placeholder is present
-    And a copyright notice with "Component Dock" link is present
+#### Scenario: Trending Today shows 2-column listing grid
 
-  Scenario: Mobile responsive layout
-    Given the page is viewed on a mobile viewport
-    Then the navbar collapses to a hamburger menu
-    And the hero search form stacks vertically
-    And listing cards stack vertically
-    And the category grid stacks to single column
-    And the footer columns stack vertically
-```
+- **GIVEN** the Trending Today section is visible
+- **THEN** a heading "Trending Today" is shown
+- **AND** listing cards are displayed in a 2-column layout
+- **AND** each card has a thumbnail, category, title, address, and star rating
+
+#### Scenario: Testimonials carousel renders testimonial cards
+
+- **GIVEN** the Testimonials section is visible
+- **THEN** a heading "Testimonials" is shown
+- **AND** at least 3 testimonial cards are rendered
+- **AND** each card has an avatar image, name, and quoted text
+
+#### Scenario: Blog section shows 3-column post grid
+
+- **GIVEN** the Blog section is visible
+- **THEN** a heading "Our Blog" is shown
+- **AND** 3 blog post cards are rendered
+- **AND** each card has an image, title, meta info, and excerpt
+- **AND** a "View All Posts" button is visible
+
+#### Scenario: Newsletter section has email subscription form
+
+- **GIVEN** the Newsletter section is visible
+- **THEN** a heading "Newsletter" is shown on primary-blue background
+- **AND** an email input field is present
+- **AND** a "Subscribe" button is present
+
+#### Scenario: Footer has multi-column layout
+
+- **GIVEN** the footer is visible
+- **THEN** the footer has a dark background (#333333)
+- **AND** About text is shown
+- **AND** navigation links (About Us, Services, Testimonials, Contact Us) are present
+- **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are present
+- **AND** a search form with "Search products..." placeholder is present
+- **AND** a copyright notice with "Component Dock" link is present
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the page is viewed on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero search form stacks vertically
+- **AND** listing cards stack vertically
+- **AND** the category grid stacks to single column
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

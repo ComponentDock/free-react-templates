@@ -28,72 +28,93 @@ Recreation of ColorLib "Deluxe" hotel/resort template.
 | Button (custom)   | black text, no bg, arrow icon               | "View Room Details →" link-style button  |
 | Overlay on hero   | semi-transparent dark                       | On slider images                         |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
+
 Feature: Navbar
-  Scenario: Renders navigation links
-    Given the page loads
-    Then a dark navbar is displayed with brand "Regale"
-    And nav links: Home, Rooms, Restaurant, About, Blog, Contact
-    And the navbar is responsive with a hamburger toggle on mobile
+
+#### Scenario: Renders navigation links
+
+- **GIVEN** the page loads
+- **THEN** a dark navbar is displayed with brand "Regale"
+- **AND** nav links: Home, Rooms, Restaurant, About, Blog, Contact
+- **AND** the navbar is responsive with a hamburger toggle on mobile
 
 ### Hero Slider
+
 Feature: Hero Slider
-  Scenario: Displays rotating hero slides
-    Given the page loads
-    Then a full-width image slider is shown with overlay
-    And each slide shows a heading (e.g. "Welcome To Regale") and subheading
-    And the slider auto-rotates between slides
+
+#### Scenario: Displays rotating hero slides
+
+- **GIVEN** the page loads
+- **THEN** a full-width image slider is shown with overlay
+- **AND** each slide shows a heading (e.g. "Welcome To Regale") and subheading
+- **AND** the slider auto-rotates between slides
 
 ### Booking Form
+
 Feature: Booking Form
-  Scenario: Shows booking form over hero
-    Given the page loads
-    Then a booking form is displayed with fields:
+
+#### Scenario: Shows booking form over hero
+
+- **GIVEN** the page loads
+- **THEN** a booking form is displayed with fields:
       | Field         | Type     | Options/Placeholder         |
       | Check-in Date | text     | "Check-in date"             |
       | Check-out Date| text     | "Check-out date"            |
       | Room          | select   | Suite, Family, Deluxe, etc. |
       | Customer      | select   | 1 Adult .. 6 Adult          |
-    And a "Check Availability" button is shown
+- **AND** a "Check Availability" button is shown
 
 ### About Section
+
 Feature: About Section
-  Scenario: Displays welcome content
-    Given the page loads
-    Then a split layout shows a background image on the left
-    And welcome text on the right with subheading "Welcome to Regale Hotel"
-    And heading "Welcome To Our Hotel"
-    And two paragraphs of descriptive text
-    And social media icon links (Twitter, Facebook, Google, Instagram)
+
+#### Scenario: Displays welcome content
+
+- **GIVEN** the page loads
+- **THEN** a split layout shows a background image on the left
+- **AND** welcome text on the right with subheading "Welcome to Regale Hotel"
+- **AND** heading "Welcome To Our Hotel"
+- **AND** two paragraphs of descriptive text
+- **AND** social media icon links (Twitter, Facebook, Google, Instagram)
 
 ### Services Section
+
 Feature: Services Section
-  Scenario: Shows service cards
-    Given the page loads
-    Then 4 service cards are displayed in a row:
+
+#### Scenario: Shows service cards
+
+- **GIVEN** the page loads
+- **THEN** 4 service cards are displayed in a row:
       | Service            | Icon              |
       | 24/7 Front Desk    | reception-bell    |
       | Restaurant Bar     | serving-dish      |
       | Transfer Services  | car               |
       | Spa Suites         | spa               |
-    And each card has an icon, heading, and description
+- **AND** each card has an icon, heading, and description
 
 ### Rooms Section
+
 Feature: Rooms Section
-  Scenario: Shows room cards
-    Given the page loads
-    Then 6 room cards are displayed in a 3-column grid
-    And each card shows a room image, name, price, and "View Room Details" link
-    And rooms: Suite ($120), Family ($20), Deluxe ($150), Classic ($130), Superior ($300), Luxury ($500)
+
+#### Scenario: Shows room cards
+
+- **GIVEN** the page loads
+- **THEN** 6 room cards are displayed in a 3-column grid
+- **AND** each card shows a room image, name, price, and "View Room Details" link
+- **AND** rooms: Suite ($120), Family ($20), Deluxe ($150), Classic ($130), Superior ($300), Luxury ($500)
 
 ### Counter Section
+
 Feature: Counter Section
-  Scenario: Shows statistics with parallax background
-    Given the page loads
-    Then a parallax background image is shown
-    And 4 counter stats are displayed:
+
+#### Scenario: Shows statistics with parallax background
+
+- **GIVEN** the page loads
+- **THEN** a parallax background image is shown
+- **AND** 4 counter stats are displayed:
       | Stat          | Value  |
       | Happy Guests  | 50,000 |
       | Rooms         | 3,000  |
@@ -101,35 +122,47 @@ Feature: Counter Section
       | Destinations  | 100    |
 
 ### Testimonials Section
+
 Feature: Testimonials Section
-  Scenario: Shows testimonial carousel
-    Given the page loads
-    Then a carousel of testimonials is displayed
-    And each testimonial shows a user image, quote, name, and role
-    And at least 3 testimonials are available
+
+#### Scenario: Shows testimonial carousel
+
+- **GIVEN** the page loads
+- **THEN** a carousel of testimonials is displayed
+- **AND** each testimonial shows a user image, quote, name, and role
+- **AND** at least 3 testimonials are available
 
 ### Blog Section
+
 Feature: Blog Section
-  Scenario: Shows recent blog posts
-    Given the page loads
-    Then 4 blog post cards are displayed in a row
-    And each card shows an image, title, date, author, and comment count
+
+#### Scenario: Shows recent blog posts
+
+- **GIVEN** the page loads
+- **THEN** 4 blog post cards are displayed in a row
+- **AND** each card shows an image, title, date, author, and comment count
 
 ### Instagram Section
+
 Feature: Instagram Section
-  Scenario: Shows Instagram gallery
-    Given the page loads
-    Then 5 Instagram images are shown in a full-width row
-    And each image has an Instagram icon overlay on hover
+
+#### Scenario: Shows Instagram gallery
+
+- **GIVEN** the page loads
+- **THEN** 5 Instagram images are shown in a full-width row
+- **AND** each image has an Instagram icon overlay on hover
 
 ### Footer
+
 Feature: Footer
-  Scenario: Renders dark footer
-    Given the page loads
-    Then a dark footer (#3c312e) is displayed
-    And it contains 4 columns: brand + description, Useful Links, Privacy, Contact
-    And social media icons are shown
-    And a copyright line with "Made with Component Dock" link
+
+#### Scenario: Renders dark footer
+
+- **GIVEN** the page loads
+- **THEN** a dark footer (#3c312e) is displayed
+- **AND** it contains 4 columns: brand + description, Useful Links, Privacy, Contact
+- **AND** social media icons are shown
+- **AND** a copyright line with "Made with Component Dock" link
 
 ## Verification checklist
 

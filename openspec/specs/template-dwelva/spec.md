@@ -83,110 +83,99 @@ identity):
     Services links, (3) Useful Links, (4) Subscribe form (email + button).
     Bottom bar with copyright and Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header renders top bar and sticky navbar
-```
-Given the user loads the page on desktop
-Then a top bar shows welcome text, email, phone, and social icons
-And a sticky navbar shows a logo, navigation links (Home, Pages, Property, Blog, Contact), and "Add Property" button
-```
+### Feature: Dwelva template behaviour
 
-### Scenario: Mobile hamburger menu toggles
-```
-Given the user loads the page on mobile
-Then the top bar is hidden
-And a hamburger menu icon appears in the navbar
-When the user taps the hamburger icon
-Then the mobile navigation menu opens with all nav links
-And tapping a link closes the menu
-```
+#### Scenario: Header renders top bar and sticky navbar
 
-### Scenario: Hero section with property search form
-```
-Given the user views the hero section
-Then a dark-overlay background image is displayed
-And the heading "Find your best Property" is centered
-And a search form shows: Location select, Property Type select, Price range slider, Bed Room select, Bath Room select
-And a search icon button triggers the form
-```
+- **GIVEN** the user loads the page on desktop
+- **THEN** a top bar shows welcome text, email, phone, and social icons
+- **AND** a sticky navbar shows a logo, navigation links (Home, Pages, Property, Blog, Contact), and "Add Property" button
 
-### Scenario: Popular Properties shows 6 listing cards
-```
-Given the user scrolls to the Popular Properties section
-Then the heading "Popular Properties" is displayed
-And 6 property cards are shown in a 3x2 grid
-And each card has an image, a "For Sale" or "For Rent" tag, title, location, price, and sqft/bed/bath info
-And a "More Properties" button is centered below the grid
-```
+#### Scenario: Mobile hamburger menu toggles
 
-### Scenario: Property card hover effect
-```
-Given the user hovers over a property card
-Then a subtle hover effect (shadow or scale) is applied
-```
+- **GIVEN** the user loads the page on mobile
+- **THEN** the top bar is hidden
+- **AND** a hamburger menu icon appears in the navbar
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile navigation menu opens with all nav links
+- **AND** tapping a link closes the menu
 
-### Scenario: Home Details carousel shows featured property
-```
-Given the user scrolls to the Home Details section
-Then a carousel displays featured property detail cards
-And each card shows a property image alongside info (tag, title, location, stats, description, price, "View Details" button)
-```
+#### Scenario: Hero section with property search form
 
-### Scenario: Accordion FAQ section
-```
-Given the user scrolls to the accordion section
-Then 3 FAQ items are displayed in an accordion on the left
-And an image is shown on the right
-When the user clicks an accordion header
-Then the content expands or collapses
-```
+- **GIVEN** the user views the hero section
+- **THEN** a dark-overlay background image is displayed
+- **AND** the heading "Find your best Property" is centered
+- **AND** a search form shows: Location select, Property Type select, Price range slider, Bed Room select, Bath Room select
+- **AND** a search icon button triggers the form
 
-### Scenario: Counter area displays statistics
-```
-Given the user scrolls to the counter section
-Then 3 statistics are displayed: 200+ Properties, 300 Clients, 15 Awards
-And the counters animate on scroll into view
-```
+#### Scenario: Popular Properties shows 6 listing cards
 
-### Scenario: Testimonial section with dark overlay
-```
-Given the user scrolls to the testimonial section
-Then a dark overlay background is applied
-And testimonial cards display client quotes, names, and roles
-```
+- **GIVEN** the user scrolls to the Popular Properties section
+- **THEN** the heading "Popular Properties" is displayed
+- **AND** 6 property cards are shown in a 3x2 grid
+- **AND** each card has an image, a "For Sale" or "For Rent" tag, title, location, price, and sqft/bed/bath info
+- **AND** a "More Properties" button is centered below the grid
 
-### Scenario: Team area shows member cards
-```
-Given the user scrolls to the team section
-Then team member cards are displayed
-And each card shows a photo, name, and role/title
-```
+#### Scenario: Property card hover effect
 
-### Scenario: Contact action CTA bar
-```
-Given the user scrolls to the contact action section
-Then a CTA bar shows "Add your property for sale" heading
-And a phone number and "Add Property" outlined button are displayed
-```
+- **GIVEN** the user hovers over a property card
+- **THEN** a subtle hover effect (shadow or scale) is applied
 
-### Scenario: Footer with 4 columns
-```
-Given the user views the footer
-Then 4 columns are shown: contact info + social, Services links, Useful Links, Subscribe form
-And the subscribe form has an email input and submit button
-And a link to https://www.componentdock.com/ branded as "Component Dock" is present
-```
+#### Scenario: Home Details carousel shows featured property
 
-### Scenario: Responsive layout adapts to mobile
-```
-Given the user views on a mobile viewport
-Then the top bar is hidden
-And the navbar collapses to a hamburger menu
-And property cards stack vertically
-And the home details carousel adapts to single column
-And the accordion and image stack vertically
-```
+- **GIVEN** the user scrolls to the Home Details section
+- **THEN** a carousel displays featured property detail cards
+- **AND** each card shows a property image alongside info (tag, title, location, stats, description, price, "View Details" button)
+
+#### Scenario: Accordion FAQ section
+
+- **GIVEN** the user scrolls to the accordion section
+- **THEN** 3 FAQ items are displayed in an accordion on the left
+- **AND** an image is shown on the right
+- **WHEN** the user clicks an accordion header
+- **THEN** the content expands or collapses
+
+#### Scenario: Counter area displays statistics
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 3 statistics are displayed: 200+ Properties, 300 Clients, 15 Awards
+- **AND** the counters animate on scroll into view
+
+#### Scenario: Testimonial section with dark overlay
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** a dark overlay background is applied
+- **AND** testimonial cards display client quotes, names, and roles
+
+#### Scenario: Team area shows member cards
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** team member cards are displayed
+- **AND** each card shows a photo, name, and role/title
+
+#### Scenario: Contact action CTA bar
+
+- **GIVEN** the user scrolls to the contact action section
+- **THEN** a CTA bar shows "Add your property for sale" heading
+- **AND** a phone number and "Add Property" outlined button are displayed
+
+#### Scenario: Footer with 4 columns
+
+- **GIVEN** the user views the footer
+- **THEN** 4 columns are shown: contact info + social, Services links, Useful Links, Subscribe form
+- **AND** the subscribe form has an email input and submit button
+- **AND** a link to https://www.componentdock.com/ branded as "Component Dock" is present
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **GIVEN** the user views on a mobile viewport
+- **THEN** the top bar is hidden
+- **AND** the navbar collapses to a hamburger menu
+- **AND** property cards stack vertically
+- **AND** the home details carousel adapts to single column
+- **AND** the accordion and image stack vertically
 
 ## Verification checklist
 

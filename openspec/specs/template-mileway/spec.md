@@ -40,89 +40,85 @@ Extracted from the live preview CSS (`css/style.css`) and screenshot analysis.
 8. **CTA Banner** — Blue (`#0779e4`) full-width banner. "What are you waiting for?" heading (white), subtext, "Rent a car now" white button.
 9. **Footer** — Dark background. 4 columns: About Us (text + social icons), Quick Links, Resources, Support. Copyright bar at bottom.
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the user loads the Mileway page
-  Then a "Mileway" logo text is visible in the top-left
-  And navigation links "Home", "Listings", "Testimonials", "About", "Contact" are visible
+#### Scenario: Navbar displays logo and navigation links
 
-Scenario: Navbar becomes solid on scroll
-  Given the user has scrolled past the hero section
-  Then the navbar background becomes solid white
-```
+- **GIVEN** the user loads the Mileway page
+- **THEN** a "Mileway" logo text is visible in the top-left
+- **AND** navigation links "Home", "Listings", "Testimonials", "About", "Contact" are visible
+
+#### Scenario: Navbar becomes solid on scroll
+
+- **GIVEN** the user has scrolled past the hero section
+- **THEN** the navbar background becomes solid white
 
 ### Hero
 
-```gherkin
-Scenario: Hero shows headline and search bar
-  Given the user loads the Mileway page
-  Then a hero headline "Rent a car" is visible
-  And a search bar with "Select Type", "Pick up", "Drop off" inputs is shown
-  And a "Search Now" button is visible
+#### Scenario: Hero shows headline and search bar
 
-Scenario: Search bar has three input fields
-  Given the user views the hero section
-  Then a car type selector is present
-  And a pick-up date picker is present
-  And a drop-off date picker is present
-```
+- **GIVEN** the user loads the Mileway page
+- **THEN** a hero headline "Rent a car" is visible
+- **AND** a search bar with "Select Type", "Pick up", "Drop off" inputs is shown
+- **AND** a "Search Now" button is visible
+
+#### Scenario: Search bar has three input fields
+
+- **GIVEN** the user views the hero section
+- **THEN** a car type selector is present
+- **AND** a pick-up date picker is present
+- **AND** a drop-off date picker is present
 
 ### How It Works
 
-```gherkin
-Scenario: Three-step process is displayed
-  Given the user scrolls to the "How it works" section
-  Then step "01" with title "Select a car" is visible
-  And step "02" with title "Fill up form" is visible
-  And step "03" with title "Payment" is visible
-```
+#### Scenario: Three-step process is displayed
+
+- **GIVEN** the user scrolls to the "How it works" section
+- **THEN** step "01" with title "Select a car" is visible
+- **AND** step "02" with title "Fill up form" is visible
+- **AND** step "03" with title "Payment" is visible
 
 ### Car Listings
 
-```gherkin
-Scenario: Car listing grid shows 6 vehicles
-  Given the user scrolls to the "Car Listings" section
-  Then 6 car cards are displayed in a grid
-  And each card shows a car name, price per day, and specs (Luggage, Doors, Passenger)
-  And each card has a "Rent Now" button
+#### Scenario: Car listing grid shows 6 vehicles
 
-Scenario: Car cards show pricing and features
-  Given a car card is rendered
-  Then it displays a price formatted as "$XXX.XX/day"
-  And it shows Luggage, Doors, and Passenger counts
-```
+- **GIVEN** the user scrolls to the "Car Listings" section
+- **THEN** 6 car cards are displayed in a grid
+- **AND** each card shows a car name, price per day, and specs (Luggage, Doors, Passenger)
+- **AND** each card has a "Rent Now" button
+
+#### Scenario: Car cards show pricing and features
+
+- **GIVEN** a car card is rendered
+- **THEN** it displays a price formatted as "$XXX.XX/day"
+- **AND** it shows Luggage, Doors, and Passenger counts
 
 ### Testimonials
 
-```gherkin
-Scenario: Three testimonials are displayed
-  Given the user scrolls to the "Testimonials" section
-  Then 3 testimonial cards are shown
-  And each card has a blockquote, person name, role, and avatar image
-```
+#### Scenario: Three testimonials are displayed
+
+- **GIVEN** the user scrolls to the "Testimonials" section
+- **THEN** 3 testimonial cards are shown
+- **AND** each card has a blockquote, person name, role, and avatar image
 
 ### CTA Banner
 
-```gherkin
-Scenario: CTA banner shows call to action
-  Given the user scrolls to the blue CTA banner
-  Then the heading "What are you waiting for?" is visible
-  And a "Rent a car now" button is displayed
-```
+#### Scenario: CTA banner shows call to action
+
+- **GIVEN** the user scrolls to the blue CTA banner
+- **THEN** the heading "What are you waiting for?" is visible
+- **AND** a "Rent a car now" button is displayed
 
 ### Footer
 
-```gherkin
-Scenario: Footer has four columns and social links
-  Given the user scrolls to the footer
-  Then "About Us", "Quick Links", "Resources", "Support" headings are visible
-  And social media icons (Facebook, Instagram, Twitter, LinkedIn) are present
-  And a "Component Dock" attribution link is in the footer
-```
+#### Scenario: Footer has four columns and social links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** "About Us", "Quick Links", "Resources", "Support" headings are visible
+- **AND** social media icons (Facebook, Instagram, Twitter, LinkedIn) are present
+- **AND** a "Component Dock" attribution link is in the footer
 
 ## Verification Checklist
 

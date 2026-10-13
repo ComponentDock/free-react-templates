@@ -58,94 +58,96 @@ Extracted from `style.css` of the live preview at preview.colorlib.com:
 - Vertical timeline with colored date markers
 - Progress bars for expertise/skills section
 
-## Gherkin requirements
+## Requirements
 
-### Background
+### Feature: BoxCraft template behaviour
 
-Given the user opens the BoxCraft page
-And the browser has loaded the page successfully
+**Background**
 
-### Scenario: Navigation renders correctly
+- **GIVEN** the user opens the BoxCraft page
+- **AND** the browser has loaded the page successfully
 
-Given the page has loaded
-Then the navigation bar is visible at the top
-And the logo is displayed on the left
-And navigation links are displayed (Home, Services, Portfolio, Team, Stories, Contact)
-And on mobile a hamburger menu icon is visible
+#### Scenario: Navigation renders correctly
 
-### Scenario: Hero slider displays
+- **GIVEN** the page has loaded
+- **THEN** the navigation bar is visible at the top
+- **AND** the logo is displayed on the left
+- **AND** navigation links are displayed (Home, Services, Portfolio, Team, Stories, Contact)
+- **AND** on mobile a hamburger menu icon is visible
 
-Given the page has loaded
-Then a full-width hero image carousel is visible
-And slide text overlays appear on the current slide
-And pagination dots indicate the current slide
-And the slider auto-advances or allows manual navigation
+#### Scenario: Hero slider displays
 
-### Scenario: Services section renders
+- **GIVEN** the page has loaded
+- **THEN** a full-width hero image carousel is visible
+- **AND** slide text overlays appear on the current slide
+- **AND** pagination dots indicate the current slide
+- **AND** the slider auto-advances or allows manual navigation
 
-Given the user scrolls to the Services section
-Then the section heading "Services" is visible
-And service items display with images and descriptions
-And the layout uses a two-column grid (image + text)
+#### Scenario: Services section renders
 
-### Scenario: Portfolio grid renders
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the section heading "Services" is visible
+- **AND** service items display with images and descriptions
+- **AND** the layout uses a two-column grid (image + text)
 
-Given the user scrolls to the Portfolio section
-Then the section heading "Portfolio" is visible
-And portfolio items display in a grid/masonry layout
-And each item shows an image with hover overlay
-And a "Load More" button is visible when more items exist
+#### Scenario: Portfolio grid renders
 
-### Scenario: Team section renders
+- **GIVEN** the user scrolls to the Portfolio section
+- **THEN** the section heading "Portfolio" is visible
+- **AND** portfolio items display in a grid/masonry layout
+- **AND** each item shows an image with hover overlay
+- **AND** a "Load More" button is visible when more items exist
 
-Given the user scrolls to the Crafters section
-Then the section heading "Crafters" is visible
-And team member cards display with photos, names, and roles
-And social media icons are shown for each member
+#### Scenario: Team section renders
 
-### Scenario: Timeline renders
+- **GIVEN** the user scrolls to the Crafters section
+- **THEN** the section heading "Crafters" is visible
+- **AND** team member cards display with photos, names, and roles
+- **AND** social media icons are shown for each member
 
-Given the user scrolls to the Stories section
-Then the section heading "Stories" is visible
-And a vertical timeline displays with dates and descriptions
-And year markers use the accent pink color (#e54b76)
-And timeline entries alternate left/right on desktop
+#### Scenario: Timeline renders
 
-### Scenario: Offer section renders
+- **GIVEN** the user scrolls to the Stories section
+- **THEN** the section heading "Stories" is visible
+- **AND** a vertical timeline displays with dates and descriptions
+- **AND** year markers use the accent pink color (#e54b76)
+- **AND** timeline entries alternate left/right on desktop
 
-Given the user scrolls to the Offer section
-Then the section heading "Offer" is visible
-And offer items display in a grid layout
-And the section has a dark background (#23214c)
+#### Scenario: Offer section renders
 
-### Scenario: Expertise progress bars render
+- **GIVEN** the user scrolls to the Offer section
+- **THEN** the section heading "Offer" is visible
+- **AND** offer items display in a grid layout
+- **AND** the section has a dark background (#23214c)
 
-Given the user scrolls to the Expertise section
-Then the section heading "Expertise" is visible
-And progress bars display with skill names and percentages
-And progress bars animate on scroll into view
+#### Scenario: Expertise progress bars render
 
-### Scenario: Contact form renders
+- **GIVEN** the user scrolls to the Expertise section
+- **THEN** the section heading "Expertise" is visible
+- **AND** progress bars display with skill names and percentages
+- **AND** progress bars animate on scroll into view
 
-Given the user scrolls to the Contact section
-Then the section heading "Contact" is visible
-And a contact form displays with Name, Email, Subject, and Message fields
-And a Submit button is present
-And company contact information is shown alongside
+#### Scenario: Contact form renders
 
-### Scenario: Footer renders
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** the section heading "Contact" is visible
+- **AND** a contact form displays with Name, Email, Subject, and Message fields
+- **AND** a Submit button is present
+- **AND** company contact information is shown alongside
 
-Given the user scrolls to the bottom
-Then the footer displays copyright text
-And social media icons are present (Twitter, Facebook, Dribbble, Behance, RSS)
-And the footer links to https://www.componentdock.com/
+#### Scenario: Footer renders
 
-### Scenario: Responsive layout
+- **GIVEN** the user scrolls to the bottom
+- **THEN** the footer displays copyright text
+- **AND** social media icons are present (Twitter, Facebook, Dribbble, Behance, RSS)
+- **AND** the footer links to https://www.componentdock.com/
 
-Given the viewport width is less than 768px
-Then the navigation collapses to a hamburger menu
-And sections stack vertically in single column
-And the portfolio grid adjusts to fewer columns
+#### Scenario: Responsive layout
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** sections stack vertically in single column
+- **AND** the portfolio grid adjusts to fewer columns
 
 ## Verification checklist
 

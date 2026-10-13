@@ -26,7 +26,7 @@ Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/templa
   - Border Radius: `4px` (default buttons), `40px` (`btn-round`)
   - Padding: `12px 16px`
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Section Header and Style Showcase
 
@@ -36,9 +36,9 @@ Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/templa
 
 #### Scenario: Display style variation buttons
 
-- **Given** the BtnSnap page is loaded
-- **When** the user views the style showcase section
-- **Then** solid and outline primary buttons with text, icons, and icon-only variants are displayed correctly.
+- **GIVEN** the BtnSnap page is loaded
+- **WHEN** the user views the style showcase section
+- **THEN** solid and outline primary buttons with text, icons, and icon-only variants are displayed correctly
 
 ### Requirement 2: Color Palette Showcase
 
@@ -48,9 +48,9 @@ Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/templa
 
 #### Scenario: Display color variant buttons
 
-- **Given** the color palette section is visible
-- **When** the user views the solid and outline color rows
-- **Then** buttons styled with primary (`#007bff`), secondary (`#6c757d`), tertiary (`#ff4893`), and quaternary (`#01d28e`) colors are rendered with proper hover states.
+- **GIVEN** the color palette section is visible
+- **WHEN** the user views the solid and outline color rows
+- **THEN** buttons styled with primary (`#007bff`), secondary (`#6c757d`), tertiary (`#ff4893`), and quaternary (`#01d28e`) colors are rendered with proper hover states
 
 ### Requirement 3: Social Media Buttons Showcase
 
@@ -60,9 +60,9 @@ Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/templa
 
 #### Scenario: Display social media buttons
 
-- **Given** the social buttons section is visible
-- **When** the user inspects the social button rows
-- **Then** Twitter, Facebook, LinkedIn, Pinterest, and Dribbble buttons are rendered in solid, outline, rounded (`btn-round`), icon-only, and stat counter badge formats (e.g., "Share - 8.2k", "Pin it - 1k").
+- **GIVEN** the social buttons section is visible
+- **WHEN** the user inspects the social button rows
+- **THEN** Twitter, Facebook, LinkedIn, Pinterest, and Dribbble buttons are rendered in solid, outline, rounded (`btn-round`), icon-only, and stat counter badge formats (e.g., "Share - 8.2k", "Pin it - 1k")
 
 ### Requirement 4: Footer Attribution
 
@@ -72,6 +72,6 @@ Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/templa
 
 #### Scenario: Footer link present
 
-- **Given** the footer is rendered
-- **When** the user views the bottom of the page
-- **Then** a link to `https://www.componentdock.com/` branded as "Component Dock" is visible.
+- **GIVEN** the footer is rendered
+- **WHEN** the user views the bottom of the page
+- **THEN** a link to `https://www.componentdock.com/` branded as "Component Dock" is visible

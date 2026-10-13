@@ -86,60 +86,69 @@ This is a FAQ-style accordion. Key visual differences from accordion-05:
 - Darker drop shadow on the container
 - No list items inside — just paragraph text answers
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Crumple template behaviour
+
 Feature: Crumple FAQ Accordion Component
-  As a user, I want to expand/collapse FAQ sections
-  so I can find answers to common questions.
+As a user, I want to expand/collapse FAQ sections
+so I can find answers to common questions.
 
-  Background:
-    Given the page is loaded
-    And the accordion is visible
+Background:
+- **GIVEN** the page is loaded
+- **AND** the accordion is visible
 
-  Scenario: Page heading is displayed
-    Then I should see the heading "Accordion #06"
+#### Scenario: Page heading is displayed
 
-  Scenario: First FAQ is expanded by default
-    Given the "How to manage account?" panel is expanded
-    Then I should see the answer text in the expanded panel
-    And the icon for "How to manage account?" should show expanded state
+- **THEN** I should see the heading "Accordion #06"
 
-  Scenario: Clicking an expanded FAQ collapses it
-    Given the "How to manage account?" panel is expanded
-    When I click the "How to manage account?" header
-    Then the "How to manage account?" panel should be collapsed
+#### Scenario: First FAQ is expanded by default
 
-  Scenario: Clicking a collapsed FAQ expands it
-    Given the "How to become Pro" panel is collapsed
-    When I click the "How to become Pro" header
-    Then the "How to become Pro" panel should be expanded
-    And I should see answer text
+- **GIVEN** the "How to manage account?" panel is expanded
+- **THEN** I should see the answer text in the expanded panel
+- **AND** the icon for "How to manage account?" should show expanded state
 
-  Scenario: Only one FAQ panel can be open at a time
-    Given the "How to manage account?" panel is expanded
-    When I click the "How to become Pro" header
-    Then the "How to manage account?" panel should be collapsed
-    And the "How to become Pro" panel should be expanded
+#### Scenario: Clicking an expanded FAQ collapses it
 
-  Scenario: Icons are green by default and blue when active
-    Then the "How to become Pro" icon should have green background
-    When I click the "How to become Pro" header
-    Then the "How to become Pro" icon should have blue background
+- **GIVEN** the "How to manage account?" panel is expanded
+- **WHEN** I click the "How to manage account?" header
+- **THEN** the "How to manage account?" panel should be collapsed
 
-  Scenario: Chevron icons rotate on expand/collapse
-    Given the "How to manage account?" panel is expanded
-    Then the chevron for "How to manage account?" should show expanded state
-    When I click the "How to manage account?" header
-    Then the chevron for "How to manage account?" should show collapsed state
+#### Scenario: Clicking a collapsed FAQ expands it
 
-  Scenario: Cards have sharp corners
-    Then the accordion container should have no border-radius
+- **GIVEN** the "How to become Pro" panel is collapsed
+- **WHEN** I click the "How to become Pro" header
+- **THEN** the "How to become Pro" panel should be expanded
+- **AND** I should see answer text
 
-  Scenario: Card body has subtle gray background when expanded
-    Given the "How to manage account?" panel is expanded
-    Then the expanded panel body should have light gray background
-```
+#### Scenario: Only one FAQ panel can be open at a time
+
+- **GIVEN** the "How to manage account?" panel is expanded
+- **WHEN** I click the "How to become Pro" header
+- **THEN** the "How to manage account?" panel should be collapsed
+- **AND** the "How to become Pro" panel should be expanded
+
+#### Scenario: Icons are green by default and blue when active
+
+- **THEN** the "How to become Pro" icon should have green background
+- **WHEN** I click the "How to become Pro" header
+- **THEN** the "How to become Pro" icon should have blue background
+
+#### Scenario: Chevron icons rotate on expand/collapse
+
+- **GIVEN** the "How to manage account?" panel is expanded
+- **THEN** the chevron for "How to manage account?" should show expanded state
+- **WHEN** I click the "How to manage account?" header
+- **THEN** the chevron for "How to manage account?" should show collapsed state
+
+#### Scenario: Cards have sharp corners
+
+- **THEN** the accordion container should have no border-radius
+
+#### Scenario: Card body has subtle gray background when expanded
+
+- **GIVEN** the "How to manage account?" panel is expanded
+- **THEN** the expanded panel body should have light gray background
 
 ## Verification checklist
 

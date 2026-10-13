@@ -53,76 +53,76 @@ a standalone React component page.
    - Options: US states (Alaska, Hawaii, California, Nevada, Oregon, Washington, Alabama, Utah)
 6. **Footer** with Component Dock link (mandatory per AGENTS.md)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multiselect Tag Picker with Live Search
 
 #### Scenario: Page renders with heading and multiselect
 
-- Given the page loads
-- When the user views the page
-- Then a heading "Multi-Select #2" is visible (centered, 20px)
-- And a multi-select input is visible
-- And instruction text "State separate with comma" is visible
+- **GIVEN** the page loads
+- **WHEN** the user views the page
+- **THEN** a heading "Multi-Select #2" is visible (centered, 20px)
+- **AND** a multi-select input is visible
+- **AND** instruction text "State separate with comma" is visible
 
 #### Scenario: Options appear on click
 
-- Given the multiselect is closed
-- When the user clicks the multiselect area
-- Then a dropdown list of US state options appears (Alaska, Hawaii, California, Nevada, Oregon, Washington, Alabama, Utah)
+- **GIVEN** the multiselect is closed
+- **WHEN** the user clicks the multiselect area
+- **THEN** a dropdown list of US state options appears (Alaska, Hawaii, California, Nevada, Oregon, Washington, Alabama, Utah)
 
 #### Scenario: Selecting an option creates a tag pill
 
-- Given the dropdown is open
-- When the user clicks "California"
-- Then a coral-pink tag pill labeled "California" appears in the selected area
-- And the tag has a remove icon (×)
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "California"
+- **THEN** a coral-pink tag pill labeled "California" appears in the selected area
+- **AND** the tag has a remove icon (×)
 
 #### Scenario: Selecting multiple options creates multiple tags
 
-- Given "California" is already selected
-- When the user also selects "Nevada"
-- Then two tag pills are visible: "California" and "Nevada"
+- **GIVEN** "California" is already selected
+- **WHEN** the user also selects "Nevada"
+- **THEN** two tag pills are visible: "California" and "Nevada"
 
 #### Scenario: Removing a tag
 
-- Given "California" is selected (tag pill visible)
-- When the user clicks the × remove icon on the "California" tag
-- Then the "California" tag pill disappears
-- And "California" is no longer selected
+- **GIVEN** "California" is selected (tag pill visible)
+- **WHEN** the user clicks the × remove icon on the "California" tag
+- **THEN** the "California" tag pill disappears
+- **AND** "California" is no longer selected
 
 #### Scenario: Live search filters options
 
-- Given the dropdown is open
-- When the user types "Cal" in the search input
-- Then options matching "Cal" are visible (e.g. California)
-- And non-matching options are hidden
+- **GIVEN** the dropdown is open
+- **WHEN** the user types "Cal" in the search input
+- **THEN** options matching "Cal" are visible (e.g. California)
+- **AND** non-matching options are hidden
 
 #### Scenario: Empty search restores all options
 
-- Given the dropdown is filtered to "Cal"
-- When the user clears the search input
-- Then all options are visible again
+- **GIVEN** the dropdown is filtered to "Cal"
+- **WHEN** the user clears the search input
+- **THEN** all options are visible again
 
 #### Scenario: Already-selected option shows different style
 
-- Given "California" is already selected
-- When the dropdown is open
-- Then "California" in the list shows a selected state (gray background #f4f4f4)
+- **GIVEN** "California" is already selected
+- **WHEN** the dropdown is open
+- **THEN** "California" in the list shows a selected state (gray background #f4f4f4)
 
 #### Scenario: Dropdown has rounded corners and shadow
 
-- Given the dropdown is open
-- Then the dropdown container has 7px border-radius
-- And the dropdown has a subtle drop shadow (0 15px 30px 0 rgba(0,0,0,0.2))
+- **GIVEN** the dropdown is open
+- **THEN** the dropdown container has 7px border-radius
+- **AND** the dropdown has a subtle drop shadow (0 15px 30px 0 rgba(0,0,0,0.2))
 
 #### Scenario: Accessibility
 
-- Given the page loads
-- When the user navigates with keyboard
-- Then the multiselect is focusable
-- And tags can be removed via keyboard
-- And the search input is focusable
+- **GIVEN** the page loads
+- **WHEN** the user navigates with keyboard
+- **THEN** the multiselect is focusable
+- **AND** tags can be removed via keyboard
+- **AND** the search input is focusable
 
 ## Verification Checklist
 

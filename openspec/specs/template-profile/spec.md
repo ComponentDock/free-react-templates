@@ -36,121 +36,124 @@ single-page application with multi-page navigation.
 | section-padding    | `8em 0`                               | `.ftco-section` vertical rhythm             |
 | subheading-style   | uppercase, bold, `#d5c455`, 16px, letter-spacing 1px | Section label above headings |
 
-## Gherkin requirements
+## Requirements
 
 ### Home / Hero
 
-```gherkin
 Feature: Hero section
-  Scenario: Hero renders with split layout
-    Given the user visits the home page
-    Then a navbar with brand "Profile." and links (Home, About, Services, Experiences, Works, Blog, Contact) is visible
-    And a hero section spans the full viewport height
-    And the left half shows text with a gold subheading "UI/UX Designer & Developer"
-    And a large heading "I'm John Schmidt" is displayed
-    And two CTA buttons are present: "More About Me" (gold primary) and "Hire Me" (white)
-    And the right half has a gold (#d5c455) overlay with a portrait image carousel
 
-  Scenario: Navbar is transparent on hero, dark on scroll/mobile
-    Given the user is on the home page
-    Then the navbar background is transparent over the hero
-    And on mobile (< 992px) the navbar background is dark (#222222)
-```
+#### Scenario: Hero renders with split layout
+
+- **GIVEN** the user visits the home page
+- **THEN** a navbar with brand "Profile." and links (Home, About, Services, Experiences, Works, Blog, Contact) is visible
+- **AND** a hero section spans the full viewport height
+- **AND** the left half shows text with a gold subheading "UI/UX Designer & Developer"
+- **AND** a large heading "I'm John Schmidt" is displayed
+- **AND** two CTA buttons are present: "More About Me" (gold primary) and "Hire Me" (white)
+- **AND** the right half has a gold (#d5c455) overlay with a portrait image carousel
+
+#### Scenario: Navbar is transparent on hero, dark on scroll/mobile
+
+- **GIVEN** the user is on the home page
+- **THEN** the navbar background is transparent over the hero
+- **AND** on mobile (< 992px) the navbar background is dark (#222222)
 
 ### About
 
-```gherkin
 Feature: About section
-  Scenario: About page shows stats and personal info
-    Given the user navigates to About
-    Then a breadcrumb hero banner shows "About Us"
-    And four stat counters are displayed: Happy Clients (5000), Projects Done (1200), Cups of Coffee (500), Working Hours (587)
-    And a subheading "About Me" appears above the heading
-    And the heading reads "A UI/UX Designer & Web Developer Based in Philippines"
-    And personal info fields are shown: Name, Date of birth, Address, Zip code, Email, Phone
-    And a "Download CV" gold primary button is present
 
-  Scenario: Skills progress bars
-    Given the user scrolls to the Skills section on the About page
-    Then skill progress bars are shown for: Adobe Photoshop (90%), Figma (95%), Adobe Illustrator (90%), Javascript (85%), HTML5 (95%), CSS3 (90%), WordPress (70%), Adobe XD (80%), SEO (80%)
+#### Scenario: About page shows stats and personal info
 
-  Scenario: Testimonials carousel
-    Given the user scrolls to the Testimonials section
-    Then a carousel of testimonial cards is displayed
-    And each card has a quote icon, avatar image, name, position, and testimonial text
-```
+- **GIVEN** the user navigates to About
+- **THEN** a breadcrumb hero banner shows "About Us"
+- **AND** four stat counters are displayed: Happy Clients (5000), Projects Done (1200), Cups of Coffee (500), Working Hours (587)
+- **AND** a subheading "About Me" appears above the heading
+- **AND** the heading reads "A UI/UX Designer & Web Developer Based in Philippines"
+- **AND** personal info fields are shown: Name, Date of birth, Address, Zip code, Email, Phone
+- **AND** a "Download CV" gold primary button is present
+
+#### Scenario: Skills progress bars
+
+- **GIVEN** the user scrolls to the Skills section on the About page
+- **THEN** skill progress bars are shown for: Adobe Photoshop (90%), Figma (95%), Adobe Illustrator (90%), Javascript (85%), HTML5 (95%), CSS3 (90%), WordPress (70%), Adobe XD (80%), SEO (80%)
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a carousel of testimonial cards is displayed
+- **AND** each card has a quote icon, avatar image, name, position, and testimonial text
 
 ### Services
 
-```gherkin
 Feature: Services section
-  Scenario: Services page shows service grid and pricing
-    Given the user navigates to Services
-    Then a breadcrumb hero banner shows "What I Do?"
-    And an 8-item service grid is displayed: UI/UX Design, Web Development, Graphic Design, Branding, Marketing, Mobile App Design, Visual Editor, IT Consultancy
-    And a pricing section shows 4 plans: Personal, Professional, Medium Business, Gigantic Business
-    And each pricing plan lists features with checkmark icons
-```
+
+#### Scenario: Services page shows service grid and pricing
+
+- **GIVEN** the user navigates to Services
+- **THEN** a breadcrumb hero banner shows "What I Do?"
+- **AND** an 8-item service grid is displayed: UI/UX Design, Web Development, Graphic Design, Branding, Marketing, Mobile App Design, Visual Editor, IT Consultancy
+- **AND** a pricing section shows 4 plans: Personal, Professional, Medium Business, Gigantic Business
+- **AND** each pricing plan lists features with checkmark icons
 
 ### Experience
 
-```gherkin
 Feature: Experience section
-  Scenario: Experience page shows education and work history
-    Given the user navigates to Experiences
-    Then a breadcrumb hero banner shows "Experiences"
-    And a two-column layout displays resume entries
-    And education entries include: Master Degree of Design, Bachelor's Degree of C.A, Diploma in Computer
-    And work entries include: Art & Creative Director, Wordpress Developer, UI/UX Designer
-    And each entry has a date range, icon, title, and company name
-```
+
+#### Scenario: Experience page shows education and work history
+
+- **GIVEN** the user navigates to Experiences
+- **THEN** a breadcrumb hero banner shows "Experiences"
+- **AND** a two-column layout displays resume entries
+- **AND** education entries include: Master Degree of Design, Bachelor's Degree of C.A, Diploma in Computer
+- **AND** work entries include: Art & Creative Director, Wordpress Developer, UI/UX Designer
+- **AND** each entry has a date range, icon, title, and company name
 
 ### Works / Portfolio
 
-```gherkin
 Feature: Works section
-  Scenario: Portfolio grid displays projects
-    Given the user navigates to Works
-    Then a breadcrumb hero banner shows "Portfolio"
-    And a 3-column project grid is displayed
-    And each project card has a background image with overlay
-    And hovering reveals the project title and description
-```
+
+#### Scenario: Portfolio grid displays projects
+
+- **GIVEN** the user navigates to Works
+- **THEN** a breadcrumb hero banner shows "Portfolio"
+- **AND** a 3-column project grid is displayed
+- **AND** each project card has a background image with overlay
+- **AND** hovering reveals the project title and description
 
 ### Blog
 
-```gherkin
 Feature: Blog section
-  Scenario: Blog page shows post cards
-    Given the user navigates to Blog
-    Then a breadcrumb hero banner shows "Blog Posts"
-    And a 4-column grid of blog entry cards is displayed
-    And each card has a featured image, meta info (author, date, comment count), title, and excerpt
-```
+
+#### Scenario: Blog page shows post cards
+
+- **GIVEN** the user navigates to Blog
+- **THEN** a breadcrumb hero banner shows "Blog Posts"
+- **AND** a 4-column grid of blog entry cards is displayed
+- **AND** each card has a featured image, meta info (author, date, comment count), title, and excerpt
 
 ### Contact
 
-```gherkin
 Feature: Contact section
-  Scenario: Contact page shows form and info
-    Given the user navigates to Contact
-    Then a breadcrumb hero banner shows "Contact us"
-    And a contact form with fields: Name, Email, Subject, Message is present
-    And a "Send Message" submit button is available
-    And contact info boxes display address, phone, and email
-    And a Google Map embed is shown alongside the form
-```
+
+#### Scenario: Contact page shows form and info
+
+- **GIVEN** the user navigates to Contact
+- **THEN** a breadcrumb hero banner shows "Contact us"
+- **AND** a contact form with fields: Name, Email, Subject, Message is present
+- **AND** a "Send Message" submit button is available
+- **AND** contact info boxes display address, phone, and email
+- **AND** a Google Map embed is shown alongside the form
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer renders on every page
-    Given the user is on any page
-    Then a minimal footer is displayed
-    And the footer contains a copyright line
-    And the footer links to https://www.componentdock.com/ (branded "Component Dock")
-```
+
+#### Scenario: Footer renders on every page
+
+- **GIVEN** the user is on any page
+- **THEN** a minimal footer is displayed
+- **AND** the footer contains a copyright line
+- **AND** the footer links to https://www.componentdock.com/ (branded "Component Dock")
 
 ## Verification checklist
 

@@ -47,145 +47,141 @@ Recreation of the ColorLib **Careers** template as a React 19 + Vite + Tailwind 
 7. **CTA Banner** — blue overlay on background image, "Looking For A Job?" headline, subtitle, yellow "Sign Up" button aligned right.
 8. **Footer** — dark background (#242424), 4-column layout: Search Trending links, Company links, Support links, Contact Us with social icons (Facebook, Twitter, Instagram, LinkedIn). Copyright line with "Made with Component Dock" link.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: HirePath Navbar
 
-  Scenario: Desktop navbar displays logo and nav links
-    Given the user views the page on a desktop viewport
-    Then the logo "HirePath" is visible on the left
-    And the nav links "Home", "Job Listings", "About", "Services", "Blog" are visible
-    And a "Contact Us" button is visible on the right
+#### Scenario: Desktop navbar displays logo and nav links
 
-  Scenario: Mobile hamburger menu toggles navigation
-    Given the user views the page on a mobile viewport
-    When the user taps the hamburger menu icon
-    Then the mobile navigation menu expands
-    And all nav links are visible in the menu
-```
+- **GIVEN** the user views the page on a desktop viewport
+- **THEN** the logo "HirePath" is visible on the left
+- **AND** the nav links "Home", "Job Listings", "About", "Services", "Blog" are visible
+- **AND** a "Contact Us" button is visible on the right
+
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** the user views the page on a mobile viewport
+- **WHEN** the user taps the hamburger menu icon
+- **THEN** the mobile navigation menu expands
+- **AND** all nav links are visible in the menu
 
 ### Hero section
 
-```gherkin
 Feature: HirePath Hero
 
-  Scenario: Hero displays headline and search form
-    Given the hero section is visible
-    Then the headline "A Powerful Career Website Template" is displayed
-    And a subtitle describing the platform is shown
-    And a 4-column search form is visible with:
-      | field | type |
-      | Job title | text input |
-      | Location | select dropdown |
-      | Category | select dropdown |
-      | Search | primary button |
+#### Scenario: Hero displays headline and search form
 
-  Scenario: Search form is responsive
-    Given the user views the page on a mobile viewport
-    Then the search form fields stack vertically
-    And the "Search Job" button spans full width
-```
+- **GIVEN** the hero section is visible
+- **THEN** the headline "A Powerful Career Website Template" is displayed
+- **AND** a subtitle describing the platform is shown
+- **AND** a 4-column search form is visible with:
+| field | type |
+| Job title | text input |
+| Location | select dropdown |
+| Category | select dropdown |
+| Search | primary button |
+
+#### Scenario: Search form is responsive
+
+- **GIVEN** the user views the page on a mobile viewport
+- **THEN** the search form fields stack vertically
+- **AND** the "Search Job" button spans full width
 
 ### Statistics section
 
-```gherkin
 Feature: HirePath Statistics
 
-  Scenario: Statistics counters display correctly
-    Given the statistics section scrolls into view
-    Then 4 counter items are displayed in a row:
-      | label | target value |
-      | Candidates | 1930 |
-      | Jobs Posted | 54 |
-      | Jobs Filled | 120 |
-      | Companies | 550 |
-    And the section has a blue overlay background
+#### Scenario: Statistics counters display correctly
 
-  Scenario: Statistics section is responsive
-    Given the user views on a mobile viewport
-    Then the counters display in a 2x2 grid
-```
+- **GIVEN** the statistics section scrolls into view
+- **THEN** 4 counter items are displayed in a row:
+| label | target value |
+| Candidates | 1930 |
+| Jobs Posted | 54 |
+| Jobs Filled | 120 |
+| Companies | 550 |
+- **AND** the section has a blue overlay background
+
+#### Scenario: Statistics section is responsive
+
+- **GIVEN** the user views on a mobile viewport
+- **THEN** the counters display in a 2x2 grid
 
 ### Job Listings section
 
-```gherkin
 Feature: HirePath Job Listings
 
-  Scenario: Job listings display with heading and job cards
-    Given the job listings section is visible
-    Then the heading "109,234 Job Listed" is displayed
-    And at least 3 job cards are shown
-    And each job card contains:
-      | element | description |
-      | thumbnail | placeholder image |
-      | badge | job type (Freelancer, Full-time, etc.) |
-      | title | clickable job title |
-      | meta | publisher name and category |
-      | location | city and country |
-      | salary | salary range text |
+#### Scenario: Job listings display with heading and job cards
 
-  Scenario: Job cards are separated by borders
-    Given multiple job cards are displayed
-    Then each card has a bottom border separating it from the next
-```
+- **GIVEN** the job listings section is visible
+- **THEN** the heading "109,234 Job Listed" is displayed
+- **AND** at least 3 job cards are shown
+- **AND** each job card contains:
+| element | description |
+| thumbnail | placeholder image |
+| badge | job type (Freelancer, Full-time, etc.) |
+| title | clickable job title |
+| meta | publisher name and category |
+| location | city and country |
+| salary | salary range text |
+
+#### Scenario: Job cards are separated by borders
+
+- **GIVEN** multiple job cards are displayed
+- **THEN** each card has a bottom border separating it from the next
 
 ### Company Logos section
 
-```gherkin
 Feature: HirePath Company Logos
 
-  Scenario: Company logos section displays correctly
-    Given the company logos section is visible
-    Then the heading "Our Candidates Work In Company" is displayed
-    And a subtitle paragraph is shown
-    And 4 placeholder logo images are displayed in a row
-```
+#### Scenario: Company logos section displays correctly
+
+- **GIVEN** the company logos section is visible
+- **THEN** the heading "Our Candidates Work In Company" is displayed
+- **AND** a subtitle paragraph is shown
+- **AND** 4 placeholder logo images are displayed in a row
 
 ### Testimonials section
 
-```gherkin
 Feature: HirePath Testimonials
 
-  Scenario: Testimonials carousel displays testimonials
-    Given the testimonials section is visible
-    Then the section has a light gray background
-    And at least 2 testimonial items are available in the carousel
-    And each testimonial shows a person image and a blockquote
-    And each blockquote includes a cite with the person's name
-```
+#### Scenario: Testimonials carousel displays testimonials
+
+- **GIVEN** the testimonials section is visible
+- **THEN** the section has a light gray background
+- **AND** at least 2 testimonial items are available in the carousel
+- **AND** each testimonial shows a person image and a blockquote
+- **AND** each blockquote includes a cite with the person's name
 
 ### CTA Banner section
 
-```gherkin
 Feature: HirePath CTA Banner
 
-  Scenario: CTA banner displays with action button
-    Given the CTA banner section is visible
-    Then the heading "Looking For A Job?" is displayed
-    And a subtitle text is shown
-    And a yellow "Sign Up" button is visible
-    And the section has a blue overlay background
-```
+#### Scenario: CTA banner displays with action button
+
+- **GIVEN** the CTA banner section is visible
+- **THEN** the heading "Looking For A Job?" is displayed
+- **AND** a subtitle text is shown
+- **AND** a yellow "Sign Up" button is visible
+- **AND** the section has a blue overlay background
 
 ### Footer
 
-```gherkin
 Feature: HirePath Footer
 
-  Scenario: Footer displays four columns with links
-    Given the footer is visible
-    Then the footer has a dark background
-    And 4 link columns are displayed:
-      | column | heading |
-      | Search Trending | Web Design, Graphic Design, Web Developers, Python, HTML5, CSS3 |
-      | Company | About Us, Career, Blog, Resources |
-      | Support | Support, Privacy, Terms of Service |
-      | Contact Us | Social media icons (Facebook, Twitter, Instagram, LinkedIn) |
-    And a copyright line with "Made with Component Dock" linking to componentdock.com is shown
-```
+#### Scenario: Footer displays four columns with links
+
+- **GIVEN** the footer is visible
+- **THEN** the footer has a dark background
+- **AND** 4 link columns are displayed:
+| column | heading |
+| Search Trending | Web Design, Graphic Design, Web Developers, Python, HTML5, CSS3 |
+| Company | About Us, Career, Blog, Resources |
+| Support | Support, Privacy, Terms of Service |
+| Contact Us | Social media icons (Facebook, Twitter, Instagram, LinkedIn) |
+- **AND** a copyright line with "Made with Component Dock" linking to componentdock.com is shown
 
 ## Verification checklist
 

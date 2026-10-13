@@ -32,96 +32,111 @@ Extracted from the live preview CSS (`css/style.css`) at `https://preview.colorl
 | Label weight       | `500`                                  | Checkbox option labels                    |
 | Label size         | `16px`                                 | Checkbox option text                      |
 
-## Gherkin Requirements
+## Requirements
 
 ### Background
 
-Given the page loads at the root URL
-Then the page background is `#f8f9fd`
-And the font family is "Lato" (with Arial fallback)
+#### Scenario: Background
+
+- **GIVEN** the page loads at the root URL
+- **THEN** the page background is `#f8f9fd`
+- **AND** the font family is "Lato" (with Arial fallback)
 
 ### Section: Main
 
-Scenario: Page heading renders
-Given the page is loaded
-Then a centered heading "CherryPick" is visible
-And the heading font size is approximately 28px
-And the heading color is black (#000)
+#### Scenario: Page heading renders
 
-Scenario: Multi-select label renders
-Given the page is loaded
-Then a label "Select Language:" is visible to the left of the dropdown
-And the label text color is gray
+- **GIVEN** the page is loaded
+- **THEN** a centered heading "CherryPick" is visible
+- **AND** the heading font size is approximately 28px
+- **AND** the heading color is black (#000)
 
-Scenario: Dropdown trigger button renders
-Given the page is loaded
-Then a dropdown trigger button is visible
-And the button has a white background
-And the button has a border-radius of 4px
-And the button has a subtle box-shadow
-And the button height is approximately 52px
+#### Scenario: Multi-select label renders
 
-Scenario: Dropdown opens on click
-Given the dropdown trigger is displayed
-When the user clicks the dropdown trigger
-Then a dropdown panel appears below the trigger
-And the dropdown panel has a subtle box-shadow
-And the panel displays a list of selectable options
+- **GIVEN** the page is loaded
+- **THEN** a label "Select Language:" is visible to the left of the dropdown
+- **AND** the label text color is gray
 
-Scenario: Dropdown shows language options
-Given the dropdown is open
-Then the following options are visible: PHP, JavaScript, Java, SQL, jQuery, .Net
-And each option has a checkbox to its left
-And each checkbox is 20px × 20px with a 4px border-radius
+#### Scenario: Dropdown trigger button renders
 
-Scenario: Selecting an option checks its checkbox
-Given the dropdown is open
-When the user clicks the "PHP" option
-Then the PHP checkbox becomes checked
-And the checkbox background turns #52de97 (green)
-And a white checkmark appears inside the checkbox
+- **GIVEN** the page is loaded
+- **THEN** a dropdown trigger button is visible
+- **AND** the button has a white background
+- **AND** the button has a border-radius of 4px
+- **AND** the button has a subtle box-shadow
+- **AND** the button height is approximately 52px
 
-Scenario: Multiple options can be selected
-Given the dropdown is open
-When the user selects "PHP"
-And the user selects "JavaScript"
-Then both PHP and JavaScript checkboxes are checked
-And both checkboxes show the green active state
+#### Scenario: Dropdown opens on click
 
-Scenario: Deselecting an option unchecks it
-Given the dropdown is open and "PHP" is selected
-When the user clicks the "PHP" option again
-Then the PHP checkbox becomes unchecked
-And the checkbox background returns to transparent
+- **GIVEN** the dropdown trigger is displayed
+- **WHEN** the user clicks the dropdown trigger
+- **THEN** a dropdown panel appears below the trigger
+- **AND** the dropdown panel has a subtle box-shadow
+- **AND** the panel displays a list of selectable options
 
-Scenario: Dropdown closes on outside click
-Given the dropdown is open
-When the user clicks outside the dropdown area
-Then the dropdown panel closes
+#### Scenario: Dropdown shows language options
 
-Scenario: Dropdown closes on second trigger click
-Given the dropdown is open
-When the user clicks the dropdown trigger again
-Then the dropdown panel closes
+- **GIVEN** the dropdown is open
+- **THEN** the following options are visible: PHP, JavaScript, Java, SQL, jQuery, .Net
+- **AND** each option has a checkbox to its left
+- **AND** each checkbox is 20px × 20px with a 4px border-radius
+
+#### Scenario: Selecting an option checks its checkbox
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks the "PHP" option
+- **THEN** the PHP checkbox becomes checked
+- **AND** the checkbox background turns #52de97 (green)
+- **AND** a white checkmark appears inside the checkbox
+
+#### Scenario: Multiple options can be selected
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user selects "PHP"
+- **AND** the user selects "JavaScript"
+- **THEN** both PHP and JavaScript checkboxes are checked
+- **AND** both checkboxes show the green active state
+
+#### Scenario: Deselecting an option unchecks it
+
+- **GIVEN** the dropdown is open and "PHP" is selected
+- **WHEN** the user clicks the "PHP" option again
+- **THEN** the PHP checkbox becomes unchecked
+- **AND** the checkbox background returns to transparent
+
+#### Scenario: Dropdown closes on outside click
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown area
+- **THEN** the dropdown panel closes
+
+#### Scenario: Dropdown closes on second trigger click
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks the dropdown trigger again
+- **THEN** the dropdown panel closes
 
 ### Accessibility
 
-Scenario: Dropdown trigger is keyboard accessible
-Given the page is loaded
-When the user presses Tab to focus the dropdown trigger
-Then the trigger receives visible focus indication
-And pressing Enter or Space opens the dropdown
+#### Scenario: Dropdown trigger is keyboard accessible
 
-Scenario: Options are navigable by keyboard
-Given the dropdown is open
-When the user presses ArrowDown
-Then focus moves to the next option
-And pressing ArrowUp moves focus to the previous option
+- **GIVEN** the page is loaded
+- **WHEN** the user presses Tab to focus the dropdown trigger
+- **THEN** the trigger receives visible focus indication
+- **AND** pressing Enter or Space opens the dropdown
 
-Scenario: Selection works with keyboard
-Given the dropdown is open and an option is focused
-When the user presses Space or Enter
-Then the focused option's checkbox toggles
+#### Scenario: Options are navigable by keyboard
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user presses ArrowDown
+- **THEN** focus moves to the next option
+- **AND** pressing ArrowUp moves focus to the previous option
+
+#### Scenario: Selection works with keyboard
+
+- **GIVEN** the dropdown is open and an option is focused
+- **WHEN** the user presses Space or Enter
+- **THEN** the focused option's checkbox toggles
 
 ## Verification Checklist
 

@@ -46,104 +46,109 @@ Extracted from `css/style.css` on the live preview.
 7. **Newsletter** — Newsletter subscription area with heading, descriptive text, and email input + subscribe button.
 8. **Footer** — Multi-column footer: about text (with logo), service links (SEO/SEM, Web design, Ecommerce, Digital marketing), About/Blog/Contact/Support links, newsletter signup. Copyright line at bottom.
 
-## Gherkin requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Header navigation
-  Scenario: Sticky header with logo and nav links
-    Given a visitor lands on the page
-    Then the header displays the site logo on the left
-    And the nav links "Home", "Listings", "Pages", "About", "Blog", "Contact" are visible
-    And a "Sign In" button is visible in the header
 
-  Scenario: Header stays sticky on scroll
-    Given the visitor scrolls down
-    Then the header remains fixed at the top of the viewport
-```
+#### Scenario: Sticky header with logo and nav links
+
+- **GIVEN** a visitor lands on the page
+- **THEN** the header displays the site logo on the left
+- **AND** the nav links "Home", "Listings", "Pages", "About", "Blog", "Contact" are visible
+- **AND** a "Sign In" button is visible in the header
+
+#### Scenario: Header stays sticky on scroll
+
+- **GIVEN** the visitor scrolls down
+- **THEN** the header remains fixed at the top of the viewport
 
 ### Hero / Search
 
-```gherkin
 Feature: Hero search section
-  Scenario: Hero displays search form
-    Given the visitor views the hero section
-    Then a heading "Find Nearby Attraction" is visible
-    And a search form with keyword, location, and category inputs is displayed
-    And a "Search" button is visible
 
-  Scenario: Category tabs are shown
-    Given the visitor views the hero section
-    Then category pills are displayed: "Hotel", "Food", "Shopping", "Bar & Pubs", "Places", "Discover"
-```
+#### Scenario: Hero displays search form
+
+- **GIVEN** the visitor views the hero section
+- **THEN** a heading "Find Nearby Attraction" is visible
+- **AND** a search form with keyword, location, and category inputs is displayed
+- **AND** a "Search" button is visible
+
+#### Scenario: Category tabs are shown
+
+- **GIVEN** the visitor views the hero section
+- **THEN** category pills are displayed: "Hotel", "Food", "Shopping", "Bar & Pubs", "Places", "Discover"
 
 ### Popular Categories
 
-```gherkin
 Feature: Popular Categories section
-  Scenario: Categories displayed in grid
-    Given the visitor scrolls to the categories section
-    Then a heading "Popular Categories" is visible
-    And category cards are displayed in a grid layout
-    And each card shows an icon, a title, and is clickable
 
-  Scenario: Category cards include expected items
-    Given the visitor views the categories section
-    Then cards for "Amazing Places", "Concerts", "Travel guide", "Music Festival", "Night Club", "Bars & Pubs", "Cafe", "Restaurants" exist
-```
+#### Scenario: Categories displayed in grid
+
+- **GIVEN** the visitor scrolls to the categories section
+- **THEN** a heading "Popular Categories" is visible
+- **AND** category cards are displayed in a grid layout
+- **AND** each card shows an icon, a title, and is clickable
+
+#### Scenario: Category cards include expected items
+
+- **GIVEN** the visitor views the categories section
+- **THEN** cards for "Amazing Places", "Concerts", "Travel guide", "Music Festival", "Night Club", "Bars & Pubs", "Cafe", "Restaurants" exist
 
 ### Sprayed CTA
 
-```gherkin
 Feature: Business CTA section
-  Scenario: CTA displays with background and button
-    Given the visitor scrolls to the CTA section
-    Then a heading "Sprayed Your Business with Us" is visible
-    And descriptive text is shown below the heading
-    And an "Add Your Business" button is visible
-```
+
+#### Scenario: CTA displays with background and button
+
+- **GIVEN** the visitor scrolls to the CTA section
+- **THEN** a heading "Sprayed Your Business with Us" is visible
+- **AND** descriptive text is shown below the heading
+- **AND** an "Add Your Business" button is visible
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials section
-  Scenario: Testimonials display
-    Given the visitor scrolls to the testimonials section
-    Then a heading "Testimonials" is visible
-    And testimonial cards show a quote, person name, and role
-    And the testimonials can be navigated via carousel controls
 
-  Scenario: Testimonial content
-    Given the visitor views a testimonial card
-    Then it shows a quote, the name "Robert Thomson", and the role "Business Owner"
-```
+#### Scenario: Testimonials display
+
+- **GIVEN** the visitor scrolls to the testimonials section
+- **THEN** a heading "Testimonials" is visible
+- **AND** testimonial cards show a quote, person name, and role
+- **AND** the testimonials can be navigated via carousel controls
+
+#### Scenario: Testimonial content
+
+- **GIVEN** the visitor views a testimonial card
+- **THEN** it shows a quote, the name "Robert Thomson", and the role "Business Owner"
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter section
-  Scenario: Newsletter subscription form
-    Given the visitor scrolls to the newsletter section
-    Then an email input field is displayed
-    And a subscribe button is visible
-```
+
+#### Scenario: Newsletter subscription form
+
+- **GIVEN** the visitor scrolls to the newsletter section
+- **THEN** an email input field is displayed
+- **AND** a subscribe button is visible
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer columns
-    Given the visitor scrolls to the footer
-    Then the footer displays columns with service links (SEO/SEM, Web design, Ecommerce, Digital marketing)
-    And navigation links (About, Blog, Contact, Support) are shown
-    And a newsletter subscription form is present
-    And a copyright line with "Component Dock" link is shown
 
-  Scenario: Footer brand link
-    Given the visitor views the footer
-    Then a link to "https://www.componentdock.com/" is present
-```
+#### Scenario: Footer columns
+
+- **GIVEN** the visitor scrolls to the footer
+- **THEN** the footer displays columns with service links (SEO/SEM, Web design, Ecommerce, Digital marketing)
+- **AND** navigation links (About, Blog, Contact, Support) are shown
+- **AND** a newsletter subscription form is present
+- **AND** a copyright line with "Component Dock" link is shown
+
+#### Scenario: Footer brand link
+
+- **GIVEN** the visitor views the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
 
 ## Verification checklist
 

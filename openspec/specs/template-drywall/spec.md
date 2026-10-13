@@ -86,133 +86,146 @@ and its `css/style.css` stylesheet:
 - **Footer heading:** `#fff` (white)
 - **Blog date badge bg:** `#fda729` (amber)
 
-## Gherkin requirements
+## Requirements
 
 ### Hero / Top Bar
 
 Feature: Hero and top info bar
 
-  Scenario: Top bar displays contact info and CTA
-    Given the page loads
-    Then the top bar shows email address, phone number, and "Request A Quote" button
-    And the top bar has a dark background (#16181b)
-    And the icon circles are amber (#fda729) with white icons
-    And the "Request A Quote" button is primary blue (#007bff)
+#### Scenario: Top bar displays contact info and CTA
 
-  Scenario: Hero slider displays with right-aligned text
-    Given the page loads
-    Then the hero section is 700px tall with a background image
-    And the heading "Base Construction" is displayed in Poppins bold
-    And the subheading "Build The Future" appears in a span within the heading
-    And the body text is in Nunito Sans
-    And a "Request A Quote" secondary button appears below the text
-    And the text is aligned to the right side of the hero
+- **GIVEN** the page loads
+- **THEN** the top bar shows email address, phone number, and "Request A Quote" button
+- **AND** the top bar has a dark background (#16181b)
+- **AND** the icon circles are amber (#fda729) with white icons
+- **AND** the "Request A Quote" button is primary blue (#007bff)
 
-  Scenario: Navbar has dark background with navigation links
-    Given the page loads
-    Then the navbar is dark (#16181b) and sticky
-    And it contains links: Home, About, Project, Blog, Contact
-    And a search input is present on the right
-    And the brand logo text "Bee." is displayed
+#### Scenario: Hero slider displays with right-aligned text
+
+- **GIVEN** the page loads
+- **THEN** the hero section is 700px tall with a background image
+- **AND** the heading "Base Construction" is displayed in Poppins bold
+- **AND** the subheading "Build The Future" appears in a span within the heading
+- **AND** the body text is in Nunito Sans
+- **AND** a "Request A Quote" secondary button appears below the text
+- **AND** the text is aligned to the right side of the hero
+
+#### Scenario: Navbar has dark background with navigation links
+
+- **GIVEN** the page loads
+- **THEN** the navbar is dark (#16181b) and sticky
+- **AND** it contains links: Home, About, Project, Blog, Contact
+- **AND** a search input is present on the right
+- **AND** the brand logo text "Bee." is displayed
 
 ### Services Section
 
 Feature: Services grid
 
-  Scenario: Services section displays 4 service cards
-    Given the page loads
-    Then the "Our Services" heading is displayed
-    And 4 service cards are shown in a row
-    And each card has an icon, title, and description
-    And the services are: Construction, House Renovation, Painting, Architecture Design
+#### Scenario: Services section displays 4 service cards
 
-  Scenario: Services cards have centered layout
-    Given the services section is visible
-    Then each card icon is centered
-    And each card title is in Poppins bold
-    And each card has a short description paragraph
+- **GIVEN** the page loads
+- **THEN** the "Our Services" heading is displayed
+- **AND** 4 service cards are shown in a row
+- **AND** each card has an icon, title, and description
+- **AND** the services are: Construction, House Renovation, Painting, Architecture Design
+
+#### Scenario: Services cards have centered layout
+
+- **GIVEN** the services section is visible
+- **THEN** each card icon is centered
+- **AND** each card title is in Poppins bold
+- **AND** each card has a short description paragraph
 
 ### CTA Banner
 
 Feature: Call-to-action parallax banner
 
-  Scenario: CTA banner shows with parallax background
-    Given the page loads
-    Then a parallax banner with "Lets Build Your Dream Together" heading is displayed
-    And the banner has a dark overlay on a background image
-    And a "Know more about us" primary button is centered below the text
+#### Scenario: CTA banner shows with parallax background
+
+- **GIVEN** the page loads
+- **THEN** a parallax banner with "Lets Build Your Dream Together" heading is displayed
+- **AND** the banner has a dark overlay on a background image
+- **AND** a "Know more about us" primary button is centered below the text
 
 ### Team Section
 
 Feature: Team member cards
 
-  Scenario: Team section displays 4 members
-    Given the page loads
-    Then the "Our Professional Team" heading is displayed
-    And 4 team member cards are shown
-    And each card has a photo, name, and role
-    And the team members are: Daren Wilson, Warren Parker, Eva Gustavo, Mike Henderson
+#### Scenario: Team section displays 4 members
+
+- **GIVEN** the page loads
+- **THEN** the "Our Professional Team" heading is displayed
+- **AND** 4 team member cards are shown
+- **AND** each card has a photo, name, and role
+- **AND** the team members are: Daren Wilson, Warren Parker, Eva Gustavo, Mike Henderson
 
 ### Project Gallery
 
 Feature: Project image gallery
 
-  Scenario: Projects section displays 8 project images
-    Given the page loads
-    Then the "Featured Projects" heading is displayed
-    And 8 project images are shown in a grid
-    And the projects include "San Francisco Tower" and "Rose Villa House"
-    And hovering shows a zoom/overlay effect on each image
+#### Scenario: Projects section displays 8 project images
+
+- **GIVEN** the page loads
+- **THEN** the "Featured Projects" heading is displayed
+- **AND** 8 project images are shown in a grid
+- **AND** the projects include "San Francisco Tower" and "Rose Villa House"
+- **AND** hovering shows a zoom/overlay effect on each image
 
 ### Counter Section
 
 Feature: Statistics counter
 
-  Scenario: Counter section displays 4 stats
-    Given the page loads
-    Then the counter section shows with a parallax background
-    And 4 stat items are displayed: "30 Years Experienced", "1500 Projects Successful", "100 Professional Experts", "300 Happy Customers"
-    And each counter animates on scroll
+#### Scenario: Counter section displays 4 stats
+
+- **GIVEN** the page loads
+- **THEN** the counter section shows with a parallax background
+- **AND** 4 stat items are displayed: "30 Years Experienced", "1500 Projects Successful", "100 Professional Experts", "300 Happy Customers"
+- **AND** each counter animates on scroll
 
 ### Testimonials Section
 
 Feature: Testimonials and services split
 
-  Scenario: Testimony section displays services and testimonials
-    Given the page loads
-    Then the "Experience Great Services" heading is displayed on the left
-    And 3 service items are listed: Expert & Professional, High Quality Work, 24/7 Help Support
-    And the right side shows a testimonial carousel with customer quotes
-    And navigation dots allow switching between testimonials
+#### Scenario: Testimony section displays services and testimonials
+
+- **GIVEN** the page loads
+- **THEN** the "Experience Great Services" heading is displayed on the left
+- **AND** 3 service items are listed: Expert & Professional, High Quality Work, 24/7 Help Support
+- **AND** the right side shows a testimonial carousel with customer quotes
+- **AND** navigation dots allow switching between testimonials
 
 ### Blog Section
 
 Feature: Blog cards
 
-  Scenario: Blog section displays 3 blog cards
-    Given the page loads
-    Then the "Recent Blog" heading is displayed
-    And 3 blog cards are shown on a light background (#f8f9fa)
-    And each card has a date badge (amber #fda729), title, excerpt, and "Read More" button
-    And each card shows author and comment count
+#### Scenario: Blog section displays 3 blog cards
+
+- **GIVEN** the page loads
+- **THEN** the "Recent Blog" heading is displayed
+- **AND** 3 blog cards are shown on a light background (#f8f9fa)
+- **AND** each card has a date badge (amber #fda729), title, excerpt, and "Read More" button
+- **AND** each card shows author and comment count
 
 ### Footer
 
 Feature: Dark footer with widgets
 
-  Scenario: Footer has 4 widget columns
-    Given the page loads
-    Then the footer is dark (#16181b)
-    And column 1 shows the logo "Bee." with social links (Twitter, Facebook, Instagram)
-    And column 2 shows a services list (Construction, Renovation, Painting, Interior Design, Exterior Design)
-    And column 3 shows recent blog posts with thumbnails
-    And column 4 shows a newsletter signup form with email input
-    And the footer links to Component Dock
+#### Scenario: Footer has 4 widget columns
 
-  Scenario: Footer has copyright bar
-    Given the footer is visible
-    Then a copyright notice is displayed below the widgets
-    And the footer is full-width with dark background
+- **GIVEN** the page loads
+- **THEN** the footer is dark (#16181b)
+- **AND** column 1 shows the logo "Bee." with social links (Twitter, Facebook, Instagram)
+- **AND** column 2 shows a services list (Construction, Renovation, Painting, Interior Design, Exterior Design)
+- **AND** column 3 shows recent blog posts with thumbnails
+- **AND** column 4 shows a newsletter signup form with email input
+- **AND** the footer links to Component Dock
+
+#### Scenario: Footer has copyright bar
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright notice is displayed below the widgets
+- **AND** the footer is full-width with dark background
 
 ## Verification checklist
 

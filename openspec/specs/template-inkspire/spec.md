@@ -70,113 +70,103 @@ Extracted from the ColorLib Author preview CSS (`css/style.css`).
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with correct navigation links and brand
-```gherkin
-Given the user visits the Inkspire page
-Then a navigation bar is visible with the brand name "Inkspire."
-And the nav contains links: "Home", "About", "Chapter", "Reviews", "My Books", "Author", "Contact"
-And the navbar is transparent/dark over the hero section
-And on scroll the navbar gains a white background with dark text
-```
+### Feature: Inkspire template behaviour
 
-### Scenario: Hero section displays book title and CTA
-```gherkin
-Given the user visits the Inkspire page
-Then the hero section shows a subheading "BEST SELLER BOOK OF THE WEEK"
-And the hero heading reads "Clue Of The Wooden Cottage"
-And the hero paragraph describes the book
-And a green pill button reads "BUY NOW FOR $22.78"
-And an illustration is displayed on the right side of the hero
-```
+#### Scenario: Navbar renders with correct navigation links and brand
 
-### Scenario: Partners/logo strip displays brand logos
-```gherkin
-Given the user visits the Inkspire page
-Then a row of at least 5 partner logos is visible below the hero
-And the logos are displayed in greyscale
-```
+- **GIVEN** the user visits the Inkspire page
+- **THEN** a navigation bar is visible with the brand name "Inkspire."
+- **AND** the nav contains links: "Home", "About", "Chapter", "Reviews", "My Books", "Author", "Contact"
+- **AND** the navbar is transparent/dark over the hero section
+- **AND** on scroll the navbar gains a white background with dark text
 
-### Scenario: About the Book section with feature list
-```gherkin
-Given the user visits the Inkspire page
-Then the "About The Book" section is visible
-And it contains a book image on the left
-And it contains a heading, paragraph, and "Award achievements" list on the right
-And feature items "Read On Any Devices" and "Very High Resolution" are shown with icons
-```
+#### Scenario: Hero section displays book title and CTA
 
-### Scenario: Counter stats section with background image
-```gherkin
-Given the user visits the Inkspire page
-Then the counter section displays 4 stat cards
-And the stats include "Copies Sold", "Happy Clients", "Published Books", "Active Readers"
-And the counter numbers animate/count up on scroll into view
-And the section has a background image
-```
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the hero section shows a subheading "BEST SELLER BOOK OF THE WEEK"
+- **AND** the hero heading reads "Clue Of The Wooden Cottage"
+- **AND** the hero paragraph describes the book
+- **AND** a green pill button reads "BUY NOW FOR $22.78"
+- **AND** an illustration is displayed on the right side of the hero
 
-### Scenario: Services section on dark background
-```gherkin
-Given the user visits the Inkspire page
-Then the services section has a dark background
-And 3 service cards are displayed: "Experience", "Marketing Goals", "Targeting Vision"
-And each card has a green icon, white title, and light description text
-And hovering a card highlights it in green
-```
+#### Scenario: Partners/logo strip displays brand logos
 
-### Scenario: Testimonials section with green overlay
-```gherkin
-Given the user visits the Inkspire page
-Then the testimonials section has a green (#17b978) background overlay
-And testimonial cards display a quote, client name, and star rating
-And carousel navigation dots are present
-And the active dot is green (#17b978)
-```
+- **GIVEN** the user visits the Inkspire page
+- **THEN** a row of at least 5 partner logos is visible below the hero
+- **AND** the logos are displayed in greyscale
 
-### Scenario: My Other Books gallery grid
-```gherkin
-Given the user visits the Inkspire page
-Then a "My Other Books" heading is visible
-And a grid of 8 book cover images is displayed
-And the grid is 4 columns on desktop and 2 columns on mobile
-```
+#### Scenario: About the Book section with feature list
 
-### Scenario: About the Author section
-```gherkin
-Given the user visits the Inkspire page
-Then the "About the Author" section displays an author portrait on the left
-And a heading, bio text, and social media links appear on the right
-And social links are styled as icon circles
-```
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the "About The Book" section is visible
+- **AND** it contains a book image on the left
+- **AND** it contains a heading, paragraph, and "Award achievements" list on the right
+- **AND** feature items "Read On Any Devices" and "Very High Resolution" are shown with icons
 
-### Scenario: Contact section with form and info
-```gherkin
-Given the user visits the Inkspire page
-Then the contact section shows contact info boxes with green icons
-And the contact info includes address, phone, email, and website
-And a contact form is present with fields: name, email, subject, message
-And a "Send Message" button is present
-And the button is styled as a green pill button
-```
+#### Scenario: Counter stats section with background image
 
-### Scenario: Footer with dark background and columns
-```gherkin
-Given the user visits the Inkspire page
-Then the footer has a black (#000) background
-And the footer contains 4 columns: brand, template pages, community, newsletter
-And a copyright notice is displayed at the bottom
-And the footer links to "https://www.componentdock.com/" with text "Component Dock"
-```
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the counter section displays 4 stat cards
+- **AND** the stats include "Copies Sold", "Happy Clients", "Published Books", "Active Readers"
+- **AND** the counter numbers animate/count up on scroll into view
+- **AND** the section has a background image
 
-### Scenario: Responsive layout on mobile
-```gherkin
-Given the user visits the Inkspire page on a mobile viewport (375px wide)
-Then the navbar collapses into a hamburger menu
-And the hero section stacks vertically
-And columns in About, Counter, Services, Contact sections collapse to single column
-And the book grid displays 2 columns
-```
+#### Scenario: Services section on dark background
+
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the services section has a dark background
+- **AND** 3 service cards are displayed: "Experience", "Marketing Goals", "Targeting Vision"
+- **AND** each card has a green icon, white title, and light description text
+- **AND** hovering a card highlights it in green
+
+#### Scenario: Testimonials section with green overlay
+
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the testimonials section has a green (#17b978) background overlay
+- **AND** testimonial cards display a quote, client name, and star rating
+- **AND** carousel navigation dots are present
+- **AND** the active dot is green (#17b978)
+
+#### Scenario: My Other Books gallery grid
+
+- **GIVEN** the user visits the Inkspire page
+- **THEN** a "My Other Books" heading is visible
+- **AND** a grid of 8 book cover images is displayed
+- **AND** the grid is 4 columns on desktop and 2 columns on mobile
+
+#### Scenario: About the Author section
+
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the "About the Author" section displays an author portrait on the left
+- **AND** a heading, bio text, and social media links appear on the right
+- **AND** social links are styled as icon circles
+
+#### Scenario: Contact section with form and info
+
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the contact section shows contact info boxes with green icons
+- **AND** the contact info includes address, phone, email, and website
+- **AND** a contact form is present with fields: name, email, subject, message
+- **AND** a "Send Message" button is present
+- **AND** the button is styled as a green pill button
+
+#### Scenario: Footer with dark background and columns
+
+- **GIVEN** the user visits the Inkspire page
+- **THEN** the footer has a black (#000) background
+- **AND** the footer contains 4 columns: brand, template pages, community, newsletter
+- **AND** a copyright notice is displayed at the bottom
+- **AND** the footer links to "https://www.componentdock.com/" with text "Component Dock"
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user visits the Inkspire page on a mobile viewport (375px wide)
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the hero section stacks vertically
+- **AND** columns in About, Counter, Services, Contact sections collapse to single column
+- **AND** the book grid displays 2 columns
 
 ---
 

@@ -70,67 +70,78 @@ Single-section template: a full-viewport background with a centered white signup
 - Focus effect on inputs: gradient border (`#9face6` → `#74ebd5` via border-image)
 - Responsive: at `≤768px`, container becomes `calc(100% - 40px)`; at `≤480px`, card padding reduces to `50px 25px`
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Regforge template behaviour
+
 Feature: Regforge signup form
 
-  Background:
-    Given the user navigates to the Regforge template page
-    And the page has a full-viewport background image
+Background:
+- **GIVEN** the user navigates to the Regforge template page
+- **AND** the page has a full-viewport background image
 
-  Scenario: Card renders centered on the page
-    Then a white card is displayed centered on the page
-    And the card has a border-radius of 10px
-    And the card has padding of 50px 85px
+#### Scenario: Card renders centered on the page
 
-  Scenario: Heading displays correctly
-    Then a "Create account" heading is visible
-    And the heading is uppercase, bold (900), and centered
-    And the heading color is dark (#222)
+- **THEN** a white card is displayed centered on the page
+- **AND** the card has a border-radius of 10px
+- **AND** the card has padding of 50px 85px
 
-  Scenario: Name input field
-    Then there is a text input with placeholder "Your Name"
-    And the input has a 1px solid #ebebeb border
-    And the input has 5px border-radius
+#### Scenario: Heading displays correctly
 
-  Scenario: Email input field
-    Then there is an email input with placeholder "Your Email"
-    And the input has the same styling as the name input
+- **THEN** a "Create account" heading is visible
+- **AND** the heading is uppercase, bold (900), and centered
+- **AND** the heading color is dark (#222)
 
-  Scenario: Password input with eye toggle
-    Then there is a text input with placeholder "Password"
-    And an eye icon is visible to the right of the input
-    When the user clicks the eye icon
-    Then the password field type toggles between text and password
-    And the eye icon changes between eye and eye-off variants
+#### Scenario: Name input field
 
-  Scenario: Repeat password input field
-    Then there is a password input with placeholder "Repeat your password"
+- **THEN** there is a text input with placeholder "Your Name"
+- **AND** the input has a 1px solid #ebebeb border
+- **AND** the input has 5px border-radius
 
-  Scenario: Terms checkbox
-    Then there is a custom-styled checkbox
-    And the label reads "I agree all statements in Terms of service"
-    And "Terms of service" is rendered as a link
+#### Scenario: Email input field
 
-  Scenario: Submit button
-    Then a full-width "Sign up" button is visible
-    And the button has a gradient background (#74ebd5 to #9face6)
-    And the button text is white, uppercase, and bold
+- **THEN** there is an email input with placeholder "Your Email"
+- **AND** the input has the same styling as the name input
 
-  Scenario: Login link
-    Then "Have already an account?" text is displayed below the form
-    And "Login here" is a bold link
+#### Scenario: Password input with eye toggle
 
-  Scenario: Input focus shows gradient border
-    When the user focuses on any input field
-    Then the input border shows a gradient from #9face6 to #74ebd5
+- **THEN** there is a text input with placeholder "Password"
+- **AND** an eye icon is visible to the right of the input
+- **WHEN** the user clicks the eye icon
+- **THEN** the password field type toggles between text and password
+- **AND** the eye icon changes between eye and eye-off variants
 
-  Scenario: Responsive layout on mobile
-    When the viewport width is 768px or less
-    Then the container width adjusts to fill available space minus margins
-    And at 480px or less the card padding reduces to 50px 25px
-```
+#### Scenario: Repeat password input field
+
+- **THEN** there is a password input with placeholder "Repeat your password"
+
+#### Scenario: Terms checkbox
+
+- **THEN** there is a custom-styled checkbox
+- **AND** the label reads "I agree all statements in Terms of service"
+- **AND** "Terms of service" is rendered as a link
+
+#### Scenario: Submit button
+
+- **THEN** a full-width "Sign up" button is visible
+- **AND** the button has a gradient background (#74ebd5 to #9face6)
+- **AND** the button text is white, uppercase, and bold
+
+#### Scenario: Login link
+
+- **THEN** "Have already an account?" text is displayed below the form
+- **AND** "Login here" is a bold link
+
+#### Scenario: Input focus shows gradient border
+
+- **WHEN** the user focuses on any input field
+- **THEN** the input border shows a gradient from #9face6 to #74ebd5
+
+#### Scenario: Responsive layout on mobile
+
+- **WHEN** the viewport width is 768px or less
+- **THEN** the container width adjusts to fill available space minus margins
+- **AND** at 480px or less the card padding reduces to 50px 25px
 
 ## Verification checklist
 

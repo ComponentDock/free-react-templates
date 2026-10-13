@@ -50,64 +50,76 @@ variants (muted yellow-green, mint green, sky blue) demonstrate the same
 component with different accent palettes. The design is minimal and
 form-focused — no hero, no navigation, no footer in the original demo.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: OptGrid template behaviour
+
 Feature: OptGrid Multi-Select Demo Page
 
-  Background:
-    Given the user opens the OptGrid template at the root URL
+Background:
+- **GIVEN** the user opens the OptGrid template at the root URL
 
-  Scenario: Page loads with correct title and heading
-    Then a heading "Multi-Select #10 (Limit to 5)" is visible
-    And the page background color is light gray (#efefef)
+#### Scenario: Page loads with correct title and heading
 
-  Scenario: Three multi-select variants are displayed
-    Then three multi-select components are visible
-    And each multi-select contains the options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
+- **THEN** a heading "Multi-Select #10 (Limit to 5)" is visible
+- **AND** the page background color is light gray (#efefef)
 
-  Scenario: Color variant 1 uses yellow-green chip accent
-    Then the first multi-select component has a yellow-green (#e5e4cc) chip accent
+#### Scenario: Three multi-select variants are displayed
 
-  Scenario: Color variant 2 uses mint-green chip accent
-    Then the second multi-select component has a mint-green (#c7f0db) chip accent
+- **THEN** three multi-select components are visible
+- **AND** each multi-select contains the options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
 
-  Scenario: Color variant 3 uses sky-blue chip accent
-    Then the third multi-select component has a sky-blue (#d3f4ff) chip accent
+#### Scenario: Color variant 1 uses yellow-green chip accent
 
-  Scenario: Selecting an option creates a chip tag
-    Given the first multi-select is focused
-    When the user selects "Design" from the options
-    Then a chip labeled "Design" appears in the first multi-select
+- **THEN** the first multi-select component has a yellow-green (#e5e4cc) chip accent
 
-  Scenario: Removing a selected chip
-    Given the first multi-select has "Design" selected
-    When the user clicks the close button on the "Design" chip
-    Then the "Design" chip is removed from the first multi-select
+#### Scenario: Color variant 2 uses mint-green chip accent
 
-  Scenario: Dropdown opens with all options
-    Given a multi-select is focused
-    When the user opens the dropdown
-    Then all 8 options are listed in the dropdown
+- **THEN** the second multi-select component has a mint-green (#c7f0db) chip accent
 
-  Scenario: Selection limit enforcement
-    Given the first multi-select has 5 options selected
-    When the user tries to select a 6th option
-    Then no additional chip is added (limit of 5 is enforced)
+#### Scenario: Color variant 3 uses sky-blue chip accent
 
-  Scenario: Responsive layout
-    When the viewport width is less than 768px
-    Then the multi-select components stack vertically
-    And each component spans the full width
+- **THEN** the third multi-select component has a sky-blue (#d3f4ff) chip accent
 
-  Scenario: Accessibility — keyboard navigation
-    Given a multi-select is focused
-    When the user presses ArrowDown
-    Then the dropdown options are navigable by keyboard
+#### Scenario: Selecting an option creates a chip tag
 
-  Scenario: Footer links to Component Dock
-    Then a link to "https://www.componentdock.com/" is present in the footer
-```
+- **GIVEN** the first multi-select is focused
+- **WHEN** the user selects "Design" from the options
+- **THEN** a chip labeled "Design" appears in the first multi-select
+
+#### Scenario: Removing a selected chip
+
+- **GIVEN** the first multi-select has "Design" selected
+- **WHEN** the user clicks the close button on the "Design" chip
+- **THEN** the "Design" chip is removed from the first multi-select
+
+#### Scenario: Dropdown opens with all options
+
+- **GIVEN** a multi-select is focused
+- **WHEN** the user opens the dropdown
+- **THEN** all 8 options are listed in the dropdown
+
+#### Scenario: Selection limit enforcement
+
+- **GIVEN** the first multi-select has 5 options selected
+- **WHEN** the user tries to select a 6th option
+- **THEN** no additional chip is added (limit of 5 is enforced)
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** the multi-select components stack vertically
+- **AND** each component spans the full width
+
+#### Scenario: Accessibility — keyboard navigation
+
+- **GIVEN** a multi-select is focused
+- **WHEN** the user presses ArrowDown
+- **THEN** the dropdown options are navigable by keyboard
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** a link to "https://www.componentdock.com/" is present in the footer
 
 ## Verification checklist
 

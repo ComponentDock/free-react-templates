@@ -48,151 +48,149 @@ Extracted from the ColorLib Hiroto preview stylesheet:
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Header
 
-```gherkin
-Scenario: Header displays contact info and navigation
-  Given the user is on the landing page
-  Then the header shows the address "96 Ernser Vista Suite 437, NY, US"
-  And the header shows the phone "(123) 456-78-910"
-  And the navbar contains links: Home, Rooms, About Us, News, Contact
-  And a "Book Now" CTA button is visible
+#### Scenario: Header displays contact info and navigation
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls past the hero
-  Then the navbar remains fixed at the top of the viewport
+- **GIVEN** the user is on the landing page
+- **THEN** the header shows the address "96 Ernser Vista Suite 437, NY, US"
+- **AND** the header shows the phone "(123) 456-78-910"
+- **AND** the navbar contains links: Home, Rooms, About Us, News, Contact
+- **AND** a "Book Now" CTA button is visible
 
-Scenario: Mobile hamburger menu
-  Given the user is on a mobile viewport (< 768px)
-  Then a hamburger icon is visible
-  And tapping it opens a slide-in mobile menu
-```
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar remains fixed at the top of the viewport
+
+#### Scenario: Mobile hamburger menu
+
+- **GIVEN** the user is on a mobile viewport (< 768px)
+- **THEN** a hamburger icon is visible
+- **AND** tapping it opens a slide-in mobile menu
 
 ### Hero
 
-```gherkin
-Scenario: Hero displays welcome message
-  Given the user is on the landing page
-  Then the hero shows a subtitle "WELCOME AURUMSTAY" in accent color
-  And the hero shows heading "Experience the greatest for your holidays"
-  And the heading is white on a dark background image
+#### Scenario: Hero displays welcome message
 
-Scenario: Hero has full-width dark background
-  Given the user views the hero
-  Then the hero spans full viewport width
-  And the background is a dark hotel image with overlay
-```
+- **GIVEN** the user is on the landing page
+- **THEN** the hero shows a subtitle "WELCOME AURUMSTAY" in accent color
+- **AND** the hero shows heading "Experience the greatest for your holidays"
+- **AND** the heading is white on a dark background image
+
+#### Scenario: Hero has full-width dark background
+
+- **GIVEN** the user views the hero
+- **THEN** the hero spans full viewport width
+- **AND** the background is a dark hotel image with overlay
 
 ### Booking Form
 
-```gherkin
-Scenario: Booking form fields are present
-  Given the user sees the booking form below the hero
-  Then a "Location" text input with search icon is visible
-  And a "Check In" date picker is visible
-  And a "Check Out" date picker is visible
-  And a "Room" select dropdown is visible
-  And a "Search" button is visible
+#### Scenario: Booking form fields are present
 
-Scenario: Booking form is interactive
-  Given the user fills in location and dates
-  When they click "Search"
-  Then the form does not navigate away (demo placeholder)
-```
+- **GIVEN** the user sees the booking form below the hero
+- **THEN** a "Location" text input with search icon is visible
+- **AND** a "Check In" date picker is visible
+- **AND** a "Check Out" date picker is visible
+- **AND** a "Room" select dropdown is visible
+- **AND** a "Search" button is visible
+
+#### Scenario: Booking form is interactive
+
+- **GIVEN** the user fills in location and dates
+- **WHEN** they click "Search"
+- **THEN** the form does not navigate away (demo placeholder)
 
 ### About Us
 
-```gherkin
-Scenario: About section shows hotel info
-  Given the user scrolls to the About section
-  Then an "ABOUT US" subtitle in accent color is displayed
-  And heading "Welcome AurumStay Hotel In Street L'Abreuvoir" is shown
-  And two paragraphs of descriptive text are visible
-  And a hotel image appears alongside the text
-```
+#### Scenario: About section shows hotel info
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** an "ABOUT US" subtitle in accent color is displayed
+- **AND** heading "Welcome AurumStay Hotel In Street L'Abreuvoir" is shown
+- **AND** two paragraphs of descriptive text are visible
+- **AND** a hotel image appears alongside the text
 
 ### Services
 
-```gherkin
-Scenario: Services grid displays 6 amenities
-  Given the user scrolls to the Services section
-  Then 6 service items are displayed in a 3×2 grid
-  And each item has an icon and title
-  And the titles are: Free Wi-Fi, Premium Pool, Coffee Maker, Bar Wine, TV HD, Restaurant
+#### Scenario: Services grid displays 6 amenities
 
-Scenario: Services section has dark background
-  Given the user views the Services section
-  Then the background is dark (#1d1c1c)
-  And the text is white
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service items are displayed in a 3×2 grid
+- **AND** each item has an icon and title
+- **AND** the titles are: Free Wi-Fi, Premium Pool, Coffee Maker, Bar Wine, TV HD, Restaurant
+
+#### Scenario: Services section has dark background
+
+- **GIVEN** the user views the Services section
+- **THEN** the background is dark (#1d1c1c)
+- **AND** the text is white
 
 ### Our Rooms
 
-```gherkin
-Scenario: Rooms section shows hotel rooms
-  Given the user scrolls to the Rooms section
-  Then "OUR ROOM" subtitle in accent color is shown
-  And heading "Explore Our Hotel" is displayed
-  And 4 room cards are displayed in a row
-  And each card has an image, room name, and price per day
+#### Scenario: Rooms section shows hotel rooms
 
-Scenario: Room cards are hoverable
-  Given the user hovers over a room card
-  Then the card shows a subtle hover effect (overlay or lift)
-```
+- **GIVEN** the user scrolls to the Rooms section
+- **THEN** "OUR ROOM" subtitle in accent color is shown
+- **AND** heading "Explore Our Hotel" is displayed
+- **AND** 4 room cards are displayed in a row
+- **AND** each card has an image, room name, and price per day
+
+#### Scenario: Room cards are hoverable
+
+- **GIVEN** the user hovers over a room card
+- **THEN** the card shows a subtle hover effect (overlay or lift)
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel works
-  Given the user scrolls to the Testimonials section
-  Then a testimonial quote is displayed
-  And an author photo, name, and title are shown
-  And social media icons are visible for the author
-  And navigation dots/arrows allow cycling through testimonials
-```
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a testimonial quote is displayed
+- **AND** an author photo, name, and title are shown
+- **AND** social media icons are visible for the author
+- **AND** navigation dots/arrows allow cycling through testimonials
 
 ### Gallery
 
-```gherkin
-Scenario: Gallery shows hotel images
-  Given the user scrolls to the Gallery section
-  Then "Our Gallery" heading is displayed
-  And 6+ images are shown in a carousel/grid layout
-  And images are in mixed sizes (larger + smaller items)
+#### Scenario: Gallery shows hotel images
 
-Scenario: Gallery carousel is navigable
-  Given the user views the gallery
-  Then left/right arrows or dots allow navigation through images
-```
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** "Our Gallery" heading is displayed
+- **AND** 6+ images are shown in a carousel/grid layout
+- **AND** images are in mixed sizes (larger + smaller items)
+
+#### Scenario: Gallery carousel is navigable
+
+- **GIVEN** the user views the gallery
+- **THEN** left/right arrows or dots allow navigation through images
 
 ### Booking Banner
 
-```gherkin
-Scenario: Booking CTA banner
-  Given the user scrolls to the booking banner
-  Then "Planning your next trip? Save up to 25% on your hotel" is displayed
-  And the banner has a dark background with white text
-```
+#### Scenario: Booking CTA banner
+
+- **GIVEN** the user scrolls to the booking banner
+- **THEN** "Planning your next trip? Save up to 25% on your hotel" is displayed
+- **AND** the banner has a dark background with white text
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays site info
-  Given the user scrolls to the footer
-  Then the footer has a dark background
-  And the AurumStay logo is shown
-  And a newsletter signup input is present
-  And social media links are displayed
-  And copyright text includes a "Component Dock" link
+#### Scenario: Footer displays site info
 
-Scenario: Footer newsletter form
-  Given the user enters an email in the newsletter field
-  When they submit
-  Then the form does not navigate away (demo placeholder)
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** the AurumStay logo is shown
+- **AND** a newsletter signup input is present
+- **AND** social media links are displayed
+- **AND** copyright text includes a "Component Dock" link
+
+#### Scenario: Footer newsletter form
+
+- **GIVEN** the user enters an email in the newsletter field
+- **WHEN** they submit
+- **THEN** the form does not navigate away (demo placeholder)
 
 ---
 

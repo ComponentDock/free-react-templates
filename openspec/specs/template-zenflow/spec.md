@@ -51,100 +51,142 @@ Extracted from the live preview CSS (`style.css`):
 13. **Contact** — Two-column: left = contact details (address, phone, email with icons), right = contact form (name, email, subject, message, submit button)
 14. **Footer** — Dark bg, brand name "Business One", row of 8 social icons, copyright bar at bottom
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
+
 - **Scenario:** Navbar renders with all navigation links
-  - Given the page loads
-  - Then the navbar displays links: Home, Features, Service, Portfolio, Team, Clients, Pricing, News, Contact
-  - And a logo is visible on the left
+- **GIVEN** the page loads
+- **THEN** the navbar displays links: Home, Features, Service, Portfolio, Team, Clients, Pricing, News, Contact
+- **AND** a logo is visible on the left
 
 ### Hero Slider
+
+#### Scenario: Hero Slider
+
 - **Scenario:** Hero slider displays with CTA
-  - Given the page loads
-  - Then a full-width image slider is visible
-  - And the heading reads "Business Theme Creator"
-  - And a "see our project" button is present
-  - And the slider auto-plays between 2 slides
+- **GIVEN** the page loads
+- **THEN** a full-width image slider is visible
+- **AND** the heading reads "Business Theme Creator"
+- **AND** a "see our project" button is present
+- **AND** the slider auto-plays between 2 slides
 
 ### Features
+
+#### Scenario: Features
+
 - **Scenario:** Features section shows 4 service cards
-  - Given the user scrolls to the features area
-  - Then 4 service cards are displayed in a row
-  - And each card has an icon, title, description, and "Learn More" link
+- **GIVEN** the user scrolls to the features area
+- **THEN** 4 service cards are displayed in a row
+- **AND** each card has an icon, title, description, and "Learn More" link
 
 ### About
+
+#### Scenario: About
+
 - **Scenario:** About section shows company info and skills
-  - Given the user scrolls to the about area
-  - Then the heading reads "We are Theme Creator"
-  - And a description paragraph is present
-  - And animated skill progress bars are displayed on the right
+- **GIVEN** the user scrolls to the about area
+- **THEN** the heading reads "We are Theme Creator"
+- **AND** a description paragraph is present
+- **AND** animated skill progress bars are displayed on the right
 
 ### Services
+
+#### Scenario: Services
+
 - **Scenario:** Services section shows 3 service items
-  - Given the user scrolls to the services area
-  - Then 3 service items are displayed in a grid
-  - And each has an icon, title, and short description
+- **GIVEN** the user scrolls to the services area
+- **THEN** 3 service items are displayed in a grid
+- **AND** each has an icon, title, and short description
 
 ### Portfolio
+
+#### Scenario: Portfolio
+
 - **Scenario:** Portfolio shows filterable gallery
-  - Given the user scrolls to the portfolio area
-  - Then category filter tabs are visible (All, Web Design, Development, WordPress, Graphic Design)
-  - And a grid of project images is displayed
-  - And clicking a filter tab updates the visible images
+- **GIVEN** the user scrolls to the portfolio area
+- **THEN** category filter tabs are visible (All, Web Design, Development, WordPress, Graphic Design)
+- **AND** a grid of project images is displayed
+- **AND** clicking a filter tab updates the visible images
 
 ### Promo CTA
+
+#### Scenario: Promo CTA
+
 - **Scenario:** Promo section encourages download
-  - Given the user scrolls to the promo area
-  - Then the heading reads "Our Latest Design & Creative Templates"
-  - And a "Download Now" button is present with outlined style
+- **GIVEN** the user scrolls to the promo area
+- **THEN** the heading reads "Our Latest Design & Creative Templates"
+- **AND** a "Download Now" button is present with outlined style
 
 ### Team
+
+#### Scenario: Team
+
 - **Scenario:** Team section shows member cards
-  - Given the user scrolls to the team area
-  - Then 4 team member cards are displayed
-  - And each card shows a photo, name, and role
-  - And social icons appear on hover
+- **GIVEN** the user scrolls to the team area
+- **THEN** 4 team member cards are displayed
+- **AND** each card shows a photo, name, and role
+- **AND** social icons appear on hover
 
 ### Info
+
+#### Scenario: Info
+
 - **Scenario:** Info section shows image and text
-  - Given the user scrolls to the info area
-  - Then an image is displayed on the left
-  - And highlighted text with a "Learn More" link is on the right
+- **GIVEN** the user scrolls to the info area
+- **THEN** an image is displayed on the left
+- **AND** highlighted text with a "Learn More" link is on the right
 
 ### Testimonials
+
+#### Scenario: Testimonials
+
 - **Scenario:** Testimonials carousel shows client quotes
-  - Given the user scrolls to the testimonials area
-  - Then the heading reads "Our Happy Clients"
-  - And a carousel of client testimonials with photos and quotes is visible
+- **GIVEN** the user scrolls to the testimonials area
+- **THEN** the heading reads "Our Happy Clients"
+- **AND** a carousel of client testimonials with photos and quotes is visible
 
 ### Pricing
+
+#### Scenario: Pricing
+
 - **Scenario:** Pricing section shows 3 plan cards
-  - Given the user scrolls to the pricing area
-  - Then 3 pricing cards are displayed (Basic, Standard, Premium)
-  - And each card shows a price, feature list, and sign-up button
-  - And the middle card is visually highlighted
+- **GIVEN** the user scrolls to the pricing area
+- **THEN** 3 pricing cards are displayed (Basic, Standard, Premium)
+- **AND** each card shows a price, feature list, and sign-up button
+- **AND** the middle card is visually highlighted
 
 ### Blog & News
+
+#### Scenario: Blog & News
+
 - **Scenario:** Blog section shows latest news
-  - Given the user scrolls to the blog area
-  - Then the heading reads "Our Latest News"
-  - And 2 blog post cards are displayed with images, dates, titles, and excerpts
-  - And a Twitter feed widget is shown (or replaced with a placeholder)
+- **GIVEN** the user scrolls to the blog area
+- **THEN** the heading reads "Our Latest News"
+- **AND** 2 blog post cards are displayed with images, dates, titles, and excerpts
+- **AND** a Twitter feed widget is shown (or replaced with a placeholder)
 
 ### Contact
+
+#### Scenario: Contact
+
 - **Scenario:** Contact section has form and details
-  - Given the user scrolls to the contact area
-  - Then contact details (address, phone, email) are shown on the left
-  - And a contact form with name, email, subject, message fields and submit button is on the right
+- **GIVEN** the user scrolls to the contact area
+- **THEN** contact details (address, phone, email) are shown on the left
+- **AND** a contact form with name, email, subject, message fields and submit button is on the right
 
 ### Footer
+
+#### Scenario: Footer
+
 - **Scenario:** Footer displays brand and social links
-  - Given the user scrolls to the footer
-  - Then the brand name "Business One" (replaced with "Zenflow") is displayed
-  - And 8 social media icon links are present
-  - And a copyright bar is at the bottom
-  - And the footer links to https://www.componentdock.com/
+- **GIVEN** the user scrolls to the footer
+- **THEN** the brand name "Business One" (replaced with "Zenflow") is displayed
+- **AND** 8 social media icon links are present
+- **AND** a copyright bar is at the bottom
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification Checklist
 

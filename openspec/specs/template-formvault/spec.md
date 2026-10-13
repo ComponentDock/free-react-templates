@@ -137,7 +137,7 @@ The right column contains a white elevated card with a contact form.
 - **THEN** I see a full-width "Send Message" button with yellow-green background
   (#ccda46), dark text (#212529), border-radius 4px, height 55px
 
-### Requirement: Form validation
+### Feature: Form validation
 
 #### Scenario: Empty form submission
 
@@ -149,7 +149,7 @@ The right column contains a white elevated card with a contact form.
 - **WHEN** I fill all fields and submit
 - **THEN** I see a success message "Your message was sent, thank you!" in green (#55A44E)
 
-### Requirement: Footer
+### Feature: Footer
 
 #### Scenario: Component Dock footer link
 

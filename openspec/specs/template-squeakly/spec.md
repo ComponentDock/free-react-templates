@@ -49,188 +49,192 @@ live preview DOM analysis.
 13. **Blog** — 3-column grid: image card + date/author/comments meta + title + excerpt
 14. **Footer** — Dark bg with image overlay; columns: Logo + social, Recent Posts (3 thumbnail + title), Explore links, Contact info (address, phone, email); copyright bar at bottom
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: Squeakly Navbar
 
-  Scenario: Logo and navigation links render
-    Given the page loads
-    Then I see the "Squeakly" logo on the left
-    And I see navigation links: Home, About, Pricing, Services, Blog, Contact
-    And the navbar has a dark background
+#### Scenario: Logo and navigation links render
 
-  Scenario: Navbar is sticky on scroll
-    Given I scroll down the page
-    Then the navbar remains fixed at the top of the viewport
-```
+- **GIVEN** the page loads
+- **THEN** I see the "Squeakly" logo on the left
+- **AND** I see navigation links: Home, About, Pricing, Services, Blog, Contact
+- **AND** the navbar has a dark background
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** I scroll down the page
+- **THEN** the navbar remains fixed at the top of the viewport
 
 ### Hero
-```gherkin
+
 Feature: Squeakly Hero
 
-  Scenario: Hero section displays headline and CTA
-    Given the page loads
-    Then I see a full-height hero section with a background image
-    And I see the subheading "Introducing Squeakly"
-    And I see the headline "A Clean Home is A Happy Home"
-    And I see a "Request A Quote" CTA button
+#### Scenario: Hero section displays headline and CTA
 
-  Scenario: Hero has dark overlay on background
-    Given the page loads
-    Then the hero background image has a semi-transparent dark overlay
-```
+- **GIVEN** the page loads
+- **THEN** I see a full-height hero section with a background image
+- **AND** I see the subheading "Introducing Squeakly"
+- **AND** I see the headline "A Clean Home is A Happy Home"
+- **AND** I see a "Request A Quote" CTA button
+
+#### Scenario: Hero has dark overlay on background
+
+- **GIVEN** the page loads
+- **THEN** the hero background image has a semi-transparent dark overlay
 
 ### About + Booking Form
-```gherkin
+
 Feature: Squeakly Booking Form
 
-  Scenario: Booking form renders with all fields
-    Given the page loads
-    Then I see a "Book A Service" form
-    And the form has fields: First Name, Last Name, Service (dropdown), Date, Time, Phone, Email, Message
-    And the form has a Submit button
+#### Scenario: Booking form renders with all fields
 
-  Scenario: Service dropdown has cleaning options
-    Given the booking form is visible
-    When I open the service dropdown
-    Then I see options: Residential Cleaning, Commercial Cleaning, Construction Cleaning, Windows Cleaning, Carpet Cleaning, Furniture Cleaning
-```
+- **GIVEN** the page loads
+- **THEN** I see a "Book A Service" form
+- **AND** the form has fields: First Name, Last Name, Service (dropdown), Date, Time, Phone, Email, Message
+- **AND** the form has a Submit button
+
+#### Scenario: Service dropdown has cleaning options
+
+- **GIVEN** the booking form is visible
+- **WHEN** I open the service dropdown
+- **THEN** I see options: Residential Cleaning, Commercial Cleaning, Construction Cleaning, Windows Cleaning, Carpet Cleaning, Furniture Cleaning
 
 ### Why Choose Us
-```gherkin
+
 Feature: Squeakly Why Choose Us
 
-  Scenario: Four feature cards render
-    Given the page loads
-    Then I see 4 feature cards with icons
-    And the cards are: Highly Trained Staff, Best Equipments, 100% Warranty, Fast & Effective Service
-```
+#### Scenario: Four feature cards render
+
+- **GIVEN** the page loads
+- **THEN** I see 4 feature cards with icons
+- **AND** the cards are: Highly Trained Staff, Best Equipments, 100% Warranty, Fast & Effective Service
 
 ### Industries We Serve
-```gherkin
+
 Feature: Squeakly Industries
 
-  Scenario: Industry checklist renders
-    Given the page loads
-    Then I see "Industries We Serve" heading
-    And I see 8 industries in a 2-column checklist:
-      | Industry |
-      | Airport & Airlines |
-      | House & Offices |
-      | Auto Dealerships |
-      | Sports & Fitness Centers |
-      | Schools & Universities |
-      | Commercial Building |
-      | Medical Facilities |
-      | Entertainment Venues |
-```
+#### Scenario: Industry checklist renders
+
+- **GIVEN** the page loads
+- **THEN** I see "Industries We Serve" heading
+- **AND** I see 8 industries in a 2-column checklist:
+| Industry |
+| Airport & Airlines |
+| House & Offices |
+| Auto Dealerships |
+| Sports & Fitness Centers |
+| Schools & Universities |
+| Commercial Building |
+| Medical Facilities |
+| Entertainment Venues |
 
 ### Services
-```gherkin
+
 Feature: Squeakly Services
 
-  Scenario: Three service cards render
-    Given the page loads
-    Then I see "Offering Best Cleaning Services" heading
-    And I see 3 service cards: Residential Cleaning, Commercial Cleaning, Construction Cleaning
-    And each card shows "Starting from $50"
-    And each card has a chevron icon link
-```
+#### Scenario: Three service cards render
+
+- **GIVEN** the page loads
+- **THEN** I see "Offering Best Cleaning Services" heading
+- **AND** I see 3 service cards: Residential Cleaning, Commercial Cleaning, Construction Cleaning
+- **AND** each card shows "Starting from $50"
+- **AND** each card has a chevron icon link
 
 ### How it Works
-```gherkin
+
 Feature: Squeakly How it Works
 
-  Scenario: Three steps render
-    Given the page loads
-    Then I see "Get Amazing Cleaning in 3 Simple Ways" heading
-    And I see 3 numbered steps: Pick a suitable plan, Set your schedule, Get things done
-    And each step has a step number (01, 02, 03) and icon
-```
+#### Scenario: Three steps render
+
+- **GIVEN** the page loads
+- **THEN** I see "Get Amazing Cleaning in 3 Simple Ways" heading
+- **AND** I see 3 numbered steps: Pick a suitable plan, Set your schedule, Get things done
+- **AND** each step has a step number (01, 02, 03) and icon
 
 ### Counter/Stats
-```gherkin
+
 Feature: Squeakly Stats Counter
 
-  Scenario: Stats section displays counters
-    Given the page loads
-    Then I see a full-width section with background image
-    And I see 4 stat items:
-      | Value | Label |
-      | 4,800 | Projects Completed |
-      | 14,000 | Employees |
-      | 200 | Clients |
-      | 71,650 | Awards |
-```
+#### Scenario: Stats section displays counters
+
+- **GIVEN** the page loads
+- **THEN** I see a full-width section with background image
+- **AND** I see 4 stat items:
+| Value | Label |
+| 4,800 | Projects Completed |
+| 14,000 | Employees |
+| 200 | Clients |
+| 71,650 | Awards |
 
 ### Testimonials
-```gherkin
+
 Feature: Squeakly Testimonials
 
-  Scenario: Testimonial carousel renders
-    Given the page loads
-    Then I see a "Testimonial" section on light background
-    And I see a carousel with testimonial cards
-    And each card shows: avatar image, name, location, quote text
-```
+#### Scenario: Testimonial carousel renders
+
+- **GIVEN** the page loads
+- **THEN** I see a "Testimonial" section on light background
+- **AND** I see a carousel with testimonial cards
+- **AND** each card shows: avatar image, name, location, quote text
 
 ### Pricing
-```gherkin
+
 Feature: Squeakly Pricing
 
-  Scenario: Four pricing tiers render
-    Given the page loads
-    Then I see "Our Plans & Pricing" heading
-    And I see 4 pricing cards:
-      | Plan | Price | Features |
-      | Basic | $29/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
-      | Standard | $59/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
-      | Premium | $79/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
-      | Ultimate | $89.50/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
-    And each card has a "Sign Up" button
-```
+#### Scenario: Four pricing tiers render
+
+- **GIVEN** the page loads
+- **THEN** I see "Our Plans & Pricing" heading
+- **AND** I see 4 pricing cards:
+| Plan | Price | Features |
+| Basic | $29/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
+| Standard | $59/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
+| Premium | $79/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
+| Ultimate | $89.50/session | 1 Bathroom cleaning, Up to 3 bedrooms, 1 Livingroom, Carpet Cleaning, Dining Room |
+- **AND** each card has a "Sign Up" button
 
 ### CTA Banner
-```gherkin
+
 Feature: Squeakly CTA Banner
 
-  Scenario: CTA banner displays call to action
-    Given the page loads
-    Then I see a full-width CTA section
-    And the heading reads "Need to clean your house? Just hire us!"
-    And I see a phone number button and an email button
-```
+#### Scenario: CTA banner displays call to action
+
+- **GIVEN** the page loads
+- **THEN** I see a full-width CTA section
+- **AND** the heading reads "Need to clean your house? Just hire us!"
+- **AND** I see a phone number button and an email button
 
 ### Blog
-```gherkin
+
 Feature: Squeakly Blog
 
-  Scenario: Three blog post cards render
-    Given the page loads
-    Then I see a "Recent Post" heading
-    And I see 3 blog cards in a 3-column grid
-    And each card has: image, date, author, comment count, title, excerpt
-```
+#### Scenario: Three blog post cards render
+
+- **GIVEN** the page loads
+- **THEN** I see a "Recent Post" heading
+- **AND** I see 3 blog cards in a 3-column grid
+- **AND** each card has: image, date, author, comment count, title, excerpt
 
 ### Footer
-```gherkin
+
 Feature: Squeakly Footer
 
-  Scenario: Footer renders with all columns
-    Given the page loads
-    Then I see a dark footer with background image
-    And I see the Squeakly logo with description and social icons (Twitter, Facebook, Instagram)
-    And I see a "Recent Posts" column with 3 thumbnail posts
-    And I see an "Explore" links column
-    And I see a "Have a Questions?" contact column with address, phone, email
-    And I see a copyright bar at the bottom
+#### Scenario: Footer renders with all columns
 
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then the copyright text links to https://www.componentdock.com/
-```
+- **GIVEN** the page loads
+- **THEN** I see a dark footer with background image
+- **AND** I see the Squeakly logo with description and social icons (Twitter, Facebook, Instagram)
+- **AND** I see a "Recent Posts" column with 3 thumbnail posts
+- **AND** I see an "Explore" links column
+- **AND** I see a "Have a Questions?" contact column with address, phone, email
+- **AND** I see a copyright bar at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** the copyright text links to https://www.componentdock.com/
 
 ## Verification Checklist
 

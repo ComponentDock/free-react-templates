@@ -33,67 +33,77 @@ purple-to-magenta gradient theme with Poppins font throughout.
 - **Button radius:** 20px (pill-shaped), transparent bg with white border, gradient hover overlay
 - **Spacing:** generous padding (pt-100 pb-100 sections)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Hero section renders with gradient overlay and CTA
-  Given the page loads
-  Then a full-width hero banner is visible with a gradient overlay
-  And the heading "your best partner" is displayed in uppercase
-  And a large "PhotoDeck" title is centered below
-  And a "Get Started" pill button is visible with arrow icon
+### Feature: PhotoDeck template behaviour
 
-### Scenario: Navbar is transparent over the hero
-  Given the page loads
-  Then a transparent navbar overlays the hero area
-  And a "PhotoDeck" logo text is visible on the left
-  And navigation links (Home, Generic, Elements) are on the right
-  And a hamburger menu icon is visible for mobile
+#### Scenario: Hero section renders with gradient overlay and CTA
 
-### Scenario: Featured section shows text and image carousel
-  Given the page loads
-  Then the featured section displays a heading "Reasons To Choose Notebook"
-  And a paragraph of descriptive text is below the heading
-  And a "Get Started" green-gradient button is below the text
-  And an image carousel with dot indicators is on the right column
+- **GIVEN** the page loads
+- **THEN** a full-width hero banner is visible with a gradient overlay
+- **AND** the heading "your best partner" is displayed in uppercase
+- **AND** a large "PhotoDeck" title is centered below
+- **AND** a "Get Started" pill button is visible with arrow icon
 
-### Scenario: Parallax section displays with background image
-  Given the page loads
-  Then the parallax section shows a background image
-  And a dark semi-transparent overlay covers the image
-  And text content appears on the right side
-  And a "Get Started" pill button is visible
+#### Scenario: Navbar is transparent over the hero
 
-### Scenario: Service section shows four service cards in a grid
-  Given the page loads
-  Then four service cards are displayed in a row
-  And each card has a background image with gradient overlay
-  And each card has a heading "Becoming A Dvd Repair Expert Online"
-  And each card has descriptive paragraph text
+- **GIVEN** the page loads
+- **THEN** a transparent navbar overlays the hero area
+- **AND** a "PhotoDeck" logo text is visible on the left
+- **AND** navigation links (Home, Generic, Elements) are on the right
+- **AND** a hamburger menu icon is visible for mobile
 
-### Scenario: Contact section has form with background image
-  Given the page loads
-  Then a contact section with background image is visible
-  And a heading "Send Us Message" is centered
-  And a name input field is present
-  And an email input field is present
-  And a message textarea is present
-  And a "Send Message" white button is visible
+#### Scenario: Featured section shows text and image carousel
 
-### Scenario: Newsletter section with email subscription
-  Given the page loads
-  Then a newsletter section is displayed
-  And a heading "Subscribe for our Newsletter" is visible
-  And an email input field with placeholder is present
-  And a "Get Started" button is next to the input
-  And a disclaimer text "We won't send any types of spam" is below
+- **GIVEN** the page loads
+- **THEN** the featured section displays a heading "Reasons To Choose Notebook"
+- **AND** a paragraph of descriptive text is below the heading
+- **AND** a "Get Started" green-gradient button is below the text
+- **AND** an image carousel with dot indicators is on the right column
 
-### Scenario: Footer with navigation and social links
-  Given the page loads
-  Then a dark footer is displayed
-  And navigation links (Home, Generic, Elements) are centered
-  And social media icons (Facebook, Twitter, Dribbble, Behance) are shown
-  And a copyright text is displayed at the bottom
-  And a "Component Dock" link is present
+#### Scenario: Parallax section displays with background image
+
+- **GIVEN** the page loads
+- **THEN** the parallax section shows a background image
+- **AND** a dark semi-transparent overlay covers the image
+- **AND** text content appears on the right side
+- **AND** a "Get Started" pill button is visible
+
+#### Scenario: Service section shows four service cards in a grid
+
+- **GIVEN** the page loads
+- **THEN** four service cards are displayed in a row
+- **AND** each card has a background image with gradient overlay
+- **AND** each card has a heading "Becoming A Dvd Repair Expert Online"
+- **AND** each card has descriptive paragraph text
+
+#### Scenario: Contact section has form with background image
+
+- **GIVEN** the page loads
+- **THEN** a contact section with background image is visible
+- **AND** a heading "Send Us Message" is centered
+- **AND** a name input field is present
+- **AND** an email input field is present
+- **AND** a message textarea is present
+- **AND** a "Send Message" white button is visible
+
+#### Scenario: Newsletter section with email subscription
+
+- **GIVEN** the page loads
+- **THEN** a newsletter section is displayed
+- **AND** a heading "Subscribe for our Newsletter" is visible
+- **AND** an email input field with placeholder is present
+- **AND** a "Get Started" button is next to the input
+- **AND** a disclaimer text "We won't send any types of spam" is below
+
+#### Scenario: Footer with navigation and social links
+
+- **GIVEN** the page loads
+- **THEN** a dark footer is displayed
+- **AND** navigation links (Home, Generic, Elements) are centered
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are shown
+- **AND** a copyright text is displayed at the bottom
+- **AND** a "Component Dock" link is present
 
 ## Verification checklist
 

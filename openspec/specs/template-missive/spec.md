@@ -45,74 +45,76 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 | Inputs         | Light gray bg, rounded (border-radius ~8px), padding ~12px |
 | Page bg        | Full-viewport purple gradient over cityscape photo |
 
-## Gherkin Requirements
+## Requirements
 
-### Background: Page Structure
+### Feature: Missive template behaviour
 
-Given the user visits the Missive page
-Then a purple gradient background fills the viewport
-And a white card is centered on the page
-And the card has two columns: illustration on the left, form on the right
+**Background: Page Structure**
 
-### Scenario: Card heading
+- **GIVEN** the user visits the Missive page
+- **THEN** a purple gradient background fills the viewport
+- **AND** a white card is centered on the page
+- **AND** the card has two columns: illustration on the left, form on the right
 
-Given the card is visible
-Then the heading reads "Get in touch"
-And the heading is bold and dark-colored
+#### Scenario: Card heading
 
-### Scenario: Name input
+- **GIVEN** the card is visible
+- **THEN** the heading reads "Get in touch"
+- **AND** the heading is bold and dark-colored
 
-Given the contact form is displayed
-Then a "Name" input field is visible
-And it has a user icon prefix
-And it has a light gray background
+#### Scenario: Name input
 
-### Scenario: Email input
+- **GIVEN** the contact form is displayed
+- **THEN** a "Name" input field is visible
+- **AND** it has a user icon prefix
+- **AND** it has a light gray background
 
-Given the contact form is displayed
-Then an "Email" input field is visible
-And it has an email icon prefix
-And it has a light gray background
+#### Scenario: Email input
 
-### Scenario: Message textarea
+- **GIVEN** the contact form is displayed
+- **THEN** an "Email" input field is visible
+- **AND** it has an email icon prefix
+- **AND** it has a light gray background
 
-Given the contact form is displayed
-Then a "Message" textarea is visible
-And it has a light gray background
-And it is taller than the single-line inputs
+#### Scenario: Message textarea
 
-### Scenario: Send button
+- **GIVEN** the contact form is displayed
+- **THEN** a "Message" textarea is visible
+- **AND** it has a light gray background
+- **AND** it is taller than the single-line inputs
 
-Given the contact form is displayed
-Then a "Send" button is visible
-And the button is full-width
-And the button has a purple background
-And the button text is white
-And the button has a heavily rounded shape (pill-like)
+#### Scenario: Send button
 
-### Scenario: Illustration panel
+- **GIVEN** the contact form is displayed
+- **THEN** a "Send" button is visible
+- **AND** the button is full-width
+- **AND** the button has a purple background
+- **AND** the button text is white
+- **AND** the button has a heavily rounded shape (pill-like)
 
-Given the card is visible
-Then the left column shows an envelope/mail illustration
-And the illustration includes abstract decorative elements (triangles, circles, dots)
-And the illustration uses brand purple as the primary color
+#### Scenario: Illustration panel
 
-### Scenario: Footer
+- **GIVEN** the card is visible
+- **THEN** the left column shows an envelope/mail illustration
+- **AND** the illustration includes abstract decorative elements (triangles, circles, dots)
+- **AND** the illustration uses brand purple as the primary color
 
-Given the page is fully rendered
-Then the footer contains a link to https://www.componentdock.com/
-And the footer is branded "Component Dock"
+#### Scenario: Footer
 
-### Scenario: Form submission
+- **GIVEN** the page is fully rendered
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the footer is branded "Component Dock"
 
-Given all form fields are empty
-When the user clicks "Send"
-Then form validation errors should appear
-And the form should not submit
+#### Scenario: Form submission
 
-Given valid name, email, and message are entered
-When the user clicks "Send"
-Then the form should submit successfully
+- **GIVEN** all form fields are empty
+- **WHEN** the user clicks "Send"
+- **THEN** form validation errors should appear
+- **AND** the form should not submit
+
+- **GIVEN** valid name, email, and message are entered
+- **WHEN** the user clicks "Send"
+- **THEN** the form should submit successfully
 
 ## Verification Checklist
 

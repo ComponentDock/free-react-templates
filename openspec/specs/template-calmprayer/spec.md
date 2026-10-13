@@ -32,96 +32,98 @@ Recreation of the ColorLib **Inward** church website template.
 
 Church/ministry website with a full-width hero slider (dark overlay on warm-toned hand-reaching image), prominent heading + outline CTA button. Below the hero: a split layout — left side has a forest/camp background with countdown timer and "Join Now" button; right side has an "Upcoming Events" list with date + title + "More Info" link per item. Audio sermons section on light background with 3-column cards (image, title, author, audio player). Latest Events as 3-column media cards (thumbnail + title + category + excerpt). Personal Testimony carousel with pastor photos and blockquotes on light background. Dark footer with 4 columns (brand, navigation links, messages links, contact info) and social icons.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar renders with brand and navigation links
-  Given the page loads
-  Then the navbar displays "CalmPrayer" as the brand
-  And nav links include Home, About, Messages (dropdown), Events, Contact
-  And the navbar is transparent on page load
-  When the user scrolls down
-  Then the navbar becomes solid dark
 
-Scenario: Messages dropdown opens on hover/click
-  Given the navbar is visible
-  When the user hovers over or clicks "Messages"
-  Then a dropdown appears with Audio Sermons, Past Messages, Bible Reading, End Time Prophecy
-```
+#### Scenario: Navbar renders with brand and navigation links
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays "CalmPrayer" as the brand
+- **AND** nav links include Home, About, Messages (dropdown), Events, Contact
+- **AND** the navbar is transparent on page load
+- **WHEN** the user scrolls down
+- **THEN** the navbar becomes solid dark
+
+#### Scenario: Messages dropdown opens on hover/click
+
+- **GIVEN** the navbar is visible
+- **WHEN** the user hovers over or clicks "Messages"
+- **THEN** a dropdown appears with Audio Sermons, Past Messages, Bible Reading, End Time Prophecy
 
 ### Hero Section (Slider)
-```gherkin
-Scenario: Hero slider displays with overlay and CTA
-  Given the page loads
-  Then a full-screen hero slider is visible
-  And it shows a background image with dark overlay
-  And the heading reads "Welcome to CalmPrayer"
-  And a subheading paragraph is present
-  And an outline button labeled "Request a Prayer" is visible
-  When the user clicks "Request a Prayer"
-  Then nothing navigates (placeholder link)
-```
+
+#### Scenario: Hero slider displays with overlay and CTA
+
+- **GIVEN** the page loads
+- **THEN** a full-screen hero slider is visible
+- **AND** it shows a background image with dark overlay
+- **AND** the heading reads "Welcome to CalmPrayer"
+- **AND** a subheading paragraph is present
+- **AND** an outline button labeled "Request a Prayer" is visible
+- **WHEN** the user clicks "Request a Prayer"
+- **THEN** nothing navigates (placeholder link)
 
 ### Camp Meeting / Countdown Section
-```gherkin
-Scenario: Split layout shows countdown and upcoming events
-  Given the page loads
-  Then a split layout section is visible below the hero
-  And the left half shows a camp meeting image with heading "Camp Meeting Will Start Soon"
-  And a countdown timer displays weeks, days, hours, minutes, seconds
-  And a "Join Now" outline button is present
-  And the right half shows "Upcoming Events" heading
-  And event items list with date, title, and "More Info" link
 
-Scenario: Countdown timer counts down
-  Given the countdown section renders
-  Then each countdown unit (weeks, days, hours, min, sec) updates
-  And countdown labels are visible below each number
-```
+#### Scenario: Split layout shows countdown and upcoming events
+
+- **GIVEN** the page loads
+- **THEN** a split layout section is visible below the hero
+- **AND** the left half shows a camp meeting image with heading "Camp Meeting Will Start Soon"
+- **AND** a countdown timer displays weeks, days, hours, minutes, seconds
+- **AND** a "Join Now" outline button is present
+- **AND** the right half shows "Upcoming Events" heading
+- **AND** event items list with date, title, and "More Info" link
+
+#### Scenario: Countdown timer counts down
+
+- **GIVEN** the countdown section renders
+- **THEN** each countdown unit (weeks, days, hours, min, sec) updates
+- **AND** countdown labels are visible below each number
 
 ### Audio Sermons Section
-```gherkin
-Scenario: Sermon cards render on light background
-  Given the page loads
-  Then the Audio Sermons section is on a light (#f8f9fa) background
-  And a centered heading "Audio Sermons" is visible
-  And 3 sermon cards are displayed in a grid
-  And each card has an image, sermon title, author name + date
-  And an audio player is present on each card
-```
+
+#### Scenario: Sermon cards render on light background
+
+- **GIVEN** the page loads
+- **THEN** the Audio Sermons section is on a light (#f8f9fa) background
+- **AND** a centered heading "Audio Sermons" is visible
+- **AND** 3 sermon cards are displayed in a grid
+- **AND** each card has an image, sermon title, author name + date
+- **AND** an audio player is present on each card
 
 ### Latest Events Section
-```gherkin
-Scenario: Event cards render in grid
-  Given the page loads
-  Then the Latest Events section is visible
-  And 3 event cards are displayed
-  And each card has a small thumbnail, title, date/category metadata
-  And a description paragraph is present
-```
+
+#### Scenario: Event cards render in grid
+
+- **GIVEN** the page loads
+- **THEN** the Latest Events section is visible
+- **AND** 3 event cards are displayed
+- **AND** each card has a small thumbnail, title, date/category metadata
+- **AND** a description paragraph is present
 
 ### Testimonial Section
-```gherkin
-Scenario: Testimonial carousel displays
-  Given the page loads
-  Then the Personal Testimony section is on a light background
-  And a heading "Personal Testimony" is centered
-  And a carousel shows testimonial slides
-  And each slide has a photo, blockquote, and attribution name
-```
+
+#### Scenario: Testimonial carousel displays
+
+- **GIVEN** the page loads
+- **THEN** the Personal Testimony section is on a light background
+- **AND** a heading "Personal Testimony" is centered
+- **AND** a carousel shows testimonial slides
+- **AND** each slide has a photo, blockquote, and attribution name
 
 ### Footer
-```gherkin
-Scenario: Footer renders with 4 columns and social links
-  Given the page loads
-  Then the footer is dark-themed
-  And column 1 shows "CalmPrayer Church" heading, description, and social icons (twitter, facebook, linkedin, instagram)
-  And column 2 shows "The Church" links (About Us, Organizational Chart, Events, Contact)
-  And column 3 shows "Messages" links (Audio Sermons, Past Messages, Bible Reading, End Time Prophecies)
-  And column 4 shows "Visit or Talk to Us" with address, telephone, email
-  And a copyright line includes a link to Component Dock
-```
+
+#### Scenario: Footer renders with 4 columns and social links
+
+- **GIVEN** the page loads
+- **THEN** the footer is dark-themed
+- **AND** column 1 shows "CalmPrayer Church" heading, description, and social icons (twitter, facebook, linkedin, instagram)
+- **AND** column 2 shows "The Church" links (About Us, Organizational Chart, Events, Contact)
+- **AND** column 3 shows "Messages" links (Audio Sermons, Past Messages, Bible Reading, End Time Prophecies)
+- **AND** column 4 shows "Visit or Talk to Us" with address, telephone, email
+- **AND** a copyright line includes a link to Component Dock
 
 ## Verification Checklist
 

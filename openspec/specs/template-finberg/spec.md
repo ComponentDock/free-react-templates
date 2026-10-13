@@ -48,57 +48,67 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 8. **FAQ Area** (gray bg) — accordion with 4 items ("Attention and hold it long enough?", "Hold it long enough?", etc.)
 9. **Footer** — three columns: logo + contact info + social icons; useful links; newsletter subscribe form; bottom copyright bar
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Header navigation and CTA
-  GIVEN the user loads the Finberg page
-  WHEN they observe the header
-  THEN they see nav links: Home, Loan, About, FAQ, Blog, Contact
-  AND an "Apply For Loan" CTA button is visible on the right
+### Feature: Finberg template behaviour
 
-### Scenario: Hero section displays loan form
-  GIVEN the user loads the page
-  WHEN they look at the hero section
-  THEN they see a headline "Get Loan for your business growth or startup"
-  AND a loan calculator form on the right with amount/period selects, name and phone inputs
-  AND a "Continue" submit button
+#### Scenario: Header navigation and CTA
 
-### Scenario: About section content
-  GIVEN the user scrolls past the hero
-  WHEN they reach the about section
-  THEN they see an image on the left with a counter overlay
-  AND heading text "Thousands of customers trust our company"
-  AND a "Learn More" button
+- **GIVEN** the user loads the Finberg page
+- **WHEN** they observe the header
+- **THEN** they see nav links: Home, Loan, About, FAQ, Blog, Contact
+- **AND** an "Apply For Loan" CTA button is visible on the right
 
-### Scenario: Services section shows loan types
-  GIVEN the user scrolls to the services area
-  WHEN the services section is visible
-  THEN they see a heading "Loan for your business & startup"
-  AND three loan type cards: Student Loan, Business Loan, Startup Loan
-  AND each card has an "Apply For Loan" button
+#### Scenario: Hero section displays loan form
 
-### Scenario: Testimonial slider
-  GIVEN the user scrolls to the testimonial area
-  WHEN they view the testimonial section
-  THEN they see a parallax background
-  AND testimonial quotes with author attributions
+- **GIVEN** the user loads the page
+- **WHEN** they look at the hero section
+- **THEN** they see a headline "Get Loan for your business growth or startup"
+- **AND** a loan calculator form on the right with amount/period selects, name and phone inputs
+- **AND** a "Continue" submit button
 
-### Scenario: Client statistics
-  GIVEN the user scrolls past testimonials
-  WHEN the clients/counter area is visible
-  THEN they see counter stats: "2000+" Loan Approval and "99%" Satisfied Customers
+#### Scenario: About section content
 
-### Scenario: FAQ accordion
-  GIVEN the user scrolls to the FAQ section
-  WHEN they click an accordion header
-  THEN the corresponding answer expands
-  AND clicking another header collapses the previous
+- **GIVEN** the user scrolls past the hero
+- **WHEN** they reach the about section
+- **THEN** they see an image on the left with a counter overlay
+- **AND** heading text "Thousands of customers trust our company"
+- **AND** a "Learn More" button
 
-### Scenario: Footer newsletter
-  GIVEN the user scrolls to the footer
-  WHEN they see the newsletter section
-  THEN they see an email input and a "Subscribe" button
-  AND contact info, useful links, and social icons are present
+#### Scenario: Services section shows loan types
+
+- **GIVEN** the user scrolls to the services area
+- **WHEN** the services section is visible
+- **THEN** they see a heading "Loan for your business & startup"
+- **AND** three loan type cards: Student Loan, Business Loan, Startup Loan
+- **AND** each card has an "Apply For Loan" button
+
+#### Scenario: Testimonial slider
+
+- **GIVEN** the user scrolls to the testimonial area
+- **WHEN** they view the testimonial section
+- **THEN** they see a parallax background
+- **AND** testimonial quotes with author attributions
+
+#### Scenario: Client statistics
+
+- **GIVEN** the user scrolls past testimonials
+- **WHEN** the clients/counter area is visible
+- **THEN** they see counter stats: "2000+" Loan Approval and "99%" Satisfied Customers
+
+#### Scenario: FAQ accordion
+
+- **GIVEN** the user scrolls to the FAQ section
+- **WHEN** they click an accordion header
+- **THEN** the corresponding answer expands
+- **AND** clicking another header collapses the previous
+
+#### Scenario: Footer newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** they see the newsletter section
+- **THEN** they see an email input and a "Subscribe" button
+- **AND** contact info, useful links, and social icons are present
 
 ## Verification Checklist
 

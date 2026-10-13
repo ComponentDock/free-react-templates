@@ -46,122 +46,138 @@ Extracted from the live preview CSS (`css/style.css`) and rendered DOM
 | Contact | 2-col: form left (name, email, textarea, send button) + address info right | Form uses outline-pill button; address shows email, phone, location |
 | Footer | Logo, social links (Facebook, Twitter, Instagram, Dribbble, Behance), copyright | Dark bg #191919, centered content |
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-Scenario: Desktop navigation renders split layout
-  Given the page loads on a desktop viewport
-  Then the navbar displays with left links (Home, Portfolio, About, Services)
-  And right links (Skills, Testimonial, Journal, Contact)
-  And the logo "Unwrap." is centered between them
-  And the theme toggle button is visible on desktop
+#### Scenario: Desktop navigation renders split layout
 
-Scenario: Navbar becomes fixed on scroll
-  Given the user scrolls past the hero
-  Then the navbar becomes fixed at the top with a white background
-  And nav links switch to dark text
-  And the active section link highlights in red (#D63447)
+- **GIVEN** the page loads on a desktop viewport
+- **THEN** the navbar displays with left links (Home, Portfolio, About, Services)
+- **AND** right links (Skills, Testimonial, Journal, Contact)
+- **AND** the logo "Unwrap." is centered between them
+- **AND** the theme toggle button is visible on desktop
 
-Scenario: Mobile hamburger menu opens
-  Given the page loads on a mobile viewport
-  Then a hamburger menu toggle is visible
-  And clicking it opens a slide-in mobile nav panel
-  And clicking close or a link closes the panel
+#### Scenario: Navbar becomes fixed on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar becomes fixed at the top with a white background
+- **AND** nav links switch to dark text
+- **AND** the active section link highlights in red (#D63447)
+
+#### Scenario: Mobile hamburger menu opens
+
+- **GIVEN** the page loads on a mobile viewport
+- **THEN** a hamburger menu toggle is visible
+- **AND** clicking it opens a slide-in mobile nav panel
+- **AND** clicking close or a link closes the panel
 
 ### Hero
 
-Scenario: Hero section displays background image and heading
-  Given the page loads
-  Then the hero shows a full-width background image
-  And the heading "Unwrap" is centered
-  And a subtitle describes the person
-  And a scroll-down mouse indicator is visible at the bottom
+#### Scenario: Hero section displays background image and heading
 
-Scenario: Scroll indicator navigates to portfolio
-  Given the user clicks the scroll indicator
-  Then the page smoothly scrolls to the portfolio section
+- **GIVEN** the page loads
+- **THEN** the hero shows a full-width background image
+- **AND** the heading "Unwrap" is centered
+- **AND** a subtitle describes the person
+- **AND** a scroll-down mouse indicator is visible at the bottom
+
+#### Scenario: Scroll indicator navigates to portfolio
+
+- **GIVEN** the user clicks the scroll indicator
+- **THEN** the page smoothly scrolls to the portfolio section
 
 ### Portfolio
 
-Scenario: Portfolio grid renders 9 items
-  Given the portfolio section loads
-  Then 9 portfolio items are displayed in a 3-column grid on desktop
-  And each item has a thumbnail image, title, and category tags
-  And hovering an item reveals a semi-transparent overlay with a link icon
+#### Scenario: Portfolio grid renders 9 items
 
-Scenario: Portfolio items link to detail or lightbox
-  Given the user clicks a portfolio item
-  Then it navigates to a detail page or opens a lightbox (simplified: links to #)
+- **GIVEN** the portfolio section loads
+- **THEN** 9 portfolio items are displayed in a 3-column grid on desktop
+- **AND** each item has a thumbnail image, title, and category tags
+- **AND** hovering an item reveals a semi-transparent overlay with a link icon
+
+#### Scenario: Portfolio items link to detail or lightbox
+
+- **GIVEN** the user clicks a portfolio item
+- **THEN** it navigates to a detail page or opens a lightbox (simplified: links to #)
 
 ### Client Logos
 
-Scenario: Logo carousel renders and auto-scrolls
-  Given the client logos section loads
-  Then 4 client logos are displayed in a horizontal carousel
-  And the carousel auto-plays through the logos
+#### Scenario: Logo carousel renders and auto-scrolls
+
+- **GIVEN** the client logos section loads
+- **THEN** 4 client logos are displayed in a horizontal carousel
+- **AND** the carousel auto-plays through the logos
 
 ### About Me
 
-Scenario: About section shows portrait and bio
-  Given the about section loads
-  Then a portrait image is displayed on the left (7-col)
-  And a heading "We can make it together" is shown on the right (4-col)
-  And two paragraphs of bio text are displayed
-  And a "Download my CV" pill button is visible
+#### Scenario: About section shows portrait and bio
+
+- **GIVEN** the about section loads
+- **THEN** a portrait image is displayed on the left (7-col)
+- **AND** a heading "We can make it together" is shown on the right (4-col)
+- **AND** two paragraphs of bio text are displayed
+- **AND** a "Download my CV" pill button is visible
 
 ### Services
 
-Scenario: Six service cards render in a grid
-  Given the services section loads
-  Then 6 service cards are displayed in a 3-column grid
-  And each card has an SVG icon, a title, and a description
-  And cards animate in with fade-up on scroll
+#### Scenario: Six service cards render in a grid
+
+- **GIVEN** the services section loads
+- **THEN** 6 service cards are displayed in a 3-column grid
+- **AND** each card has an SVG icon, a title, and a description
+- **AND** cards animate in with fade-up on scroll
 
 ### Skills
 
-Scenario: Four skill counters render and animate
-  Given the skills section loads
-  Then 4 skill counters are displayed (WordPress 90%, HTML/CSS 99%, JavaScript 95%, Design 100%)
-  And each counter animates from 0 to its target number on scroll
+#### Scenario: Four skill counters render and animate
+
+- **GIVEN** the skills section loads
+- **THEN** 4 skill counters are displayed (WordPress 90%, HTML/CSS 99%, JavaScript 95%, Design 100%)
+- **AND** each counter animates from 0 to its target number on scroll
 
 ### Testimonials
 
-Scenario: Testimonial slider renders with navigation
-  Given the testimonials section loads
-  Then at least 2 testimonial slides are displayed
-  And each slide has a quote, author photo, name, and position
-  And prev/next arrows and pagination dots are visible
+#### Scenario: Testimonial slider renders with navigation
+
+- **GIVEN** the testimonials section loads
+- **THEN** at least 2 testimonial slides are displayed
+- **AND** each slide has a quote, author photo, name, and position
+- **AND** prev/next arrows and pagination dots are visible
 
 ### Journal / Blog
 
-Scenario: Blog grid renders posts
-  Given the journal section loads
-  Then at least 3 blog posts are displayed in an asymmetric grid
-  And the first post spans 8 columns (large) and the second spans 4 columns
-  And each post has a background image, title, author, and read time
-  And hovering a post reveals an overlay with the title
+#### Scenario: Blog grid renders posts
+
+- **GIVEN** the journal section loads
+- **THEN** at least 3 blog posts are displayed in an asymmetric grid
+- **AND** the first post spans 8 columns (large) and the second spans 4 columns
+- **AND** each post has a background image, title, author, and read time
+- **AND** hovering a post reveals an overlay with the title
 
 ### Contact
 
-Scenario: Contact form renders with fields
-  Given the contact section loads
-  Then a form with name, email, and message fields is displayed
-  And a "Send Message" pill button is present
-  And contact info (email, phone, address) is shown on the right
+#### Scenario: Contact form renders with fields
 
-Scenario: Form submission is handled
-  Given the user fills in name, email, and message
-  And clicks "Send Message"
-  Then a success message is displayed (simplified: no real backend)
+- **GIVEN** the contact section loads
+- **THEN** a form with name, email, and message fields is displayed
+- **AND** a "Send Message" pill button is present
+- **AND** contact info (email, phone, address) is shown on the right
+
+#### Scenario: Form submission is handled
+
+- **GIVEN** the user fills in name, email, and message
+- **AND** clicks "Send Message"
+- **THEN** a success message is displayed (simplified: no real backend)
 
 ### Footer
 
-Scenario: Footer displays branding and social links
-  Given the footer renders
-  Then the logo "Unwrap." is displayed
-  And social links (Facebook, Twitter, Instagram, Dribbble, Behance) are shown
-  And a copyright line with "Component Dock" credit links to componentdock.com
+#### Scenario: Footer displays branding and social links
+
+- **GIVEN** the footer renders
+- **THEN** the logo "Unwrap." is displayed
+- **AND** social links (Facebook, Twitter, Instagram, Dribbble, Behance) are shown
+- **AND** a copyright line with "Component Dock" credit links to componentdock.com
 
 ## Verification checklist
 

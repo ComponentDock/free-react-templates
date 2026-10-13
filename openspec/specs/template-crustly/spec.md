@@ -47,50 +47,57 @@ Recreation of ColorLib's **Bakery2** template.
 | 8 | Book a Table | Two-column: left image, right form (name, email, phone, date/time, event select, "Make Reservation" button). |
 | 9 | Footer | 4 link columns (Top Products, Quick Features, Quick Links, Resources) + Newsletter column (email input + arrow button). Bottom bar with copyright + social icons. |
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Crustly template behaviour
+
 Feature: Crustly Template
 
-  Scenario: Page loads with hero banner
-    Given the user visits the Crustly homepage
-    Then a full-width hero banner is visible
-    And the banner contains a call-to-action overlay
+#### Scenario: Page loads with hero banner
 
-  Scenario: Navigation links work
-    Given the navbar is visible
-    When the user clicks "About"
-    Then the page scrolls to the about section
-    When the user clicks "Menu"
-    Then the page scrolls to the menu section
+- **GIVEN** the user visits the Crustly homepage
+- **THEN** a full-width hero banner is visible
+- **AND** the banner contains a call-to-action overlay
 
-  Scenario: Menu carousel slides
-    Given the Our Menu section is visible
-    When the user clicks the next carousel arrow
-    Then the next menu category is displayed
+#### Scenario: Navigation links work
 
-  Scenario: Testimonials carousel
-    Given the testimonials section is visible
-    When the user navigates testimonials
-    Then the next testimonial is displayed
+- **GIVEN** the navbar is visible
+- **WHEN** the user clicks "About"
+- **THEN** the page scrolls to the about section
+- **WHEN** the user clicks "Menu"
+- **THEN** the page scrolls to the menu section
 
-  Scenario: Book a Table form
-    Given the Book a Table section is visible
-    When the user fills in name, email, phone, and date
-    And clicks "Make Reservation"
-    Then the form submission is triggered
+#### Scenario: Menu carousel slides
 
-  Scenario: Newsletter signup
-    Given the footer newsletter section is visible
-    When the user enters an email and clicks the arrow button
-    Then the newsletter form is submitted
+- **GIVEN** the Our Menu section is visible
+- **WHEN** the user clicks the next carousel arrow
+- **THEN** the next menu category is displayed
 
-  Scenario: Footer links and social icons
-    Given the footer is visible
-    Then link columns are displayed (Top Products, Quick Features, Quick Links, Resources)
-    And social media icons (Facebook, Twitter, Dribbble, Behance) are present
-    And the copyright line includes a Component Dock link
-```
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the user navigates testimonials
+- **THEN** the next testimonial is displayed
+
+#### Scenario: Book a Table form
+
+- **GIVEN** the Book a Table section is visible
+- **WHEN** the user fills in name, email, phone, and date
+- **AND** clicks "Make Reservation"
+- **THEN** the form submission is triggered
+
+#### Scenario: Newsletter signup
+
+- **GIVEN** the footer newsletter section is visible
+- **WHEN** the user enters an email and clicks the arrow button
+- **THEN** the newsletter form is submitted
+
+#### Scenario: Footer links and social icons
+
+- **GIVEN** the footer is visible
+- **THEN** link columns are displayed (Top Products, Quick Features, Quick Links, Resources)
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are present
+- **AND** the copyright line includes a Component Dock link
 
 ## Verification Checklist
 

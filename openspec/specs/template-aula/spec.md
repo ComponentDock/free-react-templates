@@ -35,75 +35,87 @@ Recreation of the ColorLib "University" education template as a React 19 + Vite 
 | Flip card | 3D flip on hover | Front: bg image with name; Back: quote + author |
 | Stats icons | circle, 50% radius | Icon circles with brand color |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar displays correctly
-- **Given** a user visits the page
-- **Then** the navbar shows "AULA" brand text (uppercase, letter-spacing .2em)
-- **And** nav links: Home, Courses (dropdown), Categories (dropdown), Blog, About, Contact
-- **And** Login/Register links aligned right
-- **And** navbar background is white with bottom shadow
+### Feature: Aula template behaviour
 
-### Scenario: Hero section renders with search form
-- **Given** a user sees the hero
-- **Then** a full-viewport background image is displayed with dark overlay
-- **And** heading "Find Online Courses That Suits You" is centered
-- **And** a search form with keyword input, category dropdown, difficulty dropdown, and Search button
-- **And** subtext "We have more than 500 courses to improve your skills"
-- **And** a "Register Now" CTA button (cyan, shadow, hover: outline white)
+#### Scenario: Navbar displays correctly
 
-### Scenario: Welcome section with video
-- **Given** a user scrolls past hero
-- **Then** a two-column layout appears: text on left, image with play button on right
-- **And** heading "Welcome to University" in brand color
-- **And** descriptive paragraph text
-- **And** a "Read More" button (primary style, reversed: outline on default, solid on hover)
-- **And** the play button is a circle overlay on the image (magnific popup style)
+- **GIVEN** a user visits the page
+- **THEN** the navbar shows "AULA" brand text (uppercase, letter-spacing .2em)
+- **AND** nav links: Home, Courses (dropdown), Categories (dropdown), Blog, About, Contact
+- **AND** Login/Register links aligned right
+- **AND** navbar background is white with bottom shadow
 
-### Scenario: Features section displays four cards
-- **Given** a user sees the features section
-- **Then** four columns appear: Knowledge is power, Senior High School, College of Arts & Sciences, Unmatched Professor
-- **And** each has a flaticon icon, heading, short text, and "Read More →" link
-- **And** section has white background
+#### Scenario: Hero section renders with search form
 
-### Scenario: Counter section shows statistics
-- **Given** a user scrolls to the counter section
-- **Then** a light gray background section with two columns: image left, stats right
-- **And** heading "Education is Life"
-- **And** four stat items: Students (12921), Schools (51), Books (3902), Graduates (1921)
-- **And** each stat has an icon circle and animated counter number
+- **GIVEN** a user sees the hero
+- **THEN** a full-viewport background image is displayed with dark overlay
+- **AND** heading "Find Online Courses That Suits You" is centered
+- **AND** a search form with keyword input, category dropdown, difficulty dropdown, and Search button
+- **AND** subtext "We have more than 500 courses to improve your skills"
+- **AND** a "Register Now" CTA button (cyan, shadow, hover: outline white)
 
-### Scenario: Popular Courses carousel
-- **Given** a user sees the courses section
-- **Then** a heading "Popular Courses" with "Enroll Now" button
-- **And** an owl-carousel (horizontal scroll) of course cards
-- **And** each card has: image, course title, description, enrollment progress, price (free or paid with strikethrough)
-- **And** section has light gray background
+#### Scenario: Welcome section with video
 
-### Scenario: Teachers flip cards
-- **Given** a user scrolls to teachers
-- **Then** heading "Teachers" appears
-- **And** three flip cards: each with front (bg image, name, role) and back (quote, author)
-- **And** 3D flip animation on hover
+- **GIVEN** a user scrolls past hero
+- **THEN** a two-column layout appears: text on left, image with play button on right
+- **AND** heading "Welcome to University" in brand color
+- **AND** descriptive paragraph text
+- **AND** a "Read More" button (primary style, reversed: outline on default, solid on hover)
+- **AND** the play button is a circle overlay on the image (magnific popup style)
 
-### Scenario: Blog section
-- **Given** a user sees the blog
-- **Then** heading "Blog" with light gray background
-- **And** one featured post (large image + title + meta: date, author, comments)
-- **And** three sidebar posts (small thumbnail + title + meta)
+#### Scenario: Features section displays four cards
 
-### Scenario: Newsletter CTA
-- **Given** a user sees the newsletter
-- **Then** a full-width cyan (#11cbd7) section
-- **And** heading "Create cool websites"
-- **And** email input + Subscribe button
-- **And** descriptive text in white
+- **GIVEN** a user sees the features section
+- **THEN** four columns appear: Knowledge is power, Senior High School, College of Arts & Sciences, Unmatched Professor
+- **AND** each has a flaticon icon, heading, short text, and "Read More →" link
+- **AND** section has white background
 
-### Scenario: Footer
-- **Given** a user reaches the bottom
-- **Then** a four-column footer: brand description, quick links (two columns), blog posts, contact information
-- **And** copyright line with social media icons
-- **And** footer link to Component Dock: "Made with Component Dock"
+#### Scenario: Counter section shows statistics
+
+- **GIVEN** a user scrolls to the counter section
+- **THEN** a light gray background section with two columns: image left, stats right
+- **AND** heading "Education is Life"
+- **AND** four stat items: Students (12921), Schools (51), Books (3902), Graduates (1921)
+- **AND** each stat has an icon circle and animated counter number
+
+#### Scenario: Popular Courses carousel
+
+- **GIVEN** a user sees the courses section
+- **THEN** a heading "Popular Courses" with "Enroll Now" button
+- **AND** an owl-carousel (horizontal scroll) of course cards
+- **AND** each card has: image, course title, description, enrollment progress, price (free or paid with strikethrough)
+- **AND** section has light gray background
+
+#### Scenario: Teachers flip cards
+
+- **GIVEN** a user scrolls to teachers
+- **THEN** heading "Teachers" appears
+- **AND** three flip cards: each with front (bg image, name, role) and back (quote, author)
+- **AND** 3D flip animation on hover
+
+#### Scenario: Blog section
+
+- **GIVEN** a user sees the blog
+- **THEN** heading "Blog" with light gray background
+- **AND** one featured post (large image + title + meta: date, author, comments)
+- **AND** three sidebar posts (small thumbnail + title + meta)
+
+#### Scenario: Newsletter CTA
+
+- **GIVEN** a user sees the newsletter
+- **THEN** a full-width cyan (#11cbd7) section
+- **AND** heading "Create cool websites"
+- **AND** email input + Subscribe button
+- **AND** descriptive text in white
+
+#### Scenario: Footer
+
+- **GIVEN** a user reaches the bottom
+- **THEN** a four-column footer: brand description, quick links (two columns), blog posts, contact information
+- **AND** copyright line with social media icons
+- **AND** footer link to Component Dock: "Made with Component Dock"
 
 ## Verification checklist
 

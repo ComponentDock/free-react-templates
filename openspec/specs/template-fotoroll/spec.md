@@ -23,52 +23,57 @@ Fotoroll is a photography portfolio template with a navbar, hero, portfolio, blo
 4. **Blog** — 3-column card grid, image + title + excerpt + date, `#f5f5f5` card backgrounds
 5. **Footer** — Dark background, copyright with heart, social icon row, "More templates at Component Dock" link
 
-## Scenarios
+## Requirements
 
 ### Gherkin requirements
 
-```gherkin
 Feature: Fotoroll Photography Portfolio
 
-  Scenario: Navbar renders all navigation links
-    Given I visit the Fotoroll page
-    Then I see the "Foto." logo
-    And I see links: Home, Portfolio, Blog, About, Contact
-    And I see the email "hello@fotoroll.com"
+#### Scenario: Navbar renders all navigation links
 
-  Scenario: Mobile menu opens and closes
-    Given I visit the Fotoroll page on mobile
-    When I click the "Open menu" button
-    Then I see the mobile navigation
-    When I click "Close menu"
-    Then the mobile navigation is hidden
+- **GIVEN** I visit the Fotoroll page
+- **THEN** I see the "Foto." logo
+- **AND** I see links: Home, Portfolio, Blog, About, Contact
+- **AND** I see the email "hello@fotoroll.com"
 
-  Scenario: Hero slider auto-advances
-    Given I visit the Fotoroll page
-    Then I see "Mountain Vistas" heading
-    When I wait 6 seconds
-    Then I see "Urban Streets" heading
+#### Scenario: Mobile menu opens and closes
 
-  Scenario: Hero slider manual navigation
-    Given I visit the Fotoroll page
-    When I click "Next slide"
-    Then I see "Urban Streets" heading
-    When I click "Previous slide"
-    Then I see "Mountain Vistas" heading
+- **GIVEN** I visit the Fotoroll page on mobile
+- **WHEN** I click the "Open menu" button
+- **THEN** I see the mobile navigation
+- **WHEN** I click "Close menu"
+- **THEN** the mobile navigation is hidden
 
-  Scenario: Portfolio grid displays images
-    Given I visit the Fotoroll page
-    Then I see 12 portfolio images
+#### Scenario: Hero slider auto-advances
 
-  Scenario: Blog section shows posts
-    Given I visit the Fotoroll page
-    Then I see 3 blog post cards with titles and dates
+- **GIVEN** I visit the Fotoroll page
+- **THEN** I see "Mountain Vistas" heading
+- **WHEN** I wait 6 seconds
+- **THEN** I see "Urban Streets" heading
 
-  Scenario: Footer has Component Dock link
-    Given I visit the Fotoroll page
-    Then I see a "Component Dock" link to componentdock.com
-    And I see social media icons
-```
+#### Scenario: Hero slider manual navigation
+
+- **GIVEN** I visit the Fotoroll page
+- **WHEN** I click "Next slide"
+- **THEN** I see "Urban Streets" heading
+- **WHEN** I click "Previous slide"
+- **THEN** I see "Mountain Vistas" heading
+
+#### Scenario: Portfolio grid displays images
+
+- **GIVEN** I visit the Fotoroll page
+- **THEN** I see 12 portfolio images
+
+#### Scenario: Blog section shows posts
+
+- **GIVEN** I visit the Fotoroll page
+- **THEN** I see 3 blog post cards with titles and dates
+
+#### Scenario: Footer has Component Dock link
+
+- **GIVEN** I visit the Fotoroll page
+- **THEN** I see a "Component Dock" link to componentdock.com
+- **AND** I see social media icons
 
 ## Preview analysis notes
 

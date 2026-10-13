@@ -26,24 +26,27 @@
   - Sizes: Small (`5px 20px`), Regular, Large (`17px 24px`)
 - **Section Layout**: Single-page component showcase featuring interactive button variants, sizes, social media buttons, dropdown buttons, button groups, and checkbox/radio button states.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Button Showcase Hero & Grid
 
-- **Scenario**: User views button categories and variants
-  - Given the BtnLoom application is loaded
-  - When the user inspects the button showcase sections
-  - Then all primary, secondary, tertiary, outline, and social buttons are displayed with correct styles and hover effects
+#### Scenario: User views button categories and variants
 
-- **Scenario**: User interacts with dropdown buttons
-  - Given dropdown buttons are rendered in the showcase
-  - When the user clicks a dropdown button
-  - Then the dropdown menu opens showing option items
+- **GIVEN** the BtnLoom application is loaded
+- **WHEN** the user inspects the button showcase sections
+- **THEN** all primary, secondary, tertiary, outline, and social buttons are displayed with correct styles and hover effects
 
-- **Scenario**: User explores button groups and states
-  - Given button groups and checkbox/radio button states are present
-  - When the user toggles button states
-  - Then interactive states respond correctly
+#### Scenario: User interacts with dropdown buttons
+
+- **GIVEN** dropdown buttons are rendered in the showcase
+- **WHEN** the user clicks a dropdown button
+- **THEN** the dropdown menu opens showing option items
+
+#### Scenario: User explores button groups and states
+
+- **GIVEN** button groups and checkbox/radio button states are present
+- **WHEN** the user toggles button states
+- **THEN** interactive states respond correctly
 
 ## Verification Checklist
 

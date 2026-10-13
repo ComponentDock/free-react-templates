@@ -47,79 +47,89 @@ Recreation of ColorLib "Hazze" — a dark-themed fashion agency/creative portfol
 
 ### Gherkin Scenarios
 
-```gherkin
 Feature: Smokeshade — Fashion Agency Template
 
-  Background:
-    Given the user navigates to the Smokeshade app
+Background:
+- **GIVEN** the user navigates to the Smokeshade app
 
-  Scenario: Header renders with logo and navigation
-    Then the logo is visible in the header
-    And navigation links "Home", "About Us", "Blog", "Gallery", "Contact" are present
-    And "Gallery" has a dropdown submenu
+#### Scenario: Header renders with logo and navigation
 
-  Scenario: Header is responsive with hamburger menu
-    When the viewport is 768px or narrower
-    Then the hamburger menu icon is visible
-    And the desktop nav menu is hidden
-    When the user clicks the hamburger icon
-    Then the mobile navigation menu opens
+- **THEN** the logo is visible in the header
+- **AND** navigation links "Home", "About Us", "Blog", "Gallery", "Contact" are present
+- **AND** "Gallery" has a dropdown submenu
 
-  Scenario: Hero section displays correctly
-    Then a full-width hero background image is visible
-    And the subtitle "Office Fashion" is displayed
-    And the heading "New Fashion" is displayed
-    And a description paragraph is visible
-    And a "Read More" CTA button is visible with pill shape
+#### Scenario: Header is responsive with hamburger menu
 
-  Scenario: About Us section has two-column layout
-    Then a left-side image is displayed
-    And a right-side text block with heading "About Story" is visible
-    And two paragraphs of text are displayed
-    And a "Read More" button is present
+- **WHEN** the viewport is 768px or narrower
+- **THEN** the hamburger menu icon is visible
+- **AND** the desktop nav menu is hidden
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the mobile navigation menu opens
 
-  Scenario: Services section shows three service cards
-    Then the heading "Best Services Save The World" is displayed
-    And 3 service items are rendered in a grid
-    And each service item has an icon, heading, and description
+#### Scenario: Hero section displays correctly
 
-  Scenario: Portfolio section displays grid with hover effects
-    Then the heading "Turn Your Dream Into Reality" is displayed
-    And 4 portfolio items are rendered (3 small + 1 large)
-    And hovering a portfolio item reveals an overlay with a heart icon
+- **THEN** a full-width hero background image is visible
+- **AND** the subtitle "Office Fashion" is displayed
+- **AND** the heading "New Fashion" is displayed
+- **AND** a description paragraph is visible
+- **AND** a "Read More" CTA button is visible with pill shape
 
-  Scenario: Counter section shows animated stats
-    Then the heading "We have a lot of experience" is displayed
-    And 2 counter items are displayed with animated count numbers
-    And counter items show "Successful projects" and "Events" labels
+#### Scenario: About Us section has two-column layout
 
-  Scenario: Testimonial carousel is functional
-    Then testimonial slides are displayed in a carousel
-    And each slide shows an author photo, name, role, and quote
-    And navigation dots/arrows allow moving between slides
+- **THEN** a left-side image is displayed
+- **AND** a right-side text block with heading "About Story" is visible
+- **AND** two paragraphs of text are displayed
+- **AND** a "Read More" button is present
 
-  Scenario: Call to action section has background and CTA
-    Then a full-width background image is visible
-    And the heading "We Create Trends For The World" is displayed
-    And a "Work With Us" CTA button is visible
+#### Scenario: Services section shows three service cards
 
-  Scenario: Members section displays team cards
-    Then the heading "Top Designers" is displayed
-    And 3 team member cards are rendered
-    And each card has a circular photo, social icons, and name
+- **THEN** the heading "Best Services Save The World" is displayed
+- **AND** 3 service items are rendered in a grid
+- **AND** each service item has an icon, heading, and description
 
-  Scenario: Blog section shows article previews
-    Then the heading "From Our Blog" is displayed
-    And 2 blog article cards are rendered
-    And each card has a featured image, title, excerpt, and author name
+#### Scenario: Portfolio section displays grid with hover effects
 
-  Scenario: Footer contains widgets and copyright
-    Then a newsletter signup form is present
-    And useful navigation links are listed
-    And an Instagram photo grid is shown
-    And copyright text is displayed at the bottom
-    And social media icon links are present
-```
+- **THEN** the heading "Turn Your Dream Into Reality" is displayed
+- **AND** 4 portfolio items are rendered (3 small + 1 large)
+- **AND** hovering a portfolio item reveals an overlay with a heart icon
+
+#### Scenario: Counter section shows animated stats
+
+- **THEN** the heading "We have a lot of experience" is displayed
+- **AND** 2 counter items are displayed with animated count numbers
+- **AND** counter items show "Successful projects" and "Events" labels
+
+#### Scenario: Testimonial carousel is functional
+
+- **THEN** testimonial slides are displayed in a carousel
+- **AND** each slide shows an author photo, name, role, and quote
+- **AND** navigation dots/arrows allow moving between slides
+
+#### Scenario: Call to action section has background and CTA
+
+- **THEN** a full-width background image is visible
+- **AND** the heading "We Create Trends For The World" is displayed
+- **AND** a "Work With Us" CTA button is visible
+
+#### Scenario: Members section displays team cards
+
+- **THEN** the heading "Top Designers" is displayed
+- **AND** 3 team member cards are rendered
+- **AND** each card has a circular photo, social icons, and name
+
+#### Scenario: Blog section shows article previews
+
+- **THEN** the heading "From Our Blog" is displayed
+- **AND** 2 blog article cards are rendered
+- **AND** each card has a featured image, title, excerpt, and author name
+
+#### Scenario: Footer contains widgets and copyright
+
+- **THEN** a newsletter signup form is present
+- **AND** useful navigation links are listed
+- **AND** an Instagram photo grid is shown
+- **AND** copyright text is displayed at the bottom
+- **AND** social media icon links are present
 
 ## Verification Checklist
 

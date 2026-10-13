@@ -49,84 +49,96 @@ Extracted from Calvin's live preview CSS (`assets/css/style.css`):
 - Footer: copyright line + inline nav links
 - Orange (#FF8553) is the dominant accent color throughout
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Lucero personal portfolio template
 
 #### Scenario: Hero section renders correctly
-  Given the user visits the Lucero template
-  Then a split hero section is visible
-  And a portrait/person image is displayed on the left
-  And the heading reads "My name is Lucero. Digital Product Designer"
-  And a subtitle text is shown below the heading
-  And the header contains a transparent sticky navbar with logo, nav links, and a "Let's Talk" outline button
+
+- **GIVEN** the user visits the Lucero template
+- **THEN** a split hero section is visible
+- **AND** a portrait/person image is displayed on the left
+- **AND** the heading reads "My name is Lucero. Digital Product Designer"
+- **AND** a subtitle text is shown below the heading
+- **AND** the header contains a transparent sticky navbar with logo, nav links, and a "Let's Talk" outline button
 
 #### Scenario: About info bar displays contact details
-  Given the user scrolls past the hero
-  Then an about info bar is visible below the hero
-  And it contains three info items: specialization, phone number, and email
-  And each item has a label and a value
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** an about info bar is visible below the hero
+- **AND** it contains three info items: specialization, phone number, and email
+- **AND** each item has a label and a value
 
 #### Scenario: Services section shows 4 service cards
-  Given the user scrolls to the services section
-  Then a section heading "My Expertise" is visible
-  And 4 service cards are displayed in a 2×2 grid
-  And each card has an icon, a title, a description, and a link
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** a section heading "My Expertise" is visible
+- **AND** 4 service cards are displayed in a 2×2 grid
+- **AND** each card has an icon, a title, a description, and a link
 
 #### Scenario: Gallery section shows portfolio items
-  Given the user scrolls to the gallery section
-  Then a section heading "My Works" is visible
-  And 4 portfolio images are displayed in a 2×2 grid
-  And each image has an overlay with a title on hover
-  And a "More Work" button is shown below the grid
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** a section heading "My Works" is visible
+- **AND** 4 portfolio images are displayed in a 2×2 grid
+- **AND** each image has an overlay with a title on hover
+- **AND** a "More Work" button is shown below the grid
 
 #### Scenario: About Me section with skill bars
-  Given the user scrolls to the about section
-  Then a heading "About Me" is visible
-  And descriptive text is shown on the left
-  And 3 animated skill bars are displayed on the right
-  And each skill bar has a label and a percentage value
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading "About Me" is visible
+- **AND** descriptive text is shown on the left
+- **AND** 3 animated skill bars are displayed on the right
+- **AND** each skill bar has a label and a percentage value
 
 #### Scenario: Brand carousel displays logos
-  Given the user scrolls below the about section
-  Then a brand carousel is visible
-  And multiple brand logos are displayed in a horizontal scrolling row
+
+- **GIVEN** the user scrolls below the about section
+- **THEN** a brand carousel is visible
+- **AND** multiple brand logos are displayed in a horizontal scrolling row
 
 #### Scenario: Testimonials section
-  Given the user scrolls to the testimonials section
-  Then a heading "Client Testimonial" is visible
-  And a testimonial quote is displayed
-  And the testimonial includes an avatar image, name, and role
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a heading "Client Testimonial" is visible
+- **AND** a testimonial quote is displayed
+- **AND** the testimonial includes an avatar image, name, and role
 
 #### Scenario: Blog section shows posts
-  Given the user scrolls to the blog section
-  Then a heading "Latest News" is visible
-  And blog post cards are displayed in a carousel
-  And each card has an image, category badge, date, author, and title
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** a heading "Latest News" is visible
+- **AND** blog post cards are displayed in a carousel
+- **AND** each card has an image, category badge, date, author, and title
 
 #### Scenario: CTA section with dark background
-  Given the user scrolls to the CTA section
-  Then a dark background section is visible
-  And it contains a logo, description text, and social media icons
-  And a "Let's Talk" gradient button is displayed
-  And a "Download CV" outline button is displayed
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a dark background section is visible
+- **AND** it contains a logo, description text, and social media icons
+- **AND** a "Let's Talk" gradient button is displayed
+- **AND** a "Download CV" outline button is displayed
 
 #### Scenario: Footer with navigation
-  Given the user scrolls to the footer
-  Then a copyright line is visible
-  And footer navigation links are displayed
-  And a link to Component Dock is included
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a copyright line is visible
+- **AND** footer navigation links are displayed
+- **AND** a link to Component Dock is included
 
 #### Scenario: Responsive layout
-  Given the user views the template on a mobile device
-  Then the header collapses to a hamburger menu
-  And sections stack vertically
-  And the service grid becomes single-column
-  And the gallery grid becomes single-column
+
+- **GIVEN** the user views the template on a mobile device
+- **THEN** the header collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the service grid becomes single-column
+- **AND** the gallery grid becomes single-column
 
 #### Scenario: Navigation links
-  Given the user clicks a nav link in the header
-  Then the page scrolls to the corresponding section
+
+- **GIVEN** the user clicks a nav link in the header
+- **THEN** the page scrolls to the corresponding section
 
 ## Verification checklist
 

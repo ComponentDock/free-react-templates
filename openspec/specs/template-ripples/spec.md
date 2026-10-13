@@ -14,28 +14,30 @@ New app name: `ripples` (`@free-react-templates/ripples`).
 - **Radii**: Smooth rounded corners (`rounded-lg` / `rounded-xl`).
 - **Components**: Multi-item collapsible accordion panels with smooth transition states, chevron/plus-minus toggle indicators, distinct active states.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Accordion Sections
 
 #### Scenario: User toggles accordion items
 
-- Given the Ripples template is loaded with FAQ / accordion items
-- When the user clicks an accordion header
-- Then the corresponding panel expands to reveal its content
-- And the chevron icon rotates or updates state accordingly
+- **GIVEN** the Ripples template is loaded with FAQ / accordion items
+- **WHEN** the user clicks an accordion header
+- **THEN** the corresponding panel expands to reveal its content
+- **AND** the chevron icon rotates or updates state accordingly
 
 #### Scenario: Multiple or exclusive accordion behavior
 
-- Given accordion sections are present
-- When the user clicks another accordion item
-- Then that item expands smoothly
+- **GIVEN** accordion sections are present
+- **WHEN** the user clicks another accordion item
+- **THEN** that item expands smoothly
 
 ### Feature: Footer Brand Link
 
-- Given the Ripples template is displayed
-- When the user scrolls to the footer
-- Then a prominent "Made with Component Dock" link pointing to `https://www.componentdock.com/` is visible and accessible.
+#### Scenario: Footer Brand Link
+
+- **GIVEN** the Ripples template is displayed
+- **WHEN** the user scrolls to the footer
+- **THEN** a prominent "Made with Component Dock" link pointing to `https://www.componentdock.com/` is visible and accessible
 
 ## Verification Checklist
 

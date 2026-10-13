@@ -33,9 +33,11 @@ Extracted from the live preview stylesheet (`css/style.css`) and preview DOM:
 | **Dark overlay** | `rgba(0,0,0,0.6)` | Hero image overlay |
 | **Accent border-top** | `2px solid #ff5733` | Tab active state |
 
-## Gherkin requirements
+## Requirements
 
 ### Section order (top to bottom)
+
+#### Scenario: Section order (top to bottom)
 
 1. Navbar
 2. Hero
@@ -47,149 +49,149 @@ Extracted from the live preview stylesheet (`css/style.css`) and preview DOM:
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the user loads the page
-  Then the navbar shows the logo "Roundtable" (text-only, no image)
-  And the nav links are: Home, About Us, Speakers, News, Contacts
-  And a "Buy Tickets" CTA button appears at the right
-  And the navbar is fixed/sticky on scroll
-  And a mobile hamburger menu appears on small screens
+#### Scenario: Navbar displays logo and navigation links
 
-Scenario: Navbar logo uses brand gradient highlight
-  Given the user views the navbar
-  Then "Round" is displayed in white
-  And "table" uses the primary brand color (#ff5733)
-```
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows the logo "Roundtable" (text-only, no image)
+- **AND** the nav links are: Home, About Us, Speakers, News, Contacts
+- **AND** a "Buy Tickets" CTA button appears at the right
+- **AND** the navbar is fixed/sticky on scroll
+- **AND** a mobile hamburger menu appears on small screens
+
+#### Scenario: Navbar logo uses brand gradient highlight
+
+- **GIVEN** the user views the navbar
+- **THEN** "Round" is displayed in white
+- **AND** "table" uses the primary brand color (#ff5733)
 
 ### Hero
 
-```gherkin
-Scenario: Hero section displays conference info
-  Given the user loads the page
-  Then the hero shows a caption "Conference 2025"
-  And a large heading "Web Design Conference 2025" with gradient text
-  And a date/location line "September 6th-7th, Minnesota, United States"
-  And a "Buy Tickets" CTA button with gradient background
-  And the hero has a dark background with subtle overlay
-  And elements animate in with fade-up on scroll
+#### Scenario: Hero section displays conference info
 
-Scenario: Hero heading uses brand gradient
-  Given the user views the hero heading
-  Then the heading text uses a linear-gradient from #c70039 to #ff5733
-  And the font is Roboto Mono
-  And font size is ~6rem on desktop, ~2rem on mobile
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero shows a caption "Conference 2025"
+- **AND** a large heading "Web Design Conference 2025" with gradient text
+- **AND** a date/location line "September 6th-7th, Minnesota, United States"
+- **AND** a "Buy Tickets" CTA button with gradient background
+- **AND** the hero has a dark background with subtle overlay
+- **AND** elements animate in with fade-up on scroll
+
+#### Scenario: Hero heading uses brand gradient
+
+- **GIVEN** the user views the hero heading
+- **THEN** the heading text uses a linear-gradient from #c70039 to #ff5733
+- **AND** the font is Roboto Mono
+- **AND** font size is ~6rem on desktop, ~2rem on mobile
 
 ### Speakers
 
-```gherkin
-Scenario: Speakers section shows 4 speakers in alternating layout
-  Given the user scrolls to the Speakers section
-  Then a section heading "Speakers" appears on the left
-  And a description paragraph appears beside it
-  And 4 speaker cards are displayed, each with:
-    | field | content |
-    | image | placeholder person photo |
-    | name  | white text, large |
-    | role  | uppercase text in primary color (#ff5733) |
-    | bio   | short description paragraph |
-    | social links | Facebook, Twitter, GitHub icons |
-  And speaker cards alternate image left/right layout
-  And each card animates with AOS fade effects
+#### Scenario: Speakers section shows 4 speakers in alternating layout
 
-Scenario: Speaker role text uses brand color
-  Given the user views a speaker card
-  Then the role label (e.g. "Web Designer") is uppercase
-  And the role text color is #ff5733 (primary)
-```
+- **GIVEN** the user scrolls to the Speakers section
+- **THEN** a section heading "Speakers" appears on the left
+- **AND** a description paragraph appears beside it
+- **AND** 4 speaker cards are displayed, each with:
+| field | content |
+| image | placeholder person photo |
+| name  | white text, large |
+| role  | uppercase text in primary color (#ff5733) |
+| bio   | short description paragraph |
+| social links | Facebook, Twitter, GitHub icons |
+- **AND** speaker cards alternate image left/right layout
+- **AND** each card animates with AOS fade effects
+
+#### Scenario: Speaker role text uses brand color
+
+- **GIVEN** the user views a speaker card
+- **THEN** the role label (e.g. "Web Designer") is uppercase
+- **AND** the role text color is #ff5733 (primary)
 
 ### Programs / Schedule
 
-```gherkin
-Scenario: Programs section shows time-based agenda
-  Given the user scrolls to the Programs section
-  Then a section heading "Programs" appears on the left
-  And a description paragraph appears beside it
-  And 6 schedule rows are displayed, each with:
-    | field | content |
-    | time  | e.g. "8:00 AM" in large white text |
-    | title | session title in white |
-    | speaker | speaker name (optional, omit for breaks) |
-  And rows are separated by dark borders (#383b4f)
-  And break rows (e.g. "Break With Snacks", "Break For Lunch") have no speaker
-  And rows animate with AOS fade effects
+#### Scenario: Programs section shows time-based agenda
 
-Scenario: Schedule rows have consistent styling
-  Given the user views the Programs section
-  Then each row has a top and bottom border
-  And the time column takes ~25% width
-  And the title column takes ~75% width
-```
+- **GIVEN** the user scrolls to the Programs section
+- **THEN** a section heading "Programs" appears on the left
+- **AND** a description paragraph appears beside it
+- **AND** 6 schedule rows are displayed, each with:
+| field | content |
+| time  | e.g. "8:00 AM" in large white text |
+| title | session title in white |
+| speaker | speaker name (optional, omit for breaks) |
+- **AND** rows are separated by dark borders (#383b4f)
+- **AND** break rows (e.g. "Break With Snacks", "Break For Lunch") have no speaker
+- **AND** rows animate with AOS fade effects
+
+#### Scenario: Schedule rows have consistent styling
+
+- **GIVEN** the user views the Programs section
+- **THEN** each row has a top and bottom border
+- **AND** the time column takes ~25% width
+- **AND** the title column takes ~75% width
 
 ### Sponsors
 
-```gherkin
-Scenario: Sponsors section shows logo grid
-  Given the user scrolls to the Sponsors section
-  Then a section heading "Sponsors" appears on the left
-  And a description paragraph appears beside it
-  And 6 sponsor logos are displayed in a 3-column grid
-  And logos are grayscale or neutral by default
-  And a "Be a Sponsor" CTA button appears centered below the grid
-  And the CTA button uses the brand gradient
-  And logos animate with AOS fade effects
+#### Scenario: Sponsors section shows logo grid
 
-Scenario: Be a Sponsor button matches brand style
-  Given the user views the Sponsors section
-  Then the "Be a Sponsor" button has sharp corners (border-radius: 0)
-  And the button uses the gradient background (#c70039 → #ff5733)
-  And the button text is white
-```
+- **GIVEN** the user scrolls to the Sponsors section
+- **THEN** a section heading "Sponsors" appears on the left
+- **AND** a description paragraph appears beside it
+- **AND** 6 sponsor logos are displayed in a 3-column grid
+- **AND** logos are grayscale or neutral by default
+- **AND** a "Be a Sponsor" CTA button appears centered below the grid
+- **AND** the CTA button uses the brand gradient
+- **AND** logos animate with AOS fade effects
+
+#### Scenario: Be a Sponsor button matches brand style
+
+- **GIVEN** the user views the Sponsors section
+- **THEN** the "Be a Sponsor" button has sharp corners (border-radius: 0)
+- **AND** the button uses the gradient background (#c70039 → #ff5733)
+- **AND** the button text is white
 
 ### News / Blog
 
-```gherkin
-Scenario: News section shows 3 blog entry cards
-  Given the user scrolls to the News section
-  Then a section heading "News" appears on the left
-  And a description paragraph appears beside it
-  And 3 blog entry cards are displayed in a row, each with:
-    | field | content |
-    | image | thumbnail photo |
-    | title | article title (links) |
-    | meta  | author avatar + author name + date |
-    | excerpt | short paragraph |
-  And card titles link to # (placeholder)
-  And the author name uses the primary color (#ff5733)
-  And cards animate with AOS fade effects
+#### Scenario: News section shows 3 blog entry cards
 
-Scenario: Blog entry meta shows author info
-  Given the user views a blog entry
-  Then a small circular author avatar appears
-  And "By [Author Name]" text appears next to the avatar
-  And a date follows the author name
-```
+- **GIVEN** the user scrolls to the News section
+- **THEN** a section heading "News" appears on the left
+- **AND** a description paragraph appears beside it
+- **AND** 3 blog entry cards are displayed in a row, each with:
+| field | content |
+| image | thumbnail photo |
+| title | article title (links) |
+| meta  | author avatar + author name + date |
+| excerpt | short paragraph |
+- **AND** card titles link to # (placeholder)
+- **AND** the author name uses the primary color (#ff5733)
+- **AND** cards animate with AOS fade effects
+
+#### Scenario: Blog entry meta shows author info
+
+- **GIVEN** the user views a blog entry
+- **THEN** a small circular author avatar appears
+- **AND** "By [Author Name]" text appears next to the avatar
+- **AND** a date follows the author name
 
 ### Footer
 
-```gherkin
-Scenario: Footer has 3 columns and copyright
-  Given the user scrolls to the footer
-  Then the footer background is darker than the body (#1b1d24)
-  And column 1 shows "About Event" heading + description
-  And column 2 shows "Quick Links" with links: About Us, Speakers, Gallery, Contact Us
-  And column 3 shows "Connect with Us" with social icons (Facebook, Twitter, YouTube, Instagram)
-  And a copyright line at the bottom with current year
-  And the footer links to Component Dock (https://www.componentdock.com/)
-  And footer headings use muted text color (#818186)
-  And footer links are white, hover to #ff5733
+#### Scenario: Footer has 3 columns and copyright
 
-Scenario: Footer attribution links to Component Dock
-  Given the user views the footer copyright
-  Then it displays "Made with ♥ by Component Dock" or equivalent
-  And the Component Dock link points to https://www.componentdock.com/
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer background is darker than the body (#1b1d24)
+- **AND** column 1 shows "About Event" heading + description
+- **AND** column 2 shows "Quick Links" with links: About Us, Speakers, Gallery, Contact Us
+- **AND** column 3 shows "Connect with Us" with social icons (Facebook, Twitter, YouTube, Instagram)
+- **AND** a copyright line at the bottom with current year
+- **AND** the footer links to Component Dock (https://www.componentdock.com/)
+- **AND** footer headings use muted text color (#818186)
+- **AND** footer links are white, hover to #ff5733
+
+#### Scenario: Footer attribution links to Component Dock
+
+- **GIVEN** the user views the footer copyright
+- **THEN** it displays "Made with ♥ by Component Dock" or equivalent
+- **AND** the Component Dock link points to https://www.componentdock.com/
 
 ## Verification checklist
 

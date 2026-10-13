@@ -83,140 +83,170 @@ Extracted from the live preview DOM and `css/style.css`.
 9. **Contact** — Two-column: form (name, email, subject, message) + contact info cards
 10. **Footer** — Copyright + "Made with Component Dock" link (`https://www.componentdock.com/`)
 
-## Gherkin requirements + scenarios
+## Requirements
 
-```gherkin
+### Feature: Chalet template behaviour
+
 Feature: Chalet — Personal Portfolio Template
 
-  Background:
-    Given the user visits the Chalet portfolio site
-    And the viewport is at least 1200px wide
+Background:
+- **GIVEN** the user visits the Chalet portfolio site
+- **AND** the viewport is at least 1200px wide
 
-  @navbar
-  Scenario: Navbar renders and navigates
-    Given the page has loaded
-    Then a fixed navbar is visible at the top
-    And the logo "Chalet." appears on the left
-    And navigation links for each section exist (About, Services, Skills, Portfolio, Testimonials, Blog, Contact)
-    And clicking a link scrolls smoothly to that section
+@navbar
 
-  @navbar
-  Scenario: Mobile navbar toggles
-    Given the viewport is mobile (< 768px)
-    And the navbar is visible
-    Then a hamburger button is visible
-    And clicking it reveals the navigation links
-    And clicking a link closes the menu and scrolls to the section
+#### Scenario: Navbar renders and navigates
 
-  @hero
-  Scenario: Hero split-screen renders correctly
-    Given the hero section is in view
-    Then the section is split vertically into two equal columns
-    And the left column has a white background
-    And the right column has a gold background (#d5c455)
-    And the left column contains:
-      | Element              | Content                              |
-      | Role label           | "UI/UX DESIGNER & DEVELOPER"         |
-      | Headline             | "I'm [First Name]" / "[Last Name]"   |
-      | Primary CTA          | "MORE ABOUT ME →" (gold bg)          |
-      | Secondary CTA        | "HIRE ME →" (white bg)               |
-      | Copyright footer     | "Copyright ©[Year] All rights reserved | Made with ❤ by Component Dock" |
+- **GIVEN** the page has loaded
+- **THEN** a fixed navbar is visible at the top
+- **AND** the logo "Chalet." appears on the left
+- **AND** navigation links for each section exist (About, Services, Skills, Portfolio, Testimonials, Blog, Contact)
+- **AND** clicking a link scrolls smoothly to that section
 
-  @hero
-  Scenario: Hero CTAs have correct styling
-    Given the hero CTAs are visible
-    Then the primary button has gold background, white text, 4px radius
-    And the secondary button has white background, black text, gold border, 4px radius
-    And hovering primary shows transparent bg, gold text/border
-    And hovering secondary shows transparent bg, white text/border
+@navbar
 
-  @about
-  Scenario: About section renders bio and stats
-    Given the About section is in view
-    Then a two-column layout appears (text left, stats right on desktop)
-    And the left column has a heading "About Me" and descriptive paragraphs
-    And the right column shows 3 stat items with icons:
-      | Stat label       | Example value |
-      | Years Experience | 8+            |
-      | Projects Done    | 150+          |
-      | Happy Clients    | 80+           |
+#### Scenario: Mobile navbar toggles
 
-  @services
-  Scenario: Services grid renders 3 cards
-    Given the Services section is in view
-    Then a 3-column grid of service cards appears
-    And each card has an icon, title, and description
-    And cards have subtle hover elevation
+- **GIVEN** the viewport is mobile (< 768px)
+- **AND** the navbar is visible
+- **THEN** a hamburger button is visible
+- **AND** clicking it reveals the navigation links
+- **AND** clicking a link closes the menu and scrolls to the section
 
-  @skills
-  Scenario: Skills progress bars render
-    Given the Skills section is in view
-    Then labeled progress bars appear for each skill
-    And each bar shows a percentage label
-    And bars animate on scroll into view
+@hero
 
-  @portfolio
-  Scenario: Portfolio filterable grid renders
-    Given the Portfolio section is in view
-    Then filter tabs appear: All, Design, Development, Branding
-    And a grid of 6 project thumbnails displays
-    And each thumbnail shows an image, category tag, and project title
-    And hovering reveals an overlay with "View Project" link
-    And clicking a filter updates the visible items
+#### Scenario: Hero split-screen renders correctly
 
-  @testimonials
-  Scenario: Testimonials carousel renders
-    Given the Testimonials section is in view
-    Then a carousel with 3+ testimonials appears
-    And each item shows avatar, quote, name, and role
-    And navigation arrows/dots allow browsing
+- **GIVEN** the hero section is in view
+- **THEN** the section is split vertically into two equal columns
+- **AND** the left column has a white background
+- **AND** the right column has a gold background (#d5c455)
+- **AND** the left column contains:
+| Element              | Content                              |
+| Role label           | "UI/UX DESIGNER & DEVELOPER"         |
+| Headline             | "I'm [First Name]" / "[Last Name]"   |
+| Primary CTA          | "MORE ABOUT ME →" (gold bg)          |
+| Secondary CTA        | "HIRE ME →" (white bg)               |
+| Copyright footer     | "Copyright ©[Year] All rights reserved | Made with ❤ by Component Dock" |
 
-  @blog
-  Scenario: Blog grid renders 3 posts
-    Given the Blog section is in view
-    Then a 3-column grid of blog post cards appears
-    And each card has a featured image, date/category meta, title, excerpt, and "Read More" link
+@hero
 
-  @contact
-  Scenario: Contact form and info render
-    Given the Contact section is in view
-    Then a two-column layout appears (form left, info right)
-    And the form has fields: Name, Email, Subject, Message, Submit button
-    And the info column shows address, phone, email with icons
-    And submitting valid data shows success state
-    And submitting invalid data shows inline validation errors
+#### Scenario: Hero CTAs have correct styling
 
-  @footer
-  Scenario: Footer renders with Component Dock link
-    Given the Footer is in view
-    Then copyright text appears
-    And a "Made with Component Dock" link points to https://www.componentdock.com/
-    And no Colorlib attribution appears in the footer
+- **GIVEN** the hero CTAs are visible
+- **THEN** the primary button has gold background, white text, 4px radius
+- **AND** the secondary button has white background, black text, gold border, 4px radius
+- **AND** hovering primary shows transparent bg, gold text/border
+- **AND** hovering secondary shows transparent bg, white text/border
 
-  @responsive
-  Scenario: Layout adapts to tablet (768px)
-    Given the viewport is 768px wide
-    Then hero stacks vertically (text above portrait)
-    And grids become 2-column (services, portfolio, blog)
-    And navbar collapses to hamburger
+@about
 
-  @responsive
-  Scenario: Layout adapts to mobile (375px)
-    Given the viewport is 375px wide
-    Then all grids become single-column
-    And hero text centers
-    And contact form stacks
-    And footer centers
+#### Scenario: About section renders bio and stats
 
-  @accessibility
-  Scenario: Semantic HTML and ARIA
-    Given the page loads
-    Then landmarks exist: <header>, <main>, <section>, <footer>
-    And all images have alt text
-    And form inputs have associated labels
-    And focus-visible outlines are present on all interactive elements
-    And color contrast meets WCAG AA
-```
+- **GIVEN** the About section is in view
+- **THEN** a two-column layout appears (text left, stats right on desktop)
+- **AND** the left column has a heading "About Me" and descriptive paragraphs
+- **AND** the right column shows 3 stat items with icons:
+| Stat label       | Example value |
+| Years Experience | 8+            |
+| Projects Done    | 150+          |
+| Happy Clients    | 80+           |
+
+@services
+
+#### Scenario: Services grid renders 3 cards
+
+- **GIVEN** the Services section is in view
+- **THEN** a 3-column grid of service cards appears
+- **AND** each card has an icon, title, and description
+- **AND** cards have subtle hover elevation
+
+@skills
+
+#### Scenario: Skills progress bars render
+
+- **GIVEN** the Skills section is in view
+- **THEN** labeled progress bars appear for each skill
+- **AND** each bar shows a percentage label
+- **AND** bars animate on scroll into view
+
+@portfolio
+
+#### Scenario: Portfolio filterable grid renders
+
+- **GIVEN** the Portfolio section is in view
+- **THEN** filter tabs appear: All, Design, Development, Branding
+- **AND** a grid of 6 project thumbnails displays
+- **AND** each thumbnail shows an image, category tag, and project title
+- **AND** hovering reveals an overlay with "View Project" link
+- **AND** clicking a filter updates the visible items
+
+@testimonials
+
+#### Scenario: Testimonials carousel renders
+
+- **GIVEN** the Testimonials section is in view
+- **THEN** a carousel with 3+ testimonials appears
+- **AND** each item shows avatar, quote, name, and role
+- **AND** navigation arrows/dots allow browsing
+
+@blog
+
+#### Scenario: Blog grid renders 3 posts
+
+- **GIVEN** the Blog section is in view
+- **THEN** a 3-column grid of blog post cards appears
+- **AND** each card has a featured image, date/category meta, title, excerpt, and "Read More" link
+
+@contact
+
+#### Scenario: Contact form and info render
+
+- **GIVEN** the Contact section is in view
+- **THEN** a two-column layout appears (form left, info right)
+- **AND** the form has fields: Name, Email, Subject, Message, Submit button
+- **AND** the info column shows address, phone, email with icons
+- **AND** submitting valid data shows success state
+- **AND** submitting invalid data shows inline validation errors
+
+@footer
+
+#### Scenario: Footer renders with Component Dock link
+
+- **GIVEN** the Footer is in view
+- **THEN** copyright text appears
+- **AND** a "Made with Component Dock" link points to https://www.componentdock.com/
+- **AND** no Colorlib attribution appears in the footer
+
+@responsive
+
+#### Scenario: Layout adapts to tablet (768px)
+
+- **GIVEN** the viewport is 768px wide
+- **THEN** hero stacks vertically (text above portrait)
+- **AND** grids become 2-column (services, portfolio, blog)
+- **AND** navbar collapses to hamburger
+
+@responsive
+
+#### Scenario: Layout adapts to mobile (375px)
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** all grids become single-column
+- **AND** hero text centers
+- **AND** contact form stacks
+- **AND** footer centers
+
+@accessibility
+
+#### Scenario: Semantic HTML and ARIA
+
+- **GIVEN** the page loads
+- **THEN** landmarks exist: <header>, <main>, <section>, <footer>
+- **AND** all images have alt text
+- **AND** form inputs have associated labels
+- **AND** focus-visible outlines are present on all interactive elements
+- **AND** color contrast meets WCAG AA
 
 ## Verification checklist
 

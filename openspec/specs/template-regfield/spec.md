@@ -69,69 +69,81 @@ The template is a single full-viewport centered card with two halves:
 
 3. **Responsive**: at 991px the card stacks vertically (form on top, images hidden). At 575px, form fields stack vertically.
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Full-page layout renders correctly
-- GIVEN the user opens the RegField page
-- THEN a centered card is visible on a teal (#86c1cc) background
-- AND the card has two halves: form panel on the left, image panel on the right
+### Feature: RegField template behaviour
 
-### Scenario: Heading and subtext display
-- GIVEN the form panel is visible
-- THEN the heading "Booking Tickets" is shown in serif font (Lora)
-- AND a small blue accent bar appears to the left of the heading
-- AND a descriptive paragraph is shown below the heading in gray text
+#### Scenario: Full-page layout renders correctly
 
-### Scenario: Name and email fields render in two columns
-- GIVEN the form panel is visible
-- THEN Full Name and Your Email fields are displayed side by side
-- AND both fields have labels in uppercase (FULL NAME:, YOUR EMAIL:)
-- AND both fields are required
+- **GIVEN** the user opens the RegField page
+- **THEN** a centered card is visible on a teal (#86c1cc) background
+- **AND** the card has two halves: form panel on the left, image panel on the right
 
-### Scenario: Booking detail fields render in three columns
-- GIVEN the form panel is visible
-- THEN Person, Date, and Ticket Type fields are displayed in a row
-- AND Person is a number input with default value 1
-- AND Date is a date input
-- AND Ticket Type is a select dropdown with options: VIP, Luxury, Basic, Normal
+#### Scenario: Heading and subtext display
 
-### Scenario: Required field validation on submit
-- GIVEN the user clicks BUY NOW without filling any fields
-- THEN the Full Name field shows a validation error (required)
-- AND the Your Email field shows a validation error (required)
+- **GIVEN** the form panel is visible
+- **THEN** the heading "Booking Tickets" is shown in serif font (Lora)
+- **AND** a small blue accent bar appears to the left of the heading
+- **AND** a descriptive paragraph is shown below the heading in gray text
 
-### Scenario: Ticket type selection
-- GIVEN the user opens the Ticket Type dropdown
-- WHEN the user selects "Luxury"
-- THEN the selected value changes to "Luxury"
+#### Scenario: Name and email fields render in two columns
 
-### Scenario: Terms checkbox interaction
-- GIVEN the form is visible
-- WHEN the user clicks the Terms of Service checkbox
-- THEN the checkbox becomes checked
-- AND a blue checkmark appears inside the checkbox
+- **GIVEN** the form panel is visible
+- **THEN** Full Name and Your Email fields are displayed side by side
+- **AND** both fields have labels in uppercase (FULL NAME:, YOUR EMAIL:)
+- **AND** both fields are required
 
-### Scenario: Successful form submission
-- GIVEN the user fills Full Name with "John Doe"
-- AND fills Your Email with "john@example.com"
-- AND sets Person to 2
-- AND selects a Date
-- AND selects Ticket Type "VIP"
-- AND checks the Terms of Service checkbox
-- WHEN the user clicks BUY NOW
-- THEN the form is submitted successfully
+#### Scenario: Booking detail fields render in three columns
 
-### Scenario: Responsive layout at mobile breakpoint
-- GIVEN the viewport width is below 575px
-- WHEN the RegField page renders
-- THEN all form fields stack vertically
-- AND the image panel is hidden
+- **GIVEN** the form panel is visible
+- **THEN** Person, Date, and Ticket Type fields are displayed in a row
+- **AND** Person is a number input with default value 1
+- **AND** Date is a date input
+- **AND** Ticket Type is a select dropdown with options: VIP, Luxury, Basic, Normal
 
-### Scenario: Responsive layout at tablet breakpoint
-- GIVEN the viewport width is between 576px and 991px
-- WHEN the RegField page renders
-- THEN the card stacks vertically with form on top
-- AND the image panel is hidden
+#### Scenario: Required field validation on submit
+
+- **GIVEN** the user clicks BUY NOW without filling any fields
+- **THEN** the Full Name field shows a validation error (required)
+- **AND** the Your Email field shows a validation error (required)
+
+#### Scenario: Ticket type selection
+
+- **GIVEN** the user opens the Ticket Type dropdown
+- **WHEN** the user selects "Luxury"
+- **THEN** the selected value changes to "Luxury"
+
+#### Scenario: Terms checkbox interaction
+
+- **GIVEN** the form is visible
+- **WHEN** the user clicks the Terms of Service checkbox
+- **THEN** the checkbox becomes checked
+- **AND** a blue checkmark appears inside the checkbox
+
+#### Scenario: Successful form submission
+
+- **GIVEN** the user fills Full Name with "John Doe"
+- **AND** fills Your Email with "john@example.com"
+- **AND** sets Person to 2
+- **AND** selects a Date
+- **AND** selects Ticket Type "VIP"
+- **AND** checks the Terms of Service checkbox
+- **WHEN** the user clicks BUY NOW
+- **THEN** the form is submitted successfully
+
+#### Scenario: Responsive layout at mobile breakpoint
+
+- **GIVEN** the viewport width is below 575px
+- **WHEN** the RegField page renders
+- **THEN** all form fields stack vertically
+- **AND** the image panel is hidden
+
+#### Scenario: Responsive layout at tablet breakpoint
+
+- **GIVEN** the viewport width is between 576px and 991px
+- **WHEN** the RegField page renders
+- **THEN** the card stacks vertically with form on top
+- **AND** the image panel is hidden
 
 ## Verification checklist
 

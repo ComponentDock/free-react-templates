@@ -44,111 +44,140 @@ Recreation of ColorLib's **Eventalk** template as a React 19 + Vite + Tailwind C
 11. **Gallery** — 4-column icon grid: camera, map-marker, gift, music icons with image backgrounds
 12. **Footer** — Dark (`#222831`) with 4 widgets: Brand name + description, Useful Links, Privacy, Questions + address
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: ConfPeak template behaviour
+
 Feature: ConfPeak Event Conference Template
 
-  Background:
-    Given the ConfPeak app is loaded at the root URL
-    And the browser viewport is desktop-sized (>= 1024px)
+Background:
+- **GIVEN** the ConfPeak app is loaded at the root URL
+- **AND** the browser viewport is desktop-sized (>= 1024px)
 
-  # --- Navbar ---
-  Scenario: Navbar displays brand and navigation
-    Then I should see a dark navbar with the brand text "ConfPeak"
-    And the brand should have an accent-colored span on the second word
-    And I should see nav links: Home, About, Speakers, Schedule, Blog, Contact
-    And I should see a "Buy ticket" CTA button with primary brand color
+**--- Navbar ---**
 
-  Scenario: Navbar scrolls to dark background
-    When I scroll down past 50px
-    Then the navbar should have a solid dark background (scrolled state)
+#### Scenario: Navbar displays brand and navigation
 
-  # --- Hero ---
-  Scenario: Hero section shows conference info
-    Then I should see a full-height hero section with a background image
-    And I should see an overlay with a purple-to-blue gradient
-    And I should see the headline "Developer Conference 2019"
-    And I should see the date "December 21-24, 2019. Paris, Italy"
-    And I should see a countdown timer with days, hours, minutes, seconds
+- **THEN** I should see a dark navbar with the brand text "ConfPeak"
+- **AND** the brand should have an accent-colored span on the second word
+- **AND** I should see nav links: Home, About, Speakers, Schedule, Blog, Contact
+- **AND** I should see a "Buy ticket" CTA button with primary brand color
 
-  # --- Services ---
-  Scenario: Services section shows 4 items
-    Then I should see a services section with light background
-    And I should see 4 service cards in a row: Venue, Transport, Hotel, Restaurant
-    And each card should have an icon, title, and description text
+#### Scenario: Navbar scrolls to dark background
 
-  # --- Counter ---
-  Scenario: Counter section shows stats
-    Then I should see a counter section with a background image
-    And I should see 4 stat counters: "850" Happy Delegates, "150" Our Speakers, "340" Hours Events, "2500" Our Sponsor
-    And each counter should have an icon and a label
+- **WHEN** I scroll down past 50px
+- **THEN** the navbar should have a solid dark background (scrolled state)
 
-  # --- Speakers ---
-  Scenario: Speakers carousel displays speaker cards
-    Then I should see a speakers carousel section
-    And I should see 5 speaker cards each with a photo, name, role, and social links
-    And social links should include Twitter, Facebook, and Instagram icons
+**--- Hero ---**
 
-  # --- Schedule ---
-  Scenario: Schedule section shows tabbed content
-    Then I should see a schedule section with tab navigation
-    And the tabs should be: About, Speakers, Schedule, Blog, Contact
-    And the first tab should be active by default
-    And each tab panel should show 3 items with image, title, and speaker name
+#### Scenario: Hero section shows conference info
 
-  Scenario: Clicking schedule tabs switches content
-    When I click the "Speakers" tab
-    Then the Speakers tab panel should become visible
-    And the About tab panel should be hidden
+- **THEN** I should see a full-height hero section with a background image
+- **AND** I should see an overlay with a purple-to-blue gradient
+- **AND** I should see the headline "Developer Conference 2019"
+- **AND** I should see the date "December 21-24, 2019. Paris, Italy"
+- **AND** I should see a countdown timer with days, hours, minutes, seconds
 
-  # --- Testimonials ---
-  Scenario: Testimonials carousel shows user quotes
-    Then I should see a testimonials section
-    And I should see testimonial cards with a user photo, quote text, and user name
+**--- Services ---**
 
-  # --- Pricing ---
-  Scenario: Pricing section shows 3 tiers
-    Then I should see a pricing section with light background
-    And I should see 3 pricing cards: Personal ($85), Small Team ($200), Family Pack ($499)
-    And each card should have "Enjoy All Features" text and a "Buy Ticket" button
+#### Scenario: Services section shows 4 items
 
-  # --- Blog ---
-  Scenario: Blog section shows 3 entries
-    Then I should see a blog section with light background
-    And I should see 3 blog entry cards with an image, title, date, and share count
-    And each card should show "Why Lead Generation is Key for Business Growth" as the title
+- **THEN** I should see a services section with light background
+- **AND** I should see 4 service cards in a row: Venue, Transport, Hotel, Restaurant
+- **AND** each card should have an icon, title, and description text
 
-  # --- Newsletter ---
-  Scenario: Newsletter section has email input
-    Then I should see a newsletter section with a parallax background
-    And I should see heading "Subscribe to our Newsletter"
-    And I should see an email input field and a submit button
+**--- Counter ---**
 
-  # --- Gallery ---
-  Scenario: Gallery shows icon grid
-    Then I should see a gallery section with 4 columns
-    And each column should show an icon (camera, map-marker, gift, music) with an image background
+#### Scenario: Counter section shows stats
 
-  # --- Footer ---
-  Scenario: Footer displays brand info and links
-    Then I should see a dark footer with background color #222831
-    And I should see the brand name "ConfPeak"
-    And I should see footer widgets with Useful Links, Privacy, and Questions sections
-    And I should see a "Made with Component Dock" link pointing to componentdock.com
+- **THEN** I should see a counter section with a background image
+- **AND** I should see 4 stat counters: "850" Happy Delegates, "150" Our Speakers, "340" Hours Events, "2500" Our Sponsor
+- **AND** each counter should have an icon and a label
 
-  # --- Responsive ---
-  Scenario: Mobile layout collapses navbar
-    Given the browser viewport is mobile-sized (< 768px)
-    Then the navbar should show a hamburger toggle button
-    And the nav links should be hidden until the toggle is clicked
+**--- Speakers ---**
 
-  Scenario: Mobile layout stacks columns
-    Given the browser viewport is mobile-sized (< 768px)
-    Then the services section should stack vertically
-    And the pricing cards should stack vertically
-    And the blog entries should stack vertically
-```
+#### Scenario: Speakers carousel displays speaker cards
+
+- **THEN** I should see a speakers carousel section
+- **AND** I should see 5 speaker cards each with a photo, name, role, and social links
+- **AND** social links should include Twitter, Facebook, and Instagram icons
+
+**--- Schedule ---**
+
+#### Scenario: Schedule section shows tabbed content
+
+- **THEN** I should see a schedule section with tab navigation
+- **AND** the tabs should be: About, Speakers, Schedule, Blog, Contact
+- **AND** the first tab should be active by default
+- **AND** each tab panel should show 3 items with image, title, and speaker name
+
+#### Scenario: Clicking schedule tabs switches content
+
+- **WHEN** I click the "Speakers" tab
+- **THEN** the Speakers tab panel should become visible
+- **AND** the About tab panel should be hidden
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials carousel shows user quotes
+
+- **THEN** I should see a testimonials section
+- **AND** I should see testimonial cards with a user photo, quote text, and user name
+
+**--- Pricing ---**
+
+#### Scenario: Pricing section shows 3 tiers
+
+- **THEN** I should see a pricing section with light background
+- **AND** I should see 3 pricing cards: Personal ($85), Small Team ($200), Family Pack ($499)
+- **AND** each card should have "Enjoy All Features" text and a "Buy Ticket" button
+
+**--- Blog ---**
+
+#### Scenario: Blog section shows 3 entries
+
+- **THEN** I should see a blog section with light background
+- **AND** I should see 3 blog entry cards with an image, title, date, and share count
+- **AND** each card should show "Why Lead Generation is Key for Business Growth" as the title
+
+**--- Newsletter ---**
+
+#### Scenario: Newsletter section has email input
+
+- **THEN** I should see a newsletter section with a parallax background
+- **AND** I should see heading "Subscribe to our Newsletter"
+- **AND** I should see an email input field and a submit button
+
+**--- Gallery ---**
+
+#### Scenario: Gallery shows icon grid
+
+- **THEN** I should see a gallery section with 4 columns
+- **AND** each column should show an icon (camera, map-marker, gift, music) with an image background
+
+**--- Footer ---**
+
+#### Scenario: Footer displays brand info and links
+
+- **THEN** I should see a dark footer with background color #222831
+- **AND** I should see the brand name "ConfPeak"
+- **AND** I should see footer widgets with Useful Links, Privacy, and Questions sections
+- **AND** I should see a "Made with Component Dock" link pointing to componentdock.com
+
+**--- Responsive ---**
+
+#### Scenario: Mobile layout collapses navbar
+
+- **GIVEN** the browser viewport is mobile-sized (< 768px)
+- **THEN** the navbar should show a hamburger toggle button
+- **AND** the nav links should be hidden until the toggle is clicked
+
+#### Scenario: Mobile layout stacks columns
+
+- **GIVEN** the browser viewport is mobile-sized (< 768px)
+- **THEN** the services section should stack vertically
+- **AND** the pricing cards should stack vertically
+- **AND** the blog entries should stack vertically
 
 ## Verification checklist
 

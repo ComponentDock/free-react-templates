@@ -58,125 +58,115 @@ Recreation of ColorLib **Fitnessclub** template.
 | Button radius | `0` (sharp edges) | Primary buttons are rectangular |
 | Section padding | `30px–150px` vertical | Between sections |
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Header renders with navigation and CTA
-```
-Given the user visits the FitPulse homepage
-Then the header is visible with a sticky/transparent position
-And the logo is displayed on the left
-And navigation links are present: Home, About, Classes, Schedule, Trainer, Blog, Contact, Club
-And a "become a member" button is displayed in the header right area
-```
+### Feature: FitPulse template behaviour
 
-### Scenario: Hero slider displays gym headline
-```
-Given the user visits the FitPulse homepage
-Then the hero slider is visible full-width
-And the headline reads "Build Perfect body Shape for good and Healthy life."
-And a subtitle "with patrick potter" is shown above the headline
-And a "become a member" CTA button is displayed
-And the slider transitions between at least 2 slides
-```
+#### Scenario: Header renders with navigation and CTA
 
-### Scenario: About section shows gym info
-```
-Given the user scrolls to the About section
-Then the section shows "ABOUT OUR GYM" subtitle
-And the heading reads "Safe Body building proper Solutions That Saves our Valuable Time!"
-And a gym image is displayed on the left side
-And a video play button overlay is on the image
-And two paragraphs of descriptive text are shown
-And a "become a member" button is present
-```
+- **GIVEN** the user visits the FitPulse homepage
+- **THEN** the header is visible with a sticky/transparent position
+- **AND** the logo is displayed on the left
+- **AND** navigation links are present: Home, About, Classes, Schedule, Trainer, Blog, Contact, Club
+- **AND** a "become a member" button is displayed in the header right area
 
-### Scenario: Services section shows three service cards
-```
-Given the user scrolls to the Services section
-Then the section has a dark background
-And the subtitle reads "OUR SERVICES FOR YOU"
-And the heading reads "PUSH YOUR LIMITS FORWARD We Offer to you"
-And exactly three service cards are displayed in a row
-And each card has an icon, title, and short description
-And each card has a "Discover More About Us" link
-And a "More Services" button is visible
-```
+#### Scenario: Hero slider displays gym headline
 
-### Scenario: Testimonials show client feedback
-```
-Given the user scrolls to the Testimonials section
-Then the subtitle reads "Client Feedback"
-And the heading reads "What Our Client think about our gym"
-And a gym image is displayed on the left side
-And at least two testimonials are shown in a carousel
-And each testimonial shows quote text, author name, and role
-```
+- **GIVEN** the user visits the FitPulse homepage
+- **THEN** the hero slider is visible full-width
+- **AND** the headline reads "Build Perfect body Shape for good and Healthy life."
+- **AND** a subtitle "with patrick potter" is shown above the headline
+- **AND** a "become a member" CTA button is displayed
+- **AND** the slider transitions between at least 2 slides
 
-### Scenario: Gallery shows fitness images in masonry grid
-```
-Given the user scrolls to the Gallery section
-Then a masonry-style grid of fitness images is displayed
-And one large image is on the left
-And four smaller images are stacked in a 2x2 grid on the right
-And each image has an arrow link overlay
-And each image shows "Best fitness gallery" title
-```
+#### Scenario: About section shows gym info
 
-### Scenario: Team section displays trainer cards
-```
-Given the user scrolls to the Team section
-Then the subtitle reads "OUR TEAM MEMBERS"
-And the heading reads "Our Most Experienced Trainers"
-And three trainer cards are displayed in a row
-And each card shows a photo, name, and role ("Creative director")
-And hovering a card reveals social media icon overlays
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** the section shows "ABOUT OUR GYM" subtitle
+- **AND** the heading reads "Safe Body building proper Solutions That Saves our Valuable Time!"
+- **AND** a gym image is displayed on the left side
+- **AND** a video play button overlay is on the image
+- **AND** two paragraphs of descriptive text are shown
+- **AND** a "become a member" button is present
 
-### Scenario: Membership CTA section
-```
-Given the user scrolls to the Membership CTA section
-Then a dark background section is displayed
-And the heading reads "April membership offer available Now"
-And a "become a member" button is centered below the heading
-```
+#### Scenario: Services section shows three service cards
 
-### Scenario: Schedule section shows class timetable
-```
-Given the user scrolls to the Schedule section
-Then the subtitle reads "OUR TIME SCHEDULE"
-And the heading reads "SELECT THE PERFECT TIME YOU NEED NOW"
-And a day-of-week tab bar is shown (Saturday through Friday)
-And each tab shows a list of classes with time, name, and trainer
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the section has a dark background
+- **AND** the subtitle reads "OUR SERVICES FOR YOU"
+- **AND** the heading reads "PUSH YOUR LIMITS FORWARD We Offer to you"
+- **AND** exactly three service cards are displayed in a row
+- **AND** each card has an icon, title, and short description
+- **AND** each card has a "Discover More About Us" link
+- **AND** a "More Services" button is visible
 
-### Scenario: Contact section with form
-```
-Given the user scrolls to the Contact section
-Then contact information is displayed on the left (address, phone, email)
-And a form is displayed on the right with fields: name, email, subject, message
-And a "Send Message" button is at the bottom of the form
-```
+#### Scenario: Testimonials show client feedback
 
-### Scenario: Blog section shows recent posts
-```
-Given the user scrolls to the Blog section
-Then the subtitle reads "RECENT NEWS FROM BLOG"
-And the heading reads "GYM TIPS NEWS FOR YOU THAT SELECTED BY US"
-And three blog post cards are displayed
-And each card shows a date badge, author name, and post title
-```
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the subtitle reads "Client Feedback"
+- **AND** the heading reads "What Our Client think about our gym"
+- **AND** a gym image is displayed on the left side
+- **AND** at least two testimonials are shown in a carousel
+- **AND** each testimonial shows quote text, author name, and role
 
-### Scenario: Footer renders with columns and attribution
-```
-Given the user scrolls to the Footer
-Then a dark background footer is displayed
-And four columns are present: Company, Open Hours, Resources, and text blurb
-And Company links include: About Us, Company, Press & Blog, Privacy Policy
-And Open Hours lists daily schedules
-And Resources links include: Home Insurance, Travel Insurance, etc.
-And the footer bottom shows a logo and "Made with Component Dock" attribution
-And a scroll-to-top button is present
-```
+#### Scenario: Gallery shows fitness images in masonry grid
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a masonry-style grid of fitness images is displayed
+- **AND** one large image is on the left
+- **AND** four smaller images are stacked in a 2x2 grid on the right
+- **AND** each image has an arrow link overlay
+- **AND** each image shows "Best fitness gallery" title
+
+#### Scenario: Team section displays trainer cards
+
+- **GIVEN** the user scrolls to the Team section
+- **THEN** the subtitle reads "OUR TEAM MEMBERS"
+- **AND** the heading reads "Our Most Experienced Trainers"
+- **AND** three trainer cards are displayed in a row
+- **AND** each card shows a photo, name, and role ("Creative director")
+- **AND** hovering a card reveals social media icon overlays
+
+#### Scenario: Membership CTA section
+
+- **GIVEN** the user scrolls to the Membership CTA section
+- **THEN** a dark background section is displayed
+- **AND** the heading reads "April membership offer available Now"
+- **AND** a "become a member" button is centered below the heading
+
+#### Scenario: Schedule section shows class timetable
+
+- **GIVEN** the user scrolls to the Schedule section
+- **THEN** the subtitle reads "OUR TIME SCHEDULE"
+- **AND** the heading reads "SELECT THE PERFECT TIME YOU NEED NOW"
+- **AND** a day-of-week tab bar is shown (Saturday through Friday)
+- **AND** each tab shows a list of classes with time, name, and trainer
+
+#### Scenario: Contact section with form
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** contact information is displayed on the left (address, phone, email)
+- **AND** a form is displayed on the right with fields: name, email, subject, message
+- **AND** a "Send Message" button is at the bottom of the form
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** the subtitle reads "RECENT NEWS FROM BLOG"
+- **AND** the heading reads "GYM TIPS NEWS FOR YOU THAT SELECTED BY US"
+- **AND** three blog post cards are displayed
+- **AND** each card shows a date badge, author name, and post title
+
+#### Scenario: Footer renders with columns and attribution
+
+- **GIVEN** the user scrolls to the Footer
+- **THEN** a dark background footer is displayed
+- **AND** four columns are present: Company, Open Hours, Resources, and text blurb
+- **AND** Company links include: About Us, Company, Press & Blog, Privacy Policy
+- **AND** Open Hours lists daily schedules
+- **AND** Resources links include: Home Insurance, Travel Insurance, etc
+- **AND** the footer bottom shows a logo and "Made with Component Dock" attribution
+- **AND** a scroll-to-top button is present
 
 ## Verification checklist
 

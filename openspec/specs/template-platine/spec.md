@@ -45,164 +45,170 @@ Extracted from `https://preview.colorlib.com/theme/caviar/style.css`.
 - Awards displayed as a horizontal row of logo images on white background.
 - Reservation form overlaid on dark background with a food image beside it.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
 
-  Scenario: Brand logo displayed
-    Given I visit the Platine homepage
-    Then I see the text "platine" as the brand logo
+#### Scenario: Brand logo displayed
 
-  Scenario: Navigation links present
-    Given I visit the Platine homepage
-    Then I see navigation links: "About Us", "Menu", "Awards", "Testimonials", "Reservation", "Contact"
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see the text "platine" as the brand logo
 
-  Scenario: Sticky header on scroll
-    Given I am on the Platine homepage
-    When I scroll down past the hero
-    Then the header becomes sticky with a dark semi-transparent background
+#### Scenario: Navigation links present
 
-  Scenario: Mobile hamburger toggle
-    Given I am on a mobile viewport
-    Then I see a hamburger menu button
-    When I tap the hamburger button
-    Then the navigation links expand in a dropdown
-```
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see navigation links: "About Us", "Menu", "Awards", "Testimonials", "Reservation", "Contact"
+
+#### Scenario: Sticky header on scroll
+
+- **GIVEN** I am on the Platine homepage
+- **WHEN** I scroll down past the hero
+- **THEN** the header becomes sticky with a dark semi-transparent background
+
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** I am on a mobile viewport
+- **THEN** I see a hamburger menu button
+- **WHEN** I tap the hamburger button
+- **THEN** the navigation links expand in a dropdown
 
 ### Hero Section
 
-```gherkin
 Feature: Hero Section
 
-  Scenario: Hero displays heading and CTA
-    Given I visit the Platine homepage
-    Then I see a hero heading "Lorem Ipsum"
-    And I see a paragraph description below the heading
-    And I see a "Reservation" call-to-action button
+#### Scenario: Hero displays heading and CTA
 
-  Scenario: Hero button has red accent dot
-    Given I see the Reservation button in the hero
-    Then the button has a circular red dot preceding the text
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see a hero heading "Lorem Ipsum"
+- **AND** I see a paragraph description below the heading
+- **AND** I see a "Reservation" call-to-action button
 
-  Scenario: Social media icons visible
-    Given I visit the Platine homepage
-    Then I see social media icons (Facebook, Instagram, Twitter) on the left side
+#### Scenario: Hero button has red accent dot
 
-  Scenario: Hero background image with overlay
-    Given I visit the Platine homepage
-    Then the hero section has a full-width background image with a dark overlay
-```
+- **GIVEN** I see the Reservation button in the hero
+- **THEN** the button has a circular red dot preceding the text
+
+#### Scenario: Social media icons visible
+
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see social media icons (Facebook, Instagram, Twitter) on the left side
+
+#### Scenario: Hero background image with overlay
+
+- **GIVEN** I visit the Platine homepage
+- **THEN** the hero section has a full-width background image with a dark overlay
 
 ### About Us Section
 
-```gherkin
 Feature: About Us Section
 
-  Scenario: About Us displays two rows
-    Given I visit the Platine homepage
-    Then I see the "About Us" heading
-    And I see a food image on the left and description text on the right
-    And I see a second row with "our chef" subtitle and text on the left, image on the right
+#### Scenario: About Us displays two rows
 
-  Scenario: About Us has section padding
-    Given I view the About Us section
-    Then the section has comfortable vertical padding between 120px and 180px
-```
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see the "About Us" heading
+- **AND** I see a food image on the left and description text on the right
+- **AND** I see a second row with "our chef" subtitle and text on the left, image on the right
+
+#### Scenario: About Us has section padding
+
+- **GIVEN** I view the About Us section
+- **THEN** the section has comfortable vertical padding between 120px and 180px
 
 ### Dish Menu Section
 
-```gherkin
 Feature: Dish Menu Section
 
-  Scenario: Dish Menu shows three dishes
-    Given I visit the Platine homepage
-    Then I see the "Special" heading
-    And I see three dish cards in a 3-column grid
-    And each dish card has an image, a name, and a price
+#### Scenario: Dish Menu shows three dishes
 
-  Scenario: Dish Menu dark background
-    Given I view the Dish Menu section
-    Then the section has a dark (#333333) background
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see the "Special" heading
+- **AND** I see three dish cards in a 3-column grid
+- **AND** each dish card has an image, a name, and a price
 
-  Scenario: Dish Menu has View The Menu button
-    Given I view the Dish Menu section
-    Then I see a "View The Menu" button with red accent dot
-```
+#### Scenario: Dish Menu dark background
+
+- **GIVEN** I view the Dish Menu section
+- **THEN** the section has a dark (#333333) background
+
+#### Scenario: Dish Menu has View The Menu button
+
+- **GIVEN** I view the Dish Menu section
+- **THEN** I see a "View The Menu" button with red accent dot
 
 ### Awards Section
 
-```gherkin
 Feature: Awards Section
 
-  Scenario: Awards displays logo row
-    Given I visit the Platine homepage
-    Then I see the "Awards" heading
-    And I see 5 award images displayed horizontally
+#### Scenario: Awards displays logo row
 
-  Scenario: Awards has light background
-    Given I view the Awards section
-    Then the section has a white/light background
-```
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see the "Awards" heading
+- **AND** I see 5 award images displayed horizontally
+
+#### Scenario: Awards has light background
+
+- **GIVEN** I view the Awards section
+- **THEN** the section has a white/light background
 
 ### Testimonials Section
 
-```gherkin
 Feature: Testimonials Section
 
-  Scenario: Testimonials shows reviewer cards
-    Given I visit the Platine homepage
-    Then I see the "Testimonials" heading
-    And I see testimonial cards with avatar, name, and quote text
-    And there are at least 3 testimonials
+#### Scenario: Testimonials shows reviewer cards
 
-  Scenario: Testimonials dark background
-    Given I view the Testimonials section
-    Then the section has a dark (#333333) background
-```
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see the "Testimonials" heading
+- **AND** I see testimonial cards with avatar, name, and quote text
+- **AND** there are at least 3 testimonials
+
+#### Scenario: Testimonials dark background
+
+- **GIVEN** I view the Testimonials section
+- **THEN** the section has a dark (#333333) background
 
 ### Reservation Section
 
-```gherkin
 Feature: Reservation Section
 
-  Scenario: Reservation form fields present
-    Given I visit the Platine homepage
-    Then I see the "Reservation" heading
-    And I see a date picker input
-    And I see a time picker input
-    And I see a "Select Persons" text input
-    And I see a "Last name" text input
-    And I see a textarea for message
-    And I see a "Reserve Your Desk" submit button
+#### Scenario: Reservation form fields present
 
-  Scenario: Reservation dark background with image
-    Given I view the Reservation section
-    Then the section has a dark (#333333) background
-    And I see a food image beside the form
-```
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see the "Reservation" heading
+- **AND** I see a date picker input
+- **AND** I see a time picker input
+- **AND** I see a "Select Persons" text input
+- **AND** I see a "Last name" text input
+- **AND** I see a textarea for message
+- **AND** I see a "Reserve Your Desk" submit button
+
+#### Scenario: Reservation dark background with image
+
+- **GIVEN** I view the Reservation section
+- **THEN** the section has a dark (#333333) background
+- **AND** I see a food image beside the form
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer displays brand and copyright
-    Given I visit the Platine homepage
-    Then I see the "platine" brand text in the footer
-    And I see a copyright notice
+#### Scenario: Footer displays brand and copyright
 
-  Scenario: Footer links to Component Dock
-    Given I view the footer
-    Then I see a link to https://www.componentdock.com/
-    And the link text says "Component Dock"
+- **GIVEN** I visit the Platine homepage
+- **THEN** I see the "platine" brand text in the footer
+- **AND** I see a copyright notice
 
-  Scenario: Footer dark background
-    Given I view the footer
-    Then the footer has a dark (#333333) background
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I view the footer
+- **THEN** I see a link to https://www.componentdock.com/
+- **AND** the link text says "Component Dock"
+
+#### Scenario: Footer dark background
+
+- **GIVEN** I view the footer
+- **THEN** the footer has a dark (#333333) background
 
 ## Section Order (Implementation Sequence)
 

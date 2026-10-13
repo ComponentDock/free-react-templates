@@ -44,91 +44,87 @@ Stack: Vite latest, React 19, Tailwind CSS 4, TypeScript strict. Deployed to
 7. **Instagram** — Full-width background image. Overlay: "Follow us on instagram" / "Sweet moments are saved as memories." + 4 image thumbnails in a row
 8. **Footer** — Dark background. 4 columns: About (logo + social links), Navigation links, Information links, Newsletter signup (email input + subscribe button)
 
-## Gherkin requirements
+## Requirements
 
 ### Hero
 
-```gherkin
-Scenario: Hero slider renders with headline and CTA
-  Given the user opens the Fondant page
-  Then a hero section is visible at the top
-  And the heading text contains "sweeter" or "bite"
-  And a CTA button is visible
+#### Scenario: Hero slider renders with headline and CTA
 
-Scenario: Hero CTA button links to products
-  Given the hero section is displayed
-  When the user clicks the CTA button
-  Then the page scrolls to the products section
-```
+- **GIVEN** the user opens the Fondant page
+- **THEN** a hero section is visible at the top
+- **AND** the heading text contains "sweeter" or "bite"
+- **AND** a CTA button is visible
+
+#### Scenario: Hero CTA button links to products
+
+- **GIVEN** the hero section is displayed
+- **WHEN** the user clicks the CTA button
+- **THEN** the page scrolls to the products section
 
 ### About
 
-```gherkin
-Scenario: About section displays stat bars
-  Given the user scrolls to the About section
-  Then a section title is visible
-  And 4 stat/progress bar items are shown
-  And each bar has a label and a numeric value
-```
+#### Scenario: About section displays stat bars
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a section title is visible
+- **AND** 4 stat/progress bar items are shown
+- **AND** each bar has a label and a numeric value
 
 ### Products
 
-```gherkin
-Scenario: Product grid shows 4 items on orange background
-  Given the user scrolls to the Products section
-  Then the section has an orange background
-  And 4 product cards are displayed
-  And each card shows an image, product name, and price
+#### Scenario: Product grid shows 4 items on orange background
 
-Scenario: Product cards have hover effect
-  Given a product card is displayed
-  When the user hovers over the card image
-  Then the card shows a visual hover transition
-```
+- **GIVEN** the user scrolls to the Products section
+- **THEN** the section has an orange background
+- **AND** 4 product cards are displayed
+- **AND** each card shows an image, product name, and price
+
+#### Scenario: Product cards have hover effect
+
+- **GIVEN** a product card is displayed
+- **WHEN** the user hovers over the card image
+- **THEN** the card shows a visual hover transition
 
 ### Team
 
-```gherkin
-Scenario: Team section shows 3 members
-  Given the user scrolls to the Team section
-  Then 3 team member cards are displayed
-  And each card shows a portrait, name, and role
+#### Scenario: Team section shows 3 members
 
-Scenario: Team social icons appear on hover
-  Given a team member card is displayed
-  When the user hovers over the card
-  Then social media icon links are revealed
-```
+- **GIVEN** the user scrolls to the Team section
+- **THEN** 3 team member cards are displayed
+- **AND** each card shows a portrait, name, and role
+
+#### Scenario: Team social icons appear on hover
+
+- **GIVEN** a team member card is displayed
+- **WHEN** the user hovers over the card
+- **THEN** social media icon links are revealed
 
 ### Testimonial
 
-```gherkin
-Scenario: Testimonial slider displays quotes
-  Given the user scrolls to the Testimonial section
-  Then the section has a warm peach background
-  And at least one testimonial is visible
-  And each testimonial shows a quote and author with portrait
-```
+#### Scenario: Testimonial slider displays quotes
+
+- **GIVEN** the user scrolls to the Testimonial section
+- **THEN** the section has a warm peach background
+- **AND** at least one testimonial is visible
+- **AND** each testimonial shows a quote and author with portrait
 
 ### Instagram
 
-```gherkin
-Scenario: Instagram section shows image grid
-  Given the user scrolls to the Instagram section
-  Then a heading about Instagram is visible
-  And a row of thumbnail images is displayed
-```
+#### Scenario: Instagram section shows image grid
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** a heading about Instagram is visible
+- **AND** a row of thumbnail images is displayed
 
 ### Footer
 
-```gherkin
-Scenario: Footer has 4 columns and newsletter
-  Given the user scrolls to the footer
-  Then 4 columns are displayed (About, Navigation, Information, Newsletter)
-  And an email input field is visible in the newsletter column
-  And a subscribe button is present
-  And a link to componentdock.com is present
-```
+#### Scenario: Footer has 4 columns and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are displayed (About, Navigation, Information, Newsletter)
+- **AND** an email input field is visible in the newsletter column
+- **AND** a subscribe button is present
+- **AND** a link to componentdock.com is present
 
 ## Verification checklist
 

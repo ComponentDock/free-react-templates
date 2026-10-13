@@ -11,7 +11,7 @@ Recreation of ColorLib [Bootstrap Accordion V02](https://colorlib.com/wp/templat
 - **Button / Accordion Styling**: Clean rounded pill or rectangular accordion headers with subtle hover states, smooth expand/collapse transitions, and clear active indicators.
 - **Layout**: Centered container featuring "Our Specialties" section with interactive accordion tabs for Breakfast, Lunch, Dinner, Drink, and Wine, listing menu items with titles, prices, and descriptions.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Food Menu Accordions
 
@@ -19,22 +19,22 @@ As a site visitor, I want to explore food and drink menus via interactive accord
 
 #### Scenario: Viewing default open section
 
-- **Given** the user opens the Bistro menu page
-- **When** the page loads
-- **Then** the "Breakfast" section is expanded by default showing menu items with titles, prices, and descriptions
-- **And** other sections (Lunch, Dinner, Drink, Wine) are collapsed
+- **GIVEN** the user opens the Bistro menu page
+- **WHEN** the page loads
+- **THEN** the "Breakfast" section is expanded by default showing menu items with titles, prices, and descriptions
+- **AND** other sections (Lunch, Dinner, Drink, Wine) are collapsed
 
 #### Scenario: Toggling accordion sections
 
-- **Given** the user is viewing the menu
-- **When** the user clicks on the "Lunch" accordion header
-- **Then** the "Lunch" section expands to reveal its items
-- **And** the previously open section collapses
+- **GIVEN** the user is viewing the menu
+- **WHEN** the user clicks on the "Lunch" accordion header
+- **THEN** the "Lunch" section expands to reveal its items
+- **AND** the previously open section collapses
 
 #### Scenario: Footer Attribution
 
-- **Given** the user scrolls to the bottom of the page
-- **Then** the footer displays a link to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** the footer displays a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

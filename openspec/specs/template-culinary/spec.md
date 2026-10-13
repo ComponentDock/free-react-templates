@@ -24,32 +24,32 @@ Recreation of ColorLib **Bootstrap Accordion V02** (`accordion-02`), a free food
 
 ---
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Culinary Restaurant Menu Accordion
 
 #### Scenario: User views the Hero / Header Section
 
-- **Given** the user visits the Culinary template home page
-- **Then** they should see a navigation bar with brand logo and links (Home, Menu, About, Contact)
-- **And** a prominent hero banner introducing the restaurant with a headline, subtitle, and CTA button to view the menu
+- **GIVEN** the user visits the Culinary template home page
+- **THEN** they should see a navigation bar with brand logo and links (Home, Menu, About, Contact)
+- **AND** a prominent hero banner introducing the restaurant with a headline, subtitle, and CTA button to view the menu
 
 #### Scenario: User explores the Food Menu Accordions
 
-- **Given** the user is viewing the menu section
-- **Then** they should see categorized accordion groups (e.g., Starters, Breakfast, Lunch, Dinner, Drinks)
-- **When** the user clicks on an accordion category header
-- **Then** the corresponding menu items list expands smoothly, showing item names, descriptions, images, and prices
+- **GIVEN** the user is viewing the menu section
+- **THEN** they should see categorized accordion groups (e.g., Starters, Breakfast, Lunch, Dinner, Drinks)
+- **WHEN** the user clicks on an accordion category header
+- **THEN** the corresponding menu items list expands smoothly, showing item names, descriptions, images, and prices
 
 #### Scenario: User views the Restaurant Story / About Section
 
-- **Given** the user scrolls past the menu
-- **Then** they should see an about section detailing the culinary philosophy, chef background, and imagery
+- **GIVEN** the user scrolls past the menu
+- **THEN** they should see an about section detailing the culinary philosophy, chef background, and imagery
 
 #### Scenario: User inspects the Footer
 
-- **Given** the user reaches the bottom of the page
-- **Then** they should see restaurant contact details, operating hours, newsletter signup, and a branded link to `https://www.componentdock.com/` ("Component Dock")
+- **GIVEN** the user reaches the bottom of the page
+- **THEN** they should see restaurant contact details, operating hours, newsletter signup, and a branded link to `https://www.componentdock.com/` ("Component Dock")
 
 ---
 

@@ -49,152 +49,153 @@ Section headings use a centered `::before` pseudo-element: `width: 50px; height:
 7. **Testimonial** — White bg. Section heading "TESTIMONIAL" with yellow underline. Carousel/slider: circular author avatar, italic quote text, author name + company. Quote marks styling.
 8. **Footer** — Light gray bg (`#f2f2f2`). Two main columns: Quick Links (About, Services, Works, Contact) + Social links. Address block: street, phone, email. Copyright bar: "© All rights reserved | Made with Component Dock".
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navigation Bar
 
-  Scenario: Desktop navbar shows all section links
-    Given the user is on a desktop viewport
-    When the page loads
-    Then the navbar displays the logo "Scaffold" and navigation links for Home, Services, Works, News, About, Contact
-    And a "Get A Quote" CTA button is visible on the right
+#### Scenario: Desktop navbar shows all section links
 
-  Scenario: Services dropdown shows sub-items
-    Given the user hovers over the "Services" nav link
-    When the dropdown menu appears
-    Then it lists Metal Roofing, General Contracting, House Renovation, Laminate Flooring, Construction Consultant
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar displays the logo "Scaffold" and navigation links for Home, Services, Works, News, About, Contact
+- **AND** a "Get A Quote" CTA button is visible on the right
 
-  Scenario: Navbar becomes sticky on scroll
-    Given the user scrolls past the hero section
-    When the scroll position exceeds the navbar height
-    Then the navbar should be fixed at the top of the viewport
+#### Scenario: Services dropdown shows sub-items
 
-  Scenario: Mobile hamburger toggles menu
-    Given the user is on a mobile viewport
-    When they click the hamburger icon
-    Then the navigation links appear in a slide-in or dropdown menu
-    And clicking a link closes the menu and scrolls to the section
-```
+- **GIVEN** the user hovers over the "Services" nav link
+- **WHEN** the dropdown menu appears
+- **THEN** it lists Metal Roofing, General Contracting, House Renovation, Laminate Flooring, Construction Consultant
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero section
+- **WHEN** the scroll position exceeds the navbar height
+- **THEN** the navbar should be fixed at the top of the viewport
+
+#### Scenario: Mobile hamburger toggles menu
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** they click the hamburger icon
+- **THEN** the navigation links appear in a slide-in or dropdown menu
+- **AND** clicking a link closes the menu and scrolls to the section
 
 ### Hero Slider
 
-```gherkin
 Feature: Hero Image Slider
 
-  Scenario: Hero displays first slide with CTA
-    Given the page loads
-    When the hero slider is visible
-    Then it shows the heading "Creating A Brighter Future"
-    And a descriptive paragraph below the heading
-    And a "Download Now!" primary button
+#### Scenario: Hero displays first slide with CTA
 
-  Scenario: Slider auto-advances to second slide
-    Given the first slide is displayed
-    When the carousel interval elapses
-    Then the second slide appears with heading "Trusted Construction & Development Since 1889"
-    And the pagination dots update to indicate slide 2
+- **GIVEN** the page loads
+- **WHEN** the hero slider is visible
+- **THEN** it shows the heading "Creating A Brighter Future"
+- **AND** a descriptive paragraph below the heading
+- **AND** a "Download Now!" primary button
 
-  Scenario: User can navigate slides via dots
-    Given the slider is showing slide 1
-    When the user clicks the second dot indicator
-    Then the slider transitions to slide 2
-```
+#### Scenario: Slider auto-advances to second slide
+
+- **GIVEN** the first slide is displayed
+- **WHEN** the carousel interval elapses
+- **THEN** the second slide appears with heading "Trusted Construction & Development Since 1889"
+- **AND** the pagination dots update to indicate slide 2
+
+#### Scenario: User can navigate slides via dots
+
+- **GIVEN** the slider is showing slide 1
+- **WHEN** the user clicks the second dot indicator
+- **THEN** the slider transitions to slide 2
 
 ### CTA Overlap Bar
 
-```gherkin
 Feature: Call-to-Action Overlap Bar
 
-  Scenario: CTA bar is visible below the hero
-    Given the hero slider is displayed
-    When the user views the area below the hero
-    Then a yellow bar overlaps the bottom of the hero
-    And it contains the heading "Trusted Construction & Development Since 1889"
-    And a "Get A Quote" button with white outline
-```
+#### Scenario: CTA bar is visible below the hero
+
+- **GIVEN** the hero slider is displayed
+- **WHEN** the user views the area below the hero
+- **THEN** a yellow bar overlaps the bottom of the hero
+- **AND** it contains the heading "Trusted Construction & Development Since 1889"
+- **AND** a "Get A Quote" button with white outline
 
 ### Services
 
-```gherkin
 Feature: Services Section
 
-  Scenario: Services section displays three services
-    Given the user scrolls to the Services section
-    Then the section heading "Services" is displayed with a yellow underline
-    And three service cards are visible: House Renovation, Construction Consultant, General Contracting
-    And each card has an icon, title, description, and "Learn More" button
+#### Scenario: Services section displays three services
 
-  Scenario: Browse All Services button is present
-    Given the user views the Services section
-    When all service cards are displayed
-    Then a "Browse All Services" primary button appears below the cards
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the section heading "Services" is displayed with a yellow underline
+- **AND** three service cards are visible: House Renovation, Construction Consultant, General Contracting
+- **AND** each card has an icon, title, description, and "Learn More" button
+
+#### Scenario: Browse All Services button is present
+
+- **GIVEN** the user views the Services section
+- **WHEN** all service cards are displayed
+- **THEN** a "Browse All Services" primary button appears below the cards
 
 ### Recent Works
 
-```gherkin
 Feature: Recent Works Section
 
-  Scenario: Recent Works shows three project cards
-    Given the user scrolls to the Recent Works section
-    Then the section heading "Recent Works" is displayed with a yellow underline
-    And three project cards are visible: Wood Polishing, General Construction Building, House Renovation
-    And each card has a background image with an overlay title
+#### Scenario: Recent Works shows three project cards
 
-  Scenario: View All Works button navigates
-    Given the user views the Recent Works section
-    When they click "View All Works"
-    Then it navigates to the works/portfolio page
-```
+- **GIVEN** the user scrolls to the Recent Works section
+- **THEN** the section heading "Recent Works" is displayed with a yellow underline
+- **AND** three project cards are visible: Wood Polishing, General Construction Building, House Renovation
+- **AND** each card has a background image with an overlay title
+
+#### Scenario: View All Works button navigates
+
+- **GIVEN** the user views the Recent Works section
+- **WHEN** they click "View All Works"
+- **THEN** it navigates to the works/portfolio page
 
 ### Company News
 
-```gherkin
 Feature: Company News Section
 
-  Scenario: News section displays three blog cards
-    Given the user scrolls to the Company News section
-    Then the section heading "Company News" is displayed with a yellow underline
-    And three blog cards are visible, each with a date, title, excerpt, and "Read more" link
+#### Scenario: News section displays three blog cards
 
-  Scenario: Blog date is prominently styled
-    Given a blog card is displayed
-    Then the date shows a large yellow day number
-    And the month/year text appears below
-```
+- **GIVEN** the user scrolls to the Company News section
+- **THEN** the section heading "Company News" is displayed with a yellow underline
+- **AND** three blog cards are visible, each with a date, title, excerpt, and "Read more" link
+
+#### Scenario: Blog date is prominently styled
+
+- **GIVEN** a blog card is displayed
+- **THEN** the date shows a large yellow day number
+- **AND** the month/year text appears below
 
 ### Testimonial
 
-```gherkin
 Feature: Testimonial Section
 
-  Scenario: Testimonial displays quote with author
-    Given the user scrolls to the Testimonial section
-    Then the section heading "Testimonial" is displayed with a yellow underline
-    And a quote is shown with italic text
-    And the author name and company are displayed below the quote
-    And a circular avatar image is shown next to or above the quote
-```
+#### Scenario: Testimonial displays quote with author
+
+- **GIVEN** the user scrolls to the Testimonial section
+- **THEN** the section heading "Testimonial" is displayed with a yellow underline
+- **AND** a quote is shown with italic text
+- **AND** the author name and company are displayed below the quote
+- **AND** a circular avatar image is shown next to or above the quote
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer displays contact info and links
-    Given the user scrolls to the bottom of the page
-    Then the footer shows the address, phone number, and email
-    And a "Quick Links" column lists About, Services, Works, Contact
-    And a "Social" column is present
+#### Scenario: Footer displays contact info and links
 
-  Scenario: Footer copyright mentions Component Dock
-    Given the user views the footer
-    Then the copyright text reads "© <year> All rights reserved | Made with Component Dock"
-    And the Component Dock text links to https://www.componentdock.com/
-```
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** the footer shows the address, phone number, and email
+- **AND** a "Quick Links" column lists About, Services, Works, Contact
+- **AND** a "Social" column is present
+
+#### Scenario: Footer copyright mentions Component Dock
+
+- **GIVEN** the user views the footer
+- **THEN** the copyright text reads "© <year> All rights reserved | Made with Component Dock"
+- **AND** the Component Dock text links to https://www.componentdock.com/
 
 ## Verification Checklist
 

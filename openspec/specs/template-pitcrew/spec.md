@@ -52,94 +52,105 @@ Extracted from the live preview CSS (`css/style.css`):
 8. **Latest News** — "Latest News" section title. 3 blog cards: image, date/author overlay, title, description snippet, "Continue Reading" link.
 9. **Footer** — Top bar (dark bg): 3 columns — Booking Repair/Appointment (CTA), Contact phone number, Location/map link. Main footer: about text + "Contact Us" button, Quick Links list, News list, Office address. Bottom bar: copyright.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: PitCrew Automotive Template
 
-#### Background
-  Given the user visits the PitCrew homepage
-  Then the page loads within 3 seconds
-  And all sections render in the correct order
+**Background**
+- **GIVEN** the user visits the PitCrew homepage
+- **THEN** the page loads within 3 seconds
+- **AND** all sections render in the correct order
 
 #### Scenario: Header renders with navigation
-  Given the header is visible
-  Then it displays a logo
-  And navigation links: Home, Services, Shop, Pages, Blog
-  And a phone number "(+123) 4567-7890-123"
-  And operating hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
-  And social icons (Facebook, Twitter, Vimeo, Pinterest)
-  And a "Find us on map" link
+
+- **GIVEN** the header is visible
+- **THEN** it displays a logo
+- **AND** navigation links: Home, Services, Shop, Pages, Blog
+- **AND** a phone number "(+123) 4567-7890-123"
+- **AND** operating hours "Mon-Sat: 10:00 - 16:00 / Sunday Close"
+- **AND** social icons (Facebook, Twitter, Vimeo, Pinterest)
+- **AND** a "Find us on map" link
 
 #### Scenario: Hero section displays welcome message
-  Given the hero section is visible
-  Then it shows "Welcome To" as a span above the main heading
-  And the main heading reads "PitCrew Garage"
-  And a subtitle paragraph is present
-  And a "Our Services" primary button links to the services section
+
+- **GIVEN** the hero section is visible
+- **THEN** it shows "Welcome To" as a span above the main heading
+- **AND** the main heading reads "PitCrew Garage"
+- **AND** a subtitle paragraph is present
+- **AND** a "Our Services" primary button links to the services section
 
 #### Scenario: Services section shows four services
-  Given the services section is visible
-  Then the section title reads "What We Do?"
-  And 4 service cards are displayed
-  And each card has an icon, heading, and description
-  And the services are: Engine Overhaul, Power Steering, Oil Change, Upgrades Car
-  And cards alternate between text-left/image-right and text-right/image-left on desktop
+
+- **GIVEN** the services section is visible
+- **THEN** the section title reads "What We Do?"
+- **AND** 4 service cards are displayed
+- **AND** each card has an icon, heading, and description
+- **AND** the services are: Engine Overhaul, Power Steering, Oil Change, Upgrades Car
+- **AND** cards alternate between text-left/image-right and text-right/image-left on desktop
 
 #### Scenario: Choose Us section shows experience and CTA
-  Given the choose-us section is visible
-  Then it displays a background image on the left half
-  And the right half shows a section title about experience
-  And a bullet list with check-mark items
-  And an "About Us" primary button
+
+- **GIVEN** the choose-us section is visible
+- **THEN** it displays a background image on the left half
+- **AND** the right half shows a section title about experience
+- **AND** a bullet list with check-mark items
+- **AND** an "About Us" primary button
 
 #### Scenario: Products section displays product grid
-  Given the products section is visible
-  Then the section title reads "Our Products"
-  And 4 product cards are displayed in a grid
-  And each card has an image, product name, and price
-  And each card shows hover overlay icons (wishlist, cart, quick view, compare)
+
+- **GIVEN** the products section is visible
+- **THEN** the section title reads "Our Products"
+- **AND** 4 product cards are displayed in a grid
+- **AND** each card has an image, product name, and price
+- **AND** each card shows hover overlay icons (wishlist, cart, quick view, compare)
 
 #### Scenario: Testimonial slider renders quotes
-  Given the testimonial section is visible
-  Then it displays a carousel/slider
-  And 3 testimonial items with quote icons
-  And each item has a blockquote paragraph
-  And carousel dots or arrows allow navigation
+
+- **GIVEN** the testimonial section is visible
+- **THEN** it displays a carousel/slider
+- **AND** 3 testimonial items with quote icons
+- **AND** each item has a blockquote paragraph
+- **AND** carousel dots or arrows allow navigation
 
 #### Scenario: Counter section shows statistics
-  Given the counter section is visible
-  Then it has a parallax background image
-  And the section title reads "About Our Statistics"
-  And 3 counter items are displayed with animated numbers
-  And counter labels are: All Project, Project Completed, Customers Action
+
+- **GIVEN** the counter section is visible
+- **THEN** it has a parallax background image
+- **AND** the section title reads "About Our Statistics"
+- **AND** 3 counter items are displayed with animated numbers
+- **AND** counter labels are: All Project, Project Completed, Customers Action
 
 #### Scenario: Latest News shows blog cards
-  Given the latest news section is visible
-  Then the section title reads "Latest News"
-  And 3 blog cards are displayed
+
+- **GIVEN** the latest news section is visible
+- **THEN** the section title reads "Latest News"
+- **AND** 3 blog cards are displayed
   Each card has an image, date/author overlay, title, snippet, and "Continue Reading" link
 
 #### Scenario: Footer renders all columns
-  Given the footer is visible
-  Then the top bar has dark background with 3 columns: Appointment, Phone, Location
-  And the main footer has about text, Quick Links, News, and Office address
-  And the bottom bar has a copyright notice
-  And the footer links to "https://www.componentdock.com/" branded as "Component Dock"
+
+- **GIVEN** the footer is visible
+- **THEN** the top bar has dark background with 3 columns: Appointment, Phone, Location
+- **AND** the main footer has about text, Quick Links, News, and Office address
+- **AND** the bottom bar has a copyright notice
+- **AND** the footer links to "https://www.componentdock.com/" branded as "Component Dock"
 
 #### Scenario: Mobile responsive layout
-  Given the viewport width is less than 768px
-  Then the header collapses to a hamburger menu
-  And service cards stack vertically
-  And product cards stack vertically
-  And the choose-us section stacks (image above text)
-  And footer columns stack vertically
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the header collapses to a hamburger menu
+- **AND** service cards stack vertically
+- **AND** product cards stack vertically
+- **AND** the choose-us section stacks (image above text)
+- **AND** footer columns stack vertically
 
 #### Scenario: Accessibility
-  Given any section of the page
-  Then all images have descriptive alt text
-  And interactive elements are keyboard-focusable
-  And headings follow a logical hierarchy (h1 > h2 > h3)
-  And buttons have accessible labels
+
+- **GIVEN** any section of the page
+- **THEN** all images have descriptive alt text
+- **AND** interactive elements are keyboard-focusable
+- **AND** headings follow a logical hierarchy (h1 > h2 > h3)
+- **AND** buttons have accessible labels
 
 ## Verification Checklist
 

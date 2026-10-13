@@ -74,128 +74,143 @@ Since Schmidt is a multi-page template, we consolidate into a single-page SPA. S
 9. **Contact** — Two-column: left = contact info (address, phone, email) + contact form, right = Google Map placeholder
 10. **Footer** — Copyright, Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Feature: Navbar
-  Scenario: Sticky navigation bar
-    Given the user loads the page
-    Then a navbar is visible at the top
-    And the brand text reads "Strat."
-    And nav links include Home, About, Services, Experience, Works, Blog, Contact
 
-  Scenario: Mobile responsive toggle
-    Given the viewport is mobile width
-    When the user taps the hamburger icon
-    Then the nav menu expands
-```
+Feature: Navbar
+
+#### Scenario: Sticky navigation bar
+
+- **GIVEN** the user loads the page
+- **THEN** a navbar is visible at the top
+- **AND** the brand text reads "Strat."
+- **AND** nav links include Home, About, Services, Experience, Works, Blog, Contact
+
+#### Scenario: Mobile responsive toggle
+
+- **GIVEN** the viewport is mobile width
+- **WHEN** the user taps the hamburger icon
+- **THEN** the nav menu expands
 
 ### Hero
-```gherkin
+
 Feature: Hero section
-  Scenario: Split hero layout
-    Given the user is on the home page
-    Then a full-viewport hero is displayed
-    And the left side shows a subheading "UI/UX Designer & Developer"
-    And a name headline is visible
-    And two CTA buttons are present: "More About Me" and "Hire Me"
 
-  Scenario: Golden overlay on right
-    Given the viewport is desktop width
-    Then the right half of the hero has a golden-yellow (#d5c455) overlay
-    And a portrait image is visible within the overlay area
+#### Scenario: Split hero layout
 
-  Scenario: Hero responsive on mobile
-    Given the viewport is mobile width
-    Then the overlay is hidden
-    And content stacks vertically
-```
+- **GIVEN** the user is on the home page
+- **THEN** a full-viewport hero is displayed
+- **AND** the left side shows a subheading "UI/UX Designer & Developer"
+- **AND** a name headline is visible
+- **AND** two CTA buttons are present: "More About Me" and "Hire Me"
+
+#### Scenario: Golden overlay on right
+
+- **GIVEN** the viewport is desktop width
+- **THEN** the right half of the hero has a golden-yellow (#d5c455) overlay
+- **AND** a portrait image is visible within the overlay area
+
+#### Scenario: Hero responsive on mobile
+
+- **GIVEN** the viewport is mobile width
+- **THEN** the overlay is hidden
+- **AND** content stacks vertically
 
 ### About
-```gherkin
-Feature: About section
-  Scenario: Stat counters displayed
-    Given the user scrolls to the About section
-    Then four stat counters are visible
-    And they show: 5000 Happy Clients, 1200 Projects Done, 500 Cups of Coffee, 587 Working Hours
 
-  Scenario: About info list
-    Given the user scrolls to the About section
-    Then an info list is visible with labeled fields (Name, Birthday, Age, etc.)
-    And label text is in brand color (#d5c455)
-```
+Feature: About section
+
+#### Scenario: Stat counters displayed
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** four stat counters are visible
+- **AND** they show: 5000 Happy Clients, 1200 Projects Done, 500 Cups of Coffee, 587 Working Hours
+
+#### Scenario: About info list
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** an info list is visible with labeled fields (Name, Birthday, Age, etc.)
+- **AND** label text is in brand color (#d5c455)
 
 ### Services
-```gherkin
-Feature: Services section
-  Scenario: Service cards grid
-    Given the user scrolls to the Services section
-    Then 7 service cards are displayed in a responsive grid
-    And each card has an icon, title, and description
 
-  Scenario: Service card hover
-    Given a service card is in view
-    When the user hovers over a service card
-    Then the card background changes to golden-yellow (#d5c455)
-    And the text and icon color change to white
-```
+Feature: Services section
+
+#### Scenario: Service cards grid
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 7 service cards are displayed in a responsive grid
+- **AND** each card has an icon, title, and description
+
+#### Scenario: Service card hover
+
+- **GIVEN** a service card is in view
+- **WHEN** the user hovers over a service card
+- **THEN** the card background changes to golden-yellow (#d5c455)
+- **AND** the text and icon color change to white
 
 ### Experience
-```gherkin
+
 Feature: Experience section
-  Scenario: Resume timeline items
-    Given the user scrolls to the Experience section
-    Then 6 resume items are displayed
-    And each item has a title and description paragraph
-    And items animate in on scroll (fade-up)
-```
+
+#### Scenario: Resume timeline items
+
+- **GIVEN** the user scrolls to the Experience section
+- **THEN** 6 resume items are displayed
+- **AND** each item has a title and description paragraph
+- **AND** items animate in on scroll (fade-up)
 
 ### Works/Portfolio
-```gherkin
+
 Feature: Works gallery
-  Scenario: Portfolio grid
-    Given the user scrolls to the Works section
-    Then 9 project items are displayed in a grid
-    And each project has a background image
-    And hovering shows a project title overlay
-```
+
+#### Scenario: Portfolio grid
+
+- **GIVEN** the user scrolls to the Works section
+- **THEN** 9 project items are displayed in a grid
+- **AND** each project has a background image
+- **AND** hovering shows a project title overlay
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials
-  Scenario: Testimonial cards
-    Given the user scrolls to the Testimonials section
-    Then testimonial cards are displayed in a carousel
-    And each card has a user image, name, role, and quote
-```
+
+#### Scenario: Testimonial cards
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** testimonial cards are displayed in a carousel
+- **AND** each card has a user image, name, role, and quote
 
 ### Blog
-```gherkin
+
 Feature: Blog section
-  Scenario: Blog entries displayed
-    Given the user scrolls to the Blog section
-    Then blog entry cards are displayed in a responsive grid
-    And each card shows an image, meta info (author, date, comments), title, and excerpt
-```
+
+#### Scenario: Blog entries displayed
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** blog entry cards are displayed in a responsive grid
+- **AND** each card shows an image, meta info (author, date, comments), title, and excerpt
 
 ### Contact
-```gherkin
+
 Feature: Contact section
-  Scenario: Contact form and info
-    Given the user scrolls to the Contact section
-    Then a contact form is visible with name, email, subject, and message fields
-    And contact information (address, phone, email) is displayed alongside
-```
+
+#### Scenario: Contact form and info
+
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a contact form is visible with name, email, subject, and message fields
+- **AND** contact information (address, phone, email) is displayed alongside
 
 ### Footer
-```gherkin
+
 Feature: Footer
-  Scenario: Footer with Component Dock link
-    Given the user scrolls to the bottom
-    Then a footer is visible
-    And it contains a link to https://www.componentdock.com/
-```
+
+#### Scenario: Footer with Component Dock link
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a footer is visible
+- **AND** it contains a link to https://www.componentdock.com/
 
 ## Verification Checklist
 

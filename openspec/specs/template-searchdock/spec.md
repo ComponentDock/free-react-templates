@@ -42,74 +42,85 @@ Recreation of ColorLib **colorlib-search-8** — a single-page advanced search f
      - Row 2: 3 dropdown selects (SALE, TIME, TYPE)
      - Row 3: Results count ("108 results"), Reset button, Search button
 
-## Gherkin Requirements
+## Requirements
 
 ### Background
 
-- Given the user loads the SearchDock page
-- Then a full-page search interface is displayed
+#### Scenario: Background
+
+- **GIVEN** the user loads the SearchDock page
+- **THEN** a full-page search interface is displayed
 
 ### Basic Search
 
-Scenario: Display basic search input
-  - Given the page is loaded
-  - Then a search input with placeholder "Type Keywords" is visible
-  - And a magnifying glass icon is displayed inside the input (right side)
-  - And the input has a white background with rounded corners (3px)
+#### Scenario: Display basic search input
 
-Scenario: Submit basic search
-  - Given the user types "shoes" in the search input
-  - When the user presses Enter or clicks the search icon
-  - Then the search form is submitted
+- **GIVEN** the page is loaded
+- **THEN** a search input with placeholder "Type Keywords" is visible
+- **AND** a magnifying glass icon is displayed inside the input (right side)
+- **AND** the input has a white background with rounded corners (3px)
+
+#### Scenario: Submit basic search
+
+- **GIVEN** the user types "shoes" in the search input
+- **WHEN** the user presses Enter or clicks the search icon
+- **THEN** the search form is submitted
 
 ### Advanced Search Panel
 
-Scenario: Toggle advanced search panel
-  - Given the basic search is visible
-  - When the user clicks the "Advanced Search" label/toggle
-  - Then the advanced search panel expands below the basic search
-  - And the panel has a black background with padding (40px)
+#### Scenario: Toggle advanced search panel
 
-Scenario: Display filter dropdowns
-  - Given the advanced search panel is open
-  - Then 6 filter dropdowns are displayed in a 3x2 grid
-  - And the dropdowns are: ACCESSORIES, COLOR, SIZE, SALE, TIME, TYPE
-  - And each dropdown has a bottom border (2px solid #ccc)
-  - And dropdown text is white on transparent background
+- **GIVEN** the basic search is visible
+- **WHEN** the user clicks the "Advanced Search" label/toggle
+- **THEN** the advanced search panel expands below the basic search
+- **AND** the panel has a black background with padding (40px)
 
-Scenario: Select a filter value
-  - Given the advanced search panel is open
-  - When the user clicks the "COLOR" dropdown
-  - Then a list of options appears (GREEN, SUBJECT B, SUBJECT C)
-  - When the user selects "GREEN"
-  - Then the dropdown displays "GREEN" as the selected value
+#### Scenario: Display filter dropdowns
+
+- **GIVEN** the advanced search panel is open
+- **THEN** 6 filter dropdowns are displayed in a 3x2 grid
+- **AND** the dropdowns are: ACCESSORIES, COLOR, SIZE, SALE, TIME, TYPE
+- **AND** each dropdown has a bottom border (2px solid #ccc)
+- **AND** dropdown text is white on transparent background
+
+#### Scenario: Select a filter value
+
+- **GIVEN** the advanced search panel is open
+- **WHEN** the user clicks the "COLOR" dropdown
+- **THEN** a list of options appears (GREEN, SUBJECT B, SUBJECT C)
+- **WHEN** the user selects "GREEN"
+- **THEN** the dropdown displays "GREEN" as the selected value
 
 ### Results and Actions
 
-Scenario: Display results count
-  - Given the advanced search panel is open
-  - Then a results count is displayed showing "108 results"
-  - And the number "108" is styled in orange (#e45c27)
-  - And the word "results" is styled in white
+#### Scenario: Display results count
 
-Scenario: Reset filters
-  - Given the user has selected filter values
-  - When the user clicks the "Reset" button
-  - Then all filter dropdowns return to their default values
-  - And the search input is cleared
+- **GIVEN** the advanced search panel is open
+- **THEN** a results count is displayed showing "108 results"
+- **AND** the number "108" is styled in orange (#e45c27)
+- **AND** the word "results" is styled in white
 
-Scenario: Submit advanced search
-  - Given the user has selected filter values
-  - When the user clicks the "Search" button
-  - Then the search form is submitted with the selected filters
+#### Scenario: Reset filters
+
+- **GIVEN** the user has selected filter values
+- **WHEN** the user clicks the "Reset" button
+- **THEN** all filter dropdowns return to their default values
+- **AND** the search input is cleared
+
+#### Scenario: Submit advanced search
+
+- **GIVEN** the user has selected filter values
+- **WHEN** the user clicks the "Search" button
+- **THEN** the search form is submitted with the selected filters
 
 ### Responsive Behavior
 
-Scenario: Mobile layout
-  - Given the viewport width is less than 768px
-  - Then the dropdown grid stacks to single column
-  - And the search input padding adjusts for smaller screens
-  - And the search icon scales down
+#### Scenario: Mobile layout
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the dropdown grid stacks to single column
+- **AND** the search input padding adjusts for smaller screens
+- **AND** the search icon scales down
 
 ## Verification Checklist
 

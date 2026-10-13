@@ -56,77 +56,87 @@ amber/orange brand color (#fba83b), black buttons, and dark hero overlay.
 7. **Reservation** — Two-column layout: left side shows opening hours (Mon-Fri hours, Sat closed, Sun hours) with phone number; right side has reservation form (party size dropdown, date input, time input, name, phone, email, "Reserve Now" submit button).
 8. **Footer** — Dark bg, 4-column layout: About section with description + "About Us" button, Quick Links, Support links, About Us links, Connect With Us (social icons: Facebook, Twitter, Instagram, YouTube). Bottom copyright row.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Charhouse template behaviour
+
 Feature: Charhouse restaurant landing page
 
-  Background:
-    Given the user visits the Charhouse landing page
+Background:
+- **GIVEN** the user visits the Charhouse landing page
 
-  Scenario: Navbar displays correctly
-    Then the navbar is visible at the top of the page
-    And the logo text "Charhouse" is displayed
-    And navigation links "Home", "About", "Menu", "Gallery", "Contact" are present
-    And a "Reserve Now" call-to-action button is visible
+#### Scenario: Navbar displays correctly
 
-  Scenario: Hero section loads
-    Then a full-width hero image is displayed
-    And the heading "Welcome To Charhouse Food & Restaurant" is visible
-    And a "Play Video" outline button is visible
-    And a scroll-down indicator is shown at the bottom
+- **THEN** the navbar is visible at the top of the page
+- **AND** the logo text "Charhouse" is displayed
+- **AND** navigation links "Home", "About", "Menu", "Gallery", "Contact" are present
+- **AND** a "Reserve Now" call-to-action button is visible
 
-  Scenario: About section content
-    When the user scrolls to the about section
-    Then a food image is displayed on the left
-    And the heading "Welcome To Charhouse Food & Restaurant" is visible
-    And descriptive paragraphs about the restaurant are shown
-    And a "Read More" black outline button is present
+#### Scenario: Hero section loads
 
-  Scenario: Services section displays food categories
-    When the user scrolls to the services section
-    Then a heading "Our Services" is displayed
-    And 6 food category cards are shown in a 3×2 grid
-    And each card has an icon, title, and description
+- **THEN** a full-width hero image is displayed
+- **AND** the heading "Welcome To Charhouse Food & Restaurant" is visible
+- **AND** a "Play Video" outline button is visible
+- **AND** a scroll-down indicator is shown at the bottom
 
-  Scenario: Menu section tabbed interface
-    When the user scrolls to the menu section
-    Then the heading "Our Menu" is displayed
-    And three tabs are visible: "Breakfast", "Lunch", "Dinner"
-    And the Breakfast tab is active by default
-    And each tab shows menu items with image, name, description, and price
+#### Scenario: About section content
 
-  Scenario: Menu tab switching
-    When the user clicks the "Lunch" tab
-    Then the Lunch menu items are displayed
-    And the Breakfast items are hidden
-    When the user clicks the "Dinner" tab
-    Then the Dinner menu items are displayed
+- **WHEN** the user scrolls to the about section
+- **THEN** a food image is displayed on the left
+- **AND** the heading "Welcome To Charhouse Food & Restaurant" is visible
+- **AND** descriptive paragraphs about the restaurant are shown
+- **AND** a "Read More" black outline button is present
 
-  Scenario: Testimonials carousel
-    When the user scrolls to the testimonials section
-    Then customer testimonials are displayed
-    And each testimonial shows an avatar, quote, name, and position
+#### Scenario: Services section displays food categories
 
-  Scenario: Reservation form
-    When the user scrolls to the reservation section
-    Then opening hours are displayed for Monday-Friday and Sunday
-    And a reservation form is visible with fields for party size, date, time, name, phone, and email
-    And a "Reserve Now" submit button is present
+- **WHEN** the user scrolls to the services section
+- **THEN** a heading "Our Services" is displayed
+- **AND** 6 food category cards are shown in a 3×2 grid
+- **AND** each card has an icon, title, and description
 
-  Scenario: Footer content
-    When the user scrolls to the footer
-    Then "About Charhouse Restaurant" description is shown
-    And Quick Links, Support, About Us, and Connect With Us columns are present
-    And social media icons (Facebook, Twitter, Instagram, YouTube) are displayed
-    And a copyright notice with "Component Dock" link is shown
+#### Scenario: Menu section tabbed interface
 
-  Scenario: Responsive mobile layout
-    Given the user is on a mobile viewport
-    Then the navbar collapses to a hamburger menu
-    And sections stack vertically
-    And the reservation form fields stack vertically
-```
+- **WHEN** the user scrolls to the menu section
+- **THEN** the heading "Our Menu" is displayed
+- **AND** three tabs are visible: "Breakfast", "Lunch", "Dinner"
+- **AND** the Breakfast tab is active by default
+- **AND** each tab shows menu items with image, name, description, and price
+
+#### Scenario: Menu tab switching
+
+- **WHEN** the user clicks the "Lunch" tab
+- **THEN** the Lunch menu items are displayed
+- **AND** the Breakfast items are hidden
+- **WHEN** the user clicks the "Dinner" tab
+- **THEN** the Dinner menu items are displayed
+
+#### Scenario: Testimonials carousel
+
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** customer testimonials are displayed
+- **AND** each testimonial shows an avatar, quote, name, and position
+
+#### Scenario: Reservation form
+
+- **WHEN** the user scrolls to the reservation section
+- **THEN** opening hours are displayed for Monday-Friday and Sunday
+- **AND** a reservation form is visible with fields for party size, date, time, name, phone, and email
+- **AND** a "Reserve Now" submit button is present
+
+#### Scenario: Footer content
+
+- **WHEN** the user scrolls to the footer
+- **THEN** "About Charhouse Restaurant" description is shown
+- **AND** Quick Links, Support, About Us, and Connect With Us columns are present
+- **AND** social media icons (Facebook, Twitter, Instagram, YouTube) are displayed
+- **AND** a copyright notice with "Component Dock" link is shown
+
+#### Scenario: Responsive mobile layout
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the reservation form fields stack vertically
 
 ## Verification checklist
 

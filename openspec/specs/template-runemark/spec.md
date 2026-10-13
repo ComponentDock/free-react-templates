@@ -80,74 +80,84 @@ Expiry Year.
 - Back button (bottom-left, plain text, no circle)
 - Disabled/hidden back on step 1
 
-## Gherkin Scenarios
+## Requirements
 
-```gherkin
+### Feature: Runemark template behaviour
+
 Feature: Multi-step Registration Wizard
 
-  Background:
-    Given the user opens the Runemark wizard page
-    And the full-page background image is displayed
+Background:
+- **GIVEN** the user opens the Runemark wizard page
+- **AND** the full-page background image is displayed
 
-  Scenario: Step 1 renders correctly
-    Then the card is centered on the page with white background
-    And the progress bar shows 3 step indicators
-    And step 1 icon is highlighted in green
-    And "Step 1" and "Account Information" text are visible
-    And the username, email, password, confirm-password fields are shown
-    And a green circular next button is visible
+#### Scenario: Step 1 renders correctly
 
-  Scenario: Required field validation on step 1
-    Given the user is on step 1
-    When the user clicks next without filling any fields
-    Then the required field validation errors are shown
+- **THEN** the card is centered on the page with white background
+- **AND** the progress bar shows 3 step indicators
+- **AND** step 1 icon is highlighted in green
+- **AND** "Step 1" and "Account Information" text are visible
+- **AND** the username, email, password, confirm-password fields are shown
+- **AND** a green circular next button is visible
 
-  Scenario: Advance to step 2
-    Given the user fills in valid username, email, password, confirm password
-    When the user clicks the next button
-    Then step 2 "Payment Information" is displayed
-    And the progress bar updates with step 2 active
+#### Scenario: Required field validation on step 1
 
-  Scenario: Step 2 renders correctly
-    Given the user is on step 2
-    Then card type, card number, CVC, expiry month, expiry year fields are shown
-    And a green circular next/submit button is visible
-    And a back button is visible
+- **GIVEN** the user is on step 1
+- **WHEN** the user clicks next without filling any fields
+- **THEN** the required field validation errors are shown
 
-  Scenario: Navigate back from step 2
-    Given the user is on step 2
-    When the user clicks the back button
-    Then step 1 "Account Information" is displayed
+#### Scenario: Advance to step 2
 
-  Scenario: Advance to step 3
-    Given the user is on step 2 with valid data
-    When the user clicks the next button
-    Then step 3 "Confirm Your Details" is displayed
-    And a summary table shows all entered values
+- **GIVEN** the user fills in valid username, email, password, confirm password
+- **WHEN** the user clicks the next button
+- **THEN** step 2 "Payment Information" is displayed
+- **AND** the progress bar updates with step 2 active
 
-  Scenario: Confirm details display
-    Given the user is on step 3
-    Then the table shows username, email, card type, card number, CVC, expiry
+#### Scenario: Step 2 renders correctly
 
-  Scenario: Step indicator visual states
-    Given the user progresses through steps
-    Then completed steps show green icons
-    And the current step shows a green icon with shadow
-    And future steps show gray icons
-    And connecting progress lines are visible between icons
+- **GIVEN** the user is on step 2
+- **THEN** card type, card number, CVC, expiry month, expiry year fields are shown
+- **AND** a green circular next/submit button is visible
+- **AND** a back button is visible
 
-  Scenario: Responsive layout
-    Given the browser width is below 575px
-    Then the form fields stack vertically
-    And the card fills the viewport width
-    And step indicators resize appropriately
+#### Scenario: Navigate back from step 2
 
-  Scenario: Form input styling
-    Then all inputs have white text on blue background
-    And inputs have 5px border radius
-    And placeholders appear in semi-transparent white
-    And the card has a rounded shadow
-```
+- **GIVEN** the user is on step 2
+- **WHEN** the user clicks the back button
+- **THEN** step 1 "Account Information" is displayed
+
+#### Scenario: Advance to step 3
+
+- **GIVEN** the user is on step 2 with valid data
+- **WHEN** the user clicks the next button
+- **THEN** step 3 "Confirm Your Details" is displayed
+- **AND** a summary table shows all entered values
+
+#### Scenario: Confirm details display
+
+- **GIVEN** the user is on step 3
+- **THEN** the table shows username, email, card type, card number, CVC, expiry
+
+#### Scenario: Step indicator visual states
+
+- **GIVEN** the user progresses through steps
+- **THEN** completed steps show green icons
+- **AND** the current step shows a green icon with shadow
+- **AND** future steps show gray icons
+- **AND** connecting progress lines are visible between icons
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the browser width is below 575px
+- **THEN** the form fields stack vertically
+- **AND** the card fills the viewport width
+- **AND** step indicators resize appropriately
+
+#### Scenario: Form input styling
+
+- **THEN** all inputs have white text on blue background
+- **AND** inputs have 5px border radius
+- **AND** placeholders appear in semi-transparent white
+- **AND** the card has a rounded shadow
 
 ## Verification Checklist
 

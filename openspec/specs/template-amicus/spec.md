@@ -79,92 +79,104 @@ lucide-react).
 | Hero overlay | semi-transparent dark | Image overlay for text legibility |
 | Testimonial bg | background image with dark overlay | Parallax-style background |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Amicus — Law Firm Website Template
 
 #### Scenario: Top bar renders with contact info and social links
-  Given the page is loaded
-  Then a top bar displays phone number "+00 1234 567" and email "youremail@email.com"
-  And social media icons are displayed on the right (Facebook, Twitter, Instagram, Dribbble)
+
+- **GIVEN** the page is loaded
+- **THEN** a top bar displays phone number "+00 1234 567" and email "youremail@email.com"
+- **AND** social media icons are displayed on the right (Facebook, Twitter, Instagram, Dribbble)
 
 #### Scenario: Navbar renders with correct logo and navigation links
-  Given the page is loaded
-  Then the navbar displays "Amicus" as the logo text
-  And the navbar contains links: "Home", "About", "Practice Areas", "Cases", "Attorneys", "Blog", "Contact"
-  And the navbar has a mobile hamburger menu toggle
-  And the navbar starts dark (#1d2227) and darkens on scroll
+
+- **GIVEN** the page is loaded
+- **THEN** the navbar displays "Amicus" as the logo text
+- **AND** the navbar contains links: "Home", "About", "Practice Areas", "Cases", "Attorneys", "Blog", "Contact"
+- **AND** the navbar has a mobile hamburger menu toggle
+- **AND** the navbar starts dark (#1d2227) and darkens on scroll
 
 #### Scenario: Hero section displays with background image and content
-  Given the page is loaded
-  Then the hero section shows a full-width background image with dark overlay
-  And the hero contains heading "Don't Feel Helpless We Fight for Justice"
-  And the hero contains a subtitle paragraph
-  And two buttons are displayed: "Contact us" (primary blue) and "Read more" (white outline)
-  And a video play button icon is displayed on the right side
+
+- **GIVEN** the page is loaded
+- **THEN** the hero section shows a full-width background image with dark overlay
+- **AND** the hero contains heading "Don't Feel Helpless We Fight for Justice"
+- **AND** the hero contains a subtitle paragraph
+- **AND** two buttons are displayed: "Contact us" (primary blue) and "Read more" (white outline)
+- **AND** a video play button icon is displayed on the right side
 
 #### Scenario: Intro boxes section displays 4 dark info boxes
-  Given the page is loaded
-  Then 4 dark intro boxes are displayed in a full-width row
-  And each box has an icon, title ("Expert Attorneys", "Case Dismissed", "Court Performance", "Court Performance"), and description
-  And the boxes have progressively darker backgrounds (#1d2227, #161a1e, #121518, #0e1013)
+
+- **GIVEN** the page is loaded
+- **THEN** 4 dark intro boxes are displayed in a full-width row
+- **AND** each box has an icon, title ("Expert Attorneys", "Case Dismissed", "Court Performance", "Court Performance"), and description
+- **AND** the boxes have progressively darker backgrounds (#1d2227, #161a1e, #121518, #0e1013)
 
 #### Scenario: Counter stats section displays 4 statistics
-  Given the page is loaded
-  Then 4 counter items are displayed in a row
-  And each counter shows an icon, a number (3000, 1000, 2000, 10540), and a label ("Trusted Clients", "Honor's & Awards", "Expert Lawyers", "Successful Cases")
-  And the numbers animate counting up on scroll
+
+- **GIVEN** the page is loaded
+- **THEN** 4 counter items are displayed in a row
+- **AND** each counter shows an icon, a number (3000, 1000, 2000, 10540), and a label ("Trusted Clients", "Honor's & Awards", "Expert Lawyers", "Successful Cases")
+- **AND** the numbers animate counting up on scroll
 
 #### Scenario: About section displays with image and services
-  Given the page is loaded
-  Then a split section shows a background image on the left
-  And a light background panel on the right with "Welcome to Amicus" subheading
-  And "Why to Put Trust Your Trust In Amicus" heading
-  And 4 service items: "Expert Attorneys", "Great Discount", "Legal Advisory", "Quick Charges"
-  And each service has an icon and description
+
+- **GIVEN** the page is loaded
+- **THEN** a split section shows a background image on the left
+- **AND** a light background panel on the right with "Welcome to Amicus" subheading
+- **AND** "Why to Put Trust Your Trust In Amicus" heading
+- **AND** 4 service items: "Expert Attorneys", "Great Discount", "Legal Advisory", "Quick Charges"
+- **AND** each service has an icon and description
 
 #### Scenario: Practice Areas section displays 6 area cards
-  Given the page is loaded
-  Then the Practice Areas section shows "Practice Area" subheading and "What We Cover" heading
-  And 6 practice area cards are displayed in a 3-column grid
-  And each card has a rotating icon animation on hover, a title, and description
-  And the practice areas are: "Business Law", "Family Law", "Criminal Law", "Real Estate Law", "Personal Injury", "Judicial Law"
+
+- **GIVEN** the page is loaded
+- **THEN** the Practice Areas section shows "Practice Area" subheading and "What We Cover" heading
+- **AND** 6 practice area cards are displayed in a 3-column grid
+- **AND** each card has a rotating icon animation on hover, a title, and description
+- **AND** the practice areas are: "Business Law", "Family Law", "Criminal Law", "Real Estate Law", "Personal Injury", "Judicial Law"
 
 #### Scenario: Case Studies section displays 8 case cards
-  Given the page is loaded
-  Then the Cases section shows "Cases" subheading and "Recent Case Studies" heading
-  And 8 case study cards are displayed in a mixed-width grid (3-6-3 columns per row)
-  And each card has a background image with title overlay ("Business Law", "Criminal Offense", "Dispute Resolution", etc.)
+
+- **GIVEN** the page is loaded
+- **THEN** the Cases section shows "Cases" subheading and "Recent Case Studies" heading
+- **AND** 8 case study cards are displayed in a mixed-width grid (3-6-3 columns per row)
+- **AND** each card has a background image with title overlay ("Business Law", "Criminal Offense", "Dispute Resolution", etc.)
 
 #### Scenario: Testimonials section displays with background image
-  Given the page is loaded
-  Then the Testimonial section has a background image with dark overlay
-  And the heading "Happy Clients" is displayed in white
-  And a carousel of testimonial cards is displayed
-  And each testimonial has a quote icon, quote text, customer photo, name, and position
+
+- **GIVEN** the page is loaded
+- **THEN** the Testimonial section has a background image with dark overlay
+- **AND** the heading "Happy Clients" is displayed in white
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each testimonial has a quote icon, quote text, customer photo, name, and position
 
 #### Scenario: Appointment/CTA section displays with form and features
-  Given the page is loaded
-  Then the appointment section has a background image with dark overlay
-  And "We Have Great Results" heading is displayed on the left
-  And 3 feature items are listed: "Award Winning", "60 Years of Experience", "Best Attorneys team"
-  And a "Free Case Consultation" form is displayed on the right
-  And the form has fields: Your Name, Email, Practice Areas (dropdown), Message
-  And a "Send message" submit button is displayed
+
+- **GIVEN** the page is loaded
+- **THEN** the appointment section has a background image with dark overlay
+- **AND** "We Have Great Results" heading is displayed on the left
+- **AND** 3 feature items are listed: "Award Winning", "60 Years of Experience", "Best Attorneys team"
+- **AND** a "Free Case Consultation" form is displayed on the right
+- **AND** the form has fields: Your Name, Email, Practice Areas (dropdown), Message
+- **AND** a "Send message" submit button is displayed
 
 #### Scenario: Blog section displays 3 blog cards
-  Given the page is loaded
-  Then the Blog section shows "Blog" subheading and "Recent Blog" heading
-  And 3 blog cards are displayed in a 3-column grid
-  And each card has a background image with date overlay (day/month/year), title, and description
+
+- **GIVEN** the page is loaded
+- **THEN** the Blog section shows "Blog" subheading and "Recent Blog" heading
+- **AND** 3 blog cards are displayed in a 3-column grid
+- **AND** each card has a background image with date overlay (day/month/year), title, and description
 
 #### Scenario: Footer displays with correct structure
-  Given the page is loaded
-  Then the footer has a dark background (#121518)
-  And the footer contains 5 widget columns: Logo + social links, Explore links, Legal links, Company links, Contact info
-  And social media icons are displayed (Twitter, Facebook, Instagram)
-  And contact info shows address, phone, and email with icons
-  And a dark bottom bar (#000000) has a copyright line with a "Component Dock" link
+
+- **GIVEN** the page is loaded
+- **THEN** the footer has a dark background (#121518)
+- **AND** the footer contains 5 widget columns: Logo + social links, Explore links, Legal links, Company links, Contact info
+- **AND** social media icons are displayed (Twitter, Facebook, Instagram)
+- **AND** contact info shows address, phone, and email with icons
+- **AND** a dark bottom bar (#000000) has a copyright line with a "Component Dock" link
 
 ## Verification checklist
 

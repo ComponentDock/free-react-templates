@@ -42,86 +42,79 @@ Elegant, editorial photography portfolio with a dark, sophisticated aesthetic. P
 8. **Instagram Feed** — Full-width carousel of 5-6 Instagram photos with hover overlay showing Instagram icon
 9. **Footer** — Centered: logo, nav links (same as header), social icons (Twitter, Facebook, Pinterest), copyright with Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Hero slider displays with navigation
-```
-Given I visit the FilmVault homepage
-Then I see a full-width hero slider
-And the headline "Photography" is displayed
-And a handwritten signature image appears below the headline
-And a bottom caption shows a slide number, title, and description
-And dot navigation with thumbnail images is visible
-And the slider transitions between 3 slides
-```
+### Feature: FilmVault template behaviour
 
-### Scenario: Gallery shows asymmetric image grid
-```
-Given I scroll to the Gallery section
-Then I see a heading "With my camera, I capture daily life"
-And 4 gallery items are displayed in a 2-column asymmetric layout
-And each item has a background image with a caption below
-And hovering over an item shows a dark overlay with a + icon
-And a "More Portfolio" button is centered below
-```
+#### Scenario: Hero slider displays with navigation
 
-### Scenario: About Me section displays with dark overlay
-```
-Given I scroll to the About Me section
-Then I see a full-width section with a dark background image
-And the heading reads "I'm Ready to Exceed Expectations"
-And a description paragraph is displayed
-And an "About Me" border button is present
-```
+- **GIVEN** I visit the FilmVault homepage
+- **THEN** I see a full-width hero slider
+- **AND** the headline "Photography" is displayed
+- **AND** a handwritten signature image appears below the headline
+- **AND** a bottom caption shows a slide number, title, and description
+- **AND** dot navigation with thumbnail images is visible
+- **AND** the slider transitions between 3 slides
 
-### Scenario: Services section shows 4 categories
-```
-Given I scroll to the Services section
-Then I see the heading "Life is about Creating Experiences"
-And 4 service cards are displayed in a single row
-And each card has an icon and a title
-```
+#### Scenario: Gallery shows asymmetric image grid
 
-### Scenario: Testimonials carousel works
-```
-Given I scroll to the Testimonials section
-Then I see a dark textured background
-And 2 testimonial slides are available
-And each slide has a quote mark icon, quote text, founder image, name, and role
-And dot navigation allows switching between testimonials
-```
+- **GIVEN** I scroll to the Gallery section
+- **THEN** I see a heading "With my camera, I capture daily life"
+- **AND** 4 gallery items are displayed in a 2-column asymmetric layout
+- **AND** each item has a background image with a caption below
+- **AND** hovering over an item shows a dark overlay with a + icon
+- **AND** a "More Portfolio" button is centered below
 
-### Scenario: Pricing section shows 3 plans
-```
-Given I scroll to the Pricing section
-Then I see the heading "Choose a plan"
-And 3 pricing cards are displayed: Silver ($50), Gold ($100), Platinum ($50)
-And the Gold card has a "Most Popular" badge
-And each card has a camera icon, plan name, price, feature list, and "Get Started" button
-```
+#### Scenario: About Me section displays with dark overlay
 
-### Scenario: Instagram feed shows photo carousel
-```
-Given I scroll to the Instagram section
-Then I see a horizontal carousel of 5-6 photos
-And hovering over a photo shows an Instagram icon overlay
-```
+- **GIVEN** I scroll to the About Me section
+- **THEN** I see a full-width section with a dark background image
+- **AND** the heading reads "I'm Ready to Exceed Expectations"
+- **AND** a description paragraph is displayed
+- **AND** an "About Me" border button is present
 
-### Scenario: Footer contains navigation and social links
-```
-Given I scroll to the Footer
-Then I see a centered logo
-And navigation links (Home, About, Portfolio, Pricing, Blog, Contact) are displayed
-And social icons (Twitter, Facebook, Pinterest) are present
-And a copyright line with "Made with ❤️ by Component Dock" is shown
-```
+#### Scenario: Services section shows 4 categories
 
-### Scenario: Navbar is sticky on scroll
-```
-Given I scroll down the page
-Then the navbar remains fixed at the top of the viewport
-And navigation links remain clickable
-```
+- **GIVEN** I scroll to the Services section
+- **THEN** I see the heading "Life is about Creating Experiences"
+- **AND** 4 service cards are displayed in a single row
+- **AND** each card has an icon and a title
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** I scroll to the Testimonials section
+- **THEN** I see a dark textured background
+- **AND** 2 testimonial slides are available
+- **AND** each slide has a quote mark icon, quote text, founder image, name, and role
+- **AND** dot navigation allows switching between testimonials
+
+#### Scenario: Pricing section shows 3 plans
+
+- **GIVEN** I scroll to the Pricing section
+- **THEN** I see the heading "Choose a plan"
+- **AND** 3 pricing cards are displayed: Silver ($50), Gold ($100), Platinum ($50)
+- **AND** the Gold card has a "Most Popular" badge
+- **AND** each card has a camera icon, plan name, price, feature list, and "Get Started" button
+
+#### Scenario: Instagram feed shows photo carousel
+
+- **GIVEN** I scroll to the Instagram section
+- **THEN** I see a horizontal carousel of 5-6 photos
+- **AND** hovering over a photo shows an Instagram icon overlay
+
+#### Scenario: Footer contains navigation and social links
+
+- **GIVEN** I scroll to the Footer
+- **THEN** I see a centered logo
+- **AND** navigation links (Home, About, Portfolio, Pricing, Blog, Contact) are displayed
+- **AND** social icons (Twitter, Facebook, Pinterest) are present
+- **AND** a copyright line with "Made with ❤️ by Component Dock" is shown
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** I scroll down the page
+- **THEN** the navbar remains fixed at the top of the viewport
+- **AND** navigation links remain clickable
 
 ## Verification Checklist
 

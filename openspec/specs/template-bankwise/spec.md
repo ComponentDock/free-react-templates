@@ -45,122 +45,110 @@ Extracted from `https://preview.colorlib.com/theme/banker/css/style.css`.
 13. **Contact** — "Contact Us" heading, split: left = contact info (address, phone, email, opening hours) + right = contact form (name, email, subject, message, submit)
 14. **Footer** — dark bg (#343a40), 4-column: logo/about, Quick Links, Follow Us (social icons), Subscribe Newsletter (email input)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar displays on page load
-```
-Given I visit the Bankwise homepage
-Then I see a sticky navbar with the logo "Bankwise" on the left
-And I see navigation links: Home, About, Services, Pricing, Blog, Contact
-And on mobile I see a hamburger menu button
-```
+### Feature: Bankwise template behaviour
 
-### Scenario: Hero section shows rotating headlines
-```
-Given I visit the Bankwise homepage
-Then I see a full-width hero section with a dark overlay background
-And I see a headline "Banking Solutions" centered
-And there is a call-to-action button below the headline
-```
+#### Scenario: Navbar displays on page load
 
-### Scenario: Feature icons section displays three items
-```
-Given I scroll past the hero section
-Then I see three feature columns side by side
-And each column has a circular icon, a title, and a description
-And the titles are "Money Savings", "Online Shopping", and "Credit / Debit Cards"
-```
+- **GIVEN** I visit the Bankwise homepage
+- **THEN** I see a sticky navbar with the logo "Bankwise" on the left
+- **AND** I see navigation links: Home, About, Services, Pricing, Blog, Contact
+- **AND** on mobile I see a hamburger menu button
 
-### Scenario: About section shows split layout
-```
-Given I scroll to the About section
-Then I see a heading "We Solve Your Financial Problem"
-And there is descriptive text below the heading
-And the section uses a split layout (text + form/image)
-```
+#### Scenario: Hero section shows rotating headlines
 
-### Scenario: Team section shows member cards
-```
-Given I scroll to the Meet Team section
-Then I see a heading "Meet Team"
-And I see team member cards with photo, name, role, and social icons
-And the cards are displayed in a responsive grid
-```
+- **GIVEN** I visit the Bankwise homepage
+- **THEN** I see a full-width hero section with a dark overlay background
+- **AND** I see a headline "Banking Solutions" centered
+- **AND** there is a call-to-action button below the headline
 
-### Scenario: Gallery section is filterable
-```
-Given I scroll to the Gallery section
-Then I see filter buttons: All, Branding, Design, Web
-And I see a grid of gallery items
-When I click a filter button
-Then only items matching that category are shown
-```
+#### Scenario: Feature icons section displays three items
 
-### Scenario: How It Works section shows three steps
-```
-Given I scroll to the How It Works section
-Then I see three numbered steps
-And step 01 is "Online Applications"
-And step 02 is "Get an approval"
-And step 03 is "Card delivery"
-```
+- **GIVEN** I scroll past the hero section
+- **THEN** I see three feature columns side by side
+- **AND** each column has a circular icon, a title, and a description
+- **AND** the titles are "Money Savings", "Online Shopping", and "Credit / Debit Cards"
 
-### Scenario: Services section shows six service cards
-```
-Given I scroll to the Our Services section
-Then I see six service cards in a 3-column grid
-And each card has an icon, a title, and a description
-And the services are: Business Consulting, Credit Card, Income Monitoring,
-    Insurance Consulting, Financial Investment, Financial Management
-```
+#### Scenario: About section shows split layout
 
-### Scenario: Testimonials section shows customer quotes
-```
-Given I scroll to the Happy Customers section
-Then I see a carousel of testimonials
-And each testimonial has a quote, author name, and role
-And there are navigation arrows to browse testimonials
-```
+- **GIVEN** I scroll to the About section
+- **THEN** I see a heading "We Solve Your Financial Problem"
+- **AND** there is descriptive text below the heading
+- **AND** the section uses a split layout (text + form/image)
 
-### Scenario: Pricing section shows three tiers
-```
-Given I scroll to the Pricing section
-Then I see three pricing cards: Basic, Premium, and Professional
-And the Premium card is visually highlighted as popular
-And each card shows a price, feature list, and a CTA button
-```
+#### Scenario: Team section shows member cards
 
-### Scenario: FAQ section shows accordion
-```
-Given I scroll to the FAQ section
-Then I see a heading "Frequently Ask Questions"
-And I see expandable FAQ items
-When I click an FAQ question
-Then the answer toggles open/closed
-```
+- **GIVEN** I scroll to the Meet Team section
+- **THEN** I see a heading "Meet Team"
+- **AND** I see team member cards with photo, name, role, and social icons
+- **AND** the cards are displayed in a responsive grid
 
-### Scenario: Blog section shows three posts
-```
-Given I scroll to the Blog section
-Then I see three blog post cards in a row
-And each card has an image, date, title, and excerpt
-```
+#### Scenario: Gallery section is filterable
 
-### Scenario: Contact section shows form and info
-```
-Given I scroll to the Contact Us section
-Then I see a contact form with fields: name, email, subject, message
-And I see contact information: address, phone, email, opening hours
-And the form has a submit button
-```
+- **GIVEN** I scroll to the Gallery section
+- **THEN** I see filter buttons: All, Branding, Design, Web
+- **AND** I see a grid of gallery items
+- **WHEN** I click a filter button
+- **THEN** only items matching that category are shown
 
-### Scenario: Footer displays correctly
-```
-Given I scroll to the bottom of the page
-Then I see a dark footer with four columns
-And the columns are: About, Quick Links, Follow Us, Subscribe Newsletter
-And the footer contains a "Made with Component Dock" link to https://www.componentdock.com/
-```
+#### Scenario: How It Works section shows three steps
+
+- **GIVEN** I scroll to the How It Works section
+- **THEN** I see three numbered steps
+- **AND** step 01 is "Online Applications"
+- **AND** step 02 is "Get an approval"
+- **AND** step 03 is "Card delivery"
+
+#### Scenario: Services section shows six service cards
+
+- **GIVEN** I scroll to the Our Services section
+- **THEN** I see six service cards in a 3-column grid
+- **AND** each card has an icon, a title, and a description
+- **AND** the services are: Business Consulting, Credit Card, Income Monitoring,
+Insurance Consulting, Financial Investment, Financial Management
+
+#### Scenario: Testimonials section shows customer quotes
+
+- **GIVEN** I scroll to the Happy Customers section
+- **THEN** I see a carousel of testimonials
+- **AND** each testimonial has a quote, author name, and role
+- **AND** there are navigation arrows to browse testimonials
+
+#### Scenario: Pricing section shows three tiers
+
+- **GIVEN** I scroll to the Pricing section
+- **THEN** I see three pricing cards: Basic, Premium, and Professional
+- **AND** the Premium card is visually highlighted as popular
+- **AND** each card shows a price, feature list, and a CTA button
+
+#### Scenario: FAQ section shows accordion
+
+- **GIVEN** I scroll to the FAQ section
+- **THEN** I see a heading "Frequently Ask Questions"
+- **AND** I see expandable FAQ items
+- **WHEN** I click an FAQ question
+- **THEN** the answer toggles open/closed
+
+#### Scenario: Blog section shows three posts
+
+- **GIVEN** I scroll to the Blog section
+- **THEN** I see three blog post cards in a row
+- **AND** each card has an image, date, title, and excerpt
+
+#### Scenario: Contact section shows form and info
+
+- **GIVEN** I scroll to the Contact Us section
+- **THEN** I see a contact form with fields: name, email, subject, message
+- **AND** I see contact information: address, phone, email, opening hours
+- **AND** the form has a submit button
+
+#### Scenario: Footer displays correctly
+
+- **GIVEN** I scroll to the bottom of the page
+- **THEN** I see a dark footer with four columns
+- **AND** the columns are: About, Quick Links, Follow Us, Subscribe Newsletter
+- **AND** the footer contains a "Made with Component Dock" link to https://www.componentdock.com/
 
 ## Verification checklist
 

@@ -61,51 +61,60 @@ Extracted from the live preview HTML/CSS and screenshot analysis.
 - Padding-left/right: 0
 - Focus state: border-color changes to #000, no shadow
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page loads with contact form
-- **Given** a user visits the reachpoint page
-- **Then** the page title reads "Reachpoint"
-- **And** a heading "Fill the form. It's easy." is visible
-- **And** the contact form is displayed with first name, last name, email, and message fields
-- **And** a "Send Message" button is visible
+### Feature: Reachpoint template behaviour
 
-### Scenario: Form displays two-column layout
-- **Given** a user visits the reachpoint page on a desktop viewport
-- **Then** the form occupies the left column
-- **And** a sidebar with heading "Let's talk about everything." occupies the right column
-- **And** a vertical border separates the form from the sidebar
-- **And** the "Read more" link is visible in the sidebar
+#### Scenario: Page loads with contact form
 
-### Scenario: Form fields have correct styling
-- **Given** a user views the contact form
-- **Then** first name and last name fields appear side by side
-- **And** the email field spans full width below
-- **And** the message textarea spans full width below email
-- **And** all inputs show only a bottom border (no side/top borders)
-- **And** all inputs have placeholder text
+- **GIVEN** a user visits the reachpoint page
+- **THEN** the page title reads "Reachpoint"
+- **AND** a heading "Fill the form. It's easy." is visible
+- **AND** the contact form is displayed with first name, last name, email, and message fields
+- **AND** a "Send Message" button is visible
 
-### Scenario: Form validates required fields
-- **Given** a user clicks "Send Message" without filling any fields
-- **Then** the form should not submit
-- **And** validation feedback is shown for required fields
+#### Scenario: Form displays two-column layout
 
-### Scenario: Form submits successfully
-- **Given** a user fills in first name, last name, email, and message
-- **And** clicks "Send Message"
-- **Then** a success message "Your message was sent, thank you!" appears
-- **And** the success message is displayed in green (#55A44E)
+- **GIVEN** a user visits the reachpoint page on a desktop viewport
+- **THEN** the form occupies the left column
+- **AND** a sidebar with heading "Let's talk about everything." occupies the right column
+- **AND** a vertical border separates the form from the sidebar
+- **AND** the "Read more" link is visible in the sidebar
 
-### Scenario: Responsive layout
-- **Given** a user visits the reachpoint page on a mobile viewport (< 992px)
-- **Then** the form and sidebar stack vertically
-- **And** the right border on the form is removed
-- **And** form fields remain full width
+#### Scenario: Form fields have correct styling
 
-### Scenario: Footer links to Component Dock
-- **Given** a user scrolls to the bottom of the page
-- **Then** a footer link to "https://www.componentdock.com/" is visible
-- **And** the link text reads "Component Dock"
+- **GIVEN** a user views the contact form
+- **THEN** first name and last name fields appear side by side
+- **AND** the email field spans full width below
+- **AND** the message textarea spans full width below email
+- **AND** all inputs show only a bottom border (no side/top borders)
+- **AND** all inputs have placeholder text
+
+#### Scenario: Form validates required fields
+
+- **GIVEN** a user clicks "Send Message" without filling any fields
+- **THEN** the form should not submit
+- **AND** validation feedback is shown for required fields
+
+#### Scenario: Form submits successfully
+
+- **GIVEN** a user fills in first name, last name, email, and message
+- **AND** clicks "Send Message"
+- **THEN** a success message "Your message was sent, thank you!" appears
+- **AND** the success message is displayed in green (#55A44E)
+
+#### Scenario: Responsive layout
+
+- **GIVEN** a user visits the reachpoint page on a mobile viewport (< 992px)
+- **THEN** the form and sidebar stack vertically
+- **AND** the right border on the form is removed
+- **AND** form fields remain full width
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** a user scrolls to the bottom of the page
+- **THEN** a footer link to "https://www.componentdock.com/" is visible
+- **AND** the link text reads "Component Dock"
 
 ## Verification Checklist
 

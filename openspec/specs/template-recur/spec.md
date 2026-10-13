@@ -21,50 +21,62 @@
   6. **Media / Features Split Section:** Image and descriptive text blocks illustrating seamless workflow.
   7. **Footer:** Comprehensive footer with widget columns (Contact, Sources, Links) and Copyright notice linking `https://www.componentdock.com/`.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Navigation
 
+#### Scenario: Navigation
+
 - **Scenario:** User views header and uses navigation links
-  - **Given** the Recur landing page is loaded
-  - **When** the user looks at the top navigation bar
-  - **Then** they see the "Recur" brand logo and navigation items (Home, Services, Pricing, About, Contact Us)
-  - **And** clicking a navigation item scrolls or navigates to the respective section
+- **GIVEN** the Recur landing page is loaded
+- **WHEN** the user looks at the top navigation bar
+- **THEN** they see the "Recur" brand logo and navigation items (Home, Services, Pricing, About, Contact Us)
+- **AND** clicking a navigation item scrolls or navigates to the respective section
 
 ### Feature: Hero Section
 
+#### Scenario: Hero Section
+
 - **Scenario:** User views the hero banner
-  - **Given** the user lands on the homepage
-  - **When** the hero section renders
-  - **Then** it displays the heading "We are pretty Awesome", subtitle, and the "Our services" primary button
+- **GIVEN** the user lands on the homepage
+- **WHEN** the hero section renders
+- **THEN** it displays the heading "We are pretty Awesome", subtitle, and the "Our services" primary button
 
 ### Feature: About Section
 
+#### Scenario: About Section
+
 - **Scenario:** User inspects the about section
-  - **Given** the user scrolls to the about section
-  - **When** the section is in view
-  - **Then** it presents the intro box with a vertical accent line and business growth copy alongside imagery
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section is in view
+- **THEN** it presents the intro box with a vertical accent line and business growth copy alongside imagery
 
 ### Feature: Services Section
 
+#### Scenario: Services Section
+
 - **Scenario:** User browses services
-  - **Given** the user scrolls to the services section
-  - **When** the services grid/slider loads
-  - **Then** it displays service cards (Web Design, Graphic Design, Web/Mobile Application, Brand Identity) with clear descriptions
+- **GIVEN** the user scrolls to the services section
+- **WHEN** the services grid/slider loads
+- **THEN** it displays service cards (Web Design, Graphic Design, Web/Mobile Application, Brand Identity) with clear descriptions
 
 ### Feature: Stats Section
 
+#### Scenario: Stats Section
+
 - **Scenario:** User views statistics counters
-  - **Given** the user scrolls past the services
-  - **When** the stats section renders
-  - **Then** four statistics counter blocks with icons are visible
+- **GIVEN** the user scrolls past the services
+- **WHEN** the stats section renders
+- **THEN** four statistics counter blocks with icons are visible
 
 ### Feature: Footer
 
+#### Scenario: Footer
+
 - **Scenario:** User checks footerattribution
-  - **Given** the user scrolls to the bottom of the page
-  - **When** the footer renders
-  - **Then** it contains widget columns and a copyright notice with a link to `https://www.componentdock.com/`
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it contains widget columns and a copyright notice with a link to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

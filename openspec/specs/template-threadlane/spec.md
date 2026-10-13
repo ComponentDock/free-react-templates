@@ -72,61 +72,82 @@ submit button; all social icons via lucide-react.
 ## Requirements
 
 ### Header
-- Given the page is loaded
-  When the user views the header
-  Then they see a top bar with phone number, Login/Register, My Account, and Contact Us
-  And a navbar with logo, Home, Shop, Blog, Pages, Contact Us navigation links
-  And the header overlays the hero section (position absolute)
+
+#### Scenario: Header
+
+- **GIVEN** the page is loaded
+- **WHEN** the user views the header
+- **THEN** they see a top bar with phone number, Login/Register, My Account, and Contact Us
+- **AND** a navbar with logo, Home, Shop, Blog, Pages, Contact Us navigation links
+- **AND** the header overlays the hero section (position absolute)
 
 ### Hero Banner
-- Given the page is loaded
-  When the user views the hero section
-  Then they see a full-width background image with centered content
-  And the heading reads "Fashion for Upcoming Winter"
-  And a descriptive paragraph is present
-  And a "View Collection" CTA button is visible
-  And the section has minimum height ~900px
+
+#### Scenario: Hero Banner
+
+- **GIVEN** the page is loaded
+- **WHEN** the user views the hero section
+- **THEN** they see a full-width background image with centered content
+- **AND** the heading reads "Fashion for Upcoming Winter"
+- **AND** a descriptive paragraph is present
+- **AND** a "View Collection" CTA button is visible
+- **AND** the section has minimum height ~900px
 
 ### Hot Deals
-- Given the page is loaded
-  When the user scrolls to the Hot Deals section
-  Then they see two side-by-side deal panels
-  And each panel has a dark background image
-  And each panel has the heading "Hot Deals of this Month"
-  And each panel has a "shop now" CTA link
+
+#### Scenario: Hot Deals
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Hot Deals section
+- **THEN** they see two side-by-side deal panels
+- **AND** each panel has a dark background image
+- **AND** each panel has the heading "Hot Deals of this Month"
+- **AND** each panel has a "shop now" CTA link
 
 ### Client Logos
-- Given the page is loaded
-  When the user scrolls to the Client Logos section
-  Then they see a horizontal carousel of partner/client logos
-  And the logos scroll automatically
+
+#### Scenario: Client Logos
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the Client Logos section
+- **THEN** they see a horizontal carousel of partner/client logos
+- **AND** the logos scroll automatically
 
 ### Featured Products
-- Given the page is loaded
-  When the user scrolls to Featured Products
-  Then they see a "Featured Products" heading centered
-  And 8 product cards in a 4-column grid layout
-  And each card has a product image, title ("Long Sleeve TShirt"), and price ("$150.00")
-  And each card has a hover overlay with "Add to Cart" icon
+
+#### Scenario: Featured Products
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to Featured Products
+- **THEN** they see a "Featured Products" heading centered
+- **AND** 8 product cards in a 4-column grid layout
+- **AND** each card has a product image, title ("Long Sleeve TShirt"), and price ("$150.00")
+- **AND** each card has a hover overlay with "Add to Cart" icon
 
 ### Newsletter
-- Given the page is loaded
-  When the user scrolls to the newsletter section
-  Then they see "Subscribe for Our Newsletter" heading
-  And an email input field is present
-  And a submit button is present
-  And the section has a light lavender (#f9f9ff) background
+
+#### Scenario: Newsletter
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the newsletter section
+- **THEN** they see "Subscribe for Our Newsletter" heading
+- **AND** an email input field is present
+- **AND** a submit button is present
+- **AND** the section has a light lavender (#f9f9ff) background
 
 ### Footer
-- Given the page is loaded
-  When the user scrolls to the footer
-  Then they see 4 columns: About Us, Quick Links, Instagram Feed, Newsletter
-  And About Us has social media icons (Facebook, Twitter, Behance, Dribbble)
-  And Quick Links has navigation links
-  And Instagram Feed has a photo grid
-  And Newsletter has an email input + submit form
-  And a bottom bar shows copyright text
-  And the footer links to https://www.componentdock.com/
+
+#### Scenario: Footer
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the footer
+- **THEN** they see 4 columns: About Us, Quick Links, Instagram Feed, Newsletter
+- **AND** About Us has social media icons (Facebook, Twitter, Behance, Dribbble)
+- **AND** Quick Links has navigation links
+- **AND** Instagram Feed has a photo grid
+- **AND** Newsletter has an email input + submit form
+- **AND** a bottom bar shows copyright text
+- **AND** the footer links to https://www.componentdock.com/
 
 ## Verification checklist
 

@@ -53,11 +53,12 @@ Extracted from `https://preview.colorlib.com/theme/photography/css/main.css`:
 
 - `.section-gap` used for consistent vertical padding between sections
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-Scenario: Transparent overlay navbar
+#### Scenario: Transparent overlay navbar
+
   - The navbar is absolutely positioned over the hero carousel
   - It contains the site logo/name on the left
   - It contains navigation links: Home, About Me, Gallery, Blog, Contact
@@ -66,7 +67,8 @@ Scenario: Transparent overlay navbar
 
 ### Hero / Banner Carousel
 
-Scenario: Full-height image carousel with captions
+#### Scenario: Full-height image carousel with captions
+
   - The hero section is a full-viewport-height image carousel (Bootstrap-style)
   - Each slide has a background image covering the full slide
   - Each slide has a centered caption with an h2 heading ("Wildlife Photography") and a subtitle paragraph
@@ -76,7 +78,8 @@ Scenario: Full-height image carousel with captions
 
 ### About Section
 
-Scenario: Split layout with image and text
+#### Scenario: Split layout with image and text
+
   - The section sits on a light background (#f9f9ff)
   - Left column: a portrait/about image (img-fluid)
   - Right column: heading "We Believe that Interior beautifies the" (h1), a paragraph of descriptive text, and a "Hire me now" primary button with arrow icon
@@ -84,7 +87,8 @@ Scenario: Split layout with image and text
 
 ### Gallery Section
 
-Scenario: Dark background photo grid
+#### Scenario: Dark background photo grid
+
   - The section has a dark background (#222222) with white text
   - Centered heading: "My Recent Photos" (h1, white)
   - Centered subtitle paragraph
@@ -94,7 +98,8 @@ Scenario: Dark background photo grid
 
 ### Call-to-Action Section
 
-Scenario: Gradient background CTA bar
+#### Scenario: Gradient background CTA bar
+
   - The section has the brand gradient background (linear-gradient #7a77ff → #8cfe86)
   - Left side: heading "Not sure about my charge?" (h1, uppercase)
   - Right side: "Donate Now" white outline button (.btn-white)
@@ -102,7 +107,8 @@ Scenario: Gradient background CTA bar
 
 ### Blog Section
 
-Scenario: 3-column blog card grid
+#### Scenario: 3-column blog card grid
+
   - Centered heading: "Our Recent Blogs" (h1)
   - Centered subtitle paragraph
   - 3 blog cards in a row (col-lg-4)
@@ -111,7 +117,8 @@ Scenario: 3-column blog card grid
 
 ### Contact Section
 
-Scenario: Split layout with image and contact form
+#### Scenario: Split layout with image and contact form
+
   - Left column: contact image (img-fluid, full width)
   - Right column: heading "Send me Message" (h1), subtitle paragraph, form with name input, email input, textarea (message), and "confirm booking" primary button with arrow
   - The form has no visible borders on inputs (transparent background, #656463 border)
@@ -119,7 +126,8 @@ Scenario: Split layout with image and contact form
 
 ### Footer
 
-Scenario: Dark footer with copyright and social links
+#### Scenario: Dark footer with copyright and social links
+
   - Dark background (#222222)
   - Left: copyright text with dynamic year ("Copyright © [year] All rights reserved")
   - Right: social media icon links (Facebook, Twitter, Dribbble, Behance)

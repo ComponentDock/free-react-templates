@@ -56,94 +56,86 @@ Extracted from the live preview CSS (`css/style.css`):
 9. **Counter Stats** — Background image with overlay, 4-column stat blocks (Properties, Happy Clients, Finished Projects, Working Days)
 10. **Footer** — 5-column: brand + social icons, Company links, Explore links, Get Started links, Newsletter form, copyright bar
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with all navigation links
-```
-Given the user loads the page
-Then the navbar displays brand "EstateHaven"
-And the navbar contains links: Home, Properties, Agents, Blog, About, Contact
-And a "Sign Up" CTA button is visible
-```
+### Feature: EstateHaven template behaviour
 
-### Scenario: Hero slider displays property details
-```
-Given the user views the hero section
-Then a property image carousel is displayed
-And each slide shows a property name, category, location
-And each slide shows specs: Area, Bedrooms, Bathrooms, Garage
-And each slide has a "View Properties" button
-```
+#### Scenario: Navbar renders with all navigation links
 
-### Scenario: Property search form is functional
-```
-Given the user views the search bar
-Then a Location text input is visible
-And a Property Type dropdown shows: Commercial, Office, Residential, Villa, Condominium, Apartment
-And a Property Status dropdown shows: Rent, Sale
-And a Price Limit dropdown shows price ranges
-And a "Search" button is visible
-```
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays brand "EstateHaven"
+- **AND** the navbar contains links: Home, Properties, Agents, Blog, About, Contact
+- **AND** a "Sign Up" CTA button is visible
 
-### Scenario: Recently Added properties carousel
-```
-Given the user views the properties section
-Then the heading "Recently Added" is displayed
-And property cards show image, sale badge, name, price, location, beds/baths
-And cards are in a horizontal scrollable carousel
-```
+#### Scenario: Hero slider displays property details
 
-### Scenario: About section with services grid
-```
-Given the user views the about section
-Then a heading about finding properties is displayed
-And 4 service items are shown in a 2x2 grid: Find Places, Agents Experience, Buy & Rent, Making Money
-And each service has an icon and heading
-And a "Learn More" link is present
-```
+- **GIVEN** the user views the hero section
+- **THEN** a property image carousel is displayed
+- **AND** each slide shows a property name, category, location
+- **AND** each slide shows specs: Area, Bedrooms, Bathrooms, Garage
+- **AND** each slide has a "View Properties" button
 
-### Scenario: Buy vs Rent section
-```
-Given the user views the buy/rent section
-Then two side-by-side image cards are displayed
-And the left card shows "Buying A Properties" with "Read more" CTA
-And the right card shows "Renting A Properties" with "Read more" CTA
-```
+#### Scenario: Property search form is functional
 
-### Scenario: Testimonials carousel
-```
-Given the user views the testimonials section
-Then the heading "Our satisfied customer says" is displayed
-And testimonial cards show a circular avatar, quote text, name, and role
-And cards are in a horizontal carousel
-```
+- **GIVEN** the user views the search bar
+- **THEN** a Location text input is visible
+- **AND** a Property Type dropdown shows: Commercial, Office, Residential, Villa, Condominium, Apartment
+- **AND** a Property Status dropdown shows: Rent, Sale
+- **AND** a Price Limit dropdown shows price ranges
+- **AND** a "Search" button is visible
 
-### Scenario: Blog / Press Releases section
-```
-Given the user views the blog section
-Then the heading "Press Releases" is displayed
-And 3 blog cards show image, date, author, comment count, and post title
-And a "Read our blog" link is present
-```
+#### Scenario: Recently Added properties carousel
 
-### Scenario: Counter stats section
-```
-Given the user views the counter section
-Then 4 stat blocks are displayed
-And they show: 1000 Properties, 351 Happy Clients, 564 Finished Projects, 300 Working Days
-And numbers animate on scroll
-```
+- **GIVEN** the user views the properties section
+- **THEN** the heading "Recently Added" is displayed
+- **AND** property cards show image, sale badge, name, price, location, beds/baths
+- **AND** cards are in a horizontal scrollable carousel
 
-### Scenario: Footer with all columns
-```
-Given the user views the footer
-Then the brand name and social icons (Twitter, Facebook, Instagram) are displayed
-And Company links are shown: Home, About, Services, FAQ, Reviews, Stories
-And Explore links are shown: Privacy, Policy, Terms, Review, Features
-And Get Started links are shown: Buy, Rent, Payment, Mortgage, Loan
-And a Newsletter signup form with email input and Subscribe button is present
-And a copyright bar links to Component Dock
-```
+#### Scenario: About section with services grid
+
+- **GIVEN** the user views the about section
+- **THEN** a heading about finding properties is displayed
+- **AND** 4 service items are shown in a 2x2 grid: Find Places, Agents Experience, Buy & Rent, Making Money
+- **AND** each service has an icon and heading
+- **AND** a "Learn More" link is present
+
+#### Scenario: Buy vs Rent section
+
+- **GIVEN** the user views the buy/rent section
+- **THEN** two side-by-side image cards are displayed
+- **AND** the left card shows "Buying A Properties" with "Read more" CTA
+- **AND** the right card shows "Renting A Properties" with "Read more" CTA
+
+#### Scenario: Testimonials carousel
+
+- **GIVEN** the user views the testimonials section
+- **THEN** the heading "Our satisfied customer says" is displayed
+- **AND** testimonial cards show a circular avatar, quote text, name, and role
+- **AND** cards are in a horizontal carousel
+
+#### Scenario: Blog / Press Releases section
+
+- **GIVEN** the user views the blog section
+- **THEN** the heading "Press Releases" is displayed
+- **AND** 3 blog cards show image, date, author, comment count, and post title
+- **AND** a "Read our blog" link is present
+
+#### Scenario: Counter stats section
+
+- **GIVEN** the user views the counter section
+- **THEN** 4 stat blocks are displayed
+- **AND** they show: 1000 Properties, 351 Happy Clients, 564 Finished Projects, 300 Working Days
+- **AND** numbers animate on scroll
+
+#### Scenario: Footer with all columns
+
+- **GIVEN** the user views the footer
+- **THEN** the brand name and social icons (Twitter, Facebook, Instagram) are displayed
+- **AND** Company links are shown: Home, About, Services, FAQ, Reviews, Stories
+- **AND** Explore links are shown: Privacy, Policy, Terms, Review, Features
+- **AND** Get Started links are shown: Buy, Rent, Payment, Mortgage, Loan
+- **AND** a Newsletter signup form with email input and Subscribe button is present
+- **AND** a copyright bar links to Component Dock
 
 ## Verification Checklist
 

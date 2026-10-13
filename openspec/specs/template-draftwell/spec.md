@@ -68,102 +68,114 @@ The preview was unreachable for browser rendering at time of analysis. Visual no
 
 ---
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Navbar
 
-Scenario: Desktop navigation displays all links and CTA
-  Given the user is on a desktop viewport
-  When the page loads
-  Then the navbar displays the logo "Draftwell" on the left
-  And navigation links (Home, Services, About, Blog, Contact) are visible
-  And a "Get Started" CTA button is displayed on the right
+#### Scenario: Desktop navigation displays all links and CTA
 
-Scenario: Mobile navigation shows hamburger menu
-  Given the user is on a mobile viewport
-  When the page loads
-  Then the navbar shows the logo and a hamburger toggle
-  And the nav links are hidden
-  When the user taps the hamburger
-  Then a slide-down mobile menu appears with all nav links
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the page loads
+- **THEN** the navbar displays the logo "Draftwell" on the left
+- **AND** navigation links (Home, Services, About, Blog, Contact) are visible
+- **AND** a "Get Started" CTA button is displayed on the right
 
-Scenario: Navigation links have correct hover state
-  Given the desktop navbar is visible
-  When the user hovers over a nav link
-  Then the link text changes to brand blue (#1264fa)
+#### Scenario: Mobile navigation shows hamburger menu
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the page loads
+- **THEN** the navbar shows the logo and a hamburger toggle
+- **AND** the nav links are hidden
+- **WHEN** the user taps the hamburger
+- **THEN** a slide-down mobile menu appears with all nav links
+
+#### Scenario: Navigation links have correct hover state
+
+- **GIVEN** the desktop navbar is visible
+- **WHEN** the user hovers over a nav link
+- **THEN** the link text changes to brand blue (#1264fa)
 
 ### Feature: Hero Section
 
-Scenario: Hero displays heading, text, CTA, and image
-  Given the user views the hero section
-  Then a heading "Create, Code, and Published." is displayed at 50px
-  And a description paragraph is shown below the heading
-  And a "Get Started" primary button is displayed
-  And a hero image is shown on the right with a decorative gray background shape
+#### Scenario: Hero displays heading, text, CTA, and image
 
-Scenario: Hero quote overlay appears on image
-  Given the hero image is loaded
-  Then a floating dark navy (#000839) quote block is overlaid at the bottom-left of the image
-  And the quote block contains a blockquote and author name/title in white text
+- **GIVEN** the user views the hero section
+- **THEN** a heading "Create, Code, and Published." is displayed at 50px
+- **AND** a description paragraph is shown below the heading
+- **AND** a "Get Started" primary button is displayed
+- **AND** a hero image is shown on the right with a decorative gray background shape
 
-Scenario: Hero displays two feature cards below CTA
-  Given the hero section is visible
-  Then two feature cards are displayed below the CTA button
-  And each card has a blue circle icon, heading, and description text
+#### Scenario: Hero quote overlay appears on image
+
+- **GIVEN** the hero image is loaded
+- **THEN** a floating dark navy (#000839) quote block is overlaid at the bottom-left of the image
+- **AND** the quote block contains a blockquote and author name/title in white text
+
+#### Scenario: Hero displays two feature cards below CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** two feature cards are displayed below the CTA button
+- **AND** each card has a blue circle icon, heading, and description text
 
 ### Feature: Achievements Section
 
-Scenario: Stats display four metric cards
-  Given the achievements section is in view
-  Then four stat cards are displayed in a row
-  And each card shows a large number, heading, and description
-  And the numbers use bold weight at 40px font size
+#### Scenario: Stats display four metric cards
+
+- **GIVEN** the achievements section is in view
+- **THEN** four stat cards are displayed in a row
+- **AND** each card shows a large number, heading, and description
+- **AND** the numbers use bold weight at 40px font size
 
 ### Feature: How It Works Section
 
-Scenario: Three-step process displays with connectors
-  Given the how-it-works section is in view
-  Then a "How it works" subtitle and heading are centered at the top
-  And three step cards are displayed: "1. Create an account", "2. Create new orders", "3. Ship and track"
-  And each step has a blue circle icon, heading, and description
-  And dashed SVG arrow connectors link the steps (hidden on mobile)
+#### Scenario: Three-step process displays with connectors
+
+- **GIVEN** the how-it-works section is in view
+- **THEN** a "How it works" subtitle and heading are centered at the top
+- **AND** three step cards are displayed: "1. Create an account", "2. Create new orders", "3. Ship and track"
+- **AND** each step has a blue circle icon, heading, and description
+- **AND** dashed SVG arrow connectors link the steps (hidden on mobile)
 
 ### Feature: Services Section
 
-Scenario: Services section shows checklist and image
-  Given the services section is in view
-  Then the background is light gray (#f8f9fa)
-  And a "Services" subtitle, heading, and description are on the left
-  And a checkmark list with 3 items is displayed
-  And a "Get Started" primary button is below the list
-  And a service image with a dotted decorative element is on the right
+#### Scenario: Services section shows checklist and image
+
+- **GIVEN** the services section is in view
+- **THEN** the background is light gray (#f8f9fa)
+- **AND** a "Services" subtitle, heading, and description are on the left
+- **AND** a checkmark list with 3 items is displayed
+- **AND** a "Get Started" primary button is below the list
+- **AND** a service image with a dotted decorative element is on the right
 
 ### Feature: Testimonial Section
 
-Scenario: Testimonials carousel displays author quotes
-  Given the testimonial section is in view
-  Then a carousel displays testimonial cards
-  And each card has a circular author avatar, blockquote, author name, and title
-  And carousel navigation arrows are available
+#### Scenario: Testimonials carousel displays author quotes
+
+- **GIVEN** the testimonial section is in view
+- **THEN** a carousel displays testimonial cards
+- **AND** each card has a circular author avatar, blockquote, author name, and title
+- **AND** carousel navigation arrows are available
 
 ### Feature: Blog Section
 
-Scenario: Blog grid shows post cards with hover effect
-  Given the blog section is in view
-  Then the background is light gray (#f8f9fa)
-  And 5 blog post cards are displayed in a row
-  And each card has white bg, rounded corners (20px, bottom-left sharp), date, title, and description
-  When the user hovers over a card
-  Then the card lifts up 5px with a subtle shadow
+#### Scenario: Blog grid shows post cards with hover effect
+
+- **GIVEN** the blog section is in view
+- **THEN** the background is light gray (#f8f9fa)
+- **AND** 5 blog post cards are displayed in a row
+- **AND** each card has white bg, rounded corners (20px, bottom-left sharp), date, title, and description
+- **WHEN** the user hovers over a card
+- **THEN** the card lifts up 5px with a subtle shadow
 
 ### Feature: Footer
 
-Scenario: Footer displays about, social, and navigation links
-  Given the footer is in view
-  Then an "About" paragraph and social icons (Facebook, Twitter, Instagram, Dribbble, LinkedIn) are on the left
-  And three columns of navigation links are on the right
-  And a copyright line is at the bottom with a top divider
-  And the footer links to Component Dock in the copyright
+#### Scenario: Footer displays about, social, and navigation links
+
+- **GIVEN** the footer is in view
+- **THEN** an "About" paragraph and social icons (Facebook, Twitter, Instagram, Dribbble, LinkedIn) are on the left
+- **AND** three columns of navigation links are on the right
+- **AND** a copyright line is at the bottom with a top divider
+- **AND** the footer links to Component Dock in the copyright
 
 ---
 

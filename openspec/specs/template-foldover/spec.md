@@ -11,7 +11,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 - **Typography**: Sans-serif font family (`Inter`, `system-ui`, sans-serif), clean hierarchy with distinct headings and collapsible content blocks.
 - **Surface & Shape**: Rounded card corners (`rounded-xl` / `rounded-2xl`), subtle drop shadows (`shadow-lg`), clear chevron indicators that rotate smoothly on expansion.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Foldover Accordion Showcase
 
@@ -19,28 +19,28 @@ As a visitor, I want to explore interactive accordion sections with smooth expan
 
 #### Scenario: Display Accordion Items
 
-- **Given** the user loads the Foldover page
-- **Then** all accordion headers are displayed with their respective titles and chevron icons
-- **And** the first accordion item is expanded by default while others remain collapsed
+- **GIVEN** the user loads the Foldover page
+- **THEN** all accordion headers are displayed with their respective titles and chevron icons
+- **AND** the first accordion item is expanded by default while others remain collapsed
 
 #### Scenario: Toggle Accordion Item
 
-- **Given** an accordion item is collapsed
-- **When** the user clicks the accordion header
-- **Then** the accordion item expands smoothly to reveal its content
-- **And** the chevron icon rotates 180 degrees
+- **GIVEN** an accordion item is collapsed
+- **WHEN** the user clicks the accordion header
+- **THEN** the accordion item expands smoothly to reveal its content
+- **AND** the chevron icon rotates 180 degrees
 
 #### Scenario: Single or Multi-expansion Mode
 
-- **Given** multiple accordion items are available
-- **When** the user expands another item
-- **Then** the previous items collapse (accordion behavior) or remain open depending on configuration
+- **GIVEN** multiple accordion items are available
+- **WHEN** the user expands another item
+- **THEN** the previous items collapse (accordion behavior) or remain open depending on configuration
 
 #### Scenario: Footer Branding Link
 
-- **Given** the user scrolls to the bottom of the page
-- **Then** the footer displays copyright information and a link to `https://www.componentdock.com/` ("Component Dock")
-- **And** no mention of ColorLib appears in the app code
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** the footer displays copyright information and a link to `https://www.componentdock.com/` ("Component Dock")
+- **AND** no mention of ColorLib appears in the app code
 
 ## Verification Checklist
 

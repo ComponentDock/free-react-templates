@@ -28,7 +28,7 @@
 
 ---
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Header / Showcase Introduction
 
@@ -36,9 +36,9 @@
 
 #### Scenario: User opens the BtnWarp button showcase
 
-- **Given** the user is on the BtnWarp template home page
-- **When** the page renders
-- **Then** the title and subtitle are clearly visible against the dark background.
+- **GIVEN** the user is on the BtnWarp template home page
+- **WHEN** the page renders
+- **THEN** the title and subtitle are clearly visible against the dark background
 
 ### Requirement 2: Solid & Multi-Color Button Variants
 
@@ -46,9 +46,9 @@
 
 #### Scenario: User explores solid button variants
 
-- **Given** the user views the solid buttons section
-- **When** they inspect the color options (Primary, Secondary, Tertiary, Quarternary)
-- **Then** all variants display distinct background colors and interactive hover states.
+- **GIVEN** the user views the solid buttons section
+- **WHEN** they inspect the color options (Primary, Secondary, Tertiary, Quarternary)
+- **THEN** all variants display distinct background colors and interactive hover states
 
 ### Requirement 3: Outline & Bordered Buttons
 
@@ -56,9 +56,9 @@
 
 #### Scenario: User interacts with outline buttons
 
-- **Given** the user scrolls to the outline button section
-- **When** they hover over an outline button
-- **Then** the border and text opacity transition smoothly.
+- **GIVEN** the user scrolls to the outline button section
+- **WHEN** they hover over an outline button
+- **THEN** the border and text opacity transition smoothly
 
 ### Requirement 4: Rounded / Pill Button Variants
 
@@ -66,9 +66,9 @@
 
 #### Scenario: User views pill buttons
 
-- **Given** the user checks the rounded button section
-- **When** the components render
-- **Then** buttons feature pill-shaped border radiuses (`rounded-full`).
+- **GIVEN** the user checks the rounded button section
+- **WHEN** the components render
+- **THEN** buttons feature pill-shaped border radiuses (`rounded-full`)
 
 ### Requirement 5: Icon-Enhanced Buttons
 
@@ -76,9 +76,9 @@
 
 #### Scenario: User tests buttons with icons
 
-- **Given** the user views the icon buttons section
-- **When** they inspect buttons with heart or directional icons
-- **Then** icons align correctly with text padding.
+- **GIVEN** the user views the icon buttons section
+- **WHEN** they inspect buttons with heart or directional icons
+- **THEN** icons align correctly with text padding
 
 ### Requirement 6: Social Media Buttons with Statistics
 
@@ -86,9 +86,9 @@
 
 #### Scenario: User inspects social buttons
 
-- **Given** the user scrolls to the social buttons section
-- **When** social action buttons render
-- **Then** brand colors and share metrics (e.g., "Share - 8.2k", "Connect with Twitter") are displayed.
+- **GIVEN** the user scrolls to the social buttons section
+- **WHEN** social action buttons render
+- **THEN** brand colors and share metrics (e.g., "Share - 8.2k", "Connect with Twitter") are displayed
 
 ### Requirement 7: Footer with Component Dock Attribution
 
@@ -96,6 +96,6 @@
 
 #### Scenario: User verifies footer link
 
-- **Given** the user reaches the bottom of the page
-- **When** the footer renders
-- **Then** the Component Dock link is present and correct.
+- **GIVEN** the user reaches the bottom of the page
+- **WHEN** the footer renders
+- **THEN** the Component Dock link is present and correct

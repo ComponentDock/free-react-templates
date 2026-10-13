@@ -24,39 +24,47 @@ Recreation of ColorLib [Restauco](https://colorlib.com/wp/template/restauco/) (`
 6. **Testimonials Section:** Customer reviews carousel / showcase ("What our customer sayes") with star ratings and feedback quotes.
 7. **Footer:** Multi-column footer with brand blurb, social links, Quick Links, Special Items (Cakes), Contact Us info (Address, Phone, Email), and mandatory Component Dock attribution footer (`https://www.componentdock.com/`).
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Navigation and Header
 
+#### Scenario: Navigation and Header
+
 - The header must display the brand logo, navigation links, and a quick phone contact.
 - **Scenario:** User views the header
-  - Given the user loads the page
-  - When they look at the header
-  - Then they see the DineCraft logo, navigation links (Home, Menu, About, Blog, Contact), and the reservation phone number.
+- **GIVEN** the user loads the page
+- **WHEN** they look at the header
+- **THEN** they see the DineCraft logo, navigation links (Home, Menu, About, Blog, Contact), and the reservation phone number
 
 ### Requirement 2: Hero Section
 
+#### Scenario: Hero Section
+
 - The hero must present a welcoming headline, subtext, and call-to-action buttons.
 - **Scenario:** User interacts with hero CTAs
-  - Given the user is on the landing view
-  - When they click "Our Menu"
-  - Then the view smoothly scrolls to the popular dishes section.
+- **GIVEN** the user is on the landing view
+- **WHEN** they click "Our Menu"
+- **THEN** the view smoothly scrolls to the popular dishes section
 
 ### Requirement 3: Tabbed Menu Showcase
 
+#### Scenario: Tabbed Menu Showcase
+
 - Users can switch between menu categories (Breakfast, Lunches, Dinner, Drinks, Fastfood).
 - **Scenario:** Switching menu tabs
-  - Given the menu section is displayed
-  - When the user clicks the "Lunche" or "Dinner" tab
-  - Then the corresponding dishes grid updates with relevant items.
+- **GIVEN** the menu section is displayed
+- **WHEN** the user clicks the "Lunche" or "Dinner" tab
+- **THEN** the corresponding dishes grid updates with relevant items
 
 ### Requirement 4: Table Reservation Form
 
+#### Scenario: Table Reservation Form
+
 - Users can submit table booking requests with guest count, date, phone, and message.
 - **Scenario:** Submitting valid reservation request
-  - Given the user fills out the reservation form with guest count, date, and phone number
-  - When they click "Sent Request"
-  - Then a success confirmation toast or message is displayed.
+- **GIVEN** the user fills out the reservation form with guest count, date, and phone number
+- **WHEN** they click "Sent Request"
+- **THEN** a success confirmation toast or message is displayed
 
 ## Verification Checklist
 

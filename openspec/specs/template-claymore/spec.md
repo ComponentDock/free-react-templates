@@ -44,112 +44,131 @@ From the ColorLib preview DOM analysis:
 - **Journal** — 3 blog article cards: landscape image, date + category meta, title, excerpt. "All posts" outline button.
 - **Footer** — 4-column grid: Brand description + social icons (Instagram, Facebook, Pinterest), Shop links, Help links, Newsletter signup (email input + Subscribe button). Bottom bar with copyright.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Claymore template behaviour
+
 Feature: Claymore E-Commerce Template
 
-  Background:
-    Given the user visits the Claymore homepage
+Background:
+- **GIVEN** the user visits the Claymore homepage
 
-  # ── Announcement Bar ──
+**── Announcement Bar ──**
 
-  Scenario: Announcement bar shows rotating messages
-    Then the announcement bar should display rotating promotional messages
-    And messages should include "Free shipping on orders over $100" and "30 day returns"
+#### Scenario: Announcement bar shows rotating messages
 
-  # ── Header ──
+- **THEN** the announcement bar should display rotating promotional messages
+- **AND** messages should include "Free shipping on orders over $100" and "30 day returns"
 
-  Scenario: Header shows logo, nav, and actions
-    Then the header should display the site logo with terracotta accent dot
-    And navigation links: Home, Shop, Product, Blog, About, Contact
-    And action icons: search, account, cart with count badge
+**── Header ──**
 
-  Scenario: Shop dropdown reveals categories
-    When the user hovers or clicks the Shop nav item
-    Then a dropdown should appear with: All products, Clothing, Bags, Accessories, Jewellery, Shoes
+#### Scenario: Header shows logo, nav, and actions
 
-  Scenario: Header becomes sticky on scroll
-    When the user scrolls past the header
-    Then the header should remain fixed at the top
+- **THEN** the header should display the site logo with terracotta accent dot
+- **AND** navigation links: Home, Shop, Product, Blog, About, Contact
+- **AND** action icons: search, account, cart with count badge
 
-  # ── Hero Banner ──
+#### Scenario: Shop dropdown reveals categories
 
-  Scenario: Hero shows promotional content
-    Then the hero banner should display a background image with dark overlay
-    And text: "New season" eyebrow, "New season essentials" headline
-    And a "Shop now" button
+- **WHEN** the user hovers or clicks the Shop nav item
+- **THEN** a dropdown should appear with: All products, Clothing, Bags, Accessories, Jewellery, Shoes
 
-  # ── Marquee Ticker ──
+#### Scenario: Header becomes sticky on scroll
 
-  Scenario: Marquee shows scrolling messages
-    Then a scrolling marquee should display promotional messages
-    And include "Free shipping over $100" and "Natural fibres only"
+- **WHEN** the user scrolls past the header
+- **THEN** the header should remain fixed at the top
 
-  # ── Shop by Category ──
+**── Hero Banner ──**
 
-  Scenario: Category section shows collection cards
-    Then the "Shop by category" section should display 3 collection cards
-    And each card should show a portrait image and category name with arrow
+#### Scenario: Hero shows promotional content
 
-  # ── New Arrivals ──
+- **THEN** the hero banner should display a background image with dark overlay
+- **AND** text: "New season" eyebrow, "New season essentials" headline
+- **AND** a "Shop now" button
 
-  Scenario: New arrivals shows product grid
-    Then the "New arrivals" section should display 4 product cards
-    And each card should show product image, title, price, and color swatches
+**── Marquee Ticker ──**
 
-  Scenario: Product card has quick-add overlay
-    When the user hovers a product card
-    Then a "Quick add" button should appear
+#### Scenario: Marquee shows scrolling messages
 
-  Scenario: Sale product shows badge and compare price
-    Then sale products should display a "Sale" badge
-    And show the discounted price alongside the original price with strikethrough
+- **THEN** a scrolling marquee should display promotional messages
+- **AND** include "Free shipping over $100" and "Natural fibres only"
 
-  # ── Image with Text ──
+**── Shop by Category ──**
 
-  Scenario: Made to last section shows image and text
-    Then the "Made to last" section should display a landscape image on the left
-    And heading "Made to last" with description and "Our story" button on the right
+#### Scenario: Category section shows collection cards
 
-  # ── Why Shop With Us ──
+- **THEN** the "Shop by category" section should display 3 collection cards
+- **AND** each card should show a portrait image and category name with arrow
 
-  Scenario: Features section shows 3 benefits
-    Then the "Why shop with us" section should display 3 feature cards
-    And each card should show a title and description
+**── New Arrivals ──**
 
-  # ── Journal ──
+#### Scenario: New arrivals shows product grid
 
-  Scenario: Journal shows 3 blog articles
-    Then the "Journal" section should display 3 article cards
-    And each card should show an image, date, category, title, and excerpt
+- **THEN** the "New arrivals" section should display 4 product cards
+- **AND** each card should show product image, title, price, and color swatches
 
-  # ── Footer ──
+#### Scenario: Product card has quick-add overlay
 
-  Scenario: Footer shows 4 columns
-    Then the footer should display 4 columns: Brand/Description, Shop, Help, Newsletter
+- **WHEN** the user hovers a product card
+- **THEN** a "Quick add" button should appear
 
-  Scenario: Footer has social links
-    Then the footer should show social icons: Instagram, Facebook, Pinterest
+#### Scenario: Sale product shows badge and compare price
 
-  Scenario: Footer newsletter has email form
-    Then the Newsletter column should show an email input and "Subscribe" button
+- **THEN** sale products should display a "Sale" badge
+- **AND** show the discounted price alongside the original price with strikethrough
 
-  Scenario: Footer copyright
-    Then the footer bottom should show copyright text and a "Component Dock" link
+**── Image with Text ──**
 
-  # ── Responsive ──
+#### Scenario: Made to last section shows image and text
 
-  Scenario: Mobile view collapses nav
-    When the viewport width is less than 990px
-    Then the desktop navigation should be hidden
-    And a hamburger menu toggle should appear
+- **THEN** the "Made to last" section should display a landscape image on the left
+- **AND** heading "Made to last" with description and "Our story" button on the right
 
-  Scenario: Mobile view adjusts grids
-    When the viewport width is less than 768px
-    Then product grids should show 2 columns
-    And category cards should stack vertically
-```
+**── Why Shop With Us ──**
+
+#### Scenario: Features section shows 3 benefits
+
+- **THEN** the "Why shop with us" section should display 3 feature cards
+- **AND** each card should show a title and description
+
+**── Journal ──**
+
+#### Scenario: Journal shows 3 blog articles
+
+- **THEN** the "Journal" section should display 3 article cards
+- **AND** each card should show an image, date, category, title, and excerpt
+
+**── Footer ──**
+
+#### Scenario: Footer shows 4 columns
+
+- **THEN** the footer should display 4 columns: Brand/Description, Shop, Help, Newsletter
+
+#### Scenario: Footer has social links
+
+- **THEN** the footer should show social icons: Instagram, Facebook, Pinterest
+
+#### Scenario: Footer newsletter has email form
+
+- **THEN** the Newsletter column should show an email input and "Subscribe" button
+
+#### Scenario: Footer copyright
+
+- **THEN** the footer bottom should show copyright text and a "Component Dock" link
+
+**── Responsive ──**
+
+#### Scenario: Mobile view collapses nav
+
+- **WHEN** the viewport width is less than 990px
+- **THEN** the desktop navigation should be hidden
+- **AND** a hamburger menu toggle should appear
+
+#### Scenario: Mobile view adjusts grids
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** product grids should show 2 columns
+- **AND** category cards should stack vertically
 
 ## Verification Checklist
 

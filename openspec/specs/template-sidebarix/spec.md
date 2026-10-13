@@ -41,46 +41,52 @@ Recreation of ColorLib Sidebar V02 — a left-profile-panel sidebar layout with 
    - Each post card: small square thumbnail (left) + title + "Posted: date" (right)
    - 8 posts shown in the screenshot (4 rows × 2 cols)
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Sidebarix template behaviour
+
 Feature: Sidebarix template layout
 
-  Background:
-    Given the user opens the Sidebarix template page
+Background:
+- **GIVEN** the user opens the Sidebarix template page
 
-  Scenario: Sidebar profile panel renders
-    Then a left sidebar panel is visible
-    And the sidebar contains a profile photo
-    And the sidebar displays the profile name
-    And a verified badge is shown next to the name
-    And stats (photos count, followers count) are displayed
+#### Scenario: Sidebar profile panel renders
 
-  Scenario: Sidebar bio and metadata
-    Then a bio paragraph is visible below the stats
-    And favourite tags are listed below the bio
-    And an activity/occupation line is shown
-    And a location is shown
+- **THEN** a left sidebar panel is visible
+- **AND** the sidebar contains a profile photo
+- **AND** the sidebar displays the profile name
+- **AND** a verified badge is shown next to the name
+- **AND** stats (photos count, followers count) are displayed
 
-  Scenario: Fav profiles row
-    Then a row of small avatar circles appears at the bottom of the sidebar
-    And each avatar is a linked profile
+#### Scenario: Sidebar bio and metadata
 
-  Scenario: Main content area renders
-    Then the main content area is to the right of the sidebar
-    And a close button (X) is visible at the top-left of the content area
+- **THEN** a bio paragraph is visible below the stats
+- **AND** favourite tags are listed below the bio
+- **AND** an activity/occupation line is shown
+- **AND** a location is shown
 
-  Scenario: Blog post grid
-    Then blog posts are displayed in a 2-column grid
-    And each post card shows a thumbnail image on the left
-    And each post card shows a title and posted date on the right
-    And clicking a post card navigates to the post detail
+#### Scenario: Fav profiles row
 
-  Scenario: Responsive behavior
-    When the viewport is below 768px
-    Then the sidebar becomes a top panel or slide-in drawer
-    And the post grid switches to a single column
-```
+- **THEN** a row of small avatar circles appears at the bottom of the sidebar
+- **AND** each avatar is a linked profile
+
+#### Scenario: Main content area renders
+
+- **THEN** the main content area is to the right of the sidebar
+- **AND** a close button (X) is visible at the top-left of the content area
+
+#### Scenario: Blog post grid
+
+- **THEN** blog posts are displayed in a 2-column grid
+- **AND** each post card shows a thumbnail image on the left
+- **AND** each post card shows a title and posted date on the right
+- **AND** clicking a post card navigates to the post detail
+
+#### Scenario: Responsive behavior
+
+- **WHEN** the viewport is below 768px
+- **THEN** the sidebar becomes a top panel or slide-in drawer
+- **AND** the post grid switches to a single column
 
 ## Verification checklist
 

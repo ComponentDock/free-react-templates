@@ -32,96 +32,123 @@ Extracted from the live preview CSS (`style.css`).
 | Button style      | Gradient fill (`#4458dc → #854fee`), white text | `.primary_btn` with `<span>` inside         |
 | Button (outline)  | Transparent bg, dark text, same radius           | `.primary_btn.tr-bg` variant                |
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
+
 - **Scenario:** Sticky navigation bar with logo and menu links
-  - Given the user is on the page
-  - When the page loads
-  - Then a navigation bar is visible at the top with a logo image on the left
-  - And menu links: Home, About, Services, Portfolio, Contact (right-aligned)
-  - And the navbar is responsive with a hamburger toggle on mobile
+- **GIVEN** the user is on the page
+- **WHEN** the page loads
+- **THEN** a navigation bar is visible at the top with a logo image on the left
+- **AND** menu links: Home, About, Services, Portfolio, Contact (right-aligned)
+- **AND** the navbar is responsive with a hamburger toggle on mobile
 
 ### Hero Banner
+
+#### Scenario: Hero Banner
+
 - **Scenario:** Full-width hero banner with greeting, name, role, and CTAs
-  - Given the user is on the page
-  - When the hero section renders
-  - Then a greeting text ("Hello") is displayed
-  - And the name ("I am Rah Satner") is displayed in large text
-  - And the role ("Senior WordPress Developer") is shown
-  - And two CTA buttons are visible: "Hire Me" (filled gradient) and "Get CV" (outline)
-  - And a portrait/illustration image is displayed on the right side
-  - And the background is a full-width banner image
+- **GIVEN** the user is on the page
+- **WHEN** the hero section renders
+- **THEN** a greeting text ("Hello") is displayed
+- **AND** the name ("I am Rah Satner") is displayed in large text
+- **AND** the role ("Senior WordPress Developer") is shown
+- **AND** two CTA buttons are visible: "Hire Me" (filled gradient) and "Get CV" (outline)
+- **AND** a portrait/illustration image is displayed on the right side
+- **AND** the background is a full-width banner image
 
 ### About Section
+
+#### Scenario: About Section
+
 - **Scenario:** About section with image and personal intro
-  - Given the user scrolls past the hero
-  - When the About section renders
-  - Then a heading "let's Introduce about myself" is displayed
-  - And two paragraphs of body text describe the person
-  - And a "Download CV" primary button is shown
-  - And a portrait/illustration image is displayed on the left
-  - And the section has a light background with gap spacing
+- **GIVEN** the user scrolls past the hero
+- **WHEN** the About section renders
+- **THEN** a heading "let's Introduce about myself" is displayed
+- **AND** two paragraphs of body text describe the person
+- **AND** a "Download CV" primary button is shown
+- **AND** a portrait/illustration image is displayed on the left
+- **AND** the section has a light background with gap spacing
 
 ### Brand Logos
+
+#### Scenario: Brand Logos
+
 - **Scenario:** Brand logo carousel/bar
-  - Given the user scrolls to the brand section
-  - When the Brand area renders
-  - Then 6-9 brand logos are displayed in a horizontal row
-  - And logos are centered within the container
-  - And the section has a light/white background
+- **GIVEN** the user scrolls to the brand section
+- **WHEN** the Brand area renders
+- **THEN** 6-9 brand logos are displayed in a horizontal row
+- **AND** logos are centered within the container
+- **AND** the section has a light/white background
 
 ### Services/Features
+
+#### Scenario: Services/Features
+
 - **Scenario:** Four service cards in a grid
-  - Given the user scrolls to the features section
-  - When the Services area renders
-  - Then a heading "service offers" is displayed
-  - And a subtitle paragraph is shown
-  - And exactly 4 service cards are displayed in a row (4-column grid)
-  - And each card has a service icon/image, title, and description
-  - And cards have a light `#f9f9fd` background with padding and slight hover effect
-  - And the card services are: WP Developing, UI/UX Design, Web Development, App Design (or similar)
+- **GIVEN** the user scrolls to the features section
+- **WHEN** the Services area renders
+- **THEN** a heading "service offers" is displayed
+- **AND** a subtitle paragraph is shown
+- **AND** exactly 4 service cards are displayed in a row (4-column grid)
+- **AND** each card has a service icon/image, title, and description
+- **AND** cards have a light `#f9f9fd` background with padding and slight hover effect
+- **AND** the card services are: WP Developing, UI/UX Design, Web Development, App Design (or similar)
 
 ### Portfolio
+
+#### Scenario: Portfolio
+
 - **Scenario:** Filterable portfolio grid with category tabs
-  - Given the user scrolls to the portfolio section
-  - When the Portfolio area renders
-  - Then a heading "quality work / Recently done project" is displayed
-  - And filter tabs are shown: All, Popular, Latest, Following, Upcoming
-  - And "All" is the default active filter
-  - And a grid of portfolio items (3-column) is displayed
-  - And each item has an image, overlay with an icon, and hover interaction
-  - And clicking a filter tab shows only items matching that category
+- **GIVEN** the user scrolls to the portfolio section
+- **WHEN** the Portfolio area renders
+- **THEN** a heading "quality work / Recently done project" is displayed
+- **AND** filter tabs are shown: All, Popular, Latest, Following, Upcoming
+- **AND** "All" is the default active filter
+- **AND** a grid of portfolio items (3-column) is displayed
+- **AND** each item has an image, overlay with an icon, and hover interaction
+- **AND** clicking a filter tab shows only items matching that category
 
 ### Testimonials
+
+#### Scenario: Testimonials
+
 - **Scenario:** Client testimonial carousel
-  - Given the user scrolls to the testimonials section
-  - When the Testimonial area renders
-  - Then a heading "client say about me" is displayed
-  - And a subtitle paragraph is shown
-  - And a carousel of testimonial items is displayed
-  - And each testimonial has a client photo, name, and review text
-  - And the carousel allows navigation between testimonials
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the Testimonial area renders
+- **THEN** a heading "client say about me" is displayed
+- **AND** a subtitle paragraph is shown
+- **AND** a carousel of testimonial items is displayed
+- **AND** each testimonial has a client photo, name, and review text
+- **AND** the carousel allows navigation between testimonials
 
 ### Newsletter
+
+#### Scenario: Newsletter
+
 - **Scenario:** Newsletter subscription section
-  - Given the user scrolls to the newsletter section
-  - When the Newsletter area renders
-  - Then a heading "get update from anywhere" is displayed (uppercase)
-  - And a subtitle paragraph is shown
-  - And an email input field with placeholder "Email address" is visible
-  - And a "Get Started" submit button is shown
-  - And the section has a dark/image background with white text
+- **GIVEN** the user scrolls to the newsletter section
+- **WHEN** the Newsletter area renders
+- **THEN** a heading "get update from anywhere" is displayed (uppercase)
+- **AND** a subtitle paragraph is shown
+- **AND** an email input field with placeholder "Email address" is visible
+- **AND** a "Get Started" submit button is shown
+- **AND** the section has a dark/image background with white text
 
 ### Footer
+
+#### Scenario: Footer
+
 - **Scenario:** Minimal footer with social links
-  - Given the user scrolls to the bottom
-  - When the Footer renders
-  - Then a logo is displayed centered
-  - And a "Follow Me" heading is shown
-  - And social media icon links are displayed (Facebook, Twitter, Dribbble, Behance)
-  - And a copyright line with Component Dock attribution is shown
-  - And the footer has a light lavender background (`#fcf8ff`)
+- **GIVEN** the user scrolls to the bottom
+- **WHEN** the Footer renders
+- **THEN** a logo is displayed centered
+- **AND** a "Follow Me" heading is shown
+- **AND** social media icon links are displayed (Facebook, Twitter, Dribbble, Behance)
+- **AND** a copyright line with Component Dock attribution is shown
+- **AND** the footer has a light lavender background (`#fcf8ff`)
 
 ## Verification Checklist
 

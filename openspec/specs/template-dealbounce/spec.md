@@ -58,66 +58,74 @@ dialog with:
 5. **Overall aesthetic**: warm, inviting coupon/discount modal with product
    image and clear call-to-action.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: DealBounce template behaviour
+
 Feature: DealBounce — coupon form pop-up modal
 
-  Background:
-    Given the page loads at the root URL
-    And the modal is hidden by default
+Background:
+- **GIVEN** the page loads at the root URL
+- **AND** the modal is hidden by default
 
-  Scenario: Launch button opens modal
-    Given the user sees the "Launch modal" button
-    When the user clicks the "Launch modal" button
-    Then the modal dialog appears centered on screen
-    And the modal has a warm cream (#fff4e4) background
-    And the modal shows a left-side image and right-side content
+#### Scenario: Launch button opens modal
 
-  Scenario: Modal displays coupon content
-    Given the modal is open
-    Then the heading reads "60% off coupon"
-    And a gray description paragraph is visible
-    And a coupon code box displays "SUMMER60" with dashed border
-    And a "Use a coupon" primary button is visible
-    And a "Sorry, I don't want this." dismiss link is visible
+- **GIVEN** the user sees the "Launch modal" button
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** the modal dialog appears centered on screen
+- **AND** the modal has a warm cream (#fff4e4) background
+- **AND** the modal shows a left-side image and right-side content
 
-  Scenario: Close modal via close button
-    Given the modal is open
-    When the user clicks the close (X) button
-    Then the modal closes
+#### Scenario: Modal displays coupon content
 
-  Scenario: Close modal via dismiss link
-    Given the modal is open
-    When the user clicks "Sorry, I don't want this."
-    Then the modal closes
+- **GIVEN** the modal is open
+- **THEN** the heading reads "60% off coupon"
+- **AND** a gray description paragraph is visible
+- **AND** a coupon code box displays "SUMMER60" with dashed border
+- **AND** a "Use a coupon" primary button is visible
+- **AND** a "Sorry, I don't want this." dismiss link is visible
 
-  Scenario: Use coupon button
-    Given the modal is open
-    When the user clicks the "Use a coupon" button
-    Then the action fires (href="#")
+#### Scenario: Close modal via close button
 
-  Scenario: Keyboard accessibility
-    Given the modal is open
-    When the user presses Escape
-    Then the modal closes
-    And focus returns to the launch button
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close (X) button
+- **THEN** the modal closes
 
-  Scenario: Modal is responsive
-    Given the modal is open on a mobile viewport
-    Then the split layout stacks vertically or adjusts
-    And the coupon code box remains readable
-    And the CTA button remains full-width
+#### Scenario: Close modal via dismiss link
 
-  Scenario: Visual design match
-    Given the modal is open
-    Then the background is warm cream (#fff4e4)
-    And headings are black (#000) at 22px
-    And paragraphs are gray (#777) at 14px
-    And the coupon box has white background with 2px dashed gray border
-    And the modal has 7px border-radius and heavy drop shadow
-    And the CTA button is primary blue (#007bff) with 4px radius
-```
+- **GIVEN** the modal is open
+- **WHEN** the user clicks "Sorry, I don't want this."
+- **THEN** the modal closes
+
+#### Scenario: Use coupon button
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "Use a coupon" button
+- **THEN** the action fires (href="#")
+
+#### Scenario: Keyboard accessibility
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Escape
+- **THEN** the modal closes
+- **AND** focus returns to the launch button
+
+#### Scenario: Modal is responsive
+
+- **GIVEN** the modal is open on a mobile viewport
+- **THEN** the split layout stacks vertically or adjusts
+- **AND** the coupon code box remains readable
+- **AND** the CTA button remains full-width
+
+#### Scenario: Visual design match
+
+- **GIVEN** the modal is open
+- **THEN** the background is warm cream (#fff4e4)
+- **AND** headings are black (#000) at 22px
+- **AND** paragraphs are gray (#777) at 14px
+- **AND** the coupon box has white background with 2px dashed gray border
+- **AND** the modal has 7px border-radius and heavy drop shadow
+- **AND** the CTA button is primary blue (#007bff) with 4px radius
 
 ## Component breakdown
 

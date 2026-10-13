@@ -20,7 +20,7 @@
 
 ---
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Header / Navigation & Hero Showcase Intro
 
@@ -29,9 +29,9 @@
 
 #### Scenario: User views the hero showcase
 
-- **Given** the user opens the Bootstrap Buttons Fifteen template
-- **When** the page loads
-- **Then** the header and hero section display the title "Bootstrap Buttons Fifteen", subtitle, and quick navigation links.
+- **GIVEN** the user opens the Bootstrap Buttons Fifteen template
+- **WHEN** the page loads
+- **THEN** the header and hero section display the title "Bootstrap Buttons Fifteen", subtitle, and quick navigation links
 
 ### Requirement 2: Solid & Filled Button Variants
 
@@ -39,9 +39,9 @@
 
 #### Scenario: User explores solid buttons
 
-- **Given** the user is viewing the solid buttons section
-- **When** they inspect the color options
-- **Then** all standard color variants are rendered with proper hover, focus, and active states.
+- **GIVEN** the user is viewing the solid buttons section
+- **WHEN** they inspect the color options
+- **THEN** all standard color variants are rendered with proper hover, focus, and active states
 
 ### Requirement 3: Outline & Ghost Button Variants
 
@@ -49,9 +49,9 @@
 
 #### Scenario: User interacts with outline buttons
 
-- **Given** the user scrolls to the outline buttons section
-- **When** they hover over an outline button
-- **Then** the background fills smoothly while maintaining clear border contrast.
+- **GIVEN** the user scrolls to the outline buttons section
+- **WHEN** they hover over an outline button
+- **THEN** the background fills smoothly while maintaining clear border contrast
 
 ### Requirement 4: Gradient & Glowing Button Effects
 
@@ -59,9 +59,9 @@
 
 #### Scenario: User views gradient and glowing buttons
 
-- **Given** the user views the gradient and glowing section
-- **When** the components render
-- **Then** gradient fills and glowing shadow effects are clearly visible.
+- **GIVEN** the user views the gradient and glowing section
+- **WHEN** the components render
+- **THEN** gradient fills and glowing shadow effects are clearly visible
 
 ### Requirement 5: Icon Buttons & Button Groups
 
@@ -69,9 +69,9 @@
 
 #### Scenario: User tests icon and grouped buttons
 
-- **Given** the user navigates to the icon and group section
-- **When** they click within a button group
-- **Then** the connected buttons highlight interactively as a cohesive group.
+- **GIVEN** the user navigates to the icon and group section
+- **WHEN** they click within a button group
+- **THEN** the connected buttons highlight interactively as a cohesive group
 
 ### Requirement 6: Footer with Component Dock Attribution
 
@@ -79,9 +79,9 @@
 
 #### Scenario: User checks the footer
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer renders
-- **Then** it contains the Component Dock link and standard copyright notice.
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer renders
+- **THEN** it contains the Component Dock link and standard copyright notice
 
 ---
 

@@ -42,60 +42,87 @@ Recreation of the ColorLib **Boxus** template.
 
 Navigation: Home | Services | Portfolio | About | News | Video | Skills | Contact
 
-## Gherkin Requirements
+## Requirements
 
 ### Hero Section
+
+#### Scenario: Hero Section
+
 - **Scenario:** Full-screen hero slider displays on page load
-  - Given the user visits the page
-  - Then a full-screen dark navy hero is visible
-  - And a left/right arrow navigation is present
+- **GIVEN** the user visits the page
+- **THEN** a full-screen dark navy hero is visible
+- **AND** a left/right arrow navigation is present
 
 ### Services Section
+
+#### Scenario: Services Section
+
 - **Scenario:** Service cards are displayed in a scrollable row
-  - Given the user scrolls to the services section
-  - Then 6 service cards are visible with icon, title, and description
-  - And a carousel arrow allows horizontal scrolling
+- **GIVEN** the user scrolls to the services section
+- **THEN** 6 service cards are visible with icon, title, and description
+- **AND** a carousel arrow allows horizontal scrolling
 
 ### Portfolio Section
+
+#### Scenario: Portfolio Section
+
 - **Scenario:** Portfolio grid displays project thumbnails on dark navy
-  - Given the user scrolls to the portfolio section
-  - Then a grid of portfolio images is visible on a dark navy background
-  - And a "LOAD MORE" link is present
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** a grid of portfolio images is visible on a dark navy background
+- **AND** a "LOAD MORE" link is present
 
 ### About/Crafters Section
+
+#### Scenario: About/Crafters Section
+
 - **Scenario:** Team members carousel displays team info
-  - Given the user scrolls to the about section
-  - Then team member cards are visible with photo, name, and social icons
-  - And a carousel arrow allows navigation
+- **GIVEN** the user scrolls to the about section
+- **THEN** team member cards are visible with photo, name, and social icons
+- **AND** a carousel arrow allows navigation
 
 ### News/Stories Section
+
+#### Scenario: News/Stories Section
+
 - **Scenario:** News cards display in a carousel
-  - Given the user scrolls to the news section
-  - Then news/blog cards are visible on a dark navy background
-  - And a carousel arrow allows navigation
+- **GIVEN** the user scrolls to the news section
+- **THEN** news/blog cards are visible on a dark navy background
+- **AND** a carousel arrow allows navigation
 
 ### Video Section
+
+#### Scenario: Video Section
+
 - **Scenario:** Video section displays with popup
-  - Given the user scrolls to the video section
-  - Then a full-width background image is visible
-  - And a play button triggers a video popup overlay
+- **GIVEN** the user scrolls to the video section
+- **THEN** a full-width background image is visible
+- **AND** a play button triggers a video popup overlay
 
 ### Skills/Expertise Section
+
+#### Scenario: Skills/Expertise Section
+
 - **Scenario:** Skills section displays progress bars
-  - Given the user scrolls to the skills section
-  - Then a two-column layout shows progress bars on the left
-  - And descriptive text appears on the right
+- **GIVEN** the user scrolls to the skills section
+- **THEN** a two-column layout shows progress bars on the left
+- **AND** descriptive text appears on the right
 
 ### Contact Section
+
+#### Scenario: Contact Section
+
 - **Scenario:** Contact form accepts user input
-  - Given the user scrolls to the contact section
-  - Then a form with name, email, subject, and message fields is visible
-  - And a submit button is present
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a form with name, email, subject, and message fields is visible
+- **AND** a submit button is present
 
 ### Footer
+
+#### Scenario: Footer
+
 - **Scenario:** Footer links to Component Dock
-  - Given the user scrolls to the footer
-  - Then a link to "Component Dock" is present
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "Component Dock" is present
 
 ## Verification Checklist
 

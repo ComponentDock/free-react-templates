@@ -32,73 +32,87 @@ Deploy target: `skyquest.free.componentdock.com`.
 | Button text        | `#ffffff` (white, uppercase, bold)     |                                               |
 | Font family        | System / sans-serif (screenshot-based) | Google Fonts link recommended                 |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Full-viewport background
-- **Given** the user loads the SkyQuest page
-- **Then** a full-viewport background image covers the entire screen
-- **And** the background image is a coastal/nature scene (or placeholder equivalent)
+### Feature: SkyQuest template behaviour
 
-### Scenario: Search form card visibility
-- **Given** the page has loaded
-- **Then** a centered search form card is visible
-- **And** the card has a blue-to-purple gradient background
-- **And** the card has rounded corners (~12px)
-- **And** the card is semi-transparent over the background image
+#### Scenario: Full-viewport background
 
-### Scenario: From field
-- **Given** the search card is visible
-- **Then** a "From" label is displayed in white bold text
-- **And** a text input with placeholder "City, Region or Airport" is present
-- **And** the input has a white background and rounded corners
+- **GIVEN** the user loads the SkyQuest page
+- **THEN** a full-viewport background image covers the entire screen
+- **AND** the background image is a coastal/nature scene (or placeholder equivalent)
 
-### Scenario: To field
-- **Given** the search card is visible
-- **Then** a "To" label is displayed in white bold text
-- **And** a text input with placeholder "City, Region or Airport" is present
-- **And** the input has a white background and rounded corners
+#### Scenario: Search form card visibility
 
-### Scenario: From and To are side-by-side
-- **Given** the search card is visible
-- **Then** the From and To fields are displayed in a two-column row
+- **GIVEN** the page has loaded
+- **THEN** a centered search form card is visible
+- **AND** the card has a blue-to-purple gradient background
+- **AND** the card has rounded corners (~12px)
+- **AND** the card is semi-transparent over the background image
 
-### Scenario: Passengers field
-- **Given** the search card is visible
-- **Then** a "Passengers" label is displayed in white bold text
-- **And** a dropdown/input shows "1 Adult, 0 Children, 1 Room +"
-- **And** the field has a white background and rounded corners
+#### Scenario: From field
 
-### Scenario: Depart date field
-- **Given** the search card is visible
-- **Then** a "Depart" label is displayed in white bold text
-- **And** a date picker input with placeholder "mm/dd/yyyy" is present
-- **And** the input has a white background and rounded corners
+- **GIVEN** the search card is visible
+- **THEN** a "From" label is displayed in white bold text
+- **AND** a text input with placeholder "City, Region or Airport" is present
+- **AND** the input has a white background and rounded corners
 
-### Scenario: Return date field
-- **Given** the search card is visible
-- **Then** a "Return" label is displayed in white bold text
-- **And** a date picker input with placeholder "mm/dd/yyyy" is present
-- **And** the input has a white background and rounded corners
+#### Scenario: To field
 
-### Scenario: Search button
-- **Given** the search card is visible
-- **Then** a "SEARCH" button is displayed with teal-green gradient background
-- **And** the button text is white, uppercase, and bold
-- **And** the button has rounded corners
+- **GIVEN** the search card is visible
+- **THEN** a "To" label is displayed in white bold text
+- **AND** a text input with placeholder "City, Region or Airport" is present
+- **AND** the input has a white background and rounded corners
 
-### Scenario: Bottom row layout
-- **Given** the search card is visible
-- **Then** the Passengers, Depart, Return, and Search button are in a single row below the From/To row
+#### Scenario: From and To are side-by-side
 
-### Scenario: Mobile responsiveness
-- **Given** the viewport is narrow (< 768px)
-- **Then** the search fields stack vertically
-- **And** the form card remains centered
-- **And** all fields remain usable
+- **GIVEN** the search card is visible
+- **THEN** the From and To fields are displayed in a two-column row
 
-### Scenario: Footer
-- **Given** the page has loaded
-- **Then** a footer is present with a link to Component Dock
+#### Scenario: Passengers field
+
+- **GIVEN** the search card is visible
+- **THEN** a "Passengers" label is displayed in white bold text
+- **AND** a dropdown/input shows "1 Adult, 0 Children, 1 Room +"
+- **AND** the field has a white background and rounded corners
+
+#### Scenario: Depart date field
+
+- **GIVEN** the search card is visible
+- **THEN** a "Depart" label is displayed in white bold text
+- **AND** a date picker input with placeholder "mm/dd/yyyy" is present
+- **AND** the input has a white background and rounded corners
+
+#### Scenario: Return date field
+
+- **GIVEN** the search card is visible
+- **THEN** a "Return" label is displayed in white bold text
+- **AND** a date picker input with placeholder "mm/dd/yyyy" is present
+- **AND** the input has a white background and rounded corners
+
+#### Scenario: Search button
+
+- **GIVEN** the search card is visible
+- **THEN** a "SEARCH" button is displayed with teal-green gradient background
+- **AND** the button text is white, uppercase, and bold
+- **AND** the button has rounded corners
+
+#### Scenario: Bottom row layout
+
+- **GIVEN** the search card is visible
+- **THEN** the Passengers, Depart, Return, and Search button are in a single row below the From/To row
+
+#### Scenario: Mobile responsiveness
+
+- **GIVEN** the viewport is narrow (< 768px)
+- **THEN** the search fields stack vertically
+- **AND** the form card remains centered
+- **AND** all fields remain usable
+
+#### Scenario: Footer
+
+- **GIVEN** the page has loaded
+- **THEN** a footer is present with a link to Component Dock
 
 ## Verification Checklist
 

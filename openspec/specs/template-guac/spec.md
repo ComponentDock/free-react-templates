@@ -99,11 +99,11 @@ Extracted from the live preview CSS (css/style.css):
 | Blog                  | #f7f7f7 light gray                                             |
 | Footer                | Black                                                          |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Guac Template — Creative Agency Portfolio
 
-#### Section order (top to bottom)
+**Section order (top to bottom)**
 
 1. Navbar (sticky, dark bg, brand logo "guac" with styled 'v', nav links)
 2. Hero (full-width slider with background images, dark overlay, counter stats, CTA buttons, video play button)
@@ -116,106 +116,88 @@ Extracted from the live preview CSS (css/style.css):
 
 #### Scenario: Navbar renders correctly
 
-```
-Given the page loads
-Then the navbar displays the brand text "guac" with the "v" styled differently
-And the navbar contains links: Home, About, Work, Blog, Contact
-And the navbar has a dark background
-And the navbar is sticky on scroll
-And the mobile hamburger menu toggles navigation
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays the brand text "guac" with the "v" styled differently
+- **AND** the navbar contains links: Home, About, Work, Blog, Contact
+- **AND** the navbar has a dark background
+- **AND** the navbar is sticky on scroll
+- **AND** the mobile hamburger menu toggles navigation
 
 #### Scenario: Hero slider displays
 
-```
-Given the page loads
-Then the hero section shows a full-width background image with dark overlay
-And the hero displays a counter stat (e.g. "400" projects) with label text
-And the hero shows a heading "We Create Modern & Minimal Website"
-And the hero shows a subtitle paragraph
-And the hero shows a primary CTA button ("Start Project" / "Explore Projects")
-And the hero has a diagonal white angular cut at the bottom
-And the hero contains a video play button linking to a video URL
-```
+- **GIVEN** the page loads
+- **THEN** the hero section shows a full-width background image with dark overlay
+- **AND** the hero displays a counter stat (e.g. "400" projects) with label text
+- **AND** the hero shows a heading "We Create Modern & Minimal Website"
+- **AND** the hero shows a subtitle paragraph
+- **AND** the hero shows a primary CTA button ("Start Project" / "Explore Projects")
+- **AND** the hero has a diagonal white angular cut at the bottom
+- **AND** the hero contains a video play button linking to a video URL
 
 #### Scenario: About / Services section renders
 
-```
-Given the user scrolls to the About section
-Then the section displays heading "About us"
-And 5 service cards are shown in a row with icons: UI/UX Design, Web Development, Product Design, Mobile Apps, SEO
-And each service card has an icon, title, and description
-And below the services, an about block shows "Welcome to [Brand] A Personal Portfolio Web Agency" with an image and text
-And a "View all projects" primary button is displayed
-And 3 numbered services appear (01, 02, 03) with red number accent and "Search Engine Optimization" titles
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** the section displays heading "About us"
+- **AND** 5 service cards are shown in a row with icons: UI/UX Design, Web Development, Product Design, Mobile Apps, SEO
+- **AND** each service card has an icon, title, and description
+- **AND** below the services, an about block shows "Welcome to [Brand] A Personal Portfolio Web Agency" with an image and text
+- **AND** a "View all projects" primary button is displayed
+- **AND** 3 numbered services appear (01, 02, 03) with red number accent and "Search Engine Optimization" titles
 
 #### Scenario: Portfolio section renders
 
-```
-Given the user scrolls to the Our Works section
-Then the section displays heading "Our Works"
-And 4 portfolio items are shown in alternating layout rows
-And each portfolio item has a background image, category tag, title, description, author avatar, author name, and "View Portfolio" link
-And the first item shows category "Web Design" with title "Cassette tape"
-And the second item shows category "Application" with title "Miniwall Clock"
-And the layout alternates between image-left/text-right and image-right/text-left
-```
+- **GIVEN** the user scrolls to the Our Works section
+- **THEN** the section displays heading "Our Works"
+- **AND** 4 portfolio items are shown in alternating layout rows
+- **AND** each portfolio item has a background image, category tag, title, description, author avatar, author name, and "View Portfolio" link
+- **AND** the first item shows category "Web Design" with title "Cassette tape"
+- **AND** the second item shows category "Application" with title "Miniwall Clock"
+- **AND** the layout alternates between image-left/text-right and image-right/text-left
 
 #### Scenario: Testimonials section renders
 
-```
-Given the user scrolls to the Testimonials section
-Then the section displays heading "Clients Says About Us?"
-And a carousel of testimonial cards is shown
-And each card has a quote icon, testimonial text, user avatar, name, and position
-And the carousel auto-plays or has navigation dots/arrows
-```
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the section displays heading "Clients Says About Us?"
+- **AND** a carousel of testimonial cards is shown
+- **AND** each card has a quote icon, testimonial text, user avatar, name, and position
+- **AND** the carousel auto-plays or has navigation dots/arrows
 
 #### Scenario: CTA banner renders
 
-```
-Given the user scrolls to the CTA section
-Then the section displays "Get Started" as a subheading
-And the heading reads "Fill in the brief and get the project estimate"
-And a description paragraph is shown
-And a primary "Get started" button is displayed
-```
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the section displays "Get Started" as a subheading
+- **AND** the heading reads "Fill in the brief and get the project estimate"
+- **AND** a description paragraph is shown
+- **AND** a primary "Get started" button is displayed
 
 #### Scenario: Blog section renders
 
-```
-Given the user scrolls to the Recent Blog section
-Then the section displays heading "Recent Blog"
-And 4 blog cards are shown in a row
-And each card has an image, title, date, author, comment count, and excerpt
-And the section has a light gray background (#f7f7f7)
-```
+- **GIVEN** the user scrolls to the Recent Blog section
+- **THEN** the section displays heading "Recent Blog"
+- **AND** 4 blog cards are shown in a row
+- **AND** each card has an image, title, date, author, comment count, and excerpt
+- **AND** the section has a light gray background (#f7f7f7)
 
 #### Scenario: Footer renders
 
-```
-Given the user scrolls to the footer
-Then the footer has a black background
-And the footer contains the brand name "guac"
-And the footer shows social media icons (Twitter, Facebook, Instagram)
-And the footer has columns: Community (Projects, Team, Reviews, FAQs), About Us (Our Story, Meet the team, Careers), Company (About Us, Press, Contact, Careers)
-And the footer has a "Have a Questions?" column with address, phone, and email
-And the footer shows a copyright line
-And the footer links to https://www.componentdock.com/
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a black background
+- **AND** the footer contains the brand name "guac"
+- **AND** the footer shows social media icons (Twitter, Facebook, Instagram)
+- **AND** the footer has columns: Community (Projects, Team, Reviews, FAQs), About Us (Our Story, Meet the team, Careers), Company (About Us, Press, Contact, Careers)
+- **AND** the footer has a "Have a Questions?" column with address, phone, and email
+- **AND** the footer shows a copyright line
+- **AND** the footer links to https://www.componentdock.com/
 
 #### Scenario: Responsive layout
 
-```
-Given the page is viewed on a mobile device
-Then the navbar collapses to a hamburger menu
-And the hero section adjusts to full-width
-And service cards stack vertically
-And portfolio items stack vertically (image above text)
-And blog cards stack vertically
-And footer columns stack vertically
-```
+- **GIVEN** the page is viewed on a mobile device
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero section adjusts to full-width
+- **AND** service cards stack vertically
+- **AND** portfolio items stack vertically (image above text)
+- **AND** blog cards stack vertically
+- **AND** footer columns stack vertically
 
 ## Verification checklist
 

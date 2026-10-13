@@ -30,59 +30,59 @@ and dual-action buttons.
 | Button styles      | `btn-primary` solid fill, no border; `btn-link` text-only dismiss | Bootstrap classes |
 | Button padding     | Primary: `px-4 py-10` (10px top/bottom)     | `.btn-primary { padding-top: 10px }`   |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: ModalBreeze — centered promotional modal popup
 
 #### Scenario: Default state — modal is hidden
 
-Given the page loads
-When I view the initial render
-Then a centered "Launch modal" button is visible
-And no modal dialog is visible
+- **GIVEN** the page loads
+- **WHEN** I view the initial render
+- **THEN** a centered "Launch modal" button is visible
+- **AND** no modal dialog is visible
 
 #### Scenario: Launch modal
 
-Given the page loads
-When I click the "Launch modal" button
-Then a centered modal dialog appears
-And the modal contains an illustration image with a light cyan-blue (#b2fcff) background
-And the modal displays a heading "Introducing Work from Anywhere"
-And the modal displays a descriptive paragraph
-And a "Get the app" primary button is visible
-And a "No thanks" dismiss link is visible
+- **GIVEN** the page loads
+- **WHEN** I click the "Launch modal" button
+- **THEN** a centered modal dialog appears
+- **AND** the modal contains an illustration image with a light cyan-blue (#b2fcff) background
+- **AND** the modal displays a heading "Introducing Work from Anywhere"
+- **AND** the modal displays a descriptive paragraph
+- **AND** a "Get the app" primary button is visible
+- **AND** a "No thanks" dismiss link is visible
 
 #### Scenario: Dismiss modal via close link
 
-Given the modal is open
-When I click the "No thanks" link
-Then the modal closes
-And the page returns to its initial state
+- **GIVEN** the modal is open
+- **WHEN** I click the "No thanks" link
+- **THEN** the modal closes
+- **AND** the page returns to its initial state
 
 #### Scenario: Dismiss modal via backdrop click
 
-Given the modal is open
-When I click the modal backdrop (outside the dialog)
-Then the modal closes
+- **GIVEN** the modal is open
+- **WHEN** I click the modal backdrop (outside the dialog)
+- **THEN** the modal closes
 
 #### Scenario: Dismiss modal via Escape key
 
-Given the modal is open
-When I press the Escape key
-Then the modal closes
+- **GIVEN** the modal is open
+- **WHEN** I press the Escape key
+- **THEN** the modal closes
 
 #### Scenario: Accessibility — modal ARIA
 
-Given the modal is open
-Then the modal dialog has `role="dialog"`
-And the modal dialog has `aria-labelledby` pointing to the heading
-And the heading has an `id` matching `aria-labelledby`
+- **GIVEN** the modal is open
+- **THEN** the modal dialog has `role="dialog"`
+- **AND** the modal dialog has `aria-labelledby` pointing to the heading
+- **AND** the heading has an `id` matching `aria-labelledby`
 
 #### Scenario: Footer attribution
 
-Given the page loads
-Then a footer link points to `https://www.componentdock.com/`
-And the footer text mentions "Component Dock"
+- **GIVEN** the page loads
+- **THEN** a footer link points to `https://www.componentdock.com/`
+- **AND** the footer text mentions "Component Dock"
 
 ## Verification checklist
 

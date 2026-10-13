@@ -43,171 +43,172 @@ Recreation of the ColorLib "Work" template as a React 19 + Vite + Tailwind CSS 4
 - **Footer:** Simple copyright line with Colorlib attribution (replaced with Component Dock link).
 - **Color palette:** Black sidebar + white main content area, red-orange `#F75940` as accent throughout (buttons, links, borders, hover states).
 
-## Gherkin requirements
+## Requirements
 
 ### Sidebar navigation
 
-```gherkin
 Feature: Sidebar navigation
 
-  Scenario: Desktop sidebar displays logo and nav links
-    Given the viewport is wider than 768px
-    When the page loads
-    Then a fixed left sidebar is visible
-    And the sidebar contains the logo text "Laborline"
-    And the sidebar shows navigation links: Home, Work, About, Services, Blog, Contact
-    And the sidebar has a black background with white text
+#### Scenario: Desktop sidebar displays logo and nav links
 
-  Scenario: Mobile sidebar is hidden by default
-    Given the viewport is 768px or narrower
-    When the page loads
-    Then the sidebar is hidden off-screen to the left
-    And a hamburger toggle button is visible
+- **GIVEN** the viewport is wider than 768px
+- **WHEN** the page loads
+- **THEN** a fixed left sidebar is visible
+- **AND** the sidebar contains the logo text "Laborline"
+- **AND** the sidebar shows navigation links: Home, Work, About, Services, Blog, Contact
+- **AND** the sidebar has a black background with white text
 
-  Scenario: Mobile sidebar opens on toggle click
-    Given the viewport is 768px or narrower
-    And the sidebar is hidden
-    When the user clicks the hamburger toggle
-    Then the sidebar slides in from the left
-    And the main content shifts right
+#### Scenario: Mobile sidebar is hidden by default
 
-  Scenario: Mobile sidebar closes on toggle click
-    Given the viewport is 768px or narrower
-    And the sidebar is open
-    When the user clicks the hamburger toggle
-    Then the sidebar slides back off-screen
-```
+- **GIVEN** the viewport is 768px or narrower
+- **WHEN** the page loads
+- **THEN** the sidebar is hidden off-screen to the left
+- **AND** a hamburger toggle button is visible
+
+#### Scenario: Mobile sidebar opens on toggle click
+
+- **GIVEN** the viewport is 768px or narrower
+- **AND** the sidebar is hidden
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the sidebar slides in from the left
+- **AND** the main content shifts right
+
+#### Scenario: Mobile sidebar closes on toggle click
+
+- **GIVEN** the viewport is 768px or narrower
+- **AND** the sidebar is open
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the sidebar slides back off-screen
 
 ### Hero section
 
-```gherkin
 Feature: Hero section
 
-  Scenario: Hero displays with full-height slider
-    Given the page loads
-    Then a full-height hero section is visible
-    And it shows a dark overlay on the background
-    And it displays centered text with a headline and subtext
-    And a "Learn More" CTA button is visible
+#### Scenario: Hero displays with full-height slider
 
-  Scenario: Hero CTA button has pill style
-    Given the hero section is visible
-    Then the CTA button has a transparent background
-    And the button has a 1px solid black border
-    And the button text is uppercase with letter-spacing
+- **GIVEN** the page loads
+- **THEN** a full-height hero section is visible
+- **AND** it shows a dark overlay on the background
+- **AND** it displays centered text with a headline and subtext
+- **AND** a "Learn More" CTA button is visible
 
-  Scenario: Hero is full viewport height
-    Given the page loads
-    Then the hero section height matches the viewport height
-```
+#### Scenario: Hero CTA button has pill style
+
+- **GIVEN** the hero section is visible
+- **THEN** the CTA button has a transparent background
+- **AND** the button has a 1px solid black border
+- **AND** the button text is uppercase with letter-spacing
+
+#### Scenario: Hero is full viewport height
+
+- **GIVEN** the page loads
+- **THEN** the hero section height matches the viewport height
 
 ### About section
 
-```gherkin
 Feature: About section
 
-  Scenario: About section displays with split layout
-    Given the user scrolls to the About section
-    Then two offset images appear on the left side
-    And text content appears on the right side
-    And the heading reads "Welcome & Introduce"
-    And a bio paragraph is displayed
+#### Scenario: About section displays with split layout
 
-  Scenario: About section has a sub-heading
-    Given the About section is visible
-    Then a "Why choose me?" sub-heading is present
-    And descriptive text follows below it
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** two offset images appear on the left side
+- **AND** text content appears on the right side
+- **AND** the heading reads "Welcome & Introduce"
+- **AND** a bio paragraph is displayed
+
+#### Scenario: About section has a sub-heading
+
+- **GIVEN** the About section is visible
+- **THEN** a "Why choose me?" sub-heading is present
+- **AND** descriptive text follows below it
 
 ### Services section
 
-```gherkin
 Feature: Services section
 
-  Scenario: Services displays 6 service items in a grid
-    Given the user scrolls to the Services section
-    Then 6 service items are displayed
-    And each item has an icon, title, and description
-    And the services include: Branding, Web Design, SEO, Web Development, User Interface, Help & Support
+#### Scenario: Services displays 6 service items in a grid
 
-  Scenario: Services section has a heading
-    Given the Services section is visible
-    Then the heading reads "What I do?"
-    And a subtext "Here are some of my expertise" is present
-```
+- **GIVEN** the user scrolls to the Services section
+- **THEN** 6 service items are displayed
+- **AND** each item has an icon, title, and description
+- **AND** the services include: Branding, Web Design, SEO, Web Development, User Interface, Help & Support
+
+#### Scenario: Services section has a heading
+
+- **GIVEN** the Services section is visible
+- **THEN** the heading reads "What I do?"
+- **AND** a subtext "Here are some of my expertise" is present
 
 ### Specialties section
 
-```gherkin
 Feature: Specialties section
 
-  Scenario: Specialties section displays descriptive content
-    Given the user scrolls to the Specialties section
-    Then the heading reads "My Specialties"
-    And descriptive text paragraphs are displayed
-```
+#### Scenario: Specialties section displays descriptive content
+
+- **GIVEN** the user scrolls to the Specialties section
+- **THEN** the heading reads "My Specialties"
+- **AND** descriptive text paragraphs are displayed
 
 ### Portfolio / Work grid
 
-```gherkin
 Feature: Portfolio work grid
 
-  Scenario: Work grid displays 6 project thumbnails
-    Given the user scrolls to the Work section
-    Then 6 project cards are displayed in a 2-column grid
-    And each card shows a project image
-    And each card has a title and category tags
+#### Scenario: Work grid displays 6 project thumbnails
 
-  Scenario: Work grid section has a heading
-    Given the Work section is visible
-    Then the heading reads "My Work"
-    And a sub-heading "Recent Work" is present
-```
+- **GIVEN** the user scrolls to the Work section
+- **THEN** 6 project cards are displayed in a 2-column grid
+- **AND** each card shows a project image
+- **AND** each card has a title and category tags
+
+#### Scenario: Work grid section has a heading
+
+- **GIVEN** the Work section is visible
+- **THEN** the heading reads "My Work"
+- **AND** a sub-heading "Recent Work" is present
 
 ### Blog section
 
-```gherkin
 Feature: Blog section
 
-  Scenario: Blog displays 3 blog post cards
-    Given the user scrolls to the Blog section
-    Then 3 blog cards are displayed in a row
-    And each card shows an image, date, category, title, and excerpt
-    And each card has a "Read More" link
+#### Scenario: Blog displays 3 blog post cards
 
-  Scenario: Blog section has a heading
-    Given the Blog section is visible
-    Then the heading reads "Recent Blog"
-```
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** 3 blog cards are displayed in a row
+- **AND** each card shows an image, date, category, title, and excerpt
+- **AND** each card has a "Read More" link
+
+#### Scenario: Blog section has a heading
+
+- **GIVEN** the Blog section is visible
+- **THEN** the heading reads "Recent Blog"
 
 ### Contact section
 
-```gherkin
 Feature: Contact section
 
-  Scenario: Contact section displays CTA
-    Given the user scrolls to the Contact section
-    Then the heading reads "Get in Touch!"
-    And descriptive text is shown
-    And a "Contact me!" button is visible
+#### Scenario: Contact section displays CTA
 
-  Scenario: Contact button has pill style
-    Given the Contact section is visible
-    Then the button has a rounded pill shape (border-radius: 30px)
-    And the button uses the primary brand color (#F75940)
-```
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** the heading reads "Get in Touch!"
+- **AND** descriptive text is shown
+- **AND** a "Contact me!" button is visible
+
+#### Scenario: Contact button has pill style
+
+- **GIVEN** the Contact section is visible
+- **THEN** the button has a rounded pill shape (border-radius: 30px)
+- **AND** the button uses the primary brand color (#F75940)
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer displays copyright and attribution
-    Given the page loads
-    Then a footer is visible at the bottom
-    And it contains a copyright notice with the current year
-    And it links to Component Dock (https://www.componentdock.com/)
-```
+#### Scenario: Footer displays copyright and attribution
+
+- **GIVEN** the page loads
+- **THEN** a footer is visible at the bottom
+- **AND** it contains a copyright notice with the current year
+- **AND** it links to Component Dock (https://www.componentdock.com/)
 
 ## Verification checklist
 

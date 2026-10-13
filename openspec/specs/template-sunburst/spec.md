@@ -44,85 +44,78 @@ Clean, modern ecommerce storefront with a warm golden-orange accent palette. Whi
 8. **RelatedProducts** — additional product carousel
 9. **Footer** — social links row, copyright, "Made with Component Dock" attribution
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders correctly
-```gherkin
-Given the user loads the page
-Then the navbar is visible and sticky
-And the logo is displayed on the left
-And navigation links "Home", "Shop", "Blog", "Pages", "Contact" are present
-And a cart icon and search toggle are visible in the right section
-```
+### Feature: SunBurst template behaviour
 
-### Scenario: Hero banner displays content
-```gherkin
-Given the user loads the page
-Then the hero banner occupies the full viewport height
-And a headline "Nike New Collection!" is displayed
-And a description paragraph is visible
-And an "Add to Bag" call-to-action is present
-And a product image is shown on the right side
-```
+#### Scenario: Navbar renders correctly
 
-### Scenario: Features bar shows four items
-```gherkin
-Given the user loads the page
-Then the features section displays four feature cards
-And each card has an icon, a title, and a subtitle
-And the features are "Free Delivery", "Return Policy", "24/7 Support", "Secure Payment"
-```
+- **GIVEN** the user loads the page
+- **THEN** the navbar is visible and sticky
+- **AND** the logo is displayed on the left
+- **AND** navigation links "Home", "Shop", "Blog", "Pages", "Contact" are present
+- **AND** a cart icon and search toggle are visible in the right section
 
-### Scenario: Category grid renders categories
-```gherkin
-Given the user loads the page
-Then the category section displays category cards in an asymmetric grid
-And each card has an image with an overlay
-And each card shows a deal title (e.g. "Sneaker for Sports")
-```
+#### Scenario: Hero banner displays content
 
-### Scenario: Product carousel displays products
-```gherkin
-Given the user loads the page
-Then a "Latest Products" section is visible
-And a "Coming Products" section is visible
-And each section has a carousel of product cards
-And each product card shows an image, name, current price, and original price (strikethrough)
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero banner occupies the full viewport height
+- **AND** a headline "Nike New Collection!" is displayed
+- **AND** a description paragraph is visible
+- **AND** an "Add to Bag" call-to-action is present
+- **AND** a product image is shown on the right side
 
-### Scenario: Exclusive deal countdown
-```gherkin
-Given the user loads the page
-Then the exclusive deal section is visible
-And a countdown timer shows Days, Hours, Minutes, Seconds
-And a "Shop Now" button with brand gradient is present
-And an exclusive product carousel is on the right side
-```
+#### Scenario: Features bar shows four items
 
-### Scenario: Brand logos section
-```gherkin
-Given the user loads the page
-Then a row of brand logos is displayed
-And the logos are evenly spaced in a horizontal row
-```
+- **GIVEN** the user loads the page
+- **THEN** the features section displays four feature cards
+- **AND** each card has an icon, a title, and a subtitle
+- **AND** the features are "Free Delivery", "Return Policy", "24/7 Support", "Secure Payment"
 
-### Scenario: Footer content
-```gherkin
-Given the user loads the page
-Then the footer is visible
-And social media icon links are present
-And a copyright notice is displayed
-And a "Made with Component Dock" attribution links to https://www.componentdock.com/
-```
+#### Scenario: Category grid renders categories
 
-### Scenario: Responsive layout
-```gherkin
-Given the user is on a mobile viewport (<= 768px)
-Then the navbar collapses into a hamburger menu
-And the hero banner stacks vertically
-And product carousels scroll horizontally
-And the exclusive deal section stacks vertically
-```
+- **GIVEN** the user loads the page
+- **THEN** the category section displays category cards in an asymmetric grid
+- **AND** each card has an image with an overlay
+- **AND** each card shows a deal title (e.g. "Sneaker for Sports")
+
+#### Scenario: Product carousel displays products
+
+- **GIVEN** the user loads the page
+- **THEN** a "Latest Products" section is visible
+- **AND** a "Coming Products" section is visible
+- **AND** each section has a carousel of product cards
+- **AND** each product card shows an image, name, current price, and original price (strikethrough)
+
+#### Scenario: Exclusive deal countdown
+
+- **GIVEN** the user loads the page
+- **THEN** the exclusive deal section is visible
+- **AND** a countdown timer shows Days, Hours, Minutes, Seconds
+- **AND** a "Shop Now" button with brand gradient is present
+- **AND** an exclusive product carousel is on the right side
+
+#### Scenario: Brand logos section
+
+- **GIVEN** the user loads the page
+- **THEN** a row of brand logos is displayed
+- **AND** the logos are evenly spaced in a horizontal row
+
+#### Scenario: Footer content
+
+- **GIVEN** the user loads the page
+- **THEN** the footer is visible
+- **AND** social media icon links are present
+- **AND** a copyright notice is displayed
+- **AND** a "Made with Component Dock" attribution links to https://www.componentdock.com/
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user is on a mobile viewport (<= 768px)
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the hero banner stacks vertically
+- **AND** product carousels scroll horizontally
+- **AND** the exclusive deal section stacks vertically
 
 ## Verification Checklist
 

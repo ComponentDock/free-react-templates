@@ -43,88 +43,102 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 10. **Subscribe/Newsletter** — dark bg, "Subscribe To Our Newsletter" heading + description left, email form + subscribe button right
 11. **Footer** — dark bg, 4-column layout (logo + desc, Quick Links, News Latest, Contact Us), copyright bar with social icons
 
-## Gherkin requirements
+## Requirements
 
-### Background
-  Given the app is loaded at the root URL
-  Then the page renders without errors
-  And all sections are present in the correct order
+### Feature: Vaulted template behaviour
 
-### Scenario: Top header bar renders with contact info
-  Given the user views the page
-  Then a gray top header bar is visible at the top
-  And it shows opening hours with a clock icon
-  And it shows social media icons (Facebook, Twitter, Google+)
-  And it shows an email address and phone number
+**Background**
+- **GIVEN** the app is loaded at the root URL
+- **THEN** the page renders without errors
+- **AND** all sections are present in the correct order
 
-### Scenario: Navbar renders with navigation and donate button
-  Given the user views the page
-  Then a white navbar is visible below the top header
-  And it displays a logo on the left
-  And it shows navigation links: Home, Pages, Events, Sermons, Blog, Contact
-  And a search icon is present
-  And a red "Donate Us" button is visible
+#### Scenario: Top header bar renders with contact info
 
-### Scenario: Navbar Pages dropdown opens on click
-  Given the user clicks the "Pages" nav link
-  Then a dropdown menu appears with links: Home, About, Sermons, Sermons Details, Events, Blog, Blog Details, Contact
+- **GIVEN** the user views the page
+- **THEN** a gray top header bar is visible at the top
+- **AND** it shows opening hours with a clock icon
+- **AND** it shows social media icons (Facebook, Twitter, Google+)
+- **AND** it shows an email address and phone number
 
-### Scenario: Hero slider displays slides with headlines
-  Given the user views the page
-  Then a full-width hero slider is visible
-  And each slide has a dark overlay background image
-  And each slide shows a white headline, paragraph text, and a CTA button
-  And the slider has at least 2 slides
+#### Scenario: Navbar renders with navigation and donate button
 
-### Scenario: About section displays three feature cards
-  Given the user scrolls to the About section
-  Then a "Welcome To Church" heading is displayed
-  And 3 cards are shown in a row (Our Church, Our History, Our Sermons)
-  And each card has an image, title, description paragraph, and "Read More" link
+- **GIVEN** the user views the page
+- **THEN** a white navbar is visible below the top header
+- **AND** it displays a logo on the left
+- **AND** it shows navigation links: Home, Pages, Events, Sermons, Blog, Contact
+- **AND** a search icon is present
+- **AND** a red "Donate Us" button is visible
 
-### Scenario: Call to action section renders with parallax background
-  Given the user scrolls to the CTA section
-  Then a parallax background image with dark overlay is visible
-  And a centered heading "A Place For You" is displayed
-  And a white "Become A Member" button (btn-2 variant) is shown
+#### Scenario: Navbar Pages dropdown opens on click
 
-### Scenario: Latest sermons section shows sermon cards
-  Given the user scrolls to the Latest Sermons section
-  Then a centered "Latest Sermons" heading is displayed
-  And 3 sermon cards are shown in a row
-  And each card has a thumbnail image with a date badge
-  And each card has media type icons (video, audio, docs, download)
-  And each card shows a title, speaker name, categories, and time
+- **GIVEN** the user clicks the "Pages" nav link
+- **THEN** a dropdown menu appears with links: Home, About, Sermons, Sermons Details, Events, Blog, Blog Details, Contact
 
-### Scenario: Upcoming events section displays event cards
-  Given the user scrolls to the Upcoming Events section
-  Then a parallax heading area with dark overlay shows "Upcoming Events"
-  And event cards are displayed with thumbnails and content
-  And each event card shows title, date, time, location, description, and "Find Out More" button
+#### Scenario: Hero slider displays slides with headlines
 
-### Scenario: Gallery section shows image grid
-  Given the user scrolls to the Gallery section
-  Then a grid of images is displayed (10 images in flexbox wrap layout)
-  And each image has a hover overlay effect
+- **GIVEN** the user views the page
+- **THEN** a full-width hero slider is visible
+- **AND** each slide has a dark overlay background image
+- **AND** each slide shows a white headline, paragraph text, and a CTA button
+- **AND** the slider has at least 2 slides
 
-### Scenario: Blog section displays news cards
-  Given the user scrolls to the Blog section
-  Then a centered "Latest News" heading is displayed
-  And 3 blog post cards are shown in a row
-  And each card has an image, title, author, date, and excerpt
+#### Scenario: About section displays three feature cards
 
-### Scenario: Subscribe section renders newsletter form
-  Given the user scrolls to the Subscribe section
-  Then a dark background section is visible
-  And "Subscribe To Our Newsletter" heading is displayed on the left
-  And an email input field and subscribe button are on the right
+- **GIVEN** the user scrolls to the About section
+- **THEN** a "Welcome To Church" heading is displayed
+- **AND** 3 cards are shown in a row (Our Church, Our History, Our Sermons)
+- **AND** each card has an image, title, description paragraph, and "Read More" link
 
-### Scenario: Footer renders with four columns
-  Given the user views the footer
-  Then a dark background footer is displayed
-  And it contains 4 columns: Logo + description, Quick Links, News Latest, Contact Us
-  And a copyright bar with social media icons is at the bottom
-  And the footer links to https://www.componentdock.com/ as "Component Dock"
+#### Scenario: Call to action section renders with parallax background
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a parallax background image with dark overlay is visible
+- **AND** a centered heading "A Place For You" is displayed
+- **AND** a white "Become A Member" button (btn-2 variant) is shown
+
+#### Scenario: Latest sermons section shows sermon cards
+
+- **GIVEN** the user scrolls to the Latest Sermons section
+- **THEN** a centered "Latest Sermons" heading is displayed
+- **AND** 3 sermon cards are shown in a row
+- **AND** each card has a thumbnail image with a date badge
+- **AND** each card has media type icons (video, audio, docs, download)
+- **AND** each card shows a title, speaker name, categories, and time
+
+#### Scenario: Upcoming events section displays event cards
+
+- **GIVEN** the user scrolls to the Upcoming Events section
+- **THEN** a parallax heading area with dark overlay shows "Upcoming Events"
+- **AND** event cards are displayed with thumbnails and content
+- **AND** each event card shows title, date, time, location, description, and "Find Out More" button
+
+#### Scenario: Gallery section shows image grid
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a grid of images is displayed (10 images in flexbox wrap layout)
+- **AND** each image has a hover overlay effect
+
+#### Scenario: Blog section displays news cards
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** a centered "Latest News" heading is displayed
+- **AND** 3 blog post cards are shown in a row
+- **AND** each card has an image, title, author, date, and excerpt
+
+#### Scenario: Subscribe section renders newsletter form
+
+- **GIVEN** the user scrolls to the Subscribe section
+- **THEN** a dark background section is visible
+- **AND** "Subscribe To Our Newsletter" heading is displayed on the left
+- **AND** an email input field and subscribe button are on the right
+
+#### Scenario: Footer renders with four columns
+
+- **GIVEN** the user views the footer
+- **THEN** a dark background footer is displayed
+- **AND** it contains 4 columns: Logo + description, Quick Links, News Latest, Contact Us
+- **AND** a copyright bar with social media icons is at the bottom
+- **AND** the footer links to https://www.componentdock.com/ as "Component Dock"
 
 ## Verification checklist
 

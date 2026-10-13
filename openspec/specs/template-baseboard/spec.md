@@ -65,98 +65,80 @@ and a diagonal box-shadow.
 | logo-size         | 20px, uppercase, letter-spacing 0.1rem | .footer-logo rules          |
 | content-height    | 70vh (demo placeholder above footer) | .content height                  |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Footer renders with dark navy background
+### Feature: Baseboard template behaviour
 
-```gherkin
-Given the Baseboard component is mounted
-Then the footer section has a dark navy background (#141d2a)
-And the footer text is white (#fff)
-```
+#### Scenario: Footer renders with dark navy background
 
-### Scenario: CTA banner displays above footer
+- **GIVEN** the Baseboard component is mounted
+- **THEN** the footer section has a dark navy background (#141d2a)
+- **AND** the footer text is white (#fff)
 
-```gherkin
-Given the Baseboard component is mounted
-Then a CTA banner is visible above the footer grid
-And the CTA has a purple background (#8186d5)
-And the CTA contains the heading "Ready for a next project?"
-And the CTA contains the subheading "Let's get started!"
-And the CTA contains a "Contact us" button with square corners
-```
+#### Scenario: CTA banner displays above footer
 
-### Scenario: CTA banner has diagonal shadow
+- **GIVEN** the Baseboard component is mounted
+- **THEN** a CTA banner is visible above the footer grid
+- **AND** the CTA has a purple background (#8186d5)
+- **AND** the CTA contains the heading "Ready for a next project?"
+- **AND** the CTA contains the subheading "Let's get started!"
+- **AND** the CTA contains a "Contact us" button with square corners
 
-```gherkin
-Given the Baseboard component is mounted
-Then the CTA banner casts a diagonal box-shadow
-```
+#### Scenario: CTA banner has diagonal shadow
 
-### Scenario: Footer grid has 5 columns
+- **GIVEN** the Baseboard component is mounted
+- **THEN** the CTA banner casts a diagonal box-shadow
 
-```gherkin
-Given the Baseboard component is mounted
-Then the footer grid contains 5 columns:
-  | Column | Content                            |
-  | 1      | Logo + copyright                   |
-  | 2      | Customers links (Buyer, Supplier)  |
-  | 3      | Company links (About, Careers, Contact) |
-  | 4      | Further Info links (Terms, Privacy)|
-  | 5      | Social media icons                 |
-```
+#### Scenario: Footer grid has 5 columns
 
-### Scenario: Footer logo is uppercase with letter spacing
+- **GIVEN** the Baseboard component is mounted
+- **THEN** the footer grid contains 5 columns:
+| Column | Content                            |
+| 1      | Logo + copyright                   |
+| 2      | Customers links (Buyer, Supplier)  |
+| 3      | Company links (About, Careers, Contact) |
+| 4      | Further Info links (Terms, Privacy)|
+| 5      | Social media icons                 |
 
-```gherkin
-Given the Baseboard component is mounted
-Then the footer logo text is uppercase
-And the footer logo has letter-spacing of 0.1rem
-And the footer logo is white and 20px
-```
+#### Scenario: Footer logo is uppercase with letter spacing
 
-### Scenario: Column links have muted grey color and white hover
+- **GIVEN** the Baseboard component is mounted
+- **THEN** the footer logo text is uppercase
+- **AND** the footer logo has letter-spacing of 0.1rem
+- **AND** the footer logo is white and 20px
 
-```gherkin
-Given the Baseboard component is mounted
-Then the column links are muted grey (#666873)
-When a column link is hovered
-Then the link color changes to white (#fff)
-```
+#### Scenario: Column links have muted grey color and white hover
 
-### Scenario: Social icons are circular purple buttons
+- **GIVEN** the Baseboard component is mounted
+- **THEN** the column links are muted grey (#666873)
+- **WHEN** a column link is hovered
+- **THEN** the link color changes to white (#fff)
 
-```gherkin
-Given the Baseboard component is mounted
-Then the social icons section displays 5 icons
-And each social icon is a 40x40px circle
-And each social icon has a purple background (#8186d5)
-And each social icon is white
-```
+#### Scenario: Social icons are circular purple buttons
 
-### Scenario: Copyright text displays in muted grey
+- **GIVEN** the Baseboard component is mounted
+- **THEN** the social icons section displays 5 icons
+- **AND** each social icon is a 40x40px circle
+- **AND** each social icon has a purple background (#8186d5)
+- **AND** each social icon is white
 
-```gherkin
-Given the Baseboard component is mounted
-Then the copyright text is visible in muted grey (#666873)
-```
+#### Scenario: Copyright text displays in muted grey
 
-### Scenario: Responsive layout adapts to mobile
+- **GIVEN** the Baseboard component is mounted
+- **THEN** the copyright text is visible in muted grey (#666873)
 
-```gherkin
-Given the Baseboard component is mounted on a mobile viewport
-Then the 5-column footer grid stacks vertically
-And the CTA banner stacks vertically (heading + button stacked)
-```
+#### Scenario: Responsive layout adapts to mobile
 
-### Scenario: Footer links are accessible
+- **GIVEN** the Baseboard component is mounted on a mobile viewport
+- **THEN** the 5-column footer grid stacks vertically
+- **AND** the CTA banner stacks vertically (heading + button stacked)
 
-```gherkin
-Given the Baseboard component is mounted
-Then all footer links have href attributes
-And all social icon links have accessible labels or aria-labels
-And the footer uses semantic HTML (footer, nav, ul, li)
-```
+#### Scenario: Footer links are accessible
+
+- **GIVEN** the Baseboard component is mounted
+- **THEN** all footer links have href attributes
+- **AND** all social icon links have accessible labels or aria-labels
+- **AND** the footer uses semantic HTML (footer, nav, ul, li)
 
 ## Verification Checklist
 

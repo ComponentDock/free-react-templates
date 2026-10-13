@@ -55,89 +55,99 @@ Extracted from live preview CSS (`css/style.css`) at `https://preview.colorlib.c
 
 10. **Footer** — Dark bg `#40424a`. Copyright text centered. Replace Colorlib attribution with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: TownScope template behaviour
+
 Feature: TownScope CV/Resume Template
 
-  Background:
-    Given the TownScope template is loaded in the browser
-    Then all sections render without errors
-    And the page uses "Josefin Sans" font family
+Background:
+- **GIVEN** the TownScope template is loaded in the browser
+- **THEN** all sections render without errors
+- **AND** the page uses "Josefin Sans" font family
 
-  Scenario: Header displays branding and CTAs
-    Given I look at the header
-    Then I see the logo text "TownScope"
-    And I see the subtitle "Enhance your online presence"
-    And there are two buttons: "Download CV" and "Discover me"
-    And the header background is light blue-gray (#f2f7f8)
+#### Scenario: Header displays branding and CTAs
 
-  Scenario: Hero section shows personal info and portrait
-    Given I look at the hero section
-    Then there is a name heading (e.g. "Maria Williams")
-    And there is a short bio paragraph
-    And there is a "General Info" list with Date of Birth, Address, E-mail, Phone
-    And the info list shows label-value pairs
-    And there is a portrait image on the right column
-    And the layout is two equal columns
+- **GIVEN** I look at the header
+- **THEN** I see the logo text "TownScope"
+- **AND** I see the subtitle "Enhance your online presence"
+- **AND** there are two buttons: "Download CV" and "Discover me"
+- **AND** the header background is light blue-gray (#f2f7f8)
 
-  Scenario: Social links section displays icon row
-    Given I look at the social links section
-    Then there are 5 circular social icon links
-    And the icons are: Pinterest, LinkedIn, Instagram, Facebook, Twitter
-    And there is a "My Social Profiles" heading
-    And the section background is near-white (#f9f9f9)
+#### Scenario: Hero section shows personal info and portrait
 
-  Scenario: Work Experience section shows timeline
-    Given I look at the work experience section
-    Then the section title is "Work Experience"
-    And there are at least 2 resume list items
-    And each item has a year range, company name, role, and description
-    And timeline dots separate the items
-    And the section is centered in a single column
+- **GIVEN** I look at the hero section
+- **THEN** there is a name heading (e.g. "Maria Williams")
+- **AND** there is a short bio paragraph
+- **AND** there is a "General Info" list with Date of Birth, Address, E-mail, Phone
+- **AND** the info list shows label-value pairs
+- **AND** there is a portrait image on the right column
+- **AND** the layout is two equal columns
 
-  Scenario: Education section shows background image
-    Given I look at the education section
-    Then the section title is "Education"
-    And there is a background image behind the content
-    And the item structure matches the work experience section
+#### Scenario: Social links section displays icon row
 
-  Scenario: References section displays carousel
-    Given I look at the references section
-    Then the section title is "References"
-    And there are at least 3 review cards
-    And each card has a large quotation mark, review text, author name, and title
-    And the cards are in a carousel/slider layout
+- **GIVEN** I look at the social links section
+- **THEN** there are 5 circular social icon links
+- **AND** the icons are: Pinterest, LinkedIn, Instagram, Facebook, Twitter
+- **AND** there is a "My Social Profiles" heading
+- **AND** the section background is near-white (#f9f9f9)
 
-  Scenario: Portfolio section shows grid of work samples
-    Given I look at the portfolio section
-    Then the section title is "Portfolio"
-    And there is a "See All Portfolio" button
-    And there are 4 portfolio items in a grid
-    And each item has an image, title, and category label
-    And hovering an item shows a light overlay
+#### Scenario: Work Experience section shows timeline
 
-  Scenario: Extra Skills section shows progress and stats
-    Given I look at the extra skills section
-    Then the section title is "Extra Skills"
-    And there are 2 circular progress bars with percentage labels
-    And there are 2 stat boxes with dark background (#40424a)
-    And the stat boxes show "Years of Experience" and "Awards Won"
+- **GIVEN** I look at the work experience section
+- **THEN** the section title is "Work Experience"
+- **AND** there are at least 2 resume list items
+- **AND** each item has a year range, company name, role, and description
+- **AND** timeline dots separate the items
+- **AND** the section is centered in a single column
 
-  Scenario: Contact form collects user input
-    Given I look at the contact section
-    Then the section title is "Contact Me"
-    And there are input fields for Name, E-mail, and Subject
-    And there is a textarea for Message
-    And there is a "Send message" button
-    And inputs have transparent background with bottom border
+#### Scenario: Education section shows background image
 
-  Scenario: Footer shows copyright
-    Given I look at the footer
-    Then the footer has dark background (#40424a)
-    And there is centered copyright text
-    And the Colorlib attribution is replaced with a Component Dock link
-```
+- **GIVEN** I look at the education section
+- **THEN** the section title is "Education"
+- **AND** there is a background image behind the content
+- **AND** the item structure matches the work experience section
+
+#### Scenario: References section displays carousel
+
+- **GIVEN** I look at the references section
+- **THEN** the section title is "References"
+- **AND** there are at least 3 review cards
+- **AND** each card has a large quotation mark, review text, author name, and title
+- **AND** the cards are in a carousel/slider layout
+
+#### Scenario: Portfolio section shows grid of work samples
+
+- **GIVEN** I look at the portfolio section
+- **THEN** the section title is "Portfolio"
+- **AND** there is a "See All Portfolio" button
+- **AND** there are 4 portfolio items in a grid
+- **AND** each item has an image, title, and category label
+- **AND** hovering an item shows a light overlay
+
+#### Scenario: Extra Skills section shows progress and stats
+
+- **GIVEN** I look at the extra skills section
+- **THEN** the section title is "Extra Skills"
+- **AND** there are 2 circular progress bars with percentage labels
+- **AND** there are 2 stat boxes with dark background (#40424a)
+- **AND** the stat boxes show "Years of Experience" and "Awards Won"
+
+#### Scenario: Contact form collects user input
+
+- **GIVEN** I look at the contact section
+- **THEN** the section title is "Contact Me"
+- **AND** there are input fields for Name, E-mail, and Subject
+- **AND** there is a textarea for Message
+- **AND** there is a "Send message" button
+- **AND** inputs have transparent background with bottom border
+
+#### Scenario: Footer shows copyright
+
+- **GIVEN** I look at the footer
+- **THEN** the footer has dark background (#40424a)
+- **AND** there is centered copyright text
+- **AND** the Colorlib attribution is replaced with a Component Dock link
 
 ## Verification checklist
 

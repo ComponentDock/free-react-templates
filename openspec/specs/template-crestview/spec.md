@@ -81,6 +81,105 @@ Recreation of ColorLib's **Radisson** template as a React 19 + Vite + Tailwind 4
 - Bottom bar: copyright text + social icons (Facebook, Twitter, Dribbble, Behance)
 - Newsletter form with email input + submit button
 
+## Requirements
+
+### Feature: Top Bar + Navbar
+
+- Top info bar: phone number + currency/language selectors (dark or subtle bg)
+- Sticky navbar with white background + shadow on scroll
+- Logo (image-based)
+- Nav links: Home, About, Gallery, Pages (Elements, Rooms), Blog, Contact
+- Responsive hamburger toggle on mobile
+
+#### Scenario: Top Bar + Navbar renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Top Bar + Navbar band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Hero Banner
+
+- Full-width section with parallax background image
+- Dark gradient overlay (rgba(0,0,0,0.15))
+- Centered text: "Welcome to" (small uppercase) + "Radisson" (very large Playfair Display, 120px desktop / 60px mobile)
+- Subtext paragraph (max-width 620px, centered)
+- Play button for video popup
+
+#### Scenario: Hero Banner renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Hero Banner band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Booking Form
+
+- White card with shadow (box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.1))
+- 4-column grid: Check-in, Check-out, Total Guests, Coupon Code + Check Availability button
+- Date displays with day/month styling
+- "Check Availability" button (sharp corners, #4d8eff blue)
+
+#### Scenario: Booking Form renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Booking Form band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: About Section
+
+- Centered text-only section with light bg (#f1f9ff)
+- Decorative title treatment: small subtitle + large heading + body paragraph
+- "Request Custom Price" CTA button
+- Video embed area below (parallax image with play button overlay, dark overlay bg)
+
+#### Scenario: About Section renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the About Section band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Rooms Section
+
+- Split layout: room image left, carousel right
+- Room carousel with: price ($250/night), room name (e.g. "Double Deluxe Room"), description, amenity list (2 columns: AC, Parking, Pool / Restaurant, Rental, Meal)
+- "Book Now" button per slide
+- Navigation arrows for carousel
+
+#### Scenario: Rooms Section renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Rooms Section band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Testimonials
+
+- Light blue bg (#f1f9ff) section
+- Quote icon at top
+- Testimonial carousel: star ratings (5 gold stars), testimonial text, author name
+- Thumbnail gallery navigation (small circular images below)
+
+#### Scenario: Testimonials renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Testimonials band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Blog
+
+- Light blue bg (#f1f9ff) continuation
+- Section heading: "Our Blog Posts"
+- 3-column grid: blog card with image thumbnail, category button tag, date + comments meta, heading link, excerpt text
+
+#### Scenario: Blog renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Blog band SHALL be present at its documented position with the structure, copy and tokens named above
+
+### Feature: Footer
+
+- Dark bg section (implied dark, standard footer treatment)
+- 4-column layout: About Agency text, Quick Links (2 sub-columns), Newsletter signup form, Instagram feed (8 image grid)
+- Bottom bar: copyright text + social icons (Facebook, Twitter, Dribbble, Behance)
+- Newsletter form with email input + submit button
+
+#### Scenario: Footer renders as documented
+
+- **GIVEN** the recreation is rendered on a desktop viewport
+- **THEN** the Footer band SHALL be present at its documented position with the structure, copy and tokens named above
+
 ## Verification Checklist
 
 - [ ] Section order matches original: TopBar → Navbar → Hero → Booking → About → Rooms → Testimonials → Blog → Footer

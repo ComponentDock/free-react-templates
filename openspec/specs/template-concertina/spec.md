@@ -19,63 +19,77 @@ Recreation of ColorLib `accordion-05` (`https://colorlib.com/wp/template/accordi
 - **Radii & Shadows**: `rounded-lg` (0.5rem), subtle shadow elevation (`shadow-sm`, `shadow-md`).
 - **Layout Structure**: Single-page layout with sticky navbar, hero banner, interactive accordion/FAQ sections, feature highlights, testimonials, newsletter form, and footer linking `https://www.componentdock.com/`.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Requirement 1: Sticky Navigation Header
 
 - The header must remain fixed at the top with brand logo, navigation links, and a CTA button.
-- **Scenario**: User views navigation
-  - Given the page is loaded
-  - When the user scrolls down
-  - Then the header stays fixed at the top with clear navigation links.
+
+#### Scenario: User views navigation
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls down
+- **THEN** the header stays fixed at the top with clear navigation links
 
 ### Requirement 2: Hero Banner
 
 - Display a prominent hero section with headline, descriptive subtext, and primary call-to-action button.
-- **Scenario**: User views hero banner
-  - Given the user arrives at the site
-  - When they view the hero section
-  - Then they see a clear value proposition and primary action button.
+
+#### Scenario: User views hero banner
+
+- **GIVEN** the user arrives at the site
+- **WHEN** they view the hero section
+- **THEN** they see a clear value proposition and primary action button
 
 ### Requirement 3: Interactive Accordion & FAQ Section
 
 - Interactive accordion items that expand and collapse smoothly to reveal detailed content.
-- **Scenario**: User toggles accordion items
-  - Given the accordion list is displayed with collapsed items
-  - When the user clicks an accordion header
-  - Then the corresponding content expands while other items remain collapsed.
+
+#### Scenario: User toggles accordion items
+
+- **GIVEN** the accordion list is displayed with collapsed items
+- **WHEN** the user clicks an accordion header
+- **THEN** the corresponding content expands while other items remain collapsed
 
 ### Requirement 4: Feature Highlights Grid
 
 - Grid of key features highlighting benefits with icons and descriptions.
-- **Scenario**: User browses feature cards
-  - Given the user scrolls to the features section
-  - When they view the feature cards
-  - Then they see clean cards with icons, titles, and descriptions.
+
+#### Scenario: User browses feature cards
+
+- **GIVEN** the user scrolls to the features section
+- **WHEN** they view the feature cards
+- **THEN** they see clean cards with icons, titles, and descriptions
 
 ### Requirement 5: Testimonials Section
 
 - Social proof section featuring client quotes and avatars.
-- **Scenario**: User reads testimonials
-  - Given the user reaches the testimonial section
-  - When they view client feedback
-  - Then they see professional quotes and user attribution.
+
+#### Scenario: User reads testimonials
+
+- **GIVEN** the user reaches the testimonial section
+- **WHEN** they view client feedback
+- **THEN** they see professional quotes and user attribution
 
 ### Requirement 6: Newsletter Signup Form
 
 - Email subscription form with validation.
-- **Scenario**: User subscribes to newsletter
-  - Given the user enters a valid email in the newsletter input
-  - When they click subscribe
-  - Then a success confirmation message is displayed.
+
+#### Scenario: User subscribes to newsletter
+
+- **GIVEN** the user enters a valid email in the newsletter input
+- **WHEN** they click subscribe
+- **THEN** a success confirmation message is displayed
 
 ### Requirement 7: Footer with Component Dock Attribution
 
 - Footer containing site links, copyright, and required attribution link to `https://www.componentdock.com/`.
-- **Scenario**: User checks footer attribution
-  - Given the user scrolls to the bottom of the page
-  - When they view the footer
-  - Then they find the copyright and a link to Component Dock (`https://www.componentdock.com/`).
+
+#### Scenario: User checks footer attribution
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** they view the footer
+- **THEN** they find the copyright and a link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

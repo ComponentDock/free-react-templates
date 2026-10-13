@@ -27,90 +27,93 @@ Extracted from screenshot analysis (preview unreachable; screenshot is sole refe
 | Overall palette    | Muted earth tones in hero image, white text, dark search bar |
 | Section bg         | Hero image (full viewport height, centered) |
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Hero Section
 
-```gherkin
 Feature: Hero section with search
 
-  Scenario: Full-bleed hero background image
-    Given the page loads
-    Then the hero section fills the viewport
-    And the hero displays a background image from picsum.photos
+#### Scenario: Full-bleed hero background image
 
-  Scenario: Heading text is displayed
-    Given the hero section is visible
-    Then a heading "WHAT ARE YOU LOOKING FOR?" is shown
-    And the heading is white, uppercase, and bold
+- **GIVEN** the page loads
+- **THEN** the hero section fills the viewport
+- **AND** the hero displays a background image from picsum.photos
 
-  Scenario: Search bar is centered below heading
-    Given the hero section is visible
-    Then a search bar is displayed below the heading
-    And the search bar has a dark background
-    And the search bar spans a significant width (~60-70% viewport)
+#### Scenario: Heading text is displayed
 
-  Scenario: Search input accepts text
-    Given the search bar is visible
-    When the user types in the search input
-    Then the typed text appears in the input field
-    And a placeholder "Type to search." is shown when empty
+- **GIVEN** the hero section is visible
+- **THEN** a heading "WHAT ARE YOU LOOKING FOR?" is shown
+- **AND** the heading is white, uppercase, and bold
 
-  Scenario: Search icon is displayed
-    Given the search bar is visible
-    Then a magnifying glass icon is shown inside the search bar
-    And the icon is white
-```
+#### Scenario: Search bar is centered below heading
+
+- **GIVEN** the hero section is visible
+- **THEN** a search bar is displayed below the heading
+- **AND** the search bar has a dark background
+- **AND** the search bar spans a significant width (~60-70% viewport)
+
+#### Scenario: Search input accepts text
+
+- **GIVEN** the search bar is visible
+- **WHEN** the user types in the search input
+- **THEN** the typed text appears in the input field
+- **AND** a placeholder "Type to search." is shown when empty
+
+#### Scenario: Search icon is displayed
+
+- **GIVEN** the search bar is visible
+- **THEN** a magnifying glass icon is shown inside the search bar
+- **AND** the icon is white
 
 ### Category Links
 
-```gherkin
 Feature: Category quick links
 
-  Scenario: Category links are shown below search bar
-    Given the hero section is visible
-    When the search bar is displayed
-    Then category links are shown below the search bar
+#### Scenario: Category links are shown below search bar
 
-  Scenario: Category links content
-    Given the category links are visible
-    Then the links include "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
-    And each link is white text
+- **GIVEN** the hero section is visible
+- **WHEN** the search bar is displayed
+- **THEN** category links are shown below the search bar
 
-  Scenario: Category links are interactive
-    Given a category link is visible
-    When the user hovers over a category link
-    Then the link shows a hover state (opacity change or underline)
-```
+#### Scenario: Category links content
+
+- **GIVEN** the category links are visible
+- **THEN** the links include "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
+- **AND** each link is white text
+
+#### Scenario: Category links are interactive
+
+- **GIVEN** a category link is visible
+- **WHEN** the user hovers over a category link
+- **THEN** the link shows a hover state (opacity change or underline)
 
 ### Footer
 
-```gherkin
 Feature: Footer with attribution
 
-  Scenario: Footer is present
-    Given the page loads
-    Then a footer section is displayed at the bottom
-    And the footer contains a link to https://www.componentdock.com/
-    And the footer is branded "Component Dock"
-```
+#### Scenario: Footer is present
+
+- **GIVEN** the page loads
+- **THEN** a footer section is displayed at the bottom
+- **AND** the footer contains a link to https://www.componentdock.com/
+- **AND** the footer is branded "Component Dock"
 
 ### Responsive
 
-```gherkin
 Feature: Responsive layout
 
-  Scenario: Mobile hero
-    Given the page loads on a mobile viewport (375px)
-    Then the hero section fills the viewport
-    And the heading is readable and appropriately sized
-    And the search bar spans near full width
+#### Scenario: Mobile hero
 
-  Scenario: Desktop hero
-    Given the page loads on a desktop viewport (1280px)
-    Then the hero section fills the viewport
-    And the search bar is centered with constrained width
-```
+- **GIVEN** the page loads on a mobile viewport (375px)
+- **THEN** the hero section fills the viewport
+- **AND** the heading is readable and appropriately sized
+- **AND** the search bar spans near full width
+
+#### Scenario: Desktop hero
+
+- **GIVEN** the page loads on a desktop viewport (1280px)
+- **THEN** the hero section fills the viewport
+- **AND** the search bar is centered with constrained width
 
 ## Verification checklist
 

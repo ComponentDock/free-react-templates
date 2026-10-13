@@ -81,129 +81,134 @@ Tailwind 4 + TypeScript single-page app.
 11. **Footer** — dark bg. Multi-column: company info + social, links, newsletter
     form, copyright + Colorlib credit (replaced with Component Dock).
 
-## Gherkin requirements
+## Requirements
 
 ### Top Bar
-```gherkin
-Scenario: Top bar shows contact info and social links
-  Given the page is loaded
-  Then the top bar displays a phone number and email address on the left
-  And social media icons are displayed on the right
-```
+
+#### Scenario: Top bar shows contact info and social links
+
+- **GIVEN** the page is loaded
+- **THEN** the top bar displays a phone number and email address on the left
+- **AND** social media icons are displayed on the right
 
 ### Navbar
-```gherkin
-Scenario: Navbar shows brand and navigation links
-  Given the page is loaded
-  Then the brand "Scrubly" is visible
-  And nav links "Home", "About", "Services", "Portfolio", "Pricing", "Blog", "Contact" are shown
 
-Scenario: Navbar becomes opaque on scroll
-  Given the page is loaded
-  When the user scrolls down
-  Then the navbar background changes from transparent to white
-  And nav link text changes from white to dark
-```
+#### Scenario: Navbar shows brand and navigation links
+
+- **GIVEN** the page is loaded
+- **THEN** the brand "Scrubly" is visible
+- **AND** nav links "Home", "About", "Services", "Portfolio", "Pricing", "Blog", "Contact" are shown
+
+#### Scenario: Navbar becomes opaque on scroll
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls down
+- **THEN** the navbar background changes from transparent to white
+- **AND** nav link text changes from white to dark
 
 ### Hero
-```gherkin
-Scenario: Hero displays headline and CTA
-  Given the hero section is visible
-  Then the subheading "Leave the house cleaning chores to us" is displayed
-  And the headline is prominently shown
-  And a "Learn More" button with blue background is visible
 
-Scenario: Hero has dark overlay on background image
-  Given the hero section is visible
-  Then a dark semi-transparent overlay covers the background image
-```
+#### Scenario: Hero displays headline and CTA
+
+- **GIVEN** the hero section is visible
+- **THEN** the subheading "Leave the house cleaning chores to us" is displayed
+- **AND** the headline is prominently shown
+- **AND** a "Learn More" button with blue background is visible
+
+#### Scenario: Hero has dark overlay on background image
+
+- **GIVEN** the hero section is visible
+- **THEN** a dark semi-transparent overlay covers the background image
 
 ### Appointment Form
-```gherkin
-Scenario: Appointment form shows input fields and submit
-  Given the appointment form is visible
-  Then input fields for Name and Phone are displayed
-  And dropdowns for Select Services and Select Cleaners are shown
-  And a "Make an Appointment" blue submit button is visible
-```
+
+#### Scenario: Appointment form shows input fields and submit
+
+- **GIVEN** the appointment form is visible
+- **THEN** input fields for Name and Phone are displayed
+- **AND** dropdowns for Select Services and Select Cleaners are shown
+- **AND** a "Make an Appointment" blue submit button is visible
 
 ### About Section
-```gherkin
-Scenario: About section shows business hours and welcome text
-  Given the about section is visible
-  Then business hours are displayed in a card
-  And the heading "Let's make you fresher than ever" is shown
-  And counter stats (years, customers, buildings) are displayed
 
-Scenario: About section shows emergency contact
-  Given the about section is visible
-  Then an emergency phone number is displayed
-```
+#### Scenario: About section shows business hours and welcome text
+
+- **GIVEN** the about section is visible
+- **THEN** business hours are displayed in a card
+- **AND** the heading "Let's make you fresher than ever" is shown
+- **AND** counter stats (years, customers, buildings) are displayed
+
+#### Scenario: About section shows emergency contact
+
+- **GIVEN** the about section is visible
+- **THEN** an emergency phone number is displayed
 
 ### Services
-```gherkin
-Scenario: Services section shows 6 service items
-  Given the services section is visible
-  Then the header "How We Works" is displayed
-  And 6 service items are shown in a grid
-  And each item has an icon, title, and description
 
-Scenario: Service icon changes color on hover
-  Given the services section is visible
-  When the user hovers over a service item
-  Then the icon background changes to blue
-  And the icon color changes to white
-```
+#### Scenario: Services section shows 6 service items
+
+- **GIVEN** the services section is visible
+- **THEN** the header "How We Works" is displayed
+- **AND** 6 service items are shown in a grid
+- **AND** each item has an icon, title, and description
+
+#### Scenario: Service icon changes color on hover
+
+- **GIVEN** the services section is visible
+- **WHEN** the user hovers over a service item
+- **THEN** the icon background changes to blue
+- **AND** the icon color changes to white
 
 ### Team
-```gherkin
-Scenario: Team section shows staff members
-  Given the team section is visible
-  Then the header "Our Team" is displayed
-  And 3 staff member cards are shown
-  And each card has a photo, name, role, and social icons
-```
+
+#### Scenario: Team section shows staff members
+
+- **GIVEN** the team section is visible
+- **THEN** the header "Our Team" is displayed
+- **AND** 3 staff member cards are shown
+- **AND** each card has a photo, name, role, and social icons
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials show customer reviews
-  Given the testimonials section is visible
-  Then the header "Happy Customer" is displayed on a dark background
-  And a carousel of testimonial cards is shown
-  And each card has a user photo, name, role, and quote
-```
+
+#### Scenario: Testimonials show customer reviews
+
+- **GIVEN** the testimonials section is visible
+- **THEN** the header "Happy Customer" is displayed on a dark background
+- **AND** a carousel of testimonial cards is shown
+- **AND** each card has a user photo, name, role, and quote
 
 ### Portfolio
-```gherkin
-Scenario: Portfolio shows cleaning project images
-  Given the portfolio section is visible
-  Then the header "Our Project" is displayed
-  And 8 project images are shown in a grid
-  And each image has an expand button overlay
-```
+
+#### Scenario: Portfolio shows cleaning project images
+
+- **GIVEN** the portfolio section is visible
+- **THEN** the header "Our Project" is displayed
+- **AND** 8 project images are shown in a grid
+- **AND** each image has an expand button overlay
 
 ### Blog
-```gherkin
-Scenario: Blog section shows latest news
-  Given the blog section is visible
-  Then the header "Latest News" is displayed
-  And 3 blog cards are shown
-  And each card has a thumbnail, author info, and title
-```
+
+#### Scenario: Blog section shows latest news
+
+- **GIVEN** the blog section is visible
+- **THEN** the header "Latest News" is displayed
+- **AND** 3 blog cards are shown
+- **AND** each card has a thumbnail, author info, and title
 
 ### Footer
-```gherkin
-Scenario: Footer shows company info and newsletter
-  Given the footer is visible
-  Then company description and social links are displayed
-  And navigation link columns are shown
-  And a newsletter email input and send button are visible
 
-Scenario: Footer includes Component Dock attribution
-  Given the footer is visible
-  Then a link to "https://www.componentdock.com/" is present
-  And the link text mentions "Component Dock"
-```
+#### Scenario: Footer shows company info and newsletter
+
+- **GIVEN** the footer is visible
+- **THEN** company description and social links are displayed
+- **AND** navigation link columns are shown
+- **AND** a newsletter email input and send button are visible
+
+#### Scenario: Footer includes Component Dock attribution
+
+- **GIVEN** the footer is visible
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

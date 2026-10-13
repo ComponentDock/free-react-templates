@@ -51,135 +51,143 @@ Extracted from the live preview CSS (`css/main.css`):
 8. **Contact Area** — Split: contact info (address, email, phone with icons) on left + contact form on right.
 9. **Footer** — Dark background. 3 columns: About Agency (nav links), Newsletter (email signup form), Instafeed (image grid). Footer bottom bar with copyright and social icons.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar renders with logo and menu toggle
-  Given the page loads
-  Then a navbar is visible at the top
-  And a logo text "CraftLane" is displayed
-  And a hamburger menu button is present for mobile viewports
-```
+
+#### Scenario: Navbar renders with logo and menu toggle
+
+- **GIVEN** the page loads
+- **THEN** a navbar is visible at the top
+- **AND** a logo text "CraftLane" is displayed
+- **AND** a hamburger menu button is present for mobile viewports
 
 ### Banner / Hero
-```gherkin
-Scenario: Hero section displays fullscreen with overlay
-  Given the page loads
-  Then a fullscreen hero section is visible
-  And a dark overlay covers the background image
-  And the heading "Crafting Best Experience" is displayed
-  And a subtitle describing art/crafting services is shown
 
-Scenario: Hero section is responsive
-  Given the viewport is mobile (< 768px)
-  Then the hero height adjusts to 600px
-  And the heading remains centered
-```
+#### Scenario: Hero section displays fullscreen with overlay
+
+- **GIVEN** the page loads
+- **THEN** a fullscreen hero section is visible
+- **AND** a dark overlay covers the background image
+- **AND** the heading "Crafting Best Experience" is displayed
+- **AND** a subtitle describing art/crafting services is shown
+
+#### Scenario: Hero section is responsive
+
+- **GIVEN** the viewport is mobile (< 768px)
+- **THEN** the hero height adjusts to 600px
+- **AND** the heading remains centered
 
 ### Experience Area
-```gherkin
-Scenario: Experience section shows images and content
-  Given the page loads
-  Then the experience section is visible with a light background
-  And two image thumbnails are displayed side by side
-  And a content block shows a heading, subtitle, paragraph, and CTA button
-  And the CTA button says "View Details"
 
-Scenario: Experience section is responsive
-  Given the viewport is mobile
-  Then the images and content stack vertically
-```
+#### Scenario: Experience section shows images and content
+
+- **GIVEN** the page loads
+- **THEN** the experience section is visible with a light background
+- **AND** two image thumbnails are displayed side by side
+- **AND** a content block shows a heading, subtitle, paragraph, and CTA button
+- **AND** the CTA button says "View Details"
+
+#### Scenario: Experience section is responsive
+
+- **GIVEN** the viewport is mobile
+- **THEN** the images and content stack vertically
 
 ### Carousel / Testimonials
-```gherkin
-Scenario: Carousel displays testimonial slides
-  Given the page loads
-  Then a carousel section with parallax background is visible
-  And a dark overlay covers the parallax background
-  And testimonial slides are displayed in a carousel
-  And prev/next navigation triggers are present
 
-Scenario: Carousel navigation works
-  Given the carousel is displayed
-  When the user clicks the next trigger
-  Then the next slide is shown
-  When the user clicks the previous trigger
-  Then the previous slide is shown
-```
+#### Scenario: Carousel displays testimonial slides
+
+- **GIVEN** the page loads
+- **THEN** a carousel section with parallax background is visible
+- **AND** a dark overlay covers the parallax background
+- **AND** testimonial slides are displayed in a carousel
+- **AND** prev/next navigation triggers are present
+
+#### Scenario: Carousel navigation works
+
+- **GIVEN** the carousel is displayed
+- **WHEN** the user clicks the next trigger
+- **THEN** the next slide is shown
+- **WHEN** the user clicks the previous trigger
+- **THEN** the previous slide is shown
 
 ### Service Area
-```gherkin
-Scenario: Services are displayed in a 4-column grid
-  Given the page loads
-  Then a services section is visible
-  And 4 service items are displayed in a grid
-  And each service item has an icon, title, and description
 
-Scenario: Service items are responsive
-  Given the viewport is mobile
-  Then service items stack into a single column
-```
+#### Scenario: Services are displayed in a 4-column grid
+
+- **GIVEN** the page loads
+- **THEN** a services section is visible
+- **AND** 4 service items are displayed in a grid
+- **AND** each service item has an icon, title, and description
+
+#### Scenario: Service items are responsive
+
+- **GIVEN** the viewport is mobile
+- **THEN** service items stack into a single column
 
 ### Video Area
-```gherkin
-Scenario: Video section shows thumbnail and text
-  Given the page loads
-  Then a video section with dark overlay background is visible
-  And a video thumbnail with play button is shown on the left
-  And descriptive text is shown on the right
-  And the text includes a heading and paragraph
 
-Scenario: Video section is responsive
-  Given the viewport is mobile
-  Then the video thumbnail and text stack vertically
-```
+#### Scenario: Video section shows thumbnail and text
+
+- **GIVEN** the page loads
+- **THEN** a video section with dark overlay background is visible
+- **AND** a video thumbnail with play button is shown on the left
+- **AND** descriptive text is shown on the right
+- **AND** the text includes a heading and paragraph
+
+#### Scenario: Video section is responsive
+
+- **GIVEN** the viewport is mobile
+- **THEN** the video thumbnail and text stack vertically
 
 ### Service Area 2
-```gherkin
-Scenario: Second services section shows horizontal items
-  Given the page loads
-  Then a second services section is visible
-  And 3 service items are displayed in a row layout
-  And each item has an icon, title, and description arranged horizontally
 
-Scenario: Second services section is responsive
-  Given the viewport is mobile
-  Then service items stack vertically
-```
+#### Scenario: Second services section shows horizontal items
+
+- **GIVEN** the page loads
+- **THEN** a second services section is visible
+- **AND** 3 service items are displayed in a row layout
+- **AND** each item has an icon, title, and description arranged horizontally
+
+#### Scenario: Second services section is responsive
+
+- **GIVEN** the viewport is mobile
+- **THEN** service items stack vertically
 
 ### Contact Area
-```gherkin
-Scenario: Contact section shows info and form
-  Given the page loads
-  Then a contact section is visible
-  And contact information (address, email, phone) is displayed on the left
-  And a contact form is displayed on the right
-  And the form has name, email, and message fields
-  And the form has a submit button
 
-Scenario: Contact form validates input
-  Given the contact form is displayed
-  When the user submits with empty fields
-  Then validation errors are shown
-```
+#### Scenario: Contact section shows info and form
+
+- **GIVEN** the page loads
+- **THEN** a contact section is visible
+- **AND** contact information (address, email, phone) is displayed on the left
+- **AND** a contact form is displayed on the right
+- **AND** the form has name, email, and message fields
+- **AND** the form has a submit button
+
+#### Scenario: Contact form validates input
+
+- **GIVEN** the contact form is displayed
+- **WHEN** the user submits with empty fields
+- **THEN** validation errors are shown
 
 ### Footer
-```gherkin
-Scenario: Footer displays with dark background
-  Given the page loads
-  Then a footer is visible with a dark background
-  And an "About Agency" column with navigation links is shown
-  And a newsletter signup form with email input and button is shown
-  And an Instagram feed grid with placeholder images is shown
 
-Scenario: Footer has bottom bar with copyright and social links
-  Given the footer is displayed
-  Then a footer bottom bar is visible
-  And copyright text is shown
-  And social media icon links are present
-  And a "Component Dock" attribution link is present
-```
+#### Scenario: Footer displays with dark background
+
+- **GIVEN** the page loads
+- **THEN** a footer is visible with a dark background
+- **AND** an "About Agency" column with navigation links is shown
+- **AND** a newsletter signup form with email input and button is shown
+- **AND** an Instagram feed grid with placeholder images is shown
+
+#### Scenario: Footer has bottom bar with copyright and social links
+
+- **GIVEN** the footer is displayed
+- **THEN** a footer bottom bar is visible
+- **AND** copyright text is shown
+- **AND** social media icon links are present
+- **AND** a "Component Dock" attribution link is present
 
 ## Verification checklist
 

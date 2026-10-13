@@ -88,56 +88,62 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - FontAwesome used for icons — replace with lucide-react
 - Replace Colorlib logo/images with placeholder or ComponentDock branding
 - Replace "Amado" brand name with "OakCraft" throughout
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: OakCraft template behaviour
+
 Feature: OakCraft - Furniture Ecommerce Website Template
 
-  Scenario: Sidebar header renders with brand and navigation
-    Given the page loads
-    Then the sidebar displays the brand logo "OakCraft"
-    And navigation links are visible: Home, Shop, Product, Cart, Checkout
-    And discount and "New this week" buttons are displayed
-    And cart, favourite, and search icon links are present
-    And social icons (Pinterest, Instagram, Facebook, Twitter) are at the bottom
+#### Scenario: Sidebar header renders with brand and navigation
 
-  Scenario: Product categories grid displays nine furniture items
-    Given the page loads
-    Then a 3-column grid of 9 product category cards is displayed
-    And each card has a full-width background image
-    And hovering a card shows a dark overlay with yellow accent line
-    And each card displays a price and product name on hover
-    And products include "Modern Chair" ($180), "Small Table" ($320), "Metallic Chair" ($318)
+- **GIVEN** the page loads
+- **THEN** the sidebar displays the brand logo "OakCraft"
+- **AND** navigation links are visible: Home, Shop, Product, Cart, Checkout
+- **AND** discount and "New this week" buttons are displayed
+- **AND** cart, favourite, and search icon links are present
+- **AND** social icons (Pinterest, Instagram, Facebook, Twitter) are at the bottom
 
-  Scenario: Newsletter section displays subscription form
-    Given the product grid is visible
-    Then a dark gray (#3c3c3c) newsletter section is displayed
-    And the heading "Subscribe for a 25% Discount" is shown with yellow accent
-    And an email input with white background is present
-    And a yellow "Subscribe" button is positioned to the right
+#### Scenario: Product categories grid displays nine furniture items
 
-  Scenario: Footer displays logo, copyright, and navigation
-    Given the newsletter section is visible
-    Then the footer has a white background
-    And the logo and copyright text are on the left
-    And navigation links (Home, Shop, Product, Cart, Checkout) are on the right
-    And the copyright links to Component Dock (https://www.componentdock.com/)
+- **GIVEN** the page loads
+- **THEN** a 3-column grid of 9 product category cards is displayed
+- **AND** each card has a full-width background image
+- **AND** hovering a card shows a dark overlay with yellow accent line
+- **AND** each card displays a price and product name on hover
+- **AND** products include "Modern Chair" ($180), "Small Table" ($320), "Metallic Chair" ($318)
 
-  Scenario: Search overlay opens and closes
-    Given the page loads
-    And the user clicks the search icon
-    Then a fullscreen search overlay appears with an input field
-    And clicking the close button hides the overlay
+#### Scenario: Newsletter section displays subscription form
 
-  Scenario: All sections match the original ColorLib Amado design
-    Given the page loads with all sections
-    Then the section order matches: Sidebar Header, Product Categories Grid,
-      Newsletter Area, Footer
-    And the brand color #fbb710 is used for buttons and accents
-    And the dark color #131212 is used for headings and active states
-    And buttons have square corners (border-radius: 0)
-    And the layout uses a left sidebar + right content flex arrangement
-```
+- **GIVEN** the product grid is visible
+- **THEN** a dark gray (#3c3c3c) newsletter section is displayed
+- **AND** the heading "Subscribe for a 25% Discount" is shown with yellow accent
+- **AND** an email input with white background is present
+- **AND** a yellow "Subscribe" button is positioned to the right
+
+#### Scenario: Footer displays logo, copyright, and navigation
+
+- **GIVEN** the newsletter section is visible
+- **THEN** the footer has a white background
+- **AND** the logo and copyright text are on the left
+- **AND** navigation links (Home, Shop, Product, Cart, Checkout) are on the right
+- **AND** the copyright links to Component Dock (https://www.componentdock.com/)
+
+#### Scenario: Search overlay opens and closes
+
+- **GIVEN** the page loads
+- **AND** the user clicks the search icon
+- **THEN** a fullscreen search overlay appears with an input field
+- **AND** clicking the close button hides the overlay
+
+#### Scenario: All sections match the original ColorLib Amado design
+
+- **GIVEN** the page loads with all sections
+- **THEN** the section order matches: Sidebar Header, Product Categories Grid,
+Newsletter Area, Footer
+- **AND** the brand color #fbb710 is used for buttons and accents
+- **AND** the dark color #131212 is used for headings and active states
+- **AND** buttons have square corners (border-radius: 0)
+- **AND** the layout uses a left sidebar + right content flex arrangement
 
 ## Verification checklist
 

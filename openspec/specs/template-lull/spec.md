@@ -24,15 +24,19 @@ Designed for hotels, resorts, hospitality agencies, and bed-and-breakfasts.
 
 ---
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Navigation & Header
+
+#### Scenario: Navigation & Header
 
 - The header must display the logo "LULL HOTEL BOOKING" and navigation links: Home, About, Rooms, Resto & Bar, Blog, Contact.
 - Scenarios:
   - Scenario: User views header and clicks nav links.
 
 ### Requirement 2: Hero Section & Booking Bar
+
+#### Scenario: Hero Section & Booking Bar
 
 - Hero features a full-width background image with dark overlay, subtitle "ENJOY YOUR WONDERFUL HOLIDAYS...", headline "Most Relaxing Place", and CTA buttons "TAKE A TOUR" and "LEARN MORE".
 - Interactive booking bar widget with inputs for Check-In, Check-Out, Room type dropdown, Guest count dropdown, and "CHECK AVAILABILITY" button.
@@ -41,11 +45,15 @@ Designed for hotels, resorts, hospitality agencies, and bed-and-breakfasts.
 
 ### Requirement 3: About Section
 
+#### Scenario: About Section
+
 - Heading "Lull A Hotel Booking Agency", description paragraph, and "BOOK YOUR ROOM NOW" action link.
 - Scenarios:
   - Scenario: User reads agency overview and triggers booking prompt.
 
 ### Requirement 4: Services Grid
+
+#### Scenario: Services Grid
 
 - 6 key hotel services with icons and titles: Free Wifi, Easy Booking, Restaurant, Swimming Pool, Beauty & Health, Help & Support.
 - Scenarios:
@@ -53,11 +61,15 @@ Designed for hotels, resorts, hospitality agencies, and bed-and-breakfasts.
 
 ### Requirement 5: Featured Rooms
 
+#### Scenario: Featured Rooms
+
 - Grid of featured accommodations (Suite Room, Family Room, Deluxe Room) with image, description, price, and "BOOK NOW" action.
 - Scenarios:
   - Scenario: User browses available rooms and selects one for booking.
 
 ### Requirement 6: Restaurant & Bar Menu
+
+#### Scenario: Restaurant & Bar Menu
 
 - Grid showcasing popular dishes (Grilled Beef with potatoes, Ultimate Overload, Ham & Pineapple) with prices and descriptions.
 - Scenarios:
@@ -65,16 +77,19 @@ Designed for hotels, resorts, hospitality agencies, and bed-and-breakfasts.
 
 ### Requirement 7: Testimonials & Blog
 
+#### Scenario: Testimonials & Blog
+
 - Guest reviews carousel ("Happy Guests") and recent blog posts grid ("Best Hotel Near Beach") with comments and dates.
 - Scenarios:
   - Scenario: User reads guest feedback and travel blog updates.
 
 ### Requirement 8: Footer
 
+#### Scenario: Footer
+
 - Footer columns with about summary, social links, service links, quick links, contact info (phone, email), and mandatory link to `https://www.componentdock.com/` ("Component Dock").
 - Scenarios:
   - Scenario: User checks footer links and finds Component Dock attribution.
-
 ---
 
 ## Verification Checklist

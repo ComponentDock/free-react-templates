@@ -56,111 +56,103 @@ Extracted from `https://preview.colorlib.com/theme/etrain/css/style.css`:
 - Advance feature icon bg: `#fdeae5` (pinkish), `.ti-stamp` variant `#fff0e0` (peachy)
 - Course card image: full-width `.special_img` class, bordered text area below
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Hero / Banner section
-```
-Given a visitor opens the LearnVibe homepage
-Then a hero section is visible with:
-  - An headline: "Advance Your Career with Expert-Led Courses"
-  - A subtext paragraph about gaining in-demand skills
-  - A statistic line: "Join 15,000+ learners worldwide"
-  - Two CTA buttons: "Browse Courses" (btn_1 gradient pill) and "Start Free Trial" (btn_2 outline pill)
-And the banner occupies roughly 880px height on desktop
-```
+### Feature: LearnVibe template behaviour
 
-### Scenario: Features section
-```
-Given the visitor scrolls past the banner
-Then a features section displays four columns:
-  - Column 1: "Why LearnVibe?" heading + paragraph + "Learn More" button (btn_1)
-  - Column 2: "Flexible Learning" feature card with icon + text
-  - Column 3: "Expert Instructors" feature card with icon + text
-  - Column 4: "Career Support" feature card with icon + text
-And each feature card has a light border that turns coral on hover
-```
+#### Scenario: Hero / Banner section
 
-### Scenario: About / Learning section
-```
-Given the visitor scrolls past features
-Then a two-column layout appears:
-  - Left column: decorative image with background pattern
-  - Right column: "About us" label, "Learn Skills That Matter for Your Career" heading
-    - Two bullet points with icons (hands-on projects, industry certificates)
-    - "Read More" button (btn_1)
-```
+- **GIVEN** a visitor opens the LearnVibe homepage
+- **THEN** a hero section is visible with:
+- An headline: "Advance Your Career with Expert-Led Courses"
+- A subtext paragraph about gaining in-demand skills
+- A statistic line: "Join 15,000+ learners worldwide"
+- Two CTA buttons: "Browse Courses" (btn_1 gradient pill) and "Start Free Trial" (btn_2 outline pill)
+- **AND** the banner occupies roughly 880px height on desktop
 
-### Scenario: Member Counter section
-```
-Given the visitor scrolls past the about section
-Then a full-width gradient band (orange-red to golden) shows four counters:
-  - "250" — "Courses Available"
-  - "15,000" — "Students Enrolled"
-  - "92" — "% Career Advancement"
-  - "45" — "Countries Reached"
-And the numbers animate on scroll (count-up effect)
-```
+#### Scenario: Features section
 
-### Scenario: Featured Courses section
-```
-Given the visitor scrolls past the counter
-Then a "Featured Courses" section shows three course cards:
-  - Each card has: course image, category tag (btn_4 style), level badge,
-    price (coral text), course title, description, duration, enrolled count,
-    instructor avatar + name, star rating
-  - Courses: "Full-Stack Web Development Bootcamp" ($130, Beginner, 12 weeks),
-    "UX/UI Design Masterclass" ($160, Intermediate, 8 weeks),
-    "Advanced WordPress Development" ($140, Advanced, 10 weeks)
-```
+- **GIVEN** the visitor scrolls past the banner
+- **THEN** a features section displays four columns:
+- Column 1: "Why LearnVibe?" heading + paragraph + "Learn More" button (btn_1)
+- Column 2: "Flexible Learning" feature card with icon + text
+- Column 3: "Expert Instructors" feature card with icon + text
+- Column 4: "Career Support" feature card with icon + text
+- **AND** each feature card has a light border that turns coral on hover
 
-### Scenario: Platform Features section
-```
-Given the visitor scrolls past courses
-Then a two-column layout appears (reversed from About):
-  - Left: text content — "Our platform" label, "An Advanced Learning System Built for Results" heading,
-    paragraph, two sub-feature cards ("Learn Anywhere" with pencil icon, "Verified Certificates" with stamp icon)
-  - Right: decorative image
-And the sub-feature icons have circular backgrounds (#fdeae5 / #fff0e0)
-```
+#### Scenario: About / Learning section
 
-### Scenario: Testimonials section
-```
-Given the visitor scrolls past platform features
-Then a carousel section shows student testimonials:
-  - Each slide: testimonial text, student name, job title, circular avatar photo
-  - At least 3 testimonials visible on desktop (multi-slide layout)
-  - Swiper pagination dots below
-```
+- **GIVEN** the visitor scrolls past features
+- **THEN** a two-column layout appears:
+- Left column: decorative image with background pattern
+- Right column: "About us" label, "Learn Skills That Matter for Your Career" heading
+- Two bullet points with icons (hands-on projects, industry certificates)
+- "Read More" button (btn_1)
 
-### Scenario: Blog section
-```
-Given the visitor scrolls past testimonials
-Then a "Latest from Our Blog" section shows three blog cards:
-  - Each card: blog image, category tag (btn_4), title, description, comment count, like count
-  - Cards: "5 Study Habits That Top Students Swear By" (12 comments, 3.2k likes),
-    "How to Transition Into Tech Without a CS Degree" (8 comments, 5.1k likes),
-    "The Most In-Demand Tech Skills for 2025" (15 comments, 4.7k likes)
-```
+#### Scenario: Member Counter section
 
-### Scenario: Footer
-```
-Given the visitor reaches the bottom of the page
-Then a footer with three columns:
-  - Left: logo + two paragraphs about empowering learners
-  - Center: "Newsletter" heading + email input with subscribe button + social icons (Facebook, Twitter, Instagram, Email)
-  - Right: "Contact us" heading + address, phone, email
-And a copyright bar with "Made with ❤ by Component Dock" link to https://www.componentdock.com/
-```
+- **GIVEN** the visitor scrolls past the about section
+- **THEN** a full-width gradient band (orange-red to golden) shows four counters:
+- "250" — "Courses Available"
+- "15,000" — "Students Enrolled"
+- "92" — "% Career Advancement"
+- "45" — "Countries Reached"
+- **AND** the numbers animate on scroll (count-up effect)
 
-### Scenario: Navigation bar
-```
-Given a visitor views the page
-Then a sticky navbar displays:
-  - Logo (left)
-  - Nav links: Home, About, Courses, Blog, Pages (dropdown with Pricing, FAQ, Instructors, Testimonials, Dashboard, Elements), Contact
-  - "Login" button (btn_1 style, visible on lg+ screens)
-  - Mobile: hamburger toggler with collapsible menu
-```
+#### Scenario: Featured Courses section
+
+- **GIVEN** the visitor scrolls past the counter
+- **THEN** a "Featured Courses" section shows three course cards:
+- Each card has: course image, category tag (btn_4 style), level badge,
+price (coral text), course title, description, duration, enrolled count,
+instructor avatar + name, star rating
+- Courses: "Full-Stack Web Development Bootcamp" ($130, Beginner, 12 weeks),
+"UX/UI Design Masterclass" ($160, Intermediate, 8 weeks),
+"Advanced WordPress Development" ($140, Advanced, 10 weeks)
+
+#### Scenario: Platform Features section
+
+- **GIVEN** the visitor scrolls past courses
+- **THEN** a two-column layout appears (reversed from About):
+- Left: text content — "Our platform" label, "An Advanced Learning System Built for Results" heading,
+paragraph, two sub-feature cards ("Learn Anywhere" with pencil icon, "Verified Certificates" with stamp icon)
+- Right: decorative image
+- **AND** the sub-feature icons have circular backgrounds (#fdeae5 / #fff0e0)
+
+#### Scenario: Testimonials section
+
+- **GIVEN** the visitor scrolls past platform features
+- **THEN** a carousel section shows student testimonials:
+- Each slide: testimonial text, student name, job title, circular avatar photo
+- At least 3 testimonials visible on desktop (multi-slide layout)
+- Swiper pagination dots below
+
+#### Scenario: Blog section
+
+- **GIVEN** the visitor scrolls past testimonials
+- **THEN** a "Latest from Our Blog" section shows three blog cards:
+- Each card: blog image, category tag (btn_4), title, description, comment count, like count
+- Cards: "5 Study Habits That Top Students Swear By" (12 comments, 3.2k likes),
+"How to Transition Into Tech Without a CS Degree" (8 comments, 5.1k likes),
+"The Most In-Demand Tech Skills for 2025" (15 comments, 4.7k likes)
+
+#### Scenario: Footer
+
+- **GIVEN** the visitor reaches the bottom of the page
+- **THEN** a footer with three columns:
+- Left: logo + two paragraphs about empowering learners
+- Center: "Newsletter" heading + email input with subscribe button + social icons (Facebook, Twitter, Instagram, Email)
+- Right: "Contact us" heading + address, phone, email
+- **AND** a copyright bar with "Made with ❤ by Component Dock" link to https://www.componentdock.com/
+
+#### Scenario: Navigation bar
+
+- **GIVEN** a visitor views the page
+- **THEN** a sticky navbar displays:
+- Logo (left)
+- Nav links: Home, About, Courses, Blog, Pages (dropdown with Pricing, FAQ, Instructors, Testimonials, Dashboard, Elements), Contact
+- "Login" button (btn_1 style, visible on lg+ screens)
+- Mobile: hamburger toggler with collapsible menu
 
 ## Verification checklist
 

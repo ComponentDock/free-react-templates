@@ -118,86 +118,103 @@ CSS 4 + TypeScript.
    - Copyright + "Made with Component Dock" link
    - Link to `https://www.componentdock.com/`
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Airtime template behaviour
+
 Feature: Airtime podcast template
 
-  Background:
-    Given the user opens the Airtime template at its deployed URL
-    And the page has fully loaded
+Background:
+- **GIVEN** the user opens the Airtime template at its deployed URL
+- **AND** the page has fully loaded
 
-  # --- Navbar ---
-  Scenario: Navbar displays logo and navigation links
-    Then the navbar is visible and sticky at the top
-    And the logo shows a red microphone icon with "The Hustle Hour" text
-    And navigation links include "Episodes", "About", "Sponsors", "Newsletter",
-      "Blog", "Release Notes", "Contact"
-    And a dark mode toggle icon is visible
-    And a "Listen Now" button with red background is visible on the right
+**--- Navbar ---**
 
-  Scenario: Navbar dark mode toggle works
-    Given the page is in light mode
-    When the user clicks the dark mode toggle
-    Then the page switches to dark mode
-    And clicking the toggle again restores light mode
+#### Scenario: Navbar displays logo and navigation links
 
-  # --- Hero ---
-  Scenario: Hero section displays podcast branding
-    Then a red pill badge reads "New Episode Every Tuesday"
-    And a heading displays "Stories That Spark Ideas" with "Spark Ideas" in red
-    And a descriptive paragraph is visible below the heading
-    And a "Listen Latest Episode" primary button (red, rounded) is visible
-    And a "Subscribe" secondary button (outlined, rounded) is visible
+- **THEN** the navbar is visible and sticky at the top
+- **AND** the logo shows a red microphone icon with "The Hustle Hour" text
+- **AND** navigation links include "Episodes", "About", "Sponsors", "Newsletter",
+"Blog", "Release Notes", "Contact"
+- **AND** a dark mode toggle icon is visible
+- **AND** a "Listen Now" button with red background is visible on the right
 
-  Scenario: Hero platform badges are visible
-    Then "Available on:" text is visible
-    And platform pills for Spotify, Apple Podcasts, Google Podcasts, YouTube
-      are displayed in a horizontal row
+#### Scenario: Navbar dark mode toggle works
 
-  Scenario: CTA buttons are clickable
-    When the user clicks "Listen Latest Episode"
-    Then the button responds with a hover/click interaction
-    When the user clicks "Subscribe"
-    Then the button responds with a hover/click interaction
+- **GIVEN** the page is in light mode
+- **WHEN** the user clicks the dark mode toggle
+- **THEN** the page switches to dark mode
+- **AND** clicking the toggle again restores light mode
 
-  # --- Stats Bar (dark) ---
-  Scenario: Dark stats bar shows key metrics
-    Then 4 statistics are displayed in a horizontal row
-    And the values are "500+", "2M+", "Top 50", "4.8"
-    And the labels are "Episodes", "Downloads", "Tech Podcast", "Rating"
-    And the numbers are white and bold
+**--- Hero ---**
 
-  # --- Light stats section ---
-  Scenario: Light stats section shows secondary metrics
-    Then 4 statistics are displayed in a horizontal row
-    And the values are "200+", "1M+", "50+", "4.9"
-    And the labels are "Episodes Published", "Total Downloads",
-      "Countries Reached", "Average Rating"
-    And the numbers are red and bold
-    And the background is white or light gray
+#### Scenario: Hero section displays podcast branding
 
-  # --- Featured Episodes ---
-  Scenario: Featured episodes section renders episode cards
-    Then at least 3 episode cards are visible
-    And each card shows an episode title, date, and play button or audio element
-    And cards are arranged in a responsive grid
+- **THEN** a red pill badge reads "New Episode Every Tuesday"
+- **AND** a heading displays "Stories That Spark Ideas" with "Spark Ideas" in red
+- **AND** a descriptive paragraph is visible below the heading
+- **AND** a "Listen Latest Episode" primary button (red, rounded) is visible
+- **AND** a "Subscribe" secondary button (outlined, rounded) is visible
 
-  # --- Newsletter ---
-  Scenario: Newsletter signup form is functional
-    Then an email input field is visible
-    And a "Subscribe" button is visible next to the input
-    When the user enters an email and clicks subscribe
-    Then the form submits (or shows validation feedback)
+#### Scenario: Hero platform badges are visible
 
-  # --- Footer ---
-  Scenario: Footer displays branding and links
-    Then the footer shows the podcast logo/name
-    And navigation links are present
-    And social media icons are visible
-    And a "Made with Component Dock" link points to componentdock.com
-    And the copyright text is present
-```
+- **THEN** "Available on:" text is visible
+- **AND** platform pills for Spotify, Apple Podcasts, Google Podcasts, YouTube
+are displayed in a horizontal row
+
+#### Scenario: CTA buttons are clickable
+
+- **WHEN** the user clicks "Listen Latest Episode"
+- **THEN** the button responds with a hover/click interaction
+- **WHEN** the user clicks "Subscribe"
+- **THEN** the button responds with a hover/click interaction
+
+**--- Stats Bar (dark) ---**
+
+#### Scenario: Dark stats bar shows key metrics
+
+- **THEN** 4 statistics are displayed in a horizontal row
+- **AND** the values are "500+", "2M+", "Top 50", "4.8"
+- **AND** the labels are "Episodes", "Downloads", "Tech Podcast", "Rating"
+- **AND** the numbers are white and bold
+
+**--- Light stats section ---**
+
+#### Scenario: Light stats section shows secondary metrics
+
+- **THEN** 4 statistics are displayed in a horizontal row
+- **AND** the values are "200+", "1M+", "50+", "4.9"
+- **AND** the labels are "Episodes Published", "Total Downloads",
+"Countries Reached", "Average Rating"
+- **AND** the numbers are red and bold
+- **AND** the background is white or light gray
+
+**--- Featured Episodes ---**
+
+#### Scenario: Featured episodes section renders episode cards
+
+- **THEN** at least 3 episode cards are visible
+- **AND** each card shows an episode title, date, and play button or audio element
+- **AND** cards are arranged in a responsive grid
+
+**--- Newsletter ---**
+
+#### Scenario: Newsletter signup form is functional
+
+- **THEN** an email input field is visible
+- **AND** a "Subscribe" button is visible next to the input
+- **WHEN** the user enters an email and clicks subscribe
+- **THEN** the form submits (or shows validation feedback)
+
+**--- Footer ---**
+
+#### Scenario: Footer displays branding and links
+
+- **THEN** the footer shows the podcast logo/name
+- **AND** navigation links are present
+- **AND** social media icons are visible
+- **AND** a "Made with Component Dock" link points to componentdock.com
+- **AND** the copyright text is present
 
 ## Verification checklist
 

@@ -44,83 +44,106 @@ Recreation of ColorLib "Kare" charity template.
 8. **Experience CTA** — Full-width banner with background image + dark overlay, heading, description, two CTA buttons ("Make Donation Now", "Create Fundraising Today")
 9. **Footer** — 3-column layout: About Me (text), Newsletter (email signup form), Follow Us (social icons: Facebook, Twitter, Dribbble, Behance), copyright line
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-- **Scenario:** Navbar displays all navigation links
-  - Given the user loads the page
-  - Then the navbar shows links: Home, Causes, Events, Contact
-  - And a "Donate Now" CTA button is visible
 
+#### Scenario: Navbar
+
+- **Scenario:** Navbar displays all navigation links
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows links: Home, Causes, Events, Contact
+- **AND** a "Donate Now" CTA button is visible
 - **Scenario:** Navbar becomes sticky on scroll
-  - Given the user scrolls past the header area
-  - Then the navbar remains fixed at the top with a solid background
+- **GIVEN** the user scrolls past the header area
+- **THEN** the navbar remains fixed at the top with a solid background
 
 ### Hero Banner
+
+#### Scenario: Hero Banner
+
 - **Scenario:** Hero banner shows headline and CTAs
-  - Given the user loads the page
-  - Then the hero section displays a headline text image
-  - And a description paragraph is visible below the headline
-  - And two buttons are shown: "Donate Now" (primary) and "View Activity" (secondary)
+- **GIVEN** the user loads the page
+- **THEN** the hero section displays a headline text image
+- **AND** a description paragraph is visible below the headline
+- **AND** two buttons are shown: "Donate Now" (primary) and "View Activity" (secondary)
 
 ### Donation Stats
+
+#### Scenario: Donation Stats
+
 - **Scenario:** Stats section shows four metric boxes
-  - Given the user views the stats section
-  - Then four stat boxes are displayed in a row
-  - And each box shows an icon, a heading, and a description
+- **GIVEN** the user views the stats section
+- **THEN** four stat boxes are displayed in a row
+- **AND** each box shows an icon, a heading, and a description
 
 ### Our Major Causes
-- **Scenario:** Causes carousel displays cause cards
-  - Given the user views the causes section
-  - Then a heading "Our Major Causes" is visible
-  - And multiple cause cards are displayed in a carousel
-  - And each card shows an image, progress bar, raised/goal amount, title, description, and donate button
 
+#### Scenario: Our Major Causes
+
+- **Scenario:** Causes carousel displays cause cards
+- **GIVEN** the user views the causes section
+- **THEN** a heading "Our Major Causes" is visible
+- **AND** multiple cause cards are displayed in a carousel
+- **AND** each card shows an image, progress bar, raised/goal amount, title, description, and donate button
 - **Scenario:** Cause cards have working progress bars
-  - Given a cause card is rendered
-  - Then a progress bar shows the funded percentage
-  - And the raised amount and total goal are displayed
+- **GIVEN** a cause card is rendered
+- **THEN** a progress bar shows the funded percentage
+- **AND** the raised amount and total goal are displayed
 
 ### Make a Donation
-- **Scenario:** Donation form shows preset amounts
-  - Given the user views the donation section
-  - Then radio buttons for $10, $50, $100, $250 are displayed
-  - And a custom amount text input is available
-  - And a "Donate Now" submit button is shown
 
+#### Scenario: Make a Donation
+
+- **Scenario:** Donation form shows preset amounts
+- **GIVEN** the user views the donation section
+- **THEN** radio buttons for $10, $50, $100, $250 are displayed
+- **AND** a custom amount text input is available
+- **AND** a "Donate Now" submit button is shown
 - **Scenario:** User can select a donation amount
-  - Given the donation form is displayed
-  - When the user clicks a preset amount radio button
-  - Then that amount is selected
+- **GIVEN** the donation form is displayed
+- **WHEN** the user clicks a preset amount radio button
+- **THEN** that amount is selected
 
 ### Client Logos
+
+#### Scenario: Client Logos
+
 - **Scenario:** Client logos section displays partner logos
-  - Given the user scrolls to the client logos section
-  - Then a carousel of client/partner logos is displayed
+- **GIVEN** the user scrolls to the client logos section
+- **THEN** a carousel of client/partner logos is displayed
 
 ### Support Campaign
+
+#### Scenario: Support Campaign
+
 - **Scenario:** Campaign section shows fundraiser cards
-  - Given the user views the support campaign section
-  - Then a heading "Support a campaign or fundraiser" is visible
-  - And campaign cards are displayed in a 2-column grid
-  - And each card shows a thumbnail, title, amount, and progress bar
+- **GIVEN** the user views the support campaign section
+- **THEN** a heading "Support a campaign or fundraiser" is visible
+- **AND** campaign cards are displayed in a 2-column grid
+- **AND** each card shows a thumbnail, title, amount, and progress bar
 
 ### Experience CTA
+
+#### Scenario: Experience CTA
+
 - **Scenario:** CTA section shows call to action
-  - Given the user views the experience section
-  - Then a heading "Experience How your Donation Can Reach" is visible
-  - And two CTA buttons are shown: "Make Donation Now" and "Create Fundraising Today"
+- **GIVEN** the user views the experience section
+- **THEN** a heading "Experience How your Donation Can Reach" is visible
+- **AND** two CTA buttons are shown: "Make Donation Now" and "Create Fundraising Today"
 
 ### Footer
-- **Scenario:** Footer shows three columns
-  - Given the user scrolls to the footer
-  - Then an "About Me" column with description text is visible
-  - And a "Newsletter" column with email signup form is visible
-  - And a "Follow Us" column with social media icons is visible
 
+#### Scenario: Footer
+
+- **Scenario:** Footer shows three columns
+- **GIVEN** the user scrolls to the footer
+- **THEN** an "About Me" column with description text is visible
+- **AND** a "Newsletter" column with email signup form is visible
+- **AND** a "Follow Us" column with social media icons is visible
 - **Scenario:** Footer includes Component Dock link
-  - Given the user views the footer
-  - Then a link to https://www.componentdock.com/ is present
+- **GIVEN** the user views the footer
+- **THEN** a link to https://www.componentdock.com/ is present
 
 ## Verification checklist
 

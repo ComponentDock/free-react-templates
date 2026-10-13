@@ -19,7 +19,7 @@ Recreation of ColorLib Calendar 20 (`https://colorlib.com/wp/template/calendar-2
 - **Surface & Shadows:**
   - Rounded card containers (`rounded-2xl shadow-sm border border-slate-100`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Calendar Dashboard & Date Grid
 
@@ -27,17 +27,17 @@ As a user, I want to view a clean calendar grid with event indicators so that I 
 
 #### Scenario: Display Monthly Calendar Grid
 
-- **Given** the CalTile application is loaded
-- **When** the user views the main calendar view
-- **Then** the current month grid is displayed with correct days of the week headers (Sun-Sat)
-- **And** today's date is prominently highlighted with the primary brand color
+- **GIVEN** the CalTile application is loaded
+- **WHEN** the user views the main calendar view
+- **THEN** the current month grid is displayed with correct days of the week headers (Sun-Sat)
+- **AND** today's date is prominently highlighted with the primary brand color
 
 #### Scenario: Interactive Date Selection & Event Preview
 
-- **Given** the user is viewing the calendar grid
-- **When** the user clicks on a specific date (e.g. 15th)
-- **Then** the date is marked as selected
-- **And** the sidebar/panel updates to show events scheduled for that day
+- **GIVEN** the user is viewing the calendar grid
+- **WHEN** the user clicks on a specific date (e.g. 15th)
+- **THEN** the date is marked as selected
+- **AND** the sidebar/panel updates to show events scheduled for that day
 
 ### Feature: Event Management
 
@@ -45,9 +45,9 @@ As a user, I want to add and view scheduled events so I never miss important app
 
 #### Scenario: Add New Event
 
-- **Given** the user has selected a date
-- **When** the user fills in the event form (Title, Time, Category) and clicks "Add Event"
-- **And** the event appears in both the daily schedule list and as a badge on the calendar grid
+- **GIVEN** the user has selected a date
+- **WHEN** the user fills in the event form (Title, Time, Category) and clicks "Add Event"
+- **AND** the event appears in both the daily schedule list and as a badge on the calendar grid
 
 ### Feature: Footer & Attribution
 
@@ -55,8 +55,8 @@ As a visitor, I want clear footer navigation and branding.
 
 #### Scenario: Footer Component Link
 
-- **Given** the user scrolls to the bottom of the page
-- **Then** a clean footer is visible containing navigation links and a required link to `https://www.componentdock.com/` ("Component Dock").
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a clean footer is visible containing navigation links and a required link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

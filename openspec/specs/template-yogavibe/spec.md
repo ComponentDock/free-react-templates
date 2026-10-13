@@ -45,66 +45,96 @@ Recreation of ColorLib **Doyoga** — a yoga studio landing page with hero video
 - **Get In Touch:** Light section, split layout (contact form left, contact details right with address/phone/email)
 - **Footer:** Dark background, 3-column layout (About Us text, Quick Links in 2 sub-columns, Newsletter subscribe + Social icons), copyright line
 
-## Gherkin Requirements
+## Requirements
 
 ### Top Bar
-- **Given** the user loads the page, **when** the top bar renders, **then** a dark bar appears with email address on the left, phone number next to it, and social media icons (Twitter, Facebook, LinkedIn, Instagram) on the right
-- **Given** the top bar, **when** the viewport is mobile, **then** the top bar is hidden
+
+#### Scenario: Top Bar
+
+- **GIVEN** the user loads the page, **when** the top bar renders, **then** a dark bar appears with email address on the left, phone number next to it, and social media icons (Twitter, Facebook, LinkedIn, Instagram) on the right
+- **GIVEN** the top bar, **when** the viewport is mobile, **then** the top bar is hidden
 
 ### Navbar
-- **Given** the page loads, **when** the navbar renders, **then** a white sticky navigation bar appears with the brand "YOGAVIBE" (logo text) on the left
-- **Given** the navbar, **when** the user sees the links, **then** they see: Home, Classes, About, Events, Gallery, Contact
-- **Given** the navbar, **when** the viewport is mobile, **then** a hamburger toggle appears that opens a slide-in mobile menu with black overlay
-- **Given** the navbar, **when** the user scrolls down, **then** the navbar becomes sticky with a subtle shadow
+
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, **when** the navbar renders, **then** a white sticky navigation bar appears with the brand "YOGAVIBE" (logo text) on the left
+- **GIVEN** the navbar, **when** the user sees the links, **then** they see: Home, Classes, About, Events, Gallery, Contact
+- **GIVEN** the navbar, **when** the viewport is mobile, **then** a hamburger toggle appears that opens a slide-in mobile menu with black overlay
+- **GIVEN** the navbar, **when** the user scrolls down, **then** the navbar becomes sticky with a subtle shadow
 
 ### Hero Section
-- **Given** the page loads, **when** the hero renders, **then** a full-viewport background image (yoga practitioners) appears with a dark semi-transparent overlay
-- **Given** the hero, **when** the heading renders, **then** it reads "A Yoga Studio" in large white bold text, centered
-- **Given** the hero, **when** the subtitle renders, **then** a short descriptive paragraph appears below the heading in white
-- **Given** the hero, **when** the CTA renders, **then** a circular play button with "Watch the video" text appears centered below the subtitle
-- **Given** the hero, **when** the user clicks the play button, **then** a video lightbox/modal opens (or navigates to video URL)
+
+#### Scenario: Hero Section
+
+- **GIVEN** the page loads, **when** the hero renders, **then** a full-viewport background image (yoga practitioners) appears with a dark semi-transparent overlay
+- **GIVEN** the hero, **when** the heading renders, **then** it reads "A Yoga Studio" in large white bold text, centered
+- **GIVEN** the hero, **when** the subtitle renders, **then** a short descriptive paragraph appears below the heading in white
+- **GIVEN** the hero, **when** the CTA renders, **then** a circular play button with "Watch the video" text appears centered below the subtitle
+- **GIVEN** the hero, **when** the user clicks the play button, **then** a video lightbox/modal opens (or navigates to video URL)
 
 ### Featured Classes
-- **Given** the user scrolls to the classes section, **when** the heading renders, **then** it reads "Featured Classes" with a short description paragraph below
-- **Given** the classes section, **when** the navigation renders, **then** "Previous" and "Next" outline-primary buttons appear aligned right of the heading
-- **Given** the classes section, **when** the carousel renders, **then** 4 class cards appear: Ashtanga Foundations ($29.99), Surya Vinyasa ($32.99), Chandra Vinyasa ($22.99), Yinyasa ($19.99)
-- **Given** each class card, **when** it renders, **then** it shows a background image with an overlaid text block containing the price and class name
-- **Given** the carousel, **when** the user clicks Previous/Next, **then** the carousel scrolls horizontally to show adjacent cards
+
+#### Scenario: Featured Classes
+
+- **GIVEN** the user scrolls to the classes section, **when** the heading renders, **then** it reads "Featured Classes" with a short description paragraph below
+- **GIVEN** the classes section, **when** the navigation renders, **then** "Previous" and "Next" outline-primary buttons appear aligned right of the heading
+- **GIVEN** the classes section, **when** the carousel renders, **then** 4 class cards appear: Ashtanga Foundations ($29.99), Surya Vinyasa ($32.99), Chandra Vinyasa ($22.99), Yinyasa ($19.99)
+- **GIVEN** each class card, **when** it renders, **then** it shows a background image with an overlaid text block containing the price and class name
+- **GIVEN** the carousel, **when** the user clicks Previous/Next, **then** the carousel scrolls horizontally to show adjacent cards
 
 ### Schedule
-- **Given** the user scrolls to the schedule section, **when** the heading renders, **then** it reads "Schedule" with a short description paragraph
-- **Given** the schedule section, **when** the grid renders, **then** a 2-column layout appears with 4 schedule items total (2 per column)
-- **Given** each schedule item, **when** it renders, **then** it shows a background image on one side and text on the other side with: class name (h3), description, time (clock icon + "5:30 PM"), date (calendar icon + "April 22, 2019"), and a "Join from $15" primary button
-- **Given** the schedule items, **when** they render, **then** the classes are: Yinyasa, Chandra Vinyasa, Surya Vinyasa, Ashtanga Foundations
+
+#### Scenario: Schedule
+
+- **GIVEN** the user scrolls to the schedule section, **when** the heading renders, **then** it reads "Schedule" with a short description paragraph
+- **GIVEN** the schedule section, **when** the grid renders, **then** a 2-column layout appears with 4 schedule items total (2 per column)
+- **GIVEN** each schedule item, **when** it renders, **then** it shows a background image on one side and text on the other side with: class name (h3), description, time (clock icon + "5:30 PM"), date (calendar icon + "April 22, 2019"), and a "Join from $15" primary button
+- **GIVEN** the schedule items, **when** they render, **then** the classes are: Yinyasa, Chandra Vinyasa, Surya Vinyasa, Ashtanga Foundations
 
 ### About Us
-- **Given** the user scrolls to the about section, **when** the heading renders, **then** it reads "About Us" with two descriptive paragraphs below
-- **Given** the about section, **when** the layout renders, **then** a split layout appears: text on the left (5 columns), two overlapping images on the right (6 columns)
-- **Given** the about section, **when** the images render, **then** two images overlap vertically with slight offset
+
+#### Scenario: About Us
+
+- **GIVEN** the user scrolls to the about section, **when** the heading renders, **then** it reads "About Us" with two descriptive paragraphs below
+- **GIVEN** the about section, **when** the layout renders, **then** a split layout appears: text on the left (5 columns), two overlapping images on the right (6 columns)
+- **GIVEN** the about section, **when** the images render, **then** two images overlap vertically with slight offset
 
 ### Events
-- **Given** the user scrolls to the events section, **when** the heading renders, **then** it reads "Events"
-- **Given** the events section, **when** the cards render, **then** 2 event cards appear in a 2-column layout
-- **Given** each event card, **when** it renders, **then** it shows a background image on one side and text on the other with: event title, date (calendar icon), description paragraph, and a "Read More" primary button
+
+#### Scenario: Events
+
+- **GIVEN** the user scrolls to the events section, **when** the heading renders, **then** it reads "Events"
+- **GIVEN** the events section, **when** the cards render, **then** 2 event cards appear in a 2-column layout
+- **GIVEN** each event card, **when** it renders, **then** it shows a background image on one side and text on the other with: event title, date (calendar icon), description paragraph, and a "Read More" primary button
 
 ### Yoga Gallery
-- **Given** the user scrolls to the gallery section, **when** the heading renders, **then** it reads "Yoga Gallery" centered
-- **Given** the gallery section, **when** the filter buttons render, **then** 4 filter buttons appear: All (active), Classes, Intern, Training
-- **Given** the gallery section, **when** the grid renders, **then** a 3-column masonry-style grid of images appears
-- **Given** the user hovers over a gallery image, **when** the hover state triggers, **then** a search icon overlay appears on the image
-- **Given** the user clicks a filter button, **when** the filter applies, **then** only images matching that category are shown (animated transition)
+
+#### Scenario: Yoga Gallery
+
+- **GIVEN** the user scrolls to the gallery section, **when** the heading renders, **then** it reads "Yoga Gallery" centered
+- **GIVEN** the gallery section, **when** the filter buttons render, **then** 4 filter buttons appear: All (active), Classes, Intern, Training
+- **GIVEN** the gallery section, **when** the grid renders, **then** a 3-column masonry-style grid of images appears
+- **GIVEN** the user hovers over a gallery image, **when** the hover state triggers, **then** a search icon overlay appears on the image
+- **GIVEN** the user clicks a filter button, **when** the filter applies, **then** only images matching that category are shown (animated transition)
 
 ### Contact (Get In Touch)
-- **Given** the user scrolls to the contact section, **when** the heading renders, **then** it reads "Get In Touch" centered
-- **Given** the contact section, **when** the form renders, **then** a left-half form appears with fields: Name, Phone, Email, Message (textarea), and a "Send Message" primary button
-- **Given** the contact section, **when** the details render, **then** a right-half block appears with "Contact Details" heading, address (location icon), phone (telephone icon), and email (mail icon)
+
+#### Scenario: Contact (Get In Touch)
+
+- **GIVEN** the user scrolls to the contact section, **when** the heading renders, **then** it reads "Get In Touch" centered
+- **GIVEN** the contact section, **when** the form renders, **then** a left-half form appears with fields: Name, Phone, Email, Message (textarea), and a "Send Message" primary button
+- **GIVEN** the contact section, **when** the details render, **then** a right-half block appears with "Contact Details" heading, address (location icon), phone (telephone icon), and email (mail icon)
 
 ### Footer
-- **Given** the user scrolls to the footer, **when** the footer renders, **then** a dark-background footer appears with 3 columns
-- **Given** the footer, **when** the left column renders, **then** it shows "About Us" heading with a description paragraph
-- **Given** the footer, **when** the middle column renders, **then** it shows "Quick Links" heading with two sub-columns: (Home, Services, Events, Team) and (Ashtanga Foundations, Surya Vinyasa, Chandra Vinyasa, Yinyasa)
-- **Given** the footer, **when** the right column renders, **then** it shows "Subscribe Newsletter" heading with an email input + Send button, and "Follow Us" heading with social icons (Facebook, Twitter, Instagram, LinkedIn)
-- **Given** the footer, **when** the copyright renders, **then** a centered line reads "Copyright © [year] All rights reserved | Made with ❤ by Component Dock"
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the footer, **when** the footer renders, **then** a dark-background footer appears with 3 columns
+- **GIVEN** the footer, **when** the left column renders, **then** it shows "About Us" heading with a description paragraph
+- **GIVEN** the footer, **when** the middle column renders, **then** it shows "Quick Links" heading with two sub-columns: (Home, Services, Events, Team) and (Ashtanga Foundations, Surya Vinyasa, Chandra Vinyasa, Yinyasa)
+- **GIVEN** the footer, **when** the right column renders, **then** it shows "Subscribe Newsletter" heading with an email input + Send button, and "Follow Us" heading with social icons (Facebook, Twitter, Instagram, LinkedIn)
+- **GIVEN** the footer, **when** the copyright renders, **then** a centered line reads "Copyright © [year] All rights reserved | Made with ❤ by Component Dock"
 
 ## Verification Checklist
 

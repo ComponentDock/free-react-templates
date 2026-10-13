@@ -47,111 +47,121 @@ Extracted from the live preview at https://preview.colorlib.com/theme/blueline/ 
 
 The screenshot shows a fullscreen hero with a deep-to-light blue gradient background and subtle geometric poly/angular overlays. The hero text is white, all-caps, ultra-wide letter-spacing: small "INTRODUCING" super-heading above a massive "BLUELINE" title. A hamburger menu icon sits top-right; the brand logo is top-left. The overall aesthetic is minimalist, modern, tech-forward — a SaaS/technology startup landing page with clean geometric lines and high-contrast white-on-blue typography.
 
-## Gherkin Requirements
+## Requirements
 
 ### Hero / Banner Section
 
-Scenario: Fullscreen hero renders on load
-  Given the user visits the BlueVessel page
-  Then a fullscreen hero section is visible
-  And the hero has a blue gradient background (deep blue to light cyan)
-  And the hero heading reads "INTRODUCING" in small uppercase text
-  And the hero main title reads "BLUEVESSEL" in large uppercase white text with wide letter-spacing
-  And a navigation bar is present at the top with the brand name on the left and a hamburger menu on the right
-  And the navigation links (Home, About, Services, Portfolio, Contact) are visible when the menu is opened
-  And a "Learn More" call-to-action button with rounded corners is visible in the hero
+#### Scenario: Fullscreen hero renders on load
+
+- **GIVEN** the user visits the BlueVessel page
+- **THEN** a fullscreen hero section is visible
+- **AND** the hero has a blue gradient background (deep blue to light cyan)
+- **AND** the hero heading reads "INTRODUCING" in small uppercase text
+- **AND** the hero main title reads "BLUEVESSEL" in large uppercase white text with wide letter-spacing
+- **AND** a navigation bar is present at the top with the brand name on the left and a hamburger menu on the right
+- **AND** the navigation links (Home, About, Services, Portfolio, Contact) are visible when the menu is opened
+- **AND** a "Learn More" call-to-action button with rounded corners is visible in the hero
 
 ### Feature Cards Section
 
-Scenario: Three feature cards display with numbered items
-  Given the user scrolls past the hero
-  Then a features section is visible with a gradient-text heading
-  And three feature cards are displayed in a row
-  And each card has a number (01, 02, 03), a title, and a description paragraph
-  And card 01 title is "Responsive View"
-  And card 02 title is "Multiple Layouts"
-  And card 03 title is "Flexible Design"
-  And each card description discusses usability and technology
+#### Scenario: Three feature cards display with numbered items
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** a features section is visible with a gradient-text heading
+- **AND** three feature cards are displayed in a row
+- **AND** each card has a number (01, 02, 03), a title, and a description paragraph
+- **AND** card 01 title is "Responsive View"
+- **AND** card 02 title is "Multiple Layouts"
+- **AND** card 03 title is "Flexible Design"
+- **AND** each card description discusses usability and technology
 
 ### Video Section
 
-Scenario: Video showcase area renders
-  Given the user scrolls past the features
-  Then a video section is visible
-  And the section has a "Great Modern Design" heading with gradient text
-  And a subtitle reads "Build with usability in mind"
-  And a play button overlay is visible (circular, centered)
+#### Scenario: Video showcase area renders
+
+- **GIVEN** the user scrolls past the features
+- **THEN** a video section is visible
+- **AND** the section has a "Great Modern Design" heading with gradient text
+- **AND** a subtitle reads "Build with usability in mind"
+- **AND** a play button overlay is visible (circular, centered)
 
 ### Services Section
 
-Scenario: Services area displays with sidebar and cards
-  Given the user scrolls past the video section
-  Then a services section is visible with a left sidebar and right content area
-  And the left sidebar has a heading "Services We Offered" with a description paragraph
-  And the right side displays four service cards in a 2x2 grid
-  And each service card has an icon, a title ("Graphics Design"), and a description paragraph
-  And the service icons use the gradient color
+#### Scenario: Services area displays with sidebar and cards
+
+- **GIVEN** the user scrolls past the video section
+- **THEN** a services section is visible with a left sidebar and right content area
+- **AND** the left sidebar has a heading "Services We Offered" with a description paragraph
+- **AND** the right side displays four service cards in a 2x2 grid
+- **AND** each service card has an icon, a title ("Graphics Design"), and a description paragraph
+- **AND** the service icons use the gradient color
 
 ### Latest Works / Portfolio Section
 
-Scenario: Portfolio gallery shows recent work
-  Given the user scrolls past the services
-  Then a latest works section is visible with centered text
-  And the heading reads "Some Of our Latest Works"
-  And a carousel or grid of portfolio images is displayed
-  And carousel navigation arrows are present
+#### Scenario: Portfolio gallery shows recent work
+
+- **GIVEN** the user scrolls past the services
+- **THEN** a latest works section is visible with centered text
+- **AND** the heading reads "Some Of our Latest Works"
+- **AND** a carousel or grid of portfolio images is displayed
+- **AND** carousel navigation arrows are present
 
 ### Newsletter / Subscription Section
 
-Scenario: Newsletter subscription form renders
-  Given the user scrolls past the portfolio
-  Then a subscription section is visible with a white background
-  And the heading reads "Subscribe for our Newsletter"
-  And a subtext reads "We won't send any kind of spam"
-  And an email input field with rounded corners (25px radius) is present
-  And a "Get Started" button with gradient background is positioned to the right of the input
-  And submitting with a valid email shows a success message
-  And submitting with an invalid email shows an error message
+#### Scenario: Newsletter subscription form renders
+
+- **GIVEN** the user scrolls past the portfolio
+- **THEN** a subscription section is visible with a white background
+- **AND** the heading reads "Subscribe for our Newsletter"
+- **AND** a subtext reads "We won't send any kind of spam"
+- **AND** an email input field with rounded corners (25px radius) is present
+- **AND** a "Get Started" button with gradient background is positioned to the right of the input
+- **AND** submitting with a valid email shows a success message
+- **AND** submitting with an invalid email shows an error message
 
 ### Contact Section
 
-Scenario: Contact form displays with dark background
-  Given the user scrolls past the subscription section
-  Then a contact section is visible with a dark background
-  And the heading reads "Contact Us" (or similar) in white text with letter-spacing
-  And a subtext paragraph is visible below the heading
-  And a "Send Message" button is present
-  And a contact form with name, email, and message fields is displayed
-  And the form has a white background with padding
-  And submitting with empty required fields shows validation errors
+#### Scenario: Contact form displays with dark background
+
+- **GIVEN** the user scrolls past the subscription section
+- **THEN** a contact section is visible with a dark background
+- **AND** the heading reads "Contact Us" (or similar) in white text with letter-spacing
+- **AND** a subtext paragraph is visible below the heading
+- **AND** a "Send Message" button is present
+- **AND** a contact form with name, email, and message fields is displayed
+- **AND** the form has a white background with padding
+- **AND** submitting with empty required fields shows validation errors
 
 ### Footer
 
-Scenario: Footer renders with copyright and links
-  Given the user reaches the bottom of the page
-  Then a footer is visible with a dark background (#1e1e1e)
-  And social media icon links are displayed (circular buttons with gradient hover)
-  And a copyright notice is shown
-  And a "Component Dock" link is present (mandatory: links to https://www.componentdock.com/)
+#### Scenario: Footer renders with copyright and links
+
+- **GIVEN** the user reaches the bottom of the page
+- **THEN** a footer is visible with a dark background (#1e1e1e)
+- **AND** social media icon links are displayed (circular buttons with gradient hover)
+- **AND** a copyright notice is shown
+- **AND** a "Component Dock" link is present (mandatory: links to https://www.componentdock.com/)
 
 ### Responsive Behavior
 
-Scenario: Layout adapts to mobile viewport
-  Given the user resizes the browser to 767px width
-  Then the navigation collapses to a hamburger menu
-  And feature cards stack vertically
-  And service cards stack vertically
-  And the subscription input takes full width
-  And the contact form takes full width
+#### Scenario: Layout adapts to mobile viewport
+
+- **GIVEN** the user resizes the browser to 767px width
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** feature cards stack vertically
+- **AND** service cards stack vertically
+- **AND** the subscription input takes full width
+- **AND** the contact form takes full width
 
 ### Accessibility
 
-Scenario: Interactive elements are keyboard accessible
-  Given the user navigates with keyboard only
-  Then all links and buttons are focusable with visible focus rings
-  And the hamburger menu can be toggled with Enter/Space
-  And form inputs have associated labels
-  And images have descriptive alt text
+#### Scenario: Interactive elements are keyboard accessible
+
+- **GIVEN** the user navigates with keyboard only
+- **THEN** all links and buttons are focusable with visible focus rings
+- **AND** the hamburger menu can be toggled with Enter/Space
+- **AND** form inputs have associated labels
+- **AND** images have descriptive alt text
 
 ## Verification Checklist
 

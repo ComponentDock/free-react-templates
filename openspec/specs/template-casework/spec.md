@@ -29,115 +29,115 @@ Recreation of ColorLib "Marco 2" — a free Bootstrap 4 lawyer/attorney website 
 | Hero right panel           | Background image, 60% width                                       | `.hero-wrap .third`                                            |
 | Footer                     | `ftco-bg-dark` (near-black)                                       | 4-column layout                                                |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Casework — Legal Practice Website
 
 #### Scenario: Navbar displays correctly
 
-- **Given** the user loads the page
-- **When** the page renders
-- **Then** a navigation bar is visible with brand "Casework" and links: Home, About, Practice Areas, Legal Team, Blog, Contact
-- **And** the navbar is transparent with white text over the hero
-- **And** on scroll, the navbar becomes white with dark text and a subtle shadow
+- **GIVEN** the user loads the page
+- **WHEN** the page renders
+- **THEN** a navigation bar is visible with brand "Casework" and links: Home, About, Practice Areas, Legal Team, Blog, Contact
+- **AND** the navbar is transparent with white text over the hero
+- **AND** on scroll, the navbar becomes white with dark text and a subtle shadow
 
 #### Scenario: Hero section renders split layout
 
-- **Given** the user loads the page
-- **When** the hero section is visible
-- **Then** a split layout is displayed: left 40% with gray (#b8b0b0) background and centered text, right 60% with a background image
-- **And** the left side shows a subheading "Hello,", heading "I'm [Name]", subheading "A Corporate Lawyer", and a "Contact Me" CTA button
-- **And** the right side shows a circular play button (video popup) on the image
+- **GIVEN** the user loads the page
+- **WHEN** the hero section is visible
+- **THEN** a split layout is displayed: left 40% with gray (#b8b0b0) background and centered text, right 60% with a background image
+- **AND** the left side shows a subheading "Hello,", heading "I'm [Name]", subheading "A Corporate Lawyer", and a "Contact Me" CTA button
+- **AND** the right side shows a circular play button (video popup) on the image
 
 #### Scenario: Free Consultation form section
 
-- **Given** the user scrolls to the consultation section
-- **When** the section is visible
-- **Then** a "My Free Consultation" heading is displayed on the left
-- **And** a horizontal form with fields: Name, Email, Categories (dropdown), Message, and "Send Message" button is shown
-- **And** the section has a light gray (#fafafa) background
+- **GIVEN** the user scrolls to the consultation section
+- **WHEN** the section is visible
+- **THEN** a "My Free Consultation" heading is displayed on the left
+- **AND** a horizontal form with fields: Name, Email, Categories (dropdown), Message, and "Send Message" button is shown
+- **AND** the section has a light gray (#fafafa) background
 
 #### Scenario: Practice Areas grid
 
-- **Given** the user scrolls to the practice areas section
-- **When** the section is visible
-- **Then** a centered heading "My Legal Practice Areas" with subheading "Services" is shown
-- **And** 4 service cards are displayed in a row: Family Law, Business Law, Drug Control Law, Criminal Law
-- **And** each card has a circular gray icon (100px) with a white icon symbol
-- **And** each card has a title and description paragraph
+- **GIVEN** the user scrolls to the practice areas section
+- **WHEN** the section is visible
+- **THEN** a centered heading "My Legal Practice Areas" with subheading "Services" is shown
+- **AND** 4 service cards are displayed in a row: Family Law, Business Law, Drug Control Law, Criminal Law
+- **AND** each card has a circular gray icon (100px) with a white icon symbol
+- **AND** each card has a title and description paragraph
 
 #### Scenario: Statistics counter section
 
-- **Given** the user scrolls to the statistics section
-- **When** the section is visible
-- **Then** a parallax background image is displayed with dark overlay
-- **And** a heading "Interesting Facts" with subheading "Some" is shown on the left
-- **And** 4 animated counters are displayed: Trusted Clients (3500), Solved Cases (2000), Awards Won (800), Winning Cases (2450)
-- **And** counters animate upward from 0 on scroll
+- **GIVEN** the user scrolls to the statistics section
+- **WHEN** the section is visible
+- **THEN** a parallax background image is displayed with dark overlay
+- **AND** a heading "Interesting Facts" with subheading "Some" is shown on the left
+- **AND** 4 animated counters are displayed: Trusted Clients (3500), Solved Cases (2000), Awards Won (800), Winning Cases (2450)
+- **AND** counters animate upward from 0 on scroll
 
 #### Scenario: About / Assurances section
 
-- **Given** the user scrolls to the about section
-- **When** the section is visible
-- **Then** a split layout is displayed: background image on the right, text on the left
-- **And** a heading "I Assure you that you will win" with subheading "Providing" is shown
-- **And** 3 assurance features are listed: Fight for Justice, Best Case Strategy, Experienced Attorneys
-- **And** each feature has an icon and description
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section is visible
+- **THEN** a split layout is displayed: background image on the right, text on the left
+- **AND** a heading "I Assure you that you will win" with subheading "Providing" is shown
+- **AND** 3 assurance features are listed: Fight for Justice, Best Case Strategy, Experienced Attorneys
+- **AND** each feature has an icon and description
 
 #### Scenario: Testimonials carousel
 
-- **Given** the user scrolls to the testimonials section
-- **When** the section is visible
-- **Then** a centered heading "My satisfied customer says" with subheading "Testimony" is shown
-- **And** a carousel of testimonial cards is displayed
-- **And** each card shows a circular avatar, quote icon, testimonial text, customer name, and position
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the section is visible
+- **THEN** a centered heading "My satisfied customer says" with subheading "Testimony" is shown
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows a circular avatar, quote icon, testimonial text, customer name, and position
 
 #### Scenario: About Me section with video
 
-- **Given** the user scrolls to the about-me section
-- **When** the section is visible
-- **Then** a split layout is displayed: video/image with play button on the left, text on the right
-- **And** a heading "Marco Sebastián" (personalized to "Casework") with subheading "Hello I'm" is shown
-- **And** a bio paragraph and social media links (Twitter, Facebook, Google+, Instagram) are displayed
-- **And** the section has a light gray (#fafafa) background
+- **GIVEN** the user scrolls to the about-me section
+- **WHEN** the section is visible
+- **THEN** a split layout is displayed: video/image with play button on the left, text on the right
+- **AND** a heading "Marco Sebastián" (personalized to "Casework") with subheading "Hello I'm" is shown
+- **AND** a bio paragraph and social media links (Twitter, Facebook, Google+, Instagram) are displayed
+- **AND** the section has a light gray (#fafafa) background
 
 #### Scenario: Case Study / Blog section
 
-- **Given** the user scrolls to the case study section
-- **When** the section is visible
-- **Then** a centered heading "Case Study" with subheading "Our latest update" is shown
-- **And** 3 blog cards are displayed in a row
-- **And** each card has a background image, date, author, comment count, and title
+- **GIVEN** the user scrolls to the case study section
+- **WHEN** the section is visible
+- **THEN** a centered heading "Case Study" with subheading "Our latest update" is shown
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card has a background image, date, author, comment count, and title
 
 #### Scenario: Appointment form section
 
-- **Given** the user scrolls to the appointment section
-- **When** the section is visible
-- **Then** a split layout is displayed: form on the left, text on the right
-- **And** a heading "Make An Appointment" with subheading "Appointment" is shown
-- **And** the form has fields: Name, Email, Date (date picker), Categories (dropdown), Message, and "Make an Appointment" button
-- **And** the section has a light gray (#fafafa) background
+- **GIVEN** the user scrolls to the appointment section
+- **WHEN** the section is visible
+- **THEN** a split layout is displayed: form on the left, text on the right
+- **AND** a heading "Make An Appointment" with subheading "Appointment" is shown
+- **AND** the form has fields: Name, Email, Date (date picker), Categories (dropdown), Message, and "Make an Appointment" button
+- **AND** the section has a light gray (#fafafa) background
 
 #### Scenario: Footer
 
-- **Given** the user scrolls to the footer
-- **When** the footer is visible
-- **Then** a dark background (#000) footer is displayed with 4 columns
-- **And** column 1: "About Me" text with social media icons
-- **And** column 2: "Useful Links" list (Family Law, Drug Law, Insurance Law, Criminal Law, Business Law)
-- **And** column 3: "Quick Links" list (About Us, Practice Areas, Appointment, Terms & Conditions, FAQ)
-- **And** column 4: "Have a Questions?" with address, phone, and email
-- **And** a copyright line at the bottom linking to Component Dock
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is visible
+- **THEN** a dark background (#000) footer is displayed with 4 columns
+- **AND** column 1: "About Me" text with social media icons
+- **AND** column 2: "Useful Links" list (Family Law, Drug Law, Insurance Law, Criminal Law, Business Law)
+- **AND** column 3: "Quick Links" list (About Us, Practice Areas, Appointment, Terms & Conditions, FAQ)
+- **AND** column 4: "Have a Questions?" with address, phone, and email
+- **AND** a copyright line at the bottom linking to Component Dock
 
 #### Scenario: Responsive layout
 
-- **Given** the user views the page on a mobile device
-- **When** the viewport is below 768px
-- **Then** the navbar collapses into a hamburger menu
-- **And** the hero section stacks vertically
-- **And** service cards stack vertically
-- **And** split layout sections stack vertically
-- **And** the footer columns stack vertically
+- **GIVEN** the user views the page on a mobile device
+- **WHEN** the viewport is below 768px
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** the hero section stacks vertically
+- **AND** service cards stack vertically
+- **AND** split layout sections stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

@@ -28,62 +28,73 @@ Innovex is a business landing page with a top bar, navbar, hero, services, about
 8. **Team** — "Professional Creative Team Members", 4 member cards with name/position/social links on hover
 9. **Footer** — dark bg, 4 columns: brand+description, Company links, Services links, Contact info + newsletter form, copyright with Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: Innovex template behaviour
+
 Feature: Innovex Template
 
-  Scenario: TopBar renders contact info and social links
-    Given the Innovex page is loaded
-    Then the top bar shows phone number and email
-    And the top bar shows 4 social media icon links
+#### Scenario: TopBar renders contact info and social links
 
-  Scenario: Navbar displays brand and navigation links
-    Given the Innovex page is loaded
-    Then the navbar shows "Innovex" brand text
-    And the navbar has 6 navigation links: Home, About, Pricing, Portfolio, Blog, Contact
+- **GIVEN** the Innovex page is loaded
+- **THEN** the top bar shows phone number and email
+- **AND** the top bar shows 4 social media icon links
 
-  Scenario: Hero section shows main heading and CTAs
-    Given the Innovex page is loaded
-    Then the hero shows "Digital Innovation Company" heading
-    And the hero has "Get Started" and "View Portfolio" buttons
+#### Scenario: Navbar displays brand and navigation links
 
-  Scenario: Services section shows 6 service cards
-    Given the Innovex page is loaded
-    Then the services section shows 6 service items
-    And each service has a title and icon
+- **GIVEN** the Innovex page is loaded
+- **THEN** the navbar shows "Innovex" brand text
+- **AND** the navbar has 6 navigation links: Home, About, Pricing, Portfolio, Blog, Contact
 
-  Scenario: About section shows experience info
-    Given the Innovex page is loaded
-    Then the about section shows "42" years of experience
-    And the about section has a description paragraph
+#### Scenario: Hero section shows main heading and CTAs
 
-  Scenario: Counter section shows 4 statistics
-    Given the Innovex page is loaded
-    Then the counter section shows 4 stat blocks
-    And each stat has a number and label
+- **GIVEN** the Innovex page is loaded
+- **THEN** the hero shows "Digital Innovation Company" heading
+- **AND** the hero has "Get Started" and "View Portfolio" buttons
 
-  Scenario: FAQ section shows accordion items
-    Given the Innovex page is loaded
-    Then the FAQ section shows 4 questions
-    And clicking a question toggles its answer visibility
+#### Scenario: Services section shows 6 service cards
 
-  Scenario: Progress bars display skill percentages
-    Given the Innovex page is loaded
-    Then the skills section shows 4 progress bars
-    And each progress bar has a label and percentage
+- **GIVEN** the Innovex page is loaded
+- **THEN** the services section shows 6 service items
+- **AND** each service has a title and icon
 
-  Scenario: Team section shows 4 members
-    Given the Innovex page is loaded
-    Then the team section shows 4 team member cards
-    And each card has a name and position
+#### Scenario: About section shows experience info
 
-  Scenario: Footer has Component Dock link
-    Given the Innovex page is loaded
-    Then the footer contains a link to componentdock.com
-    And the footer has company information columns
+- **GIVEN** the Innovex page is loaded
+- **THEN** the about section shows "42" years of experience
+- **AND** the about section has a description paragraph
 
-  Scenario: App sets document title
-    Given the Innovex page is loaded
-    Then the document title is "Innovex — Digital Agency Template"
-```
+#### Scenario: Counter section shows 4 statistics
+
+- **GIVEN** the Innovex page is loaded
+- **THEN** the counter section shows 4 stat blocks
+- **AND** each stat has a number and label
+
+#### Scenario: FAQ section shows accordion items
+
+- **GIVEN** the Innovex page is loaded
+- **THEN** the FAQ section shows 4 questions
+- **AND** clicking a question toggles its answer visibility
+
+#### Scenario: Progress bars display skill percentages
+
+- **GIVEN** the Innovex page is loaded
+- **THEN** the skills section shows 4 progress bars
+- **AND** each progress bar has a label and percentage
+
+#### Scenario: Team section shows 4 members
+
+- **GIVEN** the Innovex page is loaded
+- **THEN** the team section shows 4 team member cards
+- **AND** each card has a name and position
+
+#### Scenario: Footer has Component Dock link
+
+- **GIVEN** the Innovex page is loaded
+- **THEN** the footer contains a link to componentdock.com
+- **AND** the footer has company information columns
+
+#### Scenario: App sets document title
+
+- **GIVEN** the Innovex page is loaded
+- **THEN** the document title is "Innovex — Digital Agency Template"

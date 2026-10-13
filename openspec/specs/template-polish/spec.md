@@ -96,65 +96,67 @@ Extracted from the live preview CSS (`css/style.css`):
 | btn-secondary   | bg transparent, border 1px solid #fff, color #fff | Outline button on dark hero                   |
 | hero-gradient   | Diagonal clip (degree-right CSS class)            | Hero bottom edge shape                        |
 
-## Requirements (Gherkin)
+## Requirements
 
-### Scenario: Navbar renders fixed dark top bar with logo and nav links
+### Feature: Polish template behaviour
 
-- Given the user is on the page
-- Then a fixed dark navbar is visible at the top
-- And the navbar contains the brand logo text "Polish"
-- And the navbar contains links: About, Services, Pricing, Blog, Contact
+#### Scenario: Navbar renders fixed dark top bar with logo and nav links
 
-### Scenario: Hero section displays with dark image overlay and CTA
+- **GIVEN** the user is on the page
+- **THEN** a fixed dark navbar is visible at the top
+- **AND** the navbar contains the brand logo text "Polish"
+- **AND** the navbar contains links: About, Services, Pricing, Blog, Contact
 
-- Given the user is on the page
-- Then the hero section has a dark photographic background image
-- And a dark overlay covers the background
-- And "Introducing" subheading text is visible
-- And "A Clean Home is A Happy Home" heading is visible
-- And a "Request A Quote" outline button is visible
+#### Scenario: Hero section displays with dark image overlay and CTA
 
-### Scenario: Booking form accepts user input
+- **GIVEN** the user is on the page
+- **THEN** the hero section has a dark photographic background image
+- **AND** a dark overlay covers the background
+- **AND** "Introducing" subheading text is visible
+- **AND** "A Clean Home is A Happy Home" heading is visible
+- **AND** a "Request A Quote" outline button is visible
 
-- Given the user is on the page
-- When the user types "John" in the First Name field
-- And the user types "Doe" in the Last Name field
-- And the user selects "Residential Cleaning" from the service dropdown
-- Then the "Make an Appointment" button is enabled
+#### Scenario: Booking form accepts user input
 
-### Scenario: Stats section displays animated counters
+- **GIVEN** the user is on the page
+- **WHEN** the user types "John" in the First Name field
+- **AND** the user types "Doe" in the Last Name field
+- **AND** the user selects "Residential Cleaning" from the service dropdown
+- **THEN** the "Make an Appointment" button is enabled
 
-- Given the user is on the page
-- Then 4 stat counters are visible
-- And each counter shows a number and a label
-- And each counter has a blue circular icon
+#### Scenario: Stats section displays animated counters
 
-### Scenario: Services grid shows 6 cleaning service cards
+- **GIVEN** the user is on the page
+- **THEN** 4 stat counters are visible
+- **AND** each counter shows a number and a label
+- **AND** each counter has a blue circular icon
 
-- Given the user is on the page
-- Then 6 service cards are displayed in a grid
-- And each card has an image, title, and price
-- And each card has a circular arrow button
+#### Scenario: Services grid shows 6 cleaning service cards
 
-### Scenario: Pricing section shows 4 plan cards
+- **GIVEN** the user is on the page
+- **THEN** 6 service cards are displayed in a grid
+- **AND** each card has an image, title, and price
+- **AND** each card has a circular arrow button
 
-- Given the user is on the page
-- Then 4 pricing cards are displayed
-- And each card has a plan name, price, and feature list
-- And each card has a "Sign Up" button
+#### Scenario: Pricing section shows 4 plan cards
 
-### Scenario: Blog section shows 3 post cards
+- **GIVEN** the user is on the page
+- **THEN** 4 pricing cards are displayed
+- **AND** each card has a plan name, price, and feature list
+- **AND** each card has a "Sign Up" button
 
-- Given the user is on the page
-- Then 3 blog post cards are displayed
-- And each card has an image, meta info, title, and excerpt
+#### Scenario: Blog section shows 3 post cards
 
-### Scenario: Footer contains newsletter form and social links
+- **GIVEN** the user is on the page
+- **THEN** 3 blog post cards are displayed
+- **AND** each card has an image, meta info, title, and excerpt
 
-- Given the user is on the page
-- Then the footer has a newsletter email input and submit button
-- And the footer has social media icon links
-- And the footer has a copyright line with Component Dock link
+#### Scenario: Footer contains newsletter form and social links
+
+- **GIVEN** the user is on the page
+- **THEN** the footer has a newsletter email input and submit button
+- **AND** the footer has social media icon links
+- **AND** the footer has a copyright line with Component Dock link
 
 ## Verification Checklist
 

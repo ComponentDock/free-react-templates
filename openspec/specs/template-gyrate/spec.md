@@ -22,49 +22,54 @@ A responsive and flexible split-screen carousel template featuring imagery, desc
   - Border Radius: `rounded-lg` (8px) / `rounded-full` for pill buttons & indicators
   - Shadows: Subtle drop shadows for cards and active carousel panels
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature 1: Navigation Bar
 
 As a visitor, I want a clean sticky navigation bar with brand logo, links, and CTA so that I can easily navigate the site.
 
-- **Scenario**: User views header
-  - **Given** the page is loaded
-  - **Then** the header displays the brand logo "Gyrate", navigation links (Home, Features, Gallery, About, Contact), and a "Get Started" button.
+#### Scenario: User views header
+
+- **GIVEN** the page is loaded
+- **THEN** the header displays the brand logo "Gyrate", navigation links (Home, Features, Gallery, About, Contact), and a "Get Started" button
 
 ### Feature 2: Split-Screen Carousel Hero
 
 As a visitor, I want an interactive split-screen carousel displaying striking imagery paired with engaging headlines, descriptions, and CTA buttons so that I can explore featured content.
 
-- **Scenario**: User interacts with the split-screen carousel
-  - **Given** the hero carousel is displayed with text on one side and imagery on the other
-  - **When** the user clicks the next/previous carousel controls or pagination dots
-  - **Then** the slide updates smoothly with new headline, description, and high-resolution picture.
+#### Scenario: User interacts with the split-screen carousel
+
+- **GIVEN** the hero carousel is displayed with text on one side and imagery on the other
+- **WHEN** the user clicks the next/previous carousel controls or pagination dots
+- **THEN** the slide updates smoothly with new headline, description, and high-resolution picture
 
 ### Feature 3: Features / Highlights Section
 
 As a visitor, I want to see key features presented in a structured grid with icons so that I understand the core benefits of the service.
 
-- **Scenario**: User views feature cards
-  - **Given** the user scrolls down to the features section
-  - **Then** multiple cards with icons, titles, and descriptive text are shown in a responsive grid.
+#### Scenario: User views feature cards
+
+- **GIVEN** the user scrolls down to the features section
+- **THEN** multiple cards with icons, titles, and descriptive text are shown in a responsive grid
 
 ### Feature 4: Interactive Call to Action (CTA) Banner
 
 As a visitor, I want a prominent banner encouraging action so that I can subscribe or sign up.
 
-- **Scenario**: User submits newsletter / CTA form
-  - **Given** the CTA banner is visible with an email input field
-  - **When** the user enters a valid email and clicks subscribe
-  - **Then** a success confirmation message is displayed.
+#### Scenario: User submits newsletter / CTA form
+
+- **GIVEN** the CTA banner is visible with an email input field
+- **WHEN** the user enters a valid email and clicks subscribe
+- **THEN** a success confirmation message is displayed
 
 ### Feature 5: Footer with Component Dock Link
 
 As a visitor, I want a footer containing standard links and the mandatory Component Dock attribution.
 
-- **Scenario**: User scrolls to footer
-  - **Given** the page footer is rendered
-  - **Then** it contains copyright info, social links, and a prominent link to `https://www.componentdock.com/` ("Component Dock").
+#### Scenario: User scrolls to footer
+
+- **GIVEN** the page footer is rendered
+- **THEN** it contains copyright info, social links, and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

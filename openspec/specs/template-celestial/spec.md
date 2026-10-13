@@ -92,7 +92,7 @@ The screenshot shows a dark, sophisticated creative agency aesthetic:
 - Clean, professional, modern agency vibe with generous white space
 - Stats section with parallax dark background and large numbers
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Celestial Creative Agency Portfolio
 
@@ -101,104 +101,127 @@ The screenshot shows a dark, sophisticated creative agency aesthetic:
   So that I can evaluate whether to hire them.
 
   Background:
-    Given the user opens the Celestial landing page
-    And the page is fully loaded
+- **GIVEN** the user opens the Celestial landing page
+- **AND** the page is fully loaded
 
-  # --- Navbar ---
-  Scenario: Transparent navbar overlays the hero
-    Then the navbar should be visible and overlay the hero section
-    And the navbar should show the site logo on the left
-    And the navbar should show navigation links on the right
-    And the navbar should become sticky with a dark background on scroll
+**--- Navbar ---**
 
-  # --- Hero ---
-  Scenario: Hero section displays full-viewport parallax background
-    Then the hero should occupy the full viewport height
-    And the hero should display a parallax background image with dark overlay
-    And the hero should show a headline about creative solutions
-    And the hero should show two CTA buttons
-    And the hero should show a scroll indicator
-    And the hero should show social media links
+#### Scenario: Transparent navbar overlays the hero
 
-  Scenario: Hero CTA buttons are clickable
-    When the user clicks the "More About Us" button
-    Then the page should scroll smoothly to the About section
+- **THEN** the navbar should be visible and overlay the hero section
+- **AND** the navbar should show the site logo on the left
+- **AND** the navbar should show navigation links on the right
+- **AND** the navbar should become sticky with a dark background on scroll
 
-  # --- About ---
-  Scenario: About section displays agency info and process
-    Then the About section should display a numbered subhead "01."
-    And the About section should show a heading "Who We Are"
-    And the About section should show introductory paragraphs
-    And the About section should show 4 process steps in a grid
-    And the 4 process steps should be: Planning, Branding, Implementation, Documentation
-    And each process step should have a title and description
+**--- Hero ---**
 
-  # --- Services ---
-  Scenario: Services section displays service offerings on dark background
-    Then the Services section should have a dark background with parallax image
-    And the Services section should display a numbered subhead "02."
-    And the Services section should show a heading "What We Do"
-    And the Services section should show 6 services in a 3-column grid
-    And the 6 services should be: Brand Identity, Illustration, Web Design, Product Strategy, UI/UX Design, Mobile Design
-    And each service should have a title and description
-    And all text in the Services section should be white
+#### Scenario: Hero section displays full-viewport parallax background
 
-  # --- Works/Portfolio ---
-  Scenario: Portfolio section displays recent works
-    Then the Works section should display a numbered subhead "03."
-    And the Works section should show a heading "Recent Works"
-    And the Works section should show 8 portfolio items in a 4-column grid
-    And each portfolio item should have an image and title
-    And each portfolio item should show an overlay on hover
+- **THEN** the hero should occupy the full viewport height
+- **AND** the hero should display a parallax background image with dark overlay
+- **AND** the hero should show a headline about creative solutions
+- **AND** the hero should show two CTA buttons
+- **AND** the hero should show a scroll indicator
+- **AND** the hero should show social media links
 
-  # --- Testimonials ---
-  Scenario: Testimonials section shows client feedback
-    Then the Testimonials section should display a heading "What Clients Are Saying..."
-    And the Testimonials section should show a slider with 3 testimonials
-    And each testimonial should have a quote, author name, and role
-    And the slider should have previous/next navigation arrows
+#### Scenario: Hero CTA buttons are clickable
 
-  Scenario: Testimonials slider navigates between items
-    When the user clicks the next arrow
-    Then the slider should advance to the next testimonial
-    When the user clicks the previous arrow
-    Then the slider should return to the previous testimonial
+- **WHEN** the user clicks the "More About Us" button
+- **THEN** the page should scroll smoothly to the About section
 
-  # --- Clients ---
-  Scenario: Clients section displays partner logos
-    Then the Clients section should display a numbered subhead "04."
-    And the Clients section should show a heading about selected clients
-    And the Clients section should show a grid of client logos
-    And the client logos should be displayed in greyscale
+**--- About ---**
 
-  # --- Stats ---
-  Scenario: Stats section displays counter metrics on dark background
-    Then the Stats section should have a dark background with parallax image
-    And the Stats section should show 4 statistics in a row
-    And the statistics should be: Projects Completed, Happy Clients, Awards Received, Cups of Coffee
-    And each statistic should show a large number and a label
+#### Scenario: About section displays agency info and process
 
-  # --- Contact ---
-  Scenario: Contact section provides multiple contact methods
-    Then the Contact section should display a numbered subhead "05."
-    And the Contact section should show a heading "Get In Touch"
-    And the Contact section should show a 3-column layout
-    And the left column should show the office address
-    And the center column should show a subscribe form and social links
-    And the right column should show email and phone contact info
-    And the Contact section should have a "Let's Talk" button
-    And the subscribe form should have an email input and submit button
+- **THEN** the About section should display a numbered subhead "01."
+- **AND** the About section should show a heading "Who We Are"
+- **AND** the About section should show introductory paragraphs
+- **AND** the About section should show 4 process steps in a grid
+- **AND** the 4 process steps should be: Planning, Branding, Implementation, Documentation
+- **AND** each process step should have a title and description
 
-  Scenario: Contact subscribe form validates email
-    When the user submits the subscribe form with an empty email
-    Then the form should show a validation error
-    When the user enters a valid email and submits
-    Then the form should accept the submission
+**--- Services ---**
 
-  # --- Footer ---
-  Scenario: Footer shows copyright and branding
-    Then the footer should display a copyright notice
-    And the footer should link to Component Dock (https://www.componentdock.com/)
+#### Scenario: Services section displays service offerings on dark background
+
+- **THEN** the Services section should have a dark background with parallax image
+- **AND** the Services section should display a numbered subhead "02."
+- **AND** the Services section should show a heading "What We Do"
+- **AND** the Services section should show 6 services in a 3-column grid
+- **AND** the 6 services should be: Brand Identity, Illustration, Web Design, Product Strategy, UI/UX Design, Mobile Design
+- **AND** each service should have a title and description
+- **AND** all text in the Services section should be white
+
+**--- Works/Portfolio ---**
+
+#### Scenario: Portfolio section displays recent works
+
+- **THEN** the Works section should display a numbered subhead "03."
+- **AND** the Works section should show a heading "Recent Works"
+- **AND** the Works section should show 8 portfolio items in a 4-column grid
+- **AND** each portfolio item should have an image and title
+- **AND** each portfolio item should show an overlay on hover
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section shows client feedback
+
+- **THEN** the Testimonials section should display a heading "What Clients Are Saying..."
+- **AND** the Testimonials section should show a slider with 3 testimonials
+- **AND** each testimonial should have a quote, author name, and role
+- **AND** the slider should have previous/next navigation arrows
+
+#### Scenario: Testimonials slider navigates between items
+
+- **WHEN** the user clicks the next arrow
+- **THEN** the slider should advance to the next testimonial
+- **WHEN** the user clicks the previous arrow
+- **THEN** the slider should return to the previous testimonial
+
+**--- Clients ---**
+
+#### Scenario: Clients section displays partner logos
+
+- **THEN** the Clients section should display a numbered subhead "04."
+- **AND** the Clients section should show a heading about selected clients
+- **AND** the Clients section should show a grid of client logos
+- **AND** the client logos should be displayed in greyscale
+
+**--- Stats ---**
+
+#### Scenario: Stats section displays counter metrics on dark background
+
+- **THEN** the Stats section should have a dark background with parallax image
+- **AND** the Stats section should show 4 statistics in a row
+- **AND** the statistics should be: Projects Completed, Happy Clients, Awards Received, Cups of Coffee
+- **AND** each statistic should show a large number and a label
+
+**--- Contact ---**
+
+#### Scenario: Contact section provides multiple contact methods
+
+- **THEN** the Contact section should display a numbered subhead "05."
+- **AND** the Contact section should show a heading "Get In Touch"
+- **AND** the Contact section should show a 3-column layout
+- **AND** the left column should show the office address
+- **AND** the center column should show a subscribe form and social links
+- **AND** the right column should show email and phone contact info
+- **AND** the Contact section should have a "Let's Talk" button
+- **AND** the subscribe form should have an email input and submit button
+
+#### Scenario: Contact subscribe form validates email
+
+- **WHEN** the user submits the subscribe form with an empty email
+- **THEN** the form should show a validation error
+- **WHEN** the user enters a valid email and submits
+- **THEN** the form should accept the submission
+
+**--- Footer ---**
+
+#### Scenario: Footer shows copyright and branding
+
+- **THEN** the footer should display a copyright notice
+- **AND** the footer should link to Component Dock (https://www.componentdock.com/)
 
 ## Verification Checklist
 

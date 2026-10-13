@@ -56,87 +56,71 @@ background is a single solid color with no gradient or pattern.
    expands to search input on click
 4. **Footer** — standard ComponentDock footer
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page renders with light blue background
+### Feature: QueryHub template behaviour
 
-```gherkin
-Given I visit the QueryHub page
-Then the page background should be light ice-blue (#daedf7)
-And the page should fill the full viewport
-```
+#### Scenario: Page renders with light blue background
 
-### Scenario: Round search toggle is visible
+- **GIVEN** I visit the QueryHub page
+- **THEN** the page background should be light ice-blue (#daedf7)
+- **AND** the page should fill the full viewport
 
-```gherkin
-Given I visit the QueryHub page
-Then I should see a circular white button with a magnifying glass icon
-And the button should be centered horizontally on the page
-And the button should be positioned slightly above vertical center
-```
+#### Scenario: Round search toggle is visible
 
-### Scenario: Square search toggle is visible
+- **GIVEN** I visit the QueryHub page
+- **THEN** I should see a circular white button with a magnifying glass icon
+- **AND** the button should be centered horizontally on the page
+- **AND** the button should be positioned slightly above vertical center
 
-```gherkin
-Given I visit the QueryHub page
-Then I should see a square white button with a magnifying glass icon
-And the button should be centered horizontally on the page
-And the button should be positioned slightly below the round toggle
-```
+#### Scenario: Square search toggle is visible
 
-### Scenario: Round toggle expands to search input
+- **GIVEN** I visit the QueryHub page
+- **THEN** I should see a square white button with a magnifying glass icon
+- **AND** the button should be centered horizontally on the page
+- **AND** the button should be positioned slightly below the round toggle
 
-```gherkin
-Given I visit the QueryHub page
-When I click the round search toggle
-Then a search input field should appear
-And the search input should have a white background
-And the search input should have a placeholder text
-And the search input should be focused automatically
-```
+#### Scenario: Round toggle expands to search input
 
-### Scenario: Square toggle expands to search input
+- **GIVEN** I visit the QueryHub page
+- **WHEN** I click the round search toggle
+- **THEN** a search input field should appear
+- **AND** the search input should have a white background
+- **AND** the search input should have a placeholder text
+- **AND** the search input should be focused automatically
 
-```gherkin
-Given I visit the QueryHub page
-When I click the square search toggle
-Then a search input field should appear
-And the search input should have a white background
-And the search input should have a placeholder text
-And the search input should be focused automatically
-```
+#### Scenario: Square toggle expands to search input
 
-### Scenario: Search input can be dismissed
+- **GIVEN** I visit the QueryHub page
+- **WHEN** I click the square search toggle
+- **THEN** a search input field should appear
+- **AND** the search input should have a white background
+- **AND** the search input should have a placeholder text
+- **AND** the search input should be focused automatically
 
-```gherkin
-Given I have expanded a search toggle
-When I press the Escape key
-Then the search input should collapse back to the toggle icon
-```
+#### Scenario: Search input can be dismissed
 
-### Scenario: Search input accepts text
+- **GIVEN** I have expanded a search toggle
+- **WHEN** I press the Escape key
+- **THEN** the search input should collapse back to the toggle icon
 
-```gherkin
-Given I have expanded a search toggle
-When I type "hello" into the search input
-Then the search input should display "hello"
-```
+#### Scenario: Search input accepts text
 
-### Scenario: Responsive layout on mobile
+- **GIVEN** I have expanded a search toggle
+- **WHEN** I type "hello" into the search input
+- **THEN** the search input should display "hello"
 
-```gherkin
-Given I visit the QueryHub page on a mobile device
-Then both search toggles should be visible and centered
-And the toggles should be appropriately sized for touch targets
-```
+#### Scenario: Responsive layout on mobile
 
-### Scenario: Footer is present
+- **GIVEN** I visit the QueryHub page on a mobile device
+- **THEN** both search toggles should be visible and centered
+- **AND** the toggles should be appropriately sized for touch targets
 
-```gherkin
-Given I visit the QueryHub page
-Then I should see a footer
-And the footer should contain a link to https://www.componentdock.com/
-```
+#### Scenario: Footer is present
+
+- **GIVEN** I visit the QueryHub page
+- **THEN** I should see a footer
+- **AND** the footer should contain a link to https://www.componentdock.com/
 
 ## Verification checklist
 

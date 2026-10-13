@@ -11,46 +11,58 @@ Features an immersive image & content carousel showcase, portfolio highlights, i
 - **Fonts:** Inter / Poppins sans-serif.
 - **Radii:** Rounded-xl for cards, rounded-lg for buttons and controls.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature 1: Navigation Bar
 
+#### Scenario: Feature 1: Navigation Bar
+
 - Scenario: User views header
-  - Given the application is loaded
-  - Then the navigation bar displays brand logo "CarouselFlick", menu links (Home, Showcase, Gallery, About, Contact), and a CTA button ("Explore").
+- **GIVEN** the application is loaded
+- **THEN** the navigation bar displays brand logo "CarouselFlick", menu links (Home, Showcase, Gallery, About, Contact), and a CTA button ("Explore")
 
 ### Feature 2: Immersive Hero Carousel
 
+#### Scenario: Feature 2: Immersive Hero Carousel
+
 - Scenario: User interacts with the main carousel slider
-  - Given the carousel is displayed in the hero section
-  - When the user clicks the "Next" or "Prev" buttons or thumbnail indicators
-  - Then the active slide updates with a smooth transition, displaying new imagery, title, category badge, description, and action button.
+- **GIVEN** the carousel is displayed in the hero section
+- **WHEN** the user clicks the "Next" or "Prev" buttons or thumbnail indicators
+- **THEN** the active slide updates with a smooth transition, displaying new imagery, title, category badge, description, and action button
 
 ### Feature 3: Thumbnail Navigation Strip
 
+#### Scenario: Feature 3: Thumbnail Navigation Strip
+
 - Scenario: User selects a slide from the thumbnail strip
-  - Given the thumbnail strip is visible below the main slider
-  - When the user clicks a specific thumbnail preview
-  - Then the main carousel jumps directly to that selected slide.
+- **GIVEN** the thumbnail strip is visible below the main slider
+- **WHEN** the user clicks a specific thumbnail preview
+- **THEN** the main carousel jumps directly to that selected slide
 
 ### Feature 4: Portfolio Highlights Grid
 
+#### Scenario: Feature 4: Portfolio Highlights Grid
+
 - Scenario: User explores feature grid
-  - Given the portfolio highlights section is rendered
-  - Then visitor sees cards showcasing featured creative projects with images, tags, and detail links.
+- **GIVEN** the portfolio highlights section is rendered
+- **THEN** visitor sees cards showcasing featured creative projects with images, tags, and detail links
 
 ### Feature 5: Newsletter Subscription CTA
 
+#### Scenario: Feature 5: Newsletter Subscription CTA
+
 - Scenario: User subscribes to updates
-  - Given the newsletter section is visible
-  - When the user enters a valid email address and clicks Subscribe
-  - Then a success confirmation message is displayed.
+- **GIVEN** the newsletter section is visible
+- **WHEN** the user enters a valid email address and clicks Subscribe
+- **THEN** a success confirmation message is displayed
 
 ### Feature 6: Footer with Component Dock Attribution
 
+#### Scenario: Feature 6: Footer with Component Dock Attribution
+
 - Scenario: User scrolls to footer
-  - Given the footer is rendered at the bottom of the page
-  - Then it displays copyright, social links, and a prominent link to https://www.componentdock.com/ ("Component Dock").
+- **GIVEN** the footer is rendered at the bottom of the page
+- **THEN** it displays copyright, social links, and a prominent link to https://www.componentdock.com/ ("Component Dock")
 
 ## Verification Checklist
 

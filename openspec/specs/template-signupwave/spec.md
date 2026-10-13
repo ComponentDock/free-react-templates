@@ -76,70 +76,72 @@ Extracted from `css/style.css` (preview) and the template HTML:
      - Twitter button: `#1da1f2` background, white text, Twitter icon
      - Google button: `#ea4335` background, white text, Google icon
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Page loads with split-screen layout
+### Feature: SignupWave template behaviour
 
-- Given the user visits the template page
-- When the page finishes loading
-- Then a split-screen layout is visible with two equal halves
-- And the left half contains a registration form
-- And the right half displays a background image
+#### Scenario: Page loads with split-screen layout
 
-### Scenario: Registration form displays correctly
+- **GIVEN** the user visits the template page
+- **WHEN** the page finishes loading
+- **THEN** a split-screen layout is visible with two equal halves
+- **AND** the left half contains a registration form
+- **AND** the right half displays a background image
 
-- Given the page is loaded
-- When the user views the form area
-- Then a "Register" heading is visible
-- And a descriptive paragraph is displayed below the heading
-- And three input fields are visible: Email, Password, Re-type Password
-- And each input has a floating label
+#### Scenario: Registration form displays correctly
 
-### Scenario: Floating labels animate on focus
+- **GIVEN** the page is loaded
+- **WHEN** the user views the form area
+- **THEN** a "Register" heading is visible
+- **AND** a descriptive paragraph is displayed below the heading
+- **AND** three input fields are visible: Email, Password, Re-type Password
+- **AND** each input has a floating label
 
-- Given the form is displayed
-- When the user clicks on the Email input
-- Then the "Email" label moves above the input field
-- And the input border receives a blue focus ring
+#### Scenario: Floating labels animate on focus
 
-### Scenario: Terms checkbox interaction
+- **GIVEN** the form is displayed
+- **WHEN** the user clicks on the Email input
+- **THEN** the "Email" label moves above the input field
+- **AND** the input border receives a blue focus ring
 
-- Given the form is displayed
-- Then the "Agree our Terms and Conditions" checkbox is checked by default
-- When the user unchecks the checkbox
-- Then the checkbox indicator turns gray
-- When the user re-checks the checkbox
-- Then the checkbox indicator turns blue
+#### Scenario: Terms checkbox interaction
 
-### Scenario: Register button is full-width
+- **GIVEN** the form is displayed
+- **THEN** the "Agree our Terms and Conditions" checkbox is checked by default
+- **WHEN** the user unchecks the checkbox
+- **THEN** the checkbox indicator turns gray
+- **WHEN** the user re-checks the checkbox
+- **THEN** the checkbox indicator turns blue
 
-- Given the form is displayed
-- Then the "Register" button spans the full width of the form column
-- And the button has a blue background with white text
+#### Scenario: Register button is full-width
 
-### Scenario: Social login buttons display
+- **GIVEN** the form is displayed
+- **THEN** the "Register" button spans the full width of the form column
+- **AND** the button has a blue background with white text
 
-- Given the form is displayed
-- When the user scrolls past the divider
-- Then three social login buttons are visible
-- And the Facebook button has a `#3b5998` background
-- And the Twitter button has a `#1da1f2` background
-- And the Google button has a `#ea4335` background
-- And each button spans the full width
+#### Scenario: Social login buttons display
 
-### Scenario: Responsive layout stacks on mobile
+- **GIVEN** the form is displayed
+- **WHEN** the user scrolls past the divider
+- **THEN** three social login buttons are visible
+- **AND** the Facebook button has a `#3b5998` background
+- **AND** the Twitter button has a `#1da1f2` background
+- **AND** the Google button has a `#ea4335` background
+- **AND** each button spans the full width
 
-- Given the user views the template on a viewport under 992px
-- Then the background image stacks above the form
-- And the image area is 500px tall
-- And the form content is centered below
+#### Scenario: Responsive layout stacks on mobile
 
-### Scenario: Footer links to Component Dock
+- **GIVEN** the user views the template on a viewport under 992px
+- **THEN** the background image stacks above the form
+- **AND** the image area is 500px tall
+- **AND** the form content is centered below
 
-- Given the page is loaded
-- When the user scrolls to the footer
-- Then a link to "https://www.componentdock.com/" is present
-- And the link text mentions "Component Dock"
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the page is loaded
+- **WHEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text mentions "Component Dock"
 
 ## Verification Checklist
 

@@ -49,55 +49,62 @@ Extracted from the original `css/style.css`:
    - City + Country dropdown (side-by-side)
 8. **Navigation buttons** — Previous / Next (green #1ed760, rounded)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Multi-step profile builder wizard
 
-Scenario: Page loads with step 1 visible
-Given the user visits the spellforge page
-Then the "Build your profile" heading is visible
-And the "About" step section is displayed
-And the progress bar shows 33% completion
+#### Scenario: Page loads with step 1 visible
 
-Scenario: User fills About step and proceeds
-Given the user is on the About step
-When the user enters "John" in the First Name field
-And the user enters "Doe" in the Last Name field
-And the user enters "john@example.com" in the Email field
-And the user clicks Next
-Then the Account step is displayed
-And the progress bar shows 66% completion
+- **GIVEN** the user visits the spellforge page
+- **THEN** the "Build your profile" heading is visible
+- **AND** the "About" step section is displayed
+- **AND** the progress bar shows 33% completion
 
-Scenario: User selects a role in Account step
-Given the user is on the Account step
-When the user selects the "Coder" role
-And the user clicks Next
-Then the Address step is displayed
-And the progress bar shows 100% completion
+#### Scenario: User fills About step and proceeds
 
-Scenario: User fills Address step and submits
-Given the user is on the Address step
-When the user enters "Main St" in the Street Name field
-And the user enters "123" in the Street Number field
-And the user enters "New York" in the City field
-And the user selects "USA" from the Country dropdown
-And the user clicks the Submit button
-Then the form is submitted
+- **GIVEN** the user is on the About step
+- **WHEN** the user enters "John" in the First Name field
+- **AND** the user enters "Doe" in the Last Name field
+- **AND** the user enters "john@example.com" in the Email field
+- **AND** the user clicks Next
+- **THEN** the Account step is displayed
+- **AND** the progress bar shows 66% completion
 
-Scenario: User can navigate backwards
-Given the user is on the Account step
-When the user clicks Previous
-Then the About step is displayed with previously entered values preserved
+#### Scenario: User selects a role in Account step
 
-Scenario: Profile picture upload shows preview
-Given the user is on the About step
-When the user selects an image file
-Then the selected image is displayed as the profile picture preview
+- **GIVEN** the user is on the Account step
+- **WHEN** the user selects the "Coder" role
+- **AND** the user clicks Next
+- **THEN** the Address step is displayed
+- **AND** the progress bar shows 100% completion
 
-Scenario: Form validates required fields
-Given the user is on the About step
-When the user clicks Next without filling any fields
-Then validation errors are shown for required fields
+#### Scenario: User fills Address step and submits
+
+- **GIVEN** the user is on the Address step
+- **WHEN** the user enters "Main St" in the Street Name field
+- **AND** the user enters "123" in the Street Number field
+- **AND** the user enters "New York" in the City field
+- **AND** the user selects "USA" from the Country dropdown
+- **AND** the user clicks the Submit button
+- **THEN** the form is submitted
+
+#### Scenario: User can navigate backwards
+
+- **GIVEN** the user is on the Account step
+- **WHEN** the user clicks Previous
+- **THEN** the About step is displayed with previously entered values preserved
+
+#### Scenario: Profile picture upload shows preview
+
+- **GIVEN** the user is on the About step
+- **WHEN** the user selects an image file
+- **THEN** the selected image is displayed as the profile picture preview
+
+#### Scenario: Form validates required fields
+
+- **GIVEN** the user is on the About step
+- **WHEN** the user clicks Next without filling any fields
+- **THEN** validation errors are shown for required fields
 
 ## Verification Checklist
 

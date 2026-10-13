@@ -94,70 +94,83 @@ Extracted from `https://preview.colorlib.com/theme/lawride/css/style.css`:
 | `--shadow-card` | `0px 15px 20px 0px rgba(153,153,153,0.1)` | Stat cards |
 | `--shadow-card-hover` | `0px 10px 30px 0px rgba(153,153,153,0.2)` | Practice area hover |
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Header Top Bar
-- GIVEN a visitor loads the page
-- THEN a dark top bar displays phone "+014 321 523 23" and email "Info@example.com"
-- AND social links (Facebook, Twitter, Instagram, Skype) are shown with orange separators
+### Feature: Lawcraft template behaviour
 
-### Scenario: Navbar
-- GIVEN the page is loaded
-- THEN a white navbar shows the logo and navigation: Home, About, Services, Pages (dropdown with Blog, Blog Details), Contact
-- AND the active nav item is highlighted in brand orange `#de6320`
-- WHEN the user scrolls down on desktop
-- THEN the navbar becomes fixed with a dark orange `#c2581e` background
+#### Scenario: Header Top Bar
 
-### Scenario: Hero Banner
-- GIVEN the page is loaded
-- THEN a full-width hero section displays with a dark background image
-- AND a centered heading "We Well Understand Your Intention" in white
-- AND an orange "Make an Appoinment" CTA button
+- **GIVEN** a visitor loads the page
+- **THEN** a dark top bar displays phone "+014 321 523 23" and email "Info@example.com"
+- **AND** social links (Facebook, Twitter, Instagram, Skype) are shown with orange separators
 
-### Scenario: Statistics Cards
-- GIVEN the hero banner is displayed
-- THEN four white stat cards overlap the bottom of the hero on desktop
-- AND each card shows a large number (35 Dedicated Lawyer, 1526 Successful Cases, 720 Satisfied Client, 680 Personal Cases)
-- AND each number has an orange underline accent
+#### Scenario: Navbar
 
-### Scenario: About Section
-- GIVEN the page is loaded
-- THEN a split layout shows a video thumbnail on the left and content on the right
-- AND the video thumbnail has a dark overlay with a pulsing play button
-- AND the content side shows heading "We Properly Understand Your Purpose" with two paragraphs and a "Learn More" button
+- **GIVEN** the page is loaded
+- **THEN** a white navbar shows the logo and navigation: Home, About, Services, Pages (dropdown with Blog, Blog Details), Contact
+- **AND** the active nav item is highlighted in brand orange `#de6320`
+- **WHEN** the user scrolls down on desktop
+- **THEN** the navbar becomes fixed with a dark orange `#c2581e` background
 
-### Scenario: Practice Areas
-- GIVEN the user scrolls to the practice areas section
-- THEN four practice area cards are displayed in a grid (Employment Law, Personal Injury, Family Law, Bank & Financial)
-- AND each card has an image with an orange overlay on hover
-- AND a "View All Practices" button is centered below the grid
+#### Scenario: Hero Banner
 
-### Scenario: Testimonials
-- GIVEN the user scrolls to the testimonial section
-- THEN a carousel shows client testimonials with avatar, name, role, and italic quote
-- AND the section has a light gray `#f7f7f7` background
+- **GIVEN** the page is loaded
+- **THEN** a full-width hero section displays with a dark background image
+- **AND** a centered heading "We Well Understand Your Intention" in white
+- **AND** an orange "Make an Appoinment" CTA button
 
-### Scenario: Team / Attorneys
-- GIVEN the user scrolls to the team section
-- THEN four attorney cards are displayed with photo, name, role, and social links
-- AND hovering a card shows an orange border on the card body
+#### Scenario: Statistics Cards
 
-### Scenario: CTA Band
-- GIVEN the user scrolls to the CTA section
-- THEN a full-width dark section with background image displays
-- AND white heading "Free Case Evaluation" with an orange "Contact us Now" button
+- **GIVEN** the hero banner is displayed
+- **THEN** four white stat cards overlap the bottom of the hero on desktop
+- **AND** each card shows a large number (35 Dedicated Lawyer, 1526 Successful Cases, 720 Satisfied Client, 680 Personal Cases)
+- **AND** each number has an orange underline accent
 
-### Scenario: Blog Section
-- GIVEN the user scrolls to the blog section
-- THEN three blog post cards are displayed with image, title, date, comment count, and description
-- AND each card has a "Read More" footer link that turns orange on hover
+#### Scenario: About Section
 
-### Scenario: Footer
-- GIVEN the user scrolls to the footer
-- THEN a dark `#04091e` footer shows four columns: About Agency, Navigation Links, Newsletter, InstaFeed
-- AND newsletter has an email input with an orange submit button
-- AND all footer links hover to orange
-- AND the footer includes a "Made with Component Dock" attribution link to `https://www.componentdock.com/`
+- **GIVEN** the page is loaded
+- **THEN** a split layout shows a video thumbnail on the left and content on the right
+- **AND** the video thumbnail has a dark overlay with a pulsing play button
+- **AND** the content side shows heading "We Properly Understand Your Purpose" with two paragraphs and a "Learn More" button
+
+#### Scenario: Practice Areas
+
+- **GIVEN** the user scrolls to the practice areas section
+- **THEN** four practice area cards are displayed in a grid (Employment Law, Personal Injury, Family Law, Bank & Financial)
+- **AND** each card has an image with an orange overlay on hover
+- **AND** a "View All Practices" button is centered below the grid
+
+#### Scenario: Testimonials
+
+- **GIVEN** the user scrolls to the testimonial section
+- **THEN** a carousel shows client testimonials with avatar, name, role, and italic quote
+- **AND** the section has a light gray `#f7f7f7` background
+
+#### Scenario: Team / Attorneys
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** four attorney cards are displayed with photo, name, role, and social links
+- **AND** hovering a card shows an orange border on the card body
+
+#### Scenario: CTA Band
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a full-width dark section with background image displays
+- **AND** white heading "Free Case Evaluation" with an orange "Contact us Now" button
+
+#### Scenario: Blog Section
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** three blog post cards are displayed with image, title, date, comment count, and description
+- **AND** each card has a "Read More" footer link that turns orange on hover
+
+#### Scenario: Footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark `#04091e` footer shows four columns: About Agency, Navigation Links, Newsletter, InstaFeed
+- **AND** newsletter has an email input with an orange submit button
+- **AND** all footer links hover to orange
+- **AND** the footer includes a "Made with Component Dock" attribution link to `https://www.componentdock.com/`
 
 ## Verification Checklist
 

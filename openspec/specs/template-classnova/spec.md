@@ -44,128 +44,135 @@ Extracted from the live preview CSS (`css/style.css`):
 8. **Counter Section** — 4 stat counters (number + label) on dark background.
 9. **Footer** — Dark background. Multiple columns: About text, Course links, Recent posts, Newsletter signup form. Social icons. Copyright bar.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: ClassNova Navigation
 
-  Scenario: Navbar displays logo and links
-    Given the user visits the ClassNova homepage
-    Then the navbar shows the "ClassNova" logo
-    And navigation links include: Home, Courses, About, Events, News, Contact
-    And a "Free Trial" CTA button is visible
+#### Scenario: Navbar displays logo and links
 
-  Scenario: Navbar is transparent over hero
-    Given the user views the top of the homepage
-    Then the navbar has a transparent/dark background overlaying the hero
-```
+- **GIVEN** the user visits the ClassNova homepage
+- **THEN** the navbar shows the "ClassNova" logo
+- **AND** navigation links include: Home, Courses, About, Events, News, Contact
+- **AND** a "Free Trial" CTA button is visible
+
+#### Scenario: Navbar is transparent over hero
+
+- **GIVEN** the user views the top of the homepage
+- **THEN** the navbar has a transparent/dark background overlaying the hero
 
 ### Hero Slider
-```gherkin
+
 Feature: ClassNova Hero Slider
 
-  Scenario: Hero slider has multiple slides
-    Given the user visits the ClassNova homepage
-    Then a full-width image slider is visible
-    And each slide has a heading, subtext, and CTA button(s)
+#### Scenario: Hero slider has multiple slides
 
-  Scenario: Hero slider auto-advances
-    Given the user waits on the homepage
-    Then the slider advances to the next slide
+- **GIVEN** the user visits the ClassNova homepage
+- **THEN** a full-width image slider is visible
+- **AND** each slide has a heading, subtext, and CTA button(s)
 
-  Scenario: Hero slide CTAs are clickable
-    Given the user views a slide
-    When the user clicks "Register Now"
-    Then the user is navigated to the registration page
-```
+#### Scenario: Hero slider auto-advances
+
+- **GIVEN** the user waits on the homepage
+- **THEN** the slider advances to the next slide
+
+#### Scenario: Hero slide CTAs are clickable
+
+- **GIVEN** the user views a slide
+- **WHEN** the user clicks "Register Now"
+- **THEN** the user is navigated to the registration page
 
 ### About Section
-```gherkin
+
 Feature: ClassNova About
 
-  Scenario: About section shows welcome text and services
-    Given the user scrolls to the about section
-    Then a heading reads "Welcome to ClassNova"
-    And tabbed content is available: "Why choose us?", "What we do?", "Offer Services"
-    And 4 service items are displayed with icons
+#### Scenario: About section shows welcome text and services
 
-  Scenario: About tabs are switchable
-    Given the user views the about section
-    When the user clicks "What we do?"
-    Then the content updates to show "What we do?" details
-```
+- **GIVEN** the user scrolls to the about section
+- **THEN** a heading reads "Welcome to ClassNova"
+- **AND** tabbed content is available: "Why choose us?", "What we do?", "Offer Services"
+- **AND** 4 service items are displayed with icons
+
+#### Scenario: About tabs are switchable
+
+- **GIVEN** the user views the about section
+- **WHEN** the user clicks "What we do?"
+- **THEN** the content updates to show "What we do?" details
 
 ### Classes Section
-```gherkin
+
 Feature: ClassNova Classes
 
-  Scenario: Six course cards are displayed
-    Given the user scrolls to the classes section
-    Then 6 course cards are shown in a 3-column grid
-    And each card has an image, title overlay, and "Learn More" link
+#### Scenario: Six course cards are displayed
 
-  Scenario: Course cards have hover effect
-    Given the user hovers over a course card
-    Then the card shows a hover state (overlay or scale effect)
-```
+- **GIVEN** the user scrolls to the classes section
+- **THEN** 6 course cards are shown in a 3-column grid
+- **AND** each card has an image, title overlay, and "Learn More" link
+
+#### Scenario: Course cards have hover effect
+
+- **GIVEN** the user hovers over a course card
+- **THEN** the card shows a hover state (overlay or scale effect)
 
 ### Trainers Section
-```gherkin
+
 Feature: ClassNova Trainers
 
-  Scenario: Instructor profiles are displayed
-    Given the user scrolls to the trainers section
-    Then instructor profiles are shown with circular avatar images and names
-```
+#### Scenario: Instructor profiles are displayed
+
+- **GIVEN** the user scrolls to the trainers section
+- **THEN** instructor profiles are shown with circular avatar images and names
 
 ### Events Section
-```gherkin
+
 Feature: ClassNova Events
 
-  Scenario: Event entries are shown
-    Given the user scrolls to the events section
-    Then event entries are displayed with date badges, titles, and descriptions
-```
+#### Scenario: Event entries are shown
+
+- **GIVEN** the user scrolls to the events section
+- **THEN** event entries are displayed with date badges, titles, and descriptions
 
 ### Blog Section
-```gherkin
+
 Feature: ClassNova Blog
 
-  Scenario: Three blog posts are shown
-    Given the user scrolls to the blog section
-    Then 3 blog post cards are displayed
-    And each has an image, title, and meta information
-    And the section heading reads "Latest Blog"
-```
+#### Scenario: Three blog posts are shown
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed
+- **AND** each has an image, title, and meta information
+- **AND** the section heading reads "Latest Blog"
 
 ### Counter Section
-```gherkin
+
 Feature: ClassNova Counters
 
-  Scenario: Four stat counters are displayed
-    Given the user scrolls to the counter section
-    Then 4 counters are shown with numbers and labels
-    And the section has a dark background
-```
+#### Scenario: Four stat counters are displayed
+
+- **GIVEN** the user scrolls to the counter section
+- **THEN** 4 counters are shown with numbers and labels
+- **AND** the section has a dark background
 
 ### Footer
-```gherkin
+
 Feature: ClassNova Footer
 
-  Scenario: Footer has multiple columns
-    Given the user scrolls to the footer
-    Then columns are visible: About, Courses, Recent Posts, Newsletter
+#### Scenario: Footer has multiple columns
 
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" is present
-    And it is branded as "Component Dock"
+- **GIVEN** the user scrolls to the footer
+- **THEN** columns are visible: About, Courses, Recent Posts, Newsletter
 
-  Scenario: Newsletter signup form exists
-    Given the user views the footer
-    Then a newsletter email input and subscribe button are visible
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** it is branded as "Component Dock"
+
+#### Scenario: Newsletter signup form exists
+
+- **GIVEN** the user views the footer
+- **THEN** a newsletter email input and subscribe button are visible
 
 ## Verification checklist
 

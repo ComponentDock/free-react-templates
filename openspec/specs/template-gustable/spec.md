@@ -47,134 +47,130 @@ The Eatwell screenshot shows:
 - **Contact:** Light gray background, two-column: left has contact form (name, email, message + submit), right has address info + map
 - **Footer:** Dark background, brand name, copyright, social links
 
-## Gherkin requirements
+## Requirements
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero displays full-viewport background image with overlay
-  Given the user visits the page
-  Then the hero section spans the full viewport height
-  And a background image is displayed with a dark overlay
-  And the heading "Welcome To Gustable" is shown in white serif font
-  And the subtitle text is displayed in white below the heading
-  And a "Reservation" button is displayed with white border and text
+#### Scenario: Hero displays full-viewport background image with overlay
 
-Scenario: Hero button navigates to reservation/contact section
-  Given the user sees the hero section
-  When the user clicks the "Reservation" button
-  Then the page scrolls to the contact section
-```
+- **GIVEN** the user visits the page
+- **THEN** the hero section spans the full viewport height
+- **AND** a background image is displayed with a dark overlay
+- **AND** the heading "Welcome To Gustable" is shown in white serif font
+- **AND** the subtitle text is displayed in white below the heading
+- **AND** a "Reservation" button is displayed with white border and text
+
+#### Scenario: Hero button navigates to reservation/contact section
+
+- **GIVEN** the user sees the hero section
+- **WHEN** the user clicks the "Reservation" button
+- **THEN** the page scrolls to the contact section
 
 ### Navigation Bar
 
-```gherkin
-Scenario: Navbar is transparent over hero
-  Given the user is at the top of the page
-  Then the navbar background is transparent
-  And nav links are displayed in white uppercase text with letter spacing
+#### Scenario: Navbar is transparent over hero
 
-Scenario: Navbar becomes solid on scroll
-  Given the user scrolls past the hero
-  Then the navbar background changes to black
-  And nav links remain visible
+- **GIVEN** the user is at the top of the page
+- **THEN** the navbar background is transparent
+- **AND** nav links are displayed in white uppercase text with letter spacing
 
-Scenario: Navbar contains all section links
-  Given the navbar is visible
-  Then links for Home, About, Offer, Menu, News, Gallery, Contact are present
-```
+#### Scenario: Navbar becomes solid on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar background changes to black
+- **AND** nav links remain visible
+
+#### Scenario: Navbar contains all section links
+
+- **GIVEN** the navbar is visible
+- **THEN** links for Home, About, Offer, Menu, News, Gallery, Contact are present
 
 ### About Section
 
-```gherkin
-Scenario: About section displays story and chef photo
-  Given the user scrolls to the About section
-  Then a "OUR STORY" subtitle is displayed in small caps
-  And a serif heading "Welcome" is shown
-  And body text describes the restaurant story
-  And a chef profile photo is displayed on the right side
-  And the section has a white background
-```
+#### Scenario: About section displays story and chef photo
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a "OUR STORY" subtitle is displayed in small caps
+- **AND** a serif heading "Welcome" is shown
+- **AND** body text describes the restaurant story
+- **AND** a chef profile photo is displayed on the right side
+- **AND** the section has a white background
 
 ### Offers Section
 
-```gherkin
-Scenario: Offers section displays food items in a grid
-  Given the user scrolls to the Offers section
-  Then a heading "Our Offer This Summer" is displayed
-  And a lead paragraph describes the offers
-  And food items are displayed in a responsive grid
-  And each item shows an image, title, price in gold, and description
-  And the section has a light gray background
+#### Scenario: Offers section displays food items in a grid
 
-Scenario: Each offer item shows pricing in brand color
-  Given the offers grid is displayed
-  Then each price is rendered in the primary gold color (#FDA403)
-```
+- **GIVEN** the user scrolls to the Offers section
+- **THEN** a heading "Our Offer This Summer" is displayed
+- **AND** a lead paragraph describes the offers
+- **AND** food items are displayed in a responsive grid
+- **AND** each item shows an image, title, price in gold, and description
+- **AND** the section has a light gray background
+
+#### Scenario: Each offer item shows pricing in brand color
+
+- **GIVEN** the offers grid is displayed
+- **THEN** each price is rendered in the primary gold color (#FDA403)
 
 ### Menu Section
 
-```gherkin
-Scenario: Menu section displays food items in two columns
-  Given the user scrolls to the Menu section
-  Then a heading "Delicious Menu" is displayed
-  And menu items are displayed in a two-column layout
-  And each item shows a food name and price in gold
-  And food photos are shown alongside the menu items
-  And the section has a white background
-```
+#### Scenario: Menu section displays food items in two columns
+
+- **GIVEN** the user scrolls to the Menu section
+- **THEN** a heading "Delicious Menu" is displayed
+- **AND** menu items are displayed in a two-column layout
+- **AND** each item shows a food name and price in gold
+- **AND** food photos are shown alongside the menu items
+- **AND** the section has a white background
 
 ### News Section
 
-```gherkin
-Scenario: News section displays blog cards
-  Given the user scrolls to the News section
-  Then a heading "News" is displayed
-  And three news/blog cards are shown in a row
-  And each card has an image, title, and brief text
-  And the section has a light gray background
-```
+#### Scenario: News section displays blog cards
+
+- **GIVEN** the user scrolls to the News section
+- **THEN** a heading "News" is displayed
+- **AND** three news/blog cards are shown in a row
+- **AND** each card has an image, title, and brief text
+- **AND** the section has a light gray background
 
 ### Gallery Section
 
-```gherkin
-Scenario: Gallery section displays food images in a grid
-  Given the user scrolls to the Gallery section
-  Then a heading "Gallery" is displayed
-  And food images are displayed in a grid layout
-  And images have rounded corners (16px radius)
-  And images are clickable (lightbox or link)
-  And the section has a white background
-```
+#### Scenario: Gallery section displays food images in a grid
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a heading "Gallery" is displayed
+- **AND** food images are displayed in a grid layout
+- **AND** images have rounded corners (16px radius)
+- **AND** images are clickable (lightbox or link)
+- **AND** the section has a white background
 
 ### Contact Section
 
-```gherkin
-Scenario: Contact section displays form and info
-  Given the user scrolls to the Contact section
-  Then a heading "Get In Touch" is displayed
-  And a lead paragraph is shown
-  And a contact form with Name, Email, and Message fields is displayed
-  And a "Send Message" button is present
-  And address/contact info is shown alongside the form
-  And the section has a light gray background
+#### Scenario: Contact section displays form and info
 
-Scenario: Contact form validates required fields
-  Given the contact form is displayed
-  When the user submits without filling Name
-  Then an error message is shown for the Name field
-```
+- **GIVEN** the user scrolls to the Contact section
+- **THEN** a heading "Get In Touch" is displayed
+- **AND** a lead paragraph is shown
+- **AND** a contact form with Name, Email, and Message fields is displayed
+- **AND** a "Send Message" button is present
+- **AND** address/contact info is shown alongside the form
+- **AND** the section has a light gray background
+
+#### Scenario: Contact form validates required fields
+
+- **GIVEN** the contact form is displayed
+- **WHEN** the user submits without filling Name
+- **THEN** an error message is shown for the Name field
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays branding and links
-  Given the user scrolls to the footer
-  Then the template name "Gustable" is displayed
-  And a copyright notice is shown
-  And social media icon links are present
-  And a link to Component Dock is present
-```
+#### Scenario: Footer displays branding and links
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the template name "Gustable" is displayed
+- **AND** a copyright notice is shown
+- **AND** social media icon links are present
+- **AND** a link to Component Dock is present
 
 ## Verification checklist
 

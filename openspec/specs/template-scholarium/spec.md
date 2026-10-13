@@ -45,107 +45,247 @@ Extracted from the preview's `styles/main_styles.css`.
 9. **Newsletter** — Parallax background, "sign up for news and offers" + subtitle + email input + subscribe button
 10. **Footer** — Dark background, 4 columns: About (logo + text + social), Contact (email, phone, address), Links (Home, About, Contact, Features, Courses, Events, Gallery, FAQs), Mobile (app store images). Copyright bar at bottom.
 
-## Gherkin scenarios
+## Requirements
 
 ### Hero Slider
 
-```gherkin
 Feature: Hero Slider
-  Scenario: Displays search form with keyword input, category dropdown, price dropdown, and search button
-  Scenario: Search button is styled with brand primary color (#14bdee) and white text
-  Scenario: Hero section has a full-width background image overlay
-  Scenario: Navigation arrows are visible for carousel navigation
-```
+
+#### Scenario: Displays search form with keyword input, category dropdown, price dropdown, and search button
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Displays search form with keyword input, category dropdown, price dropdown, and search button behaves as described by the fidelity notes
+
+#### Scenario: Search button is styled with brand primary color (#14bdee) and white text
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Search button is styled with brand primary color (#14bdee) and white text behaves as described by the fidelity notes
+
+#### Scenario: Hero section has a full-width background image overlay
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Hero section has a full-width background image overlay behaves as described by the fidelity notes
+
+#### Scenario: Navigation arrows are visible for carousel navigation
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Navigation arrows are visible for carousel navigation behaves as described by the fidelity notes
 
 ### Features
 
-```gherkin
 Feature: Features Section
-  Scenario: Section title "Welcome To Unicat E-Learning" is centered
-  Scenario: 4 feature cards are displayed in a row (desktop) with icon, title, and description
-  Scenario: Each feature card is centered with consistent spacing
-```
+
+#### Scenario: Section title "Welcome To Unicat E-Learning" is centered
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Section title "Welcome To Unicat E-Learning" is centered behaves as described by the fidelity notes
+
+#### Scenario: 4 feature cards are displayed in a row (desktop) with icon, title, and description
+
+- **GIVEN** the recreation is rendered
+- **THEN** the 4 feature cards are displayed in a row (desktop) with icon, title, and description behaves as described by the fidelity notes
+
+#### Scenario: Each feature card is centered with consistent spacing
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Each feature card is centered with consistent spacing behaves as described by the fidelity notes
 
 ### Popular Courses
 
-```gherkin
 Feature: Popular Courses
-  Scenario: Section has a parallax background image
-  Scenario: 3 course cards displayed in a 3-column grid
-  Scenario: Each course card has an image, title, teacher name, description, and footer
-  Scenario: Course footer shows student count, rating, and price
-  Scenario: Price displays as plain text or with strikethrough for discounted
-```
+
+#### Scenario: Section has a parallax background image
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Section has a parallax background image behaves as described by the fidelity notes
+
+#### Scenario: 3 course cards displayed in a 3-column grid
+
+- **GIVEN** the recreation is rendered
+- **THEN** the 3 course cards displayed in a 3-column grid behaves as described by the fidelity notes
+
+#### Scenario: Each course card has an image, title, teacher name, description, and footer
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Each course card has an image, title, teacher name, description, and footer behaves as described by the fidelity notes
+
+#### Scenario: Course footer shows student count, rating, and price
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Course footer shows student count, rating, and price behaves as described by the fidelity notes
+
+#### Scenario: Price displays as plain text or with strikethrough for discounted
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Price displays as plain text or with strikethrough for discounted behaves as described by the fidelity notes
 
 ### Counter / Registration
 
-```gherkin
 Feature: Counter Registration Section
-  Scenario: Left side shows "Register Now" heading, description, and 4 milestone counters
-  Scenario: Milestones display numbers with labels (years, k, +)
-  Scenario: Right side shows a registration form with name, phone, subject select, message, and submit
-  Scenario: Section has a parallax background image
-```
+
+#### Scenario: Left side shows "Register Now" heading, description, and 4 milestone counters
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Left side shows "Register Now" heading, description, and 4 milestone counters behaves as described by the fidelity notes
+
+#### Scenario: Milestones display numbers with labels (years, k, +)
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Milestones display numbers with labels (years, k, +) behaves as described by the fidelity notes
+
+#### Scenario: Right side shows a registration form with name, phone, subject select, message, and submit
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Right side shows a registration form with name, phone, subject select, message, and submit behaves as described by the fidelity notes
+
+#### Scenario: Section has a parallax background image
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Section has a parallax background image behaves as described by the fidelity notes
 
 ### Events
 
-```gherkin
 Feature: Events Section
-  Scenario: 3 event cards in a 3-column grid
-  Scenario: Each event has an image, date badge (day + month), title, time, location, and description
-  Scenario: Date badge is styled with accent color
-```
+
+#### Scenario: 3 event cards in a 3-column grid
+
+- **GIVEN** the recreation is rendered
+- **THEN** the 3 event cards in a 3-column grid behaves as described by the fidelity notes
+
+#### Scenario: Each event has an image, date badge (day + month), title, time, location, and description
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Each event has an image, date badge (day + month), title, time, location, and description behaves as described by the fidelity notes
+
+#### Scenario: Date badge is styled with accent color
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Date badge is styled with accent color behaves as described by the fidelity notes
 
 ### Team
 
-```gherkin
 Feature: Team Section
-  Scenario: Section has a parallax background image
-  Scenario: 4 tutor cards in a 4-column grid (2-column on tablet)
-  Scenario: Each card has an image, name, specialty, and social media icons
-```
+
+#### Scenario: Section has a parallax background image
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Section has a parallax background image behaves as described by the fidelity notes
+
+#### Scenario: 4 tutor cards in a 4-column grid (2-column on tablet)
+
+- **GIVEN** the recreation is rendered
+- **THEN** the 4 tutor cards in a 4-column grid (2-column on tablet) behaves as described by the fidelity notes
+
+#### Scenario: Each card has an image, name, specialty, and social media icons
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Each card has an image, name, specialty, and social media icons behaves as described by the fidelity notes
 
 ### Latest News
 
-```gherkin
 Feature: Latest News
-  Scenario: 1 large featured post on the left (image + title + meta + excerpt + "read more" link)
-  Scenario: 4 small posts on the right (title + meta only, stacked vertically)
-  Scenario: Total of 5 news items visible
-```
+
+#### Scenario: 1 large featured post on the left (image + title + meta + excerpt + "read more" link)
+
+- **GIVEN** the recreation is rendered
+- **THEN** the 1 large featured post on the left (image + title + meta + excerpt + "read more" link) behaves as described by the fidelity notes
+
+#### Scenario: 4 small posts on the right (title + meta only, stacked vertically)
+
+- **GIVEN** the recreation is rendered
+- **THEN** the 4 small posts on the right (title + meta only, stacked vertically) behaves as described by the fidelity notes
+
+#### Scenario: Total of 5 news items visible
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Total of 5 news items visible behaves as described by the fidelity notes
 
 ### Newsletter
 
-```gherkin
 Feature: Newsletter
-  Scenario: Section has a parallax background image
-  Scenario: Title "sign up for news and offers" and subtitle displayed
-  Scenario: Email input and subscribe button in a horizontal form
-  Scenario: Subscribe button uses brand primary color
-```
+
+#### Scenario: Section has a parallax background image
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Section has a parallax background image behaves as described by the fidelity notes
+
+#### Scenario: Title "sign up for news and offers" and subtitle displayed
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Title "sign up for news and offers" and subtitle displayed behaves as described by the fidelity notes
+
+#### Scenario: Email input and subscribe button in a horizontal form
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Email input and subscribe button in a horizontal form behaves as described by the fidelity notes
+
+#### Scenario: Subscribe button uses brand primary color
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Subscribe button uses brand primary color behaves as described by the fidelity notes
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: 4-column layout: About, Contact, Links, Mobile
-  Scenario: About column has logo, description text, and social icons
-  Scenario: Contact column shows email, phone, address
-  Scenario: Links column shows navigation links
-  Scenario: Copyright bar at bottom with Component Dock link
-  Scenario: Footer links to https://www.componentdock.com/
-```
+
+#### Scenario: 4-column layout: About, Contact, Links, Mobile
+
+- **GIVEN** the recreation is rendered
+- **THEN** the 4-column layout: About, Contact, Links, Mobile behaves as described by the fidelity notes
+
+#### Scenario: About column has logo, description text, and social icons
+
+- **GIVEN** the recreation is rendered
+- **THEN** the About column has logo, description text, and social icons behaves as described by the fidelity notes
+
+#### Scenario: Contact column shows email, phone, address
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Contact column shows email, phone, address behaves as described by the fidelity notes
+
+#### Scenario: Links column shows navigation links
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Links column shows navigation links behaves as described by the fidelity notes
+
+#### Scenario: Copyright bar at bottom with Component Dock link
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Copyright bar at bottom with Component Dock link behaves as described by the fidelity notes
+
+#### Scenario: Footer links to https://www.componentdock.com/
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Footer links to https://www.componentdock.com/ behaves as described by the fidelity notes
 
 ### Header / Navigation
 
-```gherkin
 Feature: Header Navigation
-  Scenario: Top bar shows phone, email, and "Register or Login" button
-  Scenario: Main nav shows Home, About, Courses, Blog, Page, Contact
-  Scenario: Home link is visually active (brand primary color)
-  Scenario: Search and cart icons are displayed
-  Scenario: Logo shows "Scholarium" with "ium" styled in brand color
-```
+
+#### Scenario: Top bar shows phone, email, and "Register or Login" button
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Top bar shows phone, email, and "Register or Login" button behaves as described by the fidelity notes
+
+#### Scenario: Main nav shows Home, About, Courses, Blog, Page, Contact
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Main nav shows Home, About, Courses, Blog, Page, Contact behaves as described by the fidelity notes
+
+#### Scenario: Home link is visually active (brand primary color)
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Home link is visually active (brand primary color) behaves as described by the fidelity notes
+
+#### Scenario: Search and cart icons are displayed
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Search and cart icons are displayed behaves as described by the fidelity notes
+
+#### Scenario: Logo shows "Scholarium" with "ium" styled in brand color
+
+- **GIVEN** the recreation is rendered
+- **THEN** the Logo shows "Scholarium" with "ium" styled in brand color behaves as described by the fidelity notes
 
 ## Verification checklist
 

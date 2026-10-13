@@ -139,7 +139,7 @@ gold primary button that opens the authentication modal.
   horizontally
 - **AND** a primary button reading "Launch Modal" SHALL render centered below
   the heading with background `#e3b04b`, white text, `border-radius: 4px`,
-  and `padding: 12px 16px`
+- **AND** `padding: 12px 16px`
 
 #### Scenario: Button opens modal
 
@@ -168,7 +168,7 @@ panel and a right dark form panel.
 - **GIVEN** the modal is open
 - **THEN** a close button SHALL render in the top-right corner of the modal
 - **AND** the close button SHALL be 40×40px with `rgba(0,0,0,0.1)` background
-  and a white close icon
+- **AND** a white close icon
 - **WHEN** the user clicks the close button
 - **THEN** the modal SHALL close
 
@@ -263,7 +263,7 @@ terms checkbox, and submit button.
 - **WHEN** the user clicks "Sign In"
 - **THEN** the Sign In tab SHALL activate
 
-### Requirement: Responsive behavior
+### Feature: Responsive behavior
 
 #### Scenario: Mobile layout
 

@@ -60,136 +60,136 @@ Extracted from the live preview CSS (`css/main.css`) and screenshot analysis.
   icons (Facebook, Twitter, Dribbble, Behance), copyright text. All white text
   with pink hover accent.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Bravely — Small Company Website Template
 
 #### Scenario: Page renders all sections in order
 
-Given a user visits the Bravely homepage
-Then the page should display sections in this order: 1. Navbar (logo + hamburger menu) 2. Hero banner ("WE'RE CREATIVE") 3. Features (2×2 grid) 4. About (title + image + tabs) 5. Video callout 6. Blog (3-column cards) 7. Story highlight 8. Newsletter subscription 9. Footer
+- **GIVEN** a user visits the Bravely homepage
+- **THEN** the page should display sections in this order: 1. Navbar (logo + hamburger menu) 2. Hero banner ("WE'RE CREATIVE") 3. Features (2×2 grid) 4. About (title + image + tabs) 5. Video callout 6. Blog (3-column cards) 7. Story highlight 8. Newsletter subscription 9. Footer
 
 #### Scenario: Navbar displays logo and hamburger menu
 
-Given the page loads
-Then the navbar should show a logo/text on the left
-And a hamburger menu icon on the right
-And the hamburger should be clickable (toggle mobile nav)
+- **GIVEN** the page loads
+- **THEN** the navbar should show a logo/text on the left
+- **AND** a hamburger menu icon on the right
+- **AND** the hamburger should be clickable (toggle mobile nav)
 
 #### Scenario: Hero section renders correctly
 
-Given the hero section is visible
-Then it should display the heading "WE'RE CREATIVE" in large uppercase text
-And a "Get Started" ghost button with pill shape (border-radius 20px)
-And the background should be a purple radial gradient
+- **GIVEN** the hero section is visible
+- **THEN** it should display the heading "WE'RE CREATIVE" in large uppercase text
+- **AND** a "Get Started" ghost button with pill shape (border-radius 20px)
+- **AND** the background should be a purple radial gradient
 
 #### Scenario: Hero button has pill shape
 
-Given the hero section renders
-Then the "Get Started" button should have border-radius of 20px
-And a white border on transparent background
-And on hover the gradient overlay (pink-to-yellow) should appear
+- **GIVEN** the hero section renders
+- **THEN** the "Get Started" button should have border-radius of 20px
+- **AND** a white border on transparent background
+- **AND** on hover the gradient overlay (pink-to-yellow) should appear
 
 #### Scenario: Features section shows 4 items in 2-column grid
 
-Given the features section is visible
-Then it should display 4 feature cards
-And they should be laid out in a 2-column grid on desktop
-And each card should have an icon, title, and description paragraph
-And the background should be white (#ffffff)
+- **GIVEN** the features section is visible
+- **THEN** it should display 4 feature cards
+- **AND** they should be laid out in a 2-column grid on desktop
+- **AND** each card should have an icon, title, and description paragraph
+- **AND** the background should be white (#ffffff)
 
 #### Scenario: Feature items have correct content
 
-Given the features section renders
-Then the four features should be: - "Unlimited Colors" - "Smart Security" (first instance) - "Endless Support" - "Smart Security" (second instance)
+- **GIVEN** the features section renders
+- **THEN** the four features should be: - "Unlimited Colors" - "Smart Security" (first instance) - "Endless Support" - "Smart Security" (second instance)
 
 #### Scenario: About section has tabs for History and Mission
 
-Given the about section is visible
-Then it should display an "About Our Company" heading
-And a description paragraph
-And an image
-And two tabs: "History" and "Mission & Vision"
-And "History" tab should be active by default
-And the active tab should have a gradient underline (pink-to-yellow)
+- **GIVEN** the about section is visible
+- **THEN** it should display an "About Our Company" heading
+- **AND** a description paragraph
+- **AND** an image
+- **AND** two tabs: "History" and "Mission & Vision"
+- **AND** "History" tab should be active by default
+- **AND** the active tab should have a gradient underline (pink-to-yellow)
 
 #### Scenario: About tabs switch content
 
-Given the about section is visible with the History tab active
-When a user clicks the "Mission & Vision" tab
-Then the tab content should switch to show Mission & Vision text
-And the Mission & Vision tab should become visually active
+- **GIVEN** the about section is visible with the History tab active
+- **WHEN** a user clicks the "Mission & Vision" tab
+- **THEN** the tab content should switch to show Mission & Vision text
+- **AND** the Mission & Vision tab should become visually active
 
 #### Scenario: Video section has purple overlay
 
-Given the video section is visible
-Then it should have a purple gradient overlay background
-And display the heading "New Features that open the door of future"
-And show a play button (centered)
-And show descriptive white text below the play button
+- **GIVEN** the video section is visible
+- **THEN** it should have a purple gradient overlay background
+- **AND** display the heading "New Features that open the door of future"
+- **AND** show a play button (centered)
+- **AND** show descriptive white text below the play button
 
 #### Scenario: Blog section shows 3 cards in equal columns
 
-Given the blog section is visible
-Then it should display 3 blog cards
-And each card should have a thumbnail image (215px height, cover fit)
-And a centered title and description paragraph
-And the background should be white
+- **GIVEN** the blog section is visible
+- **THEN** it should display 3 blog cards
+- **AND** each card should have a thumbnail image (215px height, cover fit)
+- **AND** a centered title and description paragraph
+- **AND** the background should be white
 
 #### Scenario: Story section has purple background with image
 
-Given the story section is visible
-Then it should have a purple background (#7034db)
-And display the heading "Crafting Our Experiences" in white
-And show white body text
-And the right half should have a background image (desktop only)
+- **GIVEN** the story section is visible
+- **THEN** it should have a purple background (#7034db)
+- **AND** display the heading "Crafting Our Experiences" in white
+- **AND** show white body text
+- **AND** the right half should have a background image (desktop only)
 
 #### Scenario: Newsletter subscription has pill-shaped input
 
-Given the subscription section is visible
-Then it should display "Subscribe Newsletter" heading
-And a centered email input with pill shape (border-radius 25px)
-And a gradient "Get Started" button (pink-to-yellow)
-And the section background should be light (#f9f9ff)
+- **GIVEN** the subscription section is visible
+- **THEN** it should display "Subscribe Newsletter" heading
+- **AND** a centered email input with pill shape (border-radius 25px)
+- **AND** a gradient "Get Started" button (pink-to-yellow)
+- **AND** the section background should be light (#f9f9ff)
 
 #### Scenario: Subscription button is inside the input field
 
-Given the subscription section renders
-Then the "Get Started" button should be positioned absolutely inside the input
-And it should use the pink-to-yellow gradient background
+- **GIVEN** the subscription section renders
+- **THEN** the "Get Started" button should be positioned absolutely inside the input
+- **AND** it should use the pink-to-yellow gradient background
 
 #### Scenario: Footer displays nav links, social icons, and copyright
 
-Given the footer is visible
-Then it should have a dark gray background (#333333)
-And display centered navigation links (Home, Generic, Elements → replaced with site pages)
-And show social media icons (Facebook, Twitter, Dribbble, Behance)
-And show copyright text with a link to Component Dock
-And all footer text should be white
-And footer links should have pink hover color (#f58e9a)
+- **GIVEN** the footer is visible
+- **THEN** it should have a dark gray background (#333333)
+- **AND** display centered navigation links (Home, Generic, Elements → replaced with site pages)
+- **AND** show social media icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** show copyright text with a link to Component Dock
+- **AND** all footer text should be white
+- **AND** footer links should have pink hover color (#f58e9a)
 
 #### Scenario: Footer links to Component Dock
 
-Given the footer renders
-Then the copyright area should link to https://www.componentdock.com/
-And the link text should reference "Component Dock"
+- **GIVEN** the footer renders
+- **THEN** the copyright area should link to https://www.componentdock.com/
+- **AND** the link text should reference "Component Dock"
 
 #### Scenario: Mobile responsive layout
 
-Given a user views the page on a mobile viewport (≤767px)
-Then the hero heading should reduce to 60px font size
-And the features should stack into a single column
-And the hamburger menu should be visible (nav hidden)
-And the subscription input should adjust padding
-And the story section background image should be hidden
+- **GIVEN** a user views the page on a mobile viewport (≤767px)
+- **THEN** the hero heading should reduce to 60px font size
+- **AND** the features should stack into a single column
+- **AND** the hamburger menu should be visible (nav hidden)
+- **AND** the subscription input should adjust padding
+- **AND** the story section background image should be hidden
 
 #### Scenario: Typography uses Poppins font
 
-Given any text is rendered on the page
-Then the font family should be "Poppins", sans-serif
-And body text should use font-weight 300
-And headings should use font-weight 500
-And the hero heading should use font-weight 900
+- **GIVEN** any text is rendered on the page
+- **THEN** the font family should be "Poppins", sans-serif
+- **AND** body text should use font-weight 300
+- **AND** headings should use font-weight 500
+- **AND** the hero heading should use font-weight 900
 
 ## Verification Checklist
 

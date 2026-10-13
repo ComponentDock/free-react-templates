@@ -47,9 +47,11 @@ body text. The sidebar is always visible on desktop and toggleable on mobile.
    - **Page heading**: large bold "Sidebar #01" (replaced with template-appropriate heading)
    - **Body content**: paragraphs of text (placeholder lorem ipsum)
 
-## Gherkin requirements
+## Requirements
 
-### Requirement: Fixed Sidebar Navigation
+### Feature: Fixed Sidebar Navigation
+
+#### Scenario: Fixed Sidebar Navigation
 
 - The system SHALL render a fixed left sidebar occupying ~250px width and full viewport height.
 - The sidebar SHALL contain a circular profile image at the top.
@@ -58,7 +60,9 @@ body text. The sidebar is always visible on desktop and toggleable on mobile.
 - Navigation items SHALL have subtle separator lines between them.
 - The sidebar footer SHALL display copyright text and a link to https://www.componentdock.com/ ("Component Dock").
 
-### Requirement: Main Content Area
+### Feature: Main Content Area
+
+#### Scenario: Main Content Area
 
 - The system SHALL render a main content area to the right of the sidebar.
 - The main content area SHALL have a white (`#ffffff`) background.
@@ -67,13 +71,17 @@ body text. The sidebar is always visible on desktop and toggleable on mobile.
 - Below the navbar, the page SHALL display a large bold heading.
 - Below the heading, the page SHALL display body text content.
 
-### Requirement: Responsive Behavior
+### Feature: Responsive Behavior
+
+#### Scenario: Responsive Behavior
 
 - On viewports below the sidebar breakpoint (e.g. < 768px), the sidebar SHALL collapse or become toggleable.
 - The hamburger button SHALL be visible on mobile viewports to toggle the sidebar.
 - The horizontal nav links in the top navbar SHALL be hidden or simplified on mobile.
 
-### Requirement: Footer Attribution
+### Feature: Footer Attribution
+
+#### Scenario: Footer Attribution
 
 - The sidebar footer SHALL link to https://www.componentdock.com/ with branded text "More templates at Component Dock" or similar, replacing any ColorLib attribution.
 - No ColorLib references SHALL appear in any app source files, comments, or data.

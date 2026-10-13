@@ -110,107 +110,109 @@ CSS 4 + TypeScript.
 - **Icons:** Font Awesome / Open Iconic / Flaticon icon fonts (replace with
   lucide-react in React version)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Navbar renders with correct navigation links
+### Feature: Drip template behaviour
 
-Given the page loads
-Then a navigation bar is visible at the top
-And it contains links: Home, About, Menu, Specialties, Blog, Contact
-And a CTA button is present (e.g. "Book a Table" or "Order Now")
-And a cart icon is visible
+#### Scenario: Navbar renders with correct navigation links
 
-### Scenario: Hero slider displays 3 slides with CTAs
+- **GIVEN** the page loads
+- **THEN** a navigation bar is visible at the top
+- **AND** it contains links: Home, About, Menu, Specialties, Blog, Contact
+- **AND** a CTA button is present (e.g. "Book a Table" or "Order Now")
+- **AND** a cart icon is visible
 
-Given the page loads
-Then a full-viewport hero slider is visible
-And slide 1 shows heading "The Best Coffee Testing Experience"
-And slide 2 shows heading "Amazing Taste & Beautiful Place"
-And slide 3 shows heading "Creamy Hot and Ready to Serve"
-And each slide has an "Order Now" button and a "View Menu" button
-And slides auto-rotate via carousel
+#### Scenario: Hero slider displays 3 slides with CTAs
 
-### Scenario: Intro contact bar displays info and reservation form
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero slider is visible
+- **AND** slide 1 shows heading "The Best Coffee Testing Experience"
+- **AND** slide 2 shows heading "Amazing Taste & Beautiful Place"
+- **AND** slide 3 shows heading "Creamy Hot and Ready to Serve"
+- **AND** each slide has an "Order Now" button and a "View Menu" button
+- **AND** slides auto-rotate via carousel
 
-Given the page loads
-Then a dark-background intro/contact strip is visible below the hero
-And it shows phone number, address, and business hours
-And a "Book a Table" form is present with fields: First Name, Last Name,
+#### Scenario: Intro contact bar displays info and reservation form
+
+- **GIVEN** the page loads
+- **THEN** a dark-background intro/contact strip is visible below the hero
+- **AND** it shows phone number, address, and business hours
+- **AND** a "Book a Table" form is present with fields: First Name, Last Name,
 Date, Time, Phone, Message
-And an "Appointment" submit button is present
+- **AND** an "Appointment" submit button is present
 
-### Scenario: About section shows split layout
+#### Scenario: About section shows split layout
 
-Given the page loads
-Then an "Our Story" section is visible
-And it has a split layout: background image on one side, text on the other
-And the heading reads "Discover" / "Our Story"
+- **GIVEN** the page loads
+- **THEN** an "Our Story" section is visible
+- **AND** it has a split layout: background image on one side, text on the other
+- **AND** the heading reads "Discover" / "Our Story"
 
-### Scenario: Services section shows 3 feature cards
+#### Scenario: Services section shows 3 feature cards
 
-Given the page loads
-Then a services section is visible with 3 cards
-And card 1 shows "Easy to Order" with an icon
-And card 2 shows "Fastest Delivery" with an icon
-And card 3 shows "Quality Coffee" with an icon
+- **GIVEN** the page loads
+- **THEN** a services section is visible with 3 cards
+- **AND** card 1 shows "Easy to Order" with an icon
+- **AND** card 2 shows "Fastest Delivery" with an icon
+- **AND** card 3 shows "Quality Coffee" with an icon
 
-### Scenario: Menu section displays items in a grid
+#### Scenario: Menu section displays items in a grid
 
-Given the page loads
-Then a "Our Menu" section is visible
-And it has a "View Full Menu" button
-And menu items are shown in a grid with images, names, and prices
+- **GIVEN** the page loads
+- **THEN** a "Our Menu" section is visible
+- **AND** it has a "View Full Menu" button
+- **AND** menu items are shown in a grid with images, names, and prices
 
-### Scenario: Counter section shows animated statistics
+#### Scenario: Counter section shows animated statistics
 
-Given the page loads
-Then a dark parallax counter section is visible
-And it displays 4 statistics with animated counting numbers
-And each statistic has a label (e.g. "Happy Customers", "Coffee Drinks")
+- **GIVEN** the page loads
+- **THEN** a dark parallax counter section is visible
+- **AND** it displays 4 statistics with animated counting numbers
+- **AND** each statistic has a label (e.g. "Happy Customers", "Coffee Drinks")
 
-### Scenario: Best Sellers section shows product cards
+#### Scenario: Best Sellers section shows product cards
 
-Given the page loads
-Then a "Best Coffee Sellers" section is visible
-And it displays 4 product cards with images, titles, and prices
+- **GIVEN** the page loads
+- **THEN** a "Best Coffee Sellers" section is visible
+- **AND** it displays 4 product cards with images, titles, and prices
 
-### Scenario: Gallery section shows image grid with hover effects
+#### Scenario: Gallery section shows image grid with hover effects
 
-Given the page loads
-Then a gallery section is visible with 4 images in a row
-And hovering an image shows a dark overlay with a link icon
+- **GIVEN** the page loads
+- **THEN** a gallery section is visible with 4 images in a row
+- **AND** hovering an image shows a dark overlay with a link icon
 
-### Scenario: Testimonials section shows customer quotes
+#### Scenario: Testimonials section shows customer quotes
 
-Given the page loads
-Then a "Customers Says" section is visible on a dark parallax background
-And it displays testimonial cards with quote text, author photo, and
+- **GIVEN** the page loads
+- **THEN** a "Customers Says" section is visible on a dark parallax background
+- **AND** it displays testimonial cards with quote text, author photo, and
 author name + position
-And cards are arranged in a horizontal overlapping/staggered layout
+- **AND** cards are arranged in a horizontal overlapping/staggered layout
 
-### Scenario: Footer contains site info, blog previews, services, and contact
+#### Scenario: Footer contains site info, blog previews, services, and contact
 
-Given the page loads
-Then a dark footer is visible
-And it has 4 columns: About Us + social, Recent Blog (2 posts),
+- **GIVEN** the page loads
+- **THEN** a dark footer is visible
+- **AND** it has 4 columns: About Us + social, Recent Blog (2 posts),
 Services links, and contact info (address, phone, email)
-And a copyright bar is present at the bottom
-And the footer links to Component Dock
+- **AND** a copyright bar is present at the bottom
+- **AND** the footer links to Component Dock
 
-### Scenario: Mobile responsive layout
+#### Scenario: Mobile responsive layout
 
-Given the page loads on a viewport < 768px
-Then the navbar collapses to a hamburger menu
-And split sections stack vertically
-And the hero slider text is centered and appropriately sized
-And the footer columns stack vertically
+- **GIVEN** the page loads on a viewport < 768px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** split sections stack vertically
+- **AND** the hero slider text is centered and appropriately sized
+- **AND** the footer columns stack vertically
 
-### Scenario: Dark theme sections use background-image with overlay
+#### Scenario: Dark theme sections use background-image with overlay
 
-Given the counter, testimonials, and footer sections load
-Then each uses a background image with a dark semi-transparent overlay
-And text within these sections is white
-And parallax scrolling effect is applied where supported
+- **GIVEN** the counter, testimonials, and footer sections load
+- **THEN** each uses a background image with a dark semi-transparent overlay
+- **AND** text within these sections is white
+- **AND** parallax scrolling effect is applied where supported
 
 ## Verification checklist
 

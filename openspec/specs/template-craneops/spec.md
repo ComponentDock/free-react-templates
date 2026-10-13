@@ -51,92 +51,116 @@ Extracted from the live preview CSS (style.css + bootstrap.css override):
 7. **Testimonial** — Section heading "Testimonial" with underline accent. 2-column layout: person image + name + company link + blockquote text.
 8. **Footer** — 4-column: copyright, address + phone + email, quick links (About, Services, Works, Contact), social icons (Twitter, Facebook, LinkedIn, Instagram). Footer links to Component Dock.
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: CraneOps template behaviour
+
 Feature: CraneOps landing page
 
-  Background:
-    Given the user opens the CraneOps landing page
+Background:
+- **GIVEN** the user opens the CraneOps landing page
 
-  # --- Header ---
-  Scenario: Navbar displays brand and navigation
-    Then the brand "CraneOps" is visible
-    And navigation links "Home", "Services", "Works", "News", "About", "Contact" are present
-    And a "Get A Quote" CTA button is visible in the navbar
+**--- Header ---**
 
-  Scenario: Services dropdown opens on click/hover
-    When the user clicks the "Services" dropdown
-    Then 5 service items are listed: "Metal Roofing", "General Contracting", "House Renovation", "Laminate Flooring", "Construction Consultant"
+#### Scenario: Navbar displays brand and navigation
 
-  # --- Hero Slider ---
-  Scenario: Hero slider shows slides with headlines
-    Then the hero section occupies most of the viewport
-    And a headline "Creating A Brighter Future" is displayed
-    And a "Download Now!" primary button is visible
+- **THEN** the brand "CraneOps" is visible
+- **AND** navigation links "Home", "Services", "Works", "News", "About", "Contact" are present
+- **AND** a "Get A Quote" CTA button is visible in the navbar
 
-  Scenario: Hero slider can navigate between slides
-    When the user navigates to the second slide
-    Then the headline changes to "Trusted Construction & Development Since 1889"
+#### Scenario: Services dropdown opens on click/hover
 
-  # --- CTA Overlap ---
-  Scenario: CTA overlap bar is visible below the slider
-    Then a gold bar displays "Trusted Construction & Development Since 1889"
-    And a "Get A Quote" white-outline button is present
+- **WHEN** the user clicks the "Services" dropdown
+- **THEN** 5 service items are listed: "Metal Roofing", "General Contracting", "House Renovation", "Laminate Flooring", "Construction Consultant"
 
-  # --- Services ---
-  Scenario: Services section shows 3 service cards
-    Then the "Services" heading is visible with an underline accent
-    And 3 service cards are displayed
-    And each card has an icon, title, description, and "Learn More" button
+**--- Hero Slider ---**
 
-  Scenario: Service card has hover effect
-    When the user hovers over a service card
-    Then the card scales up slightly
-    And a gold bottom border appears
+#### Scenario: Hero slider shows slides with headlines
 
-  Scenario: View All Services button links correctly
-    Then a "View All Services" full-width button is visible
+- **THEN** the hero section occupies most of the viewport
+- **AND** a headline "Creating A Brighter Future" is displayed
+- **AND** a "Download Now!" primary button is visible
 
-  # --- Recent Works ---
-  Scenario: Works section shows portfolio grid
-    Then the "Recent Works" heading is visible
-    And 3 project images are displayed in a grid
-    And each project has a title overlay on hover
+#### Scenario: Hero slider can navigate between slides
 
-  # --- Company News ---
-  Scenario: News section shows blog cards on light background
-    Then the "Company News" heading is visible
-    And the section has a light gray background
-    And news cards display an image, date, title, excerpt, "Read more" link, and comment count
+- **WHEN** the user navigates to the second slide
+- **THEN** the headline changes to "Trusted Construction & Development Since 1889"
 
-  # --- Testimonials ---
-  Scenario: Testimonials section shows 2 testimonials
-    Then the "Testimonial" heading is visible
-    And 2 testimonial cards are displayed
-    And each card has a person image, name, company, and quoted text
+**--- CTA Overlap ---**
 
-  # --- Footer ---
-  Scenario: Footer shows 4-column layout
-    Then a copyright notice is visible
-    And an address block with phone and email is present
-    And quick links (About, Services, Works, Contact) are listed
-    And social media icons (Twitter, Facebook, LinkedIn, Instagram) are present
+#### Scenario: CTA overlap bar is visible below the slider
 
-  Scenario: Footer links to Component Dock
-    Then the footer contains a link to "https://www.componentdock.com/"
+- **THEN** a gold bar displays "Trusted Construction & Development Since 1889"
+- **AND** a "Get A Quote" white-outline button is present
 
-  # --- Design fidelity ---
-  Scenario: Brand color is amber gold
-    Then the primary brand color is "#f4b214"
-    And buttons use the amber gold background
-    And active navigation links are amber gold
+**--- Services ---**
 
-  Scenario: Typography matches reference
-    Then the font family is "Open Sans"
-    And headings are black (#000)
-    And body text is gray (#868e96)
-```
+#### Scenario: Services section shows 3 service cards
+
+- **THEN** the "Services" heading is visible with an underline accent
+- **AND** 3 service cards are displayed
+- **AND** each card has an icon, title, description, and "Learn More" button
+
+#### Scenario: Service card has hover effect
+
+- **WHEN** the user hovers over a service card
+- **THEN** the card scales up slightly
+- **AND** a gold bottom border appears
+
+#### Scenario: View All Services button links correctly
+
+- **THEN** a "View All Services" full-width button is visible
+
+**--- Recent Works ---**
+
+#### Scenario: Works section shows portfolio grid
+
+- **THEN** the "Recent Works" heading is visible
+- **AND** 3 project images are displayed in a grid
+- **AND** each project has a title overlay on hover
+
+**--- Company News ---**
+
+#### Scenario: News section shows blog cards on light background
+
+- **THEN** the "Company News" heading is visible
+- **AND** the section has a light gray background
+- **AND** news cards display an image, date, title, excerpt, "Read more" link, and comment count
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials section shows 2 testimonials
+
+- **THEN** the "Testimonial" heading is visible
+- **AND** 2 testimonial cards are displayed
+- **AND** each card has a person image, name, company, and quoted text
+
+**--- Footer ---**
+
+#### Scenario: Footer shows 4-column layout
+
+- **THEN** a copyright notice is visible
+- **AND** an address block with phone and email is present
+- **AND** quick links (About, Services, Works, Contact) are listed
+- **AND** social media icons (Twitter, Facebook, LinkedIn, Instagram) are present
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+
+**--- Design fidelity ---**
+
+#### Scenario: Brand color is amber gold
+
+- **THEN** the primary brand color is "#f4b214"
+- **AND** buttons use the amber gold background
+- **AND** active navigation links are amber gold
+
+#### Scenario: Typography matches reference
+
+- **THEN** the font family is "Open Sans"
+- **AND** headings are black (#000)
+- **AND** body text is gray (#868e96)
 
 ## Verification checklist
 

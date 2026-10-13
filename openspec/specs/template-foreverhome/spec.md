@@ -49,60 +49,69 @@ Recreation of ColorLib "Adopted" template as a React 19 + Vite + Tailwind 4 + Ty
 - Newsletter Subscribe: light gray (`.section-subscribe.bg-light`)
 - Footer: solid `#bc5148` (brand)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: ForeverHome — Adoption / Foster Care Charity Template
 
 #### Scenario: Page loads and shows navbar
-Given the user navigates to the ForeverHome page
-Then a top bar with social links and Sponsor/Login buttons is visible
-And a navbar with brand "ForeverHome" and links (Home, Adoption, Stories, About, Contact) is visible
+
+- **GIVEN** the user navigates to the ForeverHome page
+- **THEN** a top bar with social links and Sponsor/Login buttons is visible
+- **AND** a navbar with brand "ForeverHome" and links (Home, Adoption, Stories, About, Contact) is visible
 
 #### Scenario: Hero slider renders
-Given the page has loaded
-When the user views the hero area
-Then a carousel/slider with full-bleed background images is visible
-And each slide shows a child name in cursive, a headline, description, and a CTA button
+
+- **GIVEN** the page has loaded
+- **WHEN** the user views the hero area
+- **THEN** a carousel/slider with full-bleed background images is visible
+- **AND** each slide shows a child name in cursive, a headline, description, and a CTA button
 
 #### Scenario: Steps to Adopt section
-Given the user scrolls to the Steps section
-When the user views the accordion
-Then 7 expandable steps are displayed in a Bootstrap-style accordion
-And the first step is expanded by default
+
+- **GIVEN** the user scrolls to the Steps section
+- **WHEN** the user views the accordion
+- **THEN** 7 expandable steps are displayed in a Bootstrap-style accordion
+- **AND** the first step is expanded by default
 
 #### Scenario: Waiting Children section
-Given the user scrolls to the Waiting Children section
-When the user views the children grid
-Then 5 child cards are displayed with photo, name, age, and a brief description
-And section heading reads "WAITING CHILDREN"
+
+- **GIVEN** the user scrolls to the Waiting Children section
+- **WHEN** the user views the children grid
+- **THEN** 5 child cards are displayed with photo, name, age, and a brief description
+- **AND** section heading reads "WAITING CHILDREN"
 
 #### Scenario: Featured Stories section
-Given the user scrolls to the Featured Stories section
-When the user views the stories
-Then 3 story cards are displayed with date and headline
-And section heading reads "FEATURED STORIES"
+
+- **GIVEN** the user scrolls to the Featured Stories section
+- **WHEN** the user views the stories
+- **THEN** 3 story cards are displayed with date and headline
+- **AND** section heading reads "FEATURED STORIES"
 
 #### Scenario: Newsletter Subscribe section
-Given the user scrolls to the newsletter section
-When the user views the form
-Then a name input, email input, and Subscribe button are visible
-And the section has a light gray background
+
+- **GIVEN** the user scrolls to the newsletter section
+- **WHEN** the user views the form
+- **THEN** a name input, email input, and Subscribe button are visible
+- **AND** the section has a light gray background
 
 #### Scenario: Footer renders
-Given the user scrolls to the footer
-Then 4 columns are visible: About, Contact & Address, Quick Links, Social
-And social icons (Twitter, Facebook, LinkedIn, Instagram) are present
-And a copyright line with "Made with ❤ by Colorlib" is replaced with "Made with Component Dock" linking to https://www.componentdock.com/
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are visible: About, Contact & Address, Quick Links, Social
+- **AND** social icons (Twitter, Facebook, LinkedIn, Instagram) are present
+- **AND** a copyright line with "Made with ❤ by Colorlib" is replaced with "Made with Component Dock" linking to https://www.componentdock.com/
 
 #### Scenario: Footer links to Component Dock
-Given the user inspects the footer
-Then the attribution link points to https://www.componentdock.com/
-And the text reads "Made with ❤ by Component Dock"
+
+- **GIVEN** the user inspects the footer
+- **THEN** the attribution link points to https://www.componentdock.com/
+- **AND** the text reads "Made with ❤ by Component Dock"
 
 #### Scenario: Responsive layout
-Given the user views the page on a mobile device
-Then the navbar collapses into a hamburger menu
-And all sections stack vertically
+
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the navbar collapses into a hamburger menu
+- **AND** all sections stack vertically
 
 ## Verification Checklist
 

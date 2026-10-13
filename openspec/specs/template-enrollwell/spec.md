@@ -46,50 +46,59 @@ Extracted from the screenshot (preview unreachable):
 ### 2. No navbar — single-page registration form
 ### 3. No footer — self-contained form page
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Full-page split layout renders
-  Given the user visits the Enrollwell page
-  Then the viewport is split into two equal halves
-  And the left half displays a background image
-  And the right half displays a pink/salmon background
+### Feature: Enrollwell template behaviour
 
-### Scenario: Sign Up heading is visible
-  Given the user sees the right panel
-  Then the heading "SIGN UP" is displayed
-  And the heading uses a decorative/handwritten font
-  And a wavy underline decoration appears below the heading
+#### Scenario: Full-page split layout renders
 
-### Scenario: Registration form fields render
-  Given the user sees the form panel
-  Then a "Username" input field is visible
-  And an "E-mail" input field is visible
-  And a "Password" input field is visible
-  And all inputs have white backgrounds with light gray borders
+- **GIVEN** the user visits the Enrollwell page
+- **THEN** the viewport is split into two equal halves
+- **AND** the left half displays a background image
+- **AND** the right half displays a pink/salmon background
 
-### Scenario: Create My Account button renders
-  Given the user sees the form
-  Then a "CREATE MY ACCOUNT" button is visible
-  And the button has a white background
-  And the button has pink text matching the brand color
-  And the button has pill-shaped rounded corners
+#### Scenario: Sign Up heading is visible
 
-### Scenario: Social sign-up section renders
-  Given the user sees the form panel
-  Then "Sign up with social platforms" text is visible
-  And 4 circular social icon buttons are displayed (Facebook, Instagram, Twitter, Tumblr)
-  And the icons have white outlines on the pink background
+- **GIVEN** the user sees the right panel
+- **THEN** the heading "SIGN UP" is displayed
+- **AND** the heading uses a decorative/handwritten font
+- **AND** a wavy underline decoration appears below the heading
 
-### Scenario: Form fields accept input
-  Given the user focuses the Username field
-  When the user types a username
-  Then the text appears in the Username field
-  And the same behavior works for E-mail and Password fields
+#### Scenario: Registration form fields render
 
-### Scenario: Button interaction
-  Given the user fills in all form fields
-  When the user clicks "CREATE MY ACCOUNT"
-  Then the button registers the click (no navigation in static template)
+- **GIVEN** the user sees the form panel
+- **THEN** a "Username" input field is visible
+- **AND** an "E-mail" input field is visible
+- **AND** a "Password" input field is visible
+- **AND** all inputs have white backgrounds with light gray borders
+
+#### Scenario: Create My Account button renders
+
+- **GIVEN** the user sees the form
+- **THEN** a "CREATE MY ACCOUNT" button is visible
+- **AND** the button has a white background
+- **AND** the button has pink text matching the brand color
+- **AND** the button has pill-shaped rounded corners
+
+#### Scenario: Social sign-up section renders
+
+- **GIVEN** the user sees the form panel
+- **THEN** "Sign up with social platforms" text is visible
+- **AND** 4 circular social icon buttons are displayed (Facebook, Instagram, Twitter, Tumblr)
+- **AND** the icons have white outlines on the pink background
+
+#### Scenario: Form fields accept input
+
+- **GIVEN** the user focuses the Username field
+- **WHEN** the user types a username
+- **THEN** the text appears in the Username field
+- **AND** the same behavior works for E-mail and Password fields
+
+#### Scenario: Button interaction
+
+- **GIVEN** the user fills in all form fields
+- **WHEN** the user clicks "CREATE MY ACCOUNT"
+- **THEN** the button registers the click (no navigation in static template)
 
 ## Verification Checklist
 

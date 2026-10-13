@@ -44,119 +44,163 @@ parallax, menu section, testimonials, blog, events, Instagram feed, and footer.
 11. **Instagram** — Grid of Instagram photos with dark overlay and count.
 12. **Footer** — Dark background (`#2c2727`), 4-column layout: About/Logo, Opening Hours, Contact Info, Newsletter signup.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-- **Scenario: Navbar displays on page load**
-  - Given the user visits the Snugden homepage
-  - Then a dark-background navbar is visible at the top
-  - And the logo text "Snugden" is displayed on the left
-  - And navigation links (Home, Rooms, Restaurant, Gallery, About, Blog, Contact) are visible
-- **Scenario: Navbar becomes sticky on scroll**
-  - Given the user scrolls past the hero section
-  - Then the navbar remains fixed at the top of the viewport
-  - And the background becomes solid dark
+
+#### Scenario: Navbar displays on page load
+
+- **GIVEN** the user visits the Snugden homepage
+- **THEN** a dark-background navbar is visible at the top
+- **AND** the logo text "Snugden" is displayed on the left
+- **AND** navigation links (Home, Rooms, Restaurant, Gallery, About, Blog, Contact) are visible
+
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls past the hero section
+- **THEN** the navbar remains fixed at the top of the viewport
+- **AND** the background becomes solid dark
 
 ### Hero Slider
-- **Scenario: Hero displays welcome message**
-  - Given the page loads
-  - Then a full-width hero slider is visible
-  - And the heading "Welcome to Snugden" is displayed
-  - And a call-to-action button "Book Now" is visible
-- **Scenario: Hero slides rotate**
-  - Given the hero slider is visible
-  - Then the slider rotates through at least 2 slides
-  - And each slide has a different background image and text
+
+#### Scenario: Hero displays welcome message
+
+- **GIVEN** the page loads
+- **THEN** a full-width hero slider is visible
+- **AND** the heading "Welcome to Snugden" is displayed
+- **AND** a call-to-action button "Book Now" is visible
+
+#### Scenario: Hero slides rotate
+
+- **GIVEN** the hero slider is visible
+- **THEN** the slider rotates through at least 2 slides
+- **AND** each slide has a different background image and text
 
 ### Reservation Form
-- **Scenario: Reservation form is visible**
-  - Given the user scrolls to the reservation section
-  - Then a booking form with date inputs and guest selector is visible
-  - And a submit button is present
-- **Scenario: Reservation form validates dates**
-  - Given the user clicks submit with empty date fields
-  - Then the form does not submit (client-side validation)
+
+#### Scenario: Reservation form is visible
+
+- **GIVEN** the user scrolls to the reservation section
+- **THEN** a booking form with date inputs and guest selector is visible
+- **AND** a submit button is present
+
+#### Scenario: Reservation form validates dates
+
+- **GIVEN** the user clicks submit with empty date fields
+- **THEN** the form does not submit (client-side validation)
 
 ### Services
-- **Scenario: Services section shows tabbed content**
-  - Given the user scrolls to the services section
-  - Then 8 service tabs are visible in a vertical navigation
-  - And the first tab (Master Bedrooms) is active by default
-  - And the corresponding content panel is displayed
-- **Scenario: Clicking a tab shows different content**
-  - Given the services section is visible
-  - When the user clicks "Pool & Spa" tab
-  - Then the content panel updates to show pool and spa information
+
+#### Scenario: Services section shows tabbed content
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** 8 service tabs are visible in a vertical navigation
+- **AND** the first tab (Master Bedrooms) is active by default
+- **AND** the corresponding content panel is displayed
+
+#### Scenario: Clicking a tab shows different content
+
+- **GIVEN** the services section is visible
+- **WHEN** the user clicks "Pool & Spa" tab
+- **THEN** the content panel updates to show pool and spa information
 
 ### Rooms Gallery
-- **Scenario: Rooms are displayed in a grid**
-  - Given the user scrolls to the rooms section
-  - Then 4 room cards are displayed in a row
-  - And each card shows room name, price, and a view button
-- **Scenario: Room cards have hover effect**
-  - Given the rooms gallery is visible
-  - When the user hovers over a room card
-  - Then a visual hover effect is applied (overlay or scale)
+
+#### Scenario: Rooms are displayed in a grid
+
+- **GIVEN** the user scrolls to the rooms section
+- **THEN** 4 room cards are displayed in a row
+- **AND** each card shows room name, price, and a view button
+
+#### Scenario: Room cards have hover effect
+
+- **GIVEN** the rooms gallery is visible
+- **WHEN** the user hovers over a room card
+- **THEN** a visual hover effect is applied (overlay or scale)
 
 ### Parallax Section
-- **Scenario: Parallax section displays**
-  - Given the user scrolls to the parallax section
-  - Then a full-width dark parallax background is visible
-  - And the heading "Conference Centre" is displayed over it
+
+#### Scenario: Parallax section displays
+
+- **GIVEN** the user scrolls to the parallax section
+- **THEN** a full-width dark parallax background is visible
+- **AND** the heading "Conference Centre" is displayed over it
 
 ### Menu Section
-- **Scenario: Menu section shows categorized food items**
-  - Given the user scrolls to the menu section
-  - Then tab navigation for menu categories is visible
-  - And food items with name and price are displayed
-- **Scenario: Menu categories switch**
-  - Given the menu section is visible
-  - When the user clicks a different category tab
-  - Then the displayed food items update accordingly
+
+#### Scenario: Menu section shows categorized food items
+
+- **GIVEN** the user scrolls to the menu section
+- **THEN** tab navigation for menu categories is visible
+- **AND** food items with name and price are displayed
+
+#### Scenario: Menu categories switch
+
+- **GIVEN** the menu section is visible
+- **WHEN** the user clicks a different category tab
+- **THEN** the displayed food items update accordingly
 
 ### Testimonials
-- **Scenario: Testimonials section displays guest reviews**
-  - Given the user scrolls to the testimonials section
-  - Then at least one guest review with quote, name, and role is visible
-  - And a carousel navigation (dots or arrows) is available
-- **Scenario: Testimonial carousel advances**
-  - Given the testimonials section is visible
-  - When the user clicks the next arrow
-  - Then the next testimonial slides into view
+
+#### Scenario: Testimonials section displays guest reviews
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** at least one guest review with quote, name, and role is visible
+- **AND** a carousel navigation (dots or arrows) is available
+
+#### Scenario: Testimonial carousel advances
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the user clicks the next arrow
+- **THEN** the next testimonial slides into view
 
 ### Blog
-- **Scenario: Blog section shows recent posts**
-  - Given the user scrolls to the blog section
-  - Then 3 blog post cards are displayed
-  - And each card shows an image, date, title, and excerpt
-- **Scenario: Blog cards link to posts**
-  - Given the blog section is visible
-  - When the user clicks a blog card title
-  - Then a link is followed (or the element is an anchor)
+
+#### Scenario: Blog section shows recent posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed
+- **AND** each card shows an image, date, title, and excerpt
+
+#### Scenario: Blog cards link to posts
+
+- **GIVEN** the blog section is visible
+- **WHEN** the user clicks a blog card title
+- **THEN** a link is followed (or the element is an anchor)
 
 ### Events
-- **Scenario: Events section displays**
-  - Given the user scrolls to the events section
-  - Then event cards with images and descriptions are visible
+
+#### Scenario: Events section displays
+
+- **GIVEN** the user scrolls to the events section
+- **THEN** event cards with images and descriptions are visible
 
 ### Instagram
-- **Scenario: Instagram grid displays**
-  - Given the user scrolls to the Instagram section
-  - Then a grid of Instagram-style photo thumbnails is visible
-  - And a photo count overlay is shown on each image
+
+#### Scenario: Instagram grid displays
+
+- **GIVEN** the user scrolls to the Instagram section
+- **THEN** a grid of Instagram-style photo thumbnails is visible
+- **AND** a photo count overlay is shown on each image
 
 ### Footer
-- **Scenario: Footer displays information columns**
-  - Given the user scrolls to the footer
-  - Then a dark background footer is visible
-  - And sections for About, Opening Hours, Contact, and Newsletter are present
-- **Scenario: Footer links to Component Dock**
-  - Given the footer is visible
-  - Then a link to "https://www.componentdock.com/" is present
-  - And the link text includes "Component Dock"
-- **Scenario: Newsletter signup in footer**
-  - Given the footer is visible
-  - Then a newsletter email input and submit button are present
+
+#### Scenario: Footer displays information columns
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is visible
+- **AND** sections for About, Opening Hours, Contact, and Newsletter are present
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** the link text includes "Component Dock"
+
+#### Scenario: Newsletter signup in footer
+
+- **GIVEN** the footer is visible
+- **THEN** a newsletter email input and submit button are present
 
 ## Verification Checklist
 

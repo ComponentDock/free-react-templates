@@ -54,132 +54,106 @@ Extracted from the live preview CSS (`css/style.css`):
 13. **Footer** — Dark bg (#333). Three columns: About Us text, Quick Links (ul), Follow Us (social icons). Right column: Subscribe Newsletter form (email input + Send button). Bottom: copyright + attribution.
 14. **Component Dock Footer Link** — Must link to https://www.componentdock.com/ ("Component Dock") replacing the original Colorlib attribution.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: TopBar renders contact info and social links
+### Feature: Consilium template behaviour
 
-```gherkin
-Given I visit the Consilium page
-Then I see social media icons (Facebook, Twitter, Instagram, LinkedIn) in the top bar
-And I see a phone number "+1 234 5678 9101" in the top bar
-And I see an email "info@yourdomain.com" in the top bar
-```
+#### Scenario: TopBar renders contact info and social links
 
-### Scenario: Navbar renders with correct links
+- **GIVEN** I visit the Consilium page
+- **THEN** I see social media icons (Facebook, Twitter, Instagram, LinkedIn) in the top bar
+- **AND** I see a phone number "+1 234 5678 9101" in the top bar
+- **AND** I see an email "info@yourdomain.com" in the top bar
 
-```gherkin
-Given I visit the Consilium page
-Then I see the logo "Consilium." with a mint-colored dot
-And I see navigation links: Home, About Us, Team, Services, Testimonials, Blog, Contact
-And the navbar is sticky on scroll
-```
+#### Scenario: Navbar renders with correct links
 
-### Scenario: Hero section displays headline and CTA
+- **GIVEN** I visit the Consilium page
+- **THEN** I see the logo "Consilium." with a mint-colored dot
+- **AND** I see navigation links: Home, About Us, Team, Services, Testimonials, Blog, Contact
+- **AND** the navbar is sticky on scroll
 
-```gherkin
-Given I visit the Consilium page
-Then I see a hero heading "We Are The Best Consulting Agency"
-And I see hero description text
-And I see a "Get Started" primary button
-```
+#### Scenario: Hero section displays headline and CTA
 
-### Scenario: About section shows experience badge and text
+- **GIVEN** I visit the Consilium page
+- **THEN** I see a hero heading "We Are The Best Consulting Agency"
+- **AND** I see hero description text
+- **AND** I see a "Get Started" primary button
 
-```gherkin
-Given I visit the Consilium page
-Then I see an about image with "50 years of experience" badge overlay
-And I see section title "Welcome To Consilium"
-And I see a "Learn More" button
-```
+#### Scenario: About section shows experience badge and text
 
-### Scenario: Team section shows 3 team members
+- **GIVEN** I visit the Consilium page
+- **THEN** I see an about image with "50 years of experience" badge overlay
+- **AND** I see section title "Welcome To Consilium"
+- **AND** I see a "Learn More" button
 
-```gherkin
-Given I visit the Consilium page
-Then I see heading "Our Team"
-And I see 3 team member cards in a row
-And each card has a circular photo, name, position, description, and social icons
-```
+#### Scenario: Team section shows 3 team members
 
-### Scenario: How It Works section shows 3 steps
+- **GIVEN** I visit the Consilium page
+- **THEN** I see heading "Our Team"
+- **AND** I see 3 team member cards in a row
+- **AND** each card has a circular photo, name, position, description, and social icons
 
-```gherkin
-Given I visit the Consilium page
-Then I see heading "How It Works"
-And I see 3 columns: Innovate, Create, Scale
-And each step has a description and a 3-item checkmark list
-```
+#### Scenario: How It Works section shows 3 steps
 
-### Scenario: Services section shows 6 service cards
+- **GIVEN** I visit the Consilium page
+- **THEN** I see heading "How It Works"
+- **AND** I see 3 columns: Innovate, Create, Scale
+- **AND** each step has a description and a 3-item checkmark list
 
-```gherkin
-Given I visit the Consilium page
-Then I see heading "Our Services"
-And I see 6 service cards in a 3-column grid
-And each card has an icon, title, description, and "Learn More" link
-```
+#### Scenario: Services section shows 6 service cards
 
-### Scenario: Testimonials carousel shows quotes
+- **GIVEN** I visit the Consilium page
+- **THEN** I see heading "Our Services"
+- **AND** I see 6 service cards in a 3-column grid
+- **AND** each card has an icon, title, description, and "Learn More" link
 
-```gherkin
-Given I visit the Consilium page
-Then I see heading "Testimonials"
-And I see testimonial slides with a quote, person photo, and name
-```
+#### Scenario: Testimonials carousel shows quotes
 
-### Scenario: Features section shows capabilities
+- **GIVEN** I visit the Consilium page
+- **THEN** I see heading "Testimonials"
+- **AND** I see testimonial slides with a quote, person photo, and name
 
-```gherkin
-Given I visit the Consilium page
-Then I see a features section with an image
-And I see 2 feature items: "Web & Mobile Specialties" and "Intuitive Thinkers"
-And each has an icon, title, description, and "Learn More" link
-```
+#### Scenario: Features section shows capabilities
 
-### Scenario: Blog section shows 3 posts
+- **GIVEN** I visit the Consilium page
+- **THEN** I see a features section with an image
+- **AND** I see 2 feature items: "Web & Mobile Specialties" and "Intuitive Thinkers"
+- **AND** each has an icon, title, description, and "Learn More" link
 
-```gherkin
-Given I visit the Consilium page
-Then I see heading "Our Blog Posts"
-And I see 3 blog cards in a row
-And each card has an image, title, meta info, excerpt, and "Continue Reading..." link
-```
+#### Scenario: Blog section shows 3 posts
 
-### Scenario: Contact section has form and info
+- **GIVEN** I visit the Consilium page
+- **THEN** I see heading "Our Blog Posts"
+- **AND** I see 3 blog cards in a row
+- **AND** each card has an image, title, meta info, excerpt, and "Continue Reading..." link
 
-```gherkin
-Given I visit the Consilium page
-Then I see a contact form with fields: First Name, Last Name, Email, Subject, Message
-And I see a "Send Message" submit button
-And I see contact info: address, phone, email
-```
+#### Scenario: Contact section has form and info
 
-### Scenario: CTA banner displays
+- **GIVEN** I visit the Consilium page
+- **THEN** I see a contact form with fields: First Name, Last Name, Email, Subject, Message
+- **AND** I see a "Send Message" submit button
+- **AND** I see contact info: address, phone, email
 
-```gherkin
-Given I visit the Consilium page
-Then I see a full-width mint-green banner with "Let's Get Started" in white
-And the banner is clickable
-```
+#### Scenario: CTA banner displays
 
-### Scenario: Footer with newsletter and links
+- **GIVEN** I visit the Consilium page
+- **THEN** I see a full-width mint-green banner with "Let's Get Started" in white
+- **AND** the banner is clickable
 
-```gherkin
-Given I visit the Consilium page
-Then I see a dark footer with About Us text, Quick Links, Follow Us social icons
-And I see a newsletter subscribe form with email input and Send button
-And I see a link to Component Dock (https://www.componentdock.com/)
-```
+#### Scenario: Footer with newsletter and links
 
-### Scenario: Responsive behavior
+- **GIVEN** I visit the Consilium page
+- **THEN** I see a dark footer with About Us text, Quick Links, Follow Us social icons
+- **AND** I see a newsletter subscribe form with email input and Send button
+- **AND** I see a link to Component Dock (https://www.componentdock.com/)
 
-```gherkin
-Given I visit the Consilium page on a mobile device
-Then the navbar collapses to a hamburger menu
-And sections stack vertically
-And the team grid changes from 3 columns to 1
-And the contact form and info stack vertically
-```
+#### Scenario: Responsive behavior
+
+- **GIVEN** I visit the Consilium page on a mobile device
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** the team grid changes from 3 columns to 1
+- **AND** the contact form and info stack vertically
 
 ## Verification checklist
 

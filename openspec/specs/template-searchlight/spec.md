@@ -91,99 +91,123 @@ Extracted from `css/main.css` on the live preview:
     - Newsletter signup form (email input + button)
     - "Instragram Feed" (sic — keep original typo or fix to "Instagram")
 
-## Gherkin scenarios
+## Requirements
 
 ### Feature: Banner section
-Scenario: Banner renders with gradient background and CTA
-  Given the user loads the SearchLight homepage
-  Then the banner section is visible
-  And the banner has an orange-to-crimson gradient background
-  And a "Get a Quote" button is displayed inside the banner
-  And the banner headline is rendered in uppercase
+
+#### Scenario: Banner renders with gradient background and CTA
+
+- **GIVEN** the user loads the SearchLight homepage
+- **THEN** the banner section is visible
+- **AND** the banner has an orange-to-crimson gradient background
+- **AND** a "Get a Quote" button is displayed inside the banner
+- **AND** the banner headline is rendered in uppercase
 
 ### Feature: Service section
-Scenario: Three service cards render correctly
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the service section
-  Then three service cards are visible
-  And each card has a circular icon with a light border
-  And each card has a title and description
 
-Scenario: Service icon highlights on hover
-  Given the user hovers over a service icon
-  Then the icon border changes to a cyan color
+#### Scenario: Three service cards render correctly
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the service section
+- **THEN** three service cards are visible
+- **AND** each card has a circular icon with a light border
+- **AND** each card has a title and description
+
+#### Scenario: Service icon highlights on hover
+
+- **GIVEN** the user hovers over a service icon
+- **THEN** the icon border changes to a cyan color
 
 ### Feature: About section
-Scenario: About section displays in split layout
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the about section
-  Then a two-column layout is displayed
-  And the left column shows a chart placeholder
-  And the right column shows a headline, paragraph, and "See Details" button
+
+#### Scenario: About section displays in split layout
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the about section
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows a chart placeholder
+- **AND** the right column shows a headline, paragraph, and "See Details" button
 
 ### Feature: Related section
-Scenario: Related services carousel renders
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the related section
-  Then a carousel of related services is displayed
-  And each slide has a headline, description, image, and "Research Details" button
+
+#### Scenario: Related services carousel renders
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the related section
+- **THEN** a carousel of related services is displayed
+- **AND** each slide has a headline, description, image, and "Research Details" button
 
 ### Feature: Pricing section
-Scenario: Three pricing tiers render
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the pricing section
-  Then three pricing cards are visible
-  And the Standard plan shows £199
-  And the Business plan shows £399
-  And the Ultimate plan shows £499
-  And each card has a "Purchase Plan" button
 
-Scenario: Pricing button shows gradient on hover
-  Given the user hovers over a "Purchase Plan" button
-  Then the button background changes to the brand gradient
+#### Scenario: Three pricing tiers render
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the pricing section
+- **THEN** three pricing cards are visible
+- **AND** the Standard plan shows £199
+- **AND** the Business plan shows £399
+- **AND** the Ultimate plan shows £499
+- **AND** each card has a "Purchase Plan" button
+
+#### Scenario: Pricing button shows gradient on hover
+
+- **GIVEN** the user hovers over a "Purchase Plan" button
+- **THEN** the button background changes to the brand gradient
 
 ### Feature: Team section
-Scenario: Four team members render
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the team section
-  Then four team member cards are visible
-  And each card shows a photo, name, and role
+
+#### Scenario: Four team members render
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the team section
+- **THEN** four team member cards are visible
+- **AND** each card shows a photo, name, and role
 
 ### Feature: Testimonial section
-Scenario: Testimonials render with dark background
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the testimonial section
-  Then a dark overlay background is visible
-  And testimonial quotes with user photos are displayed
+
+#### Scenario: Testimonials render with dark background
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the testimonial section
+- **THEN** a dark overlay background is visible
+- **AND** testimonial quotes with user photos are displayed
 
 ### Feature: Blog section
-Scenario: Blog posts render in a grid
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the blog section
-  Then four blog cards are visible
-  And each card shows a thumbnail, title, and excerpt
+
+#### Scenario: Blog posts render in a grid
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the blog section
+- **THEN** four blog cards are visible
+- **AND** each card shows a thumbnail, title, and excerpt
 
 ### Feature: Brand section
-Scenario: Brand logos carousel renders
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the brand section
-  Then a row of brand logos is visible
+
+#### Scenario: Brand logos carousel renders
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the brand section
+- **THEN** a row of brand logos is visible
 
 ### Feature: Contact section
-Scenario: Contact form renders with fields
-  Given the user loads the SearchLight homepage
-  When the user scrolls to the contact section
-  Then a contact form is displayed
-  And the form has name, email, subject, and message fields
-  And a "Send Message" button is visible
+
+#### Scenario: Contact form renders with fields
+
+- **GIVEN** the user loads the SearchLight homepage
+- **WHEN** the user scrolls to the contact section
+- **THEN** a contact form is displayed
+- **AND** the form has name, email, subject, and message fields
+- **AND** a "Send Message" button is visible
 
 ### Feature: Footer
-Scenario: Footer renders with three columns
-  Given the user loads the SearchLight homepage
-  Then the footer is visible
-  And the footer has a "Top Products" links column
-  And the footer has a "Newsletter" signup column
-  And the footer has an Instagram feed column
+
+#### Scenario: Footer renders with three columns
+
+- **GIVEN** the user loads the SearchLight homepage
+- **THEN** the footer is visible
+- **AND** the footer has a "Top Products" links column
+- **AND** the footer has a "Newsletter" signup column
+- **AND** the footer has an Instagram feed column
 
 ## Verification checklist
 

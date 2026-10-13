@@ -55,52 +55,58 @@ a "Visit Our Tailor" CTA section.
 
 ### Gherkin Scenarios
 
-```gherkin
 Feature: Pinfit — Men's Tailoring Template
 
-  Background:
-    Given the user navigates to the Pinfit app
+Background:
+- **GIVEN** the user navigates to the Pinfit app
 
-  Scenario: Header renders with logo and navigation
-    Then the logo is visible in the header
-    And navigation links "Home", "Services", "History", "Gallery", "Blog", "Contact" are present
-    And "Blog" has a dropdown submenu
+#### Scenario: Header renders with logo and navigation
 
-  Scenario: Hero slider displays with correct content
-    Then a hero slider is visible
-    And the hero heading reads "Discover true personalization."
-    And a decorative script subtitle "Made to Measure Dress Shirts" is visible above the heading
-    And a CTA button is present in the hero
+- **THEN** the logo is visible in the header
+- **AND** navigation links "Home", "Services", "History", "Gallery", "Blog", "Contact" are present
+- **AND** "Blog" has a dropdown submenu
 
-  Scenario: Services section displays three cards
-    Then the section heading "What we offer of Clients" is visible
-    And three service cards are displayed
-    And each card has a gold number, heading, and description
+#### Scenario: Hero slider displays with correct content
 
-  Scenario: History section displays video area and content
-    Then a video/image area is visible on the left
-    And "Our History" heading is visible on the right
-    And an "About Us" button is present
+- **THEN** a hero slider is visible
+- **AND** the hero heading reads "Discover true personalization."
+- **AND** a decorative script subtitle "Made to Measure Dress Shirts" is visible above the heading
+- **AND** a CTA button is present in the hero
 
-  Scenario: Clients speech/testimonial carousel renders
-    Then the "Our Work For Clients" section is visible
-    And testimonial slides are displayed in a carousel
+#### Scenario: Services section displays three cards
 
-  Scenario: Visit Our Tailor section displays correctly
-    Then "Visit Our Tailor" heading is visible
-    And a "10% Off" badge is displayed
-    And a "Get Appointment" CTA button is present
+- **THEN** the section heading "What we offer of Clients" is visible
+- **AND** three service cards are displayed
+- **AND** each card has a gold number, heading, and description
 
-  Scenario: Testimonial section displays with outlined title
-    Then the outlined "Testimonial" title is visible
-    And testimonial cards with author photos and quotes are displayed
+#### Scenario: History section displays video area and content
 
-  Scenario: Footer renders with correct columns
-    Then the footer is visible
-    And "Contact", "Links", and "Social" column headings are present
-    And the footer contains copyright text
-    And a link to "https://www.componentdock.com/" is present
-```
+- **THEN** a video/image area is visible on the left
+- **AND** "Our History" heading is visible on the right
+- **AND** an "About Us" button is present
+
+#### Scenario: Clients speech/testimonial carousel renders
+
+- **THEN** the "Our Work For Clients" section is visible
+- **AND** testimonial slides are displayed in a carousel
+
+#### Scenario: Visit Our Tailor section displays correctly
+
+- **THEN** "Visit Our Tailor" heading is visible
+- **AND** a "10% Off" badge is displayed
+- **AND** a "Get Appointment" CTA button is present
+
+#### Scenario: Testimonial section displays with outlined title
+
+- **THEN** the outlined "Testimonial" title is visible
+- **AND** testimonial cards with author photos and quotes are displayed
+
+#### Scenario: Footer renders with correct columns
+
+- **THEN** the footer is visible
+- **AND** "Contact", "Links", and "Social" column headings are present
+- **AND** the footer contains copyright text
+- **AND** a link to "https://www.componentdock.com/" is present
 
 ## Verification Checklist
 

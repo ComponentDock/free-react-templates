@@ -72,7 +72,7 @@ Based on the screenshot, the template is a single-page multi-step wizard (no sep
 - Subtle rounded corners
 - Hidden on last step (replaced by Submit)
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Requirement: Multi-step wizard navigation
 

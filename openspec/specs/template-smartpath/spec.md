@@ -42,124 +42,132 @@ Extracted from the live preview CSS (`css/style.css`):
 7. **Registration CTA** — full-width gradient background (`#00aee0`→`#00fedc`), heading + subtext + CTA button. Prominent call-to-action.
 8. **Footer** — dark footer with 5 columns (About, Newsletter, Courses, Links, Instagram feed), social icons, copyright bar at bottom. Links to Component Dock.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-```gherkin
+
 Feature: SmartPath Navigation
 
-  Scenario: Top bar displays contact info
-    Given the user visits the SmartPath homepage
-    Then the top bar shows a phone number and email address
-    And a "Login" link is visible in the top bar
+#### Scenario: Top bar displays contact info
 
-  Scenario: Main navigation links are present
-    Given the user visits the SmartPath homepage
-    Then the navbar contains links: Home, About, Pages, Courses, Elements, Blog, Contact
-    And the navbar is sticky on scroll
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** the top bar shows a phone number and email address
+- **AND** a "Login" link is visible in the top bar
 
-  Scenario: Mobile hamburger menu works
-    Given the viewport is 768px wide
-    When the user taps the hamburger icon
-    Then the mobile navigation menu expands
-```
+#### Scenario: Main navigation links are present
+
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** the navbar contains links: Home, About, Pages, Courses, Elements, Blog, Contact
+- **AND** the navbar is sticky on scroll
+
+#### Scenario: Mobile hamburger menu works
+
+- **GIVEN** the viewport is 768px wide
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile navigation menu expands
 
 ### Hero / Banner
-```gherkin
+
 Feature: SmartPath Hero Banner
 
-  Scenario: Hero displays headline and search
-    Given the user visits the SmartPath homepage
-    Then a heading reads "We Rank the Best Courses on the Web"
-    And a search input with "Search" button is visible
+#### Scenario: Hero displays headline and search
 
-  Scenario: Hero has background image with overlay
-    Given the user visits the SmartPath homepage
-    Then the hero section has a dark background image with overlay
-    And the text is white and readable against the overlay
-```
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** a heading reads "We Rank the Best Courses on the Web"
+- **AND** a search input with "Search" button is visible
+
+#### Scenario: Hero has background image with overlay
+
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** the hero section has a dark background image with overlay
+- **AND** the text is white and readable against the overlay
 
 ### Feature Bar
-```gherkin
+
 Feature: SmartPath Feature Bar
 
-  Scenario: Three features are displayed
-    Given the user visits the SmartPath homepage
-    Then 3 feature items appear below the hero
-    And each feature has an icon and descriptive text
-```
+#### Scenario: Three features are displayed
+
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** 3 feature items appear below the hero
+- **AND** each feature has an icon and descriptive text
 
 ### Department Area
-```gherkin
+
 Feature: SmartPath Department Area
 
-  Scenario: Department categories are shown
-    Given the user visits the SmartPath homepage
-    Then 10 department category items are displayed
-    And categories include: New Classes, Top Courses, Full E-Books, Languages, Business, Literature, Software, Design, Coaching, Development
+#### Scenario: Department categories are shown
 
-  Scenario: Department items are clickable
-    Given the user hovers over a department category
-    Then the item shows a hover state (background color change)
-```
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** 10 department category items are displayed
+- **AND** categories include: New Classes, Top Courses, Full E-Books, Languages, Business, Literature, Software, Design, Coaching, Development
+
+#### Scenario: Department items are clickable
+
+- **GIVEN** the user hovers over a department category
+- **THEN** the item shows a hover state (background color change)
 
 ### Popular Courses
-```gherkin
+
 Feature: SmartPath Popular Courses
 
-  Scenario: Course grid shows 4 courses
-    Given the user visits the SmartPath homepage
-    Then 4 course cards are displayed in a grid
-    And each card has an image, title, and price/meta info
+#### Scenario: Course grid shows 4 courses
 
-  Scenario: Course cards have hover overlay
-    Given the user hovers over a course card
-    Then an overlay effect appears on the card image
-```
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** 4 course cards are displayed in a grid
+- **AND** each card has an image, title, and price/meta info
+
+#### Scenario: Course cards have hover overlay
+
+- **GIVEN** the user hovers over a course card
+- **THEN** an overlay effect appears on the card image
 
 ### Testimonials
-```gherkin
+
 Feature: SmartPath Testimonials
 
-  Scenario: Testimonial carousel renders
-    Given the user visits the SmartPath homepage
-    Then a testimonials section is visible
-    And testimonials display in a carousel/slider
-    And each testimonial has avatar, name, and quote
+#### Scenario: Testimonial carousel renders
 
-  Scenario: Testimonial carousel is navigable
-    Given the user views the testimonials
-    When the user clicks a thumbnail or arrow
-    Then the carousel advances to the next testimonial
-```
+- **GIVEN** the user visits the SmartPath homepage
+- **THEN** a testimonials section is visible
+- **AND** testimonials display in a carousel/slider
+- **AND** each testimonial has avatar, name, and quote
+
+#### Scenario: Testimonial carousel is navigable
+
+- **GIVEN** the user views the testimonials
+- **WHEN** the user clicks a thumbnail or arrow
+- **THEN** the carousel advances to the next testimonial
 
 ### Registration CTA
-```gherkin
+
 Feature: SmartPath Registration CTA
 
-  Scenario: CTA section has gradient background
-    Given the user scrolls to the registration area
-    Then the section has a cyan-to-teal gradient background
-    And a heading and call-to-action button are visible
-```
+#### Scenario: CTA section has gradient background
+
+- **GIVEN** the user scrolls to the registration area
+- **THEN** the section has a cyan-to-teal gradient background
+- **AND** a heading and call-to-action button are visible
 
 ### Footer
-```gherkin
+
 Feature: SmartPath Footer
 
-  Scenario: Footer displays five columns
-    Given the user scrolls to the footer
-    Then 5 footer columns are visible: About, Newsletter, Courses, Links, Instagram
+#### Scenario: Footer displays five columns
 
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" is present
-    And it is branded as "Component Dock"
+- **GIVEN** the user scrolls to the footer
+- **THEN** 5 footer columns are visible: About, Newsletter, Courses, Links, Instagram
 
-  Scenario: Footer social icons are present
-    Given the user scrolls to the footer
-    Then social media icon links are visible in the footer
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** it is branded as "Component Dock"
+
+#### Scenario: Footer social icons are present
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** social media icon links are visible in the footer
 
 ## Verification checklist
 

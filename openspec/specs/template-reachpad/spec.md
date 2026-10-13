@@ -42,56 +42,67 @@ The ColorLib screenshot (`contact-form-08.jpg`) shows:
 - Clean, airy layout with generous whitespace
 - Professional, approachable feel
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page loads with heading and form
-  **Given** the user navigates to the Reachpad page
-  **When** the page renders
-  **Then** the heading "Get in touch with us" is visible
-  **And** the page heading text is visible above the form
+### Feature: Reachpad template behaviour
 
-### Scenario: Form fields are present
-  **Given** the page has loaded
-  **Then** the form contains a "Full Name" text input
-  **And** the form contains an "Email Address" email input
-  **And** the form contains a "Subject" text input
-  **And** the form contains a "Message" textarea
-  **And** the form contains a "Send Message" submit button
+#### Scenario: Page loads with heading and form
 
-### Scenario: Full Name and Email are side by side
-  **Given** the form is displayed on desktop viewport
-  **Then** the "Full Name" field and "Email Address" field appear in a two-column row
+- **GIVEN** the user navigates to the Reachpad page
+- **WHEN** the page renders
+- **THEN** the heading "Get in touch with us" is visible
+- **AND** the page heading text is visible above the form
 
-### Scenario: Form labels are styled correctly
-  **Given** the form is rendered
-  **Then** all form labels are uppercase, small (12px), and bold (600 weight)
-  **And** the heading text color is black
+#### Scenario: Form fields are present
 
-### Scenario: Brand color is applied
-  **Given** the page is rendered
-  **Then** the "Send Message" button background is green (#71a95a)
-  **And** the button text is white
-  **And** the button has rounded corners (border-radius 5px)
+- **GIVEN** the page has loaded
+- **THEN** the form contains a "Full Name" text input
+- **AND** the form contains an "Email Address" email input
+- **AND** the form contains a "Subject" text input
+- **AND** the form contains a "Message" textarea
+- **AND** the form contains a "Send Message" submit button
 
-### Scenario: Background image wrapper
-  **Given** the page is rendered
-  **Then** the form card is displayed inside a wrapper with a background image
-  **And** the wrapper has rounded corners
-  **And** the wrapper is full width within its container
+#### Scenario: Full Name and Email are side by side
 
-### Scenario: Responsive layout
-  **Given** the user is on a mobile viewport (below 768px)
-  **Then** the form fields stack vertically (single column)
-  **And** the wrapper adapts to full width
+- **GIVEN** the form is displayed on desktop viewport
+- **THEN** the "Full Name" field and "Email Address" field appear in a two-column row
 
-### Scenario: Input focus states
-  **Given** the user focuses on any form input
-  **Then** the input border color changes to the brand green (#71a95a)
+#### Scenario: Form labels are styled correctly
 
-### Scenario: Button hover state
-  **Given** the user hovers over the "Send Message" button
-  **Then** the button background darkens to #5a8947
-  **And** the button shadow deepens
+- **GIVEN** the form is rendered
+- **THEN** all form labels are uppercase, small (12px), and bold (600 weight)
+- **AND** the heading text color is black
+
+#### Scenario: Brand color is applied
+
+- **GIVEN** the page is rendered
+- **THEN** the "Send Message" button background is green (#71a95a)
+- **AND** the button text is white
+- **AND** the button has rounded corners (border-radius 5px)
+
+#### Scenario: Background image wrapper
+
+- **GIVEN** the page is rendered
+- **THEN** the form card is displayed inside a wrapper with a background image
+- **AND** the wrapper has rounded corners
+- **AND** the wrapper is full width within its container
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user is on a mobile viewport (below 768px)
+- **THEN** the form fields stack vertically (single column)
+- **AND** the wrapper adapts to full width
+
+#### Scenario: Input focus states
+
+- **GIVEN** the user focuses on any form input
+- **THEN** the input border color changes to the brand green (#71a95a)
+
+#### Scenario: Button hover state
+
+- **GIVEN** the user hovers over the "Send Message" button
+- **THEN** the button background darkens to #5a8947
+- **AND** the button shadow deepens
 
 ## Verification checklist
 

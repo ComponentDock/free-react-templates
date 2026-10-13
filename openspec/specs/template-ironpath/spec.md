@@ -39,151 +39,166 @@ Recreation of ColorLib **Gym** template.
 11. **CTA** — background image with overlay, heading "Huge Transaction in last Week", "Become a Member" button
 12. **Footer** — white bg, 3 columns (About Us, Contact Us with phone numbers, Newsletter with email input + arrow button), copyright + social icons row
 
-## Gherkin scenarios
+## Requirements
 
 ### Header
-```gherkin
-Feature: IronPath Header
-  Scenario: Displays top bar with tagline, logo, and phone number
-    Given the page loads
-    Then the header shows a tagline "We believe we helps people for happier lives"
-    And a logo is centered in the top bar
-    And a phone number "+880 123 12 658 439" is displayed on the right
 
-  Scenario: Navigation menu has all section links
-    Given the page loads
-    Then the nav bar shows links: Home, We Offer, Top Course, Schedule, Trainer, Plan
-    And each link scrolls to the corresponding section
-```
+Feature: IronPath Header
+
+#### Scenario: Displays top bar with tagline, logo, and phone number
+
+- **GIVEN** the page loads
+- **THEN** the header shows a tagline "We believe we helps people for happier lives"
+- **AND** a logo is centered in the top bar
+- **AND** a phone number "+880 123 12 658 439" is displayed on the right
+
+#### Scenario: Navigation menu has all section links
+
+- **GIVEN** the page loads
+- **THEN** the nav bar shows links: Home, We Offer, Top Course, Schedule, Trainer, Plan
+- **AND** each link scrolls to the corresponding section
 
 ### Banner
-```gherkin
+
 Feature: IronPath Banner
-  Scenario: Hero section shows heading and subtext over background image
-    Given the page loads
-    Then the banner displays "Real Fitness Depends on Exercise" as the main heading
-    And subtext "Shape your body well." is visible below
-    And a dark semi-transparent overlay covers the background image
-```
+
+#### Scenario: Hero section shows heading and subtext over background image
+
+- **GIVEN** the page loads
+- **THEN** the banner displays "Real Fitness Depends on Exercise" as the main heading
+- **AND** subtext "Shape your body well." is visible below
+- **AND** a dark semi-transparent overlay covers the background image
 
 ### Offer
-```gherkin
+
 Feature: IronPath Offer
-  Scenario: Three service cards are displayed
-    Given the page loads
-    Then the offer section shows a title "We care about what we offer"
-    And 3 service cards are visible: Regular Exercise, Training on the go, Body Building Packages
-    And each card has an icon image and descriptive paragraph
-```
+
+#### Scenario: Three service cards are displayed
+
+- **GIVEN** the page loads
+- **THEN** the offer section shows a title "We care about what we offer"
+- **AND** 3 service cards are visible: Regular Exercise, Training on the go, Body Building Packages
+- **AND** each card has an icon image and descriptive paragraph
 
 ### BMI Calculator
-```gherkin
+
 Feature: IronPath BMI Calculator
-  Scenario: Calculator section shows inputs and button on crimson background
-    Given the page loads
-    Then the convert section has a crimson (#f6214b) background
-    And title "Calculate Your Body Mass Index" is displayed in white
-    And a height input with placeholder "Your Height (inches)" is visible
-    And a weight input with placeholder "Your Weight (lbs)" is visible
-    And a "Calculate Your BMI" button is displayed
-```
+
+#### Scenario: Calculator section shows inputs and button on crimson background
+
+- **GIVEN** the page loads
+- **THEN** the convert section has a crimson (#f6214b) background
+- **AND** title "Calculate Your Body Mass Index" is displayed in white
+- **AND** a height input with placeholder "Your Height (inches)" is visible
+- **AND** a weight input with placeholder "Your Weight (lbs)" is visible
+- **AND** a "Calculate Your BMI" button is displayed
 
 ### Top Courses
-```gherkin
+
 Feature: IronPath Top Courses
-  Scenario: Six course cards with prices are shown
-    Given the page loads
-    Then 6 course cards are displayed in a 3-column grid
-    And each card shows an image, "Course Available" badge, course name, and price
-    And courses include: Running Classes $275, Weight Lifting Classes $200, Body Combat Classes $225, Organic Yoga Classes $300, Raw Fitness Classes $500, Body Building Classes $250
-```
+
+#### Scenario: Six course cards with prices are shown
+
+- **GIVEN** the page loads
+- **THEN** 6 course cards are displayed in a 3-column grid
+- **AND** each card shows an image, "Course Available" badge, course name, and price
+- **AND** courses include: Running Classes $275, Weight Lifting Classes $200, Body Combat Classes $225, Organic Yoga Classes $300, Raw Fitness Classes $500, Body Building Classes $250
 
 ### Feature Section
-```gherkin
+
 Feature: IronPath Feature
-  Scenario: Dark background feature blocks with alternating layout
-    Given the page loads
-    Then the feature section has a dark (#222) background
-    And 2 alternating image+text blocks are displayed
-    And each block has heading "Basic Revolutions" and descriptive paragraph
-```
+
+#### Scenario: Dark background feature blocks with alternating layout
+
+- **GIVEN** the page loads
+- **THEN** the feature section has a dark (#222) background
+- **AND** 2 alternating image+text blocks are displayed
+- **AND** each block has heading "Basic Revolutions" and descriptive paragraph
 
 ### Schedule
-```gherkin
+
 Feature: IronPath Schedule
-  Scenario: Weekly fitness schedule table
-    Given the page loads
-    Then a bordered table with columns: Course name, Mon, Tue, Wed, Thu, Fri is displayed
-    And rows include: Fitness Aero, Senior Fitness (multiple rows)
-    And each cell shows time slots (e.g. "10.00 02.00")
-```
+
+#### Scenario: Weekly fitness schedule table
+
+- **GIVEN** the page loads
+- **THEN** a bordered table with columns: Course name, Mon, Tue, Wed, Thu, Fri is displayed
+- **AND** rows include: Fitness Aero, Senior Fitness (multiple rows)
+- **AND** each cell shows time slots (e.g. "10.00 02.00")
 
 ### Trainer
-```gherkin
+
 Feature: IronPath Trainer
-  Scenario: Four trainer cards with hover social icons
-    Given the page loads
-    Then the trainer section shows title "Our Experienced Trainers"
-    And 4 trainer cards are displayed: Ethel Davis, Rodney Cooper, Dora Walker, Lena Keller
-    And each card shows an image, name, and role
-    And hovering reveals Facebook, Twitter, and LinkedIn social icons
-    And the trainer section has a light (#f9f9ff) background
-```
+
+#### Scenario: Four trainer cards with hover social icons
+
+- **GIVEN** the page loads
+- **THEN** the trainer section shows title "Our Experienced Trainers"
+- **AND** 4 trainer cards are displayed: Ethel Davis, Rodney Cooper, Dora Walker, Lena Keller
+- **AND** each card shows an image, name, and role
+- **AND** hovering reveals Facebook, Twitter, and LinkedIn social icons
+- **AND** the trainer section has a light (#f9f9ff) background
 
 ### Pricing
-```gherkin
-Feature: IronPath Pricing
-  Scenario: Three pricing tiers with hover effect
-    Given the page loads
-    Then 3 pricing cards are displayed: Standard £199, Business £399, Ultimate £499
-    And each card shows plan name, target audience, description, and feature list
-    And each card has a "Purchase Plan" button
-    And hovering a card turns the bottom sections crimson (#f6214b) with white text
 
-  Scenario: Pricing cards have distinct hover interaction
-    Given the pricing section is visible
-    When I hover over a pricing card
-    Then the bottom-sec and end-sec backgrounds change to #f6214b
-    And the price button changes to white background with dark text
-```
+Feature: IronPath Pricing
+
+#### Scenario: Three pricing tiers with hover effect
+
+- **GIVEN** the page loads
+- **THEN** 3 pricing cards are displayed: Standard £199, Business £399, Ultimate £499
+- **AND** each card shows plan name, target audience, description, and feature list
+- **AND** each card has a "Purchase Plan" button
+- **AND** hovering a card turns the bottom sections crimson (#f6214b) with white text
+
+#### Scenario: Pricing cards have distinct hover interaction
+
+- **GIVEN** the pricing section is visible
+- **WHEN** I hover over a pricing card
+- **THEN** the bottom-sec and end-sec backgrounds change to #f6214b
+- **AND** the price button changes to white background with dark text
 
 ### Brand Logos
-```gherkin
+
 Feature: IronPath Brand Logos
-  Scenario: Grayscale partner logos displayed in a row
-    Given the page loads
-    Then 5 partner logos are shown in a horizontal row
-    And logos are displayed in grayscale by default
-```
+
+#### Scenario: Grayscale partner logos displayed in a row
+
+- **GIVEN** the page loads
+- **THEN** 5 partner logos are shown in a horizontal row
+- **AND** logos are displayed in grayscale by default
 
 ### CTA
-```gherkin
+
 Feature: IronPath CTA
-  Scenario: Call-to-action section with background image
-    Given the page loads
-    Then the CTA section shows heading "Huge Transaction in last Week" in white
-    And a "Become a Member" button is displayed
-    And a dark semi-transparent overlay covers the background image
-    And hovering the button makes it transparent with white border
-```
+
+#### Scenario: Call-to-action section with background image
+
+- **GIVEN** the page loads
+- **THEN** the CTA section shows heading "Huge Transaction in last Week" in white
+- **AND** a "Become a Member" button is displayed
+- **AND** a dark semi-transparent overlay covers the background image
+- **AND** hovering the button makes it transparent with white border
 
 ### Footer
-```gherkin
-Feature: IronPath Footer
-  Scenario: Footer has three columns and newsletter signup
-    Given the page loads
-    Then the footer shows 3 columns: About Us, Contact Us, Newsletter
-    And Contact Us displays phone numbers in crimson (#f6214b)
-    And Newsletter has an email input with a submit button (border-radius 57px)
-    And a copyright line with Component Dock link is displayed
-    And social media icons (Facebook, Twitter, Dribbble, Behance) are shown
 
-  Scenario: Footer newsletter form is interactive
-    Given the footer is visible
-    When I type an email into the newsletter input
-    Then the input field accepts text
-    And the submit button is clickable
-```
+Feature: IronPath Footer
+
+#### Scenario: Footer has three columns and newsletter signup
+
+- **GIVEN** the page loads
+- **THEN** the footer shows 3 columns: About Us, Contact Us, Newsletter
+- **AND** Contact Us displays phone numbers in crimson (#f6214b)
+- **AND** Newsletter has an email input with a submit button (border-radius 57px)
+- **AND** a copyright line with Component Dock link is displayed
+- **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are shown
+
+#### Scenario: Footer newsletter form is interactive
+
+- **GIVEN** the footer is visible
+- **WHEN** I type an email into the newsletter input
+- **THEN** the input field accepts text
+- **AND** the submit button is clickable
 
 ## Verification checklist
 

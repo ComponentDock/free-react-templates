@@ -38,97 +38,109 @@ Extracted from the live preview CSS and HTML:
 | Footer              | `bg-gray-50`, newsletter input + subscribe button, 4-col grid       |
 | Trust badges        | Large stat numbers in Outfit font, `text-white`, `text-gray-500` label|
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Solecraft Landing Page
 
 #### Scenario: Announcement Bar
-- **Given** the user loads the page
-- **Then** an announcement bar is visible at the top
-- **And** it has a gradient orange background
-- **And** it displays "Free shipping on orders over $75" text
-- **And** it shows a promo code
+
+- **GIVEN** the user loads the page
+- **THEN** an announcement bar is visible at the top
+- **AND** it has a gradient orange background
+- **AND** it displays "Free shipping on orders over $75" text
+- **AND** it shows a promo code
 
 #### Scenario: Navigation Header
-- **Given** the user loads the page
-- **Then** a sticky header is visible
-- **And** it contains the Solecraft logo with lightning bolt icon in an orange gradient box
-- **And** desktop nav shows: Shop, Categories, New Arrivals, Sale, About links
-- **And** action buttons include Search, Theme Toggle, Wishlist, Cart
-- **And** the cart badge shows item count
-- **And** header becomes opaque with shadow on scroll
+
+- **GIVEN** the user loads the page
+- **THEN** a sticky header is visible
+- **AND** it contains the Solecraft logo with lightning bolt icon in an orange gradient box
+- **AND** desktop nav shows: Shop, Categories, New Arrivals, Sale, About links
+- **AND** action buttons include Search, Theme Toggle, Wishlist, Cart
+- **AND** the cart badge shows item count
+- **AND** header becomes opaque with shadow on scroll
 
 #### Scenario: Mobile Menu
-- **Given** the user is on a mobile viewport
-- **Then** a hamburger menu button is visible
-- **And** tapping it reveals the mobile nav with all links
-- **And** tapping a link closes the mobile menu
+
+- **GIVEN** the user is on a mobile viewport
+- **THEN** a hamburger menu button is visible
+- **AND** tapping it reveals the mobile nav with all links
+- **AND** tapping a link closes the mobile menu
 
 #### Scenario: Hero Section
-- **Given** the user loads the page
-- **Then** a full-height dark hero section is displayed
-- **And** it has gradient mesh background with decorative blurred circles
-- **And** it contains a heading "Step Into Your Next Adventure"
-- **And** it has a subtext about premium footwear
-- **And** a "Shop the Collection" primary button is displayed
-- **And** a "New Arrivals →" secondary link is shown
+
+- **GIVEN** the user loads the page
+- **THEN** a full-height dark hero section is displayed
+- **AND** it has gradient mesh background with decorative blurred circles
+- **AND** it contains a heading "Step Into Your Next Adventure"
+- **AND** it has a subtext about premium footwear
+- **AND** a "Shop the Collection" primary button is displayed
+- **AND** a "New Arrivals →" secondary link is shown
 
 #### Scenario: Featured Products Grid
-- **Given** the user scrolls past the hero
-- **Then** a "Featured Collection" section is displayed
-- **And** it shows a section badge "Curated Selection"
-- **And** 4 product cards are displayed in a grid
-- **And** each card shows: product image, category label, product name, star rating, price, color swatches
-- **And** each card has Add to Cart and Add to Wishlist overlay buttons
-- **And** product images use `picsum.photos` placeholders
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** a "Featured Collection" section is displayed
+- **AND** it shows a section badge "Curated Selection"
+- **AND** 4 product cards are displayed in a grid
+- **AND** each card shows: product image, category label, product name, star rating, price, color swatches
+- **AND** each card has Add to Cart and Add to Wishlist overlay buttons
+- **AND** product images use `picsum.photos` placeholders
 
 #### Scenario: Testimonials Section
-- **Given** the user scrolls past the product grid
-- **Then** a "What Our Customers Say" section is displayed on dark background
-- **And** it shows 3 testimonial cards with 5-star ratings
-- **And** each card has a quote, author name, and role
-- **And** each card has an avatar image (Unsplash placeholder)
-- **And** trust badges below show: 50K+ Happy Customers, 4.9/5 Rating, 15K+ Reviews, 98% Recommend
+
+- **GIVEN** the user scrolls past the product grid
+- **THEN** a "What Our Customers Say" section is displayed on dark background
+- **AND** it shows 3 testimonial cards with 5-star ratings
+- **AND** each card has a quote, author name, and role
+- **AND** each card has an avatar image (Unsplash placeholder)
+- **AND** trust badges below show: 50K+ Happy Customers, 4.9/5 Rating, 15K+ Reviews, 98% Recommend
 
 #### Scenario: CTA / Newsletter Section
-- **Given** the user scrolls past testimonials
-- **Then** a primary-orange background section is displayed
-- **And** it has a subtle grid pattern overlay
-- **And** it contains heading "Ready to Step Up Your Game?"
-- **And** an email input with "Get 15% Off" button is shown
-- **And** App Store and Google Play badges are displayed
+
+- **GIVEN** the user scrolls past testimonials
+- **THEN** a primary-orange background section is displayed
+- **AND** it has a subtle grid pattern overlay
+- **AND** it contains heading "Ready to Step Up Your Game?"
+- **AND** an email input with "Get 15% Off" button is shown
+- **AND** App Store and Google Play badges are displayed
 
 #### Scenario: Footer
-- **Given** the user scrolls to the bottom
-- **Then** a newsletter signup bar is visible with "Join the Stride Club" heading
-- **And** a 4-column footer grid is shown
-- **And** columns: Brand (with social icons), Shop links, Help links, About links
-- **And** a bottom bar shows copyright, Privacy/Terms links, and payment icons
-- **And** a "Component Dock" link is present (as per project rules)
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** a newsletter signup bar is visible with "Join the Stride Club" heading
+- **AND** a 4-column footer grid is shown
+- **AND** columns: Brand (with social icons), Shop links, Help links, About links
+- **AND** a bottom bar shows copyright, Privacy/Terms links, and payment icons
+- **AND** a "Component Dock" link is present (as per project rules)
 
 #### Scenario: Dark Mode Toggle
-- **Given** the user clicks the theme toggle button
-- **Then** the page switches between light and dark themes
-- **And** preference persists via localStorage
+
+- **GIVEN** the user clicks the theme toggle button
+- **THEN** the page switches between light and dark themes
+- **AND** preference persists via localStorage
 
 #### Scenario: Search Modal
-- **Given** the user clicks the search icon
-- **Then** a search modal overlay appears
-- **And** it contains a text input with placeholder "Search shoes, brands, categories..."
-- **And** popular search tags are shown
-- **And** pressing Escape or clicking backdrop closes the modal
+
+- **GIVEN** the user clicks the search icon
+- **THEN** a search modal overlay appears
+- **AND** it contains a text input with placeholder "Search shoes, brands, categories..."
+- **AND** popular search tags are shown
+- **AND** pressing Escape or clicking backdrop closes the modal
 
 #### Scenario: Add to Cart Interaction
-- **Given** the user clicks "Add to Cart" on a product card
-- **Then** a success toast notification appears
-- **And** the cart badge count increments
+
+- **GIVEN** the user clicks "Add to Cart" on a product card
+- **THEN** a success toast notification appears
+- **AND** the cart badge count increments
 
 #### Scenario: Responsive Layout
-- **Given** the user views on mobile viewport (< 640px)
-- **Then** the product grid stacks to single column
-- **And** the testimonial grid stacks to single column
-- **And** the footer collapses to 2 columns
-- **And** navigation switches to hamburger menu
+
+- **GIVEN** the user views on mobile viewport (< 640px)
+- **THEN** the product grid stacks to single column
+- **AND** the testimonial grid stacks to single column
+- **AND** the footer collapses to 2 columns
+- **AND** navigation switches to hamburger menu
 
 ## Verification Checklist
 

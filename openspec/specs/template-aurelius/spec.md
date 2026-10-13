@@ -39,98 +39,113 @@ From the ColorLib preview DOM analysis:
 - **Blog section** — "From The Blog" with 3 article cards: image, title, date, excerpt, "Read More" link.
 - **Footer** — logo + address/phone/email + social icons (Facebook, Instagram, Twitter, Pinterest), Information links, My Account links, Newsletter signup (email + Subscribe button). Copyright bar with payment method logos.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Aurelius template behaviour
+
 Feature: Aurelius E-Commerce Template
 
-  Background:
-    Given the user visits the Aurelius homepage
+Background:
+- **GIVEN** the user visits the Aurelius homepage
 
-  # ── Top Header Bar ──
+**── Top Header Bar ──**
 
-  Scenario: Top bar shows contact and social info
-    Then the top header should display email and phone number
-    And a login link, language selector, and social icons (Facebook, Twitter, LinkedIn, Pinterest)
+#### Scenario: Top bar shows contact and social info
 
-  # ── Main Header ──
+- **THEN** the top header should display email and phone number
+- **AND** a login link, language selector, and social icons (Facebook, Twitter, LinkedIn, Pinterest)
 
-  Scenario: Main header has logo and search
-    Then the header should display the site logo
-    And an advanced search bar with "All Categories" button and text input
+**── Main Header ──**
 
-  Scenario: Header shows wishlist and cart
-    Then the header should show a heart icon with count badge
-    And a cart icon with count badge and hover dropdown showing products
-    And a cart total price display
+#### Scenario: Main header has logo and search
 
-  # ── Category Navigation ──
+- **THEN** the header should display the site logo
+- **AND** an advanced search bar with "All Categories" button and text input
 
-  Scenario: Category nav displays departments and links
-    Then the nav bar should show a "Departments" dropdown
-    And horizontal navigation links
+#### Scenario: Header shows wishlist and cart
 
-  # ── Hero Slider ──
+- **THEN** the header should show a heart icon with count badge
+- **AND** a cart icon with count badge and hover dropdown showing products
+- **AND** a cart total price display
 
-  Scenario: Hero slider shows promotional content
-    Then the hero slider should display 2 slides
-    And each slide should show a headline ("Black friday"), discount text, and "Shop Now" button
+**── Category Navigation ──**
 
-  # ── Category Cards ──
+#### Scenario: Category nav displays departments and links
 
-  Scenario: Category section shows 3 cards
-    Then the category section should display 3 cards (Men's, Women's, Kid's)
-    And each card should show a background image and category name
+- **THEN** the nav bar should show a "Departments" dropdown
+- **AND** horizontal navigation links
 
-  # ── Women's Products ──
+**── Hero Slider ──**
 
-  Scenario: Women's section shows product carousel
-    Then the "Women's" section should display product cards
-    And each card should show an image, product name, and price
+#### Scenario: Hero slider shows promotional content
 
-  # ── Deal of the Week ──
+- **THEN** the hero slider should display 2 slides
+- **AND** each slide should show a headline ("Black friday"), discount text, and "Shop Now" button
 
-  Scenario: Deal section shows countdown and product
-    Then the "Deal Of The Week" section should display a countdown timer
-    And show Days, Hours, Minutes, Seconds
-    And a product image with "Shop Now" button
+**── Category Cards ──**
 
-  # ── Men's Products ──
+#### Scenario: Category section shows 3 cards
 
-  Scenario: Men's section shows product carousel
-    Then the "Men's" section should display product cards
+- **THEN** the category section should display 3 cards (Men's, Women's, Kid's)
+- **AND** each card should show a background image and category name
 
-  # ── Blog Section ──
+**── Women's Products ──**
 
-  Scenario: Blog section shows 3 articles
-    Then the "From The Blog" section should display 3 article cards
-    And each card should show an image, title, date, excerpt, and "Read More" link
+#### Scenario: Women's section shows product carousel
 
-  # ── Footer ──
+- **THEN** the "Women's" section should display product cards
+- **AND** each card should show an image, product name, and price
 
-  Scenario: Footer shows contact info and links
-    Then the footer should display logo, address, phone, email
-    And social icons: Facebook, Instagram, Twitter, Pinterest
-    And Information links and My Account links
+**── Deal of the Week ──**
 
-  Scenario: Footer newsletter
-    Then the footer should show "Join Our Newsletter Now" heading
-    And an email input + "Subscribe" button
+#### Scenario: Deal section shows countdown and product
 
-  Scenario: Footer copyright
-    Then the footer bottom should show copyright text, payment method logos, and a "Component Dock" link
+- **THEN** the "Deal Of The Week" section should display a countdown timer
+- **AND** show Days, Hours, Minutes, Seconds
+- **AND** a product image with "Shop Now" button
 
-  # ── Responsive ──
+**── Men's Products ──**
 
-  Scenario: Mobile view collapses nav
-    When the viewport width is less than 991px
-    Then the category nav should be hidden
-    And a mobile menu toggle should appear
+#### Scenario: Men's section shows product carousel
 
-  Scenario: Mobile view adjusts grids
-    When the viewport width is less than 768px
-    Then category cards should stack vertically
-```
+- **THEN** the "Men's" section should display product cards
+
+**── Blog Section ──**
+
+#### Scenario: Blog section shows 3 articles
+
+- **THEN** the "From The Blog" section should display 3 article cards
+- **AND** each card should show an image, title, date, excerpt, and "Read More" link
+
+**── Footer ──**
+
+#### Scenario: Footer shows contact info and links
+
+- **THEN** the footer should display logo, address, phone, email
+- **AND** social icons: Facebook, Instagram, Twitter, Pinterest
+- **AND** Information links and My Account links
+
+#### Scenario: Footer newsletter
+
+- **THEN** the footer should show "Join Our Newsletter Now" heading
+- **AND** an email input + "Subscribe" button
+
+#### Scenario: Footer copyright
+
+- **THEN** the footer bottom should show copyright text, payment method logos, and a "Component Dock" link
+
+**── Responsive ──**
+
+#### Scenario: Mobile view collapses nav
+
+- **WHEN** the viewport width is less than 991px
+- **THEN** the category nav should be hidden
+- **AND** a mobile menu toggle should appear
+
+#### Scenario: Mobile view adjusts grids
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** category cards should stack vertically
 
 ## Verification Checklist
 

@@ -29,78 +29,78 @@ Extracted from the live preview stylesheet (`assets/css/style.css`):
 | Section heading size  | `42px` desktop, `31px` tablet, `24px` mobile | `.section-tittle h2`                                           |
 | Card overlay gradient | `rgba(41,38,33,0) → #292621`                 | Room/guest card bottom gradient                                |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Lexicon — Hotel Template
 
 #### Scenario: Header — top info bar
 
-- **Given** the user loads the page
-- **Then** a dark maroon top bar (`#2e0000`) is visible
-- **And** it shows contact phone and email text in white
-- **And** social media icons (Facebook, Twitter, LinkedIn) appear on the right
+- **GIVEN** the user loads the page
+- **THEN** a dark maroon top bar (`#2e0000`) is visible
+- **AND** it shows contact phone and email text in white
+- **AND** social media icons (Facebook, Twitter, LinkedIn) appear on the right
 
 #### Scenario: Header — sticky navigation
 
-- **Given** the user scrolls past the hero
-- **Then** the navigation bar becomes sticky with a dark background (`#191514`)
-- **And** logo is on the left, nav links (Home, Rooms, About, Blog, Contact) in center
-- **And** a "Book Now" CTA button (`#E29C89`, no border-radius) sits on the right
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navigation bar becomes sticky with a dark background (`#191514`)
+- **AND** logo is on the left, nav links (Home, Rooms, About, Blog, Contact) in center
+- **AND** a "Book Now" CTA button (`#E29C89`, no border-radius) sits on the right
 
 #### Scenario: Hero section
 
-- **Given** the page loads
-- **Then** a full-width hero image with a warm brown gradient overlay is displayed
-- **And** a large heading "Rest Journey in Single step, in the breathtaking" is centered
-- **And** a booking search form below has: Check In date, Check Out date, Adult select, Children select, Search button
-- **And** the search form sits on a semi-transparent dark background at the bottom of the hero
+- **GIVEN** the page loads
+- **THEN** a full-width hero image with a warm brown gradient overlay is displayed
+- **AND** a large heading "Rest Journey in Single step, in the breathtaking" is centered
+- **AND** a booking search form below has: Check In date, Check Out date, Adult select, Children select, Search button
+- **AND** the search form sits on a semi-transparent dark background at the bottom of the hero
 
 #### Scenario: About section
 
-- **Given** the user scrolls below the hero
-- **Then** a two-column layout appears: left image, right text with heading "Luxury & Comfort Our services and wonders of Prague"
-- **And** a descriptive paragraph follows
-- **And** a "Learn More" outline button (`btn_01` style: `#E29C89` border + text, transparent bg, `border-radius: 0`) is shown
-- **And** a secondary right-side image appears on desktop only
+- **GIVEN** the user scrolls below the hero
+- **THEN** a two-column layout appears: left image, right text with heading "Luxury & Comfort Our services and wonders of Prague"
+- **AND** a descriptive paragraph follows
+- **AND** a "Learn More" outline button (`btn_01` style: `#E29C89` border + text, transparent bg, `border-radius: 0`) is shown
+- **AND** a secondary right-side image appears on desktop only
 
 #### Scenario: Rooms carousel section
 
-- **Given** the user scrolls to "Our Rooms"
-- **Then** a section heading with title "Our Rooms" and subtitle text is shown
-- **And** a horizontal carousel displays room cards (Luxurious Room, Family Room, Couple Room)
-- **And** each card has an image with a bottom gradient overlay, room name, occupancy text, and price ("Started from $500")
+- **GIVEN** the user scrolls to "Our Rooms"
+- **THEN** a section heading with title "Our Rooms" and subtitle text is shown
+- **AND** a horizontal carousel displays room cards (Luxurious Room, Family Room, Couple Room)
+- **AND** each card has an image with a bottom gradient overlay, room name, occupancy text, and price ("Started from $500")
 
 #### Scenario: Services / Seasonal specials section
 
-- **Given** the user scrolls to the services area
-- **Then** a centered heading reads "Surrounded by galleries, boutiques, restaurants and cafés..."
-- **And** a "Find a Room For You" dotted-underline link is below
-- **And** a split image-text card shows: left image, right text with heading "Take advantage of our seasonal specials", paragraph, "View Project" outline button
+- **GIVEN** the user scrolls to the services area
+- **THEN** a centered heading reads "Surrounded by galleries, boutiques, restaurants and cafés..."
+- **AND** a "Find a Room For You" dotted-underline link is below
+- **AND** a split image-text card shows: left image, right text with heading "Take advantage of our seasonal specials", paragraph, "View Project" outline button
 
 #### Scenario: Video section
 
-- **Given** the user scrolls to the video area
-- **Then** a full-width background image with a play button icon is displayed
-- **And** clicking the play icon opens a YouTube video popup
+- **GIVEN** the user scrolls to the video area
+- **THEN** a full-width background image with a play button icon is displayed
+- **AND** clicking the play icon opens a YouTube video popup
 
 #### Scenario: Guest services section
 
-- **Given** the user scrolls to "We Offer to Our Guest"
-- **Then** a 3-column grid of image cards is shown (Free Drinks, Free Breakfast, Free Dinner)
-- **And** each card has a hover overlay revealing descriptive text
+- **GIVEN** the user scrolls to "We Offer to Our Guest"
+- **THEN** a 3-column grid of image cards is shown (Free Drinks, Free Breakfast, Free Dinner)
+- **AND** each card has a hover overlay revealing descriptive text
 
 #### Scenario: Testimonials section
 
-- **Given** the user scrolls to the testimonials area
-- **Then** a carousel of testimonial cards is shown
-- **And** each card has a heading (e.g. "Nice Accommodation"), quoted text, and author name with dash prefix
+- **GIVEN** the user scrolls to the testimonials area
+- **THEN** a carousel of testimonial cards is shown
+- **AND** each card has a heading (e.g. "Nice Accommodation"), quoted text, and author name with dash prefix
 
 #### Scenario: Footer
 
-- **Given** the user scrolls to the footer
-- **Then** a 4-column layout is displayed: logo + social links, Navigation links, Contact info, Newsletter signup
-- **And** a bottom bar shows copyright text
-- **And** a footer MUST link to https://www.componentdock.com/ (branded as "Component Dock")
+- **GIVEN** the user scrolls to the footer
+- **THEN** a 4-column layout is displayed: logo + social links, Navigation links, Contact info, Newsletter signup
+- **AND** a bottom bar shows copyright text
+- **AND** a footer MUST link to https://www.componentdock.com/ (branded as "Component Dock")
 
 ## Verification checklist
 

@@ -62,65 +62,67 @@ The overall aesthetic is clean, focused, and minimal — the orange accent
 provides visual distinction while the sharp corners (no border-radius) and
 strong shadow give the modal a bold, modern appearance.
 
-## Gherkin Requirements
+## Requirements
 
-### Background
+### Feature: ModalGate template behaviour
 
-Given the page loads with a centered layout
-When the viewport is displayed
-Then the content is vertically and horizontally centered
-And the page title "Modal #7" is visible
-And a "Launch modal" button is displayed below the title
+**Background**
 
-### Scenario: Modal opens on button click
+- **GIVEN** the page loads with a centered layout
+- **WHEN** the viewport is displayed
+- **THEN** the content is vertically and horizontally centered
+- **AND** the page title "Modal #7" is visible
+- **AND** a "Launch modal" button is displayed below the title
 
-Given the page is loaded
-When the user clicks the "Launch modal" button
-Then a modal dialog appears centered in the viewport
-And the modal displays a single-column form layout
-And the modal has an orange top-border accent (4px solid)
-And the modal body has a light gray background
-And the heading "Log In" is visible at the top
+#### Scenario: Modal opens on button click
 
-### Scenario: Login form contains required fields
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a modal dialog appears centered in the viewport
+- **AND** the modal displays a single-column form layout
+- **AND** the modal has an orange top-border accent (4px solid)
+- **AND** the modal body has a light gray background
+- **AND** the heading "Log In" is visible at the top
 
-Given the modal is open
-When the user inspects the form
-Then a "Username/Email" input field is visible
-And a "Password" input field is visible
-And a "Login" submit button is visible
-And a "Forgot password" link is visible next to the button
-And a "Sign up here" link is visible below the form
+#### Scenario: Login form contains required fields
 
-### Scenario: Form input styling
+- **GIVEN** the modal is open
+- **WHEN** the user inspects the form
+- **THEN** a "Username/Email" input field is visible
+- **AND** a "Password" input field is visible
+- **AND** a "Login" submit button is visible
+- **AND** a "Forgot password" link is visible next to the button
+- **AND** a "Sign up here" link is visible below the form
 
-Given the modal is open
-When the user focuses an input field
-Then the input shows a subtle box-shadow
-And the input has no visible border
-And the input has a transparent background
+#### Scenario: Form input styling
 
-### Scenario: Modal has no rounded corners
+- **GIVEN** the modal is open
+- **WHEN** the user focuses an input field
+- **THEN** the input shows a subtle box-shadow
+- **AND** the input has no visible border
+- **AND** the input has a transparent background
 
-Given the modal is open
-When the user inspects the modal content
-Then the modal border-radius is 0px (sharp corners)
-And the modal has a deep drop shadow (0 10px 50px -10px rgba(0,0,0,0.9))
+#### Scenario: Modal has no rounded corners
 
-### Scenario: Modal closes on backdrop click or close button
+- **GIVEN** the modal is open
+- **WHEN** the user inspects the modal content
+- **THEN** the modal border-radius is 0px (sharp corners)
+- **AND** the modal has a deep drop shadow (0 10px 50px -10px rgba(0,0,0,0.9))
 
-Given the modal is open
-When the user clicks outside the modal or the close button
-Then the modal dialog disappears
-And the page returns to the initial state with the "Launch modal" button
+#### Scenario: Modal closes on backdrop click or close button
 
-### Scenario: Responsive layout
+- **GIVEN** the modal is open
+- **WHEN** the user clicks outside the modal or the close button
+- **THEN** the modal dialog disappears
+- **AND** the page returns to the initial state with the "Launch modal" button
 
-Given the page loads on a mobile viewport
-When the viewport width is less than 576px
-Then the content remains vertically and horizontally centered
-And the launch button remains visible and clickable
-And the modal adapts to the smaller viewport width
+#### Scenario: Responsive layout
+
+- **GIVEN** the page loads on a mobile viewport
+- **WHEN** the viewport width is less than 576px
+- **THEN** the content remains vertically and horizontally centered
+- **AND** the launch button remains visible and clickable
+- **AND** the modal adapts to the smaller viewport width
 
 ## Verification Checklist
 

@@ -60,156 +60,155 @@ background: linear-gradient(to right, #3de6fa, #243eff);
 10. **Partners** — 5 partner logos in a flex row, light gray background.
 11. **Footer** — 4-column layout: (a) Logo + description + social icons, (b) Latest News (3 blog post widgets with thumbnail), (c) Useful Links list, (d) Contact info (hours, address, phone/email). Bottom bar: copyright + nav links.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header
 
-```gherkin
-Scenario: Top header displays gradient background
-  Given the user visits the page
-  Then the top header bar has a cyan-to-blue gradient background
+#### Scenario: Top header displays gradient background
 
-Scenario: Top header shows social icons
-  Given the user visits the page
-  Then the top header displays 6 social media icons (Pinterest, Facebook, Twitter, Dribbble, Behance, LinkedIn)
+- **GIVEN** the user visits the page
+- **THEN** the top header bar has a cyan-to-blue gradient background
 
-Scenario: Top header shows utility navigation
-  Given the user visits the page
-  Then the top header displays links for FAQ, Book, Appointment, Contacts, and an email
+#### Scenario: Top header shows social icons
 
-Scenario: Main navigation is sticky
-  Given the user scrolls down the page
-  Then the main navigation bar sticks to the top of the viewport
+- **GIVEN** the user visits the page
+- **THEN** the top header displays 6 social media icons (Pinterest, Facebook, Twitter, Dribbble, Behance, LinkedIn)
 
-Scenario: Main navigation shows logo and menu items
-  Given the user visits the page
-  Then the main nav displays a logo, Home, Pages (dropdown), About Us, Services, News, Contact links
-  And a "Make an Appointment" CTA button
-```
+#### Scenario: Top header shows utility navigation
+
+- **GIVEN** the user visits the page
+- **THEN** the top header displays links for FAQ, Book, Appointment, Contacts, and an email
+
+#### Scenario: Main navigation is sticky
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the main navigation bar sticks to the top of the viewport
+
+#### Scenario: Main navigation shows logo and menu items
+
+- **GIVEN** the user visits the page
+- **THEN** the main nav displays a logo, Home, Pages (dropdown), About Us, Services, News, Contact links
+- **AND** a "Make an Appointment" CTA button
 
 ### Feature: Hero
 
-```gherkin
-Scenario: Hero displays background image with content
-  Given the user visits the page
-  Then the hero section shows a full-width background image
-  And a heading "We provide top medical services"
-  And a subtitle "More than 30 professionals"
+#### Scenario: Hero displays background image with content
 
-Scenario: Hero shows two CTA buttons
-  Given the user visits the page
-  Then the hero displays a solid "Make an Appointment" button
-  And an outline "Read More" button
-```
+- **GIVEN** the user visits the page
+- **THEN** the hero section shows a full-width background image
+- **AND** a heading "We provide top medical services"
+- **AND** a subtitle "More than 30 professionals"
+
+#### Scenario: Hero shows two CTA buttons
+
+- **GIVEN** the user visits the page
+- **THEN** the hero displays a solid "Make an Appointment" button
+- **AND** an outline "Read More" button
 
 ### Feature: Contact Info
 
-```gherkin
-Scenario: Contact info shows 3 items in a row
-  Given the user visits the page
-  Then the contact info section displays 3 items: hours, phone/email, address
-  And each item has an icon and text
-```
+#### Scenario: Contact info shows 3 items in a row
+
+- **GIVEN** the user visits the page
+- **THEN** the contact info section displays 3 items: hours, phone/email, address
+- **AND** each item has an icon and text
 
 ### Feature: About Us
 
-```gherkin
-Scenario: About Us displays 3 cards
-  Given the user visits the page
-  Then the About Us section shows an Emergency card with phone number
-  And a Doctors card with description
-  And an Appointment card with a mini form (name, phone, email)
+#### Scenario: About Us displays 3 cards
 
-Scenario: About Us shows welcome text and image
-  Given the user visits the page
-  Then the About Us section displays "Welcome to Medica Health Center" heading
-  And a description paragraph
-  And a list of 8 medical specialties
-  And a "Read More" outline button
-  And a doctor illustration on the right
-```
+- **GIVEN** the user visits the page
+- **THEN** the About Us section shows an Emergency card with phone number
+- **AND** a Doctors card with description
+- **AND** an Appointment card with a mini form (name, phone, email)
+
+#### Scenario: About Us shows welcome text and image
+
+- **GIVEN** the user visits the page
+- **THEN** the About Us section displays "Welcome to Medica Health Center" heading
+- **AND** a description paragraph
+- **AND** a list of 8 medical specialties
+- **AND** a "Read More" outline button
+- **AND** a doctor illustration on the right
 
 ### Feature: Services
 
-```gherkin
-Scenario: Services displays 6 service cards
-  Given the user visits the page
-  Then the services section shows 6 services in a 3-column grid
-  And each service has an icon, title, and description
-  And the section has a background image with gradient overlay
+#### Scenario: Services displays 6 service cards
 
-Scenario: Services shows heading and CTA
-  Given the user visits the page
-  Then the services section displays "Our Services" heading in white
-  And a "See All Services" button at the bottom
-```
+- **GIVEN** the user visits the page
+- **THEN** the services section shows 6 services in a 3-column grid
+- **AND** each service has an icon, title, and description
+- **AND** the section has a background image with gradient overlay
+
+#### Scenario: Services shows heading and CTA
+
+- **GIVEN** the user visits the page
+- **THEN** the services section displays "Our Services" heading in white
+- **AND** a "See All Services" button at the bottom
 
 ### Feature: Doctors
 
-```gherkin
-Scenario: Doctors displays 4 doctor cards
-  Given the user visits the page
-  Then the doctors section shows 4 cards in a row
-  And each card has a photo, name, specialty, and social links
+#### Scenario: Doctors displays 4 doctor cards
 
-Scenario: Doctors section has heading
-  Given the user visits the page
-  Then the doctors section displays "Our Doctors" heading with subtitle
-```
+- **GIVEN** the user visits the page
+- **THEN** the doctors section shows 4 cards in a row
+- **AND** each card has a photo, name, specialty, and social links
+
+#### Scenario: Doctors section has heading
+
+- **GIVEN** the user visits the page
+- **THEN** the doctors section displays "Our Doctors" heading with subtitle
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials carousel with background
-  Given the user visits the page
-  Then the testimonials section has a background image with dark overlay
-  And displays "Clients Testimonials" heading in white
+#### Scenario: Testimonials carousel with background
 
-Scenario: Testimonial slides show quote and author
-  Given the user views a testimonial slide
-  Then it shows a quoted text, author photo, author name, and "Pacient" label
-```
+- **GIVEN** the user visits the page
+- **THEN** the testimonials section has a background image with dark overlay
+- **AND** displays "Clients Testimonials" heading in white
+
+#### Scenario: Testimonial slides show quote and author
+
+- **GIVEN** the user views a testimonial slide
+- **THEN** it shows a quoted text, author photo, author name, and "Pacient" label
 
 ### Feature: CTA / Counters
 
-```gherkin
-Scenario: Counter bar shows 4 statistics
-  Given the user visits the page
-  Then the CTA section displays on a gradient background
-  And shows 4 counters: patients, doctors, years of experience, pro bono works
-```
+#### Scenario: Counter bar shows 4 statistics
+
+- **GIVEN** the user visits the page
+- **THEN** the CTA section displays on a gradient background
+- **AND** shows 4 counters: patients, doctors, years of experience, pro bono works
 
 ### Feature: Appointment
 
-```gherkin
-Scenario: Appointment form on left with illustration on right
-  Given the user visits the page
-  Then the appointment section shows a form on the left side
-  And the form has fields: Name, Speciality (dropdown), Phone, Doctor (dropdown), Email, Date
-  And a "Make an Appointment" submit button
-  And a medical illustration on the right side
-```
+#### Scenario: Appointment form on left with illustration on right
+
+- **GIVEN** the user visits the page
+- **THEN** the appointment section shows a form on the left side
+- **AND** the form has fields: Name, Speciality (dropdown), Phone, Doctor (dropdown), Email, Date
+- **AND** a "Make an Appointment" submit button
+- **AND** a medical illustration on the right side
 
 ### Feature: Partners
 
-```gherkin
-Scenario: Partners shows 5 logos
-  Given the user visits the page
-  Then the partners section displays 5 partner logos in a horizontal row
-```
+#### Scenario: Partners shows 5 logos
+
+- **GIVEN** the user visits the page
+- **THEN** the partners section displays 5 partner logos in a horizontal row
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has 4-column layout
-  Given the user visits the page
-  Then the footer shows: logo + social icons, Latest News (3 posts), Useful Links, Contact info
+#### Scenario: Footer has 4-column layout
 
-Scenario: Footer bottom bar
-  Given the user visits the page
-  Then the footer bottom bar shows copyright text and navigation links
-  And includes a link to Component Dock
-```
+- **GIVEN** the user visits the page
+- **THEN** the footer shows: logo + social icons, Latest News (3 posts), Useful Links, Contact info
+
+#### Scenario: Footer bottom bar
+
+- **GIVEN** the user visits the page
+- **THEN** the footer bottom bar shows copyright text and navigation links
+- **AND** includes a link to Component Dock
 
 ## Verification Checklist
 

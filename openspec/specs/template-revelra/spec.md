@@ -27,85 +27,96 @@ Recreation of ColorLib's **Evento** template for event/conference landing pages.
 | General radius | 4px | Cards, inputs |
 | Small radius | 2px | Minor elements |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Revelra — Event Conference Landing Page
 
 #### Scenario: Navbar renders with correct links
-- **Given** the user visits the Revelra landing page
-- **When** the navbar loads
-- **Then** it shows: Home, Speakers, Events, News, Contact links
-- **And** it is fixed to the top of the viewport
-- **And** it collapses into a hamburger menu on mobile
+
+- **GIVEN** the user visits the Revelra landing page
+- **WHEN** the navbar loads
+- **THEN** it shows: Home, Speakers, Events, News, Contact links
+- **AND** it is fixed to the top of the viewport
+- **AND** it collapses into a hamburger menu on mobile
 
 #### Scenario: Hero slider displays conference headlines
-- **Given** the user visits the page
-- **When** the hero slider section renders
-- **Then** it displays 3 slides with background images
-- **And** each slide has a heading, description paragraph, and CTA button
-- **And** navigation dots allow switching between slides
-- **And** slides auto-advance
+
+- **GIVEN** the user visits the page
+- **WHEN** the hero slider section renders
+- **THEN** it displays 3 slides with background images
+- **AND** each slide has a heading, description paragraph, and CTA button
+- **AND** navigation dots allow switching between slides
+- **AND** slides auto-advance
 
 #### Scenario: Event info boxes show key details
-- **Given** the hero section has loaded
-- **When** the user scrolls to the event info section
-- **Then** 4 icon boxes are displayed in a row: Date, Location, Speaker, Price
-- **And** each box has an icon, title, and description text
+
+- **GIVEN** the hero section has loaded
+- **WHEN** the user scrolls to the event info section
+- **THEN** 4 icon boxes are displayed in a row: Date, Location, Speaker, Price
+- **AND** each box has an icon, title, and description text
 
 #### Scenario: Countdown timer displays until event date
-- **Given** the event info section has loaded
-- **When** the countdown section renders
-- **Then** a heading "Counter until the big event" is displayed
-- **And** a countdown timer shows days, hours, minutes, seconds
-- **And** the section has a parallax background image
+
+- **GIVEN** the event info section has loaded
+- **WHEN** the countdown section renders
+- **THEN** a heading "Counter until the big event" is displayed
+- **AND** a countdown timer shows days, hours, minutes, seconds
+- **AND** the section has a parallax background image
 
 #### Scenario: About section describes the event
-- **Given** the countdown section has loaded
-- **When** the user scrolls to the About section
-- **Then** a section title "About the event" is displayed
-- **And** a paragraph of descriptive text is shown below it
+
+- **GIVEN** the countdown section has loaded
+- **WHEN** the user scrolls to the About section
+- **THEN** a section title "About the event" is displayed
+- **AND** a paragraph of descriptive text is shown below it
 
 #### Scenario: Speakers grid shows team members
-- **Given** the About section has loaded
-- **When** the user scrolls to the Speakers section
-- **Then** a section title "Our speakers" is displayed
-- **And** 8 speaker cards are shown in a grid
-- **And** each card has an image, name, and social media links
+
+- **GIVEN** the About section has loaded
+- **WHEN** the user scrolls to the Speakers section
+- **THEN** a section title "Our speakers" is displayed
+- **AND** 8 speaker cards are shown in a grid
+- **AND** each card has an image, name, and social media links
 
 #### Scenario: Pricing table shows tier options
-- **Given** the Speakers section has loaded
-- **When** the user scrolls to the Pricing section
-- **Then** a section title "Pricing table" is displayed
-- **And** 3 pricing cards are shown: Early Bird (active/highlighted), Standard, Premium
-- **And** each card shows price, feature list, and a CTA button
-- **And** the active card has a different background color
+
+- **GIVEN** the Speakers section has loaded
+- **WHEN** the user scrolls to the Pricing section
+- **THEN** a section title "Pricing table" is displayed
+- **AND** 3 pricing cards are shown: Early Bird (active/highlighted), Standard, Premium
+- **AND** each card shows price, feature list, and a CTA button
+- **AND** the active card has a different background color
 
 #### Scenario: Events calendar lists upcoming events
-- **Given** the Pricing section has loaded
-- **When** the user scrolls to the Events Calendar section
-- **Then** a table lists upcoming events with calendar icon header
-- **And** each row shows event name, date, time, and location
+
+- **GIVEN** the Pricing section has loaded
+- **WHEN** the user scrolls to the Events Calendar section
+- **THEN** a table lists upcoming events with calendar icon header
+- **AND** each row shows event name, date, time, and location
 
 #### Scenario: Partners carousel displays brand logos
-- **Given** the Events Calendar has loaded
-- **When** the user scrolls to the Partners section
-- **Then** a section title "Our partners" is displayed
-- **And** a carousel of brand logos is shown
-- **And** the section has a light gray background (#f0f2f6)
+
+- **GIVEN** the Events Calendar has loaded
+- **WHEN** the user scrolls to the Partners section
+- **THEN** a section title "Our partners" is displayed
+- **AND** a carousel of brand logos is shown
+- **AND** the section has a light gray background (#f0f2f6)
 
 #### Scenario: Get Tickets CTA section
-- **Given** the Partners section has loaded
-- **When** the user scrolls to the CTA section
-- **Then** a heading "Get your tickets" is displayed on a parallax background
-- **And** descriptive text and a CTA button are shown
-- **And** text is white on the dark background
+
+- **GIVEN** the Partners section has loaded
+- **WHEN** the user scrolls to the CTA section
+- **THEN** a heading "Get your tickets" is displayed on a parallax background
+- **AND** descriptive text and a CTA button are shown
+- **AND** text is white on the dark background
 
 #### Scenario: Footer with newsletter and social links
-- **Given** the CTA section has loaded
-- **When** the user scrolls to the footer
-- **Then** 3 columns are shown: About text with social icons, Instagram gallery, Newsletter form
-- **And** the newsletter has an email input and "SUBSCRIBE" button
-- **And** a copyright bar at the bottom contains "Made with Component Dock" link
+
+- **GIVEN** the CTA section has loaded
+- **WHEN** the user scrolls to the footer
+- **THEN** 3 columns are shown: About text with social icons, Instagram gallery, Newsletter form
+- **AND** the newsletter has an email input and "SUBSCRIBE" button
+- **AND** a copyright bar at the bottom contains "Made with Component Dock" link
 
 ## Verification Checklist
 

@@ -43,144 +43,145 @@ The template features a clean, modern education marketplace aesthetic:
 - Testimonials: carousel slider with star ratings, quote text, and thumbnail navigation at bottom
 - Dark navy footer: 5-column layout (4 link columns + newsletter signup), bottom bar with copyright + social icons
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Header / Navigation
 
-```gherkin
-Scenario: Sticky header displays logo and navigation links
-  Given the user loads the EduNex page
-  Then a header bar is visible at the top
-  And the logo "EduNex" is displayed on the left
-  And navigation links include "Home", "About", "Courses", "Blog", "Contact"
-  And the header sticks to the top on scroll
+#### Scenario: Sticky header displays logo and navigation links
 
-Scenario: Mobile hamburger menu toggles navigation
-  Given the user is on a mobile viewport
-  When the user taps the hamburger icon
-  Then the navigation menu expands
-  And all nav links are visible
-```
+- **GIVEN** the user loads the EduNex page
+- **THEN** a header bar is visible at the top
+- **AND** the logo "EduNex" is displayed on the left
+- **AND** navigation links include "Home", "About", "Courses", "Blog", "Contact"
+- **AND** the header sticks to the top on scroll
+
+#### Scenario: Mobile hamburger menu toggles navigation
+
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu expands
+- **AND** all nav links are visible
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero displays headline, subtext, search, and course tags
-  Given the user loads the page
-  Then the hero section is visible with a full-height background
-  And a heading reads "We Rank the Best Courses on the Web"
-  And descriptive subtext is shown below the heading
-  And a search input with "Search" button is displayed
-  And tag buttons for courses like "Ruby on Rails", "Python", "Marketing", "UI/UX Design", "Android", "Data Science", "Cryptocurrency" are shown
+#### Scenario: Hero displays headline, subtext, search, and course tags
 
-Scenario: Hero search form is interactive
-  Given the hero section is visible
-  When the user types into the search input
-  Then the input value updates
-```
+- **GIVEN** the user loads the page
+- **THEN** the hero section is visible with a full-height background
+- **AND** a heading reads "We Rank the Best Courses on the Web"
+- **AND** descriptive subtext is shown below the heading
+- **AND** a search input with "Search" button is displayed
+- **AND** tag buttons for courses like "Ruby on Rails", "Python", "Marketing", "UI/UX Design", "Android", "Data Science", "Cryptocurrency" are shown
+
+#### Scenario: Hero search form is interactive
+
+- **GIVEN** the hero section is visible
+- **WHEN** the user types into the search input
+- **THEN** the input value updates
 
 ### About Section
 
-```gherkin
-Scenario: About section shows image and course summary
-  Given the user scrolls past the hero
-  Then the About section is visible
-  And a heading reads "Over 2500 Courses from 5 Platform"
-  And descriptive text is displayed
-  And an "Explore Courses" button is shown
+#### Scenario: About section shows image and course summary
 
-Scenario: Explore Courses button navigates to courses
-  Given the About section is visible
-  When the user clicks "Explore Courses"
-  Then the page scrolls to the courses section
-```
+- **GIVEN** the user scrolls past the hero
+- **THEN** the About section is visible
+- **AND** a heading reads "Over 2500 Courses from 5 Platform"
+- **AND** descriptive text is displayed
+- **AND** an "Explore Courses" button is shown
+
+#### Scenario: Explore Courses button navigates to courses
+
+- **GIVEN** the About section is visible
+- **WHEN** the user clicks "Explore Courses"
+- **THEN** the page scrolls to the courses section
 
 ### Courses Section
 
-```gherkin
-Scenario: Courses section lists categories on light-blue background
-  Given the user scrolls to the courses section
-  Then the section has a light background (#f1f9ff)
-  And a heading reads "This is Why We have Solid Idea"
-  And descriptive text is displayed
-  And an "Explore Courses" white button is shown
-  And two columns of course categories are listed with book icons
-  And categories include: Development, IT & Software, Photography, Language, Life Science, Business, Social Science, Data Science, Design, Training, Humanities, Marketing, Economics, Personal Dev
+#### Scenario: Courses section lists categories on light-blue background
 
-Scenario: Course category items are clickable
-  Given the courses section is visible
-  When the user clicks a category item
-  Then the item responds with a hover effect
-```
+- **GIVEN** the user scrolls to the courses section
+- **THEN** the section has a light background (#f1f9ff)
+- **AND** a heading reads "This is Why We have Solid Idea"
+- **AND** descriptive text is displayed
+- **AND** an "Explore Courses" white button is shown
+- **AND** two columns of course categories are listed with book icons
+- **AND** categories include: Development, IT & Software, Photography, Language, Life Science, Business, Social Science, Data Science, Design, Training, Humanities, Marketing, Economics, Personal Dev
+
+#### Scenario: Course category items are clickable
+
+- **GIVEN** the courses section is visible
+- **WHEN** the user clicks a category item
+- **THEN** the item responds with a hover effect
 
 ### Features Section
 
-```gherkin
-Scenario: Features section shows 6 feature cards in 3-column grid
-  Given the user scrolls to the features section
-  Then a heading reads "Features That Make Us Hero"
-  And 6 feature cards are displayed in a 3-column layout
-  And each card has a colored circle icon, title, and description
-  And feature titles are: Architecture, Interior Design, Concept Design, Lifetime Access, Source File Included, Live Support
+#### Scenario: Features section shows 6 feature cards in 3-column grid
 
-Scenario: Feature cards have hover effects
-  Given the features section is visible
-  When the user hovers over a feature card
-  Then the card responds with a visual transition
-```
+- **GIVEN** the user scrolls to the features section
+- **THEN** a heading reads "Features That Make Us Hero"
+- **AND** 6 feature cards are displayed in a 3-column layout
+- **AND** each card has a colored circle icon, title, and description
+- **AND** feature titles are: Architecture, Interior Design, Concept Design, Lifetime Access, Source File Included, Live Support
+
+#### Scenario: Feature cards have hover effects
+
+- **GIVEN** the features section is visible
+- **WHEN** the user hovers over a feature card
+- **THEN** the card responds with a visual transition
 
 ### Faculty Section
 
-```gherkin
-Scenario: Faculty section shows 4 instructor cards
-  Given the user scrolls to the faculty section
-  Then a heading reads "Faculty Members"
-  And 4 instructor cards are displayed in a row
-  And each card shows: photo, name, designation, short bio, and social icons (Facebook, Twitter, LinkedIn)
-  And faculty names are: Ethel Davis, Rodney Cooper, Dora Walker, Lena Keller
-  And each designation reads "Sr. Faculty Data Science"
+#### Scenario: Faculty section shows 4 instructor cards
 
-Scenario: Faculty social icons are interactive
-  Given the faculty section is visible
-  When the user hovers over a social icon on a faculty card
-  Then the icon responds with a color transition
-```
+- **GIVEN** the user scrolls to the faculty section
+- **THEN** a heading reads "Faculty Members"
+- **AND** 4 instructor cards are displayed in a row
+- **AND** each card shows: photo, name, designation, short bio, and social icons (Facebook, Twitter, LinkedIn)
+- **AND** faculty names are: Ethel Davis, Rodney Cooper, Dora Walker, Lena Keller
+- **AND** each designation reads "Sr. Faculty Data Science"
+
+#### Scenario: Faculty social icons are interactive
+
+- **GIVEN** the faculty section is visible
+- **WHEN** the user hovers over a social icon on a faculty card
+- **THEN** the icon responds with a color transition
 
 ### Testimonials Section
 
-```gherkin
-Scenario: Testimonials section displays a carousel with star ratings
-  Given the user scrolls to the testimonials section
-  Then a testimonial carousel is visible
-  And each slide shows: reviewer name, 5-star rating, quote text, and thumbnail images
-  And the carousel auto-plays through slides
+#### Scenario: Testimonials section displays a carousel with star ratings
 
-Scenario: Testimonial thumbnails are clickable
-  Given the testimonials section is visible
-  When the user clicks a thumbnail at the bottom
-  Then the carousel navigates to that testimonial
-```
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a testimonial carousel is visible
+- **AND** each slide shows: reviewer name, 5-star rating, quote text, and thumbnail images
+- **AND** the carousel auto-plays through slides
+
+#### Scenario: Testimonial thumbnails are clickable
+
+- **GIVEN** the testimonials section is visible
+- **WHEN** the user clicks a thumbnail at the bottom
+- **THEN** the carousel navigates to that testimonial
 
 ### Footer
 
-```gherkin
-Scenario: Footer shows 4 link columns and newsletter signup
-  Given the user scrolls to the footer
-  Then the footer has a dark navy background (#283367)
-  And 4 link columns are visible: Top Products, Quick Links, Features, Resources
-  And a Newsletter column with email input and submit button is shown
-  And a bottom bar shows copyright text with heart icon and social links (Facebook, Twitter, Dribbble, Behance)
+#### Scenario: Footer shows 4 link columns and newsletter signup
 
-Scenario: Footer newsletter form is interactive
-  Given the footer is visible
-  When the user types an email into the newsletter input
-  Then the input value updates
-  And the submit button is clickable
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark navy background (#283367)
+- **AND** 4 link columns are visible: Top Products, Quick Links, Features, Resources
+- **AND** a Newsletter column with email input and submit button is shown
+- **AND** a bottom bar shows copyright text with heart icon and social links (Facebook, Twitter, Dribbble, Behance)
 
-Scenario: Footer links Component Dock
-  Given the footer is visible
-  Then the copyright area links to "https://www.componentdock.com/" branded as "Component Dock"
-```
+#### Scenario: Footer newsletter form is interactive
+
+- **GIVEN** the footer is visible
+- **WHEN** the user types an email into the newsletter input
+- **THEN** the input value updates
+- **AND** the submit button is clickable
+
+#### Scenario: Footer links Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** the copyright area links to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification Checklist
 

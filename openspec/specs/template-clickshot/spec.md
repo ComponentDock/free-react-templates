@@ -54,76 +54,94 @@ Recreation of ColorLib **Shotgear** — a photography studio / creative agency t
 - Blog: 3-column cards
 - Footer: 4-column (Our Service links, Contact Info, Instagram grid, Newsletter + social icons)
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-- **Scenario: Navbar renders with all navigation links**
-  - Given the user loads the page
-  - Then the navbar displays links: Home, About, Services, Portfolio, Blog, Pages, Contact
-  - And a cart/bag icon is visible
-  - And the navbar is responsive (collapses on mobile)
+
+#### Scenario: Navbar renders with all navigation links
+
+- **GIVEN** the user loads the page
+- **THEN** the navbar displays links: Home, About, Services, Portfolio, Blog, Pages, Contact
+- **AND** a cart/bag icon is visible
+- **AND** the navbar is responsive (collapses on mobile)
 
 ### Banner / Hero
-- **Scenario: Hero banner displays headline and CTA**
-  - Given the user is on the homepage
-  - Then a full-width hero banner is displayed with a background image
-  - And the text reads "Model Photography" (subtitle) and "Creative Studio" (headline)
-  - And a "view work" CTA button is visible
+
+#### Scenario: Hero banner displays headline and CTA
+
+- **GIVEN** the user is on the homepage
+- **THEN** a full-width hero banner is displayed with a background image
+- **AND** the text reads "Model Photography" (subtitle) and "Creative Studio" (headline)
+- **AND** a "view work" CTA button is visible
 
 ### About Us
-- **Scenario: About section displays studio description**
-  - Given the user scrolls to the About section
-  - Then the heading reads "About our studio"
-  - And a subheading quote about photography is displayed
-  - And body text describes the studio
-  - And a "read more" button is visible
+
+#### Scenario: About section displays studio description
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** the heading reads "About our studio"
+- **AND** a subheading quote about photography is displayed
+- **AND** body text describes the studio
+- **AND** a "read more" button is visible
 
 ### Gallery (Portfolio)
-- **Scenario: Gallery displays filterable portfolio grid**
-  - Given the user scrolls to the Gallery section
-  - Then a section title "Check latest work" is displayed
-  - And filter tabs are shown: All photos, Wedding, Fashion, Portrait, Magazine
-  - And 6 gallery items are displayed in a masonry grid
-  - And each gallery item shows a category label and title on hover
+
+#### Scenario: Gallery displays filterable portfolio grid
+
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a section title "Check latest work" is displayed
+- **AND** filter tabs are shown: All photos, Wedding, Fashion, Portrait, Magazine
+- **AND** 6 gallery items are displayed in a masonry grid
+- **AND** each gallery item shows a category label and title on hover
 
 ### Services
-- **Scenario: Services section displays photography offerings**
-  - Given the user scrolls to the Services section
-  - Then the heading reads "what we offer"
-  - And two service cards are shown: Wedding photography and Nature photography
-  - And each card has an icon, title, description, and "read more" button
-  - And each card has an accompanying image
+
+#### Scenario: Services section displays photography offerings
+
+- **GIVEN** the user scrolls to the Services section
+- **THEN** the heading reads "what we offer"
+- **AND** two service cards are shown: Wedding photography and Nature photography
+- **AND** each card has an icon, title, description, and "read more" button
+- **AND** each card has an accompanying image
 
 ### Reviews / Testimonials
-- **Scenario: Reviews section displays testimonial slider**
-  - Given the user scrolls to the Reviews section
-  - Then a testimonial slider is displayed
-  - And each slide shows a heading, quote text, and author name with title
-  - And a decorative image is shown alongside the slider
+
+#### Scenario: Reviews section displays testimonial slider
+
+- **GIVEN** the user scrolls to the Reviews section
+- **THEN** a testimonial slider is displayed
+- **AND** each slide shows a heading, quote text, and author name with title
+- **AND** a decorative image is shown alongside the slider
 
 ### Pricing
-- **Scenario: Pricing section displays three plans**
-  - Given the user scrolls to the Pricing section
-  - Then the heading reads "pricing plan"
-  - And 3 pricing cards are displayed in a row
-  - And each card shows a plan name, price ($50.00/mo), feature list, and "book Now" button
-  - And cards have white backgrounds with transparent borders
+
+#### Scenario: Pricing section displays three plans
+
+- **GIVEN** the user scrolls to the Pricing section
+- **THEN** the heading reads "pricing plan"
+- **AND** 3 pricing cards are displayed in a row
+- **AND** each card shows a plan name, price ($50.00/mo), feature list, and "book Now" button
+- **AND** cards have white backgrounds with transparent borders
 
 ### Blog
-- **Scenario: Blog section displays latest posts**
-  - Given the user scrolls to the Blog section
-  - Then the heading reads "Latest story"
-  - And 3 blog post cards are displayed
-  - And each card shows an image, author/date, title, and excerpt
+
+#### Scenario: Blog section displays latest posts
+
+- **GIVEN** the user scrolls to the Blog section
+- **THEN** the heading reads "Latest story"
+- **AND** 3 blog post cards are displayed
+- **AND** each card shows an image, author/date, title, and excerpt
 
 ### Footer
-- **Scenario: Footer displays contact info and newsletter**
-  - Given the user scrolls to the footer
-  - Then 4 columns are displayed: Our Service links, Contact Info, Instagram grid, Newsletter
-  - And social media icons (Facebook, Twitter, Instagram, Skype) are visible
-  - And a newsletter email input with submit button is present
-  - And a copyright bar is displayed at the bottom
-  - And the footer links to Component Dock (`https://www.componentdock.com/`)
+
+#### Scenario: Footer displays contact info and newsletter
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are displayed: Our Service links, Contact Info, Instagram grid, Newsletter
+- **AND** social media icons (Facebook, Twitter, Instagram, Skype) are visible
+- **AND** a newsletter email input with submit button is present
+- **AND** a copyright bar is displayed at the bottom
+- **AND** the footer links to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

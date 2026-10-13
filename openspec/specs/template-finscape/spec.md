@@ -71,162 +71,180 @@ FAQ accordion, blog, and contact form.
 - Open Sans font gives modern, clean feel
 - Bootstrap-derived grid; we use Tailwind equivalents
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Finscape — Finance/Banking Landing Template
 
-```gherkin
 Feature: Finscape Finance Landing Template
-  As a visitor to a financial services website
-  I want to learn about banking solutions, view services, and get in touch
-  So that I can choose financial products and contact support
+As a visitor to a financial services website
+I want to learn about banking solutions, view services, and get in touch
+So that I can choose financial products and contact support
 
-  Background:
-    Given the user visits the Finscape homepage
-    And the page is fully loaded
+Background:
+- **GIVEN** the user visits the Finscape homepage
+- **AND** the page is fully loaded
 
-  # ── Navbar ──
+**── Navbar ──**
 
-  Scenario: Navigation bar displays all section links
-    Then the navbar contains links for Home, About Us, Team, Pricing, FAQ, Gallery, Services, Testimonials, Blog, and Contact
-    And clicking each link scrolls to the corresponding section
-    And the navbar becomes sticky on scroll
+#### Scenario: Navigation bar displays all section links
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is 768px wide or less
-    When the user taps the hamburger icon
-    Then the mobile menu slides in with all navigation links
-    And tapping a link closes the menu and scrolls to the section
+- **THEN** the navbar contains links for Home, About Us, Team, Pricing, FAQ, Gallery, Services, Testimonials, Blog, and Contact
+- **AND** clicking each link scrolls to the corresponding section
+- **AND** the navbar becomes sticky on scroll
 
-  # ── Hero ──
+#### Scenario: Mobile hamburger menu
 
-  Scenario: Hero carousel displays three slides
-    Then the hero section shows a carousel with three slides
-    And slide 1 displays heading "Banking Solutions" with subtext and a "Get In Touch" CTA button
-    And slide 2 displays heading "Financing Solutions" with subtext and a "Get In Touch" CTA button
-    And slide 3 displays heading "Savings Accounts" with subtext and a "Get In Touch" CTA button
+- **GIVEN** the viewport is 768px wide or less
+- **WHEN** the user taps the hamburger icon
+- **THEN** the mobile menu slides in with all navigation links
+- **AND** tapping a link closes the menu and scrolls to the section
 
-  Scenario: Hero carousel auto-advances
-    Given the hero carousel is on slide 1
-    When 5 seconds elapse without user interaction
-    Then the carousel advances to slide 2
+**── Hero ──**
 
-  Scenario: Hero carousel manual navigation
-    When the user clicks the next arrow
-    Then the carousel advances to the next slide
-    When the user clicks the previous arrow
-    Then the carousel returns to the previous slide
+#### Scenario: Hero carousel displays three slides
 
-  Scenario: Hero has dark overlay on background image
-    Then the hero section has a dark semi-transparent overlay (rgba(0,0,0,0.7))
-    And the heading text is white and large
+- **THEN** the hero section shows a carousel with three slides
+- **AND** slide 1 displays heading "Banking Solutions" with subtext and a "Get In Touch" CTA button
+- **AND** slide 2 displays heading "Financing Solutions" with subtext and a "Get In Touch" CTA button
+- **AND** slide 3 displays heading "Savings Accounts" with subtext and a "Get In Touch" CTA button
 
-  # ── About / Stats ──
+#### Scenario: Hero carousel auto-advances
 
-  Scenario: About section displays company info and stats
-    Then the About section shows heading "About Us"
-    And subheading "We Solve Your Financial Problem"
-    And descriptive paragraph text about financial services
-    And 4 stat cards: Money Savings, Online Shoppings, Credit / Debit Cards, Banking Solutions Is Our Priority
+- **GIVEN** the hero carousel is on slide 1
+- **WHEN** 5 seconds elapse without user interaction
+- **THEN** the carousel advances to slide 2
 
-  # ── Team ──
+#### Scenario: Hero carousel manual navigation
 
-  Scenario: Team section shows 3 members
-    Then the Team section displays heading "Meet Team"
-    And 3 team member cards are shown
-    And each card shows name, role, and social media icon links
-    And team members: Kaiara Spencer (Accountant), Dave Simpson (Bank Teller), Ben Thompson (Bank Teller)
+- **WHEN** the user clicks the next arrow
+- **THEN** the carousel advances to the next slide
+- **WHEN** the user clicks the previous arrow
+- **THEN** the carousel returns to the previous slide
 
-  # ── Gallery ──
+#### Scenario: Hero has dark overlay on background image
 
-  Scenario: Gallery section shows image grid
-    Then the Gallery section displays heading "Gallery"
-    And a grid of 6 placeholder images is shown
-    And clicking an image opens a lightbox/fancybox overlay
+- **THEN** the hero section has a dark semi-transparent overlay (rgba(0,0,0,0.7))
+- **AND** the heading text is white and large
 
-  # ── How It Works ──
+**── About / Stats ──**
 
-  Scenario: How It Works shows 3 numbered steps
-    Then the How It Works section displays heading "How It Works"
-    And step 1: "Online Applications" with description and icon
-    And step 2: "Get an approval" with description and icon
-    And step 3: "Card delivery" with description and icon
+#### Scenario: About section displays company info and stats
 
-  # ── Services ──
+- **THEN** the About section shows heading "About Us"
+- **AND** subheading "We Solve Your Financial Problem"
+- **AND** descriptive paragraph text about financial services
+- **AND** 4 stat cards: Money Savings, Online Shoppings, Credit / Debit Cards, Banking Solutions Is Our Priority
 
-  Scenario: Services section lists 6 services
-    Then the Services section displays heading "Our Services"
-    And 6 service cards are shown in a grid
-    And services: Business Consulting, Credit Card, Income Monitoring, Insurance Consulting, Financial Investment, Financial Management
-    And each card has an icon, title, and short description
+**── Team ──**
 
-  # ── Testimonials ──
+#### Scenario: Team section shows 3 members
 
-  Scenario: Testimonials section shows customer reviews
-    Then the Testimonials section displays heading "Happy Customers"
-    And at least 2 testimonial cards are shown
-    And each card shows a quote, customer name, and role
+- **THEN** the Team section displays heading "Meet Team"
+- **AND** 3 team member cards are shown
+- **AND** each card shows name, role, and social media icon links
+- **AND** team members: Kaiara Spencer (Accountant), Dave Simpson (Bank Teller), Ben Thompson (Bank Teller)
 
-  # ── Pricing ──
+**── Gallery ──**
 
-  Scenario: Pricing section shows 3 tiers
-    Then the Pricing section displays heading "Pricing"
-    And 3 pricing cards are shown: Basic ($47/year), Premium ($200/year), Professional ($750/year)
-    And each card shows price, feature list, and a "Buy Now" CTA button
-    And the Premium card is highlighted/popular
+#### Scenario: Gallery section shows image grid
 
-  # ── FAQ ──
+- **THEN** the Gallery section displays heading "Gallery"
+- **AND** a grid of 6 placeholder images is shown
+- **AND** clicking an image opens a lightbox/fancybox overlay
 
-  Scenario: FAQ section displays accordion
-    Then the FAQ section displays heading "Frequently Ask Questions"
-    And at least 4 FAQ items are shown as an accordion
-    And clicking a question expands the answer
-    And only one answer is expanded at a time
+**── How It Works ──**
 
-  # ── Blog ──
+#### Scenario: How It Works shows 3 numbered steps
 
-  Scenario: Blog section shows 3 posts
-    Then the Blog section displays heading "Our Blog"
-    And 3 blog post cards are shown
-    And each card shows an image, title, date, and excerpt
-    And clicking a post navigates to the full post (or placeholder)
+- **THEN** the How It Works section displays heading "How It Works"
+- **AND** step 1: "Online Applications" with description and icon
+- **AND** step 2: "Get an approval" with description and icon
+- **AND** step 3: "Card delivery" with description and icon
 
-  # ── Contact ──
+**── Services ──**
 
-  Scenario: Contact section with form and info
-    Then the Contact section displays heading "Contact Us"
-    And contact info: address, phone number, and email
-    And a contact form with First Name, Last Name, Email, Subject, and Message fields
-    And a "Send" submit button
+#### Scenario: Services section lists 6 services
 
-  Scenario: Contact form validation
-    When the user submits the form with empty required fields
-    Then validation errors are shown for required fields
+- **THEN** the Services section displays heading "Our Services"
+- **AND** 6 service cards are shown in a grid
+- **AND** services: Business Consulting, Credit Card, Income Monitoring, Insurance Consulting, Financial Investment, Financial Management
+- **AND** each card has an icon, title, and short description
 
-  # ── Footer ──
+**── Testimonials ──**
 
-  Scenario: Footer contains company info, links, and newsletter
-    Then the footer has 4 columns: About Us, Quick Links, Follow Us, Subscribe Newsletter
-    And the About Us column has a short description
-    And Quick Links has Terms, Policy, About Us, Services, Testimonials, Contact Us
-    And Follow Us has social media icon links
-    And Subscribe Newsletter has an email input and Send button
-    And the copyright line links to https://www.componentdock.com/
+#### Scenario: Testimonials section shows customer reviews
 
-  # ── Responsive ──
+- **THEN** the Testimonials section displays heading "Happy Customers"
+- **AND** at least 2 testimonial cards are shown
+- **AND** each card shows a quote, customer name, and role
 
-  Scenario: Mobile responsive layout
-    Given the viewport is 375px wide
-    Then all sections stack vertically
-    And the navbar collapses to a hamburger menu
-    And pricing cards stack vertically
-    And the team grid shows 1 card per row
+**── Pricing ──**
 
-  Scenario: Tablet responsive layout
-    Given the viewport is 768px wide
-    Then the layout uses 2-column grids where appropriate
-    And the navbar shows all links (or hamburger if needed)
-```
+#### Scenario: Pricing section shows 3 tiers
+
+- **THEN** the Pricing section displays heading "Pricing"
+- **AND** 3 pricing cards are shown: Basic ($47/year), Premium ($200/year), Professional ($750/year)
+- **AND** each card shows price, feature list, and a "Buy Now" CTA button
+- **AND** the Premium card is highlighted/popular
+
+**── FAQ ──**
+
+#### Scenario: FAQ section displays accordion
+
+- **THEN** the FAQ section displays heading "Frequently Ask Questions"
+- **AND** at least 4 FAQ items are shown as an accordion
+- **AND** clicking a question expands the answer
+- **AND** only one answer is expanded at a time
+
+**── Blog ──**
+
+#### Scenario: Blog section shows 3 posts
+
+- **THEN** the Blog section displays heading "Our Blog"
+- **AND** 3 blog post cards are shown
+- **AND** each card shows an image, title, date, and excerpt
+- **AND** clicking a post navigates to the full post (or placeholder)
+
+**── Contact ──**
+
+#### Scenario: Contact section with form and info
+
+- **THEN** the Contact section displays heading "Contact Us"
+- **AND** contact info: address, phone number, and email
+- **AND** a contact form with First Name, Last Name, Email, Subject, and Message fields
+- **AND** a "Send" submit button
+
+#### Scenario: Contact form validation
+
+- **WHEN** the user submits the form with empty required fields
+- **THEN** validation errors are shown for required fields
+
+**── Footer ──**
+
+#### Scenario: Footer contains company info, links, and newsletter
+
+- **THEN** the footer has 4 columns: About Us, Quick Links, Follow Us, Subscribe Newsletter
+- **AND** the About Us column has a short description
+- **AND** Quick Links has Terms, Policy, About Us, Services, Testimonials, Contact Us
+- **AND** Follow Us has social media icon links
+- **AND** Subscribe Newsletter has an email input and Send button
+- **AND** the copyright line links to https://www.componentdock.com/
+
+**── Responsive ──**
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** all sections stack vertically
+- **AND** the navbar collapses to a hamburger menu
+- **AND** pricing cards stack vertically
+- **AND** the team grid shows 1 card per row
+
+#### Scenario: Tablet responsive layout
+
+- **GIVEN** the viewport is 768px wide
+- **THEN** the layout uses 2-column grids where appropriate
+- **AND** the navbar shows all links (or hamburger if needed)
 
 ## Verification checklist
 

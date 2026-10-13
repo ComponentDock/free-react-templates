@@ -51,156 +51,150 @@ newsletter email input.
 9. Blog (3-column cards with author/date)
 10. Footer (About Us, Newsletter, Follow Us social icons)
 
-## Gherkin requirements
+## Requirements
 
 ### Header
 
-```gherkin
 Feature: Header
 
-  Scenario: Top bar displays social icons, phone, and email
-    Given the page loads
-    Then a dark top bar shows social icons (Facebook, Twitter, Dribbble, Behance)
-    And a phone number "+880 012 3654 896" is displayed
-    And an email "support@colorlib.com" is displayed
+#### Scenario: Top bar displays social icons, phone, and email
 
-  Scenario: Navigation menu renders all links
-    Given the page loads
-    Then a navigation bar shows logo and links: Home, About, Service, Projects, Blog, Contact
-    And "Blog" has a dropdown with Blog Home and Blog Single
-    And the currently active page link is highlighted
-```
+- **GIVEN** the page loads
+- **THEN** a dark top bar shows social icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** a phone number "+880 012 3654 896" is displayed
+- **AND** an email "support@colorlib.com" is displayed
+
+#### Scenario: Navigation menu renders all links
+
+- **GIVEN** the page loads
+- **THEN** a navigation bar shows logo and links: Home, About, Service, Projects, Blog, Contact
+- **AND** "Blog" has a dropdown with Blog Home and Blog Single
+- **AND** the currently active page link is highlighted
 
 ### Banner/Hero
 
-```gherkin
 Feature: Banner/Hero
 
-  Scenario: Hero section shows heading and CTA
-    Given the banner is visible
-    Then a subtitle "Don't look further, here is the key" appears
-    And heading "We're Industrial solution" is displayed
-    And a paragraph of descriptive text is shown
-    And a "Get Started" button with pill shape and amber background is present
+#### Scenario: Hero section shows heading and CTA
 
-  Scenario: Hero has a background image with dark overlay
-    Given the banner is visible
-    Then a background image covers the hero area
-    And a semi-transparent dark overlay sits on top of the image
-```
+- **GIVEN** the banner is visible
+- **THEN** a subtitle "Don't look further, here is the key" appears
+- **AND** heading "We're Industrial solution" is displayed
+- **AND** a paragraph of descriptive text is shown
+- **AND** a "Get Started" button with pill shape and amber background is present
+
+#### Scenario: Hero has a background image with dark overlay
+
+- **GIVEN** the banner is visible
+- **THEN** a background image covers the hero area
+- **AND** a semi-transparent dark overlay sits on top of the image
 
 ### Features
 
-```gherkin
 Feature: Features (Hexagon Icons)
 
-  Scenario: Three feature cards are displayed
-    Given the features section is visible
-    Then 3 hexagon icon cards are shown in a row
-    And each card has a title: "Maintenance", "Residential Service", "Commercial Service"
-    And each card has a descriptive paragraph
-```
+#### Scenario: Three feature cards are displayed
+
+- **GIVEN** the features section is visible
+- **THEN** 3 hexagon icon cards are shown in a row
+- **AND** each card has a title: "Maintenance", "Residential Service", "Commercial Service"
+- **AND** each card has a descriptive paragraph
 
 ### About
 
-```gherkin
 Feature: About Section
 
-  Scenario: About section shows text and quote form
-    Given the about section is visible
-    Then left side displays an accent subtitle "Brand new app to blow your mind"
-    And heading "We've made a life that will change you"
-    And descriptive paragraphs and a "Get Started Now" button
-    And right side displays a dark-background "Request a Quote" form
-    And the form has a service dropdown, name, phone, email inputs, textarea, and submit button
+#### Scenario: About section shows text and quote form
 
-  Scenario: Quote form is interactive
-    Given the quote form is visible
-    When user selects a service from the dropdown
-    And fills in name, phone, email, and message
-    And clicks "Request Free Quote"
-    Then the form should validate required fields
-```
+- **GIVEN** the about section is visible
+- **THEN** left side displays an accent subtitle "Brand new app to blow your mind"
+- **AND** heading "We've made a life that will change you"
+- **AND** descriptive paragraphs and a "Get Started Now" button
+- **AND** right side displays a dark-background "Request a Quote" form
+- **AND** the form has a service dropdown, name, phone, email inputs, textarea, and submit button
+
+#### Scenario: Quote form is interactive
+
+- **GIVEN** the quote form is visible
+- **WHEN** user selects a service from the dropdown
+- **AND** fills in name, phone, email, and message
+- **AND** clicks "Request Free Quote"
+- **THEN** the form should validate required fields
 
 ### Services
 
-```gherkin
 Feature: Services Section
 
-  Scenario: Three service cards with images
-    Given the services section is visible
-    Then heading "Our Capturing Market Sectors" is displayed
-    And 3 image cards are shown: "Automotive Engineering", "Construction & Engineering", "Industrial Engineering"
-    And each card has an image, title, and descriptive paragraph
-```
+#### Scenario: Three service cards with images
+
+- **GIVEN** the services section is visible
+- **THEN** heading "Our Capturing Market Sectors" is displayed
+- **AND** 3 image cards are shown: "Automotive Engineering", "Construction & Engineering", "Industrial Engineering"
+- **AND** each card has an image, title, and descriptive paragraph
 
 ### Stats/Counter
 
-```gherkin
 Feature: Stats Counter
 
-  Scenario: Four statistics are displayed
-    Given the stats section is visible
-    Then 4 counters are shown: "2K+ Projects Completed", "5.5K Total Employees", "959 Happy Clients", "367 Tickets Submitted"
-    And each has a circular ring decoration
-    And the section has a dark overlay background
-```
+#### Scenario: Four statistics are displayed
+
+- **GIVEN** the stats section is visible
+- **THEN** 4 counters are shown: "2K+ Projects Completed", "5.5K Total Employees", "959 Happy Clients", "367 Tickets Submitted"
+- **AND** each has a circular ring decoration
+- **AND** the section has a dark overlay background
 
 ### Projects
 
-```gherkin
 Feature: Projects Gallery
 
-  Scenario: Asymmetric project grid
-    Given the projects section is visible
-    Then heading "Latest Finished Projects" is displayed
-    And 4 project images are shown in an asymmetric grid
-    And the grid has one large image, one medium, and two equal-width images
-```
+#### Scenario: Asymmetric project grid
+
+- **GIVEN** the projects section is visible
+- **THEN** heading "Latest Finished Projects" is displayed
+- **AND** 4 project images are shown in an asymmetric grid
+- **AND** the grid has one large image, one medium, and two equal-width images
 
 ### Feedback/Testimonials
 
-```gherkin
 Feature: Feedback/Testimonials
 
-  Scenario: Testimonial carousel with video
-    Given the feedback section is visible
-    Then heading "Enjoy our Client's Feedback" is shown
-    And a video play button is displayed on the left
-    And a review carousel on the right shows reviewer name, star rating, and testimonial text
-    And the section has a dark overlay background
+#### Scenario: Testimonial carousel with video
 
-  Scenario: Carousel cycles through reviews
-    Given the feedback section is visible
-    When the carousel advances
-    Then the next review slides in with name, stars, and text
-```
+- **GIVEN** the feedback section is visible
+- **THEN** heading "Enjoy our Client's Feedback" is shown
+- **AND** a video play button is displayed on the left
+- **AND** a review carousel on the right shows reviewer name, star rating, and testimonial text
+- **AND** the section has a dark overlay background
+
+#### Scenario: Carousel cycles through reviews
+
+- **GIVEN** the feedback section is visible
+- **WHEN** the carousel advances
+- **THEN** the next review slides in with name, stars, and text
 
 ### Blog
 
-```gherkin
 Feature: Blog Section
 
-  Scenario: Three blog cards
-    Given the blog section is visible
-    Then heading "Latest posts from our Blog" is displayed
-    And 3 blog cards are shown in a row
-    And each card has a thumbnail image, author avatar + name, date, like count, comment count, title, and excerpt
-```
+#### Scenario: Three blog cards
+
+- **GIVEN** the blog section is visible
+- **THEN** heading "Latest posts from our Blog" is displayed
+- **AND** 3 blog cards are shown in a row
+- **AND** each card has a thumbnail image, author avatar + name, date, like count, comment count, title, and excerpt
 
 ### Footer
 
-```gherkin
 Feature: Footer
 
-  Scenario: Footer has three columns
-    Given the footer is visible
-    Then a dark navy background (#04091e) is applied
-    And column 1 shows "About Us" with description and copyright
-    And column 2 shows "Newsletter" with email input and submit arrow
-    And column 3 shows "Follow Us" with social icons (Facebook, Twitter, Dribbble, Behance)
-    And the copyright includes a link to Component Dock
-```
+#### Scenario: Footer has three columns
+
+- **GIVEN** the footer is visible
+- **THEN** a dark navy background (#04091e) is applied
+- **AND** column 1 shows "About Us" with description and copyright
+- **AND** column 2 shows "Newsletter" with email input and submit arrow
+- **AND** column 3 shows "Follow Us" with social icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** the copyright includes a link to Component Dock
 
 ## Verification checklist
 

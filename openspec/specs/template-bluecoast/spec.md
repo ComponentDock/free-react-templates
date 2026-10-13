@@ -39,139 +39,145 @@ Extracted from `styles/main_styles.css` on the live preview:
 7. **Newsletter** — Parallax background image with blue-green gradient overlay. Left: title "Are you buying or selling?" + subtitle. Right: email input + "subscribe now" button.
 8. **Footer** — Dark background. Row 1: logo + "Latest Properties" title. Row 2: about text + 3 latest property listings (thumbnail, location, name, price). Bottom bar: copyright + nav links + phone number. Footer MUST link `https://www.componentdock.com/`.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Header Navigation
 
-```gherkin
-Scenario: Logo is visible in the header
-  Given I am on the BlueCoast homepage
-  Then I see the site logo in the header
+#### Scenario: Logo is visible in the header
 
-Scenario: Navigation links are present
-  Given I am on the BlueCoast homepage
-  Then I see nav links for "Home", "About us", "Properties", "News", "Contact"
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see the site logo in the header
 
-Scenario: Phone number is displayed
-  Given I am on the BlueCoast homepage
-  Then I see a phone number in the header
+#### Scenario: Navigation links are present
 
-Scenario: Mobile menu toggle exists
-  Given I am on the BlueCoast homepage on a mobile viewport
-  Then I see a hamburger menu icon
-  And clicking it opens a fullscreen overlay menu
-```
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see nav links for "Home", "About us", "Properties", "News", "Contact"
+
+#### Scenario: Phone number is displayed
+
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see a phone number in the header
+
+#### Scenario: Mobile menu toggle exists
+
+- **GIVEN** I am on the BlueCoast homepage on a mobile viewport
+- **THEN** I see a hamburger menu icon
+- **AND** clicking it opens a fullscreen overlay menu
 
 ### Feature: Hero Slider
 
-```gherkin
-Scenario: Hero slider displays property slides
-  Given I am on the BlueCoast homepage
-  Then I see a hero carousel with background images
+#### Scenario: Hero slider displays property slides
 
-Scenario: Each slide shows property details
-  Given I view a hero slide
-  Then I see a subtitle (e.g. "super offer")
-  And I see a title (e.g. "Villa with sea view")
-  And I see property features (sqft, bedrooms, bathrooms)
-  And I see a price
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see a hero carousel with background images
 
-Scenario: Slides can be navigated
-  Given I am on the BlueCoast homepage
-  When I click the next slide indicator
-  Then the carousel advances to the next slide
-```
+#### Scenario: Each slide shows property details
+
+- **GIVEN** I view a hero slide
+- **THEN** I see a subtitle (e.g. "super offer")
+- **AND** I see a title (e.g. "Villa with sea view")
+- **AND** I see property features (sqft, bedrooms, bathrooms)
+- **AND** I see a price
+
+#### Scenario: Slides can be navigated
+
+- **GIVEN** I am on the BlueCoast homepage
+- **WHEN** I click the next slide indicator
+- **THEN** the carousel advances to the next slide
 
 ### Feature: Property Search
 
-```gherkin
-Scenario: Search form is displayed below the hero
-  Given I am on the BlueCoast homepage
-  Then I see a search form with filter dropdowns
+#### Scenario: Search form is displayed below the hero
 
-Scenario: Search form has all filter fields
-  Given I see the search form
-  Then I see selects for "For rent", "All types", "City", "Bedrooms", "Bathrooms"
-  And I see a "search" button
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see a search form with filter dropdowns
 
-Scenario: Search button has gradient styling
-  Given I see the search form
-  Then the "search" button has a blue-to-green gradient background
-```
+#### Scenario: Search form has all filter fields
+
+- **GIVEN** I see the search form
+- **THEN** I see selects for "For rent", "All types", "City", "Bedrooms", "Bathrooms"
+- **AND** I see a "search" button
+
+#### Scenario: Search button has gradient styling
+
+- **GIVEN** I see the search form
+- **THEN** the "search" button has a blue-to-green gradient background
 
 ### Feature: Recent Properties
 
-```gherkin
-Scenario: Recent properties section is present
-  Given I am on the BlueCoast homepage
-  Then I see a section titled "Recent Properties"
+#### Scenario: Recent properties section is present
 
-Scenario: Property cards display key details
-  Given I see the recent properties section
-  Then I see at least 3 property cards
-  And each card shows an image, price, location, and feature icons
-```
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see a section titled "Recent Properties"
+
+#### Scenario: Property cards display key details
+
+- **GIVEN** I see the recent properties section
+- **THEN** I see at least 3 property cards
+- **AND** each card shows an image, price, location, and feature icons
 
 ### Feature: Cities Grid
 
-```gherkin
-Scenario: Cities section is present
-  Given I am on the BlueCoast homepage
-  Then I see a section titled "Find properties in these cities"
+#### Scenario: Cities section is present
 
-Scenario: City cards show location and pricing
-  Given I see the cities grid
-  Then I see at least 8 city cards
-  And each card shows a city name and rental price on a dark overlay
-```
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see a section titled "Find properties in these cities"
+
+#### Scenario: City cards show location and pricing
+
+- **GIVEN** I see the cities grid
+- **THEN** I see at least 8 city cards
+- **AND** each card shows a city name and rental price on a dark overlay
 
 ### Feature: Testimonials
 
-```gherkin
-Scenario: Testimonials section is present
-  Given I am on the BlueCoast homepage
-  Then I see a section titled "What our clients say"
+#### Scenario: Testimonials section is present
 
-Scenario: Testimonial cards show author info
-  Given I see the testimonials section
-  Then I see at least 3 testimonial cards
-  And each card shows a title, text, author image, author name, and star rating
-```
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see a section titled "What our clients say"
+
+#### Scenario: Testimonial cards show author info
+
+- **GIVEN** I see the testimonials section
+- **THEN** I see at least 3 testimonial cards
+- **AND** each card shows a title, text, author image, author name, and star rating
 
 ### Feature: Newsletter
 
-```gherkin
-Scenario: Newsletter section has parallax background
-  Given I am on the BlueCoast homepage
-  Then I see a newsletter section with a parallax background image
+#### Scenario: Newsletter section has parallax background
 
-Scenario: Newsletter has email signup form
-  Given I see the newsletter section
-  Then I see a title "Are you buying or selling?"
-  And I see an email input field
-  And I see a "subscribe now" button
-```
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see a newsletter section with a parallax background image
+
+#### Scenario: Newsletter has email signup form
+
+- **GIVEN** I see the newsletter section
+- **THEN** I see a title "Are you buying or selling?"
+- **AND** I see an email input field
+- **AND** I see a "subscribe now" button
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has logo and latest properties
-  Given I am on the BlueCoast homepage
-  Then I see the footer with a logo and "Latest Properties" section
+#### Scenario: Footer has logo and latest properties
 
-Scenario: Footer has about text and property listings
-  Given I see the footer
-  Then I see an about paragraph
-  And I see 3 latest property listings with thumbnail, location, name, and price
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** I see the footer with a logo and "Latest Properties" section
 
-Scenario: Footer has navigation and contact info
-  Given I see the footer
-  Then I see footer nav links and a phone number
+#### Scenario: Footer has about text and property listings
 
-Scenario: Footer links to Component Dock
-  Given I am on the BlueCoast homepage
-  Then the footer contains a link to "https://www.componentdock.com/"
-```
+- **GIVEN** I see the footer
+- **THEN** I see an about paragraph
+- **AND** I see 3 latest property listings with thumbnail, location, name, and price
+
+#### Scenario: Footer has navigation and contact info
+
+- **GIVEN** I see the footer
+- **THEN** I see footer nav links and a phone number
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I am on the BlueCoast homepage
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
 
 ## Verification Checklist
 

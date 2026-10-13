@@ -78,123 +78,150 @@ Extracted from live preview CSS (`css/style.css`) and screenshot analysis:
 11. **Newsletter** — parallax background image, heading, description, email input + Subscribe button
 12. **Footer** — dark bg `#252a2b`, 4 columns (brand + social, Buy links, Sell links, Contact), copyright bar at bottom
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Premises — Real Estate Template
 
-```gherkin
 Feature: Premises real estate template
-  As a visitor to the Premises real estate site
-  I want to browse properties, search, and contact agents
-  So that I can find and purchase/rent real estate
+As a visitor to the Premises real estate site
+I want to browse properties, search, and contact agents
+So that I can find and purchase/rent real estate
 
-  Background:
-    Given the template is loaded at the root URL
+Background:
+- **GIVEN** the template is loaded at the root URL
 
-  # --- Top Bar ---
-  Scenario: Top bar displays social icons and phone number
-    Then I see social media icons (Facebook, Twitter, Google, Pinterest) on the left
-    And I see a phone number on the right
-    And the top bar has a dark background (#252a2b)
+**--- Top Bar ---**
 
-  # --- Navbar ---
-  Scenario: Navbar displays brand and navigation links
-    Then I see the brand "Premises" (split styled)
-    And I see navigation links: Home, Property, Agents, About, Blog, Contact
-    And I see Sign-In and Sign-Up buttons on the right
-    And the navbar has a dark background
+#### Scenario: Top bar displays social icons and phone number
 
-  Scenario: Navbar becomes sticky on scroll
-    When I scroll down the page
-    Then the navbar remains fixed at the top
-    And the navbar background becomes slightly lighter on scroll
+- **THEN** I see social media icons (Facebook, Twitter, Google, Pinterest) on the left
+- **AND** I see a phone number on the right
+- **AND** the top bar has a dark background (#252a2b)
 
-  # --- Hero Slider ---
-  Scenario: Hero slider shows property images with overlay card
-    Then I see a full-width property image with a dark overlay
-    And I see a property title, location, description, and price
-    And I see a "View Details" button
+**--- Navbar ---**
 
-  Scenario: Hero slider has multiple slides
-    Then I see multiple property slides
-    And navigation dots or arrows allow slide switching
+#### Scenario: Navbar displays brand and navigation links
 
-  # --- Search Property ---
-  Scenario: Search bar provides property search form
-    Then I see a "Search Property" heading
-    And I see form fields: Keyword, Location, Property Type, Property Status
-    And I see fields: Min Beds, Min Bathroom, Min Price, Max Price, Min Area, Max Area
-    And I see a "Search" button
+- **THEN** I see the brand "Premises" (split styled)
+- **AND** I see navigation links: Home, Property, Agents, About, Blog, Contact
+- **AND** I see Sign-In and Sign-Up buttons on the right
+- **AND** the navbar has a dark background
 
-  Scenario: Search form fields are interactive
-    When I type in the Keyword field
-    Then the field accepts text input
-    When I select from the Property Type dropdown
-    Then the dropdown shows options (Commercial, Residential, Villa, Condominium, Apartment)
+#### Scenario: Navbar becomes sticky on scroll
 
-  # --- Services/Features ---
-  Scenario: Services section displays four feature cards
-    Then I see four feature cards in a row
-    And each card has an icon, heading, and short description
-    And the features are: Find Places, Agents With Experience, Buy & Rent, Making Money
+- **WHEN** I scroll down the page
+- **THEN** the navbar remains fixed at the top
+- **AND** the navbar background becomes slightly lighter on scroll
 
-  # --- Recent Properties ---
-  Scenario: Recent properties grid displays property cards
-    Then I see a "Recent Properties" heading
-    And I see a grid of property cards
-    And each card has an image, title, location, and price
-    And the price is displayed in orange (#f05d23)
+**--- Hero Slider ---**
 
-  # --- Most Recommended Properties ---
-  Scenario: Recommended properties section displays cards
-    Then I see a "Most Recommended Properties" heading
-    And I see a grid of property cards
-    And each card has an image, title, location, and price
+#### Scenario: Hero slider shows property images with overlay card
 
-  # --- Counter/Stats ---
-  Scenario: Stats section shows key metrics
-    Then I see a "Some fun facts" heading
-    And I see four statistics with animated counters
-    And the stats are: Happy Customers (9,000), Properties (10,000), Agents (1,000), Awards (500)
-    And the section has a background image with overlay
+- **THEN** I see a full-width property image with a dark overlay
+- **AND** I see a property title, location, description, and price
+- **AND** I see a "View Details" button
 
-  # --- Testimonials ---
-  Scenario: Testimonials carousel shows client quotes
-    Then I see a testimonial carousel
-    And each testimonial has a quote, user image, author name, and position
-    And carousel navigation allows switching between testimonials
+#### Scenario: Hero slider has multiple slides
 
-  # --- Blog ---
-  Scenario: Blog section displays recent posts
-    Then I see a "Recent Blog" heading
-    And I see four blog cards
-    And each card has an image, title, date, author, and comment count
+- **THEN** I see multiple property slides
+- **AND** navigation dots or arrows allow slide switching
 
-  # --- Newsletter ---
-  Scenario: Newsletter section has email subscription form
-    Then I see a "Subscribe to our Newsletter" heading
-    And I see a description paragraph
-    And I see an email input field and a "Subscribe" button
-    And the section has a parallax background image
+**--- Search Property ---**
 
-  # --- Footer ---
-  Scenario: Footer displays brand info, links, and social
-    Then I see the brand name "Premises" in the footer
-    And I see social media icons (Twitter, Facebook, Instagram)
-    And I see Buy links (Home For Sale, Open Houses, New Listing, Recently Reduce, Off-Market Homes)
-    And I see Sell links (Sell Your Home, Get A Home Valuation, Local Home Prices, Guides & Rules)
-    And I see contact information
-    And the footer links to "https://www.componentdock.com/" (Component Dock)
-    And the footer has a dark background (#252a2b)
+#### Scenario: Search bar provides property search form
 
-  # --- Responsive ---
-  Scenario: Template is responsive on mobile
-    When I view the page on a mobile viewport
-    Then the navbar collapses to a hamburger menu
-    And the search form stacks vertically
-    And property cards stack in a single column
-    And the footer columns stack vertically
-```
+- **THEN** I see a "Search Property" heading
+- **AND** I see form fields: Keyword, Location, Property Type, Property Status
+- **AND** I see fields: Min Beds, Min Bathroom, Min Price, Max Price, Min Area, Max Area
+- **AND** I see a "Search" button
+
+#### Scenario: Search form fields are interactive
+
+- **WHEN** I type in the Keyword field
+- **THEN** the field accepts text input
+- **WHEN** I select from the Property Type dropdown
+- **THEN** the dropdown shows options (Commercial, Residential, Villa, Condominium, Apartment)
+
+**--- Services/Features ---**
+
+#### Scenario: Services section displays four feature cards
+
+- **THEN** I see four feature cards in a row
+- **AND** each card has an icon, heading, and short description
+- **AND** the features are: Find Places, Agents With Experience, Buy & Rent, Making Money
+
+**--- Recent Properties ---**
+
+#### Scenario: Recent properties grid displays property cards
+
+- **THEN** I see a "Recent Properties" heading
+- **AND** I see a grid of property cards
+- **AND** each card has an image, title, location, and price
+- **AND** the price is displayed in orange (#f05d23)
+
+**--- Most Recommended Properties ---**
+
+#### Scenario: Recommended properties section displays cards
+
+- **THEN** I see a "Most Recommended Properties" heading
+- **AND** I see a grid of property cards
+- **AND** each card has an image, title, location, and price
+
+**--- Counter/Stats ---**
+
+#### Scenario: Stats section shows key metrics
+
+- **THEN** I see a "Some fun facts" heading
+- **AND** I see four statistics with animated counters
+- **AND** the stats are: Happy Customers (9,000), Properties (10,000), Agents (1,000), Awards (500)
+- **AND** the section has a background image with overlay
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials carousel shows client quotes
+
+- **THEN** I see a testimonial carousel
+- **AND** each testimonial has a quote, user image, author name, and position
+- **AND** carousel navigation allows switching between testimonials
+
+**--- Blog ---**
+
+#### Scenario: Blog section displays recent posts
+
+- **THEN** I see a "Recent Blog" heading
+- **AND** I see four blog cards
+- **AND** each card has an image, title, date, author, and comment count
+
+**--- Newsletter ---**
+
+#### Scenario: Newsletter section has email subscription form
+
+- **THEN** I see a "Subscribe to our Newsletter" heading
+- **AND** I see a description paragraph
+- **AND** I see an email input field and a "Subscribe" button
+- **AND** the section has a parallax background image
+
+**--- Footer ---**
+
+#### Scenario: Footer displays brand info, links, and social
+
+- **THEN** I see the brand name "Premises" in the footer
+- **AND** I see social media icons (Twitter, Facebook, Instagram)
+- **AND** I see Buy links (Home For Sale, Open Houses, New Listing, Recently Reduce, Off-Market Homes)
+- **AND** I see Sell links (Sell Your Home, Get A Home Valuation, Local Home Prices, Guides & Rules)
+- **AND** I see contact information
+- **AND** the footer links to "https://www.componentdock.com/" (Component Dock)
+- **AND** the footer has a dark background (#252a2b)
+
+**--- Responsive ---**
+
+#### Scenario: Template is responsive on mobile
+
+- **WHEN** I view the page on a mobile viewport
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the search form stacks vertically
+- **AND** property cards stack in a single column
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

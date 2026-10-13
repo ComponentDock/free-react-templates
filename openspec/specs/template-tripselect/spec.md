@@ -84,118 +84,96 @@ and preview URL are recorded below.
   - Tag close button: positioned top 9px, right 8px
   - Widget spacing: `mb-3` between rows (Bootstrap margin-bottom 1rem)
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders with centered heading and three widgets
+### Feature: Tripselect template behaviour
 
-```gherkin
-Given the user opens the Tripselect page
-Then a centered heading "Multi-Select #10 (Limit to 5)" is visible
-And three multi-select widgets are displayed in stacked rows
-And each widget is centered in a col-md-5 column
-```
+#### Scenario: Page renders with centered heading and three widgets
 
-### Scenario: Each widget shows placeholder text
+- **GIVEN** the user opens the Tripselect page
+- **THEN** a centered heading "Multi-Select #10 (Limit to 5)" is visible
+- **AND** three multi-select widgets are displayed in stacked rows
+- **AND** each widget is centered in a col-md-5 column
 
-```gherkin
-Given the user opens the Tripselect page
-Then each of the three widgets shows the placeholder text "Select Categories"
-And no items are selected in any widget
-```
+#### Scenario: Each widget shows placeholder text
 
-### Scenario: Opening a widget shows dropdown with 8 options
+- **GIVEN** the user opens the Tripselect page
+- **THEN** each of the three widgets shows the placeholder text "Select Categories"
+- **AND** no items are selected in any widget
 
-```gherkin
-Given the user clicks the first multi-select widget
-Then a dropdown list opens below the widget
-And the dropdown contains exactly 8 options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
-And each option is clickable to select
-```
+#### Scenario: Opening a widget shows dropdown with 8 options
 
-### Scenario: Selecting items creates colored tags
+- **GIVEN** the user clicks the first multi-select widget
+- **THEN** a dropdown list opens below the widget
+- **AND** the dropdown contains exactly 8 options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
+- **AND** each option is clickable to select
 
-```gherkin
-Given the user clicks the first widget
-When the user clicks "Design"
-Then a tag "Design" appears in the container with an "x" close button
-And the tag has a beige background (#e5e4cc)
-When the user clicks "HTML5"
-Then a second tag "HTML5" appears next to the first
-```
+#### Scenario: Selecting items creates colored tags
 
-### Scenario: Each widget has distinct tag colors
+- **GIVEN** the user clicks the first widget
+- **WHEN** the user clicks "Design"
+- **THEN** a tag "Design" appears in the container with an "x" close button
+- **AND** the tag has a beige background (#e5e4cc)
+- **WHEN** the user clicks "HTML5"
+- **THEN** a second tag "HTML5" appears next to the first
 
-```gherkin
-Given the user selects "Design" in widget 1
-And selects "Design" in widget 2
-And selects "Design" in widget 3
-Then widget 1 shows the tag in beige (#e5e4cc)
-And widget 2 shows the tag in green (#c7f0db)
-And widget 3 shows the tag in blue (#d3f4ff)
-```
+#### Scenario: Each widget has distinct tag colors
 
-### Scenario: Selection limit of 5 is enforced
+- **GIVEN** the user selects "Design" in widget 1
+- **AND** selects "Design" in widget 2
+- **AND** selects "Design" in widget 3
+- **THEN** widget 1 shows the tag in beige (#e5e4cc)
+- **AND** widget 2 shows the tag in green (#c7f0db)
+- **AND** widget 3 shows the tag in blue (#d3f4ff)
 
-```gherkin
-Given the user has selected 5 items in the first widget
-When the user tries to select a 6th item
-Then the 6th item is not added as a tag
-And the 5 existing tags remain visible
-```
+#### Scenario: Selection limit of 5 is enforced
 
-### Scenario: Deselecting items via tag close button
+- **GIVEN** the user has selected 5 items in the first widget
+- **WHEN** the user tries to select a 6th item
+- **THEN** the 6th item is not added as a tag
+- **AND** the 5 existing tags remain visible
 
-```gherkin
-Given the user has selected "Design" and "HTML5" in the first widget
-When the user clicks the "x" on the "Design" tag
-Then the "Design" tag is removed from the container
-And "Design" reappears in the dropdown option list
-```
+#### Scenario: Deselecting items via tag close button
 
-### Scenario: Search filtering within a widget
+- **GIVEN** the user has selected "Design" and "HTML5" in the first widget
+- **WHEN** the user clicks the "x" on the "Design" tag
+- **THEN** the "Design" tag is removed from the container
+- **AND** "Design" reappears in the dropdown option list
 
-```gherkin
-Given the user clicks the first multi-select widget
-When the user types "boot" in the search input
-Then only options matching "boot" are shown in the dropdown (Bootstrap)
-And non-matching options are hidden
-```
+#### Scenario: Search filtering within a widget
 
-### Scenario: Placeholder reappears when all items deselected
+- **GIVEN** the user clicks the first multi-select widget
+- **WHEN** the user types "boot" in the search input
+- **THEN** only options matching "boot" are shown in the dropdown (Bootstrap)
+- **AND** non-matching options are hidden
 
-```gherkin
-Given the user has selected "Design" in the first widget
-When the user clicks the "x" on the "Design" tag
-Then the tag container is empty
-And the placeholder text "Select Categories" reappears
-```
+#### Scenario: Placeholder reappears when all items deselected
 
-### Scenario: Widgets are independent
+- **GIVEN** the user has selected "Design" in the first widget
+- **WHEN** the user clicks the "x" on the "Design" tag
+- **THEN** the tag container is empty
+- **AND** the placeholder text "Select Categories" reappears
 
-```gherkin
-Given the user selects "Design" in widget 1
-When the user selects "Design" in widget 2
-Then widget 1 still shows "Design" selected
-And widget 2 also shows "Design" selected
-And the selections do not interfere with each other
-```
+#### Scenario: Widgets are independent
 
-### Scenario: Responsive layout — narrow viewport
+- **GIVEN** the user selects "Design" in widget 1
+- **WHEN** the user selects "Design" in widget 2
+- **THEN** widget 1 still shows "Design" selected
+- **AND** widget 2 also shows "Design" selected
+- **AND** the selections do not interfere with each other
 
-```gherkin
-Given the user opens the Tripselect page on a viewport narrower than 768px
-Then the heading remains centered
-And the three widgets stack vertically at full width
-And each widget remains functional
-```
+#### Scenario: Responsive layout — narrow viewport
 
-### Scenario: Component Dock footer link
+- **GIVEN** the user opens the Tripselect page on a viewport narrower than 768px
+- **THEN** the heading remains centered
+- **AND** the three widgets stack vertically at full width
+- **AND** each widget remains functional
 
-```gherkin
-Given the user opens the Tripselect page
-Then a footer link to "https://www.componentdock.com/" is visible
-And the link text includes "Component Dock"
-```
+#### Scenario: Component Dock footer link
+
+- **GIVEN** the user opens the Tripselect page
+- **THEN** a footer link to "https://www.componentdock.com/" is visible
+- **AND** the link text includes "Component Dock"
 
 ## Verification checklist
 

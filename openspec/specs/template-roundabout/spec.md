@@ -22,7 +22,7 @@ Recreation of ColorLib **Carousel V06** (`https://colorlib.com/wp/template/carou
   - Soft shadows (`shadow-lg`, `shadow-xl`)
   - Smooth sliding transitions and interactive card focus states.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Carousel Showcase
 
@@ -30,27 +30,27 @@ As a site visitor, I want to browse multiple featured slides in a responsive car
 
 #### Scenario: Hero Showcase Carousel
 
-- **Given** the user visits the Roundabout home page
-- **When** the hero section loads
-- **Then** a prominent featured carousel displays multiple slides with active pagination dots and left/right navigation arrows.
+- **GIVEN** the user visits the Roundabout home page
+- **WHEN** the hero section loads
+- **THEN** a prominent featured carousel displays multiple slides with active pagination dots and left/right navigation arrows
 
 #### Scenario: Slide Navigation & Interaction
 
-- **Given** the carousel is displayed
-- **When** the user clicks the "Next" arrow or pagination indicator
-- **Then** the active slide transitions smoothly to display the next featured item with updated heading, description, and call-to-action button.
+- **GIVEN** the carousel is displayed
+- **WHEN** the user clicks the "Next" arrow or pagination indicator
+- **THEN** the active slide transitions smoothly to display the next featured item with updated heading, description, and call-to-action button
 
 #### Scenario: Feature Highlights Section
 
-- **Given** the user scrolls past the hero carousel
-- **When** the feature grid section is visible
-- **Then** multiple feature cards display with icons, titles, and descriptive text.
+- **GIVEN** the user scrolls past the hero carousel
+- **WHEN** the feature grid section is visible
+- **THEN** multiple feature cards display with icons, titles, and descriptive text
 
 #### Scenario: Component Dock Footer Attribution
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer is rendered
-- **Then** it contains copyright and a prominent link to `https://www.componentdock.com/` labeled "Component Dock".
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it contains copyright and a prominent link to `https://www.componentdock.com/` labeled "Component Dock"
 
 ## Verification Checklist
 

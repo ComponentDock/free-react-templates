@@ -80,87 +80,99 @@ cyan `#00a8b5`, red `#ff5959`.
     Col 4: "Have a Questions?" with address, phone, email.
     Bottom row: copyright with "Component Dock" link.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Driftwood Travel Agency Landing Page
 
-  Scenario: Navbar displays on page load
-    Given the user opens the Driftwood page
-    Then a dark navigation bar is visible at the top
-    And the brand text reads "Driftwood" with a subtitle "Travel Agency"
-    And navigation links are present: Home, About, Destination, Hotel, Blog, Contact
+#### Scenario: Navbar displays on page load
 
-  Scenario: Hero section fills viewport height
-    Given the user opens the Driftwood page
-    Then the hero section fills the full viewport height
-    And a background image is displayed with a dark overlay
-    And the subheading "Welcome to Driftwood" is shown in cursive font
-    And the headline "Discover Your Favorite Place with Us" is displayed
-    And a circular video play button is visible
+- **GIVEN** the user opens the Driftwood page
+- **THEN** a dark navigation bar is visible at the top
+- **AND** the brand text reads "Driftwood" with a subtitle "Travel Agency"
+- **AND** navigation links are present: Home, About, Destination, Hotel, Blog, Contact
 
-  Scenario: Search bar has tabbed interface
-    Given the user views the search bar section
-    Then two tabs are visible: "Search Tour" and "Hotel"
-    And the "Search Tour" tab is active by default
-    And each tab contains fields: Destination, Check-in date, Check-out date, Price Limit
-    And a "Search" button is present in each tab form
+#### Scenario: Hero section fills viewport height
 
-  Scenario: Services section shows 4 service cards
-    Given the user scrolls to the services section
-    Then a heading "It's time to start your adventure" is displayed
-    And 4 service cards are shown in a 2×2 grid
-    And the cards are: Activities, Travel Arrangements, Private Guide, Location Manager
-    And each card has a background image with a colored overlay and an icon
+- **GIVEN** the user opens the Driftwood page
+- **THEN** the hero section fills the full viewport height
+- **AND** a background image is displayed with a dark overlay
+- **AND** the subheading "Welcome to Driftwood" is shown in cursive font
+- **AND** the headline "Discover Your Favorite Place with Us" is displayed
+- **AND** a circular video play button is visible
 
-  Scenario: Destination carousel displays travel destinations
-    Given the user scrolls to the select destination section
-    Then a parallax background is visible behind the section
-    And the heading reads "Select Your Destination"
-    And a horizontal carousel shows at least 5 destination cards
-    And each card displays a destination name and tour count
+#### Scenario: Search bar has tabbed interface
 
-  Scenario: Tour destination grid shows 6 destination cards
-    Given the user scrolls to the tour destinations section
-    Then the heading reads "Tour Destination"
-    And a grid of 6 destination cards is displayed
-    And each card shows an image, price per person, tour duration, title, location, and amenity icons
+- **GIVEN** the user views the search bar section
+- **THEN** two tabs are visible: "Search Tour" and "Hotel"
+- **AND** the "Search Tour" tab is active by default
+- **AND** each tab contains fields: Destination, Check-in date, Check-out date, Price Limit
+- **AND** a "Search" button is present in each tab form
 
-  Scenario: Video play section has parallax background
-    Given the user scrolls to the video section
-    Then a full-width parallax background image is displayed
-    And a centered circular play button is visible
+#### Scenario: Services section shows 4 service cards
 
-  Scenario: About section has split layout
-    Given the user scrolls to the about section
-    Then a split layout is displayed: image on the left, text on the right
-    And the subheading reads "About Us"
-    And the heading reads "Make Your Tour Memorable and Safe With Us"
-    And a "Book Your Destination" CTA button is present
+- **GIVEN** the user scrolls to the services section
+- **THEN** a heading "It's time to start your adventure" is displayed
+- **AND** 4 service cards are shown in a 2×2 grid
+- **AND** the cards are: Activities, Travel Arrangements, Private Guide, Location Manager
+- **AND** each card has a background image with a colored overlay and an icon
 
-  Scenario: Testimonials section shows user feedback
-    Given the user scrolls to the testimonials section
-    Then a parallax background is visible
-    And the heading reads "Tourist Feedback"
-    And a carousel of testimonial cards is displayed
-    And each card shows a star rating, quote, user avatar, name, and position
+#### Scenario: Destination carousel displays travel destinations
 
-  Scenario: Footer contains 4 columns with contact info
-    Given the user scrolls to the footer
-    Then 4 columns are displayed: About, Information, Experience, Have a Questions
-    And the About column includes social media icons
-    And the contact column shows address, phone, and email
-    And the copyright line links to Component Dock
+- **GIVEN** the user scrolls to the select destination section
+- **THEN** a parallax background is visible behind the section
+- **AND** the heading reads "Select Your Destination"
+- **AND** a horizontal carousel shows at least 5 destination cards
+- **AND** each card displays a destination name and tour count
 
-  Scenario: Navbar transitions on scroll
-    Given the user scrolls down the page
-    Then the navbar applies a scrolled state class
-    And the navbar remains fixed at the top of the viewport
+#### Scenario: Tour destination grid shows 6 destination cards
 
-  Scenario: Search form tabs switch content
-    Given the search bar is visible
-    When the user clicks the "Hotel" tab
-    Then the Hotel search form is displayed
-    And the Search Tour form is hidden
+- **GIVEN** the user scrolls to the tour destinations section
+- **THEN** the heading reads "Tour Destination"
+- **AND** a grid of 6 destination cards is displayed
+- **AND** each card shows an image, price per person, tour duration, title, location, and amenity icons
+
+#### Scenario: Video play section has parallax background
+
+- **GIVEN** the user scrolls to the video section
+- **THEN** a full-width parallax background image is displayed
+- **AND** a centered circular play button is visible
+
+#### Scenario: About section has split layout
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a split layout is displayed: image on the left, text on the right
+- **AND** the subheading reads "About Us"
+- **AND** the heading reads "Make Your Tour Memorable and Safe With Us"
+- **AND** a "Book Your Destination" CTA button is present
+
+#### Scenario: Testimonials section shows user feedback
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a parallax background is visible
+- **AND** the heading reads "Tourist Feedback"
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows a star rating, quote, user avatar, name, and position
+
+#### Scenario: Footer contains 4 columns with contact info
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** 4 columns are displayed: About, Information, Experience, Have a Questions
+- **AND** the About column includes social media icons
+- **AND** the contact column shows address, phone, and email
+- **AND** the copyright line links to Component Dock
+
+#### Scenario: Navbar transitions on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar applies a scrolled state class
+- **AND** the navbar remains fixed at the top of the viewport
+
+#### Scenario: Search form tabs switch content
+
+- **GIVEN** the search bar is visible
+- **WHEN** the user clicks the "Hotel" tab
+- **THEN** the Hotel search form is displayed
+- **AND** the Search Tour form is hidden
 
 ## Verification checklist
 

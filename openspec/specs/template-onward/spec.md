@@ -43,123 +43,120 @@ Recreation of ColorLib **Ozberk** — a fullscreen business website template wit
 8. **Contact Area** — White bg, 4-col layout: Visit Our Office (address), Let's Call Us (phones), Let's Email Us (emails), Customer Support (support emails)
 9. **Footer** — Dark bg (#222), newsletter signup form (email input + "Get Started" button), 4-col link sections (Top Product, Support Technology, Download, Instagram Feed grid), footer bottom with copyright + social icons (Facebook, Twitter, Dribbble, Behance)
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Banner / Hero Section
 
-```gherkin
-Scenario: Banner displays fullscreen with dark overlay
-  Given the user visits the Onward homepage
-  Then a fullscreen banner with a dark semi-transparent overlay is visible
-  And the banner heading reads "Effective Sleek and Clean Design for User Interface" in uppercase white text
-  And a golden "Get Started" circle button with an arrow icon is displayed
+#### Scenario: Banner displays fullscreen with dark overlay
 
-Scenario: Banner is responsive
-  Given the user resizes the viewport to mobile width
-  Then the banner content remains centered and readable
-```
+- **GIVEN** the user visits the Onward homepage
+- **THEN** a fullscreen banner with a dark semi-transparent overlay is visible
+- **AND** the banner heading reads "Effective Sleek and Clean Design for User Interface" in uppercase white text
+- **AND** a golden "Get Started" circle button with an arrow icon is displayed
+
+#### Scenario: Banner is responsive
+
+- **GIVEN** the user resizes the viewport to mobile width
+- **THEN** the banner content remains centered and readable
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar renders over the banner
-  Given the user is on the homepage
-  Then the navbar is positioned absolutely over the banner
-  And the nav links are white text on transparent background
+#### Scenario: Navbar renders over the banner
 
-Scenario: Navbar shows hamburger on mobile
-  Given the user resizes to mobile viewport
-  Then a hamburger menu icon is displayed
-  And clicking it toggles the mobile navigation menu
-```
+- **GIVEN** the user is on the homepage
+- **THEN** the navbar is positioned absolutely over the banner
+- **AND** the nav links are white text on transparent background
+
+#### Scenario: Navbar shows hamburger on mobile
+
+- **GIVEN** the user resizes to mobile viewport
+- **THEN** a hamburger menu icon is displayed
+- **AND** clicking it toggles the mobile navigation menu
 
 ### Feature: Team Force Section
 
-```gherkin
-Scenario: Team section displays image and text side by side
-  Given the user scrolls to the team section
-  Then a team image is shown on the left
-  And a heading "Actual Team Force" appears on the right
-  And a descriptive paragraph is displayed below the heading
-  And a golden "View More" circle button with arrow is shown
-```
+#### Scenario: Team section displays image and text side by side
+
+- **GIVEN** the user scrolls to the team section
+- **THEN** a team image is shown on the left
+- **AND** a heading "Actual Team Force" appears on the right
+- **AND** a descriptive paragraph is displayed below the heading
+- **AND** a golden "View More" circle button with arrow is shown
 
 ### Feature: Feature Area
 
-```gherkin
-Scenario: Features display in a 2-column grid on yellow background
-  Given the user scrolls to the feature area
-  Then the section has a bright yellow background
-  And 6 feature items are displayed in a 2-column layout
-  And each feature has a linear icon, an uppercase title, and a description
+#### Scenario: Features display in a 2-column grid on yellow background
 
-Scenario: Feature items are responsive
-  Given the user resizes to mobile viewport
-  Then the features stack into a single column
-```
+- **GIVEN** the user scrolls to the feature area
+- **THEN** the section has a bright yellow background
+- **AND** 6 feature items are displayed in a 2-column layout
+- **AND** each feature has a linear icon, an uppercase title, and a description
+
+#### Scenario: Feature items are responsive
+
+- **GIVEN** the user resizes to mobile viewport
+- **THEN** the features stack into a single column
 
 ### Feature: Video / Parallax Section
 
-```gherkin
-Scenario: Video section shows parallax background with play button
-  Given the user scrolls to the video section
-  Then a dark background image with overlay is displayed
-  And a play button is centered
-  And a heading "Being unique is the preference now-a-days" is shown
-  And a subtitle "Youtube video will appear in popover" is below it
-```
+#### Scenario: Video section shows parallax background with play button
+
+- **GIVEN** the user scrolls to the video section
+- **THEN** a dark background image with overlay is displayed
+- **AND** a play button is centered
+- **AND** a heading "Being unique is the preference now-a-days" is shown
+- **AND** a subtitle "Youtube video will appear in popover" is below it
 
 ### Feature: Quote / Testimonial Section
 
-```gherkin
-Scenario: Testimonials display with counter and carousel
-  Given the user scrolls to the quote area
-  Then a large counter number "5962" is shown on the left
-  And "Project Completed" text is below the counter
-  And a testimonial quote with author name is shown on the right
+#### Scenario: Testimonials display with counter and carousel
 
-Scenario: Testimonials carousel cycles through items
-  Given the user views the quote section
-  Then the testimonial text cycles through multiple quotes automatically
-```
+- **GIVEN** the user scrolls to the quote area
+- **THEN** a large counter number "5962" is shown on the left
+- **AND** "Project Completed" text is below the counter
+- **AND** a testimonial quote with author name is shown on the right
+
+#### Scenario: Testimonials carousel cycles through items
+
+- **GIVEN** the user views the quote section
+- **THEN** the testimonial text cycles through multiple quotes automatically
 
 ### Feature: Service Area
 
-```gherkin
-Scenario: Service area shows image and service grid
-  Given the user scrolls to the service area
-  Then a background image with dark overlay is on the left
-  And 5 service items with icons are displayed on the right
-  And the services are: Responsive Framework, Geniusly Transformable, Powerfully Customizable, Industrial Support, Extensively Extendable
+#### Scenario: Service area shows image and service grid
 
-Scenario: Service area has yellow background
-  Given the user views the service area
-  Then the section background is bright yellow (#fdd050)
-```
+- **GIVEN** the user scrolls to the service area
+- **THEN** a background image with dark overlay is on the left
+- **AND** 5 service items with icons are displayed on the right
+- **AND** the services are: Responsive Framework, Geniusly Transformable, Powerfully Customizable, Industrial Support, Extensively Extendable
+
+#### Scenario: Service area has yellow background
+
+- **GIVEN** the user views the service area
+- **THEN** the section background is bright yellow (#fdd050)
 
 ### Feature: Contact Area
 
-```gherkin
-Scenario: Contact area shows 4 columns of contact info
-  Given the user scrolls to the contact section
-  Then 4 columns are displayed: Office Address, Phone Numbers, Email Addresses, Customer Support
-  And each column has a heading and descriptive text
-```
+#### Scenario: Contact area shows 4 columns of contact info
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** 4 columns are displayed: Office Address, Phone Numbers, Email Addresses, Customer Support
+- **AND** each column has a heading and descriptive text
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has newsletter signup and link columns
-  Given the user scrolls to the footer
-  Then a newsletter signup form with email input and "Get Started" button is visible
-  And 4 columns of footer links are displayed
-  And a copyright line with social media icons is at the bottom
-  And the footer background is dark (#222222)
+#### Scenario: Footer has newsletter signup and link columns
 
-Scenario: Footer links use gold hover color
-  Given the user hovers over a footer link
-  Then the link color changes to gold (#edbf3a)
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** a newsletter signup form with email input and "Get Started" button is visible
+- **AND** 4 columns of footer links are displayed
+- **AND** a copyright line with social media icons is at the bottom
+- **AND** the footer background is dark (#222222)
+
+#### Scenario: Footer links use gold hover color
+
+- **GIVEN** the user hovers over a footer link
+- **THEN** the link color changes to gold (#edbf3a)
 
 ## Verification Checklist
 

@@ -96,76 +96,86 @@ Recreation of ColorLib's **Marian** template as a React 19 + Vite + Tailwind 4 +
   - Reservations: phone, Skype, email
   - Our Location: address + newsletter email signup form
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Tidecrest template behaviour
+
 Feature: Tidecrest — Hotel Template
 
-  Background:
-    Given the app is deployed at tidecrest.free.componentdock.com
-    And the page loads with no errors
+Background:
+- **GIVEN** the app is deployed at tidecrest.free.componentdock.com
+- **AND** the page loads with no errors
 
-  Scenario: Navbar renders all navigation items
-    Then the navbar displays the brand "Tidecrest"
-    And the navbar has links for "Home", "About", "Service", "Blog", "Contact"
-    And the navbar shows a "Book Online" CTA button
-    And the navbar collapses to a hamburger on mobile
+#### Scenario: Navbar renders all navigation items
 
-  Scenario: Hero slider renders correctly
-    Then the hero section displays a full-width background image
-    And the hero displays the heading "top hotel in the city"
-    And the hero displays the subtitle "Hotel & Resort"
-    And the hero has dot-style navigation
+- **THEN** the navbar displays the brand "Tidecrest"
+- **AND** the navbar has links for "Home", "About", "Service", "Blog", "Contact"
+- **AND** the navbar shows a "Book Online" CTA button
+- **AND** the navbar collapses to a hamburger on mobile
 
-  Scenario: Booking form renders correctly
-    Then the booking form displays Check In Date input
-    And the booking form displays Check Out Date input
-    And the booking form displays Adults selector
-    And the booking form displays Children selector
-    And the booking form displays Rooms selector
-    And the booking form displays a "Book Now" button in golden amber
+#### Scenario: Hero slider renders correctly
 
-  Scenario: About section displays service experience
-    Then the about section displays "25 Years of Service Experience"
-    And the about section displays the heading "Make the customer the hero of your story"
-    And the about section displays a "Learn More" link
+- **THEN** the hero section displays a full-width background image
+- **AND** the hero displays the heading "top hotel in the city"
+- **AND** the hero displays the subtitle "Hotel & Resort"
+- **AND** the hero has dot-style navigation
 
-  Scenario: Room cards display pricing
-    Then 6 room cards are displayed in a grid
-    And each room card shows an image
-    And each room card shows a title "Classic Double Bed"
-    And each room card shows a price "$150 / par night"
-    And a "View more" button is displayed below the grid
+#### Scenario: Booking form renders correctly
 
-  Scenario: Dining and pool sections display correctly
-    Then a "Dining & Drinks" section is displayed with a background image
-    And a "Swimming Pool" section is displayed with a background image
-    And each section has a "Learn More" border button
+- **THEN** the booking form displays Check In Date input
+- **AND** the booking form displays Check Out Date input
+- **AND** the booking form displays Adults selector
+- **AND** the booking form displays Children selector
+- **AND** the booking form displays Rooms selector
+- **AND** the booking form displays a "Book Now" button in golden amber
 
-  Scenario: Testimonials section renders correctly
-    Then the testimonial section displays a star rating
-    And the testimonial section displays a quote
-    And the testimonial section displays the author "Clifford Frazier, Regular Client"
+#### Scenario: About section displays service experience
 
-  Scenario: Blog section displays articles
-    Then 3 blog cards are displayed in a grid
-    And each blog card shows an image
-    And each blog card shows a category tag
-    And each blog card shows an author name
-    And each blog card shows a title
-    And each blog card shows a date and comment count
+- **THEN** the about section displays "25 Years of Service Experience"
+- **AND** the about section displays the heading "Make the customer the hero of your story"
+- **AND** the about section displays a "Learn More" link
 
-  Scenario: Gallery carousel renders
-    Then the gallery section displays a carousel of images
+#### Scenario: Room cards display pricing
 
-  Scenario: Footer renders all columns
-    Then the footer displays a logo and social icons
-    And the footer displays Quick Links
-    And the footer displays Reservations contact info
-    And the footer displays a location address
-    And the footer displays a newsletter signup form
-    And the footer links to componentdock.com
-```
+- **THEN** 6 room cards are displayed in a grid
+- **AND** each room card shows an image
+- **AND** each room card shows a title "Classic Double Bed"
+- **AND** each room card shows a price "$150 / par night"
+- **AND** a "View more" button is displayed below the grid
+
+#### Scenario: Dining and pool sections display correctly
+
+- **THEN** a "Dining & Drinks" section is displayed with a background image
+- **AND** a "Swimming Pool" section is displayed with a background image
+- **AND** each section has a "Learn More" border button
+
+#### Scenario: Testimonials section renders correctly
+
+- **THEN** the testimonial section displays a star rating
+- **AND** the testimonial section displays a quote
+- **AND** the testimonial section displays the author "Clifford Frazier, Regular Client"
+
+#### Scenario: Blog section displays articles
+
+- **THEN** 3 blog cards are displayed in a grid
+- **AND** each blog card shows an image
+- **AND** each blog card shows a category tag
+- **AND** each blog card shows an author name
+- **AND** each blog card shows a title
+- **AND** each blog card shows a date and comment count
+
+#### Scenario: Gallery carousel renders
+
+- **THEN** the gallery section displays a carousel of images
+
+#### Scenario: Footer renders all columns
+
+- **THEN** the footer displays a logo and social icons
+- **AND** the footer displays Quick Links
+- **AND** the footer displays Reservations contact info
+- **AND** the footer displays a location address
+- **AND** the footer displays a newsletter signup form
+- **AND** the footer links to componentdock.com
 
 ## Verification Checklist
 

@@ -47,118 +47,131 @@ Extracted from live preview CSS (`css/style.css`) and Cloudflare-subsetted `@fon
 10. **Appointment / Contact** — background image, form with Name + Email + Message + "Send message" button
 11. **Footer** — dark (#1a1a1a), 5 columns: brand + social icons, Explore links, Legal links, Company links, "Have a Questions?" with address/phone/email; copyright bar with "Made with ❤"
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: Valet template behaviour
+
 Feature: Valet — Virtual Assistant Landing Page
 
-  Background:
-    Given the app is loaded at the root URL
-    Then the page renders without console errors
+Background:
+- **GIVEN** the app is loaded at the root URL
+- **THEN** the page renders without console errors
 
-  # ── Navbar ──
+**── Navbar ──**
 
-  Scenario: Navbar renders all navigation links
-    Then I see a navigation bar with brand text "Virtual Assistant"
-    And I see links: "Home", "About", "Services", "How It Works", "Pricing Plans", "Blog", "Contact"
-    And the navbar is sticky at the top on scroll
+#### Scenario: Navbar renders all navigation links
 
-  Scenario: Navbar toggles on mobile
-    Given the viewport width is 375px
-    When I click the hamburger toggle button
-    Then the navigation links become visible
+- **THEN** I see a navigation bar with brand text "Virtual Assistant"
+- **AND** I see links: "Home", "About", "Services", "How It Works", "Pricing Plans", "Blog", "Contact"
+- **AND** the navbar is sticky at the top on scroll
 
-  # ── Hero ──
+#### Scenario: Navbar toggles on mobile
 
-  Scenario: Hero section displays headline and CTA
-    Then I see a hero section with heading "Save Your Precious Time & Outsource Daily Tasks"
-    And I see a primary CTA button labeled "Request Our Assistant"
-    And I see a decorative mouse scroll indicator below the hero
+- **GIVEN** the viewport width is 375px
+- **WHEN** I click the hamburger toggle button
+- **THEN** the navigation links become visible
 
-  # ── Why Choose Us ──
+**── Hero ──**
 
-  Scenario: Why Choose Us shows four features
-    Then I see a section with heading containing "Why Choose Us"
-    And I see 4 feature items with titles:
-      | title |
-      | Get decided business results |
-      | Save time with qualified assistants |
-      | Work & Life Balance |
-      | Quick formulate your all plans |
+#### Scenario: Hero section displays headline and CTA
 
-  # ── Services ──
+- **THEN** I see a hero section with heading "Save Your Precious Time & Outsource Daily Tasks"
+- **AND** I see a primary CTA button labeled "Request Our Assistant"
+- **AND** I see a decorative mouse scroll indicator below the hero
 
-  Scenario: Services section shows eight service cards
-    Then I see a section with heading "Our Services & Offers"
-    And I see 8 service cards with titles:
-      | title |
-      | Family Task |
-      | Online Research |
-      | Management Task |
-      | Project Management |
-      | Writing Editing |
-      | Multilingual Services |
-      | Customer Service |
-      | Executive Admin |
+**── Why Choose Us ──**
 
-  # ── Comparison ──
+#### Scenario: Why Choose Us shows four features
 
-  Scenario: Comparison shows two columns
-    Then I see a heading "Get Your Own Highly Skilled Virtual Assistant"
-    And I see two comparison columns:
-      | label |
-      | Regular Office Employee |
-      | Virtual Assistant Employee |
+- **THEN** I see a section with heading containing "Why Choose Us"
+- **AND** I see 4 feature items with titles:
+| title |
+| Get decided business results |
+| Save time with qualified assistants |
+| Work & Life Balance |
+| Quick formulate your all plans |
 
-  # ── Testimonials ──
+**── Services ──**
 
-  Scenario: Testimonials carousel displays client quotes
-    Then I see a section with heading "Happy Clients"
-    And I see at least 3 testimonial cards with avatar, quote, and name
+#### Scenario: Services section shows eight service cards
 
-  # ── How It Works ──
+- **THEN** I see a section with heading "Our Services & Offers"
+- **AND** I see 8 service cards with titles:
+| title |
+| Family Task |
+| Online Research |
+| Management Task |
+| Project Management |
+| Writing Editing |
+| Multilingual Services |
+| Customer Service |
+| Executive Admin |
 
-  Scenario: How It Works section shows process steps
-    Then I see a section with heading "How It Works"
-    And I see at least 3 process step items with icons
+**── Comparison ──**
 
-  # ── Pricing ──
+#### Scenario: Comparison shows two columns
 
-  Scenario: Pricing shows four plans
-    Then I see a section with heading "Price & Plans"
-    And I see 4 pricing cards:
-      | plan | price |
-      | Small Plan | $49 |
-      | Startup Plan | $79 |
-      | Medium Plan | $109 |
-      | Commercial Plan | $149 |
-    And each pricing card has a "Get Started" CTA button
-    And price numbers are displayed in the brand accent color (#21bf73)
+- **THEN** I see a heading "Get Your Own Highly Skilled Virtual Assistant"
+- **AND** I see two comparison columns:
+| label |
+| Regular Office Employee |
+| Virtual Assistant Employee |
 
-  # ── Blog ──
+**── Testimonials ──**
 
-  Scenario: Blog section shows recent posts
-    Then I see a section with heading "Recent Blog"
-    And I see 3 blog cards with image, title, date, and description
+#### Scenario: Testimonials carousel displays client quotes
 
-  # ── Appointment / Contact ──
+- **THEN** I see a section with heading "Happy Clients"
+- **AND** I see at least 3 testimonial cards with avatar, quote, and name
 
-  Scenario: Contact form accepts name and email
-    Then I see a contact/appointment section with a background image
-    And I see a form with fields "Your Name" and "Email"
-    And I see a "Send message" submit button
+**── How It Works ──**
 
-  # ── Footer ──
+#### Scenario: How It Works section shows process steps
 
-  Scenario: Footer has four link columns and contact info
-    Then I see a footer with columns: "Explore", "Legal", "Company", "Have a Questions?"
-    And I see social media icons (Twitter, Facebook, Instagram)
-    And I see contact info: address, phone number, and email
-    And the footer links to "https://www.componentdock.com/"
+- **THEN** I see a section with heading "How It Works"
+- **AND** I see at least 3 process step items with icons
 
-  Scenario: Footer copyright bar
-    Then I see a copyright line in the footer
-```
+**── Pricing ──**
+
+#### Scenario: Pricing shows four plans
+
+- **THEN** I see a section with heading "Price & Plans"
+- **AND** I see 4 pricing cards:
+| plan | price |
+| Small Plan | $49 |
+| Startup Plan | $79 |
+| Medium Plan | $109 |
+| Commercial Plan | $149 |
+- **AND** each pricing card has a "Get Started" CTA button
+- **AND** price numbers are displayed in the brand accent color (#21bf73)
+
+**── Blog ──**
+
+#### Scenario: Blog section shows recent posts
+
+- **THEN** I see a section with heading "Recent Blog"
+- **AND** I see 3 blog cards with image, title, date, and description
+
+**── Appointment / Contact ──**
+
+#### Scenario: Contact form accepts name and email
+
+- **THEN** I see a contact/appointment section with a background image
+- **AND** I see a form with fields "Your Name" and "Email"
+- **AND** I see a "Send message" submit button
+
+**── Footer ──**
+
+#### Scenario: Footer has four link columns and contact info
+
+- **THEN** I see a footer with columns: "Explore", "Legal", "Company", "Have a Questions?"
+- **AND** I see social media icons (Twitter, Facebook, Instagram)
+- **AND** I see contact info: address, phone number, and email
+- **AND** the footer links to "https://www.componentdock.com/"
+
+#### Scenario: Footer copyright bar
+
+- **THEN** I see a copyright line in the footer
 
 ## Verification checklist
 

@@ -51,94 +51,98 @@ Extracted from live preview CSS (`style.css`):
 6. **Newsletter** — Bg image with white text overlay. Heading "Join Our Newsletter" + description. Email input + "Subscribe" button inline.
 7. **Footer** — Centered: logo + "Follow Me" + 4 social icons (Facebook, Twitter, Dribbble, Behance). Copyright line → replaced with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Scenario: Navbar renders all navigation links
-  Given the page loads
-  Then the navbar shows links: Home, About, Portfolio, Contact
-  And the navbar displays a logo image on the left
 
-Scenario: Navbar has dropdown menus
-  Given the user hovers over Portfolio
-  Then a dropdown appears with sub-links
-```
+#### Scenario: Navbar renders all navigation links
+
+- **GIVEN** the page loads
+- **THEN** the navbar shows links: Home, About, Portfolio, Contact
+- **AND** the navbar displays a logo image on the left
+
+#### Scenario: Navbar has dropdown menus
+
+- **GIVEN** the user hovers over Portfolio
+- **THEN** a dropdown appears with sub-links
 
 ### Hero Carousel
-```gherkin
-Scenario: Hero carousel displays centered content
-  Given the page loads
-  Then a full-screen banner with background image is shown
-  And the person's name is displayed as a large heading
-  And "Personal portfolio Website" is shown as a subtitle
-  And a red "Hire Me" button is centered below the text
 
-Scenario: Hero carousel auto-rotates between slides
-  Given the page loads
-  Then the banner cycles through 3 different background images
-  And the text content remains the same on each slide
-```
+#### Scenario: Hero carousel displays centered content
+
+- **GIVEN** the page loads
+- **THEN** a full-screen banner with background image is shown
+- **AND** the person's name is displayed as a large heading
+- **AND** "Personal portfolio Website" is shown as a subtitle
+- **AND** a red "Hire Me" button is centered below the text
+
+#### Scenario: Hero carousel auto-rotates between slides
+
+- **GIVEN** the page loads
+- **THEN** the banner cycles through 3 different background images
+- **AND** the text content remains the same on each slide
 
 ### Portfolio Section
-```gherkin
-Scenario: Portfolio shows filterable project grid
-  Given the user scrolls to the portfolio section
-  Then the heading "Latest Works" is displayed
-  And filter tabs show: All Categories, Branding, Creative Work, Web Design
-  And 8 portfolio items are displayed in a masonry-style grid
 
-Scenario: Portfolio items have mixed column sizes
-  Given the portfolio grid renders
-  Then some items span 2 columns (col-lg-6)
-  And some items span 1 column (col-lg-3)
-  And each item shows a title and "Client Project" label
-```
+#### Scenario: Portfolio shows filterable project grid
+
+- **GIVEN** the user scrolls to the portfolio section
+- **THEN** the heading "Latest Works" is displayed
+- **AND** filter tabs show: All Categories, Branding, Creative Work, Web Design
+- **AND** 8 portfolio items are displayed in a masonry-style grid
+
+#### Scenario: Portfolio items have mixed column sizes
+
+- **GIVEN** the portfolio grid renders
+- **THEN** some items span 2 columns (col-lg-6)
+- **AND** some items span 1 column (col-lg-3)
+- **AND** each item shows a title and "Client Project" label
 
 ### About Section
-```gherkin
-Scenario: About section on gray background
-  Given the user scrolls to the about section
-  Then a light gray background (#f9f9ff) is displayed
-  And an illustration appears on the left
-  And a heading "about myself" is shown on the right
-  And paragraphs of text are displayed
-  And a "More Info" button is shown
-```
+
+#### Scenario: About section on gray background
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a light gray background (#f9f9ff) is displayed
+- **AND** an illustration appears on the left
+- **AND** a heading "about myself" is shown on the right
+- **AND** paragraphs of text are displayed
+- **AND** a "More Info" button is shown
 
 ### Testimonials
-```gherkin
-Scenario: Testimonials with star ratings
-  Given the user scrolls to the testimonials section
-  Then a carousel of testimonial items is shown on the left
-  And each item has a quote icon, name, 5-star rating, and quote text
-  And brand logos are displayed on the right side
 
-Scenario: Testimonial carousel rotates
-  Given the user views the testimonials
-  Then the carousel auto-advances through testimonial entries
-```
+#### Scenario: Testimonials with star ratings
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonial items is shown on the left
+- **AND** each item has a quote icon, name, 5-star rating, and quote text
+- **AND** brand logos are displayed on the right side
+
+#### Scenario: Testimonial carousel rotates
+
+- **GIVEN** the user views the testimonials
+- **THEN** the carousel auto-advances through testimonial entries
 
 ### Newsletter
-```gherkin
-Scenario: Newsletter section with email form
-  Given the user scrolls to the newsletter section
-  Then a background image with white text overlay is displayed
-  And the heading "Join Our Newsletter" is shown
-  And an email input field is present
-  And a "Subscribe" button is present
-```
+
+#### Scenario: Newsletter section with email form
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** a background image with white text overlay is displayed
+- **AND** the heading "Join Our Newsletter" is shown
+- **AND** an email input field is present
+- **AND** a "Subscribe" button is present
 
 ### Footer
-```gherkin
-Scenario: Footer with social links and copyright
-  Given the user scrolls to the footer
-  Then a logo is displayed
-  And "Follow Me" text is shown
-  And social icons for Facebook, Twitter, Dribbble, Behance are present
-  And a copyright line is displayed
-  And a "Component Dock" link replaces the original attribution
-```
+
+#### Scenario: Footer with social links and copyright
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a logo is displayed
+- **AND** "Follow Me" text is shown
+- **AND** social icons for Facebook, Twitter, Dribbble, Behance are present
+- **AND** a copyright line is displayed
+- **AND** a "Component Dock" link replaces the original attribution
 
 ## Verification checklist
 

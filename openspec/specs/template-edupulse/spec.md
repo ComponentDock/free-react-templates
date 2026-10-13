@@ -52,94 +52,117 @@ Extracted from the live preview HTML:
 9. **Blog** — Section title "Our Blog" + "Latest from Our Blog"; 3-column cards: image, category tag, title (h5), excerpt, comments + likes count
 10. **Footer** — Three columns: logo + description + mission text; Newsletter (heading, input + subscribe button, social icons); Contact info (address, phone, email); Bottom bar: copyright text
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: EduPulse template behaviour
+
 Feature: EduPulse Education Platform Template
 
-  Background:
-    Given the EduPulse template is loaded at the root URL
-    And the page uses Poppins for headings and Roboto for body text
+Background:
+- **GIVEN** the EduPulse template is loaded at the root URL
+- **AND** the page uses Poppins for headings and Roboto for body text
 
-  # --- Header ---
-  Scenario: Navbar displays navigation links and login
-    Then the navbar shows the logo on the left
-    And navigation links are present: Home, About, Courses, Blog, Pages, Contact
-    And a Login button is visible on desktop
-    And a hamburger menu toggle appears on mobile
+**--- Header ---**
 
-  Scenario: Pages dropdown contains sub-pages
-    When the user hovers/clicks the "Pages" dropdown
-    Then sub-links appear: Pricing, FAQ, Instructors, Testimonials, Dashboard, Elements
+#### Scenario: Navbar displays navigation links and login
 
-  # --- Banner/Hero ---
-  Scenario: Hero section renders with background and CTAs
-    Then the hero section displays the subtitle "Join 15,000+ learners worldwide"
-    And the main heading reads "Advance Your Career with Expert-Led Courses"
-    And a paragraph describes course benefits
-    And a "Browse Courses" primary button (gradient pill) is visible
-    And a "Start Free Trial" outline button is visible
+- **THEN** the navbar shows the logo on the left
+- **AND** navigation links are present: Home, About, Courses, Blog, Pages, Contact
+- **AND** a Login button is visible on desktop
+- **AND** a hamburger menu toggle appears on mobile
 
-  # --- Features ---
-  Scenario: Feature section shows why-choose block and 3 feature cards
-    Then a "Why EduPulse?" heading with description and "Learn More" button is shown
-    And 3 feature cards are displayed: Flexible Learning, Expert Instructors, Career Support
-    And each card has an icon, title, and description
+#### Scenario: Pages dropdown contains sub-pages
 
-  # --- Learning/About ---
-  Scenario: About section has image and text with checklist
-    Then an image is displayed on the left
-    And "About us" label, heading, and paragraph are shown on the right
-    And 2 checklist items are visible with checkmark icons
-    And a "Read More" button is present
+- **WHEN** the user hovers/clicks the "Pages" dropdown
+- **THEN** sub-links appear: Pricing, FAQ, Instructors, Testimonials, Dashboard, Elements
 
-  # --- Counter ---
-  Scenario: Stats counter section displays metrics
-    Then 4 stat items are displayed on a gradient background
-    And stats include: 250 Courses Available, 15000 Students Enrolled, 92% Career Advancement, 45 Countries Reached
+**--- Banner/Hero ---**
 
-  # --- Featured Courses ---
-  Scenario: Course cards render with metadata
-    Then the section title reads "Featured Courses" with subtitle "popular courses"
-    And 3 course cards are displayed in a grid
-    And each card shows: image, category tag, difficulty badge, price, course name, description, duration, enrollment count, instructor name/avatar, star rating
+#### Scenario: Hero section renders with background and CTAs
 
-  # --- Advanced Platform Features ---
-  Scenario: Platform section shows features and image
-    Then the section has "Our platform" label with heading and description
-    And 2 feature items are displayed: Learn Anywhere, Verified Certificates
-    And an image is shown on the right
+- **THEN** the hero section displays the subtitle "Join 15,000+ learners worldwide"
+- **AND** the main heading reads "Advance Your Career with Expert-Led Courses"
+- **AND** a paragraph describes course benefits
+- **AND** a "Browse Courses" primary button (gradient pill) is visible
+- **AND** a "Start Free Trial" outline button is visible
 
-  # --- Testimonials ---
-  Scenario: Testimonials carousel displays student reviews
-    Then the section title reads "Student Success Stories"
-    And a Swiper carousel shows testimonial slides
-    And each slide has 2 testimonials with quote text, name, and role
-    And author photos are displayed as circular images
+**--- Features ---**
 
-  # --- Blog ---
-  Scenario: Blog section shows latest articles
-    Then the section title reads "Latest from Our Blog"
-    And 3 blog cards are displayed
-    And each card has: image, category tag, title, excerpt, comment count, like count
+#### Scenario: Feature section shows why-choose block and 3 feature cards
 
-  # --- Footer ---
-  Scenario: Footer contains newsletter, contact, and social links
-    Then the footer shows the logo and a brief description
-    And a Newsletter section with email input and subscribe button
-    And social media icons are displayed (Facebook, Twitter, Instagram, Email)
-    And Contact information shows address, phone, and email
-    And a copyright bar is at the bottom
-    And the copyright links to https://www.componentdock.com/
+- **THEN** a "Why EduPulse?" heading with description and "Learn More" button is shown
+- **AND** 3 feature cards are displayed: Flexible Learning, Expert Instructors, Career Support
+- **AND** each card has an icon, title, and description
 
-  # --- Responsive ---
-  Scenario: Mobile layout adapts all sections
-    When the viewport is 375px wide
-    Then the navbar collapses to a hamburger menu
-    And the hero text stacks vertically
-    And course cards stack vertically
-    And the footer columns stack vertically
-```
+**--- Learning/About ---**
+
+#### Scenario: About section has image and text with checklist
+
+- **THEN** an image is displayed on the left
+- **AND** "About us" label, heading, and paragraph are shown on the right
+- **AND** 2 checklist items are visible with checkmark icons
+- **AND** a "Read More" button is present
+
+**--- Counter ---**
+
+#### Scenario: Stats counter section displays metrics
+
+- **THEN** 4 stat items are displayed on a gradient background
+- **AND** stats include: 250 Courses Available, 15000 Students Enrolled, 92% Career Advancement, 45 Countries Reached
+
+**--- Featured Courses ---**
+
+#### Scenario: Course cards render with metadata
+
+- **THEN** the section title reads "Featured Courses" with subtitle "popular courses"
+- **AND** 3 course cards are displayed in a grid
+- **AND** each card shows: image, category tag, difficulty badge, price, course name, description, duration, enrollment count, instructor name/avatar, star rating
+
+**--- Advanced Platform Features ---**
+
+#### Scenario: Platform section shows features and image
+
+- **THEN** the section has "Our platform" label with heading and description
+- **AND** 2 feature items are displayed: Learn Anywhere, Verified Certificates
+- **AND** an image is shown on the right
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials carousel displays student reviews
+
+- **THEN** the section title reads "Student Success Stories"
+- **AND** a Swiper carousel shows testimonial slides
+- **AND** each slide has 2 testimonials with quote text, name, and role
+- **AND** author photos are displayed as circular images
+
+**--- Blog ---**
+
+#### Scenario: Blog section shows latest articles
+
+- **THEN** the section title reads "Latest from Our Blog"
+- **AND** 3 blog cards are displayed
+- **AND** each card has: image, category tag, title, excerpt, comment count, like count
+
+**--- Footer ---**
+
+#### Scenario: Footer contains newsletter, contact, and social links
+
+- **THEN** the footer shows the logo and a brief description
+- **AND** a Newsletter section with email input and subscribe button
+- **AND** social media icons are displayed (Facebook, Twitter, Instagram, Email)
+- **AND** Contact information shows address, phone, and email
+- **AND** a copyright bar is at the bottom
+- **AND** the copyright links to https://www.componentdock.com/
+
+**--- Responsive ---**
+
+#### Scenario: Mobile layout adapts all sections
+
+- **WHEN** the viewport is 375px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero text stacks vertically
+- **AND** course cards stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification Checklist
 

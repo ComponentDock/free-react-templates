@@ -34,65 +34,76 @@ page.
 | Highlighted option   | `#3875d7`                                     | Blue highlight on hover                    |
 | Container max-width  | Bootstrap `col-md-5` centered                 | ~41.67% of container width                 |
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: PickTriplet Multi-Select Form Page
 
-  Scenario: Page loads with heading
-    Given the user opens the PickTriplet page
-    Then a heading "Multi-Select #10 (Limit to 5)" is visible
-    And the heading is centered horizontally
+#### Scenario: Page loads with heading
 
-  Scenario: Three multi-select dropdowns are displayed
-    Given the user opens the PickTriplet page
-    Then 3 multi-select dropdowns are visible
-    And each dropdown is centered on the page
-    And each dropdown shows the placeholder text "Select Categories"
+- **GIVEN** the user opens the PickTriplet page
+- **THEN** a heading "Multi-Select #10 (Limit to 5)" is visible
+- **AND** the heading is centered horizontally
 
-  Scenario: Dropdown 1 uses tan chip color
-    Given the user opens the PickTriplet page
-    When the user selects "Design" in the first dropdown
-    Then the selected chip has a tan/olive background (#e5e4cc)
+#### Scenario: Three multi-select dropdowns are displayed
 
-  Scenario: Dropdown 2 uses green chip color
-    Given the user opens the PickTriplet page
-    When the user selects "HTML5" in the second dropdown
-    Then the selected chip has a soft green background (#c7f0db)
+- **GIVEN** the user opens the PickTriplet page
+- **THEN** 3 multi-select dropdowns are visible
+- **AND** each dropdown is centered on the page
+- **AND** each dropdown shows the placeholder text "Select Categories"
 
-  Scenario: Dropdown 3 uses blue chip color
-    Given the user opens the PickTriplet page
-    When the user selects "CSS3" in the third dropdown
-    Then the selected chip has a light blue background (#d3f4ff)
+#### Scenario: Dropdown 1 uses tan chip color
 
-  Scenario: Each dropdown contains 8 category options
-    Given the user opens the PickTriplet page
-    Then the first dropdown contains options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
-    And the second dropdown contains the same 8 options
-    And the third dropdown contains the same 8 options
+- **GIVEN** the user opens the PickTriplet page
+- **WHEN** the user selects "Design" in the first dropdown
+- **THEN** the selected chip has a tan/olive background (#e5e4cc)
 
-  Scenario: Dropdowns allow multiple selections
-    Given the user opens the PickTriplet page
-    When the user selects "Design" in the first dropdown
-    And the user selects "HTML5" in the first dropdown
-    Then both "Design" and "HTML5" are shown as selected chips
+#### Scenario: Dropdown 2 uses green chip color
 
-  Scenario: Dropdowns have no selection limit
-    Given the user opens the PickTriplet page
-    When the user selects all 8 options in the first dropdown
-    Then all 8 chips are displayed
+- **GIVEN** the user opens the PickTriplet page
+- **WHEN** the user selects "HTML5" in the second dropdown
+- **THEN** the selected chip has a soft green background (#c7f0db)
 
-  Scenario: Placeholder text is visible when no items selected
-    Given the user opens the PickTriplet page
-    And no items are selected in any dropdown
-    Then each dropdown displays "Select Categories" as placeholder
+#### Scenario: Dropdown 3 uses blue chip color
 
-  Scenario: Page background is light gray
-    Given the user opens the PickTriplet page
-    Then the page background color is #efefef
+- **GIVEN** the user opens the PickTriplet page
+- **WHEN** the user selects "CSS3" in the third dropdown
+- **THEN** the selected chip has a light blue background (#d3f4ff)
 
-  Scenario: Footer links Component Dock
-    Given the user opens the PickTriplet page
-    Then a footer contains a link to https://www.componentdock.com/
+#### Scenario: Each dropdown contains 8 category options
+
+- **GIVEN** the user opens the PickTriplet page
+- **THEN** the first dropdown contains options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
+- **AND** the second dropdown contains the same 8 options
+- **AND** the third dropdown contains the same 8 options
+
+#### Scenario: Dropdowns allow multiple selections
+
+- **GIVEN** the user opens the PickTriplet page
+- **WHEN** the user selects "Design" in the first dropdown
+- **AND** the user selects "HTML5" in the first dropdown
+- **THEN** both "Design" and "HTML5" are shown as selected chips
+
+#### Scenario: Dropdowns have no selection limit
+
+- **GIVEN** the user opens the PickTriplet page
+- **WHEN** the user selects all 8 options in the first dropdown
+- **THEN** all 8 chips are displayed
+
+#### Scenario: Placeholder text is visible when no items selected
+
+- **GIVEN** the user opens the PickTriplet page
+- **AND** no items are selected in any dropdown
+- **THEN** each dropdown displays "Select Categories" as placeholder
+
+#### Scenario: Page background is light gray
+
+- **GIVEN** the user opens the PickTriplet page
+- **THEN** the page background color is #efefef
+
+#### Scenario: Footer links Component Dock
+
+- **GIVEN** the user opens the PickTriplet page
+- **THEN** a footer contains a link to https://www.componentdock.com/
 
 ## Verification checklist
 

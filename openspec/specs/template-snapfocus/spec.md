@@ -102,90 +102,102 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - Dark background
 - Copyright with Component Dock link (replacing ColorLib attribution)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: SnapFocus template behaviour
+
 Feature: SnapFocus — Photography Portfolio Template
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page title contains "SnapFocus"
-    And the Component Dock footer link is visible
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **THEN** the page title contains "SnapFocus"
+- **AND** the Component Dock footer link is visible
 
-  Scenario: Navbar renders correctly
-    Given the user is on any viewport
-    Then the logo is visible in the top-left
-    And navigation links "Home", "About", "Services", "Projects", "Blog", "Contact" are visible
-    And on mobile viewports a hamburger menu button is visible
+#### Scenario: Navbar renders correctly
 
-  Scenario: Navbar has sticky scroll behavior
-    Given the user scrolls down past the hero
-    Then the navbar becomes fixed with a white background and box-shadow
+- **GIVEN** the user is on any viewport
+- **THEN** the logo is visible in the top-left
+- **AND** navigation links "Home", "About", "Services", "Projects", "Blog", "Contact" are visible
+- **AND** on mobile viewports a hamburger menu button is visible
 
-  Scenario: Hero banner displays with parallax
-    Given the hero section is in the viewport
-    Then a full-width parallax background image is visible
-    And the headline "i am Professional Photographer" is displayed
-    And "Professional" is highlighted in brand red
-    And a "view portfolio" button with brand red background is visible
-    And social links (Instagram, Twitter, Facebook) are visible at the bottom
+#### Scenario: Navbar has sticky scroll behavior
 
-  Scenario: Portfolio filter works
-    Given the portfolio section is scrolled into view
-    Then 6 portfolio items are visible in a masonry grid
-    And filter tabs "All", "Wedding", "Motion", "Portrait", "Fashion" are visible
-    When the user clicks the "Wedding" filter
-    Then only wedding-tagged portfolio items are shown
-    When the user clicks "All"
-    Then all portfolio items are shown again
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar becomes fixed with a white background and box-shadow
 
-  Scenario: Services section shows 4 items
-    Given the services section is scrolled into view
-    Then 4 service cards are visible in a row
-    And each card has an icon, heading, and description
+#### Scenario: Hero banner displays with parallax
 
-  Scenario: Pricing section shows 3 tiers
-    Given the pricing section is scrolled into view
-    Then 3 pricing cards are visible: "Wedding" ($76), "Studio" ($86), "Fashion" ($96)
-    And each card has a feature list with checkmarks and crosses
-    And each card has a "Book Now" button
+- **GIVEN** the hero section is in the viewport
+- **THEN** a full-width parallax background image is visible
+- **AND** the headline "i am Professional Photographer" is displayed
+- **AND** "Professional" is highlighted in brand red
+- **AND** a "view portfolio" button with brand red background is visible
+- **AND** social links (Instagram, Twitter, Facebook) are visible at the bottom
 
-  Scenario: About section renders
-    Given the about section is scrolled into view
-    Then the heading "Let's Introduce About Myself" is visible
-    And description paragraphs are shown
-    And a "learn more" CTA button is visible
+#### Scenario: Portfolio filter works
 
-  Scenario: Testimonials carousel works
-    Given the testimonials section is scrolled into view
-    Then the heading "happy clients says" is visible
-    And at least one testimonial with photo, name, title, and quote is shown
-    And carousel navigation is present
+- **GIVEN** the portfolio section is scrolled into view
+- **THEN** 6 portfolio items are visible in a masonry grid
+- **AND** filter tabs "All", "Wedding", "Motion", "Portrait", "Fashion" are visible
+- **WHEN** the user clicks the "Wedding" filter
+- **THEN** only wedding-tagged portfolio items are shown
+- **WHEN** the user clicks "All"
+- **THEN** all portfolio items are shown again
 
-  Scenario: Blog section shows 3 posts
-    Given the blog section is scrolled into view
-    Then 3 blog cards are visible in a row
-    And each card has a thumbnail, category, date, heading, excerpt, and "read more" link
+#### Scenario: Services section shows 4 items
 
-  Scenario: Footer renders correctly
-    Given the footer is in the viewport
-    Then "About Us", "Newsletter", and "Follow Us" sections are visible
-    And a newsletter email input and submit button are present
-    And social media icon links are visible
-    And a link to "https://www.componentdock.com/" is present
+- **GIVEN** the services section is scrolled into view
+- **THEN** 4 service cards are visible in a row
+- **AND** each card has an icon, heading, and description
 
-  Scenario: Responsive layout adapts
-    Given the user is on a mobile viewport (width < 768px)
-    Then the navbar collapses to a hamburger menu
-    And service/pricing/blog columns stack vertically
-    And the portfolio grid becomes single-column
-    And the footer columns stack vertically
+#### Scenario: Pricing section shows 3 tiers
 
-  Scenario: Parallax effect on banner
-    Given the hero banner section exists
-    Then it has a parallax background image effect
-    And text overlays are readable with sufficient contrast
-```
+- **GIVEN** the pricing section is scrolled into view
+- **THEN** 3 pricing cards are visible: "Wedding" ($76), "Studio" ($86), "Fashion" ($96)
+- **AND** each card has a feature list with checkmarks and crosses
+- **AND** each card has a "Book Now" button
+
+#### Scenario: About section renders
+
+- **GIVEN** the about section is scrolled into view
+- **THEN** the heading "Let's Introduce About Myself" is visible
+- **AND** description paragraphs are shown
+- **AND** a "learn more" CTA button is visible
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the testimonials section is scrolled into view
+- **THEN** the heading "happy clients says" is visible
+- **AND** at least one testimonial with photo, name, title, and quote is shown
+- **AND** carousel navigation is present
+
+#### Scenario: Blog section shows 3 posts
+
+- **GIVEN** the blog section is scrolled into view
+- **THEN** 3 blog cards are visible in a row
+- **AND** each card has a thumbnail, category, date, heading, excerpt, and "read more" link
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is in the viewport
+- **THEN** "About Us", "Newsletter", and "Follow Us" sections are visible
+- **AND** a newsletter email input and submit button are present
+- **AND** social media icon links are visible
+- **AND** a link to "https://www.componentdock.com/" is present
+
+#### Scenario: Responsive layout adapts
+
+- **GIVEN** the user is on a mobile viewport (width < 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** service/pricing/blog columns stack vertically
+- **AND** the portfolio grid becomes single-column
+- **AND** the footer columns stack vertically
+
+#### Scenario: Parallax effect on banner
+
+- **GIVEN** the hero banner section exists
+- **THEN** it has a parallax background image effect
+- **AND** text overlays are readable with sufficient contrast
 
 ## Verification Checklist
 

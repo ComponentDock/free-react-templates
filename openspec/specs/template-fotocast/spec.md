@@ -92,92 +92,105 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
   - Column 3: "Follow Me" heading + social icon links (Facebook, Twitter, Instagram, LinkedIn)
 - Copyright line: "Copyright © [year] All rights reserved | Made with ♥ by Component Dock"
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Fotocast template behaviour
+
 Feature: Fotocast — Photography Portfolio Template
 
-  Scenario: Header renders correctly on desktop
-    Given the user is on a desktop viewport (>= 1200px)
-    Then the logo "fotocast." is visible in the top-left
-    And the navigation links "Home", "Photography", "Services", "About", "Contact" are visible
-    And social icons (Facebook, Twitter, Instagram, YouTube) are visible on the right
+#### Scenario: Header renders correctly on desktop
 
-  Scenario: Header renders correctly on mobile
-    Given the user is on a mobile viewport (< 1200px)
-    Then the logo "fotocast." is visible
-    And a hamburger menu icon is visible
-    And the desktop nav links are hidden
+- **GIVEN** the user is on a desktop viewport (>= 1200px)
+- **THEN** the logo "fotocast." is visible in the top-left
+- **AND** the navigation links "Home", "Photography", "Services", "About", "Contact" are visible
+- **AND** social icons (Facebook, Twitter, Instagram, YouTube) are visible on the right
 
-  Scenario: Mobile menu opens on hamburger click
-    Given the user is on a mobile viewport
-    When the user clicks the hamburger menu icon
-    Then an offcanvas menu slides in from the right
-    And navigation links are visible in the mobile menu
-    And a close button is visible
+#### Scenario: Header renders correctly on mobile
 
-  Scenario: Mobile menu closes on close click
-    Given the mobile menu is open
-    When the user clicks the close button
-    Then the mobile menu slides out
+- **GIVEN** the user is on a mobile viewport (< 1200px)
+- **THEN** the logo "fotocast." is visible
+- **AND** a hamburger menu icon is visible
+- **AND** the desktop nav links are hidden
 
-  Scenario: Hero section displays correctly
-    Given the user is on any viewport
-    Then a full-width hero background image is displayed
-    And a dark overlay covers the hero image
-    And the heading "I'm Ben Botsford a Professional Photographer" is visible
-    And the heading is centered on the image
+#### Scenario: Mobile menu opens on hamburger click
 
-  Scenario: Profile picture is displayed below hero
-    Given the hero section is rendered
-    Then a profile picture is visible below the hero
-    And the picture is centered
+- **GIVEN** the user is on a mobile viewport
+- **WHEN** the user clicks the hamburger menu icon
+- **THEN** an offcanvas menu slides in from the right
+- **AND** navigation links are visible in the mobile menu
+- **AND** a close button is visible
 
-  Scenario: Specialties section shows 4 photography types
-    Given the user scrolls to the My Specialties section
-    Then the heading "My Specialties" is visible with an underline
-    And 4 specialty cards are displayed in a 2×2 grid
-    And each card has an image and a title with description
-    And the specialties are "Nature Photography", "Portrait Photography", "Wedding Photography", "Food & Drink Photography"
+#### Scenario: Mobile menu closes on close click
 
-  Scenario: Testimonials carousel works
-    Given the user scrolls to the testimonials section
-    Then a background image with parallax effect is visible
-    And a carousel of testimonial cards is displayed
-    And each card shows a photo, quote, and author name
-    And the user can navigate between testimonials
+- **GIVEN** the mobile menu is open
+- **WHEN** the user clicks the close button
+- **THEN** the mobile menu slides out
 
-  Scenario: Photography gallery shows 6 albums
-    Given the user scrolls to the My Photography section
-    Then the heading "My Photography" is visible
-    And 6 photo album cards are displayed in a 3-column grid
-    And each card shows an image, title, and category info
-    And hovering over a card shows a gradient overlay
+#### Scenario: Hero section displays correctly
 
-  Scenario: CTA section displays correctly
-    Given the user scrolls to the CTA section
-    Then "Need a photographer?" text is visible on the left
-    And a "Contact Me" button is visible on the right
-    And the button is styled as a red danger button with square corners
+- **GIVEN** the user is on any viewport
+- **THEN** a full-width hero background image is displayed
+- **AND** a dark overlay covers the hero image
+- **AND** the heading "I'm Ben Botsford a Professional Photographer" is visible
+- **AND** the heading is centered on the image
 
-  Scenario: Footer renders correctly
-    Given the user scrolls to the footer
-    Then the footer has a dark background
-    And three columns are visible: About, Navigations, Follow Me
-    And social icon links are present
-    And a copyright line with "Component Dock" link is visible
+#### Scenario: Profile picture is displayed below hero
 
-  Scenario: Navigation dropdown works on desktop
-    Given the user is on a desktop viewport
-    When the user hovers over "Photography" in the nav
-    Then a dropdown menu appears with "Nature", "Portrait", "Wedding" options
-    And the dropdown has a purple top border
+- **GIVEN** the hero section is rendered
+- **THEN** a profile picture is visible below the hero
+- **AND** the picture is centered
 
-  Scenario: Section animations trigger on scroll
-    Given the user scrolls down the page
-    Then elements animate into view using AOS (fade-up)
-    And animations have staggered delays for grouped items
-```
+#### Scenario: Specialties section shows 4 photography types
+
+- **GIVEN** the user scrolls to the My Specialties section
+- **THEN** the heading "My Specialties" is visible with an underline
+- **AND** 4 specialty cards are displayed in a 2×2 grid
+- **AND** each card has an image and a title with description
+- **AND** the specialties are "Nature Photography", "Portrait Photography", "Wedding Photography", "Food & Drink Photography"
+
+#### Scenario: Testimonials carousel works
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a background image with parallax effect is visible
+- **AND** a carousel of testimonial cards is displayed
+- **AND** each card shows a photo, quote, and author name
+- **AND** the user can navigate between testimonials
+
+#### Scenario: Photography gallery shows 6 albums
+
+- **GIVEN** the user scrolls to the My Photography section
+- **THEN** the heading "My Photography" is visible
+- **AND** 6 photo album cards are displayed in a 3-column grid
+- **AND** each card shows an image, title, and category info
+- **AND** hovering over a card shows a gradient overlay
+
+#### Scenario: CTA section displays correctly
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** "Need a photographer?" text is visible on the left
+- **AND** a "Contact Me" button is visible on the right
+- **AND** the button is styled as a red danger button with square corners
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** three columns are visible: About, Navigations, Follow Me
+- **AND** social icon links are present
+- **AND** a copyright line with "Component Dock" link is visible
+
+#### Scenario: Navigation dropdown works on desktop
+
+- **GIVEN** the user is on a desktop viewport
+- **WHEN** the user hovers over "Photography" in the nav
+- **THEN** a dropdown menu appears with "Nature", "Portrait", "Wedding" options
+- **AND** the dropdown has a purple top border
+
+#### Scenario: Section animations trigger on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** elements animate into view using AOS (fade-up)
+- **AND** animations have staggered delays for grouped items
 
 ## Verification Checklist
 

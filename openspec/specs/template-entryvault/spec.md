@@ -52,70 +52,85 @@ shows:
 - Subtle card drop shadow
 - No navbar, no footer — pure standalone login form page
 
-## Gherkin scenarios
+## Requirements
 
-### Scenario: Page renders the login card
-  Given the user navigates to the EntryVault page
-  Then a centered login card is visible on a white background
-  And the card has rounded corners and a subtle drop shadow
+### Feature: EntryVault template behaviour
 
-### Scenario: Circular icon displays
-  Given the login card is visible
-  Then an 80px blue circular icon with a white user silhouette is shown at the top of the card
+#### Scenario: Page renders the login card
 
-### Scenario: Sign In heading
-  Given the login card is visible
-  Then a "Sign In" heading is displayed in light font weight below the icon
+- **GIVEN** the user navigates to the EntryVault page
+- **THEN** a centered login card is visible on a white background
+- **AND** the card has rounded corners and a subtle drop shadow
 
-### Scenario: Username input
-  Given the login card is visible
-  Then a text input with placeholder "Username" is present
-  And the input has a 5px border-radius and 52px height
-  And the input border is light gray (`rgba(0,0,0,0.1)`)
+#### Scenario: Circular icon displays
 
-### Scenario: Password input
-  Given the login card is visible
-  Then a password input with placeholder "Password" is present
-  And the input has the same styling as the username input
+- **GIVEN** the login card is visible
+- **THEN** an 80px blue circular icon with a white user silhouette is shown at the top of the card
 
-### Scenario: Input focus state
-  Given the username input is focused
-  Then the input border changes to brand blue (#1089ff)
-  And no box-shadow is applied
+#### Scenario: Sign In heading
 
-### Scenario: Login button
-  Given the login card is visible
-  Then a full-width "Login" button is present
-  And the button has a pill shape (border-radius 40px)
-  And the button background is brand blue (#1089ff)
-  And the button text is white
+- **GIVEN** the login card is visible
+- **THEN** a "Sign In" heading is displayed in light font weight below the icon
 
-### Scenario: Login button hover
-  Given the user hovers over the Login button
-  Then the button background becomes transparent
-  And the button border and text become brand blue (#1089ff)
+#### Scenario: Username input
 
-### Scenario: Remember Me checkbox
-  Given the login card is visible
-  Then a "Remember Me" checkbox is present on the left side below the button
-  And the checkbox uses a custom styled appearance with brand blue when checked
+- **GIVEN** the login card is visible
+- **THEN** a text input with placeholder "Username" is present
+- **AND** the input has a 5px border-radius and 52px height
+- **AND** the input border is light gray (`rgba(0,0,0,0.1)`)
 
-### Scenario: Forgot Password link
-  Given the login card is visible
-  Then a "Forgot Password" link is present on the right side below the button
-  And the link color matches the brand blue (#1089ff)
+#### Scenario: Password input
 
-### Scenario: Page heading
-  Given the user navigates to the EntryVault page
-  Then a page-level heading "EntryVault" is displayed above the card
-  And the heading is 28px and black (#000)
+- **GIVEN** the login card is visible
+- **THEN** a password input with placeholder "Password" is present
+- **AND** the input has the same styling as the username input
 
-### Scenario: Responsive layout
-  Given the user views the page on a mobile device
-  Then the login card remains centered and fills available width with appropriate padding
-  And all form elements remain usable at small viewport sizes
+#### Scenario: Input focus state
 
-### Scenario: Component Dock footer link
-  Given the user scrolls to the bottom of the page
-  Then a footer link to "https://www.componentdock.com/" is present
-  And the link text references "Component Dock"
+- **GIVEN** the username input is focused
+- **THEN** the input border changes to brand blue (#1089ff)
+- **AND** no box-shadow is applied
+
+#### Scenario: Login button
+
+- **GIVEN** the login card is visible
+- **THEN** a full-width "Login" button is present
+- **AND** the button has a pill shape (border-radius 40px)
+- **AND** the button background is brand blue (#1089ff)
+- **AND** the button text is white
+
+#### Scenario: Login button hover
+
+- **GIVEN** the user hovers over the Login button
+- **THEN** the button background becomes transparent
+- **AND** the button border and text become brand blue (#1089ff)
+
+#### Scenario: Remember Me checkbox
+
+- **GIVEN** the login card is visible
+- **THEN** a "Remember Me" checkbox is present on the left side below the button
+- **AND** the checkbox uses a custom styled appearance with brand blue when checked
+
+#### Scenario: Forgot Password link
+
+- **GIVEN** the login card is visible
+- **THEN** a "Forgot Password" link is present on the right side below the button
+- **AND** the link color matches the brand blue (#1089ff)
+
+#### Scenario: Page heading
+
+- **GIVEN** the user navigates to the EntryVault page
+- **THEN** a page-level heading "EntryVault" is displayed above the card
+- **AND** the heading is 28px and black (#000)
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the login card remains centered and fills available width with appropriate padding
+- **AND** all form elements remain usable at small viewport sizes
+
+#### Scenario: Component Dock footer link
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer link to "https://www.componentdock.com/" is present
+- **AND** the link text references "Component Dock"

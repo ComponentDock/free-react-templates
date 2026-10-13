@@ -30,7 +30,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React icons.
 12. **Pricing & Packages**: 3 pricing tiers with features and "Get Started" buttons.
 13. **Footer**: Clinic overview, quick links, recent posts, contact info, and copyright footer with mandatory link to `https://www.componentdock.com/` ("Component Dock").
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Dentavibe Landing Page
 
@@ -38,35 +38,41 @@ As a visitor seeking dental care services
 I want to view clinic services, doctors, pricing, and book appointments
 So that I can choose the right dental treatment and contact the clinic
 
-Scenario: View Navbar and Hero section
-Given the user opens the Dentavibe home page
-When the user views the header and hero banner
-Then they should see the clinic brand, navigation links, and hero call to action
+#### Scenario: View Navbar and Hero section
 
-Scenario: Book an appointment
-Given the user fills out the appointment booking form with valid details
-When the user submits the appointment form
-Then a success message should confirm the appointment request
+- **GIVEN** the user opens the Dentavibe home page
+- **WHEN** the user views the header and hero banner
+- **THEN** they should see the clinic brand, navigation links, and hero call to action
 
-Scenario: Explore services
-Given the user scrolls to the services section
-When they view the list of dental services
-Then each service card should display an icon, title, and description
+#### Scenario: Book an appointment
 
-Scenario: View qualified dentists
-Given the user views the doctors section
-When the team cards load
-Then each dentist should display their name, role, and social links
+- **GIVEN** the user fills out the appointment booking form with valid details
+- **WHEN** the user submits the appointment form
+- **THEN** a success message should confirm the appointment request
 
-Scenario: View pricing packages
-Given the user navigates to the pricing section
-When the pricing tiers are displayed
-Then the user should see package features and call-to-action buttons
+#### Scenario: Explore services
 
-Scenario: Footer attribution
-Given the user scrolls to the bottom of the page
-When viewing the footer
-Then they must see the link to Component Dock (`https://www.componentdock.com/`)
+- **GIVEN** the user scrolls to the services section
+- **WHEN** they view the list of dental services
+- **THEN** each service card should display an icon, title, and description
+
+#### Scenario: View qualified dentists
+
+- **GIVEN** the user views the doctors section
+- **WHEN** the team cards load
+- **THEN** each dentist should display their name, role, and social links
+
+#### Scenario: View pricing packages
+
+- **GIVEN** the user navigates to the pricing section
+- **WHEN** the pricing tiers are displayed
+- **THEN** the user should see package features and call-to-action buttons
+
+#### Scenario: Footer attribution
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** viewing the footer
+- **THEN** they must see the link to Component Dock (`https://www.componentdock.com/`)
 
 ## Verification Checklist
 

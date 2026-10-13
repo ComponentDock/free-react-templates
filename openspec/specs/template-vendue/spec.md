@@ -38,124 +38,130 @@ multi-column footer with newsletter subscribe.
 6. **Banner Cover 2 ("New Denim Coat")** — Same layout as Banner Cover 1, different product. Left: model image. Right: subtitle, title "New Denim Coat", black CTA.
 7. **Footer** — 4-column layout: (a) About Us text + email subscribe form, (b) Quick Links in 3 sub-columns (Sell online, Features, Shopping cart, Store builder / Mobile commerce, Dropshipping, Website development / Point of sale, Hardware, Software), (c) Contact Info (address, phone, email), (d) Copyright bar with heart icon.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navbar
 
-```gherkin
-Scenario: Navbar renders with logo and navigation links
-  Given the page loads
-  Then the navbar displays the "Vendue" logo
-  And navigation links "Collection", "Shop", "Catalogs", "Contact" are visible
+#### Scenario: Navbar renders with logo and navigation links
 
-Scenario: Collection dropdown shows sub-items
-  Given the navbar is visible
-  When the user hovers over "Collection"
-  Then a dropdown appears with "Men", "Women", "Children" items
+- **GIVEN** the page loads
+- **THEN** the navbar displays the "Vendue" logo
+- **AND** navigation links "Collection", "Shop", "Catalogs", "Contact" are visible
 
-Scenario: Navbar icons are present
-  Given the navbar is visible
-  Then a search icon is displayed
-  And a wishlist/heart icon is displayed
-  And a shopping cart icon with count badge is displayed
+#### Scenario: Collection dropdown shows sub-items
 
-Scenario: Mobile hamburger toggle
-  Given the viewport is mobile
-  Then a hamburger menu toggle icon is displayed
-```
+- **GIVEN** the navbar is visible
+- **WHEN** the user hovers over "Collection"
+- **THEN** a dropdown appears with "Men", "Women", "Children" items
+
+#### Scenario: Navbar icons are present
+
+- **GIVEN** the navbar is visible
+- **THEN** a search icon is displayed
+- **AND** a wishlist/heart icon is displayed
+- **AND** a shopping cart icon with count badge is displayed
+
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** the viewport is mobile
+- **THEN** a hamburger menu toggle icon is displayed
 
 ### Feature: Hero Banner
 
-```gherkin
-Scenario: Hero banner displays featured product
-  Given the page loads
-  Then a hero section with light gray background is visible
-  And the heading shows a product name
-  And a subtitle describes the collection
-  And a price with strikethrough original price is shown
-  And two CTA buttons ("Shop Now") are displayed
+#### Scenario: Hero banner displays featured product
 
-Scenario: Hero banner has product image
-  Given the hero section is visible
-  Then a product/model image is displayed on the right side
-```
+- **GIVEN** the page loads
+- **THEN** a hero section with light gray background is visible
+- **AND** the heading shows a product name
+- **AND** a subtitle describes the collection
+- **AND** a price with strikethrough original price is shown
+- **AND** two CTA buttons ("Shop Now") are displayed
+
+#### Scenario: Hero banner has product image
+
+- **GIVEN** the hero section is visible
+- **THEN** a product/model image is displayed on the right side
 
 ### Feature: Product Grid
 
-```gherkin
-Scenario: Product grid displays 6 items in 2 rows
-  Given the page loads
-  Then 6 product cards are rendered in a 3-column grid
+#### Scenario: Product grid displays 6 items in 2 rows
 
-Scenario: Each product card shows essential info
-  Given a product card is rendered
-  Then it displays a product image
-  And a product name
-  And a collection label
-  And a price (with optional strikethrough for sale items)
+- **GIVEN** the page loads
+- **THEN** 6 product cards are rendered in a 3-column grid
 
-Scenario: Sale items show a badge
-  Given a product is on sale
-  Then a circular "Sale" badge with warm yellow background is shown
+#### Scenario: Each product card shows essential info
 
-Scenario: Product cards are clickable
-  Given a product card is rendered
-  Then the entire card is wrapped in a link element
-```
+- **GIVEN** a product card is rendered
+- **THEN** it displays a product image
+- **AND** a product name
+- **AND** a collection label
+- **AND** a price (with optional strikethrough for sale items)
+
+#### Scenario: Sale items show a badge
+
+- **GIVEN** a product is on sale
+- **THEN** a circular "Sale" badge with warm yellow background is shown
+
+#### Scenario: Product cards are clickable
+
+- **GIVEN** a product card is rendered
+- **THEN** the entire card is wrapped in a link element
 
 ### Feature: Banner Covers
 
-```gherkin
-Scenario: Banner Cover 1 displays Jacket promotion
-  Given the page loads
-  Then a banner section with "Jacket" heading is visible
-  And a hashtag subtitle "#New Summer Collection 2019" is shown
-  And a "Shop Now" button with black background is displayed
-  And a model image fills the opposite column
+#### Scenario: Banner Cover 1 displays Jacket promotion
 
-Scenario: Banner Cover 2 displays Denim Coat promotion
-  Given the page loads
-  Then a banner section with "New Denim Coat" heading is visible
-  And a hashtag subtitle "#New Summer Collection 2019" is shown
-  And a "Shop Now" button with black background is displayed
-  And a model image fills the opposite column
-```
+- **GIVEN** the page loads
+- **THEN** a banner section with "Jacket" heading is visible
+- **AND** a hashtag subtitle "#New Summer Collection 2019" is shown
+- **AND** a "Shop Now" button with black background is displayed
+- **AND** a model image fills the opposite column
+
+#### Scenario: Banner Cover 2 displays Denim Coat promotion
+
+- **GIVEN** the page loads
+- **THEN** a banner section with "New Denim Coat" heading is visible
+- **AND** a hashtag subtitle "#New Summer Collection 2019" is shown
+- **AND** a "Shop Now" button with black background is displayed
+- **AND** a model image fills the opposite column
 
 ### Feature: Collections Carousel
 
-```gherkin
-Scenario: Carousel section displays "Collections" heading
-  Given the page loads
-  Then a "COLLECTIONS" heading is visible
+#### Scenario: Carousel section displays "Collections" heading
 
-Scenario: Carousel shows product cards horizontally
-  Given the carousel section is visible
-  Then multiple product cards are displayed in a horizontal scrollable carousel
-  And product cards use the same style as the product grid
-```
+- **GIVEN** the page loads
+- **THEN** a "COLLECTIONS" heading is visible
+
+#### Scenario: Carousel shows product cards horizontally
+
+- **GIVEN** the carousel section is visible
+- **THEN** multiple product cards are displayed in a horizontal scrollable carousel
+- **AND** product cards use the same style as the product grid
 
 ### Feature: Footer
 
-```gherkin
-Scenario: Footer has About Us and Subscribe
-  Given the page loads
-  Then the footer displays an "About Us" section with descriptive text
-  And an email subscribe form with input field and "Send" button
+#### Scenario: Footer has About Us and Subscribe
 
-Scenario: Footer has Quick Links
-  Given the footer is visible
-  Then "Quick Links" are displayed in 3 columns
-  And links include "Sell online", "Features", "Shopping cart", "Store builder", "Mobile commerce", "Dropshipping", "Website development", "Point of sale", "Hardware", "Software"
+- **GIVEN** the page loads
+- **THEN** the footer displays an "About Us" section with descriptive text
+- **AND** an email subscribe form with input field and "Send" button
 
-Scenario: Footer has Contact Info
-  Given the footer is visible
-  Then a "Contact Info" section displays address, phone, and email
+#### Scenario: Footer has Quick Links
 
-Scenario: Footer copyright with Component Dock link
-  Given the footer is visible
-  Then a copyright notice is displayed
-  And a link to "https://www.componentdock.com/" is present (branded as "Component Dock")
-```
+- **GIVEN** the footer is visible
+- **THEN** "Quick Links" are displayed in 3 columns
+- **AND** links include "Sell online", "Features", "Shopping cart", "Store builder", "Mobile commerce", "Dropshipping", "Website development", "Point of sale", "Hardware", "Software"
+
+#### Scenario: Footer has Contact Info
+
+- **GIVEN** the footer is visible
+- **THEN** a "Contact Info" section displays address, phone, and email
+
+#### Scenario: Footer copyright with Component Dock link
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright notice is displayed
+- **AND** a link to "https://www.componentdock.com/" is present (branded as "Component Dock")
 
 ## Verification checklist
 

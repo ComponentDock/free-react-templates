@@ -96,7 +96,7 @@ Extracted from `https://preview.colorlib.com/theme/academica/css/style.css`
 6. Courses (white bg, carousel of 4 course cards)
 7. Footer (not fully analyzed — standard Bootstrap footer)
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Brainery education landing page
 
@@ -105,61 +105,69 @@ I want to explore courses, read testimonials, and search for classes,
 so that I can find the right learning opportunity.
 
 #### Scenario: Header displays navigation and auth links
-  Given I am on the landing page
-  Then I should see a header with a logo
-  And I should see "Login" and "Register" links
-  And I should see navigation links: Home, About us, Courses, News, Contact
-  And on mobile I should see a hamburger menu icon
+
+- **GIVEN** I am on the landing page
+- **THEN** I should see a header with a logo
+- **AND** I should see "Login" and "Register" links
+- **AND** I should see navigation links: Home, About us, Courses, News, Contact
+- **AND** on mobile I should see a hamburger menu icon
 
 #### Scenario: Hero section shows featured course
-  Given I am on the landing page
-  Then I should see a full-width hero with a background image
-  And I should see a large white headline (e.g. "Literature Course")
-  And I should see a description paragraph
-  And I should see an author avatar with name and title
-  And I should see a "See Details" CTA button with gradient background
+
+- **GIVEN** I am on the landing page
+- **THEN** I should see a full-width hero with a background image
+- **AND** I should see a large white headline (e.g. "Literature Course")
+- **AND** I should see a description paragraph
+- **AND** I should see an author avatar with name and title
+- **AND** I should see a "See Details" CTA button with gradient background
 
 #### Scenario: Course search form
-  Given I am on the landing page
-  When I scroll to the search section
-  Then I should see "Search your Course" heading
-  And I should see 5 input fields: Course, Level, Date, Teacher, Price
-  And I should see a "Search" button
+
+- **GIVEN** I am on the landing page
+- **WHEN** I scroll to the search section
+- **THEN** I should see "Search your Course" heading
+- **AND** I should see 5 input fields: Course, Level, Date, Teacher, Price
+- **AND** I should see a "Search" button
 
 #### Scenario: Services section displays 6 service cards
-  Given I am on the landing page
-  When I scroll to the services section
-  Then I should see 6 service cards in a 3-column grid
-  And each card should have an icon, title, and description
-  And the icons should use the brand gradient
+
+- **GIVEN** I am on the landing page
+- **WHEN** I scroll to the services section
+- **THEN** I should see 6 service cards in a 3-column grid
+- **AND** each card should have an icon, title, and description
+- **AND** the icons should use the brand gradient
 
 #### Scenario: Testimonials carousel
-  Given I am on the landing page
-  When I scroll to the testimonials section
-  Then I should see a section with a dark background image
-  And I should see "Testimonials" heading
-  And I should see testimonial slides with quotes, avatars, and names
-  And I should be able to navigate between slides
+
+- **GIVEN** I am on the landing page
+- **WHEN** I scroll to the testimonials section
+- **THEN** I should see a section with a dark background image
+- **AND** I should see "Testimonials" heading
+- **AND** I should see testimonial slides with quotes, avatars, and names
+- **AND** I should be able to navigate between slides
 
 #### Scenario: Course catalog cards
-  Given I am on the landing page
-  When I scroll to the courses section
-  Then I should see 4 course cards
-  And each card should show an image, price badge, title, description
-  And each card should show student count, location count, and star rating
-  And each card should show seller info (avatar + name)
+
+- **GIVEN** I am on the landing page
+- **WHEN** I scroll to the courses section
+- **THEN** I should see 4 course cards
+- **AND** each card should show an image, price badge, title, description
+- **AND** each card should show student count, location count, and star rating
+- **AND** each card should show seller info (avatar + name)
 
 #### Scenario: Footer with links
-  Given I am on the landing page
-  When I scroll to the footer
-  Then I should see footer links and copyright information
-  And I should see a "Component Dock" attribution link
+
+- **GIVEN** I am on the landing page
+- **WHEN** I scroll to the footer
+- **THEN** I should see footer links and copyright information
+- **AND** I should see a "Component Dock" attribution link
 
 #### Scenario: Mobile responsive layout
-  Given I am viewing the page on a mobile viewport
-  Then the header should collapse to a hamburger menu
-  And the service cards should stack vertically
-  And the course cards should stack vertically
+
+- **GIVEN** I am viewing the page on a mobile viewport
+- **THEN** the header should collapse to a hamburger menu
+- **AND** the service cards should stack vertically
+- **AND** the course cards should stack vertically
 
 ## Verification checklist
 

@@ -82,88 +82,80 @@ navbar section only.
 - **Mobile (<768px):** Brand centered, search full-width below, nav links centered below
 - **Desktop (≥768px):** Brand + search flex row on left (75%), nav links on right (25%)
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders with brand, search, and navigation
-```
-Given the LookupBar component is rendered
-Then a nav element with class "custom-navbar" should be visible
-And a "Brand" text link should be present
-And a search input with placeholder "Search..." should be visible
-And navigation links "Home", "About", "Contact" should be visible
-```
+### Feature: LookupBar template behaviour
 
-### Scenario: Search input has pill-shaped styling
-```
-Given the LookupBar component is rendered
-When I inspect the search input
-Then it should have a border-radius of 30px (pill shape)
-And a border color of #efefef
-And a left padding of 35px (for icon space)
-```
+#### Scenario: Navbar renders with brand, search, and navigation
 
-### Scenario: Search icon is displayed inside the search bar
-```
-Given the LookupBar component is rendered
-Then a search icon (magnifying glass SVG) should be visible
-And it should be positioned to the left of the input
-And its color should be #777777
-```
+- **GIVEN** the LookupBar component is rendered
+- **THEN** a nav element with class "custom-navbar" should be visible
+- **AND** a "Brand" text link should be present
+- **AND** a search input with placeholder "Search..." should be visible
+- **AND** navigation links "Home", "About", "Contact" should be visible
 
-### Scenario: Navbar has shadow and border
-```
-Given the LookupBar component is rendered
-Then the navbar should have a bottom border of 1px solid #dae0e5
-And a box-shadow of 0 1px 5px 0 rgba(0, 0, 0, 0.1)
-```
+#### Scenario: Search input has pill-shaped styling
 
-### Scenario: Navigation links respond to hover
-```
-Given the LookupBar component is rendered
-When I hover over a navigation link
-Then the link color should transition to #0056b3
-And the transition should be 0.3s ease
-```
+- **GIVEN** the LookupBar component is rendered
+- **WHEN** I inspect the search input
+- **THEN** it should have a border-radius of 30px (pill shape)
+- **AND** a border color of #efefef
+- **AND** a left padding of 35px (for icon space)
 
-### Scenario: Search input focus state
-```
-Given the LookupBar component is rendered
-When I focus the search input
-Then the border color should change to #000000
-And the box-shadow should be removed
-And the outline should be removed
-```
+#### Scenario: Search icon is displayed inside the search bar
 
-### Scenario: Mobile responsive layout
-```
-Given the LookupBar component is rendered on a viewport narrower than 768px
-Then the brand text should be centered
-And the search form should be full-width
-And the navigation links should be centered below
-```
+- **GIVEN** the LookupBar component is rendered
+- **THEN** a search icon (magnifying glass SVG) should be visible
+- **AND** it should be positioned to the left of the input
+- **AND** its color should be #777777
 
-### Scenario: Brand link navigates to home
-```
-Given the LookupBar component is rendered
-When I click the "Brand" text
-Then it should navigate to "/"
-```
+#### Scenario: Navbar has shadow and border
 
-### Scenario: Navigation links have correct hrefs
-```
-Given the LookupBar component is rendered
-Then the "Home" link should have href "/"
-And the "About" link should have href "/about"
-And the "Contact" link should have href "/contact"
-```
+- **GIVEN** the LookupBar component is rendered
+- **THEN** the navbar should have a bottom border of 1px solid #dae0e5
+- **AND** a box-shadow of 0 1px 5px 0 rgba(0, 0, 0, 0.1)
 
-### Scenario: Search form submits correctly
-```
-Given the LookupBar component is rendered
-When I type a query into the search input
-And I submit the form
-Then the form should handle the submit event
-```
+#### Scenario: Navigation links respond to hover
+
+- **GIVEN** the LookupBar component is rendered
+- **WHEN** I hover over a navigation link
+- **THEN** the link color should transition to #0056b3
+- **AND** the transition should be 0.3s ease
+
+#### Scenario: Search input focus state
+
+- **GIVEN** the LookupBar component is rendered
+- **WHEN** I focus the search input
+- **THEN** the border color should change to #000000
+- **AND** the box-shadow should be removed
+- **AND** the outline should be removed
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the LookupBar component is rendered on a viewport narrower than 768px
+- **THEN** the brand text should be centered
+- **AND** the search form should be full-width
+- **AND** the navigation links should be centered below
+
+#### Scenario: Brand link navigates to home
+
+- **GIVEN** the LookupBar component is rendered
+- **WHEN** I click the "Brand" text
+- **THEN** it should navigate to "/"
+
+#### Scenario: Navigation links have correct hrefs
+
+- **GIVEN** the LookupBar component is rendered
+- **THEN** the "Home" link should have href "/"
+- **AND** the "About" link should have href "/about"
+- **AND** the "Contact" link should have href "/contact"
+
+#### Scenario: Search form submits correctly
+
+- **GIVEN** the LookupBar component is rendered
+- **WHEN** I type a query into the search input
+- **AND** I submit the form
+- **THEN** the form should handle the submit event
 
 ## Verification Checklist
 

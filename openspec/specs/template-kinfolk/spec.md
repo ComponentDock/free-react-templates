@@ -51,99 +51,111 @@ Extracted from the live preview's `css/style.css`:
 9. **Testimonials** — "Change Lives" heading, 3 testimonial cards (blockquote + person name/location + avatar image). Background light `#e9ecef`.
 10. **Footer** — three-column: "Church Quick Links" (3 sub-columns of ministry links), "Events" (3 recent event cards with date/person/comments), "Contact Information" (address, phone, email). Copyright bar with social icons.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Kinfolk Church Template
 
 #### Scenario: Top bar renders with nav links and social icons
-- GIVEN the page loads
-- WHEN the top bar is visible
-- THEN it shows "Home", "About Us", "Ministries" links on the left
-- AND social icons (Facebook, Twitter, LinkedIn, Instagram) on the right
-- AND the top bar background is light gray
+
+- **GIVEN** the page loads
+- **WHEN** the top bar is visible
+- **THEN** it shows "Home", "About Us", "Ministries" links on the left
+- **AND** social icons (Facebook, Twitter, LinkedIn, Instagram) on the right
+- **AND** the top bar background is light gray
 
 #### Scenario: Navbar brand and navigation
-- GIVEN the page loads
-- WHEN the navbar is visible
-- THEN the brand shows "Kinfolk" with a heart icon
-- AND nav items include Home, Ministries (dropdown), Sermons (dropdown), Events, About, Contact
-- AND the active nav item uses brand purple color
+
+- **GIVEN** the page loads
+- **WHEN** the navbar is visible
+- **THEN** the brand shows "Kinfolk" with a heart icon
+- **AND** nav items include Home, Ministries (dropdown), Sermons (dropdown), Events, About, Contact
+- **AND** the active nav item uses brand purple color
 
 #### Scenario: Hero section displays with background and CTA
-- GIVEN the page loads
-- WHEN the hero section is visible
-- THEN it shows a background image with dark overlay
-- AND a centered heading "Let your light so shine before men"
-- AND a primary "About Us" button with pill shape and brand purple
-- AND a "Visit Our Church" text link with location icon
+
+- **GIVEN** the page loads
+- **WHEN** the hero section is visible
+- **THEN** it shows a background image with dark overlay
+- **AND** a centered heading "Let your light so shine before men"
+- **AND** a primary "About Us" button with pill shape and brand purple
+- **AND** a "Visit Our Church" text link with location icon
 
 #### Scenario: Latest sermon announcement bar overlaps hero
-- GIVEN the page loads
-- WHEN the sermon bar is visible
-- THEN it overlaps the bottom of the hero section
-- AND shows "Latest Sermon:" label with sermon title and pastor name
-- AND media icons for video, audio, download, and text
+
+- **GIVEN** the page loads
+- **WHEN** the sermon bar is visible
+- **THEN** it overlaps the bottom of the hero section
+- **AND** shows "Latest Sermon:" label with sermon title and pastor name
+- **AND** media icons for video, audio, download, and text
 
 #### Scenario: Welcome section with video thumbnail
-- GIVEN the page loads
-- WHEN the welcome section is visible
-- THEN it shows "Welcome To Kinfolk" heading on the left
-- AND a paragraph description
-- AND pastor attribution text
-- AND a video thumbnail with play button on the right
+
+- **GIVEN** the page loads
+- **WHEN** the welcome section is visible
+- **THEN** it shows "Welcome To Kinfolk" heading on the left
+- **AND** a paragraph description
+- **AND** pastor attribution text
+- **AND** a video thumbnail with play button on the right
 
 #### Scenario: Three-column features section
-- GIVEN the page loads
-- WHEN the features section is visible
-- THEN it shows three feature cards in a row
-- AND each card has an icon, heading, and paragraph
-- AND the icons use brand purple color
+
+- **GIVEN** the page loads
+- **WHEN** the features section is visible
+- **THEN** it shows three feature cards in a row
+- **AND** each card has an icon, heading, and paragraph
+- **AND** the icons use brand purple color
 
 #### Scenario: Church services carousel
-- GIVEN the page loads
-- WHEN the services carousel is visible
-- THEN it shows a "Church Services" heading
-- AND a horizontally scrollable carousel of service cards
-- AND each card has an image, heading, description, and "Read More" link
+
+- **GIVEN** the page loads
+- **WHEN** the services carousel is visible
+- **THEN** it shows a "Church Services" heading
+- **AND** a horizontally scrollable carousel of service cards
+- **AND** each card has an image, heading, description, and "Read More" link
 
 #### Scenario: Sermons and events grid
-- GIVEN the page loads
-- WHEN the sermons and events section is visible
-- THEN "Latest Sermons" column shows 3 sermon items with thumbnail, title, meta, and media icons
-- AND "Latest Events" column shows 2 event items with thumbnail, title, meta, description, and "Read More" link
+
+- **GIVEN** the page loads
+- **WHEN** the sermons and events section is visible
+- **THEN** "Latest Sermons" column shows 3 sermon items with thumbnail, title, meta, and media icons
+- **AND** "Latest Events" column shows 2 event items with thumbnail, title, meta, description, and "Read More" link
 
 #### Scenario: Testimonials section
-- GIVEN the page loads
-- WHEN the testimonials section is visible
-- THEN it shows "Change Lives" heading
-- AND 3 testimonial cards in a row
-- AND each card has a blockquote, person name, location, and avatar image
-- AND the section has a light background
+
+- **GIVEN** the page loads
+- **WHEN** the testimonials section is visible
+- **THEN** it shows "Change Lives" heading
+- **AND** 3 testimonial cards in a row
+- **AND** each card has a blockquote, person name, location, and avatar image
+- **AND** the section has a light background
 
 #### Scenario: Footer with links, events, and contact
-- GIVEN the page loads
-- WHEN the footer is visible
-- THEN it has brand purple background
-- AND "Church Quick Links" column with three sub-columns of ministry links
-- AND "Events" column with 3 recent event entries
-- AND "Contact Information" column with address, phone, email
-- AND a copyright bar with social icons
-- AND the footer links to https://www.componentdock.com/
+
+- **GIVEN** the page loads
+- **WHEN** the footer is visible
+- **THEN** it has brand purple background
+- **AND** "Church Quick Links" column with three sub-columns of ministry links
+- **AND** "Events" column with 3 recent event entries
+- **AND** "Contact Information" column with address, phone, email
+- **AND** a copyright bar with social icons
+- **AND** the footer links to https://www.componentdock.com/
 
 #### Scenario: Responsive layout
-- GIVEN the page loads on a mobile device
-- WHEN the viewport is less than 768px wide
-- THEN the navbar collapses to a hamburger menu
-- AND columns stack vertically
-- AND the carousel becomes swipeable
+
+- **GIVEN** the page loads on a mobile device
+- **WHEN** the viewport is less than 768px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** columns stack vertically
+- **AND** the carousel becomes swipeable
 
 #### Scenario: Accessibility
-- GIVEN any section renders
-- WHEN inspecting the DOM
-- THEN nav items use semantic `<a>` elements with accessible labels
-- AND images have alt text
-- AND the hero button is keyboard-focusable
-- AND color contrast meets WCAG AA
+
+- **GIVEN** any section renders
+- **WHEN** inspecting the DOM
+- **THEN** nav items use semantic `<a>` elements with accessible labels
+- **AND** images have alt text
+- **AND** the hero button is keyboard-focusable
+- **AND** color contrast meets WCAG AA
 
 ## Verification checklist
 

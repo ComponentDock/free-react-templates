@@ -60,49 +60,55 @@ returns 404. Falling back to the screenshot as sole reference (verified
 unreachable). Implementer should match the visual proportions and colors
 as closely as possible from the reference screenshot.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Querygate — Search Form Hero
 
-  Scenario: Page loads with full-viewport hero
-    Given the user opens the Querygate page
-    Then a full-viewport hero section is visible
-    And a scenic background image fills the hero
-    And a dark overlay is visible over the background
-    And the heading "Discover the Amazing City" is displayed in white
+#### Scenario: Page loads with full-viewport hero
 
-  Scenario: Search bar displays two input fields and a button
-    Given the user views the hero section
-    Then a search bar with dark semi-transparent background is visible
-    And a text input with placeholder "What are you looking for?" is shown
-    And a text input with placeholder "location" is shown
-    And a blue "Search" button is shown to the right of the inputs
+- **GIVEN** the user opens the Querygate page
+- **THEN** a full-viewport hero section is visible
+- **AND** a scenic background image fills the hero
+- **AND** a dark overlay is visible over the background
+- **AND** the heading "Discover the Amazing City" is displayed in white
 
-  Scenario: Search form accepts user input
-    Given the user focuses the keyword input
-    When the user types "coffee shops"
-    Then the keyword input contains "coffee shops"
-    Given the user focuses the location input
-    When the user types "New York"
-    Then the location input contains "New York"
+#### Scenario: Search bar displays two input fields and a button
 
-  Scenario: Search button is clickable
-    Given the user has filled in the search fields
-    When the user clicks the "Search" button
-    Then the form does not navigate away (SPA behavior)
-    And the button responds to the click (visual feedback)
+- **GIVEN** the user views the hero section
+- **THEN** a search bar with dark semi-transparent background is visible
+- **AND** a text input with placeholder "What are you looking for?" is shown
+- **AND** a text input with placeholder "location" is shown
+- **AND** a blue "Search" button is shown to the right of the inputs
 
-  Scenario: Responsive layout on mobile
-    Given the user opens the page on a 375px viewport
-    Then the hero still fills the viewport
-    And the search bar stacks vertically or adjusts to fit
-    And the heading text scales appropriately
-    And the inputs and button are usable on touch
+#### Scenario: Search form accepts user input
 
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the bottom of the page
-    Then a footer section is visible
-    And the footer contains a link to https://www.componentdock.com/
+- **GIVEN** the user focuses the keyword input
+- **WHEN** the user types "coffee shops"
+- **THEN** the keyword input contains "coffee shops"
+- **GIVEN** the user focuses the location input
+- **WHEN** the user types "New York"
+- **THEN** the location input contains "New York"
+
+#### Scenario: Search button is clickable
+
+- **GIVEN** the user has filled in the search fields
+- **WHEN** the user clicks the "Search" button
+- **THEN** the form does not navigate away (SPA behavior)
+- **AND** the button responds to the click (visual feedback)
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the user opens the page on a 375px viewport
+- **THEN** the hero still fills the viewport
+- **AND** the search bar stacks vertically or adjusts to fit
+- **AND** the heading text scales appropriately
+- **AND** the inputs and button are usable on touch
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **THEN** a footer section is visible
+- **AND** the footer contains a link to https://www.componentdock.com/
 
 ## Verification checklist
 

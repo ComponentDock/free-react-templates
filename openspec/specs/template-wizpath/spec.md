@@ -31,84 +31,84 @@ Recreation of **ColorLib Wizard 8** — a multi-step onboarding/registration wiz
 
 Food/grocery delivery theme with decorative food imagery in corners (spices, herbs, tomatoes). Central white card on textured beige background. Four-step progress indicator at top. "BASIC DETAILS" form section with 2/3-column grid of input fields. Each field has a small matching icon. BACK and CONTINUE buttons at bottom of card. Minimalist, warm, earthy aesthetic.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: WizPath — Multi-Step Wizard Form
 
 #### Scenario: Page renders with four-step progress indicator
 
-- **Given** the user navigates to the WizPath page
-- **When** the page loads
-- **Then** a 4-step progress indicator is visible at the top
-- **And** Step 01 is active (solid green circle with white icon)
-- **And** Steps 02, 03, 04 are inactive (green outline circles)
-- **And** faint green connector lines link the steps
+- **GIVEN** the user navigates to the WizPath page
+- **WHEN** the page loads
+- **THEN** a 4-step progress indicator is visible at the top
+- **AND** Step 01 is active (solid green circle with white icon)
+- **AND** Steps 02, 03, 04 are inactive (green outline circles)
+- **AND** faint green connector lines link the steps
 
 #### Scenario: Progress indicator updates on step navigation
 
-- **Given** the user is on Step 01
-- **When** the user clicks "CONTINUE"
-- **Then** Step 01 becomes completed (green check or filled)
-- **And** Step 02 becomes active (solid green circle)
-- **And** Step 01's icon changes to a completed state
+- **GIVEN** the user is on Step 01
+- **WHEN** the user clicks "CONTINUE"
+- **THEN** Step 01 becomes completed (green check or filled)
+- **AND** Step 02 becomes active (solid green circle)
+- **AND** Step 01's icon changes to a completed state
 
 #### Scenario: Step 01 displays Basic Details form
 
-- **Given** the user is on Step 01
-- **When** the form renders
-- **Then** a heading "BASIC DETAILS" is displayed
-- **And** input fields exist for: First Name, Last Name, Email ID, User ID
-- **And** a 3-column row exists for: Country, State, City
-- **And** a Username field and Password field (with show/hide toggle) exist
-- **And** each field has a small matching icon
+- **GIVEN** the user is on Step 01
+- **WHEN** the form renders
+- **THEN** a heading "BASIC DETAILS" is displayed
+- **AND** input fields exist for: First Name, Last Name, Email ID, User ID
+- **AND** a 3-column row exists for: Country, State, City
+- **AND** a Username field and Password field (with show/hide toggle) exist
+- **AND** each field has a small matching icon
 
 #### Scenario: Input fields have correct styling
 
-- **Given** any input field on the form
-- **When** the field renders
-- **Then** the field has a thin light gray border
-- **And** the field has a white background (or light blue when active/filled)
-- **And** placeholder text is light gray
-- **And** fields have rounded corners
+- **GIVEN** any input field on the form
+- **WHEN** the field renders
+- **THEN** the field has a thin light gray border
+- **AND** the field has a white background (or light blue when active/filled)
+- **AND** placeholder text is light gray
+- **AND** fields have rounded corners
 
 #### Scenario: BACK button returns to previous step
 
-- **Given** the user is on Step 02 or later
-- **When** the user clicks "BACK"
-- **Then** the previous step is displayed
-- **And** the progress indicator updates accordingly
+- **GIVEN** the user is on Step 02 or later
+- **WHEN** the user clicks "BACK"
+- **THEN** the previous step is displayed
+- **AND** the progress indicator updates accordingly
 
 #### Scenario: CONTINUE button advances to next step
 
-- **Given** the user has filled required fields on the current step
-- **When** the user clicks "CONTINUE"
-- **Then** the next step's form is displayed
-- **And** the progress indicator advances
+- **GIVEN** the user has filled required fields on the current step
+- **WHEN** the user clicks "CONTINUE"
+- **THEN** the next step's form is displayed
+- **AND** the progress indicator advances
 
 #### Scenario: Buttons are styled consistently
 
-- **Given** the form is visible
-- **When** the user looks at BACK and CONTINUE buttons
-- **Then** both buttons have olive green background (`#78a44e`)
-- **And** both buttons have white uppercase text
-- **And** both buttons have small rounded corners
+- **GIVEN** the form is visible
+- **WHEN** the user looks at BACK and CONTINUE buttons
+- **THEN** both buttons have olive green background (`#78a44e`)
+- **AND** both buttons have white uppercase text
+- **AND** both buttons have small rounded corners
 
 #### Scenario: Page background and card styling match design
 
-- **Given** the page loads
-- **When** the user views the layout
-- **Then** the page background is textured off-white/beige
-- **And** the form content sits in a centered white card
-- **And** the card has a subtle drop shadow
-- **And** the card has rounded corners
+- **GIVEN** the page loads
+- **WHEN** the user views the layout
+- **THEN** the page background is textured off-white/beige
+- **AND** the form content sits in a centered white card
+- **AND** the card has a subtle drop shadow
+- **AND** the card has rounded corners
 
 #### Scenario: Responsive layout on mobile
 
-- **Given** the user views the page on a mobile device (viewport < 640px)
-- **When** the form renders
-- **Then** input fields stack in a single column
-- **And** the progress indicator scales down appropriately
-- **And** buttons remain accessible and tappable
+- **GIVEN** the user views the page on a mobile device (viewport < 640px)
+- **WHEN** the form renders
+- **THEN** input fields stack in a single column
+- **AND** the progress indicator scales down appropriately
+- **AND** buttons remain accessible and tappable
 
 ## Verification Checklist
 

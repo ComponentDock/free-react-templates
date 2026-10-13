@@ -37,63 +37,83 @@ Recreation of ColorLib's **Knowledge** template as a React 19 + Vite + Tailwind 
 9. **Blog** — "Latest Blog" on light gray, 3 blog post cards
 10. **Footer** — Dark footer with columns, Component Dock link
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
+### Feature: MindSpark template behaviour
+
 Feature: MindSpark Navigation
-  Scenario: Navbar shows logo and links
-    Given the user visits the MindSpark homepage
-    Then the navbar shows "MindSpark" logo
-    And links: Home, Courses, Teachers, About, Events, News, Contact
-    And a "Get started" button is visible
+
+#### Scenario: Navbar shows logo and links
+
+- **GIVEN** the user visits the MindSpark homepage
+- **THEN** the navbar shows "MindSpark" logo
+- **AND** links: Home, Courses, Teachers, About, Events, News, Contact
+- **AND** a "Get started" button is visible
 
 Feature: MindSpark Hero
-  Scenario: Hero slider has multiple slides
-    Given the user visits the homepage
-    Then a slider shows headings and "Start Learning Now!" CTAs
+
+#### Scenario: Hero slider has multiple slides
+
+- **GIVEN** the user visits the homepage
+- **THEN** a slider shows headings and "Start Learning Now!" CTAs
 
 Feature: MindSpark Categories
-  Scenario: Six course categories displayed
-    Given the user scrolls past the hero
-    Then 6 category items with icons are shown
-    And a "Discover Courses" link exists
+
+#### Scenario: Six course categories displayed
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** 6 category items with icons are shown
+- **AND** a "Discover Courses" link exists
 
 Feature: MindSpark Courses
-  Scenario: Popular courses shown
-    Given the user scrolls to courses
-    Then "Popular Online Courses" heading is visible
-    And 5 course cards are displayed
+
+#### Scenario: Popular courses shown
+
+- **GIVEN** the user scrolls to courses
+- **THEN** "Popular Online Courses" heading is visible
+- **AND** 5 course cards are displayed
 
 Feature: MindSpark About
-  Scenario: About section with images
-    Given the user scrolls to about
-    Then the about section shows text and images
+
+#### Scenario: About section with images
+
+- **GIVEN** the user scrolls to about
+- **THEN** the about section shows text and images
 
 Feature: MindSpark Counters
-  Scenario: Four stat counters
-    Given the user scrolls to counters
-    Then 4 counters with numbers and labels appear
+
+#### Scenario: Four stat counters
+
+- **GIVEN** the user scrolls to counters
+- **THEN** 4 counters with numbers and labels appear
 
 Feature: MindSpark Trainers
-  Scenario: Instructor profiles
-    Given the user scrolls to trainers
-    Then profiles with circular avatars are shown
+
+#### Scenario: Instructor profiles
+
+- **GIVEN** the user scrolls to trainers
+- **THEN** profiles with circular avatars are shown
 
 Feature: MindSpark Events
-  Scenario: Event entries displayed
-    Given the user scrolls to events
-    Then 4 event entries with dates are shown
+
+#### Scenario: Event entries displayed
+
+- **GIVEN** the user scrolls to events
+- **THEN** 4 event entries with dates are shown
 
 Feature: MindSpark Blog
-  Scenario: Blog posts shown
-    Given the user scrolls to blog
-    Then 3 blog post cards are displayed
+
+#### Scenario: Blog posts shown
+
+- **GIVEN** the user scrolls to blog
+- **THEN** 3 blog post cards are displayed
 
 Feature: MindSpark Footer
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" branded "Component Dock" exists
-```
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" branded "Component Dock" exists
 
 ## Verification checklist
 

@@ -57,135 +57,162 @@ The template has 11 distinct sections rendered in this order:
 11. **Blog** — section header "Latest From Our Blog" + 4 blog cards (image + date badge + title + excerpt + likes/comments meta)
 12. **Footer** — dark background `#04091e`: 3-column layout (Top Products links | Newsletter with email input + subscribe | Instagram feed 3x3 grid), bottom bar with copyright + social icons
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Civicharter Political Website Template
 
-```gherkin
 Feature: Civicharter - Political party / government website
 
-  Background:
-    Given the user opens the Civicharter template
-    Then the page loads with Poppins font family
+Background:
+- **GIVEN** the user opens the Civicharter template
+- **THEN** the page loads with Poppins font family
 
-  # --- TopBar ---
-  Scenario: TopBar displays contact info and social links
-    Given the user is on any page
-    Then a dark top bar is visible at the very top
-    And the top bar shows social media icons on the left
-    And the top bar shows a phone number and email on the right
+**--- TopBar ---**
 
-  # --- Navbar ---
-  Scenario: Navbar shows navigation links
-    Given the user is on the home page
-    Then a fixed white navigation bar is visible
-    And it contains a logo image on the left
-    And it contains nav links: Home, About, Service, Team, Blog, Elements, Contact
-    And the Blog link has a dropdown with "Blog Home" and "Blog Single"
+#### Scenario: TopBar displays contact info and social links
 
-  Scenario: Navbar becomes styled on scroll
-    Given the user scrolls down the page
-    Then the navbar gains a box-shadow effect
-    And the navbar background becomes semi-transparent white
+- **GIVEN** the user is on any page
+- **THEN** a dark top bar is visible at the very top
+- **AND** the top bar shows social media icons on the left
+- **AND** the top bar shows a phone number and email on the right
 
-  # --- Hero/Banner ---
-  Scenario: Hero banner displays campaign message
-    Given the user views the hero section
-    Then a fullscreen banner image is displayed with a dark overlay
-    And the subtitle reads "Don't look further, This is our Leader"
-    And the main heading reads "Support Our Party"
-    And a "Get Started" button is visible
+**--- Navbar ---**
 
-  # --- Countdown ---
-  Scenario: Countdown section shows election countdown
-    Given the user scrolls to the countdown section
-    Then a split layout is displayed
-    And the left side shows "Election is knocking at door"
-    And the right side shows a countdown with days, hours, minutes, seconds
-    And the countdown background is brand blue (#3898f8)
+#### Scenario: Navbar shows navigation links
 
-  # --- Services ---
-  Scenario: Services section displays three service cards
-    Given the user scrolls to the services section
-    Then the heading reads "What we Offer to our Supporters"
-    And three service cards are displayed in a row
-    And each card has an image, title, and description
-    And the service titles are "Conduct Campaign", "Generate Member", "Energy Saving Policy"
+- **GIVEN** the user is on the home page
+- **THEN** a fixed white navigation bar is visible
+- **AND** it contains a logo image on the left
+- **AND** it contains nav links: Home, About, Service, Team, Blog, Elements, Contact
+- **AND** the Blog link has a dropdown with "Blog Home" and "Blog Single"
 
-  Scenario: Service card hover effect
-    Given the user hovers over a service card
-    Then the card image scales up slightly
-    And the card title color changes to brand blue
+#### Scenario: Navbar becomes styled on scroll
 
-  # --- About ---
-  Scenario: About section shows split layout with features
-    Given the user scrolls to the about section
-    Then a left-side background image is displayed
-    And the right side shows "Who we are to Serve the nation"
-    And two feature boxes are shown: "Expert Services" and "Great Support"
-    And each feature box has an icon, title, and description
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar gains a box-shadow effect
+- **AND** the navbar background becomes semi-transparent white
 
-  # --- Gallery ---
-  Scenario: Gallery section shows image grid
-    Given the user scrolls to the gallery section
-    Then the heading reads "Our Gallery Archive"
-    And 4 gallery images are displayed in a 2-row asymmetric grid
-    And images are clickable (lightbox-ready)
+**--- Hero/Banner ---**
 
-  # --- Counters ---
-  Scenario: Counters section shows animated statistics
-    Given the user scrolls to the counters section
-    Then a dark parallax background is displayed
-    And 4 counters are shown: "2K+ Projects Completed", "5.5K Total Employees", "959 Happy Clients", "367 Tickets Submited"
-    And each counter has a circular animated indicator
+#### Scenario: Hero banner displays campaign message
 
-  # --- Feedback/Goals ---
-  Scenario: Goals section shows accordion and video
-    Given the user scrolls to the goals section
-    Then the heading reads "Goals to Achieve for the leadership"
-    And a 4-item accordion is displayed on the left (Success, Info, Danger, Warning)
-    And a video play button is displayed on the right over a dark overlay
+- **GIVEN** the user views the hero section
+- **THEN** a fullscreen banner image is displayed with a dark overlay
+- **AND** the subtitle reads "Don't look further, This is our Leader"
+- **AND** the main heading reads "Support Our Party"
+- **AND** a "Get Started" button is visible
 
-  Scenario: Accordion items expand on click
-    Given the user clicks an accordion heading
-    Then the accordion item expands to show its content
-    And the heading background turns brand blue
-    And the heading text turns white
+**--- Countdown ---**
 
-  # --- Brands ---
-  Scenario: Brands section shows logo carousel
-    Given the user scrolls to the brands section
-    Then a row of brand logos is displayed
-    And the logos are grayscale by default
-    And hovering a logo restores its full color
+#### Scenario: Countdown section shows election countdown
 
-  # --- Blog ---
-  Scenario: Blog section shows four blog cards
-    Given the user scrolls to the blog section
-    Then the heading reads "Latest From Our Blog"
-    And 4 blog cards are displayed in a row
-    And each card has an image, date badge, title, excerpt, and likes/comments count
+- **GIVEN** the user scrolls to the countdown section
+- **THEN** a split layout is displayed
+- **AND** the left side shows "Election is knocking at door"
+- **AND** the right side shows a countdown with days, hours, minutes, seconds
+- **AND** the countdown background is brand blue (#3898f8)
 
-  Scenario: Blog card hover effect
-    Given the user hovers over a blog card
-    Then the card image scales up slightly
-    And the card title color changes to brand blue
+**--- Services ---**
 
-  # --- Footer ---
-  Scenario: Footer shows links, newsletter, and social
-    Given the user scrolls to the footer
-    Then a dark background footer is displayed
-    And it contains a "Top Products" link list
-    And it contains a newsletter section with email input and subscribe button
-    And it contains an Instagram feed grid
-    And it contains social media icon links
-    And a copyright line includes a link to Component Dock
+#### Scenario: Services section displays three service cards
 
-  Scenario: Newsletter form interaction
-    Given the user types an email in the newsletter input
-    And clicks the "Subscribe" button
-    Then the form attempts to submit (no page reload)
-```
+- **GIVEN** the user scrolls to the services section
+- **THEN** the heading reads "What we Offer to our Supporters"
+- **AND** three service cards are displayed in a row
+- **AND** each card has an image, title, and description
+- **AND** the service titles are "Conduct Campaign", "Generate Member", "Energy Saving Policy"
+
+#### Scenario: Service card hover effect
+
+- **GIVEN** the user hovers over a service card
+- **THEN** the card image scales up slightly
+- **AND** the card title color changes to brand blue
+
+**--- About ---**
+
+#### Scenario: About section shows split layout with features
+
+- **GIVEN** the user scrolls to the about section
+- **THEN** a left-side background image is displayed
+- **AND** the right side shows "Who we are to Serve the nation"
+- **AND** two feature boxes are shown: "Expert Services" and "Great Support"
+- **AND** each feature box has an icon, title, and description
+
+**--- Gallery ---**
+
+#### Scenario: Gallery section shows image grid
+
+- **GIVEN** the user scrolls to the gallery section
+- **THEN** the heading reads "Our Gallery Archive"
+- **AND** 4 gallery images are displayed in a 2-row asymmetric grid
+- **AND** images are clickable (lightbox-ready)
+
+**--- Counters ---**
+
+#### Scenario: Counters section shows animated statistics
+
+- **GIVEN** the user scrolls to the counters section
+- **THEN** a dark parallax background is displayed
+- **AND** 4 counters are shown: "2K+ Projects Completed", "5.5K Total Employees", "959 Happy Clients", "367 Tickets Submited"
+- **AND** each counter has a circular animated indicator
+
+**--- Feedback/Goals ---**
+
+#### Scenario: Goals section shows accordion and video
+
+- **GIVEN** the user scrolls to the goals section
+- **THEN** the heading reads "Goals to Achieve for the leadership"
+- **AND** a 4-item accordion is displayed on the left (Success, Info, Danger, Warning)
+- **AND** a video play button is displayed on the right over a dark overlay
+
+#### Scenario: Accordion items expand on click
+
+- **GIVEN** the user clicks an accordion heading
+- **THEN** the accordion item expands to show its content
+- **AND** the heading background turns brand blue
+- **AND** the heading text turns white
+
+**--- Brands ---**
+
+#### Scenario: Brands section shows logo carousel
+
+- **GIVEN** the user scrolls to the brands section
+- **THEN** a row of brand logos is displayed
+- **AND** the logos are grayscale by default
+- **AND** hovering a logo restores its full color
+
+**--- Blog ---**
+
+#### Scenario: Blog section shows four blog cards
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading reads "Latest From Our Blog"
+- **AND** 4 blog cards are displayed in a row
+- **AND** each card has an image, date badge, title, excerpt, and likes/comments count
+
+#### Scenario: Blog card hover effect
+
+- **GIVEN** the user hovers over a blog card
+- **THEN** the card image scales up slightly
+- **AND** the card title color changes to brand blue
+
+**--- Footer ---**
+
+#### Scenario: Footer shows links, newsletter, and social
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background footer is displayed
+- **AND** it contains a "Top Products" link list
+- **AND** it contains a newsletter section with email input and subscribe button
+- **AND** it contains an Instagram feed grid
+- **AND** it contains social media icon links
+- **AND** a copyright line includes a link to Component Dock
+
+#### Scenario: Newsletter form interaction
+
+- **GIVEN** the user types an email in the newsletter input
+- **AND** clicks the "Subscribe" button
+- **THEN** the form attempts to submit (no page reload)
 
 ## Verification Checklist
 

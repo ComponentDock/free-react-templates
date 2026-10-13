@@ -49,99 +49,99 @@ Extracted from the live preview's `assets/css/style.css` stylesheet.
 - Footer top (CTA): cream `#FFEFAE`
 - Footer bottom: dark `#1f2b7b` area
 
-## Gherkin requirements
+## Requirements
 
 ### Hero Section
 
-```gherkin
-Scenario: Hero displays name and role
-  Given the user loads the page
-  Then a large heading shows "Prismark"
-  And a subtitle shows "Digital Product Designer"
-  And an animated headline cycles through company names
+#### Scenario: Hero displays name and role
 
-Scenario: Hero has CTA button
-  Given the user views the hero section
-  Then a "Let's Talk" button is visible in the header
-  And clicking it scrolls to the contact section
+- **GIVEN** the user loads the page
+- **THEN** a large heading shows "Prismark"
+- **AND** a subtitle shows "Digital Product Designer"
+- **AND** an animated headline cycles through company names
 
-Scenario: Header navigation is visible
-  Given the user views the page
-  Then the header shows links for Home, About, Portfolio, Blog, Contact
-  And Blog has a dropdown with sub-items
-  And the header is transparent over the hero
-```
+#### Scenario: Hero has CTA button
+
+- **GIVEN** the user views the hero section
+- **THEN** a "Let's Talk" button is visible in the header
+- **AND** clicking it scrolls to the contact section
+
+#### Scenario: Header navigation is visible
+
+- **GIVEN** the user views the page
+- **THEN** the header shows links for Home, About, Portfolio, Blog, Contact
+- **AND** Blog has a dropdown with sub-items
+- **AND** the header is transparent over the hero
 
 ### About Section
 
-```gherkin
-Scenario: About section shows bio text
-  Given the user scrolls to the About section
-  Then a heading "About" is displayed
-  And two paragraphs of bio text are shown
-  And an about image is displayed alongside
+#### Scenario: About section shows bio text
 
-Scenario: About section shows experience stats
-  Given the user views the About section
-  Then three stat cards are displayed
-  And they show "06 years" of experience, "$40M+" invested, "Multiple" awards
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** a heading "About" is displayed
+- **AND** two paragraphs of bio text are shown
+- **AND** an about image is displayed alongside
+
+#### Scenario: About section shows experience stats
+
+- **GIVEN** the user views the About section
+- **THEN** three stat cards are displayed
+- **AND** they show "06 years" of experience, "$40M+" invested, "Multiple" awards
 
 ### Experience Section
 
-```gherkin
-Scenario: Experience section shows work history
-  Given the user scrolls to the Experience section
-  Then a heading "Experience" is displayed
-  And three work experience entries are shown with role, date, and company
+#### Scenario: Experience section shows work history
 
-Scenario: Experience section shows education
-  Given the user views the Experience section
-  Then a heading "Education" is displayed
-  And two education entries are shown with degree, date, and institution
-```
+- **GIVEN** the user scrolls to the Experience section
+- **THEN** a heading "Experience" is displayed
+- **AND** three work experience entries are shown with role, date, and company
+
+#### Scenario: Experience section shows education
+
+- **GIVEN** the user views the Experience section
+- **THEN** a heading "Education" is displayed
+- **AND** two education entries are shown with degree, date, and institution
 
 ### Expertise Section
 
-```gherkin
-Scenario: Expertise section shows service cards
-  Given the user scrolls to the Expertise section
-  Then a heading "My Expertise" is displayed on cream background
-  And three service cards are shown: Experience Design, Interaction Design, Front-end Design
-  And each card has a title and description
-```
+#### Scenario: Expertise section shows service cards
+
+- **GIVEN** the user scrolls to the Expertise section
+- **THEN** a heading "My Expertise" is displayed on cream background
+- **AND** three service cards are shown: Experience Design, Interaction Design, Front-end Design
+- **AND** each card has a title and description
 
 ### Gallery Section
 
-```gherkin
-Scenario: Gallery shows portfolio items
-  Given the user scrolls to the Gallery section
-  Then a heading "Selected Portfolios" is displayed
-  And four portfolio images are shown in a 2x2 grid
-  And hovering shows an overlay with a plus icon
+#### Scenario: Gallery shows portfolio items
 
-Scenario: Gallery items have hover overlay
-  Given the user hovers over a gallery item
-  Then an overlay appears with a circular icon
-  And the overlay has a plus icon for viewing
-```
+- **GIVEN** the user scrolls to the Gallery section
+- **THEN** a heading "Selected Portfolios" is displayed
+- **AND** four portfolio images are shown in a 2x2 grid
+- **AND** hovering shows an overlay with a plus icon
+
+#### Scenario: Gallery items have hover overlay
+
+- **GIVEN** the user hovers over a gallery item
+- **THEN** an overlay appears with a circular icon
+- **AND** the overlay has a plus icon for viewing
 
 ### Footer Section
 
-```gherkin
-Scenario: Footer has CTA and contact form
-  Given the user scrolls to the footer
-  Then a CTA section shows "Do you want to know more about me?"
-  And a "Download CV" button is displayed
-  And a contact form with name, email, subject, message fields is shown
-  And a "Send Message" submit button is visible
+#### Scenario: Footer has CTA and contact form
 
-Scenario: Footer has social links
-  Given the user views the footer bottom
-  Then social media icons for Twitter, Facebook, Pinterest, Globe, Instagram are shown
-  And a copyright notice is displayed
-  And a link to Component Dock is included
-```
+- **GIVEN** the user scrolls to the footer
+- **THEN** a CTA section shows "Do you want to know more about me?"
+- **AND** a "Download CV" button is displayed
+- **AND** a contact form with name, email, subject, message fields is shown
+- **AND** a "Send Message" submit button is visible
+
+#### Scenario: Footer has social links
+
+- **GIVEN** the user views the footer bottom
+- **THEN** social media icons for Twitter, Facebook, Pinterest, Globe, Instagram are shown
+- **AND** a copyright notice is displayed
+- **AND** a link to Component Dock is included
 
 ## Verification checklist
 

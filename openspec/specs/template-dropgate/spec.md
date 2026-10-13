@@ -69,87 +69,99 @@ The screenshot shows a clean, minimal component demo page:
   - Orange badge is positioned absolutely at the right edge
 - Aesthetic: clean, utilitarian, Bootstrap-influenced, no imagery or photos
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: DropGate Dropdown Component
 
   Background:
-    Given the app is loaded at the root URL
-    And the document title is "DropGate — Dropdown Component Snippet"
+- **GIVEN** the app is loaded at the root URL
+- **AND** the document title is "DropGate — Dropdown Component Snippet"
 
-  Scenario: Page renders with centered trigger
-    Given the page is visible
-    Then a heading "Dropdown #8" is displayed centered on the page
-    And a "Menu" trigger link is visible below the heading
-    And the trigger has a downward-pointing arrow icon
+#### Scenario: Page renders with centered trigger
 
-  Scenario: Dropdown opens on trigger click
-    Given the dropdown is closed
-    When the user clicks the "Menu" trigger
-    Then the dropdown panel becomes visible
-    And the trigger arrow rotates upward (180deg)
-    And the dropdown panel has a white background and drop shadow
+- **GIVEN** the page is visible
+- **THEN** a heading "Dropdown #8" is displayed centered on the page
+- **AND** a "Menu" trigger link is visible below the heading
+- **AND** the trigger has a downward-pointing arrow icon
 
-  Scenario: Dropdown closes on trigger click when open
-    Given the dropdown is open
-    When the user clicks the "Menu" trigger
-    Then the dropdown panel becomes hidden
-    And the trigger arrow rotates back to pointing down
+#### Scenario: Dropdown opens on trigger click
 
-  Scenario: Dropdown closes when clicking outside
-    Given the dropdown is open
-    When the user clicks outside the dropdown area
-    Then the dropdown panel becomes hidden
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the "Menu" trigger
+- **THEN** the dropdown panel becomes visible
+- **AND** the trigger arrow rotates upward (180deg)
+- **AND** the dropdown panel has a white background and drop shadow
 
-  Scenario: Section headings are displayed
-    Given the dropdown is open
-    Then a "Help & Feedback" section heading is visible
-    And an "About" section heading is visible
-    And a divider line separates the two sections
+#### Scenario: Dropdown closes on trigger click when open
 
-  Scenario: Help & Feedback items are displayed
-    Given the dropdown is open
-    Then the following items are visible in order:
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks the "Menu" trigger
+- **THEN** the dropdown panel becomes hidden
+- **AND** the trigger arrow rotates back to pointing down
+
+#### Scenario: Dropdown closes when clicking outside
+
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks outside the dropdown area
+- **THEN** the dropdown panel becomes hidden
+
+#### Scenario: Section headings are displayed
+
+- **GIVEN** the dropdown is open
+- **THEN** a "Help & Feedback" section heading is visible
+- **AND** an "About" section heading is visible
+- **AND** a divider line separates the two sections
+
+#### Scenario: Help & Feedback items are displayed
+
+- **GIVEN** the dropdown is open
+- **THEN** the following items are visible in order:
       | icon        | label            | badge |
       | dashboard   | Getting started  |       |
       | mail        | Help center      | 3     |
       | people      | Contact us       |       |
 
-  Scenario: About items are displayed
-    Given the dropdown is open
-    Then the following items are visible in order:
+#### Scenario: About items are displayed
+
+- **GIVEN** the dropdown is open
+- **THEN** the following items are visible in order:
       | icon        | label              |
       | comment     | Blog               |
       | lock        | Privacy            |
       | security    | Security           |
       | playlist    | Terms of service   |
 
-  Scenario: Badge displays notification count
-    Given the dropdown is open
-    Then the "Help center" item shows an orange badge with text "3"
-    And the badge has an orange background and white text
+#### Scenario: Badge displays notification count
 
-  Scenario: Items have hover highlight
-    Given the dropdown is open
-    When the user hovers over a dropdown item
-    Then the item background changes to a light grey highlight
+- **GIVEN** the dropdown is open
+- **THEN** the "Help center" item shows an orange badge with text "3"
+- **AND** the badge has an orange background and white text
 
-  Scenario: Animation on open/close
-    Given the dropdown is closed
-    When the user clicks the "Menu" trigger
-    Then the dropdown fades in over 300ms
-    And the dropdown slides up from -10px margin to 0
+#### Scenario: Items have hover highlight
 
-  Scenario: Responsive layout
-    Given the viewport is narrow (below md breakpoint)
-    Then the dropdown trigger and menu remain centered
-    And all items remain readable
+- **GIVEN** the dropdown is open
+- **WHEN** the user hovers over a dropdown item
+- **THEN** the item background changes to a light grey highlight
 
-  Scenario: Footer with Component Dock link
-    Given the page is visible
-    Then a footer is displayed
-    And the footer contains a link to https://www.componentdock.com/
-    And the link text mentions "Component Dock"
+#### Scenario: Animation on open/close
+
+- **GIVEN** the dropdown is closed
+- **WHEN** the user clicks the "Menu" trigger
+- **THEN** the dropdown fades in over 300ms
+- **AND** the dropdown slides up from -10px margin to 0
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the viewport is narrow (below md breakpoint)
+- **THEN** the dropdown trigger and menu remain centered
+- **AND** all items remain readable
+
+#### Scenario: Footer with Component Dock link
+
+- **GIVEN** the page is visible
+- **THEN** a footer is displayed
+- **AND** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

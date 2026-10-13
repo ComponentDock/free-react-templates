@@ -12,7 +12,7 @@ Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 - **Card Shape & Elevation**: Rounded-xl containers with smooth accordion transitions, shadow-lg, clean padding, and crisp iconography.
 - **Section Layout**: Centered widget card with vertical accordion panels (Profile, Messages, Settings, Logout), nested links, icons (User, Mail/Message, Settings, LogOut), and smooth expand/collapse states.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Interactive Accordion Widget & Profile Navigation
 
@@ -20,16 +20,16 @@ As a user visiting the Bellows template, I want to explore collapsible profile s
 
 #### Scenario: Expanding and collapsing accordion sections
 
-- **Given** the user is viewing the main accordion dashboard
-- **When** the user clicks on the "Profile" or "Messages" section header
-- **Then** the section expands smoothly to reveal its internal navigation links and content
-- **And** clicking another section collapses the previously expanded section.
+- **GIVEN** the user is viewing the main accordion dashboard
+- **WHEN** the user clicks on the "Profile" or "Messages" section header
+- **THEN** the section expands smoothly to reveal its internal navigation links and content
+- **AND** clicking another section collapses the previously expanded section
 
 #### Scenario: Responsive layout and footer attribution
 
-- **Given** the user views the template on any screen size
-- **Then** the widget scales gracefully with proper centering and padding
-- **And** the footer links to `https://www.componentdock.com/` ("Component Dock").
+- **GIVEN** the user views the template on any screen size
+- **THEN** the widget scales gracefully with proper centering and padding
+- **AND** the footer links to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 

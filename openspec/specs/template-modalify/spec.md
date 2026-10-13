@@ -55,87 +55,99 @@ a centered modal dialog with:
 The modal has a deep box-shadow, slightly rounded corners (7px), and the overall
 aesthetic is clean and promotional with a soft pink color scheme.
 
-## Gherkin Requirements
+## Requirements
 
-### Background
-Given the page loads with a centered layout
-When the viewport is displayed
-Then the content is vertically and horizontally centered
-And the page title "Modal #3" is visible
-And a "Launch modal" button is displayed below the title
+### Feature: Modalify template behaviour
 
-### Scenario: Modal opens on button click
-Given the page is loaded
-When the user clicks the "Launch modal" button
-Then a modal dialog appears centered in the viewport
-And the modal has a light pink (#f9eaf2) background
-And the modal displays an Instagram logo image
-And the modal displays the title "Exclusives offer from Instagram"
-And the modal displays a description paragraph
-And the modal displays an email input field with placeholder "Enter your email address"
-And the modal displays a "No, thanks" secondary button
-And the modal displays a "Subscribe" primary button
-And the modal displays a small cancel/disclaimer text at the bottom
-And a close button (X) is visible in the top-right corner
+**Background**
+- **GIVEN** the page loads with a centered layout
+- **WHEN** the viewport is displayed
+- **THEN** the content is vertically and horizontally centered
+- **AND** the page title "Modal #3" is visible
+- **AND** a "Launch modal" button is displayed below the title
 
-### Scenario: Modal closes on close button click
-Given the modal is open
-When the user clicks the close button (X)
-Then the modal closes with a fade-out animation
-And the page content is visible again
+#### Scenario: Modal opens on button click
 
-### Scenario: Modal closes on backdrop click
-Given the modal is open
-When the user clicks the dark backdrop area outside the modal
-Then the modal closes
-And the page content is visible again
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a modal dialog appears centered in the viewport
+- **AND** the modal has a light pink (#f9eaf2) background
+- **AND** the modal displays an Instagram logo image
+- **AND** the modal displays the title "Exclusives offer from Instagram"
+- **AND** the modal displays a description paragraph
+- **AND** the modal displays an email input field with placeholder "Enter your email address"
+- **AND** the modal displays a "No, thanks" secondary button
+- **AND** the modal displays a "Subscribe" primary button
+- **AND** the modal displays a small cancel/disclaimer text at the bottom
+- **AND** a close button (X) is visible in the top-right corner
 
-### Scenario: Modal closes on Escape key
-Given the modal is open
-When the user presses the Escape key
-Then the modal closes
-And the page content is visible again
+#### Scenario: Modal closes on close button click
 
-### Scenario: Modal closes on "No, thanks" button click
-Given the modal is open
-When the user clicks the "No, thanks" button
-Then the modal closes
-And the page content is visible again
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes with a fade-out animation
+- **AND** the page content is visible again
 
-### Scenario: Email form submission
-Given the modal is open
-When the user enters a valid email address in the input field
-And the user clicks the "Subscribe" button
-Then the form submits (no page reload)
+#### Scenario: Modal closes on backdrop click
 
-### Scenario: Accessibility - modal focus trap
-Given the modal is open
-When the user presses Tab repeatedly
-Then focus stays trapped within the modal
-And focus cycles through the close button, input, and buttons
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the dark backdrop area outside the modal
+- **THEN** the modal closes
+- **AND** the page content is visible again
 
-### Scenario: Accessibility - aria attributes
-Given the modal is rendered
-Then the modal container has `role="dialog"`
-And the modal has `aria-labelledby` pointing to the title
-And the modal has `aria-hidden="true"` when closed
-And the close button has `aria-label="Close"`
+#### Scenario: Modal closes on Escape key
 
-### Scenario: Responsive layout
-Given the page is viewed on a mobile viewport (375px width)
-Then the content remains centered
-And the modal scales appropriately within the viewport
-And the buttons stack or remain usable
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
+- **AND** the page content is visible again
 
-### Scenario: Design token verification
-Given the page is rendered
-Then the body font-family is Roboto
-And the modal background is #f9eaf2 (pink)
-And the modal has a border-radius of 7px
-And the modal has a deep box-shadow
-And the buttons have a 4px border-radius
-And the form input has no visible border
-And the cancel text is small and semi-transparent white
+#### Scenario: Modal closes on "No, thanks" button click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "No, thanks" button
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+#### Scenario: Email form submission
+
+- **GIVEN** the modal is open
+- **WHEN** the user enters a valid email address in the input field
+- **AND** the user clicks the "Subscribe" button
+- **THEN** the form submits (no page reload)
+
+#### Scenario: Accessibility - modal focus trap
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Tab repeatedly
+- **THEN** focus stays trapped within the modal
+- **AND** focus cycles through the close button, input, and buttons
+
+#### Scenario: Accessibility - aria attributes
+
+- **GIVEN** the modal is rendered
+- **THEN** the modal container has `role="dialog"`
+- **AND** the modal has `aria-labelledby` pointing to the title
+- **AND** the modal has `aria-hidden="true"` when closed
+- **AND** the close button has `aria-label="Close"`
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the page is viewed on a mobile viewport (375px width)
+- **THEN** the content remains centered
+- **AND** the modal scales appropriately within the viewport
+- **AND** the buttons stack or remain usable
+
+#### Scenario: Design token verification
+
+- **GIVEN** the page is rendered
+- **THEN** the body font-family is Roboto
+- **AND** the modal background is #f9eaf2 (pink)
+- **AND** the modal has a border-radius of 7px
+- **AND** the modal has a deep box-shadow
+- **AND** the buttons have a 4px border-radius
+- **AND** the form input has no visible border
+- **AND** the cancel text is small and semi-transparent white
 
 ## Verification Checklist
 

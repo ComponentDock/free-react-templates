@@ -47,73 +47,85 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
    - **Submit button** — "Book Now" with right-arrow icon, centered, teal/cyan (#84cde1), pulsing hover animation.
 5. **Footer** — Component Dock attribution link (mandatory per conventions).
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
+### Feature: YogaFlow template behaviour
+
 Feature: YogaFlow registration form
 
-  Background:
-    Given the page is loaded at the root route
+Background:
+- **GIVEN** the page is loaded at the root route
 
-  Scenario: Full-page layout renders
-    Then a full-viewport wrapper is visible
-    And the wrapper has a background image covering the viewport
+#### Scenario: Full-page layout renders
 
-  Scenario: Card container displays
-    Then a centered white card is visible
-    And the card has rounded corners
-    And the card has a subtle drop shadow
+- **THEN** a full-viewport wrapper is visible
+- **AND** the wrapper has a background image covering the viewport
 
-  Scenario: Left image panel renders
-    Then the card has an image panel on the left
-    And the image displays a yoga class photo placeholder
-    And the image has rounded corners
+#### Scenario: Card container displays
 
-  Scenario: Form heading renders
-    Then the heading reads "Make An Appointment"
-    And the heading is uppercase and centered
+- **THEN** a centered white card is visible
+- **AND** the card has rounded corners
+- **AND** the card has a subtle drop shadow
 
-  Scenario: Name and email inputs render
-    Then there is a name input with placeholder "Name"
-    And there is an email input with placeholder "Mail"
-    And both inputs are displayed side by side
+#### Scenario: Left image panel renders
 
-  Scenario: Phone and class select render
-    Then there is a phone input with placeholder "Phone"
-    And there is a class select dropdown
-    And the dropdown has a default disabled option "Choose Your Class"
-    And the dropdown has three class options
+- **THEN** the card has an image panel on the left
+- **AND** the image displays a yoga class photo placeholder
+- **AND** the image has rounded corners
 
-  Scenario: Message textarea renders
-    Then there is a textarea with placeholder "Message"
-    And the textarea is approximately 130px tall
+#### Scenario: Form heading renders
 
-  Scenario: Submit button renders
-    Then there is a "Book Now" button
-    And the button has a right-arrow icon
-    And the button is centered below the form fields
-    And the button text is uppercase
+- **THEN** the heading reads "Make An Appointment"
+- **AND** the heading is uppercase and centered
 
-  Scenario: Button hover effect
-    When the user hovers over the submit button
-    Then the button background changes to a brighter cyan
+#### Scenario: Name and email inputs render
 
-  Scenario: Form is interactive
-    When the user types "Jane Doe" in the name input
-    Then the name input shows "Jane Doe"
-    When the user selects "Class 01" from the dropdown
-    Then the dropdown shows "Class 01"
+- **THEN** there is a name input with placeholder "Name"
+- **AND** there is an email input with placeholder "Mail"
+- **AND** both inputs are displayed side by side
 
-  Scenario: Responsive layout on mobile
-    Given the viewport is 375px wide
-    Then the card stacks vertically
-    And the image panel is full width above the form
-    And the form rows stack into single columns
+#### Scenario: Phone and class select render
 
-  Scenario: Footer links to Component Dock
-    Then a footer link points to "https://www.componentdock.com/"
-    And the link text mentions "Component Dock"
-```
+- **THEN** there is a phone input with placeholder "Phone"
+- **AND** there is a class select dropdown
+- **AND** the dropdown has a default disabled option "Choose Your Class"
+- **AND** the dropdown has three class options
+
+#### Scenario: Message textarea renders
+
+- **THEN** there is a textarea with placeholder "Message"
+- **AND** the textarea is approximately 130px tall
+
+#### Scenario: Submit button renders
+
+- **THEN** there is a "Book Now" button
+- **AND** the button has a right-arrow icon
+- **AND** the button is centered below the form fields
+- **AND** the button text is uppercase
+
+#### Scenario: Button hover effect
+
+- **WHEN** the user hovers over the submit button
+- **THEN** the button background changes to a brighter cyan
+
+#### Scenario: Form is interactive
+
+- **WHEN** the user types "Jane Doe" in the name input
+- **THEN** the name input shows "Jane Doe"
+- **WHEN** the user selects "Class 01" from the dropdown
+- **THEN** the dropdown shows "Class 01"
+
+#### Scenario: Responsive layout on mobile
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the card stacks vertically
+- **AND** the image panel is full width above the form
+- **AND** the form rows stack into single columns
+
+#### Scenario: Footer links to Component Dock
+
+- **THEN** a footer link points to "https://www.componentdock.com/"
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 

@@ -31,29 +31,37 @@ categories section with image cards.
 3. **Popular Categories** — "Discover" subtitle (red), "Most Popular Categories" heading (serif cursive), 4 image cards (Amazing Places, Concerts, Travel Guide, Music Festival) with dark overlay text and listing count badge
 4. **Footer** — dark bg, 3-column layout (logo + info, quick links, newsletter), bottom bar with copyright + "More templates at Component Dock" link
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
 
-- Given the page loads, Then the navbar is visible with logo, nav links, and Sign In button
-- Given the user clicks a nav link, Then the page scrolls to the corresponding section
+#### Scenario: Navbar
+
+- **GIVEN** the page loads, Then the navbar is visible with logo, nav links, and Sign In button
+- **GIVEN** the user clicks a nav link, Then the page scrolls to the corresponding section
 
 ### Hero
 
-- Given the page loads, Then the hero section shows a background image with search bar
-- Given the user types in the "What" input, Then the input value updates
-- Given the user types in the "Location" input, Then the input value updates
-- Given the user clicks Search, Then the form submits (preventDefault)
-- Given category tags are displayed, Then clicking a tag is a no-op link
+#### Scenario: Hero
+
+- **GIVEN** the page loads, Then the hero section shows a background image with search bar
+- **GIVEN** the user types in the "What" input, Then the input value updates
+- **GIVEN** the user types in the "Location" input, Then the input value updates
+- **GIVEN** the user clicks Search, Then the form submits (preventDefault)
+- **GIVEN** category tags are displayed, Then clicking a tag is a no-op link
 
 ### Popular Categories
 
-- Given the page loads, Then 4 category cards are displayed with images and names
+#### Scenario: Popular Categories
+
+- **GIVEN** the page loads, Then 4 category cards are displayed with images and names
 - Each card shows the category name and a listing count badge
 
 ### Footer
 
-- Given the page loads, Then the footer shows logo, quick links, newsletter form
+#### Scenario: Footer
+
+- **GIVEN** the page loads, Then the footer shows logo, quick links, newsletter form
 - The footer links to https://www.componentdock.com/
 
 ## Files

@@ -41,94 +41,118 @@ Recreation of ColorLib **Faith 2** template for church/nonprofit websites.
    - Col 4: "Why Choose Us?" text + "Sunday Workshop" button
 10. **FooterBottom** — Copyright bar (not shown explicitly in original but implied)
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Homily template behaviour
+
 Feature: Homily Church Template
-  As a church visitor
-  I want to find service times, events, sermons, and donation options
-  So that I can engage with the community
+As a church visitor
+I want to find service times, events, sermons, and donation options
+So that I can engage with the community
 
-  Background:
-    Given I visit the Homily homepage
+Background:
+- **GIVEN** I visit the Homily homepage
 
-  # ── TopBar ──
-  Scenario: Countdown timer displays
-    Then I see a dark top bar with "Next Big Event" label
-    And I see a countdown showing days, hours, minutes, seconds
+**── TopBar ──**
 
-  # ── Navbar ──
-  Scenario: Navigation links present
-    Then I see links: Home, Ministries, Sermons, Contact
-    And I see a Pages dropdown menu
-    And I see a search icon
-    And I see a "Send Donations" button with brand color background
+#### Scenario: Countdown timer displays
 
-  Scenario: Navbar becomes sticky on scroll
-    When I scroll down past the hero
-    Then the navbar remains fixed at the top of the viewport
+- **THEN** I see a dark top bar with "Next Big Event" label
+- **AND** I see a countdown showing days, hours, minutes, seconds
 
-  # ── Hero ──
-  Scenario: Hero carousel shows slides
-    Then I see a large hero image with dark overlay
-    And I see a date badge, subtitle, heading, and description text
-    And I see carousel navigation arrows and dot indicators
+**── Navbar ──**
 
-  Scenario: Workshop button visible
-    Then I see a "Sunday Workshop: 10:30 AM" button in the hero area
+#### Scenario: Navigation links present
 
-  Scenario: Carousel auto-advances
-    When I wait for the slide interval
-    Then the hero slide changes automatically
+- **THEN** I see links: Home, Ministries, Sermons, Contact
+- **AND** I see a Pages dropdown menu
+- **AND** I see a search icon
+- **AND** I see a "Send Donations" button with brand color background
 
-  # ── CTA ──
-  Scenario: CTA banner displays
-    Then I see a brown banner with text on the left
-    And I see a "Visitors Info" button on the right
+#### Scenario: Navbar becomes sticky on scroll
 
-  # ── About Quote ──
-  Scenario: Bible quote section visible
-    Then I see a cross/star icon centered
-    And I see a large quoted bible verse
-    And I see a descriptive paragraph below the quote
+- **WHEN** I scroll down past the hero
+- **THEN** the navbar remains fixed at the top of the viewport
 
-  # ── Church Activities ──
-  Scenario: Upcoming events listed
-    Then I see "Upcoming Events" heading
-    And I see 4 events each with date badge, thumbnail, title, and time
+**── Hero ──**
 
-  Scenario: See All Events button present
-    Then I see a "See All Events" button below the events list
+#### Scenario: Hero carousel shows slides
 
-  Scenario: Latest sermons listed
-    Then I see "Latest Sermons" heading
-    And I see 3 sermons each with thumbnail, title, author, and date
-    And each sermon has an audio player
+- **THEN** I see a large hero image with dark overlay
+- **AND** I see a date badge, subtitle, heading, and description text
+- **AND** I see carousel navigation arrows and dot indicators
 
-  # ── Donate ──
-  Scenario: Donation cards displayed
-    Then I see "Donate to our Charities" heading
-    And I see a carousel of donation cause cards
-    And each card has an image, title, subtitle, and "Donate" button
+#### Scenario: Workshop button visible
 
-  Scenario: Donate carousel navigable
-    When I click the next arrow
-    Then the donate carousel advances to the next card
+- **THEN** I see a "Sunday Workshop: 10:30 AM" button in the hero area
 
-  # ── Blog ──
-  Scenario: Blog posts shown
-    Then I see "Latest News" heading
-    And I see 3 blog cards in a 3-column grid
-    And each card has a thumbnail with date badge, title, excerpt, and "Read More" link
+#### Scenario: Carousel auto-advances
 
-  # ── Footer ──
-  Scenario: Footer contains contact info
-    Then I see a dark footer with logo and social icons
-    And I see contact details: address, phone, email
-    And I see useful links list
-    And I see a "Why Choose Us?" section with a button
-    And I see a copyright notice linking to Component Dock
-```
+- **WHEN** I wait for the slide interval
+- **THEN** the hero slide changes automatically
+
+**── CTA ──**
+
+#### Scenario: CTA banner displays
+
+- **THEN** I see a brown banner with text on the left
+- **AND** I see a "Visitors Info" button on the right
+
+**── About Quote ──**
+
+#### Scenario: Bible quote section visible
+
+- **THEN** I see a cross/star icon centered
+- **AND** I see a large quoted bible verse
+- **AND** I see a descriptive paragraph below the quote
+
+**── Church Activities ──**
+
+#### Scenario: Upcoming events listed
+
+- **THEN** I see "Upcoming Events" heading
+- **AND** I see 4 events each with date badge, thumbnail, title, and time
+
+#### Scenario: See All Events button present
+
+- **THEN** I see a "See All Events" button below the events list
+
+#### Scenario: Latest sermons listed
+
+- **THEN** I see "Latest Sermons" heading
+- **AND** I see 3 sermons each with thumbnail, title, author, and date
+- **AND** each sermon has an audio player
+
+**── Donate ──**
+
+#### Scenario: Donation cards displayed
+
+- **THEN** I see "Donate to our Charities" heading
+- **AND** I see a carousel of donation cause cards
+- **AND** each card has an image, title, subtitle, and "Donate" button
+
+#### Scenario: Donate carousel navigable
+
+- **WHEN** I click the next arrow
+- **THEN** the donate carousel advances to the next card
+
+**── Blog ──**
+
+#### Scenario: Blog posts shown
+
+- **THEN** I see "Latest News" heading
+- **AND** I see 3 blog cards in a 3-column grid
+- **AND** each card has a thumbnail with date badge, title, excerpt, and "Read More" link
+
+**── Footer ──**
+
+#### Scenario: Footer contains contact info
+
+- **THEN** I see a dark footer with logo and social icons
+- **AND** I see contact details: address, phone, email
+- **AND** I see useful links list
+- **AND** I see a "Why Choose Us?" section with a button
+- **AND** I see a copyright notice linking to Component Dock
 
 ## Verification Checklist
 

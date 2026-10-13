@@ -100,167 +100,196 @@ The screenshot shows a macOS browser frame mockup containing the template:
     - **4-column footer**: About + social icons (Twitter, Facebook, LinkedIn, Dribbble), Information links (Our Company, Certification, Services, Career, Core Values, History, FAQ), Instagram photo grid (6 thumbnails), Contact Info
     - **Copyright bar**: "All rights reserved | Made with Component Dock"
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Cornice Template
 
 Background:
-Given the user visits "https://cornice.free.componentdock.com"
-And the page is fully loaded
+- **GIVEN** the user visits "https://cornice.free.componentdock.com"
+- **AND** the page is fully loaded
 
-# --- Navbar ---
+**--- Navbar ---**
 
-Scenario: Navbar displays logo and navigation links
-Then the "Cornice" logo text is visible
-And links "Home", "Projects", "Services", "Blog", "About", "Contact" are visible
-And the "Home" link has a golden-yellow underline indicating it is active
+#### Scenario: Navbar displays logo and navigation links
 
-Scenario: Navbar becomes sticky on scroll
-When the user scrolls down past 100px
-Then the navbar should have a solid background (not transparent)
+- **THEN** the "Cornice" logo text is visible
+- **AND** links "Home", "Projects", "Services", "Blog", "About", "Contact" are visible
+- **AND** the "Home" link has a golden-yellow underline indicating it is active
 
-Scenario: Projects dropdown shows on hover
-When the user hovers over "Projects"
-Then a dropdown appears with "Commercial", "Apartment", "House", "Building"
+#### Scenario: Navbar becomes sticky on scroll
 
-# --- Hero Carousel ---
+- **WHEN** the user scrolls down past 100px
+- **THEN** the navbar should have a solid background (not transparent)
 
-Scenario: Hero carousel displays with slides
-Then a full-viewport hero section is visible
-And a headline text is displayed centered in white
-And carousel indicator dots are visible at the bottom
+#### Scenario: Projects dropdown shows on hover
 
-Scenario: Hero carousel auto-rotates
-When the user waits 5 seconds
-Then the hero slide should change to the next slide
+- **WHEN** the user hovers over "Projects"
+- **THEN** a dropdown appears with "Commercial", "Apartment", "House", "Building"
 
-Scenario: Hero carousel navigates via dots
-When the user clicks the second carousel dot
-Then the second hero slide should be displayed
+**--- Hero Carousel ---**
 
-# --- Service Tabs ---
+#### Scenario: Hero carousel displays with slides
 
-Scenario: Service tabs are visible with icons
-Then 4 service tabs are displayed: "Planning & Design", "General Constructing", "Construction Management", "Building Modeling"
-And the "Planning & Design" tab is active by default
+- **THEN** a full-viewport hero section is visible
+- **AND** a headline text is displayed centered in white
+- **AND** carousel indicator dots are visible at the bottom
 
-Scenario: Clicking a tab shows its content
-When the user clicks the "General Constructing" tab
-Then a two-column layout appears: image on the left, description on the right
-And the description contains a paragraph and a bulleted list
+#### Scenario: Hero carousel auto-rotates
 
-Scenario: Tab switching updates the active state
-When the user clicks the "Building Modeling" tab
-Then the "Building Modeling" tab is visually active
-And the "Planning & Design" tab is no longer active
+- **WHEN** the user waits 5 seconds
+- **THEN** the hero slide should change to the next slide
 
-# --- Services Grid ---
+#### Scenario: Hero carousel navigates via dots
 
-Scenario: Services grid displays 6 service cards
-Then 6 service cards are displayed in a 3-column grid
-And each card shows a yellow icon, a title, and a description
+- **WHEN** the user clicks the second carousel dot
+- **THEN** the second hero slide should be displayed
 
-Scenario: Service cards are evenly spaced
-Then all 6 service cards should be visible without overlap
+**--- Service Tabs ---**
 
-# --- Counter Section ---
+#### Scenario: Service tabs are visible with icons
 
-Scenario: Counter section shows 4 animated counters
-Then 4 counters are visible: "Projects", "Employees", "Constructor", "Partners"
-And each counter displays a number
+- **THEN** 4 service tabs are displayed: "Planning & Design", "General Constructing", "Construction Management", "Building Modeling"
+- **AND** the "Planning & Design" tab is active by default
 
-Scenario: Counter section has a parallax background
-Then the counter section has a background image with a dark overlay
+#### Scenario: Clicking a tab shows its content
 
-# --- Projects Gallery ---
+- **WHEN** the user clicks the "General Constructing" tab
+- **THEN** a two-column layout appears: image on the left, description on the right
+- **AND** the description contains a paragraph and a bulleted list
 
-Scenario: Projects section displays heading
-Then the heading "Our Projects" is visible
-And a description paragraph appears below the heading
+#### Scenario: Tab switching updates the active state
 
-Scenario: Projects gallery displays 6 project cards
-Then 6 project cards are displayed in an asymmetric grid layout
-And each card shows a project image with a hover overlay containing a search icon
-And each card has a title below the image
+- **WHEN** the user clicks the "Building Modeling" tab
+- **THEN** the "Building Modeling" tab is visually active
+- **AND** the "Planning & Design" tab is no longer active
 
-# --- About / Team Section ---
+**--- Services Grid ---**
 
-Scenario: Team section displays team members
-Then the heading "Our Team" is visible
-And 4 team member cards are displayed in a 2x2 grid
-And each card shows a name and role: "Ian Moore (Electrician)", "Jack Clark (Engineer)", "Kiven Lewis (Architect)", "Charles Scott (Assistant Engineer)"
+#### Scenario: Services grid displays 6 service cards
 
-Scenario: Accordion FAQ is interactive
-Then the "Who we are" accordion panel is expanded by default
-When the user clicks "What we do?"
-Then the "What we do?" panel expands with content
-And the "Who we are" panel collapses
+- **THEN** 6 service cards are displayed in a 3-column grid
+- **AND** each card shows a yellow icon, a title, and a description
 
-Scenario: "Why Choose us" panel is collapsible
-When the user clicks "Why Choose us"
-Then the "Why Choose us" panel expands with content
+#### Scenario: Service cards are evenly spaced
 
-# --- Testimonials ---
+- **THEN** all 6 service cards should be visible without overlap
 
-Scenario: Testimonials carousel displays client quotes
-Then the heading "Client Says:" is visible
-And a testimonial carousel shows at least one client quote with an avatar and name
+**--- Counter Section ---**
 
-Scenario: Testimonial carousel navigates
-When the user navigates to the next testimonial
-Then a different client name and quote should be displayed
+#### Scenario: Counter section shows 4 animated counters
 
-# --- Newsletter ---
+- **THEN** 4 counters are visible: "Projects", "Employees", "Constructor", "Partners"
+- **AND** each counter displays a number
 
-Scenario: Newsletter section displays form
-Then the heading "Subscribe Newsletter" is visible
-And an email input field with placeholder "Enter your email" is visible
-And a "Subscribe Now" button is visible
+#### Scenario: Counter section has a parallax background
 
-Scenario: Newsletter form submission
-When the user enters a valid email address in the newsletter input
-And clicks "Subscribe Now"
-Then the form should attempt to submit
+- **THEN** the counter section has a background image with a dark overlay
 
-# --- Footer ---
+**--- Projects Gallery ---**
 
-Scenario: Footer contact info bar displays
-Then a contact bar shows: address "291 South 21th Street, Suite 721 New York NY 10016", email/website info, and phone numbers
+#### Scenario: Projects section displays heading
 
-Scenario: Footer 4-column layout
-Then the footer shows 4 columns: "About Cornice", "Information", "Instagram", "Contact Info"
-And social icons (Twitter, Facebook, LinkedIn, Dribbble) are visible in the About column
-And the Information column lists: "Our Company", "Certification", "Our services", "Career", "Core Values", "Company History", "FAQ"
-And the Instagram column shows 6 thumbnail images
-And the Contact Info column shows address, phone, and email
+- **THEN** the heading "Our Projects" is visible
+- **AND** a description paragraph appears below the heading
 
-Scenario: Footer copyright
-Then the copyright bar reads "All rights reserved" and links to "Component Dock"
+#### Scenario: Projects gallery displays 6 project cards
 
-# --- Accessibility ---
+- **THEN** 6 project cards are displayed in an asymmetric grid layout
+- **AND** each card shows a project image with a hover overlay containing a search icon
+- **AND** each card has a title below the image
 
-Scenario: Keyboard navigation
-Given the user tabs through the page
-Then all interactive elements receive visible focus indicators
-And the carousel can be navigated via keyboard
+**--- About / Team Section ---**
 
-Scenario: Semantic HTML
-Then the page uses semantic landmarks: nav, main, footer
-And all images have alt text
-And form inputs have associated labels
+#### Scenario: Team section displays team members
 
-# --- Responsive ---
+- **THEN** the heading "Our Team" is visible
+- **AND** 4 team member cards are displayed in a 2x2 grid
+- **AND** each card shows a name and role: "Ian Moore (Electrician)", "Jack Clark (Engineer)", "Kiven Lewis (Architect)", "Charles Scott (Assistant Engineer)"
 
-Scenario: Mobile layout
-Given the viewport is 375px wide
-Then the navbar collapses to a hamburger menu
-And the hero carousel is full-width
-And the services grid stacks to a single column
-And the project grid stacks to a single column
-And the team grid stacks to a single column
-And the footer columns stack vertically
+#### Scenario: Accordion FAQ is interactive
 
-Scenario: Tablet layout
-Given the viewport is 768px wide
-Then the services grid shows 2 columns
-And the project grid shows 2 columns
+- **THEN** the "Who we are" accordion panel is expanded by default
+- **WHEN** the user clicks "What we do?"
+- **THEN** the "What we do?" panel expands with content
+- **AND** the "Who we are" panel collapses
+
+#### Scenario: "Why Choose us" panel is collapsible
+
+- **WHEN** the user clicks "Why Choose us"
+- **THEN** the "Why Choose us" panel expands with content
+
+**--- Testimonials ---**
+
+#### Scenario: Testimonials carousel displays client quotes
+
+- **THEN** the heading "Client Says:" is visible
+- **AND** a testimonial carousel shows at least one client quote with an avatar and name
+
+#### Scenario: Testimonial carousel navigates
+
+- **WHEN** the user navigates to the next testimonial
+- **THEN** a different client name and quote should be displayed
+
+**--- Newsletter ---**
+
+#### Scenario: Newsletter section displays form
+
+- **THEN** the heading "Subscribe Newsletter" is visible
+- **AND** an email input field with placeholder "Enter your email" is visible
+- **AND** a "Subscribe Now" button is visible
+
+#### Scenario: Newsletter form submission
+
+- **WHEN** the user enters a valid email address in the newsletter input
+- **AND** clicks "Subscribe Now"
+- **THEN** the form should attempt to submit
+
+**--- Footer ---**
+
+#### Scenario: Footer contact info bar displays
+
+- **THEN** a contact bar shows: address "291 South 21th Street, Suite 721 New York NY 10016", email/website info, and phone numbers
+
+#### Scenario: Footer 4-column layout
+
+- **THEN** the footer shows 4 columns: "About Cornice", "Information", "Instagram", "Contact Info"
+- **AND** social icons (Twitter, Facebook, LinkedIn, Dribbble) are visible in the About column
+- **AND** the Information column lists: "Our Company", "Certification", "Our services", "Career", "Core Values", "Company History", "FAQ"
+- **AND** the Instagram column shows 6 thumbnail images
+- **AND** the Contact Info column shows address, phone, and email
+
+#### Scenario: Footer copyright
+
+- **THEN** the copyright bar reads "All rights reserved" and links to "Component Dock"
+
+**--- Accessibility ---**
+
+#### Scenario: Keyboard navigation
+
+- **GIVEN** the user tabs through the page
+- **THEN** all interactive elements receive visible focus indicators
+- **AND** the carousel can be navigated via keyboard
+
+#### Scenario: Semantic HTML
+
+- **THEN** the page uses semantic landmarks: nav, main, footer
+- **AND** all images have alt text
+- **AND** form inputs have associated labels
+
+**--- Responsive ---**
+
+#### Scenario: Mobile layout
+
+- **GIVEN** the viewport is 375px wide
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero carousel is full-width
+- **AND** the services grid stacks to a single column
+- **AND** the project grid stacks to a single column
+- **AND** the team grid stacks to a single column
+- **AND** the footer columns stack vertically
+
+#### Scenario: Tablet layout
+
+- **GIVEN** the viewport is 768px wide
+- **THEN** the services grid shows 2 columns
+- **AND** the project grid shows 2 columns

@@ -18,54 +18,63 @@ Frostsale is a winter sale notification modal template recreating ColorLib Modal
 - **Discount number:** font-size 130px, font-weight 700, white, with % symbol (sup) and "off" (sub) text
 - **Section backgrounds:** left panel #39bdc8 (teal), right panel has background image (cover, center)
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Landing page displays centered modal trigger
-- Given the user visits the landing page
-- When the page loads
-- Then a heading "Frostsale" is displayed
-- And a "Launch Modal" button is visible
+### Feature: Template template behaviour
 
-### Scenario: Modal opens on button click
-- Given the user is on the landing page
-- When the user clicks the "Launch Modal" button
-- Then a centered modal dialog appears
-- And the modal has a close button in the top-right corner
+#### Scenario: Landing page displays centered modal trigger
 
-### Scenario: Modal left panel shows sale content
-- Given the modal is open
-- Then the left panel has a teal (#39bdc8) background
-- And a decorative snowflake icon is visible (white, 30% opacity)
-- And a "Winter" subheading is displayed (uppercase, black, letter-spacing)
-- And a "Sale" heading is displayed in Pacifico font (black, large)
-- And a snowflake icon is visible near the "Sale" heading
-- And a discount amount "40" is displayed (large, white, bold)
-- And a "%" symbol is displayed next to the discount
-- And an "off" label is displayed below the percent
-- And a line separator (white, 50px wide) appears under "Sale"
-- And a "To all products" text is displayed (uppercase)
+- **GIVEN** the user visits the landing page
+- **WHEN** the page loads
+- **THEN** a heading "Frostsale" is displayed
+- **AND** a "Launch Modal" button is visible
 
-### Scenario: Modal right panel shows image and CTA
-- Given the modal is open
-- Then the right panel has a background image
-- And a "Shop now" button is displayed
-- And the button has teal background with white text
-- And the button spans the full width
+#### Scenario: Modal opens on button click
 
-### Scenario: Modal closes on close button click
-- Given the modal is open
-- When the user clicks the close button
-- Then the modal is dismissed
+- **GIVEN** the user is on the landing page
+- **WHEN** the user clicks the "Launch Modal" button
+- **THEN** a centered modal dialog appears
+- **AND** the modal has a close button in the top-right corner
 
-### Scenario: Modal closes on overlay click
-- Given the modal is open
-- When the user clicks outside the modal content
-- Then the modal is dismissed
+#### Scenario: Modal left panel shows sale content
 
-### Scenario: Responsive layout
-- Given the modal is open on a mobile viewport (< 768px)
-- Then the right panel image area has a minimum height of 300px
-- And the modal content stacks vertically
+- **GIVEN** the modal is open
+- **THEN** the left panel has a teal (#39bdc8) background
+- **AND** a decorative snowflake icon is visible (white, 30% opacity)
+- **AND** a "Winter" subheading is displayed (uppercase, black, letter-spacing)
+- **AND** a "Sale" heading is displayed in Pacifico font (black, large)
+- **AND** a snowflake icon is visible near the "Sale" heading
+- **AND** a discount amount "40" is displayed (large, white, bold)
+- **AND** a "%" symbol is displayed next to the discount
+- **AND** an "off" label is displayed below the percent
+- **AND** a line separator (white, 50px wide) appears under "Sale"
+- **AND** a "To all products" text is displayed (uppercase)
+
+#### Scenario: Modal right panel shows image and CTA
+
+- **GIVEN** the modal is open
+- **THEN** the right panel has a background image
+- **AND** a "Shop now" button is displayed
+- **AND** the button has teal background with white text
+- **AND** the button spans the full width
+
+#### Scenario: Modal closes on close button click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button
+- **THEN** the modal is dismissed
+
+#### Scenario: Modal closes on overlay click
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks outside the modal content
+- **THEN** the modal is dismissed
+
+#### Scenario: Responsive layout
+
+- **GIVEN** the modal is open on a mobile viewport (< 768px)
+- **THEN** the right panel image area has a minimum height of 300px
+- **AND** the modal content stacks vertically
 
 ## Verification checklist
 

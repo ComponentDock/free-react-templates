@@ -44,91 +44,91 @@ Extracted from the preview stylesheet (`css/style.css`):
 - Poppins font family throughout
 - Light, airy, modern aesthetic — opposite of the dark Bootstrap Footer 04
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Whitelink Footer Template
 
 #### Scenario: Page renders with placeholder content above the footer
 
-  Given a user visits the Whitelink template page
-  Then they see a light-colored content area above the footer
-  And the content area displays a heading
+- **GIVEN** a user visits the Whitelink template page
+- **THEN** they see a light-colored content area above the footer
+- **AND** the content area displays a heading
 
 #### Scenario: Footer displays with correct white background
 
-  Given a user scrolls to the footer
-  Then the footer background is white
-  And the footer has a subtle top border in light grey (#efefef)
+- **GIVEN** a user scrolls to the footer
+- **THEN** the footer background is white
+- **AND** the footer has a subtle top border in light grey (#efefef)
 
 #### Scenario: Email subscribe form
 
-  Given a user views the top section of the footer
-  Then an email input field is displayed with grey background (#e6e6e6)
-  And the input has placeholder text "Enter your email"
-  And the input is 45px tall with no border
-  And a submit button is positioned inside the input on the right
+- **GIVEN** a user views the top section of the footer
+- **THEN** an email input field is displayed with grey background (#e6e6e6)
+- **AND** the input has placeholder text "Enter your email"
+- **AND** the input is 45px tall with no border
+- **AND** a submit button is positioned inside the input on the right
 
 #### Scenario: Horizontal navigation links
 
-  Given a user views the top section of the footer
-  Then navigation links (Features, Blog, Pricing, Services) are displayed inline
-  And the links are centered horizontally
-  And each link has 10px padding
+- **GIVEN** a user views the top section of the footer
+- **THEN** navigation links (Features, Blog, Pricing, Services) are displayed inline
+- **AND** the links are centered horizontally
+- **AND** each link has 10px padding
 
 #### Scenario: Navigation link hover styling
 
-  Given a user hovers over a navigation link
-  Then the link color changes from grey (#777) to blue (#3e64ff)
-  And the transition is smooth (0.3s ease)
+- **GIVEN** a user hovers over a navigation link
+- **THEN** the link color changes from grey (#777) to blue (#3e64ff)
+- **AND** the transition is smooth (0.3s ease)
 
 #### Scenario: Social media icons
 
-  Given a user views the top section of the footer
-  Then social icons (Twitter, Instagram, Facebook, Pinterest) are displayed inline
-  And the icons are right-aligned on desktop
-  And the icons are centered on mobile
+- **GIVEN** a user views the top section of the footer
+- **THEN** social icons (Twitter, Instagram, Facebook, Pinterest) are displayed inline
+- **AND** the icons are right-aligned on desktop
+- **AND** the icons are centered on mobile
 
 #### Scenario: Divider between sections
 
-  Given a user views the footer
-  Then a border-bottom line separates the top section from the bottom bar
-  And the divider color is light grey (#efefef)
+- **GIVEN** a user views the footer
+- **THEN** a border-bottom line separates the top section from the bottom bar
+- **AND** the divider color is light grey (#efefef)
 
 #### Scenario: Bottom bar with logo centered
 
-  Given a user views the bottom bar of the footer
-  Then the logo text "Component Dock" is centered and displayed in blue (#3e64ff)
-  And the logo is 30px font-size with weight 900
-  And the logo is above the legal links on mobile (order reversal)
+- **GIVEN** a user views the bottom bar of the footer
+- **THEN** the logo text "Component Dock" is centered and displayed in blue (#3e64ff)
+- **AND** the logo is 30px font-size with weight 900
+- **AND** the logo is above the legal links on mobile (order reversal)
 
 #### Scenario: Legal links in bottom bar
 
-  Given a user views the bottom bar
-  Then legal links (Terms, About, Privacy, Contact) are displayed inline
-  And the links are left-aligned on desktop
-  And the links are centered on mobile
+- **GIVEN** a user views the bottom bar
+- **THEN** legal links (Terms, About, Privacy, Contact) are displayed inline
+- **AND** the links are left-aligned on desktop
+- **AND** the links are centered on mobile
 
 #### Scenario: Copyright section
 
-  Given a user views the bottom bar
-  Then copyright text is displayed right-aligned
-  And the text is in small font, grey (#777)
+- **GIVEN** a user views the bottom bar
+- **THEN** copyright text is displayed right-aligned
+- **AND** the text is in small font, grey (#777)
 
 #### Scenario: Email form interaction
 
-  Given a user focuses on the email input
-  Then no outline or box-shadow appears
-  And the placeholder text is visible in light grey (#b3b3b3)
+- **GIVEN** a user focuses on the email input
+- **THEN** no outline or box-shadow appears
+- **AND** the placeholder text is visible in light grey (#b3b3b3)
 
 #### Scenario: Responsive layout
 
-  Given a user views the footer on a mobile device
-  Then the top section stacks vertically
-  And the bottom bar stacks with logo on top, links below, copyright at bottom
+- **GIVEN** a user views the footer on a mobile device
+- **THEN** the top section stacks vertically
+- **AND** the bottom bar stacks with logo on top, links below, copyright at bottom
 
 #### Scenario: Footer accessibility
 
-  Given a user navigates the footer with a keyboard
-  Then all links are focusable via Tab key
-  And the email input is focusable
-  And focus indicators are visible
+- **GIVEN** a user navigates the footer with a keyboard
+- **THEN** all links are focusable via Tab key
+- **AND** the email input is focusable
+- **AND** focus indicators are visible

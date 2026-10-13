@@ -112,125 +112,130 @@ Extracted from `https://preview.colorlib.com/theme/hnband/css/style.css`:
   - Social icons (Facebook, Twitter, YouTube, Instagram)
 - Copyright bar at bottom (Component Dock attribution replaces Colorlib credit)
 
-## Gherkin scenarios
+## Requirements
 
 ### Header / Navbar
-```gherkin
-Scenario: Header displays logo, nav links, and buy tickets button
-  Given the user visits the page
-  Then a transparent header is overlaid on the hero section
-  And the site logo is displayed on the left
-  And navigation links (Home, About, Albums, Tours, Pages, Blog, Contact) are visible
-  And a "Buy tickets" button is visible on the right (hidden on mobile)
 
-Scenario: Header is responsive on mobile
-  Given the user views on a mobile viewport
-  Then a hamburger menu icon is displayed
-  When the user taps the hamburger icon
-  Then the navigation menu opens as an overlay
-```
+#### Scenario: Header displays logo, nav links, and buy tickets button
+
+- **GIVEN** the user visits the page
+- **THEN** a transparent header is overlaid on the hero section
+- **AND** the site logo is displayed on the left
+- **AND** navigation links (Home, About, Albums, Tours, Pages, Blog, Contact) are visible
+- **AND** a "Buy tickets" button is visible on the right (hidden on mobile)
+
+#### Scenario: Header is responsive on mobile
+
+- **GIVEN** the user views on a mobile viewport
+- **THEN** a hamburger menu icon is displayed
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation menu opens as an overlay
 
 ### Hero Section
-```gherkin
-Scenario: Hero displays slider with featured event
-  Given the user visits the page
-  Then a hero section with a dark background image is visible
-  And a carousel slider shows items with cursive subtitle and event heading
-  And each item has a description paragraph and "Buy tickets" CTA button
-  And the slider auto-advances between items
 
-Scenario: Hero slider navigation
-  Given the hero slider is visible
-  When the user clicks the next/prev navigation button
-  Then the slider transitions to the next/previous item
-```
+#### Scenario: Hero displays slider with featured event
+
+- **GIVEN** the user visits the page
+- **THEN** a hero section with a dark background image is visible
+- **AND** a carousel slider shows items with cursive subtitle and event heading
+- **AND** each item has a description paragraph and "Buy tickets" CTA button
+- **AND** the slider auto-advances between items
+
+#### Scenario: Hero slider navigation
+
+- **GIVEN** the hero slider is visible
+- **WHEN** the user clicks the next/prev navigation button
+- **THEN** the slider transitions to the next/previous item
 
 ### About Section
-```gherkin
-Scenario: About section shows band info with image
-  Given the user scrolls to the About section
-  Then a two-column layout is displayed
-  And the left column shows a band/performance image
-  And the right column shows "About us" subtitle, heading, description, and "Contact us" button
-```
+
+#### Scenario: About section shows band info with image
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** a two-column layout is displayed
+- **AND** the left column shows a band/performance image
+- **AND** the right column shows "About us" subtitle, heading, description, and "Contact us" button
 
 ### Discography Section
-```gherkin
-Scenario: Discography shows album grid
-  Given the user scrolls to the Discography section
-  Then a section title "Our Discography" with "newest albums & singles." heading is visible
-  And a "Buy on iTunes" button is displayed on the right
-  And 8 album cards are displayed in a 4-column grid
-  And each card shows album art, title, and artist name
 
-Scenario: Album cards are interactive
-  Given the discography grid is visible
-  When the user hovers over an album card
-  Then the card responds with a hover effect
-```
+#### Scenario: Discography shows album grid
+
+- **GIVEN** the user scrolls to the Discography section
+- **THEN** a section title "Our Discography" with "newest albums & singles." heading is visible
+- **AND** a "Buy on iTunes" button is displayed on the right
+- **AND** 8 album cards are displayed in a 4-column grid
+- **AND** each card shows album art, title, and artist name
+
+#### Scenario: Album cards are interactive
+
+- **GIVEN** the discography grid is visible
+- **WHEN** the user hovers over an album card
+- **THEN** the card responds with a hover effect
 
 ### Player Section
-```gherkin
-Scenario: Audio player displays track info and controls
-  Given the user scrolls to the Player section
-  Then a split layout shows track info on the left and playlist on the right
-  And the player has prev/play/next controls
-  And a progress bar and volume controls are visible
-  And a scrollable playlist of tracks is displayed on the right
-```
+
+#### Scenario: Audio player displays track info and controls
+
+- **GIVEN** the user scrolls to the Player section
+- **THEN** a split layout shows track info on the left and playlist on the right
+- **AND** the player has prev/play/next controls
+- **AND** a progress bar and volume controls are visible
+- **AND** a scrollable playlist of tracks is displayed on the right
 
 ### Video Section
-```gherkin
-Scenario: Video section shows player and playlist
-  Given the user scrolls to the Video section
-  Then a section title "Our Videos" is displayed
-  And a video player area is shown on the left (8 columns)
-  And a video playlist sidebar is shown on the right (4 columns)
-  And the player has playback controls and a progress bar
-```
+
+#### Scenario: Video section shows player and playlist
+
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a section title "Our Videos" is displayed
+- **AND** a video player area is shown on the left (8 columns)
+- **AND** a video playlist sidebar is shown on the right (4 columns)
+- **AND** the player has playback controls and a progress bar
 
 ### Shows Section
-```gherkin
-Scenario: Shows list displays upcoming events
-  Given the user scrolls to the Shows section
-  Then a section title "Upcoming Shows" is visible with "View all" button
-  And multiple show items are listed
-  And each show item displays: date (day + month), title, details, venue, time, and "Buy tickets" button
 
-Scenario: Show items respond to hover
-  Given the shows list is visible
-  When the user hovers over a show item
-  Then the item background highlights with a transition effect
-```
+#### Scenario: Shows list displays upcoming events
+
+- **GIVEN** the user scrolls to the Shows section
+- **THEN** a section title "Upcoming Shows" is visible with "View all" button
+- **AND** multiple show items are listed
+- **AND** each show item displays: date (day + month), title, details, venue, time, and "Buy tickets" button
+
+#### Scenario: Show items respond to hover
+
+- **GIVEN** the shows list is visible
+- **WHEN** the user hovers over a show item
+- **THEN** the item background highlights with a transition effect
 
 ### Footer Section
-```gherkin
-Scenario: Footer displays contact form and info
-  Given the user scrolls to the footer
-  Then a contact form section with Name, Email, Message fields and "Send Email" button is visible
-  And a footer image is displayed beside the form
-  And address, phone/email, and social icons are shown below
-  And a copyright line with Component Dock attribution is displayed
 
-Scenario: Footer is responsive on mobile
-  Given the user views on a mobile viewport
-  Then the contact form and footer image stack vertically
-  And info columns stack vertically
-```
+#### Scenario: Footer displays contact form and info
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a contact form section with Name, Email, Message fields and "Send Email" button is visible
+- **AND** a footer image is displayed beside the form
+- **AND** address, phone/email, and social icons are shown below
+- **AND** a copyright line with Component Dock attribution is displayed
+
+#### Scenario: Footer is responsive on mobile
+
+- **GIVEN** the user views on a mobile viewport
+- **THEN** the contact form and footer image stack vertically
+- **AND** info columns stack vertically
 
 ### Responsive Design
-```gherkin
-Scenario: Layout adapts to mobile viewport
-  Given the user views the page on a 375px wide viewport
-  Then the "Buy tickets" header button is hidden
-  And the hero section height reduces to ~900px
-  And the about section columns stack vertically
-  And the discography grid becomes 2-column
-  And the player section stacks vertically
-  And the video section stacks vertically
-  And the shows list items stack vertically
-  And the footer columns stack vertically
-```
+
+#### Scenario: Layout adapts to mobile viewport
+
+- **GIVEN** the user views the page on a 375px wide viewport
+- **THEN** the "Buy tickets" header button is hidden
+- **AND** the hero section height reduces to ~900px
+- **AND** the about section columns stack vertically
+- **AND** the discography grid becomes 2-column
+- **AND** the player section stacks vertically
+- **AND** the video section stacks vertically
+- **AND** the shows list items stack vertically
+- **AND** the footer columns stack vertically
 
 ## Verification checklist
 

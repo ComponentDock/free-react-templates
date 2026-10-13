@@ -11,7 +11,7 @@ Recreation of ColorLib **Accordion 02** (`https://colorlib.com/wp/template/accor
 - **Layout**: Centered container, elegant accordion sections for food/drink categories (Breakfast, Lunch, Dinner, Drink, Wine), expandable item lists with dish titles, descriptions, and prices.
 - **Component structure**: Navbar/Header, Hero intro, Interactive Accordion Section (categories with expandable panels, menu item cards with image/title/price/description), Footer with Component Dock branding.
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Menu Accordion Display and Interaction
 
@@ -19,23 +19,23 @@ As a site visitor, I want to explore restaurant specialties categorized in accor
 
 #### Scenario: Default expanded section
 
-- Given the Harmonica template is loaded
-- When the user views the menu section
-- Then the "Breakfast" accordion category is expanded by default
-- And other categories ("Lunch", "Dinner", "Drink", "Wine") are collapsed
+- **GIVEN** the Harmonica template is loaded
+- **WHEN** the user views the menu section
+- **THEN** the "Breakfast" accordion category is expanded by default
+- **AND** other categories ("Lunch", "Dinner", "Drink", "Wine") are collapsed
 
 #### Scenario: Toggling accordion categories
 
-- Given the user clicks on the "Lunch" accordion header
-- When the category expands
-- Then the menu items under Lunch are displayed
-- And previously open categories collapse or remain independently toggleable according to design
+- **GIVEN** the user clicks on the "Lunch" accordion header
+- **WHEN** the category expands
+- **THEN** the menu items under Lunch are displayed
+- **AND** previously open categories collapse or remain independently toggleable according to design
 
 #### Scenario: Footer branding link
 
-- Given the user scrolls to the bottom of the page
-- When they view the footer
-- Then there is a link pointing to `https://www.componentdock.com/` with branded text
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** they view the footer
+- **THEN** there is a link pointing to `https://www.componentdock.com/` with branded text
 
 ## Verification Checklist
 

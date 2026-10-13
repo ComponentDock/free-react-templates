@@ -18,29 +18,29 @@ Recreation of ColorLib `accordion-04` (`https://preview.colorlib.com/theme/bac/a
 2. **Accordion Showcase Section**: Multiple interactive accordion items with numbered badges (01, 02, 03, etc.), icons, collapsible content panels, and smooth toggle states.
 3. **Footer**: Clean copyright and mandatory attribution link to Component Dock (`https://www.componentdock.com/`).
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
 ### Feature: Foldout Interactive Accordion Showcase
 
 #### Scenario: User views the accordion component list
 
-- Given the user opens the Foldout template
-- When the page loads
-- Then the header section displays the main title and subtitle
-- And multiple accordion items are rendered with numbered badges and icons
+- **GIVEN** the user opens the Foldout template
+- **WHEN** the page loads
+- **THEN** the header section displays the main title and subtitle
+- **AND** multiple accordion items are rendered with numbered badges and icons
 
 #### Scenario: User expands and collapses accordion items
 
-- Given the user is viewing the accordion showcase
-- When the user clicks on an accordion header
-- Then the corresponding panel expands to show its detailed content
-- And clicking another header expands that item and optionally collapses others according to accordion behavior
+- **GIVEN** the user is viewing the accordion showcase
+- **WHEN** the user clicks on an accordion header
+- **THEN** the corresponding panel expands to show its detailed content
+- **AND** clicking another header expands that item and optionally collapses others according to accordion behavior
 
 #### Scenario: Footer attribution link
 
-- Given the user scrolls to the bottom of the page
-- When the footer is visible
-- Then it contains a link pointing to `https://www.componentdock.com/` with anchor text "Component Dock"
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is visible
+- **THEN** it contains a link pointing to `https://www.componentdock.com/` with anchor text "Component Dock"
 
 ## Verification Checklist
 

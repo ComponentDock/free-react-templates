@@ -41,68 +41,77 @@ hero carousel featuring a 60/40 image-to-text split layout.
 - No parallax, no dark sections — very clean white + image + accent scheme
 - Hero carousel with owl-carousel style prev/next navigation at bottom
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Navigation
 
-Scenario: Side nav toggle
-  When the user clicks the hamburger icon in the header
-  Then a side navigation panel slides in from the right
-  And it displays a search input, page links, and a gallery preview
-  When the user clicks outside the panel or the toggle again
-  Then the side navigation panel slides out
+#### Scenario: Side nav toggle
 
-Scenario: Nav links
-  Given the side nav is open
-  Then it shows links for Home, Work, Blog, About, Contact
-  And the active link is highlighted in yellow (#F9CE00)
+- **WHEN** the user clicks the hamburger icon in the header
+- **THEN** a side navigation panel slides in from the right
+- **AND** it displays a search input, page links, and a gallery preview
+- **WHEN** the user clicks outside the panel or the toggle again
+- **THEN** the side navigation panel slides out
 
-Scenario: Nav gallery preview
-  Given the side nav is open
-  Then a 2x2 grid of gallery thumbnail images is displayed
-  And each thumbnail shows a search icon on hover
+#### Scenario: Nav links
+
+- **GIVEN** the side nav is open
+- **THEN** it shows links for Home, Work, Blog, About, Contact
+- **AND** the active link is highlighted in yellow (#F9CE00)
+
+#### Scenario: Nav gallery preview
+
+- **GIVEN** the side nav is open
+- **THEN** a 2x2 grid of gallery thumbnail images is displayed
+- **AND** each thumbnail shows a search icon on hover
 
 ### Feature: Hero Carousel
 
-Scenario: Fullscreen hero slides
-  When the page loads
-  Then a full-viewport-height hero carousel is displayed
-  And the first slide shows a large background image on the left (60% width)
-  And the right panel (40% width) shows a tag label, heading, description, and CTA button
+#### Scenario: Fullscreen hero slides
 
-Scenario: Slide content
-  Given a hero slide is visible
-  Then it displays a tag in uppercase (e.g. "Welcome", "Photography", "Discover")
-  And a large heading in Playfair Display font
-  And a description paragraph
-  And a "View Galleries" CTA button with arrow icon
+- **WHEN** the page loads
+- **THEN** a full-viewport-height hero carousel is displayed
+- **AND** the first slide shows a large background image on the left (60% width)
+- **AND** the right panel (40% width) shows a tag label, heading, description, and CTA button
 
-Scenario: Slide navigation
-  Given the hero carousel is displayed
-  Then prev/next navigation buttons are shown at the bottom
-  And clicking next advances to the next slide
-  And clicking prev goes to the previous slide
+#### Scenario: Slide content
 
-Scenario: Slide numbers
-  Given a hero slide is visible
-  Then a large slide counter (e.g. "01/03") is displayed at the bottom of the text panel
-  And the number uses a large font (220px) in light gray (#f2f2f2)
+- **GIVEN** a hero slide is visible
+- **THEN** it displays a tag in uppercase (e.g. "Welcome", "Photography", "Discover")
+- **AND** a large heading in Playfair Display font
+- **AND** a description paragraph
+- **AND** a "View Galleries" CTA button with arrow icon
+
+#### Scenario: Slide navigation
+
+- **GIVEN** the hero carousel is displayed
+- **THEN** prev/next navigation buttons are shown at the bottom
+- **AND** clicking next advances to the next slide
+- **AND** clicking prev goes to the previous slide
+
+#### Scenario: Slide numbers
+
+- **GIVEN** a hero slide is visible
+- **THEN** a large slide counter (e.g. "01/03") is displayed at the bottom of the text panel
+- **AND** the number uses a large font (220px) in light gray (#f2f2f2)
 
 ### Feature: Branding
 
-Scenario: Brand logo
-  When the page loads
-  Then the brand name "Stillframe" is displayed in the header
-  And it uses the Playfair Display font
+#### Scenario: Brand logo
+
+- **WHEN** the page loads
+- **THEN** the brand name "Stillframe" is displayed in the header
+- **AND** it uses the Playfair Display font
 
 ### Feature: Responsive layout
 
-Scenario: Mobile view
-  When the viewport is below 768px
-  Then the hero split layout stacks vertically
-  And the hero text panel gets a white background for readability
-  And the slide number is hidden
-  And the CTA button letter-spacing is reduced
+#### Scenario: Mobile view
+
+- **WHEN** the viewport is below 768px
+- **THEN** the hero split layout stacks vertically
+- **AND** the hero text panel gets a white background for readability
+- **AND** the slide number is hidden
+- **AND** the CTA button letter-spacing is reduced
 
 ## Verification checklist
 

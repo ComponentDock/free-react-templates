@@ -93,124 +93,138 @@ a CTA banner, and a multi-column footer.
    Instagram, Twitter, LinkedIn), Quick Links, Resources, Support, Company.
    Copyright bottom bar.
 
-## Gherkin Requirements
+## Requirements
 
 ### Navbar
-```gherkin
-Feature: Navbar
-  Scenario: Displays logo and navigation links
-    Given the user loads the page
-    Then the navbar shows the logo "Revlane" as a bold link
-    And the navbar displays links: Home, Listing, Testimonials, Blog, About, Contact
 
-  Scenario: Mobile hamburger toggle
-    Given the viewport is narrow (mobile)
-    Then a hamburger icon is visible
-    When the user clicks the hamburger icon
-    Then the mobile menu opens with the same nav links
-```
+Feature: Navbar
+
+#### Scenario: Displays logo and navigation links
+
+- **GIVEN** the user loads the page
+- **THEN** the navbar shows the logo "Revlane" as a bold link
+- **AND** the navbar displays links: Home, Listing, Testimonials, Blog, About, Contact
+
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** the viewport is narrow (mobile)
+- **THEN** a hamburger icon is visible
+- **WHEN** the user clicks the hamburger icon
+- **THEN** the mobile menu opens with the same nav links
 
 ### Hero
-```gherkin
-Feature: Hero Section
-  Scenario: Displays hero with search form
-    Given the user loads the page
-    Then a full-viewport hero section is visible with a background image
-    And the heading reads "Rent a car is within your finger tips."
-    And a search form is shown with a vehicle type dropdown, pick-up date,
-      drop-off date, and a "Search Now" button
 
-  Scenario: Search form has correct fields
-    Given the hero section is visible
-    Then the dropdown contains at least 3 vehicle options
-    And the pick-up input accepts a date
-    And the drop-off input accepts a date
-    And the search button is styled as a full-width primary button
-```
+Feature: Hero Section
+
+#### Scenario: Displays hero with search form
+
+- **GIVEN** the user loads the page
+- **THEN** a full-viewport hero section is visible with a background image
+- **AND** the heading reads "Rent a car is within your finger tips."
+- **AND** a search form is shown with a vehicle type dropdown, pick-up date,
+drop-off date, and a "Search Now" button
+
+#### Scenario: Search form has correct fields
+
+- **GIVEN** the hero section is visible
+- **THEN** the dropdown contains at least 3 vehicle options
+- **AND** the pick-up input accepts a date
+- **AND** the drop-off input accepts a date
+- **AND** the search button is styled as a full-width primary button
 
 ### How It Works
-```gherkin
-Feature: How It Works
-  Scenario: Displays three-step process
-    Given the user scrolls to the "How it works" section
-    Then three step cards are visible in a row
-    And step 1 reads "Select a car" with number "01."
-    And step 2 reads "Fill up form" with number "02."
-    And step 3 reads "Payment" with number "03."
-    And each step card has a description paragraph
 
-  Scenario: Video play link
-    Given the how-it-works section is visible
-    Then a "Video how it works" play button link is displayed below the steps
-```
+Feature: How It Works
+
+#### Scenario: Displays three-step process
+
+- **GIVEN** the user scrolls to the "How it works" section
+- **THEN** three step cards are visible in a row
+- **AND** step 1 reads "Select a car" with number "01."
+- **AND** step 2 reads "Fill up form" with number "02."
+- **AND** step 3 reads "Payment" with number "03."
+- **AND** each step card has a description paragraph
+
+#### Scenario: Video play link
+
+- **GIVEN** the how-it-works section is visible
+- **THEN** a "Video how it works" play button link is displayed below the steps
 
 ### Promo Split
-```gherkin
+
 Feature: Promo Section
-  Scenario: Displays promo with image and text
-    Given the user scrolls to the promo section
-    Then a feature image is shown on one side
-    And the text "You can easily avail our promo for renting a car." is visible
-    And a "Meet them now" primary button is displayed
-```
+
+#### Scenario: Displays promo with image and text
+
+- **GIVEN** the user scrolls to the promo section
+- **THEN** a feature image is shown on one side
+- **AND** the text "You can easily avail our promo for renting a car." is visible
+- **AND** a "Meet them now" primary button is displayed
 
 ### Car Listings
-```gherkin
-Feature: Car Listings
-  Scenario: Displays car cards in grid
-    Given the user scrolls to the Car Listings section
-    Then six car cards are visible in a 3-column grid
-    And each card shows a car image, name, price, specs, and description
-    And each card has a "Rent Now" primary button
 
-  Scenario: Car card details
-    Given a car listing card is visible
-    Then the price displays as "$389.00/day"
-    And the specs show Luggage, Doors, and Passenger counts
-    And the specs are separated by a border-bottom divider
-```
+Feature: Car Listings
+
+#### Scenario: Displays car cards in grid
+
+- **GIVEN** the user scrolls to the Car Listings section
+- **THEN** six car cards are visible in a 3-column grid
+- **AND** each card shows a car image, name, price, specs, and description
+- **AND** each card has a "Rent Now" primary button
+
+#### Scenario: Car card details
+
+- **GIVEN** a car listing card is visible
+- **THEN** the price displays as "$389.00/day"
+- **AND** the specs show Luggage, Doors, and Passenger counts
+- **AND** the specs are separated by a border-bottom divider
 
 ### Features
-```gherkin
+
 Feature: Features Section
-  Scenario: Displays feature cards
-    Given the user scrolls to the Features section
-    Then six feature cards are visible in a 3-column grid
-    And each card has a circular icon, title, description, and "Learn more" link
-```
+
+#### Scenario: Displays feature cards
+
+- **GIVEN** the user scrolls to the Features section
+- **THEN** six feature cards are visible in a 3-column grid
+- **AND** each card has a circular icon, title, description, and "Learn more" link
 
 ### Testimonials
-```gherkin
+
 Feature: Testimonials
-  Scenario: Displays customer testimonials
-    Given the user scrolls to the Testimonials section
-    Then three testimonial cards are visible
-    And each card shows a blockquote, avatar image, author name, and role
-```
+
+#### Scenario: Displays customer testimonials
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** three testimonial cards are visible
+- **AND** each card shows a blockquote, avatar image, author name, and role
 
 ### CTA Banner
-```gherkin
+
 Feature: CTA Banner
-  Scenario: Displays call-to-action
-    Given the user scrolls to the CTA section
-    Then a blue banner reads "What are you waiting for?"
-    And a "Rent a car now" white button is displayed
-```
+
+#### Scenario: Displays call-to-action
+
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** a blue banner reads "What are you waiting for?"
+- **AND** a "Rent a car now" white button is displayed
 
 ### Footer
-```gherkin
-Feature: Footer
-  Scenario: Displays multi-column footer
-    Given the user scrolls to the footer
-    Then five columns are visible: About Us, Quick Links, Resources,
-      Support, and Company
-    And the About Us column shows social media icon links
-    And a copyright bar is at the bottom
 
-  Scenario: Footer links to Component Dock
-    Given the footer is visible
-    Then a link to https://www.componentdock.com/ is present
-```
+Feature: Footer
+
+#### Scenario: Displays multi-column footer
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** five columns are visible: About Us, Quick Links, Resources,
+Support, and Company
+- **AND** the About Us column shows social media icon links
+- **AND** a copyright bar is at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is present
 
 ## Verification Checklist
 

@@ -12,7 +12,7 @@ Preview URL fallback: ColorLib WordPress screenshot archive (preview.colorlib.co
 - **Button / Shape**: Rounded-xl (`0.75rem`), shadow-md, smooth transitions.
 - **Layout**: Sticky header, hero slider/carousel section with interactive controls, featured items showcase grid, interactive testimonial carousel, newsletter subscription banner, and footer linking Component Dock.
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
 ### Feature: Interactive Carousel Showcase
 
@@ -20,23 +20,23 @@ As a visitor, I want to browse featured interactive carousels and slides so that
 
 #### Scenario: Hero Slider Navigation
 
-- **Given** the user lands on the CarouselSweep home page
-- **When** the user clicks the next/previous navigation buttons on the hero carousel
-- **Then** the active slide updates smoothly with transition effects and pagination dots reflect the current position.
+- **GIVEN** the user lands on the CarouselSweep home page
+- **WHEN** the user clicks the next/previous navigation buttons on the hero carousel
+- **THEN** the active slide updates smoothly with transition effects and pagination dots reflect the current position
 
 #### Scenario: Testimonial Slider Controls
 
-- **Given** the user scrolls to the testimonial carousel section
-- **When** the user interacts with the carousel controls or auto-play progresses
-- **Then** customer quotes and avatars transition accordingly.
+- **GIVEN** the user scrolls to the testimonial carousel section
+- **WHEN** the user interacts with the carousel controls or auto-play progresses
+- **THEN** customer quotes and avatars transition accordingly
 
 ### Feature: Responsive Navigation & Footer
 
 #### Scenario: Navbar and Component Dock Footer
 
-- **Given** the user views the page on desktop or mobile
-- **When** the user checks the footer
-- **Then** it must include a prominent link to `https://www.componentdock.com/` branded as Component Dock.
+- **GIVEN** the user views the page on desktop or mobile
+- **WHEN** the user checks the footer
+- **THEN** it must include a prominent link to `https://www.componentdock.com/` branded as Component Dock
 
 ## Verification Checklist
 

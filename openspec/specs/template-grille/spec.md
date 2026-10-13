@@ -61,131 +61,133 @@ Extracted from the live preview CSS (`style.css`):
 8. **Footer** — dark (#333) background. Brand logo + copyright with
    Component Dock attribution link.
 
-## Gherkin Scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Navbar displays all navigation links
-  Given the user visits the Grille homepage
-  Then the navbar shows links: Home, About Us, Menu, Awards, Testimonials, Reservation, Contact
-  And the brand logo displays "grille"
-  And a search icon button is visible on the right
+#### Scenario: Navbar displays all navigation links
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls down the page
-  Then the navbar background changes to semi-transparent dark (#rgba(0,0,0,0.85))
-  And the navbar height adjusts to 70px
+- **GIVEN** the user visits the Grille homepage
+- **THEN** the navbar shows links: Home, About Us, Menu, Awards, Testimonials, Reservation, Contact
+- **AND** the brand logo displays "grille"
+- **AND** a search icon button is visible on the right
 
-Scenario: Navbar is responsive
-  Given the viewport is mobile width
-  Then a hamburger menu toggle button appears
-  And clicking it toggles the navigation menu visibility
-```
+#### Scenario: Navbar becomes sticky on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar background changes to semi-transparent dark (#rgba(0,0,0,0.85))
+- **AND** the navbar height adjusts to 70px
+
+#### Scenario: Navbar is responsive
+
+- **GIVEN** the viewport is mobile width
+- **THEN** a hamburger menu toggle button appears
+- **AND** clicking it toggles the navigation menu visibility
 
 ### Hero
 
-```gherkin
-Scenario: Hero displays a background image with overlay text
-  Given the user views the homepage
-  Then a full-width hero section is visible
-  And it contains a heading and body paragraph
-  And a "Reservation" CTA button is displayed
+#### Scenario: Hero displays a background image with overlay text
 
-Scenario: Hero has social links
-  Given the hero section is visible
-  Then vertical social media links (Facebook, Instagram, Twitter) appear on the left side
-  And the links are white colored
+- **GIVEN** the user views the homepage
+- **THEN** a full-width hero section is visible
+- **AND** it contains a heading and body paragraph
+- **AND** a "Reservation" CTA button is displayed
 
-Scenario: Hero has slide navigation
-  Given the hero carousel is active
-  Then a thumbnail nav appears on the right edge of the hero
-  And clicking it navigates between slides
-```
+#### Scenario: Hero has social links
+
+- **GIVEN** the hero section is visible
+- **THEN** vertical social media links (Facebook, Instagram, Twitter) appear on the left side
+- **AND** the links are white colored
+
+#### Scenario: Hero has slide navigation
+
+- **GIVEN** the hero carousel is active
+- **THEN** a thumbnail nav appears on the right edge of the hero
+- **AND** clicking it navigates between slides
 
 ### About Us
 
-```gherkin
-Scenario: About Us shows two-column layout
-  Given the user scrolls to the About Us section
-  Then an image appears on the left with text on the right
-  And the text includes a "restaurant style" label and a paragraph
+#### Scenario: About Us shows two-column layout
 
-Scenario: About Us has a second row reversed
-  Given the user views the second row of About Us
-  Then text appears on the left with "our chef" label
-  And an image appears on the right
-```
+- **GIVEN** the user scrolls to the About Us section
+- **THEN** an image appears on the left with text on the right
+- **AND** the text includes a "restaurant style" label and a paragraph
+
+#### Scenario: About Us has a second row reversed
+
+- **GIVEN** the user views the second row of About Us
+- **THEN** text appears on the left with "our chef" label
+- **AND** an image appears on the right
 
 ### Dish Menu
 
-```gherkin
-Scenario: Dish Menu section displays heading and CTA
-  Given the user scrolls to the Dish Menu section
-  Then a centered "Special" heading is visible
-  And a "View The Menu" button is displayed below
+#### Scenario: Dish Menu section displays heading and CTA
 
-Scenario: Dish Menu shows a 3-column grid of dishes
-  Given the Dish Menu section is loaded
-  Then 3 dish cards are displayed in a row
-  And each card has a food image, dish name, and price
+- **GIVEN** the user scrolls to the Dish Menu section
+- **THEN** a centered "Special" heading is visible
+- **AND** a "View The Menu" button is displayed below
 
-Scenario: Dish cards show hover effect
-  Given the user hovers over a dish card
-  Then the dish name and price text change to the brand red color
-```
+#### Scenario: Dish Menu shows a 3-column grid of dishes
+
+- **GIVEN** the Dish Menu section is loaded
+- **THEN** 3 dish cards are displayed in a row
+- **AND** each card has a food image, dish name, and price
+
+#### Scenario: Dish cards show hover effect
+
+- **GIVEN** the user hovers over a dish card
+- **THEN** the dish name and price text change to the brand red color
 
 ### Awards
 
-```gherkin
-Scenario: Awards section displays badge images
-  Given the user scrolls to the Awards section
-  Then an "Awards" heading appears on the left
-  And 5 award badge images are displayed in a horizontal row
-```
+#### Scenario: Awards section displays badge images
+
+- **GIVEN** the user scrolls to the Awards section
+- **THEN** an "Awards" heading appears on the left
+- **AND** 5 award badge images are displayed in a horizontal row
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials section shows carousel
-  Given the user scrolls to the Testimonials section
-  Then a "Testimonials" heading is centered
-  And testimonial cards are displayed in a carousel
+#### Scenario: Testimonials section shows carousel
 
-Scenario: Testimonial card displays avatar and quote
-  Given a testimonial card is visible
-  Then it shows an avatar image, person name, and title
-  And a quote paragraph is displayed below
-```
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** a "Testimonials" heading is centered
+- **AND** testimonial cards are displayed in a carousel
+
+#### Scenario: Testimonial card displays avatar and quote
+
+- **GIVEN** a testimonial card is visible
+- **THEN** it shows an avatar image, person name, and title
+- **AND** a quote paragraph is displayed below
 
 ### Reservation
 
-```gherkin
-Scenario: Reservation form has all required fields
-  Given the user scrolls to the Reservation section
-  Then a "Reservation" heading is visible
-  And the form contains: date input, time input, persons input, name input, message textarea
-  And a "Reserve Your Desk" button is displayed
+#### Scenario: Reservation form has all required fields
 
-Scenario: Reservation form has underline-style inputs
-  Given the reservation form is displayed
-  Then form inputs have a bottom border only (no full border)
-  And focus state shows no box-shadow
+- **GIVEN** the user scrolls to the Reservation section
+- **THEN** a "Reservation" heading is visible
+- **AND** the form contains: date input, time input, persons input, name input, message textarea
+- **AND** a "Reserve Your Desk" button is displayed
 
-Scenario: Reservation section has a side image
-  Given the Reservation section is visible
-  Then a food/restaurant image appears to the right of the form
-```
+#### Scenario: Reservation form has underline-style inputs
+
+- **GIVEN** the reservation form is displayed
+- **THEN** form inputs have a bottom border only (no full border)
+- **AND** focus state shows no box-shadow
+
+#### Scenario: Reservation section has a side image
+
+- **GIVEN** the Reservation section is visible
+- **THEN** a food/restaurant image appears to the right of the form
 
 ### Footer
 
-```gherkin
-Scenario: Footer displays brand and copyright
-  Given the user scrolls to the footer
-  Then a dark background (#333) footer is visible
-  And the brand logo "grille" is displayed
-  And a copyright line with Component Dock link is shown
-```
+#### Scenario: Footer displays brand and copyright
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background (#333) footer is visible
+- **AND** the brand logo "grille" is displayed
+- **AND** a copyright line with Component Dock link is shown
 
 ## Verification Checklist
 

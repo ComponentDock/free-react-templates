@@ -43,45 +43,72 @@ The original is a Bootstrap 4 law firm template with:
 ## Requirements
 
 ### Feature: Header
+
+#### Scenario: Header
+
 - As a visitor I see a sticky navigation bar with the logo "Justice", nav links (Home, About, Services, Case Studies, Blog, Contact), and a phone-number CTA button
 - The header sticks to the top on scroll
 - The CTA button is styled with primary blue background and white text
 
 ### Feature: Hero Section
+
+#### Scenario: Hero Section
+
 - As a visitor I see a full-width hero with a background image, subtitle "Committed to Success", a bold heading "Dont Feel Helpless We Fight for Justice", a descriptive paragraph, and a "Learn About Us" CTA button
 - The hero uses a background image (placeholder from picsum.photos)
 - Animations: fadeInLeft on text elements
 
 ### Feature: Practice Areas / Categories
+
+#### Scenario: Practice Areas / Categories
+
 - As a visitor I see an "Area of Practice" section with 3 columns of practice area cards
 - Each card has an icon, a title, and a brief description
 - Cards are arranged in a responsive grid (3 columns desktop, 1 column mobile)
 
 ### Feature: Services
+
+#### Scenario: Services
+
 - As a visitor I see a "Services" section with 3 service cards
 - Each card has an image thumbnail, a title, and a description
 - Cards have a subtle hover/interaction effect
 
 ### Feature: Call-to-Action Banner
+
+#### Scenario: Call-to-Action Banner
+
 - As a visitor I see a dark full-width banner section with "Want to Work" messaging
 - The banner has centered text and a CTA button
 - The banner uses a dark background color
 
 ### Feature: Team Members
+
+#### Scenario: Team Members
+
 - As a visitor I see a "Meet Our Dedicated Team Members" section
 - Team members are displayed in a responsive grid
 - Each member has a photo, name, role, and social media icon links
 
 ### Feature: Blog / News
+
+#### Scenario: Blog / News
+
 - As a visitor I see a "Lawyers news" section with blog post cards
 - Each card has a thumbnail image, date, title, and "Read More" button
 - Posts are displayed in a 3-column grid
 
 ### Feature: Newsletter
+
+#### Scenario: Newsletter
+
 - As a visitor I see a newsletter signup section with email input and submit button
 - The section has a dark background
 
 ### Feature: Footer
+
+#### Scenario: Footer
+
 - As a visitor I see a multi-column footer with logo, quick links, practice area links, newsletter, and social icons
 - Footer has a dark background with light text
 

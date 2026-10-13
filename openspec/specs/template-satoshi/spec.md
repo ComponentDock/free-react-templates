@@ -33,106 +33,106 @@ Recreation of ColorLib "Bitcoin" — a cryptocurrency landing page template feat
 | Footer link color          | `#777777`                                 | `.footer-menu li a`             |
 | Footer social bg           | `#111111`                                 | `.footer-social a`              |
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Cryptocurrency Landing Page
 
 #### Scenario: Header Navigation
 
-Given the user loads the page
-Then a fixed header is displayed at the top
-And the header contains a logo and navigation links: Home, Convert, Feature, Price, Blog
-And the header is transparent initially and gains a dark background on scroll
+- **GIVEN** the user loads the page
+- **THEN** a fixed header is displayed at the top
+- **AND** the header contains a logo and navigation links: Home, Convert, Feature, Price, Blog
+- **AND** the header is transparent initially and gains a dark background on scroll
 
 #### Scenario: Banner Hero Section
 
-Given the user views the hero section
-Then a dark overlay covers the background image
-And the heading "Currently Purchase Rate" is displayed
-And a large price "$12,356" is shown
-And descriptive paragraph text is displayed
-And a "Buy Bitcoin" CTA button with gradient (yellow-to-orange) is present
+- **GIVEN** the user views the hero section
+- **THEN** a dark overlay covers the background image
+- **AND** the heading "Currently Purchase Rate" is displayed
+- **AND** a large price "$12,356" is shown
+- **AND** descriptive paragraph text is displayed
+- **AND** a "Buy Bitcoin" CTA button with gradient (yellow-to-orange) is present
 
 #### Scenario: Currency Converter Section
 
-Given the user scrolls to the converter section
-Then the heading "The Currency Converter" is visible
-And a Bitcoin icon/image is displayed
-And input fields for currency values are shown (feet, pounds, inches)
-And a "Calculate Your BMI" button is present (placeholder CTA)
+- **GIVEN** the user scrolls to the converter section
+- **THEN** the heading "The Currency Converter" is visible
+- **AND** a Bitcoin icon/image is displayed
+- **AND** input fields for currency values are shown (feet, pounds, inches)
+- **AND** a "Calculate Your BMI" button is present (placeholder CTA)
 
 #### Scenario: Simple Services Section
 
-Given the user scrolls to the services section
-Then three service cards are displayed in a row
-And each card has an icon image, a title link, and a description paragraph
-And the card titles are "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
+- **GIVEN** the user scrolls to the services section
+- **THEN** three service cards are displayed in a row
+- **AND** each card has an icon image, a title link, and a description paragraph
+- **AND** the card titles are "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", "Send & Receive Bitcoin"
 
 #### Scenario: About Us Section
 
-Given the user scrolls to the about section
-Then the layout splits into two columns
-And the left column shows an image carousel
-And the right column shows an icon, heading "Exchange Bitcoin is not that tough Anymore", and descriptive text
-And the section has a dark charcoal (#222) background
+- **GIVEN** the user scrolls to the about section
+- **THEN** the layout splits into two columns
+- **AND** the left column shows an image carousel
+- **AND** the right column shows an icon, heading "Exchange Bitcoin is not that tough Anymore", and descriptive text
+- **AND** the section has a dark charcoal (#222) background
 
 #### Scenario: Features Section
 
-Given the user scrolls to the features section
-Then the heading "Why choose us during purchase bitcoin" is displayed
-And a subtitle "Who are in extremely love with eco friendly system." is shown
-And four feature cards are displayed in a 2x2 grid
-And each card has a Linearicons icon, title, and description
-And the feature titles are "Expert Technicians", "Professional Service", "Great Support", and one more
+- **GIVEN** the user scrolls to the features section
+- **THEN** the heading "Why choose us during purchase bitcoin" is displayed
+- **AND** a subtitle "Who are in extremely love with eco friendly system." is shown
+- **AND** four feature cards are displayed in a 2x2 grid
+- **AND** each card has a Linearicons icon, title, and description
+- **AND** the feature titles are "Expert Technicians", "Professional Service", "Great Support", and one more
 
 #### Scenario: Statistics Section
 
-Given the user scrolls to the statistics section
-Then a chart/image is displayed on the left
-And the heading "Ups and Downs of Bitcoin (Realtime)" is shown on the right
-And descriptive text and a "View Details" button are present
-And the section has a light off-white (#f9f9ff) background
+- **GIVEN** the user scrolls to the statistics section
+- **THEN** a chart/image is displayed on the left
+- **AND** the heading "Ups and Downs of Bitcoin (Realtime)" is shown on the right
+- **AND** descriptive text and a "View Details" button are present
+- **AND** the section has a light off-white (#f9f9ff) background
 
 #### Scenario: Call to Action Section
 
-Given the user scrolls to the CTA section
-Then the heading "Huge Transaction in last Week" is displayed
-And descriptive paragraph text is shown
-And a "Buy Bitcoin Now!" gradient button is present
-And the section has a gradient background
+- **GIVEN** the user scrolls to the CTA section
+- **THEN** the heading "Huge Transaction in last Week" is displayed
+- **AND** descriptive paragraph text is shown
+- **AND** a "Buy Bitcoin Now!" gradient button is present
+- **AND** the section has a gradient background
 
 #### Scenario: Pricing Section
 
-Given the user scrolls to the pricing section
-Then the heading "Purchase whatever you want" is displayed
-And three pricing cards are shown in a row
-And each card has a top area with a coin name (Ripple $7999, Ethereum $9999, Bitcoin $5999)
-And each card has a description and a "Get Started" button
-And the middle card has a gradient "Get Started" button while the others have dark buttons
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** the heading "Purchase whatever you want" is displayed
+- **AND** three pricing cards are shown in a row
+- **AND** each card has a top area with a coin name (Ripple $7999, Ethereum $9999, Bitcoin $5999)
+- **AND** each card has a description and a "Get Started" button
+- **AND** the middle card has a gradient "Get Started" button while the others have dark buttons
 
 #### Scenario: Blog Section
 
-Given the user scrolls to the blog section
-Then the heading "Latest Posts from our Blog" is displayed
-And three blog cards are shown in a row
-And each card has a thumbnail image, title, description, and author info (avatar + name + date)
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading "Latest Posts from our Blog" is displayed
+- **AND** three blog cards are shown in a row
+- **AND** each card has a thumbnail image, title, description, and author info (avatar + name + date)
 
 #### Scenario: Footer Section
 
-Given the user views the footer
-Then a dark navy (#04091e) footer is displayed
-And three columns are shown: "About Us" text, "Top Products" links, and "Newsletter" form
-And the newsletter has an email input and an arrow submit button
-And a footer bottom bar shows copyright text and social media icons (Facebook, Twitter, Dribbble, Behance)
-And the footer links to Component Dock
+- **GIVEN** the user views the footer
+- **THEN** a dark navy (#04091e) footer is displayed
+- **AND** three columns are shown: "About Us" text, "Top Products" links, and "Newsletter" form
+- **AND** the newsletter has an email input and an arrow submit button
+- **AND** a footer bottom bar shows copyright text and social media icons (Facebook, Twitter, Dribbble, Behance)
+- **AND** the footer links to Component Dock
 
 #### Scenario: Responsive Layout
 
-Given the page is viewed on mobile
-Then the navigation collapses to a hamburger menu
-And sections stack vertically
-And pricing cards stack vertically
-And the about section stacks to single column
+- **GIVEN** the page is viewed on mobile
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** pricing cards stack vertically
+- **AND** the about section stacks to single column
 
 ## Verification Checklist
 

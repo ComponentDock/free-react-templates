@@ -49,50 +49,49 @@ trigger and smooth animated menu.
 - Description: "Custom Dropdown Showcase"
 - "Made with Component Dock" link to https://www.componentdock.com/
 
-## Scenarios (Gherkin)
+## Requirements
 
 ### PrivacyDropdown
 
-- **Given** the page is loaded
-- **When** I look at the dropdown trigger
-- **Then** I see "Privacy Settings" text with a settings icon
+#### Scenario: PrivacyDropdown
 
-- **Given** the dropdown is closed
-- **When** I click the trigger
-- **Then** the menu becomes visible with 4 items
-
-- **Given** the dropdown is open
-- **When** I click the trigger again
-- **Then** the menu closes
-
-- **Given** the dropdown is open
-- **When** I press Escape
-- **Then** the menu closes
-
-- **Given** the dropdown is open
-- **When** I click outside the dropdown
-- **Then** the menu closes
-
-- **Given** the dropdown is closed
-- **When** I check aria-expanded on the trigger
-- **Then** it is "false"
-
-- **Given** the dropdown is open
-- **When** I check aria-expanded on the trigger
-- **Then** it is "true"
-
-- **Given** the dropdown is open
-- **When** I see the menu
-- **Then** it has role="menu"
+- **GIVEN** the page is loaded
+- **WHEN** I look at the dropdown trigger
+- **THEN** I see "Privacy Settings" text with a settings icon
+- **GIVEN** the dropdown is closed
+- **WHEN** I click the trigger
+- **THEN** the menu becomes visible with 4 items
+- **GIVEN** the dropdown is open
+- **WHEN** I click the trigger again
+- **THEN** the menu closes
+- **GIVEN** the dropdown is open
+- **WHEN** I press Escape
+- **THEN** the menu closes
+- **GIVEN** the dropdown is open
+- **WHEN** I click outside the dropdown
+- **THEN** the menu closes
+- **GIVEN** the dropdown is closed
+- **WHEN** I check aria-expanded on the trigger
+- **THEN** it is "false"
+- **GIVEN** the dropdown is open
+- **WHEN** I check aria-expanded on the trigger
+- **THEN** it is "true"
+- **GIVEN** the dropdown is open
+- **WHEN** I see the menu
+- **THEN** it has role="menu"
 
 ### Footer
 
-- **Given** the page is loaded
-- **When** I look at the footer
-- **Then** I see "Dropslide" and "Component Dock" link to https://www.componentdock.com/
+#### Scenario: Footer
+
+- **GIVEN** the page is loaded
+- **WHEN** I look at the footer
+- **THEN** I see "Dropslide" and "Component Dock" link to https://www.componentdock.com/
 
 ### App
 
-- **Given** the page is loaded
-- **When** I check the title
-- **Then** it says "Dropslide — Custom Dropdown"
+#### Scenario: App
+
+- **GIVEN** the page is loaded
+- **WHEN** I check the title
+- **THEN** it says "Dropslide — Custom Dropdown"

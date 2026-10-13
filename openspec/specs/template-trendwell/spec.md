@@ -35,14 +35,15 @@ Terracotta/rust accent color throughout. Marquee ticker under the hero
 scrolling trust signals. The overall feel is premium, considered, and modern
 — think Everlane or COS.
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: Trendwell Fashion Landing Page
 
 #### Scenario: Page renders with all sections in order
-  Given a user visits Trendwell
-  When the page loads
-  Then the user sees sections in this order:
+
+- **GIVEN** a user visits Trendwell
+- **WHEN** the page loads
+- **THEN** the user sees sections in this order:
     1. Navbar (top, sticky or static)
     2. Hero banner (80vh, dark overlay, centered copy)
     3. Marquee ticker (scrolling trust signals)
@@ -54,81 +55,91 @@ scrolling trust signals. The overall feel is premium, considered, and modern
     9. Footer (brand, nav links, social, Component Dock)
 
 #### Scenario: Hero banner displays correctly
-  Given the hero section renders
-  Then it has a background image with a dark overlay (0.42 opacity)
-  And the heading reads "New season essentials"
-  And the subtext reads "Considered pieces, made to be worn every day."
-  And a "Shop now" CTA button is visible
-  And the button has terracotta (#C8553D) or dark styling
+
+- **GIVEN** the hero section renders
+- **THEN** it has a background image with a dark overlay (0.42 opacity)
+- **AND** the heading reads "New season essentials"
+- **AND** the subtext reads "Considered pieces, made to be worn every day."
+- **AND** a "Shop now" CTA button is visible
+- **AND** the button has terracotta (#C8553D) or dark styling
 
 #### Scenario: Marquee ticker scrolls trust signals
-  Given the marquee is visible below the hero
-  Then it displays repeating trust signals: "Free shipping over $100", "30 day returns", "Carbon neutral delivery", "Natural fibres only"
-  And the text scrolls continuously in a loop
-  And the background is dark (#141414) with light text
+
+- **GIVEN** the marquee is visible below the hero
+- **THEN** it displays repeating trust signals: "Free shipping over $100", "30 day returns", "Carbon neutral delivery", "Natural fibres only"
+- **AND** the text scrolls continuously in a loop
+- **AND** the background is dark (#141414) with light text
 
 #### Scenario: Shop by Category shows category cards
-  Given the category section renders
-  Then it has a heading "Shop by category"
-  And it shows at least 3 category cards (Clothing, Jewellery, Bags)
-  And each card has an image and a label
-  And clicking a card navigates to the shop (or is a placeholder link)
+
+- **GIVEN** the category section renders
+- **THEN** it has a heading "Shop by category"
+- **AND** it shows at least 3 category cards (Clothing, Jewellery, Bags)
+- **AND** each card has an image and a label
+- **AND** clicking a card navigates to the shop (or is a placeholder link)
 
 #### Scenario: New Arrivals shows product grid
-  Given the product section renders
-  Then it has an eyebrow "Just landed" and heading "New arrivals"
-  And a "View all" link is visible
-  And at least 4 product cards are shown
-  And each card shows: product image, title, price
-  And product cards with a sale price show a "Sale" badge
-  And a "Quick add" button appears on hover/focus
+
+- **GIVEN** the product section renders
+- **THEN** it has an eyebrow "Just landed" and heading "New arrivals"
+- **AND** a "View all" link is visible
+- **AND** at least 4 product cards are shown
+- **AND** each card shows: product image, title, price
+- **AND** product cards with a sale price show a "Sale" badge
+- **AND** a "Quick add" button appears on hover/focus
 
 #### Scenario: Brand Statement section renders
-  Given the brand section renders
-  Then it has heading "Made to last"
-  And descriptive text about natural fibres and considered construction
-  And the background is warm off-white (#F4F2EE)
+
+- **GIVEN** the brand section renders
+- **THEN** it has heading "Made to last"
+- **AND** descriptive text about natural fibres and considered construction
+- **AND** the background is warm off-white (#F4F2EE)
 
 #### Scenario: Why Shop With Us shows features
-  Given the features section renders
-  Then it has heading "Why shop with us"
-  And it shows 3 feature items:
+
+- **GIVEN** the features section renders
+- **THEN** it has heading "Why shop with us"
+- **AND** it shows 3 feature items:
     - "Free shipping" with description "On all orders over $100, worldwide."
     - "30 day returns" with description "Not right? Send it back, no questions."
     - "Made responsibly" with description "Traceable materials and fair factories."
-  And each feature has an icon (lucide-react)
+- **AND** each feature has an icon (lucide-react)
 
 #### Scenario: Journal section shows blog posts
-  Given the journal section renders
-  Then it has heading "Journal"
-  And an "All posts" link is visible
-  And at least 2 blog post cards are shown
-  And each card shows: date, category tag, title, excerpt
-  And cards are clickable (link to placeholder)
+
+- **GIVEN** the journal section renders
+- **THEN** it has heading "Journal"
+- **AND** an "All posts" link is visible
+- **AND** at least 2 blog post cards are shown
+- **AND** each card shows: date, category tag, title, excerpt
+- **AND** cards are clickable (link to placeholder)
 
 #### Scenario: Footer renders with brand info
-  Given the footer renders
-  Then it shows the brand name "Trendwell"
-  And tagline "Modern wardrobe essentials, made to last."
-  And navigation links: Clothing, Bags, Accessories, Jewellery, Shoes
-  And social media icon links (placeholder)
-  And a "Component Dock" link (mandatory: https://www.componentdock.com/)
+
+- **GIVEN** the footer renders
+- **THEN** it shows the brand name "Trendwell"
+- **AND** tagline "Modern wardrobe essentials, made to last."
+- **AND** navigation links: Clothing, Bags, Accessories, Jewellery, Shoes
+- **AND** social media icon links (placeholder)
+- **AND** a "Component Dock" link (mandatory: https://www.componentdock.com/)
 
 #### Scenario: Responsive layout
-  Given a user on mobile (< 640px)
-  Then the navbar collapses to a hamburger menu
-  And the hero text scales down
-  And category cards stack vertically
-  And product grid becomes 1-2 columns
-  And feature columns stack vertically
+
+- **GIVEN** a user on mobile (< 640px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero text scales down
+- **AND** category cards stack vertically
+- **AND** product grid becomes 1-2 columns
+- **AND** feature columns stack vertically
 
 #### Scenario: Accessibility
-  Given any page section
-  Then all images have descriptive alt text
-  And interactive elements are keyboard-focusable
-  And buttons have accessible labels
-  And heading hierarchy is logical (h1 → h2 → h3)
-  And color contrast meets WCAG AA (4.5:1 for text)
+
+- **GIVEN** any page section
+- **THEN** all images have descriptive alt text
+- **AND** interactive elements are keyboard-focusable
+- **AND** buttons have accessible labels
+- **AND** heading hierarchy is logical (h1 → h2 → h3)
+- **AND** color contrast meets WCAG AA (4.5:1 for text)
 
 ## Verification checklist
 

@@ -38,34 +38,39 @@ Soulflow is a yoga & meditation studio template with a navbar, hero slider, welc
 10. **Testimonials** — "What People Say" slider
 11. **Footer** — About, Quick Menu, Ministries, Social Icons, Component Dock link
 
-## Scenarios
+## Requirements
 
 ### Gherkin
 
 Feature: Soulflow Template
-Scenario: Page loads with all sections
-When I visit the Soulflow page
-Then I see the navbar with "Soulflow" logo
-And I see the hero slider
-And I see the welcome section
-And I see 6 program cards
-And I see the video section
-And I see the pricing section
-And I see the features section
-And I see the gallery
-And I see upcoming events
-And I see testimonials
-And I see the footer with Component Dock link
 
-Scenario: Navigation dropdown
-When I hover over "Yoga Classes" in the navbar
-Then I see a dropdown with class options
+#### Scenario: Page loads with all sections
 
-Scenario: Mobile menu toggle
-Given I am on a mobile viewport
-When I click the hamburger menu
-Then the mobile navigation opens
+- **WHEN** I visit the Soulflow page
+- **THEN** I see the navbar with "Soulflow" logo
+- **AND** I see the hero slider
+- **AND** I see the welcome section
+- **AND** I see 6 program cards
+- **AND** I see the video section
+- **AND** I see the pricing section
+- **AND** I see the features section
+- **AND** I see the gallery
+- **AND** I see upcoming events
+- **AND** I see testimonials
+- **AND** I see the footer with Component Dock link
 
-Scenario: Pricing cards display
-When I scroll to the pricing section
-Then I see 3 pricing tiers with prices and feature lists
+#### Scenario: Navigation dropdown
+
+- **WHEN** I hover over "Yoga Classes" in the navbar
+- **THEN** I see a dropdown with class options
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** I am on a mobile viewport
+- **WHEN** I click the hamburger menu
+- **THEN** the mobile navigation opens
+
+#### Scenario: Pricing cards display
+
+- **WHEN** I scroll to the pricing section
+- **THEN** I see 3 pricing tiers with prices and feature lists

@@ -52,107 +52,119 @@ The template is a dark-purple-accented event/conference landing page with:
 - **Blog:** White background, "News From Blog" heading, 2 blog post cards with image, title, and meta info.
 - **Footer:** Dark background, 4-column layout: About Us, Contact Info, Important Links, Newsletter with email signup form.
 
-## Gherkin Requirements
+## Requirements
 
 ### Feature: Festara Event Landing Page
 
 #### Scenario: Header navigation renders correctly
-- **Given** the user visits the Festara landing page
-- **When** the page loads
-- **Then** a sticky white header is visible
-- **And** the logo text "Festara" is displayed on the left
-- **And** navigation links (Home, About, Speakers, Schedule, Blog, Contact) are visible on the right
-- **And** a purple "Get Your Ticket" CTA button is displayed in the header
+
+- **GIVEN** the user visits the Festara landing page
+- **WHEN** the page loads
+- **THEN** a sticky white header is visible
+- **AND** the logo text "Festara" is displayed on the left
+- **AND** navigation links (Home, About, Speakers, Schedule, Blog, Contact) are visible on the right
+- **AND** a purple "Get Your Ticket" CTA button is displayed in the header
 
 #### Scenario: Hero section displays event details
-- **Given** the user views the hero section
-- **When** the hero renders
-- **Then** a background image of a conference speaker is displayed
-- **And** the subtitle "Committed to Success" appears with a white left-rule
-- **And** the heading "Digital Conference For Designers" is displayed in large white text
-- **And** a white "Download" button is visible
-- **And** a circular play button with gold border is displayed
-- **And** a countdown timer shows Days, Hours, Minutes, and Seconds in gold text
+
+- **GIVEN** the user views the hero section
+- **WHEN** the hero renders
+- **THEN** a background image of a conference speaker is displayed
+- **AND** the subtitle "Committed to Success" appears with a white left-rule
+- **AND** the heading "Digital Conference For Designers" is displayed in large white text
+- **AND** a white "Download" button is visible
+- **AND** a circular play button with gold border is displayed
+- **AND** a countdown timer shows Days, Hours, Minutes, and Seconds in gold text
 
 #### Scenario: Countdown timer counts down
-- **Given** the countdown timer is displayed
-- **When** the page is live
-- **Then** the timer decrements each second
-- **And** the values update with leading zeros where appropriate
+
+- **GIVEN** the countdown timer is displayed
+- **WHEN** the page is live
+- **THEN** the timer decrements each second
+- **AND** the values update with leading zeros where appropriate
 
 #### Scenario: About section shows event information
-- **Given** the user scrolls to the About section
-- **When** the section renders
-- **Then** the heading "The Biggest Digital Conference" is visible
-- **And** descriptive paragraphs are shown below the heading
-- **And** a "Where" info card shows a location
-- **And** a "When" info card shows a date
-- **And** a "Get Your Ticket" button is displayed
-- **And** a conference image appears on the right side
+
+- **GIVEN** the user scrolls to the About section
+- **WHEN** the section renders
+- **THEN** the heading "The Biggest Digital Conference" is visible
+- **AND** descriptive paragraphs are shown below the heading
+- **AND** a "Where" info card shows a location
+- **AND** a "When" info card shows a date
+- **AND** a "Get Your Ticket" button is displayed
+- **AND** a conference image appears on the right side
 
 #### Scenario: Speakers section displays team members
-- **Given** the user scrolls to the Speakers section
-- **When** the section renders
-- **Then** a dark background image is displayed behind the section
-- **And** the heading "The Most Important Speakers" appears in white
-- **And** 6 speaker cards are displayed in a grid
-- **And** each card shows a speaker photo, name, and role
+
+- **GIVEN** the user scrolls to the Speakers section
+- **WHEN** the section renders
+- **THEN** a dark background image is displayed behind the section
+- **AND** the heading "The Most Important Speakers" appears in white
+- **AND** 6 speaker cards are displayed in a grid
+- **AND** each card shows a speaker photo, name, and role
 
 #### Scenario: Event Schedule section has tabbed content
-- **Given** the user scrolls to the Event Schedule section
-- **When** the section renders
-- **Then** the heading "Event Schedule" is visible
-- **And** day tabs (Day 1, Day 2, Day 3) are displayed
-- **And** clicking a tab shows the schedule for that day
-- **And** each schedule item shows time, title, description, and venue
+
+- **GIVEN** the user scrolls to the Event Schedule section
+- **WHEN** the section renders
+- **THEN** the heading "Event Schedule" is visible
+- **AND** day tabs (Day 1, Day 2, Day 3) are displayed
+- **AND** clicking a tab shows the schedule for that day
+- **AND** each schedule item shows time, title, description, and venue
 
 #### Scenario: Gallery section shows event photos
-- **Given** the user scrolls to the Gallery section
-- **When** the section renders
-- **Then** a grid of event photos is displayed
-- **And** hovering a photo shows a dark overlay
+
+- **GIVEN** the user scrolls to the Gallery section
+- **WHEN** the section renders
+- **THEN** a grid of event photos is displayed
+- **AND** hovering a photo shows a dark overlay
 
 #### Scenario: Pricing section shows ticket options
-- **Given** the user scrolls to the Pricing section
-- **When** the section renders
-- **Then** the heading "Program Pricing" is visible
-- **And** 3 pricing cards are displayed
-- **And** the default card background is white
-- **And** hovering or activating a card turns it deep purple (#31118f) with white text
-- **And** each card shows a price and a list of features
-- **And** each card has a CTA button
+
+- **GIVEN** the user scrolls to the Pricing section
+- **WHEN** the section renders
+- **THEN** the heading "Program Pricing" is visible
+- **AND** 3 pricing cards are displayed
+- **AND** the default card background is white
+- **AND** hovering or activating a card turns it deep purple (#31118f) with white text
+- **AND** each card shows a price and a list of features
+- **AND** each card has a CTA button
 
 #### Scenario: Sponsors section displays partner logos
-- **Given** the user scrolls to the Sponsors section
-- **When** the section renders
-- **Then** a deep purple (#2e0e8c) background is displayed
-- **And** the heading "Our Top General Sponsors" appears in white
-- **And** a row of sponsor logos is shown
+
+- **GIVEN** the user scrolls to the Sponsors section
+- **WHEN** the section renders
+- **THEN** a deep purple (#2e0e8c) background is displayed
+- **AND** the heading "Our Top General Sponsors" appears in white
+- **AND** a row of sponsor logos is shown
 
 #### Scenario: Blog section shows recent posts
-- **Given** the user scrolls to the Blog section
-- **When** the section renders
-- **Then** the heading "News From Blog" is visible
-- **And** 2 blog post cards are displayed
-- **And** each card shows an image, title, and meta info
+
+- **GIVEN** the user scrolls to the Blog section
+- **WHEN** the section renders
+- **THEN** the heading "News From Blog" is visible
+- **AND** 2 blog post cards are displayed
+- **AND** each card shows an image, title, and meta info
 
 #### Scenario: Footer has four columns
-- **Given** the user scrolls to the footer
-- **When** the footer renders
-- **Then** an "About Us" column with description text is shown
-- **And** a "Contact Info" column with address, phone, and email is shown
-- **And** an "Important Links" column with navigation links is shown
-- **And** a "Newsletter" column with email signup form is shown
-- **And** a "Made with Component Dock" attribution link is present
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** an "About Us" column with description text is shown
+- **AND** a "Contact Info" column with address, phone, and email is shown
+- **AND** an "Important Links" column with navigation links is shown
+- **AND** a "Newsletter" column with email signup form is shown
+- **AND** a "Made with Component Dock" attribution link is present
 
 #### Scenario: Mobile responsive layout
-- **Given** the user views the page on a mobile viewport (< 768px)
-- **When** the page renders
-- **Then** the navigation collapses into a hamburger menu
-- **And** the hero heading font size reduces
-- **And** the countdown timer is hidden on very small screens
-- **And** multi-column layouts stack vertically
-- **And** pricing cards stack vertically
+
+- **GIVEN** the user views the page on a mobile viewport (< 768px)
+- **WHEN** the page renders
+- **THEN** the navigation collapses into a hamburger menu
+- **AND** the hero heading font size reduces
+- **AND** the countdown timer is hidden on very small screens
+- **AND** multi-column layouts stack vertically
+- **AND** pricing cards stack vertically
 
 ## Verification Checklist
 

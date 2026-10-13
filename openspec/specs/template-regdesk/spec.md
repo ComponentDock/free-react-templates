@@ -46,67 +46,78 @@ Recreation of **ColorLib Reg Form V30** (`colorlib-regform-30`) as a React 19 + 
 3. **Left panel** — Blue `#3786bd` info section: heading "INFORMATION", description paragraph, secondary paragraph with bold span, "Have An Account" button (white bg, skewed radius)
 4. **Right form** — White form section: heading "REGISTER FORM", First Name + Last Name (side by side), Your Email (full width), Password + Confirm Password (side by side), Terms & Conditions checkbox with link, Register button (blue bg, skewed radius)
 
-## Gherkin Scenarios
+## Requirements
 
-### Scenario: Full-page layout
-- **Given** the user navigates to the template
-- **When** the page loads
-- **Then** a teal `#75e2e9` background fills the viewport
-- **And** a white card is centered on the page
+### Feature: RegDesk template behaviour
 
-### Scenario: Card dimensions and styling
-- **Given** the page has loaded
-- **When** the card is visible
-- **Then** the card is 850px wide with a 10px border-radius
-- **And** the card has a shadow of `0px 8px 20px rgba(0,0,0,0.15)`
+#### Scenario: Full-page layout
 
-### Scenario: Left information panel
-- **Given** the card is visible
-- **When** the user views the left panel
-- **Then** the left panel has a blue `#3786bd` background
-- **And** the panel displays a heading "INFORMATION" in white, bold, 30px
-- **And** the panel shows a description paragraph in white, font-weight 300
-- **And** a secondary paragraph with bold span text is visible
-- **And** a white "Have An Account" button is displayed with 5px/5px skewed radius
+- **GIVEN** the user navigates to the template
+- **WHEN** the page loads
+- **THEN** a teal `#75e2e9` background fills the viewport
+- **AND** a white card is centered on the page
 
-### Scenario: Right registration form
-- **Given** the card is visible
-- **When** the user views the right form section
-- **Then** the form displays a blue `#3786bd` heading "REGISTER FORM"
-- **And** First Name and Last Name fields are shown side by side
-- **And** Your Email field spans full width
-- **And** Password and Confirm Password fields are shown side by side
-- **And** labels are gray `#666` with font-weight 600 and font-size 15px
-- **And** inputs have a `1px solid #e5e5e5` border with 5px/5px skewed radius
+#### Scenario: Card dimensions and styling
 
-### Scenario: Form input focus states
-- **Given** the registration form is visible
-- **When** the user focuses an input field
-- **Then** the border changes to `1px solid #53c83c` (green)
+- **GIVEN** the page has loaded
+- **WHEN** the card is visible
+- **THEN** the card is 850px wide with a 10px border-radius
+- **AND** the card has a shadow of `0px 8px 20px rgba(0,0,0,0.15)`
 
-### Scenario: Terms and conditions checkbox
-- **Given** the form is visible
-- **When** the user scrolls to the checkbox
-- **Then** the text reads "I agree to the Terms and Conditions"
-- **And** "Terms and Conditions" is a blue `#3786bd` underlined link with font-weight 700
+#### Scenario: Left information panel
 
-### Scenario: Register button
-- **Given** the form is visible
-- **When** the user sees the register button
-- **Then** the button has a blue `#3786bd` background with white text
-- **And** the button has font-weight 700 and font-size 15px
-- **And** on hover the background changes to `#2f73a3`
+- **GIVEN** the card is visible
+- **WHEN** the user views the left panel
+- **THEN** the left panel has a blue `#3786bd` background
+- **AND** the panel displays a heading "INFORMATION" in white, bold, 30px
+- **AND** the panel shows a description paragraph in white, font-weight 300
+- **AND** a secondary paragraph with bold span text is visible
+- **AND** a white "Have An Account" button is displayed with 5px/5px skewed radius
 
-### Scenario: Responsive layout (≤991px)
-- **Given** the viewport width is ≤991px
-- **When** the card is displayed
-- **Then** the card stacks vertically (left panel on top, form below)
-- **And** the left panel gets a top-right radius instead of top-left
+#### Scenario: Right registration form
 
-### Scenario: Mobile layout (≤575px)
-- **Given** the viewport width is ≤575px
-- **When** the form displays the First/Last Name or Password/Confirm rows
-- **Then** the fields stack vertically instead of side by side
+- **GIVEN** the card is visible
+- **WHEN** the user views the right form section
+- **THEN** the form displays a blue `#3786bd` heading "REGISTER FORM"
+- **AND** First Name and Last Name fields are shown side by side
+- **AND** Your Email field spans full width
+- **AND** Password and Confirm Password fields are shown side by side
+- **AND** labels are gray `#666` with font-weight 600 and font-size 15px
+- **AND** inputs have a `1px solid #e5e5e5` border with 5px/5px skewed radius
+
+#### Scenario: Form input focus states
+
+- **GIVEN** the registration form is visible
+- **WHEN** the user focuses an input field
+- **THEN** the border changes to `1px solid #53c83c` (green)
+
+#### Scenario: Terms and conditions checkbox
+
+- **GIVEN** the form is visible
+- **WHEN** the user scrolls to the checkbox
+- **THEN** the text reads "I agree to the Terms and Conditions"
+- **AND** "Terms and Conditions" is a blue `#3786bd` underlined link with font-weight 700
+
+#### Scenario: Register button
+
+- **GIVEN** the form is visible
+- **WHEN** the user sees the register button
+- **THEN** the button has a blue `#3786bd` background with white text
+- **AND** the button has font-weight 700 and font-size 15px
+- **AND** on hover the background changes to `#2f73a3`
+
+#### Scenario: Responsive layout (≤991px)
+
+- **GIVEN** the viewport width is ≤991px
+- **WHEN** the card is displayed
+- **THEN** the card stacks vertically (left panel on top, form below)
+- **AND** the left panel gets a top-right radius instead of top-left
+
+#### Scenario: Mobile layout (≤575px)
+
+- **GIVEN** the viewport width is ≤575px
+- **WHEN** the form displays the First/Last Name or Password/Confirm rows
+- **THEN** the fields stack vertically instead of side by side
 
 ## Verification Checklist
 

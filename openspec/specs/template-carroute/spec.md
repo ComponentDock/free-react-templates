@@ -45,68 +45,79 @@ Recreation of ColorLib's **CarRental** template as a modern React 19 + Vite + Ta
 9. **CTA Banner** — Full-width `bg-primary` blue section. Heading "What are you waiting for?" + subtitle + "Rent a car now" white button.
 10. **Footer** — About column + 4 link columns (Quick Links, Resources, Support, Company) + social icons + copyright with Component Dock link.
 
-## Gherkin Requirements
+## Requirements
 
-```gherkin
+### Feature: Carroute template behaviour
+
 Feature: Carroute car rental template
 
-  Background:
-    Given the user opens the Carroute homepage
-    Then the page loads without errors
+Background:
+- **GIVEN** the user opens the Carroute homepage
+- **THEN** the page loads without errors
 
-  Scenario: Navbar renders correctly
-    Then the navbar displays the logo "Carroute"
-    And the navbar contains navigation links: Home, Listing, Testimonials, Blog, About, Contact
-    And the navbar is positioned absolute over the hero section
+#### Scenario: Navbar renders correctly
 
-  Scenario: Hero section displays correctly
-    Then the hero section has a full-viewport background image
-    And the hero heading reads "Rent a car is within your finger tips."
-    And a search form is visible with: car type selector, pick-up date, drop-off date, search button
-    And the search button text is "Search Now"
+- **THEN** the navbar displays the logo "Carroute"
+- **AND** the navbar contains navigation links: Home, Listing, Testimonials, Blog, About, Contact
+- **AND** the navbar is positioned absolute over the hero section
 
-  Scenario: How It Works section renders
-    Then the section heading reads "How it works?"
-    And 3 numbered steps are displayed: "Select a car", "Fill up form", "Payment"
-    And each step has a number badge, title, and description
+#### Scenario: Hero section displays correctly
 
-  Scenario: Video CTA renders
-    Then a play icon button is visible with caption "Video how it works"
+- **THEN** the hero section has a full-viewport background image
+- **AND** the hero heading reads "Rent a car is within your finger tips."
+- **AND** a search form is visible with: car type selector, pick-up date, drop-off date, search button
+- **AND** the search button text is "Search Now"
 
-  Scenario: Promo section renders
-    Then a two-column layout shows an image on the left
-    And the right column shows a heading about car rental promo
-    And a "Meet them now" button is present
+#### Scenario: How It Works section renders
 
-  Scenario: Car Listings section renders
-    Then 6 car listing cards are displayed in a 3-column grid
-    And each card shows: car image, car name, daily price, luggage/doors/passenger specs
-    And each card has a "Rent Now" button
+- **THEN** the section heading reads "How it works?"
+- **AND** 3 numbered steps are displayed: "Select a car", "Fill up form", "Payment"
+- **AND** each step has a number badge, title, and description
 
-  Scenario: Features section renders
-    Then 6 feature cards are displayed in a 3-column grid
-    And each card has an icon, title, description, and "Learn more" link
+#### Scenario: Video CTA renders
 
-  Scenario: Testimonials section renders
-    Then 3 testimonial cards are displayed
-    And each card has a blockquote, author photo, author name, and role
+- **THEN** a play icon button is visible with caption "Video how it works"
 
-  Scenario: CTA banner renders
-    Then a full-width blue banner is displayed
-    And the heading reads "What are you waiting for?"
-    And a "Rent a car now" button is visible
+#### Scenario: Promo section renders
 
-  Scenario: Footer renders
-    Then the footer shows an "About Us" column with social icons
-    And 4 link columns are present: Quick Links, Resources, Support, Company
-    And the copyright includes a Component Dock link
+- **THEN** a two-column layout shows an image on the left
+- **AND** the right column shows a heading about car rental promo
+- **AND** a "Meet them now" button is present
 
-  Scenario: Responsive layout
-    When the viewport is below 992px
-    Then the navbar shows a hamburger menu icon
-    And the car listings grid collapses to single column
-    And the hero search form stacks vertically
-```
+#### Scenario: Car Listings section renders
+
+- **THEN** 6 car listing cards are displayed in a 3-column grid
+- **AND** each card shows: car image, car name, daily price, luggage/doors/passenger specs
+- **AND** each card has a "Rent Now" button
+
+#### Scenario: Features section renders
+
+- **THEN** 6 feature cards are displayed in a 3-column grid
+- **AND** each card has an icon, title, description, and "Learn more" link
+
+#### Scenario: Testimonials section renders
+
+- **THEN** 3 testimonial cards are displayed
+- **AND** each card has a blockquote, author photo, author name, and role
+
+#### Scenario: CTA banner renders
+
+- **THEN** a full-width blue banner is displayed
+- **AND** the heading reads "What are you waiting for?"
+- **AND** a "Rent a car now" button is visible
+
+#### Scenario: Footer renders
+
+- **THEN** the footer shows an "About Us" column with social icons
+- **AND** 4 link columns are present: Quick Links, Resources, Support, Company
+- **AND** the copyright includes a Component Dock link
+
+#### Scenario: Responsive layout
+
+- **WHEN** the viewport is below 992px
+- **THEN** the navbar shows a hamburger menu icon
+- **AND** the car listings grid collapses to single column
+- **AND** the hero search form stacks vertically
 
 ## Verification Checklist
 

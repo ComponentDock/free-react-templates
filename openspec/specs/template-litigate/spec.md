@@ -46,97 +46,124 @@ client testimonials, image gallery, newsletter parallax, and footer.
 10. **Newsletter / Parallax** — Dark bg with parallax background image. Heading: "Subscribe to our Newsletter". Email input + submit button.
 11. **Footer** — Dark bg (#222831). Multi-column: About text, Practice Areas links, Business Hours, Contact info (address, phone, email). Copyright line with Component Dock link.
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
-- **Scenario: Navbar renders with brand and nav links**
-  - Given the page loads
-  - Then the navbar displays brand "Litigate"
-  - And nav links: Home, About Us, Practice Areas, Attorneys, Blog, Contact
 
-- **Scenario: Navbar is sticky on scroll**
-  - Given the user scrolls past the hero
-  - Then the navbar remains fixed at the top
+#### Scenario: Navbar renders with brand and nav links
+
+- **GIVEN** the page loads
+- **THEN** the navbar displays brand "Litigate"
+- **AND** nav links: Home, About Us, Practice Areas, Attorneys, Blog, Contact
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls past the hero
+- **THEN** the navbar remains fixed at the top
 
 ### Hero
-- **Scenario: Hero shows headline with accent text**
-  - Given the page loads
-  - Then the hero displays italic subheading
-  - And an h1 headline
-  - And a gold CTA button
 
-- **Scenario: Hero is full-screen with dark overlay**
-  - Given the page loads on desktop
-  - Then the hero occupies full viewport height
-  - And a dark overlay covers the background image
+#### Scenario: Hero shows headline with accent text
+
+- **GIVEN** the page loads
+- **THEN** the hero displays italic subheading
+- **AND** an h1 headline
+- **AND** a gold CTA button
+
+#### Scenario: Hero is full-screen with dark overlay
+
+- **GIVEN** the page loads on desktop
+- **THEN** the hero occupies full viewport height
+- **AND** a dark overlay covers the background image
 
 ### Services / Stats
-- **Scenario: Stats section shows counters and video**
-  - Given the user scrolls to the stats section
-  - Then a video thumbnail with play button is visible on the left
-  - And stat counters are displayed on the right
-  - And a "Fun Facts" heading is visible
+
+#### Scenario: Stats section shows counters and video
+
+- **GIVEN** the user scrolls to the stats section
+- **THEN** a video thumbnail with play button is visible on the left
+- **AND** stat counters are displayed on the right
+- **AND** a "Fun Facts" heading is visible
 
 ### Practice Areas
-- **Scenario: Practice areas grid shows circular icon cards**
-  - Given the user scrolls to practice areas
-  - Then at least 4 practice area cards are visible
-  - And each card has a circular gold icon, title, and link
 
-- **Scenario: Practice area icon inverts on hover**
-  - Given a practice area card is visible
-  - When the user hovers over it
-  - Then the icon background changes from gold to white
+#### Scenario: Practice areas grid shows circular icon cards
+
+- **GIVEN** the user scrolls to practice areas
+- **THEN** at least 4 practice area cards are visible
+- **AND** each card has a circular gold icon, title, and link
+
+#### Scenario: Practice area icon inverts on hover
+
+- **GIVEN** a practice area card is visible
+- **WHEN** the user hovers over it
+- **THEN** the icon background changes from gold to white
 
 ### Attorneys
-- **Scenario: Attorney cards display flip animation**
-  - Given the user scrolls to the attorneys section
-  - Then 4 attorney cards are visible
-  - And each card shows name and role on the front
-  - And a quote + avatar on the back (revealed on hover/click)
+
+#### Scenario: Attorney cards display flip animation
+
+- **GIVEN** the user scrolls to the attorneys section
+- **THEN** 4 attorney cards are visible
+- **AND** each card shows name and role on the front
+- **AND** a quote + avatar on the back (revealed on hover/click)
 
 ### Free Consultation
-- **Scenario: Consultation form has all fields**
-  - Given the user scrolls to the consultation section
-  - Then a name input, email input, subject input, message textarea, and submit button are visible
 
-- **Scenario: Form is presentational**
-  - Given the consultation form is visible
-  - When the user fills in all fields and clicks submit
-  - Then no navigation occurs (SPA behavior)
+#### Scenario: Consultation form has all fields
+
+- **GIVEN** the user scrolls to the consultation section
+- **THEN** a name input, email input, subject input, message textarea, and submit button are visible
+
+#### Scenario: Form is presentational
+
+- **GIVEN** the consultation form is visible
+- **WHEN** the user fills in all fields and clicks submit
+- **THEN** no navigation occurs (SPA behavior)
 
 ### Testimonials
-- **Scenario: Testimonials carousel shows client reviews**
-  - Given the user scrolls to the testimonials section
-  - Then at least 3 testimonial cards are visible
-  - And each card shows an avatar, quote, name, and role
+
+#### Scenario: Testimonials carousel shows client reviews
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** at least 3 testimonial cards are visible
+- **AND** each card shows an avatar, quote, name, and role
 
 ### Blog
-- **Scenario: Blog section shows 3 recent posts**
-  - Given the user scrolls to the blog section
-  - Then 3 blog cards are visible
-  - And each card shows an image, date, title, excerpt, and read more link
+
+#### Scenario: Blog section shows 3 recent posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** 3 blog cards are visible
+- **AND** each card shows an image, date, title, excerpt, and read more link
 
 ### Gallery
-- **Scenario: Gallery shows 4-column image grid**
-  - Given the user scrolls to the gallery
-  - Then 4 gallery images are visible in a row
-  - And hovering reveals an Instagram icon overlay
+
+#### Scenario: Gallery shows 4-column image grid
+
+- **GIVEN** the user scrolls to the gallery
+- **THEN** 4 gallery images are visible in a row
+- **AND** hovering reveals an Instagram icon overlay
 
 ### Newsletter
-- **Scenario: Newsletter has email input and submit**
-  - Given the user scrolls to the newsletter section
-  - Then an email input and submit button are visible
-  - And the section has a parallax background
+
+#### Scenario: Newsletter has email input and submit
+
+- **GIVEN** the user scrolls to the newsletter section
+- **THEN** an email input and submit button are visible
+- **AND** the section has a parallax background
 
 ### Footer
-- **Scenario: Footer displays multi-column layout**
-  - Given the user scrolls to the footer
-  - Then About, Practice Areas, Business Hours, and Contact columns are visible
 
-- **Scenario: Footer links to Component Dock**
-  - Given the footer renders
-  - Then a link to https://www.componentdock.com/ is present
+#### Scenario: Footer displays multi-column layout
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** About, Practice Areas, Business Hours, and Contact columns are visible
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the footer renders
+- **THEN** a link to https://www.componentdock.com/ is present
 
 ## Verification checklist
 

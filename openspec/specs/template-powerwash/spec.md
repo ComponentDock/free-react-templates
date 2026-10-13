@@ -37,143 +37,170 @@ Recreation of the ColorLib **Pressure Washing** template.
 8. **Free Consultation Form** — parallax background image, dark overlay, form with: service dropdown, name input, email input, date picker, submit button "Request A Quote"
 9. **Footer** — 4 columns: brand description + social icons, Latest News (2 blog previews), Quick Links, Newsletter signup; bottom copyright bar
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: PowerWash template
 
-```gherkin
 Feature: PowerWash — Pressure washing service business template
-  As a visitor to a power washing company website
-  I want to see professional services, trust signals, and easy contact options
-  So that I can evaluate and book a pressure washing service
+As a visitor to a power washing company website
+I want to see professional services, trust signals, and easy contact options
+So that I can evaluate and book a pressure washing service
 
-  Background:
-    Given the template is loaded at the root URL
-    And the page displays the PowerWash brand
+Background:
+- **GIVEN** the template is loaded at the root URL
+- **AND** the page displays the PowerWash brand
 
-  # ── Navbar ──────────────────────────────────────────
-  Scenario: Top bar shows contact info and social links
-    Given the top bar is visible
-    Then I see a phone number and email address
-    And I see Twitter, Facebook, and Instagram icon links
+**── Navbar ──────────────────────────────────────────**
 
-  Scenario: Sticky navigation bar
-    Given I scroll past the hero section
-    Then the navigation bar sticks to the top of the viewport
-    And the nav links are: Home, About, Services, Gallery, Blog, Contact
+#### Scenario: Top bar shows contact info and social links
 
-  Scenario: Brand link returns to top
-    When I click the "PowerWash" brand text
-    Then the page scrolls to the top
+- **GIVEN** the top bar is visible
+- **THEN** I see a phone number and email address
+- **AND** I see Twitter, Facebook, and Instagram icon links
 
-  # ── Hero ────────────────────────────────────────────
-  Scenario: Hero section displays with parallax background
-    Given the hero section is in view
-    Then I see a background image with dark overlay
-    And I see the headline "Professional Power Washing Services"
-    And I see a descriptive subtext paragraph
-    And I see two CTA buttons: "Get a Quote" and "Our Services"
+#### Scenario: Sticky navigation bar
 
-  Scenario: Hero CTA buttons navigate correctly
-    When I click "Get a Quote"
-    Then the page scrolls to the consultation form section
-    When I click "Our Services"
-    Then the page scrolls to the services section
+- **GIVEN** I scroll past the hero section
+- **THEN** the navigation bar sticks to the top of the viewport
+- **AND** the nav links are: Home, About, Services, Gallery, Blog, Contact
 
-  # ── About / Why Choose Us ───────────────────────────
-  Scenario: About section shows split layout
-    Given the about section is in view
-    Then I see an image on the left half
-    And I see "Why Choose Us?" heading on the right half
-    And I see 4 trust points listed
+#### Scenario: Brand link returns to top
 
-  Scenario: Trust points are displayed
-    Then I see "50 Years of Service"
-    And I see "Professional & Experienced Staff"
-    And I see "High Quality & Reliable Service"
-    And I see "Customer Service & Expert Advice"
+- **WHEN** I click the "PowerWash" brand text
+- **THEN** the page scrolls to the top
 
-  # ── Stats Counter ───────────────────────────────────
-  Scenario: Counter section animates numbers
-    Given the counter section scrolls into view
-    Then I see 4 stat blocks
-    And the numbers animate from 0 to their target values
-    And the stat labels are displayed below each number
+**── Hero ────────────────────────────────────────────**
 
-  # ── Services ────────────────────────────────────────
-  Scenario: Services grid displays 8 service cards
-    Given the services section is in view
-    Then I see the heading "Power Washing Services"
-    And I see 8 service cards in a grid layout
+#### Scenario: Hero section displays with parallax background
 
-  Scenario: Each service card has icon, heading, and description
-    Then each service card shows an icon
-    And each service card shows a heading
-    And each service card shows a short description paragraph
+- **GIVEN** the hero section is in view
+- **THEN** I see a background image with dark overlay
+- **AND** I see the headline "Professional Power Washing Services"
+- **AND** I see a descriptive subtext paragraph
+- **AND** I see two CTA buttons: "Get a Quote" and "Our Services"
 
-  Scenario: Service names are correct
-    Then I see cards for: House Washing, Roof Cleaning, Driveway Cleaning,
-      Gutter Cleaning, Patio Cleaning, Building Cleaning,
-      Concrete Cleaning, Sidewalk Cleaning
+#### Scenario: Hero CTA buttons navigate correctly
 
-  # ── Before & After ──────────────────────────────────
-  Scenario: Before & After section has tabbed layout
-    Given the before & after section is in view
-    Then I see the heading "Before & After Services"
-    And I see a vertical tab list on the right with service names
-    And I see an image panel on the left
+- **WHEN** I click "Get a Quote"
+- **THEN** the page scrolls to the consultation form section
+- **WHEN** I click "Our Services"
+- **THEN** the page scrolls to the services section
 
-  Scenario: Clicking a tab switches the image
-    When I click the "Roof Cleaning" tab
-    Then the image panel updates to show roof cleaning content
-    And the "Roof Cleaning" tab is visually active
+**── About / Why Choose Us ───────────────────────────**
 
-  # ── Testimonials ────────────────────────────────────
-  Scenario: Testimonials carousel displays client feedback
-    Given the testimonials section is in view
-    Then I see the heading "Happy Clients & Feedbacks"
-    And I see a carousel with client testimonial cards
-    And each card shows a circular avatar image
-    And each card shows a 5-star rating
-    And each card shows a quote paragraph
-    And each card shows the client name and profession
+#### Scenario: About section shows split layout
 
-  # ── Consultation Form ───────────────────────────────
-  Scenario: Free consultation form is displayed
-    Given the consultation form section is in view
-    Then I see a parallax background image with dark overlay
-    And I see the heading "Free Consultation"
-    And I see a form with service dropdown, name, email, and date fields
-    And I see a "Request A Quote" submit button
+- **GIVEN** the about section is in view
+- **THEN** I see an image on the left half
+- **AND** I see "Why Choose Us?" heading on the right half
+- **AND** I see 4 trust points listed
 
-  Scenario: Form validation prevents empty submission
-    When I click "Request A Quote" without filling any fields
-    Then the form shows validation errors
-    And the form is not submitted
+#### Scenario: Trust points are displayed
 
-  Scenario: Form accepts valid input
-    Given I select a service from the dropdown
-    And I enter a name in the name field
-    And I enter an email in the email field
-    And I select a date
-    When I click "Request A Quote"
-    Then the form submits successfully
+- **THEN** I see "50 Years of Service"
+- **AND** I see "Professional & Experienced Staff"
+- **AND** I see "High Quality & Reliable Service"
+- **AND** I see "Customer Service & Expert Advice"
 
-  # ── Footer ──────────────────────────────────────────
-  Scenario: Footer has 4 columns
-    Given the footer is visible
-    Then I see a brand description column with social icons
-    And I see a "Latest News" column with 2 blog post previews
-    And I see a "Quick Links" column with navigation links
-    And I see a newsletter signup column
+**── Stats Counter ───────────────────────────────────**
 
-  Scenario: Footer Quick Links navigation
-    Then I see links for: Home, About, Services, Works, Blog, Contact
+#### Scenario: Counter section animates numbers
 
-  Scenario: Footer copyright and Component Dock link
-    Then I see a copyright notice in the footer bottom bar
-    And I see a link to "https://www.componentdock.com/" branded as "Component Dock"
-```
+- **GIVEN** the counter section scrolls into view
+- **THEN** I see 4 stat blocks
+- **AND** the numbers animate from 0 to their target values
+- **AND** the stat labels are displayed below each number
+
+**── Services ────────────────────────────────────────**
+
+#### Scenario: Services grid displays 8 service cards
+
+- **GIVEN** the services section is in view
+- **THEN** I see the heading "Power Washing Services"
+- **AND** I see 8 service cards in a grid layout
+
+#### Scenario: Each service card has icon, heading, and description
+
+- **THEN** each service card shows an icon
+- **AND** each service card shows a heading
+- **AND** each service card shows a short description paragraph
+
+#### Scenario: Service names are correct
+
+- **THEN** I see cards for: House Washing, Roof Cleaning, Driveway Cleaning,
+Gutter Cleaning, Patio Cleaning, Building Cleaning,
+Concrete Cleaning, Sidewalk Cleaning
+
+**── Before & After ──────────────────────────────────**
+
+#### Scenario: Before & After section has tabbed layout
+
+- **GIVEN** the before & after section is in view
+- **THEN** I see the heading "Before & After Services"
+- **AND** I see a vertical tab list on the right with service names
+- **AND** I see an image panel on the left
+
+#### Scenario: Clicking a tab switches the image
+
+- **WHEN** I click the "Roof Cleaning" tab
+- **THEN** the image panel updates to show roof cleaning content
+- **AND** the "Roof Cleaning" tab is visually active
+
+**── Testimonials ────────────────────────────────────**
+
+#### Scenario: Testimonials carousel displays client feedback
+
+- **GIVEN** the testimonials section is in view
+- **THEN** I see the heading "Happy Clients & Feedbacks"
+- **AND** I see a carousel with client testimonial cards
+- **AND** each card shows a circular avatar image
+- **AND** each card shows a 5-star rating
+- **AND** each card shows a quote paragraph
+- **AND** each card shows the client name and profession
+
+**── Consultation Form ───────────────────────────────**
+
+#### Scenario: Free consultation form is displayed
+
+- **GIVEN** the consultation form section is in view
+- **THEN** I see a parallax background image with dark overlay
+- **AND** I see the heading "Free Consultation"
+- **AND** I see a form with service dropdown, name, email, and date fields
+- **AND** I see a "Request A Quote" submit button
+
+#### Scenario: Form validation prevents empty submission
+
+- **WHEN** I click "Request A Quote" without filling any fields
+- **THEN** the form shows validation errors
+- **AND** the form is not submitted
+
+#### Scenario: Form accepts valid input
+
+- **GIVEN** I select a service from the dropdown
+- **AND** I enter a name in the name field
+- **AND** I enter an email in the email field
+- **AND** I select a date
+- **WHEN** I click "Request A Quote"
+- **THEN** the form submits successfully
+
+**── Footer ──────────────────────────────────────────**
+
+#### Scenario: Footer has 4 columns
+
+- **GIVEN** the footer is visible
+- **THEN** I see a brand description column with social icons
+- **AND** I see a "Latest News" column with 2 blog post previews
+- **AND** I see a "Quick Links" column with navigation links
+- **AND** I see a newsletter signup column
+
+#### Scenario: Footer Quick Links navigation
+
+- **THEN** I see links for: Home, About, Services, Works, Blog, Contact
+
+#### Scenario: Footer copyright and Component Dock link
+
+- **THEN** I see a copyright notice in the footer bottom bar
+- **AND** I see a link to "https://www.componentdock.com/" branded as "Component Dock"
 
 ## Verification checklist
 

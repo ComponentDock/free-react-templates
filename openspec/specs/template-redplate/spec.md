@@ -33,135 +33,145 @@ Deploy: `https://redplate.free.componentdock.com`
 
 Extracted from `https://preview.colorlib.com/theme/caviar/style.css` (see replication notes below).
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Navbar
-  Scenario: Renders brand and navigation links
-    Given the page loads
-    Then the navbar displays the brand name "redplate"
-    And navigation links are visible: Home, About Us, Menu, Awards, Testimonials, Reservation, Contact
-    And a search icon button is present
 
-  Scenario: Sticky behavior on scroll
-    Given the user scrolls down past the hero
-    Then the navbar sticks to the top with a dark semi-transparent background
+#### Scenario: Renders brand and navigation links
 
-  Scenario: Mobile toggle
-    Given the viewport width is less than 992px
-    When the user taps the hamburger icon
-    Then the navigation links expand/collapse
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays the brand name "redplate"
+- **AND** navigation links are visible: Home, About Us, Menu, Awards, Testimonials, Reservation, Contact
+- **AND** a search icon button is present
+
+#### Scenario: Sticky behavior on scroll
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** the navbar sticks to the top with a dark semi-transparent background
+
+#### Scenario: Mobile toggle
+
+- **GIVEN** the viewport width is less than 992px
+- **WHEN** the user taps the hamburger icon
+- **THEN** the navigation links expand/collapse
 
 ### Hero
 
-```gherkin
 Feature: Hero Section
-  Scenario: Full-screen background image
-    Given the page loads
-    Then a full-viewport hero section is displayed with a food-related background image
-    And a dark overlay covers the background
 
-  Scenario: Hero content
-    Then a heading "Lorem Ipsum" is visible
-    And a short paragraph description is below the heading
-    And a "Reservation" button with a red circle indicator is visible
+#### Scenario: Full-screen background image
 
-  Scenario: Social links sidebar
-    Given the hero section is visible
-    Then social media icons (Facebook, Instagram, Twitter) are positioned on the left edge
-```
+- **GIVEN** the page loads
+- **THEN** a full-viewport hero section is displayed with a food-related background image
+- **AND** a dark overlay covers the background
+
+#### Scenario: Hero content
+
+- **THEN** a heading "Lorem Ipsum" is visible
+- **AND** a short paragraph description is below the heading
+- **AND** a "Reservation" button with a red circle indicator is visible
+
+#### Scenario: Social links sidebar
+
+- **GIVEN** the hero section is visible
+- **THEN** social media icons (Facebook, Instagram, Twitter) are positioned on the left edge
 
 ### About Us
 
-```gherkin
 Feature: About Us Section
-  Scenario: Two-column layout (image left, text right)
-    Given the user scrolls to the About section
-    Then an image is displayed on the left
-    And a section heading "About Us" is on the right
-    And a subheading "restaurant style" in red is visible
-    And a paragraph of descriptive text is below
 
-  Scenario: Second about section (text left, image right)
-    Then a subheading "our chef" in red is visible
-    And descriptive text is on the left
-    And an image is on the right
-```
+#### Scenario: Two-column layout (image left, text right)
+
+- **GIVEN** the user scrolls to the About section
+- **THEN** an image is displayed on the left
+- **AND** a section heading "About Us" is on the right
+- **AND** a subheading "restaurant style" in red is visible
+- **AND** a paragraph of descriptive text is below
+
+#### Scenario: Second about section (text left, image right)
+
+- **THEN** a subheading "our chef" in red is visible
+- **AND** descriptive text is on the left
+- **AND** an image is on the right
 
 ### Menu (Dish Grid)
 
-```gherkin
 Feature: Dish Menu Section
-  Scenario: Dark background section with heading
-    Given the user scrolls to the Menu section
-    Then the section has a dark charcoal background
-    And the heading "Special" is centered
 
-  Scenario: Three-column dish grid
-    Then three dish cards are displayed in a row
-    And each card has a dish image (transparent PNG style)
-    And each card shows a dish name and price
+#### Scenario: Dark background section with heading
 
-  Scenario: View The Menu button
-    A "View The Menu" button with red circle indicator is below the heading
-```
+- **GIVEN** the user scrolls to the Menu section
+- **THEN** the section has a dark charcoal background
+- **AND** the heading "Special" is centered
+
+#### Scenario: Three-column dish grid
+
+- **THEN** three dish cards are displayed in a row
+- **AND** each card has a dish image (transparent PNG style)
+- **AND** each card shows a dish name and price
+
+#### Scenario: View The Menu button
+
+A "View The Menu" button with red circle indicator is below the heading
 
 ### Awards
 
-```gherkin
 Feature: Awards Section
-  Scenario: Awards row
-    Given the user scrolls to the Awards section
-    Then the heading "Awards" is on the left
-    And five award images are displayed in a horizontal row on the right
-```
+
+#### Scenario: Awards row
+
+- **GIVEN** the user scrolls to the Awards section
+- **THEN** the heading "Awards" is on the left
+- **AND** five award images are displayed in a horizontal row on the right
 
 ### Testimonials
 
-```gherkin
 Feature: Testimonials Section
-  Scenario: Testimonial carousel
-    Given the user scrolls to the Testimonials section
-    Then the heading "Testimonials" is centered
-    And three testimonials are displayed (circular avatar, name, quote)
-    And a carousel/rotation is available to cycle through them
 
-  Scenario: Testimonial card content
-    Each testimonial shows: a circular profile image, person name, role/lorem text, and a quote paragraph
-```
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **THEN** the heading "Testimonials" is centered
+- **AND** three testimonials are displayed (circular avatar, name, quote)
+- **AND** a carousel/rotation is available to cycle through them
+
+#### Scenario: Testimonial card content
+
+Each testimonial shows: a circular profile image, person name, role/lorem text, and a quote paragraph
 
 ### Reservation
 
-```gherkin
 Feature: Reservation Section
-  Scenario: Split layout (form left, image right)
-    Given the user scrolls to the Reservation section
-    Then a form area is on the right half
-    And a large food-related image is on the left half
 
-  Scenario: Reservation form fields
-    Then the form has fields: date, time, number of persons, last name, message textarea
-    And a "Reserve Your Desk" button with red circle indicator is at the bottom
+#### Scenario: Split layout (form left, image right)
 
-  Scenario: Form layout
-    Date and time fields are side by side on desktop
-    Persons and last name fields are side by side on desktop
-    The textarea spans full width
-```
+- **GIVEN** the user scrolls to the Reservation section
+- **THEN** a form area is on the right half
+- **AND** a large food-related image is on the left half
+
+#### Scenario: Reservation form fields
+
+- **THEN** the form has fields: date, time, number of persons, last name, message textarea
+- **AND** a "Reserve Your Desk" button with red circle indicator is at the bottom
+
+#### Scenario: Form layout
+
+Date and time fields are side by side on desktop
+Persons and last name fields are side by side on desktop
+The textarea spans full width
 
 ### Footer
 
-```gherkin
 Feature: Footer
-  Scenario: Footer content
-    Given the user scrolls to the bottom
-    Then the footer displays the brand name "redplate"
-    And a copyright notice with the current year is shown
-    And a link to Component Dock is present
-```
+
+#### Scenario: Footer content
+
+- **GIVEN** the user scrolls to the bottom
+- **THEN** the footer displays the brand name "redplate"
+- **AND** a copyright notice with the current year is shown
+- **AND** a link to Component Dock is present
 
 ## Verification Checklist
 

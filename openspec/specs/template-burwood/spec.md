@@ -33,113 +33,111 @@ Recreation of ColorLib's **Buri** template as a modern restaurant website.
 7. **Contact** — left side: contact info (address, hours, phone, email). Right side: (empty or form in original). Section padding.
 8. **Footer** — dark bg (#1c1a18), 4-column layout: logo + phone + email + social icons, Quick links, Newsletter signup, About text. Copyright bar at bottom with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
 ### Navbar
 
-```gherkin
-Scenario: Logo and nav links render
-  Given the page loads
-  Then the navbar displays the site logo
-  And nav links "Home", "About", "Menu", "Contact" are visible
+#### Scenario: Logo and nav links render
 
-Scenario: Mobile hamburger toggle
-  Given the viewport width is less than 992px
-  Then the hamburger icon is visible
-  And clicking it toggles the nav menu open/closed
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays the site logo
+- **AND** nav links "Home", "About", "Menu", "Contact" are visible
+
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** the viewport width is less than 992px
+- **THEN** the hamburger icon is visible
+- **AND** clicking it toggles the nav menu open/closed
 
 ### Banner / Hero
 
-```gherkin
-Scenario: Hero section renders
-  Given the page loads
-  Then the banner section displays a background image
-  And a small tagline text is visible above the heading
-  And the main heading text is centered
-  And a CTA button is visible below the heading
+#### Scenario: Hero section renders
 
-Scenario: Banner is responsive
-  Given the viewport width changes
-  Then the banner text remains centered and readable
-  And the background image scales to fit
-```
+- **GIVEN** the page loads
+- **THEN** the banner section displays a background image
+- **AND** a small tagline text is visible above the heading
+- **AND** the main heading text is centered
+- **AND** a CTA button is visible below the heading
+
+#### Scenario: Banner is responsive
+
+- **GIVEN** the viewport width changes
+- **THEN** the banner text remains centered and readable
+- **AND** the background image scales to fit
 
 ### About
 
-```gherkin
-Scenario: About section renders
-  Given the page scrolls to the about section
-  Then an image appears on the left
-  And the right side shows a subtitle, heading, paragraph, and CTA button
-  And the card has a white background with box-shadow
+#### Scenario: About section renders
 
-Scenario: About section is responsive
-  Given the viewport is mobile
-  Then the image stacks above the text content
-```
+- **GIVEN** the page scrolls to the about section
+- **THEN** an image appears on the left
+- **AND** the right side shows a subtitle, heading, paragraph, and CTA button
+- **AND** the card has a white background with box-shadow
+
+#### Scenario: About section is responsive
+
+- **GIVEN** the viewport is mobile
+- **THEN** the image stacks above the text content
 
 ### Food Menu
 
-```gherkin
-Scenario: Menu grid renders all items
-  Given the page scrolls to the food menu section
-  Then 6 menu items are displayed in a grid
-  And each item shows an image, dish name, description, and price
+#### Scenario: Menu grid renders all items
 
-Scenario: Menu section header
-  Given the page scrolls to the food menu section
-  Then the subtitle "Popular Menu" is visible
-  And the heading "Delicious Food Menu" is visible
-```
+- **GIVEN** the page scrolls to the food menu section
+- **THEN** 6 menu items are displayed in a grid
+- **AND** each item shows an image, dish name, description, and price
+
+#### Scenario: Menu section header
+
+- **GIVEN** the page scrolls to the food menu section
+- **THEN** the subtitle "Popular Menu" is visible
+- **AND** the heading "Delicious Food Menu" is visible
 
 ### Intro Video
 
-```gherkin
-Scenario: Video section renders
-  Given the page scrolls to the intro video section
-  Then a centered text block is visible
-  And a circular play-button icon is displayed
-  And the play button has a tan (#d6ad86) background with pulsing animation
-```
+#### Scenario: Video section renders
+
+- **GIVEN** the page scrolls to the intro video section
+- **THEN** a centered text block is visible
+- **AND** a circular play-button icon is displayed
+- **AND** the play button has a tan (#d6ad86) background with pulsing animation
 
 ### Testimonials
 
-```gherkin
-Scenario: Testimonials carousel renders
-  Given the page scrolls to the testimonials section
-  Then the subtitle "Testimonials" and heading "What they said" are visible
-  And at least one review card shows a name, star rating, and quote
-```
+#### Scenario: Testimonials carousel renders
+
+- **GIVEN** the page scrolls to the testimonials section
+- **THEN** the subtitle "Testimonials" and heading "What they said" are visible
+- **AND** at least one review card shows a name, star rating, and quote
 
 ### Contact
 
-```gherkin
-Scenario: Contact info renders
-  Given the page scrolls to the contact section
-  Then "Contact Us" heading is visible
-  And address, hours, phone number, and email are displayed
+#### Scenario: Contact info renders
 
-Scenario: Contact section is responsive
-  Given the viewport is mobile
-  Then the contact info stacks vertically
-```
+- **GIVEN** the page scrolls to the contact section
+- **THEN** "Contact Us" heading is visible
+- **AND** address, hours, phone number, and email are displayed
+
+#### Scenario: Contact section is responsive
+
+- **GIVEN** the viewport is mobile
+- **THEN** the contact info stacks vertically
 
 ### Footer
 
-```gherkin
-Scenario: Footer renders with all columns
-  Given the page scrolls to the footer
-  Then the dark background (#1c1a18) is applied
-  And the logo, phone, and email are displayed
-  And social icons (Facebook, Instagram) are visible
-  And a "Quick links" column is present
-  And a newsletter signup is present
+#### Scenario: Footer renders with all columns
 
-Scenario: Footer has Component Dock link
-  Given the page loads
-  Then the footer contains a link to https://www.componentdock.com/
-```
+- **GIVEN** the page scrolls to the footer
+- **THEN** the dark background (#1c1a18) is applied
+- **AND** the logo, phone, and email are displayed
+- **AND** social icons (Facebook, Instagram) are visible
+- **AND** a "Quick links" column is present
+- **AND** a newsletter signup is present
+
+#### Scenario: Footer has Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/
 
 ## Verification checklist
 

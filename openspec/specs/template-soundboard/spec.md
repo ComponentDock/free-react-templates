@@ -46,150 +46,153 @@ The template has a **dark, moody aesthetic** — near-black purple (`#0c0617`) a
 7. **Shows (Upcoming Shows)** — List of upcoming concerts: each row has date badge, title, location, time, "Buy tickets" CTA
 8. **Footer** — Three parts: (a) contact form + side image, (b) 3-column row with address, phone/email, social icons, (c) copyright bar
 
-## Gherkin scenarios
+## Requirements
 
 ### Navbar
 
-```gherkin
 Feature: Soundboard Navbar
 
-  Scenario: Navbar displays logo and navigation links
-    Given the user loads the Soundboard page
-    Then the navbar contains links: Home, About, Albums, Tours, Blog, Contact
-    And a "Buy tickets" button is visible on the right side
+#### Scenario: Navbar displays logo and navigation links
 
-  Scenario: Navbar is sticky on scroll
-    Given the user scrolls down the page
-    Then the navbar remains visible at the top of the viewport
-```
+- **GIVEN** the user loads the Soundboard page
+- **THEN** the navbar contains links: Home, About, Albums, Tours, Blog, Contact
+- **AND** a "Buy tickets" button is visible on the right side
+
+#### Scenario: Navbar is sticky on scroll
+
+- **GIVEN** the user scrolls down the page
+- **THEN** the navbar remains visible at the top of the viewport
 
 ### Hero
 
-```gherkin
 Feature: Soundboard Hero Section
 
-  Scenario: Hero section displays with background image and text
-    Given the user loads the Soundboard page
-    Then the hero section shows a full-width background image
-    And a subtitle in cursive font is visible
-    And a headline and description paragraph are visible
-    And a "Buy tickets" CTA button is displayed
+#### Scenario: Hero section displays with background image and text
 
-  Scenario: Hero section is responsive
-    Given the user views the page on a mobile device
-    Then the hero content stacks vertically
-    And text remains readable and CTA is tappable
-```
+- **GIVEN** the user loads the Soundboard page
+- **THEN** the hero section shows a full-width background image
+- **AND** a subtitle in cursive font is visible
+- **AND** a headline and description paragraph are visible
+- **AND** a "Buy tickets" CTA button is displayed
+
+#### Scenario: Hero section is responsive
+
+- **GIVEN** the user views the page on a mobile device
+- **THEN** the hero content stacks vertically
+- **AND** text remains readable and CTA is tappable
 
 ### About
 
-```gherkin
 Feature: Soundboard About Section
 
-  Scenario: About section shows two-column layout
-    Given the user scrolls to the About section
-    Then an image is displayed on the left
-    And a text block with subtitle, headline, description, and CTA is on the right
+#### Scenario: About section shows two-column layout
 
-  Scenario: About section has dark background
-    Given the user views the About section
-    Then the background is dark (#0c0617)
-    And text and headings are white
-```
+- **GIVEN** the user scrolls to the About section
+- **THEN** an image is displayed on the left
+- **AND** a text block with subtitle, headline, description, and CTA is on the right
+
+#### Scenario: About section has dark background
+
+- **GIVEN** the user views the About section
+- **THEN** the background is dark (#0c0617)
+- **AND** text and headings are white
 
 ### Discography
 
-```gherkin
 Feature: Soundboard Discography Section
 
-  Scenario: Discography shows album cards in grid
-    Given the user scrolls to the Discography section
-    Then 8 album cards are displayed in a 4-column grid
-    And each card has a circular image, title, and artist name
+#### Scenario: Discography shows album cards in grid
 
-  Scenario: Discography has dark overlay background
-    Given the user views the Discography section
-    Then the section has a dark overlay background
-    And the section title "Our Discography" is in cursive font
-```
+- **GIVEN** the user scrolls to the Discography section
+- **THEN** 8 album cards are displayed in a 4-column grid
+- **AND** each card has a circular image, title, and artist name
+
+#### Scenario: Discography has dark overlay background
+
+- **GIVEN** the user views the Discography section
+- **THEN** the section has a dark overlay background
+- **AND** the section title "Our Discography" is in cursive font
 
 ### Audio Player
 
-```gherkin
 Feature: Soundboard Audio Player
 
-  Scenario: Audio player displays track info and controls
-    Given the user scrolls to the Audio Player section
-    Then a track name and artist are shown
-    And playback controls (previous, play/pause, next) are visible
-    And a progress bar and volume control are displayed
-    And a playlist is shown on the right side
+#### Scenario: Audio player displays track info and controls
 
-  Scenario: Audio player is split layout
-    Given the user views the Audio Player
-    Then the left side shows track info and controls
-    And the right side shows the playlist
-```
+- **GIVEN** the user scrolls to the Audio Player section
+- **THEN** a track name and artist are shown
+- **AND** playback controls (previous, play/pause, next) are visible
+- **AND** a progress bar and volume control are displayed
+- **AND** a playlist is shown on the right side
+
+#### Scenario: Audio player is split layout
+
+- **GIVEN** the user views the Audio Player
+- **THEN** the left side shows track info and controls
+- **AND** the right side shows the playlist
 
 ### Video Section
 
-```gherkin
 Feature: Soundboard Video Section
 
-  Scenario: Video section displays with playlist
-    Given the user scrolls to the Video section
-    Then a video player area is shown on the left
-    And a video playlist is shown on the right
-    And the section title "Our Videos" is in cursive font
+#### Scenario: Video section displays with playlist
 
-  Scenario: Video section has dark background
-    Given the user views the Video section
-    Then the background is dark with an overlay
-```
+- **GIVEN** the user scrolls to the Video section
+- **THEN** a video player area is shown on the left
+- **AND** a video playlist is shown on the right
+- **AND** the section title "Our Videos" is in cursive font
+
+#### Scenario: Video section has dark background
+
+- **GIVEN** the user views the Video section
+- **THEN** the background is dark with an overlay
 
 ### Shows
 
-```gherkin
 Feature: Soundboard Upcoming Shows
 
-  Scenario: Shows list displays concert entries
-    Given the user scrolls to the Shows section
-    Then multiple show entries are displayed in a list
-    And each entry has a date badge, title, location, time, and "Buy tickets" button
+#### Scenario: Shows list displays concert entries
 
-  Scenario: Show date badge is prominent
-    Given the user views a show entry
-    Then the day number is displayed large
-    And the month abbreviation is below it
+- **GIVEN** the user scrolls to the Shows section
+- **THEN** multiple show entries are displayed in a list
+- **AND** each entry has a date badge, title, location, time, and "Buy tickets" button
 
-  Scenario: Show "Buy tickets" button uses line variant
-    Given the user views the Shows section
-    Then each "Buy tickets" button has a transparent background with gradient underline
-```
+#### Scenario: Show date badge is prominent
+
+- **GIVEN** the user views a show entry
+- **THEN** the day number is displayed large
+- **AND** the month abbreviation is below it
+
+#### Scenario: Show "Buy tickets" button uses line variant
+
+- **GIVEN** the user views the Shows section
+- **THEN** each "Buy tickets" button has a transparent background with gradient underline
 
 ### Footer
 
-```gherkin
 Feature: Soundboard Footer
 
-  Scenario: Footer shows contact form
-    Given the user scrolls to the Footer
-    Then a "Contact us" subtitle and "Got a Question?" headline are visible
-    And a form with Name, Email, Message fields and "Send Email" button is displayed
+#### Scenario: Footer shows contact form
 
-  Scenario: Footer shows contact info and social links
-    Given the user scrolls to the Footer
-    Then an address, phone number, and email are shown
-    And social media icons (Facebook, Twitter, YouTube, Instagram) are displayed
+- **GIVEN** the user scrolls to the Footer
+- **THEN** a "Contact us" subtitle and "Got a Question?" headline are visible
+- **AND** a form with Name, Email, Message fields and "Send Email" button is displayed
 
-  Scenario: Footer shows copyright
-    Given the user views the bottom of the page
-    Then a copyright bar is displayed with "Component Dock" attribution link
+#### Scenario: Footer shows contact info and social links
 
-  Scenario: Footer links to Component Dock
-    Given the user views the footer
-    Then a link to https://www.componentdock.com/ is present
-```
+- **GIVEN** the user scrolls to the Footer
+- **THEN** an address, phone number, and email are shown
+- **AND** social media icons (Facebook, Twitter, YouTube, Instagram) are displayed
+
+#### Scenario: Footer shows copyright
+
+- **GIVEN** the user views the bottom of the page
+- **THEN** a copyright bar is displayed with "Component Dock" attribution link
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user views the footer
+- **THEN** a link to https://www.componentdock.com/ is present
 
 ## Verification checklist
 

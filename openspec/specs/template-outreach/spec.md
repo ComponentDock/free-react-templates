@@ -72,19 +72,15 @@ title above it.
 
 #### Scenario: Full-page background
 
-```gherkin
-Given the user loads the page
-Then the page background color is "#f4f4f4"
-And the content is vertically and horizontally centered
-```
+- **GIVEN** the user loads the page
+- **THEN** the page background color is "#f4f4f4"
+- **AND** the content is vertically and horizontally centered
 
 #### Scenario: Card container
 
-```gherkin
-Given the user loads the page
-Then a card container is visible with rounded corners and a drop shadow
-And the card contains two side-by-side columns
-```
+- **GIVEN** the user loads the page
+- **THEN** a card container is visible with rounded corners and a drop shadow
+- **AND** the card contains two side-by-side columns
 
 ### Requirement: Left column — contact info header
 
@@ -93,22 +89,18 @@ contact-info blocks in a row.
 
 #### Scenario: Heading and subtitle
 
-```gherkin
-Given the user views the left column
-Then a "Contact us" heading is visible
-And a subtitle "We're open for any suggestion or just to have a chat" is visible below it
-```
+- **GIVEN** the user views the left column
+- **THEN** a "Contact us" heading is visible
+- **AND** a subtitle "We're open for any suggestion or just to have a chat" is visible below it
 
 #### Scenario: Contact info blocks
 
-```gherkin
-Given the user views the contact info row
-Then three info blocks are displayed side by side: Address, Email, Phone
-And each block has an uppercase label and a value below it
-And the Address shows "198 West 21th Street, Suite 721 New York NY 10016"
-And the Email shows "info@yoursite.com"
-And the Phone shows "+ 1235 2355 98"
-```
+- **GIVEN** the user views the contact info row
+- **THEN** three info blocks are displayed side by side: Address, Email, Phone
+- **AND** each block has an uppercase label and a value below it
+- **AND** the Address shows "198 West 21th Street, Suite 721 New York NY 10016"
+- **AND** the Email shows "info@yoursite.com"
+- **AND** the Phone shows "+ 1235 2355 98"
 
 ### Requirement: Left column — contact form
 
@@ -116,32 +108,26 @@ The form has four underline-style fields and a submit button.
 
 #### Scenario: Form fields present
 
-```gherkin
-Given the user views the contact form
-Then there is a text input with placeholder "Name"
-And there is an email input with placeholder "Email"
-And there is a text input with placeholder "Subject"
-And there is a textarea with placeholder "Create a message here"
-```
+- **GIVEN** the user views the contact form
+- **THEN** there is a text input with placeholder "Name"
+- **AND** there is an email input with placeholder "Email"
+- **AND** there is a text input with placeholder "Subject"
+- **AND** there is a textarea with placeholder "Create a message here"
 
 #### Scenario: Input styling
 
-```gherkin
-Given the user views any form input
-Then the input has no visible border except a bottom border
-And the bottom border is a subtle light color
-And the input font size is 16px
-```
+- **GIVEN** the user views any form input
+- **THEN** the input has no visible border except a bottom border
+- **AND** the bottom border is a subtle light color
+- **AND** the input font size is 16px
 
 #### Scenario: Submit button
 
-```gherkin
-Given the user views the form
-Then a "Send Message" button is visible below the textarea
-And the button has a golden amber background (#e3b04b)
-And the button has white text
-And the button has rounded corners (border-radius ~5px)
-```
+- **GIVEN** the user views the form
+- **THEN** a "Send Message" button is visible below the textarea
+- **AND** the button has a golden amber background (#e3b04b)
+- **AND** the button has white text
+- **AND** the button has rounded corners (border-radius ~5px)
 
 ### Requirement: Left column — social media links
 
@@ -149,19 +135,15 @@ Below the form, a "Follow us here" section with social links.
 
 #### Scenario: Social links section
 
-```gherkin
-Given the user views below the form
-Then a "Follow us here" heading is visible
-And four social links are displayed: Facebook, Twitter, Instagram, Dribbble
-And the links are styled in uppercase with muted color
-```
+- **GIVEN** the user views below the form
+- **THEN** a "Follow us here" heading is visible
+- **AND** four social links are displayed: Facebook, Twitter, Instagram, Dribbble
+- **AND** the links are styled in uppercase with muted color
 
 #### Scenario: Social link hover
 
-```gherkin
-Given the user hovers over a social link
-Then the link text color changes to dark (#000)
-```
+- **GIVEN** the user hovers over a social link
+- **THEN** the link text color changes to dark (#000)
 
 ### Requirement: Right column — background image
 
@@ -169,21 +151,17 @@ The right column shows a full-height cover image.
 
 #### Scenario: Background image
 
-```gherkin
-Given the user views the right column
-Then a background image fills the entire column height
-And the image uses cover sizing and center positioning
-```
+- **GIVEN** the user views the right column
+- **THEN** a background image fills the entire column height
+- **AND** the image uses cover sizing and center positioning
 
-### Requirement: Responsive behavior
+### Feature: Responsive behavior
 
 #### Scenario: Mobile layout
 
-```gherkin
-Given the user views the page on a viewport narrower than 768px
-Then the two columns stack vertically
-And the form column appears above the image column
-```
+- **GIVEN** the user views the page on a viewport narrower than 768px
+- **THEN** the two columns stack vertically
+- **AND** the form column appears above the image column
 
 ## Verification checklist
 

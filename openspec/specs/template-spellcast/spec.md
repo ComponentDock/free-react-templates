@@ -344,13 +344,13 @@ of the wizard card.
 - **THEN** the wizard SHALL go back one step
 - **AND** navigation SHALL never be blocked by validation
 
-### Requirement: Semantics and accessibility
+### Feature: Semantics and accessibility
 
 #### Scenario: Landmarks and ARIA
 
 - **GIVEN** the Spellcast app is rendered
 - **THEN** the page SHALL have a `<main>` landmark wrapping the wizard
-- **AND** the step counter SHALL have appropriate `aria-label` (e.g.
+- **AND** the step counter SHALL have appropriate `aria-label` (e.g
   "Step 1 of 3")
 - **AND** all form inputs SHALL have associated `<label>` elements
   (via `htmlFor`)
@@ -366,7 +366,7 @@ of the wizard card.
 - **AND** grid items SHALL be focusable (`tabIndex={0}`) and activatable
   via Enter/Space
 
-### Requirement: Component Dock credit
+### Feature: Component Dock credit
 
 #### Scenario: Footer
 

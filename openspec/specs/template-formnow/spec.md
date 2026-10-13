@@ -58,84 +58,86 @@ Right column (~55%):
   - Message (label + bordered textarea, tall)
 - "Send Message" button: olive/yellow-green bg, white text, full width
 
-## Gherkin requirements
+## Requirements
 
 ### Page layout
 
-```gherkin
-Scenario: Page renders with gradient background
-  Given I visit the Formnow page
-  Then the entire page has a blue-to-teal gradient background
+#### Scenario: Page renders with gradient background
 
-Scenario: Content is overlaid on gradient
-  Given I visit the Formnow page
-  Then I see contact info on the left and a white form card on the right
-```
+- **GIVEN** I visit the Formnow page
+- **THEN** the entire page has a blue-to-teal gradient background
+
+#### Scenario: Content is overlaid on gradient
+
+- **GIVEN** I visit the Formnow page
+- **THEN** I see contact info on the left and a white form card on the right
 
 ### Contact info
 
-```gherkin
-Scenario: Info displays heading and paragraph
-  Given I visit the Formnow page
-  Then I see "Contact Info" heading in white
-  And I see a paragraph of text below the heading
+#### Scenario: Info displays heading and paragraph
 
-Scenario: Info displays two location blocks
-  Given I visit the Formnow page
-  Then I see a "London" location block
-  And I see a "New York" location block
+- **GIVEN** I visit the Formnow page
+- **THEN** I see "Contact Info" heading in white
+- **AND** I see a paragraph of text below the heading
 
-Scenario: Each location displays address, phone, and email
-  Given I visit the Formnow page
-  Then each location block has an address, phone number, and email
-```
+#### Scenario: Info displays two location blocks
+
+- **GIVEN** I visit the Formnow page
+- **THEN** I see a "London" location block
+- **AND** I see a "New York" location block
+
+#### Scenario: Each location displays address, phone, and email
+
+- **GIVEN** I visit the Formnow page
+- **THEN** each location block has an address, phone number, and email
 
 ### Contact form
 
-```gherkin
-Scenario: Form displays all fields in white card
-  Given I visit the Formnow page
-  Then I see a white card with rounded corners and shadow
-  And the card contains a "SEND US A MESSAGE" heading
-  And I see a Name input field
-  And I see an Email input field
-  And I see a Message textarea
-  And I see a Send Message button
+#### Scenario: Form displays all fields in white card
 
-Scenario: Form heading is uppercase and letter-spaced
-  Given I visit the Formnow page
-  Then the form heading "SEND US A MESSAGE" is uppercase with letter spacing
+- **GIVEN** I visit the Formnow page
+- **THEN** I see a white card with rounded corners and shadow
+- **AND** the card contains a "SEND US A MESSAGE" heading
+- **AND** I see a Name input field
+- **AND** I see an Email input field
+- **AND** I see a Message textarea
+- **AND** I see a Send Message button
 
-Scenario: Inputs have bordered box style
-  Given I visit the Formnow page
-  Then all form inputs have a full border (box style)
+#### Scenario: Form heading is uppercase and letter-spaced
 
-Scenario: Labels appear above inputs
-  Given I visit the Formnow page
-  Then each form field has a label displayed above the input
+- **GIVEN** I visit the Formnow page
+- **THEN** the form heading "SEND US A MESSAGE" is uppercase with letter spacing
 
-Scenario: Send Message button spans full width
-  Given I visit the Formnow page
-  Then the Send Message button spans the full width of the card
-  And the button has an olive/yellow-green background and white text
-```
+#### Scenario: Inputs have bordered box style
+
+- **GIVEN** I visit the Formnow page
+- **THEN** all form inputs have a full border (box style)
+
+#### Scenario: Labels appear above inputs
+
+- **GIVEN** I visit the Formnow page
+- **THEN** each form field has a label displayed above the input
+
+#### Scenario: Send Message button spans full width
+
+- **GIVEN** I visit the Formnow page
+- **THEN** the Send Message button spans the full width of the card
+- **AND** the button has an olive/yellow-green background and white text
 
 ### Responsive behavior
 
-```gherkin
-Scenario: Columns stack on mobile
-  Given I visit the Formnow page on a mobile viewport
-  Then the contact info and form card stack vertically
-```
+#### Scenario: Columns stack on mobile
+
+- **GIVEN** I visit the Formnow page on a mobile viewport
+- **THEN** the contact info and form card stack vertically
 
 ### Footer
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formnow page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** I visit the Formnow page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references Component Dock
 
 ## Verification checklist
 

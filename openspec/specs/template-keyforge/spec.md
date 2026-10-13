@@ -2,6 +2,12 @@
 
 Recreation of ColorLib "Locksmith" (https://colorlib.com/wp/template/locksmith/)
 
+## Purpose
+
+KeyForge is a locksmith services landing page with a hero slider, a quote request form, a services grid, an about band and testimonials.
+
+It recreates the ColorLib **Locksmith** design (https://colorlib.com/wp/template/locksmith/, preview: https://preview.colorlib.com/theme/locksmith/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 A professional locksmith and security services landing page with a hero slider,
@@ -28,9 +34,11 @@ quote request form, services grid, about section, and testimonials.
 6. **Testimonials** — customer quotes with avatar, name, role; carousel dots
 7. **Footer** — dark background; 4-column grid (About, Quick Links, Services, Contact); Component Dock attribution; back-to-top button
 
-## Scenarios
+## Requirements
 
 ### Navbar
+
+#### Scenario: Navbar
 
 - Renders brand name "KeyForge"
 - Shows all nav links
@@ -39,6 +47,8 @@ quote request form, services grid, about section, and testimonials.
 
 ### Hero Slider
 
+#### Scenario: Hero Slider
+
 - Displays slide heading and description
 - Auto-rotates every 5 seconds
 - Prev/next buttons navigate slides
@@ -46,26 +56,36 @@ quote request form, services grid, about section, and testimonials.
 
 ### Quote Form
 
+#### Scenario: Quote Form
+
 - Shows all three input fields
 - Submit button triggers form
 - Validates required fields
 
 ### Services
 
+#### Scenario: Services
+
 - Renders all 6 service cards
 - Each card shows icon, title, description
 
 ### About
+
+#### Scenario: About
 
 - Shows heading and feature list
 - Displays image placeholder
 
 ### Testimonials
 
+#### Scenario: Testimonials
+
 - Shows customer quotes
 - Displays avatar and name
 
 ### Footer
+
+#### Scenario: Footer
 
 - Links to Component Dock
 - Shows contact info
