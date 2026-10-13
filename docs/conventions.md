@@ -72,6 +72,29 @@ htmlFor>`), `aria-label` on icon-only controls, `aria-expanded` on toggles,
   `.dark` class on `document.documentElement` and effects clean up after
   themselves.
 
+## Effects and derived state
+
+oxlint's react-compiler rules (`react(purity)`, `react(set-state-in-effect)`)
+are errors in this repo. Render the value instead of writing it back from an
+effect:
+
+- **Animation fallbacks** (count-ups, reveals): when the browser API that
+  drives the animation is missing — `IntersectionObserver` /
+  `requestAnimationFrame`, which includes jsdom — derive the final value during
+  render rather than `setState`-ing it from the effect:
+  `const shown = typeof IntersectionObserver === 'undefined' ? value : display`.
+  Keep the animated value in state for the normal path and drop the animation
+  prop from the observer effect's dep list once the effect no longer reads it.
+- **Mount-time anchors** (countdown targets): read the clock once in a lazy
+  initializer — `const [target] = useState(() => Date.now() + offset)` — never
+  `Date.now()`/`Math.random()` in the render body or in a `useMemo`.
+- **Prop-driven resets**: adjust during render with a previous-value guard
+  (`const [wasOpen, setWasOpen] = useState(open); if (wasOpen !== open) {
+  setWasOpen(open); setSubmitted(false) }`) instead of an effect on the prop.
+- **Document readiness** (preloaders): keep the `load` listener but derive
+  `const hidden = loaded || document.readyState === 'complete'` — a document
+  that is already complete never fires another `load`.
+
 ## Error handling
 
 - Forms: validate with zod schemas + react-hook-form patterns where needed;
