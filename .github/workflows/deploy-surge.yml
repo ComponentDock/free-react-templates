@@ -1,44 +1,65 @@
 # Deploy templates to Surge.sh — one subdomain per template.
 #
 # Triggers:
-#   1. A pull request is MERGED (manually by the user). The workflow figures out
-#      which app folder(s) the PR changed and deploys each of them to
-#      https://free-react-templates-<app>.surge.sh
-#   2. Manual run (workflow_dispatch) — deploy a single app (input "app",
-#      e.g. "aurora") or all apps (empty input).
+#   1. push to `main`. Every template PR is squash-merged into main, so this is
+#      the reliable place to react: unlike the old `pull_request: [closed]`
+#      trigger it cannot be killed by `gh pr merge --delete-branch` (deleting
+#      the branch cancels the in-flight run — that race left 141 template apps
+#      merged but never published, see docs/adr/0004). Apps touched by the push
+#      are verified (scripts/verify-app.sh), deployed, then re-probed.
+#   2. nightly schedule — fleet audit + repair: probe every template domain and
+#      rebuild/redeploy the apps whose site is missing, so a cancelled or failed
+#      deploy heals itself instead of leaving a dead public link.
+#   3. workflow_dispatch — deploy specific apps (`app`, space-separated) and/or
+#      run the audit+repair with a custom cap (`audit_limit`, default 40 per
+#      shard). With `app` empty only the audit/repair job runs.
 #
 # REQUIRED repository secrets (Settings > Secrets and variables > Actions):
 #   SURGE_LOGIN — the Surge.sh account email
 #   SURGE_TOKEN — from `npx surge token` (after `npx surge login`)
 #
 # The deploy itself runs `scripts/deploy-template.sh <app>`, which builds the
-# workspace, adds the SPA 200.html fallback, and runs `npx surge` (headless,
-# authenticated via the two secrets).
+# workspace (`tsc --noEmit && vite build`, so broken code can never ship), adds
+# the SPA 200.html fallback, and runs `npx surge` (headless, authenticated via
+# the two secrets).
 
 name: Deploy to Surge.sh
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches: [main]
+  schedule:
+    - cron: '30 4 * * *' # 04:30 UTC daily, after the nightly gate
   workflow_dispatch:
     inputs:
       app:
-        description: 'App folder to deploy (e.g. aurora). Leave empty to deploy all apps.'
+        description: 'App folder(s) to deploy, space-separated (e.g. "aurora drift"). Leave empty to only run the audit/repair job.'
         required: false
+        type: string
+      audit_limit:
+        description: 'Max apps the audit/repair job redeploys per shard (default 40).'
+        required: false
+        default: '40'
         type: string
 
 permissions:
   contents: read
-  pull-requests: read
+
+# Serialize deploy/repair runs so two jobs never push to Surge at once.
+concurrency:
+  group: deploy-surge
+  cancel-in-progress: false
 
 jobs:
   deploy:
-    name: Deploy templates to Surge.sh
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true }}
+    name: Verify + deploy changed templates
+    if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.app != '') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # the push diff needs history
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -49,79 +70,70 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install fallow (release binary — not an npm dependency)
-        run: |
-          curl -fsSL -o /usr/local/bin/fallow https://github.com/fallow-rs/fallow/releases/latest/download/fallow-linux-x64-gnu
-          chmod +x /usr/local/bin/fallow
-          fallow --version
-
       - name: Determine apps to deploy
         id: apps
         env:
-          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.event.after }}
+          REQUESTED: ${{ inputs.app }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            if [ -n "${{ inputs.app }}" ]; then
-              APPS="${{ inputs.app }}"
-            else
-              APPS="$(ls -d apps/*/ | xargs -n1 basename | tr '\n' ' ')"
-            fi
+          set -euo pipefail
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            APPS="$REQUESTED"
+            UI_CHANGED=false
           else
-            # Changed files of the merged PR, via the GitHub API (robust even
-            # if the PR branch was deleted after squash-merge).
-            APPS="$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
-              --paginate --jq '.[].filename' \
-              | sed -n 's|^apps/\([^/]*\)/.*|\1|p' \
-              | sort -u \
-              | tr '\n' ' ')"
+            if [ -z "$AFTER" ] || [ "$AFTER" = "0000000000000000000000000000000000000000" ]; then
+              AFTER="$(git rev-parse HEAD)"
+            fi
+            # A force-push / initial push has no usable `before` commit: fall back
+            # to the pushed commit's parent so the diff still describes the change.
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
+              || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+              BEFORE="$(git rev-parse "${AFTER}~1" 2>/dev/null || echo '')"
+            fi
+            if [ -n "$BEFORE" ]; then
+              CHANGED="$(git diff --name-only "$BEFORE" "$AFTER")"
+            else
+              CHANGED="$(git show --name-only --pretty=format: "$AFTER")"
+            fi
+            APPS="$(printf '%s\n' "$CHANGED" | sed -n 's|^apps/\([^/]*\)/.*|\1|p' | sort -u | tr '\n' ' ')"
+            if printf '%s\n' "$CHANGED" | grep -q '^packages/ui/'; then UI_CHANGED=true; else UI_CHANGED=false; fi
           fi
           echo "APPS=${APPS}" >> "$GITHUB_ENV"
-          echo "Detected app(s): ${APPS:-none}"
+          echo "UI_CHANGED=${UI_CHANGED}" >> "$GITHUB_ENV"
+          echo "Detected app(s): ${APPS:-none} (packages/ui changed: ${UI_CHANGED})"
 
-      # FAST_MODE merge gate: verify ONLY the changed apps (+ packages/ui if
-      # touched) — the full gate is too slow at 1,000+ workspaces. Each app is
-      # verified by scripts/verify-app.sh (typecheck + lint + knip + fallow +
-      # 100%-coverage tests + build, ~2-3 min). The FULL gate (npm run gate)
-      # still runs nightly (nightly-gate.yml), so repo-wide regressions cannot
-      # go unnoticed.
-      - name: Gate changed apps (PR merges only)
-        if: github.event_name == 'pull_request' && env.APPS != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Verify changed apps (per-app gate)
+        if: env.APPS != ''
         run: |
           set +e
           failed=""
           for app in $APPS; do
             echo "==> Gate: ${app}"
-            if bash scripts/verify-app.sh "${app}"; then
+            if bash scripts/verify-app.sh "$app"; then
               echo "==> OK: ${app}"
             else
               echo "==> GATE FAILED: ${app}"
               failed="${failed} ${app}"
             fi
           done
-          # packages/ui changed? verify the shared package (typecheck + 100% coverage).
-          if gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
-            --paginate --jq '.[].filename' | grep -q '^packages/ui/'; then
-            echo "==> Gate: packages/ui"
-            if npm run typecheck --workspace @free-react-templates/ui \
-              && npx vitest run --root packages/ui \
-                 --coverage.enabled=true --coverage.provider=v8 \
-                 --coverage.include='src/**' \
-                 --coverage.exclude='**/*.test.*' \
-                 --coverage.thresholds.lines=100 --coverage.thresholds.functions=100 \
-                 --coverage.thresholds.branches=100 --coverage.thresholds.statements=100; then
-              echo "==> OK: packages/ui"
-            else
-              echo "==> GATE FAILED: packages/ui"
-              failed="${failed} ui"
-            fi
-          fi
           if [ -n "$failed" ]; then
             echo "::error::Gate failed:${failed}"
             exit 1
           fi
           echo "Gate passed for: ${APPS}"
+
+      - name: Verify shared UI (packages/ui touched)
+        if: env.UI_CHANGED == 'true'
+        run: |
+          npm run typecheck --workspace @free-react-templates/ui
+          npx vitest run --root packages/ui \
+            --coverage.enabled=true --coverage.provider=v8 \
+            --coverage.include='src/**' \
+            --coverage.exclude='**/*.test.*' \
+            --coverage.thresholds.lines=100 --coverage.thresholds.functions=100 \
+            --coverage.thresholds.branches=100 --coverage.thresholds.statements=100
 
       - name: Deploy each template to its Surge subdomain
         if: env.APPS != ''
@@ -129,12 +141,13 @@ jobs:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: |
-          # Deploy every app even if some fail; report failures and fail the
-          # job only when at least one deploy failed.
+          # Deploy every app even if some fail; report failures and fail the job
+          # only when at least one deploy failed (the nightly audit re-deploys
+          # whatever is still missing).
           set +e
           failed=""
           for app in $APPS; do
-            echo "==> Deploying ${app} to https://free-react-templates-${app}.surge.sh"
+            echo "==> Deploying ${app} to https://${app}.free.componentdock.com"
             if bash scripts/deploy-template.sh "${app}"; then
               echo "==> OK: ${app}"
             else
@@ -148,10 +161,127 @@ jobs:
           fi
           echo "All deploys succeeded."
 
-      - name: Summary
+      - name: Verify the deployments are live
+        if: env.APPS != ''
         run: |
-          if [ -z "$APPS" ]; then
-            echo "No template app changed in this event — nothing deployed."
-          else
-            echo "Deployed: ${APPS}"
+          set +e
+          failed=""
+          for app in $APPS; do
+            code="$(curl -ksS -L -o /dev/null -w '%{http_code}' --max-time 25 \
+              -H 'Cache-Control: no-cache' "https://${app}.free.componentdock.com")"
+            if [ "$code" = "200" ]; then
+              echo "==> live: ${app}"
+            else
+              echo "==> NOT LIVE (HTTP ${code}): ${app}"
+              failed="${failed} ${app}"
+            fi
+          done
+          if [ -n "$failed" ]; then
+            echo "::error::Not live after deploy:${failed}"
+            exit 1
           fi
+          echo "All deployments verified live."
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Deploy (${GITHUB_EVENT_NAME})"
+            echo ""
+            echo "- apps: \`${APPS:-none}\`"
+            echo "- packages/ui changed: \`${UI_CHANGED:-false}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  audit:
+    name: Fleet audit + repair (shard ${{ matrix.shard }}/4)
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Audit published templates (shard ${{ matrix.shard }}/4)
+        id: audit
+        env:
+          AUDIT_LIMIT: ${{ inputs.audit_limit || '40' }}
+        run: |
+          set -euo pipefail
+          bash scripts/audit-deployments.sh \
+            --shard ${{ matrix.shard }} --total 4 --limit "$AUDIT_LIMIT" --jobs 16 \
+            | tee audit.tsv
+          MISSING="$(awk -F'\t' '$1 == "missing" { print $2 }' audit.tsv | tr '\n' ' ' | sed 's/ *$//')"
+          INSECURE="$(awk -F'\t' '$1 == "insecure" { print $2 }' audit.tsv | tr '\n' ' ' | sed 's/ *$//')"
+          echo "MISSING=${MISSING}" >> "$GITHUB_ENV"
+          echo "INSECURE=${INSECURE}" >> "$GITHUB_ENV"
+          echo "Repairing (≤ ${AUDIT_LIMIT}): ${MISSING:-none}"
+          {
+            echo "### Audit shard ${{ matrix.shard }}/4"
+            echo ""
+            echo "- missing (repairing): ${MISSING:-none}"
+            echo "- TLS-uncovered cert (report only): ${INSECURE:-none}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Redeploy the missing templates
+        if: env.MISSING != ''
+        env:
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: |
+          set +e
+          failed=""
+          for app in $MISSING; do
+            echo "==> Rebuilding + deploying ${app}"
+            if bash scripts/deploy-template.sh "${app}"; then
+              echo "==> OK: ${app}"
+            else
+              echo "==> FAILED: ${app}"
+              failed="${failed} ${app}"
+            fi
+          done
+          if [ -n "$failed" ]; then
+            echo "::error::Repair deploys failed:${failed}"
+            exit 1
+          fi
+          echo "Repaired: ${MISSING}"
+
+      - name: Verify repaired deployments are live
+        if: env.MISSING != ''
+        run: |
+          set +e
+          failed=""
+          for app in $MISSING; do
+            code="$(curl -ksS -L -o /dev/null -w '%{http_code}' --max-time 25 \
+              -H 'Cache-Control: no-cache' "https://${app}.free.componentdock.com")"
+            if [ "$code" = "200" ]; then
+              echo "==> live: ${app}"
+            else
+              echo "==> STILL MISSING (HTTP ${code}): ${app}"
+              failed="${failed} ${app}"
+            fi
+          done
+          if [ -n "$failed" ]; then
+            echo "::error::Still not live after repair:${failed}"
+            exit 1
+          fi
+          echo "All repaired deployments verified live."
+
+      - name: Report TLS-uncovered hosts (not auto-fixable in-repo)
+        if: env.INSECURE != ''
+        run: |
+          echo "These hosts are published but answer with a TLS certificate that" \
+            "does not cover them (Surge's shared CN=*.surge.sh cert), so browsers" \
+            "warn on the https:// link: ${INSECURE}" >> "$GITHUB_STEP_SUMMARY"
