@@ -1,15 +1,27 @@
 ## Purpose
 
-Recreation of ColorLib Carousel 17 (https://colorlib.com/wp/template/carousel-17/) as the Spinwheel React template.
+Spinwheel is a single-page template built around a testimonial carousel. It recreates the ColorLib **Carousel 17** design (https://colorlib.com/wp/template/carousel-17/).
 
 ## Requirements
 
 ### Requirement: Testimonial Carousel Section
 
-- **WHEN** the user views the Spinwheel application
-- **THEN** a featured testimonial carousel should be visible with navigation controls and testimonial cards showing author name, avatar, and feedback quote
+The template SHALL render a featured testimonial carousel with navigation controls.
+
+#### Scenario: Testimonials are visible with controls
+
+- **GIVEN** the user opens the Spinwheel application
+- **WHEN** the testimonial carousel renders
+- **THEN** testimonial cards show the author name, avatar and feedback quote
+- **AND** navigation controls are present for moving between testimonials
 
 ### Requirement: Footer & Branding
 
-- **WHEN** the user scrolls to the footer
-- **THEN** a branded footer linking to Component Dock (https://www.componentdock.com/) should be displayed with no external or ColorLib attributions
+The template SHALL render a branded footer that links to Component Dock and carries no external template attribution.
+
+#### Scenario: Footer shows Component Dock branding
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer renders
+- **THEN** it links to Component Dock (https://www.componentdock.com/)
+- **AND** it contains no ColorLib or external template attribution

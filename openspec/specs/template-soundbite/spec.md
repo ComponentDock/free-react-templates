@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "The Hustle Hour" — a dark-themed podcast/blog single-page site.
+SoundBite is a dark-themed podcast and blog single-page site with a featured episode, a recent-episodes grid, sponsors and an FAQ accordion. It recreates the ColorLib **The Hustle Hour** design.
 
 - **Source:** ColorLib "The Hustle Hour" (slug: `hustlehour`)
 - **Preview URL:** https://preview.colorlib.com/theme/hustlehour/

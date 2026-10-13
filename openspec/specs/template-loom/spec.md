@@ -6,7 +6,7 @@ gherkin: true
 
 ## Purpose
 
-Recreation of ColorLib Bootstrap Footer 10 (https://colorlib.com/wp/template/bootstrap-footer-10/) — a simple, responsive newsletter subscription footer with dark background, email subscribe form, multi-column navigation, and social icons.
+Loom is a responsive newsletter-subscription footer with a dark background, an email signup form, multi-column navigation and social icons. It recreates the ColorLib **Bootstrap Footer 10** design (https://colorlib.com/wp/template/bootstrap-footer-10/).
 
 ## Design tokens
 

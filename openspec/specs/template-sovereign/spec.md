@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **The Palatin** — a modern hotel booking website template.
+Sovereign is a modern hotel booking website with a booking-form hero, room types, amenities, a gallery and testimonials. It recreates ColorLib's **The Palatin** design.
 
 - **Source slug:** `the-palatin`
 - **ColorLib URL:** https://colorlib.com/wp/template/the-palatin/

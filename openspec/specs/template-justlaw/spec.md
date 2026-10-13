@@ -11,7 +11,7 @@ status: in-progress
 
 ## Purpose
 
-Recreation of ColorLib "Justlaw" (https://colorlib.com/wp/template/justlaw/) — a lawyer and legal firm landing page template featuring a hero with consultation CTA, practice areas, about section with stats, contact form, tabbed case studies, testimonials, team members, and a branded footer.
+Justlaw is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib **Justlaw** design (https://colorlib.com/wp/template/justlaw/).
 
 ## Requirements
 

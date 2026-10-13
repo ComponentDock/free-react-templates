@@ -1,6 +1,6 @@
 ## Purpose
 
-Recreate the ColorLib "Gravity" creative agency landing template as a React
+Plumb is a product landing page with a parallax hero, a latest-product band, four-column features, news cards and testimonials. It recreates the ColorLib **Gravity** creative agency design as a React template.
 
 - Tailwind CSS 4 + TypeScript single-page app under the name "Plumb". The
   template serves as a general-purpose agency/company landing page with a hero,

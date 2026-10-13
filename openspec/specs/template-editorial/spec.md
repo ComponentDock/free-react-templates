@@ -6,7 +6,7 @@ governed_by: TDD (100% coverage enforced)
 
 ## Purpose
 
-Recreation of ColorLib "Megazine" (https://colorlib.com/wp/template/megazine/) as "Editorial" — a magazine and blog template featuring a fixed sidebar with navigation, a full-viewport hero image slider, an asymmetric blog post grid, and pagination.
+Editorial is a magazine and blog template with a fixed sidebar navigation, a full-viewport hero slider, an asymmetric post grid and pagination. It recreates the ColorLib **Megazine** design (https://colorlib.com/wp/template/megazine/).
 
 ## Requirements
 

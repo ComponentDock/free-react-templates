@@ -8,7 +8,7 @@ preview: https://preview.colorlib.com/theme/design/
 
 ## Purpose
 
-Recreate the ColorLib "Design" template as "Atelier" — a creative agency landing page with navbar, hero, stats, process steps, services, testimonials, blog, and footer.
+Atelier is a creative agency landing page with a split hero, achievement stats, process steps, services, a testimonial carousel and blog cards. It recreates the ColorLib "Design" design with Vite, React 19, Tailwind CSS 4 and TypeScript.
 
 ## Requirements
 

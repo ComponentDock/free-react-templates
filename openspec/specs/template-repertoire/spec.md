@@ -8,7 +8,7 @@ description: >
 
 ## Purpose
 
-Recreate ColorLib [Work](https://colorlib.com/wp/template/work/) — a portfolio/personal branding landing page — as a React 19 + Vite + Tailwind CSS 4 + TypeScript template under the name **Repertoire**.
+Repertoire is a portfolio and personal-branding landing page with a sticky sidebar navigation, a hero slider, services, portfolio and blog. It recreates the ColorLib **Work** design (https://colorlib.com/wp/template/work/).
 
 **Preview:** https://preview.colorlib.com/theme/work/
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript

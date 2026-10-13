@@ -1,6 +1,6 @@
 ## Purpose
 
-Recreation of ColorLib "Wisdom" (https://colorlib.com/wp/template/wisdom/) as a single-page church website template named "Sanctum" with hero, bible study countdown, about, services, newsletter, sermons, testimonies, counters, events, blog, and dark footer.
+Sanctum is a single-page church website with a hero, a bible-study countdown, a services grid, video sermon cards, testimonies, event dates and blog. It recreates the ColorLib **Wisdom** design (https://colorlib.com/wp/template/wisdom/).
 
 ## Requirements
 

@@ -2,10 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Cardoor" — a car rental landing page with a dark
-header, hero booking form, about section, partner logos, services grid, fun
-fact counters, car selection tabs, pricing tables, testimonials, mobile app
-promo, blog articles, and a multi-column footer with newsletter signup.
+AutoDock is a car rental landing page with a dark header, a booking-form hero, fun-fact counters, car-selection tabs, pricing plans and blog articles. It recreates the ColorLib "Cardoor" design.
 
 - **Source:** ColorLib "Cardoor" (slug: `cardoor`)
 - **Preview URL:** https://preview.colorlib.com/theme/cardoor/

@@ -1,6 +1,6 @@
 ## Purpose
 
-Recreate the ColorLib Myhome real estate landing page as a React 19 + Vite + Tailwind CSS 4 + TypeScript template named "Homeward".
+Homeward is a real estate landing page with a property-showcase hero, a search bar, a featured listings grid, a map section and testimonials. It recreates the ColorLib **Myhome** design as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 ## Requirements
 

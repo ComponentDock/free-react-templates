@@ -8,7 +8,7 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript
 
 ## Purpose
 
-Recreation of ColorLib Stellar (https://colorlib.com/wp/template/stellar/) as "Astra" — a creative branding agency landing page with hero, about, services, portfolio, testimonials, clients, stats, contact, and footer sections.
+Astra is a creative branding agency landing page with a parallax hero, services and portfolio grids, client logos, stat counters and a contact form. It recreates the ColorLib **Stellar** design (https://colorlib.com/wp/template/stellar/).
 
 ## Requirements
 
