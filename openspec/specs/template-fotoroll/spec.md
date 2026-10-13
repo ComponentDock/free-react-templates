@@ -2,6 +2,10 @@
 
 > Recreation of ColorLib "Photography 2" (https://colorlib.com/wp/template/photography-2/)
 
+## Purpose
+
+Fotoroll is a photography portfolio template with a navbar, hero, portfolio, blog and footer. It recreates the ColorLib **Photography 2** design (https://colorlib.com/wp/template/photography-2/, preview: https://preview.colorlib.com/theme/photography2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
 ## Design tokens (from screenshot analysis)
 
 - **Accent color:** `#4ecdc4` (mint/teal) — used for logo dot, nav links, CTA hover
@@ -68,7 +72,7 @@ Feature: Fotoroll Photography Portfolio
 
 ## Preview analysis notes
 
-- Preview URL (`https://preview.colorlib.com/theme/photography-2/`) returned 404
+- ⚠️ Pointer status re-probed 2026-10-13: the slug-only path (`https://preview.colorlib.com/theme/photography-2/`) 404s, but the live demo is the alias directory `https://preview.colorlib.com/theme/photography2/` (HTTP 200, 6,928 B)
 - Analysis based on ColorLib screenshot: `photography-2-free-template-1.jpg`
 - Full-width hero slider is the dominant feature — the page is essentially a slider with a thin footer
 - White navbar with green accent (`#4ecdc4` approximate), "Foto." brand name

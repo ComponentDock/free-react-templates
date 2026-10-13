@@ -4,6 +4,10 @@ Recreation of ColorLib "Unicare"
 (https://colorlib.com/wp/template/unicare/)
 Preview: https://preview.colorlib.com/theme/unicare/
 
+## Purpose
+
+Mercy is a charity & nonprofit landing page with a top bar, navbar, hero, about donation, services, causes, testimonials, blog and volunteers. It recreates the ColorLib **Unicare** design (https://colorlib.com/wp/template/unicare/, preview: https://preview.colorlib.com/theme/unicare/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 | Token       | Value                | Usage                          |

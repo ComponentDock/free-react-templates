@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Yogalife" (https://colorlib.com/wp/template/yogalife/).
 
+## Purpose
+
+Soulflow is a yoga & meditation studio template with a navbar, hero slider, welcome, our programs, watch video, yoga pricing and yoga features. It recreates the ColorLib **Yogalife** design (https://colorlib.com/wp/template/yogalife/, preview: https://preview.colorlib.com/theme/yogalife/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 - **Primary accent:** `#87e5da` (teal/mint)

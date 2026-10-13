@@ -4,6 +4,10 @@
 **Preview:** https://preview.colorlib.com/theme/meal/
 **New name:** Supper (apps/supper, @free-react-templates/supper)
 
+## Purpose
+
+Supper is a restaurant template with a navbar, hero, feature cards, about band, chefs, menu band, reservation, testimonials, contact and footer. It recreates the ColorLib **Meal** design (https://colorlib.com/wp/template/meal/, preview: https://preview.colorlib.com/theme/meal/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from preview CSS)
 
 - **Fonts:** Playfair Display (headings, serif), Open Sans (body, sans-serif)

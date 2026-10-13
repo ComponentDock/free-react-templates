@@ -9,6 +9,10 @@ stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
 **Source:** ColorLib "Pacific" — https://colorlib.com/wp/template/pacific/
 **Preview:** https://preview.colorlib.com/theme/pacific/
 
+## Purpose
+
+Tidal is a travel agency landing template with a navbar, hero, search bar, services, destination select, tour packages, about band and testimonials. It recreates the ColorLib **Pacific** design (https://colorlib.com/wp/template/pacific/, preview: https://preview.colorlib.com/theme/pacific/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from CSS analysis)
 
 | Token          | Value                      | Notes                            |

@@ -3,6 +3,10 @@
 Recreation of ColorLib "Book" (https://colorlib.com/wp/template/book/).
 Preview: https://preview.colorlib.com/theme/book/
 
+## Purpose
+
+Liber is an author book landing template with a navbar, hero banner, about band, feature cards, counters, pricing, courses and app download. It recreates the ColorLib **Book** design (https://colorlib.com/wp/template/book/, preview: https://preview.colorlib.com/theme/book/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from css/main.css)
 
 - Primary brand: #f53f51 (coral red)

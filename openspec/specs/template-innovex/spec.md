@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Eroo" (https://colorlib.com/wp/template/eroo/) — a digital innovation/design agency landing page.
 
+## Purpose
+
+Innovex is a business landing page with a top bar, navbar, hero, services, about band, stat counters, team and footer. It recreates the ColorLib **Eroo** design (https://colorlib.com/wp/template/eroo/, preview: https://preview.colorlib.com/theme/eroo/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (extracted from preview)
 
 - **Primary dark:** #1a1a2e (deep navy)

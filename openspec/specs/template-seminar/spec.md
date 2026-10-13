@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Workshop" (https://colorlib.com/wp/template/workshop/).
 
+## Purpose
+
+Seminar is a conference & workshop event landing page with a navbar, hero, speakers, programs schedule, sponsors, news blog and footer. It recreates the ColorLib **Workshop** design (https://colorlib.com/wp/template/workshop/, preview: https://preview.colorlib.com/theme/workshop/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from preview CSS)
 
 - **Font:** Roboto Mono (monospace) via Google Fonts

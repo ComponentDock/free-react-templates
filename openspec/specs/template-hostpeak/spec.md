@@ -2,6 +2,10 @@
 
 Recreation of ColorLib [Lorahost](https://colorlib.com/wp/template/lorahost/) under the name **Hostpeak**.
 
+## Purpose
+
+Hostpeak is a web hosting landing template. It recreates the ColorLib **Lorahost** design (https://colorlib.com/wp/template/lorahost/, preview: https://preview.colorlib.com/theme/lorahost/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 | Token             | Value                                         |

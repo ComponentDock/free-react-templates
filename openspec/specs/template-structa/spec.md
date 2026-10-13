@@ -3,6 +3,10 @@
 > Recreation of ColorLib "Consto" — https://colorlib.com/wp/template/consto/
 > Preview: https://preview.colorlib.com/theme/consto/
 
+## Purpose
+
+Structa is a construction company template with a navbar, hero, about band, services, projects, testimonials, contact and footer. It recreates the ColorLib **Consto** design (https://colorlib.com/wp/template/consto/, preview: https://preview.colorlib.com/theme/consto/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 Structa is a construction company landing page template with a bold orange

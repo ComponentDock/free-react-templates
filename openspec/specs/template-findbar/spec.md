@@ -3,6 +3,10 @@
 Recreation of ColorLib **Search Form/Bar 01**
 (https://colorlib.com/wp/template/search-form-bar-01/)
 
+## Purpose
+
+Findbar is a search form bar template. It recreates the ColorLib **Search Form Bar 01** design (https://colorlib.com/wp/template/search-form-bar-01/, preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-01/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from CSS analysis)
 
 - **Font**: Poppins, sans-serif (Google Fonts)

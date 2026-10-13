@@ -3,6 +3,10 @@
 > Recreation of ColorLib [Royalestate](https://colorlib.com/wp/template/royalestate/)
 > Preview: https://preview.colorlib.com/theme/royalestate/
 
+## Purpose
+
+Homefront is a directory and listings landing page with a navbar, hero, search, services, recent properties, testimonials, stat counters and footer. It recreates the ColorLib **Royalestate** design (https://colorlib.com/wp/template/royalestate/, preview: https://preview.colorlib.com/theme/royalestate/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens
 
 - Primary: `#1e3a5f` (deep navy blue)

@@ -2,6 +2,10 @@
 
 Recreation of ColorLib Checkbox 14 (https://colorlib.com/wp/template/checkbox-14/)
 
+## Purpose
+
+Ballot is a custom checkbox template with a checkbox showcase and footer. It recreates the ColorLib **Checkbox 14** design (https://colorlib.com/wp/template/checkbox-14/, preview: https://preview.colorlib.com/theme/bootstrap/checkbox-14/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Source
 
 - **Original:** ColorLib Checkbox 14

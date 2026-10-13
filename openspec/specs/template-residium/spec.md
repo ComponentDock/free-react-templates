@@ -1,5 +1,9 @@
 # Spec: Residium (ColorLib Hus)
 
+## Purpose
+
+Residium is a real estate landing page with a navbar, hero slider, about band, facilities, property certificates and apartments carousel. It recreates the ColorLib **Hus** design (https://colorlib.com/wp/template/hus/, preview: https://preview.colorlib.com/theme/hus/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Source
 
 - **ColorLib template:** Hus

@@ -3,6 +3,10 @@
 Recreation of ColorLib Multiselect 06
 (https://colorlib.com/wp/template/multiselect-06/).
 
+## Purpose
+
+Optselect is a multiselect dropdown template with a card container, dropdown trigger, dropdown panel, selected count and footer. It recreates the ColorLib **Multiselect 06** design (https://colorlib.com/wp/template/multiselect-06/, preview: https://preview.colorlib.com/theme/bootstrap/multiselect-06/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Summary
 
 A clean, accessible multiselect dropdown component with checkbox selection,

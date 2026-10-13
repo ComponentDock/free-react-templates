@@ -16,6 +16,10 @@ design_tokens:
 
 # Sitecraft — Construction Company Landing Page
 
+## Purpose
+
+Sitecraft is a construction company landing page. It recreates the ColorLib **Complex** design (https://colorlib.com/wp/template/complex/, preview: https://preview.colorlib.com/theme/complex/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 A free React template recreating the ColorLib "Complex" construction company

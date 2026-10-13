@@ -3,6 +3,10 @@
 Recreation of ColorLib **Search Form Bar 02**
 (https://colorlib.com/wp/template/search-form-bar-02/)
 
+## Purpose
+
+Findspot is a search form bar template. It recreates the ColorLib **Search Form Bar 02** design (https://colorlib.com/wp/template/search-form-bar-02/, preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-02/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from screenshot analysis)
 
 - **Font**: Poppins, sans-serif (Google Fonts)

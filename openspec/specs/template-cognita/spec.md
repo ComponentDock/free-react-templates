@@ -2,6 +2,10 @@
 
 Recreation of ColorLib **Eskwela** (https://colorlib.com/wp/template/eskwela/).
 
+## Purpose
+
+Cognita is an online learning template. It recreates the ColorLib **Eskwela** design (https://colorlib.com/wp/template/eskwela/, preview: https://preview.colorlib.com/theme/eskwela/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Feature: UpperBar
 
 Scenario: Renders social icons and Apply Now link

@@ -13,6 +13,10 @@ preview: https://preview.colorlib.com/theme/login-form-06/
 
 # Commute — Login Form Template
 
+## Purpose
+
+Commute is a login form template with a hero image, login form and footer. It recreates the ColorLib **Login Form 06** design (https://colorlib.com/wp/template/login-form-06/, preview: https://preview.colorlib.com/theme/bootstrap/login-form-06/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 | Token            | Value   | Notes                         |

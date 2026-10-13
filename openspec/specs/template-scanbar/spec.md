@@ -2,7 +2,11 @@
 
 Recreation of ColorLib "Search Form 13" (https://colorlib.com/wp/template/colorlib-search-13/).
 
-## Design tokens (from screenshot — preview unreachable)
+## Purpose
+
+Scanbar is a quick city search form with a hero section, search bar and footer. It recreates the ColorLib **Colorlib Search 13** design (https://colorlib.com/wp/template/colorlib-search-13/, preview: https://colorlib.com/etc/searchf/colorlib-search-13/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
+## Design tokens (source sheet — the slug-only preview path 404s; the live demo is `colorlib.com/etc/searchf/colorlib-search-13/`, see Purpose)
 
 - Brand color: coral #e84c60 (SEARCH button)
 - Background: full-screen hero image (building/balcony against blue sky)

@@ -13,6 +13,10 @@ Recreation of ColorLib "Carousel 02" — a Bootstrap carousel demo showcasing a
 portfolio grid of work items with hover-reveal search overlays, card shadows,
 and category labels.
 
+## Purpose
+
+Lattice is a portfolio gallery grid. It recreates the ColorLib **Carousel 02** design (https://colorlib.com/wp/template/carousel-02/, preview: https://preview.colorlib.com/theme/bootstrap/carousel-02/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (extracted from preview CSS)
 
 | Token             | Value                                |

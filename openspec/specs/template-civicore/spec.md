@@ -3,6 +3,10 @@
 Recreation of ColorLib "Comport" (https://colorlib.com/wp/template/comport/).
 Preview: https://preview.colorlib.com/theme/comport/
 
+## Purpose
+
+Civicore is a job board template with a navbar, hero, search bar, feature cards, categories, jobs, newsletter, testimonials, news and download. It recreates the ColorLib **Comport** design (https://colorlib.com/wp/template/comport/, preview: https://preview.colorlib.com/theme/comport/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (extracted from css/style.css)
 
 | Token            | Value                                          | Usage                          |

@@ -2,6 +2,10 @@
 
 Recreation of ColorLib **Accounting** (https://colorlib.com/wp/template/accounting/).
 
+## Purpose
+
+Tally is an accounting & business consulting template with a top bar, navbar, hero, about band, services, stat counters, testimonials and blog. It recreates the ColorLib **Accounting** design (https://colorlib.com/wp/template/accounting/, preview: https://preview.colorlib.com/theme/accounting/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 - **Font:** Montserrat (Google Fonts, weights 300-800)

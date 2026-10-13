@@ -2,6 +2,10 @@
 
 > Recreation of ColorLib "Funder" (https://colorlib.com/wp/template/funder/)
 
+## Purpose
+
+Refuge is a business landing page with a navbar, hero, products, about band, split feature, feature cards, impact, founders, testimonials and footer. It recreates the ColorLib **Funder** design (https://colorlib.com/wp/template/funder/, preview: https://preview.colorlib.com/theme/funder/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Source Design
 
 - **Original:** Funder — Insurance Agency Website Template

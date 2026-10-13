@@ -3,6 +3,10 @@
 Recreation of ColorLib "Signup Form 13"
 (https://colorlib.com/wp/template/signup-form-13/)
 
+## Purpose
+
+Submitbox is a signup form template. It recreates the ColorLib **Signup Form 13** design (https://colorlib.com/wp/template/signup-form-13/, preview: https://preview.colorlib.com/theme/bootstrap/signup-form-13/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 | Token                       | Value                                | Notes                 |

@@ -2,6 +2,10 @@
 
 Recreation of ColorLib Convention (https://colorlib.com/wp/template/convention/)
 
+## Purpose
+
+Colloquium is a conference & event website template. It recreates the ColorLib **Convention** design (https://colorlib.com/wp/template/convention/, preview: https://preview.colorlib.com/theme/convention/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 A single-page conference/event website template with a dark, high-energy design.

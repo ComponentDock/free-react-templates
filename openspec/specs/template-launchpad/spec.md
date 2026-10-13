@@ -1,5 +1,9 @@
 # Launchpad — Recreation of ColorLib Startup
 
+## Purpose
+
+Launchpad is a business landing page with a navbar, hero banner, services, about video, about support, portfolio, call to action and pricing. It recreates the ColorLib **Startup** design (https://colorlib.com/wp/template/startup/, preview: https://preview.colorlib.com/theme/startup/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Metadata
 
 - **Name:** Launchpad

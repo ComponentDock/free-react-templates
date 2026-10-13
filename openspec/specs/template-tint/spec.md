@@ -3,6 +3,10 @@
 > Recreation of ColorLib "Pastel Interior" (https://colorlib.com/wp/template/pastel/)
 > Preview: https://preview.colorlib.com/theme/pastel/
 
+## Purpose
+
+Tint is an interior design studio template with a navbar, hero, about band, portfolio, call to action, numbers, video, services and testimonials. It recreates the ColorLib **Pastel** design (https://colorlib.com/wp/template/pastel/, preview: https://preview.colorlib.com/theme/pastel/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (extracted from preview CSS)
 
 | Token           | Value                                 | Usage                                     |

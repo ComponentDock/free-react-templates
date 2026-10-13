@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Bootstrap Buttons 10" (`https://colorlib.com/wp/template/bootstrap-buttons-10/`) under the original name **BtnClick**.
 
+## Purpose
+
+Btnclick is a bootstrap button component page. It recreates the ColorLib **Bootstrap Buttons 10** design (https://colorlib.com/wp/template/bootstrap-buttons-10/, preview: https://preview.colorlib.com/theme/bb/bootstrap-buttons-10/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
 ## Requirements
 
 ### Requirement 1: Size Variants & Layout

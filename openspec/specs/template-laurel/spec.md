@@ -13,6 +13,10 @@ category: Education
 
 Recreation of ColorLib Educrown (https://colorlib.com/wp/template/educrown/).
 
+## Purpose
+
+Laurel is an education landing page with a navbar, hero, feature cards, about trust, fun facts, courses, about video, testimonials, blog and faqs. It recreates the ColorLib **Educrown** design (https://colorlib.com/wp/template/educrown/, preview: https://preview.colorlib.com/theme/educrown/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (extracted from preview CSS)
 
 - **Font**: Poppins (400, 500, 600, 700) via Google Fonts

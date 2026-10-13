@@ -1,5 +1,9 @@
 # Template: Expo — SEO / Digital Marketing Landing Page
 
+## Purpose
+
+Expo is an SEO / digital marketing landing page. It recreates the ColorLib **Expo** design (https://colorlib.com/wp/template/expo/, preview: https://preview.colorlib.com/theme/expo/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 Expo is a single-page SEO and digital marketing landing page template.

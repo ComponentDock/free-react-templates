@@ -3,6 +3,10 @@
 Recreation of ColorLib "Confpro"
 (https://colorlib.com/wp/template/confpro/).
 
+## Purpose
+
+Converge is a marketing conference landing template with a navbar, hero, countdown, intro, topics, schedule, speakers and footer. It recreates the ColorLib **Confpro** design (https://colorlib.com/wp/template/confpro/, preview: https://preview.colorlib.com/theme/confpro/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (from ColorLib preview CSS)
 
 | Token         | Value            | Usage                                               |

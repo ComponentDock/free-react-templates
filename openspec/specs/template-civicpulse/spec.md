@@ -2,6 +2,10 @@
 
 Recreation of ColorLib Politics (https://colorlib.com/wp/template/politics/)
 
+## Purpose
+
+Civicpulse is a political/party landing template with a top bar, navbar, hero, countdown, services, about band, gallery, stat counters and feedback. It recreates the ColorLib **Politics** design (https://colorlib.com/wp/template/politics/, preview: https://preview.colorlib.com/theme/politics/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from preview CSS)
 
 - **Primary brand color:** #3898f8 (blue)

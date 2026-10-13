@@ -3,6 +3,10 @@
 > **Original ColorLib source:** [Steakshop](https://preview.colorlib.com/theme/steakshop/)
 > **Preview URL:** https://preview.colorlib.com/theme/steakshop/
 
+## Purpose
+
+Grillmark is a steakhouse restaurant template with a navbar, hero, banner bottom, breakfast, lunch, reservation, chef, food gallery and brands. It recreates the ColorLib **Steakshop** design (https://colorlib.com/wp/template/steakshop/, preview: https://preview.colorlib.com/theme/steakshop/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 | Token            | Value                                                                                  | Notes              |

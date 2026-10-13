@@ -3,6 +3,10 @@
 Recreation of ColorLib "Search Form/Bar #04"
 (https://colorlib.com/wp/template/search-form-bar-04/).
 
+## Purpose
+
+Seekmint is a search form bar 04 with a gradient background, heading, search bar and footer. It recreates the ColorLib **Search Form Bar 04** design (https://colorlib.com/wp/template/search-form-bar-04/, preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-04/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Source reference
 
 - **Preview URL:** https://preview.colorlib.com/theme/search-form-bar-04/

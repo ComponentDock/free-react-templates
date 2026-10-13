@@ -1,10 +1,14 @@
 # Template Spec: Crinkle (Accordion 18 Recreation)
 
+## Purpose
+
+Crinkle is a bootstrap accordion component page with an accordion and footer. It recreates the ColorLib **Accordion 18** design (https://colorlib.com/wp/template/accordion-18/, preview: https://preview.colorlib.com/theme/bac/accordion-18/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
 ## Overview
 
 - **New name**: Crinkle
 - **Source**: ColorLib "Bootstrap Accordion V18" (https://colorlib.com/wp/template/accordion-18/)
-- **Preview**: https://preview.colorlib.com/theme/accordion-18/ (was 404 at time of spec; fallback to screenshot)
+- **Preview**: https://preview.colorlib.com/theme/bac/accordion-18/ — ⚠️ Pointer status re-probed 2026-10-13: the bare slug path 404s (at spec time and now); the live demo is the family directory `/theme/bac/accordion-18/` (HTTP 200, 4,272 B), so the screenshot is a supporting reference, not the sole one
 - **Type**: Single-purpose accordion component page (Bootstrap Accordion category)
 - **Package**: @free-react-templates/crinkle
 

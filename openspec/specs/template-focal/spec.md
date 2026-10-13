@@ -3,6 +3,10 @@
 > Recreation of ColorLib "Bato" (https://colorlib.com/wp/template/bato/)
 > Preview: https://preview.colorlib.com/theme/bato/
 
+## Purpose
+
+Focal is a photography portfolio template with a navbar, hero, work gallery, about band, contact and footer. It recreates the ColorLib **Bato** design (https://colorlib.com/wp/template/bato/, preview: https://preview.colorlib.com/theme/bato/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (extracted from preview CSS)
 
 | Token          | Value                                             |

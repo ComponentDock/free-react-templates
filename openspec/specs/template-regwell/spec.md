@@ -3,11 +3,15 @@
 Recreation of ColorLib "Colorlib Reg Form V12"
 (https://colorlib.com/wp/template/colorlib-regform-12/)
 
+## Purpose
+
+Regwell is an education appointment form template with a form card. It recreates the ColorLib **Colorlib Regform 12** design (https://colorlib.com/wp/template/colorlib-regform-12/, preview: https://colorlib.com/etc/regform/colorlib-regform-12/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
 ## Source
 
 - **Original name:** Colorlib Reg Form V12
 - **Slug:** colorlib-regform-12
-- **Preview:** https://preview.colorlib.com/theme/colorlib-regform-12/ (unreachable at build time — screenshot used as sole reference)
+- **Preview:** https://colorlib.com/etc/regform/colorlib-regform-12/ — ⚠️ Pointer status re-probed 2026-10-13: the slug-only `/theme/colorlib-regform-12/` path 404s; the live demo is served under `colorlib.com/etc/regform/` (HTTP 200, 3,301 B)
 - **Description:** Free education appointment form template for online and offline educational platforms and institutions.
 
 ## Design Tokens (extracted from screenshot)

@@ -2,6 +2,10 @@
 
 > Recreation of the ColorLib "Onedu" design for the free-react-templates monorepo.
 
+## Purpose
+
+Scholar is an online courses template. It recreates the ColorLib **Onedu** design (https://colorlib.com/wp/template/onedu/, preview: https://preview.colorlib.com/theme/onedu/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Feature: Navbar
 
 Scenario: Renders logo, search, nav links, cart, and sign-in button

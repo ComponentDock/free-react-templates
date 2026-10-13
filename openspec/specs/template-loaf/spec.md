@@ -1,5 +1,9 @@
 # Loaf — Bakery Template Spec
 
+## Purpose
+
+Loaf is a business landing page with a navbar, hero, about band, categories, video, testimonials, blog and footer. It recreates the ColorLib **Bakery** design (https://colorlib.com/wp/template/bakery/, preview: https://preview.colorlib.com/theme/bakery/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Provenance
 
 - **Source:** ColorLib "Bakery" — https://colorlib.com/wp/template/bakery/

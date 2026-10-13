@@ -4,6 +4,10 @@
 **Preview:** https://preview.colorlib.com/theme/bootstrap/calendar-20/
 **Name:** Calio (new, original)
 
+## Purpose
+
+Calio is a multi-view calendar template with a month view, week view, day view, list view and footer. It recreates the ColorLib **Calendar 20** design (https://colorlib.com/wp/template/calendar-20/, preview: https://preview.colorlib.com/theme/bootstrap/calendar-20/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 - **Background:** #efefef (page), #fff (calendar container)

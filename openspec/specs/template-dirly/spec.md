@@ -2,6 +2,10 @@
 
 > Recreation of ColorLib **Listingo** (https://colorlib.com/wp/template/listingo/)
 
+## Purpose
+
+Dirly is a directory & listing template with a navbar, hero, popular categories and footer. It recreates the ColorLib **Listingo** design (https://colorlib.com/wp/template/listingo/, preview: https://preview.colorlib.com/theme/listingo/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 Dirly is a directory and local attraction finder landing page. It features a

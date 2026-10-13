@@ -1,7 +1,11 @@
 # Spec: Closet — Fashion Boutique Template
 
 Recreation of ColorLib "Little Closet" (https://colorlib.com/wp/template/little-closet/).
-Preview: https://preview.colorlib.com/theme/little-closet/ (404 — falling back to screenshot).
+Preview: https://preview.colorlib.com/theme/littlecloset/ — ⚠️ Pointer status re-probed 2026-10-13: the slug-only path `/theme/little-closet/` still 404s, but the live demo exists at the alias directory `/theme/littlecloset/` (HTTP 200, 37,967 B). The screenshot is a supporting reference, not the sole one.
+
+## Purpose
+
+Closet is a fashion boutique template with a navbar, hero, popular products, newsletter and footer. It recreates the ColorLib **Little Closet** design (https://colorlib.com/wp/template/little-closet/, preview: https://preview.colorlib.com/theme/littlecloset/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
 
 ## Design Tokens (from screenshot analysis)
 
@@ -58,7 +62,7 @@ Preview: https://preview.colorlib.com/theme/little-closet/ (404 — falling back
 
 ## Fidelity Notes
 
-- Screenshot fallback (preview URL returned 404)
+- No screenshot fallback needed: the slug-only preview path 404s, but the live demo is the alias directory `/theme/littlecloset/` (HTTP 200 re-probed 2026-10-13), so the design sheet is authoritative
 - Placeholder images via picsum.photos seeded URLs
 - No ColorLib assets copied
 - Brand icons via inline SVG (lucide-react removed brand icons)

@@ -3,6 +3,10 @@
 > Recreation of ColorLib Listed2 (https://colorlib.com/wp/template/listed2/)
 > Preview: https://preview.colorlib.com/theme/listed2/
 
+## Purpose
+
+Spotlight is a business directory template. It recreates the ColorLib **Listed2** design (https://colorlib.com/wp/template/listed2/, preview: https://preview.colorlib.com/theme/listed2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (extracted from preview CSS)
 
 - **Brand color:** `#7971ea` (purple)

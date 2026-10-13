@@ -9,6 +9,10 @@ preview: https://preview.colorlib.com/theme/menztailor/
 
 Recreation of ColorLib "Menztailor" (https://colorlib.com/wp/template/menztailor/).
 
+## Purpose
+
+Sartorial is a men's tailor shop template with a navbar, hero, clients, services, history, testimonials, visit us and footer. It recreates the ColorLib **Menztailor** design (https://colorlib.com/wp/template/menztailor/, preview: https://preview.colorlib.com/theme/menztailor/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (extracted from preview CSS)
 
 - **Fonts:** "Josefin Sans" (headings), "Montserrat" (body), "Great Vibes" (accent/script)

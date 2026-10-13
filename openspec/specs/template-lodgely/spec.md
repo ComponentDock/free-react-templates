@@ -2,6 +2,10 @@
 
 > Recreation of ColorLib "Sogo" (https://colorlib.com/wp/template/sogo/)
 
+## Purpose
+
+Lodgely is a luxury hotel landing template. It recreates the ColorLib **Colorlib Booking 16** design (https://colorlib.com/wp/template/colorlib-booking-16/, preview: https://colorlib.com/etc/bforms/colorlib-booking-16/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
 ## Design Tokens
 
 - **Font pairing:** Playfair Display (headings, serif) + Roboto (body, sans-serif)

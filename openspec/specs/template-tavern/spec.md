@@ -4,6 +4,10 @@
 **Preview:** https://preview.colorlib.com/theme/eatery/  
 **New name:** Tavern (apps/tavern, @free-react-templates/tavern)
 
+## Purpose
+
+Tavern is a restaurant landing template with a navbar, hero, feature cards, special dishes, our menu, testimonials, blog and footer. It recreates the ColorLib **Eatery** design (https://colorlib.com/wp/template/eatery/, preview: https://preview.colorlib.com/theme/eatery/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (from preview CSS)
 
 | Token            | Value                    | Notes                                          |

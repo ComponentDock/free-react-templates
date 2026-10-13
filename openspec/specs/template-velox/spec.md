@@ -3,6 +3,10 @@
 Recreation of ColorLib "Ronin" (https://colorlib.com/wp/template/ronin/).
 Preview: https://preview.colorlib.com/theme/ronin/
 
+## Purpose
+
+Velox is a personal/freelancer portfolio template with a navbar, hero, welcome about, features services, projects portfolio, testimonials and blog. It recreates the ColorLib **Ronin** design (https://colorlib.com/wp/template/ronin/, preview: https://preview.colorlib.com/theme/ronin/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (extracted from preview CSS)
 
 - **Primary brand color**: `#8490ff` (periwinkle blue)

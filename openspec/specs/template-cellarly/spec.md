@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Liquorstore" (https://colorlib.com/wp/template/liquorstore/)
 
+## Purpose
+
+Cellarly is a liquor store template with a top bar, navbar, hero, feature cards, about band, category grid, product grid and testimonials. It recreates the ColorLib **Liquorstore** design (https://colorlib.com/wp/template/liquorstore/, preview: https://preview.colorlib.com/theme/liquorstore/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (extracted from preview)
 
 - **Font family:** Spectral (serif) — Google Fonts, weights 400/500/600/700

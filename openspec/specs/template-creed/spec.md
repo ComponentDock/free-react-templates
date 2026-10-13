@@ -2,6 +2,10 @@
 
 > Recreation of ColorLib "Faith 2" (https://colorlib.com/wp/template/faith-2/)
 
+## Purpose
+
+Creed is a church website template with a navbar, hero, about band, activities, donate, blog and footer. It recreates the ColorLib **Faith 2** design (https://colorlib.com/wp/template/faith-2/, preview: https://preview.colorlib.com/theme/faith2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
 ## Overview
 
 A church website template featuring a warm tan brand palette, Poppins font,

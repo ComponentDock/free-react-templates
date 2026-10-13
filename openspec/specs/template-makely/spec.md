@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Create" (https://colorlib.com/wp/template/create/).
 
+## Purpose
+
+Makely is a one-page business landing page with a top bar, navbar, hero, feature cards, gallery, about dark, testimonials, services and about band. It recreates the ColorLib **Create** design (https://colorlib.com/wp/template/create/, preview: https://preview.colorlib.com/theme/create/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 Makely is a creative agency / business landing page template with a teal brand

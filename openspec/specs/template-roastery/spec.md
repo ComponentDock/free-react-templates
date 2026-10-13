@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Coffee Blend" (https://colorlib.com/wp/template/coffee-blend/)
 
+## Purpose
+
+Roastery is a coffee shop template. It recreates the ColorLib **Coffee Blend** design (https://colorlib.com/wp/template/coffee-blend/, preview: https://preview.colorlib.com/theme/coffeeblend/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+
 ## Overview
 
 A dark-themed coffee shop landing page with animated statistics, a filterable

@@ -2,6 +2,10 @@
 
 A searchable multiselect dropdown component with live search, tag chips, and US states options.
 
+## Purpose
+
+Optwell is a bootstrap multiselect component page. It recreates the ColorLib **Multiselect 12** design (https://colorlib.com/wp/template/multiselect-12/, preview: https://preview.colorlib.com/theme/bootstrap/multiselect-12/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Source
 
 - Template: Multiselect 12 (Bootstrap Select2 multiselect with search)

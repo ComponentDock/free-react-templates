@@ -4,6 +4,10 @@
 > (https://colorlib.com/wp/template/balay/)
 > Preview: https://preview.colorlib.com/theme/balay/
 
+## Purpose
+
+Timber is an interior design / construction studio template with a navbar, hero, about welcome, services, projects counter and portfolio gallery. It recreates the ColorLib **Balay** design (https://colorlib.com/wp/template/balay/, preview: https://preview.colorlib.com/theme/balay/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 - **Primary**: #FFC300 (golden yellow)

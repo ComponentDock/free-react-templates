@@ -3,6 +3,10 @@
 > Recreation of ColorLib "Safario" (https://colorlib.com/wp/template/safario/)
 > Preview: https://preview.colorlib.com/theme/safario/
 
+## Purpose
+
+Dune is a travel agency landing page with a navbar, hero banner, services, about band, tours, testimonials, search package, blog and footer. It recreates the ColorLib **Safario** design (https://colorlib.com/wp/template/safario/, preview: https://preview.colorlib.com/theme/safario/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 A travel agency landing page with a transparent navbar over a hero banner,

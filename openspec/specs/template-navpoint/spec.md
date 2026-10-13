@@ -3,6 +3,10 @@
 **Source:** ColorLib DirectoryPlus (https://colorlib.com/wp/template/directoryplus/)
 **Preview:** https://preview.colorlib.com/theme/directoryplus/
 
+## Purpose
+
+Navpoint is a directory & city guide template with a navbar, hero, categories, locations, food grid, how it works, clients and footer. It recreates the ColorLib **Directoryplus** design (https://colorlib.com/wp/template/directoryplus/, preview: https://preview.colorlib.com/theme/directoryplus/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens (extracted from preview CSS)
 
 | Token          | Value                  | Usage                          |

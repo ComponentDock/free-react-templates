@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Burger" (https://colorlib.com/wp/template/burger/).
 
+## Purpose
+
+Griddle is a burger restaurant template with a header bar, hero slider, menu grid, about band, video section, testimonials and instagram grid. It recreates the ColorLib **Burger** design (https://colorlib.com/wp/template/burger/, preview: https://preview.colorlib.com/theme/burger/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (extracted from preview CSS)
 
 | Token        | Value      | Notes                                      |

@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Eiser" (https://colorlib.com/wp/template/eiser/).
 
+## Purpose
+
+Cartly is an ecommerce landing page with a top bar, hero banner, featured and new product grids, an offer banner and a newsletter band. It recreates the ColorLib **Eiser** design (https://colorlib.com/wp/template/eiser/, preview: https://preview.colorlib.com/theme/eiser/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Overview
 
 Ecommerce landing page with a green (#71cd14) brand accent, Heebo/Roboto typefaces,

@@ -2,6 +2,10 @@
 
 Recreation of ColorLib "Tailor" (https://colorlib.com/wp/template/tailor/).
 
+## Purpose
+
+Stitchly is a tailor & sewing services template with a navbar, hero, offers, about band, services, video, testimonial, instagram and footer. It recreates the ColorLib **Tailor** design (https://colorlib.com/wp/template/tailor/, preview: https://preview.colorlib.com/theme/tailor/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design Tokens
 
 - Brand color: #BE9278 (warm copper/tan)

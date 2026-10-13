@@ -26,6 +26,10 @@ design_tokens:
 
 Recreation of ColorLib "Charity" (https://colorlib.com/wp/template/charity/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
+## Purpose
+
+Embrace is a charity & donation template. It recreates the ColorLib **Charity** design (https://colorlib.com/wp/template/charity/, preview: https://preview.colorlib.com/theme/charity/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Sections
 
 ### 1. Navbar

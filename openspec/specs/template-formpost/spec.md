@@ -5,6 +5,10 @@ https://colorlib.com/wp/template/contact-form-09/
 Preview (screenshot fallback — preview unavailable):  
 https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-09.jpg
 
+## Purpose
+
+Formpost is a contact form 09 with a contact info, contact form and footer. It recreates the ColorLib **Contact Form 09** design (https://colorlib.com/wp/template/contact-form-09/, preview: https://preview.colorlib.com/theme/bootstrap/contact-form-09/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+
 ## Design tokens (from screenshot analysis)
 
 | Token          | Value            | Notes                             |
