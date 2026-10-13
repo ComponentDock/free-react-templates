@@ -14,6 +14,21 @@ coverage.
   portal `https://preview.colorlib.com/theme/investpro/` returns 404; per
   `preview.colorlib.com/assets/js/products.js` this demo is hosted on
   Cloudflare Pages at `<slug>-colorlib.pages.dev`).
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://investpro-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo family now answers from the ColorLib preview
+host `https://preview.colorlib.com/theme/investpro/` (this prep recorded a
+**404** on that path at prep time — the move onto the preview host happened
+after it, so treat the path as unverified). The host answered the provider's
+bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
+was written, so its own reading could not be re-taken this run — re-probe it
+before relying on it. ⚠️ `apps/tradewell` was built from the mirror's tokens
+before this migration, so the app follows the mirror, not today's preview
+host.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/investpro-template-1770211264537.jpg
 
 ## Design reference (replication findings)

@@ -15,6 +15,17 @@
   `/_astro/Base.*.css` (36.5KB, Tailwind-based) extracted; screenshot at
   `pawpal-colorlib.pages.dev/preview.jpg`). Note: pages.dev previews are
   Astro+Tailwind sites — same token extraction applies.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://pawpal-colorlib.pages.dev/` **no longer resolves** — DNS **NXDOMAIN**
+(`EAI_NONAME`), re-checked 2026-10-13c; all 48 `<slug>-colorlib.pages.dev`
+hosts this family of preps cites are gone. The DOM/CSS evidence below was
+measured from that mirror at prep time and stays the fidelity reference. The
+demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/pawpal/`. It answered **HTTP 200**, 84,204
+B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). The app for this template has not shipped
+yet, so the migration can still be taken into account when it is built.
 - **Visual design (from DOM + CSS tokens):** modern premium pet-care landing
   in **pink** (`#db2777` primary, hover `#be185d`, pink-50 `#fce7f3`
   sections), **Lora** serif display headings over **Poppins** body text,

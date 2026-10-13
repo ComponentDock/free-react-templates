@@ -16,6 +16,18 @@
   ~88 KB HTML + `/_astro/Base.DLlC-awY.css` ~57 KB parsed for tokens; the
   official `https://preview.colorlib.com/theme/learnhub/` returns HTTP 404
   — demo hosted on Cloudflare Pages per the ColorLib preview portal).
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://learnhub-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/learnhub/`. It answered **HTTP 200**,
+84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). ⚠️ `apps/coursely` was built from the
+mirror's tokens before this migration, so the app follows the mirror, not
+today's preview host.
 - **Visual design (screenshot `learnhub-template-1770211181840.jpg`):**
   the ORIGINAL design — dark navy/indigo gradient hero with a subtle
   perspective grid overlay, "Learn Without Limits" in white with

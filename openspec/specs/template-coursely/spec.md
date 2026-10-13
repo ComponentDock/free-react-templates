@@ -36,6 +36,18 @@ TypeScript.
   "Get Started" only, light background) — the live demo DOM is the
   authoritative structure reference; the screenshot records the original
   aesthetic intent.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://learnhub-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/learnhub/`. It answered **HTTP 200**,
+84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). ⚠️ `apps/coursely` was built from the
+mirror's tokens before this migration, so the app follows the mirror, not
+today's preview host.
 - **Section order (1:1, from live demo DOM):**
   1. Navbar: Coursely logo (graduation-cap icon), links Courses,
      Categories, Instructors, Pricing, About, dark-mode toggle, "Get

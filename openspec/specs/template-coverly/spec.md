@@ -32,6 +32,18 @@ TypeScript.
   reference: airy white-to-ice-blue hero, corporate blue (#2563eb) primary +
   vibrant green (#16a34a) accent, no photography (typography + icons/badges),
   dark navy footer.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://shieldguard-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/shieldguard/`. It answered **HTTP 200**,
+84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). ⚠️ `apps/coverly` was built from the mirror's
+tokens before this migration, so the app follows the mirror, not today's
+preview host.
 - **Section order (1:1, from live demo DOM):**
   1. Navbar (white/80 blur, sticky): "ShieldGuard" shield-icon logo + links
      About, Coverage, Why Us, Process, Testimonials, Pricing, Blog, Services,

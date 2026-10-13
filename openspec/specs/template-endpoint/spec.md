@@ -18,6 +18,21 @@ CSS 4 + TypeScript.
   TEMPLATES.md screenshot (`apiforge-template-1771944059634.jpg`) is the
   visual reference; the live DOM + Tailwind classes below are the design
   source of truth.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://apiforge-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo family now answers from the ColorLib preview
+host `https://preview.colorlib.com/theme/apiforge/` (this prep recorded a
+**404** on that path at prep time — the move onto the preview host happened
+after it, so treat the path as unverified). The host answered the provider's
+bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
+was written, so its own reading could not be re-taken this run — re-probe it
+before relying on it. ⚠️ `apps/endpoint` was built from the mirror's tokens
+before this migration, so the app follows the mirror, not today's preview
+host.
 - **Section order (1:1, from the live demo DOM):**
   1. Header (`<header>` sticky, white/80 backdrop-blur, dark variant
      gray-950/80): logo wordmark, nav links Products / Pricing / About /

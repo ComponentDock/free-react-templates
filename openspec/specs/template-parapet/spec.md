@@ -18,6 +18,18 @@ CSS 4 + TypeScript.
   TEMPLATES.md screenshot (`buildcraft-template-1771943678540.jpg`) is the
   visual reference; the design below is reconstructed from the live DOM
   structure and the `_astro/Base.*.css` stylesheet (62 KB parsed for tokens).
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://buildcraft-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/buildcraft/`. It answered **HTTP 200**,
+84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). ⚠️ `apps/parapet` was built from the mirror's
+tokens before this migration, so the app follows the mirror, not today's
+preview host.
 - **Section order (1:1):** Navbar (sticky, blur; links Services, Projects,
   Process, About, Pricing, Blog, Contact; "Get a Quote" button, dark toggle)
   → Hero (dark construction photo + navy `#0f172a` overlay, badge "Trusted

@@ -20,6 +20,21 @@ name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   `preview.colorlib.com/theme/creativex-3/` URL 404s; `products.js`
   (`preview.colorlib.com/assets/js/products.js`) maps the slug to
   `creativex-colorlib.pages.dev/`. The live DOM is the primary reference.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://creativex-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo family now answers from the ColorLib preview
+host `https://preview.colorlib.com/theme/creativex-3/` (this prep recorded a
+**404** on that path at prep time — the move onto the preview host happened
+after it, so treat the path as unverified). The host answered the provider's
+bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
+was written, so its own reading could not be re-taken this run — re-probe it
+before relying on it. ⚠️ `apps/kreativ` was built from the mirror's tokens
+before this migration, so the app follows the mirror, not today's preview
+host.
 - **Screenshot:** `creativex-template-1770211073725.jpg` (2400×1892, verified
   via browser vision). Matches the live DOM: white header with pink "P" logo
   icon + "Pixel Studio" wordmark, centered nav (Work, Services, About,

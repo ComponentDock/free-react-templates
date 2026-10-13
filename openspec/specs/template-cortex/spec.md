@@ -18,6 +18,18 @@ CSS 4 + TypeScript.
   TEMPLATES.md screenshot (`agentforge-template-1771944000058.jpg`) shows a
   dark AI-platform landing with emerald accents; the section-by-section
   structure below is taken from the live DOM + bundled CSS.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://agentforge-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/agentforge/`. It answered **HTTP 200**,
+84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). ⚠️ `apps/cortex` was built from the mirror's
+tokens before this migration, so the app follows the mirror, not today's
+preview host.
 - **Section order (1:1, from the DOM):**
   1. Navbar: logo + Platform, Pricing, Integrations, About, Blog, Contact,
      "Start Building" CTA.

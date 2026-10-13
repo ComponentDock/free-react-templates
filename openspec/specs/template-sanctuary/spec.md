@@ -26,6 +26,21 @@ TypeScript.
   congregation-photo hero, "A Place to Belong" serif headline, purple
   "Plan Your Visit" pill, gold schedule times, glass "Join Us This Week"
   card, cross-in-circle logo with "Love God. Love People." tagline).
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://faithcommunity-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo family now answers from the ColorLib preview
+host `https://preview.colorlib.com/theme/faithcommunity/` (this prep recorded
+a **404** on that path at prep time — the move onto the preview host happened
+after it, so treat the path as unverified). The host answered the provider's
+bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
+was written, so its own reading could not be re-taken this run — re-probe it
+before relying on it. ⚠️ `apps/sanctuary` was built from the mirror's tokens
+before this migration, so the app follows the mirror, not today's preview
+host.
 - **Visual design (from screenshot + live demo):** modern, welcoming church
   landing page. Hero = full-screen deep near-black (`bg-gray-900`) with a
   large congregation photo (`object-cover opacity-40`) behind centered serif

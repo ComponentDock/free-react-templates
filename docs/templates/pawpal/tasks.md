@@ -12,6 +12,18 @@
   and variants) 404s — the portal's `products.js` manifest maps `#pawpal` to
   this Cloudflare Pages demo, which is the reference. Stylesheet:
   `/_astro/Base.BfUsFLRD.css` (Tailwind-based).
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://pawpal-colorlib.pages.dev/` **no longer resolves** — DNS **NXDOMAIN**
+(`EAI_NONAME`), re-checked 2026-10-13c; all 48 `<slug>-colorlib.pages.dev`
+hosts this family of preps cites are gone. The DOM/CSS evidence below was
+measured from that mirror at prep time and stays the fidelity reference. The
+demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/pawpal/`. It answered **HTTP 200**, 84,204
+B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). ⚠️ `apps/pawpal` was built from the mirror's
+tokens before this migration, so the app follows the mirror, not today's
+preview host.
 - **Structure observed (1:1, section order):**
   1. Header — fixed top nav (transparent → solid): Services, About, Gallery,
      Team, Contact + "Book Now".

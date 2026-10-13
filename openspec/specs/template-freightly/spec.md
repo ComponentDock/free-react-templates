@@ -27,6 +27,21 @@ TypeScript.
   TEMPLATES.md screenshot (`logitrans-template-1770211309698.jpg`) is the
   visual reference: dark blue logistics hero with a shipment-tracking
   widget, blue (#3b82f6) primary with amber (#f59e0b) accents.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://logitrans-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo family now answers from the ColorLib preview
+host `https://preview.colorlib.com/theme/logitrans/` (this prep recorded a
+**404** on that path at prep time — the move onto the preview host happened
+after it, so treat the path as unverified). The host answered the provider's
+bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
+was written, so its own reading could not be re-taken this run — re-probe it
+before relying on it. ⚠️ `apps/freightly` was built from the mirror's tokens
+before this migration, so the app follows the mirror, not today's preview
+host.
 - **Section order (1:1, from live demo DOM):**
   1. Navbar: "SwiftCargo" logo, links Services, Why Us, Calculator,
      Testimonials, Contact, phone (1-800-SWIFT-GO), "Get a Quote" button;

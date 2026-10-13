@@ -24,6 +24,20 @@ TypeScript.
   (500+ Weddings · 12 Years · 5-Star Rated), large rounded moody bride photo
   below. The demo's brand is "Forever & Always"; the recreation renames the
   studio to "Vows".
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://foreveralways-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo family now answers from the ColorLib preview
+host `https://preview.colorlib.com/theme/forever-always/` (this prep recorded
+a **404** on that path at prep time — the move onto the preview host happened
+after it, so treat the path as unverified). The host answered the provider's
+bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
+was written, so its own reading could not be re-taken this run — re-probe it
+before relying on it. ⚠️ `apps/vows` was built from the mirror's tokens before
+this migration, so the app follows the mirror, not today's preview host.
 - **Visual design (from screenshot + live demo):** elegant, romantic wedding
   planner landing page. **Light theme with a dark-mode toggle** (the demo is
   a full Tailwind `dark:` variant site — every section has `dark:bg-gray-950`

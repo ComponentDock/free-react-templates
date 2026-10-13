@@ -10,6 +10,18 @@
 - **Demo DOM analyzed:** https://agentforge-colorlib.pages.dev/
   (HTTP 200; `preview.colorlib.com/theme/agentforge/` returns 404 — demo
   hosted on Cloudflare Pages per the ColorLib preview portal).
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://agentforge-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/agentforge/`. It answered **HTTP 200**,
+84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
+(hand-verified for `shieldnet`). ⚠️ `apps/cortex` was built from the mirror's
+tokens before this migration, so the app follows the mirror, not today's
+preview host.
 - **Visual design (from DOM + bundled CSS + screenshot):** light-default AI
   platform landing with class-based dark mode (matching the original's
   `dark:` classes), Manrope font, emerald green primary

@@ -13,6 +13,18 @@
   `preview.colorlib.com/theme/hopefoundation/` returns 404 — the ColorLib
   preview portal maps this slug to `hopefoundation-colorlib.pages.dev/`. Do
   not redo this lookup.
+
+⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
+`https://hopefoundation-colorlib.pages.dev/` **no longer resolves** — DNS
+**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
+`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
+DOM/CSS evidence below was measured from that mirror at prep time and stays
+the fidelity reference. The demo itself moved onto the ColorLib preview host
+`https://preview.colorlib.com/theme/hopefoundation/`. It answered **HTTP
+200**, 84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved
+demos (hand-verified for `shieldnet`). ⚠️ `apps/congregate` was built from the
+mirror's tokens before this migration, so the app follows the mirror, not
+today's preview host.
 - **Preview CSS:** `https://hopefoundation-colorlib.pages.dev/_astro/Base.9L0KyljF.css`
   (Tailwind v4 output; tokens extracted below).
 
