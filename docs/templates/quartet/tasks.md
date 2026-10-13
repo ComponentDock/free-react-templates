@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 14" — fourteenth of the "Bootstrap
   Checkboxes (20)" series (source: https://colorlib.com/wp/template/checkbox-14/).
-  TEMPLATES.md line 744 — mark that line `[x]` when done (single row).
+  TEMPLATES.md line 746 — mark that line `[x]` when done (single row).
 - **Preview URL caveat:** `https://preview.colorlib.com/theme/checkbox-14/`
   is **404** — these demos live under the Bootstrap mega-theme. Use
   `https://preview.colorlib.com/theme/bootstrap/checkbox-14/` (HTTP 200,

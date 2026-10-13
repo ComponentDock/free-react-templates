@@ -5,7 +5,7 @@
 Tide is a single-page yacht-charter / sea-travel landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Waterboat" yacht charter website template (see TEMPLATES.md,
-line 529 [Bootstrap section]; duplicate rows at line 1225 [Business] and 3015
+line 529 [Bootstrap section]; duplicate rows at line 1227 [Business] and 3015
 [Travel] — same source, ONE implementation; mark EVERY copy `[x]` when done),
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -77,7 +77,7 @@ headings, Dancing Script serif section labels and Muli body text.
 
 - **Original:** ColorLib "Waterboat" — yacht charter / sea travel website
   template (source: https://colorlib.com/wp/template/waterboat/). Listed in
-  TEMPLATES.md line 529 (Bootstrap section); duplicate rows at lines 1225
+  TEMPLATES.md line 529 (Bootstrap section); duplicate rows at lines 1227
   (Business) and 3015 (Travel) — same source, ONE implementation (line 529 is
   the claim row; mark ALL THREE `[x]` after merge).
   Screenshot: `waterboat-free-template.jpg` (1200×946, viewed in the browser):

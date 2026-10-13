@@ -7,8 +7,8 @@
 
 - **Original:** ColorLib "Webhost" — hosting-provider landing page (source:
   https://colorlib.com/wp/template/webhost/). TEMPLATES.md has THREE rows:
-  line 530 (category Bootstrap), line 2099 (category Landing Page), and
-  line 3066 (category Web Hosting) — mark ALL THREE `[x]` when done. No
+  line 530 (category Bootstrap), line 2101 (category Landing Page), and
+  line 3068 (category Web Hosting) — mark ALL THREE `[x]` when done. No
   other spec on main maps to this slug (grep-checked before prepping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/webhost/
   (HTTP 200, 43,339 bytes; title "WebHost - Free Bootstrap 4 Template by

@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Modal 02" — free split sign-in/sign-up modal
   component template (source: https://colorlib.com/wp/template/modal-02/).
-  TEMPLATES.md row: line 801 (**Bootstrap Modals (20)**, header line 798).
+  TEMPLATES.md row: line 803 (**Bootstrap Modals (20)**, header line 800).
   The `modal-02` slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the
   default `https://preview.colorlib.com/theme/modal-02/` returns **404** —
@@ -153,7 +153,7 @@ from-[#c859ff] to-[#ffab8c]` (45deg = `to-tr` in Tailwind; the source
 6. **Gate + ship** — `scripts/verify-app.sh vestibule` (typecheck + lint +
    100% coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single TEMPLATES.md
-   row (line 801) `[x]` with `https://vestibule.free.componentdock.com` +
+   row (line 803) `[x]` with `https://vestibule.free.componentdock.com` +
    `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Photographer" — free photography-portfolio template
   (source: https://colorlib.com/wp/template/photographer/). TEMPLATES.md rows:
-  line 475 (Photographer category) + duplicate `- [ ]` rows at lines 1134,
-  1804, 2462 — **all four rows** must be marked `[x]` with the surge URL on
+  line 475 (Photographer category) + duplicate `- [ ]` rows at lines 1136,
+  1806, 2464 — **all four rows** must be marked `[x]` with the surge URL on
   shipping.
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-14):**
   `https://preview.colorlib.com/theme/photographer/` (HTTP 200, 20.1 KB,

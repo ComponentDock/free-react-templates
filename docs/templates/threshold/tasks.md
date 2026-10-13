@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Modal 04" — free single-page promo-code sale-modal
   component template (source: https://colorlib.com/wp/template/modal-04/).
-  TEMPLATES.md row: line 803 (**Bootstrap Modals (20)**, header line 798).
+  TEMPLATES.md row: line 805 (**Bootstrap Modals (20)**, header line 800).
   The `modal-04` slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-04/` returns **404** — the REAL
@@ -137,7 +137,7 @@ readme:status`; confirm `injectUiSource()` in `vite.config.ts` (copy the
 7. **Gate + ship** — `scripts/verify-app.sh threshold` (typecheck + lint +
    100% coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single TEMPLATES.md
-   row (line 803) `[x]` with `https://threshold.free.componentdock.com` +
+   row (line 805) `[x]` with `https://threshold.free.componentdock.com` +
    `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

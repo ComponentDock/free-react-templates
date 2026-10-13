@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Modal 14" — free single-page coupon-offer modal
   component template (source: https://colorlib.com/wp/template/modal-14/).
-  TEMPLATES.md row: line 813 (**Bootstrap Modals (20)**, header line 798). The
+  TEMPLATES.md row: line 815 (**Bootstrap Modals (20)**, header line 800). The
   `modal-14` slug appears exactly once (no dup rows to mark). Demo
   `<title>`/heading is the generic "Modal #4".
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default

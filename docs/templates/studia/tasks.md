@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Onedu" — an e-learning course-directory landing
   one-pager (page title "Education | Template"; source:
   https://colorlib.com/wp/template/onedu/, appears 2× in TEMPLATES.md — line
-  612 Education (154) + line 1650 Education (155); mark ALL `[x]` when done).
+  612 Education (154) + line 1652 Education (155); mark ALL `[x]` when done).
   The app name MUST differ from the source — hence **Studia** (Latin for
   "studies"; single lowercase word, no collision with `apps/`,
   `openspec/specs/`, or `docs/templates/` — verified 2026-08-13).

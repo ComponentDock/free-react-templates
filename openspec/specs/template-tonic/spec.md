@@ -5,8 +5,8 @@
 Tonic is a single-page fitness-club / personal-training template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Slim" design (see TEMPLATES.md — Bootstrap category, line 497; the
-same source is DUPLICATED at lines 1875 and 2358 — ALL THREE rows must be
-marked `[x]` when done; note that "Slim2" at lines 498/1167/1876 is a
+same source is DUPLICATED at lines 1877 and 2360 — ALL THREE rows must be
+marked `[x]` when done; note that "Slim2" at lines 498/1169/1876 is a
 DIFFERENT ColorLib template, `wp/template/slim2/`, not this one), built under
 a NEW name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.

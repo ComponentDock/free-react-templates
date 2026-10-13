@@ -6,7 +6,7 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Cvportfolio" (TEMPLATES.md line 2391; section "## Portfolio (10)" at line 2388).
+- **ColorLib item:** "Cvportfolio" (TEMPLATES.md line 2391; section "## Portfolio (89)" at line 2490).
   The `wp/template/cvportfolio/` slug appears exactly ONCE in TEMPLATES.md (no dup rows).
 - **Source URL:** https://colorlib.com/wp/template/cvportfolio/
 - **Preview URL — REACHABLE (verified 2026-09-26 by direct fetch):**

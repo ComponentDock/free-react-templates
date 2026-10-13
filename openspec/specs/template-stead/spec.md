@@ -5,7 +5,7 @@
 Stead is a single-page real estate & property-listing website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Findstate" website template design (see TEMPLATES.md — appears
-THREE times: line 395, line 1014, and line 2589; mark ALL THREE rows `[x]`
+THREE times: line 395, line 1016, and line 2591; mark ALL THREE rows `[x]`
 when shipped), built under a different name with the monorepo stack: Vite +
 React 19 + Tailwind CSS 4 + TypeScript.
 
@@ -316,6 +316,6 @@ info.
       coverage tests + build)
 - [ ] All spec scenarios implemented (`openspec/specs/template-stead/spec.md`)
 - [ ] Visual pass vs live demo `https://preview.colorlib.com/theme/findstate/`
-- [ ] TEMPLATES.md lines 395, 1014, AND 2589 all marked `[x]`
+- [ ] TEMPLATES.md lines 395, 1016, AND 2589 all marked `[x]`
 - [ ] `public/CNAME` = `stead.free.componentdock.com`; `homepage` =
       `https://stead.free.componentdock.com`

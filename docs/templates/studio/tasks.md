@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Carousel #10" — creative-studio single-hero landing
   from the Bootstrap Carousels series (source:
   https://colorlib.com/wp/template/carousel-20/). TEMPLATES.md has ONE row:
-  line 727 (section "## Bootstrap Carousels (20)") — no duplicate rows
+  line 729 (section "## Bootstrap Carousels (20)") — no duplicate rows
   (grep-checked before prepping). NEW name **Studio** (free in `apps/` and
   `openspec/specs/` — `studia` exists, `studio` does not).
 - **Preview URL quirk:** the standard path 404s. The real demo is
@@ -100,13 +100,13 @@
    - what differs (rename, picsum seeds, lucide chevrons, inert CTA instead
      of free-template.co link, added Component Dock footer, no navbar/footer
      in source).
-6. After deploy: mark TEMPLATES.md line 727 `[x]` + surge URL
+6. After deploy: mark TEMPLATES.md line 729 `[x]` + surge URL
    (`https://studio.free.componentdock.com`), `npm run readme:status`,
-   conventional commit. (Line 727 is the only row for this slug.)
+   conventional commit. (Line 729 is the only row for this slug.)
 
 ## Verification
 
 - [ ] `scripts/verify-app.sh studio` (typecheck + lint + 100% coverage tests + build)
 - [ ] Spec scenarios all implemented (`openspec/specs/template-studio/spec.md`)
 - [ ] Visual pass vs live demo `https://preview.colorlib.com/theme/bootstrap/carousel-20/`
-- [ ] TEMPLATES.md line 727 `[x]` with `https://studio.free.componentdock.com`
+- [ ] TEMPLATES.md line 729 `[x]` with `https://studio.free.componentdock.com`

@@ -9,7 +9,7 @@
 ## Source
 
 - TEMPLATES.md: **Checkbox 12** — https://colorlib.com/wp/template/checkbox-12/
-  (line 742; single row, no duplicate rows)
+  (line 744; single row, no duplicate rows)
 - Preview: `https://preview.colorlib.com/theme/bootstrap/checkbox-12/` — HTTP
   200, 16,837 bytes. **The naive `https://preview.colorlib.com/theme/checkbox-12/`
   returns HTTP 404** — the "Checkbox NN" demos are sub-pages of ColorLib's
@@ -119,7 +119,7 @@ pointer-events-none`; disabled+checked `bg-[#007bff] opacity-20`
    labels in order; state colors per scenario; toggle behavior on rows 1–2;
    disabled rows ignore clicks; no navbar/footer/images. **100% coverage
    (lines/functions/branches/statements)** via `scripts/verify-app.sh duo`.
-9. PR to main, squash-merge immediately; TEMPLATES.md line 742 `[ ]`→`[x]`
+9. PR to main, squash-merge immediately; TEMPLATES.md line 744 `[ ]`→`[x]`
    - surge URL + `npm run readme:status` (implementer stream does this).
 
 ## Pitfalls

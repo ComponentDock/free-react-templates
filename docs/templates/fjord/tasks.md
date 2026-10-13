@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 03" — the THIRD of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-03/).
-  Single occurrence in TEMPLATES.md (line 710, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 712, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Fjord**
   (third of the carousel-series renames; lineage from the Wanderlust/Faraway
   preps: carousel-01 → wanderlust, carousel-02 → faraway, carousel-03 →

@@ -83,7 +83,7 @@ line-height: 110px; border-radius: 80px 200px 200px 362px` (organic
 
 - **Original:** ColorLib "Uza" — digital marketing / agency template
   (source: https://colorlib.com/wp/template/uza/). Listed in TEMPLATES.md
-  line 525 (Bootstrap section); dup rows at lines 1216 (Business) and
+  line 525 (Bootstrap section); dup rows at lines 1218 (Business) and
   1396 (Consulting) — same source, one implementation.
 - **Live preview URL:** https://preview.colorlib.com/theme/uza/ (title
   "Uza - Free Bootstrap 4 Template by Colorlib"; reachable via curl).

@@ -7,7 +7,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Book Keeping" (TEMPLATES.md line 915; section
-  "## Business" at line 896).
+  "## Business" at line 879).
 - **Source URL:** https://colorlib.com/wp/template/book-keeping/
 - **Preview URL — UNREACHABLE (404 verified 2026-09-07):**
   `https://preview.colorlib.com/theme/book-keeping/` returns HTTP 404.

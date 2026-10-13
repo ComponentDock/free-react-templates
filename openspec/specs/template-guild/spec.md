@@ -5,7 +5,7 @@
 Guild is a single-page gaming-community blog website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "The Quest" gaming blog template design (see TEMPLATES.md,
-line 512 — duplicate row at line 1821 under another category, same template,
+line 512 — duplicate row at line 1823 under another category, same template,
 ONE app only), built under a different name ("Guild" — a gaming-community
 word, matching the source's "Gaming Community Website" positioning) with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No

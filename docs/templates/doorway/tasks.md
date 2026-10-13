@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Modal 05" — free single-page signup-form modal
   component template (source: https://colorlib.com/wp/template/modal-05/).
-  TEMPLATES.md row: line 804 (**Bootstrap Modals (20)**, header line 798).
+  TEMPLATES.md row: line 806 (**Bootstrap Modals (20)**, header line 800).
   The `modal-05` slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-05/` returns **404** — the REAL
@@ -134,7 +134,7 @@ readme:status`; confirm `injectUiSource()` in `vite.config.ts` (copy the
 7. **Gate + ship** — `scripts/verify-app.sh doorway` (typecheck + lint +
    100% coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single
-   TEMPLATES.md row (line 804) `[x]` with
+   TEMPLATES.md row (line 806) `[x]` with
    `https://doorway.free.componentdock.com` + `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

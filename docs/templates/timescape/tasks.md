@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 19" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-19/). Single occurrence
-  in TEMPLATES.md (line 703, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 705, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Timescape** (series renames so far:
   chronos, metronome, kalends, span, equinox, interval, lunar, epoch, dyad).
 - **Preview URL analyzed:** `https://preview.colorlib.com/theme/bootstrap/calendar-19/`
@@ -123,7 +123,7 @@
 9. **Gate + ship** — `scripts/verify-app.sh timescape`; PR
    `feat/template-timescape` with source slug + preview URL + tokens + what
    differs (renames, placeholders, no FullCalendar); squash-merge
-   immediately; bookkeeping `[x]` on TEMPLATES.md line 703 + surge URL
+   immediately; bookkeeping `[x]` on TEMPLATES.md line 705 + surge URL
    `https://timescape.free.componentdock.com` + `npm run readme:status`.
 
 ## Verification checklist

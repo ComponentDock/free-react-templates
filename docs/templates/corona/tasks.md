@@ -8,8 +8,8 @@
 - **Original:** ColorLib "Eclipse" — Eclipse Education, Free Bootstrap
   Education Website Template (source:
   https://colorlib.com/wp/template/eclipse/). Listed in TEMPLATES.md
-  under **Bootstrap (216)** (line 379; duplicate rows at line 1627 under
-  Education (43) and line 2040 under Landing Page (96) — same template,
+  under **Bootstrap (216)** (line 379; duplicate rows at line 1629 under
+  Education (43) and line 2042 under Landing Page (96) — same template,
   one app only).
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/eclipse/`. The root IS the

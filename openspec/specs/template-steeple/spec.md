@@ -6,7 +6,7 @@ Steeple is a single-page church & religious community website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Re/born" design (see TEMPLATES.md — listed under Bootstrap, line
 486, first unchecked item whose prep did not exist on main; the same slug also
-appears as a duplicate at line 1302), built under the monorepo stack: Vite +
+appears as a duplicate at line 1304), built under the monorepo stack: Vite +
 React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a clean, minimalist church landing page: a fixed white navbar

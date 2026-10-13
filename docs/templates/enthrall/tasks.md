@@ -6,8 +6,8 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Colorlib Wizard 14" (TEMPLATES.md line 851; section
-  "## Bootstrap Wizards (30)" at line 844). The
+- **ColorLib item:** "Colorlib Wizard 14" (TEMPLATES.md line 853; section
+  "## Bootstrap Wizards (30)" at line 846). The
   `wp/template/colorlib-wizard-14/` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows).
 - **Source URL:** https://colorlib.com/wp/template/colorlib-wizard-14/
@@ -279,6 +279,6 @@ recreate as lucide glyphs (see mapping). No image screening required.
         email-required message typo fixed, hover on medallion labels,
         `min-height` content area, no fake network — inline success
         message instead of the source's alert, Component Dock footer).
-13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 851 `[x]` + surge
+13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 853 `[x]` + surge
         URL (`https://enthrall.free.componentdock.com`), `npm run
     readme:status`, push.

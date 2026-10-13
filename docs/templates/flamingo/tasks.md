@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Fantom" — blog template
   (source: https://colorlib.com/wp/template/fantom/). Listed in TEMPLATES.md
-  (Blog section, line 260; duplicate at line 1705 — mark EVERY copy `[x]`
+  (Blog section, line 260; duplicate at line 1707 — mark EVERY copy `[x]`
   when done).
 - **Preview URL:** https://preview.colorlib.com/theme/fantom/ (title
   "Fantom Blog"). Fetched: `/tmp/fantom-preview.html` (29 KB),

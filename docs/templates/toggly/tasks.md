@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 06" — sixth of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-06/).
-  TEMPLATES.md line 736 — mark that line `[x]` when done (single row, no
+  TEMPLATES.md line 738 — mark that line `[x]` when done (single row, no
   duplicates). NOTE: each item in this series is a DIFFERENT variant design —
   Checkbox 06 is the SWITCH-TOGGLE variant (two iOS-style toggle switches),
   NOT the Tickwell notification-filter pill variant, NOT the Checkly mint
@@ -109,5 +109,5 @@ defaultChecked: true }]`; each switch = `<label>` wrapping a visually
    pink track + pink knob right), click toggles (colors + knob slide), toggle
    back, keyboard (Space) toggle, aria-label, responsive column, footer link.
 7. Gate: `scripts/verify-app.sh toggly`; PR description with source (ColorLib
-   Checkbox 06), preview URL, tokens, diffs; mark TEMPLATES.md line 736
+   Checkbox 06), preview URL, tokens, diffs; mark TEMPLATES.md line 738
    `[x]` + surge URL + `npm run readme:status`.

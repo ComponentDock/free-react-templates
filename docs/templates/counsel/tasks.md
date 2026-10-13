@@ -18,7 +18,7 @@
   icomoon + flaticon. Brand name used in the source copy: "Solicitor".
   TEMPLATES.md category: **Bootstrap 5 (89)**, first occurrence at line 625
   (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the `solicitor`
-  slug also appears at line 2133 (**Lawyer (23)**) — BOTH `- [ ]` rows of
+  slug also appears at line 2135 (**Lawyer (23)**) — BOTH `- [ ]` rows of
   the SAME template; ONE implementation covers both rows (mark all `[x]`
   with the same surge URL at bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-14):**

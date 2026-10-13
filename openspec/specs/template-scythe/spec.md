@@ -44,8 +44,8 @@ copied; the 8 preset tags are the same public tech names).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Multiselect 11". Listed in TEMPLATES.md under
-  **Bootstrap Multiselect (20)** (section header line 821; row at line
-  833). Free multiselect tags component template. The `multiselect-11`
+  **Bootstrap Multiselect (20)** (section header line 823; row at line
+  835). Free multiselect tags component template. The `multiselect-11`
   slug appears exactly ONCE in TEMPLATES.md (no dup rows to mark). Series
   siblings already prepped: Multiselect 01 → Picker, 02 → Sifter, 03 →
   Winnow, 04 → Cull, 05 → Glean, 06 → Garner, 07 → Reap, 08 → Pluck (ALL

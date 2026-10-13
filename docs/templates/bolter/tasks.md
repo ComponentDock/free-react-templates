@@ -11,7 +11,7 @@ the live-verified DOM structure, and the Gherkin scenarios.
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-15.jpg` (1200×972, AVIF;
   shows heading "Multi-Select #5", button reading **"12 selected"**, open panel with 3 columns,
   selected rows LIGHT-BLUE)
-- Source page: `https://colorlib.com/wp/template/multiselect-15/` (TEMPLATES.md line 837, ONE occurrence)
+- Source page: `https://colorlib.com/wp/template/multiselect-15/` (TEMPLATES.md line 839, ONE occurrence)
 - Engine: **jQuery-MultiSelect v2.4.18 by Patrick Springstubbe (nobleclem)**
   - jQuery 3.3.1. Siblings 01–08 (Picker/Sifter/Winnow/Cull/Glean/Garner/
     Reap/Pluck) are Semantic UI; 09 (Thresh) is Select2 + DARK; 10 (Sickle)

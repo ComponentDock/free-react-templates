@@ -23,7 +23,7 @@ Information, Follow us with round social icons).
   Footer" series (footer-only component demos; the page body is a 70vh
   filler strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-01/. TEMPLATES.md has ONE
-  copy (line 777, `- [ ]` unchecked). This prep: Bootstrap Footer 01 →
+  copy (line 779, `- [ ]` unchecked). This prep: Bootstrap Footer 01 →
   **Colophon**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (documented for future preps):** the standard
   `https://preview.colorlib.com/theme/bootstrap-footer-01/` returns **HTTP

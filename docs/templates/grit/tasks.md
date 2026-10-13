@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Stamina" — free gym/fitness website template
   (source: https://colorlib.com/wp/template/stamina/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 502; duplicate rows at lines
-  1179, 1879, 2361 — same template, one app only).
+  1181, 1881, 2363 — same template, one app only).
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/stamina/`. DOM fetched
   (`/tmp/stamina.html`, 72,691 bytes) + stylesheet `css/style.css`

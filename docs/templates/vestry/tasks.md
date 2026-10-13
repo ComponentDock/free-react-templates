@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Modal 11" — free single-page information-modal
   component template (source:
-  https://colorlib.com/wp/template/modal-11/). TEMPLATES.md row: line 810
-  (**Bootstrap Modals (20)**, header line 798). The `modal-11` slug appears
+  https://colorlib.com/wp/template/modal-11/). TEMPLATES.md row: line 812
+  (**Bootstrap Modals (20)**, header line 800). The `modal-11` slug appears
   exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-11/` returns **404** — the REAL
@@ -122,7 +122,7 @@ pb-0` — bold title (e.g. "Vestry") + a close × (`lucide-react` `X`,
 7. **Gate + ship** — `scripts/verify-app.sh vestry` (typecheck + lint + 100%
    coverage tests + build), `npm run spec:validate`, then the standard PR →
    immediate squash merge flow; bookkeeping marks the single TEMPLATES.md row
-   (line 810) `[x]` with `https://vestry.free.componentdock.com` +
+   (line 812) `[x]` with `https://vestry.free.componentdock.com` +
    `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

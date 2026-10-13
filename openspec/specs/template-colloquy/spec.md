@@ -5,7 +5,7 @@
 Colloquy is a single-page conference/event website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "The Conference" event website template design (see
-TEMPLATES.md, Event category, line 511 — duplicate row at line 1688 under
+TEMPLATES.md, Event category, line 511 — duplicate row at line 1690 under
 another category, same template, ONE app only), built under a different name
 ("Colloquy" — an academic conference/meeting, an event-brand word) with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No

@@ -95,7 +95,7 @@ illustration replaced by a picsum placeholder under the same cyan band).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 18". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 817). Free
+  Modals (20)** (section header line 800; row at line 819). Free
   promo/onboarding-modal component template. The `modal-18` slug appears
   exactly ONCE in TEMPLATES.md (no dup rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-16):** the default

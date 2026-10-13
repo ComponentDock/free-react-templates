@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 10" — tenth of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-10/).
-  TEMPLATES.md line 740 — mark that line `[x]` when done (single row, no
+  TEMPLATES.md line 742 — mark that line `[x]` when done (single row, no
   duplicates). NOTE: each item in this series is a DIFFERENT variant design —
   Checkbox 10 is the **happy/sad MOOD-TOGGLE** variant (one big smiley icon
   with a "happy"/"sad" word), NOT the Taskly strikethrough task-checklist
@@ -118,5 +118,5 @@
    applied), keyboard (Space) toggle, label-associated input accessible
    name, responsive column, footer link.
 7. Gate: `scripts/verify-app.sh moodly`; PR description with source (ColorLib
-   Checkbox 10), preview URL, tokens, diffs; mark TEMPLATES.md line 740
+   Checkbox 10), preview URL, tokens, diffs; mark TEMPLATES.md line 742
    `[x]` + surge URL + `npm run readme:status`.

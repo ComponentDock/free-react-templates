@@ -9,7 +9,7 @@
   template (source: https://colorlib.com/wp/template/hairsal/). TEMPLATES.md
   has **three Hairsal rows**: line 198 is `[x]` and already shipped as
   **Tressly** (free-react-templates-tressly.surge.sh) — do NOT touch it; line
-  219 `- [ ]` is THIS target; line 1032 is a `- [ ]` duplicate — also leave
+  219 `- [ ]` is THIS target; line 1034 is a `- [ ]` duplicate — also leave
   it (only line 219 is claimed/updated at bookkeeping time). Recreation uses
   the NEW name **Strand** (a single lock of hair — hair-salon motif; single
   word, no collision with `ls apps/` or spec folders; the shipped Tressly
@@ -142,13 +142,13 @@ big.popup-vimeo` circular play (icon-play) → Vimeo popup.
 - [ ] PR: `feat/template-strand`, description with source (Hairsal), preview
       URL, tokens, renames; merge immediately with `gh pr merge --squash
     --delete-branch`; mark TEMPLATES.md line 219 `[x]` + surge URL +
-      `npm run readme:status` (lines 198/1032 stay — 198 is tressly's, 1032
+      `npm run readme:status` (lines 198/1034 stay — 198 is tressly's, 1032
       is an untouched duplicate).
 
 ## Pitfalls
 
 - TEMPLATES.md has **three Hairsal rows**: line 198 `[x]` (already shipped
-  as **Tressly**), line 219 `- [ ]` (THIS template), line 1032 `- [ ]`
+  as **Tressly**), line 219 `- [ ]` (THIS template), line 1034 `- [ ]`
   (duplicate). Only touch line 219 at bookkeeping time (exact line-targeted
   edits only; the row also gains the surge link like line 198).
 - Buttons are **square** (`border-radius: 0`) — hero CTA is black, NOT the

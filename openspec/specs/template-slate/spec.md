@@ -25,7 +25,7 @@ reconstructs the below-the-fold business-landing sections per the category
 conventions.
 
 Slate appears FOUR times in TEMPLATES.md (all rows are the same source slug):
-line 535, line 1232, line 1497, and line 2101 — implement ONE app and mark
+line 535, line 1234, line 1499, and line 2103 — implement ONE app and mark
 ALL FOUR rows `[x]` at bookkeeping.
 
 ## Design reference (replication findings)
@@ -237,6 +237,6 @@ The system SHALL render the footer (reconstructed, repo standard).
 - [ ] Visual pass vs the TEMPLATES.md screenshot
       (`wordpress-business-themes1.jpg`) — split hero, slate `#6A6F82`,
       bottom-corner wordmark + hamburger, no top navbar
-- [ ] TEMPLATES.md lines 535, 1232, 1497, AND 2101 all marked `[x]`
+- [ ] TEMPLATES.md lines 535, 1234, 1499, AND 2101 all marked `[x]`
 - [ ] `public/CNAME` = `slate.free.componentdock.com`; `homepage` =
       `https://slate.free.componentdock.com`

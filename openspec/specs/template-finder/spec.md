@@ -11,7 +11,7 @@ Finder is a single-page photography-portfolio website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Nissa" design (see TEMPLATES.md — listed THREE times, all
 three rows are the same source slug: line 465 in the Bootstrap section,
-line 1110 in the Business section, and line 2458 in the Photography
+line 1112 in the Business section, and line 2460 in the Photography
 section; implement ONE app and mark ALL THREE rows `[x]` at bookkeeping),
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -34,8 +34,8 @@ types (no ColorLib assets copied).
 
 - **Original:** ColorLib "Nissa" — free Bootstrap photography portfolio
   website template (source: https://colorlib.com/wp/template/nissa/;
-  listed THREE times in TEMPLATES.md — line 465 [Bootstrap], line 1110
-  [Business], line 2458 [Photography], all `- [ ]`, same slug → one app,
+  listed THREE times in TEMPLATES.md — line 465 [Bootstrap], line 1112
+  [Business], line 2460 [Photography], all `- [ ]`, same slug → one app,
   mark all three rows `[x]`).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/nissa/ (HTTP
   200, full rendered DOM, 45.1KB HTML + `css/style.css` (19.3KB custom) +

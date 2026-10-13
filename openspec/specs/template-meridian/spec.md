@@ -5,7 +5,7 @@
 Meridian is a single-page business-consulting template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Consulting" design (see TEMPLATES.md — Bootstrap category,
-line 364; the slug also repeats at line 952 under Business — one recreation
+line 364; the slug also repeats at line 954 under Business — one recreation
 covers both checklist rows), built under a different name with the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
@@ -344,4 +344,4 @@ columns and a copyright bar.
 - [ ] PR description includes: source template (Consulting), preview URL
       (`https://preview.colorlib.com/theme/consulting/`), design tokens,
       renames, placeholder images, distinct testimonial/service copy, and
-      the dup row (line 952) covered by the same recreation
+      the dup row (line 954) covered by the same recreation

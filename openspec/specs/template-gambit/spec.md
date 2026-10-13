@@ -5,7 +5,7 @@
 Gambit is a single-page gaming / esports website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Comodo" (Comodo Games) design (see TEMPLATES.md, Bootstrap
-category, line 362; duplicate rows at lines 1816 Gaming and 2029 Landing
+category, line 362; duplicate rows at lines 1818 Gaming and 2029 Landing
 Page — one recreation covers all three rows), built under a different name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

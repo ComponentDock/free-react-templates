@@ -203,5 +203,5 @@
 - [ ] `scripts/verify-app.sh clinica` until green (typecheck + lint +
       vitest 100% + build).
 - [ ] Implementer: mark `[~]` → `[x]` BOTH dup rows in TEMPLATES.md
-      (Bootstrap line 447, Medical line 2246) + surge URL +
+      (Bootstrap line 447, Medical line 2248) + surge URL +
       `npm run readme:status`, PR + immediate squash merge.

@@ -16,7 +16,7 @@
   Brand name used in the source copy: "Saita". TEMPLATES.md category:
   **Bootstrap 5 (89)**, first occurrence at line 623 (`- [ ]`, source NOT
   shipped anywhere). DUP-ROW TRAP: the `saita` slug also appears at line
-  1156 (**Business (365)**) — both `- [ ]` rows of the SAME template; ONE
+  1158 (**Business (365)**) — both `- [ ]` rows of the SAME template; ONE
   implementation covers both rows (mark all `[x]` with the same surge URL at
   bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-14):**

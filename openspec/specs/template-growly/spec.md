@@ -18,7 +18,7 @@ TypeScript.
 
 The source appears TWO times in TEMPLATES.md (dup-row trap): line 620
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one)
-and line 1151 (**Business (365)**) — both `- [ ]` rows of the SAME
+and line 1153 (**Business (365)**) — both `- [ ]` rows of the SAME
 template. ONE implementation covers both rows (mark all `[x]` with the
 same surge URL at bookkeeping time). Source NOT shipped anywhere (no `[x]`
 row, no app folder).

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Fancy" — creative agency website template
   (source: https://colorlib.com/wp/template/fancy/). Listed in TEMPLATES.md
-  (Bootstrap section, line 392; duplicates at lines 1006 Business, 2047
+  (Bootstrap section, line 392; duplicates at lines 1008 Business, 2047
   Landing Page, 2320 One Page — mark EVERY copy `[x]` when done).
 - **Live preview:** https://preview.colorlib.com/theme/fancy/ — reachable
   (HTTP 200). HTML saved at `/tmp/fancy.html` (28.9 KB), stylesheet at

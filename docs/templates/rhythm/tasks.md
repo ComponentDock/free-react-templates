@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Djoz" — free DJ / music artist template
   (source: https://colorlib.com/wp/template/djoz/). Listed in TEMPLATES.md
-  under the Bootstrap category (line 375); duplicate row at line 2264 under
+  under the Bootstrap category (line 375); duplicate row at line 2266 under
   Music (19) — same template, ONE app only. (Music also lists "Dj" — a
   DIFFERENT ColorLib template, and "Deejee" — already shipped as
   `apps/decibel`; Djoz is untouched.)

@@ -14,7 +14,7 @@
   template (page `<title>` in the preview reads **"Macro"** — a ColorLib
   typo; the template page + screenshot say "Marco"). Listed in TEMPLATES.md
   under **Bootstrap (216)** line 444 with an IDENTICAL dup row in **Food
-  Drinks (31)** line 2686 (both `- [ ]`, nothing shipped) — when shipped,
+  Drinks (31)** line 2688 (both `- [ ]`, nothing shipped) — when shipped,
   mark BOTH rows `[x]` with the paprika surge URL. The recreation brands
   itself **Paprika**.
 - **Preview DOM analyzed (verified 2026-08-11):**
@@ -94,7 +94,7 @@
     reservation submit capitalize.
 - **⚠ KEY TRAPS:**
   - TEMPLATES.md has TWO Marco rows (Bootstrap line 444 + Food Drinks
-    line 2686) — mark BOTH `[x]` at ship time or the nightly dup-row
+    line 2688) — mark BOTH `[x]` at ship time or the nightly dup-row
     scan will flag an orphan.
   - Page title in the preview is "Macro" (source typo) — use "Marco" in
     docs/PR text, never copy the typo.

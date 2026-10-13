@@ -10,8 +10,8 @@
   calendar-with-events Bootstrap widget template (source:
   https://colorlib.com/wp/template/calendar-08/). ColorLib description: "A
   trendy free calendar with events Bootstrap template that offers a user to
-  add an event to their desired date." TEMPLATES.md row: line 692
-  (**Bootstrap Calendars (20)**, header line 683). The `calendar-08` slug
+  add an event to their desired date." TEMPLATES.md row: line 694
+  (**Bootstrap Calendars (20)**, header line 685). The `calendar-08` slug
   appears exactly once (no dup rows to mark). Family siblings "Calendar
   01"–"Calendar 07" were prepped as **Planner**, **Monthly**, **Almanac**,
   **Solstice**, **Triptych**, **Ephemeris**, **Twilight** — each is a
@@ -234,4 +234,4 @@
       design tokens used, deviations (Lato simplification, white count
       text, visible error color, no red stripe, natural-height events
       list, paraphrased seed data)
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` for "Calendar 08" (line 692) + surge URL + homepage + `npm run readme:status`; commit + push
+- [ ] After merge: TEMPLATES.md `[~]` → `[x]` for "Calendar 08" (line 694) + surge URL + homepage + `npm run readme:status`; commit + push

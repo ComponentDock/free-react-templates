@@ -11,7 +11,7 @@
   theme; single lowercase word, no collision with `ls apps/` or existing
   specs). Cargo appears in TEMPLATES.md at line 357 (Bootstrap section,
   first unchecked item without a prep — the claim) and as a duplicate at
-  line 925 (Transport/Logistics section). No spec existed for cargo on
+  line 927 (Transport/Logistics section). No spec existed for cargo on
   origin/main; the slug is not shipped anywhere (no `[x]` row references
   it).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/cargo/`
@@ -197,6 +197,6 @@
     --delete-branch`; if main checked out elsewhere, omit --delete-branch
       and `git push origin --delete` the remote).
 - [ ] After merge: `[~]`→`[x]` in TEMPLATES.md for Cargo line 357 (+
-      duplicate line 925 — check whether the checklist convention marks
+      duplicate line 927 — check whether the checklist convention marks
       all dup rows; check sibling history first), add surge URL,
       `npm run readme:status`, commit `chore:` and push.

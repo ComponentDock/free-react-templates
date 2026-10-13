@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Consulting" — free Bootstrap 4 consulting-agency
   website template (source: https://colorlib.com/wp/template/consulting/;
   preview title "Consulting &mdash; Website Template by Colorlib"). Listed
-  in TEMPLATES.md under Bootstrap (line 364; slug repeats at line 952 under
+  in TEMPLATES.md under Bootstrap (line 364; slug repeats at line 954 under
   Business — one recreation covers both dup rows). New name: **meridian**
   (a line of longitude / peak — fits a consulting brand; "vantage" is
   unavailable: `apps/vantage` + `template-vantage` are the ColorLib

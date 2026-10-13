@@ -5,7 +5,7 @@
 Vendio is a single-page e-commerce / online-shop website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Sublime" website template design (see TEMPLATES.md, Bootstrap
-category, line 506 — duplicate row at line 1605, same template, one app
+category, line 506 — duplicate row at line 1607, same template, one app
 only), built under a different name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib
 references in app code — provenance lives in this spec, TEMPLATES.md, and the

@@ -29,14 +29,14 @@ images via `https://picsum.photos/seed/curio-<n>/<w>/<h>`, icons from
 > NAMING NOTE: the ColorLib source name "Personal" is FORBIDDEN as the app
 > name. **Curio** is the new, original name. Source slug + preview URL are
 > recorded below. The slug `personal` appears TWICE in TEMPLATES.md (line
-> 472 under **Bootstrap (216)** and line 2413 under **Personal (53)** — a
+> 472 under **Bootstrap (216)** and line 2415 under **Personal (53)** — a
 > duplicate category row); BOTH rows must be marked `[x]` with the same
 > surge URL at ship time.
 
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Personal". Listed in TEMPLATES.md at line 472
-  (category **Bootstrap (216)**) and DUPLICATE row line 2413 (category
+  (category **Bootstrap (216)**) and DUPLICATE row line 2415 (category
   **Personal (53)**) — same slug, same preview screenshot. Free one-page
   personal portfolio/CV template.
 - **Live preview DOM — REACHABLE (verified 2026-08-14):**
@@ -501,7 +501,7 @@ column on mobile.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md: mark BOTH `personal` rows `[~]` → `[x]` + surge URL +
       `npm run readme:status` done by implementer at ship time (line 472 —
-      Bootstrap (216) category, AND duplicate row line 2413 — Personal
+      Bootstrap (216) category, AND duplicate row line 2415 — Personal
       (53) category; same URL `https://curio.free.componentdock.com`)
 - [ ] PR description MUST note: (a) source template + preview URL
       (`https://preview.colorlib.com/theme/personal/`), (b) design tokens,

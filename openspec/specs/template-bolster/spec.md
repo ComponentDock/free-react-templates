@@ -6,7 +6,7 @@ Bolster is a single-page business-consulting / business-loans landing page
 template in the free-react-templates monorepo. It is an original React
 recreation of the ColorLib free "Victor" design (see TEMPLATES.md — listed in
 the Bootstrap 5 (89) category at line 635, with a duplicate row in the
-Business (365) category at line 1219; both rows `- [ ]`), built under a
+Business (365) category at line 1221; both rows `- [ ]`), built under a
 DIFFERENT name — **Bolster** (a support / strengthen-themed word; single
 lowercase word, no collision with `apps/`, `openspec/specs/`,
 `docs/templates/` or TEMPLATES.md — verified 2026-08-14) per the monorepo

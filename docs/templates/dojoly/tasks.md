@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Nova" — a KIDS MARTIAL ARTS / karate school
   landing page (page title "Nova — Free Bootstrap 5 Website Template by
   Colorlib"; source: https://colorlib.com/wp/template/nova/, appears 2× in
-  TEMPLATES.md — line 608 (Bootstrap 5), line 1869; mark ALL `[x]` when
+  TEMPLATES.md — line 608 (Bootstrap 5), line 1871; mark ALL `[x]` when
   done). NOTE: the app name "nova" is already taken (Error 404 19 → nova),
   so the new name MUST differ — hence Dojoly.
 - **Preview DOM analyzed:** https://preview.colorlib.com/theme/nova/

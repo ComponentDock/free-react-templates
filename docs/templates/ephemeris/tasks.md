@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Calendar 06" — free HTML calendar widget page
   (page `<title>` "Calendar 06"; source:
   https://colorlib.com/wp/template/calendar-06/). Listed in TEMPLATES.md
-  under **Bootstrap Calendars (20)** (line 690; no duplicate row). Part of a
+  under **Bootstrap Calendars (20)** (line 692; no duplicate row). Part of a
   20-item Calendar N series (01–20) — the others are separate templates and
   must NOT be mixed in. Series names already used: 01→planner, 02→monthly,
   03→almanac, 04→solstice, 05→triptych. **06 → ephemeris** (this one).

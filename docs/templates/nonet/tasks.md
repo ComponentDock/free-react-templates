@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 19" — nineteenth of the "Bootstrap
   Checkboxes (20)" series (source: https://colorlib.com/wp/template/checkbox-19/).
-  TEMPLATES.md line 749 — mark that line `[x]` when done (single row, no dups).
+  TEMPLATES.md line 751 — mark that line `[x]` when done (single row, no dups).
 - **Preview URL caveat:** `https://preview.colorlib.com/theme/checkbox-19/`
   is **404** (verified 2026-08-15) — these demos live under the Bootstrap
   mega-theme. Use `https://preview.colorlib.com/theme/bootstrap/checkbox-19/`
@@ -149,6 +149,6 @@ left: 4px`** (the inner box shrinks to 12×0 → knob centers on the green
 7. [ ] `scripts/verify-app.sh nonet` (typecheck + lint + 100% coverage +
        build); PR `feat/template-nonet` → merge immediately
        (`gh pr merge --squash --delete-branch`).
-8. [ ] Bookkeeping: TEMPLATES.md line 749 `[~]`→`[x]` + surge URL,
+8. [ ] Bookkeeping: TEMPLATES.md line 751 `[~]`→`[x]` + surge URL,
        `npm run readme:status`, push. (Implementer's job — NOT the prep
        stream.)

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 05" — fifth of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-05/).
-  TEMPLATES.md has ONE copy (line 758). Series siblings: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 760). Series siblings: Dropdown 01 was
   prepped as **Menubar**, Dropdown 02 as **Popmenu**, Dropdown 03 as
   **Skycast**, Dropdown 04 as **Chime** (see `docs/templates/menubar/`,
   `docs/templates/popmenu/`, `docs/templates/skycast/`,
@@ -115,7 +115,7 @@ rgba(0,0,0,.05)` — last row none, `white-space: normal`, hover
    lint + knip + fallow + 100% coverage + build); commit conventionally,
    open PR to main, merge immediately with `gh pr merge --squash
 --delete-branch`, then bookkeeping: `[x]` + surge URL + homepage in
-   TEMPLATES.md line 758 + `npm run readme:status`, push.
+   TEMPLATES.md line 760 + `npm run readme:status`, push.
 
 ## Fidelity pitfalls (learned from the Dropdown series)
 

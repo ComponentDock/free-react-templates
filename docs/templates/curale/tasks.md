@@ -11,7 +11,7 @@
 - **Original:** ColorLib "Medino" — free medical / clinic website template,
   Bootstrap 4 based (Bootstrap category, 216 templates). The recreation
   brands itself **Curale**. TEMPLATES.md line 449 (`- [x]`), with a dup row
-  at line 2252 (both unprepped, unshipped — prep stream leaves both alone).
+  at line 2254 (both unprepped, unshipped — prep stream leaves both alone).
 - **Live preview DOM analyzed (verified 2026-08-11):**
   `https://preview.colorlib.com/theme/medino/` (HTTP 200, ~30.8 KB HTML +
   `assets/css/style.css` ~43 KB — reachable, NO fallback needed). The

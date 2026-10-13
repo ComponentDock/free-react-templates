@@ -6,7 +6,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Gardening" (TEMPLATES.md — appears 3×: lines 587,
-  1025, and 2108; all rows point to the same source, one prep covers all;
+  1027, and 2108; all rows point to the same source, one prep covers all;
   verified with `grep -c 'wp/template/gardening/'` = 3).
 - **Source URL:** https://colorlib.com/wp/template/gardening/
 - **Preview URL:** https://preview.colorlib.com/theme/gardening/ — **HTTP 200,

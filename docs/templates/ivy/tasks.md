@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Fox" — free responsive Bootstrap 5 university /
   education website template (source: https://colorlib.com/wp/template/fox/).
-  TEMPLATES.md has TWO copies (line 403 — Bootstrap category, line 1640 —
+  TEMPLATES.md has TWO copies (line 403 — Bootstrap category, line 1642 —
   Education category; mark BOTH `[x]` when done). Both rows use the CORRECT
   screenshot `fox-free-template.jpg`.
 - **Demo DOM analyzed:** REACHABLE — `https://preview.colorlib.com/theme/fox/`

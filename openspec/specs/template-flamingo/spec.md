@@ -4,7 +4,7 @@
 
 Flamingo is a single-page blog template in the free-react-templates monorepo.
 It is an original React recreation of the ColorLib free "Fantom" blog website
-template (see TEMPLATES.md, Blog section, line 260; duplicate at line 1705 —
+template (see TEMPLATES.md, Blog section, line 260; duplicate at line 1707 —
 mark EVERY copy `[x]` when done), built under a different name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
@@ -38,7 +38,7 @@ rows); page background white; footer background `#222222`. Fonts: Roboto 500
 
 - **Original:** ColorLib "Fantom" — blog template
   (source: https://colorlib.com/wp/template/fantom/). Listed in TEMPLATES.md
-  line 260 (Blog section); duplicate at line 1705 — mark every copy `[x]`
+  line 260 (Blog section); duplicate at line 1707 — mark every copy `[x]`
   when done. Screenshot: `fantom-free-template.jpg` (1200×946, reviewed
   visually in the browser).
 - **Live preview URL:** https://preview.colorlib.com/theme/fantom/ (title

@@ -7,7 +7,7 @@
 - **Original:** ColorLib "Startup 2" — free startup & agency HTML template
   (page title "StartUp"; source: https://colorlib.com/wp/template/startup-2/).
   Listed in TEMPLATES.md under Bootstrap category (line 503; duplicate rows
-  at line 2089 and line 2861 — same template, one app only).
+  at line 2089 and line 2863 — same template, one app only).
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/startup2/`. DOM fetched
   (`/tmp/startup2-preview.html`, 32,498 bytes) + stylesheet `css/style.css`

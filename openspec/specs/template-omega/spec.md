@@ -39,7 +39,7 @@ Capstone/footer-13). No navbar, no hero, no images, no behavior beyond the
   Footer" series (footer-only component demos; the page body is a filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-14/. TEMPLATES.md has ONE
-  copy (line 790, `- [ ]` unchecked). This prep: Bootstrap Footer 14 →
+  copy (line 792, `- [ ]` unchecked). This prep: Bootstrap Footer 14 →
   **Omega**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon/terminus/capstone
   preps):** `https://preview.colorlib.com/theme/bootstrap-footer-14/` returns

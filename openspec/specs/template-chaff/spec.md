@@ -75,7 +75,7 @@ knowledge).
 - **Original:** ColorLib "Multiselect 18" (marketing title in the page title
   tag: "Multi Select #8"; the h2 reads **"Multi-Select #8 (Limit selection on
   groups)"**). Listed in TEMPLATES.md under **Bootstrap Multiselect (20)**
-  (section header line 821; row at line 840 — `multiselect-18` appears
+  (section header line 823; row at line 842 — `multiselect-18` appears
   exactly ONCE in TEMPLATES.md, no dup rows to mark). Series siblings already
   prepped: 01 → Picker, 02 → Sifter, 03 → Winnow, 04 → Cull (Semantic UI);
   05 → Glean, 06 → Garner, 07 → Reap, 08 → Pluck (Semantic UI variants);

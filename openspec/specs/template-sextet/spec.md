@@ -37,7 +37,7 @@ in widget AND color.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 16" — the sixteenth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 746 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 748 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 11–15
   were prepped as Quadly / Duo / Trio / Quartet / Quintet.
   **NUMBERING QUIRK (verified 2026-08-15):** the preview server hosts TWO
@@ -307,6 +307,6 @@ with a main landmark and a document title.
       `\e5ca` glyph)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 746 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 748 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

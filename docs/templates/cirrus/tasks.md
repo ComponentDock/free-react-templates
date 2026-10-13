@@ -9,7 +9,7 @@
   website template (source: https://colorlib.com/wp/template/cloudtemplate/;
   preview title "Cloud Template - Free Bootstrap 4 Template by Colorlib").
   Listed in TEMPLATES.md under Bootstrap (line 361; slug repeats at line
-  3051 — one recreation covers both dup rows). New name: **cirrus** (a
+  3053 — one recreation covers both dup rows). New name: **cirrus** (a
   high-altitude cloud — fits the cloud brand; "cloud" itself is unavailable:
   `apps/cloud` + `template-cloud` are the ColorLib "Error 404 V14" page).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/cloudtemplate/`
@@ -140,5 +140,5 @@ Sans`; shared button treatment (radius 5px, green + pink variants), pill
    immediately with `gh pr merge --squash --delete-branch`.
 8. PR description must include: source (Cloudtemplate), preview URL
    (`https://preview.colorlib.com/theme/cloudtemplate/`), design tokens,
-   renames, placeholder images, fixed source typos, dup-row note (line 3051
+   renames, placeholder images, fixed source typos, dup-row note (line 3053
    covered by the same recreation).

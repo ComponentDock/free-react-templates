@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Traveland" — free travel / tour booking HTML
   template (source: https://colorlib.com/wp/template/traveland/). Listed
   in TEMPLATES.md under the Bootstrap category (line 518); duplicate rows
-  at line 1494 under Creative (55) and line 3004 under Travel (44) —
+  at line 1496 under Creative (55) and line 3006 under Travel (44) —
   same template, ONE app only. Mark ALL THREE rows `[x]` after merge.
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/traveland/`.
   DOM fetched (`/tmp/prep-traveland/preview.html`, 39,485 bytes, title

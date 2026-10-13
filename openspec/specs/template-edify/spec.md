@@ -5,7 +5,7 @@
 Edify is a single-page online-learning / education platform template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Courses" website template design (see TEMPLATES.md, Bootstrap
-category, line 366; duplicate row at line 1626), built under a different name
+category, line 366; duplicate row at line 1628), built under a different name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Design reference (replication findings)

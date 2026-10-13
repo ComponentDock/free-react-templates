@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Car Rental" (source:
   https://colorlib.com/wp/template/car-rental/). TEMPLATES.md **TWO rows**:
-  line 922 (## Business (365)) AND line 2952 (## Transportation 22)) — a
+  line 924 (## Business (365)) AND line 2952 (## Transportation 22)) — a
   duplicate listing; mark BOTH `[x]` with the SAME surge URL when done.
   Do NOT confuse with "Carrent" (already shipped as `drively`) or
   "Carrentals" (a separate `- [ ]` item, slug `carrentals`).
@@ -127,4 +127,4 @@
    `/theme/carrental/` no-hyphen caveat), design tokens (#fab700 gold,
    Poppins, overlays), what differs (picsum placeholders, lucide icons,
    static carousels, Component Dock footer), and the dup-row note (mark
-   BOTH TEMPLATES.md lines 922 + 2952 `[x]` with the same surge URL).
+   BOTH TEMPLATES.md lines 924 + 2952 `[x]` with the same surge URL).

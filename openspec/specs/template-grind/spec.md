@@ -16,7 +16,7 @@ source's motivational workout theme) per the monorepo naming mandate, with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 TEMPLATES.md has TWO copies of this item (line 401 in `## Bootstrap (216)` and
-line 1849 in `## Health Fitness (72)` — duplicate rows); ONE recreation
+line 1851 in `## Health Fitness (72)` — duplicate rows); ONE recreation
 (Grind) covers both; the implementer marks BOTH rows `[x]`. NOTE: do NOT
 conflate with the other gym-family ColorLib templates (Fitnessgym → vigor,
 Fitnesstrainer → ironvault, Fitfloss → swole, Fitzone 2 → gains, Gutim, Gymer,

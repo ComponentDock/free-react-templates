@@ -5,7 +5,7 @@
 Sattva is a single-page yoga studio website template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib "Yogalax" entry in
 TEMPLATES.md (first occurrence: Beauty category, line ~236; duplicated under
-Fashion ~line 1737 and Health Fitness ~line 1893), built under a different name
+Fashion ~line 1740 and Health Fitness ~line 1895), built under a different name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Design reference (replication findings)

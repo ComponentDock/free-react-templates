@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 16" — the SIXTEENTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-16/).
-  Single occurrence in TEMPLATES.md (line 723, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 725, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Procida**
   (sixteenth of the carousel-series renames; lineage: carousel-01 →
   wanderlust, carousel-02 → faraway, carousel-03 → fjord, carousel-04 →

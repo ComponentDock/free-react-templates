@@ -12,8 +12,8 @@
 - **Original:** ColorLib "Dentista" — free Dentist / Medical website
   template (page title "Denstista - Free Bootstrap 4 Template by
   Colorlib" — source typo). TEMPLATES.md has THREE dup rows for the same
-  source: line 374 under **Bootstrap (216)**, line 971 under **Business
-  (365)** and line 1509 under **Dentist (14)** — same source, ONE item;
+  source: line 374 under **Bootstrap (216)**, line 973 under **Business
+  (365)** and line 1511 under **Dentist (14)** — same source, ONE item;
   mark ALL THREE `[x]` at ship time. The recreation brands itself
   **Enamel**.
 - **Preview URL (verified 2026-08-10):**

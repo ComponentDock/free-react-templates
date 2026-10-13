@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-01/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 777, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 779, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 01 → **Colophon** (a publisher's
   emblem/inscription block at the end of a book — fits a footer template; no
   collision with `apps/`, `openspec/specs/`, `docs/templates/` — verified
@@ -127,7 +127,7 @@
       exact link sets, 5 socials with aria-labels, responsive classes
       present)
 - [ ] `npm run verify:app colophon` passes; commit `feat: add colophon …`;
-      PR + immediate squash merge; then TEMPLATES.md bookkeeping — line 777
+      PR + immediate squash merge; then TEMPLATES.md bookkeeping — line 779
       (Bootstrap Footer 01) → `[x]` + surge URL +
       `npm run readme:status`
 
@@ -151,5 +151,5 @@
       focus-visible rings
 - [ ] Roboto Google Fonts link; no images; no ColorLib anywhere in
       `apps/colophon`
-- [ ] `npm run verify:app colophon` green; TEMPLATES.md line 777 bookkept
+- [ ] `npm run verify:app colophon` green; TEMPLATES.md line 779 bookkept
       `[x]`

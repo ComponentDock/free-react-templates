@@ -5,7 +5,7 @@
 Paragon is a single-page interior-design / architecture studio homepage
 template in the free-react-templates monorepo. It is an original React
 recreation of the ColorLib free "Ideal" design (see TEMPLATES.md, line 419 —
-Bootstrap category; the same template is also listed at lines 1048 (Business)
+Bootstrap category; the same template is also listed at lines 1050 (Business)
 and 1970 (Interior Design) — mark all three `[x]` when done), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.

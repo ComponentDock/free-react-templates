@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 02" — the SECOND of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-02/).
-  Single occurrence in TEMPLATES.md (line 709, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 711, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Faraway**
   (second of the carousel-series renames; lineage from the Wanderlust prep:
   carousel-01 → wanderlust, carousel-02 → faraway, carousel-03 → fjord —

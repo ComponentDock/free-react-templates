@@ -58,7 +58,7 @@ equivalents; photos by picsum placeholders).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Royal" (Royal Hotel). Listed in TEMPLATES.md
-  at **line 491** under the R section AND duplicated at **line 1926**
+  at **line 491** under the R section AND duplicated at **line 1928**
   (identical row, same `wp/template/royal/` URL — the slug appears
   exactly TWICE; when the template ships, BOTH rows must be marked
   `[x]` + the same surge URL).

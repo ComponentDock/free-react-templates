@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Sublime" — free e-commerce / online-shop website
   template (source: https://colorlib.com/wp/template/sublime/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 506; duplicate row at line
-  1605 — same template, one app only).
+  1607 — same template, one app only).
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/sublime/`.
   DOM fetched (`/tmp/sublime.html`, 22,680 bytes) + stylesheets
   `styles/main_styles.css` (`/tmp/sublime-main.css`, 24,496 bytes) and

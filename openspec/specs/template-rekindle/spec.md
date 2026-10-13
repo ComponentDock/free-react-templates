@@ -16,7 +16,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   popular posts, newsletter, share), and a black 4-column footer
   (source: https://colorlib.com/wp/template/revive/).
   TEMPLATES.md has TWO copies of this item (line 283 under Blog — mark it `[x]`
-  when done; line 2211 under Magazine — mark it `[x]` too; both copies must be
+  when done; line 2213 under Magazine — mark it `[x]` too; both copies must be
   updated).
 - **Preview URL:** https://preview.colorlib.com/theme/revive/
   (HTTP 200, 45.8 KB DOM, fetched 2026-08-08). The live DOM is the primary
@@ -337,7 +337,7 @@ main landmark, and a document title.
       Playfair + Open Sans, black footer, picsum placeholders seeded
       `rekindle-<n>`, no copied assets
 - [ ] TEMPLATES.md: mark BOTH Revive copies (`[x]` — line 283 under Blog and
-      line 2211 under Magazine) and append the live surge URL to both
+      line 2213 under Magazine) and append the live surge URL to both
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/rekindle`); `grep -c "free-react-templates/rekindle"`
       package-lock.json >= 1

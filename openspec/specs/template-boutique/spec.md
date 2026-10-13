@@ -5,8 +5,8 @@
 Boutique is a single-page fashion eCommerce store template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Theplaza" eCommerce template design (see TEMPLATES.md, line 513
-under **Bootstrap (216)** — duplicate rows at line 1606 under **Ecommerce
-(56)** and line 1734 under **Fashion (43)**, same template, ONE app only),
+under **Bootstrap (216)** — duplicate rows at line 1608 under **Ecommerce
+(56)** and line 1736 under **Fashion (43)**, same template, ONE app only),
 built under a different name ("Boutique" — a fashion-boutique word, matching
 the source's fashion-store positioning) with the monorepo stack: Vite + React
 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib references in app code

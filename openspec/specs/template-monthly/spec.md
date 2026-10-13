@@ -85,7 +85,7 @@ recreation SHALL make them functional).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Calendar V02" (listing title "Calendar 02"). Listed
-  in TEMPLATES.md under **Bootstrap Calendars (20)** (line 686). Free
+  in TEMPLATES.md under **Bootstrap Calendars (20)** (line 688). Free
   Bootstrap calendar widget template (author Colorlib; post dated December
   2020; license CC BY 3.0). The `calendar-02` slug appears exactly once in
   TEMPLATES.md (no duplicate rows to mark). The 20-item Bootstrap Calendars
@@ -483,4 +483,4 @@ convention on every template (the original has no footer).
       Tailwind tokens; no ColorLib strings anywhere in `apps/monthly`
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`
       done by implementer at ship time (mark the "Calendar 02" row, line
-      686 — Bootstrap Calendars (20) category; single row, no dups)
+      688 — Bootstrap Calendars (20) category; single row, no dups)

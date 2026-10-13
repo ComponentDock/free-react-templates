@@ -25,7 +25,7 @@ second CHECKED (lavender track, purple knob slid right, "ON" inside the track).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 07" — the seventh of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 737 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 739 — mark that line `[x]`
   when done; single row). Sibling items Checkbox 01–06 were prepped as
   Tickbox / Picks / Ticktag / Checkly / Tickwell / Toggly; each item in the
   series is a DIFFERENT design variant (this one is the two-switch
@@ -293,5 +293,5 @@ convention on every template (the original has no footer).
       0.4s halo puff); honors `prefers-reduced-motion`
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
-      by implementer at ship time (mark the "Checkbox 07" row, line 737 —
+      by implementer at ship time (mark the "Checkbox 07" row, line 739 —
       Bootstrap Checkboxes category, single row)

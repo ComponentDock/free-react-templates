@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 06" — the SIXTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-06/).
-  Single occurrence in TEMPLATES.md (line 713, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 715, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Cannes** (sixth of
   the carousel-series renames; lineage from the Wanderlust prep:
   carousel-01 → wanderlust, carousel-02 → faraway, carousel-03 → fjord,

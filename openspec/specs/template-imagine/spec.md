@@ -5,7 +5,7 @@
 Imagine is a single-page creative-agency landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Creative Agency 2" website template design (see TEMPLATES.md,
-Bootstrap category, line 368 — dup rows also at lines 961 and 1457 under
+Bootstrap category, line 368 — dup rows also at lines 963 and 1459 under
 other categories), built under a different name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
@@ -46,7 +46,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
     "We are Design and Development Agency based on California" design with a
     works grid, black services section, counters, Instagram strip). Do NOT
     use that preview — it belongs to the other template.
-  - "Creative Agency" v1 (`creative-agency`, TEMPLATES.md line 1456) has a
+  - "Creative Agency" v1 (`creative-agency`, TEMPLATES.md line 1458) has a
     different screenshot (`digilab-free-template.jpg`, the "DIGILAB" green
     design). Also not our reference.
 - **Visual design (from screenshot + live reference DOM):** clean agency

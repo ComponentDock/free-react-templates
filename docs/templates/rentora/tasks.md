@@ -10,8 +10,8 @@
   (coined from "rent" + aura/ora — a property/rental brand feel; single
   lowercase word, no collision with `ls apps/` or existing specs). Rental
   appears in TEMPLATES.md at line 489 (Bootstrap section, first unchecked
-  item without a prep — the claim) and as duplicates at line 1149 (Business)
-  and line 2608 (Real Estate). No spec existed for rental on origin/main;
+  item without a prep — the claim) and as duplicates at line 1151 (Business)
+  and line 2610 (Real Estate). No spec existed for rental on origin/main;
   the slug is not shipped anywhere (no `[x]` row references it).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/rental/`
   (HTTP 200, ~27.5KB) + stylesheet `css/style.css` (146KB) plus

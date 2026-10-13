@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Calendar 07" — free "photo-backdrop" Bootstrap
   calendar widget template (source: https://colorlib.com/wp/template/calendar-07/).
-  TEMPLATES.md row: line 691 (**Bootstrap Calendars (20)**). The
+  TEMPLATES.md row: line 693 (**Bootstrap Calendars (20)**). The
   `calendar-07` slug appears exactly once (no dup rows to mark). ColorLib
   description: "A catchy free vertical calendar template based on the
   powerful Bootstrap Framework for complete flexibility." Family siblings
@@ -196,4 +196,4 @@ Tue Wed Thu Fri Sat` header, December 2020 grid (starts Tuesday), **19
       07), preview URL (`https://preview.colorlib.com/theme/bootstrap/calendar-07/`),
       design tokens used, deviations (picsum photo, session-local
       selection, non-interactive blanks, no `min-width` hack)
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` for "Calendar 07" (line 691) + surge URL + homepage + `npm run readme:status`; commit + push
+- [ ] After merge: TEMPLATES.md `[~]` → `[x]` for "Calendar 07" (line 693) + surge URL + homepage + `npm run readme:status`; commit + push

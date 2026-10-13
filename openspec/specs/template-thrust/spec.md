@@ -5,7 +5,7 @@
 Thrust is a single-page startup/creative-agency website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Startup" website template design (see TEMPLATES.md, Bootstrap
-category, line 503 — duplicate rows at lines 2089 and 2861, same template,
+category, line 503 — duplicate rows at lines 2089 and 2863, same template,
 one app only), built under a different name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib
 references in app code — provenance lives in this spec, TEMPLATES.md, and the

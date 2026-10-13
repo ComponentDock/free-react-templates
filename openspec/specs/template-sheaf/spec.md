@@ -47,8 +47,8 @@ preset states are the same public US-state names).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Multiselect 12". Listed in TEMPLATES.md under
-  **Bootstrap Multiselect (20)** (section header line 821; row at line
-  834 — `multiselect-12` appears exactly ONCE in TEMPLATES.md, no dup
+  **Bootstrap Multiselect (20)** (section header line 823; row at line
+  836 — `multiselect-12` appears exactly ONCE in TEMPLATES.md, no dup
   rows to mark). Series siblings already prepped: Multiselect 01 → Picker,
   02 → Sifter, 03 → Winnow, 04 → Cull, 05 → Glean, 06 → Garner, 07 → Reap,
   08 → Pluck (ALL Semantic UI based), 09 → Thresh (Select2, DARK theme),

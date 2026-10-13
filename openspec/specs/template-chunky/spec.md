@@ -99,7 +99,7 @@ two UNCAPTIONED button blocks (solid icon buttons + outlines; round solid
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Bootstrap Buttons 15". Listed in TEMPLATES.md
-  under **Bootstrap Buttons (20)** (line 676). Free UI-kit button-component
+  under **Bootstrap Buttons (20)** (line 678). Free UI-kit button-component
   template. The `bootstrap-buttons-15` slug appears exactly once in
   TEMPLATES.md (no duplicate rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-14):** the default

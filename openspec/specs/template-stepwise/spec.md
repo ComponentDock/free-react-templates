@@ -4,7 +4,7 @@
 
 Stepwise is a multi-step sign-up wizard in the free-react-templates monorepo.
 It is an original React recreation of the ColorLib free "Colorlib Wizard 19"
-template design (see TEMPLATES.md line 856; `grep -c
+template design (see TEMPLATES.md line 858; `grep -c
 'wp/template/colorlib-wizard-19/'` = 1), built under a DIFFERENT name
 (Stepwise — a single lowercase word describing a step-by-step wizard form,
 matching the Hiredly/Shutterly naming pattern; no collision with `apps/` or

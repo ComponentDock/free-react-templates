@@ -7,7 +7,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Login Form 03" (TEMPLATES.md line 2149; section
-  "## Login Forms (18)" at ~line 2143). The
+  "## Login Forms (42)" at ~line 2144). The
   `wp/template/login-form-03/` slug appears exactly ONCE in TEMPLATES.md.
 - **Source URL:** https://colorlib.com/wp/template/login-form-03/
 - **Preview URL — REACHABLE (verified by direct fetch):**

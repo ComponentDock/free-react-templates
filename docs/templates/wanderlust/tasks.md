@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 01" — the FIRST of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-01/).
-  Single occurrence in TEMPLATES.md (line 708, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 710, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Wanderlust**
   (first of the carousel-series renames; suggested lineage for later
   preps: carousel-02 → faraway, carousel-03 → fjord — theme: travel /

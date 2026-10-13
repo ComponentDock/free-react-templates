@@ -5,7 +5,7 @@
 Pigment is a single-page creative-agency template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Creativex 3"
 website template (see TEMPLATES.md, Astro section, line 138; duplicate lines
-1459 under Creative and 2907 under Tailwind Css — mark EVERY copy), built under
+1461 under Creative and 2907 under Tailwind Css — mark EVERY copy), built under
 a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 
@@ -41,7 +41,7 @@ Inter (400–800).
 
 - **Original:** ColorLib "Creativex 3" — creative/digital agency template
   (source: https://colorlib.com/wp/template/creativex-3/). Listed in
-  TEMPLATES.md line 138 (Astro); duplicates at lines 1459 (Creative) and 2907
+  TEMPLATES.md line 138 (Astro); duplicates at lines 1461 (Creative) and 2907
   (Tailwind Css) — mark every copy `[x]` when done. Screenshot:
   `creativex-template-1770211073725.jpg` (2400×1892, reviewed visually in the
   browser).

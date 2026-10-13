@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Courses" — education / online-learning platform
   landing page (page title "Courses | Education"; source:
   https://colorlib.com/wp/template/courses/). Listed in TEMPLATES.md under
-  Education (line 1626) — dup row also at line 366 under Bootstrap; one
+  Education (line 1628) — dup row also at line 366 under Bootstrap; one
   recreation covers both rows, mark both `[x]` with the same surge URL at
   bookkeeping time (do NOT re-implement the dup).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/courses/`

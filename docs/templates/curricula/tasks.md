@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 19" — nineteenth of the "Bootstrap
   Dropdowns (20)" series (source: https://colorlib.com/wp/template/dropdown-19/).
-  TEMPLATES.md has ONE copy (line 772). Series siblings: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 774). Series siblings: Dropdown 01 was
   prepped as **Menubar**, Dropdown 02 as **Popmenu**, Dropdown 03 as
   **Skycast**, Dropdown 04 as **Chime**, Dropdown 05 as **Trolley**,
   Dropdown 06 as **Passkey**, Dropdown 07 as **Onboard**, Dropdown 08 as

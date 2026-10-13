@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 12" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-12/). Single occurrence
-  in TEMPLATES.md (line 696, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 698, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Kalends** (Roman calendar's first
   day — keeps the date/calendar theme, distinct from Metronome's
   timekeeping angle).

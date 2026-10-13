@@ -5,7 +5,7 @@
 Maverick is a single-page personal portfolio / CV website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Clark" design (see TEMPLATES.md — line 359, Bootstrap category; the
-same source is DUPLICATED at lines 2299, 2386 and 2710 — ALL FOUR rows must be
+same source is DUPLICATED at lines 2301, 2388 and 2712 — ALL FOUR rows must be
 marked `[x]` when done), built under a NEW name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

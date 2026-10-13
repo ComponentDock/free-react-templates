@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Bootstrap Buttons 15" — free UI-kit button
   component template (source:
   https://colorlib.com/wp/template/bootstrap-buttons-15/). TEMPLATES.md
-  row: line 676 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-15`
+  row: line 678 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-15`
   slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-14):** the
   default `https://preview.colorlib.com/theme/bootstrap-buttons-15/`
@@ -330,6 +330,6 @@ ease`); when checked the ring `border-color` also turns the variant
        used, what differs (renames, placeholders, lucide icons, React
        dropdowns)
 8. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
-9. [ ] After merge: TEMPLATES.md "Bootstrap Buttons 15" row (line 676)
+9. [ ] After merge: TEMPLATES.md "Bootstrap Buttons 15" row (line 678)
        `[~]` → `[x]` + `https://chunky.free.componentdock.com` + `npm
     run readme:status`; push

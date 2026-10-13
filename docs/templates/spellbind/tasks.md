@@ -6,12 +6,12 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Colorlib Wizard 15" (TEMPLATES.md line 852; section
-  "## Bootstrap Wizards (30)" at line 844). The
+- **ColorLib item:** "Colorlib Wizard 15" (TEMPLATES.md line 854; section
+  "## Bootstrap Wizards (30)" at line 846). The
   `wp/template/colorlib-wizard-15/` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows). NOTE: TEMPLATES.md sorts wizard rows as
   STRINGS (1, 10, 11, 12, 13, 14, 15, 16 … 19, 2, 20 …) — wizard-2..9
-  rows sort at lines 857–875, AFTER 15. So Spellbind (15) was the first
+  rows sort at lines 859–877, AFTER 15. So Spellbind (15) was the first
   unprepped item when this prep ran.
 - **Source URL:** https://colorlib.com/wp/template/colorlib-wizard-15/
 - **Preview URL — REACHABLE (verified 2026-08-18 by direct fetch):**
@@ -323,6 +323,6 @@ recreated as text/lucide cards). No image screening required.
         content, single money readout ("$ 1100"…"$ 2000"), no fake
         network — inline success message instead of the source's
         `alert('Submited')`, Component Dock footer).
-13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 852 `[x]` + surge
+13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 854 `[x]` + surge
         URL (`https://spellbind.free.componentdock.com`), `npm run
     readme:status`, push.

@@ -5,7 +5,7 @@
 Wainscot is a single-page furniture & interior design website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Tangre" furniture website template design (see TEMPLATES.md,
-Bootstrap category, line 508 — duplicate row at line 1194, same template, one
+Bootstrap category, line 508 — duplicate row at line 1196, same template, one
 app only), built under a different name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib
 references in app code — provenance lives in this spec, TEMPLATES.md, and the

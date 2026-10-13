@@ -21,7 +21,7 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   pink→purple) over a dark navy base.
   Source: https://colorlib.com/wp/template/webhost/
   TEMPLATES.md has THREE copies of this item (line 530, category Bootstrap;
-  line 2099, category Landing Page; and line 3066, category Web Hosting —
+  line 2101, category Landing Page; and line 3068, category Web Hosting —
   mark EVERY copy `[x]` when done). No other spec on main maps to this slug
   (grep-checked before prepping).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/webhost/`
@@ -195,7 +195,7 @@ rgba(0,0,0,.03)`, padding 30px; icon square 80×80 with Gradient A.
   of content); footer keeps the "made with ♥" wording without the Colorlib
   credit; footer heading typo "Unseful Links" and "Windos Hosting" may be
   corrected (fixing typos is allowed; note it in the PR).
-- **Duplicate checklist rows:** TEMPLATES.md lines 530, 2099, AND 3066 all
+- **Duplicate checklist rows:** TEMPLATES.md lines 530, 2101, AND 3066 all
   list "Webhost" — the implementer MUST mark ALL THREE `[x]` when done
   (precedent: Newsflex → Bulletin/Dateline; Flawless → Sculpt).
 
@@ -417,7 +417,7 @@ copyright bar.
 - [ ] Visual pass vs live demo `https://preview.colorlib.com/theme/webhost/`
 - [ ] All three gradients (teal→green, sky→indigo, pink→purple) + #233142
       dark navy + Work Sans reproduced via `@theme` tokens
-- [ ] TEMPLATES.md lines 530, 2099, AND 3066 all marked `[x]` with the
+- [ ] TEMPLATES.md lines 530, 2101, AND 3066 all marked `[x]` with the
       surge URL, plus `npm run readme:status`
 - [ ] Footer links to `https://www.componentdock.com/`; no ColorLib
       references in app code

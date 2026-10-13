@@ -17,7 +17,7 @@ flat periwinkle background.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Dropdown 04" — fourth demo in the "Bootstrap
-  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 757). Series
+  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 759). Series
   siblings: Dropdown 01 was prepped as **Menubar**, Dropdown 02 as
   **Popmenu**, Dropdown 03 as **Skycast** (see `docs/templates/menubar/`,
   `docs/templates/popmenu/`, `docs/templates/skycast/`).

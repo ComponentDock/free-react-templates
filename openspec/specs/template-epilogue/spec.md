@@ -23,7 +23,7 @@ border (menu links left, site logo right).
   Footer" series (footer-only component demos; the page body is a 70vh filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-02/. TEMPLATES.md has ONE
-  copy (line 778, `- [ ]` unchecked). This prep: Bootstrap Footer 02 →
+  copy (line 780, `- [ ]` unchecked). This prep: Bootstrap Footer 02 →
   **Epilogue**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (same as Footer 01 — verified again):** the standard
   `https://preview.colorlib.com/theme/bootstrap-footer-02/` returns **HTTP

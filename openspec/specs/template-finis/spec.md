@@ -40,7 +40,7 @@ divider. No images, no brand logo, no dark treatment.
   Footer" series (footer-only component demos; the page body is a 70vh
   filler strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-10/. TEMPLATES.md has ONE
-  copy (line 786, `- [ ]` unchecked). This prep: Bootstrap Footer 10 →
+  copy (line 788, `- [ ]` unchecked). This prep: Bootstrap Footer 10 →
   **Finis**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon prep):**
   `https://preview.colorlib.com/theme/bootstrap-footer-10/` returns **HTTP

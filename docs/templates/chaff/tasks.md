@@ -6,8 +6,8 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Multiselect 18" (TEMPLATES.md line 840; section
-  "## Bootstrap Multiselect (20)" at line 821). The `multiselect-18` slug
+- **ColorLib item:** "Multiselect 18" (TEMPLATES.md line 842; section
+  "## Bootstrap Multiselect (20)" at line 823). The `multiselect-18` slug
   appears exactly ONCE in TEMPLATES.md (no dup rows to mark).
 - **Source URL:** https://colorlib.com/wp/template/multiselect-18/
 - **Preview URL — REACHABLE (verified 2026-08-18):**
@@ -129,5 +129,5 @@ persist; NO search/select-all/actions box; keyboard arrow/Enter/Escape with
         token list, what differs (renames, group labels kept verbatim,
         Roboto Google Font, lucide/CSS checkmark, no icomoon, paraphrased
         heading, Component Dock footer).
-11. [ ] Bookkeeping after merge: mark TEMPLATES.md line 840 `[x]` + surge
+11. [ ] Bookkeeping after merge: mark TEMPLATES.md line 842 `[x]` + surge
         URL, `npm run readme:status`, push.

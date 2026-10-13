@@ -13,7 +13,7 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Fundraiser" — free responsive Bootstrap 4 charity /
   fundraising website template (source:
   https://colorlib.com/wp/template/fundraiser/). TEMPLATES.md has TWO copies
-  of this item (line 404 in the Bootstrap category and line 1267 in the
+  of this item (line 404 in the Bootstrap category and line 1269 in the
   Charity category — mark BOTH `[x]` when done). Both rows reference the
   correct screenshot (`fundraiser-free-template.jpg`).
 - **Demo DOM analyzed:** REACHABLE. `https://preview.colorlib.com/theme/fundraiser/`
@@ -373,4 +373,4 @@ and a document title.
 - [ ] CTA strip: bg-light #f6f5f5, Mansalva heading, right green Donate Now button
 - [ ] Footer: #c9ccd4, About Us + Features widgets, Subscribe form with green button, Follow Us social icons, ColorLib credit
 - [ ] Document title "Benefact — Charity Template"
-- [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 404 (Bootstrap) and line 1267 (Charity)
+- [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 404 (Bootstrap) and line 1269 (Charity)

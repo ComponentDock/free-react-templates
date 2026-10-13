@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Pageone" — clean light web-agency one-pager (page
   title "Pageone — Free Bootstrap 5 Website Template by Colorlib"; source:
   https://colorlib.com/wp/template/pageone/, appears 3× in TEMPLATES.md —
-  line 614 Bootstrap 5 (89) + line 1122 Business (365) + line 2350 One
+  line 614 Bootstrap 5 (89) + line 1124 Business (365) + line 2352 One
   Page (91); mark ALL THREE `[x]` when done). The app name MUST differ from
   the source — hence **Vanguard** (the leading edge; single lowercase
   word, no collision with `apps/`, `openspec/specs/`, or

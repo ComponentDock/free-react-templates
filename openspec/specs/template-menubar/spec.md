@@ -14,7 +14,7 @@ and split-button variants — a minimal, functional component-showcase page.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Dropdown 01" — first demo in the "Bootstrap
-  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 754).
+  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 756).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/bootstrap/dropdown-01/`
   (HTTP 200, 13.2 KB HTML). NOTE: the naive
   `https://preview.colorlib.com/theme/dropdown-01/` 404s — the dropdown
@@ -224,7 +224,7 @@ Dock (the reference demo has no footer — this is a repo convention).
 - [ ] Per-app gate passes: `scripts/verify-app.sh menubar` (typecheck +
       lint + 100% coverage tests + build)
 - [ ] Full gate passes on merge (CI `npm run gate`), nightly sweep green
-- [ ] TEMPLATES.md: mark line 754 (Dropdown 01) `[~]` → `[x]` + Surge URL +
+- [ ] TEMPLATES.md: mark line 756 (Dropdown 01) `[~]` → `[x]` + Surge URL +
       homepage after merge
 - [ ] `npm run readme:status` regenerates README Templates status table after merge
 - [ ] PR description states: source template (ColorLib Dropdown 01), preview

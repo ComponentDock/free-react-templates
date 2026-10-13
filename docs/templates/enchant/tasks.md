@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Colorlib Wizard 20" — a three-step sign-up wizard
   form (source: https://colorlib.com/wp/template/colorlib-wizard-20/).
-  TEMPLATES.md line 858, single copy (`grep -c
+  TEMPLATES.md line 860, single copy (`grep -c
 'wp/template/colorlib-wizard-20/'` = 1).
 - **Preview DOM analyzed:** https://colorlib.com/etc/bwiz/colorlib-wizard-20/index.html
   (HTTP 200, ~3.7 KB HTML, `<title>Sign Up Form</title>`). **The

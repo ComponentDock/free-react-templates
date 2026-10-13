@@ -17,7 +17,7 @@ wordmark header, three wine product cards with gold ratings and hover-reveal
 band, and a centered minimal footer.
 
 Vintner appears FOUR times in TEMPLATES.md (all rows are the same source
-slug): line 533, line 1229, line 1611, and line 1793 — implement ONE app and
+slug): line 533, line 1231, line 1613, and line 1795 — implement ONE app and
 mark ALL FOUR rows `[x]` at bookkeeping.
 
 ## Design reference (replication findings)
@@ -278,6 +278,6 @@ The system SHALL render the centered minimal footer.
       Cinzel nav with `#930077` active link, dark-overlay hero slider,
       `#930077` accents, pill black buttons, light testimonials band
 - [ ] Google Fonts: Cinzel + Montserrat loaded via `<link>` in `index.html`
-- [ ] TEMPLATES.md lines 533, 1229, 1611, AND 1793 all marked `[x]`
+- [ ] TEMPLATES.md lines 533, 1231, 1613, AND 1793 all marked `[x]`
 - [ ] `public/CNAME` = `vintner.free.componentdock.com`; `homepage` =
       `https://vintner.free.componentdock.com`

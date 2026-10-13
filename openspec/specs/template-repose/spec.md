@@ -6,7 +6,7 @@ Repose is a single-page luxury hotel / resort booking website template in
 the free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Unwind" design (see TEMPLATES.md — listed in the Bootstrap 5
 (89) category at line 634, with a duplicate row in the Hotel (38) category at
-line 1935; both rows `- [ ]`), built under a DIFFERENT name — **Repose** (a
+line 1937; both rows `- [ ]`), built under a DIFFERENT name — **Repose** (a
 rest / relaxation-themed word; single lowercase word, no collision with
 `apps/`, `openspec/specs/`, `docs/templates/` or TEMPLATES.md — verified
 2026-08-14) per the monorepo naming mandate (never reuse the ColorLib source

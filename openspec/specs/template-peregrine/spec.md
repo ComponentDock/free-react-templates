@@ -5,8 +5,8 @@
 Peregrine is a single-page travel agency / tour booking template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Traveland" travel HTML template design (see TEMPLATES.md,
-line 518 under **Bootstrap (216)** — duplicate rows at line 1494 under
-**Creative (55)** and line 3004 under **Travel (44)**, same template, ONE
+line 518 under **Bootstrap (216)** — duplicate rows at line 1496 under
+**Creative (55)** and line 3006 under **Travel (44)**, same template, ONE
 app only), built under a different name ("Peregrine" — a traveler; from
 Latin _peregrinus_, matching the source's travel-agency positioning) with
 the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript

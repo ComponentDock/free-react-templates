@@ -10,7 +10,7 @@
 Fstop is a single-page photography-agency template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Snapshot"
 design (see TEMPLATES.md — Bootstrap category, line 499; the same source is
-DUPLICATED at lines 1168 (Business), 2359 (One Page) and 2473 (Photography) —
+DUPLICATED at lines 1170 (Business), 2359 (One Page) and 2473 (Photography) —
 ALL FOUR rows must be marked `[x]` when done), built under a NEW name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 01" — first of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-01/).
-  TEMPLATES.md has ONE copy (line 754).
+  TEMPLATES.md has ONE copy (line 756).
 - **Demo DOM analyzed:** `https://preview.colorlib.com/theme/bootstrap/dropdown-01/`
   (HTTP 200, 13.2 KB). IMPORTANT: the naive
   `https://preview.colorlib.com/theme/dropdown-01/` returns 404 — the
@@ -87,6 +87,6 @@
 - [ ] Verify: `scripts/verify-app.sh menubar` (typecheck + lint + 100%
       coverage + build). Then push branch, open PR, squash-merge immediately
       (`gh pr merge --squash --delete-branch`).
-- [ ] After merge: mark TEMPLATES.md line 754 (Dropdown 01) `[x]` with
+- [ ] After merge: mark TEMPLATES.md line 756 (Dropdown 01) `[x]` with
       Surge URL `https://menubar.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify curl the Surge URL.

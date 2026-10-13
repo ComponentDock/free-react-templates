@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Uza" — digital marketing agency template
   (source: https://colorlib.com/wp/template/uza/). Listed in TEMPLATES.md
-  line 525 (Bootstrap section); dup rows at lines 1216 (Business) and
+  line 525 (Bootstrap section); dup rows at lines 1218 (Business) and
   1396 (Consulting) — same source, ONE implementation (line 525 is the
   claim row).
 - **Preview URL:** https://preview.colorlib.com/theme/uza/ (title "Uza -

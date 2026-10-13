@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Djoz" — DJ / Music Event HTML Template
   (source: https://colorlib.com/wp/template/djoz/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 375; duplicate row at
-  line 2264 under **Blog (60)** — same template, one app only).
+  line 2266 under **Blog (60)** — same template, one app only).
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/djoz/`. DOM fetched
   (`/tmp/djoz-preview.html`, 38 KB) + stylesheet

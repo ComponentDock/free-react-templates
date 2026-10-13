@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 14" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-14/). Single occurrence
-  in TEMPLATES.md (line 698, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 700, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Equinox** (a calendar/date word;
   direct sibling of Kalends = Calendar 12 and Span = Calendar 13).
 - **Preview URL analyzed:**

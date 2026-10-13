@@ -43,8 +43,8 @@ recreated from the same public-domain fact list).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Multiselect 10". Listed in TEMPLATES.md under
-  **Bootstrap Multiselect (20)** (section header line 821; row at line
-  832). Free multiselect-dropdown component template. The
+  **Bootstrap Multiselect (20)** (section header line 823; row at line
+  834). Free multiselect-dropdown component template. The
   `multiselect-10` slug appears exactly ONCE in TEMPLATES.md (no dup rows
   to mark). Series siblings already prepped: Multiselect 01 → Picker, 02 →
   Sifter, 03 → Winnow, 04 → Cull, 05 → Glean, 06 → Garner, 07 → Reap, 08 →

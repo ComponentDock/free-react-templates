@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Modal 12" — free single-page photo newsletter/offer
   modal component template (source:
-  https://colorlib.com/wp/template/modal-12/). TEMPLATES.md row: line 811
-  (**Bootstrap Modals (20)**, header line 798). The `modal-12` slug appears
+  https://colorlib.com/wp/template/modal-12/). TEMPLATES.md row: line 813
+  (**Bootstrap Modals (20)**, header line 800). The `modal-12` slug appears
   exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-12/` returns **404** — the REAL

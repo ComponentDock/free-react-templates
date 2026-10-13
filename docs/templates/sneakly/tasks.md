@@ -13,7 +13,7 @@
 - **Original:** ColorLib "Minishop" — page title "Minishop - Free Bootstrap
   4 Template by Colorlib". TEMPLATES.md category: **Bootstrap (216)**,
   first occurrence at line 455 (`- [ ]`, source NOT shipped anywhere).
-  DUP-ROW TRAP: the `minishop` slug also appears at line 1101 (Business 365) and line 1590 (Ecommerce 56) — all `- [ ]` rows of the same
+  DUP-ROW TRAP: the `minishop` slug also appears at line 1103 (Business 365) and line 1592 (Ecommerce 56) — all `- [ ]` rows of the same
   template; ONE implementation covers all three rows (mark all `[x]` with
   the same surge URL at bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-11):**

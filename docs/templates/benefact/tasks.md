@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Fundraiser" — free responsive Bootstrap 4 charity /
   fundraising website template (source:
   https://colorlib.com/wp/template/fundraiser/). TEMPLATES.md has TWO copies
-  (line 404 — Bootstrap category, line 1267 — Charity category; mark BOTH
+  (line 404 — Bootstrap category, line 1269 — Charity category; mark BOTH
   `[x]` when done). Both rows use the CORRECT screenshot
   `fundraiser-free-template.jpg`.
 - **Demo DOM analyzed:** REACHABLE — `https://preview.colorlib.com/theme/fundraiser/`

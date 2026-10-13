@@ -37,7 +37,7 @@ widget variant with its own teal accent and its own tick construction.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 17" — the seventeenth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 747 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 749 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 11–16
   were prepped as Quadly / Duo / Trio / Quartet / Quintet / Sextet.
   **NUMBERING QUIRK (verified 2026-08-15):** the preview server hosts TWO
@@ -325,6 +325,6 @@ with a main landmark and a document title.
 - [ ] No copied assets, no icon font (pure CSS tick + white mask bar)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 747 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 749 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

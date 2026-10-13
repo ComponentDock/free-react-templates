@@ -7,7 +7,7 @@
 ## Source mapping
 
 - **ColorLIB item**: "Colorlib Wizard 6" (TEMPLATES.md line 874; section
-  "## Bootstrap Wizards (30)" at line 844). The
+  "## Bootstrap Wizards (30)" at line 846). The
   `wp/template/colorlib-wizard-6/` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows; close-string matches for wizard-1/2/11/21..29
   rows are prefix substrings, not duplicates). Member 6 of colorlib-wizard-1 … 30.

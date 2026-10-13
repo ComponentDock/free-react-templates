@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Bootstrap Buttons 17" — free UI-kit button
   component template (source:
   https://colorlib.com/wp/template/bootstrap-buttons-17/). TEMPLATES.md
-  row: line 678 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-17`
+  row: line 680 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-17`
   slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-14):** the
   default `https://preview.colorlib.com/theme/bootstrap-buttons-17/`
@@ -154,6 +154,6 @@ lg:grid-cols-6 gap-3` — reference wraps in the col-md-10 column; match
        artifact AND the unused icomoon font), design tokens used, what
        differs (renames, no icons, Tailwind re-implementation)
 8. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
-9. [ ] After merge: TEMPLATES.md "Bootstrap Buttons 17" row (line 678)
+9. [ ] After merge: TEMPLATES.md "Bootstrap Buttons 17" row (line 680)
        `[~]` → `[x]` + `https://pill.free.componentdock.com` + `npm run
     readme:status`; push

@@ -40,7 +40,7 @@ placeholders, icons come from `lucide-react`).
 > name. **Excursio** is the new, original name — single lowercase word, no
 > collision with `apps/`, `openspec/specs/`, `docs/templates/` or
 > TEMPLATES.md (verified 2026-08-14). Source slug + preview URL are recorded
-> below. The `tourbi` slug appears in TEMPLATES.md at lines 517, 1207 and
+> below. The `tourbi` slug appears in TEMPLATES.md at lines 517, 1209 and
 > 2999 (three `- [ ]` duplicate rows — mark ALL of them `[x]` at ship time).
 
 > PREVIEW URL NOTE: `https://preview.colorlib.com/theme/tourbi/` is

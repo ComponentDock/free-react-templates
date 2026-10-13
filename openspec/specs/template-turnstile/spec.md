@@ -46,7 +46,7 @@ copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 20". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 819). Free
+  Modals (20)** (section header line 800; row at line 821). Free
   password-protected-link modal component template. The `modal-20` slug
   appears exactly ONCE in TEMPLATES.md (no dup rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-16):** the default

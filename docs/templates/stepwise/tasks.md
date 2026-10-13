@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Colorlib Wizard 19" — a multi-step sign-up /
   room-booking wizard form (source:
   https://colorlib.com/wp/template/colorlib-wizard-19/). TEMPLATES.md line
-  856, single copy (`grep -c 'wp/template/colorlib-wizard-19/'` = 1).
+  858, single copy (`grep -c 'wp/template/colorlib-wizard-19/'` = 1).
 - **Preview DOM analyzed:** https://colorlib.com/etc/bwiz/colorlib-wizard-19/index.html
   (HTTP 200, ~5.5 KB HTML, `<title>Sign Up Form</title>`). **The
   preview.colorlib.com URL is 404 for this template** — the wizard demos live

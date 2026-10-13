@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 04" — fourth of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-04/).
-  TEMPLATES.md line 734 — mark that line `[x]` when done (single copy).
+  TEMPLATES.md line 736 — mark that line `[x]` when done (single copy).
   NOTE: unlike Checkbox 01–03 (Tickbox/Picks/Ticktag), each item in this
   series is a DIFFERENT variant design — Checkbox 04 is the sports
   tag-pill variant, NOT the Tickbox six-variant list. Do not reuse the

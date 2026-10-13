@@ -16,7 +16,7 @@
   - aos + icomoon/flaticon icon fonts). TEMPLATES.md category:
     **Bootstrap 5 (89)**, first occurrence at line 620 (`- [ ]`, source NOT
     shipped anywhere). DUP-ROW TRAP: the `repeat` slug also appears at line
-    1151 (**Business (365)**) — both `- [ ]` rows of the SAME template; ONE
+    1153 (**Business (365)**) — both `- [ ]` rows of the SAME template; ONE
     implementation covers both rows (mark all `[x]` with the same surge URL
     at bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-14):**

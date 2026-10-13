@@ -37,7 +37,7 @@ copyright. No navbar, no hero, no logo image, no forms.
   Footer" series (footer-only component demos; the page body is a filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-11/. TEMPLATES.md has ONE
-  copy (line 787, `- [ ]` unchecked). This prep: Bootstrap Footer 11 →
+  copy (line 789, `- [ ]` unchecked). This prep: Bootstrap Footer 11 →
   **Tailpiece**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon prep):**
   `https://preview.colorlib.com/theme/bootstrap-footer-11/` returns **HTTP

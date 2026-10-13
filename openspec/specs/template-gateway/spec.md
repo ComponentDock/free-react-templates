@@ -39,7 +39,7 @@ content kinds (no ColorLib assets copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 06". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 805). Free signup-form
+  Modals (20)** (section header line 800; row at line 807). Free signup-form
   modal component template. The `modal-06` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-16):** the default

@@ -11,7 +11,7 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 - **Original:** ColorLib "Opium" — blog template
   (source: https://colorlib.com/wp/template/opium/).
-  TEMPLATES.md has THREE copies of this item (lines 277, 1722, and 2412 —
+  TEMPLATES.md has THREE copies of this item (lines 277, 1724, and 2412 —
   mark EVERY copy `[x]` when done).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/opium/
   (HTTP 200, 30 KB rendered HTML, title "Opium Blog"). Stylesheet:

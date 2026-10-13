@@ -7,8 +7,8 @@
 
 - **Original:** ColorLib "Ultim8" — free DIGITAL AGENCY website template
   (source: https://colorlib.com/wp/template/ultim8/). Listed in TEMPLATES.md
-  under **Bootstrap (216)** at line 522; duplicate rows at line 1211 under
-  **Business (365)** and line 2367 under **One Page (91)** — same template,
+  under **Bootstrap (216)** at line 522; duplicate rows at line 1213 under
+  **Business (365)** and line 2369 under **One Page (91)** — same template,
   ONE app only. Mark ALL THREE rows `[x]` after merge.
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/ultim8/`.
   DOM fetched (`/tmp/ultim8-preview.html`, 59,055 bytes, title "Ultim8 —

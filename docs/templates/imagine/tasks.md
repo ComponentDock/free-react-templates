@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Creative Agency 2" — creative agency Bootstrap
   template (page title "Creative Agency"; source:
   https://colorlib.com/wp/template/creative-agency-2/). Listed in
-  TEMPLATES.md under Bootstrap (line 368) — dup rows also at lines 961 and
+  TEMPLATES.md under Bootstrap (line 368) — dup rows also at lines 963 and
   1457; one recreation covers all three rows, mark all `[x]` with the same
   surge URL at bookkeeping time (do NOT re-implement the dups).
 - **Canonical preview UNREACHABLE:** `https://preview.colorlib.com/theme/creative-agency-2/`

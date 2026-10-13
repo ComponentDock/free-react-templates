@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 14" — the FOURTEENTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-14/).
-  Single occurrence in TEMPLATES.md (line 721, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 723, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Taormina**
   (fourteenth of the carousel-series renames; lineage: carousel-01 →
   wanderlust, carousel-02 → faraway, carousel-03 → fjord, carousel-04 →

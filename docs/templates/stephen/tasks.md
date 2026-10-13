@@ -7,7 +7,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Steve" (TEMPLATES.md line 2568; section
-  "## Portfolio (89)" at line 2527). The `wp/template/steve/` slug appears
+  "## Portfolio (89)" at line 2490). The `wp/template/steve/` slug appears
   TWICE in TEMPLATES.md (lines 2568 and 2728 — duplicate rows; prep targets
   line 2568, the first occurrence).
 - **Source URL:** https://colorlib.com/wp/template/steve/

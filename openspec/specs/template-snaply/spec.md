@@ -30,7 +30,7 @@ TypeScript.
 - **Original:** ColorLib "Photosen" — page title "Photosen - Photography
   Portfolio". TEMPLATES.md category: **Bootstrap 5 (89)**, first occurrence
   at line 618 (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP (see
-  replication skill): the `photosen` slug ALSO appears at lines 2466
+  replication skill): the `photosen` slug ALSO appears at lines 2468
   (Photography 49) and 2544 (Portfolio 89) — all `- [ ]` rows of the SAME
   template; one prep + one implementation covers all three rows (mark all
   `[x]` with the same surge URL at bookkeeping). The recreation brands
@@ -260,5 +260,5 @@ the drawer and the gallery grid SHALL reflow from 3 → 2 → 1 columns.
       dead-end without navigation (single-page recreation)
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL THREE `- [ ]` rows
-      (line 618 Bootstrap 5, line 2466 Photography, line 2544 Portfolio)
+      (line 618 Bootstrap 5, line 2468 Photography, line 2546 Portfolio)
       `[x]` with the same surge URL + `npm run readme:status`

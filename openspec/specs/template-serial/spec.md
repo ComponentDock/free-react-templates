@@ -19,7 +19,7 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   columns (Sports / Business), a light newsletter band, and a minimal
   centered footer. TEMPLATES.md has THREE copies of this item (lines 271,
   603, and 2199 — duplicate rows: line 271 in the "Blog (60)" section,
-  line 603 in the "Bootstrap 5 (89)" section, line 2199 in the
+  line 603 in the "Bootstrap 5 (89)" section, line 2201 in the
   "Magazine (34)" section); ONE recreation (Serial) covers all three — the
   implementer must mark ALL THREE rows `[x]`.
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/magdesign/`

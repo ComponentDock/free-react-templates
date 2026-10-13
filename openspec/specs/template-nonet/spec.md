@@ -45,7 +45,7 @@ label layout.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 19" — the nineteenth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 749 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 751 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 11–18
   were prepped as Quadly / Duo / Trio / Quartet / Quintet / Sextet / Septet /
   Octet.
@@ -363,6 +363,6 @@ with a main landmark and a document title.
       shadow)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 749 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 751 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

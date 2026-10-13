@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Newsflex" — free responsive news website template
   (source: https://colorlib.com/wp/template/newsflex/). Listed in
-  TEMPLATES.md under Blog (line 276; slug repeats at line 2207 — one
+  TEMPLATES.md under Blog (line 276; slug repeats at line 2209 — one
   recreation covers both dup rows). New name: **dateline**.
 - **Live preview REACHABLE — SLUG MISMATCH:** `preview.colorlib.com/theme/
 newsflex/` returns 404; the real preview is

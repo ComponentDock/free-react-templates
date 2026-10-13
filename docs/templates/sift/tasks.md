@@ -6,8 +6,8 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Multiselect 20" (TEMPLATES.md line 842; section
-  "## Bootstrap Multiselect (20)" at line 821). The `multiselect-20` slug
+- **ColorLib item:** "Multiselect 20" (TEMPLATES.md line 844; section
+  "## Bootstrap Multiselect (20)" at line 823). The `multiselect-20` slug
   appears exactly ONCE in TEMPLATES.md (no dup rows to mark).
 - **Source URL:** https://colorlib.com/wp/template/multiselect-20/
 - **Preview URL — REACHABLE (verified 2026-08-18):**
@@ -178,5 +178,5 @@ widget 3 rgb(211,244,255) = `#d3f4ff`; empty widgets show placeholder
         token list, limit behavior, and what differs (renames, paraphrased
         heading "Sift (Limit to 5)", no icomoon, Roboto Google Font,
         lucide/CSS close ×, Component Dock footer).
-13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 842 `[x]` + surge
+13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 844 `[x]` + surge
         URL, `npm run readme:status`, push.

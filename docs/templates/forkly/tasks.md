@@ -15,7 +15,7 @@
 - **Original:** ColorLib "Pato" — page title "Home". TEMPLATES.md
   categories: **Bootstrap 5 (89)** first occurrence at line 616
   (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the `pato` slug
-  also appears at line 1126 (Business 365) and line 2689 (Restaurant 41)
+  also appears at line 1128 (Business 365) and line 2691 (Restaurant 41)
   — ALL THREE `- [ ]` rows are the same template; ONE implementation
   covers all rows (mark all `[x]` with the same surge URL at
   bookkeeping).

@@ -6,8 +6,8 @@
 > `openspec/specs/`, `docs/templates/` or TEMPLATES.md — verified
 > 2026-08-11), per the monorepo naming mandate (never reuse the ColorLib
 > source name). TEMPLATES.md: primary row in Bootstrap (216) at line 465;
-> duplicate rows in Business (365) at line 1110 and Photography (49) at
-> line 2458 (all `- [ ]`).
+> duplicate rows in Business (365) at line 1112 and Photography (49) at
+> line 2460 (all `- [ ]`).
 
 ## Design notes (replication findings)
 

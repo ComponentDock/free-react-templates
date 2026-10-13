@@ -32,8 +32,8 @@ structure 1:1 with matching layout, colors, typography, and content kinds
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Oneder". Listed in TEMPLATES.md under **Bootstrap
-  (216)** (line 469) — dup rows also at line 1116 (Business), line 1480
-  (Creative), line 2346 (One Page), line 2536 (Portfolio); all five rows are
+  (216)** (line 469) — dup rows also at line 1118 (Business), line 1482
+  (Creative), line 2348 (One Page), line 2538 (Portfolio); all five rows are
   `- [ ]` and no app ships it yet. Free one-page business template (single
   index page, anchors to in-page sections).
 - **Live preview DOM — REACHABLE (verified 2026-08-12):**
@@ -444,5 +444,5 @@ Us and a Subscribe Newsletter form plus a copyright bar.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time (mark ALL FIVE "Oneder" rows: line 469
-      Bootstrap, line 1116 Business, line 1480 Creative, line 2346 One
-      Page, line 2536 Portfolio)
+      Bootstrap, line 1118 Business, line 1482 Creative, line 2348 One
+      Page, line 2538 Portfolio)

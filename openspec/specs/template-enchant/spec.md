@@ -4,7 +4,7 @@
 
 Enchant is a multi-step sign-up wizard in the free-react-templates monorepo.
 It is an original React recreation of the ColorLib free "Colorlib Wizard 20"
-template design (see TEMPLATES.md line 858; `grep -c
+template design (see TEMPLATES.md line 860; `grep -c
 'wp/template/colorlib-wizard-20/'` = 1), built under a DIFFERENT name
 (Enchant — a single lowercase word evoking the wizard/magic naming theme of
 the sibling wizard preps: Conjure, Conjury, Banish, Dispel, Abjure, Bewitch,

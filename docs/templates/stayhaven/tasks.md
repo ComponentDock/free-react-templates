@@ -10,7 +10,7 @@
   (a haven to stay in — fits the "Stay With Us & Relax" hotel theme; single
   lowercase word, no collision with `ls apps/` or existing specs). Redplanet
   appears in TEMPLATES.md at line 487 (Bootstrap section, first unchecked item
-  without a prep — the claim) and again as duplicates at lines 1922 (Hotel)
+  without a prep — the claim) and again as duplicates at lines 1924 (Hotel)
   and 2353 (One Page). No spec existed for redplanet on origin/main; the slug
   is not shipped anywhere (no `[x]` row references it).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/redplanet/`
@@ -180,6 +180,6 @@ outline-white-primary.py-3.px-5` "Reserve Now" → opens #reservation-form
     --delete-branch`; if main checked out elsewhere, omit --delete-branch
       and `git push origin --delete` the remote).
 - [ ] After merge: `[~]`→`[x]` in TEMPLATES.md for Redplanet line 487 (+
-      duplicate lines 1922 and 2353 — check whether the checklist convention
+      duplicate lines 1924 and 2355 — check whether the checklist convention
       marks all dup rows; check sibling history first), add surge URL,
       `npm run readme:status`, commit `chore:` and push.

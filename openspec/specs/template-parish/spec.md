@@ -5,7 +5,7 @@
 Parish is a single-page church landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Vineyard"
 church website template (see TEMPLATES.md, Bootstrap section, line 526;
-duplicate row at line 1306 — mark EVERY copy `[x]` when done), built under a
+duplicate row at line 1308 — mark EVERY copy `[x]` when done), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 
@@ -77,7 +77,7 @@ Arial, sans-serif`, weight 400/500/700 (`.heading-section h2` 34px → 28px
 
 - **Original:** ColorLib "Vineyard" — church website template
   (source: https://colorlib.com/wp/template/vineyard/). Listed in
-  TEMPLATES.md line 526 (Bootstrap section); duplicate row at line 1306 —
+  TEMPLATES.md line 526 (Bootstrap section); duplicate row at line 1308 —
   mark every copy `[x]` when done. Screenshot: `vineyard-free-template.jpg`
   (1200×946, reviewed visually in the browser: mountain hero with mint
   wash, white uppercase nav, "VINEYARD" condensed logo, white play button

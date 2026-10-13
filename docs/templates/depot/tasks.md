@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Warehouse" — real estate website template
   (source: https://colorlib.com/wp/template/warehouse/). Listed in
-  TEMPLATES.md line 528 (Bootstrap section); dup rows at lines 1223
+  TEMPLATES.md line 528 (Bootstrap section); dup rows at lines 1225
   (Business) and 2619 (Real Estate) — same source, ONE implementation
   (line 528 is the claim row; mark ALL THREE `[x]` after merge).
 - **Naming:** the source name "warehouse" must NOT be reused. New name =

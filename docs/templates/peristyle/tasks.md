@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Modal 16" — free single-page registration-form modal
   component template (source: https://colorlib.com/wp/template/modal-16/;
   ColorLib page title "Modal V16 - Free Registration From Pop-Up").
-  TEMPLATES.md row: line 815 (**Bootstrap Modals (20)**, header line 799). The
+  TEMPLATES.md row: line 817 (**Bootstrap Modals (20)**, header line 800). The
   `modal-16` slug appears exactly once (no dup rows to mark). Demo
   `<title>`/heading is the generic "Modal #6".
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default

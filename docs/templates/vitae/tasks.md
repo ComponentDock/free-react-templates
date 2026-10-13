@@ -13,8 +13,8 @@
 - **Original:** ColorLib "Me" — free Bootstrap 4 personal CV website
   template (page `<title>` reads **"Me — Website Template by Colorlib"**).
   Listed in TEMPLATES.md under **Bootstrap (216)** line 446 with THREE
-  IDENTICAL dup rows: **One Page (91)** line 2336, **Personal (53)** line
-  2405, **Portfolio (89)** line 2526 (all `- [ ]`, nothing shipped) — when
+  IDENTICAL dup rows: **One Page (91)** line 2338, **Personal (53)** line
+  2407, **Portfolio (89)** line 2528 (all `- [ ]`, nothing shipped) — when
   shipped, mark ALL FOUR rows `[x]` with the vitae surge URL. The
   recreation brands itself **Vitae**.
 - **Preview DOM analyzed (verified 2026-08-11):**
@@ -121,7 +121,7 @@ text-center`, img-fluid).
     buttons). Open Sans loaded but unused — do NOT load it.
 - **⚠ KEY TRAPS:**
   - TEMPLATES.md has FOUR "Me" rows (Bootstrap line 446, One Page line
-    2336, Personal line 2405, Portfolio line 2526) — mark ALL FOUR `[x]`
+    2338, Personal line 2407, Portfolio line 2528) — mark ALL FOUR `[x]`
     at ship time or the nightly dup-row scan flags an orphan.
   - The portfolio section has NO filter tabs in the source DOM — `.filters`
     CSS is dead code. Do NOT invent filter buttons.

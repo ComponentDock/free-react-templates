@@ -6,7 +6,7 @@ Stayhaven is a single-page hotel & travel website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Redplanet" design (see TEMPLATES.md — listed under Bootstrap,
 line 487, first unchecked item whose prep did not exist on main; the same slug
-also appears as duplicates at lines 1922 and 2353 in the Hotel and One Page
+also appears as duplicates at lines 1924 and 2355 in the Hotel and One Page
 sections), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 

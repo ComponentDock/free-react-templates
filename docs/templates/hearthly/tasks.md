@@ -19,7 +19,7 @@
   flaticon. Brand name used in the source copy: "Spark". TEMPLATES.md
   category: **Bootstrap 5 (89)**, first occurrence at line 626
   (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the `spark` slug
-  also appears at line 1175 (**Business (365)**) — BOTH `- [ ]` rows of
+  also appears at line 1177 (**Business (365)**) — BOTH `- [ ]` rows of
   the SAME template; ONE implementation covers both rows (mark all `[x]`
   with the same surge URL at bookkeeping). NOTE: do NOT confuse with
   `sparkleclean` (line 166, shipped as gleam) — different template.

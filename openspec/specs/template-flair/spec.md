@@ -5,7 +5,7 @@
 Flair is a single-page creative agency landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Fancy" creative agency website template (see TEMPLATES.md,
-Bootstrap section, line 392; duplicates at lines 1006 Business, 2047 Landing
+Bootstrap section, line 392; duplicates at lines 1008 Business, 2047 Landing
 Page and 2320 One Page — mark EVERY copy `[x]` when done), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
@@ -39,7 +39,7 @@ decorative quote mark.
 
 - **Original:** ColorLib "Fancy" — creative agency website template
   (source: https://colorlib.com/wp/template/fancy/). Listed in TEMPLATES.md
-  line 392 (Bootstrap section); duplicates at lines 1006 (Business), 2047
+  line 392 (Bootstrap section); duplicates at lines 1008 (Business), 2047
   (Landing Page) and 2320 (One Page) — mark every copy `[x]` when done.
   Screenshot: `fancy-free-creative-business-website-template.jpg` (1200×933,
   reviewed visually in the browser: full-width photo hero of young

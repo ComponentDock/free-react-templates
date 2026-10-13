@@ -35,7 +35,7 @@ row toggles it: border + icon color + strikethrough + text color flip with a
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 09" — the ninth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 739 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 741 — mark that line `[x]`
   when done; single row, no duplicates). Sibling items Checkbox 01–08 were
   prepped as Tickbox / Picks / Ticktag / Checkly / Tickwell / Toggly /
   Switchly / Soluna; each item in the series is a DIFFERENT design variant
@@ -313,5 +313,5 @@ convention on every template (the original has no footer).
       the ks-cboxtags task checklist)
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
-      by implementer at ship time (mark the "Checkbox 09" row, line 739 —
+      by implementer at ship time (mark the "Checkbox 09" row, line 741 —
       Bootstrap Checkboxes category, single row)

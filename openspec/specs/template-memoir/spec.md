@@ -5,7 +5,7 @@
 Memoir is a single-page personal / lifestyle blog template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Andrea" design (see TEMPLATES.md — Blog category, line 240;
-duplicate rows at line 332 under Bootstrap and line 1696 under Fashion — one
+duplicate rows at line 332 under Bootstrap and line 1698 under Fashion — one
 recreation covers all three rows), built under a different name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

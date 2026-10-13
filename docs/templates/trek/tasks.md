@@ -7,8 +7,8 @@
 
 - **Original:** ColorLib "Trips" — free travel website template (source:
   https://colorlib.com/wp/template/trips/). Listed in TEMPLATES.md under
-  **Bootstrap (216)** at line 520; duplicate rows at line 1209 under
-  **Business (365)** and line 3010 under **Travel (44)** — same
+  **Bootstrap (216)** at line 520; duplicate rows at line 1211 under
+  **Business (365)** and line 3012 under **Travel (44)** — same
   template, ONE app only. Mark ALL THREE rows `[x]` after merge.
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/trips/`. DOM fetched

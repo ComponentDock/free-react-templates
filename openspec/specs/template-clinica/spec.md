@@ -36,7 +36,7 @@ typography, and content types (no ColorLib assets copied).
   (source: https://colorlib.com/wp/template/medicalcenter/; preview page
   `<title>` reads **"Medical HTML-5 Template"**; ColorLib page title
   "Medicalcenter - Free Medical HTML Template 2026"). TEMPLATES.md lists it
-  under **Bootstrap (216)** line 447 and **Medical (32)** line 2246 — two
+  under **Bootstrap (216)** line 447 and **Medical (32)** line 2248 — two
   IDENTICAL dup rows, both `- [ ]`, nothing shipped; mark BOTH `[x]` when
   shipped. The recreation brands itself **Clinica**.
 - **Live preview DOM analyzed (verified 2026-08-11):**
@@ -703,5 +703,5 @@ screens matching the source's Bootstrap breakpoints.
       Photographer, Emargency 1)
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md: mark BOTH dup rows `[x]` (Bootstrap line 447,
-      Medical line 2246) + surge URL + `npm run readme:status` done by
+      Medical line 2248) + surge URL + `npm run readme:status` done by
       implementer at ship time

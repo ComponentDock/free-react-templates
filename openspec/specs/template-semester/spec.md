@@ -5,7 +5,7 @@
 Semester is a single-page online-learning platform landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Courses" education website template design (see TEMPLATES.md,
-Education category, line 1626 — dup row also at line 366 under Bootstrap),
+Education category, line 1628 — dup row also at line 366 under Bootstrap),
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 

@@ -41,7 +41,7 @@ Google Fonts, lucide-react icons).
 
 - **Original:** ColorLib "Bueno" — free Food Blog website template (page
   title "Bueno - Food Blog HTML Template"). TEMPLATES.md has TWO dup rows
-  for the same source: line 250 under **Blog (60)** and line 2851 under
+  for the same source: line 250 under **Blog (60)** and line 2853 under
   **Startup (17)** — same source, ONE item; mark BOTH `[x]` at ship time.
   The recreation brands itself **Skillet** but keeps the same section
   structure, copy kinds and interaction patterns.

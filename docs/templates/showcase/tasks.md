@@ -12,8 +12,8 @@ Recreates https://colorlib.com/wp/template/ronaldo/ as `apps/showcase`
   (`ronaldo-free-template.jpg`, 1200×946) — pale lavender hero, indigo
   accents, black nav, white about with headshot.
 - Template page: https://colorlib.com/wp/template/ronaldo/
-- TEMPLATES.md dup rows (all `- [ ]`, same source): lines 2355, 2422, 2557,
-  2723 — bookkeeping should mark all of them `[x]` with the surge URL when
+- TEMPLATES.md dup rows (all `- [ ]`, same source): lines 2357, 2424, 2559,
+  2725 — bookkeeping should mark all of them `[x]` with the surge URL when
   Showcase ships.
 
 ## Task order (TDD, one commit per green slice is fine)

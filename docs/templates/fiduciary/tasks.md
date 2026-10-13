@@ -9,8 +9,8 @@
 - **Original:** ColorLib "Unioncorp" — free Bootstrap 5 finance &
   consultation website template (source: https://colorlib.com/wp/template/
   unioncorp/; page title "Unioncorp - Finance & Consultation"; listed THREE
-  times in TEMPLATES.md — line 632 [Bootstrap 5], line 1395 [Consulting],
-  line 1763 [Finance], all `- [ ]`, same slug → implement ONE app, mark ALL
+  times in TEMPLATES.md — line 632 [Bootstrap 5], line 1397 [Consulting],
+  line 1766 [Finance], all `- [ ]`, same slug → implement ONE app, mark ALL
   THREE rows `[x]` at bookkeeping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/unioncorp/ (HTTP
   200, 49.9KB HTML + `css/style.min.css` 257KB (Bootstrap 5 + custom theme)

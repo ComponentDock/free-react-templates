@@ -25,7 +25,7 @@ TypeScript.
 
 - **Original:** ColorLib "Meditative" — a free yoga / meditation studio
   website template based on Bootstrap 4. Category in TEMPLATES.md:
-  **Bootstrap** (line 450; the slug also appears at lines 1095 and 1866 —
+  **Bootstrap** (line 450; the slug also appears at lines 1097 and 1868 —
   dup rows in other category sections, all `- [ ]`, unprepped and
   unshipped; the prep stream leaves all rows alone). The recreation brands
   itself **Zendo** but keeps the same section structure, copy kinds and

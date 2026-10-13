@@ -43,8 +43,8 @@ that structure 1:1 with matching layout, tokens, typography, and content
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Multiselect 09". Listed in TEMPLATES.md under
-  **Bootstrap Multiselect (20)** (section header line 821; row at line
-  831). Free multiselect-dropdown component template. The
+  **Bootstrap Multiselect (20)** (section header line 823; row at line
+  833). Free multiselect-dropdown component template. The
   `multiselect-09` slug appears exactly ONCE in TEMPLATES.md (no dup rows
   to mark). Series siblings already prepped: Multiselect 01 → Picker
   (`openspec/specs/template-picker/`), 02 → Sifter

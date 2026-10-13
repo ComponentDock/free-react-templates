@@ -26,7 +26,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Original:** ColorLib "Miners" — page title "Miners &mdash; Colorlib
   Website Template". TEMPLATES.md category: **Bootstrap (216)**, first
   occurrence at line 453 (`- [ ]`, NOT shipped anywhere). DUP-ROW TRAP
-  (see replication skill): the `miners` slug ALSO appears at lines 1099
+  (see replication skill): the `miners` slug ALSO appears at lines 1101
   (Business 365), 1350 (Construction 29) and 2341 (One Page 91) — all
   `- [ ]` rows of the SAME template; one prep + one implementation covers
   all four rows. The recreation brands itself **Veinly** but keeps the same

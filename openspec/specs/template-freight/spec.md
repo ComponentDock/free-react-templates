@@ -4,7 +4,7 @@
 
 Freight is a logistics/transport corporate one-pager in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Logistic"
-template design (see TEMPLATES.md — appears 3×: lines 601, 1082, and 2962; all
+template design (see TEMPLATES.md — appears 3×: lines 601, 1084, and 2962; all
 three rows point to the same source and are `- [ ]` — one prep covers all,
 mark ALL `[x]` when done; verified with `grep -c 'wp/template/logistic/'` = 3.
 NOTE: do NOT confuse with "Logistics" (with an s, slug `logistics`) — that is a

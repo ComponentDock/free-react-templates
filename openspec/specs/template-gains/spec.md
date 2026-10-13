@@ -13,9 +13,9 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 - **Original:** ColorLib "Fitzone 2" — dark-hero gym/fitness template with
   red→orange gradient accents. TEMPLATES.md has THREE copies of this item
-  (lines 399, 1016, and 1848 — Bootstrap, Fitness, and one more category;
+  (lines 399, 1018, and 1848 — Bootstrap, Fitness, and one more category;
   duplicate rows); ONE recreation (Gains) covers all three. NOTE: the
-  similarly-named "Fitzone" (no "2", lines 1466/1847) is a DIFFERENT template
+  similarly-named "Fitzone" (no "2", lines 1468/1849) is a DIFFERENT template
   — do NOT conflate them.
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/fitzone2/`
   (HTTP 200, 36.4 KB HTML; page title "Fitzone"). NOTE the preview slug is
@@ -359,6 +359,6 @@ landmark and a document title.
 - [ ] Placeholder images seeded (`picsum.photos/seed/gains-<n>/<w>/<h>`);
       no copied assets
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` on ALL
-      THREE dup rows, lines 399, 1016, AND 1848, + surge URL) — NOT by the
+      THREE dup rows, lines 399, 1018, AND 1848, + surge URL) — NOT by the
       prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

@@ -30,7 +30,7 @@ copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Noxen". Listed in TEMPLATES.md under **Bootstrap
-  (216)** (line 467) — dup rows also at lines 1112 (Business), 2067 (Landing
+  (216)** (line 467) — dup rows also at lines 1114 (Business), 2067 (Landing
   Page), 2535 (Portfolio); all four rows are `- [ ]` and no app ships it yet.
   Free digital-agency template (multi-page demo: index, services, projects,
   about, blog, contact — the index page is the recreation target).
@@ -447,5 +447,5 @@ viewports.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time (mark ALL FOUR "Noxen" rows: line 467
-      Bootstrap, line 1112 Business, line 2067 Landing Page, line 2535
+      Bootstrap, line 1114 Business, line 2069 Landing Page, line 2537
       Portfolio)

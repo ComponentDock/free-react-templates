@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 15" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-15/). Single occurrence
-  in TEMPLATES.md (line 699, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 701, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Interval** (a range-of-dates word;
   direct sibling of Equinox = Calendar 14 and Span = Calendar 13).
 - **Preview URL analyzed:**

@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-04/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 780, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 782, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 04 → **Coda** (the concluding passage of
   a piece of music or literature — fits a footer template; no collision with
   `apps/`, `openspec/specs/`, `docs/templates/` — verified 2026-08-16).
@@ -129,7 +129,7 @@ li:last-child a` `padding-left: 0` (source typo — keep as-is). Copy:
       link, 3 link columns with exact link sets, divider, legal links,
       socials with aria-labels, copyright, responsive classes present)
 - [ ] `npm run verify:app coda` passes; commit `feat: add coda …`; PR +
-      immediate squash merge; then TEMPLATES.md bookkeeping — line 780
+      immediate squash merge; then TEMPLATES.md bookkeeping — line 782
       (Bootstrap Footer 04) → `[x]` + surge URL +
       `npm run readme:status`
 
@@ -149,4 +149,4 @@ li:last-child a` `padding-left: 0` (source typo — keep as-is). Copy:
       horizontal overflow
 - [ ] Roboto Google Fonts link; no images; no ColorLib anywhere in
       `apps/coda`
-- [ ] `npm run verify:app coda` green; TEMPLATES.md line 780 bookkept `[x]`
+- [ ] `npm run verify:app coda` green; TEMPLATES.md line 782 bookkept `[x]`

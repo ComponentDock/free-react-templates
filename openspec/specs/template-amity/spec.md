@@ -5,8 +5,8 @@
 Amity is a single-page charity/non-profit website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "The Charity" non-profit website template design (see
-TEMPLATES.md, Bootstrap category, line 510 — duplicate rows at line 1281 under
-Charity (37) and line 1305 under Church (22), same template, one app only),
+TEMPLATES.md, Bootstrap category, line 510 — duplicate rows at line 1283 under
+Charity (37) and line 1307 under Church (22), same template, one app only),
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript (strict). No ColorLib references in app code —
 provenance lives in this spec, TEMPLATES.md, and the PR.

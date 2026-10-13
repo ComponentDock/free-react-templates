@@ -14,7 +14,7 @@ React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWICE in TEMPLATES.md (dup-row trap): line 622
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one) and
-line 1924 (**Hotel (38)**) — both `- [ ]` rows of the SAME template. ONE
+line 1926 (**Hotel (38)**) — both `- [ ]` rows of the SAME template. ONE
 implementation covers both rows (mark all `[x]` with the same surge URL at
 bookkeeping time).
 
@@ -406,5 +406,5 @@ bookkeeping time).
       address/phone/email placeholders as-is or normalize, note in PR
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL TWO `- [ ]` rows
-      (line 622 Bootstrap 5, line 1924 Hotel) `[x]` with the same
+      (line 622 Bootstrap 5, line 1926 Hotel) `[x]` with the same
       surge URL + `npm run readme:status`

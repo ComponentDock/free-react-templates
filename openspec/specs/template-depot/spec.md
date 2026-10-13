@@ -5,8 +5,8 @@
 Depot is a single-page real-estate property landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Warehouse" real estate website template (see TEMPLATES.md,
-Bootstrap section, line 528; duplicate rows at line 1223 [Business section]
-and line 2619 [Real Estate section] — mark EVERY copy `[x]` when done), built
+Bootstrap section, line 528; duplicate rows at line 1225 [Business section]
+and line 2621 [Real Estate section] — mark EVERY copy `[x]` when done), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
 CSS 4 + TypeScript.
 
@@ -64,7 +64,7 @@ a news section, a contact split with form, and a dark footer with newsletter
 
 - **Original:** ColorLib "Warehouse" — real estate website template
   (source: https://colorlib.com/wp/template/warehouse/). Listed in
-  TEMPLATES.md line 528 (Bootstrap section); duplicate rows at lines 1223
+  TEMPLATES.md line 528 (Bootstrap section); duplicate rows at lines 1225
   (Business) and 2619 (Real Estate) — same source, ONE implementation
   (line 528 is the claim row; mark ALL THREE `[x]` after merge).
   Screenshot: `warehouse-free-template.jpg` (1200×946, viewed in the

@@ -16,7 +16,7 @@
   Brand name used in the source copy: "Rolax". TEMPLATES.md category:
   **Bootstrap 5 (89)**, first occurrence at line 622 (`- [ ]`, source NOT
   shipped anywhere). DUP-ROW TRAP: the `rolax` slug also appears at line
-  1924 (**Hotel (38)**) — both `- [ ]` rows of the SAME template; ONE
+  1926 (**Hotel (38)**) — both `- [ ]` rows of the SAME template; ONE
   implementation covers both rows (mark all `[x]` with the same surge URL at
   bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-14):**

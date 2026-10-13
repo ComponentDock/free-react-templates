@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 09" — the NINTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-09/).
-  Single occurrence in TEMPLATES.md (line 716, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 718, "Bootstrap Carousels (20)"
   category — no dup rows; no `[x]` row anywhere for carousel-09).
   Recreation uses the NEW name **Ravello** (ninth of the carousel-series
   renames; lineage: carousel-01 → wanderlust, carousel-02 → faraway,

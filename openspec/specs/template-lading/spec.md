@@ -12,7 +12,7 @@ Lading is a single-page logistics & cargo shipping website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Cargo" design (see TEMPLATES.md — listed under Bootstrap,
 line 357, first unchecked item whose prep did not exist on main; the same
-slug also appears as a duplicate at line 925), built under the monorepo
+slug also appears as a duplicate at line 927), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a freight-forwarding landing page: a thin grey top bar

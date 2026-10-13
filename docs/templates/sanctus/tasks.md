@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Byfaith" — free responsive Bootstrap 5 church
   website template (source: https://colorlib.com/wp/template/byfaith/).
-  TEMPLATES.md has TWO copies (line 554 — Bootstrap 5 category, line 1289 —
+  TEMPLATES.md has TWO copies (line 554 — Bootstrap 5 category, line 1291 —
   Church category; mark BOTH `[x]` when done). Both rows use the correct
   screenshot `byfaith-free-template.jpg`.
 - **Demo DOM analyzed:** REACHABLE — `https://preview.colorlib.com/theme/byfaith/`

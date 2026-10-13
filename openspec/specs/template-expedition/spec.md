@@ -23,7 +23,7 @@ quick links, and a newsletter form.
 
 - **Original:** ColorLib "Trips". Source slug is `trips` and the demo's theme
   folder is also `trips` (no hyphen, no caveat). TEMPLATES.md has **THREE
-  duplicate rows** for Trips: line 520 under **## Bootstrap (216)**, line 1209
+  duplicate rows** for Trips: line 520 under **## Bootstrap (216)**, line 1211
   under **## Business (365)**, and line 3012 under **## Travel (44)** — ALL
   THREE must be marked `[x]` with the same surge URL when done.
 - **Preview URL:** `https://preview.colorlib.com/theme/trips/` — HTTP 200,

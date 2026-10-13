@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Vineyard" — church website template
   (source: https://colorlib.com/wp/template/vineyard/). Listed in
-  TEMPLATES.md line 526 (Bootstrap section); dup row at line 1306 — same
+  TEMPLATES.md line 526 (Bootstrap section); dup row at line 1308 — same
   source, ONE implementation (line 526 is the claim row; mark BOTH `[x]`
   after merge).
 - **Preview URL:** https://preview.colorlib.com/theme/vineyard/ (title
@@ -145,6 +145,6 @@
    moved above cards); merge immediately
    (`gh pr merge --squash --delete-branch`).
 7. After merge: pull --rebase; mark TEMPLATES.md line 526 `[x]` AND the
-   dup row at line 1306 `[x]`, add surge URL
+   dup row at line 1308 `[x]`, add surge URL
    `https://parish.free.componentdock.com` + homepage;
    `npm run readme:status`; push.

@@ -33,8 +33,8 @@ types (no ColorLib assets copied).
   template (source: https://colorlib.com/wp/template/me/; preview page
   `<title>` reads **"Me — Website Template by Colorlib"**). TEMPLATES.md
   lists it under **Bootstrap (216)** (line 446) with THREE IDENTICAL dup
-  rows: **One Page (91)** line 2336, **Personal (53)** line 2405, and
-  **Portfolio (89)** line 2526 — all four `- [ ]`, nothing shipped; mark
+  rows: **One Page (91)** line 2338, **Personal (53)** line 2407, and
+  **Portfolio (89)** line 2528 — all four `- [ ]`, nothing shipped; mark
   ALL FOUR `[x]` when shipped. The recreation brands itself **Vitae**.
 - **Live preview DOM analyzed (verified 2026-08-11):**
   `https://preview.colorlib.com/theme/me/` — HTTP 200, 33.2 KB HTML +
@@ -489,5 +489,5 @@ fewer/single columns on small screens, matching the source's Bootstrap
       exported function for tests)
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md: mark ALL FOUR dup rows `[x]` (Bootstrap line 446,
-      One Page line 2336, Personal line 2405, Portfolio line 2526) + surge
+      One Page line 2338, Personal line 2407, Portfolio line 2528) + surge
       URL + `npm run readme:status` done by implementer at ship time

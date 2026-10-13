@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Flash" — photography portfolio template (source:
   https://colorlib.com/wp/template/flash/). Listed in TEMPLATES.md
-  (Bootstrap section, line 400; duplicate at line 2447 under Photography —
+  (Bootstrap section, line 400; duplicate at line 2449 under Photography —
   mark EVERY copy `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/flash/ — reachable
   (HTTP 200, 18.1 KB, title "Flash Photography"). Fetched:

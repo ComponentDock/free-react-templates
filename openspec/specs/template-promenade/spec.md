@@ -67,7 +67,7 @@ kind; input labels/placeholders recreated as the same form-field kinds).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 15". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 799; row at line 814). Free signup-form
+  Modals (20)** (section header line 800; row at line 816). Free signup-form
   modal component template. The `modal-15` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows to mark). Demo `<title>` uses the generic
   "Modal #5" copy.

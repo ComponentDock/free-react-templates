@@ -31,7 +31,7 @@ with `apps/`, `openspec/specs/`, `docs/templates/`, or any TEMPLATES.md name
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Bcharity" (page title: "Charity"). Listed in
-  TEMPLATES.md under **Charity (13)** (section header line 1245; the item
+  TEMPLATES.md under **Charity (37)** (section header line 1247; the item
   at line 1253 — `wp/template/bcharity/`). Sibling completed items in the
   category: Adopted → GiveAid, Aid → Succor, Amor → Caritas, Aspiration
   → Kindred, Cause → Altruist, Charitee → Giveback, Chariter → Meliora.

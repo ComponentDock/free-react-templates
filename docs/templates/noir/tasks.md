@@ -8,8 +8,8 @@
 - **Original:** ColorLib "Oraxol" — dark minimal designer/developer studio
   portfolio one-pager (page title "Oraxol - Free Bootstrap 5 Template by
   Colorlib"; source: https://colorlib.com/wp/template/oraxol/, appears 3× in
-  TEMPLATES.md — line 613 Bootstrap 5 (89) + line 1119 Business (365) + line
-  2537 Portfolio (89); mark ALL THREE `[x]` when done). The app name MUST
+  TEMPLATES.md — line 613 Bootstrap 5 (89) + line 1121 Business (365) + line
+  2539 Portfolio (89); mark ALL THREE `[x]` when done). The app name MUST
   differ from the source — hence **Noir** (French for "black"; single
   lowercase word, no collision with `apps/`, `openspec/specs/`, or
   `docs/templates/` — verified 2026-08-13).

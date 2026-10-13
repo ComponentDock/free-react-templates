@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 17" — free responsive Bootstrap
   4.3.1 footer-component demo (source:
   https://colorlib.com/wp/template/bootstrap-footer-17/). TEMPLATES.md line
-  793, single `- [ ]` row. This prep: Bootstrap Footer 17 → **Valediction**.
+  795, single `- [ ]` row. This prep: Bootstrap Footer 17 → **Valediction**.
   Bookkeep that row `[x]` when the app ships.
 - **Preview URL quirk (series-wide):**
   `https://preview.colorlib.com/theme/bootstrap-footer-17/` returns 404. Use
@@ -144,7 +144,7 @@ uppercase; letter-spacing: 1px`)
 10. [ ] Green: run `npm run verify:app valediction` until 100% coverage
 11. [ ] Self-review (docs/self-review.md); commit `feat: valediction — Footer
    template (ColorLib Bootstrap Footer 17)`; PR + immediate squash merge
-12. [ ] Bookkeep TEMPLATES.md line 793 `[x]` + surge URL + homepage + `npm
+12. [ ] Bookkeep TEMPLATES.md line 795 `[x]` + surge URL + homepage + `npm
    run readme:status` (in the IMPLEMENTER's post-merge commit — NOT the
         prep stream)
 

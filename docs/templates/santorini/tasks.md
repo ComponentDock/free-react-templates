@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 11" — the ELEVENTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-11/).
-  Single occurrence in TEMPLATES.md (line 718, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 720, "Bootstrap Carousels (20)"
   category — no dup rows; no `[x]` row anywhere for carousel-11).
   Recreation uses the NEW name **Santorini** (eleventh of the carousel-series
   renames; lineage: carousel-01 → wanderlust, carousel-02 → faraway,

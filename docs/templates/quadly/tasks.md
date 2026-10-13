@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 11" — eleventh of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-11/).
-  TEMPLATES.md line 741 — mark that line `[x]` when done (single row, no
+  TEMPLATES.md line 743 — mark that line `[x]` when done (single row, no
   duplicate rows). **NUMBERING QUIRK:** entries 01–10 map to
   `/theme/bootstrap/checkbox-01/…checkbox-10/` (custom designs branded
   "Checkbox #01"–"#10": Tickbox's 6 colored checkboxes, Taskly's
@@ -97,7 +97,7 @@
 8. Verify: `scripts/verify-app.sh quadly` (FAST_MODE per-app gate) + `npm run
 spec:validate`.
 9. PR `feat/template-quadly` → squash-merge to main; then bookkeeping:
-   TEMPLATES.md line 741 `[~]`→`[x]` + surge URL
+   TEMPLATES.md line 743 `[~]`→`[x]` + surge URL
    (`quadly.free.componentdock.com`) + `npm run readme:status`; push.
 10. Do NOT reference ColorLib in app files (provenance only in spec/
     TEMPLATES.md/PR); footer MUST link componentdock.com.

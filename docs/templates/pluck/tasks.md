@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Multiselect 08" — free single-page multiselect
   dropdown component template (source:
   https://colorlib.com/wp/template/multiselect-08/). TEMPLATES.md row: line
-  830 (**Bootstrap Multiselect (20)**, section header line 821). The
+  832 (**Bootstrap Multiselect (20)**, section header line 823). The
   `multiselect-08` slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-17 by direct
   fetch + screenshot cross-check):** the default

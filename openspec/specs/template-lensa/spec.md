@@ -6,7 +6,7 @@ Lensa is a single-page photography studio / portfolio website template in
 the free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Nissa" design (see TEMPLATES.md — listed in the Bootstrap
 (216) category at line 465, with duplicate rows in Business (365) at line
-1110 and Photography (49) at line 2458), built under a DIFFERENT name —
+1112 and Photography (49) at line 2460), built under a DIFFERENT name —
 **Lensa** (a lens-themed word for the photography-studio design; single
 lowercase word, no collision with `apps/`, `openspec/specs/`,
 `docs/templates/` or TEMPLATES.md — verified 2026-08-11) per the monorepo

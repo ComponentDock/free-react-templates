@@ -94,7 +94,7 @@ reuse, forbidden). Source slug + preview URL are recorded below.
 
 - **Original:** ColorLib "Colorlib Wizard 1" (page title: "FormWizard_v1").
   Listed in TEMPLATES.md under **Bootstrap Wizards (30)** (section header
-  line 844; the one and only row at line 846 — `wp/template/colorlib-wizard-1/`
+  line 846; the one and only row at line 848 — `wp/template/colorlib-wizard-1/`
   appears exactly ONCE; wizard-10..19 are separate rows). The 30-member
   family: colorlib-wizard-1 … 30. **This is the chain seed — no sibling
   spec exists yet.**

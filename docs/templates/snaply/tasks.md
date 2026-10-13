@@ -12,7 +12,7 @@
 - **Original:** ColorLib "Photosen" — page title "Photosen - Photography
   Portfolio". TEMPLATES.md category: **Bootstrap 5 (89)**, first occurrence
   at line 618 (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the
-  `photosen` slug also appears at lines 2466 (Photography 49) and 2544
+  `photosen` slug also appears at lines 2468 (Photography 49) and 2544
   (Portfolio 89) — all `- [ ]` rows of the same template; ONE implementation
   covers all three rows (mark all `[x]` at bookkeeping). The recreation
   brands itself **Snaply**.

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 07" — seventh of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-07/).
-  TEMPLATES.md line 737 — mark that line `[x]` when done (single row).
+  TEMPLATES.md line 739 — mark that line `[x]` when done (single row).
   NOTE: unlike Checkbox 01–03 (Tickbox/Picks/Ticktag), each item in this
   series is a DIFFERENT variant design — Checkbox 07 is the two-switch
   on/off-toggle variant with in-track "ON/OFF" labels, NOT the Tickbox

@@ -29,7 +29,7 @@ This is the switch-toggle variant — the sixth of the "Bootstrap Checkboxes
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 06" — the sixth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 736 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 738 — mark that line `[x]`
   when done; single row, no duplicates). Sibling items Checkbox 01/02/03/04/05
   were prepped as Tickbox / Picks / Ticktag / Checkly / Tickwell; each item in
   the series is a DIFFERENT design variant (this one is the switch-toggle
@@ -290,5 +290,5 @@ convention on every template (the original has no footer).
       0.4s halo puff); honors `prefers-reduced-motion`
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
-      by implementer at ship time (mark the "Checkbox 06" row, line 736 —
+      by implementer at ship time (mark the "Checkbox 06" row, line 738 —
       Bootstrap Checkboxes category, single row)

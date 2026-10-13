@@ -136,7 +136,7 @@ content kinds (no ColorLib assets copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Bootstrap Buttons 18". Listed in TEMPLATES.md
-  under **Bootstrap Buttons (20)** (line 679). Free UI-kit button
+  under **Bootstrap Buttons (20)** (line 681). Free UI-kit button
   component template. The `bootstrap-buttons-18` slug appears exactly once
   in TEMPLATES.md (no duplicate rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-14):** the default
@@ -715,5 +715,5 @@ convention on every template (the original has no footer).
       sibling apps handle it; hostelry imports `cn` from the ui barrel)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`
       done by implementer at ship time (mark the "Bootstrap Buttons 18"
-      row, line 679 — Bootstrap Buttons (20) category; single row, no
+      row, line 681 — Bootstrap Buttons (20) category; single row, no
       dups)

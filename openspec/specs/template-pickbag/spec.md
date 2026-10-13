@@ -59,7 +59,7 @@ and preview URL are recorded below.
 
 - **Original:** ColorLib "Multiselect 19" (page title: "Multi Select #9").
   Listed in TEMPLATES.md under **Bootstrap Multiselect (20)** (section header
-  line 835; the item at line 843 — `wp/template/multiselect-19/`).
+  line 823; the item at line 843 — `wp/template/multiselect-19/`).
 - **Preview URL — REACHABLE (via bootstrap sub-path):** the naive
   `https://preview.colorlib.com/theme/multiselect-19/` returns 404; the
   REAL preview is the bootstrap path

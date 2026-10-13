@@ -5,8 +5,8 @@
 Picks is a single-page UI-component demo template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Checkbox 02"
 Bootstrap component template design
-(source: https://colorlib.com/wp/template/checkbox-02/, TEMPLATES.md line 732
-under **Bootstrap Checkboxes (20)** — single row, no duplicates; mark line 732
+(source: https://colorlib.com/wp/template/checkbox-02/, TEMPLATES.md line 734
+under **Bootstrap Checkboxes (20)** — single row, no duplicates; mark line 734
 `[x]` when done), built under a DIFFERENT name ("Picks" — what you pick / your
 favorites, matching the demo's "Choose your favorite sports" picker) per the
 monorepo naming mandate, with the monorepo stack: Vite + React 19 + Tailwind
@@ -223,6 +223,6 @@ page with a main landmark and a document title.
 - [ ] Icons: lucide-react (no FontAwesome, no copied assets)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 732 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 734 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

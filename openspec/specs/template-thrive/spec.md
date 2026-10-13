@@ -15,7 +15,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWICE in TEMPLATES.md (dup-row trap): line 627
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one) and
-line 1181 (**Business (365)**) — both are `- [ ]` rows of the SAME template.
+line 1183 (**Business (365)**) — both are `- [ ]` rows of the SAME template.
 ONE implementation covers both rows (mark all `[x]` with the same surge URL
 at bookkeeping time).
 
@@ -460,5 +460,5 @@ dark-teal panel covering the right 70% (100% on mobile).
       client-side router needed
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark BOTH `- [ ]` rows (line
-      627 Bootstrap 5, line 1181 Business) `[x]` with the same surge URL
+      627 Bootstrap 5, line 1183 Business) `[x]` with the same surge URL
       (`https://thrive.free.componentdock.com`) + `npm run readme:status`

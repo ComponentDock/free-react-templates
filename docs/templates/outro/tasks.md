@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-05/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 781, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 783, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 05 → **Outro** (the concluding section
   of a piece of music or performance — continues the series' ending-themed
   names Colophon → Envoi → Epilogue → Coda; no collision with `apps/`,
@@ -150,7 +150,7 @@
       legal links + copyright + Component Dock link, responsive order
       classes present)
 - [ ] `npm run verify:app outro` passes; commit `feat: add outro …`; PR +
-      immediate squash merge; then TEMPLATES.md bookkeeping — line 781
+      immediate squash merge; then TEMPLATES.md bookkeeping — line 783
       (Bootstrap Footer 05) → `[x]` + surge URL +
       `npm run readme:status`
 
@@ -174,4 +174,4 @@
       lg+; stacked below lg; no horizontal overflow
 - [ ] Poppins Google Fonts link; no images; no ColorLib anywhere in
       `apps/outro`
-- [ ] `npm run verify:app outro` green; TEMPLATES.md line 781 bookkept `[x]`
+- [ ] `npm run verify:app outro` green; TEMPLATES.md line 783 bookkept `[x]`

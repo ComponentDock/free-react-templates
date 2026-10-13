@@ -5,7 +5,7 @@
 Rhythm is a single-page DJ/music-artist website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Djoz" DJ template design (see TEMPLATES.md, line 375 under
-**Bootstrap (216)** — duplicate row at line 2264 under **Music (19)**, same
+**Bootstrap (216)** — duplicate row at line 2266 under **Music (19)**, same
 template, ONE app only), built under a different name ("Rhythm" — a
 music-beat word, matching the source's DJ/music-artist positioning) with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No

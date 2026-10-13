@@ -6,7 +6,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Revive" (TEMPLATES.md — TWO copies: line 283 under
-  `## Blog (60)` and line 2211 under `## Magazine (34)`; mark BOTH `[x]` when
+  `## Blog (60)` and line 2213 under `## Magazine (34)`; mark BOTH `[x]` when
   done — whole-line replace, both copies carry the same surge URL).
 - **Source URL:** https://colorlib.com/wp/template/revive/
 - **Preview URL:** https://preview.colorlib.com/theme/revive/

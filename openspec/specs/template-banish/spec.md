@@ -124,7 +124,7 @@ Source slug + preview URL are recorded below.
 
 - **Original:** ColorLib "Colorlib Wizard 10" (page title: "FormWizard_v10").
   Listed in TEMPLATES.md under **Bootstrap Wizards (30)** (section header
-  line 844; the one and only row at line 847 —
+  line 846; the one and only row at line 849 —
   `wp/template/colorlib-wizard-10/` appears exactly ONCE; the close string
   matches for wizard-1/wizard-11..19 rows are `-1` prefix substrings, not
   duplicates). Member 10 of colorlib-wizard-1 … 30. Sibling preps: Conjure

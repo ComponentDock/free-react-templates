@@ -6,7 +6,7 @@ Rentora is a single-page real-estate website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Rental" design (see TEMPLATES.md — listed under Bootstrap,
 line 489, first unchecked item whose prep did not exist on main; the same
-slug also appears as duplicates at line 1149 (Business) and line 2608 (Real
+slug also appears as duplicates at line 1151 (Business) and line 2610 (Real
 Estate)), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 

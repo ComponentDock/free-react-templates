@@ -13,7 +13,7 @@
 - **Original:** ColorLib "Academy" — free Bootstrap 4 education website
   template (page title: "Academy - Free Bootstrap 4 Education Template"),
   listed TWICE in TEMPLATES.md: **Bootstrap (216)** line 328 AND
-  **Education (43)** line 1623 (same source URL — mark BOTH `[x]` when
+  **Education (43)** line 1625 (same source URL — mark BOTH `[x]` when
   shipped). The recreation brands itself **Campus**.
 - **Preview DOM analyzed (verified 2026-08-09):**
   `https://preview.colorlib.com/theme/academy/` — HTTP 200, 33.9 KB HTML +

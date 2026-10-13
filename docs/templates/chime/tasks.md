@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 04" — fourth of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-04/).
-  TEMPLATES.md has ONE copy (line 757). Series siblings: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 759). Series siblings: Dropdown 01 was
   prepped as **Menubar**, Dropdown 02 as **Popmenu**, Dropdown 03 as
   **Skycast** (see `docs/templates/menubar/`, `docs/templates/popmenu/`,
   `docs/templates/skycast/`).
@@ -105,7 +105,7 @@ rgba(0,0,0,.05)` — last row none, `white-space: normal`, hover
 8. **Gate + ship** — `npm run verify:app chime` must pass (typecheck + lint +
    knip + fallow + 100% coverage + build); commit conventionally, open PR to
    main, merge immediately with `gh pr merge --squash --delete-branch`, then
-   bookkeeping: `[x]` + surge URL + homepage in TEMPLATES.md line 757 +
+   bookkeeping: `[x]` + surge URL + homepage in TEMPLATES.md line 759 +
    `npm run readme:status`, push.
 
 ## Fidelity pitfalls (learned from the Dropdown series)

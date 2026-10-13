@@ -5,7 +5,7 @@
 Harmonia is a music streaming app landing page in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Musiclab"
 template design (see TEMPLATES.md — appears 2×: line 606 (Bootstrap 5) and
-line 2271 (Music); both rows point to the same source and are `- [ ]` — one
+line 2273 (Music); both rows point to the same source and are `- [ ]` — one
 prep covers both, mark ALL `[x]` when done; verified with
 `grep -c 'wp/template/musiclab/' TEMPLATES.md` = 2), built under a DIFFERENT
 name (Harmonia — music-themed, "harmony"; single lowercase word, no collision

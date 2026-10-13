@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 14" — free responsive Bootstrap
   4.3.1 footer-component demo (source:
   https://colorlib.com/wp/template/bootstrap-footer-14/). TEMPLATES.md line
-  790, single `- [ ]` row. This prep: Bootstrap Footer 14 → **Omega**.
+  792, single `- [ ]` row. This prep: Bootstrap Footer 14 → **Omega**.
   Bookkeep that row `[x]` when the app ships.
 - **Preview URL quirk (series-wide):** `https://preview.colorlib.com/theme/bootstrap-footer-14/`
   returns 404. Use `https://preview.colorlib.com/theme/bft/bootstrap-footer-14/`
@@ -139,7 +139,7 @@ rgba(255,255,255,.1)`, `margin: 0 10px 0 0`), centered white 20px
 6. [ ] Run `npm run verify:app omega` until green (typecheck + lint +
        knip + fallow + 100% coverage + build)
 7. [ ] Commit `feat: Omega — footer component demo (ColorLib Bootstrap
- Footer 14)`; PR + immediate squash merge; then TEMPLATES.md line 790
+ Footer 14)`; PR + immediate squash merge; then TEMPLATES.md line 792
        `[~]`→`[x]` + surge URL + homepage + `npm run readme:status`, push
 
 ## Verification (pre-merge, from the spec)

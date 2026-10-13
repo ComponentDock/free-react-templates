@@ -43,7 +43,7 @@ photo is replaced with a seeded picsum placeholder).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 09". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 808). Free
+  Modals (20)** (section header line 800; row at line 810). Free
   sign-in/sign-up auth modal component template. The `modal-09` slug appears
   exactly ONCE in TEMPLATES.md (no dup rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-16):** the default

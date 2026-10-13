@@ -4,7 +4,7 @@
 
 Hex is a three-step account-registration wizard in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Colorlib
-Wizard 23" template design (see TEMPLATES.md line 861; source slug
+Wizard 23" template design (see TEMPLATES.md line 863; source slug
 `wp/template/colorlib-wizard-23/`), built under a DIFFERENT name (Hex — a
 single lowercase word from the wizard/magic naming theme of the sibling
 wizard preps: Conjure, Conjury, Banish, Dispel, Abjure, Bewitch, Enthrall,

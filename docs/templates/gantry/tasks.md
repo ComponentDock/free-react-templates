@@ -8,8 +8,8 @@
 - **Original:** ColorLib "Engineers" — free construction / engineering
   company HTML template (source: https://colorlib.com/wp/template/engineers/).
   Listed in TEMPLATES.md under **Bootstrap (216)** at line 386; duplicate
-  rows at line 996 under **Business (365)**, line 1346 under
-  **Construction (29)** and line 1945 under **Industrial (15)** — same
+  rows at line 998 under **Business (365)**, line 1348 under
+  **Construction (29)** and line 1947 under **Industrial (15)** — same
   template, ONE app only. Mark ALL FOUR rows `[x]` after merge.
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/engineers/`. DOM fetched

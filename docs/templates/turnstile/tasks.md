@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Modal 20" — free single-page
   password-protected-link modal component template (source:
-  https://colorlib.com/wp/template/modal-20/). TEMPLATES.md row: line 819
-  (**Bootstrap Modals (20)**, header line 798). The `modal-20` slug appears
+  https://colorlib.com/wp/template/modal-20/). TEMPLATES.md row: line 821
+  (**Bootstrap Modals (20)**, header line 800). The `modal-20` slug appears
   exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the
   default `https://preview.colorlib.com/theme/modal-20/` returns **404** —
@@ -145,7 +145,7 @@ readme:status`; confirm `injectUiSource()` in `vite.config.ts` (copy the
 8. **Gate + ship** — `scripts/verify-app.sh turnstile` (typecheck + lint +
    100% coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single
-   TEMPLATES.md row (line 819) `[x]` with
+   TEMPLATES.md row (line 821) `[x]` with
    `https://turnstile.free.componentdock.com` + `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

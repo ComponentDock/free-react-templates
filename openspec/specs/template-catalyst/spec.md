@@ -6,7 +6,7 @@ Catalyst is a single-page digital-agency website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Unbrew" design (see TEMPLATES.md — listed THREE times, all
 three rows are the same source slug: line 631 in the Bootstrap 5 section,
-line 1213 in the Business section, and line 2096 in the Landing Page
+line 1215 in the Business section, and line 2098 in the Landing Page
 section; implement ONE app and mark ALL THREE rows `[x]` at bookkeeping),
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -28,7 +28,7 @@ typography, and content types (no ColorLib assets copied).
 - **Original:** ColorLib "Unbrew" — free Bootstrap 5 digital-agency /
   business landing website template (source:
   https://colorlib.com/wp/template/unbrew/; listed THREE times in
-  TEMPLATES.md — line 631 [Bootstrap 5], line 1213 [Business], line 2096
+  TEMPLATES.md — line 631 [Bootstrap 5], line 1215 [Business], line 2098
   [Landing Page], all `- [ ]`, same slug → one app, mark all three rows
   `[x]`).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/unbrew/ (HTTP

@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 20" — free responsive Bootstrap
   4.3.1 footer-component demo (source:
   https://colorlib.com/wp/template/bootstrap-footer-20/). TEMPLATES.md line
-  796, single `- [ ]` row. This prep: Bootstrap Footer 20 → **Peroration**
+  798, single `- [ ]` row. This prep: Bootstrap Footer 20 → **Peroration**
   ("the concluding part of a speech" — the FINAL word in the footer series'
   ending-themed naming: … Farewell → Swansong → **Peroration**). Bookkeep
   that row `[x]` when the app ships.
@@ -123,4 +123,4 @@ rgba(255,255,255,0.1)`):
 - [ ] PR: source (ColorLib Bootstrap Footer 20), `/theme/bft/` preview URL,
       tokens, what differs (Component Dock footer link, current-year
       copyright, distinct placeholder email, inline-SVG socials, focus
-      rings). Bookkeep TEMPLATES.md line 796 `[x]` + surge URL after merge.
+      rings). Bookkeep TEMPLATES.md line 798 `[x]` + surge URL after merge.

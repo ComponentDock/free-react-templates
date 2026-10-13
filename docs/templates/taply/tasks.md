@@ -14,7 +14,7 @@
 - **Original:** ColorLib "MobApp" — page title "MobApp - App Landing Page
   Template". TEMPLATES.md category: **Mobile App (27)**, first occurrence
   at line 456 (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the
-  `mobapp` slug also appears at line 1477 (One Page 101) and line 2063
+  `mobapp` slug also appears at line 1479 (One Page 101) and line 2065
   (Landing Page 91) — all `- [ ]` rows of the same template; ONE
   implementation covers all three rows (mark all `[x]` with the same
   surge URL at bookkeeping).

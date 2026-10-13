@@ -11,7 +11,7 @@ per the monorepo naming mandate (never reuse the ColorLib source name),
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWICE in TEMPLATES.md (dup-row trap): line 1171
-(appears in the main listing) and line 2702 (Restaurant category) — both
+(appears in the main listing) and line 2700 (Restaurant category) — both
 `- [ ]` rows of the SAME template. ONE implementation covers all rows
 (mark all `[x]` with the same surge URL at bookkeeping time).
 

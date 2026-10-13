@@ -13,7 +13,7 @@ React 19 + Tailwind CSS 4 + TypeScript.
 - **Original:** ColorLib "Fox" — free responsive Bootstrap 5 university /
   education website template (source: https://colorlib.com/wp/template/fox/).
   TEMPLATES.md has TWO copies of this item (line 403 in the Bootstrap
-  category and line 1640 in the Education category — mark BOTH `[x]` when
+  category and line 1642 in the Education category — mark BOTH `[x]` when
   done). Both rows reference the correct screenshot
   (`fox-free-template.jpg`).
 - **Demo DOM analyzed:** REACHABLE. `https://preview.colorlib.com/theme/fox/`
@@ -412,4 +412,4 @@ and a document title.
 - [ ] Gallery: photo tiles with orange circular icon overlay, 2-col on mobile
 - [ ] Footer: #1a1a1a, 5 widgets (Have a Questions?, Recent Blog, Quick Links, Subscribe Us! with purple button, Connect With Us), orange underlines, ColorLib credit
 - [ ] Document title "Ivy — University Template"
-- [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 403 (Bootstrap) and line 1640 (Education)
+- [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 403 (Bootstrap) and line 1642 (Education)

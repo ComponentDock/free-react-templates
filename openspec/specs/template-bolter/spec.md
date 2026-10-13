@@ -56,7 +56,7 @@ ColorLib assets copied; the 50 state names are public knowledge).
 
 - **Original:** ColorLib "Multiselect 15" (marketing title: "Multi Select
   #5" — the page title tag). Listed in TEMPLATES.md under **Bootstrap
-  Multiselect (20)** (section header line 821; row at line 837 —
+  Multiselect (20)** (section header line 823; row at line 839 —
   `multiselect-15` appears exactly ONCE in TEMPLATES.md, no dup rows to
   mark). Series siblings already prepped: Multiselect 01 → Picker, 02 →
   Sifter, 03 → Winnow, 04 → Cull (Semantic UI); 05 → Glean, 06 → Garner, 07

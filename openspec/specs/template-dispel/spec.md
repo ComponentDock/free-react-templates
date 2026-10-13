@@ -115,7 +115,7 @@ preview URL are recorded below.
 
 - **Original:** ColorLib "Colorlib Wizard 11" (page title: "Sign Up Form").
   Listed in TEMPLATES.md under **Bootstrap Wizards (30)** (section header
-  line 844; the one and only row at line 848 —
+  line 846; the one and only row at line 850 —
   `wp/template/colorlib-wizard-11/` appears exactly ONCE; close-string
   matches for wizard-1/10/12..19 rows are prefix substrings, not
   duplicates). Member 11 of colorlib-wizard-1 … 30. Sibling preps:

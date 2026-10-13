@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 18" — the EIGHTEENTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-18/).
-  Single occurrence in TEMPLATES.md (line 725, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 727, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Manarola**
   (eighteenth of the carousel-series renames; lineage: carousel-01 →
   wanderlust, carousel-02 → faraway, carousel-03 → fjord, carousel-04 →

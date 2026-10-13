@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Royal" (Royal Hotel) — free hotel/resort
   landing template (source: https://colorlib.com/wp/template/royal/).
-  TEMPLATES.md rows: **line 491** (R section) AND **line 1926**
+  TEMPLATES.md rows: **line 491** (R section) AND **line 1928**
   (duplicate row — same URL; the `royal` slug appears exactly TWICE;
   mark BOTH `[x]` + the same surge URL when shipping).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-14):**

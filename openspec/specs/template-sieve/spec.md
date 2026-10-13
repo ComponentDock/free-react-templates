@@ -51,8 +51,8 @@ names).
 
 - **Original:** ColorLib "Multiselect 13" (marketing title: "Multiselect
   V13 — Free Live Search Multiselect Dropdown"). Listed in TEMPLATES.md
-  under **Bootstrap Multiselect (20)** (section header line 821; row at
-  line 835 — `multiselect-13` appears exactly ONCE in TEMPLATES.md, no dup
+  under **Bootstrap Multiselect (20)** (section header line 823; row at
+  line 837 — `multiselect-13` appears exactly ONCE in TEMPLATES.md, no dup
   rows to mark). Series siblings already prepped: Multiselect 01 → Picker,
   02 → Sifter, 03 → Winnow, 04 → Cull (All Semantic UI); 05 → Glean, 06 →
   Garner, 07 → Reap, 08 → Pluck (Semantic UI variants); 09 → Thresh

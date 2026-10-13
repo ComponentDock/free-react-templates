@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Calendar 04" — free Bootstrap calendar widget
   template (source: https://colorlib.com/wp/template/calendar-04/).
-  TEMPLATES.md row: line 688 (**Bootstrap Calendars (20)**). The
+  TEMPLATES.md row: line 690 (**Bootstrap Calendars (20)**). The
   `calendar-04` slug appears exactly once (no dup rows to mark). Family
   siblings: "Calendar 01" = **Planner**, "Calendar 02" = **Monthly**,
   "Calendar 03" = **Almanac** — this prep is the FOURTH of the family; same

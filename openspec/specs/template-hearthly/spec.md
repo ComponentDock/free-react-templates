@@ -16,7 +16,7 @@ TypeScript.
 
 The source appears TWICE in TEMPLATES.md (dup-row trap): line 626
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one) and
-line 1175 (**Business (365)**) — both are `- [ ]` rows of the SAME template.
+line 1177 (**Business (365)**) — both are `- [ ]` rows of the SAME template.
 ONE implementation covers both rows (mark all `[x]` with the same surge URL
 at bookkeeping time).
 
@@ -433,5 +433,5 @@ btn-outline-white` **"Get started"** (pill outline-white button).
       scope); no client-side router needed
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark BOTH `- [ ]` rows (line
-      626 Bootstrap 5, line 1175 Business) `[x]` with the same surge URL
+      626 Bootstrap 5, line 1177 Business) `[x]` with the same surge URL
       (`https://hearthly.free.componentdock.com`) + `npm run readme:status`

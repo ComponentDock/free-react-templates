@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Sunshine" — free wedding website template (page
   `<title>` "Weeding", a typo in the source; source:
   https://colorlib.com/wp/template/sunshine/). Listed in TEMPLATES.md under
-  **Bootstrap (216)** (line 507; duplicate row at line 3100 — same template,
+  **Bootstrap (216)** (line 507; duplicate row at line 3102 — same template,
   one app only).
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/sunshine/`.
   DOM fetched (`/tmp/sunshine.html`, 56,602 bytes) + stylesheet

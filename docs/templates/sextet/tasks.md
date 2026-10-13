@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 16" — sixteenth of the "Bootstrap
   Checkboxes (20)" series (source: https://colorlib.com/wp/template/checkbox-16/).
-  TEMPLATES.md line 746 — mark that line `[x]` when done (single row, no dups).
+  TEMPLATES.md line 748 — mark that line `[x]` when done (single row, no dups).
 - **Preview URL caveat:** `https://preview.colorlib.com/theme/checkbox-16/`
   is **404** — these demos live under the Bootstrap mega-theme. Use
   `https://preview.colorlib.com/theme/bootstrap/checkbox-16/` (HTTP 200,
@@ -127,4 +127,4 @@ border: 2px solid #007bff`
    "Sextet — Checkbox UI Template".
 5. Deploy: merge via PR → Deploy-to-Surge workflow handles
    sextet.free.componentdock.com; then bookkeeping (`[x]` + surge URL at
-   TEMPLATES.md line 746 + `npm run readme:status`).
+   TEMPLATES.md line 748 + `npm run readme:status`).

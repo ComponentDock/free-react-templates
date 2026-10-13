@@ -42,7 +42,7 @@ layout.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 18" — the eighteenth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 748 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 750 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 11–17
   were prepped as Quadly / Duo / Trio / Quartet / Quintet / Sextet / Septet.
   **NUMBERING QUIRK (verified 2026-08-15, from the Quartet research):** the
@@ -337,6 +337,6 @@ with a main landmark and a document title.
       glow)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 748 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 750 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 05" — the FIFTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-05/).
-  Single occurrence in TEMPLATES.md (line 712, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 714, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Capri** (fifth of
   the carousel-series renames; lineage from the Wanderlust prep:
   carousel-01 → wanderlust, carousel-02 → faraway, carousel-03 → fjord,

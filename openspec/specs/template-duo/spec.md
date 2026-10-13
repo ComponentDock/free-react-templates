@@ -29,7 +29,7 @@ classic **codrops "Custom Checkbox" pattern** (`label.control.control--checkbox`
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 12" — the twelfth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 742 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 744 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 01–10
   were prepped as Tickbox / Picks / Ticktag / Checkly / Tickwell / Toggly /
   Switchly / Soluna / Taskly / Moodly; Checkbox 11 was prepped as Quadly.

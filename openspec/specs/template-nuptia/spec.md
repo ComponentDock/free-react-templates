@@ -23,7 +23,7 @@ Wedding category), built under a different name with the monorepo stack: Vite
   `https://preview.colorlib.com/theme/wedding/` (HTTP 200) is the CodePixar
   "Wedding" free template ("James & Julie are Getting Married", purple→teal
   gradient accents, Poppins). That preview belongs to the *separate* "Wedding"
-  TEMPLATES.md entry (line ~3103, screenshot
+  TEMPLATES.md entry (line ~3105, screenshot
   `wedding-free-wedding-website-template.jpg`) and MUST NOT be used as the
   reference for this template. This template's screenshot shows a different
   (PixFlow-style) design.

@@ -5,7 +5,7 @@
 Vogue is a single-page fashion e-commerce landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Violet" fashion online-store website template (see
-TEMPLATES.md, Bootstrap section, line 527; duplicate rows at lines 1221
+TEMPLATES.md, Bootstrap section, line 527; duplicate rows at lines 1223
 [Business section] and 1609 [Ecommerce section] — mark EVERY copy `[x]` when
 done), built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -93,7 +93,7 @@ h4`, `.single-box-item .box-text h2` (48-60px), nav links + hover underline,
 
 - **Original:** ColorLib "Violet" — fashion e-commerce online-store template
   (source: https://colorlib.com/wp/template/violet/). Listed in TEMPLATES.md
-  line 527 (Bootstrap section); duplicate rows at lines 1221 (Business) and
+  line 527 (Bootstrap section); duplicate rows at lines 1223 (Business) and
   1609 (Ecommerce) — same source, ONE implementation (line 527 is the claim
   row; mark ALL THREE `[x]` after merge). Screenshot:
   `violet-free-template.jpg` (1200×946, reviewed visually in the browser:

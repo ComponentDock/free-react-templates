@@ -122,4 +122,4 @@
 - [ ] PR: `feat: Vesture — Fashion Store landing template (ColorLib
     Ashion)`, merge immediately with `gh pr merge --squash`; record
       Surge URL + homepage in TEMPLATES.md, mark `[~]`→`[x]` on the first
-      Ashion row (line 342; Ashion also duplicated at lines 1564/1698)
+      Ashion row (line 342; Ashion also duplicated at lines 1566/1700)

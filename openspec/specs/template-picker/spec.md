@@ -37,7 +37,7 @@ ColorLib assets copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Multiselect 01". Listed in TEMPLATES.md under
-  **Bootstrap Multiselect (20)** (section header line 822; row at line 823).
+  **Bootstrap Multiselect (20)** (section header line 823; row at line 825).
   Free multiselect-dropdown component template. The `multiselect-01` slug
   appears exactly ONCE in TEMPLATES.md (no dup rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-16 by direct fetch AND

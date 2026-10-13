@@ -7,8 +7,8 @@
 
 - **Original:** ColorLib "Tourbi" — free travel / tour booking HTML template
   (source: https://colorlib.com/wp/template/tourbi/). Listed in TEMPLATES.md
-  under the Bootstrap category (line 517); duplicate rows at line 1207 under
-  Business (365) and line 2999 under Travel (44) — same template, ONE app
+  under the Bootstrap category (line 517); duplicate rows at line 1209 under
+  Business (365) and line 3001 under Travel (44) — same template, ONE app
   only. Mark ALL THREE rows `[x]` after merge.
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/tourbi/`.
   DOM fetched (`/tmp/tourbi-preview.html`, 34,897 bytes, title "travel") +

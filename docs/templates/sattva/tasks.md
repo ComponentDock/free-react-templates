@@ -7,8 +7,8 @@
 
 - **Original:** ColorLib "Yogalax" — yoga/wellness studio marketing template
   (source: https://colorlib.com/wp/template/yogalax/). Listed in TEMPLATES.md
-  under Beauty (line ~236), Fashion (line ~1737) and Health Fitness (line
-  ~1893) — one recreation covers all three checklist rows.
+  under Beauty (line ~236), Fashion (line ~1740) and Health Fitness (line
+  ~1895) — one recreation covers all three checklist rows.
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/yogalax/`
   (HTTP 200). DOM + `css/style.css` (~70KB) extracted and analyzed. This is a
   single-page site (navbar links Home / Classes / Schedule / About / Blog /

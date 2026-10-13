@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-10/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 786, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 788, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 10 → **Finis** (Latin for "the end" —
   the classic closing word of books and films; continues the series'
   ending-themed names Colophon → Envoi → Epilogue → Coda → Outro → Finale →
@@ -152,6 +152,6 @@ inline-block`; `a` `display: inline-block`, `padding: 10px`,
 - [ ] `npm run verify:app finis` → full per-app gate green
 - [ ] Open PR `feat/template-finis` → merge immediately
       (`gh pr merge --squash --delete-branch`)
-- [ ] Bookkeep TEMPLATES.md line 786 `[x]` + surge URL
+- [ ] Bookkeep TEMPLATES.md line 788 `[x]` + surge URL
       `https://finis.free.componentdock.com` (implementer's job — prep
       stream never touches markers)

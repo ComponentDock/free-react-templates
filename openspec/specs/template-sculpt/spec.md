@@ -20,7 +20,7 @@ TypeScript.
   page is driven by one brand accent: a warm orange.
   Source: https://colorlib.com/wp/template/flawless/
   TEMPLATES.md has TWO copies of this item (line 401, category Bootstrap;
-  and line 1849, category Health Fitness — mark EVERY copy `[x]` when
+  and line 1851, category Health Fitness — mark EVERY copy `[x]` when
   done). No other spec on main maps to this slug (grep-checked).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/flawless/`
   (HTTP 200, 44,621 bytes; title "Flawless Template"). Master stylesheet

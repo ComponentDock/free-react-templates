@@ -5,7 +5,7 @@
 Summit is a single-page conference / event template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Confer" design (see TEMPLATES.md — Bootstrap category, line
-363; the slug also repeats at lines 947 and 1669 — one recreation covers all
+363; the slug also repeats at lines 949 and 1671 — one recreation covers all
 three checklist rows), built under a different name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

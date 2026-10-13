@@ -5,7 +5,7 @@
 Nebuly is a single-page cloud-hosting / domain-services business template in
 the free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Cloudtemplate" website template design (see TEMPLATES.md,
-Bootstrap category, line 361; duplicate row at line 3051), built under a
+Bootstrap category, line 361; duplicate row at line 3053), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 

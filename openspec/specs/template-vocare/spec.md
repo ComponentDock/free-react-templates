@@ -5,7 +5,7 @@
 Vocare is a single-page job-board template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib "Skillhunt"
 design (see TEMPLATES.md — line 496; the same source is DUPLICATED at lines
-1166 and 2005 — ALL THREE rows must be marked `[x]` when done), built under a
+1168 and 2007 — ALL THREE rows must be marked `[x]` when done), built under a
 NEW name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 

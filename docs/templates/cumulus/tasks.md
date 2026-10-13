@@ -16,7 +16,7 @@
   Users Saying" testimonial carousel (pink dots), 3-card "Recent Blog" row,
   deep-purple 4-column footer + copyright bar
   (source: https://colorlib.com/wp/template/cloudtemplate/). Listed in
-  TEMPLATES.md under Bootstrap (line 361) with a duplicate row at line 3051 —
+  TEMPLATES.md under Bootstrap (line 361) with a duplicate row at line 3053 —
   one recreation covers both rows.
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/cloudtemplate/`
   (HTTP 200, ~41.7KB HTML). DOM + `css/style.css` (78KB) extracted and

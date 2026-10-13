@@ -5,7 +5,7 @@
 Haulage is a single-page logistics / cargo-shipping website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Cargo" template (see TEMPLATES.md — line 357, Bootstrap section;
-the same source is DUPLICATED at lines 925, 2296 and 2953 — all four rows
+the same source is DUPLICATED at lines 927, 2298 and 2955 — all four rows
 must be marked `[x]` when done), built under a NEW name with the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Modal 10" — free single-page newsletter-signup
   modal component template (source:
-  https://colorlib.com/wp/template/modal-10/). TEMPLATES.md row: line 809
-  (**Bootstrap Modals (20)**, header line 798). The `modal-10` slug appears
+  https://colorlib.com/wp/template/modal-10/). TEMPLATES.md row: line 811
+  (**Bootstrap Modals (20)**, header line 800). The `modal-10` slug appears
   exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-10/` returns **404** — the REAL
@@ -170,7 +170,7 @@ border-0` — label "Subscribe"; a real `<button type="submit">` (the
 8. **Gate + ship** — `scripts/verify-app.sh ingress` (typecheck + lint +
    100% coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single
-   TEMPLATES.md row (line 809) `[x]` with
+   TEMPLATES.md row (line 811) `[x]` with
    `https://ingress.free.componentdock.com` + `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

@@ -12,7 +12,7 @@ CSS 4 + TypeScript.
 
 - **Original:** ColorLib "Foundation" — charity / donation website template
   (source: https://colorlib.com/wp/template/foundation/). TEMPLATES.md has
-  THREE copies of this item (lines 402, 1266, and 2322 — mark EVERY copy
+  THREE copies of this item (lines 402, 1268, and 2322 — mark EVERY copy
   `[x]` when done). Note: `foundation2` is a DIFFERENT template (separate
   slug, lines 583/1019/2958) and `hopefoundation` shipped as
   **congregate** — do not confuse them.

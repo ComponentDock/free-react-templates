@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Solmusic" — free music-streaming website template
   (source: https://colorlib.com/wp/template/solmusic/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 501; duplicate rows at line
-  2086 under Landing Page (96) and line 2279 under Music (19) — same
+  2088 under Landing Page (96) and line 2281 under Music (19) — same
   template, one app only).
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/solmusic/`. DOM fetched

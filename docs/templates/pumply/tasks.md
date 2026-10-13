@@ -7,8 +7,8 @@
 
 - **Original:** ColorLib "Gymer" — free responsive Bootstrap 4 gym / fitness
   website template (source: https://colorlib.com/wp/template/gymer/).
-  TEMPLATES.md has THREE copies (line 407 — Bootstrap category, line 1853 —
-  Health Fitness category, line 2325 — One Page category; mark ALL THREE
+  TEMPLATES.md has THREE copies (line 407 — Bootstrap category, line 1855 —
+  Health Fitness category, line 2327 — One Page category; mark ALL THREE
   `[x]` when done). All three rows use the correct screenshot
   `gymer-free-template.jpg`.
 - **Demo DOM analyzed:** REACHABLE — `https://preview.colorlib.com/theme/gymer/`

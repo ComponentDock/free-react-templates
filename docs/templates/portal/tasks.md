@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Modal 03" — free single-page winter-sale promo-modal
   component template (source: https://colorlib.com/wp/template/modal-03/).
-  TEMPLATES.md row: line 802 (**Bootstrap Modals (20)**, header line 798).
+  TEMPLATES.md row: line 804 (**Bootstrap Modals (20)**, header line 800).
   The `modal-03` slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-03/` returns **404** — the REAL
@@ -128,7 +128,7 @@ text-transform:uppercase; letter-spacing:1px; font-size:14px }` → SHOP
 7. **Gate + ship** — `scripts/verify-app.sh portal` (typecheck + lint + 100%
    coverage tests + build), `npm run spec:validate`, then the standard PR →
    immediate squash merge flow; bookkeeping marks the single TEMPLATES.md row
-   (line 802) `[x]` with `https://portal.free.componentdock.com` + `npm run
+   (line 804) `[x]` with `https://portal.free.componentdock.com` + `npm run
 readme:status`.
 
 ## Pitfalls / notes for the implementer

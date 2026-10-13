@@ -131,7 +131,7 @@ URL are recorded below.
 
 - **Original:** ColorLib "Colorlib Wizard 14" (page title: "Sign Up
   Form"). Listed in TEMPLATES.md under **Bootstrap Wizards (30)**
-  (section header line 844; the one and only row at line 851 —
+  (section header line 846; the one and only row at line 853 —
   `wp/template/colorlib-wizard-14/` appears exactly ONCE). Member 14 of
   colorlib-wizard-1 … 30 (file order 1, 10, 11, 12, 13, 14; numeric
   member = 14). Sibling preps: Conjure (wizard-1, chain seed — cream/

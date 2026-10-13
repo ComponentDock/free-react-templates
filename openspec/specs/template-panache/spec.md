@@ -5,7 +5,7 @@
 Panache is a single-page creative-agency landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Fancy" creative business website template (see TEMPLATES.md,
-line 392 [Bootstrap section]; duplicate rows at line 1006 [Business], 2047
+line 392 [Bootstrap section]; duplicate rows at line 1008 [Business], 2047
 [Landing Page] and 2320 [One Page] — same source, ONE implementation; mark
 EVERY copy `[x]` when done), built under a different name with the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -83,7 +83,7 @@ fills, quote marks, and link underlines everywhere.
 
 - **Original:** ColorLib "Fancy" — creative agency website template
   (source: https://colorlib.com/wp/template/fancy/). Listed in TEMPLATES.md
-  line 392 (Bootstrap section); duplicate rows at lines 1006 (Business),
+  line 392 (Bootstrap section); duplicate rows at lines 1008 (Business),
   2047 (Landing Page) and 2320 (One Page) — same source, ONE implementation
   (line 392 is the claim row; mark ALL FOUR `[x]` after merge).
   Screenshot: `fancy-free-creative-business-website-template.jpg`

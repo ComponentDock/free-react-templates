@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 15" — free responsive Bootstrap
   4.3.1 footer-component demo (source:
   https://colorlib.com/wp/template/bootstrap-footer-15/). TEMPLATES.md line
-  791, single `- [ ]` row. This prep: Bootstrap Footer 15 → **Ultimo**.
+  793, single `- [ ]` row. This prep: Bootstrap Footer 15 → **Ultimo**.
   Bookkeep that row `[x]` when the app ships.
 - **Preview URL quirk (series-wide):**
   `https://preview.colorlib.com/theme/bootstrap-footer-15/` returns 404. Use
@@ -187,7 +187,7 @@
 6. [ ] Run `npm run verify:app ultimo` until green (typecheck + lint +
        knip + fallow + 100% coverage + build)
 7. [ ] Commit `feat: Ultimo — footer component demo (ColorLib Bootstrap
-    Footer 15)`; PR + immediate squash merge; then TEMPLATES.md line 791
+    Footer 15)`; PR + immediate squash merge; then TEMPLATES.md line 793
        `[~]`→`[x]` + surge URL + homepage + `npm run readme:status`, push
 
 ## Verification (pre-merge, from the spec)

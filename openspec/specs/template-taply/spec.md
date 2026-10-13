@@ -17,7 +17,7 @@ Tailwind CSS 4 + TypeScript.
 
 The source appears THREE times in TEMPLATES.md (dup-row trap): line 456
 (**Mobile App (27)** category — the FIRST occurrence, the canonical one),
-line 1477 (**One Page (101)**), and line 2063 (**Landing Page (91)**) —
+line 1479 (**One Page (101)**), and line 2065 (**Landing Page (91)**) —
 all `- [ ]` rows of the SAME template. ONE implementation covers all three
 rows (mark all `[x]` with the same surge URL at bookkeeping time).
 

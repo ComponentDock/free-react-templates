@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "The Conference" — free event/conference website
   template (source: https://colorlib.com/wp/template/the-conference/). Listed
-  in TEMPLATES.md under **Event** (line 511); duplicate row at line 1688
+  in TEMPLATES.md under **Event** (line 511); duplicate row at line 1690
   (another category) — same template, ONE app only.
 - **Preview REACHABLE (HTTP 200) — SLUG HAS NO HYPHEN:**
   `https://preview.colorlib.com/theme/theconference/`. The hyphenated URL

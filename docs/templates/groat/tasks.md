@@ -14,8 +14,8 @@ the live-verified DOM structure, and the Gherkin scenarios.
   AVIF; shows heading "Multi-Select #7 (Limit to 7 selection)", button reading
   **"Alaska, California, Illinois, Maine"**, open menu with four selected rows marked by a
   GREEN checkmark AND GREEN text — Alaska, California, Illinois, Maine; hover row lit)
-- Source page: `https://colorlib.com/wp/template/multiselect-17/` (TEMPLATES.md line 839, ONE
-  occurrence — section header "## Bootstrap Multiselect (20)" at line 821; no dup rows to mark)
+- Source page: `https://colorlib.com/wp/template/multiselect-17/` (TEMPLATES.md line 841, ONE
+  occurrence — section header "## Bootstrap Multiselect (20)" at line 823; no dup rows to mark)
 - Engine: **bootstrap-select v1.13.9 by SnapAppointments**
   - jQuery 3.3.1 + Popper + Bootstrap 4.6 (the plugin ONLY handles the widget; the
     Bootstrap 4 form/button/dropdown CSS gives it its INPUT-BOX look). EMPTY `main.js`

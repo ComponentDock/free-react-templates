@@ -6,8 +6,8 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Colorlib Wizard 11" (TEMPLATES.md line 848; section
-  "## Bootstrap Wizards (30)" at line 844). The
+- **ColorLib item:** "Colorlib Wizard 11" (TEMPLATES.md line 850; section
+  "## Bootstrap Wizards (30)" at line 846). The
   `wp/template/colorlib-wizard-11/` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows; close-string matches for wizard-1/10/12..19
   are `-1`/`-11` prefix substrings, not duplicates).
@@ -189,6 +189,6 @@ over as CSS + lucide icons. (Do not invent photos that the source lacks.)
         validation errors icon-only + announced (`aria-invalid`), inline
         success panel instead of `alert('Sumited')`, accessible
         semantics + focus rings, Component Dock footer).
-13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 848 `[x]` + surge
+13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 850 `[x]` + surge
         URL (`https://dispel.free.componentdock.com`), `npm run
     readme:status`, push.

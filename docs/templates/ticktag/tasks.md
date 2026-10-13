@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 03" — third of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-03/).
-  TEMPLATES.md line 733 — mark that line `[x]` when done (single copy).
+  TEMPLATES.md line 735 — mark that line `[x]` when done (single copy).
   IMPORTANT: Checkbox 01 (Tickbox) and 02 (Picks) use a DIFFERENT visual
   (`label.checkbox-wrap` colored square list); Checkbox 03 is a `ul.ks-cboxtags`
   pill/tag chip list — build it as its own app, do NOT reuse Tickbox.

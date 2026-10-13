@@ -76,7 +76,7 @@ preview URL are recorded below.
 - **Original:** ColorLib "Multiselect 20" (marketing title in the page title
   tag: "Multi Select #10"; the h2 reads **"Multi-Select #10 (Limit to 5)"**).
   Listed in TEMPLATES.md under **Bootstrap Multiselect (20)** (section header
-  line 821; row at line 842 — `multiselect-20` appears exactly ONCE in
+  line 823; row at line 844 — `multiselect-20` appears exactly ONCE in
   TEMPLATES.md, no dup rows to mark). Series siblings: 01 → Picker,
   02 → Sifter, 03 → Winnow, 04 → Cull, 05 → Glean, 06 → Garner, 07 → Reap,
   08 → Pluck (Semantic UI), 09 → Thresh (Select2, DARK), 10 → Sickle,

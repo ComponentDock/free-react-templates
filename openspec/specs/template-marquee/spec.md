@@ -19,7 +19,7 @@ light-gray background.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Dropdown 08" — eighth demo in the "Bootstrap
-  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 761). Series
+  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 763). Series
   siblings: Dropdown 01 was prepped as **Menubar**, Dropdown 02 as
   **Popmenu**, Dropdown 03 as **Skycast**, Dropdown 04 as **Chime**,
   Dropdown 05 as **Trolley**, Dropdown 06 as **Passkey**, Dropdown 07 as

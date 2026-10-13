@@ -15,7 +15,7 @@ Tailwind CSS 4 + TypeScript.
 
 The source appears THREE times in TEMPLATES.md (dup-row trap): line 455
 (**Bootstrap (216)** category — the FIRST occurrence, the canonical one),
-line 1101 (**Business (365)**), and line 1590 (**Ecommerce (56)**) — all
+line 1103 (**Business (365)**), and line 1592 (**Ecommerce (56)**) — all
 `- [ ]` rows of the SAME template. ONE implementation covers all three rows
 (mark all `[x]` with the same surge URL at bookkeeping time).
 

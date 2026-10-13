@@ -5,8 +5,8 @@
 Corona is a single-page education-website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Eclipse" entry in TEMPLATES.md (listed under **Bootstrap (216)**
-at line 379; duplicate rows at line 1627 under **Education (43)** and line
-2040 under **Landing Page (96)** — same template, one app only), built
+at line 379; duplicate rows at line 1629 under **Education (43)** and line
+2042 under **Landing Page (96)** — same template, one app only), built
 under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
@@ -44,8 +44,8 @@ typography, and content types (no ColorLib assets copied).
 - **Original:** ColorLib "Eclipse" — Eclipse Education, Free Bootstrap
   Education Website Template (source:
   https://colorlib.com/wp/template/eclipse/). Listed in TEMPLATES.md under
-  **Bootstrap (216)** (line 379; duplicate rows at line 1627 under
-  Education (43) and line 2040 under Landing Page (96)).
+  **Bootstrap (216)** (line 379; duplicate rows at line 1629 under
+  Education (43) and line 2042 under Landing Page (96)).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/eclipse/`
   (HTTP 200, static HTML, 48.8 KB). Unlike some ColorLib demos this is
   NOT a gallery portal — the root IS the template home page

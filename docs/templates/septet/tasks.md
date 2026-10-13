@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 17" — seventeenth of the "Bootstrap
   Checkboxes (20)" series (source: https://colorlib.com/wp/template/checkbox-17/).
-  TEMPLATES.md line 747 — mark that line `[x]` when done (single row, no dups).
+  TEMPLATES.md line 749 — mark that line `[x]` when done (single row, no dups).
 - **Preview URL caveat:** `https://preview.colorlib.com/theme/checkbox-17/`
   is **404** — these demos live under the Bootstrap mega-theme. Use
   `https://preview.colorlib.com/theme/bootstrap/checkbox-17/` (HTTP 200,
@@ -126,6 +126,6 @@ block; min-height: 24px; padding-left: 24px`); description span 16px
 7. [ ] `scripts/verify-app.sh septet` (typecheck + lint + 100% coverage +
        build); PR `feat/template-septet` → merge immediately
        (`gh pr merge --squash --delete-branch`).
-8. [ ] Bookkeeping: TEMPLATES.md line 747 `[~]`→`[x]` + surge URL,
+8. [ ] Bookkeeping: TEMPLATES.md line 749 `[~]`→`[x]` + surge URL,
        `npm run readme:status`, push. (Implementer's job — NOT the prep
        stream.)

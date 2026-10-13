@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 20" — twentieth (and last) of the "Bootstrap
   Checkboxes (20)" series (source: https://colorlib.com/wp/template/checkbox-20/).
-  TEMPLATES.md line 750 — mark that line `[x]` when done (single row, no dups).
+  TEMPLATES.md line 752 — mark that line `[x]` when done (single row, no dups).
 - **Preview URL caveat:** `https://preview.colorlib.com/theme/checkbox-20/`
   is **404** (verified 2026-08-15) — these demos live under the Bootstrap
   mega-theme. Use `https://preview.colorlib.com/theme/bootstrap/checkbox-20/`
@@ -151,6 +151,6 @@
 7. [ ] `scripts/verify-app.sh warp` (typecheck + lint + 100% coverage +
        build); PR `feat/template-warp` → merge immediately
        (`gh pr merge --squash --delete-branch`).
-8. [ ] Bookkeeping: TEMPLATES.md line 750 `[~]`→`[x]` + surge URL,
+8. [ ] Bookkeeping: TEMPLATES.md line 752 `[~]`→`[x]` + surge URL,
        `npm run readme:status`, push. (Implementer's job — NOT the prep
        stream.)

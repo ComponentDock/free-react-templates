@@ -30,7 +30,7 @@ series.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 08" — the eighth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 738 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 740 — mark that line `[x]`
   when done; single row, no duplicates). Sibling items Checkbox 01–07 were
   prepped as Tickbox / Picks / Ticktag / Checkly / Tickwell / Toggly /
   Switchly; each item in the series is a DIFFERENT design variant (this one
@@ -313,5 +313,5 @@ convention on every template (the original has no footer).
       IS the sun/moon icon, no 56px puff)
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
-      by implementer at ship time (mark the "Checkbox 08" row, line 738 —
+      by implementer at ship time (mark the "Checkbox 08" row, line 740 —
       Bootstrap Checkboxes category, single row)

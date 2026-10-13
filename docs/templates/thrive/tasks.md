@@ -21,7 +21,7 @@
   custom `css/style.css` (~62 KB) + icomoon icon font. Brand name used in
   the source copy: "Startright". TEMPLATES.md category: **Bootstrap 5 (89)**,
   first occurrence at line 627 (`- [ ]`, source NOT shipped anywhere).
-  DUP-ROW TRAP: the `startright` slug ALSO appears at line 1181
+  DUP-ROW TRAP: the `startright` slug ALSO appears at line 1183
   (**Business (365)**) — BOTH `- [ ]` rows of the SAME template; ONE
   implementation covers both rows (mark all `[x]` with the same surge URL at
   bookkeeping).

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Colorlib Wizard 2" — a 4-step hotel reservation
   wizard (source: https://colorlib.com/wp/template/colorlib-wizard-2/).
-  TEMPLATES.md line 857, single copy (`grep -c
+  TEMPLATES.md line 859, single copy (`grep -c
 'wp/template/colorlib-wizard-2/'` = 1).
 - **Preview DOM analyzed:** https://colorlib.com/etc/bwiz/colorlib-wizard-2/index.html
   (HTTP 200, ~12.5 KB HTML, `<title>FormWizard_v2</title>`). **The

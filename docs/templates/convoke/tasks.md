@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Wemeet" — conference / design-event landing page
   (source: https://colorlib.com/wp/template/wemeet/). TEMPLATES.md has TWO
-  rows: line 532 (category Bootstrap) and line 1690 (category Events) — mark
+  rows: line 532 (category Bootstrap) and line 1692 (category Events) — mark
   BOTH `[x]` when done. No other spec on main maps to this slug
   (grep-checked before prepping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/wemeet/

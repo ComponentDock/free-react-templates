@@ -14,7 +14,7 @@ TypeScript. The page is a minimal showcase of pill-shaped "tag" checkboxes
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 03" — third of the "Bootstrap Checkboxes
-  (20)" series in TEMPLATES.md (line 733 — mark that line `[x]` when done).
+  (20)" series in TEMPLATES.md (line 735 — mark that line `[x]` when done).
   NOTE: the Checkbox 01/02 demos (prepped as Tickbox/Picks) use a different
   visual (`label.checkbox-wrap` colored square list); Checkbox 03 is a
   DIFFERENT design — a `ul.ks-cboxtags` pill/tag chip list. Do not reuse the
@@ -201,6 +201,6 @@ page with a main landmark and a document title.
 - [ ] Icons: lucide-react Plus/Check (no FontAwesome, no copied assets)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 733 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 735 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

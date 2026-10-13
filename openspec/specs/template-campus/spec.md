@@ -30,7 +30,7 @@ types (no ColorLib assets copied).
 
 - **Original:** ColorLib "Academy" — free Bootstrap education website
   template (source: https://colorlib.com/wp/template/academy/). TEMPLATES.md
-  lists it twice: line 328 under **Bootstrap (216)** and line 1623 under
+  lists it twice: line 328 under **Bootstrap (216)** and line 1625 under
   **Education (43)** (same source, duplicated checklist entry — both rows
   get marked `[x]` when shipped). The recreation brands itself **Campus**.
 - **Live preview DOM analyzed (verified 2026-08-09):**
@@ -393,4 +393,4 @@ Usefull Links, Gallery, Contact) and the `#141414` bottom bar.
 - [ ] Responsive: features dividers flip horizontal ≤767px, popular cards
       stack ≤767px, hero h2 scales 60→30px, footer 4→2→1 columns
 - [ ] TEMPLATES.md: both "Academy" rows (Bootstrap line 328 + Education
-      line 1623) marked `[x]` with surge URL on ship
+      line 1625) marked `[x]` with surge URL on ship

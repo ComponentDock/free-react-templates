@@ -6,7 +6,7 @@ Faculty is a single-page university / education website landing template in
 the free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Universityedu" design (see TEMPLATES.md — listed in the
 Bootstrap 5 (89) category at line 633, with a duplicate row in the Education
-(43) category at line 1659; both rows `- [ ]`), built under a DIFFERENT name
+(43) category at line 1661; both rows `- [ ]`), built under a DIFFERENT name
 — **Faculty** (a university-themed word; single lowercase word, no collision
 with `apps/`, `openspec/specs/`, `docs/templates/` or TEMPLATES.md —
 verified 2026-08-14) per the monorepo naming mandate (never reuse the

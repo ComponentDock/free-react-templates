@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 13" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-13/). Single occurrence
-  in TEMPLATES.md (line 697, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 699, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Span** (a span of dates — keeps the
   date/calendar theme; direct sibling of Kalends = Calendar 12).
 - **Preview URL analyzed:**

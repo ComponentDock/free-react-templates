@@ -61,7 +61,7 @@ image kind; the coupon code text is recreated as a coupon-code placeholder).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 14". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 813). Free coupon-offer
+  Modals (20)** (section header line 800; row at line 815). Free coupon-offer
   modal component template. The `modal-14` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows to mark). Demo `<title>` uses the generic
   "Modal #4" copy.

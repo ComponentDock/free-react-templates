@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Modal 19" — free single-page product-promo modal
   component template (source: https://colorlib.com/wp/template/modal-19/).
-  TEMPLATES.md row: line 818 (**Bootstrap Modals (20)**, header line 798).
+  TEMPLATES.md row: line 820 (**Bootstrap Modals (20)**, header line 800).
   The `modal-19` slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-19/` returns **404** — the REAL
@@ -133,7 +133,7 @@ readme:status`; confirm `injectUiSource()` in `vite.config.ts` (copy the
 7. **Gate + ship** — `scripts/verify-app.sh wicket` (typecheck + lint +
    100% coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single
-   TEMPLATES.md row (line 818) `[x]` with
+   TEMPLATES.md row (line 820) `[x]` with
    `https://wicket.free.componentdock.com` + `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Bootstrap Buttons 18" — free UI-kit button
   component template (source:
   https://colorlib.com/wp/template/bootstrap-buttons-18/). TEMPLATES.md
-  row: line 679 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-18`
+  row: line 681 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-18`
   slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-14):** the
   default `https://preview.colorlib.com/theme/bootstrap-buttons-18/`
@@ -217,5 +217,5 @@ shadow-[0_10px_34px_-20px_rgba(0,0,0,0.41)]` with items 13px
 10. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
 11. [ ] After merge: TEMPLATES.md `[~]` → `[x]` + surge URL
         (`paddle.free.componentdock.com`) + `npm run readme:status`; push
-        (mark line 679 — Bootstrap Buttons (20) category; single row, no
+        (mark line 681 — Bootstrap Buttons (20) category; single row, no
         dups)

@@ -13,7 +13,7 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 - **Original:** ColorLib "Workout" — free Bootstrap gym / fitness club
   website template. TEMPLATES.md has FOUR copies of this item (lines 537,
-  1236, 1886, and 2372 — mark EVERY copy `[x]` when done).
+  1238, 1888, and 2372 — mark EVERY copy `[x]` when done).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/workout/`
   (HTTP 200, 71.5 KB HTML). Master stylesheet `css/style.css` (~19 KB,
   fully extracted for tokens); libs: bootstrap, owl.carousel (feature

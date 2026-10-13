@@ -5,7 +5,7 @@
 Roam is a single-page travel-blog template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Fantasy"
 travel blog website template (see TEMPLATES.md, Blog section, line 259;
-duplicate at line 2981 — mark EVERY copy `[x]` when done), built under a
+duplicate at line 2983 — mark EVERY copy `[x]` when done), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 
@@ -40,7 +40,7 @@ background `#f1f9ff` (light blue); secondary accents cyan `#4cd3e3`, blue
 
 - **Original:** ColorLib "Fantasy" — travel blog template
   (source: https://colorlib.com/wp/template/fantasy/). Listed in TEMPLATES.md
-  line 259 (Blog section); duplicate at line 2981 (Travel section) — mark
+  line 259 (Blog section); duplicate at line 2983 (Travel section) — mark
   every copy `[x]` when done. Screenshot:
   `fantasy-free-template.jpg` (1200×946, reviewed visually in the browser).
 - **Live preview URL:** https://preview.colorlib.com/theme/fantasy/ (title

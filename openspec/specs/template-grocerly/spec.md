@@ -34,8 +34,8 @@ copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Ogani". Listed in TEMPLATES.md under **Bootstrap
-  (216)** (line 468) — dup rows also at line 1114 (Business), line 1592
-  (Ecommerce), line 1787 (Food Drinks); all four rows are `- [ ]` and no app
+  (216)** (line 468) — dup rows also at line 1116 (Business), line 1594
+  (Ecommerce), line 1790 (Food Drinks); all four rows are `- [ ]` and no app
   ships it yet. Free grocery-store template (multi-page demo: index, shop,
   shop-details, shopping-cart, checkout, blog-details, blog, contact — the
   index page is the recreation target).
@@ -423,5 +423,5 @@ viewports.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time (mark ALL FOUR "Ogani" rows: line 468
-      Bootstrap, line 1114 Business, line 1592 Ecommerce, line 1787 Food
+      Bootstrap, line 1116 Business, line 1594 Ecommerce, line 1790 Food
       Drinks)

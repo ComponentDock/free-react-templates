@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 05" — fifth of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-05/).
-  TEMPLATES.md line 735 — mark that line `[x]` when done (single row).
+  TEMPLATES.md line 737 — mark that line `[x]` when done (single row).
   NOTE: each item in this series is a DIFFERENT variant design — Checkbox 05
   is the notification-filter pill variant with yellow count badges and a
   magenta checked state, NOT the Tickbox six-variant list and NOT the
@@ -102,4 +102,4 @@ for=...>` white pill: label text + `<span>` count badge; `::before` =
    responsive column, footer link.
 7. Gate: `scripts/verify-app.sh tickwell`; PR description with source
    (ColorLib Checkbox 05), preview URL, tokens, diffs; mark TEMPLATES.md
-   line 735 `[x]` + surge URL + `npm run readme:status`.
+   line 737 `[x]` + surge URL + `npm run readme:status`.

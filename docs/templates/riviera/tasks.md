@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Europa" — hotel & spa template
   (source: https://colorlib.com/wp/template/europa/). Listed in TEMPLATES.md
-  (Hotel section, line 388; duplicates at lines 1001 and 1906 — mark EVERY
+  (Hotel section, line 388; duplicates at lines 1003 and 1908 — mark EVERY
   copy `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/europa/ (title "Europa
   Hotel & Spa | Template"). Fetched: `/tmp/europa-prep/preview.html` (33 KB),

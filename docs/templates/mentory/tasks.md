@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Tutor" — education / tutorial website template
   (source: https://colorlib.com/wp/template/tutor/). Listed in TEMPLATES.md
-  (Education section, line 521; duplicate at line 1655 — mark EVERY copy
+  (Education section, line 521; duplicate at line 1657 — mark EVERY copy
   `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/tutor/ (title "Tutor —
   Free Website Template by Colorlib"; reachable via curl AND browser). Fetched:

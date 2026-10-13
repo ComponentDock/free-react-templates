@@ -35,7 +35,7 @@ purple `#7e0cf5`) and NOT Bootstrap's `custom-control` widget of Checkbox #1
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 15" — the fifteenth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 745 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 747 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 11–14
   were prepped as Quadly / Duo / Trio / Quartet.
   **NUMBERING QUIRK (verified 2026-08-15):** the preview server hosts TWO
@@ -280,6 +280,6 @@ with a main landmark and a document title.
 - [ ] No copied assets, no icon library needed (CSS border tick)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 745 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 747 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

@@ -14,7 +14,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWICE in TEMPLATES.md (dup-row trap): line 621
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one) and
-line 2694 (**Restaurant (41)**) — both `- [ ]` rows of the SAME template. ONE
+line 2696 (**Restaurant (41)**) — both `- [ ]` rows of the SAME template. ONE
 implementation covers both rows (mark all `[x]` with the same surge URL at
 bookkeeping time).
 
@@ -342,5 +342,5 @@ hero-btn` coral pill, padding 35px 55px, shadow
       (source repeats Dinner ×3 + "Brack-fast") — note deviations in the PR
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL TWO `- [ ]` rows
-      (line 621 Bootstrap 5, line 2694 Restaurant) `[x]` with the same
+      (line 621 Bootstrap 5, line 2696 Restaurant) `[x]` with the same
       surge URL + `npm run readme:status`

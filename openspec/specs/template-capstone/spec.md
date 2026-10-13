@@ -44,7 +44,7 @@ heading with a square-edge newsletter form: transparent gray input
   Footer" series (footer-only component demos; the page body is a filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-13/. TEMPLATES.md has ONE
-  copy (line 789, `- [ ]` unchecked). This prep: Bootstrap Footer 13 →
+  copy (line 791, `- [ ]` unchecked). This prep: Bootstrap Footer 13 →
   **Capstone**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon/terminus preps):**
   `https://preview.colorlib.com/theme/bootstrap-footer-13/` returns **HTTP

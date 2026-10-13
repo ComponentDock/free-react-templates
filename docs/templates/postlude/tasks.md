@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-07/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 783, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 785, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 07 → **Postlude** (a piece of music
   played at the end of a performance or service — continues the series'
   ending-themed names Colophon (01) → Epilogue (02) → Envoi (03) → Coda (04)
@@ -140,7 +140,7 @@
       copy + no headings, 5 social links with aria-labels, pill button,
       copyright + Component Dock link, responsive classes present)
 - [ ] `npm run verify:app postlude` passes; commit `feat: add postlude …`;
-      PR + immediate squash merge; then TEMPLATES.md bookkeeping — line 783
+      PR + immediate squash merge; then TEMPLATES.md bookkeeping — line 785
       (Bootstrap Footer 07) → `[x]` + surge URL + `npm run readme:status`
 
 ## Verification checklist (from spec)
@@ -164,5 +164,5 @@
       full-width below md; no horizontal overflow
 - [ ] Roboto Google Fonts link; no images; no ColorLib anywhere in
       `apps/postlude`
-- [ ] `npm run verify:app postlude` green; TEMPLATES.md line 783 bookkept
+- [ ] `npm run verify:app postlude` green; TEMPLATES.md line 785 bookkept
       `[x]`

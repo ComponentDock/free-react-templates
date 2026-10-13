@@ -59,7 +59,7 @@ beyond the (static) newsletter form.
   Footer" series (footer-only component demos; the page body is a filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-15/. TEMPLATES.md has ONE
-  copy (line 791, `- [ ]` unchecked). This prep: Bootstrap Footer 15 →
+  copy (line 793, `- [ ]` unchecked). This prep: Bootstrap Footer 15 →
   **Ultimo**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon/terminus/capstone/
   omega preps):** `https://preview.colorlib.com/theme/bootstrap-footer-15/`

@@ -5,7 +5,7 @@
 Iris is a single-page photography portfolio template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Flash" photography website template design (see TEMPLATES.md,
-Bootstrap section, line 400; duplicate at line 2447 under Photography — mark
+Bootstrap section, line 400; duplicate at line 2449 under Photography — mark
 EVERY copy `[x]` when done), built under a different name with the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

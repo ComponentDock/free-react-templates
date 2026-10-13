@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Faith" — church website template
   (source: https://colorlib.com/wp/template/faith/). Listed in TEMPLATES.md
-  (Church section, line 391; duplicates at lines 1263 and 1294 — mark EVERY
+  (Church section, line 391; duplicates at lines 1265 and 1296 — mark EVERY
   copy `[x]` when done).
 - **Live preview:** https://preview.colorlib.com/theme/faith/ — reachable
   (HTTP 200). HTML saved at `/tmp/faith.html` (29.2 KB), stylesheet at

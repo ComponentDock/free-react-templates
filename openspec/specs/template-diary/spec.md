@@ -5,7 +5,7 @@
 Diary is a single-page blog / personal-journal website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Andrea" template (see TEMPLATES.md — line 240, Blog section, plus
-duplicate rows at lines 332 and 1696; the first `- [ ]` item whose prep did
+duplicate rows at lines 332 and 1698; the first `- [ ]` item whose prep did
 not exist on main), built under a NEW name with the monorepo stack: Vite +
 React 19 + Tailwind CSS 4 + TypeScript.
 

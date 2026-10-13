@@ -45,7 +45,7 @@ lists, and the social chips.
   "Bootstrap Footer" series (footer-only component demos; the page body is a
   filler strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-20/. TEMPLATES.md has ONE
-  copy (line 796, `- [ ]` unchecked). This prep: Bootstrap Footer 20 →
+  copy (line 798, `- [ ]` unchecked). This prep: Bootstrap Footer 20 →
   **Peroration**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon/terminus/capstone/
   omega/ultimo/adieu/valediction/farewell/swansong preps):**

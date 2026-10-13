@@ -61,7 +61,7 @@ copied; the 50 state names are public knowledge).
 - **Original:** ColorLib "Multiselect 16" (marketing title: "Multi Select
   #6" — the page title tag; the h2 says "Multi-Select #6" with a hyphen).
   Listed in TEMPLATES.md under **Bootstrap Multiselect (20)** (section
-  header line 821; row at line 838 — `multiselect-16` appears exactly ONCE
+  header line 823; row at line 840 — `multiselect-16` appears exactly ONCE
   in TEMPLATES.md, no dup rows to mark). Series siblings already prepped:
   Multiselect 01 → Picker, 02 → Sifter, 03 → Winnow, 04 → Cull (Semantic
   UI); 05 → Glean, 06 → Garner, 07 → Reap, 08 → Pluck (Semantic UI

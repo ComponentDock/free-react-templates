@@ -5,7 +5,7 @@
 Moment is a single-page interactive datetime-picker widget template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Calendar 09" design (see TEMPLATES.md, **Bootstrap Calendars
-(20)** category, line 693 — the `calendar-09` slug appears exactly once, no
+(20)** category, line 695 — the `calendar-09` slug appears exactly once, no
 duplicate rows), built under a DIFFERENT name (**Moment** — a moment in time,
 and a nod to the moment.js engine the original uses; per the monorepo naming
 mandate — never reuse the ColorLib source name), with the monorepo stack:
@@ -98,8 +98,8 @@ native `Date` instead of moment.js).
 
 - **Original:** ColorLib "Calendar 09" — free Bootstrap datetime-picker
   widget template (author Colorlib; source:
-  https://colorlib.com/wp/template/calendar-09/). TEMPLATES.md line 693,
-  **Bootstrap Calendars (20)** category (header at line 683). The
+  https://colorlib.com/wp/template/calendar-09/). TEMPLATES.md line 695,
+  **Bootstrap Calendars (20)** category (header at line 685). The
   `calendar-09` slug appears exactly once in TEMPLATES.md. The 20-item
   category is a family: siblings prepped as **Planner** (Calendar 01),
   **Monthly** (02), **Almanac** (03), **Solstice** (04), **Triptych** (05),

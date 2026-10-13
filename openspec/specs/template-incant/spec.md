@@ -32,8 +32,8 @@ a smiling man with glasses in a blue suit surrounded by speech bubbles
 (stars/eye/quote), a thumbs-up hand with megaphone/envelopes/hearts,
 and a rocket launching with sparkles — feedback-to-launch narrative.
 
-Source slug: `colorlib-wizard-18` (TEMPLATES.md line 855; the section
-"## Bootstrap Wizards (30)" starts at line 844; the slug appears exactly
+Source slug: `colorlib-wizard-18` (TEMPLATES.md line 857; the section
+"## Bootstrap Wizards (30)" starts at line 846; the slug appears exactly
 ONCE — verified `grep -c 'wp/template/colorlib-wizard-18'` = 1 — no dup
 rows to reconcile).
 

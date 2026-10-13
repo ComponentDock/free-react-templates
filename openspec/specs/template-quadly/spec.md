@@ -28,7 +28,7 @@ Checkboxes (20)" catalog series).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 11" — the eleventh of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 741 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 743 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 01–10
   were prepped as Tickbox / Picks / Ticktag / Checkly / Tickwell / Toggly /
   Switchly / Soluna / Taskly / Moodly. **NUMBERING QUIRK (verified
@@ -357,5 +357,5 @@ convention on every template (the original has no footer).
       variant is the plain 4-state default BS4 custom checkbox group
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
-      by implementer at ship time (mark the "Checkbox 11" row, line 741 —
+      by implementer at ship time (mark the "Checkbox 11" row, line 743 —
       Bootstrap Checkboxes category, single row, no duplicates)

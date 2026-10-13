@@ -13,8 +13,8 @@ the live-verified DOM structure, and the Gherkin scenarios.
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-16.jpg` (1200×972 AVIF;
   shows heading "Multi-Select #6", button reading **"Arkansas, Hawaii, Iowa, Montana"**, open
   menu with four selected rows marked ONLY by dark right-edge checkmarks)
-- Source page: `https://colorlib.com/wp/template/multiselect-16/` (TEMPLATES.md line 838, ONE occurrence
-  — section header "## Bootstrap Multiselect (20)" at line 821; no dup rows to mark)
+- Source page: `https://colorlib.com/wp/template/multiselect-16/` (TEMPLATES.md line 840, ONE occurrence
+  — section header "## Bootstrap Multiselect (20)" at line 823; no dup rows to mark)
 - Engine: **bootstrap-select v1.13.9 by SnapAppointments**
   - jQuery 3.3.1 + Popper + Bootstrap 4.6 (the plugin ONLY handles the widget; the
     Bootstrap 4 form/button/dropdown CSS gives it its INPUT-BOX look). EMPTY `main.js`

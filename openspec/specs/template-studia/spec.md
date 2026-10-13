@@ -15,7 +15,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWO times in TEMPLATES.md (dup-row trap): line 612
 (**Education (154)** category — the FIRST occurrence, the canonical one)
-and line 1650 (**Education (155)** category) — both `- [ ]` rows of the SAME
+and line 1652 (**Education (155)** category) — both `- [ ]` rows of the SAME
 template. ONE implementation covers both rows (mark all `[x]` with the same
 surge URL at bookkeeping time).
 
@@ -447,5 +447,5 @@ columns, a newsletter form and a copyright bar.
       apps/cura/src/test/setup.ts into the new app's setup if any
       localStorage use is introduced
 - [ ] TEMPLATES.md bookkeeping at ship time: mark BOTH `- [ ]` rows
-      (line 612 Education, line 1650 Education) `[x]` with the same surge
+      (line 612 Education, line 1652 Education) `[x]` with the same surge
       URL + `npm run readme:status` (implementer)

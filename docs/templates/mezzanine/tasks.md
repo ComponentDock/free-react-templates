@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Modal 09" — free single-page sign-in/sign-up auth
   modal component template (source:
-  https://colorlib.com/wp/template/modal-09/). TEMPLATES.md row: line 808
-  (**Bootstrap Modals (20)**, header line 798). The `modal-09` slug appears
+  https://colorlib.com/wp/template/modal-09/). TEMPLATES.md row: line 810
+  (**Bootstrap Modals (20)**, header line 800). The `modal-09` slug appears
   exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-09/` returns **404** — the REAL
@@ -162,7 +162,7 @@ rounded-none text-white/70 placeholder:text-white/20`); full-width
 8. **Gate + ship** — `scripts/verify-app.sh mezzanine` (typecheck + lint +
    100% coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single
-   TEMPLATES.md row (line 808) `[x]` with
+   TEMPLATES.md row (line 810) `[x]` with
    `https://mezzanine.free.componentdock.com` + `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

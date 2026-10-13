@@ -16,7 +16,7 @@
   with newsletter form (source:
   https://colorlib.com/wp/template/consultingbiz/). Listed in TEMPLATES.md
   under Consulting (line 365) — one recreation covers that checklist row
-  (the dup rows at lines 953/1376 are the same template; do NOT re-implement
+  (the dup rows at lines 955/1378 are the same template; do NOT re-implement
   them, mark them `[x]` with the same surge URL at bookkeeping time).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/consultingbiz/`
   (HTTP 200, ~56KB HTML). DOM + `assets/css/style.css` (381KB,

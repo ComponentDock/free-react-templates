@@ -5,8 +5,8 @@
 Journee is a single-page travel agency / tour booking template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Tourbi" travel HTML template design (see TEMPLATES.md, line
-517 under **Bootstrap (216)** — duplicate rows at line 1207 under **Business
-(365)** and line 2999 under **Travel (44)**, same template, ONE app only),
+517 under **Bootstrap (216)** — duplicate rows at line 1209 under **Business
+(365)** and line 3001 under **Travel (44)**, same template, ONE app only),
 built under a different name ("Journee" — French for "journey / day trip",
 matching the source's tour-booking positioning) with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib

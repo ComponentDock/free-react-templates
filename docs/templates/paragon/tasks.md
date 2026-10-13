@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Ideal" — free interior design / architecture
   website template. Source: https://colorlib.com/wp/template/ideal/.
-  TEMPLATES.md line 419 (Bootstrap category; also duplicated at lines 1048
+  TEMPLATES.md line 419 (Bootstrap category; also duplicated at lines 1050
   Business and 1970 Interior Design — mark ALL THREE `[x]` when done).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/ideal/`
   (HTTP 200, 20.0KB) + stylesheet `css/style.css` (23.7KB, SCSS-compiled) +

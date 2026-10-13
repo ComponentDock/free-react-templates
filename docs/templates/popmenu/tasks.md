@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 02" — second of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-02/).
-  TEMPLATES.md has ONE copy (line 755). Series sibling: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 757). Series sibling: Dropdown 01 was
   prepped as **Menubar** (see `docs/templates/menubar/`).
 - **Demo DOM analyzed:** `https://preview.colorlib.com/theme/bootstrap/dropdown-02/`
   (HTTP 200, 9.4 KB). IMPORTANT: the naive
@@ -89,6 +89,6 @@
 - [ ] Verify: `scripts/verify-app.sh popmenu` (typecheck + lint + 100%
       coverage + build). Then push branch, open PR, squash-merge immediately
       (`gh pr merge --squash --delete-branch`).
-- [ ] After merge: mark TEMPLATES.md line 755 (Dropdown 02) `[x]` with
+- [ ] After merge: mark TEMPLATES.md line 757 (Dropdown 02) `[x]` with
       Surge URL `https://popmenu.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify curl the Surge URL.

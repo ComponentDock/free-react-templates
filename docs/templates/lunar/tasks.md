@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 16" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-16/). Single occurrence
-  in TEMPLATES.md (line 700, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 702, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Lunar**.
 - **Preview URL analyzed:** `https://preview.colorlib.com/theme/bootstrap/calendar-16/`
   — HTTP 200, tiny 12.9KB DOM (no nav, no footer, no images, no icon fonts)

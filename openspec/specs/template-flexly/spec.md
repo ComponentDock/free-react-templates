@@ -16,7 +16,7 @@ React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears THREE times in TEMPLATES.md (dup-row trap): line 497
 (**Bootstrap (216)** category — the FIRST occurrence, the canonical one),
-line 1875, and line 2358 — all `- [ ]` rows of the SAME template. ONE
+line 1877, and line 2360 — all `- [ ]` rows of the SAME template. ONE
 implementation covers all three rows (mark all `[x]` with the same surge
 URL at bookkeeping time).
 

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 09" — ninth of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-09/).
-  TEMPLATES.md has ONE copy (line 762). Series siblings: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 764). Series siblings: Dropdown 01 was
   prepped as **Menubar**, Dropdown 02 as **Popmenu**, Dropdown 03 as
   **Skycast**, Dropdown 04 as **Chime**, Dropdown 05 as **Trolley**,
   Dropdown 06 as **Passkey**, Dropdown 07 as **Onboard**, Dropdown 08 as
@@ -118,7 +118,7 @@ width: 50% }`, cover) + `div.text.pl-3` (`.btn-group .text { width: 50% }`,
    lint + knip + fallow + 100% coverage + build); commit conventionally,
    open PR to main, merge immediately with `gh pr merge --squash
 --delete-branch`, then bookkeeping: `[x]` + surge URL + homepage in
-   TEMPLATES.md line 762 + `npm run readme:status`, push.
+   TEMPLATES.md line 764 + `npm run readme:status`, push.
 
 ## Fidelity pitfalls (learned from the Dropdown series)
 

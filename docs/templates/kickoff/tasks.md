@@ -6,7 +6,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Knights" (TEMPLATES.md line 430 — note the item is
-  duplicated at lines 1820 and 2837; implement line 430's entry).
+  duplicated at lines 1822 and 2839; implement line 430's entry).
 - **Source URL:** https://colorlib.com/wp/template/knights/
 - **Preview URL:** https://preview.colorlib.com/theme/knights/ — **HTTP 200,
   live** (confirmed 2026-08-11, ~41 KB HTML). Do not redo this lookup.

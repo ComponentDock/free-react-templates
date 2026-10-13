@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 18" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-18/). Single occurrence
-  in TEMPLATES.md (line 702, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 704, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Dyad** (series renames so far:
   chronos, metronome, kalends, span, equinox, interval, lunar, epoch).
 - **Preview URL analyzed:** `https://preview.colorlib.com/theme/bootstrap/calendar-18/`
@@ -129,7 +129,7 @@ dateValidator: rome.val.beforeEq(inline_cal_to)}).on('data', function
 6. **Gate + ship** — `scripts/verify-app.sh dyad`; PR
    `feat/template-dyad` with source slug + preview URL + tokens + what
    differs (renames, placeholders); squash-merge immediately; bookkeeping
-   `[x]` on TEMPLATES.md line 702 + surge URL
+   `[x]` on TEMPLATES.md line 704 + surge URL
    `https://dyad.free.componentdock.com` + `npm run readme:status`.
 
 ## Verification checklist

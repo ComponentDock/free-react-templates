@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Oneder" — free one-page business / creative-agency
   website template (source: https://colorlib.com/wp/template/oneder/).
   TEMPLATES.md rows: line 469 (**Bootstrap (216)**) + dup rows at lines
-  1116 (Business), 1480 (Creative), 2346 (One Page), 2536 (Portfolio) —
+  1118 (Business), 1480 (Creative), 2346 (One Page), 2536 (Portfolio) —
   all `- [ ]`, not shipped anywhere. Mark all five `[x]` at ship time.
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-12):**
   `https://preview.colorlib.com/theme/oneder/` (HTTP 200, 45KB HTML) +

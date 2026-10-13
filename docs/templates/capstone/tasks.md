@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 13" — free responsive Bootstrap
   4.3.1 footer-component demo (source:
   https://colorlib.com/wp/template/bootstrap-footer-13/). TEMPLATES.md line
-  789, single `- [ ]` row. This prep: Bootstrap Footer 13 → **Capstone**.
+  791, single `- [ ]` row. This prep: Bootstrap Footer 13 → **Capstone**.
   Bookkeep that row `[x]` when the app ships.
 - **Preview URL quirk (series-wide):** `https://preview.colorlib.com/theme/bootstrap-footer-13/`
   returns 404. Use `https://preview.colorlib.com/theme/bft/bootstrap-footer-13/`
@@ -114,7 +114,7 @@
 6. [ ] Run `npm run verify:app capstone` until green (typecheck + lint +
        knip + fallow + 100% coverage + build)
 7. [ ] Commit `feat: Capstone — footer component demo (ColorLib Bootstrap
-    Footer 13)`; PR + immediate squash merge; then TEMPLATES.md line 789
+    Footer 13)`; PR + immediate squash merge; then TEMPLATES.md line 791
        `[~]`→`[x]` + surge URL + homepage + `npm run readme:status`, push
 
 ## Verification (pre-merge, from the spec)

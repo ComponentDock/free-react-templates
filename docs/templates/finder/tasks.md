@@ -11,8 +11,8 @@
 
 - **Original:** ColorLib "Nissa" — free Bootstrap photography portfolio
   website template (source: https://colorlib.com/wp/template/nissa/;
-  listed THREE times in TEMPLATES.md — line 465 [Bootstrap], line 1110
-  [Business], line 2458 [Photography], all `- [ ]`, same slug → implement
+  listed THREE times in TEMPLATES.md — line 465 [Bootstrap], line 1112
+  [Business], line 2460 [Photography], all `- [ ]`, same slug → implement
   ONE app, mark ALL THREE rows `[x]` at bookkeeping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/nissa/ (HTTP
   200, 45.1KB HTML + `css/style.css` 19.3KB + Bootstrap 4 + font-awesome

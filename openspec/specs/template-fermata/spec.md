@@ -33,7 +33,7 @@ social glyphs, gray copyright. No images, no text buttons, no subscribe form.
   Footer" series (footer-only component demos; the page body is a 70vh
   filler strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-09/. TEMPLATES.md has ONE
-  copy (line 785, `- [ ]` unchecked). This prep: Bootstrap Footer 09 →
+  copy (line 787, `- [ ]` unchecked). This prep: Bootstrap Footer 09 →
   **Fermata**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (same as the rest of the series — see the colophon
   prep):** `https://preview.colorlib.com/theme/bootstrap-footer-09/` returns

@@ -5,7 +5,7 @@
 Cirrus is a single-page business / tech-company template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Cloudtemplate" design (see TEMPLATES.md — Bootstrap category,
-line 361; the slug also repeats at line 3051 — one recreation covers both
+line 361; the slug also repeats at line 3053 — one recreation covers both
 checklist rows), built under a different name with the monorepo stack: Vite +
 React 19 + Tailwind CSS 4 + TypeScript.
 
@@ -469,4 +469,4 @@ a copyright bar.
 - [ ] PR description includes: source template (Cloudtemplate), preview
       URL (`https://preview.colorlib.com/theme/cloudtemplate/`), design
       tokens, renames, placeholder images, fixed source typos, and the dup
-      row (line 3051) covered by the same recreation
+      row (line 3053) covered by the same recreation

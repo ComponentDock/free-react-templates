@@ -153,7 +153,7 @@
       Component Dock credit, paraphrase, distinct service blurbs + quotes,
       no asset copying, sliders client-side).
 - [ ] Post-merge bookkeeping: mark ALL THREE TEMPLATES.md Accent rows
-      (lines 879, ~2285, ~2492) `[x]` with the live URL
+      (lines 881, ~2285, ~2492) `[x]` with the live URL
       (https://websmith.free.componentdock.com),
       `npm run readme:status`.
 

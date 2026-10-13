@@ -17,7 +17,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWO times in TEMPLATES.md (dup-row trap): line 619
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one)
-and line 2603 (also a `- [ ]` row of the SAME template). ONE implementation
+and line 2605 (also a `- [ ]` row of the SAME template). ONE implementation
 covers both rows (mark all `[x]` with the same surge URL at bookkeeping
 time). Source NOT shipped anywhere (no `[x]` row, no app folder).
 
@@ -357,5 +357,5 @@ and stack the multi-column sections to single columns on small screens.
       credit neutral
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark BOTH `- [ ]` rows
-      (line 619 Bootstrap 5, line 2603) `[x]` with the same surge URL +
+      (line 619 Bootstrap 5, line 2605) `[x]` with the same surge URL +
       `npm run readme:status` (implementer)

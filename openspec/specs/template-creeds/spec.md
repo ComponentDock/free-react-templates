@@ -5,7 +5,7 @@
 Creeds is a single-page church landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Faith"
 church website template (see TEMPLATES.md, Church section, line 391;
-duplicates at lines 1263 and 1294 — mark EVERY copy `[x]` when done), built
+duplicates at lines 1265 and 1296 — mark EVERY copy `[x]` when done), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
 CSS 4 + TypeScript.
 
@@ -34,7 +34,7 @@ Poppins (600/700 headings, 500 buttons, 400 body).
 
 - **Original:** ColorLib "Faith" — church website template
   (source: https://colorlib.com/wp/template/faith/). Listed in TEMPLATES.md
-  line 391 (Church section); duplicates at lines 1263 and 1294 — mark every
+  line 391 (Church section); duplicates at lines 1265 and 1296 — mark every
   copy `[x]` when done. Screenshot: `faith-free-template.jpg` (1200×946,
   reviewed visually in the browser: dark church-interior hero with white
   centered text, cyan "Get Started" button, bright cyan countdown band below

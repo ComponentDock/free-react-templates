@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Musiclab" — dark-heroed SaaS landing page for a
   music streaming app (page title "Music Labe"; source:
   https://colorlib.com/wp/template/musiclab/, appears 2× in TEMPLATES.md —
-  line 606 (Bootstrap 5), line 2271 (Music); mark ALL `[x]` when done).
+  line 606 (Bootstrap 5), line 2273 (Music); mark ALL `[x]` when done).
 - **Preview DOM analyzed:** https://preview.colorlib.com/theme/musiclab/
   (HTTP 200, ~32 KB HTML; `assets/css/style.css` ~96 KB parsed for tokens).
   Stack: Bootstrap 5 + slick carousels (hero slider + testimonials) + Font

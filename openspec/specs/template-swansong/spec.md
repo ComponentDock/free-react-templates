@@ -40,7 +40,7 @@ handler in source) and the links.
   Footer" series (footer-only component demos; the page body is a filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-19/. TEMPLATES.md has ONE
-  copy (line 795, `- [ ]` unchecked). This prep: Bootstrap Footer 19 →
+  copy (line 797, `- [ ]` unchecked). This prep: Bootstrap Footer 19 →
   **Swansong**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon/terminus/capstone/
   omega/ultimo/adieu/valediction/farewell preps):**

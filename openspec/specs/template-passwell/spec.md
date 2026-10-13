@@ -65,7 +65,7 @@ Source slug + preview URL are recorded below.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Login Form 03" (page title: "Login #3"). Listed
-  in TEMPLATES.md under **Login Forms (18)** (section at ~line 2143; the
+  in TEMPLATES.md under **Login Forms (42)** (section at ~line 2144; the
   first unchecked item at line 2149 — `wp/template/login-form-03/`).
   Sibling completed items: Login Form 01 → portico, Login Form 02 →
   threshold, Creative Login Form → keycard. Passwell is the 3rd login

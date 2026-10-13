@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 15" — fifteenth of the "Bootstrap
   Checkboxes (20)" series (source: https://colorlib.com/wp/template/checkbox-15/).
-  TEMPLATES.md line 745 — mark that line `[x]` when done (single row, no dups).
+  TEMPLATES.md line 747 — mark that line `[x]` when done (single row, no dups).
 - **Preview URL caveat:** `https://preview.colorlib.com/theme/checkbox-15/`
   is **404** — these demos live under the Bootstrap mega-theme. Use
   `https://preview.colorlib.com/theme/bootstrap/checkbox-15/` (HTTP 200,
@@ -107,4 +107,4 @@
    UI Template".
 5. Deploy: merge via PR → Deploy-to-Surge workflow handles
    quintet.free.componentdock.com; then bookkeeping (`[x]` + surge URL at
-   TEMPLATES.md line 745 + `npm run readme:status`).
+   TEMPLATES.md line 747 + `npm run readme:status`).

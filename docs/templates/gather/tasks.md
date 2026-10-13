@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Evento" — conference / event website template
   (source: https://colorlib.com/wp/template/evento/). TEMPLATES.md has
-  **THREE copies** of this item (lines 1003 — Business, 1678 — Event,
+  **THREE copies** of this item (lines 1005 — Business, 1678 — Event,
   2048 — Landing Page; mark ALL THREE `[x]` when done). Do NOT confuse with
   eventotemplate / eventcon / eventz / eventalk / eventor (→ podium).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/evento/

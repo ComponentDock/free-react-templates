@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 01" — first of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-01/).
-  TEMPLATES.md line 731 — mark that line `[x]` when done (single copy).
+  TEMPLATES.md line 733 — mark that line `[x]` when done (single copy).
   Sibling items Checkbox 02–20 are the SAME design with heading "Checkbox
   #NN" — reuse the Tickbox app for those later (new name + heading per item).
 - **Preview URL caveat:** `https://preview.colorlib.com/theme/checkbox-01/`

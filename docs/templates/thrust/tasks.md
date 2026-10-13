@@ -8,7 +8,7 @@
 - **Original:** ColorLib "StartUp" — free startup / digital-agency website
   template (source: https://colorlib.com/wp/template/startup-2/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 503; duplicate rows at lines
-  2089 and 2861 — same template, one app only).
+  2089 and 2863 — same template, one app only).
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/startup-2/`
   returns HTTP 404, but the no-hyphen slug works:
   `https://preview.colorlib.com/theme/startup2/`. DOM fetched

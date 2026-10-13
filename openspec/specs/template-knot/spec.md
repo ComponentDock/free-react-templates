@@ -5,7 +5,7 @@
 Knot is a single-page wedding website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Sunshine" wedding website template design (see TEMPLATES.md,
-Bootstrap category, line 507 — duplicate row at line 3100, same template, one
+Bootstrap category, line 507 — duplicate row at line 3102, same template, one
 app only), built under a different name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib
 references in app code — provenance lives in this spec, TEMPLATES.md, and the

@@ -47,7 +47,7 @@ that turns green WITHOUT expanding, its own overflow-hidden track, and its own
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 20" — the twentieth (and last) of the
-  "Bootstrap Checkboxes (20)" series in TEMPLATES.md (line 750 — mark that
+  "Bootstrap Checkboxes (20)" series in TEMPLATES.md (line 752 — mark that
   line `[x]` when done; single row, no duplicate rows). Sibling items Checkbox
   11–19 were prepped as Quadly / Duo / Trio / Quartet / Quintet / Sextet /
   Septet / Octet / Nonet.
@@ -379,6 +379,6 @@ with a main landmark and a document title.
       overflow-clip teleport trick)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 750 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 752 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

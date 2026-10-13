@@ -560,7 +560,7 @@ columns, and the repo-standard Component Dock credit.
 - [ ] Footer links Component Dock (https://www.componentdock.com/) —
       replaces the original "Colorlib" credit; no colorlib.com /
       preview.colorlib.com strings in any app file
-- [ ] TEMPLATES.md: mark ALL THREE "Logistic" rows (lines 601, 1082, 2964) `[x]` + `https://convey.free.componentdock.com` +
+- [ ] TEMPLATES.md: mark ALL THREE "Logistic" rows (lines 601, 1084, 2964) `[x]` + `https://convey.free.componentdock.com` +
       readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge workflow green + surge
       URL (convey.free.componentdock.com) returns 200

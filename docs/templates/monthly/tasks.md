@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Calendar V02" (listing "Calendar 02") — free
   "vertical" Bootstrap calendar widget template (source:
-  https://colorlib.com/wp/template/calendar-02/). TEMPLATES.md row: line 686
+  https://colorlib.com/wp/template/calendar-02/). TEMPLATES.md row: line 688
   (**Bootstrap Calendars (20)**). The `calendar-02` slug appears exactly once
   (no dup rows to mark). ColorLib description: "A catchy free vertical
   calendar template based on the powerful Bootstrap Framework for complete
@@ -178,5 +178,5 @@
 10. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
 11. [ ] After merge: TEMPLATES.md `[~]` → `[x]` + surge URL
         (`monthly.free.componentdock.com`) + `npm run readme:status`; push
-        (mark line 686 — Bootstrap Calendars (20) category; single row, no
+        (mark line 688 — Bootstrap Calendars (20) category; single row, no
         dups)

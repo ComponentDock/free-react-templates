@@ -5,7 +5,7 @@
 Wedlock is a single-page wedding / event-planner website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Wordpress Wedding Themes" category item (see TEMPLATES.md — line
-235, Fashion section, and its duplicate at line 3107, Wedding section; the
+235, Fashion section, and its duplicate at line 3109, Wedding section; the
 first `- [ ]` item whose prep did not exist on main), built under a NEW name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

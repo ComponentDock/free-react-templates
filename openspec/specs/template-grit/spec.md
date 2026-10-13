@@ -5,7 +5,7 @@
 Grit is a single-page gym/fitness website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Stamina" website template design (see TEMPLATES.md, Bootstrap
-category, line 502 — duplicate rows at lines 1179, 1879, 2361, same template,
+category, line 502 — duplicate rows at lines 1181, 1881, 2363, same template,
 one app only), built under a different name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib
 references in app code — provenance lives in this spec, TEMPLATES.md, and the

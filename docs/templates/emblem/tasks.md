@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Noxen" — free digital-agency website template
   (source: https://colorlib.com/wp/template/noxen/). TEMPLATES.md rows:
-  line 467 (**Bootstrap (216)** category) + dup rows at lines 1112
+  line 467 (**Bootstrap (216)** category) + dup rows at lines 1114
   (Business), 2067 (Landing Page), 2535 (Portfolio) — all `- [ ]`, not
   shipped anywhere. Mark all four `[x]` at ship time.
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-11):**

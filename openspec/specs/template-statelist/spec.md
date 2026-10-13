@@ -34,7 +34,7 @@ copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Multiselect 10". Listed in TEMPLATES.md under
-  **Bootstrap Multiselect (20)** (section header line 821; row at line
+  **Bootstrap Multiselect (20)** (section header line 823; row at line
   834). Free multiselect-dropdown component template.
 - **Live preview DOM — REACHABLE (verified 2026-09-07):** the default
   preview URL `https://preview.colorlib.com/theme/bootstrap/multiselect-10/`

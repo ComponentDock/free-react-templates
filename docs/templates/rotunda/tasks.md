@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Modal 13" — free single-page Instagram
   newsletter/offer modal component template (source:
-  https://colorlib.com/wp/template/modal-13/). TEMPLATES.md row: line 812
-  (**Bootstrap Modals (20)**, header line 798). The `modal-13` slug appears
+  https://colorlib.com/wp/template/modal-13/). TEMPLATES.md row: line 814
+  (**Bootstrap Modals (20)**, header line 800). The `modal-13` slug appears
   exactly once (no dup rows to mark). Demo `<title>`/heading is the generic
   "Modal #3".
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default

@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Travelo" — free travel & tourism HTML template
   (source: https://colorlib.com/wp/template/travelo/). Listed in
   TEMPLATES.md under **Bootstrap (216)** at line 519; duplicate row at
-  line 3009 under **Travel (44)** — same template, ONE app only. Mark
+  line 3011 under **Travel (44)** — same template, ONE app only. Mark
   BOTH rows `[x]` after merge.
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/travelo/`. DOM fetched

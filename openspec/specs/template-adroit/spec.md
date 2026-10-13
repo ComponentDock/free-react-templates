@@ -14,7 +14,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWICE in TEMPLATES.md (dup-row trap): line 623
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one) and
-line 1156 (**Business (365)**) — both `- [ ]` rows of the SAME template. ONE
+line 1158 (**Business (365)**) — both `- [ ]` rows of the SAME template. ONE
 implementation covers both rows (mark all `[x]` with the same surge URL at
 bookkeeping time).
 
@@ -454,5 +454,5 @@ bookkeeping time).
       list item, "Creative Desgin" typo — normalize, note in PR
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL TWO `- [ ]` rows
-      (line 623 Bootstrap 5, line 1156 Business) `[x]` with the same
+      (line 623 Bootstrap 5, line 1158 Business) `[x]` with the same
       surge URL + `npm run readme:status`

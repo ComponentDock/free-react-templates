@@ -13,8 +13,8 @@
 Leadwave is a single-page digital-agency / marketing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Ultim8" agency website HTML template design (see TEMPLATES.md,
-line 522 under **Bootstrap (216)** — duplicate rows at line 1211 under
-**Business (365)** and line 2367 under **One Page (91)**, same template, ONE
+line 522 under **Bootstrap (216)** — duplicate rows at line 1213 under
+**Business (365)** and line 2369 under **One Page (91)**, same template, ONE
 app only; mark ALL THREE rows `[x]` after merge), built under a different name
 ("Leadwave" — a wave of leads, matching the source's SEO / social-media
 marketing positioning: "Search Engine & Social Media Optimization Experts")

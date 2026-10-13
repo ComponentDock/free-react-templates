@@ -5,7 +5,7 @@
 Shred is a single-page fitness-club / personal-training template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Slim2" design (see TEMPLATES.md — Bootstrap category, line 498; the
-same source is DUPLICATED at lines 1167 and 1876 — ALL THREE rows must be
+same source is DUPLICATED at lines 1169 and 1878 — ALL THREE rows must be
 marked `[x]` when done), built under a NEW name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

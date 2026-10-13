@@ -5,7 +5,7 @@
 Tempo is a single-page DJ/music-event template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Djoz" entry in TEMPLATES.md (listed under **Bootstrap (216)** at
-line 375; duplicate row at line 2264 under **Blog (60)**), built under a
+line 375; duplicate row at line 2266 under **Blog (60)**), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 
@@ -42,7 +42,7 @@ colors, typography, and content types (no ColorLib assets copied).
 - **Original:** ColorLib "Djoz" — DJ / Music Event HTML Template
   (source: https://colorlib.com/wp/template/djoz/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 375; duplicate row line
-  2264 under Blog (60)).
+  2266 under Blog (60)).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/djoz/`
   (HTTP 200). DOM fetched and analyzed (`/tmp/djoz-preview.html`,
   38 KB); stylesheet

@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Confer" — free Bootstrap 5 conference/event
   template with a dark navy + pink→indigo gradient aesthetic (source:
   https://colorlib.com/wp/template/confer/). Listed in TEMPLATES.md under
-  Bootstrap (line 363; slug repeats at lines 947 and 1669 — one recreation
+  Bootstrap (line 363; slug repeats at lines 949 and 1671 — one recreation
   covers all three dup rows).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/confer/`
   (HTTP 200, ~75KB HTML; title "Confer - Conference Event HTML Template").

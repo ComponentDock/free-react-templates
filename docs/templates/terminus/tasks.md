@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Bootstrap Footer 12" — a footer-only component demo
   (source: https://colorlib.com/wp/template/bootstrap-footer-12/). TEMPLATES.md
-  has ONE copy (line 788, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 790, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 12 → **Terminus** ("the end point of a
   journey" — the twelfth entry in the footer series' ending-themed naming:
   Colophon → Envoi → Epilogue → Coda → Outro → Finale → Postlude → Stretto →
@@ -118,6 +118,6 @@ letter-spacing: 1px; border-radius: 40px`.
 - [ ] `npm run verify:app terminus` → full per-app gate green
 - [ ] Open PR `feat/template-terminus` → merge immediately
       (`gh pr merge --squash --delete-branch`)
-- [ ] Bookkeep TEMPLATES.md line 788 `[x]` + surge URL
+- [ ] Bookkeep TEMPLATES.md line 790 `[x]` + surge URL
       `https://terminus.free.componentdock.com` (implementer's job — prep
       stream never touches markers)

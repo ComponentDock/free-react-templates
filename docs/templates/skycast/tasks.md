@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 03" — third of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-03/).
-  TEMPLATES.md has ONE copy (line 756). Series siblings: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 758). Series siblings: Dropdown 01 was
   prepped as **Menubar**, Dropdown 02 as **Popmenu** (see
   `docs/templates/menubar/`, `docs/templates/popmenu/`).
 - **Demo DOM analyzed:** `https://preview.colorlib.com/theme/bootstrap/dropdown-03/`
@@ -107,6 +107,6 @@
 - [ ] Verify: `scripts/verify-app.sh skycast` (typecheck + lint + 100%
       coverage + build). Then push branch, open PR, squash-merge immediately
       (`gh pr merge --squash --delete-branch`).
-- [ ] After merge: mark TEMPLATES.md line 756 (Dropdown 03) `[x]` with
+- [ ] After merge: mark TEMPLATES.md line 758 (Dropdown 03) `[x]` with
       Surge URL `https://skycast.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify curl the Surge URL.

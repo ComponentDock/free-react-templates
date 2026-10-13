@@ -149,7 +149,7 @@ the numbering.)
 
 - **Original:** ColorLib "Colorlib Wizard 15" (page title: "Sign Up
   Form"). Listed in TEMPLATES.md under **## Bootstrap Wizards (30)**
-  (section header at line 844; the one and only row at line 852 —
+  (section header at line 846; the one and only row at line 854 —
   `wp/template/colorlib-wizard-15/` appears exactly ONCE). Member 15 of
   colorlib-wizard-1 … 30. Sibling preps: Conjure (wizard-1, chain seed
   — cream/olive, horizontal dot nav), Banish (wizard-10 — photo bg,

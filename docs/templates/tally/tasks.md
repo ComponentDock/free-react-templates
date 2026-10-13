@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Bootstrap Buttons 16" — free UI-kit button
   component template (source:
   https://colorlib.com/wp/template/bootstrap-buttons-16/). TEMPLATES.md
-  row: line 677 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-16`
+  row: line 679 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-16`
   slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-14):** the
   default `https://preview.colorlib.com/theme/bootstrap-buttons-16/`
@@ -139,6 +139,6 @@ transition-all duration-300 ease-in-out` (mirrors `.3s all ease`).
        `/bb/` quirk AND the "Button #06" heading-number artifact), design
        tokens used, what differs (renames, placeholders, lucide icons)
 8. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
-9. [ ] After merge: TEMPLATES.md "Bootstrap Buttons 16" row (line 677)
+9. [ ] After merge: TEMPLATES.md "Bootstrap Buttons 16" row (line 679)
        `[~]` → `[x]` + `https://tally.free.componentdock.com` + `npm run
     readme:status`; push

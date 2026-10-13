@@ -48,7 +48,7 @@ default Bootstrap series).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 13". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 812). Free
+  Modals (20)** (section header line 800; row at line 814). Free
   Instagram-newsletter modal component template. The `modal-13` slug appears
   exactly ONCE in TEMPLATES.md (no dup rows to mark). Demo `<title>` uses the
   generic "Modal #3" copy.

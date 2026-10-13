@@ -35,7 +35,7 @@ and content types (no ColorLib assets copied).
 - **Original:** ColorLib "Craft" — Creative Agency Bootstrap HTML Template
   (source: https://colorlib.com/wp/template/craft/). Listed in TEMPLATES.md
   under the Bootstrap category (line 367; note: the same "Craft" row is
-  duplicated at lines 958 and 1455 — dup-row trap, do not re-claim).
+  duplicated at lines 960 and 1457 — dup-row trap, do not re-claim).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/craft/`
   (HTTP 200). DOM fetched and analyzed (`/tmp/craft-ref/craft.html`, 19.8
   KB); stylesheet `https://preview.colorlib.com/theme/craft/css/style.css`

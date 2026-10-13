@@ -6,8 +6,8 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Colorlib Wizard 12" (TEMPLATES.md line 849; section
-  "## Bootstrap Wizards (30)" at line 844). The
+- **ColorLib item:** "Colorlib Wizard 12" (TEMPLATES.md line 851; section
+  "## Bootstrap Wizards (30)" at line 846). The
   `wp/template/colorlib-wizard-12/` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows; close-string matches for wizard-1/2/11/21..29
   are prefix substrings, not duplicates).
@@ -189,6 +189,6 @@ CSS + lucide icons. (Do not invent photos the source lacks.)
         inline success greeting instead of alert, Prev
         disabled-but-visible on step 1, accessible semantics + focus
         rings, Component Dock footer).
-12. [ ] Bookkeeping after merge: mark TEMPLATES.md line 849 `[x]` + surge
+12. [ ] Bookkeeping after merge: mark TEMPLATES.md line 851 `[x]` + surge
         URL (`https://abjure.free.componentdock.com`), `npm run
     readme:status`, push.

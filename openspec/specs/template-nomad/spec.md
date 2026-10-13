@@ -32,7 +32,7 @@ sitting absolutely behind headings.
 
 - **Original:** ColorLib "Explore" — travel/personal blog template
   (source: https://colorlib.com/wp/template/explore/). Listed in TEMPLATES.md
-  under Blog (line 258; duplicate lines 390 and 2392 — mark every copy).
+  under Blog (line 258; duplicate lines 390 and 2394 — mark every copy).
   Screenshot: `explore-free-template.jpg` (1200×946, reviewed visually in the
   browser).
 - **Live preview URL:** https://preview.colorlib.com/theme/explore/ —

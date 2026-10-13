@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Personal" — free one-page personal portfolio/CV
   template (source: https://colorlib.com/wp/template/personal/).
   TEMPLATES.md rows: line 472 (**Bootstrap (216)** category) AND duplicate
-  row line 2413 (**Personal (53)** category) — the same slug listed twice;
+  row line 2415 (**Personal (53)** category) — the same slug listed twice;
   BOTH must be marked `[x]` with the same surge URL at ship time.
 - **Recreation name:** Curio (an old, curious, collectible object). App
   folder `apps/curio`, package `@free-react-templates/curio`,

@@ -16,7 +16,7 @@ functional component-showcase page.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Dropdown 03" — third demo in the "Bootstrap
-  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 756). Series
+  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 758). Series
   siblings: Dropdown 01 was prepped as **Menubar**, Dropdown 02 as
   **Popmenu** (see `docs/templates/menubar/`, `docs/templates/popmenu/`).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/bootstrap/dropdown-03/`
@@ -240,7 +240,7 @@ Dock (the reference demo has no footer — this is a repo convention).
 - [ ] Per-app gate passes: `scripts/verify-app.sh skycast` (typecheck +
       lint + 100% coverage tests + build)
 - [ ] Full gate passes on merge (CI `npm run gate`), nightly sweep green
-- [ ] TEMPLATES.md: mark line 756 (Dropdown 03) `[~]` → `[x]` + Surge URL +
+- [ ] TEMPLATES.md: mark line 758 (Dropdown 03) `[~]` → `[x]` + Surge URL +
       homepage after merge
 - [ ] `npm run readme:status` regenerates README Templates status table after merge
 - [ ] PR description states: source template (ColorLib Dropdown 03), preview

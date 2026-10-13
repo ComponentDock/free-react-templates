@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Action" — free Bootstrap 5 startup / landing
   template (source: https://colorlib.com/wp/template/action/). Listed in
-  TEMPLATES.md under Bootstrap 5 (line 549); duplicate row at line 881
+  TEMPLATES.md under Bootstrap 5 (line 549); duplicate row at line 883
   (another category) — same template, ONE app only. Mark BOTH rows `[x]`
   after merge.
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/action/`.

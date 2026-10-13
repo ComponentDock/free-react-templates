@@ -3,7 +3,7 @@
 > Implemented and shipped via PR #268 (merged 2026-08-11, commit `d08cd92f`)
 > on `feat/template-medico`. The original prep artifact for this folder
 > misattributed the template to ColorLib "Docmed" — that was WRONG: Docmed is a
-> SEPARATE ColorLib template (own rows in TEMPLATES.md at lines 376/1837/2230,
+> SEPARATE ColorLib template (own rows in TEMPLATES.md at lines 376/1839/2232,
 > preview https://preview.colorlib.com/theme/docmed/), still unclaimed. The
 > Docmed research from the old prep artifact survives in git history (the
 > pre-`d08cd92f` version of `openspec/specs/template-medico/spec.md`).

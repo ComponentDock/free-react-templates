@@ -5,7 +5,7 @@
 Sakura is a single-page interactive calendar-with-events widget template in
 the free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Calendar 08" design (see TEMPLATES.md, **Bootstrap Calendars
-(20)** category, line 692 — the `calendar-08` slug appears exactly once, no
+(20)** category, line 694 — the `calendar-08` slug appears exactly once, no
 duplicate rows), built under a DIFFERENT name (**Sakura** — cherry blossom,
 evoking the template's signature pink `#fc7fb2` accent; per the monorepo
 naming mandate — never reuse the ColorLib source name), with the monorepo
@@ -117,8 +117,8 @@ recreation SHALL make them functional in React).
   https://colorlib.com/wp/template/calendar-08/; the template page's meta
   description: "A trendy free calendar with events Bootstrap template that
   offers a user to add an event to their desired date."). TEMPLATES.md line
-  692,
-  **Bootstrap Calendars (20)** category (header at line 683). The
+  694,
+  **Bootstrap Calendars (20)** category (header at line 685). The
   `calendar-08` slug appears exactly once in TEMPLATES.md. The 20-item
   category is a family: siblings prepped as **Planner** (Calendar 01),
   **Monthly** (Calendar 02), **Almanac** (03), **Solstice** (04),
@@ -807,4 +807,4 @@ convention on every template (the original has no footer).
 - [ ] No localStorage/sessionStorage used (no MemoryStorage polyfill needed)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`
       done by implementer at ship time (mark the "Calendar 08" row, line
-      692 — Bootstrap Calendars (20) category; single row, no dups)
+      694 — Bootstrap Calendars (20) category; single row, no dups)

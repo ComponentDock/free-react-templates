@@ -17,7 +17,7 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   hero, breaking-news ticker, latest/popular/stories post lists, right
   sidebar (editor's pick, newsletter, most popular, social networks), dark
   footer. TEMPLATES.md has TWO copies of this item (lines 270 and 2197 —
-  duplicate rows: line 270 in the alphabetical list, line 2197 in the
+  duplicate rows: line 270 in the alphabetical list, line 2199 in the
   "Magazine (34)" category section); ONE recreation (Periodical) covers both
   — the implementer must mark BOTH rows `[x]`.
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/magazine/`

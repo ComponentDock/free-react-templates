@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Tangre" — free furniture/interior website template
   (page `<title>` "Tangre Furniture"; source:
   https://colorlib.com/wp/template/tangre/). Listed in TEMPLATES.md under
-  **Bootstrap (216)** (line 508; duplicate row at line 1194 under Business
+  **Bootstrap (216)** (line 508; duplicate row at line 1196 under Business
   (365) — same template, one app only).
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/tangre/`.
   DOM fetched (`/tmp/tangre.html`, 30,383 bytes) + stylesheet `css/main.css`

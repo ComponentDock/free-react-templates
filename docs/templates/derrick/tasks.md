@@ -7,8 +7,8 @@
 
 - **Original:** ColorLib "Engineers" — industrial/engineering company
   template (source: https://colorlib.com/wp/template/engineers/). Listed in
-  TEMPLATES.md (Bootstrap section, line 386; duplicate entries at lines 996,
-  1346 and 1945 — mark EVERY copy `[x]` when done).
+  TEMPLATES.md (Bootstrap section, line 386; duplicate entries at lines 998,
+  1348 and 1947 — mark EVERY copy `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/engineers/ — reachable.
   Fetched: `/tmp/engineers-prep/preview.html` (22.8 KB), `css/style.css`
   (29.3 KB), `css/bootstrap.min.css` (28.7 KB — carries `--primary`).

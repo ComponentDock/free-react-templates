@@ -4,7 +4,7 @@
 
 Conjury is a hotel reservation wizard in the free-react-templates monorepo. It
 is an original React recreation of the ColorLib free "Colorlib Wizard 2"
-template design (see TEMPLATES.md line 857; `grep -c
+template design (see TEMPLATES.md line 859; `grep -c
 'wp/template/colorlib-wizard-2/'` = 1), built under a DIFFERENT name
 (Conjury — a single lowercase word, noun form of "conjure", continuing the
 spell-themed naming series already used for the other wizard recreations:

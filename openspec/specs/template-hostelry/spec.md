@@ -6,7 +6,7 @@ Hostelry is a single-page hotel website template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Royal"
 design (see TEMPLATES.md — first `- [ ]` item whose prep did not exist on
 main, line 491 in the Hotel category; the same source slug is DUPLICATED at
-line 1926 — BOTH rows must be marked `[x]` when done), built under a NEW name
+line 1928 — BOTH rows must be marked `[x]` when done), built under a NEW name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a hotel landing page: an absolute header over the hero (logo

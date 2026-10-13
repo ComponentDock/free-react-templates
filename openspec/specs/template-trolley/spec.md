@@ -16,7 +16,7 @@ functional component-showcase page on a flat light-gray background.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Dropdown 05" — fifth demo in the "Bootstrap
-  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 758). Series
+  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 760). Series
   siblings: Dropdown 01 was prepped as **Menubar**, Dropdown 02 as
   **Popmenu**, Dropdown 03 as **Skycast**, Dropdown 04 as **Chime** (see
   `docs/templates/menubar/`, `docs/templates/popmenu/`,

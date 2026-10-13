@@ -8,7 +8,7 @@
 - **Original:** ColorLib "The Charity" — free charity/non-profit website
   template (source: https://colorlib.com/wp/template/the-charity/). Listed
   in TEMPLATES.md under **Bootstrap (216)** (line 510; duplicate rows at
-  line 1281 under Charity (37) and line 1305 under Church (22) — same
+  line 1283 under Charity (37) and line 1307 under Church (22) — same
   template, ONE app only). Preview `<title>` is placeholder "Hello World".
 - **Preview REACHABLE (HTTP 200) — SLUG HAS NO HYPHEN:**
   `https://preview.colorlib.com/theme/thecharity/`. The hyphenated URL

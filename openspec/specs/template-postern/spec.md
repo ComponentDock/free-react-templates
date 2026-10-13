@@ -45,7 +45,7 @@ Ingress's photo-band-overlapping-circle composition.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 12". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 811). Free
+  Modals (20)** (section header line 800; row at line 813). Free
   photo-newsletter modal component template. The `modal-12` slug appears
   exactly ONCE in TEMPLATES.md (no dup rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-16):** the default preview

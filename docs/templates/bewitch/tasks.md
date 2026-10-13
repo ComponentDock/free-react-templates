@@ -6,8 +6,8 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Colorlib Wizard 13" (TEMPLATES.md line 850; section
-  "## Bootstrap Wizards (30)" at line 844). The
+- **ColorLib item:** "Colorlib Wizard 13" (TEMPLATES.md line 852; section
+  "## Bootstrap Wizards (30)" at line 846). The
   `wp/template/colorlib-wizard-13/` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows; close-string matches for wizard-1/2/3/11/21..29
   are prefix substrings, not duplicates).
@@ -239,6 +239,6 @@ r > b+15 AND r+g+b > 450 — a golden-hour sky/clouds scene should score
         blocking validation (source has none), inline success message
         instead of a reload, accessible accordion/radio/listbox semantics
     - focus rings + Component Dock footer).
-11. [ ] Bookkeeping after merge: mark TEMPLATES.md line 850 `[x]` + surge
+11. [ ] Bookkeeping after merge: mark TEMPLATES.md line 852 `[x]` + surge
         URL (`https://bewitch.free.componentdock.com`), `npm run
    readme:status`, push.

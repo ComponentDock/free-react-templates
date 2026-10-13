@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Calendar 01" — free minimalist Bootstrap calendar
   widget template (source: https://colorlib.com/wp/template/calendar-01/).
-  TEMPLATES.md row: line 685 (**Bootstrap Calendars (20)**). The
+  TEMPLATES.md row: line 687 (**Bootstrap Calendars (20)**). The
   `calendar-01` slug appears exactly once (no dup rows to mark). ColorLib
   description: "A simple and straightforward free Bootstrap calendar
   template that keeps things clear and easily manageable."
@@ -134,5 +134,5 @@ flex items-center justify-center px-4 py-16`.
 10. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
 11. [ ] After merge: TEMPLATES.md `[~]` → `[x]` + surge URL
         (`planner.free.componentdock.com`) + `npm run readme:status`; push
-        (mark line 685 — Bootstrap Calendars (20) category; single row, no
+        (mark line 687 — Bootstrap Calendars (20) category; single row, no
         dups)

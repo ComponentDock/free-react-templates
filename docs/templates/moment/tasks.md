@@ -8,8 +8,8 @@
 
 - **Original:** ColorLib "Calendar 09" — free Bootstrap **datetime-picker**
   widget template (source: https://colorlib.com/wp/template/calendar-09/).
-  TEMPLATES.md row: line 693 (**Bootstrap Calendars (20)**, header line
-  683). The `calendar-09` slug appears exactly once (no dup rows to mark).
+  TEMPLATES.md row: line 695 (**Bootstrap Calendars (20)**, header line
+  685). The `calendar-09` slug appears exactly once (no dup rows to mark).
   Family siblings "Calendar 01"–"Calendar 08" were prepped as **Planner**,
   **Monthly**, **Almanac**, **Solstice**, **Triptych**, **Ephemeris**,
   **Twilight**, **Sakura** — each is a DIFFERENT widget layout; do not copy
@@ -221,4 +221,4 @@
       design tokens used, deviations (Lato simplification in widget, native
       Date instead of moment.js, lucide icons, fixed reference today 18 Dec
       2020 5:00 PM instead of live now)
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` for "Calendar 09" (line 693) + surge URL + homepage + `npm run readme:status`; commit + push
+- [ ] After merge: TEMPLATES.md `[~]` → `[x]` for "Calendar 09" (line 695) + surge URL + homepage + `npm run readme:status`; commit + push

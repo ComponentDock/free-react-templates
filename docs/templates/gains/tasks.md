@@ -9,7 +9,7 @@
   (source: https://colorlib.com/wp/template/fitzone-2/). TEMPLATES.md has
   THREE copies (lines 399, 1016, 1848 — duplicate rows; one recreation
   covers all three; implementer marks ALL THREE `[x]`). WARNING: "Fitzone"
-  (no "2", lines 1466/1847) is a DIFFERENT template — don't conflate.
+  (no "2", lines 1468/1849) is a DIFFERENT template — don't conflate.
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/fitzone2/ (HTTP
   200, 36.4 KB; title "Fitzone"). Preview slug is `fitzone2` (per
   products.js entry `["fitzone2","Fitzone2","Business",0,...]`), while the
@@ -154,7 +154,7 @@ justify-content-end` ul links: Home, about, courses, blog, Pages
       subscribe validation, footer
 - [ ] `scripts/verify-app.sh gains`: typecheck + lint + vitest 100% + build
 - [ ] Ship via PR `feat/template-gains`, merge immediately
-- [ ] After merge: `[x]` on ALL THREE dup rows (lines 399, 1016, AND 1848) in TEMPLATES.md + surge URL; `npm run readme:status`; deploy
+- [ ] After merge: `[x]` on ALL THREE dup rows (lines 399, 1018, AND 1848) in TEMPLATES.md + surge URL; `npm run readme:status`; deploy
       check (curl surge URL)
 
 ## Fidelity watch-outs

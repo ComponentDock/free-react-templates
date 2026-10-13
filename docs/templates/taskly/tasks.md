@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 09" — ninth of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-09/).
-  TEMPLATES.md line 739 — mark that line `[x]` when done (single row, no
+  TEMPLATES.md line 741 — mark that line `[x]` when done (single row, no
   duplicates). NOTE: each item in this series is a DIFFERENT variant design —
   Checkbox 09 is the **ks-cboxtags TASK-CHECKLIST** variant (3 strikethrough
   task rows with green check circles), NOT the Soluna day/night switch
@@ -127,5 +127,5 @@ defaultChecked: false }]`; each row = `<li>` → `<label>` (block,
    keyboard (Space) toggle, label-associated input names, responsive column,
    footer link.
 7. Gate: `scripts/verify-app.sh taskly`; PR description with source (ColorLib
-   Checkbox 09), preview URL, tokens, diffs; mark TEMPLATES.md line 739
+   Checkbox 09), preview URL, tokens, diffs; mark TEMPLATES.md line 741
    `[x]` + surge URL + `npm run readme:status`.

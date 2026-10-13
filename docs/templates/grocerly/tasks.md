@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Ogani" — free fresh-grocery / organic food store
   website template (source: https://colorlib.com/wp/template/ogani/).
   TEMPLATES.md rows: line 468 (**Bootstrap (216)** category) + dup rows at
-  lines 1114 (Business), 1592 (Ecommerce), 1787 (Food Drinks) — all
+  lines 1116 (Business), 1592 (Ecommerce), 1787 (Food Drinks) — all
   `- [ ]`, not shipped anywhere. Mark all four `[x]` at ship time.
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-12):**
   `https://preview.colorlib.com/theme/ogani/` (HTTP 200, 49KB HTML) +

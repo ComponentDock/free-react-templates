@@ -13,7 +13,7 @@ Tailwind CSS 4 + TypeScript.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Xgym" — free Bootstrap gym / fitness club website
-  template. TEMPLATES.md has THREE copies of this item (lines 539, 1237, and
+  template. TEMPLATES.md has THREE copies of this item (lines 539, 1239, and
   1887 — mark EVERY copy `[x]` when done).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/xgym/`
   (HTTP 200, 16.7 KB HTML; page title "X Gym - Fitness HTML Template").

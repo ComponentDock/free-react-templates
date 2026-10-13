@@ -5,7 +5,7 @@
 Studio is a single-section creative-studio landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Carousel #10" website template from the Bootstrap Carousels
-series (see TEMPLATES.md, Bootstrap Carousels section, line 727 — single row,
+series (see TEMPLATES.md, Bootstrap Carousels section, line 729 — single row,
 no duplicate rows elsewhere), built under a different name with the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
@@ -77,7 +77,7 @@ opacity: .5; z-index: 2` via `.hero-slider:before`), `.sub-text` → `#000`,
 - **Original:** ColorLib "Carousel #10" — creative-studio single-hero landing,
   Bootstrap Carousels series (source:
   https://colorlib.com/wp/template/carousel-20/). Listed in TEMPLATES.md
-  line 727 (section "## Bootstrap Carousels (20)"); grep confirms NO
+  line 729 (section "## Bootstrap Carousels (20)"); grep confirms NO
   duplicate rows for this slug elsewhere. Screenshot:
   `carousel-20.jpg` (1200×972, AVIF, reviewed visually in the browser:
   solid deep-navy background, small centered white "Carousel #10" label near

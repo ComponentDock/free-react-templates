@@ -5,9 +5,9 @@
 Ripply is a single-page app-landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Drimo" entry in TEMPLATES.md (listed under **Bootstrap (216)**
-at line 378; duplicate rows at line 982 under **Business (365)**, line
-1462 under **Creative (55)**, line 2037 under **Landing Page (96)** and
-line 2232 under **Medical (32)** — same template, one app only), built
+at line 378; duplicate rows at line 984 under **Business (365)**, line
+1464 under **Creative (55)**, line 2039 under **Landing Page (96)** and
+line 2234 under **Medical (32)** — same template, one app only), built
 under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
@@ -43,8 +43,8 @@ colors, typography, and content types (no ColorLib assets copied).
 - **Original:** ColorLib "Drimo" — Free Unique Landing Page Website
   Template (source: https://colorlib.com/wp/template/drimo/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 378; duplicate rows at
-  line 982 under Business (365), line 1462 under Creative (55), line
-  2037 under Landing Page (96) and line 2232 under Medical (32)).
+  line 984 under Business (365), line 1464 under Creative (55), line
+  2039 under Landing Page (96) and line 2234 under Medical (32)).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/drimo/`
   (HTTP 200, static HTML). DOM fetched and analyzed (`/tmp/drimo-
 preview.html`, 11.5 KB portal page); stylesheets fetched — the portal

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 07" — the SEVENTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-07/).
-  Single occurrence in TEMPLATES.md (line 714, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 716, "Bootstrap Carousels (20)"
   category — no dup rows). Recreation uses the NEW name **Positano**
   (seventh of the carousel-series renames; lineage from the Wanderlust
   prep: carousel-01 → wanderlust, carousel-02 → faraway, carousel-03 →

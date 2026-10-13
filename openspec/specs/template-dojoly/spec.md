@@ -4,7 +4,7 @@
 
 Dojoly is a martial-arts school website in the free-react-templates monorepo.
 It is an original React recreation of the ColorLib free "Nova" template
-design (see TEMPLATES.md — appears 2×: line 608 (Bootstrap 5) and line 1869;
+design (see TEMPLATES.md — appears 2×: line 608 (Bootstrap 5) and line 1871;
 both rows point to the same source and are `- [ ]` — one prep covers both,
 mark ALL `[x]` when done; verified with `grep -c 'wp/template/nova/'
 TEMPLATES.md` = 2), built under a DIFFERENT name (Dojoly — "dojo" + the

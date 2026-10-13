@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-09/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 785, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 787, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 09 → **Fermata** (a music-notation
   symbol marking a held/paused note, commonly at the end of a piece —
   continues the series' ending-themed names Colophon → Envoi → Epilogue →
@@ -147,7 +147,7 @@
       inline nav links with exact copy + hover color, "Stay in touch"
       heading, five social links with brand colors + aria-labels, copyright + Component Dock link, responsive classes present)
 - [ ] `npm run verify:app fermata` passes; commit `feat: add fermata …`; PR +
-      immediate squash merge; then TEMPLATES.md bookkeeping — line 785
+      immediate squash merge; then TEMPLATES.md bookkeeping — line 787
       (Bootstrap Footer 09) → `[x]` + surge URL +
       `npm run readme:status`
 
@@ -172,4 +172,4 @@
       naturally; no horizontal overflow
 - [ ] Roboto + Poppins Google Fonts links (no Source Serif Pro); ZERO images
       (this variant has none); no ColorLib anywhere in `apps/fermata`
-- [ ] `npm run verify:app fermata` green; TEMPLATES.md line 785 bookkept `[x]`
+- [ ] `npm run verify:app fermata` green; TEMPLATES.md line 787 bookkept `[x]`

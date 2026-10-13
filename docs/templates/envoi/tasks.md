@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-03/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 779, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 781, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 03 → **Envoi** (the concluding part of a
   poem or book — continues the back-matter series: Footer 01 → Colophon,
   Footer 02 → Epilogue; no collision with `apps/`, `openspec/specs/`,
@@ -119,7 +119,7 @@
       aria-labels + brand colors, nav link sets exact, copyright + Component
       Dock link, responsive classes present)
 - [ ] `npm run verify:app envoi` passes; commit `feat: add envoi …`;
-      PR + immediate squash merge; then TEMPLATES.md bookkeeping — line 779
+      PR + immediate squash merge; then TEMPLATES.md bookkeeping — line 781
       (Bootstrap Footer 03) → `[x]` + surge URL +
       `npm run readme:status`
 
@@ -140,4 +140,4 @@
       flush-left below xl
 - [ ] Roboto + Poppins Google Fonts links; no images; no ColorLib anywhere in
       `apps/envoi`
-- [ ] `npm run verify:app envoi` green; TEMPLATES.md line 779 bookkept `[x]`
+- [ ] `npm run verify:app envoi` green; TEMPLATES.md line 781 bookkept `[x]`

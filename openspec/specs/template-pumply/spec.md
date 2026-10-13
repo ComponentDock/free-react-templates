@@ -13,7 +13,7 @@ TypeScript.
 - **Original:** ColorLib "Gymer" — free responsive Bootstrap 4 gym / fitness
   website template (source: https://colorlib.com/wp/template/gymer/).
   TEMPLATES.md has THREE copies of this item (line 407 in the Bootstrap
-  category, line 1853 in the Health Fitness category, line 2325 in the
+  category, line 1855 in the Health Fitness category, line 2327 in the
   One Page category — mark ALL THREE `[x]` when done). All three rows use the
   correct screenshot (`gymer-free-template.jpg`).
 - **Demo DOM analyzed:** REACHABLE. `https://preview.colorlib.com/theme/gymer/`
@@ -415,4 +415,4 @@ and a document title.
 - [ ] Contact Us: #121212 bg, centered form (First/Last name, Subject, Email, message), full-width "Send Message", validation errors
 - [ ] Footer: About Pumply + Links (Home / Meditation / Gym / Aerobatics) + Subscribe (rounded-0 input + green button), copyright bar links Component Dock
 - [ ] Document title "Pumply — Gym Template"
-- [ ] ALL THREE TEMPLATES.md rows marked `[x]` on completion: line 407 (Bootstrap), line 1853 (Health Fitness), line 2325 (One Page)
+- [ ] ALL THREE TEMPLATES.md rows marked `[x]` on completion: line 407 (Bootstrap), line 1855 (Health Fitness), line 2327 (One Page)

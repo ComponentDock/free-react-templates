@@ -5,7 +5,7 @@
 Turnpike is a single-page car-rental landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Car Rental"
 template design
-(source: https://colorlib.com/wp/template/car-rental/, TEMPLATES.md line 922
+(source: https://colorlib.com/wp/template/car-rental/, TEMPLATES.md line 924
 under **Business (365)** — AND a duplicate row on line 2952 under
 **Transportation (22)**; BOTH rows must be marked `[x]` with the same surge URL
 when done), built under a DIFFERENT name ("Turnpike" — a high-speed road,

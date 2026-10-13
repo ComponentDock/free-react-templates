@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Explore" — travel/personal blog template
   (source: https://colorlib.com/wp/template/explore/). Listed in TEMPLATES.md
-  (Blog section, line 258; duplicate entries at lines 390 and 2392 — mark
+  (Blog section, line 258; duplicate entries at lines 390 and 2394 — mark
   EVERY copy `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/explore/ — reachable.
   Fetched: `/tmp/explore-prep/preview.html` (32 KB), `css/style.css` (68 KB).

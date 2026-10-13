@@ -6,8 +6,8 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Colorlib Wizard 1" (TEMPLATES.md line 846; section
-  "## Bootstrap Wizards (30)" at line 844). The
+- **ColorLib item:** "Colorlib Wizard 1" (TEMPLATES.md line 848; section
+  "## Bootstrap Wizards (30)" at line 846). The
   `wp/template/colorlib-wizard-1/` slug appears exactly ONCE in
   TEMPLATES.md (no dup rows to mark — the 11 `colorlib-wizard-1` grep hits
   are substring matches for wizard-10..19 rows).
@@ -167,5 +167,5 @@ Field values persist across steps. No validation anywhere.
         and what differs (renamed "Conjure", Muli via Google Fonts, lucide
         icons, picsum placeholders, Component Dock footer, accessible
         semantics + focus rings).
-13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 846 `[x]` + surge
+13. [ ] Bookkeeping after merge: mark TEMPLATES.md line 848 `[x]` + surge
         URL, `npm run readme:status`, push.

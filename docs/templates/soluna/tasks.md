@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 08" — eighth of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-08/).
-  TEMPLATES.md line 738 — mark that line `[x]` when done (single row, no
+  TEMPLATES.md line 740 — mark that line `[x]` when done (single row, no
   duplicates). NOTE: each item in this series is a DIFFERENT variant design —
   Checkbox 08 is the DAY/NIGHT SUN-MOON switch variant, NOT the Toggly pink
   switch variant, NOT the Tickwell notification-filter pill variant, NOT the
@@ -124,5 +124,5 @@ defaultChecked: true }]`; each switch = `<label>` wrapping a visually
    (colors + knob slide + icon swap), toggle back, keyboard (Space) toggle,
    aria-label, responsive column, footer link.
 7. Gate: `scripts/verify-app.sh soluna`; PR description with source (ColorLib
-   Checkbox 08), preview URL, tokens, diffs; mark TEMPLATES.md line 738
+   Checkbox 08), preview URL, tokens, diffs; mark TEMPLATES.md line 740
    `[x]` + surge URL + `npm run readme:status`.

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Creativex 3" — creative/digital agency template
   (source: https://colorlib.com/wp/template/creativex-3/). Listed in
-  TEMPLATES.md (Astro section, line 138; duplicates at lines 1459 under
+  TEMPLATES.md (Astro section, line 138; duplicates at lines 1461 under
   Creative and 2907 under Tailwind Css — mark EVERY copy `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/creativex-3/ is a 404.
   The real preview renders through the ColorLib shell

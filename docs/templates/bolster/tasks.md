@@ -7,7 +7,7 @@
 > TEMPLATES.md — verified 2026-08-14), per the monorepo naming mandate
 > (never reuse the ColorLib source name). TEMPLATES.md: primary row in
 > Bootstrap 5 (89) at line 635; duplicate row in Business (365) at line
-> 1219 (both `- [ ]`).
+> 1221 (both `- [ ]`).
 
 ## Design notes (replication findings)
 

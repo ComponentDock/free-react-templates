@@ -7,7 +7,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Builder" (TEMPLATES.md line 1338; section
-  "## Construction (13)" at line 1332).
+  "## Construction (29)" at line 1330).
 - **Source URL:** https://colorlib.com/wp/template/builder/
 - **Preview URL — REACHABLE (verified 2026-09-16 by direct fetch):**
   **`https://preview.colorlib.com/theme/builder/`**

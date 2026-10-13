@@ -5,7 +5,7 @@
 Mentory is a single-page education/tutorial template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Tutor"
 education website template (see TEMPLATES.md, Education section, line 521;
-duplicate row at line 1655 — mark EVERY copy `[x]` when done), built under a
+duplicate row at line 1657 — mark EVERY copy `[x]` when done), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 
@@ -42,7 +42,7 @@ Photoshop `#00c8ff`, Angular `#dd0031`, JavaScript `#f7df1e`, React
 
 - **Original:** ColorLib "Tutor" — education / tutorial website template
   (source: https://colorlib.com/wp/template/tutor/). Listed in TEMPLATES.md
-  line 521 (Education section); duplicate at line 1655 — mark every copy `[x]`
+  line 521 (Education section); duplicate at line 1657 — mark every copy `[x]`
   when done. Screenshot: `tutor-free-template.jpg` (1200×946, reviewed
   visually in the browser).
 - **Live preview URL:** https://preview.colorlib.com/theme/tutor/ (title

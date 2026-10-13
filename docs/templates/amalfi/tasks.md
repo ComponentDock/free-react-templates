@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 10" — the TENTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-10/).
-  Single occurrence in TEMPLATES.md (line 717, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 719, "Bootstrap Carousels (20)"
   category — no dup rows; no `[x]` row anywhere for carousel-10).
   Recreation uses the NEW name **Amalfi** (tenth of the carousel-series
   renames; lineage: carousel-01 → wanderlust, carousel-02 → faraway,

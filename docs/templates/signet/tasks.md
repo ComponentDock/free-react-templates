@@ -17,7 +17,7 @@
     `css/style.css` (~65 KB). Brand name used in the source copy: "Schmt.".
     TEMPLATES.md category: **Bootstrap 5 (89)**, first occurrence at line 624
     (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the `schmidt` slug
-    also appears at lines 2425 (**Personal (53)**), 2561 (**Portfolio (89)**)
+    also appears at lines 2427 (**Personal (53)**), 2561 (**Portfolio (89)**)
     and 2725 (**Resume (20)**) — all FOUR `- [ ]` rows of the SAME template;
     ONE implementation covers all four rows (mark all `[x]` with the same
     surge URL at bookkeeping).

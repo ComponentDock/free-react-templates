@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Calendar 05" — free HTML calendar widget page
   (page `<title>` "Calendar 05"; source:
   https://colorlib.com/wp/template/calendar-05/). Listed in TEMPLATES.md
-  under **Bootstrap Calendars (20)** (line 689; no duplicate row). Part of a
+  under **Bootstrap Calendars (20)** (line 691; no duplicate row). Part of a
   20-item Calendar N series (01–20) — the others are separate templates and
   must NOT be mixed in.
 - **Preview gotcha:** `https://preview.colorlib.com/theme/calendar-05/`

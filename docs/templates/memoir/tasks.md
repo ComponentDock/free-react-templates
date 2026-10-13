@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Andrea" — free Bootstrap 4 personal / lifestyle
   blog template. Listed in TEMPLATES.md under Blog (line 240) with
-  duplicate rows at line 332 (Bootstrap) and line 1696 (Fashion) — one
+  duplicate rows at line 332 (Bootstrap) and line 1698 (Fashion) — one
   recreation covers all three rows
   (source: https://colorlib.com/wp/template/andrea/).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/andrea/`

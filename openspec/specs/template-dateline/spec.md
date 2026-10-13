@@ -5,7 +5,7 @@
 Dateline is a single-page news / magazine template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Newsflex"
 design (see TEMPLATES.md — Blog category, line 276; the slug also repeats at
-line 2207 — one recreation covers both checklist rows), built under a
+line 2209 — one recreation covers both checklist rows), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 
@@ -390,4 +390,4 @@ copyright bar.
 - [ ] PR description includes: source template (Newsflex), preview URL
       (`https://preview.colorlib.com/theme/newsbox/` — note the slug
       mismatch), design tokens, renames, placeholder images, and the dup
-      row (line 2207) covered by the same recreation
+      row (line 2209) covered by the same recreation

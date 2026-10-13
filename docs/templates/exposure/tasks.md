@@ -15,7 +15,7 @@
   Free HTML Photography Website Template 2026 - Colorlib". TEMPLATES.md
   category: **Bootstrap (216)**, first occurrence at line 460 (`- [ ]`,
   source NOT shipped anywhere). DUP-ROW TRAP: the `myphotography` slug
-  also appears at line 2457 (Photography 49) and line 2532 (Portfolio 89)
+  also appears at line 2459 (Photography 49) and line 2534 (Portfolio 89)
   — all `- [ ]` rows of the same template; ONE implementation covers all
   three rows (mark all `[x]` with the same surge URL at bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-11):**

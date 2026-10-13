@@ -16,7 +16,7 @@
   Brand name used in the source copy: "Délicious". TEMPLATES.md category:
   **Bootstrap 5 (89)**, first occurrence at line 621 (`- [ ]`, source NOT
   shipped anywhere). DUP-ROW TRAP: the `restauco` slug also appears at line
-  2694 (**Restaurant (41)**) — both `- [ ]` rows of the SAME template; ONE
+  2696 (**Restaurant (41)**) — both `- [ ]` rows of the SAME template; ONE
   implementation covers both rows (mark all `[x]` with the same surge URL at
   bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-14):**

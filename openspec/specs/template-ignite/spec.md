@@ -2,7 +2,7 @@
 
 > **SUPERSEDED** — ColorLib "Youthconnect" already shipped as **ignite**
 > (apps/ignite, PR #333-era, live at https://ignite.free.componentdock.com,
-> TEMPLATES.md lines 174/1241 marked `[x]`). The spec's proposed new name
+> TEMPLATES.md lines 174/1243 marked `[x]`). The spec's proposed new name
 > "Ignite" collides with the shipped app AND with the separate ColorLib
 > "Ignite" template (TEMPLATES.md line 420, still `- [ ]`, no spec). Do NOT
 > implement this spec — delete on next cleanup. (Annotated 2026-08-12 by

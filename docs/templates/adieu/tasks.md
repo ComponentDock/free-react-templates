@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 16" — free responsive Bootstrap
   4.3.1 footer-component demo (source:
   https://colorlib.com/wp/template/bootstrap-footer-16/). TEMPLATES.md line
-  792, single `- [ ]` row. This prep: Bootstrap Footer 16 → **Adieu**.
+  794, single `- [ ]` row. This prep: Bootstrap Footer 16 → **Adieu**.
   Bookkeep that row `[x]` when the app ships.
 - **Preview URL quirk (series-wide):**
   `https://preview.colorlib.com/theme/bootstrap-footer-16/` returns 404. Use
@@ -152,7 +152,7 @@ display: none }`) — the band sits directly on the `#302939` footer bg. Link
 6. [ ] Run `npm run verify:app adieu` until green (typecheck + lint +
        knip + fallow + 100% coverage + build)
 7. [ ] Commit `feat: Adieu — footer component demo (ColorLib Bootstrap
- Footer 16)`; PR + immediate squash merge; then TEMPLATES.md line 792
+ Footer 16)`; PR + immediate squash merge; then TEMPLATES.md line 794
        `[~]`→`[x]` + surge URL + homepage + `npm run readme:status`, push
 
 ## Verification (pre-merge, from the spec)

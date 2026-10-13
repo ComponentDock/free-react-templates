@@ -18,7 +18,7 @@ functional component-showcase page on a white background.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Dropdown 11" — eleventh demo in the "Bootstrap
-  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 764). Series
+  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 766). Series
   siblings: Dropdown 01 was prepped as **Menubar**, Dropdown 02 as
   **Popmenu**, Dropdown 03 as **Skycast**, Dropdown 04 as **Chime**,
   Dropdown 05 as **Trolley**, Dropdown 06 as **Passkey**, Dropdown 07 as

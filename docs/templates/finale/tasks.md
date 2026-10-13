@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-06/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 782, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 784, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 06 → **Finale** (the concluding section
   of a piece of music or performance — continues the series' ending-themed
   names Colophon → Envoi → Epilogue → Coda → Outro; no collision with
@@ -139,7 +139,7 @@ sans-serif`, NO border-top on the footer itself.
       divider, 2 social links with aria-labels, copyright + Component Dock
       link, 2 store links, responsive classes present)
 - [ ] `npm run verify:app finale` passes; commit `feat: add finale …`; PR +
-      immediate squash merge; then TEMPLATES.md bookkeeping — line 782
+      immediate squash merge; then TEMPLATES.md bookkeeping — line 784
       (Bootstrap Footer 06) → `[x]` + surge URL +
       `npm run readme:status`
 
@@ -161,4 +161,4 @@ sans-serif`, NO border-top on the footer itself.
       3×33% on md+, stacked below; no horizontal overflow
 - [ ] Poppins Google Fonts link; no images; no ColorLib anywhere in
       `apps/finale`
-- [ ] `npm run verify:app finale` green; TEMPLATES.md line 782 bookkept `[x]`
+- [ ] `npm run verify:app finale` green; TEMPLATES.md line 784 bookkept `[x]`

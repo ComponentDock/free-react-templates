@@ -84,7 +84,7 @@ kind).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 16". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 799; row at line 815). Free
+  Modals (20)** (section header line 800; row at line 817). Free
   registration-form modal component template ("Modal V16 - Free Registration
   From Pop-Up" per the ColorLib page `<title>`). The `modal-16` slug appears
   exactly ONCE in TEMPLATES.md (no dup rows to mark). Demo `<title>` uses the

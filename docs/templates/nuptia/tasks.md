@@ -19,7 +19,7 @@
   "Wedding" free template ("James & Julie are Getting Married", purple→teal
   gradient accents `#ca2fff → #8e96f8 → #53fff0`, Poppins, pill buttons).
   That preview belongs to the *separate* "Wedding" TEMPLATES.md entry
-  (line ~3103, screenshot `wedding-free-wedding-website-template.jpg`) and
+  (line ~3105, screenshot `wedding-free-wedding-website-template.jpg`) and
   MUST NOT be used as the reference for this template.
 - **Visual design (from screenshot):** full-viewport hero photograph — bride
   (cream lace dress, blue heels) and groom (grey suit, pink peony bouquet)

@@ -15,8 +15,8 @@
 - **Original:** ColorLib "Mondy" — page title "Mondy | Real Estate HTML
   Template". TEMPLATES.md category: **Bootstrap (216)**, first occurrence
   at line 457 (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the
-  `mondy` slug also appears at line 1314 (Classified Ads 4), line 1546
-  (Directory 33) and line 2600 (Real Estate 39) — all `- [ ]` rows of
+  `mondy` slug also appears at line 1316 (Classified Ads 4), line 1548
+  (Directory 33) and line 2602 (Real Estate 39) — all `- [ ]` rows of
   the same template; ONE implementation covers all four rows (mark all
   `[x]` with the same surge URL at bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-11):**

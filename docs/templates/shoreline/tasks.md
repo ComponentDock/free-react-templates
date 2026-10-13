@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Ocheandeview" — a luxury ocean-view HOTEL/RESORT
   one-pager (page title "Hotel | Template"; source:
   https://colorlib.com/wp/template/ocheandeview/, appears 2× in
-  TEMPLATES.md — line 610 Bootstrap 5 (89) + line 1920 Hotel (38); mark ALL
+  TEMPLATES.md — line 610 Bootstrap 5 (89) + line 1922 Hotel (38); mark ALL
   `[x]` when done). The app name MUST differ from the source — hence
   **Shoreline** (single lowercase word, the beach/ocean-edge concept of an
   ocean-view resort; no collision with `apps/`, `openspec/specs/`, or

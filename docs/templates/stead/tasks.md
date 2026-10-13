@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Findstate" — real estate / property search landing
   page (source: https://colorlib.com/wp/template/findstate/). TEMPLATES.md
-  has THREE rows: line 395 (category Bootstrap), line 1014, and line 2589 —
+  has THREE rows: line 395 (category Bootstrap), line 1016, and line 2591 —
   mark ALL THREE `[x]` when done. No other spec on main maps to this slug
   (grep-checked before prepping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/findstate/

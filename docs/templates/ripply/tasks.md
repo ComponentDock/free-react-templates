@@ -8,8 +8,8 @@
 - **Original:** ColorLib "Drimo" — Free Unique Landing Page Website
   Template (source: https://colorlib.com/wp/template/drimo/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 378; duplicate rows at
-  line 982 under Business (365), line 1462 under Creative (55), line
-  2037 under Landing Page (96) and line 2232 under Medical (32) — same
+  line 984 under Business (365), line 1464 under Creative (55), line
+  2039 under Landing Page (96) and line 2234 under Medical (32) — same
   template, one app only).
 - **Preview REACHABLE (HTTP 200):**
   `https://preview.colorlib.com/theme/drimo/`. DOM fetched

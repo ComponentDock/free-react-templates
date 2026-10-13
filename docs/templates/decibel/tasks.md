@@ -11,7 +11,7 @@
 - **Original:** ColorLib "Deejee" — free DJ / Radio website template (page
   title "Deejee &mdash; Colorlib Website Template"). TEMPLATES.md has TWO
   dup rows for the same source: line 373 under **Bootstrap (216)** and
-  line 2262 under **Music (19)** — same source, ONE item; mark BOTH `[x]`
+  line 2264 under **Music (19)** — same source, ONE item; mark BOTH `[x]`
   at ship time. The recreation brands itself **Decibel**.
 - **Preview URL (verified 2026-08-10):**
   `https://preview.colorlib.com/theme/deejee/` returns HTTP 200 (36.0 KB

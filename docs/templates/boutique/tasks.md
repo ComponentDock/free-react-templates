@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Theplaza" — free eCommerce / fashion store
   template (source: https://colorlib.com/wp/template/theplaza/). Listed in
   TEMPLATES.md under the Bootstrap category (line 513); duplicate rows at
-  line 1606 under Ecommerce (56) and line 1734 under Fashion (43) — same
+  line 1608 under Ecommerce (56) and line 1736 under Fashion (43) — same
   template, ONE app only.
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/theplaza/`.
   DOM fetched (`/tmp/theplaza-prep/theplaza.html`, 28,815 bytes) +

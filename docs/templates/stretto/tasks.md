@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-08/). The page body is a
   70vh light-gray filler strip; the deliverable is the footer. TEMPLATES.md
-  has ONE copy (line 784, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  has ONE copy (line 786, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 08 → **Stretto** (a musical term for the
   concluding passage of a fugue — continues the series' ending-themed names
   Colophon → Envoi → Epilogue → Coda → Outro → Finale → Postlude; no collision
@@ -146,7 +146,7 @@ center center; background-repeat: no-repeat`, `padding: 7rem 0`,
       aria-labels, copyright + Component Dock link, responsive classes
       present)
 - [ ] `npm run verify:app stretto` passes; commit `feat: add stretto …`; PR +
-      immediate squash merge; then TEMPLATES.md bookkeeping — line 784
+      immediate squash merge; then TEMPLATES.md bookkeeping — line 786
       (Bootstrap Footer 08) → `[x]` + surge URL +
       `npm run readme:status`
 
@@ -171,4 +171,4 @@ center center; background-repeat: no-repeat`, `padding: 7rem 0`,
       no horizontal overflow
 - [ ] Roboto + Poppins Google Fonts links (no Source Serif Pro); exactly ONE
       image (bg placeholder); no ColorLib anywhere in `apps/stretto`
-- [ ] `npm run verify:app stretto` green; TEMPLATES.md line 784 bookkept `[x]`
+- [ ] `npm run verify:app stretto` green; TEMPLATES.md line 786 bookkept `[x]`

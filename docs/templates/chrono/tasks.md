@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Timezone" — free watch store / eCommerce HTML
   template (source: https://colorlib.com/wp/template/timezone/). Listed in
   TEMPLATES.md under the Bootstrap category (line 514); duplicate rows at
-  line 1607 under Ecommerce (56) and line 1734/1735 under Fashion (43) —
+  line 1609 under Ecommerce (56) and line 1737 under Fashion (43) —
   same template, ONE app only.
 - **Preview REACHABLE (HTTP 200):** `https://preview.colorlib.com/theme/timezone/`.
   DOM fetched (`/tmp/timezone-preview.html`, 31,629 bytes) + stylesheet

@@ -5,7 +5,7 @@
 Riviera is a single-page hotel & spa template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Europa"
 hotel website template (see TEMPLATES.md, Hotel section, line 388; duplicates
-at lines 1001 and 1906 — mark EVERY copy `[x]` when done), built under a
+at lines 1003 and 1908 — mark EVERY copy `[x]` when done), built under a
 different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
 
@@ -44,7 +44,7 @@ photo.
 
 - **Original:** ColorLib "Europa" — hotel & spa template
   (source: https://colorlib.com/wp/template/europa/). Listed in TEMPLATES.md
-  line 388 (Hotel section); duplicates at lines 1001 and 1906 — mark every
+  line 388 (Hotel section); duplicates at lines 1003 and 1908 — mark every
   copy `[x]` when done. Screenshot: `europa-free-template.jpg` (1200×946,
   reviewed visually in the browser).
 - **Live preview URL:** https://preview.colorlib.com/theme/europa/ (title

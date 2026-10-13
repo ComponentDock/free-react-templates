@@ -4,7 +4,7 @@
 
 Rune is a multi-step travel-booking wizard in the free-react-templates monorepo.
 It is an original React recreation of the ColorLib free "Colorlib Wizard 22"
-template design (see TEMPLATES.md line 860; source slug
+template design (see TEMPLATES.md line 862; source slug
 `wp/template/colorlib-wizard-22/`), built under a DIFFERENT name (Rune — a
 single lowercase word evoking the wizard/magic naming theme of the sibling
 wizard preps: Conjure, Conjury, Banish, Dispel, Abjure, Bewitch, Enthrall,

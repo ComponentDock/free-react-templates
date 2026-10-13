@@ -39,7 +39,7 @@ copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Multiselect 03". Listed in TEMPLATES.md under
-  **Bootstrap Multiselect (20)** (section header line 821; row at line 825).
+  **Bootstrap Multiselect (20)** (section header line 823; row at line 827).
   Free multiselect-dropdown component template. The `multiselect-03` slug
   appears exactly ONCE in TEMPLATES.md (no dup rows to mark). Siblings in
   the series already prepped: Multiselect 01 → `apps/picker` spec

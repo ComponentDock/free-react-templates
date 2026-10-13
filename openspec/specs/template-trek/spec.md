@@ -6,7 +6,7 @@ Trek is a single-page travel / nature-journey template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Trips" travel website HTML template design (see
 TEMPLATES.md, line 520 under **Bootstrap (216)** — duplicate rows at line
-1209 under **Business (365)** and line 3010 under **Travel (44)**, same
+1211 under **Business (365)** and line 3012 under **Travel (44)**, same
 template, ONE app only; mark ALL THREE rows `[x]` after merge), built
 under a different name ("Trek" — a long arduous journey, especially on
 foot, matching the source's nature-travel positioning: "Let's Enjoy The

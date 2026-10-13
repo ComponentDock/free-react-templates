@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 07" — seventh of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-07/).
-  TEMPLATES.md has ONE copy (line 760). Series siblings: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 762). Series siblings: Dropdown 01 was
   prepped as **Menubar**, Dropdown 02 as **Popmenu**, Dropdown 03 as
   **Skycast**, Dropdown 04 as **Chime**, Dropdown 05 as **Trolley**,
   Dropdown 06 as **Passkey** (see `docs/templates/menubar/`,
@@ -122,7 +122,7 @@ rgba(0,0,0,.05)` (focus `rgba(0,0,0,.1)`, no shadow), placeholder
    lint + knip + fallow + 100% coverage + build); commit conventionally,
    open PR to main, merge immediately with `gh pr merge --squash
 --delete-branch`, then bookkeeping: `[x]` + surge URL + homepage in
-   TEMPLATES.md line 760 + `npm run readme:status`, push.
+   TEMPLATES.md line 762 + `npm run readme:status`, push.
 
 ## Fidelity pitfalls (learned from the Dropdown series)
 

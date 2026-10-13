@@ -17,7 +17,7 @@ component-showcase page on a flat periwinkle-blue background.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Dropdown 07" — seventh demo in the "Bootstrap
-  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 760). Series
+  Dropdowns (20)" series. TEMPLATES.md has ONE copy (line 762). Series
   siblings: Dropdown 01 was prepped as **Menubar**, Dropdown 02 as
   **Popmenu**, Dropdown 03 as **Skycast**, Dropdown 04 as **Chime**,
   Dropdown 05 as **Trolley**, Dropdown 06 as **Passkey** (see

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Waterboat" — yacht charter / sea travel website
   template (source: https://colorlib.com/wp/template/waterboat/). Listed in
-  TEMPLATES.md line 529 (Bootstrap section); dup rows at lines 1225
+  TEMPLATES.md line 529 (Bootstrap section); dup rows at lines 1227
   (Business) and 3015 (Travel) — same source, ONE implementation (line 529
   is the claim row; mark ALL THREE `[x]` after merge).
 - **Naming:** the source name "waterboat" must NOT be reused. New name =

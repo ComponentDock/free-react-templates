@@ -6,7 +6,7 @@ Wayfarer is a single-page travel / tourism template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Travelo" travel & tourism HTML template design (see
 TEMPLATES.md, line 519 under **Bootstrap (216)** — duplicate row at line
-3009 under **Travel (44)**, same template, ONE app only; mark BOTH rows
+3011 under **Travel (44)**, same template, ONE app only; mark BOTH rows
 `[x]` after merge), built under a different name ("Wayfarer" — a
 traveler, especially one journeying on foot; matching the source's
 travel-agency positioning) with the monorepo stack: Vite + React 19 +

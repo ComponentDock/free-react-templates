@@ -10,7 +10,7 @@
   church tower — fits the religious theme; single lowercase word, no collision
   with `ls apps/` or existing specs). Re/born appears in TEMPLATES.md at line
   486 (Bootstrap section, first unchecked without a prep — the claim) and
-  again as a duplicate at line 1302.
+  again as a duplicate at line 1304.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/reborn/`
   (HTTP 200, 27KB) + stylesheet `css/style.css` (24KB) plus `bootstrap.min.css`
   (btn-primary/text-primary tokens), `owl.carousel.min.css`, `aos.css`,
@@ -164,6 +164,6 @@
     --delete-branch`; if main checked out elsewhere, omit --delete-branch
       and `git push origin --delete` the remote).
 - [ ] After merge: `[~]`→`[x]` in TEMPLATES.md for Re/born line 486 (+ the
-      duplicate line 1302 gets the same treatment only if the checklist
+      duplicate line 1304 gets the same treatment only if the checklist
       convention marks both — check sibling history first), add surge URL,
       `npm run readme:status`, commit `chore:` and push.

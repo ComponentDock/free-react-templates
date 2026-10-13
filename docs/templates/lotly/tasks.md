@@ -14,7 +14,7 @@
 - **Original:** ColorLib "Props" — real-estate agency one-pager, Bootstrap
   5 based. TEMPLATES.md category: **Bootstrap 5 (89)**, first occurrence
   at line 619 (`- [ ]`, source NOT shipped anywhere). DUP-ROW TRAP: the
-  `props` slug also appears at line 2603 — both `- [ ]` rows of the SAME
+  `props` slug also appears at line 2605 — both `- [ ]` rows of the SAME
   template; ONE implementation covers both rows (mark all `[x]` with the
   same surge URL at bookkeeping).
 - **Live preview DOM analyzed (verified 2026-08-14):**

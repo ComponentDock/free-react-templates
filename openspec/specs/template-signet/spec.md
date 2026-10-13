@@ -15,7 +15,7 @@ brand; single lowercase word, no collision with `apps/`, `openspec/specs/` or
 
 The source appears FOUR times in TEMPLATES.md (dup-row trap): line 624
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one),
-line 2425 (**Personal (53)**), line 2561 (**Portfolio (89)**) and line 2725
+line 2427 (**Personal (53)**), line 2563 (**Portfolio (89)**) and line 2727
 (**Resume (20)**) — all four are `- [ ]` rows of the SAME template. ONE
 implementation covers all four rows (mark all `[x]` with the same surge URL
 at bookkeeping time).

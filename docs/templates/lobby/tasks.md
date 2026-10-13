@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Modal 07" — free single-page appointment-booking
   modal component template (source: https://colorlib.com/wp/template/modal-07/).
-  TEMPLATES.md row: line 806 (**Bootstrap Modals (20)**, header line 798).
+  TEMPLATES.md row: line 808 (**Bootstrap Modals (20)**, header line 800).
   The `modal-07` slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-16):** the default
   `https://preview.colorlib.com/theme/modal-07/` returns **404** — the REAL
@@ -156,7 +156,7 @@ center`), olive form below (inner wrapper padding 1.5rem via `p-4`);
 7. **Gate + ship** — `scripts/verify-app.sh lobby` (typecheck + lint + 100%
    coverage tests + build), `npm run spec:validate`, then the standard
    PR → immediate squash merge flow; bookkeeping marks the single
-   TEMPLATES.md row (line 806) `[x]` with
+   TEMPLATES.md row (line 808) `[x]` with
    `https://lobby.free.componentdock.com` + `npm run readme:status`.
 
 ## Pitfalls / notes for the implementer

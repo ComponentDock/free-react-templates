@@ -27,7 +27,7 @@ a 4-column footer.
 
 - **Original:** ColorLib "Waterboat" — a yacht charter company landing page
   in TEMPLATES.md. **THREE duplicate rows exist** — mark ALL of them `[x]` +
-  the same surge URL when done: line 529 (Bootstrap (216)), line 1225
+  the same surge URL when done: line 529 (Bootstrap (216)), line 1227
   (Business (365)), line 3017 (Travel (44)).
 - **Preview URL:** `https://preview.colorlib.com/theme/waterboat/` (HTTP 200,
   27,751 bytes HTML, verified 2026-08-15). Document title: "WaterBoat —
@@ -422,6 +422,6 @@ and a document title.
 - [ ] No copied assets: picsum seeds `marina-<n>`, lucide icons + inline
       SVG brand icons
 - [ ] `TEMPLATES.md` THREE duplicate rows marked by the implementer
-      (`[~]` → `[x]` + surge URL): line 529 (Bootstrap), line 1225
+      (`[~]` → `[x]` + surge URL): line 529 (Bootstrap), line 1227
       (Business), line 3017 (Travel) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

@@ -5,7 +5,7 @@
 Expose is a single-page photographer-portfolio template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Shutter" design (see TEMPLATES.md — line 494; the same source is
-DUPLICATED at lines 1806 and 2472 — ALL THREE rows must be marked `[x]` when
+DUPLICATED at lines 1808 and 2474 — ALL THREE rows must be marked `[x]` when
 done), built under a NEW name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 

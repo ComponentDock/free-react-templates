@@ -100,7 +100,7 @@ original Bootstrap build; the recreation SHALL make them functional).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Calendar 07". Listed in TEMPLATES.md under
-  **Bootstrap Calendars (20)** (line 691). Free Bootstrap calendar widget
+  **Bootstrap Calendars (20)** (line 693). Free Bootstrap calendar widget
   template (author Colorlib; post dated December 2020; license CC BY 3.0).
   The `calendar-07` slug appears exactly once in TEMPLATES.md (no duplicate
   rows to mark). The 20-item Bootstrap Calendars category is a family:
@@ -598,4 +598,4 @@ convention on every template (the original has no footer).
       anywhere in `apps/twilight`
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`
       done by implementer at ship time (mark the "Calendar 07" row, line
-      691 — Bootstrap Calendars (20) category; single row, no dups)
+      693 — Bootstrap Calendars (20) category; single row, no dups)

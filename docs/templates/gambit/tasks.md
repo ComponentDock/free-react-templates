@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Comodo" (Comodo Games) — free Bootstrap 4 gaming /
   game-community website template. Listed in TEMPLATES.md under Bootstrap
-  (line 362) with duplicate rows at line 1816 (Gaming) and line 2029
+  (line 362) with duplicate rows at line 1818 (Gaming) and line 2031
   (Landing Page) — one recreation covers all three rows
   (source: https://colorlib.com/wp/template/comodo/).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/comodo/`

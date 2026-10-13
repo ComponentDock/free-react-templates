@@ -5,7 +5,7 @@
 Altruist is a single-page charity / nonprofit donation website template in
 the free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Cause" template (see TEMPLATES.md — line 358, Bootstrap category;
-the same source is DUPLICATED at line 1252 in the Charity category — BOTH
+the same source is DUPLICATED at line 1254 in the Charity category — BOTH
 rows must be marked `[x]` when done), built under a NEW name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

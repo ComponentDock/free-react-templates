@@ -53,7 +53,7 @@ static form.
   Footer" series (footer-only component demos; the page body is a filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-16/. TEMPLATES.md has ONE
-  copy (line 792, `- [ ]` unchecked). This prep: Bootstrap Footer 16 →
+  copy (line 794, `- [ ]` unchecked). This prep: Bootstrap Footer 16 →
   **Adieu**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon/terminus/capstone/
   omega/ultimo preps):** `https://preview.colorlib.com/theme/bootstrap-footer-16/`

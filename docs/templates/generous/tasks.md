@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Giving" — free responsive Bootstrap 4 non-profit /
   charity website template (source:
   https://colorlib.com/wp/template/giving/). TEMPLATES.md has THREE copies
-  (line 406 — Bootstrap category, line 1269 — Charity category, line 1298 —
+  (line 406 — Bootstrap category, line 1271 — Charity category, line 1300 —
   Church category; mark ALL THREE `[x]` when done). All three rows use the
   CORRECT screenshot `giving-free-template.jpg`.
 - **Demo DOM analyzed:** REACHABLE — `https://preview.colorlib.com/theme/giving/`

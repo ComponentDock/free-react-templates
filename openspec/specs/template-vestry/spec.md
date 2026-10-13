@@ -39,7 +39,7 @@ corners — no photo band, no overlapping circle, no form.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Modal 11". Listed in TEMPLATES.md under **Bootstrap
-  Modals (20)** (section header line 798; row at line 810). Free
+  Modals (20)** (section header line 800; row at line 812). Free
   information-modal component template. The `modal-11` slug appears exactly
   ONCE in TEMPLATES.md (no dup rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-16):** the default

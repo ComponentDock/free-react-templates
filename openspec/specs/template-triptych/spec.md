@@ -5,7 +5,7 @@
 Triptych is a single-page calendar widget template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Calendar 05" design (see TEMPLATES.md, Bootstrap Calendars
-category, line 689 — no duplicate row), built under a different name with the
+category, line 691 — no duplicate row), built under a different name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No
 ColorLib references in app code — provenance lives in this spec, TEMPLATES.md,
 and the PR.

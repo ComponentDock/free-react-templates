@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Violet" — fashion e-commerce online-store template
   (source: https://colorlib.com/wp/template/violet/). Listed in TEMPLATES.md
-  line 527 (Bootstrap section); dup rows at lines 1221 (Business) and 1609
+  line 527 (Bootstrap section); dup rows at lines 1223 (Business) and 1609
   (Ecommerce) — same source, ONE implementation (line 527 is the claim row;
   mark ALL THREE `[x]` after merge).
 - **Naming:** "violet" is TAKEN — it's the shipped recreation of ColorLib
@@ -150,6 +150,6 @@
    copy, single page only); merge immediately
    (`gh pr merge --squash --delete-branch`).
 7. After merge: pull --rebase; mark TEMPLATES.md line 527 `[x]` AND the
-   dup rows at lines 1221 and 1609 `[x]`, add surge URL
+   dup rows at lines 1223 and 1611 `[x]`, add surge URL
    `https://vogue.free.componentdock.com` + homepage;
    `npm run readme:status`; push.

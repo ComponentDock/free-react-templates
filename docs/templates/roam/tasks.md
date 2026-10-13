@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Fantasy" — travel blog template
   (source: https://colorlib.com/wp/template/fantasy/). Listed in TEMPLATES.md
-  (Blog section, line 259; duplicate at line 2981 — mark EVERY copy `[x]`
+  (Blog section, line 259; duplicate at line 2983 — mark EVERY copy `[x]`
   when done).
 - **Preview URL:** https://preview.colorlib.com/theme/fantasy/ (title
   "Fantasy Travel Blog"). Fetched: `/tmp/fantasy-preview.html` (31 KB),

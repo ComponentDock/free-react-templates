@@ -5,8 +5,8 @@
 Gantry is a single-page construction / engineering company template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Engineers" HTML template design (see TEMPLATES.md, line 386
-under **Bootstrap (216)** — duplicate rows at line 996 under **Business
-(365)**, line 1346 under **Construction (29)** and line 1945 under
+under **Bootstrap (216)** — duplicate rows at line 998 under **Business
+(365)**, line 1348 under **Construction (29)** and line 1947 under
 **Industrial (15)**, same template, ONE app only; mark ALL FOUR rows `[x]`
 after merge), built under a different name ("Gantry" — a bridge-like
 overhead crane structure used in construction and heavy engineering,

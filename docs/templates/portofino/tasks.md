@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Carousel 12" — the TWELFTH of the 20 "Bootstrap
   Carousels" demos (source: https://colorlib.com/wp/template/carousel-12/).
-  Single occurrence in TEMPLATES.md (line 719, "Bootstrap Carousels (20)"
+  Single occurrence in TEMPLATES.md (line 721, "Bootstrap Carousels (20)"
   category — no dup rows; no `[x]` row anywhere for carousel-12).
   Recreation uses the NEW name **Portofino** (twelfth of the carousel-series
   renames; lineage: carousel-01 → wanderlust, carousel-02 → faraway,

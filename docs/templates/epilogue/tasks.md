@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 02" — footer-only component demo
   from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-02/). TEMPLATES.md line
-  778, ONE row only (`- [ ]` unchecked; slug grep-checked — no duplicates).
+  780, ONE row only (`- [ ]` unchecked; slug grep-checked — no duplicates).
   Category "Bootstrap Footer (components)".
 - **PREVIEW PATH QUIRK (verified, same as Footer 01):** the standard
   `https://preview.colorlib.com/theme/bootstrap-footer-02/` 404s. The
@@ -87,6 +87,6 @@
       Blog/Contacts) + site logo "Epilogue" + Component Dock link
       (https://www.componentdock.com/), mobile stacking
 - [ ] `App.tsx` (+ test) — compose filler + footer in order, document title
-- [ ] `scripts/verify-app.sh epilogue` → green; TEMPLATES.md line 778
+- [ ] `scripts/verify-app.sh epilogue` → green; TEMPLATES.md line 780
       "Bootstrap Footer 02" `[~]`→`[x]` + surge URL; `npm run readme:status`;
       PR + immediate squash merge

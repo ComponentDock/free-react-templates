@@ -53,7 +53,7 @@ lucide-react icons).
 - **Original:** ColorLib "Crypto Currency" — free Finance landing page
   template (page title "Cryptocurrency - Landing Page Template";
   TEMPLATES.md category **Finance (89)**; also listed as dup rows under
-  **Bootstrap (216)** line 371 and other categories, lines 967 + 1748 —
+  **Bootstrap (216)** line 371 and other categories, lines 969 + 1748 —
   same source, one item). The recreation brands itself **Coinly** but keeps
   the same section structure, copy kinds and interaction patterns.
 - **Live preview DOM analyzed (verified 2026-08-10):**

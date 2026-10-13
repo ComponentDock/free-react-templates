@@ -34,8 +34,8 @@ files, no icon paths, no brand marks) and never reuses the source name or its
 copy verbatim.
 
 - **Source:** https://colorlib.com/wp/template/webhostingservice/ (listed in
-  TEMPLATES.md `## Web Hosting (20)` at line 3069 — that section holds 20 items
-  across lines 3049–3070; the slug `webhostingservice` appeared exactly once in
+  TEMPLATES.md `## Web Hosting (20)` at line 3048 — that section holds 20 items
+  across lines 3050–3069; the slug `webhostingservice` appeared exactly once in
   TEMPLATES.md and in no spec on main before this one)
 - **Preview:** `https://preview.colorlib.com/theme/webhostingservice/` returns
   **HTTP 200**, `text/html`, **47,215 B**, title

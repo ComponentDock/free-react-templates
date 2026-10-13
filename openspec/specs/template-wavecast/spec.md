@@ -5,7 +5,7 @@
 Wavecast is a single-page podcast website template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Podcast"
 design (see TEMPLATES.md — listed TWICE, both rows are the same source slug:
-line 476 in the Music section and line 2276 in the Music section; implement
+line 476 in the Music section and line 2278 in the Music section; implement
 ONE app and mark BOTH rows `[x]` at bookkeeping), built under a different name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

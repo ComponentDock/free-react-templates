@@ -26,8 +26,8 @@ The original is a jQuery Steps wizard (`vendor/jquery-steps/jquery.steps.min.js`
   plus the photo backdrop — no navbar, no other sections, no footer content
   in the source.
 
-Source slug: `colorlib-wizard-16` (TEMPLATES.md line 853; the section
-"## Bootstrap Wizards (30)" starts at line 844; the slug appears exactly
+Source slug: `colorlib-wizard-16` (TEMPLATES.md line 855; the section
+"## Bootstrap Wizards (30)" starts at line 846; the slug appears exactly
 ONCE — verified `grep -c 'wp/template/colorlib-wizard-16'` = 1 — no dup
 rows to reconcile).
 

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Checkbox 02" — second of the "Bootstrap Checkboxes
   (20)" series (source: https://colorlib.com/wp/template/checkbox-02/).
-  TEMPLATES.md line 732 — mark that line `[x]` when done (single row, no
+  TEMPLATES.md line 734 — mark that line `[x]` when done (single row, no
   duplicates).
 - **WARNING — sibling assumption is WRONG here:** the Tickbox spec assumed
   Checkbox 02–20 are the same design as Checkbox 01 (six color variants +

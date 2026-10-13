@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Calendar 03" — free Bootstrap calendar widget
   template (source: https://colorlib.com/wp/template/calendar-03/).
-  TEMPLATES.md row: line 687 (**Bootstrap Calendars (20)**). The
+  TEMPLATES.md row: line 689 (**Bootstrap Calendars (20)**). The
   `calendar-03` slug appears exactly once (no dup rows to mark). Family
   siblings: "Calendar 01" was prepped as **Planner**
   (`openspec/specs/template-planner/`), "Calendar 02" as **Monthly**
@@ -188,5 +188,5 @@ Sat` (3-letter, `.substring(0,3)` of the full names), 7 equal
 10. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
 11. [ ] After merge: TEMPLATES.md `[~]` → `[x]` + surge URL
         (`almanac.free.componentdock.com`) + `npm run readme:status`; push
-        (mark line 687 — Bootstrap Calendars (20) category; single row, no
+        (mark line 689 — Bootstrap Calendars (20) category; single row, no
         dups)

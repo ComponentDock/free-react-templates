@@ -24,7 +24,7 @@ split by a hairline border.
   Footer" series (footer-only component demos; the page body is a 70vh filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-03/. TEMPLATES.md has ONE
-  copy (line 779, `- [ ]` unchecked). This prep: Bootstrap Footer 03 →
+  copy (line 781, `- [ ]` unchecked). This prep: Bootstrap Footer 03 →
   **Envoi**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (same as Footer 01/02 — verified for 03):** the
   standard `https://preview.colorlib.com/theme/bootstrap-footer-03/` returns

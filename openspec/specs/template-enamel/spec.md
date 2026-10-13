@@ -48,7 +48,7 @@ Poppins, lucide-react + inline SVG icons).
   template (page title "Denstista - Free Bootstrap 4 Template by Colorlib"
   — source typo "Denstista", keep "Dentista" as the reference name).
   TEMPLATES.md has THREE dup rows for the same source: line 374 under
-  **Bootstrap (216)**, line 971 under **Business (365)** and line 1509
+  **Bootstrap (216)**, line 973 under **Business (365)** and line 1511
   under **Dentist (14)** — same source, ONE item; mark ALL THREE `[x]` at
   ship time. The recreation brands itself **Enamel** but keeps the same
   section structure, copy kinds and interaction patterns.

@@ -93,7 +93,7 @@ adding events. Flat design, no gradients, no photography. Recreate the widget
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Calendar 04". Listed in TEMPLATES.md under
-  **Bootstrap Calendars (20)** (line 688). Free Bootstrap calendar widget
+  **Bootstrap Calendars (20)** (line 690). Free Bootstrap calendar widget
   template (author Colorlib; the screenshot renders December 2020 — the
   2020-era capture). The `calendar-04` slug appears exactly once in
   TEMPLATES.md (no duplicate rows to mark). The 20-item Bootstrap Calendars

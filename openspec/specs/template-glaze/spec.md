@@ -151,7 +151,7 @@ content kinds (no ColorLib assets copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Bootstrap Buttons 19". Listed in TEMPLATES.md
-  under **Bootstrap Buttons (20)** (line 680). Free UI-kit button
+  under **Bootstrap Buttons (20)** (line 682). Free UI-kit button
   component template. The `bootstrap-buttons-19` slug appears exactly once
   in TEMPLATES.md (no duplicate rows to mark).
 - **Live preview DOM — REACHABLE (verified 2026-08-14):** the default
@@ -454,5 +454,5 @@ convention on every template (the original has no footer).
       desktop-only — recreation must be responsive)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`
       done by implementer at ship time (mark the "Bootstrap Buttons 19"
-      row, line 680 — Bootstrap Buttons (20) category; single row, no
+      row, line 682 — Bootstrap Buttons (20) category; single row, no
       dups)

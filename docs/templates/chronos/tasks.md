@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 10" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-10/). Single occurrence
-  in TEMPLATES.md (line 694, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 696, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Chronos**.
 - **Preview URL analyzed:** `https://preview.colorlib.com/theme/bootstrap/calendar-10/`
   — HTTP 200, tiny 3.2KB DOM (no nav, no footer, no images, no icons) +

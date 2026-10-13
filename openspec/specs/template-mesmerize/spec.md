@@ -31,8 +31,8 @@ BUT NEVER INITIALIZES IT — verified in the browser: Next advances with
 empty required fields (no gating, free navigation). Finish calls
 `alert('Sumited')`.
 
-Source slug: `colorlib-wizard-17` (TEMPLATES.md line 854; the section
-"## Bootstrap Wizards (30)" starts at line 844; the slug appears exactly
+Source slug: `colorlib-wizard-17` (TEMPLATES.md line 856; the section
+"## Bootstrap Wizards (30)" starts at line 846; the slug appears exactly
 ONCE — verified `grep -c 'wp/template/colorlib-wizard-17'` = 1 — no dup
 rows to reconcile).
 

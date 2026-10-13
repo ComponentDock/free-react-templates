@@ -131,7 +131,7 @@ recorded below.
 
 - **Original:** ColorLib "Colorlib Wizard 13" (page title: "Sign Up
   Form"). Listed in TEMPLATES.md under **Bootstrap Wizards (30)**
-  (section header line 844; the one and only row at line 850 —
+  (section header line 846; the one and only row at line 852 —
   `wp/template/colorlib-wizard-13/` appears exactly ONCE). Member 13 of
   colorlib-wizard-1 … 30. Sibling preps: Conjure (wizard-1, chain seed —
   cream/olive, 920px card, dot nav), Banish (wizard-10 — photo bg, #333

@@ -7,7 +7,7 @@
 ## Source mapping
 
 - **ColorLib item:** "Contact Form 20" (TEMPLATES.md line 1423; section
-  "## Contact Forms (40)" at line 1399).
+  "## Contact Form (42)" at line 1400).
 - **Source URL:** https://colorlib.com/wp/template/contact-form-20/
 - **Preview URL — UNREACHABLE (404):** https://preview.colorlib.com/theme/contact-form-20/
   Returns HTTP 404. Design tokens extracted entirely from screenshot analysis.

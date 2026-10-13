@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Waterboat" — yacht charter company landing page
   (source: https://colorlib.com/wp/template/waterboat/). TEMPLATES.md has
   **THREE duplicate rows** — mark ALL `[x]` + same surge URL when done:
-  line 529 (## Bootstrap (216)), line 1225 (## Business (365)), line 3017
+  line 529 (## Bootstrap (216)), line 1227 (## Business (365)), line 3017
   (## Travel (44)).
 - **Preview URL:** `https://preview.colorlib.com/theme/waterboat/` (HTTP 200,
   27,751 bytes, verified 2026-08-15). Title "WaterBoat — Website Template by

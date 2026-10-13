@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Dropdown 11" — eleventh of the "Bootstrap Dropdowns
   (20)" series (source: https://colorlib.com/wp/template/dropdown-11/).
-  TEMPLATES.md has ONE copy (line 764). Series siblings: Dropdown 01 was
+  TEMPLATES.md has ONE copy (line 766). Series siblings: Dropdown 01 was
   prepped as **Menubar**, Dropdown 02 as **Popmenu**, Dropdown 03 as
   **Skycast**, Dropdown 04 as **Chime**, Dropdown 05 as **Trolley**,
   Dropdown 06 as **Passkey**, Dropdown 07 as **Onboard**, Dropdown 08 as
@@ -121,4 +121,4 @@ rgba(0,0,0,.2)`), reverting on close; four items in order (Account,
    lint + knip + fallow + 100% coverage + build); commit conventionally,
    open PR to main, merge immediately with `gh pr merge --squash
 --delete-branch`, then bookkeeping: `[x]` + surge URL + homepage in
-   TEMPLATES.md (line 764) + `npm run readme:status`, per FAST_MODE.
+   TEMPLATES.md (line 766) + `npm run readme:status`, per FAST_MODE.

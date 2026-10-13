@@ -9,7 +9,7 @@ the live-verified DOM structure, and the Gherkin scenarios.
 - Preview (REAL url — the default one 404s): `https://preview.colorlib.com/theme/bootstrap/multiselect-10/`
 - Wrong/404: `https://preview.colorlib.com/theme/multiselect-10/` (returns "Not Found")
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-10.jpg` (1200×972, AVIF)
-- Source page: `https://colorlib.com/wp/template/multiselect-10/` (TEMPLATES.md line 832, ONE occurrence)
+- Source page: `https://colorlib.com/wp/template/multiselect-10/` (TEMPLATES.md line 834, ONE occurrence)
 - Engine: **NONE — vanilla jQuery + lodash 3.5.0 + FontAwesome** — the
   first hand-rolled member of the series. Siblings 01–08 (Picker/Sifter/
   Winnow/Cull/Glean/Garner/Reap/Pluck) are Semantic UI; 09 (Thresh) is

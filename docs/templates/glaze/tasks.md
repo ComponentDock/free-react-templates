@@ -9,7 +9,7 @@
 - **Original:** ColorLib "Bootstrap Buttons 19" — free UI-kit button
   component template (source:
   https://colorlib.com/wp/template/bootstrap-buttons-19/). TEMPLATES.md
-  row: line 680 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-19`
+  row: line 682 (**Bootstrap Buttons (20)**). The `bootstrap-buttons-19`
   slug appears exactly once (no dup rows to mark).
 - **Live preview DOM analyzed (REACHABLE, verified 2026-08-14):** the
   default `https://preview.colorlib.com/theme/bootstrap-buttons-19/`
@@ -193,5 +193,5 @@ package-lock.json`
 10. [ ] Merge immediately (`gh pr merge --squash --delete-branch`)
 11. [ ] After merge: TEMPLATES.md `[~]` → `[x]` + surge URL
         (`glaze.free.componentdock.com`) + `npm run readme:status`; push
-        (mark line 680 — Bootstrap Buttons (20) category; single row, no
+        (mark line 682 — Bootstrap Buttons (20) category; single row, no
         dups)

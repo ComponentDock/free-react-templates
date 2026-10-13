@@ -5,7 +5,7 @@
 Vendly is a single-page e-commerce / fashion-store template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Shoppers" design (see TEMPLATES.md — line 493, Bootstrap category;
-the same source is DUPLICATED at lines 1602 and 1729 — ALL THREE rows must be
+the same source is DUPLICATED at lines 1604 and 1731 — ALL THREE rows must be
 marked `[x]` when done), built under a NEW name with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Calendar 11" — a "Bootstrap Calendars" demo
   (source: https://colorlib.com/wp/template/calendar-11/). Single occurrence
-  in TEMPLATES.md (line 695, "Bootstrap Calendars (20)" category — no dup
+  in TEMPLATES.md (line 697, "Bootstrap Calendars (20)" category — no dup
   rows). Recreation uses the NEW name **Metronome**.
 - **Preview URL analyzed:**
   `https://preview.colorlib.com/theme/bootstrap/calendar-11/` — HTTP 200,

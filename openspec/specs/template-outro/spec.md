@@ -26,7 +26,7 @@ logo, link hovers, and social hovers. No images, no buttons with text.
   Footer" series (footer-only component demos; the page body is a 70vh
   filler strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-05/. TEMPLATES.md has ONE
-  copy (line 781, `- [ ]` unchecked). This prep: Bootstrap Footer 05 →
+  copy (line 783, `- [ ]` unchecked). This prep: Bootstrap Footer 05 →
   **Outro**. When the implementer finishes, that row gets bookkept `[x]`.
 - **PREVIEW PATH QUIRK (same as the rest of the series — see the colophon
   prep):** `https://preview.colorlib.com/theme/bootstrap-footer-05/` returns

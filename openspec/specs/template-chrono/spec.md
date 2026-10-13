@@ -5,8 +5,8 @@
 Chrono is a single-page watch-store eCommerce template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Timezone" watch store template design (see TEMPLATES.md, line
-514 under **Bootstrap (216)** — duplicate rows at line 1607 under **Ecommerce
-(56)** and line 1735 under **Fashion (43)**, same template, ONE app only),
+514 under **Bootstrap (216)** — duplicate rows at line 1609 under **Ecommerce
+(56)** and line 1737 under **Fashion (43)**, same template, ONE app only),
 built under a different name ("Chrono" — a chronograph/watch-brand word,
 matching the source's timepiece-store positioning) with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib

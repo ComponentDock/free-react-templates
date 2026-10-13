@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Slim" —
   `https://colorlib.com/wp/template/slim/` (Fitness / Gym Template).
   TEMPLATES.md lines **497, 1875, 2358** — THREE duplicate rows, all
-  `- [ ]`; mark ALL THREE `[x]` when done. "Slim2" (lines 498/1167/1876,
+  `- [ ]`; mark ALL THREE `[x]` when done. "Slim2" (lines 498/1169/1876,
   `wp/template/slim2/`) is a DIFFERENT template — do not touch those rows.
   Recreation uses the NEW name **Tonic** (fitness "toned body" connotation;
   single word, no collision with `ls apps/` or spec folders; "tonic" appears

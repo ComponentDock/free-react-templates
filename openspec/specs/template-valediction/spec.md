@@ -47,7 +47,7 @@ static links.
   Footer" series (footer-only component demos; the page body is a filler
   strip so the footer is the deliverable). Source page:
   https://colorlib.com/wp/template/bootstrap-footer-17/. TEMPLATES.md has ONE
-  copy (line 793, `- [ ]` unchecked). This prep: Bootstrap Footer 17 →
+  copy (line 795, `- [ ]` unchecked). This prep: Bootstrap Footer 17 →
   **Valediction**. When the implementer finishes, that row gets bookkept
   `[x]`.
 - **PREVIEW PATH QUIRK (series-wide — see the colophon/terminus/capstone/

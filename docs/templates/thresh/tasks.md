@@ -9,7 +9,7 @@ the live-verified DOM structure, and the Gherkin scenarios.
 - Preview (REAL url — the default one 404s): `https://preview.colorlib.com/theme/bootstrap/multiselect-09/`
 - Wrong/404: `https://preview.colorlib.com/theme/multiselect-09/` (returns "Not Found")
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-09.jpg` (1200×972)
-- Source page: `https://colorlib.com/wp/template/multiselect-09/` (TEMPLATES.md line 831, ONE occurrence)
+- Source page: `https://colorlib.com/wp/template/multiselect-09/` (TEMPLATES.md line 833, ONE occurrence)
 - Engine: **Select2 4.0.4** (CDN css+js) — first Select2 member prepped;
   siblings 01–08 (Picker/Sifter/Winnow/Cull/Glean/Garner/Reap/Pluck) are Semantic UI.
 

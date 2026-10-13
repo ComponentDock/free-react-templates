@@ -8,7 +8,7 @@
 - **Original:** ColorLib "The Quest" — free gaming blog/community website
   template (source: https://colorlib.com/wp/template/the-quest/). Listed in
   TEMPLATES.md under the Gaming category (line 512); duplicate row at line
-  1821 (another category) — same template, ONE app only.
+  1823 (another category) — same template, ONE app only.
 - **Preview REACHABLE (HTTP 200) — SLUG HAS NO HYPHEN:**
   `https://preview.colorlib.com/theme/thequest/`. The hyphenated URL
   (`/theme/the-quest/`) returns 404; products.js registers the slug as

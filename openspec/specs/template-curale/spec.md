@@ -25,7 +25,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Original:** ColorLib "Medino" — a free medical / clinic website template
   based on Bootstrap 4. Category in TEMPLATES.md: **Bootstrap (216)**
   (line 449; the slug also appears in a second category section at line
-  2252 — a dup row, both unprepped and unshipped). The recreation brands
+  2254 — a dup row, both unprepped and unshipped). The recreation brands
   itself **Curale** but keeps the same section structure, copy kinds and
   design tokens.
 - **Live preview DOM analyzed (verified 2026-08-11):**

@@ -12,7 +12,7 @@
 - **Original:** ColorLib "Miners" — page title "Miners &mdash; Colorlib
   Website Template". TEMPLATES.md category: **Bootstrap (216)**, first
   occurrence at line 453 (`- [ ]`, source NOT shipped anywhere). DUP-ROW
-  TRAP: the `miners` slug also appears at lines 1099 (Business 365), 1350
+  TRAP: the `miners` slug also appears at lines 1101 (Business 365), 1350
   (Construction 29) and 2341 (One Page 91) — all `- [ ]` rows of the same
   template; ONE implementation covers all four rows (mark all `[x]` at
   bookkeeping). The recreation brands itself **Veinly**.

@@ -15,7 +15,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears TWO times in TEMPLATES.md (dup-row trap): line 610
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one)
-and line 1920 (**Hotel (38)** category) — both `- [ ]` rows of the SAME
+and line 1922 (**Hotel (38)** category) — both `- [ ]` rows of the SAME
 template. ONE implementation covers both rows (mark all `[x]` with the same
 surge URL at bookkeeping time).
 
@@ -319,4 +319,4 @@ The system SHALL render a "Go to Top" control with a double-chevron arrow.
       apps/cura/src/test/setup.ts into the new app's setup if any
       localStorage use is introduced
 - [ ] TEMPLATES.md bookkeeping at ship time: mark BOTH `- [ ]` rows
-      (line 610 Bootstrap 5, line 1920 Hotel) `[x]` with the same surge URL + `npm run readme:status` (implementer)
+      (line 610 Bootstrap 5, line 1922 Hotel) `[x]` with the same surge URL + `npm run readme:status` (implementer)

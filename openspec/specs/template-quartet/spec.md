@@ -31,7 +31,7 @@ custom checkbox driven by sibling selectors), NOT Bootstrap's
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 14" — the fourteenth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 744 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 746 — mark that line `[x]`
   when done; single row, no duplicate rows). Sibling items Checkbox 01–10
   were prepped as Tickbox / Picks / Ticktag / Checkly / Tickwell / Toggly /
   Switchly / Soluna / Taskly / Moodly; Checkbox 11 as Quadly, Checkbox 12 as
@@ -274,6 +274,6 @@ with a main landmark and a document title.
 - [ ] Icons: lucide-react `Check` (no icomoon/FontAwesome, no copied assets)
 - [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
-- [ ] `TEMPLATES.md` line 744 updated by the implementer (`[~]` → `[x]` +
+- [ ] `TEMPLATES.md` line 746 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)

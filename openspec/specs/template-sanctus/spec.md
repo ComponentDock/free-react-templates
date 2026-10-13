@@ -13,7 +13,7 @@ TypeScript.
 - **Original:** ColorLib "Byfaith" — free responsive Bootstrap 5 church
   website template (source: https://colorlib.com/wp/template/byfaith/).
   TEMPLATES.md has TWO copies of this item (line 554 in the Bootstrap 5
-  category, line 1289 in the Church category — mark BOTH `[x]` when done).
+  category, line 1291 in the Church category — mark BOTH `[x]` when done).
   Both rows use the correct screenshot (`byfaith-free-template.jpg`).
 - **Demo DOM analyzed:** REACHABLE. `https://preview.colorlib.com/theme/byfaith/`
   returns HTTP 200 (curl verified 2026-08-13, 23.5 KB HTML). Page title:
@@ -446,4 +446,4 @@ and a document title.
 - [ ] Footer: #ede1d0 bg, Contact / Sources (2 columns) / Links widgets, 6 circular social icons (amber hover), copyright bar links Component Dock
 - [ ] Buttons: #f79918 pill with white text, hover inverts to white bg + amber text + shadow
 - [ ] Document title "Sanctus — Church Template"
-- [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 554 (Bootstrap 5), line 1289 (Church)
+- [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 554 (Bootstrap 5), line 1291 (Church)

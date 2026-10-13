@@ -6,7 +6,7 @@ Fiduciary is a single-page finance-and-consultation corporate website template
 in the free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Unioncorp" design (see TEMPLATES.md — listed THREE times, all
 three rows are the same source slug: line 632 in the Bootstrap 5 section, line
-1395 in the Consulting section, and line 1763 in the Finance section; implement
+1397 in the Consulting section, and line 1766 in the Finance section; implement
 ONE app and mark ALL THREE rows `[x]` at bookkeeping), built under a different
 name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
@@ -34,7 +34,7 @@ copied).
 - **Original:** ColorLib "Unioncorp" — free Bootstrap 5 finance & consultation
   website template (source: https://colorlib.com/wp/template/unioncorp/;
   page title "Unioncorp - Finance & Consultation"; listed THREE times in
-  TEMPLATES.md — line 632 [Bootstrap 5], line 1395 [Consulting], line 1763
+  TEMPLATES.md — line 632 [Bootstrap 5], line 1397 [Consulting], line 1766
   [Finance], all `- [ ]`, same slug → one app, mark all three rows `[x]`).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/unioncorp/ (HTTP
   200, full rendered DOM, 49.9KB HTML + `css/style.min.css` (257KB, Bootstrap

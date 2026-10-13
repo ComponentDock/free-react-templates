@@ -13,7 +13,7 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Giving" — free responsive Bootstrap 4 non-profit /
   charity website template (source: https://colorlib.com/wp/template/giving/).
   TEMPLATES.md has THREE copies of this item (line 406 in the Bootstrap
-  category, line 1269 in the Charity category, and line 1298 in the Church
+  category, line 1271 in the Charity category, and line 1300 in the Church
   category — mark ALL THREE `[x]` when done). All three rows reference the
   correct screenshot (`giving-free-template.jpg`).
 - **Demo DOM analyzed:** REACHABLE. `https://preview.colorlib.com/theme/giving/`
@@ -368,4 +368,4 @@ and a document title.
 - [ ] About Us: heading + copy + Join Volunteer / Blog links, 3 mini-cards (Give Meal A Day / Free Education For African Children / Join As A Volunteers) with thumbs
 - [ ] Footer: #404040, About Us (+social icons) / Blog / Contact Info (address, phone, email, hours) columns, ColorLib credit bar
 - [ ] Document title "Generous — Charity Template"
-- [ ] ALL THREE TEMPLATES.md rows marked `[x]` on completion: line 406 (Bootstrap), line 1269 (Charity), line 1298 (Church)
+- [ ] ALL THREE TEMPLATES.md rows marked `[x]` on completion: line 406 (Bootstrap), line 1271 (Charity), line 1300 (Church)

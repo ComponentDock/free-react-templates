@@ -16,7 +16,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The source appears THREE times in TEMPLATES.md (dup-row trap): line 616
 (**Bootstrap 5 (89)** category — the FIRST occurrence, the canonical one),
-line 1126 (**Business (365)**) and line 2689 (**Restaurant (41)**) — all
+line 1128 (**Business (365)**) and line 2691 (**Restaurant (41)**) — all
 `- [ ]` rows of the SAME template. ONE implementation covers all three rows
 (mark all `[x]` with the same surge URL at bookkeeping time).
 
@@ -451,5 +451,5 @@ sign-up button.
       "Email Adrress" → "Email Address"
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL THREE `- [ ]` rows
-      (line 616 Bootstrap 5, line 1126 Business, line 2689 Restaurant)
+      (line 616 Bootstrap 5, line 1128 Business, line 2691 Restaurant)
       `[x]` with the same surge URL + `npm run readme:status`

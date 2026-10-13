@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Flawless" — one-page gym / fitness-club theme
   (source: https://colorlib.com/wp/template/flawless/). TEMPLATES.md has
-  TWO rows: line 401 (category Bootstrap) and line 1849 (category Health
+  TWO rows: line 401 (category Bootstrap) and line 1851 (category Health
   Fitness) — mark BOTH `[x]` when done. No other spec on main maps to this
   slug (grep-checked before prepping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/flawless/

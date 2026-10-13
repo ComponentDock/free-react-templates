@@ -32,7 +32,7 @@ variant — the tenth of the "Bootstrap Checkboxes (20)" series.
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Checkbox 10" — the tenth of the "Bootstrap
-  Checkboxes (20)" series in TEMPLATES.md (line 740 — mark that line `[x]`
+  Checkboxes (20)" series in TEMPLATES.md (line 742 — mark that line `[x]`
   when done; single row, no duplicates). Sibling items Checkbox 01–09 were
   prepped as Tickbox / Picks / Ticktag / Checkly / Tickwell / Toggly /
   Switchly / Soluna / Taskly; each item in the series is a DIFFERENT design
@@ -288,5 +288,5 @@ convention on every template (the original has no footer).
       happy/sad mood toggle with the 100px smiley
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
-      by implementer at ship time (mark the "Checkbox 10" row, line 740 —
+      by implementer at ship time (mark the "Checkbox 10" row, line 742 —
       Bootstrap Checkboxes category, single row)

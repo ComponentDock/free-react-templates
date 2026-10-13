@@ -9,7 +9,7 @@
   demo from the "Bootstrap Footer" series (source:
   https://colorlib.com/wp/template/bootstrap-footer-11/). The page body is a
   light-gray filler strip; the deliverable is the footer. TEMPLATES.md has
-  ONE copy (line 787, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
+  ONE copy (line 789, `- [ ]` unchecked — bookkeep `[x]` + surge URL when
   done). This prep: Bootstrap Footer 11 → **Tailpiece** ("a decorative design
   printed at the end of a chapter or book" — continues the series'
   ending-themed names Colophon → Envoi → Epilogue → Coda → Outro → Finale →
@@ -152,6 +152,6 @@ col-lg-3` ×4 — TWO columns on md (≥768px), FOUR on lg (≥992px), stacked
 - [ ] `npm run verify:app tailpiece` → full per-app gate green
 - [ ] Open PR `feat/template-tailpiece` → merge immediately
       (`gh pr merge --squash --delete-branch`)
-- [ ] Bookkeep TEMPLATES.md line 787 `[x]` + surge URL
+- [ ] Bookkeep TEMPLATES.md line 789 `[x]` + surge URL
       `https://tailpiece.free.componentdock.com` (implementer's job — prep
       stream never touches markers)

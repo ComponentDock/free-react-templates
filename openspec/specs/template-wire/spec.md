@@ -21,7 +21,7 @@ CSS 4 + TypeScript.
   right) with a "Popular Posts" numbered sidebar + pagination, a light
   newsletter band, and a minimal centered footer. TEMPLATES.md has TWO
   copies of this item (lines 272 and 2204 — duplicate rows: line 272 in the
-  "Blog" section, line 2204 in the "Magazine" section); ONE recreation
+  "Blog" section, line 2206 in the "Magazine" section); ONE recreation
   (Wire) covers both — the implementer must mark BOTH rows `[x]`.
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/meranda/`
   (HTTP 200, 30,254 bytes; title "Meranda — Website Template by Colorlib").

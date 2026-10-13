@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Olla" — a SaaS/site-builder BUSINESS landing
   one-pager (page title "Business | Template"; source:
   https://colorlib.com/wp/template/olla/, appears 2× in TEMPLATES.md — line
-  611 Bootstrap 5 (89) + line 1115 Business (365); mark ALL `[x]` when done).
+  611 Bootstrap 5 (89) + line 1117 Business (365); mark ALL `[x]` when done).
   The app name MUST differ from the source — hence **Weave** (single
   lowercase word, the idea of weaving sections from a component library
   into a site; no collision with `apps/`, `openspec/specs/`, or

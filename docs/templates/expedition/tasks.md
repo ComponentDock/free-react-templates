@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Trips" (source:
   https://colorlib.com/wp/template/trips/). TEMPLATES.md has **THREE
-  duplicate rows**: line 520 (## Bootstrap (216)), line 1209 (## Business
+  duplicate rows**: line 520 (## Bootstrap (216)), line 1211 (## Business
   (365)), and line 3012 (## Travel (44)) — mark ALL THREE `[x]` with the
   SAME surge URL when done.
 - **Preview URL:** `https://preview.colorlib.com/theme/trips/` — HTTP 200,

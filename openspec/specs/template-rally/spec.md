@@ -5,7 +5,7 @@
 Rally is a single-page event/conference template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Eventure"
 event website template (see TEMPLATES.md, Bootstrap section, line 389;
-duplicate at line 1681 in the Event section — mark EVERY copy `[x]` when
+duplicate at line 1683 in the Event section — mark EVERY copy `[x]` when
 done), built under a different name with the monorepo stack: Vite + React 19
 
 - Tailwind CSS 4 + TypeScript.
@@ -44,7 +44,7 @@ uppercase) and Roboto (body, buttons 500).
 
 - **Original:** ColorLib "Eventure" — event/conference template
   (source: https://colorlib.com/wp/template/eventure/). Listed in
-  TEMPLATES.md line 389 (Bootstrap section); duplicate at line 1681 (Event
+  TEMPLATES.md line 389 (Bootstrap section); duplicate at line 1683 (Event
   section) — mark every copy `[x]` when done. Screenshot:
   `eventure-free-template.jpg` (1200×946, reviewed visually in the browser:
   dark crowd-photo hero with white uppercase headline, white countdown strip,

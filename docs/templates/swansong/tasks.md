@@ -8,7 +8,7 @@
 - **Original:** ColorLib "Bootstrap Footer 19" — free responsive Bootstrap
   4.3.1 footer-component demo (source:
   https://colorlib.com/wp/template/bootstrap-footer-19/). TEMPLATES.md line
-  795, single `- [ ]` row. This prep: Bootstrap Footer 19 → **Swansong**.
+  797, single `- [ ]` row. This prep: Bootstrap Footer 19 → **Swansong**.
   Bookkeep that row `[x]` when the app ships.
 - **Preview URL quirk (series-wide):**
   `https://preview.colorlib.com/theme/bootstrap-footer-19/` returns 404. Use
@@ -173,7 +173,7 @@
 6. [ ] Run `npm run verify:app swansong` until green (typecheck + lint +
        knip + fallow + 100% coverage + build)
 7. [ ] Commit `feat: Swansong — footer component demo (ColorLib Bootstrap
- Footer 19)`; PR + immediate squash merge; then TEMPLATES.md line 795
+ Footer 19)`; PR + immediate squash merge; then TEMPLATES.md line 797
        `[~]`→`[x]` + surge URL + homepage + `npm run readme:status`, push
 
 ## Verification (pre-merge, from the spec)

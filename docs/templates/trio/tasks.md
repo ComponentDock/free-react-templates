@@ -9,7 +9,7 @@
 ## Source
 
 - TEMPLATES.md: **Checkbox 13** — https://colorlib.com/wp/template/checkbox-13/
-  (line 743; single row, no duplicate rows)
+  (line 745; single row, no duplicate rows)
 - Preview: `https://preview.colorlib.com/theme/bootstrap/checkbox-13/` — HTTP
   200, 16,837 bytes. **The naive `https://preview.colorlib.com/theme/checkbox-13/`
   returns HTTP 404** — the "Checkbox NN" demos are sub-pages of ColorLib's
@@ -135,5 +135,5 @@ pointer-events-none`; disabled+checked `bg-[#f67280] opacity-20`
 9. Local gate: `scripts/verify-app.sh trio` (typecheck + lint + knip + fallow
    - 100% coverage tests + build).
 10. Branch `feat/template-trio`, PR, immediate squash merge; then mark
-    TEMPLATES.md line 743 `[x]` with surge URL + homepage,
+    TEMPLATES.md line 745 `[x]` with surge URL + homepage,
     `npm run readme:status`, push.
