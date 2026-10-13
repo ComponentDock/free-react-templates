@@ -84,6 +84,17 @@ it was built from a spec with no visual reference).
   `queryByLabelText(...)` is absent instead of checking the input value.
 - The ColorLib preview can be slow/bot-guarded; retry with a browser
   (Browserbase) if curl gets blocked.
+- **IPv6 is IP-banned, IPv4 works (2026-10-13):** `colorlib.com` and
+  `preview.colorlib.com` answer Cloudflare "Error 1106 — the owner of this
+  website has banned your IP address" (403, 17 bytes) for **every IPv6**
+  request — HTML, CSS and the checklist screenshots alike — while plain
+  `curl -4` to the same URL returns 200. The browser tool shares the ban, so
+  try `curl -4` before declaring the preview unreachable.
+- **Resolve the snippet's stylesheet against the page URL:** the accordion
+  family's CSS is `<page>/css/style.css?v=…`
+  (`/theme/bac/accordion-12/css/style.css`), *not*
+  `/theme/bac/css/style.css` — the latter 404s with a 9-byte "Not Found".
+  The page's own `href` is the authority.
 - The **Website Menus** family (`website-menu-*`) does **not** live at
   `/theme/<slug>/` (that 404s) — its live preview is
   `https://preview.colorlib.com/theme/bootstrap/<slug>/`, found through the
