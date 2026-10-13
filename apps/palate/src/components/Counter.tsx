@@ -13,13 +13,17 @@ interface StatProps {
 function Stat({ value, label }: StatProps) {
   const [display, setDisplay] = useState(0)
   const [started, setStarted] = useState(false)
+  /* Without IntersectionObserver (jsdom included) nothing ever triggers the
+     count-up, so the final figures are derived during render instead of
+     being written back from the effect. */
+  const shown = typeof IntersectionObserver === 'undefined' ? value : display
+
   const ref = useRef<HTMLDivElement>(null)
   const startRef = useRef<number | null>(null)
   const frameRef = useRef<number>(0)
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') {
-      setDisplay(value)
       return
     }
     const observer = new IntersectionObserver((entries) => {
@@ -34,7 +38,7 @@ function Stat({ value, label }: StatProps) {
     // defensive branch — keeps 100% branch coverage).
     observer.observe(ref.current!)
     return () => observer.disconnect()
-  }, [value])
+  }, [])
 
   useEffect(() => {
     if (!started) {
@@ -56,7 +60,7 @@ function Stat({ value, label }: StatProps) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-[40px] font-medium text-ink">{display.toLocaleString('en-US')}</div>
+      <div className="text-[40px] font-medium text-ink">{shown.toLocaleString('en-US')}</div>
       <div className="mt-1 text-[16px] text-black/80">{label}</div>
     </div>
   )

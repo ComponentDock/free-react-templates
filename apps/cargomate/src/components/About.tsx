@@ -23,13 +23,17 @@ interface CounterProps {
 function Counter({ value, prefix, suffix, icon, label }: CounterProps) {
   const [display, setDisplay] = useState(0)
   const [started, setStarted] = useState(false)
+  /* Without IntersectionObserver (jsdom included) nothing ever triggers the
+     count-up, so the final figures are derived during render instead of
+     being written back from the effect. */
+  const shown = typeof IntersectionObserver === 'undefined' ? value : display
+
   const startRef = useRef<number | null>(null)
   const frameRef = useRef(0)
   const Icon = counterIcons[icon]
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') {
-      setDisplay(value)
       return
     }
     const observer = new IntersectionObserver((entries) => {
@@ -42,7 +46,7 @@ function Counter({ value, prefix, suffix, icon, label }: CounterProps) {
     })
     observer.observe(document.getElementById(`counter-${label}`)!)
     return () => observer.disconnect()
-  }, [value, label])
+  }, [label])
 
   useEffect(() => {
     if (!started) {
@@ -70,7 +74,7 @@ function Counter({ value, prefix, suffix, icon, label }: CounterProps) {
       <Icon className="h-10 w-10 text-brand" aria-hidden="true" />
       <div className="mt-3 font-heading text-[42px] leading-none font-bold text-navy">
         {prefix}
-        {display}
+        {shown}
         {suffix}
       </div>
       <p className="mt-3 text-sm text-muted">{label}</p>

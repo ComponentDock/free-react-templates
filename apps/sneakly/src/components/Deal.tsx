@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { deal } from '../data'
 
 const DAY_MS = 24 * 60 * 60 * 1000
@@ -30,7 +30,9 @@ export function getTimeLeft(target: number, now: number = Date.now()): TimeLeft 
  *  every second), product name, strikethrough + sale price and three
  *  circular thumbnails on the right. */
 export function Deal() {
-  const target = useMemo(() => Date.now() + deal.targetDays * DAY_MS, [])
+  /* Countdown anchor: read once per mount in a lazy initializer so it stays
+     stable for the life of the component. */
+  const [target] = useState(() => Date.now() + deal.targetDays * DAY_MS)
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => getTimeLeft(target))
 
   useEffect(() => {

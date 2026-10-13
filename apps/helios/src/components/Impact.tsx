@@ -18,12 +18,16 @@ function formatNumber(value: number): string {
 function Counter({ value, label, icon: Icon }: CounterProps) {
   const [display, setDisplay] = useState(0)
   const [started, setStarted] = useState(false)
+  /* Without IntersectionObserver (jsdom included) nothing ever triggers the
+     count-up, so the final figures are derived during render instead of
+     being written back from the effect. */
+  const shown = typeof IntersectionObserver === 'undefined' ? value : display
+
   const startRef = useRef<number | null>(null)
   const frameRef = useRef<number>(0)
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') {
-      setDisplay(value)
       return
     }
     const observer = new IntersectionObserver((entries) => {
@@ -36,7 +40,7 @@ function Counter({ value, label, icon: Icon }: CounterProps) {
     })
     observer.observe(document.getElementById(`impact-counter-${label}`)!)
     return () => observer.disconnect()
-  }, [value, label])
+  }, [label])
 
   useEffect(() => {
     if (!started) {
@@ -62,7 +66,7 @@ function Counter({ value, label, icon: Icon }: CounterProps) {
         <Icon className="h-6 w-6" aria-hidden="true" />
       </span>
       <div className="mt-3 text-3xl font-extrabold text-white lg:text-4xl">
-        {formatNumber(display)}
+        {formatNumber(shown)}
       </div>
       <div className="mt-1 text-sm font-medium text-white/80">{label}</div>
     </div>

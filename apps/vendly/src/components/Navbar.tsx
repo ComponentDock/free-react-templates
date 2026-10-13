@@ -29,12 +29,14 @@ export function Navbar({ mobileOpen, onClose }: NavbarProps) {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [openDropdown, mobileDropdown])
 
-  /* Reset the mobile submenu whenever the panel is closed. */
-  useEffect(() => {
-    if (!mobileOpen) {
-      setMobileDropdown(null)
-    }
-  }, [mobileOpen])
+  /* Reset the mobile submenu whenever the panel opens or closes: the prop
+     change itself is the event that invalidates the previous selection, so
+     the reset happens during render instead of in an effect. */
+  const [wasMobileOpen, setWasMobileOpen] = useState(mobileOpen)
+  if (wasMobileOpen !== mobileOpen) {
+    setWasMobileOpen(mobileOpen)
+    setMobileDropdown(null)
+  }
 
   return (
     <>

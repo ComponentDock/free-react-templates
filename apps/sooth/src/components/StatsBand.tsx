@@ -28,9 +28,12 @@ function CountUp({ item }: { item: StatItem }) {
   const [current, setCurrent] = useState(0)
   const startRef = useRef<number | null>(null)
 
+  /* Without requestAnimationFrame there is no clock to drive the count-up,
+     so the final figure is derived during render instead. */
+  const shown = typeof requestAnimationFrame === 'undefined' ? item.value : current
+
   useEffect(() => {
     if (typeof requestAnimationFrame === 'undefined') {
-      setCurrent(item.value)
       return
     }
     const duration = 1200
@@ -55,7 +58,7 @@ function CountUp({ item }: { item: StatItem }) {
   return (
     <div className="text-center">
       <div className="font-heading text-4xl font-bold text-primary-600 dark:text-primary-400">
-        {formatValue(item, current)}
+        {formatValue(item, shown)}
       </div>
       <div className="mt-2 text-sm text-gray-500 dark:text-gray-400">{item.label}</div>
     </div>

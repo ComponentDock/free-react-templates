@@ -1,8 +1,10 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { countdownOffsetMs } from '../data'
 
 export function Countdown() {
-  const target = useMemo(() => Date.now() + countdownOffsetMs, [])
+  /* Countdown anchor: read once per mount in a lazy initializer so it stays
+     stable for the life of the component. */
+  const [target] = useState(() => Date.now() + countdownOffsetMs)
   const [now, setNow] = useState(() => Date.now())
 
   useEffect(() => {

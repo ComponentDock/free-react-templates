@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import { useState, type FormEvent } from 'react'
 import { X } from 'lucide-react'
 
 const services = ['Select Service', 'Service 1', 'Service 2', 'Service 3', 'Service 4'] as const
@@ -11,11 +11,14 @@ interface AppointmentPanelProps {
 export function AppointmentPanel({ open, onClose }: AppointmentPanelProps) {
   const [submitted, setSubmitted] = useState(false)
 
-  useEffect(() => {
-    if (open) {
-      setSubmitted(false)
-    }
-  }, [open])
+  /* Adjusting state when a prop changes: reopening the panel invalidates the
+     previous submission, so the confirmation resets during render instead of
+     through an effect on `open`. */
+  const [wasOpen, setWasOpen] = useState(open)
+  if (wasOpen !== open) {
+    setWasOpen(open)
+    setSubmitted(false)
+  }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
