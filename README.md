@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 1701 / 1646 templates recreated · **-55 remaining**.
+**Status:** 1646 / 1646 ColorLib designs recreated · **0 remaining** · 1701 template apps shipped (75 designs were implemented twice — see docs/ai-context.md).
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
