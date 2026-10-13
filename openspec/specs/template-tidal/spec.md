@@ -51,46 +51,96 @@ Tidal is a travel agency landing template with a navbar, hero, search bar, servi
 - Footer links to `https://www.componentdock.com/` (branded "Component Dock")
 - No ColorLib references in app source code
 
-## Scenarios
+## Requirements
 
-### Navigation
+### Feature: Navigation
 
-- Given the page loads, when I look at the navbar, then I see "Tidal" logo and links: Home, About, Destination, Tour, Blog, Contact
-- Given I scroll down, when the navbar becomes sticky, then it has a solid background
+#### Scenario: I see "Tidal" logo and links: Home, About, Destination, Tour, Blog,…
 
-### Hero
+- **Given** the page loads,
+- **When** I look at the navbar,
+- **Then** I see "Tidal" logo and links: Home, About, Destination, Tour, Blog, Contact
 
-- Given I land on the page, when I see the hero section, then I see heading "Discover Your Favorite Place with Us" with a CTA button
+#### Scenario: It has a solid background
 
-### Search
+- **Given** I scroll down,
+- **When** the navbar becomes sticky,
+- **Then** it has a solid background
 
-- Given I see the search bar, when I click Tour/Hotel/Destination tabs, then the active tab highlights
-- Given I see the search form, when I view it, then I see date inputs and a search button
+### Feature: Hero
 
-### Services
+#### Scenario: I see heading "Discover Your Favorite Place with Us" with a CTA button
 
-- Given I scroll to services, when I see the section, then I see 4 service cards with icons
+- **Given** I land on the page,
+- **When** I see the hero section,
+- **Then** I see heading "Discover Your Favorite Place with Us" with a CTA button
 
-### Destinations
+### Feature: Search
 
-- Given I scroll to destinations, when I see the grid, then I see 5 country cards with images and names
+#### Scenario: The active tab highlights
 
-### Tour Packages
+- **Given** I see the search bar,
+- **When** I click Tour/Hotel/Destination tabs,
+- **Then** the active tab highlights
 
-- Given I scroll to tours, when I see the grid, then I see tour cards with price, duration, and location
+#### Scenario: I see date inputs and a search button
 
-### About
+- **Given** I see the search form,
+- **When** I view it,
+- **Then** I see date inputs and a search button
 
-- Given I scroll to about, when I see the section, then I see "Make Your Tour Memorable and Safe With Us" heading with descriptive text
+### Feature: Services
 
-### Testimonials
+#### Scenario: I see 4 service cards with icons
 
-- Given I scroll to testimonials, when I see the section, then I see review cards with names and quotes
+- **Given** I scroll to services,
+- **When** I see the section,
+- **Then** I see 4 service cards with icons
 
-### Blog
+### Feature: Destinations
 
-- Given I scroll to blog, when I see the section, then I see 3 blog post cards with dates and titles
+#### Scenario: I see 5 country cards with images and names
 
-### Footer
+- **Given** I scroll to destinations,
+- **When** I see the grid,
+- **Then** I see 5 country cards with images and names
 
-- Given I reach the footer, when I look at it, then I see 4 columns of links and a "Component Dock" attribution link
+### Feature: Tour Packages
+
+#### Scenario: I see tour cards with price, duration, and location
+
+- **Given** I scroll to tours,
+- **When** I see the grid,
+- **Then** I see tour cards with price, duration, and location
+
+### Feature: About
+
+#### Scenario: I see "Make Your Tour Memorable and Safe With Us" heading with…
+
+- **Given** I scroll to about,
+- **When** I see the section,
+- **Then** I see "Make Your Tour Memorable and Safe With Us" heading with descriptive text
+
+### Feature: Testimonials
+
+#### Scenario: I see review cards with names and quotes
+
+- **Given** I scroll to testimonials,
+- **When** I see the section,
+- **Then** I see review cards with names and quotes
+
+### Feature: Blog
+
+#### Scenario: I see 3 blog post cards with dates and titles
+
+- **Given** I scroll to blog,
+- **When** I see the section,
+- **Then** I see 3 blog post cards with dates and titles
+
+### Feature: Footer
+
+#### Scenario: I see 4 columns of links and a "Component Dock" attribution link
+
+- **Given** I reach the footer,
+- **When** I look at it,
+- **Then** I see 4 columns of links and a "Component Dock" attribution link

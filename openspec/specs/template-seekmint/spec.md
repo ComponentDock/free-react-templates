@@ -40,13 +40,54 @@ Single full-height section:
 - Footer links to componentdock.com
 - Placeholder images via picsum.photos (none needed for this simple template)
 
-## Scenarios
+## Requirements
 
-- [ ] Renders heading with template name
-- [ ] Renders search input with placeholder
-- [ ] Search button on the right side of the input
-- [ ] Typing updates the search input
-- [ ] Form submission triggers onSubmit callback
-- [ ] Search icon button focuses the input
-- [ ] Footer renders Component Dock link
-- [ ] Footer renders current year
+### Feature: Seekmint
+
+#### Scenario: [ ] Renders heading with template name
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Renders heading with template name
+
+#### Scenario: [ ] Renders search input with placeholder
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Renders search input with placeholder
+
+#### Scenario: [ ] Search button on the right side of the input
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Search button on the right side of the input
+
+#### Scenario: [ ] Typing updates the search input
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Typing updates the search input
+
+#### Scenario: [ ] Form submission triggers onSubmit callback
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Form submission triggers onSubmit callback
+
+#### Scenario: [ ] Search icon button focuses the input
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Search icon button focuses the input
+
+#### Scenario: [ ] Footer renders Component Dock link
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Footer renders Component Dock link
+
+#### Scenario: [ ] Footer renders current year
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** [ ] Footer renders current year

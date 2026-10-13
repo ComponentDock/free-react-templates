@@ -28,36 +28,41 @@ Seminar is a conference & workshop event landing page with a navbar, hero, speak
 6. **News/Blog** — Section heading "News". 3 blog cards: image, title, author, excerpt. "More Blog Posts" CTA.
 7. **Footer** — Dark (#1b1d24). 3-column: About Event, Quick Links, Connect with Us. Copyright with Component Dock link.
 
-## Scenarios
+## Requirements
 
-Feature: Seminar template renders correctly
+### Feature: Seminar
 
-Scenario: Page loads with all sections
-Given the user opens the Seminar template
-Then the Navbar is visible with brand "Seminar"
-And the Hero section shows conference heading
-And the Speakers section lists 4 speakers
-And the Programs section shows schedule items
-And the Sponsors section shows 6 sponsor logos
-And the News section shows 3 blog posts
-And the Footer contains a Component Dock link
+#### Scenario: Page loads with all sections
 
-Scenario: Navigation links work
-Given the user is on the Seminar template
-When the user clicks a nav link
-Then the page scrolls to the corresponding section
+- **Given** the user opens the Seminar template
+- **Then** the Navbar is visible with brand "Seminar"
+- **And** the Hero section shows conference heading
+- **And** the Speakers section lists 4 speakers
+- **And** the Programs section shows schedule items
+- **And** the Sponsors section shows 6 sponsor logos
+- **And** the News section shows 3 blog posts
+- **And** the Footer contains a Component Dock link
 
-Scenario: Mobile menu toggle
-Given the user is on a mobile viewport
-When the user clicks the hamburger menu
-Then the mobile navigation menu opens
+#### Scenario: Navigation links work
 
-Scenario: Buy Tickets CTA
-Given the user is on the Seminar template
-When the user clicks "Buy Tickets"
-Then the page scrolls to the contact/ticket section
+- **Given** the user is on the Seminar template
+- **When** the user clicks a nav link
+- **Then** the page scrolls to the corresponding section
 
-Scenario: Footer contains Component Dock link
-Given the user scrolls to the footer
-Then the footer contains a link to componentdock.com
-And the link text mentions "Component Dock"
+#### Scenario: Mobile menu toggle
+
+- **Given** the user is on a mobile viewport
+- **When** the user clicks the hamburger menu
+- **Then** the mobile navigation menu opens
+
+#### Scenario: Buy Tickets CTA
+
+- **Given** the user is on the Seminar template
+- **When** the user clicks "Buy Tickets"
+- **Then** the page scrolls to the contact/ticket section
+
+#### Scenario: Footer contains Component Dock link
+
+- **Given** the user scrolls to the footer
+- **Then** the footer contains a link to componentdock.com
+- **And** the link text mentions "Component Dock"

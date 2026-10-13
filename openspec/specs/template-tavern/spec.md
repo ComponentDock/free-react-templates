@@ -41,42 +41,104 @@ Tavern is a restaurant landing template with a navbar, hero, feature cards, spec
 - Footer links to https://www.componentdock.com/ (Component Dock branded)
 - No ColorLib references in app source
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- renders logo text "Tavern"
-- shows navigation links on desktop
-- toggles mobile menu on hamburger click
+#### Scenario: Renders logo text "Tavern"
 
-### Hero
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** renders logo text "Tavern"
 
-- displays hero heading and CTA button
-- slides between hero slides
+#### Scenario: Shows navigation links on desktop
 
-### Features
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** shows navigation links on desktop
 
-- shows 4 feature cards with icons and descriptions
+#### Scenario: Toggles mobile menu on hamburger click
 
-### Special Dishes
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** toggles mobile menu on hamburger click
 
-- displays dish cards with names and prices
-- navigates between slides
+### Feature: Hero
 
-### Our Menu
+#### Scenario: Displays hero heading and CTA button
 
-- shows menu items with descriptions and prices
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** displays hero heading and CTA button
 
-### Testimonials
+#### Scenario: Slides between hero slides
 
-- displays customer testimonials with names and roles
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** slides between hero slides
 
-### Blog
+### Feature: Features
 
-- shows blog post cards with title, date, excerpt
+#### Scenario: Shows 4 feature cards with icons and descriptions
 
-### Footer
+- **Given** the page is rendered
+- **When** the Features is inspected
+- **Then** shows 4 feature cards with icons and descriptions
 
-- links to Component Dock
-- shows newsletter signup form
-- displays opening hours and contact info
+### Feature: Special Dishes
+
+#### Scenario: Displays dish cards with names and prices
+
+- **Given** the page is rendered
+- **When** the Special Dishes is inspected
+- **Then** displays dish cards with names and prices
+
+#### Scenario: Navigates between slides
+
+- **Given** the page is rendered
+- **When** the Special Dishes is inspected
+- **Then** navigates between slides
+
+### Feature: Our Menu
+
+#### Scenario: Shows menu items with descriptions and prices
+
+- **Given** the page is rendered
+- **When** the Our Menu is inspected
+- **Then** shows menu items with descriptions and prices
+
+### Feature: Testimonials
+
+#### Scenario: Displays customer testimonials with names and roles
+
+- **Given** the page is rendered
+- **When** the Testimonials is inspected
+- **Then** displays customer testimonials with names and roles
+
+### Feature: Blog
+
+#### Scenario: Shows blog post cards with title, date, excerpt
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** shows blog post cards with title, date, excerpt
+
+### Feature: Footer
+
+#### Scenario: Links to Component Dock
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** links to Component Dock
+
+#### Scenario: Shows newsletter signup form
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** shows newsletter signup form
+
+#### Scenario: Displays opening hours and contact info
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** displays opening hours and contact info

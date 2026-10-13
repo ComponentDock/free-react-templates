@@ -69,58 +69,162 @@ testimonials, contact form, and a 4-column footer.
     - Column 4: Newsletter signup with email validation
     - Bottom bar: Copyright + "Made with Component Dock" link
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- GIVEN the page loads, THEN the navbar is visible with logo and nav links
-- GIVEN the user scrolls down, THEN the navbar becomes sticky with white bg
-- GIVEN the user clicks the mobile menu button, THEN the mobile nav opens
-- GIVEN the mobile nav is open and user clicks a link, THEN the nav closes
+#### Scenario: The navbar is visible with logo and nav links
 
-### Hero
+- **Given** the page loads,
+- **When** the Navbar is inspected
+- **Then** the navbar is visible with logo and nav links
 
-- GIVEN the page loads, THEN the hero heading and CTA are visible
-- GIVEN the user clicks "Our Services", THEN it navigates to #services
+#### Scenario: The navbar becomes sticky with white bg
 
-### About
+- **Given** the user scrolls down,
+- **When** the Navbar is inspected
+- **Then** the navbar becomes sticky with white bg
 
-- GIVEN the page loads, THEN the about heading and image are visible
-- GIVEN the user clicks "Learn More", THEN the button is clickable
+#### Scenario: The mobile nav opens
 
-### Services
+- **Given** the user clicks the mobile menu button,
+- **When** the Navbar is inspected
+- **Then** the mobile nav opens
 
-- GIVEN the page loads, THEN three service cards are visible
-- GIVEN the section renders, THEN each card has a title and description
+#### Scenario: The nav closes
 
-### Projects
+- **Given** the mobile nav is open and user clicks a link,
+- **When** the Navbar is inspected
+- **Then** the nav closes
 
-- GIVEN the page loads, THEN three project cards are visible
-- GIVEN the user clicks "View Project", THEN the button is clickable
+### Feature: Hero
 
-### MoreCTA
+#### Scenario: The hero heading and CTA are visible
 
-- GIVEN the page loads, THEN the CTA heading and button are visible
+- **Given** the page loads,
+- **When** the Hero is inspected
+- **Then** the hero heading and CTA are visible
 
-### Testimonials
+#### Scenario: It navigates to #services
 
-- GIVEN the page loads, THEN at least one testimonial is visible
-- GIVEN the user clicks next/prev, THEN the testimonial changes
+- **Given** the user clicks "Our Services",
+- **When** the Hero is inspected
+- **Then** it navigates to #services
 
-### Contact
+### Feature: About
 
-- GIVEN the page loads, THEN the form fields are visible
-- GIVEN the user submits empty, THEN validation errors appear
-- GIVEN the user fills all fields correctly, THEN the form submits
+#### Scenario: The about heading and image are visible
 
-### BannerCTA
+- **Given** the page loads,
+- **When** the About is inspected
+- **Then** the about heading and image are visible
 
-- GIVEN the page loads, THEN "Any help needed?" text and CTA are visible
+#### Scenario: The button is clickable
 
-### Footer
+- **Given** the user clicks "Learn More",
+- **When** the About is inspected
+- **Then** the button is clickable
 
-- GIVEN the page loads, THEN all 4 footer columns are visible
-- GIVEN the user views the footer, THEN "Made with Component Dock" links to
-  https://www.componentdock.com/
-- GIVEN the newsletter form, WHEN user enters invalid email, THEN error shows
-- GIVEN the newsletter form, WHEN user enters valid email, THEN success message shows
+### Feature: Services
+
+#### Scenario: Three service cards are visible
+
+- **Given** the page loads,
+- **When** the Services is inspected
+- **Then** three service cards are visible
+
+#### Scenario: Each card has a title and description
+
+- **Given** the section renders,
+- **When** the Services is inspected
+- **Then** each card has a title and description
+
+### Feature: Projects
+
+#### Scenario: Three project cards are visible
+
+- **Given** the page loads,
+- **When** the Projects is inspected
+- **Then** three project cards are visible
+
+#### Scenario: The button is clickable
+
+- **Given** the user clicks "View Project",
+- **When** the Projects is inspected
+- **Then** the button is clickable
+
+### Feature: MoreCTA
+
+#### Scenario: The CTA heading and button are visible
+
+- **Given** the page loads,
+- **When** the MoreCTA is inspected
+- **Then** the CTA heading and button are visible
+
+### Feature: Testimonials
+
+#### Scenario: At least one testimonial is visible
+
+- **Given** the page loads,
+- **When** the Testimonials is inspected
+- **Then** at least one testimonial is visible
+
+#### Scenario: The testimonial changes
+
+- **Given** the user clicks next/prev,
+- **When** the Testimonials is inspected
+- **Then** the testimonial changes
+
+### Feature: Contact
+
+#### Scenario: The form fields are visible
+
+- **Given** the page loads,
+- **When** the Contact is inspected
+- **Then** the form fields are visible
+
+#### Scenario: Validation errors appear
+
+- **Given** the user submits empty,
+- **When** the Contact is inspected
+- **Then** validation errors appear
+
+#### Scenario: The form submits
+
+- **Given** the user fills all fields correctly,
+- **When** the Contact is inspected
+- **Then** the form submits
+
+### Feature: BannerCTA
+
+#### Scenario: "Any help needed?" text and CTA are visible
+
+- **Given** the page loads,
+- **When** the BannerCTA is inspected
+- **Then** "Any help needed?" text and CTA are visible
+
+### Feature: Footer
+
+#### Scenario: All 4 footer columns are visible
+
+- **Given** the page loads,
+- **When** the Footer is inspected
+- **Then** all 4 footer columns are visible
+
+#### Scenario: "Made with Component Dock" links to
+
+- **Given** the user views the footer,
+- **When** the Footer is inspected
+- **Then** "Made with Component Dock" links to
+
+#### Scenario: Error shows
+
+- **Given** the newsletter form,
+- **When** user enters invalid email,
+- **Then** error shows
+
+#### Scenario: Success message shows
+
+- **Given** the newsletter form,
+- **When** user enters valid email,
+- **Then** success message shows

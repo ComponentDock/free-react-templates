@@ -38,57 +38,125 @@ Civicore is a job board template with a navbar, hero, search bar, feature cards,
 10. **Download** — Split: left = heading "Download the App", description, App Store + Play Store buttons. Right = phone mockup image
 11. **Footer** — Dark navy (#04091e): 3-column (Top Products links, Newsletter form, Instagram feed grid) + Copyright bar with social icons + "More templates at Component Dock" linking https://www.componentdock.com/
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- GIVEN user loads the page, THEN navbar displays logo and all navigation links
-- GIVEN user on mobile, THEN hamburger menu toggles nav visibility
+#### Scenario: Navbar displays logo and all navigation links
 
-### Hero
+- **Given** user loads the page,
+- **When** the Navbar is inspected
+- **Then** navbar displays logo and all navigation links
 
-- GIVEN user loads the page, THEN hero shows headline with highlighted "job" word
-- GIVEN user loads the page, THEN hero shows background image and "Explore Now" CTA
+#### Scenario: Hamburger menu toggles nav visibility
 
-### SearchBar
+- **Given** user on mobile,
+- **When** the Navbar is inspected
+- **Then** hamburger menu toggles nav visibility
 
-- GIVEN user on page, THEN search bar shows 2 dropdowns, text input, and find button
-- GIVEN user submits search, THEN form does not navigate (handled client-side)
+### Feature: Hero
 
-### Features
+#### Scenario: Hero shows headline with highlighted "job" word
 
-- GIVEN user scrolls to features, THEN 3 feature cards are visible with titles and CTAs
+- **Given** user loads the page,
+- **When** the Hero is inspected
+- **Then** hero shows headline with highlighted "job" word
 
-### Categories
+#### Scenario: Hero shows background image and "Explore Now" CTA
 
-- GIVEN user scrolls to categories, THEN 8 category cards display with icons and job counts
+- **Given** user loads the page,
+- **When** the Hero is inspected
+- **Then** hero shows background image and "Explore Now" CTA
 
-### Jobs
+### Feature: SearchBar
 
-- GIVEN user on Recent tab, THEN job listing with title, location, field, deadline, badge, and apply button visible
-- GIVEN user clicks Full Time tab, THEN full-time job listings display
+#### Scenario: Search bar shows 2 dropdowns, text input, and find button
 
-### Newsletter
+- **Given** user on page,
+- **When** the SearchBar is inspected
+- **Then** search bar shows 2 dropdowns, text input, and find button
 
-- GIVEN user subscribes with valid email, THEN confirmation message appears
+#### Scenario: Form does not navigate (handled client-side)
 
-### Testimonials
+- **Given** user submits search,
+- **When** the SearchBar is inspected
+- **Then** form does not navigate (handled client-side)
 
-- GIVEN user scrolls to testimonials, THEN 2 testimonial slides display with quotes and names
+### Feature: Features
 
-### News
+#### Scenario: 3 feature cards are visible with titles and CTAs
 
-- GIVEN user scrolls to news, THEN 3 blog cards display with images, dates, and titles
+- **Given** user scrolls to features,
+- **When** the Features is inspected
+- **Then** 3 feature cards are visible with titles and CTAs
 
-### Download
+### Feature: Categories
 
-- GIVEN user scrolls to download, THEN App Store and Play Store buttons visible
+#### Scenario: 8 category cards display with icons and job counts
 
-### Footer
+- **Given** user scrolls to categories,
+- **When** the Categories is inspected
+- **Then** 8 category cards display with icons and job counts
 
-- GIVEN user scrolls to footer, THEN "More templates at Component Dock" link points to https://www.componentdock.com/
-- GIVEN user looks at footer, THEN no colorlib references exist anywhere in the footer
+### Feature: Jobs
 
+#### Scenario: Job listing with title, location, field, deadline, badge, and apply…
+
+- **Given** user on Recent tab,
+- **When** the Jobs is inspected
+- **Then** job listing with title, location, field, deadline, badge, and apply button visible
+
+#### Scenario: Full-time job listings display
+
+- **Given** user clicks Full Time tab,
+- **When** the Jobs is inspected
+- **Then** full-time job listings display
+
+### Feature: Newsletter
+
+#### Scenario: Confirmation message appears
+
+- **Given** user subscribes with valid email,
+- **When** the Newsletter is inspected
+- **Then** confirmation message appears
+
+### Feature: Testimonials
+
+#### Scenario: 2 testimonial slides display with quotes and names
+
+- **Given** user scrolls to testimonials,
+- **When** the Testimonials is inspected
+- **Then** 2 testimonial slides display with quotes and names
+
+### Feature: News
+
+#### Scenario: 3 blog cards display with images, dates, and titles
+
+- **Given** user scrolls to news,
+- **When** the News is inspected
+- **Then** 3 blog cards display with images, dates, and titles
+
+### Feature: Download
+
+#### Scenario: App Store and Play Store buttons visible
+
+- **Given** user scrolls to download,
+- **When** the Download is inspected
+- **Then** App Store and Play Store buttons visible
+
+### Feature: Footer
+
+#### Scenario: "More templates at Component Dock" link points to…
+
+- **Given** user scrolls to footer,
+- **When** the Footer is inspected
+- **Then** "More templates at Component Dock" link points to https://www.componentdock.com/
+
+#### Scenario: No colorlib references exist anywhere in the footer
+
+- **Given** user looks at footer,
+- **When** the Footer is inspected
+- **Then** no colorlib references exist anywhere in the footer
 ## Coverage
 
 100% lines, functions, branches, statements enforced via vitest.config.ts thresholds.

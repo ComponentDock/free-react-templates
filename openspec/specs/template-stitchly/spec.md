@@ -29,13 +29,54 @@ Stitchly is a tailor & sewing services template with a navbar, hero, offers, abo
 9. **CTA Banner** — "Book Your Appointment" section with schedule button
 10. **Footer** — 4-column: logo+social, Quick Links, Services, Opening Hours+Contact; Component Dock link
 
-## Scenarios
+## Requirements
 
-- Navbar renders all nav links and Visit Us button
-- Hero section displays heading and CTA
-- Offers section shows 3 service cards
-- About section displays split layout with CTA
-- Services section shows 4 service categories
-- Testimonial section displays quote and author
-- Footer links to Component Dock
-- Mobile menu toggles open/close
+### Feature: Stitchly
+
+#### Scenario: Navbar renders all nav links and Visit Us button
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Navbar renders all nav links and Visit Us button
+
+#### Scenario: Hero section displays heading and CTA
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Hero section displays heading and CTA
+
+#### Scenario: Offers section shows 3 service cards
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Offers section shows 3 service cards
+
+#### Scenario: About section displays split layout with CTA
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** About section displays split layout with CTA
+
+#### Scenario: Services section shows 4 service categories
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Services section shows 4 service categories
+
+#### Scenario: Testimonial section displays quote and author
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Testimonial section displays quote and author
+
+#### Scenario: Footer links to Component Dock
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Footer links to Component Dock
+
+#### Scenario: Mobile menu toggles open/close
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** mobile menu toggles open/close

@@ -96,46 +96,144 @@ Hostpeak is a web hosting landing template. It recreates the ColorLib **Lorahost
 - 4 columns: About Us, Contact Info, Important Links, Newsletter
 - Bottom bar: copyright + "More templates at Component Dock" + social icons
 
-## Scenarios
+## Requirements
 
-### G1: Page renders all sections
+### Feature: Page renders all sections
 
-- Given the user visits Hostpeak
-- When the page loads
-- Then Navbar, Hero, DomainSearch, BrandLogos, Features, Pricing, Services, Newsletter, DedicatedServer, Testimonials, and Footer are visible
+#### Scenario: Given the user visits Hostpeak
 
-### G2: Navbar navigation
+- **Given** the page is rendered
+- **When** the Page renders all sections is inspected
+- **Then** given the user visits Hostpeak
 
-- Given the page is loaded
-- When the user views the Navbar
-- Then Home, Features, Services, Pricing, Contact links and Login button are visible
+#### Scenario: When the page loads
 
-### G3: Domain search interaction
+- **Given** the page is rendered
+- **When** the Page renders all sections is inspected
+- **Then** when the page loads
 
-- Given the DomainSearch section is visible
-- When the user types a domain name and clicks Search
-- Then the form submits without error
+#### Scenario: Then Navbar, Hero, DomainSearch, BrandLogos, Features, Pricing,…
 
-### G4: Pricing cards
+- **Given** the page is rendered
+- **When** the Page renders all sections is inspected
+- **Then** then Navbar, Hero, DomainSearch, BrandLogos, Features, Pricing, Services, Newsletter, DedicatedServer, Testimonials, and Footer are visible
 
-- Given the Pricing section is visible
-- When the user views the cards
-- Then Normal ($45.80), Premium ($65.80), and Ultimate ($75.80) are displayed with feature lists
+### Feature: Navbar navigation
 
-### G5: Newsletter subscription
+#### Scenario: Given the page is loaded
 
-- Given the Newsletter section is visible
-- When the user enters an email and clicks Subscribe
-- Then the form submits without error
+- **Given** the page is rendered
+- **When** the Navbar navigation is inspected
+- **Then** given the page is loaded
 
-### G6: Footer links
+#### Scenario: When the user views the Navbar
 
-- Given the Footer is visible
-- When the user views it
-- Then "Component Dock" link to https://www.componentdock.com/ is present
+- **Given** the page is rendered
+- **When** the Navbar navigation is inspected
+- **Then** when the user views the Navbar
 
-### G7: Responsive layout
+#### Scenario: Then Home, Features, Services, Pricing, Contact links and Login button…
 
-- Given the viewport is mobile-sized
-- When the page renders
-- Then the layout adapts (single column grids, collapsible nav)
+- **Given** the page is rendered
+- **When** the Navbar navigation is inspected
+- **Then** then Home, Features, Services, Pricing, Contact links and Login button are visible
+
+### Feature: Domain search interaction
+
+#### Scenario: Given the DomainSearch section is visible
+
+- **Given** the page is rendered
+- **When** the Domain search interaction is inspected
+- **Then** given the DomainSearch section is visible
+
+#### Scenario: When the user types a domain name and clicks Search
+
+- **Given** the page is rendered
+- **When** the Domain search interaction is inspected
+- **Then** when the user types a domain name and clicks Search
+
+#### Scenario: Then the form submits without error
+
+- **Given** the page is rendered
+- **When** the Domain search interaction is inspected
+- **Then** then the form submits without error
+
+### Feature: Pricing cards
+
+#### Scenario: Given the Pricing section is visible
+
+- **Given** the page is rendered
+- **When** the Pricing cards is inspected
+- **Then** given the Pricing section is visible
+
+#### Scenario: When the user views the cards
+
+- **Given** the page is rendered
+- **When** the Pricing cards is inspected
+- **Then** when the user views the cards
+
+#### Scenario: Then Normal ($45.80), Premium ($65.80), and Ultimate ($75.80) are…
+
+- **Given** the page is rendered
+- **When** the Pricing cards is inspected
+- **Then** then Normal ($45.80), Premium ($65.80), and Ultimate ($75.80) are displayed with feature lists
+
+### Feature: Newsletter subscription
+
+#### Scenario: Given the Newsletter section is visible
+
+- **Given** the page is rendered
+- **When** the Newsletter subscription is inspected
+- **Then** given the Newsletter section is visible
+
+#### Scenario: When the user enters an email and clicks Subscribe
+
+- **Given** the page is rendered
+- **When** the Newsletter subscription is inspected
+- **Then** when the user enters an email and clicks Subscribe
+
+#### Scenario: Then the form submits without error
+
+- **Given** the page is rendered
+- **When** the Newsletter subscription is inspected
+- **Then** then the form submits without error
+
+### Feature: Footer links
+
+#### Scenario: Given the Footer is visible
+
+- **Given** the page is rendered
+- **When** the Footer links is inspected
+- **Then** given the Footer is visible
+
+#### Scenario: When the user views it
+
+- **Given** the page is rendered
+- **When** the Footer links is inspected
+- **Then** when the user views it
+
+#### Scenario: Then "Component Dock" link to https://www.componentdock.com/ is present
+
+- **Given** the page is rendered
+- **When** the Footer links is inspected
+- **Then** then "Component Dock" link to https://www.componentdock.com/ is present
+
+### Feature: Responsive layout
+
+#### Scenario: Given the viewport is mobile-sized
+
+- **Given** the page is rendered
+- **When** the Responsive layout is inspected
+- **Then** given the viewport is mobile-sized
+
+#### Scenario: When the page renders
+
+- **Given** the page is rendered
+- **When** the Responsive layout is inspected
+- **Then** when the page renders
+
+#### Scenario: Then the layout adapts (single column grids, collapsible nav)
+
+- **Given** the page is rendered
+- **When** the Responsive layout is inspected
+- **Then** then the layout adapts (single column grids, collapsible nav)

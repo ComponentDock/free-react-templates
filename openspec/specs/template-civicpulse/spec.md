@@ -37,60 +37,180 @@ Civicpulse is a political/party landing template with a top bar, navbar, hero, c
 11. **Blog** — centered heading "Latest From Our Blog", 4 blog cards (image, date, title, excerpt, likes/comments)
 12. **Footer** — dark bg (#04091e), 3 columns: Top Products links, Newsletter with email input + subscribe, Instagram feed grid; bottom: copyright + social icons
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- Renders all nav links (Home, About, Service, Team, Blog, Elements, Contact)
-- Logo is visible and links to home
-- Top bar shows phone and email
+#### Scenario: Renders all nav links (Home, About, Service, Team, Blog, Elements,…
 
-### Hero
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** it renders all nav links (Home, About, Service, Team, Blog, Elements, Contact)
 
-- Displays heading "Support Our Party"
-- Displays CTA button "Get Started"
-- Background image with dark overlay
+#### Scenario: Logo is visible and links to home
 
-### Countdown
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** Logo is visible and links to home
 
-- Shows "Election is knocking at door" heading
-- Displays countdown timer values
+#### Scenario: Top bar shows phone and email
 
-### Services
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** Top bar shows phone and email
 
-- Renders 3 service cards with images, titles, descriptions
-- Cards are responsive (stack on mobile)
+### Feature: Hero
 
-### About
+#### Scenario: Displays heading "Support Our Party"
 
-- Shows "Who we are to Serve the nation" heading
-- Displays 2 feature items with icons
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it displays heading "Support Our Party"
 
-### Gallery
+#### Scenario: Displays CTA button "Get Started"
 
-- Renders 4 gallery images in grid layout
-- Images have hover opacity effect
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it displays CTA button "Get Started"
 
-### Counter
+#### Scenario: Background image with dark overlay
 
-- Shows 4 stat counters with values and labels
-- Circular design with blue accent
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** Background image with dark overlay
 
-### Feedback
+### Feature: Countdown
 
-- Accordion with 4 items (Success, Info, Danger, Warning)
-- Clicking an item expands its content
-- Only one item open at a time
-- Video play button on right side
+#### Scenario: Shows "Election is knocking at door" heading
 
-### Blog
+- **Given** the page is rendered
+- **When** the Countdown is inspected
+- **Then** it shows "Election is knocking at door" heading
 
-- Renders 4 blog cards with image, date, title, excerpt
-- Shows likes and comments count
+#### Scenario: Displays countdown timer values
 
-### Footer
+- **Given** the page is rendered
+- **When** the Countdown is inspected
+- **Then** it displays countdown timer values
 
-- Links to Component Dock (https://www.componentdock.com/)
-- Newsletter email input
-- Social media icons
-- Copyright text
+### Feature: Services
+
+#### Scenario: Renders 3 service cards with images, titles, descriptions
+
+- **Given** the page is rendered
+- **When** the Services is inspected
+- **Then** it renders 3 service cards with images, titles, descriptions
+
+#### Scenario: Cards are responsive (stack on mobile)
+
+- **Given** the page is rendered
+- **When** the Services is inspected
+- **Then** Cards are responsive (stack on mobile)
+
+### Feature: About
+
+#### Scenario: Shows "Who we are to Serve the nation" heading
+
+- **Given** the page is rendered
+- **When** the About is inspected
+- **Then** it shows "Who we are to Serve the nation" heading
+
+#### Scenario: Displays 2 feature items with icons
+
+- **Given** the page is rendered
+- **When** the About is inspected
+- **Then** it displays 2 feature items with icons
+
+### Feature: Gallery
+
+#### Scenario: Renders 4 gallery images in grid layout
+
+- **Given** the page is rendered
+- **When** the Gallery is inspected
+- **Then** it renders 4 gallery images in grid layout
+
+#### Scenario: Images have hover opacity effect
+
+- **Given** the page is rendered
+- **When** the Gallery is inspected
+- **Then** Images have hover opacity effect
+
+### Feature: Counter
+
+#### Scenario: Shows 4 stat counters with values and labels
+
+- **Given** the page is rendered
+- **When** the Counter is inspected
+- **Then** it shows 4 stat counters with values and labels
+
+#### Scenario: Circular design with blue accent
+
+- **Given** the page is rendered
+- **When** the Counter is inspected
+- **Then** Circular design with blue accent
+
+### Feature: Feedback
+
+#### Scenario: Accordion with 4 items (Success, Info, Danger, Warning)
+
+- **Given** the page is rendered
+- **When** the Feedback is inspected
+- **Then** Accordion with 4 items (Success, Info, Danger, Warning)
+
+#### Scenario: Clicking an item expands its content
+
+- **Given** the page is rendered
+- **When** the Feedback is inspected
+- **Then** clicking an item expands its content
+
+#### Scenario: Only one item open at a time
+
+- **Given** the page is rendered
+- **When** the Feedback is inspected
+- **Then** Only one item open at a time
+
+#### Scenario: Video play button on right side
+
+- **Given** the page is rendered
+- **When** the Feedback is inspected
+- **Then** Video play button on right side
+
+### Feature: Blog
+
+#### Scenario: Renders 4 blog cards with image, date, title, excerpt
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** it renders 4 blog cards with image, date, title, excerpt
+
+#### Scenario: Shows likes and comments count
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** it shows likes and comments count
+
+### Feature: Footer
+
+#### Scenario: Links to Component Dock (https://www.componentdock.com/)
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it links to Component Dock (https://www.componentdock.com/)
+
+#### Scenario: Newsletter email input
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Newsletter email input
+
+#### Scenario: Social media icons
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Social media icons
+
+#### Scenario: Copyright text
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Copyright text

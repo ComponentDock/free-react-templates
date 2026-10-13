@@ -99,52 +99,132 @@ Spotlight is a business directory template. It recreates the ColorLib **Listed2*
 - Newsletter subscription form (email input + Send button)
 - Copyright line with Component Dock link (NOT ColorLib)
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- GIVEN the page loads, THEN the navbar displays with logo and nav links
-- GIVEN the viewport is mobile, THEN the hamburger menu icon is visible
+#### Scenario: The navbar displays with logo and nav links
 
-### Hero
+- **Given** the page loads,
+- **When** the Navbar is inspected
+- **Then** the navbar displays with logo and nav links
 
-- GIVEN the page loads, THEN the hero shows the search form with all fields
-- GIVEN the user types in the search input, THEN the input value updates
+#### Scenario: The hamburger menu icon is visible
 
-### Most Visited Places
+- **Given** the viewport is mobile,
+- **When** the Navbar is inspected
+- **Then** the hamburger menu icon is visible
 
-- GIVEN the page loads, THEN 3 listing cards are displayed
-- GIVEN a listing card, THEN it shows an image, category, title, and address
+### Feature: Hero
 
-### Popular Categories
+#### Scenario: The hero shows the search form with all fields
 
-- GIVEN the page loads, THEN 6 category cards are displayed
-- GIVEN a category card, THEN it shows an icon, name, and count
+- **Given** the page loads,
+- **When** the Hero is inspected
+- **Then** the hero shows the search form with all fields
 
-### Why Us
+#### Scenario: The input value updates
 
-- GIVEN the page loads, THEN the why-us section shows an image and text with checklist
+- **Given** the user types in the search input,
+- **When** the Hero is inspected
+- **Then** the input value updates
 
-### Testimonials
+### Feature: Most Visited Places
 
-- GIVEN the page loads, THEN testimonials are displayed
-- GIVEN the user navigates testimonials, THEN the next testimonial shows
+#### Scenario: 3 listing cards are displayed
 
-### Blog
+- **Given** the page loads,
+- **When** the Most Visited Places is inspected
+- **Then** 3 listing cards are displayed
 
-- GIVEN the page loads, THEN 2 blog cards are displayed
+#### Scenario: It shows an image, category, title, and address
 
-### FAQ
+- **Given** a listing card,
+- **When** the Most Visited Places is inspected
+- **Then** it shows an image, category, title, and address
 
-- GIVEN the page loads, THEN 4 FAQ items are shown in collapsed state
-- GIVEN the user clicks an FAQ item, THEN the answer expands
-- GIVEN an FAQ item is expanded, THEN clicking it again collapses it
+### Feature: Popular Categories
 
-### CTA
+#### Scenario: 6 category cards are displayed
 
-- GIVEN the page loads, THEN the CTA banner shows with signup button
+- **Given** the page loads,
+- **When** the Popular Categories is inspected
+- **Then** 6 category cards are displayed
 
-### Footer
+#### Scenario: It shows an icon, name, and count
 
-- GIVEN the page loads, THEN the footer shows 4 columns and copyright
-- GIVEN the footer, THEN it links to componentdock.com
+- **Given** a category card,
+- **When** the Popular Categories is inspected
+- **Then** it shows an icon, name, and count
+
+### Feature: Why Us
+
+#### Scenario: The why-us section shows an image and text with checklist
+
+- **Given** the page loads,
+- **When** the Why Us is inspected
+- **Then** the why-us section shows an image and text with checklist
+
+### Feature: Testimonials
+
+#### Scenario: Testimonials are displayed
+
+- **Given** the page loads,
+- **When** the Testimonials is inspected
+- **Then** testimonials are displayed
+
+#### Scenario: The next testimonial shows
+
+- **Given** the user navigates testimonials,
+- **When** the Testimonials is inspected
+- **Then** the next testimonial shows
+
+### Feature: Blog
+
+#### Scenario: 2 blog cards are displayed
+
+- **Given** the page loads,
+- **When** the Blog is inspected
+- **Then** 2 blog cards are displayed
+
+### Feature: FAQ
+
+#### Scenario: 4 FAQ items are shown in collapsed state
+
+- **Given** the page loads,
+- **When** the FAQ is inspected
+- **Then** 4 FAQ items are shown in collapsed state
+
+#### Scenario: The answer expands
+
+- **Given** the user clicks an FAQ item,
+- **When** the FAQ is inspected
+- **Then** the answer expands
+
+#### Scenario: Clicking it again collapses it
+
+- **Given** an FAQ item is expanded,
+- **When** the FAQ is inspected
+- **Then** clicking it again collapses it
+
+### Feature: CTA
+
+#### Scenario: The CTA banner shows with signup button
+
+- **Given** the page loads,
+- **When** the CTA is inspected
+- **Then** the CTA banner shows with signup button
+
+### Feature: Footer
+
+#### Scenario: The footer shows 4 columns and copyright
+
+- **Given** the page loads,
+- **When** the Footer is inspected
+- **Then** the footer shows 4 columns and copyright
+
+#### Scenario: It links to componentdock.com
+
+- **Given** the footer,
+- **When** the Footer is inspected
+- **Then** it links to componentdock.com

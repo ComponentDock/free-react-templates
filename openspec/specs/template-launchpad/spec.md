@@ -37,10 +37,36 @@ Launchpad is a business landing page with a navbar, hero banner, services, about
 10. **Blog** — 2-column grid of blog post cards with image, tags, title, excerpt, date
 11. **Footer** — 3-column: Top Products links, Newsletter form, Latest Updates images; bottom bar with Component Dock link + social icons
 
-## Scenarios
+## Requirements
 
-- GHERKIN: App renders with correct title
-- GHERKIN: All sections are present in the main landmark
-- GHERKIN: Navbar toggles mobile menu
-- GHERKIN: Footer links to Component Dock
-- GHERKIN: Pricing shows three plans with correct names and prices
+### Feature: Launchpad
+
+#### Scenario: GHERKIN: App renders with correct title
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: App renders with correct title
+
+#### Scenario: GHERKIN: All sections are present in the main landmark
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: All sections are present in the main landmark
+
+#### Scenario: GHERKIN: Navbar toggles mobile menu
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Navbar toggles mobile menu
+
+#### Scenario: GHERKIN: Footer links to Component Dock
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Footer links to Component Dock
+
+#### Scenario: GHERKIN: Pricing shows three plans with correct names and prices
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Pricing shows three plans with correct names and prices

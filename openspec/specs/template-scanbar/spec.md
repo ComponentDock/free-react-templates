@@ -28,31 +28,49 @@ Scanbar is a quick city search form with a hero section, search bar and footer. 
    - Copyright line
    - "More templates at Component Dock" link
 
-## Scenarios
+## Requirements
 
-Given the page loads
-When the hero section renders
-Then the heading "Quick Find Your City" is visible
+### Feature: Scanbar city search form
 
-Given the search form renders
-When I look at the WHAT field
-Then a text input with placeholder "ex: food, service, bar, hotel" is present
+#### Scenario: The heading "Quick Find Your City" is visible
 
-Given the search form renders
-When I look at the WHERE field
-Then a select with guest count options is present
+- **Given** the page loads
+- **When** the hero section renders
+- **Then** the heading "Quick Find Your City" is visible
 
-Given I type into the WHAT field
-Then the input value updates
+#### Scenario: A text input with placeholder "ex: food, service, bar, hotel" is present
 
-Given I select a WHERE option
-Then the select value changes
+- **Given** the search form renders
+- **When** I look at the WHAT field
+- **Then** a text input with placeholder "ex: food, service, bar, hotel" is present
 
-Given I click the SEARCH button
-Then the form submits without page navigation
+#### Scenario: A select with guest count options is present
 
-Given the page loads
-Then the document title is "Scanbar — Quick City Search Form"
+- **Given** the search form renders
+- **When** I look at the WHERE field
+- **Then** a select with guest count options is present
 
-Given the footer renders
-Then a link to https://www.componentdock.com/ is present with text "Component Dock"
+#### Scenario: The input value updates
+
+- **Given** I type into the WHAT field
+- **Then** the input value updates
+
+#### Scenario: The select value changes
+
+- **Given** I select a WHERE option
+- **Then** the select value changes
+
+#### Scenario: The form submits without page navigation
+
+- **Given** I click the SEARCH button
+- **Then** the form submits without page navigation
+
+#### Scenario: The document title is "Scanbar — Quick City Search Form"
+
+- **Given** the page loads
+- **Then** the document title is "Scanbar — Quick City Search Form"
+
+#### Scenario: A link to https://www.componentdock.com/ is present with text…
+
+- **Given** the footer renders
+- **Then** a link to https://www.componentdock.com/ is present with text "Component Dock"

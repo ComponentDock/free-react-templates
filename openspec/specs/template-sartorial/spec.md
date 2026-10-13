@@ -34,12 +34,48 @@ Sartorial is a men's tailor shop template with a navbar, hero, clients, services
 7. **VisitUs** — "Visit Our Tailor" with address, hours, map area
 8. **Footer** — Dark footer with about, links, newsletter, social, copyright
 
-## Scenarios
+## Requirements
 
-- Renders navbar with logo and navigation links
-- Hero section displays headline and CTA button
-- Services section shows 3 offering cards
-- History section shows stats
-- Testimonials section shows client quotes
-- Footer links to Component Dock
-- All sections render without errors
+### Feature: Sartorial
+
+#### Scenario: Renders navbar with logo and navigation links
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** it renders navbar with logo and navigation links
+
+#### Scenario: Hero section displays headline and CTA button
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Hero section displays headline and CTA button
+
+#### Scenario: Services section shows 3 offering cards
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Services section shows 3 offering cards
+
+#### Scenario: History section shows stats
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** History section shows stats
+
+#### Scenario: Testimonials section shows client quotes
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Testimonials section shows client quotes
+
+#### Scenario: Footer links to Component Dock
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Footer links to Component Dock
+
+#### Scenario: All sections render without errors
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** all sections render without errors

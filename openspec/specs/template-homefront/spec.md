@@ -29,13 +29,54 @@ Homefront is a directory and listings landing page with a navbar, hero, search, 
 8. **CTA** — Parallax newsletter signup with email input
 9. **Footer** — Logo, description, nav links (Buy, Sell), contact info, copyright with Component Dock link
 
-## Scenarios
+## Requirements
 
-- GHERKIN: Navbar renders with all links
-- GHERKIN: Hero shows property cards with prices
-- GHERKIN: Search form has all filter fields
-- GHERKIN: Services section displays 4 features
-- GHERKIN: Properties section shows property cards
-- GHERKIN: Testimonials section renders quotes
-- GHERKIN: Stats section shows counters
-- GHERKIN: Footer links to componentdock.com
+### Feature: Spec
+
+#### Scenario: GHERKIN: Navbar renders with all links
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Navbar renders with all links
+
+#### Scenario: GHERKIN: Hero shows property cards with prices
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Hero shows property cards with prices
+
+#### Scenario: GHERKIN: Search form has all filter fields
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Search form has all filter fields
+
+#### Scenario: GHERKIN: Services section displays 4 features
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Services section displays 4 features
+
+#### Scenario: GHERKIN: Properties section shows property cards
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Properties section shows property cards
+
+#### Scenario: GHERKIN: Testimonials section renders quotes
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Testimonials section renders quotes
+
+#### Scenario: GHERKIN: Stats section shows counters
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Stats section shows counters
+
+#### Scenario: GHERKIN: Footer links to componentdock.com
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GHERKIN: Footer links to componentdock.com

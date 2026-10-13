@@ -26,43 +26,142 @@ A minimal search form bar template featuring a top navbar with brand text and an
 3. **ContentArea** — centered instruction text ("Please click the search icon to toggle the search bar.")
 4. **Footer** — Component Dock link
 
-## Scenarios
+## Requirements
 
-### Navbar renders
+### Feature: Navbar renders
 
-- GIVEN the app loads
-- THEN a navigation bar is visible at the top
-- AND "FindBox" brand text appears on the left
-- AND a search input with placeholder "Enter keyword and hit enter..." appears on the right
+#### Scenario: GIVEN the app loads
 
-### Search form interaction
+- **Given** the page is rendered
+- **When** the Navbar renders is inspected
+- **Then** GIVEN the app loads
 
-- GIVEN the search input is visible
-- WHEN the user types in the search input
-- THEN the input value updates
-- AND the input can be cleared
+#### Scenario: THEN a navigation bar is visible at the top
 
-### Search icon button
+- **Given** the page is rendered
+- **When** the Navbar renders is inspected
+- **Then** THEN a navigation bar is visible at the top
 
-- GIVEN the navbar renders
-- THEN a search icon button is visible next to the input
-- AND the button is accessible (aria-label)
+#### Scenario: AND "FindBox" brand text appears on the left
 
-### Content area
+- **Given** the page is rendered
+- **When** the Navbar renders is inspected
+- **Then** AND "FindBox" brand text appears on the left
 
-- GIVEN the app loads
-- THEN a content area appears below the navbar
-- AND instruction text is centered
+#### Scenario: AND a search input with placeholder "Enter keyword and hit enter..."…
 
-### Footer
+- **Given** the page is rendered
+- **When** the Navbar renders is inspected
+- **Then** AND a search input with placeholder "Enter keyword and hit enter..." appears on the right
 
-- GIVEN the app loads
-- THEN a footer link to componentdock.com is visible
-- AND the link text contains "Component Dock"
+### Feature: Search form interaction
 
-### Accessibility
+#### Scenario: GIVEN the search input is visible
 
-- GIVEN the app loads
-- THEN all interactive elements have proper labels
-- AND the search input has an aria-label
-- AND the search button has an aria-label
+- **Given** the page is rendered
+- **When** the Search form interaction is inspected
+- **Then** GIVEN the search input is visible
+
+#### Scenario: WHEN the user types in the search input
+
+- **Given** the page is rendered
+- **When** the Search form interaction is inspected
+- **Then** WHEN the user types in the search input
+
+#### Scenario: THEN the input value updates
+
+- **Given** the page is rendered
+- **When** the Search form interaction is inspected
+- **Then** THEN the input value updates
+
+#### Scenario: AND the input can be cleared
+
+- **Given** the page is rendered
+- **When** the Search form interaction is inspected
+- **Then** AND the input can be cleared
+
+### Feature: Search icon button
+
+#### Scenario: GIVEN the navbar renders
+
+- **Given** the page is rendered
+- **When** the Search icon button is inspected
+- **Then** GIVEN the navbar renders
+
+#### Scenario: THEN a search icon button is visible next to the input
+
+- **Given** the page is rendered
+- **When** the Search icon button is inspected
+- **Then** THEN a search icon button is visible next to the input
+
+#### Scenario: AND the button is accessible (aria-label)
+
+- **Given** the page is rendered
+- **When** the Search icon button is inspected
+- **Then** AND the button is accessible (aria-label)
+
+### Feature: Content area
+
+#### Scenario: GIVEN the app loads
+
+- **Given** the page is rendered
+- **When** the Content area is inspected
+- **Then** GIVEN the app loads
+
+#### Scenario: THEN a content area appears below the navbar
+
+- **Given** the page is rendered
+- **When** the Content area is inspected
+- **Then** THEN a content area appears below the navbar
+
+#### Scenario: AND instruction text is centered
+
+- **Given** the page is rendered
+- **When** the Content area is inspected
+- **Then** AND instruction text is centered
+
+### Feature: Footer
+
+#### Scenario: GIVEN the app loads
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** GIVEN the app loads
+
+#### Scenario: THEN a footer link to componentdock.com is visible
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** THEN a footer link to componentdock.com is visible
+
+#### Scenario: AND the link text contains "Component Dock"
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** AND the link text contains "Component Dock"
+
+### Feature: Accessibility
+
+#### Scenario: GIVEN the app loads
+
+- **Given** the page is rendered
+- **When** the Accessibility is inspected
+- **Then** GIVEN the app loads
+
+#### Scenario: THEN all interactive elements have proper labels
+
+- **Given** the page is rendered
+- **When** the Accessibility is inspected
+- **Then** THEN all interactive elements have proper labels
+
+#### Scenario: AND the search input has an aria-label
+
+- **Given** the page is rendered
+- **When** the Accessibility is inspected
+- **Then** AND the search input has an aria-label
+
+#### Scenario: AND the search button has an aria-label
+
+- **Given** the page is rendered
+- **When** the Accessibility is inspected
+- **Then** AND the search button has an aria-label

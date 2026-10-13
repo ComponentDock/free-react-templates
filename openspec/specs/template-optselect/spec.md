@@ -35,59 +35,206 @@ Minimalist design with a green accent palette on a light background.
 4. **Selected count** — shows below the dropdown when items are selected
 5. **Footer** — "Made with Component Dock" link
 
-## Scenarios
+## Requirements
 
-### Rendering
+### Feature: Rendering
 
-- Given the page loads
-- Then the heading "Select Options" is visible
-- And a dropdown trigger button is visible
-- And the trigger shows "Select options" placeholder
+#### Scenario: Given the page loads
 
-### Opening the dropdown
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** given the page loads
 
-- Given the dropdown is closed
-- When the user clicks the trigger
-- Then the dropdown panel opens
-- And the trigger shows aria-expanded=true
+#### Scenario: Then the heading "Select Options" is visible
 
-### Selecting an option
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** then the heading "Select Options" is visible
 
-- Given the dropdown is open
-- When the user clicks an option
-- Then the checkbox is checked
-- And the selected count updates
+#### Scenario: And a dropdown trigger button is visible
 
-### Select All
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** And a dropdown trigger button is visible
 
-- Given the dropdown is open and no items are selected
-- When the user clicks "Select All"
-- Then all items are selected
+#### Scenario: And the trigger shows "Select options" placeholder
 
-### Clear All
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** And the trigger shows "Select options" placeholder
 
-- Given all items are selected
-- When the user clicks "Clear All"
-- Then all items are deselected
+### Feature: Opening the dropdown
 
-### Keyboard navigation
+#### Scenario: Given the dropdown is closed
 
-- Given the dropdown is open
-- When the user presses ArrowDown
-- Then focus moves to the next option
-- When the user presses Enter
-- Then the focused option is toggled
+- **Given** the page is rendered
+- **When** the Opening the dropdown is inspected
+- **Then** given the dropdown is closed
 
-### Closing
+#### Scenario: When the user clicks the trigger
 
-- Given the dropdown is open
-- When the user clicks outside
-- Then the dropdown closes
-- When the user presses Escape
-- Then the dropdown closes
+- **Given** the page is rendered
+- **When** the Opening the dropdown is inspected
+- **Then** when the user clicks the trigger
 
-### Footer
+#### Scenario: Then the dropdown panel opens
 
-- Given the page loads
-- Then the footer shows "Made with Component Dock"
-- And the footer links to https://www.componentdock.com/
+- **Given** the page is rendered
+- **When** the Opening the dropdown is inspected
+- **Then** then the dropdown panel opens
+
+#### Scenario: And the trigger shows aria-expanded=true
+
+- **Given** the page is rendered
+- **When** the Opening the dropdown is inspected
+- **Then** And the trigger shows aria-expanded=true
+
+### Feature: Selecting an option
+
+#### Scenario: Given the dropdown is open
+
+- **Given** the page is rendered
+- **When** the Selecting an option is inspected
+- **Then** given the dropdown is open
+
+#### Scenario: When the user clicks an option
+
+- **Given** the page is rendered
+- **When** the Selecting an option is inspected
+- **Then** when the user clicks an option
+
+#### Scenario: Then the checkbox is checked
+
+- **Given** the page is rendered
+- **When** the Selecting an option is inspected
+- **Then** then the checkbox is checked
+
+#### Scenario: And the selected count updates
+
+- **Given** the page is rendered
+- **When** the Selecting an option is inspected
+- **Then** And the selected count updates
+
+### Feature: Select All
+
+#### Scenario: Given the dropdown is open and no items are selected
+
+- **Given** the page is rendered
+- **When** the Select All is inspected
+- **Then** given the dropdown is open and no items are selected
+
+#### Scenario: When the user clicks "Select All"
+
+- **Given** the page is rendered
+- **When** the Select All is inspected
+- **Then** when the user clicks "Select All"
+
+#### Scenario: Then all items are selected
+
+- **Given** the page is rendered
+- **When** the Select All is inspected
+- **Then** then all items are selected
+
+### Feature: Clear All
+
+#### Scenario: Given all items are selected
+
+- **Given** the page is rendered
+- **When** the Clear All is inspected
+- **Then** given all items are selected
+
+#### Scenario: When the user clicks "Clear All"
+
+- **Given** the page is rendered
+- **When** the Clear All is inspected
+- **Then** when the user clicks "Clear All"
+
+#### Scenario: Then all items are deselected
+
+- **Given** the page is rendered
+- **When** the Clear All is inspected
+- **Then** then all items are deselected
+
+### Feature: Keyboard navigation
+
+#### Scenario: Given the dropdown is open
+
+- **Given** the page is rendered
+- **When** the Keyboard navigation is inspected
+- **Then** given the dropdown is open
+
+#### Scenario: When the user presses ArrowDown
+
+- **Given** the page is rendered
+- **When** the Keyboard navigation is inspected
+- **Then** when the user presses ArrowDown
+
+#### Scenario: Then focus moves to the next option
+
+- **Given** the page is rendered
+- **When** the Keyboard navigation is inspected
+- **Then** then focus moves to the next option
+
+#### Scenario: When the user presses Enter
+
+- **Given** the page is rendered
+- **When** the Keyboard navigation is inspected
+- **Then** when the user presses Enter
+
+#### Scenario: Then the focused option is toggled
+
+- **Given** the page is rendered
+- **When** the Keyboard navigation is inspected
+- **Then** then the focused option is toggled
+
+### Feature: Closing
+
+#### Scenario: Given the dropdown is open
+
+- **Given** the page is rendered
+- **When** the Closing is inspected
+- **Then** given the dropdown is open
+
+#### Scenario: When the user clicks outside
+
+- **Given** the page is rendered
+- **When** the Closing is inspected
+- **Then** when the user clicks outside
+
+#### Scenario: Then the dropdown closes
+
+- **Given** the page is rendered
+- **When** the Closing is inspected
+- **Then** then the dropdown closes
+
+#### Scenario: When the user presses Escape
+
+- **Given** the page is rendered
+- **When** the Closing is inspected
+- **Then** when the user presses Escape
+
+#### Scenario: Then the dropdown closes
+
+- **Given** the page is rendered
+- **When** the Closing is inspected
+- **Then** then the dropdown closes
+
+### Feature: Footer
+
+#### Scenario: Given the page loads
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** given the page loads
+
+#### Scenario: Then the footer shows "Made with Component Dock"
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** then the footer shows "Made with Component Dock"
+
+#### Scenario: And the footer links to https://www.componentdock.com/
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** And the footer links to https://www.componentdock.com/

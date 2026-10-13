@@ -41,81 +41,242 @@ members, blog posts, contact form, CTA banner, and a dark footer.
 13. **CTA** — teal banner "Let's Get Started"
 14. **Footer** — About, Features links, Follow Us social, Newsletter form, copyright with Component Dock link
 
-## Scenarios
+## Requirements
 
-### TopBar
+### Feature: TopBar
 
-- Renders phone number and email address
-- Renders social media icon links (Facebook, Twitter, Instagram, LinkedIn)
+#### Scenario: Renders phone number and email address
 
-### Navbar
+- **Given** the page is rendered
+- **When** the TopBar is inspected
+- **Then** it renders phone number and email address
 
-- Shows "Makely." logo with teal dot
-- Shows navigation links: Home, Work, Services, About, Blog, Contact
-- Mobile menu toggle button exists
+#### Scenario: Renders social media icon links (Facebook, Twitter, Instagram, LinkedIn)
 
-### Hero
+- **Given** the page is rendered
+- **When** the TopBar is inspected
+- **Then** it renders social media icon links (Facebook, Twitter, Instagram, LinkedIn)
 
-- Displays "We Love To Build" heading
-- Displays typed words animation placeholder
-- "Watch Video" CTA button visible
+### Feature: Navbar
 
-### Features
+#### Scenario: Shows "Makely." logo with teal dot
 
-- Shows 3 feature cards with numbers 01, 02, 03
-- Each card has a heading, description, and checklist items
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** it shows "Makely." logo with teal dot
 
-### Gallery
+#### Scenario: Shows navigation links: Home, Work, Services, About, Blog, Contact
 
-- Shows 6 portfolio items in a grid
-- Each item has an image and overlay title/category
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** it shows navigation links: Home, Work, Services, About, Blog, Contact
 
-### AboutDark
+#### Scenario: Mobile menu toggle button exists
 
-- Dark background section
-- Shows image on left
-- Shows 4 service items with icons on right
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** mobile menu toggle button exists
 
-### Testimonials
+### Feature: Hero
 
-- Shows "Testimonials" heading
-- Shows testimonial quotes with author names and avatars
+#### Scenario: Displays "We Love To Build" heading
 
-### Services
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it displays "We Love To Build" heading
 
-- Shows "Our Services" heading
-- Shows 6 service cards with icons and descriptions
+#### Scenario: Displays typed words animation placeholder
 
-### About
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it displays typed words animation placeholder
 
-- Shows "About Us" heading
-- Shows image and description text
-- Shows 2 feature items with icons
+#### Scenario: "Watch Video" CTA button visible
 
-### Team
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** "Watch Video" CTA button visible
 
-- Shows "Our Team" heading
-- Shows 3 team member cards with photos, names, roles, descriptions, social links
+### Feature: Features
 
-### Blog
+#### Scenario: Shows 3 feature cards with numbers 01, 02, 03
 
-- Shows "Blog" heading
-- Shows 3 blog post cards with images, titles, dates, excerpts
+- **Given** the page is rendered
+- **When** the Features is inspected
+- **Then** it shows 3 feature cards with numbers 01, 02, 03
 
-### Contact
+#### Scenario: Each card has a heading, description, and checklist items
 
-- Shows "Contact Us" heading
-- Contact form with first name, last name, email, subject, message fields
-- Address/phone/email info card
+- **Given** the page is rendered
+- **When** the Features is inspected
+- **Then** each card has a heading, description, and checklist items
 
-### CTA
+### Feature: Gallery
 
-- Teal banner with "Let's Get Started" heading
+#### Scenario: Shows 6 portfolio items in a grid
 
-### Footer
+- **Given** the page is rendered
+- **When** the Gallery is inspected
+- **Then** it shows 6 portfolio items in a grid
 
-- About Us text
-- Features links
-- Follow Us social icons
-- Newsletter signup form
-- Copyright line with Component Dock link
+#### Scenario: Each item has an image and overlay title/category
+
+- **Given** the page is rendered
+- **When** the Gallery is inspected
+- **Then** each item has an image and overlay title/category
+
+### Feature: AboutDark
+
+#### Scenario: Dark background section
+
+- **Given** the page is rendered
+- **When** the AboutDark is inspected
+- **Then** Dark background section
+
+#### Scenario: Shows image on left
+
+- **Given** the page is rendered
+- **When** the AboutDark is inspected
+- **Then** it shows image on left
+
+#### Scenario: Shows 4 service items with icons on right
+
+- **Given** the page is rendered
+- **When** the AboutDark is inspected
+- **Then** it shows 4 service items with icons on right
+
+### Feature: Testimonials
+
+#### Scenario: Shows "Testimonials" heading
+
+- **Given** the page is rendered
+- **When** the Testimonials is inspected
+- **Then** it shows "Testimonials" heading
+
+#### Scenario: Shows testimonial quotes with author names and avatars
+
+- **Given** the page is rendered
+- **When** the Testimonials is inspected
+- **Then** it shows testimonial quotes with author names and avatars
+
+### Feature: Services
+
+#### Scenario: Shows "Our Services" heading
+
+- **Given** the page is rendered
+- **When** the Services is inspected
+- **Then** it shows "Our Services" heading
+
+#### Scenario: Shows 6 service cards with icons and descriptions
+
+- **Given** the page is rendered
+- **When** the Services is inspected
+- **Then** it shows 6 service cards with icons and descriptions
+
+### Feature: About
+
+#### Scenario: Shows "About Us" heading
+
+- **Given** the page is rendered
+- **When** the About is inspected
+- **Then** it shows "About Us" heading
+
+#### Scenario: Shows image and description text
+
+- **Given** the page is rendered
+- **When** the About is inspected
+- **Then** it shows image and description text
+
+#### Scenario: Shows 2 feature items with icons
+
+- **Given** the page is rendered
+- **When** the About is inspected
+- **Then** it shows 2 feature items with icons
+
+### Feature: Team
+
+#### Scenario: Shows "Our Team" heading
+
+- **Given** the page is rendered
+- **When** the Team is inspected
+- **Then** it shows "Our Team" heading
+
+#### Scenario: Shows 3 team member cards with photos, names, roles, descriptions,…
+
+- **Given** the page is rendered
+- **When** the Team is inspected
+- **Then** it shows 3 team member cards with photos, names, roles, descriptions, social links
+
+### Feature: Blog
+
+#### Scenario: Shows "Blog" heading
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** it shows "Blog" heading
+
+#### Scenario: Shows 3 blog post cards with images, titles, dates, excerpts
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** it shows 3 blog post cards with images, titles, dates, excerpts
+
+### Feature: Contact
+
+#### Scenario: Shows "Contact Us" heading
+
+- **Given** the page is rendered
+- **When** the Contact is inspected
+- **Then** it shows "Contact Us" heading
+
+#### Scenario: Contact form with first name, last name, email, subject, message fields
+
+- **Given** the page is rendered
+- **When** the Contact is inspected
+- **Then** Contact form with first name, last name, email, subject, message fields
+
+#### Scenario: Address/phone/email info card
+
+- **Given** the page is rendered
+- **When** the Contact is inspected
+- **Then** Address/phone/email info card
+
+### Feature: CTA
+
+#### Scenario: Teal banner with "Let's Get Started" heading
+
+- **Given** the page is rendered
+- **When** the CTA is inspected
+- **Then** Teal banner with "Let's Get Started" heading
+
+### Feature: Footer
+
+#### Scenario: About Us text
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** About Us text
+
+#### Scenario: Features links
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Features links
+
+#### Scenario: Follow Us social icons
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Follow Us social icons
+
+#### Scenario: Newsletter signup form
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Newsletter signup form
+
+#### Scenario: Copyright line with Component Dock link
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Copyright line with Component Dock link

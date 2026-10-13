@@ -37,32 +37,108 @@ Ballot is a custom checkbox template with a checkbox showcase and footer. It rec
 | Disabled           | false           | true     |
 | Disabled & checked | true            | true     |
 
-## Scenarios
+## Requirements
 
-### CheckboxShowcase
+### Feature: CheckboxShowcase
 
-- GIVEN the page loads WHEN viewing THEN the heading reads "Checkbox #14"
-- GIVEN the page loads WHEN viewing THEN 4 checkbox inputs are rendered
-- GIVEN the page loads WHEN viewing THEN "First checkbox" is checked by default
-- GIVEN the page loads WHEN viewing THEN "Second checkbox" is unchecked
-- GIVEN the page loads WHEN viewing THEN "Disabled" is unchecked and disabled
-- GIVEN the page loads WHEN viewing THEN "Disabled & checked" is checked and disabled
+#### Scenario: The heading reads "Checkbox #14"
 
-### Checkbox component
+- **Given** the page loads
+- **When** viewing
+- **Then** the heading reads "Checkbox #14"
 
-- GIVEN a checkbox WHEN clicking it THEN it toggles checked state
-- GIVEN a checkbox with defaultChecked THEN it starts checked
-- GIVEN a disabled checkbox WHEN clicking THEN it does not toggle
-- GIVEN a checkbox WHEN hovering THEN the indicator changes color
+#### Scenario: 4 checkbox inputs are rendered
 
-### Footer
+- **Given** the page loads
+- **When** viewing
+- **Then** 4 checkbox inputs are rendered
 
-- GIVEN the page loads WHEN viewing footer THEN "Ballot" name appears
-- GIVEN the page loads WHEN viewing footer THEN Component Dock link points to https://www.componentdock.com/
-- GIVEN the page loads WHEN viewing footer THEN link opens in new tab
+#### Scenario: "First checkbox" is checked by default
 
-### App
+- **Given** the page loads
+- **When** viewing
+- **Then** "First checkbox" is checked by default
 
-- GIVEN the page loads WHEN viewing THEN document title is "Ballot — Custom Checkbox Template"
-- GIVEN the page loads WHEN viewing THEN main landmark wraps the showcase
-- GIVEN the page loads WHEN viewing THEN footer renders with contentinfo role
+#### Scenario: "Second checkbox" is unchecked
+
+- **Given** the page loads
+- **When** viewing
+- **Then** "Second checkbox" is unchecked
+
+#### Scenario: "Disabled" is unchecked and disabled
+
+- **Given** the page loads
+- **When** viewing
+- **Then** "Disabled" is unchecked and disabled
+
+#### Scenario: "Disabled & checked" is checked and disabled
+
+- **Given** the page loads
+- **When** viewing
+- **Then** "Disabled & checked" is checked and disabled
+
+### Feature: Checkbox component
+
+#### Scenario: It toggles checked state
+
+- **Given** a checkbox
+- **When** clicking it
+- **Then** it toggles checked state
+
+#### Scenario: It starts checked
+
+- **Given** a checkbox with defaultChecked
+- **When** the Checkbox component is inspected
+- **Then** it starts checked
+
+#### Scenario: It does not toggle
+
+- **Given** a disabled checkbox
+- **When** clicking
+- **Then** it does not toggle
+
+#### Scenario: The indicator changes color
+
+- **Given** a checkbox
+- **When** hovering
+- **Then** the indicator changes color
+
+### Feature: Footer
+
+#### Scenario: "Ballot" name appears
+
+- **Given** the page loads
+- **When** viewing footer
+- **Then** "Ballot" name appears
+
+#### Scenario: Component Dock link points to https://www.componentdock.com/
+
+- **Given** the page loads
+- **When** viewing footer
+- **Then** Component Dock link points to https://www.componentdock.com/
+
+#### Scenario: Link opens in new tab
+
+- **Given** the page loads
+- **When** viewing footer
+- **Then** link opens in new tab
+
+### Feature: App
+
+#### Scenario: Document title is "Ballot — Custom Checkbox Template"
+
+- **Given** the page loads
+- **When** viewing
+- **Then** document title is "Ballot — Custom Checkbox Template"
+
+#### Scenario: Main landmark wraps the showcase
+
+- **Given** the page loads
+- **When** viewing
+- **Then** main landmark wraps the showcase
+
+#### Scenario: Footer renders with contentinfo role
+
+- **Given** the page loads
+- **When** viewing
+- **Then** footer renders with contentinfo role

@@ -43,29 +43,106 @@ Single section with:
 2. Search form with icon + input + submit button (rectangular)
 3. Footer with Component Dock branding
 
-## Scenarios
+## Requirements
 
-### SearchBar component
+### Feature: SearchBar component
 
-- Renders a search input with placeholder "Type to search..."
-- Displays a magnifying glass icon on the left
-- Has rectangular (rounded-lg) styling
-- Has dark blue background with border
-- Displays a red "Search" submit button on the right
-- Accepts keyboard input
-- Prevents default form submission on Enter
-- Focuses input when icon is clicked
+#### Scenario: Renders a search input with placeholder "Type to search..."
 
-### App
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it renders a search input with placeholder "Type to search..."
 
-- Renders the heading "Findspot"
-- Renders the subtitle "Find what you're looking for"
-- Renders the SearchBar component
-- Uses Poppins font from Google Fonts
-- Has dark navy (#1a1a2e) background
+#### Scenario: Displays a magnifying glass icon on the left
 
-### Footer
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it displays a magnifying glass icon on the left
 
-- Links to https://www.componentdock.com/
-- Shows "Component Dock" branding
-- Shows copyright text
+#### Scenario: Has rectangular (rounded-lg) styling
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it has rectangular (rounded-lg) styling
+
+#### Scenario: Has dark blue background with border
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it has dark blue background with border
+
+#### Scenario: Displays a red "Search" submit button on the right
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it displays a red "Search" submit button on the right
+
+#### Scenario: Accepts keyboard input
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** Accepts keyboard input
+
+#### Scenario: Prevents default form submission on Enter
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** Prevents default form submission on Enter
+
+#### Scenario: Focuses input when icon is clicked
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** Focuses input when icon is clicked
+
+### Feature: App
+
+#### Scenario: Renders the heading "Findspot"
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it renders the heading "Findspot"
+
+#### Scenario: Renders the subtitle "Find what you're looking for"
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it renders the subtitle "Find what you're looking for"
+
+#### Scenario: Renders the SearchBar component
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it renders the SearchBar component
+
+#### Scenario: Uses Poppins font from Google Fonts
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it uses Poppins font from Google Fonts
+
+#### Scenario: Has dark navy (#1a1a2e) background
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it has dark navy (#1a1a2e) background
+
+### Feature: Footer
+
+#### Scenario: Links to https://www.componentdock.com/
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it links to https://www.componentdock.com/
+
+#### Scenario: Shows "Component Dock" branding
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it shows "Component Dock" branding
+
+#### Scenario: Shows copyright text
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it shows copyright text

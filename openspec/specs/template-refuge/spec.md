@@ -37,57 +37,146 @@ Refuge is a business landing page with a navbar, hero, products, about band, spl
 11. **CTA Banner** — Blue background, headline + "Contact Us" button
 12. **Footer** — About text, Quick Menu links, Insurance links, Social icons, Component Dock link
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- renders logo text "REFUGE"
-- renders nav links (Home, Insurance, Services, Blog, About, Contact)
-- renders "Get A Quote" CTA button
-- mobile toggle shows/hides mobile menu
+#### Scenario: Renders logo text "REFUGE"
 
-### Hero
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** renders logo text "REFUGE"
 
-- renders hero section with headline and subtitle
-- navigates between slides
+#### Scenario: Renders nav links (Home, Insurance, Services, Blog, About, Contact)
 
-### Products
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** renders nav links (Home, Insurance, Services, Blog, About, Contact)
 
-- renders section heading "Insurance Coverage"
-- renders 3 insurance cards (Home, Auto, Travel)
-- each card has title, description, and "Learn More" button
+#### Scenario: Renders "Get A Quote" CTA button
 
-### About
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** renders "Get A Quote" CTA button
 
-- renders "We Are Trusted Agency Company" heading
-- renders descriptive paragraphs
+#### Scenario: Mobile toggle shows/hides mobile menu
 
-### Split Features
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** mobile toggle shows/hides mobile menu
 
-- renders two split-image sections with text
+### Feature: Hero
 
-### Features
+#### Scenario: Renders hero section with headline and subtitle
 
-- renders 4 feature cards with icons and titles
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** renders hero section with headline and subtitle
 
-### Impact
+#### Scenario: Navigates between slides
 
-- renders heading and CTA button
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** navigates between slides
 
-### Founders
+### Feature: Products
 
-- renders 2 founder profiles with names and titles
+#### Scenario: Renders section heading "Insurance Coverage"
 
-### Testimonials
+- **Given** the page is rendered
+- **When** the Products is inspected
+- **Then** renders section heading "Insurance Coverage"
 
-- renders testimonial quotes
+#### Scenario: Renders 3 insurance cards (Home, Auto, Travel)
 
-### CTA Banner
+- **Given** the page is rendered
+- **When** the Products is inspected
+- **Then** renders 3 insurance cards (Home, Auto, Travel)
 
-- renders headline and "Contact Us" button
+#### Scenario: Each card has title, description, and "Learn More" button
 
-### Footer
+- **Given** the page is rendered
+- **When** the Products is inspected
+- **Then** each card has title, description, and "Learn More" button
 
-- links to componentdock.com
-- renders Quick Menu and Insurance columns
-- renders social icons
+### Feature: About
+
+#### Scenario: Renders "We Are Trusted Agency Company" heading
+
+- **Given** the page is rendered
+- **When** the About is inspected
+- **Then** renders "We Are Trusted Agency Company" heading
+
+#### Scenario: Renders descriptive paragraphs
+
+- **Given** the page is rendered
+- **When** the About is inspected
+- **Then** renders descriptive paragraphs
+
+### Feature: Split Features
+
+#### Scenario: Renders two split-image sections with text
+
+- **Given** the page is rendered
+- **When** the Split Features is inspected
+- **Then** renders two split-image sections with text
+
+### Feature: Features
+
+#### Scenario: Renders 4 feature cards with icons and titles
+
+- **Given** the page is rendered
+- **When** the Features is inspected
+- **Then** renders 4 feature cards with icons and titles
+
+### Feature: Impact
+
+#### Scenario: Renders heading and CTA button
+
+- **Given** the page is rendered
+- **When** the Impact is inspected
+- **Then** renders heading and CTA button
+
+### Feature: Founders
+
+#### Scenario: Renders 2 founder profiles with names and titles
+
+- **Given** the page is rendered
+- **When** the Founders is inspected
+- **Then** renders 2 founder profiles with names and titles
+
+### Feature: Testimonials
+
+#### Scenario: Renders testimonial quotes
+
+- **Given** the page is rendered
+- **When** the Testimonials is inspected
+- **Then** renders testimonial quotes
+
+### Feature: CTA Banner
+
+#### Scenario: Renders headline and "Contact Us" button
+
+- **Given** the page is rendered
+- **When** the CTA Banner is inspected
+- **Then** renders headline and "Contact Us" button
+
+### Feature: Footer
+
+#### Scenario: Links to componentdock.com
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** links to componentdock.com
+
+#### Scenario: Renders Quick Menu and Insurance columns
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** renders Quick Menu and Insurance columns
+
+#### Scenario: Renders social icons
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** renders social icons

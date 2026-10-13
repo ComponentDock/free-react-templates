@@ -31,54 +31,176 @@ Turnkey is a real estate template with a navbar, hero, properties, city gallery,
 6. **Blog** — "Latest Blog Posts" — 3-column grid of blog cards (image, title, excerpt, date/likes/comments)
 7. **Footer** — 4-column layout (About Us, Newsletter, Instagram Feed, Follow Us) + footer bottom with Component Dock link
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- renders logo and navigation links
-- renders top bar with phone and login links
-- toggles mobile menu on button click
-- closes mobile menu when a link is clicked
+#### Scenario: Renders logo and navigation links
 
-### Hero
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** renders logo and navigation links
 
-- renders the main heading
-- renders search form selects
-- renders search button
-- toggles sell/rent mode on toggle click
+#### Scenario: Renders top bar with phone and login links
 
-### Properties
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** renders top bar with phone and login links
 
-- renders the section heading
-- renders property cards with details
-- renders badges
+#### Scenario: Toggles mobile menu on button click
 
-### CityGallery
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** toggles mobile menu on button click
 
-- renders the section heading
-- renders city images
+#### Scenario: Closes mobile menu when a link is clicked
 
-### Testimonials
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** closes mobile menu when a link is clicked
 
-- renders the section heading
-- renders testimonial authors
-- renders testimonial roles
+### Feature: Hero
 
-### Blog
+#### Scenario: Renders the main heading
 
-- renders the section heading
-- renders blog post titles
-- renders blog metadata
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** renders the main heading
 
-### Footer
+#### Scenario: Renders search form selects
 
-- renders footer sections
-- renders newsletter form
-- renders Component Dock link in footer bottom
-- renders social media links
-- handles newsletter form submission
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** renders search form selects
 
-### App
+#### Scenario: Renders search button
 
-- renders all sections
-- has a skip to main content link
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** renders search button
+
+#### Scenario: Toggles sell/rent mode on toggle click
+
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** toggles sell/rent mode on toggle click
+
+### Feature: Properties
+
+#### Scenario: Renders the section heading
+
+- **Given** the page is rendered
+- **When** the Properties is inspected
+- **Then** renders the section heading
+
+#### Scenario: Renders property cards with details
+
+- **Given** the page is rendered
+- **When** the Properties is inspected
+- **Then** renders property cards with details
+
+#### Scenario: Renders badges
+
+- **Given** the page is rendered
+- **When** the Properties is inspected
+- **Then** renders badges
+
+### Feature: CityGallery
+
+#### Scenario: Renders the section heading
+
+- **Given** the page is rendered
+- **When** the CityGallery is inspected
+- **Then** renders the section heading
+
+#### Scenario: Renders city images
+
+- **Given** the page is rendered
+- **When** the CityGallery is inspected
+- **Then** renders city images
+
+### Feature: Testimonials
+
+#### Scenario: Renders the section heading
+
+- **Given** the page is rendered
+- **When** the Testimonials is inspected
+- **Then** renders the section heading
+
+#### Scenario: Renders testimonial authors
+
+- **Given** the page is rendered
+- **When** the Testimonials is inspected
+- **Then** renders testimonial authors
+
+#### Scenario: Renders testimonial roles
+
+- **Given** the page is rendered
+- **When** the Testimonials is inspected
+- **Then** renders testimonial roles
+
+### Feature: Blog
+
+#### Scenario: Renders the section heading
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** renders the section heading
+
+#### Scenario: Renders blog post titles
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** renders blog post titles
+
+#### Scenario: Renders blog metadata
+
+- **Given** the page is rendered
+- **When** the Blog is inspected
+- **Then** renders blog metadata
+
+### Feature: Footer
+
+#### Scenario: Renders footer sections
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** renders footer sections
+
+#### Scenario: Renders newsletter form
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** renders newsletter form
+
+#### Scenario: Renders Component Dock link in footer bottom
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** renders Component Dock link in footer bottom
+
+#### Scenario: Renders social media links
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** renders social media links
+
+#### Scenario: Handles newsletter form submission
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** handles newsletter form submission
+
+### Feature: App
+
+#### Scenario: Renders all sections
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** renders all sections
+
+#### Scenario: Has a skip to main content link
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** has a skip to main content link

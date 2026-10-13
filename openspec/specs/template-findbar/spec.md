@@ -38,26 +38,88 @@ Single section with:
 2. Search form with icon + input (pill-shaped)
 3. Footer with Component Dock branding
 
-## Scenarios
+## Requirements
 
-### SearchBar component
+### Feature: SearchBar component
 
-- Renders a search input with placeholder "Search..."
-- Displays a magnifying glass icon on the left
-- Has pill-shaped (rounded-full) styling
-- Has white background with shadow
-- Accepts keyboard input
-- Prevents default form submission on Enter
+#### Scenario: Renders a search input with placeholder "Search..."
 
-### App
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it renders a search input with placeholder "Search..."
 
-- Renders the heading "FindBar"
-- Renders the SearchBar component
-- Uses Poppins font from Google Fonts
-- Has light gray (#fafafa) background
+#### Scenario: Displays a magnifying glass icon on the left
 
-### Footer
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it displays a magnifying glass icon on the left
 
-- Links to https://www.componentdock.com/
-- Shows "Component Dock" branding
-- Shows copyright text
+#### Scenario: Has pill-shaped (rounded-full) styling
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it has pill-shaped (rounded-full) styling
+
+#### Scenario: Has white background with shadow
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** it has white background with shadow
+
+#### Scenario: Accepts keyboard input
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** Accepts keyboard input
+
+#### Scenario: Prevents default form submission on Enter
+
+- **Given** the page is rendered
+- **When** the SearchBar component is inspected
+- **Then** Prevents default form submission on Enter
+
+### Feature: App
+
+#### Scenario: Renders the heading "FindBar"
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it renders the heading "FindBar"
+
+#### Scenario: Renders the SearchBar component
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it renders the SearchBar component
+
+#### Scenario: Uses Poppins font from Google Fonts
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it uses Poppins font from Google Fonts
+
+#### Scenario: Has light gray (#fafafa) background
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** it has light gray (#fafafa) background
+
+### Feature: Footer
+
+#### Scenario: Links to https://www.componentdock.com/
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it links to https://www.componentdock.com/
+
+#### Scenario: Shows "Component Dock" branding
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it shows "Component Dock" branding
+
+#### Scenario: Shows copyright text
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it shows copyright text

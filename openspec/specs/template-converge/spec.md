@@ -31,53 +31,138 @@ Converge is a marketing conference landing template with a navbar, hero, countdo
 8. **CTA** — orange background section with "Get Your Tickets Now!" heading, description, ticket button
 9. **Footer** — dark navy, 3-column: about + social icons, newsletter form, Instagram gallery; footer bar with Component Dock link
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- Renders logo, nav links, login/register, and Get Tickets CTA
-- Mobile menu toggles open/closed
-- Clicking a nav link closes mobile menu
+#### Scenario: Renders logo, nav links, login/register, and Get Tickets CTA
 
-### Hero
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** it renders logo, nav links, login/register, and Get Tickets CTA
 
-- Displays conference year, title, date, and location
-- Shows Get Tickets CTA and slide dots
+#### Scenario: Mobile menu toggles open/closed
 
-### Countdown
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** mobile menu toggles open/closed
 
-- Shows all 4 time units with labels
-- Counts down each second
-- Shows 00:00:00:00 when target is past
+#### Scenario: Clicking a nav link closes mobile menu
 
-### Intro
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** clicking a nav link closes mobile menu
 
-- Renders heading, descriptive text, and Get Tickets link
+### Feature: Hero
 
-### Topics
+#### Scenario: Displays conference year, title, date, and location
 
-- Renders all 6 tab buttons
-- Shows first topic by default
-- Switches content when a different tab is clicked
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it displays conference year, title, date, and location
 
-### Schedule
+#### Scenario: Shows Get Tickets CTA and slide dots
 
-- Renders Day 1 and Day 2 columns with session titles, times, and hosts
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it shows Get Tickets CTA and slide dots
 
-### Speakers
+### Feature: Countdown
 
-- Renders all 6 speaker cards with names, roles, and images
+#### Scenario: Shows all 4 time units with labels
 
-### CTA
+- **Given** the page is rendered
+- **When** the Countdown is inspected
+- **Then** it shows all 4 time units with labels
 
-- Renders heading, description, and Get Tickets button
+#### Scenario: Counts down each second
 
-### Footer
+- **Given** the page is rendered
+- **When** the Countdown is inspected
+- **Then** Counts down each second
 
-- Renders logo, about text, newsletter form, Instagram gallery (8 images)
-- Contains Component Dock link in footer bar
-- Social media icons (Facebook, Twitter, Dribbble) via inline SVGs
+#### Scenario: Shows 00:00:00:00 when target is past
 
-### App
+- **Given** the page is rendered
+- **When** the Countdown is inspected
+- **Then** it shows 00:00:00:00 when target is past
 
-- Composes all sections with correct landmarks
+### Feature: Intro
+
+#### Scenario: Renders heading, descriptive text, and Get Tickets link
+
+- **Given** the page is rendered
+- **When** the Intro is inspected
+- **Then** it renders heading, descriptive text, and Get Tickets link
+
+### Feature: Topics
+
+#### Scenario: Renders all 6 tab buttons
+
+- **Given** the page is rendered
+- **When** the Topics is inspected
+- **Then** it renders all 6 tab buttons
+
+#### Scenario: Shows first topic by default
+
+- **Given** the page is rendered
+- **When** the Topics is inspected
+- **Then** it shows first topic by default
+
+#### Scenario: Switches content when a different tab is clicked
+
+- **Given** the page is rendered
+- **When** the Topics is inspected
+- **Then** it switches content when a different tab is clicked
+
+### Feature: Schedule
+
+#### Scenario: Renders Day 1 and Day 2 columns with session titles, times, and hosts
+
+- **Given** the page is rendered
+- **When** the Schedule is inspected
+- **Then** it renders Day 1 and Day 2 columns with session titles, times, and hosts
+
+### Feature: Speakers
+
+#### Scenario: Renders all 6 speaker cards with names, roles, and images
+
+- **Given** the page is rendered
+- **When** the Speakers is inspected
+- **Then** it renders all 6 speaker cards with names, roles, and images
+
+### Feature: CTA
+
+#### Scenario: Renders heading, description, and Get Tickets button
+
+- **Given** the page is rendered
+- **When** the CTA is inspected
+- **Then** it renders heading, description, and Get Tickets button
+
+### Feature: Footer
+
+#### Scenario: Renders logo, about text, newsletter form, Instagram gallery (8 images)
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it renders logo, about text, newsletter form, Instagram gallery (8 images)
+
+#### Scenario: Contains Component Dock link in footer bar
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it contains Component Dock link in footer bar
+
+#### Scenario: Social media icons (Facebook, Twitter, Dribbble) via inline SVGs
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Social media icons (Facebook, Twitter, Dribbble) via inline SVGs
+
+### Feature: App
+
+#### Scenario: Composes all sections with correct landmarks
+
+- **Given** the page is rendered
+- **When** the App is inspected
+- **Then** Composes all sections with correct landmarks

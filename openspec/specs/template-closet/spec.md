@@ -27,39 +27,113 @@ Closet is a fashion boutique template with a navbar, hero, popular products, new
 4. **Newsletter** — Email signup with icon and subscribe button
 5. **Footer** — Dark background, multi-column links, "Made with Component Dock" attribution
 
-## Scenarios
+## Requirements
 
-### Navbar
+### Feature: Navbar
 
-- Renders brand name "Closet"
-- Shows search input
-- Shows cart icon
-- Mobile: hamburger toggles menu
+#### Scenario: Renders brand name "Closet"
 
-### Hero
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** it renders brand name "Closet"
 
-- Displays "New Arrivals" heading
-- Shows product carousel with navigation arrows
-- Left/right arrows change the active slide
-- Green price badge visible on center product
+#### Scenario: Shows search input
 
-### Popular Products
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** it shows search input
 
-- Shows "Popular on Closet" heading
-- Category tabs filter products (Women active by default)
-- Product cards show image, name, price
+#### Scenario: Shows cart icon
 
-### Newsletter
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** it shows cart icon
 
-- Shows email input and subscribe button
-- Submitting the form clears the input
+#### Scenario: Mobile: hamburger toggles menu
 
-### Footer
+- **Given** the page is rendered
+- **When** the Navbar is inspected
+- **Then** mobile: hamburger toggles menu
 
-- Links to Component Dock (https://www.componentdock.com/)
-- Shows copyright year
-- Multi-column layout with navigation links
+### Feature: Hero
 
+#### Scenario: Displays "New Arrivals" heading
+
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it displays "New Arrivals" heading
+
+#### Scenario: Shows product carousel with navigation arrows
+
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** it shows product carousel with navigation arrows
+
+#### Scenario: Left/right arrows change the active slide
+
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** Left/right arrows change the active slide
+
+#### Scenario: Green price badge visible on center product
+
+- **Given** the page is rendered
+- **When** the Hero is inspected
+- **Then** Green price badge visible on center product
+
+### Feature: Popular Products
+
+#### Scenario: Shows "Popular on Closet" heading
+
+- **Given** the page is rendered
+- **When** the Popular Products is inspected
+- **Then** it shows "Popular on Closet" heading
+
+#### Scenario: Category tabs filter products (Women active by default)
+
+- **Given** the page is rendered
+- **When** the Popular Products is inspected
+- **Then** Category tabs filter products (Women active by default)
+
+#### Scenario: Product cards show image, name, price
+
+- **Given** the page is rendered
+- **When** the Popular Products is inspected
+- **Then** Product cards show image, name, price
+
+### Feature: Newsletter
+
+#### Scenario: Shows email input and subscribe button
+
+- **Given** the page is rendered
+- **When** the Newsletter is inspected
+- **Then** it shows email input and subscribe button
+
+#### Scenario: Submitting the form clears the input
+
+- **Given** the page is rendered
+- **When** the Newsletter is inspected
+- **Then** submitting the form clears the input
+
+### Feature: Footer
+
+#### Scenario: Links to Component Dock (https://www.componentdock.com/)
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it links to Component Dock (https://www.componentdock.com/)
+
+#### Scenario: Shows copyright year
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** it shows copyright year
+
+#### Scenario: Multi-column layout with navigation links
+
+- **Given** the page is rendered
+- **When** the Footer is inspected
+- **Then** Multi-column layout with navigation links
 ## Fidelity Notes
 
 - No screenshot fallback needed: the slug-only preview path 404s, but the live demo is the alias directory `/theme/littlecloset/` (HTTP 200 re-probed 2026-10-13), so the design sheet is authoritative

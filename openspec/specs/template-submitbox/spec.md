@@ -59,18 +59,84 @@ Split-screen layout (desktop: two halves, mobile: stacked):
 3. `SignupForm.tsx` — Form with inputs, submit, social login
 4. `Footer.tsx` — Component Dock attribution
 
-## Scenarios
+## Requirements
 
-- Renders heading "Sign Up #03" or "Hello! Please signup to continue"
-- Renders all four input fields with correct placeholders
-- Full Name field accepts text input
-- Email field accepts email input
-- Password field masks input
-- Confirm Password field masks input
-- Submit button is present and clickable
-- Social login buttons render (Facebook, Twitter)
-- Left panel shows icon and "Already have an account?" text
-- "Sign In" button renders in left panel
-- "I'm already a member! Sign In" link renders
-- Footer links to componentdock.com
-- Responsive: stacks on mobile, side-by-side on desktop
+### Feature: SubmitBox
+
+#### Scenario: Renders heading "Sign Up #03" or "Hello! Please signup to continue"
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** it renders heading "Sign Up #03" or "Hello! Please signup to continue"
+
+#### Scenario: Renders all four input fields with correct placeholders
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** it renders all four input fields with correct placeholders
+
+#### Scenario: Full Name field accepts text input
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Full Name field accepts text input
+
+#### Scenario: Email field accepts email input
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Email field accepts email input
+
+#### Scenario: Password field masks input
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Password field masks input
+
+#### Scenario: Confirm Password field masks input
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Confirm Password field masks input
+
+#### Scenario: Submit button is present and clickable
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Submit button is present and clickable
+
+#### Scenario: Social login buttons render (Facebook, Twitter)
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Social login buttons render (Facebook, Twitter)
+
+#### Scenario: Left panel shows icon and "Already have an account?" text
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Left panel shows icon and "Already have an account?" text
+
+#### Scenario: "Sign In" button renders in left panel
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** "Sign In" button renders in left panel
+
+#### Scenario: "I'm already a member! Sign In" link renders
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** "I'm already a member! Sign In" link renders
+
+#### Scenario: Footer links to componentdock.com
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Footer links to componentdock.com
+
+#### Scenario: Responsive: stacks on mobile, side-by-side on desktop
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** Responsive: stacks on mobile, side-by-side on desktop

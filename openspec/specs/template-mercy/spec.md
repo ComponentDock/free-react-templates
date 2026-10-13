@@ -37,55 +37,134 @@ Mercy is a charity & nonprofit landing page with a top bar, navbar, hero, about 
 10. **CTA Banner** — coral full-width, heading, CTA button
 11. **Footer** — 4 columns: brand+social+donate, Latest News, Quick Links, Contact. Copyright links Component Dock
 
-## Scenarios
+## Requirements
 
-### TopBar
+### Feature: TopBar
 
-- GIVEN the page loads WHEN I look at the top bar THEN I see phone number and email
-- GIVEN the page loads WHEN I look at the top bar THEN I see social media icons
+#### Scenario: I see phone number and email
 
-### Navbar
+- **Given** the page loads
+- **When** I look at the top bar
+- **Then** I see phone number and email
 
-- GIVEN the page loads WHEN I look at the navbar THEN I see the brand "Mercy"
-- GIVEN the page loads WHEN I look at the navbar THEN I see navigation links for Home, About, Volunteer, Causes, Blog, Contact
-- GIVEN the page loads WHEN I look at the navbar THEN I see a Donate CTA button
+#### Scenario: I see social media icons
 
-### Hero
+- **Given** the page loads
+- **When** I look at the top bar
+- **Then** I see social media icons
 
-- GIVEN the page loads WHEN I look at the hero THEN I see heading "Help the poor in need"
-- GIVEN the page loads WHEN I look at the hero THEN I see a "Become A Volunteer" button
-- GIVEN the page loads WHEN I look at the hero THEN I see a "Watch our video" link
+### Feature: Navbar
 
-### About/Donation
+#### Scenario: I see the brand "Mercy"
 
-- GIVEN the page loads WHEN I look at the about section THEN I see a donation form with fields
-- GIVEN the page loads WHEN I look at the about section THEN I see stats (Volunteers, Trusted Funds)
+- **Given** the page loads
+- **When** I look at the navbar
+- **Then** I see the brand "Mercy"
 
-### Services
+#### Scenario: I see navigation links for Home, About, Volunteer, Causes, Blog, Contact
 
-- GIVEN the page loads WHEN I look at the services section THEN I see 4 service cards
+- **Given** the page loads
+- **When** I look at the navbar
+- **Then** I see navigation links for Home, About, Volunteer, Causes, Blog, Contact
 
-### Causes
+#### Scenario: I see a Donate CTA button
 
-- GIVEN the page loads WHEN I look at the causes section THEN I see 4 cause cards with progress bars
+- **Given** the page loads
+- **When** I look at the navbar
+- **Then** I see a Donate CTA button
 
-### Testimonials
+### Feature: Hero
 
-- GIVEN the page loads WHEN I look at the testimonials section THEN I see testimonial cards with star ratings
+#### Scenario: I see heading "Help the poor in need"
 
-### Blog
+- **Given** the page loads
+- **When** I look at the hero
+- **Then** I see heading "Help the poor in need"
 
-- GIVEN the page loads WHEN I look at the blog section THEN I see 4 blog post cards
+#### Scenario: I see a "Become A Volunteer" button
 
-### Volunteers
+- **Given** the page loads
+- **When** I look at the hero
+- **Then** I see a "Become A Volunteer" button
 
-- GIVEN the page loads WHEN I look at the volunteers section THEN I see 4 team member cards
+#### Scenario: I see a "Watch our video" link
 
-### CTA Banner
+- **Given** the page loads
+- **When** I look at the hero
+- **Then** I see a "Watch our video" link
 
-- GIVEN the page loads WHEN I look at the CTA banner THEN I see heading and CTA button
+### Feature: About/Donation
 
-### Footer
+#### Scenario: I see a donation form with fields
 
-- GIVEN the page loads WHEN I look at the footer THEN I see brand info, quick links, and contact info
-- GIVEN the page loads WHEN I look at the footer THEN I see a link to componentdock.com
+- **Given** the page loads
+- **When** I look at the about section
+- **Then** I see a donation form with fields
+
+#### Scenario: I see stats (Volunteers, Trusted Funds)
+
+- **Given** the page loads
+- **When** I look at the about section
+- **Then** I see stats (Volunteers, Trusted Funds)
+
+### Feature: Services
+
+#### Scenario: I see 4 service cards
+
+- **Given** the page loads
+- **When** I look at the services section
+- **Then** I see 4 service cards
+
+### Feature: Causes
+
+#### Scenario: I see 4 cause cards with progress bars
+
+- **Given** the page loads
+- **When** I look at the causes section
+- **Then** I see 4 cause cards with progress bars
+
+### Feature: Testimonials
+
+#### Scenario: I see testimonial cards with star ratings
+
+- **Given** the page loads
+- **When** I look at the testimonials section
+- **Then** I see testimonial cards with star ratings
+
+### Feature: Blog
+
+#### Scenario: I see 4 blog post cards
+
+- **Given** the page loads
+- **When** I look at the blog section
+- **Then** I see 4 blog post cards
+
+### Feature: Volunteers
+
+#### Scenario: I see 4 team member cards
+
+- **Given** the page loads
+- **When** I look at the volunteers section
+- **Then** I see 4 team member cards
+
+### Feature: CTA Banner
+
+#### Scenario: I see heading and CTA button
+
+- **Given** the page loads
+- **When** I look at the CTA banner
+- **Then** I see heading and CTA button
+
+### Feature: Footer
+
+#### Scenario: I see brand info, quick links, and contact info
+
+- **Given** the page loads
+- **When** I look at the footer
+- **Then** I see brand info, quick links, and contact info
+
+#### Scenario: I see a link to componentdock.com
+
+- **Given** the page loads
+- **When** I look at the footer
+- **Then** I see a link to componentdock.com

@@ -114,63 +114,198 @@ a newsletter subscription form, and a multi-column footer.
 - 4-column grid: About + social icons, Information links, Instagram grid, Contact Info
 - Bottom bar: copyright + "More templates at Component Dock" link
 
-## Scenarios
+## Requirements
 
-### Navbar renders all sections
+### Feature: Navbar renders all sections
 
-- GIVEN the page loads
-- THEN the navbar displays "Sitecraft" logo
-- AND nav links: Home, Projects, Services, About, Contact are visible
+#### Scenario: GIVEN the page loads
 
-### Hero section displays correctly
+- **Given** the page is rendered
+- **When** the Navbar renders all sections is inspected
+- **Then** GIVEN the page loads
 
-- GIVEN the page loads
-- THEN the hero heading "Our Obsession Is Distinctive Interiors" is visible
-- AND the subheading "Providing All Kinds of Construction Services" is visible
+#### Scenario: THEN the navbar displays "Sitecraft" logo
 
-### Services tabs switch content
+- **Given** the page is rendered
+- **When** the Navbar renders all sections is inspected
+- **Then** THEN the navbar displays "Sitecraft" logo
 
-- GIVEN the services tabs section is visible
-- WHEN the user clicks the "Architecture" tab
-- THEN the Architecture panel content is displayed
-- AND the Interior Design panel is hidden
+#### Scenario: AND nav links: Home, Projects, Services, About, Contact are visible
 
-### Services grid shows 6 items
+- **Given** the page is rendered
+- **When** the Navbar renders all sections is inspected
+- **Then** AND nav links: Home, Projects, Services, About, Contact are visible
 
-- GIVEN the page loads
-- THEN 6 service cards are rendered with icons and titles
+### Feature: Hero section displays correctly
 
-### Counter section displays stats
+#### Scenario: GIVEN the page loads
 
-- GIVEN the page loads
-- THEN 4 counter items are visible with their labels
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GIVEN the page loads
 
-### Projects gallery shows 6 items
+#### Scenario: THEN the hero heading "Our Obsession Is Distinctive Interiors" is…
 
-- GIVEN the page loads
-- THEN 6 project cards are rendered with images and titles
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** THEN the hero heading "Our Obsession Is Distinctive Interiors" is visible
 
-### Team section shows members and accordion
+#### Scenario: AND the subheading "Providing All Kinds of Construction Services" is…
 
-- GIVEN the page loads
-- THEN 4 team member cards are visible
-- AND the accordion has 3 sections
-- WHEN the user clicks "What We Do?"
-- THEN the "What We Do?" panel content is visible
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** AND the subheading "Providing All Kinds of Construction Services" is visible
 
-### Testimonials render
+### Feature: Services tabs switch content
 
-- GIVEN the page loads
-- THEN 3 testimonial items are rendered with names and quotes
+#### Scenario: GIVEN the services tabs section is visible
 
-### Newsletter form works
+- **Given** the page is rendered
+- **When** the Services tabs switch content is inspected
+- **Then** GIVEN the services tabs section is visible
 
-- GIVEN the newsletter section is visible
-- WHEN the user types an email and clicks "Subscribe Now"
-- THEN the form resets
+#### Scenario: WHEN the user clicks the "Architecture" tab
 
-### Footer contains Component Dock link
+- **Given** the page is rendered
+- **When** the Services tabs switch content is inspected
+- **Then** WHEN the user clicks the "Architecture" tab
 
-- GIVEN the page loads
-- THEN the footer contains a link to https://www.componentdock.com/
-- AND the link text mentions "Component Dock"
+#### Scenario: THEN the Architecture panel content is displayed
+
+- **Given** the page is rendered
+- **When** the Services tabs switch content is inspected
+- **Then** THEN the Architecture panel content is displayed
+
+#### Scenario: AND the Interior Design panel is hidden
+
+- **Given** the page is rendered
+- **When** the Services tabs switch content is inspected
+- **Then** AND the Interior Design panel is hidden
+
+### Feature: Services grid shows 6 items
+
+#### Scenario: GIVEN the page loads
+
+- **Given** the page is rendered
+- **When** the Services grid shows 6 items is inspected
+- **Then** GIVEN the page loads
+
+#### Scenario: THEN 6 service cards are rendered with icons and titles
+
+- **Given** the page is rendered
+- **When** the Services grid shows 6 items is inspected
+- **Then** THEN 6 service cards are rendered with icons and titles
+
+### Feature: Counter section displays stats
+
+#### Scenario: GIVEN the page loads
+
+- **Given** the page is rendered
+- **When** the Counter section displays stats is inspected
+- **Then** GIVEN the page loads
+
+#### Scenario: THEN 4 counter items are visible with their labels
+
+- **Given** the page is rendered
+- **When** the Counter section displays stats is inspected
+- **Then** THEN 4 counter items are visible with their labels
+
+### Feature: Projects gallery shows 6 items
+
+#### Scenario: GIVEN the page loads
+
+- **Given** the page is rendered
+- **When** the Projects gallery shows 6 items is inspected
+- **Then** GIVEN the page loads
+
+#### Scenario: THEN 6 project cards are rendered with images and titles
+
+- **Given** the page is rendered
+- **When** the Projects gallery shows 6 items is inspected
+- **Then** THEN 6 project cards are rendered with images and titles
+
+### Feature: Team section shows members and accordion
+
+#### Scenario: GIVEN the page loads
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GIVEN the page loads
+
+#### Scenario: THEN 4 team member cards are visible
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** THEN 4 team member cards are visible
+
+#### Scenario: AND the accordion has 3 sections
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** AND the accordion has 3 sections
+
+#### Scenario: WHEN the user clicks "What We Do?"
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** WHEN the user clicks "What We Do?"
+
+#### Scenario: THEN the "What We Do?" panel content is visible
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** THEN the "What We Do?" panel content is visible
+
+### Feature: Testimonials render
+
+#### Scenario: GIVEN the page loads
+
+- **Given** the page is rendered
+- **When** the Testimonials render is inspected
+- **Then** GIVEN the page loads
+
+#### Scenario: THEN 3 testimonial items are rendered with names and quotes
+
+- **Given** the page is rendered
+- **When** the Testimonials render is inspected
+- **Then** THEN 3 testimonial items are rendered with names and quotes
+
+### Feature: Newsletter form works
+
+#### Scenario: GIVEN the newsletter section is visible
+
+- **Given** the page is rendered
+- **When** the Newsletter form works is inspected
+- **Then** GIVEN the newsletter section is visible
+
+#### Scenario: WHEN the user types an email and clicks "Subscribe Now"
+
+- **Given** the page is rendered
+- **When** the Newsletter form works is inspected
+- **Then** WHEN the user types an email and clicks "Subscribe Now"
+
+#### Scenario: THEN the form resets
+
+- **Given** the page is rendered
+- **When** the Newsletter form works is inspected
+- **Then** THEN the form resets
+
+### Feature: Footer contains Component Dock link
+
+#### Scenario: GIVEN the page loads
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** GIVEN the page loads
+
+#### Scenario: THEN the footer contains a link to https://www.componentdock.com/
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** THEN the footer contains a link to https://www.componentdock.com/
+
+#### Scenario: AND the link text mentions "Component Dock"
+
+- **Given** the page is rendered
+- **When** the page is inspected
+- **Then** AND the link text mentions "Component Dock"
