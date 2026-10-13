@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Unfold" — modern one-page portfolio template.
+Modern one-page portfolio template. Recreation of ColorLib "Unfold".
 
 - **Source:** https://colorlib.com/wp/template/unfold/
 - **Preview:** https://preview.colorlib.com/theme/unfold/

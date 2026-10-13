@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **ColorLib Reg Form V31** (`colorlib-regform-31`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Registration Form template with full-page background, card container, card heading, form fields, full name and your email sections. Recreation of **ColorLib Reg Form V31** (`colorlib-regform-31`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-regform-31/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-31.jpg

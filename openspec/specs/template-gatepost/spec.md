@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Login Form V16" (slug: `login-form-v16`).
+A Login Form template with full-viewport background, centered login, username input with icon, password input with icon and sign in button sections. Recreation of ColorLib "Login Form V16" (slug: `login-form-v16`).
 
 - Preview URL: `https://preview.colorlib.com/theme/login-form-v16/` (unreachable — falling back to screenshot)
 - ColorLib source: `https://colorlib.com/wp/template/login-form-v16/`

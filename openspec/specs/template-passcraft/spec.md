@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Login Form 03" (`login-form-03`).
+A login form template with a hero section, a centered login card and a Component Dock footer. Recreation of ColorLib "Login Form 03" (`login-form-03`).
 
 - Source: https://colorlib.com/wp/template/login-form-03/
 - Preview: https://preview.colorlib.com/theme/bootstrap/login-form-03/

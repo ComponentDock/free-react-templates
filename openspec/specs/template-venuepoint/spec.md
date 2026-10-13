@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Thevenue** restaurant template.
+A Restaurant / Dining template with hero, intro, video, signature dish and reservation form accepts sections. Recreation of ColorLib's **Thevenue** restaurant template.
 
 - Source: https://colorlib.com/wp/template/thevenue/
 - Preview: https://preview.colorlib.com/theme/thevenue/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Finloans** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+A payday loan template with hero, about, services, how it works, FAQ, testimonials and CTA banner sections. Recreation of the ColorLib **Finloans** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source:** https://colorlib.com/wp/template/finloans/
 - **Preview analyzed:** https://preview.colorlib.com/theme/finloans/

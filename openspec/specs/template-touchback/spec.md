@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 12** — a clean, minimal two-column contact page with a heading, description, and contact details on the left, and a simple form (Name, Email, Message) with a blue "Send Message" button on the right.
+A clean, minimal two-column contact page with a heading, description, and contact details on the left, and a simple form. It also includes Message) with a blue "Send Message" button on the right. Recreation of ColorLib **Contact Form 12**.
 
 - **Source slug:** `contact-form-12`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-12/

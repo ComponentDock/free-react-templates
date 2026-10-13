@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Kindity" charity template.
+A Nonprofit Charity template with hero section with stats, welcome section with stats, key features and upcoming events sections. Recreation of ColorLib "Kindity" charity template.
 
 - Source slug: `kindity`
 - Source URL: https://colorlib.com/wp/template/kindity/

@@ -2,9 +2,7 @@
 
 ## Purpose
 
-- **Recreation of ColorLib source**: Bootstrap Buttons 14 (`https://colorlib.com/wp/template/bootstrap-buttons-14/`)
-- **New Name**: `btnspark`
-- **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript, Lucide Icons, `packages/ui`
+A Bootstrap Buttons Showcase template with navigation and header, button showcase categories and interactive states sections. - **Recreation of ColorLib source**: Bootstrap Buttons 14 (`https://colorlib.com/wp/template/bootstrap-buttons-14/`) - **New Name**: `btnspark` - **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript, Lucide Icons, `packages/ui`
 
 ## Design tokens
 

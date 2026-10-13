@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Login Form V20" (slug: `login-form-20`).
+A Login Form template with full-viewport background, centered narrow login, title heading, glass-like form inputs and pill-shaped sections. Recreation of ColorLib "Login Form V20" (slug: `login-form-20`).
 
 - Preview URL: `https://preview.colorlib.com/theme/bootstrap/login-form-20/`
 - ColorLib source: `https://colorlib.com/wp/template/login-form-20/`

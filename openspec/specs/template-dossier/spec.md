@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib "Alias" template (https://colorlib.com/wp/template/alias/) as a React 19 + Vite + Tailwind CSS 4 one-page personal/CV portfolio site under the name "Dossier".
+A Personal / CV Portfolio template with navbar with navigation, about section with portrait, skills with progress bars and services sections. Recreate the ColorLib "Alias" template (https://colorlib.com/wp/template/alias/) as a React 19 + Vite + Tailwind CSS 4 one-page personal/CV portfolio site under the name "Dossier".
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **ColorLib Bootstrap Sidebar 10** (`bootstrap-sidebar-10`) as a right-side sidebar navigation template with a mountain landscape background, brand header, nav links, newsletter signup, and footer.
+A Sidebar Navigation template with brand header, navigation items, mountain landscape and main sections. Recreation of **ColorLib Bootstrap Sidebar 10** (`bootstrap-sidebar-10`) as a right-side sidebar navigation template with a mountain landscape background, brand header, nav links, newsletter signup, and footer.
 
 ## Requirements
 

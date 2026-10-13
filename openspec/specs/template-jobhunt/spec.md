@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Jobsco** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+A Job Portal template with header/nav, hero, top jobs, about and job categories sections. Recreation of ColorLib's **Jobsco** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/jobsco/
 - **Preview:** https://preview.colorlib.com/theme/jobsco/

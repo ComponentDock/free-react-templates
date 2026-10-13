@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Myhome** — a real estate agency website template.
+A real estate agency website template. Recreation of ColorLib **Myhome**.
 
 - Source slug: `myhome`
 - ColorLib page: https://colorlib.com/wp/template/myhome/

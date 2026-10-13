@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Modal V14" template — a coupon form pop-up modal
-with warm cream background, promotional image, dashed coupon code box, and
-full-width CTA button.
+A coupon form pop-up modal with warm cream background, promotional image, dashed coupon code box, and full-width CTA button. Recreation of the ColorLib "Modal V14" template.
 
 - **Source:** [ColorLib Modal 14](https://colorlib.com/wp/template/modal-14/)
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/modal-14/

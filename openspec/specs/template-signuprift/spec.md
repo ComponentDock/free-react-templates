@@ -2,14 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Signup Form 11**
-- Source slug: `signup-form-11`
-- Preview URL: `https://preview.colorlib.com/theme/signup-form-11/` (returns 404 as of 2026-09-30; spec derived from screenshot)
-- Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-11.jpg`
-- Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript
-- App path: `apps/signuprift`
-- Package: `@free-react-templates/signuprift`
-- Deploy target: `signuprift.free.componentdock.com`
+A Signup Form template with card header, signup, terms agreement, login redirect and form validation sections. Recreation of ColorLib **Signup Form 11** - Source slug: `signup-form-11` - Preview URL: `https://preview.colorlib.com/theme/signup-form-11/` (returns 404 as of 2026-09-30; spec derived from screenshot) - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-11.jpg` - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript - App path: `apps/signuprift` - Package: `@free-react-templates/signuprift` - Deploy target: `signuprift.free.componentdock.com`
 
 ## Design tokens
 

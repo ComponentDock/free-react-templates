@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Vertex** construction company template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+A Construction Company template with stats, services, pricing and quote form modal sections. Recreation of the ColorLib **Vertex** construction company template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/vertex/
 - **Preview:** https://preview.colorlib.com/theme/vertex/

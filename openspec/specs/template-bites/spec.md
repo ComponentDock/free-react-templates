@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Foodbar** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+A Food Bar / Restaurant template with buttons & shapes, hero, top dishes showcase and gallery sections. Recreation of ColorLib's **Foodbar** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source slug:** `foodbar`
 - **Preview URL:** https://preview.colorlib.com/theme/foodbar/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **ColorLib Magnews2** — a magazine/news blog template with tabbed category navigation, featured article grids, entertainment section, latest articles, newsletter signup, and a dark footer.
+A magazine/news blog template with tabbed category navigation, featured article grids, entertainment section, latest articles. It also includes newsletter signup, and a dark footer. Recreation of **ColorLib Magnews2**.
 
 - **Source:** [ColorLib Magnews2](https://colorlib.com/wp/template/magnews2/)
 - **Preview:** https://preview.colorlib.com/theme/magnews2/

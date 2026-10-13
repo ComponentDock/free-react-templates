@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Lawfirm** law firm template.
+A Law Firm template with hero section, intro features, about section, counter stats, practice areas and cases gallery sections. Recreation of ColorLib's **Lawfirm** law firm template.
 
 - **Source:** https://colorlib.com/wp/template/lawfirm/
 - **Preview:** https://preview.colorlib.com/theme/lawfirm/

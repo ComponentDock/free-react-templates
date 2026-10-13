@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Consula" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site.
+A business consulting template with top bar, hero, about, how it works, specialties, team and testimonials sections. Recreation of the ColorLib "Consula" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site.
 
 - **Source slug:** `consula`
 - **ColorLib page:** https://colorlib.com/wp/template/consula/

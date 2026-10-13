@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "eStore" e-commerce template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+An E-Commerce template with header utility, main header navigation, hero slider, shop by category, best collection and shop methods sections. Recreation of the ColorLib "eStore" e-commerce template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source template:** [eStore](https://colorlib.com/wp/template/estore/)
 - **Preview URL:** https://preview.colorlib.com/theme/estore/

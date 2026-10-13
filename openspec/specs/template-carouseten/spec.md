@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib `carousel-10` (`https://colorlib.com/wp/template/carousel-10/`), built as a modern, responsive React 19 + Tailwind CSS 4 + TypeScript web application.
+A Carousel Showcase template with hero banner & overview, interactive thumbnail, feature highlights grid and newsletter subscription sections. Recreation of ColorLib `carousel-10` (`https://colorlib.com/wp/template/carousel-10/`), built as a modern, responsive React 19 + Tailwind CSS 4 + TypeScript web application.
 
 - **Preview URL:** https://preview.colorlib.com/theme/carousel-10/
 - **Original Source Slug:** `carousel-10`

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Signup Form 17** (`https://colorlib.com/wp/template/signup-form-17/`).
+An Account Signup Card template with page wrapper, page title, card container, avatar, card heading and form sections. Recreation of ColorLib **Signup Form 17** (`https://colorlib.com/wp/template/signup-form-17/`).
 
 - Preview (live): `https://preview.colorlib.com/theme/bootstrap/signup-form-17/`
   — the un-prefixed `/theme/signup-form-17/` path 404s; the bootstrap path

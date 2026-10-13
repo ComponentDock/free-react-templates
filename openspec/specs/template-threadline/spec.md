@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Threadline is a single-page men's fashion e-commerce template — a React recreation of the
-ColorLib free "Malefashion" template
-(preview: https://preview.colorlib.com/theme/malefashion/ — fashion/e-commerce landing),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Men's Fashion E-Commerce template with header with navigation, hero banner, category banners, product tabs and hot deal countdown sections. Threadline is a single-page men's fashion e-commerce template — a React recreation of the ColorLib free "Malefashion" template (preview: https://preview.colorlib.com/theme/malefashion/ — fashion/e-commerce landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original:
 

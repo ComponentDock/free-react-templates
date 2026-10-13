@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Credit" (https://colorlib.com/wp/template/credit/) — a loan and credit company landing page with navy blue and golden accent design tokens, featuring a hero section, feature highlights, skill indicators, services grid, contact/news section, newsletter signup, and a 4-column footer.
+A loan and credit company landing page with navy blue and golden accent, featuring a hero section, feature highlights, skill indicators. It also includes services grid, contact/news section, newsletter signup, and a 4-column footer. Recreation of ColorLib "Credit" (https://colorlib.com/wp/template/credit/).
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Finlone" — a finance/loan landing page.
+A Finance / Loan template with hero, about, services, clients/stats, how it works and faq sections. Recreation of ColorLib "Finlone" — a finance/loan landing page.
 
 - **Source:** https://colorlib.com/wp/template/finlone/
 - **Preview:** https://preview.colorlib.com/theme/finlone/

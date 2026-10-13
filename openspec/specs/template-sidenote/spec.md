@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Sidebar V03 — a newsletter signup sidebar panel on a bright blue background, with a right-hand email form and a left-hand blog post grid.
+A newsletter signup sidebar panel on a bright blue background, with a right-hand email form and a left-hand blog post grid. Recreation of ColorLib Sidebar V03.
 
 ## Requirements
 

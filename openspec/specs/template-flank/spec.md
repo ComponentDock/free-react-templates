@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Sidebar 03** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Sidebar Navigation template with hamburger and main sections. Recreation of ColorLib **Bootstrap Sidebar 03** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/bootstrap-sidebar-03/
 - Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-03/ (unreachable — 404)

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Classic" (https://colorlib.com/wp/template/classic/) — a business/agency one-page template with dark overlay hero, tabbed content, filterable portfolio, team cards, monthly/yearly pricing, blog, animated stats, and contact form.
+A business/agency one-page template with dark overlay hero, tabbed content, filterable portfolio, team cards, monthly/yearly pricing. It also includes blog, animated stats, and contact form. Recreation of ColorLib "Classic" (https://colorlib.com/wp/template/classic/).
 
 ## Requirements
 

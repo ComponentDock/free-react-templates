@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Bootstrap Footer 05" — a clean white footer with
-a blue accent, email subscribe form, horizontal navigation links, social
-icons, and a centered logo in the bottom bar.
+A clean white footer with a blue accent, email subscribe form, horizontal navigation links, social icons, and a centered logo in the bottom bar. Recreation of ColorLib "Bootstrap Footer 05".
 
 - **Source:** ColorLib Bootstrap Footer 05 (https://colorlib.com/wp/template/bootstrap-footer-05/)
 - **Preview URL:** https://preview.colorlib.com/theme/bootstrap-footer-05/

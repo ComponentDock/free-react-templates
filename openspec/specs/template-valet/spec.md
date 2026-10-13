@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Virtualassistant** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
+A Virtual Assistant / Business Services template with hero, why choose us, services, how it works, pricing and blog sections. Recreation of ColorLib's **Virtualassistant** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 - **Source slug:** `virtualassistant`
 - **Preview URL:** https://preview.colorlib.com/theme/virtualassistant/

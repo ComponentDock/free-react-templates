@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Durg** industrial/construction company template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+An industrial construction template with top header, hero slider, brand logos, services and video about sections. Recreation of ColorLib's **Durg** industrial/construction company template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/durg/
 - **Preview (analyzed):** https://preview.colorlib.com/theme/durg/

@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Oathmark is a single-page legal/notary services template — a React recreation
-of the ColorLib free "Notary" template
-(preview: https://preview.colorlib.com/theme/notary/ — legal/notary landing),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Legal / Notary Services template with hero, practice areas, about and legal solutions sections. Oathmark is a single-page legal/notary services template — a React recreation of the ColorLib free "Notary" template (preview: https://preview.colorlib.com/theme/notary/ — legal/notary landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original:
 

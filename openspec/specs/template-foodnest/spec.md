@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Foody** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
+A restaurant landing template with hero, restaurant intro, services, special menu, our menu, testimonials and blog sections. Recreation of the ColorLib **Foody** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 - **Source slug:** `foody`
 - **ColorLib page:** https://colorlib.com/wp/template/foody/

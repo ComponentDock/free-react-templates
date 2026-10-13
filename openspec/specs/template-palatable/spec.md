@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Delicious** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+A Food / Recipe Blog template with top header, sticky, hero carousel, top categories, best recipes and cta banner sections. Recreation of ColorLib's **Delicious** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source slug:** `delicious`
 - **Preview URL:** https://preview.colorlib.com/theme/delicious/

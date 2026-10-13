@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Mediplus** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Medical / Healthcare template with hero, about, services, cta banner, doctors and blog sections. Recreation of ColorLib **Mediplus** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/mediplus/
 - **Preview URL:** https://preview.colorlib.com/theme/mediplus/

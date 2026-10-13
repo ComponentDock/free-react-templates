@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Onepro" — a business/tech agency website template with hero slider, services, portfolio, pricing, and contact sections.
+A business/tech agency website template with hero slider, services, portfolio, pricing, and contact sections. Recreation of ColorLib "Onepro".
 
 - **Source:** https://colorlib.com/wp/template/onepro/
 - **Preview:** https://preview.colorlib.com/theme/onepro/

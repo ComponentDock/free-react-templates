@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Genius" (https://colorlib.com/wp/template/genius/) — an education and university landing page template featuring courses, teachers, events, testimonials, and a newsletter signup.
+An education and university landing page template featuring courses, teachers, events, testimonials, and a newsletter signup. Recreation of ColorLib "Genius" (https://colorlib.com/wp/template/genius/).
 
 ### Design tokens (extracted from preview)
 

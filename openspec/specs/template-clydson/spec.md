@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Clyde" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript personal portfolio site.
+A personal portfolio template with hero CTAs, counter stats, about, skills and services sections. Recreation of the ColorLib "Clyde" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript personal portfolio site.
 
 - **Source:** [ColorLib Clyde](https://colorlib.com/wp/template/clyde/)
 - **Preview:** https://preview.colorlib.com/theme/clyde/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Ponigym** fitness/gym template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
+A Fitness / Gym template with hero, services, cta banner, classes, trainer schedule and team sections. Recreation of ColorLib's **Ponigym** fitness/gym template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 - **Source slug:** `ponigym`
 - **Preview URL:** https://preview.colorlib.com/theme/ponigym/

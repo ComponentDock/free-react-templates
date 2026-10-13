@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib "Ochean de View" hotel/resort landing template as a React application
-under the name "Havenshore", matching the original's section order, layout, and design tokens.
+A Hotel & Resort Landing template with hero, booking form with date and instagram gallery sections. Recreate the ColorLib "Ochean de View" hotel/resort landing template as a React application under the name "Havenshore", matching the original's section order, layout, and design tokens.
 
 Original: https://colorlib.com/wp/template/ocheandeview/
 Preview: https://preview.colorlib.com/theme/ocheandeview/

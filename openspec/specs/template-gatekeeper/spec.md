@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Login Form V18** (slug: `login-form-18`).
+A Login Form template with heading, icon circle, username input field, password input field, remember me checkbox and forgot password sections. Recreation of ColorLib's **Login Form V18** (slug: `login-form-18`).
 
 - **ColorLib source**: https://colorlib.com/wp/template/login-form-18/
 - **Live preview**: https://preview.colorlib.com/theme/bootstrap/login-form-18/

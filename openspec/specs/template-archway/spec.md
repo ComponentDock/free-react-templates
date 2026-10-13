@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Klift" — an interior design & architecture consultant website template.
+An interior design & architecture consultant website template. Recreation of ColorLib "Klift".
 
 - **Source:** https://colorlib.com/wp/template/klift/
 - **Preview:** https://preview.colorlib.com/theme/klift/

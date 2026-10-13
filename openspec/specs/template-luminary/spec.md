@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Inspire" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+An Inspiration / Creative Agency template with hero, services, about, concept and feature cta sections. Recreation of ColorLib "Inspire" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source slug:** `inspire`
 - **Preview URL:** https://preview.colorlib.com/theme/inspire/

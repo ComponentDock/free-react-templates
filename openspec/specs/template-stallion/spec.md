@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fitness** — a gym/fitness landing page with hero banner,
-top courses carousel, CTA banner, features, BMI calculator, image gallery,
-testimonials, brand logos, and footer CTA.
+A gym/fitness landing page with hero banner, top courses carousel, CTA banner, features, BMI calculator, image gallery, testimonials. It also includes brand logos, and footer CTA. Recreation of ColorLib **Fitness**.
 
 - **Source slug:** `fitness`
 - **Preview URL:** `https://preview.colorlib.com/theme/fitness/`

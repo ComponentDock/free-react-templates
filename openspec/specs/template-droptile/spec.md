@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Dropdown V16" — a mega menu dropdown navigation snippet
-with an image hero area and category columns.
+A mega menu dropdown navigation snippet with an image hero area and category columns. Recreation of ColorLib "Dropdown V16".
 
 - **Source:** [ColorLib Dropdown 16](https://colorlib.com/wp/template/dropdown-16/)
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/dropdown-16/

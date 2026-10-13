@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Stodeo" — a modern corporate business agency template.
+A modern corporate business agency template. Recreation of ColorLib "Stodeo".
 
 - **Source**: https://colorlib.com/wp/template/stodeo/
 - **Preview**: https://preview.colorlib.com/theme/stodeo/

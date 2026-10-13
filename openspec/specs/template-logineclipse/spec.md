@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V9** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Login Form template with full-viewport gradient, login, sign in title, username/email input field and password input field sections. Recreation of ColorLib **Login Form V9** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v9/
 - **Preview URL:** https://colorlib.com/etc/lf/Login_v9/index.html

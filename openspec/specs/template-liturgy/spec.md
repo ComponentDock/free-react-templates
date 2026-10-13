@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Advent** church website template
-(`https://colorlib.com/wp/template/advent/`)
-as a React 19 + Vite + Tailwind 4 + TypeScript application.
+A church template with hero slider, upcoming events, worship time and recent sermons sections. Recreation of ColorLib's **Advent** church website template (`https://colorlib.com/wp/template/advent/`) as a React 19 + Vite + Tailwind 4 + TypeScript application.
 
 - **Preview URL:** `https://preview.colorlib.com/theme/advent/`
 - **Screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg`

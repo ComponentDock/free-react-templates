@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Portech" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+A Creative Agency template with hero, services, about, team, counter and portfolio sections. Recreation of the ColorLib "Portech" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** [Portech](https://colorlib.com/wp/template/portech/) (ColorLib)
 - **Preview:** https://preview.colorlib.com/theme/portech/

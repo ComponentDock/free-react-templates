@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Regform 28** — a split-panel registration form with a hero image on the left and a form on the right, centered on a pastel gradient background.
+A split-panel registration form with a hero image on the left and a form on the right, centered on a pastel gradient background. Recreation of ColorLib **Regform 28**.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-regform-28/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-28.jpg

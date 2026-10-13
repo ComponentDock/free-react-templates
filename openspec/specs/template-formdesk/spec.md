@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V18** — a split-screen contact page with
-a lifestyle desk-photo on the left and a clean contact form with dropdown on
-the right, finished with social media icons.
+A split-screen contact page with a lifestyle desk-photo on the left and a clean contact form with dropdown on the right. It also includes finished with social media icons. Recreation of ColorLib **Contact Form V18**.
 
 - **Source slug:** `contact-form-v18`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v18/

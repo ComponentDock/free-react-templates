@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Login Form V12" — a modern transparent login form
-template with social sign-in options, built on a vibrant purple background.
+A modern transparent login form template with social sign-in options, built on a vibrant purple background. Recreation of ColorLib's "Login Form V12".
 
 - **Source:** https://colorlib.com/wp/template/login-form-12/
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/login-form-12/

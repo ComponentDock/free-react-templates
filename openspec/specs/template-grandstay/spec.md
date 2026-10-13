@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Hotel** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
+A Hotel & Hospitality template with hero, room availability, about, guestbook, instagram and room pics sections. Recreation of ColorLib's **Hotel** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
 
 - **Source:** [colorlib.com/wp/template/hotel/](https://colorlib.com/wp/template/hotel/)
 - **Preview:** [preview.colorlib.com/theme/hotel/](https://preview.colorlib.com/theme/hotel/)

@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Dropdown V08" — a clean, minimal dropdown navbar
-component featuring a split-button hamburger menu with a smooth dropdown
-panel.
+A clean, minimal dropdown navbar component featuring a split-button hamburger menu with a smooth dropdown panel. Recreation of ColorLib "Dropdown V08".
 
 - **Source:** https://colorlib.com/wp/template/dropdown-08/
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/dropdown-08/

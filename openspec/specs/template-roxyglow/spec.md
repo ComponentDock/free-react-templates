@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Roxandrea** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Hotel & Resort template with hero slider with slide, services grid with image, cname and homepage, hero slider and booking form sections. Recreation of ColorLib's **Roxandrea** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - **Source slug:** `roxandrea`
 - **ColorLib page:** https://colorlib.com/wp/template/roxandrea/

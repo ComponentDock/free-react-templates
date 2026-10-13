@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Meal2" — a free restaurant website template with food menus, desserts, events, galleries, and testimonials.
+A free restaurant website template with food menus, desserts, events, galleries, and testimonials. Recreation of ColorLib "Meal2".
 
 - **Source:** [ColorLib Meal2](https://colorlib.com/wp/template/meal2/)
 - **Preview:** https://preview.colorlib.com/theme/meal2/

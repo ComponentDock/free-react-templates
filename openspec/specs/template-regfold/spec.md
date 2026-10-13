@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **ColorLib Regform 4** (`colorlib-regform-4`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Registration Form template with form fields and form submission sections. Recreation of **ColorLib Regform 4** (`colorlib-regform-4`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-regform-4/
 - **Preview URL:** https://colorlib.com/etc/regform/colorlib-regform-4/ (preview.colorlib.com returns 404; demo page + screenshot used as reference)

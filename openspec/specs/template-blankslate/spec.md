@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Whitespace** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Business / Creative Agency template with hero, about, services, counter, projects gallery and case study sections. Recreation of the ColorLib **Whitespace** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - **Source template:** [Whitespace](https://colorlib.com/wp/template/whitespace/)
 - **Live preview:** https://preview.colorlib.com/theme/whitespace/

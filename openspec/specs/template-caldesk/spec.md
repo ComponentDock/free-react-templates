@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-14/`), a professional desktop datepicker and calendar widget template featuring a dual-calendar grid layout with month navigation and a minimal branded footer.
+A professional desktop datepicker and calendar widget template featuring a dual-calendar grid layout with month navigation. It also includes and a minimal branded footer. Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-14/`).
 
 ## Requirements
 

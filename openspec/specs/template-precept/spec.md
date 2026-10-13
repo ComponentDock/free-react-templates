@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Precept is a single-page education template — an original React recreation of
-the ColorLib free "Education" template
-(preview: https://preview.colorlib.com/theme/education/ — education/courses landing),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+An Education & Courses template with hero, features, popular courses, cta, reviews and search course sections. Precept is a single-page education template — an original React recreation of the ColorLib free "Education" template (preview: https://preview.colorlib.com/theme/education/ — education/courses landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original:
 

@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Provide a full-featured restaurant landing page with hero, about, offers carousel, tabbed menu, news/blog cards, photo gallery, contact form, and a dark footer — faithfully recreating the ColorLib Eatwell design under the name "Tastory".
+A restaurant landing template with navbar, about story, tabbed menu and news blog sections. Provide a full-featured restaurant landing page with hero, about, offers carousel, tabbed menu, news/blog cards, photo gallery, contact form, and a dark footer — faithfully recreating the ColorLib Eatwell design under the name "Tastory".
 
 ## Requirements
 

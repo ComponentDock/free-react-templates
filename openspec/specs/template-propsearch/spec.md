@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 07** — a real estate property search form
-with four filter fields (Location, Property Type, Property Status, Price Limit)
-and a branded search button.
+A real estate property search form with four filter fields (Location, Property Type, Property Status, Price Limit) and a branded search button. Recreation of ColorLib **Search Form Bar 07**.
 
 - **Source:** https://colorlib.com/wp/template/search-form-bar-07/
 - **Preview:** https://preview.colorlib.com/theme/search-form-bar-07/ (404 — spec based on downloaded source + screenshot)

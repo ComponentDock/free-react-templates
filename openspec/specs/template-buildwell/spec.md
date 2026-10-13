@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Celt** construction company website template.
+A Construction Company template with header navigation, hero, about, stats, portfolio and services sections. Recreation of ColorLib's **Celt** construction company website template.
 
 - **Source:** https://colorlib.com/wp/template/celt/
 - **Preview:** https://preview.colorlib.com/theme/celt/

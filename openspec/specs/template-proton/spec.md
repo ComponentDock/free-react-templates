@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Atomic" — a clean, professional business/agency website
-template with hero video CTA, overlapping features, service grid, portfolio
-masonry, stats counter, testimonials, and multi-column footer.
+A clean, professional business/agency website template with hero video CTA, overlapping features, service grid, portfolio masonry. It also includes stats counter, testimonials, and multi-column footer. Recreation of ColorLib "Atomic".
 
 - **Source:** ColorLib Atomic — https://colorlib.com/wp/template/atomic/
 - **Preview:** https://preview.colorlib.com/theme/atomic/

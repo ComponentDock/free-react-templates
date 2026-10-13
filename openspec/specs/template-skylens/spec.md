@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Drone Photography" as a React 19 + Vite + Tailwind 4 + TypeScript template under the name **SkyLens**.
+A Drone Photography template with hero, services grid with three, video/how we work section and contact form with fields sections. Recreation of ColorLib "Drone Photography" as a React 19 + Vite + Tailwind 4 + TypeScript template under the name **SkyLens**.
 
 - **Source:** https://colorlib.com/wp/template/dronephotography/
 - **Preview:** https://preview.colorlib.com/theme/dronephotography/

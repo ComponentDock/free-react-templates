@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Proshoot" photography portfolio template.
+A Photography Portfolio template with hero banner, about, services, portfolio gallery, pricing and blog sections. Recreation of ColorLib's "Proshoot" photography portfolio template.
 
 - **Source slug:** `proshoot`
 - **ColorLib URL:** https://colorlib.com/wp/template/proshoot/

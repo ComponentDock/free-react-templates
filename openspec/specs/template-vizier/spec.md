@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Mona** template as a modern model agency landing page.
+A personal template with header / navigation, hero carousel, about section, services section and model gallery with tabs sections. Recreation of ColorLib's **Mona** template as a modern model agency landing page.
 
 - **Source slug:** `mona`
 - **ColorLib page:** https://colorlib.com/wp/template/mona/

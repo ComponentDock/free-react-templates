@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Provide a free React recreation of the ColorLib "Eventz" digital conference template, featuring a hero with countdown, about section, gallery, pricing cards, sponsors, blog posts, and a branded footer.
+A Digital Conference template with hero, countdown, about, gallery, pricing and sponsors sections. Provide a free React recreation of the ColorLib "Eventz" digital conference template, featuring a hero with countdown, about section, gallery, pricing cards, sponsors, blog posts, and a branded footer.
 
 ## Requirements
 

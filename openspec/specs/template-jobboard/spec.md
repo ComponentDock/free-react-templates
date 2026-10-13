@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Careers** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+A careers template with hero, stats banner, job listings, company logos and cta banner sections. Recreation of ColorLib's **Careers** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/careers/
 - **Preview:** https://preview.colorlib.com/theme/careers/

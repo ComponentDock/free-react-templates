@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Ezuca** template as a React 19 + Vite + Tailwind 4 + TypeScript template.
+An education and online learning template with top header bar, hero, icon boxes, featured courses and gallery sections. Recreation of the ColorLib **Ezuca** template as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/ezuca/
 - **Preview:** https://preview.colorlib.com/theme/ezuca/

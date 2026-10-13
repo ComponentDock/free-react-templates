@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Calendar 03" (https://colorlib.com/wp/template/calendar-03/)
-as "CalDay" — a dual side-by-side interactive calendar component built with
-React 19, Tailwind CSS 4, and TypeScript.
+A dual side-by-side interactive calendar component built with React 19, Tailwind CSS 4, and TypeScript. Recreation of ColorLib "Calendar 03" (https://colorlib.com/wp/template/calendar-03/) as "CalDay".
 
 ## Requirements
 

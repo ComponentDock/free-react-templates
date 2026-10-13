@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Store** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+An E-Commerce / Fashion Store template with hero slider, featured products, sale banner, new arrivals and recent blog sections. Recreation of the ColorLib **Store** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source:** [ColorLib Store](https://colorlib.com/wp/template/store/)
 - **Preview:** https://preview.colorlib.com/theme/store/

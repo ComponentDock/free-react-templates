@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Tasty** — a restaurant landing template with hero slider, reservation form, tabbed menu, specials, testimonials, blog, and instagram grid.
+A restaurant landing template with hero slider, reservation form, tabbed menu, specials, testimonials, blog, and instagram grid. Recreation of ColorLib **Tasty**.
 
 - **Source slug:** `tasty`
 - **Preview URL:** https://preview.colorlib.com/theme/tasty/

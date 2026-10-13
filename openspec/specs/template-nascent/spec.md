@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Thestartup" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page startup landing site.
+A Landing Page template with hero, services, about, pricing, features and blog sections. Recreation of ColorLib "Thestartup" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page startup landing site.
 
 - **Source:** https://colorlib.com/wp/template/thestartup/
 - **Preview:** https://preview.colorlib.com/theme/thestartup/

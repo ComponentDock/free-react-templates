@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- **ColorLib Template Source:** Solicitor (`https://colorlib.com/wp/template/solicitor/`)
+A legal and investigation services template with hero, practice areas, consultants, services, resources and contact sections. - **ColorLib Template Source:** Solicitor (`https://colorlib.com/wp/template/solicitor/`)
 - **Live Preview URL:** `https://preview.colorlib.com/theme/solicitor/`
 - **Assigned New Name:** `lawguard`
 - **App Directory:** `apps/lawguard`

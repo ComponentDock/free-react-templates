@@ -4,7 +4,7 @@ Recreation of ColorLib Thelogistico (`https://colorlib.com/wp/template/thelogist
 
 ## Purpose
 
-Provide a free, production-ready React landing page for logistics and cargo transport companies, faithfully recreating the ColorLib Thelogistico design under the original name "Logistix" with React 19, Tailwind CSS 4, and TypeScript.
+A Bootstrap 5 logistics template with navigation, hero, services, about us and our mission sections. Provide a free, production-ready React landing page for logistics and cargo transport companies, faithfully recreating the ColorLib Thelogistico design under the original name "Logistix" with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens
 

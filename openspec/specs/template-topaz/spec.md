@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Bootstrap Footer 14** — a dark-themed footer with a charcoal background, golden amber accent color, four-column layout (brand description, categories list, tag cloud, subscribe form + social icons), and a bottom copyright bar on a darker strip.
+A dark-themed footer with a charcoal background, golden amber accent color, four-column layout. It also includes tag cloud, subscribe form + social icons), and a bottom copyright bar on a darker strip. Recreation of ColorLib's **Bootstrap Footer 14**.
 
 - **Source:** Bootstrap Footer 14 — https://colorlib.com/wp/template/bootstrap-footer-14/
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-14/

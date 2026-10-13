@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Adventure 2" template as a React 19 + Vite + Tailwind 4 + TypeScript travel agency website.
+A Travel Agency template with dark, hero, search tabs, features intro, featured destinations and services sections. Recreation of ColorLib's "Adventure 2" template as a React 19 + Vite + Tailwind 4 + TypeScript travel agency website.
 
 - **Source**: ColorLib "Adventure 2" — https://colorlib.com/wp/template/adventure-2/
 - **Preview**: https://preview.colorlib.com/theme/adventure2/ (note: URL uses "adventure2" without hyphen)

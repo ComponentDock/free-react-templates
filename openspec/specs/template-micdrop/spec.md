@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "The Hustle Hour" — a dark-themed podcast website template.
+A dark-themed podcast website template. Recreation of ColorLib "The Hustle Hour".
 
 - **Source slug:** `the-hustle-hour`
 - **Source URL:** https://colorlib.com/wp/template/the-hustle-hour/

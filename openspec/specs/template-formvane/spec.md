@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **ColorLib Wizard 9** — a three-step user profile wizard form template with progressive disclosure, icon-labeled input fields, a country dropdown, and a category selection grid.
+A three-step user profile wizard form template with progressive disclosure, icon-labeled input fields, a country dropdown. It also includes and a category selection grid. Recreation of **ColorLib Wizard 9**.
 
 - **Source slug:** `colorlib-wizard-9`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-wizard-9/

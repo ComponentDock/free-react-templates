@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Jobstart** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+A Job Portal template with header/nav, hero, recent jobs, features and blog sections. Recreation of ColorLib's **Jobstart** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/jobstart/
 - **Preview:** https://preview.colorlib.com/theme/jobstart/

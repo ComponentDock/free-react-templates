@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Colorlib Search Form V19** — a standalone flight search form widget with a gradient card overlay on a full-viewport background image.
+A standalone flight search form widget with a gradient card overlay on a full-viewport background image. Recreation of ColorLib **Colorlib Search Form V19**.
 
 ## Source
 

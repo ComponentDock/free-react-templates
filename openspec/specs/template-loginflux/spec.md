@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Login Form 13" (slug: `login-form-v13`).
+A Sign-Up Form template with full-page split-screen, left, sign-up form with five, email and username and terms agreement checkbox sections. Recreation of ColorLib "Login Form 13" (slug: `login-form-v13`).
 
 - ColorLib source: `https://colorlib.com/wp/template/login-form-v13/`
 - Preview URL: `https://preview.colorlib.com/theme/login-form-v13/` (404 — preview no longer available; design captured from screenshot)

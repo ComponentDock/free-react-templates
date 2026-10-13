@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Modal 13" template — a centered full-viewport page with a Bootstrap-style light pink modal popup featuring an email subscription form, Instagram branding, and a "No, thanks" / "Subscribe" dual-button layout.
+A centered full-viewport page with a Bootstrap-style light pink modal popup featuring an email subscription form, Instagram branding. It also includes and a "No, thanks" / "Subscribe" dual-button layout. Recreation of the ColorLib "Modal 13" template.
 
 - **Source:** [ColorLib Modal 13](https://colorlib.com/wp/template/modal-13/)
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/modal-13/

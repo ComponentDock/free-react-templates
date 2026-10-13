@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Skwela** template — a clean, Bootstrap-based online
-education and course platform with a dark-overlay hero, blue primary accent,
-Source Sans Pro typography, and course grid layout.
+A clean, Bootstrap-based online education and course platform with a dark-overlay hero, blue primary accent, Source Sans Pro typography. It also includes and course grid layout. Recreation of the ColorLib **Skwela** template.
 
 - **Source:** https://colorlib.com/wp/template/skwela/
 - **Preview:** https://preview.colorlib.com/theme/skwela/

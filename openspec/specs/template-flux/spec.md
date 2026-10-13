@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Pixel** digital agency website template.
+A Digital Agency template with category tiles, newsletter subscription and contact sections. Recreation of ColorLib's **Pixel** digital agency website template.
 
 - Source slug: `pixel`
 - Source URL: https://colorlib.com/wp/template/pixel/

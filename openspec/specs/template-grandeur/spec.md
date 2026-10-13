@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Radisson** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
+A luxury hotel template with hero, booking form, about, rooms, blog posts and footer sections. Recreation of ColorLib's **Radisson** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
 
 - **Source:** [colorlib.com/wp/template/radisson/](https://colorlib.com/wp/template/radisson/)
 - **Preview:** [preview.colorlib.com/theme/radisson/](https://preview.colorlib.com/theme/radisson/)

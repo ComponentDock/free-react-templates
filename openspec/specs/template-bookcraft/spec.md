@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Booke** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page landing site for authors promoting a book.
+A Book / Author template with hero, sticky navigation, features, about author, newsletter subscription and footer with contact form sections. Recreation of ColorLib's **Booke** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page landing site for authors promoting a book.
 
 - **ColorLib source:** https://colorlib.com/wp/template/booke/
 - **Preview URL:** https://preview.colorlib.com/theme/booke/

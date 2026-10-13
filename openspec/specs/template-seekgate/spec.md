@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Search 9" — an advanced search form bar
-with keyword input, category filter dropdowns, result count, and action
-buttons on a clean pastel background.
+An advanced search form bar with keyword input, category filter dropdowns, result count, and action buttons on a clean pastel background. Recreation of ColorLib "Colorlib Search 9".
 
 - **Source:** https://colorlib.com/wp/template/colorlib-search-9/
 - **Preview:** https://preview.colorlib.com/theme/colorlib-search-9/ — returned 404

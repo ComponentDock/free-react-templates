@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Travelix" template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page travel agency site.
+A Travel Agency template with main navigation, hero slider, search panel, intro / best tours, cta slider and best sections. Recreation of the ColorLib "Travelix" template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page travel agency site.
 
 - **Source template:** [ColorLib Travelix](https://colorlib.com/wp/template/travelix/)
 - **Live preview:** https://preview.colorlib.com/theme/travelix/

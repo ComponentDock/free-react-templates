@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **Colorlib Reg Form V26** — a clean, centered account registration form with a light blue full-viewport background and decorative corner images.
+A clean, centered account registration form with a light blue full-viewport background and decorative corner images. Recreation of **Colorlib Reg Form V26**.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-regform-26/
 - **Live preview:** https://colorlib.com/etc/regform/colorlib-regform-26/

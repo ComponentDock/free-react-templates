@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Sidebar V06 — a sidebar navigation template with a
-branded logo, search input, icon-based nav menu, and a two-column blog post
-grid in the main content area.
+A sidebar navigation template with a branded logo, search input, icon-based nav menu, and a two-column blog post grid in the main content area. Recreation of ColorLib Sidebar V06.
 
 Source: https://colorlib.com/wp/template/colorlib-sidebar-v06/
 Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v06/ (unreachable — 404; spec based on screenshot)

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **SolarShift** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
+A Solar Energy Business template with hero, stats bar, services, roi calculator, installation timeline and cta banner sections. Recreation of the ColorLib **SolarShift** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
 
 - **Source name:** SolarShift
 - **ColorLib slug:** `solarshift`

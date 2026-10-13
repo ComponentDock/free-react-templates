@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V15** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+A minimal login form template with a centered sign-in card, username and password fields. Recreation of ColorLib **Login Form V15** as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source slug:** `login-form-v15`
 - **Preview URL:** https://colorlib.com/etc/lf/Login_v15/index.html

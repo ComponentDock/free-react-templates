@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Ecoho" hotel template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
+A hotel template with hero, about, popular rooms, video preview, booking and blog sections. Recreation of ColorLib "Ecoho" hotel template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
 
 - **Source:** [colorlib.com/wp/template/ecoho/](https://colorlib.com/wp/template/ecoho/)
 - **Preview:** [preview.colorlib.com/theme/ecoho/](https://preview.colorlib.com/theme/ecoho/)

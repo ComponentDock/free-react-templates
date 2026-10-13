@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Eventalk** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript application.
+An event conference template with full-viewport hero, venue features, fun facts and a day schedule sections. Recreation of ColorLib's **Eventalk** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript application.
 
 - **ColorLib source:** https://colorlib.com/wp/template/eventalk/
 - **Preview URL:** https://preview.colorlib.com/theme/eventalk/

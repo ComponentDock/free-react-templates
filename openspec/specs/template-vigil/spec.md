@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "05 Comming Soon" (`05-comming-soon`).
+A Coming Soon template with full-screen background, heading, description paragraph, countdown timer, notify us cta button and social media sections. Recreation of ColorLib "05 Comming Soon" (`05-comming-soon`).
 
 - **Source:** https://colorlib.com/wp/template/05-comming-soon/
 - **Preview (template HTML):** https://preview.colorlib.com/theme/05-comming-soon/ (404 — unreachable)

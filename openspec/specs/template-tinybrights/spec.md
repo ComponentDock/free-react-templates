@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Kiddos" — a children's education & kindergarten
-website template.
+A children's education & kindergarten website template. Recreation of ColorLib "Kiddos".
 
 - **Source:** https://colorlib.com/wp/template/kiddos/
 - **Preview:** https://preview.colorlib.com/theme/kiddos/

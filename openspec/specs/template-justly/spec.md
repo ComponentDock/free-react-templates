@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Justly is a single-page fitness trainer landing template — a React recreation of
-the ColorLib free "Zacson" template
-(preview: https://preview.colorlib.com/theme/zacson/ — gym trainer personal site),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Fitness Trainer template with hero, training categories, services, gallery, pricing and about sections. Justly is a single-page fitness trainer landing template — a React recreation of the ColorLib free "Zacson" template (preview: https://preview.colorlib.com/theme/zacson/ — gym trainer personal site), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original (see docs/replication.md):
 

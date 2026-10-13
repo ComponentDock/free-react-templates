@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Multiselect V15" — a free state multiselect dropdown snippet
-using Bootstrap Framework.
+A free state multiselect dropdown snippet using Bootstrap Framework. Recreation of ColorLib "Multiselect V15".
 
 - **Source**: https://colorlib.com/wp/template/multiselect-15/
 - **Preview**: https://preview.colorlib.com/theme/bootstrap/multiselect-15/

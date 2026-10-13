@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Alime** — a single-page photography portfolio template.
+A single-page photography portfolio template. Recreation of ColorLib's **Alime**.
 
 - **Source slug:** `alime`
 - **Preview URL:** https://preview.colorlib.com/theme/alime/

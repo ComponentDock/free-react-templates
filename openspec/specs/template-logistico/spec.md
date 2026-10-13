@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Thelogistico" (`https://colorlib.com/wp/template/thelogistico/`, preview: `https://preview.colorlib.com/theme/thelogistico/`), built as a modern, responsive React application with Vite, Tailwind CSS v4, and Lucide React icons.
+A Logistics & Cargo Transport template with navigation & header, hero section & quick, services grid and about / transport solution sections. Recreation of ColorLib "Thelogistico" (`https://colorlib.com/wp/template/thelogistico/`, preview: `https://preview.colorlib.com/theme/thelogistico/`), built as a modern, responsive React application with Vite, Tailwind CSS v4, and Lucide React icons.
 
 ## Design Tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Pato" — a modern Italian restaurant website template.
+A modern Italian restaurant website template. Recreation of ColorLib "Pato".
 
 - **Source slug:** `pato`
 - **Source URL:** https://colorlib.com/wp/template/pato/

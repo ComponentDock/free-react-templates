@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Regform 19" (https://colorlib.com/wp/template/colorlib-regform-19/)
-as a React 19 + Vite + Tailwind CSS 4 + TypeScript registration form template.
+A Registration Forms template with all form fields, form fields, user and form sections. Recreation of ColorLib "Regform 19" (https://colorlib.com/wp/template/colorlib-regform-19/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript registration form template.
 
 ## Requirements
 

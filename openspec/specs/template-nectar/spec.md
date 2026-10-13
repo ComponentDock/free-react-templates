@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Bee" — a construction company one-page template with
-a hero slider, request-a-quote form, services grid, project gallery, counter
-stats, testimonials carousel, blog cards, and a dark footer.
+A construction company one-page template with a hero slider, request-a-quote form, services grid, project gallery, counter stats. It also includes testimonials carousel, blog cards, and a dark footer. Recreation of ColorLib "Bee".
 
 - **Source**: [ColorLib Bee](https://colorlib.com/wp/template/bee/)
 - **Preview**: https://preview.colorlib.com/theme/bee/

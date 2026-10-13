@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Sidebar V02 — a left-profile-panel sidebar layout with a blog post grid.
+A left-profile-panel sidebar layout with a blog post grid. Recreation of ColorLib Sidebar V02.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-sidebar-v02/
 - **Preview:** https://preview.colorlib.com/theme/colorlib-sidebar-v02/ (404 — preview unreachable; design captured from TEMPLATES.md screenshot)

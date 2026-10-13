@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Dentacare" template as a React 19 + Vite + Tailwind 4 + TypeScript dental clinic website.
+A Dental Clinic template with hero, emergency and hours, services, about, team and achievements counter sections. Recreation of ColorLib's "Dentacare" template as a React 19 + Vite + Tailwind 4 + TypeScript dental clinic website.
 
 - **Source**: ColorLib "Dentacare" — https://colorlib.com/wp/template/dentacare/
 - **Preview**: https://preview.colorlib.com/theme/dentacare/

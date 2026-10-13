@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Bakery2** template.
+A bakery and restaurant template with hero banner, about story, canvas and full menus, table booking and testimonials sections. Recreation of ColorLib's **Bakery2** template.
 
 - **Source:** https://colorlib.com/wp/template/bakery2/
 - **Preview:** https://preview.colorlib.com/theme/bakery2/

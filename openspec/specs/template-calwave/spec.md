@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar 06 (`https://colorlib.com/wp/template/calendar-06/`), built as a modern React 19 + Vite + Tailwind CSS 4 application named `calwave`.
+A Calendar & Timepiece Planner template with calendar & timepiece, hero and features sections. Recreation of ColorLib Calendar 06 (`https://colorlib.com/wp/template/calendar-06/`), built as a modern React 19 + Vite + Tailwind CSS 4 application named `calwave`.
 
 ## Design tokens
 

@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Jobpply** template
-(preview: https://preview.colorlib.com/theme/jobpply/).
+A Job Board / Recruitment template with feature highlight, job categories, specialism search, job listings and candidate profiles sections. Recreation of ColorLib's **Jobpply** template (preview: https://preview.colorlib.com/theme/jobpply/).
 
 JobVane is a job board / recruitment marketplace single-page website with a
 blue hero feature bar, category browsing, job listings, recruitment agencies,

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Loanday** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+A loan and finance template with top bar, hero, loan services, why choose us, counter, blog and contact sections. Recreation of the ColorLib **Loanday** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source:** https://colorlib.com/wp/template/loanday/
 - **Preview analyzed:** https://preview.colorlib.com/theme/loanday/

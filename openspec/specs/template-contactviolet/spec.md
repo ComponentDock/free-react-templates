@@ -2,10 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V9** — a centered single-column contact
-form floating over a Google Maps background with a purple/magenta gradient
-overlay, featuring inline field validation (error + success states), a
-gradient submit button, and a phone contact line below the form.
+A centered single-column contact form floating over a Google Maps background with a purple/magenta gradient overlay. It also includes featuring inline field validation (error + success states), a gradient submit button, and a phone contact line below the form. Recreation of ColorLib **Contact Form V9**.
 
 - **Source slug:** `contact-form-v9`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v9/

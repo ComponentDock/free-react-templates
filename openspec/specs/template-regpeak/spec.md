@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **Colorlib Reg Form V32** — a split-screen registration form with a dark-to-cyan gradient background, left-side image panel, and a centered white card containing the form.
+A split-screen registration form with a dark-to-cyan gradient background, left-side image panel, and a centered white card containing the form. Recreation of **Colorlib Reg Form V32**.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-regform-32/
 - **Live preview:** https://colorlib.com/etc/regform/colorlib-regform-32/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Rea" template — a creative portfolio and blog grid layout with animated headline, masonry-style image grid, hover overlays, and a full-screen navigation overlay.
+A creative portfolio and blog grid layout with animated headline, masonry-style image grid, hover overlays, and a full-screen navigation overlay. Recreation of the ColorLib "Rea" template.
 
 - **Source:** ColorLib "Rea" — https://colorlib.com/wp/template/rea/
 - **Preview:** https://preview.colorlib.com/theme/rea/

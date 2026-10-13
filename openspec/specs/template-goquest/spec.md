@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Gotrip" travel/tour booking template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
+A Travel & Tour Booking template with hero section with search, services section with 4 icon and favourite places with 6 tour sections. Recreation of ColorLib "Gotrip" travel/tour booking template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
 
 - **Source:** [colorlib.com/wp/template/gotrip/](https://colorlib.com/wp/template/gotrip/)
 - **Preview:** [preview.colorlib.com/theme/gotrip/](https://preview.colorlib.com/theme/gotrip/)

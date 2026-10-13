@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Bitcoin" — a cryptocurrency / bitcoin landing page template.
+A cryptocurrency / bitcoin landing page template. Recreation of ColorLib "Bitcoin".
 
 - **Source slug:** `bitcoin`
 - **ColorLib page:** https://colorlib.com/wp/template/bitcoin/

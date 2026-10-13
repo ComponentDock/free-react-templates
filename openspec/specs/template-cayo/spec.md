@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Islagrande" hotel template.
+A hotel template with hero, booking form, services, rooms, counter and video about sections. Recreation of ColorLib "Islagrande" hotel template.
 
 - Source slug: `islagrande`
 - Source URL: https://colorlib.com/wp/template/islagrande/

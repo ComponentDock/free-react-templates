@@ -2,11 +2,7 @@
 
 ## Purpose
 
-ListNest is a single-page directory & listing template — an original React
-recreation of the ColorLib free "Listing" template
-(preview: https://preview.colorlib.com/theme/listing/ — directory/listing site),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Directory & Listing template with hero section with search, find places, featured places, browse categories and add listing cta sections. ListNest is a single-page directory & listing template — an original React recreation of the ColorLib free "Listing" template (preview: https://preview.colorlib.com/theme/listing/ — directory/listing site), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original (see docs/replication.md):
 

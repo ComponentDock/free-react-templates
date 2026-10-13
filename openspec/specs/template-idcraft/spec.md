@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Idcraft is a single-page personal vCard / resume template — it is an original
-React recreation of the ColorLib free "Vcard" template
-(preview: https://preview.colorlib.com/theme/vcard/index-onepage.html),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Personal vCard & Resume template with hero, about, skills, services, portfolio and cool facts sections. Idcraft is a single-page personal vCard / resume template — it is an original React recreation of the ColorLib free "Vcard" template (preview: https://preview.colorlib.com/theme/vcard/index-onepage.html), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original (see docs/replication.md):
 

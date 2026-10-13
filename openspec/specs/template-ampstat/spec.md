@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Music** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A music template with hero, song, tours, app section, featured albums and news sections. Recreation of ColorLib **Music** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/music/
 - Preview: https://preview.colorlib.com/theme/music/

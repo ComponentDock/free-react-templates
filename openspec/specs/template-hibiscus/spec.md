@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Hiroto" hotel template.
+A hotel template with hero, services, rooms and gallery sections. Recreation of ColorLib "Hiroto" hotel template.
 
 - Source slug: `hiroto`
 - Source URL: https://colorlib.com/wp/template/hiroto/

@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Modal 15" template — a sign-up form pop-up modal
-with a promotional image on the left, three-field form (email, name, password)
-on the right, and a full-width "Sign up" CTA button.
+A sign-up form pop-up modal with a promotional image on the left, three-field form (email, name, password) on the right. It also includes and a full-width "Sign up" CTA button. Recreation of the ColorLib "Modal 15" template.
 
 - **Source:** [ColorLib Modal 15](https://colorlib.com/wp/template/modal-15/)
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/modal-15/

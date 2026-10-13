@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Cvportfolio" — a boxed CV/portfolio/resume single-page
-template with a yellow accent, profile photo, portfolio grid, and work experience.
+A boxed CV/portfolio/resume single-page template with a yellow accent, profile photo, portfolio grid, and work experience. Recreation of ColorLib "Cvportfolio".
 
 - **ColorLib source:** https://colorlib.com/wp/template/cvportfolio/
 - **Preview URL:** https://preview.colorlib.com/theme/cvportfolio/

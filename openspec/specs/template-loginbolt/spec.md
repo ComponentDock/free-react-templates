@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V17** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Login Form template with form title, input fields, sign in button, forgot password and sign up and form validation sections. Recreation of ColorLib **Login Form V17** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v17/
 - **Preview URL:** https://preview.colorlib.com/theme/login-form-v17/ (unreachable at prep time — 404; design tokens extracted from downloaded source zip)

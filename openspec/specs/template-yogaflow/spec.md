@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Regform 22** — a free yoga class registration form template that suits other sports and activities too.
+A free yoga class registration form template that suits other sports and activities too. Recreation of ColorLib **Regform 22**.
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-regform-22/
 - **Preview (Colorlib):** https://colorlib.com/etc/regform/colorlib-regform-22/

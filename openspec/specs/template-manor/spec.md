@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **The Estate** template (`theestate`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+A Real Estate template with hero, search box, featured properties, workflow, cities and cta sections. Recreation of ColorLib's **The Estate** template (`theestate`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/theestate/
 - **Preview:** https://preview.colorlib.com/theme/theestate/

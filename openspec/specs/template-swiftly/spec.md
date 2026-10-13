@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Easy" (https://colorlib.com/wp/template/easy/)
-as a fintech / SaaS landing page with payment focus, built with React 19,
-Tailwind CSS 4, and TypeScript.
+A Landing Page template with navbar navigation and pricing sections. Recreation of ColorLib "Easy" (https://colorlib.com/wp/template/easy/) as a fintech / SaaS landing page with payment focus, built with React 19, Tailwind CSS 4, and TypeScript.
 
 ### Design tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Eighty8" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A DJ / Radio Station template with hero, podcast and charts sections. Recreation of ColorLib "Eighty8" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - **Source:** ColorLib "Eighty8" — https://colorlib.com/wp/template/eighty8/
 - **Preview:** https://preview.colorlib.com/theme/eighty8/

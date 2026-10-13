@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Colorlib Wizard 4** — a free multi-step course registration form wizard template.
+A free multi-step course registration form wizard template. Recreation of ColorLib's **Colorlib Wizard 4**.
 
 - **Source slug:** `colorlib-wizard-4`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-wizard-4/

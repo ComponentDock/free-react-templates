@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Acupuncture** free website template.
+A Health & Wellness template with hero, services row, about / why choose us, service cards, blog and cta banner sections. Recreation of ColorLib's **Acupuncture** free website template.
 
 - Source: https://colorlib.com/wp/template/acupuncture/
 - Preview: https://preview.colorlib.com/theme/acupuncture/

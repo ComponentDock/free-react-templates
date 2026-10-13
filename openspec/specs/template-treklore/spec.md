@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Travello" template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page travel agency site.
+A Travel & Tourism template with hero slider, search form, intro / features, popular destinations, why choose us and featured tours sections. Recreation of the ColorLib "Travello" template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page travel agency site.
 
 - **Source template:** [ColorLib Travello](https://colorlib.com/wp/template/travello/)
 - **Live preview:** https://preview.colorlib.com/theme/travello/

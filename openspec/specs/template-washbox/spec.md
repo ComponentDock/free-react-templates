@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Carwash](https://colorlib.com/wp/template/carwash/) for the ComponentDock free React template marketplace.
+A Car Wash / Automotive Services template with hero, equipment, pricing cards, services and video cta sections. Recreation of [ColorLib Carwash](https://colorlib.com/wp/template/carwash/) for the ComponentDock free React template marketplace.
 
 - **Preview URL:** https://preview.colorlib.com/theme/carwash/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/carwash-free-template.jpg

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Sunfest** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Music Festival / Concert Event template with hero, lineup artists, complete lineup, next events and last news sections. Recreation of the ColorLib **Sunfest** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - **ColorLib source:** https://colorlib.com/wp/template/sunfest/
 - **Live preview:** https://preview.colorlib.com/theme/sunfest/

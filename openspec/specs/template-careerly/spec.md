@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Jobfinder" (https://colorlib.com/wp/template/jobfinder/).
+A Job Board & Career Portal template with hero search, popular categories, recent jobs, featured jobs and cta banner sections. Recreation of ColorLib "Jobfinder" (https://colorlib.com/wp/template/jobfinder/).
 
 A job board and career portal template with a search hero, category browsing, recent/featured job listings, testimonials, and a call-to-action banner. Brand color: `#28a745` (green). Font: 'Work Sans', sans-serif.
 

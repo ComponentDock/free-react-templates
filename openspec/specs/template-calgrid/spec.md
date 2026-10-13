@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`), a clean calendar date picker template featuring a centered dual-calendar grid layout with month navigation and a minimal footer.
+A clean calendar date picker template featuring a centered dual-calendar grid layout with month navigation and a minimal footer. Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`).
 
 ## Requirements
 

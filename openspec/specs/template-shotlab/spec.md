@@ -2,7 +2,7 @@
 
 ## Purpose
 
-ShotLab is a single-page PHOTOGRAPHY PORTFOLIO recreation of ColorLib's "Mostudio" template.
+A photography portfolio template with sidebar navigation, portfolio gallery, about, pricing and contact sections. ShotLab is a single-page PHOTOGRAPHY PORTFOLIO recreation of ColorLib's "Mostudio" template.
 
 - **Source:** https://colorlib.com/wp/template/mostudio/
 - **Preview:** https://preview.colorlib.com/theme/mostudio/

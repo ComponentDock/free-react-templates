@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Classic** business template as a React 19 + Vite +
-Tailwind CSS 4 + TypeScript single-page application.
+A business template with hero, about, services, skills, portfolio and team sections. Recreation of the ColorLib **Classic** business template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/classic/
 - **Preview:** https://preview.colorlib.com/theme/classic/

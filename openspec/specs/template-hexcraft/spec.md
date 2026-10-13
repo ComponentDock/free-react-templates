@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Colorlib Wizard 2** — a multi-step online booking/reservation wizard template.
+A multi-step online booking/reservation wizard template. Recreation of ColorLib's **Colorlib Wizard 2**.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-wizard-2/
 - **Preview (original):** https://colorlib.com/etc/bwiz/colorlib-wizard-2/index.html

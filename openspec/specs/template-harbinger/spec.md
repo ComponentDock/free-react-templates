@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "04 Comming Soon" (`04-comming-soon`).
+A Coming Soon template with under construction heading, email subscription and social media sections. Recreation of ColorLib "04 Comming Soon" (`04-comming-soon`).
 
 - **Source:** https://colorlib.com/wp/template/04-comming-soon/
 - **Preview (template HTML):** https://colorlib.com/etc/cs/04-comming-soon.html

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Casahotel" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
+A Hotel / Resort template with hero, check availability, about section, great, gallery and events sections. Recreation of the ColorLib "Casahotel" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
 
 - **Source slug:** `casahotel`
 - **Source URL:** https://colorlib.com/wp/template/casahotel/

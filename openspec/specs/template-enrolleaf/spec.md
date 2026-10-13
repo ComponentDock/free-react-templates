@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Signup Form V01" template — a full-viewport
-split-screen signup form with a background image on one side and a clean
-registration form on the other.
+A full-viewport split-screen signup form with a background image on one side and a clean registration form on the other. Recreation of the ColorLib "Signup Form V01" template.
 
 - **Source:** [ColorLib Signup Form 01](https://colorlib.com/wp/template/signup-form-01/)
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/signup-form-01/

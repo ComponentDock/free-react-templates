@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of **ColorLib Regform 5** (`colorlib-regform-5`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+An Event Registration Form template with name field, company field, email field, phone field, subject dropdown and customer radio buttons sections. Recreation of **ColorLib Regform 5** (`colorlib-regform-5`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-regform-5/
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-5/ (unreachable; screenshot used as sole reference)

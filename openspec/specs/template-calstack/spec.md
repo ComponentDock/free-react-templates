@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar 15 (`https://colorlib.com/wp/template/calendar-15/`), an interactive calendar date picker and event scheduling interface featuring dual month grids with navigation and a minimal branded footer.
+An interactive calendar date picker and event scheduling interface featuring dual month grids with navigation and a minimal branded footer. Recreation of ColorLib Calendar 15 (`https://colorlib.com/wp/template/calendar-15/`).
 
 ## Requirements
 

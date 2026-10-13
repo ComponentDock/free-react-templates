@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Accordion 20 as **Jade**, an elegant FAQ / accordion template built with React 19, TypeScript, and Tailwind CSS 4.
+An elegant FAQ / accordion template built with React 19, TypeScript, and Tailwind CSS 4. Recreation of ColorLib Accordion 20 as **Jade**.
 
 ## Requirements
 

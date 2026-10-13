@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Major** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Beach Hotel / Resort template with hero, search / booking box, room features and gallery sections. Recreation of ColorLib's **Major** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - **Source slug:** `major`
 - **ColorLib page:** https://colorlib.com/wp/template/major/

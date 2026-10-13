@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib Halo photography portfolio template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app under the name "Beacon".
+A Photography Portfolio template with hero, intro, portfolio, services and contact sections. Recreate the ColorLib Halo photography portfolio template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app under the name "Beacon".
 
 Source: https://colorlib.com/wp/template/halo/
 Preview: https://preview.colorlib.com/theme/halo/

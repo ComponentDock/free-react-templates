@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Rolax** hotel template.
+A hotel template with hero, about, rooms, services, video, guest reviews and brand logo sections. Recreation of ColorLib's **Rolax** hotel template.
 
 - **Source:** https://colorlib.com/wp/template/rolax/
 - **Preview:** https://preview.colorlib.com/theme/rolax/

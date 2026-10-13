@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search 14** (hotel/booking search form widget).
+A hotel booking search form widget template with filter fields and a branded search bar. Recreation of ColorLib **Search 14** (hotel/booking search form widget).
 
 - **Source slug:** `colorlib-search-14`
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-14/ (unreachable at time of prep — falling back to screenshot)

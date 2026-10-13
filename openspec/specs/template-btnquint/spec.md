@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 05** as **BtnQuint**, a modern React button showcase and playground built with React 19, TypeScript, and Tailwind CSS 4.
+A modern React button showcase and playground built with React 19, TypeScript, and Tailwind CSS 4. Recreation of ColorLib **Bootstrap Buttons 05** as **BtnQuint**.
 
 ## Requirements
 

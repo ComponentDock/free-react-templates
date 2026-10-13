@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Rea** template — a creative portfolio and blog
-template with a masonry grid layout, animated typing headline, and clean
-pink-accent aesthetic.
+A creative portfolio and blog template with a masonry grid layout, animated typing headline, and clean pink-accent aesthetic. Recreation of ColorLib's **Rea** template.
 
 - **Source:** https://colorlib.com/wp/template/rea/
 - **Preview:** https://preview.colorlib.com/theme/rea/

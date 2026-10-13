@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Homey" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page real estate template.
+A Real Estate template with hero property slider, services, properties carousel, features and why us sections. Recreation of the ColorLib "Homey" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page real estate template.
 
 - **Source slug:** `homey`
 - **Source URL:** https://colorlib.com/wp/template/homey/

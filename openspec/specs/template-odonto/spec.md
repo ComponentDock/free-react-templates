@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Toothcare** (`https://colorlib.com/wp/template/toothcare/`, preview: `https://preview.colorlib.com/theme/toothcare/`) as a modern, responsive React 19 + TypeScript + Tailwind CSS 4 application named `@free-react-templates/odonto`.
+A dental clinic template with top bar, hero, info cards, services, appointment booking, team and testimonials sections. Recreation of ColorLib **Toothcare** (`https://colorlib.com/wp/template/toothcare/`, preview: `https://preview.colorlib.com/theme/toothcare/`) as a modern, responsive React 19 + TypeScript + Tailwind CSS 4 application named `@free-react-templates/odonto`.
 
 ## Design tokens (Extracted from reference)
 

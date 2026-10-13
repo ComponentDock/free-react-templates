@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Signup Form 07** — a split-screen registration page
-with a flat vector illustration on the left and a centered signup form on the
-right, featuring social login buttons.
+A split-screen registration page with a flat vector illustration on the left and a centered signup form on the right. It also includes featuring social login buttons. Recreation of ColorLib **Signup Form 07**.
 
 - **Source:** [ColorLib Signup Form 07](https://colorlib.com/wp/template/signup-form-07/)
 - **Preview:** https://preview.colorlib.com/theme/signup-form-07/ (UNREACHABLE — 404; design tokens captured from screenshot)

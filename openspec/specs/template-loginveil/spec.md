@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Login Form 16" (slug: `login-form-16`).
+A Login Form template with split-screen login card, left half, right half and form submission prevents sections. Recreation of ColorLib "Login Form 16" (slug: `login-form-16`).
 
 - Preview URL: `https://preview.colorlib.com/theme/bootstrap/login-form-16/`
 - ColorLib source: `https://colorlib.com/wp/template/login-form-16/`

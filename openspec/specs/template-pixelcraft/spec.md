@@ -2,10 +2,7 @@
 
 ## Purpose
 
-Pixelcraft is a single-page creative digital agency template — a React recreation
-of the ColorLib free "Boxus" template
-(preview: https://preview.colorlib.com/theme/boxus/), built under a different name
-with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+A Creative Agency template with hero, services, portfolio, about / crafters, stories and expertise sections. Pixelcraft is a single-page creative digital agency template — a React recreation of the ColorLib free "Boxus" template (preview: https://preview.colorlib.com/theme/boxus/), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original:
 

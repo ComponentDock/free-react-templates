@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Gourmet** — a restaurant/food landing page with dark navbar, hero slider, about section, gallery, special menu carousel, our menu grid, testimonials, blog, and footer.
+A restaurant/food landing page with dark navbar, hero slider, about section, gallery, special menu carousel, our menu grid, testimonials. It also includes blog, and footer. Recreation of ColorLib's **Gourmet**.
 
 - **Source:** Gourmet — https://colorlib.com/wp/template/gourmet/
 - **Preview:** https://preview.colorlib.com/theme/gourmet/

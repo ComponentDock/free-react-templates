@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V15** — a centered card with a banner header
-image, "Contact Us" title, and a four-field contact form (underline-style inputs)
-on a dark map background.
+A centered card with a banner header image, "Contact Us" title, and a four-field contact form (underline-style inputs) on a dark map background. Recreation of ColorLib **Contact Form V15**.
 
 - **Source slug:** `contact-form-v15`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v15/

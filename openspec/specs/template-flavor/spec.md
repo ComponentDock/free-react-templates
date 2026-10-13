@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Luto" (https://colorlib.com/wp/template/luto/)
-Preview: https://preview.colorlib.com/theme/luto/
+A Restaurant Website template with header with navigation, info bar with contact, about, parallax introduction and tabbed menu sections. Recreation of ColorLib "Luto" (https://colorlib.com/wp/template/luto/) Preview: https://preview.colorlib.com/theme/luto/
 
 Flavor is a restaurant one-pager with warm orange (#FF6107) branding, Poppins + Lora fonts, full-screen hero, tabbed menu, reservation form, and testimonials.
 

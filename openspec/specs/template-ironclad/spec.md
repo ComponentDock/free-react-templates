@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Wilcon** — a construction company website template with hero section, features strip, about section, CTA bar, services, stats/counter, project gallery, testimonials, and footer.
+A construction company website template with hero section, features strip, about section, CTA bar, services, stats/counter. It also includes project gallery, testimonials, and footer. Recreation of ColorLib **Wilcon**.
 
 - **Source slug:** `wilcon`
 - **Preview URL:** https://preview.colorlib.com/theme/wilcon/

@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Multiselect 13
-(https://colorlib.com/wp/template/multiselect-13/).
+A Multiselect Dropdown template with multiselect dropdown, selecting an option creates and multiple selections sections. Recreation of ColorLib Multiselect 13 (https://colorlib.com/wp/template/multiselect-13/).
 
 Preview URL: https://preview.colorlib.com/theme/bootstrap/multiselect-13/
 

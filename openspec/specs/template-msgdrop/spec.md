@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V13** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+A Contact Form template with split-screen contact form, contact form fields, send button and footer attribution sections. Recreation of ColorLib **Contact Form V13** as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source**: https://colorlib.com/wp/template/contact-form-v13/
 - **Preview URL**: https://preview.colorlib.com/theme/contact-form-v13/ (returned 404 at time of research — screenshot used as sole reference)

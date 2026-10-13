@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Rettro" photography template.
+A photography portfolio template with hero, about, services, gallery, pricing and instagram feed sections. Recreation of ColorLib "Rettro" photography template.
 
 - **Source:** https://colorlib.com/wp/template/rettro/
 - **Preview:** https://preview.colorlib.com/theme/rettro/

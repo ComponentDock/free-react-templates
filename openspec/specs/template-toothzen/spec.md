@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Dentamax" template as a React 19 + Vite + Tailwind 4 + TypeScript dental clinic website.
+A Dental Clinic template with hero, services, features and appointment, about, team and counter sections. Recreation of ColorLib's "Dentamax" template as a React 19 + Vite + Tailwind 4 + TypeScript dental clinic website.
 
 - **Source**: ColorLib "Dentamax" — https://colorlib.com/wp/template/dentamax/
 - **Preview**: https://preview.colorlib.com/theme/dentamax/

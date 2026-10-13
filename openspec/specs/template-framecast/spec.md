@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Portfolio 2" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page portfolio website for creative agencies and freelancers.
+A personal template with header navigation, hero, portfolio, services and blog sections. Recreation of ColorLib's "Portfolio 2" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page portfolio website for creative agencies and freelancers.
 
 - **Source template:** Portfolio 2 — https://colorlib.com/wp/template/portfolio-2/
 - **Live preview:** https://preview.colorlib.com/theme/portfolio2/

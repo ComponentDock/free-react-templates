@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Sidebar V10** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+A sidebar blog template with a cyan-accented nav panel, toggle button and a responsive post grid. Recreation of ColorLib's **Sidebar V10** as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source slug:** `colorlib-sidebar-v10`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-sidebar-v10/

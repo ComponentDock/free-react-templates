@@ -4,7 +4,7 @@ Recreation of ColorLib "Supreme" (https://colorlib.com/wp/template/supreme/).
 
 ## Purpose
 
-Provide a free, production-ready React recreation of the ColorLib "Supreme" industrial manufacturing landing page template, using the Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+An Industrial Manufacturing Landing template with hero, services, about, faq, portfolio and team sections. Provide a free, production-ready React recreation of the ColorLib "Supreme" industrial manufacturing landing page template, using the Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Design Tokens
 

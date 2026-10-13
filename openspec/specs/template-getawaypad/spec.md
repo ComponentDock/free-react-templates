@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Vacation Rental** apartment booking template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+A Vacation Rental / Apartment template with hero, book your apartment, services, apartment rooms, cta intro and blog sections. Recreation of ColorLib's **Vacation Rental** apartment booking template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/vacation-rental/
 - **Preview (analyzed):** https://preview.colorlib.com/theme/vacationrental/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Login Form 14 as Logincove — a split-screen sign-in form template with gold accent, Lato font, Facebook/Twitter social login, and "Not a member? Sign Up" CTA.
+A split-screen sign-in form template with gold accent, Lato font, Facebook/Twitter social login, and "Not a member? Sign Up" CTA. Recreation of ColorLib Login Form 14 as Logincove.
 
 - Source: https://colorlib.com/wp/template/login-form-14/
 - Preview: https://preview.colorlib.com/theme/bootstrap/login-form-14/

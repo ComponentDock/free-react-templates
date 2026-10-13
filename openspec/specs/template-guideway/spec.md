@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Consulotion** template as a modern consulting business website.
+A consulting and IT agency template with top utility bar, hero banner, features, services and stats counter sections. Recreation of ColorLib's **Consulotion** template as a modern consulting business website.
 
 - **Source slug:** `consulotion`
 - **ColorLib page:** https://colorlib.com/wp/template/consulotion/

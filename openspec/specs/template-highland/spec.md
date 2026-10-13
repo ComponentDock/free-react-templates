@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Montana** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Hotel / Resort template with hero slider, about, video, dining, featured rooms and reservation query sections. Recreation of ColorLib **Montana** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/montana/
 - Preview: https://preview.colorlib.com/theme/montana/

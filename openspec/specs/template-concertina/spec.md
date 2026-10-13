@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib `accordion-05` (`https://colorlib.com/wp/template/accordion-05/`).
+An Accordion & FAQ Showcase template with sticky navigation header, hero banner, interactive accordion & faq and feature highlights grid sections. Recreation of ColorLib `accordion-05` (`https://colorlib.com/wp/template/accordion-05/`).
 
 - **New Name**: Concertina (`apps/concertina`)
 - **Category**: Accordion / FAQ / Interactive Display

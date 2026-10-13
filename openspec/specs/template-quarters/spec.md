@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Props** — a real estate landing page with a transparent navbar over a full-viewport hero, property information split panel, apartment browse grid, featured apartments collage, customer testimonials carousel, news cards, social strip, and a three-column footer.
+A real estate landing page with a transparent navbar over a full-viewport hero, property information split panel, apartment browse grid. It also includes featured apartments collage, customer testimonials carousel, news cards, social strip, and a three-column footer. Recreation of ColorLib **Props**.
 
 - **Source slug:** `props`
 - **Preview URL:** https://preview.colorlib.com/theme/props/

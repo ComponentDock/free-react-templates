@@ -4,7 +4,7 @@ Recreation of ColorLib **Medex** (https://colorlib.com/wp/template/medex/)
 
 ## Purpose
 
-Build a medical and healthcare website template that faithfully recreates the ColorLib Medex design as a React 19 + Tailwind CSS 4 + TypeScript application under the name "Healix".
+A medical template with topbar with contact, statistics counter, about section with features, doctor profiles, blog and app sections. Build a medical and healthcare website template that faithfully recreates the ColorLib Medex design as a React 19 + Tailwind CSS 4 + TypeScript application under the name "Healix".
 
 ## Design Tokens
 

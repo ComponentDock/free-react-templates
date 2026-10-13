@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Elearn** template as a React 19 + Vite + Tailwind 4 + TypeScript application.
+An Education / Online Courses template with header/nav, home slider, featured course, courses cards, milestones/counters and why choose us sections. Recreation of ColorLib's **Elearn** template as a React 19 + Vite + Tailwind 4 + TypeScript application.
 
 - **Source template:** Elearn
 - **ColorLib URL:** https://colorlib.com/wp/template/elearn/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Eventro** — a conference/event landing page template.
+A conference/event landing page template. Recreation of ColorLib **Eventro**.
 
 - **ColorLib source:** https://colorlib.com/wp/template/eventro/
 - **Live preview:** https://preview.colorlib.com/theme/eventro/

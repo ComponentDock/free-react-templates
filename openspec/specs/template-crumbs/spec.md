@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Crumbs is a single-page cake shop landing template — a faithful React recreation
-of the ColorLib "Cakes" template
-(preview: https://preview.colorlib.com/theme/cakes/ — cake shop landing page),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Cake Shop template with hero, popular products, about and services sections. Crumbs is a single-page cake shop landing template — a faithful React recreation of the ColorLib "Cakes" template (preview: https://preview.colorlib.com/theme/cakes/ — cake shop landing page), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ### Design tokens captured from the original
 

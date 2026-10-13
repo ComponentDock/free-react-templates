@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **RedCayenne** — a premium restaurant landing page with top bar, navbar, hero slider, services grid, table booking form, menu showcase, chef profiles, events section, blog, and footer.
+A premium restaurant landing page with top bar, navbar, hero slider, services grid, table booking form, menu showcase, chef profiles. It also includes events section, blog, and footer. Recreation of ColorLib's **RedCayenne**.
 
 - **Source:** RedCayenne — https://colorlib.com/wp/template/redcayenne/
 - **Preview:** https://preview.colorlib.com/theme/redcayenne/

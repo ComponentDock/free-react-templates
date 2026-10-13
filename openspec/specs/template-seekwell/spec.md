@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search 18** (travel search form with tabbed categories: Hotels, Car, Flight).
+A Travel Search template with page shell and background, tab navigation, search form fields and travellers dropdown sections. Recreation of ColorLib **Search 18** (travel search form with tabbed categories: Hotels, Car, Flight).
 
 - **Source slug:** `colorlib-search-18`
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-18/ (404 at time of implementation — falling back to screenshot)

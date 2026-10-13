@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Poca** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Podcast & Audio template with hero/welcome carousel and featured guests sections. Recreation of ColorLib **Poca** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/poca/
 - Preview: https://preview.colorlib.com/theme/poca/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Bootstrap Footer 07** — a dark-themed footer with a black background, four-column layout (brand description, two nav link columns, social + CTA), and a centered copyright bar with a top border.
+A dark-themed footer with a black background, four-column layout (brand description, two nav link columns, social + CTA). It also includes and a centered copyright bar with a top border. Recreation of ColorLib's **Bootstrap Footer 07**.
 
 - **Source:** Bootstrap Footer 07 — https://colorlib.com/wp/template/bootstrap-footer-07/
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-07/

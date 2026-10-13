@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Bootstrap Footer V09** template as a modern React component.
+A Clean White Footer template with site logo and horizontal navigation sections. Recreation of ColorLib's **Bootstrap Footer V09** template as a modern React component.
 
 - **Source:** [colorlib.com/wp/template/bootstrap-footer-09/](https://colorlib.com/wp/template/bootstrap-footer-09/)
 - **Preview:** [preview.colorlib.com/theme/bft/bootstrap-footer-09/](https://preview.colorlib.com/theme/bft/bootstrap-footer-09/)

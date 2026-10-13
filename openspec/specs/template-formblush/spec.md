@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Regform 24** — a free sign-up form template with a split-screen layout featuring a decorative photo on the left and a pink form panel on the right.
+A free sign-up form template with a split-screen layout featuring a decorative photo on the left and a pink form panel on the right. Recreation of ColorLib **Regform 24**.
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-regform-24/
 - **Preview (Colorlib):** https://preview.colorlib.com/theme/colorlib-regform-24/ (404 — using screenshot as reference)

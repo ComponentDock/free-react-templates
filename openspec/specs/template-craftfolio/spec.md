@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Steve** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page portfolio app.
+A Portfolio / Personal template with hero / banner carousel, portfolio / work and about sections. Recreation of ColorLib's **Steve** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page portfolio app.
 
 - **Source slug:** `steve`
 - **Preview URL:** https://preview.colorlib.com/theme/steve/

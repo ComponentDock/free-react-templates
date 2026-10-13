@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Gilb" — a personal resume/portfolio template with a dark
-navy background, coral accent, masonry portfolio grid, services cards, and
-client review carousel.
+A personal resume/portfolio template with a dark navy background, coral accent, masonry portfolio grid, services cards, and client review carousel. Recreation of ColorLib "Gilb".
 
 - **ColorLib source:** https://colorlib.com/wp/template/gilb/
 - **Preview URL:** https://preview.colorlib.com/theme/gilb/

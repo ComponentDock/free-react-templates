@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Consulto** template as a modern consulting business landing page.
+A business template with header / navigation, hero / slider, services section, about / philosophy section and accordion / solutions sections. Recreation of ColorLib's **Consulto** template as a modern consulting business landing page.
 
 - **Source slug:** `consulto`
 - **ColorLib page:** https://colorlib.com/wp/template/consulto/

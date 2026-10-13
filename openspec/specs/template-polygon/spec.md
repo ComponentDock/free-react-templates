@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Hexa" — an architecture/design agency website template.
+An architecture/design agency website template. Recreation of ColorLib "Hexa".
 
 - **Source:** https://colorlib.com/wp/template/hexa/
 - **Preview:** https://preview.colorlib.com/theme/hexa/

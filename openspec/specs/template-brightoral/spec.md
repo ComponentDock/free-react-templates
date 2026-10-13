@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Dente" template as a React 19 + Vite + Tailwind 4 + TypeScript dental clinic website.
+A Dental Clinic template with hero, services intro, equipment, appointment form on cream, services and success stories sections. Recreation of ColorLib's "Dente" template as a React 19 + Vite + Tailwind 4 + TypeScript dental clinic website.
 
 - **Source**: ColorLib "Dente" — https://colorlib.com/wp/template/dente/
 - **Preview**: https://preview.colorlib.com/theme/dente/

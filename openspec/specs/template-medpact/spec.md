@@ -21,7 +21,7 @@ metadata:
 
 ## Purpose
 
-Recreate the ColorLib "Medicare" hospital & clinics website template as "Medpact" — a clean, professional medical landing page with navigation, hero, services, departments, doctors, appointment form, testimonials, blog, and footer.
+A clean, professional medical landing page with navigation, hero, services, departments, doctors, appointment form, testimonials, blog, and footer. Recreate the ColorLib "Medicare" hospital & clinics website template as "Medpact".
 
 ## Design Tokens
 

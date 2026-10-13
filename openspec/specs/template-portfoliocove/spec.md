@@ -2,7 +2,7 @@
 
 ## Purpose
 
-PortfolioCove is a minimalist portfolio template recreation of ColorLib's "Po Portfolio" template.
+A Minimalist Portfolio template with breadcrumb navigation, portfolio grid and document title sections. PortfolioCove is a minimalist portfolio template recreation of ColorLib's "Po Portfolio" template.
 
 - **Source:** https://colorlib.com/wp/template/po-portfolio/
 - **Preview:** https://preview.colorlib.com/theme/po-portfolio/ (unreachable at prep time — design derived from screenshot)

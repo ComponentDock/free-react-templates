@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Cleaning Company** template — a professional cleaning
-services website with a top contact bar, dark navbar with yellow accent, full-width
-hero, appointment booking form, welcome/about section, animated stats counter,
-service cards, team member grid, testimonials carousel, blog cards, parallax CTA,
-pricing table, and a 4-column footer.
+A professional cleaning services website with a top contact bar, dark navbar with yellow accent, full-width hero. It also includes appointment booking form, welcome/about section, animated stats counter, service cards, team member grid, testimonials carousel, blog cards, parallax CTA, pricing table, and a 4-column footer. Recreation of ColorLib's **Cleaning Company** template.
 
 - **Source slug:** `cleaning-company`
 - **ColorLib page:** https://colorlib.com/wp/template/cleaning-company/

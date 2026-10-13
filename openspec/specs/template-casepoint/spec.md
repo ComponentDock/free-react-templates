@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Casepoint is a single-page law firm landing template — a React recreation of
-the ColorLib free "TheLawyer" template
-(preview: https://preview.colorlib.com/theme/thelawyer/ — law firm landing),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Law Firm template with navigation header, hero, practice areas, about, contact and case studies sections. Casepoint is a single-page law firm landing template — a React recreation of the ColorLib free "TheLawyer" template (preview: https://preview.colorlib.com/theme/thelawyer/ — law firm landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original:
 

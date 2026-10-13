@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Reopen** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page portfolio gallery.
+A Portfolio Gallery template with logo and navigation, hero, portfolio and load more button sections. Recreation of ColorLib **Reopen** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page portfolio gallery.
 
 - **ColorLib source:** https://colorlib.com/wp/template/reopen/
 - **Live preview analyzed:** https://preview.colorlib.com/theme/reopen/

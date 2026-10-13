@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Advent** template (church/religious ministry site).
+A church ministry template with hero slider, upcoming events, worship times, sermons and ministries sections. Recreation of ColorLib's **Advent** template (church/religious ministry site).
 
 - **ColorLib source:** https://colorlib.com/wp/template/advent/
 - **Preview URL:** https://preview.colorlib.com/theme/advent/

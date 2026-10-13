@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Sidebar V01 — a social-media-style sidebar navigation
-template with a profile panel, stats, icon-based nav, and a blog post grid.
+A social-media-style sidebar navigation template with a profile panel, stats, icon-based nav, and a blog post grid. Recreation of ColorLib Sidebar V01.
 
 Source: https://colorlib.com/wp/template/colorlib-sidebar-v01/
 Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v01/

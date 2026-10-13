@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Bizcon** template — a business/consulting website
-with a gradient-orange accent, clean corporate aesthetic, and animated decorative
-elements.
+A business/consulting website with a gradient-orange accent, clean corporate aesthetic, and animated decorative elements. Recreation of ColorLib's **Bizcon** template.
 
 - **Source slug:** `bizcon`
 - **ColorLib page:** https://colorlib.com/wp/template/bizcon/

@@ -2,11 +2,7 @@
 
 ## Purpose
 
-RankForge is a single-page SEO agency landing template — a React recreation of
-the ColorLib free "Seos" template
-(preview: https://preview.colorlib.com/theme/seos/ — SEO agency landing),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A SEO Agency template with hero, what we do, we create steps, generating customers, pricing and portfolio sections. RankForge is a single-page SEO agency landing template — a React recreation of the ColorLib free "Seos" template (preview: https://preview.colorlib.com/theme/seos/ — SEO agency landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original (see docs/replication.md):
 

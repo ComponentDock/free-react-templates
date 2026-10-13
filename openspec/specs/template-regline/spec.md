@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Regform 6" — a centered job application form on a dark background with labeled fields (full name, email, message textarea, CV upload) and a blue submit button.
+A centered job application form on a dark background with labeled fields (full name, email, message textarea, CV upload) and a blue submit button. Recreation of ColorLib "Colorlib Regform 6".
 
 - **Source**: https://colorlib.com/wp/template/colorlib-regform-6/
 - **Preview**: https://preview.colorlib.com/theme/colorlib-regform-6/ (iframe-based; screenshot used as primary reference)

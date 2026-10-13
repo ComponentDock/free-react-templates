@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib [Contact Form V7](https://colorlib.com/wp/template/contact-form-v7/)
-Preview: https://colorlib.com/etc/cf/ContactFrom_v7/index.html
+A Contact Form template with form and checkbox sections. Recreation of ColorLib [Contact Form V7](https://colorlib.com/wp/template/contact-form-v7/) Preview: https://colorlib.com/etc/cf/ContactFrom_v7/index.html
 
 A minimal, centered contact form with Oswald font, left-aligned icon inputs,
 a custom checkbox, and a gradient pink-to-red submit button on a light gray

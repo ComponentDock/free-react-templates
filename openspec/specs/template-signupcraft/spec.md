@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Signup Form 05" template — a split-screen
-registration page with a lifestyle background image on the left and a
-clean white card containing a signup form with email/password fields,
-terms checkbox, primary register button, and social login buttons on
-the right.
+A split-screen registration page with a lifestyle background image on the left and a clean white card containing a signup form. It also includes with email/password fields, terms checkbox, primary register button, and social login buttons on the right. Recreation of the ColorLib "Signup Form 05" template.
 
 - **Source:** [ColorLib Signup Form 05](https://colorlib.com/wp/template/signup-form-05/)
 - **Preview:** https://preview.colorlib.com/theme/signup-form-05/ (UNREACHABLE — 404; design tokens captured from screenshot)

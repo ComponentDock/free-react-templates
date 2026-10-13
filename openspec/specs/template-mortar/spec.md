@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Grunt** creative agency template as a React 19 +
-Vite + Tailwind CSS 4 + TypeScript single-page application.
+A Creative Agency template with hero, services, about, team, portfolio showcases project and gallery sections. Recreation of the ColorLib **Grunt** creative agency template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/grunt/
 - **Preview:** https://preview.colorlib.com/theme/grunt/

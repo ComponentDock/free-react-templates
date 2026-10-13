@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Thelook" template as a React 19 + Vite +
-Tailwind CSS 4 + TypeScript single-page photography/artist portfolio landing
-page.
+A Photography Portfolio template with hero slider, gallery, blog, logo + description text, useful and instagram/contact info sections. Recreation of the ColorLib "Thelook" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page photography/artist portfolio landing page.
 
 - Source slug: `thelook`
 - Source URL: https://colorlib.com/wp/template/thelook/

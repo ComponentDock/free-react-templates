@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Hvac** template
+A car dealership and rental template with hero search, services, trust features and vehicle listings sections. Recreation of the ColorLib **Hvac** template
 ([colorlib.com/wp/template/hvac/](https://colorlib.com/wp/template/hvac/)),
 preview at [preview.colorlib.com/theme/hvac/](https://preview.colorlib.com/theme/hvac/).
 

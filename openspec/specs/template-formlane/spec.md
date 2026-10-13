@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Reg Form V34" (`colorlib-regform-34`) — a two-in-one sign-up/sign-in form template with a split-layout card on a gradient background.
+A two-in-one sign-up/sign-in form template with a split-layout card on a gradient background. Recreation of ColorLib "Reg Form V34" (`colorlib-regform-34`).
 
 - **Source:** https://colorlib.com/wp/template/colorlib-regform-34/
 - **Live preview:** https://colorlib.com/etc/regform/colorlib-regform-34/

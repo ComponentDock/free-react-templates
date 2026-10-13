@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Cleanex** cleaning service website template.
+A cleaning services template with topbar, hero, features, process, industries, pricing and testimonials sections. Recreation of ColorLib's **Cleanex** cleaning service website template.
 
 - Source slug: `cleanex`
 - Source URL: https://colorlib.com/wp/template/cleanex/

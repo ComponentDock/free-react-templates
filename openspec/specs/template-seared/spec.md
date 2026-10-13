@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Diner** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+A Restaurant / Fine Dining template with buttons & shapes and site header and navigation sections. Recreation of ColorLib's **Diner** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source slug:** `diner`
 - **Preview URL:** https://preview.colorlib.com/theme/diner/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Whitespace** business consulting template.
+A Business Consulting template with hero section, about section, services grid, counter stats, projects gallery and case study sections. Recreation of ColorLib's **Whitespace** business consulting template.
 
 - Source slug: `whitespace`
 - Source URL: https://colorlib.com/wp/template/whitespace/

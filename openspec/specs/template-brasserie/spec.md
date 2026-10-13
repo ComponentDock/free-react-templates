@@ -2,11 +2,7 @@
 
 ## Purpose
 
-Brasserie is a premium restaurant landing page — a faithful React recreation of
-the ColorLib free "Caviar" template
-(preview: https://preview.colorlib.com/theme/caviar/ — restaurant/food landing),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Premium Restaurant template with hero, about, specials / menu and awards sections. Brasserie is a premium restaurant landing page — a faithful React recreation of the ColorLib free "Caviar" template (preview: https://preview.colorlib.com/theme/caviar/ — restaurant/food landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original (see docs/replication.md):
 

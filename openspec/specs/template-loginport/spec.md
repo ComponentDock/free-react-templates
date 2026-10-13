@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V8** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Login Form template with full-viewport centered, login card with green header, username input field and password input field sections. Recreation of ColorLib **Login Form V8** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v8/
 - **Preview URL:** https://colorlib.com/etc/lf/Login_v8/index.html

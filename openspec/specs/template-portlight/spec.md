@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Harbor Lights" hotel reservation template.
+A Hotel Reservation template with hero, booking, services, rooms and blog sections. Recreation of ColorLib "Harbor Lights" hotel reservation template.
 
 - Source slug: `harbor-lights`
 - Source URL: https://colorlib.com/wp/template/harbor-lights/

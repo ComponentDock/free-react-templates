@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Malefashion** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+A Men's Fashion E-Commerce template with hero carousel, banner with 3 category items and product grid with filter sections. Recreation of the ColorLib **Malefashion** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/malefashion/
 - **Preview:** https://preview.colorlib.com/theme/malefashion/

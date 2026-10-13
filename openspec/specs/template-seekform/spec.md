@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Search Form 6" (https://colorlib.com/wp/template/colorlib-search-6/) — a full-page search hero with a prominent search input, category pills, and a lifestyle background image.
+A full-page search hero with a prominent search input, category pills, and a lifestyle background image. Recreation of ColorLib "Search Form 6" (https://colorlib.com/wp/template/colorlib-search-6/).
 
 ## Requirements
 

@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Amado" — a furniture e-commerce landing page with
-a sidebar navigation, product category grid with hover effects, newsletter
-section, and a minimal footer.
+A furniture e-commerce landing page with a sidebar navigation, product category grid with hover effects, newsletter section, and a minimal footer. Recreation of ColorLib "Amado".
 
 - **Source**: [ColorLib Amado](https://colorlib.com/wp/template/amado/)
 - **Preview**: https://preview.colorlib.com/theme/amado/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 05** — a standalone search form bar component with a category dropdown, text input, and search icon button.
+A standalone search form bar component with a category dropdown, text input, and search icon button. Recreation of ColorLib **Search Form Bar 05**.
 
 ## Requirements
 

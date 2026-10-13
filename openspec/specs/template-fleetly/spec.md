@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Car Rental" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page car rental template.
+A Car Rental template with hero/banner, features, about, car models, facts/stats and reviews sections. Recreation of the ColorLib "Car Rental" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page car rental template.
 
 - **Source:** ColorLib Car Rental — https://colorlib.com/wp/template/car-rental/
 - **Live preview:** https://preview.colorlib.com/theme/carrental/

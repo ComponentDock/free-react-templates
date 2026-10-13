@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Credo" (https://colorlib.com/wp/template/credo/) — a photographer personal portfolio with warm gold accent design tokens, featuring a split navbar, hero section, services grid, about with progress bars, photo gallery, testimonials carousel, blog cards, contact form, and 4-column footer.
+A photographer personal portfolio with warm gold accent, featuring a split navbar, hero section, services grid, about with progress bars. It also includes photo gallery, testimonials carousel, blog cards, contact form, and 4-column footer. Recreation of ColorLib "Credo" (https://colorlib.com/wp/template/credo/).
 
 ## Requirements
 

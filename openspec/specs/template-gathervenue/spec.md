@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Event** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript application.
+An Events / Conference template with hero section fills viewport, about section with stat, gallery carousel, video cta and schedule sections. Recreation of ColorLib's **Event** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript application.
 
 - **ColorLib source:** https://colorlib.com/wp/template/event/
 - **Preview URL:** https://preview.colorlib.com/theme/event/

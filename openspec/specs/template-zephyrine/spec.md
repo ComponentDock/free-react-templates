@@ -2,8 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dinomuz** — a creative agency website template with a bold
-pink-to-orange gradient aesthetic, boxed layout, and portfolio-focused design.
+A creative agency website template with a bold pink-to-orange gradient aesthetic, boxed layout, and portfolio-focused design. Recreation of ColorLib **Dinomuz**.
 
 - **Source:** https://colorlib.com/wp/template/dinomuz/
 - **Preview:** https://preview.colorlib.com/theme/dinomuz/

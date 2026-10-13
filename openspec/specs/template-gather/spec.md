@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Gather is an interactive accordion component template inspired by ColorLib "Accordion 10" (ColorLib Accordion V10), built under a new name with Vite, React 19, Tailwind CSS 4, and TypeScript.
+An accordion 10 template with interactive accordion steps and footer attribution sections. Gather is an interactive accordion component template inspired by ColorLib "Accordion 10" (ColorLib Accordion V10), built under a new name with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design reference
 

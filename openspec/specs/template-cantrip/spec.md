@@ -2,10 +2,7 @@
 
 ## Purpose
 
-- **Recreation of ColorLib source**: Colorlib Wizard 13 (`https://colorlib.com/wp/template/colorlib-wizard-13/`)
-- **New Name**: `cantrip` (App directory: `apps/cantrip`, Package: `@free-react-templates/cantrip`)
-- **Category**: Forms / Multi-step Accordion Wizard
-- **Description**: A clean, modern accordion-style form wizard for account registration with 3 collapsible steps: Basic Information, Additional Information, and Specialities.
+A Bootstrap Wizards template with accordion wizard navigation, step 1, step 2 and step 3 sections. - **Recreation of ColorLib source**: Colorlib Wizard 13 (`https://colorlib.com/wp/template/colorlib-wizard-13/`) - **New Name**: `cantrip` (App directory: `apps/cantrip`, Package: `@free-react-templates/cantrip`) - **Category**: Forms / Multi-step Accordion Wizard - **Description**: A clean, modern accordion-style form wizard for account registration with 3 collapsible steps: Basic Information, Additional Information, and Specialities.
 
 ## Requirements
 

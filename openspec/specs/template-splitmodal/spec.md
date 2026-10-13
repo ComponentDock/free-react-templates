@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Modal 19" template — a centered full-viewport page with a split-screen product review modal featuring a product image on the left, product details with star rating and social counters on the right.
+A centered full-viewport page with a split-screen product review modal featuring a product image on the left. It also includes product details with star rating and social counters on the right. Recreation of the ColorLib "Modal 19" template.
 
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 

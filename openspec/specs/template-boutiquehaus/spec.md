@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Shop** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+An Online Shop template with banner, category, hotdeal and brand sections. Recreation of the ColorLib **Shop** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/shop/
 - **Preview:** https://preview.colorlib.com/theme/shop/

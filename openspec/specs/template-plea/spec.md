@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Counselor** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+A Counseling / Legal Services template with top, hero, intro feature boxes, how it works, about and services sections. Recreation of ColorLib's **Counselor** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/counselor/
 - **Preview:** https://preview.colorlib.com/theme/counselor/

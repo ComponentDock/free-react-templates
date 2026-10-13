@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Archs" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
+An Architecture / Interior Design template with top, hero, features, about, team and pricing sections. Recreation of the ColorLib "Archs" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
 
 - **Source slug:** `archs`
 - **Source URL:** https://colorlib.com/wp/template/archs/

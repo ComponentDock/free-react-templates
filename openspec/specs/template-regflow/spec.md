@@ -2,12 +2,7 @@
 
 ## Purpose
 
-Regflow is a single-page registration/contact form template — a React
-recreation of the ColorLib free "Colorlib Regform 23" template
-(source: https://colorlib.com/wp/template/colorlib-regform-23/,
-demo: https://colorlib.com/etc/regform/colorlib-regform-23/),
-built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+A Registration / Contact Form template with form wrapper, form, form heading and description and form fields sections. Regflow is a single-page registration/contact form template — a React recreation of the ColorLib free "Colorlib Regform 23" template (source: https://colorlib.com/wp/template/colorlib-regform-23/, demo: https://colorlib.com/etc/regform/colorlib-regform-23/), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Design tokens captured from the original (see docs/replication.md):
 

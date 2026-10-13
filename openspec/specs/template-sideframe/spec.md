@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Sidebar V04 — a right-side contact form panel on a deep purple/indigo background, with a chat toggle button and a left-hand blog post grid on a gray background.
+A right-side contact form panel on a deep purple/indigo background, with a chat toggle button and a left-hand blog post grid on a gray background. Recreation of ColorLib Sidebar V04.
 
 ## Requirements
 

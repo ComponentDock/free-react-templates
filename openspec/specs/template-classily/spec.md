@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Classy Ads** classified ads website template.
+A Classified Ads Platform template with hero, category stats and featured ads sections. Recreation of ColorLib's **Classy Ads** classified ads website template.
 
 - Source slug: `classy-ads`
 - Source URL: https://colorlib.com/wp/template/classy-ads/

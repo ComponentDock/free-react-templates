@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "ListAshop" template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript application.
+An E-commerce Shop template with home banner, hot deals feature, featured products, timer / cta section, client logos and most products sections. Recreation of the ColorLib "ListAshop" template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript application.
 
 - **Source:** https://colorlib.com/wp/template/listashop/
 - **Preview:** https://preview.colorlib.com/theme/listashop/

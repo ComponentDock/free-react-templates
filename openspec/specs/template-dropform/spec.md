@@ -2,9 +2,7 @@
 
 ## Purpose
 
-DropForm is a React recreation of the ColorLib free "Contact Form V8" template —
-a clean contact form with a map background, white card layout, and green accent
-button.
+A clean contact form with a map background, white card layout, and green accent button. DropForm is a React recreation of the ColorLib free "Contact Form V8" template.
 
 - **Source**: ColorLib Contact Form V8 (`https://colorlib.com/wp/template/contact-form-v8/`)
 - **Preview URL**: `https://preview.colorlib.com/theme/contact-form-v8/`

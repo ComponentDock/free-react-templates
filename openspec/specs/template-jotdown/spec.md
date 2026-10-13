@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V19** — a centered single-column contact
-form overlaying a muted map background, with an email input field (envelope
-icon), a message textarea, and a rectangular blue submit button.
+A centered single-column contact form overlaying a muted map background, with an email input field (envelope icon), a message textarea. It also includes and a rectangular blue submit button. Recreation of ColorLib **Contact Form V19**.
 
 - **Source slug:** `contact-form-v19`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v19/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Listed" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+A Directory / Travel Listing template with hero, feature destinations, top destinations, section cover and featured destinations sections. Recreation of the ColorLib "Listed" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** ColorLib Listed — https://colorlib.com/wp/template/listed/
 - **Live preview:** https://preview.colorlib.com/theme/listed/

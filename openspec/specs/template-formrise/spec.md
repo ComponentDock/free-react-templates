@@ -2,9 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 07** — a single dark card with a form on
-the left and contact information on the right, featuring an orange/amber
-"Send Message" button and underline-style inputs on a dark background.
+A single dark card with a form on the left and contact information on the right, featuring an orange/amber "Send Message" button. It also includes and underline-style inputs on a dark background. Recreation of ColorLib **Contact Form 07**.
 
 - **Source slug:** `contact-form-07`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-07/

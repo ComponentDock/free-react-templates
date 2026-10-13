@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Coach** life coaching template.
+A consulting template with hero, about, training, services, gallery and blog sections. Recreation of ColorLib's **Coach** life coaching template.
 
 - **Source:** https://colorlib.com/wp/template/coach/
 - **Preview:** https://preview.colorlib.com/theme/coach/

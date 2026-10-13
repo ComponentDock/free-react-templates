@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Login Form V5** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page login page.
+A Login Form template with hover effects, focus effects, social login buttons, username field, password field and sign in button sections. Recreation of ColorLib's **Login Form V5** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page login page.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v5/
 - **Preview (live HTML):** https://colorlib.com/etc/lf/Login_v5/index.html

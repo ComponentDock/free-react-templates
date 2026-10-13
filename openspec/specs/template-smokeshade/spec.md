@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Hazze" — a dark-themed fashion agency/creative portfolio template with bold magenta accents.
+A dark-themed fashion agency/creative portfolio template with bold magenta accents. Recreation of ColorLib "Hazze".
 
 - **Source slug:** `hazze`
 - **Preview URL:** https://preview.colorlib.com/theme/hazze/

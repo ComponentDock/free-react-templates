@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Bootstrap Footer 08" — a dark footer with a background image overlay, column headings, navigation links in four columns, social icons, and a centered copyright bar.
+A dark footer with a background image overlay, column headings, navigation links in four columns, social icons, and a centered copyright bar. Recreation of ColorLib "Bootstrap Footer 08".
 
 - **Source:** ColorLib Bootstrap Footer 08 (https://colorlib.com/wp/template/bootstrap-footer-08/)
 - **Preview URL:** https://preview.colorlib.com/theme/bft/bootstrap-footer-08/

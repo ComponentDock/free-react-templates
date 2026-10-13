@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Lawfirm** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+A Legal / Law Firm template with hero, intro, about, counter stats, practice areas and case studies sections. Recreation of the ColorLib **Lawfirm** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source slug:** `lawfirm`
 - **Source URL:** https://colorlib.com/wp/template/lawfirm/
