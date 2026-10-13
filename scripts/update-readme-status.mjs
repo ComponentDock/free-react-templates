@@ -44,6 +44,7 @@ const surgeRe = /\[(\S+?)\]\((https:\/\/free-react-templates-(\S+?)\.surge\.sh|h
 let category = ''
 const allNames = new Set() // unique template names (total catalog = 1,646)
 const recreated = new Map() // app name -> { source, categories: Set, preview }
+const designsWithApps = new Map() // design name -> Set(app) — detects duplicates
 
 for (const line of templates.split('\n')) {
   const catMatch = line.match(/^## (.+?)(?: \(\d+\))?$/)
@@ -58,13 +59,20 @@ for (const line of templates.split('\n')) {
   const link = line.match(surgeRe)
   if (!link) continue
   const app = link[3] ?? link[4]
+  if (!designsWithApps.has(item[2])) designsWithApps.set(item[2], new Set())
+  designsWithApps.get(item[2]).add(app)
   if (!recreated.has(app)) {
     recreated.set(app, { source: item[2], categories: new Set(), preview: link[2] })
   }
   recreated.get(app).categories.add(category)
 }
 
-const total = allNames.size
+const total = allNames.size // catalog designs (the backlog unit in TEMPLATES.md)
+const covered = designsWithApps.size // designs with at least one shipped app
+const remaining = Math.max(total - covered, 0)
+// A design recreated by more than one app (two runs claimed the same source
+// design under different names) — surfaced instead of counting apps as designs.
+const duplicateDesigns = [...designsWithApps.values()].filter((apps) => apps.size > 1).length
 
 /** Strip provenance/boilerplate phrases from a candidate description sentence. */
 function stripSentence(s) {
@@ -102,7 +110,6 @@ function describe(app) {
 
 const apps = [...recreated.keys()].sort()
 const done = apps.length
-const remaining = total - done
 
 const rows = apps
   .map((app, i) => {
@@ -115,7 +122,9 @@ const rows = apps
 
 const section = `## Templates
 
-**Status:** ${done} / ${total} templates recreated · **${remaining} remaining**.
+**Status:** ${covered} / ${total} ColorLib designs recreated · **${remaining} remaining** · ${done} template apps shipped${
+  duplicateDesigns ? ` (${duplicateDesigns} designs were implemented twice — see docs/ai-context.md)` : ''
+}.
 
 > Updated automatically after every template merge
 > (\`node scripts/update-readme-status.mjs\`). Each row is an original React
@@ -141,4 +150,7 @@ if (start !== -1) {
   readme = readme.slice(0, insertAt) + section + readme.slice(insertAt)
 }
 fs.writeFileSync(README_PATH, readme)
-console.log(`README updated: ${done} recreated, ${remaining} remaining (of ${total}).`)
+console.log(
+  `README updated: ${covered}/${total} designs covered, ${remaining} remaining, ${done} apps shipped` +
+    (duplicateDesigns ? ` (${duplicateDesigns} designs implemented twice).` : '.'),
+)

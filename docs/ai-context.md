@@ -136,6 +136,12 @@ Key decisions (details in `docs/adr/`):
   internal-only components; keep exports only for what other modules import.
 - **`git identity:`** commits on this host use the machine identity unless a repo
   `user.name`/`user.email` is set locally.
+- **Duplicate implementations:** 75 ColorLib designs exist as two (or three)
+  apps, because the same source design is listed in several TEMPLATES.md
+  categories and each `- [ ]` row was claimed/build separately under its own
+  name (e.g. `autoroad` → `highway` + `roadly`; `hvac` → `clutch` + `aeroworks`).
+  The apps are complete and deployed; they are listed as separate README rows on
+  purpose. TEMPLATES.md is the authority — do not "fix" this by deleting an app.
 - **Deploy trigger:** the deploy Action runs on `push` to `main` (not on
   `pull_request: closed`) because `gh pr merge --delete-branch` cancels the
   in-flight PR-triggered run — 141 templates had been merged but never published
