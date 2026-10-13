@@ -136,3 +136,10 @@ Key decisions (details in `docs/adr/`):
   internal-only components; keep exports only for what other modules import.
 - **`git identity:`** commits on this host use the machine identity unless a repo
   `user.name`/`user.email` is set locally.
+- **Deploy trigger:** the deploy Action runs on `push` to `main` (not on
+  `pull_request: closed`) because `gh pr merge --delete-branch` cancels the
+  in-flight PR-triggered run — 141 templates had been merged but never published
+  that way. A nightly audit job re-probes every domain and redeploys the missing
+  ones (`scripts/audit-deployments.sh`, `docs/adr/0004`). Hosts that still serve
+  Surge's shared `CN=*.surge.sh` certificate answer fine over curl `-k` but show
+  a browser certificate warning — that class is reported, not auto-fixed.
