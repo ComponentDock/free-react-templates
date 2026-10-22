@@ -1,5 +1,19 @@
 # Threadline — Implementation Tasks & Design Notes
 
+<!-- doc-token-reverify:2026-10-22 -->
+
+> **Tokens re-verified against the live sheet (2026-10-22).** The rows below are the values the reference's own stylesheet paints, quoted with the rule that paints them; the sentence further down that carries the older value is a **screenshot approximation and is superseded** where the two differ.  CSS values are canonical over screenshots (`docs/replication.md`), so build the sheet's value.
+>
+> Live reference: <https://preview.colorlib.com/theme/malefashion/>
+>
+> | brief says | live sheet paints | evidence |
+> | --- | --- | --- |
+> | `#ff6363` | `#ff6b6b` | `.footer__copyright__text p a{color: #ff6b6b}` |
+>
+> If the quoted rule belongs to a different ROLE than the line you are building (a footer link's red is not a CTA's fill), read the sheet's own rule for your role instead of substituting across roles.
+
+<!-- /doc-token-reverify -->
+
 <!-- ref-reverify:2026-10-22 -->
 
 > **Reference re-verified live 2026-10-22** —
