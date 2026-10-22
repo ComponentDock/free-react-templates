@@ -9,7 +9,7 @@ describe('Hero', () => {
     expect(
       screen.getByRole('heading', {
         level: 1,
-        name: 'Another cool free template by the fine folks at colorlib',
+        name: 'Another cool free template from Component Dock',
       }),
     ).toBeInTheDocument()
 

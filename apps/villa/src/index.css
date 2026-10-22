@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Villa brand palette — recreated from the ColorLib "Layal" design
+  /* Villa brand palette — measured from the reference stylesheet
      (css/main.css): sky blue #77d5f7 accents + indigo #3c50ca gradient
      partner for buttons. */
   --color-brand: #77d5f7;

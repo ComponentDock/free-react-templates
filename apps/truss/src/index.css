@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Truss brand orange — from the original ColorLib "Kraft" preview
+  /* Truss brand orange — measured from the reference stylesheet
      (css/style.min.css): #ff5200 buttons, links, active nav, stat
      numbers, logo dot. */
   --color-brand: #ff5200;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Rently brand palette — recreated from the ColorLib "Carbook" design
+  /* Rently brand palette — measured from the reference stylesheet
      (css/style.css): blue #1089ff primary CTAs/accents. */
   --color-brand: #1089ff;
   --color-brand-dark: #0b6fd6;

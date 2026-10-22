@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Sojourn brand palette — recreated from the ColorLib "Sasha" preview
-   (https://preview.colorlib.com/theme/sasha/index-01.html) live DOM +
+/* Sojourn brand palette — measured from the reference stylesheet live DOM +
    assets/css/style.css: primary rust #af7152 (buttons, hover links, active
    nav, newsletter submit), dark #171717 (header-bottom bar), hairlines
    #e1e1e1/#eaeaea, meta gray #999. */

@@ -69,7 +69,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
-                Hello.colorlib@gmail.com
+                hello@componentdock.com
               </li>
             </ul>
           </div>
@@ -77,6 +77,14 @@ export function Footer() {
       </div>
       <div className="border-t border-gray-700 py-5 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} Gilded Hair Salon. All rights reserved.
+        {' · '}
+        More templates at{' '}
+        <a
+          href="https://www.componentdock.com/"
+          className="underline underline-offset-4 hover:text-brand"
+        >
+          Component Dock
+        </a>
       </div>
     </footer>
   )

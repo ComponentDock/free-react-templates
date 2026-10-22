@@ -28,7 +28,10 @@ export function Footer() {
         <p className="mt-6 flex items-center justify-center gap-1 text-[15px] text-meta/70">
           Copyright © {year} All rights reserved | This template is made with
           <Heart className="h-3.5 w-3.5 fill-[#dc3545] text-[#dc3545]" aria-label="love" />
-          by Colorlib
+          by{' '}
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            Component Dock
+          </a>
         </p>
         <div className="mt-4 flex items-center justify-center gap-5">
           {footerLegalLinks.map((link) => (

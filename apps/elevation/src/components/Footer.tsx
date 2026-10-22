@@ -63,7 +63,12 @@ export function Footer() {
           <div className="flex flex-col items-center gap-2 text-center text-xs text-white/50 sm:flex-row sm:text-left">
             <p>© 2026 Elevation. All rights reserved.</p>
             <span aria-hidden="true">·</span>
-            <p>recreation of ColorLib Buildarch</p>
+            <p>
+              More templates at{' '}
+              <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+                Component Dock
+              </a>
+            </p>
           </div>
         </div>
       </div>

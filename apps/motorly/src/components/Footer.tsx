@@ -185,7 +185,12 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-8 text-center text-xs text-white/50 sm:flex-row sm:text-left">
           <p>© 2026 Motorly. All rights reserved.</p>
-          <p>recreation of ColorLib Automotive</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

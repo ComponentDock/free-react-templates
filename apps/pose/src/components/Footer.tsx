@@ -88,8 +88,14 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-gray-500">
-          Pose — a free model agency template, recreated from ColorLib's Stylistic design.
+          Pose — a free model agency template, built with React and Tailwind CSS.
         </div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 py-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

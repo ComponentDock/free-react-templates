@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Serif brand palette — recreated from the ColorLib "Sensive" preview
-   (https://preview.colorlib.com/theme/sensive/) live DOM + css/style.css:
+/* Serif brand palette — measured from the reference stylesheet:
    brand orange #ff9907 (active nav, label chips, widget-title underlines,
    READ MORE text, footer accents), dark text #3a414e, blacks #222 (buttons,
    labels) / #000000 (footer) / #191919 (footer input) / #000022 (hover

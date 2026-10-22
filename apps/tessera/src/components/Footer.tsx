@@ -139,7 +139,12 @@ export function Footer() {
       <div className="border-t border-white/10 py-5">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-center text-xs text-white/50 sm:flex-row sm:px-6 sm:text-left">
           <p>© 2026 Tessera. All rights reserved.</p>
-          <p>recreation of ColorLib Mosaic</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

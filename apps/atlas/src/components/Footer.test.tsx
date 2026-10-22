@@ -19,7 +19,10 @@ describe('Footer', () => {
     expect(
       screen.getByText(new RegExp(`Copyright © ${new Date().getFullYear()} All rights reserved`)),
     ).toBeInTheDocument()
-    expect(screen.getByText(/made with ♥ by Colorlib/)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
 
     footerMenuLinks.forEach((label) => {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()

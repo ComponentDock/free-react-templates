@@ -14,7 +14,10 @@ describe('Footer', () => {
     expect(screen.getByRole('textbox', { name: /Email address/i })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /Subscribe/i })).toBeInTheDocument()
     expect(screen.getByText(/© 2026 Maison/i)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Loaft/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('submits the newsletter form without reloading and clears the input', async () => {

@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Vellum brand palette — recreated from the ColorLib "Readit" preview
-   (https://preview.colorlib.com/theme/readit/) live DOM + css/style.css:
+/* Vellum brand palette — measured from the reference stylesheet:
    brand gold #FFD369 (btn-primary bg/border, nav-link hover, active
    pagination), hero gradient #F200FF → #FFBA42 (45deg, opacity .8),
    navbar #343A40 (Bootstrap bg-dark), footer #3C312E (ftco-bg-dark),

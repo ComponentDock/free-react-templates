@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cantilever brand palette — recreated from the ColorLib "Maxitechture"
-     design (css/style.css): lime #a7cb00 accents (45 references). Hover
+  /* Cantilever brand palette — measured from the reference stylesheet (css/style.css): lime #a7cb00 accents (45 references). Hover
      shade #8fae00 approximates Bootstrap's 7.5% darken of the primary. */
   --color-brand: #a7cb00;
   --color-brand-dark: #8fae00;

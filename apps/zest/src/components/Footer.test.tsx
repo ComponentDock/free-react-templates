@@ -11,9 +11,12 @@ describe('Footer', () => {
     ).toBeInTheDocument()
   })
 
-  it('credits the original ColorLib design', () => {
+  it('credits Component Dock', () => {
     render(<Footer />)
 
-    expect(screen.getByText(/inspired by ColorLib's Zeedapp/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

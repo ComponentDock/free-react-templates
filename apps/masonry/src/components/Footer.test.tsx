@@ -25,7 +25,10 @@ describe('Footer', () => {
       expect(screen.getByRole('link', { name })).toBeInTheDocument()
     }
     expect(screen.getByText(/© 2026 Masonry\. All rights reserved/i)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Astral/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('clears the email field when the newsletter form is submitted', async () => {

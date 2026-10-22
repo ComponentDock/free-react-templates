@@ -11,8 +11,7 @@ export function Footer() {
           <div>
             <h3 className="font-display text-xl font-bold text-white">About Mosh</h3>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
-              A free creative business template inspired by a ColorLib design — recreated with
-              React, Tailwind CSS, and TypeScript.
+              A free creative business template built with React, Tailwind CSS, and TypeScript.
             </p>
             <div className="mt-6">
               <SocialLinks inverted />
@@ -77,6 +76,12 @@ export function Footer() {
             Made with <span aria-hidden="true">♥</span> by Mosh
           </p>
         </div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 py-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

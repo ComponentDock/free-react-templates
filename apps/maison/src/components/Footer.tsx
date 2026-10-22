@@ -89,7 +89,12 @@ export function Footer() {
 
       <div className="mx-auto mt-12 flex max-w-6xl flex-col items-center justify-between gap-2 border-t border-white/10 px-4 pt-8 text-center text-xs text-white/50 sm:flex-row sm:px-6 sm:text-left">
         <p>© 2026 Maison. All rights reserved.</p>
-        <p>recreation of ColorLib Loaft</p>
+        <p>
+          More templates at{' '}
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            Component Dock
+          </a>
+        </p>
       </div>
     </footer>
   )

@@ -47,8 +47,7 @@ export function Footer() {
             </p>
             <p className="mt-6 text-[13px] leading-relaxed text-white/50">
               Copyright &copy;{new Date().getFullYear()} All rights reserved | {BRAND} — a free
-              React recreation of the ColorLib Cause template, made with ❤ in the
-              free-react-templates monorepo.
+              React template, made with ❤ in the free-react-templates monorepo.
             </p>
           </div>
 
@@ -105,6 +104,12 @@ export function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 py-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

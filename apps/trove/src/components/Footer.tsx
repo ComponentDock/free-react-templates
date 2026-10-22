@@ -112,7 +112,13 @@ export function Footer() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row sm:px-6">
           <p className="text-xs text-white/50">Copyright © 2026 Trove. All rights reserved.</p>
           <p className="text-xs text-white/50">
-            This template is made with <span className="text-brand">Colorlib</span>
+            More templates at{' '}
+            <a
+              href="https://www.componentdock.com/"
+              className="text-brand underline underline-offset-4"
+            >
+              Component Dock
+            </a>
           </p>
         </div>
       </div>

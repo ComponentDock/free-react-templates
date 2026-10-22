@@ -1,6 +1,5 @@
-/* All copy/content for Serif, extracted from the ColorLib "Sensive" live
-   preview (https://preview.colorlib.com/theme/sensive/) on 2026-08-11.
-   Text is kept close to the original kind of content; brand name replaced
+/* All copy/content for Serif. Text keeps the reference content kinds; brand
+   name replaced
    with "Serif". Two original typos fixed (noted in the PR): "Catgory" →
    "Category", duplicated widget title → "Tags", "Instragram Feed" →
    "Instagram Feed", "SUBCRIBE" → "SUBSCRIBE". */
@@ -231,4 +230,4 @@ export const instagramTileLabel = (index: number) => `Instagram feed image ${ind
 export const followTitle = 'Follow Us'
 export const followTagline = 'Let us be social'
 export const copyright = `© ${new Date().getFullYear()} ${siteName}. All rights reserved.`
-export const footerCredit = 'Recreated from the ColorLib Sensive design'
+export const footerCredit = 'Component Dock'

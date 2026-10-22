@@ -46,8 +46,7 @@ export function Footer() {
               Masonry<span className="text-brand">.</span>
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
-              A free architecture landing template — an original React recreation of the ColorLib
-              Astral design, built with React, Tailwind CSS, and TypeScript.
+              A free architecture landing template, built with React, Tailwind CSS, and TypeScript.
             </p>
             <h3 className="mt-8 font-display text-sm font-bold uppercase tracking-wider text-brand">
               Recent Blog Posts
@@ -126,7 +125,12 @@ export function Footer() {
 
         <div className="mt-8 flex flex-col items-center justify-between gap-2 text-center text-xs text-white/50 sm:flex-row sm:text-left">
           <p>© 2026 Masonry. All rights reserved.</p>
-          <p>recreation of ColorLib Astral</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

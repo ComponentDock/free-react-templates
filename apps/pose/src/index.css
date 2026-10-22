@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pose brand palette — recreated from the ColorLib "Stylistic" design
+  /* Pose brand palette — measured from the reference stylesheet
      (css/style.css): hot pink #f34573 (primary — buttons, icons, links,
      accents), dark neutrals #212529 (ink text) / #343a40 (services band) /
      #191919 (appointment band), gray #6c757d (body copy), light #f8f9fa. */

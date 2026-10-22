@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Atrium brand orange — from the original ColorLib "Ararat" preview
+  /* Atrium brand orange — measured from the reference stylesheet
      (css/style.css): #ff5e13 (accents, link hovers, focus). */
   --color-brand: #ff5e13;
 

@@ -1,6 +1,6 @@
 import { instagramSectionLabel, instagramSeeds, instagramTileLabel, instagramTitle } from '../data'
 
-/* Instagram strip (#colorlib-instagram, padding 7em 0) — centered uppercase
+/* Instagram strip (#instagram, padding 7em 0) — centered uppercase
    "Instagram" heading + a row of 8 square image tiles (8-across desktop /
    4-across tablet / 2-across mobile, 200px tall). */
 export function InstagramStrip() {

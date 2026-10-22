@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Odyssey brand palette — recreated from the ColorLib "Ruft" preview
-   (https://preview.colorlib.com/theme/ruft/) live DOM + css/main.css:
+/* Odyssey brand palette — measured from the reference stylesheet:
    primary purple #8050fa (buttons, hover states, scrolled navbar, banner
    overlay rgba(128,80,250,0.8)), light lavender-grey #f9f9ff (widgets,
    pill buttons), dark #222222 (footer), soft #e9e9e9 (borders), card shadow

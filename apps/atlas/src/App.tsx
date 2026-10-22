@@ -19,7 +19,7 @@ import {
   trendingTitle,
 } from './data'
 
-/* Atlas — blog & magazine home page (ColorLib "World" recreation). Section
+/* Atlas — blog & magazine home page . Section
    order matches the preview 1:1: header → hero slider + numbered posts strip
    → "Don't Miss" tabs → "What's Trending" tabs → sidebar → cards row →
    Latest Articles / Most Popular Videos → Load More → footer. */

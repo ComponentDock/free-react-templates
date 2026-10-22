@@ -1,8 +1,5 @@
-/* All copy/content for Clamor, extracted from the ColorLib "Shout" live
-   preview (https://preview.colorlib.com/theme/shout/) on 2026-08-11
-   (HTTP 200, "Shout Template"; css/style.css parsed for tokens). Text is
-   kept close to the original kind of content; brand name replaced with
-   "Clamor". Three original demo typos fixed (noted in the PR):
+/* All copy/content for Clamor. Text keeps the reference content kinds;
+   brand name is "Clamor". Three demo typos fixed (noted in the PR):
    "Unobstrusive" → "Unobtrusive", "places to visits" → "places to visit",
    "Auio Post" → "Audio Post". */
 
@@ -203,7 +200,7 @@ export const subscribeLabel = 'Subscribe'
 export const subscribeSuccess = 'Thanks for subscribing!'
 export const emailError = 'Please enter a valid email address.'
 export const copyright = `© ${new Date().getFullYear()} ${siteName}. All rights reserved.`
-export const footerCredit = 'Recreated from the ColorLib Shout design'
+export const footerCredit = 'Component Dock'
 
 /* Off-canvas menu — right slide-in panel (360px, white, z-1002): search
    form (fafafa input + pink radius-0 search button), uppercase menu links

@@ -95,7 +95,12 @@ export function Footer() {
 
       <div className="mx-auto mt-12 flex max-w-6xl flex-col items-center justify-between gap-2 border-t border-slate/20 px-4 pt-8 text-center text-xs text-slate sm:flex-row sm:px-6 sm:text-left dark:text-white/50">
         <p>© 2026 Lintel. All rights reserved.</p>
-        <p>recreation of ColorLib Marga</p>
+        <p>
+          More templates at{' '}
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            Component Dock
+          </a>
+        </p>
       </div>
     </footer>
   )

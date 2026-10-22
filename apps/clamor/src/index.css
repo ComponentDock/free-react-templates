@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Clamor brand palette — recreated from the ColorLib "Shout" preview
-   (https://preview.colorlib.com/theme/shout/) live DOM + css/style.css:
+/* Clamor brand palette — measured from the reference stylesheet:
    brand pink #FF63B5 (intro panel bg, active nav link, footer social icons,
    btn-primary bg/border, search button, pagination active/hover, focus
    ring rgba(255,99,181,0.8)), hover shade #ff7dc1, whitesmoke body

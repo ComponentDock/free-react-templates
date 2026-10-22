@@ -1,8 +1,6 @@
-/* All copy/content for Lyceum, extracted from the ColorLib "Learnit" live
-   preview (https://preview.colorlib.com/theme/learnit/) on 2026-08-11.
-   Text keeps the source's kind of content; the brand name is replaced with
-   "Lyceum", source placeholder repetition is varied deliberately, and footer
-   attribution keeps the ColorLib credit line per project convention. */
+/* All copy/content for Lyceum. Text keeps the reference content kinds; the
+   brand name is "Lyceum", placeholder repetition is varied deliberately, and
+   the footer credits Component Dock per project convention. */
 
 export const siteName = 'Lyceum'
 export const skipLabel = 'Skip to main content'
@@ -12,7 +10,7 @@ export const documentTitle = 'Lyceum — Education Template'
 export const topBarSocials: readonly string[] = ['Facebook', 'Twitter', 'Dribbble', 'Behance']
 export const topBarPhone = '+440 012 3654 896'
 export const topBarPhoneLabel = 'Call us'
-export const topBarEmail = 'support@colorlib.com'
+export const topBarEmail = 'hello@componentdock.com'
 export const topBarEmailLabel = 'Email us'
 export const socialLabel = (name: string) => `Visit our ${name} page`
 
@@ -314,5 +312,5 @@ export const newsletterSuccess = 'Thanks for subscribing — check your inbox!'
 export const newsletterEmailLabel = 'Email address'
 export const footerSocials: readonly string[] = ['Facebook', 'Twitter', 'Dribbble', 'Behance']
 export const footerCredit = 'This template is made with'
-export const footerCreditBy = 'by Colorlib'
+export const footerCreditBy = 'by Component Dock'
 export const copyright = `Copyright © ${new Date().getFullYear()} All rights reserved |`

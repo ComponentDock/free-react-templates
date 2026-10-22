@@ -35,6 +35,9 @@ describe('Footer', () => {
       expect(screen.getByRole('link', { name })).toBeInTheDocument()
     }
     expect(screen.getByText(/© 2026 Facade\. All rights reserved/i)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Arclabs/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

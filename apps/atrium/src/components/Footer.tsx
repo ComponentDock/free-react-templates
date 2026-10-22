@@ -93,7 +93,10 @@ export function Footer() {
         </div>
 
         <p className="border-t border-white/10 pt-10 text-center text-sm text-white/50">
-          © 2026 Atrium. All rights reserved | Recreation of the ColorLib Ararat design
+          © 2026 Atrium. All rights reserved | More templates at{' '}
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            Component Dock
+          </a>
         </p>
       </div>
     </footer>

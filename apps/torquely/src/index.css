@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Torquely brand palette — recreated from the ColorLib "Autorepair" design
+  /* Torquely brand palette — measured from the reference stylesheet
      (css/style.css): orange #f79f24 primary CTAs/accents. */
   --color-brand: #f79f24;
   --color-brand-dark: #d97f0d;

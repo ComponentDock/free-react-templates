@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Terracotta brand orange — from the original ColorLib "Heaven" preview
+  /* Terracotta brand orange — measured from the reference stylesheet
      (css/style.css): #ff7e00 buttons, eyebrow tags, contact block. */
   --color-brand: #ff7e00;
 

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Anvil brand red — from the original ColorLib "Industrie" preview
+  /* Anvil brand red — measured from the reference stylesheet
      (css/style.css): #f23a2e buttons, accents, form focus. */
   --color-brand: #f23a2e;
 

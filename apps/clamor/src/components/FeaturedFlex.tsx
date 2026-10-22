@@ -10,7 +10,7 @@ import {
   sliderLabel,
 } from '../data'
 
-/* Featured flex (#colorlib-featured-flex) — 30% hot-pink intro panel with
+/* Featured flex (#featured-flex) — 30% hot-pink intro panel with
    the agency headline (table-centered white Tenor Sans h1 + uppercase
    sub-line) beside a 70% five-slide image carousel. Each slide is 600px
    tall with a dark overlay, a white title and an uppercase meta line pinned

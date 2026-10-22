@@ -25,7 +25,10 @@ describe('Footer', () => {
       expect(screen.getByRole('link', { name: link.label })).toBeInTheDocument()
     }
     expect(screen.getByText(/Copyright © \d{4}/)).toBeInTheDocument()
-    expect(screen.getByText(/by Colorlib/)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('rejects an invalid email with a validation error and does not submit', async () => {

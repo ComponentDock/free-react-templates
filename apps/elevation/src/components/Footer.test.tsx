@@ -14,7 +14,10 @@ describe('Footer', () => {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()
     }
     expect(screen.getByText(/© 2026 Elevation/i)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Buildarch/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('clears the email field after subscribing', async () => {

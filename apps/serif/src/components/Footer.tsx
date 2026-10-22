@@ -111,7 +111,11 @@ export function Footer() {
       {/* footer-bottom — copyright bar with the repo-standard credit. */}
       <div className="border-t border-white/10 py-6 text-center">
         <p className="text-sm">{copyright}</p>
-        <p className="mt-1 text-sm">{footerCredit}</p>
+        <p className="mt-1 text-sm">
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            {footerCredit}
+          </a>
+        </p>
       </div>
     </footer>
   )

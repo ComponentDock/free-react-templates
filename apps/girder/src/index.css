@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Girder brand red — from the original ColorLib "Constructed" preview
+  /* Girder brand red — measured from the reference stylesheet
      (css/style.css): #eb1c24 buttons, eyebrow labels, "Learn more" links. */
   --color-brand: #eb1c24;
 

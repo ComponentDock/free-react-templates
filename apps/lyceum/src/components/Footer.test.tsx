@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { Footer } from './Footer'
 import {
   footerColumns,
+  footerCredit,
   footerCreditBy,
   footerSocials,
   newsletterEmailLabel,
@@ -33,13 +34,12 @@ describe('Footer', () => {
       newsletterPlaceholder,
     )
 
-    expect(
-      screen.getByText(
-        new RegExp(
-          `Copyright © \\d{4} All rights reserved \\| This template is made with ${footerCreditBy}`,
-        ),
-      ),
-    ).toBeInTheDocument()
+    expect(screen.getByText(/Copyright © \d{4} All rights reserved/)).toBeInTheDocument()
+    expect(screen.getByText(new RegExp(footerCredit))).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: footerCreditBy })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
     for (const name of footerSocials) {
       expect(screen.getByRole('link', { name: `Visit our ${name} page` })).toBeInTheDocument()
     }

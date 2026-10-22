@@ -13,7 +13,10 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: /LinkedIn/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /Instagram/i })).toBeInTheDocument()
     expect(screen.getByText(/© 2026 Edifice/i)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Construction/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('clears the newsletter email on submit', async () => {

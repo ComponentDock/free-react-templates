@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Tessera brand palette — recreated from the ColorLib "Mosaic"
-     design (css/style.css): brand blue #0033c7 (service icon circles,
+  /* Tessera brand palette — measured from the reference stylesheet (css/style.css): brand blue #0033c7 (service icon circles,
      26 color refs), Bootstrap action blue #007bff (buttons, hover
      #0069d9). */
   --color-brand: #0033c7;

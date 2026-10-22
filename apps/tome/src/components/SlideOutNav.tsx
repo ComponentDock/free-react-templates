@@ -59,7 +59,12 @@ export function SlideOutNav({ open, onClose }: SlideOutNavProps) {
       <p className="mt-auto p-8 text-xs text-white/85">
         {copyrightPrefix} {year}. {copyrightLine}{' '}
         <Heart className="inline h-3 w-3 fill-white text-white" aria-hidden="true" /> by{' '}
-        {copyrightBrand}
+        <a
+          href="https://www.componentdock.com/"
+          className="underline underline-offset-4 transition-colors hover:text-white"
+        >
+          {copyrightBrand}
+        </a>
       </p>
     </nav>
   )

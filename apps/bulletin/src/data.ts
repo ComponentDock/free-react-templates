@@ -37,7 +37,7 @@ export const imgUrl = (seed: string, w: number, h: number): string =>
 export const tickerLabel = 'Trending'
 
 export const tickerHeadlines: ReadonlyArray<string> = [
-  'Welcome to Colorlib Family.',
+  'Welcome to the Component Dock Family.',
   'Breaking: Markets open higher after a strong round of earnings reports.',
   'Weather: Thunderstorms expected across the north this evening.',
   'Sport: The weekend results are in — see all the highlights here.',
@@ -466,4 +466,4 @@ export const socials: ReadonlyArray<{ label: string; name: SocialName }> = [
   { label: 'LinkedIn', name: 'linkedin' },
 ]
 
-export const copyrightText = 'All rights reserved | This template is made with ♥ by Colorlib'
+export const copyrightText = 'All rights reserved | This template is made with'

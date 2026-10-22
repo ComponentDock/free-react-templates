@@ -1,6 +1,5 @@
 /**
- * Chronicle data — recreated from the ColorLib "Content" preview DOM
- * (https://preview.colorlib.com/theme/content/): same content kinds
+ * Chronicle data: same content kinds
  * (category, serif title, excerpt, meta "May 10, 2020 • 5 mins read"),
  * paraphrased where useful. All imagery uses seeded picsum placeholders.
  */

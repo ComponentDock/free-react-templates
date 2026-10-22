@@ -48,6 +48,9 @@ describe('Footer', () => {
   it('renders the copyright bar with the monorepo credit', () => {
     render(<Footer />)
     expect(screen.getByText(/All rights reserved/)).toBeInTheDocument()
-    expect(screen.getByText(/Recreated from the ColorLib Ruft design/)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

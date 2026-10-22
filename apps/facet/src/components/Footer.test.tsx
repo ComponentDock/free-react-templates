@@ -21,6 +21,9 @@ describe('Footer', () => {
     }
 
     expect(screen.getByText(/All rights reserved/)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Square/)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

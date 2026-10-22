@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Maison brand palette — recreated from the ColorLib "Loaft" design
+  /* Maison brand palette — measured from the reference stylesheet
      (css/style.css): gold #f5ca56 accents + hover #f8b600. */
   --color-brand: #f5ca56;
   --color-brand-dark: #f8b600;

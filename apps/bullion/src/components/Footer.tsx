@@ -28,8 +28,10 @@ export function Footer() {
             </a>
             <p className="mt-5 mb-5 text-sm leading-relaxed">{footerBlurb}</p>
             <p className="text-xs text-ash">
-              {copyrightText} <Heart className="inline h-3 w-3 text-accent" aria-hidden="true" /> by
-              Colorlib
+              {copyrightText} <Heart className="inline h-3 w-3 text-accent" aria-hidden="true" /> by{' '}
+              <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+                Component Dock
+              </a>
             </p>
           </div>
 

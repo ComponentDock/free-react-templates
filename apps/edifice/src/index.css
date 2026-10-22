@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Edifice brand yellow — from the original ColorLib "Construction"
-     preview (css/main.css): #fab700 buttons, accents, overline labels. */
+  /* Edifice brand yellow — measured from the reference stylesheet (css/main.css): #fab700 buttons, accents, overline labels. */
   --color-brand: #fab700;
 
   /* Deeper amber for hover states. */

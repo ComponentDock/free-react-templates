@@ -46,7 +46,7 @@ interface PostThumbProps {
   className?: string
 }
 
-/* Seeded picsum placeholder image (never copies ColorLib assets). */
+/* Seeded picsum placeholder image (placeholders only — no bundled artwork). */
 export function PostThumb({ seed, alt, width, height, className }: PostThumbProps) {
   return <img src={imgUrl(seed, width, height)} alt={alt} loading="lazy" className={className} />
 }

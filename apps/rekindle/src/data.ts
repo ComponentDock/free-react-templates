@@ -232,4 +232,4 @@ export const followUsTitle = 'Follow Us'
 export const followUsTagline = 'Let us be social'
 
 export const copyright = 'Copyright © All rights reserved'
-export const credit = 'This template is made with ♥ by Colorlib'
+export const credit = 'This template is made with ♥ by Component Dock'

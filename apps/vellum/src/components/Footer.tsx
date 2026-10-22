@@ -77,7 +77,10 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-6 text-center text-sm text-white/40">
-        {copyright} | {credit}
+        {copyright} |{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          {credit}
+        </a>
       </div>
     </footer>
   )

@@ -143,4 +143,4 @@ export const phone = '+2 392 3929 210'
 export const email = 'info@yourdomain.com'
 
 export const copyright = 'Copyright \u00A9 All rights reserved'
-export const credit = 'This template is made with \u2665 by Colorlib'
+export const credit = 'This template is made with \u2665 by Component Dock'

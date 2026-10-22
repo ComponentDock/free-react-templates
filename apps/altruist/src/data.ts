@@ -1,7 +1,6 @@
-/* Content model for the Altruist template — recreated from the ColorLib
-   "Cause" preview (https://preview.colorlib.com/theme/cause/). All photos
-   are picsum-seeded placeholders (no ColorLib assets); icons are
-   lucide-react (brand social icons are inline SVGs in components/icons). */
+/* Content model for the Altruist template. All photos are picsum-seeded
+   placeholders; icons are lucide-react (brand social icons are inline SVGs
+   in components/icons). */
 
 export const BRAND = 'Altruist'
 

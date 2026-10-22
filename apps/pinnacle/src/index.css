@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pinnacle brand palette — recreated from the ColorLib "Sparsh"
-     design (css/style.css): primary yellow #f9cc41 (71 refs), dark
+  /* Pinnacle brand palette — measured from the reference stylesheet (css/style.css): primary yellow #f9cc41 (71 refs), dark
      navy #262533 (25 refs), light background #f9f9ff, muted gray
      #8f8f8f. */
   --color-brand: #f9cc41;

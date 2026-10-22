@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Facade brand tan — from the original ColorLib "Arclabs" preview
+  /* Facade brand tan — measured from the reference stylesheet
      (css/main.css): #cea06c buttons, section-title accents, hover fills. */
   --color-brand: #cea06c;
 

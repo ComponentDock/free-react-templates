@@ -25,6 +25,9 @@ describe('Footer', () => {
   it('shows the copyright line', () => {
     render(<Footer />)
     expect(screen.getByText(/© 2026 Rently\. All rights reserved\./i)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Carbook/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

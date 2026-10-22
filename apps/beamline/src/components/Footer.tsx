@@ -107,7 +107,10 @@ export function Footer() {
 
         <div className="mt-8 border-t border-white/10 pt-6 text-center">
           <p className="text-sm text-white/50">
-            © 2026 Beamline. All rights reserved. Recreation of ColorLib Archlab.
+            © 2026 Beamline. All rights reserved. More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
           </p>
         </div>
       </div>

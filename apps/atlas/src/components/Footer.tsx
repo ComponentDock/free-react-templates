@@ -13,7 +13,7 @@ import {
 } from '../data'
 
 /* Dark footer (reference `footer.footer-area`, background #161616, 70px
-   padding): brand + copyright with the original Colorlib attribution, a
+   padding): brand + copyright with the Component Dock credit link, a
    6-link menu at 33.3% width each, and a subscribe form with an underline
    email input + arrow submit (success state swaps the form). */
 export function Footer() {
@@ -75,6 +75,12 @@ export function Footer() {
             </form>
           )}
         </section>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 py-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

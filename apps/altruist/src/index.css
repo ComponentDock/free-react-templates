@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Altruist brand colors — from the ColorLib "Cause" preview
-     (https://preview.colorlib.com/theme/cause/ + css/main.css):
+  /* Altruist brand colors — measured from the reference stylesheet:
      primary green #61c524 (primary-btn bg, logo, nav hover/active, cause
      title hover, progress fill, stat color3, form focus), secondary teal
      #46dbb7 (collection hover, condition check bullets, footer click-btn,

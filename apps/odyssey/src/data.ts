@@ -1,7 +1,5 @@
-/* All copy/content for Odyssey, extracted from the ColorLib "Ruft" live
-   preview (https://preview.colorlib.com/theme/ruft/) on 2026-08-11.
-   Text is kept close to the original kind of content; brand name replaced
-   with "Odyssey". */
+/* All copy/content for Odyssey. Text keeps the reference content kinds;
+   brand name is "Odyssey". */
 
 export const siteName = 'Odyssey'
 export const skipLabel = 'Skip to main content'
@@ -185,5 +183,5 @@ export const footerInstagramCount = 8
 export const instagramImageLabel = (index: number) => `Instagram feed image ${index + 1}`
 export const followUsTitle = 'Follow Us'
 export const followUsTagline = 'Let us be social'
-export const footerCredit = 'Recreated from the ColorLib Ruft design'
+export const footerCredit = 'Component Dock'
 export const copyright = `© ${new Date().getFullYear()} ${siteName}. All rights reserved.`

@@ -18,7 +18,7 @@ import { SocialIcon } from './SocialIcon'
    #EAEDF2, 70px top padding): brand + blurb, a newsletter subscribe form
    with a white-bordered input and solid pink button (validates, then
    swaps to a success message), five text-labelled social links, and the
-   original ColorLib copyright line. */
+   Component Dock credit line. */
 export function Footer() {
   const [email, setEmail] = useState('')
   const [error, setError] = useState<string | null>(null)
@@ -95,6 +95,12 @@ export function Footer() {
         <p className="py-[50px] text-[14px] text-copyright">
           {copyrightText(new Date().getFullYear())}
         </p>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 py-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

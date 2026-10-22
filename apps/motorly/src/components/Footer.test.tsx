@@ -12,7 +12,10 @@ describe('Footer', () => {
       expect(screen.getByRole('heading', { name: column })).toBeInTheDocument()
     }
     expect(screen.getByText(/© 2026 Motorly/)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Automotive/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('blocks the appointment form until required fields are filled', async () => {
