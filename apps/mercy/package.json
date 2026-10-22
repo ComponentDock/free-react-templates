@@ -30,6 +30,5 @@
     "typescript": "latest",
     "vite": "latest",
     "vitest": "latest"
-  },
-  "homepage": "https://mercy.free.componentdock.com"
+  }
 }
