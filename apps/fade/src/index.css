@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Fade brand colors — from the ColorLib "Barberkraft" demo stylesheet
+  /* Fade brand colors — from the reference stylesheet
      (_astro/Base.*.css): accent = Tailwind amber scale (#fbbf24 amber-400
      buttons/accents, #f59e0b amber-500 hover, #d97706 amber-600),
      dark surfaces #030712/#111827/#1f2937, light surfaces white/#f9fafb,

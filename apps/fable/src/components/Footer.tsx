@@ -94,6 +94,15 @@ export function Footer() {
 
         <div className="mt-14 border-t border-white/10 pt-6 text-center">
           <p className="text-sm text-white/60">{copyright}</p>
+          <p className="mt-2 text-xs text-white/40">
+            More templates at{' '}
+            <a
+              href="https://www.componentdock.com/"
+              className="underline underline-offset-4 transition-colors hover:text-accent"
+            >
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

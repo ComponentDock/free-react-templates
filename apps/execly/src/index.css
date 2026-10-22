@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
-/* Execly brand palette — recreated from the ColorLib "Corporate" preview
-   (https://preview.colorlib.com/theme/corporate/) live DOM + css/main.css:
-   brand violet #6434fe (primary buttons, accent, selection), heading #222222,
+/* Execly brand palette — measured from the reference design (live DOM +
+   css/main.css): brand violet #6434fe (primary buttons, accent, selection),
+   heading #222222,
    body text #777777, overlay rgba(0,0,0,0.5), footer bg #222222, footer text
    #999, white bg. Font: Poppins via Google Fonts. */
 @theme {

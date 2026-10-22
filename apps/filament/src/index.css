@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Filament brand palette — feminine lavender-pink aesthetic
-     from ColorLib Simples: #fcd2ff accents, #f6d0c5→#fbd2f6 gradient. */
+  /* Filament brand palette — feminine lavender-pink aesthetic from the
+     reference stylesheet: #fcd2ff accents, #f6d0c5→#fbd2f6 gradient. */
   --color-brand: #fcd2ff;
   --color-brand-dark: #e8a0e8;
   --color-brand-warm: #f6d0c5;

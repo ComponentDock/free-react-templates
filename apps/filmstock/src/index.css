@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-/* Filmstock brand palette — recreated from the ColorLib "Photosen" preview
-   (https://preview.colorlib.com/theme/photosen/) live DOM + css/main.css:
+/* Filmstock brand palette — measured from the reference design (live DOM +
+   css/main.css):
    brand blue #0D6EFD (nav hover, active), footer bg #333333,
    footer text #737373, footer link #999999.
    Display font Josefin Sans via Google Fonts (original uses the same). */

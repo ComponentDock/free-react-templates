@@ -12,7 +12,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { documentTitle } from './data'
 
-/* Execly — corporate business landing page (ColorLib "Corporate" recreation).
+/* Execly — corporate business landing page for a consulting studio.
    Section order matches the preview 1:1: header → hero → about → services →
    features → portfolio → stats → recent works → brands → contact → footer. */
 export function App() {

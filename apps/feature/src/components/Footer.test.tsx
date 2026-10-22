@@ -29,11 +29,15 @@ describe('Footer', () => {
     expect(within(column).getAllByRole('link')).toHaveLength(19)
   })
 
-  it('renders a paraphrased copyright bar without ColorLib attribution', () => {
+  it('renders a paraphrased copyright bar linking Component Dock', () => {
     render(<Footer />)
     expect(
       screen.getByText(new RegExp(`Copyright © ${new Date().getFullYear()} All rights reserved`)),
     ).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
     expect(screen.queryByText(/colorlib/i)).not.toBeInTheDocument()
   })
 })

@@ -65,6 +65,15 @@ export function Footer() {
         <p className="text-sm font-light">
           Copyright © {new Date().getFullYear()} Farmie. All rights reserved.
         </p>
+        <p className="text-sm font-light">
+          More templates at{' '}
+          <a
+            href="https://www.componentdock.com/"
+            className="underline underline-offset-4 transition-colors hover:text-white"
+          >
+            Component Dock
+          </a>
+        </p>
       </div>
     </footer>
   )

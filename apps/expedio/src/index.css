@@ -3,9 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Expedio brand — from ColorLib "Safario" preview
-     (https://preview.colorlib.com/theme/safario/ + css/style.css):
-     a travel agency theme with purple #6059f6 primary,
+  /* Expedio brand — travel agency theme: purple #6059f6 primary,
      light backgrounds #f8f8ff / #ebebff, muted text #888888. */
   --color-primary-50: #f0eeff;
   --color-primary-100: #d1cff4;
