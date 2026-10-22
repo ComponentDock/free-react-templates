@@ -8,7 +8,7 @@ const socials: ReadonlyArray<{ label: string; name: BrandName }> = [
 ]
 
 const homeLinks: ReadonlyArray<{ label: string; href: string }> = [
-  { label: 'Colorlib', href: '#home' },
+  { label: 'Component Dock', href: 'https://www.componentdock.com/' },
   { label: 'About us', href: '#about' },
   { label: 'Practice Area', href: '#services' },
   { label: 'Services', href: '#services' },
@@ -20,13 +20,13 @@ const homeLinks: ReadonlyArray<{ label: string; href: string }> = [
 const practiceLinks: ReadonlyArray<{ label: string; href: string }> = [
   { label: 'Architect', href: '#services' },
   { label: 'Projects', href: '#portfolio' },
-  { label: 'Colorlib', href: '#home' },
+  { label: 'Component Dock', href: 'https://www.componentdock.com/' },
   { label: 'Free Templates', href: '#home' },
   { label: 'WordPress Themes', href: '#home' },
 ]
 
 const serviceLinks: ReadonlyArray<{ label: string; href: string }> = [
-  { label: 'Colorlib', href: '#home' },
+  { label: 'Component Dock', href: 'https://www.componentdock.com/' },
   { label: 'House Renovation', href: '#services' },
   { label: 'Interior Design', href: '#services' },
   { label: 'Installation Works', href: '#services' },
@@ -110,7 +110,12 @@ export function Footer() {
       <div className="bg-black py-5 text-white/60">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-center text-xs sm:flex-row sm:px-6 sm:text-left">
           <p>© 2026 Chisel. All rights reserved.</p>
-          <p>recreation of ColorLib Reshape</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

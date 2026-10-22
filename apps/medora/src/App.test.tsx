@@ -35,7 +35,10 @@ describe('App', () => {
       screen.getByRole('heading', { level: 2, name: 'Request an Appointment' }),
     ).toBeInTheDocument()
     // Footer
-    expect(screen.getByText('recreation of ColorLib Medical Wordpress Themes')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('sets the document title', () => {

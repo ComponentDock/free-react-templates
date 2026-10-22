@@ -6,7 +6,10 @@ export function Footer() {
           Copyright © {new Date().getFullYear()} Zest. All rights reserved.
         </p>
         <p className="text-sm font-light text-mist dark:text-gray-400">
-          Inspired by ColorLib&apos;s Zeedapp template.
+          More templates at{' '}
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            Component Dock
+          </a>
         </p>
       </div>
     </footer>

@@ -113,7 +113,12 @@ export function Footer() {
       <div className="bg-black/40 py-5 text-white/60">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 text-center text-xs sm:flex-row sm:px-6 sm:text-left">
           <p>© 2026 Medora. All rights reserved.</p>
-          <p>recreation of ColorLib Medical Wordpress Themes</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

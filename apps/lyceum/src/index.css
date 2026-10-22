@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Lyceum brand palette — recreated from the ColorLib "Learnit" preview
-   (https://preview.colorlib.com/theme/learnit/) live DOM + style.css:
+/* Lyceum brand palette — measured from the reference stylesheet:
    brand green #4dbf1c (buttons, active/hover nav, Free badge, finance
    icons), gradient #2c28b1 → #9b5cf6 (footer newsletter arrow button),
    ink #222222, muted #777777, light-bg #f9f9ff, border-soft #eeeeee,

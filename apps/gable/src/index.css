@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Gable brand gold — from the original ColorLib "Kd" preview
+  /* Gable brand gold — measured from the reference stylesheet
      (css/style.css): #ccb78f accents on dark sections. */
   --color-brand: #ccb78f;
 

@@ -7,8 +7,7 @@ import { PageTopRecipes } from './components/PageTopRecipes'
 import { TopRecipes } from './components/TopRecipes'
 import { documentTitle, skipLabel } from './data'
 
-/* Zesty — minimal food & recipe blog home page (ColorLib "Yummy"
-   recreation). Section order matches the preview 1:1: header → page-top
+/* Zesty — minimal food & recipe blog home page . Section order matches the preview 1:1: header → page-top
    recipe hero → Top Recipes this Week → filterable categories grid →
    Featured Recipes → footer. */
 export function App() {

@@ -30,6 +30,9 @@ describe('Footer', () => {
     expect(screen.getAllByRole('link', { name: /\+1\(123\)-456-7890/i })).toHaveLength(2)
     expect(screen.getByRole('link', { name: /info@mydomain\.com/i })).toBeInTheDocument()
     expect(screen.getByText(/© 2026 Truss\. All rights reserved\./i)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Kraft/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

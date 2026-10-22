@@ -101,7 +101,13 @@ export function Footer() {
         <div className="mt-[80px] flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-[30px] sm:flex-row">
           <p className="text-sm text-muted">
             {copyright} {footerCredit}{' '}
-            <Heart aria-hidden="true" className="inline h-3 w-3 text-brand" /> {footerCreditBy}
+            <Heart aria-hidden="true" className="inline h-3 w-3 text-brand" />{' '}
+            <a
+              href="https://www.componentdock.com/"
+              className="underline underline-offset-4 hover:text-brand"
+            >
+              {footerCreditBy}
+            </a>
           </p>
           <div className="flex items-center gap-[15px] text-muted">
             <BrandIcons names={footerSocials} className="hover:text-brand" />

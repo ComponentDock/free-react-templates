@@ -123,4 +123,4 @@ export const pageLabel = (n: number): string => `Page ${n}`
 
 export const copyrightPrefix = 'Copyright ©'
 export const copyrightLine = 'All rights reserved | This template is made with'
-export const copyrightBrand = 'Colorlib'
+export const copyrightBrand = 'Component Dock'

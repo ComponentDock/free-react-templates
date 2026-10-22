@@ -113,7 +113,10 @@ export function Footer() {
           <p className="flex items-center gap-1 text-xs text-meta">
             Copyright © {year} All rights reserved | This template is made with
             <Heart className="h-3 w-3 fill-brand text-brand" aria-label="love" />
-            by ColorLib
+            by{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
           </p>
           <ul className="flex flex-wrap items-center gap-5">
             {footerLinks.map((link) => (

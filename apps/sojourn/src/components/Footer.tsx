@@ -9,7 +9,10 @@ export function Footer() {
           {siteName}
         </a>
         <p className="text-center text-xs text-meta">
-          {copyright} | {footerCredit}
+          {copyright} |{' '}
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            {footerCredit}
+          </a>
         </p>
         <SocialIcons className="text-ink" />
       </div>

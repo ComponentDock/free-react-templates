@@ -49,7 +49,10 @@ export function Footer() {
       <div className="border-t border-hairline">
         <p className="mx-auto max-w-7xl px-4 py-4 text-center text-xs text-pale">
           Copyright © 2026 {copyrightText}{' '}
-          <Heart className="inline h-3 w-3 text-accent" aria-hidden="true" />
+          <Heart className="inline h-3 w-3 text-accent" aria-hidden="true" /> by{' '}
+          <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+            Component Dock
+          </a>
         </p>
       </div>
     </footer>

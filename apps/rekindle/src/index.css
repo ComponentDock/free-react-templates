@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Rekindle brand palette — recreated from the ColorLib "Revive" preview
-   (https://preview.colorlib.com/theme/revive/) live DOM + css/main.css:
+/* Rekindle brand palette — measured from the reference stylesheet:
    primary deep navy #13113a (buttons, nav hover/active, widget titles),
    muted body #706f87 (Open Sans 14px/24px 500), light lavender-grey
    #f9f9ff (cards + sidebar widgets), footer #000000, card hover shadow

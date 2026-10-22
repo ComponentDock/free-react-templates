@@ -7,7 +7,10 @@ describe('Footer', () => {
     render(<Footer />)
     expect(screen.getByRole('link', { name: 'Sojourn' })).toBeInTheDocument()
     expect(screen.getByText(/All rights reserved/)).toBeInTheDocument()
-    expect(screen.getByText(/Recreated from the ColorLib Sasha design/)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
     expect(screen.getByRole('link', { name: 'Visit Instagram profile' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Visit Facebook profile' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Visit Twitter profile' })).toBeInTheDocument()

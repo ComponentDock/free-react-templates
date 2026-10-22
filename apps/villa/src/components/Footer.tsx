@@ -55,7 +55,7 @@ export function Footer() {
             <p className="mt-4 text-sm font-semibold text-ink dark:text-white">
               +00 012 6325 98 6542
             </p>
-            <p className="text-sm text-brand-dark">support@colorlib.com</p>
+            <p className="text-sm text-brand-dark">hello@componentdock.com</p>
             <div className="mt-6 flex items-center gap-3">
               {socials.map((social) => (
                 <a
@@ -73,7 +73,12 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-black/10 pt-8 text-center text-xs text-mist dark:border-white/10 dark:text-white/50 sm:flex-row sm:text-left">
           <p>© 2026 Villa. All rights reserved.</p>
-          <p>recreation of ColorLib Layal</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

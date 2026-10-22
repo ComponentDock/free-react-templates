@@ -5,10 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Medora brand palette — recreated from the ColorLib "Medical
-     Wordpress Themes" screenshot (HealthFlex demo): brand blue #1a73e8,
-     accent-alt #1464cc (from the source roundup page CSS vars
-     --wpex-accent / --wpex-accent-alt). */
+  /* Medora brand palette — measured from the reference design screenshot:
+     brand blue #1a73e8, accent-alt #1464cc. */
   --color-brand: #1a73e8;
   --color-brand-dark: #1464cc;
   --color-brand-50: #eef4fc;

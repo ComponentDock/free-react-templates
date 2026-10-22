@@ -34,9 +34,12 @@ describe('Footer', () => {
     }
   })
 
-  it('renders the copyright line and the ColorLib credit', () => {
+  it('renders the copyright line and the Component Dock credit', () => {
     render(<Footer />)
     expect(screen.getByText('© 2026 Medora. All rights reserved.')).toBeInTheDocument()
-    expect(screen.getByText('recreation of ColorLib Medical Wordpress Themes')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

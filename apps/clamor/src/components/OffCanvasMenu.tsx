@@ -23,7 +23,7 @@ interface OffCanvasMenuProps {
   onClose: () => void
 }
 
-/* Off-canvas nav (#colorlib-main-nav equivalent) — right slide-in panel
+/* Off-canvas nav (#main-nav equivalent) — right slide-in panel
    (360px desktop / 300px mobile, white, z-1002): search form (fafafa input
    + pink search button), uppercase menu links (Blog active → pink), About
    Me block (portrait, name, blurb, socials) and a 2x2 Instagram tile grid. */

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lintel brand palette — recreated from the ColorLib "Marga" design
+  /* Lintel brand palette — measured from the reference stylesheet
      (css/style.css): teal #43ab92 accents (21 references). Hover shade
      #36907b approximates Bootstrap's 7.5% darken of the primary. */
   --color-brand: #43ab92;

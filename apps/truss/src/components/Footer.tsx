@@ -100,7 +100,12 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-black/10 pt-8 text-center text-xs sm:flex-row sm:text-left dark:border-white/10">
           <p>© 2026 Truss. All rights reserved.</p>
-          <p>recreation of ColorLib Kraft</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

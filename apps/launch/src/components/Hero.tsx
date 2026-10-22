@@ -8,7 +8,7 @@ export function Hero() {
     >
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
         <h1 className="font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
-          Promote Your Products by Colorlib
+          Promote Your Products with Component Dock
         </h1>
         <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-blue-100">
           Showcase your product with a stunning, fast landing page. Far far away, behind the word

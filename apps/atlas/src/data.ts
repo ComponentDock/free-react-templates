@@ -1,6 +1,5 @@
-/* Atlas — blog & magazine home page (ColorLib "World" recreation,
-   https://preview.colorlib.com/theme/world/). All copy is paraphrased from
-   the live preview DOM; all images are seeded picsum placeholders
+/* Atlas — blog & magazine home page. All copy follows a magazine layout
+   model; all images are seeded picsum placeholders
    (https://picsum.photos/seed/atlas-<n>/<w>/<h>); brand icons are inline SVG
    path data (lucide-react removed brand icons). */
 
@@ -530,6 +529,5 @@ export const subscribeEmailPlaceholder = 'Enter your mail'
 export const subscribeButtonLabel = 'Subscribe'
 export const subscribeSuccess = 'Thanks for subscribing!'
 
-/* Original attribution line (reference `.copywrite-text`): */
-export const footerCopyright = (year: number) =>
-  `Copyright © ${year} All rights reserved | This template is made with ♥ by Colorlib`
+/* Copyright line (reference `.copywrite-text`): */
+export const footerCopyright = (year: number) => `Copyright © ${year} All rights reserved`

@@ -1,7 +1,5 @@
-/* All copy/content for Sojourn, extracted from the ColorLib "Sasha" live
-   preview (https://preview.colorlib.com/theme/sasha/index-01.html) on
-   2026-08-11. Text is kept close to the original kind of content; brand name
-   replaced with "Sojourn". */
+/* All copy/content for Sojourn. Text keeps the reference content kinds;
+   brand name is "Sojourn". */
 
 export const siteName = 'Sojourn'
 export const skipLabel = 'Skip to main content'
@@ -178,4 +176,4 @@ export const stripTileLabel = (index: number) => `Instagram strip image ${index 
 export const socialNames: readonly string[] = ['Instagram', 'Facebook', 'Twitter', 'Pinterest']
 export const socialLabel = (name: string) => `Visit ${name} profile`
 export const copyright = `© ${new Date().getFullYear()} ${siteName}. All rights reserved.`
-export const footerCredit = 'Recreated from the ColorLib Sasha design'
+export const footerCredit = 'Component Dock'

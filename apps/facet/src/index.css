@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Facet brand palette — recreated from the ColorLib "Square"
-     design (css/style.css): primary green #2e9e5b (55 refs), accent
+  /* Facet brand palette — measured from the reference stylesheet (css/style.css): primary green #2e9e5b (55 refs), accent
      yellow #fdb72c (21 refs). */
   --color-brand: #2e9e5b;
   --color-brand-dark: #268a4f;

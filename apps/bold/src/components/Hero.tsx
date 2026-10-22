@@ -9,7 +9,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
         <div className="text-center lg:text-left">
           <h1 className="font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
-            Another cool free template by the fine folks at colorlib
+            Another cool free template from Component Dock
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-white/90">
             A clean, modern landing page to launch your next project — bold by name, bold by design.

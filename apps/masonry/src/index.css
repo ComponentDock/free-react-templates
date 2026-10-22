@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Masonry brand yellow — from the original ColorLib "Astral" preview
+  /* Masonry brand yellow — measured from the reference stylesheet
      (css/style.css): #f9cc41 primary buttons, accents, hover fills. */
   --color-brand: #f9cc41;
 

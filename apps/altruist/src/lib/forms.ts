@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
-/* Validation for the Altruist donation + newsletter forms, recreated from
-   the source behaviors: the hero donation box and the overlapping banner
+/* Validation for the Altruist donation + newsletter forms, matching the
+   reference behaviors: the hero donation box and the overlapping banner
    donation form validate the amount client-side and show a confirmation;
    the footer newsletter validates the email. Zod schemas keep typed values
    + per-field messages. */

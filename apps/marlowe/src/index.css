@@ -1,9 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Marlowe brand palette — recreated from the ColorLib "Callie" template
-     (https://colorlib.com/wp/template/callie/), tokens extracted from the
-     live preview's css/style.css:
+  /* Marlowe brand palette — measured from the reference stylesheet:
      - brand #ee4266 (hot pink/red: primary buttons, category tags, link
        hovers, load-more, footer link hover)
      - ink #323335 (body/headings) · meta #97989b (uppercase meta, footer

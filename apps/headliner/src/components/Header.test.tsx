@@ -17,6 +17,6 @@ describe('Header', () => {
 
   it('renders the template subtitle', () => {
     render(<Header />)
-    expect(screen.getByText('Colorlib Template')).toBeInTheDocument()
+    expect(screen.getByText('Component Dock Template')).toBeInTheDocument()
   })
 })

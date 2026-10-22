@@ -1,7 +1,7 @@
 import { blogHeading, blogLabel, blogPosts, postsLabel } from '../data'
 import { BlogCard } from './BlogCard'
 
-/* Blog section (#colorlib-blog, padding 7em 0) — centered intro heading
+/* Blog section (#blog, padding 7em 0) — centered intro heading
    (small uppercase label + Tenor Sans h2) above a responsive grid of
    blog-entry cards (3-col desktop / 2-col tablet / 1-col mobile). */
 export function BlogGrid() {

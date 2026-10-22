@@ -1,6 +1,5 @@
-/* Zesty — minimal food & recipe blog home page (ColorLib "Yummy"
-   recreation, https://preview.colorlib.com/theme/yummy/). All copy is
-   paraphrased from the live preview DOM; all images are seeded picsum
+/* Zesty — minimal food & recipe blog home page. All copy follows a recipe
+   blog content model; all images are seeded picsum
    placeholders (https://picsum.photos/seed/zesty-<n>/<w>/<h>); brand icons
    are inline SVG path data (lucide-react removed brand icons). */
 
@@ -286,5 +285,4 @@ export const socialIcons: Record<SocialName, SocialIconData> = {
   },
 }
 
-export const copyrightText = (year: number) =>
-  `Copyright © ${year} All rights reserved | This template is made with ♥ by Colorlib`
+export const copyrightText = (year: number) => `Copyright © ${year} All rights reserved`

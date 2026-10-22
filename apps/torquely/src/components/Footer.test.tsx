@@ -24,6 +24,9 @@ describe('Footer', () => {
     expect(screen.getByText('All Sunday Days')).toBeInTheDocument()
     expect(screen.getByText('All Official Holidays')).toBeInTheDocument()
     expect(screen.getByText(/© 2026 Torquely/)).toBeInTheDocument()
-    expect(screen.getByText(/recreation of ColorLib Autorepair/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

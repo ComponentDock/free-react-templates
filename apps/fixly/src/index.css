@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Fixly brand palette — recreated from the ColorLib "Carepair" design
+  /* Fixly brand palette — measured from the reference stylesheet
      (css/style.css): red #e02f33 primary CTAs/accents. */
   --color-brand: #e02f33;
   --color-brand-dark: #b81f23;

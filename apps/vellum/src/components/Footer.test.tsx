@@ -54,8 +54,12 @@ describe('Footer', () => {
     }
   })
 
-  it('renders the copyright and the ColorLib credit in the bottom bar', () => {
+  it('renders the copyright and the Component Dock credit in the bottom bar', () => {
     render(<Footer />)
-    expect(screen.getByText(`${copyright} | ${credit}`)).toBeInTheDocument()
+    expect(screen.getByText(new RegExp(copyright))).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: credit })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

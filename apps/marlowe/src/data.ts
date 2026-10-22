@@ -1,6 +1,5 @@
 /**
- * Marlowe data — recreated from the ColorLib "Callie" preview DOM
- * (https://preview.colorlib.com/theme/callie/): same content kinds
+ * Marlowe data: same content kinds
  * (categories, titles, meta, counts), paraphrased where useful. All
  * imagery uses seeded picsum placeholders.
  */

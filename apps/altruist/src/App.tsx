@@ -10,8 +10,7 @@ import { BrandStrip } from './components/BrandStrip'
 import { EventsSection } from './components/EventsSection'
 import { Footer } from './components/Footer'
 
-/* Altruist — single-page charity & donation template (recreation of the
-   ColorLib "Cause" demo): fixed header → hero (copy + photo/donation box)
+/* Altruist — single-page charity & donation template: fixed header → hero (copy + photo/donation box)
    → Major Causes → Experience stats → condition carousel → donation
    banner → overlapping donation form → brand logos → Upcoming Events →
    footer. */

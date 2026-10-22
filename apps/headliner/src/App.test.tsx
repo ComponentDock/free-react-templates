@@ -10,7 +10,7 @@ describe('App', () => {
     expect(screen.getByLabelText(/category navigation/i)).toBeInTheDocument()
     expect(screen.getByLabelText(/trending articles/i)).toBeInTheDocument()
     expect(screen.getByLabelText(/latest posts/i)).toBeInTheDocument()
-    expect(screen.getByText(/component dock/i)).toBeInTheDocument()
+    expect(screen.getByText('Component Dock Template')).toBeInTheDocument()
   })
 
   it('sets the document title on mount', () => {

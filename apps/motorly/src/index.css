@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Motorly brand palette — recreated from the ColorLib "Automotive" design
+  /* Motorly brand palette — measured from the reference stylesheet
      (css/style.css): indigo #5F67FF buttons/accents. */
   --color-brand: #5f67ff;
   --color-brand-dark: #454dd6;

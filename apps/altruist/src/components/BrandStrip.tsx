@@ -1,7 +1,7 @@
 import { BRAND_LOGOS } from '../data'
 
-/* .brand-area — a row of five partner logo marks (text wordmarks in the
-   recreation, matching the original's b1.png…b5.png strip). */
+/* .brand-area — a row of five partner logo marks (text wordmarks here,
+   matching the reference's b1.png…b5.png strip). */
 export function BrandStrip() {
   return (
     <section className="bg-white pb-[150px] pt-[60px]">

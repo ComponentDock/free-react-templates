@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Elevation brand lime — from the original ColorLib "Buildarch" preview
+  /* Elevation brand lime — measured from the reference stylesheet
      (css/style.css): #a7cb00 buttons, feature icons, link hovers. */
   --color-brand: #a7cb00;
 

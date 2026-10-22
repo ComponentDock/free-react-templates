@@ -4,7 +4,7 @@ export function Header() {
       <div className="mx-auto flex max-w-[1140px] items-center justify-between px-[15px] py-6">
         <div className="flex-1" />
         <div className="text-center">
-          <p className="text-xs tracking-widest text-mist uppercase">Colorlib Template</p>
+          <p className="text-xs tracking-widest text-mist uppercase">Component Dock Template</p>
           <h1 className="mt-1 font-display text-3xl font-bold text-ink sm:text-4xl">
             Awesome <span className="font-normal">Magazine</span>
           </h1>

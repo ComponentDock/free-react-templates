@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Abode brand gold — from the original ColorLib "Belara" preview
+  /* Abode brand gold — measured from the reference stylesheet
      (assets/css/style.css): #D6A04C buttons, accents, hover fills. */
   --color-brand: #d6a04c;
 

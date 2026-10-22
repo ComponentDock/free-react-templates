@@ -133,7 +133,12 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <p className="text-xs">recreation of ColorLib Sparsh</p>
+          <p className="text-xs">
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

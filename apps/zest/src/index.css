@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Zest brand pink/red — from the original ColorLib "Zeedapp" style.css:
+  /* Zest brand pink/red — from the original the reference design style.css:
      copy-right #f26367 and demo-title #f16266. */
   --color-brand: #f26367;
   --color-punch: #f16266;
