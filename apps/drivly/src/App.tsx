@@ -13,23 +13,36 @@ export function App() {
   }, [])
 
   return (
-    <main>
-      {/* Single-section demo: full-viewport section with the full-bleed photo
-          page background dimmed by a 60% black overlay scrim (source
-          #booking::before rgba(0,0,0,0.6)), vertically centering the dark
-          #101113 booking card; NO navbar, NO footer (source is a bare booking
-          form section). */}
-      <section
-        id="booking"
-        className="relative flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
-        style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
-      >
-        <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
+    <>
+      <main>
+        {/* Single-section demo: full-viewport section with the full-bleed photo
+            page background dimmed by a 60% black overlay scrim (source
+            #booking::before rgba(0,0,0,0.6)), vertically centering the dark
+            #101113 booking card; no navbar (source is a bare booking form
+            section). */}
+        <section
+          id="booking"
+          className="relative flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
+          style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
+        >
+          <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
 
-        <div className="relative w-full">
-          <CarBookingForm />
-        </div>
-      </section>
-    </main>
+          <div className="relative w-full">
+            <CarBookingForm />
+          </div>
+        </section>
+      </main>
+      <footer className="bg-ink py-6 text-center text-[13px] text-white/60">
+        <p>
+          More templates at{' '}
+          <a
+            className="font-semibold text-brand underline-offset-4 hover:underline"
+            href="https://www.componentdock.com/"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
+    </>
   )
 }

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dossier brand palette — recreated from the ColorLib "Alias" design
+  /* Dossier brand palette — measured from the reference design
      (green accent #4ebe2a / progress bar #57d131). */
   --color-leaf-50: #f0fdf0;
   --color-leaf-100: #dcfce7;

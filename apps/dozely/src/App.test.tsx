@@ -30,11 +30,20 @@ describe('App', () => {
     expect(card.style.backgroundImage).toContain('picsum.photos/seed/dozely-1/900/675')
   })
 
-  it('renders NO navbar or footer (single-section form demo)', () => {
+  it('renders the Component Dock footer link', () => {
+    render(<App />)
+
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
+  })
+
+  it('renders NO navbar (single-section form demo)', () => {
     const { container } = render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
     expect(container.querySelectorAll('section')).toHaveLength(1)
     expect(container.querySelector('main')).not.toBeNull()
   })

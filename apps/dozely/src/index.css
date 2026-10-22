@@ -6,11 +6,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dozely brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V8" design (live demo:
-     https://colorlib.com/etc/bforms/colorlib-booking-8/): double-orange
-     accent family — #ff8846 (floating labels + focus ring) and #e35e0a
-     (the "Book Now" submit button background). */
+  /* Dozely brand palette — measured from the reference design:
+     double-orange accent family — #ff8846 (floating labels + focus ring)
+     and #e35e0a (the "Book Now" submit button background). */
   --color-brand: #ff8846;
 
   /* Deep — the deep-orange "Book Now" button background. */

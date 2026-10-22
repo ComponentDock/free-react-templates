@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Drively brand palette — recreated from the ColorLib "Carrent" design
+  /* Drively brand palette — measured from the reference design
      (css/style.css): bootstrap blue #007bff primary CTAs/accents. */
   --color-brand: #007bff;
   --color-brand-dark: #0062cc;

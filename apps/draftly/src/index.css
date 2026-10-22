@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Draftly brand palette — recreated from the ColorLib "Clyde" design
+  /* Draftly brand palette — measured from the reference design
      (blue accent #007bff). */
   --color-brand-50: #eff6ff;
   --color-brand-100: #dbeafe;
