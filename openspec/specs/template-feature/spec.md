@@ -503,6 +503,21 @@ The system SHALL provide a back-to-top button.
 - **WHEN** the back-to-top button is clicked
 - **THEN** the page SHALL scroll smoothly to the top
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run verify:app feature` passes (typecheck + lint + vitest 100%
@@ -557,3 +572,4 @@ The system SHALL provide a back-to-top button.
 - [ ] Dark-mode toggle present per repo conventions (dark: variants)
 - [ ] README status table regenerated after merge (`npm run readme:status`);
       mark TEMPLATES.md line 241 `[x]` when done
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

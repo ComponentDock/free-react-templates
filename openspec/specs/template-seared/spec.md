@@ -157,6 +157,21 @@ A Restaurant / Fine Dining template with buttons & shapes and site header and na
 - **And** card backgrounds use dark tones
 - **And** Primary Gold (#fdb44b) accents remain visible
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] Spec validated (`npm run spec:validate` passes)
@@ -165,3 +180,7 @@ A Restaurant / Fine Dining template with buttons & shapes and site header and na
 - [ ] Preview DOM structure analyzed
 - [ ] Screenshot reviewed for visual fidelity
 - [ ] Section order matches original: Header → Hero → Features → Specialties → Testimonials → Feature Menu → Chef → Menu Pricing → Events → Why Choose Us → Footer
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

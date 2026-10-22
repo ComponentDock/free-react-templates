@@ -389,6 +389,21 @@ the yellow brand color defined as a theme token.
 - **THEN** the brand color #f3c300 SHALL be defined in `@theme` and used via
   Tailwind classes throughout the sections
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `openspec/specs/template-hostelry`.
@@ -412,3 +427,4 @@ the yellow brand color defined as a theme token.
       design tokens used, deviations (renamed "Hostelry", picsum images,
       paraphrased copy).
 - [ ] TEMPLATES.md bookkeeping marks BOTH duplicate rows (lines 491 and 1926) `[x]` with the surge URL when the app ships.
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

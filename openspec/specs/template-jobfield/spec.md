@@ -331,6 +331,21 @@ landmark and a contentinfo landmark.
   sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Jobfield — Job Board Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run typecheck` passes for `apps/jobfield`
@@ -366,3 +381,4 @@ landmark and a contentinfo landmark.
 - [ ] Cookie-consent dialog + back-to-top floating button
 - [ ] Placeholder images via seeded picsum (`seed/jobfield-<n>/<w>/<h>`)
 - [ ] No copied ColorLib assets; brand indigo #4f46e5 → #4338ca in `@theme`
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

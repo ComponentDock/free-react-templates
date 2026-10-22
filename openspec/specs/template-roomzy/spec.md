@@ -214,6 +214,23 @@ title.
 - **THEN** the form SHALL live in the main landmark
 - **AND** the document title SHALL be "Roomzy — Hotel Booking Template"
 
+### Requirement: Component Dock attribution
+
+The design ships no footer (single-section demo), so the system SHALL render the
+Component Dock credit — the marketplace that publishes this template — as a
+minimal link to `https://www.componentdock.com/` in the page's last band
+(AGENTS.md rule 5). The credit SHALL NOT add a design footer the source does not
+have.
+
+#### Scenario: Last-band attribution
+
+- **GIVEN** the template is rendered
+- **WHEN** the last band of the page is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+- **AND** no design footer SHALL be introduced
+
 ## Verification checklist
 
 - [ ] Section structure + field order matches the source 1:1 (single
@@ -239,3 +256,4 @@ title.
       100% coverage + build
 - [ ] Uses packages/ui (Button, cn) where applicable — knip-safe
 - [ ] Spec validated: `npm run spec:validate`
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -493,6 +493,21 @@ landmark and a document title.
   and footer in order
 - **AND** the document title SHALL be "Momentum — Landing Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -513,3 +528,4 @@ landmark and a document title.
 - [ ] Footer: 4 circular social buttons (facebook/twitter/linkedin/dribbble inline SVG; hover purple), copyright + credit line
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands; Jost via Google Fonts link
 - [ ] README Templates status + TEMPLATES.md Action lines (549 AND 881) marked `[x]` after merge
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

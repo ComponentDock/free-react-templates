@@ -188,8 +188,24 @@ and a document title.
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Foundry — Construction Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `bash scripts/verify-app.sh foundry` passes (typecheck, lint, 100% coverage, build)
 - [ ] `npm run spec:validate` passes
 - [ ] Screenshot comparison: hero slider, welcome, works, counters, services, blog, engineers, testimonials, newsletter, footer match the ColorLib "architect" preview layout and tokens
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

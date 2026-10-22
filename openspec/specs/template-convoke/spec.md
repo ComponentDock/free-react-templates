@@ -271,6 +271,21 @@ The system SHALL render a three-column footer with a copyright bar.
 - **THEN** a copyright bar SHALL show the year and the phrase "All rights
   reserved" with a credit line (paraphrased, not claiming ColorLib)
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] Spec validated: `npm run spec:validate` passes.
@@ -292,3 +307,4 @@ The system SHALL render a three-column footer with a copyright bar.
       gradient hero, React countdown, neutral copyright credit).
 - [ ] TEMPLATES.md lines 532 AND 1690 both marked `[x]` with the surge URL
       after deploy.
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -404,6 +404,21 @@ small print, and a copyright bar.
 - **AND** an italic small-print paragraph and a copyright bar SHALL render
   below ("© 2026 Lendly — Loans & Finance · All rights reserved")
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] Spec validates: `npm run spec:validate`
@@ -427,3 +442,4 @@ small print, and a copyright bar.
 - [ ] Form submit → success state (no backend)
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL returns 200
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

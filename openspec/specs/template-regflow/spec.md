@@ -142,6 +142,21 @@ attributes on inputs, and keyboard-navigable submit button.
 - **THEN** all form fields SHALL be focusable via Tab
 - **AND** the submit button SHALL be activatable via Enter/Space
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] Full-viewport wrapper with background image and centered card
@@ -157,3 +172,4 @@ attributes on inputs, and keyboard-navigable submit button.
 - [ ] Footer links to Component Dock (not ColorLib) — NOTE: original has
   no footer; add a minimal footer with Component Dock attribution
 - [ ] 100% test coverage on all component files
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

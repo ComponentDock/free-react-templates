@@ -159,6 +159,21 @@ Form inputs SHALL use bottom-border-only styling (no side or top borders) consis
 - **AND** inputs are full-width within the form panel
 - **AND** input text is dark gray, labels are medium gray
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] Full-viewport split layout renders correctly at desktop widths
@@ -176,3 +191,4 @@ Form inputs SHALL use bottom-border-only styling (no side or top borders) consis
 - [ ] No ColorLib references in app code
 - [ ] Footer links to Component Dock
 - [ ] Specs/docs only reference ColorLib source
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

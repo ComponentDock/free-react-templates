@@ -123,6 +123,21 @@ Extracted from the live preview stylesheet (`css/style.css`):
 - **AND** active nav items use the orange brand color
 - **AND** buttons have square corners (border-radius: 0)
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] Dark navbar with brand and nav links renders correctly
@@ -143,3 +158,7 @@ Extracted from the live preview stylesheet (`css/style.css`):
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] No ColorLib references in app code
 - [ ] Tests pass with 100% coverage
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

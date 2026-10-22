@@ -79,6 +79,21 @@ Lattice is a portfolio gallery grid. It recreates the ColorLib **Carousel 02** d
 - No carousel/slider — static grid (carousel JS not needed in React)
 - Clean, minimal aesthetic matching the source
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Acceptance criteria
 
 - GWT: Given the page loads, When I view the portfolio section, Then I see 6 work cards in a responsive grid
@@ -86,3 +101,7 @@ Lattice is a portfolio gallery grid. It recreates the ColorLib **Carousel 02** d
 - GWT: Given I view on mobile, When the viewport is <768px, Then cards stack in a single column
 - GWT: Given I view the footer, When I read the footer text, Then I see a link to componentdock.com
 - GWT: Given the page loads, When I check the font, Then Poppins is applied
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

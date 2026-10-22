@@ -145,6 +145,21 @@ The page SHALL adapt to mobile widths with a hamburger menu toggle, stacked serv
 - **THEN** a hamburger menu toggle button is visible
 - **AND** clicking it toggles the mobile navigation menu
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Design tokens (from live preview stylesheet + rendered page)
 
 | Token           | Value                                     | CSS Source                                                    |
@@ -159,3 +174,7 @@ The page SHALL adapt to mobile widths with a hamburger menu toggle, stacked serv
 | Counter bg      | `#fab700` (golden)                        | `.counter_area`                                               |
 | Testimonials bg | `#f9f9ff` (light purple-gray)             | `.testimonials_area`                                          |
 | Footer bg       | `#222222` (dark charcoal)                 | `.footer-area`                                                |
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -317,6 +317,21 @@ and a document title.
   landmark, and the footer in the contentinfo landmark
 - **AND** the document title SHALL be "Parchment — Minimal Blog Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -327,3 +342,4 @@ and a document title.
 - [ ] No ColorLib assets copied (picsum seeds `parchment-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
 - [ ] Body page background reproduced (#111860 visible behind the footer band and page edges; content sections #f2f2f2 / #fff on top)
 - [ ] Featured slider implemented with client-side state (dots + prev/next; fake timers in tests where needed)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

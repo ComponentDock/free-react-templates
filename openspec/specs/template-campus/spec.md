@@ -351,6 +351,21 @@ Usefull Links, Gallery, Contact) and the `#141414` bottom bar.
 - **AND** the footer SHALL show the dark bottom bar with the copyright
   line and a reworded credit (no ColorLib branding)
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-campus`
@@ -394,3 +409,4 @@ Usefull Links, Gallery, Contact) and the `#141414` bottom bar.
       stack ≤767px, hero h2 scales 60→30px, footer 4→2→1 columns
 - [ ] TEMPLATES.md: both "Academy" rows (Bootstrap line 328 + Education
       line 1625) marked `[x]` with surge URL on ship
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -187,6 +187,21 @@ The layout adapts from desktop multi-column to stacked mobile layout.
 - **WHEN** viewport < 768px
 - **THEN** navbar collapses to hamburger, hero is single-column, grids stack
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] Navbar renders logo, nav links, dropdowns, search, cart badge, Buy Now
@@ -207,3 +222,7 @@ The layout adapts from desktop multi-column to stacked mobile layout.
 - [ ] All images use picsum-seeded placeholders
 - [ ] No ColorLib references in app code (provenance only in spec)
 - [ ] Footer links Component Dock
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

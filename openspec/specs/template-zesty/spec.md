@@ -307,6 +307,21 @@ and a document title.
   landmark, and the footer in the contentinfo landmark
 - **AND** the document title SHALL be "Zesty — Food & Recipe Blog Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -318,3 +333,4 @@ and a document title.
 - [ ] Overlapping pink section-title bars + plus-icon boxes rendered as absolutely-positioned accents (top -57px / -157px behavior)
 - [ ] Filter grid implemented with client-side state (no mixitup dep); "Meat Lover" scenario passes
 - [ ] Search overlay opens/closes; subscribe form validates + swaps to success (input unmounts — assert absence)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

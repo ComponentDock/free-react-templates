@@ -485,6 +485,21 @@ landmark and a document title.
   blog, contact, and footer in order
 - **AND** the document title SHALL be "Benevol — Charity Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -507,3 +522,4 @@ landmark and a document title.
 - [ ] Footer: #333333 bg, About/Features/Some Paragraph/Subscribe (input + orange Subscribe)/Follow Us (4 social icons)/copyright with credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands; Anton + Nunito via Google Fonts link
 - [ ] README Templates status + TEMPLATES.md Foundation lines (402, 1266 AND 2322) marked `[x]` after merge
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

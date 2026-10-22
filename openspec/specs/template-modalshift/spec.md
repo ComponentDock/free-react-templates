@@ -175,6 +175,21 @@ The modal SHALL be responsive and centered on all screen sizes.
 - **WHEN** the modal is open
 - **THEN** the modal is centered with appropriate max-width
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] Page loads with centered heading and launch button
@@ -192,3 +207,7 @@ The modal SHALL be responsive and centered on all screen sizes.
 - [ ] Responsive on mobile and desktop
 - [ ] Footer links to Component Dock (https://www.componentdock.com/)
 - [ ] No ColorLib references in app code
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

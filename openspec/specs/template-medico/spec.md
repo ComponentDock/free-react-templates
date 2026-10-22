@@ -319,6 +319,21 @@ landmark and a document title.
 - **AND** the document title SHALL be "Medico — Medical / Health Care
   Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-medico`.
@@ -364,3 +379,4 @@ landmark and a document title.
       reachable), design tokens used, what differs (name kept from
       checklist, placeholder images, text logo, Google-font
       substitution, typo fixes).
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

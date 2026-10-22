@@ -271,6 +271,21 @@ The system SHALL adapt the layout across breakpoints: collapsing grids, the dark
 - **THEN** the navbar SHALL be a solid dark bar with a "Menu" toggle
 - **AND** the services, menu, chef, and footer grids SHALL collapse (2-up/1-up), stacking to one column on ≤767px
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-palate`
@@ -283,3 +298,4 @@ The system SHALL adapt the layout across breakpoints: collapsing grids, the dark
 - [ ] Source typo fixed: hero slide 2 "Kick of Your Day" → "Kick Off Your Day"; 18 distinct dish names (source repeats 3); copyright rebranded "© Palate. All rights reserved."
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done by implementer at ship time (mark ALL FOUR "Appetizer" rows — lines 334, 885, 1768 and 2665 — Bootstrap category and the other three category rows)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

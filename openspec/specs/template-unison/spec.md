@@ -406,6 +406,21 @@ Us and a Subscribe Newsletter form plus a copyright bar.
 - **AND** a top-bordered copyright bar SHALL show "© <year> All rights
   reserved" with the repo attribution
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-unison`
@@ -446,3 +461,4 @@ Us and a Subscribe Newsletter form plus a copyright bar.
       by implementer at ship time (mark ALL FIVE "Oneder" rows: line 469
       Bootstrap, line 1118 Business, line 1482 Creative, line 2348 One
       Page, line 2538 Portfolio)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

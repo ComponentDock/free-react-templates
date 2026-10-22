@@ -385,6 +385,21 @@ landmark and a document title.
   landmark
 - **AND** the document title SHALL be "Salus — Medical & Hospital Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist (implementer)
 
 - [ ] `scripts/verify-app.sh salus` passes (typecheck + lint + 100%
@@ -406,3 +421,4 @@ landmark and a document title.
       (brand socials as inline SVGs)
 - [ ] PR description includes: source (ColorLib Docmed), preview URL,
       tokens used, differences (new name, placeholders, typo fix)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

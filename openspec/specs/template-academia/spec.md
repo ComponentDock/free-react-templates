@@ -459,6 +459,21 @@ landmark and a document title.
   order
 - **AND** the document title SHALL be "Academia — Education Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -478,3 +493,4 @@ landmark and a document title.
 - [ ] Footer: dark bg, white wordmark + blurb + socials, Courses/Resources/About columns (#BABABA links hover #FDAE5C), bottom copyright bar with Colorlib credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react; Poppins + Crimson Text via Google Fonts link; logo as text wordmark
 - [ ] README Templates status + TEMPLATES.md Edumark lines (382 AND 1632 AND 2042) marked `[x]` after merge
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

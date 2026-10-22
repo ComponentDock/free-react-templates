@@ -469,6 +469,21 @@ contact info, link columns, and a copyright bar.
 - **THEN** it SHALL show a copyright notice with a "made with ♥" credit and
   social icon links
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run verify:app consilio` passes (typecheck + lint + vitest 100%
@@ -495,3 +510,4 @@ contact info, link columns, and a copyright bar.
 - [ ] Mobile navbar toggle with aria-expanded; social icons are inline SVGs
 - [ ] Dark-mode toggle present per repo conventions (dark: variants)
 - [ ] README status table regenerated after merge (`npm run readme:status`)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

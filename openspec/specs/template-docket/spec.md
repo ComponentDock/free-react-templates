@@ -145,6 +145,21 @@ The template SHALL display a dark footer with 4 columns: Company info (about tex
 - **WHEN** the page loads
 - **THEN** all four footer columns and the copyright line with Component Dock link are visible
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] Top bar with phone, email, social icons
@@ -163,3 +178,4 @@ The template SHALL display a dark footer with 4 columns: Company info (about tex
 - [ ] All sections match original section order
 - [ ] Responsive layout (mobile + desktop)
 - [ ] No ColorLib references in app code
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

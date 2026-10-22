@@ -430,6 +430,23 @@ fields on small screens, matching the source's Bootstrap `col-md-*` behavior.
   stack vertically, each taking full width (source `col-md-4` behavior)
 - **AND** the button SHALL remain full width
 
+### Requirement: Component Dock attribution
+
+The design ships no footer (single-section demo), so the system SHALL render the
+Component Dock credit — the marketplace that publishes this template — as a
+minimal link to `https://www.componentdock.com/` in the page's last band
+(AGENTS.md rule 5). The credit SHALL NOT add a design footer the source does not
+have.
+
+#### Scenario: Last-band attribution
+
+- **GIVEN** the template is rendered
+- **WHEN** the last band of the page is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+- **AND** no design footer SHALL be introduced
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-restly`
@@ -483,3 +500,4 @@ fields on small screens, matching the source's Bootstrap `col-md-*` behavior.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

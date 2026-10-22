@@ -213,6 +213,21 @@ YouTube, Pinterest, RSS).
 - **WHEN** the Quick Links section is shown
 - **THEN** it SHALL display 10 links in a 2-column layout
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] All section components render without errors
@@ -225,3 +240,4 @@ YouTube, Pinterest, RSS).
 - [ ] No references to ColorLib in app source code
 - [ ] Responsive layout works at mobile/tablet/desktop breakpoints
 - [ ] 100% test coverage (lines, functions, branches, statements)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

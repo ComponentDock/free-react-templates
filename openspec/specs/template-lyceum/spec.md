@@ -556,6 +556,21 @@ and a document title.
   contentinfo landmark
 - **AND** the document title SHALL be "Lyceum — Education Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -571,3 +586,4 @@ and a document title.
 - [ ] Footer newsletter: white 40px input + gradient arrow-only button; validates (zod) + swaps to success; gradient `background-size 200%` hover shift
 - [ ] Mobile hamburger menu opens/closes with focus handling
 - [ ] Hero + impress buttons invert correctly on hover (green fill / transparent)
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

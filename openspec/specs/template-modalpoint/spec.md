@@ -123,6 +123,21 @@ Then the modal has `role="dialog"`
 And the modal has `aria-labelledby` pointing to the title
 And the modal has `aria-hidden="true"` when closed
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] Modal opens and closes correctly (button, backdrop, X)
@@ -136,3 +151,7 @@ And the modal has `aria-hidden="true"` when closed
 - [ ] No ColorLib references in app code
 - [ ] Footer links to Component Dock
 - [ ] Tests: 100% coverage on new components
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

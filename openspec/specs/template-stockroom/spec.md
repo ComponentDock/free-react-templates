@@ -144,6 +144,21 @@ The search overlay SHALL open as a full-screen overlay with search input and clo
 - **WHEN** the user clicks the close button
 - **THEN** the overlay is dismissed
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] Sidebar: logo, nav links, CTA buttons, cart/fav/search, social icons
@@ -158,3 +173,4 @@ The search overlay SHALL open as a full-screen overlay with search input and clo
 - [ ] Colors: `#fbb710` brand, `#131212` dark, `#3c3c3c` newsletter, `#252525` footer
 - [ ] Buttons: rectangular (no radius), 55px height, 160px min-width
 - [ ] No ColorLib references in app code
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -548,6 +548,21 @@ the indigo brand color defined as a theme token.
 - **THEN** the brand color #4f46e5 SHALL be defined in `@theme` and used via
   Tailwind classes throughout the sections
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `openspec/specs/template-showcase`.
@@ -569,3 +584,4 @@ the indigo brand color defined as a theme token.
 - [ ] PR description records: source template (ColorLib Ronaldo), preview
       URL, design tokens used, deviations (renamed person name, picsum
       images, paraphrased copy).
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

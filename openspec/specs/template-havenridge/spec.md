@@ -219,6 +219,21 @@ The system SHALL compose all sections in a single page with a main landmark and 
 - **THEN** the page SHALL compose the Navbar, all sections, and the Footer
 - **AND** the document title SHALL be "Havenridge — Real Estate Agency Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] `openspec/specs/template-havenridge/spec.md` exists and is valid
@@ -236,3 +251,7 @@ The system SHALL compose all sections in a single page with a main landmark and 
 - [ ] Picsum images use deterministic seeds (havenridge-*)
 - [ ] `npm run verify:app -- havenridge` passes (typecheck + lint + 100% coverage + build)
 - [ ] PR includes: source URL, preview URL, token list, and differences
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

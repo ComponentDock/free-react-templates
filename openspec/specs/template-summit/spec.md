@@ -491,6 +491,21 @@ The system SHALL render a dark four-column footer with a copyright bar.
   React Templates") plus Terms of Service / Privacy Policy links — no
   ColorLib attribution or link
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `apps/summit` scaffolded from the simplest existing app; package
@@ -527,3 +542,4 @@ The system SHALL render a dark four-column footer with a copyright bar.
       build); full gate runs in CI on merge
 - [ ] PR description includes: source template (Confer), preview URL,
       design tokens, renames, placeholder images
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

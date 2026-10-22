@@ -239,6 +239,21 @@ The system SHALL ensure that footer provide site information.
 - **AND** the copyright bar SHALL show nav links
 - **AND** a link to Component Dock SHALL be present
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] Top bar: phone, 6 social icons, login/register
@@ -260,3 +275,7 @@ The system SHALL ensure that footer provide site information.
 - [ ] Brand tokens in `@theme` / `index.css`
 - [ ] `public/CNAME` set to `trekcraft.free.componentdock.com`
 - [ ] `homepage` set to `https://trekcraft.free.componentdock.com`
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

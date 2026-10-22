@@ -56,6 +56,21 @@ An interactive button showcase template with hero, features, pricing, testimonia
 - **THEN** they can toggle button props (size, variant, rounded, shadow, icon) in real-time
 - **AND** see the corresponding React/Tailwind JSX snippet generated and copy it to clipboard
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification Checklist
 
 - [ ] App folder created at `apps/zenith` with valid `package.json` (`@free-react-templates/zenith`)
@@ -65,3 +80,7 @@ An interactive button showcase template with hero, features, pricing, testimonia
 - [ ] All sections rendered matching the spec and 1:1 design tokens
 - [ ] Vitest tests passing with 100% coverage (`npm run test:coverage`)
 - [ ] Per-app verification passes (`scripts/verify-app.sh zenith`)
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

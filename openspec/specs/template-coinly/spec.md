@@ -387,6 +387,21 @@ columns, social circles, and a bottom bar.
 - **AND** the bottom bar SHALL also show links DPA, Terms of Use, Privacy
   Policy, support@company.com, and (123) 456-7890
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-coinly`
@@ -443,3 +458,4 @@ columns, social circles, and a bottom bar.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` on ALL three dup rows (lines 371, 967, 1748) + surge URL + `npm run readme:status` done by implementer at
       ship time
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

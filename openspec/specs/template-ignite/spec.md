@@ -344,6 +344,21 @@ columns, and contact details.
 - **AND** it SHALL show columns for Get Involved, Resources, and Connect
 - **AND** it SHALL show the contact email and phone number
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run verify:app ignite` passes: typecheck + lint + vitest with
@@ -361,3 +376,4 @@ columns, and contact details.
 - [ ] New original name "ignite" used everywhere (folder `apps/ignite`,
       package `@free-react-templates/ignite`); source slug recorded in PR
       description
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

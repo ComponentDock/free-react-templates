@@ -430,6 +430,21 @@ and a document title.
   the main landmark, and the footer in the contentinfo landmark
 - **AND** the document title SHALL be "Liftoff — Landing Page Template"
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -443,3 +458,4 @@ and a document title.
 - [ ] Scrollspy active-link highlight (IntersectionObserver or scroll state) — no jQuery
 - [ ] Contact form validates (zod) + swaps to success (inputs unmount — assert absence); submit blocked until valid
 - [ ] Mobile offcanvas menu opens/closes with focus handling
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

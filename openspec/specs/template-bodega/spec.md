@@ -155,6 +155,21 @@ The app SHALL NOT reference ColorLib anywhere in source files, comments, or data
 - **WHEN** searching for "colorlib" in apps/bodega/
 - **THEN** no matches are found
 
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
 ## Design Tokens
 
 | Token            | Value                       | Usage                                            |
@@ -179,3 +194,7 @@ The app SHALL NOT reference ColorLib anywhere in source files, comments, or data
 7. Recent Blog — 3 blog post cards
 8. Newsletter — Golden yellow subscription form
 9. Footer — 5-column layout with Component Dock link
+
+## Verification checklist
+
+- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
