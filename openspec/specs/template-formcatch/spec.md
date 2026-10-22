@@ -10,6 +10,29 @@ A contact page with a horizontal info bar at the top (four items with circular t
   time of prep — design tokens extracted from screenshot)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-03/` | HTTP 200 · 14,195 B · title `Contact Form 03` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-03/css/style.css?v=3656ea60` | HTTP 200 · 16,560 B · sha256 `9f28e79f2e1f` |
+
+**Live palette** (hex × occurrences across the sheets): `#46b5d1`×6,
+`#2d9bb7`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#7ec8e3`.
+
 ## Requirements
 
 ### Requirement: Page title rendering

@@ -1,5 +1,14 @@
 # Ignite (ColorLib Youthconnect) — Implementation Tasks
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/youthconnect/` answers HTTP 200
+> (60,605 B; `Base.Cam9DSxY.css` 64,295 B, sha256 `724fb38dde2e`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 Recreation of https://colorlib.com/wp/template/youthconnect/ under the new
 name **Ignite** (brand: **Ignite Youth**). Full spec:
 `openspec/specs/template-ignite/spec.md`.

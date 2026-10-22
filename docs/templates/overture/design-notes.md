@@ -1,5 +1,14 @@
 # Overture — Implementation Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://colorlib.com/etc/cs/06-comming-soon/index.html` answers HTTP 200
+> (4,984 B; `style.css` 9,497 B, sha256 `4bdcddf752e0`). Any "preview 404 /
+> design from screenshot" note further down is **superseded**: take CSS
+> values from the live sheet (`docs/replication.md`); the screenshot stays
+> the layout target.
+
 Source: ColorLib 06 Comming Soon
 Preview: https://preview.colorlib.com/theme/06-comming-soon/ (404 — design from screenshot)
 

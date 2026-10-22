@@ -156,6 +156,26 @@ Ignite lives in `apps/ignite` (package `@free-react-templates/ignite`) and
 uses shared components from `packages/ui` (Button, ButtonLink, Badge, Card,
 cn).
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/youthconnect/` | HTTP 200 · 60,605 B · title `Elevate Youth - Rise Higher Together` |
+| stylesheet | `https://preview.colorlib.com/theme/youthconnect/_astro/Base.Cam9DSxY.css` | HTTP 200 · 64,295 B · sha256 `724fb38dde2e` |
+
+**Live palette** (hex × occurrences across the sheets): `#06b6d4`×11,
+`#0891b2`×7, `#22d3ee`×7, `#f97316`×6, `#1e1b4b`×5, `#a5f3fc`×4,
+`#4338ca`×4, `#ea580c`×3.
+
 ## Requirements
 
 ### Requirement: Navigation bar

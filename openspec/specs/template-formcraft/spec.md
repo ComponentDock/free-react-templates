@@ -12,6 +12,29 @@ inputs, a "Let's Talk" heading, and a blue pill-shaped submit button.
   time of prep — design tokens extracted from screenshot)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-20/` | HTTP 200 · 2,907 B · title `Contact Form #10` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-20/css/style.css?v=9e8a49e7` | HTTP 200 · 14,263 B · sha256 `d20609c51c13` |
+
+**Live palette** (hex × occurrences across the sheets): `#ccda46`×4,
+`#b7c628`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#5b6abf`.
+
 ## Requirements
 
 ### Requirement: Page layout

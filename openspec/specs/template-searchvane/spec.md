@@ -32,6 +32,28 @@ Recreation of ColorLib **Search Form Bar 02** — a minimalist, centered search 
    - **Search bar** — animated expandable search input with blue circular icon button
 3. **Footer** — Component Dock attribution
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-02/` | HTTP 200 · 1,898 B · title `Search Form/Bar 02` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-02/css/style.css?v=fd50f59f` | HTTP 200 · 11,097 B · sha256 `c5fb88c2699e` |
+
+**Live palette** (hex × occurrences across the sheets): `#1089ff`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#2196f3`.
+
 ## Requirements
 
 ### Requirement: Page title

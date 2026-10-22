@@ -1,5 +1,14 @@
 # Scheduly — Replication Task Outline & Design Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/calendar-09/` answers HTTP
+> 200 (8,117 B; `style.css` 23,693 B, sha256 `48dbc60cd528`). Any "preview
+> 404 / design from screenshot" note further down is **superseded**: take
+> CSS values from the live sheet (`docs/replication.md`); the screenshot
+> stays the layout target.
+
 ## Overview
 
 - **Source Template**: ColorLib Calendar 09 (`https://colorlib.com/wp/template/calendar-09/`)

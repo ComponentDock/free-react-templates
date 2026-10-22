@@ -1,5 +1,14 @@
 # Elixir — Implementation TODO
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/pharma/` answers HTTP 200 (22,706 B;
+> `style.css` 79,820 B, sha256 `b696dfc59a40`). Any "preview 404 / design
+> from screenshot" note further down is **superseded**: take CSS values from
+> the live sheet (`docs/replication.md`); the screenshot stays the layout
+> target.
+
 ## Pre-implementation
 - [x] Spec written (`openspec/specs/template-elixir/spec.md`)
 - [x] Design notes documented (`docs/templates/elixir/design-notes.md`)

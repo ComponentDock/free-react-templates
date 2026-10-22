@@ -1,5 +1,14 @@
 # Formcatch — Design Notes & Task Outline
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/contact-form-03/` answers
+> HTTP 200 (14,195 B; `style.css` 16,560 B, sha256 `9f28e79f2e1f`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 Source: ColorLib Contact Form 03
 Preview: https://preview.colorlib.com/theme/contact-form-03/ (404 — design from screenshot)
 

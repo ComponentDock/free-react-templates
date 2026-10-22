@@ -1,5 +1,14 @@
 # Premiere — design notes (replication research)
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://colorlib.com/etc/cs/comingsoon_02/index.html` answers HTTP 200
+> (2,302 B; `style.css` 10,186 B, sha256 `95afef03e067`). Any "preview 404 /
+> design from screenshot" note further down is **superseded**: take CSS
+> values from the live sheet (`docs/replication.md`); the screenshot stays
+> the layout target.
+
 Source: ColorLib **Coming Soon 2** —
 https://colorlib.com/wp/template/comingsoon_02/ (source slug `comingsoon_02`;
 ColorLib page title "Coming Soon V02 - Free Full-Screen Website Template

@@ -20,6 +20,24 @@ Recreation of ColorLib Calendar 09 (`https://colorlib.com/wp/template/calendar-0
   - Sidebar / Event Panel: Upcoming events list, mini date picker, and quick filters.
   - Footer: Clean modern footer with copyright and required link to https://www.componentdock.com/ ("Component Dock").
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/calendar-09/` | HTTP 200 · 8,117 B · title `Calendar 09` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/calendar-09/css/style.css?v=6d2199ce` | HTTP 200 · 23,693 B · sha256 `48dbc60cd528` |
+
+**Live palette** (hex × occurrences across the sheets): `#337ab7`×3.
+
 ## Requirements
 
 ### Feature: Interactive Calendar & Event Management

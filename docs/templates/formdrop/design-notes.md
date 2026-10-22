@@ -1,5 +1,14 @@
 # Formdrop — Design Notes & Task Outline
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/contact-form-04/` answers
+> HTTP 200 (13,939 B; `style.css` 17,693 B, sha256 `e7a78fbcb3f9`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 Source: ColorLib Contact Form 04
 Preview: https://preview.colorlib.com/theme/contact-form-04/ (404 — design from screenshot)
 

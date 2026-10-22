@@ -1,5 +1,14 @@
 # SignupTide — Implementation Outline
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/signup-form-10/` answers
+> HTTP 200 (5,486 B; `style.css` 16,568 B, sha256 `9383d3fe3367`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 **Source:** ColorLib Signup Form 10
 **Preview:** https://preview.colorlib.com/theme/signup-form-10/ (404 — screenshot reference only)
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-10.jpg

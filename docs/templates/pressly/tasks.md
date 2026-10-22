@@ -1,5 +1,15 @@
 # Pressly (ColorLib Newsflex) — Tasks & Design Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/magaznpro/` answers HTTP 200 (44,560
+> B; `bootstrap.min.css` 232,111 B, sha256 `d85327d99c7a`). Any "preview 404
+> / design from screenshot" note further down is **superseded**: take CSS
+> values from the live sheet (`docs/replication.md`); the screenshot stays
+> the layout target. The cited `…/theme/` is a neighbouring slug; this
+> prep's own preview is `https://preview.colorlib.com/theme/magaznpro/`.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-pressly`.
 

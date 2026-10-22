@@ -64,6 +64,28 @@ background with a centered login form floating directly over the image (no card 
 | Form max-width             | ~`400px`                       | Login form container                               |
 | Background                 | Full-viewport image (mountain sunset) | `background-size: cover; background-position: center` |
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/login-form-20/` | HTTP 200 · 4,747 B · title `Login 10` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/login-form-20/css/style.css?v=c724dbfe` | HTTP 200 · 18,079 B · sha256 `f2e82ff3470e` |
+
+**Live palette** (hex × occurrences across the sheets): `#fbceb5`×7.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#e8a090`.
+
 ## Requirements
 
 ### Requirement: Full-viewport scenic background

@@ -4,6 +4,33 @@
 
 Gallery is a creative portfolio and resources landing page template. It recreates the ColorLib "Reopen" design (https://colorlib.com/wp/template/reopen/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. The template features a centered logo, navigation, hero section, masonry-style portfolio grid with hover overlays, a load-more action, and a footer with copyright and social links.
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/reopen/` | HTTP 200 · 11,102 B · title `Thoughtful design resources — Reopen` |
+| stylesheet | `https://preview.colorlib.com/theme/reopen/css/fonts.min.css?v=3.0.0` | HTTP 200 · 26,810 B · sha256 `dc9c5b1eb57b` |
+| stylesheet | `https://preview.colorlib.com/theme/reopen/css/clear.min.css?v=3.0.0` | HTTP 200 · 1,195 B · sha256 `79801b07e97f` |
+| stylesheet | `https://preview.colorlib.com/theme/reopen/css/common.min.css?v=3.0.0` | HTTP 200 · 5,711 B · sha256 `9cf66fecbb95` |
+| stylesheet | `https://preview.colorlib.com/theme/reopen/css/icons.min.css?v=3.0.0` | HTTP 200 · 1,499 B · sha256 `ad9f0e5bbc48` |
+| … | (2 further sheet(s) linked, all fetched) | — |
+
+**Live palette** (hex × occurrences across the sheets): `#f277ae`×18,
+`#ffff99`×2, `#fd3137`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#2846f8`.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation links, and dark mode toggle

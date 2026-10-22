@@ -1,5 +1,14 @@
 # Passvale — Implementation Task Outline
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/login-form-20/` answers HTTP
+> 200 (4,747 B; `style.css` 18,079 B, sha256 `f2e82ff3470e`). Any "preview
+> 404 / design from screenshot" note further down is **superseded**: take
+> CSS values from the live sheet (`docs/replication.md`); the screenshot
+> stays the layout target.
+
 Recreation of ColorLib "Login Form 20" (slug: `login-form-20`).
 Preview: https://preview.colorlib.com/theme/login-form-20/ (404 — design from screenshot only)
 

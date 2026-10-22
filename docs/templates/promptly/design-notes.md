@@ -1,5 +1,14 @@
 # Promptly — Design Notes & Implementation Todo
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/modal-11/` answers HTTP 200
+> (2,363 B; `style.css` 15,042 B, sha256 `f1b411267894`). Any "preview 404 /
+> design from screenshot" note further down is **superseded**: take CSS
+> values from the live sheet (`docs/replication.md`); the screenshot stays
+> the layout target.
+
 Source: ColorLib Modal 11
 Preview: https://preview.colorlib.com/theme/modal-11/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-11.jpg

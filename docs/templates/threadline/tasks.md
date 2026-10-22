@@ -1,5 +1,15 @@
 # Threadline — Implementation Tasks & Design Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/malefashion/` answers HTTP 200 (56,662
+> B; `bootstrap.min.css` 120,349 B, sha256 `2f6a7a13620d`). Any "preview 404
+> / design from screenshot" note further down is **superseded**: take CSS
+> values from the live sheet (`docs/replication.md`); the screenshot stays
+> the layout target. The cited `…/fashion-2/` is a neighbouring slug; this
+> prep's own preview is `https://preview.colorlib.com/theme/malefashion/`.
+
 ## Source mapping
 
 - **ColorLib slug:** `fashion-2`

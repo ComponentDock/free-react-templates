@@ -1,5 +1,14 @@
 # Oncoming — implementation tasks
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://colorlib.com/etc/cs/comingsoon_11/index.html` answers HTTP 200
+> (5,009 B; `style.css` 8,561 B, sha256 `b7eb38ceb58d`). Any "preview 404 /
+> design from screenshot" note further down is **superseded**: take CSS
+> values from the live sheet (`docs/replication.md`); the screenshot stays
+> the layout target.
+
 Recreation of ColorLib "Coming Soon V11" (source slug `comingsoon_11` — one
 full-viewport screen behind a fixed, full-screen cross-fading slideshow of FOUR
 `1900×900` WINTER photographs on an un-backdropped layer, covered by ONE

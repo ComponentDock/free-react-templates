@@ -1,5 +1,14 @@
 # FormCraft (ColorLib Contact Form 20) — Tasks & Design Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/contact-form-20/` answers
+> HTTP 200 (2,907 B; `style.css` 14,263 B, sha256 `d20609c51c13`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-formcraft`. Recreation name: **FormCraft** (NEW name —
 > the ColorLib source keeps its name "Contact Form 20").

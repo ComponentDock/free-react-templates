@@ -1,5 +1,14 @@
 # Ledgerly (ColorLib Book Keeping) — Tasks & Design Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/cryptos/` answers HTTP 200 (38,482 B;
+> `style.css` 39,435 B, sha256 `5e2c5ae14a3b`). Any "preview 404 / design
+> from screenshot" note further down is **superseded**: take CSS values from
+> the live sheet (`docs/replication.md`); the screenshot stays the layout
+> target.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-ledgerly`. Recreation name: **Ledgerly** (NEW name —
 > the ColorLib source keeps its name "Book Keeping").

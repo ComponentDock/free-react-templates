@@ -78,6 +78,29 @@ A full-viewport centered page with a very light gray (#f5f5f5) background. The c
 **Footer:**
 - Minimal footer with site branding and Component Dock link
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/signup-form-10/` | HTTP 200 · 5,486 B · title `Sign Up #10` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/signup-form-10/css/style.css?v=9de82a1d` | HTTP 200 · 16,568 B · sha256 `9383d3fe3367` |
+
+**Live palette** (hex × occurrences across the sheets): `#38d39f`×6,
+`#27b183`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#5cb85c`.
+
 ## Requirements
 
 ### Requirement: Page layout

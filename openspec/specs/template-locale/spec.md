@@ -80,6 +80,30 @@ read their `primary` skin from a `--color-primary-*` scale that re-points to
 | 8 | People talking about | —    | one quote card at a time with portrait, name and role                   |
 | 9 | Footer         | `#contact` | brand blurb + socials, Navigation and Services columns, newsletter, Component Dock credit |
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/gricklo/` | HTTP 200 · 45,011 B · title `Directory | Template` |
+| stylesheet | `https://preview.colorlib.com/theme/gricklo/assets/css/bootstrap.min.css` | HTTP 200 · 24,896 B · sha256 `0ccdf0afe0e3` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/gricklo/assets/css/owl.carousel.min.css` | HTTP 200 · 183 B · sha256 `651d6bdb6492` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/gricklo/assets/css/slicknav.css` | HTTP 200 · 2,506 B · sha256 `87ded2c3764f` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/gricklo/assets/css/animate.min.css` | HTTP 200 · 34,336 B · sha256 `ff7c8f596a31` · framework build |
+| … | (2 further sheet(s) linked, all fetched) | — |
+
+**No theme sheet** — every stylesheet this page links is a framework/plugin
+build, so the design's own values live in the page's inline `<style>` or the
+framework overrides in the DOM; read them there, not from the libraries.
+
 ## Requirements
 
 ### Requirement: Hero search

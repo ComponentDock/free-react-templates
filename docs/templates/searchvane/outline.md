@@ -1,5 +1,14 @@
 # SearchVane — Implementation Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/search-form-bar-02/` answers
+> HTTP 200 (1,898 B; `style.css` 11,097 B, sha256 `c5fb88c2699e`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 ## Template
 
 - **Name:** SearchVane

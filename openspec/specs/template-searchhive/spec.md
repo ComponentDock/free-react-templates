@@ -44,6 +44,26 @@ Extracted from the screenshot analysis (preview CSS unavailable).
 | Body note text color   | `#6b7280` (gray-500)                           |
 | Body note font size    | `14px`                                         |
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-11/` | HTTP 200 · 3,599 B · title `Search #1` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-11/css/style.css?v=181d7921` | HTTP 200 · 12,894 B · sha256 `341920a53f59` |
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#2563eb`.
+
 ## Requirements
 
 ### Requirement: Navbar layout

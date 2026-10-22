@@ -1,5 +1,14 @@
 # Locale — task outline
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/gricklo/` answers HTTP 200 (45,011 B;
+> `bootstrap.min.css` 24,896 B, sha256 `0ccdf0afe0e3`). Any "preview 404 /
+> design from screenshot" note further down is **superseded**: take CSS
+> values from the live sheet (`docs/replication.md`); the screenshot stays
+> the layout target.
+
 Recreation of ColorLib **Gricklo** (https://colorlib.com/wp/template/gricklo/)
 as `apps/locale`. One template, one app folder; every step below leaves the
 per-app gate green.

@@ -1,5 +1,14 @@
 # SearchHive — Design Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/search-form-bar-11/` answers
+> HTTP 200 (3,599 B; `style.css` 12,894 B, sha256 `341920a53f59`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 ## Source
 - ColorLib: Search Form Bar 11
 - URL: https://colorlib.com/wp/template/search-form-bar-11/

@@ -15,6 +15,33 @@ Design tokens captured from the original:
 Threadline lives in `apps/threadline` and uses shared components from `packages/ui`
 (Button, cn).
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/malefashion/` | HTTP 200 · 56,662 B · title `Male Fashion | Men's Clothing, Shoes and Accessories` |
+| stylesheet | `https://preview.colorlib.com/theme/malefashion/css/bootstrap.min.css?v=3.0.0` | HTTP 200 · 120,349 B · sha256 `2f6a7a13620d` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/malefashion/vendor/swiper/14.3.0/swiper-bundle.min.css?v=3.0.0` | HTTP 200 · 14,615 B · sha256 `f4760c4ff94a` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/malefashion/css/style.min.css?v=3.0.0` | HTTP 200 · 74,332 B · sha256 `539be22ccba7` |
+| stylesheet | `https://preview.colorlib.com/theme/malefashion/vendor/fontawesome/7.3.1/css/fontawesome.subset.css?v=3.0.0` | HTTP 200 · 1,782 B · sha256 `9b9a1073bae7` · framework build |
+| … | (1 further sheet(s) linked, all fetched) | — |
+
+**Live palette** (hex × occurrences across the sheets): `#c8191a`×13,
+`#e53637`×10, `#f7941d`×2, `#20315f`×2, `#f1af4d`×2, `#ed1c24`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#ff6363`, `#ff7777`.
+
 ## Requirements
 
 ### Requirement: Header with navigation

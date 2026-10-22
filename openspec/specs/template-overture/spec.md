@@ -10,6 +10,28 @@ A Coming Soon template with heading and subtext, countdown timer, notify us butt
 - **Package:** `@free-react-templates/overture`
 - **Deploy URL:** `https://overture.free.componentdock.com`
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/06-comming-soon/index.html` | HTTP 200 · 4,984 B |
+| stylesheet | `https://colorlib.com/etc/cs/06-comming-soon/css/style.css?v=97cb11f3` | HTTP 200 · 9,497 B · sha256 `4bdcddf752e0` |
+
+**Live palette** (hex × occurrences across the sheets): `#f84982`×3.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#e91e63`, `#fffc00`.
+
 ## Requirements
 
 ### Requirement: Full-screen hero with background image

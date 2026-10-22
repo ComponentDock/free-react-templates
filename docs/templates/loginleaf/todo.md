@@ -1,5 +1,14 @@
 # LoginLeaf — Implementation Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/login-form-08/` answers HTTP
+> 200 (4,980 B; `style.css` 16,733 B, sha256 `5ce0ca09cb08`). Any "preview
+> 404 / design from screenshot" note further down is **superseded**: take
+> CSS values from the live sheet (`docs/replication.md`); the screenshot
+> stays the layout target.
+
 Source: ColorLib "Login Form 08" (login-form-08)
 Preview: https://preview.colorlib.com/theme/login-form-08/ (404 — design from screenshot)
 New name: `loginleaf`

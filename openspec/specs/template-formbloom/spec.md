@@ -7,6 +7,25 @@
 
 A minimal, monochrome contact form template with a two-column layout (location info + contact info) and a full-width message form below. Pure white background, Quicksand font, solid black "Send Message" button.
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-15/` | HTTP 200 · 2,773 B · title `Contact Form #5` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-15/css/style.css?v=f578b57e` | HTTP 200 · 13,532 B · sha256 `dc952ec40953` |
+
+**Live palette** (hex × occurrences across the sheets): `#ccda46`×4,
+`#b7c628`×2.
+
 ## Requirements
 
 ### Requirement: Page renders all sections

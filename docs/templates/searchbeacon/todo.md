@@ -1,5 +1,14 @@
 # SearchBeacon — Implementation Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/search-form-bar-03/` answers
+> HTTP 200 (1,947 B; `style.css` 10,489 B, sha256 `f0a3296eeff9`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 Recreation of ColorLib **Search Form Bar 03**
 Source: https://colorlib.com/wp/template/search-form-bar-03/
 

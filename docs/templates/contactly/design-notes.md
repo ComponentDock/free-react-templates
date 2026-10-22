@@ -1,5 +1,14 @@
 # Contactly — Design Notes & Task Outline
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/contact-form-02/` answers
+> HTTP 200 (14,277 B; `style.css` 17,443 B, sha256 `518d447f3ad8`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target.
+
 Source: ColorLib Contact Form 02
 Preview: https://preview.colorlib.com/theme/contact-form-02/ (404 — design from screenshot)
 

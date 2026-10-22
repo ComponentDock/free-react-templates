@@ -446,6 +446,22 @@ distinctive in SIX ways — do not blur it with `03`–`10` or with the
 | e-mail capture       | NONE — no form, no well, no submit lane, no validation bubble on this slug (family-unique)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | —                                                                             |
 | attribution          | Lato-Regular 12–13px white/70 centred line under the page content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | footer requirement (ADDED vs the reference — the source has no footer credit) |
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_11/index.html` | HTTP 200 · 5,009 B · title `Coming Soon 11` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_11/css/style.css?v=b77d0db0` | HTTP 200 · 8,561 B · sha256 `b7eb38ceb58d` |
+
 ## Requirements
 
 ### Feature: Fixed four-photo cross-fade slideshow under a single 50% scrim

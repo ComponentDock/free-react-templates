@@ -12,6 +12,29 @@ rounded input fields on the right.
   time of prep — design tokens extracted from screenshot)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-16/` | HTTP 200 · 2,963 B · title `Contact Form #6` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-16/css/style.css?v=5d516f57` | HTTP 200 · 13,502 B · sha256 `b9ed59ff092b` |
+
+**Live palette** (hex × occurrences across the sheets): `#ccda46`×4,
+`#b7c628`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#5b4aff`.
+
 ## Requirements
 
 ### Requirement: Page layout

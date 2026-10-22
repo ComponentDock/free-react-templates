@@ -38,6 +38,26 @@ in a clean pop-up."
 - **Section background:** white `#ffffff`
 - **Text color:** `#000000` or `rgba(0, 0, 0, 0.8)` for modal body text
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/modal-11/` | HTTP 200 · 2,363 B · title `Modal #1` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/modal-11/css/style.css?v=0a55b9d6` | HTTP 200 · 15,042 B · sha256 `f1b411267894` |
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#3e64ff`.
+
 ## Requirements
 
 ### Requirement: Page layout and launch button

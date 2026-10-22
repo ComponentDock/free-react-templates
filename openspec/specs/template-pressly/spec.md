@@ -47,6 +47,30 @@ CSS 4 + TypeScript.
 Pressly lives in `apps/pressly` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/magaznpro/` | HTTP 200 · 44,560 B · title `Culture, design &amp; everyday discoveries | Magaznpro` |
+| stylesheet | `https://preview.colorlib.com/theme/magaznpro/vendor/bootstrap/5.3.8/css/bootstrap.min.css?v=3.0.0` | HTTP 200 · 232,111 B · sha256 `d85327d99c7a` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/magaznpro/vendor/swiper/14.3.0/swiper-bundle.min.css?v=3.0.0` | HTTP 200 · 14,615 B · sha256 `f4760c4ff94a` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/magaznpro/kit/sliders.css?v=3.0.0` | HTTP 200 · 4,469 B · sha256 `83086ba140e3` |
+| stylesheet | `https://preview.colorlib.com/theme/magaznpro/kit/video-dialog.css?v=3.0.0` | HTTP 200 · 1,753 B · sha256 `5d5caddd4638` |
+| … | (2 further sheet(s) linked, all fetched) | — |
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#74cbe0`, `#ef1c49`.
+
 ## Requirements
 
 ### Requirement: Header with social icons, logo, and controls

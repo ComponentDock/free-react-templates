@@ -1,5 +1,16 @@
 # Formpost — Implementation Tasks
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/bootstrap/contact-form-09/` answers
+> HTTP 200 (6,470 B; `style.css` 16,111 B, sha256 `dc0dccbf00eb`). Any
+> "preview 404 / design from screenshot" note further down is
+> **superseded**: take CSS values from the live sheet
+> (`docs/replication.md`); the screenshot stays the layout target. The cited
+> `…/contact-form-06/` is a neighbouring slug; this prep's own preview is
+> `https://preview.colorlib.com/theme/bootstrap/contact-form-09/`.
+
 > Recreation of ColorLib **Contact Form 06**
 > Source: https://colorlib.com/wp/template/contact-form-06/
 > Preview: https://preview.colorlib.com/theme/contact-form-06/ (404 — based on screenshot)

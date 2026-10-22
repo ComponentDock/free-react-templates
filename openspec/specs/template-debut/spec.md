@@ -155,6 +155,25 @@ minutes|seconds` (`.l2-txt1`) over a label `span` (`.s2-txt4`:
 | page                                | `min-height:100vh`; form panel `650px`/`100vh`; photo panel `71%` | layout                                  |
 | transition                          | `all .4s`                                                         | button, focus ring, socials             |
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_01/index.html` | HTTP 200 · 5,238 B · title `Coming Soon 1` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_01/css/style.css?v=232f3841` | HTTP 200 · 12,745 B · sha256 `3da56f909e07` |
+
+**Live palette** (hex × occurrences across the sheets): `#c80000`×3,
+`#57b846`×2.
+
 ## Requirements
 
 ### Feature: Split layout

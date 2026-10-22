@@ -20,6 +20,29 @@ Design tokens captured from the original (see docs/replication.md):
 Ledgerly lives in `apps/ledgerly` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/cryptos/` | HTTP 200 · 38,482 B · title `Cryptos - Cryptocurrency &amp; Mining Template` |
+| stylesheet | `https://preview.colorlib.com/theme/cryptos/style.css` | HTTP 200 · 39,435 B · sha256 `5e2c5ae14a3b` |
+
+**Live palette** (hex × occurrences across the sheets): `#ffaf02`×41,
+`#0d104d`×12, `#28408b`×8, `#68a85c`×2, `#ff0048`×2.
+
+**TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
+live sheets do not paint (a hover/state shade may be inline or JS-driven;
+verify before building from it): `#30415b`, `#4768b9`, `#a0722e`, `#b8823a`.
+
 ## Requirements
 
 ### Requirement: Top header bar

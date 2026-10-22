@@ -1,5 +1,16 @@
 # Globetrek — Implementation Notes
 
+<!-- ref-reverify:2026-10-22 -->
+
+> **Reference re-verified live 2026-10-22** —
+> `https://preview.colorlib.com/theme/travelers/` answers HTTP 200 (25,291
+> B; `css` 5,728 B, sha256 `7eab7b5d3f4a`). Any "preview 404 / design from
+> screenshot" note further down is **superseded**: take CSS values from the
+> live sheet (`docs/replication.md`); the screenshot stays the layout
+> target. The cited `…/travel-wordpress-themes/` is a neighbouring slug;
+> this prep's own preview is
+> `https://preview.colorlib.com/theme/travelers/`.
+
 Source: ColorLib "Travel Wordpress Themes" (slug: travel-wordpress-themes)
 Preview: https://preview.colorlib.com/theme/travel-wordpress-themes/ (404 — design from screenshot only)
 New name: globetrek

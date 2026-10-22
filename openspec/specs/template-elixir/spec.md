@@ -46,6 +46,26 @@ copied). The footer copyright links to Component Dock instead of ColorLib.
   7. CTA Banners: 2 side-by-side image cards on dark bg ("Elixir Products", "Rated by Experts")
   8. Footer: 3-col (About Us, Quick Links, Contact Info) + copyright with Component Dock link
 
+<!-- ref-reverify:2026-10-22 -->
+
+## Live reference restored (2026-10-22)
+
+The prep recorded this ColorLib preview as unreachable, so its tokens were
+read off the TEMPLATES.md screenshot and the docs brief says "screenshot
+only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
+live DOM and CSS are authoritative for token values — `docs/replication.md`:
+*CSS values are canonical over screenshots*. The screenshot stays the layout
+target.
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/pharma/` | HTTP 200 · 22,706 B · title `Pharma &mdash; Colorlib Template` |
+| stylesheet | `https://preview.colorlib.com/theme/pharma/fonts/icomoon/style.css` | HTTP 200 · 79,820 B · sha256 `b696dfc59a40` |
+| stylesheet | `https://preview.colorlib.com/theme/pharma/css/bootstrap.min.css` | HTTP 200 · 31,967 B · sha256 `c649fb0e3a92` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/pharma/css/magnific-popup.css` | HTTP 200 · 4,104 B · sha256 `cafc150d7b9e` · framework build |
+| stylesheet | `https://preview.colorlib.com/theme/pharma/css/jquery-ui.css` | HTTP 200 · 6,100 B · sha256 `4be1a367de69` · framework build |
+| … | (2 further sheet(s) linked, all fetched) | — |
+
 ## Requirements
 
 ### Requirement: Navbar displays branding and navigation
