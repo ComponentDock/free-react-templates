@@ -207,8 +207,9 @@ mb-20`: `div.location-img` (radius 4px, `::before` purple overlay
   - Text colors: white on purple/dark bands; hero h1/p white; section h2
     `#3C3B37`.
   - Fonts: **"Jost", sans-serif** (everything — display, body, buttons; loaded
-    via `@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200…
-700")`; hero h1 52px/500/lh 1.2, section h2 36-40px/600/lh 1.4, card h3
+    via `@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap")`
+    — the live sheet's own axis, re-fetched 2026-10-22: `assets/css/style.css`
+    74,106 B, URL answers HTTP 200; hero h1 52px/500/lh 1.2, section h2 36-40px/600/lh 1.4, card h3
     20px/500, category h4 20px/600, footer h4 18px/500). Google Fonts — add
     `<link>` in `index.html`.
   - Buttons: `.btn` purple rect, radius 4px, padding 30px 35px, white Jost
