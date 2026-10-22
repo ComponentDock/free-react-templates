@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Curate brand palette — recreated from the ColorLib "Portfolio" design
+  /* Curate brand palette — measured from the reference design
      (css/main.css): green #8ab92d accents/buttons, dark #222 headings,
      body text #777, light section bg #f9f9ff. */
   --color-brand: #8ab92d;

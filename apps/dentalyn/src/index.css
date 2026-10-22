@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dentalyn brand colors — from the ColorLib Dento preview:
+  /* Dentalyn brand colors — measured from the reference preview:
      a dental clinic theme with a teal #0891b2 primary,
      dark teal #0f766e hover, card bg #f4f4f4, muted text #707070/#b7b7b7,
      Montserrat font. */
@@ -29,7 +29,8 @@
 
   --color-ink: #212529;
 
-  /* Montserrat (headings + body) via Google Fonts — matching the ColorLib font. */
+  /* Montserrat (headings + body) via Google Fonts — matching the reference
+     design. */
   --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 }

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dentalink brand palette — recreated from the ColorLib "Dentist" design
+  /* Dentalink brand palette — measured from the reference design
      (css/main.css): green #67bc00 accents/buttons, gradient #ade600→#62b900,
      dark navy #04091e headings/footer/about, light bg #f9f9ff. */
   --color-brand: #67bc00;

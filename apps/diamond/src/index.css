@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Diamond brand amber — from the original ColorLib "Error 404 V9"
-     stylesheet (css/style.css): the rotated diamond badge background
-     (#ffa200). */
+  /* Diamond brand amber — from the reference stylesheet: the rotated
+     diamond badge background (#ffa200). */
   --color-brand: #ffa200;
 
   /* Pill button gray — the "home page" link background (#8f8f8f). */
