@@ -154,7 +154,7 @@ g-1 align-items-stretch` with 5 EQUAL `.service` cards (white, padding
   via the usual `[~]` push on `feat/template-propel`.
 - No `colorlib` string anywhere in `apps/propel/*` — provenance lives only
   here, TEMPLATES.md, and the PR.
-- TEMPLATES.md lists "Express" THREE times (lines 579, 1005, 1379) —
+- TEMPLATES.md lists "Express" THREE times (lines 579, 1007, 1381) —
   bookkeeping must mark ALL three rows `[x]` with the same live URL.
 - Blog post-meta format: "by Syrgey • 23 Aug 2020" — keep author + date
   pattern with paraphrased names/dates.

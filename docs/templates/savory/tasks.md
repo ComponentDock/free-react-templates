@@ -110,4 +110,4 @@
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
       (https://free-react-templates-savory.surge.sh) + homepage; run
       `npm run readme:status`; push. TEMPLATES.md lists Bueno TWICE
-      (lines 250 and 2851) — mark BOTH copies.
+      (lines 250 and 2853) — mark BOTH copies.

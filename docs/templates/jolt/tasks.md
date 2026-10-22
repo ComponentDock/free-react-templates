@@ -189,7 +189,7 @@ solid transparent`, `border-radius: 30px`, white, `padding: 14px 30px`;
       fields, footer socials + Component Dock link)
 - [ ] `npm run verify:app jolt` passes; commit `feat: add jolt …`; PR +
       immediate squash merge; then TEMPLATES.md bookkeeping — BOTH Action
-      rows (lines 549 AND 881) → `[x]` + surge URL (same URL twice) +
+      rows (lines 549 AND 883) → `[x]` + surge URL (same URL twice) +
       `npm run readme:status`
 
 ## Verification checklist (from spec)

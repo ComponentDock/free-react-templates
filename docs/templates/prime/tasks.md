@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Ultim8" — "Ultim8 - Free Bootstrap 4 Template by
   Colorlib" (source: https://colorlib.com/wp/template/ultim8/). Appears in
-  TEMPLATES.md THREE times — dup rows at lines **522, 1211, 2369**; mark ALL
+  TEMPLATES.md THREE times — dup rows at lines **522, 1213, 2369**; mark ALL
   THREE `[x]` with the surge URL when done.
 - **Preview URL:** `https://preview.colorlib.com/theme/ultim8/` (HTTP 200,
   ~59 KB HTML, fetched 2026-08-15). Stylesheet:

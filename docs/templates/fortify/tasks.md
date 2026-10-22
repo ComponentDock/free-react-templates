@@ -7,7 +7,9 @@
 ## Source mapping
 
 - **ColorLib item:** "Security" (TEMPLATES.md line 1396). The
-  `wp/template/security/` slug appears exactly ONCE in TEMPLATES.md.
+  `wp/template/security/` slug appears TWICE in TEMPLATES.md (lines 1161
+  and 1396) — line 1161 already carries the `bulwark` app link, 1396 carries
+  `fortify`.
 - **Source URL:** https://colorlib.com/wp/template/security/
 - **Preview URL — REACHABLE (verified 2026-09-16):**
   **`https://preview.colorlib.com/theme/security/`**

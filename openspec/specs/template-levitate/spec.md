@@ -85,8 +85,9 @@ content kinds (no ColorLib assets copied; Ionicons replaced by
 
 - **Original:** ColorLib "Bootstrap Buttons 14". Listed in TEMPLATES.md
   under **Bootstrap Buttons (20)** (line 675). Free UI-kit button-component
-  template. The `bootstrap-buttons-14` slug appears exactly once in
-  TEMPLATES.md (no duplicate rows to mark).
+  template. The `bootstrap-buttons-14` slug appears TWICE in TEMPLATES.md —
+  the adjacent rows 676 and 677, both already carrying the `btnvortex` app
+  link.
 - **Live preview DOM — REACHABLE (verified 2026-08-14):** the default
   preview URL `https://preview.colorlib.com/theme/bootstrap-buttons-14/`
   returns 404; the REAL preview URL is

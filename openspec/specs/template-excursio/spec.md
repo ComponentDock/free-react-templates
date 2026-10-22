@@ -71,8 +71,8 @@ placeholders, icons come from `lucide-react`).
 
 - **Original:** ColorLib "Tourbi". Listed in TEMPLATES.md under **Tourbi**
   (line 517, Bootstrap section). Free travel & tourism website template.
-  The `tourbi` slug appears THREE times in TEMPLATES.md (lines 517, 1207,
-  2999 — all `- [ ]`; mark all three at ship time).
+  The `tourbi` slug appears THREE times in TEMPLATES.md (lines 517, 1209,
+  3001 — all `- [ ]`; mark all three at ship time).
 - **Live preview DOM — REACHABLE (verified 2026-08-14):**
   `https://preview.colorlib.com/theme/tourbi/` (HTTP 200, 34.9KB HTML,
   `<title>travel</title>`). Structure, copy, and tokens below are from the

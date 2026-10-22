@@ -151,5 +151,5 @@ rgba(0,0,0,0.2)`); col2 "Pages" (Blog/About/Contact); col3
 - jsdom 30 has no localStorage — copy the MemoryStorage polyfill from
   `apps/cura/src/test/setup.ts` into the new app if anything touches it.
 - TEMPLATES.md lists "Echo" THREE times (line ~576 plus duplicates
-  ~988 and ~2780) — bookkeeping must mark ALL THREE rows `[x]` with the
+  ~990 and ~2782) — bookkeeping must mark ALL THREE rows `[x]` with the
   same live URL.

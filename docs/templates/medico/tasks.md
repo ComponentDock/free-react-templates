@@ -12,7 +12,7 @@
 
 - **Original:** ColorLib "Medico" — Medical HTML Template
   (source: https://colorlib.com/wp/template/medico/). TEMPLATES.md rows at
-  lines 448 / 1865 / 2250 (Bootstrap, Health Fitness, Medical sections — one
+  lines 448 / 1867 / 2252 (Bootstrap, Health Fitness, Medical sections — one
   app, all three rows marked `[x]`).
 - **Preview (reachable, HTTP 200):** https://preview.colorlib.com/theme/medico/
 - **App:** `apps/medico` (package `@free-react-templates/medico`), deployed to

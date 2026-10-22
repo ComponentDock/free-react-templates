@@ -9,8 +9,8 @@
   template. Source: https://colorlib.com/wp/template/braxit/. New name:
   **smelter** (an industrial furnace — fits the manufacturing theme; single
   lowercase word, no collision with `ls apps/` or existing specs). Braxit
-  appears once in TEMPLATES.md (line 352, Bootstrap section, first unchecked
-  without a prep — the claim).
+  appears THREE times in TEMPLATES.md (lines 352, 1336 and 1944); all three
+  rows already carry the `machina` app link.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/braxit/`
   (HTTP 200, 73KB) + stylesheet `assets/css/style.css` (198KB). Full rendered
   DOM extracted; structure below is from the DOM + CSS tokens. Screenshot

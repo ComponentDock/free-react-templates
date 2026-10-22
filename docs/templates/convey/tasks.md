@@ -9,7 +9,7 @@
 - **ColorLib item:** "Logistic" (section "## Bootstrap 5 (89)", first
   unprepped row at line 601).
 - **DUPLICATED — THREE rows to mark `[x]`:** the slug
-  `wp/template/logistic/` appears in TEMPLATES.md at lines **601, 1082,
+  `wp/template/logistic/` appears in TEMPLATES.md at lines **601, 1084,
   2964** (all currently `- [ ]`). When shipping, mark ALL THREE rows with
   `https://convey.free.componentdock.com` + run `npm run readme:status`.
   (Do NOT confuse with "Logistics" `wp/template/logistics/` → already

@@ -14,7 +14,7 @@
   Hello Elementor, Kadence, Neve, Travelify, Dazzling, Smallbiz Startup,
   Agencyup, BusinessFocus, Rynobiz, Businessbiz, Customizr, Vantage, Pet
   Business; all demo links are third-party). Listed FOUR times in
-  TEMPLATES.md — line 535, line 1232, line 1497, line 2101, all `- [ ]`,
+  TEMPLATES.md — line 535, line 1234, line 1499, line 2103, all `- [ ]`,
   same slug → implement ONE app, mark ALL FOUR rows `[x]` at bookkeeping.
 - **Preview UNREACHABLE:** https://preview.colorlib.com/theme/wordpress-business-themes/
   → HTTP 404, absent from preview.colorlib.com/assets/js/products.js.

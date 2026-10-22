@@ -18,7 +18,7 @@ testimonial carousel → gradient newsletter → 3 blog cards → dark footer.
 
 - **Original:** ColorLib "Ultim8" — "Ultim8 - Free Bootstrap 4 Template by
   Colorlib". It appears THREE times in TEMPLATES.md (dup rows at lines 522,
-  1211, 2369) — the implementer must mark ALL THREE rows `[x]` with the surge
+  1213, 2369) — the implementer must mark ALL THREE rows `[x]` with the surge
   URL when done (same source slug `ultim8`).
 - **Preview URL:** `https://preview.colorlib.com/theme/ultim8/` — works
   (HTTP 200, ~59 KB HTML, fetched 2026-08-15). Master stylesheet

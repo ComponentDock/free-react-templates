@@ -9,8 +9,8 @@
   Source: https://colorlib.com/wp/template/boxe/. Despite the name it is a
   trucking/freight template (not boxing). New name: **cargoly** (cargo +
   "-ly", matching roamly/skyly/roadly; no collision with `ls apps/` or
-  existing specs). Boxe appears once in TEMPLATES.md (line 351, Bootstrap
-  section, first unchecked without a prep — the claim).
+  existing specs). Boxe appears THREE times in TEMPLATES.md (lines 351,
+  916 and 2951); all three rows already carry the `cargoly` app link.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/boxe/`
   (HTTP 200, 33KB) + stylesheet `css/style.css` (176KB). Full rendered DOM
   extracted; structure below is from the DOM + CSS tokens. Screenshot

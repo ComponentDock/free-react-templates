@@ -11,7 +11,7 @@
   (source: https://colorlib.com/wp/template/portfolio-wordpress-themes/; the
   article is "25 Best WordPress Portfolio Themes 2026 (Free + Premium)"; all
   demo links are third-party ThemeForest affiliate links). Listed THREE times
-  in TEMPLATES.md — line 478, line 1486 and line 2551, all `- [ ]`, same slug
+  in TEMPLATES.md — line 478, line 1488 and line 2553, all `- [ ]`, same slug
   → implement ONE app, mark ALL THREE rows `[x]` at bookkeeping.
 - **Preview UNREACHABLE:** https://preview.colorlib.com/theme/portfolio-wordpress-themes/
   → HTTP 404, absent from preview.colorlib.com/assets/js/products.js.

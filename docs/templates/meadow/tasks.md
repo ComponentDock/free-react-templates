@@ -192,5 +192,5 @@ rgba(0,0,0,0.26)`, testimony `0px 30px 33px -41px rgba(0,0,0,0.24)`;
   sure the mobile drawer is solid and tappable (user tests on phone).
 - jsdom 30 has no localStorage — copy the MemoryStorage polyfill from
   `apps/cura/src/test/setup.ts` into the new app if anything touches it.
-- TEMPLATES.md lists "Ecogreen" TWICE (lines 577 and 1556) —
+- TEMPLATES.md lists "Ecogreen" TWICE (lines 577 and 1558) —
   bookkeeping must mark BOTH rows `[x]` with the same live URL.

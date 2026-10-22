@@ -8,8 +8,9 @@
 - **Original:** ColorLib "Capture 2" — free wedding & event photographer
   website template. Source: https://colorlib.com/wp/template/capture-2/.
   New name: **lensly** (photography "lens"; single word, no collision with
-  `ls apps/` or existing spec folders). Capture 2 appears once in TEMPLATES.md
-  (line 355, Bootstrap section, first unchecked without a prep — the claim).
+  `ls apps/` or existing spec folders). Capture 2 appears THREE times in
+  TEMPLATES.md (lines 355, 2441 and 3096); all three rows already carry the
+  `lensly` app link.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/capture2/`
   (HTTP 200, ~18KB) — NOTE the TEMPLATES.md slug `capture-2` returns HTTP 404
   on the preview host; the real preview path is `/theme/capture2/`. The ColorLib

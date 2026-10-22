@@ -54,7 +54,9 @@ source name.
 - **Source:** https://colorlib.com/wp/template/website-menu-04/ (listed in
   TEMPLATES.md `## Website Menus (20)` — the section header is at **line 3071**
   and this item is its **fourth** entry at **line 3076**; the slug
-  `website-menu-04` appears **twice** in TEMPLATES.md and in **no** spec or doc
+  `website-menu-04` appears **once** in TEMPLATES.md (line 3076, the row this
+  prep owns — an earlier reading counted an extra row that the checklist no
+  longer has) and in **no** spec or doc
   on main before this one — `grep -rl website-menu-04 openspec docs` returns
   nothing)
 - **Preview:** `https://preview.colorlib.com/theme/website-menu-04/` returns

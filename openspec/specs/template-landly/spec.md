@@ -65,8 +65,8 @@ Template by Colorlib</title>`) — no subpath quirk (unlike the
 
 - **Original:** ColorLib "Realtors". Listed in TEMPLATES.md under
   **Realtors** (line 485). Free real-estate website template. The
-  `realtors` slug appears exactly once in TEMPLATES.md (no duplicate rows to
-  mark).
+  `realtors` slug appears THREE times in TEMPLATES.md (lines 485, 1149 and
+  2608); all three rows already carry the `roost` app link.
 - **Live preview DOM — REACHABLE (verified 2026-08-14):**
   `https://preview.colorlib.com/theme/realtors/` (HTTP 200, 32.5KB HTML,
   `<title>Realtors &mdash; Website Template by Colorlib</title>`). Structure,

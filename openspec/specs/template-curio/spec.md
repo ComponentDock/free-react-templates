@@ -28,10 +28,11 @@ images via `https://picsum.photos/seed/curio-<n>/<w>/<h>`, icons from
 
 > NAMING NOTE: the ColorLib source name "Personal" is FORBIDDEN as the app
 > name. **Curio** is the new, original name. Source slug + preview URL are
-> recorded below. The slug `personal` appears TWICE in TEMPLATES.md (line
-> 472 under **Bootstrap (216)** and line 2415 under **Personal (53)** — a
-> duplicate category row); BOTH rows must be marked `[x]` with the same
-> surge URL at ship time.
+> recorded below. The slug `personal` appears THREE times in TEMPLATES.md
+> (line 472 under **Bootstrap (216)**, line 2415 under **Personal (53)** and
+> line 2542 under **Portfolio (89)** — duplicate category rows); all three
+> rows already carry the `solo` app link, because a sibling recreation of this
+> design shipped first.
 
 ## Design reference (replication findings)
 

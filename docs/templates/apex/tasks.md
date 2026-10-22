@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Pointer" — free consulting agency website template
   (source: https://colorlib.com/wp/template/pointer/; listed FOUR times in
-  TEMPLATES.md — line 477, line 1139, line 1391 and line 2351, all `- [ ]`,
+  TEMPLATES.md — line 477, line 1141, line 1393 and line 2353, all `- [ ]`,
   same slug → implement ONE app, mark ALL FOUR rows `[x]` at bookkeeping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/pointer/ (HTTP
   200, 45.8KB HTML + `css/style.css` 22.5KB + Bootstrap 4 + owl.carousel +

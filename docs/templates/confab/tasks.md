@@ -161,5 +161,5 @@
   the mobile drawer solid and tappable (user tests on phone).
 - jsdom 30 has no localStorage — copy the MemoryStorage polyfill from
   `apps/cura/src/test/setup.ts` into the new app if anything touches it.
-- TEMPLATES.md lists "Eventotemplate" TWICE (lines 578 and 1679) —
+- TEMPLATES.md lists "Eventotemplate" TWICE (lines 578 and 1681) —
   bookkeeping must mark BOTH rows `[x]` with the same live URL.

@@ -46,7 +46,7 @@ assets copied).
 
 - **Original:** ColorLib "Pointer" — free consulting agency website template
   (source: https://colorlib.com/wp/template/pointer/; listed four times in
-  TEMPLATES.md — lines 477, 1139, 1391 and 2351, all `- [ ]`, same slug →
+  TEMPLATES.md — lines 477, 1141, 1393 and 2353, all `- [ ]`, same slug →
   one app, mark all four rows `[x]`).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/pointer/`
   (HTTP 200, 45.8KB full rendered DOM + `css/style.css` (22.5KB, Bootstrap-4

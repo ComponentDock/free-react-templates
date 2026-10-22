@@ -41,8 +41,9 @@ copied).
 
 - **Original:** ColorLib "Accordion 12". Listed in TEMPLATES.md under
   **Bootstrap Accordions (20)** (line 650). Free FAQ-style accordion
-  component template. The `accordion-12` slug appears exactly once in
-  TEMPLATES.md (no dup rows to mark).
+  component template. The `accordion-12` slug appears TWICE in TEMPLATES.md —
+  the adjacent rows 650 and 651, which already carry the `plisse` and `creel`
+  app links respectively.
 - **Live preview DOM — REACHABLE (verified 2026-08-14):** the default
   preview URL `https://preview.colorlib.com/theme/accordion-12/` returns
   404; the REAL preview URL is

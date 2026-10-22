@@ -7,7 +7,8 @@
 ## Source mapping
 
 - **ColorLib item:** "Jobportal" (TEMPLATES.md line 1538).
-  The `wp/template/jobportal/` slug appears exactly ONCE in TEMPLATES.md.
+  The `wp/template/jobportal/` slug appears TWICE in TEMPLATES.md (lines
+  1538 and 2002); both rows already carry the `talentgate` app link.
 - **Source URL:** https://colorlib.com/wp/template/jobportal/
 - **Preview URL:** https://preview.colorlib.com/theme/jobportal/ (51,971 bytes
   HTML, verified 2026-09-19 by direct fetch).

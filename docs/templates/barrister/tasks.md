@@ -93,7 +93,7 @@
   via the usual `[~]` push on `feat/template-barrister`.
 - No `colorlib` string anywhere in `apps/barrister/*` — provenance lives only
   here, TEMPLATES.md, and the PR.
-- TEMPLATES.md lists "Fective" TWICE (lines 580, 2116) — bookkeeping must
+- TEMPLATES.md lists "Fective" TWICE (lines 580, 2118) — bookkeeping must
   mark ALL rows `[x]` with the same live URL.
 
 ## Tasks / todo outline (implementer checklist)

@@ -12,7 +12,7 @@ CSS 4 + TypeScript.
 
 - **Original:** ColorLib "Essence" — fashion ecommerce store template
   (source: https://colorlib.com/wp/template/essence/). NOTE: TEMPLATES.md
-  lists "Essence" twice (dup rows, lines ~387 and ~1573); this spec covers
+  lists "Essence" twice (dup rows, lines ~387 and ~1575); this spec covers
   both rows.
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/essence/
   (HTTP 200, full rendered DOM + `css/core-style.css` + `style.css`

@@ -7,7 +7,8 @@
 ## Source mapping
 
 - **ColorLib item:** "Steakshop" (TEMPLATES.md line 1792; the `wp/template/steakshop/`
-  slug appears exactly ONCE in TEMPLATES.md).
+  slug appears TWICE in TEMPLATES.md — lines 1792 and 2702, which already
+  carry the `carnivor` and `grillmark` app links respectively).
 - **Source URL:** https://colorlib.com/wp/template/steakshop/
 - **Preview URL — REACHABLE (verified 2026-08-18 by curl):**
   **`https://preview.colorlib.com/theme/steakshop/`**

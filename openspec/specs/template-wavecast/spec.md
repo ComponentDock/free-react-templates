@@ -29,7 +29,7 @@ colors, typography, and content types (no ColorLib assets copied).
 
 - **Original:** ColorLib "Podcast" — podcast / audio landing website template
   (source: https://colorlib.com/wp/template/podcast/; listed twice in
-  TEMPLATES.md — line 476 AND line 2276, both `- [ ]`, same slug → one app,
+  TEMPLATES.md — line 476 AND line 2278, both `- [ ]`, same slug → one app,
   mark both rows `[x]`).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/podcast/ (HTTP
   200, full rendered DOM, 30.2KB + `css/style.css` (19.3KB, Bootstrap-4

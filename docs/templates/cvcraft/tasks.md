@@ -7,7 +7,9 @@
 ## Source mapping
 
 - **ColorLib item:** "Cvportfolio" (TEMPLATES.md line 2391; section "## Portfolio (89)" at line 2490).
-  The `wp/template/cvportfolio/` slug appears exactly ONCE in TEMPLATES.md (no dup rows).
+  The `wp/template/cvportfolio/` slug appears FOUR times in TEMPLATES.md
+  (lines 2310, 2391, 2511, 2714) — lines 2391, 2511 and 2714 carry the
+  `cvfolio` app link, line 2310 already carries `credence`.
 - **Source URL:** https://colorlib.com/wp/template/cvportfolio/
 - **Preview URL — REACHABLE (verified 2026-09-26 by direct fetch):**
   **`https://preview.colorlib.com/theme/cvportfolio/`**

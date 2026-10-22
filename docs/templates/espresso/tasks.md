@@ -7,8 +7,8 @@
 ## Source mapping
 
 - **ColorLib item:** "Coffee" (TEMPLATES.md line 1779; section "## Coffee (7)"
-  at line 1777). The `wp/template/coffee/` slug appears exactly ONCE in
-  TEMPLATES.md (no dup rows).
+  at line 1777). The `wp/template/coffee/` slug appears TWICE in TEMPLATES.md
+  (lines 1779 and 2029); both rows already carry the `perk` app link.
 - **Source URL:** https://colorlib.com/wp/template/coffee/
 - **Preview URL — REACHABLE (verified 2026-09-21 by direct fetch):**
   **`https://preview.colorlib.com/theme/coffee/`**

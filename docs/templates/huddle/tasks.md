@@ -136,7 +136,7 @@
   via the usual `[~]` push on `feat/template-huddle`.
 - No `colorlib` string anywhere in `apps/huddle/*` — provenance lives only
   here, TEMPLATES.md, and the PR.
-- TEMPLATES.md lists "Knights" THREE times (lines 430, 1820, 2837) —
+- TEMPLATES.md lists "Knights" THREE times (lines 430, 1822, 2839) —
   bookkeeping must mark ALL rows `[x]` with the same live URL.
 
 ## Tasks / todo outline (implementer checklist)

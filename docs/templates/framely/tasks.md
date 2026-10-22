@@ -8,8 +8,9 @@
 - **Original:** ColorLib "Boto" — free photography studio website template.
   Source: https://colorlib.com/wp/template/boto/. New name: **framely**
   (photography "frames"; no collision with `ls apps/` or existing specs).
-  Boto appears once in TEMPLATES.md (line 350, Bootstrap section, first
-  unchecked — the claim).
+  Boto appears TWICE in TEMPLATES.md (line 350, Bootstrap section, first
+  unchecked — the claim — and line 2439); both rows already carry the
+  `framely` app link.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/boto/`
   (HTTP 200, 6.5KB) + stylesheet `css/style.css` (15.9KB). Full rendered DOM
   extracted; structure below is from the DOM + CSS tokens. Screenshot

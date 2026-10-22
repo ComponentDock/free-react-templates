@@ -148,5 +148,5 @@
   sure the mobile drawer is solid and tappable (user tests on phone).
 - jsdom 30 has no localStorage — copy the MemoryStorage polyfill from
   `apps/cura/src/test/setup.ts` into the new app if anything touches it.
-- TEMPLATES.md lists "Easylo" TWICE (line ~575 and duplicate ~1750) —
+- TEMPLATES.md lists "Easylo" TWICE (line ~575 and duplicate ~1753) —
   bookkeeping must mark BOTH rows `[x]` with the same live URL.

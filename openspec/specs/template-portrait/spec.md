@@ -34,7 +34,7 @@ designer aesthetic.
 
 - **Original:** ColorLib "Personalportfolio". Free personal-portfolio /
   designer-landing template. The `personalportfolio` slug appears exactly
-  three times in TEMPLATES.md (lines 473, 2415, 2542 — all `- [ ]`, all
+  three times in TEMPLATES.md (lines 473, 2417, 2544 — all `- [ ]`, all
   identical rows under the Bootstrap (216) / Personal (53) / Portfolio (89)
   categories; mark all three when shipping).
 - **Live preview DOM — REACHABLE (verified 2026-08-14):**

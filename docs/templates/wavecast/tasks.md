@@ -8,7 +8,7 @@
 
 - **Original:** ColorLib "Podcast" — podcast / audio landing website
   template (source: https://colorlib.com/wp/template/podcast/; listed TWICE
-  in TEMPLATES.md — line 476 AND line 2276, both `- [ ]`, same slug →
+  in TEMPLATES.md — line 476 AND line 2278, both `- [ ]`, same slug →
   implement ONE app, mark BOTH rows `[x]` at bookkeeping).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/podcast/ (HTTP
   200, 30.2KB HTML + `css/style.css` 19.3KB + Bootstrap 4 + owl.carousel +

@@ -7,8 +7,9 @@
 
 - **Original:** ColorLib "Yogalax" — free Bootstrap 4 yoga / wellness website
   template (source: https://colorlib.com/wp/template/yogalax/). TEMPLATES.md
-  line 236 (Beauty section) — single row, no duplicates (verified: slug
-  `yogalax` appears once). Recreation uses the NEW name **Shanti** (Sanskrit
+  line 236 (Beauty section) is the first of THREE `yogalax` rows — 236, 1740
+  and 1895, all already carrying the `shanti` app link (so the slug does not
+  resolve to a lone row). Recreation uses the NEW name **Shanti** (Sanskrit
   "peace"; single word, no collision with `ls apps/` or spec folders).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/yogalax/ (HTTP
   200, ~37 KB; title "Yogalax - Free Bootstrap 4 Template by Colorlib").

@@ -7,7 +7,8 @@
 ## Source mapping
 
 - **ColorLib item:** "Auction" (TEMPLATES.md line 898).
-  The `wp/template/auction/` slug appears exactly ONCE in TEMPLATES.md.
+  The `wp/template/auction/` slug appears TWICE in TEMPLATES.md (lines 898
+  and 1314); both rows already carry the same `bidcraft` app link.
 - **Source URL:** https://colorlib.com/wp/template/auction/
 - **Preview URL — REACHABLE (verified 2026-09-07):**
   **`https://preview.colorlib.com/theme/auction/`** (HTTP 200, 23,844 bytes,

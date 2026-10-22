@@ -7,7 +7,8 @@
 ## Source mapping
 
 - **ColorLib item:** "Fitzone" (TEMPLATES.md line 1468; first `- [ ]` item in
-  the F section). The slug `fitzone` appears exactly ONCE in TEMPLATES.md.
+  the F section). The slug `fitzone` appears TWICE in TEMPLATES.md (lines
+  1468 and 1849); both rows already carry the `bodyforge` app link.
 - **Source URL:** https://colorlib.com/wp/template/fitzone/
 - **Preview URL — REACHABLE (verified 2026-09-19):**
   **`https://preview.colorlib.com/theme/fitzone/`**

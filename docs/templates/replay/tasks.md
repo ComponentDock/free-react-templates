@@ -8,8 +8,8 @@
 
 - **ColorLib item:** "Repeat" (TEMPLATES.md line 619; section
   "## Services / Agency Landing (17)"). The
-  `wp/template/repeat/` slug appears exactly ONCE in TEMPLATES.md
-  (no dup rows).
+  `wp/template/repeat/` slug appears TWICE in TEMPLATES.md (lines 620 and
+  1153); both rows already carry the `loop` app link.
 - **Source URL:** https://colorlib.com/wp/template/repeat/
 - **Preview URL — REACHABLE (verified 2026-08-24 by direct fetch):**
   **`https://preview.colorlib.com/theme/repeat/`**
