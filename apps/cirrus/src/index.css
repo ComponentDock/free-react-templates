@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cirrus brand palette — recreated from the ColorLib "Cloudtemplate" design
+  /* Cirrus brand palette — measured from the reference design
      (css/style.css): blue #3f52e3, green #21bf73, pink #ff8ba7. */
   --color-brand: #3f52e3;
   --color-brand-dark: #2d3db5;

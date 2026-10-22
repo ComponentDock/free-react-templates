@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Closet brand palette — recreated from the ColorLib "Little Closet" design
+  /* Closet brand palette — measured from the reference design
      (screenshot analysis): mint green #00b894 accents, black #000 headings,
      body text #555555, muted #999999. */
   --color-brand: #00b894;

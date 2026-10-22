@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Buzzer brand palette — recreated from the ColorLib "Bravo" design
+  /* Buzzer brand palette — measured from the reference design
      (assets/css/style.css): blue #4760FF primary buttons, coral/salmon
      #FA8F77 accent, dark navy #140C40 headings/footer, light bg #f7f7f7. */
 

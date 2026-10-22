@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Chamfer brand palette — recreated from the ColorLib "Theinterior" design. */
+  /* Chamfer brand palette — measured from the reference design. */
   --color-brand-red: #ff1313;
   --color-brand-red-dark: #d91010;
   --color-dark-navy: #16161a;

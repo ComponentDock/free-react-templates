@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Byline brand palette — recreated from the ColorLib Nikki design tokens:
+  /* Byline brand palette — measured from the reference design tokens:
      accent #d1bb95 (tan/gold), headings #191919, body text #595959. */
   --color-brand: #d1bb95;
   --color-brand-dark: #bfa67e;

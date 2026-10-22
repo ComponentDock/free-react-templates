@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — recreated from the ColorLib "Libchurch"
-     church event theme (css/style.css + live preview):
+  /* Brand palette — measured from the reference church event theme
+     (css/style.css + live preview):
      brand red #dd3e3e (buttons, accents, section spans),
      dark top-nav #3c1919, light section bg #f6f8f9,
      dark text #252525, body text #636363. Buttons are
