@@ -64,8 +64,8 @@ export function Footer() {
             © {new Date().getFullYear()} All rights reserved | This template is made with{' '}
             <Heart className="inline h-3 w-3 text-brand" fill="currentColor" aria-hidden="true" />{' '}
             by{' '}
-            <a href="https://colorlib.com" className="text-brand">
-              Colorlib
+            <a href="https://www.componentdock.com/" className="text-brand">
+              Component Dock
             </a>
           </p>
         </div>

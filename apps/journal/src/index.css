@@ -3,9 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Journal brand palette — recreated from the ColorLib "Original" template
-     (https://colorlib.com/wp/template/original/), tokens extracted from the
-     live preview's style.css:
+  /* Journal brand palette:
      - accent deep indigo #30336b (hover fills on buttons, category boxes,
        tag chips, post headlines, ticker links, instagram overlay)
      - ink black #000 (nav bar, hero tag pill + headline bar, category

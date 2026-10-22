@@ -9,7 +9,7 @@ export const tickerHeadlines: ReadonlyArray<string> = [
   'Hello Universe!',
   'Hello Journal!',
   'Hello Earth!',
-  'Hello Colorlib!',
+  'Hello Component Dock!',
 ]
 export const tickerRotateMs = 3000
 
@@ -281,8 +281,8 @@ export const footerLinks: ReadonlyArray<string> = [
   'Contact',
 ]
 export const footerCopyright = 'Copyright © 2026 All rights reserved | This template is made with'
-export const footerCredit = 'Colorlib'
-export const footerCreditUrl = 'https://colorlib.com'
+export const footerCredit = 'Component Dock'
+export const footerCreditUrl = 'https://www.componentdock.com/'
 
 /* ── Shared helpers ─────────────────────────────────────────────────────── */
 

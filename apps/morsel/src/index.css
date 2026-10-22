@@ -1,9 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Morsel brand palette — recreated from the ColorLib "Bona" template
-     (https://colorlib.com/wp/template/bona/), tokens extracted from the
-     live preview's layout-1/css/styles.css:
+  /* Morsel brand palette:
      - brand #498BF9 (link/button hover, footer social circles)
      - peri #C3D8F5 (LOAD MORE button background, light periwinkle)
      - blog-bg #EDF3F3 (body, blog area, post meta bars)

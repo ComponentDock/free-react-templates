@@ -1,16 +1,16 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import { Footer } from './Footer'
-import { brandName, colorlibLabel, creditBrand, creditPrefix, footerSocials } from '../data'
+import { brandName, creditBrand, creditLabel, creditPrefix, footerSocials } from '../data'
 
 describe('Footer', () => {
-  it('shows the Colorlib link, centered logo and social links', () => {
+  it('shows the Component Dock link, centered logo and social links', () => {
     render(<Footer />)
     const footer = screen.getByRole('contentinfo')
     expect(footer).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: colorlibLabel })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: creditLabel })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
     expect(screen.getByText(brandName)).toBeInTheDocument()
     for (const name of footerSocials) {

@@ -7,10 +7,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cargoly brand palette — recreated from the ColorLib "Boxe" design (live
-     demo: https://preview.colorlib.com/theme/boxe/): violet #6345fe (buttons,
-     quote section bg, logo icon, link hovers) + yellow #f6a515 (hero CTA
-     button, pick-up card, hover accents). */
+    /* Cargoly brand palette: violet #6345fe (buttons, quote section bg, logo
+     icon, link hovers) + yellow #f6a515 (hero CTA button, pick-up card,
+     hover accents). */
   --color-brand: #6345fe;
   --color-brand-dark: #4f35d4;
   --color-accent: #f6a515;

@@ -1,7 +1,7 @@
 /**
- * Cargoly content model — recreation of the ColorLib "Boxe" logistics
- * template (https://colorlib.com/wp/template/boxe/). All copy is original;
- * photos are picsum-seeded placeholders.
+ * Cargoly content model — logistics landing page (deep navy surfaces, orange
+ * CTA accents, condensed display type). All copy is original; photos are
+ * picsum-seeded placeholders.
  */
 export const BRAND_NAME = 'Cargoly'
 
@@ -135,4 +135,4 @@ export const NEWSLETTER_TITLE = 'Newsletter'
 export const NEWSLETTER_TEXT =
   'For business professionals caught between high OEM prices and mediocre service — get our weekly freight brief.'
 
-export const CREDIT_BRAND = 'Colorlib'
+export const CREDIT_BRAND = 'Component Dock'

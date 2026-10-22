@@ -12,10 +12,10 @@ describe('Footer', () => {
     ).toBeInTheDocument()
   })
 
-  it('credits the Colorlib source template', () => {
+  it('credits Component Dock', () => {
     render(<Footer />)
 
-    const credit = screen.getByRole('link', { name: 'Colorlib' })
-    expect(credit).toHaveAttribute('href', 'https://colorlib.com/wp/template/meranda/')
+    const credit = screen.getByRole('link', { name: 'Component Dock' })
+    expect(credit).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 })

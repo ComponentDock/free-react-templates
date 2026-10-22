@@ -3,9 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Persona brand palette — recreated from the ColorLib "Personal Wordpress
-     Themes" category screenshot (Jackie Brooklyn demo) + the live roundup
-     page CSS (Total theme):
+  /* Persona brand palette:
      - accent blue #1a73e8 (links, CTA buttons, focus rings, hovers)
      - dark navy #1c1e26 (floating action bar, footer, scrolled header)
      - ink #111827 (headings on light sections) · body #374151 · meta #4b5563

@@ -1,8 +1,7 @@
 @import 'tailwindcss';
 
-/* Sonder brand palette — recreated from the ColorLib "Philosophy" preview
-   (https://preview.colorlib.com/theme/philosophy/) live DOM + css/main.min.css:
-   brand blue #0054a5 (links, focus, newsletter Send), dark charcoal #111
+/* Sonder brand palette: brand blue #0054a5 (links, focus, newsletter Send),
+   dark charcoal #111
    (pageheader bg + diagonal line texture, featured block), #151515 (footer),
    light grey #f2f2f2 (masonry section), white (popular/tags strip), cyan
    #01aef0 (category pills), #e2e2e2 (tag chips), meta greys for bylines. */

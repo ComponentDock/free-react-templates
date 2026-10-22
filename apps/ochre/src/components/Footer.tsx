@@ -96,7 +96,7 @@ export function Footer() {
             Copyright © {year} {brandName}. {creditPrefix}{' '}
             <Heart className="inline h-3 w-3 fill-brand text-brand" aria-hidden="true" /> by{' '}
             <a
-              href="https://colorlib.com"
+              href="https://www.componentdock.com/"
               target="_blank"
               rel="noreferrer"
               className="transition-colors hover:text-brand"

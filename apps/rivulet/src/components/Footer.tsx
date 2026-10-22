@@ -26,12 +26,12 @@ export function Footer() {
           />{' '}
           by{' '}
           <a
-            href="https://colorlib.com"
+            href="https://www.componentdock.com/"
             target="_blank"
             rel="noreferrer"
             className="text-accent transition-colors hover:text-white"
           >
-            Colorlib
+            Component Dock
           </a>
         </p>
         <ul className="flex items-center gap-5">

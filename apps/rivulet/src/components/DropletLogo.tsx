@@ -4,7 +4,7 @@ interface DropletLogoProps {
   className?: string
 }
 
-/** Inline droplet mark inside a bright-blue circle (ColorLib Droppler logo). */
+/** Inline droplet mark inside a bright-blue circle (brand logo). */
 export function DropletLogo({ className }: DropletLogoProps) {
   return (
     <span

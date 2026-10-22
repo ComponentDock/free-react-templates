@@ -1,9 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Ledger brand palette — recreated from the ColorLib "Daren" template
-     (https://colorlib.com/wp/template/daren/), tokens extracted from the
-     live preview's css/style.css:
+  /* Ledger brand palette:
      - brand #ef1313 (vivid red: category labels, LOADING MORE button,
        sidebar search button, footer icons/links/newsletter button,
        sidebar title underline pair, banner headline hover)

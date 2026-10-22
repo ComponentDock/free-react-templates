@@ -31,11 +31,11 @@ export function Navbar() {
             +953 012 3654 896
           </a>
           <a
-            href="mailto:support@colorlib.com"
+            href="mailto:hello@componentdock.com"
             className="flex items-center gap-2 hover:text-brand"
           >
             <Mail className="h-3.5 w-3.5" aria-hidden="true" />
-            support@colorlib.com
+            hello@componentdock.com
           </a>
         </div>
       </div>

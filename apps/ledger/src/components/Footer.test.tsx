@@ -30,13 +30,13 @@ describe('Footer', () => {
     expect(screen.getByRole('button', { name: /subscribe/i })).toBeInTheDocument()
   })
 
-  it('renders the copyright bar with a year and a Colorlib link', () => {
+  it('renders the copyright bar with a year and a Component Dock link', () => {
     render(<Footer />)
     const year = new Date().getFullYear()
     expect(screen.getByText(new RegExp(`© ${year} All rights reserved`))).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Colorlib' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
   })
 

@@ -4,16 +4,16 @@ import { Footer } from './Footer'
 import { footerSocials, madeWithText, socialLabels } from '../data'
 
 describe('Footer', () => {
-  it('renders the logo, the copyright bar with a pulsing heart and the Colorlib link', () => {
+  it('renders the logo, the copyright bar with a pulsing heart and the Component Dock link', () => {
     render(<Footer />)
     expect(screen.getByRole('link', { name: 'Rivulet footer logo' })).toBeInTheDocument()
     const year = new Date().getFullYear()
     expect(
       screen.getByText(new RegExp(`© ${year} ${madeWithText.replace('|', '\\|')}`)),
     ).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Colorlib' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
   })
 

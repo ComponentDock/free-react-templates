@@ -12,7 +12,7 @@ describe('Footer', () => {
 
     expect(screen.getByText(/Binghamton, New York/i)).toBeInTheDocument()
     expect(screen.getByText('00 (953) 9865 562')).toBeInTheDocument()
-    expect(screen.getByText('support@colorlib.com')).toBeInTheDocument()
+    expect(screen.getByText('hello@componentdock.com')).toBeInTheDocument()
 
     expect(screen.getByRole('link', { name: 'Facebook' })).toHaveAttribute(
       'href',

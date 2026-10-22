@@ -1,4 +1,4 @@
-/** 5px light-pink section divider (ColorLib Daren `.border_top`). */
+/** 5px light-pink section divider (`.border_top`). */
 export function BorderDivider() {
   return (
     <div

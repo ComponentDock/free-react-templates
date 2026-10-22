@@ -108,7 +108,7 @@ export function Footer() {
             Copyright © {year} {BRAND_NAME}. All rights reserved. Made with{' '}
             <Heart className="inline h-3 w-3 fill-brand text-brand" aria-label="love" /> by{' '}
             <a
-              href="https://colorlib.com"
+              href="https://www.componentdock.com/"
               target="_blank"
               rel="noreferrer"
               className="text-ink underline transition-colors hover:text-brand"

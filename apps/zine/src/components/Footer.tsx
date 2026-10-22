@@ -1,5 +1,5 @@
 import { Heart } from 'lucide-react'
-import { brandName, colorlibLabel, creditBrand, creditPrefix } from '../data'
+import { brandName, creditBrand, creditLabel, creditPrefix } from '../data'
 import { SocialLinks } from './SocialIcons'
 
 export function Footer() {
@@ -10,12 +10,12 @@ export function Footer() {
       <div className="mx-auto flex max-w-[1170px] flex-col items-center gap-10 px-6 md:flex-row md:justify-between">
         <div className="md:w-2/5">
           <a
-            href="https://colorlib.com"
+            href="https://www.componentdock.com/"
             target="_blank"
             rel="noreferrer"
             className="text-base text-footer transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
           >
-            {colorlibLabel}
+            {creditLabel}
           </a>
         </div>
         <p className="font-display text-2xl font-semibold uppercase tracking-[0.2em] text-cream">

@@ -157,7 +157,7 @@ export const aboutText =
 export const contactHeading = 'Contact Info'
 export const contactAddress = 'Address : Your address goes here'
 export const contactPhone = 'Phone : +8880 44338899'
-export const contactEmail = 'Email : info@colorlib.com'
+export const contactEmail = 'Email : hello@componentdock.com'
 export const linksHeading = 'Important Link'
 export const importantLinks = [
   'WHMCS-bridge',
@@ -171,4 +171,4 @@ export const newsletterText =
   "Heaven fruitful doesn't over lesser in days. Appear creeping seasons under one light."
 export const newsletterLabel = 'Newsletter email'
 export const creditPrefix = 'All rights reserved | This template is made with'
-export const creditBrand = 'Colorlib'
+export const creditBrand = 'Component Dock'

@@ -8,7 +8,7 @@ import { Navbar } from './components/Navbar'
 import { Sidebar } from './components/Sidebar'
 import { TopBar } from './components/TopBar'
 
-/** Journal — lifestyle blog template (recreation of ColorLib "Original").
+/** Journal — lifestyle blog template.
  *  Section order mirrors the reference 1:1: top bar → logo → sticky nav →
  *  hero carousel → magazine intro → blog list + sidebar → instagram strip →
  *  footer (+ newsletter modal from the nav). */

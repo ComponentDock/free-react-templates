@@ -75,7 +75,7 @@ describe('Footer', () => {
     expect(screen.getByText(copyright, { exact: false })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: credit })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
     await user.click(screen.getByRole('button', { name: /back to top/i }))
     expect(scrollSpy).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' })

@@ -56,10 +56,10 @@ export function Footer() {
             <li className="flex gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
               <a
-                href="mailto:support@colorlib.com"
+                href="mailto:hello@componentdock.com"
                 className="font-light text-gray-400 transition-colors hover:text-brand"
               >
-                support@colorlib.com
+                hello@componentdock.com
               </a>
             </li>
           </ul>
@@ -67,7 +67,14 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light text-gray-400">
-          Copyright © {new Date().getFullYear()} Animal Shelter. All rights reserved.
+          Copyright © {new Date().getFullYear()} Animal Shelter. All rights reserved. More
+          templates at{' '}
+          <a
+            href="https://www.componentdock.com/"
+            className="text-brand transition-colors hover:text-white"
+          >
+            Component Dock
+          </a>
         </p>
         <SocialLinks />
       </div>

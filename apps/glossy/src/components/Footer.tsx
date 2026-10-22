@@ -119,8 +119,13 @@ export function Footer() {
               aria-hidden="true"
             />{' '}
             by{' '}
-            <a href="https://colorlib.com" target="_blank" rel="noreferrer" className="text-brand">
-              Colorlib
+            <a
+              href="https://www.componentdock.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand"
+            >
+              Component Dock
             </a>
           </p>
           <ul className="flex items-center gap-4">
