@@ -52,12 +52,17 @@ A GitHub Action deploys the changed template(s) automatically:
   `gh pr merge --delete-branch` (the old `pull_request: [closed]` trigger could,
   see `docs/adr/0004`). The workflow diffs `before..after` of the push,
   extracts the app folder(s) (`apps/<name>/`), runs the per-app gate
-  (`scripts/verify-app.sh`), deploys each app, then re-probes each URL and fails
-  if it is not HTTP 200. Docs-only pushes deploy nothing (the run reports it).
+  (`scripts/verify-app.sh`), deploys each app, then probes each URL and fails
+  only if the site is not published **anywhere** (see `missing` below — the
+  probe distinguishes a failed deploy from a branded edge that cannot serve TLS,
+  so an edge outage no longer turns every merge into a red run).
 - Trigger 2 — **nightly fleet audit + repair** (`04:30 UTC`): every app's
   published domain is probed and the ones that answer with a Surge 404 are
   rebuilt and redeployed (4 shards, ≤ 40 apps per shard per night). This heals
-  deploys that failed or were cancelled.
+  deploys that failed or were cancelled. Hosts that are healthy at the Surge
+  origin but unreachable through the branded domain are **not** redeployed (a
+  publish cannot fix them) — the job reports them and fails with the DNS/TLS
+  diagnosis instead of burning the daily deploy budget.
 - Trigger 3 — **`workflow_dispatch`**: set `app` (space-separated folders, e.g.
   `aurora drift`) to deploy specific apps; leave it empty to only run the
   audit/repair job. `audit_limit` caps how many apps the repair redeploys per
@@ -68,13 +73,41 @@ A GitHub Action deploys the changed template(s) automatically:
 ```bash
 bash scripts/audit-deployments.sh            # whole fleet
 bash scripts/audit-deployments.sh --shard 0 --total 4 --limit 5 --jobs 24
+bash scripts/audit-deployments.sh --apps "aurora drift" --fail-on-missing
 ```
 
-stdout is TSV — `missing<TAB><app>` (never published → Surge 404) and
-`insecure<TAB><app>` (published, but the host serves Surge's shared
-`CN=*.surge.sh` certificate, so browsers warn on the `https://` link) — with a
-`live / missing / insecure` summary on stderr. `insecure` hosts cannot be fixed
-from this repo: the certificate is issued by Surge/DNS, not by the build.
+stdout is TSV, one line per host that is not plain `live`, with a
+`live / missing / insecure / edge-live / edge-insecure` summary on stderr:
+
+| class           | meaning                                                                | fixable by a deploy?         |
+| --------------- | ---------------------------------------------------------------------- | ---------------------------- |
+| `live`          | 200 with a certificate valid for the host                              | —                            |
+| `insecure`      | 200, but Surge's shared `CN=*.surge.sh` cert                           | yes (re-publish)             |
+| `missing`       | no content at the Surge origin (never published / deploy lost)         | yes (re-publish)             |
+| `edge-live`     | healthy at the Surge origin, no HTTP at all through the branded domain | **no** — DNS/TLS edge        |
+| `edge-insecure` | only the origin answers, and only with `-k` (shared cert)              | only after the edge is fixed |
+
+The `edge-*` classes are what a **fleet-wide** outage looks like: every host
+returns `sslv3 alert handshake failure` and, without the origin fallback, would
+be miscounted as `missing` — which makes the repair job redeploy thousands of
+healthy sites. Probe the origin before concluding anything:
+
+```bash
+dig +short na-west1.surge.sh A                       # origin IP
+curl -sS --resolve <app>.free.componentdock.com:443:<ip> \
+     -o /dev/null -w '%{http_code} ssl_verify_result=%{ssl_verify_result}\n' \
+     https://<app>.free.componentdock.com/
+```
+
+`200` + `ssl_verify_result=0` at the origin while the branded domain fails the
+handshake means the content is fine and the **edge** is missing a certificate
+for the hostname — for `*.free.componentdock.com` behind Cloudflare that is the
+second-level-wildcard trap (Universal SSL covers `*.componentdock.com` only).
+Per-domain certificates are **not** issued while the record is proxied
+(measured 2026-10-22: publish succeeded, origin still `CN=*.surge.sh` 60 s
+later), so fix the edge first, then re-publish the `insecure` /
+`edge-insecure` hosts one by one (`surge apps/<app>/dist https://<app>.<zone>`,
+rate-limited to ≈150 publishes/day).
 
 ### Setup (one-time, required)
 

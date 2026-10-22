@@ -148,4 +148,9 @@ Key decisions (details in `docs/adr/`):
   that way. A nightly audit job re-probes every domain and redeploys the missing
   ones (`scripts/audit-deployments.sh`, `docs/adr/0004`). Hosts that still serve
   Surge's shared `CN=*.surge.sh` certificate answer fine over curl `-k` but show
-  a browser certificate warning — that class is reported, not auto-fixed.
+  a browser certificate warning — that class (`insecure`) is reported, not
+  auto-fixed. The audit also probes the Surge **origin** (`--resolve`), so a
+  branded edge that serves no certificate at all (`edge-live` /
+  `edge-insecure`: `sslv3 alert handshake failure` on every host) is never
+  mistaken for "not published" — that mistake would make the repair job
+  redeploy the whole fleet for nothing. See `docs/deployment.md`.

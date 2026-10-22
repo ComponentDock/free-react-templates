@@ -7,6 +7,9 @@
 #      the branch cancels the in-flight run — that race left 141 template apps
 #      merged but never published, see docs/adr/0004). Apps touched by the push
 #      are verified (scripts/verify-app.sh), deployed, then re-probed.
+#      The re-probe calls scripts/audit-deployments.sh, which also probes the
+#      Surge origin: a branded edge that serves no certificate for the hostname
+#      (`edge-*` classes) is reported, not treated as a failed deploy.
 #   2. nightly schedule — fleet audit + repair: probe every template domain and
 #      rebuild/redeploy the apps whose site is missing, so a cancelled or failed
 #      deploy heals itself instead of leaving a dead public link.
@@ -164,23 +167,32 @@ jobs:
       - name: Verify the deployments are live
         if: env.APPS != ''
         run: |
+          # A branded edge without a certificate for the hostname (Cloudflare
+          # second-level wildcard) kills the handshake, so a plain probe cannot
+          # tell "deploy failed" apart from "edge is down". audit-deployments.sh
+          # probes the origin as well and classifies each host; only `missing`
+          # (no content anywhere) fails the step.
           set +e
-          failed=""
-          for app in $APPS; do
-            code="$(curl -ksS -L -o /dev/null -w '%{http_code}' --max-time 25 \
-              -H 'Cache-Control: no-cache' "https://${app}.free.componentdock.com")"
-            if [ "$code" = "200" ]; then
-              echo "==> live: ${app}"
-            else
-              echo "==> NOT LIVE (HTTP ${code}): ${app}"
-              failed="${failed} ${app}"
-            fi
-          done
-          if [ -n "$failed" ]; then
-            echo "::error::Not live after deploy:${failed}"
+          bash scripts/audit-deployments.sh --apps "$APPS" --quiet > verify.tsv 2>/dev/null
+          status=$?
+          edge=""
+          while IFS=$'\t' read -r class app; do
+            case "$class" in
+              live) echo "==> live: ${app}" ;;
+              insecure) echo "==> live, shared *.surge.sh cert: ${app}" ;;
+              edge-live) echo "==> live at the origin, unreachable via the branded edge (TLS): ${app}"; edge="${edge} ${app}" ;;
+              edge-insecure) echo "==> origin only + shared *.surge.sh cert (needs re-publish): ${app}"; edge="${edge} ${app}" ;;
+              missing) echo "==> NOT LIVE anywhere (no content at the origin): ${app}" ;;
+            esac
+          done < verify.tsv
+          if [ -n "$edge" ]; then
+            echo "::error::Branded edge has no certificate for:${edge} — the hosts serve fine at the Surge origin. This is a DNS/TLS-edge problem (Cloudflare-proxied *.free.componentdock.com needs a multi-level cert or a DNS-only CNAME to na-west1.surge.sh), NOT a deploy failure."
+          fi
+          if [ "$status" -ne 0 ]; then
+            echo "::error::Not published anywhere: see the NOT LIVE lines above."
             exit 1
           fi
-          echo "All deployments verified live."
+          echo "All deployments are published (edge/TLS state reported above)."
 
       - name: Summary
         if: always()
@@ -225,14 +237,17 @@ jobs:
             | tee audit.tsv
           MISSING="$(awk -F'\t' '$1 == "missing" { print $2 }' audit.tsv | tr '\n' ' ' | sed 's/ *$//')"
           INSECURE="$(awk -F'\t' '$1 == "insecure" { print $2 }' audit.tsv | tr '\n' ' ' | sed 's/ *$//')"
+          EDGE="$(awk -F'\t' '$1 == "edge-live" || $1 == "edge-insecure" { print $2 }' audit.tsv | tr '\n' ' ' | sed 's/ *$//')"
           echo "MISSING=${MISSING}" >> "$GITHUB_ENV"
           echo "INSECURE=${INSECURE}" >> "$GITHUB_ENV"
+          echo "EDGE=${EDGE}" >> "$GITHUB_ENV"
           echo "Repairing (≤ ${AUDIT_LIMIT}): ${MISSING:-none}"
           {
             echo "### Audit shard ${{ matrix.shard }}/4"
             echo ""
             echo "- missing (repairing): ${MISSING:-none}"
             echo "- TLS-uncovered cert (report only): ${INSECURE:-none}"
+            echo "- branded edge down, content healthy at the origin (no deploy can fix): ${EDGE:-none}"
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Redeploy the missing templates
@@ -261,23 +276,19 @@ jobs:
       - name: Verify repaired deployments are live
         if: env.MISSING != ''
         run: |
+          # Same probe as the deploy job: `missing` anywhere is the only failure,
+          # a branded edge that cannot serve TLS is reported, not retried.
           set +e
-          failed=""
-          for app in $MISSING; do
-            code="$(curl -ksS -L -o /dev/null -w '%{http_code}' --max-time 25 \
-              -H 'Cache-Control: no-cache' "https://${app}.free.componentdock.com")"
-            if [ "$code" = "200" ]; then
-              echo "==> live: ${app}"
-            else
-              echo "==> STILL MISSING (HTTP ${code}): ${app}"
-              failed="${failed} ${app}"
-            fi
-          done
-          if [ -n "$failed" ]; then
-            echo "::error::Still not live after repair:${failed}"
+          bash scripts/audit-deployments.sh --apps "$MISSING" --quiet > repaired.tsv 2>/dev/null
+          status=$?
+          while IFS=$'\t' read -r class app; do
+            echo "==> ${class}: ${app}"
+          done < repaired.tsv
+          if [ "$status" -ne 0 ]; then
+            echo "::error::Still not published anywhere after repair: see the missing lines above."
             exit 1
           fi
-          echo "All repaired deployments verified live."
+          echo "All repaired deployments are published."
 
       - name: Report TLS-uncovered hosts (not auto-fixable in-repo)
         if: env.INSECURE != ''
@@ -285,3 +296,22 @@ jobs:
           echo "These hosts are published but answer with a TLS certificate that" \
             "does not cover them (Surge's shared CN=*.surge.sh cert), so browsers" \
             "warn on the https:// link: ${INSECURE}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Report a branded-edge TLS outage (not fixable in this repo)
+        if: env.EDGE != ''
+        run: |
+          cat <<EOF
+          ::error::The branded domain *.free.componentdock.com serves no TLS certificate for ${EDGE}
+          These hosts answer 200 with a valid per-domain certificate at the Surge origin
+          (--resolve <host>:443:<surge-ip>), so their content is published and healthy.
+          The failure is in front of Surge: the wildcard DNS record is Cloudflare-proxied
+          and Cloudflare's certificate does not cover a second-level wildcard
+          (*.free.componentdock.com). Re-publishing cannot fix it.
+
+          Fix at the DNS/TLS edge, then re-run this job:
+            - set *.free.componentdock.com to a DNS-only CNAME -> na-west1.surge.sh, or
+            - add a multi-level certificate (Cloudflare Advanced Certificate Manager).
+          After the edge serves TLS again, hosts reported as edge-insecure need one
+          per-domain re-publish (surge apps/<app>/dist https://<app>.free.componentdock.com).
+          EOF
+          exit 1
