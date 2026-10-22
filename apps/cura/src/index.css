@@ -5,9 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cura brand blue — Tailwind blue scale extracted from the ColorLib
-     "Vitality" screenshot (preview unreachable; tokens approximated from the
-     visual reference in the spec): 600 #2563eb (buttons, logo, active link),
+  /* Cura brand blue — Tailwind blue scale extracted from the reference
+     screenshot (preview unreachable; tokens approximated from the visual
+     reference in the spec): 600 #2563eb (buttons, logo, active link),
      500 #3b82f6 (headline accent), 700 #1d4ed8 (hover), 800 #1e40af (top
      info bar, dark bands), 900 #1e3a8a. */
   --color-primary-50: #eff6ff;

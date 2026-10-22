@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Coursely brand palette — recreated from the ColorLib "Learnhub" design.
+  /* Coursely brand palette — measured from the reference design.
      The primary scale IS the indigo brand color (#6366f1) so the shared
      packages/ui Button/ButtonLink render in brand indigo, and Tailwind's
      built-in gray/emerald/amber/red scales drive the rest of the palette. */

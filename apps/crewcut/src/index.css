@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Crewcut brand palette — recreated from the ColorLib "Barber" design
+  /* Crewcut brand palette — measured from the reference design
      (css/main.css): pink→purple gradient #f61daf → #691cff on the navbar,
      banner, primary buttons, and hover accents. */
   --color-brand: #f61daf;
