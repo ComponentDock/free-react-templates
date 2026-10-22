@@ -194,7 +194,7 @@ center` → `div.col-md-5`): `div.dropdown.custom-dropdown` containing
 | Item dot        | `:before` — **10px circle** (`border-radius: 50%`), absolute `top: 50%; left: 10px; translateY(-50%)`, background **`#efefef`** (hollow radio-style dot), transition `.3s all ease`; HOVER: background → **`#007bff`** (dot turns blue)                                                                                                                                                                                                                                                                                                                     | `.dropdown-item:before` rules           |
 | Font family     | Roboto (300/400 available; page also loads Poppins + Source Serif Pro but they are UNUSED here), stack `"Roboto", -apple-system, …, sans-serif`; body text default `#212529`                                                                                                                                                                                                                                                                                                                                                                                | `body` rule + cf-fonts @font-face block |
 | Icons           | ONE glyph total — the trigger's `:after` chevron (`\e313` → lucide `ChevronDown`); item dots are pure CSS circles; **NO `icon-*` classes in the markup, NO images, NO carousel** (owl assets loaded but unused)                                                                                                                                                                                                                                                                                                                                             | preview HTML + icomoon css              |
-| Mobile behavior | NONE — no media queries in the slim stylesheet (like Privy/Lilac/Docket); menu stays LEFT-anchored at all viewports, no restyling on narrow screens (the `col-md-5` simply becomes full-width)                                                                                                                                                                                                                                                                                                                                                              | `style.css` (no media queries)          |
+| Mobile behavior | NONE — no media query restyles the panel (like Privy/Lilac/Docket: the sheet's 7 `@media` blocks are 5 container/grid widths at 576/768/992/1200 + 2 `print`); menu stays LEFT-anchored at all viewports, no restyling on narrow screens (the `col-md-5` simply becomes full-width)                                                                                                                                                                                                                                                                                                                                                              | `style.css` (7 `@media` blocks)          |
 
 ## Requirements
 
@@ -365,7 +365,8 @@ media queries in the reference stylesheet).
 - **THEN** the menu SHALL keep the reference behavior: no special
   mobile CSS (unlike Onboard/Glimpse/Inquire) — the card is NOT restyled
   for small screens and stays left-anchored (matches the source, which has
-  zero media queries in its slim stylesheet)
+  no panel-specific media query (5 container/grid widths at 576/768/992/1200
+  + 2 `print`))
 
 ## Verification checklist
 

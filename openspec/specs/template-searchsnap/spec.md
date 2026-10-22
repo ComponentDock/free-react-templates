@@ -129,7 +129,9 @@ Pressing the Enter key in the search input SHALL trigger the same search action 
 
 ### Requirement: Responsive layout
 
-The overlay and search bar SHALL be responsive on mobile viewports (<=640px), with the search bar adjusting width and remaining tappable.
+The overlay and search bar SHALL be responsive below `md` (767.98px — the
+sheet's `.cl-col-md-3`/`.cl-col-md-7` stack there, NOT 640px), with the search
+bar adjusting width and remaining tappable.
 
 #### Scenario: Responsive layout
 

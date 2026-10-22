@@ -166,7 +166,8 @@ Extracted from `https://preview.colorlib.com/theme/bootstrap/login-form-06/css/s
 
 - [ ] Split-screen layout renders at 100vh on desktop (lg+)
 - [ ] Background image covers the right half with cover + center
-- [ ] Mobile layout stacks image above form at 500px
+- [ ] Mobile layout stacks image above form below `md` (767.98px — the sheet's
+      `.cl-col-md-7` collapses there; NOT 500px)
 - [ ] Roboto font loads (300 + 400 weights) via Google Fonts
 - [ ] Username and password fields have floating labels with smooth transition
 - [ ] Form group borders are #efefef, no double borders between fields

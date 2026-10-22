@@ -130,7 +130,9 @@ rgba(0,0,0,.2)`, and CENTERED under the trigger: `left: 50% !important`
     menu properly via `aria-controls`/id.)
   - **No mobile-specific CSS** in this slim stylesheet (like Privy; unlike
     Onboard/Glimpse/Inquire which center the menu under the button below
-    768px): there are NO media queries. The `min-width: 700px` card simply
+    768px): the only `@media` blocks are 5 container/grid width queries
+    (576/768/992/1200) and 2 `print` rules — none restyles the card. The
+    `min-width: 700px` card simply
     overflows/scrolls on small viewports — reproduce the source behavior
     (no responsive handling); the `col-md-5` becomes full-width.
 - **Section order (1:1, from live demo DOM):**
@@ -170,7 +172,7 @@ center` → `div.col-md-5`): `div.dropdown.custom-dropdown` containing
 | Item blurb      | `p` — `font-size: 14px`, `color: #b3b3b3`, `font-weight: 300` (global `p` rule)                                                                                                                                                                                                                                                                                                                                                                                                                   | `p` + `.half-col p` rules               |
 | Font family     | Roboto (300/400 available; page also loads Poppins + Source Serif Pro but they are UNUSED here), stack `"Roboto", -apple-system, …, sans-serif`; body text default `#212529`                                                                                                                                                                                                                                                                                                                      | `body` rule + cf-fonts @font-face block |
 | Icons           | TWO icons, repeated: the gear (`icon-cog`) on the trigger and in items 1+3; the person (`icon-person`) in items 2+4. No images, no carousel (owl assets loaded but unused)                                                                                                                                                                                                                                                                                                                        | preview HTML                            |
-| Mobile behavior | NONE — no media queries in the slim stylesheet (like Privy); the `min-width: 700px` card overflows/scrolls on small viewports, menu stays centered at all viewports (the `col-md-5` simply becomes full-width)                                                                                                                                                                                                                                                                                    | `style.css` (no media queries)          |
+| Mobile behavior | NONE — no media query restyles the panel (like Privy: the sheet's 7 `@media` blocks are 5 container/grid widths at 576/768/992/1200 + 2 `print`); the `min-width: 700px` card overflows/scrolls on small viewports, menu stays centered at all viewports (the `col-md-5` simply becomes full-width)                                                                                                                                                                                                                                                                                    | `style.css` (7 `@media` blocks)          |
 
 ## Requirements
 
@@ -346,7 +348,8 @@ media queries in the reference stylesheet).
 - **THEN** the menu SHALL keep the reference behavior: no special
   mobile CSS (unlike Onboard/Glimpse/Inquire) — the wide `min-width:
 700px` card is NOT restyled for small screens (matches the source, which
-  has zero media queries)
+  has no panel-specific media query — 5 container/grid widths at
+  576/768/992/1200 + 2 `print`)
 
 ## Verification checklist
 

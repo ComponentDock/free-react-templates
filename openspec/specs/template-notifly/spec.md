@@ -177,7 +177,8 @@ border-radius: 50%` (a 40px ROUND avatar).
     trigger is a link). Note them in the PR description only.
   - **No mobile-specific CSS** in this slim stylesheet (like
     Privy/Lilac/Docket/Fount; unlike Onboard/Glimpse/Inquire): there are
-    NO media queries. The panel stays left-anchored at all viewports;
+    NO panel-specific one (5 container/grid widths at 576/768/992/1200 +
+    2 `print`). The panel stays left-anchored at all viewports;
     the `col-md-5` simply becomes full-width. Reproduce the source
     behavior (no responsive handling).
 - **Icons:** exactly ONE `icon-*` glyph in the demo markup — the trigger's
@@ -227,7 +228,7 @@ border-radius: 50%` (a 40px ROUND avatar).
 | Font family       | Roboto (300/400 available; page also loads Poppins + Source Serif Pro but they are UNUSED here), stack `"Roboto", -apple-system, …, sans-serif`; body text default `#212529`                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | `body` rule + cf-fonts @font-face block   |
 | Icons             | ONE glyph total — the trigger's `wrap-icon` bell (`\e7f4` → lucide `Bell`); the count badge is a pure CSS circle; **no other `icon-*` classes, no carousel** (owl assets loaded but unused), no chevron                                                                                                                                                                                                                                                                                                                                                                                                                                         | preview HTML + icomoon css                |
 | Images            | three avatar photos (`person_1/2/3.jpg`), round-cropped to **40px** by CSS; person_2 and person_3 are each reused twice; recreation uses picsum seeded avatars (see "Images" note above)                                                                                                                                                                                                                                                                                                                                                                                                                                                        | preview HTML + CSS                        |
-| Mobile behavior   | NONE — no media queries in the slim stylesheet (like Privy/Lilac/Docket/Fount); panel stays LEFT-anchored at all viewports, no restyling on narrow screens (the `col-md-5` simply becomes full-width)                                                                                                                                                                                                                                                                                                                                                                                                                                           | `style.css` (no media queries)            |
+| Mobile behavior   | NONE — no media query restyles the panel (like Privy/Lilac/Docket/Fount: the sheet's 7 `@media` blocks are 5 container/grid widths at 576/768/992/1200 + 2 `print`); panel stays LEFT-anchored at all viewports, no restyling on narrow screens (the `col-md-5` simply becomes full-width)                                                                                                                                                                                                                                                                                                                                                                                                                                           | `style.css` (7 `@media` blocks)            |
 
 ## Requirements
 
@@ -430,7 +431,8 @@ media queries in the reference stylesheet).
 - **THEN** the menu SHALL keep the reference behavior: no special
   mobile CSS (unlike Onboard/Glimpse/Inquire) — the card is NOT restyled
   for small screens and stays left-anchored (matches the source, which has
-  zero media queries in its slim stylesheet)
+  no panel-specific media query (5 container/grid widths at 576/768/992/1200
+  + 2 `print`))
 
 ## Verification checklist
 

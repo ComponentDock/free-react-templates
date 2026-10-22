@@ -71,7 +71,9 @@ The page SHALL display a two-column layout with social login on the left and the
 
 #### Scenario: Mobile single-column layout
 
-- **WHEN** the user loads the LoginHive page on a mobile viewport (≤640px)
+- **WHEN** the user loads the LoginHive page on a mobile viewport (below
+  `md`, 767.98px — the sheet's `.cl-col-md-2`/`.cl-col-md-5` stack there, NOT
+  640px)
 - **THEN** the layout collapses to a single column
 - **AND** the social login section stacks above the form section
 - **AND** the divider text is hidden or displayed horizontally

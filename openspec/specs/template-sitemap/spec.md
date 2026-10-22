@@ -164,7 +164,9 @@ padding-bottom: 5px; text-decoration: none; color: #000; font-weight:
 custom` (border `#efefef`) for a button variant the demo never uses
     (the trigger is a link). Note them in the PR description only.
   - **No mobile-specific CSS** in this slim stylesheet (like the whole
-    11–15 run): there are NO media queries (verified: 0 `@media` blocks).
+    11–15 run): the sheet's only `@media` blocks are 5 container/grid
+    width queries (576/768/992/1200) and 2 `print` rules — none of them
+    restyles the panel.
     The 680px min-width mega panel simply overflows narrow viewports
     (Bootstrap's absolutely-positioned dropdown is not restyled) — reproduce
     the source behavior (no responsive handling).
@@ -215,7 +217,7 @@ custom` (border `#efefef`) for a button variant the demo never uses
 | Category lists     | Col 2: Code(5), Fonts(12), HTML Templates(81), Mockups(9), Logo(16), PSD Mockups(22) · Col 3: Sketch App(32), User Interface(61), WordPress(73), User Experience(88), WebGL(19), Mockups(93) — counts in parentheses are plain text inside the anchor; source has a trailing space after each `)` (normalize/trim in tests)                                                                                                                                                                                                                                                                                                                                                                                                                    | preview HTML                            |
 | Icons              | ONE glyph total — the trigger chevron (`\e313` → lucide `ChevronDown`); **NO bell, NO `.number` badge** (unlike Notifly — the badge rules exist in the CSS but are unused), no other `icon-*` classes, no carousel (owl assets loaded but unused)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | preview HTML + icomoon css              |
 | Images             | ONE image — `hero_1.jpg` (1900×1150 landscape), `img-fluid` + `mb-3`, inside a `d-block mb-1` link, `alt="Image"`; recreation uses a picsum seeded landscape placeholder (see "Images" note above)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | preview HTML + CSS                      |
-| Mobile behavior    | NONE — no media queries in the slim stylesheet (verified: 0 `@media`); the 680px mega panel is NOT restyled for narrow viewports (Bootstrap's absolutely-positioned dropdown just overflows)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | `style.css` (no media queries)          |
+| Mobile behavior    | NONE — no media query restyles the panel (the sheet's 7 `@media` blocks are 5 container/grid widths at 576/768/992/1200 + 2 `print`); the 680px mega panel is NOT restyled for narrow viewports (Bootstrap's absolutely-positioned dropdown just overflows)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | `style.css` (7 `@media` blocks)          |
 
 ## Requirements
 
@@ -387,7 +389,8 @@ media queries in the reference stylesheet).
 
 - **GIVEN** the page is rendered on a narrow viewport
 - **THEN** the menu SHALL keep the reference behavior: no special mobile
-  CSS (zero media queries in the source's slim stylesheet) — the 680px
+  CSS (no panel-specific media query: 5 container/grid widths at
+  576/768/992/1200 + 2 `print`) — the 680px
   mega panel is NOT restyled for small screens and simply overflows the
   viewport like the original
 

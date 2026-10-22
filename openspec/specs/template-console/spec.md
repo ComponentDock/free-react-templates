@@ -164,9 +164,10 @@ border-radius: 2px; font-size: 10px; color: #fff; background: #fd7e14`
   700 uppercase header — the markup has NO title-wrap row). Note them in
   the PR description only.
 - **No mobile-specific CSS** in this slim stylesheet (like the whole 11–17
-  run): there are NO media queries (verified: 0 `@media` blocks). The
-  auto-width blue panel is not restyled for narrow viewports (Bootstrap's
-  absolutely-positioned dropdown just overflows) — reproduce the source
+  run): the sheet's only `@media` blocks are 5 container/grid width
+  queries (576/768/992/1200) and 2 `print` rules — NONE restyles the
+  auto-width blue panel, which simply overflows narrow viewports
+  (Bootstrap's absolutely-positioned dropdown) — reproduce that source
   behavior (no responsive handling).
 - **Screenshot:** `dropdown-17.jpg` (1200×972, viewed in browser) — white
   page, centered heading "Dropdown #7", below it the trigger: a solid
@@ -196,7 +197,7 @@ border-radius: 2px; font-size: 10px; color: #fff; background: #fd7e14`
 | "New" badge        | `<span>` inside items 4 & 5: `padding: 2px 4px; border-radius: 2px; font-size: 10px; color: #fff; background: #fd7e14` (orange), inline at the item's right after the label text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | `.dropdown-menu a > span` rules + live                  |
 | Icons              | EXACTLY TWO glyphs: `\e871` `icon-dashboard2` → lucide `LayoutDashboard` (16px, 8px right margin) and `\e313` `icon-keyboard_arrow_down` → lucide `ChevronDown` (16px, `.arrow`). NO bell, NO `.number` badge, NO other `icon-*` classes, no carousel (owl assets loaded but unused)                                                                                                                                                                                                                                                                                                                                                                                                                        | preview HTML + icomoon css                              |
 | Images             | NONE — no `<img>` in the markup (unique in the recent series: Sitemap had a featured card). Nothing to replace                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | preview HTML                                            |
-| Mobile behavior    | NONE — no media queries in the slim stylesheet (verified: 0 `@media`); the blue panel is NOT restyled for narrow viewports (Bootstrap's absolutely-positioned dropdown just overflows)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | `style.css` (no media queries)                          |
+| Mobile behavior    | NONE — no media query restyles the panel (the sheet's 7 `@media` blocks are 5 container/grid widths at 576/768/992/1200 + 2 `print`); the blue panel is NOT restyled for narrow viewports (Bootstrap's absolutely-positioned dropdown just overflows)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | `style.css` (7 `@media` blocks)                          |
 
 ## Requirements
 
@@ -360,7 +361,8 @@ media queries in the reference stylesheet).
 - **GIVEN** the page is rendered in a narrow viewport
 - **THEN** the demo SHALL keep the reference layout unchanged (the
   absolutely-positioned blue panel is not restyled for small screens — the
-  source has zero media queries; no hamburger, no reflow)
+  source has no panel-specific media query (5 container/grid widths at
+  576/768/992/1200 + 2 `print`); no hamburger, no reflow)
 
 ## Verification checklist
 
@@ -386,7 +388,8 @@ media queries in the reference stylesheet).
       `aria-labelledby`); keyboard-focusable items
 - [ ] No images, no carousel; exactly two icon glyphs (LayoutDashboard +
       ChevronDown); unused CSS (`p` color, btn-custom, title-wrap) not
-      reproduced; zero media queries (no responsive handling)
+      reproduced; no panel-specific media query (the 7 blocks only size
+      `.cl-container`/`.cl-col-md-*` and print)
 - [ ] Footer links `https://www.componentdock.com/`; NO ColorLib references
       anywhere in app code
 - [ ] 100% coverage; per-app gate passes; PR description states: source
