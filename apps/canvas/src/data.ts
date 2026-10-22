@@ -1,6 +1,5 @@
 /* Canvas — all copy, links, and seeded placeholder image URLs in one place.
-   Recreates ColorLib "Approach" (https://colorlib.com/wp/template/approach/).
-   No ColorLib assets are copied — every image is a deterministic picsum seed
+   No third-party assets are copied — every image is a deterministic picsum seed
    and every brand glyph is an inline SVG path (see components/BrandIcon.tsx). */
 
 export const BRAND = 'Canvas'

@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cloud brand sky-blue — inspired by the original ColorLib "Error 404
-     V14" minimalist cloud error page (light, airy, sky tones). */
+  /* Cloud brand sky-blue — design-token note: the minimalist, light and
+     airy cloud error-page palette (sky tones on near-white). */
   --color-brand: #0ea5e9;
 
   --color-primary-50: #f0f9ff;

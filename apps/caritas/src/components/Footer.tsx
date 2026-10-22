@@ -197,6 +197,12 @@ export function Footer() {
       <div className="mx-auto mt-14 max-w-6xl border-t border-brand/10 pt-6 text-center">
         <p className="text-[14px] text-gray-500">{COPYRIGHT}</p>
       </div>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
+      </div>
     </footer>
   )
 }

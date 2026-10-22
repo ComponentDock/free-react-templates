@@ -2,7 +2,7 @@
  * Model roster and search-filter logic for the Catwalk template.
  *
  * Display stats (age, height in cm, measurements, shoe size, eye color)
- * mirror the original ColorLib "Topmodel" model cards. The search
+ * mirror the design's model cards. The search
  * attributes (height in feet, bust/waist/hips in the units used by the
  * original search bar) power the client-side model filter.
  */

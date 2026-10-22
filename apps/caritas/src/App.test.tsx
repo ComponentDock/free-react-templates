@@ -9,7 +9,7 @@ describe('App', () => {
     expect(document.title).toBe('Caritas — Charity Template')
   })
 
-  it('renders all sections in the source order (1:1 with ColorLib Amor)', () => {
+  it('renders all sections in the specified order', () => {
     const { container } = render(<App />)
 
     const sections = container.querySelectorAll('main section')

@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Canvas brand palette — recreated from the ColorLib "Approach" design
-     (live preview: https://preview.colorlib.com/theme/approach/). */
+  /* Canvas brand palette — single indigo accent on black and white. */
   --color-brand: #3b4eda; /* single indigo accent: active nav, icons, blog band, footer logo */
   --color-ink: #000000; /* hero background + all headings */
   --color-body: #6c7b95; /* serif body copy */

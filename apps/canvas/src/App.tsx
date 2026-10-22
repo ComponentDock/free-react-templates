@@ -6,9 +6,8 @@ import { Navbar } from './components/Navbar'
 import { PortfolioMosaic } from './components/PortfolioMosaic'
 import { Services } from './components/Services'
 
-/* Canvas — single-page recreation of ColorLib "Approach"
-   (https://colorlib.com/wp/template/approach/). Section order 1:1 with the
-   source: navbar → black hero → portfolio mosaic (overlapping the hero) →
+/* Canvas — single-page layout. Section order 1:1 with the
+   design: navbar → black hero → portfolio mosaic (overlapping the hero) →
    services → indigo blog band → client logos → white footer. Body text is
    Source Serif Pro (font-serif on the root); all headings are Poppins. */
 export function App() {
