@@ -24,6 +24,16 @@ Consistent patterns for structure, naming, components, and error handling.
   the deploy GitHub Action runs `npm ci` and fails with
   "Missing: @free-react-templates/<name> from lock file" on a stale lockfile.
   Verify with `grep -c "free-react-templates/<name>" package-lock.json`.
+- **Never pin an exact React version in an app's `package.json`.** Every app
+  declares `"react": "latest"` / `"react-dom": "latest"`. An exact pin
+  (`"react": "19.0.0"`) while the rest of the monorepo hoists a newer version
+  installs a **second React copy** in `apps/<name>/node_modules/react`; the
+  built bundle then throws `TypeError: Cannot read properties of null
+  (reading 'useContext')` on mount and renders a **blank page that still
+  returns HTTP 200** — so a liveness probe reports it healthy. Check with
+  `find apps -maxdepth 3 -type d -name react -path '*node_modules*'` (only
+  legitimate hits are none) and fix by matching `latest` + `npm install` at
+  the root.
 - **Every app's `vite.config.ts` MUST register `injectUiSource()`** (defined
   inline in each config): Tailwind v4.3's vite plugin silently drops RELATIVE
   `@source` paths, so classes used only in `packages/ui` (e.g. `inline-flex`,
