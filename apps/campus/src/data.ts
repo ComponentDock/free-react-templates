@@ -1,9 +1,8 @@
-/* All copy/content for Campus, extracted from the ColorLib "Academy" live
-   preview (https://preview.colorlib.com/theme/academy/) on 2026-08-11.
+/* All copy/content for Campus, extracted from the live preview on 2026-08-11.
    Text keeps the source's kind of content; the brand name is replaced with
    "Campus", source typos are fixed deliberately ("Wellcome" → "Welcome",
    "enrole" → "enrol", "begginers" → "beginners"), and the CTA + footer credit
-   are reworded (no ColorLib branding). */
+   are reworded (no external branding). */
 
 export const siteName = 'Campus'
 export const skipLabel = 'Skip to main content'

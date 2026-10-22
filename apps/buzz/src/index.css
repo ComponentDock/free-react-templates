@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Buzz brand palette — recreated from the ColorLib "Br" design
+  /* Buzz brand palette — measured from the reference design
      (css/style.css): orange-red #eb592d accents, warm light section bg
      #fdf9f6, near-black footer #0d0e0f, body text #777777. */
   --color-brand: #eb592d;

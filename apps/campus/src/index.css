@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Campus brand palette — recreated from the ColorLib "Academy" preview
-   (https://preview.colorlib.com/theme/academy/) live DOM + style.css:
+/* Campus brand palette — measured from the live DOM + style.css:
    primary green gradient #61ba6d → #83c331 (buttons, feature band, course
    icon badges, phone block, CTA band), accent #69bc5f (hovers, roles),
    menu bar #f5f7fa, popular-card bg #eef3f6, stars #fbb710/#e0e3e4,

@@ -6,8 +6,8 @@ interface SectionTitleProps {
   centered?: boolean
 }
 
-/* .section_tittle — H2 36px #060606 w700 + gray 16px w300 caption
-   (colorlib.com/wp/template/amor css/style.css). Left by default;
+/*.section_tittle — H2 36px #060606 w700 + gray 16px w300 caption
+     Left by default;
    `centered` for the blog/client sections (text-center in the source). */
 export function SectionTitle({ title, caption, centered = false }: SectionTitleProps) {
   return (

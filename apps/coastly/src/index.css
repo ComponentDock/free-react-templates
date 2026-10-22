@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Coastly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V2" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-2/):
+  /* Coastly brand palette — design-token note:
      lime green #72b01d is the ONLY accent color (the solid Check
      availability button background). */
   --color-brand: #72b01d;

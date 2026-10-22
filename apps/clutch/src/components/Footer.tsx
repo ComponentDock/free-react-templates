@@ -100,6 +100,12 @@ export function Footer() {
       <div className="border-t border-white/10 py-5 text-center text-sm text-white/50">
         Copyright © {new Date().getFullYear()} All rights reserved | Clutch
       </div>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
+      </div>
     </footer>
   )
 }

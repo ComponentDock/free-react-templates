@@ -1,5 +1,5 @@
-/** Copy + content data for the Caritas charity landing (recreation of
-    ColorLib "Amor"). Kept side-effect free so every entry is unit-testable. */
+/** Copy + content data for the Caritas charity landing. Kept side-effect free
+    so every entry is unit-testable. */
 
 interface NavChildLink {
   label: string

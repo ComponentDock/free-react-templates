@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Catwalk brand dusty-rose/terracotta — from the original ColorLib
-     "Topmodel" stylesheet (css/style.css): .bg-primary, .btn.btn-primary,
+  /* Catwalk brand dusty-rose/terracotta — from the design stylesheet
+     (css/style.css): .bg-primary, .btn.btn-primary,
      subheadings and model-card hover overlays (#daa592). */
   --color-brand: #daa592;
 

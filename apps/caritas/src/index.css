@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Caritas brand palette — recreated from the ColorLib "Amor" design (live
-     preview: https://preview.colorlib.com/theme/amor/): solid purple
+  /* Caritas brand palette — measured from the reference design: solid purple
      #8d00ff (button text/borders, icon tints). */
   --color-brand: #8d00ff;
 

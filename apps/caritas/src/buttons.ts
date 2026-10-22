@@ -1,5 +1,5 @@
-/** Shared button recipes recreated from the source's .btn_2 / .btn_3
-    (ColorLib Amor, css/style.css): purple family, uppercase w700 16px,
+/** Shared button recipes adapted from the design's .btn_2 / .btn_3
+    (css/style.css): purple family, uppercase w700 16px,
     asymmetric radii (top-left + bottom-right 20px), gradient hover fill
     (#7f00ff → #e100ff → #7f00ff). Plain string consts (not cn() — the hover
     corner flip must NOT be tailwind-merged away). */

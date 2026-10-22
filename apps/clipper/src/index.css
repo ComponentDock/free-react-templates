@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Clipper brand palette — recreated from the ColorLib "Alotan" design
+  /* Clipper brand palette — measured from the reference design
      (css/style.css): orange #ff6d24 primary accents / quick-info strip. */
   --color-brand: #ff6d24;
   --color-brand-dark: #e65a14;

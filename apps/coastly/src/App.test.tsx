@@ -53,12 +53,18 @@ describe('App', () => {
     expect(form.className).toMatch(/lg:col-start-1/)
   })
 
-  it('renders NO navbar, hero chrome or footer (single-section form demo)', () => {
+  it('renders NO navbar (single-section form demo) and a Component Dock footer', () => {
     const { container } = render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
     expect(container.querySelectorAll('section')).toHaveLength(1)
     expect(container.querySelector('main')).not.toBeNull()
+
+    const footer = screen.getByRole('contentinfo')
+    expect(footer).toHaveTextContent('More templates at')
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

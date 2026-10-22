@@ -26,7 +26,7 @@ export function Pricing() {
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
         </p>
 
-        {/* The original ColorLib design renders the Standard card three times
+        {/* The design renders the Standard card three times
             in a three-column row; kept 1:1. */}
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {[0, 1, 2].map((index) => (
