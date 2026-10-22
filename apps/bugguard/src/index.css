@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* BugGuard brand palette — recreated from the ColorLib "Pestcontrol" design
+  /* BugGuard brand palette — measured from the reference design
      (css/style.css): orange-red #d7553b accents/buttons, blue #1c6ab8 counter,
      dark #222222 footer. */
   --color-brand: #d7553b;

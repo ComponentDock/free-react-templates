@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cartly brand palette — recreated from the ColorLib "Eiser" ecommerce design
+  /* Cartly brand palette — measured from the reference ecommerce design
      (brand green #71cd14). */
   --color-lime-50: #f4fce3;
   --color-lime-100: #e6f9c0;

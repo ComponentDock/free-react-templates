@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Carnivor brand palette — recreated from the ColorLib Steakshop design
+  /* Carnivor brand palette — measured from the reference design
      (css/style.css): red #f42f2c accents/buttons, gradient to #f48464,
      dark headings #222222, body text #777777. */
   --color-brand: #f42f2c;
