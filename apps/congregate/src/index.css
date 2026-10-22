@@ -5,10 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Congregate brand palette — recreated from the ColorLib "Hopefoundation"
-     design. The primary scale IS the warm amber brand color (#f59e0b) so the
-     shared packages/ui Button/ButtonLink render in brand amber, and the
-     charcoal neutral scale + cream tint drive the light/dark section rhythm. */
+  /* Congregate brand palette — measured from the reference design. The
+     primary scale IS the warm amber brand color (#f59e0b) so the shared
+     packages/ui Button/ButtonLink render in brand amber, and the charcoal
+     neutral scale + cream tint drive the light/dark section rhythm. */
   --color-primary-50: #fffbeb;
   --color-primary-100: #fef3c7;
   --color-primary-200: #fde68a;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Couture brand palette — recreated from the ColorLib "Modist" design
+  /* Couture brand palette — measured from the reference design
      (css/style.css): brand pink #f1b8c4 (hero overlay panel, sale badges,
      nav hovers), black #000000 / dark text #212529, light bands #f8f9fa,
      body gray #6c757d. */

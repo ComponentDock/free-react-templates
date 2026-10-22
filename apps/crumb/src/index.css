@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Crumb brand palette — recreated from the ColorLib "Foode" template
-     (https://colorlib.com/wp/template/foode/), tokens extracted from the
-     live preview's style.css:
+  /* Crumb brand palette — measured from the reference design; tokens
+     extracted from the reference stylesheet:
      - terracotta/salmon #e59f80 (dates, categories, hovers, search icon,
        newsletter submit, hero title hover)
      - ink #191919 (dark text, .foode-btn background)

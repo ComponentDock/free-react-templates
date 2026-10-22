@@ -106,6 +106,15 @@ export function Contact() {
           <p className="text-sm text-white/80">
             Copyright © {new Date().getFullYear()} Colid. All rights reserved.
           </p>
+          <p className="text-sm text-white/70">
+            More templates at{' '}
+            <a
+              href="https://www.componentdock.com/"
+              className="font-medium text-white underline underline-offset-4 hover:text-primary-200"
+            >
+              Component Dock
+            </a>
+          </p>
           <SocialLinks />
         </div>
       </div>

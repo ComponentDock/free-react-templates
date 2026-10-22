@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cove brand blue — from the original ColorLib "Error 404 V18"
-     stylesheet (css/style.css): the "Back to homepage" link color. */
+  /* Cove brand blue — from the reference design (css/style.css): the
+     "Back to homepage" link color. */
   --color-brand: #388dbc;
 
   /* Text colors from the original stylesheet. */
