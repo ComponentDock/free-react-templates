@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Blinkwave brand palette — recreated from the ColorLib "Fastnet" design
+  /* Blinkwave brand palette — measured from the reference design
      (brand red #ff3e3f, navy #072366, purple #331391). */
   --color-signal-50: #fff1f1;
   --color-signal-100: #ffe1e1;

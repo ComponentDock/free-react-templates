@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Apps brand blues — from the ColorLib "Apps" stylesheet (css/main.css):
+  /* Apps brand blues — from the reference stylesheet (css/main.css):
      primary gradient `linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%)`.
      Scale keyed on primary-600 (#3ea7ff) so the shared ui Button/ButtonLink
      "primary" variant works. */

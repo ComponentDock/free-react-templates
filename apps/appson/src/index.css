@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Appson brand orange — from the ColorLib "Appson" stylesheet
+  /* Appson brand orange — from the reference stylesheet
      (assets/css/style.css): `.bg-theme { background-color: #ff6818; }`.
      Scale keyed on primary-600 (#ff6818) so the shared ui
      Button/ButtonLink "primary" variant works. */

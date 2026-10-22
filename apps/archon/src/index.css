@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Archon brand coral — from the original ColorLib "Alpha" preview
+  /* Archon brand coral — from the reference design
      (css/style.css): #ff926b, hover #ffa585. */
   --color-brand: #ff926b;
 

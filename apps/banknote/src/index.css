@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Banknote brand palette — recreated from the ColorLib "Banker" design
+  /* Banknote brand palette — measured from the reference design
      (style.css): orange #fd7e14 accents/buttons, green #71bc42 secondary,
      dark gray #343a40 footer/sections, light bg #f8f9fa. */
   --color-brand: #fd7e14;

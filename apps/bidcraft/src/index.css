@@ -4,8 +4,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Bidcraft brand colors — from the ColorLib "Auction" preview
-     (https://preview.colorlib.com/theme/auction/ + css/style.css):
+  /* Bidcraft brand colors — from the reference stylesheet
+
      an auction marketplace theme with an orange #f37121 primary,
      white section backgrounds, muted body text #999999, and
      dark headings #000000. */
@@ -20,10 +20,10 @@
   --color-primary-800: #7d300b;
   --color-primary-900: #64270c;
 
-  /* Muted body copy (ColorLib #999999). */
+  /* Muted body copy (#999999). */
   --color-smoke: #999999;
 
-  /* Dark headings (ColorLib #000000). */
+  /* Dark headings (#000000). */
   --color-ink: #000000;
 
   /* Mulish (headings + body) via Google Fonts <link> in index.html. */

@@ -1,5 +1,4 @@
-/* Shared brand button classes — recreated from the ColorLib "Beko"
-   design's .btn_1 (red→magenta gradient, square, Aclonica) and .btn_2
+/* Shared brand button classes — measured from the reference design 's.btn_1 (red→magenta gradient, square, Aclonica) and.btn_2
    (white, hover = red border + white text). */
 export const btnBrand =
   'inline-block bg-gradient-to-l from-ember-500 via-magenta-500 to-ember-500 px-10 py-[18px] ' +

@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Ascendly brand palette — recreated from the ColorLib "Arcwork" design
-     (live preview: https://preview.colorlib.com/theme/arcwork/). */
+  /* Ascendly brand palette — measured from the reference design
+ */
   --color-brand: #3b4eda; /* indigo: headlines, logo, links, borders, dots */
   --color-cream: #fff6da; /* warm cream: hero right half, feature cards, bands */
   --color-muted: #6c7b95; /* muted blue-gray body text */

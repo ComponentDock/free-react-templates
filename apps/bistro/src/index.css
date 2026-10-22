@@ -6,8 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Bistro brand palette — recreated from the ColorLib "Allfood" design
-     (live demo: https://preview.colorlib.com/theme/allfood/):
+  /* Bistro brand palette — measured from the reference design
+
      warm orange #ff5600 is the primary accent (buttons, kickers, nav hover,
      gallery caption span, blog hover fill, date badge). */
   --color-brand: #ff5600;

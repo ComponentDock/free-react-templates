@@ -7,7 +7,7 @@ import { Blog } from './components/Blog'
 import { CtaBand } from './components/CtaBand'
 import { Footer } from './components/Footer'
 
-/* Ascendly — business-consulting landing, recreation of ColorLib "Arcwork".
+/* Ascendly — business-consulting landing, measured from the reference design.
    Section order (1:1): navbar → hero (split white/cream + typed headline) →
    feature cards → "Our Solutions" → testimonial → blog → CTA band → footer. */
 export function App() {

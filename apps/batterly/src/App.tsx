@@ -11,9 +11,9 @@ import { MapContact } from './components/MapContact'
 import { Footer } from './components/Footer'
 
 /**
- * Batterly — recreation of ColorLib "Cake"
- * (https://colorlib.com/wp/template/cake/). Section order 1:1 with the
- * source: navbar → hero slider → about → categories → product grid →
+ * Batterly — built from the reference design.
+ *
+ * Section order 1:1 with the: navbar → hero slider → about → categories → product grid →
  * class registration → team grid → testimonial carousel → instagram grid →
  * map contact → footer.
  */

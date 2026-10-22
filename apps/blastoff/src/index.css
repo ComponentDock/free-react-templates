@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Blastoff brand palette — recreated from the ColorLib "Launchpad" design.
+  /* Blastoff brand palette — measured from the reference design.
      The primary scale IS the indigo brand color (#4f46e5) so the shared
      packages/ui Button/ButtonLink render in brand indigo, and Tailwind's
      built-in gray scale drives the light/dark section rhythm. */

@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Arlo brand palette — recreated from the ColorLib "Alex Rivera"
-     design (bundled CSS): yellow accent #facc15 (yellow-400), scale
+  /* Arlo brand palette — measured from the reference design (bundled CSS): yellow accent #facc15 (yellow-400), scale
      #fef08a 200 / #fde047 300 / #facc15 400 / #eab308 500 / #ca8a04 600. */
   --color-primary-50: #fefce8;
   --color-primary-100: #fef9c3;

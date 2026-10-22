@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Appy brand blue — from the ColorLib "Appy" stylesheet (style.css):
+  /* Appy brand blue — from the reference stylesheet (style.css):
      primary #5e88fc with supporting #4a7aff, #768ede, #8790af.
      Scale keyed on primary-600 (#5e88fc) so the shared ui
      Button/ButtonLink "primary" variant works. */

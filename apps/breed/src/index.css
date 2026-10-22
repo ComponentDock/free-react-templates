@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Breed brand amber — from the original ColorLib "Breed" stylesheet
-     (css/style.css): .section-heading .small-sub-heading, footer links,
+  /* Breed brand amber — from the reference design
+     (css/style.css):.section-heading.small-sub-heading, footer links,
      navbar brand span (#ffc107); button hover fill (#ffce3a). */
   --color-brand: #ffc107;
   --color-brand-hover: #ffce3a;

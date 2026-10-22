@@ -27,7 +27,8 @@
     "shard-apps": "node scripts/shard-apps.mjs",
     "deploy": "bash scripts/deploy-template.sh",
     "deploy:aurora": "bash scripts/deploy-template.sh aurora",
-    "prepare": "husky"
+    "prepare": "husky",
+    "sweep:provenance": "node scripts/sweep-provenance.mjs"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

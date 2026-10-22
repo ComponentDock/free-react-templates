@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Appru brand blues — from the ColorLib "Appru" stylesheet
+  /* Appru brand blues — from the reference stylesheet
      (css/main.css): primary gradient `linear-gradient(0deg, #46dbf9 0%,
      #204be3 100%)`. Scale keyed on primary-600 (#204be3) so the shared ui
      Button/ButtonLink "primary" variant works. */

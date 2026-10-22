@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Allure brand palette — recreated from the ColorLib "Modelo" design
+  /* Allure brand palette — measured from the reference design
      (styles/main_styles.css): brand purple #690772 (logo period, nav active
      block, title spans, counters, hover states), deep purple #751b7e
      (filters, buttons, input focus border). */

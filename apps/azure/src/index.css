@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Azure brand blue — inspired by the original ColorLib "Error 404
-     V20" error page (blue pill button with white-on-blue hover). */
+  /* Azure brand blue — inspired by the reference error-page design: a blue pill
+     button with white-on-blue hover. */
   --color-brand: #189cf0;
 
   --color-primary-50: #f0f9ff;

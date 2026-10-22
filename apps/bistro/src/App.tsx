@@ -10,9 +10,9 @@ import { BlogSection } from './components/BlogSection'
 import { Footer } from './components/Footer'
 
 /**
- * Bistro — recreation of ColorLib "Allfood"
- * (https://colorlib.com/wp/template/allfood/). Section order 1:1 with the
- * source: sticky header → hero slider → about → gallery mosaic → about 2 →
+ * Bistro — built from the reference design.
+ *
+ * Section order 1:1 with the: sticky header → hero slider → about → gallery mosaic → about 2 →
  * booking form → services → subscribe band → blog cards → footer.
  */
 export function App() {

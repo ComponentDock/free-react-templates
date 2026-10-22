@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Bloom brand palette — recreated from the ColorLib "Pretty" design
+  /* Bloom brand palette — measured from the reference design
      (css/style.css): hot pink #fa5bdd accents/buttons, sky blue #78d5ef
      highlights, light bands #f8f9fa, ink text #212529, muted #6c757d. */
   --color-brand: #fa5bdd;
