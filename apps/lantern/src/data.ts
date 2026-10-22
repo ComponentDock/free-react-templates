@@ -302,4 +302,4 @@ export const newsletterError = 'Please enter a valid email address.'
 export const newsletterSuccess = 'Thank you for subscribing!'
 
 export const copyright = 'Copyright \u00A9 2026 All rights reserved'
-export const credit = 'Template made with \u2665 by Colorlib'
+export const credit = 'More templates at Component Dock'

@@ -1,9 +1,8 @@
 /**
- * Ledger data — recreated from the ColorLib "Daren" preview DOM
- * (https://preview.colorlib.com/theme/daren/): same content kinds
- * (category label, serif headline, meta "By Michal / March 30, 2019",
- * comment/like/share row), titles kept close to the original placeholder
- * copy. All imagery uses seeded picsum placeholders.
+ * Ledger data — editorial magazine content model: category label, serif
+ * headline, meta row ("By Michal / March 30, 2019"), comment/like/share row,
+ * and neutral placeholder titles. All imagery uses seeded picsum
+ * placeholders.
  */
 
 export const siteName = 'Ledger.'

@@ -1,8 +1,6 @@
 @import 'tailwindcss';
 
-/* Lantern brand palette — recreated from the ColorLib "Quitelight" preview
-   (https://preview.colorlib.com/theme/quitelight/) live DOM +
-   common/styles.css: brand yellow #F9B500 (btn-fill-primary, hover fills),
+/* Lantern brand palette: brand yellow #F9B500 (btn-fill-primary, hover fills),
    ink #111 (headings/links), dark footer #191919 (bg-191), light grey
    #F8F8F8 (bg-1-white main section), meta greys #aaa/#ccc/#888
    (color-ash/color-grey/color-lt-black), decorative category-tag accents

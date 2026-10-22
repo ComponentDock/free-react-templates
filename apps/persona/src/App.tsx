@@ -8,8 +8,7 @@ import { Hero } from './components/Hero'
 import { Projects } from './components/Projects'
 import { Services } from './components/Services'
 
-/** Persona — personal branding website template (recreation of the ColorLib
- *  "Personal Wordpress Themes" category design). Section order mirrors the
+/** Persona — personal branding website template. Section order mirrors the
  *  reference nav 1:1: fixed header → hero (+ floating action bar) → services →
  *  projects → clients → experience → contact → footer. */
 export function App() {

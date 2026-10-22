@@ -202,8 +202,8 @@ export const footerLinks: ReadonlyArray<string> = [
 ]
 
 export const footerCopyright = 'Copyright © 2026 All rights reserved | Template made with ♥ by'
-export const footerCredit = 'Colorlib'
-export const footerCreditUrl = 'https://colorlib.com'
+export const footerCredit = 'Component Dock'
+export const footerCreditUrl = 'https://www.componentdock.com/'
 
 /* ── Shared helpers ─────────────────────────────────────────────────────── */
 

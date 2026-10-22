@@ -272,4 +272,4 @@ export const footerInstagramSeeds: ReadonlyArray<string> = [
 ]
 export const footerCopyright = 'Copyright © All rights reserved'
 export const footerMadeWith = 'This template is made with ♥ by'
-export const footerCredit = 'Colorlib'
+export const footerCredit = 'Component Dock'

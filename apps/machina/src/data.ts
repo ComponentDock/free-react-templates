@@ -1,6 +1,6 @@
 /**
- * Machina content model — recreation of the ColorLib "Braxit" industrial
- * template (https://colorlib.com/wp/template/braxit/). All copy is original;
+ * Machina content model — industrial & manufacturing company page (steel
+ * greys, safety-orange accents, heavy display type). All copy is original;
  * photos are picsum-seeded placeholders.
  */
 export const BRAND_NAME = 'Machina'
@@ -229,4 +229,4 @@ export const FOOTER_SOCIALS = ['facebook', 'twitter', 'linkedin', 'instagram'] a
 
 export type SocialName = (typeof FOOTER_SOCIALS)[number]
 
-export const CREDIT_BRAND = 'Colorlib'
+export const CREDIT_BRAND = 'Component Dock'

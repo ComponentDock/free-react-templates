@@ -6,11 +6,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Machina brand palette — recreated from the ColorLib "Braxit" design
-     (live demo: https://preview.colorlib.com/theme/braxit/): brand red
-     #FF3514 (buttons with gradient to #d62d12, eyebrows, hero accent word,
-     counter digits, logo mark, "Free Quote" button) + dark navy #140C40
-     (header top bar, headings). */
+    /* Machina brand palette: brand red #FF3514 (buttons with gradient to
+     #d62d12, eyebrows, hero accent word, counter digits, logo mark, "Free
+     Quote" button) + dark navy #140C40 (header top bar, headings). */
   --color-brand: #ff3514;
   --color-brand-dark: #d62d12;
 

@@ -11,10 +11,10 @@ export function Footer() {
           </span>{' '}
           by{' '}
           <a
-            href="https://colorlib.com/wp/template/meranda/"
+            href="https://www.componentdock.com/"
             className="font-medium text-ink transition-colors hover:text-accent"
           >
-            Colorlib
+            Component Dock
           </a>
         </p>
       </div>

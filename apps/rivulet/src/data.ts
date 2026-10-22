@@ -1,9 +1,8 @@
 /**
- * Rivulet data — recreated from the ColorLib "Droppler" preview DOM
- * (https://preview.colorlib.com/theme/droppler/): same content kinds
- * (uppercase date, category links, big uppercase quote-titles, serif
- * excerpts, named testimonial quotes), titles kept close to the original
- * placeholder copy. All imagery uses seeded picsum placeholders.
+ * Rivulet data — editorial magazine content model: uppercase date, category
+ * links, big uppercase quote-titles, serif excerpts, named testimonial
+ * quotes, and neutral placeholder titles. All imagery uses seeded picsum
+ * placeholders.
  */
 
 export const siteName = 'Rivulet'

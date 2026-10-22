@@ -66,9 +66,9 @@ describe('Footer', () => {
     expect(
       screen.getByText(new RegExp(`© ${year} ${madeWithText.replace('|', '\\|')}`)),
     ).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Colorlib' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
     for (const name of footerSocials) {
       expect(screen.getByRole('link', { name: socialLabels[name] })).toBeInTheDocument()

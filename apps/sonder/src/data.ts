@@ -212,7 +212,7 @@ export const newsletterError = 'Please enter a valid email address.'
 export const newsletterSuccess = 'Thank you for subscribing!'
 
 export const copyright = '© Copyright Sonder 2038'
-export const credit = 'Site Template by Colorlib'
+export const credit = 'More templates at Component Dock'
 
 export const searchPlaceholder = 'Search...'
 export const skipLabel = 'Skip to main content'

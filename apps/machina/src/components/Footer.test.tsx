@@ -53,7 +53,7 @@ describe('Footer', () => {
     expect(screen.getByText(new RegExp(`Copyright © ${year} ${BRAND_NAME}`))).toBeInTheDocument()
     expect(screen.getByRole('link', { name: CREDIT_BRAND })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
     FOOTER_SOCIALS.forEach((social) => {
       expect(screen.getByRole('link', { name: socialLabels[social] })).toBeInTheDocument()

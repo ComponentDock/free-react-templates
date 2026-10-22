@@ -18,7 +18,7 @@ const DOCUMENT_TITLE = 'Machina — Industrial & Manufacturing'
 
 /**
  * Machina — single-page industrial & manufacturing company template
- * (recreation of ColorLib "Braxit"). Section order mirrors the source 1:1:
+ * Section order mirrors the reference layout 1:1:
  * top bar → nav → hero → about → gallery → categories → services → CTA
  * banner → testimonials → enquiry + form → blog → map → logo CTA → footer.
  */

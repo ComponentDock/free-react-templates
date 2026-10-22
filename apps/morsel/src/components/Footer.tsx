@@ -45,12 +45,12 @@ export function Footer() {
           <p className="mt-1 text-sm text-gray-500">
             Designed by{' '}
             <a
-              href="https://colorlib.com"
+              href="https://www.componentdock.com/"
               target="_blank"
               rel="noreferrer"
               className="text-brand transition-colors hover:underline"
             >
-              Colorlib
+              Component Dock
             </a>
           </p>
           <ul className="mt-6 flex items-center gap-3" aria-label="Footer social links">

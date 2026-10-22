@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
+import { footerCredit } from '../data'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
@@ -41,12 +42,12 @@ describe('Footer', () => {
     }
   })
 
-  it('renders the copyright bar with the Colorlib credit in the accent color', () => {
+  it('renders the copyright bar with the Component Dock credit in the accent color', () => {
     render(<Footer />)
 
     expect(screen.getByText('Copyright © All rights reserved')).toBeInTheDocument()
-    const credit = screen.getByRole('link', { name: 'Colorlib' })
-    expect(credit).toHaveAttribute('href', 'https://colorlib.com')
+    const credit = screen.getByRole('link', { name: footerCredit })
+    expect(credit).toHaveAttribute('href', 'https://www.componentdock.com/')
     expect(credit.className).toContain('text-accent')
   })
 })

@@ -9,7 +9,7 @@ import {
 } from '../data'
 
 /** Dark navy centered footer: wordmark, nav links, social-free copyright line
- *  with a heart and a paraphrased Colorlib credit link. */
+ *  with a heart and the Component Dock credit link. */
 export function Footer() {
   return (
     <footer className="bg-navy py-14 text-center">

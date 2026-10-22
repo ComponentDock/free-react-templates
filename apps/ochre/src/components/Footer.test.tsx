@@ -40,7 +40,7 @@ describe('Footer', () => {
     expect(screen.getByRole('button', { name: 'Join newsletter' })).toBeInTheDocument()
   })
 
-  it('renders the copyright line with the Colorlib credit and social links', () => {
+  it('renders the copyright line with the Component Dock credit and social links', () => {
     render(<Footer />)
 
     expect(screen.getByText(new RegExp(creditPrefix))).toBeInTheDocument()

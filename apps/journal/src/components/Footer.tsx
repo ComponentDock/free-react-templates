@@ -3,7 +3,7 @@ import { footerCopyright, footerCredit, footerCreditUrl, footerLinks, headerSoci
 import { BrandIcon } from './BrandIcon'
 
 /** Centered footer: uppercase nav links, six social icons, and a copyright
- *  bar with a heart and the Colorlib credit (paraphrased). */
+ *  bar with a heart and the Component Dock credit link. */
 export function Footer() {
   return (
     <footer className="py-[60px] text-center">

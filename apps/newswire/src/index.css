@@ -3,9 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Newswire brand palette — recreated from the ColorLib "Meranda" template
-     (https://colorlib.com/wp/template/meranda/), tokens extracted from the
-     live preview's css/style.css:
+  /* Newswire brand palette:
      - accent lime #8bc34a (.caption/.more links, active nav underline,
        owl active dot, button hover)
      - ink #000 (site-logo, headlines, .btn-secondary bg) · body #808080

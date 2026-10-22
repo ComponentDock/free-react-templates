@@ -3,9 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Glyph brand palette — recreated from the ColorLib "Opium" template
-     (https://colorlib.com/wp/template/opium/), tokens extracted from the live
-     preview's css/style.css:
+  /* Glyph brand palette:
      - accent purple-blue #6f6fff (nav link hover/active, widget title bar,
        blog button hover, footer links + heart, sub-btn bg, social hovers)
      - ink #000 (headings, nav links, blog titles, active pagination page)

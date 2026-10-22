@@ -90,7 +90,12 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-8 text-center text-xs text-white/50 sm:flex-row sm:text-left">
           <p>Copyright © 2026 Foyer. All rights reserved.</p>
-          <p>recreation of ColorLib Interior</p>
+          <p>
+            More templates at{' '}
+            <a href="https://www.componentdock.com/" className="transition-colors hover:text-white">
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>

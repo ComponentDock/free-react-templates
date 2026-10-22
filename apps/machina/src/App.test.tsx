@@ -44,6 +44,6 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: 'Need to make an enquiry?' })).toBeInTheDocument()
     expect(screen.getByTitle('Machina location map')).toBeInTheDocument()
     expect(screen.getAllByRole('link', { name: /learn more/i }).length).toBeGreaterThanOrEqual(2)
-    expect(screen.getByRole('link', { name: 'Colorlib' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toBeInTheDocument()
   })
 })

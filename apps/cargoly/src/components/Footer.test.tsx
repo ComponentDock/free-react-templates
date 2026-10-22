@@ -54,14 +54,14 @@ describe('Footer', () => {
     expect(input).toHaveValue('ada@cargoly.com')
   })
 
-  it('renders the copyright credit with the red heart and Colorlib link', () => {
+  it('renders the copyright credit with the red heart and Component Dock link', () => {
     render(<Footer />)
 
     expect(screen.getByText(/Copyright © \d{4} Cargoly/)).toBeInTheDocument()
     expect(screen.getByLabelText('love')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: CREDIT_BRAND })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
   })
 })

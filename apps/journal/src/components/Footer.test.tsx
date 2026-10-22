@@ -17,7 +17,7 @@ describe('Footer', () => {
     }
   })
 
-  it('renders the copyright line with the Colorlib credit link', () => {
+  it('renders the copyright line with the Component Dock credit link', () => {
     render(<Footer />)
 
     expect(screen.getByText(footerCopyright)).toBeInTheDocument()

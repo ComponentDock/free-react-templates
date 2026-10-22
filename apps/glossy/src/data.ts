@@ -1,9 +1,8 @@
 /**
- * Glossy data — recreated from the ColorLib "Eden" preview DOM
- * (https://preview.colorlib.com/theme/eden/): same content kinds (coral
- * uppercase category links, Josefin Sans card headings, date/author meta,
- * comment/like/view counts), titles kept close to the original placeholder
- * copy. All imagery uses seeded picsum placeholders.
+ * Glossy data — editorial magazine content model: coral uppercase category
+ * links, Josefin Sans card headings, date/author meta, comment/like/view
+ * counts, and neutral placeholder titles. All imagery uses seeded picsum
+ * placeholders.
  */
 
 export const siteName = 'Glossy.'

@@ -17,8 +17,7 @@ const emailSchema = z.string().email(newsletterError)
 
 /** Dark footer (#191919): wordmark, short blurb, newsletter form with zod
     validation + success state, and a bottom bar with copyright and a
-    paraphrased ColorLib credit (reference: footer.bg-191 on the Quitelight
-    preview). */
+    Component Dock credit link. */
 export function Footer() {
   const [email, setEmail] = useState('')
   const [error, setError] = useState<string | null>(null)
@@ -79,7 +78,7 @@ export function Footer() {
       ) : null}
       <p className="mx-auto mt-12 max-w-7xl border-t border-white/10 px-4 pt-6 text-xs">
         {copyright} ·{' '}
-        <a href="https://colorlib.com" className="transition-colors hover:text-white">
+        <a href="https://www.componentdock.com/" className="transition-colors hover:text-white">
           {credit}
         </a>
       </p>

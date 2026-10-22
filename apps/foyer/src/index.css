@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Foyer brand gold — from the original ColorLib "Interior" preview
-     (css/main.css): #c6b069 buttons, accents, headings. */
+    /* Foyer brand gold: #c6b069 buttons, accents, headings. */
   --color-brand: #c6b069;
 
   /* Deeper gold for hover states. */

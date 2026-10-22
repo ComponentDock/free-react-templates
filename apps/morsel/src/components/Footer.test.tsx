@@ -11,9 +11,9 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: 'Morsel' })).toBeInTheDocument()
     expect(screen.getByText(/Morsel @ 2026\. All rights reserved/)).toBeInTheDocument()
     expect(screen.getByText('Designed by')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Colorlib' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
       'href',
-      'https://colorlib.com',
+      'https://www.componentdock.com/',
     )
     for (const label of Object.values(socialLabels)) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()

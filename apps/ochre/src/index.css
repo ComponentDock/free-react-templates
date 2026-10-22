@@ -3,9 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Ochre brand palette — recreated from the ColorLib "Lifeleck" template
-     (https://colorlib.com/wp/template/lifeleck/), tokens extracted from the
-     live preview's css/style.css:
+  /* Ochre brand palette:
      - brand rust-orange #fc4600 (category lines, load-more button bg;
        hover #2a2a2a)
      - dark #2a2a2a (headings, pagination links) · footer bg #f7f7f7

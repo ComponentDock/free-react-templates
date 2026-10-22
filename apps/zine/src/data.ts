@@ -83,6 +83,6 @@ export const loadMoreLabel = 'Load more articles'
 
 export const footerSocials = ['Twitter', 'Linkedin', 'Dribbble', 'Instagram'] as const
 
-export const colorlibLabel = 'Colorlib'
+export const creditLabel = 'Component Dock'
 export const creditPrefix = 'All rights reserved | This template is made with'
-export const creditBrand = 'Colorlib'
+export const creditBrand = 'Component Dock'

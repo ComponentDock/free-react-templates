@@ -73,7 +73,7 @@ export function Footer() {
           <p>
             {footerMadeWith} <Heart className="inline h-4 w-4 text-accent" aria-hidden="true" />{' '}
             <a
-              href="https://colorlib.com"
+              href="https://www.componentdock.com/"
               target="_blank"
               rel="noreferrer"
               className="text-accent transition-colors hover:text-white"

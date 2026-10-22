@@ -1,9 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Rivulet brand palette — recreated from the ColorLib "Droppler" template
-     (https://colorlib.com/wp/template/droppler/), tokens extracted from the
-     live preview's style.css + css/common.css:
+  /* Rivulet brand palette:
      - navy #2b3344 (hero + no-image posts) · overlay #343451 (post image
        overlay) · footer #191919 · quote glyph #3b455b
      - muted #757B88 (dominant gray, 7 usages) · text #ffffff
