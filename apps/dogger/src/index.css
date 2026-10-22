@@ -5,10 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dogger brand sage green — from the original ColorLib "Dogger"
-     stylesheet (css/style.css): --primary, .btn-primary, navbar
-     active/hover, .hover-1 overlay, accordion open toggle, testimonial
-     blockquote background, trainers + pricing section background. */
+  /* Dogger brand sage green — from the reference design (css/style.css):
+     --primary, .btn-primary, navbar active/hover, .hover-1 overlay,
+     accordion open toggle, testimonial blockquote background, trainers +
+     pricing section background. */
   --color-brand: #a2c0be;
 
   /* On-brand text tones: body text and headings on the brand background. */

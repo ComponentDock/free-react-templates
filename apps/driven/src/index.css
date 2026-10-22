@@ -5,11 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Driven brand colors — from the ColorLib "Sasu" preview
-     (https://preview.colorlib.com/theme/sasu/ + css/style.css):
-     a digital-marketing app landing theme with a blue #0ab6ff primary,
-     a blue button gradient (#00b4ff -> #57ddff), light section
-     backgrounds #f9f9ff / #f0e9ff, and muted text #999999 / #7f7f7f. */
+  /* Driven brand colors — from the reference stylesheet: a
+     digital-marketing app landing theme with a blue #0ab6ff primary, a
+     blue button gradient (#00b4ff -> #57ddff), light section backgrounds
+     #f9f9ff / #f0e9ff, and muted text #999999 / #7f7f7f. */
   --color-primary-50: #e8f9ff;
   --color-primary-100: #c9f0ff;
   --color-primary-200: #9ce5ff;
@@ -21,22 +20,22 @@
   --color-primary-800: #0a577d;
   --color-primary-900: #0e4968;
 
-  /* Button gradient end (ColorLib .btn_1 gradient #00b4ff -> #57ddff). */
+  /* Button gradient end (.btn_1 gradient #00b4ff -> #57ddff). */
   --color-accent-300: #7fe0ff;
   --color-accent-400: #57ddff;
   --color-accent-500: #38c9f2;
 
-  /* Light section backgrounds (ColorLib .feature_part / .cta_part). */
+  /* Light section backgrounds (.feature_part / .cta_part). */
   --color-mist: #f9f9ff;
   --color-lavender: #f0e9ff;
 
-  /* Muted copy (ColorLib #999999 / #7f7f7f). */
+  /* Muted copy (#999999 / #7f7f7f). */
   --color-smoke: #7f7f7f;
 
   --color-ink: #1a1a1a;
 
   /* Poppins (headings) + Roboto (body) via Google Fonts <link> in
-     index.html — matching the ColorLib font pairing. */
+     index.html — matching the reference font pairing. */
   --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }
