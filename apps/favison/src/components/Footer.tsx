@@ -99,7 +99,13 @@ export function Footer() {
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-800 pt-8 text-sm text-gray-500 sm:flex-row sm:justify-between">
           <p>Copyright © {new Date().getFullYear()} Favison. All rights reserved.</p>
           <p>
-            Made with <span aria-hidden="true">♥</span> by Favison
+            Made with <span aria-hidden="true">♥</span> by{' '}
+            <a
+              href="https://www.componentdock.com/"
+              className="text-primary-400 underline-offset-4 hover:underline"
+            >
+              Component Dock
+            </a>
           </p>
         </div>
       </div>

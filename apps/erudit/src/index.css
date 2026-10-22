@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Erudit brand palette — recreated from ColorLib Knowledge design (primary #4586FF blue). */
+  /* Erudit brand palette — measured from the reference design (primary #4586FF blue). */
   --color-sky-50: #eff6ff;
   --color-sky-100: #dbeafe;
   --color-sky-200: #bfdbfe;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Fabricate brand palette — recreated from the ColorLib "Industry" design
+  /* Fabricate brand palette — measured from the reference design
      (css/main.css): yellow #fab700 primary/buttons, paper #f9f9ff sections. */
   --color-brand: #fab700;
   --color-brand-dark: #e0a300;

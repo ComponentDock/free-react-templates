@@ -1,8 +1,8 @@
-/* All copy/content for Fable, extracted from the ColorLib "Stories" live
-   preview (https://preview.colorlib.com/theme/stories/) on 2026-08-11.
-   Text is kept close to the original kind of content; the brand name is
-   replaced with "Fable". No ColorLib assets are copied — images are seeded
-   picsum placeholders. */
+/* All copy/content for Fable, measured from the reference design's live
+   preview on 2026-08-11.
+   Text keeps the same kind of content; the brand name is replaced with
+   "Fable". No third-party assets are copied — images are seeded picsum
+   placeholders. */
 
 export const siteName = 'Fable'
 export const skipLabel = 'Skip to main content'

@@ -72,7 +72,13 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-16 border-t border-line-300 pt-8 text-center text-sm text-gray-500 dark:border-gray-700">
-          Copyright © {year} All rights reserved | Made with ♥ by Free React Templates
+          Copyright © {year} All rights reserved | Made with ♥ by{' '}
+          <a
+            href="https://www.componentdock.com/"
+            className="text-brand-500 underline-offset-4 hover:underline"
+          >
+            Component Dock
+          </a>
         </div>
       </div>
     </footer>

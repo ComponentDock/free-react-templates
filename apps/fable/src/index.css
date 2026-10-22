@@ -2,10 +2,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Fable brand palette — recreated from the ColorLib "Stories" preview
-   (https://preview.colorlib.com/theme/stories/) live DOM + css/style.css:
-   brand orange #fd5f00 (link hover, active nav item, .btn-primary
-   background), accent yellow #ffd615 (logo accent span, hero text panel,
+/* Fable brand palette — measured from the reference design (live DOM +
+   css/style.css): brand orange #fd5f00 (link hover, active nav item,
+   .btn-primary background), accent yellow #ffd615 (logo accent span, hero
+   text panel,
    blog card subheadings, 10px square heading dot, contact icons), counter
    icon gradient #6b75ff → #59b7ff, body #333 on white, footer #1f1f1f. */
 @theme {

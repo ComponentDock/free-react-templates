@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Feature brand palette — recreated from the ColorLib "Article" template.
+  /* Feature brand palette — measured from the reference design.
      Bright orange #F6490D (links, active nav, hero badge, pagination,
      buttons, sidebar underline), gold #F7AF1D accent, body #333333,
      headings #4d4d4d, nav rgba(0,0,0,0.7), meta #808080, surfaces #fff /
