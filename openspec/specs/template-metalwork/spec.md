@@ -8,6 +8,22 @@ ColorLib free "Industrial" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
 CSS 4 + TypeScript.
 
+## Reference drift (recorded 2026-10-22)
+
+⚠️ **Reference drift:** the demo at this URL was redesigned. On 2026-10-22
+`https://preview.colorlib.com/theme/industrial/` serves the **v3.0.0 kit
+rebuild** (`?v=3.0.0` query-stringed `css/style.min.css` + `kit/*.css`,
+lucide-style inline SVG icon sprite, `#202326` footer) — a different design
+from the Bootstrap-4 / Free-Template.co page this prep and `apps/metalwork`
+follow (Oxygen + Montserrat, `#fd5f00` brand, "About The Industrial" footer),
+which is the design the TEMPLATES.md screenshot records. Every pad/colour/
+copy claim below therefore refers to **that earlier release**, not to the
+sheet now served at the URL; a re-prep against today's sheet would be a
+different template. Verified live: the new sheet's `.site-footer` is
+`background:#202326;padding:80px 0 25px` (60px 0 24px ≤767 px) and its
+`.section` ladder is `105px / 80px / 70px / 20px` — quoted here only so the
+drift is auditable, NOT as a token target.
+
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Industrial" — steel fabrication / industrial

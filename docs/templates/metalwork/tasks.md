@@ -3,6 +3,14 @@
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-metalwork`.
 
+> ⚠️ **Reference drift (2026-10-22)** — the demo at
+> `https://preview.colorlib.com/theme/industrial/` was redesigned: it now
+> serves a v3.0.0 kit rebuild (dark `#202326` footer, lucide icon sprite)
+> rather than the Bootstrap-4 / Free-Template.co page described below and in
+> `openspec/specs/template-metalwork/spec.md`. The numbers here belong to the
+> earlier release (the one the TEMPLATES.md screenshot shows); do **not**
+> re-read tokens from today's sheet.
+
 ## Design notes (replication findings)
 
 - **Original:** ColorLib "Industrial" — steel fabrication / industrial

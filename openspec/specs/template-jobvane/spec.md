@@ -28,7 +28,7 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
 | Font family      | `Nunito Sans`, Arial, sans-serif | Google Font — rounded sans-serif                                      |
 | Icons            | lucide-react in React version    |
 | Button radius    | `0.25rem` (Bootstrap default)    | Standard rounded corners                                              |
-| Section padding  | `4rem 0` (`.ftco-section`)       | Consistent vertical rhythm                                            |
+| Section padding  | `7em 0` (`.ftco-section`; `6em 0` below the breakpoint)           | Consistent vertical rhythm                                            |
 
 ## Requirements
 

@@ -102,7 +102,9 @@ Preview URL: https://preview.colorlib.com/theme/yummy/
      min-width 205px); then `div.social-links` — 5 × `a` (inline-block,
      margin-right 35px, mb 15px): icon + `span` label (Instagram, Pinterest,
      Facebook, Twitter, Youtube).
-   - row: `col-lg-12` `div.copyright-text` (14px `#b8c1d0`, padding 50px 8px)
+   - row: `col-lg-12` `div.copyright-text` (14px `#b8c1d0`,
+     `.footer-section .copyright-text{padding-top:50px; padding-bottom:8px}` —
+     asymmetric, NOT the `50px 8px` shorthand)
      — "Copyright © <year> All rights reserved | This template is made with
      <heart> by Colorlib" (original attribution).
 7. `div.search-model` — fullscreen overlay (`h-100 d-flex

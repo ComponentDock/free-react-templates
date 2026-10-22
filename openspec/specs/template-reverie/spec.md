@@ -486,7 +486,8 @@ repeat(3,minmax(0,1fr)); grid-auto-rows:1px; column-gap:15px`) of **six** tiles
 
 - **Given** the counter band renders
 - **When** it scrolls into view
-- **Then** it is a full-bleed photo band (`spad` with `padding:100px 0 300px`) with
+- **Then** it is a full-bleed photo band (`spad` with `padding:100px 0`; the separate
+  `.counter{padding-bottom:300px}` rule adds the deep bottom edge) with
   **four** centred items, each a line-art icon over a large `h2` number
   (48 px, `#111`, Cormorant Garamond) and a label
 - **And** the labels/values are: 8365 Photos, 568 Happy Couples, 849 Toasts,

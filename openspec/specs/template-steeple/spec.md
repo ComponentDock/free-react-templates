@@ -115,7 +115,8 @@ and content types (no ColorLib assets copied).
        Fridays at Sunset - 7:30PM / Saturdays at 8:00AM - Sunset"
      - **Get In Touch** (icon-comments): "Email: info@yoursite.com / Phone:
        (123) 3240-345-9348"
-  8. `footer.site-footer` (bg `#4d667d`, padding 4em 0, text
+  8. `footer.site-footer` (bg `#4d667d`, padding **80px 0 35px**, `55px`
+      below the breakpoint, text
      rgba(255,255,255,0.5)):
      - `h3.footer-heading.mb-4.text-white` ×4 (20px white):
        - **About** (col-md-4): paragraph + `a.btn.btn-primary.pill.text-white.px-4`

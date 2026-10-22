@@ -157,7 +157,9 @@ rgba(255,255,255,.5)` inset 20px (via `:before`): panel 1 bg
       (placeholder "Email address") + `textarea.form-control` (placeholder
       "Write your message.", rows 10) + `input[type=submit].btn.btn-block
 .btn-primary.text-white.py-3.px-5` **"Send Message"** (orange fill).
-  12. Footer `footer.site-footer` (bg **`#333333`**, padding 4em 0 8em) —
+  12. Footer `footer.site-footer` (bg **`#333333`**, padding **8em 0** above
+       767 px, `4em 0` below — the sheet declares `padding: 4em 0` and a
+       `@media (min-width: 768px)` rule raising it to `8em 0`) —
       `div.container` > `div.row`: left `div.col-md-6` (inner row:
       `div.col-md-8` — H2 `footer-heading.mb-4` **About Us** (16px, white,
       uppercase, letter-spacing .2rem) + blurb; `div.col-md-4.ml-auto` —

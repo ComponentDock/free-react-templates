@@ -82,7 +82,7 @@ implementer ships it and the deploy is live.
 
 ## 6. Counter band
 
-- [ ] `Counters.tsx` — full-bleed photo band (`padding:100px 0 300px`).
+- [ ] `Counters.tsx` — full-bleed photo band (`spad` = `padding:100px 0`; a second `.counter{padding-bottom:300px}` rule adds the deep bottom edge).
 - [ ] Four items (icon + number + label): 8365 Photos, 568 Happy Couples,
       849 Toasts, 2574 Wedding Cakes.
 - [ ] `IntersectionObserver` count-up runs **once**; reduced-motion shows the

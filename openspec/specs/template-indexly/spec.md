@@ -38,7 +38,7 @@ https://preview.colorlib.com/theme/browse/css/style.css:
 | Button padding | `18px 30px` | `.btn-md` |
 | Search wrap shadow | `0 2px 30px -5px rgba(0,0,0,0.2)` | Floating search bar |
 | Section padding | `5em 0` | `.site-section` |
-| Footer padding | `4em 0` | `.site-footer` |
+| Footer padding | `75px 0 0` (`.site-footer`; `padding-top: 50px` in the responsive rule) | `.site-footer` |
 
 ### Visual notes from screenshot
 

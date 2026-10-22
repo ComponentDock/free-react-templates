@@ -97,7 +97,7 @@ margin-bottom: 30px` (5-across desktop); `div.cf-item-pic > img`
      padding 17px 40px, min-width 205px, cursor pointer); then
      `div.social-links`: 5 × `a` (inline-block, margin-right 35px, mb 15px)
      — icon + `span` label: Instagram, Pinterest, Facebook, Twitter, Youtube.
-   - `div.copyright-text` (14px `#b8c1d0`, padding 50px 8px): "Copyright ©
+   - `div.copyright-text` (14px `#b8c1d0`, `padding-top:50px; padding-bottom:8px` — asymmetric, not `50px 8px`): "Copyright ©
      <year> All rights reserved | This template is made with <heart> by
      Colorlib" → original attribution.
 

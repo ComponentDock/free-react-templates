@@ -68,8 +68,8 @@ Arial, sans-serif`, weight 400/500/700 (`.heading-section h2` 34px → 28px
     mint text. Used for "Download Sermons".
   - Footer newsletter `.btn-primary` — white bg/white 2px border (unused on
     index — footer has no form on this template).
-- **Section paddings:** `.ftco-section` default `padding: 7em 0`
-  (mobile 6em); `ftco-no-pt`/`ftco-no-pb` zero out top/bottom (ministries
+- **Section paddings:** `.ftco-section` default `padding: 6em 0`
+  (re-declared `6em 0` in the responsive rule — no 7em anywhere); `ftco-no-pt`/`ftco-no-pb` zero out top/bottom (ministries
   section is `no-pt no-pb`; events section is `no-pt`; footer is
   `ftco-footer ftco-bg-dark ftco-section` with `padding: 7em 0 4em 0`).
 

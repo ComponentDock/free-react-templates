@@ -40,7 +40,7 @@ cards, a newsletter subscribe form, and a dark footer with columns.
 |                  | `#5AAC4E` on hover (scaleX animation)  |                                         |
 | Card radius      | `8px`                                   | Service cards, blog cards               |
 | Hero height      | Full viewport (slider area)             | `.slider-area` background image         |
-| Section padding  | `40px` (`.section-padding40`)          | About, testimonial areas                |
+| Section padding  | `100px` (`.section-padding40`; 65px top / 70px bottom in the responsive rule) | About, testimonial areas |
 
 ## Visual Description (from live preview DOM + CSS analysis)
 

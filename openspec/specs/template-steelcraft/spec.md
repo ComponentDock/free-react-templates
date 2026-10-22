@@ -82,8 +82,8 @@ for tokens — the preview slug matches the TEMPLATES.md slug, no alias).
 - **Testimonial:** `.testimonial-area` with centered `.single-testimonial`
   cards — quote text, `.testimonial-founder` (name + role); carousel dots
   (`.h1-testimonial-active.dot-style`).
-- **Section rhythm:** `.categories-area` padding `100px 70px` (top/bottom
-  edge), `.wantToWork-area` dark band with 5px `#E61818` top border,
+- **Section rhythm:** `.categories-area` `padding-top:100px; padding-bottom:70px`
+  (`60px` / `39px` in the responsive rule), `.wantToWork-area` dark band with 5px `#E61818` top border,
   `.footer-form input` white bg + `1px solid #E61818` border, radius 0,
   height 43px.
 - **Footer:** light; `h4` headings `#1A1A1A` 20px/600, body `#5E5E5E` 16px

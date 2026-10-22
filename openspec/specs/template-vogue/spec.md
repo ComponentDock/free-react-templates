@@ -108,7 +108,9 @@ h4`, `.single-box-item .box-text h2` (48-60px), nav links + hover underline,
   same "2019 Lookbook." markup); stylesheet
   `https://preview.colorlib.com/theme/violet/css/style.css` saved to
   `/tmp/violet-style.css` (37 KB).
-- **Header** `header.header-section` — height 104px, padding 38px 24px 45px;
+- **Header** `header.header-section` — height 104px, padding `38px 45px 24px`
+  (top 38 / sides 45 / bottom 24 — the sheet declares the four sides
+  individually; there is no 45px bottom edge);
   `.inner-header .logo` left (source image `img/logo.png` reads "Violet
   Template" — recreate as TEXT logo "Vogue" + "Online Store" caption, no
   asset needed); `.main-menu` centered-right (`float: right; margin-right:

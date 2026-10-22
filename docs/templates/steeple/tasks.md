@@ -74,7 +74,7 @@
      **Service Times** (icon-clock-o): "Wednesdays at 6:30PM - 7:30PM / Fridays
      at Sunset - 7:30PM / Saturdays at 8:00AM - Sunset"; **Get In Touch**
      (icon-comments): "Email: info@yoursite.com / Phone: (123) 3240-345-9348".
-  8. `footer.site-footer` (bg `#4d667d`, padding 4em 0): col-md-4 **About**
+  8. `footer.site-footer` (bg `#4d667d`, padding 80px 0 35px; 55px ≤767 px): col-md-4 **About**
      (paragraph + `a.btn.btn-primary.pill.text-white.px-4` "Read More");
      col-md-6 split: **Quick Menu** (About, Services, Approach, Sustainability,
      News, Careers) + **Ministries** (Children, Women, Bible Study, Church,
@@ -103,7 +103,7 @@
   - `.img-border`: gold frame 97% h/w bottom-right; hover -30px (sm -10px)
     expand + image -5px shift. `.image-play .icon-wrap`: 100px white circle,
     40px black play icon.
-  - Spacing: `.site-section` 3em 0 (7em ≥768px); footer 4em 0;
+  - Spacing: `.site-section` 3em 0 (7em ≥768px); footer 80px 0 35px (55px ≤767 px);
     quick-contact py-5.
 - **Implementation notes:**
   - Hero slides have no dark overlay class in the DOM, but the white headline
