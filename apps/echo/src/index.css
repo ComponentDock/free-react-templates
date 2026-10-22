@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Echo brand palette — recreated from the ColorLib "Beckham" design
+  /* Echo brand palette — measured from the reference design
      (css/style.css): mint green #79efb4 accents, dark #1a1a1a sidebar,
      #222 counter/footer, white content areas. */
   --color-brand: #79efb4;

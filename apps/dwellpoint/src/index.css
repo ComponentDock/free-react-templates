@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — recreated from the ColorLib real estate "Sel" design
+  /* Brand palette — measured from the reference design
      (brand red #f5204b, dark footer #222, body text #777). */
   --color-crimson-50: #fef2f4;
   --color-crimson-100: #fde3e8;

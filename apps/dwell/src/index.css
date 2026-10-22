@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dwell brand palette — recreated from the ColorLib "Apart" design (live
-     preview: https://preview.colorlib.com/theme/apart/): brand tan #e3c4a8
+  /* Dwell brand palette — measured from the reference design: brand tan #e3c4a8
      (buttons, underlines, card-title highlights, logo dot, social strip),
      deeper tan #ddb795 (social hover), yellow #eec60a (social icon hover). */
   --color-brand: #e3c4a8;

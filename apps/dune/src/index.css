@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dune brand palette — recreated from the ColorLib "Safario" design:
+  /* Dune brand palette — measured from the reference design:
      indigo/purple #6059f6 accents/buttons, headings #2a2a2a,
      body text #888888, light bg #f8f8ff. */
   --color-brand: #6059f6;

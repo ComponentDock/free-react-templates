@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Edifica brand — from the ColorLib "Homebuilder" preview
-     (https://preview.colorlib.com/theme/homebuilder/ + css/style.css):
+  /* Edifica brand — measured from the reference design:
      a construction/home-builder theme with a golden-amber #fdbe34 primary,
      dark navy #00043c navbar, blue #007bff accent (testimony section),
      dark footer #252525, and Poppins font. */
@@ -19,7 +18,7 @@
   --color-primary-800: #7a5a00;
   --color-primary-900: #4d3800;
 
-  /* Accent blue — ColorLib testimony section #007bff. */
+  /* Accent blue — reference section accent #007bff. */
   --color-accent-400: #007bff;
   --color-accent-500: #0069d9;
   --color-accent-600: #0056b3;
@@ -30,10 +29,10 @@
   /* Footer dark (#252525). */
   --color-charcoal: #252525;
 
-  /* Body text (ColorLib "gray"). */
+  /* Body text (reference gray). */
   --color-smoke: #808080;
 
-  /* Headings (ColorLib rgba(0,0,0,0.8)). */
+  /* Headings (reference rgba(0,0,0,0.8)). */
   --color-ink: rgba(0, 0, 0, 0.8);
 
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
