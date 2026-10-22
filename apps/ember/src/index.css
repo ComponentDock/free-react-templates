@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Ember brand palette — recreated from the ColorLib "Dingo" design
+  /* Ember brand palette — measured from the reference design
      (css/style.css): orange #ff6426 accents/buttons, dark #e04000 hover,
      dark bg #2c3033 headings/footer, light bgs #f9f9ff / #f0e9ff / #f6f5f1. */
   --color-brand: #ff6426;

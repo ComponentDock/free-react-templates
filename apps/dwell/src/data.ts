@@ -1,5 +1,6 @@
-/** Copy + content data for the Dwell apartment-rental landing (recreation of
-    ColorLib "Apart"). Kept side-effect free so every entry is unit-testable. */
+/** Copy + content data for the Dwell apartment-rental landing (measured
+    from the reference design). Kept side-effect free so every entry is
+    unit-testable. */
 
 export interface NavItem {
   label: string

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Endpoint brand colors — from the ColorLib "Apiforge" demo stylesheet
+  /* Endpoint brand colors — from the reference stylesheet
      (_astro/Base.*.css): primary orange (Tailwind orange scale,
      #f97316 orange-500 buttons/accents, #ea580c orange-600 hover),
      dark surfaces #030712/#111827/#1f2937, light surfaces #f9fafb/#f3f4f6,

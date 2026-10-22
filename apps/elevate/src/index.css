@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Elevate brand palette — coaching/consulting green accent #81d742
-     from the ColorLib Life Coaching design. */
+  /* Elevate brand palette — coaching/consulting green accent #81d742,
+     measured from the reference design. */
   --color-brand: #81d742;
   --color-brand-dark: #6bc034;
 

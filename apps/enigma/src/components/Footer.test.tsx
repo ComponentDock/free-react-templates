@@ -30,7 +30,7 @@ describe('Footer', () => {
     expect(link).toHaveAttribute('target', '_blank')
   })
 
-  it('does not reference ColorLib', () => {
+  it('does not reference the source design', () => {
     render(<Footer />)
     expect(screen.queryByText(/colorlib/i)).not.toBeInTheDocument()
   })

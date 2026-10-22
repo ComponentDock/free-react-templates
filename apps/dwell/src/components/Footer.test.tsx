@@ -74,7 +74,7 @@ describe('Footer', () => {
     expect(screen.queryByLabelText('Email address')).not.toBeInTheDocument()
   })
 
-  it('renders the copyright bar with the Dwell branding (no Colorlib credit)', () => {
+  it('renders the copyright bar with the Dwell branding (no external design credit)', () => {
     render(<Footer />)
 
     expect(screen.getByText(COPYRIGHT)).toBeInTheDocument()

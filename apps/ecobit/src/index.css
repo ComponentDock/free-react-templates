@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Ecobit brand colors — from the ColorLib "Ecobit" stylesheet
+  /* Ecobit brand colors — from the reference stylesheet
      (style.css): primary orange #ff4800 (57 refs — buttons, accents,
      h1 span), light section backgrounds #f9f9ff and #f0e9ff, dark
      heading text #182028, muted body text #888888/#999999, secondary
