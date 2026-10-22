@@ -12,6 +12,15 @@ Recreation of ColorLib "Balay" — a construction/architecture company template 
 
 ## Design Tokens
 
+<!-- type-rhythm-reverify:2026-10-22 -->
+> **Type-rhythm re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3`/`?v=4` restyle at https://preview.colorlib.com/theme/balay/), so the line-height / letter-spacing values below no longer match the rules the live sheet paints. Compare with the screenshot before copying a number.
+>
+> Drift found (prep vs the live sheet today):
+> - `.heading-meta` `letter-spacing` — the prep states **2px**, the live sheet paints **5px**
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-rhythm-reverify -->
+
 Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 
 ### Colors

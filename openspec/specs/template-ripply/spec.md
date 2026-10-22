@@ -40,6 +40,17 @@ colors, typography, and content types (no ColorLib assets copied).
 
 ## Design reference (replication findings)
 
+<!-- type-rhythm-reverify:2026-10-22 -->
+> **Type-rhythm re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3`/`?v=4` restyle at https://preview.colorlib.com/theme/drimo/), so the line-height / letter-spacing values below no longer match the rules the live sheet paints. Compare with the screenshot before copying a number.
+>
+> Drift found (prep vs the live sheet today):
+> - `.fa-search` — in NO live selector any more (the kit renamed the markup class, so the rule the prep quotes is gone)
+> - `.slider_btn` — in NO live selector any more (the kit renamed the markup class, so the rule the prep quotes is gone)
+> - `.gradient_bg_btn` — in NO live selector any more (the kit renamed the markup class, so the rule the prep quotes is gone)
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-rhythm-reverify -->
+
 - **Original:** ColorLib "Drimo" — Free Unique Landing Page Website
   Template (source: https://colorlib.com/wp/template/drimo/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 378; duplicate rows at

@@ -24,6 +24,15 @@ colors, typography, and content types (no ColorLib assets copied).
 
 ## Design reference (replication findings)
 
+<!-- type-rhythm-reverify:2026-10-22 -->
+> **Type-rhythm re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3`/`?v=4` restyle at https://preview.colorlib.com/theme/photographer/), so the line-height / letter-spacing values below no longer match the rules the live sheet paints. Compare with the screenshot before copying a number.
+>
+> Drift found (prep vs the live sheet today):
+> - `a` `line-height` — the prep states **1.5**, the live sheet paints **1.4**
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-rhythm-reverify -->
+
 - **Original:** ColorLib "Photographer" — photography portfolio website
   template (source: https://colorlib.com/wp/template/photographer/; listed in
   TEMPLATES.md under Bootstrap).

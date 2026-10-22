@@ -26,6 +26,17 @@ drift is auditable, NOT as a token target.
 
 ## Design reference (replication findings)
 
+<!-- type-rhythm-reverify:2026-10-22 -->
+> **Type-rhythm re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3`/`?v=4` restyle at https://preview.colorlib.com/theme/industrial/), so the line-height / letter-spacing values below no longer match the rules the live sheet paints. Compare with the screenshot before copying a number.
+>
+> Drift found (prep vs the live sheet today):
+> - `.block-41-heading` — in NO live selector any more (the kit renamed the markup class, so the rule the prep quotes is gone)
+> - `.post-meta` — in NO live selector any more (the kit renamed the markup class, so the rule the prep quotes is gone)
+> - `.block-41-heading` — in NO live selector any more (the kit renamed the markup class, so the rule the prep quotes is gone)
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-rhythm-reverify -->
+
 - **Original:** ColorLib "Industrial" — steel fabrication / industrial
   company site, "Free Website Template by Free-Template.co" (Bootstrap 4,
   the original is the Free-Template.co house style; source:

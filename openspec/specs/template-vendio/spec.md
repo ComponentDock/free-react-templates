@@ -13,6 +13,15 @@ PR.
 
 ## Design reference (replication findings)
 
+<!-- type-rhythm-reverify:2026-10-22 -->
+> **Type-rhythm re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3`/`?v=4` restyle at https://preview.colorlib.com/theme/sublime/), so the line-height / letter-spacing values below no longer match the rules the live sheet paints. Compare with the screenshot before copying a number.
+>
+> Drift found (prep vs the live sheet today):
+> - `.home_slider_title` `line-height` — the prep states **2.14**, the live sheet paints **1.2**
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-rhythm-reverify -->
+
 - **Original:** ColorLib "Sublime" — free e-commerce / online-shop website
   HTML template (page title "Sublime"; source:
   https://colorlib.com/wp/template/sublime/). Single page: fixed white header

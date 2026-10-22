@@ -15,6 +15,15 @@ https://colorlib.com/wp/template/wiser/
 
 ## Design reference (replication findings)
 
+<!-- type-rhythm-reverify:2026-10-22 -->
+> **Type-rhythm re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3`/`?v=4` restyle at https://preview.colorlib.com/theme/wiser/), so the line-height / letter-spacing values below no longer match the rules the live sheet paints. Compare with the screenshot before copying a number.
+>
+> Drift found (prep vs the live sheet today):
+> - `p` `line-height` — the prep states **2**, the live sheet paints **1, 1.5, 1.8, 1.85**
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-rhythm-reverify -->
+
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/wiser/
   Stylesheets: `css/style.css` (153 KB, compiled from SCSS) + Bootstrap 4
   + plugin libs (owl.carousel, slicknav, animate, magnific-popup,
