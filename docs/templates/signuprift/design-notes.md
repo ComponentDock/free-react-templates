@@ -21,7 +21,7 @@ Spec: openspec/specs/template-signuprift/spec.md
 ## Fidelity notes
 
 - Inputs use **full border boxes** (not underline-only like signup-form-09). Light gray border, rounded corners ~4px.
-- Labels are **uppercase** and **green** (mint/teal ~#38d39f), not standard gray.
+- Labels are **uppercase** and **green** (mint/teal #52de97), not standard gray.
 - The icon at the top is a **green circle** (~50px diameter) with a white pencil/edit icon — this is a key visual differentiator from other signup forms.
 - The password field has a **visibility toggle** (eye icon) on the right side.
 - No social login buttons — this template is simpler than signup-form-09.

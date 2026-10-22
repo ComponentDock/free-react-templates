@@ -17,7 +17,7 @@ Spec: openspec/specs/template-signupflint/spec.md
    - Email Address — label + bottom-border input, placeholder "johndoe@gmail.com"
    - Password — label + bottom-border input, placeholder "Password"
    - Confirm Password — label + bottom-border input, placeholder "Confirm Password"
-7. Sign Up button — full-width, golden/olive (#c5b358), white text
+7. Sign Up button — full-width, golden/olive (#d5c455), white text
 8. Divider — "or" text in gray
 9. Social section — "Signup with" text + Facebook (blue circle) + Twitter (light blue circle) icons
 10. Sign In link — "I'm already a member! Sign In" (golden link)
@@ -26,7 +26,7 @@ Spec: openspec/specs/template-signupflint/spec.md
 
 - **Key aesthetic:** Minimal, friendly, warm golden accent. No split-screen, no background image.
 - **Input style:** Underline-only (bottom border, no full box border) — different from most signup specs that use full-border inputs.
-- **Button:** Full-width golden/olive, NOT a standard primary color. The golden tone (#c5b358) is distinctive.
+- **Button:** Full-width golden/olive, NOT a standard primary color. The golden tone (#d5c455) is distinctive.
 - **Social icons:** Circular icons (NOT full-width buttons) — Facebook dark blue, Twitter light blue. Centered side by side.
 - **Avatar:** Gray circle with person icon + small golden badge — unique to this template.
 - **Card:** White on light gray, generous padding, rounded corners (12px), subtle shadow.
@@ -46,7 +46,7 @@ Spec: openspec/specs/template-signupflint/spec.md
 
 - [ ] Match centered card layout (not split-screen)
 - [ ] Match underline-only input style (bottom border)
-- [ ] Match golden/olive button color (#c5b358)
+- [ ] Match golden/olive button color (#d5c455)
 - [ ] Match circular social icons (not full-width buttons)
 - [ ] Match avatar with golden badge
 - [ ] Match "Sign Up #01" page title above card

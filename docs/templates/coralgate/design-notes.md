@@ -1,5 +1,25 @@
 # Coralgate — Design Notes & Implementation Outline
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-coralgate/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/login-form-17/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Do not build** these screenshot samples — the live sheet paints
+>   no such colour; take the spec's live palette instead:
+>   `#e91e63`, `#f06292`.
+>
+> **Spec caveat:** ⚠️ the demo's own `<title>` reads `Login 07` though the path is `login- form-17` — the host's titles are not reliable labels; the readings above are for the URL as fetched.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 Source: ColorLib Login Form 17 (`login-form-17`)
 Preview: https://preview.colorlib.com/theme/login-form-17/ (404 at prep time)
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-17-2.jpg

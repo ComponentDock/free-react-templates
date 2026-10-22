@@ -1,5 +1,25 @@
 # Droplist — Implementation Tasks
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-droplist/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/dropdown-20/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#0071bc` → **`#007bff`**
+>
+> **Spec caveat:** ⚠️ the demo's own `<title>` reads `Dropdown #8` though the path is `dropdown-20` — the host's titles are not reliable labels; the readings above are for the URL as fetched.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 > Recreation of ColorLib "Dropdown 20" — Multi-Section Category Dropdown
 
 ## Source
@@ -24,7 +44,7 @@
 ### Visual Design (from screenshot)
 
 - Clean white background with subtle dropdown shadow
-- Blue (#0071bc) accent on the trigger button
+- Blue (#007bff) accent on the trigger button
 - Poppins font throughout
 - Dropdown menu has distinct sections separated by thin gray borders
 - Sub-category items are simple text links with hover states

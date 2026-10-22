@@ -1,5 +1,19 @@
 # Looming — implementation tasks
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-looming/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://colorlib.com/etc/cs/comingsoon_12/index.html` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 Recreation of ColorLib "Coming Soon V12" (source slug `comingsoon_12` — the
 coming-soon family's only **SPLIT-SCREEN** page: one `width:100%; min-height:100vh`
 wrapping flex row with `align-items:stretch` split into an opaque WHITE 50% left

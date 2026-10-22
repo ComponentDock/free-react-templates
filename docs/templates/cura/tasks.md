@@ -1,5 +1,25 @@
 # Cura (ColorLib Vitality) — Tasks & Design Notes
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-cura/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/vitality/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Do not build** these screenshot samples — the live sheet paints
+>   no such colour; take the spec's live palette instead:
+>   `#e11d48`, `#f43f5e`.
+>
+> **Spec caveat:** the live `/theme/vitality/` is a **newer blue build** of the demo (Tailwind, `primary-600 #2563eb`), not the rose design the screenshot shows — do not mix the two.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 > Prep artifacts committed on `main` (prep stream). Implementation ships
 > later on `feat/template-cura` (implementer stream).
 

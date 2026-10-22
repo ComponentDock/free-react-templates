@@ -1,5 +1,27 @@
 # PassGuard (ColorLib Login Form 05) — Tasks & Design Notes
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-passguard/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/login-form-05/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#f26522` → **`#fb771a`**
+>
+> - **Do not build** these screenshot samples — the live sheet paints
+>   no such colour; take the spec's live palette instead:
+>   `#d4500a`.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-passguard`. Recreation name: **PassGuard** (NEW name —
 > the ColorLib source keeps its name "Login Form 05").
@@ -31,11 +53,11 @@ Browsed visually (image converted to PNG for analysis). Layout:
    border radius (~4px), full width.
 5. **Password field** — Label "Password", same input style, placeholder
    "Your Password".
-6. **Remember me** — Orange checked checkbox (#f26522), "Remember me" label
+6. **Remember me** — Orange checked checkbox (#fb771a), "Remember me" label
    to the right. Aligned left.
-7. **Forgot Password** — Orange (#f26522) link, right-aligned on same row
+7. **Forgot Password** — Orange (#fb771a) link, right-aligned on same row
    as Remember me.
-8. **Log In button** — Full-width, orange (#f26522) background, white text,
+8. **Log In button** — Full-width, orange (#fb771a) background, white text,
    pill-shaped (border-radius ~22px), ~48px height.
 9. **Divider** — "or" text in gray (#999), centered, between Log In and
    social buttons.
@@ -54,7 +76,7 @@ design. Social login integration is a key differentiator.
 | ------------ | ------------------- | ---------------------------------------------------------- |
 | Page bg      | `#f5f5f5`           | Light gray right half + body                               |
 | Card bg      | `#ffffff`           | White login card                                           |
-| Brand orange | `#f26522`           | "Log In" button, checkbox, "Forgot Password" link          |
+| Brand orange | `#fb771a`           | "Log In" button, checkbox, "Forgot Password" link          |
 | Facebook blue| `#3b5998`           | "Login with Facebook" button bg                            |
 | Google red   | `#dd4b39`           | "Login with Google" button bg                              |
 | Title text   | `#333333`           | Heading text                                               |
@@ -124,7 +146,7 @@ design. Social login integration is a key differentiator.
 15. [ ] Open PR `feat/template-passguard` → merge immediately
         (`gh pr merge --squash --delete-branch`); PR description must
         include: source URL, preview URL (404), token list (orange
-        `#f26522`, Facebook blue `#3b5998`, Google red `#dd4b39`,
+        `#fb771a`, Facebook blue `#3b5998`, Google red `#dd4b39`,
         Poppins, pill-shaped buttons, split-screen), and what differs
         (renamed "PassGuard", picsum kitchen bg, lucide social icons).
 16. [ ] Bookkeeping after merge: mark TEMPLATES.md line 2151 `[x]` + surge

@@ -1,5 +1,29 @@
 # Chronoboard — Implementation Tasks & Design Notes
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-chronoboard/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/calendar-19/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#e74c3c` → **`#f67280`**
+>
+> - **Do not build** these screenshot samples — the live sheet paints
+>   no such colour; take the spec's live palette instead:
+>   `#2c3e50`, `#fff3cd`.
+>
+> **Spec caveat:** ⚠️ the demo's own `<title>` reads `Calendar #9` though the path is `calendar-19` — the host's titles are not reliable labels; the readings above are for the URL as fetched.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 ## Source
 
 - ColorLib: **Calendar 19** (`https://colorlib.com/wp/template/calendar-19/`)
@@ -26,7 +50,7 @@
    - Grid borders: #dee2e6
 
 3. **Events** (rendered inside cells)
-   - All-day: full-width pill, brand #e74c3c, white text, 4px radius
+   - All-day: full-width pill, brand #f67280, white text, 4px radius
    - Multi-day: spans cells, same styling
    - Timed: shows time (e.g. "7a") + title, same pill
    - Repeating: separate pill per occurrence
@@ -41,7 +65,7 @@
 | Aspect          | Source                       | Recreation Notes                                                                                                                   |
 | --------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Font            | Roboto (Google Fonts)        | `<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">` in `index.html` |
-| Brand color     | #e74c3c                      | Define in `index.css` @theme as `--color-brand`; use via `bg-brand`, `text-white`                                                  |
+| Brand color     | #f67280                      | Define in `index.css` @theme as `--color-brand`; use via `bg-brand`, `text-white`                                                  |
 | Toolbar buttons | FullCalendar default         | Recreate with Tailwind; replace icon font with lucide-react                                                                        |
 | Grid            | FullCalendar daygrid         | Use `@fullcalendar/daygrid`; customize via `slotEventOverlap`, `eventDisplay`, `dayCellContent`                                    |
 | Events          | FullCalendar event rendering | Use `eventContent` for custom pill rendering (time + title)                                                                        |

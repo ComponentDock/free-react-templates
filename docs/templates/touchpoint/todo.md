@@ -1,5 +1,27 @@
 # Touchpoint — Implementation Todo & Design Notes
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-touchpoint/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/contact-form-01/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#3b82f6` → **`#1089ff`**
+>
+> - **Do not build** these screenshot samples — the live sheet paints
+>   no such colour; take the spec's live palette instead:
+>   `#60a5fa`.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 Source: ColorLib "Contact Form 01"
 Preview: https://preview.colorlib.com/theme/contact-form-01/ (404 — screenshot used)
 
@@ -12,7 +34,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-01/ (404 — screenshot
    - Run `npm install` at repo root to register workspace in lockfile
 
 2. Create `src/index.css` with Tailwind v4 theme tokens
-   - `@theme` block: brand-blue (#3b82f6), icon-bg-blue (#60a5fa),
+   - `@theme` block: brand-blue (#1089ff), icon-bg-blue (#60a5fa),
      page-bg (#f5f5f5), input-border (#e5e7eb), text-heading (#1f2937),
      text-body (#374151)
    - Import Google Fonts: Poppins (400, 600, 700)
@@ -29,7 +51,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-01/ (404 — screenshot
    - Form submission: prevent default, no SPA navigation
 
 4. Build contact info card component (`src/components/ContactInfo.tsx`)
-   - Blue background (#3b82f6), padding (~40px)
+   - Blue background (#1089ff), padding (~40px)
    - "Contact us" heading in white
    - Four info items, each with:
      - Circular icon container (~44px, lighter blue bg #60a5fa, white icon)
@@ -69,9 +91,9 @@ Preview: https://preview.colorlib.com/theme/contact-form-01/ (404 — screenshot
 ### Color palette
 - Page background: #f5f5f5 (light gray)
 - Form card: #ffffff (white)
-- Info card: #3b82f6 (blue-500)
+- Info card: #1089ff (blue-500)
 - Info icon circles: #60a5fa (blue-400)
-- Button: #3b82f6 (blue-500)
+- Button: #1089ff (blue-500)
 - Headings: #1f2937 (gray-800)
 - Body text: #374151 (gray-700)
 - Input borders: #e5e7eb (gray-200)
@@ -95,7 +117,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-01/ (404 — screenshot
 - Message textarea: full width, min-height ~120px
 
 ### Button styling
-- Background: #3b82f6 (blue)
+- Background: #1089ff (blue)
 - Text: white, bold
 - Border-radius: 4px
 - Padding: ~10px 20px

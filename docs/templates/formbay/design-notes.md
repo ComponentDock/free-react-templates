@@ -1,5 +1,25 @@
 # Formbay — Design Notes & Task Outline
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-formbay/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/contact-form-11/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#e8636f` → **`#eb4d55`**
+>
+> **Spec caveat:** ⚠️ the demo's own `<title>` reads `Contact Form #1` though the path is `contact-form-11` — the host's titles are not reliable labels; the readings above are for the URL as fetched.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 Source: ColorLib Contact Form 11
 Preview: https://preview.colorlib.com/theme/contact-form-11/ (404 — design from screenshot)
 
@@ -23,7 +43,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-11/ (404 — design fro
   - Row 1: First name + Last name (side by side, 50/50)
   - Email (full width)
   - "Write your message" label + Message textarea (tall, ~120px)
-- "Send Message" button: coral bg (#E8636F), white text, 4px radius
+- "Send Message" button: coral bg (#EB4D55), white text, 4px radius
 
 ### Right column (~50%)
 - Bold heading: "Let's talk about everything."
@@ -31,13 +51,13 @@ Preview: https://preview.colorlib.com/theme/contact-form-11/ (404 — design fro
 - Paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
   deleniti itaque similique magni. Magni, laboriosam perferendis maxime!"
   - Sans-serif, gray (#666666)
-- "Read more" link in coral color (#E8636F)
+- "Read more" link in coral color (#EB4D55)
 
 ## Fidelity notes
 
 - Match the clean, minimal aesthetic (no card, no background image)
 - Match the large bold heading style
-- Match the coral accent: #E8636F for button and link
+- Match the coral accent: #EB4D55 for button and link
 - Match the underline input style
 - Match the First name + Last name side-by-side layout
 - Match the "Write your message" label above the textarea

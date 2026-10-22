@@ -1,5 +1,21 @@
 # Queryvane — Tasks
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-queryvane/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/search-form-bar-17/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> **Spec caveat:** ⚠️ the demo's own `<title>` reads `Search #1` though the path is `search- form-bar-17` — the host's titles are not reliable labels; the readings above are for the URL as fetched.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 ## Template Info
 
 - **Name:** Queryvane

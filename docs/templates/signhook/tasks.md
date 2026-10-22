@@ -1,5 +1,23 @@
 # Signhook (ColorLib Login Form 04) — Tasks & Design Notes
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-signhook/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/login-form-04/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#e8913a` → **`#fb771a`**
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-signhook`. Recreation name: **Signhook** (NEW name —
 > the ColorLib source keeps its name "Login Form V04").
@@ -35,9 +53,9 @@ Card contents (top to bottom):
   "your-email@gmail.com"
 - "Password" label — same style as Username
 - Password input — same style, placeholder "Your Password"
-- Row: "Remember me" checkbox (checked state = orange `~#e8913a`) on
+- Row: "Remember me" checkbox (checked state = orange `#fb771a`) on
   left; "Forgot Password" text link on right (dark text)
-- "Log In" button — full-width, orange (`~#e8913a`) background,
+- "Log In" button — full-width, orange (`#fb771a`) background,
   white text, rounded corners (~4px), centered text
 
 Card styling: white (`#fff`), generous rounded corners (~8px), subtle
@@ -51,7 +69,7 @@ elements beyond the photo — purely functional.
 
 | Token          | Value                    | Source/notes                                    |
 | -------------- | ------------------------ | ----------------------------------------------- |
-| Brand orange   | `~#e8913a`               | Button bg, checkbox checked — warm orange        |
+| Brand orange   | `#fb771a`               | Button bg, checkbox checked — warm orange        |
 | Page bg        | `~#f5f7fa`               | Right panel — very light cool gray               |
 | Card bg        | `#fff`                   | Login form card                                  |
 | Card shadow    | subtle (2px 4px 8px?)    | Soft drop shadow on card                         |
@@ -103,11 +121,11 @@ elements beyond the photo — purely functional.
        gray, ~14px.
 
 6. [ ] Remember me + Forgot Password row: flex row with space-between.
-       Left: custom checkbox with orange (`#e8913a`) checked state +
+       Left: custom checkbox with orange (`#fb771a`) checked state +
        "Remember me" label. Right: "Forgot Password" text link (dark
        or brand color, no underline by default).
 
-7. [ ] Submit button: full-width, orange bg (`bg-[#e8913a]`), white
+7. [ ] Submit button: full-width, orange bg (`bg-[#fb771a]`), white
        text, rounded (~4px), bold, ~48px height. Hover: slightly
        darker orange. Disabled state when form is invalid (optional —
        source doesn't show this explicitly).
@@ -126,7 +144,7 @@ elements beyond the photo — purely functional.
 11. [ ] Open PR `feat/template-signhook` → merge immediately
        (`gh pr merge --squash --delete-branch`). PR description must
        include: source URL, screenshot reference (preview unreachable),
-       token list (orange `#e8913a`, gray `#f5f7fa`, system sans-serif,
+       token list (orange `#fb771a`, gray `#f5f7fa`, system sans-serif,
        split-panel layout, ~8px card radius), and what differs
        (renamed "Signhook", placeholder images, Component Dock footer,
        no ColorLib references in app code, accessible semantics,

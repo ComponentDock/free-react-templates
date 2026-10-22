@@ -1,5 +1,24 @@
 # SignupGale — Implementation Task Outline
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-signupgale/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/signup-form-07/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#6a5ae0` → **`#483dff`**
+>   - `#7c6bf5` → **`#6c63ff`**
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 ## Template Identity
 - **New name:** signupgale
 - **Source:** ColorLib Signup Form 07
@@ -32,7 +51,7 @@
 - Light gray background (#f8f9fa) throughout
 
 ### Colors
-- Primary brand: #7c6bf5 (purple/indigo) — button, checkbox, links
+- Primary brand: #6c63ff (purple/indigo) — button, checkbox, links
 - Heading: #2d2d2d (dark charcoal)
 - Subtext: #999999 (medium gray)
 - Input borders: #e0e0e0 (light gray, bottom only)
@@ -51,9 +70,9 @@
 - Use placeholder SVG or picsum image initially; ideally recreate as inline SVG
 
 ### Buttons
-- Register: full-width, #7c6bf5, white text, 6px radius, ~48px height
+- Register: full-width, #6c63ff, white text, 6px radius, ~48px height
 - Social: circular (40px), brand colors, white icons
-- Hover: register darkens to ~#6a5ae0
+- Hover: register darkens to #483dff
 
 ### Fidelity Notes
 - Bottom-border-only inputs (no full box border) — match exactly

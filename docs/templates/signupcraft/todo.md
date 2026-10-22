@@ -1,5 +1,23 @@
 # Signupcraft — Implementation Outline
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-signupcraft/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/signup-form-05/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#f5a623` → **`#fb771a`**
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 **Source:** ColorLib Signup Form 05
 **Preview:** https://preview.colorlib.com/theme/signup-form-05/ (unreachable — design from screenshot)
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-05.jpg
@@ -16,7 +34,7 @@
 6. **Password field** — Label "Password" + masked input with placeholder "Your Password"
 7. **Re-type Password field** — Label "Re-type Password" + masked input with placeholder "Re-type Your Password"
 8. **Terms checkbox** — Checked by default, "Creating an account means you're okay with our Terms and Conditions and our Privacy Policy..."
-9. **Register button** — Full-width orange button (#f5a623), white text, rounded
+9. **Register button** — Full-width orange button (#fb771a), white text, rounded
 10. **"or" divider** — Gray centered text separator
 11. **Facebook button** — Full-width dark blue (#3b5998) with icon
 12. **Twitter button** — Full-width light blue (#1da1f2) with icon
@@ -35,7 +53,7 @@
 - Page background: #f5f5f5 (light warm gray)
 - Card background: #ffffff
 - Card shadow: 0 2px 15px rgba(0,0,0,0.1)
-- Primary accent (Register button, checkbox, links): #f5a623 (orange)
+- Primary accent (Register button, checkbox, links): #fb771a (orange)
 - Facebook: #3b5998
 - Twitter: #1da1f2
 - Google: #dd4b39
@@ -56,10 +74,10 @@
 - Inputs: white bg, light gray border (#e0e0e0), 4px border-radius
 - Labels: above each input, dark gray
 - Placeholders: light gray text
-- Terms checkbox: orange (#f5a623) when checked, positioned inline with text
+- Terms checkbox: orange (#fb771a) when checked, positioned inline with text
 
 ### Buttons
-- Register: full-width, orange bg (#f5a623), white text, 4px radius, ~44px height
+- Register: full-width, orange bg (#fb771a), white text, 4px radius, ~44px height
 - Social buttons: full-width, respective brand colors, white text, 4px radius, ~44px height
 - Each social button has an icon on the left + text
 - All buttons have hover darkening (~10% darker)

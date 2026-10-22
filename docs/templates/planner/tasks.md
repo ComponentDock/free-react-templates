@@ -1,5 +1,28 @@
 # Planner (ColorLib Calendar 01) — Tasks & Design Notes
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-planner/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/calendar-01/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#3d88f7` → **`#1089ff`**
+>
+> - **Role values re-read from the live sheet** (the screenshot samples were
+>   not in it at all): month label `#1371e6` → **`#1089ff`**
+>   (`.calendar_header h2{color}`), chevrons `#b9cae7` → **`#dcdcdc`**
+>   (`button.switch-month{color}`).
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 > Prep artifacts prepared on `main`. Recreation name: **Planner** (NEW name —
 > the ColorLib source keeps its name "Calendar 01"). Implementation ships on
 > `feat/template-planner` per the standard PR flow.
@@ -40,29 +63,29 @@
   row has two leading blank cells (Sun, Mon) then 1–5; 31 Dec 2020 =
   Thursday; month fills 5 rows. Use these to verify the initial grid in
   tests.
-- **Signature:** MINIMALISM — one widget, one accent blue (`#3d88f7`)
+- **Signature:** MINIMALISM — one widget, one accent blue (`#1089ff`)
   used in exactly two places (weekday bar + selected circle), darker blue
-  month label (`#1371e6`), flat design, no gradients/shadows/photography.
+  month label (`#1089ff`), flat design, no gradients/shadows/photography.
   This is the first template in the **Bootstrap Calendars (20)** category;
   siblings (Calendar 02–20) likely share the family look but each gets its
   own prep.
 - **Exact structure (1:1 from the reference render):**
   1. **Title** — "Calendar #01" (source-exact, keep the `#01`), centered,
      dark near-black, ~28–32px/600 sans-serif.
-  2. **Month nav** — left chevron `‹` (light periwinkle grey `#b9cae7`),
-     centered label "December 2020" (`#1371e6`, `MMMM yyyy`), right
+  2. **Month nav** — left chevron `‹` (light periwinkle grey `#dcdcdc`),
+     centered label "December 2020" (`#1089ff`, `MMMM yyyy`), right
      chevron `›`. Clickable: prev/next month, label + grid update, year
      rollover across December→January.
-  3. **Weekday bar** — solid `#3d88f7`, `Sun Mon Tue Wed Thu Fri Sat` in
+  3. **Weekday bar** — solid `#1089ff`, `Sun Mon Tue Wed Thu Fri Sat` in
      white, centered, 7 equal columns.
   4. **Date grid** — white, 7 columns × 5 rows, `#e6e6e6` 1px cell
      separators, dates centered; blank leading cells; dates before the
-     selection `#7c7d81`, after `#111111`; selected date = solid `#3d88f7`
+     selection `#7c7d81`, after `#111111`; selected date = solid `#1089ff`
      circle with white text. Clicking a date selects it.
   5. **Footer** — minimal muted "More templates at Component Dock" linking
      https://www.componentdock.com/ (repo convention; original has none).
 - **Palette (pixel-sampled):** page bg `#f7f8fc` · card `#ffffff` · accent
-  blue `#3d88f7` · month label `#1371e6` · chevron `#b9cae7` · past dates
+  blue `#1089ff` · month label `#1089ff` · chevron `#dcdcdc` · past dates
   `#7c7d81` · future/title near-black `#111111` (sampled `#000003`) · grid
   lines `#e6e6e6` · on-accent text `#ffffff`.
 - **Font:** clean geometric sans-serif (Helvetica/Arial-like per the
@@ -74,8 +97,8 @@
   - One `Calendar` widget component (e.g. `src/components/Calendar.tsx`)
     with `App.tsx` rendering it centered on the `#f7f8fc` page + the muted
     footer. No Navbar/Hero — none in the reference.
-  - Palette in `src/index.css` `@theme`: `--color-accent: #3d88f7`,
-    `--color-month: #1371e6`, `--color-chevron: #b9cae7`,
+  - Palette in `src/index.css` `@theme`: `--color-accent: #1089ff`,
+    `--color-month: #1089ff`, `--color-chevron: #dcdcdc`,
     `--color-past: #7c7d81`, `--color-future: #111111`,
     `--color-gridline: #e6e6e6`, `--color-page: #f7f8fc`.
   - State: `viewDate` (year/month) + `selectedDate` (Date); `useState`
@@ -90,7 +113,7 @@
     heights), dates centered (`flex items-center justify-center`).
   - Selected circle: `rounded-full bg-accent text-white` (a fixed-size
     circle, ~36–40px, centered in the cell).
-  - Chevrons: `lucide-react` `ChevronLeft`/`ChevronRight` in `#b9cae7`,
+  - Chevrons: `lucide-react` `ChevronLeft`/`ChevronRight` in `#dcdcdc`,
     `aria-label="Previous month"`/`"Next month"`, padded hit targets.
   - Dates: `<button>` per cell with `aria-label` like "19 December 2020"
     and `aria-selected` on the selected one; `focus-visible` rings.
@@ -126,8 +149,8 @@ flex items-center justify-center px-4 py-16`.
        01"), preview URL
        (https://preview.colorlib.com/theme/calendar-01/ — **404,
        screenshot-only reference, per docs/replication.md fallback**),
-       design tokens used (accent `#3d88f7`, month `#1371e6`, chevron
-       `#b9cae7`, past `#7c7d81`, future `#111111`, gridline `#e6e6e6`,
+       design tokens used (accent `#1089ff`, month `#1089ff`, chevron
+       `#dcdcdc`, past `#7c7d81`, future `#111111`, gridline `#e6e6e6`,
        page `#f7f8fc`), font substitution (Poppins recommended — family
        unverifiable), interactions added (month nav + date selection),
        "Calendar #01" title kept source-exact

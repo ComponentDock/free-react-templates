@@ -45,8 +45,8 @@ src/
 
 ```css
 @theme {
-  --color-brand: #1a73e8;
-  --color-brand-hover: #1464cc;
+  --color-brand: #007bff;
+  --color-brand-hover: #0056b3;
   --color-body: #26282b;
   --color-border: #e6e6e6;
   --color-surface: #ffffff;

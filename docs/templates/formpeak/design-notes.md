@@ -1,5 +1,27 @@
 # Formpeak — Design Notes & Task Outline
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-formpeak/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/contact-form-05/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#d4a574` → **`#e3b04b`**
+>
+> - **Do not build** these screenshot samples — the live sheet paints
+>   no such colour; take the spec's live palette instead:
+>   `#55b68a`.
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 Source: ColorLib Contact Form 05
 Preview: https://preview.colorlib.com/theme/contact-form-05/ (404 — design from screenshot)
 
@@ -31,7 +53,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-05/ (404 — design fro
   - Email input
   - Subject input
   - Message textarea (placeholder: "Create a message here", ~120px tall)
-- "Send Message" button: gold bg (#D4A574), white text, 3px radius
+- "Send Message" button: gold bg (#E3B04B), white text, 3px radius
 - Social section below button:
   - "Follow us here" heading (serif)
   - FACEBOOK | TWITTER | INSTAGRAM | DRIBBBLE links (teal #55B68A)
@@ -43,7 +65,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-05/ (404 — design fro
 
 ## Fidelity notes
 
-- Match the gold/amber button color: #D4A574
+- Match the gold/amber button color: #E3B04B
 - Match the teal social link color: #55B68A
 - Match the three-column contact info layout
 - Match the underline input style

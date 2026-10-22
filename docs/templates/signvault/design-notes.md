@@ -50,7 +50,7 @@ Each field has:
 - White input background
 
 **Submit Button:**
-- Circular (56×56px) red button (`#e74c3c`)
+- Circular (56×56px) red button (`#e32249`)
 - Contains a white send/arrow icon (paper-plane style)
 - Positioned to overlap the bottom-right edge of the card
 - Red shadow on hover (`rgba(231,76,60,0.4)`)
@@ -62,7 +62,7 @@ Each field has:
 
 **Footer Area:**
 - "Already have an account?" in muted dark text
-- "Sign In" as a red accent link (`#e74c3c`), underlined
+- "Sign In" as a red accent link (`#e32249`), underlined
 - Positioned below the card
 
 **No social login buttons** — this is a simpler form compared to other signup templates.
@@ -93,5 +93,5 @@ Each field has:
 - **No social login:** Unlike many ColorLib signup forms, this one has NO social
   login buttons. Don't add them.
 - **Input placeholders:** Match the exact placeholder text from the screenshot.
-- **Color consistency:** The brand red (`#e74c3c`) is used for: submit button,
+- **Color consistency:** The brand red (`#e32249`) is used for: submit button,
   Sign In link, input focus border, and button hover shadow.

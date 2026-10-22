@@ -1,5 +1,23 @@
 # Formspot — Design Notes & Task Outline
 
+<!-- docs-drift:2026-10-22 -->
+> **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
+> The spec (`openspec/specs/template-formspot/spec.md`, section
+> **Live reference restored**) is the contract and is canonical over this
+> file: `docs/replication.md` — CSS values are canonical over screenshots.
+>
+> - **Reference is live:** `https://preview.colorlib.com/theme/bootstrap/contact-form-08/` answers **HTTP 200**
+>   today; the 404 / "design from screenshot" wording below is the
+>   prep-time state. Read section order and markup from the live page.
+>
+> - **Token corrections** (live stylesheet — applied below, except on
+>   hover/role lines that keep their own shade):
+>   - `#7c9a5e` → **`#71a95a`**
+>
+> Where the live design differs materially from the notes below (a few
+> designs were re-skinned), build what the spec describes.
+<!-- /docs-drift -->
+
 Source: ColorLib Contact Form 08
 Preview: https://preview.colorlib.com/theme/contact-form-08/ (404 — design from screenshot)
 
@@ -24,7 +42,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-08/ (404 — design fro
   - Row 1: FULL NAME + EMAIL ADDRESS (side by side, 50/50)
   - Row 2: SUBJECT (full width)
   - Row 3: MESSAGE (full width, ~120px tall textarea)
-  - Row 4: Send Message button (olive green bg #7C9A5E, white text, 3px radius)
+  - Row 4: Send Message button (olive green bg #71A95A, white text, 3px radius)
 - Labels: uppercase, small, dark, bold
 - Input borders: light gray (#E0E0E0)
 
@@ -35,7 +53,7 @@ Preview: https://preview.colorlib.com/theme/contact-form-08/ (404 — design fro
 
 ## Fidelity notes
 
-- Match the olive green button: #7C9A5E
+- Match the olive green button: #71A95A
 - Match the bordered-box input style (not underline)
 - Match the two-column layout: form left, image right
 - Match the uppercase labels above inputs
