@@ -1,7 +1,5 @@
-/* Atelier — content data for the fashion e-commerce storefront, recreated
-   from ColorLib "Ashion" (https://colorlib.com/wp/template/ashion/).
-   Copy types mirror the original (category tiles, product names, banner
-   headlines, service rows, footer columns); all images are seeded picsum
+/* Atelier — content data for the fashion e-commerce storefront, built from the reference design. Copy types mirror the original (category tiles,
+   product names, banner headlines, service rows, footer columns); all images are seeded picsum
    placeholders. */
 
 export const BRAND = 'Atelier'

@@ -1,7 +1,5 @@
-/* Ascendly — content data for the business-consulting landing, recreated
-   from ColorLib "Arcwork" (https://colorlib.com/wp/template/arcwork/).
-   Copy types mirror the original (headline + CTA, card title + blurb +
-   link, etc.); all images are seeded picsum placeholders. */
+/* Ascendly — content data for the business-consulting landing, built from the reference design. Copy types mirror the original (headline + CTA,
+   card title + blurb + link, etc.); all images are seeded picsum placeholders. */
 
 export const BRAND = 'Ascendly'
 

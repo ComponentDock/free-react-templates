@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Appdeck brand colors — from the ColorLib "Prantokon" preview
-     (https://preview.colorlib.com/theme/prantokon/ + css/preview.css):
+  /* Appdeck brand colors — from the reference stylesheet
+
      a dark showcase theme with a blue #0F7CDD accent. */
   --color-primary-50: #e8f4fd;
   --color-primary-100: #cce8fb;
@@ -19,7 +19,7 @@
   --color-primary-800: #094278;
   --color-primary-900: #073159;
 
-  /* Hero purchase buttons: ColorLib's standard `btn-orange` pill
+  /* Hero purchase buttons: the reference design `btn-orange` pill
      (exact hex not exposed in the preview stylesheets — approximated). */
   --color-accent-500: #ff9800;
   --color-accent-600: #e08600;

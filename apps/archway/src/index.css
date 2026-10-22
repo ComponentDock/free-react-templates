@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Archway brand palette — recreated from the ColorLib Klift design:
+  /* Archway brand palette — measured from the reference design:
      brand sky blue #78d5ef, accent pink #ff9a9a, dark brown #3c312e,
      near-black footer #141313, body text #212529, muted gray #6c757d,
      light bg #e9ecef. */

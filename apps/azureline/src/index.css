@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Azureline brand palette — recreated from the ColorLib "Blueline" design
+  /* Azureline brand palette — measured from the reference design
      (primary blue #2954c9, accent cyan #77d5f7). */
   --color-brand-50: #eef2fc;
   --color-brand-100: #d5e0f7;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Applab brand orange — from the ColorLib "Applab" stylesheet
+  /* Applab brand orange — from the reference stylesheet
      (css/style.css): primary buttons/accents #ff5e13. Orange scale keyed on
      primary-600 so the shared ui Button/ButtonLink "primary" variant works. */
   --color-primary-50: #fff4ec;

@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Blueprint brand colors — from the ColorLib "Unapp" preview
-     (https://preview.colorlib.com/theme/unapp/ + css/style.css):
+  /* Blueprint brand colors — from the reference stylesheet
+
      an app/template-builder landing theme with a blue #499bea primary,
      an indigo #798eea hero gradient end (the hero overlay is a -45deg
      #499bea -> #798eea gradient at 0.95 opacity over a cover photo),
@@ -23,22 +23,22 @@
   --color-primary-800: #1d4876;
   --color-primary-900: #1d3e62;
 
-  /* Indigo hero gradient end (ColorLib .video-hero overlay). */
+  /* Indigo hero gradient end (.video-hero overlay). */
   --color-accent-300: #93a5ef;
   --color-accent-400: #798eea;
   --color-accent-500: #6479e0;
 
-  /* Green accent (ColorLib .btn-primary #4aca85, hover #5ed092). */
+  /* Green accent (.btn-primary #4aca85, hover #5ed092). */
   --color-mint-300: #5ed092;
   --color-mint-400: #4aca85;
   --color-mint-500: #3ab973;
 
-  /* Dark copy (ColorLib #303133) and muted copy (#7f7f7f). */
+  /* Dark copy (#303133) and muted copy (#7f7f7f). */
   --color-ink: #303133;
   --color-smoke: #7f7f7f;
 
   /* Nunito (body) + Poppins (headings) via Google Fonts <link> in
-     index.html — matching the ColorLib font pairing. */
+     index.html — matching the the reference design */
   --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }

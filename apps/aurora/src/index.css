@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Aurora brand palette — recreated from the ColorLib "Maze" design
+  /* Aurora brand palette — measured from the reference design
      (banner pink #f66483). */
   --color-blush-50: #fef2f4;
   --color-blush-100: #fde3e8;

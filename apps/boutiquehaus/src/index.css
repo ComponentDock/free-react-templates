@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* BoutiqueHaus brand palette — recreated from the ColorLib "Shop" design.
+  /* BoutiqueHaus brand palette — measured from the reference design.
      Accent pink #f41068, dark #222222, body #777777. */
   --color-brand: #f41068;
   --color-brand-dark: #d40e5a;

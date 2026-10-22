@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-/* Aperture brand palette — recreated from the ColorLib "Sunzine" preview
-   (https://preview.colorlib.com/theme/sunzine/) live DOM + css/style.css:
+/* Aperture brand palette — measured from the reference design
+     live DOM + css/style.css:
    brand mint #0ECE91 (nav underline bar, filter underline, footer link hover),
    headings/text #111111, muted #B7B7B7, footer background #222222,
    heart #B91B1B; display font Aldrich (uppercase headings/menu/filters),

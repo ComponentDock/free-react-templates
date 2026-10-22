@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Bookly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V20" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-20/):
+  /* Bookly brand palette — measured from the reference design:
      green #2b9328 is the ONLY accent color (floated/focused label color +
      the solid Book Now button background). */
   --color-brand: #2b9328;

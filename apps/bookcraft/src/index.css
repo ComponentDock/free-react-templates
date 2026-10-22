@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* BookCraft brand palette — recreated from the ColorLib "Booke" design
+  /* BookCraft brand palette — measured from the reference design
      (primary blue #1C63FB). */
   --color-blue-primary: #1c63fb;
   --color-blue-hover: #1450d4;

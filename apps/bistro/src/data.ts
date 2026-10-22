@@ -1,6 +1,6 @@
 /**
- * Bistro content — recreation of the ColorLib "Allfood" restaurant template
- * (https://colorlib.com/wp/template/allfood/). Copy paraphrased from the
+ * Bistro content — measured from the reference restaurant template
+ * Copy paraphrased from the
  * source preview but keeps the same content kinds. All imagery is seeded
  * picsum placeholders — never copied from the original.
  */

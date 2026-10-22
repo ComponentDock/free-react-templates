@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brightmind brand palette — recreated from the ColorLib "Genius" design
+  /* Brightmind brand palette — measured from the reference design
      (hero gradient: purple #6a00ff → gold #ffd900, primary blue #167ce9). */
   --color-brand-50: #eef5ff;
   --color-brand-100: #d9e8ff;
