@@ -37,6 +37,15 @@ the magenta offset block behind them.
 
 ## Design reference (replication findings)
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/endgam/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `.read-more` claimed 15px (live: 14)
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 - **Original:** ColorLib "Endgam" — gaming blog/magazine template
   (source: https://colorlib.com/wp/template/endgam/). Listed in TEMPLATES.md
   under Blog (line 257). Screenshot: `endgam-free-template.jpg` (1200×946,

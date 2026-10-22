@@ -35,6 +35,15 @@ content types (no ColorLib assets copied).
 
 ## Design reference (replication findings)
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/congoro/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `h5` claimed 28px (live: 12, 16)
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 - **Original:** ColorLib "Congoro" — free construction / architecture website
   template (source: https://colorlib.com/wp/template/congoro/; two `- [ ]`
   entries in TEMPLATES.md — lines 564 (Bootstrap 5) and 1340 (Construction)).

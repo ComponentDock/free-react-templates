@@ -14,6 +14,15 @@ and the PR.
 
 ## Design reference (replication findings)
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/djoz/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `h1` claimed 90px (live: 30, 70, 110)
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 - **Original:** ColorLib "Djoz" — free DJ / music artist HTML template
   (source: https://colorlib.com/wp/template/djoz/). Single page: a
   semi-transparent deep-purple absolute header (logo + nav: Home / About /

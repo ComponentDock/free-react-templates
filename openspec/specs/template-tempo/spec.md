@@ -39,6 +39,16 @@ colors, typography, and content types (no ColorLib assets copied).
 
 ## Design reference (replication findings)
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/djoz/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `h1` claimed 100px (live: 30, 70, 110) — stated 2×
+> - `h1` claimed 90px (live: 30, 70, 110)
+>
+> Status: this template has NOT shipped yet — prefer the live value. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 - **Original:** ColorLib "Djoz" — DJ / Music Event HTML Template
   (source: https://colorlib.com/wp/template/djoz/). Listed in
   TEMPLATES.md under **Bootstrap (216)** (line 375; duplicate row line

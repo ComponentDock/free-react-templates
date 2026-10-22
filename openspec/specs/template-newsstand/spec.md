@@ -10,6 +10,15 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Design reference (replication findings)
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/webmag/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `.post-date` claimed 18px (live: 13)
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 - **Original:** ColorLib "Webmag" — modern magazine & blog template
   (source: https://colorlib.com/wp/template/webmag/). `<title>` in the live
   preview: "WebMag - Modern Magazine & Blog Template".

@@ -46,6 +46,15 @@ exists). Source slug + preview URL are recorded below.
 
 ## Design reference (replication findings)
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/atomic/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `p` claimed 18px (live: 20)
+>
+> Status: this template has NOT shipped yet — prefer the live value. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 - **Original:** ColorLib "Atomic" (page title: "Atomic -- Free Business
   Website Template by Colorlib"). Listed in TEMPLATES.md under **Business (365)**
   (section header line 879; the item at line 897 — `wp/template/atomic/`).

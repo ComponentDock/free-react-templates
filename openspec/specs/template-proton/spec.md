@@ -11,6 +11,15 @@ A clean, professional business/agency website template with hero video CTA, over
 
 ## Design Tokens
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/atomic/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `h3` claimed 15px (live: 18, 20, 22)
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 Extracted from `https://preview.colorlib.com/theme/atomic/css/style.css`:
 
 | Token           | Value                                 | Notes                                      |

@@ -10,6 +10,15 @@ CSS 4 + TypeScript.
 
 ## Design reference (replication findings)
 
+<!-- type-scale-reverify:2026-10-22 -->
+> **Type-scale re-verify (2026-10-22).** The reference now serves a REBUILT kit (`?v=3` restyle at `https://preview.colorlib.com/theme/easylo/`), so the font sizes below no longer match the rules the live sheet paints; the live sheet is the only current reference. Compare with the screenshot before copying a number.
+>
+> Contradicted claims vs the live sheet today:
+> - `h5` claimed 24px (live: 12, 16) — stated 2×
+>
+> Status: the app has shipped, so these numbers remain the design-of-record for the built template. Re-check the screenshot before copying any of these numbers.
+<!-- /type-scale-reverify -->
+
 - **Original:** ColorLib "Easylo" — instant-cash-loan / online home-loan
   finance landing page (Bootstrap 5 + jQuery slicknav / owl.carousel /
   slick / nice-select; fontawesome + themify icons; Google Fonts
