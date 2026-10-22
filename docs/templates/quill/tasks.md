@@ -82,3 +82,31 @@
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
       (https://free-react-templates-quill.surge.sh) + homepage; run
       `npm run readme:status`; push.
+
+## Reference re-verification — 2026-10-22 (prep stream)
+
+The spec now exists: `openspec/specs/template-quill/spec.md` (written after the app
+shipped — `quill` was one of the 10 TEMPLATES.md rows that never produced a spec).
+What changed since the notes above were written:
+
+- **The preview was rebuilt by ColorLib.** `https://preview.colorlib.com/theme/blogger/`
+  now serves a 2026 refresh: Bootstrap **5.3.8**, extra `css/modern.min.css` overrides,
+  plus `kit/*.min.css` helpers. Copy was rewritten ("A slower morning beside the Danube.",
+  eyebrow chips, footer "Join the list" form, `© 2026 Blogger`), and the page title is
+  now `Travel, style & everyday curiosity | Blogger`.
+- **The skeleton is unchanged.** Live DOM still exposes `section#home.banner-area`,
+  `section#news.category-area`, `section#travel.travel-area`,
+  `section#fashion.fashion-area`, `section#team.team-area`, `footer.footer-area` — the
+  same six bands + navbar this app implements. Section order is 1:1.
+- **Tokens are still authoritative in `css/main.min.css`** (42,109 B): Poppins 300 /
+  14 px / 1.625em body on `#777`; `#69b4fd` (35 declarations), `#222` (40), `#f9f9ff`
+  (35), `#eee` (15), `#111` chips, `45deg` gradient `#62bdfc → #8490ff` (6);
+  `.primary-btn` pill radius `25px` (`padding: 0 60px 0 30px`, uppercase 500);
+  `.load-more` outline → `1px solid #69B4FD` hover; `.section-gap` 120 px;
+  `.team-area` `#f9f9ff` with `#69b4fdb3` hover overlay; `.footer-area` `#222`
+  (`padding-top: 100px`); newsletter input radius `20px`.
+- **Fetching gotcha:** `preview.colorlib.com` (and `colorlib.com`) are reachable only
+  over **IPv4** from this host — plain `curl` stalls on IPv6, so use `curl -4`.
+- No app code change is implied: `apps/quill` already matches the classic build
+  (hero copy "A Discount Toner Cartridge Is Better Than Ever.", Poppins, `#69b4fd`
+  palette). The 2026 live copy is recorded in the spec as the live variant only.
