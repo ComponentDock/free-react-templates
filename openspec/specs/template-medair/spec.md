@@ -256,7 +256,8 @@ transparent + green text; `btn-white` white bg/black text → hover inverted);
 (tiny radius 2px squares); **4px** on blog-entry + testimony-wrap cards;
 **2px** on btn-custom + footer socials.
 
-Spacing: hero 100vh (min 750px); `.ftco-section` padding 8em 0 (6em ≤992px);
+Spacing: hero 100vh (min 750px); `.ftco-section` padding 8em 0 (6em ≤575px —
+the sheet's `max-width: 575.98px` xs rule; the tablet range keeps 8em);
 `.ftco-intro` padding 3em 0; footer padding 7em 0 0; blog-entry margin-bottom
 40px; services-2 circle margin 0 auto 20px; counter-wrap padding 30px;
 testimony text padding 40px; nav links padding 1.2rem 25px.
