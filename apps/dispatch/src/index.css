@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dispatch brand palette — recreated from the ColorLib "Avision" template.
+  /* Dispatch brand palette — measured from the reference design.
      Gray-blue pill #899091 (hero category), green #2ddf80 (active video
      marker, "-15%" ad badge), tan #937c6f (mobile menu hover), page #f7f7f7,
      chip/sidebar #ededed, dark surfaces #1f1f1f (videos/footer) / #111111

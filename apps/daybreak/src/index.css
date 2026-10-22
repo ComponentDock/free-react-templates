@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Daybreak brand colors — from the ColorLib "Sun" preview
-     (https://preview.colorlib.com/theme/sun/ + style.css):
-     a clean minimalist portfolio theme with white background,
+  /* Daybreak brand colors — measured from the reference stylesheet: a clean
+     minimalist portfolio theme with white background,
      dark text, and warm orange-red accents. */
   --color-primary-50: #fef2ee;
   --color-primary-100: #fde1d9;
@@ -26,7 +25,7 @@
   --color-ink: #333333;
 
   /* Montserrat (headings/nav) + PT Serif (body) via Google Fonts <link> in
-     index.html — matching the ColorLib font pairing. */
+     index.html — matching the reference design. */
   --font-sans: 'PT Serif', Georgia, serif;
   --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 }

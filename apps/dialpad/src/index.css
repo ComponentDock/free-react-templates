@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dialpad brand palette — recreated from the ColorLib "Callcenter"
-     design (css/main.css): primary #8490ff (blue-purple),
-     gradient #62bdfc → #8490ff. */
+  /* Dialpad brand palette — measured from the reference stylesheet:
+     primary #8490ff (blue-purple), gradient #62bdfc → #8490ff. */
 
   /* Brand — blue-purple primary (#8490ff). */
   --color-brand: #8490ff;

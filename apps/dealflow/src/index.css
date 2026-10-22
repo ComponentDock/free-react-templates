@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dealflow brand palette — recreated from the ColorLib "PipelineIQ" design.
+  /* Dealflow brand palette — measured from the reference design.
      The primary scale IS the brand blue (#2563eb) used for CTAs, links,
      headline highlights, the CTA band gradient and the back-to-top button. */
   --color-primary-50: #eff6ff;

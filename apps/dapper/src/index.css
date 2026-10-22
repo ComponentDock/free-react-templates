@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dapper brand palette — recreated from the ColorLib "Barcut" design
+  /* Dapper brand palette — measured from the reference design
      (css/main.css): gold #ba9236 accents, gradient #ba9236 → #fdc136
      on buttons, body text #777777 on light #f9f9ff sections. */
   --color-brand: #ba9236;
