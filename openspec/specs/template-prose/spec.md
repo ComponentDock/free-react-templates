@@ -46,11 +46,11 @@ CSS 4 + TypeScript.
   - Navbar: white with soft shadow (`rgba(158,158,158,0.3)`), uppercase
     links (20px padding), blue hover, dropdown on "Pages".
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/quill-<n>/<w>/<h>`); icons → lucide-react; Poppins
+  (`picsum.photos/seed/prose-<n>/<w>/<h>`); icons → lucide-react; Poppins
   via Google Fonts `<link>`; brand colors + gradient in `@theme`; no
   assets copied.
 
-Prose lives in `apps/quill` and uses shared components from `packages/ui`
+Prose lives in `apps/prose` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
@@ -203,8 +203,8 @@ landmark and a document title.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-prose`
-- [ ] 100% coverage (lines/functions/branches/statements) for `apps/quill`
-- [ ] Per-app gate: `scripts/verify-app.sh quill` (typecheck + lint +
+- [ ] 100% coverage (lines/functions/branches/statements) for `apps/prose`
+- [ ] Per-app gate: `scripts/verify-app.sh prose` (typecheck + lint +
       coverage + build)
 - [ ] Visual diff against `https://preview.colorlib.com/theme/blogger/`:
       section order, tokens (Poppins, #69B4FD, gradient, #f9f9ff, #222222

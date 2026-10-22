@@ -8,7 +8,7 @@ Recreation of ColorLib **Yogalife** WordPress theme as a React 19 + Vite + Tailw
 - **Preview:** https://preview.colorlib.com/theme/yogalife/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript
-- **New name:** `breatha` (app folder: `apps/breacha`, package: `@free-react-templates/breacha`)
+- **New name:** `breatha` (app folder: `apps/breatha`, package: `@free-react-templates/breatha`)
 
 ## Design tokens (extracted from preview CSS)
 

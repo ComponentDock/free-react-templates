@@ -1,4 +1,4 @@
-# Template: Spellforge (Profile Builder Wizard)
+# Template: Spelldesk (Profile Builder Wizard)
 
 ## Purpose
 
@@ -55,7 +55,7 @@ Extracted from the original `css/style.css`:
 
 #### Scenario: Page loads with step 1 visible
 
-- **GIVEN** the user visits the spellforge page
+- **GIVEN** the user visits the Spelldesk page
 - **THEN** the "Build your profile" heading is visible
 - **AND** the "About" step section is displayed
 - **AND** the progress bar shows 33% completion

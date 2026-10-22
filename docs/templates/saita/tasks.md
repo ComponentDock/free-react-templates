@@ -1,11 +1,11 @@
-# Tasks & Design Notes: Pulse (Digital Agency)
+# Tasks & Design Notes: Saita (Digital Agency)
 
 ## Source & Mapping
 
 - **ColorLib Source:** Saita (`https://colorlib.com/wp/template/saita/`)
-- **New Template Name:** `pulse` (`@free-react-templates/pulse`)
+- **New Template Name:** `saita` (`@free-react-templates/saita`)
 - **Preview URL:** `https://preview.colorlib.com/theme/saita/`
-- **Deploy Domain:** `pulse.free.componentdock.com`
+- **Deploy Domain:** `saita.free.componentdock.com`
 
 ## Design & Structure Notes
 
@@ -30,9 +30,9 @@
 
 ## Implementation Checklist for Implementers
 
-- [ ] Create `apps/pulse` workspace (copy structure from a clean reference app like `apps/aurora`).
+- [ ] Create `apps/saita` workspace (copy structure from a clean reference app like `apps/aurora`).
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
-- [ ] Set `public/CNAME` to `pulse.free.componentdock.com`.
+- [ ] Set `public/CNAME` to `saita.free.componentdock.com`.
 - [ ] Build components (`Navbar`, `Hero`, `About`, `Counters`, `Services`, `Portfolio`, `Team`, `Pricing`, `Testimonials`, `Blog`, `Footer`).
 - [ ] Write Vitest unit tests covering all components with 100% coverage.
-- [ ] Run `scripts/verify-app.sh pulse`.
+- [ ] Run `scripts/verify-app.sh saita`.

@@ -1,4 +1,4 @@
-# Spellforge — Implementation Tasks & Design Notes
+# Spelldesk — Implementation Tasks & Design Notes
 
 ## Source
 

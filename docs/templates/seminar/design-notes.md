@@ -1,4 +1,4 @@
-# Forge — Design Notes
+# Seminar — Design Notes
 
 ## Replication Research
 

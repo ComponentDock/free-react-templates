@@ -79,7 +79,7 @@
 - [ ] 100% coverage on all components
 
 ### Phase 6: Verification
-- [ ] `scripts/verify-app.sh merchpass` passes
+- [ ] `scripts/verify-app.sh merchpick` passes
 - [ ] No ColorLib references in app code
 - [ ] Footer links to componentdock.com
 - [ ] Conventional commit + push

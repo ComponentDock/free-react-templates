@@ -1,4 +1,4 @@
-# Spec: Pulse (Digital Agency)
+# Spec: Saita (Digital Agency)
 
 ## Purpose
 
@@ -21,12 +21,12 @@ Recreation of ColorLib **Saita** (`https://colorlib.com/wp/template/saita/`), a 
 
 ## Requirements
 
-### Feature: Pulse Landing Page
+### Feature: Saita Landing Page
 
 #### Scenario: Header and Hero Section
 
-- **GIVEN** the user visits the Pulse template home page
-- **THEN** they should see the navbar with brand logo "Pulse." and links (Home, About, Work, Services, Pricing, Blog, Contact)
+- **GIVEN** the user visits the Saita template home page
+- **THEN** they should see the navbar with brand logo "Saita." and links (Home, About, Work, Services, Pricing, Blog, Contact)
 - **AND** the hero section with heading "We Are Digital Agency Helping To Boost Your sales" and CTA buttons "START A PROJECT" and "WATCH THE VIDEO"
 
 #### Scenario: Experience / About Section

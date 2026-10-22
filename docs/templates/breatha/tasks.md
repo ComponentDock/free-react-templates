@@ -84,7 +84,7 @@
 
 ## Tasks
 
-1. [ ] Scaffold app folder `apps/breacha` (copy simplest app, rename package)
+1. [ ] Scaffold app folder `apps/breatha` (copy simplest app, rename package)
 2. [ ] Add Google Fonts (Playfair Display + Work Sans) to index.html
 3. [ ] Create theme tokens in index.css (@theme with brand colors)
 4. [ ] Implement Navbar component (fixed, transparent→white scroll)
