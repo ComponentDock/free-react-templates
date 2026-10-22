@@ -43,6 +43,32 @@ placeholder text "Search...". The overall aesthetic is extremely minimal and
 clean — no sections, no footer, no complex layout. Just the heading and the
 search bar widget.
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-03/` | HTTP 200 · 1,947 B · title `Search Form/Bar 03` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-03/css/style.css?v=6cabd44c` | HTTP 200 · 10,489 B · sha256 `f0a3296eeff9` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×6,
+`#6c757d`×4, `#000000`×3, `#495057`×2, `#212529`×1, `#ced4da`×1,
+`#80bdff`×1, `#e9ecef`×1, `#fafafa`×1, `#ff5858`×1.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#495057`,
+`#212529`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#e74c3c`, `#f05a47`.
+
 ## Requirements
 
 ### Requirement: Centered heading

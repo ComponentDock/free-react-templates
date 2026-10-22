@@ -21,6 +21,32 @@ Preview was unreachable (404); design based on screenshot.
 - Inputs: bordered, clean, no background fill
 - Checkbox: teal when checked
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/login-form-10/` | HTTP 200 · 5,028 B · title `Login #10` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/login-form-10/css/style.css?v=32eff87a` | HTTP 200 · 16,446 B · sha256 `457117e0d2a6` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
+`#38d39f`×6, `#6c757d`×6, `#212529`×5, `#495057`×2, `#27b183`×2,
+`#b3b3b3`×2, `#cccccc`×2, `#888888`×2, `#e6e6e6`×2.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#b3b3b3`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#4ecdc4`.
+
 ## Requirements
 
 ### Requirement: App composition and title

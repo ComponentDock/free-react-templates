@@ -58,6 +58,36 @@ Right column (~55%):
   - Message (label + bordered textarea, tall)
 - "Send Message" button: olive/yellow-green bg, white text, full width
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-13/` | HTTP 200 · 9,921 B · title `Contact Form #3` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-13/css/style.css?v=14d53090` | HTTP 200 · 15,765 B · sha256 `3279580b692f` |
+
+> ⚠️ the demo's own `<title>` reads `Contact Form #3` though the path is
+> `contact-form-13` — the host's titles are not reliable labels; the
+> readings above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×8,
+`#212529`×7, `#ccda46`×5, `#6c757d`×4, `#000000`×4, `#495057`×3,
+`#66a6ff`×3, `#89f7fe`×3, `#b7c628`×2, `#a3b023`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#6c757d`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#5b9bd5`, `#7dd8c0`, `#c5cc5a`.
+
 ## Requirements
 
 ### Page layout

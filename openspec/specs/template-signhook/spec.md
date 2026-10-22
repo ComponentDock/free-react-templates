@@ -28,7 +28,7 @@ Bootstrap Framework for responsiveness.
 
 2. **White card with orange accent.** The login card is white (`#fff`),
    has generous rounded corners (~8px), and a soft box shadow. The
-   primary brand color is a warm orange (`~#e8913a`) used for the
+   primary brand color is a warm orange (`#fb771a`) used for the
    full-width "Log In" button and the "Remember me" checkbox checked
    state. The button has rounded corners (~4px radius) matching the
    card's softer aesthetic.
@@ -53,7 +53,7 @@ Bootstrap Framework for responsiveness.
 
 | Token          | Value                            | Use                                                    |
 | -------------- | -------------------------------- | ------------------------------------------------------ |
-| Brand orange   | `~#e8913a`                       | "Log In" button bg, checkbox checked state              |
+| Brand orange   | `#fb771a`                       | "Log In" button bg, checkbox checked state              |
 | Page bg        | `~#f5f7fa` (light gray)          | Right panel background                                 |
 | Card           | `#fff`, rounded ~8px, soft shadow | Login form container, centered on right panel           |
 | Heading text   | `~#333` (dark gray)              | "Login to ..." h2, ~24px, centered                     |
@@ -62,10 +62,10 @@ Bootstrap Framework for responsiveness.
 | Input bg       | `#fff`                           | Input field background                                 |
 | Placeholder    | `~#aaa` (muted gray)             | "your-email@gmail.com", "Your Password"                |
 | Button text    | `#fff`                           | "Log In" button label                                  |
-| Button bg      | `~#e8913a`                       | Full-width submit button                               |
+| Button bg      | `#fb771a`                       | Full-width submit button                               |
 | Button radius  | `~4px`                           | Rounded corners on button                              |
 | Link text      | `~#333` or brand color           | "Forgot Password" link                                 |
-| Checkbox       | `~#e8913a` when checked          | Custom or styled checkbox                              |
+| Checkbox       | `#fb771a` when checked          | Custom or styled checkbox                              |
 | Font family    | System sans-serif or Poppins     | Clean sans-serif stack                                 |
 | Image panel    | Full height, ~35% width          | Left lifestyle photo                                   |
 
@@ -74,6 +74,32 @@ returned HTTP 404. All tokens above are derived from the screenshot
 (`https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-04.jpg`)
 and the ColorLib template page description. Implementers should use these
 as guidelines and refine from the visual reference.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/login-form-04/` | HTTP 200 · 2,359 B · title `Login #4` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/login-form-04/css/style.css?v=dfa8daa4` | HTTP 200 · 15,591 B · sha256 `269a2cad14c3` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
+`#fb771a`×7, `#6c757d`×6, `#212529`×3, `#c55303`×2, `#495057`×2,
+`#de5e04`×2, `#888888`×2, `#e6e6e6`×2, `#ced4da`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#e8913a` → **`#fb771a`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#888888`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 
@@ -163,7 +189,7 @@ as guidelines and refine from the visual reference.
 - [ ] Password input has correct placeholder, label, and type="password"
 - [ ] "Remember me" checkbox toggles correctly
 - [ ] "Forgot Password" link is present and clickable
-- [ ] "Log In" button is full-width, orange (`~#e8913a`), rounded
+- [ ] "Log In" button is full-width, orange (`#fb771a`), rounded
 - [ ] Form validation: empty fields show errors on submit
 - [ ] Form submits with valid credentials (no crash)
 - [ ] Responsive: single-column on mobile (<768px)

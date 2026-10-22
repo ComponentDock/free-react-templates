@@ -52,6 +52,32 @@ shows:
 - Subtle card drop shadow
 - No navbar, no footer — pure standalone login form page
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/login-form-11/` | HTTP 200 · 3,159 B · title `Login 01` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/login-form-11/css/style.css?v=d5ab9ba5` | HTTP 200 · 16,423 B · sha256 `ea4466e813ad` |
+
+> ⚠️ the demo's own `<title>` reads `Login 01` though the path is `login-
+> form-11` — the host's titles are not reliable labels; the readings above
+> are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×11,
+`#1089ff`×9, `#007bff`×5, `#6c757d`×4, `#212529`×3, `#000000`×3,
+`#495057`×2, `#0062cc`×2, `#0056b3`×1, `#ced4da`×1.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: EntryVault template behaviour

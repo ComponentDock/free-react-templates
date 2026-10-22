@@ -56,6 +56,32 @@ Extracted from the screenshot analysis (preview unreachable — fell back to scr
 | Card padding    | 16px                        | Internal card spacing  |
 | Option padding  | 12px 16px                   | Individual option rows |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/multiselect-01/` | HTTP 200 · 1,453 B · title `Multiselect 01` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/multiselect-01/css/style.css?v=3e58a56a` | HTTP 200 · 21,905 B · sha256 `5a44482750d2` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
+`#212529`×9, `#000000`×9, `#f8f9fa`×5, `#007bff`×2, `#dae0e5`×2,
+`#52de97`×2, `#0056b3`×1, `#e2e6ea`×1, `#d3d9df`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#f8f9fa`,
+`#dae0e5`, `#e2e6ea`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#62c65b`.
+
 ## Requirements
 
 ### Requirement: Page layout

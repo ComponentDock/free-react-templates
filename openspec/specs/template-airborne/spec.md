@@ -404,6 +404,28 @@ required"] > input.input100.placeholder0.s1-txt1[type=text][name=name]
 | validation visibility                                                | hidden by default; shown on field hover; always shown at ≤992px                                                                                                                                                                                                                                                                                        | error state                                                                   |
 | attribution                                                          | Poppins-Regular 12–13px `#999` centred line inside the card, under the note                                                                                                                                                                                                                                                                            | footer requirement (ADDED vs the reference — the source has no footer credit) |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_06/index.html` | HTTP 200 · 8,733 B · title `Coming Soon 6` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_06/css/style.css?v=c14aad75` | HTTP 200 · 24,277 B · sha256 `ef21f5430c52` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×15,
+`#999999`×5, `#000000`×4, `#009efd`×4, `#2af598`×4, `#333333`×3,
+`#c80000`×3, `#cccccc`×2, `#0d1629`×2, `#00b26f`×2.
+
+**Low-chroma values the sheet actually uses** — `#999999`, `#333333`,
+`#cccccc`, `#212529`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: Full-viewport photo screen with brand wash

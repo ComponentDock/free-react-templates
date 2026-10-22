@@ -32,6 +32,32 @@ the left. Features a blue "Send Message" button.
 | Card shadow      | Light box-shadow         | Subtle shadow on white card                      |
 | Background image | Dark city skyline        | Use picsum.photos seed for placeholder           |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-10/` | HTTP 200 · 13,915 B · title `Contact Form 10` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-10/css/style.css?v=f01ff150` | HTTP 200 · 17,079 B · sha256 `66c999ad3124` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×14,
+`#007bff`×5, `#6c757d`×4, `#212529`×3, `#495057`×3, `#1089ff`×3,
+`#0062cc`×2, `#000000`×2, `#006fdc`×2, `#0056b3`×1.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#4a90d9`.
+
 ## Requirements
 
 ### Requirement: Full-width dark background image

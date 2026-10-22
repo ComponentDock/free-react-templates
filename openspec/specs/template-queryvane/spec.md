@@ -7,6 +7,32 @@ Recreation of ColorLib "Search Form Bar 17"
 A toggleable search form bar with a navbar, overlay search panel, and
 Component Dock footer. Preview was unreachable; design based on screenshot analysis.
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-17/` | HTTP 200 · 4,550 B · title `Search #1` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-17/css/style.css?v=6209e455` | HTTP 200 · 17,178 B · sha256 `6a5417c8e3be` |
+
+> ⚠️ the demo's own `<title>` reads `Search #1` though the path is `search-
+> form-bar-17` — the host's titles are not reliable labels; the readings
+> above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×9,
+`#007bff`×5, `#6c757d`×4, `#212529`×3, `#000000`×3, `#495057`×2,
+`#0062cc`×2, `#0056b3`×1, `#ced4da`×1, `#80bdff`×1.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Requirement: Navbar displays brand and navigation

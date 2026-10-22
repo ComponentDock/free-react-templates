@@ -378,6 +378,28 @@ span.l1-txt3.p-b-9.days` (35) + `span.s1-txt2` (Days)
 | validation visibility | hidden by default; shown on field hover; always shown at ≤992px                                                                                                                                                               | error state                                                                   |
 | attribution           | Poppins-Regular 12–13px `#e5e5e5`/`#fff` centred line under the note                                                                                                                                                          | footer requirement (ADDED vs the reference — the source has no footer credit) |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_07/index.html` | HTTP 200 · 5,030 B · title `Coming Soon 7` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_07/css/style.css?v=f68b666c` | HTTP 200 · 11,990 B · sha256 `e4da0986fa2c` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×11,
+`#7579ff`×10, `#b224ef`×8, `#999999`×5, `#c80000`×3, `#57b846`×3,
+`#212529`×1, `#007bff`×1, `#0056b3`×1, `#666666`×1.
+
+**Low-chroma values the sheet actually uses** — `#999999`, `#212529`,
+`#666666`, `#e5e5e5`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: Full-viewport photo screen with brand wash

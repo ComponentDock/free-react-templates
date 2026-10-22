@@ -33,7 +33,7 @@ Fetched 2026-09-11. Structure extracted from rendered HTML:
 | --------------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Font family (body)          | `"Montserrat", sans-serif`                        | Clean geometric sans-serif, weights 300/400/700                                           |
 | Primary brand color         | `#1264fa`                                         | Vivid blue — buttons, links, icon bg circles, hover states, nav CTA                       |
-| Primary button hover        | `#2671fa`                                         | Slightly lighter blue on hover                                                             |
+| Primary button hover        | `#1264fa`                                         | Slightly lighter blue on hover                                                             |
 | Text color (headings)       | `#000839`                                         | Dark navy — h1, h2, h3, hero text, testimonial author name                                |
 | Text color (body)           | `#000000`                                         | Footer links, body paragraphs                                                              |
 | Text color (muted)          | `rgba(0, 8, 57, 0.5)`                            | Subtitles, feature descriptions, date labels, stat descriptions                           |
@@ -67,6 +67,39 @@ The preview was unreachable for browser rendering at time of analysis. Visual no
 - Overall tone: professional creative agency, clean and spacious
 
 ---
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/design/` | HTTP 200 · 24,554 B · title `Design Free HTML Template by Colorlib` |
+| stylesheet | `https://preview.colorlib.com/theme/design/css/bootstrap.min.css` | HTTP 200 · 25,251 B · sha256 `8671f5fefb60` |
+| stylesheet | `https://preview.colorlib.com/theme/design/css/owl.carousel.min.css` | HTTP 200 · 2,888 B · sha256 `291f9774e2bf` |
+| stylesheet | `https://preview.colorlib.com/theme/design/css/owl.theme.default.min.css` | HTTP 200 · 89 B · sha256 `2a5681786e0f` |
+| stylesheet | `https://preview.colorlib.com/theme/design/css/jquery.fancybox.min.css` | HTTP 200 · 9,369 B · sha256 `86ea6c7543e6` |
+| stylesheet | `https://preview.colorlib.com/theme/design/fonts/icomoon/style.css` | HTTP 200 · 79,820 B · sha256 `b696dfc59a40` |
+| stylesheet | `https://preview.colorlib.com/theme/design/fonts/flaticon/font/flaticon.css` | HTTP 200 · 1,286 B · sha256 `25b71562d73d` |
+| stylesheet | `https://preview.colorlib.com/theme/design/css/aos.css` | HTTP 200 · 7,330 B · sha256 `9b90cbe78e7d` |
+| stylesheet | `https://preview.colorlib.com/theme/design/css/style.css` | HTTP 200 · 27,802 B · sha256 `4567f225ba66` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×42,
+`#1264fa`×29, `#6c757d`×14, `#000000`×14, `#007bff`×11, `#f8f9fa`×9,
+`#212529`×8, `#495057`×7, `#cccccc`×5, `#000839`×5.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#2671fa` → **`#1264fa`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#f8f9fa`,
+`#212529`, `#495057`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 

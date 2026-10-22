@@ -381,6 +381,28 @@ distinctive in EIGHT ways — do not blur it with `01`–`12`:
 | transitions          | `all .4s` (field, pill, arrow, social rings, play disc), `opacity .4s` (bubble), `opacity 1000ms` / `7000ms` interval (slideshow)                                                                                                          | interaction                                    |
 | attribution          | a small low-emphasis line linking `https://www.componentdock.com/` ("Component Dock"), pinned absolutely so the three-band `space-between` geometry is untouched                                                                            | ADDED vs the reference (the source has no footer credit) |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_13/index.html` | HTTP 200 · 5,976 B · title `Coming Soon 13` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_13/css/style.css?v=20641a4e` | HTTP 200 · 12,391 B · sha256 `8f1a5511b6ee` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×12,
+`#999999`×6, `#c80000`×3, `#555555`×2, `#212529`×1, `#007bff`×1,
+`#0056b3`×1, `#666666`×1, `#000000`×1, `#333333`×1.
+
+**Low-chroma values the sheet actually uses** — `#999999`, `#555555`,
+`#212529`, `#666666`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: Single-viewport shell (fixed slideshow + one scrim + a three-band column)

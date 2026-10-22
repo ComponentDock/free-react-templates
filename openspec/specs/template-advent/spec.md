@@ -276,6 +276,28 @@ body/placeholder greys `#555555` / `#999999`, and the `#c80000` validation red.
 | validation visibility | hidden by default; shown on field hover; always shown at ≤992px | error state |
 | countdown behaviour | target `{Y:0,M:0,D:35,h:18,m:0,s:0}`; past target → `now + 35 d + 18 h`; 1 s tick; days unpadded, h/m/s padded to 2; interval cleared at zero / on unmount | counter |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_05/index.html` | HTTP 200 · 2,138 B · title `Coming Soon 5` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_05/css/style.css?v=61a959d8` | HTTP 200 · 10,652 B · sha256 `733b4dc65427` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
+`#f77062`×4, `#fe5196`×4, `#999999`×4, `#f65342`×4, `#fb3282`×4,
+`#c80000`×3, `#555555`×2, `#212529`×1, `#666666`×1.
+
+**Low-chroma values the sheet actually uses** — `#999999`, `#555555`,
+`#212529`, `#666666`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: Full-viewport gradient screen

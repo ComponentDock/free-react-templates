@@ -59,6 +59,31 @@ with `apps/`, `openspec/specs/`, `docs/templates/`, or any TEMPLATES.md name.
   - Modal shadow: `0px 10px 34px -15px rgba(0,0,0,0.24)`
   - Close button: gray with hover highlight
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/modal-11/` | HTTP 200 · 2,363 B · title `Modal #1` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/modal-11/css/style.css?v=0a55b9d6` | HTTP 200 · 15,042 B · sha256 `f1b411267894` |
+
+> ⚠️ the demo's own `<title>` reads `Modal #1` though the path is `modal-11`
+> — the host's titles are not reliable labels; the readings above are for
+> the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×7,
+`#007bff`×5, `#212529`×3, `#000000`×3, `#0062cc`×2, `#0056b3`×1,
+`#0069d9`×1, `#005cbf`×1, `#dee2e6`×1, `#b3b3b3`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#dee2e6`,
+`#b3b3b3`; any sampled Tailwind grey above is an approximation of these.
+
 ## Requirements
 
 ### Requirement: Launch section renders with heading and CTA button

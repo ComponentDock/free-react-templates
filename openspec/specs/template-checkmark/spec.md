@@ -40,6 +40,31 @@ with a violet accent palette.
   - Background: `#fafafa` light / `#030712` dark
   - Checked container: rounded-xl with subtle ring animation
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/checkbox-07/` | HTTP 200 · 1,439 B · title `Checkbox 07` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/checkbox-07/css/style.css?v=2070c634` | HTTP 200 · 10,045 B · sha256 `d16399aa0c60` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×3,
+`#000000`×2, `#212529`×1, `#fafafa`×1, `#e6e6e6`×1, `#d0a8dc`×1,
+`#bd83ce`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#fafafa`,
+`#e6e6e6`; any sampled Tailwind grey above is an approximation of these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#7c3aed`.
+
 ## Requirements
 
 ### Requirement: Renders the main heading and subtitle

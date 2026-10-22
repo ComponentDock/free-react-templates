@@ -20,7 +20,7 @@ a primary "Log In" button, and social login options (Facebook + Google).
 | ------------ | ------------------- | ---------------------------------------------------------- |
 | Page bg      | `#f5f5f5`           | Full-viewport light gray background (right half + body)    |
 | Card bg      | `#ffffff`           | White login card background                                |
-| Brand orange | `#f26522`           | "Log In" button bg, "Remember me" checkbox, "Forgot Password" link |
+| Brand orange | `#fb771a`           | "Log In" button bg, "Remember me" checkbox, "Forgot Password" link |
 | Facebook blue| `#3b5998`           | "Login with Facebook" button bg                            |
 | Google red   | `#dd4b39`           | "Login with Google" button bg                              |
 | Title text   | `#333333`           | "LOGIN TO PASSGUARD" heading                               |
@@ -36,6 +36,36 @@ a primary "Log In" button, and social login options (Facebook + Google).
 | Card shadow  | `0 8px 32px rgba(0,0,0,0.08)` | Subtle elevated shadow                          |
 | Card max-w   | ~420px              | Centered in right half                                     |
 | Left image   | Full-height cover   | Kitchen lifestyle photo via picsum (seeded)                 |
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/login-form-05/` | HTTP 200 · 3,838 B · title `Login #5` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/login-form-05/css/style.css?v=28a1249f` | HTTP 200 · 16,207 B · sha256 `ea0228f350bd` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×12,
+`#fb771a`×7, `#6c757d`×6, `#212529`×3, `#c55303`×2, `#495057`×2,
+`#de5e04`×2, `#888888`×2, `#e6e6e6`×2, `#ced4da`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#f26522` → **`#fb771a`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#888888`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#d4500a`.
 
 ## Requirements
 

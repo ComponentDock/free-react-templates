@@ -105,6 +105,32 @@ Source slug + preview URL are recorded below.
 | `--form-max-width`   | ~800px                         | Centered container width for the form and info columns                      |
 | `--col-gap`          | 40–60px                        | Horizontal gap between the two info columns                                 |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-15/` | HTTP 200 · 2,773 B · title `Contact Form #5` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-15/css/style.css?v=f578b57e` | HTTP 200 · 13,532 B · sha256 `dc952ec40953` |
+
+> ⚠️ the demo's own `<title>` reads `Contact Form #5` though the path is
+> `contact-form-15` — the host's titles are not reliable labels; the
+> readings above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#212529`×7,
+`#ffffff`×7, `#6c757d`×4, `#ccda46`×4, `#000000`×4, `#495057`×3,
+`#b7c628`×2, `#fcf8e3`×1, `#ced4da`×1, `#e9efb0`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#6c757d`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Requirement: Page shell

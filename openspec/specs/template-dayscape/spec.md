@@ -12,7 +12,7 @@ Stack: Vite + React 19 + TypeScript + Tailwind CSS 4. No ColorLib references in 
 
 - **Background**: `#f3f4f6` (Tailwind `gray-100`) — light gray page background
 - **Surface**: `#ffffff` (white) — datepicker container background
-- **Primary/Accent**: `#3b82f6` (Tailwind `blue-500`) — selected date highlight, month nav arrows
+- **Primary/Accent**: `#007bff` (Tailwind `blue-500`) — selected date highlight, month nav arrows
 - **Text primary**: `#111827` (Tailwind `gray-900`) — headings, day numbers, day headers
 - **Text muted**: `#6b7280` (Tailwind `gray-500`) — placeholder, adjacent month dates
 - **Icon accent**: `#e11d48` (Tailwind `rose-600`) — footer icons (chevron, clock, trash, close)
@@ -42,6 +42,36 @@ Stack: Vite + React 19 + TypeScript + Tailwind CSS 4. No ColorLib references in 
 - **Month nav arrows**: Circular, `w-8 h-8`, `bg-blue-500 text-white`, `rounded-full`, hover `bg-blue-600`
 - **Footer icons**: `w-5 h-5`, `text-rose-600`, hover `text-rose-700`
 - **Selected date**: `w-8 h-8`, `bg-blue-500 text-white`, `rounded-full`, centered
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/calendar-09/` | HTTP 200 · 8,117 B · title `Calendar 09` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/calendar-09/css/style.css?v=6d2199ce` | HTTP 200 · 23,693 B · sha256 `48dbc60cd528` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×13,
+`#212529`×5, `#007bff`×5, `#777777`×5, `#6c757d`×4, `#000000`×4,
+`#dee2e6`×3, `#eeeeee`×3, `#337ab7`×3, `#495057`×2.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#3b82f6` → **`#007bff`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#777777`,
+`#6c757d`, `#dee2e6`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#e11d48`.
 
 ## Requirements
 

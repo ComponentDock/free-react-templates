@@ -48,6 +48,28 @@ copied).
 Revolve lives in `apps/revolve` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/carousel-01/` | HTTP 200 · 3,202 B · title `Carousel 01` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/carousel-01/css/style.css?v=9a407492` | HTTP 200 · 21,811 B · sha256 `3e1cad54430d` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×7,
+`#000000`×2, `#d6d6d6`×2, `#869791`×2, `#212529`×1, `#007bff`×1,
+`#0056b3`×1, `#3e64ff`×1, `#e6e6e6`×1, `#4d4d4d`×1.
+
+**Low-chroma values the sheet actually uses** — `#d6d6d6`, `#869791`,
+`#212529`, `#e6e6e6`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Requirement: Navigation bar

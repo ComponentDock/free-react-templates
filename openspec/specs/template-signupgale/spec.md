@@ -26,12 +26,12 @@ Extracted from the screenshot (preview unreachable — tokens inferred from visu
 | Input background          | `#ffffff`                      | White input fields                            |
 | Input text color          | `#333333`                      | Dark text for entered values                  |
 | Placeholder text color    | `#aaaaaa`                      | Light gray placeholder text                   |
-| Primary button color      | `#7c6bf5`                      | Purple/indigo — "Register" button             |
-| Primary button hover      | `#6a5ae0`                      | Darker purple on hover                        |
+| Primary button color      | `#6c63ff`                      | Purple/indigo — "Register" button             |
+| Primary button hover      | `#483dff`                      | Darker purple on hover                        |
 | Button border-radius      | `6px`                          | Slightly rounded rectangular                  |
 | Button text color         | `#ffffff`                      | White text on register button                 |
-| Checkbox color            | `#7c6bf5`                      | Purple checked checkbox, matches button       |
-| Terms link color          | `#7c6bf5`                      | Purple links for Terms/Privacy Policy         |
+| Checkbox color            | `#6c63ff`                      | Purple checked checkbox, matches button       |
+| Terms link color          | `#6c63ff`                      | Purple links for Terms/Privacy Policy         |
 | "or" divider color        | `#999999`                      | Gray text for "— or register with —"          |
 | Divider line color        | `#cccccc`                      | Light gray horizontal lines                   |
 | Facebook button color     | `#3b5998`                      | Facebook brand dark blue                      |
@@ -63,6 +63,34 @@ A split-screen registration page:
   10. Three circular social login buttons: Facebook (dark blue), Twitter (light blue), Google (red)
 - **Footer:** Minimal — site name + Component Dock link (replacing any ColorLib attribution)
 - **Overall feel:** Clean, modern, minimal. Professional registration page with a friendly flat illustration providing visual interest. Purple brand color gives a contemporary, approachable aesthetic.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/signup-form-07/` | HTTP 200 · 5,366 B · title `Sign Up #7` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/signup-form-07/css/style.css?v=49040421` | HTTP 200 · 16,538 B · sha256 `32b8feb41827` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
+`#6c63ff`×6, `#6c757d`×6, `#212529`×3, `#495057`×2, `#3c30ff`×2,
+`#b3b3b3`×2, `#888888`×2, `#e6e6e6`×2, `#2417ff`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#7c6bf5` → **`#6c63ff`** — the sheet paints `a{color}` with it
+- `#6a5ae0` → **`#483dff`** — the sheet paints `.cl-btn-
+  primary:hover{background-color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#b3b3b3`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 
@@ -137,7 +165,7 @@ The form SHALL display a full-width purple "Register" button.
 - **GIVEN** the form is displayed
 - **WHEN** the user views the button area
 - **THEN** a "Register" button is visible
-- **AND** the button has a purple background (#7c6bf5)
+- **AND** the button has a purple background (#6c63ff)
 - **AND** the button has white text
 - **AND** the button spans the full width of the form column
 - **AND** the button has rounded corners (6px radius)

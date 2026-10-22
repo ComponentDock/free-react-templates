@@ -19,7 +19,7 @@ large circular navy icons below the card.
 
 | Token             | Value                   | Notes                                      |
 | ----------------- | ----------------------- | ------------------------------------------ |
-| Brand navy        | `#2C3E7B`              | Button bg, icon circles                    |
+| Brand navy        | `#2553b8`              | Button bg, icon circles                    |
 | Link teal         | `#55B68A`              | Email/website link text                    |
 | Background        | `#F5F5F5`              | Page background (light gray)               |
 | Card surface      | `#FFFFFF`              | Form panel background                      |
@@ -54,6 +54,36 @@ The page has three sections on a light gray background:
    - Each has a large circular navy icon container (~60px) with white icon
    - Below each: label (bold) + value text
    - Items: Address, Phone, Email (teal link), Website (teal link)
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-06/` | HTTP 200 · 14,322 B · title `Contact Form 06` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-06/css/style.css?v=9eb9465a` | HTTP 200 · 16,597 B · sha256 `4c27542db9df` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×11,
+`#2553b8`×7, `#007bff`×5, `#6c757d`×4, `#000000`×4, `#212529`×3,
+`#495057`×3, `#0062cc`×2, `#1c408e`×2, `#0056b3`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#2c3e7b` → **`#2553b8`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#55b68a`.
 
 ## Requirements
 

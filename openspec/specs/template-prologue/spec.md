@@ -385,6 +385,28 @@ outdoor scene closest to the reference's grey-green mountain/forest photograph.
 This is the ONE intentional deviation inside the design reference — every token
 around it is unchanged.
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_14/index.html` | HTTP 200 · 4,607 B · title `Coming Soon 14` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_14/css/style.css?v=0ef04472` | HTTP 200 · 11,868 B · sha256 `b15bfa2b0746` |
+
+**Live palette** (hex × occurrences in that sheet): `#666666`×6,
+`#ffffff`×5, `#333333`×5, `#c80000`×3, `#999999`×2, `#212529`×1,
+`#007bff`×1, `#0056b3`×1, `#ffe151`×1, `#e6e6e6`×1.
+
+**Low-chroma values the sheet actually uses** — `#666666`, `#333333`,
+`#999999`, `#212529`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: Split-screen shell (one 100vh row, two panels, one occluded scrim)

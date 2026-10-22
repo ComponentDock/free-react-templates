@@ -18,13 +18,43 @@ A single-page React component showcase displaying a multi-section/sub-category d
 ## Design Tokens
 
 - **Font:** Poppins (Google Fonts) — standard for ColorLib Bootstrap snippets
-- **Primary brand color:** #0071bc (ColorLib standard blue, derived from screenshot common palette)
+- **Primary brand color:** #007bff (ColorLib standard blue, derived from screenshot common palette)
 - **Background:** #ffffff (white)
 - **Text color:** #333333
 - **Border color:** #dee2e6 (light gray borders on dropdown sections)
 - **Button border-radius:** 4px (standard Bootstrap)
 - **Dropdown shadow:** 0 2px 8px rgba(0,0,0,0.15)
 - **Section divider:** 1px solid #dee2e6
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/dropdown-20/` | HTTP 200 · 7,344 B · title `Dropdown #8` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/dropdown-20/css/style.css?v=c32a8784` | HTTP 200 · 11,894 B · sha256 `1b2401343f43` |
+
+> ⚠️ the demo's own `<title>` reads `Dropdown #8` though the path is
+> `dropdown-20` — the host's titles are not reliable labels; the readings
+> above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×6,
+`#212529`×3, `#000000`×3, `#007bff`×2, `#f8f9fa`×2, `#0056b3`×1,
+`#16181b`×1, `#6c757d`×1, `#efefef`×1, `#b3b3b3`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#0071bc` → **`#007bff`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#f8f9fa`,
+`#16181b`, `#6c757d`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 
@@ -112,7 +142,7 @@ The footer SHALL contain a link to https://www.componentdock.com/ branded as "Co
 The template SHALL use the following design tokens from the original ColorLib reference:
 
 - Font: Poppins (Google Fonts)
-- Primary brand color: #0071bc
+- Primary brand color: #007bff
 - Button border-radius: 4px
 - Background: #ffffff
 - Dropdown shadow: 0 2px 8px rgba(0,0,0,0.15)
@@ -121,7 +151,7 @@ The template SHALL use the following design tokens from the original ColorLib re
 
 - **WHEN** the page renders
 - **THEN** the font family includes Poppins
-- **AND** primary buttons use the #0071bc color
+- **AND** primary buttons use the #007bff color
 - **AND** the dropdown has a visible shadow
 - **AND** button corners have 4px radius
 

@@ -29,18 +29,18 @@ Extracted from the screenshot (preview unreachable — tokens derived from visua
 | Input border              | `#e0e0e0`                      | Bottom border only (underline style)           |
 | Input background          | `transparent`                  | No visible input background                    |
 | Placeholder text color    | `#cccccc`                      | Light gray placeholder                         |
-| Primary button color      | `#c5b358`                      | Golden/olive — "Sign Up" button                |
+| Primary button color      | `#d5c455`                      | Golden/olive — "Sign Up" button                |
 | Primary button hover      | `#b3a24e`                      | Darker golden on hover                         |
 | Button border-radius      | `4px`                          | Slight rounding                                |
 | Button text color         | `#ffffff`                      | White text                                     |
 | Avatar circle background  | `#e0e0e0`                      | Light gray circle for user icon                |
 | Avatar icon color         | `#999999`                      | Gray person icon                               |
-| Avatar badge color        | `#c5b358`                      | Golden/olive checkmark badge                   |
+| Avatar badge color        | `#d5c455`                      | Golden/olive checkmark badge                   |
 | Facebook icon background  | `#3b5998`                      | Facebook brand dark blue                       |
 | Twitter icon background   | `#1da1f2`                      | Twitter brand light blue                       |
 | Social icon size          | `40px` diameter                | Circular social login icons                    |
 | Divider text color        | `#999999`                      | Gray for "or" and "Signup with"                |
-| Sign In link color        | `#c5b358`                      | Golden/olive link                              |
+| Sign In link color        | `#d5c455`                      | Golden/olive link                              |
 | "Already member" text     | `#999999`                      | Gray body text                                 |
 
 ## Visual Design
@@ -60,13 +60,47 @@ A centered-card registration page:
   5. Email Address field — label "Email Address" in gray, underline-style input with placeholder "johndoe@gmail.com"
   6. Password field — label "Password" in gray, underline-style input with placeholder "Password"
   7. Confirm Password field — label "Confirm Password" in gray, underline-style input with placeholder "Confirm Password"
-  8. "Sign Up" button — full-width, golden/olive (#c5b358) background, white text
+  8. "Sign Up" button — full-width, golden/olive (#d5c455) background, white text
   9. "or" text divider — gray, centered
   10. "Signup with" text — gray, centered
   11. Social icons — Facebook (dark blue circle) and Twitter (light blue circle), centered, side by side
   12. "I'm already a member! Sign In" text — gray body with golden "Sign In" link
 - **Footer:** Minimal — site name + Component Dock link (replacing any ColorLib attribution)
 - **Overall feel:** Clean, minimal, friendly. The golden accent color gives warmth. The underline-only inputs and circular social icons create a modern, lightweight aesthetic. No split-screen or background image.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/signup-form-12/` | HTTP 200 · 4,999 B · title `Sign Up 01` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/signup-form-12/css/style.css?v=4e2c0ed1` | HTTP 200 · 17,420 B · sha256 `bd931672ae72` |
+
+> ⚠️ the demo's own `<title>` reads `Sign Up 01` though the path is `signup-
+> form-12` — the host's titles are not reliable labels; the readings above
+> are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×13,
+`#d5c455`×8, `#007bff`×5, `#6c757d`×4, `#212529`×3, `#000000`×3,
+`#495057`×2, `#0062cc`×2, `#0056b3`×1, `#ced4da`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#c5b358` → **`#d5c455`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#b3a24e`.
 
 ## Requirements
 

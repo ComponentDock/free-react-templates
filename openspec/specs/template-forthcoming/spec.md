@@ -417,6 +417,27 @@ ex@abc.xyz"] > input.s1-txt1.placeholder0.input100[type=text][name=email]
 | countdown behaviour   | target `now + 35 d + 18 h` (the configured `new Date(0,-1,35,…)` is always past); 1 s tick; days raw, h/m/s zero-padded; immediate first paint; interval cleared at 0                                                          | countdown                                                                     |
 | attribution           | Poppins-Regular 12–13px white/70 centred line below the form                                                                                                                                                                   | footer requirement (ADDED vs the reference — the source has no footer credit) |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_08/index.html` | HTTP 200 · 3,127 B · title `Coming Soon 8` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_08/css/style.css?v=baa69ba2` | HTTP 200 · 11,247 B · sha256 `15e5a9f112bf` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×14,
+`#61045f`×5, `#aa076b`×4, `#4272d7`×3, `#c80000`×3, `#212529`×1,
+`#666666`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#666666`; any
+sampled Tailwind grey above is an approximation of these.
+
 ## Requirements
 
 ### Feature: Full-viewport double-overlay photo screen

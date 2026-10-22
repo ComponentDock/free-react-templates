@@ -48,6 +48,32 @@ The page renders:
   - Surface cards: Pure white (`#ffffff`) with subtle borders (`#e2e8f0`)
   - Typography: Sans-serif (Inter system font)
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/calendar-02/` | HTTP 200 · 4,370 B · title `Calendar 02` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/calendar-02/css/style.css?v=7d4a7424` | HTTP 200 · 10,994 B · sha256 `d5d1e3bf00aa` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×12,
+`#000000`×4, `#212529`×3, `#dee2e6`×3, `#39cb75`×2, `#adb5bd`×1,
+`#f8f9fd`×1, `#2a3246`×1, `#c9c9c9`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#dee2e6`,
+`#adb5bd`, `#f8f9fd`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#4f46e5`.
+
 ## Requirements
 
 ### Requirement 1: Vertical Day Sidebar

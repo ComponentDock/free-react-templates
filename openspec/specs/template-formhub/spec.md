@@ -57,6 +57,36 @@ Right column (~55%):
   - Row 2: Budget (dropdown "Choose...") + Target Lunch (text input "Example: January 15th")
 - "Send Message" button: full width, olive bg, white text
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-14/` | HTTP 200 · 4,726 B · title `Contact Form #4` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-14/css/style.css?v=b9a397e5` | HTTP 200 · 16,915 B · sha256 `3478dc962c13` |
+
+> ⚠️ the demo's own `<title>` reads `Contact Form #4` though the path is
+> `contact-form-14` — the host's titles are not reliable labels; the
+> readings above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
+`#212529`×7, `#ccda46`×5, `#495057`×5, `#6c757d`×5, `#000000`×5,
+`#ced4da`×2, `#e9efb0`×2, `#e9ecef`×2, `#b7c628`×2.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#495057`,
+`#6c757d`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#7a8b5c`, `#c5cc5a`, `#e53e3e`.
+
 ## Requirements
 
 ### Page layout

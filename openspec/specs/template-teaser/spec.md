@@ -52,6 +52,31 @@ layout, colors, typography, and content types (no ColorLib assets copied).
     coming-soon series.
   - **Buttons:** pink filled (#e15e88), likely rounded, centered.
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/08-comming-soon/index.html` | HTTP 200 · 4,984 B |
+| stylesheet | `https://colorlib.com/etc/cs/08-comming-soon/css/style.css?v=19c47045` | HTTP 200 · 9,480 B · sha256 `1561487e8005` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×5,
+`#f84982`×3, `#333333`×2, `#555555`×1, `#e45f74`×1, `#000000`×1,
+`#2a61d6`×1, `#3aa4f8`×1, `#f43846`×1, `#8f614a`×1.
+
+**Low-chroma values the sheet actually uses** — `#333333`, `#555555`; any
+sampled Tailwind grey above is an approximation of these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#e15e88`, `#b63841`, `#7e4e41`.
+
 ## Requirements
 
 ### Feature: Teaser — Coming Soon Landing Page

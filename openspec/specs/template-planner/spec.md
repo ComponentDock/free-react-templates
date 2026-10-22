@@ -23,7 +23,7 @@ structure):
    above the widget.
 2. **Month navigation row** — left chevron (`‹`), centered month/year label
    **"December 2020"** in blue, right chevron (`›`).
-3. **Day-name header bar** — a solid blue bar (`#3d88f7`) with the seven
+3. **Day-name header bar** — a solid blue bar (`#1089ff`) with the seven
    weekday abbreviations **Sun Mon Tue Wed Thu Fri Sat** in white, centered,
    in 7 equal columns.
 4. **Date grid** — a white 7-column × 5-row grid for the month, thin light
@@ -37,7 +37,7 @@ structure):
 
 The defining signature of this template is its **restraint**: ONE widget,
 ONE accent color, flat design, no gradients, no photography. The blue
-(`#3d88f7`) is used in exactly two places (the day-header bar and the
+(`#1089ff`) is used in exactly two places (the day-header bar and the
 selected-date circle); the month label uses a darker blue (`#1371e6`); the
 page background is `#f7f8fc`. Recreate the widget 1:1 with matching tokens,
 typography, and interaction (month navigation + date selection — the
@@ -81,7 +81,7 @@ recreation SHALL make them functional).
   showing a single centered widget on a very light grey-blue background
   (`#f7f8fc`). Top to bottom: centered dark title **"Calendar #01"**; a
   month-navigation row (light periwinkle-grey chevrons flanking the blue
-  label **"December 2020"**); a solid blue (`#3d88f7`) weekday bar with
+  label **"December 2020"**); a solid blue (`#1089ff`) weekday bar with
   `Sun Mon Tue Wed Thu Fri Sat` in white; a white date grid of 7 columns ×
   5 rows with thin light-grey (`#e6e6e6`) cell separators, dates centered:
   1–18 light grey (`#7c7d81`), **19 in a solid blue circle with white
@@ -108,7 +108,7 @@ Palette (pixel-sampled from the screenshot — the token source):
 | ---------------- | --------- | -------------------------------------------------------------- |
 | page background  | `#f7f8fc` | very light grey-blue page bg around the widget                 |
 | card background  | `#ffffff` | the calendar card itself                                       |
-| accent blue      | `#3d88f7` | weekday header bar + selected/today date circle                |
+| accent blue      | `#1089ff` | weekday header bar + selected/today date circle                |
 | month label blue | `#1371e6` | "December 2020" month/year text                                |
 | chevron grey     | `#b9cae7` | prev/next month chevrons (light periwinkle grey)               |
 | past-date grey   | `#7c7d81` | dates before the selected date                                 |
@@ -136,7 +136,7 @@ flat and monochrome-plus-one-blue.
 ### Radii / shapes
 
 - **Selected/today date = full circle** (`border-radius: 9999px`) in
-  `#3d88f7`, white number inside, roughly the cell size.
+  `#1089ff`, white number inside, roughly the cell size.
 - Weekday bar: square corners (no radius).
 - No card shadow, no card radius (flat white card on `#f7f8fc`).
 
@@ -156,6 +156,36 @@ flat and monochrome-plus-one-blue.
 - Reference is a static desktop widget; the recreation SHALL be responsive:
   7 columns preserved at all widths (cells shrink), no horizontal overflow,
   widget stays centered.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/calendar-01/` | HTTP 200 · 2,164 B · title `Calendar 01` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/calendar-01/css/style.css?v=16574d12` | HTTP 200 · 10,446 B · sha256 `a04c3437c458` |
+
+**Live palette** (hex × occurrences in that sheet): `#1089ff`×5,
+`#ffffff`×4, `#000000`×3, `#dcdcdc`×2, `#212529`×1, `#007bff`×1,
+`#0056b3`×1, `#f8f9fd`×1, `#d5d5d5`×1, `#f0f0f0`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#3d88f7` → **`#1089ff`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#dcdcdc`, `#212529`,
+`#f8f9fd`, `#d5d5d5`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#1371e6`, `#b9cae7`.
 
 ## Requirements
 
@@ -240,7 +270,7 @@ The system SHALL render a solid blue weekday bar with seven equal columns.
 
 - **GIVEN** the Planner page is rendered
 - **WHEN** the user views the weekday header bar
-- **THEN** the bar SHALL have a solid `#3d88f7` background
+- **THEN** the bar SHALL have a solid `#1089ff` background
 - **AND** it SHALL list the seven weekday abbreviations in order — `Sun`,
   `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat` — in white, centered, in 7
   equal-width columns
@@ -274,7 +304,7 @@ SHALL move the selection when a date is clicked.
 
 - **GIVEN** the Planner page is rendered showing December 2020
 - **WHEN** the user views the date 19
-- **THEN** the date 19 SHALL render as white text inside a solid `#3d88f7`
+- **THEN** the date 19 SHALL render as white text inside a solid `#1089ff`
   circle (the reference's screenshot-date "today" indicator — recreated as
   the SELECTED date so the initial render matches the screenshot 1:1)
 
@@ -336,7 +366,7 @@ convention on every template (the original has no footer).
       (Sun–Sat, white) → 7×5 date grid → minimal Component Dock footer;
       `#f7f8fc` page bg, white card, NO navbar/hero/images
 - [ ] Brand tokens in `@theme`, used via Tailwind classes: accent
-      `#3d88f7`, month label `#1371e6`, chevron `#b9cae7`, past date
+      `#1089ff`, month label `#1371e6`, chevron `#b9cae7`, past date
       `#7c7d81`, future date `#111111`, grid line `#e6e6e6`, page bg
       `#f7f8fc`, white `#ffffff`
 - [ ] Font: sans-serif via Google Fonts `<link>` in `index.html`
@@ -344,7 +374,7 @@ convention on every template (the original has no footer).
       the substitution in the PR); title ~28–32px/600, month label
       ~18–20px, weekday ~13–14px, dates ~14–16px
 - [ ] Initial render matches the screenshot 1:1: "December 2020", two
-      leading blank cells (Tue start), 1–18 grey, **19 in solid `#3d88f7`
+      leading blank cells (Tue start), 1–18 grey, **19 in solid `#1089ff`
       circle with white text**, 20–31 near-black
 - [ ] Interactions functional: prev/next chevrons switch months (label +
       grid, year rollover correct); clicking a date moves the blue circle;

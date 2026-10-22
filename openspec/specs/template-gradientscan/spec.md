@@ -95,6 +95,28 @@ Component Dock credit.
   photos). Icons → lucide-react Search icon. Form prevents default (no
   backend). No assets copied. Google Fonts Poppins link in index.html.
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-04/` | HTTP 200 · 1,933 B · title `Search Form/Bar 04` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-04/css/style.css?v=dfd15eaa` | HTTP 200 · 11,710 B · sha256 `3cb80a63d305` |
+
+**Live palette** (hex × occurrences in that sheet): `#3e2bcc`×18,
+`#c643e0`×16, `#ffffff`×7, `#6c757d`×4, `#495057`×2, `#000000`×2,
+`#212529`×1, `#ced4da`×1, `#80bdff`×1, `#e9ecef`×1.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#495057`,
+`#212529`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Requirement: Page layout

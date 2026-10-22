@@ -15,8 +15,8 @@ Recreation of ColorLib "Multiselect 17" — a free limited multiselect dropdown 
 | Token                   | Value                                 | Notes                                                                                                                 |
 | ----------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | Font family             | System sans-serif stack               | `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif` |
-| Brand / accent color    | `#1a73e8`                             | Links, active states, primary actions                                                                                 |
-| Hover accent            | `#1464cc`                             | Darker shade on hover                                                                                                 |
+| Brand / accent color    | `#007bff`                             | Links, active states, primary actions                                                                                 |
+| Hover accent            | `#0056b3`                             | Darker shade on hover                                                                                                 |
 | Body text color         | `#26282b`                             | Default paragraph / item text                                                                                         |
 | Body font size          | `16px`                                | Base                                                                                                                  |
 | Line height             | `1.8`                                 | Body text                                                                                                             |
@@ -24,7 +24,7 @@ Recreation of ColorLib "Multiselect 17" — a free limited multiselect dropdown 
 | Page background         | `#ffffff`                             | White, clean                                                                                                          |
 | Dropdown border         | `#e6e6e6`                             | Light gray border around the select control                                                                           |
 | Dropdown item hover     | `#3e64ff`                             | Blue highlight on hover (from sibling multiselect specs)                                                              |
-| Selected item highlight | `#1a73e8`                             | Brand blue for checked/marked items                                                                                   |
+| Selected item highlight | `#007bff`                             | Brand blue for checked/marked items                                                                                   |
 | Dropdown shadow         | `0px 3px 19px -15px rgba(0,0,0,0.41)` | Subtle shadow when dropdown is open                                                                                   |
 | Border radius           | `4px`                                 | Standard Bootstrap / form control radius                                                                              |
 | Max selection limit     | Configurable (default: e.g. 3)        | Core feature of this snippet                                                                                          |
@@ -43,6 +43,41 @@ Recreation of ColorLib "Multiselect 17" — a free limited multiselect dropdown 
 - A small "x" or remove button on each selected tag/chip to deselect
 - Compact layout — the entire component fits in a centered column (roughly col-md-6)
 - Clean, minimal aesthetic — no heavy decorations, focus on the form element
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/multiselect-17/` | HTTP 200 · 3,208 B · title `Multi Select #7` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/multiselect-17/css/style.css?v=9e5957cd` | HTTP 200 · 27,397 B · sha256 `0a75591aaf36` |
+
+> ⚠️ the demo's own `<title>` reads `Multi Select #7` though the path is
+> `multiselect-17` — the host's titles are not reliable labels; the readings
+> above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×13,
+`#212529`×9, `#000000`×6, `#6c757d`×5, `#f8f9fa`×5, `#495057`×3,
+`#007bff`×2, `#dae0e5`×2, `#8cba51`×2, `#999999`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#1a73e8` → **`#007bff`** — the sheet paints `a{color}` with it
+- `#1464cc` → **`#0056b3`** — the sheet paints `a:hover{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#6c757d`,
+`#f8f9fa`, `#495057`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#77cc6d`.
 
 ## Requirements
 
@@ -79,7 +114,7 @@ Recreation of ColorLib "Multiselect 17" — a free limited multiselect dropdown 
 - **GIVEN** the dropdown is open
 - **WHEN** the user clicks an item's checkbox
 - **THEN** the checkbox becomes checked
-- **AND** the item is visually highlighted (brand blue #1a73e8)
+- **AND** the item is visually highlighted (brand blue #007bff)
 - **AND** the selected count on the trigger increments
 
 #### Scenario: Maximum selection limit enforced

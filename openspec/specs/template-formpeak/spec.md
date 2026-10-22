@@ -19,7 +19,7 @@ a gold/amber button, three-column contact info row, and social media links.
 
 | Token             | Value                   | Notes                                      |
 | ----------------- | ----------------------- | ------------------------------------------ |
-| Brand gold        | `#D4A574`              | Button background                          |
+| Brand gold        | `#e3b04b`              | Button background                          |
 | Social link color | `#55B68A`              | Social media links (teal/green)            |
 | Background        | `#F5F5F5`              | Page background (light gray)               |
 | Card surface      | `#FFFFFF`              | Left panel background                      |
@@ -49,6 +49,36 @@ Left column (white, ~55% width):
 
 Right column (image, ~45% width): full-height photo placeholder (room with plants).
 Use `https://picsum.photos/seed/formpeak-1/600/800` as placeholder.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-05/` | HTTP 200 · 4,180 B · title `Contact Form 05` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-05/css/style.css?v=ffe44641` | HTTP 200 · 16,879 B · sha256 `ad418c7891b5` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
+`#007bff`×5, `#6c757d`×4, `#e3b04b`×4, `#000000`×4, `#212529`×3,
+`#495057`×3, `#0062cc`×2, `#d99c22`×2, `#0056b3`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#d4a574` → **`#e3b04b`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#55b68a`.
 
 ## Requirements
 

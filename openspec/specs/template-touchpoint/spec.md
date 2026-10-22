@@ -31,9 +31,9 @@ background:
      by side, each with light gray border and white background
    - Subject field: full-width text input, same border style
    - Message field: full-width textarea, taller, same border style
-   - "Send Message" button: blue filled (#3b82f6), white text, rounded
+   - "Send Message" button: blue filled (#1089ff), white text, rounded
      corners (~4px), left-aligned below the message field
-3. **Right column — Contact info card**: Solid blue background (#3b82f6)
+3. **Right column — Contact info card**: Solid blue background (#1089ff)
    containing:
    - Heading: "Contact us" — white, bold, ~24px
    - Four info items, each with a circular icon (white icon on lighter
@@ -51,7 +51,7 @@ background:
 | ---------------- | ---------------------------------- | ----------------------------- |
 | Background       | `#f5f5f5` (light gray)             | page background               |
 | Card white       | `#ffffff`                          | form card background          |
-| Brand blue       | `#3b82f6` (blue-500)              | info card bg, button bg       |
+| Brand blue       | `#1089ff` (blue-500)              | info card bg, button bg       |
 | Info card icon bg| `#60a5fa` (blue-400)              | circular icon backgrounds     |
 | Text heading     | `#1f2937` (gray-800)              | headings on white             |
 | Text body        | `#374151` (gray-700)              | body text on white            |
@@ -84,7 +84,7 @@ background:
       - Message textarea (placeholder "Message") — full width, taller
       - "Send Message" button — blue filled, white text, left-aligned
 
-   b. **Contact info card (right)** — Blue background (#3b82f6), padding,
+   b. **Contact info card (right)** — Blue background (#1089ff), padding,
       containing:
       - "Contact us" heading — white
       - Address item: location pin icon + "Address: 198 West 21th Street,
@@ -92,6 +92,36 @@ background:
       - Phone item: phone icon + "Phone: + 1235 2355 98"
       - Email item: paper plane icon + "Email: info@yoursite.com"
       - Website item: globe icon + "Website: yoursite.com"
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-01/` | HTTP 200 · 13,910 B · title `Contact Form 01` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-01/css/style.css?v=585157d9` | HTTP 200 · 17,110 B · sha256 `212e437397b3` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×15,
+`#007bff`×6, `#6c757d`×4, `#1089ff`×4, `#212529`×3, `#495057`×3,
+`#0062cc`×3, `#000000`×3, `#006fdc`×2, `#0056b3`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#3b82f6` → **`#1089ff`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#60a5fa`.
 
 ## Requirements
 

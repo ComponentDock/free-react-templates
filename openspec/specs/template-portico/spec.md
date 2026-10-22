@@ -8,6 +8,32 @@
 
 Portico provides a clean split-screen login form template with a white form panel on the left and a full-height decorative image on the right. It is designed for authentication pages that need a modern, minimal aesthetic with visual depth.
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/login-form-01/` | HTTP 200 · 2,204 B · title `Login #2` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/login-form-01/css/style.css?v=16b53b3c` | HTTP 200 · 16,206 B · sha256 `c99bcd5ae76b` |
+
+> ⚠️ the demo's own `<title>` reads `Login #2` though the path is `login-
+> form-01` — the host's titles are not reliable labels; the readings above
+> are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×9,
+`#007bff`×7, `#6c757d`×6, `#212529`×3, `#0056b3`×2, `#495057`×2,
+`#0062cc`×2, `#b3b3b3`×2, `#efefef`×2, `#888888`×2.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#b3b3b3`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Requirement: Split-screen layout

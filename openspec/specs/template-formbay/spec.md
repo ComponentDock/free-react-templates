@@ -19,7 +19,7 @@ a text block with a "Read more" link on the right. Features a coral/pink accent.
 
 | Token             | Value                   | Notes                                      |
 | ----------------- | ----------------------- | ------------------------------------------ |
-| Brand coral       | `#E8636F`              | Button bg, "Read more" link                |
+| Brand coral       | `#eb4d55`              | Button bg, "Read more" link                |
 | Background        | `#FFFFFF`              | White page background                      |
 | Text primary      | `#222222`              | Headings (bold black)                      |
 | Text body         | `#666666`              | Paragraph text                             |
@@ -52,6 +52,36 @@ Right column (~50%):
 
 Key differences: no card, no background image, very clean/minimal, large bold
 heading, coral accent, text content on the right side.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-11/` | HTTP 200 · 2,969 B · title `Contact Form #1` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-11/css/style.css?v=383c0873` | HTTP 200 · 14,659 B · sha256 `86cb1b267770` |
+
+> ⚠️ the demo's own `<title>` reads `Contact Form #1` though the path is
+> `contact-form-11` — the host's titles are not reliable labels; the
+> readings above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×9,
+`#eb4d55`×5, `#6c757d`×4, `#212529`×3, `#495057`×3, `#000000`×3,
+`#e61f29`×2, `#d41821`×1, `#fcf8e3`×1, `#ced4da`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#e8636f` → **`#eb4d55`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 

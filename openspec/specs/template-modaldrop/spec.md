@@ -42,6 +42,32 @@ Extracted from the live preview stylesheet (`css/style.css`) and HTML structure:
 | Modal body top border | `4px solid #ed5107` | Orange accent bar |
 | Content height | `100vh` | Full viewport height for launch area |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/modal-17/` | HTTP 200 · 2,697 B · title `Modal #7` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/modal-17/css/style.css?v=8a42206d` | HTTP 200 · 18,336 B · sha256 `219ddf06b8d7` |
+
+> ⚠️ the demo's own `<title>` reads `Modal #7` though the path is `modal-17`
+> — the host's titles are not reliable labels; the readings above are for
+> the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×14,
+`#6c757d`×8, `#ed5107`×6, `#000000`×4, `#212529`×3, `#495057`×3,
+`#bb4006`×2, `#545b62`×2, `#a33805`×1, `#ced4da`×1.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#545b62`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: ModalDrop template behaviour

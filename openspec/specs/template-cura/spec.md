@@ -167,6 +167,35 @@ text-white px-6 py-3 font-medium` with hover darkening; outline "Emergency
 Cura lives in `apps/cura` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/vitality/` | HTTP 200 · 76,733 B · title `MediCare - Your Health, Our Priority` |
+| stylesheet | `https://preview.colorlib.com/theme/vitality/_astro/Base.BvdG4YB3.css` | HTTP 200 · 35,243 B · sha256 `ac60e1608b41` |
+
+**Live palette** (hex × occurrences in that sheet): `#2563eb`×7,
+`#ffffff`×3, `#34d399`×3, `#eff6ff`×3, `#dbeafe`×3, `#bfdbfe`×3,
+`#3b82f6`×3, `#1d4ed8`×3, `#10b981`×2, `#059669`×2.
+
+**Low-chroma values the sheet actually uses** — `#eff6ff`; any sampled
+Tailwind grey above is an approximation of these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#f43f5e`, `#e11d48`.
+
+> the live `/theme/vitality/` is a **newer blue build** of the demo
+> (Tailwind, `primary-600 #2563eb`), not the rose design the screenshot
+> shows — do not mix the two.
+
 ## Requirements
 
 ### Requirement: Top info bar

@@ -18,6 +18,32 @@ Recreation of ColorLib **Carousel 07** (`https://colorlib.com/wp/template/carous
 - **Button Shapes**: Rounded-lg (`rounded-lg`), smooth transitions, subtle shadows.
 - **Section Layouts**: Hero header with interactive carousel slider, featured slides/cards section, testimonial/feature highlights with dot navigation, statistics counter, call-to-action banner, and professional footer linking Component Dock.
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/carousel-07/` | HTTP 200 · 15,251 B · title `Carousel 07` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/carousel-07/css/style.css?v=5afee45e` | HTTP 200 · 23,230 B · sha256 `813f8c662ed2` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×9,
+`#007bff`×5, `#ff487e`×5, `#000000`×3, `#212529`×3, `#d6d6d6`×2,
+`#869791`×2, `#0062cc`×2, `#b3b3b3`×2, `#0056b3`×1.
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#d6d6d6`,
+`#869791`, `#b3b3b3`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#4f46e5`.
+
 ## Requirements
 
 ### 1. Navigation Header

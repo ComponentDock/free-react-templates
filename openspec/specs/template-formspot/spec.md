@@ -19,7 +19,7 @@ bordered-box inputs.
 
 | Token             | Value                   | Notes                                      |
 | ----------------- | ----------------------- | ------------------------------------------ |
-| Brand olive       | `#7C9A5E`              | Button background                          |
+| Brand olive       | `#71a95a`              | Button background                          |
 | Background        | `#F5F5F5`              | Page background (light gray)               |
 | Card surface      | `#FFFFFF`              | Form panel background                      |
 | Text primary      | `#333333`              | Headings, body copy                        |
@@ -50,6 +50,33 @@ shows ivy/vines on a white wall with a window). Use
 
 Key difference from Form 05: olive green button instead of gold, no social
 links section, no three-column contact info row — simpler layout.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-08/` | HTTP 200 · 2,970 B · title `Contact Form 08` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-08/css/style.css?v=ccb2648b` | HTTP 200 · 14,838 B · sha256 `2e79597579e7` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×11,
+`#6c757d`×4, `#007bff`×4, `#212529`×3, `#495057`×3, `#000000`×3,
+`#71a95a`×3, `#0062cc`×2, `#5a8947`×2, `#fcf8e3`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#7c9a5e` → **`#71a95a`** — the sheet paints `.cl-form-control:focus, .cl-
+  form-control:active{border-color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 

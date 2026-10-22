@@ -17,18 +17,48 @@ A Signup Form template with card header, signup, terms agreement, login redirect
 | Card shadow | `0 2px 20px rgba(0,0,0,0.08)` | Subtle drop shadow |
 | Heading color | `#333333` | Dark gray, "Create Your Account" |
 | Body text color | `#999999` | Gray for placeholder text |
-| Label color | `#38d39f` | Mint green, uppercase labels |
+| Label color | `#52de97` | Mint green, uppercase labels |
 | Input border | `#dddddd` | Full border box, rounded corners (~4px) |
 | Input background | `#ffffff` | White |
-| Primary button color | `#38d39f` | Mint green/teal, full-width |
+| Primary button color | `#52de97` | Mint green/teal, full-width |
 | Button border-radius | ~`6px` | Slightly rounded |
 | Button text color | `#ffffff` | White |
-| Icon circle background | `#38d39f` | Mint green circle (~50px diameter) |
+| Icon circle background | `#52de97` | Mint green circle (~50px diameter) |
 | Icon color | `#ffffff` | White pencil/edit icon inside circle |
-| Checkbox active color | `#38d39f` | Green checkbox |
-| Link color | `#38d39f` | Green, for "Sign In" link |
+| Checkbox active color | `#52de97` | Green checkbox |
+| Link color | `#52de97` | Green, for "Sign In" link |
 | Password toggle icon | `#999999` | Eye icon, gray |
 | Font family | `Roboto, sans-serif` | Clean sans-serif |
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/signup-form-11/` | HTTP 200 · 5,742 B · title `Sign Up 01` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/signup-form-11/css/style.css?v=85b5ecc7` | HTTP 200 · 18,563 B · sha256 `a8155a3a6e1e` |
+
+> ⚠️ the demo's own `<title>` reads `Sign Up 01` though the path is `signup-
+> form-11` — the host's titles are not reliable labels; the readings above
+> are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×11,
+`#52de97`×10, `#007bff`×5, `#6c757d`×4, `#212529`×3, `#000000`×3,
+`#495057`×2, `#0062cc`×2, `#0056b3`×1, `#ced4da`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#38d39f` → **`#52de97`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 

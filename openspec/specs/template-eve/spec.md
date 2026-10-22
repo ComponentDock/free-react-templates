@@ -320,6 +320,28 @@ white `#fff` with `#555555` numbers and `#7d8da6` labels, modal greys `#333`
 | validation visibility | hidden by default; shown on field hover; always shown at ≤992px | error state |
 | countdown behaviour | target `{Y:0,M:0,D:35,h:18,m:0,s:0}`; past target → `now + 35 d + 18 h`; 1 s tick; days unpadded, h/m/s padded | counter |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_04/index.html` | HTTP 200 · 3,527 B · title `Coming Soon 4` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_04/css/style.css?v=4e86c025` | HTTP 200 · 16,469 B · sha256 `852be96da789` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×13,
+`#7918f2`×10, `#ac32e4`×8, `#4801ff`×8, `#999999`×5, `#000000`×3,
+`#3a5dff`×3, `#c80000`×3, `#555555`×3, `#333333`×2.
+
+**Low-chroma values the sheet actually uses** — `#999999`, `#555555`,
+`#333333`, `#212529`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: Full-viewport gradient screen

@@ -409,6 +409,28 @@ distinctive in SEVEN ways — do not blur it with `01`–`11`:
 | transitions            | `all .4s` (field, submit arrow, socials), `opacity .4s` (bubble), `opacity 1000ms` (slideshow), `7000ms` interval                                                                                                                                           | interaction                                                |
 | attribution            | a small centred line under the page content linking `https://www.componentdock.com/` ("Component Dock")                                                                                                                                                     | ADDED vs the reference (the source has no footer credit)   |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://colorlib.com/etc/cs/comingsoon_12/index.html` | HTTP 200 · 4,773 B · title `Coming Soon 12` |
+| stylesheet | `https://colorlib.com/etc/cs/comingsoon_12/css/style.css?v=b18dee51` | HTTP 200 · 11,285 B · sha256 `df71fec32270` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×7,
+`#999999`×5, `#333333`×4, `#c80000`×3, `#212529`×1, `#007bff`×1,
+`#0056b3`×1, `#666666`×1, `#cccccc`×1.
+
+**Low-chroma values the sheet actually uses** — `#999999`, `#333333`,
+`#212529`, `#666666`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Feature: Split-screen shell (white panel + photo panel in one 100vh row)

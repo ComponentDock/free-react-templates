@@ -20,8 +20,8 @@ Extracted from ColorLib page CSS variables (wpex theme):
 
 | Token               | Value                | Notes                              |
 | ------------------- | -------------------- | ---------------------------------- |
-| Brand accent        | `#1a73e8`            | Primary blue — buttons, links, focus |
-| Accent hover        | `#1464cc`            | Darker blue for hover states       |
+| Brand accent        | `#007bff`            | Primary blue — buttons, links, focus |
+| Accent hover        | `#1e70bf`            | Darker blue for hover states       |
 | Body text           | `#26282b`            | Dark charcoal                      |
 | Body font size      | `16px`               | Base typography                    |
 | Body line height    | `1.8em`              | Comfortable reading rhythm         |
@@ -47,6 +47,33 @@ Compared to V01 (option-picker), this variant emphasizes:
 - More compact spacing
 - Bootstrap 4 default border-radius (0.25rem / 4px)
 - Possibly no search/filter — just a pure dropdown
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/multiselect-02/` | HTTP 200 · 1,687 B · title `Multiselect 02` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/multiselect-02/css/style.css?v=89e5defb` | HTTP 200 · 58,712 B · sha256 `95fea9c6ebf6` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×25,
+`#000000`×9, `#212529`×7, `#96c8da`×6, `#e6e6e6`×6, `#f8f9fa`×5,
+`#e8647c`×4, `#cce2ff`×3, `#c0c1c2`×3, `#d0d0d0`×3.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#1a73e8` → **`#007bff`** — the sheet paints `a{color}` with it
+- `#1464cc` → **`#1e70bf`** — the sheet paints `a:hover{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#e6e6e6`,
+`#f8f9fa`, `#c0c1c2`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 
@@ -138,7 +165,7 @@ Background:
 - [ ] Disabled state prevents interaction
 - [ ] Responsive: full-width on small screens
 - [ ] ARIA: combobox, listbox, option roles, multiselectable
-- [ ] Brand color #1a73e8 for focus/active states
+- [ ] Brand color #007bff for focus/active states
 - [ ] Bootstrap 4 border-radius (4px)
 - [ ] System sans-serif font stack
 - [ ] 100% test coverage

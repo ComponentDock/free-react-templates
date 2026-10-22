@@ -26,6 +26,32 @@ Recreation of ColorLib **Search Form Bar 16** — a fullscreen/viewport-height s
 | **Layout**               | Centered vertically + horizontally | Input centered in viewport            |
 | **Input style**          | Underline only (no box)            | Bottom border, no background/shadow   |
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-16/` | HTTP 200 · 4,268 B · title `Search #1` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/search-form-bar-16/css/style.css?v=9614eec5` | HTTP 200 · 14,020 B · sha256 `1140fa086cfe` |
+
+> ⚠️ the demo's own `<title>` reads `Search #1` though the path is `search-
+> form-bar-16` — the host's titles are not reliable labels; the readings
+> above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×7,
+`#6c757d`×4, `#000000`×4, `#495057`×2, `#212529`×1, `#007bff`×1,
+`#0056b3`×1, `#ced4da`×1, `#80bdff`×1, `#e9ecef`×1.
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#495057`,
+`#212529`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
+
 ## Requirements
 
 ### Requirement: Fullscreen search overlay renders correctly

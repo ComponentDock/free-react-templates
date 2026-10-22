@@ -8,10 +8,35 @@
 
 ## Design tokens
 
-- Primary Brand Color: `#0284c7` (Sky blue) / dark slate `#0f172a`
+- Primary Brand Color: `#007bff` (Sky blue) / dark slate `#0f172a`
 - Font Family: "Inter", system-ui, sans-serif
 - Button Shapes: Rounded-md / rounded-full for carousel control arrows
 - Section Backgrounds: Light slate `#f8fafc`, dark hero `#0f172a`, pure white `#ffffff` cards
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/carousel-03/` | HTTP 200 · 3,830 B · title `Carousel 03` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/carousel-03/css/style.css?v=18e25668` | HTTP 200 · 19,122 B · sha256 `05c98090314f` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×4,
+`#b063c5`×4, `#000000`×2, `#d6d6d6`×2, `#869791`×2, `#212529`×1,
+`#007bff`×1, `#0056b3`×1, `#ff5db1`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#0284c7` → **`#007bff`** — the sheet paints `a{color}` with it
+
+**Low-chroma values the sheet actually uses** — `#d6d6d6`, `#869791`,
+`#212529`; any sampled Tailwind grey above is an approximation of these.
 
 ## Requirements
 

@@ -23,8 +23,8 @@ Extracted from the screenshot (preview unreachable — tokens inferred from visu
 | Card background           | `#ffffff`                      | White card for the form                        |
 | Card shadow               | `0 2px 15px rgba(0,0,0,0.1)`  | Subtle drop shadow on card                     |
 | Card border-radius        | `4px`                          | Slight rounding                                |
-| Primary button color      | `#f5a623`                      | Orange — "Register" button                     |
-| Primary button hover      | `#e6951d`                      | Darker orange on hover                         |
+| Primary button color      | `#fb771a`                      | Orange — "Register" button                     |
+| Primary button hover      | `#eb6304`                      | Darker orange on hover                         |
 | Facebook button color     | `#3b5998`                      | Facebook brand dark blue                       |
 | Twitter button color      | `#1da1f2`                      | Twitter brand light blue                       |
 | Google button color       | `#dd4b39`                      | Google brand red                               |
@@ -36,8 +36,8 @@ Extracted from the screenshot (preview unreachable — tokens inferred from visu
 | Input background          | `#ffffff`                      | White input fields                             |
 | Placeholder text color    | `#aaaaaa`                      | Light gray placeholder                         |
 | Terms text color          | `#666666`                      | Gray body text for terms                       |
-| Link color (terms)        | `#f5a623`                      | Orange links for Terms/Privacy                 |
-| Checkbox color            | `#f5a623`                      | Orange checked checkbox                        |
+| Link color (terms)        | `#fb771a`                      | Orange links for Terms/Privacy                 |
+| Checkbox color            | `#fb771a`                      | Orange checked checkbox                        |
 | "or" text color           | `#666666`                      | Gray divider text                              |
 | Left image width          | ~40%                           | Background image column                        |
 | Form card width           | ~60%                           | Signup form card                               |
@@ -63,6 +63,34 @@ A split-screen registration page:
   10. "Register with Google" button — red with Google icon
 - **Footer:** Minimal — site name + Component Dock link (replacing any ColorLib attribution)
 - **Overall feel:** Clean, modern, minimal. Professional registration page with a warm lifestyle image providing visual contrast to the functional form area.
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/signup-form-05/` | HTTP 200 · 5,209 B · title `Sign Up #5` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/signup-form-05/css/style.css?v=f91f326c` | HTTP 200 · 15,344 B · sha256 `84f09d02c245` |
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×13,
+`#fb771a`×7, `#6c757d`×6, `#212529`×3, `#c55303`×2, `#495057`×2,
+`#de5e04`×2, `#888888`×2, `#e6e6e6`×2, `#ced4da`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#f5a623` → **`#fb771a`** — the sheet paints `a{color}` with it
+- `#e6951d` → **`#eb6304`** — the sheet paints `.cl-btn-
+  primary:hover{background-color}` with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#888888`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 

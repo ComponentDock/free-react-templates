@@ -20,8 +20,8 @@ Extracted from TEMPLATES.md screenshot (preview page 404 at prep time):
 
 | Token               | Value                    | Notes                                        |
 | ------------------- | ------------------------ | -------------------------------------------- |
-| brand-primary       | `#e74c3c`                | Red/coral — submit button, Sign In link       |
-| brand-primary-hover | `#c0392b`                | Darker red on hover                           |
+| brand-primary       | `#e32249`                | Red/coral — submit button, Sign In link       |
+| brand-primary-hover | `#ba1839`                | Darker red on hover                           |
 | page-bg             | `#f5f5f5`                | Light gray page background                   |
 | card-bg             | `#ffffff`                | White form card                              |
 | card-shadow         | `0 4px 20px rgba(0,0,0,0.08)` | Subtle drop shadow on card             |
@@ -30,13 +30,13 @@ Extracted from TEMPLATES.md screenshot (preview page 404 at prep time):
 | label-color         | `#999999`                | Muted floating labels                        |
 | input-border        | `1px solid #e0e0e0`      | Light gray input borders                     |
 | input-radius        | `8px`                    | Rounded input fields                         |
-| input-focus-border  | `1px solid #e74c3c`      | Red focus border matching brand              |
+| input-focus-border  | `1px solid #e32249`      | Red focus border matching brand              |
 | btn-submit-size     | `56px × 56px`            | Circular submit button                       |
-| btn-submit-bg       | `#e74c3c`                | Red circle background                        |
+| btn-submit-bg       | `#e32249`                | Red circle background                        |
 | btn-submit-icon     | `#ffffff`                | White send/arrow icon                        |
-| btn-submit-shadow   | `0 4px 12px rgba(231,76,60,0.4)` | Shadow on floating button              |
+| btn-submit-shadow   | `0 4px 12px rgba(227,34,73,0.4)` | Shadow on floating button              |
 | wave-color          | `#f0f0f0` / `#e8e8e8`   | Subtle gray wave decoration at card bottom   |
-| link-color          | `#e74c3c`                | "Sign In" link matches brand                 |
+| link-color          | `#e32249`                | "Sign In" link matches brand                 |
 | link-text           | `rgba(0,0,0,0.6)`        | "Already have an account?" text color         |
 | heading-font        | Poppins (Google Fonts)    | Clean sans-serif heading                     |
 
@@ -69,7 +69,7 @@ Extracted from TEMPLATES.md screenshot (preview page 404 at prep time):
    - Labels float above on focus/filled state (muted gray `#999`)
 
 5. **Submit Button** (floating circular button)
-   - 56×56px circle, `#e74c3c` background
+   - 56×56px circle, `#e32249` background
    - White send/arrow icon (paper-plane or arrow-right)
    - Positioned overlapping card bottom-right edge (negative margin or absolute)
    - Red shadow on hover
@@ -81,7 +81,39 @@ Extracted from TEMPLATES.md screenshot (preview page 404 at prep time):
 7. **Footer Link**
    - "Already have an account? **Sign In**"
    - "Already have an account?" in muted dark text
-   - "Sign In" as red accent link (`#e74c3c`), underlined
+   - "Sign In" as red accent link (`#e32249`), underlined
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/signup-form-15/` | HTTP 200 · 2,686 B · title `Sign Up 05` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/signup-form-15/css/style.css?v=92b6f1be` | HTTP 200 · 14,854 B · sha256 `c045644a4c8a` |
+
+> ⚠️ the demo's own `<title>` reads `Sign Up 05` though the path is `signup-
+> form-15` — the host's titles are not reliable labels; the readings above
+> are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×11,
+`#e32249`×6, `#007bff`×5, `#6c757d`×4, `#212529`×3, `#000000`×3,
+`#495057`×2, `#0062cc`×2, `#0056b3`×1, `#ced4da`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#e74c3c` → **`#e32249`** — the sheet paints `a{color}` with it
+- `#c0392b` → **`#ba1839`** — the sheet paints `.submit:hover{background}`
+  with it
+
+**Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
+`#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
+these.
 
 ## Requirements
 
@@ -119,7 +151,7 @@ Extracted from TEMPLATES.md screenshot (preview page 404 at prep time):
 
 - **GIVEN** the page is loaded
 - **WHEN** the user clicks on an input field
-- **THEN** the input border changes to the brand red color (#e74c3c)
+- **THEN** the input border changes to the brand red color (#e32249)
 
 #### Scenario: Circular submit button
 
@@ -178,13 +210,13 @@ Extracted from TEMPLATES.md screenshot (preview page 404 at prep time):
 - [ ] Password input with "Password" placeholder
 - [ ] Confirm Password input with "Confirm Password" placeholder
 - [ ] Floating labels appear above inputs on focus/fill
-- [ ] Input focus border changes to brand red (#e74c3c)
+- [ ] Input focus border changes to brand red (#e32249)
 - [ ] Circular 56×56px red submit button with white icon
 - [ ] Submit button overlaps card bottom-right edge
 - [ ] Wave/swoosh decoration at card bottom in light gray
 - [ ] "Already have an account? Sign In" text below card
-- [ ] "Sign In" link is red (#e74c3c), underlined
-- [ ] Brand red (#e74c3c) used consistently (button, link, focus)
+- [ ] "Sign In" link is red (#e32249), underlined
+- [ ] Brand red (#e32249) used consistently (button, link, focus)
 - [ ] Font is Poppins (Google Fonts)
 - [ ] Responsive: card takes full width on mobile
 - [ ] No ColorLib references in app code

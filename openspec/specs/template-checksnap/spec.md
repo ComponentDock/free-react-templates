@@ -45,6 +45,36 @@ Roboto font, single-column centered layout with a green accent palette.
   - Checkbox border: `#dee2e6` unchecked, `#28a745` checked
   - Hover scale: 1.02 on the container
 
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/checkbox-16/` | HTTP 200 · 1,636 B · title `Checkbox #6` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/checkbox-16/css/style.css?v=de0b5d78` | HTTP 200 · 8,473 B · sha256 `4139253b65ba` |
+
+> ⚠️ the demo's own `<title>` reads `Checkbox #6` though the path is
+> `checkbox-16` — the host's titles are not reliable labels; the readings
+> above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#007bff`×7,
+`#ffffff`×3, `#0056b3`×2, `#cccccc`×2, `#212529`×1, `#6c757d`×1,
+`#e6e6e6`×1, `#7b7b7b`×1.
+
+**Low-chroma values the sheet actually uses** — `#cccccc`, `#212529`,
+`#6c757d`, `#e6e6e6`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#28a745`.
+
 ## Requirements
 
 ### Requirement: Renders the main heading and subtitle

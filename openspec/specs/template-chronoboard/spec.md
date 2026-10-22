@@ -15,7 +15,7 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 | Token                        | Value                                                       | Source / Notes                                                                                                                                        |
 | ---------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Font family**              | `Roboto` (weights 300, 400, 500, 700)                       | Google Fonts, loaded via `<link>` in `index.html`                                                                                                     |
-| **Brand primary (event bg)** | `#e74c3c` (dark pink/maroon)                                | FullCalendar `.fc-event` background — visible on "All Day Event", "Long Event", "Conference", "Birthday Party", "Repeating Event", "Click for Google" |
+| **Brand primary (event bg)** | `#f67280` (dark pink/maroon)                                | FullCalendar `.fc-event` background — visible on "All Day Event", "Long Event", "Conference", "Birthday Party", "Repeating Event", "Click for Google" |
 | **Brand primary hover**      | `#c0392b`                                                   | Slightly darker on hover (FullCalendar default)                                                                                                       |
 | **Text on brand**            | `#ffffff` (white)                                           | Event title/time text                                                                                                                                 |
 | **Toolbar bg**               | `#ffffff` (white)                                           | Header toolbar area                                                                                                                                   |
@@ -40,6 +40,40 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 | **Icon font**                | FullCalendar icon font (chevron-left, chevron-right)        | Via `@fullcalendar/core`                                                                                                                              |
 
 ---
+
+<!-- live-token-reverify:2026-10-22 -->
+
+### Live reference restored (2026-10-22)
+
+The prep-time note above records the preview 404. **Re-probed 2026-10-22**
+the reference answers **HTTP 200**, so the live DOM and CSS are
+authoritative again — CSS values are canonical over the screenshot
+(`docs/replication.md`).
+
+| artefact | URL | reading |
+| --- | --- | --- |
+| live page | `https://preview.colorlib.com/theme/bootstrap/calendar-19/` | HTTP 200 · 2,459 B · title `Calendar #9` |
+| stylesheet | `https://preview.colorlib.com/theme/bootstrap/calendar-19/css/style.css?v=7588fd9e` | HTTP 200 · 24,504 B · sha256 `8eedbdb7f6ba` |
+
+> ⚠️ the demo's own `<title>` reads `Calendar #9` though the path is
+> `calendar-19` — the host's titles are not reliable labels; the readings
+> above are for the URL as fetched.
+
+**Live palette** (hex × occurrences in that sheet): `#ffffff`×14,
+`#f67280`×10, `#212529`×4, `#dee2e6`×3, `#d7d7d7`×2, `#000000`×2,
+`#fddee2`×1, `#8fdf82`×1, `#f9f9f9`×1, `#eeeeee`×1.
+
+**Token deltas** — the sheet, not the screenshot, decides:
+
+- `#e74c3c` → **`#f67280`** — the sheet paints `.fc-event{border}` with it
+
+**Low-chroma values the sheet actually uses** — `#212529`, `#dee2e6`,
+`#d7d7d7`, `#f9f9f9`; any sampled Tailwind grey above is an approximation of
+these.
+
+**TOKEN-UNVERIFIED** — screenshot samples with **no** counterpart in the
+live sheet; do not build them from the screenshot, take the palette above:
+`#c0392b`, `#2c3e50`, `#fff3cd`.
 
 ## Requirements
 
@@ -121,7 +155,7 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 #### Scenario: All-day event spans full cell width
 
 - **GIVEN** an all-day event on Feb 1 ("All Day Event")
-- **THEN** a pill with `bg: #e74c3c`, white text, radius 4px renders in the Feb 1 cell
+- **THEN** a pill with `bg: #f67280`, white text, radius 4px renders in the Feb 1 cell
 - **AND** the pill spans the full cell width (minus small padding)
 
 #### Scenario: Multi-day event spans consecutive cells
@@ -211,7 +245,7 @@ Category: **Event Calendar / Scheduling** (Bootstrap-based FullCalendar wrapper)
 - [ ] Other-month dates: muted text (#adb5bd), tinted bg (#f8f9fa)
 - [ ] Today highlight: pale yellow bg (#fff3cd)
 - [ ] 6 week rows, each ~106px
-- [ ] All-day events: brand pill (#e74c3c), white text, full-width
+- [ ] All-day events: brand pill (#f67280), white text, full-width
 - [ ] Multi-day events: span cells correctly
 - [ ] Timed events: show time + title
 - [ ] Repeating events: render on each occurrence
