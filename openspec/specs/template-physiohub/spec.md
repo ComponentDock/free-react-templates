@@ -1,4 +1,9 @@
 # Template: Physiohub (Health & Fitness / Physiotherapy)
+<!-- prep-status: shipped-as=kinectwell -->
+> **SHIPPED-UNDER** — the ColorLib `physical-therapy` design this prep describes already
+> ships as `apps/kinectwell` (<https://kinectwell.free.componentdock.com>).
+> Do not scaffold `apps/physiohub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kinectwell/spec.md`.
 
 ## Purpose
 

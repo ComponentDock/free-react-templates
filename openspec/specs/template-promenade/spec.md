@@ -1,4 +1,9 @@
 # Template: Promenade (Signup Form Modal)
+<!-- prep-status: shipped-as=signgate -->
+> **SHIPPED-UNDER** — the ColorLib `modal-15` design this prep describes already
+> ships as `apps/signgate` (<https://signgate.free.componentdock.com>).
+> Do not scaffold `apps/promenade`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-signgate/spec.md`.
 
 ## Purpose
 

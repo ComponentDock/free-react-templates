@@ -1,4 +1,8 @@
 # Enchant (ColorLib Wizard 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=onboardly -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-20` design this prep describes shipped
+> as `apps/onboardly` (<https://onboardly.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-enchant`.

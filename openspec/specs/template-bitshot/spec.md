@@ -1,4 +1,9 @@
 # Spec: Bitshot — Photography Portfolio Template
+<!-- prep-status: shipped-as=lensvault -->
+> **SHIPPED-UNDER** — the ColorLib `bitmap` design this prep describes already
+> ships as `apps/lensvault` (<https://lensvault.free.componentdock.com>).
+> Do not scaffold `apps/bitshot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lensvault/spec.md`.
 
 > Recreation of ColorLib "Bitmap" (https://colorlib.com/wp/template/bitmap/)
 > Preview: https://preview.colorlib.com/theme/bitmap/

@@ -1,4 +1,8 @@
 # QueryHub — Implementation TODO
+<!-- prep-status: shipped-as=searchpad -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-21` design this prep describes shipped
+> as `apps/searchpad` (<https://searchpad.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Pre-implementation
 - [ ] Verify spec validates: `npm run spec:validate`

@@ -1,4 +1,8 @@
 # Snapview — Implementation Guide
+<!-- prep-status: shipped-as=focal -->
+> **SHIPPED-UNDER** — the ColorLib `bato` design this prep describes shipped
+> as `apps/focal` (<https://focal.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Bato (https://colorlib.com/wp/template/bato/)
 Preview: https://preview.colorlib.com/theme/bato/

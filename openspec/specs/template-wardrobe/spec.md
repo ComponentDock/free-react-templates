@@ -1,4 +1,9 @@
 # Template: Wardrobe (Fashion Shop)
+<!-- prep-status: shipped-as=closet -->
+> **SHIPPED-UNDER** — the ColorLib `little-closet` design this prep describes already
+> ships as `apps/closet` (<https://closet.free.componentdock.com>).
+> Do not scaffold `apps/wardrobe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-closet/spec.md`.
 
 ## Purpose
 

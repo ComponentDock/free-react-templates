@@ -1,4 +1,8 @@
 # Halide (ColorLib Yaseen) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pixora -->
+> **SHIPPED-UNDER** — the ColorLib `yaseen` design this prep describes shipped
+> as `apps/pixora` (<https://pixora.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-halide`.

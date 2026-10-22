@@ -1,4 +1,8 @@
 # Gusset (ColorLib Accordion 07) — Tasks & Design Notes
+<!-- prep-status: shipped-as=lamina -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-07` design this prep describes shipped
+> as `apps/lamina` (<https://lamina.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Gusset** (NEW name —
 > the ColorLib source keeps its name "Accordion 07"). Implementation ships on

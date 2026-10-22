@@ -1,4 +1,8 @@
 # Signalwave — Prep Notes & Design Fidelity Guide
+<!-- prep-status: shipped-as=blinkwave -->
+> **SHIPPED-UNDER** — the ColorLib `fastnet` design this prep describes shipped
+> as `apps/blinkwave` (<https://blinkwave.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

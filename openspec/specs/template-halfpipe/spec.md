@@ -1,4 +1,9 @@
 # Template: Halfpipe (Personal Brand / Skateboarding)
+<!-- prep-status: shipped-as=cruiser -->
+> **SHIPPED-UNDER** — the ColorLib `skater` design this prep describes already
+> ships as `apps/cruiser` (<https://cruiser.free.componentdock.com>).
+> Do not scaffold `apps/halfpipe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cruiser/spec.md`.
 
 ## Purpose
 

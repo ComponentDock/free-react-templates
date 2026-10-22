@@ -1,4 +1,8 @@
 # Zenasana — Design Notes & Tasks
+<!-- prep-status: shipped-as=soulflow -->
+> **SHIPPED-UNDER** — the ColorLib `yogalife` design this prep describes shipped
+> as `apps/soulflow` (<https://soulflow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Yogalife" (https://colorlib.com/wp/template/yogalife/)
 Preview: https://preview.colorlib.com/theme/yogalife/

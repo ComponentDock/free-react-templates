@@ -1,4 +1,8 @@
 # DimBox — Implementation Tasks
+<!-- prep-status: shipped-as=relay -->
+> **SHIPPED-UNDER** — the ColorLib `modal-08` design this prep describes shipped
+> as `apps/relay` (<https://relay.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

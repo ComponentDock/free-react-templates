@@ -1,4 +1,8 @@
 # Calzeal Implementation Tasks
+<!-- prep-status: shipped-as=caldesk -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-14` design this prep describes shipped
+> as `apps/caldesk` (<https://caldesk.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 - [ ] Scaffold `apps/calzeal` workspace following conventions (package.json, vite.config.ts with injectUiSource, index.html with Roboto font, CNAME `calzeal.free.componentdock.com`)
 - [ ] Implement Navbar / Header component

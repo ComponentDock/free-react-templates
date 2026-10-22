@@ -1,4 +1,9 @@
 # Template: Eventify (Conference / Event)
+<!-- prep-status: shipped-as=gathr -->
+> **SHIPPED-UNDER** — the ColorLib `evento` design this prep describes already
+> ships as `apps/gathr` (<https://gathr.free.componentdock.com>).
+> Do not scaffold `apps/eventify`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gathr/spec.md`.
 
 ## Purpose
 

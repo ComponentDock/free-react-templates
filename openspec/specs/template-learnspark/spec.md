@@ -1,4 +1,9 @@
 # Template: LearnSpark (Education / E-Learning)
+<!-- prep-status: shipped-as=laurel -->
+> **SHIPPED-UNDER** — the ColorLib `educrown` design this prep describes already
+> ships as `apps/laurel` (<https://laurel.free.componentdock.com>).
+> Do not scaffold `apps/learnspark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-laurel/spec.md`.
 
 ## Purpose
 

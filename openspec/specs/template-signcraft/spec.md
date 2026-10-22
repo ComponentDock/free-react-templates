@@ -1,4 +1,9 @@
 # Template: SignCraft (Registration Form)
+<!-- prep-status: shipped-as=regvibe -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-33` design this prep describes already
+> ships as `apps/regvibe` (<https://regvibe.free.componentdock.com>).
+> Do not scaffold `apps/signcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regvibe/spec.md`.
 
 ## Purpose
 

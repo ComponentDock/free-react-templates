@@ -1,4 +1,9 @@
 # Template: Garnish (Restaurant Landing)
+<!-- prep-status: shipped-as=brasserie -->
+> **SHIPPED-UNDER** — the ColorLib `caviar` design this prep describes already
+> ships as `apps/brasserie` (<https://brasserie.free.componentdock.com>).
+> Do not scaffold `apps/garnish`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-brasserie/spec.md`.
 
 ## Purpose
 

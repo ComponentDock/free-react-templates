@@ -1,4 +1,8 @@
 # Loginpane — Design & Implementation Notes
+<!-- prep-status: shipped-as=loginbolt -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v17` design this prep describes shipped
+> as `apps/loginbolt` (<https://loginbolt.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

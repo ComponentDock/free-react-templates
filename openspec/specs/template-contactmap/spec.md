@@ -1,4 +1,9 @@
 # Template: ContactMap (Contact Form)
+<!-- prep-status: shipped-as=dropform -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v8` design this prep describes already
+> ships as `apps/dropform` (<https://dropform.free.componentdock.com>).
+> Do not scaffold `apps/contactmap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropform/spec.md`.
 
 ## Purpose
 

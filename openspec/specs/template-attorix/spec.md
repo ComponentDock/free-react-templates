@@ -1,4 +1,9 @@
 # Template: Attorix (Law Firm Agency)
+<!-- prep-status: shipped-as=advocat -->
+> **SHIPPED-UNDER** — the ColorLib `atorni` design this prep describes already
+> ships as `apps/advocat` (<https://advocat.free.componentdock.com>).
+> Do not scaffold `apps/attorix`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-advocat/spec.md`.
 
 ## Purpose
 

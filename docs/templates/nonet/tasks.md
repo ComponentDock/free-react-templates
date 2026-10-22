@@ -1,4 +1,8 @@
 # Nonet (ColorLib Checkbox 19) — Tasks & Design Notes
+<!-- prep-status: shipped-as=checkpad -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-19` design this prep describes shipped
+> as `apps/checkpad` (<https://checkpad.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-nonet`.

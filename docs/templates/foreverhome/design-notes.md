@@ -1,4 +1,8 @@
 # ForeverHome — Design Notes & Task Outline
+<!-- prep-status: shipped-as=giveaid -->
+> **SHIPPED-UNDER** — the ColorLib `adopted` design this prep describes shipped
+> as `apps/giveaid` (<https://giveaid.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib "Adopted": https://colorlib.com/wp/template/adopted/

@@ -1,4 +1,8 @@
 # Tasks & Design Notes: Garagely (`automotive`)
+<!-- prep-status: shipped-as=veloce -->
+> **SHIPPED-UNDER** — the ColorLib `automotive` design this prep describes shipped
+> as `apps/veloce` (<https://veloce.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Overview
 

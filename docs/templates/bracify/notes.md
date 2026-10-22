@@ -1,4 +1,8 @@
 # Bracify — Implementation Notes
+<!-- prep-status: shipped-as=smilewell -->
+> **SHIPPED-UNDER** — the ColorLib `toothsy` design this prep describes shipped
+> as `apps/smilewell` (<https://smilewell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "Toothsy" → https://preview.colorlib.com/theme/toothsy/
 **New name:** Bracify

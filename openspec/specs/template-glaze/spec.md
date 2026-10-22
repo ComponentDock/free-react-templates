@@ -1,4 +1,9 @@
 # Template: Glaze (Button / UI Kit Showcase — Glazed Stat Buttons)
+<!-- prep-status: shipped-as=btnfuse -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-19` design this prep describes already
+> ships as `apps/btnfuse` (<https://btnfuse.free.componentdock.com>).
+> Do not scaffold `apps/glaze`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnfuse/spec.md`.
 
 ## Purpose
 

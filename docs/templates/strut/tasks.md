@@ -1,4 +1,8 @@
 # Strut — Prep Notes & Task Outline
+<!-- prep-status: shipped-as=industrix -->
+> **SHIPPED-UNDER** — the ColorLib `durg` design this prep describes shipped
+> as `apps/industrix` (<https://industrix.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Durg → https://preview.colorlib.com/theme/durg/
 **New name:** strut (structural engineering term)

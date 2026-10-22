@@ -1,4 +1,8 @@
 # Template: Accordion Twelve — Tasks & Design Notes
+<!-- prep-status: shipped-as=creel -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-12` design this prep describes shipped
+> as `apps/creel` (<https://creel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source & Preview
 

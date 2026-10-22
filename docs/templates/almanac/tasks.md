@@ -1,4 +1,8 @@
 # Almanac (ColorLib Calendar 03) — Tasks & Design Notes
+<!-- prep-status: shipped-as=calday -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-03` design this prep describes shipped
+> as `apps/calday` (<https://calday.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Almanac** (NEW name —
 > the ColorLib source keeps its name "Calendar 03"). Implementation ships on

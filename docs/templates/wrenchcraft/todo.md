@@ -1,4 +1,8 @@
 # WrenchCraft — Implementation Todo
+<!-- prep-status: shipped-as=fixcraft -->
+> **SHIPPED-UNDER** — the ColorLib `autorepair` design this prep describes shipped
+> as `apps/fixcraft` (<https://fixcraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 - [ ] Create app scaffold: `apps/wrenchcraft/` from template (copy simplest app, rename package)
 - [ ] Set up `src/index.css` with Poppins font import and Tailwind theme tokens (#064acb, #007bff, #f79f24)

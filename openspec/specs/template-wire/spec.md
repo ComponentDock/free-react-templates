@@ -1,4 +1,9 @@
 # Template: Wire (News/Magazine Blog Template)
+<!-- prep-status: shipped-as=newswire -->
+> **SHIPPED-UNDER** — the ColorLib `meranda` design this prep describes already
+> ships as `apps/newswire` (<https://newswire.free.componentdock.com>).
+> Do not scaffold `apps/wire`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-newswire/spec.md`.
 
 ## Purpose
 

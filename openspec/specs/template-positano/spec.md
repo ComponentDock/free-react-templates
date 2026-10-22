@@ -1,4 +1,9 @@
 # Template: Positano (Blog Cards Carousel)
+<!-- prep-status: shipped-as=merry -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-07` design this prep describes already
+> ships as `apps/merry` (<https://merry.free.componentdock.com>).
+> Do not scaffold `apps/positano`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-merry/spec.md`.
 
 ## Purpose
 

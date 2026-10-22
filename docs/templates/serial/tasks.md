@@ -1,4 +1,8 @@
 # Serial (ColorLib Magdesign) — Tasks & Design Notes
+<!-- prep-status: shipped-as=newsprint -->
+> **SHIPPED-UNDER** — the ColorLib `magdesign` design this prep describes shipped
+> as `apps/newsprint` (<https://newsprint.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-serial`.

@@ -1,4 +1,8 @@
 # RegVista — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=regfold -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-4` design this prep describes shipped
+> as `apps/regfold` (<https://regfold.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Colorlib Reg Form V4"
 Preview: https://preview.colorlib.com/theme/colorlib-regform-4/ (source archive downloaded)

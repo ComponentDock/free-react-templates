@@ -1,4 +1,9 @@
 # Template: Whitelink (Footer / Bootstrap Footer)
+<!-- prep-status: shipped-as=cairn -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-05` design this prep describes already
+> ships as `apps/cairn` (<https://cairn.free.componentdock.com>).
+> Do not scaffold `apps/whitelink`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cairn/spec.md`.
 
 ## Purpose
 

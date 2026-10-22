@@ -1,4 +1,9 @@
 # Template: Virtuoso (Virtual Assistant / Digital Services)
+<!-- prep-status: shipped-as=valet -->
+> **SHIPPED-UNDER** — the ColorLib `virtualassistant` design this prep describes already
+> ships as `apps/valet` (<https://valet.free.componentdock.com>).
+> Do not scaffold `apps/virtuoso`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-valet/spec.md`.
 
 ## Purpose
 

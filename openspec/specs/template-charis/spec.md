@@ -1,4 +1,9 @@
 # Template: Charis (Charity / Non-Profit Landing)
+<!-- prep-status: shipped-as=cuddle -->
+> **SHIPPED-UNDER** — the ColorLib `lovecare` design this prep describes already
+> ships as `apps/cuddle` (<https://cuddle.free.componentdock.com>).
+> Do not scaffold `apps/charis`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cuddle/spec.md`.
 
 ## Purpose
 

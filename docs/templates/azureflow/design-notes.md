@@ -1,4 +1,8 @@
 # Azureflow — Design Notes
+<!-- prep-status: shipped-as=azureline -->
+> **SHIPPED-UNDER** — the ColorLib `blueline` design this prep describes shipped
+> as `apps/azureline` (<https://azureline.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 

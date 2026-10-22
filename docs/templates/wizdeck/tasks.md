@@ -1,4 +1,8 @@
 # WizDeck — Implementation Tasks
+<!-- prep-status: shipped-as=runic -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-6` design this prep describes shipped
+> as `apps/runic` (<https://runic.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: Colorlib Wizard 6 (3-step account creation wizard form)
 New name: `wizdeck`

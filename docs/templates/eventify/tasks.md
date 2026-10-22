@@ -1,4 +1,8 @@
 # Eventify — Prep Notes & Task Outline
+<!-- prep-status: shipped-as=gathr -->
+> **SHIPPED-UNDER** — the ColorLib `evento` design this prep describes shipped
+> as `apps/gathr` (<https://gathr.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Evento
 **Preview:** https://preview.colorlib.com/theme/evento/

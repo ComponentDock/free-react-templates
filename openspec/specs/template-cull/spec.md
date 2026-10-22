@@ -1,4 +1,9 @@
 # Template: Cull (Multiselect Dropdown)
+<!-- prep-status: shipped-as=filterpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-04` design this prep describes already
+> ships as `apps/filterpick` (<https://filterpick.free.componentdock.com>).
+> Do not scaffold `apps/cull`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-filterpick/spec.md`.
 
 ## Purpose
 

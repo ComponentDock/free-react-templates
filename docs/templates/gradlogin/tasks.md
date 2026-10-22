@@ -1,4 +1,8 @@
 # Gradlogin — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=coralgate -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-17` design this prep describes shipped
+> as `apps/coralgate` (<https://coralgate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

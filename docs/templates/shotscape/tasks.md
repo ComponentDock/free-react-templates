@@ -1,4 +1,8 @@
 # ShotScape — Tasks
+<!-- prep-status: shipped-as=reflexly -->
+> **SHIPPED-UNDER** — the ColorLib `phozogy` design this prep describes shipped
+> as `apps/reflexly` (<https://reflexly.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Prep (done)
 - [x] Fetch preview DOM and CSS from colorlib.com/theme/phozogy/

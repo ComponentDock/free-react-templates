@@ -1,4 +1,9 @@
 # Template: Swell (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnpulse -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-04` design this prep describes already
+> ships as `apps/btnpulse` (<https://btnpulse.free.componentdock.com>).
+> Do not scaffold `apps/swell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnpulse/spec.md`.
 
 ## Purpose
 

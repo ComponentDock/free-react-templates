@@ -1,4 +1,8 @@
 # Palazzo — Implementation Todo
+<!-- prep-status: shipped-as=retreat -->
+> **SHIPPED-UNDER** — the ColorLib `roberto` design this prep describes shipped
+> as `apps/retreat` (<https://retreat.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib Roberto (Hotel & Resort template).
 Source: https://colorlib.com/wp/template/roberto/

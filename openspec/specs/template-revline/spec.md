@@ -1,4 +1,9 @@
 # Template: RevLine (Automotive Garage category)
+<!-- prep-status: shipped-as=veloce -->
+> **SHIPPED-UNDER** — the ColorLib `automotive` design this prep describes already
+> ships as `apps/veloce` (<https://veloce.free.componentdock.com>).
+> Do not scaffold `apps/revline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-veloce/spec.md`.
 
 ## Purpose
 

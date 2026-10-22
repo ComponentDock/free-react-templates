@@ -1,4 +1,8 @@
 # BuildCraft — Implementation Notes
+<!-- prep-status: shipped-as=buildwell -->
+> **SHIPPED-UNDER** — the ColorLib `celt` design this prep describes shipped
+> as `apps/buildwell` (<https://buildwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source**: ColorLib Celt (https://preview.colorlib.com/theme/celt/)
 **New name**: `buildcraft`

@@ -1,4 +1,8 @@
 # Modalbloom — Implementation Notes
+<!-- prep-status: shipped-as=modal-pulse -->
+> **SHIPPED-UNDER** — the ColorLib `modal-18` design this prep describes shipped
+> as `apps/modal-pulse` (<https://modal-pulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Modal 18
 Preview: https://preview.colorlib.com/theme/bootstrap/modal-18/

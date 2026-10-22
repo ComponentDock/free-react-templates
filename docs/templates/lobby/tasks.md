@@ -1,4 +1,8 @@
 # Lobby (ColorLib Modal 07) — Tasks & Design Notes
+<!-- prep-status: shipped-as=communique -->
+> **SHIPPED-UNDER** — the ColorLib `modal-07` design this prep describes shipped
+> as `apps/communique` (<https://communique.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Lobby** (NEW name —
 > the ColorLib source keeps its name "Modal 07"). Implementation ships on

@@ -1,4 +1,8 @@
 # ImaStudio — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=clareo -->
+> **SHIPPED-UNDER** — the ColorLib `imahe` design this prep describes shipped
+> as `apps/clareo` (<https://clareo.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Imahe (https://colorlib.com/wp/template/imahe/)
 Preview: https://preview.colorlib.com/theme/imahe/

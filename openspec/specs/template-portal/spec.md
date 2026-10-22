@@ -1,4 +1,9 @@
 # Template: Portal (Winter Sale Modal)
+<!-- prep-status: shipped-as=snowdrift -->
+> **SHIPPED-UNDER** — the ColorLib `modal-03` design this prep describes already
+> ships as `apps/snowdrift` (<https://snowdrift.free.componentdock.com>).
+> Do not scaffold `apps/portal`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-snowdrift/spec.md`.
 
 ## Purpose
 

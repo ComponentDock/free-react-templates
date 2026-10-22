@@ -1,4 +1,8 @@
 # Heirloom — Implementation Tasks
+<!-- prep-status: shipped-as=linnet -->
+> **SHIPPED-UNDER** — the ColorLib `classic` design this prep describes shipped
+> as `apps/linnet` (<https://linnet.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Classic (https://colorlib.com/wp/template/classic/)
 Preview: https://preview.colorlib.com/theme/classic/

@@ -1,4 +1,8 @@
 # Prana (ColorLib Yogalax) — Tasks & Design Notes
+<!-- prep-status: shipped-as=shanti -->
+> **SHIPPED-UNDER** — the ColorLib `yogalax` design this prep describes shipped
+> as `apps/shanti` (<https://shanti.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Yogalax" — free YOGA STUDIO one-page template
 > (https://colorlib.com/wp/template/yogalax/) under the NEW name **Prana**

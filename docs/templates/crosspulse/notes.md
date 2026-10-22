@@ -1,4 +1,8 @@
 # Crosspulse — Prep Notes & Design Research
+<!-- prep-status: shipped-as=ironpulse -->
+> **SHIPPED-UNDER** — the ColorLib `crossbody` design this prep describes shipped
+> as `apps/ironpulse` (<https://ironpulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib template:** Crossbody

@@ -1,4 +1,8 @@
 # Splithaven — Implementation Notes
+<!-- prep-status: shipped-as=portico -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-01` design this prep describes shipped
+> as `apps/portico` (<https://portico.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Login Form V01

@@ -1,4 +1,8 @@
 # Shoreline (ColorLib Ocheandeview) — Tasks & Design Notes
+<!-- prep-status: shipped-as=havenshore -->
+> **SHIPPED-UNDER** — the ColorLib `ocheandeview` design this prep describes shipped
+> as `apps/havenshore` (<https://havenshore.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-shoreline`.

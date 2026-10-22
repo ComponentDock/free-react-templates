@@ -1,4 +1,8 @@
 # Craver — Tasks
+<!-- prep-status: shipped-as=ravida -->
+> **SHIPPED-UNDER** — the ColorLib `buri` design this prep describes shipped
+> as `apps/ravida` (<https://ravida.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Buri" (https://colorlib.com/wp/template/buri/)
 New name: Craver (apps/craver, @free-react-templates/craver)

@@ -1,4 +1,8 @@
 # Repose (ColorLib Unwind) — Tasks & Design Notes
+<!-- prep-status: shipped-as=solace -->
+> **SHIPPED-UNDER** — the ColorLib `unwind` design this prep describes shipped
+> as `apps/solace` (<https://solace.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Unwind"
 > (https://colorlib.com/wp/template/unwind/) under the NEW name

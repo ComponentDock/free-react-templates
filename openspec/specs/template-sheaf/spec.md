@@ -1,4 +1,9 @@
 # Template: Sheaf (Multiselect Tags)
+<!-- prep-status: shipped-as=optwell -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-12` design this prep describes already
+> ships as `apps/optwell` (<https://optwell.free.componentdock.com>).
+> Do not scaffold `apps/sheaf`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optwell/spec.md`.
 
 ## Purpose
 

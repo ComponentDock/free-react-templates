@@ -1,4 +1,9 @@
 # Template: VoyagePoint (Travel / Tourism)
+<!-- prep-status: shipped-as=goquest -->
+> **SHIPPED-UNDER** — the ColorLib `gotrip` design this prep describes already
+> ships as `apps/goquest` (<https://goquest.free.componentdock.com>).
+> Do not scaffold `apps/voyagepoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-goquest/spec.md`.
 
 ## Purpose
 

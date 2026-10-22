@@ -1,4 +1,8 @@
 # Bitforge — Design Notes
+<!-- prep-status: shipped-as=coinwave -->
+> **SHIPPED-UNDER** — the ColorLib `bitcoin` design this prep describes shipped
+> as `apps/coinwave` (<https://coinwave.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Reference
 

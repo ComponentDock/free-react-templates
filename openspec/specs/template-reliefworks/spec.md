@@ -1,4 +1,9 @@
 # Template: ReliefWorks (Charity Foundation)
+<!-- prep-status: shipped-as=givecause -->
+> **SHIPPED-UNDER** — the ColorLib `charity-works` design this prep describes already
+> ships as `apps/givecause` (<https://givecause.free.componentdock.com>).
+> Do not scaffold `apps/reliefworks`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-givecause/spec.md`.
 
 ## Purpose
 

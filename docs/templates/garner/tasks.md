@@ -1,4 +1,8 @@
 # Garner (ColorLib Multiselect 06) — Tasks & Design Notes
+<!-- prep-status: shipped-as=optselect -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-06` design this prep describes shipped
+> as `apps/optselect` (<https://optselect.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Garner** (NEW name —
 > the ColorLib source keeps its name "Multiselect 06"). Implementation ships

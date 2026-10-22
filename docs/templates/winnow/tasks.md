@@ -1,4 +1,8 @@
 # Winnow — implementation tasks + design notes
+<!-- prep-status: shipped-as=combobox -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-03` design this prep describes shipped
+> as `apps/combobox` (<https://combobox.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 03** (`multiselect-03`) as **Winnow**.
 Read `openspec/specs/template-winnow/spec.md` first — it holds every token,

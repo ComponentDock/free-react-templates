@@ -1,4 +1,8 @@
 # ContactMap — Implementation Notes
+<!-- prep-status: shipped-as=dropform -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v8` design this prep describes shipped
+> as `apps/dropform` (<https://dropform.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Contact Form V8

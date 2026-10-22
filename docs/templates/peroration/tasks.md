@@ -1,4 +1,8 @@
 # Peroration (ColorLib Bootstrap Footer 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=footerpulse -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-20` design this prep describes shipped
+> as `apps/footerpulse` (<https://footerpulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-peroration`.

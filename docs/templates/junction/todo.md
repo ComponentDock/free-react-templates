@@ -1,4 +1,8 @@
 # Junction — Implementation Guide
+<!-- prep-status: shipped-as=jockford -->
+> **SHIPPED-UNDER** — the ColorLib `jackson` design this prep describes shipped
+> as `apps/jockford` (<https://jockford.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib "Jackson" personal resume template.
 

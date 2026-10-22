@@ -1,4 +1,9 @@
 # Template: Crosspulse (Health & Fitness — Crossfit/Gym)
+<!-- prep-status: shipped-as=ironpulse -->
+> **SHIPPED-UNDER** — the ColorLib `crossbody` design this prep describes already
+> ships as `apps/ironpulse` (<https://ironpulse.free.componentdock.com>).
+> Do not scaffold `apps/crosspulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ironpulse/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Litigate (Law Firm Landing Page)
+<!-- prep-status: shipped-as=counsel -->
+> **SHIPPED-UNDER** — the ColorLib `whisper` design this prep describes already
+> ships as `apps/counsel` (<https://counsel.free.componentdock.com>).
+> Do not scaffold `apps/litigate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-counsel/spec.md`.
 
 ## Purpose
 

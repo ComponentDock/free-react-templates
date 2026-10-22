@@ -1,4 +1,8 @@
 # TopModel — Implementation Tasks
+<!-- prep-status: shipped-as=vizier -->
+> **SHIPPED-UNDER** — the ColorLib `mona` design this prep describes shipped
+> as `apps/vizier` (<https://vizier.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 - [ ] Scaffold app from template (copy simplest existing app, rename to topmodel)
 - [ ] Set up `apps/topmodel/` package.json, vite.config.ts, index.html with Google Fonts

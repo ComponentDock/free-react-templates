@@ -1,4 +1,8 @@
 # Bitshot (ColorLib Bitmap) — Tasks & Design Notes
+<!-- prep-status: shipped-as=lensvault -->
+> **SHIPPED-UNDER** — the ColorLib `bitmap` design this prep describes shipped
+> as `apps/lensvault` (<https://lensvault.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Bitmap" (https://colorlib.com/wp/template/bitmap/)
 > under the NEW name **Bitshot** (photography-themed — "bit" + "shot" —

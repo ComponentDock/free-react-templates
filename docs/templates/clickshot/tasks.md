@@ -1,4 +1,8 @@
 # ClickShot — Implementation Tasks
+<!-- prep-status: shipped-as=shotglow -->
+> **SHIPPED-UNDER** — the ColorLib `shotgear` design this prep describes shipped
+> as `apps/shotglow` (<https://shotglow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup
 - [ ] Create `apps/clickshot/` from a minimal existing app template

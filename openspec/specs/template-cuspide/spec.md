@@ -1,4 +1,9 @@
 # Template: Cuspide (Dental Clinic)
+<!-- prep-status: shipped-as=brightoral -->
+> **SHIPPED-UNDER** — the ColorLib `dente` design this prep describes already
+> ships as `apps/brightoral` (<https://brightoral.free.componentdock.com>).
+> Do not scaffold `apps/cuspide`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-brightoral/spec.md`.
 
 ## Purpose
 

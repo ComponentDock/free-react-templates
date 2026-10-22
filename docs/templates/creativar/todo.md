@@ -1,4 +1,8 @@
 # Creativar — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=imprint -->
+> **SHIPPED-UNDER** — the ColorLib `evans` design this prep describes shipped
+> as `apps/imprint` (<https://imprint.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Overview
 - **Name:** Creativar (new, original)

@@ -1,4 +1,9 @@
 # Template: Creativar (Personal Creative Portfolio)
+<!-- prep-status: shipped-as=imprint -->
+> **SHIPPED-UNDER** — the ColorLib `evans` design this prep describes already
+> ships as `apps/imprint` (<https://imprint.free.componentdock.com>).
+> Do not scaffold `apps/creativar`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-imprint/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Portrait (Personal Portfolio)
+<!-- prep-status: shipped-as=resume -->
+> **SHIPPED-UNDER** — the ColorLib `personalportfolio` design this prep describes already
+> ships as `apps/resume` (<https://resume.free.componentdock.com>).
+> Do not scaffold `apps/portrait`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-resume/spec.md`.
 
 ## Purpose
 

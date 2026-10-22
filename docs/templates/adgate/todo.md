@@ -1,4 +1,8 @@
 # AdGate — Tasks & Design Notes
+<!-- prep-status: shipped-as=classipost -->
+> **SHIPPED-UNDER** — the ColorLib `classy-ads` design this prep describes shipped
+> as `apps/classipost` (<https://classipost.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Info
 

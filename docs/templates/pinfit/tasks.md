@@ -1,4 +1,8 @@
 # Pinfit (ColorLib Menztailor) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sartorial -->
+> **SHIPPED-UNDER** — the ColorLib `menztailor` design this prep describes shipped
+> as `apps/sartorial` (<https://sartorial.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Menztailor" (https://colorlib.com/wp/template/menztailor/)
 > under the NEW original name **Pinfit** (prep naming convention: spec/docs

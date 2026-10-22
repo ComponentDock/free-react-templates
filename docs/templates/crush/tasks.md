@@ -1,4 +1,8 @@
 # Crush (ColorLib Smashed) — Tasks & Design Notes
+<!-- prep-status: shipped-as=shatter -->
+> **SHIPPED-UNDER** — the ColorLib `smashed` design this prep describes shipped
+> as `apps/shatter` (<https://shatter.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-crush`. Recreation name: **Crush** (NEW name —

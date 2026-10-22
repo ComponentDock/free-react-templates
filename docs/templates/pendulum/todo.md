@@ -1,4 +1,8 @@
 # Pendulum — Task Outline
+<!-- prep-status: shipped-as=bezel -->
+> **SHIPPED-UNDER** — the ColorLib `watch` design this prep describes shipped
+> as `apps/bezel` (<https://bezel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Watch" → https://preview.colorlib.com/theme/watch/
 New name: pendulum

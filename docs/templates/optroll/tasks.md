@@ -1,4 +1,8 @@
 # Optroll — Design Notes & Tasks
+<!-- prep-status: shipped-as=picklist -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-14` design this prep describes shipped
+> as `apps/picklist` (<https://picklist.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Multiselect 14
 Preview: https://preview.colorlib.com/theme/bootstrap/multiselect-14/

@@ -1,4 +1,9 @@
 # Template: Jolt (Event Countdown / Startup Landing)
+<!-- prep-status: shipped-as=momentum -->
+> **SHIPPED-UNDER** — the ColorLib `action` design this prep describes already
+> ships as `apps/momentum` (<https://momentum.free.componentdock.com>).
+> Do not scaffold `apps/jolt`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-momentum/spec.md`.
 
 ## Purpose
 

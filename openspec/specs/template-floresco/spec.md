@@ -1,4 +1,9 @@
 # Template: Floresco (Florist / E-commerce)
+<!-- prep-status: shipped-as=bloomfield -->
+> **SHIPPED-UNDER** — the ColorLib `florist` design this prep describes already
+> ships as `apps/bloomfield` (<https://bloomfield.free.componentdock.com>).
+> Do not scaffold `apps/floresco`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bloomfield/spec.md`.
 
 ## Purpose
 

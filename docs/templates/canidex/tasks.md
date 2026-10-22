@@ -1,4 +1,8 @@
 # Canidex (ColorLib Dingo) — Tasks & Design Notes
+<!-- prep-status: shipped-as=ember -->
+> **SHIPPED-UNDER** — the ColorLib `dingo` design this prep describes shipped
+> as `apps/ember` (<https://ember.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts committed on `main` (prep stream). Implementation ships
 > later on `feat/template-canidex` (implementer stream).

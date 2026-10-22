@@ -1,4 +1,8 @@
 # Bizcraft — Implementation Todo
+<!-- prep-status: shipped-as=bizmark -->
+> **SHIPPED-UNDER** — the ColorLib `bizcon` design this prep describes shipped
+> as `apps/bizmark` (<https://bizmark.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Bizcon (https://colorlib.com/wp/template/bizcon/)
 Preview: https://preview.colorlib.com/theme/bizcon/

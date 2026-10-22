@@ -1,4 +1,9 @@
 # Template: QueryHub (Search Form)
+<!-- prep-status: shipped-as=searchpad -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-21` design this prep describes already
+> ships as `apps/searchpad` (<https://searchpad.free.componentdock.com>).
+> Do not scaffold `apps/queryhub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-searchpad/spec.md`.
 
 ## Purpose
 

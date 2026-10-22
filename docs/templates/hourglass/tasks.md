@@ -1,4 +1,8 @@
 # Hourglass (ColorLib Watch) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bezel -->
+> **SHIPPED-UNDER** — the ColorLib `watch` design this prep describes shipped
+> as `apps/bezel` (<https://bezel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-hourglass`. Recreation name: **Hourglass** (NEW name

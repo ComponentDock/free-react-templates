@@ -1,4 +1,8 @@
 # Mechatron — Implementation Notes
+<!-- prep-status: shipped-as=mechbot -->
+> **SHIPPED-UNDER** — the ColorLib `robotics` design this prep describes shipped
+> as `apps/mechbot` (<https://mechbot.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "Robotics" (https://colorlib.com/wp/template/robotics/)
 **Preview:** https://preview.colorlib.com/theme/robotics/

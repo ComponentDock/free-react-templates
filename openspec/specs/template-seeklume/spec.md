@@ -1,4 +1,9 @@
 # Template: SeekLume (Full-Screen Overlay Search)
+<!-- prep-status: shipped-as=searchveil -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-16` design this prep describes already
+> ships as `apps/searchveil` (<https://searchveil.free.componentdock.com>).
+> Do not scaffold `apps/seeklume`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-searchveil/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Prana (Health & Fitness / Yoga Studio)
+<!-- prep-status: shipped-as=shanti -->
+> **SHIPPED-UNDER** — the ColorLib `yogalax` design this prep describes already
+> ships as `apps/shanti` (<https://shanti.free.componentdock.com>).
+> Do not scaffold `apps/prana`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shanti/spec.md`.
 
 ## Purpose
 

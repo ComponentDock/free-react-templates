@@ -1,4 +1,9 @@
 # Template: Kern (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnvibe -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-06` design this prep describes already
+> ships as `apps/btnvibe` (<https://btnvibe.free.componentdock.com>).
+> Do not scaffold `apps/kern`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnvibe/spec.md`.
 
 ## Purpose
 

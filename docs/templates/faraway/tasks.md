@@ -1,4 +1,8 @@
 # Faraway (ColorLib Carousel 02) — Tasks & Design Notes
+<!-- prep-status: shipped-as=lattice -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-02` design this prep describes shipped
+> as `apps/lattice` (<https://lattice.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-faraway`.

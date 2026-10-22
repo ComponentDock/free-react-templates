@@ -1,4 +1,8 @@
 # Vesture (ColorLib Ashion) — Tasks & Design Notes
+<!-- prep-status: shipped-as=drape -->
+> **SHIPPED-UNDER** — the ColorLib `fashe` design this prep describes shipped
+> as `apps/drape` (<https://drape.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-vesture/` is the claim marker —

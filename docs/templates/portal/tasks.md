@@ -1,4 +1,8 @@
 # Portal (ColorLib Modal 03) — Tasks & Design Notes
+<!-- prep-status: shipped-as=snowdrift -->
+> **SHIPPED-UNDER** — the ColorLib `modal-03` design this prep describes shipped
+> as `apps/snowdrift` (<https://snowdrift.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Portal** (NEW name —
 > the ColorLib source keeps its name "Modal 03"). Implementation ships on

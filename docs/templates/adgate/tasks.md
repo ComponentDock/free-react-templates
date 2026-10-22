@@ -1,4 +1,8 @@
 # AdGate (ColorLib Classy Ads) — Tasks & Design Notes
+<!-- prep-status: shipped-as=classipost -->
+> **SHIPPED-UNDER** — the ColorLib `classy-ads` design this prep describes shipped
+> as `apps/classipost` (<https://classipost.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the PREP stream (stream 3).
 > Implementation ships later on `feat/template-adgate`.

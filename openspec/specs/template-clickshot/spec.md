@@ -1,4 +1,9 @@
 # Template: ClickShot (Photography Studio / Business)
+<!-- prep-status: shipped-as=shotglow -->
+> **SHIPPED-UNDER** — the ColorLib `shotgear` design this prep describes already
+> ships as `apps/shotglow` (<https://shotglow.free.componentdock.com>).
+> Do not scaffold `apps/clickshot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shotglow/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Formify — Tasks & Design Notes
+<!-- prep-status: shipped-as=formvolt -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v3` design this prep describes shipped
+> as `apps/formvolt` (<https://formvolt.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib slug: `contact-form-v3`

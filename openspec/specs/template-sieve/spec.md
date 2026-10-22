@@ -1,4 +1,9 @@
 # Template: Sieve (Multiselect Dropdown)
+<!-- prep-status: shipped-as=tealpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-13` design this prep describes already
+> ships as `apps/tealpick` (<https://tealpick.free.componentdock.com>).
+> Do not scaffold `apps/sieve`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tealpick/spec.md`.
 
 ## Purpose
 

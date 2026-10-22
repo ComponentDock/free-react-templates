@@ -1,4 +1,8 @@
 # Profilestep — Implementation Tasks
+<!-- prep-status: shipped-as=formvane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-9` design this prep describes shipped
+> as `apps/formvane` (<https://formvane.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Overview
 Three-step user profile form wizard with photographic background, centered

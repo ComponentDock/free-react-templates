@@ -1,4 +1,8 @@
 # Kalends (ColorLib Calendar 12) — Tasks & Design Notes
+<!-- prep-status: shipped-as=calgrid -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-12` design this prep describes shipped
+> as `apps/calgrid` (<https://calgrid.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-kalends`.

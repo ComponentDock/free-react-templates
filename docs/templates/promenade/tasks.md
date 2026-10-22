@@ -1,4 +1,8 @@
 # Promenade (ColorLib Modal 15) — Tasks & Design Notes
+<!-- prep-status: shipped-as=signgate -->
+> **SHIPPED-UNDER** — the ColorLib `modal-15` design this prep describes shipped
+> as `apps/signgate` (<https://signgate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Promenade** (NEW name —
 > the ColorLib source keeps its name "Modal 15"/`modal-15`). Implementation

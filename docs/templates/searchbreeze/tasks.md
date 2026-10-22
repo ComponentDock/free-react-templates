@@ -1,4 +1,8 @@
 # Searchbreeze — Design Notes & Task Outline
+<!-- prep-status: shipped-as=seekgate -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-9` design this prep describes shipped
+> as `apps/seekgate` (<https://seekgate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

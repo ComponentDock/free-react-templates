@@ -1,4 +1,8 @@
 # Melodia — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=groovecraft -->
+> **SHIPPED-UNDER** — the ColorLib `onemusic` design this prep describes shipped
+> as `apps/groovecraft` (<https://groovecraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "One Music" — https://colorlib.com/wp/template/onemusic/
 **Preview:** https://preview.colorlib.com/theme/onemusic/

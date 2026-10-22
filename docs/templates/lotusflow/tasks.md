@@ -1,4 +1,8 @@
 # LotusFlow (Colorlib Yoga Studio) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pranayama -->
+> **SHIPPED-UNDER** — the ColorLib `yoga-studio` design this prep describes shipped
+> as `apps/pranayama` (<https://pranayama.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` under the source name (template-yoga-studio);
 > renamed to the NEW name **LotusFlow** in the implementation PR.

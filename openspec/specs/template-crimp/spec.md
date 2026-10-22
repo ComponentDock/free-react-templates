@@ -1,4 +1,9 @@
 # Template: Crimp (Bootstrap Accordion / Account Menu)
+<!-- prep-status: shipped-as=stackly -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-08` design this prep describes already
+> ships as `apps/stackly` (<https://stackly.free.componentdock.com>).
+> Do not scaffold `apps/crimp`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stackly/spec.md`.
 
 ## Purpose
 

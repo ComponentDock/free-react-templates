@@ -1,4 +1,9 @@
 # Template: Terminus (Footer)
+<!-- prep-status: shipped-as=footerwell -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-12` design this prep describes already
+> ships as `apps/footerwell` (<https://footerwell.free.componentdock.com>).
+> Do not scaffold `apps/terminus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footerwell/spec.md`.
 
 ## Purpose
 

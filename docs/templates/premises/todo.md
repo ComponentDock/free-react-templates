@@ -1,4 +1,8 @@
 # Premises — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=homefront -->
+> **SHIPPED-UNDER** — the ColorLib `royalestate` design this prep describes shipped
+> as `apps/homefront` (<https://homefront.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib:** Royalestate

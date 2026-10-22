@@ -1,4 +1,8 @@
 # VoyageCraft — Implementation Notes
+<!-- prep-status: shipped-as=getaway -->
+> **SHIPPED-UNDER** — the ColorLib `vacation` design this prep describes shipped
+> as `apps/getaway` (<https://getaway.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Overview
 - **New name**: VoyageCraft

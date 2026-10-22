@@ -1,4 +1,9 @@
 # Template: DarkPick (Bootstrap Multiselect)
+<!-- prep-status: shipped-as=thresh -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-09` design this prep describes already
+> ships as `apps/thresh` (<https://thresh.free.componentdock.com>).
+> Do not scaffold `apps/darkpick`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-thresh/spec.md`.
 
 ## Purpose
 

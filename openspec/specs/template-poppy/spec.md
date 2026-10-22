@@ -1,4 +1,9 @@
 # Template: Poppy (Newsletter Subscription Modal)
+<!-- prep-status: shipped-as=bellpush -->
+> **SHIPPED-UNDER** — the ColorLib `modal-10` design this prep describes already
+> ships as `apps/bellpush` (<https://bellpush.free.componentdock.com>).
+> Do not scaffold `apps/poppy`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bellpush/spec.md`.
 
 ## Purpose
 

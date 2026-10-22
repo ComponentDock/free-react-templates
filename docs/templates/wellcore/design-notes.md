@@ -1,4 +1,8 @@
 # Wellcore — Design Notes & Task Outline
+<!-- prep-status: shipped-as=vitaflow -->
+> **SHIPPED-UNDER** — the ColorLib `healthcoach` design this prep describes shipped
+> as `apps/vitaflow` (<https://vitaflow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

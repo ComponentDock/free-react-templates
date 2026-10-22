@@ -1,4 +1,8 @@
 # Dwellscape — Design Notes & Task Outline
+<!-- prep-status: shipped-as=dwellix -->
+> **SHIPPED-UNDER** — the ColorLib `rehomes` design this prep describes shipped
+> as `apps/dwellix` (<https://dwellix.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Rehomes  
 **Preview:** https://preview.colorlib.com/theme/rehomes/  

@@ -1,4 +1,9 @@
 # Template: EstateHaven (Real Estate Agency)
+<!-- prep-status: shipped-as=hamlin -->
+> **SHIPPED-UNDER** — the ColorLib `hamlet` design this prep describes already
+> ships as `apps/hamlin` (<https://hamlin.free.componentdock.com>).
+> Do not scaffold `apps/estate-haven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hamlin/spec.md`.
 
 ## Purpose
 

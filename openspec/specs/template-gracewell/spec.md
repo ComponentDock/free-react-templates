@@ -1,4 +1,9 @@
 # Template: GraceWell (Charity / Nonprofit)
+<!-- prep-status: shipped-as=warmheart -->
+> **SHIPPED-UNDER** — the ColorLib `kindity` design this prep describes already
+> ships as `apps/warmheart` (<https://warmheart.free.componentdock.com>).
+> Do not scaffold `apps/gracewell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-warmheart/spec.md`.
 
 ## Purpose
 

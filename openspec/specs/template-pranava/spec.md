@@ -1,4 +1,9 @@
 # Template: Pranava (Yoga Studio)
+<!-- prep-status: shipped-as=zen -->
+> **SHIPPED-UNDER** — the ColorLib `namaste` design this prep describes already
+> ships as `apps/zen` (<https://zen.free.componentdock.com>).
+> Do not scaffold `apps/pranava`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-zen/spec.md`.
 
 ## Purpose
 

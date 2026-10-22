@@ -1,4 +1,8 @@
 # HireDesk — Design Notes & Task Outline
+<!-- prep-status: shipped-as=jobvane -->
+> **SHIPPED-UNDER** — the ColorLib `jobpply` design this prep describes shipped
+> as `apps/jobvane` (<https://jobvane.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 - **ColorLib source:** Jobpply (slug: `jobpply`)

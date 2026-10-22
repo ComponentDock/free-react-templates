@@ -1,4 +1,8 @@
 # RevTrack — Implementation Notes
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes shipped
+> as `apps/drivego` (<https://drivego.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Carrentals (`https://colorlib.com/wp/template/carrentals/`)

@@ -1,4 +1,8 @@
 # Lido (ColorLib Carousel 04) — Tasks & Design Notes
+<!-- prep-status: shipped-as=carosle -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-04` design this prep describes shipped
+> as `apps/carosle` (<https://carosle.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-lido`.

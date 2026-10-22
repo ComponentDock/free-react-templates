@@ -1,4 +1,9 @@
 # Template: Advocate (Legal / Professional Services)
+<!-- prep-status: shipped-as=lawguard -->
+> **SHIPPED-UNDER** — the ColorLib `solicitor` design this prep describes already
+> ships as `apps/lawguard` (<https://lawguard.free.componentdock.com>).
+> Do not scaffold `apps/advocate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lawguard/spec.md`.
 
 ## Purpose
 

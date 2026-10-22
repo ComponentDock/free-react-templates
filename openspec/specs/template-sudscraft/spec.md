@@ -1,4 +1,9 @@
 # Template: SudsCraft (Car Wash Services)
+<!-- prep-status: shipped-as=washbox -->
+> **SHIPPED-UNDER** — the ColorLib `carwash` design this prep describes already
+> ships as `apps/washbox` (<https://washbox.free.componentdock.com>).
+> Do not scaffold `apps/sudscraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-washbox/spec.md`.
 
 ## Purpose
 

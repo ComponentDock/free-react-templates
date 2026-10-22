@@ -1,4 +1,8 @@
 # Solecraft — Task Checklist
+<!-- prep-status: shipped-as=lacecraft -->
+> **SHIPPED-UNDER** — the ColorLib `solestyle` design this prep describes shipped
+> as `apps/lacecraft` (<https://lacecraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Prep (done)
 - [x] Replication research: preview DOM analyzed, CSS tokens extracted

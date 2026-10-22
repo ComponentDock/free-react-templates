@@ -1,4 +1,9 @@
 # Template: Signuplane (Registration Form)
+<!-- prep-status: shipped-as=regflux -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-14` design this prep describes already
+> ships as `apps/regflux` (<https://regflux.free.componentdock.com>).
+> Do not scaffold `apps/signuplane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regflux/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Garnish (ColorLib Caviar) — Tasks & Design Notes
+<!-- prep-status: shipped-as=brasserie -->
+> **SHIPPED-UNDER** — the ColorLib `caviar` design this prep describes shipped
+> as `apps/brasserie` (<https://brasserie.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Caviar" under the new name **Garnish**.
 

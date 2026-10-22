@@ -1,4 +1,8 @@
 # Justice — Design Notes (Thelawyer Recreation)
+<!-- prep-status: shipped-as=casepoint -->
+> **SHIPPED-UNDER** — the ColorLib `thelawyer` design this prep describes shipped
+> as `apps/casepoint` (<https://casepoint.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib template:** Thelawyer

@@ -1,4 +1,8 @@
 # Tasks & Design Notes: Calendo (Calendar 05 Recreation)
+<!-- prep-status: shipped-as=calmark -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-05` design this prep describes shipped
+> as `apps/calmark` (<https://calmark.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Overview
 

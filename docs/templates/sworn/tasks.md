@@ -1,4 +1,8 @@
 # Sworn — Design Notes & Task Outline
+<!-- prep-status: shipped-as=oathmark -->
+> **SHIPPED-UNDER** — the ColorLib `notary` design this prep describes shipped
+> as `apps/oathmark` (<https://oathmark.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib "Notary" (https://colorlib.com/wp/template/notary/).
 Preview: https://preview.colorlib.com/theme/notary/

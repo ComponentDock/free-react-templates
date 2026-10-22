@@ -1,4 +1,8 @@
 # Frosted (ColorLib Cakes) — Tasks & Design Notes
+<!-- prep-status: shipped-as=crumbs -->
+> **SHIPPED-UNDER** — the ColorLib `cakes` design this prep describes shipped
+> as `apps/crumbs` (<https://crumbs.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Design notes
 

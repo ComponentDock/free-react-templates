@@ -1,4 +1,8 @@
 # Havenkey — Implementation TODO & Design Notes
+<!-- prep-status: shipped-as=havenridge -->
+> **SHIPPED-UNDER** — the ColorLib `oakberry` design this prep describes shipped
+> as `apps/havenridge` (<https://havenridge.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

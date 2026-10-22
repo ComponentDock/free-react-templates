@@ -1,4 +1,8 @@
 # Calnest (ColorLib Calendar 12 Recreation) — Implementation Plan & Tasks
+<!-- prep-status: shipped-as=calgrid -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-12` design this prep describes shipped
+> as `apps/calgrid` (<https://calgrid.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source & Mapping
 

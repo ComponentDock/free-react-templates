@@ -1,4 +1,9 @@
 # Template: Savora (Restaurant)
+<!-- prep-status: shipped-as=bonquet -->
+> **SHIPPED-UNDER** — the ColorLib `restauco` design this prep describes already
+> ships as `apps/bonquet` (<https://bonquet.free.componentdock.com>).
+> Do not scaffold `apps/savora`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bonquet/spec.md`.
 
 ## Purpose
 

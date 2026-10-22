@@ -1,4 +1,9 @@
 # Template: Lobby (Appointment Booking Modal)
+<!-- prep-status: shipped-as=communique -->
+> **SHIPPED-UNDER** — the ColorLib `modal-07` design this prep describes already
+> ships as `apps/communique` (<https://communique.free.componentdock.com>).
+> Do not scaffold `apps/lobby`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-communique/spec.md`.
 
 ## Purpose
 

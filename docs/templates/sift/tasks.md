@@ -1,4 +1,8 @@
 # Sift (ColorLib Multiselect 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=optflow -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-20` design this prep describes shipped
+> as `apps/optflow` (<https://optflow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-sift`. Recreation name: **Sift** (NEW name — the

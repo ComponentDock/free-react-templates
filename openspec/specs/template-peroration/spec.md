@@ -1,4 +1,9 @@
 # Template: Peroration (Footer)
+<!-- prep-status: shipped-as=footerpulse -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-20` design this prep describes already
+> ships as `apps/footerpulse` (<https://footerpulse.free.componentdock.com>).
+> Do not scaffold `apps/peroration`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footerpulse/spec.md`.
 
 ## Purpose
 

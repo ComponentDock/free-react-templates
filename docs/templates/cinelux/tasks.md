@@ -1,4 +1,8 @@
 # Cinelux — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=reelcraft -->
+> **SHIPPED-UNDER** — the ColorLib `videograph` design this prep describes shipped
+> as `apps/reelcraft` (<https://reelcraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Videograph (https://preview.colorlib.com/theme/videograph/)
 New name: `cinelux`

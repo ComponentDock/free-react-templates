@@ -1,4 +1,9 @@
 # Template: TopModel (Modeling Agency / Portfolio)
+<!-- prep-status: shipped-as=vizier -->
+> **SHIPPED-UNDER** — the ColorLib `mona` design this prep describes already
+> ships as `apps/vizier` (<https://vizier.free.componentdock.com>).
+> Do not scaffold `apps/topmodel`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vizier/spec.md`.
 
 ## Purpose
 

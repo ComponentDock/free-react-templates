@@ -1,4 +1,8 @@
 # Ironcore (ColorLib Dazko) — Tasks & Design Notes
+<!-- prep-status: shipped-as=kinesis -->
+> **SHIPPED-UNDER** — the ColorLib `dazko` design this prep describes shipped
+> as `apps/kinesis` (<https://kinesis.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Ironcore** (NEW name —
 > the ColorLib source keeps its name "Dazko"/`dazko`). Implementation ships on

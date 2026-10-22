@@ -1,4 +1,9 @@
 # Template: WizCraft (Checkout Wizard Form)
+<!-- prep-status: shipped-as=divine -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-5` design this prep describes already
+> ships as `apps/divine` (<https://divine.free.componentdock.com>).
+> Do not scaffold `apps/wizcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-divine/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Anise (ColorLib Accordion 13) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pleat -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-13` design this prep describes shipped
+> as `apps/pleat` (<https://pleat.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Anise** (NEW name —
 > the ColorLib source keeps its name "Accordion 13"). Implementation ships on

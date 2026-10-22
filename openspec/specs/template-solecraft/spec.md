@@ -1,4 +1,9 @@
 # Template: Solecraft (E-Commerce / Footwear)
+<!-- prep-status: shipped-as=lacecraft -->
+> **SHIPPED-UNDER** — the ColorLib `solestyle` design this prep describes already
+> ships as `apps/lacecraft` (<https://lacecraft.free.componentdock.com>).
+> Do not scaffold `apps/solecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lacecraft/spec.md`.
 
 ## Purpose
 

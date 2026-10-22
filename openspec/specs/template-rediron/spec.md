@@ -1,4 +1,9 @@
 # Template: RedIron (Construction Company)
+<!-- prep-status: shipped-as=trowel -->
+> **SHIPPED-UNDER** — the ColorLib `sintec` design this prep describes already
+> ships as `apps/trowel` (<https://trowel.free.componentdock.com>).
+> Do not scaffold `apps/rediron`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-trowel/spec.md`.
 
 ## Purpose
 

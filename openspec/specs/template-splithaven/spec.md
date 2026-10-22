@@ -1,4 +1,9 @@
 # Template: Splithaven (Login Form)
+<!-- prep-status: shipped-as=portico -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-01` design this prep describes already
+> ships as `apps/portico` (<https://portico.free.componentdock.com>).
+> Do not scaffold `apps/splithaven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-portico/spec.md`.
 
 ## Purpose
 

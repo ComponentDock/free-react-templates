@@ -1,4 +1,9 @@
 # Template: Menubar (Bootstrap Dropdowns Demo)
+<!-- prep-status: shipped-as=dropkit -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-01` design this prep describes already
+> ships as `apps/dropkit` (<https://dropkit.free.componentdock.com>).
+> Do not scaffold `apps/menubar`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropkit/spec.md`.
 
 ## Purpose
 

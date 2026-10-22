@@ -1,4 +1,8 @@
 # Cerebro — Prep Notes
+<!-- prep-status: shipped-as=learnwise -->
+> **SHIPPED-UNDER** — the ColorLib `clever` design this prep describes shipped
+> as `apps/learnwise` (<https://learnwise.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Clever" (https://preview.colorlib.com/theme/clever/)
 New name: Cerebro

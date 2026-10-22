@@ -1,4 +1,9 @@
 # Template: FitNova (Health Fitness / Yoga Studio)
+<!-- prep-status: shipped-as=aurae -->
+> **SHIPPED-UNDER** — the ColorLib `ahana` design this prep describes already
+> ships as `apps/aurae` (<https://aurae.free.componentdock.com>).
+> Do not scaffold `apps/fitnova`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-aurae/spec.md`.
 
 ## Purpose
 

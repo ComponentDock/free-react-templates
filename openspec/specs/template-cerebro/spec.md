@@ -1,4 +1,9 @@
 # Template: Cerebro (Education & Courses Landing)
+<!-- prep-status: shipped-as=learnwise -->
+> **SHIPPED-UNDER** — the ColorLib `clever` design this prep describes already
+> ships as `apps/learnwise` (<https://learnwise.free.componentdock.com>).
+> Do not scaffold `apps/cerebro`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-learnwise/spec.md`.
 
 ## Purpose
 

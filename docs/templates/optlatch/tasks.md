@@ -1,4 +1,8 @@
 # Optlatch — Implementation Tasks
+<!-- prep-status: shipped-as=statelist -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-10` design this prep describes shipped
+> as `apps/statelist` (<https://statelist.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

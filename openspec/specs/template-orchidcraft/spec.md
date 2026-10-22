@@ -1,4 +1,9 @@
 # Template: Orchidcraft (Creative Agency Landing)
+<!-- prep-status: shipped-as=blitz -->
+> **SHIPPED-UNDER** — the ColorLib `rango` design this prep describes already
+> ships as `apps/blitz` (<https://blitz.free.componentdock.com>).
+> Do not scaffold `apps/orchidcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-blitz/spec.md`.
 
 ## Purpose
 

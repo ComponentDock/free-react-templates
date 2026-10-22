@@ -1,4 +1,8 @@
 # Design Notes: Unveil (ColorLib Unbrew)
+<!-- prep-status: shipped-as=pulsewave -->
+> **SHIPPED-UNDER** — the ColorLib `unbrew` design this prep describes shipped
+> as `apps/pulsewave` (<https://pulsewave.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Aesthetic & Fidelity Guidelines
 

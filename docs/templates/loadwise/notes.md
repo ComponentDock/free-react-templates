@@ -1,4 +1,8 @@
 # Loadwise — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=convey -->
+> **SHIPPED-UNDER** — the ColorLib `logistic` design this prep describes shipped
+> as `apps/convey` (<https://convey.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Tasks / Todo Outline
 

@@ -1,4 +1,9 @@
 # Spec: Gradlogin — Split-Screen Login Form with Gradient
+<!-- prep-status: shipped-as=coralgate -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-17` design this prep describes already
+> ships as `apps/coralgate` (<https://coralgate.free.componentdock.com>).
+> Do not scaffold `apps/gradlogin`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coralgate/spec.md`.
 
 ## Purpose
 

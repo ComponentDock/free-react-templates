@@ -1,4 +1,8 @@
 # Presscast — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=kicker -->
+> **SHIPPED-UNDER** — the ColorLib `megasis` design this prep describes shipped
+> as `apps/kicker` (<https://kicker.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source**: ColorLib Megasis  
 **Preview**: https://preview.colorlib.com/theme/megasis/  

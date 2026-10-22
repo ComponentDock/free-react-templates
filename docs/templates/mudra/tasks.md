@@ -1,4 +1,8 @@
 # Mudra — implementation tasks + design notes
+<!-- prep-status: shipped-as=shanti -->
+> **SHIPPED-UNDER** — the ColorLib `yogalax` design this prep describes shipped
+> as `apps/shanti` (<https://shanti.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Yogalax** (yoga studio) as **Mudra**.
 Full spec: `openspec/specs/template-mudra/spec.md` (tokens, Gherkin, checklist).

@@ -1,4 +1,8 @@
 # BtnForge Task Outline & Design Notes
+<!-- prep-status: shipped-as=btnvibe -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-06` design this prep describes shipped
+> as `apps/btnvibe` (<https://btnvibe.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 

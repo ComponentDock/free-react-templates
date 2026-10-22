@@ -1,4 +1,9 @@
 # Template: FooterNook (Footer / Contact Form)
+<!-- prep-status: shipped-as=footerdash -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-18` design this prep describes already
+> ships as `apps/footerdash` (<https://footerdash.free.componentdock.com>).
+> Do not scaffold `apps/footer-nook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footerdash/spec.md`.
 
 ## Purpose
 

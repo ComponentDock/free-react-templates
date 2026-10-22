@@ -1,4 +1,9 @@
 # Template: Loginbloom (Login Form V15)
+<!-- prep-status: shipped-as=loginauth -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v15` design this prep describes already
+> ships as `apps/loginauth` (<https://loginauth.free.componentdock.com>).
+> Do not scaffold `apps/loginbloom`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginauth/spec.md`.
 
 ## Purpose
 

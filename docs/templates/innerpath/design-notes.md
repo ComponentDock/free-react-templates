@@ -1,4 +1,8 @@
 # InnerPath — Design Notes & Task Outline
+<!-- prep-status: shipped-as=plea -->
+> **SHIPPED-UNDER** — the ColorLib `counselor` design this prep describes shipped
+> as `apps/plea` (<https://plea.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Identity
 - **Name:** innerpath

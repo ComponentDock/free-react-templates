@@ -1,4 +1,9 @@
 # Template: Shadowform (Modal / Dark Login-Signup Dialog)
+<!-- prep-status: shipped-as=entrywell -->
+> **SHIPPED-UNDER** — the ColorLib `modal-09` design this prep describes already
+> ships as `apps/entrywell` (<https://entrywell.free.componentdock.com>).
+> Do not scaffold `apps/shadowform`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-entrywell/spec.md`.
 
 ## Purpose
 

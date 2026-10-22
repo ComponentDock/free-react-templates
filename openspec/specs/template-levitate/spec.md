@@ -1,4 +1,9 @@
 # Template: Levitate (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnvortex -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-14` design this prep describes already
+> ships as `apps/btnvortex` (<https://btnvortex.free.componentdock.com>).
+> Do not scaffold `apps/levitate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnvortex/spec.md`.
 
 ## Purpose
 

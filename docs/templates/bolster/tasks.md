@@ -1,4 +1,8 @@
 # Bolster (ColorLib Victor) — Tasks & Design Notes
+<!-- prep-status: shipped-as=crest -->
+> **SHIPPED-UNDER** — the ColorLib `victor` design this prep describes shipped
+> as `apps/crest` (<https://crest.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Victor"
 > (https://colorlib.com/wp/template/victor/) under the NEW name

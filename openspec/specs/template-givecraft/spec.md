@@ -1,4 +1,9 @@
 # Template: GiveCraft (Charity / Nonprofit)
+<!-- prep-status: shipped-as=shores -->
+> **SHIPPED-UNDER** — the ColorLib `seelife` design this prep describes already
+> ships as `apps/shores` (<https://shores.free.componentdock.com>).
+> Do not scaffold `apps/givecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shores/spec.md`.
 
 ## Purpose
 

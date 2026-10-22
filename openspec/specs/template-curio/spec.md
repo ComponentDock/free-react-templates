@@ -1,4 +1,9 @@
 # Template: Curio (Personal Portfolio / CV)
+<!-- prep-status: shipped-as=solo -->
+> **SHIPPED-UNDER** — the ColorLib `personal` design this prep describes already
+> ships as `apps/solo` (<https://solo.free.componentdock.com>).
+> Do not scaffold `apps/curio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-solo/spec.md`.
 
 ## Purpose
 

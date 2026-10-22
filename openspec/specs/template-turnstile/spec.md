@@ -1,4 +1,9 @@
 # Template: Turnstile (Password-Protected Link Modal)
+<!-- prep-status: shipped-as=modalvault -->
+> **SHIPPED-UNDER** — the ColorLib `modal-20` design this prep describes already
+> ships as `apps/modalvault` (<https://modalvault.free.componentdock.com>).
+> Do not scaffold `apps/turnstile`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modalvault/spec.md`.
 
 ## Purpose
 

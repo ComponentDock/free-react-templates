@@ -1,4 +1,8 @@
 # Tavola — Task Outline & Design Notes
+<!-- prep-status: shipped-as=gastronome -->
+> **SHIPPED-UNDER** — the ColorLib `pato` design this prep describes shipped
+> as `apps/gastronome` (<https://gastronome.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Section Structure & Order (1:1 with Pato)
 

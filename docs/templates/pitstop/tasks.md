@@ -1,4 +1,8 @@
 # Pitstop (ColorLib AutoMotive) — Tasks & Design Notes
+<!-- prep-status: shipped-as=veloce -->
+> **SHIPPED-UNDER** — the ColorLib `automotive` design this prep describes shipped
+> as `apps/veloce` (<https://veloce.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "AutoMotive"
 > (https://colorlib.com/wp/template/automotive/) under the NEW name

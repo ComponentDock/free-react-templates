@@ -1,4 +1,8 @@
 # Creativity — Design Notes
+<!-- prep-status: shipped-as=atelier -->
+> **SHIPPED-UNDER** — the ColorLib `design` design this prep describes shipped
+> as `apps/atelier` (<https://atelier.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "Design" → https://colorlib.com/wp/template/design/
 **Preview:** https://preview.colorlib.com/theme/design/

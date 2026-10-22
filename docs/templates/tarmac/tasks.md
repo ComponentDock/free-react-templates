@@ -1,4 +1,8 @@
 # Tarmac (ColorLib Autoroad) — Tasks & Design Notes
+<!-- prep-status: shipped-as=highway -->
+> **SHIPPED-UNDER** — the ColorLib `autoroad` design this prep describes shipped
+> as `apps/highway` (<https://highway.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` under the ColorLib source name
 > "autoroad"; the recreation ships as **Tarmac** on `feat/template-autoroad`

@@ -1,4 +1,9 @@
 # Template: Gyrate (Carousel / Split-Screen)
+<!-- prep-status: shipped-as=slidespot -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-06` design this prep describes already
+> ships as `apps/slidespot` (<https://slidespot.free.componentdock.com>).
+> Do not scaffold `apps/gyrate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-slidespot/spec.md`.
 
 ## Purpose
 

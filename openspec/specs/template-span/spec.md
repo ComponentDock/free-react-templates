@@ -1,4 +1,9 @@
 # Template: Span (Date Range Picker Widget)
+<!-- prep-status: shipped-as=schedura -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-13` design this prep describes already
+> ships as `apps/schedura` (<https://schedura.free.componentdock.com>).
+> Do not scaffold `apps/span`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-schedura/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Physique (Fitness)
+<!-- prep-status: shipped-as=stallion -->
+> **SHIPPED-UNDER** — the ColorLib `fitness` design this prep describes already
+> ships as `apps/stallion` (<https://stallion.free.componentdock.com>).
+> Do not scaffold `apps/physique`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stallion/spec.md`.
 
 ## Purpose
 

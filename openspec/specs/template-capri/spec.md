@@ -1,4 +1,9 @@
 # Template: Capri (Testimonials Carousel)
+<!-- prep-status: shipped-as=slidebay -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-05` design this prep describes already
+> ships as `apps/slidebay` (<https://slidebay.free.componentdock.com>).
+> Do not scaffold `apps/capri`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-slidebay/spec.md`.
 
 ## Purpose
 

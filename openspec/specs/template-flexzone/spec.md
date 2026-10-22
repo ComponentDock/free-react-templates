@@ -1,4 +1,9 @@
 # Template: FlexZone (Gym / Fitness)
+<!-- prep-status: shipped-as=ironpeak -->
+> **SHIPPED-UNDER** — the ColorLib `fitnezz` design this prep describes already
+> ships as `apps/ironpeak` (<https://ironpeak.free.componentdock.com>).
+> Do not scaffold `apps/flexzone`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ironpeak/spec.md`.
 
 ## Purpose
 

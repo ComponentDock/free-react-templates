@@ -1,4 +1,9 @@
 # Template: Chalet (Personal Portfolio)
+<!-- prep-status: shipped-as=lenscape -->
+> **SHIPPED-UNDER** — the ColorLib `schmidt` design this prep describes already
+> ships as `apps/lenscape` (<https://lenscape.free.componentdock.com>).
+> Do not scaffold `apps/chalet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lenscape/spec.md`.
 
 **Design category:** Personal Portfolio / Creative Professional
 

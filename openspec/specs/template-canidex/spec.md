@@ -1,4 +1,9 @@
 # Template: Canidex (Restaurant Landing)
+<!-- prep-status: shipped-as=ember -->
+> **SHIPPED-UNDER** — the ColorLib `dingo` design this prep describes already
+> ships as `apps/ember` (<https://ember.free.componentdock.com>).
+> Do not scaffold `apps/canidex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ember/spec.md`.
 
 ## Purpose
 

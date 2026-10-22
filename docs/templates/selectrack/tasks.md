@@ -1,4 +1,8 @@
 # Selectrack — Design Notes & Tasks
+<!-- prep-status: shipped-as=statelist -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-10` design this prep describes shipped
+> as `apps/statelist` (<https://statelist.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Multiselect 10
 Preview: https://preview.colorlib.com/theme/bootstrap/multiselect-10/

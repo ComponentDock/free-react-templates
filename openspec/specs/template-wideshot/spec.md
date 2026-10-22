@@ -1,4 +1,9 @@
 # Template: Wideshot (Creative Digital Agency)
+<!-- prep-status: shipped-as=lumina -->
+> **SHIPPED-UNDER** — the ColorLib `ilene-berg` design this prep describes already
+> ships as `apps/lumina` (<https://lumina.free.componentdock.com>).
+> Do not scaffold `apps/wideshot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lumina/spec.md`.
 
 ## Purpose
 

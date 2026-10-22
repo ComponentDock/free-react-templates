@@ -1,4 +1,8 @@
 # MedCanvas (Colorlib Medart) — Tasks & Design Notes
+<!-- prep-status: shipped-as=curemark -->
+> **SHIPPED-UNDER** — the ColorLib `medart` design this prep describes shipped
+> as `apps/curemark` (<https://curemark.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` under the source name (template-medart);
 > renamed to the NEW name **MedCanvas** in the implementation PR.

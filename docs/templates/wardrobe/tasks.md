@@ -1,4 +1,8 @@
 # Wardrobe — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=closet -->
+> **SHIPPED-UNDER** — the ColorLib `little-closet` design this prep describes shipped
+> as `apps/closet` (<https://closet.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: "Little Closet" (https://colorlib.com/wp/template/little-closet/)

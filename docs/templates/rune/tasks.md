@@ -1,4 +1,8 @@
 # Rune (ColorLib Wizard 22) — Tasks & Design Notes
+<!-- prep-status: shipped-as=arcane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-22` design this prep describes shipped
+> as `apps/arcane` (<https://arcane.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep stream output (stream 3). Implementer: branch `feat/template-rune`,
 > app `apps/rune`, package `@free-react-templates/rune`, deploy

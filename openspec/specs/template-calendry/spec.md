@@ -1,4 +1,9 @@
 # Template: Calendry (Calendar / UI Component)
+<!-- prep-status: shipped-as=chronogrid -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-02` design this prep describes already
+> ships as `apps/chronogrid` (<https://chronogrid.free.componentdock.com>).
+> Do not scaffold `apps/calendry`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chronogrid/spec.md`.
 
 ## Purpose
 

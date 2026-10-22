@@ -1,4 +1,9 @@
 # Template: ShotScape (Photography)
+<!-- prep-status: shipped-as=reflexly -->
+> **SHIPPED-UNDER** — the ColorLib `phozogy` design this prep describes already
+> ships as `apps/reflexly` (<https://reflexly.free.componentdock.com>).
+> Do not scaffold `apps/shotscape`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reflexly/spec.md`.
 
 ## Purpose
 

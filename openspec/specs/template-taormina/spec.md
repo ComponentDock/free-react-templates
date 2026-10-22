@@ -1,4 +1,9 @@
 # Template: Taormina (Split Image + Quote Testimonials Carousel, Bottom-Center Bar Dots)
+<!-- prep-status: shipped-as=lenslide -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-14` design this prep describes already
+> ships as `apps/lenslide` (<https://lenslide.free.componentdock.com>).
+> Do not scaffold `apps/taormina`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lenslide/spec.md`.
 
 ## Purpose
 

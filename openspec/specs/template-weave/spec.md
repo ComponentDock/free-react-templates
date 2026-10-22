@@ -1,4 +1,9 @@
 # Template: Weave (Business / SaaS Startup)
+<!-- prep-status: shipped-as=spruce -->
+> **SHIPPED-UNDER** — the ColorLib `olla` design this prep describes already
+> ships as `apps/spruce` (<https://spruce.free.componentdock.com>).
+> Do not scaffold `apps/weave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-spruce/spec.md`.
 
 ## Purpose
 

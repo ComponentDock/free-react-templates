@@ -1,4 +1,9 @@
 # Template: EduPulse (Education Platform)
+<!-- prep-status: shipped-as=learnhub -->
+> **SHIPPED-UNDER** — the ColorLib `etrain` design this prep describes already
+> ships as `apps/learnhub` (<https://learnhub.free.componentdock.com>).
+> Do not scaffold `apps/edupulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-learnhub/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Crust (Bakery / Restaurant)
+<!-- prep-status: shipped-as=loaf -->
+> **SHIPPED-UNDER** — the ColorLib `bakery` design this prep describes already
+> ships as `apps/loaf` (<https://loaf.free.componentdock.com>).
+> Do not scaffold `apps/crust`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loaf/spec.md`.
 
 ## Purpose
 

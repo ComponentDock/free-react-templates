@@ -1,4 +1,8 @@
 # ShopSteps — Design Notes
+<!-- prep-status: shipped-as=wizlane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-8` design this prep describes shipped
+> as `apps/wizlane` (<https://wizlane.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Structure Order (section-by-section)
 

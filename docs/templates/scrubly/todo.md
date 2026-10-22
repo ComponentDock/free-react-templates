@@ -1,4 +1,8 @@
 # Scrubly — Implementation TODO
+<!-- prep-status: shipped-as=cleanslate -->
+> **SHIPPED-UNDER** — the ColorLib `cleaning-company` design this prep describes shipped
+> as `apps/cleanslate` (<https://cleanslate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Scaffolding
 - [ ] Create apps/scrubly/ from simplest existing app

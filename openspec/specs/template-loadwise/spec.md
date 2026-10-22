@@ -1,4 +1,9 @@
 # Template: Loadwise (Logistics & Transportation)
+<!-- prep-status: shipped-as=convey -->
+> **SHIPPED-UNDER** — the ColorLib `logistic` design this prep describes already
+> ships as `apps/convey` (<https://convey.free.componentdock.com>).
+> Do not scaffold `apps/loadwise`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-convey/spec.md`.
 
 ## Purpose
 

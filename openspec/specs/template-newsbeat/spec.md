@@ -1,4 +1,9 @@
 # Template: Newsbeat (Podcast & Audio)
+<!-- prep-status: shipped-as=soundbite -->
+> **SHIPPED-UNDER** — the ColorLib `the-hustle-hour` design this prep describes already
+> ships as `apps/soundbite` (<https://soundbite.free.componentdock.com>).
+> Do not scaffold `apps/newsbeat`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-soundbite/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Switchly (Bootstrap On/Off Switch Toggle)
+<!-- prep-status: shipped-as=checkmark -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-07` design this prep describes already
+> ships as `apps/checkmark` (<https://checkmark.free.componentdock.com>).
+> Do not scaffold `apps/switchly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-checkmark/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Quorum (Law Firm)
+<!-- prep-status: shipped-as=maxim -->
+> **SHIPPED-UNDER** — the ColorLib `neutral` design this prep describes already
+> ships as `apps/maxim` (<https://maxim.free.componentdock.com>).
+> Do not scaffold `apps/quorum`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-maxim/spec.md`.
 
 ## Purpose
 

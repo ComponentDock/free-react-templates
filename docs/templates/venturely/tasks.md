@@ -1,4 +1,8 @@
 # Venturely — Implementation Tasks
+<!-- prep-status: shipped-as=buzzer -->
+> **SHIPPED-UNDER** — the ColorLib `bravo` design this prep describes shipped
+> as `apps/buzzer` (<https://buzzer.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: Colorlib Bravo (business & investment landing page)
 New name: `venturely`

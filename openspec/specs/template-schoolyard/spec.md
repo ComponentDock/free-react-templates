@@ -1,4 +1,9 @@
 # Template: SchoolYard (Education)
+<!-- prep-status: shipped-as=tadpole -->
+> **SHIPPED-UNDER** — the ColorLib `kindergarten` design this prep describes already
+> ships as `apps/tadpole` (<https://tadpole.free.componentdock.com>).
+> Do not scaffold `apps/schoolyard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tadpole/spec.md`.
 
 ## Purpose
 

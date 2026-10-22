@@ -1,4 +1,8 @@
 # SudsCraft — Design Notes & Task Outline
+<!-- prep-status: shipped-as=washbox -->
+> **SHIPPED-UNDER** — the ColorLib `carwash` design this prep describes shipped
+> as `apps/washbox` (<https://washbox.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

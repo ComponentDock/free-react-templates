@@ -1,4 +1,9 @@
 # Template: Badgeform (Registration Form)
+<!-- prep-status: shipped-as=regvale -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-36` design this prep describes already
+> ships as `apps/regvale` (<https://regvale.free.componentdock.com>).
+> Do not scaffold `apps/badgeform`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regvale/spec.md`.
 
 ## Purpose
 

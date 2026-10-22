@@ -1,4 +1,8 @@
 # Showpiece — Implementation Todo
+<!-- prep-status: shipped-as=framecast -->
+> **SHIPPED-UNDER** — the ColorLib `portfolio-2` design this prep describes shipped
+> as `apps/framecast` (<https://framecast.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 - [ ] Scaffold app: copy base, rename package to @free-react-templates/showpiece
 - [ ] Set up vite.config.ts with injectUiSource()

@@ -1,4 +1,9 @@
 # Template: Sweep (Button / UI Kit Showcase — Social Buttons with Sweep-Fill Hover)
+<!-- prep-status: shipped-as=btnmatrix -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-20` design this prep describes already
+> ships as `apps/btnmatrix` (<https://btnmatrix.free.componentdock.com>).
+> Do not scaffold `apps/sweep`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnmatrix/spec.md`.
 
 ## Purpose
 

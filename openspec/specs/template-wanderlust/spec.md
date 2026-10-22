@@ -1,4 +1,9 @@
 # Template: Wanderlust (Bootstrap Carousel / Full-Screen Travel Hero Slider)
+<!-- prep-status: shipped-as=revolve -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-01` design this prep describes already
+> ships as `apps/revolve` (<https://revolve.free.componentdock.com>).
+> Do not scaffold `apps/wanderlust`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-revolve/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: SubBox (Modal / Popup)
+<!-- prep-status: shipped-as=modalrosa -->
+> **SHIPPED-UNDER** — the ColorLib `modal-13` design this prep describes already
+> ships as `apps/modalrosa` (<https://modalrosa.free.componentdock.com>).
+> Do not scaffold `apps/subbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modalrosa/spec.md`.
 
 ## Purpose
 

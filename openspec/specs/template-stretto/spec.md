@@ -1,4 +1,9 @@
 # Template: Stretto (Footer)
+<!-- prep-status: shipped-as=cornerstone -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-08` design this prep describes already
+> ships as `apps/cornerstone` (<https://cornerstone.free.componentdock.com>).
+> Do not scaffold `apps/stretto`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cornerstone/spec.md`.
 
 ## Purpose
 

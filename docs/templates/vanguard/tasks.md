@@ -1,4 +1,8 @@
 # Vanguard (ColorLib Pageone) — Tasks & Design Notes
+<!-- prep-status: shipped-as=nexus -->
+> **SHIPPED-UNDER** — the ColorLib `pageone` design this prep describes shipped
+> as `apps/nexus` (<https://nexus.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-vanguard`.

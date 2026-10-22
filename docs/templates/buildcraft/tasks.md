@@ -1,4 +1,8 @@
 # Buildcraft (Colorlib Buildcraft) — Tasks & Design Notes
+<!-- prep-status: shipped-as=buildwell -->
+> **SHIPPED-UNDER** — the ColorLib `celt` design this prep describes shipped
+> as `apps/buildwell` (<https://buildwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-buildcraft`.

@@ -1,4 +1,9 @@
 # Template: SeekQuest (Property Search Form)
+<!-- prep-status: shipped-as=propsearch -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-07` design this prep describes already
+> ships as `apps/propsearch` (<https://propsearch.free.componentdock.com>).
+> Do not scaffold `apps/seekquest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-propsearch/spec.md`.
 
 ## Purpose
 Recreation of ColorLib **Search Form Bar 07** — a property/booking search form with four filter fields (Location, Property Type, Property Status, Price Limit) and a prominent pink CTA button. Desktop layout is a horizontal 4-column row with a full-width submit button; stacks vertically on mobile.

@@ -1,4 +1,8 @@
 # PopSlide — Design Notes & Tasks
+<!-- prep-status: shipped-as=bellpush -->
+> **SHIPPED-UNDER** — the ColorLib `modal-10` design this prep describes shipped
+> as `apps/bellpush` (<https://bellpush.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib template:** Modal V10

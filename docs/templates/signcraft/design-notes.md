@@ -1,4 +1,8 @@
 # SignCraft — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=regvibe -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-33` design this prep describes shipped
+> as `apps/regvibe` (<https://regvibe.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Identity
 - **Name**: signcraft

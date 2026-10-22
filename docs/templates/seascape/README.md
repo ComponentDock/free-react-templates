@@ -1,4 +1,8 @@
 # Seascape — Prep Notes
+<!-- prep-status: shipped-as=eddy -->
+> **SHIPPED-UNDER** — the ColorLib `theriver` design this prep describes shipped
+> as `apps/eddy` (<https://eddy.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "The River" (https://colorlib.com/wp/template/theriver/)
 Preview: https://preview.colorlib.com/theme/theriver/

@@ -1,4 +1,8 @@
 # Halfpipe (ColorLib Skater) — Tasks & Design Notes
+<!-- prep-status: shipped-as=cruiser -->
+> **SHIPPED-UNDER** — the ColorLib `skater` design this prep describes shipped
+> as `apps/cruiser` (<https://cruiser.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-halfpipe`. Recreation name: **Halfpipe** (NEW name —

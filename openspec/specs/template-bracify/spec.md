@@ -1,4 +1,9 @@
 # Template: Bracify (Dental Clinic)
+<!-- prep-status: shipped-as=smilewell -->
+> **SHIPPED-UNDER** — the ColorLib `toothsy` design this prep describes already
+> ships as `apps/smilewell` (<https://smilewell.free.componentdock.com>).
+> Do not scaffold `apps/bracify`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-smilewell/spec.md`.
 
 ## Purpose
 

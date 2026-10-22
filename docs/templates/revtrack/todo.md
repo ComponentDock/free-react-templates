@@ -1,4 +1,8 @@
 # RevTrack — Implementation Todo
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes shipped
+> as `apps/drivego` (<https://drivego.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Pre-implementation
 - [x] Spec written (openspec/specs/template-revtrack/spec.md)

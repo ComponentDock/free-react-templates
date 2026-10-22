@@ -1,4 +1,9 @@
 # Template: Searchly (Search Form)
+<!-- prep-status: shipped-as=scanbar -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-13` design this prep describes already
+> ships as `apps/scanbar` (<https://scanbar.free.componentdock.com>).
+> Do not scaffold `apps/searchly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scanbar/spec.md`.
 
 ## Purpose
 

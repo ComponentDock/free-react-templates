@@ -1,4 +1,8 @@
 # Baseboard — Design Notes & Task Outline
+<!-- prep-status: shipped-as=footwell -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-01` design this prep describes shipped
+> as `apps/footwell` (<https://footwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Bootstrap Footer 01
 **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-01/

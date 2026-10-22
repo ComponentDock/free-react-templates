@@ -1,4 +1,8 @@
 # Sweep (ColorLib Bootstrap Buttons 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnmatrix -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-20` design this prep describes shipped
+> as `apps/btnmatrix` (<https://btnmatrix.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Sweep** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 20"). Implementation

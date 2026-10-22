@@ -1,4 +1,8 @@
 # Aula — Implementation Notes
+<!-- prep-status: shipped-as=ethos -->
+> **SHIPPED-UNDER** — the ColorLib `university` design this prep describes shipped
+> as `apps/ethos` (<https://ethos.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 - **ColorLib source:** University (https://colorlib.com/wp/template/university/)

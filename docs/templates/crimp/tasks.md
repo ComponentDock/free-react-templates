@@ -1,4 +1,8 @@
 # Crimp (ColorLib Accordion 08) — Tasks & Design Notes
+<!-- prep-status: shipped-as=stackly -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-08` design this prep describes shipped
+> as `apps/stackly` (<https://stackly.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts (spec + research) prepared on `main` by the prep stream.
 > Implementation ships later on `feat/template-crimp` by an implementer

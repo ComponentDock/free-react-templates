@@ -1,4 +1,8 @@
 # EduPulse — Design Notes & Task Outline
+<!-- prep-status: shipped-as=learnhub -->
+> **SHIPPED-UNDER** — the ColorLib `etrain` design this prep describes shipped
+> as `apps/learnhub` (<https://learnhub.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 

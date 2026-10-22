@@ -1,4 +1,8 @@
 # FooterLume — Implementation Tasks
+<!-- prep-status: shipped-as=footerlume -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-17` design this prep describes shipped
+> as `apps/footerlume` (<https://footerlume.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** Bootstrap Footer 17 (ColorLib)
 **Preview:** https://preview.colorlib.com/theme/bootstrap-footer-17/ (404 — screenshot-based design)

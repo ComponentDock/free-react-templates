@@ -1,4 +1,9 @@
 # Template: WrenchCraft (Automotive Repair)
+<!-- prep-status: shipped-as=fixcraft -->
+> **SHIPPED-UNDER** — the ColorLib `autorepair` design this prep describes already
+> ships as `apps/fixcraft` (<https://fixcraft.free.componentdock.com>).
+> Do not scaffold `apps/wrenchcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fixcraft/spec.md`.
 
 ## Purpose
 

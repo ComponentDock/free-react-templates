@@ -1,4 +1,8 @@
 # Hirely — Implementation Tasks
+<!-- prep-status: shipped-as=jobquest -->
+> **SHIPPED-UNDER** — the ColorLib `careers` design this prep describes shipped
+> as `apps/jobquest` (<https://jobquest.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib "Careers" template.
 

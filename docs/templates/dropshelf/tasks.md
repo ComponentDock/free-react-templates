@@ -1,4 +1,8 @@
 # DropShelf — Implementation Notes
+<!-- prep-status: shipped-as=dropslide -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-11` design this prep describes shipped
+> as `apps/dropslide` (<https://dropslide.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Info
 

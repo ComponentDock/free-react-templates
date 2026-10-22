@@ -1,4 +1,8 @@
 # Tagwell — Design Notes & Tasks
+<!-- prep-status: shipped-as=optwell -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-12` design this prep describes shipped
+> as `apps/optwell` (<https://optwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Multiselect 12
 Preview: https://preview.colorlib.com/theme/bootstrap/multiselect-12/

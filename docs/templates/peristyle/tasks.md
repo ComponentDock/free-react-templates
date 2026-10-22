@@ -1,4 +1,8 @@
 # Peristyle (ColorLib Modal 16) — Tasks & Design Notes
+<!-- prep-status: shipped-as=modalpoint -->
+> **SHIPPED-UNDER** — the ColorLib `modal-16` design this prep describes shipped
+> as `apps/modalpoint` (<https://modalpoint.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Peristyle** (NEW name —
 > the ColorLib source keeps its name "Modal 16"/`modal-16`). Implementation

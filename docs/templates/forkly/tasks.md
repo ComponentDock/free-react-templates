@@ -1,4 +1,8 @@
 # Forkly (ColorLib Pato) — Tasks & Design Notes
+<!-- prep-status: shipped-as=gastronome -->
+> **SHIPPED-UNDER** — the ColorLib `pato` design this prep describes shipped
+> as `apps/gastronome` (<https://gastronome.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Pato" — modern restaurant website template
 > (https://colorlib.com/wp/template/pato/ — "Pato — Free Modern

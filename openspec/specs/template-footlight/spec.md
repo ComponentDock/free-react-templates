@@ -1,4 +1,9 @@
 # Template: Footlight (Footer)
+<!-- prep-status: shipped-as=soleplate -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-09` design this prep describes already
+> ships as `apps/soleplate` (<https://soleplate.free.componentdock.com>).
+> Do not scaffold `apps/footlight`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-soleplate/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: ForgeBase (Industrial / Engineering)
+<!-- prep-status: shipped-as=fabricate -->
+> **SHIPPED-UNDER** — the ColorLib `industry` design this prep describes already
+> ships as `apps/fabricate` (<https://fabricate.free.componentdock.com>).
+> Do not scaffold `apps/forgebase`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fabricate/spec.md`.
 
 ## Purpose
 

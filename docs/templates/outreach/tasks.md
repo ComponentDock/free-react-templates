@@ -1,4 +1,8 @@
 # Outreach — Implementation Notes
+<!-- prep-status: shipped-as=sendwave -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-05` design this prep describes shipped
+> as `apps/sendwave` (<https://sendwave.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 

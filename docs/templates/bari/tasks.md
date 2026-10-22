@@ -1,4 +1,8 @@
 # Bari (ColorLib Carousel 13) — Tasks & Design Notes
+<!-- prep-status: shipped-as=carouselroll -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-13` design this prep describes shipped
+> as `apps/carouselroll` (<https://carouselroll.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-bari`.

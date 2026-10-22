@@ -1,4 +1,8 @@
 # Lenskeeper — Prep Notes
+<!-- prep-status: shipped-as=shuttercraft -->
+> **SHIPPED-UNDER** — the ColorLib `photography` design this prep describes shipped
+> as `apps/shuttercraft` (<https://shuttercraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Photography
 Preview: https://preview.colorlib.com/theme/photography/

@@ -1,4 +1,8 @@
 # RankPulse — Replication Research & Design Notes
+<!-- prep-status: shipped-as=seoflow -->
+> **SHIPPED-UNDER** — the ColorLib `seogo` design this prep describes shipped
+> as `apps/seoflow` (<https://seoflow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Seogo
 Preview: https://preview.colorlib.com/theme/seogo/

@@ -1,4 +1,8 @@
 # Loginnest — Implementation Notes
+<!-- prep-status: shipped-as=loginaura -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v12` design this prep describes shipped
+> as `apps/loginaura` (<https://loginaura.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

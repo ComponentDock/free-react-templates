@@ -1,4 +1,8 @@
 # Moment (ColorLib Calendar 09) — Tasks & Design Notes
+<!-- prep-status: shipped-as=timely -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-09` design this prep describes shipped
+> as `apps/timely` (<https://timely.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Moment** (NEW name —
 > the ColorLib source keeps its name "Calendar 09"). Implementation ships on

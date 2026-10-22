@@ -1,4 +1,9 @@
 # Template: Tailpiece (Footer)
+<!-- prep-status: shipped-as=bedrock -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-11` design this prep describes already
+> ships as `apps/bedrock` (<https://bedrock.free.componentdock.com>).
+> Do not scaffold `apps/tailpiece`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bedrock/spec.md`.
 
 ## Purpose
 

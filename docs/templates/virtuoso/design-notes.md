@@ -1,4 +1,8 @@
 # Virtuoso — Prep Notes
+<!-- prep-status: shipped-as=valet -->
+> **SHIPPED-UNDER** — the ColorLib `virtualassistant` design this prep describes shipped
+> as `apps/valet` (<https://valet.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Virtualassistant
 Preview: https://preview.colorlib.com/theme/virtualassistant/

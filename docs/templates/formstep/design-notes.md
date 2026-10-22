@@ -1,4 +1,8 @@
 # FormStep — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=conjure -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-1` design this prep describes shipped
+> as `apps/conjure` (<https://conjure.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 

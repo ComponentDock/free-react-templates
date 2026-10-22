@@ -1,4 +1,8 @@
 # Float (ColorLib Bootstrap Buttons 03) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnstack -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-03` design this prep describes shipped
+> as `apps/btnstack` (<https://btnstack.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Float** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 03"). Implementation

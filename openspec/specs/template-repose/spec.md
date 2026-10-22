@@ -1,4 +1,9 @@
 # Template: Repose (Hotel / Resort Booking)
+<!-- prep-status: shipped-as=solace -->
+> **SHIPPED-UNDER** — the ColorLib `unwind` design this prep describes already
+> ships as `apps/solace` (<https://solace.free.componentdock.com>).
+> Do not scaffold `apps/repose`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-solace/spec.md`.
 
 ## Purpose
 

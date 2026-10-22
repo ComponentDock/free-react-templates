@@ -1,4 +1,9 @@
 # Template: Mechatron (Robotics / Technology)
+<!-- prep-status: shipped-as=mechbot -->
+> **SHIPPED-UNDER** — the ColorLib `robotics` design this prep describes already
+> ships as `apps/mechbot` (<https://mechbot.free.componentdock.com>).
+> Do not scaffold `apps/mechatron`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-mechbot/spec.md`.
 
 ## Purpose
 

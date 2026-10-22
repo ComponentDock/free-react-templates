@@ -1,4 +1,8 @@
 # OrderCraft — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=divine -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-5` design this prep describes shipped
+> as `apps/divine` (<https://divine.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

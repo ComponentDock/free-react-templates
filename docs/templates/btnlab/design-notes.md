@@ -1,4 +1,8 @@
 # BtnLab — Design Notes & Task Outline
+<!-- prep-status: shipped-as=btnkit -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-13` design this prep describes shipped
+> as `apps/btnkit` (<https://btnkit.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Bootstrap Buttons 13
 Preview: https://preview.colorlib.com/theme/bb/bootstrap-buttons-13/

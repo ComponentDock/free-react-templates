@@ -1,4 +1,9 @@
 # Template: Venturely (Business & Investment Landing Page)
+<!-- prep-status: shipped-as=buzzer -->
+> **SHIPPED-UNDER** — the ColorLib `bravo` design this prep describes already
+> ships as `apps/buzzer` (<https://buzzer.free.componentdock.com>).
+> Do not scaffold `apps/venturely`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-buzzer/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Skillet (Food Blog)
+<!-- prep-status: shipped-as=savory -->
+> **SHIPPED-UNDER** — the ColorLib `bueno` design this prep describes already
+> ships as `apps/savory` (<https://savory.free.componentdock.com>).
+> Do not scaffold `apps/skillet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-savory/spec.md`.
 
 ## Purpose
 

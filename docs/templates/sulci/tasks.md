@@ -1,4 +1,8 @@
 # Sulci — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=expanda -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-05` design this prep describes shipped
+> as `apps/expanda` (<https://expanda.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source**: ColorLib Accordion 05
 **Preview**: https://preview.colorlib.com/theme/bac/accordion-05/

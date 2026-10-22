@@ -1,4 +1,9 @@
 # Template: Crush (Magazine)
+<!-- prep-status: shipped-as=shatter -->
+> **SHIPPED-UNDER** — the ColorLib `smashed` design this prep describes already
+> ships as `apps/shatter` (<https://shatter.free.componentdock.com>).
+> Do not scaffold `apps/crush`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shatter/spec.md`.
 
 ## Purpose
 

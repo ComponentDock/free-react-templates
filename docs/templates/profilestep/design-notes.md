@@ -1,4 +1,8 @@
 # Profilestep — Design Notes
+<!-- prep-status: shipped-as=formvane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-9` design this prep describes shipped
+> as `apps/formvane` (<https://formvane.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Visual design (from screenshot analysis)
 

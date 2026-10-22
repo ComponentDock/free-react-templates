@@ -1,4 +1,8 @@
 # Doorway (ColorLib Modal 05) — Tasks & Design Notes
+<!-- prep-status: shipped-as=modalize -->
+> **SHIPPED-UNDER** — the ColorLib `modal-05` design this prep describes shipped
+> as `apps/modalize` (<https://modalize.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Doorway** (NEW name —
 > the ColorLib source keeps its name "Modal 05"). Implementation ships on

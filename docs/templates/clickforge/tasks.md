@@ -1,4 +1,8 @@
 # ClickForge — Implementation Plan & Tasks
+<!-- prep-status: shipped-as=btnridge -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-12` design this prep describes shipped
+> as `apps/btnridge` (<https://btnridge.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Design Notes
 

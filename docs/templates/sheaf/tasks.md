@@ -1,4 +1,8 @@
 # Sheaf — implementation tasks + design notes
+<!-- prep-status: shipped-as=optwell -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-12` design this prep describes shipped
+> as `apps/optwell` (<https://optwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 12** (`multiselect-12`) as **Sheaf**.
 Read `openspec/specs/template-sheaf/spec.md` first — it holds every token,

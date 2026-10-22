@@ -1,4 +1,8 @@
 # InnerGlow — Task Outline
+<!-- prep-status: shipped-as=aurae -->
+> **SHIPPED-UNDER** — the ColorLib `ahana` design this prep describes shipped
+> as `apps/aurae` (<https://aurae.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Prep (done)
 - [x] Fetch and analyze ColorLib Ahana preview DOM

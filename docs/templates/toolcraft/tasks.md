@@ -1,4 +1,8 @@
 # Toolcraft — Design Notes & Tasks
+<!-- prep-status: shipped-as=fixero -->
+> **SHIPPED-UNDER** — the ColorLib `handyman` design this prep describes shipped
+> as `apps/fixero` (<https://fixero.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 - ColorLib source: Handyman (slug: `handyman`)

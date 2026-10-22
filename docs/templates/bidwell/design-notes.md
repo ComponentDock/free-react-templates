@@ -1,4 +1,8 @@
 # Bidwell — Design Notes
+<!-- prep-status: shipped-as=bidcraft -->
+> **SHIPPED-UNDER** — the ColorLib `auction` design this prep describes shipped
+> as `apps/bidcraft` (<https://bidcraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Auction"
 Preview: https://preview.colorlib.com/theme/auction/

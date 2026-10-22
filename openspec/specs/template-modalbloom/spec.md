@@ -1,4 +1,9 @@
 # Template: Modalbloom (Modal)
+<!-- prep-status: shipped-as=modal-pulse -->
+> **SHIPPED-UNDER** — the ColorLib `modal-18` design this prep describes already
+> ships as `apps/modal-pulse` (<https://modal-pulse.free.componentdock.com>).
+> Do not scaffold `apps/modalbloom`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modal-pulse/spec.md`.
 
 ## Purpose
 

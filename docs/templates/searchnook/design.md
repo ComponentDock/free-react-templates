@@ -1,4 +1,8 @@
 # Searchnook — Design & Implementation Notes
+<!-- prep-status: shipped-as=seekspot -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-10` design this prep describes shipped
+> as `apps/seekspot` (<https://seekspot.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

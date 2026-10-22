@@ -1,4 +1,8 @@
 # Signet (ColorLib Schmidt) — Tasks & Design Notes
+<!-- prep-status: shipped-as=lenscape -->
+> **SHIPPED-UNDER** — the ColorLib `schmidt` design this prep describes shipped
+> as `apps/lenscape` (<https://lenscape.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Schmidt" — free Bootstrap 5 personal-portfolio /
 > designer website template (https://colorlib.com/wp/template/schmidt/)

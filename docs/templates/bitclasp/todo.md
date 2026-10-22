@@ -1,4 +1,8 @@
 # BitClasp — Replication Notes & Implementation Todo
+<!-- prep-status: shipped-as=coinwave -->
+> **SHIPPED-UNDER** — the ColorLib `bitcoin` design this prep describes shipped
+> as `apps/coinwave` (<https://coinwave.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Bitcoin (https://preview.colorlib.com/theme/bitcoin/)
 

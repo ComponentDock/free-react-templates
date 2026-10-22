@@ -1,4 +1,9 @@
 # Template: SignupWave (Registration Form)
+<!-- prep-status: shipped-as=signdrop -->
+> **SHIPPED-UNDER** — the ColorLib `signup-form-06` design this prep describes already
+> ships as `apps/signdrop` (<https://signdrop.free.componentdock.com>).
+> Do not scaffold `apps/signupwave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-signdrop/spec.md`.
 
 ## Purpose
 

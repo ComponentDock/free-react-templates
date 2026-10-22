@@ -1,4 +1,8 @@
 # DirectoryHub — Implementation TODO & Design Notes
+<!-- prep-status: shipped-as=listnest -->
+> **SHIPPED-UNDER** — the ColorLib `listing` design this prep describes shipped
+> as `apps/listnest` (<https://listnest.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template info
 

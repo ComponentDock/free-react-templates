@@ -1,4 +1,8 @@
 # Cuspide — Design Notes & Tasks
+<!-- prep-status: shipped-as=brightoral -->
+> **SHIPPED-UNDER** — the ColorLib `dente` design this prep describes shipped
+> as `apps/brightoral` (<https://brightoral.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Dente" (https://colorlib.com/wp/template/dente/)
 Preview: https://preview.colorlib.com/theme/dente/

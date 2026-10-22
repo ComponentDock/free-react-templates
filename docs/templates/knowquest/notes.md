@@ -1,4 +1,8 @@
 # KnowQuest — Design Notes & Task Outline
+<!-- prep-status: shipped-as=erudit -->
+> **SHIPPED-UNDER** — the ColorLib `knowledge` design this prep describes shipped
+> as `apps/erudit` (<https://erudit.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Knowledge" · https://preview.colorlib.com/theme/knowledge/
 New name: knowquest · Stack: React 19, Vite, Tailwind 4, TypeScript

@@ -1,4 +1,8 @@
 # Tandem — Implementation Tasks
+<!-- prep-status: shipped-as=prism -->
+> **SHIPPED-UNDER** — the ColorLib `dup` design this prep describes shipped
+> as `apps/prism` (<https://prism.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Dup (https://colorlib.com/wp/template/dup/)
 Preview: https://preview.colorlib.com/theme/dup/

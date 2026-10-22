@@ -1,4 +1,8 @@
 # Quorum — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=maxim -->
+> **SHIPPED-UNDER** — the ColorLib `neutral` design this prep describes shipped
+> as `apps/maxim` (<https://maxim.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Neutral" — https://preview.colorlib.com/theme/neutral/
 New name: `quorum` (apps/quorum, @free-react-templates/quorum)

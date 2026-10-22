@@ -1,4 +1,9 @@
 # Template: Scrubly (Cleaning Services)
+<!-- prep-status: shipped-as=cleanslate -->
+> **SHIPPED-UNDER** — the ColorLib `cleaning-company` design this prep describes already
+> ships as `apps/cleanslate` (<https://cleanslate.free.componentdock.com>).
+> Do not scaffold `apps/scrubly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cleanslate/spec.md`.
 
 ## Purpose
 

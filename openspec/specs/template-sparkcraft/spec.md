@@ -1,4 +1,9 @@
 # Template: SparkCraft (Creative Agency / Inspiration)
+<!-- prep-status: shipped-as=luminary -->
+> **SHIPPED-UNDER** — the ColorLib `inspire` design this prep describes already
+> ships as `apps/luminary` (<https://luminary.free.componentdock.com>).
+> Do not scaffold `apps/sparkcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-luminary/spec.md`.
 
 ## Purpose
 

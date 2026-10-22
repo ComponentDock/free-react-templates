@@ -1,4 +1,9 @@
 # Template: SearchQuest (Search Form)
+<!-- prep-status: shipped-as=seekgate -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-9` design this prep describes already
+> ships as `apps/seekgate` (<https://seekgate.free.componentdock.com>).
+> Do not scaffold `apps/searchquest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekgate/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Shoreline (Hotel / Resort)
+<!-- prep-status: shipped-as=havenshore -->
+> **SHIPPED-UNDER** — the ColorLib `ocheandeview` design this prep describes already
+> ships as `apps/havenshore` (<https://havenshore.free.componentdock.com>).
+> Do not scaffold `apps/shoreline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-havenshore/spec.md`.
 
 ## Purpose
 

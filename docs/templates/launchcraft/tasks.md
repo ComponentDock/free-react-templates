@@ -1,4 +1,8 @@
 # Launchcraft — Implementation Tasks
+<!-- prep-status: shipped-as=thrive -->
+> **SHIPPED-UNDER** — the ColorLib `startright` design this prep describes shipped
+> as `apps/thrive` (<https://thrive.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Startright" (`startright`)
 Preview: https://preview.colorlib.com/theme/startright/

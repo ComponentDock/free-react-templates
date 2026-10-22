@@ -1,4 +1,8 @@
 # Solefoot — Design Notes
+<!-- prep-status: shipped-as=topaz -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-14` design this prep describes shipped
+> as `apps/topaz` (<https://topaz.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib Bootstrap Footer 14

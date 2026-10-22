@@ -1,4 +1,8 @@
 # Chalet — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=lenscape -->
+> **SHIPPED-UNDER** — the ColorLib `schmidt` design this prep describes shipped
+> as `apps/lenscape` (<https://lenscape.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Task Outline
 

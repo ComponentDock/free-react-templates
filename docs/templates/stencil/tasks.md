@@ -1,4 +1,8 @@
 # Stencil (ColorLib Bootstrap Buttons 13) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnkit -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-13` design this prep describes shipped
+> as `apps/btnkit` (<https://btnkit.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Stencil** (NEW name
 > — the ColorLib source keeps its name "Bootstrap Buttons 13").

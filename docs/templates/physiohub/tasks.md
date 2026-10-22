@@ -1,4 +1,8 @@
 # Physiohub — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=kinectwell -->
+> **SHIPPED-UNDER** — the ColorLib `physical-therapy` design this prep describes shipped
+> as `apps/kinectwell` (<https://kinectwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 

@@ -1,4 +1,8 @@
 # Festreg — Design Notes & Task Outline
+<!-- prep-status: shipped-as=groove -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-35` design this prep describes shipped
+> as `apps/groove` (<https://groove.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Reg Form V35 (`colorlib-regform-35`)
 Preview: https://colorlib.com/etc/regform/colorlib-regform-35/ (Form-v9)

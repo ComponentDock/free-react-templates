@@ -1,4 +1,8 @@
 # Weave (ColorLib Olla) — Tasks & Design Notes
+<!-- prep-status: shipped-as=spruce -->
+> **SHIPPED-UNDER** — the ColorLib `olla` design this prep describes shipped
+> as `apps/spruce` (<https://spruce.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-weave`.

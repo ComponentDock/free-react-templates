@@ -1,4 +1,9 @@
 # Template: Finis (Footer)
+<!-- prep-status: shipped-as=loom -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-10` design this prep describes already
+> ships as `apps/loom` (<https://loom.free.componentdock.com>).
+> Do not scaffold `apps/finis`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loom/spec.md`.
 
 ## Purpose
 

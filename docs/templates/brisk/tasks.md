@@ -1,4 +1,8 @@
 # Brisk (ColorLib Bato) — Tasks & Design Notes
+<!-- prep-status: shipped-as=focal -->
+> **SHIPPED-UNDER** — the ColorLib `bato` design this prep describes shipped
+> as `apps/focal` (<https://focal.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-brisk`.

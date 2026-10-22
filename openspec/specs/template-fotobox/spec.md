@@ -1,4 +1,9 @@
 # Template: Fotobox (Photography Portfolio)
+<!-- prep-status: shipped-as=fotoroll -->
+> **SHIPPED-UNDER** — the ColorLib `photography-2` design this prep describes already
+> ships as `apps/fotoroll` (<https://fotoroll.free.componentdock.com>).
+> Do not scaffold `apps/fotobox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fotoroll/spec.md`.
 
 ## Purpose
 

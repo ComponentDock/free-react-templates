@@ -1,4 +1,8 @@
 # CoralBay — Design Notes & Task Outline
+<!-- prep-status: shipped-as=seaview -->
+> **SHIPPED-UNDER** — the ColorLib `marimar` design this prep describes shipped
+> as `apps/seaview` (<https://seaview.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Marimar (https://colorlib.com/wp/template/marimar/)
 **Preview:** https://preview.colorlib.com/theme/marimar/

@@ -1,4 +1,9 @@
 # Template: Passwell (Login Form)
+<!-- prep-status: shipped-as=passcraft -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-03` design this prep describes already
+> ships as `apps/passcraft` (<https://passcraft.free.componentdock.com>).
+> Do not scaffold `apps/passwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-passcraft/spec.md`.
 
 ## Purpose
 

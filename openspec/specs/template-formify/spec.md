@@ -1,4 +1,9 @@
 # Template: Formify (Contact Form)
+<!-- prep-status: shipped-as=formvolt -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v3` design this prep describes already
+> ships as `apps/formvolt` (<https://formvolt.free.componentdock.com>).
+> Do not scaffold `apps/formify`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formvolt/spec.md`.
 
 ## Purpose
 

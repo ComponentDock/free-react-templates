@@ -1,4 +1,9 @@
 # Template: Simmer (Minimal Food Blog)
+<!-- prep-status: shipped-as=zesty -->
+> **SHIPPED-UNDER** — the ColorLib `yummy` design this prep describes already
+> ships as `apps/zesty` (<https://zesty.free.componentdock.com>).
+> Do not scaffold `apps/simmer`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-zesty/spec.md`.
 
 ## Purpose
 

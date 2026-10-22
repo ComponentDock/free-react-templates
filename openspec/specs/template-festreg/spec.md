@@ -1,4 +1,9 @@
 # Template: Festreg (Registration Form)
+<!-- prep-status: shipped-as=groove -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-35` design this prep describes already
+> ships as `apps/groove` (<https://groove.free.componentdock.com>).
+> Do not scaffold `apps/festreg`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-groove/spec.md`.
 
 ## Purpose
 

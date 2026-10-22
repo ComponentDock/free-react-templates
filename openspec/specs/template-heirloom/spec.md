@@ -1,4 +1,9 @@
 # Template: Heirloom (Business / Corporate One-Page)
+<!-- prep-status: shipped-as=linnet -->
+> **SHIPPED-UNDER** — the ColorLib `classic` design this prep describes already
+> ships as `apps/linnet` (<https://linnet.free.componentdock.com>).
+> Do not scaffold `apps/heirloom`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-linnet/spec.md`.
 
 ## Purpose
 

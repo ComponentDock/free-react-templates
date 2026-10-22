@@ -1,4 +1,9 @@
 # Template: HireDesk (Job Board / Recruitment)
+<!-- prep-status: shipped-as=jobvane -->
+> **SHIPPED-UNDER** — the ColorLib `jobpply` design this prep describes already
+> ships as `apps/jobvane` (<https://jobvane.free.componentdock.com>).
+> Do not scaffold `apps/hiredesk`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jobvane/spec.md`.
 
 ## Purpose
 

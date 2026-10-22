@@ -1,4 +1,8 @@
 # Merchpick — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=merch -->
+> **SHIPPED-UNDER** — the ColorLib `product` design this prep describes shipped
+> as `apps/merch` (<https://merch.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib template:** Product

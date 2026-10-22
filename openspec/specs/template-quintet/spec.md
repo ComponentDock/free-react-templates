@@ -1,4 +1,9 @@
 # Template: Quintet (Bootstrap Checkbox States Demo)
+<!-- prep-status: shipped-as=morph -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-15` design this prep describes already
+> ships as `apps/morph` (<https://morph.free.componentdock.com>).
+> Do not scaffold `apps/quintet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-morph/spec.md`.
 
 ## Purpose
 

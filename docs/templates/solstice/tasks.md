@@ -1,4 +1,8 @@
 # Solstice (ColorLib Calendar 04) — Tasks & Design Notes
+<!-- prep-status: shipped-as=dayloom -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-04` design this prep describes shipped
+> as `apps/dayloom` (<https://dayloom.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Solstice** (NEW name —
 > the ColorLib source keeps its name "Calendar 04"). Implementation ships on

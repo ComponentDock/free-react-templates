@@ -1,4 +1,9 @@
 # Template: Photopia (Photography Portfolio)
+<!-- prep-status: shipped-as=filmstock -->
+> **SHIPPED-UNDER** — the ColorLib `photosen` design this prep describes already
+> ships as `apps/filmstock` (<https://filmstock.free.componentdock.com>).
+> Do not scaffold `apps/photopia`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-filmstock/spec.md`.
 
 ## Purpose
 

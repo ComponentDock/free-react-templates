@@ -1,4 +1,9 @@
 # Template: Moodly (Bootstrap Checkbox / Mood Toggle)
+<!-- prep-status: shipped-as=tickbox -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-10` design this prep describes already
+> ships as `apps/tickbox` (<https://tickbox.free.componentdock.com>).
+> Do not scaffold `apps/moodly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tickbox/spec.md`.
 
 ## Purpose
 

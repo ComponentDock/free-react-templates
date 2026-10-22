@@ -1,4 +1,8 @@
 # Fotobox — Prep Notes
+<!-- prep-status: shipped-as=fotoroll -->
+> **SHIPPED-UNDER** — the ColorLib `photography-2` design this prep describes shipped
+> as `apps/fotoroll` (<https://fotoroll.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Photography 2
 Preview: https://preview.colorlib.com/theme/photography-2/ (404 — unreachable)

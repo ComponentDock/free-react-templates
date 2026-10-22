@@ -1,4 +1,9 @@
 # Template: Soluna (Bootstrap Checkbox / Day-Night Toggle)
+<!-- prep-status: shipped-as=toggle -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-08` design this prep describes already
+> ships as `apps/toggle` (<https://toggle.free.componentdock.com>).
+> Do not scaffold `apps/soluna`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-toggle/spec.md`.
 
 ## Purpose
 

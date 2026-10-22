@@ -1,4 +1,9 @@
 # Template: Coinstream (Cryptocurrency / Fintech)
+<!-- prep-status: shipped-as=coincast -->
+> **SHIPPED-UNDER** — the ColorLib `coinbuzz` design this prep describes already
+> ships as `apps/coincast` (<https://coincast.free.componentdock.com>).
+> Do not scaffold `apps/coinstream`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coincast/spec.md`.
 
 ## Purpose
 

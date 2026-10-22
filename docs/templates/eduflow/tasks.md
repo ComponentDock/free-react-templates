@@ -1,4 +1,8 @@
 # EduFlow Task Outline & Design Notes
+<!-- prep-status: shipped-as=scholar -->
+> **SHIPPED-UNDER** — the ColorLib `onedu` design this prep describes shipped
+> as `apps/scholar` (<https://scholar.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib **Onedu** template (`https://preview.colorlib.com/theme/onedu/`).
 

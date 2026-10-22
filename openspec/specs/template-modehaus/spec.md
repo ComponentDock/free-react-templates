@@ -1,4 +1,9 @@
 # Template: Modehaus (E-Commerce / Fashion)
+<!-- prep-status: shipped-as=threadline -->
+> **SHIPPED-UNDER** — the ColorLib `malefashion` design this prep describes already
+> ships as `apps/threadline` (<https://threadline.free.componentdock.com>).
+> Do not scaffold `apps/modehaus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-threadline/spec.md`.
 
 ## Purpose
 

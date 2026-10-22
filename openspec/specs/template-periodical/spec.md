@@ -1,4 +1,9 @@
 # Template: Periodical (Magazine/Blog Template)
+<!-- prep-status: shipped-as=lede -->
+> **SHIPPED-UNDER** — the ColorLib `magazine` design this prep describes already
+> ships as `apps/lede` (<https://lede.free.componentdock.com>).
+> Do not scaffold `apps/periodical`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lede/spec.md`.
 
 ## Purpose
 

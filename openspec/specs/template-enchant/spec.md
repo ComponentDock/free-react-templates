@@ -1,4 +1,9 @@
 # Template: Enchant (Multi-step Sign-Up Wizard)
+<!-- prep-status: shipped-as=onboardly -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-20` design this prep describes already
+> ships as `apps/onboardly` (<https://onboardly.free.componentdock.com>).
+> Do not scaffold `apps/enchant`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-onboardly/spec.md`.
 
 ## Purpose
 

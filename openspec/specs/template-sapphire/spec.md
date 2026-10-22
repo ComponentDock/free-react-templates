@@ -1,4 +1,9 @@
 # Template: Sapphire (Luxury Resort / Hotel Template)
+<!-- prep-status: shipped-as=azurepeak -->
+> **SHIPPED-UNDER** — the ColorLib `the-grand-azure` design this prep describes already
+> ships as `apps/azurepeak` (<https://azurepeak.free.componentdock.com>).
+> Do not scaffold `apps/sapphire`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-azurepeak/spec.md`.
 
 ## Purpose
 

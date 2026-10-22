@@ -1,4 +1,8 @@
 # GiveCraft — Task Outline
+<!-- prep-status: shipped-as=shores -->
+> **SHIPPED-UNDER** — the ColorLib `seelife` design this prep describes shipped
+> as `apps/shores` (<https://shores.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Prep status
 - [x] Reference gathered (preview DOM + CSS + screenshot)

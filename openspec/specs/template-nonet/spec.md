@@ -1,4 +1,9 @@
 # Template: Nonet (Bootstrap Checkbox iOS Switch Demo)
+<!-- prep-status: shipped-as=checkpad -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-19` design this prep describes already
+> ships as `apps/checkpad` (<https://checkpad.free.componentdock.com>).
+> Do not scaffold `apps/nonet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-checkpad/spec.md`.
 
 ## Purpose
 

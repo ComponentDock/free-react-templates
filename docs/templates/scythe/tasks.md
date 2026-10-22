@@ -1,4 +1,8 @@
 # Scythe — implementation tasks + design notes
+<!-- prep-status: shipped-as=picktag -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-11` design this prep describes shipped
+> as `apps/picktag` (<https://picktag.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 11** (`multiselect-11`) as **Scythe**.
 Read `openspec/specs/template-scythe/spec.md` first — it holds every token,

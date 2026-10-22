@@ -1,4 +1,8 @@
 # Cutlery — Implementation Tasks
+<!-- prep-status: shipped-as=supper -->
+> **SHIPPED-UNDER** — the ColorLib `meal` design this prep describes shipped
+> as `apps/supper` (<https://supper.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Meal" — https://preview.colorlib.com/theme/meal/
 New name: cutlery (apps/cutlery, @free-react-templates/cutlery)

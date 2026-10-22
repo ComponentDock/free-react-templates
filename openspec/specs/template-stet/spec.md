@@ -1,4 +1,9 @@
 # Template: Stet (Blog Template)
+<!-- prep-status: shipped-as=parchment -->
+> **SHIPPED-UNDER** — the ColorLib `wordsmith` design this prep describes already
+> ships as `apps/parchment` (<https://parchment.free.componentdock.com>).
+> Do not scaffold `apps/stet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-parchment/spec.md`.
 
 ## Purpose
 

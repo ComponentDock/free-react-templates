@@ -1,4 +1,8 @@
 # Floresco — Implementation TODO & Design Notes
+<!-- prep-status: shipped-as=bloomfield -->
+> **SHIPPED-UNDER** — the ColorLib `florist` design this prep describes shipped
+> as `apps/bloomfield` (<https://bloomfield.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib slug: `florist`

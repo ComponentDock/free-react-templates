@@ -1,4 +1,8 @@
 # Notifly (ColorLib Dropdown 15) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pings -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-15` design this prep describes shipped
+> as `apps/pings` (<https://pings.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-notifly`.

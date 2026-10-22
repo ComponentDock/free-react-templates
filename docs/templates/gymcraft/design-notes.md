@@ -1,4 +1,8 @@
 # GymCraft — Design Notes
+<!-- prep-status: shipped-as=sprintly -->
+> **SHIPPED-UNDER** — the ColorLib `activitar` design this prep describes shipped
+> as `apps/sprintly` (<https://sprintly.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 

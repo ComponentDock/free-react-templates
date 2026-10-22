@@ -1,4 +1,8 @@
 # Wire (ColorLib Meranda) — Tasks & Design Notes
+<!-- prep-status: shipped-as=newswire -->
+> **SHIPPED-UNDER** — the ColorLib `meranda` design this prep describes shipped
+> as `apps/newswire` (<https://newswire.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-wire`.

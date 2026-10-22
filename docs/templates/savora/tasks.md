@@ -1,4 +1,8 @@
 # Savora (ColorLib Restauco) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bonquet -->
+> **SHIPPED-UNDER** — the ColorLib `restauco` design this prep describes shipped
+> as `apps/bonquet` (<https://bonquet.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Restauco" — free Bootstrap-based restaurant
 > website template (https://colorlib.com/wp/template/restauco/) under the

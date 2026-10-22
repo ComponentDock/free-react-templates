@@ -1,4 +1,8 @@
 # Crestone (ColorLib Bobsled) — Tasks & Design Notes
+<!-- prep-status: shipped-as=artwave -->
+> **SHIPPED-UNDER** — the ColorLib `bobsled` design this prep describes shipped
+> as `apps/artwave` (<https://artwave.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-crestone`. Recreation name: **Crestone** (NEW name —

@@ -1,4 +1,8 @@
 # Levitate (ColorLib Bootstrap Buttons 14) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnvortex -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-14` design this prep describes shipped
+> as `apps/btnvortex` (<https://btnvortex.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Levitate** (NEW name
 > — the ColorLib source keeps its name "Bootstrap Buttons 14").

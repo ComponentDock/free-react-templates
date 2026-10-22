@@ -1,4 +1,8 @@
 # ProbeBar — Design Notes & Task Outline
+<!-- prep-status: shipped-as=searchgate -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-06` design this prep describes shipped
+> as `apps/searchgate` (<https://searchgate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Search Form/Bar 06

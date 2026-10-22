@@ -1,4 +1,8 @@
 # Invoke — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=formpad -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-4` design this prep describes shipped
+> as `apps/formpad` (<https://formpad.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 

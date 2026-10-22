@@ -1,4 +1,9 @@
 # Template: Platewell (Restaurant / Dining)
+<!-- prep-status: shipped-as=tastory -->
+> **SHIPPED-UNDER** — the ColorLib `eatwell` design this prep describes already
+> ships as `apps/tastory` (<https://tastory.free.componentdock.com>).
+> Do not scaffold `apps/platewell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tastory/spec.md`.
 
 ## Purpose
 

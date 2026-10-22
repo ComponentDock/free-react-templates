@@ -1,4 +1,9 @@
 # Template: Melodia (Music Landing Page)
+<!-- prep-status: shipped-as=groovecraft -->
+> **SHIPPED-UNDER** — the ColorLib `onemusic` design this prep describes already
+> ships as `apps/groovecraft` (<https://groovecraft.free.componentdock.com>).
+> Do not scaffold `apps/melodia`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-groovecraft/spec.md`.
 
 ## Purpose
 

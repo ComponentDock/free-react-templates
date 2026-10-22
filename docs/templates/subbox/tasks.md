@@ -1,4 +1,8 @@
 # SubBox — Implementation Tasks
+<!-- prep-status: shipped-as=modalrosa -->
+> **SHIPPED-UNDER** — the ColorLib `modal-13` design this prep describes shipped
+> as `apps/modalrosa` (<https://modalrosa.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Modal 13 (`modal-13`)

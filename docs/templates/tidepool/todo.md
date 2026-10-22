@@ -1,4 +1,8 @@
 # Tidepool — Prep Notes
+<!-- prep-status: shipped-as=kaleido -->
+> **SHIPPED-UNDER** — the ColorLib `jellyfish-ui-kit` design this prep describes shipped
+> as `apps/kaleido` (<https://kaleido.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 

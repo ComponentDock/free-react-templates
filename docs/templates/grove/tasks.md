@@ -1,4 +1,8 @@
 # Grove — Implementation Tasks
+<!-- prep-status: shipped-as=ravida -->
+> **SHIPPED-UNDER** — the ColorLib `buri` design this prep describes shipped
+> as `apps/ravida` (<https://ravida.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: Colorlib Buri (restaurant/food Bootstrap template)
 New name: `grove`

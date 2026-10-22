@@ -1,4 +1,9 @@
 # Spec: AdGate — Classified Ads Listing Template
+<!-- prep-status: shipped-as=classipost -->
+> **SHIPPED-UNDER** — the ColorLib `classy-ads` design this prep describes already
+> ships as `apps/classipost` (<https://classipost.free.componentdock.com>).
+> Do not scaffold `apps/adgate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-classipost/spec.md`.
 
 ## Purpose
 

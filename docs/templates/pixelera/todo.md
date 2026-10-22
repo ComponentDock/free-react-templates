@@ -1,4 +1,8 @@
 # Pixelera — Implementation Todo
+<!-- prep-status: shipped-as=boxpulse -->
+> **SHIPPED-UNDER** — the ColorLib `boxus` design this prep describes shipped
+> as `apps/boxpulse` (<https://boxpulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Project scaffolding
 - [ ] Copy simplest existing app as template base (e.g. `apps/amber` or similar minimal app)

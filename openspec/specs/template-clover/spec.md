@@ -1,4 +1,9 @@
 # Template: Clover (Bootstrap Accordion / UI Component)
+<!-- prep-status: shipped-as=fanfold -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-06` design this prep describes already
+> ships as `apps/fanfold` (<https://fanfold.free.componentdock.com>).
+> Do not scaffold `apps/clover`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fanfold/spec.md`.
 
 ## Purpose
 

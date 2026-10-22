@@ -1,4 +1,8 @@
 # FitPulse — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=fitcore -->
+> **SHIPPED-UNDER** — the ColorLib `fitnessclub` design this prep describes shipped
+> as `apps/fitcore` (<https://fitcore.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Fitnessclub
 Preview: https://preview.colorlib.com/theme/fitnessclub/

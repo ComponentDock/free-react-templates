@@ -1,4 +1,8 @@
 # Concourse (ColorLib Modal 14) — Tasks & Design Notes
+<!-- prep-status: shipped-as=modalbox -->
+> **SHIPPED-UNDER** — the ColorLib `modal-14` design this prep describes shipped
+> as `apps/modalbox` (<https://modalbox.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Concourse** (NEW name —
 > the ColorLib source keeps its name "Modal 14"/`modal-14`). Implementation

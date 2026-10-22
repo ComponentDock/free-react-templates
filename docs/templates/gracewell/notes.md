@@ -1,4 +1,8 @@
 # GraceWell — Implementation Notes
+<!-- prep-status: shipped-as=warmheart -->
+> **SHIPPED-UNDER** — the ColorLib `kindity` design this prep describes shipped
+> as `apps/warmheart` (<https://warmheart.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 

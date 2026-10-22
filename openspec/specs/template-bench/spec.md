@@ -1,4 +1,9 @@
 # Template: Bench (Law Firm / Attorney Landing)
+<!-- prep-status: shipped-as=jurist -->
+> **SHIPPED-UNDER** — the ColorLib `judicial` design this prep describes already
+> ships as `apps/jurist` (<https://jurist.free.componentdock.com>).
+> Do not scaffold `apps/bench`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jurist/spec.md`.
 
 ## Purpose
 

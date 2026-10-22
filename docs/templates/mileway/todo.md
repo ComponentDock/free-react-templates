@@ -1,4 +1,8 @@
 # Mileway — Task Outline
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes shipped
+> as `apps/drivego` (<https://drivego.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 - [ ] Create `apps/mileway/` scaffold (copy simplest existing app, rename package)
 - [ ] Install Google Fonts Roboto in `index.html`

@@ -1,4 +1,9 @@
 # Template: Popmenu (Profile Dropdown Demo)
+<!-- prep-status: shipped-as=menubox -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-02` design this prep describes already
+> ships as `apps/menubox` (<https://menubox.free.componentdock.com>).
+> Do not scaffold `apps/popmenu`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-menubox/spec.md`.
 
 ## Purpose
 

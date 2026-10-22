@@ -1,4 +1,8 @@
 # Indiglow — Implementation TODO + Design Notes
+<!-- prep-status: shipped-as=azureline -->
+> **SHIPPED-UNDER** — the ColorLib `blueline` design this prep describes shipped
+> as `apps/azureline` (<https://azureline.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Blueline (https://colorlib.com/wp/template/blueline/)
 **Preview:** https://preview.colorlib.com/theme/blueline/

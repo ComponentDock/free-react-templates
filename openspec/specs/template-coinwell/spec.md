@@ -1,4 +1,9 @@
 # Template: Coinwell (Cryptocurrency)
+<!-- prep-status: shipped-as=ledgerly -->
+> **SHIPPED-UNDER** — the ColorLib `cryptos` design this prep describes already
+> ships as `apps/ledgerly` (<https://ledgerly.free.componentdock.com>).
+> Do not scaffold `apps/coinwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ledgerly/spec.md`.
 
 ## Purpose
 

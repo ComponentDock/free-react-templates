@@ -1,4 +1,8 @@
 # Tasks: Molaris (Dental Clinic Template)
+<!-- prep-status: shipped-as=odonto -->
+> **SHIPPED-UNDER** — the ColorLib `toothcare` design this prep describes shipped
+> as `apps/odonto` (<https://odonto.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup & Scaffold
 

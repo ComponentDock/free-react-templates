@@ -1,4 +1,9 @@
 # Template: Strut (Industrial / Construction)
+<!-- prep-status: shipped-as=industrix -->
+> **SHIPPED-UNDER** — the ColorLib `durg` design this prep describes already
+> ships as `apps/industrix` (<https://industrix.free.componentdock.com>).
+> Do not scaffold `apps/strut`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-industrix/spec.md`.
 
 ## Purpose
 

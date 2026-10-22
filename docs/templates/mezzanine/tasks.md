@@ -1,4 +1,8 @@
 # Mezzanine (ColorLib Modal 09) — Tasks & Design Notes
+<!-- prep-status: shipped-as=entrywell -->
+> **SHIPPED-UNDER** — the ColorLib `modal-09` design this prep describes shipped
+> as `apps/entrywell` (<https://entrywell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Mezzanine** (NEW name —
 > the ColorLib source keeps its name "Modal 09"). Implementation ships on

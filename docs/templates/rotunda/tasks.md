@@ -1,4 +1,8 @@
 # Rotunda (ColorLib Modal 13) — Tasks & Design Notes
+<!-- prep-status: shipped-as=modalrosa -->
+> **SHIPPED-UNDER** — the ColorLib `modal-13` design this prep describes shipped
+> as `apps/modalrosa` (<https://modalrosa.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Rotunda** (NEW name —
 > the ColorLib source keeps its name "Modal 13"/`modal-13`). Implementation

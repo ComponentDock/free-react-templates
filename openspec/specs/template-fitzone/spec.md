@@ -1,4 +1,9 @@
 # FitZone — Fitness & Gym Template
+<!-- prep-status: shipped-as=gymcore -->
+> **SHIPPED-UNDER** — the ColorLib `gutim` design this prep describes already
+> ships as `apps/gymcore` (<https://gymcore.free.componentdock.com>).
+> Do not scaffold `apps/fitzone`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gymcore/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # SparkCraft — Design Notes & Task Outline
+<!-- prep-status: shipped-as=luminary -->
+> **SHIPPED-UNDER** — the ColorLib `inspire` design this prep describes shipped
+> as `apps/luminary` (<https://luminary.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 - **ColorLib source:** Inspire (slug: `inspire`)

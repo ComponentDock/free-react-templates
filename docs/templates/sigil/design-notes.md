@@ -1,4 +1,8 @@
 # Sigil — Design Notes & Task Outline
+<!-- prep-status: shipped-as=paygate -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-25` design this prep describes shipped
+> as `apps/paygate` (<https://paygate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib:** Colorlib Wizard 25 (https://colorlib.com/wp/template/colorlib-wizard-25/)

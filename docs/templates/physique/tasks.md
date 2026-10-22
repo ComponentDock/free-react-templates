@@ -1,4 +1,8 @@
 # Physique — Implementation Tasks
+<!-- prep-status: shipped-as=stallion -->
+> **SHIPPED-UNDER** — the ColorLib `fitness` design this prep describes shipped
+> as `apps/stallion` (<https://stallion.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Pre-implementation
 - [x] Spec written (openspec/specs/template-physique/spec.md)

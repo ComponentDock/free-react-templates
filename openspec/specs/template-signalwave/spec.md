@@ -1,4 +1,9 @@
 # Template: Signalwave (Internet Service Provider)
+<!-- prep-status: shipped-as=blinkwave -->
+> **SHIPPED-UNDER** — the ColorLib `fastnet` design this prep describes already
+> ships as `apps/blinkwave` (<https://blinkwave.free.componentdock.com>).
+> Do not scaffold `apps/signalwave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-blinkwave/spec.md`.
 
 ## Purpose
 

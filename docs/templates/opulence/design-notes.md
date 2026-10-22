@@ -1,4 +1,8 @@
 # Opulence — Design Notes & Task Outline
+<!-- prep-status: shipped-as=opulux -->
+> **SHIPPED-UNDER** — the ColorLib `deluxe` design this prep describes shipped
+> as `apps/opulux` (<https://opulux.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Deluxe → https://preview.colorlib.com/theme/deluxe/
 

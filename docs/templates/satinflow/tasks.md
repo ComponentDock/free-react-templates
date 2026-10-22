@@ -1,4 +1,8 @@
 # Satinflow — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=kael -->
+> **SHIPPED-UNDER** — the ColorLib `satner` design this prep describes shipped
+> as `apps/kael` (<https://kael.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Satner → https://colorlib.com/wp/template/satner/

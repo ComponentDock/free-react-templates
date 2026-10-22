@@ -1,4 +1,9 @@
 # Template: Rune (Bootstrap Wizards — Multi-step Travel Booking)
+<!-- prep-status: shipped-as=arcane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-22` design this prep describes already
+> ships as `apps/arcane` (<https://arcane.free.componentdock.com>).
+> Do not scaffold `apps/rune`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-arcane/spec.md`.
 
 ## Purpose
 

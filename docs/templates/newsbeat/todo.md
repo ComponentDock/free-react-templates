@@ -1,4 +1,8 @@
 # Newsbeat — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=soundbite -->
+> **SHIPPED-UNDER** — the ColorLib `the-hustle-hour` design this prep describes shipped
+> as `apps/soundbite` (<https://soundbite.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 

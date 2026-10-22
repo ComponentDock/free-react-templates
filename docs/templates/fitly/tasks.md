@@ -1,4 +1,8 @@
 # Fitly — Implementation Tasks
+<!-- prep-status: shipped-as=gymcore -->
+> **SHIPPED-UNDER** — the ColorLib `gutim` design this prep describes shipped
+> as `apps/gymcore` (<https://gymcore.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Prep Status: DONE
 

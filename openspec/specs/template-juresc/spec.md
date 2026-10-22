@@ -1,4 +1,9 @@
 # Template: Juresc (Law Firm)
+<!-- prep-status: shipped-as=docket -->
+> **SHIPPED-UNDER** — the ColorLib `lawfirm` design this prep describes already
+> ships as `apps/docket` (<https://docket.free.componentdock.com>).
+> Do not scaffold `apps/juresc`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-docket/spec.md`.
 
 ## Purpose
 

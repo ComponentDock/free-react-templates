@@ -1,4 +1,9 @@
 # Template: Conjury (Hotel Booking Wizard)
+<!-- prep-status: shipped-as=hexcraft -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-2` design this prep describes already
+> ships as `apps/hexcraft` (<https://hexcraft.free.componentdock.com>).
+> Do not scaffold `apps/conjury`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hexcraft/spec.md`.
 
 ## Purpose
 

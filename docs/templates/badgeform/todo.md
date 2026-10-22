@@ -1,4 +1,8 @@
 # Badgeform — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=regvale -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-36` design this prep describes shipped
+> as `apps/regvale` (<https://regvale.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Reg Form V36 (`colorlib-regform-36`)

@@ -1,4 +1,8 @@
 # Attorix (ColorLib Atorni) — Tasks & Design Notes
+<!-- prep-status: shipped-as=advocat -->
+> **SHIPPED-UNDER** — the ColorLib `atorni` design this prep describes shipped
+> as `apps/advocat` (<https://advocat.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` under the source name (template-atorni);
 > renamed to the NEW name **Attorix** in the implementation PR.

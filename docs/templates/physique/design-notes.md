@@ -1,4 +1,8 @@
 # Physique — Design Notes
+<!-- prep-status: shipped-as=stallion -->
+> **SHIPPED-UNDER** — the ColorLib `fitness` design this prep describes shipped
+> as `apps/stallion` (<https://stallion.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Fitness (https://colorlib.com/wp/template/fitness/)
 **Preview:** https://preview.colorlib.com/theme/fitness/

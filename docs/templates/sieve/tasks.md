@@ -1,4 +1,8 @@
 # Sieve — implementation tasks + design notes
+<!-- prep-status: shipped-as=tealpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-13` design this prep describes shipped
+> as `apps/tealpick` (<https://tealpick.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 13** (`multiselect-13`) as **Sieve**.
 Read `openspec/specs/template-sieve/spec.md` first — it holds every token,

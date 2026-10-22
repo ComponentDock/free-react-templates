@@ -1,4 +1,9 @@
 # Template: LotusFlow (Yoga Studio Landing)
+<!-- prep-status: shipped-as=pranayama -->
+> **SHIPPED-UNDER** — the ColorLib `yoga-studio` design this prep describes already
+> ships as `apps/pranayama` (<https://pranayama.free.componentdock.com>).
+> Do not scaffold `apps/lotusflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pranayama/spec.md`.
 
 ## Purpose
 

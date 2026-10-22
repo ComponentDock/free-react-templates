@@ -1,4 +1,8 @@
 # Advocate — Design Notes & Fidelity Reference
+<!-- prep-status: shipped-as=lawguard -->
+> **SHIPPED-UNDER** — the ColorLib `solicitor` design this prep describes shipped
+> as `apps/lawguard` (<https://lawguard.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Template
 

@@ -1,4 +1,9 @@
 # Template: Props (Real Estate)
+<!-- prep-status: shipped-as=quarters -->
+> **SHIPPED-UNDER** — the ColorLib `props` design this prep describes already
+> ships as `apps/quarters` (<https://quarters.free.componentdock.com>).
+> Do not scaffold `apps/props`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-quarters/spec.md`.
 
 ## Purpose
 

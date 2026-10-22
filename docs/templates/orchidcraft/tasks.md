@@ -1,4 +1,8 @@
 # Orchidcraft (ColorLib Rango) — Tasks & Design Notes
+<!-- prep-status: shipped-as=blitz -->
+> **SHIPPED-UNDER** — the ColorLib `rango` design this prep describes shipped
+> as `apps/blitz` (<https://blitz.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-orchidcraft`. Recreation name: **Orchidcraft** (NEW

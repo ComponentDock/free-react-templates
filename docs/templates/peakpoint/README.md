@@ -1,4 +1,8 @@
 # Peakpoint — Implementation Notes
+<!-- prep-status: shipped-as=bizplanner -->
+> **SHIPPED-UNDER** — the ColorLib `bizpro` design this prep describes shipped
+> as `apps/bizplanner` (<https://bizplanner.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Bizpro → https://preview.colorlib.com/theme/bizpro/
 New name: peakpoint

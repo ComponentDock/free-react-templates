@@ -1,4 +1,8 @@
 # TopModel — Implementation Notes
+<!-- prep-status: shipped-as=vizier -->
+> **SHIPPED-UNDER** — the ColorLib `mona` design this prep describes shipped
+> as `apps/vizier` (<https://vizier.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Mona (https://preview.colorlib.com/theme/mona/)
 

@@ -1,4 +1,9 @@
 # Template: Spectrum (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnflare -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-07` design this prep describes already
+> ships as `apps/btnflare` (<https://btnflare.free.componentdock.com>).
+> Do not scaffold `apps/spectrum`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnflare/spec.md`.
 
 ## Purpose
 

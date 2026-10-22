@@ -1,4 +1,9 @@
 # Template: Lenskeeper (Photography)
+<!-- prep-status: shipped-as=shuttercraft -->
+> **SHIPPED-UNDER** — the ColorLib `photography` design this prep describes already
+> ships as `apps/shuttercraft` (<https://shuttercraft.free.componentdock.com>).
+> Do not scaffold `apps/lenskeeper`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shuttercraft/spec.md`.
 
 ## Purpose
 

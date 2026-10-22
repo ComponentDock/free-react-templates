@@ -1,4 +1,8 @@
 # Vestry (ColorLib Modal 11) — Tasks & Design Notes
+<!-- prep-status: shipped-as=popup -->
+> **SHIPPED-UNDER** — the ColorLib `modal-11` design this prep describes shipped
+> as `apps/popup` (<https://popup.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Vestry** (NEW name —
 > the ColorLib source keeps its name "Modal 11"). Implementation ships on

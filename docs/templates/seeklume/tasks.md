@@ -1,4 +1,8 @@
 # SeekLume — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=searchveil -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-16` design this prep describes shipped
+> as `apps/searchveil` (<https://searchveil.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Identity
 

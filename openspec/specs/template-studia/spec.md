@@ -1,4 +1,9 @@
 # Template: Studia (Education / E-Learning Course Directory)
+<!-- prep-status: shipped-as=scholar -->
+> **SHIPPED-UNDER** — the ColorLib `onedu` design this prep describes already
+> ships as `apps/scholar` (<https://scholar.free.componentdock.com>).
+> Do not scaffold `apps/studia`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scholar/spec.md`.
 
 ## Purpose
 

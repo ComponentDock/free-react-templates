@@ -1,4 +1,9 @@
 # Template: Invoke (Registration Form Wizard)
+<!-- prep-status: shipped-as=formpad -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-4` design this prep describes already
+> ships as `apps/formpad` (<https://formpad.free.componentdock.com>).
+> Do not scaffold `apps/invoke`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formpad/spec.md`.
 
 ## Purpose
 

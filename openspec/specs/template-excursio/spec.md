@@ -1,4 +1,9 @@
 # Template: Excursio (Travel / Tourism)
+<!-- prep-status: shipped-as=journee -->
+> **SHIPPED-UNDER** — the ColorLib `tourbi` design this prep describes already
+> ships as `apps/journee` (<https://journee.free.componentdock.com>).
+> Do not scaffold `apps/excursio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-journee/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Encore — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=ampstat -->
+> **SHIPPED-UNDER** — the ColorLib `music` design this prep describes shipped
+> as `apps/ampstat` (<https://ampstat.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib slug: `music`

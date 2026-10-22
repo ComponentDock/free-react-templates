@@ -1,4 +1,8 @@
 # Pulldown Template — Design Notes
+<!-- prep-status: shipped-as=dropkit -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-01` design this prep describes shipped
+> as `apps/dropkit` (<https://dropkit.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Analysis
 

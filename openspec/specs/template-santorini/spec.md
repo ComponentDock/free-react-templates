@@ -1,4 +1,9 @@
 # Template: Santorini (Full-Width Image Carousel with Arrows, Dots + Autoplay)
+<!-- prep-status: shipped-as=reel -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-11` design this prep describes already
+> ships as `apps/reel` (<https://reel.free.componentdock.com>).
+> Do not scaffold `apps/santorini`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reel/spec.md`.
 
 ## Purpose
 

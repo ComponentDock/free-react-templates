@@ -1,4 +1,8 @@
 # Faculty (ColorLib Universityedu) — Tasks & Design Notes
+<!-- prep-status: shipped-as=scholara -->
+> **SHIPPED-UNDER** — the ColorLib `universityedu` design this prep describes shipped
+> as `apps/scholara` (<https://scholara.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Universityedu"
 > (https://colorlib.com/wp/template/universityedu/) under the NEW name

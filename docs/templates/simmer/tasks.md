@@ -1,4 +1,8 @@
 # Simmer (ColorLib Yummy) — Tasks & Design Notes
+<!-- prep-status: shipped-as=zesty -->
+> **SHIPPED-UNDER** — the ColorLib `yummy` design this prep describes shipped
+> as `apps/zesty` (<https://zesty.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Yummy"
 > (https://colorlib.com/wp/template/yummy/) under the NEW name **Simmer**

@@ -1,4 +1,8 @@
 # GreenView — Design Notes & Task Outline
+<!-- prep-status: shipped-as=fern -->
+> **SHIPPED-UNDER** — the ColorLib `ecoverde` design this prep describes shipped
+> as `apps/fern` (<https://fern.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

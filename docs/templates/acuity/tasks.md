@@ -1,4 +1,8 @@
 # Acuity — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=foldkit -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-15` design this prep describes shipped
+> as `apps/foldkit` (<https://foldkit.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib **Accordion 15** (`https://colorlib.com/wp/template/accordion-15/`).
 

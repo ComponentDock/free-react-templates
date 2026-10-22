@@ -1,4 +1,8 @@
 # Platewell — Implementation Tasks
+<!-- prep-status: shipped-as=tastory -->
+> **SHIPPED-UNDER** — the ColorLib `eatwell` design this prep describes shipped
+> as `apps/tastory` (<https://tastory.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Scaffold
 - [ ] Create `apps/platewell/` (copy simplest existing app, rename package)

@@ -1,4 +1,8 @@
 # Kelp (ColorLib Accordion 05) — Tasks & Design Notes
+<!-- prep-status: shipped-as=expanda -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-05` design this prep describes shipped
+> as `apps/expanda` (<https://expanda.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Kelp** (NEW name —
 > the ColorLib source keeps its name "Accordion 05"). Implementation ships on

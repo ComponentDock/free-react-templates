@@ -1,4 +1,8 @@
 # Troth (ColorLib Wordpress Wedding Themes) — Tasks & Design Notes
+<!-- prep-status: shipped-as=wedlock -->
+> **SHIPPED-UNDER** — the ColorLib `wordpress-wedding-themes` design this prep describes shipped
+> as `apps/wedlock` (<https://wedlock.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of the ColorLib "Wordpress Wedding Themes" item
 > (https://colorlib.com/wp/template/wordpress-wedding-themes/) under the NEW

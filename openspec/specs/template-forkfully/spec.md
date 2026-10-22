@@ -1,4 +1,9 @@
 # Template: Forkfully (Food & Restaurant)
+<!-- prep-status: shipped-as=bites -->
+> **SHIPPED-UNDER** — the ColorLib `foodbar` design this prep describes already
+> ships as `apps/bites` (<https://bites.free.componentdock.com>).
+> Do not scaffold `apps/forkfully`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bites/spec.md`.
 
 ## Purpose
 

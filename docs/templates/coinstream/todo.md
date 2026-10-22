@@ -1,4 +1,8 @@
 # Coinstream — Prep Notes & Implementation Outline
+<!-- prep-status: shipped-as=coincast -->
+> **SHIPPED-UNDER** — the ColorLib `coinbuzz` design this prep describes shipped
+> as `apps/coincast` (<https://coincast.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Coinbuzz (https://colorlib.com/wp/template/coinbuzz/)
 **Preview:** https://preview.colorlib.com/theme/coinbuzz/coinbuzz/index.html

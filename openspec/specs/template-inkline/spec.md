@@ -1,4 +1,9 @@
 # Template: Inkline (Fullscreen Business Website)
+<!-- prep-status: shipped-as=azureline -->
+> **SHIPPED-UNDER** — the ColorLib `blueline` design this prep describes already
+> ships as `apps/azureline` (<https://azureline.free.componentdock.com>).
+> Do not scaffold `apps/inkline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-azureline/spec.md`.
 
 ## Purpose
 

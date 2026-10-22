@@ -1,4 +1,9 @@
 # Template: RegVista (Modern Registration Form)
+<!-- prep-status: shipped-as=regfold -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-4` design this prep describes already
+> ships as `apps/regfold` (<https://regfold.free.componentdock.com>).
+> Do not scaffold `apps/regvista`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regfold/spec.md`.
 
 ## Purpose
 

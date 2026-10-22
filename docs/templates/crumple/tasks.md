@@ -1,4 +1,8 @@
 # Crumple — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=fanfold -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-06` design this prep describes shipped
+> as `apps/fanfold` (<https://fanfold.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source**: ColorLib Accordion 06
 **Preview**: https://preview.colorlib.com/theme/bac/accordion-06/

@@ -1,4 +1,9 @@
 # Template: Capsule (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnridge -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-12` design this prep describes already
+> ships as `apps/btnridge` (<https://btnridge.free.componentdock.com>).
+> Do not scaffold `apps/capsule`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnridge/spec.md`.
 
 ## Purpose
 

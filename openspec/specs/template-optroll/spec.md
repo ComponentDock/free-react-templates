@@ -1,4 +1,9 @@
 # Template: Optroll (Form Component — Multiselect Checkbox Dropdown)
+<!-- prep-status: shipped-as=picklist -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-14` design this prep describes already
+> ships as `apps/picklist` (<https://picklist.free.componentdock.com>).
+> Do not scaffold `apps/optroll`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-picklist/spec.md`.
 
 ## Purpose
 

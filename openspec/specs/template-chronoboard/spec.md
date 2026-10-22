@@ -1,4 +1,9 @@
 # Template: Chronoboard (Event Calendar)
+<!-- prep-status: shipped-as=timescape -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-19` design this prep describes already
+> ships as `apps/timescape` (<https://timescape.free.componentdock.com>).
+> Do not scaffold `apps/chronoboard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-timescape/spec.md`.
 
 ## Purpose
 

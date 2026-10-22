@@ -1,4 +1,8 @@
 # Interloom (ColorLib Interior 2) — Tasks & Design Notes
+<!-- prep-status: shipped-as=plano -->
+> **SHIPPED-UNDER** — the ColorLib `interior-2` design this prep describes shipped
+> as `apps/plano` (<https://plano.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-interloom`.

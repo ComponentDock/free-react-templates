@@ -1,4 +1,8 @@
 # Coda (ColorLib Bootstrap Footer 04) — Tasks & Design Notes
+<!-- prep-status: shipped-as=groundwork -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-04` design this prep describes shipped
+> as `apps/groundwork` (<https://groundwork.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-coda`.

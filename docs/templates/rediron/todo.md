@@ -1,4 +1,8 @@
 # RedIron — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=trowel -->
+> **SHIPPED-UNDER** — the ColorLib `sintec` design this prep describes shipped
+> as `apps/trowel` (<https://trowel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Sintec → https://preview.colorlib.com/theme/sintec/
 **New name:** rediron

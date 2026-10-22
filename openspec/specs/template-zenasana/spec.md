@@ -1,4 +1,9 @@
 # Template: Zenasana (Yoga Studio)
+<!-- prep-status: shipped-as=soulflow -->
+> **SHIPPED-UNDER** — the ColorLib `yogalife` design this prep describes already
+> ships as `apps/soulflow` (<https://soulflow.free.componentdock.com>).
+> Do not scaffold `apps/zenasana`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-soulflow/spec.md`.
 
 ## Purpose
 

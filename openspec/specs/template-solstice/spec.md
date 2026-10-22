@@ -1,4 +1,9 @@
 # Template: Solstice (Calendar / Utility Widget — Single-Calendar Event Planner)
+<!-- prep-status: shipped-as=dayloom -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-04` design this prep describes already
+> ships as `apps/dayloom` (<https://dayloom.free.componentdock.com>).
+> Do not scaffold `apps/solstice`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dayloom/spec.md`.
 
 ## Purpose
 

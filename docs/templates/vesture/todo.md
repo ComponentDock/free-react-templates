@@ -1,4 +1,8 @@
 # Vesture — Implementation Notes
+<!-- prep-status: shipped-as=drape -->
+> **SHIPPED-UNDER** — the ColorLib `fashe` design this prep describes shipped
+> as `apps/drape` (<https://drape.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Fashe" — https://preview.colorlib.com/theme/fashe/
 

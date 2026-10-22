@@ -1,4 +1,9 @@
 # Template: Psalm (Church)
+<!-- prep-status: shipped-as=sanctus -->
+> **SHIPPED-UNDER** — the ColorLib `byfaith` design this prep describes already
+> ships as `apps/sanctus` (<https://sanctus.free.componentdock.com>).
+> Do not scaffold `apps/psalm`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sanctus/spec.md`.
 
 ## Purpose
 

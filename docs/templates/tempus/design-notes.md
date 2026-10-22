@@ -1,4 +1,8 @@
 # Tempus Design Notes
+<!-- prep-status: shipped-as=calday -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-03` design this prep describes shipped
+> as `apps/calday` (<https://calday.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Section Order & Fidelity
 

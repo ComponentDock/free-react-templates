@@ -1,4 +1,8 @@
 # Logpoint — Design Notes & Tasks
+<!-- prep-status: shipped-as=coralgate -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-17` design this prep describes shipped
+> as `apps/coralgate` (<https://coralgate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Login Form 17
 Preview: https://preview.colorlib.com/theme/login-form-17/

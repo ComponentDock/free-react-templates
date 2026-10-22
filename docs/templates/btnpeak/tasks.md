@@ -1,4 +1,8 @@
 # BtnPeak — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=btnfuse -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-19` design this prep describes shipped
+> as `apps/btnfuse` (<https://btnfuse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Reference
 

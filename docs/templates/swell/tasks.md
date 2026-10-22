@@ -1,4 +1,8 @@
 # Swell (ColorLib Bootstrap Buttons 04) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnpulse -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-04` design this prep describes shipped
+> as `apps/btnpulse` (<https://btnpulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Swell** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 04"). Implementation

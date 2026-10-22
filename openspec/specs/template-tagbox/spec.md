@@ -1,4 +1,9 @@
 # Template: Tagbox (Multi-Select Dropdown Component)
+<!-- prep-status: shipped-as=picktag -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-11` design this prep describes already
+> ships as `apps/picktag` (<https://picktag.free.componentdock.com>).
+> Do not scaffold `apps/tagbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-picktag/spec.md`.
 
 ## Purpose
 

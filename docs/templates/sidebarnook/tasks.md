@@ -1,4 +1,8 @@
 # SidebarNook — Task Outline
+<!-- prep-status: shipped-as=sidegate -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-sidebar-v08` design this prep describes shipped
+> as `apps/sidegate` (<https://sidegate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Prep Status: COMPLETE
 

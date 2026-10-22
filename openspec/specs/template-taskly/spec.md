@@ -1,4 +1,9 @@
 # Template: Taskly (Bootstrap Checkbox / Task Checklist)
+<!-- prep-status: shipped-as=tickpick -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-09` design this prep describes already
+> ships as `apps/tickpick` (<https://tickpick.free.componentdock.com>).
+> Do not scaffold `apps/taskly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tickpick/spec.md`.
 
 ## Purpose
 

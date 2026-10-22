@@ -1,4 +1,9 @@
 # Template: Serai (Hotel)
+<!-- prep-status: shipped-as=lexicon -->
+> **SHIPPED-UNDER** — the ColorLib `rolax` design this prep describes already
+> ships as `apps/lexicon` (<https://lexicon.free.componentdock.com>).
+> Do not scaffold `apps/serai`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lexicon/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Assist (Help & Feedback Menu)
+<!-- prep-status: shipped-as=droplist -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-20` design this prep describes already
+> ships as `apps/droplist` (<https://droplist.free.componentdock.com>).
+> Do not scaffold `apps/assist`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-droplist/spec.md`.
 
 ## Purpose
 

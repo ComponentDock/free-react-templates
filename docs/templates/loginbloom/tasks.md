@@ -1,4 +1,8 @@
 # Loginbloom — Design Notes & Task Outline
+<!-- prep-status: shipped-as=loginauth -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v15` design this prep describes shipped
+> as `apps/loginauth` (<https://loginauth.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

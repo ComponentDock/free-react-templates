@@ -1,4 +1,9 @@
 # Template: Harmonia (Music Streaming App Landing / SaaS)
+<!-- prep-status: shipped-as=sonority -->
+> **SHIPPED-UNDER** — the ColorLib `musiclab` design this prep describes already
+> ships as `apps/sonority` (<https://sonority.free.componentdock.com>).
+> Do not scaffold `apps/harmonia`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sonority/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Mentorly — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=northstar -->
+> **SHIPPED-UNDER** — the ColorLib `coach` design this prep describes shipped
+> as `apps/northstar` (<https://northstar.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib slug:** coach

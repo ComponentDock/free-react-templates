@@ -1,4 +1,8 @@
 # Stet (ColorLib Wordsmith) — Tasks & Design Notes
+<!-- prep-status: shipped-as=parchment -->
+> **SHIPPED-UNDER** — the ColorLib `wordsmith` design this prep describes shipped
+> as `apps/parchment` (<https://parchment.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Wordsmith"
 > (https://colorlib.com/wp/template/wordsmith/) under the NEW name **Stet**

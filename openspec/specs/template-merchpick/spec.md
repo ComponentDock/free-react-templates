@@ -1,4 +1,9 @@
 # Template: Merchpick (E-commerce Product Display)
+<!-- prep-status: shipped-as=merch -->
+> **SHIPPED-UNDER** — the ColorLib `product` design this prep describes already
+> ships as `apps/merch` (<https://merch.free.componentdock.com>).
+> Do not scaffold `apps/merchpick`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-merch/spec.md`.
 
 ## Purpose
 

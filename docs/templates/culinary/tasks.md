@@ -1,4 +1,8 @@
 # Culinary Template Tasks & Outline
+<!-- prep-status: shipped-as=tremolo -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-02` design this prep describes shipped
+> as `apps/tremolo` (<https://tremolo.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Section Breakdown (1:1 Fidelity with ColorLib accordion-02)
 

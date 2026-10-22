@@ -1,4 +1,8 @@
 # InnerGlow — Implementation Notes
+<!-- prep-status: shipped-as=aurae -->
+> **SHIPPED-UNDER** — the ColorLib `ahana` design this prep describes shipped
+> as `apps/aurae` (<https://aurae.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Ahana (https://colorlib.com/wp/template/ahana/)
 **Preview:** https://preview.colorlib.com/theme/ahana/

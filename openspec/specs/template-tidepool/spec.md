@@ -1,4 +1,9 @@
 # Template: Tidepool (UI Kit / Component Showcase)
+<!-- prep-status: shipped-as=kaleido -->
+> **SHIPPED-UNDER** — the ColorLib `jellyfish-ui-kit` design this prep describes already
+> ships as `apps/kaleido` (<https://kaleido.free.componentdock.com>).
+> Do not scaffold `apps/tidepool`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kaleido/spec.md`.
 
 ## Purpose
 

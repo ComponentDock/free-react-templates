@@ -1,4 +1,9 @@
 # Template: Papernote (News / Magazine)
+<!-- prep-status: shipped-as=broadsheet -->
+> **SHIPPED-UNDER** — the ColorLib `newspaper` design this prep describes already
+> ships as `apps/broadsheet` (<https://broadsheet.free.componentdock.com>).
+> Do not scaffold `apps/papernote`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-broadsheet/spec.md`.
 
 ## Purpose
 

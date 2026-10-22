@@ -1,4 +1,8 @@
 # ProfileCraft — Implementation Tasks
+<!-- prep-status: shipped-as=brushmark -->
+> **SHIPPED-UNDER** — the ColorLib `breed2` design this prep describes shipped
+> as `apps/brushmark` (<https://brushmark.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: Colorlib Breed2 (personal portfolio/profile)
 New name: `profilecraft`

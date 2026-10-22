@@ -1,4 +1,8 @@
 # Juresc — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=docket -->
+> **SHIPPED-UNDER** — the ColorLib `lawfirm` design this prep describes shipped
+> as `apps/docket` (<https://docket.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib slug: `lawfirm`

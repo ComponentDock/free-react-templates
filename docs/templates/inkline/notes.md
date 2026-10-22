@@ -1,4 +1,8 @@
 # Inkline — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=azureline -->
+> **SHIPPED-UNDER** — the ColorLib `blueline` design this prep describes shipped
+> as `apps/azureline` (<https://azureline.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Blueline (https://preview.colorlib.com/theme/blueline/)
 **New name:** inkline

@@ -1,4 +1,8 @@
 # SeekQuest — Implementation Tasks
+<!-- prep-status: shipped-as=propsearch -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-07` design this prep describes shipped
+> as `apps/propsearch` (<https://propsearch.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Pre-implementation
 - [x] Spec written (openspec/specs/template-seekquest/spec.md)

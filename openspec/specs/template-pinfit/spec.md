@@ -1,4 +1,9 @@
 # Template: Pinfit (Men's Tailoring)
+<!-- prep-status: shipped-as=sartorial -->
+> **SHIPPED-UNDER** — the ColorLib `menztailor` design this prep describes already
+> ships as `apps/sartorial` (<https://sartorial.free.componentdock.com>).
+> Do not scaffold `apps/pinfit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sartorial/spec.md`.
 
 ## Purpose
 

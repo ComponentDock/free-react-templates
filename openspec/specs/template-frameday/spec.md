@@ -1,4 +1,9 @@
 # Template: FrameDay (Photography Portfolio)
+<!-- prep-status: shipped-as=photomuse -->
+> **SHIPPED-UNDER** — the ColorLib `louie` design this prep describes already
+> ships as `apps/photomuse` (<https://photomuse.free.componentdock.com>).
+> Do not scaffold `apps/frameday`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-photomuse/spec.md`.
 
 ## Purpose
 

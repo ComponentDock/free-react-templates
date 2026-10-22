@@ -1,4 +1,9 @@
 # Template: Stepwise (Multi-step Sign-Up Form)
+<!-- prep-status: shipped-as=reserva -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-19` design this prep describes already
+> ships as `apps/reserva` (<https://reserva.free.componentdock.com>).
+> Do not scaffold `apps/stepwise`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reserva/spec.md`.
 
 ## Purpose
 

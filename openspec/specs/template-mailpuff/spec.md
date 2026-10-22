@@ -1,4 +1,9 @@
 # Template: Mailpuff (Confirmation Modal)
+<!-- prep-status: shipped-as=relay -->
+> **SHIPPED-UNDER** — the ColorLib `modal-08` design this prep describes already
+> ships as `apps/relay` (<https://relay.free.componentdock.com>).
+> Do not scaffold `apps/mailpuff`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-relay/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Molten (Construction / Industrial)
+<!-- prep-status: shipped-as=millstone -->
+> **SHIPPED-UNDER** — the ColorLib `inds` design this prep describes already
+> ships as `apps/millstone` (<https://millstone.free.componentdock.com>).
+> Do not scaffold `apps/molten`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-millstone/spec.md`.
 
 ## Purpose
 

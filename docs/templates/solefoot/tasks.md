@@ -1,4 +1,8 @@
 # Solefoot — Implementation Tasks
+<!-- prep-status: shipped-as=topaz -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-14` design this prep describes shipped
+> as `apps/topaz` (<https://topaz.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Setup
 - [ ] Create `apps/solefoot/` by copying simplest existing app

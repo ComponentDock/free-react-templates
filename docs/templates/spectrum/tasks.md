@@ -1,4 +1,8 @@
 # Spectrum (ColorLib Bootstrap Buttons 07) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnflare -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-07` design this prep describes shipped
+> as `apps/btnflare` (<https://btnflare.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Spectrum** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 07"). Implementation

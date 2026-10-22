@@ -1,4 +1,8 @@
 # Azureflow — Implementation Tasks
+<!-- prep-status: shipped-as=azureline -->
+> **SHIPPED-UNDER** — the ColorLib `blueline` design this prep describes shipped
+> as `apps/azureline` (<https://azureline.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib Blueline as a React fullscreen business landing page.
 

@@ -1,4 +1,8 @@
 # FooterNook — Design Notes
+<!-- prep-status: shipped-as=footerdash -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-18` design this prep describes shipped
+> as `apps/footerdash` (<https://footerdash.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

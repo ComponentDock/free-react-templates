@@ -1,4 +1,9 @@
 # Template: Identity (User Account Dropdown)
+<!-- prep-status: shipped-as=dropmenu -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-18` design this prep describes already
+> ships as `apps/dropmenu` (<https://dropmenu.free.componentdock.com>).
+> Do not scaffold `apps/identity`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropmenu/spec.md`.
 
 ## Purpose
 

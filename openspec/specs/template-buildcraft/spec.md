@@ -1,4 +1,9 @@
 # Template: BuildCraft (Construction)
+<!-- prep-status: shipped-as=buildwell -->
+> **SHIPPED-UNDER** — the ColorLib `celt` design this prep describes already
+> ships as `apps/buildwell` (<https://buildwell.free.componentdock.com>).
+> Do not scaffold `apps/buildcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-buildwell/spec.md`.
 
 ## Purpose
 

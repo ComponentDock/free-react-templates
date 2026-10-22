@@ -1,4 +1,8 @@
 # Sapphire (ColorLib The Grand Azure) — Tasks & Design Notes
+<!-- prep-status: shipped-as=azurepeak -->
+> **SHIPPED-UNDER** — the ColorLib `the-grand-azure` design this prep describes shipped
+> as `apps/azurepeak` (<https://azurepeak.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "The Grand Azure"
 > (https://colorlib.com/wp/template/the-grand-azure/) under the NEW name

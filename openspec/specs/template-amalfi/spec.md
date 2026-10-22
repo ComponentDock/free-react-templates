@@ -1,4 +1,9 @@
 # Template: Amalfi (Full-Bleed Image Carousel with Captions + Circular Thumbnail Navigation)
+<!-- prep-status: shipped-as=carouseten -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-10` design this prep describes already
+> ships as `apps/carouseten` (<https://carouseten.free.componentdock.com>).
+> Do not scaffold `apps/amalfi`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carouseten/spec.md`.
 
 ## Purpose
 

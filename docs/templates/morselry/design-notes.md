@@ -1,4 +1,8 @@
 # Morselry — Design Notes
+<!-- prep-status: shipped-as=corkage -->
+> **SHIPPED-UNDER** — the ColorLib `resta` design this prep describes shipped
+> as `apps/corkage` (<https://corkage.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 

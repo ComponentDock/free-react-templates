@@ -1,4 +1,8 @@
 # Oregano (ColorLib Accordion 12) — Tasks & Design Notes
+<!-- prep-status: shipped-as=creel -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-12` design this prep describes shipped
+> as `apps/creel` (<https://creel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts (spec + research) prepared on `main` by the prep stream.
 > Implementation ships later on `feat/template-oregano` by an implementer

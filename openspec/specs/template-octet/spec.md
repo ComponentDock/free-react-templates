@@ -1,4 +1,9 @@
 # Template: Octet (Bootstrap Checkbox Material Switch Demo)
+<!-- prep-status: shipped-as=knob -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-18` design this prep describes already
+> ships as `apps/knob` (<https://knob.free.componentdock.com>).
+> Do not scaffold `apps/octet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-knob/spec.md`.
 
 ## Purpose
 

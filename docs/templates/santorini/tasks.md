@@ -1,4 +1,8 @@
 # Santorini (ColorLib Carousel 11) — Tasks & Design Notes
+<!-- prep-status: shipped-as=reel -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-11` design this prep describes shipped
+> as `apps/reel` (<https://reel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-santorini`.

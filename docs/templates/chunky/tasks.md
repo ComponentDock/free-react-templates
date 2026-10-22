@@ -1,4 +1,8 @@
 # Chunky (ColorLib Bootstrap Buttons 15) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnriff -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-15` design this prep describes shipped
+> as `apps/btnriff` (<https://btnriff.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Chunky** (NEW name
 > — the ColorLib source keeps its name "Bootstrap Buttons 15").

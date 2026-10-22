@@ -1,4 +1,9 @@
 # Template: CoralBay (Hotel / Resort)
+<!-- prep-status: shipped-as=seaview -->
+> **SHIPPED-UNDER** — the ColorLib `marimar` design this prep describes already
+> ships as `apps/seaview` (<https://seaview.free.componentdock.com>).
+> Do not scaffold `apps/coralbay`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seaview/spec.md`.
 
 ## Purpose
 

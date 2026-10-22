@@ -1,4 +1,8 @@
 # Showpiece — Implementation Notes
+<!-- prep-status: shipped-as=framecast -->
+> **SHIPPED-UNDER** — the ColorLib `portfolio-2` design this prep describes shipped
+> as `apps/framecast` (<https://framecast.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Portfolio 2 (slug: portfolio-2)
 Preview: https://preview.colorlib.com/theme/portfolio2/

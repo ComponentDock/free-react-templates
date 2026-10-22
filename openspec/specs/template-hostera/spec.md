@@ -1,4 +1,9 @@
 # Template: Hostera (Hosting / Domain Search)
+<!-- prep-status: shipped-as=hostpeak -->
+> **SHIPPED-UNDER** — the ColorLib `lorahost` design this prep describes already
+> ships as `apps/hostpeak` (<https://hostpeak.free.componentdock.com>).
+> Do not scaffold `apps/hostera`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hostpeak/spec.md`.
 
 ## Purpose
 

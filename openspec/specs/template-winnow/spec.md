@@ -1,4 +1,9 @@
 # Template: Winnow (Multiselect Dropdown)
+<!-- prep-status: shipped-as=combobox -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-03` design this prep describes already
+> ships as `apps/combobox` (<https://combobox.free.componentdock.com>).
+> Do not scaffold `apps/winnow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-combobox/spec.md`.
 
 ## Purpose
 

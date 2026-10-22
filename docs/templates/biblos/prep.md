@@ -1,4 +1,8 @@
 # Biblos — Template Prep Notes
+<!-- prep-status: shipped-as=bookcraft -->
+> **SHIPPED-UNDER** — the ColorLib `booke` design this prep describes shipped
+> as `apps/bookcraft` (<https://bookcraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "Booke" → https://colorlib.com/wp/template/booke/
 **Preview analyzed:** https://preview.colorlib.com/theme/booke/ (live DOM + css/style.css, 2026-09-23)

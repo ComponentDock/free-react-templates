@@ -1,4 +1,8 @@
 # Drywall — Design Notes & Tasks
+<!-- prep-status: shipped-as=nectar -->
+> **SHIPPED-UNDER** — the ColorLib `bee` design this prep describes shipped
+> as `apps/nectar` (<https://nectar.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib:** Bee (https://colorlib.com/wp/template/bee/)

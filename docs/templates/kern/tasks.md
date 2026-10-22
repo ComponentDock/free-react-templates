@@ -1,4 +1,8 @@
 # Kern (ColorLib Bootstrap Buttons 06) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnvibe -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-06` design this prep describes shipped
+> as `apps/btnvibe` (<https://btnvibe.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Kern** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 06"). Implementation

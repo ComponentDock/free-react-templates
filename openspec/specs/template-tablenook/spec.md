@@ -1,4 +1,9 @@
 # Template: TableNook (Split-Screen Restaurant Booking Wizard)
+<!-- prep-status: shipped-as=platter -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-7` design this prep describes already
+> ships as `apps/platter` (<https://platter.free.componentdock.com>).
+> Do not scaffold `apps/tablenook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-platter/spec.md`.
 
 ## Purpose
 

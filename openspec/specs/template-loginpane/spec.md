@@ -1,4 +1,9 @@
 # Template: Loginpane (Login Form V17)
+<!-- prep-status: shipped-as=loginbolt -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v17` design this prep describes already
+> ships as `apps/loginbolt` (<https://loginbolt.free.componentdock.com>).
+> Do not scaffold `apps/loginpane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginbolt/spec.md`.
 
 ## Purpose
 

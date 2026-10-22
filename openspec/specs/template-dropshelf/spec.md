@@ -1,4 +1,9 @@
 # Template: DropShelf (Bootstrap Dropdowns)
+<!-- prep-status: shipped-as=dropslide -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-11` design this prep describes already
+> ships as `apps/dropslide` (<https://dropslide.free.componentdock.com>).
+> Do not scaffold `apps/dropshelf`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropslide/spec.md`.
 
 ## Purpose
 

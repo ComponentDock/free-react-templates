@@ -1,4 +1,8 @@
 # Pranava — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=zen -->
+> **SHIPPED-UNDER** — the ColorLib `namaste` design this prep describes shipped
+> as `apps/zen` (<https://zen.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib template: Namaste

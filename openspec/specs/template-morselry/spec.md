@@ -1,4 +1,9 @@
 # Template: Morselry (Restaurant)
+<!-- prep-status: shipped-as=corkage -->
+> **SHIPPED-UNDER** — the ColorLib `resta` design this prep describes already
+> ships as `apps/corkage` (<https://corkage.free.componentdock.com>).
+> Do not scaffold `apps/morselry`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-corkage/spec.md`.
 
 ## Purpose
 

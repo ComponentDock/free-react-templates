@@ -1,4 +1,9 @@
 # Template: Vestry (Information Modal)
+<!-- prep-status: shipped-as=popup -->
+> **SHIPPED-UNDER** — the ColorLib `modal-11` design this prep describes already
+> ships as `apps/popup` (<https://popup.free.componentdock.com>).
+> Do not scaffold `apps/vestry`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-popup/spec.md`.
 
 ## Purpose
 

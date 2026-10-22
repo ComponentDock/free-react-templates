@@ -1,4 +1,9 @@
 # Template: Serial (Magazine/Blog Template)
+<!-- prep-status: shipped-as=newsprint -->
+> **SHIPPED-UNDER** — the ColorLib `magdesign` design this prep describes already
+> ships as `apps/newsprint` (<https://newsprint.free.componentdock.com>).
+> Do not scaffold `apps/serial`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-newsprint/spec.md`.
 
 ## Purpose
 

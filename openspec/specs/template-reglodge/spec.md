@@ -1,4 +1,9 @@
 # Template: Reglodge (Registration Form)
+<!-- prep-status: shipped-as=regpass -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-19` design this prep describes already
+> ships as `apps/regpass` (<https://regpass.free.componentdock.com>).
+> Do not scaffold `apps/reglodge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regpass/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Daintyvue (SaaS / Landing Page)
+<!-- prep-status: shipped-as=filament -->
+> **SHIPPED-UNDER** — the ColorLib `simples` design this prep describes already
+> ships as `apps/filament` (<https://filament.free.componentdock.com>).
+> Do not scaffold `apps/daintyvue`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-filament/spec.md`.
 
 ## Purpose
 

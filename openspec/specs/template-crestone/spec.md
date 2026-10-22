@@ -1,4 +1,9 @@
 # Template: Crestone (Creative Agency Landing)
+<!-- prep-status: shipped-as=artwave -->
+> **SHIPPED-UNDER** — the ColorLib `bobsled` design this prep describes already
+> ships as `apps/artwave` (<https://artwave.free.componentdock.com>).
+> Do not scaffold `apps/crestone`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-artwave/spec.md`.
 
 ## Purpose
 

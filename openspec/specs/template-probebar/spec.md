@@ -1,4 +1,9 @@
 # ProbeBar — Search Form Bar Template
+<!-- prep-status: shipped-as=searchgate -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-06` design this prep describes already
+> ships as `apps/searchgate` (<https://searchgate.free.componentdock.com>).
+> Do not scaffold `apps/probebar`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-searchgate/spec.md`.
 
 Recreation of ColorLib **Search Form/Bar 06**
 (https://colorlib.com/wp/template/search-form-bar-06/)

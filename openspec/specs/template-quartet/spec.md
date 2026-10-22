@@ -1,4 +1,9 @@
 # Template: Quartet (Bootstrap Checkbox States Demo)
+<!-- prep-status: shipped-as=ballot -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-14` design this prep describes already
+> ships as `apps/ballot` (<https://ballot.free.componentdock.com>).
+> Do not scaffold `apps/quartet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ballot/spec.md`.
 
 ## Purpose
 

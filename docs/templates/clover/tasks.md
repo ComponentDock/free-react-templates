@@ -1,4 +1,8 @@
 # Clover (ColorLib Accordion 06) — Tasks & Design Notes
+<!-- prep-status: shipped-as=fanfold -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-06` design this prep describes shipped
+> as `apps/fanfold` (<https://fanfold.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Clover** (NEW name —
 > the ColorLib source keeps its name "Accordion 06"). Implementation ships on

@@ -1,4 +1,9 @@
 # Template: ImaStudio (Photography Portfolio)
+<!-- prep-status: shipped-as=clareo -->
+> **SHIPPED-UNDER** — the ColorLib `imahe` design this prep describes already
+> ships as `apps/clareo` (<https://clareo.free.componentdock.com>).
+> Do not scaffold `apps/imastudio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-clareo/spec.md`.
 
 ## Purpose
 

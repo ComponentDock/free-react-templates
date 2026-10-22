@@ -1,4 +1,8 @@
 # Pundit — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=civicpulse -->
+> **SHIPPED-UNDER** — the ColorLib `politics` design this prep describes shipped
+> as `apps/civicpulse` (<https://civicpulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Politics" → https://preview.colorlib.com/theme/politics/
 New name: `pundit`

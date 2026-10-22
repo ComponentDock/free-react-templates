@@ -1,4 +1,8 @@
 # Sifter — implementation tasks + design notes
+<!-- prep-status: shipped-as=topicpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-02` design this prep describes shipped
+> as `apps/topicpick` (<https://topicpick.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 02** (`multiselect-02`) as **Sifter**.
 Read `openspec/specs/template-sifter/spec.md` first — it holds every token,

@@ -1,4 +1,9 @@
 # Template: Biblos (Book / Author Landing Page)
+<!-- prep-status: shipped-as=bookcraft -->
+> **SHIPPED-UNDER** — the ColorLib `booke` design this prep describes already
+> ships as `apps/bookcraft` (<https://bookcraft.free.componentdock.com>).
+> Do not scaffold `apps/biblos`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bookcraft/spec.md`.
 
 ## Purpose
 

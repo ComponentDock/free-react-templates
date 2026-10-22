@@ -1,4 +1,8 @@
 # Forkfully — Implementation Tasks
+<!-- prep-status: shipped-as=bites -->
+> **SHIPPED-UNDER** — the ColorLib `foodbar` design this prep describes shipped
+> as `apps/bites` (<https://bites.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Project Setup
 - [ ] Copy simplest existing app as boilerplate

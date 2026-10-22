@@ -1,4 +1,9 @@
 # Template: Bitforge (Cryptocurrency / Fintech)
+<!-- prep-status: shipped-as=coinwave -->
+> **SHIPPED-UNDER** — the ColorLib `bitcoin` design this prep describes already
+> ships as `apps/coinwave` (<https://coinwave.free.componentdock.com>).
+> Do not scaffold `apps/bitforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coinwave/spec.md`.
 
 ## Purpose
 

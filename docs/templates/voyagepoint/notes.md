@@ -1,4 +1,8 @@
 # VoyagePoint — Implementation Notes
+<!-- prep-status: shipped-as=goquest -->
+> **SHIPPED-UNDER** — the ColorLib `gotrip` design this prep describes shipped
+> as `apps/goquest` (<https://goquest.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Gotrip (https://preview.colorlib.com/theme/gotrip/)
 

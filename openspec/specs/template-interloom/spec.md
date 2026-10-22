@@ -1,4 +1,9 @@
 # Template: Interloom (Interior Design Studio)
+<!-- prep-status: shipped-as=plano -->
+> **SHIPPED-UNDER** — the ColorLib `interior-2` design this prep describes already
+> ships as `apps/plano` (<https://plano.free.componentdock.com>).
+> Do not scaffold `apps/interloom`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-plano/spec.md`.
 
 ## Purpose
 

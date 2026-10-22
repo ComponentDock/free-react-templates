@@ -1,4 +1,8 @@
 # Turnstile (ColorLib Modal 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=modalvault -->
+> **SHIPPED-UNDER** — the ColorLib `modal-20` design this prep describes shipped
+> as `apps/modalvault` (<https://modalvault.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Turnstile** (NEW
 > name — the ColorLib source keeps its name "Modal 20"). Implementation

@@ -1,4 +1,8 @@
 # Strainer — Design Notes & Task Outline
+<!-- prep-status: shipped-as=optwell -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-12` design this prep describes shipped
+> as `apps/optwell` (<https://optwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Multiselect 12 ("Multiselect V12")

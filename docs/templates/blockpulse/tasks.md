@@ -1,4 +1,8 @@
 # Blockpulse — Implementation Tasks
+<!-- prep-status: shipped-as=coinforge -->
+> **SHIPPED-UNDER** — the ColorLib `cryptian` design this prep describes shipped
+> as `apps/coinforge` (<https://coinforge.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Cryptian" (https://colorlib.com/wp/template/cryptian/)
 Preview: https://preview.colorlib.com/theme/cryptian/

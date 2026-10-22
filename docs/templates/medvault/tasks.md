@@ -1,4 +1,8 @@
 # MedVault — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=elixir -->
+> **SHIPPED-UNDER** — the ColorLib `pharma` design this prep describes shipped
+> as `apps/elixir` (<https://elixir.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Template Identity
 

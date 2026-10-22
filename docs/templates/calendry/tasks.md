@@ -1,4 +1,8 @@
 # Calendry — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=chronogrid -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-02` design this prep describes shipped
+> as `apps/chronogrid` (<https://chronogrid.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Overview
 

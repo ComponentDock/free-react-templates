@@ -1,4 +1,8 @@
 # ClickShot — Implementation Notes
+<!-- prep-status: shipped-as=shotglow -->
+> **SHIPPED-UNDER** — the ColorLib `shotgear` design this prep describes shipped
+> as `apps/shotglow` (<https://shotglow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib:** Shotgear (`shotgear`)

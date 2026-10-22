@@ -1,4 +1,9 @@
 # Template: GymCraft (Fitness & CrossFit Landing)
+<!-- prep-status: shipped-as=sprintly -->
+> **SHIPPED-UNDER** — the ColorLib `activitar` design this prep describes already
+> ships as `apps/sprintly` (<https://sprintly.free.componentdock.com>).
+> Do not scaffold `apps/gymcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sprintly/spec.md`.
 
 ## Purpose
 

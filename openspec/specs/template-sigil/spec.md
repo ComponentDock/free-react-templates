@@ -1,4 +1,9 @@
 # Template: Sigil (Registration Form Wizard)
+<!-- prep-status: shipped-as=paygate -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-25` design this prep describes already
+> ships as `apps/paygate` (<https://paygate.free.componentdock.com>).
+> Do not scaffold `apps/sigil`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-paygate/spec.md`.
 
 ## Purpose
 

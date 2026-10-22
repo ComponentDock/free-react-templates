@@ -1,4 +1,8 @@
 # Vendora (ColorLib Shopper) — Tasks & Design Notes
+<!-- prep-status: shipped-as=moda -->
+> **SHIPPED-UNDER** — the ColorLib `shopper` design this prep describes shipped
+> as `apps/moda` (<https://moda.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Shopper"
 > (https://colorlib.com/wp/template/shopper/) under the NEW name

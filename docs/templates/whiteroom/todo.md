@@ -1,4 +1,8 @@
 # WhiteRoom — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=cleanslate -->
+> **SHIPPED-UNDER** — the ColorLib `cleaning-company` design this prep describes shipped
+> as `apps/cleanslate` (<https://cleanslate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source**: ColorLib Cleaning Company (`cleaning-company`)
 **Preview**: https://preview.colorlib.com/#cleaning-company

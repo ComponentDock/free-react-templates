@@ -1,4 +1,8 @@
 # Mill — Design Notes
+<!-- prep-status: shipped-as=cogwork -->
+> **SHIPPED-UNDER** — the ColorLib `industries` design this prep describes shipped
+> as `apps/cogwork` (<https://cogwork.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 

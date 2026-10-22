@@ -1,4 +1,8 @@
 # Melody (ColorLib Music) — Tasks & Design Notes
+<!-- prep-status: shipped-as=ampstat -->
+> **SHIPPED-UNDER** — the ColorLib `music` design this prep describes shipped
+> as `apps/ampstat` (<https://ampstat.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-melody`. Recreation name: **Melody** (NEW name —

@@ -1,4 +1,8 @@
 # ForgeBase — Design Notes & Task Outline
+<!-- prep-status: shipped-as=fabricate -->
+> **SHIPPED-UNDER** — the ColorLib `industry` design this prep describes shipped
+> as `apps/fabricate` (<https://fabricate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 - **ColorLib source:** Industry (slug: `industry`)

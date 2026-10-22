@@ -1,4 +1,8 @@
 # Daintyvue — Design Notes & Tasks
+<!-- prep-status: shipped-as=filament -->
+> **SHIPPED-UNDER** — the ColorLib `simples` design this prep describes shipped
+> as `apps/filament` (<https://filament.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib slug: `simples`

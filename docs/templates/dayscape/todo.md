@@ -1,4 +1,8 @@
 # Dayscape — Implementation Todo
+<!-- prep-status: shipped-as=timely -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-09` design this prep describes shipped
+> as `apps/timely` (<https://timely.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup & Types
 

@@ -1,4 +1,8 @@
 # Wideshot — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=lumina -->
+> **SHIPPED-UNDER** — the ColorLib `ilene-berg` design this prep describes shipped
+> as `apps/lumina` (<https://lumina.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Ilene Berg

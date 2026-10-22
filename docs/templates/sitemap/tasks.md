@@ -1,4 +1,8 @@
 # Sitemap (ColorLib Dropdown 16) — Tasks & Design Notes
+<!-- prep-status: shipped-as=droptile -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-16` design this prep describes shipped
+> as `apps/droptile` (<https://droptile.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-sitemap`.

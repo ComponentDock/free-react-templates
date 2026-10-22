@@ -1,4 +1,8 @@
 # Propylaeum (ColorLib Modal 18) — Tasks & Design Notes
+<!-- prep-status: shipped-as=modal-pulse -->
+> **SHIPPED-UNDER** — the ColorLib `modal-18` design this prep describes shipped
+> as `apps/modal-pulse` (<https://modal-pulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Propylaeum** (NEW
 > name — the ColorLib source keeps its name "Modal 18"). Implementation

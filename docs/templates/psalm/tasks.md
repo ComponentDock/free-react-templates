@@ -1,4 +1,8 @@
 # Psalm (ColorLib Byfaith) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sanctus -->
+> **SHIPPED-UNDER** — the ColorLib `byfaith` design this prep describes shipped
+> as `apps/sanctus` (<https://sanctus.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-psalm`.

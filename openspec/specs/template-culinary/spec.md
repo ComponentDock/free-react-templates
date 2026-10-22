@@ -1,4 +1,9 @@
 # Spec: Culinary
+<!-- prep-status: shipped-as=tremolo -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-02` design this prep describes already
+> ships as `apps/tremolo` (<https://tremolo.free.componentdock.com>).
+> Do not scaffold `apps/culinary`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tremolo/spec.md`.
 
 ## Purpose
 

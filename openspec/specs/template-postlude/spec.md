@@ -1,4 +1,9 @@
 # Template: Postlude (Footer)
+<!-- prep-status: shipped-as=footerbreeze -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-07` design this prep describes already
+> ships as `apps/footerbreeze` (<https://footerbreeze.free.componentdock.com>).
+> Do not scaffold `apps/postlude`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footerbreeze/spec.md`.
 
 ## Purpose
 

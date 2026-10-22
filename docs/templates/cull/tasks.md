@@ -1,4 +1,8 @@
 # Cull — implementation tasks + design notes
+<!-- prep-status: shipped-as=filterpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-04` design this prep describes shipped
+> as `apps/filterpick` (<https://filterpick.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 04** (`multiselect-04`) as **Cull**.
 Read `openspec/specs/template-cull/spec.md` first — it holds every token,

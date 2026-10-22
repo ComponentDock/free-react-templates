@@ -1,4 +1,8 @@
 # Snaply (ColorLib Photosen) — Tasks & Design Notes
+<!-- prep-status: shipped-as=filmstock -->
+> **SHIPPED-UNDER** — the ColorLib `photosen` design this prep describes shipped
+> as `apps/filmstock` (<https://filmstock.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Photosen" — free Bootstrap 5 photography-portfolio
 > template (https://colorlib.com/wp/template/photosen/) under the NEW name

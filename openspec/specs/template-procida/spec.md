@@ -1,4 +1,9 @@
 # Template: Procida (Team / Testimonial Carousel — Bootstrap Carousels #16)
+<!-- prep-status: shipped-as=carousel-vane -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-16` design this prep describes already
+> ships as `apps/carousel-vane` (<https://carousel-vane.free.componentdock.com>).
+> Do not scaffold `apps/procida`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carousel-vane/spec.md`.
 
 ## Purpose
 

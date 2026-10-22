@@ -1,4 +1,8 @@
 # Civicharter — Implementation Notes
+<!-- prep-status: shipped-as=civicpulse -->
+> **SHIPPED-UNDER** — the ColorLib `politics` design this prep describes shipped
+> as `apps/civicpulse` (<https://civicpulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source Mapping
 - **ColorLib source:** Politics (https://colorlib.com/wp/template/politics/)

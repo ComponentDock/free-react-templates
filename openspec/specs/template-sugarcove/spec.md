@@ -1,4 +1,9 @@
 # Template: Sugarcove (Cake Shop Business Website)
+<!-- prep-status: shipped-as=crumbs -->
+> **SHIPPED-UNDER** — the ColorLib `cakes` design this prep describes already
+> ships as `apps/crumbs` (<https://crumbs.free.componentdock.com>).
+> Do not scaffold `apps/sugarcove`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crumbs/spec.md`.
 
 ## Purpose
 

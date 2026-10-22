@@ -1,4 +1,8 @@
 # Ingress (ColorLib Modal 10) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bellpush -->
+> **SHIPPED-UNDER** — the ColorLib `modal-10` design this prep describes shipped
+> as `apps/bellpush` (<https://bellpush.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Ingress** (NEW name —
 > the ColorLib source keeps its name "Modal 10"). Implementation ships on

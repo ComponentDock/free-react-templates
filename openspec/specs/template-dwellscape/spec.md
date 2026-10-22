@@ -1,4 +1,9 @@
 # Template: Dwellscape (Real Estate)
+<!-- prep-status: shipped-as=dwellix -->
+> **SHIPPED-UNDER** — the ColorLib `rehomes` design this prep describes already
+> ships as `apps/dwellix` (<https://dwellix.free.componentdock.com>).
+> Do not scaffold `apps/dwellscape`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dwellix/spec.md`.
 
 ## Purpose
 

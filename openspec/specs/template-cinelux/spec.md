@@ -1,4 +1,9 @@
 # Template: Cinelux (Portfolio)
+<!-- prep-status: shipped-as=reelcraft -->
+> **SHIPPED-UNDER** — the ColorLib `videograph` design this prep describes already
+> ships as `apps/reelcraft` (<https://reelcraft.free.componentdock.com>).
+> Do not scaffold `apps/cinelux`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reelcraft/spec.md`.
 
 ## Purpose
 

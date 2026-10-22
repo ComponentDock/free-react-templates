@@ -1,4 +1,9 @@
 # Template: Drywall (Construction)
+<!-- prep-status: shipped-as=nectar -->
+> **SHIPPED-UNDER** — the ColorLib `bee` design this prep describes already
+> ships as `apps/nectar` (<https://nectar.free.componentdock.com>).
+> Do not scaffold `apps/drywall`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nectar/spec.md`.
 
 ## Purpose
 

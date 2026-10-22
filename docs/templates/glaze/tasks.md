@@ -1,4 +1,8 @@
 # Glaze (ColorLib Bootstrap Buttons 19) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnfuse -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-19` design this prep describes shipped
+> as `apps/btnfuse` (<https://btnfuse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Glaze** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 19"). Implementation

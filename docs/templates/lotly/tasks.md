@@ -1,4 +1,8 @@
 # Lotly (ColorLib Props) — Tasks & Design Notes
+<!-- prep-status: shipped-as=quarters -->
+> **SHIPPED-UNDER** — the ColorLib `props` design this prep describes shipped
+> as `apps/quarters` (<https://quarters.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Props" — free Bootstrap 5 real estate website
 > template (https://colorlib.com/wp/template/props/) under the NEW name

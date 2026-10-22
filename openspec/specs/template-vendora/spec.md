@@ -1,4 +1,9 @@
 # Template: Vendora (Fashion E-commerce Template)
+<!-- prep-status: shipped-as=moda -->
+> **SHIPPED-UNDER** — the ColorLib `shopper` design this prep describes already
+> ships as `apps/moda` (<https://moda.free.componentdock.com>).
+> Do not scaffold `apps/vendora`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-moda/spec.md`.
 
 ## Purpose
 

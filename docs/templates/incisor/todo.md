@@ -1,4 +1,8 @@
 # Incisor — Implementation Todo
+<!-- prep-status: shipped-as=dentalyn -->
+> **SHIPPED-UNDER** — the ColorLib `dento` design this prep describes shipped
+> as `apps/dentalyn` (<https://dentalyn.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Dento" → https://preview.colorlib.com/theme/dento/
 

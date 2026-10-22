@@ -1,4 +1,8 @@
 # Slideway (Carousel 07 Recreation) — Implementation Plan & Design Notes
+<!-- prep-status: shipped-as=merry -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-07` design this prep describes shipped
+> as `apps/merry` (<https://merry.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Overview
 

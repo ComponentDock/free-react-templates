@@ -1,4 +1,8 @@
 # Fanner — implementation tasks + design notes
+<!-- prep-status: shipped-as=picklist -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-14` design this prep describes shipped
+> as `apps/picklist` (<https://picklist.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 14** (`multiselect-14`) as **Fanner**.
 Read `openspec/specs/template-fanner/spec.md` first — it holds every token,

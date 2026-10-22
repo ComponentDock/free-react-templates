@@ -1,4 +1,9 @@
 # Template: Pill (Button / UI Kit Showcase — Classic Buttons)
+<!-- prep-status: shipped-as=btnflow -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-17` design this prep describes already
+> ships as `apps/btnflow` (<https://btnflow.free.componentdock.com>).
+> Do not scaffold `apps/pill`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnflow/spec.md`.
 
 ## Purpose
 

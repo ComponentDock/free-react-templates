@@ -1,4 +1,8 @@
 # SnapFocus — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=bokeh -->
+> **SHIPPED-UNDER** — the ColorLib `pentax` design this prep describes shipped
+> as `apps/bokeh` (<https://bokeh.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Pentax" → https://preview.colorlib.com/theme/pentax/
 New name: SnapFocus (apps/snapfocus)

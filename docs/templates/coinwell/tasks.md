@@ -1,4 +1,8 @@
 # Coinwell — Implementation Tasks
+<!-- prep-status: shipped-as=ledgerly -->
+> **SHIPPED-UNDER** — the ColorLib `cryptos` design this prep describes shipped
+> as `apps/ledgerly` (<https://ledgerly.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Cryptos" (https://colorlib.com/wp/template/cryptos/)
 New name: coinwell

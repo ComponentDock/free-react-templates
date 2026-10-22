@@ -1,4 +1,8 @@
 # Litigate — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=counsel -->
+> **SHIPPED-UNDER** — the ColorLib `whisper` design this prep describes shipped
+> as `apps/counsel` (<https://counsel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib template: **Whisper**

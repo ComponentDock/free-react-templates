@@ -1,4 +1,9 @@
 # Template: Halide (Photography / Creative Landing Page)
+<!-- prep-status: shipped-as=pixora -->
+> **SHIPPED-UNDER** — the ColorLib `yaseen` design this prep describes already
+> ships as `apps/pixora` (<https://pixora.free.componentdock.com>).
+> Do not scaffold `apps/halide`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pixora/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: FormStep (ColorLib Wizard 1)
+<!-- prep-status: shipped-as=conjure -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-1` design this prep describes already
+> ships as `apps/conjure` (<https://conjure.free.componentdock.com>).
+> Do not scaffold `apps/formstep`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-conjure/spec.md`.
 
 ## Purpose
 

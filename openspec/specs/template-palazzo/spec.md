@@ -1,4 +1,9 @@
 # Template: Palazzo (Hotel & Resort)
+<!-- prep-status: shipped-as=retreat -->
+> **SHIPPED-UNDER** — the ColorLib `roberto` design this prep describes already
+> ships as `apps/retreat` (<https://retreat.free.componentdock.com>).
+> Do not scaffold `apps/palazzo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-retreat/spec.md`.
 
 ## Purpose
 

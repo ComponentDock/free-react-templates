@@ -1,4 +1,9 @@
 # Template: Toolcraft (Construction / Handyman)
+<!-- prep-status: shipped-as=fixero -->
+> **SHIPPED-UNDER** — the ColorLib `handyman` design this prep describes already
+> ships as `apps/fixero` (<https://fixero.free.componentdock.com>).
+> Do not scaffold `apps/toolcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fixero/spec.md`.
 
 ## Purpose
 

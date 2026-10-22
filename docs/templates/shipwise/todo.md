@@ -1,4 +1,8 @@
 # Shipwise — Implementation Tasks
+<!-- prep-status: shipped-as=packwell -->
+> **SHIPPED-UNDER** — the ColorLib `carries` design this prep describes shipped
+> as `apps/packwell` (<https://packwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Carries" → https://preview.colorlib.com/theme/carries/
 New name: shipwise

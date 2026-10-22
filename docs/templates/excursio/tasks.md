@@ -1,4 +1,8 @@
 # Excursio (ColorLib Tourbi) — Tasks & Design Notes
+<!-- prep-status: shipped-as=journee -->
+> **SHIPPED-UNDER** — the ColorLib `tourbi` design this prep describes shipped
+> as `apps/journee` (<https://journee.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Excursio** (NEW
 > name — the ColorLib source keeps its name "Tourbi"). Implementation ships

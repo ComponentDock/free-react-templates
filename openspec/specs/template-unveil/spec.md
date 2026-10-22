@@ -1,4 +1,9 @@
 # Template: Unveil (Business & Productivity Agency)
+<!-- prep-status: shipped-as=pulsewave -->
+> **SHIPPED-UNDER** — the ColorLib `unbrew` design this prep describes already
+> ships as `apps/pulsewave` (<https://pulsewave.free.componentdock.com>).
+> Do not scaffold `apps/unveil`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pulsewave/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Septet (Bootstrap Checkbox Overflow Demo)
+<!-- prep-status: shipped-as=vex -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-17` design this prep describes already
+> ships as `apps/vex` (<https://vex.free.componentdock.com>).
+> Do not scaffold `apps/septet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vex/spec.md`.
 
 ## Purpose
 

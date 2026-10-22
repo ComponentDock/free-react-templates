@@ -1,4 +1,9 @@
 # Template: Havenkey (Bootstrap / Real Estate — Agency)
+<!-- prep-status: shipped-as=havenridge -->
+> **SHIPPED-UNDER** — the ColorLib `oakberry` design this prep describes already
+> ships as `apps/havenridge` (<https://havenridge.free.componentdock.com>).
+> Do not scaffold `apps/havenkey`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-havenridge/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Footerleaf — Implementation Notes
+<!-- prep-status: shipped-as=footerbloom -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-15` design this prep describes shipped
+> as `apps/footerbloom` (<https://footerbloom.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Bootstrap Footer 15
 Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-15/

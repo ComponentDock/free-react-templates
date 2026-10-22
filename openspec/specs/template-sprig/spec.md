@@ -1,4 +1,9 @@
 # Template: Sprig (Bootstrap Accordion / FAQ Help Center)
+<!-- prep-status: shipped-as=stanza -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-09` design this prep describes already
+> ships as `apps/stanza` (<https://stanza.free.componentdock.com>).
+> Do not scaffold `apps/sprig`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stanza/spec.md`.
 
 ## Purpose
 

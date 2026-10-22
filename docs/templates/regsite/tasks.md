@@ -1,4 +1,8 @@
 # RegSite — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=regline -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-6` design this prep describes shipped
+> as `apps/regline` (<https://regline.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Regform 6 (colorlib-regform-6)
 New name: regsite

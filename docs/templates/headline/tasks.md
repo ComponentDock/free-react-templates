@@ -1,4 +1,8 @@
 # Headline (ColorLib World) — Tasks & Design Notes
+<!-- prep-status: shipped-as=atlas -->
+> **SHIPPED-UNDER** — the ColorLib `world` design this prep describes shipped
+> as `apps/atlas` (<https://atlas.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "World"
 > (https://colorlib.com/wp/template/world/) under the NEW name

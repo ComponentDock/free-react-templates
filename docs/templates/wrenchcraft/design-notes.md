@@ -1,4 +1,8 @@
 # WrenchCraft — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=fixcraft -->
+> **SHIPPED-UNDER** — the ColorLib `autorepair` design this prep describes shipped
+> as `apps/fixcraft` (<https://fixcraft.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Autorepair (https://colorlib.com/wp/template/autorepair/)
 Preview: https://preview.colorlib.com/theme/autorepair/

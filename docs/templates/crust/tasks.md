@@ -1,4 +1,8 @@
 # Crust — Implementation Tasks
+<!-- prep-status: shipped-as=loaf -->
+> **SHIPPED-UNDER** — the ColorLib `bakery` design this prep describes shipped
+> as `apps/loaf` (<https://loaf.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib Bakery
 (https://colorlib.com/wp/template/bakery/).

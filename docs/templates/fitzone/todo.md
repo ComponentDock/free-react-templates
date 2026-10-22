@@ -1,4 +1,8 @@
 # FitZone — Design Notes & Task Outline
+<!-- prep-status: shipped-as=gymcore -->
+> **SHIPPED-UNDER** — the ColorLib `gutim` design this prep describes shipped
+> as `apps/gymcore` (<https://gymcore.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Gutim (https://colorlib.com/wp/template/gutim/)
 **Preview:** https://preview.colorlib.com/theme/gutim/

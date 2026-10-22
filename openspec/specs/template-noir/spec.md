@@ -1,4 +1,9 @@
 # Template: Noir (Portfolio / Dark Minimal Agency)
+<!-- prep-status: shipped-as=oraxol -->
+> **SHIPPED-UNDER** — the ColorLib `oraxol` design this prep describes already
+> ships as `apps/oraxol` (<https://oraxol.free.componentdock.com>).
+> Do not scaffold `apps/noir`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-oraxol/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Tagbox — Implementation Tasks
+<!-- prep-status: shipped-as=picktag -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-11` design this prep describes shipped
+> as `apps/picktag` (<https://picktag.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Pre-Implementation
 - [x] Spec written (`openspec/specs/template-tagbox/spec.md`)

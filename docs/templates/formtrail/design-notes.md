@@ -1,4 +1,8 @@
 # FormTrail — Design Notes & Task Outline
+<!-- prep-status: shipped-as=formvane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-9` design this prep describes shipped
+> as `apps/formvane` (<https://formvane.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Wizard 9 (colorlib-wizard-9)
 Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-9/index.html

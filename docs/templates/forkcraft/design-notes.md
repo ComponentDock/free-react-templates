@@ -1,4 +1,8 @@
 # Forkcraft — Prep Notes
+<!-- prep-status: shipped-as=brasserie -->
+> **SHIPPED-UNDER** — the ColorLib `caviar` design this prep describes shipped
+> as `apps/brasserie` (<https://brasserie.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Caviar (https://colorlib.com/wp/template/caviar/)
 Preview: https://preview.colorlib.com/theme/caviar/

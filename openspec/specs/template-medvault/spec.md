@@ -1,4 +1,9 @@
 # Template: MedVault (Pharmacy / Health Store)
+<!-- prep-status: shipped-as=elixir -->
+> **SHIPPED-UNDER** — the ColorLib `pharma` design this prep describes already
+> ships as `apps/elixir` (<https://elixir.free.componentdock.com>).
+> Do not scaffold `apps/medvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-elixir/spec.md`.
 
 ## Purpose
 

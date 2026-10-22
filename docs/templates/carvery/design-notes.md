@@ -1,4 +1,8 @@
 # Carvery — Design Notes
+<!-- prep-status: shipped-as=smokehouse -->
+> **SHIPPED-UNDER** — the ColorLib `steak` design this prep describes shipped
+> as `apps/smokehouse` (<https://smokehouse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Steak → https://preview.colorlib.com/theme/steak/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/steak-free-template.jpg

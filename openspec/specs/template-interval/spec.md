@@ -1,4 +1,9 @@
 # Template: Interval (Date Range Picker Widget)
+<!-- prep-status: shipped-as=calstack -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-15` design this prep describes already
+> ships as `apps/calstack` (<https://calstack.free.componentdock.com>).
+> Do not scaffold `apps/interval`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calstack/spec.md`.
 
 ## Purpose
 

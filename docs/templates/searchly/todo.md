@@ -1,4 +1,8 @@
 # Searchly — Implementation TODO
+<!-- prep-status: shipped-as=scanbar -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-13` design this prep describes shipped
+> as `apps/scanbar` (<https://scanbar.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Pre-implementation
 - [ ] Verify spec validates: `npm run spec:validate`

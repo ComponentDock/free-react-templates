@@ -1,4 +1,8 @@
 # Span (ColorLib Calendar 13) — Tasks & Design Notes
+<!-- prep-status: shipped-as=schedura -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-13` design this prep describes shipped
+> as `apps/schedura` (<https://schedura.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-span`.

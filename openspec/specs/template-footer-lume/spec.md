@@ -1,4 +1,9 @@
 # Template: FooterLume (Footer)
+<!-- prep-status: shipped-as=footerlume -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-17` design this prep describes already
+> ships as `apps/footerlume` (<https://footerlume.free.componentdock.com>).
+> Do not scaffold `apps/footer-lume`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footerlume/spec.md`.
 
 ## Purpose
 

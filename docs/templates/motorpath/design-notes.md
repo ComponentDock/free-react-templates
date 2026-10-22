@@ -1,4 +1,8 @@
 # Motorpath — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=highway -->
+> **SHIPPED-UNDER** — the ColorLib `autoroad` design this prep describes shipped
+> as `apps/highway` (<https://highway.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "Autoroad" — https://preview.colorlib.com/theme/autoroad/
 **New name:** motorpath

@@ -1,4 +1,8 @@
 # Sickle — implementation tasks + design notes
+<!-- prep-status: shipped-as=statelist -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-10` design this prep describes shipped
+> as `apps/statelist` (<https://statelist.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreates ColorLib **Multiselect 10** (`multiselect-10`) as **Sickle**.
 Read `openspec/specs/template-sickle/spec.md` first — it holds every token,

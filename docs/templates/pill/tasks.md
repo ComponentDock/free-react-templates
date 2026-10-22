@@ -1,4 +1,8 @@
 # Pill (ColorLib Bootstrap Buttons 17) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnflow -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-17` design this prep describes shipped
+> as `apps/btnflow` (<https://btnflow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Pill** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 17"). Implementation

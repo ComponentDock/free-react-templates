@@ -1,4 +1,8 @@
 # Photopia — Design Notes & Task Outline
+<!-- prep-status: shipped-as=filmstock -->
+> **SHIPPED-UNDER** — the ColorLib `photosen` design this prep describes shipped
+> as `apps/filmstock` (<https://filmstock.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "Photosen" — https://preview.colorlib.com/theme/photosen/
 **New name:** photopia

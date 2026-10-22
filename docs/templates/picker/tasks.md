@@ -1,4 +1,8 @@
 # Picker (ColorLib Multiselect 01) — Tasks & Design Notes
+<!-- prep-status: shipped-as=optpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-01` design this prep describes shipped
+> as `apps/optpick` (<https://optpick.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Picker** (NEW name —
 > the ColorLib source keeps its name "Multiselect 01"). Implementation ships

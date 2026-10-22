@@ -1,4 +1,8 @@
 # Parvis (ColorLib Modal 17) — Tasks & Design Notes
+<!-- prep-status: shipped-as=modalshift -->
+> **SHIPPED-UNDER** — the ColorLib `modal-17` design this prep describes shipped
+> as `apps/modalshift` (<https://modalshift.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Parvis** (NEW name —
 > the ColorLib source keeps its name "Modal 17"). Implementation ships on

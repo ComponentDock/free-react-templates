@@ -1,4 +1,9 @@
 # Template: Coda (Footer)
+<!-- prep-status: shipped-as=groundwork -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-04` design this prep describes already
+> ships as `apps/groundwork` (<https://groundwork.free.componentdock.com>).
+> Do not scaffold `apps/coda`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-groundwork/spec.md`.
 
 ## Purpose
 

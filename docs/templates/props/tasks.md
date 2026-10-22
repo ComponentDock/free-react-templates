@@ -1,4 +1,8 @@
 # Tasks & Design Notes: Props (Real Estate Template)
+<!-- prep-status: shipped-as=quarters -->
+> **SHIPPED-UNDER** — the ColorLib `props` design this prep describes shipped
+> as `apps/quarters` (<https://quarters.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source mapping
 

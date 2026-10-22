@@ -1,4 +1,9 @@
 # Template: Ironcore (Gym / Fitness Landing Page)
+<!-- prep-status: shipped-as=kinesis -->
+> **SHIPPED-UNDER** — the ColorLib `dazko` design this prep describes already
+> ships as `apps/kinesis` (<https://kinesis.free.componentdock.com>).
+> Do not scaffold `apps/ironcore`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kinesis/spec.md`.
 
 ## Purpose
 

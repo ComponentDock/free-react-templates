@@ -1,4 +1,8 @@
 # EstateHaven — Implementation Todo
+<!-- prep-status: shipped-as=hamlin -->
+> **SHIPPED-UNDER** — the ColorLib `hamlet` design this prep describes shipped
+> as `apps/hamlin` (<https://hamlin.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Hamlet (https://colorlib.com/wp/template/hamlet/)
 **Preview:** https://preview.colorlib.com/theme/hamlet/

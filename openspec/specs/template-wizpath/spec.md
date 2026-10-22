@@ -1,4 +1,9 @@
 # Template: WizPath (Multi-Step Wizard Form)
+<!-- prep-status: shipped-as=wizlane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-8` design this prep describes already
+> ships as `apps/wizlane` (<https://wizlane.free.componentdock.com>).
+> Do not scaffold `apps/wizpath`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-wizlane/spec.md`.
 
 ## Purpose
 

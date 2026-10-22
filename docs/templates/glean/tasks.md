@@ -1,4 +1,8 @@
 # Glean (ColorLib Multiselect 05) — Tasks & Design Notes
+<!-- prep-status: shipped-as=oversample -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-05` design this prep describes shipped
+> as `apps/oversample` (<https://oversample.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Glean** (NEW name —
 > the ColorLib source keeps its name "Multiselect 05"). Implementation ships

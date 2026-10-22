@@ -1,4 +1,8 @@
 # Blossom (ColorLib Florist) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bloomfield -->
+> **SHIPPED-UNDER** — the ColorLib `florist` design this prep describes shipped
+> as `apps/bloomfield` (<https://bloomfield.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-blossom`.

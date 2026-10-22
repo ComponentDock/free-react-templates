@@ -1,4 +1,8 @@
 # Design Notes: Molaris (Toothcare recreation)
+<!-- prep-status: shipped-as=odonto -->
+> **SHIPPED-UNDER** — the ColorLib `toothcare` design this prep describes shipped
+> as `apps/odonto` (<https://odonto.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 - **Source**: ColorLib Toothcare (`https://colorlib.com/wp/template/toothcare/`)
 - **Aesthetic**: Clean, professional medical/dental clinic styling featuring calming teal `#00bcd4` primary accents, dark charcoal text, and crisp white cards.

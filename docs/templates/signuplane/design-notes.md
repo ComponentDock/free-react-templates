@@ -1,4 +1,8 @@
 # Signuplane — Design Notes & Task Outline
+<!-- prep-status: shipped-as=regflux -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-14` design this prep describes shipped
+> as `apps/regflux` (<https://regflux.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Regform 14
 Preview: https://preview.colorlib.com/theme/colorlib-regform-14/ (404 — falling back to screenshot)

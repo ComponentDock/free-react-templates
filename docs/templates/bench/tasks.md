@@ -1,4 +1,8 @@
 # Bench — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=jurist -->
+> **SHIPPED-UNDER** — the ColorLib `judicial` design this prep describes shipped
+> as `apps/jurist` (<https://jurist.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ColorLib source: "Judicial" → https://colorlib.com/wp/template/judicial/
 Preview: https://preview.colorlib.com/theme/judicial/

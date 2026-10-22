@@ -1,4 +1,9 @@
 # Template: Sextet (Bootstrap Checkbox States Demo)
+<!-- prep-status: shipped-as=checksnap -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-16` design this prep describes already
+> ships as `apps/checksnap` (<https://checksnap.free.componentdock.com>).
+> Do not scaffold `apps/sextet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-checksnap/spec.md`.
 
 ## Purpose
 

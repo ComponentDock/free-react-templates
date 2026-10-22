@@ -1,4 +1,8 @@
 # Finale (ColorLib Bootstrap Footer 06) — Tasks & Design Notes
+<!-- prep-status: shipped-as=subdivide -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-06` design this prep describes shipped
+> as `apps/subdivide` (<https://subdivide.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-finale`.

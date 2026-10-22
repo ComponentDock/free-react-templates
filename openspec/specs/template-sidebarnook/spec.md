@@ -1,4 +1,9 @@
 # Template: SidebarNook (Sidebar)
+<!-- prep-status: shipped-as=sidegate -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-sidebar-v08` design this prep describes already
+> ships as `apps/sidegate` (<https://sidegate.free.componentdock.com>).
+> Do not scaffold `apps/sidebarnook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sidegate/spec.md`.
 
 ## Purpose
 

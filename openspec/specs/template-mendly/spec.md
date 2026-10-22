@@ -1,4 +1,9 @@
 # Template: Mendly (Repair Service Landing)
+<!-- prep-status: shipped-as=renovo -->
+> **SHIPPED-UNDER** — the ColorLib `repair` design this prep describes already
+> ships as `apps/renovo` (<https://renovo.free.componentdock.com>).
+> Do not scaffold `apps/mendly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-renovo/spec.md`.
 
 ## Purpose
 

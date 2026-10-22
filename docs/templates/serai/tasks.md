@@ -1,4 +1,8 @@
 # Serai (ColorLib Rolax) — Tasks & Design Notes
+<!-- prep-status: shipped-as=lexicon -->
+> **SHIPPED-UNDER** — the ColorLib `rolax` design this prep describes shipped
+> as `apps/lexicon` (<https://lexicon.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Rolax" — free Bootstrap-based hotel website
 > template (https://colorlib.com/wp/template/rolax/) under the NEW name

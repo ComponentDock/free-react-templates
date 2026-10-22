@@ -1,4 +1,8 @@
 # Whitelink — Design Notes
+<!-- prep-status: shipped-as=cairn -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-05` design this prep describes shipped
+> as `apps/cairn` (<https://cairn.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Bootstrap Footer 05

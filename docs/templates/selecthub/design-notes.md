@@ -1,4 +1,8 @@
 # SelectHub — Implementation Notes
+<!-- prep-status: shipped-as=multibox -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-19` design this prep describes shipped
+> as `apps/multibox` (<https://multibox.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 

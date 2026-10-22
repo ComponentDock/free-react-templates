@@ -1,4 +1,9 @@
 # Template: Lido (Testimonials Carousel)
+<!-- prep-status: shipped-as=carosle -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-04` design this prep describes already
+> ships as `apps/carosle` (<https://carosle.free.componentdock.com>).
+> Do not scaffold `apps/lido`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carosle/spec.md`.
 
 ## Purpose
 

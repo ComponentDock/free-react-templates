@@ -1,4 +1,8 @@
 # SchoolYard — Implementation Todo
+<!-- prep-status: shipped-as=tadpole -->
+> **SHIPPED-UNDER** — the ColorLib `kindergarten` design this prep describes shipped
+> as `apps/tadpole` (<https://tadpole.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib Kindergarten (https://colorlib.com/wp/template/kindergarten/)
 

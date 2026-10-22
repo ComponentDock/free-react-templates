@@ -1,4 +1,9 @@
 # Template: Headline (Blog & Magazine Template)
+<!-- prep-status: shipped-as=atlas -->
+> **SHIPPED-UNDER** — the ColorLib `world` design this prep describes already
+> ships as `apps/atlas` (<https://atlas.free.componentdock.com>).
+> Do not scaffold `apps/headline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-atlas/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,8 @@
 # Footlight — Design Notes & Task Outline
+<!-- prep-status: shipped-as=soleplate -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-09` design this prep describes shipped
+> as `apps/soleplate` (<https://soleplate.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Bootstrap Footer 09

@@ -1,4 +1,8 @@
 # Molten — Implementation Notes
+<!-- prep-status: shipped-as=millstone -->
+> **SHIPPED-UNDER** — the ColorLib `inds` design this prep describes shipped
+> as `apps/millstone` (<https://millstone.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Inds (https://colorlib.com/wp/template/inds/)
 **Preview:** https://preview.colorlib.com/theme/inds/

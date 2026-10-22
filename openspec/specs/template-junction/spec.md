@@ -1,4 +1,9 @@
 # Template: Junction (Personal Resume / Portfolio)
+<!-- prep-status: shipped-as=jockford -->
+> **SHIPPED-UNDER** — the ColorLib `jackson` design this prep describes already
+> ships as `apps/jockford` (<https://jockford.free.componentdock.com>).
+> Do not scaffold `apps/junction`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jockford/spec.md`.
 
 ## Purpose
 

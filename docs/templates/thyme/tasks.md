@@ -1,4 +1,8 @@
 # Thyme (ColorLib Accordion 10) — Tasks & Design Notes
+<!-- prep-status: shipped-as=gather -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-10` design this prep describes shipped
+> as `apps/gather` (<https://gather.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts (spec + research) prepared on `main` by the prep stream.
 > Implementation ships later on `feat/template-thyme` by an implementer

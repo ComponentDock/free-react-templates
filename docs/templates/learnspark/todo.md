@@ -1,4 +1,8 @@
 # LearnSpark — Implementation Outline
+<!-- prep-status: shipped-as=laurel -->
+> **SHIPPED-UNDER** — the ColorLib `educrown` design this prep describes shipped
+> as `apps/laurel` (<https://laurel.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Educrown" — https://preview.colorlib.com/theme/educrown/
 New name: learnspark

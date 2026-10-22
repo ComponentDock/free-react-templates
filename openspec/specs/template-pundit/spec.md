@@ -1,4 +1,9 @@
 # Template: Pundit (Political Campaign)
+<!-- prep-status: shipped-as=civicpulse -->
+> **SHIPPED-UNDER** — the ColorLib `politics` design this prep describes already
+> ships as `apps/civicpulse` (<https://civicpulse.free.componentdock.com>).
+> Do not scaffold `apps/pundit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-civicpulse/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Melody (Fullscreen Music Website)
+<!-- prep-status: shipped-as=ampstat -->
+> **SHIPPED-UNDER** — the ColorLib `music` design this prep describes already
+> ships as `apps/ampstat` (<https://ampstat.free.componentdock.com>).
+> Do not scaffold `apps/melody`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ampstat/spec.md`.
 
 ## Purpose
 

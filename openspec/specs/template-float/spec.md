@@ -1,4 +1,9 @@
 # Template: Float (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnstack -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-03` design this prep describes already
+> ships as `apps/btnstack` (<https://btnstack.free.componentdock.com>).
+> Do not scaffold `apps/float`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnstack/spec.md`.
 
 ## Purpose
 

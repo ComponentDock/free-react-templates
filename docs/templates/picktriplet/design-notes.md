@@ -1,4 +1,8 @@
 # PickTriplet — Design Notes & Tasks
+<!-- prep-status: shipped-as=optflow -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-20` design this prep describes shipped
+> as `apps/optflow` (<https://optflow.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Multiselect V20" (slug: multiselect-20)
 Preview: https://preview.colorlib.com/theme/bootstrap/multiselect-20/
