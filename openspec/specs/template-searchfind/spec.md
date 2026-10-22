@@ -122,7 +122,7 @@ The search bar SHALL adapt to smaller viewports.
 
 #### Scenario: Mobile viewport
 
-- **WHEN** the viewport width is ≤ 600px
+- **WHEN** the viewport width is below 768px (the `cl-col-md-6` block stacks there; the sheet's only narrower band is 576)
 - **THEN** the search bar SHALL scale down in width (max-width: 90% of viewport)
 - **AND** the title SHALL remain readable and centered
 

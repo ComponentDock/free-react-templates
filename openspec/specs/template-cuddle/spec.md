@@ -225,14 +225,14 @@ The template SHALL adapt to mobile, tablet, desktop.
 
 #### Scenario: Mobile hero stacks
 
-- **WHEN** viewport < 640px
-- **THEN** hero sidebar stacks below main content
+- **WHEN** viewport < 992px
+- **THEN** hero sidebar stacks below main content (`.col-lg-6` / `col-md-5 order-lg-last` split ends at 992)
 
 #### Scenario: Grid responsiveness
 
-- **WHEN** viewport < 640px
+- **WHEN** viewport < 768px
 - **THEN** grids show 1 column
-- **WHEN** viewport < 1024px
-- **THEN** grids show 2 columns
-- **WHEN** viewport ≥ 1024px
-- **THEN** grids show 3-4 columns
+- **WHEN** viewport < 992px
+- **THEN** grids show 2 columns (`col-md-6`)
+- **WHEN** viewport ≥ 992px
+- **THEN** grids show 3-4 columns (`col-lg-4`)

@@ -131,7 +131,7 @@ The search bar SHALL remain centered and functional on mobile screens.
 
 #### Scenario: Mobile layout
 
-- **WHEN** the page is viewed on a screen narrower than 480px
+- **WHEN** the page is viewed on a screen narrower than 768px (the `cl-col-md-6` stacking point)
 - **THEN** the search bar scales down appropriately
 - **AND** the search bar remains centered
 

@@ -142,7 +142,7 @@ As a user I want to select a date and time from a visual calendar so that I can 
 
 #### Scenario: Responsive layout
 
-- **GIVEN** the viewport is mobile (< 640px)
+- **GIVEN** the viewport is below 576px (`.cl-container` carries no `max-width` under 576, so the card goes full width there)
 - **WHEN** the datepicker renders
 - **THEN** the container uses full width with comfortable padding
 - **AND** all date cells remain tappable (min 44x44px touch targets)
@@ -170,7 +170,7 @@ As a user I want to select a date and time from a visual calendar so that I can 
 - [ ] Date selection updates input value
 - [ ] Click outside closes dropdown
 - [ ] Dark mode colors correct
-- [ ] Mobile layout works (< 640px)
+- [ ] Mobile layout works (< 576px)
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] 100% test coverage (lines/functions/branches/statements)
 - [ ] TypeScript strict mode passes

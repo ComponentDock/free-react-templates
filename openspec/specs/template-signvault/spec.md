@@ -189,7 +189,7 @@ these.
 
 #### Scenario: Responsive layout
 
-- **GIVEN** the user is on a mobile viewport (width < 640px)
+- **GIVEN** the user is on a mobile viewport (width < 768px — `.cl-p-md-5` and the 720px container band start at `@media (min-width: 768px)`)
 - **WHEN** the page loads
 - **THEN** the card takes full width with horizontal padding
 - **AND** all form fields remain accessible and readable

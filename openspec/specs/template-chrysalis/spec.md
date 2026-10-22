@@ -40,7 +40,7 @@ Extracted from the live preview stylesheet (`assets/css/main.css`):
 #### Scenario: Sidebar navigation
 
 - **GIVEN** the page loads
-- **WHEN** the viewport is desktop (>1024px)
+- **WHEN** the viewport is desktop (>768px — `.menu-btn` is `display: none` above `@media (max-width: 768px)`)
 - **THEN** a fixed left sidebar is visible with logo at top, vertical navigation menu, filter menu, social icons, and copyright
 
 #### Scenario: Sidebar logo

@@ -228,7 +228,7 @@ The system SHALL be fully responsive across desktop, tablet, and mobile viewport
 
 #### Scenario: Tablet layout
 
-- **GIVEN** the page is rendered on a viewport ≤ 1024px
+- **GIVEN** the page is rendered on a viewport ≤ 991.98px (the `col-lg-*` grid only applies from `@media (min-width: 992px)`)
 - **WHEN** multi-column sections are displayed
 - **THEN** columns SHALL reflow to a reduced grid (e.g. 2-column → 1-column)
 

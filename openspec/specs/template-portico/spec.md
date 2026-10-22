@@ -42,13 +42,13 @@ The template SHALL render a split-screen layout with a form panel on the left an
 
 #### Scenario: Desktop layout shows both panels
 
-- **WHEN** the page loads on a desktop viewport (>= 640px)
+- **WHEN** the page loads on a desktop viewport (≥ 992px — `.cl-d-lg-flex` is applied from `@media (min-width: 992px)`)
 - **THEN** the left form panel and right image panel are both visible side by side
 
-#### Scenario: Mobile layout hides image panel
+#### Scenario: Mobile layout stacks the image panel
 
-- **WHEN** the page loads on a mobile viewport (< 640px)
-- **THEN** only the form panel is visible and the image panel is hidden
+- **WHEN** the page loads on a mobile viewport (< 992px — `@media (max-width: 991.98px)`)
+- **THEN** the form panel spans the width and the image panel sits below it as a 500px band (`.half .bg { height: 500px }` at `max-width: 991.98px` — the source stacks it, it never hides it)
 
 ### Requirement: Login form fields
 

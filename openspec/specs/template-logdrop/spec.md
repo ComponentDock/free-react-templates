@@ -120,7 +120,7 @@ The card SHALL remain centered and functional on mobile viewports.
 
 #### Scenario: Mobile layout
 
-- **WHEN** the user resizes the viewport to mobile width (< 480px)
+- **WHEN** the user resizes the viewport to mobile width (< 768px — `.cl-d-md-flex` applies from `@media (min-width: 768px)`)
 - **THEN** the card remains centered
 - **AND** the card width adjusts to fit the viewport with padding
 - **AND** the form remains fully functional

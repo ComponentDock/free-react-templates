@@ -195,7 +195,7 @@ The layout SHALL stack columns vertically on mobile viewports.
 
 #### Scenario: Mobile stacking
 
-- **WHEN** the user views the page on a mobile viewport (< 640px)
+- **WHEN** the user views the page on a mobile viewport (< 768px — the two `cl-col-md-6` columns are unstacked only from `@media (min-width: 768px)`)
 - **THEN** the two columns should stack vertically
 - **AND** the card should take full width with padding
 

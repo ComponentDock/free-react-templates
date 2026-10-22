@@ -201,7 +201,7 @@ The login layout SHALL remain centered and functional across all viewport sizes.
 
 #### Scenario: Mobile layout
 
-- **WHEN** the user resizes the viewport to mobile width (≤640px)
+- **WHEN** the user resizes the viewport to mobile width (≤767.98px — the `.cl-col-md-2`/`.cl-col-md-5` pair only becomes a grid at `@media (min-width: 768px)`)
 - **THEN** the two-column layout collapses to a single column
 - **AND** social buttons appear above the login form
 - **AND** the form remains fully functional

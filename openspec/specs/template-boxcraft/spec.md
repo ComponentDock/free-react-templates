@@ -144,7 +144,7 @@ Extracted from `style.css` of the live preview at preview.colorlib.com:
 
 #### Scenario: Responsive layout
 
-- **GIVEN** the viewport width is less than 768px
+- **GIVEN** the viewport width is below 925px (`.mob-menu { display: block }` / `.main-menu` collapses at `@media screen and (max-width: 925px)`)
 - **THEN** the navigation collapses to a hamburger menu
 - **AND** sections stack vertically in single column
 - **AND** the portfolio grid adjusts to fewer columns

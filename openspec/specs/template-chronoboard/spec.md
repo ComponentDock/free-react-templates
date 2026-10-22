@@ -203,12 +203,12 @@ live sheet; do not build them from the screenshot, take the palette above:
 
 #### Scenario: Toolbar stacks on mobile
 
-- **GIVEN** viewport width < 640px
+- **GIVEN** the recreation is viewed below 576px (the `calendar-19` sheet ships **no width query at all** — this stacking is our own defensive breakpoint, not a source behaviour)
 - **THEN** the toolbar stacks: month title on its own row, buttons below
 
 #### Scenario: Grid scrolls horizontally on very narrow screens
 
-- **GIVEN** viewport width < 480px
+- **GIVEN** the recreation is viewed at 480px or narrower (recreation-side choice; the source sheet has no width query)
 - **THEN** the grid gains horizontal scroll (or switches to list view — implementation choice)
 
 ---

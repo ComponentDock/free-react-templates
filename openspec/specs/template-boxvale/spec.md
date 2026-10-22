@@ -54,7 +54,7 @@ Feature: Navbar
 
 #### Scenario: Mobile hamburger menu
 
-- **GIVEN** the user resizes viewport below 768px
+- **GIVEN** the user resizes viewport below 925px (the `.sm-clean` desktop nav is only unstacked from `@media screen and (min-width: 925px)`)
 - **THEN** a hamburger menu icon appears
 - **AND** clicking it toggles the mobile menu open/closed
 

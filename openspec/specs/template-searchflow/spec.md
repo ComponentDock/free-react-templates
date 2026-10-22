@@ -152,7 +152,7 @@ bar adjusting width and remaining tappable.
 
 #### Scenario: Responsive layout
 
-- **GIVEN** the overlay is displayed on a mobile viewport (<=640px)
+- **GIVEN** the overlay is displayed on a mobile viewport (<=767.98px — `.cl-col-md-3`/`.cl-col-md-7` stack below 768, the 576 band is the next one down)
 - **THEN** the search bar width adjusts to fit within screen margins
 - **AND** the search button remains visible and tappable
 - **AND** the close button remains accessible

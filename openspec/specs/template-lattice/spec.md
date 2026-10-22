@@ -52,7 +52,7 @@ Lattice is a portfolio gallery grid. It recreates the ColorLib **Carousel 02** d
 
 ### 3. Portfolio Grid
 
-- 3-column grid on desktop (≥1024px), 2-column on tablet, 1-column on mobile
+- 3 cards per view from 1000px, 2 from 600px, 1 below 600px — the count lives in the owl config in `js/snippet.js` (`responsive: { 0: { items: 1 }, 600: { items: 2 }, 1000: { items: 3 } }`), not in a media query; the live markup carries only `cl-col-md-12` columns
 - 6 portfolio items, each with:
   - Rounded image container (300px height, cover, rounded corners)
   - Box shadow: 0px 20px 35px -30px rgba(0,0,0,0.26)

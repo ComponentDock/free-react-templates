@@ -161,7 +161,7 @@ The login card SHALL remain centered and functional across all viewport sizes.
 
 #### Scenario: Mobile layout
 
-- **WHEN** the user resizes the viewport to mobile width (≤640px)
+- **WHEN** the user resizes the viewport to mobile width (≤767.98px — the two `.cl-col-md-6` columns are unstacked only from `@media (min-width: 768px)`)
 - **THEN** the card remains centered horizontally
 - **AND** the card adjusts its width to fit the mobile viewport with appropriate padding
 - **AND** the form remains fully functional

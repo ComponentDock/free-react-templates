@@ -335,7 +335,7 @@ phones).
 
 #### Scenario: Mobile layout
 
-- **GIVEN** the Planner page is rendered on a viewport ≤480px
+- **GIVEN** the Planner page is rendered below 576px (`.cl-container` has no `max-width` there)
 - **WHEN** the page is displayed
 - **THEN** the card SHALL fit the viewport width without horizontal
   overflow (cells shrink, 7 columns preserved)
