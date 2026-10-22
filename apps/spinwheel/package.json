@@ -14,8 +14,8 @@
   "dependencies": {
     "@free-react-templates/ui": "*",
     "lucide-react": "^1.16.0",
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@tailwindcss/vite": "latest",
