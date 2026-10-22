@@ -158,8 +158,9 @@ and content types (no ColorLib assets copied).
     frame expands -30px (sm: -10px), image shifts -5px top/left.
   - `.image-play .icon-wrap`: 100px white circle centered with 40px black
     play icon.
-  - Spacing: `.site-section` padding 3em 0 (7em ≥768px); footer padding 4em
-    0; quick-contact-info `py-5`.
+  - Spacing: `.site-section` padding **112px 0** (85px / 55px at narrower
+    widths — the ladder runs DOWN, not up); footer padding 80px 0 35px
+    (55px ≤767 px); quick-contact-info `py-5`.
 - **Recreation decisions:** navbar = fixed white wrap with light-grey inner
   bar, "Steeple" light-weight (200) text logo, uppercase nav (Home, Sermons,
   Beliefs with two-level dropdown, Events, About, Contact) + mobile hamburger

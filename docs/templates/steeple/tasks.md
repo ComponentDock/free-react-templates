@@ -103,7 +103,7 @@
   - `.img-border`: gold frame 97% h/w bottom-right; hover -30px (sm -10px)
     expand + image -5px shift. `.image-play .icon-wrap`: 100px white circle,
     40px black play icon.
-  - Spacing: `.site-section` 3em 0 (7em ≥768px); footer 80px 0 35px (55px ≤767 px);
+  - Spacing: `.site-section` 112px 0 (85px / 55px at narrower widths); footer 80px 0 35px (55px ≤767 px);
     quick-contact py-5.
 - **Implementation notes:**
   - Hero slides have no dark overlay class in the DOM, but the white headline
