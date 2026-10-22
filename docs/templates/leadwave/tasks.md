@@ -30,10 +30,11 @@
   section h2s 30px; `.heading-section-white h2` 30px white; nav links 13px
   UPPERCASE weight 400; counter numbers 34px weight 400 white. Load via
   `<link>` in `index.html`.
-- **Buttons:** `.btn` Bootstrap 4 default (padding .375rem .75rem, radius
-  4px, no transition). `.btn.btn-primary` = solid `#2f89fc`, white text;
+- **Buttons:** `.btn` (padding .375rem .75rem, radius 30px — pill, not the
+  Bootstrap 4 default, no transition). `.btn.btn-primary` = solid `#2f89fc`, white text;
   hero CTAs add `px-4 py-3` ("Get a Quote" solid, "Our Portfolio"
-  outline). Nav CTA pill `.nav-item.cta > a`: radius 30px (4px ≤991px),
+  outline). Nav CTA `.nav-item.cta > a`: radius 4px (the anchor is a `nav-link`, not a
+  `.btn`, so the 30 px `.btn` rule never reaches it),
   padding .5rem 20px, blue border + blue text at top; scrolled = SOLID blue
   bg + white text. Newsletter subscribe: white pill (radius 30px,
   `1px solid rgba(255,255,255,0.7)`), transparent input, white "Subscribe"

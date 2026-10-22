@@ -178,7 +178,7 @@ bottom: 55px`); swiper `expert_active`, 6 slides: `.single_expert` —
   Any Emergency Contact" / "Make an Online Appointment"), p 13px white
   ("Esteem spirit temper too say adieus."), `.info_button a` pill (radius
   30px): phone `+10 378 4673 467` (white outline pill, plain text number) /
-  "Make an Appointment" (`.boxed-btn3` gradient pill).
+  "Make an Appointment" (`.boxed-btn3` gradient, 4 px rounded).
 - **Footer (`.footer`):** `.footer_top` bg `#1F1F1F`, `padding: 145px 0
 129px`; 4 widgets (col-xl-4 / 2 offset-1 / 2 / 3): (1) `.footer_logo`
   22px/400 white + p `#C7C7C7` "Firmament morning sixth subdue darkness
@@ -479,3 +479,7 @@ SHOW a success state on valid submit.
       placeholder images, React swiper/state instead of swiper.js + Bootstrap
       modal, nav underline color deviation, varied testimonial/doctor names,
       Component Dock footer credit)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `docmed`: `.boxed-btn3{border-radius:4px}` (`-white` variants 5 px); the 50 px rules in this sheet are `.contact-section .btn_2`.

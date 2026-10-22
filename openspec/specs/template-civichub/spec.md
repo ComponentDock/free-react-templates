@@ -25,7 +25,7 @@ It recreates the ColorLib **Civic** design (https://colorlib.com/wp/template/civ
 | Body text        | #505259      | Paragraphs, muted text                       |
 | Heading text     | #40424a      | All headings (h1–h4)                         |
 | Font family      | Josefin Sans | All text (weights 400, 600, 700 + italic)    |
-| Button radius    | 60px (pill)  | All CTA buttons                              |
+| Button radius    | `.25rem` (4px) | All CTA buttons                              |
 | Social icon bg   | #f9f9f9      | Social link icon circles                     |
 | Footer bg        | #40424a      | Footer section                               |
 | Footer text      | #fff         | Footer copyright text                        |
@@ -130,7 +130,7 @@ It recreates the ColorLib **Civic** design (https://colorlib.com/wp/template/civ
 - [ ] All 10 sections present in correct order
 - [ ] Josefin Sans font loaded via Google Fonts
 - [ ] Design tokens match: #40424a primary, #f2f7f8 light bg, #f9f9f9 social bg
-- [ ] Buttons are pill-shaped (border-radius: 60px)
+- [ ] Buttons are 4 px rounded (border-radius: .25rem)
 - [ ] Social links section has 5 icon circles
 - [ ] Work Experience has 2 timeline entries
 - [ ] Education has 2 timeline entries with background image
@@ -142,3 +142,7 @@ It recreates the ColorLib **Civic** design (https://colorlib.com/wp/template/civ
 - [ ] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos with deterministic seeds
 - [ ] 100% test coverage
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `civic`: `.btn{border-radius:.25rem}` — nothing in the sheets paints a 60 px button radius (the only 60 px rule is `.loader`).

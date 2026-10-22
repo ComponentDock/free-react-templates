@@ -65,7 +65,7 @@ Free Bootstrap 4 Template by Colorlib</title>`) + stylesheet
 
 ## Design tokens (from `css/style.css` of the live preview, computed-verified)
 
-- **Gold / brand:** `#ffb400` — `.nav-item.cta > a` (Book Now pill) bg,
+- **Gold / brand:** `#ffb400` — `.nav-item.cta > a` (Book Now, 2 px rounded) bg,
   `.search-property-1 .form-control.btn` (Search button) bg,
   `.star span` color, `.blog-entry .day` color, `.subscribe-form .submit`
   bg, `.btn.btn-primary` (Read more) bg, `.project:hover .price` bg,
@@ -444,3 +444,7 @@ landmark and a document title.
       (name, placeholder images, React carousel + mobile nav instead of
       owl-carousel/Bootstrap collapse, native select instead of
       bootstrap-datepicker, Component Dock footer credit)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `traveland`: `.ftco-navbar-light .navbar-nav > .nav-item.cta > a{border-radius:2px}` (`5px` once scrolled) — rounded, not a pill.

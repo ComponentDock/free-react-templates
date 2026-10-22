@@ -33,7 +33,7 @@ in a clean pop-up."
   across ColorLib modal series
 - **Close button:** top-right corner, `×` character, color `rgba(0, 0, 0, 0.5)`
 - **Backdrop:** semi-transparent dark overlay `rgba(0, 0, 0, 0.5)`
-- **Launch button:** pill shape (border-radius 40px), primary blue background,
+- **Launch button:** square shape (border-radius 0), primary blue background,
   white text, centered on page
 - **Section background:** white `#ffffff`
 - **Text color:** `#000000` or `rgba(0, 0, 0, 0.8)` for modal body text
@@ -178,3 +178,7 @@ to trigger on close, proper ARIA attributes.
 
 - **GIVEN** the modal is open and I close it
 - **THEN** focus returns to the "Launch Modal" button
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `modal-11`: `.cl-btn{border-radius:0px}` — the launch button is square, not a 40 px pill.

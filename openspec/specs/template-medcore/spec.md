@@ -28,7 +28,7 @@ Extracted from the ColorLib Medica preview's `css/core-style.css` and inline sty
 | text-secondary | `#7f7e7e` | Secondary/muted text |
 | text-tertiary | `#5f5f5f` | Tertiary text |
 | font-family | `Montserrat, sans-serif` | All text |
-| button-radius | `50%` (pill) | CTA buttons |
+| button-radius | `0` (square) | CTA buttons |
 | card-radius | `0` | Cards have sharp corners |
 | gradient-overlay-opacity | `0.8` | Background image overlays on services and testimonials |
 
@@ -42,8 +42,8 @@ background: linear-gradient(to right, #3de6fa, #243eff);
 
 ### Button Variants
 
-- **Primary (`.medica-btn`):** solid `#2f88fd` background, white text, pill shape, `border-radius: 50%`, `border: 2px solid #2f88fd`
-- **Outline (`.btn-2`):** transparent background, `#2f88fd` text, same pill shape
+- **Primary (`.medica-btn`):** solid `#2f88fd` background, white text, square, `border-radius: 0`, `border: 2px solid #2f88fd`
+- **Outline (`.btn-2`):** transparent background, `#2f88fd` text, same square shape
 - **Hover:** swaps fill/text colors (solid becomes outline, outline becomes solid)
 
 ## Section Order (1:1 with source)
@@ -214,7 +214,7 @@ background: linear-gradient(to right, #3de6fa, #243eff);
 
 - [ ] All 11 sections present in correct order
 - [ ] Brand gradient (#3de6fa → #243eff) applied to top header, services overlay, testimonials overlay, CTA bar
-- [ ] Primary button color #2f88fd with pill shape (border-radius: 50%)
+- [ ] Primary button color #2f88fd square (border-radius: 0)
 - [ ] Font family Montserrat loaded via Google Fonts
 - [ ] Sharp card corners (border-radius: 0)
 - [ ] Light gray #f2f4f8 backgrounds on contact info, doctors, partners, footer sections
@@ -230,3 +230,7 @@ background: linear-gradient(to right, #3de6fa, #243eff);
 - [ ] Footer links to Component Dock
 - [ ] CNAME set to medcore.free.componentdock.com
 - [ ] Homepage set to https://medcore.free.componentdock.com
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `medica`: `.medica-btn{border-radius:0}` — the primary button is square; 50 % in this sheet belongs to `.rounded-circle` (decorative icons).

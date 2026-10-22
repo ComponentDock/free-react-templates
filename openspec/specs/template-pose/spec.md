@@ -51,7 +51,7 @@ colors, typography, and content types (no ColorLib assets copied).
   2. `section.video-hero.js-fullheight` — full-height hero, dark runway
      photo bg (original is a video): eyebrow "Welcome to", giant serif
      "Stylistic" (→ "Pose"), tagline "A Professional Model Agency", pink
-     pill `.btn.btn-primary` "Become A Model".
+     square `.btn.btn-primary` (`border-radius: 0`) "Become A Model".
   3. `section.ftco-featured-model` (`margin-top: -50px` — cards overlap the
      hero bottom): heading "A Professional Model Agency" + **4** model
      cards: photo + name (Andrea/Andrea Smith, Nicole/Nicole Wall,
@@ -289,3 +289,7 @@ page.
 - [ ] PR description records source (ColorLib Stylistic), preview URL
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL THREE copies
       (lines 231, 1189, 1731) `[x]` when done.
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `stylistic`: `.btn{border-radius:0px}` — the CTA is a sharp rectangle.

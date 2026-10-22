@@ -72,7 +72,7 @@ New name: imastudio
 - Yellow "holder" label in Amatic SC font
 - Main headline in Josefin Sans
 - Date line below headline
-- Circular white CTA button (border-radius: 50%, white bg, black text)
+- White CTA button (border-radius: 2px, white bg, black text)
 
 **Services:**
 - 3 cards in a row: Photography (camera icon), Image Processing (image icon), Videography (video icon)

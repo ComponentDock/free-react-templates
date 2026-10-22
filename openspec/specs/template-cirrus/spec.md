@@ -236,8 +236,8 @@ section links and a CTA button.
   left
 - **AND** text links: Home (active), Company, Pricing, Leadership, Blog,
   Contact
-- **AND** a trailing "Get started" CTA pill (green `#21bf73`, white text,
-  radius 5px; hover → white bg with blue `#3f52e3` text)
+- **AND** a trailing "Get started" CTA button (green `#21bf73`, white text,
+  radius 7px; hover → white bg with blue `#3f52e3` text)
 
 #### Scenario: Mobile navbar
 
@@ -470,3 +470,7 @@ a copyright bar.
       URL (`https://preview.colorlib.com/theme/cloudtemplate/`), design
       tokens, renames, placeholder images, fixed source typos, and the dup
       row (line 3053) covered by the same recreation
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `cloudtemplate`: `.button{border-radius:7px}` — the theme's CTA class is a 7 px rounding.

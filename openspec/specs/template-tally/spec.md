@@ -13,7 +13,7 @@ Tally is an accounting & business consulting template with a top bar, navbar, he
 - **Dark overlay:** rgba(0,0,0,0.5) on hero slides
 - **Background palette:** white (#fff), light gray (#f8f9fa / bg-light), dark (#666666 / bg-secondary)
 - **Section rhythm:** alternating white / light-gray backgrounds
-- **Button style:** rounded-pill for hero CTA ("Connect with us"), standard rounded for pricing/subscribe
+- **Button style:** `.btn` 4 px rounding for hero CTA ("Connect with us"), standard rounded for pricing/subscribe
 - **Layout:** Bootstrap 4 grid (12-col), container-based
 
 ## Page Structure (sections in order)
@@ -125,3 +125,7 @@ Tally is an accounting & business consulting template with a top bar, navbar, he
 - Lint: PASS
 - Test Coverage: 100% lines/functions/branches/statements
 - Build: PASS
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `accounting`: `.btn{border-radius:4px}` — no `.rounded-pill` rule is loaded on this page, so that utility is inert and the hero CTA renders 4 px rounded.

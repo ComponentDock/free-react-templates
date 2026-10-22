@@ -23,7 +23,7 @@
 - **Screenshot visual design:** modern dark minimal agency one-pager. Deep
   charcoal `#1d1e21` background, muted grey body text, white headings.
   Transparent navbar (square icon-logo + "oraxol") over the hero; 50px white
-  headline with the trailing phrase underlined; translucent white pill
+  headline with the trailing phrase underlined; translucent white 2 px-rounded button
   "Available for freelance work"; row of four colourful 150px work tiles;
   then SERVICES (4 bordered icon cards), PORTFOLIO (6 large 550px image
   cards), TESTIMONIAL slider, OUR TEAM (4 dark cards with quarter-circle
@@ -34,7 +34,7 @@
   Poppins 15px lh 1.8; dark surfaces `#18191c` (scrolled navbar, team
   cards), `#161719` (footer social circles); nav links 14px/500 `#aaaaaa` →
   `#fff`; subheading 13px/600 uppercase ls 2px `#aaaaaa`; section h2
-  40px/600 (28px mobile); hero h1 50px/500 white (30px mobile); pill button
+  40px/600 (28px mobile); hero h1 50px/500 white (30px mobile); 2 px-rounded button
   `rgba(255,255,255,0.1)` bg, radius 2px, uppercase 13px/700; card borders
   `rgba(255,255,255,0.1)`; `<hr>` separators `rgba(255,255,255,0.3)`;
   services icon 60px; work img 550px radius 4px; team avatar 120px radius

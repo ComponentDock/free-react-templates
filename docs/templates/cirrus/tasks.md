@@ -23,7 +23,7 @@
   1. Navbar (`nav#ftco-navbar`, `.ftco-navbar-light`): transparent absolute
      `top: 20px` over hero; ≤992px solid `#000`. Brand white left; links
      Home / Company / Pricing / Leadership / Blog / Contact + trailing
-     "Get started" CTA (green pill, radius 5px; hover white bg + blue
+     "Get started" CTA (green, radius 7px; hover white bg + blue
      text).
   2. Hero (`div.hero-wrap.js-fullheight`): overlay bg `#3f52e3`; 750px
      row — left 60% illustration (`undraw_co-working_825n.svg`), right

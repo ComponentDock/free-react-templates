@@ -19,7 +19,7 @@
 
 Modern SaaS landing page. Royal-blue hero: transparent header over it (logo
 "Cloud Template" with cloud icon + centered white links Home, Company,
-Pricing, Leadership, Blog, Contact + green pill "Get started" right). Hero
+Pricing, Leadership, Blog, Contact + green rounded "Get started" right). Hero
 left: flat vector illustration (two people at a desk facing each other, red
 hair + green shirts, monitors, potted plant); hero right: small uppercase
 white "CLOUD TEMPLATE" label, big bold white headline "Cloud, Management,

@@ -29,7 +29,7 @@
   - Body font: **"Roboto", sans-serif**; Headings: **"Roboto Condensed", sans-serif**.
   - Body background: `#f4f4f4` (light gray).
   - Banner background: `#dde5e8` with background image.
-  - Button 1 (`.btn_1`): bg `#2f7dfc`, color `#fff`, **border-radius 50px** (pill shape), hover inverts.
+  - Button 1 (`.btn_1`): bg `#2f7dfc`, color `#fff`, **border-radius 0** (square), hover inverts.
   - Button 2 (`.btn_2`): bg `#fff`, color `#1e1e1e`, border-radius 4px, hover bg `#2f7dfc` + white.
   - Product cards: hover overlay with semi-transparent background, star rating icons, price.
   - Instagram gallery: flex row, white bg, Instagram icon overlay on hover.

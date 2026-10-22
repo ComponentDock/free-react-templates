@@ -6,7 +6,7 @@ Recreation of ColorLib "Civic" (https://colorlib.com/wp/template/civic/)
 
 - **Color palette:** Primary dark #40424a, light bg #f2f7f8, social bg #f9f9f9, body #505259, headings #40424a, footer #40424a
 - **Typography:** Josefin Sans (weights 400, 600, 700 + italic) via Google Fonts
-- **Buttons:** Pill shape (border-radius 60px), white bg, dark text, uppercase
+- **Buttons:** Rounded (border-radius 4px), white bg, dark text, uppercase
 - **Layout:** Bootstrap-style container-fluid/row/col recreated with Tailwind grid
 - **Images:** All placeholder via picsum.photos with deterministic seeds (e.g. `civichub-hero`, `civichub-port-1`)
 - **Icons:** Social icons via lucide-react (Pinterest→Link, LinkedIn, Instagram, Facebook, Twitter→X)
@@ -15,7 +15,7 @@ Recreation of ColorLib "Civic" (https://colorlib.com/wp/template/civic/)
 ## Sections (priority order)
 
 1. [ ] Scaffold (package.json, vite.config, vitest.config, index.html, index.css, main.tsx, App.tsx)
-2. [ ] Header — logo + tagline + two pill CTA buttons
+2. [ ] Header — logo + tagline + two rounded CTA buttons
 3. [ ] Hero — split layout: left info + right portrait photo
 4. [ ] SocialLinks — 5 social icon circles in horizontal bar
 5. [ ] WorkExperience — timeline with 2 job entries

@@ -83,7 +83,7 @@ TEMPLATES.md, and the PR.
   `.work-entry .text` hover overlay, `.aside-stretch` panel bg (blue,
   `:after` extends full-bleed), `.ftco-section-2 .overlay` gradient start,
   `.ftco-section-parallax .parallax-img` gradient start, CTA pill border
-  (`.cta > a`: `1px solid #2f89fc`, radius 30px) and its scrolled solid
+  (`.cta > a`: `1px solid #2f89fc`, radius 4px) and its scrolled solid
   state, block-6 service icon circles.
 - **Mint `#55fbc2`** — gradient end only:
   `linear-gradient(135deg, #2f89fc 0%, #55fbc2 100%)` on the banner overlay
@@ -416,3 +416,7 @@ reasons/quote form → testimonials → newsletter → blog → footer.
       owl/typewrite.js, Component Dock footer credit); after merge mark
       ALL THREE TEMPLATES.md Ultim8 rows `[x]` (lines 522, 1211, 2367 —
       Bootstrap 216 / Business 365 / One Page 91)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `ultim8`: `.nav-item.cta > a{border-radius:4px}` (and 4 px when scrolled); the CTA anchor carries `nav-link`, not `.btn`, so the 30 px `.btn` rule never applies to it.

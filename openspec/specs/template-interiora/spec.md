@@ -58,7 +58,7 @@ Preview URL: https://preview.colorlib.com/theme/franclin/
 | Body font           | `"Jost", sans-serif`                                                                                                       | `body` (16px); `p` `#545454` 16px line-height 1.4                                                                                                                                              |
 | Nav links           | 18px weight 500 `#2a2a2a`                                                                                                  | `.main-menu ul li a` (padding 26px 8px); hover `#e67118` + `::after` 3px orange underline (0→100% width sweep)                                                                                 |
 | Section eyebrow     | 14px uppercase `#e67118`, letter-spacing 0.3em, rotated -90deg                                                             | `.section-tittle > span` (absolute, left -36px, top 35px)                                                                                                                                      |
-| `btn_10` (primary)  | bg `#e67118`, white 18px text, padding 17px 35px, radius 40px (pill), capitalize                                           | "More About Us", "Contact Us" (wantToWork), footer arrows                                                                                                                                      |
+| `btn_10` (primary)  | bg `#e67118`, white 18px text, padding 17px 35px, radius 0 (square), capitalize                                           | "More About Us", "Contact Us" (wantToWork), footer arrows                                                                                                                                      |
 | `btn_1` (dark pill) | bg `#2a2a2a`, border 1px `#2a2a2a`, white 18px 500, padding 25px 34px, radius 41px; hover: transparent bg + `#2a2a2a` text | hero "Check Our Services" (`hero-btn` padding 25–35px 55px), "View Gallery" (`visit-btn` 18px 34px)                                                                                            |
 | `btn_01` (outline)  | 2px `#e67118` border, `#e67118` 18px 500 text, padding 14px 32px, radius 40px; hover: filled orange + white                | "Learn More" (about area)                                                                                                                                                                      |
 | `header-btn2`       | bg `#e67118`, white 16px 500, padding 13px 25px, radius 25px                                                               | nav "Free Quote" CTA                                                                                                                                                                           |
@@ -136,7 +136,7 @@ Preview URL: https://preview.colorlib.com/theme/franclin/
    modal/link).
 10. `section.wantToWork-area.w-padding2` (bg `#1a1a1a`) — CTA band:
     `div.wantToWork-caption`: h2 white 30px "Any help needed?" + subtext +
-    `a.btn_10` "Contact Us" (orange pill).
+    `a.btn_10` "Contact Us" (orange, square).
 11. `div.footer-wrapper` > `div.footer-area.footer-padding` (bg `#fff`,
     padding-top 99px):
     - `div.single-footer-caption.mb-50` — brand logo + about text
@@ -368,9 +368,13 @@ landmarks and a document title.
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#e67118, #2a2a2a, #545454, #656565, #1a1a1a, #f1c4a3, #fff, #ffcc00, rgba(84,84,84,0.2), #5e5e5e) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `interiora-<n>`, Google Fonts Jost 300–900 link, lucide icons only)
-- [ ] Buttons match the three shapes: `btn_10` orange pill (radius 40px), `btn_1` dark pill (radius 41px, hover transparent), `btn_01` orange outline pill (hover fill); header CTA radius 25px
+- [ ] Buttons match the three shapes: `btn_10` orange square (radius 0), `btn_1` dark pill (radius 41px, hover transparent), `btn_01` orange outline pill (hover fill); header CTA radius 25px
 - [ ] Hero slider: 3 slides, photo bg, rgba overlay, white 60px headline with underlined span, dark pill CTA, dot navigation
 - [ ] Nav hover: orange text + 3px orange underline sweep; sticky white header on scroll; mobile hamburger panel
 - [ ] Testimonials slider implemented with client-side state (no Owl Carousel dep); peach band bg
 - [ ] Counters render as orange 50px numbers; stars `#ffcc00`
 - [ ] Footer newsletter: email input (56px, orange 1px border, radius 30px) + arrow submit; Component Dock credit; no ColorLib references in app code
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `franclin`: `.btn_10{border-radius:0px}` — the 40-41 px pills in this sheet are `.btn_01` and `.btn_1`; `btn_10` is square.

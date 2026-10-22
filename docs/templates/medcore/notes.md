@@ -8,13 +8,13 @@
 
 ### 1. Header
 - **Top bar:** Full-width gradient background (linear-gradient right: #3de6fa → #243eff). Contains social icons (left) and utility nav links (right). Dark text on gradient. Padding: ~12px vertical.
-- **Main nav:** White background, sticky on scroll. Logo left, menu items center/right, "Make an Appointment" solid blue (#2f88fd) pill button right. Menu has "Pages" dropdown.
+- **Main nav:** White background, sticky on scroll. Logo left, menu items center/right, "Make an Appointment" solid blue (#2f88fd) square button right. Menu has "Pages" dropdown.
 - **Component structure:** `Navbar.tsx` (top bar + main nav combined, or separate TopBar + Navbar)
 
 ### 2. Hero
 - **Layout:** Full-width section with background image (use picsum placeholder). Height ~800px.
 - **Content:** Left-aligned: h2 "We provide top medical services" (white, bold, large), h5 subtitle "More than 30 professionals" (white, lighter weight), two CTA buttons in a flex row.
-- **Buttons:** Solid pill (#2f88fd bg, white text) + Outline pill (transparent bg, white border, white text). Both pill-shaped.
+- **Buttons:** Solid (#2f88fd bg, white text) + Outline (transparent bg, white border, white text). Both square — `.medica-btn{border-radius:0}`.
 - **Implementation:** Single static slide (no carousel needed — one hero is sufficient for the template recreation).
 
 ### 3. Contact Info
@@ -53,7 +53,7 @@
 
 ### 9. Appointment
 - **Layout:** 2-column split. Left: form on blue gradient card. Right: medical illustration.
-- **Form fields:** Name (text), Speciality (select dropdown), Phone (text), Doctor (select dropdown), Email (email), Date (date picker), Submit button (solid pill).
+- **Form fields:** Name (text), Speciality (select dropdown), Phone (text), Doctor (select dropdown), Email (email), Date (date picker), Submit button (solid, square).
 - **Component:** `Appointment.tsx`
 
 ### 10. Partners

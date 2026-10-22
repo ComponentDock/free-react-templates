@@ -23,7 +23,7 @@
   section at the END — the custom rules are the token source). JS bundle
   (jquery/popper/bootstrap + `js/main.js`) is inert on this page — pure
   static showcase; hover is CSS-only. Computed styles verified in a live
-  browser (2026-08-14): `.btn` `border-radius: 2px`, `padding: 15px 30px`,
+  browser (2026-08-14): `.btn` `border-radius: 4px`, `padding: 15px 30px`,
   14px/500, shadow `0 7px 15px -13px rgba(0,0,0,0.17)`, `overflow: hidden`;
   `.icon` 60px wide, `bottom: 0`; `.text` `calc(100% - 60px)`; h4 22px
   `margin-bottom: 0`; heading 32px Poppins; `.ftco-section` padding

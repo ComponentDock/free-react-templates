@@ -74,7 +74,7 @@ CSS 4 + TypeScript.
     images with dark overlays.
   - Fonts: **"Work Sans"** (sans-serif, 400 weight — used everywhere for
     body, headings, nav). Source embeds via Google Fonts.
-  - Buttons: `.btn` — border-radius **4px**, padding varies by size
+  - Buttons: `.btn` — border-radius **30px** (pill), padding varies by size
     (`.btn-lg` = large). `.btn-primary` — bg **#3f52e3**, color **#fff**,
     hover **#2f89fc**. Clean, slightly rounded rectangle style.
   - Icons: Flaticon icon font (lawyer-1, courthouse, libra/scales,
@@ -308,3 +308,7 @@ and TEMPLATES.md.
 - **WHEN** any file under `apps/courtcraft/src/` is searched
 - **THEN** no file SHALL contain the strings "colorlib" or "ColorLib" or
   "preview.colorlib.com"
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `lawmaker`: `.btn{border-radius:30px}` (`.btn-lg` 6 px) — the primary button is a pill.

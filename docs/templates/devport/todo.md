@@ -18,7 +18,7 @@ Spec: openspec/specs/template-devport/spec.md
 
 - **Fonts:** Poppins (main title headings), Roboto (body/nav/buttons). Load via Google Fonts.
 - **Primary color:** `#e45447` (red) — buttons, hover states. NOT a gradient — solid red.
-- **Button style:** rectangular, no border-radius (sharp corners), red bg, white text. Hover: transparent bg, red border, dark text.
+- **Button style:** pill (border-radius 50px), fully rounded corners, red bg, white text. Hover: transparent bg, red border, dark text.
 - **Hero:** full-screen carousel with 3 different background images. Text is centered on each slide. Same name/subtitle/CTA on all slides.
 - **Portfolio:** masonry-style grid with mixed column widths (some items 2-col, some 1-col). Filter tabs switch visible items. Items show image + overlay on hover + title + "Client Project" label.
 - **About:** light gray background (#f9f9ff). Illustration on left, heading + paragraphs + CTA on right.

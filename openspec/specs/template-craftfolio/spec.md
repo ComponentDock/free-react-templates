@@ -23,7 +23,7 @@ A Portfolio / Personal template with hero / banner carousel, portfolio / work an
 | Background gray  | `#f9f9ff`                 | About section (`.gray-bg`)              |
 | Font heading     | `"Poppins", sans-serif`   | Headings                                |
 | Font body        | `"Roboto", sans-serif`    | Body text, buttons                      |
-| Button radius    | `0` (square/rectangular)  | `.primary-btn` — no border-radius       |
+| Button radius    | `50px` (pill)             | `.primary-btn` — fully rounded          |
 | Button padding   | `12px 34px`               | Standard CTA button                     |
 | Section spacing  | `120px` vertical          | `.section_gap`                          |
 | Portfolio grid   | 4-column (`col-lg-3`)     | With 5px radius, black overlay on hover |
@@ -131,3 +131,7 @@ Users SHALL see a footer with social icons, copyright, and a Component Dock link
 - [x] Google Fonts loaded: Poppins (headings) + Roboto (body)
 - [x] `npm run test:coverage` passes at 100%
 - [x] `npm run build` succeeds
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `steve`: `.primary-btn{border-radius:50px}` — the CTA is a pill, not a sharp rectangle.

@@ -59,7 +59,7 @@ surge URL at bookkeeping time).
   - Pastel card bgs: **`#F0F3FF`** (cat1 lavender) · **`#F0E9FF`** (cat2 soft pink) · **`#E9FFFD`** (cat3 pale mint + hover fill `::before`), `.single-cat` radius 5px, padding 60px 60px (40/20 responsive).
   - Pricing band: **`#F1F2F6`** bg; `.card-wrapper` white, radius 6px, padding 45px 20px.
   - Tab accent: **`#4AA8C6`** (`.nav-link` text + `rgba(74,168,198,0.1)` bg, radius 4px, padding 10px 19px, Cabin 14px/500).
-  - Secondary CTA: **`#ff4495` → `#ff6d6d`** pink gradient (`.btn_0` — "Meet Our Customers", padding 11px 36px, 18px/500, white text, radius 0).
+  - Secondary CTA: **`#ff4495` → `#ff6d6d`** pink gradient (`.btn_0` — "Meet Our Customers", padding 11px 36px, 18px/500, white text, radius 25px).
   - Button hover sweep: **`#ec583a`** (coral, `.btn::before` scaleX animation, radius 0).
   - Borders: **`#DBDEE9`** (header-bottom border), header shadow `rgba(4,23,53,0.04)`; footer border-top `rgba(255,255,255,0.09)`.
   - Text: `#041735` (headings/hero p), **`#5C6168`** (footer input text + placeholder), `#999999`/`#888888`/`#777` (body/muted), white on dark bands.
@@ -305,3 +305,7 @@ Support links, a newsletter form and a copyright bar.
 - [ ] TEMPLATES.md bookkeeping at ship time: mark BOTH `- [ ]` rows
       (line 611 Bootstrap 5, line 1117 Business) `[x]` with the same surge
       URL + `npm run readme:status` (implementer)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `olla`: `.btn_0{border-radius:25px}` — the secondary CTA is a pill; the 0 px rules in this sheet are `.btn` / `.btn::before`.

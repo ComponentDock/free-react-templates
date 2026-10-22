@@ -27,14 +27,14 @@ Recreation of ColorLib's **Cryptian** template as a React 19 + Vite + Tailwind 4
 | distribution bg        | `#031b69`                           | Darker navy section       |
 | font family            | `Montserrat` (300–800)              | Google Fonts, sans-serif  |
 | base font size         | 14px                                |                           |
-| button border-radius   | 50px (pill)                         | `.gradient-btn` class     |
+| button border-radius   | 5px (slightly rounded)              | `.gradient-btn` class     |
 | dropdown border-radius | 5px                                 | Nav dropdowns             |
 | particles background   | Canvas-based (particles.js style)   | Hero area                 |
 
 ### Gradient buttons
 
 - Primary gradient: gold-to-coral (`#f6d365` → `#fda085`) — used for main CTAs
-- V2 variant: same gradient, taller (55px height), pill shape (border-radius: 50px)
+- V2 variant: same gradient, taller (55px height), 5 px rounding (`a.gradient-btn{border-radius:5px}`)
 
 ## Section structure (1:1 with source)
 
@@ -216,3 +216,7 @@ Recreation of ColorLib's **Cryptian** template as a React 19 + Vite + Tailwind 4
 - [ ] Placeholder images use picsum.photos/seed/blocknest-N/W/H
 - [ ] Google Fonts loaded via <link> in index.html
 - [ ] Icons from lucide-react (no Font Awesome or Material Design Iconic Font)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `cryptian`: `a.gradient-btn{border-radius:5px}` — the provider button is slightly rounded, not a 50 px pill.

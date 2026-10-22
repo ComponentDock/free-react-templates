@@ -56,7 +56,7 @@ Spec: openspec/specs/template-blocknest/spec.md
 
 ### Buttons
 
-- Pill shape: border-radius 50px
+- Slightly rounded: border-radius 5px
 - Gradient: linear-gradient(#f6d365, #fda085) — gold to coral
 - Height: 55px for V2 variant
 - Padding: 30px horizontal
@@ -91,7 +91,7 @@ Spec: openspec/specs/template-blocknest/spec.md
 ### Progress bar
 
 - Gradient fill: linear-gradient(#f6d365, #fda085)
-- Pill shape matching button style
+- Rounded corners matching button style
 - Labels below: Soft Cap left, Max Cap right
 
 ### FAQ tabs

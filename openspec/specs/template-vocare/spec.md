@@ -56,7 +56,7 @@ background: transparent`; mobile ≤991px: `background: #000`, relative):
      brand "Skillhunt" (white), nav links **Home** (`.active`), **Browse
      Jobs**, **Canditates** (sic — original typo), **Blog**, **Contact**
      (white, hover `#fdab44`; active link `rgba(255,255,255,0.5)` at top,
-     `#206dfb` when scrolled), then two pill CTA buttons: **Post a Job**
+     `#206dfb` when scrolled), then two CTA buttons (5 px rounded): **Post a Job**
      (`#206dfb` solid, radius 5px) and **Want a Job** (`#fdab44` solid).
      Scrolled state (`.scrolled`, via JS on scroll): `position: fixed`,
      `background: #fff`, shadow `0 0 10px 0 rgba(0,0,0,0.1)`, active link
@@ -512,3 +512,7 @@ page.
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL THREE copies
       (lines 496, 1166, 2005) `[x]` when done; footer links
       `https://www.componentdock.com/`.
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `skillhunt`: `.btn{border-radius:5px}` (`.nav-item.cta > a` 5 px) — rounded, not a pill.

@@ -25,7 +25,7 @@ gallery grid, blog section, Instagram feed, and a dark footer.
 | Heading color        | `#000000` (black)                                                            |
 | Dark background      | `#000000` (black) — nav, hero overlay, footer                                |
 | Gray backgrounds     | `#252525`, `#262626`, `#323232` — various dark sections                      |
-| Button radius        | `50%` (fully circular for primary CTA)                                       |
+| Button radius        | `2px` (slightly rounded; `.btn`)                                             |
 | Button style         | `.btn-custom` — white bg, black text, circular; yellow hover                 |
 | Section padding      | `2em` mobile → `5em` desktop                                                 |
 | Footer background    | `#ffffff` (white footer, dark copy bar below)                                |
@@ -308,3 +308,7 @@ and a dark copy bar at the bottom.
 - [ ] No ColorLib references in app code
 - [ ] CNAME and homepage set for imastudio.free.componentdock.com
 - [ ] `npm install` run to register workspace in package-lock.json
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `imahe`: `.btn{border-radius:2px}` — the sheet paints no circular button (no `.rounded-circle` rule is loaded).

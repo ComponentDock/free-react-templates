@@ -20,7 +20,7 @@
   (tall condensed serif) + hamburger; hero = runway-show photo/video
   background, centered "WELCOME TO" (small serif) / "STYLISTIC" (very large
   outlined serif) / "A PROFESSIONAL MODEL AGENCY" (small sans) + hot-pink
-  pill "Become A Model"; below, a row of four model portrait cards
+  square "Become A Model"; below, a row of four model portrait cards
   (different women, direct gaze). Black/dark-charcoal backgrounds, white
   text, pink/magenta accent.
 - **Visual design (DOM + CSS tokens + screenshot):**
@@ -31,7 +31,7 @@
   - Fonts: headings **Vidaloka** serif (Google Fonts); body **Poppins**
     sans (Google Fonts); bootstrap sans is framework fallback only.
   - Buttons `.btn.btn-primary`: bg `#f34573`, 1px pink border, white text,
-    **pill radius 30px**, uppercase; hover = transparent + pink text/border.
+    **square (radius 0)**, uppercase; hover = transparent + pink text/border.
   - Sections: hero dark photo; featured model white (cards overlap hero
     `margin-top: -50px`); about white; services **#343a40**; top models
     white; blog white; testimony photo bg + overlay; appointment

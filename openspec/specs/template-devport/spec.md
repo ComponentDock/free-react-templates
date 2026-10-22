@@ -25,7 +25,7 @@ Extracted from live preview CSS (`style.css`):
 | Newsletter bg | Image (`newsletter-bg.jpg`) | Full-width bg image with white text overlay |
 | Font heading | `"Poppins", sans-serif` | Main title headings |
 | Font body | `"Roboto", sans-serif` | Body text, nav, buttons |
-| Button style | `#e45447` solid bg, white text, no radius (sharp) | `.primary-btn` — rectangular, sharp corners |
+| Button style | `#e45447` solid bg, white text, pill (`border-radius: 50px`) | `.primary-btn` — fully rounded corners |
 | Button hover | Transparent bg, `#e45447` border, dark text | Inverted on hover |
 | Banner | Full-screen carousel (3 slides) with bg images | Owl carousel, centered text |
 | Portfolio grid | Masonry-like layout with mixed col sizes (6+3, 3+3) | Isotope-style filterable grid |
@@ -158,3 +158,7 @@ Extracted from live preview CSS (`style.css`):
 - [ ] Responsive layout (mobile hamburger, stacked columns)
 - [ ] No ColorLib references in app code
 - [ ] `packages/ui` components reused where possible (Button, ButtonLink, cn)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `steve`: `.primary-btn{border-radius:50px}` — same theme sheet as `craftfolio`.

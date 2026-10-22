@@ -48,7 +48,7 @@ layout, colors, typography, and content types (no ColorLib assets copied).
      icon (`.navbar-brand i`, **#fdd043**, 40px) + "Phoenix" wordmark with a
      dark mark (`.navbar-brand:before`, **#171b21**) behind it; centered nav
      `.navbar-nav` — Home, About, Games, Blog, Contact (Oswald, uppercase);
-     right `.nav-item.cta > a` dark "Buy Ticket" pill (bg **#171b21**, white
+     right `.nav-item.cta > a` dark "Buy Ticket" (4 px rounded) (bg **#171b21**, white
      text, radius 4px, padding .8rem 18px). Nav turns white (`.scrolled`)
      after scrolling. Mobile: hamburger toggler with the same links.
   2. Hero (`.hero-wrap.js-fullheight`, bg image `images/bg_1.jpg` cover,
@@ -138,7 +138,7 @@ span`, `.subscribe-form .submit`, `.ftco-footer-social li a:hover`,
   - Secondary blue **#207dff** — `.btn.btn-secondary` ("Watch match"),
     `.slash:before` (left half), `.ftco-about:after`, `.ftco-team:before`,
     `.block-27` pagination.
-  - Dark **#171b21** — nav CTA "Buy Ticket" pill, `.navbar-brand:before`
+  - Dark **#171b21** — nav CTA "Buy Ticket" (4 px rounded), `.navbar-brand:before`
     mark, `.game-wrap-1` strip, `.ftco-team:after`, `.testimony-section
 .overlay`.
   - Yellow **#fdd043** — `.navbar-brand i` logo icon.
@@ -199,7 +199,7 @@ scrolling.
   uppercase wordmark) on the left
 - **AND** it SHALL show centered nav links: Home, About, Games, Blog, and
   Contact
-- **AND** it SHALL show a dark "Buy Ticket" pill button on the right
+- **AND** it SHALL show a dark "Buy Ticket" (4 px rounded) button on the right
 
 #### Scenario: Scrolled header
 
@@ -458,7 +458,7 @@ and a document title.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/slugger`)
 - [ ] Section order matches the reference 1:1 (header → hero → match strip → scoreboard → game schedule → highlights → about → next match → team squad → services → testimonials → news → counters → subscribe → footer)
 - [ ] Design tokens from the reference used in `@theme` (primary #00bd56, secondary #207dff, dark #171b21, yellow #fdd043, footer #000000, text #999999; Oswald + Lato Google Fonts)
-- [ ] Header: transparent over hero → solid after scroll, logo (yellow mark + wordmark) + nav (Home/About/Games/Blog/Contact) + dark "Buy Ticket" pill, mobile hamburger
+- [ ] Header: transparent over hero → solid after scroll, logo (yellow mark + wordmark) + nav (Home/About/Games/Blog/Contact) + dark "Buy Ticket" (4 px rounded), mobile hamburger
 - [ ] Hero: full-height photo bg + overlay, h1 "Fieldrun Baseball Club" (80px white uppercase), paragraph, blue "Watch match" + green "Get ticket" buttons
 - [ ] Match strip: dark #171b21, Sluggers vs Jacksonville logos, "Baseball Champions League" + "Semi-Final", live countdown (days/hours/minutes/seconds), green "Buy Tickets"
 - [ ] Scoreboard: "Latest Game Result", 12 : 8 vs Mighty Falcons, "Game Report", diagonal blue/green slash background
@@ -473,3 +473,7 @@ and a document title.
 - [ ] Counters: 4 animated stats (Game Played, Coaches, Trophies, Members)
 - [ ] Subscribe: photo bg, "Subcribe to our upcoming match", email input + green submit pill
 - [ ] Footer: black bg, brand + Services/About Us/Company link widgets + "Have a Questions?" contact info + ColorLib credit row
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `phoenix`: `.nav-item.cta > a{border-radius:4px}` (`5px` scrolled) — rounded, not a pill.

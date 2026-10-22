@@ -25,12 +25,12 @@
   plus bootstrap/font-awesome/ionicons/tiny-slider/glightbox/aos/datepicker
   helpers. Screenshot `saita-colorlib-template.jpg` (viewed in browser)
   matches the live DOM: teal→deep-teal gradient hero with cutout
-  man-with-tablet photo, white pill CTAs, blue service cards with yellow
+  man-with-tablet photo, white 4 px-rounded CTAs, blue service cards with yellow
   circular icons, lavender team section, light-lavender footer.
 - **Visual design:** bright modern digital-agency one-pager. Hero =
   full-width diagonal gradient `#1fc1a9` → `#2889a6` with left-aligned white
   bold headline "We Are Digital Agency Helping To Boost Your sales",
-  paragraph, **Start A Project** white pill (`btn btn-white py-3 px-4`: white
+  paragraph, **Start A Project** white 4 px-rounded button (`btn btn-white py-3 px-4`: white
   bg / teal text / 1px white border, hover → transparent + white text) +
   **Watch the Video** outlined pill with play icon, right-side cutout photo
   `hero-1.png` (man holding tablet, `img-fluid`). 4 feature cards: first

@@ -29,7 +29,7 @@
 
 ### Phase 3: Components (in order)
 - [ ] **Navbar** — sticky white bg, brand "MedVault", nav links with dropdown, search + bag icons, mobile toggle
-- [ ] **HeroCover** — full-height bg image, centered subtitle + heading + pill-shaped CTA
+- [ ] **HeroCover** — full-height bg image, centered subtitle + heading + 4 px-rounded CTA
 - [ ] **PromoBanners** — 3 overlapping cards (green, white, yellow) with italic headings
 - [ ] **PopularProducts** — heading with cyan underline, 6 product cards (3-col), sale tags, "View All Products" CTA
 - [ ] **NewProducts** — light gray bg, carousel of 4 product cards
@@ -68,8 +68,8 @@
 ### 2. Hero Cover
 - Full viewport height (100vh, min-height 700px)
 - Background image (use picsum with seed)
-- Centered content: subtitle (14px, white), heading (50px/70px desktop, weight 900, white), pill-shaped CTA button
-- Button: `#51eaea` bg, dark text, uppercase, 2px border, border-radius 50%, padding 20px 30px
+- Centered content: subtitle (14px, white), heading (50px/70px desktop, weight 900, white), 4 px-rounded CTA button
+- Button: `#51eaea` bg, dark text, uppercase, 2px border, border-radius 0.25rem, padding 20px 30px
 
 ### 3. Promo Banners
 - 3-column grid with `section-overlap` class (margin-top: -150px to overlap hero)

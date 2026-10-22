@@ -40,7 +40,7 @@ bookkeeping time).
   full-width **diagonal gradient `#1fc1a9` (teal) → `#2889a6` (deep teal)**
   with a right-side cutout photo (`hero-1.png`, man holding a tablet) and a
   left-aligned white headline **"We Are Digital Agency Helping To Boost Your
-  sales"**; primary CTA is a **white pill** (`btn btn-white py-3 px-4`, white
+  sales"**; primary CTA is a **white, 4px-rounded button** (`btn btn-white py-3 px-4`, white
   bg / teal text, 1px white border, hover → transparent bg + white text) and
   a secondary outlined **"Watch the Video"** pill with a play icon. Below the
   hero sit 4 feature cards: the first white with a **royal-blue `#5579fa`**
@@ -456,3 +456,7 @@ bookkeeping time).
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL TWO `- [ ]` rows
       (line 623 Bootstrap 5, line 1158 Business) `[x]` with the same
       surge URL + `npm run readme:status`
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `saita`: `.btn{border-radius:4px}` — the hero CTA is `btn btn-white py-3 px-4` with no rounded utility in the markup, so it renders a 4 px rounded rectangle, not a pill.

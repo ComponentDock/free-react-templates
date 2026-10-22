@@ -21,7 +21,7 @@ Recreation of ColorLib "The Look" (thelook) — dark photography gallery templat
 ### Hero Slider
 - Full-width, 3 slides auto-advancing
 - Each slide: background image with dark semi-transparent overlay (opacity ~0.5)
-- Centered text: title (large), subtitle (uppercase, small), artist name + dates, pill-shaped CTA
+- Centered text: title (large), subtitle (uppercase, small), artist name + dates, 4 px-rounded CTA
 - Slider dots/arrows for manual navigation
 
 ### Gallery Section
@@ -60,8 +60,8 @@ Recreation of ColorLib "The Look" (thelook) — dark photography gallery templat
 }
 ```
 
-## Pill button pattern
-- border-radius: 60px
+## Rounded button pattern
+- border-radius: 4px (`.btn{border-radius:.25rem}`; the sheet's only 60 px radius is `.loader`)
 - border: 2px solid (white on dark, dark on light)
 - text-transform: uppercase
 - padding: 10px 30px

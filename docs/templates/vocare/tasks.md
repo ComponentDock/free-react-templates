@@ -19,7 +19,7 @@
   `@font-face` in the head — recreate with a Google Fonts `<link>`.
 - **Screenshot / visual design** (`skillhunt-free-template.jpg`, verified via
   browser vision): white navbar links + blue "Post a Job" + orange "Want a
-  Job" pills over a blue→purple gradient hero (faint blurred laptop photo);
+  Job" buttons (5 px rounded) over a blue→purple gradient hero (faint blurred laptop photo);
   white headline + 3 stat counters; white search bar with Find a Job (white)
   / Find a Candidate (orange) tabs and a blue Search button; 6 white category
   cards overlapping the hero bottom (2nd card orange/active); "JOB

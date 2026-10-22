@@ -158,7 +158,7 @@ rgba(255,255,255,0.1)`): `div.block-20` cover image (`image_1..3.jpg`,
   - Navbar links: 14px, weight 500, `#aaaaaa` → `#fff` active/hover; brand
     white; toggler "Menu" (`fa fa-bars`), `font-size: 16px`,
     `letter-spacing: .1em`, uppercase, white.
-  - `.btn-custom` (hero pill): uppercase, 13px, weight 700,
+  - `.btn-custom` (hero, 2 px rounded): uppercase, 13px, weight 700,
     `background: rgba(255,255,255,0.1)`, padding 4px 10px, `color: #fff`,
     `border-radius: 2px` (blog-link variant: uppercase 13px/600,
     `letter-spacing: 2px`, `color: #000` — unused in the shipped blog
@@ -434,7 +434,7 @@ section padding (~7em), matching the source's `<hr>`-separated layout.
 - [ ] Body `#1d1e21`, text `#aaaaaa`, Poppins 400/500/600/700 via Google
       Fonts `<link>` in `index.html`; dark surfaces `#18191c` (navbar
       scrolled + team cards) and `#161719` (social circles)
-- [ ] `.btn-custom` hero pill: uppercase 13px/700, `rgba(255,255,255,0.1)`
+- [ ] `.btn-custom` hero, 2 px rounded: uppercase 13px/700, `rgba(255,255,255,0.1)`
       bg, 4px 10px padding, radius 2px
 - [ ] subheading style: 13px uppercase weight 600 letter-spacing 2px
       `#aaaaaa`; section h2 40px/600 (28px mobile)
@@ -454,3 +454,7 @@ section padding (~7em), matching the source's `<hr>`-separated layout.
       renames + placeholder notes, and which source quirks were varied
       (nav "About" href, identical testimonial blocks, repeated portfolio
       titles)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `oraxol`: `.btn-custom{border-radius:2px}` — a 2 px rounding on both the base and the navbar-scoped rule.

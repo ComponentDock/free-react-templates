@@ -14,7 +14,7 @@ text modal you can use to share any type of text or message in a clean pop-up."
 1. **Full-page section** — white background, centered vertically
    - Heading: "Promptly" (h1 or h2, Poppins font, font-weight 400–500)
    - Description: brief tagline text
-   - Launch button: "Launch Modal" (Bootstrap primary, pill shape 40px radius)
+   - Launch button: "Launch Modal" (theme `.cl-btn`, square, border-radius 0)
 
 2. **Modal overlay** — semi-transparent dark backdrop (`rgba(0, 0, 0, 0.5)`)
 
@@ -34,7 +34,7 @@ text modal you can use to share any type of text or message in a clean pop-up."
 - White `.ftco-section` fills viewport
 - Centered layout (Bootstrap justify-content-center, text-center)
 - Heading is Poppins font, light/regular weight
-- Button uses Bootstrap `.btn-primary` with custom pill radius (40px)
+- Button is the theme's `.cl-btn` — `border-radius:0`, square (not a 40 px pill)
 - Button color: `#007bff` or `#3e64ff` (consistent with modal series)
 
 ### Modal dialog

@@ -29,7 +29,7 @@ Extracted from live preview CSS (style.css + bootstrap.min.css) and HTML:
 | Light section bg | `#f4f5f9` (or Bootstrap `#f8f9fa`) | `.bg-light`, product wrap bg |
 | Font family (body) | `Rubik` (Google Fonts, weights 400, 700) | Cloudflare font-face in preview |
 | Font family (testimonials) | `Crimson Text` (serif) | `.testimony blockquote p` |
-| Button border-radius | `50%` (pill-shaped) | `.btn` |
+| Button border-radius | `0.25rem` (4 px, slightly rounded) | `.btn` |
 | Button text | uppercase, 2px border | `.btn` |
 | Button padding | `20px 30px` (hero), `px-5 py-3` / `px-4 py-3` (other) | `.site-blocks-cover .btn`, inline classes |
 | Section padding | `5em 0` (desktop), `2.5em 0` (mobile) | `.site-section` |
@@ -51,7 +51,7 @@ Extracted from live preview CSS (style.css + bootstrap.min.css) and HTML:
 The Pharma preview shows:
 - Clean, white-dominated design with a medical/pharmacy aesthetic
 - Cyan/teal (`#51eaea`) as the primary accent on buttons, links, and decorative elements
-- Full-height hero with a pharmacy background image, centered white text, and a large pill-shaped "Shop Now" button
+- Full-height hero with a pharmacy background image, centered white text, and a large 4 px-rounded "Shop Now" button
 - Three overlapping banner cards below the hero (green, white, yellow) with promotional content
 - Product grid with clean white cards, product images, names, and prices
 - Light gray carousel section for "New Products"
@@ -104,7 +104,7 @@ Feature: Hero Cover
 - **THEN** a background image is displayed at full viewport height
 - **AND** a subtitle "Effective Medicine, New Medicine Everyday" is shown
 - **AND** a heading "Welcome To MedVault" is displayed
-- **AND** a pill-shaped "Shop Now" CTA button is present
+- **AND** a 4 px-rounded (`.btn{border-radius:0.25rem}`) "Shop Now" CTA button is present
 
 ### Promo Banners
 
@@ -135,7 +135,7 @@ Feature: Popular Products
 - **AND** 6 product cards are displayed in a 3-column grid
 - **AND** each card shows a product image, name, and price
 - **AND** some cards have an orange "Sale" tag with strikethrough original price
-- **AND** a "View All Products" pill-shaped button is at the bottom
+- **AND** a "View All Products" 4 px-rounded button is at the bottom
 
 #### Scenario: Sale tag styling
 
@@ -209,7 +209,7 @@ Feature: Footer
 
 - [ ] Navbar renders with correct brand name and all nav links
 - [ ] Hero cover displays at full viewport height with background image
-- [ ] Hero has subtitle, heading, and pill-shaped CTA button
+- [ ] Hero has subtitle, heading, and a 4 px-rounded CTA button
 - [ ] Three promo banners overlap the hero section
 - [ ] Banner colors match: green, white, yellow
 - [ ] Popular Products grid shows 6 product cards with images, names, prices
@@ -224,9 +224,13 @@ Feature: Footer
 - [ ] Brand color #51eaea used consistently across buttons, links, accents
 - [ ] Rubik font loaded from Google Fonts for body
 - [ ] Crimson Text loaded for testimonial quotes
-- [ ] Buttons are pill-shaped (border-radius: 50%) with uppercase text
+- [ ] Buttons are 4 px rounded (border-radius: 0.25rem) with uppercase text
 - [ ] All placeholder images use picsum.photos with deterministic seeds
 - [ ] No ColorLib references in any app code (only in spec and TEMPLATES.md)
 - [ ] public/CNAME contains medvault.free.componentdock.com
 - [ ] homepage in package.json is https://medvault.free.componentdock.com
 - [ ] 100% test coverage enforced
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `pharma`: `.btn{border-radius:0.25rem}` — 4 px, not circular.

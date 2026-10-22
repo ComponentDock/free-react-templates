@@ -33,7 +33,7 @@ TypeScript.
   (white at 80% opacity) with a green highlighted number inline, and a solid
   green "Get in touch" button. Navbar (transparent over hero): white wordmark
   left, centered links (Home, Company, Pricing, Leadership, Blog, Contact),
-  green pill "Get started" CTA right. Below: white strip of 5 grayscale
+  green rounded "Get started" CTA right. Below: white strip of 5 grayscale
   partner logos (Microsoft, Android, Java, Google, Adobe vibe — use
   text placeholders), then a domain-search band (heading "Search Your Domain
   Name", TLD pills .com/.net/.biz/.co/.me, price rows $9.75/$9.50/$8.95/
@@ -180,7 +180,7 @@ nav links, and a green CTA button.
 - **THEN** it SHALL show the "Nebuly" wordmark on the left
 - **AND** it SHALL show the links Home, Company, Pricing, Leadership, Blog,
   and Contact
-- **AND** it SHALL show a green pill "Get started" button on the right
+- **AND** it SHALL show a green, 7 px-rounded "Get started" button on the right
 - **AND** the Home link SHALL be marked active
 
 #### Scenario: Scrolled state
@@ -418,3 +418,7 @@ link columns, contact info, and a copyright bar.
 - [ ] Footer purple `#421b9b`; social icons are inline SVGs
 - [ ] Dark-mode `.dark` variants per repo conventions
 - [ ] README status table regenerated after merge (`npm run readme:status`)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `cloudtemplate`: `.button{border-radius:7px}` — the CTA is rounded, not a pill.

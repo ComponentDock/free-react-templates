@@ -29,7 +29,7 @@ Preview: https://preview.colorlib.com/theme/lawmaker/
 - Text: #000 (headings), #fff (on dark), #828282 (muted)
 - Overlay: rgba(0,0,0,0.7), rgba(0,0,0,0.5), rgba(0,0,0,0.4)
 - Font: "Work Sans" (Google Fonts, 400 weight)
-- Button: border-radius 4px, .btn-primary bg #3f52e3, hover #2f89fc
+- Button: border-radius 30px (pill), .btn-primary bg #3f52e3, hover #2f89fc
 - Section padding: 7em 0 (most sections)
 
 ## Fidelity notes

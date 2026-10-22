@@ -211,7 +211,7 @@ TypeScript.
     headings (`.colorlib-heading h2`) 34px/300 (30px mobile); nav logo
     24px/700 uppercase; price 40px/400; counters 60px/300; labels 12–20px.
   - Buttons: `.btn-primary` = bg #f17445, #fff, border 2px #f17445,
-    hover #f3865d; base `.btn` padding 8px 20px, radius 0 (Bootstrap 3);
+    hover #f3865d; base `.btn` padding 8px 20px, radius 30px (pill), not the Bootstrap 3 default;
     request Submit = pill radius **30px**, border 1px
     rgba(255,255,255,.3), padding 12px, margin-top 28px; subscribe
     "Subscribe Now" = bg **rgba(255,255,255,.2)**, #fff, no border;
@@ -597,3 +597,7 @@ and a document title.
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` on lines 401
       AND 1849 "Flawless", + surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `flawless`: `.btn{border-radius:30px}` — the theme overrides Bootstrap 3's square default.

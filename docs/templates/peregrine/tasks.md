@@ -20,7 +20,7 @@
   photo (Santorini-style coastal town / beach / palms) under a
   **purple-blue gradient overlay** (`#6b75ff → #59b7ff`, 45deg, opacity
   .3), huge white bold right-aligned headline "Be a Traveler not a
-  Tourist"; ONE saturated accent — gold `#ffb400` (Book Now pill, Search
+  Tourist"; ONE saturated accent — gold `#ffb400` (Book Now 2 px-rounded, Search
   button, stars, blog day numbers, Subscribe/Read more buttons, active
   nav link). White / light-grey (`#f8f9fa`) body sections, dark
   `#232931` search panel + testimonial overlay, dark `#222831` footer.
@@ -33,7 +33,7 @@
   counters (or a simple count-up on mount).
 - **Font:** Google **Poppins** only (body 16px, lh 1.8). Load via
   `<link>` in `index.html`.
-- **Buttons:** Book Now = gold `#ffb400` pill, WHITE text, radius 2px,
+- **Buttons:** Book Now = gold `#ffb400`, 2 px rounded, WHITE text,
   padding 12.8px 18px, 1px gold border (desktop only — `d-none
 d-lg-block` equivalent). Search = gold, BLACK text, padding 22px 10px,
   no radius. Read more (`btn btn-primary py-3 px-5`) = gold, white

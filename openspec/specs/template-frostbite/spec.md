@@ -35,7 +35,7 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Body font: **"Roboto", sans-serif**; Headings: **"Roboto Condensed", sans-serif**.
   - Body background: `#f4f4f4` (light gray).
   - Banner background: `#dde5e8` with background image.
-  - Button 1 (`.btn_1`): bg `#2f7dfc`, color `#fff`, **border-radius 50px** (pill shape), hover inverts to white bg + blue text.
+  - Button 1 (`.btn_1`): bg `#2f7dfc`, color `#fff`, **border-radius 0** (square), hover inverts to white bg + blue text.
   - Button 2 (`.btn_2`): bg `#fff`, color `#1e1e1e`, border-radius 4px, hover bg `#2f7dfc` + white text.
   - Section padding: `section_padding` class used on new_arrival, shipping_details.
   - Product cards: hover overlay with semi-transparent background, star rating icons, price, social icons (heart, bag).
@@ -213,3 +213,7 @@ and a document title.
 - [ ] Placeholder images from picsum.photos used (no asset copying)
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage maintained
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `winter`: `border-radius:0` is the only radius rule that reaches `.btn_1`; the 50 px values in this sheet belong to `.btn_3` / `.tp_btn`.

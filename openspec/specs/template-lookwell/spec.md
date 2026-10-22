@@ -29,7 +29,7 @@ Recreation of ColorLib "The Look" — a dark-themed photography/photo gallery te
 ## Section structure (in order)
 
 1. **Header/Navbar** — Logo ("The Look") + horizontal nav links: Home, Gallery, Artists, Shop, News, Contact. Sticky/transparent on hero.
-2. **Hero Slider** — Full-width Owl-carousel style slider with 3 slides. Each slide: background image with dark overlay, centered text — title "The Look", subtitle "Gallery", artist name "John Doe Showcase", date range "23 January - 14 February", "Read More" CTA button (pill, bordered).
+2. **Hero Slider** — Full-width Owl-carousel style slider with 3 slides. Each slide: background image with dark overlay, centered text — title "The Look", subtitle "Gallery", artist name "John Doe Showcase", date range "23 January - 14 February", "Read More" CTA button (4 px rounded, bordered).
 3. **Gallery Section** — Two-column layout on white background. Left column: editorial quote ("The camera makes you forget you're there...") + descriptive paragraph. Right side: 6 gallery items in 2-column grid (3 per column). Each item: image thumbnail, title "Red Passion 2017", artist "Artist: John Doe", "view gallery" link. Bottom: "see all galleries" link aligned right.
 4. **Blog Section** — Light background (#f6f7f9). Title "Latest from the blog". Two blog post cards side by side. Each: thumbnail image, category tag "photography", title, date, excerpt paragraph, "Read More" link.
 5. **Contact Section** — Dark background (#081624). Title "Get in touch". Description paragraph. "send message" button (pill, white border on dark).
@@ -104,3 +104,7 @@ Recreation of ColorLib "The Look" — a dark-themed photography/photo gallery te
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] All images use picsum.photos placeholders
 - [ ] Design tokens match: #081624 primary dark, Lato font, pill buttons, sharp corners default
+
+## Shape re-verification (live sheet, 2026-10-22)
+
+- `thelook`: `.btn{border-radius:.25rem}` — a 4 px rounding, not a pill.
