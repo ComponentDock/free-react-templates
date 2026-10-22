@@ -29,6 +29,5 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"
-  },
-  "homepage": "https://repertoire.free.componentdock.com"
+  }
 }
