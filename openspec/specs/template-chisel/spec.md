@@ -220,6 +220,6 @@ and a document title.
       coverage tests + build)
 - [ ] `npm run spec:validate` passes
 - [ ] TEMPLATES.md Reshape lines marked `[x]` with the Chisel surge URL
-- [ ] `"homepage": "https://free-react-templates-chisel.surge.sh"` in
+- [ ] `"homepage": "https://chisel.free.componentdock.com"` in
       `apps/chisel/package.json`
 - [ ] `npm run readme:status` regenerates README with Chisel listed

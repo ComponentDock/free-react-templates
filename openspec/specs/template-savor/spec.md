@@ -238,5 +238,5 @@ test:coverage -- --project apps/savor` or `scripts/verify-app.sh savor`)
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: BOTH TEMPLATES.md Foodeiblog copies (lines 263 + 1782)
-      `[~]` → `[x]` + Surge URL (`free-react-templates-savor.surge.sh`) +
+      `[~]` → `[x]` + Surge URL (`savor.free.componentdock.com`) +
       homepage + `npm run readme:status`

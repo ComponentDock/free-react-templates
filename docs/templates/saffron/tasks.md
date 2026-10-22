@@ -204,6 +204,6 @@ solid #ccc`): centered h5 "Follow me © instagram" (padding 20px 0) +
       immediately (`gh pr merge --squash --delete-branch`).
 - [ ] After merge: mark TEMPLATES.md Juli lines 266 and 2400
       `[~]`→`[x]` with Surge URL
-      `https://free-react-templates-saffron.surge.sh` + homepage, run
+      `https://petal.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify `npx knip` + curl the
       Surge URL.

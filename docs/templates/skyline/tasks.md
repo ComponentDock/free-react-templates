@@ -33,7 +33,7 @@
      social + copyright.
 - **Recreation name:** Skyline (NEW name — never reuse "Dreamrs"). App
   folder `apps/skyline`, package `@free-react-templates/skyline`, homepage
-  `https://free-react-templates-skyline.surge.sh`.
+  `https://skyline.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/skyline-<n>/<w>/<h>`); lucide-react icons + inline SVG
   brand icons; Poppins via Google Fonts `<link>`; newsletter form prevents

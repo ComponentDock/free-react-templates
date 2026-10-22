@@ -213,6 +213,6 @@ justify-content-start`): `div.section_title` (Ubuntu 18px 700
    must include source URL, preview URL, tokens used, renames, placeholder
    images. Merge immediately with `gh pr merge --squash --delete-branch`.
 8. After merge: mark TEMPLATES.md line 242 `[~]`→`[x]` with surge URL
-   (https://free-react-templates-dispatch.surge.sh) + homepage, run
+   (https://dispatch.free.componentdock.com) + homepage, run
    `npm run readme:status`, commit `chore: mark Dispatch (Avision) as
 deployed with live Surge URL`.

@@ -67,7 +67,7 @@ preview host.
 - **Recreation name:** **Stratos** (new, original — differs from ColorLib
   "Cloudnest"). App folder `apps/stratos`, package
   `@free-react-templates/stratos`, homepage
-  `https://free-react-templates-stratos.surge.sh`.
+  `https://stratos.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/stratos-<n>/<w>/<h>` for avatars); lucide-react
   icons (Cloud logo inline SVG); DM Sans via Google Fonts; indigo palette

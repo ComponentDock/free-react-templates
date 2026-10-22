@@ -175,4 +175,4 @@ package-lock.json`.
    source's repeated desktop_mac, no fancybox lightbox / vimeo embed /
    owl carousel, reworded copy).
 7. Ship: TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`;
-   deploy URL `https://free-react-templates-fortis.surge.sh/`.
+   deploy URL `https://fortis.free.componentdock.com/`.

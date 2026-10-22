@@ -108,6 +108,6 @@
       placeholder images, script logo as text, "Treading Post" typo →
       "Trending Posts"), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-savory.surge.sh) + homepage; run
+      (https://savory.free.componentdock.com) + homepage; run
       `npm run readme:status`; push. TEMPLATES.md lists Bueno TWICE
       (lines 250 and 2853) — mark BOTH copies.

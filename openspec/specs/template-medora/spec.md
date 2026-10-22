@@ -339,7 +339,7 @@ credit link.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/medora`); `grep -c "free-react-templates/medora"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-medora.surge.sh"`
+- [ ] `"homepage": "https://medora.free.componentdock.com"`
       in `apps/medora/package.json`
 - [ ] PR title: `feat: Medora — medical clinic website template (ColorLib
   Medical Wordpress Themes)`; body includes the source URL, the

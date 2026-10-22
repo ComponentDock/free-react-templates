@@ -194,4 +194,4 @@ toggle('dark')` + localStorage `theme` key; default light. Implement the
       copies `[x]` (lines 138, 1459, 2907).
 - [ ] Commit `feat: Pigment — creative agency template (ColorLib Creativex 3)`;
       PR + immediate squash merge; surge deploy
-      https://free-react-templates-pigment.surge.sh.
+      https://kreativ.free.componentdock.com.

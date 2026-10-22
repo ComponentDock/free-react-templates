@@ -178,5 +178,5 @@ photographer portfolio website template (ColorLib Elena Voss)`.
   preview.colorlib.com), tokens, differences (rename, placeholders,
   single-page anchors), TEMPLATES.md three-copy note (lines 139 / 2445 /
   2908).
-- After merge: surge URL `https://free-react-templates-shutter.surge.sh`,
+- After merge: surge URL `https://shutter.free.componentdock.com`,
   TEMPLATES.md `[x]` on ALL THREE copies, `npm run readme:status`.

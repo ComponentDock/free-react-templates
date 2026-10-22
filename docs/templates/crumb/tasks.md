@@ -99,5 +99,5 @@ transparent)`; content bottom-left: uppercase date/category (13px white,
 - [ ] Push `feat/template-crumb`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (`free-react-templates-crumb.surge.sh`) + homepage + `npm run
+      (`crumb.free.componentdock.com`) + homepage + `npm run
   readme:status`.

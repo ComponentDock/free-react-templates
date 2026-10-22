@@ -80,7 +80,7 @@
 - [ ] Push `feat/template-quill`, open PR (source template, preview URL,
       design tokens, what differs), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-quill.surge.sh) + homepage; run
+      (https://quill.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.
 
 ## Reference re-verification — 2026-10-22 (prep stream)

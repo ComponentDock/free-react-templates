@@ -129,4 +129,4 @@ package-lock.json`.
    tokens (`#72b01d`, `#1a1e24`, Montserrat), what differs (Coastly name,
    picsum placeholders, real `<label>`s, interactive validation summary).
 7. Ship: TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`;
-   deploy URL `https://free-react-templates-coastly.surge.sh/`.
+   deploy URL `https://coastly.free.componentdock.com/`.

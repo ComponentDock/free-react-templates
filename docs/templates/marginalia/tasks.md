@@ -99,5 +99,5 @@
       URL unreachable — screenshot-only reference incl. Jevelin note,
       design tokens, what differs), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-marginalia.surge.sh) + homepage; run
+      (https://marginalia.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

@@ -145,4 +145,4 @@
    what differs (Altar name, couple names, picsum placeholders, live
    countdown, validated form).
 7. Ship: TEMPLATES.md `[~]` → `[x]` (line 235) + surge URL
-   `https://free-react-templates-altar.surge.sh/` + `npm run readme:status`.
+   `https://wedlock.free.componentdock.com/` + `npm run readme:status`.

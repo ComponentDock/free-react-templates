@@ -31,7 +31,7 @@
   (`primary-btn`, radius 50px, uppercase, letter-spacing).
 - **Recreation name:** Gloss. App folder `apps/gloss`, package
   `@free-react-templates/gloss`, homepage
-  `https://free-react-templates-gloss.surge.sh`.
+  `https://gloss.free.componentdock.com`.
 - **Design approach:** dark maroon hero with seeded picsum photo +
   headline; light about with 4 service cards; dark testimonials band; works
   gallery with seeded photo tiles; blog cards with seeded photos; shop grid

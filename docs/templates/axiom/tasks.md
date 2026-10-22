@@ -135,5 +135,5 @@
       images, brand carousel simplification, video play decoration,
       no assets copied), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-axiom.surge.sh) + homepage; run
+      (https://axiom.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

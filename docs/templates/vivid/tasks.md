@@ -137,5 +137,5 @@ from-fuchsia-500 to-orange-500`; no assets copied.
       design tokens, what differs: name, placeholder images, text logo),
       merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-vivid.surge.sh) + homepage; run
+      (https://vivid.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

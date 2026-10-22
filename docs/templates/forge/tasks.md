@@ -140,5 +140,5 @@ images/hero_2.jpg`, cover, top center; 100vh / min 700px; `:before`
       placeholder images, video lightbox approach, slider/carousel
       simplification), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-forge.surge.sh) + homepage; run
+      (https://forge.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

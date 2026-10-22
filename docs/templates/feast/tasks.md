@@ -84,5 +84,5 @@ sans-serif`).
 - [ ] Push `feat/template-feast`, open PR (source template, preview URL,
       design tokens, what differs), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (`free-react-templates-feast.surge.sh`) + homepage + `npm run
+      (`feast.free.componentdock.com`) + homepage + `npm run
     readme:status` (bookkeeping on main).

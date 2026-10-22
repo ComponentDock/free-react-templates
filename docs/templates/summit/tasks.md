@@ -170,6 +170,6 @@ solid #dbdcf1`, focus `#111343`; "SEND MESSAGE" pill.
    must include source URL, preview URL, tokens used, renames, placeholder
    images. Merge immediately with `gh pr merge --squash --delete-branch`.
 8. After merge: mark TEMPLATES.md lines 363, 947, 1669 `[~]`→`[x]` with
-   surge URL (https://free-react-templates-summit.surge.sh) + homepage,
+   surge URL (https://summit.free.componentdock.com) + homepage,
    run `npm run readme:status`, commit `chore: mark Summit (Confer) as
 deployed with live Surge URL`.

@@ -66,7 +66,7 @@ preview host.
 - **Recreation name:** **Endpoint** (NEW name — ColorLib "Apiforge" is
   never reused). App folder `apps/endpoint`, package
   `@free-react-templates/endpoint`, homepage
-  `https://free-react-templates-endpoint.surge.sh`.
+  `https://endpoint.free.componentdock.com`.
 - **Recreation approach:** no asset copying — lucide-react icons (brand
   icons GitHub/X/LinkedIn as inline SVG), Outfit via Google Fonts, orange
   scale in `@theme`, terminal recreated with Tailwind (traffic-light dots),

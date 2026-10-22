@@ -233,5 +233,5 @@ social icons, and a copyright line.
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` for BOTH Essence rows + Surge
-      URL (`free-react-templates-garment.surge.sh`) + homepage + `npm run
+      URL (`garment.free.componentdock.com`) + homepage + `npm run
   readme:status`

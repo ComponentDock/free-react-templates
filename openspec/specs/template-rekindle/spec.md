@@ -341,7 +341,7 @@ main landmark, and a document title.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/rekindle`); `grep -c "free-react-templates/rekindle"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-rekindle.surge.sh"`
+- [ ] `"homepage": "https://rekindle.free.componentdock.com"`
       in `apps/rekindle/package.json`
 - [ ] PR title: `feat: Rekindle — blog magazine website template (ColorLib
   Revive)`; body includes the source URL, preview URL, tokens, and the

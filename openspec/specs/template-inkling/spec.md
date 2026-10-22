@@ -285,7 +285,7 @@ main landmark, and a document title.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/inkling`); `grep -c "free-react-templates/inkling"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-inkling.surge.sh"`
+- [ ] `"homepage": "https://vellum.free.componentdock.com"`
       in `apps/inkling/package.json`
 - [ ] PR title: `feat: Inkling — blog magazine website template (ColorLib
     Readit)`; body includes the source URL, preview URL, tokens, and the

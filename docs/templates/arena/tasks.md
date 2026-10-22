@@ -106,7 +106,7 @@ section_padding`: tittle "All Fighter"; isotope-style masonry `grid` +
 - [ ] Verify: `npm run verify:app -- arena` (typecheck → lint → vitest →
       build).
 - [ ] Deploy: PR to main, merge immediately (squash), confirm surge URL
-      `https://free-react-templates-arena.surge.sh` returns 200.
+      `https://arena.free.componentdock.com` returns 200.
 - [ ] Bookkeeping: mark `- [ ] **Beko**` as `[x]` with the arena surge URL;
       regenerate README template status
       (`npm run readme:status`).

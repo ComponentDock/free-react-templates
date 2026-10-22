@@ -102,5 +102,5 @@ Themes) spec + research`.
 personal branding website template (ColorLib Personal Wordpress Themes)`.
 - PR body: source URL, redirect note, 404 preview note, tokens, differences
   (rename, placeholders, dropped comment form), TEMPLATES.md line 279 note.
-- After merge: surge URL `https://free-react-templates-persona.surge.sh`,
+- After merge: surge URL `https://persona.free.componentdock.com`,
   TEMPLATES.md `[x]`, `npm run readme:status`.

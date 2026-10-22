@@ -310,5 +310,5 @@ Subscribe form, social links, and a copyright bar.
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md Hikers (line 264) `[~]` → `[x]` + Surge URL
-      (`free-react-templates-trailhead.surge.sh`) + homepage + `npm run
+      (`trailhead.free.componentdock.com`) + homepage + `npm run
     readme:status`

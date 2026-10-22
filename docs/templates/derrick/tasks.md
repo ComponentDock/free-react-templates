@@ -153,4 +153,4 @@ no-gutters` → 4 × `div.service-1` (col-lg-3 col-md-6): number badge
       green; README status regenerated after merge.
 - [ ] Commit `feat: Derrick — industrial engineering template (ColorLib
     Engineers)`; PR + immediate squash merge; surge deploy
-      https://free-react-templates-derrick.surge.sh.
+      https://derrick.free.componentdock.com.

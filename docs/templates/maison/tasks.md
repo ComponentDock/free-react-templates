@@ -37,7 +37,7 @@
 - **Recreation name:** Maison (NEW original name — the ColorLib source name
   "Loaft" is never reused). App folder `apps/maison`, package
   `@free-react-templates/maison`, homepage
-  `https://free-react-templates-maison.surge.sh`.
+  `https://maison.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/maison-<n>/<w>/<h>`); lucide-react icons; Roboto +
   Rajdhani via Google Fonts; gold primary in `@theme`; repo-standard Navbar

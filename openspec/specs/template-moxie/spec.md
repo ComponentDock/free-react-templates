@@ -437,7 +437,7 @@ dark-mode variants.
       https://creativex-colorlib.pages.dev/ (layout, colors, pill shapes,
       section order 1:1).
 - [ ] TEMPLATES.md: mark the Creativex 3 item `[x]` with surge URL
-      `https://free-react-templates-moxie.surge.sh`; run
+      `https://kreativ.free.componentdock.com`; run
       `npm run readme:status`.
 - [ ] PR description includes: source template + preview URL, design
       tokens, renames (Pixel Studio → Moxie), placeholder images.

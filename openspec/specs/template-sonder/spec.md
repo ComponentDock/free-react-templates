@@ -282,7 +282,7 @@ main landmark, and a document title.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/sonder`); `grep -c "free-react-templates/sonder"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-sonder.surge.sh"`
+- [ ] `"homepage": "https://sonder.free.componentdock.com"`
       in `apps/sonder/package.json`
 - [ ] PR title: `feat: Sonder — lifestyle blog website template (ColorLib
   Philosophy)`; body includes the source URL, preview URL, tokens, and

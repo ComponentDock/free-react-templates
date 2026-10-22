@@ -119,7 +119,7 @@ Project Details textarea, Send Message) → footer (`border-t bg-gray-50`,
 12. [ ] Gate: `bash scripts/verify-app.sh moxie` (typecheck + lint + 100%
         coverage + build) + `npm run spec:validate`.
 13. [ ] TEMPLATES.md: mark the Creativex 3 item `[x]` with surge URL
-        `https://free-react-templates-moxie.surge.sh`; run
+        `https://kreativ.free.componentdock.com`; run
         `npm run readme:status`.
 14. [ ] PR: `feat: Moxie — creative agency template (ColorLib Creativex 3)`;
         merge immediately (`gh pr merge --squash --delete-branch`).

@@ -122,5 +122,5 @@ col-sm-6` `single-footer-widget` — "About Us" (blurb + footer-logo
       "Eden", preview URL reachable, design tokens, what differs: name,
       placeholder images, text logo), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-glossy.surge.sh) + homepage; run
+      (https://glossy.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

@@ -424,7 +424,7 @@ a main landmark, and a document title.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/upnode`); `grep -c "free-react-templates/upnode"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-upnode.surge.sh"`
+- [ ] `"homepage": "https://upnode.free.componentdock.com"`
       in `apps/upnode/package.json`
 - [ ] PR title: `feat: Upnode — web hosting website template (ColorLib
 Hami)`; body includes the source URL, preview URL, tokens, and the

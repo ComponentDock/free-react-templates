@@ -266,7 +266,7 @@ bar.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/glyph`); `grep -c "free-react-templates/glyph"
   package-lock.json` >= 1
-- [ ] `"homepage": "https://free-react-templates-glyph.surge.sh"`
+- [ ] `"homepage": "https://glyph.free.componentdock.com"`
       in `apps/glyph/package.json`
 - [ ] PR title: `feat: Glyph — blog template (ColorLib Opium)`; body
       includes source URL, preview URL

@@ -53,7 +53,7 @@ migration, so it follows the mirror, not today's preview host.
     Google Fonts `<link>`.
 - **Recreation name:** Mocha (NEW — differs from ColorLib "Brewhouse").
   App folder `apps/mocha`, package `@free-react-templates/mocha`, demo
-  `https://free-react-templates-mocha.surge.sh`.
+  `https://mocha.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/mocha-<n>/<w>/<h>`); lucide-react icons + inline
   SVG brand icons; DM Sans + Playfair Display via Google Fonts;

@@ -235,5 +235,5 @@ test:coverage -- --project apps/crumb` or `scripts/verify-app.sh crumb`)
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (`free-react-templates-crumb.surge.sh`) + homepage + `npm run
+      (`crumb.free.componentdock.com`) + homepage + `npm run
 readme:status`

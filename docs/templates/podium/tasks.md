@@ -235,5 +235,5 @@ tech conference website template (ColorLib Eventor)`.
   preview.colorlib.com), tokens, differences (rename, placeholders,
   single-page anchors, client-side tabs/countdown), TEMPLATES.md
   three-copy note (lines 141 / 1678 / 2910).
-- After merge: surge URL `https://free-react-templates-podium.surge.sh`,
+- After merge: surge URL `https://podium.free.componentdock.com`,
   TEMPLATES.md `[x]` on ALL THREE copies, `npm run readme:status`.

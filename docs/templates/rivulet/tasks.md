@@ -120,5 +120,5 @@ background-attachment: fixed; background-position: top center`;
       name, placeholder images, SVG logo, particles approach), merge
       immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-rivulet.surge.sh) + homepage; run
+      (https://rivulet.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

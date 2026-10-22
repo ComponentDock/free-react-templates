@@ -37,7 +37,7 @@
 - **Recreation name:** Zest (NEW — the ColorLib source name "Zeedapp" is
   never reused). App folder `apps/zest`, package
   `@free-react-templates/zest`, homepage
-  `https://free-react-templates-zest.surge.sh`.
+  `https://zest.free.componentdock.com`.
 - **Recreation approach:** showcase page with gradient variant cards;
   lucide-react icons; pink primary in `@theme`; repo-standard Navbar
   (dark-mode toggle) + Footer chrome.

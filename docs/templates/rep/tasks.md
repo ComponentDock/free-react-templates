@@ -207,5 +207,5 @@ px-5 btn-block` "Send Message"; `.form-control`: height 43px, radius
       immediately (`gh pr merge --squash --delete-branch`).
 - [ ] After merge: mark TEMPLATES.md Gymer lines 407, 1853 and 2325
       `[~]`→`[x]` with Surge URL
-      `https://free-react-templates-rep.surge.sh` + homepage, run `npm run
+      `https://pumply.free.componentdock.com` + homepage, run `npm run
     readme:status`.

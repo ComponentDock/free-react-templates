@@ -166,5 +166,5 @@ research`.
   preview.colorlib.com), tokens, differences (rename, placeholders,
   single-page anchors), TEMPLATES.md three-copy note (lines 138 / 1459 /
   2907).
-- After merge: surge URL `https://free-react-templates-kreativ.surge.sh`,
+- After merge: surge URL `https://kreativ.free.componentdock.com`,
   TEMPLATES.md `[x]` on ALL THREE copies, `npm run readme:status`.

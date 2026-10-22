@@ -122,5 +122,5 @@
       categories Design/Handmade/Interior/Packaging/Lifestyle).
 - [ ] Verify: `scripts/verify-app.sh zine` (typecheck + lint + 100% coverage + build). Then push branch, open PR, squash-merge immediately
       (`gh pr merge --squash --delete-branch`).
-- [ ] After merge: mark ALL THREE TEMPLATES.md Katt copies (lines 267, 1472, 2523) `[x]` with Surge URL `https://free-react-templates-zine.surge.sh` + homepage, run `npm run readme:status`, commit + push. Verify
+- [ ] After merge: mark ALL THREE TEMPLATES.md Katt copies (lines 267, 1472, 2523) `[x]` with Surge URL `https://zine.free.componentdock.com` + homepage, run `npm run readme:status`, commit + push. Verify
       `npx knip` + curl the Surge URL.

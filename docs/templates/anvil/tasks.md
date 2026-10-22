@@ -33,7 +33,7 @@
     (mono accents).
 - **Recreation name:** Anvil (original name — the ColorLib source name
   "Industrie" is never reused). App folder `apps/anvil`, package
-  `@free-react-templates/anvil`, surge `free-react-templates-anvil.surge.sh`.
+  `@free-react-templates/anvil`, surge `anvil.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/anvil-<n>/<w>/<h>`); lucide-react icons;
   Nunito Sans via Google Fonts; forms prevent default (no backend); red

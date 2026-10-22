@@ -406,5 +406,5 @@ columns plus a copyright bar with social icons.
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md Fitfloss (lines 396, 1841) `[~]` → `[x]` +
-      Surge URL (`free-react-templates-swole.surge.sh`) + homepage + `npm
+      Surge URL (`swole.free.componentdock.com`) + homepage + `npm
     run readme:status`

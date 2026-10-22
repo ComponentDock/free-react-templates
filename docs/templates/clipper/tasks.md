@@ -55,4 +55,4 @@
 - [ ] PR `feat: Clipper — Barber Shop template (ColorLib Alotan)` → merge
       immediately.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
-      main): append `· [clipper](https://free-react-templates-clipper.surge.sh)`.
+      main): append `· [clipper](https://clipper.free.componentdock.com)`.

@@ -282,5 +282,5 @@ The template SHALL pass the per-app verification gate before shipping.
   (knip guard) and register `injectUiSource()` in `vite.config.ts`
 - **AND** after merge, TEMPLATES.md SHALL mark BOTH Ionize copies (lines 265
   and 1713) `[x]` with the live Surge URL
-  `https://free-react-templates-volt.surge.sh` + homepage, and `npm run
+  `https://volt.free.componentdock.com` + homepage, and `npm run
 readme:status` SHALL regenerate the README status section

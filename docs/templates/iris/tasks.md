@@ -137,4 +137,4 @@
       green; README status regenerated after merge.
 - [ ] Commit `feat: Iris — photography template (ColorLib Flash)`; PR +
       immediate squash merge; surge deploy
-      https://free-react-templates-iris.surge.sh.
+      https://iris.free.componentdock.com.

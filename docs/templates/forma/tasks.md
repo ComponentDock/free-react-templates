@@ -73,7 +73,7 @@ migration, so it follows the mirror, not today's preview host.
 - **Recreation name:** **Forma** (NEW name — ColorLib "Atelier" is never
   reused). App folder `apps/forma`, package
   `@free-react-templates/forma`, homepage
-  `https://free-react-templates-forma.surge.sh`.
+  `https://forma.free.componentdock.com`.
 - **Recreation approach:** no asset copying — lucide-react icons (brand
   icons GitHub/X/LinkedIn as inline SVG), Playfair + DM Sans via Google
   Fonts, gold scale in `@theme`, dark-mode toggle on `<html>.dark`, hero

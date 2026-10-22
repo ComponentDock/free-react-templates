@@ -400,7 +400,7 @@ main landmark, and a document title.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/kreativ`); `grep -c "free-react-templates/kreativ"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-kreativ.surge.sh"`
+- [ ] `"homepage": "https://kreativ.free.componentdock.com"`
       in `apps/kreativ/package.json`
 - [ ] PR title: `feat: Kreativ — creative agency website template (ColorLib
     Creativex 3)`; body includes the source URL, preview URL (pages.dev),

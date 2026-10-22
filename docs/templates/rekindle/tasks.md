@@ -86,7 +86,7 @@ icons, copyright bar).
 10. [ ] Gate: `bash scripts/verify-app.sh rekindle` (typecheck + lint + 100%
         coverage + build) + `npm run spec:validate`.
 11. [ ] TEMPLATES.md: mark BOTH Revive copies `[x]` (lines 283 + 2211) with
-        surge URL `https://free-react-templates-rekindle.surge.sh`; run
+        surge URL `https://rekindle.free.componentdock.com`; run
         `npm run readme:status`.
 12. [ ] PR: `feat: Rekindle — blog magazine website template (ColorLib
     Revive)`; merge immediately (`gh pr merge --squash --delete-branch`).

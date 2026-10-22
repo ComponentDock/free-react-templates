@@ -64,7 +64,7 @@ Recreates https://colorlib.com/wp/template/ronaldo/ as `apps/showcase`
 17. Full local gate: `npm run verify:app -- showcase` (typecheck + lint +
     vitest 100% + build). Then PR → immediate squash merge → bookkeeping:
     mark TEMPLATES.md lines 490 + 2355 + 2422 + 2557 + 2723 `[x]` with
-    `https://free-react-templates-showcase.surge.sh`, `npm run readme:status`.
+    `https://showcase.free.componentdock.com`, `npm run readme:status`.
 
 ## Design notes (fidelity)
 

@@ -67,7 +67,7 @@
     heading 30px capitalize weight 600; category label 30px bold uppercase.
 - **Recreation name:** Garment (NEW — differs from ColorLib "Essence"). App
   folder `apps/garment`, package `@free-react-templates/garment`. Surge
-  subdomain `free-react-templates-garment.surge.sh`.
+  subdomain `garment.free.componentdock.com`.
 - **Recreation approach:** verified picsum photo refs for the subject-critical
   slots (screened: arbitrary seeds render random scenes — hero
   `picsum.photos/id/64/1600/600`, CTA `id/65/1600/700`, categories

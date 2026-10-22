@@ -407,5 +407,5 @@ column, social icons, and a copyright bar.
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md Findstate (lines 395, 1014, 2589) `[~]` →
-      `[x]` + Surge URL (`free-react-templates-keyhold.surge.sh`) +
+      `[x]` + Surge URL (`keyhold.free.componentdock.com`) +
       homepage + `npm run readme:status`

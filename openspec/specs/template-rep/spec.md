@@ -428,4 +428,4 @@ test:coverage -- --project apps/rep` or `scripts/verify-app.sh rep`)
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: mark TEMPLATES.md Gymer (lines 407, 1853, 2325)
-      `[~]` → `[x]` + Surge URL (`https://free-react-templates-rep.surge.sh`) + homepage + `npm run readme:status`
+      `[~]` → `[x]` + Surge URL (`https://pumply.free.componentdock.com`) + homepage + `npm run readme:status`

@@ -216,4 +216,4 @@ package-lock.json`. Copy `vite.config.ts` `injectUiSource()` pattern
    vimeo embed / fancybox / Colorlib footer link, reworded copy).
 7. Ship: mark ALL FOUR `miners` TEMPLATES.md rows `[x]` (lines 453, 1099,
    1350, 2341) + surge URL + `npm run readme:status`; deploy URL
-   `https://free-react-templates-veinly.surge.sh/`.
+   `https://veinly.free.componentdock.com/`.

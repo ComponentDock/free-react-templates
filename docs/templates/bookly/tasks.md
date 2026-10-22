@@ -141,4 +141,4 @@ package-lock.json`.
    differs (Bookly name, picsum placeholders, real `<label>`s, floating-label
    hook, interactive validation summary).
 7. Ship: TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`;
-   deploy URL `https://free-react-templates-bookly.surge.sh/`.
+   deploy URL `https://bookly.free.componentdock.com/`.

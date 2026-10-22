@@ -201,6 +201,6 @@ bg-11.jpg`): 4 `div.footer-widget-area.mb-50` (col-12 col-sm-6
       immediately (`gh pr merge --squash --delete-branch`).
 - [ ] After merge: mark TEMPLATES.md Fitnessgym lines 397 and 1844
       `[~]`→`[x]` with Surge URL
-      `https://free-react-templates-vigor.surge.sh` + homepage, run
+      `https://vigor.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify `npx knip` + curl the
       Surge URL.

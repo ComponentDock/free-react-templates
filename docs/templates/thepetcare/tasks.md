@@ -61,6 +61,6 @@
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D) + append live Surge URL.
 - [ ] Set `"homepage"` in `apps/thepetcare/package.json` to
-      `https://free-react-templates-thepetcare.surge.sh` (bookkeeping, state
+      `https://thepetcare.free.componentdock.com` (bookkeeping, state
       D).
 - [ ] Update README structure + `docs/ai-context.md` app list.

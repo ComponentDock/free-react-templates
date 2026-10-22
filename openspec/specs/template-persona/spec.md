@@ -295,7 +295,7 @@ credit link.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/persona`); `grep -c "free-react-templates/persona"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-persona.surge.sh"`
+- [ ] `"homepage": "https://persona.free.componentdock.com"`
       in `apps/persona/package.json`
 - [ ] PR title: `feat: Persona — personal branding website template
     (ColorLib Personal Wordpress Themes)`; body includes the source URL,

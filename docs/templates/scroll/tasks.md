@@ -133,5 +133,5 @@
       newsletter → local success state, no assets copied), merge
       immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-scroll.surge.sh) + homepage; run
+      (https://quill.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

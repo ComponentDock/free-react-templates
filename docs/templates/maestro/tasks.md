@@ -169,5 +169,5 @@
       images, parallax → static hero, carousel/donut simplifications,
       newsletter without Mailchimp), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-maestro.surge.sh) + homepage; run
+      (https://imagine.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

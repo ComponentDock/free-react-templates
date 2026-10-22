@@ -40,7 +40,7 @@
     Lightbulb, flaticon-modern-house → Home, flaticon-skyline → Building2.
 - **Recreation name:** Bastion. App folder `apps/bastion`, package
   `@free-react-templates/bastion`, homepage
-  `https://free-react-templates-bastion.surge.sh`.
+  `https://bastion.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/bastion-<n>/<w>/<h>`); lucide-react icons; Montserrat
   via Google Fonts; mint primary in `@theme`; repo-standard Navbar

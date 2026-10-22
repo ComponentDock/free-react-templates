@@ -34,7 +34,7 @@
   - Font: **"Poppins"** (Google Fonts `<link>`).
 - **Recreation name:** Foyer (original name — the ColorLib source name
   "Interior" is never reused). App folder `apps/foyer`, package
-  `@free-react-templates/foyer`, surge `free-react-templates-foyer.surge.sh`.
+  `@free-react-templates/foyer`, surge `foyer.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/foyer-<n>/<w>/<h>`); lucide-react icons; Poppins
   via Google Fonts; forms prevent default (no backend); gold primary in

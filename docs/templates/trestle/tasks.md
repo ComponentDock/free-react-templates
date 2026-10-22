@@ -41,7 +41,7 @@
     dark/light/solid-lime variants.
 - **Recreation name:** Trestle (NEW — ColorLib source is "Arcade"). App
   folder `apps/trestle`, package `@free-react-templates/trestle`, homepage
-  `https://free-react-templates-trestle.surge.sh`.
+  `https://trestle.free.componentdock.com`.
 - **Recreation approach:** seeded picsum placeholders
   (`picsum.photos/seed/trestle-<n>/<w>/<h>`); lucide-react icons; Roboto via
   Google Fonts; lime primary in `@theme`; repo-standard Navbar (dark-mode

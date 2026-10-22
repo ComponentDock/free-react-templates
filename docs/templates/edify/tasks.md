@@ -176,5 +176,5 @@ online learning template (ColorLib Courses)`.
 - PR body: source URL, preview URL (200), tokens, differences (rename,
   placeholders, single-page anchors), TEMPLATES.md two-copy note (lines
   366 / 1626).
-- After merge: surge URL `https://free-react-templates-edify.surge.sh`,
+- After merge: surge URL `https://edify.free.componentdock.com`,
   TEMPLATES.md `[x]` on BOTH copies, `npm run readme:status`.

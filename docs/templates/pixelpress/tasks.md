@@ -121,4 +121,4 @@ widget` `ul` (Games · Gaming Tips & Tricks · Online Games · Team
       green; README status regenerated after merge.
 - [ ] Commit `feat: Pixelpress — gaming blog template (ColorLib Endgam)`;
       PR + immediate squash merge; surge deploy
-      https://free-react-templates-pixelpress.surge.sh.
+      https://pixelpress.free.componentdock.com.

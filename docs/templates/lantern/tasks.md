@@ -119,5 +119,5 @@ research`.
 - PR body: source URL, preview URL (200), tokens, differences (rename,
   placeholders, single-page anchors), TEMPLATES.md three-copy note (lines
   281 / 481 / 2210).
-- After merge: surge URL `https://free-react-templates-lantern.surge.sh`,
+- After merge: surge URL `https://lantern.free.componentdock.com`,
   TEMPLATES.md `[x]` on ALL THREE copies, `npm run readme:status`.

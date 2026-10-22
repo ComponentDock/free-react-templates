@@ -151,6 +151,6 @@ d-flex`: text input (form-control) + submit `.btn.btn-primary
       coverage + build). Then push branch, open PR, squash-merge immediately
       (`gh pr merge --squash --delete-branch`).
 - [ ] After merge: mark TEMPLATES.md Hikers (line 264) `[x]` with Surge URL
-      `https://free-react-templates-trailhead.surge.sh` + homepage, run
+      `https://trailhead.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify `npx knip` + curl the
       Surge URL.

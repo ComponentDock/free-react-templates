@@ -28,7 +28,7 @@
   uppercase buttons (hero "Book Now" is white filled).
 - **Recreation name:** Stylely. App folder `apps/stylely`, package
   `@free-react-templates/stylely`, homepage
-  `https://free-react-templates-stylely.surge.sh`.
+  `https://stylely.free.componentdock.com`.
 - **Design approach:** light theme with red accents; hero = coral-red section
   with seeded picsum photo; about split; services with lucide icons; offers +
   blog with seeded photos; pricing as priced rows; testimonials with

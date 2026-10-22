@@ -197,5 +197,5 @@ research`.
   preview.colorlib.com), tokens, differences (rename, placeholders,
   single-page anchors, client-side search), TEMPLATES.md three-copy note
   (lines 140 / 2588 / 2909).
-- After merge: surge URL `https://free-react-templates-keyhaven.surge.sh`,
+- After merge: surge URL `https://keyhaven.free.componentdock.com`,
   TEMPLATES.md `[x]` on ALL THREE copies, `npm run readme:status`.

@@ -176,6 +176,6 @@
       immediately (`gh pr merge --squash --delete-branch`).
 - [ ] After merge: mark TEMPLATES.md Findstate lines 395, 1014, 2589
       `[~]`→`[x]` with Surge URL
-      `https://free-react-templates-keyhold.surge.sh` + homepage, run
+      `https://keyhold.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify `npx knip` + curl the
       Surge URL.

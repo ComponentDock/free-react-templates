@@ -249,5 +249,5 @@ chips, and a copyright bottom bar.
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (`free-react-templates-prisma.surge.sh`) + homepage + `npm run
+      (`kreativ.free.componentdock.com`) + homepage + `npm run
   readme:status`

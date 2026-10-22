@@ -250,7 +250,7 @@ social icons, and a copyright bar.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/bulletin`); `grep -c "free-react-templates/bulletin"
     package-lock.json` >= 1
-- [ ] `"homepage": "https://free-react-templates-bulletin.surge.sh"`
+- [ ] `"homepage": "https://bulletin.free.componentdock.com"`
       in `apps/bulletin/package.json`
 - [ ] PR title: `feat: Bulletin — news magazine template (ColorLib
     Newsflex)`; body includes source URL, preview URL

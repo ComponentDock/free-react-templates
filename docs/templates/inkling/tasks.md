@@ -124,5 +124,5 @@ made with ♥ by Colorlib").
 — blog magazine website template (ColorLib Readit)`.
 - PR body: source URL, preview URL, tokens, differences (rename,
   placeholders, single-page anchors), TEMPLATES.md line-282 note.
-- After merge: surge URL `https://free-react-templates-inkling.surge.sh`,
+- After merge: surge URL `https://vellum.free.componentdock.com`,
   TEMPLATES.md `[x]` on line 282, `npm run readme:status`.

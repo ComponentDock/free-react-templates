@@ -117,5 +117,5 @@
       meta pattern (Sept. 10, 2019 · Travel · 5 Comment) and excerpt length.
 - [ ] Verify: `scripts/verify-app.sh volt` (typecheck + lint + 100% coverage + build). Then push branch, open PR, squash-merge immediately
       (`gh pr merge --squash --delete-branch`).
-- [ ] After merge: mark TEMPLATES.md Ionize **BOTH copies** (lines 265 AND 1713) `[x]` with Surge URL `https://free-react-templates-volt.surge.sh` + homepage, run `npm run readme:status`, commit + push. Verify
+- [ ] After merge: mark TEMPLATES.md Ionize **BOTH copies** (lines 265 AND 1713) `[x]` with Surge URL `https://volt.free.componentdock.com` + homepage, run `npm run readme:status`, commit + push. Verify
       `npx knip` + curl the Surge URL.

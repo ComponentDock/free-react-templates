@@ -280,7 +280,7 @@ main landmark, and a document title.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/lantern`); `grep -c "free-react-templates/lantern"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://free-react-templates-lantern.surge.sh"`
+- [ ] `"homepage": "https://lantern.free.componentdock.com"`
       in `apps/lantern/package.json`
 - [ ] PR title: `feat: Lantern — blog website template (ColorLib
 Quitelight)`; body includes the source URL, preview URL, tokens, and the

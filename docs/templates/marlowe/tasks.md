@@ -120,5 +120,5 @@ rgba(27,28,30,.8) 90%)`, body absolutely over image.
       "Callie", preview URL reachable, design tokens, what differs: name,
       placeholder images, text logo, placeholder ads), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-marlowe.surge.sh) + homepage; run
+      (https://marlowe.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

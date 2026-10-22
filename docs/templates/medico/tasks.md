@@ -16,7 +16,7 @@
   app, all three rows marked `[x]`).
 - **Preview (reachable, HTTP 200):** https://preview.colorlib.com/theme/medico/
 - **App:** `apps/medico` (package `@free-react-templates/medico`), deployed to
-  https://free-react-templates-medico.surge.sh (HTTP 200, verified).
+  https://medico.free.componentdock.com.
 - **Spec:** `openspec/specs/template-medico/spec.md` (rewritten to describe the
   real Medico template; `npm run spec:validate` passes).
 

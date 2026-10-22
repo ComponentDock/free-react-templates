@@ -137,4 +137,4 @@ d-md-flex.align-items-center`: right half = `p.meta` counters
       green; README status regenerated after merge.
 - [ ] Commit `feat: Nomad — travel blog template (ColorLib Explore)`; PR +
       immediate squash merge; surge deploy
-      https://free-react-templates-nomad.surge.sh.
+      https://nomad.free.componentdock.com.

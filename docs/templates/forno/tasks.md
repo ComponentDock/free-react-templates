@@ -105,5 +105,5 @@
 - [ ] Push `feat/template-forno`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (`free-react-templates-forno.surge.sh`) + homepage + `npm run
+      (`forno.free.componentdock.com`) + homepage + `npm run
     readme:status`.

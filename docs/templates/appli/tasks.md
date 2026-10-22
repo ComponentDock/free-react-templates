@@ -41,7 +41,7 @@
 - **Recreation name:** Appli (keeps the original name — already a distinct
   working name). App folder `apps/appli`, package
   `@free-react-templates/appli`, homepage
-  `https://free-react-templates-appli.surge.sh`.
+  `https://appli.free.componentdock.com`.
 - **Design approach:** indigo `#404dff` brand scale in `@theme`
   (`--color-primary-600`), purple/blue gradient stops + pink CTA + navy
   headings + Muli/Raleway fonts; seeded picsum placeholders

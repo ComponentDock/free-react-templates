@@ -432,5 +432,5 @@ footer with copyright and social icons.
 - [ ] PR description: source template, preview URL (incl. the
       `01-homepage.html` demo path), design tokens, what differs
 - [ ] After merge: TEMPLATES.md Juli (lines 266 and 2400) `[~]` → `[x]` +
-      Surge URL (`free-react-templates-saffron.surge.sh`) + homepage + `npm
+      Surge URL (`petal.free.componentdock.com`) + homepage + `npm
     run readme:status`

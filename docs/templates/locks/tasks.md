@@ -35,7 +35,7 @@
   text, hover inverts).
 - **Recreation name:** Locks. App folder `apps/locks`, package
   `@free-react-templates/locks`, homepage
-  `https://free-react-templates-locks.surge.sh`.
+  `https://locks.free.componentdock.com`.
 - **Design approach:** dark photo hero with tan accents; hero = seeded
   picsum photo + headline + pill CTA + play button; black info bar with
   tan social strip; services with lucide icons; black "What We Do" band;

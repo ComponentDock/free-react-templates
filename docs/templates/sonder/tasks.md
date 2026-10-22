@@ -127,5 +127,5 @@ lifestyle blog website template (ColorLib Philosophy)`.
 - PR body: source URL, preview URL (200), tokens, differences (rename,
   placeholders, single-page anchors, font substitution), TEMPLATES.md
   four-copy note (lines 280 / 1723 / 2417 / 2989).
-- After merge: surge URL `https://free-react-templates-sonder.surge.sh`,
+- After merge: surge URL `https://sonder.free.componentdock.com`,
   TEMPLATES.md `[x]` on ALL FOUR copies, `npm run readme:status`.

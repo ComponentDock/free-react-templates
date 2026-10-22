@@ -187,4 +187,4 @@ and a document title.
 - [ ] `npm run spec:validate` passes
 - [ ] `bash scripts/verify-app.sh maison` passes (typecheck + lint + 100% coverage tests + build)
 - [ ] 100% lines/functions/branches/statements coverage for `apps/maison`
-- [ ] Surge URL in PR + bookkeeping: `https://free-react-templates-maison.surge.sh`
+- [ ] Surge URL in PR + bookkeeping: `https://maison.free.componentdock.com`

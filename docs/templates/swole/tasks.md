@@ -197,6 +197,6 @@ rgba(50,50,50,0.2) 100%)`; `.banner_text` 1080px tall (650px ≤991px,
       immediately (`gh pr merge --squash --delete-branch`).
 - [ ] After merge: mark TEMPLATES.md Fitfloss lines 396 and 1841
       `[~]`→`[x]` with Surge URL
-      `https://free-react-templates-swole.surge.sh` + homepage, run
+      `https://swole.free.componentdock.com` + homepage, run
       `npm run readme:status`, commit + push. Verify `npx knip` + curl the
       Surge URL.

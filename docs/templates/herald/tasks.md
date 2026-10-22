@@ -157,5 +157,5 @@
       heading typo fixes, renamed duplicate "STAY CONNECT" list heading),
       merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-herald.surge.sh) + homepage; run
+      (https://herald.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

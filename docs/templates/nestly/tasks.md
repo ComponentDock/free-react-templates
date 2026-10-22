@@ -145,4 +145,4 @@ htmlFor>` labels (source uses non-semantic `<span class="form-label">`);
    what differs (Nestly name, picsum placeholder, real `<label>`s, static
    labels, interactive validation summary).
 7. Ship: TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`;
-   deploy URL `https://free-react-templates-nestly.surge.sh/`.
+   deploy URL `https://nestly.free.componentdock.com/`.

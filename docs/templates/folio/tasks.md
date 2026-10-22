@@ -157,6 +157,6 @@
    must include source URL, preview URL, tokens used, renames, placeholder
    images. Merge immediately with `gh pr merge --squash --delete-branch`.
 8. After merge: mark TEMPLATES.md line 241 `[~]`→`[x]` with surge URL
-   (https://free-react-templates-folio.surge.sh) + homepage, run
+   (https://folio.free.componentdock.com) + homepage, run
    `npm run readme:status`, commit `chore: mark Folio (Article) as deployed
 with live Surge URL`.

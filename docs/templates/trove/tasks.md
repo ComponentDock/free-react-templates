@@ -127,5 +127,5 @@
 - [ ] Push `feat/template-trove`, open PR (source template, preview URL,
       design tokens, what differs), merge immediately.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (https://free-react-templates-trove.surge.sh) + homepage; run
+      (https://trove.free.componentdock.com) + homepage; run
       `npm run readme:status`; push.

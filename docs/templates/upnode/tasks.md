@@ -174,5 +174,5 @@ web hosting website template (ColorLib Hami)`.
 - PR body: source URL, preview URL (200), tokens, differences (rename,
   placeholders, decorative slider/language, single-page anchors, font
   via Google Fonts), TEMPLATES.md two-copy note (lines 408 / 3056).
-- After merge: surge URL `https://free-react-templates-upnode.surge.sh`,
+- After merge: surge URL `https://upnode.free.componentdock.com`,
   TEMPLATES.md `[x]` on ALL TWO copies, `npm run readme:status`.
