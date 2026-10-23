@@ -8,7 +8,7 @@ describe('Navbar', () => {
     const user = userEvent.setup()
     const { unmount } = render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: 'Leopet' })).toHaveAttribute('href', '#top')
+    expect(screen.getByRole('link', { name: 'Snoutly' })).toHaveAttribute('href', '#top')
     expect(screen.getByText('+02 213 - 256 (365)')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Home' })).toHaveAttribute('href', '#top')
     expect(screen.getByRole('link', { name: 'About' })).toHaveAttribute('href', '#about')

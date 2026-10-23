@@ -3,7 +3,7 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden bg-paper dark:bg-gray-900">
       <div className="absolute inset-0">
         <img
-          src="https://picsum.photos/seed/leopet-hero/1600/800"
+          src="https://picsum.photos/seed/snoutly-hero/1600/800"
           alt=""
           className="h-full w-full object-cover opacity-20 dark:opacity-10"
           fetchPriority="high"
@@ -11,7 +11,7 @@ export function Hero() {
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-24 text-center sm:px-6 md:py-36">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand">
-          Welcome to Leopet
+          Welcome to Snoutly
         </p>
         <h1 className="mx-auto mt-4 max-w-2xl text-4xl font-bold text-heading sm:text-5xl dark:text-white">
           Give your pet Best Care

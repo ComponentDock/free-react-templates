@@ -9,7 +9,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Leopet — Pet Care Website Template'
+    document.title = 'Snoutly — Pet Care Website Template'
   }, [])
 
   return (

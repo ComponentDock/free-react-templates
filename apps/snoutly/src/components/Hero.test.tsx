@@ -6,7 +6,7 @@ describe('Hero', () => {
   it('shows the eyebrow, headline, supporting copy, and CTA buttons', () => {
     const { container } = render(<Hero />)
 
-    expect(screen.getByText('Welcome to Leopet')).toBeInTheDocument()
+    expect(screen.getByText('Welcome to Snoutly')).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 1 }).textContent).toContain(
       'Give your pet Best Care',
     )
@@ -19,6 +19,6 @@ describe('Hero', () => {
 
     const image = container.querySelector('img')
     expect(image).not.toBeNull()
-    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/leopet-hero/)
+    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/snoutly-hero/)
   })
 })

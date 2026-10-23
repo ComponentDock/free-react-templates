@@ -4,8 +4,8 @@ export function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
         <div>
           <img
-            src="https://picsum.photos/seed/leopet-about/560/520"
-            alt="A happy dog resting in the care of a Leopet veterinarian"
+            src="https://picsum.photos/seed/snoutly-about/560/520"
+            alt="A happy dog resting in the care of a Snoutly veterinarian"
             className="w-full max-w-lg rounded-3xl"
           />
         </div>

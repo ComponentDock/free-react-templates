@@ -1,8 +1,8 @@
-# Template: Leopet (Pet Care Website)
+# Template: Snoutly (Pet Care Website)
 
 ## Purpose
 
-Leopet is a multi-section pet-care website template in the free-react-templates
+Snoutly is a multi-section pet-care website template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Leopet"
 design (see TEMPLATES.md), built under a different name with the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -11,7 +11,7 @@ The original design is a teal-and-purple pet-care landing page: hero with a
 "Give your pet Best Care" headline, an about section, three pet services
 (Pet Surgeries, Pet Adoption, Pet Care), an adoption appeal with stat
 counters, customer testimonials, and a footer with a newsletter signup.
-Leopet follows the same structure and adds the repo's standard dark-mode
+Snoutly follows the same structure and adds the repo's standard dark-mode
 toggle and accessible patterns. All imagery is recreated with seeded
 placeholder images (no assets copied).
 
@@ -28,7 +28,7 @@ placeholder images (no assets copied).
 (365)` and a "Become a Volunteer" pill button; main nav: Home, About,
      Services, Gallery, Pages, Blog, Contact.
   2. Banner (`banner_part`, ~800px, background image) — h5 "Welcome to
-     Leopet", h1 "Give your pet Best Care", "Our Services" CTA (the rendered
+     Snoutly", h1 "Give your pet Best Care", "Our Services" CTA (the rendered
      button text is "OUR SERVIECS" — a ColorLib typo; recreated as "Our
      Services").
   3. About (`about_part`) — h2 "We care your pet As you care", copy, "About
@@ -63,28 +63,28 @@ placeholder images (no assets copied).
   wraps the header; sections recreated with Tailwind tokens in `@theme`
   (`--color-brand` = `#53C9BB`, `--color-heading` = `#415094`, `--color-accent`
   = `#FF5B5B`); placeholder images via
-  `https://picsum.photos/seed/leopet-<n>/<w>/<h>`; icons from lucide-react;
+  `https://picsum.photos/seed/snoutly-<n>/<w>/<h>`; icons from lucide-react;
   stat counters as static accessible numbers; newsletter form is a
   controlled form with HTML5 `required` validation (the repo's established
   pattern — no zod dependency, consistent with the other shipped apps);
   social icons inline SVG; no assets copied.
 
-Leopet lives in `apps/leopet` and uses shared components from `packages/ui`
+Snoutly lives in `apps/snoutly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Leopet", links
+The system SHALL render a navigation bar with the site name "Snoutly", links
 to the main sections, a "Become a Volunteer" button, and a dark-mode toggle
 button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Leopet page is rendered
+- **GIVEN** the Snoutly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Leopet" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Snoutly" and links to the main sections
 - **AND** the navbar SHALL show a "Become a Volunteer" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -96,7 +96,7 @@ button.
 
 ### Requirement: Hero section
 
-The system SHALL render a hero section with the eyebrow "Welcome to Leopet",
+The system SHALL render a hero section with the eyebrow "Welcome to Snoutly",
 the headline "Give your pet Best Care", and CTA buttons.
 
 #### Scenario: Hero content
@@ -162,7 +162,7 @@ columns (Menu, Contact, Address, Opening Hour), and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Leopet" and a newsletter input
+- **THEN** it SHALL show the site name "Snoutly" and a newsletter input
 - **AND** it SHALL show link columns and social links
 
 ### Requirement: Page composition
@@ -172,10 +172,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Leopet app is rendered
+- **GIVEN** the Snoutly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Leopet — Pet Care Website Template"
+- **AND** the document title SHALL be "Snoutly — Pet Care Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -195,7 +195,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/leopet/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/snoutly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -204,7 +204,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/leopet/` is inspected
+- **WHEN** every non-test file under `apps/snoutly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -212,11 +212,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Leopet" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Snoutly" and links to the main sections
 - [x] Hero section — it SHALL contain a level-1 heading matching "Give your pet Best Care"
 - [x] About section — it SHALL show the heading "We care your pet As you care"
 - [x] Services section — it SHALL show the heading "We Provide Best Services"
 - [x] Adoption/counters section — it SHALL show the heading "We need your help Adopt Us"
 - [ ] Testimonials section — it SHALL show at least three testimonial quotes
-- [x] Footer — it SHALL show the site name "Leopet" and a newsletter input
+- [x] Footer — it SHALL show the site name "Snoutly" and a newsletter input
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

@@ -6,12 +6,12 @@ const testimonials = [
   },
   {
     quote:
-      'The team at Leopet treats every animal with patience and kindness, and it shows in how calm our dog is at every visit.',
+      'The team at Snoutly treats every animal with patience and kindness, and it shows in how calm our dog is at every visit.',
     author: 'Sarah Mitchell',
   },
   {
     quote:
-      'Adopting through Leopet was the best decision we made — the guidance and aftercare have been outstanding.',
+      'Adopting through Snoutly was the best decision we made — the guidance and aftercare have been outstanding.',
     author: 'David Chen',
   },
 ] as const
