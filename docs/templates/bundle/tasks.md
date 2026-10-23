@@ -1,7 +1,7 @@
-# BulkApp (Colorlib BulkApp) — Tasks & Design Notes
+# Bundle (Colorlib BulkApp) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-bulkapp`.
+> Implementation ships later on `feat/template-bundle`.
 
 ## Design notes (replication findings)
 
@@ -14,7 +14,7 @@
   (`#f9f9ff`) sections, phone-mockup hero, 4 feature tiles, 2 about splits,
   pricing, screenshots, testimonials, and a download CTA.
 - **Structure (1:1, section order):**
-  1. Navbar: logo "BulkApp" + links Home, FEATURES, VIDEO, PRICING, SCREENS,
+  1. Navbar: logo "Bundle" + links Home, FEATURES, VIDEO, PRICING, SCREENS,
      Pages, Elements, Blog, Contact (recreated as Home, Features, Pricing,
      Screens + dark-mode toggle).
   2. Hero (`home_banner_area`): h1 "The Best App in the Universe" + blurb +
@@ -46,30 +46,30 @@
   - Light bgs `#f9f9ff`; dark footer `#222222`; body text `#777777`.
   - Fonts: body **"Roboto"**, headings **"Open Sans"** (Google Fonts `<link>`).
   - Buttons: gradient bg, white text, `border-radius: 5px`, padding `0 45px`.
-- **Recreation name:** BulkApp (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/bulkapp`, package
-  `@free-react-templates/bulkapp`.
+- **Recreation name:** Bundle (renamed away from the source-name folder on
+  2026-10-23; single lowercase word, distinct from the existing names). App folder `apps/bundle`, package
+  `@free-react-templates/bundle`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/bulkapp-<n>/<w>/<h>`); lucide-react icons; Open Sans
+  (`picsum.photos/seed/bundle-<n>/<w>/<h>`); lucide-react icons; Open Sans
   - Roboto via Google Fonts; purple gradient primary in `@theme`;
     repo-standard Navbar (dark-mode toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-bulkapp/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-bundle/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
 - [x] Refine spec with replication findings (Video, Download CTA, Latest
       News requirements; 3-card pricing note).
-- [x] Create `apps/bulkapp` (copied the Bold landing app pattern; renamed
-      package to `@free-react-templates/bulkapp`).
+- [x] Create `apps/bundle` (copied the Bold landing app pattern; renamed
+      package to `@free-react-templates/bundle`).
 - [x] TDD: tests for each section component (14 tests, all green).
 - [x] Implement components (green) at 100% coverage.
 - [x] `npm install` at root so package-lock.json registers the workspace.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-bulkapp`, open PR (source template, preview URL,
+- [ ] Push `feat/template-bundle`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -82,8 +82,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/bulkapp/` may name the source designer,
+- **Provenance ban.** No file under `apps/bundle/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/bulkapp/public/CNAME` = `bulkapp.free.componentdock.com`
-  and the package `homepage` = `https://bulkapp.free.componentdock.com`.
+- **Deploy identity.** `apps/bundle/public/CNAME` = `bundle.free.componentdock.com`
+  and the package `homepage` = `https://bundle.free.componentdock.com`.

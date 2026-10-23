@@ -11,7 +11,7 @@ describe('Screenshots', () => {
     ).toBeInTheDocument()
 
     for (let index = 1; index <= 4; index += 1) {
-      expect(screen.getByRole('img', { name: `BulkApp screenshot ${index}` })).toBeInTheDocument()
+      expect(screen.getByRole('img', { name: `Bundle screenshot ${index}` })).toBeInTheDocument()
     }
   })
 })

@@ -9,8 +9,8 @@ export function About() {
       <section id="about" className="bg-paper py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
           <img
-            src="https://picsum.photos/seed/bulkapp-interior-1/560/420"
-            alt="BulkApp interior dashboard"
+            src="https://picsum.photos/seed/bundle-interior-1/560/420"
+            alt="Bundle interior dashboard"
             className="w-full rounded-lg object-cover shadow-lg"
           />
           <div>
@@ -19,7 +19,7 @@ export function About() {
             </h2>
             <p className="mt-5 leading-relaxed text-muted">
               Inappropriate behavior is often laughed off as &ldquo;boys will be boys,&rdquo; yet
-              women face higher conduct standards especially in the workplace. BulkApp helps teams
+              women face higher conduct standards especially in the workplace. Bundle helps teams
               set the bar — with a clean interior that beautifies the total architecture of your
               workflow.
             </p>
@@ -54,13 +54,13 @@ export function About() {
 
           <div className="relative order-1 lg:order-2">
             <img
-              src="https://picsum.photos/seed/bulkapp-video/560/420"
-              alt="BulkApp product tour video thumbnail"
+              src="https://picsum.photos/seed/bundle-video/560/420"
+              alt="Bundle product tour video thumbnail"
               className="w-full rounded-lg object-cover shadow-lg"
             />
             <a
               href="#home"
-              aria-label="Play the BulkApp video"
+              aria-label="Play the Bundle video"
               className="absolute inset-0 flex items-center justify-center"
             >
               <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-primary-600 shadow-lg transition-transform hover:scale-110">

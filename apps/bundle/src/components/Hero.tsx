@@ -13,7 +13,7 @@ export function Hero() {
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-white/90">
             Inappropriate behavior is often laughed off as &ldquo;boys will be boys,&rdquo; but
-            great software sets higher standards. BulkApp brings thoughtful design, reliable
+            great software sets higher standards. Bundle brings thoughtful design, reliable
             performance, and a beautiful interface to every device you own.
           </p>
           <ButtonLink
@@ -26,8 +26,8 @@ export function Hero() {
 
         <div className="flex justify-center">
           <img
-            src="https://picsum.photos/seed/bulkapp-phone/320/640"
-            alt="BulkApp app phone mockup"
+            src="https://picsum.photos/seed/bundle-phone/320/640"
+            alt="Bundle app phone mockup"
             className="w-full max-w-xs rounded-[2.5rem] border-4 border-white/20 object-cover shadow-2xl"
           />
         </div>

@@ -19,11 +19,11 @@ describe('About', () => {
   it('embeds the product tour video with a play button inside the second section', () => {
     render(<About />)
 
-    expect(screen.getByRole('img', { name: 'BulkApp interior dashboard' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Bundle interior dashboard' })).toBeInTheDocument()
     expect(
-      screen.getByRole('img', { name: 'BulkApp product tour video thumbnail' }),
+      screen.getByRole('img', { name: 'Bundle product tour video thumbnail' }),
     ).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Play the BulkApp video' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Play the Bundle video' })).toHaveAttribute(
       'href',
       '#home',
     )

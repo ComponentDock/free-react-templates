@@ -9,12 +9,12 @@ const columns = [
 ] as const
 
 const instagramSeeds = [
-  'bulkapp-ig-1',
-  'bulkapp-ig-2',
-  'bulkapp-ig-3',
-  'bulkapp-ig-4',
-  'bulkapp-ig-5',
-  'bulkapp-ig-6',
+  'bundle-ig-1',
+  'bundle-ig-2',
+  'bundle-ig-3',
+  'bundle-ig-4',
+  'bundle-ig-5',
+  'bundle-ig-6',
 ] as const
 
 export function Footer() {
@@ -89,7 +89,7 @@ export function Footer() {
         </div>
 
         <p className="mt-8 border-t border-white/10 pt-8 text-center text-sm text-gray-500">
-          Copyright © {new Date().getFullYear()} BulkApp. All rights reserved.
+          Copyright © {new Date().getFullYear()} Bundle. All rights reserved.
         </p>
         <div className="mt-4 flex justify-center gap-6 text-sm text-gray-500">
           <a href="#home" className="transition-colors hover:text-white">
