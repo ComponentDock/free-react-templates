@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Modish brand palette — recreated from the ColorLib "Divisima" design
+  /* Modish brand palette — measured from the reference design
      (css/style.css): hot pink #f51167 accents + buttons, dark #414141
      body text, #111111 headings, #f0f0f0/#ebebeb light section bgs,
      #282828 footer. */

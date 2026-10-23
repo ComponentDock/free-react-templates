@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Modus brand palette — recreated from the ColorLib "Interd" design.
+  /* Modus brand palette — measured from the reference design.
      Peach-to-salmon gradient #ff8a7a → #ffc99e, navy headings #232F55,
      salmon accent #F8BDB5, light section bg #f9f9ff. */
   --color-brand: #ff8a7a;

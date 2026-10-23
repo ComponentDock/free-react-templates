@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Moda brand palette — recreated from the ColorLib "Shopper" design
-     (live demo shopper-colorlib.pages.dev). Primary IS the fuchsia
+  /* Moda brand palette — measured from the live preview. Primary IS the
+     fuchsia
      #C026D3 used for the announcement bar, CTAs and the sale gradient. */
   --color-primary-50: #fdf4ff;
   --color-primary-100: #fae8ff;

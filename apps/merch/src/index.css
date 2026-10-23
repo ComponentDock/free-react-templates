@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Merch brand colors — from the ColorLib "Product" preview
-     (https://preview.colorlib.com/theme/product/ + css/style.css):
-     a fashion e-commerce theme with a green #0fb78d primary,
+  /* Merch brand colors — from the reference stylesheet for a fashion
+     e-commerce theme with a green #0fb78d primary,
      black #000000 secondary buttons, and Libre Baskerville headings. */
   --color-primary-50: #e6faf2;
   --color-primary-100: #b3f0db;
@@ -20,13 +19,13 @@
   --color-primary-800: #064333;
   --color-primary-900: #03221a;
 
-  /* Button hover green (ColorLib .btn-primary:hover #11ca9c). */
+  /* Button hover green (.btn-primary:hover #11ca9c). */
   --color-accent-400: #11ca9c;
 
-  /* Muted body text (ColorLib #333333). */
+  /* Muted body text (#333333). */
   --color-ink: #333333;
 
-  /* Light section background (ColorLib .bg-light). */
+  /* Light section background (.bg-light). */
   --color-mist: #f8f9fa;
 
   /* Libre Baskerville (headings) + Muli (body) via Google Fonts <link>. */

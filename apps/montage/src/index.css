@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
-/* Montage brand palette — recreated from the ColorLib "Videomag" preview
-   (https://preview.colorlib.com/theme/videomag/) live DOM + style.css:
+/* Montage brand palette — measured from the reference live DOM + style.css:
    brand pink #FF1662 (top header, active nav, FEATURED tags, hover states),
    hover #E10735, dark surfaces #282828 (navbar) + #312E2E (nav links),
    footer #1F1C1C, hero background #EDF1F4, meta text #6A6A6A, borders

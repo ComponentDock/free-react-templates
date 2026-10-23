@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Mocha brand colors — from the ColorLib "Brewhouse" demo stylesheet
+  /* Mocha brand colors — from the reference stylesheet
      (_astro/Base.*.css): brand brown #846358 (buttons/accents, hover
      #6f574d), cream surfaces #fdf8f6/#f2e8e5/#eaddd7, deep brown #4a3b34
      (primary-900 dark sections), light mocha tints #d2bab0/#e0cec7,

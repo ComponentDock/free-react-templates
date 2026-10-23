@@ -17,4 +17,14 @@ describe('App', () => {
     expect(screen.getByRole('button', { name: 'Page 1' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Categories' })).toBeInTheDocument()
   })
+
+  it('links Component Dock in the footer', () => {
+    render(<App />)
+    const footer = screen.getByRole('contentinfo')
+    expect(footer).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
+  })
 })

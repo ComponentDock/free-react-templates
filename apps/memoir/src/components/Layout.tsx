@@ -60,6 +60,18 @@ export function Layout() {
           </div>
         </div>
       </main>
+
+      <footer className="border-t border-line-200 bg-soft-100 py-6 text-center text-[13px] text-body-900 lg:pl-80">
+        <p>
+          More templates at{' '}
+          <a
+            className="font-semibold text-sky-500 underline-offset-4 hover:underline"
+            href="https://www.componentdock.com/"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }

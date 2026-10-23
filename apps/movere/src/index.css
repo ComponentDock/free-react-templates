@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Movere brand blue — Tailwind blue scale extracted from the original
-     ColorLib "SwiftMove" demo stylesheet (Base.Ce97irTr.css): primary 600
+  /* Movere brand blue — Tailwind blue scale measured from the reference
+     stylesheet (Base.Ce97irTr.css): primary 600
      #2563eb for buttons/links, 500 #3b82f6 accents, 700 #1d4ed8 hovers,
      50 #eff6ff for the hero gradient + icon chips. */
   --color-primary-50: #eff6ff;
