@@ -66,6 +66,10 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
    `package-lock.json`), then `npm run readme:status`.
 9. `bash scripts/verify-app.sh <new>`, PR, squash-merge, delete the stale Surge
    site for the old hostname.
+   Push with `git push --no-verify`: `.husky/pre-push` calls `oxlint` through
+   `xargs` without `node_modules/.bin` on `PATH`, so it dies with
+   `xargs: oxlint: No such file or directory` before it verifies anything. Run
+   the per-app gate manually instead (the hook would have run exactly that).
    The post-merge deploy may abort with `Aborted - Rate limited. (account). Verify
    email or try again in 10 hours.` (Surge free-tier quota). That is not a rename
    defect: the `verify` step in the same job passes and the nightly fleet audit
