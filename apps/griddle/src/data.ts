@@ -1,7 +1,7 @@
 /**
- * Griddle content — recreation of the ColorLib "Burger" restaurant template
- * (https://colorlib.com/wp/template/burger/). Paraphrased copy, seeded
- * picsum placeholders — never copied from the original.
+ * Griddle content — measured from the reference restaurant design.
+ * Paraphrased copy, seeded picsum placeholders — no third-party assets are
+ * copied.
  */
 
 export const NAV_LINKS = [

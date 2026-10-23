@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
@@ -30,12 +30,21 @@ describe('App', () => {
     expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Reserve your Room')
   })
 
-  it('renders NO navbar, hero copy or footer (single-section form demo)', () => {
+  it('renders NO navbar and NO hero copy (single-section form demo)', () => {
     const { container } = render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
+    expect(screen.queryByRole('heading', { level: 1 })).not.toBeInTheDocument()
     expect(container.querySelectorAll('section')).toHaveLength(1)
     expect(container.querySelector('main')).not.toBeNull()
+  })
+
+  it('links Component Dock from the footer', () => {
+    render(<App />)
+
+    const footer = screen.getByRole('contentinfo')
+    const link = within(footer).getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(footer).toHaveTextContent('More templates at Component Dock')
   })
 })

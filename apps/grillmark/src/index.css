@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Grillmark brand palette — recreated from the ColorLib Steakshop design.
+  /* Grillmark brand palette — measured from the reference design.
      Primary red #f42f2c, gradient endpoint #f48464, headings #222222, body #777777. */
   --color-brand: #f42f2c;
   --color-brand-light: #f48464;

@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Griddle brand palette — recreated from the ColorLib "Burger" design
-     (live demo: https://preview.colorlib.com/theme/burger/):
+  /* Griddle brand palette — measured from the reference design:
      orange-red #F0542C is the primary accent (CTA buttons, accents).
      Golden yellow #F2C64D is the secondary accent (highlight buttons). */
   --color-brand: #f0542c;

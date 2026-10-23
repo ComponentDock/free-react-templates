@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Crux brand palette — recreated from the ColorLib "Bbs" design
+  /* Crux brand palette — measured from the reference design
      (css/main.css): purple #7034db primary, gradient pink-to-yellow
      #f58e9a → #fbe44c for CTA buttons, light bg #f9f9ff. */
   --color-brand: #7034db;
