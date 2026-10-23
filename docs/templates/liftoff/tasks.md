@@ -220,3 +220,17 @@ rgba(0,0,0,0.1)`, padding 20px; avatar rounded-circle ≤50px; name bold +
   seed map: hero illustration liftoff-1 (560×560), feature-big 1 liftoff-2
   (640×420), feature-big 2 liftoff-3 (640×420), about photo liftoff-4
   (600×450), avatars liftoff-5..8 (100×100), blog liftoff-9..11 (640×420).
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/liftoff/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/liftoff/public/CNAME` = `liftoff.free.componentdock.com`
+  and the package `homepage` = `https://liftoff.free.componentdock.com`.

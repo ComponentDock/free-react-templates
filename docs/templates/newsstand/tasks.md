@@ -140,3 +140,17 @@ radius 10px, overflow hidden) → Section 3 white (`col-md-8`: "Featured Posts"
   with a dark gradient), not below the image — this is the template's look.
 - Brand orange `#ff8700` and the four category colors go in `@theme`; use
   Tailwind classes, never inline hex.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/newsstand/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/newsstand/public/CNAME` = `newsstand.free.componentdock.com`
+  and the package `homepage` = `https://newsstand.free.componentdock.com`.

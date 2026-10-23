@@ -54,3 +54,17 @@ Reference: https://preview.colorlib.com/theme/archi/ + `archi-free-template.jpg`
 - `--color-paper: #f9f9ff` · `--color-lilac: #f0e9ff` · mist `#888888`
 - Fonts: Rajdhani (display, uppercase) + Poppins (body) via Google Fonts
 - Buttons: sharp corners (radius 0), uppercase, letter-spacing 1px
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/keystone/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/keystone/public/CNAME` = `keystone.free.componentdock.com`
+  and the package `homepage` = `https://keystone.free.componentdock.com`.

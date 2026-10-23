@@ -77,3 +77,17 @@
 6. **Services active state**: Middle card (index 2) gets a highlighted/active style — implement via conditional class.
 7. **Testimony carousel**: Circular avatars with quote icon overlay positioned bottom-right. Use absolute positioning.
 8. **Restaurant pattern bg**: The restaurant section uses a background pattern image — use a subtle pattern or gradient as fallback.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/roxyglow/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/roxyglow/public/CNAME` = `roxyglow.free.componentdock.com`
+  and the package `homepage` = `https://roxyglow.free.componentdock.com`.

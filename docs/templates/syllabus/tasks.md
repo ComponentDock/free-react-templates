@@ -184,3 +184,17 @@ rgba(0,0,0,.10)`, padding 20–30px. `.p-title` = bold uppercase h4 with
   below the text) — recreate it; the navy-band variant uses #777/#fff.
 - **Footer strip contrast**: bottom bar is `bg-dark-primary` #050658 (not
   #191919) — two distinct dark values; don't merge them.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/syllabus/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/syllabus/public/CNAME` = `syllabus.free.componentdock.com`
+  and the package `homepage` = `https://syllabus.free.componentdock.com`.

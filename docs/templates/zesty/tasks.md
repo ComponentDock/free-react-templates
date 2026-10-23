@@ -184,3 +184,17 @@ subscribe input 64px; button 17px 40px min-width 205px; fr-item-img float-left
   zesty-7..10 (200×160 + text 320×160), filter cards zesty-11..15 (260×260),
   featured zesty-16..17 (300×220). Icons: lucide-react (Search, X, Menu,
   Plus, ChevronDown); brand icons inline SVG.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/zesty/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/zesty/public/CNAME` = `zesty.free.componentdock.com`
+  and the package `homepage` = `https://zesty.free.componentdock.com`.

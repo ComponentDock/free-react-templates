@@ -175,3 +175,17 @@ sans-serif`. Add Anton + Nunito Google Fonts `<link>`s to `index.html`.
 - Blog/contact sections are `bg-light` (`#f8f9fa`); the page's other
   sections are white.
 - THREE TEMPLATES.md copies (402, 1266, 2322): ALL must be marked `[x]`.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/benevol/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/benevol/public/CNAME` = `benevol.free.componentdock.com`
+  and the package `homepage` = `https://benevol.free.componentdock.com`.

@@ -101,3 +101,17 @@ migration, so it follows the mirror, not today's preview host.
 - Multi-page demo links collapse to section anchors/presentational links.
 - Brand wordmark "Stillwater Retreat" → "Hush" (+ tagline "A Sanctuary
   for the Soul").
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/hush/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/hush/public/CNAME` = `hush.free.componentdock.com`
+  and the package `homepage` = `https://hush.free.componentdock.com`.

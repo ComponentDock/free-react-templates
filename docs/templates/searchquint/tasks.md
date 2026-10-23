@@ -57,3 +57,17 @@ New name: `searchquint`
 - **Responsive**: At mobile, the search form stacks (button above input), brand centers, nav links adjust.
 - **Placeholder images**: None needed — this is a search form component demo with no photos.
 - **Color reference**: Brand palette is Bootstrap blue `#007bff`. Search bar bg is `#efefef`. Content text is `#757575`. Page bg is `#fff`.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/searchquint/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/searchquint/public/CNAME` = `searchquint.free.componentdock.com`
+  and the package `homepage` = `https://searchquint.free.componentdock.com`.

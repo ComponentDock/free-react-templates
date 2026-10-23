@@ -162,3 +162,17 @@
 - Original copy is lorem ipsum + repeated titles — paraphrase lightly but
   keep the same kinds of content (greeting + email, post dates/titles/tags,
   "Share"/"Read more"/"N Comments", about-me blurb, tag list, footer titles).
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/ivory/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/ivory/public/CNAME` = `ivory.free.componentdock.com`
+  and the package `homepage` = `https://ivory.free.componentdock.com`.

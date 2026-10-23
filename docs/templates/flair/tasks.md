@@ -176,3 +176,17 @@
 | 7   | blog-1.jpg        | blog card 1 | id/425 (roasted coffee beans, light) |
 | 8   | blog-2.jpg        | blog card 2 | id/431 (latte-art coffee on wood)    |
 | 9   | blog-3.jpg        | blog card 3 | id/1080 (strawberries)               |
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/flair/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/flair/public/CNAME` = `flair.free.componentdock.com`
+  and the package `homepage` = `https://flair.free.componentdock.com`.

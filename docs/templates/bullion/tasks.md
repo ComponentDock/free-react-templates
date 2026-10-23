@@ -146,3 +146,17 @@
 - Header logo is a black PNG in the source (white PNG in footer) —
   recreate as text wordmarks; do NOT try to copy the image assets.
 - Two TEMPLATES.md copies (275, 2206): BOTH must be marked `[x]`.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/bullion/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/bullion/public/CNAME` = `bullion.free.componentdock.com`
+  and the package `homepage` = `https://bullion.free.componentdock.com`.

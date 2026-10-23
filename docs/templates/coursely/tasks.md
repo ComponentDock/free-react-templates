@@ -142,3 +142,17 @@ p-8` pricing cards
 - [ ] Footer (3 columns + copyright + cookie notice)
 - [ ] `scripts/verify-app.sh coursely` green; commit `feat:`; open PR +
       merge immediately; `[~]` → `[x]` + surge URL; `npm run readme:status`
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/coursely/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/coursely/public/CNAME` = `coursely.free.componentdock.com`
+  and the package `homepage` = `https://coursely.free.componentdock.com`.

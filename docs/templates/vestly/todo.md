@@ -44,3 +44,17 @@ Package: @free-react-templates/vestly
 - [ ] Wire up App.tsx with all sections in order
 - [ ] Write tests (100% coverage)
 - [ ] Verify with scripts/verify-app.sh vestly
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/vestly/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/vestly/public/CNAME` = `vestly.free.componentdock.com`
+  and the package `homepage` = `https://vestly.free.componentdock.com`.

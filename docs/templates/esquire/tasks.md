@@ -224,3 +224,17 @@ sans-serif`.
   practice esquire-3..6 (420×420), lawyers esquire-7..9 (400×460),
   testimonial thumb esquire-10 (80×80), appointment esquire-11 (520×460),
   hero banner esquire-12 (1600×900 — dark-filtered via overlay).
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/esquire/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/esquire/public/CNAME` = `esquire.free.componentdock.com`
+  and the package `homepage` = `https://esquire.free.componentdock.com`.

@@ -204,3 +204,17 @@ rounded-br-[30px]`). Apply it to ALL primary CTAs — this is the template's
 - Eyebrows use Indie Flower (handwritten look) in coral #fd4d40 — keep that
   pairing everywhere it appears (hero, about, packages, pricing,
   testimonials).
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/frolic/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/frolic/public/CNAME` = `frolic.free.componentdock.com`
+  and the package `homepage` = `https://frolic.free.componentdock.com`.

@@ -30,3 +30,17 @@ New name: pixelcraft
 - Icons: use lucide-react equivalents for linearicons (lnr-star → Star, etc.)
 - Images: picsum.photos/seed/pixelcraft-<n>/<w>/<h>
 - All text is uppercase in headings (use Tailwind uppercase)
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/pixelcraft/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/pixelcraft/public/CNAME` = `pixelcraft.free.componentdock.com`
+  and the package `homepage` = `https://pixelcraft.free.componentdock.com`.

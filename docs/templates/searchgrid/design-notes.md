@@ -49,3 +49,17 @@
 - This is an extremely minimal template — essentially a single component
 - The main deliverable is a well-structured, accessible Navbar with search
 - Consider making the navbar sticky/fixed as a nice enhancement
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/searchgrid/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/searchgrid/public/CNAME` = `searchgrid.free.componentdock.com`
+  and the package `homepage` = `https://searchgrid.free.componentdock.com`.

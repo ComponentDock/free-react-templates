@@ -147,3 +147,17 @@ primary`, `.btn-primary` bg, logo, active/hover links, arrows, active
 - [ ] Commit `feat: add Paragon (ColorLib Ideal) recreation`; PR with source
       slug, preview URL, tokens, renames; squash-merge immediately.
 - [ ] After merge: mark TEMPLATES.md lines 419, 1048, 1970 `[x]` + surge URL + homepage, `npm run readme:status`.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/paragon/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/paragon/public/CNAME` = `paragon.free.componentdock.com`
+  and the package `homepage` = `https://paragon.free.componentdock.com`.

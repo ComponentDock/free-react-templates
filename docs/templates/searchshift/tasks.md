@@ -55,3 +55,17 @@ New name: `searchshift`
 - The transparent inputs need careful border handling — `border-left: 0` and `border-right: 0` on the text input to avoid double borders.
 - The dropdown's custom select needs `appearance: none` to hide the native arrow, then a custom SVG chevron.
 - The dark overlay (`rgba(0,0,0,0.5)`) is on the inner form, not the entire page — the background image is still visible around the form.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/searchshift/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/searchshift/public/CNAME` = `searchshift.free.componentdock.com`
+  and the package `homepage` = `https://searchshift.free.componentdock.com`.

@@ -71,3 +71,17 @@ Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-4/index.html
 4. Progress bar: CSS transition on width property
 5. Responsive: Tailwind breakpoints (lg, md, sm)
 6. Form validation: required fields per step, block Next on invalid
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/formpad/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/formpad/public/CNAME` = `formpad.free.componentdock.com`
+  and the package `homepage` = `https://formpad.free.componentdock.com`.

@@ -153,3 +153,17 @@ section h2 40px/900, subheading 16px uppercase ls 1px.
 - All images: `https://picsum.photos/seed/kickoff-<n>/<w>/<h>` (hero
   kickoff-1, team logos kickoff-2/3, victory kickoff-4, squad kickoff-5..,
   blog kickoff-9..11, avatar kickoff-12).
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/kickoff/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/kickoff/public/CNAME` = `kickoff.free.componentdock.com`
+  and the package `homepage` = `https://kickoff.free.componentdock.com`.
