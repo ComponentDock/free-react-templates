@@ -45,6 +45,7 @@ free-react-templates/
 │   └── specs/template-<name>/spec.md   # Per-template specs (GitHub Spec Kit)
 ├── docs/                     # AI context, conventions, contracts, ADRs
 │   ├── naming-audit.md       # apps still reusing a source name + rename recipe
+│   ├── app-fidelity-delta.md # app palette vs the brand colours its prep measured
 │   └── templates/<name>/     # Per-template prep: tasks/todo outline, notes
 │                             # (prepared on main while a PR awaits review)
 ├── .specify/                 # Spec Kit workflow scaffolding
