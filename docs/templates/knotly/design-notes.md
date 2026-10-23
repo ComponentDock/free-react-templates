@@ -1,17 +1,17 @@
-# Appli — Design Notes
+# Knotly — Design Notes
 
 Reference: **Appli** — `https://colorlib.com/wp/template/appli/`  
 Live preview: `https://preview.colorlib.com/theme/appli/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg  
-Shipped: https://appli.free.componentdock.com
+Shipped: https://knotly.free.componentdock.com
 
-Appli is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Appli" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).
+Knotly is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Appli" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Muli**, **Muli:wght@300;400;500;600;700;800**, **Raleway**
 
-## Design tokens (`apps/appli/src/index.css` `@theme`)
+## Design tokens (`apps/knotly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ Fonts loaded by `index.html` (Google Fonts): **Muli**, **Muli:wght@300;400;500;6
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-The system SHALL render a navigation bar over the hero with the site name "Appli", links to the main sections (Home, Features, About, FAQ, Blog, Contact), a "Log in" button, and a dark-mode toggle button.
+The system SHALL render a navigation bar over the hero with the site name "Knotly", links to the main sections (Home, Features, About, FAQ, Blog, Contact), a "Log in" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width purple-to-blue gradient hero with a headline, supporting copy, and a "Get Started Now" call-to-action button, followed by an overlapping app-dashboard placeholder image.
@@ -105,8 +105,8 @@ The system SHALL render a dark footer with a brand blurb, social links (X, Faceb
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/appli/` may name the source designer,
+- **Provenance ban.** No file under `apps/knotly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/appli/public/CNAME` = `appli.free.componentdock.com`
-  and the package `homepage` = `https://appli.free.componentdock.com`.
+- **Deploy identity.** `apps/knotly/public/CNAME` = `knotly.free.componentdock.com`
+  and the package `homepage` = `https://knotly.free.componentdock.com`.

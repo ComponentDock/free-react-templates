@@ -1,6 +1,6 @@
-# Appli (ColorLib Appli) — Tasks & Design Notes
+# Knotly (ColorLib Appli) — Tasks & Design Notes
 
-> Implementation ships on `feat/template-appli`. Spec written on the branch
+> Implementation ships on `feat/template-knotly`. Spec written on the branch
 > with fetched preview DOM/CSS findings (2026-08-05).
 
 ## Design notes
@@ -38,14 +38,15 @@
   - Fonts: **Raleway** (headings/buttons) + **Muli** (body) via Google Fonts.
   - Buttons: `.btn` bg #404DFF radius 30px padding 25px 38px (hero 30px 62px);
     `.border-btn` ghost white pill; `.all-btn` underlined blue link.
-- **Recreation name:** Appli (keeps the original name — already a distinct
-  working name). App folder `apps/appli`, package
-  `@free-react-templates/appli`, homepage
-  `https://appli.free.componentdock.com`.
+- **Recreation name:** Knotly (renamed from the source name Appli — rule 5;
+  a network/connections brand, single lowercase word, no collision with
+  `apps/`). App folder `apps/knotly`, package
+  `@free-react-templates/knotly`, homepage
+  `https://knotly.free.componentdock.com`.
 - **Design approach:** indigo `#404dff` brand scale in `@theme`
   (`--color-primary-600`), purple/blue gradient stops + pink CTA + navy
   headings + Muli/Raleway fonts; seeded picsum placeholders
-  `https://picsum.photos/seed/appli-<n>/<w>/<h>`; lucide-react icons;
+  `https://picsum.photos/seed/knotly-<n>/<w>/<h>`; lucide-react icons;
   brand socials (X, Facebook, Pinterest) inline SVG; repo-standard Navbar
   (dark-mode toggle); reuse `packages/ui` (ButtonLink, cn) — do NOT
   duplicate components.
@@ -55,17 +56,15 @@
 ## Tasks
 
 - [x] Fetch preview DOM + `assets/css/style.css`; extract structure + tokens.
-- [x] Write `openspec/specs/template-appli/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-knotly/spec.md` (Gherkin requirements +
       scenarios + replication findings).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/appli` (copy `apps/velocity`; rename package to
+- [x] Create `apps/knotly` (copy `apps/velocity`; rename package to
       `@free-react-templates/appli`; `npm install` at root for lockfile).
 - [x] TDD: tests first for Navbar, Hero, Brands, Services, About (×2),
       Video, Testimonials, Cta, Footer, App composition.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage (100/100/100/100) →
       build → knip → fallow → spec:validate — all pass.
-- [ ] Update TEMPLATES.md status `[~]` → `[x]` (all Appli lines) + live URL
-      after merge (bookkeeping on main, state D).
-- [ ] Set `"homepage"` in `apps/appli/package.json` after merge (bookkeeping
-      on main, state D).
+- [x] Update TEMPLATES.md row links (all Knotly lines) to the new live URL.
+- [x] Set `"homepage"` in `apps/knotly/package.json` + `public/CNAME`.
