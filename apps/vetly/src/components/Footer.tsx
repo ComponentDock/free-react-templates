@@ -24,7 +24,7 @@ export function Footer() {
     <footer id="contact" className="bg-navy2 py-16 text-gray-300">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 className="font-display text-xl text-brand">Thepetcare</h3>
+          <h3 className="font-display text-xl text-brand">Vetly</h3>
           <p className="mt-5 text-sm font-light leading-relaxed text-gray-400">
             Far far away, behind the word mountains, far from the countries Vokalia — a caring home
             for animals of every kind.
@@ -66,11 +66,11 @@ export function Footer() {
             Subscribe our newsletter to get updates about our services and offers.
           </p>
           <form onSubmit={handleSubmit} className="mt-6 flex items-stretch">
-            <label htmlFor="thepetcare-newsletter" className="sr-only">
+            <label htmlFor="vetly-newsletter" className="sr-only">
               Email address
             </label>
             <input
-              id="thepetcare-newsletter"
+              id="vetly-newsletter"
               type="email"
               required
               value={email}
@@ -90,7 +90,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light text-gray-400">
-          Copyright © {new Date().getFullYear()} Thepetcare. All rights reserved.
+          Copyright © {new Date().getFullYear()} Vetly. All rights reserved.
         </p>
         <SocialLinks />
       </div>

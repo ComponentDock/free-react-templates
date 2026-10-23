@@ -12,7 +12,7 @@ export function Quote() {
           </p>
         </div>
         <img
-          src="https://picsum.photos/seed/thepetcare-quote/800/600"
+          src="https://picsum.photos/seed/vetly-quote/800/600"
           alt="Dogs resting after a spa day"
           className="w-full rounded-3xl object-cover shadow-lg"
         />

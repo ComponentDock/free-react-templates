@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <section id="home" className="relative flex min-h-[80vh] items-center overflow-hidden bg-navy3">
       <img
-        src="https://picsum.photos/seed/thepetcare-hero/1600/900"
+        src="https://picsum.photos/seed/vetly-hero/1600/900"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-40"
       />

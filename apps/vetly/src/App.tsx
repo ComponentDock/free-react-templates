@@ -11,7 +11,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Thepetcare — Animal Care & Donation Website Template'
+    document.title = 'Vetly — Animal Care & Donation Website Template'
   }, [])
 
   return (

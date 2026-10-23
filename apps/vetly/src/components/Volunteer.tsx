@@ -2,7 +2,7 @@ export function Volunteer() {
   return (
     <section className="relative overflow-hidden bg-navy py-20 lg:py-28">
       <img
-        src="https://picsum.photos/seed/thepetcare-volunteer/1600/700"
+        src="https://picsum.photos/seed/vetly-volunteer/1600/700"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-20"
       />

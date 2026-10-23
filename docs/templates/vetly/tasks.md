@@ -1,11 +1,11 @@
-# Thepetcare (Colorlib Thepetcare) — Tasks & Design Notes
+# Vetly (Colorlib Vetly) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-thepetcare`.
+> Implementation ships later on `feat/template-vetly`.
 
 ## Design notes
 
-- **Original:** ColorLib "Thepetcare" — free animal care website template
+- **Original:** ColorLib "Vetly" — free animal care website template
   (source: https://colorlib.com/wp/template/thepetcare/).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/thepetcare/`
   (HTTP 200) + stylesheet `assets/css/style.css` (HTTP 200).
@@ -26,12 +26,12 @@
   **#415094**/**#023C5A**, muted **#999999**, light sections
   **#f9f9ff**/**#f0e9ff**; fonts **Fredoka One** (display) + **DM Sans**
   (body) via Google Fonts; filled rounded pink buttons.
-- **Recreation name:** Thepetcare (keeps the original name — it is already a
-  distinct working name, not a ColorLib brand). App folder
-  `apps/thepetcare`, package `@free-react-templates/thepetcare`.
+- **Recreation name:** Vetly — a new original name; the source design is
+  ColorLib "Thepetcare", so the source name is not reused. App folder
+  `apps/vetly`, package `@free-react-templates/vetly`.
 - **Design approach:** pink brand tokens in `@theme`
   (`--color-brand: #FF3E7E`, navy scale); seeded picsum placeholders
-  `https://picsum.photos/seed/thepetcare-<n>/<w>/<h>`; lucide-react icons
+  `https://picsum.photos/seed/vetly-<n>/<w>/<h>`; lucide-react icons
   (GraduationCap for training, Droplets for hygienic care, Stethoscope for
   treatment); newsletter form with client-side validation; repo-standard
   Navbar (dark-mode toggle) and Footer chrome; social icons (Facebook,
@@ -44,23 +44,23 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-thepetcare/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-vetly/spec.md` (Gherkin
       requirements + scenarios + replication findings) — DONE on main (this
       prep); re-verified against the live preview (structure + tokens match
       1:1) during implementation.
 - [x] Validate spec: `npm run spec:validate` (221 specs pass).
-- [x] Create `apps/thepetcare` (copied `apps/pawcare`; renamed package to
-      `@free-react-templates/thepetcare`).
+- [x] Create `apps/vetly` (copied `apps/pawcare`; renamed package to
+      `@free-react-templates/vetly`).
 - [x] TDD: tests first for Navbar, Hero, About, Services, Video block,
       Quote, Emergency, Volunteer, Footer, App composition; ran red (10
       failing files), then green.
 - [x] Implement components (green) at 100% coverage — 13 tests, all
-      thepetcare files at 100% lines/functions/branches/statements.
+      vetly files at 100% lines/functions/branches/statements.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
+- [x] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D) + append live Surge URL.
-- [ ] Set `"homepage"` in `apps/thepetcare/package.json` to
-      `https://thepetcare.free.componentdock.com` (bookkeeping, state
+- [x] Set `"homepage"` in `apps/vetly/package.json` to
+      `https://vetly.free.componentdock.com` (bookkeeping, state
       D).
-- [ ] Update README structure + `docs/ai-context.md` app list.
+- [x] Update README structure + `docs/ai-context.md` app list.

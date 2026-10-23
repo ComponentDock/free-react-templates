@@ -1,16 +1,17 @@
-# Template: Thepetcare (Animal Care & Donation Website)
+# Template: Vetly (Animal Care & Donation Website)
 
 ## Purpose
 
-Thepetcare is a multi-section animal-care website template in the
+Vetly is a multi-section animal-care website template in the
 free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Thepetcare" design (see TEMPLATES.md), built under a different
-name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+ColorLib free "Thepetcare" design (see TEMPLATES.md), built under the new
+name Vetly with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
+TypeScript.
 
 The original design is a pink-and-navy animal-care landing page: hero with a
 "Saving Animals Changing Live" headline, an about block, three pet care
 services, a video block, an emergency call band, a volunteer/donation CTA,
-and a footer with a newsletter signup. Thepetcare follows the same structure
+and a footer with a newsletter signup. Vetly follows the same structure
 and adds the repo's standard dark-mode toggle and accessible patterns. All
 imagery is recreated with seeded placeholder images (no assets copied).
 
@@ -47,26 +48,26 @@ imagery is recreated with seeded placeholder images (no assets copied).
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#FF3E7E`, navy scale in `@theme`); placeholder images
-  via `https://picsum.photos/seed/thepetcare-<n>/<w>/<h>`; icons from
+  via `https://picsum.photos/seed/vetly-<n>/<w>/<h>`; icons from
   lucide-react; newsletter form with client-side validation (zod); social
   icons inline SVG; no assets copied.
 
-Thepetcare lives in `apps/thepetcare` and uses shared components from
+Vetly lives in `apps/vetly` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Thepetcare",
+The system SHALL render a navigation bar with the site name "Vetly",
 links to the main sections, a "Get Quote" button, and a dark-mode toggle
 button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Thepetcare page is rendered
+- **GIVEN** the Vetly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Thepetcare" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Vetly" and links to the main sections
 - **AND** the navbar SHALL show a "Get Quote" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -168,7 +169,7 @@ The system SHALL render a footer with an about blurb, link columns
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Thepetcare" and an about blurb
+- **THEN** it SHALL show the site name "Vetly" and an about blurb
 - **AND** it SHALL show link columns, a newsletter input, and social links
 
 ### Requirement: Page composition
@@ -178,10 +179,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Thepetcare app is rendered
+- **GIVEN** the Vetly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Thepetcare — Animal Care & Donation Website Template"
+- **AND** the document title SHALL be "Vetly — Animal Care & Donation Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -201,7 +202,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/thepetcare/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/vetly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -210,7 +211,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/thepetcare/` is inspected
+- **WHEN** every non-test file under `apps/vetly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -218,7 +219,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Thepetcare" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Vetly" and links to the main sections
 - [x] Hero section — it SHALL contain a level-1 heading matching "Saving Animals Changing Live"
 - [x] About section — it SHALL show the heading "The Kind of Care Your Pets Deserve"
 - [x] Services section — it SHALL show the heading "Our Pet Care Services"
@@ -226,5 +227,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Quote section — it SHALL show the heading "Animals has come to mean so much in t live"
 - [ ] Emergency section — it SHALL show the emergency text and a phone number
 - [x] Volunteer section — it SHALL show the heading "We looking for helping hand"
-- [x] Footer — it SHALL show the site name "Thepetcare" and an about blurb
+- [x] Footer — it SHALL show the site name "Vetly" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

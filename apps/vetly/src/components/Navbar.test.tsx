@@ -6,7 +6,7 @@ import { Navbar } from './Navbar'
 describe('Navbar', () => {
   it('shows the site name, section links, Get Quote, and the dark-mode toggle', () => {
     render(<Navbar />)
-    expect(screen.getByText('Thepetcare')).toBeInTheDocument()
+    expect(screen.getByText('Vetly')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Home' })).toHaveAttribute('href', '#home')
     expect(screen.getByRole('link', { name: 'Services' })).toHaveAttribute('href', '#services')
     expect(screen.getByRole('link', { name: 'About' })).toHaveAttribute('href', '#about')
