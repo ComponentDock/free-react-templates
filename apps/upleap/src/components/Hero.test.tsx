@@ -12,6 +12,6 @@ describe('Hero', () => {
     expect(screen.getByText(/Lorem ipsum dolor sit amet/)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Get Started' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'watch the video' })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Gaas dashboard preview' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Upleap dashboard preview' })).toBeInTheDocument()
   })
 })

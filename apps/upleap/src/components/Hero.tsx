@@ -31,8 +31,8 @@ export function Hero() {
           </div>
         </div>
         <img
-          src="https://picsum.photos/seed/gaas-hero/640/560"
-          alt="Gaas dashboard preview"
+          src="https://picsum.photos/seed/upleap-hero/640/560"
+          alt="Upleap dashboard preview"
           className="mx-auto w-full max-w-md rounded-xl shadow-xl"
         />
       </div>

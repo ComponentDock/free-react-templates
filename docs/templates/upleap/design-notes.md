@@ -1,17 +1,17 @@
-# Gaas — Design Notes
+# Upleap — Design Notes
 
-Reference: **Gaas** — `https://colorlib.com/wp/template/gaas/`  
+Reference: **Upleap** — `https://colorlib.com/wp/template/gaas/`  
 Live preview: `https://preview.colorlib.com/theme/gaas/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/gaas-free-template.jpg  
-Shipped: https://gaas.free.componentdock.com
+Shipped: https://upleap.free.componentdock.com
 
-Gaas is a single-page software landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "GaaS" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Upleap is a single-page software landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "GaaS" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Rajdhani**, **Rajdhani:wght@500;600;700**, **Roboto**
 
-## Design tokens (`apps/gaas/src/index.css` `@theme`)
+## Design tokens (`apps/upleap/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -52,7 +52,7 @@ Fonts loaded by `index.html` (Google Fonts): **Rajdhani**, **Rajdhani:wght@500;6
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Gaas", anchor links to the page's sections, a "free trial" button, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Upleap", anchor links to the page's sections, a "free trial" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and two buttons.
@@ -96,8 +96,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/gaas/` may name the source designer,
+- **Provenance ban.** No file under `apps/upleap/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/gaas/public/CNAME` = `gaas.free.componentdock.com`
-  and the package `homepage` = `https://gaas.free.componentdock.com`.
+- **Deploy identity.** `apps/upleap/public/CNAME` = `upleap.free.componentdock.com`
+  and the package `homepage` = `https://upleap.free.componentdock.com`.

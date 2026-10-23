@@ -15,12 +15,12 @@ describe('Footer', () => {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()
     }
 
-    expect(screen.getByText(/hello@gaas\.example/)).toBeInTheDocument()
+    expect(screen.getByText(/hello@upleap\.example/)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'GitHub' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'X' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toBeInTheDocument()
 
-    expect(screen.getByText(/Copyright © \d{4} Gaas/)).toBeInTheDocument()
+    expect(screen.getByText(/Copyright © \d{4} Upleap/)).toBeInTheDocument()
   })
 
   it('submits the newsletter form without reloading', async () => {

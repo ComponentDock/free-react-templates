@@ -1,8 +1,8 @@
-# Template: Gaas (App Landing Page)
+# Template: Upleap (App Landing Page)
 
 ## Purpose
 
-Gaas is a single-page software landing template in the free-react-templates
+Upleap is a single-page software landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "GaaS"
 website template design (see TEMPLATES.md), built under a different name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -31,10 +31,15 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Fonts: **"Rajdhani"** + **"Roboto"** (Google Fonts).
   - Purple buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/gaas-<n>/<w>/<h>`); icons → lucide-react; video
+  (`picsum.photos/seed/upleap-<n>/<w>/<h>`); icons → lucide-react; video
   button → styled play button; no assets copied.
+- **Recreation name:** **Upleap** (software-growth evocation; no collision
+  with any existing app). Folder `apps/upleap`, package
+  `@free-react-templates/upleap`. The app first shipped as `apps/gaas`, which
+  reused the source design's name (AGENTS.md rule 5 violation) and was renamed
+  in the Gaas → Upleap PR.
 
-Gaas lives in `apps/gaas` and uses shared components from `packages/ui`
+Upleap lives in `apps/upleap` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Design tokens
@@ -50,15 +55,15 @@ Recorded so the palette is machine-readable: the prep already states this colour
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Gaas",
+The system SHALL render a top navigation bar with the site name "Upleap",
 anchor links to the page's sections, a "free trial" button, and a dark-mode
 toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Gaas page is rendered
+- **GIVEN** the Upleap page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Gaas" and links to Home, Features, Pricing, and Contact
+- **THEN** the navbar SHALL show the site name "Upleap" and links to Home, Features, Pricing, and Contact
 - **AND** the navbar SHALL show a "free trial" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -183,10 +188,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Gaas app is rendered
+- **GIVEN** the Upleap app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Gaas — App Landing Template"
+- **AND** the document title SHALL be "Upleap — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -206,7 +211,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/gaas/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/upleap/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -215,7 +220,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/gaas/` is inspected
+- **WHEN** every non-test file under `apps/upleap/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -223,7 +228,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Gaas" and links to Home, Features, Pricing, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Upleap" and links to Home, Features, Pricing, and Contact
 - [x] Hero section — it SHALL contain a level-1 heading "Mass People Oriented Software"
 - [ ] Features section — it SHALL contain a heading "A Complete Software Based Website"
 - [x] Feature tiles — it SHALL show tiles titled "Design Trends", "Development", and "Delivery"

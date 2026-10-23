@@ -1,9 +1,9 @@
 const brands = [
-  'https://picsum.photos/seed/gaas-brand-1/140/48',
-  'https://picsum.photos/seed/gaas-brand-2/140/48',
-  'https://picsum.photos/seed/gaas-brand-3/140/48',
-  'https://picsum.photos/seed/gaas-brand-4/140/48',
-  'https://picsum.photos/seed/gaas-brand-5/140/48',
+  'https://picsum.photos/seed/upleap-brand-1/140/48',
+  'https://picsum.photos/seed/upleap-brand-2/140/48',
+  'https://picsum.photos/seed/upleap-brand-3/140/48',
+  'https://picsum.photos/seed/upleap-brand-4/140/48',
+  'https://picsum.photos/seed/upleap-brand-5/140/48',
 ] as const
 
 export function Brands() {

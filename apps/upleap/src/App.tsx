@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Gaas — App Landing Template'
+    document.title = 'Upleap — App Landing Template'
   }, [])
 
   return (

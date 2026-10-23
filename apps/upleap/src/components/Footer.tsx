@@ -12,7 +12,7 @@ const importantLinks = [
 const contactLines = [
   { icon: MapPin, text: '600/B, South Bhadalta, Bagbazar' },
   { icon: Phone, text: '+1 234 567 890' },
-  { icon: Mail, text: 'hello@gaas.example' },
+  { icon: Mail, text: 'hello@upleap.example' },
 ] as const
 
 export function Footer() {
@@ -25,7 +25,7 @@ export function Footer() {
           <div>
             <h2 className="font-display text-2xl font-bold text-white">About Us</h2>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
-              Gaas builds software that puts people first — simple tools, honest pricing, and
+              Upleap builds software that puts people first — simple tools, honest pricing, and
               support that never sleeps.
             </p>
             <div className="mt-6">
@@ -97,9 +97,9 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-800 pt-8 text-sm text-gray-500 sm:flex-row sm:justify-between">
-          <p>Copyright © {new Date().getFullYear()} Gaas. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Upleap. All rights reserved.</p>
           <p>
-            Made with <span aria-hidden="true">♥</span> by Gaas
+            Made with <span aria-hidden="true">♥</span> by Upleap
           </p>
         </div>
       </div>
