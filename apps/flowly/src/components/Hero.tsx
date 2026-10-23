@@ -13,7 +13,7 @@ export function Hero() {
             Powerful app for better productivity
           </p>
           <h1 className="mt-4 font-display text-4xl font-extrabold leading-tight text-ink dark:text-white sm:text-5xl lg:text-6xl">
-            Get things done with Appco
+            Get things done with Flowly
           </h1>
           <p className="mt-6 text-lg text-mist dark:text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -35,8 +35,8 @@ export function Hero() {
         </div>
         <div className="relative">
           <img
-            src="https://picsum.photos/seed/appco-hero/1200/900"
-            alt="Appco app on devices"
+            src="https://picsum.photos/seed/flowly-hero/1200/900"
+            alt="Flowly app on devices"
             className="h-full w-full rounded-3xl object-cover shadow-xl"
           />
           <div className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-2xl bg-white p-4 shadow-lg dark:bg-gray-800">

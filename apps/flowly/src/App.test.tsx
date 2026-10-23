@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, sections, and footer with the correct landmarks and document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Appco — App Landing Page Template')
+    expect(document.title).toBe('Flowly — App Landing Page Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -14,16 +14,16 @@ describe('App', () => {
     const main = screen.getByRole('main')
     expect(main).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { level: 1, name: 'Get things done with Appco' }),
+      screen.getByRole('heading', { level: 1, name: 'Get things done with Flowly' }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { level: 2, name: 'Some of the best features Of Our App!' }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { level: 2, name: 'How Can We Help Your with Appco!' }),
+      screen.getByRole('heading', { level: 2, name: 'How Can We Help Your with Flowly!' }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { level: 2, name: 'See Appco in Action' }),
+      screen.getByRole('heading', { level: 2, name: 'See Flowly in Action' }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { level: 2, name: 'Choose Your Very Best Pricing Plan.' }),

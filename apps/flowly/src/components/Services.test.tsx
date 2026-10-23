@@ -6,7 +6,7 @@ describe('Services', () => {
   it('renders the heading and all three service blocks with titles', () => {
     render(<Services />)
     expect(
-      screen.getByRole('heading', { level: 2, name: 'How Can We Help Your with Appco!' }),
+      screen.getByRole('heading', { level: 2, name: 'How Can We Help Your with Flowly!' }),
     ).toBeInTheDocument()
 
     for (const title of ['Easily Manage', 'Get Payments Easily', 'Quick Messaging']) {

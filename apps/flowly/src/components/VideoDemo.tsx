@@ -1,9 +1,9 @@
 import { Play } from 'lucide-react'
 
 const screenshots = [
-  { src: 'https://picsum.photos/seed/appco-shot-1/600/420', alt: 'Appco dashboard screenshot' },
-  { src: 'https://picsum.photos/seed/appco-shot-2/600/420', alt: 'Appco analytics screenshot' },
-  { src: 'https://picsum.photos/seed/appco-shot-3/600/420', alt: 'Appco messaging screenshot' },
+  { src: 'https://picsum.photos/seed/flowly-shot-1/600/420', alt: 'Flowly dashboard screenshot' },
+  { src: 'https://picsum.photos/seed/flowly-shot-2/600/420', alt: 'Flowly analytics screenshot' },
+  { src: 'https://picsum.photos/seed/flowly-shot-3/600/420', alt: 'Flowly messaging screenshot' },
 ] as const
 
 export function VideoDemo() {
@@ -15,12 +15,12 @@ export function VideoDemo() {
             Demo
           </p>
           <h2 className="mt-3 font-display text-3xl font-extrabold text-ink dark:text-white sm:text-4xl lg:text-5xl">
-            See Appco in Action
+            See Flowly in Action
           </h2>
           <div className="mt-8 flex justify-center">
             <button
               type="button"
-              aria-label="Play the Appco demo video"
+              aria-label="Play the Flowly demo video"
               className="flex h-20 w-20 items-center justify-center rounded-full bg-primary-600 text-white shadow-lg transition-transform hover:scale-105 dark:bg-primary-500"
             >
               <Play className="h-8 w-8" aria-hidden="true" />

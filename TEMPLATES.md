@@ -53,7 +53,7 @@
 
 ## App Landing Page (35)
 
-- [x] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · [appco](https://appco.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
+- [x] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · [flowly](https://flowly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
 - [x] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · [applab](https://applab.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
 - [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://appli.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [x] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · [appru](https://appru.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)

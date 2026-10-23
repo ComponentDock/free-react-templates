@@ -6,7 +6,7 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders the site name, about blurb, link columns, newsletter signup, and social links', () => {
     render(<Footer />)
-    expect(screen.getByRole('heading', { name: 'Appco' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Flowly' })).toBeInTheDocument()
     expect(screen.getByText(/powerful app for better productivity/)).toBeInTheDocument()
 
     expect(screen.getByRole('heading', { name: 'Quick Links' })).toBeInTheDocument()
@@ -29,8 +29,8 @@ describe('Footer', () => {
     render(<Footer />)
 
     const input = screen.getByLabelText('Email address')
-    await user.type(input, 'hello@appco.com')
-    expect(input).toHaveValue('hello@appco.com')
+    await user.type(input, 'hello@flowly.com')
+    expect(input).toHaveValue('hello@flowly.com')
 
     await user.click(screen.getByRole('button', { name: 'Subscribe' }))
     expect(input).toHaveValue('')

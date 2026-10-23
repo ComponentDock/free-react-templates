@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Appco brand purple — from the reference stylesheet
+  /* Flowly brand purple — from the reference stylesheet
      (assets/css/style.css): primary buttons/accents #8f1bdc, pink accent
      #f9218d. Purple scale keyed on purple-600 so the shared ui
      Button/ButtonLink "primary" variant works. */

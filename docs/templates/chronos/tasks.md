@@ -59,7 +59,7 @@
 
 ## Implementation tasks (order)
 
-1. Scaffold `apps/chronos` (copy the simplest existing app, e.g. `apps/appco`
+1. Scaffold `apps/chronos` (copy the simplest existing app, e.g. `apps/flowly`
    or another minimal one; rename package to `@free-react-templates/chronos`;
    `npm install` at repo root so package-lock.json registers the workspace).
 2. `index.html`: title "Chronos", Google Fonts Lato 100/300/400/700/900 link;

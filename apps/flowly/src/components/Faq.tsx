@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    question: 'How do I get started with Appco?',
+    question: 'How do I get started with Flowly?',
     answer:
       'Sign up for a free account, invite your team, and follow the guided onboarding to create your first project in minutes.',
   },
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'How can I contact support?',
     answer:
-      'Reach us 24/7 via in-app chat or email at support@appco.com — a real human always answers.',
+      'Reach us 24/7 via in-app chat or email at support@flowly.com — a real human always answers.',
   },
 ] as const
 

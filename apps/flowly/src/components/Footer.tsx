@@ -25,7 +25,7 @@ export function Footer() {
     <footer id="contact" className="bg-gray-950 py-16 text-gray-300">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 className="font-display text-2xl font-extrabold text-white">Appco</h3>
+          <h3 className="font-display text-2xl font-extrabold text-white">Flowly</h3>
           <p className="mt-5 text-sm leading-relaxed text-gray-400">
             A powerful app for better productivity — trusted by teams in over 120 countries.
           </p>
@@ -57,11 +57,11 @@ export function Footer() {
             Subscribe for product updates and productivity tips.
           </p>
           <form onSubmit={handleSubmit} className="mt-6 flex items-stretch">
-            <label htmlFor="appco-newsletter" className="sr-only">
+            <label htmlFor="flowly-newsletter" className="sr-only">
               Email address
             </label>
             <input
-              id="appco-newsletter"
+              id="flowly-newsletter"
               type="email"
               required
               value={email}
@@ -82,7 +82,7 @@ export function Footer() {
 
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm text-gray-400">
-          Copyright © {new Date().getFullYear()} Appco. All rights reserved.
+          Copyright © {new Date().getFullYear()} Flowly. All rights reserved.
         </p>
         <SocialLinks />
       </div>

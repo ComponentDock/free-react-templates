@@ -1,17 +1,17 @@
-# Template: Appco (App Landing Page)
+# Template: Flowly (App Landing Page)
 
 ## Purpose
 
-Appco is a multi-section app landing page template in the free-react-templates
+Flowly is a multi-section app landing page template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Appco"
 design (see TEMPLATES.md), built under a different name with the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original design is a purple app-promo landing page: hero with a "Get
-things done with Appco" headline, four feature cards, three service blocks,
+things done with Flowly" headline, four feature cards, three service blocks,
 a video/demo strip, a three-tier pricing table, testimonials, an FAQ, a
 download CTA, an integrations strip, metrics, and a multi-column footer.
-Appco follows the same structure and adds the repo's standard dark-mode
+Flowly follows the same structure and adds the repo's standard dark-mode
 toggle and accessible patterns. All imagery is recreated with seeded
 placeholder images (no assets copied).
 
@@ -25,22 +25,22 @@ placeholder images (no assets copied).
 - **Structure (1:1, section order):**
   1. Header — nav: Home, Feature, Services, Pricing, Pages, Blog, Contact +
      "Download" button.
-  2. Hero — h1 "Get things done with Appco", supporting copy, "Download"
+  2. Hero — h1 "Get things done with Flowly", supporting copy, "Download"
      buttons, app/phone imagery (slider).
   3. Features (`best-features-area`) — h2 "Some of the best features Of Our
      App!"; four cards: Easy to Costomize, Extreme Security, Customer
      Support, Creative Design.
   4. Services (`service-area sky-blue`) — h2 "How Can We Help Your with
-     Appco!"; three blocks: Easily Manage, Get Payments Easily, Quick
+     Flowly!"; three blocks: Easily Manage, Get Payments Easily, Quick
      Messaging.
-  5. Video demo (`video-demo-area`) — "See Appco in Action" + "Applic Apps
+  5. Video demo (`video-demo-area`) — "See Flowly in Action" + "Applic Apps
      Screenshot" gallery.
   6. Pricing (`best-pricing`) — h2 "Choose Your Very Best Pricing Plan.";
      three plans $9/month, $29/month, $99/month with "Get Started".
   7. Testimonials — h2 "What Our Customers Have to Say"; Sarah Johnson,
      Michael Chen, Emily Rodriguez, David Kim.
   8. FAQ (`faq-area`) — h2 "Frequently Asked Questions"; six questions (How
-     do I get started with Appco?, Is there a free trial available?, Can I
+     do I get started with Flowly?, Is there a free trial available?, Can I
      switch between plans?, Is my data secure?, What payment methods do you
      accept?, How can I contact support?).
   9. Download CTA — h2 "Our App Available For Any Device Download now".
@@ -61,25 +61,25 @@ placeholder images (no assets copied).
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#8f1bdc`, purple scale + `#f9218d` accent in
-  `@theme`); placeholder images via `https://picsum.photos/seed/appco-<n>/<w>/<h>`;
+  `@theme`); placeholder images via `https://picsum.photos/seed/flowly-<n>/<w>/<h>`;
   icons from lucide-react; FAQ accordion as stateful component; social icons
   inline SVG; no assets copied.
 
-Appco lives in `apps/appco` and uses shared components from `packages/ui`
+Flowly lives in `apps/flowly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Appco", links
+The system SHALL render a navigation bar with the site name "Flowly", links
 to the main sections, a "Download" button, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Appco page is rendered
+- **GIVEN** the Flowly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Appco" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Flowly" and links to the main sections
 - **AND** the navbar SHALL show a "Download" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -92,13 +92,13 @@ to the main sections, a "Download" button, and a dark-mode toggle button.
 ### Requirement: Hero section
 
 The system SHALL render a hero section with the headline "Get things done
-with Appco", supporting copy, and download CTA buttons.
+with Flowly", supporting copy, and download CTA buttons.
 
 #### Scenario: Hero content
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero section is displayed
-- **THEN** it SHALL contain a level-1 heading matching "Get things done with Appco"
+- **THEN** it SHALL contain a level-1 heading matching "Get things done with Flowly"
 - **AND** it SHALL show a supporting paragraph and download CTA buttons
 
 ### Requirement: Features section
@@ -117,26 +117,26 @@ Support, and Creative Design.
 ### Requirement: Services section
 
 The system SHALL render a services section titled "How Can We Help Your with
-Appco!" with three blocks: Easily Manage, Get Payments Easily, and Quick
+Flowly!" with three blocks: Easily Manage, Get Payments Easily, and Quick
 Messaging.
 
 #### Scenario: Service blocks
 
 - **GIVEN** the page is rendered
 - **WHEN** the services section is displayed
-- **THEN** it SHALL show the heading "How Can We Help Your with Appco!"
+- **THEN** it SHALL show the heading "How Can We Help Your with Flowly!"
 - **AND** it SHALL show the three service blocks with titles
 
 ### Requirement: Video/demo section
 
-The system SHALL render a video demo section titled "See Appco in Action"
+The system SHALL render a video demo section titled "See Flowly in Action"
 with a screenshot gallery.
 
 #### Scenario: Demo content
 
 - **GIVEN** the page is rendered
 - **WHEN** the video demo section is displayed
-- **THEN** it SHALL show the heading "See Appco in Action"
+- **THEN** it SHALL show the heading "See Flowly in Action"
 - **AND** it SHALL show a play button and app screenshots
 
 ### Requirement: Pricing section
@@ -208,7 +208,7 @@ Links, Support), a Newsletter signup, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Appco" and an about blurb
+- **THEN** it SHALL show the site name "Flowly" and an about blurb
 - **AND** it SHALL show link columns, a newsletter input, and social links
 
 ### Requirement: Page composition
@@ -218,10 +218,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Appco app is rendered
+- **GIVEN** the Flowly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Appco — App Landing Page Template"
+- **AND** the document title SHALL be "Flowly — App Landing Page Template"
 
 ### Requirement: Component Dock attribution
 
@@ -241,7 +241,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/appco/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/flowly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -250,7 +250,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/appco/` is inspected
+- **WHEN** every non-test file under `apps/flowly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -258,15 +258,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Appco" and links to the main sections
-- [x] Hero section — it SHALL contain a level-1 heading matching "Get things done with Appco"
+- [x] Navigation bar — the navbar SHALL show the site name "Flowly" and links to the main sections
+- [x] Hero section — it SHALL contain a level-1 heading matching "Get things done with Flowly"
 - [x] Features section — it SHALL show the heading "Some of the best features Of Our App!"
-- [x] Services section — it SHALL show the heading "How Can We Help Your with Appco!"
-- [x] Video/demo section — it SHALL show the heading "See Appco in Action"
+- [x] Services section — it SHALL show the heading "How Can We Help Your with Flowly!"
+- [x] Video/demo section — it SHALL show the heading "See Flowly in Action"
 - [x] Pricing section — it SHALL show the heading "Choose Your Very Best Pricing Plan."
 - [x] Testimonials section — it SHALL show the heading "What Our Customers Have to Say"
 - [x] FAQ section — it SHALL show the heading "Frequently Asked Questions"
 - [x] Download CTA section — it SHALL show the heading "Our App Available For Any Device Download now"
 - [x] Metrics section — it SHALL show the heading "Say Hello To The Collaboration Hub."
-- [x] Footer — it SHALL show the site name "Appco" and an about blurb
+- [x] Footer — it SHALL show the site name "Flowly" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

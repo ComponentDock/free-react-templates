@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/appco",
+  "name": "@free-react-templates/flowly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://appco.free.componentdock.com",
+  "homepage": "https://flowly.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

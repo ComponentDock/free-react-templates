@@ -6,9 +6,9 @@ describe('VideoDemo', () => {
   it('renders the heading, a play button, and app screenshots', () => {
     render(<VideoDemo />)
     expect(
-      screen.getByRole('heading', { level: 2, name: 'See Appco in Action' }),
+      screen.getByRole('heading', { level: 2, name: 'See Flowly in Action' }),
     ).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Play the Appco demo video' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Play the Flowly demo video' })).toBeInTheDocument()
 
     const images = screen.getAllByRole('img')
     expect(images.length).toBeGreaterThanOrEqual(3)
