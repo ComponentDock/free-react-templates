@@ -12,7 +12,7 @@ describe('About', () => {
     expect(screen.getByText(/Lorem ipsum dolor sit amet/)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /learn more/i })).toBeInTheDocument()
     expect(
-      screen.getByRole('img', { name: 'The Ecobit social dashboard on a laptop' }),
+      screen.getByRole('img', { name: 'The Nodely social dashboard on a laptop' }),
     ).toBeInTheDocument()
   })
 })

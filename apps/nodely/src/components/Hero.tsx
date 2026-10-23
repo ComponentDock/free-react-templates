@@ -18,8 +18,8 @@ export function Hero() {
           </a>
         </div>
         <img
-          src="https://picsum.photos/seed/ecobit-hero/640/720"
-          alt="Ecobit app dashboard preview"
+          src="https://picsum.photos/seed/nodely-hero/640/720"
+          alt="Nodely app dashboard preview"
           className="mx-auto w-full max-w-md rounded-xl shadow-xl"
         />
       </div>

@@ -11,6 +11,6 @@ describe('Hero', () => {
 
     expect(screen.getByText(/Lorem ipsum dolor sit amet/)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /try for free/i })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Ecobit app dashboard preview' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Nodely app dashboard preview' })).toBeInTheDocument()
   })
 })

@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('renders link columns, social links, and a copyright line', () => {
     render(<Footer />)
 
-    expect(screen.getByRole('heading', { level: 2, name: 'About Ecobit' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'About Nodely' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'Quick Links' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'My Account' })).toBeInTheDocument()
 
@@ -18,6 +18,10 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: 'X' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toBeInTheDocument()
 
-    expect(screen.getByText(/Copyright © \d{4} Ecobit/)).toBeInTheDocument()
+    expect(screen.getByText(/Copyright © \d{4} Nodely/)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

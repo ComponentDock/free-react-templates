@@ -1,8 +1,8 @@
-# Template: Ecobit (App Landing Page)
+# Template: Nodely (App Landing Page)
 
 ## Purpose
 
-Ecobit is a single-page app/business landing template in the
+Nodely is a single-page app/business landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Ecobit" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -18,7 +18,7 @@ CSS 4 + TypeScript.
   The TEMPLATES.md screenshot (`ecobit-free-template.jpg`) matches this
   reconstruction.
 - **Section order (1:1):**
-  1. Navbar (`main_menu`): logo "ecobit" + Home, Features, Pricing, Blog,
+  1. Navbar (`main_menu`): logo "nodely" + Home, Features, Pricing, Blog,
      Pages, Elements, Contact + "Sing Up" button.
   2. Hero (`banner_part`): "Building Networks For People" + blurb + "try
      for free" button.
@@ -46,25 +46,25 @@ CSS 4 + TypeScript.
   - Fonts: **"Barlow Semi Condensed"** + **"Rajdhani"** (Google Fonts).
   - Orange buttons with white text, square-ish (small radius).
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/ecobit-<n>/<w>/<h>`); icons → lucide-react; forms
+  (`picsum.photos/seed/nodely-<n>/<w>/<h>`); icons → lucide-react; forms
   prevent default (no backend); no assets copied.
 
-Ecobit lives in `apps/ecobit` and uses shared components from `packages/ui`
+Nodely lives in `apps/nodely` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Ecobit",
+The system SHALL render a top navigation bar with the site name "Nodely",
 anchor links to the page's sections, a "Sign up" button, and a dark-mode
 toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Ecobit page is rendered
+- **GIVEN** the Nodely page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Ecobit" and links to Home, Features, Pricing, and Contact
+- **THEN** the navbar SHALL show the site name "Nodely" and links to Home, Features, Pricing, and Contact
 - **AND** the navbar SHALL show a "Sign up" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -177,10 +177,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Ecobit app is rendered
+- **GIVEN** the Nodely app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Ecobit — App Landing Template"
+- **AND** the document title SHALL be "Nodely — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -200,7 +200,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/ecobit/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/nodely/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -209,7 +209,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/ecobit/` is inspected
+- **WHEN** every non-test file under `apps/nodely/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -217,7 +217,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Ecobit" and links to Home, Features, Pricing, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Nodely" and links to Home, Features, Pricing, and Contact
 - [x] Hero section — it SHALL contain a level-1 heading "Building Networks For People"
 - [ ] Feature tiles — it SHALL show tiles titled "Fully Secured", "Unique Design", and "A Volunteer"
 - [ ] Split sections — it SHALL contain one of the split headings
