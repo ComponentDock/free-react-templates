@@ -80,6 +80,17 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
 Prefer names that evoke the design (pet care → `Vetly`, horse club → `Canter`), a
 single lowercase word, no collision with `ls apps/`.
 
+## Pitfall — the provenance URL contains the source slug
+
+A blind `farmie` → `harvest` find/replace also rewrites
+`https://colorlib.com/wp/template/farmie/` and
+`https://preview.colorlib.com/theme/farmie/` into the *new* name, which makes
+the spec cite a page that does not exist (and the replica's own provenance
+unverifiable). Replace case-variants selectively and then re-assert the two
+URLs plus the `ColorLib "X"` display name; only the app name should change.
+The prep doc may also carry the old display name spelled differently from the
+real slug (`Famie` vs `farmie`) — trust the live URL, not the prose.
+
 ## Pitfall — prep docs can seed the violation
 
 Old prep artifacts sometimes rationalise reusing the source name ("keeps the
