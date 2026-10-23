@@ -1,0 +1,90 @@
+# Imprint — Implementation Tasks
+
+Source design: **Evans** (`https://colorlib.com/wp/template/evans/`) → recreation name **imprint**. Shipped at https://imprint.free.componentdock.com.
+
+Scope: Recreate the ColorLib **Evans** template (https://colorlib.com/wp/template/evans/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript app named **Imprint**. The template is a personal portfolio and freelance designer page featuring a dark hero, intro section, services grid, and alternating portfolio gallery.
+
+## Component breakdown
+
+Render order as composed in `apps/imprint/src/App.tsx`:
+
+### 1. Navbar
+- The navbar SHALL display the "Imprint" brand and navigation links for About, Work, and Contact. On mobile, a hamburger toggle SHALL show/hide the menu with proper aria-expanded state.
+- Scenario — Navbar shows brand and desktop links:
+  - **WHEN** the page loads
+  - **THEN** the navbar contains a link with text "Imprint"
+  - **AND** the navbar contains links for "About", "Work", and "Contact"
+- Scenario — Mobile menu toggles:
+  - **WHEN** I click the hamburger button
+  - **THEN** the button has aria-expanded "true"
+  - **AND** additional mobile navigation links are visible
+  - **WHEN** I click the hamburger button again
+  - **THEN** the button has aria-expanded "false"
+
+### 2. Hero
+- The hero SHALL display a heading "Creative Designer & Writer", a subtitle "Personal Portfolio", and a "Learn More" call-to-action link.
+- Scenario — Hero heading and CTA:
+  - **WHEN** the page loads
+  - **THEN** there is a heading containing "Creative Designer"
+  - **AND** there is a link with text "Learn More"
+  - **AND** there is text "Personal Portfolio"
+
+### 3. Intro
+- The intro section SHALL display a heading mentioning "Web Designer" and a description paragraph about the designer.
+- Scenario — Intro content:
+  - **WHEN** the page loads
+  - **THEN** there is a heading containing "Web Designer"
+  - **AND** there is a paragraph containing "Far far away"
+
+### 4. Services
+- The services section SHALL display four cards: Web Design, Web Development, Graphic Design, and Writing, each with an icon, title, and description.
+- Scenario — All services rendered:
+  - **WHEN** the page loads
+  - **THEN** there are headings for "Web Design", "Web Development", "Graphic Design", and "Writing"
+  - **AND** there is a description containing "203 Fake St. Mountain View"
+
+### 5. Portfolio
+- The portfolio section SHALL display six project entries with alternating left/right layouts. Each entry SHALL have a category label, date, title, description, and "View Portfolio" button.
+- Scenario — Portfolio entries:
+  - **WHEN** the page loads
+  - **THEN** there are 6 elements with text "View Portfolio"
+  - **AND** headings exist for "Midway", "Workplace Office", "Jacket Leather", "Topless", "Fashion Style", and "Prickly"
+
+### 6. Footer
+- The footer SHALL link to https://www.componentdock.com/ with text "Component Dock" and open in a new tab.
+- Scenario — Footer Component Dock link:
+  - **WHEN** the page loads
+  - **THEN** the footer contains a link to "https://www.componentdock.com/"
+  - **AND** the link text includes "Component Dock"
+  - **AND** the link has target="_blank"
+
+### Cross-cutting requirements
+
+- **Page loads with correct title** — The document title SHALL be "Imprint — Personal Portfolio Template".
+  - Scenario — Document title is set on load: **WHEN** the page loads; **THEN** the document title is "Imprint — Personal Portfolio Template"
+- **Page composes all sections** — The page SHALL render a banner landmark (navbar), main landmark, and contentinfo landmark (footer).
+  - Scenario — Landmark structure: **WHEN** the page loads; **THEN** there is a banner landmark; **AND** there is a main landmark; **AND** there is a contentinfo landmark
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/imprint/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/imprint/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; Original: ColorLib Evans (https://colorlib.com/wp/template/evans/); Preview: https://preview.colorlib.com/theme/evans/; Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/evans-free-template.jpg; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/imprint` ships on https://imprint.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/imprint/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/imprint/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/imprint/public/CNAME` = `imprint.free.componentdock.com`
+  and the package `homepage` = `https://imprint.free.componentdock.com`.

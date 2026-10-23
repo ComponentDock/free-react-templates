@@ -1,0 +1,117 @@
+# Jobscout — Implementation Tasks
+
+Source design: **Jobfinderportal** (`https://colorlib.com/wp/template/jobfinderportal/`) → recreation name **jobscout**. Shipped at https://jobscout.free.componentdock.com.
+
+Scope: JobScout is a single-page job board landing page in the free-react-templates monorepo.
+
+## Component breakdown
+
+Render order as composed in `apps/jobscout/src/App.tsx`:
+
+### 1. Navbar
+- The navbar SHALL display the "JobScout" brand text, navigation links (Home, Find Jobs, About, Contact), a "Register" pink button, and a "Login" outlined pink button. The navbar SHALL be fixed at the top of the viewport. On mobile viewports, a hamburger icon SHALL toggle the mobile menu.
+- Scenario — Navbar renders brand and links:
+  - **WHEN** the user visits the page
+  - **THEN** the navbar SHALL show the brand text "JobScout"
+  - **AND** it SHALL have links: Home, Find Jobs, About, Contact
+  - **AND** "Register" and "Login" buttons SHALL be visible
+- Scenario — Mobile hamburger menu toggle:
+  - **WHEN** the user clicks the hamburger icon
+  - **THEN** the mobile menu SHALL open with nav links visible
+  - **WHEN** the user clicks the close icon
+  - **THEN** the mobile menu SHALL close
+
+### 2. Hero
+- The hero section SHALL display a background image with dark overlay, the headline "Find the most exciting startup jobs", and a search form with a keyword text input, a location select dropdown, and a "Find Job" pink button. The form SHALL use role="search".
+- Scenario — Hero renders heading and search:
+  - **WHEN** the user visits the page
+  - **THEN** the heading "Find the most exciting startup jobs" SHALL be visible
+  - **AND** a search form with text input, select, and button SHALL be present
+
+### 3. Categories
+- The categories section SHALL display 8 category cards in a responsive grid. Each card SHALL show an icon, a category name, and a count. A "Browse All Sectors" outlined button SHALL appear below the grid.
+- Scenario — Category cards render correctly:
+  - **WHEN** the categories section is visible
+  - **THEN** 8 category cards SHALL be shown
+  - **AND** each card SHALL have a name and count
+  - **AND** a "Browse All Sectors" button SHALL be visible
+
+### 4. CvUploadCta
+- The CV upload CTA section SHALL display a background image with dark overlay, the subtitle "Upload Your Resume", the heading "Make a Difference with Your Online Resume!", and an "Upload your CV" outlined button.
+- Scenario — CTA section renders correctly:
+  - **WHEN** the CTA section is visible
+  - **THEN** the heading SHALL be visible
+  - **AND** the "Upload your CV" button SHALL be present
+
+### 5. FeaturedJobs
+- The featured jobs section SHALL display 4 job listing cards. Each card SHALL show a company icon, job title, company name, location, salary, a type badge (Full Time / Part Time), and a time-ago indicator.
+- Scenario — Job cards render with details:
+  - **WHEN** the featured jobs section is visible
+  - **THEN** 4 job cards SHALL be shown
+  - **AND** each card SHALL show title, company, location, salary, and type badge
+
+### 6. HowItWorks
+- The process section SHALL display 3 step cards on a dark background. Each card SHALL show an icon, a step title ("1. Search a job", "2. Apply for job", "3. Get your job"), and a description.
+- Scenario — Process steps render correctly:
+  - **WHEN** the process section is visible
+  - **THEN** 3 step cards SHALL be shown
+  - **AND** step titles SHALL match "1. Search a job", "2. Apply for job", "3. Get your job"
+
+### 7. Testimonial
+- The testimonial section SHALL display star ratings, a blockquote, the founder's name "Margaret Lawson", role "Creative Director", an avatar image, and dot navigation indicators.
+- Scenario — Testimonial renders correctly:
+  - **WHEN** the testimonial section is visible
+  - **THEN** the quote text SHALL be visible
+  - **AND** "Margaret Lawson" and "Creative Director" SHALL be shown
+  - **AND** dot indicators SHALL be present
+
+### 8. CompanyStats
+- The company stats section SHALL display the subtitle "What we are doing", the heading "24k Talented people are getting Jobs", descriptive text, a "Post a Job" pink button, a background image, and a "Since 1994" badge.
+- Scenario — Stats section renders correctly:
+  - **WHEN** the stats section is visible
+  - **THEN** the heading "24k Talented people are getting Jobs" SHALL be visible
+  - **AND** a "Post a Job" button SHALL be present
+  - **AND** the "Since 1994" badge SHALL be visible
+
+### 9. Blog
+- The blog section SHALL display 2 blog cards in a 2-column grid. Each card SHALL show an image, a date badge, a category label, a title, and a "Read more" link.
+- Scenario — Blog cards render correctly:
+  - **WHEN** the blog section is visible
+  - **THEN** 2 blog cards SHALL be shown
+  - **AND** each card SHALL have a title and "Read more" link
+
+### 10. Footer
+- The footer SHALL have a dark navy background with 4 columns (About Us, Contact Info, Important Links, Newsletter), a stats row (5000+, 451, 568), a copyright line with a link to https://www.componentdock.com/ branded "Component Dock", and social media icon links (Facebook, Twitter, Behance).
+- Scenario — Footer renders all columns:
+  - **WHEN** the footer is visible
+  - **THEN** "About Us", "Contact Info", "Important Links", "Newsletter" headers SHALL be shown
+  - **AND** stats "5000+", "451", "568" SHALL be visible
+  - **AND** a link to "https://www.componentdock.com/" SHALL be present
+  - **AND** social icon links SHALL be present
+
+### Cross-cutting requirements
+
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/jobscout/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/jobscout/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/jobscout` ships on https://jobscout.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/jobscout/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/jobscout/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/jobscout/public/CNAME` = `jobscout.free.componentdock.com`
+  and the package `homepage` = `https://jobscout.free.componentdock.com`.

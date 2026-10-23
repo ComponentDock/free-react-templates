@@ -1,0 +1,97 @@
+# Btnflare — Implementation Tasks
+
+Source design: **Bootstrap Buttons 07** (`https://colorlib.com/wp/template/bootstrap-buttons-07/`) → recreation name **btnflare**. Shipped at https://btnflare.free.componentdock.com.
+
+Scope: Recreation of ColorLib Bootstrap Buttons 07 (`https://colorlib.com/wp/template/bootstrap-buttons-07/`, preview: `https://preview.colorlib.com/theme/bootstrap-buttons-07/` — unreachable, 404).
+
+## Component breakdown
+
+Render order as composed in `apps/btnflare/src/App.tsx`:
+
+### 1. Header
+- No dedicated spec block — hold this band to the design notes.
+
+### 2. SizeScale
+- The system SHALL render a size scale section with Large, Medium, and Small button variants with proportional padding and typography, each with a size label.
+- Scenario — Viewing button sizes:
+  - **GIVEN** the user is on the Btnflare home page
+  - **WHEN** the user views the size scale section
+  - **THEN** they SHALL see Large, Medium, and Small button variants with proportional padding and typography
+  - **AND** each button SHALL have a label indicating its size
+  - **AND** all size buttons SHALL use the Primary color variant
+
+### 3. ColorPalette
+- The system SHALL render a comprehensive color palette section with all 18 Bootstrap 4 semantic color variants organized in three rows.
+- Scenario — Viewing color variants row 1:
+  - **GIVEN** the user is viewing the color palette section
+  - **WHEN** the user scans the first row of buttons
+  - **THEN** they SHALL see Primary, Secondary, Success, Info, Warning, Danger, Light, and Orange button options
+  - **AND** each button SHALL display its semantic color correctly
+  - **AND** each button SHALL have a label with its color name
+- Scenario — Viewing color variants row 2:
+  - **GIVEN** the user is viewing the color palette section
+  - **WHEN** the user scans the second row of buttons
+  - **THEN** they SHALL see Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, and Blue button options
+  - **AND** each button SHALL display its semantic color correctly
+  - **AND** each button SHALL have a label with its color name
+- Scenario — Viewing color variants row 3:
+  - **GIVEN** the user is viewing the color palette section
+  - **WHEN** the user scans the third row of buttons
+  - **THEN** they SHALL see Brown and Blue Gray button options
+  - **AND** each button SHALL display its semantic color correctly
+  - **AND** each button SHALL have a label with its color name
+- Scenario — Interactive hover states on color buttons:
+  - **GIVEN** the user is viewing any color variant button
+  - **WHEN** the user hovers over a button
+  - **THEN** the button SHALL display a subtle elevation/darken effect
+  - **AND** the transition SHALL be smooth (150-200ms)
+
+### 4. FullWidth
+- The system SHALL render a full-width block button section with a button that spans 100% of its container width.
+- Scenario — Viewing full width block button:
+  - **GIVEN** the user is viewing the full width section
+  - **WHEN** the user checks the block button
+  - **THEN** it SHALL span 100% of its container width
+  - **AND** it SHALL use the Primary color variant
+  - **AND** it SHALL have a label indicating "Full width button"
+  - **AND** it SHALL have clear hover feedback
+
+### 5. Footer
+- The system SHALL render a responsive page that works on all viewports with proper attribution in the footer.
+- Scenario — Mobile responsive layout:
+  - **GIVEN** the user views the page on a mobile viewport (640px or less)
+  - **WHEN** the page renders
+  - **THEN** button rows SHALL stack vertically or wrap gracefully
+  - **AND** the full-width button SHALL span the viewport width
+  - **AND** all text SHALL remain readable
+- Scenario — Footer attribution check:
+  - **GIVEN** the user scrolls to the bottom of the page
+  - **WHEN** the footer is visible
+  - **THEN** the footer SHALL display "Made with Component Dock" linking to https://www.componentdock.com/
+
+### Cross-cutting requirements
+
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/btnflare/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/btnflare/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/btnflare` ships on https://btnflare.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/btnflare/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/btnflare/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/btnflare/public/CNAME` = `btnflare.free.componentdock.com`
+  and the package `homepage` = `https://btnflare.free.componentdock.com`.

@@ -1,0 +1,79 @@
+# Msgdrop — Implementation Tasks
+
+Source design: **Contact Form V13** (`https://colorlib.com/wp/template/contact-form-v13/`) → recreation name **msgdrop**. Shipped at https://msgdrop.free.componentdock.com.
+
+Scope: A Contact Form template with split-screen contact form, contact form fields, send button and footer attribution sections. Recreation of ColorLib **Contact Form V13** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+
+## Component breakdown
+
+Render order as composed in `apps/msgdrop/src/App.tsx`:
+
+### 1. MapPanel
+- The left panel SHALL display a dark map background with a green phone badge overlay.
+- Scenario — Phone badge display:
+  - **WHEN** the user views the map panel
+  - **THEN** a green pill-shaped badge is visible on the map
+  - **AND** the badge displays a phone number "(+00) 345 6389"
+  - **AND** the badge includes a phone icon to the left of the number
+- Scenario — Phone badge hover:
+  - **WHEN** the user hovers over the phone badge
+  - **THEN** the badge shows a subtle hover effect (opacity or scale change)
+
+### 2. ContactForm
+- The page SHALL display a split-screen layout with a map panel on the left and a contact form on the right.
+- Scenario — Full-page split layout:
+  - **WHEN** the user loads the MsgDrop page
+  - **THEN** the viewport is split into two equal columns
+  - **AND** the left column displays a dark map background image
+  - **AND** the right column displays a white form panel
+- Scenario — Responsive layout on mobile:
+  - **WHEN** the user views on a viewport width less than 768px
+  - **THEN** the two columns stack vertically
+  - **AND** the map section appears above the form
+
+### 3. Footer
+- The page SHALL include a footer with a Component Dock link.
+- Scenario — Component Dock link:
+  - **WHEN** the user scrolls to the bottom of the page
+  - **THEN** a footer or attribution line is visible
+  - **AND** it links to https://www.componentdock.com/
+  - **AND** the link text reads "Component Dock"
+
+### Cross-cutting requirements
+
+- **Contact form fields** — The right panel SHALL display a form with Name, Email, Phone, and Message fields.
+  - Scenario — Form heading: **WHEN** the user views the form panel; **THEN** a heading "Contact Us" is displayed at the top; **AND** the heading is large, bold, and dark colored
+  - Scenario — Name field: **WHEN** the user views the Name field; **THEN** a "Name" label is displayed above the input; **AND** the input has a bottom border line
+  - Scenario — Email field: **WHEN** the user views the Email field; **THEN** an "Email" label is displayed above the input; **AND** the input has a bottom border line
+  - Scenario — Phone field: **WHEN** the user views the Phone field; **THEN** a "Phone" label is displayed above the input; **AND** the input shows placeholder "Phone Number..."; **AND** the input has a bottom border line
+  - Scenario — Message field: **WHEN** the user views the Message field; **THEN** a "Message" label is displayed above the textarea; **AND** the textarea shows placeholder "Questions/Comments..."; **AND** the textarea has a bottom border line
+  - Scenario — Field focus underline: **WHEN** the user clicks into any form field; **THEN** the bottom border turns coral/red (#FF6B6B); **AND** the border remains coral/red while the field is focused
+  - Scenario — Field validation checkmark: **WHEN** the user fills in a valid Name or Email value; **THEN** a green checkmark icon appears to the right of the field
+- **Send button** — The form SHALL include a Send button with gradient styling.
+  - Scenario — Button display: **WHEN** the user views the form; **THEN** a "Send" button is displayed at the bottom of the form; **AND** the button has a coral-to-pink gradient background; **AND** the button text is white; **AND** the button is fully rounded (pill shape)
+  - Scenario — Button hover: **WHEN** the user hovers over the Send button; **THEN** the button shows a hover effect (brightness change or scale)
+  - Scenario — Button click: **WHEN** the user fills all required fields; **AND** the user clicks the Send button; **THEN** the form submission is handled (prevent default, show confirmation)
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/msgdrop/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/msgdrop/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] Split-screen layout renders correctly (50/50 columns); [ ] Left panel shows dark map background image; [ ] Green phone badge renders on the map with phone icon and number; [ ] Right panel shows white form with "Contact Us" heading; [ ] All four fields render: Name, Email, Phone, Message; [ ] Field labels match the original ("Name", "Email", "Phone", "Message"); [ ] Placeholder text matches ("Phone Number...", "Questions/Comments..."); [ ] Focus state shows coral/red underline; [ ] Validation shows green checkmark on valid fields; [ ] Send button has coral-to-pink gradient; [ ] Send button is pill-shaped (fully rounded); [ ] Responsive: stacks vertically on mobile (<768px); [ ] Footer links to Component Dock; [ ] No ColorLib references in app code; [ ] `public/CNAME` contains `msgdrop.free.componentdock.com`; [ ] `homepage` in package.json is `https://msgdrop.free.componentdock.com`; [ ] `vite.config.ts` registers `injectUiSource()`; [ ] Footer credits Component Dock (not ColorLib); [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/msgdrop` ships on https://msgdrop.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/msgdrop/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/msgdrop/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/msgdrop/public/CNAME` = `msgdrop.free.componentdock.com`
+  and the package `homepage` = `https://msgdrop.free.componentdock.com`.

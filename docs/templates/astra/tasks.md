@@ -1,0 +1,103 @@
+# Astra — Implementation Tasks
+
+Source design: **Stellar** (`https://colorlib.com/wp/template/stellar/`) → recreation name **astra**. Shipped at https://astra.free.componentdock.com.
+
+Scope: Astra is a creative branding agency landing page with a parallax hero, services and portfolio grids, client logos, stat counters and a contact form. It recreates the ColorLib **Stellar** design (https://colorlib.com/wp/template/stellar/).
+
+## Component breakdown
+
+Render order as composed in `apps/astra/src/App.tsx`:
+
+### 1. Navbar
+- The template SHALL display a sticky navigation bar with logo "Astra" and links to Home, About, Services, Works, and Contact sections. The navbar SHALL toggle a mobile menu on hamburger click.
+- Scenario — Desktop navigation links:
+  - **WHEN** the page loads
+  - **THEN** the navbar displays links for Home, About, Services, Works, and Contact
+- Scenario — Mobile menu toggle:
+  - **WHEN** user clicks the hamburger menu button
+  - **THEN** the mobile navigation menu opens
+  - **AND** clicking the close button closes it
+
+### 2. Hero
+- The template SHALL display a full-viewport hero section with a dark overlay, headline text, CTA button, play video link, scroll link, and social sidebar.
+- Scenario — Hero content:
+  - **WHEN** the hero section is visible
+  - **THEN** the headline reads "We provide creative solutions to turn your ideas into digital reality"
+  - **AND** a "More About Us" button links to #about
+  - **AND** social icons for Facebook, Twitter, Instagram, Behance, and Dribbble are displayed
+
+### 3. About
+- The template SHALL display an "About" section with subhead "01 Who We Are", heading, description, and a 2x2 grid of process cards (Planning, Branding, Implementation, Documentation).
+- Scenario — About content:
+  - **WHEN** the About section is visible
+  - **THEN** the subhead shows "01 Who We Are"
+  - **AND** four process cards are displayed
+
+### 4. Services
+- The template SHALL display a "Services" section with dark background, subhead "02 What We Do", heading, and 6 service cards in a 3x2 grid.
+- Scenario — Services grid:
+  - **WHEN** the Services section is visible
+  - **THEN** six service cards are displayed (Brand Identity, Illustration, Web Design, Product Strategy, UI/UX Design, Mobile Design)
+
+### 5. Works
+- The template SHALL display a "Works" section with light background, subhead "03 Recent Works", 8 portfolio items in a 4x2 grid, and a testimonials subsection with 3 testimonials.
+- Scenario — Portfolio grid:
+  - **WHEN** the Works section is visible
+  - **THEN** eight portfolio items are displayed with images, titles, and categories
+- Scenario — Testimonials:
+  - **WHEN** the Works section is visible
+  - **THEN** three testimonials are displayed with quotes, author names, and positions
+
+### 6. Clients
+- The template SHALL display a "Clients" section with dark background, subhead "04 Selected Clients", heading, and 8 client logo placeholders in a 4x2 grid.
+- Scenario — Client logos:
+  - **WHEN** the Clients section is visible
+  - **THEN** eight client placeholders are displayed
+
+### 7. Stats
+- The template SHALL display a stats row with 4 counter items: 213 Projects Completed, 179 Happy Clients, 35 Awards Received, 2319 Cups of Coffee.
+- Scenario — Stats display:
+  - **WHEN** the Stats section is visible
+  - **THEN** four stat items are displayed with labels and numeric values
+
+### 8. Contact
+- The template SHALL display a "Contact" section with dark background, subhead "05 Get In Touch", address, social links, contact info, CTA button, and subscribe form.
+- Scenario — Contact form:
+  - **WHEN** user enters a valid email and clicks Subscribe
+  - **THEN** a "Thanks for subscribing!" message is shown
+- Scenario — Empty email submission:
+  - **WHEN** user submits the form with empty email
+  - **THEN** the form does not show the thanks message
+
+### 9. Footer
+- The template SHALL display a footer with copyright text and a link to https://www.componentdock.com/.
+- Scenario — Footer link:
+  - **WHEN** the footer is visible
+  - **THEN** a link to https://www.componentdock.com/ is displayed with "Component Dock" text
+
+### Cross-cutting requirements
+
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/astra/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/astra/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/astra` ships on https://astra.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/astra/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/astra/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/astra/public/CNAME` = `astra.free.componentdock.com`
+  and the package `homepage` = `https://astra.free.componentdock.com`.

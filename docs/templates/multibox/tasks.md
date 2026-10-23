@@ -1,0 +1,91 @@
+# Multibox — Implementation Tasks
+
+Source design: **Multiselect 19** (`https://colorlib.com/wp/template/multiselect-19/`) → recreation name **multibox**. Shipped at https://multibox.free.componentdock.com.
+
+Scope: Multibox is a snippet/component template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Multiselect V19" multi-select snippet (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+## Component breakdown
+
+Render order as composed in `apps/multibox/src/App.tsx`:
+
+### 1. MultiSelect
+- The system SHALL render a multi-select component with a search input, tag-style selections, and a dropdown list of options.
+- Scenario — Component renders with placeholder:
+  - **GIVEN** the user loads the page with no selections
+  - **WHEN** the multi-select area is visible
+  - **THEN** an input field with placeholder "Select Categories" is shown
+  - **AND** the container has rounded corners and a subtle box-shadow
+- Scenario — Dropdown opens on click:
+  - **GIVEN** the user has not selected any options
+  - **WHEN** the user clicks the multi-select input
+  - **THEN** a dropdown appears below the input
+  - **AND** the dropdown lists all available options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
+- Scenario — Selecting an option adds a tag:
+  - **GIVEN** the dropdown is open
+  - **WHEN** the user clicks the "Design" option
+  - **THEN** a tag labeled "Design" appears inside the input area
+  - **AND** the dropdown remains open for further selections
+- Scenario — Selected tags have distinct styling:
+  - **GIVEN** the user has selected one or more options
+  - **WHEN** the tags are rendered
+  - **THEN** each tag has a cream/yellow background (#e5e4cc)
+  - **AND** each tag has rounded corners (~3px border-radius)
+  - **AND** each tag has a close/remove button
+- Scenario — Removing a selected tag:
+  - **GIVEN** the user has selected "Design" and "HTML5"
+  - **WHEN** the user clicks the close button on the "Design" tag
+  - **THEN** the "Design" tag is removed from the input area
+  - **AND** "Design" reappears in the dropdown options
+  - **AND** the "HTML5" tag remains
+- Scenario — Search/filter within multi-select:
+  - **GIVEN** the user has opened the dropdown
+  - **WHEN** the user types "Boot" in the search input
+  - **THEN** only the "Bootstrap" option is shown in the dropdown
+  - **AND** other non-matching options are hidden
+- Scenario — No results found:
+  - **GIVEN** the user has opened the dropdown
+  - **WHEN** the user types "zzz" in the search input
+  - **THEN** a "No results found" message is displayed
+
+### 2. Footer
+- The system SHALL render a footer linking to Component Dock.
+- Scenario — Footer content:
+  - **GIVEN** the user loads the page
+  - **WHEN** the footer is visible
+  - **THEN** a "More templates at Component Dock" link points to https://www.componentdock.com/
+
+### Cross-cutting requirements
+
+- **Page layout** — The system SHALL render a centered page with a light gray (#efefef) background and a heading "Multi-Select #9" in Roboto font.
+  - Scenario — Heading renders centered: **GIVEN** the user loads the page; **WHEN** the page finishes rendering; **THEN** a heading "Multi-Select #9" is visible; **AND** the heading is centered horizontally
+  - Scenario — Light gray background: **GIVEN** the user loads the page; **WHEN** the body background is inspected; **THEN** the background color is approximately #efefef
+- **Variant color switching** — The system SHALL support three color variants for selected tags: cream (#e5e4cc), green (#c7f0db), and blue (#d3f4ff).
+  - Scenario — Switching variant colors: **GIVEN** the component is rendered with the default cream variant; **WHEN** the user clicks the green variant button; **THEN** the selected tag background changes to green (#c7f0db); **WHEN** the user clicks the blue variant button; **THEN** the selected tag background changes to blue (#d3f4ff)
+- **Responsive layout** — The system SHALL maintain a centered layout on narrow viewports.
+  - Scenario — Narrow viewport: **GIVEN** the user views the page on a narrow viewport (< 768px); **WHEN** the layout adjusts; **THEN** the heading and multi-select remain centered; **AND** the multi-select container fills available width up to its max
+- **Closing dropdown on outside click** — The system SHALL close the dropdown when the user clicks outside the component.
+  - Scenario — Outside click closes dropdown: **GIVEN** the dropdown is open; **WHEN** the user clicks outside the multi-select component; **THEN** the dropdown closes
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/multibox/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/multibox/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/multibox` ships on https://multibox.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/multibox/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/multibox/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/multibox/public/CNAME` = `multibox.free.componentdock.com`
+  and the package `homepage` = `https://multibox.free.componentdock.com`.

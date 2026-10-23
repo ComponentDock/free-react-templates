@@ -1,0 +1,130 @@
+# Chamfer — Implementation Tasks
+
+Source design: **Theinterior** (`https://colorlib.com/wp/template/theinterior/`) → recreation name **chamfer**. Shipped at https://chamfer.free.componentdock.com.
+
+Scope: Chamfer is a warm interior-design studio landing template in the free-react-templates monorepo. It is a React recreation of the ColorLib free "Theinterior" template, built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+## Component breakdown
+
+Render order as composed in `apps/chamfer/src/App.tsx`:
+
+### 1. Navbar
+- No dedicated spec block — hold this band to the design notes.
+- Anchors: Main navigation · Mobile navigation · Chamfer · Contact Us
+
+### 2. HeroSlider
+- The hero section SHALL show a full-width background image with dark overlay, a welcome subheading, and the heading "Modern Interior & Design".
+- Scenario — Hero slider displays with dark overlay:
+  - **WHEN** the hero section is visible
+  - **THEN** a full-width background image with dark overlay is shown
+  - **AND** the heading "Modern Interior & Design" is displayed
+  - **AND** a video play icon is present
+
+### 3. OurInfo
+- The Our Info section SHALL display three columns with titles and descriptions on a dark background.
+- Scenario — Our Info shows three feature columns:
+  - **WHEN** the Our Info section is visible
+  - **THEN** three columns are displayed side by side
+  - **AND** each column has a title and description
+
+### 4. ProServices
+- The Professional Services section SHALL show a background image, heading, and "Discover More About Us" button.
+- Scenario — Professional Services banner with CTA:
+  - **WHEN** the Professional Services section is visible
+  - **THEN** the heading "We will create modern and first class interior" is displayed
+  - **AND** a "Discover More About Us" button is shown
+
+### 5. ServiceCards
+- The Services section SHALL display three cards (Lighting, Interior Design, Office Decoration) with icons and descriptions.
+- Scenario — Services grid shows three service cards:
+  - **WHEN** the Services section is visible
+  - **THEN** three service cards are displayed in a row
+  - **AND** each card has an icon, title, and description
+
+### 6. GalleryGrid
+- The Gallery section SHALL display six project images in a masonry-like grid with hover overlays.
+- Scenario — Gallery shows masonry image grid:
+  - **WHEN** the Gallery section is visible
+  - **THEN** six project images are displayed in a grid
+  - **AND** hovering shows a project name overlay and arrow icon
+
+### 7. TeamGrid
+- The Team section SHALL display three team members with photos, names, and roles.
+- Scenario — Team section shows three members:
+  - **WHEN** the Team section is visible
+  - **THEN** three team member cards are displayed
+  - **AND** each card has a photo, name, and role title
+
+### 8. TestimonialSection
+- The Testimonial section SHALL display a carousel with quotes, dot navigation, and previous/next controls.
+- Scenario — Testimonial carousel displays quotes:
+  - **WHEN** the Testimonial section is visible
+  - **THEN** a testimonial carousel is present with dot navigation
+  - **AND** each slide shows a quote and founder name
+
+### 9. BrandCarousel
+- The Brand Area section SHALL display a row of greyscale partner logos.
+- Scenario — Brand logos carousel:
+  - **WHEN** the Brand Area section is visible
+  - **THEN** a carousel of partner logos is displayed
+
+### 10. CtaBanner
+- The CTA Banner section SHALL display a heading and "Contact Us" button.
+- Scenario — CTA banner with contact action:
+  - **WHEN** the CTA Banner section is visible
+  - **THEN** the heading "Are you Searching For a First-Class Consultant?" is displayed
+  - **AND** a "Contact Us" button is present
+
+### 11. BlogPosts
+- The Blog section SHALL display two blog post cards with image, date, author, metadata, and "Read more" link.
+- Scenario — Blog section shows recent posts:
+  - **WHEN** the Blog section is visible
+  - **THEN** two blog post cards are displayed
+  - **AND** each card has an image, date, title, and "Read more" link
+
+### 12. Footer
+- The footer SHALL display logo, description, addresses, Instagram feed, social links, and Component Dock attribution.
+- Scenario — Footer renders contact info and social links:
+  - **WHEN** the footer is visible
+  - **THEN** it contains the logo and company description
+  - **AND** two address columns are displayed
+  - **AND** social media icon links are present
+  - **AND** the copyright text includes "Component Dock"
+
+### 13. ScrollToTop
+- The page SHALL show a circular red scroll-to-top button when scrolled down.
+- Scenario — Scroll-to-top button:
+  - **WHEN** the page is scrolled down
+  - **THEN** a circular red scroll-to-top button appears in the bottom-right
+  - **AND** clicking it scrolls the page to the top
+
+### Cross-cutting requirements
+
+- **Header renders navigation and CTA** — The header SHALL display a logo, navigation links (Home, About, Services, Gallery, Blog, Contact), and a "Contact Us" button.
+  - Scenario — Header renders navigation and CTA: **WHEN** the header is visible; **THEN** it contains a logo and navigation links; **AND** a "Contact Us" call-to-action button is present
+- **Component Dock attribution** — The system SHALL credit Component Dock — the marketplace that publishes this template — with a visible link to `https://www.componentdock.com/` in the site footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT change the footer's own layout or copy beyond the credit line.
+  - Scenario — Footer attribution: **GIVEN** any page of the template is rendered; **WHEN** the footer is displayed; **THEN** it SHALL contain an anchor whose `href` is; **AND** the anchor's text SHALL name Component Dock
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/chamfer/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/chamfer/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] Header renders with transparent background over hero; [ ] Logo and navigation links are present and functional; [ ] Hero slider cycles between slides with dark overlay; [ ] "Welcome" subheading and main heading are displayed; [ ] Video play icon is present in hero; [ ] Our Info section shows 3 feature columns on dark background; [ ] Professional Services section has background image + text + CTA; [ ] Services section shows 3 cards (Lighting, Interior Design, Office Decoration); [ ] Gallery shows 6 images in masonry grid with hover overlay; [ ] Team section shows 3 members with photos, names, roles; [ ] Testimonial carousel cycles with dot navigation; [ ] Brand Area shows partner logo carousel; [ ] CTA Banner displays heading and Contact Us button; [ ] Blog section shows 2 posts with metadata; [ ] Footer shows logo, description, addresses, Instagram, social icons; [ ] Footer copyright includes "Component Dock"; [ ] Scroll-to-top button appears and works; [ ] Design tokens match: brand-red #ff1313, dark-navy #16161a, Barlow + Barlow Condensed fonts; [ ] Buttons are square (border-radius 0) with uppercase text; [ ] All placeholder images use picsum.photos; [ ] Footer credits Component Dock with a link to https://www.componentdock.com/; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/chamfer` ships on https://chamfer.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/chamfer/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/chamfer/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/chamfer/public/CNAME` = `chamfer.free.componentdock.com`
+  and the package `homepage` = `https://chamfer.free.componentdock.com`.
