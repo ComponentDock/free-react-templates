@@ -109,3 +109,16 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-10.jpg
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/bellpush/public/CNAME` = `bellpush.free.componentdock.com`
   and the package `homepage` = `https://bellpush.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: `https://preview.colorlib.com/theme/modal-10/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/modal-10.zip` -> `modal-10/css/style.css` (research only; no asset copied).
+
+- Hex census: `#dd00ff` 8, `#3e64ff` 7, `#3e65ff` 7, `#6c757d` 4, `#212529` 3 (count = rules containing the literal).
+- Typefaces: All UI: `Poppins`; Heading: Poppins semibold, centred.
+- Radii: `0` (4), `0.25rem` (2), `0.3rem` (1), `5px` (1), `40px` (1).
+- Section order (shipped): `LaunchSection -> NewsletterModal -> Footer`.
+
+### Deltas measured against the shipped app
+
+- None measured.

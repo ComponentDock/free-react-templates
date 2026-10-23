@@ -13,6 +13,46 @@ a "Subscribe to our newsletter" subtext, and an inline email subscription form
 with an email input and "Subscribe" button side by side. The modal body overlaps
 the header by 180px, creating a layered card effect.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Modal 10** — https://colorlib.com/wp/template/modal-10/
+- **Preview**: `https://preview.colorlib.com/theme/modal-10/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/modal-10.zip` -> `modal-10/css/style.css` (research only; no asset copied).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-10.jpg
+- **Measured how**: hex-literal census of `modal-10/css/style.css` from the official free-template ZIP.
+
+### Colors
+
+| Token                    | Value     | Occurrences | Role                              |
+| ------------------------ | --------- | ----------- | --------------------------------- |
+| Gradient start (magenta) | `#dd00ff` | 8           | Photo overlay gradient, one end   |
+| Brand blue               | `#3e64ff` | 7           | Subscribe button fill             |
+| Gradient end (blue)      | `#3e65ff` | 7           | Photo overlay gradient, other end |
+| Muted copy               | `#6c757d` | 4           | Helper text                       |
+| Ink                      | `#212529` | 3           | Body copy                         |
+
+### Typography
+
+| Element | Family                    | Evidence                                         |
+| ------- | ------------------------- | ------------------------------------------------ |
+| All UI  | `Poppins`                 | 6 `font-family` rules; app loads Poppins 300-700 |
+| Heading | Poppins semibold, centred | modal title over the gradient header             |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                        |
+| -------- | ---------------------------------------------------------------------- |
+| Radii    | `0` (4), `0.25rem` (2), `0.3rem` (1), `5px` (1), `40px` (1)            |
+| Header   | gradient overlay at 30% over a photograph, circular icon badge         |
+| Layout   | centred launch page -> newsletter modal with header image + grey input |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`LaunchSection -> NewsletterModal -> Footer`
+
+### Delta vs shipped app
+
+- None material: the shipped `@theme` palette matches the measured reference values.
+
 ## Requirements
 
 ### Requirement: Page layout and launch button
@@ -190,16 +230,7 @@ The app source code SHALL NOT contain any references to "colorlib" or
 - [ ] `npm run verify:app -- bellpush` green: typecheck → lint → vitest
       (100% coverage) → build (per-app gate).
 - [ ] All 19 scenarios above are covered by colocated tests
-      (query by role/label; test names mirror the scenario names):
-      - Page layout and launch button
-      - Modal opens on button click
-      - Modal header design
-      - Modal body overlaps header
-      - Circular icon container
-      - Subscribe form
-      - Modal closes on user action
-      - Keyboard accessibility
-      - Footer
+      (query by role/label; test names mirror the scenario names): - Page layout and launch button - Modal opens on button click - Modal header design - Modal body overlaps header - Circular icon container - Subscribe form - Modal closes on user action - Keyboard accessibility - Footer
 - [ ] Sections render in the order listed in the requirements above,
       with no console errors on load.
 - [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,

@@ -14,6 +14,49 @@ containing 50 US state options. The design is minimal — a centered heading
 and a functional multi-select checkbox dropdown widget with a 7-item
 selection limit.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Multiselect 17** — https://colorlib.com/wp/template/multiselect-17/
+- **Preview**: `https://preview.colorlib.com/theme/multiselect-17/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/multiselect-17.zip` -> `multiselect-17/css/style.css` (research only; no asset copied).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-17.jpg
+- **Measured how**: hex-literal census of `multiselect-17/css/style.css` from the official free-template ZIP.
+
+### Colors
+
+| Token          | Value     | Occurrences | Role                                   |
+| -------------- | --------- | ----------- | -------------------------------------- |
+| Page canvas    | `#efefef` | 1           | Page background behind the widget      |
+| Selected state | `#8cba51` | 2           | Selected row text + check-mark glyph   |
+| Trigger header | `#dae0e5` | 2           | Header bar of the multi-select trigger |
+| Surface        | `#fff`    | 13          | Dropdown panel                         |
+| Ink            | `#212529` | 9           | Row labels                             |
+| Muted          | `#6c757d` | 5           | Secondary row text                     |
+| Hover row      | `#f8f9fa` | 5           | Row hover background                   |
+| Grey text      | `#999`    | 1           | Disabled / dim rows                    |
+
+### Typography
+
+| Element | Family   | Evidence                                        |
+| ------- | -------- | ----------------------------------------------- |
+| All UI  | `Roboto` | 5 `font-family` rules; app loads Roboto 300/400 |
+
+### Shapes & rhythm
+
+| Property     | Reference value                                                              |
+| ------------ | ---------------------------------------------------------------------------- |
+| Radii        | `0.25rem` (3), `0` (2) — square-ish panel with slightly rounded rows         |
+| Layout       | centred widget on light canvas: trigger -> checklist panel -> counter/footer |
+| Selected row | green text + green check-mark, no filled background                          |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`MultiSelect -> Footer`
+
+### Delta vs shipped app
+
+- The selected-state green `#8cba51` has **no token** in `apps/chklmt/src/index.css`, and `MultiSelect.tsx` colours the check with `text-primary-500`, which is not defined in `@theme` — the glyph therefore inherits the body colour instead of the reference green.
+- `--color-action-btn` is `#f8f9fa`, while the reference trigger header is `#dae0e5`.
+
 ## Requirements
 
 ### Requirement: Widget renders in collapsed state

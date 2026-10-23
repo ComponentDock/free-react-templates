@@ -14,6 +14,48 @@ Design tokens: Roboto font (300/400/500/700), brand #3fc5f0, hover #12b5ea,
 background #fafafa, card #ffffff, text #6c757d, heading #000000,
 border rgba(0,0,0,0.1), shadow 0 15px 30px rgba(0,0,0,0.2).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Dropdown 19** — https://colorlib.com/wp/template/dropdown-19/
+- **Preview**: `https://preview.colorlib.com/theme/dropdown-19/` returns **HTTP 404** (element demo, no theme preview). Reference recovered from the official free-template archive `https://preview.colorlib.com/downloads/free/dropdown-19.zip` -> `dropdown-19/css/style.css` (research only; no asset copied).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-19.jpg
+- **Measured how**: hex-literal census of `dropdown-19/css/style.css` extracted from the official free-template ZIP.
+
+### Colors
+
+| Token                       | Value     | Occurrences | Role                                     |
+| --------------------------- | --------- | ----------- | ---------------------------------------- |
+| Column accent - Design      | `#007bff` | 5           | Heading + left rule of the first column  |
+| Column accent - Development | `#ffc107` | 3           | Heading + left rule of the second column |
+| Column accent - Marketing   | `#dc3545` | 3           | Heading + left rule of the third column  |
+| Ink                         | `#212529` | 3           | Trigger label, link text                 |
+| Muted                       | `#6c757d` | 1           | Secondary link text                      |
+| Shadow tone                 | `#16181b` | 1           | Panel shadow                             |
+| Surface                     | `#fff`    | 3           | Trigger + dropdown panel                 |
+
+### Typography
+
+| Element | Family   | Evidence                                        |
+| ------- | -------- | ----------------------------------------------- |
+| All UI  | `Roboto` | 6 `font-family` rules; app loads Roboto 300-700 |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                      |
+| -------- | -------------------------------------------------------------------- |
+| Radii    | `0.25rem` — dropdown panel corners                                   |
+| Panel    | white card, subtle shadow, three link columns with coloured headings |
+| Layout   | centred Courses trigger on white -> mega-panel below                 |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`CoursesDropdown -> Footer`
+
+### Delta vs shipped app
+
+- `--color-dropnest-brand: #3fc5f0` (cyan) and `#fafafa` occur **0 times** in the reference stylesheet. The reference column accents are Bootstrap blue `#007bff`, amber `#ffc107`, crimson `#dc3545`.
+- The TEMPLATES.md screenshot is captioned "Dropdown #9" although the slug is `dropdown-19` — same demo, caption drift only.
+
 ## Requirements
 
 ### Requirement: Rendering

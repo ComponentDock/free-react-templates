@@ -6,6 +6,46 @@ Recreation of ColorLib "Handyman" (https://colorlib.com/wp/template/handyman/)
 
 Provide a free, production-ready handyman and construction landing page template built with React 19, Tailwind CSS 4, and TypeScript. Faithfully recreates the ColorLib "Handyman" design under the name "Fixero" with matching sections, layout, and design tokens.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Handyman** — https://colorlib.com/wp/template/handyman/
+- **Preview**: https://preview.colorlib.com/theme/handyman/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (162,977 bytes, Bootstrap 5 based).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/handyman-free-template.jpg
+- **Measured how**: hex-literal census of `https://preview.colorlib.com/theme/handyman/css/style.min.css?v=3.0.0`.
+
+### Colors
+
+| Token        | Value     | Occurrences | Role                                                |
+| ------------ | --------- | ----------- | --------------------------------------------------- |
+| Brand orange | `#fb7400` | 42          | Active nav item, CTA fills, short underline accents |
+| Ink slate    | `#364d59` | 2           | Headings and body ink                               |
+| Dark         | `#212529` | 41          | Bootstrap dark text / dark button                   |
+| Mid grey     | `#343a40` | 18          | Dark secondary fills                                |
+| Muted        | `#6c757d` | 22          | Paragraph copy                                      |
+| Light        | `#f8f9fa` | 19          | Light section bands, input fills                    |
+
+### Typography
+
+| Element         | Family      | Evidence                                                        |
+| --------------- | ----------- | --------------------------------------------------------------- |
+| Body + headings | `Work Sans` | Google Fonts `Work Sans:400,500,700`; app loads the same family |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                                                                  |
+| -------- | ---------------------------------------------------------------------------------------------------------------- |
+| Radii    | Bootstrap `--bs-border-radius` (12), `1rem` (4), `50%` (6)                                                       |
+| Hero     | dark photographic hero, left-aligned white headline with an orange rule under it                                 |
+| Layout   | hero with overlapping Get Quotation card -> services -> about tabs -> testimonials -> projects -> blog -> footer |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> QuotationForm -> Services -> AboutTabs -> Testimonials -> Projects -> Blog -> Footer`
+
+### Delta vs shipped app
+
+- `--color-lavender: #dedffe` occurs **0 times** in the reference stylesheet (the services band reads white / `#f8f9fa`); confirm before relying on it in a fidelity pass.
+
 ## Requirements
 
 ### Requirement: Navbar with logo and navigation links

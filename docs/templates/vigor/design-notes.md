@@ -15,71 +15,82 @@ Fonts loaded by `index.html` (Google Fonts): **Roboto**, **Roboto:wght@300;400;5
 
 ## Design tokens (`apps/vigor/src/index.css` `@theme`)
 
-| token | value | role |
-| --- | --- | --- |
-| `--color-brand-50` | `#fffde7` | Vigor brand palette — yellow CTA (#fcd307) from the original design |
-| `--color-brand-100` | `#fff9c4` | brand 100 |
-| `--color-brand-200` | `#fff59d` | brand 200 |
-| `--color-brand-300` | `#fff176` | brand 300 |
-| `--color-brand-400` | `#fcd307` | brand 400 |
-| `--color-brand-500` | `#fbc02d` | brand 500 |
-| `--color-brand-600` | `#f9a825` | brand 600 |
-| `--color-brand-700` | `#f57f17` | brand 700 |
-| `--color-brand-800` | `#ef6c00` | brand 800 |
-| `--color-brand-900` | `#e65100` | brand 900 |
-| `--color-accent-400` | `#fd5f00` | Secondary — orange (#fd5f00) |
-| `--color-accent-500` | `#e65300` | accent 500 |
-| `--font-sans` | `'Roboto', ui-sans-serif, system-ui, sans-serif` | Roboto — the original template's typeface (Google Fonts via index.html) |
+| token                | value                                            | role                                                                    |
+| -------------------- | ------------------------------------------------ | ----------------------------------------------------------------------- |
+| `--color-brand-50`   | `#fffde7`                                        | Vigor brand palette — yellow CTA (#fcd307) from the original design     |
+| `--color-brand-100`  | `#fff9c4`                                        | brand 100                                                               |
+| `--color-brand-200`  | `#fff59d`                                        | brand 200                                                               |
+| `--color-brand-300`  | `#fff176`                                        | brand 300                                                               |
+| `--color-brand-400`  | `#fcd307`                                        | brand 400                                                               |
+| `--color-brand-500`  | `#fbc02d`                                        | brand 500                                                               |
+| `--color-brand-600`  | `#f9a825`                                        | brand 600                                                               |
+| `--color-brand-700`  | `#f57f17`                                        | brand 700                                                               |
+| `--color-brand-800`  | `#ef6c00`                                        | brand 800                                                               |
+| `--color-brand-900`  | `#e65100`                                        | brand 900                                                               |
+| `--color-accent-400` | `#fd5f00`                                        | Secondary — orange (#fd5f00)                                            |
+| `--color-accent-500` | `#e65300`                                        | accent 500                                                              |
+| `--font-sans`        | `'Roboto', ui-sans-serif, system-ui, sans-serif` | Roboto — the original template's typeface (Google Fonts via index.html) |
 
 ## Document order
 
-| # | component | spec requirement | notes |
-| --- | --- | --- | --- |
-| 1 | `Navbar` | Navigation bar | see fidelity note below |
-| 2 | `Hero` | Hero section | see fidelity note below |
-| 3 | `About` | About section | see fidelity note below |
-| 4 | `Services` | Services section | see fidelity note below |
-| 5 | `GymClasses` | Gym Classes section | see fidelity note below |
-| 6 | `Pricing` | Pricing section | see fidelity note below |
-| 7 | `Testimonies` | Testimonies section | see fidelity note below |
-| 8 | `Appointment` | Appointment section | see fidelity note below |
-| 9 | `Blog` | Blog section | see fidelity note below |
-| 10 | `Counter` | Counter section | see fidelity note below |
-| 11 | `Footer` | Footer | see fidelity note below |
+| #   | component     | spec requirement    | notes                   |
+| --- | ------------- | ------------------- | ----------------------- |
+| 1   | `Navbar`      | Navigation bar      | see fidelity note below |
+| 2   | `Hero`        | Hero section        | see fidelity note below |
+| 3   | `About`       | About section       | see fidelity note below |
+| 4   | `Services`    | Services section    | see fidelity note below |
+| 5   | `GymClasses`  | Gym Classes section | see fidelity note below |
+| 6   | `Pricing`     | Pricing section     | see fidelity note below |
+| 7   | `Testimonies` | Testimonies section | see fidelity note below |
+| 8   | `Appointment` | Appointment section | see fidelity note below |
+| 9   | `Blog`        | Blog section        | see fidelity note below |
+| 10  | `Counter`     | Counter section     | see fidelity note below |
+| 11  | `Footer`      | Footer              | see fidelity note below |
 
 ## Section-by-section fidelity
 
 ### `Navbar`
+
 The system SHALL render a dark navbar with the brand name "Vigor" flanked by decorative bars, and navigation links (Home, About, Programs, Trainers, Pricing, Blog, Contact). The navbar SHALL include a hamburger toggle that opens a mobile menu on small screens.
 
 ### `Hero`
+
 The system SHALL render a full-height hero section with two slides. Each slide SHALL have a background image, a dark overlay (black 50% opacity), a large uppercase heading, and a subheading. The first slide reads "Crossfit is for Everyone" and the second reads "Crossfit Gym".
 
 ### `About`
+
 The system SHALL render a split-layout about section with a video placeholder image on the left (with a play button), thumbnail images below, and text content on the right including the heading "Welcome to Vigor Crossfit Gym" and a "Join us" CTA button.
 
 ### `Services`
+
 The system SHALL render a services section on a light background with a centered heading "Kick your feet up" and four service cards (Analyze Your Goal, Work Hard On It, Improve Your Performance, Achieve Your Perfect Body) each with an icon and description.
 
 ### `GymClasses`
+
 The system SHALL render a dark-background gym classes section with heading "What You Get From Vigor Membership" and five class cards (Muscle Sculpt, Fat Burn, Cycling, Pilates & Stretching, Boxing).
 
 ### `Pricing`
+
 The system SHALL render a pricing section on a light background with heading "Membership Plans" and three pricing tiers (One Day Training, Pay Every Month, 1 Year Membership) each with a price, feature list, and "Get Started" CTA.
 
 ### `Testimonies`
+
 The system SHALL render a testimonies section with heading "Successful Stories" and three customer testimonials with quotes, names, roles, and profile images.
 
 ### `Appointment`
+
 The system SHALL render a dark-background appointment section with heading "Book Your Session" and a form with fields for name, email, date, time, and message. On submit, it SHALL show a thank-you message.
 
 ### `Blog`
+
 The system SHALL render a blog section on a light background with heading "Latest Articles" and three blog post cards with images, titles, dates, authors, and comment counts.
 
 ### `Counter`
+
 The system SHALL render a counter section with a dark background image overlay and four statistics: Trainers (1,200), Members (8,500), Programs (45), Awards (120).
 
 ### `Footer`
+
 The system SHALL render a dark footer with four columns: About Us (with social icons), Services (links), Contact info (address, phone, email), and a "More Templates" section linking to Component Dock. The footer bottom SHALL include a copyright line with a link to https://www.componentdock.com/.
 
 ## Deltas from the reference
@@ -102,3 +113,17 @@ The system SHALL render a dark footer with four columns: About Us (with social i
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/vigor/public/CNAME` = `vigor.free.componentdock.com`
   and the package `homepage` = `https://vigor.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/endurance/ — HTTP 200 on 2026-10-23; measured `css/style.css` (99,573 bytes). Title served: "Endurance - Free Bootstrap 4 Template by Colorlib".
+
+- Hex census: `#fcd307` 52, `#f1e767` 91, `#fc6b29` 104, `#fd6b00` 16, `#fd0054` 14, `#6c757d` 14 (count = rules containing the literal).
+- Typefaces: Body: system stack incl. `Roboto` (Bootstrap 4 base); Headings: Roboto bold/black, tight leading.
+- Radii: `50%` (23), `0.25rem` (8), `5px` (5), `30px`/`40px` pills (4 each).
+- Section order (shipped): `Navbar -> Hero -> About -> Services -> GymClasses -> Pricing -> Testimonies -> Appointment -> Blog -> Counter -> Footer`.
+
+### Deltas measured against the shipped app
+
+- The dominant orange `#fc6b29` (104 rules) and the yellow tint `#f1e767` (91 rules) are not tokenized in `apps/vigor`; only the yellow `#fcd307` and a minor `#fd5f00` literal (6 rules) are carried.
+- `TEMPLATES.md` links BOTH the `Fitnessgym` and `Endurance` rows to this app; the spec follows `endurance` (ROW-MULTIPLICITY — recorded, not resolved).

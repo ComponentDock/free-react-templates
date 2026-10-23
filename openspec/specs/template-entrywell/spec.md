@@ -11,6 +11,46 @@ left half and a dark form panel on the right with Sign In / Sign Up tab
 navigation. The design uses a golden/amber brand color (#e3b04b) with a
 Roboto font family.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Modal 09** — https://colorlib.com/wp/template/modal-09/
+- **Preview**: `https://preview.colorlib.com/theme/modal-09/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/modal-09.zip` -> `modal-09/css/style.css` (research only; no asset copied).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-09.jpg
+- **Measured how**: hex-literal census of `modal-09/css/style.css` from the official free-template ZIP.
+
+### Colors
+
+| Token        | Value     | Occurrences | Role                                          |
+| ------------ | --------- | ----------- | --------------------------------------------- |
+| Gold (brand) | `#e3b04b` | 9           | Sign In button fill, active tab, link accents |
+| Panel dark   | `#2b2b28` | 1           | Right-hand form panel                         |
+| Muted copy   | `#6c757d` | 6           | Field labels, helper text                     |
+| Border       | `#dee2e6` | 5           | Input borders / dividers                      |
+| Body ink     | `#495057` | 4           | Input text                                    |
+
+### Typography
+
+| Element | Family                                            | Evidence                                            |
+| ------- | ------------------------------------------------- | --------------------------------------------------- |
+| All UI  | `Roboto`                                          | 4 `font-family` rules; app loads Roboto 300/400/700 |
+| Labels  | uppercase, letter-spaced, white on the dark panel | tab labels + field labels                           |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                         |
+| -------- | ----------------------------------------------------------------------- |
+| Radii    | `0` (3), `0.25rem` (2), `0.3rem` (1), `5px` (1) — crisp, barely rounded |
+| Layout   | split modal: photograph left half, dark panel right, tabs on top        |
+| Inputs   | bottom-border only, transparent fill                                    |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`LaunchSection -> SignModal -> Footer`
+
+### Delta vs shipped app
+
+- None material: the shipped `@theme` palette matches the measured reference values.
+
 ## Requirements
 
 ### Requirement: Page layout and launch button

@@ -21,6 +21,44 @@ Design tokens extracted from the ColorLib preview CSS (css/style.css):
 - Section backgrounds: white, hero with background image + dark overlay
 - Navbar: dark overlay on hero, white text
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Auction** — https://colorlib.com/wp/template/auction/
+- **Preview**: https://preview.colorlib.com/theme/auction/ — HTTP 200 on 2026-10-23; measured `css/style.css` (29,531 bytes).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg
+- **Measured how**: hex-literal census of `https://preview.colorlib.com/theme/auction/css/style.css`.
+
+### Colors
+
+| Token        | Value     | Occurrences | Role                                                       |
+| ------------ | --------- | ----------- | ---------------------------------------------------------- |
+| Brand orange | `#f37121` | 21          | CTA fill (Register), circular price badges, eyebrow labels |
+| Muted copy   | `#999999` | 6           | Lot meta (bid counts), secondary text                      |
+| Ink          | `#000000` | 3           | Lot titles and headings                                    |
+| Surface      | `#fff`    | -           | White content sections under the photographic hero         |
+
+### Typography
+
+| Element         | Family | Evidence                                                                       |
+| --------------- | ------ | ------------------------------------------------------------------------------ |
+| Body + headings | `Muli` | Google Fonts `Muli:300,400,700,900`; app ships `Mulish` (same family, renamed) |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                   |
+| -------- | ----------------------------------------------------------------- |
+| Radii    | `50%` (12 circles — price badges), `0` (4), `16px` (1)            |
+| Hero     | full-bleed blurred photograph, centred white headline, orange CTA |
+| Cards    | 4-up lot grid: image, price badge, title, category + bid count    |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> AuctionGrid -> HowItWorks -> AboutSplit -> Testimonials -> CTA -> Footer`
+
+### Delta vs shipped app
+
+- None material: the shipped `@theme` palette matches the measured reference values.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation links and brand

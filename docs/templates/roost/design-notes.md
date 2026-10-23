@@ -13,80 +13,93 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 
 ## Design tokens (`apps/roost/src/index.css` `@theme`)
 
-| token | value | role |
-| --- | --- | --- |
-| `--color-primary-50` | `#e7f3ff` | Roost brand palette — real estate blue (#007bff primary) |
-| `--color-primary-100` | `#c5e1ff` | primary 100 |
-| `--color-primary-200` | `#9eceff` | primary 200 |
-| `--color-primary-300` | `#6db5ff` | primary 300 |
-| `--color-primary-400` | `#3d9cff` | primary 400 |
-| `--color-primary-500` | `#007bff` | primary 500 |
-| `--color-primary-600` | `#0069d9` | primary 600 |
-| `--color-primary-700` | `#0056b3` | primary 700 |
-| `--color-primary-800` | `#00428c` | primary 800 |
-| `--color-primary-900` | `#002e66` | primary 900 |
-| `--color-dark-900` | `#232931` | Dark section backgrounds |
-| `--color-dark-800` | `#2d333b` | dark 800 |
-| `--color-light-100` | `#f3f5fb` | Light background |
-| `--font-sans` | `'Poppins', ui-sans-serif, system-ui, sans-serif` | Poppins — the original template's typeface |
+| token                 | value                                             | role                                                     |
+| --------------------- | ------------------------------------------------- | -------------------------------------------------------- |
+| `--color-primary-50`  | `#e7f3ff`                                         | Roost brand palette — real estate blue (#007bff primary) |
+| `--color-primary-100` | `#c5e1ff`                                         | primary 100                                              |
+| `--color-primary-200` | `#9eceff`                                         | primary 200                                              |
+| `--color-primary-300` | `#6db5ff`                                         | primary 300                                              |
+| `--color-primary-400` | `#3d9cff`                                         | primary 400                                              |
+| `--color-primary-500` | `#007bff`                                         | primary 500                                              |
+| `--color-primary-600` | `#0069d9`                                         | primary 600                                              |
+| `--color-primary-700` | `#0056b3`                                         | primary 700                                              |
+| `--color-primary-800` | `#00428c`                                         | primary 800                                              |
+| `--color-primary-900` | `#002e66`                                         | primary 900                                              |
+| `--color-dark-900`    | `#232931`                                         | Dark section backgrounds                                 |
+| `--color-dark-800`    | `#2d333b`                                         | dark 800                                                 |
+| `--color-light-100`   | `#f3f5fb`                                         | Light background                                         |
+| `--font-sans`         | `'Poppins', ui-sans-serif, system-ui, sans-serif` | Poppins — the original template's typeface               |
 
 ## Document order
 
-| # | component | spec requirement | notes |
-| --- | --- | --- | --- |
-| 1 | `Navbar` | Navigation bar | see fidelity note below |
-| 2 | `Hero` | Hero section | see fidelity note below |
-| 3 | `Services` | Services section | see fidelity note below |
-| 4 | `PropertyListings` | Property listings | see fidelity note below |
-| 5 | `SearchCTA` | Search CTA banner | see fidelity note below |
-| 6 | `About` | About section | see fidelity note below |
-| 7 | `HowItWorks` | How it works section | see fidelity note below |
-| 8 | `AgentCTA` | Agent CTA banner | see fidelity note below |
-| 9 | `Agents` | Agents section | see fidelity note below |
-| 10 | `Blog` | Blog section | see fidelity note below |
-| 11 | `Testimonials` | Testimonials section | see fidelity note below |
-| 12 | `Contact` | Contact section | see fidelity note below |
-| 13 | `Footer` | Footer | see fidelity note below |
+| #   | component          | spec requirement     | notes                   |
+| --- | ------------------ | -------------------- | ----------------------- |
+| 1   | `Navbar`           | Navigation bar       | see fidelity note below |
+| 2   | `Hero`             | Hero section         | see fidelity note below |
+| 3   | `Services`         | Services section     | see fidelity note below |
+| 4   | `PropertyListings` | Property listings    | see fidelity note below |
+| 5   | `SearchCTA`        | Search CTA banner    | see fidelity note below |
+| 6   | `About`            | About section        | see fidelity note below |
+| 7   | `HowItWorks`       | How it works section | see fidelity note below |
+| 8   | `AgentCTA`         | Agent CTA banner     | see fidelity note below |
+| 9   | `Agents`           | Agents section       | see fidelity note below |
+| 10  | `Blog`             | Blog section         | see fidelity note below |
+| 11  | `Testimonials`     | Testimonials section | see fidelity note below |
+| 12  | `Contact`          | Contact section      | see fidelity note below |
+| 13  | `Footer`           | Footer               | see fidelity note below |
 
 ## Section-by-section fidelity
 
 ### `Navbar`
+
 The system SHALL render a sticky white navbar with the site name "Roost", section links (Home, Services, Listing, About, How it works, Agent, Blog, Contact), Sign Up and Sign In buttons, and a hamburger toggle that opens a mobile menu on small screens.
 
 ### `Hero`
+
 The system SHALL render a full-width hero with a background image, headline "Get your way home worldwide", a subtitle, and a search bar with a "Search Places" button.
 
 ### `Services`
+
 The system SHALL render a "Our Services" section with four service cards (Find Places, We Have Agents, Buy & Rent, Making Money), each with an icon, title, and description.
 
 ### `PropertyListings`
+
 The system SHALL render an "Our Property" section with four property cards, each showing an image, title, price, location, beds, and baths.
 
 ### `SearchCTA`
+
 The system SHALL render a full-width banner with a background image, headline "Choose Your Dream House", description text, and a "Search Places" button.
 
 ### `About`
+
 The system SHALL render a two-column "Roost Real Estate Agency" section with description text on the left and an image on the right, plus "Book now" and "Contact us" buttons.
 
 ### `HowItWorks`
+
 The system SHALL render a "How it works" section with three numbered steps: Evaluate Property, Meet Agent, Close the Deal.
 
 ### `AgentCTA`
+
 The system SHALL render a full-width banner with headline "Choose Your House for Only $120,000" and an "Advance Search" button.
 
 ### `Agents`
+
 The system SHALL render an "Our Agents" section with three agent cards, each showing a photo, name, and listing count.
 
 ### `Blog`
+
 The system SHALL render an "Our Blog" section with three blog post cards, each showing an image, title, excerpt, and "Read More" link.
 
 ### `Testimonials`
+
 The system SHALL render a dark-background testimonials section with a quote, author name, and author image.
 
 ### `Contact`
+
 The system SHALL render a "Contact Me" section with four contact info cards: Address, Contact Number, Email Address, Website.
 
 ### `Footer`
+
 The system SHALL render a footer with the site name "Roost", a tagline, navigation links, and a "Made with Component Dock" link pointing to https://www.componentdock.com/.
 
 ## Deltas from the reference
@@ -109,3 +122,18 @@ The system SHALL render a footer with the site name "Roost", a tagline, navigati
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/roost/public/CNAME` = `roost.free.componentdock.com`
   and the package `homepage` = `https://roost.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/stayhome/ — HTTP 200 on 2026-10-23; measured `css/style.css` (85,936 bytes).
+
+- Hex census: `#4b69bd` 47, `#e88941` 7, `#007bff` 11, `#6c757d` 15, `#000000` 45, `#fff` 75 (count = rules containing the literal).
+- Typefaces: Body + headings: `Poppins`; Nav / buttons: Poppins medium, uppercase CTA labels.
+- Radii: `50%` (33), `5px` (13), `4px` (10), `40px` pill (4).
+- Section order (shipped): `Navbar -> Hero -> Services -> PropertyListings -> SearchCTA -> About -> HowItWorks -> AgentCTA -> Agents -> Blog -> Testimonials -> Contact -> Footer`.
+
+### Deltas measured against the shipped app
+
+- `--color-primary-500` is `#007bff`, but the reference brand blue is `#4b69bd` (47 rules vs 11 for the Bootstrap leftover).
+- The orange secondary accent `#e88941` has no token in `apps/roost`.
+- `TEMPLATES.md` links BOTH the `Realtors` and `Stayhome` rows to this app; the spec follows `stayhome` (ROW-MULTIPLICITY — recorded, not resolved).

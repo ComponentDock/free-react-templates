@@ -13,32 +13,35 @@ Fonts loaded by `index.html` (Google Fonts): **Roboto:wght@300;400;700**
 
 ## Design tokens (`apps/entrywell/src/index.css` `@theme`)
 
-| token | value | role |
-| --- | --- | --- |
-| `--color-brand` | `#e3b04b` | brand |
-| `--color-brand-hover` | `transparent` | brand hover |
-| `--color-panel-dark` | `#2b2b28` | panel dark |
+| token                        | value                      | role               |
+| ---------------------------- | -------------------------- | ------------------ |
+| `--color-brand`              | `#e3b04b`                  | brand              |
+| `--color-brand-hover`        | `transparent`              | brand hover        |
+| `--color-panel-dark`         | `#2b2b28`                  | panel dark         |
 | `--color-panel-dark-lighter` | `rgba(255, 255, 255, 0.1)` | panel dark lighter |
-| `--color-input-text` | `rgba(255, 255, 255, 0.7)` | input text |
-| `--color-input-placeholder` | `rgba(255, 255, 255, 0.2)` | input placeholder |
+| `--color-input-text`         | `rgba(255, 255, 255, 0.7)` | input text         |
+| `--color-input-placeholder`  | `rgba(255, 255, 255, 0.2)` | input placeholder  |
 
 ## Document order
 
-| # | component | spec requirement | notes |
-| --- | --- | --- | --- |
-| 1 | `LaunchSection` | Page layout and launch button | see fidelity note below |
-| 2 | `Footer` | Footer links to Component Dock | see fidelity note below |
-| 3 | `SignModal` | Modal opens with split layout | see fidelity note below |
+| #   | component       | spec requirement               | notes                   |
+| --- | --------------- | ------------------------------ | ----------------------- |
+| 1   | `LaunchSection` | Page layout and launch button  | see fidelity note below |
+| 2   | `Footer`        | Footer links to Component Dock | see fidelity note below |
+| 3   | `SignModal`     | Modal opens with split layout  | see fidelity note below |
 
 ## Section-by-section fidelity
 
 ### `LaunchSection`
+
 The template SHALL render a centered hero section with the template name "Entrywell" and a "Launch Modal" button.
 
 ### `Footer`
+
 The footer SHALL link to https://www.componentdock.com/.
 
 ### `SignModal`
+
 The modal SHALL display a split layout — a background image on the left half and a dark form panel on the right half with tab navigation.
 
 ## Deltas from the reference
@@ -61,3 +64,16 @@ The modal SHALL display a split layout — a background image on the left half a
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/entrywell/public/CNAME` = `entrywell.free.componentdock.com`
   and the package `homepage` = `https://entrywell.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: `https://preview.colorlib.com/theme/modal-09/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/modal-09.zip` -> `modal-09/css/style.css` (research only; no asset copied).
+
+- Hex census: `#e3b04b` 9, `#2b2b28` 1, `#6c757d` 6, `#dee2e6` 5, `#495057` 4 (count = rules containing the literal).
+- Typefaces: All UI: `Roboto`; Labels: uppercase, letter-spaced, white on the dark panel.
+- Radii: `0` (3), `0.25rem` (2), `0.3rem` (1), `5px` (1) — crisp, barely rounded.
+- Section order (shipped): `LaunchSection -> SignModal -> Footer`.
+
+### Deltas measured against the shipped app
+
+- None measured.

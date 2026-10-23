@@ -13,20 +13,20 @@ Fonts loaded by `index.html` (Google Fonts): **Dancing Script:wght@400;600**
 
 ## Design tokens (`apps/platter/src/index.css` `@theme`)
 
-| token | value | role |
-| --- | --- | --- |
-| `--color-brand-50` | `#faf5f0` | brand 50 |
-| `--color-brand-100` | `#f0e4d5` | brand 100 |
-| `--color-brand-200` | `#e2cab0` | brand 200 |
-| `--color-brand-300` | `#d4b08b` | brand 300 |
-| `--color-brand-400` | `#c9956b` | brand 400 |
-| `--color-brand-500` | `#b87a4a` | brand 500 |
-| `--color-brand-600` | `#9a6340` | brand 600 |
-| `--color-brand-700` | `#7c4e34` | brand 700 |
-| `--color-brand-800` | `#5e3a28` | brand 800 |
-| `--color-brand-900` | `#40261c` | brand 900 |
-| `--color-brand-950` | `#221310` | brand 950 |
-| `--color-surface-50` | `#f8f8fa` | surface 50 |
+| token                 | value     | role        |
+| --------------------- | --------- | ----------- |
+| `--color-brand-50`    | `#faf5f0` | brand 50    |
+| `--color-brand-100`   | `#f0e4d5` | brand 100   |
+| `--color-brand-200`   | `#e2cab0` | brand 200   |
+| `--color-brand-300`   | `#d4b08b` | brand 300   |
+| `--color-brand-400`   | `#c9956b` | brand 400   |
+| `--color-brand-500`   | `#b87a4a` | brand 500   |
+| `--color-brand-600`   | `#9a6340` | brand 600   |
+| `--color-brand-700`   | `#7c4e34` | brand 700   |
+| `--color-brand-800`   | `#5e3a28` | brand 800   |
+| `--color-brand-900`   | `#40261c` | brand 900   |
+| `--color-brand-950`   | `#221310` | brand 950   |
+| `--color-surface-50`  | `#f8f8fa` | surface 50  |
 | `--color-surface-100` | `#f0f0f3` | surface 100 |
 | `--color-surface-200` | `#e0e0e6` | surface 200 |
 | `--color-surface-300` | `#c8c8d1` | surface 300 |
@@ -40,23 +40,26 @@ Fonts loaded by `index.html` (Google Fonts): **Dancing Script:wght@400;600**
 
 ## Document order
 
-| # | component | spec requirement | notes |
-| --- | --- | --- | --- |
-| 1 | `Navbar` | — | no dedicated spec block |
-| 2 | `ReservationWizard` | Three-step reservation wizard | see fidelity note below |
-| 3 | `Footer` | Mandatory footer | see fidelity note below |
+| #   | component           | spec requirement              | notes                   |
+| --- | ------------------- | ----------------------------- | ----------------------- |
+| 1   | `Navbar`            | —                             | no dedicated spec block |
+| 2   | `ReservationWizard` | Three-step reservation wizard | see fidelity note below |
+| 3   | `Footer`            | Mandatory footer              | see fidelity note below |
 
 ## Section-by-section fidelity
 
-Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
+Bands marked _anchors only_ have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-*anchors only* — Platter
+
+_anchors only_ — Platter
 
 ### `ReservationWizard`
+
 The template SHALL implement a 3-step wizard form for restaurant table booking.
 
 ### `Footer`
+
 The template SHALL include a footer linking to Component Dock.
 
 ## Deltas from the reference
@@ -79,3 +82,17 @@ The template SHALL include a footer linking to Component Dock.
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/platter/public/CNAME` = `platter.free.componentdock.com`
   and the package `homepage` = `https://platter.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: `https://preview.colorlib.com/theme/colorlib-wizard-7/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/colorlib-wizard-7.zip` -> `colorlib-wizard-7/css/style.css` (research only; no asset copied).
+
+- Hex census: `#cdaa7c` 4, `#e9e0cf` 1, `#524b42` 1, `#666` 12, `#333` 1, `#fff` 7 (count = rules containing the literal).
+- Typefaces: Headings: `Raleway` Semibold/Bold; Script accent: `Satisfy`.
+- Radii: essentially none (`50%` decorative only) — sharp panels and inputs.
+- Section order (shipped): `Navbar -> ReservationWizard -> Footer`.
+
+### Deltas measured against the shipped app
+
+- Typefaces differ: the app loads **Playfair Display + Dancing Script + Inter**; the reference uses **Raleway + Satisfy**.
+- The app's tan scale is anchored on `--color-brand-500: #b87a4a` (`#b87a4a` occurs 0 times in the reference); the reference accent is `#cdaa7c` and its panel is `#524b42` (app uses `#221310`).

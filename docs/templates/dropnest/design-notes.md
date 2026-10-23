@@ -13,32 +13,34 @@ Fonts loaded by `index.html` (Google Fonts): **Roboto:wght@300;400;500;700**
 
 ## Design tokens (`apps/dropnest/src/index.css` `@theme`)
 
-| token | value | role |
-| --- | --- | --- |
-| `--color-dropnest-brand` | `#3fc5f0` | dropnest brand |
-| `--color-dropnest-brand-hover` | `#12b5ea` | dropnest brand hover |
-| `--color-dropnest-bg` | `#fafafa` | dropnest bg |
-| `--color-dropnest-card` | `#ffffff` | dropnest card |
-| `--color-dropnest-text` | `#6c757d` | dropnest text |
-| `--color-dropnest-heading` | `#000000` | dropnest heading |
-| `--color-dropnest-border` | `rgba(0, 0, 0, 0.1)` | dropnest border |
+| token                          | value                | role                 |
+| ------------------------------ | -------------------- | -------------------- |
+| `--color-dropnest-brand`       | `#3fc5f0`            | dropnest brand       |
+| `--color-dropnest-brand-hover` | `#12b5ea`            | dropnest brand hover |
+| `--color-dropnest-bg`          | `#fafafa`            | dropnest bg          |
+| `--color-dropnest-card`        | `#ffffff`            | dropnest card        |
+| `--color-dropnest-text`        | `#6c757d`            | dropnest text        |
+| `--color-dropnest-heading`     | `#000000`            | dropnest heading     |
+| `--color-dropnest-border`      | `rgba(0, 0, 0, 0.1)` | dropnest border      |
 
 ## Document order
 
-| # | component | spec requirement | notes |
-| --- | --- | --- | --- |
-| 1 | `CoursesDropdown` | Dropdown open and close | see fidelity note below |
-| 2 | `Footer` | — | no dedicated spec block |
+| #   | component         | spec requirement        | notes                   |
+| --- | ----------------- | ----------------------- | ----------------------- |
+| 1   | `CoursesDropdown` | Dropdown open and close | see fidelity note below |
+| 2   | `Footer`          | —                       | no dedicated spec block |
 
 ## Section-by-section fidelity
 
-Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
+Bands marked _anchors only_ have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `CoursesDropdown`
+
 The dropdown SHALL open on trigger click, close on second click, outside click, or Escape key.
 
 ### `Footer`
-*anchors only* — Dropnest · Courses Dropdown · Component Dock
+
+_anchors only_ — Dropnest · Courses Dropdown · Component Dock
 
 ## Deltas from the reference
 
@@ -60,3 +62,17 @@ The dropdown SHALL open on trigger click, close on second click, outside click, 
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/dropnest/public/CNAME` = `dropnest.free.componentdock.com`
   and the package `homepage` = `https://dropnest.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: `https://preview.colorlib.com/theme/dropdown-19/` returns **HTTP 404** (element demo, no theme preview). Reference recovered from the official free-template archive `https://preview.colorlib.com/downloads/free/dropdown-19.zip` -> `dropdown-19/css/style.css` (research only; no asset copied).
+
+- Hex census: `#007bff` 5, `#ffc107` 3, `#dc3545` 3, `#212529` 3, `#6c757d` 1, `#16181b` 1 (count = rules containing the literal).
+- Typefaces: All UI: `Roboto`.
+- Radii: `0.25rem` — dropdown panel corners.
+- Section order (shipped): `CoursesDropdown -> Footer`.
+
+### Deltas measured against the shipped app
+
+- `--color-dropnest-brand: #3fc5f0` (cyan) and `#fafafa` occur **0 times** in the reference stylesheet. The reference column accents are Bootstrap blue `#007bff`, amber `#ffc107`, crimson `#dc3545`.
+- The TEMPLATES.md screenshot is captioned "Dropdown #9" although the slug is `dropdown-19` — same demo, caption drift only.

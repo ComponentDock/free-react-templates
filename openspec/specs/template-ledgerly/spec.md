@@ -28,13 +28,13 @@ The prep recorded this ColorLib preview as unreachable, so its tokens were
 read off the TEMPLATES.md screenshot and the docs brief says "screenshot
 only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
 live DOM and CSS are authoritative for token values — `docs/replication.md`:
-*CSS values are canonical over screenshots*. The screenshot stays the layout
+_CSS values are canonical over screenshots_. The screenshot stays the layout
 target.
 
-| artefact | URL | reading |
-| --- | --- | --- |
-| live page | `https://preview.colorlib.com/theme/cryptos/` | HTTP 200 · 38,482 B · title `Cryptos - Cryptocurrency &amp; Mining Template` |
-| stylesheet | `https://preview.colorlib.com/theme/cryptos/style.css` | HTTP 200 · 39,435 B · sha256 `5e2c5ae14a3b` |
+| artefact   | URL                                                    | reading                                                                      |
+| ---------- | ------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| live page  | `https://preview.colorlib.com/theme/cryptos/`          | HTTP 200 · 38,482 B · title `Cryptos - Cryptocurrency &amp; Mining Template` |
+| stylesheet | `https://preview.colorlib.com/theme/cryptos/style.css` | HTTP 200 · 39,435 B · sha256 `5e2c5ae14a3b`                                  |
 
 **Live palette** (hex × occurrences across the sheets): `#ffaf02`×41,
 `#0d104d`×12, `#28408b`×8, `#68a85c`×2, `#ff0048`×2.
@@ -42,6 +42,48 @@ target.
 **TOKEN-NOT-IN-SHEET** — chromatic values this prep's docs state that the
 live sheets do not paint (a hover/state shade may be inline or JS-driven;
 verify before building from it): `#30415b`, `#4768b9`, `#a0722e`, `#b8823a`.
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Cryptos** — https://colorlib.com/wp/template/cryptos/
+- **Preview**: https://preview.colorlib.com/theme/cryptos/ — HTTP 200 on 2026-10-23; measured `style.css` (38,127 bytes).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/cryptos-free-template.jpg
+- **Measured how**: hex-literal census of `https://preview.colorlib.com/theme/cryptos/style.css`.
+
+### Colors
+
+| Token       | Value     | Occurrences | Role                                                           |
+| ----------- | --------- | ----------- | -------------------------------------------------------------- |
+| Gold accent | `#ffaf02` | 41          | Crypto World highlight, logo mark, underline rules, active nav |
+| Ink         | `#292929` | 27          | Headings and body text on light sections                       |
+| Navy deep   | `#0d104d` | 12          | Hero gradient start / dark bands                               |
+| Navy mid    | `#28408b` | 8           | Hero gradient end, panels                                      |
+| Surface     | `#eef3f6` | 12          | Light section background                                       |
+| Muted       | `#8e8e8e` | 10          | Secondary copy                                                 |
+
+### Typography
+
+| Element  | Family          | Evidence                                      |
+| -------- | --------------- | --------------------------------------------- |
+| Body     | `Montserrat`    | `body` rule; app loads Montserrat + Open Sans |
+| Headings | Montserrat bold | hero headline with one gold word              |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                                                                        |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Radii    | `0` (9) — square buttons and cards; `4px` (1)                                                                          |
+| Hero     | navy gradient band, white headline with a gold phrase, white READ MORE button with gold underline                      |
+| Layout   | dark utility bar -> white nav -> navy hero -> light feature cards -> calculator -> blog/prices -> newsletter -> footer |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`TopHeader -> Navbar -> Hero -> Features -> About -> CurrencyCalculator -> BlogAndPrices -> Newsletter -> Footer`
+
+### Delta vs shipped app
+
+- `--color-navy-500` is `#4055ff` (bright blue) and occurs **0 times** in the stylesheet — the reference navy family is `#0d104d` (deep) to `#28408b` (mid); the app's navy scale should be re-anchored.
+- The reference body face is **Montserrat**; the app sets `--font-body: Open Sans`.
 
 ## Requirements
 

@@ -18,6 +18,50 @@ Design tokens captured from the original (see docs/replication.md):
 Roost lives in `apps/roost` and uses shared components from `packages/ui`
 (Button, cn).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Stayhome** — https://colorlib.com/wp/template/stayhome/
+- **Preview**: https://preview.colorlib.com/theme/stayhome/ — HTTP 200 on 2026-10-23; measured `css/style.css` (85,936 bytes).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/stayhome-free-template.jpg
+- **Measured how**: hex-literal census of `https://preview.colorlib.com/theme/stayhome/css/style.css`.
+
+### Colors
+
+| Token          | Value     | Occurrences | Role                                                                     |
+| -------------- | --------- | ----------- | ------------------------------------------------------------------------ |
+| Brand blue     | `#4b69bd` | 47          | Primary accent: circular search button, service icons, active nav, links |
+| Warm accent    | `#e88941` | 7           | Secondary highlight / price and underline accents                        |
+| Bootstrap blue | `#007bff` | 11          | Bootstrap 4 utility remnants (buttons, focus rings)                      |
+| Muted copy     | `#6c757d` | 15          | Body text, captions                                                      |
+| Ink            | `#000000` | 45          | Headings on light sections                                               |
+| Surface        | `#fff`    | 75          | Light sections, cards, nav bar                                           |
+| Dark surface   | `#232931` | 1           | Single dark band (footer/CTA)                                            |
+
+### Typography
+
+| Element         | Family                               | Evidence                                         |
+| --------------- | ------------------------------------ | ------------------------------------------------ |
+| Body + headings | `Poppins`                            | 2 `font-family` rules; app loads Poppins 300-700 |
+| Nav / buttons   | Poppins medium, uppercase CTA labels | search pill + SEARCH button                      |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                                          |
+| -------- | ---------------------------------------------------------------------------------------- |
+| Radii    | `50%` (33), `5px` (13), `4px` (10), `40px` pill (4)                                      |
+| Hero     | light photographic hero, offset blue search bar above the fold                           |
+| Layout   | hero -> 4-up service cards -> listings grid -> dark CTA band -> white sections -> footer |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> Services -> PropertyListings -> SearchCTA -> About -> HowItWorks -> AgentCTA -> Agents -> Blog -> Testimonials -> Contact -> Footer`
+
+### Delta vs shipped app
+
+- `--color-primary-500` is `#007bff`, but the reference brand blue is `#4b69bd` (47 rules vs 11 for the Bootstrap leftover).
+- The orange secondary accent `#e88941` has no token in `apps/roost`.
+- `TEMPLATES.md` links BOTH the `Realtors` and `Stayhome` rows to this app; the spec follows `stayhome` (ROW-MULTIPLICITY — recorded, not resolved).
+
 ## Requirements
 
 ### Requirement: Navigation bar

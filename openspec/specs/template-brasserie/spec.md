@@ -14,6 +14,44 @@ Design tokens captured from the original (see docs/replication.md):
 Brasserie lives in `apps/brasserie` and uses shared components from `packages/ui`
 (cn).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Caviar** — https://colorlib.com/wp/template/caviar/
+- **Preview**: https://preview.colorlib.com/theme/caviar/ — HTTP 200 on 2026-10-23; measured `style.min.css` (187,430 bytes, Bootstrap 5 based).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/caviar-free-template.jpg
+- **Measured how**: hex-literal census of `https://preview.colorlib.com/theme/caviar/style.min.css?v=3.0.0`.
+
+### Colors
+
+| Token     | Value     | Occurrences | Role                                      |
+| --------- | --------- | ----------- | ----------------------------------------- |
+| Brand red | `#d40000` | 8           | Eyebrow dots, active labels, accent rules |
+| White     | `#fff`    | 70          | Type on the dark hero, card surfaces      |
+| Black     | `#000`    | 38          | Hero and footer bands                     |
+
+### Typography
+
+| Element  | Family      | Evidence                             |
+| -------- | ----------- | ------------------------------------ |
+| Headings | `Work Sans` | 7 rules — uppercase display headings |
+| Body     | `Open Sans` | 6 rules — paragraphs, nav, buttons   |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                                       |
+| -------- | ------------------------------------------------------------------------------------- |
+| Radii    | Bootstrap `--bs-border-radius` (14 rules) — soft default corners                      |
+| Hero     | split filmstrip: large photograph right, dark copy panel left                         |
+| Layout   | hero -> about -> specials grid -> awards row -> testimonials -> reservation -> footer |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> About -> Specials -> Awards -> Testimonials -> Reservation -> Footer`
+
+### Delta vs shipped app
+
+- The app's `--color-brand-red` is `#ff0000`, but the reference accent is `#d40000` (`#ff0000` occurs 0 times in the stylesheet) — a one-shade drift on every accent.
+
 ## Requirements
 
 ### Requirement: Navigation bar

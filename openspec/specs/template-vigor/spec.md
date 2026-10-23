@@ -20,6 +20,50 @@ Design tokens captured from the original:
 
 Vigor lives in `apps/vigor` and uses shared components from `packages/ui`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Endurance** — https://colorlib.com/wp/template/endurance/
+- **Preview**: https://preview.colorlib.com/theme/endurance/ — HTTP 200 on 2026-10-23; measured `css/style.css` (99,573 bytes). Title served: "Endurance - Free Bootstrap 4 Template by Colorlib".
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/endurance-free-template.jpg
+- **Measured how**: hex-literal census of `https://preview.colorlib.com/theme/endurance/css/style.css`; the count column is the number of rules containing that literal.
+
+### Colors
+
+| Token           | Value     | Occurrences | Role                                                              |
+| --------------- | --------- | ----------- | ----------------------------------------------------------------- |
+| Brand yellow    | `#fcd307` | 52          | Hero headline highlight, section underline rules, solid CTA fills |
+| Yellow tint     | `#f1e767` | 91          | Gradients, hover fills, icon backgrounds                          |
+| Dominant orange | `#fc6b29` | 104         | Warm accent on gradients and hover states                         |
+| Orange hover    | `#fd6b00` | 16          | Darkened hover for orange fills                                   |
+| Accent pink     | `#fd0054` | 14          | Eyebrow labels and accent underlines                              |
+| Muted copy      | `#6c757d` | 14          | Paragraph text, meta labels                                       |
+| Surface         | `#fff`    | 78          | Content sections, nav bar                                         |
+| Ink             | `#000`    | 34          | Headings on light sections                                        |
+
+### Typography
+
+| Element  | Family                                         | Evidence                                                  |
+| -------- | ---------------------------------------------- | --------------------------------------------------------- |
+| Body     | system stack incl. `Roboto` (Bootstrap 4 base) | 1 `body` rule; app loads Roboto 300-900 from Google Fonts |
+| Headings | Roboto bold/black, tight leading               | hero headline sets one word in brand yellow               |
+
+### Shapes & rhythm
+
+| Property    | Reference value                                                     |
+| ----------- | ------------------------------------------------------------------- |
+| Radii       | `50%` (23), `0.25rem` (8), `5px` (5), `30px`/`40px` pills (4 each)  |
+| Accent rule | short 40px yellow underline under section intros                    |
+| Layout      | full-bleed dark photo hero -> white stacked sections -> dark footer |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> About -> Services -> GymClasses -> Pricing -> Testimonies -> Appointment -> Blog -> Counter -> Footer`
+
+### Delta vs shipped app
+
+- The dominant orange `#fc6b29` (104 rules) and the yellow tint `#f1e767` (91 rules) are not tokenized in `apps/vigor`; only the yellow `#fcd307` and a minor `#fd5f00` literal (6 rules) are carried.
+- `TEMPLATES.md` links BOTH the `Fitnessgym` and `Endurance` rows to this app; the spec follows `endurance` (ROW-MULTIPLICITY — recorded, not resolved).
+
 ## Requirements
 
 ### Requirement: Navigation bar

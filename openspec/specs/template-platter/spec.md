@@ -7,6 +7,48 @@ as a React 19 + Tailwind CSS 4 + TypeScript single-page restaurant reservation w
 The original is a 3-step booking form with a split layout: food image on the left,
 dark form panel on the right. Preview was 404; fell back to screenshot analysis.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Colorlib Wizard 7** — https://colorlib.com/wp/template/colorlib-wizard-7/
+- **Preview**: `https://preview.colorlib.com/theme/colorlib-wizard-7/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/colorlib-wizard-7.zip` -> `colorlib-wizard-7/css/style.css` (research only; no asset copied).
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-7.jpg
+- **Measured how**: hex-literal census of `colorlib-wizard-7/css/style.css` from the official free-template ZIP.
+
+### Colors
+
+| Token       | Value     | Occurrences | Role                                  |
+| ----------- | --------- | ----------- | ------------------------------------- |
+| Accent tan  | `#cdaa7c` | 4           | Uppercase heading rule, small accents |
+| Cream text  | `#e9e0cf` | 1           | Secondary text on the dark panel      |
+| Panel brown | `#524b42` | 1           | Right-hand form panel                 |
+| Body grey   | `#666`    | 12          | Labels, helper copy                   |
+| Ink         | `#333`    | 1           | Panel text                            |
+| White       | `#fff`    | 7           | Field text, script sub-heading        |
+
+### Typography
+
+| Element       | Family                  | Evidence                                  |
+| ------------- | ----------------------- | ----------------------------------------- |
+| Headings      | `Raleway` Semibold/Bold | 9 `font-family` rules across Raleway cuts |
+| Script accent | `Satisfy`               | 3 rules — the cursive Book a table line   |
+
+### Shapes & rhythm
+
+| Property | Reference value                                                               |
+| -------- | ----------------------------------------------------------------------------- |
+| Radii    | essentially none (`50%` decorative only) — sharp panels and inputs            |
+| Inputs   | underline-only fields on the dark panel                                       |
+| Layout   | split: full-height food photograph left, dark panel right, n / 3 step counter |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> ReservationWizard -> Footer`
+
+### Delta vs shipped app
+
+- Typefaces differ: the app loads **Playfair Display + Dancing Script + Inter**; the reference uses **Raleway + Satisfy**.
+- The app's tan scale is anchored on `--color-brand-500: #b87a4a` (`#b87a4a` occurs 0 times in the reference); the reference accent is `#cdaa7c` and its panel is `#524b42` (app uses `#221310`).
+
 ## Requirements
 
 ### Requirement: Three-step reservation wizard
@@ -84,10 +126,7 @@ The template SHALL NOT reference "colorlib" in any source file, comment, or asse
 - [ ] `npm run verify:app -- platter` green: typecheck → lint → vitest
       (100% coverage) → build (per-app gate).
 - [ ] All 10 scenarios above are covered by colocated tests
-      (query by role/label; test names mirror the scenario names):
-      - Three-step reservation wizard
-      - Design fidelity
-      - Mandatory footer
+      (query by role/label; test names mirror the scenario names): - Three-step reservation wizard - Design fidelity - Mandatory footer
 - [ ] Sections render in the order listed in the requirements above,
       with no console errors on load.
 - [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,

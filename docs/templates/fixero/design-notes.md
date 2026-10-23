@@ -35,3 +35,16 @@ Fetched from https://preview.colorlib.com/theme/handyman/ (live preview DOM + cs
 - Icons via lucide-react (inline SVG for brand)
 - Single-page app (no multi-page navigation)
 - Tabs implemented with React state (no jQuery/Bootstrap JS)
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/handyman/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (162,977 bytes, Bootstrap 5 based).
+
+- Hex census: `#fb7400` 42, `#364d59` 2, `#212529` 41, `#343a40` 18, `#6c757d` 22, `#f8f9fa` 19 (count = rules containing the literal).
+- Typefaces: Body + headings: `Work Sans`.
+- Radii: Bootstrap `--bs-border-radius` (12), `1rem` (4), `50%` (6).
+- Section order (shipped): `Navbar -> Hero -> QuotationForm -> Services -> AboutTabs -> Testimonials -> Projects -> Blog -> Footer`.
+
+### Deltas measured against the shipped app
+
+- `--color-lavender: #dedffe` occurs **0 times** in the reference stylesheet (the services band reads white / `#f8f9fa`); confirm before relying on it in a fidelity pass.
