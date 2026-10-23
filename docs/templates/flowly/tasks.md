@@ -1,7 +1,7 @@
-# Appco (Colorlib Appco) — Tasks & Design Notes
+# Flowly (Colorlib Appco) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-appco`.
+> Implementation ships later on `feat/template-flowly`.
 
 ## Design notes
 
@@ -13,13 +13,13 @@
 - **Structure observed (1:1, section order):**
   1. Header — nav (Home, Feature, Services, Pricing, Pages, Blog, Contact)
      - "Download".
-  2. Hero — h1 "Get things done with Appco", copy, "Download" buttons,
+  2. Hero — h1 "Get things done with Flowly", copy, "Download" buttons,
      phone imagery (slider).
   3. Features — "Some of the best features Of Our App!": Easy to Costomize,
      Extreme Security, Customer Support, Creative Design.
-  4. Services (`sky-blue`) — "How Can We Help Your with Appco!": Easily
+  4. Services (`sky-blue`) — "How Can We Help Your with Flowly!": Easily
      Manage, Get Payments Easily, Quick Messaging.
-  5. Video demo — "See Appco in Action" + "Applic Apps Screenshot" gallery.
+  5. Video demo — "See Flowly in Action" + "Applic Apps Screenshot" gallery.
   6. Pricing — "Choose Your Very Best Pricing Plan.": $9/$29/$99 per month
      - "Get Started".
   7. Testimonials — "What Our Customers Have to Say": Sarah Johnson, Michael
@@ -36,13 +36,15 @@
   **#f9218d**; headings **#222222**/**#415094**, muted **#999999**/
   **#828bb2**, light sections **#f9f9ff**/**#f0e9ff**; fonts **Poppins** +
   **Nunito** via Google Fonts; filled rounded purple buttons.
-- **Recreation name:** Appco (keeps the original name — it is already a
-  distinct working name, not a ColorLib brand). App folder `apps/appco`,
-  package `@free-react-templates/appco`.
+- **Recreation name:** Flowly (new original name — "flow" + the repo's "-ly"
+  suffix, evoking the productivity-app design; the ColorLib source name is
+  never reused). App folder `apps/flowly`, package
+  `@free-react-templates/flowly`. Renamed from the earlier `appco` folder,
+  which reused the source name (rule 5).
 - **Design approach:** purple primary scale in `@theme`
   (`--color-primary-600: #8f1bdc` — drives shared ui Button/ButtonLink),
   accent `#f9218d`; seeded picsum placeholders
-  `https://picsum.photos/seed/appco-<n>/<w>/<h>`; lucide-react icons (Sliders,
+  `https://picsum.photos/seed/flowly-<n>/<w>/<h>`; lucide-react icons (Sliders,
   ShieldCheck, Headset, Palette, Workflow, CreditCard, MessageSquare, Quote,
   Star, ChevronDown); FAQ accordion as stateful component (native `hidden`
   attribute for visibility); repo-standard Navbar (dark-mode toggle) and
@@ -57,13 +59,13 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-appco/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-flowly/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep); refined
-      on `feat/template-appco` with fetched preview DOM/CSS findings
+      on `feat/template-flowly` with fetched preview DOM/CSS findings
       (2026-08-04).
 - [x] Validate spec: `npm run spec:validate` (221 specs pass).
-- [x] Create `apps/appco` (copy `apps/pawpal`; rename package to
-      `@free-react-templates/appco`).
+- [x] Create `apps/flowly` (copy `apps/pawpal`; rename package to
+      `@free-react-templates/flowly`).
 - [x] TDD: tests first for Navbar, Hero, Features, Services, Video demo,
       Pricing, Testimonials, FAQ, Download CTA, Integrations, Metrics,
       Footer, App composition; 17 tests, all green.
@@ -84,8 +86,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/appco/` may name the source designer,
+- **Provenance ban.** No file under `apps/flowly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/appco/public/CNAME` = `appco.free.componentdock.com`
-  and the package `homepage` = `https://appco.free.componentdock.com`.
+- **Deploy identity.** `apps/flowly/public/CNAME` = `flowly.free.componentdock.com`
+  and the package `homepage` = `https://flowly.free.componentdock.com`.

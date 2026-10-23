@@ -3,7 +3,7 @@ import { Quote, Star } from 'lucide-react'
 const testimonials = [
   {
     quote:
-      'Appco completely transformed how our team collaborates. We boosted our productivity by 40% in the first month.',
+      'Flowly completely transformed how our team collaborates. We boosted our productivity by 40% in the first month.',
     name: 'Sarah Johnson',
     role: 'Product Manager',
   },
@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     quote:
-      'We evaluated a dozen tools and Appco won on every axis: speed, security, and value for money.',
+      'We evaluated a dozen tools and Flowly won on every axis: speed, security, and value for money.',
     name: 'David Kim',
     role: 'Startup Founder',
   },

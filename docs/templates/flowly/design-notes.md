@@ -1,17 +1,17 @@
-# Appco — Design Notes
+# Flowly — Design Notes
 
 Reference: **Appco** — `https://colorlib.com/wp/template/appco/`  
 Live preview: `https://preview.colorlib.com/theme/appco/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg  
-Shipped: https://appco.free.componentdock.com
+Shipped: https://flowly.free.componentdock.com
 
-Appco is a multi-section app landing page template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Appco" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Flowly is a multi-section app landing page template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Appco" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Nunito**, **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/appco/src/index.css` `@theme`)
+## Design tokens (`apps/flowly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -57,19 +57,19 @@ Fonts loaded by `index.html` (Google Fonts): **Nunito**, **Poppins**, **Poppins:
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Appco", links to the main sections, a "Download" button, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Flowly", links to the main sections, a "Download" button, and a dark-mode toggle button.
 
 ### `Hero`
-The system SHALL render a hero section with the headline "Get things done with Appco", supporting copy, and download CTA buttons.
+The system SHALL render a hero section with the headline "Get things done with Flowly", supporting copy, and download CTA buttons.
 
 ### `Features`
 The system SHALL render a features section titled "Some of the best features Of Our App!" with four cards: Easy to Costomize, Extreme Security, Customer Support, and Creative Design.
 
 ### `Services`
-The system SHALL render a services section titled "How Can We Help Your with Appco!" with three blocks: Easily Manage, Get Payments Easily, and Quick Messaging.
+The system SHALL render a services section titled "How Can We Help Your with Flowly!" with three blocks: Easily Manage, Get Payments Easily, and Quick Messaging.
 
 ### `VideoDemo`
-The system SHALL render a video demo section titled "See Appco in Action" with a screenshot gallery.
+The system SHALL render a video demo section titled "See Flowly in Action" with a screenshot gallery.
 
 ### `Pricing`
 The system SHALL render a pricing section titled "Choose Your Very Best Pricing Plan." with three plans at $9/month, $29/month, and $99/month.
@@ -107,8 +107,8 @@ The system SHALL render a footer with an about blurb, link columns (Quick Links,
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/appco/` may name the source designer,
+- **Provenance ban.** No file under `apps/flowly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/appco/public/CNAME` = `appco.free.componentdock.com`
-  and the package `homepage` = `https://appco.free.componentdock.com`.
+- **Deploy identity.** `apps/flowly/public/CNAME` = `flowly.free.componentdock.com`
+  and the package `homepage` = `https://flowly.free.componentdock.com`.

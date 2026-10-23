@@ -33,7 +33,7 @@ export function Services() {
             Services
           </p>
           <h2 className="mt-3 font-display text-3xl font-extrabold text-ink dark:text-white sm:text-4xl lg:text-5xl">
-            How Can We Help Your with Appco!
+            How Can We Help Your with Flowly!
           </h2>
         </div>
 

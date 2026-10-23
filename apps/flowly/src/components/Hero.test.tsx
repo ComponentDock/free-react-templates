@@ -6,10 +6,10 @@ describe('Hero', () => {
   it('renders the headline, supporting copy, and download CTA buttons', () => {
     render(<Hero />)
     expect(
-      screen.getByRole('heading', { level: 1, name: 'Get things done with Appco' }),
+      screen.getByRole('heading', { level: 1, name: 'Get things done with Flowly' }),
     ).toBeInTheDocument()
     expect(screen.getByText(/Lorem ipsum dolor sit amet/)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Download' })).toHaveAttribute('href', '#download')
-    expect(screen.getByRole('img', { name: /Appco app on devices/ })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /Flowly app on devices/ })).toBeInTheDocument()
   })
 })

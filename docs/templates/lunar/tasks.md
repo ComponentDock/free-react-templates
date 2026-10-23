@@ -70,7 +70,7 @@
 
 ## Implementation tasks (order)
 
-1. Scaffold `apps/lunar` (copy the simplest existing app, e.g. `apps/appco`
+1. Scaffold `apps/lunar` (copy the simplest existing app, e.g. `apps/flowly`
    or another minimal one; rename package to `@free-react-templates/lunar`;
    `npm install` at repo root so package-lock.json registers the workspace).
 2. `index.html`: title "Lunar", Google Fonts Roboto 300/400/500/700 link;

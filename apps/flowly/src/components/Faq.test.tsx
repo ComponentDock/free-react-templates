@@ -11,7 +11,7 @@ describe('Faq', () => {
     ).toBeInTheDocument()
 
     for (const question of [
-      'How do I get started with Appco?',
+      'How do I get started with Flowly?',
       'Is there a free trial available?',
       'Can I switch between plans?',
       'Is my data secure?',
@@ -26,7 +26,7 @@ describe('Faq', () => {
     const user = userEvent.setup()
     render(<Faq />)
 
-    const button = screen.getByRole('button', { name: 'How do I get started with Appco?' })
+    const button = screen.getByRole('button', { name: 'How do I get started with Flowly?' })
     expect(button).toHaveAttribute('aria-expanded', 'false')
     expect(screen.getByText(/Sign up for a free account/)).not.toBeVisible()
 

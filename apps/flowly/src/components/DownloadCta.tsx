@@ -12,7 +12,7 @@ export function DownloadCta() {
           Our App Available For Any Device Download now
         </h2>
         <p className="mt-4 text-lg text-primary-50">
-          Get Appco on iOS, Android, or the web — your workspace goes wherever you do.
+          Get Flowly on iOS, Android, or the web — your workspace goes wherever you do.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <ButtonLink

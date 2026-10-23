@@ -47,7 +47,7 @@
       on `feat/template-applab` with fetched preview DOM/CSS findings
       (2026-08-05).
 - [x] Validate spec: `npm run spec:validate` (221 specs pass).
-- [x] Create `apps/applab` (copy `apps/appco`; rename package to
+- [x] Create `apps/applab` (copy `apps/flowly`; rename package to
       `@free-react-templates/applab`).
 - [x] TDD: tests first for Navbar, Hero, Feature blocks, How-it-works,
       Features strip, Testimonials, Pricing, CTA, Footer, App composition;

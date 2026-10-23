@@ -14,7 +14,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Appco — App Landing Page Template'
+    document.title = 'Flowly — App Landing Page Template'
   }, [])
 
   return (
