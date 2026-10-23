@@ -1,8 +1,8 @@
-# Template: Favison (App Landing Page)
+# Template: Upswing (App Landing Page)
 
 ## Purpose
 
-Favison is a single-page SaaS/business landing template in the
+Upswing is a single-page SaaS/business landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Favison" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -52,25 +52,25 @@ CSS 4 + TypeScript.
   - Font: **"Poppins"** (Google Fonts).
   - Rounded pink buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/favison-<n>/<w>/<h>`); icons → lucide-react; forms
+  (`picsum.photos/seed/upswing-<n>/<w>/<h>`); icons → lucide-react; forms
   prevent default (no backend); no assets copied.
 
-Favison lives in `apps/favison` and uses shared components from `packages/ui`
+Upswing lives in `apps/upswing` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Favison",
+The system SHALL render a top navigation bar with the site name "Upswing",
 anchor links to the page's sections, a "Sign Up" button, and a dark-mode
 toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Favison page is rendered
+- **GIVEN** the Upswing page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Favison" and links to Home, Features, Pricing, and Contact
+- **THEN** the navbar SHALL show the site name "Upswing" and links to Home, Features, Pricing, and Contact
 - **AND** the navbar SHALL show a "Sign Up" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -194,10 +194,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Favison app is rendered
+- **GIVEN** the Upswing app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Favison — App Landing Template"
+- **AND** the document title SHALL be "Upswing — App Landing Template"
 - **AND** the page SHALL show the "Easy to Use Mobile Application" feature band and the "Read Our Latest News" blog heading
 
 ### Requirement: Component Dock attribution
@@ -218,7 +218,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/favison/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/upswing/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -227,7 +227,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/favison/` is inspected
+- **WHEN** every non-test file under `apps/upswing/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -235,7 +235,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Favison" and links to Home, Features, Pricing, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Upswing" and links to Home, Features, Pricing, and Contact
 - [x] Hero section — it SHALL contain a level-1 heading "Build a better business & faster"
 - [x] Services section — it SHALL show cards titled "Unique Design", "Business Solution", and "Customer Support" each with a "Read More" link
 - [x] About/features section — it SHALL show tiles titled "Cloud Compatibility", "On Time Delivery", "Easy to Use", "Mobile Application", "Add New Project", and "Generating Leads"

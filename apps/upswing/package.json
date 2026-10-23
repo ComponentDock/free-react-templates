@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/favison",
+  "name": "@free-react-templates/upswing",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://favison.free.componentdock.com",
+  "homepage": "https://upswing.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

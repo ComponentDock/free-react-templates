@@ -39,7 +39,7 @@ export function Blog() {
               className="overflow-hidden rounded-2xl border border-gray-200 bg-white transition-shadow hover:shadow-lg dark:border-gray-800 dark:bg-gray-950"
             >
               <img
-                src="https://picsum.photos/seed/favison-blog/640/360"
+                src="https://picsum.photos/seed/upswing-blog/640/360"
                 alt=""
                 aria-hidden="true"
                 className="h-44 w-full object-cover"

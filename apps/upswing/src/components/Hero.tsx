@@ -18,8 +18,8 @@ export function Hero() {
           </a>
         </div>
         <img
-          src="https://picsum.photos/seed/favison-hero/640/560"
-          alt="Favison dashboard preview"
+          src="https://picsum.photos/seed/upswing-hero/640/560"
+          alt="Upswing dashboard preview"
           className="mx-auto w-full max-w-md rounded-xl shadow-xl"
         />
       </div>

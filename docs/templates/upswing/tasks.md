@@ -1,7 +1,10 @@
-# Favison (Colorlib Favison) — Tasks & Design Notes
+# Upswing (ColorLib Favison) — Tasks & Design Notes
+
+> **Renamed:** shipped as `favison`, now `apps/upswing` (rule 5: the app folder
+> must not reuse the ColorLib source name).
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-favison`.
+> Implementation ships later on `feat/template-upswing`.
 
 ## Design notes (replication findings)
 
@@ -38,29 +41,31 @@
   - Dark `#1d1d1d`, `#2a2a2a`; light `#f9f9ff`.
   - Font: **"Poppins"** (Google Fonts `<link>`).
   - Rounded pink buttons with white text.
-- **Recreation name:** Favison (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/favison`, package
-  `@free-react-templates/favison`.
+- **Recreation name:** Upswing — an original name chosen for this design
+  (rebuild of the ColorLib "Favison" layout; the source name is never reused,
+  per rule 5). App folder `apps/upswing`, package
+  `@free-react-templates/upswing`. This prep doc originally argued for keeping
+  "Favison", which seeded the violation; the app has since been renamed.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/favison-<n>/<w>/<h>`); lucide-react icons; Poppins
+  (`picsum.photos/seed/upswing-<n>/<w>/<h>`); lucide-react icons; Poppins
   via Google Fonts; pink primary + yellow accent in `@theme`;
   repo-standard Navbar (dark-mode toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-favison/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-upswing/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/favison` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/favison`).
+- [x] Create `apps/upswing` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/upswing`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [x] Push `feat/template-favison`, open PR (source template, preview URL,
+- [x] Push `feat/template-upswing`, open PR (source template, preview URL,
       design tokens, what differs).
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
+- [x] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
 
 ## Delivery contract (repo rules — non-negotiable)
@@ -71,8 +76,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/favison/` may name the source designer,
+- **Provenance ban.** No file under `apps/upswing/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/favison/public/CNAME` = `favison.free.componentdock.com`
-  and the package `homepage` = `https://favison.free.componentdock.com`.
+- **Deploy identity.** `apps/upswing/public/CNAME` = `upswing.free.componentdock.com`
+  and the package `homepage` = `https://upswing.free.componentdock.com`.

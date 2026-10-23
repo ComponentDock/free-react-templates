@@ -67,7 +67,7 @@ the parent's `UNSHIPPED` count by exactly that many — the app is untouched.
 | `boost` | 1 |
 | `captura` | 1 |
 | `casepoint` | 1 |
-| `favison` | 1 |
+| `upswing` | 1 |
 | `industrix` | 1 |
 | `ironvault` | 1 |
 | `jobgrid` | 1 |
@@ -310,7 +310,7 @@ or a prep error); the app has nothing to match. Never a dismissal.
 | `boost` | 59 | Brand (stated in this prep) | `#505288` | SHEET-ONLY | `.cta-big-image .img-box .btn` | — |
 | `captura` | 21 | Brand (stated in this prep) | `#ff5e13` | SHEET-ONLY | `.contact-info .media-body h3 a:hover` | — |
 | `casepoint` | 35 | Secondary cyan | `#4cd3e3` | SHEET-ONLY | `.genric-btn.success` | — |
-| `favison` | 51 | Secondary accents | `#f4e700` | SHEET-ONLY | `.warning` | — |
+| `upswing` | 51 | Secondary accents | `#f4e700` | SHEET-ONLY | `.warning` | — |
 | `fortify` | 30 | Secondary blue | `#38a4ff` | SHEET-ONLY | `.genric-btn.info` | — |
 | `fortify` | 31 | Cyan accent | `#4cd3e3` | SHEET-ONLY | `.genric-btn.success` | — |
 | `fortify` | 32 | Red accent | `#f44a40` | SHEET-ONLY | `.genric-btn.danger` | — |

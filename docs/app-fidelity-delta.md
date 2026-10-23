@@ -330,7 +330,7 @@ so the dismissal is auditable, never silent.
 | `casepoint` | EVIDENCE-SHEET-ONLY | spec L35 Secondary cyan #4cd3e3: row says "declared only by" |
 | `classipost` | OR-COVERED | spec L9 Primary color #1cd1b7: app paints the row's alternative #1ec6b6 |
 | `domkit` | EVIDENCE-VENDOR | spec L123 Base `.cl-btn-primary` earlier rule #007bff: row says "fully overridden" |
-| `favison` | EVIDENCE-SHEET-ONLY | spec L51 Secondary accents #f4e700: row says "declared only by" |
+| `upswing` | EVIDENCE-SHEET-ONLY | spec L51 Secondary accents #f4e700: row says "declared only by" |
 | `formzen` | EVIDENCE-STATE | spec L19 Accent (most-used chromatic) #c80000: row says "alert-validate" |
 | `fortify` | EVIDENCE-SHEET-ONLY | spec L30 Secondary blue #38a4ff: row says "declared only by" |
 | `fortify` | EVIDENCE-SHEET-ONLY | spec L31 Cyan accent #4cd3e3: row says "declared only by" |
