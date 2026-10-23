@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Penman brand colors — from the ColorLib "Author" preview
-     (https://preview.colorlib.com/theme/author/ + css/style.css):
+  /* Penman brand colors — from the reference stylesheet (css/style.css):
      a book/author landing theme with a green #17b978 primary,
      Bootstrap blue #007bff buttons, light gray #f8f9fa backgrounds,
      and Raleway + Open Sans font pairing. */
@@ -19,14 +18,14 @@
   --color-primary-800: #0b5033;
   --color-primary-900: #083823;
 
-  /* Button primary (Bootstrap blue from ColorLib .btn-primary). */
+  /* Button primary (Bootstrap blue from the reference .btn-primary). */
   --color-btn: #007bff;
   --color-btn-hover: #0069d9;
 
-  /* Light section backgrounds (ColorLib .bg-light / #f8f9fa). */
+  /* Light section backgrounds (.bg-light / #f8f9fa). */
   --color-mist: #f8f9fa;
 
-  /* Muted text (ColorLib #6c757d). */
+  /* Muted text (#6c757d). */
   --color-smoke: #6c757d;
 
   /* Dark ink for headings. */

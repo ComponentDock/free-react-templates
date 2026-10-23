@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pediment brand palette — recreated from the ColorLib Staging design:
+  /* Pediment brand palette — measured from the reference design:
      brand gold #dfa667, body text #111111, muted gray #707070,
      dark footer #1b1b1b, footer muted #b7b7b7, section bg #f8f8f8,
      border #c4c4c4. */

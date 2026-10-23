@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Parapet brand colors — from the ColorLib "Buildcraft" demo stylesheet
+  /* Parapet brand colors — from the reference stylesheet
      (_astro/Base.*.css): primary = amber scale (#d97706 amber-600 buttons,
      #f59e0b amber-500 accents, #b45309 amber-700 hover, #fbbf24 amber-400
      highlights, #fef3c7 amber-100 icon/avatar surfaces, #fffbeb amber-50

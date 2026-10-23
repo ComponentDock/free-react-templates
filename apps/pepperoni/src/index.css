@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pepperoni brand palette — recreated from the ColorLib "Pizza" design
+  /* Pepperoni brand palette — measured from the reference design
      (css/style.css): cyan #78d5ef accents/buttons, dark #121618 navbar/footer,
      warm grays for text. */
   --color-brand: #78d5ef;

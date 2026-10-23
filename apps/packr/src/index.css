@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — from ColorLib Suitcase design: blue #0e27fb, golden #F7AF1D */
+  /* Brand palette — measured from the reference design: blue #0e27fb, golden #F7AF1D */
   --color-brand: #0e27fb;
   --color-brand-dark: #0b1fc4;
   --color-gold: #f7af1d;
