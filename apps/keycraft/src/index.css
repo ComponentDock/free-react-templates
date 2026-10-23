@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Keycraft brand colors — from the ColorLib "Locksmith" preview
-     (https://preview.colorlib.com/theme/locksmith/ + css/style.css):
+  /* Keycraft brand colors — measured from the reference stylesheet
+     (css/style.css):
      a locksmith/security landing theme with a golden amber #ffc446 primary,
      dark navy #052336 backgrounds, and dark teal #0e1f24 section headings. */
   --color-primary-50: #fff9e6;
@@ -20,19 +20,19 @@
   --color-primary-800: #664d00;
   --color-primary-900: #332600;
 
-  /* Dark navy (ColorLib header/footer bg #052336). */
+  /* Dark navy (header/footer bg #052336). */
   --color-navy: #052336;
 
-  /* Dark teal (ColorLib section title #0e1f24). */
+  /* Dark teal (section title #0e1f24). */
   --color-teal: #0e1f24;
 
-  /* Muted body copy (ColorLib #444444). */
+  /* Muted body copy (#444444). */
   --color-smoke: #444444;
 
   --color-ink: #111111;
 
   /* Rajdhani (headings/display) + Open Sans (body) via Google Fonts
-     <link> in index.html — matching the ColorLib font pairing. */
+     <link> in index.html — matching the reference font pairing. */
   --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
 }

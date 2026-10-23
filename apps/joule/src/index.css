@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Joule brand palette — recreated from the ColorLib "Electro" design
+  /* Joule brand palette — measured from the reference design
      (css/style.css): vivid red #D10024 accent, dark #15161D header/footer,
      darker #1E1F29 top bar, grey #E4E7ED bands, muted #8D99AE labels,
      footer text #B9BABC, body bg #FBFBFC. */
@@ -20,7 +20,7 @@
   --color-body-bg: #fbfbfc;
 
   /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
-     to the Electro red. */
+     to the brand red. */
   --color-primary-50: #fef0f3;
   --color-primary-100: #fdd8de;
   --color-primary-200: #fbb0bc;

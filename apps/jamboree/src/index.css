@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Jamboree brand palette — recreated from the ColorLib "Eventasia" design
+  /* Jamboree brand palette — measured from the reference design
      (css/main.css): purple #C732FF accent, gradient #ca2dff → #8e96f8 → #52fff1,
      dark footer #222222, speaker bg #f9f9ff. */
   --color-brand: #c732ff;

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* JobVane brand tokens — from the ColorLib Jobpply preview:
+  /* JobVane brand tokens — measured from the reference preview:
      primary blue #007bff, accent purple #6c63ff, dark footer #343a40. */
   --color-primary-50: #e6f0ff;
   --color-primary-100: #b3d4ff;

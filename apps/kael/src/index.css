@@ -4,9 +4,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Kael brand colors — from the Satner portfolio preview
-     (https://preview.colorlib.com/theme/satner/ + css/style.css):
-     a personal portfolio with purple-blue gradient #4458dc -> #854fee,
+  /* Kael brand colors — measured from the reference portfolio stylesheet
+     (css/style.css): a personal portfolio with purple-blue gradient
+     #4458dc -> #854fee,
      body text #777777, headings #000000, Roboto + Rubik fonts. */
 
   --color-primary-50: #eef0ff;

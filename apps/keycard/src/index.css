@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand green — sage/olive green from the original ColorLib
-     Creative Login Form (CodePen rxddKy): the background and button color. */
+  /* Brand green — sage/olive green from the reference design (CodePen rxddKy):
+     the background and button color. */
   --color-brand: #8bc34a;
 
   /* Card white. */
