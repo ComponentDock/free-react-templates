@@ -1,7 +1,7 @@
-# Gaas (Colorlib GaaS) — Tasks & Design Notes
+# Upleap (Colorlib GaaS) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-gaas`.
+> Implementation ships later on `feat/template-upleap`.
 
 ## Design notes (replication findings)
 
@@ -14,7 +14,7 @@
   a "Mass People Oriented Software" hero, 3 feature tiles, repeated split
   rows, and pricing.
 - **Structure (1:1, section order):**
-  1. Navbar: logo "GaaS Software" + Home, Features, Pricing, Pages, Blog,
+  1. Navbar: logo "Upleap Software" + Home, Features, Pricing, Pages, Blog,
      Contact + **free trial**.
   2. Hero (`home_banner_area`): h1 "Mass People Oriented Software" + blurb +
      **Get Started / watch the video**.
@@ -36,11 +36,12 @@
   - Dark `#222222`; light `#f9f9ff`; muted `#777777`.
   - Fonts: **"Rajdhani"** + **"Roboto"** (Google Fonts `<link>`).
   - Purple buttons with white text.
-- **Recreation name:** Gaas (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/gaas`, package
-  `@free-react-templates/gaas`.
+- **Recreation name:** **Upleap** — an original name that evokes the software
+  growth pitch; it must not reuse the source design name (AGENTS.md rule 5).
+  The design first shipped as `apps/gaas` and was renamed to `apps/upleap`
+  (package `@free-react-templates/upleap`).
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/gaas-<n>/<w>/<h>`); lucide-react icons; Rajdhani +
+  (`picsum.photos/seed/upleap-<n>/<w>/<h>`); lucide-react icons; Rajdhani +
   Roboto via Google Fonts; video button as styled play button; purple
   primary in `@theme`; repo-standard Navbar (dark-mode toggle) + Footer
   chrome.
@@ -48,16 +49,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-gaas/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-upleap/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/gaas` (copy the section-rich landing app pattern —
-      Favison; rename package to `@free-react-templates/gaas`).
+- [x] Create `apps/upleap` (copy the section-rich landing app pattern —
+      Favison; rename package to `@free-react-templates/upleap`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [x] Push `feat/template-gaas`, open PR (source template, preview URL,
+- [x] Push `feat/template-upleap`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -70,8 +71,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/gaas/` may name the source designer,
+- **Provenance ban.** No file under `apps/upleap/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/gaas/public/CNAME` = `gaas.free.componentdock.com`
-  and the package `homepage` = `https://gaas.free.componentdock.com`.
+- **Deploy identity.** `apps/upleap/public/CNAME` = `upleap.free.componentdock.com`
+  and the package `homepage` = `https://upleap.free.componentdock.com`.

@@ -4,24 +4,24 @@ const splits = [
     heading: 'We Believe that Inner beauty Lasts Long',
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'https://picsum.photos/seed/gaas-split-1/640/480',
-    alt: 'Gaas split feature preview one',
+    image: 'https://picsum.photos/seed/upleap-split-1/640/480',
+    alt: 'Upleap split feature preview one',
   },
   {
     title: 'Modern Daesign Trends',
     heading: 'We Believe that Inner beauty Lasts Long',
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'https://picsum.photos/seed/gaas-split-2/640/480',
-    alt: 'Gaas split feature preview two',
+    image: 'https://picsum.photos/seed/upleap-split-2/640/480',
+    alt: 'Upleap split feature preview two',
   },
   {
     title: 'Modern Daesign Trends',
     heading: 'We Believe that Inner beauty Lasts Long',
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'https://picsum.photos/seed/gaas-split-3/640/480',
-    alt: 'Gaas split feature preview three',
+    image: 'https://picsum.photos/seed/upleap-split-3/640/480',
+    alt: 'Upleap split feature preview three',
   },
 ] as const
 

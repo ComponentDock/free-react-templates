@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/gaas",
+  "name": "@free-react-templates/upleap",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gaas.free.componentdock.com",
+  "homepage": "https://upleap.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
