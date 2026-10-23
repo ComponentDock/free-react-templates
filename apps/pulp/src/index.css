@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pulp brand palette — recreated from the ColorLib "Erase" magazine
+  /* Pulp brand palette — measured from the reference design magazine
      editorial design (css/style.css): blue-gray #69779b brand (read-more
      pills, active menu underline), gold #f8b500 (active menu link), dark
      #212121 (inverted rows, footer), deep blue #064acb (hero cycle stop). */

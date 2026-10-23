@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Prism brand colors — from the ColorLib "Dup" preview
-     (https://preview.colorlib.com/theme/dup/ + css/main.css):
+  /* Prism brand colors — from the reference stylesheet:
      a creative agency theme with a red #e0003b primary,
      dark red overlays rgba(224, 0, 59, 0.8), light section
      backgrounds #f9f9ff, and muted text #777777. */

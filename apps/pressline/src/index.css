@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pressline brand palette — from ColorLib "Publishing Company" preview:
+  /* Pressline brand palette — from the reference stylesheet:
      steel blue-gray accent #95adbe, dark bg #1a1a1a, light bg #f8f9fa. */
   --color-primary-50: #f0f5f8;
   --color-primary-100: #dce8ef;
