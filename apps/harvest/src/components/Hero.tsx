@@ -26,7 +26,7 @@ export function Hero() {
         </div>
         <div className="flex-1">
           <img
-            src="https://picsum.photos/seed/farmie-hero/640/520"
+            src="https://picsum.photos/seed/harvest-hero/640/520"
             alt=""
             className="mx-auto w-full max-w-md rounded-lg"
             fetchPriority="high"

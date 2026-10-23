@@ -5,25 +5,25 @@ const categories: { title: string; copy: string; Icon: LucideIcon; seed: string 
     title: 'Fruit & Vegetable',
     copy: 'Seasonal fruits and vegetables picked fresh from our fields.',
     Icon: Apple,
-    seed: 'farmie-cat-1',
+    seed: 'harvest-cat-1',
   },
   {
     title: 'Meat & Eggs',
     copy: 'Free-range meat and eggs from healthy, happy farm animals.',
     Icon: Beef,
-    seed: 'farmie-cat-2',
+    seed: 'harvest-cat-2',
   },
   {
     title: 'Milk & Cheese',
     copy: 'Creamy dairy products made daily from our own herds.',
     Icon: Milk,
-    seed: 'farmie-cat-3',
+    seed: 'harvest-cat-3',
   },
   {
     title: 'Rice & Corn',
     copy: 'Hearty grains and corn grown with sustainable practices.',
     Icon: Wheat,
-    seed: 'farmie-cat-4',
+    seed: 'harvest-cat-4',
   },
 ]
 

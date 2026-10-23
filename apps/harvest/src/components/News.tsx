@@ -5,28 +5,28 @@ const posts = [
     title: 'The Best Time To Harvest Organic Strawberries',
     excerpt:
       'Learn how to tell when strawberries are perfectly ripe and ready for the morning basket.',
-    seed: 'farmie-news-1',
+    seed: 'harvest-news-1',
     author: 'Carlos Bacca',
   },
   {
     title: 'Five Herbs Every Home Garden Should Grow',
     excerpt:
       'Basil, mint, rosemary, thyme, and parsley are easy to grow and endlessly useful in the kitchen.',
-    seed: 'farmie-news-2',
+    seed: 'harvest-news-2',
     author: 'Peter Crough',
   },
   {
     title: 'How We Keep Our Soil Healthy Year After Year',
     excerpt:
       'Crop rotation, composting, and cover crops are the backbone of our sustainable farming.',
-    seed: 'farmie-news-3',
+    seed: 'harvest-news-3',
     author: 'Peter Crough',
   },
   {
     title: 'From Pasture To Plate: Our Grass-Fed Beef',
     excerpt:
       'Follow the journey of our cattle from the meadows to the butcher and finally to your table.',
-    seed: 'farmie-news-4',
+    seed: 'harvest-news-4',
     author: 'Peter Crough',
   },
 ] as const

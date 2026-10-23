@@ -5,37 +5,37 @@ const practices: { title: string; copy: string; Icon: LucideIcon; seed: string }
     title: 'Chicken Farmed For Meat',
     copy: 'Free-range chickens raised with care on open pasture.',
     Icon: Tractor,
-    seed: 'farmie-practice-1',
+    seed: 'harvest-practice-1',
   },
   {
     title: 'Pig Farm Management',
     copy: 'Responsible husbandry that keeps animals healthy and happy.',
     Icon: Wheat,
-    seed: 'farmie-practice-2',
+    seed: 'harvest-practice-2',
   },
   {
     title: 'Beef Cattle Farming',
     copy: 'Grass-fed cattle raised sustainably on our own meadows.',
     Icon: Tractor,
-    seed: 'farmie-practice-3',
+    seed: 'harvest-practice-3',
   },
   {
     title: 'Improved Rice Cultivation',
     copy: 'Water-smart rice farming that protects local ecosystems.',
     Icon: Wheat,
-    seed: 'farmie-practice-4',
+    seed: 'harvest-practice-4',
   },
   {
     title: 'Soil Improvement Techniques',
     copy: 'Composting, rotation, and cover crops keep our soil rich.',
     Icon: Tractor,
-    seed: 'farmie-practice-5',
+    seed: 'harvest-practice-5',
   },
   {
     title: 'Intensive Fruit Farming',
     copy: 'High-density orchards that produce abundant, flavorful fruit.',
     Icon: Wheat,
-    seed: 'farmie-practice-6',
+    seed: 'harvest-practice-6',
   },
 ]
 

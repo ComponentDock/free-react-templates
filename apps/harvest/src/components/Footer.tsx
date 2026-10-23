@@ -63,7 +63,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light">
-          Copyright © {new Date().getFullYear()} Farmie. All rights reserved.
+          Copyright © {new Date().getFullYear()} Harvest. All rights reserved.
         </p>
         <p className="text-sm font-light">
           More templates at{' '}

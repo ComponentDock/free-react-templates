@@ -1,17 +1,17 @@
-# Farmie — Design Notes
+# Harvest — Design Notes
 
-Reference: **Farmie** — `https://colorlib.com/wp/template/farmie/`  
+Reference: **ColorLib "Farmie"** — `https://colorlib.com/wp/template/farmie/`  
 Live preview: `https://preview.colorlib.com/theme/farmie/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/farmie-free-template.jpg  
-Shipped: https://farmie.free.componentdock.com
+Shipped: https://harvest.free.componentdock.com
 
-Farmie is a multi-section farm and organic-shop website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Farmie" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Harvest is a multi-section farm and organic-shop website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Farmie" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Karla**, **Karla:wght@400;500;600;700;800**
 
-## Design tokens (`apps/farmie/src/index.css` `@theme`)
+## Design tokens (`apps/harvest/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Fonts loaded by `index.html` (Google Fonts): **Karla**, **Karla:wght@400;500;600
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Farmie", links to the main sections (Home, About, Pages, Shop, News, Contact), a cart badge, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Harvest", links to the main sections (Home, About, Pages, Shop, News, Contact), a cart badge, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a hero section with the headline "The hearth of the farm is the true center of our universe.", supporting copy, and CTA buttons.
@@ -100,8 +100,8 @@ The system SHALL render a footer with the site name, an about blurb with address
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/farmie/` may name the source designer,
+- **Provenance ban.** No file under `apps/harvest/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/farmie/public/CNAME` = `farmie.free.componentdock.com`
-  and the package `homepage` = `https://farmie.free.componentdock.com`.
+- **Deploy identity.** `apps/harvest/public/CNAME` = `harvest.free.componentdock.com`
+  and the package `homepage` = `https://harvest.free.componentdock.com`.

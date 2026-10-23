@@ -25,7 +25,7 @@ export function About() {
         </div>
         <div>
           <img
-            src="https://picsum.photos/seed/farmie-about/640/480"
+            src="https://picsum.photos/seed/harvest-about/640/480"
             alt=""
             loading="lazy"
             className="w-full rounded-lg"
