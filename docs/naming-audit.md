@@ -29,7 +29,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `colid` → `pitchly` (#1827), `crafted` → `makerly` (#1829),
 `dogger` → `barkly` (#1830), `doglife` → `houndly` (#1831),
 `ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833),
-`favison` → `upswing` (this PR).
+`favison` → `upswing` (#1834).
 
 | app                 | source design  |
 | ------------------- | -------------- |
@@ -99,3 +99,23 @@ seen in `docs/templates/houndly/tasks.md` for Doglife). That is exactly the
 rule-5 violation; a folder rename alone leaves the wrong guidance behind. Rewrite
 the `Recreation name` bullet (and any `# <Name> (Colorlib <Source>)` heading) so
 the prep doc states the new name and the provenance separately.
+
+## Pitfall — pre-push verified the deleted side of the rename
+
+`.husky/pre-push` derives the apps to verify from `git diff --name-only`, and a
+`git mv` diff names **both** sides (`apps/<old>/…` as deleted, `apps/<new>/…` as
+added). It called `verify-app.sh <old>` on the removed folder and aborted the
+push with `error: apps/<old> does not exist` — the gate never got to the app
+that still exists. Fixed in #1834: the hook keeps only app folders present on
+disk, which is the rule CI already applies (`deploy-surge.yml` lists a changed
+app only when `apps/<app>/package.json` exists). If a rename push dies this way
+again, fix the hook — do not `--no-verify` past it.
+
+## Pitfall — `ColorLib free "X"` escapes an exact-match restore
+
+The provenance restore after a blanket swap has to cover every phrasing the
+spec uses. `ColorLib free "Favison"` (Purpose paragraph) survived a restore that
+only matched `ColorLib "Favison"`, so the audit then reported the *new* folder as
+reusing `ColorLib "Upswing"`. After the swap run `node scripts/audit-naming.mjs`
+and confirm the count went DOWN by one, and grep the spec for `ColorLib` to
+eyeball every line.
