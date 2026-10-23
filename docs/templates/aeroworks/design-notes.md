@@ -67,3 +67,18 @@
 6. Choose Us (split + video)
 7. Latest News (blog cards)
 8. Footer (dark, multi-column)
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/hvac/ — HTTP 200 on 2026-10-23; measured `css/style.css` (58,826 bytes). Title served: "HVAC | Template".
+
+- Hex census: `#ffffff` 62, `#353535` 54, `#db2d2e` 35, `#727171` 34, `#8d8d8d` 23, `#323232` 21, `#ebebeb` 14, `#f7f7f7` 6 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Lato` + `sans-serif`; Icons: `FontAwesome`.
+- Radii: `2px` (28), `50%` (14), `.25rem` (6), `6px` (6), `1px` (5).
+- Section order (shipped): `Header -> Hero -> Services -> Feature -> CarListings -> ChooseUs -> LatestNews -> Footer`.
+
+### Deltas measured against the shipped app
+
+- `apps/aeroworks` tokens match the reference: `--color-primary-500 #db2d2e`, `--color-header-bar #323232`, `--color-text-dark #353535`, `--color-section-light #f7f7f7`, `--color-border #ebebeb`.
+- The app's 50–400 tints (`#fdf2f2` … `#ed6b6c`) and 600–900 shades are derived, not measured — the sheet carries no tint ramp: `#db2d2e` plus one darker hover `#cc1111`.
+- Fonts match (`Lato`); section order matches 1:1.

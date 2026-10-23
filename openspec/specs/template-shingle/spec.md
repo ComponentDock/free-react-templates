@@ -19,6 +19,50 @@ Design tokens captured from the original:
 
 Shingle lives in `apps/shingle` and uses shared components from `packages/ui`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Roofing** — https://colorlib.com/wp/template/roofing/
+- **Preview**: https://preview.colorlib.com/theme/roofing/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (197,792 bytes). Title served: "Roofing | Roof Installation, Repair and Solar-Ready Roofs".
+- **Path note**: The demo is a REBUILT build (`?v=3.0.0`, `Roofing 3.0.0`, Bootstrap 5.3.8) whose layout no longer starts with the classic photo hero — treat mismatch as DRIFT, not as a prep error.
+- **Measured how**: hex-literal census of `css/style.min.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Gold | `#d9ba2b` | 83 | `--bs-primary` remap (`--bs-link-color-rgb: 217,186,43`): links, buttons, accents |
+| Deep black | `#000000` | 48 | overlays and dark bands |
+| Muted | `#6c757d` | 20 | body copy |
+| Surface | `#f8f9fa` | 16 | `.bg-light` bands |
+| Ink | `#212529` | 18 | headings |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body + headings | `Poppins` | 16 declarations |
+| Icons | `Font Awesome 7 Brands` | icon face in the kit |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `50%` (20), `var(--bs-border-radius)` (13), `4px` (11) |
+| Rhythm | `menu-wrap` (full-bleed nav band) -> `ftco-no-pt` intro -> counter -> service bands -> testimony -> `bg-light` band -> footer |
+| Buttons | Bootstrap 5 buttons re-pointed at gold `#d9ba2b` |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> About -> Stats -> Services -> Projects -> Testimonials -> Blog -> Pricing -> Footer`
+
+Reference bands: menu-wrap -> ftco-no-pt -> ftco-counter -> section -> ftco-no-pb -> testimony -> section -> bg-light -> footer.
+
+### Delta vs shipped app
+
+- The rebuilt sheet's primary is gold: `--bs-primary: #d9ba2b` and `--bs-link-color-rgb: 217, 186, 43` (83 literal occurrences). Stock `#007bff` has **0 hits**.
+- `apps/shingle` still carries `--color-brand #007bff` / `--color-brand-dark #0062cc` from the pre-rebuild design, with `#d9ba2b` demoted to a secondary `--color-gold`. Palette DRIFT on a rebuilt demo.
+- The rebuild also drops the classic photo hero the app models (`Hero`), so layout drift is expected as well as colour drift.
+
 ## Requirements
 
 ### Requirement: Top bar

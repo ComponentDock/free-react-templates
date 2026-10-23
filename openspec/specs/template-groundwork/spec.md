@@ -78,6 +78,52 @@ Extracted from the live preview CSS (`css/style.css`) and HTML structure.
    - **Row 3: Bottom paragraph**
      - Small text disclaimer paragraph (Lorem ipsum placeholder)
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Bootstrap Footer 04** — https://colorlib.com/wp/template/bootstrap-footer-04/
+- **Preview**: https://preview.colorlib.com/theme/bft/bootstrap-footer-04/ — HTTP 200 on 2026-10-23; measured `css/style.css` (8,306 bytes). Title served: "Footer 04".
+- **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Footer field | `#000` | 1 | `.footer-14398` background |
+| Footer copy | `#777` | 1 | `.footer-14398` body text |
+| Footer headings | `#fff` | 5 | `.footer-14398 h3`, `.footer-site-logo` |
+| Link blue | `#007bff` | 1 | `a` colour in the page chrome |
+| Link hover | `#0056b3` | 1 | `a:hover` |
+| Light surface | `#f8f9fa` | 1 | `.cl-bg-light` |
+| Light hover | `#dae0e5` | 1 | `a.cl-bg-light:hover` |
+| Page ink | `#212529` | 1 | `body` colour |
+| Muted | `#999` | 1 | footer legal/meta text |
+| Social icon | `#ccc` | 1 | `.footer-14398 .links`/social icon colour |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Roboto` + Bootstrap 4 stack | 7 `font-family` declarations name Roboto |
+| Headings | `Roboto` 500/700 | `.footer-14398 h3` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | none — the sheet declares no `border-radius` at all (square footer) |
+| Layout | single black footer band: 4-column link grid, logo line, social row |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Footer`
+
+Reference bands: Footer #4 -> Shop -> Press -> About.
+
+### Delta vs shipped app
+
+- `apps/groundwork` matches the reference exactly: `--color-footer-bg #000000`, `--color-footer-heading #ffffff`, `--color-footer-text #777777`, `--color-footer-link #999999`, `--color-footer-social #cccccc`.
+- This spec was flagged `hex_values` by `scripts/verify-spec-tokens.py` only because it spelled its tokens in 3-digit shorthand (`#000`, `#777`, `#fff`); the verifier's hex rule was 6-digit-only and has since been widened to 3–8 digits. The 6-digit measurements added above (`#007bff`, `#0056b3`, `#f8f9fa`, `#dae0e5`, `#212529`) are from the same sheet.
+
 ## Requirements
 
 ### Requirement: Footer renders with black background

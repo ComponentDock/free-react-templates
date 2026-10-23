@@ -88,3 +88,17 @@
 --color-footer-social-hover: #ffffff;
 --color-footer-separator: rgba(255, 255, 255, 0.2);
 ```
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/bft/bootstrap-footer-04/ — HTTP 200 on 2026-10-23; measured `css/style.css` (8,306 bytes). Title served: "Footer 04".
+
+- Hex census: `#fff` 5, `#000` 1, `#777` 1, `#007bff` 1, `#0056b3` 1, `#f8f9fa` 1, `#dae0e5` 1, `#212529` 1, `#999` 1, `#ccc` 1 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Roboto` + Bootstrap 4 stack; Headings: `Roboto` 500/700.
+- Radii: none — the sheet declares no `border-radius` at all (square footer).
+- Section order (shipped): `Footer`.
+
+### Deltas measured against the shipped app
+
+- `apps/groundwork` matches the reference exactly: `--color-footer-bg #000000`, `--color-footer-heading #ffffff`, `--color-footer-text #777777`, `--color-footer-link #999999`, `--color-footer-social #cccccc`.
+- This spec was flagged `hex_values` by `scripts/verify-spec-tokens.py` only because it spelled its tokens in 3-digit shorthand (`#000`, `#777`, `#fff`); the verifier's hex rule was 6-digit-only and has since been widened to 3–8 digits. The 6-digit measurements added above (`#007bff`, `#0056b3`, `#f8f9fa`, `#dae0e5`, `#212529`) are from the same sheet.

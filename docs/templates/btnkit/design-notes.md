@@ -99,3 +99,17 @@ Bands marked *anchors only* have no dedicated requirement block in the spec; hol
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/btnkit/public/CNAME` = `btnkit.free.componentdock.com`
   and the package `homepage` = `https://btnkit.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/bb/bootstrap-buttons-13/ — HTTP 200 on 2026-10-23; measured `css/style.css` (26,074 bytes). Title served: "Button 03".
+
+- Hex census: `#007bff` 14, `#6c757d` 13, `#bd83ce` 10, `#3e64ff` 9, `#8105d8` 9, `#52de97` 9, `#343a40` 6, `#212529` 5, `#0056b3` 2 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Poppins` + Arial/Bootstrap 4 stack; Headings: `Poppins` 600/700; Icons: `Ionicons`.
+- Radii: `0.25rem` (2), `2px` (1), `100%` (2 — round radio/checkbox), `40px` (1 — social pill).
+- Section order (shipped): `Navbar -> Hero -> SolidButtons -> OutlineButtons -> ShapeVariants -> SizesAndStates -> IconButtons -> Playground -> Footer`.
+
+### Deltas measured against the shipped app
+
+- The spec's older token prose ("dark mode palette", `bg-slate-950` / `bg-indigo-600` / `bg-emerald-600` / `bg-rose-600`) is APP-derived, not reference-derived: `apps/btnkit/src/App.tsx` renders `bg-white dark:bg-gray-950` and its `@theme` carries the stock Bootstrap 5 palette (`#0d6efd`, `#198754`, `#dc3545`, `#ffc107`). The reference page is light and its own accents are `#bd83ce` / `#3e64ff` / `#8105d8` / `#52de97`.
+- None of those four reference accent families is tokenized in `apps/btnkit`; only the Bootstrap defaults are.

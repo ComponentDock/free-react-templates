@@ -65,6 +65,24 @@ Recreation of a demo design.
 ### Requirement: Hero
 """
 
+SHORT_HEX_SPEC = """# Template: Alpha (Demo)
+
+## Purpose
+
+Recreation of a demo design.
+
+## Design tokens
+
+| Token | Value |
+| --- | --- |
+| Footer field | `#000` |
+| Footer copy | `#777` |
+
+## Requirements
+
+### Requirement: Footer
+"""
+
 
 def build_tree(root: str, spec_text: str) -> None:
     os.makedirs(os.path.join(root, "scripts"), exist_ok=True)
@@ -115,6 +133,9 @@ def main() -> int:
         # prose-only spec: flagged for BOTH halves (no heading, and no hex anywhere)
         control("no token heading is flagged", NO_HEADING_SPEC, 1, ["token_heading", "hex_values"]),
         control("heading without hex is flagged", NO_HEX_SPEC, 1, ["hex_values"]),
+        # 3-digit CSS shorthand is a measurement too (groundwork's whole palette
+        # was `#000`/`#777`/`#fff` and the 6-digit rule mis-flagged it)
+        control("3-digit shorthand hex counts", SHORT_HEX_SPEC, 0, None),
     ]
     ok = all(results)
     print("GATE:", "pass" if ok else "fail")

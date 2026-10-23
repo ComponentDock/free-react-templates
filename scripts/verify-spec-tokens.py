@@ -10,7 +10,10 @@ Definition used here — a spec "carries tokens" when it has a level-2/3 heading
 matching  design token | design reference | visual design  (case-insensitive)
 AND at least one hex literal somewhere in the file. Both halves matter: the
 heading alone can hold prose ("dark mode palette"), the hex alone can sit in a
-scenario.
+scenario. Hex literals are accepted in CSS shorthand AND long form (3-8 digits):
+`#fff` is a measurement, so a footer spec whose whole palette is `#000`/`#777`/
+`#fff` is NOT a finding (2026-10-23: groundwork was flagged by the old 6-digit-only
+rule).
 
 Scope:
   shipped (default)  specs whose app folder exists in apps/  -> what implementers
@@ -39,7 +42,7 @@ APPS = os.path.join(ROOT, "apps")
 TEMPLATES = os.path.join(ROOT, "TEMPLATES.md")
 
 HEADING_RE = re.compile(r"^#{2,3} .*(design token|design reference|visual design)", re.M | re.I)
-HEX_RE = re.compile(r"#[0-9a-fA-F]{6}\b")
+HEX_RE = re.compile(r"#[0-9a-fA-F]{3,8}\b")
 SPEC_DIR_RE = re.compile(r"^template-(.+)$")
 
 

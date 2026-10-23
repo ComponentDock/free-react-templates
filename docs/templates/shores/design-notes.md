@@ -109,3 +109,19 @@ The template SHALL display a 4-column footer with mission, quick links, gallery,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/shores/public/CNAME` = `shores.free.componentdock.com`
   and the package `homepage` = `https://shores.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/seelife/ — HTTP 200 on 2026-10-23; measured `css/style.css` (66,116 bytes). Title served: "Seelife Charity".
+
+- Hex census: `#60bc0f` 44, `#222222` 33, `#f8b600` 19, `#f9f9ff` 17, `#777777` 13, `#4cd3e3` 11, `#f4e700` 10, `#38a4ff` 9, `#fdbb00` 7, `#f44a40` 6 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Roboto`; Headings: `Poppins`.
+- Radii: `0px` (15 — square buttons), `3px` (8), `8px` (6), `20px` (5), `8.5px` (5), `50%` (4).
+- Section order (shipped): `Navbar -> Hero -> Causes -> About -> FeaturedCauses -> Events -> Team -> CtaBanner -> Blog -> Newsletter -> Footer`.
+
+### Deltas measured against the shipped app
+
+- The app's `--color-brand #60bc0f` matches the reference (44 occurrences).
+- The reference's PRIMARY CTA is gold `#f8b600` (19 occurrences, `.genric-btn.primary`); the app tokens `#fdbb00` instead (7 occurrences, a secondary literal).
+- Icon accents `#4cd3e3`, `#38a4ff`, `#f4e700` and `#f44a40` are untokenized in `apps/shores` — the app keeps only green + gold.
+- App adds `CtaBanner` and `Newsletter` bands absent from the demo's section list.

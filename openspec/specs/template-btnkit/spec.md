@@ -16,6 +16,53 @@ An UI Component Showcase & Buttons Gallery template with navigation header, hero
 - **Button Styles & Radii:** Rounded-lg, pill shaped (`rounded-full`), glowing neon effects, hover transitions (`transition-all duration-300 hover:scale-105`), subtle shadows and borders
 - **Section Backgrounds:** Deep slate gradients and dark charcoal cards (`bg-slate-900/80 border border-slate-800`)
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Bootstrap Buttons 13** — https://colorlib.com/wp/template/bootstrap-buttons-13/
+- **Preview**: https://preview.colorlib.com/theme/bb/bootstrap-buttons-13/ — HTTP 200 on 2026-10-23; measured `css/style.css` (26,074 bytes). Title served: "Button 03".
+- **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Primary blue | `#007bff` | 14 | `a` link colour and `.cl-btn-primary` fill/border |
+| Secondary slate | `#6c757d` | 13 | `.cl-btn-secondary` fill and border |
+| Orchid accent | `#bd83ce` | 10 | `.cl-btn.cl-btn-secondary` — the page's own secondary override |
+| Indigo accent | `#3e64ff` | 9 | `a` and `.cl-btn.cl-btn-primary` page-level override |
+| Violet accent | `#8105d8` | 9 | `.cl-btn.btn-tertiary` fill and border |
+| Mint accent | `#52de97` | 9 | `.cl-btn.btn-quarternary` fill |
+| Charcoal | `#343a40` | 6 | dark checkbox/radio checked state |
+| Ink | `#212529` | 5 | `body` text |
+| Primary hover | `#0056b3` | 2 | `.cl-btn-primary` hover/disabled variant |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Poppins` + Arial/Bootstrap 4 stack | 8 `font-family` declarations name Poppins in the sheet |
+| Headings | `Poppins` 600/700 | section headings (`Button #03`, `Social Buttons`) inherit the same face |
+| Icons | `Ionicons` | `@font-face` icon face used by the social/icon button rows |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `0.25rem` (2), `2px` (1), `100%` (2 — round radio/checkbox), `40px` (1 — social pill) |
+| Buttons | solid + outline pair per variant; the social row is a 40px pill |
+| Layout | one full-width `.ftco-section` stacking button rows, no hero/photo bands |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> SolidButtons -> OutlineButtons -> ShapeVariants -> SizesAndStates -> IconButtons -> Playground -> Footer`
+
+Reference bands: Button #03 -> Social Buttons -> Dropdown Buttons -> Group Buttons -> Checkboxes -> Radios Buttons.
+
+### Delta vs shipped app
+
+- The spec's older token prose ("dark mode palette", `bg-slate-950` / `bg-indigo-600` / `bg-emerald-600` / `bg-rose-600`) is APP-derived, not reference-derived: `apps/btnkit/src/App.tsx` renders `bg-white dark:bg-gray-950` and its `@theme` carries the stock Bootstrap 5 palette (`#0d6efd`, `#198754`, `#dc3545`, `#ffc107`). The reference page is light and its own accents are `#bd83ce` / `#3e64ff` / `#8105d8` / `#52de97`.
+- None of those four reference accent families is tokenized in `apps/btnkit`; only the Bootstrap defaults are.
+
 ## Requirements
 
 ### 1. Navigation Header

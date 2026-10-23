@@ -18,6 +18,54 @@ Design tokens captured from the original:
 
 Verdure lives in `apps/verdure` and uses shared components from `packages/ui`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Hardenero** — https://colorlib.com/wp/template/hardenero/
+- **Preview**: https://preview.colorlib.com/theme/hardenero/ — HTTP 200 on 2026-10-23; measured `css/style.min.css`, `css/garden.min.css` (277,881 bytes across 2 sheets). Title served: "Professional Gardeners & Landscapers | Hardenero".
+- **Path note**: The demo is a REBUILT build (`?v=3.0.0`, `/kit/` partials, `Hardenero 3.0.0` banner): it ships Bootstrap 5.3.8 with the theme's own `--garden-*` variables. Treat any mismatch with the shipped app as DRIFT of a rebuilt demo, not as a prep error.
+- **Measured how**: hex-literal census of `css/style.min.css`, `css/garden.min.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Garden green | `#6b942a` | 79 | `a,button` colour, section accents, link hovers |
+| Deep green | `#42601b` | 16 | `--garden-green` custom property, reused as the `.form-control:focus` border |
+| Olive ink | `#263b1c` | 3 | labels and `.ftco-navbar-light.scrolled` links |
+| Garden ink | `#17310f` | 2 | `--garden-ink` — headings on light bands |
+| Garden text | `#4c5547` | 2 | `--garden-text` — body copy |
+| Garden orange | `#a34812` | 5 | `--garden-orange` — `:focus-visible` outline and accent |
+| Bootstrap primary | `#0d6efd` | 35 | stock BS5 `--bs-primary` inside the vendor block (not the design) |
+| Surface | `#fff` | 163 | cards, nav, content bands |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Poppins` | 12 `font-family` declarations across the two theme sheets |
+| Headings | `Poppins` 600/700 | hero + section titles |
+| Fallback | Bootstrap 5 system stack | `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto…` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `0` (25), `var(--bs-border-radius)` (24), `50%` (13), `4px` (11), `5px` (8) |
+| Rhythm | `.ftco-section` bands, `bg-light` alternation, one full-bleed video band |
+| Accent rule | `--garden-orange` 3px `:focus-visible` outline |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`TopBar -> Navbar -> Hero -> About -> Stats -> Services -> Projects -> Assessment -> Testimonials -> QuoteForm -> Blog -> Pricing -> Footer`
+
+Reference bands: hero-wrap -> ftco-about -> ftco-counter -> bg-light -> services -> video-image -> bg-light x3 -> ftco-intro -> ftco-footer.
+
+### Delta vs shipped app
+
+- `apps/verdure` predates the rebuild: its scale is anchored on `#57b846` / `#f6a623`, and neither literal appears in the rebuilt sheet (**0 hits** for both). The rebuilt brand green is `#6b942a` (79 occurrences).
+- The rebuilt sheet's secondary families — `#42601b`, `#263b1c`, `#17310f`, `#4c5547`, `#a34812` — are absent from the app's `@theme`, which carries an invented 50–900 ramp instead.
+- Section order still matches 1:1; this is a palette/shape drift on a rebuilt demo, reported for the implementer stream.
+
 ## Requirements
 
 ### Requirement: Top bar

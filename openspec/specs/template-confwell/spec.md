@@ -8,6 +8,53 @@
 - **Category**: Forms / Multi-step Event Registration Wizard
 - **Description**: A split-screen 3-step event registration wizard. Left panel shows a full-height event/conference image. Right panel is a dark textured background area with white text and bottom-border inputs. Steps: (1) Event Information (display-only), (2) Set The Event (price, people count, contact inputs), (3) Request from You (special request, staff questions, terms checkbox). Uses Arvo font, white-on-dark aesthetic, minimal outlined buttons.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Colorlib Wizard 3** — https://colorlib.com/wp/template/colorlib-wizard-3/
+- **Preview**: https://colorlib.com/etc/bwiz/colorlib-wizard-3/index.html — HTTP 200 on 2026-10-23; measured `css/style.css` (8,327 bytes). Title served: "FormWizard_v3".
+- **Path note**: This slug has no `/theme/` demo (`https://preview.colorlib.com/theme/colorlib-wizard-3/` is 404); the live page is the catalog's own `url` for `colorlib-wizard-3` in `assets/js/catalog-products-*.js`.
+- **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Panel ink | `#fff` | 8 | body copy and field text over the photo panel |
+| Field rules | `#ccc` | 5 | 1px `#ccc` field rules and progress arrows |
+| Muted label | `#999` | 1 | inactive label colour |
+| Body fallback | `#333` | 1 | `#333` text fallback |
+| Divider | `#e5e5e5` | 1 | social link hover rule |
+| Checkmark violet | `#49276c` | 1 | `.checkbox .checkmark` check glyph (the checked box itself fills `#ccc`) — the only chromatic accent in the sheet |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Arvo-Regular` (`@font-face`) | 2 declarations; `Times New Roman` fallback |
+| Icons | `Material-Design-Iconic-Font` | the sheet's only other `@font-face` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `50%` (1 — round checkbox/radio mark) |
+| Fields | bottom-border only, `1px solid rgba(255,255,255,.4)` |
+| Buttons | outlined: `1px solid #fff`, transparent background |
+| Layout | split screen — `.image-holder` 65.78% photo panel left, `.form-content` 34.22% column right, vertically centred |
+| Steps | 3 step arrows (`.steps`) above the fieldset, `current-info`/`number` hidden |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Wizard (StepEventInfo -> StepSetEvent -> StepRequest) -> Footer`
+
+Reference bands: Event Information -> Set The Event -> Request from You (3 wizard steps).
+
+### Delta vs shipped app
+
+- `apps/confwell` renders `bg-slate-900` as a flat panel; the reference's form column sits on a photo (`images/form-wizard-bg.jpg`) — the solid `#1e293b`/`#0f172a` in `@theme` is the app's stand-in, not a reference colour.
+- The reference's only accent, `#49276c` (checkbox mark), is not tokenized in `apps/confwell`.
+- `Arvo` (body face) and the outlined `#fff` buttons do match the reference.
+
 ## Requirements
 
 ### Requirement: Split-screen layout renders on page load

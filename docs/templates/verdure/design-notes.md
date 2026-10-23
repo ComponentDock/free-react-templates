@@ -108,3 +108,18 @@ The system SHALL render a dark background footer with brand info, navigation, an
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/verdure/public/CNAME` = `verdure.free.componentdock.com`
   and the package `homepage` = `https://verdure.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/hardenero/ — HTTP 200 on 2026-10-23; measured `css/style.min.css`, `css/garden.min.css` (277,881 bytes across 2 sheets). Title served: "Professional Gardeners & Landscapers | Hardenero".
+
+- Hex census: `#fff` 163, `#6b942a` 79, `#0d6efd` 35, `#42601b` 16, `#a34812` 5, `#263b1c` 3, `#17310f` 2, `#4c5547` 2 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Poppins`; Headings: `Poppins` 600/700.
+- Radii: `0` (25), `var(--bs-border-radius)` (24), `50%` (13), `4px` (11), `5px` (8).
+- Section order (shipped): `TopBar -> Navbar -> Hero -> About -> Stats -> Services -> Projects -> Assessment -> Testimonials -> QuoteForm -> Blog -> Pricing -> Footer`.
+
+### Deltas measured against the shipped app
+
+- `apps/verdure` predates the rebuild: its scale is anchored on `#57b846` / `#f6a623`, and neither literal appears in the rebuilt sheet (**0 hits** for both). The rebuilt brand green is `#6b942a` (79 occurrences).
+- The rebuilt sheet's secondary families — `#42601b`, `#263b1c`, `#17310f`, `#4c5547`, `#a34812` — are absent from the app's `@theme`, which carries an invented 50–900 ramp instead.
+- Section order still matches 1:1; this is a palette/shape drift on a rebuilt demo, reported for the implementer stream.

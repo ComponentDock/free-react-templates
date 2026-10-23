@@ -96,3 +96,18 @@ The footer SHALL contain an "About Agency" section, "Navigation Links", "Newslet
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/expedio/public/CNAME` = `expedio.free.componentdock.com`
   and the package `homepage` = `https://expedio.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/safario/ — HTTP 200 on 2026-10-23; measured `css/style.css` (41,540 bytes). Title served: "Safario Travel - Home".
+
+- Hex census: `#6059f6` 25, `#999999` 17, `#888888` 15, `#f0e9ff` 13, `#2a2a2a` 7, `#f8f8ff` 3, `#ebebff` 1, `#7676ff` 1, `#d1cff4` 1 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Roboto`; Headings: `Roboto Condensed`.
+- Radii: theme `5px` (4 — form controls), `12px` (2), `20px` (1), `50%` (4), plus the Bootstrap `.25rem` (20).
+- Section order (shipped): `Navbar -> Hero -> Services -> About -> Tours -> Testimonials -> SearchPackage -> Blog -> Footer`.
+
+### Deltas measured against the shipped app
+
+- The app's brand violet matches the reference exactly (`--color-primary-500 #6059f6`, 25 occurrences).
+- `#f0e9ff` (the reference's field fill) and `#999999` (search placeholders) are not tokenized in `apps/expedio`, which carries `--color-mist #f8f8ff` and `--color-smoke #888888` instead.
+- Section order matches; the app adds the `SearchPackage` band the reference keeps inside the search bar.

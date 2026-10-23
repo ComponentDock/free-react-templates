@@ -8,6 +8,56 @@
 
 A charity/nonprofit landing page template with hero banner, donation causes, about section, featured causes with progress tracking, events with countdown timers, team showcase, CTA, blog, newsletter, and 4-column footer. Design tokens extracted from the ColorLib Seelife CSS: green #60bc0f primary, yellow #fdbb00 accent, Poppins headings, Roboto body.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Seelife** — https://colorlib.com/wp/template/seelife/
+- **Preview**: https://preview.colorlib.com/theme/seelife/ — HTTP 200 on 2026-10-23; measured `css/style.css` (66,116 bytes). Title served: "Seelife Charity".
+- **Path note**: `theme/seelife/css/style.css` (66,116 B) shares its basename with `vendors/linericon/style.css`; census is of the page's theme sheet only.
+- **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand green | `#60bc0f` | 44 | donate buttons, section titles, links, button hover borders |
+| Ink | `#222222` | 33 | `h1`–`h6`, nav links |
+| Gold CTA | `#f8b600` | 19 | `.genric-btn.primary` fill — the reference's primary button |
+| Pale band | `#f9f9ff` | 17 | banner copy and tinted sections |
+| Muted | `#777777` | 13 | body copy, team socials |
+| Cyan | `#4cd3e3` | 11 | icon circles |
+| Amber | `#fdbb00` | 7 | secondary accents and prices |
+| Highlight yellow | `#f4e700` | 10 | highlight chips |
+| Blue | `#38a4ff` | 9 | secondary icon fill |
+| Accent red | `#f44a40` | 6 | counter/emphasis accent |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Roboto` | 7 declarations incl. `.genric-btn` |
+| Headings | `Poppins` | 3 declarations on titles |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `0px` (15 — square buttons), `3px` (8), `8px` (6), `20px` (5), `8.5px` (5), `50%` (4) |
+| Rhythm | photo banner -> white `section_gap` bands -> tinted footer |
+| Buttons | square `genric-btn` with `f8b600` primary fill |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> Causes -> About -> FeaturedCauses -> Events -> Team -> CtaBanner -> Blog -> Newsletter -> Footer`
+
+Reference bands: header -> home_banner -> causes -> about -> features_causes -> event -> team -> story_area.
+
+### Delta vs shipped app
+
+- The app's `--color-brand #60bc0f` matches the reference (44 occurrences).
+- The reference's PRIMARY CTA is gold `#f8b600` (19 occurrences, `.genric-btn.primary`); the app tokens `#fdbb00` instead (7 occurrences, a secondary literal).
+- Icon accents `#4cd3e3`, `#38a4ff`, `#f4e700` and `#f44a40` are untokenized in `apps/shores` — the app keeps only green + gold.
+- App adds `CtaBanner` and `Newsletter` bands absent from the demo's section list.
+
 ## Requirements
 
 ### Requirement: Navbar

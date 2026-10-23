@@ -85,3 +85,18 @@ The template SHALL render a footer with the brand name, a description, social li
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/haven/public/CNAME` = `haven.free.componentdock.com`
   and the package `homepage` = `https://haven.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/sona/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (157,454 bytes). Title served: "Sona | Luxury Hotel and Room Booking".
+
+- Hex census: `#19191a` 60, `#dfa974` 45, `#707079` 28, `#000` 27, `#aaaab3` 14, `#e5e5e5` 10, `#ebebeb` 10 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Cabin`; Headings: `Lora` (serif); Icons: `Font Awesome 7 Brands`.
+- Radii: `2px` (15), `50%` (10), `5px` (6).
+- Section order (shipped): `Navbar -> Hero -> About -> Services -> Rooms -> Testimonials -> Footer`.
+
+### Deltas measured against the shipped app
+
+- Brand gold `#dfa974` and ink `#19191a` match the app's `@theme` 1:1.
+- `#707079`, `#aaaab3`, `#e5e5e5` and `#ebebeb` are not tokenized in `apps/haven` — the app carries `--color-body #6b6b6b`, a literal with a single occurrence in the sheet.
+- The app drops the reference's Blog band (7 sections rendered vs 8 in the demo).

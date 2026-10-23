@@ -32,6 +32,52 @@ Design tokens captured from the original:
 
 Sprout lives in `apps/sprout` and uses shared components from `packages/ui`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Spring** — https://colorlib.com/wp/template/spring/
+- **Preview**: https://preview.colorlib.com/theme/spring/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (194,600 bytes). Title served: "Spring Church | Helping Grow Your Faith".
+- **Path note**: Rebuilt build (`?v=3.0.1`, `vendor/` kit partials, Bootstrap 5.3.8) — drift on this demo is not a prep error.
+- **Measured how**: hex-literal census of `css/style.min.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand sand | `#c7b198` | 42 | `.text-primary!important`, nav hover, buttons, links |
+| Dark CTA | `#171717` | 22 | `.cta-colored` nav button and footer band |
+| Body grey | `#6c757d` | 19 | body copy and counters |
+| Paper | `#f8f9fa` | 18 | `.bg-light` bands |
+| Bootstrap primary | `#0d6efd` | 28 | stock BS5 `--bs-primary` in the vendor block (not the design) |
+| Ink | `#212529` | 18 | headings |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Headings | `Raleway` | 15 declarations |
+| Body | `Poppins` | 9 declarations |
+| Verse | `Crimson Text` (serif) | 8 declarations — the daily-verse block |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `50%` (15), `var(--bs-border-radius)` (13), `4px` (4) |
+| Rhythm | `ftco-intro` -> `ftco-daily-verse` -> alternating `bg-light` sections -> dark footer |
+| Accent rule | sand `#c7b198` text-primary overrides on headings and hover states |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> IntroBanner -> DailyVerse -> ChurchServices -> Sermon -> Counter -> Testimony -> Events -> RecentSermons -> Blog -> Gallery -> Newsletter -> Footer`
+
+Reference bands: ftco-intro -> ftco-daily-verse -> ftco-section -> bg-light -> ftco-counter -> testimony -> sermon -> bg-light -> gallery -> newsletter -> footer.
+
+### Delta vs shipped app
+
+- `apps/sprout` matches the reference's two brand anchors (`#c7b198`, `#171717`) and all three faces (Poppins / Raleway / Crimson Text).
+- The app's `--color-counter-bg #6c757d` reuses the Bootstrap body grey; in the reference sheet `#171717` (22 occurrences) belongs to the `.cta-colored` nav button and the footer band, not to `.ftco-counter` (which only sets background position).
+- `#0d6efd` (28 occurrences) is Bootstrap 5's default primary carried through the vendor block, not a Spring design token.
+
 ## Requirements
 
 ### Requirement: Navbar

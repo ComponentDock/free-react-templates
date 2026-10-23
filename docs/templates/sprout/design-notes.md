@@ -111,3 +111,18 @@ The system SHALL render a dark footer with multi-column layout including about t
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/sprout/public/CNAME` = `sprout.free.componentdock.com`
   and the package `homepage` = `https://sprout.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/spring/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (194,600 bytes). Title served: "Spring Church | Helping Grow Your Faith".
+
+- Hex census: `#c7b198` 42, `#0d6efd` 28, `#171717` 22, `#6c757d` 19, `#f8f9fa` 18, `#212529` 18 (count = literal occurrences in the sheet).
+- Typefaces: Headings: `Raleway`; Body: `Poppins`; Verse: `Crimson Text` (serif).
+- Radii: `50%` (15), `var(--bs-border-radius)` (13), `4px` (4).
+- Section order (shipped): `Navbar -> Hero -> IntroBanner -> DailyVerse -> ChurchServices -> Sermon -> Counter -> Testimony -> Events -> RecentSermons -> Blog -> Gallery -> Newsletter -> Footer`.
+
+### Deltas measured against the shipped app
+
+- `apps/sprout` matches the reference's two brand anchors (`#c7b198`, `#171717`) and all three faces (Poppins / Raleway / Crimson Text).
+- The app's `--color-counter-bg #6c757d` reuses the Bootstrap body grey; in the reference sheet `#171717` (22 occurrences) belongs to the `.cta-colored` nav button and the footer band, not to `.ftco-counter` (which only sets background position).
+- `#0d6efd` (28 occurrences) is Bootstrap 5's default primary carried through the vendor block, not a Spring design token.

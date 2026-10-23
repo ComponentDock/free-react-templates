@@ -12,6 +12,53 @@ preview at [preview.colorlib.com/theme/hvac/](https://preview.colorlib.com/theme
 **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript.
 **Name:** `aeroworks` (apps/aeroworks, @free-react-templates/aeroworks).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **HVAC** — https://colorlib.com/wp/template/hvac/
+- **Preview**: https://preview.colorlib.com/theme/hvac/ — HTTP 200 on 2026-10-23; measured `css/style.css` (58,826 bytes). Title served: "HVAC | Template".
+- **Path note**: The page at `theme/hvac/` serves a CAR-DEALERSHIP design (hero "Find Your Dream Car", vehicle listings) under the title `HVAC | Template`; the shipped app follows what the demo actually renders.
+- **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand red | `#db2d2e` | 35 | primary CTA fills and section-title accents |
+| Header bar | `#323232` | 21 | top utility bar and dark bands |
+| Ink | `#353535` | 54 | headings and body text |
+| Body grey | `#727171` | 34 | paragraph copy |
+| Muted | `#8d8d8d` | 23 | meta labels, small print |
+| Rule | `#ebebeb` | 14 | borders and dividers |
+| Section grey | `#f7f7f7` | 6 | alternating light band |
+| Surface | `#ffffff` | 62 | cards, nav, content |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Lato` + `sans-serif` | 3 `font-family:"Lato", sans-serif` declarations |
+| Icons | `FontAwesome` | icon face in the same sheet |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `2px` (28), `50%` (14), `.25rem` (6), `6px` (6), `1px` (5) |
+| Rhythm | photo hero (`set-bg`) -> white `.spad` sections -> photo footer |
+| Buttons | 2px-radius solid red CTAs, white-on-red |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Header -> Hero -> Services -> Feature -> CarListings -> ChooseUs -> LatestNews -> Footer`
+
+Reference bands: header -> hero -> services -> feature -> car -> chooseus -> latest -> footer (1:1).
+
+### Delta vs shipped app
+
+- `apps/aeroworks` tokens match the reference: `--color-primary-500 #db2d2e`, `--color-header-bar #323232`, `--color-text-dark #353535`, `--color-section-light #f7f7f7`, `--color-border #ebebeb`.
+- The app's 50–400 tints (`#fdf2f2` … `#ed6b6c`) and 600–900 shades are derived, not measured — the sheet carries no tint ramp: `#db2d2e` plus one darker hover `#cc1111`.
+- Fonts match (`Lato`); section order matches 1:1.
+
 ## Requirements
 
 ### Requirement: Header Navigation

@@ -12,6 +12,52 @@ Tailwind CSS 4, and TypeScript.
 Design tokens: Lora (serif headings) + Cabin (sans-serif body), warm gold
 brand color #dfa974, dark heading text #19191a, muted body text #6b6b6b.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Sona** — https://colorlib.com/wp/template/sona/
+- **Preview**: https://preview.colorlib.com/theme/sona/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (157,454 bytes). Title served: "Sona | Luxury Hotel and Room Booking".
+- **Measured how**: hex-literal census of `css/style.min.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Sand gold | `#dfa974` | 45 | section eyebrows, `.primary-btn:after` rule, hover fills |
+| Ink | `#19191a` | 60 | headings, nav text, booking form |
+| Body grey | `#707079` | 28 | body copy and form labels |
+| Footer grey | `#aaaab3` | 14 | footer copy and contact list |
+| Hairline | `#e5e5e5` | 10 | `.top-nav` background and dividers |
+| Field border | `#ebebeb` | 10 | input/select borders |
+| Black | `#000` | 27 | hero overlay and deep bands |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Cabin` | 15 declarations |
+| Headings | `Lora` (serif) | 5 declarations on display headings |
+| Icons | `Font Awesome 7 Brands` | icon face in the same sheet |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `2px` (15), `50%` (10), `5px` (6) |
+| Rhythm | full-bleed photo hero -> white/grey `spad` bands -> dark footer |
+| Buttons | `.primary-btn` with a gold `:after` underline |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> About -> Services -> Rooms -> Testimonials -> Footer`
+
+Reference bands: header -> hero -> aboutus -> services -> hp-room -> testimonial -> blog -> footer.
+
+### Delta vs shipped app
+
+- Brand gold `#dfa974` and ink `#19191a` match the app's `@theme` 1:1.
+- `#707079`, `#aaaab3`, `#e5e5e5` and `#ebebeb` are not tokenized in `apps/haven` — the app carries `--color-body #6b6b6b`, a literal with a single occurrence in the sheet.
+- The app drops the reference's Blog band (7 sections rendered vs 8 in the demo).
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and booking CTA

@@ -66,3 +66,18 @@ The system SHALL render a centered card with a blue-purple (#39459b) background,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/regflow/public/CNAME` = `regflow.free.componentdock.com`
   and the package `homepage` = `https://regflow.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://colorlib.com/etc/regform/colorlib-regform-23/ — HTTP 200 on 2026-10-23; measured `css/style.css` (6,461 bytes). Title served: "RegistrationForm_v7 by Colorlib".
+
+- Hex census: `#fff` 6, `#39459b` 2, `#0d99d7` 2, `#00ade6` 2, `#2098d1` 1 (count = literal occurrences in the sheet).
+- Typefaces: Body: `Montserrat`; Labels: `Montserrat` semibold.
+- Radii: none — square card with a 10px cyan border.
+- Section order (shipped): `FormWrapper -> FormField (name, mail, message) -> SubmitButton -> Footer`.
+
+### Deltas measured against the shipped app
+
+- `apps/regflow` matches the reference exactly: `--color-card #39459b`, `--color-card-border #0d99d7`, `--color-label #00ade6`, `--color-btn-hover #2098d1`, `Montserrat`.
+- The reference's square 10px-border card shape is reproduced (no `border-radius` anywhere in the sheet).
+- No drift to report for this prep.

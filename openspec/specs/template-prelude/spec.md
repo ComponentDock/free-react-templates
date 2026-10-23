@@ -20,6 +20,56 @@ Design tokens:
 
 Prelude lives in `apps/prelude` and uses shared components from `packages/ui`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **01 Comming Soon** — https://colorlib.com/wp/template/01-comming-soon/
+- **Preview**: https://colorlib.com/etc/cs/01-comming-soon.html — HTTP 200 on 2026-10-23; measured `01-comming-soon/css/style.css` (14,814 bytes). Title served: "TITLE".
+- **Path note**: No `/theme/` demo exists (`https://preview.colorlib.com/theme/01-comming-soon/` is 404). The live page is the catalog entry's own `url` for `01-comming-soon` in `assets/js/catalog-products-*.js`; it still carries the placeholder `<title>TITLE</title>`.
+- **Measured how**: hex-literal census of `01-comming-soon/css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Body ink | `#292b2c` | 1 | `body` colour |
+| Link blue | `#0275d8` | 1 | `a` colour |
+| Link hover | `#014c8c` | 1 | `a:hover`/`a:focus` |
+| Hover accent | `#e45f74` | 1 | shared `:hover` colour for `a` and `button` |
+| Facebook | `#2a61d6` | 2 | social icon stroke on `.footer-icons` |
+| Twitter | `#3aa4f8` | 2 | social icon stroke |
+| Google+ | `#f43846` | 2 | social icon stroke |
+| Instagram | `#8f614a` | 2 | social icon stroke |
+| Pinterest | `#e1c013` | 2 | social icon stroke |
+| Field grey | `#f1f2f3` | 1 | email input fill |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Open Sans` | 4 declarations |
+| Display | `Poppins` | 4 declarations (`.title`) |
+| Fallback | Bootstrap 4 system stack | `-apple-system, system-ui, BlinkMacSystemFont…` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | `40px` (2 — email input pill, icon circles), `0 40px 40px 0` (1 — submit button right cap) |
+| Layout | 50/50 split: `.left-section` copy column left, `.right-section` photo panel right; `.left-section` centres its content with `display-table` |
+| Form | single email input + `NOTIFY US` button docked to its right edge as one 40px pill |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`SplitHero -> Footer`
+
+Reference bands: left-section (under-construction copy, countdown, email pill, social icons) -> right-section (photo).
+
+### Delta vs shipped app
+
+- The app is a single split hero + footer, matching the reference's two-panel layout.
+- The reference's only chromatic UI colour is the `#e45f74` hover; its other literals are social-brand icon strokes and Bootstrap link defaults. The app declares no hex tokens at all (`@theme` has only `--font-sans`).
+- The demo page has a `ClassyCountdown` block (days/hours/minutes/seconds) that the shipped app does not render.
+
 ## Requirements
 
 ### Requirement: Split-screen hero layout

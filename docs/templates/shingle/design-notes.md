@@ -103,3 +103,18 @@ The system SHALL render a multi-column footer with brand, services list, busines
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/shingle/public/CNAME` = `shingle.free.componentdock.com`
   and the package `homepage` = `https://shingle.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Evidence: https://preview.colorlib.com/theme/roofing/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (197,792 bytes). Title served: "Roofing | Roof Installation, Repair and Solar-Ready Roofs".
+
+- Hex census: `#d9ba2b` 83, `#000000` 48, `#6c757d` 20, `#212529` 18, `#f8f9fa` 16 (count = literal occurrences in the sheet).
+- Typefaces: Body + headings: `Poppins`; Icons: `Font Awesome 7 Brands`.
+- Radii: `50%` (20), `var(--bs-border-radius)` (13), `4px` (11).
+- Section order (shipped): `Navbar -> Hero -> About -> Stats -> Services -> Projects -> Testimonials -> Blog -> Pricing -> Footer`.
+
+### Deltas measured against the shipped app
+
+- The rebuilt sheet's primary is gold: `--bs-primary: #d9ba2b` and `--bs-link-color-rgb: 217, 186, 43` (83 literal occurrences). Stock `#007bff` has **0 hits**.
+- `apps/shingle` still carries `--color-brand #007bff` / `--color-brand-dark #0062cc` from the pre-rebuild design, with `#d9ba2b` demoted to a secondary `--color-gold`. Palette DRIFT on a rebuilt demo.
+- The rebuild also drops the classic photo hero the app models (`Hero`), so layout drift is expected as well as colour drift.

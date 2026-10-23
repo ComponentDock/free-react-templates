@@ -26,6 +26,50 @@ confirmation.
 Regflow lives in `apps/regflow` and uses shared components from `packages/ui`
 (Button, cn).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Colorlib Registration Form 23** — https://colorlib.com/wp/template/colorlib-regform-23/
+- **Preview**: https://colorlib.com/etc/regform/colorlib-regform-23/ — HTTP 200 on 2026-10-23; measured `css/style.css` (6,461 bytes). Title served: "RegistrationForm_v7 by Colorlib".
+- **Path note**: No `/theme/` demo; the live page is the catalog entry's `url` for `colorlib-regform-23`.
+- **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Card navy | `#39459b` | 2 | `.inner` / `.wrapper` field background |
+| Border cyan | `#0d99d7` | 2 | the 10px border on `.inner` and `.wrapper` |
+| Label cyan | `#00ade6` | 2 | `.cl-form-group span` floating label and `.cl-form-control` text |
+| Hover blue | `#2098d1` | 1 | `button:before` sweep fill |
+| Field text | `#fff` | 6 | input text on the navy card |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Montserrat` | `@font-face` regular / semibold / bold (3 + 3 declarations) |
+| Labels | `Montserrat` semibold | floating label spans |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | none — square card with a 10px cyan border |
+| Layout | single centred card on a photo background; `.inner` padding `77px 99px 87px` |
+| Fields | underlined inputs with floating labels and a hover sweep on submit |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`FormWrapper -> FormField (name, mail, message) -> SubmitButton -> Footer`
+
+Reference bands: Contact Us (single card: heading, 3 underlined fields, submit).
+
+### Delta vs shipped app
+
+- `apps/regflow` matches the reference exactly: `--color-card #39459b`, `--color-card-border #0d99d7`, `--color-label #00ade6`, `--color-btn-hover #2098d1`, `Montserrat`.
+- The reference's square 10px-border card shape is reproduced (no `border-radius` anywhere in the sheet).
+- No drift to report for this prep.
+
 ## Requirements
 
 ### Requirement: Form wrapper

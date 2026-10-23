@@ -20,6 +20,54 @@ Design tokens extracted from the original CSS:
 - Backgrounds: #f8f8ff (gray sections), #fff (white sections)
 - Buttons: #6059f6 bg, white text, sharp corners
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Safario** — https://colorlib.com/wp/template/safario/
+- **Preview**: https://preview.colorlib.com/theme/safario/ — HTTP 200 on 2026-10-23; measured `css/style.css` (41,540 bytes). Title served: "Safario Travel - Home".
+- **Path note**: `theme/safario/css/style.css` (41,540 B) shares its basename with `vendors/linericon/style.css`; the census below is of the page's own theme sheet only, not the vendor/icon sheets.
+- **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Violet brand | `#6059f6` | 25 | nav hover, links, buttons, section accents |
+| Mist fill | `#f0e9ff` | 13 | `.form-control` fill and `.widget_title::after` rule |
+| Ink | `#2a2a2a` | 7 | `h1`–`h6` |
+| Body grey | `#888888` | 15 | `body` copy, blog card meta |
+| Muted | `#999999` | 17 | search-form placeholders and labels |
+| Paper | `#f8f8ff` | 3 | page tint |
+| Cloud | `#ebebff` | 1 | band tint |
+| Gradient stop | `#7676ff` | 1 | lightest violet stop |
+| Gradient stop | `#d1cff4` | 1 | muted violet stop |
+
+### Typography
+
+| Element | Family | Evidence |
+| ------- | ------ | -------- |
+| Body | `Roboto` | `body { font-family: "Roboto", sans-serif; font-size: 15px }` |
+| Headings | `Roboto Condensed` | one headings declaration |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radii | theme `5px` (4 — form controls), `12px` (2), `20px` (1), `50%` (4), plus the Bootstrap `.25rem` (20) |
+| Rhythm | `hero-banner.magic-ball` -> white sections -> `bg-gray` alternating bands |
+| Buttons | square-ish 5px controls, violet fills, `f0e9ff` fields |
+
+### Section order (shipped app, 1:1 with the reference)
+
+`Navbar -> Hero -> Services -> About -> Tours -> Testimonials -> SearchPackage -> Blog -> Footer`
+
+Reference bands: hero-banner -> services -> about (bg-gray) -> tours -> testimonials -> blog (bg-gray) -> footer.
+
+### Delta vs shipped app
+
+- The app's brand violet matches the reference exactly (`--color-primary-500 #6059f6`, 25 occurrences).
+- `#f0e9ff` (the reference's field fill) and `#999999` (search placeholders) are not tokenized in `apps/expedio`, which carries `--color-mist #f8f8ff` and `--color-smoke #888888` instead.
+- Section order matches; the app adds the `SearchPackage` band the reference keeps inside the search bar.
+
 ## Requirements
 
 ### Requirement: Navbar renders with brand and navigation
