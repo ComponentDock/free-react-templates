@@ -6,8 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Succor brand palette — recreated from the ColorLib "Aid" design (live
-     preview: https://preview.colorlib.com/theme/aid/): golden yellow
+  /* Succor brand palette — measured from the reference design
+     (css/style.css): golden yellow
      #ffb400 (navbar dot, link hover, "Join now" button, active service
      card). */
   --color-brand: #ffb400;

@@ -8,8 +8,8 @@ import { Milestones } from './components/Milestones'
 import { Cta } from './components/Cta'
 import { Footer } from './components/Footer'
 
-/* Stratus — single-page web hosting & cloud services landing (recreation of
-   the ColorLib "Cloud83" demo): header → hero → features → services →
+/* Stratus — single-page web hosting & cloud services landing (measured from
+   the reference design): header → hero → features → services →
    trust → milestones → CTA → footer. */
 
 export function App() {

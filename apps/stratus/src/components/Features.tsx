@@ -1,7 +1,7 @@
 import { Cloud, Globe, ShieldCheck, type LucideIcon } from 'lucide-react'
 import { FEATURES, type FeatureIcon } from '../data'
 
-/* Feature row recreated from the ColorLib "Cloud83" features: a white row of
+/* Feature row — measured from the reference design: a white row of
    three cards, each with a line icon, a bold heading, and a short
    description (Worldwide Support / Safe & Secure / Cloud Hosting). */
 

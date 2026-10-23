@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Synapse brand colors — sampled programmatically from the ColorLib
-     "Nexus" live stylesheet (css/style.css, 66KB): primary blue #3bacf0,
+  /* Synapse brand colors — sampled programmatically from the reference
+     stylesheet (css/style.css, 66KB): primary blue #3bacf0,
      cyan #62ddff, deep blue #4dabff, yellow accent #f8b600, dark #222222,
      light #f9f9ff. */
   --color-primary-50: #eef8fd;
@@ -26,7 +26,7 @@
   --color-paper: #f9f9ff;
 
   /* Heebo (display) + Roboto (body) via Google Fonts <link> in
-     index.html — the original fonts from the ColorLib stylesheet. */
+     index.html — the source font pairing from the reference stylesheet. */
   --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Heebo', ui-sans-serif, system-ui, sans-serif;
 }

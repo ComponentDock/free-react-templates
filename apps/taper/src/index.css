@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Taper brand palette — recreated from the ColorLib "Brber" design
+  /* Taper brand palette — measured from the reference design
      (assets/css/style.css): tan/gold #d19f68 accents, light section bg
      #f9f9ff, dark heading #1d2434, muted body text #999999/#7c7c7c. */
   --color-brand: #d19f68;

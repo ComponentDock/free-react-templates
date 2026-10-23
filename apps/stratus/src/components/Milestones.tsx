@@ -1,7 +1,7 @@
 import { Award, Globe, Server, Users, type LucideIcon } from 'lucide-react'
 import { MILESTONES, type MilestoneIcon } from '../data'
 
-/* Milestones band recreated from the ColorLib "Cloud83" milestones: a solid
+/* Milestones band — measured from the reference design: a solid
    slate-blue (#556080) strip with four stats, each an icon, a large number,
    and a label (31k Clients / 98k Domains / 14k Awards / 362 VPS). */
 

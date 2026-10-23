@@ -8,7 +8,7 @@ import {
   type ServiceIcon,
 } from '../data'
 
-/* Services section recreated from the ColorLib "Cloud83" services: a dark
+/* Services section — measured from the reference design: a dark
    image-backed band with the white "The only ones / Our Best Services"
    title, a central circular graphic, and six hosting offerings (3 left /
    3 right on desktop, stacked on mobile). */

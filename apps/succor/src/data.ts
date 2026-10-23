@@ -1,5 +1,5 @@
-/** Copy + content data for the Succor charity landing (recreation of ColorLib
-    "Aid"). Kept side-effect free so every entry is unit-testable. */
+/** Copy + content data for the Succor charity landing — measured from the
+    reference design. Kept side-effect free so every entry is unit-testable. */
 
 export interface NavLink {
   label: string
