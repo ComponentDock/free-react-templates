@@ -15,7 +15,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Dogger — Dog Care Template'
+    document.title = 'Barkly — Dog Care Template'
   }, [])
 
   return (

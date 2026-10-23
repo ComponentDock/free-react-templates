@@ -1,7 +1,7 @@
-# Dogger (Colorlib Dogger) — Tasks & Design Notes
+# Barkly (ColorLib Dogger) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main`. Implementation ships on
-> `feat/template-dogger`.
+> `feat/template-barkly`.
 
 ## Design notes (replication findings)
 
@@ -59,10 +59,11 @@
     `#000`; `.btn-dark` for submit.
   - Forms: 43px height, radius 5px, focus border `#a2c0be`.
   - Sections: 2.5em 0 (mobile) / 5em 0 (desktop); footer 4em/8em.
-- **Recreation name:** Dogger (kept — matches ColorLib name). App folder
-  `apps/dogger`, package `@free-react-templates/dogger`.
+- **Recreation name:** **Barkly** — the app first shipped as `dogger` (the
+  ColorLib source name, a rule-5 violation) and is renamed here. App folder
+  `apps/barkly`, package `@free-react-templates/barkly`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/dogger-<n>/<w>/<h>`); lucide-react icons (PawPrint,
+  (`picsum.photos/seed/barkly-<n>/<w>/<h>`); lucide-react icons (PawPrint,
   ChevronDown, Mail, MapPin, Phone, ArrowRight, HeartPulse, Stethoscope,
   Syringe, Wind, ShieldCheck, CalendarDays); brand social icons → inline SVG;
   Open Sans + Vollkorn via Google Fonts; repo-standard Navbar (dark-mode
@@ -72,16 +73,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-dogger/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-barkly/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/dogger` (copy the simplest existing app — e.g. Breed;
-      rename package to `@free-react-templates/dogger`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Validate spec: `npm run spec:validate`.
+- [x] Rename `apps/dogger` → `apps/barkly` (package
+      `@free-react-templates/barkly`).
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-dogger`, open PR (source template, preview URL,
+- [x] Push `feat/template-barkly`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -94,8 +95,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/dogger/` may name the source designer,
+- **Provenance ban.** No file under `apps/barkly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/dogger/public/CNAME` = `dogger.free.componentdock.com`
-  and the package `homepage` = `https://dogger.free.componentdock.com`.
+- **Deploy identity.** `apps/barkly/public/CNAME` = `barkly.free.componentdock.com`
+  and the package `homepage` = `https://barkly.free.componentdock.com`.

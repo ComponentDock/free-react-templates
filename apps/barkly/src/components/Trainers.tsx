@@ -1,7 +1,7 @@
 const trainers = [
-  { name: 'Jessica White', seed: 'dogger-trainer-1' },
-  { name: 'Valerie Elash', seed: 'dogger-trainer-2' },
-  { name: 'Alicia Jones', seed: 'dogger-trainer-3' },
+  { name: 'Jessica White', seed: 'barkly-trainer-1' },
+  { name: 'Valerie Elash', seed: 'barkly-trainer-2' },
+  { name: 'Alicia Jones', seed: 'barkly-trainer-3' },
 ] as const
 
 export function Trainers() {

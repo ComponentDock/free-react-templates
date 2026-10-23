@@ -6,7 +6,7 @@ describe('Welcome', () => {
   it('shows the welcome heading and the three feature rows', () => {
     render(<Welcome />)
 
-    expect(screen.getByRole('heading', { name: 'Welcome to Dogger Pet Care' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Welcome to Barkly Pet Care' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Love & Care' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Fearsome' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Beautiful' })).toBeInTheDocument()

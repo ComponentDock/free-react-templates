@@ -1,17 +1,22 @@
-# Template: Dogger (Dog Care Landing — Hero, Love & Care Rows, Trainers, Pricing, FAQ, Testimonials, Gallery, Blog, Services, Contact)
+# Template: Barkly (Dog Care Landing — Hero, Love & Care Rows, Trainers, Pricing, FAQ, Testimonials, Gallery, Blog, Services, Contact)
 
 ## Purpose
 
-Dogger is a single-page dog-care landing template in the free-react-templates
+Barkly is a single-page dog-care landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Dogger"
 website template design (see TEMPLATES.md), built under a different name with
 the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+**Naming (AGENTS.md rule 5):** the app first shipped as `apps/dogger` — the
+source template's own name, which rule 5 forbids. It is renamed to **Barkly**
+(sage-green dog care → "bark") in a `git mv` rename that keeps the history,
+the Surge deploy target becomes `barkly.free.componentdock.com`.
 
 The original is a clean, sage-green dog-care landing: a light hero with a dog
 illustration, a "Love & Care" alternating feature rows block, an about section,
 a trainers row on a brand-green background, a three-tier pricing table, an FAQ
 accordion, customer testimonials with green quote cards, a photo gallery, a
-blog row, six service cards, a contact form, and a dark footer. Dogger
+blog row, six service cards, a contact form, and a dark footer. Barkly
 recreates that structure section-for-section with matching layout, colors,
 typography, and content types (no ColorLib assets copied).
 
@@ -25,13 +30,14 @@ typography, and content types (no ColorLib assets copied).
   visual reference; the design below is reconstructed from the DOM structure
   and CSS tokens.
 - **Section order (1:1):**
-  1. Sticky navbar (`site-navbar js-sticky-header`): brand "dogger" + links
+  1. Sticky navbar (`site-navbar js-sticky-header`): brand "dogger" in the
+     reference (the recreation's wordmark is "barkly") + links
      Home, About, Trainers, Pricing, FAQ, Testimonials, Gallery, Blog,
      Services, Contact (active/hover = brand `#a2c0be`; sticky state white bg).
   2. Hero (`site-blocks-cover overflow-hidden bg-light`, full viewport height,
      min 600px): h1 "We Care For Your Dog" (4rem, black) + subtitle "We always
      try to provide your dog the best services." + dog illustration on the
-     right (`dogger_img_1.png`).
+     right (reference `dogger_img_1.png`, not copied — placeholder).
   3. Welcome block (`site-section`): paw icon + h2 "Welcome to Dogger Pet
      Care" + blind-text paragraph; then 3 alternating image/text rows
      (`hover-1-wrap`): "Love & Care", "Fearsome", "Beautiful" — each with an
@@ -58,7 +64,7 @@ typography, and content types (no ColorLib assets copied).
      photos (`dogger_img_sm_1..6`).
   10. Blog (`site-section`, `#blog-section`): h2 "Dogger Blog" + 4 post cards
       (post-meta date "April 17, 2019", h3 title, excerpt, "Read more"). The
-      preview repeats one placeholder title 4×; Dogger uses 4 distinct
+      preview repeats one placeholder title 4×; Barkly uses 4 distinct
       paraphrased dog-care titles.
   11. Services (`site-section`, `#services-section`): h2 "Our Services" + 6
       service cards: Dog Checkup, Dog Dermatology, For Strong Teeth, Dog First
@@ -88,7 +94,7 @@ typography, and content types (no ColorLib assets copied).
   - Section padding: `2.5em 0` mobile / `5em 0` desktop; footer `4em 0` /
     `8em 0` desktop.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/dogger-<n>/<w>/<h>`); icons → lucide-react (PawPrint,
+  (`picsum.photos/seed/barkly-<n>/<w>/<h>`); icons → lucide-react (PawPrint,
   ChevronDown, Mail, MapPin, Phone, ArrowRight, HeartPulse, Stethoscope,
   Syringe, Wind, ShieldCheck, CalendarDays); brand social icons → inline SVG;
   Open Sans + Vollkorn via Google Fonts; repo-standard Navbar (dark-mode
@@ -96,21 +102,21 @@ typography, and content types (no ColorLib assets copied).
   (aria-expanded, chevron rotate). Blog titles paraphrased. Footer credit
   paraphrased ("All rights reserved", no ColorLib attribution copied).
 
-Dogger lives in `apps/dogger` and uses shared components from `packages/ui`
+Barkly lives in `apps/barkly` and uses shared components from `packages/ui`
 (Button, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "dogger",
+The system SHALL render a top navigation bar with the site name "barkly",
 links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Dogger page is rendered
+- **GIVEN** the Barkly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "dogger" and links to Home,
+- **THEN** the navbar SHALL show the site name "barkly" and links to Home,
   About, Trainers, Pricing, FAQ, Testimonials, Gallery, Blog, Services, and
   Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
@@ -146,7 +152,7 @@ button.
 
 - **GIVEN** the page is rendered
 - **WHEN** the welcome section is displayed
-- **THEN** it SHALL contain a heading "Welcome to Dogger Pet Care"
+- **THEN** it SHALL contain a heading "Welcome to Barkly Pet Care"
 - **AND** it SHALL show the feature rows "Love & Care", "Fearsome", and
   "Beautiful"
 - **AND** each feature row SHALL have a "Read More" button
@@ -243,7 +249,7 @@ each with a date, title, excerpt, and a "Read more" button.
 
 - **GIVEN** the page is rendered
 - **WHEN** the blog section is displayed
-- **THEN** it SHALL contain a heading "Dogger Blog"
+- **THEN** it SHALL contain a heading "Barkly Blog"
 - **AND** it SHALL show the post "5 Things You Need To Know About Dog Massage"
   with a "Read more" button
 
@@ -303,11 +309,11 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Dogger app is rendered
+- **GIVEN** the Barkly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all
   sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Dogger — Dog Care Template"
+- **AND** the document title SHALL be "Barkly — Dog Care Template"
 
 ### Requirement: Component Dock attribution
 
@@ -327,7 +333,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/dogger/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/barkly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -336,7 +342,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/dogger/` is inspected
+- **WHEN** every non-test file under `apps/barkly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -344,17 +350,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "dogger" and links to Home,
+- [x] Navigation bar — the navbar SHALL show the site name "barkly" and links to Home,
 - [x] Hero section — it SHALL contain a level-1 heading "We Care For Your Dog"
-- [ ] Welcome and feature rows — it SHALL contain a heading "Welcome to Dogger Pet Care"
+- [x] Welcome and feature rows — it SHALL contain a heading "Welcome to Barkly Pet Care"
 - [x] About section — it SHALL contain a heading "About Us"
 - [x] Trainers section — it SHALL contain a heading "Our Trainers"
 - [x] Pricing section — it SHALL contain a heading "Pricing Table"
 - [x] FAQ accordion — it SHALL contain a heading "Frequently Ask Questions"
 - [x] Testimonials section — it SHALL contain a heading "Happy Customers"
 - [x] Gallery section — it SHALL contain a heading "Photo Gallery"
-- [x] Blog section — it SHALL contain a heading "Dogger Blog"
+- [x] Blog section — it SHALL contain a heading "Barkly Blog"
 - [x] Services section — it SHALL contain a heading "Our Services"
 - [x] Contact section — it SHALL contain the headings "Contact Form" and "Contact Us"
 - [x] Footer — it SHALL show the "About Us" blurb, a "Quick Links" column, a
-- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all
+- [x] Page composition — the page SHALL compose the Navbar in the banner landmark, all

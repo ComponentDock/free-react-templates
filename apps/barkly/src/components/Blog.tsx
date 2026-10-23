@@ -5,25 +5,25 @@ const posts = [
     title: '5 Things You Need To Know About Dog Massage',
     excerpt:
       'Gentle massage eases stiff joints, improves circulation, and deepens the bond between you and your dog.',
-    seed: 'dogger-blog-1',
+    seed: 'barkly-blog-1',
   },
   {
     title: 'How to Choose the Right Dog Food',
     excerpt:
       'Look at the first five ingredients, match the formula to your dog age and activity, and switch gradually.',
-    seed: 'dogger-blog-2',
+    seed: 'barkly-blog-2',
   },
   {
     title: 'Why Regular Walks Keep Dogs Happy',
     excerpt:
       'Daily walks provide exercise, mental stimulation, and the scents and sights dogs naturally crave.',
-    seed: 'dogger-blog-3',
+    seed: 'barkly-blog-3',
   },
   {
     title: 'Understanding Your Dog Body Language',
     excerpt:
       'A wagging tail, relaxed ears, and soft eyes all carry meaning — learn to read what your dog is saying.',
-    seed: 'dogger-blog-4',
+    seed: 'barkly-blog-4',
   },
 ] as const
 
@@ -32,7 +32,7 @@ export function Blog() {
     <section id="blog" className="py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-center text-3xl font-extrabold text-black dark:text-white">
-          Dogger Blog
+          Barkly Blog
         </h2>
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {posts.map((post) => (

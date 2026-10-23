@@ -18,7 +18,7 @@ export function About() {
         </div>
         <div className="relative">
           <img
-            src="https://picsum.photos/seed/dogger-about/640/480"
+            src="https://picsum.photos/seed/barkly-about/640/480"
             alt=""
             loading="lazy"
             className="w-full rounded-lg"
