@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Gearly brand palette — recreated from the ColorLib "Dreams" design
+  /* Gearly brand palette — measured from the reference design
      (css/style.css): gold #f3bd00 primary buttons/accents. */
   --color-brand: #f3bd00;
   --color-brand-dark: #d9a800;

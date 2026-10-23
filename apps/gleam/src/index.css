@@ -5,10 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Gleam brand teal — Tailwind teal scale extracted from the original
-     ColorLib "Sparkleclean" demo stylesheet (Base.qZrVslZM.css): primary 600
-     #0d9488 for buttons/links, 500 #14b8a6 accents, 900 #134e4a for dark
-     hero/CTA sections, 100 #ccfbf1 for icon chips. */
+  /* Gleam brand teal — Tailwind teal scale extracted from the reference
+     stylesheet (Base.qZrVslZM.css): primary 600 #0d9488 for buttons/links,
+     500 #14b8a6 accents, 900 #134e4a for dark hero/CTA sections, 100 #ccfbf1
+     for icon chips. */
   --color-primary-50: #f0fdfa;
   --color-primary-100: #ccfbf1;
   --color-primary-200: #99f6e4;

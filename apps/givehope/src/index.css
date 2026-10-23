@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* GiveHope brand colors — from the ColorLib "Bcharity" preview
-     (https://preview.colorlib.com/theme/bcharity/ + css/style.css):
-     a charity/nonprofit theme with a green #00c424 primary,
+  /* GiveHope brand colors — from the reference stylesheet: a charity/
+     nonprofit theme with a green #00c424 primary,
      dark navy #0d101d for footer/backgrounds, and muted text #7f7f7f. */
   --color-primary-50: #e6ffe9;
   --color-primary-100: #b3ffb8;
@@ -23,13 +22,13 @@
   /* Dark navy — footer and dark sections. */
   --color-navy: #0d101d;
 
-  /* Heading color (ColorLib #14182d). */
+  /* Heading color (#14182d). */
   --color-heading: #14182d;
 
-  /* Body text color (ColorLib #7f7f7f). */
+  /* Body text color (#7f7f7f). */
   --color-smoke: #7f7f7f;
 
-  /* Section subtitle (ColorLib #b3b4b3). */
+  /* Section subtitle (#b3b4b3). */
   --color-sub: #b3b4b3;
 
   /* Light section backgrounds. */
@@ -39,7 +38,7 @@
   --color-border: #e9ebec;
 
   /* Playfair Display (headings) + Roboto (body) via Google Fonts <link> in
-     index.html — matching the ColorLib font pairing. */
+     index.html — matching the reference font pairing. */
   --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
 }

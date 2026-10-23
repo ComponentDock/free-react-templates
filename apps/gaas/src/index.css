@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Gaas brand colors — from the ColorLib "GaaS" stylesheet
+  /* Gaas brand colors — from the reference stylesheet
      (style.css): primary purple #8252fa (95 refs — buttons, headings,
      accents), pink #eca2f1 accent (73 refs), yellow #f8b600, dark
      sections #222222, light sections #f9f9ff, muted body #777777,

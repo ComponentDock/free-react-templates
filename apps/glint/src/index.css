@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Glint brand palette — recreated from the ColorLib "Prodent" design
+  /* Glint brand palette — measured from the reference design
      (css/style.css): green #71cd29 accents/buttons, dark #2d2d2d headings,
      light #eff2f4 section backgrounds, body text #696969. */
   --color-brand: #71cd29;

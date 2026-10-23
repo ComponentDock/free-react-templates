@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Fulcrum brand colors — from the ColorLib "Services" preview
-     (https://preview.colorlib.com/theme/services/ + css/style.css):
-     a digital services/agency theme with a lime green #C2E54F primary,
+  /* Fulcrum brand colors — from the reference stylesheet: a digital
+     services/agency theme with a lime green #C2E54F primary,
      dark text #000000, body text #666666, and light section bg #f8f9fa. */
   --color-primary: #c2e54f;
   --color-primary-dark: #a8c845;

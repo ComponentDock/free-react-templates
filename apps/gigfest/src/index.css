@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* GigFest brand — extracted from ColorLib Eventcon css/style.css */
+  /* GigFest brand — extracted from the reference stylesheet (css/style.css) */
   --color-brand: #ff4533;
   --color-navy: #001d38;
   --color-dark-bg: #000000;
