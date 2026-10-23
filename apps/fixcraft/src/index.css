@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Fixcraft brand palette — recreation of the ColorLib "Autorepair" design
+  /* Fixcraft brand palette — measured from the reference design
      (brand primary: bootstrap blue #007bff). */
   --color-brand: #007bff;
   --color-brand-dark: #0069d9;

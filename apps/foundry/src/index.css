@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Foundry brand yellow — from the original ColorLib "Architect" preview
+  /* Foundry brand yellow — from the reference design
      (css/style.css): #FFCD00 buttons and accents. */
   --color-brand: #ffcd00;
 

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Freightly brand palette — recreated from the ColorLib "Logitrans" design.
+  /* Freightly brand palette — measured from the reference design.
      The primary scale IS the brand blue (#3b82f6) used for CTAs, links and
      the hero gradient; the accent scale is amber (#f59e0b) for badges and
      highlights; status green (#00c758) for tracking status chips. */

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Finflow brand palette — recreated from the ColorLib "Finances" design
+  /* Finflow brand palette — measured from the reference design
      (css/style.css): blue #007bff accents/buttons, dark navy #1a1a2e footer,
      light bg #f8f9fa sections, body text #333. */
 

@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Filtera brand palette — inspired by the original ColorLib Search Form V10
-     (blue-to-pink gradient). */
+  /* Filtera brand palette — blue-to-pink gradient measured from the
+     reference design. */
   --color-brand: #2c6dd5;
   --color-accent: #ff4b5a;
   --color-bg: #d9eff5;

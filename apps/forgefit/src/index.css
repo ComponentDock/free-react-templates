@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Forgefit brand palette — recreated from the ColorLib "Ironforge" design.
+  /* Forgefit brand palette — measured from the reference design.
      The primary scale IS the burnt-orange brand color (#ea580c) so the shared
      packages/ui Button/ButtonLink render in brand orange, and Tailwind's
      built-in gray scale drives the dark hero/footer + light section rhythm. */
