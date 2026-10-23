@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Horse Club — Equestrian Club Website Template'
+    document.title = 'Canter — Equestrian Club Website Template'
   }, [])
 
   return (

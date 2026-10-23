@@ -2,14 +2,14 @@ export function Hero() {
   return (
     <section id="home" className="relative flex min-h-[80vh] items-center overflow-hidden bg-brand">
       <img
-        src="https://picsum.photos/seed/horseclub-hero/1600/900"
+        src="https://picsum.photos/seed/canter-hero/1600/900"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-25"
       />
       <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-24 sm:px-6">
         <div className="max-w-2xl">
           <h6 className="text-sm font-semibold uppercase tracking-widest text-white/80">
-            Introducing Horse Club
+            Introducing Canter
           </h6>
           <h1 className="mt-4 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
             Inter relation Between Horse &amp; Rider

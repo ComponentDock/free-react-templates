@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Horse Club brand pink-red — from the reference design stylesheet
+  /* Canter brand pink-red — from the reference design stylesheet
      (css/main.css): .banner-area / .btn background #f6214b. */
   --color-brand: #f6214b;
 

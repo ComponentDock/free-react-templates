@@ -1,7 +1,7 @@
-# Horse Club (Colorlib Horse Club) — Tasks & Design Notes
+# Canter (Colorlib Horse Club) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-horse-club`.
+> Implementation ships later on `feat/template-canter`.
 
 ## Design notes
 
@@ -11,10 +11,10 @@
   (HTTP 200 — note the preview slug is `horseclub`, no hyphen) + stylesheet
   `css/main.css` (HTTP 200).
 - **Structure observed (1:1, section order):**
-  1. Header — top bar (email `info@horseclub.com`, phone `+880 123 12 658
+  1. Header — top bar (email `info@canter.com`, phone `+880 123 12 658
 439`) + nav: Home, About, Service, Training, Events, Pricing, Blog,
      Contact.
-  2. Banner — h6 "Introducing Horse Club", h1 "Inter relation Between Horse
+  2. Banner — h6 "Introducing Canter", h1 "Inter relation Between Horse
      & Rider", "Book Consultancy" CTA; slider second slide "Brand new app to
      blow your mind" / "We've made a life that will change you".
   3. About/Video — copy + video play block.
@@ -35,12 +35,12 @@
   **#38a4ff** (blue), **#f45622** (orange), **#f44a40** (red); text
   **#222222**, muted **#777777**, light sections **#f9f9ff**; font
   **Poppins** via Google Fonts; filled rounded pink-red buttons.
-- **Recreation name:** Horse Club → app folder `apps/horse-club`, package
-  `@free-react-templates/horse-club`.
+- **Recreation name:** Canter → app folder `apps/canter`, package
+  `@free-react-templates/canter`.
 - **Design approach:** pink-red brand tokens in `@theme`
   (`--color-brand: #f6214b`); multi-color icon accents for the six feature
   cards; seeded picsum placeholders
-  `https://picsum.photos/seed/horseclub-<n>/<w>/<h>`; lucide-react icons;
+  `https://picsum.photos/seed/canter-<n>/<w>/<h>`; lucide-react icons;
   booking/newsletter forms with client-side validation (zod); repo-standard
   Navbar (dark-mode toggle) and Footer chrome; social icons (GitHub, X,
   LinkedIn) inline SVG.
@@ -52,12 +52,12 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-horse-club/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-canter/spec.md` (Gherkin
       requirements + scenarios + replication findings) — DONE on main (this
       prep).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/horse-club` (based on `apps/vetly`; package
-      `@free-react-templates/horse-club`, registered in package-lock.json).
+- [x] Create `apps/canter` (based on `apps/vetly`; package
+      `@free-react-templates/canter`, registered in package-lock.json).
 - [x] TDD: tests first for Navbar, Hero, About/Video, Features, Home About,
       Pricing, Booking form, Testimonials, Blog, Gallery, Footer, App
       composition; run red.
@@ -76,8 +76,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/horse-club/` may name the source designer,
+- **Provenance ban.** No file under `apps/canter/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/horse-club/public/CNAME` = `horse-club.free.componentdock.com`
-  and the package `homepage` = `https://horse-club.free.componentdock.com`.
+- **Deploy identity.** `apps/canter/public/CNAME` = `canter.free.componentdock.com`
+  and the package `homepage` = `https://canter.free.componentdock.com`.

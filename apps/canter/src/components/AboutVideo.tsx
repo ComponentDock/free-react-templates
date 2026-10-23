@@ -33,7 +33,7 @@ export function AboutVideo() {
           )}
         </div>
         <img
-          src="https://picsum.photos/seed/horseclub-about/800/600"
+          src="https://picsum.photos/seed/canter-about/800/600"
           alt="Rider training a horse in the arena"
           className="w-full rounded-3xl object-cover shadow-lg"
         />

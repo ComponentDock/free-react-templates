@@ -1,17 +1,17 @@
-# Horse-club — Design Notes
+# Canter — Design Notes
 
 Reference: **Horse Club** — `https://colorlib.com/wp/template/horse-club/`  
 Live preview: `https://preview.colorlib.com/theme/horseclub/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/horseclub-free-template.jpg  
-Shipped: https://horse-club.free.componentdock.com
+Shipped: https://canter.free.componentdock.com
 
-Horse Club is a multi-section equestrian-club website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Horse Club" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Canter is a multi-section equestrian-club website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Horse Club" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/horse-club/src/index.css` `@theme`)
+## Design tokens (`apps/canter/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -44,10 +44,10 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Horse Club", contact details (email, phone), links to the main sections, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Canter", contact details (email, phone), links to the main sections, and a dark-mode toggle button.
 
 ### `Hero`
-The system SHALL render a hero section with the eyebrow "Introducing Horse Club", the headline "Inter relation Between Horse & Rider", and a "Book Consultancy" CTA button.
+The system SHALL render a hero section with the eyebrow "Introducing Canter", the headline "Inter relation Between Horse & Rider", and a "Book Consultancy" CTA button.
 
 ### `AboutVideo`
 The system SHALL render an about section with descriptive copy and a video play block.
@@ -88,8 +88,8 @@ The system SHALL render a footer with an "About Us" blurb, "Contact Us" details,
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/horse-club/` may name the source designer,
+- **Provenance ban.** No file under `apps/canter/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/horse-club/public/CNAME` = `horse-club.free.componentdock.com`
-  and the package `homepage` = `https://horse-club.free.componentdock.com`.
+- **Deploy identity.** `apps/canter/public/CNAME` = `canter.free.componentdock.com`
+  and the package `homepage` = `https://canter.free.componentdock.com`.

@@ -7,7 +7,7 @@ describe('Footer', () => {
   it('renders the brand blurb, contact details, newsletter form, and social links', () => {
     render(<Footer />)
 
-    expect(screen.getByText('Horse Club')).toBeInTheDocument()
+    expect(screen.getByText('Canter')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'About Us' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Contact Us' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Newsletter' })).toBeInTheDocument()

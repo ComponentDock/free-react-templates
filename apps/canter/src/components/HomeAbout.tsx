@@ -3,7 +3,7 @@ export function HomeAbout() {
     <section id="training" className="bg-white py-20 dark:bg-gray-950 lg:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
         <img
-          src="https://picsum.photos/seed/horseclub-homeabout/800/600"
+          src="https://picsum.photos/seed/canter-homeabout/800/600"
           alt="Horses grazing in a sunny paddock"
           className="w-full rounded-3xl object-cover shadow-lg"
         />

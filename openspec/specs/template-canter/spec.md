@@ -1,8 +1,8 @@
-# Template: Horse Club (Equestrian Club Website)
+# Template: Canter (Equestrian Club Website)
 
 ## Purpose
 
-Horse Club is a multi-section equestrian-club website template in the
+Canter is a multi-section equestrian-club website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Horse Club" design (see TEMPLATES.md), built under a different
 name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -11,7 +11,7 @@ The original design is a pink-red equestrian landing page: hero with an
 "Inter relation Between Horse & Rider" headline, an about/video band, six
 feature cards, a second about block, a four-tier pricing table, an
 appointment booking form with testimonials, a blog list, a gallery, and a
-multi-column footer. Horse Club follows the same structure and adds the
+multi-column footer. Canter follows the same structure and adds the
 repo's standard dark-mode toggle and accessible patterns. All imagery is
 recreated with seeded placeholder images (no assets copied).
 
@@ -22,10 +22,10 @@ recreated with seeded placeholder images (no assets copied).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/horseclub/`
   (HTTP 200, slug is `horseclub`) + `css/main.css` (HTTP 200).
 - **Structure (1:1, section order):**
-  1. Header — top bar (email `info@horseclub.com`, phone `+880 123 12 658
+  1. Header — top bar (email `info@canter.com`, phone `+880 123 12 658
 439`) + nav: Home, About, Service, Training, Events, Pricing, Blog,
      Contact.
-  2. Banner (`banner-area`) — h6 "Introducing Horse Club", h1 "Inter relation
+  2. Banner (`banner-area`) — h6 "Introducing Canter", h1 "Inter relation
      Between Horse & Rider", "Book Consultancy" CTA (slider with a second
      slide "Brand new app to blow your mind" / "We've made a life that will
      change you").
@@ -55,27 +55,27 @@ recreated with seeded placeholder images (no assets copied).
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#f6214b`); placeholder images via
-  `https://picsum.photos/seed/horseclub-<n>/<w>/<h>`; icons from
+  `https://picsum.photos/seed/canter-<n>/<w>/<h>`; icons from
   lucide-react; booking/newsletter forms with client-side validation (zod);
   gallery as an accessible image grid; social icons inline SVG; no assets
   copied.
 
-Horse Club lives in `apps/horse-club` and uses shared components from
+Canter lives in `apps/canter` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Horse Club",
+The system SHALL render a navigation bar with the site name "Canter",
 contact details (email, phone), links to the main sections, and a dark-mode
 toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Horse Club page is rendered
+- **GIVEN** the Canter page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Horse Club", an email, and a phone number
+- **THEN** the navbar SHALL show the site name "Canter", an email, and a phone number
 - **AND** the navbar SHALL show links to the main sections and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -87,8 +87,7 @@ toggle button.
 
 ### Requirement: Hero section
 
-The system SHALL render a hero section with the eyebrow "Introducing Horse
-Club", the headline "Inter relation Between Horse & Rider", and a "Book
+The system SHALL render a hero section with the eyebrow "Introducing Canter", the headline "Inter relation Between Horse & Rider", and a "Book
 Consultancy" CTA button.
 
 #### Scenario: Hero content
@@ -193,7 +192,7 @@ details, a "Newsletter" signup, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Horse Club" and an about blurb
+- **THEN** it SHALL show the site name "Canter" and an about blurb
 - **AND** it SHALL show contact details, a newsletter input, and social links
 
 ### Requirement: Page composition
@@ -203,10 +202,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Horse Club app is rendered
+- **GIVEN** the Canter app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Horse Club — Equestrian Club Website Template"
+- **AND** the document title SHALL be "Canter — Equestrian Club Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -226,7 +225,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/horse-club/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/canter/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -235,7 +234,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/horse-club/` is inspected
+- **WHEN** every non-test file under `apps/canter/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -243,7 +242,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Horse Club", an email, and a phone number
+- [x] Navigation bar — the navbar SHALL show the site name "Canter", an email, and a phone number
 - [x] Hero section — it SHALL contain a level-1 heading matching "Inter relation Between Horse & Rider"
 - [ ] About/video section — it SHALL show descriptive copy and a play button with an accessible label
 - [ ] Features section — it SHALL show the six feature cards, each with an icon, title, and copy
@@ -252,5 +251,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Booking section — it SHALL show the heading "Appointment Form" with form fields and a submit button
 - [x] Blog section — it SHALL show the heading "Latest News from our Blog"
 - [ ] Gallery section — it SHALL show at least six gallery images with accessible labels
-- [x] Footer — it SHALL show the site name "Horse Club" and an about blurb
+- [x] Footer — it SHALL show the site name "Canter" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
