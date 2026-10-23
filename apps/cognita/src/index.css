@@ -3,9 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cognita brand — recreation of ColorLib Eskwela tokens.
-     Primary blue #429FFD, gold accent #F7AF1D, dark bar #1E2022,
-     headings serif (Playfair Display), body sans (Open Sans). */
+  /* Cognita brand — measured from the reference design: primary blue #429FFD,
+     gold accent #F7AF1D, dark bar #1E2022, headings serif (Playfair Display),
+     body sans (Open Sans). */
   --color-primary-50: #eef6ff;
   --color-primary-100: #d9ecff;
   --color-primary-200: #b3d9ff;

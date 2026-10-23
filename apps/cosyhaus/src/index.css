@@ -5,9 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cosyhaus brand palette — recreated from the ColorLib "Theinterior"
-     design (css/style.css): red #ff1313 accents/buttons, dark ink
-     #10285d headings, body text #635c5c, footer bg #0b1416. */
+  /* Cosyhaus brand palette — measured from the reference design
+     (css/style.css): red #ff1313 accents/buttons, dark ink #10285d headings,
+     body text #635c5c, footer bg #0b1416. */
   --color-brand: #ff1313;
   --color-brand-dark: #d91010;
 

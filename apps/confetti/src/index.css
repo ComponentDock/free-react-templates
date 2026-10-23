@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Confetti brand palette — recreated from the ColorLib "Eventz" design
+  /* Confetti brand palette — measured from the reference design
      (css/style.css): deep purple #331391 accents/buttons, dark purple
      #2e0e8c sponsors bg, navy #26264b headings, body text #10285d. */
   --color-brand: #331391;

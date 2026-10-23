@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Corkage brand palette — recreated from the ColorLib "Resta" design:
+  /* Corkage brand palette — measured from the reference design:
      warm orange #E8A87C accents/buttons, dark #222222 navbar/footer,
      serif headings, warm grays for text. */
   --color-brand: #e8a87c;

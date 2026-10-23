@@ -3,10 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Converge brand colors — from the ColorLib "Confpro" conference template
-     (https://preview.colorlib.com/theme/confpro/ + styles/main_styles.css):
-     a marketing conference theme with a dark navy #0a2642 header/background,
-     purple accent #7f66ff, orange CTA #ff9000, and body text #68727c. */
+  /* Converge brand colors — a marketing conference theme with a dark navy
+     #0a2642 header/background, purple accent #7f66ff, orange CTA #ff9000, and
+     body text #68727c (tokens from the reference stylesheet). */
   --color-primary-50: #f0edff;
   --color-primary-100: #ddd6ff;
   --color-primary-200: #c0b3ff;

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Convene brand palette — recreated from ColorLib "Manup" design
+  /* Convene brand palette — measured from the reference design
      (css/style.css): orange #ee8425 → pink #f9488b gradient,
      red accent #f44949, body text #6a6b7c, headings #171822. */
   --color-brand: #ee8425;
