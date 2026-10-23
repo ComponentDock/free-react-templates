@@ -1,57 +1,49 @@
-# Pulse (Colorlib Error 404 16) — Tasks & Design Notes
+# Pulse — Tasks (ColorLib "Saita", digital agency)
 
-> Prep artifacts prepared on `main` while the Drift PR awaits review.
-> Implementation ships later on `feat/template-pulse`.
+> Prep artifact for `apps/pulse`. Source mapping lives here and in
+> `openspec/specs/template-pulse/spec.md` — never in app code.
+> Corrected 2026-10-23: this brief previously named "Colorlib Error 404 V16",
+> the wrong source (that design is `apps/scarlet`). The app was built from
+> Saita; the brief now matches the shipped app.
 
-## Design notes
+## Source
 
-- **Original:** ColorLib "Colorlib Error 404 V16" — free **creative** error
-  page template based on the Bootstrap framework, released 2025, license
-  CC BY 3.0
-  (source: https://colorlib.com/wp/template/colorlib-error-404-16/).
-- **Official description:** "A free creative error page template based on the
-  popular Bootstrap Framework and latest technologies to guarantee amazing
-  performance. You are welcome to perform customization tweaks and tailor it
-  to your liking."
-- **Layout observed from the description/preview:** responsive creative error
-  page with a bold "404" display, a "page not found" message, a homepage
-  button, and social media icons, built on Bootstrap-style structure.
-- **Recreation name:** Pulse (evokes the creative/energetic theme). App folder
-  `apps/pulse`, package `@free-react-templates/pulse`.
-- **Design approach:** recreate the creative element as an original decorative
-  SVG illustration (`role="img"` + accessible label) using the repo primary
-  indigo palette; social icons (GitHub, X, LinkedIn) in the error section;
-  dark-mode support via `@custom-variant dark`.
-- Reuse `packages/ui` (Button, ButtonLink, cn) — do NOT duplicate components.
-- Base implementation on `apps/drift` (simplest existing 404 app) — it already
-  has Navbar/ErrorSection/Footer structure to adapt.
+- **ColorLib template:** Saita — https://colorlib.com/wp/template/saita/
+- **Slug:** `saita`
+- **Preview:** https://preview.colorlib.com/theme/saita/ (analyzed 2026-10-23)
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/saita-colorlib-template.jpg
+- **Recreation name:** Pulse → `apps/pulse`, package
+  `@free-react-templates/pulse`, deploy `pulse.free.componentdock.com`.
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-pulse/spec.md` (Gherkin requirements +
-      scenarios) — DONE on main (this prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/pulse` (copy `apps/drift`; rename package to
-      `@free-react-templates/pulse`).
-- [ ] TDD: tests first for Navbar, ErrorSection (creative illustration, 404
-      content, home button, social links), Footer, App composition; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
-- [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
-      main, state D).
-- [ ] Update README structure + `docs/ai-context.md` app list.
+- [x] Replication research: preview DOM, stylesheet tokens, screenshot review
+      — findings recorded in the spec's "Design reference" section.
+- [x] `openspec/specs/template-pulse/spec.md` (Gherkin per section).
+- [x] Scaffold `apps/pulse` (copy `apps/airy`-class app; rename package,
+      `public/CNAME`, `homepage`).
+- [x] Sections: Navbar, Hero, About (3 capabilities + 3 skill bars), Counters,
+      Services (8), Portfolio (8 projects, 6 filters), Team (4), Pricing (3),
+      Testimonials (2, carousel), Blog (3), CTA banner, Footer (4 columns).
+- [x] Shared UI from `packages/ui` (Button, ButtonLink, cn); `lucide-react`
+      icons; `picsum.photos` placeholders seeded `pulse-*`.
+- [x] Tests colocated per component; coverage 100% on changed code.
+- [x] Component Dock footer credit (`https://www.componentdock.com/`); no
+      source provenance in app files.
+- [ ] A11y follow-ups captured in the spec's "Known gaps" (progressbar roles,
+      `aria-pressed` on filters, reduced-motion for counters) — owned by a
+      later sweep, not this brief.
+- [ ] Bookkeeping: `TEMPLATES.md` rows 623 + 1158 already `[x]`; README
+      status regenerated.
 
 ## Delivery contract (repo rules — non-negotiable)
 
-- **Footer credit.** The footer — or, when the design ships no footer, the page's
-  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
-  the only attribution line the recreation carries.
-- **Source credit is reading, not copy.** Where the research above quotes the
-  source's own credit string ("… made with ♥ by …"), it is what the source band
-  renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/pulse/` may name the source designer,
-  carry a `colorlib.com` URL, or reuse the source template's name — code,
-  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/pulse/public/CNAME` = `pulse.free.componentdock.com`
-  and the package `homepage` = `https://pulse.free.componentdock.com`.
+- **Footer credit.** The footer — or, when the design ships no footer, the
+  page's last band — SHALL link [Component Dock](https://www.componentdock.com/).
+  That is the only attribution line the recreation carries.
+- **Provenance ban.** No file under `apps/pulse/` may carry a `colorlib.com`
+  URL or the source template's name — code, comments, CSS, markup, metadata
+  and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/pulse/public/CNAME` =
+  `pulse.free.componentdock.com`; package `homepage` =
+  `https://pulse.free.componentdock.com`.
