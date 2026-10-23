@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Keyhaven brand palette — recreated from the ColorLib "Estatehub" design
+  /* Keyhaven brand palette — measured from the reference design
      (Tailwind green scale: luxury real-estate accent). */
   --color-primary-50: #f0fdf4;
   --color-primary-100: #dcfce7;

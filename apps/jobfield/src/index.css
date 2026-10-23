@@ -5,9 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Jobfield brand colors — from the ColorLib "HireHub" demo stylesheet
-     (hirehub-colorlib.pages.dev/_astro/Base.Bv7s6dFD.css, Tailwind v4
-     oklch values converted to hex): primary = indigo scale (#4f46e5
+  /* Jobfield brand colors — measured from the reference stylesheet
+     (compiled Tailwind v4 CSS, oklch values converted to hex):
+     primary = indigo scale (#4f46e5
      primary-600 brand / solid buttons, #4338ca primary-700 hover),
      accent = emerald scale (#10b981 pulse dots, #059669 icon-tile text,
      #047857 badge text). */

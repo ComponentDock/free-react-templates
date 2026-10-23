@@ -4,8 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Joystick brand colors — from the ColorLib "Egames" preview
-     (https://preview.colorlib.com/theme/egames/ + style.css):
+  /* Joystick brand colors — measured from the reference stylesheet (style.css):
      a gaming magazine theme with cyan #20d8da primary,
      dark overlays rgba(0,0,0,0.6), heading #424242, body #939393. */
   --color-primary-50: #e6fbfb;
@@ -23,10 +22,10 @@
   --color-dark: #1a1a1a;
   --color-darker: #111111;
 
-  /* Heading color (ColorLib #424242). */
+  /* Heading color (#424242). */
   --color-ink: #424242;
 
-  /* Muted body text (ColorLib #939393). */
+  /* Muted body text (#939393). */
   --color-smoke: #939393;
 
   /* Open Sans via Google Fonts <link> in index.html. */
