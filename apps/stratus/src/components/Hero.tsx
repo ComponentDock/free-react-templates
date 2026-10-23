@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { cn } from '@free-react-templates/ui'
 import { HERO_IMAGE, HERO_SLIDES } from '../data'
 
-/* Hero recreated from the ColorLib "Cloud83" hero slider: a full-width dark
+/* Hero — measured from the reference design: a full-width dark
    cover photo, "The Best Hosting" headline, two supporting paragraphs, a
    square slate "Read More" button, and bottom-center slider dots with the
    active dot in brand green. The original shows two identical slides — the

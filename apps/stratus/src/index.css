@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Stratus brand colors — from the ColorLib "Cloud83" preview
-     (https://preview.colorlib.com/theme/cloud83/ + css/style.css):
+  /* Stratus brand colors — measured from the reference design
+     (css/style.css):
      brand green #25ae88 (header bottom border, Register/Start buttons,
      active slider dot, checklist icons), slate #556080 (Read More buttons
      + the milestones band), soft blue #7fabda (Login button), footer top

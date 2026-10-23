@@ -3,7 +3,7 @@ import { Cloud, Menu, X } from 'lucide-react'
 import { cn } from '@free-react-templates/ui'
 import { BRAND, NAV_LINKS } from '../data'
 
-/* Header recreated from the ColorLib "Cloud83" header: a semi-transparent
+/* Header — measured from the reference design: a semi-transparent
    dark bar (rgba(0,0,0,0.63)) with a 2px brand-green bottom border, brand
    + cloud icon on the left, five nav links, and "Support 24/7" plus square
    Login (soft blue) and Register (brand green) buttons on the right. */

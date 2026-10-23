@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Stylely brand palette — recreated from the ColorLib "Hipstyle" design
+  /* Stylely brand palette — measured from the reference design
      (css/style.css): brand red #f81c1c accents/buttons, coral #f44a40 hover,
      light section bgs #f9f9ff + lavender #f0e9ff, dark charcoal #30383b
      headings + footer, muted text #999999. */

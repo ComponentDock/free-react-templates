@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Swish brand palette — recreated from the ColorLib "Basketball" template
-     (https://colorlib.com/wp/template/basketball/), tokens extracted from the
-     live preview's css/style.css:
+  /* Swish brand palette — measured from the reference design, tokens
+     extracted from css/style.css:
      - orange #ff8b23 (primary accent: headline span, buttons, icons, hovers)
      - light peach #fdcb9e (btn_2 bottom border, subtle hover fills)
      - darker orange #f5790b (btn_2 hover background)

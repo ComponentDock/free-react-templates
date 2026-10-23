@@ -1,7 +1,7 @@
 import { CheckCircle2 } from 'lucide-react'
 import { TRUST } from '../data'
 
-/* Trust section recreated from the ColorLib "Cloud83" about block: a light
+/* Trust section — measured from the reference design: a light
    band with the "The only ones / We Generate Trust" title, a photo, an
    intro paragraph, and a four-item checklist with brand-green check icons. */
 

@@ -11,7 +11,7 @@ import {
 } from '../data'
 import { FacebookIcon, InstagramIcon, LinkedInIcon, TwitterIcon, type IconProps } from './icons'
 
-/* Footer recreated from the ColorLib "Cloud83" footer: a two-tone dark
+/* Footer — measured from the reference design: a two-tone dark
    footer — #1f2430 top with brand + about + social circles + four link
    columns, and a #171b26 bottom bar with the footer nav, the copyright
    line, and the repo-standard credit. Brand social icons are inline SVGs
@@ -106,6 +106,12 @@ export function Footer() {
             ))}
           </ul>
         </div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

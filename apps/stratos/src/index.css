@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Stratos brand colors — from the ColorLib "Cloudnest" demo stylesheet
+  /* Stratos brand colors — measured from the reference stylesheet
      (/_astro/Base.*.css): primary = indigo scale (#6366f1 indigo-500
      accents, #4f46e5 indigo-600 buttons, #4338ca indigo-700 hover,
      #818cf8 indigo-400 hero stat values, #a5b4fc indigo-300 pill text,

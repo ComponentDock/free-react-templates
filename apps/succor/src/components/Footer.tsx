@@ -25,7 +25,7 @@ const linkClass = 'block py-2 text-[16px] text-white/40 transition-colors hover:
 
 /* footer.ftco-footer — #1e1e1e background, 4 widgets in a row on desktop
    (stacking on mobile) + a centered bottom bar with the © line and a
-   reworded credit (Component Dock — no Colorlib link-back). */
+   reworded credit (Component Dock — no external link-back). */
 export function Footer() {
   const year = new Date().getFullYear()
   return (
@@ -130,6 +130,12 @@ export function Footer() {
           </span>{' '}
           by Component Dock
         </p>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

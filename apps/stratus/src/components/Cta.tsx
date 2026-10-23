@@ -1,6 +1,6 @@
 import { CTA } from '../data'
 
-/* Get-started CTA band recreated from the ColorLib "Cloud83" banner: a
+/* Get-started CTA band — measured from the reference design: a
    heading, a short subtext line, and a square brand-green "Start" button. */
 
 export function Cta() {

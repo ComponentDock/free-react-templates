@@ -1,6 +1,5 @@
-/* Content model for the Stratus template — recreated from the ColorLib
-   "Cloud83" preview (https://preview.colorlib.com/theme/cloud83/). All
-   photos are picsum-seeded placeholders (no ColorLib assets); icons are
+/* Content model for the Stratus template — measured from the reference
+   design (css/style.css). All photos are picsum-seeded placeholders; icons are
    lucide-react (brand social icons are inline SVGs in components/icons). */
 
 export const BRAND = 'Stratus'

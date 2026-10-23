@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sooth brand palette — recreated from the ColorLib "Serenite" design.
+  /* Sooth brand palette — measured from the reference design.
      The primary scale IS the rose brand color (#e11d48) used for pill
      buttons, links, the headline accent and feature icons. */
   --color-primary-50: #fff1f2;
