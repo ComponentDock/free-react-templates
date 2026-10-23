@@ -80,3 +80,12 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
 
 Prefer names that evoke the design (pet care → `Vetly`, horse club → `Canter`), a
 single lowercase word, no collision with `ls apps/`.
+
+## Pitfall — prep docs can seed the violation
+
+Old prep artifacts sometimes rationalise reusing the source name ("keeps the
+original name — it is already a distinct working name, not a ColorLib brand",
+seen in `docs/templates/houndly/tasks.md` for Doglife). That is exactly the
+rule-5 violation; a folder rename alone leaves the wrong guidance behind. Rewrite
+the `Recreation name` bullet (and any `# <Name> (Colorlib <Source>)` heading) so
+the prep doc states the new name and the provenance separately.
