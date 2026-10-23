@@ -1112,7 +1112,7 @@ template-rotunda                    modal-13                   -> apps/modalrosa
 template-roundabout                 carousel-06                -> apps/slidespot          (row 715, row)
 template-roundtable                 workshop                   -> apps/seminar            (row 2104, row)
 template-routebook                  directing                  -> apps/localfinder        (row 1526, row)
-template-rover                      doglife                    -> apps/doglife            (row 2315, unproven)
+template-rover                      doglife                    -> apps/houndly            (row 2315, unproven)
 template-ruche                      accordion-11               -> apps/ripples            (row 649, row)
 template-rune                       colorlib-wizard-22         -> apps/arcane             (row 862, banner)
 template-runeform                   colorlib-wizard-9          -> apps/formvane           (row 877, row)

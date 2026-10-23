@@ -5,25 +5,25 @@ const posts = [
     title: 'How to make first aid for your dog when in the house',
     excerpt:
       'Keep a calm head, check for visible wounds, and have your vet number handy — quick first steps make all the difference.',
-    seed: 'doglife-blog-1',
+    seed: 'houndly-blog-1',
   },
   {
     title: 'Choosing the right food for your growing puppy',
     excerpt:
       'Match the formula to your puppy age and breed size, and switch foods gradually to protect a sensitive stomach.',
-    seed: 'doglife-blog-2',
+    seed: 'houndly-blog-2',
   },
   {
     title: 'Daily walks: the secret to a happy, balanced dog',
     excerpt:
       'Regular walks provide exercise, mental stimulation, and the scents and sights dogs naturally crave.',
-    seed: 'doglife-blog-3',
+    seed: 'houndly-blog-3',
   },
   {
     title: 'Understanding your dog body language',
     excerpt:
       'A wagging tail, relaxed ears, and soft eyes all carry meaning — learn to read what your dog is saying.',
-    seed: 'doglife-blog-4',
+    seed: 'houndly-blog-4',
   },
 ] as const
 
@@ -32,7 +32,7 @@ export function Blog() {
     <section id="blog" className="py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="text-center font-serif text-3xl font-extrabold text-black dark:text-white">
-          Doglife Blog
+          Houndly Blog
         </h2>
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {posts.map((post) => (

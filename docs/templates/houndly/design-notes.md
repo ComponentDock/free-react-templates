@@ -1,17 +1,17 @@
-# Doglife — Design Notes
+# Houndly — Design Notes
 
 Reference: **Doglife** — `https://colorlib.com/wp/template/doglife/`  
 Live preview: `https://preview.colorlib.com/theme/doglife/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/doglife-free-template.jpg  
-Shipped: https://doglife.free.componentdock.com
+Shipped: https://houndly.free.componentdock.com
 
-Doglife is a multi-section dog-care website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Doglife" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Houndly is a multi-section dog-care website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Doglife" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Open Sans**, **Open Sans:wght@300;400;600;700;800**, **Vollkorn**
 
-## Design tokens (`apps/doglife/src/index.css` `@theme`)
+## Design tokens (`apps/houndly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ Fonts loaded by `index.html` (Google Fonts): **Open Sans**, **Open Sans:wght@300
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Doglife", links to the main sections (Home, About, Doctor, Pricing, Blog, Services, Contact), and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Houndly", links to the main sections (Home, About, Doctor, Pricing, Blog, Services, Contact), and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a hero section with the headline "We Love Dogs", supporting copy, and a primary "Get In Touch" CTA button.
@@ -64,7 +64,7 @@ The system SHALL render a "Frequently Ask Questions" section with at least three
 The system SHALL render a "Happy Customers" section with at least two testimonial cards (photo, name, quote).
 
 ### `Blog`
-The system SHALL render a "Doglife Blog" section with at least four blog entries, each with an image, meta text, title, excerpt, and a "Read More" button.
+The system SHALL render a "Houndly Blog" section with at least four blog entries, each with an image, meta text, title, excerpt, and a "Read More" button.
 
 ### `Services`
 The system SHALL render an "Our Services" section with six service blocks: Dog Checkup, Dog Dermatology, For Strong Teeth, Dog First Aid, Dog Dryer, and Expert Veterinarian.
@@ -90,8 +90,8 @@ The system SHALL render a footer with the site name, an "About Us" blurb, "Quick
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/doglife/` may name the source designer,
+- **Provenance ban.** No file under `apps/houndly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/doglife/public/CNAME` = `doglife.free.componentdock.com`
-  and the package `homepage` = `https://doglife.free.componentdock.com`.
+- **Deploy identity.** `apps/houndly/public/CNAME` = `houndly.free.componentdock.com`
+  and the package `homepage` = `https://houndly.free.componentdock.com`.

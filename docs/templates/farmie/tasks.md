@@ -54,7 +54,7 @@
   toggle) and Footer chrome; social icons (GitHub, X, LinkedIn) inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/doglife` (once it ships) or `apps/sage` —
+- Base implementation on `apps/houndly` (once it ships) or `apps/sage` —
   same multi-section landing architecture.
 
 ## Tasks

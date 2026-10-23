@@ -3,11 +3,11 @@ import { Check } from 'lucide-react'
 const columns = [
   {
     title: 'Happy Pets',
-    seed: 'doglife-happy-pets',
+    seed: 'houndly-happy-pets',
   },
   {
     title: 'Modern Equipment',
-    seed: 'doglife-modern-equipment',
+    seed: 'houndly-modern-equipment',
   },
 ] as const
 
@@ -55,7 +55,7 @@ export function Highlights() {
         <div className="mt-20 grid items-center gap-12 md:grid-cols-2">
           <div>
             <img
-              src="https://picsum.photos/seed/doglife-vet/520/560"
+              src="https://picsum.photos/seed/houndly-vet/520/560"
               alt=""
               loading="lazy"
               className="w-full rounded-lg"

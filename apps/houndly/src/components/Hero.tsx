@@ -19,7 +19,7 @@ export function Hero() {
         </div>
         <div className="flex-1">
           <img
-            src="https://picsum.photos/seed/doglife-hero/640/520"
+            src="https://picsum.photos/seed/houndly-hero/640/520"
             alt=""
             className="mx-auto w-full max-w-md"
             fetchPriority="high"
