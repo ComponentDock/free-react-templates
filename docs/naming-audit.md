@@ -27,7 +27,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `breed` → `wagly` (#1824), `bulkapp` → `bundle` (#1825),
 `chimper` → `craftora` (#1826),
 `colid` → `pitchly` (#1827), `crafted` → `makerly` (#1829),
-`dogger` → `barkly` (this PR).
+`dogger` → `barkly` (#1830).
 
 | app                 | source design  |
 | ------------------- | -------------- |

@@ -84,7 +84,7 @@
       spec:validate.
 - [x] Push `feat/template-barkly`, open PR (source template, preview URL,
       design tokens, what differs).
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
+- [x] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
 
 ## Delivery contract (repo rules — non-negotiable)
