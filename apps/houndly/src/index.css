@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Doglife brand burgundy — from the reference design (css/style.css):
+  /* Houndly brand burgundy — from the reference design (css/style.css):
      .btn-primary, .site-footer background, .ul-check.primary checks,
      heading accents. */
   --color-brand: #9c2c2c;

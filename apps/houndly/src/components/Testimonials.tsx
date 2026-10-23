@@ -3,25 +3,25 @@ const testimonials = [
     author: 'Ricky Fisher',
     quote:
       'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
-    seed: 'doglife-testimonial-1',
+    seed: 'houndly-testimonial-1',
   },
   {
     author: 'Ken Davis',
     quote:
       'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-    seed: 'doglife-testimonial-2',
+    seed: 'houndly-testimonial-2',
   },
   {
     author: 'Mellisa Griffin',
     quote:
       'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-    seed: 'doglife-testimonial-3',
+    seed: 'houndly-testimonial-3',
   },
   {
     author: 'Robert Steward',
     quote:
       'Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.',
-    seed: 'doglife-testimonial-4',
+    seed: 'houndly-testimonial-4',
   },
 ] as const
 

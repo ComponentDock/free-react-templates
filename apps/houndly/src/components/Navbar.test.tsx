@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('shows the site name, section links, and the dark-mode toggle', () => {
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: 'doglife' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'houndly' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Home' })).toHaveAttribute('href', '#top')
     expect(screen.getByRole('link', { name: 'About' })).toHaveAttribute('href', '#about')
     expect(screen.getByRole('link', { name: 'Doctor' })).toHaveAttribute('href', '#doctor')

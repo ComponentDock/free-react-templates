@@ -20,7 +20,7 @@ export function Welcome() {
         </div>
         <div>
           <img
-            src="https://picsum.photos/seed/doglife-welcome/640/480"
+            src="https://picsum.photos/seed/houndly-welcome/640/480"
             alt=""
             loading="lazy"
             className="w-full rounded-lg"

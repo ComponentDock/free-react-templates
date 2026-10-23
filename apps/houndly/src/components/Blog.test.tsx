@@ -6,7 +6,7 @@ describe('Blog', () => {
   it('shows the heading and the four post cards', () => {
     render(<Blog />)
 
-    expect(screen.getByRole('heading', { name: 'Doglife Blog' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Houndly Blog' })).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { name: 'How to make first aid for your dog when in the house' }),
     ).toBeInTheDocument()

@@ -13,7 +13,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Doglife — Dog Care Website Template'
+    document.title = 'Houndly — Dog Care Website Template'
   }, [])
 
   return (

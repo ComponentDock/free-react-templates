@@ -14,6 +14,11 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: 'Doctor' })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Send' })).toBeInTheDocument()
     expect(screen.getByText(/All rights reserved/)).toBeInTheDocument()
+    expect(screen.getByText(/Copyright © \d{4} Houndly\./)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('renders the social links', () => {

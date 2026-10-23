@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes all sections and sets the document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Doglife — Dog Care Website Template')
+    expect(document.title).toBe('Houndly — Dog Care Website Template')
 
     const main = screen.getByRole('main')
     expect(within(main).getByRole('heading', { level: 1 }).textContent).toContain('We Love')
@@ -19,7 +19,7 @@ describe('App', () => {
     expect(within(main).getByText('Pricing Table')).toBeInTheDocument()
     expect(within(main).getByText('Frequently Ask Questions')).toBeInTheDocument()
     expect(within(main).getByText('Happy Customers')).toBeInTheDocument()
-    expect(within(main).getByText('Doglife Blog')).toBeInTheDocument()
+    expect(within(main).getByText('Houndly Blog')).toBeInTheDocument()
     expect(within(main).getByText('Our Services')).toBeInTheDocument()
     expect(within(main).getByText('Contact Form')).toBeInTheDocument()
 

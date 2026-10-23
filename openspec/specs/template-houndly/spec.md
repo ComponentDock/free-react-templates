@@ -1,8 +1,8 @@
-# Template: Doglife (Dog Care Website)
+# Template: Houndly (Dog Care Website)
 
 ## Purpose
 
-Doglife is a multi-section dog-care website template in the
+Houndly is a multi-section dog-care website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Doglife" design (see TEMPLATES.md), built under a different
 name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -12,7 +12,7 @@ with "We Love Dogs" headline, welcome/about block, "Happy Pets" and "Modern
 Equipment" highlight columns, a vet intro ("Meet Jean Smith Our Dog
 Veterenarian"), a pricing table, an FAQ accordion, customer testimonials, a
 blog list, a six-item services grid, and a contact form + info section on a
-burgundy footer. Doglife follows the same structure and adds the repo's
+burgundy footer. Houndly follows the same structure and adds the repo's
 standard dark-mode toggle and accessible patterns. All imagery is recreated
 with seeded placeholder images (no assets copied).
 
@@ -40,7 +40,7 @@ success`, `#71bc42`) and an image; then h2 "Meet Jean Smith Our Dog
   6. Frequently Ask Questions — h2 + accordion of four question items.
   7. Happy Customers (`bg-light`) — testimonial cards: Ricky Fisher, Ken
      Davis, Mellisa Griffin, Robert Steward (photo, name, quote).
-  8. Blog — h2 "Dogger Blog" (recreated as "Doglife Blog"), four entries
+  8. Blog — h2 "Dogger Blog" (recreated as "Houndly Blog"), four entries
      (image, meta, title, excerpt, "Read More").
   9. Our Services — h2 + six icon blocks (`icon-paw`): Dog Checkup, Dog
      Dermatology, For Strong Teeth, Dog First Aid, Dog Dryer, Expert
@@ -65,26 +65,36 @@ success`, `#71bc42`) and an image; then h2 "Meet Jean Smith Our Dog
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#9c2c2c`, burgundy scale in `@theme`); placeholder
-  images via `https://picsum.photos/seed/doglife-<n>/<w>/<h>`; icons from
+  images via `https://picsum.photos/seed/houndly-<n>/<w>/<h>`; icons from
   lucide-react (paw icon for service blocks); social icons inline SVG; no
   assets copied.
 
-Doglife lives in `apps/doglife` and uses shared components from `packages/ui`
+Houndly lives in `apps/houndly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
+
+## Naming
+
+- **Public name:** Houndly — a new, original name for the recreation. The
+  source design's name never appears in app code, package names, hostnames or
+  branding (AGENTS.md rule 5).
+- **Provenance:** recreation of ColorLib "Doglife"
+  (https://colorlib.com/wp/template/doglife/). The app was renamed from the
+  interim `doglife` folder after `scripts/audit-naming.mjs` flagged it; see
+  `docs/naming-audit.md`.
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Doglife", links
+The system SHALL render a navigation bar with the site name "Houndly", links
 to the main sections (Home, About, Doctor, Pricing, Blog, Services, Contact),
 and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Doglife page is rendered
+- **GIVEN** the Houndly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Doglife" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Houndly" and links to the main sections
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -179,7 +189,7 @@ testimonial cards (photo, name, quote).
 
 ### Requirement: Blog section
 
-The system SHALL render a "Doglife Blog" section with at least four blog
+The system SHALL render a "Houndly Blog" section with at least four blog
 entries, each with an image, meta text, title, excerpt, and a "Read More"
 button.
 
@@ -187,7 +197,7 @@ button.
 
 - **GIVEN** the page is rendered
 - **WHEN** the blog section is displayed
-- **THEN** it SHALL show the heading "Doglife Blog"
+- **THEN** it SHALL show the heading "Houndly Blog"
 - **AND** it SHALL show at least four blog entries with title, excerpt, and a "Read More" button
 
 ### Requirement: Services section
@@ -233,7 +243,7 @@ Newsletter" form.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Doglife" and an about blurb
+- **THEN** it SHALL show the site name "Houndly" and an about blurb
 - **AND** it SHALL show Quick Links, social links, and a Subscribe Newsletter form
 
 ### Requirement: Page composition
@@ -243,10 +253,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Doglife app is rendered
+- **GIVEN** the Houndly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Doglife — Dog Care Website Template"
+- **AND** the document title SHALL be "Houndly — Dog Care Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -266,7 +276,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/doglife/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/houndly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -275,7 +285,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/doglife/` is inspected
+- **WHEN** every non-test file under `apps/houndly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -283,15 +293,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Doglife" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Houndly" and links to the main sections
 - [x] Hero section — it SHALL contain a level-1 heading matching "We Love Dogs"
 - [x] Welcome section — it SHALL show the heading "Welcome To Our Website"
 - [x] Highlights section — it SHALL show the headings "Happy Pets" and "Modern Equipment"
 - [x] Pricing section — it SHALL show the heading "Pricing Table"
 - [x] FAQ section — it SHALL show the heading "Frequently Ask Questions"
 - [x] Testimonials section — it SHALL show the heading "Happy Customers"
-- [x] Blog section — it SHALL show the heading "Doglife Blog"
+- [x] Blog section — it SHALL show the heading "Houndly Blog"
 - [x] Services section — it SHALL show the heading "Our Services"
 - [x] Contact section — it SHALL show the heading "Contact Form"
-- [x] Footer — it SHALL show the site name "Doglife" and an about blurb
+- [x] Footer — it SHALL show the site name "Houndly" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
