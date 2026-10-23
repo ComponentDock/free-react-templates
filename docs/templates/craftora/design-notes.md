@@ -1,17 +1,17 @@
-# Chimper — Design Notes
+# Craftora — Design Notes
 
 Reference: **Chimper** — `https://colorlib.com/wp/template/chimper/`  
 Live preview: `https://preview.colorlib.com/theme/chimper/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/chimper-free-template.jpg  
-Shipped: https://chimper.free.componentdock.com
+Shipped: https://craftora.free.componentdock.com
 
-Chimper is a single-page web-agency landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Chimper" website template design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Craftora is a single-page web-agency landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Chimper" website template design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Quicksand**, **Quicksand:wght@300;400;500;700;900**
 
-## Design tokens (`apps/chimper/src/index.css` `@theme`)
+## Design tokens (`apps/craftora/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ Fonts loaded by `index.html` (Google Fonts): **Quicksand**, **Quicksand:wght@300
 The system SHALL render a top utility bar above the navbar with contact details and social links.
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Chimper", anchor links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Craftora", anchor links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-viewport hero with a rotating headline and a "Hire Us" button.
@@ -96,8 +96,8 @@ The system SHALL render a footer with an about blurb, link columns, social links
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/chimper/` may name the source designer,
+- **Provenance ban.** No file under `apps/craftora/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/chimper/public/CNAME` = `chimper.free.componentdock.com`
-  and the package `homepage` = `https://chimper.free.componentdock.com`.
+- **Deploy identity.** `apps/craftora/public/CNAME` = `craftora.free.componentdock.com`
+  and the package `homepage` = `https://craftora.free.componentdock.com`.

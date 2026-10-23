@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Chimper — Web Agency Template'
+    document.title = 'Craftora — Web Agency Template'
   }, [])
 
   return (

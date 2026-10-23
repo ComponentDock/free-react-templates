@@ -1,9 +1,9 @@
 import { ButtonLink } from '@free-react-templates/ui'
 
 const projects = [
-  { name: 'Project Name 1', category: 'Web Application', seed: 'chimper-work-1' },
-  { name: 'Project Name 2', category: 'Branding', seed: 'chimper-work-2' },
-  { name: 'Project Name 3', category: 'Website', seed: 'chimper-work-3' },
+  { name: 'Project Name 1', category: 'Web Application', seed: 'craftora-work-1' },
+  { name: 'Project Name 2', category: 'Branding', seed: 'craftora-work-2' },
+  { name: 'Project Name 3', category: 'Website', seed: 'craftora-work-3' },
 ] as const
 
 export function Projects() {

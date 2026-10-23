@@ -16,7 +16,7 @@ describe('Hero', () => {
 
     expect(screen.getByRole('link', { name: 'Hire Us' })).toHaveAttribute('href', '#contact')
 
-    expect(screen.getByRole('img', { name: 'Chimper hero workspace' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Craftora hero workspace' })).toBeInTheDocument()
   })
 
   it('cycles through the typed words over time', () => {

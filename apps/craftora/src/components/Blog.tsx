@@ -1,7 +1,7 @@
 const posts = [
-  { author: 'Ham Brook', seed: 'chimper-blog-1' },
-  { author: 'James Phelps', seed: 'chimper-blog-2' },
-  { author: 'James Phelps', seed: 'chimper-blog-3' },
+  { author: 'Ham Brook', seed: 'craftora-blog-1' },
+  { author: 'James Phelps', seed: 'craftora-blog-2' },
+  { author: 'James Phelps', seed: 'craftora-blog-3' },
 ] as const
 
 export function Blog() {

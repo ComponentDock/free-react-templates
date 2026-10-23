@@ -8,7 +8,7 @@ describe('Navbar', () => {
     const user = userEvent.setup()
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: 'Chimper' })).toHaveAttribute('href', '#home')
+    expect(screen.getByRole('link', { name: 'Craftora' })).toHaveAttribute('href', '#home')
 
     for (const label of ['Home', 'Work', 'About', 'Blog', 'Contact']) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()

@@ -13,9 +13,9 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after BulkApp → Bundle
+## State after Chimper → Craftora
 
-17 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+16 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
@@ -24,11 +24,11 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `flowly` (#1816), `applab` → `velocity` (#1817), `appli` → `knotly` (#1818),
 `appru` → `rocket` (#1819), `apps` → `hatch` (#1820), `appson` → `takeoff`
 (#1821), `appy` → `tandem` (#1822), `bold` → `strive` (#1823),
-`breed` → `wagly` (#1824), `bulkapp` → `bundle` (#1825).
+`breed` → `wagly` (#1824), `bulkapp` → `bundle` (#1825),
+`chimper` → `craftora` (this PR).
 
 | app                 | source design  |
 | ------------------- | -------------- |
-| apps/chimper        | Chimper        |
 | apps/colid          | Colid          |
 | apps/crafted        | Crafted        |
 | apps/dogger         | Dogger         |

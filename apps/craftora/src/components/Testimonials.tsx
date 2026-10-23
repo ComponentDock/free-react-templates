@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: 'John Smith',
     quote:
-      '“Chimper helped us launch a brand we are truly proud of. Every detail was considered and the process felt effortless from start to finish.”',
+      '“Craftora helped us launch a brand we are truly proud of. Every detail was considered and the process felt effortless from start to finish.”',
   },
   {
     name: 'Christine Aguilar',
@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: 'Robert Spears',
     quote:
-      '“Working with the Chimper team was a joy. Clear communication, beautiful design, and a launch that went flawlessly.”',
+      '“Working with the Craftora team was a joy. Clear communication, beautiful design, and a launch that went flawlessly.”',
   },
   {
     name: 'Bruce Rogers',
@@ -48,7 +48,7 @@ export function Testimonials() {
                   {testimonial.quote}
                 </blockquote>
                 <img
-                  src={`https://picsum.photos/seed/chimper-avatar-${i + 1}/100/100`}
+                  src={`https://picsum.photos/seed/craftora-avatar-${i + 1}/100/100`}
                   alt={testimonial.name}
                   className="mx-auto mt-8 h-24 w-24 rounded-full object-cover"
                 />

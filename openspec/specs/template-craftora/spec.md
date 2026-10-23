@@ -1,8 +1,8 @@
-# Template: Chimper (Web Agency Landing)
+# Template: Craftora (Web Agency Landing)
 
 ## Purpose
 
-Chimper is a single-page web-agency landing template in the
+Craftora is a single-page web-agency landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Chimper" website template design (see TEMPLATES.md), built
 under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -19,7 +19,7 @@ under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   1. Top bar (`top-bar`, bottom border): "Phone: +1 292 3293 4238" ·
      "Email: info@yourdomain.com" · social icons (Facebook, Twitter,
      Instagram, LinkedIn).
-  2. Navbar (`site-navbar`, white): logo "Chimper"; links Home, Work,
+  2. Navbar (`site-navbar`, white): logo "Craftora"; links Home, Work,
      Services (dropdown: Web Applications, WordPress Dev, Mobile
      Applications, eCommerce), About, Blog, Contact.
   3. Hero (`site-blocks-cover overlay`): full-viewport photo background
@@ -27,7 +27,7 @@ under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
      rotating ["Web Apps", "WordPress", "Mobile Apps"]; lead "We Make
      Beautiful Things"; "Hire Us" button.
   4. Welcome (`ft-feature-1`, black band): circular play button
-     (brand `#0d0cb5`) + "Welcome To Chimper An Awward Winning Web Agency";
+     (brand `#0d0cb5`) + "Welcome To Craftora An Awward Winning Web Agency";
      feature photo; 4 service items — Web Design, Branding & Identity,
      Art Direction, Copywriting — each with a blurb and "Read More" link.
   5. Values (`site-section`): three numbered cards "01. Our Values",
@@ -65,13 +65,13 @@ under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Testimonial quote: italic, 1.5rem, max-width 800px centered; avatar
     circle 100px.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/chimper-<n>/<w>/<h>`); icons → lucide-react
+  (`picsum.photos/seed/craftora-<n>/<w>/<h>`); icons → lucide-react
   (Smartphone, Puzzle, Paintbrush, MessageCircle for the services;
   Play for the video button) plus inline SVG brand icons (Facebook, X,
   Instagram, LinkedIn — brand icons were removed from lucide-react);
   font → Google Fonts Quicksand via `<link>`; no assets copied.
 
-Chimper lives in `apps/chimper` and uses shared components from `packages/ui`
+Craftora lives in `apps/craftora` and uses shared components from `packages/ui`
 (ButtonLink) where the house pattern does.
 
 ## Design tokens
@@ -92,21 +92,21 @@ details and social links.
 
 #### Scenario: Top bar content
 
-- **GIVEN** the Chimper page is rendered
+- **GIVEN** the Craftora page is rendered
 - **WHEN** the top bar is displayed
 - **THEN** it SHALL show "Phone: +1 292 3293 4238" and "Email: info@yourdomain.com"
 - **AND** it SHALL show social links for Facebook, X, Instagram, and LinkedIn
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Chimper",
+The system SHALL render a navigation bar with the site name "Craftora",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Chimper page is rendered
+- **GIVEN** the Craftora page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Chimper" and links to Home, Work, Services, About, Blog, and Contact
+- **THEN** the navbar SHALL show the site name "Craftora" and links to Home, Work, Services, About, Blog, and Contact
 - **AND** the Services link SHALL expand a list of services (Web Applications, WordPress Dev, Mobile Applications, eCommerce)
 - **AND** the navbar SHALL show a dark-mode toggle button
 
@@ -139,7 +139,7 @@ heading, and four service items with icons, blurbs, and "Read More" links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the welcome section is displayed
-- **THEN** it SHALL contain a heading "Welcome To Chimper An Awward Winning Web Agency"
+- **THEN** it SHALL contain a heading "Welcome To Craftora An Awward Winning Web Agency"
 - **AND** it SHALL show service items "Web Design", "Branding & Identity", "Art Direction", and "Copywriting", each with a "Read More" link
 
 ### Requirement: Values section
@@ -215,7 +215,7 @@ links, a newsletter form, and a copyright line.
 - **THEN** it SHALL show an "About Us" blurb and a "Features" link column (About Us, Services, Testimonials, Contact Us)
 - **AND** it SHALL show social links (Facebook, X, Instagram, LinkedIn)
 - **AND** it SHALL show a newsletter form with an email input and a "Send" button
-- **AND** it SHALL show a copyright line for "Chimper"
+- **AND** it SHALL show a copyright line for "Craftora"
 
 ### Requirement: Page composition
 
@@ -224,10 +224,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Chimper app is rendered
+- **GIVEN** the Craftora app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the top bar and navbar in the banner landmark, all sections in the main landmark, and the footer in the contentinfo landmark
-- **AND** the document title SHALL be "Chimper — Web Agency Template"
+- **AND** the document title SHALL be "Craftora — Web Agency Template"
 
 ### Requirement: Component Dock attribution
 
@@ -247,7 +247,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/chimper/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/craftora/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -256,7 +256,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/chimper/` is inspected
+- **WHEN** every non-test file under `apps/craftora/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -265,9 +265,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top bar — it SHALL show "Phone: +1 292 3293 4238" and "Email: info@yourdomain.com"
-- [x] Navigation bar — the navbar SHALL show the site name "Chimper" and links to Home, Work, Services, About, Blog, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Craftora" and links to Home, Work, Services, About, Blog, and Contact
 - [x] Hero section — it SHALL contain a level-1 heading "We Are Expert in" that cycles through "Web Apps", "WordPress", and "Mobile Apps"
-- [x] Welcome / services section — it SHALL contain a heading "Welcome To Chimper An Awward Winning Web Agency"
+- [x] Welcome / services section — it SHALL contain a heading "Welcome To Craftora An Awward Winning Web Agency"
 - [x] Values section — it SHALL show items numbered 01, 02, and 03 titled "Our Values", "Our Mission", and "Our Philosophy"
 - [x] Featured projects section — it SHALL contain a heading "Featured Projects"
 - [x] Testimonials section — it SHALL show quotes attributed to "John Smith", "Christine Aguilar", "Robert Spears", and "Bruce Rogers"

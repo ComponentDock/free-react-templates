@@ -9,12 +9,12 @@ describe('Welcome', () => {
     expect(
       screen.getByRole('heading', {
         level: 2,
-        name: 'Welcome To Chimper An Awward Winning Web Agency',
+        name: 'Welcome To Craftora An Awward Winning Web Agency',
       }),
     ).toBeInTheDocument()
 
     expect(screen.getByRole('link', { name: 'Play the welcome video' })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Chimper studio team at work' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Craftora studio team at work' })).toBeInTheDocument()
 
     for (const service of ['Web Design', 'Branding & Identity', 'Art Direction', 'Copywriting']) {
       expect(screen.getByRole('heading', { level: 3, name: service })).toBeInTheDocument()

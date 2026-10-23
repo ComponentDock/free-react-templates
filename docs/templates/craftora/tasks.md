@@ -1,7 +1,8 @@
-# Chimper (Colorlib Chimper) — Tasks & Design Notes
+# Craftora (recreation of Colorlib Chimper) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-chimper`.
+> Shipped as `apps/craftora` and deployed to
+> https://craftora.free.componentdock.com. Renamed from the
+> source-name-reusing folder under AGENTS.md rule 5 (new-original-name rule).
 
 ## Design notes (replication findings)
 
@@ -15,10 +16,10 @@
   grid, testimonials, and a blog strip.
 - **Structure (1:1, section order):**
   1. Top bar: **Phone: +1 292 3293 4238 · Email: info@yourdomain.com**.
-  2. Navbar: logo "Chimper" + Home, Work, Services (Web Applications,
+  2. Navbar: logo "Craftora" + Home, Work, Services (Web Applications,
      WordPress Dev, Mobile Applications, eCommerce), About, Blog, Contact.
   3. Hero: "We Are Expert in" / "We Make Beautiful Things" + **Hire Us**.
-  4. Services (`ft-feature-1`): "Welcome To Chimper An Awward Winning Web
+  4. Services (`ft-feature-1`): "Welcome To Craftora An Awward Winning Web
      Agency" + 4 cards — **Web Design, Branding & Identity, Art Direction,
      Copywriting** (icon + blurb + **Read More**).
   5. Values: **01. Our Values / 02. Our Mission / 03. Our Philosophy**
@@ -39,30 +40,30 @@
   - Light bgs `#edf0f5`, `#f4f5f9`; dark text `#25262a`.
   - Font: **"Quicksand"** (Google Fonts `<link>`).
   - Rounded indigo buttons with white text.
-- **Recreation name:** Chimper (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/chimper`, package
-  `@free-react-templates/chimper`.
+- **Recreation name:** Craftora (new original name evoking the studio-craft
+  theme; never reuses the source design name). App folder `apps/craftora`,
+  package `@free-react-templates/craftora`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/chimper-<n>/<w>/<h>`); lucide-react icons; Quicksand
+  (`picsum.photos/seed/craftora-<n>/<w>/<h>`); lucide-react icons; Quicksand
   via Google Fonts; indigo primary in `@theme`; repo-standard Navbar
   (dark-mode toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-chimper/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-craftora/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Refine spec on `feat/template-chimper` with full replication pass
+- [x] Refine spec on `feat/template-craftora` with full replication pass
       (preview DOM + `css/style.css` + Bootstrap theme CSS; CTA band, top
       bar, typed words, carousel controls recorded).
-- [ ] Create `apps/chimper` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/chimper`).
+- [ ] Create `apps/craftora` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/craftora`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-chimper`, open PR (source template, preview URL,
+- [ ] Push `feat/template-craftora`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -75,8 +76,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/chimper/` may name the source designer,
+- **Provenance ban.** No file under `apps/craftora/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/chimper/public/CNAME` = `chimper.free.componentdock.com`
-  and the package `homepage` = `https://chimper.free.componentdock.com`.
+- **Deploy identity.** `apps/craftora/public/CNAME` = `craftora.free.componentdock.com`
+  and the package `homepage` = `https://craftora.free.componentdock.com`.

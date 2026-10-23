@@ -24,12 +24,12 @@ export function Welcome() {
                 <Play className="h-5 w-5 fill-current" aria-hidden="true" />
               </a>
               <h2 className="text-xl font-bold leading-snug sm:text-2xl">
-                Welcome To Chimper An Awward Winning Web Agency
+                Welcome To Craftora An Awward Winning Web Agency
               </h2>
             </div>
             <img
-              src="https://picsum.photos/seed/chimper-about/640/480"
-              alt="Chimper studio team at work"
+              src="https://picsum.photos/seed/craftora-about/640/480"
+              alt="Craftora studio team at work"
               className="mt-8 w-full rounded-lg object-cover"
             />
           </div>
