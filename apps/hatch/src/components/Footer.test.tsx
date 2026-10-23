@@ -20,7 +20,7 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: 'X' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toBeInTheDocument()
 
-    expect(screen.getByText(/Copyright © \d{4} Apps\. All rights reserved\./)).toBeInTheDocument()
+    expect(screen.getByText(/Copyright © \d{4} Hatch\. All rights reserved\./)).toBeInTheDocument()
   })
 
   it('clears the email input when the newsletter form is submitted', async () => {

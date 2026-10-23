@@ -13,7 +13,7 @@ describe('About', () => {
       }),
     ).toBeInTheDocument()
     expect(screen.getByText(/Inappropriate behavior is often laughed off/i)).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: /Apps app illustration/i })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /Hatch app illustration/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /see details/i })).toBeInTheDocument()
   })
 })

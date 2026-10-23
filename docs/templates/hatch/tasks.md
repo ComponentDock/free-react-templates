@@ -1,7 +1,8 @@
-# Apps (Colorlib Apps) — Tasks & Design Notes
+# Hatch (recreation of ColorLib "Apps") — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
-> Implementation ships later on `feat/template-apps`.
+> Implementation shipped on `feat/template-hatch`; the app folder, package and
+deploy host were renamed from the pre-rule-5 placeholder to **Hatch**.
 
 ## Design notes (replication findings)
 
@@ -14,7 +15,7 @@
   buttons, category cards, a 3-tile services grid, 3 pricing plans, FAQ +
   stats, and a download CTA.
 - **Structure (1:1, section order):**
-  1. Navbar: logo "Apps" + links Home, Service, feature, price, Faq, Pages,
+  1. Navbar: logo wordmark (source marks it with a cyan left border) + links Home, Service, feature, price, Faq, Pages,
      Generic, Elements.
   2. Hero (`banner-area`): h1 "The Best App in the Universe" + blurb +
      **Load More Item**.
@@ -51,11 +52,12 @@
   - Font: **"Poppins"** (Google Fonts `<link>`).
   - `.primary-btn`: height 42px, padding 0 40px, **border-radius 25px**
     (pill), white text.
-- **Recreation name:** Apps (matches ColorLib name — distinct from existing
-  app names; package-safe lowercase). App folder `apps/apps`, package
-  `@free-react-templates/apps`.
+- **Recreation name:** **Hatch** — a new, original single lowercase word that
+  differs from the source design's name (AGENTS.md rule 5; the earlier
+  `apps` placeholder reused it). App folder `apps/hatch`, package
+  `@free-react-templates/hatch`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/apps-<n>/<w>/<h>`); lucide-react icons; Poppins via
+  (`picsum.photos/seed/hatch-<n>/<w>/<h>`); lucide-react icons; Poppins via
   Google Fonts; video band as styled play button (no actual video); FAQ as
   accessible disclosure accordion; cyan primary in `@theme`; repo-standard
   Navbar (dark-mode toggle) + Footer chrome.
@@ -63,16 +65,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-apps/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-hatch/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/apps` (copy the section-rich landing app pattern —
-      Appru; rename package to `@free-react-templates/apps`).
+- [x] Create `apps/hatch` (copy the section-rich landing app pattern —
+      Rocket; rename package to `@free-react-templates/hatch`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-apps`, open PR (source template, preview URL,
+- [x] Push `feat/template-hatch`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -85,8 +87,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/apps/` may name the source designer,
+- **Provenance ban.** No file under `apps/hatch/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/apps/public/CNAME` = `apps.free.componentdock.com`
-  and the package `homepage` = `https://apps.free.componentdock.com`.
+- **Deploy identity.** `apps/hatch/public/CNAME` = `hatch.free.componentdock.com`
+  and the package `homepage` = `https://hatch.free.componentdock.com`.

@@ -10,10 +10,10 @@ const topProducts = [
 ] as const
 
 const instagramImages = [
-  'https://picsum.photos/seed/apps-ig-1/120/120',
-  'https://picsum.photos/seed/apps-ig-2/120/120',
-  'https://picsum.photos/seed/apps-ig-3/120/120',
-  'https://picsum.photos/seed/apps-ig-4/120/120',
+  'https://picsum.photos/seed/hatch-ig-1/120/120',
+  'https://picsum.photos/seed/hatch-ig-2/120/120',
+  'https://picsum.photos/seed/hatch-ig-3/120/120',
+  'https://picsum.photos/seed/hatch-ig-4/120/120',
 ] as const
 
 export function Footer() {
@@ -46,11 +46,11 @@ export function Footer() {
             You can trust us — we only send promo offers.
           </p>
           <form onSubmit={handleSubmit} className="mt-6 flex items-stretch">
-            <label htmlFor="apps-newsletter" className="sr-only">
+            <label htmlFor="hatch-newsletter" className="sr-only">
               Email address
             </label>
             <input
-              id="apps-newsletter"
+              id="hatch-newsletter"
               type="email"
               required
               value={email}
@@ -91,7 +91,7 @@ export function Footer() {
 
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm text-gray-500">
-          Copyright © {new Date().getFullYear()} Apps. All rights reserved.
+          Copyright © {new Date().getFullYear()} Hatch. All rights reserved.
         </p>
         <SocialLinks />
       </div>
