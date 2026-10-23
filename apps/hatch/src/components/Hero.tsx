@@ -7,7 +7,7 @@ export function Hero() {
       className="relative overflow-hidden bg-night px-4 pb-24 pt-40 sm:px-6 lg:pb-32 lg:pt-48"
     >
       <img
-        src="https://picsum.photos/seed/apps-hero/1600/900"
+        src="https://picsum.photos/seed/hatch-hero/1600/900"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover opacity-25"
@@ -19,7 +19,7 @@ export function Hero() {
           The Best App in the Universe
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-white/80">
-          Inappropriate behavior is often laughed off as &ldquo;boys will be boys&rdquo; — Apps
+          Inappropriate behavior is often laughed off as &ldquo;boys will be boys&rdquo; — Hatch
           raises the standard for conduct, clarity, and care in every interaction.
         </p>
         <ButtonLink

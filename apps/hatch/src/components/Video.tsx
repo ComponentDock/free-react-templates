@@ -4,7 +4,7 @@ export function Video() {
   return (
     <section className="relative overflow-hidden bg-night">
       <img
-        src="https://picsum.photos/seed/apps-video/1600/700"
+        src="https://picsum.photos/seed/hatch-video/1600/700"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"

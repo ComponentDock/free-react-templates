@@ -22,8 +22,8 @@ export function About() {
           </ButtonLink>
         </div>
         <img
-          src="https://picsum.photos/seed/apps-about/640/560"
-          alt="Apps app illustration"
+          src="https://picsum.photos/seed/hatch-about/640/560"
+          alt="Hatch app illustration"
           className="mx-auto w-full max-w-lg rounded-2xl shadow-2xl"
         />
       </div>

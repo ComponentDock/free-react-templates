@@ -26,7 +26,7 @@ export function Navbar() {
           href="#home"
           className="border-l-4 border-azure pl-3 font-display text-2xl font-bold tracking-wide text-white"
         >
-          Apps
+          Hatch
         </a>
 
         <div className="flex items-center gap-4">

@@ -13,7 +13,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Apps — App Landing Template'
+    document.title = 'Hatch — App Landing Template'
   }, [])
 
   return (

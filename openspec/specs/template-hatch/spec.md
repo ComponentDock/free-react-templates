@@ -1,11 +1,16 @@
-# Template: Apps (App Landing Page)
+# Template: Hatch (App Landing Page)
 
 ## Purpose
 
-Apps is a single-page app landing template in the free-react-templates
+Hatch is a single-page app landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Apps"
 website template design (see TEMPLATES.md), built under a different name with
 the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+Naming (AGENTS.md rule 5): the template ships as **Hatch** — a single lowercase
+word that differs from the source design's name; the source name is never the
+app folder, npm package or brand. Provenance stays in this spec, `TEMPLATES.md`
+and the PR.
 
 ## Design reference (replication findings)
 
@@ -41,11 +46,11 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Buttons: `.primary-btn` — line-height 42px, 40px side padding,
     **border-radius 25px** (pill), white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/apps-<n>/<w>/<h>`); icons → lucide-react; the video
+  (`picsum.photos/seed/hatch-<n>/<w>/<h>`); icons → lucide-react; the video
   band → styled play button (no actual video); FAQ → accessible disclosure
   accordion; no assets copied.
 
-Apps lives in `apps/apps` and uses shared components from `packages/ui`
+Hatch lives in `apps/hatch` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Design tokens
@@ -61,14 +66,14 @@ Recorded so the palette is machine-readable: the prep already states this colour
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Apps",
+The system SHALL render a top navigation bar with the site name "Hatch",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Apps page is rendered
+- **GIVEN** the Hatch page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Apps" and links to Home, Service, Features, Pricing, and FAQ
+- **THEN** the navbar SHALL show the site name "Hatch" and links to Home, Service, Features, Pricing, and FAQ
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -199,10 +204,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Apps app is rendered
+- **GIVEN** the Hatch app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Apps — App Landing Template"
+- **AND** the document title SHALL be "Hatch — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -222,7 +227,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/apps/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/hatch/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -231,7 +236,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/apps/` is inspected
+- **WHEN** every non-test file under `apps/hatch/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -239,7 +244,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Apps" and links to Home, Service, Features, Pricing, and FAQ
+- [x] Navigation bar — the navbar SHALL show the site name "Hatch" and links to Home, Service, Features, Pricing, and FAQ
 - [x] Hero section — it SHALL contain a level-1 heading "The Best App in the Universe"
 - [x] Categories section — it SHALL contain a heading "Latest News from all categories"
 - [x] About section — it SHALL contain the heading "We Believe that Interior beautifies the Total Architecture"

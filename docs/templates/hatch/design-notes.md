@@ -1,17 +1,17 @@
-# Apps — Design Notes
+# Hatch — Design Notes
 
 Reference: **Apps** — `https://colorlib.com/wp/template/apps/`  
 Live preview: `https://preview.colorlib.com/theme/apps/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg  
-Shipped: https://apps.free.componentdock.com
+Shipped: https://hatch.free.componentdock.com
 
-Apps is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Apps" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Hatch is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Apps" website template design (see TEMPLATES.md), shipped as **Hatch** — a new original name (AGENTS.md rule 5) — with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700;800**
 
-## Design tokens (`apps/apps/src/index.css` `@theme`)
+## Design tokens (`apps/hatch/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Apps", anchor links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Hatch", anchor links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and a call-to-action button.
@@ -101,8 +101,8 @@ The system SHALL render a footer with link columns, a newsletter form, social li
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/apps/` may name the source designer,
+- **Provenance ban.** No file under `apps/hatch/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/apps/public/CNAME` = `apps.free.componentdock.com`
-  and the package `homepage` = `https://apps.free.componentdock.com`.
+- **Deploy identity.** `apps/hatch/public/CNAME` = `hatch.free.componentdock.com`
+  and the package `homepage` = `https://hatch.free.componentdock.com`.
