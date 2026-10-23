@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sienna brand palette — recreated from the ColorLib "Remake" design
+  /* Sienna brand palette — measured from the reference design
      (css/style.css): rust brown #99513a accents/buttons, dark slate
      #3a414e headings, warm section bg #fff9f7, muted #999999. */
   --color-brand: #99513a;

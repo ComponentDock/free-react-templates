@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sky brand blue — inspired by the original ColorLib "Error 404 V2"
-     error page (bright blue middle zero + focus ring + hover icon). */
+  /* Sky brand blue — inspired by the reference error-page design
+     (bright blue middle zero + focus ring + hover icon). */
   --color-brand: #00b7ff;
 
   --color-primary-50: #f0f9ff;
