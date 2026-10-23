@@ -27,7 +27,7 @@ const features = [
   },
   {
     name: 'Highly Recomended',
-    copy: 'Families and clubs across the region trust Horse Club for quality instruction and care.',
+    copy: 'Families and clubs across the region trust Canter for quality instruction and care.',
     icon: ThumbsUp,
     color: 'bg-coral/10 text-coral',
   },
@@ -48,7 +48,7 @@ export function Features() {
             Our Featured Services
           </h2>
           <p className="mt-4 text-sm font-light leading-relaxed text-muted dark:text-gray-400">
-            Who are in extremely love with eco friendly system — explore everything Horse Club has
+            Who are in extremely love with eco friendly system — explore everything Canter has
             to offer.
           </p>
         </div>

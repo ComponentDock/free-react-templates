@@ -59,7 +59,7 @@ today's preview host.
   chrome; social icons (GitHub, X, LinkedIn) inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/horse-club` (most recent full multi-section
+- Base implementation on `apps/canter` (most recent full multi-section
   landing architecture — `apps/sage` referenced in early prep never existed
   in git history) — the demo itself is Tailwind-native, so the recreation
   maps 1:1 onto the monorepo stack.
@@ -71,7 +71,7 @@ today's preview host.
       on `feat/template-pawpal` with fetched demo DOM/CSS findings
       (2026-08-04).
 - [x] Validate spec: `npm run spec:validate` (221 specs pass).
-- [x] Create `apps/pawpal` (copy `apps/horse-club`; rename package to
+- [x] Create `apps/pawpal` (copy `apps/canter`; rename package to
       `@free-react-templates/pawpal`; drop unused zod dep).
 - [x] TDD: tests first for Navbar, Hero, Services, WhyUs, Gallery,
       Testimonials, Cta, Footer, App composition; 11 tests, all green.

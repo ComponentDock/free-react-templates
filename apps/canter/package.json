@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/horse-club",
+  "name": "@free-react-templates/canter",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://horse-club.free.componentdock.com",
+  "homepage": "https://canter.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -13,14 +13,14 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Animal Shelter → Furhaven
+## State after Horse Club → Canter
 
-28 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+27 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
 Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
-`animal-shelter` → `furhaven` (#1814).
+`animal-shelter` → `furhaven` (#1814), `horse-club` → `canter` (#1815).
 
 | app                 | source design  |
 | ------------------- | -------------- |
@@ -43,7 +43,6 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 | apps/farmie         | Farmie         |
 | apps/favison        | Favison        |
 | apps/gaas           | GaaS           |
-| apps/horse-club     | Horse Club     |
 | apps/launch         | Launch         |
 | apps/leopet         | Leopet         |
 | apps/massive        | Massive        |
@@ -81,5 +80,5 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
    hostname cannot be torn down locally — leave it.
 
 
-Prefer names that evoke the design (pet care → `Vetly`, horse → `Stable`), a
+Prefer names that evoke the design (pet care → `Vetly`, horse club → `Canter`), a
 single lowercase word, no collision with `ls apps/`.

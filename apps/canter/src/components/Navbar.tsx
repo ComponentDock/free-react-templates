@@ -27,9 +27,9 @@ export function Navbar() {
     <header className="bg-white shadow-sm dark:bg-gray-950">
       <div className="border-b border-gray-100 bg-paper dark:border-gray-800 dark:bg-gray-900">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2 text-xs text-muted dark:text-gray-400 sm:px-6">
-          <a href="mailto:info@horseclub.com" className="inline-flex items-center gap-2">
+          <a href="mailto:info@canter.com" className="inline-flex items-center gap-2">
             <Mail className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
-            info@horseclub.com
+            info@canter.com
           </a>
           <a href="tel:+88012312658439" className="inline-flex items-center gap-2">
             <Phone className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
@@ -42,7 +42,7 @@ export function Navbar() {
           href="#home"
           className="text-xl font-bold uppercase tracking-wide text-ink dark:text-white"
         >
-          Horse Club
+          Canter
         </a>
 
         <div className="flex items-center gap-4">

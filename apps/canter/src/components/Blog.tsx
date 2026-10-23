@@ -4,21 +4,21 @@ const posts = [
     meta: 'Travel, Lifestyle',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'https://picsum.photos/seed/horseclub-blog-1/600/400',
+    image: 'https://picsum.photos/seed/canter-blog-1/600/400',
   },
   {
     title: 'Summer Riding Gear Essentials',
     meta: 'Training, Events',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'https://picsum.photos/seed/horseclub-blog-2/600/400',
+    image: 'https://picsum.photos/seed/canter-blog-2/600/400',
   },
   {
     title: 'Equestrian Lifestyle & Care Tips',
     meta: 'Care, Lifestyle',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'https://picsum.photos/seed/horseclub-blog-3/600/400',
+    image: 'https://picsum.photos/seed/canter-blog-3/600/400',
   },
 ] as const
 

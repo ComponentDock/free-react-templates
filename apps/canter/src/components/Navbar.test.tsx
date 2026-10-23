@@ -6,8 +6,8 @@ import { Navbar } from './Navbar'
 describe('Navbar', () => {
   it('shows the site name, top-bar contacts, section links, and the dark-mode toggle', () => {
     render(<Navbar />)
-    expect(screen.getByText('Horse Club')).toBeInTheDocument()
-    expect(screen.getByText('info@horseclub.com')).toBeInTheDocument()
+    expect(screen.getByText('Canter')).toBeInTheDocument()
+    expect(screen.getByText('info@canter.com')).toBeInTheDocument()
     expect(screen.getByText('+880 123 12 658 439')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Home' })).toHaveAttribute('href', '#home')
     expect(screen.getByRole('link', { name: 'About' })).toHaveAttribute('href', '#about')

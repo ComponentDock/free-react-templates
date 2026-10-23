@@ -14,7 +14,7 @@ export function Footer() {
     <footer id="contact" className="bg-ink py-16 text-gray-300">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 className="text-xl font-bold uppercase tracking-wide text-white">Horse Club</h3>
+          <h3 className="text-xl font-bold uppercase tracking-wide text-white">Canter</h3>
           <p className="mt-5 text-sm font-light leading-relaxed text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
@@ -32,7 +32,7 @@ export function Footer() {
           <ul className="mt-5 space-y-3 text-sm font-light text-gray-400">
             <li>012-6532-568-9746</li>
             <li>012-6532-569-9748</li>
-            <li>info@horseclub.com</li>
+            <li>info@canter.com</li>
           </ul>
         </div>
         <div>
@@ -41,11 +41,11 @@ export function Footer() {
             Subscribe our newsletter to get updates about our events and offers.
           </p>
           <form onSubmit={handleSubmit} className="mt-6 flex items-stretch">
-            <label htmlFor="horseclub-newsletter" className="sr-only">
+            <label htmlFor="canter-newsletter" className="sr-only">
               Email address
             </label>
             <input
-              id="horseclub-newsletter"
+              id="canter-newsletter"
               type="email"
               required
               value={email}
@@ -65,7 +65,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light text-gray-400">
-          Copyright © {new Date().getFullYear()} Horse Club. All rights reserved.
+          Copyright © {new Date().getFullYear()} Canter. All rights reserved.
         </p>
         <SocialLinks />
       </div>
