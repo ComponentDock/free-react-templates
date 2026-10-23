@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, sections, and footer with the correct landmarks and document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Appli — App Landing Page Template')
+    expect(document.title).toBe('Knotly — App Landing Page Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()

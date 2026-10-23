@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react'
 const testimonials = [
   {
     quote:
-      'Appli helped us personalize every step of the journey — the templates look exactly like the product we dreamed of.',
+      'Knotly helped us personalize every step of the journey — the templates look exactly like the product we dreamed of.',
     name: 'Robert Brown',
     role: 'Creative designer',
   },

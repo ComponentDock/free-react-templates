@@ -4,7 +4,7 @@ export function Video() {
   return (
     <section className="relative overflow-hidden bg-paper py-24 dark:bg-gray-950">
       <img
-        src="https://picsum.photos/seed/appli-video/1600/700"
+        src="https://picsum.photos/seed/knotly-video/1600/700"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"

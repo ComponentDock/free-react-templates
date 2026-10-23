@@ -13,7 +13,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Appli — App Landing Page Template'
+    document.title = 'Knotly — App Landing Page Template'
   }, [])
 
   return (

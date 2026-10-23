@@ -13,7 +13,7 @@ export function AboutOne() {
           </h2>
           <p className="mt-5 leading-relaxed text-muted dark:text-gray-400">
             What if you could get all your website tasks off your plate and focus only on the fun
-            stuff? Appli lets you scale your marketing and grow faster without becoming a designer
+            stuff? Knotly lets you scale your marketing and grow faster without becoming a designer
             or developer yourself.
           </p>
           <a
@@ -24,8 +24,8 @@ export function AboutOne() {
           </a>
         </div>
         <img
-          src="https://picsum.photos/seed/appli-about-1/800/700"
-          alt="Appli personalization dashboard"
+          src="https://picsum.photos/seed/knotly-about-1/800/700"
+          alt="Knotly personalization dashboard"
           className="w-full rounded-2xl shadow-xl"
         />
       </div>

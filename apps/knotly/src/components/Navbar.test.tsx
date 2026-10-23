@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('renders the site name, section links, and Log in button', () => {
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: 'Appli' })).toHaveAttribute('href', '#home')
+    expect(screen.getByRole('link', { name: 'Knotly' })).toHaveAttribute('href', '#home')
 
     for (const label of ['Home', 'Features', 'About', 'FAQ', 'Blog', 'Contact']) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()

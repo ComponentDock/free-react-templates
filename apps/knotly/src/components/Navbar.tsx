@@ -24,7 +24,7 @@ export function Navbar() {
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-6 sm:px-6">
         <a href="#home" className="font-display text-2xl font-extrabold text-white">
-          Appli
+          Knotly
         </a>
 
         <div className="flex items-center gap-4">

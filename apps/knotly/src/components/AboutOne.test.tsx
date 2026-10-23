@@ -14,10 +14,10 @@ describe('AboutOne', () => {
       name: 'You have the power to personalize your website coding.',
     })
     const image = within(section as HTMLElement).getByRole('img', {
-      name: 'Appli personalization dashboard',
+      name: 'Knotly personalization dashboard',
     })
 
-    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/appli-about-1/800/700')
+    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/knotly-about-1/800/700')
 
     const link = within(section as HTMLElement).getByRole('link', { name: 'See how it work' })
     expect(link).toHaveAttribute('href', '#features')

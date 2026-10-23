@@ -14,10 +14,10 @@ describe('AboutTwo', () => {
       name: 'Personalized experiences are proven to increase conversions',
     })
     const image = within(section as HTMLElement).getByRole('img', {
-      name: 'Appli conversion insights',
+      name: 'Knotly conversion insights',
     })
 
-    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/appli-about-2/800/700')
+    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/knotly-about-2/800/700')
 
     expect(
       within(section as HTMLElement).getByRole('link', { name: 'See how it work' }),
