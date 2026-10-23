@@ -20,7 +20,7 @@ node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 list — record the mapping when those specs are next touched.
 
 Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
-`animal-shelter` → `furhaven` (this PR).
+`animal-shelter` → `furhaven` (#1814).
 
 | app                 | source design  |
 | ------------------- | -------------- |
