@@ -6,6 +6,29 @@
 
 Polenta is a free restaurant landing page template that recreates the ColorLib Risotto design in React 19 + Tailwind CSS 4 + TypeScript. It provides a complete restaurant website with navigation, hero, about, menu, reservation, events, contact, and footer sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/risotto/ (HTTP 200, 38,903 B, fetched 2026-10-23) and its theme stylesheet `theme/risotto/css/style.min.css` (62,731 B, sha256 `a9823f8a9797…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#b84e00` | 20 declarations — `.section-header .sub-title`, `a:hover` |
+| Other chromatic values | `#f36500`, `#ff8c40`, `#f36700` | `#f36500` × 4 (.opening-time ul li .hours); `#ff8c40` × 3 (.footer-nav a[aria-current=page]); `#f36700` × 2 (.title:after) |
+| Surface | `#ffffff` | 35 declarations — `.text-bg-primary`, `.text-bg-success` |
+| Ink / dark surface | `#151515` | 14 declarations — `h1`, `h2` |
+| Typeface | `Quicksand, sans-serif` (5 rules — h1)<br>`Dancing Script, cursive` (3 rules — .section-header .title) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `40px`, `50%`, `4px` | `40px` (.main-button); `50%` (.social-nav li a); `4px` (.navbar-toggle) |
+
+Palette in order of use: `#ffffff` ×35, `#b84e00` ×20, `#151515` ×14, `#ececec` ×6, `#000000` ×5, `#666666` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar with two-tier layout

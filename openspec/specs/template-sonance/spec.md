@@ -9,6 +9,29 @@ player, live & upcoming episodes with category tabs, a call-to-action for
 donations, a latest-episodes grid, and a newsletter footer. Built with
 React 19, Tailwind CSS 4, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/megapod/ (HTTP 200, 53,327 B, fetched 2026-10-23) and its theme stylesheet `theme/megapod/css/style.min.css` (94,276 B, sha256 `c57f4ef3e5e4…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#5550e6` | 39 declarations — `.site-btn`, `.primary-btn` |
+| Other chromatic values | `#151433`, `#6863fd1a`, `#a5a3ff` | `#151433` × 2 (.jp-state-playing .jp-play:after); `#6863fd1a` × 2 (.podcast__item__text .heart-icon); `#a5a3ff` × 2 (.footer__copyright__text i) |
+| Surface | `#ffffff` | 66 declarations — `.text-bg-dark`, `.text-bg-danger` |
+| Ink / dark surface | `#353535` | 33 declarations — `.section-title h2`, `.section-title .h2` |
+| Typeface | `Nunito, sans-serif` (3 rules — html)<br>`var(--bs-body-font-family)` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `5px`, `50%`, `50px` | `5px` (.primary-btn); `50%` (.play-btn); `50px` (.site-btn) |
+
+Palette in order of use: `#ffffff` ×66, `#5550e6` ×39, `#353535` ×33, `#6b6b6b` ×25, `#111111` ×6, `#000000` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation, and search

@@ -4,6 +4,28 @@
 
 Recreation of ColorLib "Contact Form 11" (https://colorlib.com/wp/template/contact-form-11/) as a React + Tailwind CSS template. A minimal two-column contact form with bold typography and bottom-border-only inputs.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/contact-form-11/ (HTTP 200, 2,969 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/contact-form-11/css/style.css` (14,659 B, sha256 `86cb1b267770…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#eb4d55` | 5 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#e61f29` | `#e61f29` × 2 (.cl-btn-primary:hover) |
+| Surface | `#ffffff` | 9 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#000000` | 3 declarations — `body`, `.cl-form-control:focus` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`"Poppins", sans-serif` (1 rule — h2) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `0 !important` | `0.25rem` (.cl-form-control); `0 !important` (.cl-rounded-0) |
+
+Palette in order of use: `#ffffff` ×9, `#eb4d55` ×5, `#6c757d` ×4, `#000000` ×3, `#212529` ×3, `#495057` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders main heading and two-column layout

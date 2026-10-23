@@ -6,6 +6,28 @@
 
 Ethos is an education-focused landing page template that recreates the ColorLib "University" design under a different name. It provides a course search hero, feature highlights, stats counters, course listings, teacher profiles, news/blog section, newsletter signup, and a branded footer — all built with React 19, Vite, Tailwind CSS 4, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/university/ (HTTP 200, 40,860 B, fetched 2026-10-23) and its theme stylesheet `theme/university/css/style.css` (26,821 B, sha256 `18c1da0f392a…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#11cbd7` | 21 declarations — `.site-hero .btn`, `header .navbar .dropdown-menu .dropdown-item:hover` |
+| Surface | `#ffffff` | 38 declarations — `header .navbar .nav-link:hover`, `body` |
+| Ink / dark surface | `#000000` | 16 declarations — `h1`, `h2` |
+| Typeface | `"Rubik", sans-serif` (3 rules — body)<br>`'Ionicons'` (1 rule — .block-8 .accordion-item .heading > a:before) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: 300; font-size: 16px; line-height: 2; color: gray` | `body{…}` rule |
+| Radii | `50%`, `4px`, `16px` | `50%` (.episodes .play); `4px` (.btn); `16px` (#loader) |
+
+Palette in order of use: `#ffffff` ×38, `#11cbd7` ×21, `#000000` ×16, `#cccccc` ×9, `#b3b3b3` ×2, `#4d4d4d` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and contact info

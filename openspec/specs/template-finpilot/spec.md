@@ -6,6 +6,28 @@ Recreation of ColorLib "Busicol" — a business consulting landing page with her
 
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Single-page landing template.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/busicol/ (HTTP 200, 33,308 B, fetched 2026-10-23) and its theme stylesheet `theme/busicol/css/style.css` (157,866 B, sha256 `94e807d5f554…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#28ae60` | 31 declarations — `.boxed-btn`, `.boxed-btn3` |
+| Other chromatic values | `#ff5e13`, `#415094`, `#4cd3e3` | `#ff5e13` × 19 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 85 declarations — `a:focus`, `*::-moz-selection` |
+| Ink / dark surface | `#2c2c2c` | 15 declarations — `.section_title h3`, `.overlay2::before` |
+| Typeface | `"Poppins", sans-serif` (10 rules — h1)<br>`"Roboto", sans-serif` (1 rule — .gj-picker-md) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `3px`, `8px` | `50%` (.owl-carousel .owl-nav div); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×85, `#28ae60` ×31, `#f9f9ff` ×27, `#ff5e13` ×19, `#2c2c2c` ×15, `#999999` ×11.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page Load and Layout

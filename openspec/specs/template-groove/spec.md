@@ -6,6 +6,26 @@ Recreation of ColorLib "Regform 35" (https://colorlib.com/wp/template/colorlib-r
 
 A free concert registration form template with a dark card over a blue background, semi-transparent inputs in a 2x2 grid, and a coral Register button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/regform/colorlib-regform-35/ (HTTP 200, 1,587 B, fetched 2026-10-23) and its theme stylesheet `etc/regform/colorlib-regform-35/css/style.css` (6,144 B, sha256 `4e675dd233b6…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#4077c8` | 1 declarations — `.page-content` |
+| Surface | `#ffffff` | 3 declarations — `.form-v9-content`, `.form-v9-content .form-detail h2::after` |
+| Typeface | `'Nunito', sans-serif` (3 rules — .form-v9-content) | `font-family` declaration in the theme sheet |
+| Radii | `15px`, `25px`, `27.5px` | `15px` (.form-v9-content); `25px` (.form-v9-content .form-detail .register); `27.5px` (.form-v9-content .form-detail input) |
+
+Palette in order of use: `#e5e5e5` ×4, `#ffffff` ×3, `#4077c8` ×1, `#999999` ×1, `#cccccc` ×1, `#d95252` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Heading display

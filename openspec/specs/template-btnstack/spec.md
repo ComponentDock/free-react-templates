@@ -6,6 +6,28 @@ Recreation of ColorLib Bootstrap Buttons 03 (`https://colorlib.com/wp/template/b
 
 BtnStack is a single-page button showcase template demonstrating solid and outline Bootstrap 4 button variants across multiple colors, sizes, shapes, and states, with an interactive playground for live preview.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bb/bootstrap-buttons-03/ (HTTP 200, 8,863 B, fetched 2026-10-23) and its theme stylesheet `theme/bb/bootstrap-buttons-03/css/style.css` (24,040 B, sha256 `9cef0291bdeb…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 19 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#17a2b8`, `#28a745`, `#dc3545` | `#17a2b8` × 9 (.cl-btn-info); `#28a745` × 9 (.cl-btn-success); `#dc3545` × 9 (.cl-btn-danger) |
+| Surface | `#ffffff` | 54 declarations — `.cl-btn-primary`, `.cl-btn-primary:hover` |
+| Ink / dark surface | `#212529` | 13 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `4px`, `.25rem`, `.2rem` | `4px` (.cl-btn); `.25rem` (.cl-btn); `.2rem` (.cl-btn-sm) |
+
+Palette in order of use: `#ffffff` ×54, `#007bff` ×19, `#212529` ×13, `#17a2b8` ×9, `#28a745` ×9, `#6c757d` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement 1: Navbar & Header

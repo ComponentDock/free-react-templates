@@ -11,6 +11,29 @@ A cryptocurrency / bitcoin landing page template. Recreation of ColorLib "Bitcoi
 - **Package:** `@free-react-templates/coinwave`
 - **Deploy:** `coinwave.free.componentdock.com`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bitcoin/ (HTTP 200, 26,745 B, fetched 2026-10-23) and its theme stylesheet `theme/bitcoin/css/main.css` (29,264 B, sha256 `fc000dbc5491…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f78f3d` | 35 declarations — `b`, `sup` |
+| Other chromatic values | `#4cd3e3`, `#38a4ff`, `#f44a40` | `#4cd3e3` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f44a40` × 6 (.genric-btn.danger) |
+| Surface | `#ffffff` | 58 declarations — `.text-white`, `.sample-text-area` |
+| Ink / dark surface | `#222222` | 17 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body)<br>`FontAwesome` (1 rule — .sf-arrows .sf-with-ul:after) | `font-family` declarations in the theme sheet |
+| Body type | `color: #777; font-size: 14px; font-weight: 300; line-height: 1.625em` | `body{…}` rule |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×58, `#f78f3d` ×35, `#f9f9ff` ×29, `#222222` ×17, `#4cd3e3` ×7, `#38a4ff` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Fixed header with navigation

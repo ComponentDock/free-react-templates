@@ -9,6 +9,29 @@ blue-to-purple gradient color scheme, vibrant accent colors, and music-focused
 sections. It showcases an artist's brand, tracks, upcoming events, photo gallery,
 and newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/music/ (HTTP 200, 24,529 B, fetched 2026-10-23) and its theme stylesheet `theme/music/styles/main_styles.css` (32,427 B, sha256 `bfa2bef36079…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2ac275` | 26 declarations — `.button::after`, `.header::after` |
+| Other chromatic values | `#3b125d`, `#eeff2d`, `#2e9e7a` | `#3b125d` × 9 (.header); `#eeff2d` × 8 (.header::after); `#2e9e7a` × 4 (.log_reg ul li a:hover) |
+| Surface | `#ffffff` | 50 declarations — `body`, `p a:hover` |
+| Ink / dark surface | `#3b125d` | 9 declarations — `.news`, `.header` |
+| Typeface | `'Josefin Sans', sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-size: 14px; font-weight: 400; color: #a5a5a5` | `body{…}` rule |
+| Radii | `50%`, `22px`, `15px` | `50%` (.main_nav ul li.active::after); `22px` (.button); `15px` (.player_title) |
+
+Palette in order of use: `#ffffff` ×50, `#2ac275` ×26, `#3b125d` ×9, `#6d6d6d` ×8, `#eeff2d` ×8, `#2e9e7a` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar with logo and section links

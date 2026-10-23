@@ -4,6 +4,28 @@
 
 Treasury is a banking and finance landing page template, recreation of ColorLib "Banker" (https://colorlib.com/wp/template/banker/). It provides a professional single-page template with hero, features, team, gallery, pricing, FAQ, blog, contact, and footer sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/banker/ (HTTP 200, 65,213 B, fetched 2026-10-23) and its theme stylesheet `theme/banker/css/style.css` (29,450 B, sha256 `30f1ba2fa637…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fd7e14` | 23 declarations — `.btn.btn-primary`, `.btn.btn-primary:hover` |
+| Surface | `#ffffff` | 30 declarations — `.btn.btn-primary`, `.btn.btn-primary:hover` |
+| Ink / dark surface | `#000000` | 17 declarations — `.text-black`, `.site-navbar .site-navigation .site-menu > li > a` |
+| Typeface | `"Open Sans", sans-serif` (2 rules — h1) | `font-family` declaration in the theme sheet |
+| Body type | `line-height: 1.7; color: gray; font-weight: 400; font-size: 1rem` | `body{…}` rule |
+| Radii | `50%`, `30px`, `15px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `30px` (.btn); `15px` (.mouse .mouse-icon) |
+
+Palette in order of use: `#ffffff` ×30, `#fd7e14` ×23, `#000000` ×17, `#cccccc` ×5, `#b3b3b3` ×3, `#dee2e6` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo and navigation

@@ -8,6 +8,28 @@ A toggle buttons template showcasing smooth, pill-shaped toggle switches in
 various states (on/off, disabled, color variants). Clean centered layout with
 a heading, subtitle, and a vertical stack of toggle controls.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/checkbox-18/ (HTTP 200, 2,977 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/checkbox-18/css/style.css` (8,563 B, sha256 `9d83c112d334…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0056b3` | 2 declarations — `.btn-link:hover`, `a:hover` |
+| Other chromatic values | `#007bff` | `#007bff` × 2 (a) |
+| Surface | `#ffffff` | 2 declarations — `body` |
+| Ink / dark surface | `#212529` | 1 declarations — `body` |
+| Typeface | `"Roboto", sans-serif` (3 rules — body)<br>`sans-serif` (1 rule — html) | `font-family` declarations in the theme sheet |
+| Radii | `16px`, `50%` | `16px` (.cl-custom-control.material-switch .material-switch-control-indicator); `50%` (.cl-custom-control.material-switch .material-switch-control-indicator::after) |
+
+Palette in order of use: `#0056b3` ×2, `#007bff` ×2, `#6c757d` ×2, `#ffffff` ×2, `#212529` ×1, `#efefef` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Toggle switch component

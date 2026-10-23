@@ -10,6 +10,29 @@ A Nonprofit Charity template with hero section with stats, welcome section with 
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 - Category: Nonprofit / Charity / Donation
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/kindity/ (HTTP 200, 34,444 B, fetched 2026-10-23) and its theme stylesheet `theme/kindity/css/style.css` (71,765 B, sha256 `dd91e6ce5db2…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ea2c58` | 56 declarations — `.header_area .navbar .nav .nav-item:hover .nav-link`, `.header_area .navbar .nav .nav-item.active .nav-link` |
+| Other chromatic values | `#f8b600`, `#4cd3e3`, `#38a4ff` | `#f8b600` × 18 (b); `#4cd3e3` × 11 (.success); `#38a4ff` × 10 (.info) |
+| Surface | `#ffffff` | 95 declarations — `.white_title h2`, `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link` |
+| Ink / dark surface | `#222222` | 41 declarations — `.main_title h2`, `.header_area .navbar .nav .nav-item .nav-link` |
+| Typeface | `"Poppins", sans-serif` (49 rules — body)<br>`'Linearicons-Free'` (2 rules — .banner_area .banner_inner .banner_content .page_link a:before) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 24px; font-size: 14px; font-weight: 300; color: #777777` | `body{…}` rule |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×95, `#ea2c58` ×56, `#222222` ×41, `#777777` ×31, `#999999` ×22, `#eeeeee` ×20.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and donate CTA

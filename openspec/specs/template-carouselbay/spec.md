@@ -4,6 +4,27 @@
 
 Recreation of ColorLib **carousel-17** (`https://colorlib.com/wp/template/carousel-17/`), implemented as a modern React 19 + TypeScript + Tailwind CSS 4 single-page template (`@free-react-templates/carouselbay`).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/carousel-17/ (HTTP 200, 1,782 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/carousel-17/css/style.css` (13,883 B, sha256 `77c73cac3f9b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0056b3` | 1 declarations — `a:hover` |
+| Surface | `#ffffff` | 2 declarations — `body`, `.owl-1 .owl-nav .owl-next span` |
+| Ink / dark surface | `#000000` | 1 declarations — `.owl-carousel .owl-video-wrapper` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `50%` | `50%` (.owl-1 .owl-dots .owl-dot > span) |
+
+Palette in order of use: `#ffffff` ×2, `#000000` ×1, `#0056b3` ×1, `#007bff` ×1, `#212529` ×1, `#b3b3b3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Responsive Navigation Bar

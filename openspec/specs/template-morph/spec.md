@@ -11,6 +11,26 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript. The page is a
 minimal showcase of a styled checkbox list with animated square-to-tick
 morphing transitions — a tiny, self-contained demo.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/checkbox-15/ (HTTP 200, 2,071 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/checkbox-15/css/style.css` (7,984 B, sha256 `70912df0fcee…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0056b3` | 2 declarations — `.btn-link:hover`, `a:hover` |
+| Other chromatic values | `#007bff` | `#007bff` × 2 (a) |
+| Surface | `#ffffff` | 2 declarations — `body` |
+| Ink / dark surface | `#212529` | 1 declarations — `body` |
+| Typeface | `"Roboto", sans-serif` (3 rules — body)<br>`sans-serif` (1 rule — html) | `font-family` declarations in the theme sheet |
+
+Palette in order of use: `#0056b3` ×2, `#007bff` ×2, `#ffffff` ×2, `#212529` ×1, `#6c757d` ×1, `#cccccc` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+
 ## Requirements
 
 ### Requirement: Heading display

@@ -9,6 +9,27 @@ A Travel Search template with page shell and background, tab navigation, search 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-18.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-18/ (HTTP 200, 19,444 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-18/css/style.css` (19,899 B, sha256 `4c01af289836…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#6c7ae0` | 4 declarations — `.btn-submit`, `.plus:hover` |
+| Surface | `#ffffff` | 12 declarations — `.btn-submit`, `.cl-input-group` |
+| Ink / dark surface | `#333333` | 1 declarations — `.label` |
+| Typeface | `Lato, sans-serif` (4 rules — .cl-sel-0)<br>`"Lato", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `10px`, `50%`, `4px` | `10px` (.btn-submit); `50%` (.radio-checkmark); `4px` (.select2-container--default .select2-selection--single) |
+
+Palette in order of use: `#ffffff` ×12, `#cccccc` ×8, `#6c7ae0` ×4, `#555555` ×2, `#808080` ×2, `#00ad5f` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page shell and background

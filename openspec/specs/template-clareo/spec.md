@@ -4,6 +4,29 @@
 
 Recreation of ColorLib "Imahe" (https://colorlib.com/wp/template/imahe/) as a React 19 + Vite + Tailwind CSS 4 template. Photography portfolio with bold yellow accent, full-screen hero, services grid, about section, gallery, blog, instagram feed, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/imahe/ (HTTP 200, 25,400 B, fetched 2026-10-23) and its theme stylesheet `theme/imahe/css/style.css` (26,673 B, sha256 `3424cd0bdf7b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ffdd00` | 19 declarations — `a`, `a:hover` |
+| Other chromatic values | `#ffe01a` | `#ffe01a` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 27 declarations — `.colorlib-nav #colorlib-logo a`, `.colorlib-nav #colorlib-logo a i` |
+| Ink / dark surface | `#000000` | 12 declarations — `h1`, `h2` |
+| Typeface | `"Josefin Sans", sans-serif` (2 rules — body)<br>`"Amatic SC", cursive` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: 300; font-size: 18px; line-height: 1.5; color: gray` | `body{…}` rule |
+| Radii | `50%`, `2px`, `30px` | `50%` (.colorlib-video a); `2px` (.pagination li a:first-child); `30px` (.gallery-img .desc .category span) |
+
+Palette in order of use: `#ffffff` ×27, `#ffdd00` ×19, `#000000` ×12, `#e6e6e6` ×4, `#252525` ×3, `#ffe01a` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar with responsive mobile menu

@@ -19,6 +19,29 @@ Listco design. It provides a hero search section, popular city cards, a
 scrollable directory listing carousel, a how-it-works explainer, new listings,
 and a branded footer linking to Component Dock.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/listco/ (HTTP 200, 34,047 B, fetched 2026-10-23) and its theme stylesheet `theme/listco/assets/css/style.min.css` (92,944 B, sha256 `7082374a35bf…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#b367ff` | 40 declarations — `.btn`, `.boxed-btn` |
+| Other chromatic values | `#1f2b7b`, `#415094`, `#4cd3e3` | `#1f2b7b` × 16 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 5 (.genric-btn.success) |
+| Surface | `#ffffff` | 90 declarations — `.boxed-btn`, `.boxed-btn:hover` |
+| Ink / dark surface | `#000000` | 9 declarations — `.black-btn`, `.main-menu2 ul li a` |
+| Typeface | `Rubik, sans-serif` (12 rules — .boxed-btn) | `font-family` declaration in the theme sheet |
+| Body type | `font-weight: 400; font-size: 16px` | `body{…}` rule |
+| Radii | `50%`, `3px`, `8px` | `50%` (#scrollUp); `3px` (.genric-btn.radius); `8px` (.slider-area form.search-box) |
+
+Palette in order of use: `#ffffff` ×90, `#b367ff` ×40, `#f9f9ff` ×27, `#1f2b7b` ×16, `#999999` ×10, `#000000` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation, login, and add-listing button

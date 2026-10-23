@@ -10,6 +10,29 @@ https://colorlib.com/wp/template/seogo/), built under a DIFFERENT name
 
 - TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/seogo/ (HTTP 200, 34,470 B, fetched 2026-10-23) and its theme stylesheet `theme/seogo/css/style.css` (149,376 B, sha256 `c5531b4a2dc6…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff008c` | 25 declarations — `.boxed-btn`, `.boxed-btn:hover` |
+| Other chromatic values | `#ff5e13`, `#001d38`, `#415094` | `#ff5e13` × 19 (.contact-info .media-body h3 a:hover); `#001d38` × 14 (h1); `#415094` × 7 (.genric-btn.default) |
+| Surface | `#ffffff` | 81 declarations — `*::-moz-selection`, `.owl-carousel .owl-nav div` |
+| Ink / dark surface | `#001d38` | 14 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (8 rules — body)<br>`'themify'` (1 rule — #accordion h5 button.btn.btn-link:after) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: normal` | `body{…}` rule |
+| Radii | `50%`, `3px`, `8px` | `50%` (.owl-carousel .owl-nav div); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×81, `#f9f9ff` ×27, `#ff008c` ×25, `#ff5e13` ×19, `#001d38` ×14, `#999999` ×11.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar

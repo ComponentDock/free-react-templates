@@ -12,6 +12,28 @@ content area.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170649.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/bootstrap-sidebar/sidebar-06/ (HTTP 200, 9,168 B, fetched 2026-10-23) and its theme stylesheet `etc/bootstrap-sidebar/sidebar-06/css/style.css` (12,794 B, sha256 `b8c38d55e362…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2f89fc` | 7 declarations — `#sidebar:after` |
+| Other chromatic values | `#ff5db1` | `#ff5db1` × 6 (#sidebar:after) |
+| Surface | `#ffffff` | 12 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#000000` | 2 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `4px` | `0.25rem` (.cl-form-control); `4px` (.cl-form-control) |
+
+Palette in order of use: `#ffffff` ×12, `#2f89fc` ×7, `#ff5db1` ×6, `#6c757d` ×4, `#000000` ×2, `#495057` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sidebar renders with brand identity

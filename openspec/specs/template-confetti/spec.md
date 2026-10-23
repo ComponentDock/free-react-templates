@@ -6,6 +6,29 @@
 
 A Digital Conference template with hero, countdown, about, gallery, pricing and sponsors sections. Provide a free React recreation of the ColorLib "Eventz" digital conference template, featuring a hero with countdown, about section, gallery, pricing cards, sponsors, blog posts, and a branded footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/eventz/ (HTTP 200, 59,188 B, fetched 2026-10-23) and its theme stylesheet `theme/eventz/assets/css/style.css` (61,641 B, sha256 `91d2b62ead9e…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#331391` | 31 declarations — `.btn`, `.hero-btn` |
+| Other chromatic values | `#1f2b7b`, `#415094`, `#4cd3e3` | `#1f2b7b` × 19 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 83 declarations — `.boxed-btn:hover`, `a` |
+| Ink / dark surface | `#000000` | 6 declarations — `.black-btn`, `.white-btn` |
+| Typeface | `"Sen", sans-serif` (5 rules — .section-tittle span)<br>`"Roboto", sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: normal` | `body{…}` rule |
+| Radii | `50%`, `3px`, `8px` | `50%` (#back-top); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×83, `#331391` ×31, `#f9f9ff` ×27, `#1f2b7b` ×19, `#999999` ×10, `#f0e9ff` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders navigation and CTA

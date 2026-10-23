@@ -4,6 +4,29 @@
 
 Adept is a consulting/business onepage template that recreates the ColorLib Expert design (https://colorlib.com/wp/template/expert/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. The template features a hero carousel, about section with counters, project gallery, process steps, testimonials, services grid, pricing tiers, contact form, and footer with Component Dock branding.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/expert/ (HTTP 200, 29,016 B, fetched 2026-10-23) and its theme stylesheet `theme/expert/css/style.css` (28,831 B, sha256 `2e8291ebf8e3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#352961` | 20 declarations — `.ul-check.primary li:before`, `.form-control:focus` |
+| Other chromatic values | `#dc3545`, `#007bff` | `#dc3545` × 4 (.site-mobile-menu .site-nav-wrap li .active); `#007bff` × 2 (.cta a:hover span) |
+| Surface | `#ffffff` | 22 declarations — `.site-logo a`, `.ul-check.white li:before` |
+| Ink / dark surface | `#000000` | 9 declarations — `.sticky-wrapper .site-menu-toggle`, `.site-navbar .site-navigation .site-menu.site-menu-dark > li > a:after` |
+| Typeface | `"Oswald", sans-serif` (5 rules — h1)<br>`"Muli", sans-serif` (1 rule — .form-control) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 1.7; color: gray; font-weight: 300; font-size: 1.1rem` | `body{…}` rule |
+| Radii | `50%`, `4px`, `7px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `4px` (.service); `7px` (.pricing) |
+
+Palette in order of use: `#ffffff` ×22, `#352961` ×20, `#000000` ×9, `#dc3545` ×4, `#212529` ×3, `#007bff` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation

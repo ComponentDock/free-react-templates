@@ -9,6 +9,29 @@ A real estate agency website template. Recreation of ColorLib **Myhome**.
 - Preview URL: https://preview.colorlib.com/theme/myhome/
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/myhome/ (HTTP 200, 30,185 B, fetched 2026-10-23) and its theme stylesheet `theme/myhome/styles/main_styles.css` (26,355 B, sha256 `0897f952df52…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#adc867` | 27 declarations — `.social ul li`, `.log_reg ul li a:hover` |
+| Other chromatic values | `#55407d`, `#1e1332`, `#588dfb` | `#55407d` × 5 (.header_bar); `#1e1332` × 3 (.home_content); `#588dfb` × 2 (.tag_rent) |
+| Surface | `#ffffff` | 33 declarations — `body`, `p a:hover` |
+| Ink / dark surface | `#2b2e35` | 19 declarations — `h1`, `h2` |
+| Typeface | `'Montserrat', sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-size: 14px; font-weight: 400; color: #2b2e35` | `body{…}` rule |
+| Radii | `50%` | `50%` (.social ul li) |
+
+Palette in order of use: `#ffffff` ×33, `#adc867` ×27, `#2b2e35` ×19, `#6c7079` ×13, `#f3f7fb` ×6, `#55407d` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header displays contact info and navigation

@@ -4,6 +4,29 @@
 
 Recreation of ColorLib [Bcharity](https://colorlib.com/wp/template/bcharity/) as a free React template. GiveMore is a charity and donation landing page with hero banner, feature highlights, cause cards with progress bars, volunteer profiles, blog, partner logos, and newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bcharity/ (HTTP 200, 13,143 B, fetched 2026-10-23) and its theme stylesheet `theme/bcharity/css/style.min.css` (14,568 B, sha256 `6e123100f5d2…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#00c424` | 13 declarations — `.btn_1`, `.btn_3` |
+| Other chromatic values | `#14182d`, `#3b1d82` | `#14182d` × 5 (h1); `#3b1d82` × 2 (.button-link) |
+| Surface | `#ffffff` | 21 declarations — `.submit_btn`, `.btn_1:hover` |
+| Ink / dark surface | `#000000` | 6 declarations — `.btn_1`, `.btn_3` |
+| Typeface | `Roboto, sans-serif` (5 rules — body)<br>`Playfair Display, serif` (2 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 14px` | `body{…}` rule |
+| Radii | `50px`, `4px`, `5px` | `50px` (.btn_1); `4px` (.button); `5px` (.submit_btn) |
+
+Palette in order of use: `#ffffff` ×21, `#00c424` ×13, `#000000` ×6, `#14182d` ×5, `#edeff2` ×4, `#3b1d82` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and CTA

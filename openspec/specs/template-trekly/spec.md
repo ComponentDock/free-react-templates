@@ -7,6 +7,28 @@ Recreate the ColorLib "Ecoland" travel & tours landing template as a React 19 + 
 **Source:** https://colorlib.com/wp/template/ecoland/
 **Preview:** https://preview.colorlib.com/theme/ecoland/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/ecoland/ (HTTP 200, 63,243 B, fetched 2026-10-23) and its theme stylesheet `theme/ecoland/css/theme.min.css` (24,476 B, sha256 `a3998564d9e6…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#78453f` | 2 declarations — `.button:hover` |
+| Surface | `#ffffff` | 33 declarations — `body`, `.dark h2` |
+| Ink / dark surface | `#111111` | 9 declarations — `.brand`, `.hero-shade` |
+| Typeface | `var(--heading)` (1 rule — h1) | `font-family` declaration in the theme sheet |
+| Body type | `color: var(--muted)` | `body{…}` rule |
+| Radii | `50%`, `35% 65% 60% 40%` | `50%` (.avatar); `35% 65% 60% 40%` (.testimonials:before) |
+
+Palette in order of use: `#ffffff` ×33, `#111111` ×9, `#78453f` ×2, `#08131a8a` ×1, `#08131ab8` ×1, `#17171b` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with sticky navigation

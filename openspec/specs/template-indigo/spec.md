@@ -14,6 +14,28 @@ description: >
 
 Indigo is a free SaaS software landing page template, a faithful React recreation of the ColorLib "Parason" design. It targets startups, SaaS products, and web application landing pages with a hero section, feature highlights, pricing plans, testimonials, and a newsletter footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/parason/ (HTTP 200, 22,929 B, fetched 2026-10-23) and its theme stylesheet `theme/parason/css/style.css` (28,641 B, sha256 `0d1098678b70…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#21146a` | 31 declarations — `.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link`, `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link` |
+| Other chromatic values | `#412fb3` | `#412fb3` × 2 (.header_area.navbar_fixed .main_menu) |
+| Surface | `#ffffff` | 49 declarations — `.header_area .navbar .nav .nav-item .nav-link`, `.header_area .navbar .nav .nav-item:hover .nav-link` |
+| Ink / dark surface | `#000000` | 2 declarations — `.single-post-area .navigation-area .nav-left .thumb`, `.single-post-area .navigation-area .nav-right .thumb` |
+| Typeface | `"Roboto", sans-serif` (3 rules — .header_area .navbar .nav .nav-item .nav-link)<br>`"Rajdhani", sans-serif` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Radii | `4px`, `30px`, `3px` | `4px` (.button-blog); `30px` (.button); `3px` (.card-pricing) |
+
+Palette in order of use: `#ffffff` ×49, `#21146a` ×31, `#3a414e` ×18, `#777777` ×10, `#eeeeee` ×10, `#cccccc` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page loads with all sections

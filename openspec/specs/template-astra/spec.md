@@ -12,6 +12,28 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript
 
 Astra is a creative branding agency landing page with a parallax hero, services and portfolio grids, client logos, stat counters and a contact form. It recreates the ColorLib **Stellar** design (https://colorlib.com/wp/template/stellar/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/stellar/ (HTTP 200, 41,030 B, fetched 2026-10-23) and its theme stylesheet `theme/stellar/css/style.min.css` (76,585 B, sha256 `3b73ff5fa662…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f26522` | 13 declarations — `ul.disc li:before`, `.video-embed:hover .video-embed__play` |
+| Other chromatic values | `#bf4a12`, `#f5854f`, `#a3282a` | `#bf4a12` × 9 (a); `#f5854f` × 5 (.s-services a); `#a3282a` × 2 (.alert-box--error) |
+| Surface | `#ffffff` | 45 declarations — `.kit-video-dialog__stage.is-map`, `.kit-video-dialog` |
+| Ink / dark surface | `#000000` | 33 declarations — `.kit-video-dialog__stage`, `h1` |
+| Typeface | `Montserrat, sans-serif` (29 rules — .pswp)<br>`Merriweather, serif` (8 rules — body) | `font-family` declarations in the theme sheet |
+| Radii | `3px`, `50%`, `100%` | `3px` (.owl-theme:where(.kit-owl) .owl-nav [class*=owl-]); `50%` (ul.disc li:before); `100%` (.testimonials__avatar) |
+
+Palette in order of use: `#ffffff` ×45, `#000000` ×33, `#f26522` ×13, `#151515` ×11, `#bf4a12` ×9, `#f5854f` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and mobile menu

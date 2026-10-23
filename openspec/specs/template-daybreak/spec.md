@@ -6,6 +6,29 @@ Recreation of ColorLib "Sun" (https://colorlib.com/wp/template/sun/)
 
 Daybreak is a clean, minimalist portfolio template featuring a filterable grid layout, two-column content sections, and a responsive navigation bar. It recreates the ColorLib "Sun" design with a modern React + Tailwind CSS implementation.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/sun/ (HTTP 200, 17,314 B, fetched 2026-10-23) and its theme stylesheet `theme/sun/css/main.min.css` (38,022 B, sha256 `7149547ddd06…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fd3137` | 8 declarations — `a.button`, `#toggle:hover .lucide` |
+| Other chromatic values | `#ffff99` | `#ffff99` × 2 (ins) |
+| Surface | `#ffffff` | 10 declarations — `.sm-clean ul`, `a.button:hover` |
+| Ink / dark surface | `#191919` | 6 declarations — `.skip-link:focus`, `body` |
+| Typeface | `Montserrat, sans-serif` (6 rules — blockquote)<br>`"PT Serif", serif` (1 rule — .single-post .content-wrap) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 100%` | `body{…}` rule |
+| Radii | `3px`, `4px`, `5px` | `3px` (.screen-reader-text:focus); `4px` (.pswp__kit-caption); `5px` (.sm-clean) |
+
+Palette in order of use: `#ffffff` ×10, `#fd3137` ×8, `#191919` ×6, `#000000` ×5, `#858585` ×5, `#e2e0e0` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and search toggle

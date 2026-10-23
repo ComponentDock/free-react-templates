@@ -9,6 +9,28 @@ A real estate property search form with four filter fields (Location, Property T
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-07.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/search-form-bar-07/ (HTTP 200, 7,077 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/search-form-bar-07/css/style.css` (16,099 B, sha256 `1709aed14388…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 5 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#ff62a5`, `#0062cc` | `#ff62a5` × 4 (a); `#0062cc` × 2 (.cl-btn-primary:hover) |
+| Surface | `#ffffff` | 14 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#000000` | 4 declarations — `.heading-section`, `h2` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `2px` | `0.25rem` (.cl-form-control); `2px` (.cl-form-control) |
+
+Palette in order of use: `#ffffff` ×14, `#007bff` ×5, `#000000` ×4, `#6c757d` ×4, `#ff62a5` ×4, `#212529` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page Structure

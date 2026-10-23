@@ -4,6 +4,28 @@
 
 Propvale is a free real estate website template that recreates the ColorLib "Real Estate 2" design (https://colorlib.com/wp/template/real-estate-2/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It provides a property listing landing page with search, featured properties, FAQ, testimonials, agent profiles, and a call-to-action section.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/realestate2/ (HTTP 200, 68,636 B, fetched 2026-10-23) and its theme stylesheet `theme/realestate2/css/style.css` (183,542 B, sha256 `c44673d7754f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fdae5c` | 45 declarations — `.boxed-btn`, `.boxed-btn:hover` |
+| Other chromatic values | `#001d38`, `#ff5e13`, `#fd8e5e` | `#001d38` × 22 (h1); `#ff5e13` × 19 (.contact-info .media-body h3 a:hover); `#fd8e5e` × 14 (.owl-carousel:hover .owl-nav div:hover) |
+| Surface | `#ffffff` | 89 declarations — `*::-moz-selection`, `.owl-carousel .owl-nav div` |
+| Ink / dark surface | `#001d38` | 22 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (7 rules — h1)<br>`'themify'` (3 rules — .slider_area .single-field.max_width .nice-select::after) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `30px`, `3px` | `50%` (.owl-carousel .owl-nav div); `30px` (.boxed-btn3-line); `3px` (.genric-btn.radius) |
+
+Palette in order of use: `#ffffff` ×89, `#fdae5c` ×45, `#f9f9ff` ×27, `#001d38` ×22, `#ff5e13` ×19, `#919191` ×16.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top bar displays contact information

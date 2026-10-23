@@ -15,6 +15,28 @@ features a hero slider, about section with stats, specialization grid,
 project gallery with filters, services, team, testimonials, blog, and a
 footer with newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/archirio/ (HTTP 200, 18,518 B, fetched 2026-10-23) and its theme stylesheet `theme/archirio/style.css` (8,320 B, sha256 `115f1f765717…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#cee002` | 6 declarations — `a:hover`, `#scrollUp` |
+| Surface | `#ffffff` | 19 declarations — `h1`, `h2` |
+| Ink / dark surface | `#000000` | 2 declarations — `.hero-wrapper:before`, `.demo-img > a::after` |
+| Typeface | `'Poppins', sans-serif` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Body type | `color: #fff; font-size: 14px; font-weight: 400; line-height: 24px` | `body{…}` rule |
+| Radii | `4px`, `50%`, `5px` | `4px` (.btn-white); `50%` (.footer-social a); `5px` (#scrollUp) |
+
+Palette in order of use: `#ffffff` ×19, `#cee002` ×6, `#000000` ×2, `#222222` ×2, `#0d0f11` ×1, `#131619` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar with mobile toggle

@@ -11,6 +11,29 @@ A Real Estate template with hero property slider, services, properties carousel,
 - **Package:** `@free-react-templates/nestled`
 - **Surge target:** `nestled.free.componentdock.com`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/homey/ (HTTP 200, 37,611 B, fetched 2026-10-23) and its theme stylesheet `theme/homey/css/style.css` (35,273 B, sha256 `cd096032e6c6…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fb742d` | 37 declarations — `.text-primary`, `a` |
+| Other chromatic values | `#12947f`, `#fb8141` | `#12947f` × 7 (.text-secondary); `#fb8141` × 2 (.btn.btn-primary:hover) |
+| Surface | `#ffffff` | 31 declarations — `body`, `#overlayer` |
+| Ink / dark surface | `#000000` | 24 declarations — `h1`, `.text-black` |
+| Typeface | `"Lato", sans-serif` (3 rules — body)<br>`'Georgia', serif` (1 rule — .untree_co-testimonial .quote) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 1.5; font-size: 14px; color: #999` | `body{…}` rule |
+| Radii | `50%`, `4px`, `30px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `4px` (.property-entry .more > a); `30px` (.btn) |
+
+Palette in order of use: `#fb742d` ×37, `#ffffff` ×31, `#000000` ×24, `#12947f` ×7, `#999999` ×6, `#f8f9fa` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and auth CTAs

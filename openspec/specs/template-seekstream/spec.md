@@ -6,6 +6,27 @@ Recreation of ColorLib Search 8 (https://colorlib.com/wp/template/colorlib-searc
 
 Seekstream provides a full-viewport advanced search form with keyword input and six category filter dropdowns, styled with a split white/dark card over a gray background. Users SHALL be able to type keywords, filter by category, view result counts, and trigger search/reset actions.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-8/ (HTTP 200, 6,179 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-8/css/style.css` (13,674 B, sha256 `ccc4b73d2242…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#e45c27` | 2 declarations — `.s008 form .inner-form .input-field .btn-search`, `.s008 form .inner-form .advance-search .cl-row.third .input-field .result-count span` |
+| Surface | `#ffffff` | 6 declarations — `.s008 form .inner-form .input-field .btn-search`, `.s008 form .inner-form .input-field .btn-delete` |
+| Ink / dark surface | `#333333` | 2 declarations — `.choices[data-type*="select-one"]:after`, `.choices[data-type*="select-one"].is-open:after` |
+| Typeface | `Roboto, sans-serif` (6 rules — .cl-sel-0)<br>`'Roboto', sans-serif` (1 rule — .s008) | `font-family` declarations in the theme sheet |
+| Radii | `3px`, `2.5px`, `2.5px 2.5px 0 0` | `3px` (.s008 form .inner-form .input-field input); `2.5px` (.choices__inner); `2.5px 2.5px 0 0` (.is-open .choices__inner) |
+
+Palette in order of use: `#ffffff` ×6, `#999999` ×4, `#333333` ×2, `#e45c27` ×2, `#000000` ×1, `#555555` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Search form rendering

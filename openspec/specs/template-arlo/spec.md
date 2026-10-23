@@ -50,6 +50,26 @@ before the migration, so it follows the mirror, not today's preview host.
 Arlo lives in `apps/arlo` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/alexrivera/ (HTTP 200, 105,858 B, fetched 2026-10-23) and its theme stylesheet `theme/alexrivera/_astro/Base.DSJ9xNgp.css` (62,363 B, sha256 `da08a5963991…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1f2937` | 3 declarations — `.dark .prose hr`, `.dark .img-shimmer` |
+| Surface | `#f0f0f0` | 2 declarations — `.img-shimmer` |
+| Ink / dark surface | `#1f2937` | 3 declarations — `.dark .prose hr`, `.dark .img-shimmer` |
+| Radii | `.5rem`, `.75rem` | `.5rem` (.prose pre); `.75rem` (.prose img) |
+
+Palette in order of use: `#1f2937` ×3, `#374151` ×2, `#f0f0f0` ×2, `#000000` ×1, `#111827` ×1, `#3f3f46` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

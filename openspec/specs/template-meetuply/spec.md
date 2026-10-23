@@ -10,6 +10,29 @@ An event conference template with full-viewport hero, venue features, fun facts 
 - **New name:** `meetuply` (package: `@free-react-templates/meetuply`)
 - **Deploy target:** `meetuply.free.componentdock.com`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/eventalk/ (HTTP 200, 50,395 B, fetched 2026-10-23) and its theme stylesheet `theme/eventalk/css/style.css` (75,027 B, sha256 `26c2592ba888…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#6b75ff` | 91 declarations — `.slider-text h1`, `.hero-wrap .overlay` |
+| Other chromatic values | `#59b7ff`, `#6b76ff`, `#78d5ef` | `#59b7ff` × 42 (.hero-wrap .overlay); `#6b76ff` × 34 (a); `#78d5ef` × 9 (a) |
+| Surface | `#ffffff` | 55 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 27 declarations — `.close`, `.close:hover` |
+| Typeface | `"Work Sans", sans-serif` (3 rules — body)<br>`"Work Sans", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `4px` | `50%` (.owl-carousel .owl-dots .owl-dot); `0.25rem` (.form-control); `4px` (.tagcloud a) |
+
+Palette in order of use: `#6b75ff` ×91, `#ffffff` ×55, `#59b7ff` ×42, `#6b76ff` ×34, `#000000` ×27, `#78d5ef` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays correctly

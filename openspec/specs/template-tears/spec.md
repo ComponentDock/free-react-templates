@@ -34,6 +34,27 @@ illustration (no assets copied).
 Tears lives in `apps/tears` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/404/colorlib-error-404-12/ (HTTP 200, 804 B, fetched 2026-10-23) and its theme stylesheet `etc/404/colorlib-error-404-12/css/style.css` (5,048 B, sha256 `4b4a9c4b712b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f99827` | 1 declarations — `.notfound a` |
+| Surface | `#ffffff` | 1 declarations — `.notfound a` |
+| Ink / dark surface | `#232323` | 2 declarations — `.notfound h2`, `.notfound .notfound-404 h1` |
+| Typeface | `'Montserrat', sans-serif` (4 rules — .notfound .notfound-404 h1) | `font-family` declaration in the theme sheet |
+| Radii | `40px` | `40px` (.notfound a) |
+
+Palette in order of use: `#232323` ×2, `#787878` ×1, `#f99827` ×1, `#ffffff` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

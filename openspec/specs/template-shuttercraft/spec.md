@@ -4,6 +4,29 @@
 
 Recreation of ColorLib Photography (`https://colorlib.com/wp/template/photography/`). A photographer portfolio/personal site featuring a hero carousel with full-bleed background images, about section with portrait + text, dark-themed masonry gallery, call-to-action banner, blog grid, split contact form with image, and a dark footer. Built with React 19, Tailwind CSS 4, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/photography/ (HTTP 200, 15,716 B, fetched 2026-10-23) and its theme stylesheet `theme/photography/css/main.css` (31,316 B, sha256 `3dd2052dadd0…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#7a77ff` | 23 declarations — `b`, `i` |
+| Other chromatic values | `#4cd3e3`, `#38a4ff`, `#f44a40` | `#4cd3e3` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f44a40` × 6 (.genric-btn.danger) |
+| Surface | `#ffffff` | 51 declarations — `.text-white`, `.sample-text-area` |
+| Ink / dark surface | `#222222` | 18 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `color: #777777; font-size: 14px; font-weight: 300; line-height: 1.625em` | `body{…}` rule |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×51, `#f9f9ff` ×27, `#7a77ff` ×23, `#222222` ×18, `#4cd3e3` ×7, `#777777` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation links

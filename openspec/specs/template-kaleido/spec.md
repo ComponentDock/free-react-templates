@@ -10,6 +10,29 @@ jellyfish hero image with centered title, followed by component showcase section
 (color palette, typography, buttons). The recreation uses an ocean-blue color
 scheme with an underwater aesthetic.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/jellyfish/ (HTTP 200, 83,493 B, fetched 2026-10-23) and its theme stylesheet `theme/jellyfish/css/style.css` (21,881 B, sha256 `cec03225cb0c…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#037ef3` | 9 declarations — `.form-control:focus`, `.form-control:active` |
+| Other chromatic values | `#2dde98`, `#8e43e7`, `#0dd3ff` | `#2dde98` × 5 (.bg-teal); `#8e43e7` × 5 (.bg-indigo); `#0dd3ff` × 3 (.custom-pagination.pagination-info .page-item.active .page-link) |
+| Surface | `#ffffff` | 43 declarations — `.btn.btn-purple`, `.text-white` |
+| Ink / dark surface | `#000000` | 4 declarations — `.tab-card .tab-menu .nav .nav-link`, `.custom-pagination .page-item .page-link` |
+| Typeface | `"Work Sans", sans-serif` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Body type | `line-height: 1.7; color: gray; font-weight: 300` | `body{…}` rule |
+| Radii | `50%`, `.25rem`, `30px` | `50%` (.navbar.navbar-dark .form-search button); `.25rem` (.tooltip-inner); `30px` (.form-control.form-pill) |
+
+Palette in order of use: `#ffffff` ×43, `#037ef3` ×9, `#6c757d` ×7, `#2dde98` ×5, `#8e43e7` ×5, `#000000` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Hero section

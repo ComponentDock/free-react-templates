@@ -15,6 +15,29 @@ Repertoire is a portfolio and personal-branding landing page with a sticky sideb
 **Preview:** https://preview.colorlib.com/theme/work/
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/work/ (HTTP 200, 24,621 B, fetched 2026-10-23) and its theme stylesheet `theme/work/css/style.css` (25,163 B, sha256 `8337af15a086…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f75940` | 15 declarations — `a`, `a:hover` |
+| Other chromatic values | `#f86e58` | `#f86e58` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 13 declarations — `#colorlib-aside`, `#colorlib-aside #colorlib-logo a` |
+| Ink / dark surface | `#000000` | 19 declarations — `h1`, `h2` |
+| Typeface | `"Quicksand", sans-serif` (7 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-weight: 400; font-size: 15px; line-height: 1.8; color: rgba(0, 0, 0, 0.7)` | `body{…}` rule |
+| Radii | `2px`, `30px`, `4px` | `2px` (.colorlib-feature .colorlib-icon); `30px` (#get-in-touch .btn-learn); `4px` (.project .desc .con .icon span a) |
+
+Palette in order of use: `#000000` ×19, `#f75940` ×15, `#ffffff` ×13, `#999999` ×3, `#333333` ×2, `#666666` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sticky sidebar navigation

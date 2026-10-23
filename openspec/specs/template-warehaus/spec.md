@@ -15,6 +15,29 @@ Tailwind CSS 4 + TypeScript.
 - **Source URL:** https://colorlib.com/wp/template/winkel/
 - **Preview URL:** https://preview.colorlib.com/theme/winkel/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/winkel/ (HTTP 200, 58,192 B, fetched 2026-10-23) and its theme stylesheet `theme/winkel/css/style.css` (91,028 B, sha256 `9fd67332e32f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ffa45c` | 36 declarations — `a`, `a:hover` |
+| Other chromatic values | `#007bff`, `#0062cc` | `#007bff` × 8 (a); `#0062cc` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 67 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 78 declarations — `.close`, `.close:hover` |
+| Typeface | `-apple-system, sans-serif` (3 rules — body)<br>`"Open Sans", sans-serif` (2 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `30px` | `50%` (.mouse-icon); `0.25rem` (.form-control); `30px` (.hero-wrap .slider-text .btn-primary) |
+
+Palette in order of use: `#000000` ×78, `#ffffff` ×67, `#ffa45c` ×36, `#007bff` ×8, `#6c757d` ×8, `#212529` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all sections

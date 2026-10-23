@@ -14,6 +14,29 @@ template under the name "Blinkwave". The template showcases an internet service
 provider with hero, about, services, pricing, zipcode availability check,
 testimonials, blog, and footer sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/fastnet/ (HTTP 200, 32,851 B, fetched 2026-10-23) and its theme stylesheet `theme/fastnet/assets/css/style.css` (176,614 B, sha256 `9ce886e6b446…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff3e3f` | 21 declarations — `.boxed-btn:hover`, `#back-top` |
+| Other chromatic values | `#1f2b7b`, `#415094`, `#4cd3e3` | `#1f2b7b` × 19 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 62 declarations — `.boxed-btn:hover`, `a` |
+| Ink / dark surface | `#072366` | 5 declarations — `h1`, `h2` |
+| Typeface | `"Muli", sans-serif` (5 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-weight: normal; font-size: 16px` | `body{…}` rule |
+| Radii | `50%`, `3px`, `8px` | `50%` (#back-top); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×62, `#f9f9ff` ×27, `#ff3e3f` ×21, `#1f2b7b` ×19, `#999999` ×10, `#f0e9ff` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: All sections render correctly

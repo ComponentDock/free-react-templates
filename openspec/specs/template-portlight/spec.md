@@ -10,6 +10,29 @@ A Hotel Reservation template with hero, booking, services, rooms and blog sectio
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 - Category: Hotel / Resort / Reservation
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/harborlights/ (HTTP 200, 42,025 B, fetched 2026-10-23) and its theme stylesheet `theme/harborlights/css/style.css` (80,524 B, sha256 `6ba23d6a0612…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2f89fc` | 25 declarations — `.btn.btn-secondary`, `.hero-wrap .overlay` |
+| Other chromatic values | `#21cc7a`, `#007bff`, `#0062cc` | `#21cc7a` × 22 (a); `#007bff` × 8 (a); `#0062cc` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 74 declarations — `body`, `.form-control` |
+| Ink / dark surface | `#000000` | 29 declarations — `.close`, `.close:hover` |
+| Typeface | `"Nunito Sans", sans-serif` (7 rules — body)<br>`-apple-system, sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `4px` | `50%` (.owl-carousel .owl-dots .owl-dot); `0.25rem` (.form-control); `4px` (.testimony-wrap .text) |
+
+Palette in order of use: `#ffffff` ×74, `#000000` ×29, `#2f89fc` ×25, `#21cc7a` ×22, `#6c757d` ×13, `#007bff` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays brand and navigation links

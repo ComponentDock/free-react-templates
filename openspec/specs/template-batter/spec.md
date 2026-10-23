@@ -4,6 +4,29 @@
 
 Recreation of ColorLib Go Crepe (https://colorlib.com/wp/template/go-crepe/) as a React 19 + Tailwind CSS 4 + TypeScript template. Batter is a creative digital agency landing page with a hero banner, feature grid, about story, portfolio works, newsletter signup, and footer with contact widgets.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/go-crepe/ (HTTP 200, 18,588 B, fetched 2026-10-23) and its theme stylesheet `theme/go-crepe/css/main.css` (37,031 B, sha256 `aed66c98895a…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#9820ec` | 17 declarations — `.genric-btn.primary`, `.genric-btn.primary:hover` |
+| Other chromatic values | `#56e4d2`, `#38a4ff`, `#f44a40` | `#56e4d2` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f44a40` × 6 (.genric-btn.danger) |
+| Surface | `#ffffff` | 60 declarations — `.text-white`, `.button-area` |
+| Ink / dark surface | `#222222` | 13 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `color: #777777; font-size: 14px; font-weight: 300; line-height: 1.5em` | `body{…}` rule |
+| Radii | `3px`, `8px`, `50%` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `50%` (.unordered-list li:before) |
+
+Palette in order of use: `#ffffff` ×60, `#f9f9ff` ×29, `#9820ec` ×17, `#222222` ×13, `#56e4d2` ×7, `#777777` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and mobile toggle

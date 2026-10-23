@@ -17,6 +17,27 @@ minimal design with warm earth tones. The template showcases products in a
 tabbed interface, highlights the brand's manufacturing story, and includes
 a newsletter signup and structured footer with a Component Dock link.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/furn/ (HTTP 200, 64,451 B, fetched 2026-10-23) and its theme stylesheet `theme/furn/assets/css/style.css` (45,808 B, sha256 `4452bd99faf3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d99a2b` | 1 declarations — `.inventory--low::before` |
+| Surface | `#ffffff` | 3 declarations — `.badge--sale`, `.header__cart-count` |
+| Typeface | `var(--font-heading)` (4 rules — h1)<br>`var(--font-body)` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--text-base); font-weight: var(--font-body-weight); line-height: 1.6; color: rgb(var(--color-text))` | `body{…}` rule |
+| Radii | `var(--radius-base)`, `50%`, `var(--radius-media)` | `var(--radius-base)` (.button); `50%` (.icon-button); `var(--radius-media)` (.rte img) |
+
+Palette in order of use: `#ffffff` ×3, `#d99a2b` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Announcement bar with rotating messages

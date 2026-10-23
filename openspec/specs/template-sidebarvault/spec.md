@@ -7,6 +7,27 @@ A social-media-style sidebar navigation template with a profile panel, stats, ic
 Source: https://colorlib.com/wp/template/colorlib-sidebar-v01/
 Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v01/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v01/ (HTTP 200, 11,179 B, fetched 2026-10-23) and its theme stylesheet `theme/sidebar/colorlib-sidebar-v01/css/style.css` (15,095 B, sha256 `1bfcd809cd4e…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0056b3` | 1 declarations — `a:hover` |
+| Surface | `#fcfcfc` | 3 declarations — `body`, `aside .side-inner .nav-menu ul li a:hover` |
+| Ink / dark surface | `#000000` | 6 declarations — `.close`, `.close:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `2px`, `50%` | `2px` (.burger:before); `50%` (aside .side-inner .profile img) |
+
+Palette in order of use: `#000000` ×6, `#fcfcfc` ×3, `#ffffff` ×3, `#cfcfcf` ×2, `#0056b3` ×1, `#007bff` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sidebar profile section

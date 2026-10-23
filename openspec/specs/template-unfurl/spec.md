@@ -6,6 +6,29 @@ Recreation of ColorLib "Unfold" (https://colorlib.com/wp/template/unfold/).
 
 A dark-themed portfolio and personal website template for creative professionals, featuring a full-viewport hero, isotope-style portfolio grid, skills progress bars, testimonials, blog journal, and contact form.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/unfold/ (HTTP 200, 42,981 B, fetched 2026-10-23) and its theme stylesheet `theme/unfold/css/style.min.css` (57,131 B, sha256 `66a0a732c741…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d63447` | 10 declarations — `.unslate_co--site-nav .unslate_co--site-logo span`, `.unslate_co--site-nav.scrolled .site-nav-ul>li>a:hover` |
+| Other chromatic values | `#f64b3c` | `#f64b3c` × 3 (#form-message-warning) |
+| Surface | `#ffffff` | 68 declarations — `.pswp__kit-caption`, `.owl-theme:where(.kit-owl) .owl-nav [class*=owl-]` |
+| Ink / dark surface | `#212529` | 24 declarations — `[data-bs-theme=light] .heading-h2`, `[data-bs-theme=light] body` |
+| Typeface | `Arimo, sans-serif` (3 rules — .portfolio-item .portfolio-item-content p)<br>`Raleway, sans-serif` (2 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `color: #fff; font-size: 16px; line-height: 30px; font-weight: 300` | `body{…}` rule |
+| Radii | `50%`, `30px`, `4px` | `50%` (.testimonial-v1 .testimonial-author-info img); `30px` (.owl-theme:where(.kit-owl) .owl-dots .owl-dot span); `4px` (.pswp__kit-caption) |
+
+Palette in order of use: `#ffffff` ×68, `#212529` ×24, `#000000` ×20, `#ffffff80` ×12, `#d63447` ×10, `#2125294d` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation

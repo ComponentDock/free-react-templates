@@ -18,6 +18,28 @@ cards, quick-contact bar, and dark footer with Component Dock branding.
 
 **Source:** Recreation of ColorLib "Confe" (https://colorlib.com/wp/template/confe/)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/confe/ (HTTP 200, 29,878 B, fetched 2026-10-23) and its theme stylesheet `theme/confe/css/style.css` (19,555 B, sha256 `ea61cdd19e43…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f23a2e` | 7 declarations — `.form-control:focus`, `.form-control:active` |
+| Surface | `#ffffff` | 13 declarations — `.site-footer a:hover`, `.site-navbar .site-navigation .site-menu .has-children .dropdown a` |
+| Ink / dark surface | `#000000` | 15 declarations — `h1`, `h2` |
+| Typeface | `"Roboto Mono", SFMono-Regular` (1 rule — body)<br>`"Work Sans", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 1.7; color: rgba(0, 0, 0, 0.5); font-weight: 400; font-size: 1rem` | `body{…}` rule |
+| Radii | `50%`, `30px !important`, `4px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `30px !important` (.btn.pill); `4px` (#date-countdown .countdown-block) |
+
+Palette in order of use: `#000000` ×15, `#ffffff` ×13, `#f23a2e` ×7, `#cccccc` ×2, `#212529` ×1, `#25262a` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all major sections

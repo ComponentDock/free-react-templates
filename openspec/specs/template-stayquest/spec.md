@@ -6,6 +6,27 @@ Recreation of ColorLib "Colorlib Search 2" (https://colorlib.com/wp/template/col
 
 A full-screen hotel search form hero template with a background image, dark overlay, centered heading, and a multi-field search bar (location, dates, guests) with a branded search button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-2/ (HTTP 200, 3,195 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-2/css/style.css` (12,731 B, sha256 `bd14236ff675…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#af7d51` | 1 declarations — `.s002 form .inner-form .input-field.fifth-wrap .btn-search:hover` |
+| Surface | `#ffffff` | 4 declarations — `.s002 form legend`, `.s002 form .inner-form .input-field input` |
+| Ink / dark surface | `#333333` | 2 declarations — `.choices[data-type*="select-one"]:after`, `.choices[data-type*="select-one"].is-open:after` |
+| Typeface | `'Poppins', sans-serif` (3 rules — .s002)<br>`Poppins, sans-serif` (1 rule — .cl-sel-0) | `font-family` declarations in the theme sheet |
+| Radii | `.5px`, `2.5px`, `2.5px 2.5px 0 0` | `.5px` (.s002 form .inner-form .input-field.fifth-wrap .btn-search); `2.5px` (.choices__inner); `2.5px 2.5px 0 0` (.is-open .choices__inner) |
+
+Palette in order of use: `#ffffff` ×4, `#9a9a9a` ×3, `#333333` ×2, `#555555` ×2, `#666666` ×1, `#af7d51` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Hero section with background image

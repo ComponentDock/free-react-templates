@@ -6,6 +6,28 @@ Recreation of ColorLib [Bootstrap Buttons 20](https://colorlib.com/wp/template/b
 Design category: UI Components & Buttons Showroom.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons (`lucide-react`).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bb/bootstrap-buttons-20/ (HTTP 200, 44,754 B, fetched 2026-10-23) and its theme stylesheet `theme/bb/bootstrap-buttons-20/css/style.css` (20,548 B, sha256 `27fe3532307c…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 12 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#01d28e`, `#5edfff`, `#ff4893` | `#01d28e` × 7 (.cl-btn.btn-quarternary); `#5edfff` × 7 (.cl-btn.cl-btn-secondary); `#ff4893` × 7 (.cl-btn.btn-tertiary) |
+| Surface | `#ffffff` | 41 declarations — `.cl-btn-primary`, `.cl-btn-primary:hover` |
+| Ink / dark surface | `#212529` | 3 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `40px`, `5px` | `0.25rem` (.cl-btn); `40px` (.cl-btn.btn-round); `5px` (.cl-btn) |
+
+Palette in order of use: `#ffffff` ×41, `#007bff` ×12, `#6c757d` ×12, `#01d28e` ×7, `#5edfff` ×7, `#ff4893` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Style showcase section

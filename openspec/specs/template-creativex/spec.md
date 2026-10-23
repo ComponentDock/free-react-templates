@@ -46,6 +46,23 @@ path is the authoritative reference to build against.
 Creativex lives in `apps/creativex` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/creativex/ (HTTP 200, 67,351 B, fetched 2026-10-23) and its theme stylesheet `theme/creativex/_astro/Base.D2FQB9Bi.css` (40,578 B, sha256 `6c3bf736cb46…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#c026d3` | 1 declarations — `.prose a:hover` |
+| Surface | `#fffffff2` | 1 declarations — `[data-header].scrolled` |
+
+Palette in order of use: `#c026d3` ×1, `#f0abfc` ×1, `#fffffff2` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+
 ## Requirements
 
 ### Requirement: Navigation bar

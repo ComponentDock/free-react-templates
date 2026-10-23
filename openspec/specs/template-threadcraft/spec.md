@@ -11,6 +11,29 @@ preview: https://preview.colorlib.com/theme/fashi/
 
 Threadcraft is a fashion eCommerce landing page template. It recreates the ColorLib Fashi design under a different name, providing a complete storefront with hero promotions, product grids, deal countdown, collection gallery, blog teasers, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/fashi/ (HTTP 200, 57,452 B, fetched 2026-10-23) and its theme stylesheet `theme/fashi/css/style.min.css` (133,779 B, sha256 `3ed88c29dc3b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#e7ab3c` | 32 declarations — `.primary-btn`, `.section-title h2:before` |
+| Other chromatic values | `#8a5d0b`, `#b97d10`, `#425c6d` | `#8a5d0b` × 19 (.section-title .product-price); `#b97d10` × 4 (.product-details .pd-rating i); `#425c6d` × 2 (.filter-widget .filter-range-wrap .price-range .price-range__input::-webkit-slider-thumb) |
+| Surface | `#ffffff` | 48 declarations — `.text-bg-dark`, `.text-bg-danger` |
+| Ink / dark surface | `#252525` | 98 declarations — `.skip-link`, `.section-title h2` |
+| Typeface | `Muli, sans-serif` (4 rules — .kit-mobile-nav)<br>`var(--bs-body-font-family)` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `5px`, `2px` | `50%` (.inner-header .nav-right li.heart-icon a span); `5px` (select:where(.nice-select); `2px` (.single-banner .inner-text h4) |
+
+Palette in order of use: `#252525` ×98, `#ffffff` ×48, `#e7ab3c` ×32, `#ebebeb` ×31, `#666666` ×30, `#8a5d0b` ×19.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact information

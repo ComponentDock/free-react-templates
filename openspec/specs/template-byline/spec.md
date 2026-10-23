@@ -7,6 +7,28 @@
 
 Byline is a free React blog and magazine template that recreates the ColorLib Nikki design. It features a hero carousel with featured posts, a two-column blog layout with sidebar widgets, an Instagram photo feed, and a dark footer with social links and Component Dock branding. Built with React 19, Tailwind CSS 4, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/nikki/ (HTTP 200, 37,459 B, fetched 2026-10-23) and its theme stylesheet `theme/nikki/style.css` (50,037 B, sha256 `7ac982cfad07…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d1bb95` | 39 declarations — `.nikki-btn.active`, `#scrollUp` |
+| Surface | `#ffffff` | 21 declarations — `.bg-white`, `#scrollUp` |
+| Ink / dark surface | `#191919` | 21 declarations — `h1`, `h2` |
+| Typeface | `"Barlow", sans-serif` (1 rule — body)<br>`'FontAwesome'` (1 rule — .breadcrumb-area .breadcrumb .breadcrumb-item + .breadcrumb-item::before) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 14px` | `body{…}` rule |
+| Radii | `50%`, `2px` | `50%` (.preloader .circle-preloader .dot); `2px` (.nikki-btn) |
+
+Palette in order of use: `#d1bb95` ×39, `#191919` ×21, `#ffffff` ×21, `#a6a6a6` ×16, `#595959` ×9, `#ebebeb` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with brand, navigation, and social links

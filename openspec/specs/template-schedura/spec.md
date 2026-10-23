@@ -6,6 +6,28 @@ Recreation of ColorLib Calendar 13 (`https://colorlib.com/wp/template/calendar-1
 
 Schedura is a bootstrap calendar component page. It recreates the ColorLib **Calendar 13** design (https://colorlib.com/wp/template/calendar-13/, preview: https://preview.colorlib.com/theme/bootstrap/calendar-13/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/calendar-13/ (HTTP 200, 1,467 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/calendar-13/css/style.css` (16,539 B, sha256 `a449adfe812f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f2d1c5` | 5 declarations — `.picker__nav--next:hover`, `.picker__nav--prev:hover` |
+| Other chromatic values | `#f78b65` | `#f78b65` × 4 (.picker__select--month:focus) |
+| Surface | `#ffffff` | 9 declarations — `.picker__holder`, `.picker__day--selected` |
+| Ink / dark surface | `#000000` | 4 declarations — `.picker`, `.picker__nav--next:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `.25rem`, `0 0 5px 5px` | `.25rem` (.cl-form-control); `0 0 5px 5px` (.picker__holder) |
+
+Palette in order of use: `#ffffff` ×9, `#6c757d` ×5, `#f2d1c5` ×5, `#f5f5f5` ×5, `#000000` ×4, `#f78b65` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### R1. Navbar & Header

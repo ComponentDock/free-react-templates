@@ -13,6 +13,29 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Source: https://colorlib.com/wp/template/lawful/
 Preview URL: https://preview.colorlib.com/theme/lawful/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/lawyer/ (HTTP 200, 23,712 B, fetched 2026-10-23) and its theme stylesheet `theme/lawyer/css/style.min.css` (66,057 B, sha256 `e33bbf06e2ed…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f2c64d` | 24 declarations — `.boxed-btn4`, `.boxed-btn5` |
+| Other chromatic values | `#ff5e13`, `#415094`, `#4cd3e3` | `#ff5e13` × 16 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 5 (.genric-btn.success) |
+| Surface | `#ffffff` | 76 declarations — `a:focus`, `::-moz-selection` |
+| Ink / dark surface | `#000000` | 29 declarations — `.boxed-btn`, `.boxed-btn:hover` |
+| Typeface | `Poppins, sans-serif` (12 rules — body)<br>`Playfair Display, serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: 400` | `body{…}` rule |
+| Radii | `50%`, `3px`, `8px` | `50%` (.header-area .social_media_links ul li a); `3px` (.slicknav_btn); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×76, `#000000` ×29, `#f9f9ff` ×27, `#f2c64d` ×24, `#ff5e13` ×16, `#999999` ×11.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with brand, navigation, CTA, and dark mode toggle

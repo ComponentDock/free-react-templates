@@ -8,6 +8,25 @@
 Provide a clean, centered booking ticket registration form with an image
 carousel, supporting multiple ticket types with dynamic pricing.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/regform/colorlib-regform-29/ (HTTP 200, 3,768 B, fetched 2026-10-23) and its theme stylesheet `etc/regform/colorlib-regform-29/css/style.css` (11,478 B, sha256 `1098131a35d1…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#385cb9` | 4 declarations — `.form-v3-content .form-detail h2::before`, `.form-v3-content .form-detail .special span` |
+| Surface | `#ffffff` | 2 declarations — `.form-v3-content`, `.form-v3-content .form-detail .register` |
+| Ink / dark surface | `#333333` | 9 declarations — `.form-v3-content .form-right i`, `.form-v3-content .form-detail h2` |
+| Typeface | `'Raleway', sans-serif` (2 rules — .form-v3-content)<br>`'Lora', serif` (1 rule — .form-v3-content .form-detail h2) | `font-family` declarations in the theme sheet |
+
+Palette in order of use: `#333333` ×9, `#385cb9` ×4, `#666666` ×4, `#e5e5e5` ×2, `#ffffff` ×2, `#000000` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+
 ## Requirements
 
 ### Requirement: Form renders all booking fields

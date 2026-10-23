@@ -6,6 +6,27 @@ Recreation of ColorLib Sidebar V05 (https://colorlib.com/wp/template/colorlib-si
 
 A left-sidebar navigation template with a content grid. The sidebar contains branding, navigation links, and a "Featured Users" section with avatar cards. The main content area shows article cards in a 2-column grid.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v05/ (HTTP 200, 8,815 B, fetched 2026-10-23) and its theme stylesheet `theme/sidebar/colorlib-sidebar-v05/css/style.css` (15,244 B, sha256 `62402992f63c…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 3 declarations — `a`, `aside .side-inner .logo` |
+| Surface | `#ffffff` | 4 declarations — `body`, `aside` |
+| Ink / dark surface | `#000000` | 7 declarations — `.close`, `.close:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `2px` | `50%` (aside .side-inner .logo); `2px` (.burger:before) |
+
+Palette in order of use: `#000000` ×7, `#ffffff` ×4, `#007bff` ×3, `#0056b3` ×1, `#212529` ×1, `#b1b1b1` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sidebar navigation

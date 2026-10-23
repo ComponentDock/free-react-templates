@@ -10,6 +10,29 @@ Recreate the ColorLib Chiropractic template as a React 19 + Vite + Tailwind CSS 
 - **Preview URL:** https://preview.colorlib.com/theme/chiropractic/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/chiropractic-free-template.jpg
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/chiropractic/ (HTTP 200, 43,799 B, fetched 2026-10-23) and its theme stylesheet `theme/chiropractic/css/style.css` (82,862 B, sha256 `0fa766453c4f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#01d28e` | 41 declarations — `a`, `a:hover` |
+| Other chromatic values | `#6c5ce7`, `#007bff`, `#01d28c` | `#6c5ce7` × 14 (.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before); `#007bff` × 10 (a); `#01d28c` × 7 (.hero-wrap .overlay) |
+| Surface | `#ffffff` | 78 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 22 declarations — `.close`, `.close:hover` |
+| Typeface | `"Lato", sans-serif` (4 rules — body)<br>`-apple-system, sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `4px` | `50%` (.social-media p a); `0.25rem` (.form-control); `4px` (.ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu) |
+
+Palette in order of use: `#ffffff` ×78, `#01d28e` ×41, `#000000` ×22, `#6c5ce7` ×14, `#6c757d` ×12, `#007bff` ×10.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top bar and navigation

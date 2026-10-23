@@ -6,6 +6,29 @@ Recreation of ColorLib "Capture" (https://colorlib.com/wp/template/capture/)
 
 Galleryvue is a photography gallery website template featuring a fixed sidebar navigation, a 3-column masonry-style image gallery with hover overlays, and a dark footer with categories, archives, and contact information. It recreates the ColorLib "Capture" design faithfully using React, Tailwind CSS, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/capture/ (HTTP 200, 22,130 B, fetched 2026-10-23) and its theme stylesheet `theme/capture/css/style.css` (57,218 B, sha256 `66b4eaddfcc6…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f67e7d` | 11 declarations — `a`, `a:hover` |
+| Other chromatic values | `#78d5ef`, `#4ac7ea` | `#78d5ef` × 8 (a); `#4ac7ea` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 38 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 31 declarations — `.close`, `.close:hover` |
+| Typeface | `"Work Sans", sans-serif` (3 rules — body)<br>`"Montserrat", sans-serif` (2 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `0.25rem`, `50%`, `4px` | `0.25rem` (.form-control); `50%` (#colorlib-aside .colorlib-footer ul li a); `4px` (.tagcloud a) |
+
+Palette in order of use: `#ffffff` ×38, `#000000` ×31, `#f67e7d` ×11, `#212529` ×8, `#6c757d` ×8, `#78d5ef` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sidebar navigation

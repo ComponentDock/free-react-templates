@@ -10,6 +10,28 @@ Sovereign is a modern hotel booking website with a booking-form hero, room types
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Hospitality / Hotel Booking
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/thepalatin/ (HTTP 200, 28,927 B, fetched 2026-10-23) and its theme stylesheet `theme/thepalatin/style.css` (47,277 B, sha256 `f16031d729b8…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#cb8670` | 51 declarations — `.section-heading .line-`, `#scrollUp` |
+| Surface | `#ffffff` | 51 declarations — `.section-heading.white p`, `.section-heading.white h2` |
+| Ink / dark surface | `#363636` | 13 declarations — `h1`, `h2` |
+| Typeface | `"FuturaLT-Book"` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-size: 14px` | `body{…}` rule |
+| Radii | `50%`, `4px` | `50%` (.preloader .cssload-loading i); `4px` (.single-accordion.panel) |
+
+Palette in order of use: `#cb8670` ×51, `#ffffff` ×51, `#363636` ×13, `#7d7d7d` ×7, `#000000` ×3, `#181818` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar navigation

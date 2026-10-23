@@ -9,6 +9,29 @@
 
 LocalFinder is a local services directory listing template that helps users discover businesses and services nearby. It provides a search interface with category and location filtering, showcases popular categories, featured services with tabbed browsing, featured locations, testimonials, and blog posts. The footer links to Component Dock.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/directing/ (HTTP 200, 165,839 B, fetched 2026-10-23) and its theme stylesheet `theme/directing/css/style.min.css` (118,350 B, sha256 `0c4dbe57a255…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#cc0e2c` | 34 declarations — `.site-btn`, `.primary-btn` |
+| Other chromatic values | `#f03250`, `#f09d17`, `#1e7e34` | `#f03250` × 8 (.work__item__number); `#f09d17` × 4 (.testimonial__item__author__text .testimonial__item__author__rating i); `#1e7e34` × 2 (.listing__item__text__info__right) |
+| Surface | `#ffffff` | 65 declarations — `.text-bg-dark`, `.text-bg-danger` |
+| Ink / dark surface | `#323232` | 52 declarations — `.section-title h1`, `.section-title h2` |
+| Typeface | `Cairo, sans-serif` (3 rules — html)<br>`var(--bs-body-font-family)` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `2px`, `50%`, `5px` | `2px` (.primary-btn); `50%` (.testimonial__slider.owl-carousel .owl-nav button); `5px` (select:where(.nice-select) |
+
+Palette in order of use: `#ffffff` ×65, `#323232` ×52, `#cc0e2c` ×34, `#666666` ×23, `#707070` ×18, `#0000001a` ×11.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and branding

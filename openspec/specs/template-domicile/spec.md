@@ -4,6 +4,28 @@
 
 Domicile is a real estate property listing landing page with search filters and a property grid. It recreates the ColorLib **Homespace** design (https://colorlib.com/wp/template/homespace/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/homespace/ (HTTP 200, 50,348 B, fetched 2026-10-23) and its theme stylesheet `theme/homespace/css/style.css` (22,049 B, sha256 `584e81533317…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f89d13` | 16 declarations — `.form-control:focus`, `.form-control:active` |
+| Surface | `#ffffff` | 21 declarations — `.btn.btn-primary`, `.btn.btn-outline-primary` |
+| Ink / dark surface | `#000000` | 10 declarations — `.btn.btn-outline-primary:hover`, `.text-black` |
+| Typeface | `"Nunito Sans", sans-serif` (1 rule — body)<br>`"Roboto Mono", SFMono-Regular` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 1.7; color: rgba(0, 0, 0, 0.6); font-weight: 400; font-size: 1rem` | `body{…}` rule |
+| Radii | `50%`, `0%` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `0%` (.slide-one-item.home-slider .owl-prev) |
+
+Palette in order of use: `#ffffff` ×21, `#f89d13` ×16, `#000000` ×10, `#333333` ×2, `#cccccc` ×2, `#e6e6e6` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Complete page composition

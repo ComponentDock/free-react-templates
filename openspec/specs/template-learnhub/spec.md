@@ -6,6 +6,29 @@ Recreation of ColorLib **Etrain** (https://colorlib.com/wp/template/etrain/).
 
 Provide a free React template for online education platforms, featuring course listings, testimonials, stats, and a blog section. Recreates the ColorLib Etrain design with navy + coral-gold accent palette, Poppins/Roboto typography, and responsive mobile-first layout.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/etrain/ (HTTP 200, 43,695 B, fetched 2026-10-23) and its theme stylesheet `theme/etrain/css/style.min.css` (98,896 B, sha256 `4b2d68f0590c…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff663b` | 47 declarations — `.btn_4`, `.button` |
+| Other chromatic values | `#0c2e60`, `#415094`, `#ba4a2b` | `#0c2e60` × 34 (.skip-link); `#415094` × 7 (.genric-btn.default); `#ba4a2b` × 7 (.special_cource .single_special_cource .special_cource_text h4) |
+| Surface | `#ffffff` | 49 declarations — `.pswp__kit-caption`, `select:where(.nice-select` |
+| Ink / dark surface | `#0c2e60` | 34 declarations — `.skip-link`, `h1` |
+| Typeface | `Roboto, sans-serif` (9 rules — body)<br>`Poppins, sans-serif` (4 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 14px` | `body{…}` rule |
+| Radii | `3px`, `5px`, `50%` | `3px` (.owl-theme:where(.kit-owl) .owl-nav [class*=owl-]); `5px` (select:where(.nice-select); `50%` (.single-post-area .blog-author img) |
+
+Palette in order of use: `#ffffff` ×49, `#ff663b` ×47, `#707070` ×42, `#0c2e60` ×34, `#f9f9ff` ×25, `#edeff2` ×15.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and mobile menu

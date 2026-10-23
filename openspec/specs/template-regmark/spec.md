@@ -9,6 +9,27 @@ under a different name.
 **Source:** https://preview.colorlib.com/theme/colorlib-regform-10/
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-10.jpg
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/regform/colorlib-regform-10/ (HTTP 200, 2,719 B, fetched 2026-10-23) and its theme stylesheet `etc/regform/colorlib-regform-10/css/style.css` (9,294 B, sha256 `1c8ecd537141…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1da0f2` | 7 declarations — `.term-service`, `.form-radio input:hover` |
+| Surface | `#ffffff` | 6 declarations — `h1`, `.cl-container` |
+| Ink / dark surface | `#222222` | 3 declarations — `h2`, `body` |
+| Typeface | `Poppins` (4 rules — h2)<br>`'Material-Design-Iconic-Font'` (1 rule — input[type=checkbox]:not(old):checked + label > span:before) | `font-family` declarations in the theme sheet |
+| Radii | `5px`, `10px`, `2px` | `5px` (.form-radio input + label); `10px` (.cl-container); `2px` (input[type=checkbox]:not(old) + label > span) |
+
+Palette in order of use: `#1da0f2` ×7, `#ffffff` ×6, `#888888` ×4, `#222222` ×3, `#ebebeb` ×3, `#0c85d0` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page Structure

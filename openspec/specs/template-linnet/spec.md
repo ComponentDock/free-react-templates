@@ -4,6 +4,28 @@
 
 A business/agency one-page template with dark overlay hero, tabbed content, filterable portfolio, team cards, monthly/yearly pricing. It also includes blog, animated stats, and contact form. Recreation of ColorLib "Classic" (https://colorlib.com/wp/template/classic/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/classic/ (HTTP 200, 32,848 B, fetched 2026-10-23) and its theme stylesheet `theme/classic/style.css` (30,641 B, sha256 `d33ba528ebe8…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#a1c4fd` | 41 declarations — `.bttn.bttn-primary`, `.header-area .header-text .header-title .dot` |
+| Other chromatic values | `#c2e9fb` | `#c2e9fb` × 32 (.bttn.bttn-primary) |
+| Surface | `#ffffff` | 33 declarations — `.bttn`, `.bttn:focus` |
+| Ink / dark surface | `#000000` | 1 declarations — `.overlay:after` |
+| Typeface | `'Montserrat', sans-serif` (2 rules — h1)<br>`'Roboto', sans-serif` (2 rules — body) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `3px`, `5px` | `50%` (.header-area .header-text .header-title .dot); `3px` (.team-box); `5px` (.count-box) |
+
+Palette in order of use: `#a1c4fd` ×41, `#ffffff` ×33, `#c2e9fb` ×32, `#4f4f4f` ×5, `#898989` ×4, `#6b6d6f` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page loads with all sections

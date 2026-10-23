@@ -13,6 +13,28 @@ category: Real Estate
 
 Dwelling is a one-page real estate landing page template, recreating the ColorLib "Aler" design (https://colorlib.com/wp/template/aler/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template. It provides a complete property listing experience with search, featured properties, agent profiles, categories, testimonials, and contact form.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/aler/ (HTTP 200, 65,917 B, fetched 2026-10-23) and its theme stylesheet `theme/aler/css/style.css` (84,143 B, sha256 `a37dafa8771d…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#00c89e` | 55 declarations — `.section-title h4:after`, `.section-title h5:after` |
+| Other chromatic values | `#103230`, `#00c8a0`, `#0166d0` | `#103230` × 4 (.property-item .pi-pic .label.c-magenta); `#00c8a0` × 3 (.hs-top .ht-widget ul li i); `#0166d0` × 2 (.property-item .pi-pic .label) |
+| Surface | `#ffffff` | 77 declarations — `.primary-btn`, `a:hover` |
+| Ink / dark surface | `#111111` | 71 declarations — `h1`, `h2` |
+| Typeface | `"ElegantIcons"` (5 rules — .more-option .card-heading a:after)<br>`"Lato", sans-serif` (4 rules — .section-title.sidebar-title h5) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `2px`, `60px` | `50%` (.hs-slider.owl-carousel .owl-nav button); `2px` (.more-option .card .card-body .mo-list .ml-column label .checkbox); `60px` (.loader) |
+
+Palette in order of use: `#ffffff` ×77, `#111111` ×71, `#00c89e` ×55, `#666666` ×38, `#e1e1e1` ×11, `#f5f5f5` ×10.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full-page layout with navigation and footer

@@ -9,6 +9,29 @@ https://colorlib.com/wp/template/viral/), built under a DIFFERENT name
 (**Newsflow** — evokes a flowing stream of trending news), with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/viral/ (HTTP 200, 53,966 B, fetched 2026-10-23) and its theme stylesheet `theme/viral/style.min.css` (199,634 B, sha256 `4c143cba73ed…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#e20378` | 35 declarations — `#scrollUp`, `.header-area .top-header-area .top-header-content .top-breaking-news-area .ticker ul li a:hover` |
+| Other chromatic values | `#e30a73`, `#ee9202`, `#feae04` | `#e30a73` × 14 (.viral-btn); `#ee9202` × 7 (.single-welcome-slide .welcome-post .post-content .tag.tag-3); `#feae04` × 7 (.viral-btn) |
+| Surface | `#ffffff` | 36 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#231f1f` | 36 declarations — `.kit-mobile-nav .menu-search input`, `.kit-mobile-nav .menu-search button` |
+| Typeface | `Montserrat, sans-serif` (1 rule — body)<br>`Roboto, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `var(--bs-border-radius)`, `5px`, `50%` | `var(--bs-border-radius)` (.form-control); `5px` (.viral-btn); `50%` (.form-check-input[type=radio]) |
+
+Palette in order of use: `#231f1f` ×36, `#ffffff` ×36, `#e20378` ×35, `#656565` ×16, `#e30a73` ×14, `#000000` ×13.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top bar displays welcome message and social links

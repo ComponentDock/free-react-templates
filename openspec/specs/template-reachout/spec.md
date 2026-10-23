@@ -24,6 +24,28 @@ The design features a full-width hero banner with a dark overlay, a two-column b
 info sidebar on the left, form on the right), underline-style form fields, and a minimal footer
 with Component Dock branding.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/contact-form-16/ (HTTP 200, 2,963 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/contact-form-16/css/style.css` (13,502 B, sha256 `b9ed59ff092b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ccda46` | 4 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#b7c628` | `#b7c628` × 2 (.cl-btn-primary:hover) |
+| Surface | `#ffffff` | 7 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#212529` | 7 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`"Roboto", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `0 !important`, `4px !important` | `0.25rem` (.cl-form-control); `0 !important` (.cl-rounded-0); `4px !important` (.cl-btn) |
+
+Palette in order of use: `#212529` ×7, `#ffffff` ×7, `#000000` ×4, `#6c757d` ×4, `#ccda46` ×4, `#495057` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Hero banner renders heading and subtitle

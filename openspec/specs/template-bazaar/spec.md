@@ -4,6 +4,29 @@
 
 Recreation of ColorLib "Store" (https://colorlib.com/wp/template/store/) as "Bazaar" — a fashion e-commerce landing page with product grids, promotional sections, testimonials, blog, and newsletter. Built with React 19, Tailwind CSS 4, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/store/ (HTTP 200, 31,695 B, fetched 2026-10-23) and its theme stylesheet `theme/store/css/style.min.css` (278,812 B, sha256 `4aa2fa6dde63…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ffc300` | 65 declarations — `.form-check-input:checked`, `.form-range::-webkit-slider-thumb` |
+| Other chromatic values | `#765600`, `#ffc30040`, `#5bc0de` | `#765600` × 10 (a); `#ffc30040` × 6 (.form-control:focus); `#5bc0de` × 5 (.btn-info) |
+| Surface | `#ffffff` | 91 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#000000` | 44 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Roboto, sans-serif` (2 rules — body)<br>`var(--bs-font-sans-serif)` (2 rules — .tooltip) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `var(--bs-border-radius)`, `2px` | `50%` (.form-check-input[type=radio]); `var(--bs-border-radius)` (.img-thumbnail); `2px` (.product-entry .product-img .tag .new) |
+
+Palette in order of use: `#ffffff` ×91, `#ffc300` ×65, `#000000` ×44, `#222222` ×28, `#333333` ×20, `#595959` ×11.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation, and cart

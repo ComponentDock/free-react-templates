@@ -6,6 +6,28 @@ Recreation of ColorLib Regform 14 (https://colorlib.com/wp/template/colorlib-reg
 A centered registration form on a light blue background with gender toggle buttons,
 collapsible additional info section, and clean uppercase labels.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/regform/colorlib-regform-14/ (HTTP 200, 6,004 B, fetched 2026-10-23) and its theme stylesheet `etc/regform/colorlib-regform-14/css/style.css` (11,833 B, sha256 `b7e84e5dbab9…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1da0f2` | 8 declarations — `a`, `input:focus` |
+| Other chromatic values | `#c70000` | `#c70000` × 2 (label.error:after) |
+| Surface | `#ffffff` | 8 declarations — `.cl-container`, `.form-radio input + label` |
+| Ink / dark surface | `#222222` | 3 declarations — `body`, `ul li` |
+| Typeface | `'Material-Design-Iconic-Font'` (2 rules — li.init:after)<br>`'Montserrat'` (2 rules — body) | `font-family` declarations in the theme sheet |
+| Radii | `5px`, `0 5px 5px 0`, `5px 0 0 5px` | `5px` (.signup-form::-webkit-scrollbar-track); `0 5px 5px 0` (.form-flex input + label:last-of-type); `5px 0 0 5px` (.form-flex input + label:first-of-type) |
+
+Palette in order of use: `#1da0f2` ×8, `#ffffff` ×8, `#999999` ×6, `#ebebeb` ×4, `#222222` ×3, `#c70000` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Form renders all required fields

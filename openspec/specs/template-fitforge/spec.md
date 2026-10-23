@@ -10,6 +10,29 @@ A crossfit/gym landing page with hero, features, subscription, portfolio, testim
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Name:** FitForge (new name — never reuse "Crossfit")
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/crossfit/ (HTTP 200, 23,593 B, fetched 2026-10-23) and its theme stylesheet `theme/crossfit/styles/main_styles.css` (18,035 B, sha256 `ba1271e4a52f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff9908` | 16 declarations — `.button`, `.main_nav ul li a:hover` |
+| Other chromatic values | `#ff5408` | `#ff5408` × 10 (.button::before) |
+| Surface | `#ffffff` | 23 declarations — `body`, `p a:hover` |
+| Ink / dark surface | `#1d1f2a` | 5 declarations — `h1`, `h2` |
+| Typeface | `'Roboto', sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-size: 14px; font-weight: 400; color: #a5a5a5` | `body{…}` rule |
+| Radii | `50%` | `50%` (.home_slider_custom_dot) |
+
+Palette in order of use: `#ffffff` ×23, `#ff9908` ×16, `#ff5408` ×10, `#64677c` ×7, `#1d1f2a` ×5, `#000000` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation, and CTA

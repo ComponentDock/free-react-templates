@@ -11,6 +11,27 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript. The page is a
 minimal showcase of a styled checkbox task-list (one heading + three labeled
 checkboxes in a tag/chip layout) — a tiny, self-contained demo.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/checkbox-09/ (HTTP 200, 1,325 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/checkbox-09/css/style.css` (10,391 B, sha256 `1ae0e8908ca8…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#52de97` | 1 declarations — `ul.ks-cboxtags li input[type="checkbox"]:checked + label::before` |
+| Surface | `#ffffff` | 2 declarations — `body` |
+| Ink / dark surface | `#000000` | 2 declarations — `.heading-section`, `h2` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`"FontAwesome"` (1 rule — ul.ks-cboxtags li label::before) | `font-family` declarations in the theme sheet |
+| Radii | `4px` | `4px` (ul.ks-cboxtags li label) |
+
+Palette in order of use: `#000000` ×2, `#ffffff` ×2, `#212529` ×1, `#333333` ×1, `#52de97` ×1, `#7de6b1` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Heading display

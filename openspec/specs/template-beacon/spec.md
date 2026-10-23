@@ -7,6 +7,27 @@ A Photography Portfolio template with hero, intro, portfolio, services and conta
 Source: https://colorlib.com/wp/template/halo/
 Preview: https://preview.colorlib.com/theme/halo/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/halo/ (HTTP 200, 21,202 B, fetched 2026-10-23) and its theme stylesheet `theme/halo/css/style.min.css` (21,290 B, sha256 `f61299a3f373…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#cc1847` | 1 declarations — `.hero-slider .owl-dots .owl-dot.active span` |
+| Surface | `#ffffff` | 38 declarations — `.site-btn.light`, `.site-btn.light:after` |
+| Ink / dark surface | `#222121` | 10 declarations — `h1`, `h2` |
+| Typeface | `Open Sans, sans-serif` (2 rules — html) | `font-family` declaration in the theme sheet |
+| Radii | `50%`, `50px`, `60px` | `50%` (.worknav .wn-thumb); `50px` (.review-slider .client-pic); `60px` (.loader) |
+
+Palette in order of use: `#ffffff` ×38, `#222121` ×10, `#000000` ×6, `#868686` ×6, `#7a7a7a` ×2, `#d3d3d3` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders all navigation links and search

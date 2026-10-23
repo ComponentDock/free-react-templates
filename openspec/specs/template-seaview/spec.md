@@ -18,6 +18,29 @@ carousel, testimonials, and a branded footer. The recreation preserves the
 section structure, design tokens, and visual language while using original code,
 placeholder images, and the Component Dock brand.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/marimar/ (HTTP 200, 25,191 B, fetched 2026-10-23) and its theme stylesheet `theme/marimar/styles/main_styles.css` (21,735 B, sha256 `a218555c7f32…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff9000` | 19 declarations — `.button`, `.button:hover a` |
+| Other chromatic values | `#bfc8d8` | `#bfc8d8` × 4 (.rooms_left_content .rooms_text p) |
+| Surface | `#ffffff` | 26 declarations — `body`, `p a:hover` |
+| Ink / dark surface | `#0e0923` | 1 declarations — `.search_close:hover` |
+| Typeface | `'Playfair Display', serif` (4 rules — .section_title > div)<br>`'Lato', sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 15px; font-weight: 400; color: #a5a5a5` | `body{…}` rule |
+| Radii | `50%`, `7px` | `50%` (.testimonial_author_image); `7px` (.search_close) |
+
+Palette in order of use: `#ffffff` ×26, `#ff9000` ×19, `#4a4f59` ×14, `#f4f5fa` ×7, `#bfc8d8` ×4, `#0e0923` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders with navigation and CTA

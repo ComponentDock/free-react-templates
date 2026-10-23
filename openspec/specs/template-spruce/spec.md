@@ -6,6 +6,29 @@ Recreation of ColorLib "Olla" (https://colorlib.com/wp/template/olla/).
 
 A free business & web development landing template with a hero, services section, about split, brand logos, FAQ accordion, pricing tabs, testimonials, project gallery, call-to-action, and footer — built with React, Tailwind CSS, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/olla/ (HTTP 200, 36,367 B, fetched 2026-10-23) and its theme stylesheet `theme/olla/assets/css/style.css` (78,636 B, sha256 `d573ad40969d…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2845ba` | 63 declarations — `.btn`, `#back-top` |
+| Other chromatic values | `#041735`, `#415094`, `#4cd3e3` | `#041735` × 16 (h1); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 86 declarations — `a`, `button` |
+| Ink / dark surface | `#041735` | 16 declarations — `h1`, `h2` |
+| Typeface | `"Cabin", sans-serif` (7 rules — h1)<br>`"Open Sans", sans-serif` (5 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: normal; font-size: 16px` | `body{…}` rule |
+| Radii | `50%`, `3px`, `4px` | `50%` (#back-top); `3px` (.slider-area .single-slider .slider-cap-wrapper .hero-caption span); `4px` (.btn_1) |
+
+Palette in order of use: `#ffffff` ×86, `#2845ba` ×63, `#f9f9ff` ×27, `#041735` ×16, `#999999` ×10, `#f0e9ff` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top bar announcement strip

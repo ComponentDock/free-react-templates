@@ -4,6 +4,28 @@
 
 Recreation of ColorLib "Cryptian" (https://colorlib.com/wp/template/cryptian/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template. Provides an ICO/cryptocurrency landing page with hero, token sale stats, roadmap, team, FAQ, and community sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/cryptian/ (HTTP 200, 61,050 B, fetched 2026-10-23) and its theme stylesheet `theme/cryptian/style.css` (30,745 B, sha256 `187300c15278…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#004cff` | 6 declarations — `.progress`, `.progress-details` |
+| Other chromatic values | `#062489`, `#031b69`, `#fa758e` | `#062489` × 5 (.main-menu li ul li a:hover); `#031b69` × 4 (.ico-area); `#fa758e` × 4 (.roadmap-area .owl-nav div:hover) |
+| Surface | `#ffffff` | 38 declarations — `h1`, `h2` |
+| Ink / dark surface | `#031b69` | 4 declarations — `.ico-area`, `.roadmap-area` |
+| Typeface | `FontAwesome` (2 rules — .custom-progressBar::before)<br>`'Montserrat', sans-serif` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Radii | `5px`, `10px`, `50px` | `5px` (.main-menu li ul); `10px` (.single-team-social li a); `50px` (.progress) |
+
+Palette in order of use: `#ffffff` ×38, `#004cff` ×6, `#062489` ×5, `#031b69` ×4, `#fa758e` ×4, `#005dea` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and login

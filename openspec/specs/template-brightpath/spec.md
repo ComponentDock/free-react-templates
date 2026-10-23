@@ -13,6 +13,28 @@ preview_url: https://preview.colorlib.com/theme/edusmart/
 
 Recreation of ColorLib Edusmart as a React 19 + Vite + Tailwind 4 + TypeScript template. A free, production-ready online education landing page with hero search, feature highlights, department grid, course catalog, testimonials, countdown registration, events, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/edusmart/ (HTTP 200, 32,397 B, fetched 2026-10-23) and its theme stylesheet `theme/edusmart/css/style.css` (88,749 B, sha256 `a82d970580ee…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#00aee0` | 65 declarations — `#search_input_box`, `.single_feature:nth-child(3)` |
+| Other chromatic values | `#00fedc`, `#f8b600`, `#4cd3e3` | `#00fedc` × 25 (#search_input_box); `#f8b600` × 18 (b); `#4cd3e3` × 11 (.success) |
+| Surface | `#ffffff` | 106 declarations — `.primary-btn`, `.primary-btn:hover` |
+| Ink / dark surface | `#222222` | 35 declarations — `h1`, `h2` |
+| Typeface | `"Crimson Text", serif` (8 rules — .banner_area .banner_inner .banner_content .page_link a)<br>`"Montserrat", sans-serif` (5 rules — h1) | `font-family` declarations in the theme sheet |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×106, `#00aee0` ×65, `#222222` ×35, `#00fedc` ×25, `#777777` ×18, `#f8b600` ×18.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with top bar and navigation

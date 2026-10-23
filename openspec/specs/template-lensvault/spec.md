@@ -14,6 +14,29 @@ Recreation of ColorLib "Bitmap" (https://colorlib.com/wp/template/bitmap/)
 
 LensVault is a photography portfolio website template featuring a sticky navigation bar, a full-width hero banner with parallax overlay, a filterable 4-column photo gallery, client testimonials, a services grid, an Instagram feed, and a dark footer with newsletter signup and Component Dock attribution. It recreates the ColorLib "Bitmap" design faithfully using React, Tailwind CSS, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bitmap/ (HTTP 200, 20,325 B, fetched 2026-10-23) and its theme stylesheet `theme/bitmap/css/style.css` (61,803 B, sha256 `b3ba86067d90…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fcdc00` | 38 declarations — `.header_area .navbar .nav .nav-item:hover .nav-link`, `.header_area .navbar .nav .nav-item.active .nav-link` |
+| Other chromatic values | `#f8b600`, `#4cd3e3`, `#38a4ff` | `#f8b600` × 19 (.comment-form .primary-btn); `#4cd3e3` × 11 (.success); `#38a4ff` × 10 (.info) |
+| Surface | `#ffffff` | 84 declarations — `.header_area .navbar .nav .nav-item .nav-link`, `.header_area .navbar .search` |
+| Ink / dark surface | `#222222` | 42 declarations — `.main_title h2`, `.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link` |
+| Typeface | `"Poppins", sans-serif` (27 rules — body)<br>`'Linearicons-Free'` (1 rule — .banner_area .banner_inner .banner_content .page_link a:before) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 24px; font-size: 14px; font-weight: 300; color: #777777` | `body{…}` rule |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×84, `#222222` ×42, `#fcdc00` ×38, `#777777` ×23, `#f8b600` ×19, `#f9f9ff` ×17.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

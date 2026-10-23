@@ -6,6 +6,29 @@ Recreation of ColorLib **Eskwela** (https://colorlib.com/wp/template/eskwela/).
 
 Cognita is an online learning template. It recreates the ColorLib **Eskwela** design (https://colorlib.com/wp/template/eskwela/, preview: https://preview.colorlib.com/theme/eskwela/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/eskwela/ (HTTP 200, 49,144 B, fetched 2026-10-23) and its theme stylesheet `theme/eskwela/css/style.css` (40,792 B, sha256 `85593fa865f0…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#429ffd` | 24 declarations — `a`, `a:hover` |
+| Other chromatic values | `#ffc300`, `#5bacfd` | `#ffc300` × 4 (.intro-flex .one-third.color-1); `#5bacfd` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 32 declarations — `body`, `.colorlib-nav` |
+| Ink / dark surface | `#000000` | 24 declarations — `h1`, `h2` |
+| Typeface | `"Open Sans", sans-serif` (4 rules — body)<br>`"Playfair Display", Georgia` (2 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: 300; font-size: 16px; line-height: 1.5; color: gray` | `body{…}` rule |
+| Radii | `50%`, `100px`, `2px` | `50%` (.colorlib-video a); `100px` (.colorlib-nav ul li.btn-cta a span); `2px` (.review .desc .star .reply) |
+
+Palette in order of use: `#ffffff` ×32, `#000000` ×24, `#429ffd` ×24, `#f2f3f7` ×7, `#ffc300` ×4, `#252525` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Feature: UpperBar

@@ -17,6 +17,28 @@ Password?" link, and "Create new account" link. Typography uses Roboto
 Condensed. The aesthetic is clean, minimal, and modern with transparent
 UI elements over a photographic background.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/lf/Login_v6/index.html (HTTP 200, 1,831 B, fetched 2026-10-23) and its theme stylesheet `etc/lf/Login_v6/css/style.css` (12,053 B, sha256 `4e623eccda9f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#57b846` | 3 declarations — `.login100-form-btn`, `.txt2` |
+| Other chromatic values | `#c80000` | `#c80000` × 3 (.alert-validate::before) |
+| Surface | `#ffffff` | 6 declarations — `body`, `.wrap-login100` |
+| Ink / dark surface | `#333333` | 3 declarations — `.login100-form-title`, `.login100-form-btn:hover` |
+| Typeface | `Poppins-Regular` (4 rules — a)<br>`Poppins-Medium` (2 rules — .focus-input100::after) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `25px`, `2px` | `50%` (.login100-form-avatar); `25px` (.login100-form-btn); `2px` (.alert-validate::before) |
+
+Palette in order of use: `#adadad` ×8, `#ffffff` ×6, `#333333` ×3, `#57b846` ×3, `#c80000` ×3, `#999999` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full-page background image

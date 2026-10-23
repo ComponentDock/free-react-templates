@@ -6,6 +6,28 @@ Recreation of ColorLib **Equipo** (https://colorlib.com/wp/template/equipo/).
 
 Squadly is a heavy equipment rental landing page template featuring a hero, features/services section, about with stats, testimonials, blog, and a branded footer. It recreates the ColorLib Equipo design under a different name using React 19 + Tailwind CSS 4 + TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/equipo/ (HTTP 200, 34,012 B, fetched 2026-10-23) and its theme stylesheet `theme/equipo/css/style.min.css` (20,269 B, sha256 `a5dccec3eb01…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#042e4f` | 6 declarations — `#menu`, `.site-nav` |
+| Other chromatic values | `#ffa931`, `#04223300`, `#15334b` | `#ffa931` × 5 (#menu>a[aria-current]); `#04223300` × 2 (.hero-wrap:after); `#15334b` × 2 (.white) |
+| Surface | `#ffffff` | 23 declarations — `.topbar`, `.site-nav` |
+| Ink / dark surface | `#042e4f` | 6 declarations — `#menu`, `.site-nav` |
+| Body type | `color: #152b39` | `body{…}` rule |
+| Radii | `50%`, `2px` | `50%` (.contact-icon); `2px` (.button) |
+
+Palette in order of use: `#ffffff` ×23, `#042e4f` ×6, `#edf1f4` ×5, `#ffa931` ×5, `#f3f6f8` ×4, `#04223300` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact information

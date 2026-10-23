@@ -6,6 +6,29 @@
 
 Scholar is an online courses template. It recreates the ColorLib **Onedu** design (https://colorlib.com/wp/template/onedu/, preview: https://preview.colorlib.com/theme/onedu/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/onedu/ (HTTP 200, 44,578 B, fetched 2026-10-23) and its theme stylesheet `theme/onedu/assets/css/style.css` (74,106 B, sha256 `b97df0fe66ce…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ea5252` | 39 declarations — `.btn_1`, `.submit-btn:hover` |
+| Other chromatic values | `#ff6f00`, `#415094`, `#4cd3e3` | `#ff6f00` × 20 (.submit-btn); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 78 declarations — `a`, `button` |
+| Ink / dark surface | `#000000` | 4 declarations — `.single-post-area .navigation-area .nav-left .thumb`, `.login-form-area .login-form .input-box .single-input-fields input` |
+| Typeface | `"Jost", sans-serif` (13 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-weight: normal; font-size: 16px` | `body{…}` rule |
+| Radii | `50%`, `3px`, `4px` | `50%` (#back-top); `3px` (.genric-btn.radius); `4px` (.btn) |
+
+Palette in order of use: `#ffffff` ×78, `#ea5252` ×39, `#f9f9ff` ×27, `#ff6f00` ×20, `#3c3b37` ×12, `#999999` ×10.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Feature: Navbar

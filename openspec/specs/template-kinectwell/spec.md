@@ -8,6 +8,29 @@ Recreation of ColorLib "Physical Therapy" (https://colorlib.com/wp/template/phys
 
 Kinectwell is a professional physical therapy and rehabilitation landing page template. It provides a single-page marketing site for physiotherapy clinics, chiropractors, and massage therapy practices with sections for navigation, hero, about, services, why-choose-us, appointment CTA, testimonials, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/physicaltherapy/ (HTTP 200, 28,132 B, fetched 2026-10-23) and its theme stylesheet `theme/physicaltherapy/css/style.min.css` (194,735 B, sha256 `c50f87452b3a…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#b83a56` | 38 declarations — `.form-check-input:checked`, `.form-range::-webkit-slider-thumb` |
+| Other chromatic values | `#b83a5640`, `#db9caa`, `#5fd080` | `#b83a5640` × 6 (.form-control:focus); `#db9caa` × 3 (.form-control:focus); `#5fd080` × 2 (.ul-check.success li:before) |
+| Surface | `#ffffff` | 74 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#000000` | 31 declarations — `.text-bg-danger`, `::-moz-selection` |
+| Typeface | `Rubik, sans-serif` (2 rules — h1)<br>`var(--_fa-family)` (1 rule — .fa-brands) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `30px`, `var(--bs-border-radius)` | `50%` (.form-check-input[type=radio]); `30px` (.owl-theme:where(.kit-owl) .owl-dots .owl-dot span); `var(--bs-border-radius)` (.img-thumbnail) |
+
+Palette in order of use: `#ffffff` ×74, `#b83a56` ×38, `#000000` ×31, `#cccccc` ×8, `#ffffff80` ×8, `#6b6b6b` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation

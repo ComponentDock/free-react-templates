@@ -6,6 +6,28 @@ Recreate the ColorLib "Contact Form V3" template as a React + Tailwind CSS compo
 
 Source: https://colorlib.com/wp/template/contact-form-v3/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/cf/ContactFrom_v3/index.html (HTTP 200, 3,505 B, fetched 2026-10-23) and its theme stylesheet `etc/cf/ContactFrom_v3/css/style.css` (15,136 B, sha256 `8e868ab3f7c3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#56ab2f` | 8 declarations — `.contact3-form-btn`, `.wrap-contact3` |
+| Other chromatic values | `#a8e063`, `#c80000`, `#80c64a` | `#a8e063` × 8 (.wrap-contact3); `#c80000` × 3 (.alert-validate::before); `#80c64a` × 2 (.wrap-contact3) |
+| Surface | `#ffffff` | 9 declarations — `.contact3-form-title`, `body` |
+| Ink / dark surface | `#212529` | 1 declarations — `body` |
+| Typeface | `Poppins-Regular` (5 rules — a)<br>`Poppins-Medium` (2 rules — .contact3-form-btn) | `font-family` declarations in the theme sheet |
+| Radii | `2px`, `50%`, `10px` | `2px` (.contact3-form-btn); `50%` (.label-radio3::before); `10px` (.wrap-contact3) |
+
+Palette in order of use: `#ffffff` ×9, `#56ab2f` ×8, `#a8e063` ×8, `#c80000` ×3, `#80c64a` ×2, `#0056b3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Two contact cards rendered side by side

@@ -9,6 +9,27 @@ Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/staging-free-tem
 
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript (strict).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/staging/ (HTTP 200, 42,584 B, fetched 2026-10-23) and its theme stylesheet `theme/staging/css/style.css` (48,874 B, sha256 `531e38baf07e…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#dfa667` | 24 declarations — `.site-btn`, `.section-title span` |
+| Surface | `#ffffff` | 34 declarations — `.primary-btn`, `a:hover` |
+| Ink / dark surface | `#111111` | 39 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (13 rules — html)<br>`"Aldrich", sans-serif` (6 rules — h1) | `font-family` declarations in the theme sheet |
+| Radii | `4px`, `50%`, `0 0 0 4px` | `4px` (.primary-btn:hover:before); `50%` (.testimonial__carousel:after); `0 0 0 4px` (.primary-btn:before) |
+
+Palette in order of use: `#b7b7b7` ×59, `#111111` ×39, `#ffffff` ×34, `#dfa667` ×24, `#707070` ×7, `#353535` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders logo, nav links, and phone number

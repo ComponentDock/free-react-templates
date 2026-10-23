@@ -6,6 +6,26 @@ Recreation of ColorLib "Colorlib Search 20" (https://colorlib.com/wp/template/co
 
 A full-screen flight search form hero template with a background image, dark overlay, centered heading, and a white card containing a multi-field search form (from, to, dates, passengers) with a branded search button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-20/ (HTTP 200, 6,007 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-20/css/style.css` (13,170 B, sha256 `dda486d80ed1…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#6c7ae0` | 3 declarations — `#btn-add-room`, `.plus:hover` |
+| Surface | `#ffffff` | 6 declarations — `.btn-submit`, `.label` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`"Lato", sans-serif` (1 rule — .dropdown-select) | `font-family` declarations in the theme sheet |
+| Radii | `10px`, `50%` | `10px` (.btn-submit); `50%` (.minus) |
+
+Palette in order of use: `#cccccc` ×7, `#ffffff` ×6, `#6c7ae0` ×3, `#555555` ×2, `#666666` ×2, `#808080` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Hero section with background image

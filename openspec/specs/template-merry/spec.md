@@ -4,6 +4,28 @@
 
 A modern interactive multi-item carousel and card showcase template with hero, carousel, features, newsletter, and footer sections. Recreate the ColorLib Carousel 07 template (`https://colorlib.com/wp/template/carousel-07/`) as `merry`.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/carousel-07/ (HTTP 200, 15,251 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/carousel-07/css/style.css` (23,230 B, sha256 `813f8c662ed2…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 5 declarations — `.cl-btn-primary`, `.cl-btn-primary.cl-disabled` |
+| Other chromatic values | `#ff487e`, `#0062cc` | `#ff487e` × 5 (a); `#0062cc` × 2 (.cl-btn-primary:hover) |
+| Surface | `#ffffff` | 9 declarations — `body`, `.owl-theme .owl-nav [class*=owl-]` |
+| Ink / dark surface | `#000000` | 3 declarations — `.heading-section`, `.blog-entry .text .heading a` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `2px`, `30px` | `0.25rem` (.cl-btn); `2px` (.blog-entry .text); `30px` (.owl-theme .owl-dots .owl-dot span) |
+
+Palette in order of use: `#ffffff` ×9, `#007bff` ×5, `#ff487e` ×5, `#000000` ×3, `#212529` ×3, `#0062cc` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement 1: Navigation Bar

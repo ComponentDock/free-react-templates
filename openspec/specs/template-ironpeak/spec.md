@@ -13,6 +13,29 @@ preview_url: https://preview.colorlib.com/theme/fitnezz/
 
 Ironpeak is a fitness and gym landing page with featured classes, a schedule grid, trainer profiles, testimonials and blog cards. It recreates the ColorLib **Fitnezz** design (https://colorlib.com/wp/template/fitnezz/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/fitnezz/ (HTTP 200, 39,341 B, fetched 2026-10-23) and its theme stylesheet `theme/fitnezz/css/style.css` (19,024 B, sha256 `e8f5d79d0435…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f73471` | 11 declarations — `header .navbar-brand span`, `header .navbar .dropdown-menu .dropdown-item:hover` |
+| Other chromatic values | `#f96593` | `#f96593` × 2 (.btn.btn-primary:hover) |
+| Surface | `#ffffff` | 29 declarations — `.btn.btn-primary`, `.btn.btn-outline-white` |
+| Ink / dark surface | `#000000` | 10 declarations — `h1`, `h2` |
+| Typeface | `"Open Sans", sans-serif` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-weight: 400; font-size: 15px; line-height: 1.8; color: #868e96` | `body{…}` rule |
+| Radii | `50%`, `0px !important`, `16px` | `50%` (.item-class .text .class-price); `0px !important` (.btn); `16px` (#loader) |
+
+Palette in order of use: `#ffffff` ×29, `#f73471` ×11, `#000000` ×10, `#868e96` ×2, `#cccccc` ×2, `#f96593` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders brand and navigation links

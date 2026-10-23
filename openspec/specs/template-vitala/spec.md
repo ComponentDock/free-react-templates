@@ -12,6 +12,29 @@ type: medical-landing
 
 Vitala is a medical and healthcare landing page template. It recreates the ColorLib "Medicare2" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application with a blue gradient brand palette, Playfair Display headings, and Roboto body text.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/medicare2/ (HTTP 200, 26,460 B, fetched 2026-10-23) and its theme stylesheet `theme/medicare2/css/style.css` (79,586 B, sha256 `4d31b82e0b84…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0ba9ff` | 47 declarations — `.blog_right_sidebar .widget_title`, `#search_input_box` |
+| Other chromatic values | `#f8b600`, `#56d9ff`, `#4cd3e3` | `#f8b600` × 18 (b); `#56d9ff` × 15 (#search_input_box); `#4cd3e3` × 11 (.success) |
+| Surface | `#ffffff` | 94 declarations — `.primary-btn`, `.primary-btn:hover` |
+| Ink / dark surface | `#222222` | 34 declarations — `h1`, `h2` |
+| Typeface | `"Roboto", sans-serif` (7 rules — body)<br>`"Playfair Display", serif` (2 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 24px; font-size: 14px; font-weight: 500; color: #777777` | `body{…}` rule |
+| Radii | `3px`, `8px`, `20px` | `3px` (.radius); `8px` (.primary-radio); `20px` (.circle) |
+
+Palette in order of use: `#ffffff` ×94, `#0ba9ff` ×47, `#222222` ×34, `#f8b600` ×18, `#eeeeee` ×17, `#f9f9ff` ×16.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page loads with all sections

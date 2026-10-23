@@ -11,6 +11,27 @@ A medical/healthcare center website template. Recreation of ColorLib "Caremed".
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript
 - **New name:** `carepoint` (apps/carepoint, @free-react-templates/carepoint)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/caremed/ (HTTP 200, 22,131 B, fetched 2026-10-23) and its theme stylesheet `theme/caremed/styles/main_styles.css` (20,801 B, sha256 `6c4a4fe4cb32…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#20d34a` | 19 declarations — `a:hover`, `.button::after` |
+| Other chromatic values | `#283290` | `#283290` × 7 (.button) |
+| Surface | `#ffffff` | 27 declarations — `body`, `.button a` |
+| Ink / dark surface | `#272727` | 5 declarations — `.hamburger i`, `.menu_item a` |
+| Typeface | `'Roboto', sans-serif` (4 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-size: 15px; font-weight: 500; color: #696969` | `body{…}` rule |
+
+Palette in order of use: `#ffffff` ×27, `#20d34a` ×19, `#283290` ×7, `#272727` ×5, `#696969` ×4, `#b2b2b2` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+
 ## Requirements
 
 ### Requirement: Top Bar

@@ -9,6 +9,27 @@ Groovecraft is a music artist landing page template that recreates the ColorLib 
 - **App:** `apps/groovecraft`
 - **Package:** `@free-react-templates/groovecraft`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/onemusic/ (HTTP 200, 48,045 B, fetched 2026-10-23) and its theme stylesheet `theme/onemusic/css/style.min.css` (29,580 B, sha256 `fe1a3b0fed82…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface | `#ffffff` | 37 declarations — `body`, `.skip` |
+| Ink / dark surface | `#111111` | 28 declarations — `body`, `.button` |
+| Typeface | `Archivo, sans-serif` (1 rule — .wordmark text) | `font-family` declaration in the theme sheet |
+| Body type | `color: #111` | `body{…}` rule |
+| Radii | `50%` | `50%` (.track button) |
+
+Palette in order of use: `#ffffff` ×37, `#111111` ×28, `#dddddd` ×10, `#626262` ×8, `#000000` ×5, `#aaaaaa` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar

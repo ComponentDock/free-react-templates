@@ -17,6 +17,29 @@ Build a personal portfolio landing page for a freelancer/designer, showcasing se
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/drifter` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/ronin/ (HTTP 200, 23,344 B, fetched 2026-10-23) and its theme stylesheet `theme/ronin/css/style.css` (67,448 B, sha256 `af9316655274…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#8490ff` | 32 declarations — `.blog_info .post_tag a.active`, `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link` |
+| Other chromatic values | `#f8b600`, `#4cd3e3`, `#38a4ff` | `#f8b600` × 18 (b); `#4cd3e3` × 11 (.success); `#38a4ff` × 10 (.info) |
+| Surface | `#ffffff` | 87 declarations — `.main_title.white p`, `.main_title.white h2` |
+| Ink / dark surface | `#222222` | 44 declarations — `.main_title h2`, `.header_area .navbar .nav .nav-item .nav-link` |
+| Typeface | `"Roboto", sans-serif` (26 rules — body)<br>`"Heebo", sans-serif` (10 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 26px; font-size: 16px; font-weight: normal; color: #777777` | `body{…}` rule |
+| Radii | `3px`, `8px`, `5px` | `3px` (.radius); `8px` (.primary-radio); `5px` (.submit_btn) |
+
+Palette in order of use: `#ffffff` ×87, `#222222` ×44, `#8490ff` ×32, `#777777` ×26, `#f9f9ff` ×22, `#f8b600` ×18.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with responsive mobile menu

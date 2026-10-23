@@ -6,6 +6,29 @@ Recreation of ColorLib "Steakshop" (https://colorlib.com/wp/template/steakshop/)
 
 A free, production-ready React steakhouse landing page template featuring a right-sidebar navigation, hero banner, food courses, reservation form, chef spotlight, food gallery, brand partners, and a footer with newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/steakshop/ (HTTP 200, 22,275 B, fetched 2026-10-23) and its theme stylesheet `theme/steakshop/css/style.css` (68,895 B, sha256 `b5e780a6556e…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f42f2c` | 35 declarations — `.blog_right_sidebar .widget_title`, `.categories_post:hover .categories_details` |
+| Other chromatic values | `#f8b600`, `#4cd3e3`, `#38a4ff` | `#f8b600` × 18 (b); `#4cd3e3` × 11 (.success); `#38a4ff` × 10 (.info) |
+| Surface | `#ffffff` | 88 declarations — `.primary-btn`, `.primary-btn:hover` |
+| Ink / dark surface | `#222222` | 33 declarations — `h1`, `h2` |
+| Typeface | `"Roboto", sans-serif` (7 rules — body)<br>`"Pacifico", cursive` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 28px; font-size: 14px; font-weight: 400; color: #777777` | `body{…}` rule |
+| Radii | `3px`, `50%`, `8px` | `3px` (.radius); `50%` (.video-play-button); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×88, `#f42f2c` ×35, `#222222` ×33, `#777777` ×23, `#f8b600` ×18, `#f9f9ff` ×16.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation

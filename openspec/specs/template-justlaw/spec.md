@@ -15,6 +15,29 @@ status: in-progress
 
 Justlaw is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib **Justlaw** design (https://colorlib.com/wp/template/justlaw/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/justlaw/ (HTTP 200, 50,234 B, fetched 2026-10-23) and its theme stylesheet `theme/justlaw/assets/css/style.css` (65,949 B, sha256 `e0d80ac51bcd…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#da0000` | 31 declarations — `.btn:hover`, `.boxed-btn:hover` |
+| Other chromatic values | `#415094`, `#4cd3e3`, `#38a4ff` | `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info) |
+| Surface | `#ffffff` | 76 declarations — `.btn`, `.btn:hover` |
+| Ink / dark surface | `#222222` | 20 declarations — `b`, `sup` |
+| Typeface | `"Playfair Display", serif` (4 rules — h1)<br>`"Roboto", sans-serif` (4 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: normal` | `body{…}` rule |
+| Radii | `50%`, `3px`, `5px` | `50%` (#scrollUp); `3px` (.genric-btn.radius); `5px` (.btn) |
+
+Palette in order of use: `#ffffff` ×76, `#da0000` ×31, `#f9f9ff` ×27, `#222222` ×20, `#999999` ×10, `#f0e9ff` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with sticky header and mobile menu

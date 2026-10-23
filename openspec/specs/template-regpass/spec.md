@@ -4,6 +4,27 @@
 
 A Registration Forms template with all form fields, form fields, user and form sections. Recreation of ColorLib "Regform 19" (https://colorlib.com/wp/template/colorlib-regform-19/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript registration form template.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/regform/colorlib-regform-19/ (HTTP 200, 6,608 B, fetched 2026-10-23) and its theme stylesheet `etc/regform/colorlib-regform-19/css/style.css` (7,243 B, sha256 `9de3fb51940d…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ea9f48` | 1 declarations — `button` |
+| Surface | `#ffffff` | 2 declarations — `.inner`, `button` |
+| Ink / dark surface | `#000000` | 1 declarations — `.checkmark` |
+| Typeface | `"Muli-Regular"` (2 rules — body)<br>`"Muli-SemiBold"` (2 rules — button) | `font-family` declarations in the theme sheet |
+| Radii | `2px` | `2px` (.checkmark) |
+
+Palette in order of use: `#999999` ×8, `#ffffff` ×2, `#000000` ×1, `#333333` ×1, `#666666` ×1, `#6d5555` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders with all sections

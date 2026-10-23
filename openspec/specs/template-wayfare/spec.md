@@ -6,6 +6,27 @@ Recreation of ColorLib "Search Form V11" (https://colorlib.com/wp/template/color
 
 A travel search form component for hotel booking websites. Features a full-viewport background image with dark overlay, tabbed search type selector, and a search form with destination, dates, travelers, flight/car options, and an orange search button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-11/ (HTTP 200, 13,407 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-11/css/style.css` (16,830 B, sha256 `7c049d831086…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2c6ed5` | 2 declarations — `.s011 form .inner-form header .travel-type-wrap .item:hover`, `.s011 form .inner-form header .travel-type-wrap .item:focus` |
+| Surface | `#ffffff` | 10 declarations — `.s011 form fieldset legend`, `[type="checkbox"]:checked + label:before` |
+| Ink / dark surface | `#333333` | 4 declarations — `.choices[data-type*="select-one"]:after`, `.choices[data-type*="select-one"].is-open:after` |
+| Typeface | `'Lato', sans-serif` (2 rules — .s011)<br>`'Poppins', sans-serif` (1 rule — .s011 form fieldset legend) | `font-family` declarations in the theme sheet |
+| Radii | `3px`, `100%`, `2.5px` | `3px` ([type="checkbox"]:checked + label:before); `100%` ([type="checkbox"]:checked + label:after); `2.5px` (.choices__inner) |
+
+Palette in order of use: `#ffffff` ×10, `#333333` ×4, `#555555` ×3, `#808080` ×3, `#2c6ed5` ×2, `#b7b7b7` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: SearchTabs

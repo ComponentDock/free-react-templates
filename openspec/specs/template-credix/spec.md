@@ -4,6 +4,29 @@
 
 A loan and credit company landing page with navy blue and golden accent, featuring a hero section, feature highlights, skill indicators. It also includes services grid, contact/news section, newsletter signup, and a 4-column footer. Recreation of ColorLib "Credit" (https://colorlib.com/wp/template/credit/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/credit/ (HTTP 200, 39,614 B, fetched 2026-10-23) and its theme stylesheet `theme/credit/style.css` (56,866 B, sha256 `99fc516ba63a…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ffbb38` | 48 declarations — `.section-heading .line`, `.tooltip-inner` |
+| Other chromatic values | `#003679` | `#003679` × 33 (.preloader) |
+| Surface | `#ffffff` | 58 declarations — `.section-heading.white p`, `.section-heading.white h2` |
+| Ink / dark surface | `#212121` | 10 declarations — `.section-heading h2`, `.single-blog-area .blog-content .post-title` |
+| Typeface | `"Open Sans", sans-serif` (7 rules — body)<br>`"Montserrat", sans-serif` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 14px` | `body{…}` rule |
+| Radii | `5px`, `50%`, `30px` | `5px` (.credit-btn); `50%` (.preloader .lds-ellipsis div); `30px` (.single-news-area .news-content span) |
+
+Palette in order of use: `#ffffff` ×58, `#ffbb38` ×48, `#003679` ×33, `#212121` ×10, `#838383` ×6, `#f1f7f9` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full page render with all sections

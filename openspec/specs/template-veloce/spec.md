@@ -7,6 +7,28 @@ ColorLib Automotive design (https://colorlib.com/wp/template/automotive/) under
 a new name. It provides a professional auto garage landing page with hero,
 services grid, product cards, testimonials, stats, and a news section.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/automotive/ (HTTP 200, 37,024 B, fetched 2026-10-23) and its theme stylesheet `theme/automotive/css/style.css` (42,561 B, sha256 `1dfe2e33ed0f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#5f67ff` | 24 declarations — `.site-btn`, `.primary-btn` |
+| Other chromatic values | `#2c85ae`, `#324975`, `#3eaff0` | `#2c85ae` × 2 (.footer__copyright__social a.twitter); `#324975` × 2 (.footer__copyright__social a); `#3eaff0` × 2 (.footer__copyright__social a.pinterest) |
+| Surface | `#ffffff` | 40 declarations — `.primary-btn`, `a:hover` |
+| Ink / dark surface | `#353535` | 47 declarations — `.section-title h2`, `.header__right li a` |
+| Typeface | `"Public Sans", sans-serif` (3 rules — html)<br>`"FontAwesome"` (1 rule — .breadcrumb__links a:after) | `font-family` declarations in the theme sheet |
+| Radii | `2px`, `50%`, `60px` | `2px` (.site-btn); `50%` (.search-close-switch); `60px` (.loader) |
+
+Palette in order of use: `#353535` ×47, `#ffffff` ×40, `#5f67ff` ×24, `#727171` ×18, `#8d8d8d` ×7, `#b4b4b4` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full page renders all sections

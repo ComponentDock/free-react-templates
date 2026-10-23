@@ -6,6 +6,29 @@ Recreation of ColorLib Hamlet (https://colorlib.com/wp/template/hamlet/).
 
 Provide a real estate agency landing page template featuring a hero slider with property details, a property search form, recently listed properties, about/services sections, customer testimonials, and a full footer with newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/hamlet/ (HTTP 200, 50,310 B, fetched 2026-10-23) and its theme stylesheet `theme/hamlet/css/style.css` (85,056 B, sha256 `7c6c21fabfa0…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 8 declarations — `.btn-primary`, `.btn-primary.disabled` |
+| Other chromatic values | `#0062cc` | `#0062cc` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 58 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 56 declarations — `.close`, `.close:hover` |
+| Typeface | `-apple-system, sans-serif` (3 rules — body)<br>`"Rubik", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `2px` | `50%` (.owl-carousel .owl-dots .owl-dot); `0.25rem` (.form-control); `2px` (.blog-entry .text) |
+
+Palette in order of use: `#ffffff` ×58, `#000000` ×56, `#ffdfdf` ×29, `#2f3035` ×10, `#6c757d` ×9, `#007bff` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and CTA

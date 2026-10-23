@@ -10,6 +10,29 @@ A Drone Photography template with hero, services grid with three, video/how we w
 - **Deploy target:** https://skylens.free.componentdock.com
 - **Category:** Business / Photography Services
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/dronephotography/ (HTTP 200, 35,099 B, fetched 2026-10-23) and its theme stylesheet `theme/dronephotography/assets/css/style.min.css` (206,874 B, sha256 `45708808b9cd…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff5f21` | 32 declarations — `.boxed-btn`, `.submit-btn2` |
+| Other chromatic values | `#1f2b7b`, `#415094`, `#007bff` | `#1f2b7b` × 14 (.contact-info .media-body h3 a:hover); `#415094` × 8 (.genric-btn.default); `#007bff` × 6 (.form-check-input:checked) |
+| Surface | `#ffffff` | 93 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#071112` | 19 declarations — `h1`, `h2` |
+| Typeface | `Oswald, sans-serif` (11 rules — .boxed-btn)<br>`Montserrat, sans-serif` (4 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `3px`, `var(--bs-border-radius)` | `50%` (.form-check-input[type=radio]); `3px` (.owl-theme:where(.kit-owl) .owl-nav [class*=owl-]); `var(--bs-border-radius)` (.img-thumbnail) |
+
+Palette in order of use: `#ffffff` ×93, `#ff5f21` ×32, `#f9f9ff` ×27, `#6b6b6b` ×26, `#071112` ×19, `#000000` ×16.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Hero displays centered headline and CTA

@@ -9,6 +9,29 @@ A Food / Recipe Blog template with top header, sticky, hero carousel, top catego
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Food / Recipe Blog
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/delicious/ (HTTP 200, 53,391 B, fetched 2026-10-23) and its theme stylesheet `theme/delicious/style.min.css` (201,681 B, sha256 `eea7516f9746…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#23781e` | 22 declarations — `.delicious-btn.btn-4`, `.header-area .top-header-area .breaking-news .ticker ul li a:hover` |
+| Other chromatic values | `#1a7a13`, `#40ba37`, `#007bff` | `#1a7a13` × 12 (.kit-mobile-nav .kit-mobile-nav__extras button); `#40ba37` × 11 (.delicious-btn.active); `#007bff` × 6 (.form-check-input:checked) |
+| Surface | `#ffffff` | 57 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#000000` | 12 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Open Sans, sans-serif` (1 rule — body)<br>`Roboto, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `var(--bs-border-radius)`, `1rem`, `var(--bs-border-radius-lg)` | `var(--bs-border-radius)` (.img-thumbnail); `1rem` (.form-range::-webkit-slider-thumb); `var(--bs-border-radius-lg)` (.form-control-lg) |
+
+Palette in order of use: `#ffffff` ×57, `#23781e` ×22, `#474747` ×17, `#666666` ×17, `#000000` ×12, `#1a7a13` ×12.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top header bar

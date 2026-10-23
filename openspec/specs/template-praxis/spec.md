@@ -8,6 +8,26 @@ Praxis is a plastic surgery clinic landing page template. It provides a
 professional, modern design with hero imagery, appointment booking, service
 showcase, and clinic information — aimed at cosmetic surgery practices.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/drpro/ (HTTP 200, 33,004 B, fetched 2026-10-23) and its theme stylesheet `theme/drpro/kit/form.min.css` (551 B, sha256 `247ff50c3051…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#145c2c` | 1 declarations — `.kit-form-status.is-success` |
+| Surface | `#e7f6ec` | 1 declarations — `.kit-form-status.is-success` |
+| Ink / dark surface | `#0000000a` | 1 declarations — `.kit-form-status.is-sending` |
+| Radii | `4px` | `4px` (.kit-form-status) |
+
+Palette in order of use: `#0000000a` ×1, `#145c2c` ×1, `#8a1c1c` ×1, `#d93025` ×1, `#e7f6ec` ×1, `#fdecec` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and branding

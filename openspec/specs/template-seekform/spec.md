@@ -4,6 +4,25 @@
 
 A full-page search hero with a prominent search input, category pills, and a lifestyle background image. Recreation of ColorLib "Search Form 6" (https://colorlib.com/wp/template/colorlib-search-6/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-6/ (HTTP 200, 1,525 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-6/css/style.css` (7,590 B, sha256 `5accff12df51…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface | `#ffffff` | 3 declarations — `.s006 form legend`, `.s006 form .suggestion-wrap span` |
+| Typeface | `'Helvetica', sans-serif` (1 rule — .s006 form .suggestion-wrap span)<br>`'Poppins', sans-serif` (1 rule — .s006) | `font-family` declarations in the theme sheet |
+| Radii | `16px`, `34px` | `16px` (.s006 form .suggestion-wrap span); `34px` (.s006 form .inner-form .input-field input) |
+
+Palette in order of use: `#cccccc` ×4, `#ffffff` ×3, `#666666` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Heading display

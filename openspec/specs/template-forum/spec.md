@@ -18,6 +18,29 @@ pricing cards, brand logos, call-to-action, and dark footer with Component Dock 
 
 **Source:** Recreation of ColorLib "Conference" (https://colorlib.com/wp/template/conference/)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/conference/ (HTTP 200, 29,647 B, fetched 2026-10-23) and its theme stylesheet `theme/conference/css/main.css` (31,934 B, sha256 `6396ad51bfd3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#8ab92d` | 43 declarations — `b`, `sup` |
+| Other chromatic values | `#4cd3e3`, `#38a4ff`, `#f44a40` | `#4cd3e3` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f44a40` × 6 (.genric-btn.danger) |
+| Surface | `#ffffff` | 65 declarations — `.text-white`, `.sample-text-area` |
+| Ink / dark surface | `#222222` | 19 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body)<br>`FontAwesome` (1 rule — .sf-arrows .sf-with-ul:after) | `font-family` declarations in the theme sheet |
+| Body type | `color: #777; font-size: 14px; font-weight: 300; line-height: 1.625em` | `body{…}` rule |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×65, `#8ab92d` ×43, `#f9f9ff` ×30, `#222222` ×19, `#777777` ×12, `#4cd3e3` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all major sections

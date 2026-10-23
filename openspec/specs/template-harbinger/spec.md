@@ -10,6 +10,28 @@ A Coming Soon template with under construction heading, email subscription and s
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Coming Soon / Under Construction
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/cs/04-comming-soon.html (HTTP 200, 5,437 B, fetched 2026-10-23) and its theme stylesheet `etc/cs/04-comming-soon/css/style.css` (10,118 B, sha256 `c86c1afbed9f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2a61d6` | 2 declarations — `.right-section .footer-icons > li > a > i[class*="facebook"]` |
+| Other chromatic values | `#3aa4f8`, `#8f614a`, `#e1c013` | `#3aa4f8` × 2 (.right-section .footer-icons > li > a > i[class*="twitter"]); `#8f614a` × 2 (.right-section .footer-icons > li > a > i[class*="instagram"]); `#e1c013` × 2 (.right-section .footer-icons > li > a > i[class*="pinterest"]) |
+| Surface | `#ffffff` | 2 declarations — `.main-content .email-input-area .submit-btn`, `.main-area` |
+| Ink / dark surface | `#0c0d0f` | 1 declarations — `.main-area` |
+| Typeface | `'Open Sans', sans-serif` (1 rule — body)<br>`'Poppins', sans-serif` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Radii | `0 2px 2px 0`, `2px`, `40px` | `0 2px 2px 0` (.main-content .email-input-area .submit-btn); `2px` (.main-content .email-input-area .email-input); `40px` (.right-section .footer-icons > li > a > i) |
+
+Palette in order of use: `#2a61d6` ×2, `#3aa4f8` ×2, `#8f614a` ×2, `#e1c013` ×2, `#f43846` ×2, `#ffffff` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Split layout with hero image

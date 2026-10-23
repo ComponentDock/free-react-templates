@@ -10,6 +10,28 @@ A Fitness / Gym template with hero, services, classes, team, banner and register
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript (strict)
 - **Package:** `@free-react-templates/gymcore`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/gutim/ (HTTP 200, 37,268 B, fetched 2026-10-23) and its theme stylesheet `theme/gutim/css/style.css` (37,820 B, sha256 `b3126fa140f3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f67831` | 35 declarations — `.primary-btn:after`, `.membership-item .mi-title` |
+| Other chromatic values | `#eb3c5a`, `#f15d44` | `#eb3c5a` × 34 (.primary-btn:after); `#f15d44` × 16 (.nav-menu .mainmenu ul li a:after) |
+| Surface | `#ffffff` | 49 declarations — `.primary-btn`, `a:hover` |
+| Ink / dark surface | `#111111` | 30 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (3 rules — html)<br>`"FontAwesome"` (1 rule — .breadcrumb-text .breadcrumb-option a:after) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `2px`, `10px` | `50%` (.classes-slider.owl-carousel .owl-dots button); `2px` (.bd-hero-text span); `10px` (.bd-text .bd-quote) |
+
+Palette in order of use: `#ffffff` ×49, `#f67831` ×35, `#eb3c5a` ×34, `#111111` ×30, `#f15d44` ×16, `#9a9a9a` ×10.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays navigation and CTA

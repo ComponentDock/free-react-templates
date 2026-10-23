@@ -7,6 +7,27 @@ Recreate the ColorLib "Pharmative" design as a React 19 + Vite + Tailwind CSS 4 
 **Source:** https://colorlib.com/wp/template/pharmative/
 **Preview:** https://preview.colorlib.com/theme/pharmative/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/pharmative/ (HTTP 200, 18,967 B, fetched 2026-10-23) and its theme stylesheet `theme/pharmative/css/style.css` (23,029 B, sha256 `a445b84be645…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#75b239` | 22 declarations — `.btn.btn-primary:hover`, `.form-control:focus` |
+| Surface | `#ffffff` | 24 declarations — `.text-white`, `.site-navbar` |
+| Ink / dark surface | `#000000` | 22 declarations — `.site-footer .footer-heading`, `.text-black` |
+| Body type | `line-height: 1.7; color: #8c92a0; font-weight: 300; font-size: 16px` | `body{…}` rule |
+| Radii | `50%`, `40%` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `40%` (.testimony img) |
+
+Palette in order of use: `#ffffff` ×24, `#000000` ×22, `#75b239` ×22, `#25262a` ×6, `#212529` ×3, `#eeeeee` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation, search, and cart

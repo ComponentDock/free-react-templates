@@ -12,6 +12,29 @@ preview: https://preview.colorlib.com/theme/design/
 
 Atelier is a creative agency landing page with a split hero, achievement stats, process steps, services, a testimonial carousel and blog cards. It recreates the ColorLib "Design" design with Vite, React 19, Tailwind CSS 4 and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/design/ (HTTP 200, 24,558 B, fetched 2026-10-23) and its theme stylesheet `theme/design/css/style.css` (27,802 B, sha256 `4567f225ba66…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1264fa` | 29 declarations — `.btn.btn-primary`, `a` |
+| Other chromatic values | `#000839`, `#2671fa` | `#000839` × 5 (body); `#2671fa` × 2 (.btn.btn-primary:hover) |
+| Surface | `#ffffff` | 11 declarations — `.site-nav .site-navigation .site-menu > li.cta-button a:hover`, `body` |
+| Ink / dark surface | `#000000` | 9 declarations — `.site-mobile-menu-close > span:before`, `.site-nav .site-navigation .site-menu > li > a` |
+| Typeface | `"Montserrat", sans-serif` (2 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `line-height: 1.8; font-size: 1em; color: #000839` | `body{…}` rule |
+| Radii | `50%`, `30px`, `4px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `30px` (.btn); `4px` (.control__indicator) |
+
+Palette in order of use: `#1264fa` ×29, `#ffffff` ×11, `#000000` ×9, `#f8f9fa` ×6, `#000839` ×5, `#2671fa` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, links, and mobile menu

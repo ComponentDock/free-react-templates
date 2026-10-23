@@ -9,6 +9,23 @@
 
 Belmont is a free luxury hotel website template that recreates the ColorLib Samira design in React 19 + Tailwind CSS 4 + TypeScript. It provides a complete landing page for a luxury resort/hotel with navigation, hero slider, booking bar, intro section, featured room, room listings, image gallery, newsletter signup, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/samira/ (HTTP 200, 23,375 B, fetched 2026-10-23) and its theme stylesheet `theme/samira/plugins/colorbox/colorbox.css` (4,523 B, sha256 `4d2b34c6bbfb…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0092ef` | 1 declarations — `#cboxSlideshow` |
+| Surface | `#ffffff` | 2 declarations — `.cboxIframe`, `#cboxContent` |
+
+Palette in order of use: `#949494` ×2, `#ffffff` ×2, `#0092ef` ×1, `#cccccc` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+
 ## Requirements
 
 ### Requirement: Navbar renders with brand, navigation, and book button

@@ -4,6 +4,28 @@
 
 Recreation of ColorLib Bootstrap Buttons 07 (`https://colorlib.com/wp/template/bootstrap-buttons-07/`, preview: `https://preview.colorlib.com/theme/bootstrap-buttons-07/` — unreachable, 404). A clean, systematic UI component showcase featuring Bootstrap 4 inspired button variants organized by size scale (Large, Medium, Small), comprehensive color palette (18 variants: Primary, Secondary, Success, Info, Warning, Danger, Light, Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray), and a full-width block button, built with React 19, Tailwind CSS 4, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bb/bootstrap-buttons-07/ (HTTP 200, 3,279 B, fetched 2026-10-23) and its theme stylesheet `theme/bb/bootstrap-buttons-07/css/style.css` (18,637 B, sha256 `aacc95fc099b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0062cc` | 5 declarations — `.cl-btn-primary:hover`, `.cl-btn-primary:focus` |
+| Other chromatic values | `#007bff`, `#dc3545`, `#ffc107` | `#007bff` × 5 (.cl-btn-primary); `#dc3545` × 5 (.cl-btn-danger); `#ffc107` × 5 (.cl-btn-warning) |
+| Surface | `#ffffff` | 58 declarations — `.cl-btn-primary`, `.cl-btn-primary:hover` |
+| Ink / dark surface | `#212529` | 13 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `.25rem`, `.2rem`, `.3rem` | `.25rem` (.cl-btn); `.2rem` (.cl-btn-sm); `.3rem` (.cl-btn-lg) |
+
+Palette in order of use: `#ffffff` ×58, `#212529` ×13, `#0062cc` ×5, `#007bff` ×5, `#dc3545` ×5, `#ffc107` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Size Scale Showcase

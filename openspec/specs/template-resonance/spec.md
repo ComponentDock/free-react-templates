@@ -19,6 +19,29 @@ flaticon icon font with lucide-react icons.
 Resonance lives in `apps/resonance` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/echo/ (HTTP 200, 29,941 B, fetched 2026-10-23) and its theme stylesheet `theme/echo/css/style.css` (56,933 B, sha256 `9f2f79b8796f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#081158` | 34 declarations — `.btn-primary`, `.btn-primary:disabled` |
+| Other chromatic values | `#060e46`, `#070e4b`, `#fbb244` | `#060e46` × 5 (a:hover); `#070e4b` × 2 (.btn-primary:hover); `#fbb244` × 2 (.site-nav .site-navigation .site-menu > li.cta-button a) |
+| Surface | `#ffffff` | 28 declarations — `body`, `.form-control` |
+| Ink / dark surface | `#081158` | 34 declarations — `.btn-primary`, `.btn-primary:disabled` |
+| Typeface | `"Open Sans", sans-serif` (3 rules — body)<br>`var(--bs-font-sans-serif)` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `0.25rem`, `50%`, `30px` | `0.25rem` (.form-control); `50%` (.spinner-border); `30px` (.site-nav .site-navigation .site-menu > li.cta-button a) |
+
+Palette in order of use: `#081158` ×34, `#ffffff` ×28, `#000000` ×17, `#212529` ×11, `#6c757d` ×8, `#060e46` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

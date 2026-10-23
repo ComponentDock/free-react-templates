@@ -9,6 +9,28 @@ services grid, video banner, popular orders, testimonials, brand logos, and a
 multi-column footer. The design uses warm red-orange tones and a zigzag/wave
 aesthetic on section borders.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/flatter/ (HTTP 200, 33,056 B, fetched 2026-10-23) and its theme stylesheet `theme/flatter/css/style.css` (143,126 B, sha256 `f79efbb2ad67…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#78b454` | 26 declarations — `.boxed_btn`, `.boxed-btn` |
+| Other chromatic values | `#ff5e13`, `#415094`, `#4cd3e3` | `#ff5e13` × 20 (.owl-carousel:hover .owl-nav div:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 76 declarations — `a:focus`, `*::-moz-selection` |
+| Ink / dark surface | `#000000` | 17 declarations — `h1`, `a:focus` |
+| Typeface | `"Josefin Sans", sans-serif` (3 rules — .header-area .main-header-area .main-menu ul li a)<br>`'Josefin Sans', sans-serif` (2 rules — h1) | `font-family` declarations in the theme sheet |
+| Radii | `3px`, `50%`, `8px` | `3px` (.genric-btn.radius); `50%` (.video_area .video_text .icon_video a); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×76, `#f9f9ff` ×27, `#78b454` ×26, `#ff5e13` ×20, `#000000` ×17, `#777777` ×12.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and CTA

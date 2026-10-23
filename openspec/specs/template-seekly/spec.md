@@ -6,6 +6,26 @@ Recreation of ColorLib **Colorlib Search 1** (https://colorlib.com/wp/template/c
 
 A single-page search form hero template featuring a full-screen background image with a semi-transparent dark overlay, large heading text, and a search bar with two input fields and a search button. Minimal footer with Component Dock branding.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-1/ (HTTP 200, 1,106 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-1/css/style.css` (7,057 B, sha256 `4613bb937acc…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2d62d3` | 1 declarations — `.s01 form .inner-form .input-field.third-wrap .btn-search:hover` |
+| Surface | `#ffffff` | 3 declarations — `.s01 form .inner-form .input-field.third-wrap .btn-search`, `.s01 form legend` |
+| Typeface | `'Poppins', sans-serif` (1 rule — .s01)<br>`sans-serif` (1 rule — button) | `font-family` declarations in the theme sheet |
+| Radii | `.5px` | `.5px` (.s01 form .inner-form .input-field input) |
+
+Palette in order of use: `#9a9a9a` ×3, `#ffffff` ×3, `#2d62d3` ×1, `#4272d7` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Hero section with background and heading

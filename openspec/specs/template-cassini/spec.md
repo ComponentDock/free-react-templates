@@ -14,6 +14,29 @@ Recreation of ColorLib "Cassi" (https://colorlib.com/wp/template/cassi/)
 
 Cassini is a photography studio website template featuring a full-screen hero image slider with category tags, an offcanvas hamburger menu, a minimal transparent header, and a dark footer with social links and Component Dock attribution. It recreates the ColorLib "Cassi" design faithfully using React, Tailwind CSS, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/cassi/ (HTTP 200, 8,565 B, fetched 2026-10-23) and its theme stylesheet `theme/cassi/css/style.min.css` (89,402 B, sha256 `d2422bb6c791…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#242deb` | 12 declarations — `.site-btn`, `.hero-slider .owl-nav button.owl-prev:hover` |
+| Other chromatic values | `#8a8fff` | `#8a8fff` × 2 (.main-menu li a:hover) |
+| Surface | `#ffffff` | 42 declarations — `.text-bg-dark`, `.text-bg-danger` |
+| Ink / dark surface | `#000000` | 13 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Poppins, sans-serif` (1 rule — html)<br>`Roboto, sans-serif` (1 rule — .main-menu li a) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `1px`, `4px`, `.2rem` | `1px` (.hero-slider .owl-nav button.owl-prev); `4px` (.pswp__kit-caption); `.2rem` (kbd) |
+
+Palette in order of use: `#ffffff` ×42, `#000000` ×13, `#242deb` ×12, `#969696` ×6, `#151515` ×3, `#00000080` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Preloader

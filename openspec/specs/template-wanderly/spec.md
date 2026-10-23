@@ -4,6 +4,28 @@
 
 Wanderly is a travel agency landing template, a React recreation of the ColorLib "Martine" design (https://colorlib.com/wp/template/martine/). It features a top navigation bar, hero banner with gradient overlay, tabbed booking form, destination cards, event showcase, hotel listings, client testimonials, and services section.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/martine/ (HTTP 200, 46,617 B, fetched 2026-10-23) and its theme stylesheet `theme/martine/css/style.css` (150,580 B, sha256 `ee729414faea…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fe5c24` | 45 declarations — `.btn_1`, `.button` |
+| Other chromatic values | `#0c3e72`, `#2493e0`, `#415094` | `#0c3e72` × 13 (h1); `#2493e0` × 8 (.btn_1:hover); `#415094` × 7 (.genric-btn.default) |
+| Surface | `#ffffff` | 70 declarations — `.btn_1`, `.btn_1:hover` |
+| Ink / dark surface | `#000000` | 5 declarations — `.single-blog .thumb:after`, `.single-post-area .navigation-area .nav-left .thumb` |
+| Typeface | `"Open Sans", sans-serif` (4 rules — h1) | `font-family` declaration in the theme sheet |
+| Radii | `50%`, `3px`, `8px` | `50%` (.single-post-area .blog-author img); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×70, `#fe5c24` ×45, `#f9f9ff` ×27, `#0c3e72` ×13, `#999999` ×12, `#f0e9ff` ×10.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar with destinations and social links

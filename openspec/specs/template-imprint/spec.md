@@ -7,6 +7,29 @@ as a React 19 + Vite + Tailwind CSS 4 + TypeScript app named **Imprint**.
 The template is a personal portfolio and freelance designer page featuring a
 dark hero, intro section, services grid, and alternating portfolio gallery.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/evans/ (HTTP 200, 41,880 B, fetched 2026-10-23) and its theme stylesheet `theme/evans/css/style.css` (72,992 B, sha256 `b282bf965af1…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fdcb6e` | 20 declarations — `a`, `a:hover` |
+| Other chromatic values | `#007bff`, `#0062cc` | `#007bff` × 9 (a); `#0062cc` × 3 (.btn-primary:hover) |
+| Surface | `#ffffff` | 59 declarations — `body`, `.form-control` |
+| Ink / dark surface | `#000000` | 34 declarations — `.close`, `.close:hover` |
+| Typeface | `"Poppins", sans-serif` (4 rules — body)<br>`"Lora", serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `0.25rem`, `50%`, `4px` | `0.25rem` (.form-control); `50%` (.owl-carousel .owl-dots .owl-dot); `4px` (.testimony-wrap .text) |
+
+Palette in order of use: `#ffffff` ×59, `#000000` ×34, `#fdcb6e` ×20, `#007bff` ×9, `#212529` ×8, `#6c757d` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page loads with correct title

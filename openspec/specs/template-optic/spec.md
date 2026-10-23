@@ -4,6 +4,28 @@
 
 A photographer personal portfolio with warm gold accent, featuring a split navbar, hero section, services grid, about with progress bars. It also includes photo gallery, testimonials carousel, blog cards, contact form, and 4-column footer. Recreation of ColorLib "Credo" (https://colorlib.com/wp/template/credo/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/credo/ (HTTP 200, 24,878 B, fetched 2026-10-23) and its theme stylesheet `theme/credo/css/style.css` (23,386 B, sha256 `6a051ea86827…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fab95b` | 14 declarations — `.btn.btn-primary`, `.site-navbar .site-navigation .site-menu > li > a:hover` |
+| Surface | `#ffffff` | 23 declarations — `.btn.btn-primary`, `.btn.btn-primary:hover` |
+| Ink / dark surface | `#000000` | 21 declarations — `h1`, `h2` |
+| Typeface | `"Nunito", sans-serif` (2 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `line-height: 1.7; color: #666666; font-weight: 400; font-size: 1rem` | `body{…}` rule |
+| Radii | `50%`, `4px`, `30px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `4px` (.item); `30px` (.btn) |
+
+Palette in order of use: `#ffffff` ×23, `#000000` ×21, `#fab95b` ×14, `#cccccc` ×2, `#212529` ×1, `#343a40` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full page render with all sections

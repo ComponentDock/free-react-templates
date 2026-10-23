@@ -9,6 +9,29 @@
 
 Namastay is a free yoga instructor website template that recreates the ColorLib Yogafun design in React 19 + Tailwind CSS 4 + TypeScript. It provides a complete landing page for yoga studios and instructors with a hero section, feature highlights, class listings, testimonials, blog preview, and newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/yogafun/ (HTTP 200, 26,646 B, fetched 2026-10-23) and its theme stylesheet `theme/yogafun/css/style.css` (57,656 B, sha256 `6e597f2a66b6…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#71774b` | 19 declarations — `.btn-primary`, `.btn-primary.disabled` |
+| Other chromatic values | `#535837`, `#8f965f` | `#535837` × 4 (.btn-primary:hover); `#8f965f` × 2 (.btn.btn-primary:hover) |
+| Surface | `#ffffff` | 45 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 14 declarations — `.close`, `.close:hover` |
+| Typeface | `"Oxygen", sans-serif` (4 rules — body)<br>`"Montserrat", sans-serif` (2 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `0.25rem`, `50%`, `4px` | `0.25rem` (.form-control); `50%` (.home-slider.home-slider .owl-dots .owl-dot); `4px` (header .navbar .dropdown-menu) |
+
+Palette in order of use: `#ffffff` ×45, `#71774b` ×19, `#000000` ×14, `#6c757d` ×10, `#212529` ×4, `#535837` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders with brand and navigation links

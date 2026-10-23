@@ -17,6 +17,29 @@ Tailwind CSS 4 + TypeScript.
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/marco2-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/alibi` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/marco2/ (HTTP 200, 34,516 B, fetched 2026-10-23) and its theme stylesheet `theme/marco2/css/style.css` (76,835 B, sha256 `a3b289bc7d2c…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#78d5ef` | 8 declarations — `.btn-primary`, `.btn-primary.disabled` |
+| Other chromatic values | `#4ac7ea` | `#4ac7ea` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 61 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 32 declarations — `.close`, `.close:hover` |
+| Typeface | `"Work Sans", sans-serif` (3 rules — body)<br>`"Poppins", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `4px` | `50%` (.hero-wrap .third .icon); `0.25rem` (.form-control); `4px` (.tagcloud a) |
+
+Palette in order of use: `#ffffff` ×61, `#b8b0b0` ×35, `#000000` ×32, `#212529` ×8, `#6c757d` ×8, `#78d5ef` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

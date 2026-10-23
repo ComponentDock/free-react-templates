@@ -4,6 +4,28 @@
 
 Recreation of ColorLib Restauco (`https://preview.colorlib.com/theme/restauco/`, source: `https://colorlib.com/wp/template/restauco/`). A modern, warm food and restaurant landing page featuring a hero section, healthy meal features, tabbed dishes menu, table reservation booking form, customer testimonials, and a comprehensive footer linking to Component Dock. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/restauco/ (HTTP 200, 46,507 B, fetched 2026-10-23) and its theme stylesheet `theme/restauco/assets/css/style.css` (80,346 B, sha256 `82af3cf541cb…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fe5f41` | 53 declarations — `.btn`, `.browse-btn` |
+| Other chromatic values | `#1f2b7b`, `#415094`, `#4cd3e3` | `#1f2b7b` × 19 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 73 declarations — `a`, `button` |
+| Ink / dark surface | `#000000` | 9 declarations — `.our-client .single-cat .cat-cap h5>a`, `.our-client .single-cat:hover .cat-cap h5` |
+| Typeface | `"Mitr", sans-serif` (11 rules — h1)<br>`"Raleway", sans-serif` (4 rules — p) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `3px`, `8px` | `50%` (#back-top); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×73, `#fe5f41` ×53, `#f9f9ff` ×27, `#1f2b7b` ×19, `#999999` ×10, `#000000` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header Navigation

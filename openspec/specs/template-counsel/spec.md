@@ -4,6 +4,29 @@
 
 Counsel is a lawyer and legal firm website template. It recreates the ColorLib Whisper design (https://colorlib.com/wp/template/whisper/) with a professional dark-blue aesthetic, Poppins + Lora fonts, and sections for services, practice areas, attorneys, testimonials, blog, and newsletter.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/whisper/ (HTTP 200, 56,942 B, fetched 2026-10-23) and its theme stylesheet `theme/whisper/css/style.css` (73,387 B, sha256 `3521b460d061…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#eac15a` | 39 declarations — `a`, `a:hover` |
+| Other chromatic values | `#007bff`, `#0062cc` | `#007bff` × 8 (a); `#0062cc` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 54 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 23 declarations — `.close`, `.close:hover` |
+| Typeface | `"Lora", serif` (7 rules — h1)<br>`"Poppins", sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `4px` | `50%` (.owl-carousel .owl-dots .owl-dot); `0.25rem` (.form-control); `4px` (.tagcloud a) |
+
+Palette in order of use: `#ffffff` ×54, `#eac15a` ×39, `#000000` ×23, `#6c757d` ×9, `#007bff` ×8, `#212529` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

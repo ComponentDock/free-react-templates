@@ -6,6 +6,27 @@ Recreation of ColorLib Search 16 (https://colorlib.com/wp/template/colorlib-sear
 
 A modern, responsive travel services search form template with a full-page hero and centered search card containing fields for destination, travel dates, and guests. Clean, minimal design with a warm amber color palette.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-16/ (HTTP 200, 16,956 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-16/css/style.css` (20,163 B, sha256 `6e06eb24b548…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#00ad5f` | 3 declarations — `.btn-submit`, `#btn-add-room` |
+| Other chromatic values | `#fa4251` | `#fa4251` × 2 (.tab-list) |
+| Surface | `#ffffff` | 9 declarations — `.btn-submit`, `.input-icon` |
+| Typeface | `Lato, sans-serif` (4 rules — .cl-sel-0)<br>`"Lato", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `10px`, `3px`, `4px` | `10px` (.dropdown-select); `3px` (.checkmark); `4px` (.select2-container--default .select2-selection--single) |
+
+Palette in order of use: `#ffffff` ×9, `#555555` ×8, `#cccccc` ×4, `#00ad5f` ×3, `#808080` ×2, `#999999` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Search Form Functionality

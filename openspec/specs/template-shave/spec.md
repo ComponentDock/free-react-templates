@@ -4,6 +4,29 @@
 
 Recreate ColorLib "Barber" (https://colorlib.com/wp/template/barber/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template under the name "Shave". The original is a barber shop landing page with services, gallery, features, about, team, pricing, contact, and footer sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/barber/ (HTTP 200, 32,369 B, fetched 2026-10-23) and its theme stylesheet `theme/barber/css/main.css` (34,944 B, sha256 `3a6d16f74454…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f61daf` | 23 declarations — `b`, `i` |
+| Other chromatic values | `#4cd3e3`, `#38a4ff`, `#f44a40` | `#4cd3e3` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f44a40` × 6 (.genric-btn.danger) |
+| Surface | `#ffffff` | 58 declarations — `.text-white`, `.sample-text-area` |
+| Ink / dark surface | `#000000` | 12 declarations — `.banner-left h1`, `.text-black` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `color: #777777; font-size: 14px; font-weight: 300; line-height: 1.625em` | `body{…}` rule |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×58, `#f9f9ff` ×29, `#f61daf` ×23, `#777777` ×13, `#000000` ×12, `#222222` ×12.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Template renders all sections

@@ -4,6 +4,28 @@
 
 A Personal / CV Portfolio template with navbar with navigation, about section with portrait, skills with progress bars and services sections. Recreate the ColorLib "Alias" template (https://colorlib.com/wp/template/alias/) as a React 19 + Vite + Tailwind CSS 4 one-page personal/CV portfolio site under the name "Dossier".
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/alias/ (HTTP 200, 39,614 B, fetched 2026-10-23) and its theme stylesheet `theme/alias/css/style.css` (13,242 B, sha256 `1aa7f64e3cde…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#57d131` | 17 declarations — `a`, `.site-navbar.scrolled.sleep` |
+| Other chromatic values | `#2c3e50`, `#62bdfc`, `#8490ff` | `#2c3e50` × 4 (h1); `#62bdfc` × 3 (.thumb .overlay-bg); `#8490ff` × 3 (.thumb .overlay-bg) |
+| Surface | `#ffffff` | 17 declarations — `body`, `.site-navbar` |
+| Ink / dark surface | `#000000` | 5 declarations — `.site-navbar.bg-light .navbar-brand`, `.site-navbar.scrolled .navbar-brand` |
+| Body type | `color: #798a9a; line-height: 1.7; font-size: 16px; font-weight: 300` | `body{…}` rule |
+| Radii | `50%`, `5px`, `100px` | `50%` (.site-service-item .icon); `5px` (.single-portfolio); `100px` (.btn) |
+
+Palette in order of use: `#57d131` ×17, `#ffffff` ×17, `#000000` ×5, `#2c3e50` ×4, `#62bdfc` ×3, `#8490ff` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all sections in correct order

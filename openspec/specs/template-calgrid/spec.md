@@ -4,6 +4,28 @@
 
 A clean calendar date picker template featuring a centered dual-calendar grid layout with month navigation and a minimal footer. Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/calendar-12/ (HTTP 200, 1,051 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/calendar-12/css/style.css` (16,331 B, sha256 `862721b277d3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f2d1c5` | 5 declarations — `.picker__nav--next:hover`, `.picker__nav--prev:hover` |
+| Other chromatic values | `#f78b65` | `#f78b65` × 4 (.picker__select--month:focus) |
+| Surface | `#ffffff` | 9 declarations — `.picker__holder`, `.picker__day--selected` |
+| Ink / dark surface | `#000000` | 4 declarations — `.picker`, `.picker__nav--next:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `.25rem`, `0 0 5px 5px` | `.25rem` (.cl-form-control); `0 0 5px 5px` (.picker__holder) |
+
+Palette in order of use: `#ffffff` ×9, `#6c757d` ×5, `#f2d1c5` ×5, `#f5f5f5` ×5, `#000000` ×4, `#f78b65` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Centered page layout with dual calendar grids

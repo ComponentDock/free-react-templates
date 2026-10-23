@@ -8,6 +8,29 @@
 
 Pixelate is a personal portfolio template for digital product designers. It showcases a designer's expertise, works, skills, testimonials, and blog posts with a clean, modern aesthetic.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/calvin/ (HTTP 200, 30,844 B, fetched 2026-10-23) and its theme stylesheet `theme/calvin/assets/css/style.css` (91,814 B, sha256 `33e9d1f46869…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff8553` | 46 declarations — `.browse-btn`, `.boxed-btn:hover` |
+| Other chromatic values | `#1f2b7b`, `#415094`, `#4cd3e3` | `#1f2b7b` × 19 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 86 declarations — `.boxed-btn:hover`, `a` |
+| Ink / dark surface | `#000000` | 13 declarations — `h1`, `h2` |
+| Typeface | `"Roboto Condensed", sans-serif` (4 rules — h1)<br>`"DM Sans", sans-serif` (2 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: normal; font-size: 16px` | `body{…}` rule |
+| Radii | `50%`, `3px`, `8px` | `50%` (#back-top); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×86, `#ff8553` ×46, `#f9f9ff` ×27, `#1f2b7b` ×19, `#999999` ×19, `#f0e9ff` ×18.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and CTA

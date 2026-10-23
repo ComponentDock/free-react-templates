@@ -4,6 +4,27 @@
 
 A Bootstrap Wizards template with accordion wizard navigation, step 1, step 2 and step 3 sections. - **Recreation of ColorLib source**: Colorlib Wizard 13 (`https://colorlib.com/wp/template/colorlib-wizard-13/`) - **New Name**: `cantrip` (App directory: `apps/cantrip`, Package: `@free-react-templates/cantrip`) - **Category**: Forms / Multi-step Accordion Wizard - **Description**: A clean, modern accordion-style form wizard for account registration with 3 collapsible steps: Basic Information, Additional Information, and Specialities.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/bwiz/colorlib-wizard-13/index.html (HTTP 200, 9,944 B, fetched 2026-10-23) and its theme stylesheet `etc/bwiz/colorlib-wizard-13/css/style.css` (19,943 B, sha256 `b1a6c5a931fd…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f65300` | 6 declarations — `input:focus`, `textarea:focus` |
+| Surface | `#ffffff` | 10 declarations — `body`, `select` |
+| Ink / dark surface | `#222222` | 4 declarations — `body`, `ul#national li` |
+| Typeface | `'Roboto Slab'` (3 rules — body)<br>`'Material-Design-Iconic-Font'` (2 rules — li.init:after) | `font-family` declarations in the theme sheet |
+| Radii | `5px`, `4px`, `.25em` | `5px` (input); `4px` (.panel); `.25em` (.label) |
+
+Palette in order of use: `#ffffff` ×10, `#999999` ×8, `#f65300` ×6, `#f8f8f8` ×5, `#222222` ×4, `#dddddd` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Accordion wizard navigation

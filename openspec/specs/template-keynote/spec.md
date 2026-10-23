@@ -73,6 +73,26 @@ preview host.
 Keynote lives in `apps/keynote` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/aisummit/ (HTTP 200, 110,070 B, fetched 2026-10-23) and its theme stylesheet `theme/aisummit/_astro/index.Dbq_dtys.css` (44,737 B, sha256 `ea44ccd13c7c…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface | `#ffffff` | 1 declarations — `.countdown-digit` |
+| Ink / dark surface | `#030712e6` | 1 declarations — `[data-header].scrolled` |
+| Typeface | `Outfit, sans-serif` (1 rule — .countdown-digit) | `font-family` declaration in the theme sheet |
+| Radii | `50%`, `inherit` | `50%` (.gradient-orb); `inherit` (.glow-border:after) |
+
+Palette in order of use: `#030712e6` ×1, `#ffffff` ×1, `#ffffffb3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

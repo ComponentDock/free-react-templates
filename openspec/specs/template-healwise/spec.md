@@ -4,6 +4,29 @@
 
 Recreation of ColorLib **Drcare** (`https://colorlib.com/wp/template/drcare/`, preview: `https://preview.colorlib.com/theme/drcare/`). Built as a modern React 19 + Tailwind CSS 4 healthcare/medical landing page.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/drcare/ (HTTP 200, 63,043 B, fetched 2026-10-23) and its theme stylesheet `theme/drcare/css/style.css` (85,924 B, sha256 `7951bd841041…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2f89fc` | 40 declarations — `a`, `a:hover` |
+| Other chromatic values | `#ff8000`, `#007bff`, `#0062cc` | `#ff8000` × 10 (.btn.btn-secondary); `#007bff` × 9 (a); `#0062cc` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 74 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 30 declarations — `.close`, `.close:hover` |
+| Typeface | `-apple-system, sans-serif` (3 rules — body)<br>`"Work Sans", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `0.25rem`, `50%`, `2px` | `0.25rem` (.form-control); `50%` (.topper .icon); `2px` (.blog-entry .text) |
+
+Palette in order of use: `#ffffff` ×74, `#2f89fc` ×40, `#000000` ×30, `#6c757d` ×12, `#ff8000` ×10, `#007bff` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays contact info and navigation

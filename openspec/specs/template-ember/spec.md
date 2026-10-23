@@ -4,6 +4,28 @@
 
 Ember is a restaurant landing template that recreates the ColorLib "Dingo" design (https://colorlib.com/wp/template/dingo/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. The template showcases a restaurant website with a hero section, popular dishes gallery, restaurant history, video highlight, tabbed food menu, chef team, reservation form, customer testimonials, blog section, and a dark footer with newsletter and Component Dock branding.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/dingo/ (HTTP 200, 55,822 B, fetched 2026-10-23) and its theme stylesheet `theme/dingo/css/style.css` (205,598 B, sha256 `a3803389e868…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff6426` | 73 declarations — `.btn_1`, `a:hover` |
+| Other chromatic values | `#415094`, `#4cd3e3`, `#38a4ff` | `#415094` × 14 (.genric-btn.default); `#4cd3e3` × 14 (.genric-btn.success); `#38a4ff` × 12 (.genric-btn.info) |
+| Surface | `#ffffff` | 94 declarations — `.btn_1`, `.single_page_btn` |
+| Ink / dark surface | `#2c3033` | 12 declarations — `h1`, `h2` |
+| Typeface | `"Lora", serif` (8 rules — p)<br>`"Cardo", serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `3px`, `8px` | `50%` (.btn_2:after); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×94, `#ff6426` ×73, `#f9f9ff` ×54, `#415094` ×14, `#4cd3e3` ×14, `#999999` ×13.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and brand

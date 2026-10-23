@@ -14,6 +14,29 @@ Fragzone is a gaming website template recreating the ColorLib Game Warrior desig
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/gamewarrior-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fragzone` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/gamewarrior/ (HTTP 200, 16,380 B, fetched 2026-10-23) and its theme stylesheet `theme/gamewarrior/css/style.min.css` (86,549 B, sha256 `d475389635cc…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ffb320` | 21 declarations — `.site-btn`, `.user-panel` |
+| Other chromatic values | `#ffc12c`, `#ff205f`, `#202630` | `#ffc12c` × 10 (.header-section .main-menu a[aria-current]); `#ff205f` × 6 (.cata.new); `#202630` × 3 (.gw-section) |
+| Surface | `#ffffff` | 37 declarations — `.text-bg-primary`, `.text-bg-success` |
+| Ink / dark surface | `#131313` | 17 declarations — `h1`, `h2` |
+| Typeface | `Roboto, sans-serif` (1 rule — html)<br>`var(--bs-body-font-family)` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `3px`, `30px` | `50%` (.review-item .review-cover .score); `3px` (.owl-theme:where(.kit-owl) .owl-nav [class*=owl-]); `30px` (.owl-theme:where(.kit-owl) .owl-dots .owl-dot span) |
+
+Palette in order of use: `#ffffff` ×37, `#ffb320` ×21, `#131313` ×17, `#ffc12c` ×10, `#666666` ×6, `#ff205f` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation links, and join button

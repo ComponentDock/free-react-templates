@@ -6,6 +6,27 @@ Recreation of ColorLib **Fashe** (https://colorlib.com/wp/template/fashe/).
 
 Drape is a modern fashion e-commerce landing page template with a warm terracotta palette, sharp corners, and the Assistant typeface. It recreates the ColorLib Fashe design under a different name with React 19 + Tailwind CSS 4.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/fashe/ (HTTP 200, 34,470 B, fetched 2026-10-23) and its theme stylesheet `theme/fashe/assets/css/style.css` (41,806 B, sha256 `1b8ddab97d8b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d99a2b` | 1 declarations — `.inventory--low::before` |
+| Surface | `#ffffff` | 2 declarations — `.badge--sale`, `.header__cart-count` |
+| Typeface | `var(--font-body)` (3 rules — body)<br>`var(--font-heading)` (3 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--text-base); font-weight: var(--font-body-weight); line-height: 1.6; color: rgb(var(--color-text))` | `body{…}` rule |
+| Radii | `var(--radius-base)`, `50%`, `var(--radius-media)` | `var(--radius-base)` (.button); `50%` (.icon-button); `var(--radius-media)` (.rte img) |
+
+Palette in order of use: `#ffffff` ×2, `#d99a2b` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Announcement bar

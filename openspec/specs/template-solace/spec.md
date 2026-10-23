@@ -6,6 +6,29 @@
 - Preview URL: `https://preview.colorlib.com/theme/unwind/`
 - Tech Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/unwind/ (HTTP 200, 49,536 B, fetched 2026-10-23) and its theme stylesheet `theme/unwind/css/style.min.css` (192,972 B, sha256 `dd3087dab1e6…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#c5a880` | 36 declarations — `.navbar-brand .flaticon`, `.ftco-navbar-light .navbar-toggler:hover` |
+| Other chromatic values | `#88693e`, `#0d6efd`, `#0d6efd40` | `#88693e` × 12 (a); `#0d6efd` × 6 (.form-check-input:checked); `#0d6efd40` × 6 (.form-control:focus) |
+| Surface | `#ffffff` | 71 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#000000` | 32 declarations — `.text-bg-info`, `.text-bg-light` |
+| Typeface | `Nunito, sans-serif` (6 rules — body)<br>`Old Standard TT, sans-serif` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `var(--bs-border-radius)`, `4px`, `50%` | `var(--bs-border-radius)` (.img-thumbnail); `4px` (.pswp__kit-caption); `50%` (.form-check-input[type=radio]) |
+
+Palette in order of use: `#ffffff` ×71, `#c5a880` ×36, `#000000` ×32, `#222222` ×22, `#88693e` ×12, `#0d6efd` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation and Hero Display

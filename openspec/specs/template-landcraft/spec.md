@@ -14,6 +14,28 @@ stack:
 
 Landcraft is a landscaping company landing page template. It recreates the ColorLib Martxa design as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application. The template showcases a full business landing experience: navbar, hero, about, services, statistics, portfolio with filtering, team, FAQ accordion, testimonials, blog, newsletter signup, and a branded footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/martxa/ (HTTP 200, 24,981 B, fetched 2026-10-23) and its theme stylesheet `theme/martxa/style.css` (16,086 B, sha256 `1c3381e9a070…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#296dc1` | 12 declarations — `a:hover`, `#scrollUp` |
+| Surface | `#ffffff` | 22 declarations — `.sticky`, `#scrollUp` |
+| Ink / dark surface | `#242424` | 5 declarations — `h1`, `h2` |
+| Typeface | `'Montserrat', sans-serif` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Body type | `color: #242424; font-size: 14px; font-weight: 400; line-height: 24px` | `body{…}` rule |
+| Radii | `4px`, `50%`, `50% 50% 50% 50%` | `4px` (.btn-white); `50%` (.footer-social a); `50% 50% 50% 50%` (.preloder-wrap .child-common) |
+
+Palette in order of use: `#ffffff` ×22, `#296dc1` ×12, `#242424` ×5, `#000000` ×4, `#222222` ×2, `#6c6c6c` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation

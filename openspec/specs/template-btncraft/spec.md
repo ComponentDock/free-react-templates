@@ -7,6 +7,28 @@ Note: The live preview URL returned 404, so replication fidelity is based on the
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript · Lucide icons.
 New Name: `btncraft` (Package: `@free-react-templates/btncraft`).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bb/bootstrap-buttons-01/ (HTTP 200, 46,374 B, fetched 2026-10-23) and its theme stylesheet `theme/bb/bootstrap-buttons-01/css/style.css` (40,120 B, sha256 `025012fb6870…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#3e64ff` | 15 declarations — `.cl-btn.cl-btn-link`, `.cl-btn.cl-btn-primary` |
+| Other chromatic values | `#007bff`, `#64c4ed`, `#94aa2a` | `#007bff` × 14 (a); `#64c4ed` × 13 (.cl-btn.cl-btn-info); `#94aa2a` × 13 (.cl-btn.cl-btn-success) |
+| Surface | `#ffffff` | 57 declarations — `.cl-btn-primary`, `.cl-btn-primary:hover` |
+| Ink / dark surface | `#212529` | 17 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`'Ionicons'` (1 rule — input[type="checkbox"]:checked:after) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `100%`, `0.2rem` | `0.25rem` (.cl-btn); `100%` (input[type="radio"]:checked + label:before); `0.2rem` (.cl-btn-sm) |
+
+Palette in order of use: `#ffffff` ×57, `#343a40` ×24, `#212529` ×17, `#3e64ff` ×15, `#007bff` ×14, `#64c4ed` ×13.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation & Header

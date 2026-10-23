@@ -17,6 +17,28 @@ own per-group selection limit via `data-max-options`. The page title is
 ("Multi-Select #8 (Limit selection on groups)") and a functional multi-select
 checkbox dropdown widget with grouped options and per-group caps.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/multiselect-18/ (HTTP 200, 3,542 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/multiselect-18/css/style.css` (27,407 B, sha256 `4b2247bc570b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 2 declarations — `a`, `.cl-dropdown-item.active` |
+| Other chromatic values | `#8cba51` | `#8cba51` × 2 (.cl-dropdown-menu li.selected > a.selected) |
+| Surface | `#ffffff` | 9 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#212529` | 9 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Roboto", sans-serif` (3 rules — body)<br>`sans-serif` (1 rule — html) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem` | `0.25rem` (.cl-form-control) |
+
+Palette in order of use: `#212529` ×9, `#ffffff` ×9, `#000000` ×5, `#6c757d` ×5, `#f8f9fa` ×5, `#495057` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders with grouped multiselect widget

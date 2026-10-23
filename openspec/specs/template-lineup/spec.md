@@ -6,6 +6,29 @@ Recreation of ColorLib "Agenda" (https://colorlib.com/wp/template/agenda/).
 
 Lineup is an event calendar and concert listing landing page template. It provides a hero with countdown, event showcases, regional event browsing with location filtering, and newsletter signup — styled with a purple gradient brand palette.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/agenda/ (HTTP 200, 35,072 B, fetched 2026-10-23) and its theme stylesheet `theme/agenda/style.css` (46,724 B, sha256 `c5775168bf1a…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#9a28d7` | 26 declarations — `.site-navigation ul`, `.swiper-button-next` |
+| Other chromatic values | `#9a24c1` | `#9a24c1` × 3 (.btn) |
+| Surface | `#ffffff` | 41 declarations — `.btn.dark`, `.btn.dark-purple` |
+| Ink / dark surface | `#232127` | 31 declarations — `.btn`, `.homepage-info-section .entry-title` |
+| Typeface | `'Calibri'` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Body type | `color: #2f2f2f` | `body{…}` rule |
+| Radii | `50%`, `50px`, `10px` | `50%` (.swiper-button-next); `50px` (.btn); `10px` (.hamburger-menu span) |
+
+Palette in order of use: `#ffffff` ×41, `#232127` ×31, `#9a28d7` ×26, `#777777` ×20, `#e5e5e5` ×7, `#f3f8f9` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and CTA

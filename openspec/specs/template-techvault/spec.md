@@ -10,6 +10,29 @@ An E-Commerce Tech Store template with navigation and search, hero banner with p
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, packages/ui shared components
 - **Deploy target:** techvault.free.componentdock.com
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/onetech/ (HTTP 200, 267,120 B, fetched 2026-10-23) and its theme stylesheet `theme/onetech/styles/index.min.css` (98,053 B, sha256 `6c8ec9eeb1ec…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0a70b9` | 40 declarations — `.button`, `.logo a` |
+| Other chromatic values | `#d42f2f`, `#0e8ce4`, `#0e8ce4cc` | `#d42f2f` × 12 (.banner_price); `#0e8ce4` × 9 (.ui-quote); `#0e8ce4cc` × 2 (.product_cart_button:hover) |
+| Surface | `#ffffff` | 47 declarations — `.text-bg-primary`, `.text-bg-success` |
+| Ink / dark surface | `#000000` | 40 declarations — `.text-bg-info`, `.text-bg-light` |
+| Typeface | `Rubik, sans-serif` (3 rules — body)<br>`Montserrat, sans-serif` (1 rule — .banner_text) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `5px`, `8px` | `50%` (.cart_count); `5px` (.button); `8px` (.bestsellers_item) |
+
+Palette in order of use: `#ffffff` ×47, `#000000` ×40, `#0a70b9` ×40, `#0000001a` ×19, `#0000008f` ×15, `#d42f2f` ×12.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page structure and layout

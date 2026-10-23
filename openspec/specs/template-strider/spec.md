@@ -15,6 +15,29 @@ navbar, hero banner with product showcase, service features, category grid,
 product listing, exclusive deals with countdown, brand logos, deals of the week,
 and a multi-column footer with newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/karma/ (HTTP 200, 42,249 B, fetched 2026-10-23) and its theme stylesheet `theme/karma/css/main.css` (112,824 B, sha256 `b40c520261a3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ffba00` | 65 declarations — `.primary-btn`, `.add-bag .add-btn` |
+| Other chromatic values | `#ff6c00`, `#4cd3e3`, `#38a4ff` | `#ff6c00` × 16 (.primary-btn); `#4cd3e3` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info) |
+| Surface | `#ffffff` | 104 declarations — `.primary-btn`, `.primary-btn:hover` |
+| Ink / dark surface | `#222222` | 66 declarations — `h1`, `h2` |
+| Typeface | `"Roboto", sans-serif` (35 rules — body)<br>`"Poppins", sans-serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 24px; font-size: 14px; font-weight: 400; color: #777777` | `body{…}` rule |
+| Radii | `3px`, `50%`, `8px` | `3px` (.genric-btn.radius); `50%` (.unordered-list li:before); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×104, `#222222` ×66, `#ffba00` ×65, `#777777` ×55, `#eeeeee` ×35, `#f9f9ff` ×28.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sticky navigation bar

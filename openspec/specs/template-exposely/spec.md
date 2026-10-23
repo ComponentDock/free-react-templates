@@ -9,6 +9,27 @@ A dark, elegant photography portfolio template with a full-screen hero,
 asymmetric gallery grid, and call-to-action section. Designed for
 photographers and visual artists.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/sonar/ (HTTP 200, 25,446 B, fetched 2026-10-23) and its theme stylesheet `theme/sonar/style.css` (41,697 B, sha256 `5513820662db…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#192a56` | 1 declarations — `#scrollUp:hover` |
+| Surface | `#ffffff` | 38 declarations — `#scrollUp`, `.mfp-image-holder .mfp-close` |
+| Ink / dark surface | `#2f2f2f` | 14 declarations — `h1`, `h2` |
+| Typeface | `"Roboto", sans-serif` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Radii | `50%`, `4px` | `50%` (#sonar-load); `4px` (.single-accordion.panel) |
+
+Palette in order of use: `#ffffff` ×38, `#2f2f2f` ×14, `#232323` ×12, `#f0f0f0` ×4, `#f8f5f5` ×4, `#1d1d1d` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders fixed header with logo and social links

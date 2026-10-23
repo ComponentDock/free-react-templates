@@ -4,6 +4,28 @@
 
 A Welcome Login Form template with email input with gradient and gradient login button sections. Recreate the ColorLib Login Form V2 (https://colorlib.com/wp/template/login-form-v2/) as a centered welcome login card with gradient accents, avatar icon, email/password inputs with visibility toggle, and a gradient pill-shaped submit button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/lf/Login_v2/index.html (HTTP 200, 3,544 B, fetched 2026-10-23) and its theme stylesheet `etc/lf/Login_v2/css/style.css` (13,288 B, sha256 `026b9c62699c…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#21d4fd` | 24 declarations — `.btn-show-pass:hover`, `a:hover` |
+| Other chromatic values | `#b721ff`, `#6a7dfe`, `#c80000` | `#b721ff` × 24 (a:hover); `#6a7dfe` × 4 (a:hover); `#c80000` × 3 (.alert-validate::before) |
+| Surface | `#ffffff` | 5 declarations — `.login100-form-btn`, `body` |
+| Ink / dark surface | `#333333` | 2 declarations — `.login100-form-title`, `.txt2` |
+| Typeface | `Poppins-Regular` (6 rules — a)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `10px`, `25px`, `2px` | `10px` (.wrap-login100); `25px` (.wrap-login100-form-btn); `2px` (.alert-validate::before) |
+
+Palette in order of use: `#21d4fd` ×24, `#b721ff` ×24, `#adadad` ×8, `#ffffff` ×5, `#6a7dfe` ×4, `#c80000` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Renders welcome heading and avatar

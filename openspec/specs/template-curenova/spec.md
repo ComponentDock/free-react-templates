@@ -4,6 +4,29 @@
 
 Recreation of ColorLib "Healthcare" (https://colorlib.com/wp/template/healthcare/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template. A full-featured medical center landing page with hero, statistics, services, about section, features, doctor profiles, testimonials, blog, and footer with appointment form.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/healthcare/ (HTTP 200, 37,632 B, fetched 2026-10-23) and its theme stylesheet `theme/healthcare/css/style.css` (46,400 B, sha256 `0556f12f0213…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#3c97e8` | 45 declarations — `a`, `a:hover` |
+| Other chromatic values | `#43dde6`, `#9bdf46`, `#a7e35c` | `#43dde6` × 25 (.services .icon i); `#9bdf46` × 16 (.colorlib-nav .num .icon); `#a7e35c` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 25 declarations — `body`, `.colorlib-nav .num .icon i` |
+| Ink / dark surface | `#000000` | 16 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (4 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-weight: 400; font-size: 16px; line-height: 1.7; color: #666666` | `body{…}` rule |
+| Radii | `50%`, `30px`, `4px` | `50%` (.colorlib-nav .num .icon); `30px` (.btn); `4px` (.colorlib-nav ul li.has-dropdown .dropdown) |
+
+Palette in order of use: `#3c97e8` ×45, `#43dde6` ×25, `#ffffff` ×25, `#000000` ×16, `#9bdf46` ×16, `#e6e6e6` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo and navigation

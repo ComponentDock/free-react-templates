@@ -6,6 +6,22 @@ Recreation of ColorLib Rango (https://colorlib.com/wp/template/rango/).
 
 Blitz is a creative agency landing page template featuring a fixed navbar, hero slider section, icon boxes, about/features section with vertical content blocks, services carousel, features grid, call-to-action banner, text line section, newsletter form, and multi-column footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/rango/ (HTTP 200, 29,985 B, fetched 2026-10-23) and its theme stylesheet `theme/rango/plugins/icon-font/styles.css` (8,232 B, sha256 `39a9cc387614…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Typeface | `"outlined-iconset" !important` (2 rules — [data-icon]:before) | `font-family` declaration in the theme sheet |
+
+Palette in order of use: .
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+
 ## Requirements
 
 ### Requirement: Navigation bar

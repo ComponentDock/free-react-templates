@@ -9,6 +9,29 @@ A Fashion / E-Commerce template with hero slider, new arrivals, collection promo
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/shionhouse-free-template.jpg
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, packages/ui
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/shionhouse/ (HTTP 200, 33,089 B, fetched 2026-10-23) and its theme stylesheet `theme/shionhouse/assets/css/style.css` (62,397 B, sha256 `346c8a82037e…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#9f78ff` | 31 declarations — `.btn`, `.boxed-btn` |
+| Other chromatic values | `#1f2b7b`, `#1d2547`, `#415094` | `#1f2b7b` × 19 (.contact-info .media-body h3 a:hover); `#1d2547` × 8 (.section-tittle p); `#415094` × 7 (.genric-btn.default) |
+| Surface | `#ffffff` | 79 declarations — `.boxed-btn`, `.boxed-btn:hover` |
+| Ink / dark surface | `#1d2547` | 8 declarations — `.section-tittle p`, `.header-right1 .header-social a` |
+| Typeface | `"Poppins", sans-serif` (7 rules — body)<br>`"Cinzel", serif` (3 rules — .boxed-btn) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: normal; font-size: 16px` | `body{…}` rule |
+| Radii | `50%`, `3px`, `8px` | `50%` (#back-top); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×79, `#9f78ff` ×31, `#f9f9ff` ×27, `#1f2b7b` ×19, `#999999` ×11, `#f0e9ff` ×9.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays logo, navigation, social icons, search, and cart

@@ -6,6 +6,28 @@ Recreation of ColorLib "Bootstrap Buttons 14" (`https://colorlib.com/wp/template
 
 BtnVortex is a modern button showcase template featuring vortex gradient buttons, neon/glow buttons, 3D depth buttons, and an interactive playground customizer. It demonstrates Bootstrap-style button variants recreated with Tailwind CSS and React.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/ (HTTP 200, 55,994 B, fetched 2026-10-23) and its theme stylesheet `theme/bb/bootstrap-buttons-14/css/style.css` (27,619 B, sha256 `f8ffea056152…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 14 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#5635ea`, `#a15bf0`, `#32c5f6` | `#5635ea` × 14 (.cl-btn.btn-quarternary); `#a15bf0` × 12 (.cl-btn.btn-quarternary); `#32c5f6` × 11 (.cl-btn.cl-btn-secondary) |
+| Surface | `#ffffff` | 29 declarations — `.cl-btn-primary`, `.cl-btn-primary:hover` |
+| Ink / dark surface | `#212529` | 5 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`'Ionicons'` (1 rule — input[type="checkbox"]:checked:after) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `100%`, `0.25rem !important` | `0.25rem` (.cl-btn); `100%` (input[type="radio"]:checked + label:before); `0.25rem !important` (.cl-rounded) |
+
+Palette in order of use: `#ffffff` ×29, `#007bff` ×14, `#5635ea` ×14, `#6c757d` ×13, `#a15bf0` ×12, `#32c5f6` ×11.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar

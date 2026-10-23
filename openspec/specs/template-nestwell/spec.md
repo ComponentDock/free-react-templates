@@ -6,6 +6,28 @@ Recreation of ColorLib Homeland (https://colorlib.com/wp/template/homeland/).
 
 Provide a real estate agency landing page template featuring a hero slider with property details, a property search form, featured properties, about/services sections, customer testimonials, and a full footer with newsletter signup.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/homeland/ (HTTP 200, 48,890 B, fetched 2026-10-23) and its theme stylesheet `theme/homeland/css/style.css` (23,322 B, sha256 `69da8d6699c8…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1f3c88` | 8 declarations — `.form-control:focus`, `.form-control:active` |
+| Surface | `#ffffff` | 27 declarations — `.btn.btn-primary`, `.btn.btn-outline-primary:hover` |
+| Ink / dark surface | `#000000` | 12 declarations — `.btn.btn-white.btn-outline-white:hover`, `.text-black` |
+| Typeface | `"Nunito Sans", sans-serif` (1 rule — body)<br>`"Roboto Mono", SFMono-Regular` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 1.7; color: rgba(0, 0, 0, 0.6); font-weight: 400; font-size: 1rem` | `body{…}` rule |
+| Radii | `50%`, `0%`, `4px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `0%` (.slide-one-item.home-slider .owl-prev); `4px` (.property-entry .property-thumbnail .offer-type) |
+
+Palette in order of use: `#ffffff` ×27, `#000000` ×12, `#1f3c88` ×8, `#cccccc` ×3, `#333333` ×2, `#212529` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and CTA

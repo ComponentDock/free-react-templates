@@ -4,6 +4,28 @@
 
 Signdrop is a registration form template — a recreation of ColorLib Signup Form 06 (https://colorlib.com/wp/template/signup-form-06/). It features a split viewport layout with a centered registration form on the left and a full-height hero image on the right.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/signup-form-06/ (HTTP 200, 5,263 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/signup-form-06/css/style.css` (17,208 B, sha256 `9a7767475da4…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 6 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#0062cc` | `#0062cc` × 2 (.cl-btn-primary:hover) |
+| Surface | `#ffffff` | 11 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#212529` | 3 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`"Roboto", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `4px` | `0.25rem` (.cl-form-control); `4px` (.control__indicator) |
+
+Palette in order of use: `#ffffff` ×11, `#007bff` ×6, `#6c757d` ×6, `#212529` ×3, `#0062cc` ×2, `#495057` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders with registration form

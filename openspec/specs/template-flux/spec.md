@@ -12,6 +12,29 @@ A Digital Agency template with category tiles, newsletter subscription and conta
 - New name: **flux** (`apps/flux`, `@free-react-templates/flux`)
 - Footer link: https://www.componentdock.com/ ("Component Dock")
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/pixel/ (HTTP 200, 22,638 B, fetched 2026-10-23) and its theme stylesheet `theme/pixel/style.css` (53,692 B, sha256 `650d45c3110a…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff7902` | 29 declarations — `.tooltip-inner`, `#scrollUp:hover` |
+| Other chromatic values | `#688bfe` | `#688bfe` × 15 (.preloader) |
+| Surface | `#ffffff` | 52 declarations — `.bg-white`, `#scrollUp` |
+| Ink / dark surface | `#212121` | 11 declarations — `.section-heading h2`, `.header-area .pixel-main-menu .classy-navbar .classynav ul li a` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body)<br>`'FontAwesome'` (1 rule — .pixel-btn::after) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 14px` | `body{…}` rule |
+| Radii | `50%`, `4px`, `50px` | `50%` (.preloader .lds-ellipsis div); `4px` (.single-accordion.panel); `50px` (.pixel-projects-menu .btn) |
+
+Palette in order of use: `#ffffff` ×52, `#ff7902` ×29, `#688bfe` ×15, `#969696` ×12, `#212121` ×11, `#000000` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and social links

@@ -4,6 +4,28 @@
 
 Recreation of ColorLib "Scenic" (https://colorlib.com/wp/template/scenic/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page portfolio template. Delivers a full web agency landing experience with video-hero background, about section, stats counters, services grid, filterable portfolio gallery, video CTA, blog posts, and multi-column footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/scenic/ (HTTP 200, 22,757 B, fetched 2026-10-23) and its theme stylesheet `theme/scenic/css/style.css` (30,394 B, sha256 `c48c8707ad0f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 18 declarations — `.home-section .scroll-button`, `.site-mobile-menu .site-nav-wrap a:hover` |
+| Other chromatic values | `#001f42`, `#3395ff` | `#001f42` × 2 (.site-footer); `#3395ff` × 2 (.btn.btn-primary:hover) |
+| Surface | `#ffffff` | 29 declarations — `.site-navbar .site-logo a`, `.site-navbar .site-menu-toggle` |
+| Ink / dark surface | `#000000` | 13 declarations — `h1`, `h2` |
+| Body type | `font-weight: 400; font-size: 1rem; line-height: 1.7` | `body{…}` rule |
+| Radii | `50%`, `7px`, `4px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `7px` (.img-shadow); `4px` (.block__86547) |
+
+Palette in order of use: `#ffffff` ×29, `#007bff` ×18, `#000000` ×13, `#212529` ×4, `#cccccc` ×4, `#f8f9fa` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo and navigation links

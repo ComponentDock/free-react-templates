@@ -6,6 +6,29 @@ Recreation of ColorLib "Cozy" (https://colorlib.com/wp/template/cozy/)
 
 A warm, boutique hotel landing page with hero carousel, reservation form, services tabs, room showcase, parallax conference section, restaurant menu, testimonials, blog, events, and Instagram gallery.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/cozy/ (HTTP 200, 67,186 B, fetched 2026-10-23) and its theme stylesheet `theme/cozy/css/style.css` (76,761 B, sha256 `73b0751bd16f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff6138` | 44 declarations — `.btn-primary`, `.btn-primary.disabled` |
+| Other chromatic values | `#ff3905`, `#ff896b` | `#ff3905` × 2 (.btn-primary:hover); `#ff896b` × 2 (.aside-stretch) |
+| Surface | `#ffffff` | 63 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 5 declarations — `.close`, `.close:hover` |
+| Typeface | `"Muli", sans-serif` (3 rules — body)<br>`"Playfair Display", Georgia` (2 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `50%`, `0.25rem`, `4px` | `50%` (.owl-carousel .owl-dots .owl-dot); `0.25rem` (.form-control); `4px` (.btn) |
+
+Palette in order of use: `#ffffff` ×63, `#ff6138` ×44, `#404044` ×25, `#6c757d` ×8, `#8b8b92` ×6, `#000000` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation

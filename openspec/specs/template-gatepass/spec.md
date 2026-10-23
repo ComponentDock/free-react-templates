@@ -19,6 +19,28 @@ email/password fields, social login buttons (Google, Facebook), remember me
 checkbox, forgot password link, and create account link. Responsive design
 shows hero image above form on mobile.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/login-form-05/ (HTTP 200, 3,838 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/login-form-05/css/style.css` (16,207 B, sha256 `ea0228f350bd…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fb771a` | 7 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#c55303`, `#de5e04` | `#c55303` × 2 (a:hover); `#de5e04` × 2 (.cl-btn-primary:hover) |
+| Surface | `#ffffff` | 12 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#212529` | 3 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`"Roboto", sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `4px` | `0.25rem` (.cl-form-control); `4px` (.half .contents .cl-form-control) |
+
+Palette in order of use: `#ffffff` ×12, `#fb771a` ×7, `#6c757d` ×6, `#212529` ×3, `#495057` ×2, `#888888` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Renders welcome heading and subtitle

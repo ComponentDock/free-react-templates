@@ -6,6 +6,28 @@ Conference registration form template with a split-panel layout: a hero image wi
 
 Recreation of ColorLib "Colorlib Regform 16" (https://colorlib.com/wp/template/colorlib-regform-16/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/regform/colorlib-regform-16/ (HTTP 200, 7,041 B, fetched 2026-10-23) and its theme stylesheet `etc/regform/colorlib-regform-16/css/style.css` (18,479 B, sha256 `381cad107901…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#329e5e` | 9 declarations — `input:focus`, `input[type=radio]:checked ~ .cl-check` |
+| Other chromatic values | `#c70000` | `#c70000` × 2 (label.error:after) |
+| Surface | `#ffffff` | 15 declarations — `.noUi-handle`, `.noUi-active` |
+| Ink / dark surface | `#222222` | 5 declarations — `.form-link`, `body` |
+| Typeface | `'Material-Design-Iconic-Font'` (4 rules — li.init:after)<br>`'Poppins'` (4 rules — h2) | `font-family` declarations in the theme sheet |
+| Radii | `5px`, `3px`, `50%` | `5px` (input); `3px` (.noUi-connects); `50%` (.cl-check) |
+
+Palette in order of use: `#ffffff` ×15, `#329e5e` ×9, `#222222` ×5, `#ebebeb` ×5, `#bbbbbb` ×3, `#999999` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Split-panel layout

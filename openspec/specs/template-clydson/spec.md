@@ -9,6 +9,29 @@ A personal portfolio template with hero CTAs, counter stats, about, skills and s
 - **New name:** `clydson` (app folder: `apps/clydson`, package: `@free-react-templates/clydson`)
 - **Category:** Personal / Portfolio
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/clyde/ (HTTP 200, 51,007 B, fetched 2026-10-23) and its theme stylesheet `theme/clyde/css/style.min.css` (199,347 B, sha256 `3e7459bab041…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#a0f669` | 9 declarations — `.btn.btn-secondary`, `.btn.btn-secondary:hover` |
+| Other chromatic values | `#007bff`, `#007bff40`, `#7fbdff` | `#007bff` × 7 (.form-check-input:checked); `#007bff40` × 6 (.form-control:focus); `#7fbdff` × 3 (.form-control:focus) |
+| Surface | `#ffffff` | 61 declarations — `.form-range:focus::-moz-range-thumb`, `.form-range:focus::-webkit-slider-thumb` |
+| Ink / dark surface | `#000000` | 43 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Poppins, sans-serif` (1 rule — body)<br>`var(--bs-body-font-family)` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `var(--bs-border-radius)`, `5px` | `50%` (.form-check-input[type=radio]); `var(--bs-border-radius)` (.img-thumbnail); `5px` (.ftco-navbar-light .navbar-nav>.nav-item.cta>a) |
+
+Palette in order of use: `#ffffff` ×61, `#000000` ×43, `#b1b493` ×41, `#666850` ×18, `#a0f669` ×9, `#00000080` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays navigation

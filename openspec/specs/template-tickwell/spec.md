@@ -8,6 +8,27 @@ Tickwell is a modern animated checkmark checkbox UI component template. It provi
 a clean, interactive checkbox experience with smooth SVG stroke-dashoffset animation
 for the checkmark drawing effect, indigo brand accent color, and a minimal centered layout.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/checkbox-05/ (HTTP 200, 1,382 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/checkbox-05/css/style.css` (10,844 B, sha256 `bdc8b3d87d4a…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#c400c6` | 2 declarations — `ul.ks-cboxtags li input[type="checkbox"]:checked + label` |
+| Surface | `#ffffff` | 5 declarations — `ul.ks-cboxtags li label span`, `ul.ks-cboxtags li input[type="checkbox"]:checked + label::before` |
+| Ink / dark surface | `#000000` | 3 declarations — `.heading-section`, `h2` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body)<br>`"FontAwesome"` (1 rule — ul.ks-cboxtags li label::before) | `font-family` declarations in the theme sheet |
+| Radii | `30px`, `4px` | `30px` (ul.ks-cboxtags li label span); `4px` (ul.ks-cboxtags li label) |
+
+Palette in order of use: `#ffffff` ×5, `#000000` ×3, `#c400c6` ×2, `#212529` ×1, `#f9e090` ×1, `#fafafa` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Animated Checkbox Component

@@ -9,6 +9,29 @@ BroadSheet is a full-featured news and magazine website template with breaking
 news tickers, featured articles, popular news grid, video section, and editorial
 picks. Dense, information-rich layout typical of online newspaper sites.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/newspaper/ (HTTP 200, 67,921 B, fetched 2026-10-23) and its theme stylesheet `theme/newspaper/style.min.css` (188,721 B, sha256 `4a271c922ae3…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d0002a` | 21 declarations — `.newspaper-btn`, `.section-heading h6` |
+| Other chromatic values | `#152535`, `#007bff`, `#ee002d` | `#152535` × 14 (h1); `#007bff` × 6 (.form-check-input:checked); `#ee002d` × 6 (#scrollUp) |
+| Surface | `#ffffff` | 36 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#1c1c1c` | 15 declarations — `a`, `a:hover` |
+| Typeface | `Roboto, sans-serif` (2 rules — body)<br>`var(--bs-body-font-family)` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `var(--bs-border-radius)`, `1rem` | `50%` (.form-check-input[type=radio]); `var(--bs-border-radius)` (.form-control); `1rem` (.form-range::-webkit-slider-thumb) |
+
+Palette in order of use: `#ffffff` ×36, `#d0002a` ×21, `#1c1c1c` ×15, `#152535` ×14, `#000000` ×11, `#666666` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar with logo and search

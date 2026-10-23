@@ -4,6 +4,29 @@
 
 Sanctum is a single-page church website with a hero, a bible-study countdown, a services grid, video sermon cards, testimonies, event dates and blog. It recreates the ColorLib **Wisdom** design (https://colorlib.com/wp/template/wisdom/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/wisdom/ (HTTP 200, 36,915 B, fetched 2026-10-23) and its theme stylesheet `theme/wisdom/css/style.min.css` (196,805 B, sha256 `67f6697ee302…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff5656` | 34 declarations — `.text-primary`, `a` |
+| Other chromatic values | `#b82e2e`, `#007bff`, `#007bff40` | `#b82e2e` × 8 (.btn.btn-primary:not(.btn-outline-white):hover); `#007bff` × 6 (.form-check-input:checked); `#007bff40` × 6 (.form-control:focus) |
+| Surface | `#ffffff` | 64 declarations — `.kit-video-dialog__stage.is-map`, `.kit-video-dialog` |
+| Ink / dark surface | `#000000` | 41 declarations — `.text-bg-primary`, `.text-bg-success` |
+| Typeface | `Work Sans, sans-serif` (2 rules — body)<br>`system-ui, sans-serif` (1 rule — .ftco-section .ftco-sub-title) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `var(--bs-border-radius)`, `30px` | `50%` (.form-check-input[type=radio]); `var(--bs-border-radius)` (.img-thumbnail); `30px` (.owl-theme:where(.kit-owl) .owl-dots .owl-dot span) |
+
+Palette in order of use: `#ffffff` ×64, `#000000` ×41, `#ff5656` ×34, `#b82e2e` ×8, `#cccccc` ×8, `#007bff` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with site branding and navigation

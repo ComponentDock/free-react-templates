@@ -7,6 +7,28 @@
 
 Shotglow is a photography studio portfolio template with a bold, dark-hero aesthetic. It targets freelance photographers and creative studios who need a single-page landing with gallery, services, testimonials, pricing, and blog sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/shotgear/ (HTTP 200, 32,923 B, fetched 2026-10-23) and its theme stylesheet `theme/shotgear/css/style.css` (188,813 B, sha256 `a7c6a087e9aa…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff4800` | 55 declarations — `.btn_1:hover`, `.btn_1:hover:after` |
+| Other chromatic values | `#182028`, `#415094`, `#4cd3e3` | `#182028` × 16 (h1); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 7 (.genric-btn.success) |
+| Surface | `#ffffff` | 68 declarations — `.btn_1`, `.btn_1:after` |
+| Ink / dark surface | `#182028` | 16 declarations — `h1`, `h2` |
+| Typeface | `"Roboto", sans-serif` (5 rules — p)<br>`"Oswald", sans-serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
+| Radii | `50%`, `3px`, `5px` | `50%` (.single-post-area .blog-author img); `3px` (.genric-btn.radius); `5px` (.blog_item_img .blog_item_date) |
+
+Palette in order of use: `#ffffff` ×68, `#ff4800` ×55, `#f9f9ff` ×27, `#999999` ×19, `#182028` ×16, `#777777` ×10.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all sections

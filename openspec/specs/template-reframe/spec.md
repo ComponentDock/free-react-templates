@@ -4,6 +4,29 @@
 
 Recreate ColorLib "Pivot" (https://colorlib.com/wp/template/pivot/) as a React 19 + Tailwind CSS 4 + TypeScript template named "Reframe". The original is a construction company landing page with hero, about, projects, services, news, testimonials, CTA, and footer sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/pivot/ (HTTP 200, 28,011 B, fetched 2026-10-23) and its theme stylesheet `theme/pivot/css/style.css` (15,499 B, sha256 `9c17cffcf977…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 13 declarations — `.btn.btn-outline-primary`, `header .navbar-brand span` |
+| Other chromatic values | `#3395ff` | `#3395ff` × 2 (.btn.btn-primary:hover) |
+| Surface | `#ffffff` | 19 declarations — `.btn.btn-primary`, `.btn.btn-outline-primary:hover` |
+| Ink / dark surface | `#000000` | 5 declarations — `h1`, `h2` |
+| Typeface | `"Ionicons"` (1 rule — .list-unstyled.check li:before)<br>`"K2D", sans-serif` (1 rule — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-weight: 300; font-size: 16px; line-height: 1.8; color: #6c757d` | `body{…}` rule |
+| Radii | `50%`, `16px`, `4px` | `50%` (.owl-carousel .owl-dots .owl-dot); `16px` (#loader); `4px` (.media-feature) |
+
+Palette in order of use: `#ffffff` ×19, `#007bff` ×13, `#000000` ×5, `#6c757d` ×3, `#3395ff` ×2, `#ced4da` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with sticky behavior and mobile toggle

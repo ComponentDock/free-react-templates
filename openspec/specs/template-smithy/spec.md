@@ -4,6 +4,29 @@
 
 Smithy is a personal portfolio and developer landing page template, recreating the design of ColorLib "Satner" (https://colorlib.com/wp/template/satner/) under a new original name. It showcases a developer's profile with sections for introduction, services, portfolio work, testimonials, and contact.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/satner/ (HTTP 200, 14,061 B, fetched 2026-10-23) and its theme stylesheet `theme/satner/css/style.min.css` (238,377 B, sha256 `88295271f4ae…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#4458dc` | 29 declarations — `.comments-area .btn-reply:hover`, `.blog-pagination .page-link:hover` |
+| Other chromatic values | `#854fee`, `#f8b600`, `#4cd3e3` | `#854fee` × 12 (.gradient-bg); `#f8b600` × 12 (b); `#4cd3e3` × 9 (.success) |
+| Surface | `#ffffff` | 103 declarations — `.pswp__kit-caption`, `select:where(.nice-select` |
+| Ink / dark surface | `#000000` | 49 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Roboto, sans-serif` (7 rules — body)<br>`Rubik, sans-serif` (7 rules — h1) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `3px`, `var(--bs-border-radius)`, `50%` | `3px` (.owl-theme:where(.kit-owl) .owl-nav [class*=owl-]); `var(--bs-border-radius)` (.img-thumbnail); `50%` (.form-check-input[type=radio]) |
+
+Palette in order of use: `#ffffff` ×103, `#000000` ×49, `#6b6b6b` ×35, `#4458dc` ×29, `#eeeeee` ×17, `#f9f9ff` ×16.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all sections in correct order

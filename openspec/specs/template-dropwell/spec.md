@@ -6,6 +6,28 @@
 
 Provide a multi-level nested dropdown menu component showcasing expandable submenu items in a Bootstrap-style dropdown pattern.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bootstrap/dropdown-07/ (HTTP 200, 2,483 B, fetched 2026-10-23) and its theme stylesheet `theme/bootstrap/dropdown-07/css/style.css` (18,598 B, sha256 `a8ee94ceeccd…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 5 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled` |
+| Other chromatic values | `#0062cc`, `#2161dd`, `#4d80e4` | `#0062cc` × 2 (.cl-btn-primary:hover); `#2161dd` × 2 (.cl-btn.cl-btn-primary:hover); `#4d80e4` × 2 (.cl-btn.cl-btn-primary) |
+| Surface | `#ffffff` | 14 declarations — `body`, `.cl-form-control` |
+| Ink / dark surface | `#212529` | 5 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `0.25rem`, `4px`, `5px` | `0.25rem` (.cl-form-control); `4px` (.cl-form-control); `5px` (.cl-btn) |
+
+Palette in order of use: `#ffffff` ×14, `#6c757d` ×6, `#007bff` ×5, `#212529` ×5, `#0062cc` ×2, `#2161dd` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders with heading and footer

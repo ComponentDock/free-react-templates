@@ -9,6 +9,29 @@ footer. Built with React 19, Tailwind CSS 4, and TypeScript.
 
 Source: https://colorlib.com/wp/template/neutral/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/neutral/ (HTTP 200, 53,686 B, fetched 2026-10-23) and its theme stylesheet `theme/neutral/css/style.css` (71,120 B, sha256 `09f49a82268b…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007bff` | 10 declarations — `.btn-primary`, `.btn-primary.disabled` |
+| Other chromatic values | `#0062cc` | `#0062cc` × 3 (.btn-primary:hover) |
+| Surface | `#ffffff` | 60 declarations — `body`, `.table .table` |
+| Ink / dark surface | `#000000` | 25 declarations — `.close`, `.close:hover` |
+| Typeface | `"Nunito Sans", sans-serif` (3 rules — body)<br>`-apple-system, sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529` | `body{…}` rule |
+| Radii | `0.25rem`, `50%`, `4px` | `0.25rem` (.form-control); `50%` (.owl-carousel .owl-dots .owl-dot); `4px` (.slider-text .icon-video) |
+
+Palette in order of use: `#ffffff` ×60, `#6e5773` ×37, `#000000` ×25, `#007bff` ×10, `#6c757d` ×8, `#212529` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation

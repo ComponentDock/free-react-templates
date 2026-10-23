@@ -14,6 +14,29 @@ the ColorLib "Watch" design under a new name with React 19, Tailwind CSS 4,
 and TypeScript. The template features a hero banner, video intro, feature
 highlights, product catalog, customer reviews, FAQ accordion, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/watch/ (HTTP 200, 31,144 B, fetched 2026-10-23) and its theme stylesheet `theme/watch/css/style.min.css` (186,297 B, sha256 `d5f1e83a4e9e…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#235ee7` | 24 declarations — `b`, `sup` |
+| Other chromatic values | `#007bff`, `#007bff40`, `#0e7c86` | `#007bff` × 6 (.form-check-input:checked); `#007bff40` × 5 (.form-control:focus); `#0e7c86` × 5 (.genric-btn.success) |
+| Surface | `#ffffff` | 69 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#222222` | 20 declarations — `h1`, `h2` |
+| Typeface | `Poppins, sans-serif` (3 rules — body)<br>`var(--bs-body-font-family)` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `var(--bs-border-radius)`, `3px`, `8px` | `var(--bs-border-radius)` (.img-thumbnail); `3px` (.genric-btn.radius); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×69, `#f9f9ff` ×30, `#235ee7` ×24, `#222222` ×20, `#000000` ×11, `#6b6b6b` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar

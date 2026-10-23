@@ -6,6 +6,29 @@ Recreation of ColorLib **Techmag** (https://colorlib.com/wp/template/techmag/)
 
 BytePress is a tech magazine and blog template featuring a dark hero with slider, category intro cards, a featured posts section with sidebar, horizontal technology post cards, a world news grid, and a dark footer with Component Dock branding.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/techmag/ (HTTP 200, 34,043 B, fetched 2026-10-23) and its theme stylesheet `theme/techmag/styles/main_styles.css` (32,183 B, sha256 `4c35121486af…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#61e49b` | 20 declarations — `.cat_world`, `.header_social ul li a i:hover` |
+| Other chromatic values | `#624693`, `#ff4b75` | `#624693` × 8 (.cat_technology); `#ff4b75` × 2 (.cat_video) |
+| Surface | `#ffffff` | 32 declarations — `body`, `p a:hover` |
+| Ink / dark surface | `#000000` | 15 declarations — `.section_title`, `body` |
+| Typeface | `'Open Sans', sans-serif` (7 rules — p)<br>`'HelveticaNeueLTPro', sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 14px; font-weight: normal; color: #000000` | `body{…}` rule |
+| Radii | `50%` | `50%` (.post_author_image) |
+
+Palette in order of use: `#ffffff` ×32, `#61e49b` ×20, `#000000` ×15, `#624693` ×8, `#aeaeae` ×8, `#b2b2b2` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: HeaderBar renders subscribe and social links

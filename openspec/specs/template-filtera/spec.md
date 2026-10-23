@@ -6,6 +6,28 @@ Filtera is a single-page fancy search form template in the free-react-templates
 monorepo. It recreates the ColorLib "Search Form V10" template
 (https://colorlib.com/wp/template/colorlib-search-10/) under a different name.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/searchf/colorlib-search-10/ (HTTP 200, 5,786 B, fetched 2026-10-23) and its theme stylesheet `etc/searchf/colorlib-search-10/css/style.css` (13,012 B, sha256 `788f0e78bc6d…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2c6dd5` | 6 declarations — `.s010 form .inner-form .input-field .btn-search`, `.s010 form .inner-form .input-field .btn-search:before` |
+| Other chromatic values | `#ff4b5a` | `#ff4b5a` × 6 (.s010 form .inner-form .input-field input) |
+| Surface | `#ffffff` | 8 declarations — `.s010 form .inner-form .input-field input`, `.s010 form .inner-form .input-field input.placeholder` |
+| Ink / dark surface | `#333333` | 3 declarations — `.choices[data-type*="select-one"]:after`, `.choices[data-type*="select-one"].is-open:after` |
+| Typeface | `Lato, sans-serif` (6 rules — .cl-sel-0)<br>`'Lato', sans-serif` (2 rules — .s010) | `font-family` declarations in the theme sheet |
+| Radii | `20px`, `10px`, `2.5px` | `20px` (.s010 form .inner-form .input-field .btn-search); `10px` (.s010 form .inner-form .advance-search); `2.5px` (.choices__inner) |
+
+Palette in order of use: `#ffffff` ×8, `#2c6dd5` ×6, `#ff4b5a` ×6, `#333333` ×3, `#000000` ×1, `#555555` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Search input bar

@@ -17,6 +17,29 @@ ColorLib "Create" design under a different name with React 19, Tailwind CSS 4,
 and TypeScript. The template showcases a full creative agency landing page
 with sections for features, portfolio, services, about, team, blog, and contact.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/create/ (HTTP 200, 44,184 B, fetched 2026-10-23) and its theme stylesheet `theme/create/css/style.min.css` (184,297 B, sha256 `4042a1533c9f…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#32dbc6` | 13 declarations — `.form-check-input:checked`, `.form-range::-webkit-slider-thumb` |
+| Other chromatic values | `#167b6f`, `#32dbc640`, `#98ede3` | `#167b6f` × 7 (.btn.btn-outline-white:hover); `#32dbc640` × 6 (.form-control:focus); `#98ede3` × 3 (.form-control:focus) |
+| Surface | `#ffffff` | 39 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#000000` | 25 declarations — `.text-bg-danger`, `.kit-video-dialog__stage` |
+| Typeface | `Quicksand, sans-serif` (2 rules — h1)<br>`var(--_fa-family)` (1 rule — .fa-brands) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `var(--bs-border-radius)`, `1rem` | `50%` (.form-check-input[type=radio]); `var(--bs-border-radius)` (.img-thumbnail); `1rem` (.form-range::-webkit-slider-thumb) |
+
+Palette in order of use: `#ffffff` ×39, `#000000` ×25, `#32dbc6` ×13, `#167b6f` ×7, `#32dbc640` ×6, `#212529` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar renders contact info and social links

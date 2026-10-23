@@ -11,6 +11,29 @@ preview: https://preview.colorlib.com/theme/robust/
 
 PowerGrip is a gym and fitness landing page template that recreates the ColorLib "Robust" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It features a hero slider, program cards, services, class schedule, testimonials, trainers, classes, events, blog, newsletter, and a footer with Component Dock branding.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/robust/ (HTTP 200, 32,304 B, fetched 2026-10-23) and its theme stylesheet `theme/robust/css/style.css` (49,403 B, sha256 `d756153c7488…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#9870fc` | 79 declarations — `.colorlib-nav ul li.btn-cta a span`, `#colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn` |
+| Other chromatic values | `#dc2f2f`, `#e04545` | `#dc2f2f` × 79 (a); `#e04545` × 2 (.btn-primary:hover) |
+| Surface | `#ffffff` | 33 declarations — `body`, `.colorlib-nav #colorlib-logo a` |
+| Ink / dark surface | `#000000` | 18 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (2 rules — body) | `font-family` declaration in the theme sheet |
+| Body type | `font-weight: 300; font-size: 17px; line-height: 1.5; color: gray` | `body{…}` rule |
+| Radii | `30px`, `50%`, `100px` | `30px` (.intro-flex .one-third .price); `50%` (.colorlib-video a); `100px` (.colorlib-nav ul li.btn-cta a span) |
+
+Palette in order of use: `#9870fc` ×79, `#dc2f2f` ×79, `#ffffff` ×33, `#000000` ×18, `#f2f3f7` ×7, `#252525` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar navigation

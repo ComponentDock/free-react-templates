@@ -7,6 +7,28 @@ Recreation of ColorLib "Contact Form V10"
 A minimalist contact form page with a light gray background, centered white
 card with subtle shadow, and a clean purple-branded send button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/cf/ContactFrom_v10/index.html (HTTP 200, 2,307 B, fetched 2026-10-23) and its theme stylesheet `etc/cf/ContactFrom_v10/css/style.css` (9,750 B, sha256 `7f23a2e68953…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#c80000` | 3 declarations — `.alert-validate::after`, `.alert-validate::before` |
+| Other chromatic values | `#403866` | `#403866` × 2 (.contact100-form-title) |
+| Surface | `#ffffff` | 6 declarations — `body`, `.input100` |
+| Ink / dark surface | `#212529` | 1 declarations — `body` |
+| Typeface | `Ubuntu-Bold` (5 rules — a)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Radii | `31px`, `14px` | `31px` (.wrap-input100); `14px` (.alert-validate::before) |
+
+Palette in order of use: `#bdbdd3` ×8, `#ffffff` ×6, `#c80000` ×3, `#403866` ×2, `#0056b3` ×1, `#007bff` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders with form

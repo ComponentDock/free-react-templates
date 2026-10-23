@@ -6,6 +6,29 @@
 
 A restaurant landing template with navbar, about story, tabbed menu and news blog sections. Provide a full-featured restaurant landing page with hero, about, offers carousel, tabbed menu, news/blog cards, photo gallery, contact form, and a dark footer — faithfully recreating the ColorLib Eatwell design under the name "Tastory".
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/eatwell/ (HTTP 200, 46,087 B, fetched 2026-10-23) and its theme stylesheet `theme/eatwell/css/style.css` (13,291 B, sha256 `4e24b0c5cd98…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fda403` | 12 declarations — `.text-primary`, `a` |
+| Other chromatic values | `#cb8402` | `#cb8402` × 2 (.btn.btn-primary:hover) |
+| Surface | `#ffffff` | 12 declarations — `.site-cover .site-heading`, `body` |
+| Ink / dark surface | `#000000` | 9 declarations — `h1`, `h2` |
+| Typeface | `"Playfair Display", serif` (3 rules — h1)<br>`"Raleway", sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: 16px; line-height: 1.6; color: #b8b8b8` | `body{…}` rule |
+| Radii | `50%`, `0 !important`, `16px` | `50%` (.menu-item img); `0 !important` (.site-tab-nav li a); `16px` (#site-loader) |
+
+Palette in order of use: `#fda403` ×12, `#ffffff` ×12, `#000000` ×9, `#cccccc` ×4, `#cb8402` ×2, `#222222` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation links

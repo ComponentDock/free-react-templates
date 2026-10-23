@@ -15,6 +15,28 @@ Information, and a Confirmation Summary. The design features a centered white ca
 on a full-viewport background image, blue content areas, green accent buttons,
 and circular step indicators.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://colorlib.com/etc/bwiz/colorlib-wizard-21/index.html (HTTP 200, 11,768 B, fetched 2026-10-23) and its theme stylesheet `etc/bwiz/colorlib-wizard-21/css/style.css` (13,082 B, sha256 `92e16f8d53d8…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#2f8be0` | 3 declarations — `.inner .cl-form-row .form-holder input`, `.inner .cl-form-row .form-holder select` |
+| Other chromatic values | `#6eba2a` | `#6eba2a` × 2 (.form-register .steps li.current a .step-icon) |
+| Surface | `#ffffff` | 8 declarations — `.form-register .steps li a .title .step-icon`, `.wizard-v1-content` |
+| Ink / dark surface | `#000000` | 1 declarations — `.inner .cl-form-row .form-holder select option` |
+| Typeface | `'Raleway', sans-serif` (3 rules — .wizard-v1-content) | `font-family` declaration in the theme sheet |
+| Radii | `5px`, `50%`, `10px` | `5px` (.form-register .content); `50%` (.form-register .steps li a .title .step-icon); `10px` (.wizard-v1-content) |
+
+Palette in order of use: `#ffffff` ×8, `#2f8be0` ×3, `#666666` ×2, `#6eba2a` ×2, `#cccccc` ×2, `#000000` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Multi-step wizard form

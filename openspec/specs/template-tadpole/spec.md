@@ -14,6 +14,29 @@ CSS 4 + TypeScript.
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **App name:** `tadpole` (apps/tadpole)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/kindergarten/ (HTTP 200, 50,781 B, fetched 2026-10-23) and its theme stylesheet `theme/kindergarten/assets/css/style.min.css` (201,297 B, sha256 `d41228872160…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#c2036f` | 25 declarations — `.form-check-input:checked`, `.form-range::-webkit-slider-thumb` |
+| Other chromatic values | `#1f2b7b`, `#423f8d`, `#d1047a` | `#1f2b7b` × 14 (.contact-info .media-body h3 a:hover); `#423f8d` × 14 (h1); `#d1047a` × 11 (.boxed-btn:hover) |
+| Surface | `#ffffff` | 107 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#000000` | 15 declarations — `.text-bg-info`, `.text-bg-light` |
+| Typeface | `Concert One, cursive` (8 rules — .btn)<br>`Fredoka One, cursive` (8 rules — .boxed-btn) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `30px`, `var(--bs-border-radius)` | `50%` (.form-check-input[type=radio]); `30px` (.owl-theme:where(.kit-owl) .owl-dots .owl-dot span); `var(--bs-border-radius)` (.img-thumbnail) |
+
+Palette in order of use: `#ffffff` ×107, `#f9f9ff` ×27, `#c2036f` ×25, `#6b6b6b` ×19, `#000000` ×15, `#1f2b7b` ×14.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact information and social links

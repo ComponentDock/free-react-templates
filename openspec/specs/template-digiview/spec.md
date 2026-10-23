@@ -7,6 +7,29 @@ Preview URL: `https://preview.colorlib.com/theme/digilab/`
 
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/digilab/ (HTTP 200, 67,753 B, fetched 2026-10-23) and its theme stylesheet `theme/digilab/css/style.min.css` (197,589 B, sha256 `bf3dfdc5e304…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#31de79` | 52 declarations — `.form-check-input:checked`, `.form-range::-webkit-slider-thumb` |
+| Other chromatic values | `#9ff669`, `#15803d`, `#31de7940` | `#9ff669` × 12 (.ftco-navbar-light .navbar-brand span); `#15803d` × 6 (.staff .text .position); `#31de7940` × 6 (.form-control:focus) |
+| Surface | `#ffffff` | 51 declarations — `.valid-tooltip`, `.form-range:focus::-moz-range-thumb` |
+| Ink / dark surface | `#000000` | 45 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Nunito Sans, sans-serif` (1 rule — body)<br>`var(--_fa-family)` (1 rule — .fa-brands) | `font-family` declarations in the theme sheet |
+| Body type | `font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color)` | `body{…}` rule |
+| Radii | `50%`, `var(--bs-border-radius)`, `4px` | `50%` (.form-check-input[type=radio]); `var(--bs-border-radius)` (.img-thumbnail); `4px` (.kit-form-status) |
+
+Palette in order of use: `#31de79` ×52, `#ffffff` ×51, `#000000` ×45, `#9ff669` ×12, `#0000000d` ×6, `#15803d` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

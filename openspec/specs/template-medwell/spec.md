@@ -11,6 +11,29 @@ TypeScript.
 
 **Preview URL:** https://preview.colorlib.com/theme/medcare/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/medcare/ (HTTP 200, 38,967 B, fetched 2026-10-23) and its theme stylesheet `theme/medcare/css/style.css` (74,492 B, sha256 `66bc4af972dd…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0051d2` | 49 declarations — `.header_area .navbar .nav .nav-item:hover .nav-link`, `.header_area .navbar .nav .nav-item.active .nav-link` |
+| Other chromatic values | `#f8b600`, `#4cd3e3`, `#38a4ff` | `#f8b600` × 14 (b); `#4cd3e3` × 11 (.success); `#38a4ff` × 10 (.info) |
+| Surface | `#ffffff` | 75 declarations — `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`, `.header_area .navbar .logo_h` |
+| Ink / dark surface | `#2a2a2a` | 16 declarations — `.blog_right_sidebar .widget_title`, `.blog_details a` |
+| Typeface | `"Playfair Display", serif` (12 rules — h1)<br>`"Open Sans", sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Body type | `line-height: 27px; font-size: 14px; font-weight: normal; color: #797979` | `body{…}` rule |
+| Radii | `3px`, `50%`, `8px` | `3px` (.radius); `50%` (.single-post-area .blog-author img); `8px` (.primary-radio) |
+
+Palette in order of use: `#ffffff` ×75, `#0051d2` ×49, `#2a2a2a` ×16, `#f8b600` ×14, `#f9f9ff` ×14, `#33363e` ×13.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header displays top info bar and main navigation

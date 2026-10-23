@@ -8,6 +8,29 @@ A gym/fitness landing page with hero banner, top courses carousel, CTA banner, f
 - **Preview URL:** `https://preview.colorlib.com/theme/fitness/`
 - **Screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/fitness-free-template.jpg`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/fitness/ (HTTP 200, 32,185 B, fetched 2026-10-23) and its theme stylesheet `theme/fitness/css/main.css` (66,862 B, sha256 `3ee635d8a8d0…`).
+CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f6214b` | 71 declarations — `b`, `sup` |
+| Other chromatic values | `#4cd3e3`, `#38a4ff`, `#f44a40` | `#4cd3e3` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f44a40` × 6 (.genric-btn.danger) |
+| Surface | `#ffffff` | 123 declarations — `.genric-btn.default:hover`, `.text-white` |
+| Ink / dark surface | `#222222` | 27 declarations — `h1`, `h2` |
+| Typeface | `"Poppins", sans-serif` (3 rules — body)<br>`FontAwesome` (1 rule — .sf-arrows .sf-with-ul:after) | `font-family` declarations in the theme sheet |
+| Body type | `color: #777777; font-size: 14px; font-weight: 300; line-height: 1.625em` | `body{…}` rule |
+| Radii | `3px`, `8px`, `8.5px` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+
+Palette in order of use: `#ffffff` ×123, `#f6214b` ×71, `#222222` ×27, `#f9f9ff` ×22, `#777777` ×14, `#cccccc` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all sections
