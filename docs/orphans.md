@@ -1475,7 +1475,7 @@ template-wellnest                   drcare                     -> apps/healwise 
 template-wellpilot                  healthcoach                -> apps/vitaflow           (row 1857, row)
 template-wellpoint                  medica                     -> apps/clinipoint         (row 2244, row)
 template-wellward                   covid                      -> apps/pandemic           (row 1263, row)
-template-whisker                    petcare                    -> apps/petcare            (row 49, unproven)
+template-whisker                    petcare                    -> apps/pawly             (row 49, unproven)
 template-whitelink                  bootstrap-footer-05        -> apps/cairn              (row 783, banner)
 template-whiteroom                  cleaning-company           -> apps/cleanslate         (row 940, banner)
 template-wicket                     modal-19                   -> apps/splitmodal         (row 820, banner)

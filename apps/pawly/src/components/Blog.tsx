@@ -1,18 +1,18 @@
 const posts = [
   {
     title: 'Amazing Places To Visit In Summer',
-    seed: 'petcare-blog-1',
+    seed: 'pawly-blog-1',
     excerpt:
       'Planning a summer trip? Here are the most pet-friendly destinations to explore together.',
   },
   {
     title: 'Developing Creativithout Losing Visual',
-    seed: 'petcare-blog-2',
+    seed: 'pawly-blog-2',
     excerpt: 'Simple enrichment games that keep your pet sharp, engaged, and wonderfully creative.',
   },
   {
     title: 'Winter Photography Tips from Glenn',
-    seed: 'petcare-blog-3',
+    seed: 'pawly-blog-3',
     excerpt: 'Capture the perfect winter portrait of your furry friend with these expert tips.',
   },
 ] as const

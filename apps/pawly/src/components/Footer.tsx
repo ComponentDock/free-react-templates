@@ -22,7 +22,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-4">
         <div>
           <a href="#top" className="text-2xl font-extrabold text-white">
-            pet<span className="text-brand">care</span>
+            paw<span className="text-brand">ly</span>
           </a>
           <p className="mt-5 text-sm font-light leading-relaxed">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -60,7 +60,7 @@ export function Footer() {
           <h3 className="text-base font-bold text-white">Get in Touch</h3>
           <address className="mt-5 space-y-3 text-sm font-light not-italic">
             <p>120 Raymond Rd, New York</p>
-            <p>hello@petcare.example</p>
+            <p>hello@pawly.example</p>
             <a href="tel:+01654066456" className="block transition-colors hover:text-white">
               01654.066.456
             </a>
@@ -69,7 +69,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light">
-          Copyright © {new Date().getFullYear()} Petcare. All rights reserved.
+          Copyright © {new Date().getFullYear()} Pawly. All rights reserved.
         </p>
       </div>
       <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">

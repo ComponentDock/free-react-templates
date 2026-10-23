@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('shows the site name, section links, phone number, and the dark-mode toggle', () => {
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: /Petcare/i })).toHaveAttribute('href', '#top')
+    expect(screen.getByRole('link', { name: /Pawly/i })).toHaveAttribute('href', '#top')
     expect(screen.getByRole('navigation', { name: 'Main' })).toBeInTheDocument()
     for (const label of ['Home', 'About', 'Services', 'Blog', 'Contact']) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()

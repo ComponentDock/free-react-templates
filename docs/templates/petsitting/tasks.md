@@ -46,7 +46,7 @@
   Footer chrome; social icons (GitHub, X, LinkedIn) inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/petcare` (multi-section landing architecture with
+- Base implementation on `apps/pawly` (multi-section landing architecture with
   navbar/hero/services/why-choose-us/counters/faq/testimonials/pricing/gallery/
   blog/appointment/footer).
 
@@ -56,7 +56,7 @@
       requirements + scenarios + replication findings) — DONE on main (this
       prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/petsitting` (copy `apps/petcare`; rename package to
+- [ ] Create `apps/petsitting` (copy `apps/pawly`; rename package to
       `@free-react-templates/petsitting`).
 - [ ] TDD: tests first for Navbar, Hero, Intro Services, Why Choose Us,
       Counters, FAQ, Testimonials, Pricing (+ billing toggle), Gallery, Blog,

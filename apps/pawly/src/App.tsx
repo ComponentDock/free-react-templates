@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Petcare — Pet Care Services Website Template'
+    document.title = 'Pawly — Pet Care Services Website Template'
   }, [])
 
   return (

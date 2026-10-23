@@ -1,16 +1,16 @@
-# Template: Petcare (Pet Care Services Website)
+# Template: Pawly (Pet Care Services Website)
 
 ## Purpose
 
-Petcare is a multi-section pet-care services website template in the
+Pawly is a multi-section pet-care services website template in the
 free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Petcare" design (see TEMPLATES.md), built under a different
-name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+ColorLib free "Petcare" design (see TEMPLATES.md), built under the new name
+Pawly with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original design is a red-and-navy pet-care landing page: hero with a "We
 Care Your Pets." headline, three pet services, a stat counter strip, a
 commitment/about block, a photo gallery, a call-CTA band, a team section,
-recent blog posts, and a multi-column footer. Petcare follows the same
+recent blog posts, and a multi-column footer. Pawly follows the same
 structure and adds the repo's standard dark-mode toggle and accessible
 patterns. All imagery is recreated with seeded placeholder images (no assets
 copied).
@@ -60,25 +60,25 @@ copied).
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#ff2121`, navy `#1f2b7b` accent in `@theme`);
-  placeholder images via `https://picsum.photos/seed/petcare-<n>/<w>/<h>`;
+  placeholder images via `https://picsum.photos/seed/pawly-<n>/<w>/<h>`;
   icons from lucide-react; stat counters as static accessible numbers;
   repo-standard Footer chrome; social icons inline SVG; no assets copied.
 
-Petcare lives in `apps/petcare` and uses shared components from `packages/ui`
+Pawly lives in `apps/pawly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Petcare", links
+The system SHALL render a navigation bar with the site name "Pawly", links
 to the main sections, a phone number, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Petcare page is rendered
+- **GIVEN** the Pawly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Petcare" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Pawly" and links to the main sections
 - **AND** the navbar SHALL show a phone number and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -191,7 +191,7 @@ The system SHALL render a footer with an about blurb, link columns
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Petcare" and an about blurb
+- **THEN** it SHALL show the site name "Pawly" and an about blurb
 - **AND** it SHALL show link columns and social links
 
 ### Requirement: Page composition
@@ -201,10 +201,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Petcare app is rendered
+- **GIVEN** the Pawly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Petcare — Pet Care Services Website Template"
+- **AND** the document title SHALL be "Pawly — Pet Care Services Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -224,7 +224,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/petcare/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/pawly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -233,7 +233,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/petcare/` is inspected
+- **WHEN** every non-test file under `apps/pawly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -241,7 +241,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Petcare" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Pawly" and links to the main sections
 - [x] Hero section — it SHALL contain a level-1 heading matching "We Care Your Pets."
 - [x] Services section — it SHALL show the heading "Best Pet Care Services"
 - [ ] Counters section — it SHALL show at least two stat counters
@@ -250,5 +250,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Call CTA section — it SHALL show the call-to-action text and a phone number
 - [x] Team section — it SHALL show the heading "Our Team Mambers"
 - [x] Blog section — it SHALL show the heading "Our Recent Blog"
-- [x] Footer — it SHALL show the site name "Petcare" and an about blurb
+- [x] Footer — it SHALL show the site name "Pawly" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

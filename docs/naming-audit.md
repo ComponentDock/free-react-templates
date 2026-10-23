@@ -13,11 +13,13 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after #1810 (Thepetcare → Vetly)
+## State after Petcare → Pawly
 
-30 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+29 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
+
+Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812).
 
 | app                 | source design  |
 | ------------------- | -------------- |
@@ -48,11 +50,10 @@ list — record the mapping when those specs are next touched.
 | apps/medico         | Medico         |
 | apps/mosh           | Mosh           |
 | apps/pawpal         | PawPal         |
-| apps/petcare        | Petcare        |
 | apps/petsitting     | Petsitting     |
 | apps/petvet         | Petvet         |
 
-## Rename checklist (proven on Thepetcare → Vetly, #1810)
+## Rename checklist (proven on Thepetcare → Vetly, #1810, and Petcare → Pawly, #1812)
 
 One app per PR; the deploy target changes, so re-run the per-app gate.
 

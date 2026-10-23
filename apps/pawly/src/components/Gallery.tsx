@@ -21,7 +21,7 @@ export function Gallery() {
           {photos.map((photo) => (
             <img
               key={photo.seed}
-              src={`https://picsum.photos/seed/petcare-gallery-${photo.seed}/480/360`}
+              src={`https://picsum.photos/seed/pawly-gallery-${photo.seed}/480/360`}
               alt={photo.alt}
               loading="lazy"
               className="h-48 w-full rounded-lg object-cover md:h-64"

@@ -1,7 +1,7 @@
 const members = [
-  { name: 'Mike Janathon', seed: 'petcare-team-1' },
-  { name: 'Mike J Smith', seed: 'petcare-team-2' },
-  { name: 'Pule W Smith', seed: 'petcare-team-3' },
+  { name: 'Mike Janathon', seed: 'pawly-team-1' },
+  { name: 'Mike J Smith', seed: 'pawly-team-2' },
+  { name: 'Pule W Smith', seed: 'pawly-team-3' },
 ] as const
 
 export function Team() {
@@ -12,7 +12,7 @@ export function Team() {
           Our Team Mambers
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-center font-light text-muted dark:text-gray-400">
-          Meet the caring doctors behind Petcare.
+          Meet the caring doctors behind Pawly.
         </p>
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {members.map((member) => (

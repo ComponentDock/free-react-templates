@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/petcare",
+  "name": "@free-react-templates/pawly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://petcare.free.componentdock.com",
+  "homepage": "https://pawly.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
