@@ -87,6 +87,8 @@ Palette in order of use: `#ffffff` ×28, `#000000` ×11, `#6a99cb` ×5, `#b3b3b3
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/inward/css/style.css` — 12,297 B, sha256 `9bb03f9735a9…`; `npm/mediaelement@4.2.7/build/mediaelementplayer.min.css` — 11,407 B, sha256 `8e2d5b7c9693…`.
+
 ## Requirements
 
 ### Requirement: Navbar renders all navigation links

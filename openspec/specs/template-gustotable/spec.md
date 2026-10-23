@@ -190,6 +190,8 @@ Palette in order of use: `#ffffff` ×86, `#fe5f41` ×45, `#f9f9ff` ×23, `#1f2b7
   `apps/bonquet`, and `openspec/specs/template-bonquet/spec.md` holds the canonical
   record. Do not scaffold `apps/gustotable`.
 
+Sheet identity (measured 2026-10-24): `theme/restauco/assets/css/style.css` — 80,346 B, sha256 `82af3cf541cb…`; `theme/restauco/assets/css/gijgo.css` — 55,555 B, sha256 `b6955c118a63…`.
+
 ## Requirements
 
 ### Requirement: Page shell and header

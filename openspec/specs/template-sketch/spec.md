@@ -55,6 +55,8 @@ Palette in order of use: `#1264fa` ×29, `#ffffff` ×11, `#000000` ×9, `#000839
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/design/fonts/icomoon/style.css` — 79,820 B, sha256 `b696dfc59a40…`; `theme/design/css/style.css` — 27,802 B, sha256 `4567f225ba66…`.
+
 ## Requirements
 
 ### Requirement: Navbar displays navigation and branding

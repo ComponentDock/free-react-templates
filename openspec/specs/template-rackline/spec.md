@@ -419,6 +419,8 @@ copy verbatim.
 | placeholders (own assets)      | hero slide 1 = `https://picsum.photos/seed/rackline-hero-1/1920/1080`, slide 2 = `.../rackline-hero-2/1920/1080`, mid-page band = `.../rackline-band/1920/1080` (each under its own `rgba(0,0,0,.4)` overlay); testimonial avatars = `https://picsum.photos/seed/rackline-avatar-<n>/180/180`; all icons/glyphs = `lucide-react` | ADDED vs the reference |
 | attribution                    | footer line links `https://www.componentdock.com/` ("Component Dock") replacing the source's Colorlib credit | ADDED vs the reference |
 
+Sheet identity (measured 2026-10-24): `theme/server/css/fl-bigmug-line.css` — 1,480 B, sha256 `bd05d8782b3f…`.
+
 ## Requirements
 
 ### Feature: Utility bar (white contact strip above the nav)

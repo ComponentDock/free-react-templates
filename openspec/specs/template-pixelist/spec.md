@@ -151,6 +151,8 @@ Palette in order of use: `#f271ab` ×13, `#ffffff` ×9, `#222222` ×7, `#2f2f2f`
   `apps/redawn`, and `openspec/specs/template-redawn/spec.md` holds the canonical
   record. Do not scaffold `apps/pixelist`.
 
+Sheet identity (measured 2026-10-24): `theme/rea/style.css` — 26,511 B, sha256 `14383a1080b4…`; `theme/rea/css/sm-clean.css` — 4,966 B, sha256 `1beb06897c20…`; `theme/rea/css/common.css` — 4,026 B, sha256 `6ab14441fc73…`; `theme/rea/css/clear.css` — 1,462 B, sha256 `697f407bcce9…`; `theme/rea/css/carouFredSel.css` — 456 B, sha256 `a73855d1762e…`.
+
 ## Requirements
 
 ### Requirement: Header with animated headline

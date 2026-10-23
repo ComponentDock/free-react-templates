@@ -250,6 +250,8 @@ Palette in order of use: `#ffffff` ×39, `#f17445` ×24, `#000000` ×22, `#f2f3f
   `apps/sculpt`, and `openspec/specs/template-sculpt/spec.md` holds the canonical
   record. Do not scaffold `apps/grind`.
 
+Sheet identity (measured 2026-10-24): `theme/flawless/css/style.css` — 43,026 B, sha256 `e272ca7de11f…`; `theme/flawless/css/flexslider.css` — 2,975 B, sha256 `f770be750aa6…`; `theme/flawless/css/icomoon.css` — 1,909 B, sha256 `f7e86f9686a8…`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

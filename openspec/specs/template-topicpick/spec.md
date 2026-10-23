@@ -26,6 +26,8 @@ Palette in order of use: `#ffffff` ×22, `#000000` ×7, `#212529` ×7, `#96c8da`
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/bootstrap/multiselect-02/css/style.css?v=89e5defb` — 58,712 B, sha256 `95fea9c6ebf6…`.
+
 ## Requirements
 
 ### Requirement: Page renders with heading and dropdown

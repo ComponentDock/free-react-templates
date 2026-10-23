@@ -29,6 +29,8 @@ Palette in order of use: `#ffffff` ×4, `#3760e5` ×3, `#333333` ×2, `#666666` 
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `etc/bwiz/colorlib-wizard-30/css/style.css?v=79adf51a` — 9,710 B, sha256 `81ab3cd870ee…`.
+
 ## Requirements
 
 ### Requirement: Full-page background with centered wizard card

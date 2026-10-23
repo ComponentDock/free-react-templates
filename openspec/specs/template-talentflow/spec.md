@@ -42,6 +42,8 @@ Palette in order of use: `#ffffff` ×42, `#000000` ×27, `#999999` ×5, `#0389ff
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/humanresources/css/style.min.css?v=3.0.0` — 32,484 B, sha256 `e11f9e371a15…`; `theme/humanresources/kit/reveal.min.css?v=3.0.0` — 5,719 B, sha256 `034383ecd11c…`; `theme/humanresources/kit/mobile-nav.min.css?v=3.0.0` — 3,909 B, sha256 `2189e00916f5…`; `theme/humanresources/kit/sliders.min.css?v=3.0.0` — 2,576 B, sha256 `0f2df79b679b…`.
+
 ## Requirements
 
 ### Requirement: Navbar with mobile toggle

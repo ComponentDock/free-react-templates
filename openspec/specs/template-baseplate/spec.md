@@ -30,6 +30,8 @@ Palette in order of use: `#ffffff` ×4, `#777777` ×2, `#212529` ×1, `#007bff` 
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `style.css` — 10,084 B, sha256 `e89b55ce0930…` (member of `downloads/free/bootstrap-footer-03.zip`). These sheets are archive members: no live demo serves this skin.
+
 ## Requirements
 
 ### Requirement: Footer renders with brand logo

@@ -25,6 +25,8 @@ Palette in order of use: `#ffffff` ×10, `#007bff` ×5, `#b689b0` ×5, `#6c757d`
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/bootstrap/login-form-19/css/style.css?v=f8ccea4d` — 15,520 B, sha256 `b3092c347932…`.
+
 ## Requirements
 
 ### Requirement: Render the login card layout

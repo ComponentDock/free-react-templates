@@ -31,6 +31,8 @@ Palette in order of use: `#1b3815` ×11, `#ffffff` ×7, `#57b846` ×4, `#ebebeb`
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `etc/lf/Login_v8/css/style.css?v=d49f9ef0` — 10,715 B, sha256 `f8e0e3b12609…`.
+
 ## Requirements
 
 ### Requirement: Full-viewport centered layout

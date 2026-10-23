@@ -39,6 +39,8 @@ Palette in order of use: `#ffffff` ×63, `#000000` ×62, `#31de79` ×57, `#9ff66
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/digilab/css/style.min.css?v=3.0.2` — 197,589 B, sha256 `98bcc4c896bb…`.
+
 ## Requirements
 
 ### Requirement: App renders all sections

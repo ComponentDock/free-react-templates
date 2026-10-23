@@ -32,6 +32,8 @@ Palette in order of use: `#ffffff` ×15, `#df0e62` ×10, `#000000` ×7, `#cccccc
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/elit/fonts/icomoon/style.css` — 79,820 B, sha256 `b696dfc59a40…`; `theme/elit/css/style.css` — 14,049 B, sha256 `c749c31c84d3…`.
+
 ## Requirements
 
 ### Requirement: Sidebar Navigation

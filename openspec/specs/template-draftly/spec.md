@@ -45,6 +45,8 @@ Palette in order of use: `#ffffff` ×67, `#000000` ×59, `#b1b493` ×37, `#66685
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/clyde/css/style.min.css?v=3.1.0` — 215,600 B, sha256 `d3f3bb983f66…`.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation links

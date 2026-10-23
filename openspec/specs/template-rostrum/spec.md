@@ -87,6 +87,8 @@ Palette in order of use: `#6b75ff` ×91, `#ffffff` ×53, `#59b7ff` ×42, `#6b76f
   `apps/festpoint`, and `openspec/specs/template-festpoint/spec.md` holds the canonical
   record. Do not scaffold `apps/rostrum`.
 
+Sheet identity (measured 2026-10-24): `theme/eventalk/css/style.css` — 75,027 B, sha256 `26c2592ba888…`; `theme/eventalk/css/icomoon.css` — 1,374 B, sha256 `61e749d5ee1d…`.
+
 ## Requirements
 
 ### Feature: Rostrum template behaviour

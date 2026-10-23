@@ -27,6 +27,8 @@ Palette in order of use: `#ffffff` ×28, `#ff6107` ×16, `#303030` ×10, `#63636
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/luto/css/style.css` — 35,252 B, sha256 `750ae6f7f05f…`; `theme/luto/css/flexslider.css` — 2,975 B, sha256 `f770be750aa6…`; `theme/luto/css/icomoon.css` — 1,696 B, sha256 `adc0af761f2f…`.
+
 ## Requirements
 
 ### Requirement: Header with navigation

@@ -44,6 +44,8 @@ Palette in order of use: `#ffffff` ×26, `#12cad6` ×11, `#25262a` ×3, `#000000
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/dentures/fonts/icomoon/style.css` — 79,820 B, sha256 `b696dfc59a40…`; `theme/dentures/css/style.css` — 18,431 B, sha256 `c6bf095e2e25…`.
+
 ## Requirements
 
 ### Requirement: Navbar displays brand and navigation

@@ -39,6 +39,8 @@ Palette in order of use: `#ffffff` ×73, `#ff1857` ×30, `#999999` ×13, `#22222
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/smashed/css/main.css` — 55,413 B, sha256 `a43969ee57f0…`.
+
 ## Requirements
 
 ### Requirement: Full magazine layout on page load

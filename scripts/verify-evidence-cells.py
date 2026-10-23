@@ -459,6 +459,44 @@ def _tail_rx(tail: str):
     return re.compile(r"(?<![A-Za-z0-9_.-])" + re.escape(tail) + r"(?![A-Za-z0-9_.-])")
 
 
+# Third-party font CSS is fetched per user agent: its byte count and digest are
+# a property of the REQUEST, not of the design, so an identity there is not a
+# claim a prep can keep (`lens` cites Google Fonts among its sheets).
+FONT_HOSTS = ("fonts.googleapis.com", "fonts.gstatic.com")
+
+# A citation the spec never WROTE cannot be unrecorded. `named_refs` expands a
+# bare basename into every plausible URL (`theme/x/style.css` AND
+# `theme/x/css/style.css`), and `fetch_sheet` retries the `css/` sibling when
+# the first 404s — so a phantom path still returns a live body and used to be
+# reported as a cell that failed to record its identity. Measured 2026-10-24:
+# 39 of the 73 IDENTITY-UNRECORDED notes were this artefact, all in preps whose
+# cited sheets DID carry size + sha256. EXISTENCE_GUARD is switchable so a
+# control can prove the note returns when it is off.
+EXISTENCE_GUARD = True
+
+
+def written_ref(txt: str, url: str, live_paths=None) -> bool:
+    """Does the spec name THIS sheet — by a path tail, or as a bare basename?
+
+    A path tail that the text contains is proof (`theme/x/css/style.css`).
+    A BARE basename (`style.css`, the house grammar for a single-sheet theme) is
+    only proof for the sheet the demo actually links: `named_refs` expands the
+    same token into `theme/x/style.css` AND `theme/x/css/style.css`, so without
+    that check one written token vouches for a URL that exists nowhere in the
+    demo (`archcraft`, `bizplanner`, `corkage` … — 39 preps on 2026-10-24).
+    Archive members (no scheme) are cited by bare name by construction.
+    """
+    for tail in citation_tails(url):
+        if _tail_rx(tail).search(txt):
+            return True
+    base = os.path.basename(url.split("?")[0])
+    if not re.search(r"(?<![\w./-])" + re.escape(base) + r"(?![A-Za-z0-9_.-])", txt):
+        return False
+    if not url.startswith(("http://", "https://")):
+        return True                             # archive member
+    return not live_paths or urllib.parse.urlsplit(url).path in live_paths
+
+
 NEXT_CITE = re.compile(r"`?[^`\s]*\.css")
 
 
@@ -716,11 +754,16 @@ def audit_spec(f, root, path):
                 for u, _ in live}
     # Is the cited sheet still the file the cell was measured from?  The spec
     # records its size + sha256, so this is a byte comparison, not a guess.
+    live_paths = {urllib.parse.urlsplit(u).path for u, _ in live}
     changed, unrecorded, confirmed, basis, ambiguous = [], [], False, [], []
     for u, body in named:
         b = os.path.basename(u.split("?")[0])
         if VENDOR_RX.search(b):
             continue
+        if urllib.parse.urlsplit(u).netloc in FONT_HOSTS:
+            continue                            # per-UA bytes: no design identity
+        if EXISTENCE_GUARD and not written_ref(txt, u, live_paths):
+            continue                            # a citation the spec never wrote
         st = identity_changed(txt, u, body)
         if st is None:
             # Several citations share this basename and none is path-qualified:

@@ -28,6 +28,8 @@ Palette in order of use: `#000000` ×76, `#ffffff` ×69, `#fdbe34` ×55, `#6c757
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/homebuilder/css/style.min.css?v=3.0.3` — 194,902 B, sha256 `9f730094d736…`; `theme/homebuilder/vendor/photoswipe/5.4.4/photoswipe.css?v=3.0.3` — 7,423 B, sha256 `b0eaaae0b9de…`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

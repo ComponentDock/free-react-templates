@@ -58,6 +58,8 @@ never the app folder, npm package or brand. Provenance stays in this spec,
 Takeoff lives in `apps/takeoff` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+Sheet identity (measured 2026-10-24): `theme/appson/css/style.css` — 7,706 B, sha256 `c4d7cdb71af3…`.
+
 ## Requirements
 
 ### Requirement: Navigation bar
@@ -280,7 +282,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 | claimed | painted | d | sheet (bytes, sha256) | declaration |
 | --- | --- | --- | --- | --- |
-| `#fe5f1b` | `#f9621f` ×6 | 7 | `preview.css` (4,250 B, `629f91aa24b0…`) | `border: 3px solid #f9621f;` |
+| `#fe5f1b` | `#f9621f` ×6 | 7 | `preview.css` (4,250 B, sha256 `629f91aa24b0…`) | `border: 3px solid #f9621f;` |
 
 The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
 <!-- live-palette-revalue:end -->

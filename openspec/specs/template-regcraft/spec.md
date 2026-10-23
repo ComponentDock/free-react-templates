@@ -28,6 +28,8 @@ Palette in order of use: `#555555` ×5, `#ffffff` ×3, `#cccccc` ×2, `#888888` 
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `style.css` — 10,853 B, sha256 `9b87ef669dbd…` (member of `downloads/free/colorlib-regform-1.zip`). These sheets are archive members: no live demo serves this skin.
+
 ## Requirements
 
 ### Requirement: Page layout

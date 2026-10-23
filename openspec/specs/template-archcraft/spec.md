@@ -31,6 +31,8 @@ Palette in order of use: `#ffffff` ×24, `#ff5733` ×18, `#000000` ×12, `#21252
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/archs/fonts/icomoon/style.css` — 79,820 B, sha256 `b696dfc59a40…`; `theme/archs/css/style.css` — 24,541 B, sha256 `b770405c0799…`.
+
 ## Requirements
 
 ### Requirement: Top bar renders social links and contact info

@@ -31,6 +31,8 @@ Palette in order of use: `#dd0a37` ×27, `#ffffff` ×24, `#0b0f28` ×10, `#00000
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/event/css/style.css` — 19,535 B, sha256 `96926296c9b6…`.
+
 ## Requirements
 
 ### Requirement: Navbar displays correctly

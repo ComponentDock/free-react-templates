@@ -28,6 +28,8 @@ Palette in order of use: `#000000` ×7, `#fcfcfc` ×4, `#ffffff` ×2, `#212529` 
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `style.css` — 15,792 B, sha256 `53a76465a359…` (member of `downloads/free/colorlib-sidebar-v08.zip`). These sheets are archive members: no live demo serves this skin.
+
 ## Requirements
 
 ### Sidebar

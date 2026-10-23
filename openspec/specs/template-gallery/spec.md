@@ -52,6 +52,8 @@ Palette in order of use: `#f277ae` ×17, `#ffffff` ×13, `#666666` ×7, `#222222
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/reopen/style.min.css?v=3.0.0` — 14,593 B, sha256 `53f3ff2306c6…`; `theme/reopen/css/modern.min.css?v=3.0.0` — 10,768 B, sha256 `8fbdf3bfa0fc…`; `theme/reopen/vendor/photoswipe/5.4.4/photoswipe.css?v=3.0.0` — 7,423 B, sha256 `b0eaaae0b9de…`.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation links, and dark mode toggle

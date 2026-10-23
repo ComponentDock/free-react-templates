@@ -30,6 +30,8 @@ Palette in order of use: `#ffffff` ×80, `#ff5e13` ×46, `#020c26` ×24, `#f9f9f
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/durg/css/style.css` — 64,778 B, sha256 `e3256b7c830a…`.
+
 ## Requirements
 
 ### Requirement: Header with navigation and contact info

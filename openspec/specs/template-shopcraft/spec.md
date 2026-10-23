@@ -53,6 +53,8 @@ Palette in order of use: `#ffffff` ×83, `#222222` ×28, `#f9f9ff` ×25, `#f4106
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/shop/css/main.css` — 153,644 B, sha256 `8085253d9695…`; `theme/shop/css/ion.rangeSlider.css` — 3,355 B, sha256 `e5ce02a6caed…`; `theme/shop/css/ion.rangeSlider.skinFlat.css` — 2,206 B, sha256 `ab3085180d4e…`.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact information

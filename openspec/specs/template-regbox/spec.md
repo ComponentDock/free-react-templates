@@ -29,6 +29,8 @@ Palette in order of use: `#999999` ×5, `#ffffff` ×2, `#333333` ×2, `#accffe` 
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - No rounding in the sheet: keep buttons and cards square unless a shared `packages/ui` component supplies its own.
 
+Sheet identity (measured 2026-10-24): `etc/regform/colorlib-regform-26/css/style.css?v=bc58c71d` — 5,947 B, sha256 `b8a35e7aad35…`.
+
 ## Requirements
 
 ### Requirement: Page layout with full-viewport background

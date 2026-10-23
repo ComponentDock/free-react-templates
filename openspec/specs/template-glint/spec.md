@@ -65,6 +65,8 @@ Palette in order of use: `#ffffff` ×55, `#71cd29` ×31, `#2d2d2d` ×15, `#eff2f
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/prodent/css/style.min.css?v=3.0.0` — 21,226 B, sha256 `072974bf2a07…`; `theme/prodent/css/modern.min.css?v=3.0.0` — 17,423 B, sha256 `376e7558fcda…`; `theme/prodent/kit/mobile-nav.min.css?v=3.0.0` — 3,909 B, sha256 `2189e00916f5…`; `theme/prodent/css/fonts.min.css?v=3.0.0` — 2,821 B, sha256 `8ba1c1e80dd2…`.
+
 ## Requirements
 
 ### Requirement: Page structure and branding

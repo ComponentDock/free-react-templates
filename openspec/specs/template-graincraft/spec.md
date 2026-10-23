@@ -25,6 +25,8 @@ Palette in order of use: `#111111` ×59, `#ffffff` ×45, `#bfb332` ×22, `#44444
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/woodwork/css/style.css` — 45,354 B, sha256 `2b6618ccd7f3…`.
+
 ## Requirements
 
 ### Requirement: Navbar with branding and navigation

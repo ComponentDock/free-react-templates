@@ -28,6 +28,8 @@ Palette in order of use: `#ffffff` ×24, `#000000` ×14, `#28a745` ×11, `#ccccc
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/jobfinder/fonts/icomoon/style.css` — 79,820 B, sha256 `b696dfc59a40…`; `theme/jobfinder/css/style.css` — 23,091 B, sha256 `09f6cddf05d1…`; `npm/mediaelement@4.2.7/build/mediaelementplayer.min.css` — 11,407 B, sha256 `8e2d5b7c9693…`.
+
 ## Requirements
 
 ### Requirement: Navbar

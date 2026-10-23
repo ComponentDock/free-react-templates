@@ -32,6 +32,8 @@ Palette in order of use: `#ffffff` ×19, `#000000` ×11, `#fd7e14` ×11, `#eeeee
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/crossfits/fonts/icomoon/style.css` — 79,820 B, sha256 `b696dfc59a40…`; `theme/crossfits/css/style.css` — 22,235 B, sha256 `daf112015613…`; `npm/mediaelement@4.2.7/build/mediaelementplayer.min.css` — 11,407 B, sha256 `8e2d5b7c9693…`.
+
 ## Requirements
 
 ### Requirement: Navbar

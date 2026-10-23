@@ -25,6 +25,8 @@ Palette in order of use: `#333333` ×7, `#ffffff` ×2.
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - No rounding in the sheet: keep buttons and cards square unless a shared `packages/ui` component supplies its own.
 
+Sheet identity (measured 2026-10-24): `style.css` — 6,546 B, sha256 `241c86ed9666…` (member of `downloads/free/colorlib-regform-17.zip`). These sheets are archive members: no live demo serves this skin.
+
 ## Requirements
 
 ### Requirement: Split-panel card layout

@@ -33,6 +33,8 @@ Palette in order of use: `#ffffff` ×11, `#6c757d` ×4, `#000000` ×4, `#1089ff`
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `style.css` — 17,369 B, sha256 `1845bce6f6a2…` (member of `downloads/free/bootstrap-footer-20.zip`). These sheets are archive members: no live demo serves this skin.
+
 ## Requirements
 
 ### Requirement: ContactCards section renders three colored info cards

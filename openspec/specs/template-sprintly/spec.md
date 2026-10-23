@@ -49,6 +49,8 @@ Palette in order of use: `#ffffff` ×111, `#e4381c` ×52, `#e16521` ×28, `#1515
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/activitar/css/style.css` — 54,948 B, sha256 `f518adaed484…`.
+
 ## Requirements
 
 ### Requirement: Page structure and sections

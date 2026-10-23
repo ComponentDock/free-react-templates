@@ -26,6 +26,8 @@ Palette in order of use: `#ffffff` ×84, `#39cfca` ×33, `#222222` ×27, `#f9f9f
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/educature/css/main.css` — 60,996 B, sha256 `9024aae1f856…`.
+
 ## Requirements
 
 ### Requirement: Navbar navigation

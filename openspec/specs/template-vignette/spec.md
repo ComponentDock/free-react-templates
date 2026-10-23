@@ -28,6 +28,8 @@ Palette in order of use: `#ffffff` ×63, `#d6003a` ×35, `#000000` ×29, `#3a3a3
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/karl/css/core-style.min.css?v=3.0.0` — 235,452 B, sha256 `88f8c2fa2f6c…`; `theme/karl/vendor/photoswipe/5.4.4/photoswipe.css?v=3.0.0` — 7,423 B, sha256 `b0eaaae0b9de…`; `theme/karl/style.css` — 345 B, sha256 `088830a0335e…`.
+
 ## Requirements
 
 ### Requirement: Header with navigation and cart

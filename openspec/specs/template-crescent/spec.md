@@ -34,6 +34,8 @@ Palette in order of use: `#c92f2f` ×61, `#ffffff` ×35, `#959595` ×25, `#63636
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/crose/style.css` — 62,799 B, sha256 `d7335a56a578…`.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact info and social links

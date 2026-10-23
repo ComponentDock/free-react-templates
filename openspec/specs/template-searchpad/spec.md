@@ -27,6 +27,8 @@ Palette in order of use: `#cccccc` ×4, `#666666` ×3, `#ffffff` ×2, `#d8f4fe` 
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `etc/searchf/colorlib-search-21/css/style.css?v=7b8a4c26` — 8,551 B, sha256 `c8b515257142…`.
+
 ## Requirements
 
 ### Requirement: Page layout and background

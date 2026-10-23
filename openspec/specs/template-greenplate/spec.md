@@ -28,6 +28,8 @@ Palette in order of use: `#ffffff` ×66, `#000000` ×56, `#82ae46` ×46, `#007bf
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/vegefoods/css/style.min.css?v=3.0.0` — 218,088 B, sha256 `95a5bd67d7b4…`.
+
 ## Requirements
 
 ### Requirement: Top Bar

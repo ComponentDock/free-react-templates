@@ -26,6 +26,8 @@ Palette in order of use: `#ffffff` ×89, `#db9a64` ×25, `#f9f9ff` ×23, `#ff5e1
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/resta/css/style.css` — 150,382 B, sha256 `113b5055b0bb…`; `theme/resta/css/gijgo.css` — 55,532 B, sha256 `ae6c0a9951a2…`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

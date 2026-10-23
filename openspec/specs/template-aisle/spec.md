@@ -446,6 +446,8 @@ the source name, its copy verbatim or its typos.
 | placeholders (own assets)    | hero photo `https://picsum.photos/seed/aisle-hero/1920/1080`; countdown band `https://picsum.photos/seed/aisle-countdown/1600/600`; ceremony band `https://picsum.photos/seed/aisle-ceremony/1600/600`; six gallery tiles `https://picsum.photos/seed/aisle-gallery-<1..6>/600/400`; map = own static placeholder illustration (no API key); ring pattern = own CSS/SVG; logos = own wordmark in Playball; icons = `lucide-react` | ADDED vs the reference |
 | attribution                  | footer line links `https://www.componentdock.com/` ("Component Dock") replacing the source's Colorlib credit                                        | ADDED vs the reference |
 
+Sheet identity (measured 2026-10-24): `theme/wedding2/common-css/fluidbox.min.css` — 3,105 B, sha256 `e6847b94bd5e…`; `theme/wedding2/common-css/font-icon.css` — 1,981 B, sha256 `44d9ffd8a89d…`.
+
 ## Requirements
 
 ### Feature: Header (transparent floating nav with dropdown and mobile panel)

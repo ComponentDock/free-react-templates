@@ -38,6 +38,8 @@ Palette in order of use: `#ffffff` ×6, `#999999` ×6, `#36c240` ×3, `#666666` 
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `style.css` — 12,835 B, sha256 `14ef25410eb7…` (member of `downloads/free/colorlib-wizard-28.zip`). These sheets are archive members: no live demo serves this skin.
+
 ## Requirements
 
 ### Requirement: Gradient background

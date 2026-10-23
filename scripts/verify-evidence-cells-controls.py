@@ -794,7 +794,98 @@ def collect():
     case("c33b GATE dirname-bound basename", c33b_gate_dirname_bound_basename, gate=True)
     case("c34 size-only and sha citation merge", c34_size_only_and_sha_citation_merge)
     case("c34b GATE size/sha conflict", c34b_gate_size_sha_conflict, gate=True)
+    case("c35 phantom citation is not unrecorded", c35_phantom_citation_is_not_unrecorded)
+    case("c35b GATE existence guard", c35b_gate_existence_guard, gate=True)
+    case("c36 written sheet without identity still notes",
+         c36_written_sheet_without_identity_still_notes)
+    case("c37 font CSS has no design identity", c37_font_css_has_no_design_identity)
+    case("c37b GATE font-host skip", c37b_gate_font_host_skip, gate=True)
 
+
+def _ident_line(sheets, css):
+    """An identity paragraph for `sheets` measured against `css` bytes."""
+    raw = css.encode()
+    sha = hashlib.sha256(raw).hexdigest()[:12]
+    cells = "; ".join("`%s` — %s B, sha256 `%s…`" % (c, format(len(raw), ","), sha)
+                      for c in sheets)
+    return ("Sheet identity (measured 2026-10-24): " + cells +
+            ". Each citation above is path-qualified so its own size and digest "
+            "cannot be borrowed by a sibling `style.css`.\n\n")
+
+
+ROW = "| Accent | `#123456` | 3 declarations — `.card:hover`, `h2` |\n\n"
+
+# a font-file sheet: its bytes are chosen by the requesting UA, so no design
+# identity can be recorded for it (`fonts.gstatic.com` serves per-browser CSS)
+FONT_URL = "https://fonts.gstatic.com/s/x/v12/font.css"
+
+
+def _phantom_pages():
+    """A body at the sibling-less path, distinct from the `css/` one.
+
+    Identical bytes would be content-deduped into one sheet and the phantom
+    would vanish for the wrong reason (the fix's fixture has to reproduce the
+    failing shape — the -24c pin).
+    """
+    return {DEMO + "style.css": (".phantom{color:#00ff00}\n" * 60).encode()}
+
+
+def c35_phantom_citation_is_not_unrecorded() -> bool:
+    """A URL the spec never wrote cannot be a cell that failed to record.
+
+    `named_refs` expands a bare `style.css` into `theme/demo/style.css` AND
+    `theme/demo/css/style.css`, and `fetch_sheet` retries the `css/` sibling, so
+    the phantom returned a live body and read as unrecorded. 39 of the 73
+    IDENTITY-UNRECORDED notes on 2026-10-24 were this artefact alone.
+    """
+    css = CSS.format(hex="#123456", a=FILLER)
+    txt = (ROW + "Design stylesheet(s) `style.css` cited by the house grammar.\n\n"
+           + _ident_line(["theme/demo/css/style.css"], css))
+    rec, *_ = run(txt, css_extra=FILLER, pages=_phantom_pages())
+    return "IDENTITY-UNRECORDED" not in buckets(rec)[1]
+
+
+def c35b_gate_existence_guard() -> bool:
+    """GATE: with the existence guard off, the manufactured sibling is reported."""
+    mod = load()
+    mod.EXISTENCE_GUARD = False
+    css = CSS.format(hex="#123456", a=FILLER)
+    txt = (ROW + "Design stylesheet(s) `style.css` cited by the house grammar.\n\n"
+           + _ident_line(["theme/demo/css/style.css"], css))
+    rec, *_ = run(txt, mod=mod, css_extra=FILLER, pages=_phantom_pages())
+    return "IDENTITY-UNRECORDED" in buckets(rec)[1]
+
+
+def c36_written_sheet_without_identity_still_notes() -> bool:
+    """The guard must not hide a real gap: a written sheet with no size still notes."""
+    txt = ROW + "Measured from `theme/demo/css/style.css` (HTTP 200).\n"
+    rec, *_ = run(txt, css_extra=FILLER)
+    nt = buckets(rec)[1]
+    return "IDENTITY-UNRECORDED" in nt and buckets(rec)[0] == []
+
+
+def c37_font_css_has_no_design_identity() -> bool:
+    """Google Fonts CSS is served per user agent: its bytes are not a design fact."""
+    css = CSS.format(hex="#123456", a=FILLER)
+    font = ("/* latin */ @font-face { font-family: 'X'; src: local('X'); }\n" * 20)
+    txt = (ROW + "Typeface served from `https://fonts.gstatic.com/s/x/v12/font.css`.\n\n"
+           + _ident_line(["theme/demo/css/style.css"], css))
+    rec, *_ = run(txt, css_extra=FILLER,
+                  pages={FONT_URL: font.encode()})
+    return "IDENTITY-UNRECORDED" not in buckets(rec)[1]
+
+
+def c37b_gate_font_host_skip() -> bool:
+    """GATE: with the font-host skip removed, the per-UA sheet is reported."""
+    mod = load()
+    mod.FONT_HOSTS = ()
+    css = CSS.format(hex="#123456", a=FILLER)
+    font = ("/* latin */ @font-face { font-family: 'X'; src: local('X'); }\n" * 20)
+    txt = (ROW + "Typeface served from `https://fonts.gstatic.com/s/x/v12/font.css`.\n\n"
+           + _ident_line(["theme/demo/css/style.css"], css))
+    rec, *_ = run(txt, mod=mod, css_extra=FILLER,
+                  pages={FONT_URL: font.encode()})
+    return "IDENTITY-UNRECORDED" in buckets(rec)[1]
 
 def main():
     ok = gates = 0

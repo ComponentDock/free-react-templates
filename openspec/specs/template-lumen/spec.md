@@ -39,6 +39,8 @@ Palette in order of use: `#ffffff` ×60, `#000000` ×43, `#111111` ×4, `#b3262a
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/glint/css/style.min.css?v=3.0.2` — 61,732 B, sha256 `21d32b4862ef…`; `theme/glint/vendor/photoswipe/5.4.4/photoswipe.css?v=3.0.2` — 7,423 B, sha256 `b0eaaae0b9de…`.
+
 ## Requirements
 
 ### Requirement: Navbar renders with logo and navigation links

@@ -59,6 +59,8 @@ Palette in order of use: `#ffffff` ×72, `#000000` ×67, `#fcd307` ×44, `#78d5e
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/whitespace/css/style.min.css?v=3.0.0` — 191,687 B, sha256 `9cd9f006bc62…`; `theme/whitespace/css/style.css` — 238,344 B, sha256 `137ea298cd19…`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -29,6 +29,8 @@ Palette in order of use: `#ffffff` ×70, `#000000` ×10, `#222121` ×9, `#868686
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/halo/css/style.min.css?v=3.0.0` — 21,290 B, sha256 `f61299a3f373…`; `theme/halo/css/site.min.css?v=3.0.0` — 11,416 B, sha256 `43cbd9d08eac…`; `theme/halo/kit/mobile-nav.css?v=3.0.0` — 4,584 B, sha256 `a77cd7524a04…`; `theme/halo/kit/sliders.css?v=3.0.0` — 4,469 B, sha256 `83086ba140e3…`.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation links, search, and mobile toggle

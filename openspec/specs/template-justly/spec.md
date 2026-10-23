@@ -53,6 +53,8 @@ Justly lives in `apps/justly` and uses shared components from `packages/ui`
 | Radius | **3 px** on kit inputs/buttons, **8 px** on cards; section bands square |
 | Bands | photo hero → `#000` categories band → white offers → white pricing on `#f9f9ff` cards → white about → white blog → `#000` footer |
 
+Sheet identity (measured 2026-10-24): `theme/zacson/assets/css/style.min.css?v=3.0.4` — 216,977 B, sha256 `1574004d1a4d…`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

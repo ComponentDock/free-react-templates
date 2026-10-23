@@ -27,6 +27,8 @@ Palette in order of use: `#d82a4e` ×29, `#ffffff` ×22, `#edf4f6` ×9, `#474747
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/webuni/css/style.css` — 28,458 B, sha256 `8afbe4775d76…`.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and mobile menu

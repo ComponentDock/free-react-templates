@@ -28,6 +28,8 @@ Palette in order of use: `#000000` ×46, `#ffffff` ×45, `#147c5d` ×43, `#5c626
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/photon/css/style.min.css?v=3.0.1` — 177,492 B, sha256 `dd859c424a26…`.
+
 ## Requirements
 
 ### Requirement: Navbar renders with brand and navigation

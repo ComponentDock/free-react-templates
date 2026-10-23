@@ -25,6 +25,8 @@ Palette in order of use: `#ffffff` ×51, `#fac564` ×39, `#000000` ×18, `#78d5e
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/pizza/css/style.css` — 74,235 B, sha256 `d50b5898308c…`; `theme/pizza/css/icomoon.css` — 1,420 B, sha256 `bf54e7b421cf…`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

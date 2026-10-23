@@ -28,6 +28,8 @@ Palette in order of use: `#444444` ×43, `#ffffff` ×38, `#111111` ×35, `#00960
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+Sheet identity (measured 2026-10-24): `theme/phozogy/css/style.css` — 46,648 B, sha256 `0fd813727cf2…`.
+
 ## Requirements
 
 ### Requirement: Header with navigation
